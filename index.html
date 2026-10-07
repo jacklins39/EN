@@ -874,13 +874,28 @@
                         聆聽發音
                     </button>
                 </div>
-                <p class="text-gray-500 text-sm mt-2 mb-4">目前無法取得英文釋義。</p>
+                <p class="text-gray-500 text-sm mt-2 mb-4">無法取得翻譯，但你仍可將它加入自訂字庫。</p>
                 <div class="flex flex-col gap-2">
                     <a href="https://tw.dictionary.search.yahoo.com/search?p=${word}" target="_blank" class="text-center bg-purple-50 text-purple-700 hover:bg-purple-100 font-semibold py-2 rounded-lg text-sm border border-purple-200">在 Yahoo 字典查看</a>
                     <a href="https://translate.google.com/?sl=en&tl=zh-TW&text=${word}&op=translate" target="_blank" class="text-center bg-indigo-50 text-indigo-600 hover:bg-indigo-100 font-semibold py-2 rounded-lg text-sm border border-indigo-200">使用 Google 翻譯</a>
+                    <button id="btn-add-custom-error" class="text-center bg-green-50 text-green-700 hover:bg-green-100 font-bold py-2 rounded-lg text-sm border border-green-200 transition-colors shadow-sm">
+                        ➕ 將此單字加入「自訂字庫」
+                    </button>
                 </div>
             `;
             document.getElementById('btn-dict-audio').addEventListener('click', () => playAudio(word));
+            
+            const btnAdd = document.getElementById('btn-add-custom-error');
+            if (btnAdd) {
+                btnAdd.addEventListener('click', () => {
+                    const success = addCustomWord(word, '', '請自行查閱');
+                    if (success) {
+                        btnAdd.innerText = '✅ 已加入單元 10';
+                        btnAdd.disabled = true;
+                        btnAdd.classList.add('opacity-50', 'cursor-not-allowed');
+                    }
+                });
+            }
         }
 
         document.getElementById('btn-close-dict').addEventListener('click', () => {

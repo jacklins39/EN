@@ -855,10 +855,12 @@
             const btnAdd = document.getElementById('btn-add-custom-word');
             if (btnAdd) {
                 btnAdd.addEventListener('click', () => {
-                    addCustomWord(word, phonetic, def);
-                    btnAdd.innerText = '✅ 已加入單元 10';
-                    btnAdd.disabled = true;
-                    btnAdd.classList.add('opacity-50', 'cursor-not-allowed');
+                    const success = addCustomWord(word, phonetic, def);
+                    if (success) {
+                        btnAdd.innerText = '✅ 已加入單元 10';
+                        btnAdd.disabled = true;
+                        btnAdd.classList.add('opacity-50', 'cursor-not-allowed');
+                    }
                 });
             }
         }
@@ -937,11 +939,19 @@
 
         // 加入自訂單字
         function addCustomWord(en, kk, zh) {
-            if (!currentUser) return alert('請先登入才能使用自訂字庫！');
-            if (vocabularyDB.find(w => w.en.toLowerCase() === en.toLowerCase())) return;
+            if (!currentUser) {
+                alert('請先登入才能使用自訂字庫！');
+                return false;
+            }
+            
+            // 檢查是否已經在「自訂字庫 (單元 10)」裡面了
+            if (customWordsDB.find(w => w.en.toLowerCase() === en.toLowerCase())) {
+                alert('這個單字已經在你的自訂字庫裡囉！');
+                return false;
+            }
 
             const newWord = {
-                id: 10000 + customWordsDB.length,
+                id: 10000 + Date.now(), // 用時間戳確保 ID 唯一
                 en: en,
                 kk: kk,
                 zh: zh,
@@ -957,6 +967,8 @@
             
             // 如果剛好在單元 10，更新畫面
             if (currentUnit === 10) updateDashboard();
+            
+            return true;
         }
 
         // 錯題加強複習

@@ -9,6 +9,7 @@
     
     <!-- 引入外部單字庫 -->
     <script src="words_data.js"></script>
+    <script src="toeic_data.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
     <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app-compat.js"></script>
@@ -128,6 +129,7 @@
                         <option value="8">單元 8 (7001-8000)</option>
                         <option value="9">單元 9 (8001-8798)</option>
                         <option value="10">單元 10 (自訂字庫)</option>
+                        <option value="11">單元 11 (多益常考單字)</option>
                     </select>
                 </div>
                 
@@ -282,6 +284,8 @@
         const vocabularyDB = typeof externalVocabularyDB !== 'undefined' ? externalVocabularyDB : [
             { id: 1, en: 'error', kk: '', zh: '錯誤', example: 'Please ensure words_data.js is loaded.', exampleZh: '請確保單字庫檔案已正確載入。' }
         ];
+        // 單元 11：多益常考單字 (獨立於原本字庫)
+        if (typeof toeicWordsDB !== 'undefined') toeicWordsDB.forEach(w => vocabularyDB.push(w));
 
         const SRS_INTERVALS = [0, 1, 3, 7, 14, 30]; 
         const MAX_LEVEL = 5;
@@ -885,16 +889,19 @@
                 <div class="flex flex-col gap-2">
                     <a href="https://tw.dictionary.search.yahoo.com/search?p=${word}" target="_blank" class="text-center bg-purple-50 text-purple-700 hover:bg-purple-100 font-semibold py-2 rounded-lg text-sm border border-purple-200">在 Yahoo 字典查看</a>
                     <a href="https://translate.google.com/?sl=en&tl=zh-TW&text=${word}&op=translate" target="_blank" class="text-center bg-indigo-50 text-indigo-600 hover:bg-indigo-100 font-semibold py-2 rounded-lg text-sm border border-indigo-200">使用 Google 翻譯</a>
+                    ${builtinUnitOf(word) ? `<div class="text-center text-gray-500 text-sm py-2">此字已在內建字庫 (單元 ${builtinUnitOf(word)})，不需加入自訂</div>` : `
+                    <input id="input-custom-zh" type="text" value="${String(def).replace(/"/g, '&quot;')}" placeholder="中文說明 (可自行修改)" class="border border-green-200 rounded-lg px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-green-300">
                     <button id="btn-add-custom-word" class="text-center bg-green-50 text-green-700 hover:bg-green-100 font-bold py-2 rounded-lg text-sm border border-green-200 transition-colors shadow-sm">
                         ➕ 將此單字加入「自訂字庫」
-                    </button>
+                    </button>`}
                 </div>
             `;
             document.getElementById('btn-dict-audio').addEventListener('click', () => playAudio(word));
             const btnAdd = document.getElementById('btn-add-custom-word');
             if (btnAdd) {
                 btnAdd.addEventListener('click', () => {
-                    const success = addCustomWord(word, phonetic, def);
+                    const zhInput = (document.getElementById('input-custom-zh').value || '').trim();
+                    const success = addCustomWord(word, phonetic, zhInput || def);
                     if (success) {
                         btnAdd.innerText = '✅ 已加入單元 10';
                         btnAdd.disabled = true;
@@ -917,6 +924,7 @@
                 <div class="flex flex-col gap-2">
                     <a href="https://tw.dictionary.search.yahoo.com/search?p=${word}" target="_blank" class="text-center bg-purple-50 text-purple-700 hover:bg-purple-100 font-semibold py-2 rounded-lg text-sm border border-purple-200">在 Yahoo 字典查看</a>
                     <a href="https://translate.google.com/?sl=en&tl=zh-TW&text=${word}&op=translate" target="_blank" class="text-center bg-indigo-50 text-indigo-600 hover:bg-indigo-100 font-semibold py-2 rounded-lg text-sm border border-indigo-200">使用 Google 翻譯</a>
+                    <input id="input-custom-zh" type="text" placeholder="手動輸入中文說明" class="border border-green-200 rounded-lg px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-green-300">
                     <button id="btn-add-custom-error" class="text-center bg-green-50 text-green-700 hover:bg-green-100 font-bold py-2 rounded-lg text-sm border border-green-200 transition-colors shadow-sm">
                         ➕ 將此單字加入「自訂字庫」
                     </button>
@@ -927,7 +935,8 @@
             const btnAdd = document.getElementById('btn-add-custom-error');
             if (btnAdd) {
                 btnAdd.addEventListener('click', () => {
-                    const success = addCustomWord(word, '', '請自行查閱');
+                    const zhInput = (document.getElementById('input-custom-zh').value || '').trim();
+                    const success = addCustomWord(word, '', zhInput || '請自行查閱');
                     if (success) {
                         btnAdd.innerText = '✅ 已加入單元 10';
                         btnAdd.disabled = true;
@@ -991,6 +1000,13 @@
             });
         }
 
+        // 查詢單字是否在內建字庫 (單元 1-9)，回傳單元編號或 0
+        function builtinUnitOf(word) {
+            const lw = String(word).toLowerCase();
+            const hit = vocabularyDB.find(w => w.unit >= 1 && w.unit <= 9 && w.en.toLowerCase() === lw);
+            return hit ? hit.unit : 0;
+        }
+
         // 加入自訂單字
         function addCustomWord(en, kk, zh) {
             if (!currentUser) {
@@ -998,6 +1014,12 @@
                 return false;
             }
             
+            // 只允許加入「非內建字庫 (單元 1-9)」的單字
+            const bu = builtinUnitOf(en);
+            if (bu) {
+                alert(`這個單字已在內建字庫 單元 ${bu}，請直接去該單元學習。`);
+                return false;
+            }
             // 檢查是否已經在「自訂字庫 (單元 10)」裡面了
             if (customWordsDB.find(w => w.en.toLowerCase() === en.toLowerCase())) {
                 alert('這個單字已經在你的自訂字庫裡囉！');

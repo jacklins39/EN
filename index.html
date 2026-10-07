@@ -132,12 +132,12 @@
                 </div>
                 
                 <div class="grid grid-cols-2 gap-4 mb-6">
-                    <div class="bg-blue-50 rounded-xl p-4 text-center border border-blue-100">
-                        <p class="text-blue-800 text-sm font-semibold mb-1">待複習</p>
+                    <div id="box-stat-review" class="bg-blue-50 rounded-xl p-4 text-center border border-blue-100 cursor-pointer hover:bg-blue-100 hover:shadow-md transition-all active:scale-95">
+                        <p class="text-blue-800 text-sm font-semibold mb-1">待複習 <span class="text-xs font-normal opacity-70">(點擊預覽)</span></p>
                         <p class="text-3xl font-bold text-blue-600" id="stat-review">0</p>
                     </div>
-                    <div class="bg-green-50 rounded-xl p-4 text-center border border-green-100">
-                        <p class="text-green-800 text-sm font-semibold mb-1">新單字</p>
+                    <div id="box-stat-new" class="bg-green-50 rounded-xl p-4 text-center border border-green-100 cursor-pointer hover:bg-green-100 hover:shadow-md transition-all active:scale-95">
+                        <p class="text-green-800 text-sm font-semibold mb-1">新單字 <span class="text-xs font-normal opacity-70">(點擊預覽)</span></p>
                         <p class="text-3xl font-bold text-green-600" id="stat-new">10</p>
                     </div>
                 </div>
@@ -302,6 +302,9 @@
         let sessionTitle = "一般課程";
         let totalCardsInSession = 0;
         let cardsCompleted = 0;
+        
+        let previewReviewWords = [];
+        let previewNewWords = [];
 
         // DOM 元素
         const viewDashboard = document.getElementById('view-dashboard');
@@ -421,6 +424,9 @@
             let reviewCount = 0, masteredCount = 0, unitTotal = 0;
             let unlearnedWords = [];
 
+            previewReviewWords = [];
+            previewNewWords = [];
+
             // 確保每個單字都有 unit 屬性 (如果沒有，每千字分一個單元)
             vocabularyDB.forEach(w => {
                 if (!w.unit) w.unit = Math.ceil(w.id / 1000) || 1; 
@@ -437,6 +443,7 @@
                     masteredCount++;
                 } else if (progress.isLearning && progress.nextReviewDay <= virtualCurrentDay) {
                     reviewCount++;
+                    previewReviewWords.push(w);
                 }
             }
             
@@ -447,6 +454,7 @@
                 if (!userProgress[w.id] || !userProgress[w.id].isLearning) {
                     if (unlearnedWords.length < NEW_WORDS_PER_DAY) {
                         unlearnedWords.push(w.id);
+                        previewNewWords.push(w);
                     } else {
                         break;
                     }
@@ -471,6 +479,38 @@
                 startBtn.classList.remove('opacity-50', 'cursor-not-allowed');
             }
         }
+
+        // ==========================================
+        // 單字預覽功能
+        // ==========================================
+        function renderPreviewModal(words, title) {
+            const listHtml = words.map(w => `
+                <div class="flex justify-between items-center py-3 border-b border-gray-100 last:border-0 hover:bg-gray-50 transition px-2 rounded">
+                    <div class="flex flex-col">
+                        <span class="font-bold text-gray-800 text-lg">${w.en}</span>
+                        <span class="text-xs text-gray-500 font-mono">${w.kk || ''}</span>
+                    </div>
+                    <span class="text-sm text-gray-600 font-medium text-right max-w-[50%] truncate" title="${w.zh}">${w.zh}</span>
+                </div>
+            `).join('');
+
+            const content = document.getElementById('dict-content');
+            content.innerHTML = `
+                <h3 class="text-xl font-bold text-indigo-800 mb-4 border-b border-indigo-100 pb-2">${title} (${words.length})</h3>
+                <div class="max-h-72 overflow-y-auto mb-2 pr-2 custom-scrollbar">
+                    ${listHtml || '<p class="text-gray-500 text-sm text-center py-4">目前沒有單字。</p>'}
+                </div>
+            `;
+            document.getElementById('dict-modal').classList.remove('hidden');
+        }
+
+        document.getElementById('box-stat-review').addEventListener('click', () => {
+            renderPreviewModal(previewReviewWords, '待複習單字預覽');
+        });
+
+        document.getElementById('box-stat-new').addEventListener('click', () => {
+            renderPreviewModal(previewNewWords, '即將學習的新單字');
+        });
 
         document.getElementById('btn-start-session').addEventListener('click', () => {
             sessionTitle = "一般課程";

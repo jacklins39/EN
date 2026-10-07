@@ -343,10 +343,10 @@
         });
 
         document.getElementById('btn-login').addEventListener('click', () => {
-            auth.signInWithRedirect(googleProvider).catch(error => {
+            auth.signInWithPopup(googleProvider).catch(error => {
                 if(error.code === 'auth/invalid-api-key' || error.message.includes('API key')) {
                     alert('系統提示：請確認你是否已經貼上正確的 Firebase 金鑰！');
-                } else {
+                } else if (error.code !== 'auth/popup-closed-by-user') {
                     console.error("登入失敗", error);
                     alert("登入發生錯誤：" + error.message);
                 }

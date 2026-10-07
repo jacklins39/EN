@@ -370,9 +370,7 @@
                     
                     // 合併自訂單字到主要資料庫
                     customWordsDB.forEach(cw => {
-                        if (!vocabularyDB.find(w => w.en === cw.en)) {
-                            vocabularyDB.push(cw);
-                        }
+                        vocabularyDB.push(cw);
                     });
                 } else {
                     userProgress = {};

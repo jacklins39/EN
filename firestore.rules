@@ -1,0 +1,20 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // 每個人只能讀寫自己的文件，且限制欄位與大小
+    match /users/{uid} {
+      allow read: if request.auth != null && request.auth.uid == uid;
+      allow create, update: if request.auth != null
+        && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['progress', 'day', 'customWords', 'lastUpdated'])
+        && (!('customWords' in request.resource.data)
+            || (request.resource.data.customWords is list
+                && request.resource.data.customWords.size() <= 500));
+      allow delete: if false;
+    }
+    // 其他一律拒絕
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

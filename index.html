@@ -294,6 +294,11 @@
         let virtualCurrentDay = 0;
         let userProgress = {};
         let customWordsDB = [];
+        const MAX_CUSTOM_WORDS = 500;
+        // HTML 轉義，避免 XSS
+        function esc(s) {
+            return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+        }
         let currentUnit = 1;
         let chartInstance = null;
         
@@ -373,7 +378,16 @@
                     const data = docSnap.data();
                     userProgress = data.progress || {};
                     virtualCurrentDay = data.day || 0;
-                    customWordsDB = data.customWords || [];
+                    customWordsDB = (Array.isArray(data.customWords) ? data.customWords : [])
+                        .filter(cw => cw && typeof cw.en === 'string' && /^[A-Za-z][A-Za-z' -]{0,39}$/.test(cw.en))
+                        .slice(0, MAX_CUSTOM_WORDS)
+                        .map(cw => ({
+                            id: Number(cw.id) || (10000 + Date.now()),
+                            en: cw.en,
+                            kk: String(cw.kk || '').slice(0, 60),
+                            zh: String(cw.zh || '').slice(0, 100),
+                            unit: 10
+                        }));
                     
                     // 合併自訂單字到主要資料庫
                     customWordsDB.forEach(cw => {
@@ -491,10 +505,10 @@
             const listHtml = words.map(w => `
                 <div class="flex justify-between items-center py-3 border-b border-gray-100 last:border-0 hover:bg-gray-50 transition px-2 rounded">
                     <div class="flex flex-col">
-                        <span class="font-bold text-gray-800 text-lg">${w.en}</span>
-                        <span class="text-xs text-gray-500 font-mono">${w.kk || ''}</span>
+                        <span class="font-bold text-gray-800 text-lg">${esc(w.en)}</span>
+                        <span class="text-xs text-gray-500 font-mono">${esc(w.kk || '')}</span>
                     </div>
-                    <span class="text-sm text-gray-600 font-medium text-right max-w-[50%] truncate" title="${w.zh}">${w.zh}</span>
+                    <span class="text-sm text-gray-600 font-medium text-right max-w-[50%] truncate" title="${esc(w.zh)}">${esc(w.zh)}</span>
                 </div>
             `).join('');
 
@@ -877,20 +891,20 @@
         function renderDictModal(word, phonetic, pos, def) {
             const content = document.getElementById('dict-content');
             content.innerHTML = `
-                <h3 class="text-2xl font-bold text-gray-800">${word}</h3>
+                <h3 class="text-2xl font-bold text-gray-800">${esc(word)}</h3>
                 <div class="flex items-center gap-2 mb-3 mt-1">
-                    ${phonetic ? `<span class="text-gray-500 font-mono">${phonetic}</span>` : ''}
+                    ${phonetic ? `<span class="text-gray-500 font-mono">${esc(phonetic)}</span>` : ''}
                     <button id="btn-dict-audio" class="text-indigo-500 hover:text-indigo-700 p-1">
                         <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd" /></svg>
                     </button>
                 </div>
-                <span class="inline-block bg-indigo-50 text-indigo-700 text-xs px-2 py-1 rounded font-semibold mb-2">${pos}</span>
-                <p class="text-gray-700 text-lg font-bold leading-relaxed mb-4">${def}</p>
+                <span class="inline-block bg-indigo-50 text-indigo-700 text-xs px-2 py-1 rounded font-semibold mb-2">${esc(pos)}</span>
+                <p class="text-gray-700 text-lg font-bold leading-relaxed mb-4">${esc(def)}</p>
                 <div class="flex flex-col gap-2">
-                    <a href="https://tw.dictionary.search.yahoo.com/search?p=${word}" target="_blank" class="text-center bg-purple-50 text-purple-700 hover:bg-purple-100 font-semibold py-2 rounded-lg text-sm border border-purple-200">在 Yahoo 字典查看</a>
-                    <a href="https://translate.google.com/?sl=en&tl=zh-TW&text=${word}&op=translate" target="_blank" class="text-center bg-indigo-50 text-indigo-600 hover:bg-indigo-100 font-semibold py-2 rounded-lg text-sm border border-indigo-200">使用 Google 翻譯</a>
+                    <a href="https://tw.dictionary.search.yahoo.com/search?p=${encodeURIComponent(word)}" target="_blank" rel="noopener noreferrer" class="text-center bg-purple-50 text-purple-700 hover:bg-purple-100 font-semibold py-2 rounded-lg text-sm border border-purple-200">在 Yahoo 字典查看</a>
+                    <a href="https://translate.google.com/?sl=en&tl=zh-TW&text=${encodeURIComponent(word)}&op=translate" target="_blank" rel="noopener noreferrer" class="text-center bg-indigo-50 text-indigo-600 hover:bg-indigo-100 font-semibold py-2 rounded-lg text-sm border border-indigo-200">使用 Google 翻譯</a>
                     ${builtinUnitOf(word) ? `<div class="text-center text-gray-500 text-sm py-2">此字已在內建字庫 (單元 ${builtinUnitOf(word)})，不需加入自訂</div>` : `
-                    <input id="input-custom-zh" type="text" value="${String(def).replace(/"/g, '&quot;')}" placeholder="中文說明 (可自行修改)" class="border border-green-200 rounded-lg px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-green-300">
+                    <input id="input-custom-zh" type="text" maxlength="100" value="${esc(def)}" placeholder="中文說明 (可自行修改)" class="border border-green-200 rounded-lg px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-green-300">
                     <button id="btn-add-custom-word" class="text-center bg-green-50 text-green-700 hover:bg-green-100 font-bold py-2 rounded-lg text-sm border border-green-200 transition-colors shadow-sm">
                         ➕ 將此單字加入「自訂字庫」
                     </button>`}
@@ -914,7 +928,7 @@
         function renderDictErrorModal(word) {
             const content = document.getElementById('dict-content');
             content.innerHTML = `
-                <h3 class="text-xl font-bold text-gray-800">${word}</h3>
+                <h3 class="text-xl font-bold text-gray-800">${esc(word)}</h3>
                 <div class="flex items-center gap-2 mb-3 mt-1">
                     <button id="btn-dict-audio" class="text-indigo-500 hover:text-indigo-700 flex items-center gap-1 text-sm bg-indigo-50 rounded-full px-3 py-1">
                         聆聽發音
@@ -922,9 +936,9 @@
                 </div>
                 <p class="text-gray-500 text-sm mt-2 mb-4">無法取得翻譯，但你仍可將它加入自訂字庫。</p>
                 <div class="flex flex-col gap-2">
-                    <a href="https://tw.dictionary.search.yahoo.com/search?p=${word}" target="_blank" class="text-center bg-purple-50 text-purple-700 hover:bg-purple-100 font-semibold py-2 rounded-lg text-sm border border-purple-200">在 Yahoo 字典查看</a>
-                    <a href="https://translate.google.com/?sl=en&tl=zh-TW&text=${word}&op=translate" target="_blank" class="text-center bg-indigo-50 text-indigo-600 hover:bg-indigo-100 font-semibold py-2 rounded-lg text-sm border border-indigo-200">使用 Google 翻譯</a>
-                    <input id="input-custom-zh" type="text" placeholder="手動輸入中文說明" class="border border-green-200 rounded-lg px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-green-300">
+                    <a href="https://tw.dictionary.search.yahoo.com/search?p=${encodeURIComponent(word)}" target="_blank" rel="noopener noreferrer" class="text-center bg-purple-50 text-purple-700 hover:bg-purple-100 font-semibold py-2 rounded-lg text-sm border border-purple-200">在 Yahoo 字典查看</a>
+                    <a href="https://translate.google.com/?sl=en&tl=zh-TW&text=${encodeURIComponent(word)}&op=translate" target="_blank" rel="noopener noreferrer" class="text-center bg-indigo-50 text-indigo-600 hover:bg-indigo-100 font-semibold py-2 rounded-lg text-sm border border-indigo-200">使用 Google 翻譯</a>
+                    <input id="input-custom-zh" type="text" maxlength="100" placeholder="手動輸入中文說明" class="border border-green-200 rounded-lg px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-green-300">
                     <button id="btn-add-custom-error" class="text-center bg-green-50 text-green-700 hover:bg-green-100 font-bold py-2 rounded-lg text-sm border border-green-200 transition-colors shadow-sm">
                         ➕ 將此單字加入「自訂字庫」
                     </button>
@@ -1014,6 +1028,18 @@
                 return false;
             }
             
+            // 格式與長度驗證
+            en = String(en).trim();
+            zh = String(zh || '').trim().slice(0, 100);
+            kk = String(kk || '').slice(0, 60);
+            if (!/^[A-Za-z][A-Za-z' -]{0,39}$/.test(en)) {
+                alert('單字格式不正確 (只允許英文字母、空格、- 和 \', 最多 40 字)。');
+                return false;
+            }
+            if (customWordsDB.length >= MAX_CUSTOM_WORDS) {
+                alert(`自訂字庫最多 ${MAX_CUSTOM_WORDS} 字。`);
+                return false;
+            }
             // 只允許加入「非內建字庫 (單元 1-9)」的單字
             const bu = builtinUnitOf(en);
             if (bu) {

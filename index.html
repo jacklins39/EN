@@ -158,6 +158,14 @@
                     📊 查看學習成效分析表
                 </button>
 
+                <button id="btn-show-weak" class="w-full bg-red-50 text-red-700 hover:bg-red-100 font-bold py-3 rounded-xl shadow-sm mb-3 border border-red-200 transition-colors">
+                    🎯 我的弱點單字
+                </button>
+
+                <button id="btn-manage-custom" class="hidden w-full bg-red-50 text-red-600 hover:bg-red-100 font-bold py-3 rounded-xl shadow-sm mb-6 border border-red-200 transition-colors">
+                    🗑️ 管理 / 刪除自訂單字
+                </button>
+
                 <button id="btn-start-session" class="btn-action w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 rounded-xl shadow-lg shadow-indigo-200 text-lg flex items-center justify-center gap-2 mb-4">
                     開始今日課程
                 </button>
@@ -191,6 +199,21 @@
             </div>
         </div>
 
+        <!-- 弱點單字視圖 (Weak Words) -->
+        <div id="view-weak" class="w-full hidden">
+            <div class="bg-white rounded-2xl shadow-lg p-6 mb-6">
+                <div class="flex justify-between items-center mb-2">
+                    <h2 class="text-2xl font-bold">🎯 我的弱點單字</h2>
+                    <button id="btn-close-weak" class="text-gray-400 hover:text-gray-600 bg-gray-100 hover:bg-gray-200 rounded-full p-2 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                    </button>
+                </div>
+                <p class="text-gray-500 text-xs mb-3">🔴 錯 3 次以上　🟠 錯 2 次　🟡 錯 1 次　(點單字看詳情)</p>
+                <button id="btn-weak-practice" class="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-3 rounded-xl shadow mb-4 transition-colors">—</button>
+                <div id="weak-list" class="max-h-[28rem] overflow-y-auto pr-1 custom-scrollbar"></div>
+            </div>
+        </div>
+
         <!-- 學習視圖 (Study Session) -->
         <div id="view-study" class="w-full hidden">
             <!-- 進度條 -->
@@ -219,7 +242,7 @@
                         </button>
                         <h2 class="text-5xl font-extrabold text-gray-800 mb-1 tracking-tight break-all" id="card-word">Apple</h2>
                         <p class="text-gray-400 font-mono text-lg mb-4" id="card-kk">/ˈæpəl/</p>
-                        <p class="text-gray-400 text-sm mt-4">點擊卡片翻面看解答</p>
+                        <p id="card-front-hint" class="text-gray-400 text-sm mt-4">點擊卡片翻面看解答</p>
                     </div>
                     <!-- 背面 (中文) -->
                     <div class="flip-card-back p-4">
@@ -483,6 +506,8 @@
 
         function updateDashboard() {
             document.getElementById('current-date-display').innerText = `虛擬時間: 第 ${virtualCurrentDay} 天`;
+            document.getElementById('btn-manage-custom').classList.toggle('hidden', currentUnit !== 10);
+            document.getElementById('btn-show-weak').innerText = `🎯 我的弱點單字 (${getWeakList().length})`;
 
             let reviewCount = 0, masteredCount = 0, unitTotal = 0;
             let unlearnedWords = [];
@@ -738,9 +763,11 @@
             document.getElementById('card-word-back').innerText = currentWord.en;
             document.getElementById('card-translation').innerText = currentWord.zh;
             
-            // 決定模式：等級 0 (新單字) 用翻卡片，等級 > 0 (複習) 用 4 選 1
+            // 決定模式：等級 0 (新單字) 用翻卡片，等級 > 0 (複習) 隨機四種題型；弱點練習一律測驗
             const progress = userProgress[currentWord.id];
-            isQuizMode = !isAutoFlashcardMode && progress && progress.level > 0;
+            const forced = sessionTitle === WEAK_TITLE;
+            isQuizMode = !isAutoFlashcardMode && !!progress && (forced || progress.level > 0);
+            currentQuizType = isQuizMode ? pickQuizType(progress.level || 0, forced) : 'card';
             
             if (isQuizMode) {
                 quizOptions.classList.remove('hidden');
@@ -759,6 +786,8 @@
                 document.getElementById('card-kk').innerText = '';
                 document.getElementById('card-kk-back').innerText = '';
             }
+
+            applyFront();
 
             // 處理例句顯示 (如果有才顯示，沒有則非同步去抓)
             const exampleContainer = document.getElementById('example-container');
@@ -826,7 +855,7 @@
             }
 
             updateProgressBar();
-            playAudio(currentWord.en);
+            if (currentQuizType !== 'zh2en' && currentQuizType !== 'fill') playAudio(currentWord.en);
             
             if (isAutoFlashcardMode) {
                 autoFlashcardTimerId = setTimeout(() => {
@@ -847,9 +876,22 @@
             }
         }
 
+        // 記錄錯誤歷史 (弱點單字頁使用)
+        function logMistake(progress) {
+            if (!Array.isArray(progress.mistakes)) {
+                progress.mistakes = progress.lastMistakeDay !== undefined
+                    ? [{ d: '', day: progress.lastMistakeDay, t: 'legacy' }] : [];
+            }
+            const d = new Date();
+            const pad = n => String(n).padStart(2, '0');
+            progress.mistakes.push({ d: `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`, day: virtualCurrentDay, t: currentQuizType });
+            if (progress.mistakes.length > 30) progress.mistakes.shift();
+        }
+
         function handleAnswer(isCorrect) {
             const wordId = currentWord.id;
             let progress = userProgress[wordId];
+            if (!isCorrect) logMistake(progress);
 
             if (isMistakeMode) {
                 if (isCorrect) {
@@ -875,37 +917,96 @@
             saveToCloud(); 
         }
 
-        function setupQuizMode() {
-            // 挑選 3 個隨機錯誤答案
-            let options = [currentWord];
-            let attempts = 0;
-            while(options.length < 4 && attempts < 100) {
-                const randWord = vocabularyDB[Math.floor(Math.random() * vocabularyDB.length)];
-                if (!options.find(o => o.zh === randWord.zh)) {
-                    options.push(randWord);
+        // ==========================================
+        // 測驗題型：en2zh 看英選中 / zh2en 看中選英 / listen 聽音選字 / fill 填空
+        // ==========================================
+        const WEAK_TITLE = '弱點單字練習';
+        let currentQuizType = 'card';
+
+        function pickQuizType(level, forced) {
+            const L = forced ? Math.max(level, 2) : level;
+            const pool = L <= 1 ? ['en2zh', 'zh2en']
+                : L === 2 ? ['zh2en', 'listen', 'fill']
+                : ['fill', 'fill', 'listen', 'zh2en']; // 高等級偏重填空：檢查你「會不會」寫
+            return pool[Math.floor(Math.random() * pool.length)];
+        }
+
+        // 依題型改變卡片正面
+        function applyFront() {
+            const t = currentQuizType, w = currentWord;
+            const wordEl = document.getElementById('card-word');
+            const kkEl = document.getElementById('card-kk');
+            const hintEl = document.getElementById('card-front-hint');
+            const audioBtn = document.getElementById('btn-audio');
+            const big = 'text-5xl font-extrabold text-gray-800 mb-1 tracking-tight break-all';
+            const mid = 'text-3xl font-bold text-gray-800 mb-1 break-all px-2';
+            wordEl.className = big;
+            hintEl.className = 'text-gray-400 text-sm mt-4';
+            hintEl.innerText = '點擊卡片翻面看解答';
+            audioBtn.classList.remove('hidden');
+            if (t === 'en2zh') {
+                hintEl.innerText = '看英文 ➜ 選出中文';
+            } else if (t === 'zh2en') {
+                wordEl.className = mid; wordEl.innerText = w.zh; kkEl.innerText = '';
+                hintEl.innerText = '看中文 ➜ 選出英文';
+                audioBtn.classList.add('hidden');
+            } else if (t === 'listen') {
+                wordEl.innerText = '🔊'; kkEl.innerText = '';
+                hintEl.innerText = '聽發音 ➜ 選出單字 (可點右上角重播)';
+            } else if (t === 'fill') {
+                wordEl.className = mid; wordEl.innerText = w.zh;
+                const mask = w.en.split('').map((c, i) => i === 0 ? c : (c === ' ' ? '\u00a0\u00a0' : (c === '-' || c === "'" ? c : '_'))).join(' ');
+                kkEl.innerText = `${mask}  (${w.en.replace(/[^A-Za-z]/g, '').length} 個字母)`;
+                audioBtn.classList.add('hidden');
+                let sentence = '';
+                if (w.example) {
+                    const re = new RegExp('\\b' + w.en.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\w*', 'gi');
+                    if (re.test(w.example)) sentence = w.example.replace(re, '_____');
                 }
-                attempts++;
+                hintEl.className = 'text-gray-500 text-sm mt-3 px-4 italic';
+                hintEl.innerText = sentence || '填空 ➜ 寫出這個單字';
             }
-            
-            // 打亂選項
-            options.sort(() => Math.random() - 0.5);
-            
+        }
+
+        function finishQuizAnswer(isCorrect) {
+            handleAnswer(isCorrect);
+            if (currentQuizType === 'zh2en' || currentQuizType === 'fill') playAudio(currentWord.en);
+            setTimeout(() => {
+                document.getElementById('btn-audio').classList.remove('hidden');
+                flashcard.classList.add('flipped');
+                actionNext.classList.remove('hidden');
+            }, currentQuizType === 'fill' ? 150 : 500);
+        }
+
+        function setupQuizMode() {
             quizOptions.innerHTML = '';
+            if (currentQuizType === 'fill') return setupFillMode();
+
+            const key = currentQuizType === 'en2zh' ? 'zh' : 'en';
+            const norm = s => String(s || '').toLowerCase();
+            const same = vocabularyDB.filter(w => w.unit === currentWord.unit && w.id !== currentWord.id);
+            const pool = same.length >= 30 ? same : vocabularyDB;
+            const options = [currentWord];
+            let attempts = 0;
+            while (options.length < 4 && attempts < 300) {
+                const r = pool[Math.floor(Math.random() * pool.length)];
+                attempts++;
+                if (r && r[key] && !options.find(o => norm(o[key]) === norm(r[key]))) options.push(r);
+            }
+            options.sort(() => Math.random() - 0.5);
+
             options.forEach((opt, index) => {
                 const btn = document.createElement('button');
                 btn.className = 'btn-action w-full bg-white hover:bg-gray-50 border-2 border-gray-200 text-gray-800 font-bold py-3 px-4 rounded-xl shadow-sm text-left text-lg transition-colors flex items-center';
-                btn.innerHTML = `<span class="bg-gray-100 text-gray-400 text-sm font-mono px-2 py-0.5 rounded mr-3 hidden sm:inline-block">${index + 1}</span> <span>${opt.zh}</span>`;
-                
+                btn.dataset.id = opt.id;
+                btn.innerHTML = `<span class="bg-gray-100 text-gray-400 text-sm font-mono px-2 py-0.5 rounded mr-3 hidden sm:inline-block">${index + 1}</span> <span>${esc(opt[key])}</span>`;
                 btn.onclick = () => {
-                    if (isShowingAnswer) return; // 已經回答過
+                    if (isShowingAnswer) return;
                     isShowingAnswer = true;
-                    
                     const isCorrect = opt.id === currentWord.id;
-                    
-                    // 標示顏色
                     Array.from(quizOptions.children).forEach(b => {
                         b.disabled = true;
-                        if (b.innerText === currentWord.zh) {
+                        if (String(b.dataset.id) === String(currentWord.id)) {
                             b.classList.remove('bg-white', 'border-gray-200');
                             b.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
                         } else if (b === btn && !isCorrect) {
@@ -913,18 +1014,43 @@
                             b.classList.add('bg-red-100', 'border-red-500', 'text-red-800');
                         }
                     });
-                    
-                    handleAnswer(isCorrect);
-                    
-                    // 自動翻到背面看例句
-                    setTimeout(() => {
-                        flashcard.classList.add('flipped');
-                        actionNext.classList.remove('hidden'); // 顯示下一題按鈕
-                    }, 500);
+                    finishQuizAnswer(isCorrect);
                 };
-                
                 quizOptions.appendChild(btn);
             });
+        }
+
+        function setupFillMode() {
+            quizOptions.innerHTML = `
+                <input id="fill-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="輸入英文單字，按 Enter 送出" class="w-full border-2 border-gray-200 focus:border-indigo-500 rounded-xl px-4 py-3 text-xl outline-none text-center font-bold tracking-wide">
+                <div id="fill-msg" class="text-center text-base font-bold min-h-[1.5rem]"></div>
+                <div class="grid grid-cols-2 gap-3">
+                    <button id="btn-fill-skip" class="btn-action bg-gray-100 hover:bg-gray-200 text-gray-600 font-bold py-3 rounded-xl border border-gray-200">不知道 (看答案)</button>
+                    <button id="btn-fill-submit" class="btn-action bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 rounded-xl shadow">送出 ↵</button>
+                </div>`;
+            const input = document.getElementById('fill-input');
+            const msg = document.getElementById('fill-msg');
+            const norm = s => s.toLowerCase().replace(/\s+/g, ' ').trim();
+            const submit = (giveUp) => {
+                if (isShowingAnswer) return;
+                const val = norm(input.value);
+                if (!giveUp && !val) return;
+                isShowingAnswer = true;
+                const ok = !giveUp && val === norm(currentWord.en);
+                input.disabled = true;
+                input.classList.add(ok ? 'border-green-500' : 'border-red-500', ok ? 'bg-green-50' : 'bg-red-50');
+                msg.innerHTML = ok ? '<span class="text-green-600">✅ 正確！</span>'
+                    : `<span class="text-red-500">❌ 正確答案：</span><span class="text-green-700">${esc(currentWord.en)}</span>`;
+                document.getElementById('btn-fill-skip').disabled = true;
+                document.getElementById('btn-fill-submit').disabled = true;
+                finishQuizAnswer(ok);
+            };
+            input.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter') { e.preventDefault(); submit(false); }
+            });
+            document.getElementById('btn-fill-submit').addEventListener('click', () => submit(false));
+            document.getElementById('btn-fill-skip').addEventListener('click', () => submit(true));
+            setTimeout(() => input.focus(), 80);
         }
 
         function updateProgressBar() {
@@ -990,6 +1116,7 @@
         document.addEventListener('keydown', (e) => {
             if (viewStudy.classList.contains('hidden')) return; 
             if (!document.getElementById('dict-modal').classList.contains('hidden')) return;
+            if (e.target && e.target.tagName === 'INPUT') return; // 填空題輸入中，不觸發快捷鍵
 
             if (e.key === ' ' || e.key === 'Enter') {
                 e.preventDefault();
@@ -1007,7 +1134,7 @@
                     document.getElementById('btn-rate-right').click();
                 }
             } else if (e.key >= '1' && e.key <= '4') {
-                if (isQuizMode && !isShowingAnswer && !quizOptions.classList.contains('hidden')) {
+                if (isQuizMode && currentQuizType !== 'fill' && !isShowingAnswer && !quizOptions.classList.contains('hidden')) {
                     const idx = parseInt(e.key) - 1;
                     const btns = quizOptions.querySelectorAll('button');
                     if (btns[idx]) btns[idx].click();
@@ -1260,6 +1387,218 @@
             
             return true;
         }
+
+        // 刪除自訂單字 (同步移除學習進度並寫回雲端)
+        function deleteCustomWords(ids) {
+            const set = new Set(ids.map(String));
+            customWordsDB = customWordsDB.filter(w => !set.has(String(w.id)));
+            for (let i = vocabularyDB.length - 1; i >= 0; i--) {
+                if (vocabularyDB[i].unit === 10 && set.has(String(vocabularyDB[i].id))) vocabularyDB.splice(i, 1);
+            }
+            set.forEach(id => { delete userProgress[id]; });
+            if (currentUser) {
+                db.collection('users').doc(currentUser.uid).update({
+                    customWords: customWordsDB,
+                    progress: userProgress
+                }).catch(console.error);
+            }
+            updateDashboard();
+        }
+
+        function renderCustomManager() {
+            const content = document.getElementById('dict-content');
+            const inp = 'border border-gray-200 rounded px-2 py-1 text-sm outline-none focus:ring-1 focus:ring-indigo-400 min-w-0';
+            const rows = customWordsDB.map(w => `
+                <div class="custom-row flex items-center gap-1 py-2 border-b border-gray-100 last:border-0" data-id="${esc(String(w.id))}">
+                    <input data-f="en" maxlength="40" value="${esc(w.en)}" class="${inp} w-1/4 font-bold">
+                    <input data-f="kk" maxlength="60" value="${esc(w.kk || '')}" placeholder="音標" class="${inp} w-1/4 font-mono text-xs">
+                    <input data-f="zh" maxlength="100" value="${esc(w.zh || '')}" placeholder="中文" class="${inp} flex-1">
+                    <button data-del="${esc(String(w.id))}" class="btn-del-custom text-red-500 hover:bg-red-50 border border-red-200 rounded-lg px-2 py-1 text-xs shrink-0">🗑️</button>
+                </div>`).join('');
+            content.innerHTML = `
+                <div class="flex justify-between items-center mb-3 border-b border-indigo-100 pb-2">
+                    <h3 class="text-xl font-bold text-indigo-800">管理自訂字庫 (${customWordsDB.length})</h3>
+                    ${customWordsDB.length ? '<div class="flex gap-3 items-center"><button id="btn-save-custom-all" class="bg-indigo-600 text-white text-xs font-bold px-3 py-1.5 rounded-lg">💾 全部儲存</button><button id="btn-del-custom-all" class="text-xs text-red-500 underline">全部刪除</button></div>' : ''}
+                </div>
+                <div class="max-h-72 overflow-y-auto pr-1 custom-scrollbar">
+                    ${rows || '<p class="text-gray-500 text-sm text-center py-4">自訂字庫是空的。</p>'}
+                </div>`;
+            document.getElementById('dict-modal').classList.remove('hidden');
+            content.querySelectorAll('.btn-del-custom').forEach(b => b.addEventListener('click', () => {
+                deleteCustomWords([b.dataset.del]);
+                renderCustomManager();
+            }));
+            const saveAll = document.getElementById('btn-save-custom-all');
+            if (saveAll) saveAll.addEventListener('click', () => {
+                const rowsEl = [...content.querySelectorAll('.custom-row')];
+                const edits = rowsEl.map(r => ({
+                    id: r.dataset.id,
+                    en: r.querySelector('[data-f=en]').value.trim(),
+                    kk: r.querySelector('[data-f=kk]').value.trim().slice(0, 60),
+                    zh: r.querySelector('[data-f=zh]').value.trim().slice(0, 100)
+                }));
+                const seen = new Set();
+                for (const e of edits) {
+                    const lw = e.en.toLowerCase();
+                    if (!/^[A-Za-z][A-Za-z' -]{0,39}$/.test(e.en)) return alert(`單字格式不正確：「${e.en}」`);
+                    if (!e.zh) return alert(`「${e.en}」缺中文解釋`);
+                    if (seen.has(lw)) return alert(`重複的單字：「${e.en}」`);
+                    seen.add(lw);
+                    const bu = builtinUnitOf(e.en);
+                    if (bu) return alert(`「${e.en}」已在內建字庫 單元 ${bu}`);
+                }
+                edits.forEach(e => {
+                    const w = customWordsDB.find(x => String(x.id) === e.id);
+                    if (w) { w.en = e.en; w.kk = e.kk; w.zh = e.zh; }
+                });
+                if (currentUser) {
+                    db.collection('users').doc(currentUser.uid).update({ customWords: customWordsDB }).catch(console.error);
+                }
+                updateDashboard();
+                renderCustomManager();
+                alert('已儲存 ✅');
+            });
+            const all = document.getElementById('btn-del-custom-all');
+            if (all) all.addEventListener('click', () => {
+                if (!confirm(`確定刪除全部 ${customWordsDB.length} 個自訂單字？(含學習進度)`)) return;
+                deleteCustomWords(customWordsDB.map(w => w.id));
+                renderCustomManager();
+            });
+            document.getElementById('btn-close-dict').addEventListener('click', () => {
+                document.getElementById('dict-modal').classList.add('hidden');
+            }, {once: true});
+        }
+        document.getElementById('btn-manage-custom').addEventListener('click', renderCustomManager);
+
+        // ==========================================
+        // 弱點單字頁
+        // ==========================================
+        const QTYPE_LABEL = { en2zh: '看英文選中文', zh2en: '看中文選英文', listen: '聽發音選單字', fill: '填空', card: '翻卡', legacy: '舊紀錄' };
+
+        function mistakeCountOf(p) {
+            if (Array.isArray(p.mistakes)) return p.mistakes.length;
+            return p.lastMistakeDay !== undefined ? 1 : 0;
+        }
+        function lastMistakeDayOf(p) {
+            if (Array.isArray(p.mistakes) && p.mistakes.length) return p.mistakes[p.mistakes.length - 1].day;
+            return p.lastMistakeDay !== undefined ? p.lastMistakeDay : -1;
+        }
+        function getWeakList() {
+            const list = [];
+            for (const id in userProgress) {
+                const p = userProgress[id];
+                const c = mistakeCountOf(p);
+                if (!c) continue;
+                const w = vocabularyDB.find(x => x.id == id);
+                if (w) list.push({ w, p, c });
+            }
+            list.sort((a, b) => b.c - a.c || lastMistakeDayOf(b.p) - lastMistakeDayOf(a.p));
+            return list;
+        }
+        function weakDot(c) { return c >= 3 ? '🔴' : c === 2 ? '🟠' : '🟡'; }
+
+        function weakAdvice(p, c) {
+            let s;
+            const last = lastMistakeDayOf(p);
+            if (last === virtualCurrentDay) s = '建議：明天再次測驗';
+            else if (p.nextReviewDay !== undefined && p.nextReviewDay <= virtualCurrentDay) s = '建議：今天就再測驗一次';
+            else s = `建議：第 ${p.nextReviewDay} 天再次測驗`;
+            if (c >= 3) s += '，並多做填空練習';
+            return s;
+        }
+
+        function renderWeakView() {
+            const list = getWeakList();
+            const practice = document.getElementById('btn-weak-practice');
+            practice.innerText = list.length ? `🎯 立即練習全部弱點 (${list.length} 字)` : '目前沒有弱點單字';
+            practice.disabled = !list.length;
+            practice.classList.toggle('opacity-50', !list.length);
+            document.getElementById('weak-list').innerHTML = list.length ? list.map(({ w, c }) => `
+                <div class="weak-row flex items-center justify-between py-3 px-2 border-b border-gray-100 last:border-0 hover:bg-gray-50 rounded cursor-pointer" data-id="${esc(String(w.id))}">
+                    <div class="flex items-center gap-3 min-w-0">
+                        <span class="text-lg">${weakDot(c)}</span>
+                        <div class="min-w-0">
+                            <div class="font-bold text-gray-800">${esc(w.en)}</div>
+                            <div class="text-xs text-gray-500 truncate">${esc(w.zh)}</div>
+                        </div>
+                    </div>
+                    <div class="text-sm font-bold text-gray-600 shrink-0 ml-2">${c} 次錯 ›</div>
+                </div>`).join('')
+                : '<p class="text-gray-500 text-sm text-center py-8">太棒了，目前沒有錯誤紀錄 🎉</p>';
+        }
+
+        function openWeakDetail(id) {
+            const item = getWeakList().find(x => String(x.w.id) === String(id));
+            if (!item) return;
+            const { w, p, c } = item;
+            const ms = Array.isArray(p.mistakes) ? p.mistakes : [{ d: '', day: p.lastMistakeDay, t: 'legacy' }];
+            const ord = ['第一次', '第二次', '第三次'];
+            const rows = ms.map((m, i) => {
+                const date = m.d ? m.d.slice(5).replace('-', '/') : `(虛擬第 ${m.day} 天)`;
+                return `<div class="text-sm text-gray-700 py-1">${ord[i] || '第' + (i + 1) + '次'}錯誤：<b>${esc(date)}</b> <span class="text-xs text-gray-400">${esc(QTYPE_LABEL[m.t] || '')}</span></div>`;
+            }).join('');
+            const content = document.getElementById('dict-content');
+            content.innerHTML = `
+                <h3 class="text-2xl font-bold text-gray-800">${weakDot(c)} ${esc(w.en)}</h3>
+                <div class="text-gray-500 font-mono text-sm mb-1">${esc(w.kk || '')}</div>
+                <div class="text-indigo-700 font-semibold mb-3">${esc(w.zh)}</div>
+                <div class="bg-red-50 border border-red-100 rounded-lg p-3 mb-3 max-h-40 overflow-y-auto">${rows}</div>
+                <div class="text-sm font-bold text-orange-600 mb-4">💡 ${esc(weakAdvice(p, c))}</div>
+                <div class="grid grid-cols-2 gap-2">
+                    <button id="btn-weak-one" class="bg-indigo-600 text-white font-bold py-2 rounded-lg text-sm">🎯 立即練習</button>
+                    <button id="btn-weak-clear" class="bg-gray-100 text-gray-600 font-bold py-2 rounded-lg text-sm border border-gray-200">✅ 移除紀錄</button>
+                </div>`;
+            document.getElementById('dict-modal').classList.remove('hidden');
+            document.getElementById('btn-close-dict').addEventListener('click', () => {
+                document.getElementById('dict-modal').classList.add('hidden');
+            }, { once: true });
+            document.getElementById('btn-weak-one').addEventListener('click', () => {
+                document.getElementById('dict-modal').classList.add('hidden');
+                startWeakPractice([w]);
+            });
+            document.getElementById('btn-weak-clear').addEventListener('click', () => {
+                if (!confirm(`確定移除「${w.en}」的錯誤紀錄？`)) return;
+                p.mistakes = [];
+                delete p.lastMistakeDay;
+                saveToCloud();
+                document.getElementById('dict-modal').classList.add('hidden');
+                renderWeakView();
+                updateDashboard();
+            });
+        }
+
+        function startWeakPractice(words) {
+            if (!words.length) return;
+            const q = [...words];
+            for (let i = q.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [q[i], q[j]] = [q[j], q[i]];
+            }
+            sessionTitle = WEAK_TITLE;
+            sessionQueue = q; mistakeQueue = [];
+            isMistakeMode = false; isAutoFlashcardMode = false;
+            totalCardsInSession = q.length; cardsCompleted = 0;
+            document.getElementById('view-weak').classList.add('hidden');
+            viewDashboard.classList.add('hidden');
+            viewStudy.classList.remove('hidden');
+            nextCard();
+        }
+
+        document.getElementById('btn-show-weak').addEventListener('click', () => {
+            viewDashboard.classList.add('hidden');
+            document.getElementById('view-weak').classList.remove('hidden');
+            renderWeakView();
+        });
+        document.getElementById('btn-close-weak').addEventListener('click', () => {
+            document.getElementById('view-weak').classList.add('hidden');
+            viewDashboard.classList.remove('hidden');
+            updateDashboard();
+        });
+        document.getElementById('btn-weak-practice').addEventListener('click', () => startWeakPractice(getWeakList().map(x => x.w)));
+        document.getElementById('weak-list').addEventListener('click', (e) => {
+            const row = e.target.closest('.weak-row');
+            if (row) openWeakDetail(row.dataset.id);
+        });
 
         // 錯題加強複習
         function startMistakeReview(daysRange) {

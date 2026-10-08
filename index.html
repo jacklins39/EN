@@ -154,10 +154,9 @@
                     <div class="text-lg font-bold text-gray-800" id="stat-mastered">0 / 1000</div>
                 </div>
 
-                <!-- 練習組距圖示分析 -->
-                <div class="mb-6 bg-white border border-gray-100 rounded-xl p-2 shadow-sm">
-                    <canvas id="masteryChart" class="w-full h-40"></canvas>
-                </div>
+                <button id="btn-show-analysis" class="w-full bg-blue-50 text-blue-700 hover:bg-blue-100 font-bold py-3 rounded-xl shadow-sm mb-6 border border-blue-200 transition-colors">
+                    📊 查看學習成效分析表
+                </button>
 
                 <button id="btn-start-session" class="btn-action w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 rounded-xl shadow-lg shadow-indigo-200 text-lg flex items-center justify-center gap-2 mb-4">
                     開始今日課程
@@ -172,13 +171,34 @@
             </div>
         </div>
 
+        <!-- 分析視圖 (Analysis) -->
+        <div id="view-analysis" class="w-full hidden">
+            <div class="bg-white rounded-2xl shadow-lg p-6 mb-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-2xl font-bold">學習成效分析</h2>
+                    <button id="btn-close-analysis" class="text-gray-400 hover:text-gray-600 bg-gray-100 hover:bg-gray-200 rounded-full p-2 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                    </button>
+                </div>
+                <p class="text-gray-500 text-sm mb-4">這張圖表顯示了你在目前單元的各個記憶階段的單字分佈。長條圖越往右，代表你對該單字的長期記憶越深刻。</p>
+                <div class="mb-6 bg-white border border-gray-100 rounded-xl p-2 shadow-sm">
+                    <canvas id="masteryChart" class="w-full h-64"></canvas>
+                </div>
+            </div>
+        </div>
+
         <!-- 學習視圖 (Study Session) -->
         <div id="view-study" class="w-full hidden">
             <!-- 進度條 -->
             <div class="w-full mb-6">
-                <div class="flex justify-between text-xs text-gray-500 font-semibold mb-2">
-                    <span id="session-progress-text">進度: 0/10</span>
-                    <span id="session-queue-type" class="text-indigo-600"></span>
+                <div class="flex justify-between items-end mb-2">
+                    <div>
+                        <div class="text-xs text-gray-500 font-semibold" id="session-progress-text">進度: 0/10</div>
+                        <div id="session-queue-type" class="text-indigo-600 text-xs font-bold mt-1"></div>
+                    </div>
+                    <button id="btn-quit-session" class="text-xs text-red-500 hover:text-red-700 font-medium px-2 py-1 bg-red-50 hover:bg-red-100 rounded border border-red-100 transition active:scale-95">
+                        🚪 離開放棄
+                    </button>
                 </div>
                 <div class="w-full bg-gray-200 rounded-full h-2.5">
                     <div id="session-progress-bar" class="bg-indigo-600 h-2.5 rounded-full progress-bar-fill" style="width: 0%"></div>
@@ -224,16 +244,28 @@
             </div>
 
             <div id="action-show-answer" class="w-full">
-                <button class="btn-action w-full bg-gray-800 hover:bg-gray-900 text-white font-bold py-4 rounded-xl shadow-lg text-lg" id="btn-show-answer">顯示解答</button>
+                <button class="btn-action w-full bg-gray-800 hover:bg-gray-900 text-white font-bold py-4 rounded-xl shadow-lg text-lg flex flex-col items-center justify-center gap-1" id="btn-show-answer">
+                    <span>顯示解答</span>
+                    <span class="text-[10px] font-mono opacity-60 bg-gray-700 px-2 rounded hidden sm:block">空白鍵 / Enter</span>
+                </button>
             </div>
             
             <div id="action-next" class="w-full hidden mt-4">
-                <button class="btn-action w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 rounded-xl shadow-lg shadow-indigo-200 text-lg" id="btn-next-card">下一題 ➔</button>
+                <button class="btn-action w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 rounded-xl shadow-lg shadow-indigo-200 text-lg flex flex-col items-center justify-center gap-1" id="btn-next-card">
+                    <span>下一題 ➔</span>
+                    <span class="text-[10px] font-mono opacity-80 bg-indigo-800 px-2 rounded hidden sm:block">空白鍵 / Enter</span>
+                </button>
             </div>
 
             <div id="action-rate" class="w-full grid grid-cols-2 gap-4 hidden mt-4">
-                <button class="btn-action bg-red-100 hover:bg-red-200 text-red-700 border border-red-200 font-bold py-4 rounded-xl shadow-sm text-lg" id="btn-rate-wrong">忘記了 (重來)</button>
-                <button class="btn-action bg-green-500 hover:bg-green-600 text-white font-bold py-4 rounded-xl shadow-sm shadow-green-200 text-lg" id="btn-rate-right">記得了 (過關)</button>
+                <button class="btn-action bg-red-100 hover:bg-red-200 text-red-700 border border-red-200 font-bold py-4 rounded-xl shadow-sm text-lg flex flex-col items-center justify-center gap-1" id="btn-rate-wrong">
+                    <span>忘記了 (重來)</span>
+                    <span class="text-[10px] font-mono opacity-60 bg-red-200 px-2 rounded hidden sm:block">◀ 鍵盤左鍵</span>
+                </button>
+                <button class="btn-action bg-green-500 hover:bg-green-600 text-white font-bold py-4 rounded-xl shadow-sm shadow-green-200 text-lg flex flex-col items-center justify-center gap-1" id="btn-rate-right">
+                    <span>記得了 (過關)</span>
+                    <span class="text-[10px] font-mono opacity-80 bg-green-700 px-2 rounded hidden sm:block">鍵盤右鍵 ▶</span>
+                </button>
             </div>
         </div>
 
@@ -591,6 +623,26 @@
             nextCard();
         });
 
+        document.getElementById('btn-quit-session').addEventListener('click', () => {
+            if (confirm("確定要中斷目前的學習嗎？\\n目前的進度已經存檔，但剩餘的卡片將會等到下次再複習。")) {
+                viewStudy.classList.add('hidden');
+                viewDashboard.classList.remove('hidden');
+                updateDashboard();
+            }
+        });
+
+        document.getElementById('btn-show-analysis').addEventListener('click', () => {
+            viewDashboard.classList.add('hidden');
+            document.getElementById('view-analysis').classList.remove('hidden');
+            // Chart 寬高可能會改變，觸發重新渲染
+            setTimeout(() => renderChart(currentUnit), 50);
+        });
+
+        document.getElementById('btn-close-analysis').addEventListener('click', () => {
+            document.getElementById('view-analysis').classList.add('hidden');
+            viewDashboard.classList.remove('hidden');
+        });
+
         function nextCard() {
             flashcard.classList.remove('flipped');
             actionShowAnswer.classList.add('hidden');
@@ -751,10 +803,10 @@
             options.sort(() => Math.random() - 0.5);
             
             quizOptions.innerHTML = '';
-            options.forEach(opt => {
+            options.forEach((opt, index) => {
                 const btn = document.createElement('button');
-                btn.className = 'btn-action w-full bg-white hover:bg-gray-50 border-2 border-gray-200 text-gray-800 font-bold py-3 px-4 rounded-xl shadow-sm text-left text-lg transition-colors';
-                btn.innerText = opt.zh;
+                btn.className = 'btn-action w-full bg-white hover:bg-gray-50 border-2 border-gray-200 text-gray-800 font-bold py-3 px-4 rounded-xl shadow-sm text-left text-lg transition-colors flex items-center';
+                btn.innerHTML = `<span class="bg-gray-100 text-gray-400 text-sm font-mono px-2 py-0.5 rounded mr-3 hidden sm:inline-block">${index + 1}</span> <span>${opt.zh}</span>`;
                 
                 btn.onclick = () => {
                     if (isShowingAnswer) return; // 已經回答過
@@ -829,6 +881,35 @@
             updateDashboard();
             if (!viewCompleted.classList.contains('hidden')) {
                 document.getElementById('btn-return-dash').click();
+            }
+        });
+
+        // 鍵盤快捷鍵
+        document.addEventListener('keydown', (e) => {
+            if (viewStudy.classList.contains('hidden')) return; 
+            if (!document.getElementById('dict-modal').classList.contains('hidden')) return;
+
+            if (e.key === ' ' || e.key === 'Enter') {
+                e.preventDefault();
+                if (!isQuizMode && !isShowingAnswer) {
+                    document.getElementById('btn-show-answer').click();
+                } else if (!actionNext.classList.contains('hidden')) {
+                    document.getElementById('btn-next-card').click();
+                }
+            } else if (e.key === 'ArrowLeft') {
+                if (isShowingAnswer && !actionRate.classList.contains('hidden')) {
+                    document.getElementById('btn-rate-wrong').click();
+                }
+            } else if (e.key === 'ArrowRight') {
+                if (isShowingAnswer && !actionRate.classList.contains('hidden')) {
+                    document.getElementById('btn-rate-right').click();
+                }
+            } else if (e.key >= '1' && e.key <= '4') {
+                if (isQuizMode && !isShowingAnswer && !quizOptions.classList.contains('hidden')) {
+                    const idx = parseInt(e.key) - 1;
+                    const btns = quizOptions.querySelectorAll('button');
+                    if (btns[idx]) btns[idx].click();
+                }
             }
         });
 
@@ -992,7 +1073,7 @@
             chartInstance = new Chart(ctx, {
                 type: 'bar',
                 data: {
-                    labels: ['未熟', '等級 1', '等級 2', '等級 3', '等級 4', '精熟'],
+                    labels: ['初學(LV0)', '略懂(LV1)', '熟悉(LV2)', '掌握(LV3)', '深刻(LV4)', '精熟(MAX)'],
                     datasets: [{
                         label: '單字數量',
                         data: levels,

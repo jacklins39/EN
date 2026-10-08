@@ -353,6 +353,10 @@
         let totalCardsInSession = 0;
         let cardsCompleted = 0;
         
+        let isAutoFlashcardMode = false;
+        let autoFlashcardTimerId = null;
+        let autoFlashcardSpeed = 3500;
+        
         let previewReviewWords = [];
         let previewNewWords = [];
 
@@ -578,76 +582,39 @@
             `;
             document.getElementById('dict-modal').classList.remove('hidden');
 
-            let autoPlayTimer = null;
-            let currentPlayIndex = 0;
             const btnPlay = document.getElementById('btn-auto-play');
             const speedSelect = document.getElementById('auto-play-speed');
-            const countDisplay = document.getElementById('preview-count');
             
-            function stopAutoPlay() {
-                if (autoPlayTimer) {
-                    clearInterval(autoPlayTimer);
-                    autoPlayTimer = null;
-                }
-                if (btnPlay) btnPlay.innerHTML = '▶️ 自動輪播發音';
-            }
-
             if (btnPlay) {
                 btnPlay.addEventListener('click', () => {
-                    if (autoPlayTimer) {
-                        stopAutoPlay();
-                    } else {
-                        if (words.length === 0) return;
-                        if (currentPlayIndex >= words.length) currentPlayIndex = 0; // reset if finished
-                        
-                        btnPlay.innerHTML = '⏹️ 停止輪播';
-                        
-                        const playNext = () => {
-                            if (currentPlayIndex >= words.length) {
-                                stopAutoPlay();
-                                return;
-                            }
-                            
-                            // 標記當前單字
-                            document.querySelectorAll('.preview-word-row').forEach(row => row.classList.remove('bg-indigo-100'));
-                            const row = document.getElementById('preview-row-' + currentPlayIndex);
-                            if (row) {
-                                row.classList.add('bg-indigo-100');
-                                row.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                            }
-                            
-                            countDisplay.innerText = currentPlayIndex + 1;
-                            playAudio(words[currentPlayIndex].en);
-                            currentPlayIndex++;
-                        };
-                        
-                        playNext(); // play first immediately
-                        autoPlayTimer = setInterval(playNext, parseInt(speedSelect.value));
-                    }
+                    if (words.length === 0) return;
+                    
+                    // 關閉 Modal
+                    document.getElementById('dict-modal').classList.add('hidden');
+                    viewDashboard.classList.add('hidden');
+                    viewStudy.classList.remove('hidden');
+                    
+                    // 設定參數進入「自動翻卡模式」
+                    isAutoFlashcardMode = true;
+                    autoFlashcardSpeed = parseInt(speedSelect.value);
+                    sessionQueue = [...words];
+                    mistakeQueue = [];
+                    totalCardsInSession = sessionQueue.length;
+                    cardsCompleted = 0;
+                    sessionTitle = title + " (自動輪播)";
+                    
+                    nextCard();
                 });
-                
-                // 更換速度時自動重啟
-                speedSelect.addEventListener('change', () => {
-                    if (autoPlayTimer) {
-                        stopAutoPlay();
-                        btnPlay.click(); 
-                    }
-                });
-                
-                // 關閉視窗時清除計時器
-                const closeBtn = document.getElementById('btn-close-dict');
-                const modalOverlay = document.getElementById('dict-modal');
-                const cleanup = () => {
-                    stopAutoPlay();
-                    closeBtn.removeEventListener('click', cleanup);
-                    modalOverlay.removeEventListener('click', overlayCleanup);
-                };
-                const overlayCleanup = (e) => {
-                    if (e.target === modalOverlay) cleanup();
-                };
-                closeBtn.addEventListener('click', cleanup);
-                modalOverlay.addEventListener('click', overlayCleanup);
             }
+            
+            document.getElementById('btn-close-dict').addEventListener('click', () => {
+                document.getElementById('dict-modal').classList.add('hidden');
+            }, {once: true});
+            document.getElementById('dict-modal').addEventListener('click', (e) => {
+                if (e.target === document.getElementById('dict-modal')) {
+                    document.getElementById('dict-modal').classList.add('hidden');
+                }
+            }, {once: true});
         }
 
         document.getElementById('box-stat-review').addEventListener('click', () => {
@@ -715,6 +682,13 @@
         });
 
         document.getElementById('btn-quit-session').addEventListener('click', () => {
+            if (isAutoFlashcardMode) {
+                isAutoFlashcardMode = false;
+                if (autoFlashcardTimerId) clearTimeout(autoFlashcardTimerId);
+                viewStudy.classList.add('hidden');
+                viewDashboard.classList.remove('hidden');
+                return;
+            }
             if (confirm("確定要中斷目前的學習嗎？\\n目前的進度已經存檔，但剩餘的卡片將會等到下次再複習。")) {
                 viewStudy.classList.add('hidden');
                 viewDashboard.classList.remove('hidden');
@@ -735,6 +709,11 @@
         });
 
         function nextCard() {
+            if (autoFlashcardTimerId) {
+                clearTimeout(autoFlashcardTimerId);
+                autoFlashcardTimerId = null;
+            }
+            
             flashcard.classList.remove('flipped');
             actionShowAnswer.classList.add('hidden');
             actionRate.classList.add('hidden');
@@ -761,12 +740,12 @@
             
             // 決定模式：等級 0 (新單字) 用翻卡片，等級 > 0 (複習) 用 4 選 1
             const progress = userProgress[currentWord.id];
-            isQuizMode = progress && progress.level > 0;
+            isQuizMode = !isAutoFlashcardMode && progress && progress.level > 0;
             
             if (isQuizMode) {
                 quizOptions.classList.remove('hidden');
                 setupQuizMode();
-            } else {
+            } else if (!isAutoFlashcardMode) {
                 actionShowAnswer.classList.remove('hidden');
             }
 
@@ -848,6 +827,24 @@
 
             updateProgressBar();
             playAudio(currentWord.en);
+            
+            if (isAutoFlashcardMode) {
+                autoFlashcardTimerId = setTimeout(() => {
+                    if (!isAutoFlashcardMode) return;
+                    flashcard.classList.add('flipped');
+                    // 翻面後可以念英文例句
+                    if (currentWord.example) {
+                        playAudio(currentWord.example);
+                    }
+                    
+                    autoFlashcardTimerId = setTimeout(() => {
+                        if (!isAutoFlashcardMode) return;
+                        cardsCompleted++;
+                        nextCard();
+                    }, autoFlashcardSpeed * 0.6);
+                    
+                }, autoFlashcardSpeed * 0.4);
+            }
         }
 
         function handleAnswer(isCorrect) {
@@ -937,6 +934,8 @@
         }
 
         function finishSession() {
+            isAutoFlashcardMode = false;
+            if (autoFlashcardTimerId) clearTimeout(autoFlashcardTimerId);
             viewStudy.classList.add('hidden');
             viewCompleted.classList.remove('hidden');
         }

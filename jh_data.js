@@ -864,15 +864,6 @@ const jhWordsDB = [
         "unit": 17
     },
     {
-        "id": 17097,
-        "en": "interested",
-        "kk": "/ˈɪntɝəstəd/, /ˈɪntɝɪstɪd/, /ˈɪntɹəstɪd/, /ˈɪntɹɪstɪd/",
-        "zh": "感到有興趣的",
-        "example": "seeking views from all interested parties",
-        "exampleZh": "徵求所有利害關係人的意見",
-        "unit": 17
-    },
-    {
         "id": 17098,
         "en": "jealous",
         "kk": "/ˈdʒɛɫəs/",
@@ -2241,15 +2232,6 @@ const jhWordsDB = [
         "unit": 17
     },
     {
-        "id": 17250,
-        "en": "hundred",
-        "kk": "/ˈhəndɝd/, /ˈhəndɹəd/, /ˈhəndɹɪd/, /ˈhənɝd/",
-        "zh": "",
-        "example": "thirteen hundred hours",
-        "exampleZh": "一千三百小時",
-        "unit": 17
-    },
-    {
         "id": 17251,
         "en": "thousand",
         "kk": "/ˈθaʊzən/, /ˈθaʊzənd/",
@@ -2313,33 +2295,6 @@ const jhWordsDB = [
         "unit": 17
     },
     {
-        "id": 17258,
-        "en": "a few",
-        "kk": "/ˈeɪ/, /ə/ /ˈfju/",
-        "zh": "(+可數名詞)",
-        "example": "",
-        "exampleZh": "",
-        "unit": 17
-    },
-    {
-        "id": 17259,
-        "en": "a little",
-        "kk": "/ˈeɪ/, /ə/ /ˈɫɪtəɫ/",
-        "zh": "(+不可數名詞)",
-        "example": "",
-        "exampleZh": "",
-        "unit": 17
-    },
-    {
-        "id": 17260,
-        "en": "a lot (+of +",
-        "kk": "/ˈeɪ/, /ə/ /ˈɫɑt/, /ˈɫɔt/ /ˈəv/",
-        "zh": "名詞)",
-        "example": "",
-        "exampleZh": "",
-        "unit": 17
-    },
-    {
         "id": 17261,
         "en": "any",
         "kk": "/ˈɛni/",
@@ -2355,15 +2310,6 @@ const jhWordsDB = [
         "zh": "",
         "example": "they all loved to play, both the boys and the girls",
         "exampleZh": "他們都喜歡玩，無論是男孩還是女孩",
-        "unit": 17
-    },
-    {
-        "id": 17263,
-        "en": "few 43 less 44 little 45 many 46 more 47 much 48 number 49 several 50 some 51 total",
-        "kk": "/ˈfju/ /ˈɫɛs/ /ˈɫɪtəɫ/ /ˈmɛni/ /ˈmɔɹ/ /ˈmətʃ/ /ˈnəmbɝ/ /ˈsɛvɝəɫ/, /ˈsɛvɹəɫ/ /ˈsəm/ /ˈtoʊtəɫ/",
-        "zh": "(+可數名詞) 零 一(+不可數名詞) 二 三 四 五 六 七 八 九 十 十一 十二 十三 十四 十五 十六 十七 十八 十九 二十 三十 四十 五十 六十 七十 八十 九十 百 千 百萬 第一 第二 第三 最後 全部 一些 一些 很多 任何 兩者(都)… 很少[否定] 比較少 幾乎沒有 (+可數名詞)很多 比較多 (+不可數名詞)很多 數字 數個的 一些 總計、全體的",
-        "example": "",
-        "exampleZh": "",
         "unit": 17
     },
     {
@@ -2436,15 +2382,6 @@ const jhWordsDB = [
         "zh": "週一",
         "example": "I saw him on Monday",
         "exampleZh": "我星期一見過他",
-        "unit": 17
-    },
-    {
-        "id": 17272,
-        "en": "Tuesday",
-        "kk": "/ˈtjuzˌdeɪ/, /ˈtuzˌdeɪ/, /ˈtuzdi/",
-        "zh": "週二",
-        "example": "Tuesday afternoons",
-        "exampleZh": "週二下午",
         "unit": 17
     },
     {
@@ -2718,15 +2655,6 @@ const jhWordsDB = [
         "unit": 17
     },
     {
-        "id": 17303,
-        "en": "stop watch",
-        "kk": "/ˈstɑp/ /ˈwɑtʃ/, /ˈwɔtʃ/",
-        "zh": "碼表",
-        "example": "",
-        "exampleZh": "",
-        "unit": 17
-    },
-    {
         "id": 17304,
         "en": "a.m.",
         "kk": "/ˈæm/, /ˈeɪˈɛm/",
@@ -2760,15 +2688,6 @@ const jhWordsDB = [
         "zh": "小時、鐘頭",
         "example": "an extra hour of daylight",
         "exampleZh": "多一小時的日照",
-        "unit": 17
-    },
-    {
-        "id": 17308,
-        "en": "minute",
-        "kk": "/ˈmɪnət/, /maɪˈnut/, /maɪnˈjut/",
-        "zh": "分鐘",
-        "example": "she had been laughing one minute and crying the next",
-        "exampleZh": "她前一分鐘還在笑，下一分鐘就哭了",
         "unit": 17
     },
     {
@@ -2841,15 +2760,6 @@ const jhWordsDB = [
         "zh": "已經",
         "example": "already it was past four o' clock",
         "exampleZh": "已經四點多了",
-        "unit": 17
-    },
-    {
-        "id": 17317,
-        "en": "current",
-        "kk": "/ˈkɑɹənt/, /ˈkɝənt/, /ˈkɝnt/",
-        "zh": "現行的",
-        "example": "Current times are tough.",
-        "exampleZh": "當前形勢嚴峻。",
         "unit": 17
     },
     {
@@ -3057,15 +2967,6 @@ const jhWordsDB = [
         "zh": "硬幣",
         "example": "she opened her purse and took out a coin",
         "exampleZh": "她打開錢包，拿出一枚硬幣",
-        "unit": 17
-    },
-    {
-        "id": 17341,
-        "en": "credit card",
-        "kk": "/ˈkɹɛdət/, /ˈkɹɛdɪt/ /ˈkɑɹd/",
-        "zh": "信用卡",
-        "example": "he always paid by credit card",
-        "exampleZh": "他總是用信用卡付款",
         "unit": 17
     },
     {
@@ -3627,15 +3528,6 @@ const jhWordsDB = [
         "unit": 17
     },
     {
-        "id": 17404,
-        "en": "sandwich",
-        "kk": "/ˈsæmwɪtʃ/, /ˈsændwɪtʃ/, /ˈsænwɪtʃ/",
-        "zh": "三明治",
-        "example": "a ham sandwich",
-        "exampleZh": "火腿三明治",
-        "unit": 17
-    },
-    {
         "id": 17405,
         "en": "seafood",
         "kk": "/ˈsiˌfud/",
@@ -3840,15 +3732,6 @@ const jhWordsDB = [
         "zh": "蘇打(氣泡)水",
         "example": "a whiskey and soda",
         "exampleZh": "威士忌和蘇打水",
-        "unit": 17
-    },
-    {
-        "id": 17428,
-        "en": "soft drink",
-        "kk": "/ˈsɑft/, /ˈsɔft/ /ˈdɹɪŋk/",
-        "zh": "汽水",
-        "example": "",
-        "exampleZh": "",
         "unit": 17
     },
     {
@@ -5019,15 +4902,6 @@ const jhWordsDB = [
         "zh": "壘球",
         "example": "",
         "exampleZh": "",
-        "unit": 17
-    },
-    {
-        "id": 17559,
-        "en": "table tennis",
-        "kk": "/ˈteɪbəɫ/ /ˈtɛnəs/, /ˈtɛnɪs/",
-        "zh": "桌球",
-        "example": "They played table tennis together.",
-        "exampleZh": "他們一起打乒乓球。",
         "unit": 17
     },
     {
@@ -6381,15 +6255,6 @@ const jhWordsDB = [
         "unit": 17
     },
     {
-        "id": 17710,
-        "en": "tape recorder",
-        "kk": "/ˈteɪp/ /ɹiˈkɔɹdɝ/, /ɹɪˈkɔɹdɝ/",
-        "zh": "錄音機",
-        "example": "",
-        "exampleZh": "",
-        "unit": 17
-    },
-    {
         "id": 17711,
         "en": "telephone",
         "kk": "/ˈtɛɫəˌfoʊn/",
@@ -6570,15 +6435,6 @@ const jhWordsDB = [
         "unit": 17
     },
     {
-        "id": 17731,
-        "en": "trash can",
-        "kk": "/ˈtɹæʃ/ /ˈkæn/, /kən/",
-        "zh": "垃圾桶",
-        "example": "",
-        "exampleZh": "",
-        "unit": 17
-    },
-    {
         "id": 17732,
         "en": "wok",
         "kk": "/ˈwɑk/",
@@ -6705,39 +6561,12 @@ const jhWordsDB = [
         "unit": 17
     },
     {
-        "id": 17746,
-        "en": "elementary school",
-        "kk": "/ˌɛɫəˈmɛntɝɹi/, /ˌɛɫəˈmɛntɹi/, /ˌɛɫəˈmɛntʃɹi/ /ˈskuɫ/",
-        "zh": "國小",
-        "example": "",
-        "exampleZh": "",
-        "unit": 17
-    },
-    {
-        "id": 17747,
-        "en": "junior high school",
-        "kk": "/ˈdʒunjɝ/ /ˈhaɪ/ /ˈskuɫ/",
-        "zh": "國中",
-        "example": "",
-        "exampleZh": "",
-        "unit": 17
-    },
-    {
         "id": 17748,
         "en": "kindergarten",
         "kk": "/ˈkɪndɝˌɡɑɹtən/",
         "zh": "幼稚園",
         "example": "arriving at kindergarten ready to learn is vitally important",
         "exampleZh": "到達幼兒園做好學習準備至關重要",
-        "unit": 17
-    },
-    {
-        "id": 17749,
-        "en": "senior high school",
-        "kk": "/ˈsinjɝ/ /ˈhaɪ/ /ˈskuɫ/",
-        "zh": "高中",
-        "example": "",
-        "exampleZh": "",
         "unit": 17
     },
     {
@@ -7056,15 +6885,6 @@ const jhWordsDB = [
         "unit": 17
     },
     {
-        "id": 17785,
-        "en": "present",
-        "kk": "/ˈpɹɛzənt/, /pɝˈzɛnt/, /pɹiˈzɛnt/",
-        "zh": "禮物",
-        "example": "you have to put everything out of your mind and be really present",
-        "exampleZh": "你必須把一切都拋在腦後，真正活在當下",
-        "unit": 17
-    },
-    {
         "id": 17786,
         "en": "ruler",
         "kk": "/ˈɹuɫɝ/",
@@ -7239,15 +7059,6 @@ const jhWordsDB = [
         "id": 17805,
         "en": "PE",
         "kk": "",
-        "zh": "體育",
-        "example": "",
-        "exampleZh": "",
-        "unit": 17
-    },
-    {
-        "id": 17806,
-        "en": "physical education",
-        "kk": "/ˈfɪzɪkəɫ/ /ˌɛdʒəˈkeɪʃən/, /ˌɛdʒjuˈkeɪʃən/",
         "zh": "體育",
         "example": "",
         "exampleZh": "",
@@ -7695,15 +7506,6 @@ const jhWordsDB = [
         "unit": 17
     },
     {
-        "id": 17856,
-        "en": "record",
-        "kk": "/ˈɹɛkɝd/, /ɹəˈkɔɹd/, /ɹɪˈkɔɹd/",
-        "zh": "記錄",
-        "example": "my favorite record",
-        "exampleZh": "我最喜歡的唱片",
-        "unit": 17
-    },
-    {
         "id": 17857,
         "en": "score",
         "kk": "/ˈskɔɹ/",
@@ -7965,15 +7767,6 @@ const jhWordsDB = [
         "unit": 17
     },
     {
-        "id": 17886,
-        "en": "culture center",
-        "kk": "/ˈkəɫtʃɝ/ /ˈsɛnɝ/, /ˈsɛntɝ/",
-        "zh": "文化中心",
-        "example": "",
-        "exampleZh": "",
-        "unit": 17
-    },
-    {
         "id": 17887,
         "en": "department store",
         "kk": "/dɪˈpɑɹtmənt/ /ˈstɔɹ/",
@@ -7998,24 +7791,6 @@ const jhWordsDB = [
         "zh": "",
         "example": "he is chaplain to the British factory at St. Petersburg",
         "exampleZh": "他是聖彼得堡英國工廠的牧師",
-        "unit": 17
-    },
-    {
-        "id": 17890,
-        "en": "fast food restaurant",
-        "kk": "/ˈfæst/ /ˈfud/ /ˈɹɛsˌtɹɑnt/, /ˈɹɛstɝˌɑnt/",
-        "zh": "速食餐廳",
-        "example": "",
-        "exampleZh": "",
-        "unit": 17
-    },
-    {
-        "id": 17891,
-        "en": "fire station",
-        "kk": "/ˈfaɪɝ/, /ˈfaɪɹ/ /ˈsteɪʃən/",
-        "zh": "",
-        "example": "",
-        "exampleZh": "",
         "unit": 17
     },
     {
@@ -8118,24 +7893,6 @@ const jhWordsDB = [
         "unit": 17
     },
     {
-        "id": 17903,
-        "en": "pool 43 post office 44 police station 45 restroom 46 restaurant 47 shop 48 stationery store 49 store 50 supermarket",
-        "kk": "/ˈpuɫ/ /ˈpoʊst/ /ˈɔfɪs/ /pəˈɫis/ /ˈsteɪʃən/ /ˈɹɛsˌtɹum/ /ˈɹɛsˌtɹɑnt/, /ˈɹɛstɝˌɑnt/ /ˈʃɑp/ /ˈsteɪʃəˌnɛɹi/ /ˈstɔɹ/ /ˈstɔɹ/ /ˈsupɝˌmɑɹkɪt/",
-        "zh": " 這裡郵局 那裏警察局 位置洗手間 後面餐廳 往後零售店 中心的文具行 往前商店 前面的超市",
-        "example": "",
-        "exampleZh": "",
-        "unit": 17
-    },
-    {
-        "id": 17904,
-        "en": "temple 52 theater",
-        "kk": "/ˈtɛmpəɫ/ /ˈθiətɝ/",
-        "zh": "寺廟 中間的劇院",
-        "example": "",
-        "exampleZh": "",
-        "unit": 17
-    },
-    {
         "id": 17905,
         "en": "waterfalls",
         "kk": "/ˈwɔtɝˌfɔɫz/",
@@ -8178,15 +7935,6 @@ const jhWordsDB = [
         "zh": "市區、鬧區",
         "example": "Tom works downtown.",
         "exampleZh": "湯姆在市中心工作。",
-        "unit": 17
-    },
-    {
-        "id": 17910,
-        "en": "farm 59 place 60 town 61 village 62 local",
-        "kk": "/ˈfɑɹm/ /ˈpɫeɪs/ /ˈtaʊn/ /ˈvɪɫədʒ/, /ˈvɪɫɪdʒ/ /ˈɫoʊkəɫ/",
-        "zh": "農場、農田 麵包店地方 銀行城鎮 海邊村莊 書店當地的",
-        "example": "",
-        "exampleZh": "",
         "unit": 17
     },
     {
@@ -8302,15 +8050,6 @@ const jhWordsDB = [
         "en": "bus stop",
         "kk": "/ˈbəs/ /ˈstɑp/",
         "zh": "公車站",
-        "example": "",
-        "exampleZh": "",
-        "unit": 17
-    },
-    {
-        "id": 17924,
-        "en": "parking lot",
-        "kk": "/ˈpɑɹkɪŋ/ /ˈɫɑt/, /ˈɫɔt/",
-        "zh": "停車場",
         "example": "",
         "exampleZh": "",
         "unit": 17
@@ -9189,55 +8928,10 @@ const jhWordsDB = [
         "unit": 18
     },
     {
-        "id": 18022,
-        "en": "Chinese New Year",
-        "kk": "/tʃaɪˈniz/ /ˈnju/, /ˈnu/ /ˈjɪɹ/",
-        "zh": "春節",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18023,
-        "en": "New Year’s Eve",
-        "kk": "/ˈnju/, /ˈnu/ /ˈjɪɹz/, /jɝz/ /ˈiv/",
-        "zh": "跨年夜",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18024,
-        "en": "Double Tenth Day",
-        "kk": "/ˈdəbəɫ/ /ˈtɛnθ/ /ˈdeɪ/",
-        "zh": "雙十節",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
         "id": 18025,
         "en": "Dragon-boat Festival",
         "kk": "/ˈfɛstəvəɫ/, /ˈfɛstɪvəɫ/",
         "zh": "端午節",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18026,
-        "en": "Lantern Festival",
-        "kk": "/ˈɫæntɝn/ /ˈfɛstəvəɫ/, /ˈfɛstɪvəɫ/",
-        "zh": "元宵節",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18027,
-        "en": "Moon Festival",
-        "kk": "/ˈmun/ /ˈfɛstəvəɫ/, /ˈfɛstɪvəɫ/",
-        "zh": "中秋節",
         "example": "",
         "exampleZh": "",
         "unit": 18
@@ -9274,15 +8968,6 @@ const jhWordsDB = [
         "en": "Halloween",
         "kk": "/ˌhæɫəˈwin/",
         "zh": "萬聖節",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18032,
-        "en": "New Year’s Day",
-        "kk": "/ˈnju/, /ˈnu/ /ˈjɪɹz/, /jɝz/ /ˈdeɪ/",
-        "zh": "新年",
         "example": "",
         "exampleZh": "",
         "unit": 18
@@ -9486,15 +9171,6 @@ const jhWordsDB = [
         "unit": 18
     },
     {
-        "id": 18055,
-        "en": "dentist",
-        "kk": "/ˈdɛnɪst/, /ˈdɛntəst/, /ˈdɛntɪst/",
-        "zh": "牙醫",
-        "example": "Maria is a dentist.",
-        "exampleZh": "瑪麗亞是一名牙醫。",
-        "unit": 18
-    },
-    {
         "id": 18056,
         "en": "diplomat",
         "kk": "/ˈdɪpɫəˌmæt/",
@@ -9630,15 +9306,6 @@ const jhWordsDB = [
         "unit": 18
     },
     {
-        "id": 18071,
-        "en": "mail carrier",
-        "kk": "/ˈmeɪɫ/ /ˈkæɹiɝ/, /ˈkɛɹiɝ/",
-        "zh": "郵差",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
         "id": 18072,
         "en": "manager",
         "kk": "/ˈmænədʒɝ/, /ˈmænɪdʒɝ/",
@@ -9699,15 +9366,6 @@ const jhWordsDB = [
         "zh": "畫家",
         "example": "Mary is a painter.",
         "exampleZh": "瑪麗是一位畫家。",
-        "unit": 18
-    },
-    {
-        "id": 18079,
-        "en": "police officer",
-        "kk": "/pəˈɫis/ /ˈɔfəsɝ/, /ˈɔfɪsɝ/",
-        "zh": "警官",
-        "example": "",
-        "exampleZh": "",
         "unit": 18
     },
     {
@@ -9987,15 +9645,6 @@ const jhWordsDB = [
         "zh": "熱的",
         "example": "he found my story simply too hot to handle",
         "exampleZh": "他發現我的故事太熱門了，難以處理",
-        "unit": 18
-    },
-    {
-        "id": 18111,
-        "en": "humid",
-        "kk": "/ˈhjuməd/, /ˈhjumɪd/, /ˈjuməd/, /ˈjumɪd/",
-        "zh": "潮濕的",
-        "example": "a hot and humid day",
-        "exampleZh": "炎熱潮濕的一天",
         "unit": 18
     },
     {
@@ -11088,123 +10737,6 @@ const jhWordsDB = [
         "unit": 18
     },
     {
-        "id": 18233,
-        "en": "a 27 each",
-        "kk": "/ˈeɪ/, /ə/ /ˈitʃ/",
-        "zh": "一個(用單數動詞)每一個",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18234,
-        "en": "every 28 everyone (everybody)",
-        "kk": "/ˈɛvɝi/, /ˈɛvɹi/ /ˈɛvɹiˌwən/",
-        "zh": "(+單數)每個每個人",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18235,
-        "en": "the 29 everything",
-        "kk": "/ˈðə/, /ðə/, /ði/ /ˈɛvɹiˌθɪŋ/",
-        "zh": "這(用單數動詞)每件事情",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18236,
-        "en": "this 30 many",
-        "kk": "/ˈðɪs/, /ðɪs/ /ˈmɛni/",
-        "zh": "這個(+可數名詞)很多",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18237,
-        "en": "that 31 most",
-        "kk": "/ˈðæt/, /ðət/ /ˈmoʊs/, /ˈmoʊst/",
-        "zh": "那個最多",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18238,
-        "en": "these 32 nobody",
-        "kk": "/ˈðiz/ /ˈnoʊˌbɑˌdi/, /ˈnoʊbədi/",
-        "zh": "這些(用單數動詞)沒有人",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18239,
-        "en": "those 33 none",
-        "kk": "/ˈðoʊz/ /ˈnən/",
-        "zh": "那些(用單數動詞)沒有人",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18240,
-        "en": "my 34 nothing",
-        "kk": "/ˈmaɪ/ /ˈnəθɪŋ/",
-        "zh": "我的(用單數動詞)沒有事",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18241,
-        "en": "our 35 other",
-        "kk": "/ˈaʊɝ/, /ˈaʊɹ/, /ˈɑɹ/ /ˈəðɝ/",
-        "zh": "我們的(+複數名詞)其他的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18242,
-        "en": "your 36 part",
-        "kk": "/ˈjɔɹ/, /ˈjʊɹ/ /ˈpɑɹt/",
-        "zh": "你(們)的部分(的)",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18243,
-        "en": "his 37 some",
-        "kk": "/ˈhɪz/, /hɪz/ /ˈsəm/",
-        "zh": "他的一些",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18244,
-        "en": "her 38 someone (somebody)",
-        "kk": "/ˈhɝ/, /hɝ/ /ˈsəmˌwən/",
-        "zh": "她的某個人",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18245,
-        "en": "its 39 something",
-        "kk": "/ˈɪts/, /ɪts/ /ˈsəmθɪŋ/",
-        "zh": "它的(用單數動詞)每件事情",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
         "id": 18246,
         "en": "their",
         "kk": "/ˈðɛɹ/",
@@ -11214,192 +10746,12 @@ const jhWordsDB = [
         "unit": 18
     },
     {
-        "id": 18247,
-        "en": "I, me, my 2 what",
-        "kk": "/ˈaɪ/ /ˈmi/ /ˈmaɪ/ /ˈhwət/, /ˈwət/",
-        "zh": "我-主、受、所有格什麼(事物)",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18248,
-        "en": "mine 3 which",
-        "kk": "/ˈmaɪn/ /ˈhwɪtʃ/, /ˈwɪtʃ/",
-        "zh": "(+名詞)我的(...物品)哪一個",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18249,
-        "en": "myself 4 who",
-        "kk": "/ˌmaɪˈsɛɫf/ /ˈhu/",
-        "zh": "我自己什麼人",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18250,
-        "en": "you, you, your 5 whose (+N.)",
-        "kk": "/ˈju/ /ˈju/ /ˈjɔɹ/, /ˈjʊɹ/ /ˈhuz/",
-        "zh": "你(們)-主、受、所有格誰的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18251,
-        "en": "yours 6 when",
-        "kk": "/ˈjɔɹz/, /ˈjʊɹz/, /jɝz/ /ˈhwɛn/, /ˈhwɪn/, /ˈwɛn/, /ˈwɪn/",
-        "zh": "(+名詞)你(們)的(...物品)何時",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18252,
-        "en": "yourself 7 where",
-        "kk": "/ˈjɔɹsɛɫf/, /jɝˈsɛɫf/, /jʊɹˈsɛɫf/ /ˈhwɛɹ/, /ˈwɛɹ/",
-        "zh": "你自己何地",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18253,
-        "en": "yourselves 8 whether",
-        "kk": "/ˈjɔɹsɛɫvz/, /jʊɹˈsɛɫvz/ /ˈhwɛðɝ/, /ˈwɛðɝ/",
-        "zh": "你們自己是否",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18254,
-        "en": "he, him, his 9 while",
-        "kk": "/ˈhi/ /ˈhɪm/, /ɪm/ /ˈhɪz/, /hɪz/ /ˈhwaɪɫ/, /ˈwaɪɫ/",
-        "zh": "他-主、受、所有的當…時",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18255,
-        "en": "himself 10 why",
-        "kk": "/hɪmˈsɛɫf/ /ˈhwaɪ/, /ˈwaɪ/",
-        "zh": "他自己什麼原因",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18256,
-        "en": "she, her, her",
-        "kk": "/ˈʃi/ /ˈhɝ/, /hɝ/ /ˈhɝ/, /hɝ/",
-        "zh": "她-主、受、所有格",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
         "id": 18257,
         "en": "hers",
         "kk": "/ˈhɝz/, /hɝz/",
         "zh": "(+名詞)她的(…物品)主題三十：Be動詞與助動詞",
         "example": "the choice was hers",
         "exampleZh": "選擇是她的",
-        "unit": 18
-    },
-    {
-        "id": 18258,
-        "en": "herself 1 be",
-        "kk": "/hɝˈsɛɫf/ /ˈbi/, /bi/",
-        "zh": "她自己Be動詞[原型]",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18259,
-        "en": "it, it, its 2 am, are, is I,",
-        "kk": "/ˈɪt/, /ɪt/ /ˈɪt/, /ɪt/ /ˈɪts/, /ɪts/ /ˈæm/, /ˈeɪˈɛm/ /ˈɑɹ/, /ɝ/ /ˈɪz/, /ɪz/ /ˈaɪ/",
-        "zh": "它-主、受、所有格[現]複數,三單",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18260,
-        "en": "itself 3 was, were",
-        "kk": "/ˌɪtˈsɛɫf/ /ˈwɑz/, /wəz/ /ˈwɝ/",
-        "zh": "它自己[過]I、三單,複數",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18261,
-        "en": "ours 5 do, does",
-        "kk": "/ˈaʊɝz/, /ˈaʊɹz/, /ˈɑɹz/ /ˈdu/ /ˈdəz/, /dɪz/",
-        "zh": "(+名詞)我們的(...物品)助動詞[現]原型,三單",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18262,
-        "en": "they, them, their 7 have, has",
-        "kk": "/ˈðeɪ/ /ˈðɛm/, /ðəm/ /ˈðɛɹ/ /ˈhæv/ /ˈhæz/, /həz/",
-        "zh": "他們-主、受、所有格[現在式]原型,三單",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18263,
-        "en": "themselves 9 can, could",
-        "kk": "/ðəmˈsɛɫvz/, /ðɛmˈsɛɫvz/ /ˈkæn/, /kən/ /ˈkʊd/",
-        "zh": "他們自己能夠[現在式,過去式]",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18264,
-        "en": "all 10 will, would",
-        "kk": "/ˈɔɫ/ /ˈwɪɫ/, /wəɫ/ /ˈwʊd/",
-        "zh": "(+3者以上)全部將會[現在式,過去式]",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18265,
-        "en": "another 11 may, might",
-        "kk": "/əˈnəðɝ/ /ˈmeɪ/ /ˈmaɪt/",
-        "zh": "(+單數名詞)另一個或許[現在式,過去式]",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18266,
-        "en": "any 12 must",
-        "kk": "/ˈɛni/ /ˈməst/",
-        "zh": "[用在疑問、否定]任何必定",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18267,
-        "en": "anyone (anybody) 13 shall, should",
-        "kk": "/ˈɛniˌwən/, /ˈɛniwən/ /ˈʃæɫ/ /ˈʃʊd/",
-        "zh": "任何人應該[現在式,過去式]",
-        "example": "",
-        "exampleZh": "",
         "unit": 18
     },
     {
@@ -11547,15 +10899,6 @@ const jhWordsDB = [
         "unit": 18
     },
     {
-        "id": 18284,
-        "en": "beyond",
-        "kk": "/ˌbiˈɔnd/, /bɪˈɑnd/, /bɪˈɔnd/",
-        "zh": "超越於",
-        "example": "she blurs the boundaries between reality and what lies beyond",
-        "exampleZh": "她模糊了現實與超越之間的界限",
-        "unit": 18
-    },
-    {
         "id": 18285,
         "en": "by",
         "kk": "/ˈbaɪ/",
@@ -11574,30 +10917,12 @@ const jhWordsDB = [
         "unit": 18
     },
     {
-        "id": 18287,
-        "en": "during",
-        "kk": "/ˈdɝɪŋ/, /ˈdjʊɹɪŋ/, /ˈdʊɹɪŋ/",
-        "zh": "在…期間",
-        "example": "the stabbing took place during an argument at a party",
-        "exampleZh": "刺傷事件發生在一次聚會的爭吵中",
-        "unit": 18
-    },
-    {
         "id": 18288,
         "en": "except",
         "kk": "/ɪkˈsɛpt/",
         "zh": "除…之外",
         "example": "I was naked except for my socks",
         "exampleZh": "我除了襪子以外什麼都赤裸裸",
-        "unit": 18
-    },
-    {
-        "id": 18289,
-        "en": "for",
-        "kk": "/ˈfɔɹ/, /fɝ/, /fɹɝ/",
-        "zh": "為了",
-        "example": "",
-        "exampleZh": "",
         "unit": 18
     },
     {
@@ -11619,39 +10944,12 @@ const jhWordsDB = [
         "unit": 18
     },
     {
-        "id": 18292,
-        "en": "in back of",
-        "kk": "/ˈɪn/, /ɪn/ /ˈbæk/ /ˈəv/",
-        "zh": "在…之後",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18293,
-        "en": "in front of",
-        "kk": "/ˈɪn/, /ɪn/ /ˈfɹənt/ /ˈəv/",
-        "zh": "在…前面",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
         "id": 18294,
         "en": "inside",
         "kk": "/ˈɪnˌsaɪd/, /ˌɪnˈsaɪd/",
         "zh": "在…裡面",
         "example": "we walked inside",
         "exampleZh": "我們走進去",
-        "unit": 18
-    },
-    {
-        "id": 18295,
-        "en": "into",
-        "kk": "/ˈɪntu/, /ɪnˈtu/, /ɪntə/",
-        "zh": "進去…",
-        "example": "a clearer insight into what is involved",
-        "exampleZh": "更清楚地了解所涉及的內容",
         "unit": 18
     },
     {
@@ -11736,15 +11034,6 @@ const jhWordsDB = [
         "unit": 18
     },
     {
-        "id": 18305,
-        "en": "next to",
-        "kk": "/ˈnɛks/, /ˈnɛkst/ /ˈtu/, /tə/, /tɪ/",
-        "zh": "在…旁邊",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
         "id": 18306,
         "en": "since",
         "kk": "/ˈsɪns/",
@@ -11778,15 +11067,6 @@ const jhWordsDB = [
         "zh": "直到",
         "example": "he did not enter the town till it was nearly dark",
         "exampleZh": "直到天快黑他才進城",
-        "unit": 18
-    },
-    {
-        "id": 18310,
-        "en": "to",
-        "kk": "/ˈtu/, /tə/, /tɪ/",
-        "zh": "到…",
-        "example": "a threat to world peace",
-        "exampleZh": "對世界和平的威脅",
         "unit": 18
     },
     {
@@ -11835,15 +11115,6 @@ const jhWordsDB = [
         "unit": 18
     },
     {
-        "id": 18316,
-        "en": "with",
-        "kk": "/ˈwɪð/, /ˈwɪθ/, /wɪð/, /wɪθ/",
-        "zh": "帶有、和",
-        "example": "with great reluctance",
-        "exampleZh": "極不情願地",
-        "unit": 18
-    },
-    {
         "id": 18317,
         "en": "without",
         "kk": "/wɪˈðaʊt/, /wɪˈθaʊt/",
@@ -11868,15 +11139,6 @@ const jhWordsDB = [
         "zh": "當…時",
         "example": "I must stop now as I have to go out",
         "exampleZh": "我現在必須停下來，因為我要出去",
-        "unit": 18
-    },
-    {
-        "id": 18320,
-        "en": "because",
-        "kk": "/bɪˈkɑz/, /bɪˈkəz/, /bɪˈkɔz/, /bɪkəz/",
-        "zh": "因為",
-        "example": "we did it because we felt it our duty",
-        "exampleZh": "我們這樣做是因為我們覺得這是我們的責任",
         "unit": 18
     },
     {
@@ -12573,15 +11835,6 @@ const jhWordsDB = [
         "unit": 18
     },
     {
-        "id": 18398,
-        "en": "direction",
-        "kk": "/daɪˈɹɛkʃɪn/, /dɝˈɛkʃən/, /diˈɹɛkʃɪn/, /dɪˈɹɛkʃɪn/",
-        "zh": "方向",
-        "example": "under his direction, the college has developed an international reputation",
-        "exampleZh": "在他的指導下，學院贏得了國際聲譽",
-        "unit": 18
-    },
-    {
         "id": 18399,
         "en": "discussion",
         "kk": "/dɪˈskəʃən/",
@@ -12804,15 +12057,6 @@ const jhWordsDB = [
         "zh": "班機、航班",
         "example": "I had a flight of four ales and liked them all",
         "exampleZh": "我喝了四種啤酒，都很喜歡",
-        "unit": 18
-    },
-    {
-        "id": 18424,
-        "en": "foreigner",
-        "kk": "/ˈfɑɹənɝ/, /ˈfɑɹnɝ/, /ˈfɔɹənɝ/, /ˈfɔɹnɝ/",
-        "zh": "外國人",
-        "example": "Are you foreigners?",
-        "exampleZh": "你們是外國人嗎？",
         "unit": 18
     },
     {
@@ -13590,30 +12834,12 @@ const jhWordsDB = [
         "unit": 18
     },
     {
-        "id": 18511,
-        "en": "production",
-        "kk": "/pɝˈdəkʃən/, /pɹəˈdəkʃən/, /pɹoʊˈdəkʃən/",
-        "zh": "產品",
-        "example": "Production is low.",
-        "exampleZh": "產量低。",
-        "unit": 18
-    },
-    {
         "id": 18512,
         "en": "program",
         "kk": "/ˈpɹoʊˌɡɹæm/",
         "zh": "節目、課程",
         "example": "Close the program out.",
         "exampleZh": "關閉程式。",
-        "unit": 18
-    },
-    {
-        "id": 18513,
-        "en": "progress",
-        "kk": "/ˈpɹɑˌɡɹɛs/, /pɹəˈɡɹɛs/, /pɹoʊˈɡɹɛs/",
-        "zh": "進步(不可數)",
-        "example": "we are making progress toward equal rights",
-        "exampleZh": "我們正在爭取平等權利方面取得進展",
         "unit": 18
     },
     {
@@ -14742,1140 +13968,6 @@ const jhWordsDB = [
         "unit": 18
     },
     {
-        "id": 18639,
-        "en": "regret 85 fight 127 pull",
-        "kk": "/ɹəˈɡɹɛt/, /ɹɪˈɡɹɛt/ /ˈfaɪt/ /ˈpʊɫ/",
-        "zh": "後悔打鬥、吵架拉",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18640,
-        "en": "remember 86 follow 128 pump",
-        "kk": "/ɹiˈmɛmbɝ/, /ɹɪˈmɛmbɝ/ /ˈfɑɫoʊ/ /ˈpəmp/",
-        "zh": "記得跟隨打氣",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18641,
-        "en": "remind 87 fry 129 produce",
-        "kk": "/ɹiˈmaɪnd/ /ˈfɹaɪ/ /ˈpɹoʊdus/, /pɹəˈdus/",
-        "zh": "提醒、使想起煎、炸生產、製造",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18642,
-        "en": "surprise 88 go 130 protect",
-        "kk": "/səˈpɹaɪz/, /sɝˈpɹaɪz/ /ˈɡoʊ/ /pɹəˈtɛkt/",
-        "zh": "使驚訝去保護",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18643,
-        "en": "think 89 greet 131 push",
-        "kk": "/ˈθɪŋk/ /ˈɡɹit/ /ˈpʊʃ/",
-        "zh": "想、認為打招呼、問候推",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18644,
-        "en": "want + to VR 90 grow 132 put",
-        "kk": "/ˈwɑnt/, /ˈwɔnt/ /ˈtu/, /tə/, /tɪ/ /ˈɡɹoʊ/ /ˈpʊt/",
-        "zh": "想要成長、長大放置",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18645,
-        "en": "wish 91 guide 133 recycle",
-        "kk": "/ˈwɪʃ/ /ˈɡaɪd/ /ɹiˈsaɪkəɫ/",
-        "zh": "但願引導回收",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18646,
-        "en": "worry 92 hand 134 revise",
-        "kk": "/ˈwɝi/ /ˈhænd/ /ɹiˈvaɪz/, /ɹɪˈvaɪz/",
-        "zh": "擔心遞交修改",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18647,
-        "en": "bless 93 hang 135 rise",
-        "kk": "/ˈbɫɛs/ /ˈhæŋ/ /ˈɹaɪz/",
-        "zh": "祝福懸掛上升",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18648,
-        "en": "act 94 help 136 roll",
-        "kk": "/ˈækt/ /ˈhɛɫp/ /ˈɹoʊɫ/",
-        "zh": "行動幫忙捲、點名",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18649,
-        "en": "bathe 95 hit 137 rub",
-        "kk": "/ˈbeɪð/ /ˈhɪt/ /ˈɹəb/",
-        "zh": "沐浴打擊摩擦",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18650,
-        "en": "beat 96 hold 138 run",
-        "kk": "/ˈbit/ /ˈhoʊɫd/ /ˈɹən/",
-        "zh": "打、擊握、舉辦跑步",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18651,
-        "en": "blow 97 hop 139 rush",
-        "kk": "/ˈbɫoʊ/ /ˈhɑp/ /ˈɹəʃ/",
-        "zh": "吹跳衝、奔",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18652,
-        "en": "bow 98 hunt 140 rob",
-        "kk": "/ˈbaʊ/, /ˈboʊ/ /ˈhənt/ /ˈɹɑb/",
-        "zh": "鞠躬打獵搶劫",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18653,
-        "en": "break 99 hurry 141 rest",
-        "kk": "/ˈbɹeɪk/ /ˈhɝi/ /ˈɹɛst/",
-        "zh": "破裂、破壞趕快休息",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18654,
-        "en": "bring 100 jump 142 shake",
-        "kk": "/ˈbɹɪŋ/ /ˈdʒəmp/ /ˈʃeɪk/",
-        "zh": "帶來跳躍搖晃、搖動",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18655,
-        "en": "brush 101 kick 143 shoot",
-        "kk": "/ˈbɹəʃ/ /ˈkɪk/ /ˈʃut/",
-        "zh": "刷踢開槍、射籃",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18656,
-        "en": "carry 102 knock 144 shout",
-        "kk": "/ˈkæɹi/, /ˈkɛɹi/ /ˈnɑk/ /ˈʃaʊt/",
-        "zh": "攜帶敲擊吼叫",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18657,
-        "en": "catch 103 kill 145 shut",
-        "kk": "/ˈkætʃ/ /ˈkɪɫ/ /ˈʃət/",
-        "zh": "捉、接殺(死)關閉",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18658,
-        "en": "chase 104 kiss 146 smoke",
-        "kk": "/ˈtʃeɪs/ /ˈkɪs/ /ˈsmoʊk/",
-        "zh": "追逐親吻抽菸",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18659,
-        "en": "cheat 105 laugh 147 sign",
-        "kk": "/ˈtʃit/ /ˈɫæf/ /ˈsaɪn/",
-        "zh": "欺騙、作弊大笑簽名",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18660,
-        "en": "choose 106 lay 148 stand",
-        "kk": "/ˈtʃuz/ /ˈɫeɪ/ /ˈstænd/",
-        "zh": "選擇平躺站立",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18661,
-        "en": "clap 107 leave 149 steal",
-        "kk": "/ˈkɫæp/ /ˈɫiv/ /ˈstiɫ/",
-        "zh": "拍(手)離開、遺留偷",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18662,
-        "en": "close 108 lick 150 strike",
-        "kk": "/ˈkɫoʊs/, /ˈkɫoʊz/ /ˈɫɪk/ /ˈstɹaɪk/",
-        "zh": "關閉舔侵襲、擊",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18663,
-        "en": "come 109 lift 151 take",
-        "kk": "/ˈkəm/ /ˈɫɪft/ /ˈteɪk/",
-        "zh": "來提(高)拿取",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18664,
-        "en": "control 110 list 152 tell",
-        "kk": "/kənˈtɹoʊɫ/ /ˈɫɪst/ /ˈtɛɫ/",
-        "zh": "控制列(清單)告訴",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18665,
-        "en": "collect 111 lock 153 throw",
-        "kk": "/kəˈɫɛkt/ /ˈɫɑk/ /ˈθɹoʊ/",
-        "zh": "選擇鎖丟、擲",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18666,
-        "en": "comment 112 make 154 touch",
-        "kk": "/ˈkɑmɛnt/ /ˈmeɪk/ /ˈtətʃ/",
-        "zh": "下評論製作碰觸、摸到",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18667,
-        "en": "correct 113 meet 155 trace",
-        "kk": "/kɝˈɛkt/ /ˈmit/ /ˈtɹeɪs/",
-        "zh": "修正碰面、符合追蹤",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18668,
-        "en": "copy 114 miss 156 trap",
-        "kk": "/ˈkɑpi/ /ˈmɪs/ /ˈtɹæp/",
-        "zh": "拷貝、影印想念、錯過使落入圈套",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18669,
-        "en": "count 115 mix 157 type",
-        "kk": "/ˈkaʊnt/ /ˈmɪks/ /ˈtaɪp/",
-        "zh": "計算、數混合打字",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18670,
-        "en": "cover 116 move 158 use",
-        "kk": "/ˈkəvɝ/ /ˈmuv/ /ˈjus/, /ˈjuz/",
-        "zh": "覆蓋移動、搬家使用",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18671,
-        "en": "cry 117 nod 159 vote",
-        "kk": "/ˈkɹaɪ/ /ˈnɑd/ /ˈvoʊt/",
-        "zh": "哭泣、大叫點頭投票",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18672,
-        "en": "cut 118 offer 160 walk",
-        "kk": "/ˈkət/ /ˈɔfɝ/ /ˈwɑk/, /ˈwɔk/",
-        "zh": "切、砍、割提供走路",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18673,
-        "en": "dial 119 open 161 wave",
-        "kk": "/ˈdaɪəɫ/, /ˈdaɪɫ/ /ˈoʊpən/ /ˈweɪv/",
-        "zh": "撥打打開揮手",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18674,
-        "en": "dig 120 pack 162 hug",
-        "kk": "/ˈdɪɡ/ /ˈpæk/ /ˈhəɡ/",
-        "zh": "挖掘打包擁抱",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18675,
-        "en": "deliver 121 park 163 yell",
-        "kk": "/dɪˈɫɪvɝ/ /ˈpɑɹk/ /ˈjɛɫ/",
-        "zh": "遞送停(車)吼叫",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18676,
-        "en": "drop 122 paste 164 mop",
-        "kk": "/ˈdɹɑp/, /ˈdɹɔp/ /ˈpeɪst/ /ˈmɑp/",
-        "zh": "掉落貼上拖地",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18677,
-        "en": "elect 123 pause 165 accept",
-        "kk": "/ɪˈɫɛkt/ /ˈpɔz/ /ækˈsɛpt/, /əkˈsɛpt/",
-        "zh": "選舉出暫停接受",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18678,
-        "en": "enter 124 pick 166 add",
-        "kk": "/ˈɛnɝ/, /ˈɛntɝ/ /ˈpɪk/ /ˈæd/",
-        "zh": "進入挑、撿選增加",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18679,
-        "en": "exist 125 plant 167 admire",
-        "kk": "/ɪɡˈzɪst/ /ˈpɫænt/ /ædˈmaɪɹ/",
-        "zh": "存在種植羨慕、欽佩",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18680,
-        "en": "feed 126 print 168 advise",
-        "kk": "/ˈfid/ /ˈpɹɪnt/ /ædˈvaɪz/, /ədˈvaɪz/",
-        "zh": "餵食列印給建議",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18681,
-        "en": "agree 211 express 253 praise",
-        "kk": "/əˈɡɹi/ /ɪksˈpɹɛs/ /ˈpɹeɪz/",
-        "zh": "同意表達讚美",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18682,
-        "en": "allow 212 fall 254 pray",
-        "kk": "/əˈɫaʊ/ /ˈfɑɫ/, /ˈfɔɫ/ /ˈpɹeɪ/",
-        "zh": "允許掉、跌落祈禱",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18683,
-        "en": "apologize 213 fill 255 prepare",
-        "kk": "/əˈpɑɫəˌdʒaɪz/ /ˈfɪɫ/ /pɹiˈpɛɹ/",
-        "zh": "道歉充滿準備",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18684,
-        "en": "appear 214 find 256 promise",
-        "kk": "/əˈpɪɹ/ /ˈfaɪnd/ /ˈpɹɑməs/",
-        "zh": "出現發現、找到答應、承諾",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18685,
-        "en": "appreciate 215 fit 257 provide",
-        "kk": "/əˈpɹiʃiˌeɪt/ /ˈfɪt/ /pɹəˈvaɪd/",
-        "zh": "感激使適合提供",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18686,
-        "en": "argue 216 focus 258 quit (+V-ing)",
-        "kk": "/ˈɑɹɡju/ /ˈfoʊkəs/, /ˈfoʊkɪs/ /ˈkwɪt/",
-        "zh": "爭執(論)使集中放棄、停止",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18687,
-        "en": "arrange 217 form 259 raise",
-        "kk": "/ɝˈeɪndʒ/ /ˈfɔɹm/ /ˈɹeɪz/",
-        "zh": "安排形成舉起、扶養、飼養",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18688,
-        "en": "assume 218 gain 260 reach",
-        "kk": "/əˈsum/ /ˈɡeɪn/ /ˈɹitʃ/",
-        "zh": "假設、假想得到抵達、伸出(手)",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18689,
-        "en": "attack 219 get 261 receive",
-        "kk": "/əˈtæk/ /ˈɡɛt/, /ˈɡɪt/ /ɹəˈsiv/, /ɹiˈsiv/, /ɹɪˈsiv/",
-        "zh": "攻擊得到收到",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18690,
-        "en": "avoid + V-ing 220 give 262 refuse",
-        "kk": "/əˈvɔɪd/ /ˈɡɪv/ /ˈɹɛfˌjuz/, /ɹəfˈjuz/, /ɹɪfˈjuz/",
-        "zh": "避免給拒給、不准",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18691,
-        "en": "become 221 handle 263 reject",
-        "kk": "/bɪˈkəm/ /ˈhændəɫ/ /ˈɹidʒɛkt/, /ɹɪˈdʒɛkt/",
-        "zh": "成為處理、操作拒絕、排斥",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18692,
-        "en": "begin 222 happen 264 rent",
-        "kk": "/bɪˈɡɪn/ /ˈhæpən/ /ˈɹɛnt/",
-        "zh": "開始發生租用",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18693,
-        "en": "belong (to) + N. 223 hide 265 respect",
-        "kk": "/bɪˈɫɔŋ/ /ˈɛn/ /ˈhaɪd/ /ɹiˈspɛkt/, /ɹɪˈspɛkt/",
-        "zh": "屬於躲藏尊敬",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18694,
-        "en": "broadcast 224 hurt 266 return",
-        "kk": "/ˈbɹɔdˌkæst/ /ˈhɝt/ /ɹiˈtɝn/, /ɹɪˈtɝn/",
-        "zh": "廣播使受傷返回、歸還",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18695,
-        "en": "burst 225 improve 267 ruin",
-        "kk": "/ˈbɝst/ /ˌɪmˈpɹuv/ /ˈɹuən/, /ˈɹuɪn/",
-        "zh": "迸裂、爆發改善破壞、毀壞",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18696,
-        "en": "call 226 include 268 solve",
-        "kk": "/ˈkɔɫ/ /ˌɪnˈkɫud/ /ˈsɑɫv/",
-        "zh": "打電話、叫包含解決、溶解",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18697,
-        "en": "calm 227 ignore 269 satisfy",
-        "kk": "/ˈkɑɫm/, /ˈkɑm/ /ˌɪɡˈnɔɹ/ /ˈsætəsˌfaɪ/, /ˈsætɪsˌfaɪ/",
-        "zh": "使冷靜忽視使滿意",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18698,
-        "en": "cancel 228 increase 270 save",
-        "kk": "/ˈkænsəɫ/ /ˈɪnˌkɹis/, /ˌɪnˈkɹis/ /ˈseɪv/",
-        "zh": "取消增加節省、貯存",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18699,
-        "en": "care 229 indicate 271 search",
-        "kk": "/ˈkɛɹ/ /ˈɪndəˌkeɪt/ /ˈsɝtʃ/",
-        "zh": "關心、在意指示、表明搜尋",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18700,
-        "en": "check 230 insist 272 seem",
-        "kk": "/ˈtʃɛk/ /ˌɪnˈsɪst/ /ˈsim/",
-        "zh": "檢查堅持似乎、看來好像",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18701,
-        "en": "compare 231 interrupt 273 select",
-        "kk": "/kəmˈpɛɹ/ /ˌɪntɝˈəpt/ /səˈɫɛkt/",
-        "zh": "比較中斷、打擾挑選",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18702,
-        "en": "complain 232 introduce 274 sell",
-        "kk": "/kəmˈpɫeɪn/ /ˌɪntɹəˈdus/, /ˌɪntɹoʊˈdus/ /ˈsɛɫ/",
-        "zh": "抱怨介紹賣",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18703,
-        "en": "concern 233 invent 275 send",
-        "kk": "/kənˈsɝn/ /ˌɪnˈvɛnt/ /ˈsɛnd/",
-        "zh": "使關心發明寄、送",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18704,
-        "en": "continue 234 invite 276 serve",
-        "kk": "/kənˈtɪnju/ /ˌɪnˈvaɪt/ /ˈsɝv/",
-        "zh": "繼續邀請服務",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18705,
-        "en": "create 235 join 277 share",
-        "kk": "/kɹiˈeɪt/ /ˈdʒɔɪn/ /ˈʃɛɹ/",
-        "zh": "創造參加、加入分享",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18706,
-        "en": "date 236 judge 278 show",
-        "kk": "/ˈdeɪt/ /ˈdʒədʒ/ /ˈʃoʊ/",
-        "zh": "約會判定、裁決展現、秀",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18707,
-        "en": "deal 237 keep 279 sit",
-        "kk": "/ˈdiɫ/ /ˈkip/ /ˈsɪt/",
-        "zh": "經營、處理保持坐(下)",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18708,
-        "en": "decide 238 lead 280 sleep",
-        "kk": "/ˌdɪˈsaɪd/ /ˈɫɛd/, /ˈɫid/ /ˈsɫip/",
-        "zh": "決定引導睡覺",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18709,
-        "en": "decrease 239 let 281 start",
-        "kk": "/ˈdiˌkɹis/, /dɪˈkɹis/ /ˈɫɛt/ /ˈstɑɹt/",
-        "zh": "減少讓(允許)開始",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18710,
-        "en": "depend 240 lie 282 stay",
-        "kk": "/dɪˈpɛnd/ /ˈɫaɪ/ /ˈsteɪ/",
-        "zh": "依靠說謊、躺下停留、暫待",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18711,
-        "en": "describe 241 limit 283 stop",
-        "kk": "/dɪsˈkɹaɪb/ /ˈɫɪmət/ /ˈstɑp/",
-        "zh": "描述、敘述限制停止",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18712,
-        "en": "detect 242 list 284 suggest",
-        "kk": "/dɪˈtɛkt/ /ˈɫɪst/ /səˈdʒɛst/",
-        "zh": "描寫列(清單)建議",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18713,
-        "en": "die 243 match 285 support",
-        "kk": "/ˈdaɪ/ /ˈmætʃ/ /səˈpɔɹt/",
-        "zh": "死亡使成對支持",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18714,
-        "en": "direct 244 mean 286 thank",
-        "kk": "/daɪˈɹɛkt/, /dɝˈɛkt/, /dɪˈɹɛkt/ /ˈmin/ /ˈθæŋk/",
-        "zh": "指揮、管理意指謝謝",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18715,
-        "en": "disappear 245 notice + V-ing 287 treat",
-        "kk": "/ˌdɪsəˈpiɹ/, /ˌdɪsəˈpɪɹ/ /ˈnoʊtəs/, /ˈnoʊtɪs/ /ˈtɹit/",
-        "zh": "消失注意到對待",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18716,
-        "en": "discover 246 obey 288 trust",
-        "kk": "/dɪˈskəvɝ/ /oʊˈbeɪ/ /ˈtɹəst/",
-        "zh": "發現遵守信任、信賴",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18717,
-        "en": "discuss 247 omit 289 try",
-        "kk": "/dɪˈskəs/ /oʊˈmɪt/ /ˈtɹaɪ/",
-        "zh": "討論省略、遺漏嘗試、試圖",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18718,
-        "en": "emphasize 248 own 290 visit",
-        "kk": "/ˈɛmfəˌsaɪz/ /ˈoʊn/ /ˈvɪzɪt/",
-        "zh": "強調擁有拜訪、參觀",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18719,
-        "en": "enjoy 249 pardon 291 wait",
-        "kk": "/ˌɛnˈdʒɔɪ/, /ɪnˈdʒɔɪ/ /ˈpɑɹdən/ /ˈweɪt/",
-        "zh": "享受原諒、饒恕等待",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18720,
-        "en": "envy 250 plan 292 wake",
-        "kk": "/ˈɛnvi/ /ˈpɫæn/ /ˈweɪk/",
-        "zh": "妒忌、羨慕計畫醒來、喚醒",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18721,
-        "en": "excite 251 please 293 waste (+V-ing)",
-        "kk": "/ɪkˈsaɪt/ /ˈpɫiz/ /ˈweɪst/",
-        "zh": "使興奮請、使高興浪費",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18722,
-        "en": "expect 252 pollute 294 welcome",
-        "kk": "/ɪkˈspɛkt/ /pəˈɫut/ /ˈwɛɫkəm/",
-        "zh": "期待污染歡迎",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18723,
-        "en": "able 43 formal",
-        "kk": "/ˈeɪbəɫ/ /ˈfɔɹməɫ/",
-        "zh": "有能力的正式的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18724,
-        "en": "absent 44 former",
-        "kk": "/ˈæbsənt/ /ˈfɔɹmɝ/",
-        "zh": "缺席的前者的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18725,
-        "en": "afraid 45 free",
-        "kk": "/əˈfɹeɪd/ /ˈfɹi/",
-        "zh": "害怕的免費的、自由的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18726,
-        "en": "alike 46 fresh",
-        "kk": "/əˈɫaɪk/ /ˈfɹɛʃ/",
-        "zh": "相像的新鮮的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18727,
-        "en": "alive 47 general",
-        "kk": "/əˈɫaɪv/ /ˈdʒɛnɝəɫ/, /ˈdʒɛnɹəɫ/",
-        "zh": "活著的一般的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18728,
-        "en": "alone 48 glad",
-        "kk": "/əˈɫoʊn/ /ˈɡɫæd/",
-        "zh": "獨自的高興的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18729,
-        "en": "American 49 great",
-        "kk": "/əˈmɛɹəkən/, /əˈmɛɹɪkən/ /ˈɡɹeɪt/",
-        "zh": "美國的很棒的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18730,
-        "en": "ancient 50 hard",
-        "kk": "/ˈeɪnʃənt/, /ˈeɪntʃənt/ /ˈhɑɹd/",
-        "zh": "古老的困難的、堅硬的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18731,
-        "en": "asleep 51 helpful",
-        "kk": "/əˈsɫip/ /ˈhɛɫpfəɫ/",
-        "zh": "睡著的有幫助的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18732,
-        "en": "available 52 homesick",
-        "kk": "/əˈveɪɫəbəɫ/ /ˈhoʊmˌsɪk/",
-        "zh": "可用的、有效的想家的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18733,
-        "en": "basic 53 horrible",
-        "kk": "/ˈbeɪsɪk/ /ˈhɔɹəbəɫ/",
-        "zh": "基本的、基礎的悲慘的、可怕的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18734,
-        "en": "bright 54 important",
-        "kk": "/ˈbɹaɪt/ /ˌɪmˈpɔɹtənt/",
-        "zh": "明亮的重要的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18735,
-        "en": "broad 55 impossible",
-        "kk": "/ˈbɹɔd/ /ˌɪmˈpɑsəbəɫ/",
-        "zh": "寬廣的不可能的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18736,
-        "en": "classical 56 independent",
-        "kk": "/ˈkɫæsɪkəɫ/ /ˌɪndɪˈpɛndənt/",
-        "zh": "古典的、經典的獨立的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18737,
-        "en": "colorful 57 instant",
-        "kk": "/ˈkəɫɝfəɫ/ /ˈɪnstənt/",
-        "zh": "多采多姿的立即的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18738,
-        "en": "common 58 interesting",
-        "kk": "/ˈkɑmən/ /ˈɪntɝəstɪŋ/, /ˈɪntɝɪstɪŋ/, /ˈɪntɹəstɪŋ/, /ˈɪntɹɪstɪŋ/",
-        "zh": "普遍的、一般的有趣的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18739,
-        "en": "complete 59 latest",
-        "kk": "/kəmˈpɫit/ /ˈɫeɪtəst/",
-        "zh": "完整的最新的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18740,
-        "en": "convenient 60 latter",
-        "kk": "/kənˈvinjənt/ /ˈɫætɝ/",
-        "zh": "便利的後者的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18741,
-        "en": "correct 61 likely",
-        "kk": "/kɝˈɛkt/ /ˈɫaɪkɫi/",
-        "zh": "正確的有可能的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18742,
-        "en": "crowded 62 loud",
-        "kk": "/ˈkɹaʊdəd/, /ˈkɹaʊdɪd/ /ˈɫaʊd/",
-        "zh": "擁擠的大聲的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18743,
-        "en": "dangerous 63 lucky",
-        "kk": "/ˈdeɪndʒɝəs/ /ˈɫəki/",
-        "zh": "危險的幸運的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18744,
-        "en": "dark 64 magic",
-        "kk": "/ˈdɑɹk/ /ˈmædʒɪk/",
-        "zh": "黑暗的神奇的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18745,
-        "en": "dead 65 main",
-        "kk": "/ˈdɛd/ /ˈmeɪn/",
-        "zh": "死亡的主要的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18746,
-        "en": "dear 66 major",
-        "kk": "/ˈdɪɹ/ /ˈmeɪdʒɝ/",
-        "zh": "親愛的主要的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18747,
-        "en": "different 67 marvelous",
-        "kk": "/ˈdɪfɝənt/, /ˈdɪfɹənt/ /ˈmɑɹvəɫəs/",
-        "zh": "不同的非凡的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18748,
-        "en": "difficult 68 minor",
-        "kk": "/ˈdɪfəkəɫt/ /ˈmaɪnɝ/",
-        "zh": "困難的較少的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18749,
-        "en": "dirty 69 modern",
-        "kk": "/ˈdɝti/ /ˈmɑdɝn/",
-        "zh": "髒的現代的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18750,
-        "en": "double 70 national",
-        "kk": "/ˈdəbəɫ/ /ˈnæʃənəɫ/, /ˈnæʃnəɫ/",
-        "zh": "雙倍的國內的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18751,
-        "en": "easy 71 necessary",
-        "kk": "/ˈizi/ /ˈnɛsəˌsɛɹi/",
-        "zh": "簡易的必須的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18752,
-        "en": "electric 72 new",
-        "kk": "/ɪˈɫɛktɹɪk/ /ˈnju/, /ˈnu/",
-        "zh": "電(動)的新的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18753,
-        "en": "else 73 negative",
-        "kk": "/ˈɛɫs/ /ˈnɛɡətɪv/",
-        "zh": "其他的否定的、負面的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18754,
-        "en": "enough 74 noisy",
-        "kk": "/iˈnəf/, /ɪˈnəf/ /ˈnɔɪzi/",
-        "zh": "足夠的吵雜的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18755,
-        "en": "equal 75 only",
-        "kk": "/ˈikwəɫ/ /ˈoʊnɫi/",
-        "zh": "平等的唯一的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18756,
-        "en": "excellent 76 ordinary",
-        "kk": "/ˈɛksəɫənt/ /ˈɔɹdəˌnɛɹi/",
-        "zh": "傑出的尋常的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18757,
-        "en": "false 77 other",
-        "kk": "/ˈfɔɫs/ /ˈəðɝ/",
-        "zh": "錯的其他的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18758,
-        "en": "fancy 78 overseas",
-        "kk": "/ˈfænsi/ /ˈoʊvɝˈsiz/",
-        "zh": "別緻的海外的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18759,
-        "en": "fantastic 79 own",
-        "kk": "/fænˈtæstɪk/ /ˈoʊn/",
-        "zh": "極好的、驚人的自己的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18760,
-        "en": "fair 80 peaceful",
-        "kk": "/ˈfɛɹ/ /ˈpisfəɫ/",
-        "zh": "公平的、相當的和平的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18761,
-        "en": "fashionable 81 perfect",
-        "kk": "/ˈfæʃənəbəɫ/, /ˈfæʃnəbəɫ/ /ˈpɝˌfɪkt/, /pɝˈfɛkt/",
-        "zh": "時髦的完美的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18762,
-        "en": "favorite 82 personal",
-        "kk": "/ˈfeɪvɝɪt/, /ˈfeɪvɹət/ /ˈpɝsɪnəɫ/",
-        "zh": "最喜愛的個人的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18763,
-        "en": "fine 83 pleasant",
-        "kk": "/ˈfaɪn/ /ˈpɫɛzənt/",
-        "zh": "好的令人愉悅的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18764,
-        "en": "foreign 84 popular",
-        "kk": "/ˈfɑɹən/, /ˈfɔɹən/ /ˈpɑpjəɫɝ/",
-        "zh": "外國的受歡迎的",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
         "id": 18765,
         "en": "positive",
         "kk": "/ˈpɑzətɪv/",
@@ -15900,15 +13992,6 @@ const jhWordsDB = [
         "zh": "珍貴的",
         "example": "Don't be precious.",
         "exampleZh": "別太珍貴了",
-        "unit": 18
-    },
-    {
-        "id": 18768,
-        "en": "present",
-        "kk": "/ˈpɹɛzənt/, /pɝˈzɛnt/, /pɹiˈzɛnt/",
-        "zh": "當前的、出席的",
-        "example": "you have to put everything out of your mind and be really present",
-        "exampleZh": "你必須把一切都拋在腦後，真正活在當下",
         "unit": 18
     },
     {
@@ -16380,15 +14463,6 @@ const jhWordsDB = [
         "unit": 18
     },
     {
-        "id": 18821,
-        "en": "actually",
-        "kk": "/ˈækˌtʃuəɫi/, /ˈækʃəɫi/, /ˈæktʃɫi/",
-        "zh": "事實上",
-        "example": "he had a thick Brooklyn accent—he sounded like my grandfather actually",
-        "exampleZh": "他有著濃厚的布魯克林口音——他聽起來實際上像我的祖父",
-        "unit": 18
-    },
-    {
         "id": 18822,
         "en": "again",
         "kk": "/əˈɡeɪn/, /əˈɡɛn/",
@@ -16713,541 +14787,10 @@ const jhWordsDB = [
         "unit": 18
     },
     {
-        "id": 18858,
-        "en": "be was / were been",
-        "kk": "/ˈbi/, /bi/ /ˈwɑz/, /wəz/ /ˈwɝ/ /ˈbɪn/, /bən/, /bɪn/",
-        "zh": "是",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18859,
-        "en": "bear bore born, borne",
-        "kk": "/ˈbɛɹ/ /ˈbɔɹ/ /ˈbɔɹn/ /ˈbɔɹn/",
-        "zh": "生產",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18860,
-        "en": "beat beat beaten, beat",
-        "kk": "/ˈbit/ /ˈbit/ /ˈbitən/ /ˈbit/",
-        "zh": "打、擊",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18861,
-        "en": "become became become",
-        "kk": "/bɪˈkəm/ /biˈkeɪm/, /bɪˈkeɪm/ /bɪˈkəm/",
-        "zh": "變成",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18862,
-        "en": "begin began begun",
-        "kk": "/bɪˈɡɪn/ /biˈɡæn/, /bɪˈɡæn/ /ˈbeɪɡən/, /bɪˈɡən/",
-        "zh": "開始",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18863,
-        "en": "bend bent bent",
-        "kk": "/ˈbɛnd/ /ˈbɛnt/ /ˈbɛnt/",
-        "zh": "彎、屈身",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18864,
-        "en": "bet bet, betted bet, betted",
-        "kk": "/ˈbɛt/ /ˈbɛt/ /ˈbɛt/",
-        "zh": "打賭、賭",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18865,
-        "en": "bite bit bitten",
-        "kk": "/ˈbaɪt/ /ˈbɪt/ /ˈbɪtən/",
-        "zh": "咬",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18866,
-        "en": "blow blew blown",
-        "kk": "/ˈbɫoʊ/ /ˈbɫu/ /ˈbɫoʊn/",
-        "zh": "吹",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18867,
-        "en": "break broke broken",
-        "kk": "/ˈbɹeɪk/ /ˈbɹoʊk/ /ˈbɹoʊkən/",
-        "zh": "打破",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18868,
-        "en": "bring brought brought",
-        "kk": "/ˈbɹɪŋ/ /ˈbɹɔt/ /ˈbɹɔt/",
-        "zh": "帶來",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18869,
-        "en": "build built built",
-        "kk": "/ˈbɪɫd/ /ˈbɪɫt/ /ˈbɪɫt/",
-        "zh": "建造",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18870,
-        "en": "burn burned, burnt burned, burnt",
-        "kk": "/ˈbɝn/ /ˈbɝnd/ /ˈbɝnt/ /ˈbɝnd/ /ˈbɝnt/",
-        "zh": "燃燒",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18871,
-        "en": "burst burst burst",
-        "kk": "/ˈbɝst/ /ˈbɝst/ /ˈbɝst/",
-        "zh": "爆發",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18872,
-        "en": "buy bought bought",
-        "kk": "/ˈbaɪ/ /ˈbɑt/, /ˈbɔt/ /ˈbɑt/, /ˈbɔt/",
-        "zh": "買",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18873,
-        "en": "can could --",
-        "kk": "/ˈkæn/, /kən/ /ˈkʊd/",
-        "zh": "能",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18874,
-        "en": "catch caught caught",
-        "kk": "/ˈkætʃ/ /ˈkɑt/, /ˈkɔt/ /ˈkɑt/, /ˈkɔt/",
-        "zh": "捕捉",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18875,
-        "en": "choose chose chosen",
-        "kk": "/ˈtʃuz/ /ˈtʃoʊz/ /ˈtʃoʊzən/",
-        "zh": "選擇",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18876,
-        "en": "come came come",
-        "kk": "/ˈkəm/ /ˈkeɪm/ /ˈkəm/",
-        "zh": "來",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18877,
-        "en": "cost cost cost",
-        "kk": "/ˈkɑst/, /ˈkɔst/ /ˈkɑst/, /ˈkɔst/ /ˈkɑst/, /ˈkɔst/",
-        "zh": "值、花費",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18878,
-        "en": "cut but cut",
-        "kk": "/ˈkət/ /ˈbət/ /ˈkət/",
-        "zh": "切、割、砍",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18879,
-        "en": "deal dealt dealt",
-        "kk": "/ˈdiɫ/ /ˈdɛɫt/ /ˈdɛɫt/",
-        "zh": "處理；交易",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18880,
-        "en": "dig dug dug",
-        "kk": "/ˈdɪɡ/ /ˈdəɡ/ /ˈdəɡ/",
-        "zh": "挖",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18881,
-        "en": "do did done",
-        "kk": "/ˈdu/ /ˈdɪd/, /dɪd/ /ˈdən/",
-        "zh": "做",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18882,
-        "en": "draw drew drawn",
-        "kk": "/ˈdɹɔ/ /ˈdɹu/ /ˈdɹɔn/",
-        "zh": "畫圖；拉",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18883,
-        "en": "dream dreamed, dreamt dreamed, dreamt",
-        "kk": "/ˈdɹim/ /ˈdɹimd/ /ˈdɹɛmt/ /ˈdɹimd/ /ˈdɹɛmt/",
-        "zh": "做夢",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18884,
-        "en": "drink drank drunk",
-        "kk": "/ˈdɹɪŋk/ /ˈdɹæŋk/ /ˈdɹəŋk/",
-        "zh": "喝",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18885,
-        "en": "drive drove driven",
-        "kk": "/ˈdɹaɪv/ /ˈdɹoʊv/ /ˈdɹɪvən/",
-        "zh": "駕駛",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18886,
-        "en": "eat ate eaten",
-        "kk": "/ˈit/ /ˈeɪt/ /ˈitən/",
-        "zh": "吃",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18887,
-        "en": "fall fell fallen",
-        "kk": "/ˈfɑɫ/, /ˈfɔɫ/ /ˈfɛɫ/ /ˈfɑɫən/",
-        "zh": "落下",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18888,
-        "en": "feed fed fed",
-        "kk": "/ˈfid/ /ˈfɛd/ /ˈfɛd/",
-        "zh": "餵",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18889,
-        "en": "feel felt felt",
-        "kk": "/ˈfiɫ/ /ˈfɛɫt/ /ˈfɛɫt/",
-        "zh": "感覺到，覺",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18890,
-        "en": "fight fought fought",
-        "kk": "/ˈfaɪt/ /ˈfɔt/ /ˈfɔt/",
-        "zh": "打架；吵架",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18891,
-        "en": "find found found",
-        "kk": "/ˈfaɪnd/ /ˈfaʊnd/ /ˈfaʊnd/",
-        "zh": "發現；覺得",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18892,
-        "en": "fly flew flown",
-        "kk": "/ˈfɫaɪ/ /ˈfɫu/ /ˈfɫoʊn/",
-        "zh": "飛",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18893,
-        "en": "forget forgot forgot, forgotten",
-        "kk": "/fɝˈɡɛt/, /fɔɹˈɡɛt/ /fɝˈɡɑt/, /fɔɹˈɡɑt/ /fɝˈɡɑt/, /fɔɹˈɡɑt/ /fɝˈɡɑtən/, /fɔɹˈɡɑtən/",
-        "zh": "忘記",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18894,
-        "en": "forgive forgave forgiven",
-        "kk": "/fɝˈɡɪv/, /fɔɹˈɡɪv/ /fɝˈɡeɪv/ /fɝˈɡɪvən/, /fɔɹˈɡɪvən/",
-        "zh": "原諒",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18895,
-        "en": "get got got, gotten",
-        "kk": "/ˈɡɛt/, /ˈɡɪt/ /ˈɡɑt/ /ˈɡɑt/ /ˈɡɑtən/, /ˈɡɔtən/",
-        "zh": "得到",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18896,
-        "en": "give gave given",
-        "kk": "/ˈɡɪv/ /ˈɡeɪv/ /ˈɡɪvən/, /ˈɡɪvɪn/",
-        "zh": "給予",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18897,
-        "en": "go went gone",
-        "kk": "/ˈɡoʊ/ /ˈwɛnt/ /ˈɡɔn/",
-        "zh": "去",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18898,
-        "en": "grow grew grown",
-        "kk": "/ˈɡɹoʊ/ /ˈɡɹu/ /ˈɡɹoʊn/",
-        "zh": "成長",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18899,
-        "en": "hang hung hung",
-        "kk": "/ˈhæŋ/ /ˈhəŋ/ /ˈhəŋ/",
-        "zh": "懸掛",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18900,
-        "en": "have had had",
-        "kk": "/ˈhæv/ /ˈhæd/ /ˈhæd/",
-        "zh": "有",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18901,
-        "en": "hear heard heard",
-        "kk": "/ˈhiɹ/ /ˈhɝd/ /ˈhɝd/",
-        "zh": "聽到",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18902,
-        "en": "hide hid hidden, hid",
-        "kk": "/ˈhaɪd/ /ˈhɪd/ /ˈhɪdən/ /ˈhɪd/",
-        "zh": "藏、躲藏",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18903,
-        "en": "hit hit hit",
-        "kk": "/ˈhɪt/ /ˈhɪt/ /ˈhɪt/",
-        "zh": "打擊",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18904,
-        "en": "hold held held",
-        "kk": "/ˈhoʊɫd/ /ˈhɛɫd/ /ˈhɛɫd/",
-        "zh": "握住；舉辦",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18905,
-        "en": "hurt hurt hurt",
-        "kk": "/ˈhɝt/ /ˈhɝt/ /ˈhɝt/",
-        "zh": "傷害；使疼痛",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18906,
-        "en": "keep kept kept",
-        "kk": "/ˈkip/ /ˈkæpt/, /ˈkɛpt/ /ˈkæpt/, /ˈkɛpt/",
-        "zh": "保持",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18907,
-        "en": "know knew known",
-        "kk": "/ˈnoʊ/ /ˈnju/, /ˈnu/ /ˈnoʊn/",
-        "zh": "知道",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18908,
-        "en": "lay laid laid",
-        "kk": "/ˈɫeɪ/ /ˈɫeɪd/ /ˈɫeɪd/",
-        "zh": "放置",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18909,
-        "en": "lead led led",
-        "kk": "/ˈɫɛd/, /ˈɫid/ /ˈɫɛd/ /ˈɫɛd/",
-        "zh": "引導",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18910,
-        "en": "learn learned, learnt learned, learnt",
-        "kk": "/ˈɫɝn/ /ˈɫɝnd/, /ˈɫɝnɪd/ /ˈɫɝnt/ /ˈɫɝnd/, /ˈɫɝnɪd/ /ˈɫɝnt/",
-        "zh": "學習",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18911,
-        "en": "leave left left",
-        "kk": "/ˈɫiv/ /ˈɫɛft/ /ˈɫɛft/",
-        "zh": "離開",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18912,
-        "en": "lend lent lent",
-        "kk": "/ˈɫɛnd/ /ˈɫɛnt/ /ˈɫɛnt/",
-        "zh": "借出",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18913,
-        "en": "let let let",
-        "kk": "/ˈɫɛt/ /ˈɫɛt/ /ˈɫɛt/",
-        "zh": "讓",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
         "id": 18914,
         "en": "lie liay lain",
         "kk": "/ˈɫaɪ/ /ˈɫeɪn/",
         "zh": "躺",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18915,
-        "en": "light lit, lighted lit, lighted",
-        "kk": "/ˈɫaɪt/ /ˈɫɪt/ /ˈɫaɪtəd/, /ˈɫaɪtɪd/ /ˈɫɪt/ /ˈɫaɪtəd/, /ˈɫaɪtɪd/",
-        "zh": "點燃",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18916,
-        "en": "lose lost lost",
-        "kk": "/ˈɫuz/ /ˈɫɔst/ /ˈɫɔst/",
-        "zh": "失去",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18917,
-        "en": "make made made",
-        "kk": "/ˈmeɪk/ /ˈmeɪd/ /ˈmeɪd/",
-        "zh": "做",
         "example": "",
         "exampleZh": "",
         "unit": 18
@@ -17262,415 +14805,10 @@ const jhWordsDB = [
         "unit": 18
     },
     {
-        "id": 18919,
-        "en": "mean meant meant",
-        "kk": "/ˈmin/ /ˈmɛnt/ /ˈmɛnt/",
-        "zh": "意指",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18920,
-        "en": "meet met met",
-        "kk": "/ˈmit/ /ˈmɛt/ /ˈmɛt/",
-        "zh": "遇見",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18921,
-        "en": "oversleep overslept overslept",
-        "kk": "/ˌoʊvɝˈsɫip/ /ˌoʊvɝˈsɫɛpt/ /ˌoʊvɝˈsɫɛpt/",
-        "zh": "睡過頭",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18922,
-        "en": "pay paid paid",
-        "kk": "/ˈpeɪ/ /ˈpeɪd/ /ˈpeɪd/",
-        "zh": "支付",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18923,
-        "en": "put put put",
-        "kk": "/ˈpʊt/ /ˈpʊt/ /ˈpʊt/",
-        "zh": "放",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18924,
-        "en": "read read read",
-        "kk": "/ˈɹɛd/, /ˈɹid/ /ˈɹɛd/, /ˈɹid/ /ˈɹɛd/, /ˈɹid/",
-        "zh": "閱讀",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18925,
-        "en": "ride rode ridden",
-        "kk": "/ˈɹaɪd/ /ˈɹoʊd/ /ˈɹɪdən/",
-        "zh": "乘坐",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18926,
-        "en": "ring rang rung",
-        "kk": "/ˈɹɪŋ/ /ˈɹæŋ/ /ˈɹəŋ/",
-        "zh": "鳴響",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18927,
-        "en": "rise rose risen",
-        "kk": "/ˈɹaɪz/ /ˈɹoʊz/ /ˈɹɪzən/",
-        "zh": "上升，升起",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18928,
-        "en": "run ran run",
-        "kk": "/ˈɹən/ /ˈɹæn/ /ˈɹən/",
-        "zh": "跑",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18929,
-        "en": "say said said",
-        "kk": "/ˈseɪ/ /ˈsɛd/ /ˈsɛd/",
-        "zh": "說",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18930,
-        "en": "see saw seen",
-        "kk": "/ˈsi/ /ˈsɔ/ /ˈsin/",
-        "zh": "看",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18931,
-        "en": "sell sold sold",
-        "kk": "/ˈsɛɫ/ /ˈsoʊɫd/ /ˈsoʊɫd/",
-        "zh": "賣",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18932,
-        "en": "send sent sent",
-        "kk": "/ˈsɛnd/ /ˈsɛnt/ /ˈsɛnt/",
-        "zh": "送，寄",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18933,
-        "en": "set set set",
-        "kk": "/ˈsɛt/ /ˈsɛt/ /ˈsɛt/",
-        "zh": "安置",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18934,
-        "en": "shake shook shaken",
-        "kk": "/ˈʃeɪk/ /ˈʃʊk/ /ˈʃeɪkən/",
-        "zh": "搖；震動",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
         "id": 18935,
         "en": "shall should --",
         "kk": "/ˈʃæɫ/ /ˈʃʊd/",
         "zh": "應該",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18936,
-        "en": "shine shone shone",
-        "kk": "/ˈʃaɪn/ /ˈʃoʊn/ /ˈʃoʊn/",
-        "zh": "發光",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18937,
-        "en": "shoot shot shot",
-        "kk": "/ˈʃut/ /ˈʃɑt/ /ˈʃɑt/",
-        "zh": "開槍；發射",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18938,
-        "en": "show showed showed, shown",
-        "kk": "/ˈʃoʊ/ /ˈʃoʊd/ /ˈʃoʊd/ /ˈʃoʊn/",
-        "zh": "顯示",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18939,
-        "en": "shut shut shut",
-        "kk": "/ˈʃət/ /ˈʃət/ /ˈʃət/",
-        "zh": "關閉",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18940,
-        "en": "sing sang sung",
-        "kk": "/ˈsɪŋ/ /ˈsæŋ/ /ˈsəŋ/",
-        "zh": "唱歌",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18941,
-        "en": "sit sat sat",
-        "kk": "/ˈsɪt/ /ˈsæt/ /ˈsæt/",
-        "zh": "做",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18942,
-        "en": "sleep slept slept",
-        "kk": "/ˈsɫip/ /ˈsɫɛpt/ /ˈsɫɛpt/",
-        "zh": "睡",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18943,
-        "en": "smell smelled, smelt smelled, smelt",
-        "kk": "/ˈsmɛɫ/ /ˈsmɛɫd/ /ˈsmɛɫt/ /ˈsmɛɫd/ /ˈsmɛɫt/",
-        "zh": "聞到",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18944,
-        "en": "speak spoke spoken",
-        "kk": "/ˈspik/ /ˈspoʊk/ /ˈspoʊkən/",
-        "zh": "說",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18945,
-        "en": "speed sped, speeded sped, speeded",
-        "kk": "/ˈspid/ /ˈspɛd/ /ˈspidɪd/ /ˈspɛd/ /ˈspidɪd/",
-        "zh": "加速",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18946,
-        "en": "spell spelled, spelt spelled, spelt",
-        "kk": "/ˈspɛɫ/ /ˈspɛɫd/ /ˈspɛɫd/",
-        "zh": "拼寫",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18947,
-        "en": "spend spent spent",
-        "kk": "/ˈspɛnd/ /ˈspɛnt/ /ˈspɛnt/",
-        "zh": "花費",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18948,
-        "en": "spread spread spread",
-        "kk": "/ˈspɹɛd/ /ˈspɹɛd/ /ˈspɹɛd/",
-        "zh": "散播，散開",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18949,
-        "en": "stand stood stood",
-        "kk": "/ˈstænd/ /ˈstʊd/ /ˈstʊd/",
-        "zh": "站",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18950,
-        "en": "steal stole stolen",
-        "kk": "/ˈstiɫ/ /ˈstoʊɫ/ /ˈstoʊɫən/",
-        "zh": "偷竊",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18951,
-        "en": "sweep swept swept",
-        "kk": "/ˈswip/ /ˈswɛpt/ /ˈswɛpt/",
-        "zh": "打掃，掃除",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18952,
-        "en": "swim swam swum",
-        "kk": "/ˈswɪm/ /ˈswæm/ /ˈswəm/",
-        "zh": "游泳",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18953,
-        "en": "take took taken",
-        "kk": "/ˈteɪk/ /ˈtʊk/ /ˈteɪkən/",
-        "zh": "取，拿",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18954,
-        "en": "teach taught taught",
-        "kk": "/ˈtitʃ/ /ˈtɔt/ /ˈtɔt/",
-        "zh": "教",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18955,
-        "en": "tear tore torn",
-        "kk": "/ˈtɛɹ/, /ˈtɪɹ/ /ˈtɔɹ/ /ˈtɔɹn/",
-        "zh": "撕裂",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18956,
-        "en": "tell told told",
-        "kk": "/ˈtɛɫ/ /ˈtoʊɫd/ /ˈtoʊɫd/",
-        "zh": "告訴",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18957,
-        "en": "think thought thought",
-        "kk": "/ˈθɪŋk/ /ˈθɔt/ /ˈθɔt/",
-        "zh": "想",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18958,
-        "en": "throw threw thrown",
-        "kk": "/ˈθɹoʊ/ /ˈθɹu/ /ˈθɹoʊn/",
-        "zh": "投，擲",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18959,
-        "en": "understand understood understood",
-        "kk": "/ˌəndɝˈstænd/ /ˌəndɝˈstʊd/ /ˌəndɝˈstʊd/",
-        "zh": "理解，瞭解",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18960,
-        "en": "wake woke, waked woken, waked",
-        "kk": "/ˈweɪk/ /ˈwoʊk/ /ˈwoʊkən/",
-        "zh": "叫醒",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18961,
-        "en": "wear wore worn",
-        "kk": "/ˈwɛɹ/ /ˈwɔɹ/ /ˈwɔɹn/",
-        "zh": "穿",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18962,
-        "en": "will would --",
-        "kk": "/ˈwɪɫ/, /wəɫ/ /ˈwʊd/",
-        "zh": "將要",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18963,
-        "en": "win won won",
-        "kk": "/ˈwɪn/ /ˈwɑn/, /ˈwən/ /ˈwɑn/, /ˈwən/",
-        "zh": "贏得；獲勝",
-        "example": "",
-        "exampleZh": "",
-        "unit": 18
-    },
-    {
-        "id": 18964,
-        "en": "write wrote written",
-        "kk": "/ˈɹaɪt/ /ˈɹoʊt/ /ˈɹɪtən/",
-        "zh": "書寫，寫字",
         "example": "",
         "exampleZh": "",
         "unit": 18

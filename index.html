@@ -2207,7 +2207,7 @@
                     html += esc(s.substring(lastIndex, match.index));
                     const wordStr = match[0].toLowerCase().replace(/'/g, "\\'");
                     // Add data-char-index for robust tracking, and inline-block for transform (if needed) but keep it simple with colors
-                    html += `<span class="listen-word cursor-pointer transition-all duration-200 border-b-2 border-transparent hover:border-teal-400 rounded px-0.5 mx-px" data-word="${wordStr}" data-char-index="${match.index}" onclick="showWordTranslation(event, '${wordStr}')">${esc(match[0])}</span>`;
+                    html += `<span class="listen-word cursor-pointer transition-all duration-200 border-b-2 border-transparent hover:border-teal-400 rounded px-0.5 mx-px" data-word="${wordStr}" data-char-index="${match.index}" onclick="event.stopPropagation(); showWordTranslation(event, '${wordStr}')">${esc(match[0])}</span>`;
                     lastIndex = regex.lastIndex;
                 }
                 html += esc(s.substring(lastIndex));
@@ -2380,36 +2380,57 @@
             listeningUtterance.lang = 'en-US';
             listeningUtterance.rate = parseFloat(document.getElementById('listening-speed').value);
             
-            listeningUtterance.onboundary = function(event) {
-                if (event.name === 'word') {
-                    if (currentListeningWordEl) {
-                        currentListeningWordEl.classList.remove('bg-teal-500', 'text-white', 'shadow-md');
-                    }
-                    
-                    // Robust closest-index matching
-                    const wordEls = document.querySelectorAll(`#listen-s-${index} .listen-word`);
-                    let targetEl = null;
-                    for (let i = 0; i < wordEls.length; i++) {
-                        const charIdx = parseInt(wordEls[i].dataset.charIndex);
-                        if (charIdx >= event.charIndex) {
-                            targetEl = wordEls[i];
-                            // If it passed the index, the previous word might be a better match
-                            if (charIdx > event.charIndex && i > 0) {
-                                targetEl = wordEls[i-1];
-                            }
-                            break;
-                        }
-                    }
-                    if (!targetEl && wordEls.length > 0) targetEl = wordEls[wordEls.length - 1]; // fallback
+            let startTime = Date.now();
+            let estimatedDuration = (listeningSentences[index].split(' ').length / 2.5) * 1000 / listeningUtterance.rate;
+            let hasBoundaryEvents = false;
+            let fallbackTimer = null;
 
-                    if (targetEl) {
-                        targetEl.classList.add('bg-teal-500', 'text-white', 'shadow-md');
-                        currentListeningWordEl = targetEl;
-                    }
-                }
+            listeningUtterance.onboundary = function(event) {
+                hasBoundaryEvents = true;
+                updateHighlight(event.charIndex);
             };
 
+            function updateHighlight(charIndex) {
+                if (currentListeningWordEl) {
+                    currentListeningWordEl.classList.remove('bg-teal-500', 'text-white', 'shadow-md');
+                }
+                
+                const wordEls = document.querySelectorAll(`#listen-s-${index} .listen-word`);
+                let targetEl = null;
+                for (let i = 0; i < wordEls.length; i++) {
+                    const charIdx = parseInt(wordEls[i].dataset.charIndex);
+                    if (charIdx >= charIndex) {
+                        targetEl = wordEls[i];
+                        if (charIdx > charIndex && i > 0) {
+                            targetEl = wordEls[i-1];
+                        }
+                        break;
+                    }
+                }
+                if (!targetEl && wordEls.length > 0) targetEl = wordEls[wordEls.length - 1]; // fallback
+
+                if (targetEl) {
+                    targetEl.classList.add('bg-teal-500', 'text-white', 'shadow-md');
+                    currentListeningWordEl = targetEl;
+                }
+            }
+
+            fallbackTimer = setInterval(() => {
+                if (!isListeningPlaying) {
+                    clearInterval(fallbackTimer);
+                    return;
+                }
+                if (!hasBoundaryEvents) {
+                    const elapsed = Date.now() - startTime;
+                    let progress = elapsed / estimatedDuration;
+                    if (progress > 1) progress = 1;
+                    const charIndex = Math.floor(progress * listeningSentences[index].length);
+                    updateHighlight(charIndex);
+                }
+            }, 100);
+
             listeningUtterance.onend = () => {
+                clearInterval(fallbackTimer);
                 if (currentListeningWordEl) {
                     currentListeningWordEl.classList.remove('bg-teal-500', 'text-white', 'shadow-md');
                     currentListeningWordEl = null;
@@ -2419,8 +2440,9 @@
                 }
             };
             listeningUtterance.onerror = () => {
+                clearInterval(fallbackTimer);
                 if (currentListeningWordEl) {
-                    currentListeningWordEl.classList.remove('bg-yellow-200', 'text-teal-900', 'font-bold');
+                    currentListeningWordEl.classList.remove('bg-teal-500', 'text-white', 'shadow-md');
                     currentListeningWordEl = null;
                 }
                 isListeningPlaying = false;

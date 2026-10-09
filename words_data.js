@@ -49236,7 +49236,9 @@ const externalVocabularyDB = [
         "id": 6137,
         "en": "abolish",
         "zh": "廢除;廢止",
-        "kk": "/əˈbɑɫɪʃ/"
+        "kk": "/əˈbɑɫɪʃ/",
+        "example": "Abolish restaurants.",
+        "exampleZh": "廢除餐廳。"
     },
     {
         "id": 6138,
@@ -49296,7 +49298,9 @@ const externalVocabularyDB = [
         "id": 6145,
         "en": "applaud",
         "zh": "向...鼓掌;稱讚",
-        "kk": "/əˈpɫɔd/"
+        "kk": "/əˈpɫɔd/",
+        "example": "Everyone applauded.",
+        "exampleZh": "大家紛紛鼓掌。"
     },
     {
         "id": 6146,
@@ -49814,7 +49818,9 @@ const externalVocabularyDB = [
         "id": 6210,
         "en": "contaminate",
         "zh": "弄髒;污染",
-        "kk": "/kənˈtæməˌneɪt/"
+        "kk": "/kənˈtæməˌneɪt/",
+        "example": "This water is contaminated.",
+        "exampleZh": "這些水被污染了。"
     },
     {
         "id": 6211,
@@ -49844,7 +49850,9 @@ const externalVocabularyDB = [
         "id": 6214,
         "en": "convict",
         "zh": "證明...有罪;判...有罪",
-        "kk": "/ˈkɑnvɪkt/"
+        "kk": "/ˈkɑnvɪkt/",
+        "example": "She was convicted.",
+        "exampleZh": "她被定罪了。"
     },
     {
         "id": 6215,
@@ -49962,7 +49970,9 @@ const externalVocabularyDB = [
         "id": 6229,
         "en": "delegate",
         "zh": "委派...為代表",
-        "kk": "/ˈdɛɫəˌɡeɪt/"
+        "kk": "/ˈdɛɫəˌɡeɪt/",
+        "example": "Who will be the delegate?",
+        "exampleZh": "誰將成為代表？"
     },
     {
         "id": 6230,
@@ -50028,7 +50038,9 @@ const externalVocabularyDB = [
         "id": 6238,
         "en": "document",
         "zh": "用文件證明",
-        "kk": "/ˈdɑkjəmɛnt/"
+        "kk": "/ˈdɑkjəmɛnt/",
+        "example": "Hide these documents.",
+        "exampleZh": "隱藏這些文件。"
     },
     {
         "id": 6239,
@@ -50158,7 +50170,9 @@ const externalVocabularyDB = [
         "id": 6255,
         "en": "exceed",
         "zh": "超過;勝過",
-        "kk": "/ɪkˈsid/"
+        "kk": "/ɪkˈsid/",
+        "example": "Supply exceeds demand.",
+        "exampleZh": "供應超過需求。"
     },
     {
         "id": 6256,
@@ -53311,7 +53325,9 @@ const externalVocabularyDB = [
         "id": 6662,
         "en": "architecture",
         "zh": "建築學",
-        "kk": "/ˈɑɹkəˌtɛktʃɝ/"
+        "kk": "/ˈɑɹkəˌtɛktʃɝ/",
+        "example": "Tom loves architecture.",
+        "exampleZh": "湯姆熱愛建築。"
     },
     {
         "id": 6663,
@@ -53441,7 +53457,9 @@ const externalVocabularyDB = [
         "id": 6682,
         "en": "banner",
         "zh": "旗幟;橫幅;大標題",
-        "kk": "/ˈbænɝ/"
+        "kk": "/ˈbænɝ/",
+        "example": "The Amazigh banner is magnificent.",
+        "exampleZh": "阿馬齊格旗雄偉壯觀。"
     },
     {
         "id": 6683,
@@ -53497,13 +53515,17 @@ const externalVocabularyDB = [
         "id": 6690,
         "en": "behalf",
         "zh": "代表",
-        "kk": "/bɪˈhæf/"
+        "kk": "/bɪˈhæf/",
+        "example": "Speak on my behalf!",
+        "exampleZh": "代表我說話吧！"
     },
     {
         "id": 6691,
         "en": "belongings",
         "zh": "財產;攜帶物品",
-        "kk": "/bɪˈɫɔŋɪŋz/"
+        "kk": "/bɪˈɫɔŋɪŋz/",
+        "example": "Pack your belongings.",
+        "exampleZh": "收拾好你的物品。"
     },
     {
         "id": 6692,
@@ -53619,7 +53641,9 @@ const externalVocabularyDB = [
         "id": 6707,
         "en": "bonus",
         "zh": "獎金;額外津貼;分紅",
-        "kk": "/ˈboʊnəs/"
+        "kk": "/ˈboʊnəs/",
+        "example": "Did you get a bonus?",
+        "exampleZh": "你得到獎金了嗎？"
     },
     {
         "id": 6708,
@@ -53731,7 +53755,9 @@ const externalVocabularyDB = [
         "id": 6724,
         "en": "briefcase",
         "zh": "公事包",
-        "kk": "/ˈbɹifˌkeɪs/"
+        "kk": "/ˈbɹifˌkeɪs/",
+        "example": "Take this briefcase.",
+        "exampleZh": "拿著這個公事包。"
     },
     {
         "id": 6725,
@@ -53795,7 +53821,9 @@ const externalVocabularyDB = [
         "id": 6733,
         "en": "bulk",
         "zh": "體積;容積;大塊;大多數",
-        "kk": "/ˈbəɫk/"
+        "kk": "/ˈbəɫk/",
+        "example": "I always buy in bulk.",
+        "exampleZh": "我總是批量購買。"
     },
     {
         "id": 6734,
@@ -53809,7 +53837,9 @@ const externalVocabularyDB = [
         "id": 6735,
         "en": "bureau",
         "zh": "事務處",
-        "kk": "/ˈbjʊɹoʊ/"
+        "kk": "/ˈbjʊɹoʊ/",
+        "example": "Flavio is the director of the bureau.",
+        "exampleZh": "弗拉維奧是該局局長。"
     },
     {
         "id": 6736,
@@ -53855,7 +53885,9 @@ const externalVocabularyDB = [
         "id": 6742,
         "en": "carbon",
         "zh": "碳;複寫紙",
-        "kk": "/ˈkɑɹbən/"
+        "kk": "/ˈkɑɹbən/",
+        "example": "What about the carbon tax?",
+        "exampleZh": "那麼碳稅呢？"
     },
     {
         "id": 6743,
@@ -53897,7 +53929,9 @@ const externalVocabularyDB = [
         "id": 6749,
         "en": "category",
         "zh": "種類;類別",
-        "kk": "/ˈkætəˌɡɔɹi/"
+        "kk": "/ˈkætəˌɡɔɹi/",
+        "example": "They announced our category.",
+        "exampleZh": "他們宣布了我們的類別。"
     },
     {
         "id": 6750,
@@ -53965,7 +53999,9 @@ const externalVocabularyDB = [
         "id": 6760,
         "en": "ceremony",
         "zh": "儀式,典禮",
-        "kk": "/ˈsɛɹəˌmoʊni/"
+        "kk": "/ˈsɛɹəˌmoʊni/",
+        "example": "The ceremony stopped.",
+        "exampleZh": "儀式停止了。"
     },
     {
         "id": 6761,
@@ -53987,7 +54023,9 @@ const externalVocabularyDB = [
         "id": 6763,
         "en": "chairman",
         "zh": "主席",
-        "kk": "/ˈtʃɛɹmən/"
+        "kk": "/ˈtʃɛɹmən/",
+        "example": "Include the chairman.",
+        "exampleZh": "包括主席。"
     },
     {
         "id": 6764,
@@ -54043,13 +54081,17 @@ const externalVocabularyDB = [
         "id": 6772,
         "en": "chef",
         "zh": "(餐館等的)主廚;大師傅",
-        "kk": "/ˈʃɛf/"
+        "kk": "/ˈʃɛf/",
+        "example": "Ziri became a chef.",
+        "exampleZh": "齊裡成為了一名廚師。"
     },
     {
         "id": 6773,
         "en": "chemist",
         "zh": "化學家",
-        "kk": "/ˈkɛmɪst/"
+        "kk": "/ˈkɛmɪst/",
+        "example": "Ziri became a chemist.",
+        "exampleZh": "齊裡成為化學家。"
     },
     {
         "id": 6774,
@@ -54075,7 +54117,9 @@ const externalVocabularyDB = [
         "id": 6777,
         "en": "choir",
         "zh": "(教堂的)唱詩班;合唱團",
-        "kk": "/ˈkwaɪɝ/"
+        "kk": "/ˈkwaɪɝ/",
+        "example": "Welcome to the choir.",
+        "exampleZh": "歡迎來到合唱團。"
     },
     {
         "id": 6778,
@@ -54087,7 +54131,9 @@ const externalVocabularyDB = [
         "id": 6779,
         "en": "circuit",
         "zh": "環道;一圈;巡迴路線;電路",
-        "kk": "/ˈsɝkət/"
+        "kk": "/ˈsɝkət/",
+        "example": "Where's the circuit breaker?",
+        "exampleZh": "斷路器在哪裡？"
     },
     {
         "id": 6780,
@@ -54113,7 +54159,9 @@ const externalVocabularyDB = [
         "id": 6783,
         "en": "clause",
         "zh": "(文件的)條款;子句",
-        "kk": "/ˈkɫɔz/"
+        "kk": "/ˈkɫɔz/",
+        "example": "I have a nudity clause.",
+        "exampleZh": "我有一個裸體條款。"
     },
     {
         "id": 6784,
@@ -54217,7 +54265,9 @@ const externalVocabularyDB = [
         "id": 6798,
         "en": "commodity",
         "zh": "商品;日用品",
-        "kk": "/kəˈmɑdəti/"
+        "kk": "/kəˈmɑdəti/",
+        "example": "Commodity prices were rising.",
+        "exampleZh": "大宗商品價格不斷上漲。"
     },
     {
         "id": 6799,
@@ -54245,7 +54295,9 @@ const externalVocabularyDB = [
         "id": 6802,
         "en": "commuter",
         "zh": "通勤者",
-        "kk": "/kəmˈjutɝ/"
+        "kk": "/kəmˈjutɝ/",
+        "example": "Commuters should anticipate traffic delays.",
+        "exampleZh": "通勤者應預見交通延誤。"
     },
     {
         "id": 6803,
@@ -54267,7 +54319,9 @@ const externalVocabularyDB = [
         "id": 6805,
         "en": "compassion",
         "zh": "憐憫;同情",
-        "kk": "/kəmˈpæʃən/"
+        "kk": "/kəmˈpæʃən/",
+        "example": "Sami showed compassion.",
+        "exampleZh": "薩米表現出了同情心。"
     },
     {
         "id": 6806,
@@ -54289,7 +54343,9 @@ const externalVocabularyDB = [
         "id": 6808,
         "en": "comprehension",
         "zh": "理解;理解力",
-        "kk": "/ˌkɑmpɹiˈhɛnʃən/"
+        "kk": "/ˌkɑmpɹiˈhɛnʃən/",
+        "example": "That was beyond my comprehension.",
+        "exampleZh": "這超出了我的理解範圍。"
     },
     {
         "id": 6809,
@@ -54363,7 +54419,9 @@ const externalVocabularyDB = [
         "id": 6818,
         "en": "contempt",
         "zh": "輕視;(對法庭等的)藐視",
-        "kk": "/kənˈtɛmpt/"
+        "kk": "/kənˈtɛmpt/",
+        "example": "Money breeds contempt.",
+        "exampleZh": "金錢會滋生輕視。"
     },
     {
         "id": 6819,
@@ -54375,7 +54433,9 @@ const externalVocabularyDB = [
         "id": 6820,
         "en": "convict",
         "zh": "(服刑的)囚犯",
-        "kk": "/ˈkɑnvɪkt/"
+        "kk": "/ˈkɑnvɪkt/",
+        "example": "She was convicted.",
+        "exampleZh": "她被定罪了。"
     },
     {
         "id": 6821,
@@ -54397,7 +54457,9 @@ const externalVocabularyDB = [
         "id": 6823,
         "en": "corporation",
         "zh": "股份(有限)公司",
-        "kk": "/ˌkɔɹpɝˈeɪʃən/"
+        "kk": "/ˌkɔɹpɝˈeɪʃən/",
+        "example": "Corporations are not people.",
+        "exampleZh": "公司不是人。"
     },
     {
         "id": 6824,
@@ -54409,7 +54471,9 @@ const externalVocabularyDB = [
         "id": 6825,
         "en": "corridor",
         "zh": "迴廊,通道",
-        "kk": "/ˈkɔɹədɝ/"
+        "kk": "/ˈkɔɹədɝ/",
+        "example": "Tom ran down the corridor.",
+        "exampleZh": "湯姆跑過走廊。"
     },
     {
         "id": 6826,
@@ -54423,7 +54487,9 @@ const externalVocabularyDB = [
         "id": 6827,
         "en": "counselor",
         "zh": "顧問;(學生的)輔導員;律師",
-        "kk": "/ˈkaʊnsəɫɝ/"
+        "kk": "/ˈkaʊnsəɫɝ/",
+        "example": "Call your counselor.",
+        "exampleZh": "打電話給你的輔導員。"
     },
     {
         "id": 6828,
@@ -54527,13 +54593,17 @@ const externalVocabularyDB = [
         "id": 6842,
         "en": "currency",
         "zh": "通貨;貨幣",
-        "kk": "/ˈkɝənsi/"
+        "kk": "/ˈkɝənsi/",
+        "example": "That's the local currency.",
+        "exampleZh": "那是當地貨幣。"
     },
     {
         "id": 6843,
         "en": "curriculum",
         "zh": "學校的全部課程",
-        "kk": "/kɝˈɪkjəɫəm/"
+        "kk": "/kɝˈɪkjəɫəm/",
+        "example": "The curriculum is attached.",
+        "exampleZh": "課程表附後。"
     },
     {
         "id": 6844,
@@ -54583,25 +54653,33 @@ const externalVocabularyDB = [
         "id": 6850,
         "en": "delegate",
         "zh": "代表;會議代表",
-        "kk": "/ˈdɛɫəˌɡeɪt/"
+        "kk": "/ˈdɛɫəˌɡeɪt/",
+        "example": "Who will be the delegate?",
+        "exampleZh": "誰將成為代表？"
     },
     {
         "id": 6851,
         "en": "delegation",
         "zh": "授權;代表團",
-        "kk": "/ˌdɛɫəˈɡeɪʃən/"
+        "kk": "/ˌdɛɫəˈɡeɪʃən/",
+        "example": "One delegation followed another.",
+        "exampleZh": "一個代表團接著一個代表團。"
     },
     {
         "id": 6852,
         "en": "democrat",
         "zh": "民主主義者",
-        "kk": "/ˈdɛməˌkɹæt/"
+        "kk": "/ˈdɛməˌkɹæt/",
+        "example": "Democrats should be upset.",
+        "exampleZh": "民主黨人應該感到不安。"
     },
     {
         "id": 6853,
         "en": "denial",
         "zh": "否認;拒絕",
-        "kk": "/dɪˈnaɪəɫ/"
+        "kk": "/dɪˈnaɪəɫ/",
+        "example": "Lukas was in denial.",
+        "exampleZh": "盧卡斯否認。"
     },
     {
         "id": 6854,
@@ -54621,7 +54699,9 @@ const externalVocabularyDB = [
         "id": 6856,
         "en": "destiny",
         "zh": "命運;天數",
-        "kk": "/ˈdɛstəni/"
+        "kk": "/ˈdɛstəni/",
+        "example": "It is his destiny!",
+        "exampleZh": "這是他的命運！"
     },
     {
         "id": 6857,
@@ -54679,7 +54759,9 @@ const externalVocabularyDB = [
         "id": 6865,
         "en": "document",
         "zh": "文件;證件",
-        "kk": "/ˈdɑkjəmɛnt/"
+        "kk": "/ˈdɑkjəmɛnt/",
+        "example": "Hide these documents.",
+        "exampleZh": "隱藏這些文件。"
     },
     {
         "id": 6866,
@@ -58327,7 +58409,9 @@ const externalVocabularyDB = [
         "id": 7352,
         "en": "supervisor",
         "zh": "管理人;指導者",
-        "kk": "/ˈsupɝˌvaɪzɝ/"
+        "kk": "/ˈsupɝˌvaɪzɝ/",
+        "example": "Tom is a supervisor.",
+        "exampleZh": "湯姆是一名主管。"
     },
     {
         "id": 7353,
@@ -61384,7 +61468,9 @@ const externalVocabularyDB = [
         "id": 7750,
         "en": "advocate",
         "zh": "擁護;提倡",
-        "kk": "/ˈædvəˌkeɪt/"
+        "kk": "/ˈædvəˌkeɪt/",
+        "example": "Mennad advocates for that.",
+        "exampleZh": "門納德主張這一點。"
     },
     {
         "id": 7751,
@@ -61402,7 +61488,9 @@ const externalVocabularyDB = [
         "id": 7753,
         "en": "allocate",
         "zh": "分派;分配",
-        "kk": "/ˈæɫəˌkeɪt/"
+        "kk": "/ˈæɫəˌkeɪt/",
+        "example": "We cannot allocate money for it.",
+        "exampleZh": "我們無法為此分配資金。"
     },
     {
         "id": 7754,
@@ -61414,7 +61502,9 @@ const externalVocabularyDB = [
         "id": 7755,
         "en": "amplify",
         "zh": "放大(聲音等);擴大",
-        "kk": "/ˈæmpɫəˌfaɪ/"
+        "kk": "/ˈæmpɫəˌfaɪ/",
+        "example": "Try to amplify your opportunity.",
+        "exampleZh": "試著擴大你的機會。"
     },
     {
         "id": 7756,
@@ -61428,13 +61518,17 @@ const externalVocabularyDB = [
         "id": 7757,
         "en": "anticipate",
         "zh": "預期;預先考慮到",
-        "kk": "/ænˈtɪsəˌpeɪt/"
+        "kk": "/ænˈtɪsəˌpeɪt/",
+        "example": "I anticipated this.",
+        "exampleZh": "我預料到了這一點。"
     },
     {
         "id": 7758,
         "en": "apprentice",
         "zh": "當學徒",
-        "kk": "/əˈpɹɛntəs/"
+        "kk": "/əˈpɹɛntəs/",
+        "example": "I'm an apprentice.",
+        "exampleZh": "我是一個學徒。"
     },
     {
         "id": 7759,
@@ -61468,31 +61562,41 @@ const externalVocabularyDB = [
         "id": 7763,
         "en": "assess",
         "zh": "估價;評價",
-        "kk": "/əˈsɛs/"
+        "kk": "/əˈsɛs/",
+        "example": "He assessed the distance.",
+        "exampleZh": "他評估了距離。"
     },
     {
         "id": 7764,
         "en": "attain",
         "zh": "達到;獲得",
-        "kk": "/əˈteɪn/"
+        "kk": "/əˈteɪn/",
+        "example": "Tom attained his goal.",
+        "exampleZh": "湯姆達到了他的目的。"
     },
     {
         "id": 7765,
         "en": "auction",
         "zh": "拍賣",
-        "kk": "/ˈɑkʃən/"
+        "kk": "/ˈɑkʃən/",
+        "example": "The auction is over.",
+        "exampleZh": "拍賣結束了。"
     },
     {
         "id": 7766,
         "en": "authorize",
         "zh": "授權給;批准",
-        "kk": "/ˈɔθɝˌaɪz/"
+        "kk": "/ˈɔθɝˌaɪz/",
+        "example": "Who authorized this?",
+        "exampleZh": "誰授權這樣做的？"
     },
     {
         "id": 7767,
         "en": "autograph",
         "zh": "親筆簽名於",
-        "kk": "/ˈɔtəˌɡɹæf/"
+        "kk": "/ˈɔtəˌɡɹæf/",
+        "example": "Ziri signed autographs.",
+        "exampleZh": "齊裡簽名。"
     },
     {
         "id": 7768,
@@ -61510,13 +61614,17 @@ const externalVocabularyDB = [
         "id": 7770,
         "en": "betray",
         "zh": "背叛;出賣",
-        "kk": "/bɪˈtɹeɪ/"
+        "kk": "/bɪˈtɹeɪ/",
+        "example": "They felt betrayed.",
+        "exampleZh": "他們感到被背叛了。"
     },
     {
         "id": 7771,
         "en": "bias",
         "zh": "使存偏見",
-        "kk": "/ˈbaɪəs/"
+        "kk": "/ˈbaɪəs/",
+        "example": "Tom seemed biased.",
+        "exampleZh": "湯姆似乎有偏見。"
     },
     {
         "id": 7772,
@@ -61542,7 +61650,9 @@ const externalVocabularyDB = [
         "id": 7775,
         "en": "boost",
         "zh": "舉;抬;推動;促進",
-        "kk": "/ˈbust/"
+        "kk": "/ˈbust/",
+        "example": "Boost your productivity.",
+        "exampleZh": "提高您的生產力。"
     },
     {
         "id": 7776,
@@ -61566,7 +61676,9 @@ const externalVocabularyDB = [
         "id": 7779,
         "en": "canvas",
         "zh": "用帆布覆蓋;用帆布裝備",
-        "kk": "/ˈkænvəs/"
+        "kk": "/ˈkænvəs/",
+        "example": "This is a very famous canvas.",
+        "exampleZh": "這是一幅非常著名的畫布。"
     },
     {
         "id": 7780,
@@ -61584,7 +61696,9 @@ const externalVocabularyDB = [
         "id": 7782,
         "en": "cater",
         "zh": "承辦宴席;迎合",
-        "kk": "/ˈkeɪtɝ/"
+        "kk": "/ˈkeɪtɝ/",
+        "example": "I am self-catering.",
+        "exampleZh": "我自己做飯。"
     },
     {
         "id": 7783,
@@ -61596,7 +61710,9 @@ const externalVocabularyDB = [
         "id": 7784,
         "en": "characterize",
         "zh": "描繪...的特性;具有...的特徵",
-        "kk": "/ˈkɛɹəktɝˌaɪz/"
+        "kk": "/ˈkɛɹəktɝˌaɪz/",
+        "example": "How would you characterize fast food?",
+        "exampleZh": "您如何評價快餐？"
     },
     {
         "id": 7785,
@@ -61650,13 +61766,17 @@ const externalVocabularyDB = [
         "id": 7793,
         "en": "collide",
         "zh": "相撞;衝突;抵觸",
-        "kk": "/kəˈɫaɪd/"
+        "kk": "/kəˈɫaɪd/",
+        "example": "Two cars collided.",
+        "exampleZh": "兩輛車相撞了。"
     },
     {
         "id": 7794,
         "en": "commemorate",
         "zh": "慶祝;紀念",
-        "kk": "/kəˈmɛmɝˌeɪt/"
+        "kk": "/kəˈmɛmɝˌeɪt/",
+        "example": "Who will commemorate me when I'm dead?",
+        "exampleZh": "當我死後誰來紀念我？"
     },
     {
         "id": 7795,
@@ -61668,37 +61788,49 @@ const externalVocabularyDB = [
         "id": 7796,
         "en": "compensate",
         "zh": "補償;賠償;酬報",
-        "kk": "/ˈkɑmpənˌseɪt/"
+        "kk": "/ˈkɑmpənˌseɪt/",
+        "example": "You'll be compensated.",
+        "exampleZh": "你會得到補償的。"
     },
     {
         "id": 7797,
         "en": "compile",
         "zh": "匯編;收集(資料等);編譯(程式)",
-        "kk": "/kəmˈpaɪɫ/"
+        "kk": "/kəmˈpaɪɫ/",
+        "example": "Who compiled this list?",
+        "exampleZh": "誰編製了這份清單？"
     },
     {
         "id": 7798,
         "en": "complement",
         "zh": "補充;補足;與...相配",
-        "kk": "/ˈkɑmpɫəmənt/"
+        "kk": "/ˈkɑmpɫəmənt/",
+        "example": "Can I complement you?",
+        "exampleZh": "我可以補充你嗎？"
     },
     {
         "id": 7799,
         "en": "comprise",
         "zh": "包括;由...組成",
-        "kk": "/kəmˈpɹaɪz/"
+        "kk": "/kəmˈpɹaɪz/",
+        "example": "One minute comprises sixty seconds.",
+        "exampleZh": "一分鐘包括六十秒。"
     },
     {
         "id": 7800,
         "en": "concede",
         "zh": "(勉強)承認;讓步;承認失敗",
-        "kk": "/kənˈsid/"
+        "kk": "/kənˈsid/",
+        "example": "Tom conceded the point.",
+        "exampleZh": "湯姆承認了這一點。"
     },
     {
         "id": 7801,
         "en": "condense",
         "zh": "濃縮;縮短;凝結",
-        "kk": "/kənˈdɛns/"
+        "kk": "/kənˈdɛns/",
+        "example": "Don't forget to buy condensed milk.",
+        "exampleZh": "別忘了買煉乳。"
     },
     {
         "id": 7802,
@@ -61710,13 +61842,17 @@ const externalVocabularyDB = [
         "id": 7803,
         "en": "conform",
         "zh": "遵照;符合;使一致",
-        "kk": "/kənˈfɔɹm/"
+        "kk": "/kənˈfɔɹm/",
+        "example": "Tom will never conform.",
+        "exampleZh": "湯姆永遠不會順從。"
     },
     {
         "id": 7804,
         "en": "contradict",
         "zh": "否定(陳述等);反駁;與...矛盾",
-        "kk": "/ˌkɑntɹəˈdɪkt/"
+        "kk": "/ˌkɑntɹəˈdɪkt/",
+        "example": "She contradicts herself.",
+        "exampleZh": "她自相矛盾。"
     },
     {
         "id": 7805,
@@ -61730,7 +61866,9 @@ const externalVocabularyDB = [
         "id": 7806,
         "en": "core",
         "zh": "挖去...的果核",
-        "kk": "/ˈkɔɹ/"
+        "kk": "/ˈkɔɹ/",
+        "example": "Don't eat apple cores.",
+        "exampleZh": "不要吃蘋果核。"
     },
     {
         "id": 7807,
@@ -61754,7 +61892,9 @@ const externalVocabularyDB = [
         "id": 7810,
         "en": "cruise",
         "zh": "巡航;航遊;緩慢巡行",
-        "kk": "/ˈkɹuz/"
+        "kk": "/ˈkɹuz/",
+        "example": "We went on a cruise.",
+        "exampleZh": "我們去搭乘遊輪旅行。"
     },
     {
         "id": 7811,
@@ -61772,13 +61912,17 @@ const externalVocabularyDB = [
         "id": 7813,
         "en": "cultivate",
         "zh": "栽培(作物等);養殖(魚等);培育",
-        "kk": "/ˈkəɫtəˌveɪt/"
+        "kk": "/ˈkəɫtəˌveɪt/",
+        "example": "Cultivate your will!",
+        "exampleZh": "培養你的意志！"
     },
     {
         "id": 7814,
         "en": "decline",
         "zh": "下降,下跌,衰退,婉拒,謝絕",
-        "kk": "/dɪˈkɫaɪn/"
+        "kk": "/dɪˈkɫaɪn/",
+        "example": "He politely declined.",
+        "exampleZh": "他禮貌地拒絕了。"
     },
     {
         "id": 7815,
@@ -61792,7 +61936,9 @@ const externalVocabularyDB = [
         "id": 7816,
         "en": "deem",
         "zh": "認為;視作",
-        "kk": "/ˈdim/"
+        "kk": "/ˈdim/",
+        "example": "Ziri was deemed mentally unwell.",
+        "exampleZh": "齊裡被認為精神不正常。"
     },
     {
         "id": 7817,
@@ -61822,25 +61968,33 @@ const externalVocabularyDB = [
         "id": 7820,
         "en": "denounce",
         "zh": "譴責;告發",
-        "kk": "/dɪˈnaʊns/"
+        "kk": "/dɪˈnaʊns/",
+        "example": "They denounced Tom.",
+        "exampleZh": "他們譴責湯姆。"
     },
     {
         "id": 7821,
         "en": "depict",
         "zh": "描畫;雕出;描述",
-        "kk": "/dɪˈpɪkt/"
+        "kk": "/dɪˈpɪkt/",
+        "example": "The mosaic depicts a butterfly.",
+        "exampleZh": "馬賽克描繪了一隻蝴蝶。"
     },
     {
         "id": 7822,
         "en": "deprive",
         "zh": "剝奪",
-        "kk": "/dɪˈpɹaɪv/"
+        "kk": "/dɪˈpɹaɪv/",
+        "example": "I'm sleep-deprived.",
+        "exampleZh": "我睡眠不足。"
     },
     {
         "id": 7823,
         "en": "derive",
         "zh": "取得;衍生出",
-        "kk": "/dɝˈaɪv/"
+        "kk": "/dɝˈaɪv/",
+        "example": "I derived no benefit from them.",
+        "exampleZh": "我沒有從他們那裡得到任何好處。"
     },
     {
         "id": 7824,
@@ -62224,7 +62378,9 @@ const externalVocabularyDB = [
         "id": 7875,
         "en": "expire",
         "zh": "失效;滿期;吐氣",
-        "kk": "/ɪkˈspaɪɹ/"
+        "kk": "/ɪkˈspaɪɹ/",
+        "example": "It expires tomorrow.",
+        "exampleZh": "明天就到期了。"
     },
     {
         "id": 7876,
@@ -62552,7 +62708,9 @@ const externalVocabularyDB = [
         "id": 7918,
         "en": "inventory",
         "zh": "把...登入目錄;盤存",
-        "kk": "/ˌɪnvənˈtɔɹi/"
+        "kk": "/ˌɪnvənˈtɔɹi/",
+        "example": "The inventory is full.",
+        "exampleZh": "庫存已滿。"
     },
     {
         "id": 7919,
@@ -64113,7 +64271,9 @@ const externalVocabularyDB = [
         "id": 8123,
         "en": "advocate",
         "zh": "提倡者;擁護者",
-        "kk": "/ˈædvəˌkeɪt/"
+        "kk": "/ˈædvəˌkeɪt/",
+        "example": "Mennad advocates for that.",
+        "exampleZh": "門納德主張這一點。"
     },
     {
         "id": 8124,
@@ -64264,7 +64424,9 @@ const externalVocabularyDB = [
         "id": 8144,
         "en": "apprentice",
         "zh": "學徒;生手",
-        "kk": "/əˈpɹɛntəs/"
+        "kk": "/əˈpɹɛntəs/",
+        "example": "I'm an apprentice.",
+        "exampleZh": "我是一個學徒。"
     },
     {
         "id": 8145,
@@ -64356,13 +64518,17 @@ const externalVocabularyDB = [
         "id": 8156,
         "en": "auction",
         "zh": "拍賣",
-        "kk": "/ˈɑkʃən/"
+        "kk": "/ˈɑkʃən/",
+        "example": "The auction is over.",
+        "exampleZh": "拍賣結束了。"
     },
     {
         "id": 8157,
         "en": "autograph",
         "zh": "(尤指名人的)親筆簽名",
-        "kk": "/ˈɔtəˌɡɹæf/"
+        "kk": "/ˈɔtəˌɡɹæf/",
+        "example": "Ziri signed autographs.",
+        "exampleZh": "齊裡簽名。"
     },
     {
         "id": 8158,
@@ -64392,13 +64558,17 @@ const externalVocabularyDB = [
         "id": 8161,
         "en": "beverage",
         "zh": "飲料",
-        "kk": "/ˈbɛvɝɪdʒ/"
+        "kk": "/ˈbɛvɝɪdʒ/",
+        "example": "Milk is a common beverage.",
+        "exampleZh": "牛奶是一種常見的飲料。"
     },
     {
         "id": 8162,
         "en": "bias",
         "zh": "偏見;成見;斜線",
-        "kk": "/ˈbaɪəs/"
+        "kk": "/ˈbaɪəs/",
+        "example": "Tom seemed biased.",
+        "exampleZh": "湯姆似乎有偏見。"
     },
     {
         "id": 8163,
@@ -64434,7 +64604,9 @@ const externalVocabularyDB = [
         "id": 8167,
         "en": "boost",
         "zh": "一舉;一抬;推動;促進",
-        "kk": "/ˈbust/"
+        "kk": "/ˈbust/",
+        "example": "Boost your productivity.",
+        "exampleZh": "提高您的生產力。"
     },
     {
         "id": 8168,
@@ -64548,7 +64720,9 @@ const externalVocabularyDB = [
         "id": 8183,
         "en": "canvas",
         "zh": "油畫布",
-        "kk": "/ˈkænvəs/"
+        "kk": "/ˈkænvəs/",
+        "example": "This is a very famous canvas.",
+        "exampleZh": "這是一幅非常著名的畫布。"
     },
     {
         "id": 8184,
@@ -64614,7 +64788,9 @@ const externalVocabularyDB = [
         "id": 8192,
         "en": "cashier",
         "zh": "出納員",
-        "kk": "/kæˈʃɪɹ/"
+        "kk": "/kæˈʃɪɹ/",
+        "example": "Yanni is a cashier.",
+        "exampleZh": "雅尼是一名出納員。"
     },
     {
         "id": 8193,
@@ -64846,7 +65022,9 @@ const externalVocabularyDB = [
         "id": 8223,
         "en": "complement",
         "zh": "補充物;補足物",
-        "kk": "/ˈkɑmpɫəmənt/"
+        "kk": "/ˈkɑmpɫəmənt/",
+        "example": "Can I complement you?",
+        "exampleZh": "我可以補充你嗎？"
     },
     {
         "id": 8224,
@@ -65008,7 +65186,9 @@ const externalVocabularyDB = [
         "id": 8244,
         "en": "contractor",
         "zh": "承包商;立契約者",
-        "kk": "/ˈkɑnˌtɹæktɝ/"
+        "kk": "/ˈkɑnˌtɹæktɝ/",
+        "example": "Ziri is a contractor.",
+        "exampleZh": "Ziri 是一名承包商。"
     },
     {
         "id": 8245,
@@ -65046,7 +65226,9 @@ const externalVocabularyDB = [
         "id": 8249,
         "en": "core",
         "zh": "果核;精髓;要義",
-        "kk": "/ˈkɔɹ/"
+        "kk": "/ˈkɔɹ/",
+        "example": "Don't eat apple cores.",
+        "exampleZh": "不要吃蘋果核。"
     },
     {
         "id": 8250,
@@ -65128,7 +65310,9 @@ const externalVocabularyDB = [
         "id": 8260,
         "en": "criterion",
         "zh": "(判斷、批評的)標準;尺度",
-        "kk": "/kɹaɪˈtɪɹiən/"
+        "kk": "/kɹaɪˈtɪɹiən/",
+        "example": "This is a secondary criterion.",
+        "exampleZh": "這是次要標準。"
     },
     {
         "id": 8261,
@@ -65140,7 +65324,9 @@ const externalVocabularyDB = [
         "id": 8262,
         "en": "cruise",
         "zh": "巡航;航遊;巡邏",
-        "kk": "/ˈkɹuz/"
+        "kk": "/ˈkɹuz/",
+        "example": "We went on a cruise.",
+        "exampleZh": "我們去搭乘遊輪旅行。"
     },
     {
         "id": 8263,
@@ -65196,7 +65382,9 @@ const externalVocabularyDB = [
         "id": 8270,
         "en": "decline",
         "zh": "下降;減少;衰退;傾斜",
-        "kk": "/dɪˈkɫaɪn/"
+        "kk": "/dɪˈkɫaɪn/",
+        "example": "He politely declined.",
+        "exampleZh": "他禮貌地拒絕了。"
     },
     {
         "id": 8271,
@@ -65332,7 +65520,9 @@ const externalVocabularyDB = [
         "id": 8288,
         "en": "directory",
         "zh": "姓名住址簿;使用手冊",
-        "kk": "/daɪˈɹɛktɝi/"
+        "kk": "/daɪˈɹɛktɝi/",
+        "example": "May I see the telephone directory?",
+        "exampleZh": "我可以看一下電話簿嗎？"
     },
     {
         "id": 8289,
@@ -66468,7 +66658,9 @@ const externalVocabularyDB = [
         "id": 8433,
         "en": "inventory",
         "zh": "存貨清單",
-        "kk": "/ˌɪnvənˈtɔɹi/"
+        "kk": "/ˌɪnvənˈtɔɹi/",
+        "example": "The inventory is full.",
+        "exampleZh": "庫存已滿。"
     },
     {
         "id": 8434,

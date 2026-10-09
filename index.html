@@ -1694,8 +1694,11 @@
                         if (kkWords.length > 0) {
                             await Promise.all(kkWords.map(async (item) => {
                                 try {
+                                    const controller = new AbortController();
+                                    const timeoutId = setTimeout(() => controller.abort(), 3000);
                                     const word = item.en.split(' ')[0]; // 擷取第一個字查音標
-                                    const res = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(word)}`);
+                                    const res = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(word)}`, { signal: controller.signal });
+                                    clearTimeout(timeoutId);
                                     if (res.ok) {
                                         const data = await res.json();
                                         let phonetic = data[0]?.phonetic;
@@ -1712,6 +1715,13 @@
                             }));
                         }
                     }
+                    
+                    // 恢復按鈕狀態並自動觸發存檔
+                    autofillBtn.innerText = '完成！';
+                    setTimeout(() => {
+                        autofillBtn.innerText = '✨ 自動翻譯並儲存';
+                        autofillBtn.disabled = false;
+                    }, 2000);
                     const saveBtn = document.getElementById('btn-save-custom-all');
                     if (saveBtn) saveBtn.click();
                 });

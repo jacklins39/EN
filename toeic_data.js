@@ -1,4 +1,4 @@
-// 多益常考單字 (單元 11-16)
+// 多益常考單字 (單元 11)
 const toeicWordsDB = [
     {
         "id": 20001,
@@ -1749,7 +1749,7 @@ const toeicWordsDB = [
         "en": "abandon",
         "kk": "/əˈbændən/",
         "zh": "v. 放棄",
-        "unit": 12,
+        "unit": 11,
         "example": "she sings and sways with total abandon",
         "exampleZh": "她完全放縱地唱歌、搖擺"
     },
@@ -1758,7 +1758,7 @@ const toeicWordsDB = [
         "en": "abide",
         "kk": "/əˈbaɪd/",
         "zh": "v. 遵守",
-        "unit": 12,
+        "unit": 11,
         "example": "many unskillful Men do abide in our City of London",
         "exampleZh": "許多不熟練的人確實居住在我們的倫敦金融城"
     },
@@ -1767,7 +1767,7 @@ const toeicWordsDB = [
         "en": "abolish",
         "kk": "/əˈbɑɫɪʃ/",
         "zh": "v. 廢除",
-        "unit": 12,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -1776,7 +1776,7 @@ const toeicWordsDB = [
         "en": "abroad",
         "kk": "/əˈbɹɔd/",
         "zh": "adv. 在國外",
-        "unit": 12,
+        "unit": 11,
         "example": "servicemen returning from abroad",
         "exampleZh": "從國外回來的軍人"
     },
@@ -1785,7 +1785,7 @@ const toeicWordsDB = [
         "en": "abrupt",
         "kk": "/əˈbɹəpt/",
         "zh": "adj. 突然的",
-        "unit": 12,
+        "unit": 11,
         "example": "our round of golf came to an abrupt end on the 13th hole",
         "exampleZh": "我們的一高爾夫球在第13洞戛然而止"
     },
@@ -1794,7 +1794,7 @@ const toeicWordsDB = [
         "en": "absence",
         "kk": "/ˈæbsəns/",
         "zh": "n. 缺席",
-        "unit": 12,
+        "unit": 11,
         "example": "she found his total absence of facial expression disconcerting",
         "exampleZh": "她發現他完全沒有臉部表情，這令人不安"
     },
@@ -1803,7 +1803,7 @@ const toeicWordsDB = [
         "en": "absolute",
         "kk": "/ˈæbsəˌɫut/",
         "zh": "adj. 絕對的",
-        "unit": 12,
+        "unit": 11,
         "example": "I absolutely agree.",
         "exampleZh": "我絕對同意。"
     },
@@ -1812,7 +1812,7 @@ const toeicWordsDB = [
         "en": "absorb",
         "kk": "/əbˈzɔɹb/",
         "zh": "v. 吸收",
-        "unit": 12,
+        "unit": 11,
         "example": "Rugs absorb sound.",
         "exampleZh": "地毯吸收聲音。"
     },
@@ -1821,7 +1821,7 @@ const toeicWordsDB = [
         "en": "abstract",
         "kk": "/ˈæbˌstɹækt/",
         "zh": "adj. 抽象的",
-        "unit": 12,
+        "unit": 11,
         "example": "applications to abstract more water from streams",
         "exampleZh": "從溪流中提取更多水的應用程式"
     },
@@ -1830,7 +1830,7 @@ const toeicWordsDB = [
         "en": "abundant",
         "kk": "/əˈbəndənt/",
         "zh": "adj. 豐富的",
-        "unit": 12,
+        "unit": 11,
         "example": "the riverbanks were abundant in wild plants",
         "exampleZh": "河岸上有豐富的野生植物"
     },
@@ -1839,7 +1839,7 @@ const toeicWordsDB = [
         "en": "abuse",
         "kk": "/əbˈjus/",
         "zh": "v. 濫用",
-        "unit": 12,
+        "unit": 11,
         "example": "an abuse of public funds",
         "exampleZh": "濫用公共資金"
     },
@@ -1848,7 +1848,7 @@ const toeicWordsDB = [
         "en": "accelerate",
         "kk": "/ækˈsɛɫɝˌeɪt/",
         "zh": "v. 加速",
-        "unit": 12,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -1857,7 +1857,7 @@ const toeicWordsDB = [
         "en": "acceptable",
         "kk": "/ækˈsɛptəbəɫ/",
         "zh": "adj. 可接受的",
-        "unit": 12,
+        "unit": 11,
         "example": "has tried to find a solution acceptable to everyone",
         "exampleZh": "試圖找到一個大家都能接受的解決方案"
     },
@@ -1866,7 +1866,7 @@ const toeicWordsDB = [
         "en": "acceptance",
         "kk": "/ækˈsɛptəns/",
         "zh": "n. 接受",
-        "unit": 12,
+        "unit": 11,
         "example": "charges involving the acceptance of bribes",
         "exampleZh": "涉及受賄的指控"
     },
@@ -1875,7 +1875,7 @@ const toeicWordsDB = [
         "en": "accessible",
         "kk": "/ækˈsɛsəbəɫ/",
         "zh": "adj. 易接近的",
-        "unit": 12,
+        "unit": 11,
         "example": "he is more accessible than most tycoons",
         "exampleZh": "他比大多數大亨更容易接近"
     },
@@ -1884,7 +1884,7 @@ const toeicWordsDB = [
         "en": "accidental",
         "kk": "/ˌæksəˈdɛnəɫ/",
         "zh": "adj. 意外的",
-        "unit": 12,
+        "unit": 11,
         "example": "a verdict of accidental death",
         "exampleZh": "意外死亡的判決"
     },
@@ -1893,7 +1893,7 @@ const toeicWordsDB = [
         "en": "acclaim",
         "kk": "",
         "zh": "v. 稱讚",
-        "unit": 12,
+        "unit": 11,
         "example": "she has won acclaim for her commitment to democracy",
         "exampleZh": "她因對民主的承諾而贏得讚譽"
     },
@@ -1902,7 +1902,7 @@ const toeicWordsDB = [
         "en": "accommodate",
         "kk": "/əˈkɑməˌdeɪt/",
         "zh": "v. 容納；提供住宿",
-        "unit": 12,
+        "unit": 11,
         "example": "any language must accommodate new concepts",
         "exampleZh": "任何語言都必須容納新概念"
     },
@@ -1911,7 +1911,7 @@ const toeicWordsDB = [
         "en": "accomplish",
         "kk": "/əˈkɑmpɫɪʃ/",
         "zh": "v. 完成",
-        "unit": 12,
+        "unit": 11,
         "example": "What was accomplished?",
         "exampleZh": "完成了什麼？"
     },
@@ -1920,7 +1920,7 @@ const toeicWordsDB = [
         "en": "accord",
         "kk": "/əˈkɔɹd/",
         "zh": "n. 協議",
-        "unit": 12,
+        "unit": 11,
         "example": "the government and the rebels are in accord on one point",
         "exampleZh": "政府和叛亂分子在某一點上意見一致"
     },
@@ -1929,7 +1929,7 @@ const toeicWordsDB = [
         "en": "account",
         "kk": "/əˈkaʊnt/",
         "zh": "n. 帳戶",
-        "unit": 12,
+        "unit": 11,
         "example": "another agency was awarded the account",
         "exampleZh": "另一個機構獲得了該帳戶"
     },
@@ -1938,7 +1938,7 @@ const toeicWordsDB = [
         "en": "accountant",
         "kk": "/əˈkaʊntənt/",
         "zh": "n. 會計師",
-        "unit": 12,
+        "unit": 11,
         "example": "Accountants love spreadsheets.",
         "exampleZh": "會計師喜歡電子表格。"
     },
@@ -1947,7 +1947,7 @@ const toeicWordsDB = [
         "en": "accumulate",
         "kk": "/əkˈjumjəˌɫeɪt/",
         "zh": "v. 累積",
-        "unit": 12,
+        "unit": 11,
         "example": "her goal was to accumulate a huge fortune",
         "exampleZh": "她的目標是累積巨額財富"
     },
@@ -1956,7 +1956,7 @@ const toeicWordsDB = [
         "en": "accuracy",
         "kk": "/ˈækjɝəsi/",
         "zh": "n. 準確性",
-        "unit": 12,
+        "unit": 11,
         "example": "the accuracy of radiocarbon dating",
         "exampleZh": "放射性碳定年法的準確性"
     },
@@ -1965,7 +1965,7 @@ const toeicWordsDB = [
         "en": "accurate",
         "kk": "/ˈækjɝət/",
         "zh": "adj. 準確的",
-        "unit": 12,
+        "unit": 11,
         "example": "He needs accurate data.",
         "exampleZh": "他需要準確的數據。"
     },
@@ -1974,7 +1974,7 @@ const toeicWordsDB = [
         "en": "accuse",
         "kk": "/əkˈjuz/",
         "zh": "v. 指控",
-        "unit": 12,
+        "unit": 11,
         "example": "He falsely accused me.",
         "exampleZh": "他誣告我。"
     },
@@ -1983,7 +1983,7 @@ const toeicWordsDB = [
         "en": "accustom",
         "kk": "/əˈkəstəm/",
         "zh": "v. 使習慣",
-        "unit": 12,
+        "unit": 11,
         "example": "they tried to accustom him to their lighthearted ways",
         "exampleZh": "他們試著讓他習慣他們輕鬆愉快的方式"
     },
@@ -1992,7 +1992,7 @@ const toeicWordsDB = [
         "en": "achieve",
         "kk": "/əˈtʃiv/",
         "zh": "v. 達成",
-        "unit": 12,
+        "unit": 11,
         "example": "Achieve your dreams.",
         "exampleZh": "實現你的夢想。"
     },
@@ -2001,7 +2001,7 @@ const toeicWordsDB = [
         "en": "achievement",
         "kk": "/əˈtʃivmənt/",
         "zh": "n. 成就",
-        "unit": 12,
+        "unit": 11,
         "example": "assessing ability in terms of academic achievement",
         "exampleZh": "根據學業成績評估能力"
     },
@@ -2010,7 +2010,7 @@ const toeicWordsDB = [
         "en": "acknowledge",
         "kk": "/ækˈnɑɫɪdʒ/",
         "zh": "v. 承認",
-        "unit": 12,
+        "unit": 11,
         "example": "the art world has begun to acknowledge his genius",
         "exampleZh": "藝術界開始承認他的天才"
     },
@@ -2019,7 +2019,7 @@ const toeicWordsDB = [
         "en": "acquire",
         "kk": "/əˈkwaɪɝ/",
         "zh": "v. 取得；收購",
-        "unit": 12,
+        "unit": 11,
         "example": "you must acquire the rudiments of Greek",
         "exampleZh": "你必須掌握希臘文的基礎知識"
     },
@@ -2028,7 +2028,7 @@ const toeicWordsDB = [
         "en": "acquisition",
         "kk": "/ˌækwəˈzɪʃən/",
         "zh": "n. 收購",
-        "unit": 12,
+        "unit": 11,
         "example": "the acquisition of management skills",
         "exampleZh": "管理技能的獲得"
     },
@@ -2037,7 +2037,7 @@ const toeicWordsDB = [
         "en": "activate",
         "kk": "",
         "zh": "v. 啟動",
-        "unit": 12,
+        "unit": 11,
         "example": "fumes from cooking are enough to activate the alarm",
         "exampleZh": "烹飪產生的煙霧足以啟動警報"
     },
@@ -2046,7 +2046,7 @@ const toeicWordsDB = [
         "en": "active",
         "kk": "/ˈæktɪv/",
         "zh": "adj. 活躍的",
-        "unit": 12,
+        "unit": 11,
         "example": "I needed to change my lifestyle and become more active",
         "exampleZh": "我需要改變生活方式並變得更加活躍"
     },
@@ -2055,7 +2055,7 @@ const toeicWordsDB = [
         "en": "actual",
         "kk": "/ˈækʃəɫ/",
         "zh": "adj. 實際的",
-        "unit": 12,
+        "unit": 11,
         "example": "the book could be condensed into half the space, but what of the actual content?",
         "exampleZh": "書本來可以壓縮到一半的空間，但實際內容呢？"
     },
@@ -2064,7 +2064,7 @@ const toeicWordsDB = [
         "en": "adapt",
         "kk": "/əˈdæpt/",
         "zh": "v. 適應",
-        "unit": 12,
+        "unit": 11,
         "example": "a large organization can be slow to adapt to change",
         "exampleZh": "大型組織適應變化的速度可能很慢"
     },
@@ -2073,7 +2073,7 @@ const toeicWordsDB = [
         "en": "addict",
         "kk": "/ˈæˌdɪkt/",
         "zh": "n. 上癮者",
-        "unit": 12,
+        "unit": 11,
         "example": "a former heroin addict",
         "exampleZh": "前海洛因癮君子"
     },
@@ -2082,7 +2082,7 @@ const toeicWordsDB = [
         "en": "addition",
         "kk": "/əˈdɪʃən/",
         "zh": "n. 增加",
-        "unit": 12,
+        "unit": 11,
         "example": "you will find the coat a useful addition to your wardrobe",
         "exampleZh": "你會發現這件外套對你的衣櫃來說是一個有用的補充"
     },
@@ -2091,7 +2091,7 @@ const toeicWordsDB = [
         "en": "additional",
         "kk": "/əˈdɪʃənəɫ/",
         "zh": "adj. 額外的",
-        "unit": 12,
+        "unit": 11,
         "example": "we require additional information",
         "exampleZh": "我們需要更多信息"
     },
@@ -2100,7 +2100,7 @@ const toeicWordsDB = [
         "en": "address",
         "kk": "/ˈæˌdɹɛs/",
         "zh": "v. 處理；對...演說",
-        "unit": 12,
+        "unit": 11,
         "example": "ensure that your weight is evenly spread when you address the ball",
         "exampleZh": "確保擊球時體重平均分佈"
     },
@@ -2109,7 +2109,7 @@ const toeicWordsDB = [
         "en": "adequate",
         "kk": "/ˈædəˌkweɪt/",
         "zh": "adj. 充足的",
-        "unit": 12,
+        "unit": 11,
         "example": "this office is perfectly adequate for my needs",
         "exampleZh": "這個辦公室完全可以滿足我的需要"
     },
@@ -2118,7 +2118,7 @@ const toeicWordsDB = [
         "en": "adhere",
         "kk": "",
         "zh": "v. 堅持；黏著",
-        "unit": 12,
+        "unit": 11,
         "example": "the people adhere to the Muslim religion",
         "exampleZh": "人民信奉穆斯林宗教"
     },
@@ -2127,7 +2127,7 @@ const toeicWordsDB = [
         "en": "adjacent",
         "kk": "",
         "zh": "adj. 鄰近的",
-        "unit": 12,
+        "unit": 11,
         "example": "adjacent rooms",
         "exampleZh": "相鄰的房間"
     },
@@ -2136,7 +2136,7 @@ const toeicWordsDB = [
         "en": "adjust",
         "kk": "/əˈdʒəst/",
         "zh": "v. 調整",
-        "unit": 12,
+        "unit": 11,
         "example": "she must be allowed to grieve and to adjust in her own way",
         "exampleZh": "必須允許她悲傷並以自己的方式進行調整"
     },
@@ -2145,7 +2145,7 @@ const toeicWordsDB = [
         "en": "administer",
         "kk": "/ədˈmɪnəstɝ/",
         "zh": "v. 管理",
-        "unit": 12,
+        "unit": 11,
         "example": "the chief justice will administer the oath of office",
         "exampleZh": "首席大法官將宣誓就職"
     },
@@ -2154,7 +2154,7 @@ const toeicWordsDB = [
         "en": "administration",
         "kk": "/ædˌmɪnɪˈstɹeɪʃən/",
         "zh": "n. 管理；行政",
-        "unit": 12,
+        "unit": 11,
         "example": "the inhabitants of the island voted to remain under French administration",
         "exampleZh": "該島居民投票決定繼續由法國管理"
     },
@@ -2163,7 +2163,7 @@ const toeicWordsDB = [
         "en": "administrative",
         "kk": "/ədˈmɪnəˌstɹeɪtɪv/",
         "zh": "adj. 行政的",
-        "unit": 12,
+        "unit": 11,
         "example": "administrative staff",
         "exampleZh": "行政人員"
     },
@@ -2172,7 +2172,7 @@ const toeicWordsDB = [
         "en": "admire",
         "kk": "/ædˈmaɪɹ/",
         "zh": "v. 欽佩",
-        "unit": 12,
+        "unit": 11,
         "example": "Yanni admires Skura.",
         "exampleZh": "雅尼欣賞斯庫拉。"
     },
@@ -2181,7 +2181,7 @@ const toeicWordsDB = [
         "en": "admission",
         "kk": "/ædˈmɪʃən/",
         "zh": "n. 入場費；承認",
-        "unit": 12,
+        "unit": 11,
         "example": "the country's admission to the UN",
         "exampleZh": "該國加入聯合國"
     },
@@ -2190,7 +2190,7 @@ const toeicWordsDB = [
         "en": "admit",
         "kk": "/ədˈmɪt/",
         "zh": "v. 承認",
-        "unit": 12,
+        "unit": 11,
         "example": "the need to inform him was too urgent to admit of further delay",
         "exampleZh": "通知他的必要性太緊急，不能再拖延了"
     },
@@ -2199,7 +2199,7 @@ const toeicWordsDB = [
         "en": "adopt",
         "kk": "/əˈdɑpt/",
         "zh": "v. 採納",
-        "unit": 12,
+        "unit": 11,
         "example": "the committee voted 5–1 to adopt the proposal",
         "exampleZh": "委員會以 5 比 1 的投票結果通過了該提案"
     },
@@ -2208,7 +2208,7 @@ const toeicWordsDB = [
         "en": "advance",
         "kk": "/ədˈvæns/",
         "zh": "v. 前進",
-        "unit": 12,
+        "unit": 11,
         "example": "the author was paid a $250,000 advance",
         "exampleZh": "作者預付了 25 萬美元"
     },
@@ -2217,7 +2217,7 @@ const toeicWordsDB = [
         "en": "advanced",
         "kk": "/ədˈvænst/",
         "zh": "adj. 先進的",
-        "unit": 12,
+        "unit": 11,
         "example": "his advanced views made him unpopular",
         "exampleZh": "他的先進觀點使他不受歡迎"
     },
@@ -2226,7 +2226,7 @@ const toeicWordsDB = [
         "en": "advantage",
         "kk": "/ædˈvæntɪdʒ/",
         "zh": "n. 優勢",
-        "unit": 12,
+        "unit": 11,
         "example": "Tom has the advantage.",
         "exampleZh": "湯姆有優勢。"
     },
@@ -2235,7 +2235,7 @@ const toeicWordsDB = [
         "en": "advantageous",
         "kk": "",
         "zh": "adj. 有利的",
-        "unit": 12,
+        "unit": 11,
         "example": "the scheme is advantageous to your company",
         "exampleZh": "該計劃對您的公司有利"
     },
@@ -2244,7 +2244,7 @@ const toeicWordsDB = [
         "en": "advent",
         "kk": "",
         "zh": "n. 出現",
-        "unit": 12,
+        "unit": 11,
         "example": "the advent of television",
         "exampleZh": "電視的出現"
     },
@@ -2253,7 +2253,7 @@ const toeicWordsDB = [
         "en": "adventure",
         "kk": "/ædˈvɛntʃɝ/",
         "zh": "n. 冒險",
-        "unit": 12,
+        "unit": 11,
         "example": "she traveled the world in search of adventure",
         "exampleZh": "她環遊世界尋找冒險"
     },
@@ -2262,7 +2262,7 @@ const toeicWordsDB = [
         "en": "adverse",
         "kk": "",
         "zh": "adj. 不利的",
-        "unit": 12,
+        "unit": 11,
         "example": "taxes are having an adverse effect on production",
         "exampleZh": "稅收對生產產生不利影響"
     },
@@ -2271,7 +2271,7 @@ const toeicWordsDB = [
         "en": "advertise",
         "kk": "/ˈædvɝˌtaɪz/",
         "zh": "v. 登廣告",
-        "unit": 12,
+        "unit": 11,
         "example": "Meryl coughed briefly to advertise her presence",
         "exampleZh": "梅莉爾短暫地咳嗽了一下以表明她的存在"
     },
@@ -2280,7 +2280,7 @@ const toeicWordsDB = [
         "en": "advertisement",
         "kk": "/ˌædvɝˈtaɪzmənt/",
         "zh": "n. 廣告",
-        "unit": 12,
+        "unit": 11,
         "example": "we received only two replies to our advertisement",
         "exampleZh": "我們只收到了兩份對廣告的回复"
     },
@@ -2289,7 +2289,7 @@ const toeicWordsDB = [
         "en": "advice",
         "kk": "/ædˈvaɪs/",
         "zh": "n. 建議",
-        "unit": 12,
+        "unit": 11,
         "example": "Never give advice.",
         "exampleZh": "永遠不要給出建議。"
     },
@@ -2298,7 +2298,7 @@ const toeicWordsDB = [
         "en": "advise",
         "kk": "/ædˈvaɪz/",
         "zh": "v. 建議",
-        "unit": 12,
+        "unit": 11,
         "example": "we advise against sending cash by mail",
         "exampleZh": "我們建議不要以郵寄方式寄送現金"
     },
@@ -2307,7 +2307,7 @@ const toeicWordsDB = [
         "en": "adviser",
         "kk": "/ædˈvaɪzɝ/",
         "zh": "n. 顧問",
-        "unit": 12,
+        "unit": 11,
         "example": "he started as a legal adviser to the company",
         "exampleZh": "他最初擔任該公司的法律顧問"
     },
@@ -2316,7 +2316,7 @@ const toeicWordsDB = [
         "en": "advocate",
         "kk": "/ˈædvəˌkeɪt/",
         "zh": "v. 提倡",
-        "unit": 12,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -2325,7 +2325,7 @@ const toeicWordsDB = [
         "en": "affair",
         "kk": "/əˈfɛɹ/",
         "zh": "n. 事務",
-        "unit": 12,
+        "unit": 11,
         "example": "I wanted the funeral to be a family affair",
         "exampleZh": "我希望葬禮成為家庭事務"
     },
@@ -2334,7 +2334,7 @@ const toeicWordsDB = [
         "en": "affect",
         "kk": "/əˈfɛkt/",
         "zh": "v. 影響",
-        "unit": 12,
+        "unit": 11,
         "example": "the dampness began to affect my health",
         "exampleZh": "濕氣開始影響我的健康"
     },
@@ -2343,7 +2343,7 @@ const toeicWordsDB = [
         "en": "affiliate",
         "kk": "",
         "zh": "v. 附屬",
-        "unit": 12,
+        "unit": 11,
         "example": "the membership of the National Writers Union voted to affiliate with the United Auto Workers",
         "exampleZh": "全國作家聯盟的成員投票加入汽車工人聯合會"
     },
@@ -2352,7 +2352,7 @@ const toeicWordsDB = [
         "en": "affirm",
         "kk": "/əˈfɝm/",
         "zh": "v. 確認",
-        "unit": 12,
+        "unit": 11,
         "example": "there are five common ways parents fail to affirm their children",
         "exampleZh": "父母未能肯定孩子的常見方式有五種"
     },
@@ -2361,7 +2361,7 @@ const toeicWordsDB = [
         "en": "afford",
         "kk": "/əˈfɔɹd/",
         "zh": "v. 負擔得起",
-        "unit": 12,
+        "unit": 11,
         "example": "it was taking up more time than he could afford",
         "exampleZh": "這花費的時間超出了他的承受能力"
     },
@@ -2370,7 +2370,7 @@ const toeicWordsDB = [
         "en": "affordable",
         "kk": "",
         "zh": "adj. 負擔得起的",
-        "unit": 12,
+        "unit": 11,
         "example": "affordable housing",
         "exampleZh": "經濟適用房"
     },
@@ -2379,7 +2379,7 @@ const toeicWordsDB = [
         "en": "agency",
         "kk": "/ˈeɪdʒənsi/",
         "zh": "n. 代理機構",
-        "unit": 12,
+        "unit": 11,
         "example": "an advertising agency",
         "exampleZh": "一家廣告公司"
     },
@@ -2388,7 +2388,7 @@ const toeicWordsDB = [
         "en": "agenda",
         "kk": "/əˈdʒɛndə/",
         "zh": "n. 議程",
-        "unit": 12,
+        "unit": 11,
         "example": "he vowed to put jobs at the top of his agenda",
         "exampleZh": "他發誓要把就業放在第一位"
     },
@@ -2397,7 +2397,7 @@ const toeicWordsDB = [
         "en": "agent",
         "kk": "/ˈeɪdʒənt/",
         "zh": "n. 代理人",
-        "unit": 12,
+        "unit": 11,
         "example": "his agent was able to negotiate a long-term contract",
         "exampleZh": "他的經紀人能夠談判一份長期合約"
     },
@@ -2406,7 +2406,7 @@ const toeicWordsDB = [
         "en": "aggravate",
         "kk": "",
         "zh": "v. 惡化",
-        "unit": 12,
+        "unit": 11,
         "example": "military action would only aggravate the situation",
         "exampleZh": "軍事行動只會加劇局勢"
     },
@@ -2415,7 +2415,7 @@ const toeicWordsDB = [
         "en": "aggressive",
         "kk": "/əˈɡɹɛsɪv/",
         "zh": "adj. 積極的",
-        "unit": 12,
+        "unit": 11,
         "example": "we needed more growth to pursue our aggressive acquisition strategy",
         "exampleZh": "我們需要更多的成長來實施我們積極的收購策略"
     },
@@ -2424,7 +2424,7 @@ const toeicWordsDB = [
         "en": "agreement",
         "kk": "/əˈɡɹimənt/",
         "zh": "n. 協議；合約",
-        "unit": 12,
+        "unit": 11,
         "example": "the two officers nodded in agreement",
         "exampleZh": "兩位軍官點頭同意"
     },
@@ -2433,7 +2433,7 @@ const toeicWordsDB = [
         "en": "agriculture",
         "kk": "/ˈæɡɹɪˌkəɫtʃɝ/",
         "zh": "n. 農業",
-        "unit": 12,
+        "unit": 11,
         "example": "fungicide resistance is a serious problem facing modern agriculture",
         "exampleZh": "殺菌劑抗性是現代農業面臨的嚴重問題"
     },
@@ -2442,7 +2442,7 @@ const toeicWordsDB = [
         "en": "aid",
         "kk": "/ˈeɪd/",
         "zh": "n. 援助",
-        "unit": 12,
+        "unit": 11,
         "example": "700,000 tons of food aid",
         "exampleZh": "70萬噸糧食援助"
     },
@@ -2451,7 +2451,7 @@ const toeicWordsDB = [
         "en": "airline",
         "kk": "/ˈɛɹˌɫaɪn/",
         "zh": "n. 航空公司",
-        "unit": 12,
+        "unit": 11,
         "example": "an international airline",
         "exampleZh": "一家國際航空公司"
     },
@@ -2460,7 +2460,7 @@ const toeicWordsDB = [
         "en": "aisle",
         "kk": "/ˈaɪəɫ/",
         "zh": "n. 走道",
-        "unit": 12,
+        "unit": 11,
         "example": "the tiled roof over the south aisle",
         "exampleZh": "南過道上的瓦屋頂"
     },
@@ -2469,7 +2469,7 @@ const toeicWordsDB = [
         "en": "alert",
         "kk": "/əˈɫɝt/",
         "zh": "adj. 警覺的",
-        "unit": 12,
+        "unit": 11,
         "example": "an alert sounded and all the fighters took off",
         "exampleZh": "警報響起，所有戰士起飛"
     },
@@ -2478,7 +2478,7 @@ const toeicWordsDB = [
         "en": "alienate",
         "kk": "/ˈeɪɫjəˌneɪt/",
         "zh": "v. 使疏遠",
-        "unit": 12,
+        "unit": 11,
         "example": "the association does not wish to alienate its members",
         "exampleZh": "協會不希望疏遠其成員"
     },
@@ -2487,7 +2487,7 @@ const toeicWordsDB = [
         "en": "align",
         "kk": "",
         "zh": "v. 使結盟",
-        "unit": 12,
+        "unit": 11,
         "example": "the pattern of the border at the seam should align perfectly",
         "exampleZh": "接縫處的邊框圖案應完美對齊"
     },
@@ -2496,7 +2496,7 @@ const toeicWordsDB = [
         "en": "alike",
         "kk": "/əˈɫaɪk/",
         "zh": "adj. 相似的",
-        "unit": 12,
+        "unit": 11,
         "example": "the brothers were very much alike",
         "exampleZh": "兄弟倆非常相似"
     },
@@ -2505,7 +2505,7 @@ const toeicWordsDB = [
         "en": "allege",
         "kk": "",
         "zh": "v. 宣稱",
-        "unit": 12,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -2514,7 +2514,7 @@ const toeicWordsDB = [
         "en": "alleviate",
         "kk": "",
         "zh": "v. 減輕",
-        "unit": 12,
+        "unit": 11,
         "example": "measures to alleviate unemployment",
         "exampleZh": "緩解失業的措施"
     },
@@ -2523,7 +2523,7 @@ const toeicWordsDB = [
         "en": "allocate",
         "kk": "/ˈæɫəˌkeɪt/",
         "zh": "v. 分配；撥出",
-        "unit": 12,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -2532,7 +2532,7 @@ const toeicWordsDB = [
         "en": "allow",
         "kk": "/əˈɫaʊ/",
         "zh": "v. 允許",
-        "unit": 12,
+        "unit": 11,
         "example": "a plan to allow Sunday shopping",
         "exampleZh": "允許週日購物的計劃"
     },
@@ -2541,7 +2541,7 @@ const toeicWordsDB = [
         "en": "allowance",
         "kk": "/əˈɫaʊəns/",
         "zh": "n. 津貼",
-        "unit": 12,
+        "unit": 11,
         "example": "a seventy-five-pound baggage allowance",
         "exampleZh": "七十五磅的行李限額"
     },
@@ -2550,7 +2550,7 @@ const toeicWordsDB = [
         "en": "allude",
         "kk": "",
         "zh": "v. 暗示",
-        "unit": 12,
+        "unit": 11,
         "example": "we will allude briefly to the main points",
         "exampleZh": "我們將簡要提及重點"
     },
@@ -2559,7 +2559,7 @@ const toeicWordsDB = [
         "en": "ally",
         "kk": "/ˈæɫaɪ/",
         "zh": "n. 盟友",
-        "unit": 12,
+        "unit": 11,
         "example": "he was forced to dismiss his closest political ally",
         "exampleZh": "他被迫解雇了他最親密的政治盟友"
     },
@@ -2568,7 +2568,7 @@ const toeicWordsDB = [
         "en": "alter",
         "kk": "/ˈɔɫtɝ/",
         "zh": "v. 改變",
-        "unit": 12,
+        "unit": 11,
         "example": "Eliot was persuaded to alter the passage",
         "exampleZh": "艾略特被說服修改了這段話"
     },
@@ -2577,7 +2577,7 @@ const toeicWordsDB = [
         "en": "alternate",
         "kk": "/ˈɔɫtɝˌneɪt/",
         "zh": "v. 交替",
-        "unit": 12,
+        "unit": 11,
         "example": "bouts of depression alternate with periods of elation",
         "exampleZh": "一陣陣抑鬱與一陣興高采烈交替出現"
     },
@@ -2586,7 +2586,7 @@ const toeicWordsDB = [
         "en": "alternative",
         "kk": "/ɔɫˈtɝnətɪv/",
         "zh": "n. 替代方案",
-        "unit": 12,
+        "unit": 11,
         "example": "she had no alternative but to break the law",
         "exampleZh": "她別無選擇，只能違法"
     },
@@ -2595,7 +2595,7 @@ const toeicWordsDB = [
         "en": "altitude",
         "kk": "/ˈæɫtəˌtud/",
         "zh": "n. 高度",
-        "unit": 12,
+        "unit": 11,
         "example": "the mechanism can freeze at altitude",
         "exampleZh": "該機構可能會在高空凍結"
     },
@@ -2604,7 +2604,7 @@ const toeicWordsDB = [
         "en": "amateur",
         "kk": "/ˈæməˌtɝ/",
         "zh": "n. 業餘愛好者",
-        "unit": 12,
+        "unit": 11,
         "example": "Are you an amateur?",
         "exampleZh": "你是業餘愛好者嗎？"
     },
@@ -2613,7 +2613,7 @@ const toeicWordsDB = [
         "en": "amaze",
         "kk": "/əˈmeɪz/",
         "zh": "v. 使驚訝",
-        "unit": 12,
+        "unit": 11,
         "example": "People are amazed.",
         "exampleZh": "人們很驚訝。"
     },
@@ -2622,7 +2622,7 @@ const toeicWordsDB = [
         "en": "ambassador",
         "kk": "/æmˈbæsədɝ/",
         "zh": "n. 大使",
-        "unit": 12,
+        "unit": 11,
         "example": "Ziri is an ambassador.",
         "exampleZh": "齊裡是一名大使。"
     },
@@ -2631,7 +2631,7 @@ const toeicWordsDB = [
         "en": "ambiguity",
         "kk": "/ˌæmbɪɡˈjuəti/",
         "zh": "n. 模稜兩可",
-        "unit": 12,
+        "unit": 11,
         "example": "we can detect no ambiguity in this section of the Act",
         "exampleZh": "我們在該法案的這一部分中沒有發現任何含糊之處"
     },
@@ -2640,7 +2640,7 @@ const toeicWordsDB = [
         "en": "ambiguous",
         "kk": "/æmˈbɪɡjuəs/",
         "zh": "adj. 模糊不清的",
-        "unit": 12,
+        "unit": 11,
         "example": "ambiguous phrases",
         "exampleZh": "歧義短語"
     },
@@ -2649,7 +2649,7 @@ const toeicWordsDB = [
         "en": "ambition",
         "kk": "/æmˈbɪʃən/",
         "zh": "n. 抱負",
-        "unit": 12,
+        "unit": 11,
         "example": "Tom had no ambition.",
         "exampleZh": "湯姆沒有野心。"
     },
@@ -2658,7 +2658,7 @@ const toeicWordsDB = [
         "en": "ambitious",
         "kk": "/æmˈbɪʃəs/",
         "zh": "adj. 有野心的",
-        "unit": 12,
+        "unit": 11,
         "example": "Are you ambitious?",
         "exampleZh": "你有野心嗎？"
     },
@@ -2667,7 +2667,7 @@ const toeicWordsDB = [
         "en": "amend",
         "kk": "",
         "zh": "v. 修改",
-        "unit": 12,
+        "unit": 11,
         "example": "did she amend her original will later on?",
         "exampleZh": "她後來有修改原來的遺囑嗎？"
     },
@@ -2676,7 +2676,7 @@ const toeicWordsDB = [
         "en": "amendment",
         "kk": "",
         "zh": "n. 修正；修訂",
-        "unit": 12,
+        "unit": 11,
         "example": "an amendment to existing bail laws",
         "exampleZh": "現行保釋法的修正案"
     },
@@ -2685,7 +2685,7 @@ const toeicWordsDB = [
         "en": "amount",
         "kk": "/əˈmaʊnt/",
         "zh": "n. 數量",
-        "unit": 12,
+        "unit": 11,
         "example": "they have spent a colossal amount rebuilding the stadium",
         "exampleZh": "他們花費巨資重建體育場"
     },
@@ -2694,7 +2694,7 @@ const toeicWordsDB = [
         "en": "ample",
         "kk": "/ˈæmpəɫ/",
         "zh": "adj. 充足的",
-        "unit": 12,
+        "unit": 11,
         "example": "an ample supply of consumer goods",
         "exampleZh": "消費品供應充足"
     },
@@ -2703,7 +2703,7 @@ const toeicWordsDB = [
         "en": "amplify",
         "kk": "/ˈæmpɫəˌfaɪ/",
         "zh": "v. 放大",
-        "unit": 12,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -2712,7 +2712,7 @@ const toeicWordsDB = [
         "en": "amuse",
         "kk": "/əmˈjuz/",
         "zh": "v. 使歡樂",
-        "unit": 12,
+        "unit": 11,
         "example": "the hotel has planned many activities to amuse its guests",
         "exampleZh": "酒店策劃了許多活動來招待客人"
     },
@@ -2721,7 +2721,7 @@ const toeicWordsDB = [
         "en": "analogy",
         "kk": "/əˈnæɫədʒi/",
         "zh": "n. 類比",
-        "unit": 12,
+        "unit": 11,
         "example": "argument from analogy",
         "exampleZh": "類比論證"
     },
@@ -2730,7 +2730,7 @@ const toeicWordsDB = [
         "en": "analysis",
         "kk": "/əˈnælɪsɪs/",
         "zh": "n. 分析",
-        "unit": 12,
+        "unit": 11,
         "example": "We want your analysis.",
         "exampleZh": "我們需要您的分析。"
     },
@@ -2739,7 +2739,7 @@ const toeicWordsDB = [
         "en": "analyze",
         "kk": "/ˈænəˌɫaɪz/",
         "zh": "v. 分析",
-        "unit": 12,
+        "unit": 11,
         "example": "Ziri analyzed the video.",
         "exampleZh": "齊里分析了影片。"
     },
@@ -2748,7 +2748,7 @@ const toeicWordsDB = [
         "en": "ancestor",
         "kk": "/ˈænˌsɛstɝ/",
         "zh": "n. 祖先",
-        "unit": 12,
+        "unit": 11,
         "example": "My ancestor told it.",
         "exampleZh": "我的祖先告訴我。"
     },
@@ -2757,7 +2757,7 @@ const toeicWordsDB = [
         "en": "anchor",
         "kk": "/ˈæŋkɝ/",
         "zh": "n. 錨；主播",
-        "unit": 12,
+        "unit": 11,
         "example": "the European Community is the economic anchor of the New Europe",
         "exampleZh": "歐洲共同體是新歐洲的經濟支柱"
     },
@@ -2766,7 +2766,7 @@ const toeicWordsDB = [
         "en": "ancient",
         "kk": "/ˈeɪnʃənt/",
         "zh": "adj. 古代的",
-        "unit": 12,
+        "unit": 11,
         "example": "ancient forests",
         "exampleZh": "古老的森林"
     },
@@ -2775,7 +2775,7 @@ const toeicWordsDB = [
         "en": "anecdote",
         "kk": "/ˈænəkˌdoʊt/",
         "zh": "n. 軼事",
-        "unit": 12,
+        "unit": 11,
         "example": "his wife's death has long been the subject of rumor and anecdote",
         "exampleZh": "他妻子的死長期以來一直是謠言和軼事的主題"
     },
@@ -2784,7 +2784,7 @@ const toeicWordsDB = [
         "en": "angle",
         "kk": "/ˈæŋɡəɫ/",
         "zh": "n. 角度",
-        "unit": 12,
+        "unit": 11,
         "example": "A triangle has three angles.",
         "exampleZh": "三角形有三個角。"
     },
@@ -2793,7 +2793,7 @@ const toeicWordsDB = [
         "en": "angry",
         "kk": "/ˈæŋɡɹi/",
         "zh": "adj. 生氣的",
-        "unit": 12,
+        "unit": 11,
         "example": "I'm angry that she didn't call me",
         "exampleZh": "我很生氣她沒有打電話給我"
     },
@@ -2802,7 +2802,7 @@ const toeicWordsDB = [
         "en": "anguish",
         "kk": "",
         "zh": "n. 極度痛苦",
-        "unit": 12,
+        "unit": 11,
         "example": "she shut her eyes in anguish",
         "exampleZh": "她痛苦地閉上眼睛"
     },
@@ -2811,7 +2811,7 @@ const toeicWordsDB = [
         "en": "animate",
         "kk": "/ˈænəˌmeɪt/",
         "zh": "v. 賦予生命",
-        "unit": 12,
+        "unit": 11,
         "example": "party photos of animate socialites",
         "exampleZh": "社交名流的聚會照片"
     },
@@ -2820,7 +2820,7 @@ const toeicWordsDB = [
         "en": "anniversary",
         "kk": "/ˌænəˈvɝsɝi/",
         "zh": "n. 週年紀念日",
-        "unit": 12,
+        "unit": 11,
         "example": "It's their anniversary.",
         "exampleZh": "這是他們的周年紀念日。"
     },
@@ -2829,7 +2829,7 @@ const toeicWordsDB = [
         "en": "announce",
         "kk": "/əˈnaʊns/",
         "zh": "v. 宣佈",
-        "unit": 12,
+        "unit": 11,
         "example": "Thomas is announced.",
         "exampleZh": "托馬斯宣布。"
     },
@@ -2838,7 +2838,7 @@ const toeicWordsDB = [
         "en": "announcement",
         "kk": "/əˈnaʊnsmənt/",
         "zh": "n. 公告",
-        "unit": 12,
+        "unit": 11,
         "example": "Tom has an announcement.",
         "exampleZh": "湯姆有一個公告。"
     },
@@ -2847,7 +2847,7 @@ const toeicWordsDB = [
         "en": "annoy",
         "kk": "/əˈnɔɪ/",
         "zh": "v. 惹惱",
-        "unit": 12,
+        "unit": 11,
         "example": "Politics annoys me.",
         "exampleZh": "政治讓我煩惱。"
     },
@@ -2856,7 +2856,7 @@ const toeicWordsDB = [
         "en": "annual",
         "kk": "/ˈænjuəɫ/",
         "zh": "adj. 每年的",
-        "unit": 12,
+        "unit": 11,
         "example": "the union's annual conference",
         "exampleZh": "工會年會"
     },
@@ -2865,7 +2865,7 @@ const toeicWordsDB = [
         "en": "anomalous",
         "kk": "",
         "zh": "adj. 異常的",
-        "unit": 12,
+        "unit": 11,
         "example": "an anomalous situation",
         "exampleZh": "異常狀況"
     },
@@ -2874,7 +2874,7 @@ const toeicWordsDB = [
         "en": "anonymous",
         "kk": "/əˈnɑnəməs/",
         "zh": "adj. 匿名的",
-        "unit": 12,
+        "unit": 11,
         "example": "an anonymous phone call",
         "exampleZh": "一個匿名電話"
     },
@@ -2883,7 +2883,7 @@ const toeicWordsDB = [
         "en": "answer",
         "kk": "/ˈænsɝ/",
         "zh": "v. 回答",
-        "unit": 12,
+        "unit": 11,
         "example": "I didn't answer him",
         "exampleZh": "我沒有回答他"
     },
@@ -2892,7 +2892,7 @@ const toeicWordsDB = [
         "en": "antagonism",
         "kk": "",
         "zh": "n. 敵意",
-        "unit": 12,
+        "unit": 11,
         "example": "his antagonism toward the local people",
         "exampleZh": "他對當地人的敵意"
     },
@@ -2901,7 +2901,7 @@ const toeicWordsDB = [
         "en": "anticipate",
         "kk": "/ænˈtɪsəˌpeɪt/",
         "zh": "v. 預期",
-        "unit": 12,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -2910,7 +2910,7 @@ const toeicWordsDB = [
         "en": "anticipation",
         "kk": "/ænˌtɪsəˈpeɪʃən/",
         "zh": "n. 預期",
-        "unit": 12,
+        "unit": 11,
         "example": "her eyes sparkled with anticipation",
         "exampleZh": "她的眼睛閃爍著期待的光芒"
     },
@@ -2919,7 +2919,7 @@ const toeicWordsDB = [
         "en": "antique",
         "kk": "/ænˈtik/",
         "zh": "n. 古董",
-        "unit": 12,
+        "unit": 11,
         "example": "bookshelves with an antique finish",
         "exampleZh": "仿古飾面的書架"
     },
@@ -2928,7 +2928,7 @@ const toeicWordsDB = [
         "en": "anxiety",
         "kk": "/æŋˈzaɪəti/",
         "zh": "n. 焦慮",
-        "unit": 12,
+        "unit": 11,
         "example": "Ziri felt anxiety.",
         "exampleZh": "齊裡感到焦慮。"
     },
@@ -2937,7 +2937,7 @@ const toeicWordsDB = [
         "en": "anxious",
         "kk": "/ˈæŋkʃəs/",
         "zh": "adj. 焦慮的",
-        "unit": 12,
+        "unit": 11,
         "example": "Tom anxiously waited.",
         "exampleZh": "湯姆焦急地等待著。"
     },
@@ -2946,7 +2946,7 @@ const toeicWordsDB = [
         "en": "apologize",
         "kk": "/əˈpɑɫəˌdʒaɪz/",
         "zh": "v. 道歉",
-        "unit": 12,
+        "unit": 11,
         "example": "we apologize to him for our error",
         "exampleZh": "我們為我們的錯誤向他道歉"
     },
@@ -2955,7 +2955,7 @@ const toeicWordsDB = [
         "en": "apology",
         "kk": "/əˈpɑɫəˌdʒi/",
         "zh": "n. 道歉",
-        "unit": 12,
+        "unit": 11,
         "example": "we were shown into an apology for a bedroom",
         "exampleZh": "我們被要求為一間臥室道歉"
     },
@@ -2964,7 +2964,7 @@ const toeicWordsDB = [
         "en": "appalling",
         "kk": "",
         "zh": "adj. 令人震驚的",
-        "unit": 12,
+        "unit": 11,
         "example": "his conduct was appalling",
         "exampleZh": "他的行為令人震驚"
     },
@@ -2973,7 +2973,7 @@ const toeicWordsDB = [
         "en": "apparatus",
         "kk": "",
         "zh": "n. 設備",
-        "unit": 12,
+        "unit": 11,
         "example": "one thing about the book's apparatus does irritate: the absence of an index of titles",
         "exampleZh": "這本書的結構有一件事確實令人惱火：沒有標題索引"
     },
@@ -2982,7 +2982,7 @@ const toeicWordsDB = [
         "en": "apparent",
         "kk": "/əˈpɛɹənt/",
         "zh": "adj. 明顯的",
-        "unit": 12,
+        "unit": 11,
         "example": "Nothing is apparent.",
         "exampleZh": "沒有什麼是顯而易見的。"
     },
@@ -2991,7 +2991,7 @@ const toeicWordsDB = [
         "en": "appeal",
         "kk": "/əˈpiɫ/",
         "zh": "v. 呼籲；吸引",
-        "unit": 12,
+        "unit": 11,
         "example": "My lawyer appealed.",
         "exampleZh": "我的律師提出上訴。"
     },
@@ -3000,7 +3000,7 @@ const toeicWordsDB = [
         "en": "appealing",
         "kk": "",
         "zh": "adj. 吸引人的",
-        "unit": 12,
+        "unit": 11,
         "example": "the rural life is somehow more appealing",
         "exampleZh": "鄉村生活在某種程度上更有吸引力"
     },
@@ -3009,7 +3009,7 @@ const toeicWordsDB = [
         "en": "appear",
         "kk": "/əˈpɪɹ/",
         "zh": "v. 出現",
-        "unit": 12,
+        "unit": 11,
         "example": "the paperback edition didn't appear for another two years",
         "exampleZh": "平裝本又兩年沒有出現"
     },
@@ -3018,7 +3018,7 @@ const toeicWordsDB = [
         "en": "appearance",
         "kk": "/əˈpɪɹəns/",
         "zh": "n. 外表",
-        "unit": 12,
+        "unit": 11,
         "example": "I like the appearance of stripped antique pine",
         "exampleZh": "我喜歡剝皮仿古松木的外觀"
     },
@@ -3027,7 +3027,7 @@ const toeicWordsDB = [
         "en": "appendix",
         "kk": "",
         "zh": "n. 附錄",
-        "unit": 12,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -3036,7 +3036,7 @@ const toeicWordsDB = [
         "en": "appetite",
         "kk": "/ˈæpəˌtaɪt/",
         "zh": "n. 胃口",
-        "unit": 12,
+        "unit": 11,
         "example": "he has a healthy appetite",
         "exampleZh": "他有健康的食慾"
     },
@@ -3045,7 +3045,7 @@ const toeicWordsDB = [
         "en": "applaud",
         "kk": "/əˈpɫɔd/",
         "zh": "v. 鼓掌",
-        "unit": 12,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -3054,7 +3054,7 @@ const toeicWordsDB = [
         "en": "appliance",
         "kk": "/əˈpɫaɪəns/",
         "zh": "n. 家電",
-        "unit": 12,
+        "unit": 11,
         "example": "I'm appliance shopping.",
         "exampleZh": "我是買電器的"
     },
@@ -3063,7 +3063,7 @@ const toeicWordsDB = [
         "en": "applicable",
         "kk": "/ˈæpɫəkəbəɫ/",
         "zh": "adj. 適用的",
-        "unit": 12,
+        "unit": 11,
         "example": "the same considerations are equally applicable to accident claims",
         "exampleZh": "同樣的考慮也適用於事故索賠"
     },
@@ -3072,7 +3072,7 @@ const toeicWordsDB = [
         "en": "applicant",
         "kk": "/ˈæpɫɪkənt/",
         "zh": "n. 申請人",
-        "unit": 12,
+        "unit": 11,
         "example": "a job applicant",
         "exampleZh": "求職者"
     },
@@ -3081,7 +3081,7 @@ const toeicWordsDB = [
         "en": "application",
         "kk": "/ˌæpɫəˈkeɪʃən/",
         "zh": "n. 申請",
-        "unit": 12,
+        "unit": 11,
         "example": "I like this application.",
         "exampleZh": "我喜歡這個應用程式。"
     },
@@ -3090,7 +3090,7 @@ const toeicWordsDB = [
         "en": "apply",
         "kk": "/əˈpɫaɪ/",
         "zh": "v. 申請",
-        "unit": 12,
+        "unit": 11,
         "example": "the oil industry has failed to apply appropriate standards of care",
         "exampleZh": "石油工業未能採用適當的護理標準"
     },
@@ -3099,7 +3099,7 @@ const toeicWordsDB = [
         "en": "appoint",
         "kk": "/əˈpɔɪnt/",
         "zh": "v. 任命",
-        "unit": 12,
+        "unit": 11,
         "example": "Who appointed him?",
         "exampleZh": "誰任命他的？"
     },
@@ -3108,7 +3108,7 @@ const toeicWordsDB = [
         "en": "appointment",
         "kk": "/əˈpɔɪntmənt/",
         "zh": "n. 約會；任命",
-        "unit": 12,
+        "unit": 11,
         "example": "she took up an appointment as head of communications",
         "exampleZh": "她被任命為通訊主管"
     },
@@ -3117,7 +3117,7 @@ const toeicWordsDB = [
         "en": "appraisal",
         "kk": "",
         "zh": "n. 評估；考核",
-        "unit": 12,
+        "unit": 11,
         "example": "treatment begins with a thorough appraisal of the patient's condition",
         "exampleZh": "治療始於對患者病情的徹底評估"
     },
@@ -3126,7 +3126,7 @@ const toeicWordsDB = [
         "en": "appraise",
         "kk": "",
         "zh": "v. 評估",
-        "unit": 12,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -3135,7 +3135,7 @@ const toeicWordsDB = [
         "en": "appreciate",
         "kk": "/əˈpɹiʃiˌeɪt/",
         "zh": "v. 欣賞；感激",
-        "unit": 12,
+        "unit": 11,
         "example": "We appreciate them.",
         "exampleZh": "我們很感激他們。"
     },
@@ -3144,7 +3144,7 @@ const toeicWordsDB = [
         "en": "appreciation",
         "kk": "/əˌpɹiʃiˈeɪʃən/",
         "zh": "n. 感謝",
-        "unit": 12,
+        "unit": 11,
         "example": "they would be the first to show their appreciation",
         "exampleZh": "他們將是第一個表達感激之情的人"
     },
@@ -3153,7 +3153,7 @@ const toeicWordsDB = [
         "en": "apprehend",
         "kk": "",
         "zh": "v. 逮捕",
-        "unit": 12,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -3162,7 +3162,7 @@ const toeicWordsDB = [
         "en": "apprentice",
         "kk": "/əˈpɹɛntəs/",
         "zh": "n. 學徒",
-        "unit": 12,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -3171,7 +3171,7 @@ const toeicWordsDB = [
         "en": "approach",
         "kk": "/əˈpɹoʊtʃ/",
         "zh": "v. 接近",
-        "unit": 12,
+        "unit": 11,
         "example": "Winter approached.",
         "exampleZh": "冬天將近了。"
     },
@@ -3180,7 +3180,7 @@ const toeicWordsDB = [
         "en": "appropriate",
         "kk": "/əˈpɹoʊpɹiˌeɪt/",
         "zh": "adj. 適當的",
-        "unit": 12,
+        "unit": 11,
         "example": "That is appropriate.",
         "exampleZh": "那是合適的。"
     },
@@ -3189,7 +3189,7 @@ const toeicWordsDB = [
         "en": "approval",
         "kk": "/əˈpɹuvəɫ/",
         "zh": "n. 批准",
-        "unit": 12,
+        "unit": 11,
         "example": "the road plans have been given approval",
         "exampleZh": "道路計劃已獲得批准"
     },
@@ -3198,7 +3198,7 @@ const toeicWordsDB = [
         "en": "approve",
         "kk": "/əˈpɹuv/",
         "zh": "v. 批准",
-        "unit": 12,
+        "unit": 11,
         "example": "I completely approve!",
         "exampleZh": "我完全贊同！"
     },
@@ -3207,7 +3207,7 @@ const toeicWordsDB = [
         "en": "approximate",
         "kk": "/əˈpɹɑksəˌmeɪt/",
         "zh": "adj. 大約的",
-        "unit": 12,
+        "unit": 11,
         "example": "the calculations are very approximate",
         "exampleZh": "計算結果非常近似"
     },
@@ -3216,7 +3216,7 @@ const toeicWordsDB = [
         "en": "aptitude",
         "kk": "/ˈæptəˌtud/",
         "zh": "n. 天資",
-        "unit": 12,
+        "unit": 11,
         "example": "children with an aptitude for painting and drawing",
         "exampleZh": "有繪畫天份的孩子"
     },
@@ -3225,7 +3225,7 @@ const toeicWordsDB = [
         "en": "arbitrary",
         "kk": "",
         "zh": "adj. 任意的",
-        "unit": 12,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -3234,7 +3234,7 @@ const toeicWordsDB = [
         "en": "architect",
         "kk": "/ˈɑɹkəˌtɛkt/",
         "zh": "n. 建築師",
-        "unit": 12,
+        "unit": 11,
         "example": "the great Norman architect of Durham Cathedral",
         "exampleZh": "達勒姆大教堂的偉大諾曼建築師"
     },
@@ -3243,7 +3243,7 @@ const toeicWordsDB = [
         "en": "architecture",
         "kk": "/ˈɑɹkəˌtɛktʃɝ/",
         "zh": "n. 建築",
-        "unit": 12,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -3252,7 +3252,7 @@ const toeicWordsDB = [
         "en": "archive",
         "kk": "",
         "zh": "n. 檔案",
-        "unit": 12,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -3261,7 +3261,7 @@ const toeicWordsDB = [
         "en": "area",
         "kk": "/ˈɛɹiə/",
         "zh": "n. 區域",
-        "unit": 12,
+        "unit": 11,
         "example": "people living in the area are at risk",
         "exampleZh": "居住在該地區的人們處於危險之中"
     },
@@ -3270,7 +3270,7 @@ const toeicWordsDB = [
         "en": "argue",
         "kk": "/ˈɑɹɡju/",
         "zh": "v. 爭論",
-        "unit": 12,
+        "unit": 11,
         "example": "don't argue with me",
         "exampleZh": "別跟我爭論"
     },
@@ -3279,7 +3279,7 @@ const toeicWordsDB = [
         "en": "argument",
         "kk": "/ˈɑɹɡjəmənt/",
         "zh": "n. 爭論",
-        "unit": 12,
+        "unit": 11,
         "example": "there was some argument about the decision",
         "exampleZh": "對於這個決定有一些爭議"
     },
@@ -3288,7 +3288,7 @@ const toeicWordsDB = [
         "en": "arise",
         "kk": "/ɝˈaɪz/",
         "zh": "v. 產生",
-        "unit": 12,
+        "unit": 11,
         "example": "What problems can arise?",
         "exampleZh": "可能會出現什麼問題？"
     },
@@ -3297,7 +3297,7 @@ const toeicWordsDB = [
         "en": "arm",
         "kk": "/ˈɑɹm/",
         "zh": "n. 手臂；武器",
-        "unit": 12,
+        "unit": 11,
         "example": "as they walked he offered her his arm",
         "exampleZh": "當他們走路時，他向她伸出了手臂"
     },
@@ -3306,7 +3306,7 @@ const toeicWordsDB = [
         "en": "arouse",
         "kk": "/ɝˈaʊz/",
         "zh": "v. 喚醒",
-        "unit": 12,
+        "unit": 11,
         "example": "You arouse my jealousy.",
         "exampleZh": "你引起了我的嫉妒。"
     },
@@ -3315,7 +3315,7 @@ const toeicWordsDB = [
         "en": "arrange",
         "kk": "/ɝˈeɪndʒ/",
         "zh": "v. 安排",
-        "unit": 12,
+        "unit": 11,
         "example": "they hoped to arrange a meeting",
         "exampleZh": "他們希望安排一次會面"
     },
@@ -3324,7 +3324,7 @@ const toeicWordsDB = [
         "en": "arrangement",
         "kk": "/ɝˈeɪndʒmənt/",
         "zh": "n. 安排",
-        "unit": 12,
+        "unit": 11,
         "example": "the arrangement of the furniture in the room",
         "exampleZh": "房間內家具的佈置"
     },
@@ -3333,7 +3333,7 @@ const toeicWordsDB = [
         "en": "array",
         "kk": "",
         "zh": "n. 一系列",
-        "unit": 12,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -3342,7 +3342,7 @@ const toeicWordsDB = [
         "en": "arrest",
         "kk": "/ɝˈɛst/",
         "zh": "v. 逮捕",
-        "unit": 12,
+        "unit": 11,
         "example": "they placed her under arrest",
         "exampleZh": "他們逮捕了她"
     },
@@ -3351,7 +3351,7 @@ const toeicWordsDB = [
         "en": "arrival",
         "kk": "/ɝˈaɪvəɫ/",
         "zh": "n. 到達",
-        "unit": 12,
+        "unit": 11,
         "example": "he was dead on arrival at the hospital",
         "exampleZh": "他在抵達醫院時已經死亡"
     },
@@ -3360,7 +3360,7 @@ const toeicWordsDB = [
         "en": "arrive",
         "kk": "/ɝˈaɪv/",
         "zh": "v. 到達",
-        "unit": 12,
+        "unit": 11,
         "example": "Firefighters arrived.",
         "exampleZh": "消防隊員趕到了。"
     },
@@ -3369,7 +3369,7 @@ const toeicWordsDB = [
         "en": "arrogant",
         "kk": "/ˈɛɹəɡənt/",
         "zh": "adj. 傲慢的",
-        "unit": 12,
+        "unit": 11,
         "example": "a typically arrogant assumption",
         "exampleZh": "典型的傲慢假設"
     },
@@ -3378,7 +3378,7 @@ const toeicWordsDB = [
         "en": "article",
         "kk": "/ˈɑɹtəkəɫ/",
         "zh": "n. 文章；物品",
-        "unit": 12,
+        "unit": 11,
         "example": "Reread the article.",
         "exampleZh": "重讀這篇文章。"
     },
@@ -3387,7 +3387,7 @@ const toeicWordsDB = [
         "en": "artificial",
         "kk": "/ˌɑɹtəˈfɪʃəɫ/",
         "zh": "adj. 人造的",
-        "unit": 12,
+        "unit": 11,
         "example": "Earth is artificial.",
         "exampleZh": "地球是人造的。"
     },
@@ -3396,7 +3396,7 @@ const toeicWordsDB = [
         "en": "artisan",
         "kk": "",
         "zh": "n. 工匠",
-        "unit": 12,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -3405,7 +3405,7 @@ const toeicWordsDB = [
         "en": "artist",
         "kk": "/ˈɑɹtəst/",
         "zh": "n. 藝術家",
-        "unit": 12,
+        "unit": 11,
         "example": "a con artist",
         "exampleZh": "騙子"
     },
@@ -3414,7 +3414,7 @@ const toeicWordsDB = [
         "en": "ascertain",
         "kk": "",
         "zh": "v. 查明",
-        "unit": 12,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -3423,7 +3423,7 @@ const toeicWordsDB = [
         "en": "aspect",
         "kk": "/ˈæsˌpɛkt/",
         "zh": "n. 方面",
-        "unit": 12,
+        "unit": 11,
         "example": "There are other aspects.",
         "exampleZh": "還有其他方面。"
     },
@@ -3432,7 +3432,7 @@ const toeicWordsDB = [
         "en": "aspire",
         "kk": "",
         "zh": "v. 渴望",
-        "unit": 12,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -3441,7 +3441,7 @@ const toeicWordsDB = [
         "en": "assemble",
         "kk": "/əˈsɛmbəɫ/",
         "zh": "v. 組裝；集合",
-        "unit": 12,
+        "unit": 11,
         "example": "the males assemble and hang by their front legs within a yard or two of the female",
         "exampleZh": "雄性聚集在一起，用前腿懸掛在距離雌性一兩碼的地方"
     },
@@ -3450,7 +3450,7 @@ const toeicWordsDB = [
         "en": "assembly",
         "kk": "/əˈsɛmbɫi/",
         "zh": "n. 集會；組裝",
-        "unit": 12,
+        "unit": 11,
         "example": "Some assembly required.",
         "exampleZh": "需要一些組裝。"
     },
@@ -3459,7 +3459,7 @@ const toeicWordsDB = [
         "en": "assert",
         "kk": "/əˈsɝt/",
         "zh": "v. 斷言",
-        "unit": 12,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -3468,7 +3468,7 @@ const toeicWordsDB = [
         "en": "assess",
         "kk": "/əˈsɛs/",
         "zh": "v. 評估",
-        "unit": 12,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -3477,7 +3477,7 @@ const toeicWordsDB = [
         "en": "assessment",
         "kk": "/əˈsɛsmənt/",
         "zh": "n. 評估",
-        "unit": 12,
+        "unit": 11,
         "example": "the assessment of educational needs",
         "exampleZh": "教育需求評估"
     },
@@ -3486,7 +3486,7 @@ const toeicWordsDB = [
         "en": "asset",
         "kk": "/ˈæˌsɛt/",
         "zh": "n. 資產",
-        "unit": 12,
+        "unit": 11,
         "example": "debiting the asset account",
         "exampleZh": "借記資產帳戶"
     },
@@ -3495,7 +3495,7 @@ const toeicWordsDB = [
         "en": "assign",
         "kk": "/əˈsaɪn/",
         "zh": "v. 分配",
-        "unit": 12,
+        "unit": 11,
         "example": "They assigned you a name.",
         "exampleZh": "他們給你取了一個名字。"
     },
@@ -3504,7 +3504,7 @@ const toeicWordsDB = [
         "en": "assignment",
         "kk": "/əˈsaɪnmənt/",
         "zh": "n. 任務",
-        "unit": 13,
+        "unit": 11,
         "example": "Yanni had an assignment.",
         "exampleZh": "雅尼有一個任務。"
     },
@@ -3513,7 +3513,7 @@ const toeicWordsDB = [
         "en": "assimilate",
         "kk": "",
         "zh": "v. 吸收",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -3522,7 +3522,7 @@ const toeicWordsDB = [
         "en": "assist",
         "kk": "/əˈsɪst/",
         "zh": "v. 協助",
-        "unit": 13,
+        "unit": 11,
         "example": "Tom assisted Mary.",
         "exampleZh": "湯姆協助瑪莉。"
     },
@@ -3531,7 +3531,7 @@ const toeicWordsDB = [
         "en": "assistance",
         "kk": "/əˈsɪstəns/",
         "zh": "n. 協助",
-        "unit": 13,
+        "unit": 11,
         "example": "We need assistance.",
         "exampleZh": "我們需要幫助。"
     },
@@ -3540,7 +3540,7 @@ const toeicWordsDB = [
         "en": "assistant",
         "kk": "/əˈsɪstənt/",
         "zh": "n. 助手",
-        "unit": 13,
+        "unit": 11,
         "example": "an assistant manager",
         "exampleZh": "助理經理"
     },
@@ -3549,7 +3549,7 @@ const toeicWordsDB = [
         "en": "associate",
         "kk": "/əˈsoʊsiˌeɪt/",
         "zh": "v. 關聯",
-        "unit": 13,
+        "unit": 11,
         "example": "I associate it with this.",
         "exampleZh": "我把它與此連結起來。"
     },
@@ -3558,7 +3558,7 @@ const toeicWordsDB = [
         "en": "association",
         "kk": "/əˌsoʊsiˈeɪʃən/",
         "zh": "n. 協會",
-        "unit": 13,
+        "unit": 11,
         "example": "Do you know that association?",
         "exampleZh": "你知道那個協會嗎？"
     },
@@ -3567,7 +3567,7 @@ const toeicWordsDB = [
         "en": "assortment",
         "kk": "",
         "zh": "n. 各式各樣",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -3576,7 +3576,7 @@ const toeicWordsDB = [
         "en": "assume",
         "kk": "/əˈsum/",
         "zh": "v. 假設",
-        "unit": 13,
+        "unit": 11,
         "example": "He assumes everything.",
         "exampleZh": "他承擔了一切。"
     },
@@ -3585,7 +3585,7 @@ const toeicWordsDB = [
         "en": "assumption",
         "kk": "/əˈsəmpʃən/",
         "zh": "n. 假設",
-        "unit": 13,
+        "unit": 11,
         "example": "the assumption of an active role in regional settlements",
         "exampleZh": "在區域解決中發揮積極作用"
     },
@@ -3594,7 +3594,7 @@ const toeicWordsDB = [
         "en": "assure",
         "kk": "/əˈʃʊɹ/",
         "zh": "v. 保證",
-        "unit": 13,
+        "unit": 11,
         "example": "You can rest assured.",
         "exampleZh": "您可以放心。"
     },
@@ -3603,7 +3603,7 @@ const toeicWordsDB = [
         "en": "astonish",
         "kk": "/əˈstɑnɪʃ/",
         "zh": "v. 使驚訝",
-        "unit": 13,
+        "unit": 11,
         "example": "you never fail to astonish me",
         "exampleZh": "你總是讓我驚訝"
     },
@@ -3612,7 +3612,7 @@ const toeicWordsDB = [
         "en": "astound",
         "kk": "",
         "zh": "v. 使震驚",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -3621,7 +3621,7 @@ const toeicWordsDB = [
         "en": "attach",
         "kk": "/əˈtætʃ/",
         "zh": "v. 附上；附加",
-        "unit": 13,
+        "unit": 11,
         "example": "he doesn't attach too much importance to radical ideas",
         "exampleZh": "他不太重視激進的想法"
     },
@@ -3630,7 +3630,7 @@ const toeicWordsDB = [
         "en": "attachment",
         "kk": "/əˈtætʃmənt/",
         "zh": "n. 附件",
-        "unit": 13,
+        "unit": 11,
         "example": "We avoid attachment.",
         "exampleZh": "我們避免執著。"
     },
@@ -3639,7 +3639,7 @@ const toeicWordsDB = [
         "en": "attack",
         "kk": "/əˈtæk/",
         "zh": "v. 攻擊",
-        "unit": 13,
+        "unit": 11,
         "example": "an attack on inflation",
         "exampleZh": "通貨膨脹的攻擊"
     },
@@ -3648,7 +3648,7 @@ const toeicWordsDB = [
         "en": "attain",
         "kk": "/əˈteɪn/",
         "zh": "v. 達到",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -3657,7 +3657,7 @@ const toeicWordsDB = [
         "en": "attempt",
         "kk": "/əˈtɛmpt/",
         "zh": "v. 嘗試",
-        "unit": 13,
+        "unit": 11,
         "example": "The attempt failed.",
         "exampleZh": "嘗試失敗了。"
     },
@@ -3666,7 +3666,7 @@ const toeicWordsDB = [
         "en": "attend",
         "kk": "/əˈtɛnd/",
         "zh": "v. 出席",
-        "unit": 13,
+        "unit": 11,
         "example": "the severely wounded had two medics to attend to their wounds",
         "exampleZh": "重傷者有兩名醫護人員來處理他們的傷口"
     },
@@ -3675,7 +3675,7 @@ const toeicWordsDB = [
         "en": "attendance",
         "kk": "/əˈtɛndəns/",
         "zh": "n. 出席率",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -3684,7 +3684,7 @@ const toeicWordsDB = [
         "en": "attendee",
         "kk": "",
         "zh": "n. 出席者",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -3693,7 +3693,7 @@ const toeicWordsDB = [
         "en": "attention",
         "kk": "/əˈtɛnʃən/",
         "zh": "n. 注意",
-        "unit": 13,
+        "unit": 11,
         "example": "midshipmen standing at attention",
         "exampleZh": "見習官立正"
     },
@@ -3702,7 +3702,7 @@ const toeicWordsDB = [
         "en": "attentive",
         "kk": "",
         "zh": "adj. 專心的",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -3711,7 +3711,7 @@ const toeicWordsDB = [
         "en": "attract",
         "kk": "/əˈtɹækt/",
         "zh": "v. 吸引",
-        "unit": 13,
+        "unit": 11,
         "example": "Food attracts dogs.",
         "exampleZh": "食物會吸引狗。"
     },
@@ -3720,7 +3720,7 @@ const toeicWordsDB = [
         "en": "attraction",
         "kk": "/əˈtɹækʃən/",
         "zh": "n. 吸引力",
-        "unit": 13,
+        "unit": 11,
         "example": "the church is the town's main tourist attraction",
         "exampleZh": "教堂是鎮上主要的旅遊景點"
     },
@@ -3729,7 +3729,7 @@ const toeicWordsDB = [
         "en": "attractive",
         "kk": "/əˈtɹæktɪv/",
         "zh": "adj. 吸引人的",
-        "unit": 13,
+        "unit": 11,
         "example": "You are attractive.",
         "exampleZh": "你很有吸引力。"
     },
@@ -3738,7 +3738,7 @@ const toeicWordsDB = [
         "en": "attribute",
         "kk": "",
         "zh": "v. 歸因於",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -3747,7 +3747,7 @@ const toeicWordsDB = [
         "en": "auction",
         "kk": "/ˈɑkʃən/",
         "zh": "n. 拍賣",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -3756,7 +3756,7 @@ const toeicWordsDB = [
         "en": "audience",
         "kk": "/ˈɑdiəns/",
         "zh": "n. 觀眾",
-        "unit": 13,
+        "unit": 11,
         "example": "The audience gasped.",
         "exampleZh": "觀眾倒吸一口冷氣。"
     },
@@ -3765,7 +3765,7 @@ const toeicWordsDB = [
         "en": "audit",
         "kk": "",
         "zh": "n. 審計；v. 查帳",
-        "unit": 13,
+        "unit": 11,
         "example": "a complete audit of flora and fauna at the site",
         "exampleZh": "對現場動植物進行全面審核"
     },
@@ -3774,7 +3774,7 @@ const toeicWordsDB = [
         "en": "auditor",
         "kk": "",
         "zh": "n. 審計員",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -3783,7 +3783,7 @@ const toeicWordsDB = [
         "en": "authentic",
         "kk": "/əˈθɛnɪk/",
         "zh": "adj. 真實的",
-        "unit": 13,
+        "unit": 11,
         "example": "authentic 14th-century furniture",
         "exampleZh": "正宗的 14 世紀家具"
     },
@@ -3792,7 +3792,7 @@ const toeicWordsDB = [
         "en": "author",
         "kk": "/ˈɔθɝ/",
         "zh": "n. 作者",
-        "unit": 13,
+        "unit": 11,
         "example": "he is the author of several books on the subject",
         "exampleZh": "他是多本有關該主題的書籍的作者"
     },
@@ -3801,7 +3801,7 @@ const toeicWordsDB = [
         "en": "authority",
         "kk": "/əˈθɔɹəti/",
         "zh": "n. 權威",
-        "unit": 13,
+        "unit": 11,
         "example": "They respect authority.",
         "exampleZh": "他們尊重權威。"
     },
@@ -3810,7 +3810,7 @@ const toeicWordsDB = [
         "en": "authorization",
         "kk": "",
         "zh": "n. 授權",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -3819,7 +3819,7 @@ const toeicWordsDB = [
         "en": "authorize",
         "kk": "/ˈɔθɝˌaɪz/",
         "zh": "v. 授權；批准",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -3828,7 +3828,7 @@ const toeicWordsDB = [
         "en": "auto",
         "kk": "/ˈɔtoʊ/",
         "zh": "n. 汽車",
-        "unit": 13,
+        "unit": 11,
         "example": "Tom used auto-tune.",
         "exampleZh": "湯姆使用了自動調諧。"
     },
@@ -3837,7 +3837,7 @@ const toeicWordsDB = [
         "en": "autograph",
         "kk": "/ˈɔtəˌɡɹæf/",
         "zh": "n. 簽名",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -3846,7 +3846,7 @@ const toeicWordsDB = [
         "en": "automate",
         "kk": "",
         "zh": "v. 使自動化",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -3855,7 +3855,7 @@ const toeicWordsDB = [
         "en": "automatic",
         "kk": "/ˌɔtəˈmætɪk/",
         "zh": "adj. 自動的",
-        "unit": 13,
+        "unit": 11,
         "example": "This process is automatic.",
         "exampleZh": "這個過程是自動的。"
     },
@@ -3864,7 +3864,7 @@ const toeicWordsDB = [
         "en": "automation",
         "kk": "",
         "zh": "n. 自動化",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -3873,7 +3873,7 @@ const toeicWordsDB = [
         "en": "automobile",
         "kk": "/ˈɔtəmoʊˌbiɫ/",
         "zh": "n. 汽車",
-        "unit": 13,
+        "unit": 11,
         "example": "Tom drives the automobile.",
         "exampleZh": "湯姆開汽車。"
     },
@@ -3882,7 +3882,7 @@ const toeicWordsDB = [
         "en": "autonomous",
         "kk": "",
         "zh": "adj. 自治的",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -3891,7 +3891,7 @@ const toeicWordsDB = [
         "en": "availability",
         "kk": "",
         "zh": "n. 可用性；空檔",
-        "unit": 13,
+        "unit": 11,
         "example": "when a male bird bursts into melodious song, he is warning off other males and advertising his availability to females",
         "exampleZh": "當一隻雄鳥突然發出悠揚的歌聲時，它是在警告其他雄鳥，並向雌鳥宣傳它的可用性"
     },
@@ -3900,7 +3900,7 @@ const toeicWordsDB = [
         "en": "available",
         "kk": "/əˈveɪɫəbəɫ/",
         "zh": "adj. 可用的",
-        "unit": 13,
+        "unit": 11,
         "example": "Help is available.",
         "exampleZh": "可以提供幫助。"
     },
@@ -3909,7 +3909,7 @@ const toeicWordsDB = [
         "en": "avenue",
         "kk": "/ˈævəˌnu/",
         "zh": "n. 大道",
-        "unit": 13,
+        "unit": 11,
         "example": "Turn left onto Fifth Avenue.",
         "exampleZh": "左轉進入第五大道。"
     },
@@ -3918,7 +3918,7 @@ const toeicWordsDB = [
         "en": "average",
         "kk": "/ˈævɝɪdʒ/",
         "zh": "adj. 平均的",
-        "unit": 13,
+        "unit": 11,
         "example": "That's about average.",
         "exampleZh": "這大約是平均水平。"
     },
@@ -3927,7 +3927,7 @@ const toeicWordsDB = [
         "en": "avoid",
         "kk": "/əˈvɔɪd/",
         "zh": "v. 避免",
-        "unit": 13,
+        "unit": 11,
         "example": "Sam tries to win Jess back while she tries to avoid him",
         "exampleZh": "山姆試圖贏回傑西，而傑西則試圖避開他"
     },
@@ -3936,7 +3936,7 @@ const toeicWordsDB = [
         "en": "await",
         "kk": "/əˈweɪt/",
         "zh": "v. 等候",
-        "unit": 13,
+        "unit": 11,
         "example": "Are they awaiting us?",
         "exampleZh": "他們在等我們嗎？"
     },
@@ -3945,7 +3945,7 @@ const toeicWordsDB = [
         "en": "awake",
         "kk": "/əˈweɪk/",
         "zh": "adj. 醒著的",
-        "unit": 13,
+        "unit": 11,
         "example": "Adriano jolted awake.",
         "exampleZh": "阿德里亞諾猛地驚醒。"
     },
@@ -3954,7 +3954,7 @@ const toeicWordsDB = [
         "en": "award",
         "kk": "/əˈwɔɹd/",
         "zh": "n. 獎",
-        "unit": 13,
+        "unit": 11,
         "example": "Sami won many awards.",
         "exampleZh": "薩米贏得了許多獎項。"
     },
@@ -3963,7 +3963,7 @@ const toeicWordsDB = [
         "en": "aware",
         "kk": "/əˈwɛɹ/",
         "zh": "adj. 意識到的",
-        "unit": 13,
+        "unit": 11,
         "example": "Yanni became aware.",
         "exampleZh": "雅尼意識到了。"
     },
@@ -3972,7 +3972,7 @@ const toeicWordsDB = [
         "en": "awareness",
         "kk": "",
         "zh": "n. 意識",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -3981,7 +3981,7 @@ const toeicWordsDB = [
         "en": "awful",
         "kk": "/ˈɑfəɫ/",
         "zh": "adj. 糟糕的",
-        "unit": 13,
+        "unit": 11,
         "example": "an awful speech",
         "exampleZh": "一次糟糕的演講"
     },
@@ -3990,7 +3990,7 @@ const toeicWordsDB = [
         "en": "awkward",
         "kk": "/ˈɑkwɝd/",
         "zh": "adj. 尷尬的",
-        "unit": 13,
+        "unit": 11,
         "example": "He fell awkwardly.",
         "exampleZh": "他尷尬地摔倒了。"
     },
@@ -3999,7 +3999,7 @@ const toeicWordsDB = [
         "en": "backdrop",
         "kk": "",
         "zh": "n. 背景",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -4008,7 +4008,7 @@ const toeicWordsDB = [
         "en": "background",
         "kk": "/ˈbækˌɡɹaʊnd/",
         "zh": "n. 背景",
-        "unit": 13,
+        "unit": 11,
         "example": "Tom has a humble background.",
         "exampleZh": "湯姆出身卑微。"
     },
@@ -4017,7 +4017,7 @@ const toeicWordsDB = [
         "en": "backlog",
         "kk": "",
         "zh": "n. 積壓的工作",
-        "unit": 13,
+        "unit": 11,
         "example": "the company took on extra staff to clear the backlog of work",
         "exampleZh": "公司增聘員工清理積壓的工作"
     },
@@ -4026,7 +4026,7 @@ const toeicWordsDB = [
         "en": "backup",
         "kk": "",
         "zh": "n. 備份",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -4035,7 +4035,7 @@ const toeicWordsDB = [
         "en": "baggage",
         "kk": "/ˈbæɡədʒ/",
         "zh": "n. 行李",
-        "unit": 13,
+        "unit": 11,
         "example": "Here is my baggage.",
         "exampleZh": "這是我的行李。"
     },
@@ -4044,7 +4044,7 @@ const toeicWordsDB = [
         "en": "balance",
         "kk": "/ˈbæɫəns/",
         "zh": "n. 餘額；平衡",
-        "unit": 13,
+        "unit": 11,
         "example": "overseas investments can add balance to an investment portfolio",
         "exampleZh": "海外投資可以增加投資組合的平衡"
     },
@@ -4053,7 +4053,7 @@ const toeicWordsDB = [
         "en": "ballot",
         "kk": "/ˈbæɫət/",
         "zh": "n. 選票",
-        "unit": 13,
+        "unit": 11,
         "example": "the commissioners were elected by ballot",
         "exampleZh": "委員是透過投票選出的"
     },
@@ -4062,7 +4062,7 @@ const toeicWordsDB = [
         "en": "ban",
         "kk": "/ˈbæn/",
         "zh": "v. 禁止",
-        "unit": 13,
+        "unit": 11,
         "example": "a proposed ban on foreign correspondents was condemned by international leaders",
         "exampleZh": "禁止外國記者的提議遭到國際領袖的譴責"
     },
@@ -4071,7 +4071,7 @@ const toeicWordsDB = [
         "en": "band",
         "kk": "/ˈbænd/",
         "zh": "n. 樂團",
-        "unit": 13,
+        "unit": 11,
         "example": "a narrow band of gold was her only jewelry",
         "exampleZh": "一條窄金帶是她唯一的珠寶"
     },
@@ -4080,7 +4080,7 @@ const toeicWordsDB = [
         "en": "bankrupt",
         "kk": "/ˈbæŋkɹəpt/",
         "zh": "adj. 破產的",
-        "unit": 13,
+        "unit": 11,
         "example": "I'll bankrupt you.",
         "exampleZh": "我會讓你破產。"
     },
@@ -4089,7 +4089,7 @@ const toeicWordsDB = [
         "en": "bankruptcy",
         "kk": "",
         "zh": "n. 破產",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -4098,7 +4098,7 @@ const toeicWordsDB = [
         "en": "banner",
         "kk": "/ˈbænɝ/",
         "zh": "n. 橫幅",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -4107,7 +4107,7 @@ const toeicWordsDB = [
         "en": "banquet",
         "kk": "/ˈbæŋkwət/",
         "zh": "n. 宴會",
-        "unit": 13,
+        "unit": 11,
         "example": "a ten-course banquet",
         "exampleZh": "十道菜的宴會"
     },
@@ -4116,7 +4116,7 @@ const toeicWordsDB = [
         "en": "bare",
         "kk": "/ˈbɛɹ/",
         "zh": "adj. 裸露的",
-        "unit": 13,
+        "unit": 11,
         "example": "bare floorboards",
         "exampleZh": "裸露的地板"
     },
@@ -4125,7 +4125,7 @@ const toeicWordsDB = [
         "en": "barely",
         "kk": "/ˈbɛɹɫi/",
         "zh": "adv. 幾乎不",
-        "unit": 13,
+        "unit": 11,
         "example": "Mennad barely ate.",
         "exampleZh": "門納德幾乎沒吃東西。"
     },
@@ -4134,7 +4134,7 @@ const toeicWordsDB = [
         "en": "bargain",
         "kk": "/ˈbɑɹɡən/",
         "zh": "n. 交易；便宜貨",
-        "unit": 13,
+        "unit": 11,
         "example": "I love to bargain.",
         "exampleZh": "我喜歡討價還價。"
     },
@@ -4143,7 +4143,7 @@ const toeicWordsDB = [
         "en": "barrier",
         "kk": "/ˈbæɹiɝ/",
         "zh": "n. 障礙",
-        "unit": 13,
+        "unit": 11,
         "example": "We've hit a barrier.",
         "exampleZh": "我們遇到了障礙。"
     },
@@ -4152,7 +4152,7 @@ const toeicWordsDB = [
         "en": "base",
         "kk": "/ˈbeɪs/",
         "zh": "n. 基礎",
-        "unit": 13,
+        "unit": 11,
         "example": "she and her boyfriend got to second base",
         "exampleZh": "她和她的男朋友到達二壘"
     },
@@ -4161,7 +4161,7 @@ const toeicWordsDB = [
         "en": "basic",
         "kk": "/ˈbeɪsɪk/",
         "zh": "adj. 基本的",
-        "unit": 13,
+        "unit": 11,
         "example": "a coarse-grained, basic, plutonic rock",
         "exampleZh": "粗粒基性深成岩"
     },
@@ -4170,7 +4170,7 @@ const toeicWordsDB = [
         "en": "basis",
         "kk": "/ˈbeɪsəs/",
         "zh": "n. 基礎",
-        "unit": 13,
+        "unit": 11,
         "example": "trust is the only basis for a good working relationship",
         "exampleZh": "信任是良好工作關係的唯一基礎"
     },
@@ -4179,7 +4179,7 @@ const toeicWordsDB = [
         "en": "bear",
         "kk": "/ˈbɛɹ/",
         "zh": "v. 忍受；承擔",
-        "unit": 13,
+        "unit": 11,
         "example": "no one likes to bear the responsibility for such decisions",
         "exampleZh": "沒有人願意為這樣的決定負責"
     },
@@ -4188,7 +4188,7 @@ const toeicWordsDB = [
         "en": "beat",
         "kk": "/ˈbit/",
         "zh": "v. 擊敗",
-        "unit": 13,
+        "unit": 11,
         "example": "public clamor for more police officers on the beat",
         "exampleZh": "民眾呼籲增加警力"
     },
@@ -4197,7 +4197,7 @@ const toeicWordsDB = [
         "en": "behalf",
         "kk": "/bɪˈhæf/",
         "zh": "n. 代表",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -4206,7 +4206,7 @@ const toeicWordsDB = [
         "en": "behave",
         "kk": "/bɪˈheɪv/",
         "zh": "v. 表現",
-        "unit": 13,
+        "unit": 11,
         "example": "Behave yourselves!",
         "exampleZh": "好好表現吧！"
     },
@@ -4215,7 +4215,7 @@ const toeicWordsDB = [
         "en": "behavior",
         "kk": "/bɪˈheɪvjɝ/",
         "zh": "n. 行為",
-        "unit": 13,
+        "unit": 11,
         "example": "Change your behavior.",
         "exampleZh": "改變你的行為。"
     },
@@ -4224,7 +4224,7 @@ const toeicWordsDB = [
         "en": "belongings",
         "kk": "/bɪˈɫɔŋɪŋz/",
         "zh": "n. 財產",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -4233,7 +4233,7 @@ const toeicWordsDB = [
         "en": "below",
         "kk": "/biˈɫoʊ/",
         "zh": "prep. 在...之下",
-        "unit": 13,
+        "unit": 11,
         "example": "the most common methods are shown below",
         "exampleZh": "最常見的方法如下圖所示"
     },
@@ -4242,7 +4242,7 @@ const toeicWordsDB = [
         "en": "benchmark",
         "kk": "",
         "zh": "n. 基準",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -4251,7 +4251,7 @@ const toeicWordsDB = [
         "en": "beneficial",
         "kk": "/ˌbɛnəˈfɪʃəɫ/",
         "zh": "adj. 有益的",
-        "unit": 13,
+        "unit": 11,
         "example": "the beneficial effect on the economy",
         "exampleZh": "對經濟的有利影響"
     },
@@ -4260,7 +4260,7 @@ const toeicWordsDB = [
         "en": "benefit",
         "kk": "/ˈbɛnəfɪt/",
         "zh": "n. 福利；利益",
-        "unit": 13,
+        "unit": 11,
         "example": "tenants bought their houses with the benefit of a discount",
         "exampleZh": "租戶以折扣優惠購買房屋"
     },
@@ -4269,7 +4269,7 @@ const toeicWordsDB = [
         "en": "beside",
         "kk": "/ˌbiˈsaɪd/",
         "zh": "prep. 在...旁邊",
-        "unit": 13,
+        "unit": 11,
         "example": "on the table beside the bed",
         "exampleZh": "在床邊的桌子上"
     },
@@ -4278,7 +4278,7 @@ const toeicWordsDB = [
         "en": "besides",
         "kk": "/ˌbiˈsaɪdz/",
         "zh": "adv. 此外",
-        "unit": 13,
+        "unit": 11,
         "example": "I have no other family besides my parents",
         "exampleZh": "除了父母我沒有其他家人"
     },
@@ -4287,7 +4287,7 @@ const toeicWordsDB = [
         "en": "betray",
         "kk": "/bɪˈtɹeɪ/",
         "zh": "v. 背叛",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -4296,7 +4296,7 @@ const toeicWordsDB = [
         "en": "beverage",
         "kk": "/ˈbɛvɝɪdʒ/",
         "zh": "n. 飲料",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -4305,7 +4305,7 @@ const toeicWordsDB = [
         "en": "beyond",
         "kk": "/ˌbiˈɔnd/",
         "zh": "prep. 超過",
-        "unit": 13,
+        "unit": 11,
         "example": "she blurs the boundaries between reality and what lies beyond",
         "exampleZh": "她模糊了現實與超越之間的界限"
     },
@@ -4314,7 +4314,7 @@ const toeicWordsDB = [
         "en": "bias",
         "kk": "/ˈbaɪəs/",
         "zh": "n. 偏見",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -4323,7 +4323,7 @@ const toeicWordsDB = [
         "en": "bid",
         "kk": "/ˈbɪd/",
         "zh": "n. 投標；v. 出價",
-        "unit": 13,
+        "unit": 11,
         "example": "guests will bid for pieces of fine jewelry",
         "exampleZh": "客人將競標精美珠寶"
     },
@@ -4332,7 +4332,7 @@ const toeicWordsDB = [
         "en": "bill",
         "kk": "/ˈbɪɫ/",
         "zh": "n. 帳單",
-        "unit": 13,
+        "unit": 11,
         "example": "he was running up a bill of hundreds of dollars",
         "exampleZh": "他已經欠了幾百美元的帳單"
     },
@@ -4341,7 +4341,7 @@ const toeicWordsDB = [
         "en": "bind",
         "kk": "/ˈbaɪnd/",
         "zh": "v. 綁",
-        "unit": 13,
+        "unit": 11,
         "example": "a protein in a form that can bind DNA",
         "exampleZh": "一種可以結合 DNA 的蛋白質"
     },
@@ -4350,7 +4350,7 @@ const toeicWordsDB = [
         "en": "biography",
         "kk": "/baɪˈɑɡɹəfi/",
         "zh": "n. 傳記",
-        "unit": 13,
+        "unit": 11,
         "example": "Ziri wrote Rima's biography.",
         "exampleZh": "齊裡（Ziri）撰寫了裡瑪（Rima）的傳記。"
     },
@@ -4359,7 +4359,7 @@ const toeicWordsDB = [
         "en": "biology",
         "kk": "/baɪˈɑɫədʒi/",
         "zh": "n. 生物學",
-        "unit": 13,
+        "unit": 11,
         "example": "Yuri loved biology.",
         "exampleZh": "尤里熱愛生物學。"
     },
@@ -4368,7 +4368,7 @@ const toeicWordsDB = [
         "en": "bitter",
         "kk": "/ˈbɪtɝ/",
         "zh": "adj. 苦的",
-        "unit": 13,
+        "unit": 11,
         "example": "the raw berries have an intensely bitter flavor",
         "exampleZh": "生漿果有強烈的苦味"
     },
@@ -4377,7 +4377,7 @@ const toeicWordsDB = [
         "en": "blame",
         "kk": "/ˈbɫeɪm/",
         "zh": "v. 責備",
-        "unit": 13,
+        "unit": 11,
         "example": "Lukas blamed himself.",
         "exampleZh": "盧卡斯責怪自己。"
     },
@@ -4386,7 +4386,7 @@ const toeicWordsDB = [
         "en": "blank",
         "kk": "/ˈbɫæŋk/",
         "zh": "adj. 空白的",
-        "unit": 13,
+        "unit": 11,
         "example": "her mind went blank",
         "exampleZh": "她的大腦一片空白"
     },
@@ -4395,7 +4395,7 @@ const toeicWordsDB = [
         "en": "blanket",
         "kk": "/ˈbɫæŋkət/",
         "zh": "n. 毛毯",
-        "unit": 13,
+        "unit": 11,
         "example": "I bought a blanket.",
         "exampleZh": "我買了一條毯子。"
     },
@@ -4404,7 +4404,7 @@ const toeicWordsDB = [
         "en": "blast",
         "kk": "/ˈbɫæst/",
         "zh": "n. 爆炸",
-        "unit": 13,
+        "unit": 11,
         "example": "damn and blast this awful place!",
         "exampleZh": "該死的，炸毀這個可怕的地方！"
     },
@@ -4413,7 +4413,7 @@ const toeicWordsDB = [
         "en": "blend",
         "kk": "/ˈbɫɛnd/",
         "zh": "v. 混合",
-        "unit": 13,
+        "unit": 11,
         "example": "It's a special blend.",
         "exampleZh": "這是一種特殊的混合物。"
     },
@@ -4422,7 +4422,7 @@ const toeicWordsDB = [
         "en": "blind",
         "kk": "/ˈbɫaɪnd/",
         "zh": "adj. 瞎的",
-        "unit": 13,
+        "unit": 11,
         "example": "he's absolutely blind where you're concerned, isn't he?",
         "exampleZh": "就你而言，他絕對是瞎子，不是嗎？"
     },
@@ -4431,7 +4431,7 @@ const toeicWordsDB = [
         "en": "block",
         "kk": "/ˈbɫɑk/",
         "zh": "n. 街區",
-        "unit": 13,
+        "unit": 11,
         "example": "they tried to block the release of the film",
         "exampleZh": "他們試圖阻止這部電影的上映"
     },
@@ -4440,7 +4440,7 @@ const toeicWordsDB = [
         "en": "bloom",
         "kk": "/ˈbɫum/",
         "zh": "v. 開花",
-        "unit": 13,
+        "unit": 11,
         "example": "Flowers are blooming.",
         "exampleZh": "花朵盛開。"
     },
@@ -4449,7 +4449,7 @@ const toeicWordsDB = [
         "en": "board",
         "kk": "/ˈbɔɹd/",
         "zh": "n. 董事會；v. 登機",
-        "unit": 13,
+        "unit": 11,
         "example": "they would not be able to board without a ticket",
         "exampleZh": "沒有票他們將無法登機"
     },
@@ -4458,7 +4458,7 @@ const toeicWordsDB = [
         "en": "boast",
         "kk": "/ˈboʊst/",
         "zh": "v. 吹噓",
-        "unit": 13,
+        "unit": 11,
         "example": "He boasts after winning.",
         "exampleZh": "獲勝後他誇耀。"
     },
@@ -4467,7 +4467,7 @@ const toeicWordsDB = [
         "en": "bold",
         "kk": "/ˈboʊɫd/",
         "zh": "adj. 大膽的",
-        "unit": 13,
+        "unit": 11,
         "example": "she tossed him a bold look",
         "exampleZh": "她大膽地看了他一眼"
     },
@@ -4476,7 +4476,7 @@ const toeicWordsDB = [
         "en": "bond",
         "kk": "/ˈbɑnd/",
         "zh": "n. 債券",
-        "unit": 13,
+        "unit": 11,
         "example": "Their bond was strong.",
         "exampleZh": "他們的聯繫很牢固。"
     },
@@ -4485,7 +4485,7 @@ const toeicWordsDB = [
         "en": "bonus",
         "kk": "/ˈboʊnəs/",
         "zh": "n. 獎金",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -4494,7 +4494,7 @@ const toeicWordsDB = [
         "en": "booklet",
         "kk": "",
         "zh": "n. 小冊子",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -4503,7 +4503,7 @@ const toeicWordsDB = [
         "en": "boom",
         "kk": "/ˈbum/",
         "zh": "n. 繁榮",
-        "unit": 13,
+        "unit": 11,
         "example": "if you get caught, boom, you're a felon",
         "exampleZh": "如果你被抓住了，繁榮，你就是個重罪犯"
     },
@@ -4512,7 +4512,7 @@ const toeicWordsDB = [
         "en": "boost",
         "kk": "/ˈbust/",
         "zh": "v. 促進",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -4521,7 +4521,7 @@ const toeicWordsDB = [
         "en": "booth",
         "kk": "/ˈbuθ/",
         "zh": "n. 攤位；小隔間",
-        "unit": 13,
+        "unit": 11,
         "example": "a ticket booth",
         "exampleZh": "售票亭"
     },
@@ -4530,7 +4530,7 @@ const toeicWordsDB = [
         "en": "border",
         "kk": "/ˈbɔɹdɝ/",
         "zh": "n. 邊界",
-        "unit": 13,
+        "unit": 11,
         "example": "France borders Spain.",
         "exampleZh": "法國與西班牙接壤。"
     },
@@ -4539,7 +4539,7 @@ const toeicWordsDB = [
         "en": "bother",
         "kk": "/ˈbɑðɝ/",
         "zh": "v. 打擾",
-        "unit": 13,
+        "unit": 11,
         "example": "I hope she hasn't been a bother",
         "exampleZh": "我希望她沒有打擾"
     },
@@ -4548,7 +4548,7 @@ const toeicWordsDB = [
         "en": "bottom",
         "kk": "/ˈbɑtəm/",
         "zh": "n. 底部",
-        "unit": 13,
+        "unit": 11,
         "example": "the bottom of the page",
         "exampleZh": "頁面底部"
     },
@@ -4557,7 +4557,7 @@ const toeicWordsDB = [
         "en": "bounce",
         "kk": "/ˈbaʊns/",
         "zh": "v. 彈跳",
-        "unit": 13,
+        "unit": 11,
         "example": "The cheque bounced.",
         "exampleZh": "支票被退回了。"
     },
@@ -4566,7 +4566,7 @@ const toeicWordsDB = [
         "en": "bound",
         "kk": "/ˈbaʊnd/",
         "zh": "adj. 綁住的",
-        "unit": 13,
+        "unit": 11,
         "example": "an upper bound on each modulus",
         "exampleZh": "每個模數的上限"
     },
@@ -4575,7 +4575,7 @@ const toeicWordsDB = [
         "en": "boundary",
         "kk": "/ˈbaʊndɝi/",
         "zh": "n. 邊界",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -4584,7 +4584,7 @@ const toeicWordsDB = [
         "en": "branch",
         "kk": "/ˈbɹæntʃ/",
         "zh": "n. 分支",
-        "unit": 13,
+        "unit": 11,
         "example": "he went to work at our Boston branch",
         "exampleZh": "他到我們波士頓分公司工作"
     },
@@ -4593,7 +4593,7 @@ const toeicWordsDB = [
         "en": "brand",
         "kk": "/ˈbɹænd/",
         "zh": "n. 品牌",
-        "unit": 13,
+        "unit": 11,
         "example": "a new brand of detergent",
         "exampleZh": "一種新品牌的洗滌劑"
     },
@@ -4602,7 +4602,7 @@ const toeicWordsDB = [
         "en": "brave",
         "kk": "/ˈbɹeɪv/",
         "zh": "adj. 勇敢的",
-        "unit": 13,
+        "unit": 11,
         "example": "we had to brave the full heat of the sun",
         "exampleZh": "我們不得不勇敢地面對太陽的炎熱"
     },
@@ -4611,7 +4611,7 @@ const toeicWordsDB = [
         "en": "breach",
         "kk": "",
         "zh": "n. 違反",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -4620,7 +4620,7 @@ const toeicWordsDB = [
         "en": "break",
         "kk": "/ˈbɹeɪk/",
         "zh": "n. 休息",
-        "unit": 13,
+        "unit": 11,
         "example": "a break of 83 put him in front for the first time",
         "exampleZh": "83桿的單桿成績讓他首次領先"
     },
@@ -4629,7 +4629,7 @@ const toeicWordsDB = [
         "en": "breakdown",
         "kk": "/ˈbɹeɪkˌdaʊn/",
         "zh": "n. 故障",
-        "unit": 13,
+        "unit": 11,
         "example": "Heather had a breakdown following the death of her sister",
         "exampleZh": "希瑟在姊姊過世後精神崩潰"
     },
@@ -4638,7 +4638,7 @@ const toeicWordsDB = [
         "en": "breakthrough",
         "kk": "/ˈbɹeɪkˌθɹu/",
         "zh": "n. 突破",
-        "unit": 13,
+        "unit": 11,
         "example": "we're seeing more and more of these breakthrough infections",
         "exampleZh": "我們看到越來越多的突破性感染"
     },
@@ -4647,7 +4647,7 @@ const toeicWordsDB = [
         "en": "breathe",
         "kk": "/ˈbɹið/",
         "zh": "v. 呼吸",
-        "unit": 13,
+        "unit": 11,
         "example": "Breathe naturally.",
         "exampleZh": "自然呼吸。"
     },
@@ -4656,7 +4656,7 @@ const toeicWordsDB = [
         "en": "brief",
         "kk": "/ˈbɹif/",
         "zh": "adj. 簡短的",
-        "unit": 13,
+        "unit": 11,
         "example": "introductions were brief and polite",
         "exampleZh": "介紹簡短而禮貌"
     },
@@ -4665,7 +4665,7 @@ const toeicWordsDB = [
         "en": "briefcase",
         "kk": "/ˈbɹifˌkeɪs/",
         "zh": "n. 公事包",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -4674,7 +4674,7 @@ const toeicWordsDB = [
         "en": "briefing",
         "kk": "",
         "zh": "n. 簡報",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -4683,7 +4683,7 @@ const toeicWordsDB = [
         "en": "brilliant",
         "kk": "/ˈbɹɪɫjənt/",
         "zh": "adj. 輝煌的",
-        "unit": 13,
+        "unit": 11,
         "example": "brilliant sunshine illuminated the scene",
         "exampleZh": "燦爛的陽光照亮了現場"
     },
@@ -4692,7 +4692,7 @@ const toeicWordsDB = [
         "en": "bring",
         "kk": "/ˈbɹɪŋ/",
         "zh": "v. 帶來",
-        "unit": 13,
+        "unit": 11,
         "example": "I'll give you an aspirin to bring down your temperature",
         "exampleZh": "我會給你一片阿斯匹靈來降低你的體溫"
     },
@@ -4701,7 +4701,7 @@ const toeicWordsDB = [
         "en": "broad",
         "kk": "/ˈbɹɔd/",
         "zh": "adj. 寬廣的",
-        "unit": 13,
+        "unit": 11,
         "example": "three broad categories of mutual funds",
         "exampleZh": "共同基金三大類"
     },
@@ -4710,7 +4710,7 @@ const toeicWordsDB = [
         "en": "broadcast",
         "kk": "/ˈbɹɔdˌkæst/",
         "zh": "v. 廣播",
-        "unit": 13,
+        "unit": 11,
         "example": "a broadcast journalist",
         "exampleZh": "一名廣播記者"
     },
@@ -4719,7 +4719,7 @@ const toeicWordsDB = [
         "en": "broaden",
         "kk": "/ˈbɹɔdən/",
         "zh": "v. 變寬",
-        "unit": 13,
+        "unit": 11,
         "example": "efforts to broaden classical music's appeal",
         "exampleZh": "努力擴大古典音樂的吸引力"
     },
@@ -4728,7 +4728,7 @@ const toeicWordsDB = [
         "en": "brochure",
         "kk": "/bɹoʊˈʃʊɹ/",
         "zh": "n. 小冊子",
-        "unit": 13,
+        "unit": 11,
         "example": "a holiday brochure",
         "exampleZh": "假期小冊子"
     },
@@ -4737,7 +4737,7 @@ const toeicWordsDB = [
         "en": "broker",
         "kk": "",
         "zh": "n. 經紀人",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -4746,7 +4746,7 @@ const toeicWordsDB = [
         "en": "browse",
         "kk": "/ˈbɹaʊz/",
         "zh": "v. 瀏覽",
-        "unit": 13,
+        "unit": 11,
         "example": "the animals browse the high foliage of trees",
         "exampleZh": "動物們在高高的樹葉上覓食"
     },
@@ -4755,7 +4755,7 @@ const toeicWordsDB = [
         "en": "browser",
         "kk": "",
         "zh": "n. 瀏覽器",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -4764,7 +4764,7 @@ const toeicWordsDB = [
         "en": "budget",
         "kk": "/ˈbədʒɪt/",
         "zh": "n. 預算",
-        "unit": 13,
+        "unit": 11,
         "example": "Tom made a budget.",
         "exampleZh": "湯姆做了一個預算。"
     },
@@ -4773,7 +4773,7 @@ const toeicWordsDB = [
         "en": "build",
         "kk": "/ˈbɪɫd/",
         "zh": "v. 建築",
-        "unit": 13,
+        "unit": 11,
         "example": "they need to build a strong relationship with journal users",
         "exampleZh": "他們需要與期刊使用者建立牢固的關係"
     },
@@ -4782,7 +4782,7 @@ const toeicWordsDB = [
         "en": "building",
         "kk": "/ˈbɪɫdɪŋ/",
         "zh": "n. 建築物",
-        "unit": 13,
+        "unit": 11,
         "example": "the building of democracy in Guatemala",
         "exampleZh": "瓜地馬拉的民主建設"
     },
@@ -4791,7 +4791,7 @@ const toeicWordsDB = [
         "en": "bulk",
         "kk": "/ˈbəɫk/",
         "zh": "n. 體積；大量",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -4800,7 +4800,7 @@ const toeicWordsDB = [
         "en": "bulletin",
         "kk": "/ˈbʊɫɪtən/",
         "zh": "n. 公告",
-        "unit": 13,
+        "unit": 11,
         "example": "log-in details will be sent out to members via the monthly bulletin",
         "exampleZh": "登入詳細資訊將透過每月公告發送給會員"
     },
@@ -4809,7 +4809,7 @@ const toeicWordsDB = [
         "en": "bunch",
         "kk": "/ˈbəntʃ/",
         "zh": "n. 串",
-        "unit": 13,
+        "unit": 11,
         "example": "A bunch of nonsense!",
         "exampleZh": "一堆廢話！"
     },
@@ -4818,7 +4818,7 @@ const toeicWordsDB = [
         "en": "bundle",
         "kk": "/ˈbəndəɫ/",
         "zh": "n. 束",
-        "unit": 13,
+        "unit": 11,
         "example": "he stopped occasionally in the villages to dance at country frolics, and bundle with the lasses",
         "exampleZh": "他偶爾會在鄉村停下來，在鄉村嬉戲中跳舞，並與女孩們在一起"
     },
@@ -4827,7 +4827,7 @@ const toeicWordsDB = [
         "en": "burden",
         "kk": "/ˈbɝdən/",
         "zh": "n. 負擔",
-        "unit": 13,
+        "unit": 11,
         "example": "He lightened my burden.",
         "exampleZh": "他減輕了我的負擔。"
     },
@@ -4836,7 +4836,7 @@ const toeicWordsDB = [
         "en": "bureau",
         "kk": "/ˈbjʊɹoʊ/",
         "zh": "n. 局",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -4845,7 +4845,7 @@ const toeicWordsDB = [
         "en": "burn",
         "kk": "/ˈbɝn/",
         "zh": "v. 燃燒",
-        "unit": 13,
+        "unit": 11,
         "example": "exercise does help to burn calories",
         "exampleZh": "運動確實有助於燃燒卡路里"
     },
@@ -4854,7 +4854,7 @@ const toeicWordsDB = [
         "en": "burst",
         "kk": "/ˈbɝst/",
         "zh": "v. 爆裂",
-        "unit": 13,
+        "unit": 11,
         "example": "he burst the balloon",
         "exampleZh": "他把氣球弄破了"
     },
@@ -4863,7 +4863,7 @@ const toeicWordsDB = [
         "en": "business",
         "kk": "/ˈbɪznəs/",
         "zh": "n. 商業",
-        "unit": 13,
+        "unit": 11,
         "example": "they must be told about this blackmailing business",
         "exampleZh": "必須告訴他們有關敲詐勒索的事情"
     },
@@ -4872,7 +4872,7 @@ const toeicWordsDB = [
         "en": "button",
         "kk": "/ˈbətən/",
         "zh": "n. 按鈕",
-        "unit": 13,
+        "unit": 11,
         "example": "just search for the app you want and click the 'buy' or 'install' button",
         "exampleZh": "只需搜尋您想要的應用程序，然後點擊“購買”或“安裝”按鈕"
     },
@@ -4881,7 +4881,7 @@ const toeicWordsDB = [
         "en": "bypass",
         "kk": "",
         "zh": "v. 繞過",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -4890,7 +4890,7 @@ const toeicWordsDB = [
         "en": "cabinet",
         "kk": "/ˈkæbənət/",
         "zh": "n. 櫥櫃",
-        "unit": 13,
+        "unit": 11,
         "example": "Here's the cabinet.",
         "exampleZh": "這是內閣。"
     },
@@ -4899,7 +4899,7 @@ const toeicWordsDB = [
         "en": "cable",
         "kk": "/ˈkeɪbəɫ/",
         "zh": "n. 電纜",
-        "unit": 13,
+        "unit": 11,
         "example": "he caught a glimpse of the mast, a cable or two downwind",
         "exampleZh": "他瞥見了桅杆，順風的一兩條纜繩"
     },
@@ -4908,7 +4908,7 @@ const toeicWordsDB = [
         "en": "calculate",
         "kk": "/ˈkæɫkjəˌɫeɪt/",
         "zh": "v. 計算",
-        "unit": 13,
+        "unit": 11,
         "example": "I calculated hastily.",
         "exampleZh": "我連忙算了算。"
     },
@@ -4917,7 +4917,7 @@ const toeicWordsDB = [
         "en": "calculation",
         "kk": "/ˌkæɫkjəˈɫeɪʃən/",
         "zh": "n. 計算",
-        "unit": 13,
+        "unit": 11,
         "example": "This simplifies calculations.",
         "exampleZh": "這簡化了計算。"
     },
@@ -4926,7 +4926,7 @@ const toeicWordsDB = [
         "en": "calculator",
         "kk": "/ˈkæɫkjəˌɫeɪtɝ/",
         "zh": "n. 計算機",
-        "unit": 13,
+        "unit": 11,
         "example": "a pocket calculator",
         "exampleZh": "袖珍計算器"
     },
@@ -4935,7 +4935,7 @@ const toeicWordsDB = [
         "en": "calendar",
         "kk": "/ˈkæɫəndɝ/",
         "zh": "n. 日曆",
-        "unit": 13,
+        "unit": 11,
         "example": "it was at their discretion whether to index or calendar the records",
         "exampleZh": "他們可以自行決定是否對記錄進行索引或日曆"
     },
@@ -4944,7 +4944,7 @@ const toeicWordsDB = [
         "en": "campaign",
         "kk": "/kæmˈpeɪn/",
         "zh": "n. 活動",
-        "unit": 13,
+        "unit": 11,
         "example": "Are you campaigning?",
         "exampleZh": "你在競選嗎？"
     },
@@ -4953,7 +4953,7 @@ const toeicWordsDB = [
         "en": "campus",
         "kk": "/ˈkæmpəs/",
         "zh": "n. 校園",
-        "unit": 13,
+        "unit": 11,
         "example": "Are you on campus?",
         "exampleZh": "你在校園嗎？"
     },
@@ -4962,7 +4962,7 @@ const toeicWordsDB = [
         "en": "cancel",
         "kk": "/ˈkænsəɫ/",
         "zh": "v. 取消",
-        "unit": 13,
+        "unit": 11,
         "example": "a stamp franked and with an adhesive cancel",
         "exampleZh": "蓋有加蓋郵戳和黏膠蓋銷的郵票"
     },
@@ -4971,7 +4971,7 @@ const toeicWordsDB = [
         "en": "cancellation",
         "kk": "",
         "zh": "n. 取消",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -4980,7 +4980,7 @@ const toeicWordsDB = [
         "en": "candidate",
         "kk": "/ˈkændədeɪt/",
         "zh": "n. 候選人；應徵者",
-        "unit": 13,
+        "unit": 11,
         "example": "Tom is a candidate.",
         "exampleZh": "湯姆是一名候選人。"
     },
@@ -4989,7 +4989,7 @@ const toeicWordsDB = [
         "en": "canvas",
         "kk": "/ˈkænvəs/",
         "zh": "n. 帆布",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -4998,7 +4998,7 @@ const toeicWordsDB = [
         "en": "capable",
         "kk": "/ˈkeɪpəbəɫ/",
         "zh": "adj. 有能力的",
-        "unit": 13,
+        "unit": 11,
         "example": "a highly capable man",
         "exampleZh": "一個很有能力的人"
     },
@@ -5007,7 +5007,7 @@ const toeicWordsDB = [
         "en": "capacity",
         "kk": "/kəˈpæsəti/",
         "zh": "n. 容量；能力",
-        "unit": 13,
+        "unit": 11,
         "example": "his capacity to inspire trust in others",
         "exampleZh": "他激發他人信任的能力"
     },
@@ -5016,7 +5016,7 @@ const toeicWordsDB = [
         "en": "capital",
         "kk": "/ˈkæpətəɫ/",
         "zh": "n. 資本",
-        "unit": 13,
+        "unit": 11,
         "example": "he's a really capital fellow",
         "exampleZh": "他真是個資本家"
     },
@@ -5025,7 +5025,7 @@ const toeicWordsDB = [
         "en": "capture",
         "kk": "/ˈkæptʃɝ/",
         "zh": "v. 捕捉",
-        "unit": 13,
+        "unit": 11,
         "example": "Tom captured Mary.",
         "exampleZh": "湯姆抓住了瑪麗。"
     },
@@ -5034,7 +5034,7 @@ const toeicWordsDB = [
         "en": "carbon",
         "kk": "/ˈkɑɹbən/",
         "zh": "n. 碳",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -5043,7 +5043,7 @@ const toeicWordsDB = [
         "en": "care",
         "kk": "/ˈkɛɹ/",
         "zh": "n. 照顧",
-        "unit": 13,
+        "unit": 11,
         "example": "you care very deeply for him",
         "exampleZh": "你非常關心他"
     },
@@ -5052,7 +5052,7 @@ const toeicWordsDB = [
         "en": "career",
         "kk": "/kɝˈɪɹ/",
         "zh": "n. 職業",
-        "unit": 13,
+        "unit": 11,
         "example": "Tom loves his career.",
         "exampleZh": "湯姆熱愛他的職業。"
     },
@@ -5061,7 +5061,7 @@ const toeicWordsDB = [
         "en": "careful",
         "kk": "/ˈkɛɹfəɫ/",
         "zh": "adj. 小心的",
-        "unit": 13,
+        "unit": 11,
         "example": "be careful not to lose her address",
         "exampleZh": "小心不要遺失她的地址"
     },
@@ -5070,7 +5070,7 @@ const toeicWordsDB = [
         "en": "careless",
         "kk": "",
         "zh": "adj. 粗心的",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -5079,7 +5079,7 @@ const toeicWordsDB = [
         "en": "cargo",
         "kk": "/ˈkɑɹˌɡoʊ/",
         "zh": "n. 貨物",
-        "unit": 13,
+        "unit": 11,
         "example": "a cargo of oil",
         "exampleZh": "一批石油"
     },
@@ -5088,7 +5088,7 @@ const toeicWordsDB = [
         "en": "carrier",
         "kk": "/ˈkæɹiɝ/",
         "zh": "n. 運輸工具",
-        "unit": 13,
+        "unit": 11,
         "example": "Yanni is a mail carrier.",
         "exampleZh": "雅尼是郵差。"
     },
@@ -5097,7 +5097,7 @@ const toeicWordsDB = [
         "en": "carry",
         "kk": "/ˈkæɹi/",
         "zh": "v. 攜帶",
-        "unit": 13,
+        "unit": 11,
         "example": "they relied on dialogue to carry the plot",
         "exampleZh": "他們依靠對話來推動情節"
     },
@@ -5106,7 +5106,7 @@ const toeicWordsDB = [
         "en": "cart",
         "kk": "/ˈkɑɹt/",
         "zh": "n. 手推車",
-        "unit": 13,
+        "unit": 11,
         "example": "from the product page select the size and quantity you'd like and click ‘Buy’ to add it to your cart",
         "exampleZh": "從產品頁面選擇您想要的尺寸和數量，然後點擊「購買」將其新增至您的購物車"
     },
@@ -5115,7 +5115,7 @@ const toeicWordsDB = [
         "en": "case",
         "kk": "/ˈkeɪs/",
         "zh": "n. 情況",
-        "unit": 13,
+        "unit": 11,
         "example": "a libel case",
         "exampleZh": "誹謗案"
     },
@@ -5124,7 +5124,7 @@ const toeicWordsDB = [
         "en": "cash",
         "kk": "/ˈkæʃ/",
         "zh": "n. 現金",
-        "unit": 13,
+        "unit": 11,
         "example": "a discount for cash",
         "exampleZh": "現金折扣"
     },
@@ -5133,7 +5133,7 @@ const toeicWordsDB = [
         "en": "cashier",
         "kk": "/kæˈʃɪɹ/",
         "zh": "n. 收銀員",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -5142,7 +5142,7 @@ const toeicWordsDB = [
         "en": "catalog",
         "kk": "/ˈkætəɫɔɡ/",
         "zh": "n. 目錄",
-        "unit": 13,
+        "unit": 11,
         "example": "his life was a catalog of dismal failures",
         "exampleZh": "他的一生充滿了令人沮喪的失敗"
     },
@@ -5151,7 +5151,7 @@ const toeicWordsDB = [
         "en": "catch",
         "kk": "/ˈkætʃ/",
         "zh": "v. 抓",
-        "unit": 13,
+        "unit": 11,
         "example": "there was a catch in Anne's voice",
         "exampleZh": "安妮的聲音有些哽咽"
     },
@@ -5160,7 +5160,7 @@ const toeicWordsDB = [
         "en": "category",
         "kk": "/ˈkætəˌɡɔɹi/",
         "zh": "n. 類別",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -5169,7 +5169,7 @@ const toeicWordsDB = [
         "en": "cater",
         "kk": "/ˈkeɪtɝ/",
         "zh": "v. 迎合",
-        "unit": 13,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -5178,7 +5178,7 @@ const toeicWordsDB = [
         "en": "catering",
         "kk": "",
         "zh": "n. 外燴服務",
-        "unit": 13,
+        "unit": 11,
         "example": "high standards of catering",
         "exampleZh": "高標準的餐飲"
     },
@@ -5187,7 +5187,7 @@ const toeicWordsDB = [
         "en": "cause",
         "kk": "/ˈkɑz/",
         "zh": "n. 原因",
-        "unit": 13,
+        "unit": 11,
         "example": "I'm raising money for a good cause",
         "exampleZh": "我正在為公益事業籌集資金"
     },
@@ -5196,7 +5196,7 @@ const toeicWordsDB = [
         "en": "caution",
         "kk": "/ˈkɑʃən/",
         "zh": "n. 警告",
-        "unit": 13,
+        "unit": 11,
         "example": "anyone receiving a suspect package should exercise extreme caution",
         "exampleZh": "任何收到可疑包裹的人都應格外小心"
     },
@@ -5205,7 +5205,7 @@ const toeicWordsDB = [
         "en": "cautious",
         "kk": "/ˈkɔʃəs/",
         "zh": "adj. 謹慎的",
-        "unit": 13,
+        "unit": 11,
         "example": "the plan received a cautious welcome",
         "exampleZh": "該計劃受到謹慎歡迎"
     },
@@ -5214,7 +5214,7 @@ const toeicWordsDB = [
         "en": "cease",
         "kk": "/ˈsis/",
         "zh": "v. 停止",
-        "unit": 13,
+        "unit": 11,
         "example": "The giggles ceased.",
         "exampleZh": "咯咯笑聲停止了。"
     },
@@ -5223,7 +5223,7 @@ const toeicWordsDB = [
         "en": "ceiling",
         "kk": "/ˈsiɫɪŋ/",
         "zh": "n. 天花板",
-        "unit": 13,
+        "unit": 11,
         "example": "the aircraft's quoted ceiling of 24,000 feet",
         "exampleZh": "該飛機的報價上限為 24,000 英尺"
     },
@@ -5232,7 +5232,7 @@ const toeicWordsDB = [
         "en": "celebrate",
         "kk": "/ˈsɛɫəˌbɹeɪt/",
         "zh": "v. 慶祝",
-        "unit": 14,
+        "unit": 11,
         "example": "Everyone celebrated.",
         "exampleZh": "大家都慶祝了。"
     },
@@ -5241,7 +5241,7 @@ const toeicWordsDB = [
         "en": "celebration",
         "kk": "/ˌsɛɫəˈbɹeɪʃən/",
         "zh": "n. 慶典",
-        "unit": 14,
+        "unit": 11,
         "example": "the birth of his son was a cause for celebration",
         "exampleZh": "他兒子的出生值得慶祝"
     },
@@ -5250,7 +5250,7 @@ const toeicWordsDB = [
         "en": "celebrity",
         "kk": "/səˈɫɛbɹɪti/",
         "zh": "n. 名人",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -5259,7 +5259,7 @@ const toeicWordsDB = [
         "en": "cell",
         "kk": "/ˈsɛɫ/",
         "zh": "n. 細胞",
-        "unit": 14,
+        "unit": 11,
         "example": "a button cell for a quartz watch",
         "exampleZh": "用於石英錶的紐帶電池"
     },
@@ -5268,7 +5268,7 @@ const toeicWordsDB = [
         "en": "censor",
         "kk": "",
         "zh": "v. 審查",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -5277,7 +5277,7 @@ const toeicWordsDB = [
         "en": "census",
         "kk": "",
         "zh": "n. 人口普查",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -5286,7 +5286,7 @@ const toeicWordsDB = [
         "en": "center",
         "kk": "/ˈsɛnɝ/",
         "zh": "n. 中心",
-        "unit": 14,
+        "unit": 11,
         "example": "to center the needle, turn the knob",
         "exampleZh": "轉動旋鈕，使針居中"
     },
@@ -5295,7 +5295,7 @@ const toeicWordsDB = [
         "en": "central",
         "kk": "/ˈsɛntɹəɫ/",
         "zh": "adj. 中央的",
-        "unit": 14,
+        "unit": 11,
         "example": "the station has a central courtyard",
         "exampleZh": "車站有一個中央庭院"
     },
@@ -5304,7 +5304,7 @@ const toeicWordsDB = [
         "en": "century",
         "kk": "/ˈsɛntʃɝi/",
         "zh": "n. 世紀",
-        "unit": 14,
+        "unit": 11,
         "example": "the fifteenth century",
         "exampleZh": "十五世紀"
     },
@@ -5313,7 +5313,7 @@ const toeicWordsDB = [
         "en": "ceremony",
         "kk": "/ˈsɛɹəˌmoʊni/",
         "zh": "n. 典禮",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -5322,7 +5322,7 @@ const toeicWordsDB = [
         "en": "certain",
         "kk": "/ˈsɝtən/",
         "zh": "adj. 確定的",
-        "unit": 14,
+        "unit": 11,
         "example": "true and certain knowledge of the essence of existence",
         "exampleZh": "關於存在本質的真實且確定的知識"
     },
@@ -5331,7 +5331,7 @@ const toeicWordsDB = [
         "en": "certainly",
         "kk": "",
         "zh": "adv. 確實地",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -5340,7 +5340,7 @@ const toeicWordsDB = [
         "en": "certificate",
         "kk": "/sɝˈtɪfɪkət/",
         "zh": "n. 證書",
-        "unit": 14,
+        "unit": 11,
         "example": "graduate certificate in information technology",
         "exampleZh": "資訊科技研究生證書"
     },
@@ -5349,7 +5349,7 @@ const toeicWordsDB = [
         "en": "certification",
         "kk": "",
         "zh": "n. 證明",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -5358,7 +5358,7 @@ const toeicWordsDB = [
         "en": "certify",
         "kk": "/ˈsɝtəˌfaɪ/",
         "zh": "v. 證明",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -5367,7 +5367,7 @@ const toeicWordsDB = [
         "en": "chain",
         "kk": "/ˈtʃeɪn/",
         "zh": "n. 鏈",
-        "unit": 14,
+        "unit": 11,
         "example": "Don't yank my chain!",
         "exampleZh": "別拉我的鍊子！"
     },
@@ -5376,7 +5376,7 @@ const toeicWordsDB = [
         "en": "chair",
         "kk": "/ˈtʃɛɹ/",
         "zh": "n. 椅子",
-        "unit": 14,
+        "unit": 11,
         "example": "the editorial chair",
         "exampleZh": "編輯主席"
     },
@@ -5385,7 +5385,7 @@ const toeicWordsDB = [
         "en": "chairman",
         "kk": "/ˈtʃɛɹmən/",
         "zh": "n. 主席",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -5394,7 +5394,7 @@ const toeicWordsDB = [
         "en": "challenge",
         "kk": "/ˈtʃæɫəndʒ/",
         "zh": "n. 挑戰",
-        "unit": 14,
+        "unit": 11,
         "example": "He challenged her.",
         "exampleZh": "他向她挑戰。"
     },
@@ -5403,7 +5403,7 @@ const toeicWordsDB = [
         "en": "chamber",
         "kk": "/ˈtʃeɪmbɝ/",
         "zh": "n. 房間",
-        "unit": 14,
+        "unit": 11,
         "example": "The chamber door is open.",
         "exampleZh": "密室門開著。"
     },
@@ -5412,7 +5412,7 @@ const toeicWordsDB = [
         "en": "champion",
         "kk": "/ˈtʃæmpiən/",
         "zh": "n. 冠軍",
-        "unit": 14,
+        "unit": 11,
         "example": "Ziri is a champion.",
         "exampleZh": "齊裡是冠軍。"
     },
@@ -5421,7 +5421,7 @@ const toeicWordsDB = [
         "en": "championship",
         "kk": "/ˈtʃæmpiənˌʃɪp/",
         "zh": "n. 錦標賽",
-        "unit": 14,
+        "unit": 11,
         "example": "He won the championship.",
         "exampleZh": "他贏得了冠軍。"
     },
@@ -5430,7 +5430,7 @@ const toeicWordsDB = [
         "en": "chance",
         "kk": "/ˈtʃæns/",
         "zh": "n. 機會",
-        "unit": 14,
+        "unit": 11,
         "example": "a chance meeting",
         "exampleZh": "一次偶然的相遇"
     },
@@ -5439,7 +5439,7 @@ const toeicWordsDB = [
         "en": "change",
         "kk": "/ˈtʃeɪndʒ/",
         "zh": "v. 改變",
-        "unit": 14,
+        "unit": 11,
         "example": "I watched him pocket the change",
         "exampleZh": "我看著他把零錢放進口袋"
     },
@@ -5448,7 +5448,7 @@ const toeicWordsDB = [
         "en": "channel",
         "kk": "/ˈtʃænəɫ/",
         "zh": "n. 頻道",
-        "unit": 14,
+        "unit": 11,
         "example": "Change the channel!",
         "exampleZh": "換個頻道吧！"
     },
@@ -5457,7 +5457,7 @@ const toeicWordsDB = [
         "en": "chaos",
         "kk": "/ˈkeɪɑs/",
         "zh": "n. 混亂",
-        "unit": 14,
+        "unit": 11,
         "example": "snow caused chaos in the region",
         "exampleZh": "大雪導致該地區混亂"
     },
@@ -5466,7 +5466,7 @@ const toeicWordsDB = [
         "en": "character",
         "kk": "/ˈkɛɹɪktɝ/",
         "zh": "n. 性格",
-        "unit": 14,
+        "unit": 11,
         "example": "gas lamps give the area its character",
         "exampleZh": "煤氣燈賦予該地區特色"
     },
@@ -5475,7 +5475,7 @@ const toeicWordsDB = [
         "en": "characteristic",
         "kk": "/ˌkɛɹəktɝˈɪstɪk/",
         "zh": "adj. 典型的",
-        "unit": 14,
+        "unit": 11,
         "example": "It is characteristic of him.",
         "exampleZh": "這是他的特點。"
     },
@@ -5484,7 +5484,7 @@ const toeicWordsDB = [
         "en": "characterize",
         "kk": "/ˈkɛɹəktɝˌaɪz/",
         "zh": "v. 描繪",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -5493,7 +5493,7 @@ const toeicWordsDB = [
         "en": "charge",
         "kk": "/ˈtʃɑɹdʒ/",
         "zh": "v. 收費",
-        "unit": 14,
+        "unit": 11,
         "example": "he appeared in court on a charge of attempted murder",
         "exampleZh": "他因謀殺未遂罪名出庭"
     },
@@ -5502,7 +5502,7 @@ const toeicWordsDB = [
         "en": "charity",
         "kk": "/ˈtʃɛɹɪti/",
         "zh": "n. 慈善",
-        "unit": 14,
+        "unit": 11,
         "example": "She runs a charity.",
         "exampleZh": "她經營一家慈善機構。"
     },
@@ -5511,7 +5511,7 @@ const toeicWordsDB = [
         "en": "chart",
         "kk": "/ˈtʃɑɹt/",
         "zh": "n. 圖表",
-        "unit": 14,
+        "unit": 11,
         "example": "scribbled on a patient's chart",
         "exampleZh": "潦草地寫在病人的病歷上"
     },
@@ -5520,7 +5520,7 @@ const toeicWordsDB = [
         "en": "charter",
         "kk": "",
         "zh": "n. 憲章",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -5529,7 +5529,7 @@ const toeicWordsDB = [
         "en": "chase",
         "kk": "/ˈtʃeɪs/",
         "zh": "v. 追逐",
-        "unit": 14,
+        "unit": 11,
         "example": "a chase for limited supplies of hard currency",
         "exampleZh": "追逐有限的硬通貨供應"
     },
@@ -5538,7 +5538,7 @@ const toeicWordsDB = [
         "en": "chat",
         "kk": "/ˈtʃæt/",
         "zh": "v. 聊天",
-        "unit": 14,
+        "unit": 11,
         "example": "he dropped in for a chat",
         "exampleZh": "他過來聊天"
     },
@@ -5547,7 +5547,7 @@ const toeicWordsDB = [
         "en": "cheap",
         "kk": "/ˈtʃip/",
         "zh": "adj. 便宜的",
-        "unit": 14,
+        "unit": 11,
         "example": "a cheap restaurant",
         "exampleZh": "一家便宜的餐館"
     },
@@ -5556,7 +5556,7 @@ const toeicWordsDB = [
         "en": "cheat",
         "kk": "/ˈtʃit/",
         "zh": "v. 欺騙",
-        "unit": 14,
+        "unit": 11,
         "example": "a liar and a cheat",
         "exampleZh": "騙子和騙子"
     },
@@ -5565,7 +5565,7 @@ const toeicWordsDB = [
         "en": "check",
         "kk": "/ˈtʃɛk/",
         "zh": "v. 檢查",
-        "unit": 14,
+        "unit": 11,
         "example": "on Wednesdays he wore the small check",
         "exampleZh": "星期三他戴著小支票"
     },
@@ -5574,7 +5574,7 @@ const toeicWordsDB = [
         "en": "checkout",
         "kk": "",
         "zh": "n. 結帳",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -5583,7 +5583,7 @@ const toeicWordsDB = [
         "en": "cheer",
         "kk": "/ˈtʃɪɹ/",
         "zh": "v. 歡呼",
-        "unit": 14,
+        "unit": 11,
         "example": "Everybody cheered.",
         "exampleZh": "大家歡呼起來。"
     },
@@ -5592,7 +5592,7 @@ const toeicWordsDB = [
         "en": "cheerful",
         "kk": "/ˈtʃɪɹfəɫ/",
         "zh": "adj. 開朗的",
-        "unit": 14,
+        "unit": 11,
         "example": "the room was painted in cheerful colors",
         "exampleZh": "房間漆成歡快的顏色"
     },
@@ -5601,7 +5601,7 @@ const toeicWordsDB = [
         "en": "chef",
         "kk": "/ˈʃɛf/",
         "zh": "n. 廚師",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -5610,7 +5610,7 @@ const toeicWordsDB = [
         "en": "chemical",
         "kk": "/ˈkɛməkəɫ/",
         "zh": "adj. 化學的",
-        "unit": 14,
+        "unit": 11,
         "example": "chemical treatments for killing fungi",
         "exampleZh": "殺死真菌的化學處理"
     },
@@ -5619,7 +5619,7 @@ const toeicWordsDB = [
         "en": "chemist",
         "kk": "/ˈkɛmɪst/",
         "zh": "n. 化學家",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -5628,7 +5628,7 @@ const toeicWordsDB = [
         "en": "chemistry",
         "kk": "/ˈkɛməstɹi/",
         "zh": "n. 化學",
-        "unit": 14,
+        "unit": 11,
         "example": "He likes chemistry.",
         "exampleZh": "他喜歡化學。"
     },
@@ -5637,7 +5637,7 @@ const toeicWordsDB = [
         "en": "cheque",
         "kk": "",
         "zh": "n. 支票",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -5646,7 +5646,7 @@ const toeicWordsDB = [
         "en": "cherish",
         "kk": "/ˈtʃɛɹɪʃ/",
         "zh": "v. 珍惜",
-        "unit": 14,
+        "unit": 11,
         "example": "Cherish the thought.",
         "exampleZh": "珍惜這個想法。"
     },
@@ -5655,7 +5655,7 @@ const toeicWordsDB = [
         "en": "chief",
         "kk": "/ˈtʃif/",
         "zh": "adj. 主要的",
-        "unit": 14,
+        "unit": 11,
         "example": "the chief of police",
         "exampleZh": "警察局長"
     },
@@ -5664,7 +5664,7 @@ const toeicWordsDB = [
         "en": "childhood",
         "kk": "/ˈtʃaɪɫdˌhʊd/",
         "zh": "n. 童年",
-        "unit": 14,
+        "unit": 11,
         "example": "My childhood was good.",
         "exampleZh": "我的童年是美好的。"
     },
@@ -5673,7 +5673,7 @@ const toeicWordsDB = [
         "en": "chill",
         "kk": "/ˈtʃɪɫ/",
         "zh": "n. 寒冷",
-        "unit": 14,
+        "unit": 11,
         "example": "a long-term chill in relations could hurt commerce",
         "exampleZh": "關係長期冷淡可能會損害商業"
     },
@@ -5682,7 +5682,7 @@ const toeicWordsDB = [
         "en": "choice",
         "kk": "/ˈtʃɔɪs/",
         "zh": "n. 選擇",
-        "unit": 14,
+        "unit": 11,
         "example": "this CD drive is the perfect choice for your computer",
         "exampleZh": "該 CD 驅動器是您電腦的完美選擇"
     },
@@ -5691,7 +5691,7 @@ const toeicWordsDB = [
         "en": "choir",
         "kk": "/ˈkwaɪɝ/",
         "zh": "n. 合唱團",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -5700,7 +5700,7 @@ const toeicWordsDB = [
         "en": "choose",
         "kk": "/ˈtʃuz/",
         "zh": "v. 選擇",
-        "unit": 14,
+        "unit": 11,
         "example": "I'll stay as long as I choose",
         "exampleZh": "只要我選擇，我就會留下來"
     },
@@ -5709,7 +5709,7 @@ const toeicWordsDB = [
         "en": "chore",
         "kk": "/ˈtʃɔɹ/",
         "zh": "n. 雜務",
-        "unit": 14,
+        "unit": 11,
         "example": "She did her chores.",
         "exampleZh": "她做家事。"
     },
@@ -5718,7 +5718,7 @@ const toeicWordsDB = [
         "en": "chronic",
         "kk": "/ˈkɹɑnɪk/",
         "zh": "adj. 慢性的",
-        "unit": 14,
+        "unit": 11,
         "example": "a chronic liar",
         "exampleZh": "一個長期說謊的人"
     },
@@ -5727,7 +5727,7 @@ const toeicWordsDB = [
         "en": "circle",
         "kk": "/ˈsɝkəɫ/",
         "zh": "n. 圓圈",
-        "unit": 14,
+        "unit": 11,
         "example": "they all sat around in a circle",
         "exampleZh": "他們圍坐成一圈"
     },
@@ -5736,7 +5736,7 @@ const toeicWordsDB = [
         "en": "circuit",
         "kk": "/ˈsɝkət/",
         "zh": "n. 電路",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -5745,7 +5745,7 @@ const toeicWordsDB = [
         "en": "circular",
         "kk": "/ˈsɝkjəɫɝ/",
         "zh": "adj. 圓形的",
-        "unit": 14,
+        "unit": 11,
         "example": "Flavio was in a circular room.",
         "exampleZh": "弗拉維奧在一個圓形房間裡。"
     },
@@ -5754,7 +5754,7 @@ const toeicWordsDB = [
         "en": "circulate",
         "kk": "/ˈsɝkjəˌɫeɪt/",
         "zh": "v. 循環",
-        "unit": 14,
+        "unit": 11,
         "example": "Blood circulates through blood vessels.",
         "exampleZh": "血液通過血管循環。"
     },
@@ -5763,7 +5763,7 @@ const toeicWordsDB = [
         "en": "circulation",
         "kk": "/ˈsɝkjəˌɫeɪʃən/",
         "zh": "n. 循環",
-        "unit": 14,
+        "unit": 11,
         "example": "Blood circulation is very rapid.",
         "exampleZh": "血液循環非常快速。"
     },
@@ -5772,7 +5772,7 @@ const toeicWordsDB = [
         "en": "circumstance",
         "kk": "/ˈsɝkəmˌstæns/",
         "zh": "n. 情況",
-        "unit": 14,
+        "unit": 11,
         "example": "What were the circumstances?",
         "exampleZh": "當時的情況如何？"
     },
@@ -5781,7 +5781,7 @@ const toeicWordsDB = [
         "en": "cite",
         "kk": "/ˈsaɪt/",
         "zh": "v. 引用",
-        "unit": 14,
+        "unit": 11,
         "example": "he does not cite any source for this assertion",
         "exampleZh": "他沒有引用這說法的任何來源"
     },
@@ -5790,7 +5790,7 @@ const toeicWordsDB = [
         "en": "citizen",
         "kk": "/ˈsɪtəzən/",
         "zh": "n. 公民",
-        "unit": 14,
+        "unit": 11,
         "example": "a Polish citizen",
         "exampleZh": "波蘭公民"
     },
@@ -5799,7 +5799,7 @@ const toeicWordsDB = [
         "en": "city",
         "kk": "/ˈsɪti/",
         "zh": "n. 城市",
-        "unit": 14,
+        "unit": 11,
         "example": "the city council",
         "exampleZh": "市議會"
     },
@@ -5808,7 +5808,7 @@ const toeicWordsDB = [
         "en": "civic",
         "kk": "/ˈsɪvɪk/",
         "zh": "adj. 城市的",
-        "unit": 14,
+        "unit": 11,
         "example": "they could not be denied access to education, the vote, and other civic rights",
         "exampleZh": "不能剝奪他們接受教育、投票和其他公民權利的權利"
     },
@@ -5817,7 +5817,7 @@ const toeicWordsDB = [
         "en": "civil",
         "kk": "/ˈsɪvəɫ/",
         "zh": "adj. 公民的",
-        "unit": 14,
+        "unit": 11,
         "example": "a civil action",
         "exampleZh": "民事訴訟"
     },
@@ -5826,7 +5826,7 @@ const toeicWordsDB = [
         "en": "civilian",
         "kk": "/səˈvɪɫjən/",
         "zh": "n. 平民",
-        "unit": 14,
+        "unit": 11,
         "example": "The IDF kills civilians.",
         "exampleZh": "以色列國防軍殺害平民。"
     },
@@ -5835,7 +5835,7 @@ const toeicWordsDB = [
         "en": "civilization",
         "kk": "/ˌsɪvəɫɪˈzeɪʃən/",
         "zh": "n. 文明",
-        "unit": 14,
+        "unit": 11,
         "example": "They hate civilization.",
         "exampleZh": "他們討厭文明。"
     },
@@ -5844,7 +5844,7 @@ const toeicWordsDB = [
         "en": "claim",
         "kk": "/ˈkɫeɪm/",
         "zh": "v. 聲稱",
-        "unit": 14,
+        "unit": 11,
         "example": "these sunblocks claim protection factors as high as 34",
         "exampleZh": "這些防曬霜聲稱防護係數高達 34"
     },
@@ -5853,7 +5853,7 @@ const toeicWordsDB = [
         "en": "clarify",
         "kk": "/ˈkɫɛɹəˌfaɪ/",
         "zh": "v. 澄清",
-        "unit": 14,
+        "unit": 11,
         "example": "Can you clarify that?",
         "exampleZh": "你能澄清一下嗎？"
     },
@@ -5862,7 +5862,7 @@ const toeicWordsDB = [
         "en": "clarity",
         "kk": "/ˈkɫɛɹəti/",
         "zh": "n. 清楚",
-        "unit": 14,
+        "unit": 11,
         "example": "for the sake of clarity, each of these strategies is dealt with separately",
         "exampleZh": "為了清楚起見，這些策略中的每一個都是單獨處理的"
     },
@@ -5871,7 +5871,7 @@ const toeicWordsDB = [
         "en": "clash",
         "kk": "/ˈkɫæʃ/",
         "zh": "v. 衝突",
-        "unit": 14,
+        "unit": 11,
         "example": "Those colors clash.",
         "exampleZh": "這些顏色發生衝突。"
     },
@@ -5880,7 +5880,7 @@ const toeicWordsDB = [
         "en": "classic",
         "kk": "/ˈkɫæsɪk/",
         "zh": "adj. 經典的",
-        "unit": 14,
+        "unit": 11,
         "example": "I had all the classic symptoms of flu",
         "exampleZh": "我有流感的所有典型症狀"
     },
@@ -5889,7 +5889,7 @@ const toeicWordsDB = [
         "en": "classical",
         "kk": "/ˈkɫæsɪkəɫ/",
         "zh": "adj. 古典的",
-        "unit": 14,
+        "unit": 11,
         "example": "I played classical music.",
         "exampleZh": "我演奏古典音樂。"
     },
@@ -5898,7 +5898,7 @@ const toeicWordsDB = [
         "en": "classification",
         "kk": "/ˌkɫæsəfəˈkeɪʃən/",
         "zh": "n. 分類",
-        "unit": 14,
+        "unit": 11,
         "example": "Classification is not my specialty.",
         "exampleZh": "分類不是我的專長。"
     },
@@ -5907,7 +5907,7 @@ const toeicWordsDB = [
         "en": "classify",
         "kk": "/ˈkɫæsəˌfaɪ/",
         "zh": "v. 分類",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -5916,7 +5916,7 @@ const toeicWordsDB = [
         "en": "clause",
         "kk": "/ˈkɫɔz/",
         "zh": "n. 條款",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -5925,7 +5925,7 @@ const toeicWordsDB = [
         "en": "clean",
         "kk": "/ˈkɫin/",
         "zh": "adj. 乾淨的",
-        "unit": 14,
+        "unit": 11,
         "example": "I searched him and his luggage, and he was clean",
         "exampleZh": "我搜了他和他的行李，他很乾淨"
     },
@@ -5934,7 +5934,7 @@ const toeicWordsDB = [
         "en": "clear",
         "kk": "/ˈkɫɪɹ/",
         "zh": "adj. 清楚的",
-        "unit": 14,
+        "unit": 11,
         "example": "the plane rose high enough to clear the trees",
         "exampleZh": "飛機升得夠高，可以清理樹木"
     },
@@ -5943,7 +5943,7 @@ const toeicWordsDB = [
         "en": "clearance",
         "kk": "/ˈkɫɪɹəns/",
         "zh": "n. 清除",
-        "unit": 14,
+        "unit": 11,
         "example": "cleaning of the machine should include clearance of blockages",
         "exampleZh": "機器的清潔應包括清除堵塞物"
     },
@@ -5952,7 +5952,7 @@ const toeicWordsDB = [
         "en": "clerk",
         "kk": "/ˈkɫɝk/",
         "zh": "n. 職員",
-        "unit": 14,
+        "unit": 11,
         "example": "a chapter clerk",
         "exampleZh": "分會文員"
     },
@@ -5961,7 +5961,7 @@ const toeicWordsDB = [
         "en": "clever",
         "kk": "/ˈkɫɛvɝ/",
         "zh": "adj. 聰明的",
-        "unit": 14,
+        "unit": 11,
         "example": "how clever of him to think of this!",
         "exampleZh": "他想到這一點真是太聰明了！"
     },
@@ -5970,7 +5970,7 @@ const toeicWordsDB = [
         "en": "click",
         "kk": "/ˈkɫɪk/",
         "zh": "v. 點擊",
-        "unit": 14,
+        "unit": 11,
         "example": "Please click here.",
         "exampleZh": "請點選這裡。"
     },
@@ -5979,7 +5979,7 @@ const toeicWordsDB = [
         "en": "client",
         "kk": "/ˈkɫaɪənt/",
         "zh": "n. 客戶",
-        "unit": 14,
+        "unit": 11,
         "example": "I only have clients.",
         "exampleZh": "我只有客戶。"
     },
@@ -5988,7 +5988,7 @@ const toeicWordsDB = [
         "en": "clientele",
         "kk": "",
         "zh": "n. 客戶群",
-        "unit": 14,
+        "unit": 11,
         "example": "the dancers don't mix with the clientele",
         "exampleZh": "舞者不與顧客混在一起"
     },
@@ -5997,7 +5997,7 @@ const toeicWordsDB = [
         "en": "climate",
         "kk": "/ˈkɫaɪmət/",
         "zh": "n. 氣候",
-        "unit": 14,
+        "unit": 11,
         "example": "vacationing in a warm climate",
         "exampleZh": "在溫暖的氣候中度假"
     },
@@ -6006,7 +6006,7 @@ const toeicWordsDB = [
         "en": "climax",
         "kk": "/ˈkɫaɪˌmæks/",
         "zh": "n. 頂點",
-        "unit": 14,
+        "unit": 11,
         "example": "The game came to a climax.",
         "exampleZh": "比賽進入了高潮。"
     },
@@ -6015,7 +6015,7 @@ const toeicWordsDB = [
         "en": "climb",
         "kk": "/ˈkɫaɪm/",
         "zh": "v. 攀登",
-        "unit": 14,
+        "unit": 11,
         "example": "his long climb from poverty",
         "exampleZh": "他擺脫貧窮的漫長歷程"
     },
@@ -6024,7 +6024,7 @@ const toeicWordsDB = [
         "en": "cling",
         "kk": "/ˈkɫɪŋ/",
         "zh": "v. 緊抓",
-        "unit": 14,
+        "unit": 11,
         "example": "the fish cling to the line of the weed",
         "exampleZh": "魚依附在水草線上"
     },
@@ -6033,7 +6033,7 @@ const toeicWordsDB = [
         "en": "clinic",
         "kk": "/ˈkɫɪnɪk/",
         "zh": "n. 診所",
-        "unit": 14,
+        "unit": 11,
         "example": "The clinic is closed.",
         "exampleZh": "診所已關閉。"
     },
@@ -6042,7 +6042,7 @@ const toeicWordsDB = [
         "en": "clip",
         "kk": "/ˈkɫɪp/",
         "zh": "n. 夾子",
-        "unit": 14,
+        "unit": 11,
         "example": "The clip was longer.",
         "exampleZh": "剪輯更長。"
     },
@@ -6051,7 +6051,7 @@ const toeicWordsDB = [
         "en": "clock",
         "kk": "/ˈkɫɑk/",
         "zh": "n. 時鐘",
-        "unit": 14,
+        "unit": 11,
         "example": "they play against the clock",
         "exampleZh": "他們爭分奪秒"
     },
@@ -6060,7 +6060,7 @@ const toeicWordsDB = [
         "en": "close",
         "kk": "/ˈkɫoʊs/",
         "zh": "adj. 靠近的",
-        "unit": 14,
+        "unit": 11,
         "example": "the months of living in close proximity to her were taking their toll",
         "exampleZh": "與她住得很近的幾個月讓她付出了代價"
     },
@@ -6069,7 +6069,7 @@ const toeicWordsDB = [
         "en": "closet",
         "kk": "/ˈkɫɑzət/",
         "zh": "n. 壁櫥",
-        "unit": 14,
+        "unit": 11,
         "example": "a closet alcoholic",
         "exampleZh": "一個櫃子裡的酒鬼"
     },
@@ -6078,7 +6078,7 @@ const toeicWordsDB = [
         "en": "closure",
         "kk": "/ˈkɫoʊʒɝ/",
         "zh": "n. 關閉",
-        "unit": 14,
+        "unit": 11,
         "example": "a closure motion",
         "exampleZh": "關閉動議"
     },
@@ -6087,7 +6087,7 @@ const toeicWordsDB = [
         "en": "clothe",
         "kk": "/ˈkɫoʊð/",
         "zh": "v. 給...穿衣",
-        "unit": 14,
+        "unit": 11,
         "example": "they already had eight children to feed and clothe",
         "exampleZh": "他們已經有八個孩子需要吃穿"
     },
@@ -6096,7 +6096,7 @@ const toeicWordsDB = [
         "en": "clothes",
         "kk": "/ˈkɫoʊðz/",
         "zh": "n. 衣服",
-        "unit": 14,
+        "unit": 11,
         "example": "he stripped off his clothes",
         "exampleZh": "他脫掉了衣服"
     },
@@ -6105,7 +6105,7 @@ const toeicWordsDB = [
         "en": "clothing",
         "kk": "/ˈkɫoʊðɪŋ/",
         "zh": "n. 衣物",
-        "unit": 14,
+        "unit": 11,
         "example": "an item of clothing",
         "exampleZh": "一件衣服"
     },
@@ -6114,7 +6114,7 @@ const toeicWordsDB = [
         "en": "cloud",
         "kk": "/ˈkɫaʊd/",
         "zh": "n. 雲",
-        "unit": 14,
+        "unit": 11,
         "example": "a cloud of dust",
         "exampleZh": "一團塵埃"
     },
@@ -6123,7 +6123,7 @@ const toeicWordsDB = [
         "en": "clue",
         "kk": "/ˈkɫu/",
         "zh": "n. 線索",
-        "unit": 14,
+        "unit": 11,
         "example": "Mennad had no clue.",
         "exampleZh": "門納德毫無頭緒。"
     },
@@ -6132,7 +6132,7 @@ const toeicWordsDB = [
         "en": "clumsy",
         "kk": "/ˈkɫəmzi/",
         "zh": "adj. 笨拙的",
-        "unit": 14,
+        "unit": 11,
         "example": "Flavio was clumsy.",
         "exampleZh": "弗拉維奧很笨拙。"
     },
@@ -6141,7 +6141,7 @@ const toeicWordsDB = [
         "en": "cluster",
         "kk": "/ˈkɫəstɝ/",
         "zh": "n. 簇",
-        "unit": 14,
+        "unit": 11,
         "example": "a cluster of antique shops",
         "exampleZh": "古董店聚集地"
     },
@@ -6150,7 +6150,7 @@ const toeicWordsDB = [
         "en": "coach",
         "kk": "/ˈkoʊtʃ/",
         "zh": "n. 教練",
-        "unit": 14,
+        "unit": 11,
         "example": "a football coach",
         "exampleZh": "足球教練"
     },
@@ -6159,7 +6159,7 @@ const toeicWordsDB = [
         "en": "coalition",
         "kk": "",
         "zh": "n. 聯盟",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -6168,7 +6168,7 @@ const toeicWordsDB = [
         "en": "coarse",
         "kk": "/ˈkɔɹs/",
         "zh": "adj. 粗糙的",
-        "unit": 14,
+        "unit": 11,
         "example": "He's coarse in manner.",
         "exampleZh": "他的態度很粗魯。"
     },
@@ -6177,7 +6177,7 @@ const toeicWordsDB = [
         "en": "coast",
         "kk": "/ˈkoʊst/",
         "zh": "n. 海岸",
-        "unit": 14,
+        "unit": 11,
         "example": "the coast road",
         "exampleZh": "海岸路"
     },
@@ -6186,7 +6186,7 @@ const toeicWordsDB = [
         "en": "code",
         "kk": "/ˈkoʊd/",
         "zh": "n. 代碼",
-        "unit": 14,
+        "unit": 11,
         "example": "He learned to code.",
         "exampleZh": "他學會了編碼。"
     },
@@ -6195,7 +6195,7 @@ const toeicWordsDB = [
         "en": "coffee",
         "kk": "/ˈkɑfi/",
         "zh": "n. 咖啡",
-        "unit": 14,
+        "unit": 11,
         "example": "a cup of coffee",
         "exampleZh": "一杯咖啡"
     },
@@ -6204,7 +6204,7 @@ const toeicWordsDB = [
         "en": "cognitive",
         "kk": "",
         "zh": "adj. 認知的",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -6213,7 +6213,7 @@ const toeicWordsDB = [
         "en": "cohere",
         "kk": "",
         "zh": "v. 連貫",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -6222,7 +6222,7 @@ const toeicWordsDB = [
         "en": "coherent",
         "kk": "/koʊˈhɪɹənt/",
         "zh": "adj. 連貫的",
-        "unit": 14,
+        "unit": 11,
         "example": "she was lucid and coherent and did not appear to be injured",
         "exampleZh": "她神智清醒、思路清晰，看起來沒有受傷"
     },
@@ -6231,7 +6231,7 @@ const toeicWordsDB = [
         "en": "cohesion",
         "kk": "",
         "zh": "n. 凝聚力",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -6240,7 +6240,7 @@ const toeicWordsDB = [
         "en": "cohesive",
         "kk": "",
         "zh": "adj. 有凝聚力的",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -6249,7 +6249,7 @@ const toeicWordsDB = [
         "en": "coincide",
         "kk": "/ˌkoʊɪnˈsaɪd/",
         "zh": "v. 同時發生",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -6258,7 +6258,7 @@ const toeicWordsDB = [
         "en": "coincidence",
         "kk": "/koʊˈɪnsɪdəns/",
         "zh": "n. 巧合",
-        "unit": 14,
+        "unit": 11,
         "example": "they met by coincidence",
         "exampleZh": "他們偶然相遇"
     },
@@ -6267,7 +6267,7 @@ const toeicWordsDB = [
         "en": "collaborate",
         "kk": "",
         "zh": "v. 合作",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -6276,7 +6276,7 @@ const toeicWordsDB = [
         "en": "collaboration",
         "kk": "",
         "zh": "n. 合作",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -6285,7 +6285,7 @@ const toeicWordsDB = [
         "en": "collapse",
         "kk": "/kəˈɫæps/",
         "zh": "v. 倒塌",
-        "unit": 14,
+        "unit": 11,
         "example": "Our house collapsed.",
         "exampleZh": "我們的房子倒塌了。"
     },
@@ -6294,7 +6294,7 @@ const toeicWordsDB = [
         "en": "collar",
         "kk": "/ˈkɑɫɝ/",
         "zh": "n. 衣領",
-        "unit": 14,
+        "unit": 11,
         "example": "Ziri likes this collar.",
         "exampleZh": "Ziri 喜歡這個項圈。"
     },
@@ -6303,7 +6303,7 @@ const toeicWordsDB = [
         "en": "colleague",
         "kk": "/ˈkɑɫiɡ/",
         "zh": "n. 同事",
-        "unit": 14,
+        "unit": 11,
         "example": "Simon was also a very good colleague",
         "exampleZh": "西蒙也是一位非常好的同事"
     },
@@ -6312,7 +6312,7 @@ const toeicWordsDB = [
         "en": "collect",
         "kk": "/kəˈɫɛkt/",
         "zh": "v. 收集",
-        "unit": 14,
+        "unit": 11,
         "example": "dust and dirt collect so quickly",
         "exampleZh": "灰塵和污垢積得如此之快"
     },
@@ -6321,7 +6321,7 @@ const toeicWordsDB = [
         "en": "collection",
         "kk": "/kəˈɫɛkʃən/",
         "zh": "n. 收藏品",
-        "unit": 14,
+        "unit": 11,
         "example": "a record collection",
         "exampleZh": "記錄集"
     },
@@ -6330,7 +6330,7 @@ const toeicWordsDB = [
         "en": "collective",
         "kk": "/kəˈɫɛktɪv/",
         "zh": "adj. 集體的",
-        "unit": 14,
+        "unit": 11,
         "example": "ministers who share collective responsibility",
         "exampleZh": "分擔集體責任的部長"
     },
@@ -6339,7 +6339,7 @@ const toeicWordsDB = [
         "en": "collector",
         "kk": "/kəˈɫɛktɝ/",
         "zh": "n. 收藏家",
-        "unit": 14,
+        "unit": 11,
         "example": "an art collector",
         "exampleZh": "藝術收藏家"
     },
@@ -6348,7 +6348,7 @@ const toeicWordsDB = [
         "en": "college",
         "kk": "/ˈkɑɫɪdʒ/",
         "zh": "n. 大學",
-        "unit": 14,
+        "unit": 11,
         "example": "We attended college.",
         "exampleZh": "我們上大學了。"
     },
@@ -6357,7 +6357,7 @@ const toeicWordsDB = [
         "en": "collide",
         "kk": "/kəˈɫaɪd/",
         "zh": "v. 碰撞",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -6366,7 +6366,7 @@ const toeicWordsDB = [
         "en": "collision",
         "kk": "/kəˈɫɪʒən/",
         "zh": "n. 碰撞",
-        "unit": 14,
+        "unit": 11,
         "example": "a midair collision between two aircraft",
         "exampleZh": "兩架飛機在空中相撞"
     },
@@ -6375,7 +6375,7 @@ const toeicWordsDB = [
         "en": "color",
         "kk": "/ˈkəɫɝ/",
         "zh": "n. 顏色",
-        "unit": 14,
+        "unit": 11,
         "example": "color flooded her skin as she realized what he meant",
         "exampleZh": "當她意識到他的意思時，顏色淹沒了她的皮膚"
     },
@@ -6384,7 +6384,7 @@ const toeicWordsDB = [
         "en": "column",
         "kk": "/ˈkɑɫəm/",
         "zh": "n. 專欄",
-        "unit": 14,
+        "unit": 11,
         "example": "The column is cylindrical.",
         "exampleZh": "柱子是圓柱形的。"
     },
@@ -6393,7 +6393,7 @@ const toeicWordsDB = [
         "en": "combat",
         "kk": "/ˈkɑmbæt/",
         "zh": "n. 戰鬥",
-        "unit": 14,
+        "unit": 11,
         "example": "a combat zone",
         "exampleZh": "一個戰區"
     },
@@ -6402,7 +6402,7 @@ const toeicWordsDB = [
         "en": "combination",
         "kk": "/ˌkɑmbəˈneɪʃən/",
         "zh": "n. 結合",
-        "unit": 14,
+        "unit": 11,
         "example": "I love that combination.",
         "exampleZh": "我喜歡這個組合。"
     },
@@ -6411,7 +6411,7 @@ const toeicWordsDB = [
         "en": "combine",
         "kk": "/ˈkɑmbaɪn/",
         "zh": "v. 結合",
-        "unit": 14,
+        "unit": 11,
         "example": "Germany combines modern and medieval.",
         "exampleZh": "德國結合了現代和中世紀。"
     },
@@ -6420,7 +6420,7 @@ const toeicWordsDB = [
         "en": "come",
         "kk": "/ˈkəm/",
         "zh": "v. 來",
-        "unit": 14,
+        "unit": 11,
         "example": "do you want to come fishing tomorrow?",
         "exampleZh": "你明天想來釣魚嗎？"
     },
@@ -6429,7 +6429,7 @@ const toeicWordsDB = [
         "en": "comedy",
         "kk": "/ˈkɑmədi/",
         "zh": "n. 喜劇",
-        "unit": 14,
+        "unit": 11,
         "example": "Ziri's comedy contains vulgarity.",
         "exampleZh": "齊日的喜劇包含粗俗之處。"
     },
@@ -6438,7 +6438,7 @@ const toeicWordsDB = [
         "en": "comfort",
         "kk": "/ˈkəmfɝt/",
         "zh": "n. 舒適",
-        "unit": 14,
+        "unit": 11,
         "example": "Cicadas are comforting.",
         "exampleZh": "蟬聲讓人心曠神怡。"
     },
@@ -6447,7 +6447,7 @@ const toeicWordsDB = [
         "en": "comfortable",
         "kk": "/ˈkəmfɝtəbəɫ/",
         "zh": "adj. 舒服的",
-        "unit": 14,
+        "unit": 11,
         "example": "a comfortable victory",
         "exampleZh": "輕鬆的勝利"
     },
@@ -6456,7 +6456,7 @@ const toeicWordsDB = [
         "en": "comic",
         "kk": "/ˈkɑmɪk/",
         "zh": "adj. 滑稽的",
-        "unit": 14,
+        "unit": 11,
         "example": "Tom collects comics.",
         "exampleZh": "湯姆收集漫畫。"
     },
@@ -6465,7 +6465,7 @@ const toeicWordsDB = [
         "en": "command",
         "kk": "/kəˈmænd/",
         "zh": "v. 命令",
-        "unit": 14,
+        "unit": 11,
         "example": "Wait for my command.",
         "exampleZh": "等待我的命令。"
     },
@@ -6474,7 +6474,7 @@ const toeicWordsDB = [
         "en": "commander",
         "kk": "/kəˈmændɝ/",
         "zh": "n. 指揮官",
-        "unit": 14,
+        "unit": 11,
         "example": "Dmitri is the commander.",
         "exampleZh": "德米特里是指揮官。"
     },
@@ -6483,7 +6483,7 @@ const toeicWordsDB = [
         "en": "commemorate",
         "kk": "/kəˈmɛmɝˌeɪt/",
         "zh": "v. 紀念",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -6492,7 +6492,7 @@ const toeicWordsDB = [
         "en": "commence",
         "kk": "/kəˈmɛns/",
         "zh": "v. 開始",
-        "unit": 14,
+        "unit": 11,
         "example": "a public inquiry is due to commence on the 16th",
         "exampleZh": "公眾調查將於16日開始"
     },
@@ -6501,7 +6501,7 @@ const toeicWordsDB = [
         "en": "commend",
         "kk": "",
         "zh": "v. 稱讚",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -6510,7 +6510,7 @@ const toeicWordsDB = [
         "en": "comment",
         "kk": "/ˈkɑmɛnt/",
         "zh": "n. 評論",
-        "unit": 14,
+        "unit": 11,
         "example": "They posted comments.",
         "exampleZh": "他們發表了評論。"
     },
@@ -6519,7 +6519,7 @@ const toeicWordsDB = [
         "en": "commerce",
         "kk": "/ˈkɑmɝs/",
         "zh": "n. 商業",
-        "unit": 14,
+        "unit": 11,
         "example": "English is useful in commerce.",
         "exampleZh": "英語在商業上很有用。"
     },
@@ -6528,7 +6528,7 @@ const toeicWordsDB = [
         "en": "commercial",
         "kk": "/kəˈmɝʃəɫ/",
         "zh": "adj. 商業的",
-        "unit": 14,
+        "unit": 11,
         "example": "We hate commercials.",
         "exampleZh": "我們討厭廣告。"
     },
@@ -6537,7 +6537,7 @@ const toeicWordsDB = [
         "en": "commission",
         "kk": "/kəˈmɪʃən/",
         "zh": "n. 佣金；委員會",
-        "unit": 14,
+        "unit": 11,
         "example": "he has resigned his commission",
         "exampleZh": "他已辭去職務"
     },
@@ -6546,7 +6546,7 @@ const toeicWordsDB = [
         "en": "commit",
         "kk": "/kəˈmɪt/",
         "zh": "v. 犯",
-        "unit": 14,
+        "unit": 11,
         "example": "Someone commited suicide.",
         "exampleZh": "有人自殺了。"
     },
@@ -6555,7 +6555,7 @@ const toeicWordsDB = [
         "en": "commitment",
         "kk": "/kəˈmɪtmənt/",
         "zh": "n. 承諾",
-        "unit": 14,
+        "unit": 11,
         "example": "the company's commitment to quality",
         "exampleZh": "公司對品質的承諾"
     },
@@ -6564,7 +6564,7 @@ const toeicWordsDB = [
         "en": "committee",
         "kk": "/kəˈmɪti/",
         "zh": "n. 委員會",
-        "unit": 14,
+        "unit": 11,
         "example": "Tom is on several committees.",
         "exampleZh": "湯姆是多個委員會的成員。"
     },
@@ -6573,7 +6573,7 @@ const toeicWordsDB = [
         "en": "commodity",
         "kk": "/kəˈmɑdəti/",
         "zh": "n. 商品",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -6582,7 +6582,7 @@ const toeicWordsDB = [
         "en": "common",
         "kk": "/ˈkɑmən/",
         "zh": "adj. 常見的",
-        "unit": 14,
+        "unit": 11,
         "example": "the common or vernacular name",
         "exampleZh": "俗名或俗名"
     },
@@ -6591,7 +6591,7 @@ const toeicWordsDB = [
         "en": "commonly",
         "kk": "",
         "zh": "adv. 通常",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -6600,7 +6600,7 @@ const toeicWordsDB = [
         "en": "communicate",
         "kk": "/kəmˈjunəˌkeɪt/",
         "zh": "v. 溝通",
-        "unit": 14,
+        "unit": 11,
         "example": "We communicate assertively.",
         "exampleZh": "我們自信地溝通。"
     },
@@ -6609,7 +6609,7 @@ const toeicWordsDB = [
         "en": "communication",
         "kk": "/kəmˌjunəˈkeɪʃən/",
         "zh": "n. 溝通",
-        "unit": 14,
+        "unit": 11,
         "example": "Jonas lost communication.",
         "exampleZh": "喬納斯失去了聯繫。"
     },
@@ -6618,7 +6618,7 @@ const toeicWordsDB = [
         "en": "commute",
         "kk": "/kəmˈjut/",
         "zh": "v. 通勤",
-        "unit": 14,
+        "unit": 11,
         "example": "the daily commute",
         "exampleZh": "日常通勤"
     },
@@ -6627,7 +6627,7 @@ const toeicWordsDB = [
         "en": "commuter",
         "kk": "/kəmˈjutɝ/",
         "zh": "n. 通勤者",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -6636,7 +6636,7 @@ const toeicWordsDB = [
         "en": "compact",
         "kk": "/ˈkɑmpækt/",
         "zh": "adj. 緊湊的",
-        "unit": 14,
+        "unit": 11,
         "example": "strength is then introduced by infiltrating glass into the compact",
         "exampleZh": "然後透過將玻璃滲透到緊湊體中來引入強度"
     },
@@ -6645,7 +6645,7 @@ const toeicWordsDB = [
         "en": "companion",
         "kk": "/kəmˈpænjən/",
         "zh": "n. 同伴",
-        "unit": 14,
+        "unit": 11,
         "example": "You have many companions.",
         "exampleZh": "你有很多同伴。"
     },
@@ -6654,7 +6654,7 @@ const toeicWordsDB = [
         "en": "company",
         "kk": "/ˈkəmpəˌni/",
         "zh": "n. 公司",
-        "unit": 14,
+        "unit": 11,
         "example": "a shipping company",
         "exampleZh": "一家船運公司"
     },
@@ -6663,7 +6663,7 @@ const toeicWordsDB = [
         "en": "comparable",
         "kk": "/ˈkɑmpɝəbəɫ/",
         "zh": "adj. 可比較的",
-        "unit": 14,
+        "unit": 11,
         "example": "flaked stone and bone tools comparable to Neanderthal man's tools",
         "exampleZh": "片狀石器和骨器可與尼安德塔人的工具相媲美"
     },
@@ -6672,7 +6672,7 @@ const toeicWordsDB = [
         "en": "comparative",
         "kk": "/kəmˈpɛɹətɪv/",
         "zh": "adj. 比較的",
-        "unit": 14,
+        "unit": 11,
         "example": "he returned to the comparative comfort of his own home",
         "exampleZh": "他回到了自己相對舒適的家"
     },
@@ -6681,7 +6681,7 @@ const toeicWordsDB = [
         "en": "compare",
         "kk": "/kəmˈpɛɹ/",
         "zh": "v. 比較",
-        "unit": 14,
+        "unit": 11,
         "example": "sales were modest and cannot compare with the glory days of 1989",
         "exampleZh": "銷量平平，無法與 1989 年的輝煌歲月相比"
     },
@@ -6690,7 +6690,7 @@ const toeicWordsDB = [
         "en": "comparison",
         "kk": "/kəmˈpɛɹəsən/",
         "zh": "n. 比較",
-        "unit": 14,
+        "unit": 11,
         "example": "The comparison is apt.",
         "exampleZh": "這個對比是恰當的。"
     },
@@ -6699,7 +6699,7 @@ const toeicWordsDB = [
         "en": "compass",
         "kk": "/ˈkəmpəs/",
         "zh": "n. 指南針",
-        "unit": 14,
+        "unit": 11,
         "example": "this region had within its compass many types of agriculture",
         "exampleZh": "該地區擁有多種農業類型"
     },
@@ -6708,7 +6708,7 @@ const toeicWordsDB = [
         "en": "compassion",
         "kk": "/kəmˈpæʃən/",
         "zh": "n. 同情",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -6717,7 +6717,7 @@ const toeicWordsDB = [
         "en": "compatible",
         "kk": "/kəmˈpætəbəɫ/",
         "zh": "adj. 兼容的",
-        "unit": 14,
+        "unit": 11,
         "example": "the printer is fully compatible with all leading software",
         "exampleZh": "印表機與所有領先軟體完全相容"
     },
@@ -6726,7 +6726,7 @@ const toeicWordsDB = [
         "en": "compel",
         "kk": "/kəmˈpɛɫ/",
         "zh": "v. 強迫",
-        "unit": 14,
+        "unit": 11,
         "example": "they may compel a witness's attendance at court by issue of a summons",
         "exampleZh": "他們可以透過發出傳票迫使證人出庭"
     },
@@ -6735,7 +6735,7 @@ const toeicWordsDB = [
         "en": "compelling",
         "kk": "",
         "zh": "adj. 引人注目的",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -6744,7 +6744,7 @@ const toeicWordsDB = [
         "en": "compensate",
         "kk": "/ˈkɑmpənˌseɪt/",
         "zh": "v. 補償",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -6753,7 +6753,7 @@ const toeicWordsDB = [
         "en": "compensation",
         "kk": "/ˌkɑmpənˈseɪʃən/",
         "zh": "n. 補償；薪酬",
-        "unit": 14,
+        "unit": 11,
         "example": "the gray streets of London were small compensation for the loss of her beloved Africa",
         "exampleZh": "倫敦的灰色街道只是對她失去心愛的非洲的小小的補償"
     },
@@ -6762,7 +6762,7 @@ const toeicWordsDB = [
         "en": "compete",
         "kk": "/kəmˈpit/",
         "zh": "v. 競爭",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -6771,7 +6771,7 @@ const toeicWordsDB = [
         "en": "competence",
         "kk": "/ˈkɑmpətɪns/",
         "zh": "n. 能力",
-        "unit": 14,
+        "unit": 11,
         "example": "the players displayed varying degrees of competence",
         "exampleZh": "選手們展現了不同程度的能力"
     },
@@ -6780,7 +6780,7 @@ const toeicWordsDB = [
         "en": "competent",
         "kk": "/ˈkɑmpətɪnt/",
         "zh": "adj. 勝任的",
-        "unit": 14,
+        "unit": 11,
         "example": "make sure the firm is competent to carry out the work",
         "exampleZh": "確保公司有能力進行這項工作"
     },
@@ -6789,7 +6789,7 @@ const toeicWordsDB = [
         "en": "competition",
         "kk": "/ˌkɑmpəˈtɪʃən/",
         "zh": "n. 競爭",
-        "unit": 14,
+        "unit": 11,
         "example": "You have competition.",
         "exampleZh": "你有競爭。"
     },
@@ -6798,7 +6798,7 @@ const toeicWordsDB = [
         "en": "competitive",
         "kk": "/kəmˈpɛtətɪv/",
         "zh": "adj. 有競爭力的",
-        "unit": 14,
+        "unit": 11,
         "example": "a car industry competitive with any in the world",
         "exampleZh": "與世界上任何一個汽車工業都具有競爭力的汽車工業"
     },
@@ -6807,7 +6807,7 @@ const toeicWordsDB = [
         "en": "competitor",
         "kk": "/kəmˈpɛtətɝ/",
         "zh": "n. 競爭者",
-        "unit": 14,
+        "unit": 11,
         "example": "You're a competitor.",
         "exampleZh": "你是一個競爭對手。"
     },
@@ -6816,7 +6816,7 @@ const toeicWordsDB = [
         "en": "compile",
         "kk": "/kəmˈpaɪɫ/",
         "zh": "v. 編譯",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -6825,7 +6825,7 @@ const toeicWordsDB = [
         "en": "complain",
         "kk": "/kəmˈpɫeɪn/",
         "zh": "v. 抱怨",
-        "unit": 14,
+        "unit": 11,
         "example": "her husband began to complain of headaches",
         "exampleZh": "她的丈夫開始抱怨頭痛"
     },
@@ -6834,7 +6834,7 @@ const toeicWordsDB = [
         "en": "complaint",
         "kk": "/kəmˈpɫeɪnt/",
         "zh": "n. 抱怨；投訴",
-        "unit": 14,
+        "unit": 11,
         "example": "he hasn't any cause for complaint",
         "exampleZh": "他沒有任何理由抱怨"
     },
@@ -6843,7 +6843,7 @@ const toeicWordsDB = [
         "en": "complement",
         "kk": "/ˈkɑmpɫəmənt/",
         "zh": "n. 補充物",
-        "unit": 14,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -6852,7 +6852,7 @@ const toeicWordsDB = [
         "en": "complete",
         "kk": "/kəmˈpɫit/",
         "zh": "adj. 完整的",
-        "unit": 14,
+        "unit": 11,
         "example": "a complete ban on smoking",
         "exampleZh": "全面禁煙"
     },
@@ -6861,7 +6861,7 @@ const toeicWordsDB = [
         "en": "completion",
         "kk": "/kəmˈpɫiʃən/",
         "zh": "n. 完成",
-        "unit": 14,
+        "unit": 11,
         "example": "the completion date is early next year",
         "exampleZh": "竣工日期為明年初"
     },
@@ -6870,7 +6870,7 @@ const toeicWordsDB = [
         "en": "complex",
         "kk": "/ˈkɑmpɫɛks/",
         "zh": "adj. 複雜的",
-        "unit": 14,
+        "unit": 11,
         "example": "a complex of hotels",
         "exampleZh": "飯店綜合體"
     },
@@ -6879,7 +6879,7 @@ const toeicWordsDB = [
         "en": "complexity",
         "kk": "/kəmˈpɫɛksəti/",
         "zh": "n. 複雜性",
-        "unit": 14,
+        "unit": 11,
         "example": "an issue of great complexity",
         "exampleZh": "一個非常複雜的問題"
     },
@@ -6888,7 +6888,7 @@ const toeicWordsDB = [
         "en": "compliance",
         "kk": "",
         "zh": "n. 遵守；合規",
-        "unit": 15,
+        "unit": 11,
         "example": "they must secure each other's cooperation or compliance",
         "exampleZh": "他們必須確保彼此的合作或遵守"
     },
@@ -6897,7 +6897,7 @@ const toeicWordsDB = [
         "en": "complicate",
         "kk": "/ˈkɑmpɫəˌkeɪt/",
         "zh": "v. 使複雜化",
-        "unit": 15,
+        "unit": 11,
         "example": "War is complicated.",
         "exampleZh": "戰爭是複雜的。"
     },
@@ -6906,7 +6906,7 @@ const toeicWordsDB = [
         "en": "complicated",
         "kk": "",
         "zh": "adj. 複雜的",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -6915,7 +6915,7 @@ const toeicWordsDB = [
         "en": "complication",
         "kk": "/ˌkɑmpɫəˈkeɪʃən/",
         "zh": "n. 併發症",
-        "unit": 15,
+        "unit": 11,
         "example": "there is a complication concerning ownership of the site",
         "exampleZh": "該網站的所有權存在複雜性"
     },
@@ -6924,7 +6924,7 @@ const toeicWordsDB = [
         "en": "compliment",
         "kk": "/ˈkɑmpɫəmɛnt/",
         "zh": "n. 讚美",
-        "unit": 15,
+        "unit": 11,
         "example": "she paid me an enormous compliment",
         "exampleZh": "她給了我極大的讚美"
     },
@@ -6933,7 +6933,7 @@ const toeicWordsDB = [
         "en": "complimentary",
         "kk": "",
         "zh": "adj. 免費的",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -6942,7 +6942,7 @@ const toeicWordsDB = [
         "en": "comply",
         "kk": "",
         "zh": "v. 遵守",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -6951,7 +6951,7 @@ const toeicWordsDB = [
         "en": "component",
         "kk": "/kəmˈpoʊnənt/",
         "zh": "n. 零件",
-        "unit": 15,
+        "unit": 11,
         "example": "light passed through a prism breaks up into its component colors",
         "exampleZh": "光透過棱鏡分解成其組成顏色"
     },
@@ -6960,7 +6960,7 @@ const toeicWordsDB = [
         "en": "compose",
         "kk": "/kəmˈpoʊz/",
         "zh": "v. 組成",
-        "unit": 15,
+        "unit": 11,
         "example": "He composed himself.",
         "exampleZh": "他鎮定下來。"
     },
@@ -6969,7 +6969,7 @@ const toeicWordsDB = [
         "en": "composer",
         "kk": "/kəmˈpoʊzɝ/",
         "zh": "n. 作曲家",
-        "unit": 15,
+        "unit": 11,
         "example": "Composers create music.",
         "exampleZh": "作曲家創作音樂。"
     },
@@ -6978,7 +6978,7 @@ const toeicWordsDB = [
         "en": "composition",
         "kk": "/ˌkɑmpəˈzɪʃən/",
         "zh": "n. 作文",
-        "unit": 15,
+        "unit": 11,
         "example": "It's an excellent composition.",
         "exampleZh": "這是一首優秀的作品。"
     },
@@ -6987,7 +6987,7 @@ const toeicWordsDB = [
         "en": "compound",
         "kk": "/ˈkɑmpaʊnd/",
         "zh": "n. 混合物",
-        "unit": 15,
+        "unit": 11,
         "example": "a compound of hydrogen and oxygen",
         "exampleZh": "氫和氧的化合物"
     },
@@ -6996,7 +6996,7 @@ const toeicWordsDB = [
         "en": "comprehend",
         "kk": "/ˌkɑmpɹiˈhɛnd/",
         "zh": "v. 理解",
-        "unit": 15,
+        "unit": 11,
         "example": "I simply couldn't comprehend what had happened",
         "exampleZh": "我簡直無法理解發生了什麼"
     },
@@ -7005,7 +7005,7 @@ const toeicWordsDB = [
         "en": "comprehension",
         "kk": "/ˌkɑmpɹiˈhɛnʃən/",
         "zh": "n. 理解",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -7014,7 +7014,7 @@ const toeicWordsDB = [
         "en": "comprehensive",
         "kk": "/ˌkɑmpɹiˈhɛnsɪv/",
         "zh": "adj. 全面的",
-        "unit": 15,
+        "unit": 11,
         "example": "a comprehensive collection of photographs",
         "exampleZh": "全面的照片集"
     },
@@ -7023,7 +7023,7 @@ const toeicWordsDB = [
         "en": "compress",
         "kk": "",
         "zh": "v. 壓縮",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -7032,7 +7032,7 @@ const toeicWordsDB = [
         "en": "comprise",
         "kk": "/kəmˈpɹaɪz/",
         "zh": "v. 包含",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -7041,16 +7041,16 @@ const toeicWordsDB = [
         "en": "compromise",
         "kk": "/ˈkɑmpɹəˌmaɪz/",
         "zh": "n. 妥協",
-        "unit": 15,
+        "unit": 11,
         "example": "I should compromise the matter with my father",
         "exampleZh": "我應該和父親妥協"
     },
     {
         "id": 20789,
         "en": "compulsory",
-        "kk": "",
+        "kk": "/kəmˈpʌlsəri/",
         "zh": "adj. 義務的",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -7059,7 +7059,7 @@ const toeicWordsDB = [
         "en": "compute",
         "kk": "/kəmˈpjut/",
         "zh": "v. 計算",
-        "unit": 15,
+        "unit": 11,
         "example": "modern circuitry can compute faster than any chess player",
         "exampleZh": "現代電路的計算速度比任何國際象棋棋手都快"
     },
@@ -7068,7 +7068,7 @@ const toeicWordsDB = [
         "en": "computer",
         "kk": "/kəmˈpjutɝ/",
         "zh": "n. 電腦",
-        "unit": 15,
+        "unit": 11,
         "example": "my computer is frozen",
         "exampleZh": "我的電腦當機了"
     },
@@ -7077,7 +7077,7 @@ const toeicWordsDB = [
         "en": "conceal",
         "kk": "/kənˈsiɫ/",
         "zh": "v. 隱藏",
-        "unit": 15,
+        "unit": 11,
         "example": "love that they had to conceal from others",
         "exampleZh": "他們不得不向別人隱瞞的愛"
     },
@@ -7086,7 +7086,7 @@ const toeicWordsDB = [
         "en": "concede",
         "kk": "/kənˈsid/",
         "zh": "v. 退讓",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -7095,7 +7095,7 @@ const toeicWordsDB = [
         "en": "conceit",
         "kk": "/kənˈsit/",
         "zh": "n. 自負",
-        "unit": 15,
+        "unit": 11,
         "example": "the idea of the wind's singing is a prime romantic conceit",
         "exampleZh": "風的歌唱的想法是一個主要的浪漫幻想"
     },
@@ -7104,7 +7104,7 @@ const toeicWordsDB = [
         "en": "conceive",
         "kk": "/kənˈsiv/",
         "zh": "v. 構思",
-        "unit": 15,
+        "unit": 11,
         "example": "we could not conceive of such things happening to us",
         "exampleZh": "我們無法想像這樣的事情會發生在我們身上"
     },
@@ -7113,7 +7113,7 @@ const toeicWordsDB = [
         "en": "concentrate",
         "kk": "/ˈkɑnsənˌtɹeɪt/",
         "zh": "v. 集中",
-        "unit": 15,
+        "unit": 11,
         "example": "Tom really concentrated.",
         "exampleZh": "湯姆真的很專注。"
     },
@@ -7122,7 +7122,7 @@ const toeicWordsDB = [
         "en": "concentration",
         "kk": "/ˌkɑnsənˈtɹeɪʃən/",
         "zh": "n. 集中",
-        "unit": 15,
+        "unit": 11,
         "example": "the largest concentration of Canada geese on earth",
         "exampleZh": "地球上最大的加拿大鵝集中地"
     },
@@ -7131,7 +7131,7 @@ const toeicWordsDB = [
         "en": "concept",
         "kk": "/ˈkɑnsɛpt/",
         "zh": "n. 概念",
-        "unit": 15,
+        "unit": 11,
         "example": "What a crazy concept!",
         "exampleZh": "多麼瘋狂的概念啊！"
     },
@@ -7140,7 +7140,7 @@ const toeicWordsDB = [
         "en": "conception",
         "kk": "/kənˈsɛpʃən/",
         "zh": "n. 觀念",
-        "unit": 15,
+        "unit": 11,
         "example": "the time between a product's conception and its launch",
         "exampleZh": "產品的構思與發布之間的時間"
     },
@@ -7149,7 +7149,7 @@ const toeicWordsDB = [
         "en": "concern",
         "kk": "/kənˈsɝn/",
         "zh": "v. 關心",
-        "unit": 15,
+        "unit": 11,
         "example": "She was concerned.",
         "exampleZh": "她很擔心。"
     },
@@ -7158,7 +7158,7 @@ const toeicWordsDB = [
         "en": "concerning",
         "kk": "/kənˈsɝnɪŋ/",
         "zh": "prep. 關於",
-        "unit": 15,
+        "unit": 11,
         "example": "dreadful stories concerning a horrible beast",
         "exampleZh": "關於可怕野獸的可怕故事"
     },
@@ -7167,7 +7167,7 @@ const toeicWordsDB = [
         "en": "concert",
         "kk": "/ˈkɑnsɝt/",
         "zh": "n. 音樂會",
-        "unit": 15,
+        "unit": 11,
         "example": "Enjoy the concert.",
         "exampleZh": "欣賞音樂會。"
     },
@@ -7176,7 +7176,7 @@ const toeicWordsDB = [
         "en": "concession",
         "kk": "/kənˈsɛʃən/",
         "zh": "n. 讓步",
-        "unit": 15,
+        "unit": 11,
         "example": "this strict rule was relaxed by concession",
         "exampleZh": "這項嚴格的規定因讓步而放鬆"
     },
@@ -7185,7 +7185,7 @@ const toeicWordsDB = [
         "en": "concise",
         "kk": "/kənˈsaɪs/",
         "zh": "adj. 簡潔的",
-        "unit": 15,
+        "unit": 11,
         "example": "a concise account of the country's history",
         "exampleZh": "該國歷史的簡述"
     },
@@ -7194,7 +7194,7 @@ const toeicWordsDB = [
         "en": "conclude",
         "kk": "/kənˈkɫud/",
         "zh": "v. 結束",
-        "unit": 15,
+        "unit": 11,
         "example": "The session was concluded.",
         "exampleZh": "會議結束。"
     },
@@ -7203,7 +7203,7 @@ const toeicWordsDB = [
         "en": "conclusion",
         "kk": "/kənˈkɫuʒən/",
         "zh": "n. 結論",
-        "unit": 15,
+        "unit": 11,
         "example": "What is the conclusion?",
         "exampleZh": "結論是什麼？"
     },
@@ -7212,7 +7212,7 @@ const toeicWordsDB = [
         "en": "conclusive",
         "kk": "",
         "zh": "adj. 決定性的",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -7221,7 +7221,7 @@ const toeicWordsDB = [
         "en": "concrete",
         "kk": "/ˈkɑnkɹit/",
         "zh": "adj. 具體的",
-        "unit": 15,
+        "unit": 11,
         "example": "He's a concrete person.",
         "exampleZh": "他是一個具體的人。"
     },
@@ -7230,7 +7230,7 @@ const toeicWordsDB = [
         "en": "concur",
         "kk": "",
         "zh": "v. 同意",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -7239,7 +7239,7 @@ const toeicWordsDB = [
         "en": "condemn",
         "kk": "/kənˈdɛm/",
         "zh": "v. 譴責",
-        "unit": 15,
+        "unit": 11,
         "example": "fair-minded people declined to condemn her on mere suspicion",
         "exampleZh": "公正的人拒絕僅僅因為懷疑而譴責她"
     },
@@ -7248,7 +7248,7 @@ const toeicWordsDB = [
         "en": "condense",
         "kk": "/kənˈdɛns/",
         "zh": "v. 壓縮",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -7257,7 +7257,7 @@ const toeicWordsDB = [
         "en": "condition",
         "kk": "/kənˈdɪʃən/",
         "zh": "n. 情況",
-        "unit": 15,
+        "unit": 11,
         "example": "Fuck your conditions.",
         "exampleZh": "操你的條件。"
     },
@@ -7266,7 +7266,7 @@ const toeicWordsDB = [
         "en": "conduct",
         "kk": "/ˈkɑndəkt/",
         "zh": "v. 進行",
-        "unit": 15,
+        "unit": 11,
         "example": "members are bound by a code of conduct",
         "exampleZh": "成員受行為準則的約束"
     },
@@ -7275,7 +7275,7 @@ const toeicWordsDB = [
         "en": "conductor",
         "kk": "/kənˈdəktɝ/",
         "zh": "n. 指揮",
-        "unit": 15,
+        "unit": 11,
         "example": "Ziri is a conductor.",
         "exampleZh": "齊裡是一位指揮家。"
     },
@@ -7284,7 +7284,7 @@ const toeicWordsDB = [
         "en": "cone",
         "kk": "/ˈkoʊn/",
         "zh": "n. 圓錐體",
-        "unit": 15,
+        "unit": 11,
         "example": "Tom licked the ice cream cone.",
         "exampleZh": "湯姆舔了舔蛋捲冰淇淋。"
     },
@@ -7293,7 +7293,7 @@ const toeicWordsDB = [
         "en": "confer",
         "kk": "/kənˈfɝ/",
         "zh": "v. 協商",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -7302,7 +7302,7 @@ const toeicWordsDB = [
         "en": "conference",
         "kk": "/ˈkɑnfɝəns/",
         "zh": "n. 會議",
-        "unit": 15,
+        "unit": 11,
         "example": "a conference call",
         "exampleZh": "電話會議"
     },
@@ -7311,7 +7311,7 @@ const toeicWordsDB = [
         "en": "confess",
         "kk": "/kənˈfɛs/",
         "zh": "v. 承認",
-        "unit": 15,
+        "unit": 11,
         "example": "once apprehended, they would confess their guilt",
         "exampleZh": "一旦被捕，他們就會認罪"
     },
@@ -7320,7 +7320,7 @@ const toeicWordsDB = [
         "en": "confession",
         "kk": "/kənˈfɛʃən/",
         "zh": "n. 承認",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -7329,7 +7329,7 @@ const toeicWordsDB = [
         "en": "confide",
         "kk": "",
         "zh": "v. 吐露",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -7338,7 +7338,7 @@ const toeicWordsDB = [
         "en": "confidence",
         "kk": "/ˈkɑnfədəns/",
         "zh": "n. 信心",
-        "unit": 15,
+        "unit": 11,
         "example": "We gained confidence.",
         "exampleZh": "我們獲得了信心。"
     },
@@ -7347,7 +7347,7 @@ const toeicWordsDB = [
         "en": "confident",
         "kk": "/ˈkɑnfədənt/",
         "zh": "adj. 自信的",
-        "unit": 15,
+        "unit": 11,
         "example": "Write confidently.",
         "exampleZh": "自信地寫作。"
     },
@@ -7356,7 +7356,7 @@ const toeicWordsDB = [
         "en": "confidential",
         "kk": "/ˌkɑnfəˈdɛnʃəɫ/",
         "zh": "adj. 機密的",
-        "unit": 15,
+        "unit": 11,
         "example": "a confidential secretary",
         "exampleZh": "機要秘書"
     },
@@ -7365,7 +7365,7 @@ const toeicWordsDB = [
         "en": "configure",
         "kk": "",
         "zh": "v. 配置",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -7374,7 +7374,7 @@ const toeicWordsDB = [
         "en": "confine",
         "kk": "/kənˈfaɪn/",
         "zh": "v. 限制",
-        "unit": 15,
+        "unit": 11,
         "example": "Where did you confine them?",
         "exampleZh": "你把他們關在哪裡了？"
     },
@@ -7383,7 +7383,7 @@ const toeicWordsDB = [
         "en": "confirm",
         "kk": "/kənˈfɝm/",
         "zh": "v. 確認",
-        "unit": 15,
+        "unit": 11,
         "example": "Mr. Baker's assistant telephoned to confirm his appointment with the chairman",
         "exampleZh": "貝克先生的助理打電話確認他與董事長的任命"
     },
@@ -7392,7 +7392,7 @@ const toeicWordsDB = [
         "en": "confirmation",
         "kk": "",
         "zh": "n. 確認",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -7401,7 +7401,7 @@ const toeicWordsDB = [
         "en": "conflict",
         "kk": "/ˈkɑnfɫɪkt/",
         "zh": "n. 衝突",
-        "unit": 15,
+        "unit": 11,
         "example": "parents' and children's interests sometimes conflict",
         "exampleZh": "父母和孩子的利益有時會發生衝突"
     },
@@ -7410,7 +7410,7 @@ const toeicWordsDB = [
         "en": "conform",
         "kk": "/kənˈfɔɹm/",
         "zh": "v. 遵守",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -7419,7 +7419,7 @@ const toeicWordsDB = [
         "en": "conformity",
         "kk": "",
         "zh": "n. 遵從",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -7428,7 +7428,7 @@ const toeicWordsDB = [
         "en": "confront",
         "kk": "/kənˈfɹənt/",
         "zh": "v. 面對",
-        "unit": 15,
+        "unit": 11,
         "example": "usually the best thing you can do in an embarrassing situation is to confront it head on",
         "exampleZh": "通常，在尷尬的情況下你能做的最好的事情就是直面它"
     },
@@ -7437,7 +7437,7 @@ const toeicWordsDB = [
         "en": "confrontation",
         "kk": "/ˌkɑnfɹənˈteɪʃən/",
         "zh": "n. 對抗",
-        "unit": 15,
+        "unit": 11,
         "example": "a confrontation with the legislature",
         "exampleZh": "與立法機關的對抗"
     },
@@ -7446,7 +7446,7 @@ const toeicWordsDB = [
         "en": "confuse",
         "kk": "/kənˈfjuz/",
         "zh": "v. 使困惑",
-        "unit": 15,
+        "unit": 11,
         "example": "Pietro was confused.",
         "exampleZh": "彼得羅很困惑。"
     },
@@ -7455,7 +7455,7 @@ const toeicWordsDB = [
         "en": "confusion",
         "kk": "/kənˈfjuʒən/",
         "zh": "n. 困惑",
-        "unit": 15,
+        "unit": 11,
         "example": "there seems to be some confusion about which system does what",
         "exampleZh": "對於哪個系統做什麼似乎有些混亂"
     },
@@ -7464,7 +7464,7 @@ const toeicWordsDB = [
         "en": "congratulate",
         "kk": "/kənˈɡɹætʃəˌɫeɪt/",
         "zh": "v. 祝賀",
-        "unit": 15,
+        "unit": 11,
         "example": "They congratulated me.",
         "exampleZh": "他們向我表示祝賀。"
     },
@@ -7473,7 +7473,7 @@ const toeicWordsDB = [
         "en": "congratulation",
         "kk": "/kənˌɡɹætʃəˈɫeɪʃən/",
         "zh": "n. 祝賀",
-        "unit": 15,
+        "unit": 11,
         "example": "he began pumping the hand of his son in congratulation",
         "exampleZh": "他開始握著兒子的手錶示祝賀"
     },
@@ -7482,7 +7482,7 @@ const toeicWordsDB = [
         "en": "congregation",
         "kk": "",
         "zh": "n. 集合",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -7491,7 +7491,7 @@ const toeicWordsDB = [
         "en": "congress",
         "kk": "/ˈkɑŋɡɹəs/",
         "zh": "n. 國會",
-        "unit": 15,
+        "unit": 11,
         "example": "Congress refused to act.",
         "exampleZh": "國會拒絕採取行動。"
     },
@@ -7500,7 +7500,7 @@ const toeicWordsDB = [
         "en": "connect",
         "kk": "/kəˈnɛkt/",
         "zh": "v. 連接",
-        "unit": 15,
+        "unit": 11,
         "example": "Tom has connected.",
         "exampleZh": "湯姆已連線。"
     },
@@ -7509,7 +7509,7 @@ const toeicWordsDB = [
         "en": "connection",
         "kk": "/kəˈnɛkʃən/",
         "zh": "n. 連接",
-        "unit": 15,
+        "unit": 11,
         "example": "People need connection.",
         "exampleZh": "人們需要聯繫。"
     },
@@ -7518,7 +7518,7 @@ const toeicWordsDB = [
         "en": "conquer",
         "kk": "/ˈkɑŋkɝ/",
         "zh": "v. 征服",
-        "unit": 15,
+        "unit": 11,
         "example": "Who conquered Peru?",
         "exampleZh": "誰征服了秘魯？"
     },
@@ -7527,7 +7527,7 @@ const toeicWordsDB = [
         "en": "conquest",
         "kk": "/ˈkɑŋkwɛst/",
         "zh": "n. 征服",
-        "unit": 15,
+        "unit": 11,
         "example": "the conquest of inflation",
         "exampleZh": "征服通貨膨脹"
     },
@@ -7536,7 +7536,7 @@ const toeicWordsDB = [
         "en": "conscience",
         "kk": "/ˈkɑnʃəns/",
         "zh": "n. 良心",
-        "unit": 15,
+        "unit": 11,
         "example": "He had no conscience.",
         "exampleZh": "他沒有良心。"
     },
@@ -7545,7 +7545,7 @@ const toeicWordsDB = [
         "en": "conscientious",
         "kk": "/ˌkɑnʃiˈɛnʃəs/",
         "zh": "adj. 認真的",
-        "unit": 15,
+        "unit": 11,
         "example": "a conscientious and hardworking clerk",
         "exampleZh": "認真勤奮的職員"
     },
@@ -7554,7 +7554,7 @@ const toeicWordsDB = [
         "en": "conscious",
         "kk": "/ˈkɑnʃəs/",
         "zh": "adj. 有意識的",
-        "unit": 15,
+        "unit": 11,
         "example": "Tom was conscious.",
         "exampleZh": "湯姆還有意識。"
     },
@@ -7563,7 +7563,7 @@ const toeicWordsDB = [
         "en": "consciousness",
         "kk": "",
         "zh": "n. 意識",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -7572,7 +7572,7 @@ const toeicWordsDB = [
         "en": "consecutive",
         "kk": "",
         "zh": "adj. 連續的",
-        "unit": 15,
+        "unit": 11,
         "example": "a consecutive clause",
         "exampleZh": "連續子句"
     },
@@ -7581,7 +7581,7 @@ const toeicWordsDB = [
         "en": "consensus",
         "kk": "/kənˈsɛnsəs/",
         "zh": "n. 共識",
-        "unit": 15,
+        "unit": 11,
         "example": "a consensus of opinion among judges",
         "exampleZh": "法官意見一致"
     },
@@ -7590,7 +7590,7 @@ const toeicWordsDB = [
         "en": "consent",
         "kk": "/kənˈsɛnt/",
         "zh": "n. 同意",
-        "unit": 15,
+        "unit": 11,
         "example": "no change may be made without the consent of all the partners",
         "exampleZh": "未經全體合夥人同意不得變更"
     },
@@ -7599,7 +7599,7 @@ const toeicWordsDB = [
         "en": "consequence",
         "kk": "/ˈkɑnsəkwəns/",
         "zh": "n. 結果",
-        "unit": 15,
+        "unit": 11,
         "example": "There are consequences.",
         "exampleZh": "這是有後果的。"
     },
@@ -7608,7 +7608,7 @@ const toeicWordsDB = [
         "en": "consequent",
         "kk": "/ˈkɑnsəkwənt/",
         "zh": "adj. 隨之發生的",
-        "unit": 15,
+        "unit": 11,
         "example": "labor shortages would be created with a consequent increase in wages",
         "exampleZh": "勞動力短缺將導致工資上漲"
     },
@@ -7617,7 +7617,7 @@ const toeicWordsDB = [
         "en": "consequently",
         "kk": "",
         "zh": "adv. 因此",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -7626,7 +7626,7 @@ const toeicWordsDB = [
         "en": "conservation",
         "kk": "/ˌkɑnsɝˈveɪʃən/",
         "zh": "n. 保存",
-        "unit": 15,
+        "unit": 11,
         "example": "they launched a week-long campaign to promote energy conservation",
         "exampleZh": "他們發起了為期一週的節能宣傳活動"
     },
@@ -7635,7 +7635,7 @@ const toeicWordsDB = [
         "en": "conservative",
         "kk": "/kənˈsɝvətɪv/",
         "zh": "adj. 保守的",
-        "unit": 15,
+        "unit": 11,
         "example": "We're conservatives.",
         "exampleZh": "我們是保守派。"
     },
@@ -7644,7 +7644,7 @@ const toeicWordsDB = [
         "en": "conserve",
         "kk": "/kənˈsɝv/",
         "zh": "v. 保存",
-        "unit": 15,
+        "unit": 11,
         "example": "the funds raised will help conserve endangered meadowlands",
         "exampleZh": "籌集的資金將有助於保護瀕危草甸"
     },
@@ -7653,7 +7653,7 @@ const toeicWordsDB = [
         "en": "consider",
         "kk": "/kənˈsɪdɝ/",
         "zh": "v. 考慮",
-        "unit": 15,
+        "unit": 11,
         "example": "I consider him irresponsible",
         "exampleZh": "我認為他不負責任"
     },
@@ -7662,7 +7662,7 @@ const toeicWordsDB = [
         "en": "considerable",
         "kk": "/kənˈsɪdɝəbəɫ/",
         "zh": "adj. 相當大的",
-        "unit": 15,
+        "unit": 11,
         "example": "a position of considerable influence",
         "exampleZh": "有相當影響力的地位"
     },
@@ -7671,7 +7671,7 @@ const toeicWordsDB = [
         "en": "considerably",
         "kk": "",
         "zh": "adv. 相當地",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -7680,7 +7680,7 @@ const toeicWordsDB = [
         "en": "considerate",
         "kk": "/kənˈsɪdɝət/",
         "zh": "adj. 體貼的",
-        "unit": 15,
+        "unit": 11,
         "example": "be considerate over your handwriting",
         "exampleZh": "體貼你的筆跡"
     },
@@ -7689,7 +7689,7 @@ const toeicWordsDB = [
         "en": "consideration",
         "kk": "/kənˌsɪdɝˈeɪʃən/",
         "zh": "n. 考慮",
-        "unit": 15,
+        "unit": 11,
         "example": "For your consideration.",
         "exampleZh": "供您考慮。"
     },
@@ -7698,7 +7698,7 @@ const toeicWordsDB = [
         "en": "consist",
         "kk": "/kənˈsɪst/",
         "zh": "v. 組成",
-        "unit": 15,
+        "unit": 11,
         "example": "to turn an entire consist requires a wye",
         "exampleZh": "轉動整個組需要一個 Y 形"
     },
@@ -7707,7 +7707,7 @@ const toeicWordsDB = [
         "en": "consistency",
         "kk": "",
         "zh": "n. 一致性",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -7716,7 +7716,7 @@ const toeicWordsDB = [
         "en": "consistent",
         "kk": "/kənˈsɪstənt/",
         "zh": "adj. 一致的",
-        "unit": 15,
+        "unit": 11,
         "example": "I trained consistently.",
         "exampleZh": "我堅持不懈地訓練。"
     },
@@ -7725,7 +7725,7 @@ const toeicWordsDB = [
         "en": "console",
         "kk": "/ˈkɑnsoʊɫ/",
         "zh": "v. 安慰",
-        "unit": 15,
+        "unit": 11,
         "example": "you can console yourself with the thought that you did your best",
         "exampleZh": "你可以安慰自己，你已經盡力了"
     },
@@ -7734,7 +7734,7 @@ const toeicWordsDB = [
         "en": "consolidate",
         "kk": "",
         "zh": "v. 鞏固",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -7743,7 +7743,7 @@ const toeicWordsDB = [
         "en": "conspicuous",
         "kk": "",
         "zh": "adj. 顯著的",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -7752,7 +7752,7 @@ const toeicWordsDB = [
         "en": "conspiracy",
         "kk": "/kənˈspɪɹəsi/",
         "zh": "n. 陰謀",
-        "unit": 15,
+        "unit": 11,
         "example": "they were cleared of conspiracy to pervert the course of justice",
         "exampleZh": "他們被證明沒有陰謀妨礙司法公正"
     },
@@ -7761,7 +7761,7 @@ const toeicWordsDB = [
         "en": "constant",
         "kk": "/ˈkɑnstənt/",
         "zh": "adj. 不斷的",
-        "unit": 15,
+        "unit": 11,
         "example": "He spoke constantly.",
         "exampleZh": "他不停地說話。"
     },
@@ -7770,7 +7770,7 @@ const toeicWordsDB = [
         "en": "constantly",
         "kk": "",
         "zh": "adv. 經常地",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -7779,7 +7779,7 @@ const toeicWordsDB = [
         "en": "constitute",
         "kk": "/ˈkɑnstəˌtut/",
         "zh": "v. 構成",
-        "unit": 15,
+        "unit": 11,
         "example": "single parents constitute a great proportion of the poor",
         "exampleZh": "單親父母佔貧困人口的很大一部分"
     },
@@ -7788,7 +7788,7 @@ const toeicWordsDB = [
         "en": "constitution",
         "kk": "/ˌkɑnstəˈtuʃən/",
         "zh": "n. 憲法",
-        "unit": 15,
+        "unit": 11,
         "example": "Algeria has a constitution.",
         "exampleZh": "阿爾及利亞有憲法。"
     },
@@ -7797,7 +7797,7 @@ const toeicWordsDB = [
         "en": "constraint",
         "kk": "",
         "zh": "n. 限制",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -7806,7 +7806,7 @@ const toeicWordsDB = [
         "en": "construct",
         "kk": "/ˈkɑnstɹəkt/",
         "zh": "v. 建造",
-        "unit": 15,
+        "unit": 11,
         "example": "Ideas are mental constructs.",
         "exampleZh": "想法是心理構造。"
     },
@@ -7815,7 +7815,7 @@ const toeicWordsDB = [
         "en": "construction",
         "kk": "/kənˈstɹəkʃən/",
         "zh": "n. 建設",
-        "unit": 15,
+        "unit": 11,
         "example": "I worked in construction.",
         "exampleZh": "我從事建築工作。"
     },
@@ -7824,7 +7824,7 @@ const toeicWordsDB = [
         "en": "constructive",
         "kk": "/kənˈstɹəktɪv/",
         "zh": "adj. 建設性的",
-        "unit": 15,
+        "unit": 11,
         "example": "Fyodor got constructive criticism.",
         "exampleZh": "費奧多爾得到了建設性的批評。"
     },
@@ -7833,7 +7833,7 @@ const toeicWordsDB = [
         "en": "consult",
         "kk": "/kənˈsəɫt/",
         "zh": "v. 請教",
-        "unit": 15,
+        "unit": 11,
         "example": "Tom was consulted.",
         "exampleZh": "有人諮詢了湯姆。"
     },
@@ -7842,7 +7842,7 @@ const toeicWordsDB = [
         "en": "consultant",
         "kk": "/kənˈsəɫtənt/",
         "zh": "n. 顧問",
-        "unit": 15,
+        "unit": 11,
         "example": "she is currently a self-employed business consultant",
         "exampleZh": "她目前是個人商業顧問"
     },
@@ -7851,7 +7851,7 @@ const toeicWordsDB = [
         "en": "consultation",
         "kk": "/ˌkɑnsəɫˈteɪʃən/",
         "zh": "n. 諮詢",
-        "unit": 15,
+        "unit": 11,
         "example": "it's always a good idea to have a consultation with a specialist who can give you more details and more insights",
         "exampleZh": "諮詢專家總是一個好主意，他可以為您提供更多細節和更多見解"
     },
@@ -7860,7 +7860,7 @@ const toeicWordsDB = [
         "en": "consume",
         "kk": "/kənˈsum/",
         "zh": "v. 消耗",
-        "unit": 15,
+        "unit": 11,
         "example": "Time consumes all things.",
         "exampleZh": "時間會吞噬一切。"
     },
@@ -7869,7 +7869,7 @@ const toeicWordsDB = [
         "en": "consumer",
         "kk": "/kənˈsumɝ/",
         "zh": "n. 消費者",
-        "unit": 15,
+        "unit": 11,
         "example": "consumer demand",
         "exampleZh": "消費者需求"
     },
@@ -7878,7 +7878,7 @@ const toeicWordsDB = [
         "en": "consumption",
         "kk": "/kənˈsəmpʃən/",
         "zh": "n. 消費",
-        "unit": 15,
+        "unit": 11,
         "example": "his mother had died of consumption",
         "exampleZh": "他的母親死於肺病"
     },
@@ -7887,7 +7887,7 @@ const toeicWordsDB = [
         "en": "contact",
         "kk": "/ˈkɑnˌtækt/",
         "zh": "v. 接觸",
-        "unit": 15,
+        "unit": 11,
         "example": "contact dermatitis",
         "exampleZh": "接觸性皮膚炎"
     },
@@ -7896,7 +7896,7 @@ const toeicWordsDB = [
         "en": "contain",
         "kk": "/kənˈteɪn/",
         "zh": "v. 包含",
-        "unit": 15,
+        "unit": 11,
         "example": "she was scarcely able to contain herself as she waited to spill the beans",
         "exampleZh": "當她等待洩露秘密時，她幾乎無法控制自己"
     },
@@ -7905,7 +7905,7 @@ const toeicWordsDB = [
         "en": "container",
         "kk": "/kənˈteɪnɝ/",
         "zh": "n. 容器",
-        "unit": 15,
+        "unit": 11,
         "example": "a container ship",
         "exampleZh": "一艘貨櫃船"
     },
@@ -7914,7 +7914,7 @@ const toeicWordsDB = [
         "en": "contaminate",
         "kk": "/kənˈtæməˌneɪt/",
         "zh": "v. 汙染",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -7923,7 +7923,7 @@ const toeicWordsDB = [
         "en": "contemplate",
         "kk": "/ˈkɑntəmˌpɫeɪt/",
         "zh": "v. 沉思",
-        "unit": 15,
+        "unit": 11,
         "example": "the results of a trade war are too horrifying to contemplate",
         "exampleZh": "貿易戰的結果慘不忍睹"
     },
@@ -7932,7 +7932,7 @@ const toeicWordsDB = [
         "en": "contemporary",
         "kk": "/kənˈtɛmpɝˌɛɹi/",
         "zh": "adj. 當代的",
-        "unit": 15,
+        "unit": 11,
         "example": "contemporary art",
         "exampleZh": "當代藝術"
     },
@@ -7941,7 +7941,7 @@ const toeicWordsDB = [
         "en": "contempt",
         "kk": "/kənˈtɛmpt/",
         "zh": "n. 輕視",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -7950,7 +7950,7 @@ const toeicWordsDB = [
         "en": "contend",
         "kk": "/kənˈtɛnd/",
         "zh": "v. 競爭",
-        "unit": 15,
+        "unit": 11,
         "example": "she had to contend with his uncertain temper",
         "exampleZh": "她必須應付他反覆無常的脾氣"
     },
@@ -7959,7 +7959,7 @@ const toeicWordsDB = [
         "en": "content",
         "kk": "/ˈkɑntɛnt/",
         "zh": "n. 內容",
-        "unit": 15,
+        "unit": 11,
         "example": "Dmitri was contented.",
         "exampleZh": "德米特里很滿意。"
     },
@@ -7968,7 +7968,7 @@ const toeicWordsDB = [
         "en": "contention",
         "kk": "",
         "zh": "n. 爭論",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -7977,7 +7977,7 @@ const toeicWordsDB = [
         "en": "contest",
         "kk": "/ˈkɑntɛst/",
         "zh": "n. 比賽",
-        "unit": 15,
+        "unit": 11,
         "example": "He won the contest.",
         "exampleZh": "他贏得了比賽。"
     },
@@ -7986,7 +7986,7 @@ const toeicWordsDB = [
         "en": "context",
         "kk": "/ˈkɑntɛkst/",
         "zh": "n. 背景",
-        "unit": 15,
+        "unit": 11,
         "example": "What's the context?",
         "exampleZh": "背景是什麼？"
     },
@@ -7995,7 +7995,7 @@ const toeicWordsDB = [
         "en": "continent",
         "kk": "/ˈkɑntənənt/",
         "zh": "n. 大陸",
-        "unit": 15,
+        "unit": 11,
         "example": "Europe is a continent.",
         "exampleZh": "歐洲是一個大陸。"
     },
@@ -8004,7 +8004,7 @@ const toeicWordsDB = [
         "en": "contingency",
         "kk": "",
         "zh": "n. 意外事故",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -8013,7 +8013,7 @@ const toeicWordsDB = [
         "en": "continue",
         "kk": "/kənˈtɪnju/",
         "zh": "v. 繼續",
-        "unit": 15,
+        "unit": 11,
         "example": "they have indicated their willingness to continue in office",
         "exampleZh": "他們已表示願意繼續任職"
     },
@@ -8022,7 +8022,7 @@ const toeicWordsDB = [
         "en": "continuous",
         "kk": "/kənˈtɪnjuəs/",
         "zh": "adj. 連續的",
-        "unit": 15,
+        "unit": 11,
         "example": "there are continuous advances in design and production",
         "exampleZh": "設計和生產不斷進步"
     },
@@ -8031,7 +8031,7 @@ const toeicWordsDB = [
         "en": "contract",
         "kk": "/ˈkɑnˌtɹækt/",
         "zh": "n. 合約",
-        "unit": 15,
+        "unit": 11,
         "example": "South can make the contract with correct play",
         "exampleZh": "南方可以透過正確的表現來簽訂合約"
     },
@@ -8040,7 +8040,7 @@ const toeicWordsDB = [
         "en": "contractor",
         "kk": "/ˈkɑnˌtɹæktɝ/",
         "zh": "n. 承包商",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -8049,7 +8049,7 @@ const toeicWordsDB = [
         "en": "contradict",
         "kk": "/ˌkɑntɹəˈdɪkt/",
         "zh": "v. 反駁",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -8058,7 +8058,7 @@ const toeicWordsDB = [
         "en": "contradiction",
         "kk": "/ˌkɑntɹəˈdɪkʃən/",
         "zh": "n. 矛盾",
-        "unit": 15,
+        "unit": 11,
         "example": "the experiment provides a contradiction of the hypothesis",
         "exampleZh": "實驗提供了與假設相矛盾的結果"
     },
@@ -8067,7 +8067,7 @@ const toeicWordsDB = [
         "en": "contrary",
         "kk": "/ˈkɑntɹɛɹi/",
         "zh": "adj. 相反的",
-        "unit": 15,
+        "unit": 11,
         "example": "I know nothing to the contrary.",
         "exampleZh": "我不知道相反的情況。"
     },
@@ -8076,7 +8076,7 @@ const toeicWordsDB = [
         "en": "contrast",
         "kk": "/ˈkɑntɹæst/",
         "zh": "n. 對比",
-        "unit": 15,
+        "unit": 11,
         "example": "Red contrasts well with blue.",
         "exampleZh": "紅色與藍色形成鮮明對比。"
     },
@@ -8085,7 +8085,7 @@ const toeicWordsDB = [
         "en": "contribute",
         "kk": "/kənˈtɹɪbjut/",
         "zh": "v. 貢獻",
-        "unit": 15,
+        "unit": 11,
         "example": "Anyone may contribute.",
         "exampleZh": "任何人都可以做出貢獻。"
     },
@@ -8094,7 +8094,7 @@ const toeicWordsDB = [
         "en": "contribution",
         "kk": "/ˌkɑntɹəbˈjuʃən/",
         "zh": "n. 貢獻",
-        "unit": 15,
+        "unit": 11,
         "example": "he made a lasting contribution by designing the modern radio telescope",
         "exampleZh": "他透過設計現代電波望遠鏡做出了持久的貢獻"
     },
@@ -8103,7 +8103,7 @@ const toeicWordsDB = [
         "en": "contributor",
         "kk": "",
         "zh": "n. 貢獻者",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -8112,7 +8112,7 @@ const toeicWordsDB = [
         "en": "contrive",
         "kk": "",
         "zh": "v. 發明",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -8121,7 +8121,7 @@ const toeicWordsDB = [
         "en": "control",
         "kk": "/kənˈtɹoʊɫ/",
         "zh": "v. 控制",
-        "unit": 15,
+        "unit": 11,
         "example": "passport control",
         "exampleZh": "護照檢查"
     },
@@ -8130,7 +8130,7 @@ const toeicWordsDB = [
         "en": "controversial",
         "kk": "/ˌkɑntɹəˈvɝʃəɫ/",
         "zh": "adj. 有爭議的",
-        "unit": 15,
+        "unit": 11,
         "example": "years of wrangling over a controversial bypass",
         "exampleZh": "多年來圍繞著有爭議的繞行爭論"
     },
@@ -8139,7 +8139,7 @@ const toeicWordsDB = [
         "en": "controversy",
         "kk": "/ˈkɑntɹəˌvɝsi/",
         "zh": "n. 爭議",
-        "unit": 15,
+        "unit": 11,
         "example": "the announcement ended a protracted controversy",
         "exampleZh": "這項公告結束了曠日持久的爭議"
     },
@@ -8148,7 +8148,7 @@ const toeicWordsDB = [
         "en": "convene",
         "kk": "",
         "zh": "v. 召集",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -8157,7 +8157,7 @@ const toeicWordsDB = [
         "en": "convenience",
         "kk": "/kənˈvinjəns/",
         "zh": "n. 便利",
-        "unit": 15,
+        "unit": 11,
         "example": "the convenience of a portable phone",
         "exampleZh": "手機的便利性"
     },
@@ -8166,7 +8166,7 @@ const toeicWordsDB = [
         "en": "convenient",
         "kk": "/kənˈvinjənt/",
         "zh": "adj. 方便的",
-        "unit": 15,
+        "unit": 11,
         "example": "the 34-story building is convenient to downtown",
         "exampleZh": "34層大樓，去市中心很方便"
     },
@@ -8175,7 +8175,7 @@ const toeicWordsDB = [
         "en": "convention",
         "kk": "/kənˈvɛnʃən/",
         "zh": "n. 慣例",
-        "unit": 15,
+        "unit": 11,
         "example": "I shit on conventions.",
         "exampleZh": "我討厭慣例。"
     },
@@ -8184,7 +8184,7 @@ const toeicWordsDB = [
         "en": "conventional",
         "kk": "/kənˈvɛnʃənəɫ/",
         "zh": "adj. 傳統的",
-        "unit": 15,
+        "unit": 11,
         "example": "Conventional oil is cheaper.",
         "exampleZh": "傳統石油較便宜。"
     },
@@ -8193,7 +8193,7 @@ const toeicWordsDB = [
         "en": "converge",
         "kk": "",
         "zh": "v. 匯聚",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -8202,7 +8202,7 @@ const toeicWordsDB = [
         "en": "conversation",
         "kk": "/ˌkɑnvɝˈseɪʃən/",
         "zh": "n. 對話",
-        "unit": 15,
+        "unit": 11,
         "example": "the two men were deep in conversation",
         "exampleZh": "兩人正在深入交談"
     },
@@ -8211,7 +8211,7 @@ const toeicWordsDB = [
         "en": "converse",
         "kk": "/ˈkɑnvɝs/",
         "zh": "v. 交談",
-        "unit": 15,
+        "unit": 11,
         "example": "his converse at such seasons was always elevating",
         "exampleZh": "他在這樣的季節裡的對話總是令人振奮"
     },
@@ -8220,7 +8220,7 @@ const toeicWordsDB = [
         "en": "conversion",
         "kk": "",
         "zh": "n. 轉換",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -8229,7 +8229,7 @@ const toeicWordsDB = [
         "en": "convert",
         "kk": "/ˈkɑnvɝt/",
         "zh": "v. 轉換",
-        "unit": 15,
+        "unit": 11,
         "example": "he is a recent convert to the Church",
         "exampleZh": "他是最近才皈依教會的"
     },
@@ -8238,7 +8238,7 @@ const toeicWordsDB = [
         "en": "convey",
         "kk": "/kənˈveɪ/",
         "zh": "v. 傳達",
-        "unit": 15,
+        "unit": 11,
         "example": "I conveyed the message to him.",
         "exampleZh": "我把這個消息轉達給了他。"
     },
@@ -8247,7 +8247,7 @@ const toeicWordsDB = [
         "en": "convict",
         "kk": "/ˈkɑnvɪkt/",
         "zh": "v. 定罪",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -8256,7 +8256,7 @@ const toeicWordsDB = [
         "en": "conviction",
         "kk": "/kənˈvɪkʃən/",
         "zh": "n. 確信",
-        "unit": 15,
+        "unit": 11,
         "example": "his voice lacked conviction",
         "exampleZh": "他的聲音缺乏說服力"
     },
@@ -8265,7 +8265,7 @@ const toeicWordsDB = [
         "en": "convince",
         "kk": "/kənˈvɪns/",
         "zh": "v. 使確信",
-        "unit": 15,
+        "unit": 11,
         "example": "Tom was convinced.",
         "exampleZh": "湯姆被說服了。"
     },
@@ -8274,7 +8274,7 @@ const toeicWordsDB = [
         "en": "convincing",
         "kk": "",
         "zh": "adj. 令人信服的",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -8283,7 +8283,7 @@ const toeicWordsDB = [
         "en": "cook",
         "kk": "/ˈkʊk/",
         "zh": "v. 烹調",
-        "unit": 15,
+        "unit": 11,
         "example": "a short order cook",
         "exampleZh": "速食廚師"
     },
@@ -8292,7 +8292,7 @@ const toeicWordsDB = [
         "en": "cool",
         "kk": "/ˈkuɫ/",
         "zh": "adj. 涼爽的",
-        "unit": 15,
+        "unit": 11,
         "example": "he made no concessions to fashion, yet somehow he was hip and cool",
         "exampleZh": "他對時尚毫不讓步，但不知怎的，他又時髦又酷"
     },
@@ -8301,7 +8301,7 @@ const toeicWordsDB = [
         "en": "cooperate",
         "kk": "/ˈkwɑpɝˌeɪt/",
         "zh": "v. 合作",
-        "unit": 15,
+        "unit": 11,
         "example": "Tom has cooperated.",
         "exampleZh": "湯姆已經合作了。"
     },
@@ -8310,7 +8310,7 @@ const toeicWordsDB = [
         "en": "cooperation",
         "kk": "/ˌkwɑpɝˈeɪʃən/",
         "zh": "n. 合作",
-        "unit": 15,
+        "unit": 11,
         "example": "they worked in close cooperation with the AAA",
         "exampleZh": "他們與 AAA 密切合作"
     },
@@ -8319,7 +8319,7 @@ const toeicWordsDB = [
         "en": "cooperative",
         "kk": "/koʊˈɑpɝˌeɪtɪv/",
         "zh": "adj. 合作的",
-        "unit": 15,
+        "unit": 11,
         "example": "Was Tom cooperative?",
         "exampleZh": "湯姆合作嗎？"
     },
@@ -8328,7 +8328,7 @@ const toeicWordsDB = [
         "en": "coordinate",
         "kk": "/koʊˈɔɹdəˌneɪt/",
         "zh": "v. 協調",
-        "unit": 15,
+        "unit": 11,
         "example": "you will coordinate with consultants and other departments on a variety of projects",
         "exampleZh": "您將與顧問和其他部門協調各種項目"
     },
@@ -8337,7 +8337,7 @@ const toeicWordsDB = [
         "en": "coordination",
         "kk": "",
         "zh": "n. 協調",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -8346,7 +8346,7 @@ const toeicWordsDB = [
         "en": "cop",
         "kk": "/ˈkɑp/",
         "zh": "n. 警察",
-        "unit": 15,
+        "unit": 11,
         "example": "Cops love doughnuts.",
         "exampleZh": "警察喜歡甜甜圈。"
     },
@@ -8355,7 +8355,7 @@ const toeicWordsDB = [
         "en": "cope",
         "kk": "/ˈkoʊp/",
         "zh": "v. 應付",
-        "unit": 15,
+        "unit": 11,
         "example": "I cope with stress.",
         "exampleZh": "我應對壓力。"
     },
@@ -8364,7 +8364,7 @@ const toeicWordsDB = [
         "en": "copy",
         "kk": "/ˈkɑpi/",
         "zh": "n. 副本",
-        "unit": 15,
+        "unit": 11,
         "example": "this is Edwards, do you copy, over",
         "exampleZh": "這是愛德華茲，聽到了嗎，結束"
     },
@@ -8373,7 +8373,7 @@ const toeicWordsDB = [
         "en": "copyright",
         "kk": "/ˈkɑpiˌɹaɪt/",
         "zh": "n. 版權",
-        "unit": 15,
+        "unit": 11,
         "example": "permission to reproduce photographs and other copyright material",
         "exampleZh": "複製照片和其他版權資料的許可"
     },
@@ -8382,7 +8382,7 @@ const toeicWordsDB = [
         "en": "core",
         "kk": "/ˈkɔɹ/",
         "zh": "n. 核心",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -8391,7 +8391,7 @@ const toeicWordsDB = [
         "en": "corner",
         "kk": "/ˈkɔɹnɝ/",
         "zh": "n. 角落",
-        "unit": 15,
+        "unit": 11,
         "example": "whether they will corner the market in graphics software remains to be seen",
         "exampleZh": "他們是否會壟斷圖形軟體市場還有待觀察"
     },
@@ -8400,7 +8400,7 @@ const toeicWordsDB = [
         "en": "corporate",
         "kk": "/ˈkɔɹpɝət/",
         "zh": "adj. 公司的",
-        "unit": 15,
+        "unit": 11,
         "example": "local authorities, like other corporate bodies, may reduce capital spending",
         "exampleZh": "地方當局與其他法人機構一樣，可能會減少資本支出"
     },
@@ -8409,7 +8409,7 @@ const toeicWordsDB = [
         "en": "corporation",
         "kk": "/ˌkɔɹpɝˈeɪʃən/",
         "zh": "n. 公司；法人",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -8418,7 +8418,7 @@ const toeicWordsDB = [
         "en": "corps",
         "kk": "/ˈkɔɹ/",
         "zh": "n. 部隊",
-        "unit": 15,
+        "unit": 11,
         "example": "the press corps",
         "exampleZh": "記者團"
     },
@@ -8427,7 +8427,7 @@ const toeicWordsDB = [
         "en": "correct",
         "kk": "/kɝˈɛkt/",
         "zh": "adj. 正確的",
-        "unit": 15,
+        "unit": 11,
         "example": "he was a polite man, invariably correct and pleasant with Mrs. Collins",
         "exampleZh": "他是一個有禮貌的人，對柯林斯夫人總是正確且令人愉快"
     },
@@ -8436,7 +8436,7 @@ const toeicWordsDB = [
         "en": "correction",
         "kk": "",
         "zh": "n. 訂正",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -8445,7 +8445,7 @@ const toeicWordsDB = [
         "en": "correlate",
         "kk": "",
         "zh": "v. 使相關",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -8454,7 +8454,7 @@ const toeicWordsDB = [
         "en": "correlation",
         "kk": "",
         "zh": "n. 相關性",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -8463,7 +8463,7 @@ const toeicWordsDB = [
         "en": "correspond",
         "kk": "/ˌkɔɹəˈspɑnd/",
         "zh": "v. 符合",
-        "unit": 15,
+        "unit": 11,
         "example": "Tom corresponded with Mary.",
         "exampleZh": "湯姆與瑪麗通信。"
     },
@@ -8472,7 +8472,7 @@ const toeicWordsDB = [
         "en": "correspondence",
         "kk": "/ˌkɔɹəˈspɑndəns/",
         "zh": "n. 通信；信件",
-        "unit": 15,
+        "unit": 11,
         "example": "his wife dealt with his private correspondence",
         "exampleZh": "他的妻子處理他的私人信件"
     },
@@ -8481,7 +8481,7 @@ const toeicWordsDB = [
         "en": "correspondent",
         "kk": "/ˌkɔɹəˈspɑndənt/",
         "zh": "n. 通訊記者",
-        "unit": 15,
+        "unit": 11,
         "example": "she wasn't much of a correspondent",
         "exampleZh": "她不是什麼記者"
     },
@@ -8490,7 +8490,7 @@ const toeicWordsDB = [
         "en": "corridor",
         "kk": "/ˈkɔɹədɝ/",
         "zh": "n. 走廊",
-        "unit": 15,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -8499,7 +8499,7 @@ const toeicWordsDB = [
         "en": "corrupt",
         "kk": "/kɝˈəpt/",
         "zh": "adj. 腐敗的",
-        "unit": 15,
+        "unit": 11,
         "example": "the play can do no harm since its audience is already corrupt",
         "exampleZh": "這齣戲不會造成任何傷害，因為它的觀眾已經腐敗了"
     },
@@ -8508,7 +8508,7 @@ const toeicWordsDB = [
         "en": "corruption",
         "kk": "/kɝˈəpʃən/",
         "zh": "n. 腐敗",
-        "unit": 15,
+        "unit": 11,
         "example": "a record of a word's corruption",
         "exampleZh": "單字損壞的記錄"
     },
@@ -8517,7 +8517,7 @@ const toeicWordsDB = [
         "en": "cost",
         "kk": "/ˈkɑst/",
         "zh": "n. 成本",
-        "unit": 15,
+        "unit": 11,
         "example": "if you want to own an island, it'll cost you",
         "exampleZh": "如果你想擁有一座島嶼，你就得付出代價"
     },
@@ -8526,7 +8526,7 @@ const toeicWordsDB = [
         "en": "costly",
         "kk": "/ˈkɑstɫi/",
         "zh": "adj. 昂貴的",
-        "unit": 16,
+        "unit": 11,
         "example": "the government's biggest and most costly mistake",
         "exampleZh": "政府最大且代價最高的錯誤"
     },
@@ -8535,7 +8535,7 @@ const toeicWordsDB = [
         "en": "costume",
         "kk": "/ˈkɑstum/",
         "zh": "n. 服裝",
-        "unit": 16,
+        "unit": 11,
         "example": "I know this costume.",
         "exampleZh": "我認識這套服裝。"
     },
@@ -8544,7 +8544,7 @@ const toeicWordsDB = [
         "en": "cottage",
         "kk": "/ˈkɑtədʒ/",
         "zh": "n. 小屋",
-        "unit": 16,
+        "unit": 11,
         "example": "Tom built this cottage.",
         "exampleZh": "湯姆建造了這座小屋。"
     },
@@ -8553,7 +8553,7 @@ const toeicWordsDB = [
         "en": "cotton",
         "kk": "/ˈkɑtən/",
         "zh": "n. 棉花",
-        "unit": 16,
+        "unit": 11,
         "example": "a cotton reel",
         "exampleZh": "棉捲軸"
     },
@@ -8562,7 +8562,7 @@ const toeicWordsDB = [
         "en": "couch",
         "kk": "/ˈkaʊtʃ/",
         "zh": "n. 沙發",
-        "unit": 16,
+        "unit": 11,
         "example": "This couch is comfy.",
         "exampleZh": "這個沙發很舒服。"
     },
@@ -8571,7 +8571,7 @@ const toeicWordsDB = [
         "en": "cough",
         "kk": "/ˈkɑf/",
         "zh": "v. 咳嗽",
-        "unit": 16,
+        "unit": 11,
         "example": "she gave a discreet cough",
         "exampleZh": "她小心翼翼地咳嗽了一聲"
     },
@@ -8580,7 +8580,7 @@ const toeicWordsDB = [
         "en": "council",
         "kk": "/ˈkaʊnsəɫ/",
         "zh": "n. 議會",
-        "unit": 16,
+        "unit": 11,
         "example": "He worked for the council.",
         "exampleZh": "他為議會工作。"
     },
@@ -8589,7 +8589,7 @@ const toeicWordsDB = [
         "en": "counsel",
         "kk": "/ˈkaʊnsəɫ/",
         "zh": "n. 建議",
-        "unit": 16,
+        "unit": 11,
         "example": "the counsel for the defense",
         "exampleZh": "辯護律師"
     },
@@ -8598,7 +8598,7 @@ const toeicWordsDB = [
         "en": "counseling",
         "kk": "",
         "zh": "n. 輔導",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -8607,7 +8607,7 @@ const toeicWordsDB = [
         "en": "counselor",
         "kk": "/ˈkaʊnsəɫɝ/",
         "zh": "n. 顧問",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -8616,7 +8616,7 @@ const toeicWordsDB = [
         "en": "count",
         "kk": "/ˈkaʊnt/",
         "zh": "v. 計算",
-        "unit": 16,
+        "unit": 11,
         "example": "I count myself fortunate to have known him",
         "exampleZh": "我認為自己很幸運能夠認識他"
     },
@@ -8625,7 +8625,7 @@ const toeicWordsDB = [
         "en": "counter",
         "kk": "/ˈkaʊntɝ/",
         "zh": "n. 櫃台",
-        "unit": 16,
+        "unit": 11,
         "example": "Pay at the counter.",
         "exampleZh": "在櫃檯付款。"
     },
@@ -8634,7 +8634,7 @@ const toeicWordsDB = [
         "en": "counterpart",
         "kk": "/ˈkaʊntɝˌpɑɹt/",
         "zh": "n. 對應的人或物",
-        "unit": 16,
+        "unit": 11,
         "example": "the minister held talks with his French counterpart",
         "exampleZh": "部長與法國外交部長舉行會談"
     },
@@ -8643,7 +8643,7 @@ const toeicWordsDB = [
         "en": "country",
         "kk": "/ˈkəntɹi/",
         "zh": "n. 國家",
-        "unit": 16,
+        "unit": 11,
         "example": "Steinbeck country includes the Monterey Peninsula",
         "exampleZh": "斯坦貝克國家包括蒙特利半島"
     },
@@ -8652,7 +8652,7 @@ const toeicWordsDB = [
         "en": "countryside",
         "kk": "/ˈkəntɹiˌsaɪd/",
         "zh": "n. 鄉村",
-        "unit": 16,
+        "unit": 11,
         "example": "they explored the surrounding countryside",
         "exampleZh": "他們探索了周圍的鄉村"
     },
@@ -8661,7 +8661,7 @@ const toeicWordsDB = [
         "en": "county",
         "kk": "/ˈkaʊni/",
         "zh": "n. 縣",
-        "unit": 16,
+        "unit": 11,
         "example": "I live in Yolo County.",
         "exampleZh": "我住在約洛縣。"
     },
@@ -8670,7 +8670,7 @@ const toeicWordsDB = [
         "en": "couple",
         "kk": "/ˈkəpəɫ/",
         "zh": "n. 夫婦",
-        "unit": 16,
+        "unit": 11,
         "example": "a honeymoon couple",
         "exampleZh": "一對蜜月夫婦"
     },
@@ -8679,7 +8679,7 @@ const toeicWordsDB = [
         "en": "courage",
         "kk": "/ˈkɝədʒ/",
         "zh": "n. 勇氣",
-        "unit": 16,
+        "unit": 11,
         "example": "she called on all her courage to face the ordeal",
         "exampleZh": "她鼓起全部勇氣去面對磨難"
     },
@@ -8688,7 +8688,7 @@ const toeicWordsDB = [
         "en": "courier",
         "kk": "",
         "zh": "n. 快遞員",
-        "unit": 16,
+        "unit": 11,
         "example": "the check was dispatched by courier",
         "exampleZh": "支票是透過快遞寄出的"
     },
@@ -8697,7 +8697,7 @@ const toeicWordsDB = [
         "en": "course",
         "kk": "/ˈkɔɹs/",
         "zh": "n. 課程",
-        "unit": 16,
+        "unit": 11,
         "example": "the doctor prescribed a course of antibiotics",
         "exampleZh": "醫生開了一個療程的抗生素"
     },
@@ -8706,7 +8706,7 @@ const toeicWordsDB = [
         "en": "court",
         "kk": "/ˈkɔɹt/",
         "zh": "n. 法庭",
-        "unit": 16,
+        "unit": 11,
         "example": "I prefer an indoor court",
         "exampleZh": "我比較喜歡室內球場"
     },
@@ -8715,7 +8715,7 @@ const toeicWordsDB = [
         "en": "courtesy",
         "kk": "/ˈkɝtəsi/",
         "zh": "n. 禮貌",
-        "unit": 16,
+        "unit": 11,
         "example": "Have some courtesy.",
         "exampleZh": "有點禮貌吧"
     },
@@ -8724,7 +8724,7 @@ const toeicWordsDB = [
         "en": "cover",
         "kk": "/ˈkəvɝ/",
         "zh": "v. 覆蓋",
-        "unit": 16,
+        "unit": 11,
         "example": "I moved in front of Hawk to cover him as he reloaded",
         "exampleZh": "當霍克重新裝彈時，我走到他前面掩護他"
     },
@@ -8733,7 +8733,7 @@ const toeicWordsDB = [
         "en": "coverage",
         "kk": "/ˈkəvɝədʒ/",
         "zh": "n. 涵蓋範圍；保險範圍",
-        "unit": 16,
+        "unit": 11,
         "example": "a network of eighty transmitters would give nationwide coverage",
         "exampleZh": "由八十個發射機組成的網路將覆蓋全國"
     },
@@ -8742,7 +8742,7 @@ const toeicWordsDB = [
         "en": "coward",
         "kk": "/ˈkaʊɝd/",
         "zh": "n. 懦夫",
-        "unit": 16,
+        "unit": 11,
         "example": "Archers are cowards.",
         "exampleZh": "弓箭手都是膽小鬼。"
     },
@@ -8751,7 +8751,7 @@ const toeicWordsDB = [
         "en": "crack",
         "kk": "/ˈkɹæk/",
         "zh": "v. 破裂",
-        "unit": 16,
+        "unit": 11,
         "example": "Ziri heard cracks.",
         "exampleZh": "茲瑞聽到了破裂聲。"
     },
@@ -8760,7 +8760,7 @@ const toeicWordsDB = [
         "en": "craft",
         "kk": "/ˈkɹæft/",
         "zh": "n. 工藝",
-        "unit": 16,
+        "unit": 11,
         "example": "This is a nice craft.",
         "exampleZh": "這是一門不錯的工藝品。"
     },
@@ -8769,7 +8769,7 @@ const toeicWordsDB = [
         "en": "crash",
         "kk": "/ˈkɹæʃ/",
         "zh": "v. 碰撞",
-        "unit": 16,
+        "unit": 11,
         "example": "Firefox has crashed.",
         "exampleZh": "火狐瀏覽器崩潰了。"
     },
@@ -8778,7 +8778,7 @@ const toeicWordsDB = [
         "en": "crawl",
         "kk": "/ˈkɹɔɫ/",
         "zh": "v. 爬行",
-        "unit": 16,
+        "unit": 11,
         "example": "Leonid crawled away.",
         "exampleZh": "列昂尼德爬走了。"
     },
@@ -8787,7 +8787,7 @@ const toeicWordsDB = [
         "en": "crazy",
         "kk": "/ˈkɹeɪzi/",
         "zh": "adj. 瘋狂的",
-        "unit": 16,
+        "unit": 11,
         "example": "I'm crazy about Cindy",
         "exampleZh": "我為辛迪瘋狂"
     },
@@ -8796,7 +8796,7 @@ const toeicWordsDB = [
         "en": "create",
         "kk": "/kɹiˈeɪt/",
         "zh": "v. 創造",
-        "unit": 16,
+        "unit": 11,
         "example": "God created people.",
         "exampleZh": "神創造了人。"
     },
@@ -8805,7 +8805,7 @@ const toeicWordsDB = [
         "en": "creation",
         "kk": "/kɹiˈeɪʃən/",
         "zh": "n. 創造",
-        "unit": 16,
+        "unit": 11,
         "example": "God is not his creation.",
         "exampleZh": "上帝不是祂的創造物。"
     },
@@ -8814,7 +8814,7 @@ const toeicWordsDB = [
         "en": "creative",
         "kk": "/kɹiˈeɪtɪv/",
         "zh": "adj. 有創造力的",
-        "unit": 16,
+        "unit": 11,
         "example": "creative writing",
         "exampleZh": "創意寫作"
     },
@@ -8823,7 +8823,7 @@ const toeicWordsDB = [
         "en": "creativity",
         "kk": "/ˌkɹieɪˈtɪvəti/",
         "zh": "n. 創造力",
-        "unit": 16,
+        "unit": 11,
         "example": "Unleash your creativity!",
         "exampleZh": "釋放你的創造力！"
     },
@@ -8832,7 +8832,7 @@ const toeicWordsDB = [
         "en": "creator",
         "kk": "/kɹiˈeɪtɝ/",
         "zh": "n. 創造者",
-        "unit": 16,
+        "unit": 11,
         "example": "God is the creator.",
         "exampleZh": "神是創造者。"
     },
@@ -8841,7 +8841,7 @@ const toeicWordsDB = [
         "en": "creature",
         "kk": "/ˈkɹitʃɝ/",
         "zh": "n. 生物",
-        "unit": 16,
+        "unit": 11,
         "example": "He saw the creature.",
         "exampleZh": "他看到了這個生物。"
     },
@@ -8850,7 +8850,7 @@ const toeicWordsDB = [
         "en": "credential",
         "kk": "",
         "zh": "n. 憑證",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -8859,7 +8859,7 @@ const toeicWordsDB = [
         "en": "credit",
         "kk": "/ˈkɹɛdət/",
         "zh": "n. 信用",
-        "unit": 16,
+        "unit": 11,
         "example": "I have bad credit.",
         "exampleZh": "我的信用不好。"
     },
@@ -8868,7 +8868,7 @@ const toeicWordsDB = [
         "en": "crew",
         "kk": "/ˈkɹu/",
         "zh": "n. 全體人員",
-        "unit": 16,
+        "unit": 11,
         "example": "The crew is large.",
         "exampleZh": "船員規模很大。"
     },
@@ -8877,7 +8877,7 @@ const toeicWordsDB = [
         "en": "crime",
         "kk": "/ˈkɹaɪm/",
         "zh": "n. 犯罪",
-        "unit": 16,
+        "unit": 11,
         "example": "the victims of crime",
         "exampleZh": "犯罪受害者"
     },
@@ -8886,7 +8886,7 @@ const toeicWordsDB = [
         "en": "criminal",
         "kk": "/ˈkɹɪmənəɫ/",
         "zh": "adj. 犯罪的",
-        "unit": 16,
+        "unit": 11,
         "example": "They're criminals.",
         "exampleZh": "他們是罪犯。"
     },
@@ -8895,7 +8895,7 @@ const toeicWordsDB = [
         "en": "cripple",
         "kk": "/ˈkɹɪpəɫ/",
         "zh": "v. 使殘廢",
-        "unit": 16,
+        "unit": 11,
         "example": "You crippled Mina.",
         "exampleZh": "你把米娜弄殘了。"
     },
@@ -8904,7 +8904,7 @@ const toeicWordsDB = [
         "en": "crisis",
         "kk": "/ˈkɹaɪsəs/",
         "zh": "n. 危機",
-        "unit": 16,
+        "unit": 11,
         "example": "a crisis point of history",
         "exampleZh": "歷史的危機點"
     },
@@ -8913,7 +8913,7 @@ const toeicWordsDB = [
         "en": "crisp",
         "kk": "/ˈkɹɪsp/",
         "zh": "adj. 脆的",
-        "unit": 16,
+        "unit": 11,
         "example": "a crisp autumn day",
         "exampleZh": "秋高氣爽的一天"
     },
@@ -8922,7 +8922,7 @@ const toeicWordsDB = [
         "en": "criteria",
         "kk": "",
         "zh": "n. 標準",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -8931,7 +8931,7 @@ const toeicWordsDB = [
         "en": "criterion",
         "kk": "/kɹaɪˈtɪɹiən/",
         "zh": "n. 標準",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -8940,7 +8940,7 @@ const toeicWordsDB = [
         "en": "critic",
         "kk": "/ˈkɹɪtɪk/",
         "zh": "n. 評論家",
-        "unit": 16,
+        "unit": 11,
         "example": "a film critic",
         "exampleZh": "影評人"
     },
@@ -8949,7 +8949,7 @@ const toeicWordsDB = [
         "en": "critical",
         "kk": "/ˈkɹɪtɪkəɫ/",
         "zh": "adj. 批評的",
-        "unit": 16,
+        "unit": 11,
         "example": "Safety is critical.",
         "exampleZh": "安全至關重要。"
     },
@@ -8958,7 +8958,7 @@ const toeicWordsDB = [
         "en": "criticism",
         "kk": "/ˈkɹɪtɪˌsɪzəm/",
         "zh": "n. 批評",
-        "unit": 16,
+        "unit": 11,
         "example": "Yanni accepts criticism.",
         "exampleZh": "雅尼接受批評。"
     },
@@ -8967,7 +8967,7 @@ const toeicWordsDB = [
         "en": "criticize",
         "kk": "/ˈkɹɪtɪˌsaɪz/",
         "zh": "v. 批評",
-        "unit": 16,
+        "unit": 11,
         "example": "She criticized him.",
         "exampleZh": "她批評他。"
     },
@@ -8976,7 +8976,7 @@ const toeicWordsDB = [
         "en": "crop",
         "kk": "/ˈkɹɑp/",
         "zh": "n. 農作物",
-        "unit": 16,
+        "unit": 11,
         "example": "she has her hair cut in a short crop",
         "exampleZh": "她把頭髮剪成了短髮"
     },
@@ -8985,7 +8985,7 @@ const toeicWordsDB = [
         "en": "cross",
         "kk": "/ˈkɹɔs/",
         "zh": "v. 交叉",
-        "unit": 16,
+        "unit": 11,
         "example": "she wore a cross around her neck",
         "exampleZh": "她脖子上戴著一個十字架"
     },
@@ -8994,7 +8994,7 @@ const toeicWordsDB = [
         "en": "crowd",
         "kk": "/ˈkɹaʊd/",
         "zh": "n. 人群",
-        "unit": 16,
+        "unit": 11,
         "example": "he'd become just another face in the crowd",
         "exampleZh": "他變成了人群中的另一張臉孔"
     },
@@ -9003,7 +9003,7 @@ const toeicWordsDB = [
         "en": "crowded",
         "kk": "",
         "zh": "adj. 擁擠的",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -9012,7 +9012,7 @@ const toeicWordsDB = [
         "en": "crucial",
         "kk": "/ˈkɹuʃəɫ/",
         "zh": "adj. 決定性的",
-        "unit": 16,
+        "unit": 11,
         "example": "negotiations were at a crucial stage",
         "exampleZh": "談判正處於關鍵階段"
     },
@@ -9021,7 +9021,7 @@ const toeicWordsDB = [
         "en": "crude",
         "kk": "/ˈkɹud/",
         "zh": "adj. 粗糙的",
-        "unit": 16,
+        "unit": 11,
         "example": "a crude joke",
         "exampleZh": "一個粗俗的笑話"
     },
@@ -9030,7 +9030,7 @@ const toeicWordsDB = [
         "en": "cruel",
         "kk": "/ˈkɹuəɫ/",
         "zh": "adj. 殘忍的",
-        "unit": 16,
+        "unit": 11,
         "example": "people who are cruel to animals",
         "exampleZh": "虐待動物的人"
     },
@@ -9039,7 +9039,7 @@ const toeicWordsDB = [
         "en": "cruise",
         "kk": "/ˈkɹuz/",
         "zh": "v. 巡航",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -9048,7 +9048,7 @@ const toeicWordsDB = [
         "en": "crush",
         "kk": "/ˈkɹəʃ/",
         "zh": "v. 壓碎",
-        "unit": 16,
+        "unit": 11,
         "example": "Jeans crush your balls.",
         "exampleZh": "牛仔褲會壓垮你的睪丸。"
     },
@@ -9057,7 +9057,7 @@ const toeicWordsDB = [
         "en": "cry",
         "kk": "/ˈkɹaɪ/",
         "zh": "v. 哭泣",
-        "unit": 16,
+        "unit": 11,
         "example": "a cry of despair",
         "exampleZh": "絕望的呼喊"
     },
@@ -9066,7 +9066,7 @@ const toeicWordsDB = [
         "en": "crystal",
         "kk": "/ˈkɹɪstəɫ/",
         "zh": "n. 水晶",
-        "unit": 16,
+        "unit": 11,
         "example": "a quartz crystal",
         "exampleZh": "石英晶體"
     },
@@ -9075,7 +9075,7 @@ const toeicWordsDB = [
         "en": "cube",
         "kk": "/ˈkjub/",
         "zh": "n. 立方體",
-        "unit": 16,
+        "unit": 11,
         "example": "Two cubed is eight.",
         "exampleZh": "二的立方是八。"
     },
@@ -9084,7 +9084,7 @@ const toeicWordsDB = [
         "en": "cue",
         "kk": "/ˈkju/",
         "zh": "n. 暗示",
-        "unit": 16,
+        "unit": 11,
         "example": "The cue ball is white.",
         "exampleZh": "主球是白色的。"
     },
@@ -9093,7 +9093,7 @@ const toeicWordsDB = [
         "en": "cultivate",
         "kk": "/ˈkəɫtəˌveɪt/",
         "zh": "v. 培養",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -9102,7 +9102,7 @@ const toeicWordsDB = [
         "en": "cultivation",
         "kk": "",
         "zh": "n. 培養",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -9111,7 +9111,7 @@ const toeicWordsDB = [
         "en": "cultural",
         "kk": "/ˈkəɫtʃɝəɫ/",
         "zh": "adj. 文化的",
-        "unit": 16,
+        "unit": 11,
         "example": "a cultural festival",
         "exampleZh": "文化節"
     },
@@ -9120,7 +9120,7 @@ const toeicWordsDB = [
         "en": "culture",
         "kk": "/ˈkəɫtʃɝ/",
         "zh": "n. 文化",
-        "unit": 16,
+        "unit": 11,
         "example": "men of culture",
         "exampleZh": "文化人"
     },
@@ -9129,7 +9129,7 @@ const toeicWordsDB = [
         "en": "cupboard",
         "kk": "/ˈkəbɝd/",
         "zh": "n. 櫥櫃",
-        "unit": 16,
+        "unit": 11,
         "example": "The cupboard is full.",
         "exampleZh": "櫃子滿了。"
     },
@@ -9138,7 +9138,7 @@ const toeicWordsDB = [
         "en": "cure",
         "kk": "/ˈkjʊɹ/",
         "zh": "v. 治療",
-        "unit": 16,
+        "unit": 11,
         "example": "he was beyond cure",
         "exampleZh": "他已經無法治癒了"
     },
@@ -9147,7 +9147,7 @@ const toeicWordsDB = [
         "en": "curiosity",
         "kk": "/ˌkjʊɹiˈɑsəti/",
         "zh": "n. 好奇心",
-        "unit": 16,
+        "unit": 11,
         "example": "Curiosity replaced shock.",
         "exampleZh": "好奇取代了震驚。"
     },
@@ -9156,7 +9156,7 @@ const toeicWordsDB = [
         "en": "curious",
         "kk": "/ˈkjʊɹiəs/",
         "zh": "adj. 好奇的",
-        "unit": 16,
+        "unit": 11,
         "example": "I began to be curious about the whereabouts of the bride and groom",
         "exampleZh": "我開始好奇新郎新娘的行蹤"
     },
@@ -9165,7 +9165,7 @@ const toeicWordsDB = [
         "en": "curl",
         "kk": "/ˈkɝɫ/",
         "zh": "v. 捲曲",
-        "unit": 16,
+        "unit": 11,
         "example": "Fyodor cut his curls.",
         "exampleZh": "費奧多爾剪掉了他的捲髮。"
     },
@@ -9174,7 +9174,7 @@ const toeicWordsDB = [
         "en": "currency",
         "kk": "/ˈkɝənsi/",
         "zh": "n. 貨幣",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -9183,7 +9183,7 @@ const toeicWordsDB = [
         "en": "current",
         "kk": "/ˈkɑɹənt/",
         "zh": "adj. 目前的",
-        "unit": 16,
+        "unit": 11,
         "example": "Current times are tough.",
         "exampleZh": "當前形勢嚴峻。"
     },
@@ -9192,7 +9192,7 @@ const toeicWordsDB = [
         "en": "currently",
         "kk": "",
         "zh": "adv. 目前",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -9201,7 +9201,7 @@ const toeicWordsDB = [
         "en": "curriculum",
         "kk": "/kɝˈɪkjəɫəm/",
         "zh": "n. 課程",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -9210,7 +9210,7 @@ const toeicWordsDB = [
         "en": "curve",
         "kk": "/ˈkɝv/",
         "zh": "n. 曲線",
-        "unit": 16,
+        "unit": 11,
         "example": "Why are bananas curved?",
         "exampleZh": "香蕉為什麼是彎的？"
     },
@@ -9219,7 +9219,7 @@ const toeicWordsDB = [
         "en": "custom",
         "kk": "/ˈkəstəm/",
         "zh": "n. 習俗",
-        "unit": 16,
+        "unit": 11,
         "example": "it was my custom to nap for an hour every day",
         "exampleZh": "我的習慣是每天小睡一小時"
     },
@@ -9228,7 +9228,7 @@ const toeicWordsDB = [
         "en": "customer",
         "kk": "/ˈkəstəmɝ/",
         "zh": "n. 顧客",
-        "unit": 16,
+        "unit": 11,
         "example": "Mr. Harrison was a regular customer at the Golden Lion",
         "exampleZh": "哈里森先生是金獅酒店的常客"
     },
@@ -9237,7 +9237,7 @@ const toeicWordsDB = [
         "en": "customs",
         "kk": "/ˈkəstəmz/",
         "zh": "n. 海關",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -9246,7 +9246,7 @@ const toeicWordsDB = [
         "en": "cut",
         "kk": "/ˈkət/",
         "zh": "v. 切割",
-        "unit": 16,
+        "unit": 11,
         "example": "the country was cut into three parts",
         "exampleZh": "這個國家被分成三個部分"
     },
@@ -9255,7 +9255,7 @@ const toeicWordsDB = [
         "en": "cute",
         "kk": "/ˈkjut/",
         "zh": "adj. 可愛的",
-        "unit": 16,
+        "unit": 11,
         "example": "the baby was so cute",
         "exampleZh": "寶寶太可愛了"
     },
@@ -9264,16 +9264,16 @@ const toeicWordsDB = [
         "en": "cycle",
         "kk": "/ˈsaɪkəɫ/",
         "zh": "n. 循環",
-        "unit": 16,
+        "unit": 11,
         "example": "Cars repressed cycles.",
         "exampleZh": "汽車抑制了循環。"
     },
     {
         "id": 21036,
         "en": "cylinder",
-        "kk": "",
+        "kk": "/ˈsɪlɪndə(ɹ)/",
         "zh": "n. 圓柱體",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -9282,7 +9282,7 @@ const toeicWordsDB = [
         "en": "daily",
         "kk": "/ˈdeɪɫi/",
         "zh": "adj. 每天的",
-        "unit": 16,
+        "unit": 11,
         "example": "boats can be rented for a daily rate",
         "exampleZh": "可按日租用船隻"
     },
@@ -9291,7 +9291,7 @@ const toeicWordsDB = [
         "en": "damage",
         "kk": "/ˈdæmədʒ/",
         "zh": "n. 損害",
-        "unit": 16,
+        "unit": 11,
         "example": "bombing caused extensive damage to the town",
         "exampleZh": "轟炸對該鎮造成了嚴重破壞"
     },
@@ -9300,7 +9300,7 @@ const toeicWordsDB = [
         "en": "danger",
         "kk": "/ˈdeɪndʒɝ/",
         "zh": "n. 危險",
-        "unit": 16,
+        "unit": 11,
         "example": "there was no danger of the champagne running out",
         "exampleZh": "沒有香檳用完的危險"
     },
@@ -9309,7 +9309,7 @@ const toeicWordsDB = [
         "en": "dangerous",
         "kk": "/ˈdeɪndʒɝəs/",
         "zh": "adj. 危險的",
-        "unit": 16,
+        "unit": 11,
         "example": "a dangerous animal",
         "exampleZh": "危險的動物"
     },
@@ -9318,7 +9318,7 @@ const toeicWordsDB = [
         "en": "dare",
         "kk": "/ˈdɛɹ/",
         "zh": "v. 敢",
-        "unit": 16,
+        "unit": 11,
         "example": "swap with me, I dare you",
         "exampleZh": "與我交換，我敢你"
     },
@@ -9327,7 +9327,7 @@ const toeicWordsDB = [
         "en": "dark",
         "kk": "/ˈdɑɹk/",
         "zh": "adj. 黑暗的",
-        "unit": 16,
+        "unit": 11,
         "example": "he is dark on certain points of scripture",
         "exampleZh": "他對聖經的某些觀點很黑暗"
     },
@@ -9336,7 +9336,7 @@ const toeicWordsDB = [
         "en": "dash",
         "kk": "/ˈdæʃ/",
         "zh": "v. 猛衝",
-        "unit": 16,
+        "unit": 11,
         "example": "Our hopes were dashed.",
         "exampleZh": "我們的希望破滅了。"
     },
@@ -9345,7 +9345,7 @@ const toeicWordsDB = [
         "en": "data",
         "kk": "/ˈdætə/",
         "zh": "n. 數據",
-        "unit": 16,
+        "unit": 11,
         "example": "there is very little data available",
         "exampleZh": "可用數據很少"
     },
@@ -9354,7 +9354,7 @@ const toeicWordsDB = [
         "en": "database",
         "kk": "",
         "zh": "n. 資料庫",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -9363,7 +9363,7 @@ const toeicWordsDB = [
         "en": "date",
         "kk": "/ˈdeɪt/",
         "zh": "n. 日期",
-        "unit": 16,
+        "unit": 11,
         "example": "they date the paintings to 1460–70",
         "exampleZh": "他們將這些畫作的年代定為 1460-70 年"
     },
@@ -9372,7 +9372,7 @@ const toeicWordsDB = [
         "en": "dawn",
         "kk": "/ˈdɔn/",
         "zh": "n. 黎明",
-        "unit": 16,
+        "unit": 11,
         "example": "the rose-pink light of dawn",
         "exampleZh": "黎明的玫瑰粉色光芒"
     },
@@ -9381,7 +9381,7 @@ const toeicWordsDB = [
         "en": "dead",
         "kk": "/ˈdɛd/",
         "zh": "adj. 死的",
-        "unit": 16,
+        "unit": 11,
         "example": "he has been dead for many years",
         "exampleZh": "他已經死很多年了"
     },
@@ -9390,7 +9390,7 @@ const toeicWordsDB = [
         "en": "deadline",
         "kk": "/ˈdɛdˌɫaɪn/",
         "zh": "n. 截止日期",
-        "unit": 16,
+        "unit": 11,
         "example": "the deadline for submissions is February 5th",
         "exampleZh": "提交截止日期為2月5日"
     },
@@ -9399,7 +9399,7 @@ const toeicWordsDB = [
         "en": "deadly",
         "kk": "/ˈdɛdɫi/",
         "zh": "adj. 致命的",
-        "unit": 16,
+        "unit": 11,
         "example": "we are deadly enemies",
         "exampleZh": "我們是死敵"
     },
@@ -9408,7 +9408,7 @@ const toeicWordsDB = [
         "en": "deaf",
         "kk": "/ˈdɛf/",
         "zh": "adj. 聾的",
-        "unit": 16,
+        "unit": 11,
         "example": "I'm a bit deaf so you'll have to speak up",
         "exampleZh": "我有點聾所以你得大聲說話"
     },
@@ -9417,7 +9417,7 @@ const toeicWordsDB = [
         "en": "deal",
         "kk": "/ˈdiɫ/",
         "zh": "n. 交易",
-        "unit": 16,
+        "unit": 11,
         "example": "he lost a great deal of blood",
         "exampleZh": "他失血過多"
     },
@@ -9426,7 +9426,7 @@ const toeicWordsDB = [
         "en": "dealer",
         "kk": "/ˈdiɫɝ/",
         "zh": "n. 經銷商",
-        "unit": 16,
+        "unit": 11,
         "example": "She's a drug dealer.",
         "exampleZh": "她是一名毒販。"
     },
@@ -9435,7 +9435,7 @@ const toeicWordsDB = [
         "en": "debate",
         "kk": "/dəˈbeɪt/",
         "zh": "n. 辯論",
-        "unit": 16,
+        "unit": 11,
         "example": "the national debate on education",
         "exampleZh": "全國教育辯論"
     },
@@ -9444,7 +9444,7 @@ const toeicWordsDB = [
         "en": "debris",
         "kk": "",
         "zh": "n. 碎片",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -9453,7 +9453,7 @@ const toeicWordsDB = [
         "en": "debt",
         "kk": "/ˈdɛt/",
         "zh": "n. 債務",
-        "unit": 16,
+        "unit": 11,
         "example": "a way to reduce Third World debt",
         "exampleZh": "減少第三世界債務的一種方法"
     },
@@ -9462,7 +9462,7 @@ const toeicWordsDB = [
         "en": "debut",
         "kk": "",
         "zh": "n. 初次登台",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -9471,7 +9471,7 @@ const toeicWordsDB = [
         "en": "decade",
         "kk": "/ˈdɛkeɪd/",
         "zh": "n. 十年",
-        "unit": 16,
+        "unit": 11,
         "example": "That was decades ago.",
         "exampleZh": "那是幾十年前的事了。"
     },
@@ -9480,7 +9480,7 @@ const toeicWordsDB = [
         "en": "decay",
         "kk": "/dɪˈkeɪ/",
         "zh": "v. 腐爛",
-        "unit": 16,
+        "unit": 11,
         "example": "the decay of electrical fields in the electromagnets",
         "exampleZh": "電磁體中電場的衰減"
     },
@@ -9489,7 +9489,7 @@ const toeicWordsDB = [
         "en": "deceit",
         "kk": "",
         "zh": "n. 欺騙",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -9498,7 +9498,7 @@ const toeicWordsDB = [
         "en": "deceive",
         "kk": "/dɪˈsiv/",
         "zh": "v. 欺騙",
-        "unit": 16,
+        "unit": 11,
         "example": "enabling the rulers to deceive themselves about the nature of their own rule",
         "exampleZh": "使統治者能夠在自己統治的本質上欺騙自己"
     },
@@ -9507,7 +9507,7 @@ const toeicWordsDB = [
         "en": "decent",
         "kk": "/ˈdisənt/",
         "zh": "adj. 體面的",
-        "unit": 16,
+        "unit": 11,
         "example": "people need decent homes",
         "exampleZh": "人們需要體面的住房"
     },
@@ -9516,7 +9516,7 @@ const toeicWordsDB = [
         "en": "decide",
         "kk": "/ˌdɪˈsaɪd/",
         "zh": "v. 決定",
-        "unit": 16,
+        "unit": 11,
         "example": "we must decide the fates of the people who headed the coup",
         "exampleZh": "我們必須決定領導政變的人的命運"
     },
@@ -9525,7 +9525,7 @@ const toeicWordsDB = [
         "en": "decision",
         "kk": "/dɪˈsɪʒən/",
         "zh": "n. 決定",
-        "unit": 16,
+        "unit": 11,
         "example": "I'll make the decision on my own",
         "exampleZh": "我會自己做決定"
     },
@@ -9534,7 +9534,7 @@ const toeicWordsDB = [
         "en": "decisive",
         "kk": "/dɪˈsaɪsɪv/",
         "zh": "adj. 決定性的",
-        "unit": 16,
+        "unit": 11,
         "example": "the Supreme Court voided the statute by a decisive 7–2 vote",
         "exampleZh": "最高法院以 7 比 2 的決定性投票結果宣布該法規無效"
     },
@@ -9543,7 +9543,7 @@ const toeicWordsDB = [
         "en": "deck",
         "kk": "/ˈdɛk/",
         "zh": "n. 甲板",
-        "unit": 16,
+        "unit": 11,
         "example": "All hands on deck!",
         "exampleZh": "所有的人都在甲板上！"
     },
@@ -9552,7 +9552,7 @@ const toeicWordsDB = [
         "en": "declaration",
         "kk": "/ˌdɛkɫɝˈeɪʃən/",
         "zh": "n. 宣佈",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -9561,7 +9561,7 @@ const toeicWordsDB = [
         "en": "declare",
         "kk": "/dɪˈkɫɛɹ/",
         "zh": "v. 宣佈",
-        "unit": 16,
+        "unit": 11,
         "example": "Tom declared bankruptcy.",
         "exampleZh": "湯姆宣布破產。"
     },
@@ -9570,7 +9570,7 @@ const toeicWordsDB = [
         "en": "decline",
         "kk": "/dɪˈkɫaɪn/",
         "zh": "v. 下降",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -9579,7 +9579,7 @@ const toeicWordsDB = [
         "en": "decorate",
         "kk": "/ˈdɛkɝˌeɪt/",
         "zh": "v. 裝飾",
-        "unit": 16,
+        "unit": 11,
         "example": "Mary decorated it.",
         "exampleZh": "瑪麗裝飾了它。"
     },
@@ -9588,7 +9588,7 @@ const toeicWordsDB = [
         "en": "decoration",
         "kk": "/ˌdɛkɝˈeɪʃən/",
         "zh": "n. 裝飾",
-        "unit": 16,
+        "unit": 11,
         "example": "pearwood inlaid with floral decoration of stained woods",
         "exampleZh": "梨木鑲嵌染色木材花卉裝飾"
     },
@@ -9597,7 +9597,7 @@ const toeicWordsDB = [
         "en": "decrease",
         "kk": "/ˈdiˌkɹis/",
         "zh": "v. 減少",
-        "unit": 16,
+        "unit": 11,
         "example": "He decreased its value.",
         "exampleZh": "他降低了它的價值。"
     },
@@ -9606,7 +9606,7 @@ const toeicWordsDB = [
         "en": "dedicate",
         "kk": "/ˈdɛdəˌkeɪt/",
         "zh": "v. 奉獻",
-        "unit": 16,
+        "unit": 11,
         "example": "you should dedicate a telephone line to each modem you plan to install",
         "exampleZh": "您應該為計劃安裝的每個數據機專用一條電話線"
     },
@@ -9615,7 +9615,7 @@ const toeicWordsDB = [
         "en": "dedication",
         "kk": "/ˌdɛdəˈkeɪʃən/",
         "zh": "n. 奉獻",
-        "unit": 16,
+        "unit": 11,
         "example": "his dedication to his duties",
         "exampleZh": "他對職責的奉獻"
     },
@@ -9624,7 +9624,7 @@ const toeicWordsDB = [
         "en": "deduct",
         "kk": "",
         "zh": "v. 扣除",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -9633,7 +9633,7 @@ const toeicWordsDB = [
         "en": "deduction",
         "kk": "",
         "zh": "n. 扣除",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -9642,7 +9642,7 @@ const toeicWordsDB = [
         "en": "deed",
         "kk": "/ˈdid/",
         "zh": "n. 行為",
-        "unit": 16,
+        "unit": 11,
         "example": "Your deeds are wanton.",
         "exampleZh": "你的行為很肆意。"
     },
@@ -9651,7 +9651,7 @@ const toeicWordsDB = [
         "en": "deem",
         "kk": "/ˈdim/",
         "zh": "v. 認為",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -9660,7 +9660,7 @@ const toeicWordsDB = [
         "en": "deep",
         "kk": "/ˈdip/",
         "zh": "adj. 深的",
-        "unit": 16,
+        "unit": 11,
         "example": "a deep sleep",
         "exampleZh": "沉睡"
     },
@@ -9669,7 +9669,7 @@ const toeicWordsDB = [
         "en": "deepen",
         "kk": "/ˈdipən/",
         "zh": "v. 加深",
-        "unit": 16,
+        "unit": 11,
         "example": "You deepened the holes.",
         "exampleZh": "你加深了洞。"
     },
@@ -9678,7 +9678,7 @@ const toeicWordsDB = [
         "en": "deeply",
         "kk": "",
         "zh": "adv. 深深地",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -9687,7 +9687,7 @@ const toeicWordsDB = [
         "en": "deer",
         "kk": "/ˈdɪɹ/",
         "zh": "n. 鹿",
-        "unit": 16,
+        "unit": 11,
         "example": "Deer remember faces.",
         "exampleZh": "鹿記得面孔。"
     },
@@ -9696,7 +9696,7 @@ const toeicWordsDB = [
         "en": "default",
         "kk": "",
         "zh": "n. 違約",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -9705,7 +9705,7 @@ const toeicWordsDB = [
         "en": "defeat",
         "kk": "/dɪˈfit/",
         "zh": "v. 擊敗",
-        "unit": 16,
+        "unit": 11,
         "example": "Karl was defeated.",
         "exampleZh": "卡爾被打敗了。"
     },
@@ -9714,7 +9714,7 @@ const toeicWordsDB = [
         "en": "defect",
         "kk": "/ˈdifɛkt/",
         "zh": "n. 缺點",
-        "unit": 16,
+        "unit": 11,
         "example": "the property is free from defect",
         "exampleZh": "該財產沒有缺陷"
     },
@@ -9723,7 +9723,7 @@ const toeicWordsDB = [
         "en": "defective",
         "kk": "",
         "zh": "adj. 有缺陷的",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -9732,7 +9732,7 @@ const toeicWordsDB = [
         "en": "defend",
         "kk": "/dɪˈfɛnd/",
         "zh": "v. 防禦",
-        "unit": 16,
+        "unit": 11,
         "example": "Defend yourselves.",
         "exampleZh": "保衛自己。"
     },
@@ -9741,7 +9741,7 @@ const toeicWordsDB = [
         "en": "defendant",
         "kk": "",
         "zh": "n. 被告",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -9750,7 +9750,7 @@ const toeicWordsDB = [
         "en": "defense",
         "kk": "/dɪˈfɛns/",
         "zh": "n. 防禦",
-        "unit": 16,
+        "unit": 11,
         "example": "defense policy",
         "exampleZh": "國防政策"
     },
@@ -9759,7 +9759,7 @@ const toeicWordsDB = [
         "en": "defensive",
         "kk": "/dɪˈfɛnsɪv/",
         "zh": "adj. 防禦的",
-        "unit": 16,
+        "unit": 11,
         "example": "They got defensive.",
         "exampleZh": "他們採取了防禦措施。"
     },
@@ -9768,7 +9768,7 @@ const toeicWordsDB = [
         "en": "defer",
         "kk": "",
         "zh": "v. 推遲",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -9777,7 +9777,7 @@ const toeicWordsDB = [
         "en": "deficiency",
         "kk": "/dɪˈfɪʃənsi/",
         "zh": "n. 缺乏",
-        "unit": 16,
+        "unit": 11,
         "example": "vitamin A deficiency in children",
         "exampleZh": "兒童維生素A缺乏症"
     },
@@ -9786,7 +9786,7 @@ const toeicWordsDB = [
         "en": "deficit",
         "kk": "",
         "zh": "n. 赤字",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -9795,7 +9795,7 @@ const toeicWordsDB = [
         "en": "define",
         "kk": "/dɪˈfaɪn/",
         "zh": "v. 定義",
-        "unit": 16,
+        "unit": 11,
         "example": "His chin is defined.",
         "exampleZh": "他的下巴輪廓分明。"
     },
@@ -9804,7 +9804,7 @@ const toeicWordsDB = [
         "en": "definite",
         "kk": "/ˈdɛfənət/",
         "zh": "adj. 明確的",
-        "unit": 16,
+        "unit": 11,
         "example": "Definitely try this.",
         "exampleZh": "一定要試試這個。"
     },
@@ -9813,7 +9813,7 @@ const toeicWordsDB = [
         "en": "definitely",
         "kk": "",
         "zh": "adv. 肯定地",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -9822,7 +9822,7 @@ const toeicWordsDB = [
         "en": "definition",
         "kk": "/ˌdɛfəˈnɪʃən/",
         "zh": "n. 定義",
-        "unit": 16,
+        "unit": 11,
         "example": "a dictionary definition of the verb",
         "exampleZh": "動詞的字典定義"
     },
@@ -9831,7 +9831,7 @@ const toeicWordsDB = [
         "en": "degree",
         "kk": "/dɪˈɡɹi/",
         "zh": "n. 程度",
-        "unit": 16,
+        "unit": 11,
         "example": "a question of degree",
         "exampleZh": "程度問題"
     },
@@ -9840,7 +9840,7 @@ const toeicWordsDB = [
         "en": "delay",
         "kk": "/dɪˈɫeɪ/",
         "zh": "v. 延遲",
-        "unit": 16,
+        "unit": 11,
         "example": "I set off without delay",
         "exampleZh": "我毫不拖延地出發了"
     },
@@ -9849,7 +9849,7 @@ const toeicWordsDB = [
         "en": "delegate",
         "kk": "/ˈdɛɫəˌɡeɪt/",
         "zh": "v. 委派",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -9858,7 +9858,7 @@ const toeicWordsDB = [
         "en": "delegation",
         "kk": "/ˌdɛɫəˈɡeɪʃən/",
         "zh": "n. 代表團",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -9867,7 +9867,7 @@ const toeicWordsDB = [
         "en": "delete",
         "kk": "",
         "zh": "v. 刪除",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -9876,7 +9876,7 @@ const toeicWordsDB = [
         "en": "deliberate",
         "kk": "/dɪˈɫɪbɝˌeɪt/",
         "zh": "adj. 故意的",
-        "unit": 16,
+        "unit": 11,
         "example": "a careful and deliberate worker",
         "exampleZh": "細心而深思熟慮的工人"
     },
@@ -9885,7 +9885,7 @@ const toeicWordsDB = [
         "en": "deliberately",
         "kk": "",
         "zh": "adv. 故意地",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -9894,7 +9894,7 @@ const toeicWordsDB = [
         "en": "delicate",
         "kk": "/ˈdɛɫəkət/",
         "zh": "adj. 精緻的",
-        "unit": 16,
+        "unit": 11,
         "example": "He has delicate hands.",
         "exampleZh": "他有一雙纖細的手。"
     },
@@ -9903,7 +9903,7 @@ const toeicWordsDB = [
         "en": "delicious",
         "kk": "/dɪˈɫɪʃəs/",
         "zh": "adj. 美味的",
-        "unit": 16,
+        "unit": 11,
         "example": "delicious home-baked brown bread",
         "exampleZh": "美味的自製黑麵包"
     },
@@ -9912,7 +9912,7 @@ const toeicWordsDB = [
         "en": "delight",
         "kk": "/dɪˈɫaɪt/",
         "zh": "n. 高興",
-        "unit": 16,
+        "unit": 11,
         "example": "Boris was delighted.",
         "exampleZh": "鮑里斯很高興。"
     },
@@ -9921,7 +9921,7 @@ const toeicWordsDB = [
         "en": "delightful",
         "kk": "/dɪˈɫaɪtfəɫ/",
         "zh": "adj. 令人愉快的",
-        "unit": 16,
+        "unit": 11,
         "example": "Cats are delightful.",
         "exampleZh": "貓是令人愉快的。"
     },
@@ -9930,7 +9930,7 @@ const toeicWordsDB = [
         "en": "deliver",
         "kk": "/dɪˈɫɪvɝ/",
         "zh": "v. 遞送；交付",
-        "unit": 16,
+        "unit": 11,
         "example": "deliver us from misery",
         "exampleZh": "救我們脫離苦難"
     },
@@ -9939,7 +9939,7 @@ const toeicWordsDB = [
         "en": "delivery",
         "kk": "/dɪˈɫɪvɝi/",
         "zh": "n. 遞送",
-        "unit": 16,
+        "unit": 11,
         "example": "You have a delivery.",
         "exampleZh": "你有送貨。"
     },
@@ -9948,16 +9948,16 @@ const toeicWordsDB = [
         "en": "demand",
         "kk": "/dɪˈmænd/",
         "zh": "v. 要求",
-        "unit": 16,
+        "unit": 11,
         "example": "Are you demanding?",
         "exampleZh": "你要求高嗎？"
     },
     {
         "id": 21112,
         "en": "demanding",
-        "kk": "",
+        "kk": "/dɪˈmɑːndɪŋ/",
         "zh": "adj. 苛求的",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -9966,7 +9966,7 @@ const toeicWordsDB = [
         "en": "democracy",
         "kk": "/dɪˈmɑkɹəsi/",
         "zh": "n. 民主",
-        "unit": 16,
+        "unit": 11,
         "example": "Democracy is dead.",
         "exampleZh": "民主已死。"
     },
@@ -9975,7 +9975,7 @@ const toeicWordsDB = [
         "en": "democrat",
         "kk": "/ˈdɛməˌkɹæt/",
         "zh": "n. 民主黨員",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -9984,7 +9984,7 @@ const toeicWordsDB = [
         "en": "democratic",
         "kk": "/ˌdɛməˈkɹætɪk/",
         "zh": "adj. 民主的",
-        "unit": 16,
+        "unit": 11,
         "example": "cycling is a democratic activity that can be enjoyed by anyone",
         "exampleZh": "騎自行車是一項民主活動，任何人都可以享受"
     },
@@ -9993,7 +9993,7 @@ const toeicWordsDB = [
         "en": "demographic",
         "kk": "",
         "zh": "adj. 人口統計的",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -10002,7 +10002,7 @@ const toeicWordsDB = [
         "en": "demolish",
         "kk": "",
         "zh": "v. 拆除",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -10011,7 +10011,7 @@ const toeicWordsDB = [
         "en": "demonstrate",
         "kk": "/ˈdɛmənˌstɹeɪt/",
         "zh": "v. 示範；證明",
-        "unit": 16,
+        "unit": 11,
         "example": "she began to demonstrate a new-found confidence",
         "exampleZh": "她開始展現新的自信"
     },
@@ -10020,7 +10020,7 @@ const toeicWordsDB = [
         "en": "demonstration",
         "kk": "/ˌdɛmənˈstɹeɪʃən/",
         "zh": "n. 示範",
-        "unit": 16,
+        "unit": 11,
         "example": "He requested a demonstration.",
         "exampleZh": "他要求進行示威。"
     },
@@ -10029,7 +10029,7 @@ const toeicWordsDB = [
         "en": "denial",
         "kk": "/dɪˈnaɪəɫ/",
         "zh": "n. 否認",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -10038,7 +10038,7 @@ const toeicWordsDB = [
         "en": "denounce",
         "kk": "/dɪˈnaʊns/",
         "zh": "v. 譴責",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -10047,7 +10047,7 @@ const toeicWordsDB = [
         "en": "dense",
         "kk": "/ˈdɛns/",
         "zh": "adj. 密集的",
-        "unit": 16,
+        "unit": 11,
         "example": "Dense clouds formed.",
         "exampleZh": "形成了濃密的雲層。"
     },
@@ -10056,7 +10056,7 @@ const toeicWordsDB = [
         "en": "density",
         "kk": "/ˈdɛnsəti/",
         "zh": "n. 密度",
-        "unit": 16,
+        "unit": 11,
         "example": "chip density doubles every eighteen months",
         "exampleZh": "晶片密度每十八個月翻一番"
     },
@@ -10065,7 +10065,7 @@ const toeicWordsDB = [
         "en": "dentist",
         "kk": "/ˈdɛnɪst/",
         "zh": "n. 牙醫",
-        "unit": 16,
+        "unit": 11,
         "example": "Maria is a dentist.",
         "exampleZh": "瑪麗亞是一名牙醫。"
     },
@@ -10074,7 +10074,7 @@ const toeicWordsDB = [
         "en": "deny",
         "kk": "/dɪˈnaɪ/",
         "zh": "v. 否認",
-        "unit": 16,
+        "unit": 11,
         "example": "they deny any responsibility for the tragedy",
         "exampleZh": "他們否認對這場悲劇負有任何責任"
     },
@@ -10083,7 +10083,7 @@ const toeicWordsDB = [
         "en": "depart",
         "kk": "/dɪˈpɑɹt/",
         "zh": "v. 離開",
-        "unit": 16,
+        "unit": 11,
         "example": "Tom departed last Monday.",
         "exampleZh": "湯姆上週一離開了。"
     },
@@ -10092,7 +10092,7 @@ const toeicWordsDB = [
         "en": "department",
         "kk": "/dɪˈpɑɹtmənt/",
         "zh": "n. 部門",
-        "unit": 16,
+        "unit": 11,
         "example": "that's not my department",
         "exampleZh": "那不是我的部門"
     },
@@ -10101,7 +10101,7 @@ const toeicWordsDB = [
         "en": "departure",
         "kk": "/dɪˈpɑɹtʃɝ/",
         "zh": "n. 離開",
-        "unit": 16,
+        "unit": 11,
         "example": "When is your departure?",
         "exampleZh": "你什麼時候出發？"
     },
@@ -10110,7 +10110,7 @@ const toeicWordsDB = [
         "en": "depend",
         "kk": "/dɪˈpɛnd/",
         "zh": "v. 依賴",
-        "unit": 16,
+        "unit": 11,
         "example": "the kind of person you could depend on",
         "exampleZh": "你可以依賴什麼樣的人"
     },
@@ -10119,7 +10119,7 @@ const toeicWordsDB = [
         "en": "dependable",
         "kk": "/dɪˈpɛndəbəɫ/",
         "zh": "adj. 可靠的",
-        "unit": 16,
+        "unit": 11,
         "example": "Tom was dependable.",
         "exampleZh": "湯姆很可靠。"
     },
@@ -10128,7 +10128,7 @@ const toeicWordsDB = [
         "en": "dependence",
         "kk": "",
         "zh": "n. 依賴",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -10137,7 +10137,7 @@ const toeicWordsDB = [
         "en": "dependent",
         "kk": "/dɪˈpɛndənt/",
         "zh": "adj. 依賴的",
-        "unit": 16,
+        "unit": 11,
         "example": "Tom has dependents.",
         "exampleZh": "湯姆有家屬。"
     },
@@ -10146,7 +10146,7 @@ const toeicWordsDB = [
         "en": "depict",
         "kk": "/dɪˈpɪkt/",
         "zh": "v. 描繪",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -10155,7 +10155,7 @@ const toeicWordsDB = [
         "en": "deplete",
         "kk": "",
         "zh": "v. 耗盡",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -10164,7 +10164,7 @@ const toeicWordsDB = [
         "en": "deploy",
         "kk": "",
         "zh": "v. 部署",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -10173,7 +10173,7 @@ const toeicWordsDB = [
         "en": "deployment",
         "kk": "",
         "zh": "n. 部署",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -10182,7 +10182,7 @@ const toeicWordsDB = [
         "en": "deposit",
         "kk": "/dəˈpɑzɪt/",
         "zh": "n. 訂金；存款",
-        "unit": 16,
+        "unit": 11,
         "example": "a vault in which guests may deposit valuable property",
         "exampleZh": "客人可以存放貴重財產的金庫"
     },
@@ -10191,7 +10191,7 @@ const toeicWordsDB = [
         "en": "depreciate",
         "kk": "",
         "zh": "v. 貶值",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -10200,7 +10200,7 @@ const toeicWordsDB = [
         "en": "depress",
         "kk": "/dɪˈpɹɛs/",
         "zh": "v. 使沮喪",
-        "unit": 16,
+        "unit": 11,
         "example": "Was Tom depressed?",
         "exampleZh": "湯姆情緒低落嗎？"
     },
@@ -10209,7 +10209,7 @@ const toeicWordsDB = [
         "en": "depression",
         "kk": "/dɪˈpɹɛʃən/",
         "zh": "n. 沮喪",
-        "unit": 16,
+        "unit": 11,
         "example": "she was referred by a psychiatrist treating her for depression",
         "exampleZh": "她被一位治療憂鬱症的精神科醫生轉介給她"
     },
@@ -10218,7 +10218,7 @@ const toeicWordsDB = [
         "en": "deprive",
         "kk": "/dɪˈpɹaɪv/",
         "zh": "v. 剝奪",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -10227,7 +10227,7 @@ const toeicWordsDB = [
         "en": "depth",
         "kk": "/ˈdɛpθ/",
         "zh": "n. 深度",
-        "unit": 16,
+        "unit": 11,
         "example": "the wine shows good depth of color",
         "exampleZh": "該酒呈現出良好的色彩深度"
     },
@@ -10236,7 +10236,7 @@ const toeicWordsDB = [
         "en": "deputy",
         "kk": "/ˈdɛpjəti/",
         "zh": "n. 副手",
-        "unit": 16,
+        "unit": 11,
         "example": "his deputy has been largely running the business for the past year",
         "exampleZh": "過去一年裡，他的副手主要負責管理公司業務"
     },
@@ -10245,7 +10245,7 @@ const toeicWordsDB = [
         "en": "derive",
         "kk": "/dɝˈaɪv/",
         "zh": "v. 衍生",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -10254,7 +10254,7 @@ const toeicWordsDB = [
         "en": "descend",
         "kk": "/dɪˈsɛnd/",
         "zh": "v. 下降",
-        "unit": 16,
+        "unit": 11,
         "example": "the aircraft began to descend",
         "exampleZh": "飛機開始下降"
     },
@@ -10263,7 +10263,7 @@ const toeicWordsDB = [
         "en": "describe",
         "kk": "/dɪsˈkɹaɪb/",
         "zh": "v. 描述",
-        "unit": 16,
+        "unit": 11,
         "example": "Describe your day.",
         "exampleZh": "描述一下你的一天。"
     },
@@ -10272,7 +10272,7 @@ const toeicWordsDB = [
         "en": "description",
         "kk": "/dɪsˈkɹɪpʃən/",
         "zh": "n. 描述",
-        "unit": 16,
+        "unit": 11,
         "example": "I like that description.",
         "exampleZh": "我喜歡這個描述。"
     },
@@ -10281,7 +10281,7 @@ const toeicWordsDB = [
         "en": "desert",
         "kk": "/ˈdɛzɝt/",
         "zh": "n. 沙漠",
-        "unit": 16,
+        "unit": 11,
         "example": "desert wastes",
         "exampleZh": "沙漠廢棄物"
     },
@@ -10290,7 +10290,7 @@ const toeicWordsDB = [
         "en": "deserve",
         "kk": "/dɪˈzɝv/",
         "zh": "v. 值得",
-        "unit": 16,
+        "unit": 11,
         "example": "You deserve respect.",
         "exampleZh": "你值得尊重。"
     },
@@ -10299,7 +10299,7 @@ const toeicWordsDB = [
         "en": "design",
         "kk": "/dɪˈzaɪn/",
         "zh": "v. 設計",
-        "unit": 16,
+        "unit": 11,
         "example": "good design can help the reader understand complicated information",
         "exampleZh": "好的設計可以幫助讀者理解複雜的訊息"
     },
@@ -10308,7 +10308,7 @@ const toeicWordsDB = [
         "en": "designate",
         "kk": "/ˈdɛzəɡˌneɪt/",
         "zh": "v. 指定",
-        "unit": 16,
+        "unit": 11,
         "example": "the Director designate",
         "exampleZh": "候任主任"
     },
@@ -10317,7 +10317,7 @@ const toeicWordsDB = [
         "en": "designer",
         "kk": "/dɪˈzaɪnɝ/",
         "zh": "n. 設計師",
-        "unit": 16,
+        "unit": 11,
         "example": "designer drugs",
         "exampleZh": "設計藥物"
     },
@@ -10326,7 +10326,7 @@ const toeicWordsDB = [
         "en": "desirable",
         "kk": "/dɪˈzaɪɝəbəɫ/",
         "zh": "adj. 理想的",
-        "unit": 16,
+        "unit": 11,
         "example": "it is desirable to exercise some social control over technology",
         "exampleZh": "對技術實行一定的社會控制是可取的"
     },
@@ -10335,7 +10335,7 @@ const toeicWordsDB = [
         "en": "desire",
         "kk": "/dɪˈzaɪɝ/",
         "zh": "v. 渴望",
-        "unit": 16,
+        "unit": 11,
         "example": "they were clinging together in fierce mutual desire",
         "exampleZh": "他們懷著強烈的共同慾望緊緊地抱在一起"
     },
@@ -10344,7 +10344,7 @@ const toeicWordsDB = [
         "en": "desk",
         "kk": "/ˈdɛsk/",
         "zh": "n. 書桌",
-        "unit": 16,
+        "unit": 11,
         "example": "the reception desk",
         "exampleZh": "接待處"
     },
@@ -10353,7 +10353,7 @@ const toeicWordsDB = [
         "en": "despair",
         "kk": "/dɪˈspɛɹ/",
         "zh": "n. 絕望",
-        "unit": 16,
+        "unit": 11,
         "example": "driven to despair, he throws himself under a train",
         "exampleZh": "絕望之下，他投身火車底下"
     },
@@ -10362,7 +10362,7 @@ const toeicWordsDB = [
         "en": "desperate",
         "kk": "/ˈdɛspɝɪt/",
         "zh": "adj. 絕望的",
-        "unit": 16,
+        "unit": 11,
         "example": "We were desperate.",
         "exampleZh": "我們很絕望。"
     },
@@ -10371,7 +10371,7 @@ const toeicWordsDB = [
         "en": "despite",
         "kk": "/dɪˈspaɪt/",
         "zh": "prep. 儘管",
-        "unit": 16,
+        "unit": 11,
         "example": "Despite the odds, they succeeded.",
         "exampleZh": "儘管困難重重，他們還是成功了。"
     },
@@ -10380,7 +10380,7 @@ const toeicWordsDB = [
         "en": "destination",
         "kk": "/ˌdɛstəˈneɪʃən/",
         "zh": "n. 目的地",
-        "unit": 16,
+        "unit": 11,
         "example": "a popular destination for golfers",
         "exampleZh": "高爾夫球手的熱門目的地"
     },
@@ -10389,7 +10389,7 @@ const toeicWordsDB = [
         "en": "destiny",
         "kk": "/ˈdɛstəni/",
         "zh": "n. 命運",
-        "unit": 16,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
@@ -10398,7 +10398,7 @@ const toeicWordsDB = [
         "en": "destroy",
         "kk": "/dɪˈstɹɔɪ/",
         "zh": "v. 破壞",
-        "unit": 16,
+        "unit": 11,
         "example": "They destroy nature.",
         "exampleZh": "他們破壞大自然。"
     },
@@ -10407,7 +10407,7 @@ const toeicWordsDB = [
         "en": "destruction",
         "kk": "/dɪˈstɹəkʃən/",
         "zh": "n. 破壞",
-        "unit": 16,
+        "unit": 11,
         "example": "This is total destruction.",
         "exampleZh": "這是徹底的毀滅。"
     }

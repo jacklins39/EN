@@ -11,8 +11,8 @@ if (match) {
     let modified = false;
     db.forEach(w => {
         if (!w.example && exampleCache[w.en] && exampleCache[w.en].ex) {
-            w.example = exampleCache[w.en].ex.en;
-            w.exampleZh = exampleCache[w.en].ex.zh;
+            w.example = exampleCache[w.en].ex;
+            w.exampleZh = exampleCache[w.en].exZh;
             modified = true;
         }
     });
@@ -31,8 +31,8 @@ if (match) {
     let modified = false;
     db.forEach(w => {
         if (!w.example && exampleCache[w.en] && exampleCache[w.en].ex) {
-            w.example = exampleCache[w.en].ex.en;
-            w.exampleZh = exampleCache[w.en].ex.zh;
+            w.example = exampleCache[w.en].ex;
+            w.exampleZh = exampleCache[w.en].exZh;
             modified = true;
         }
     });

@@ -1641,7 +1641,7 @@
             content.innerHTML = `
                 <div class="flex justify-between items-center mb-3 border-b border-indigo-100 pb-2">
                     <h3 class="text-xl font-bold text-indigo-800">管理自訂字庫 (${customWordsDB.length})</h3>
-                    ${customWordsDB.length ? '<div class="flex gap-3 items-center"><button id="btn-save-custom-all" class="bg-indigo-600 text-white text-xs font-bold px-3 py-1.5 rounded-lg">💾 全部儲存</button><button id="btn-del-custom-all" class="text-xs text-red-500 underline">全部刪除</button></div>' : ''}
+                    ${customWordsDB.length ? '<div class="flex gap-3 items-center"><button id="btn-autofill-custom" class="bg-green-600 hover:bg-green-700 text-white text-xs font-bold px-3 py-1.5 rounded-lg shadow-sm transition-colors" title="自動將「請自行查閱」的單字用 Google 翻譯補齊">✨ 自動翻譯並儲存</button><button id="btn-save-custom-all" class="bg-indigo-600 text-white text-xs font-bold px-3 py-1.5 rounded-lg">💾 全部儲存</button><button id="btn-del-custom-all" class="text-xs text-red-500 underline">全部刪除</button></div>' : ''}
                 </div>
                 <div class="max-h-72 overflow-y-auto pr-1 custom-scrollbar">
                     ${rows || '<p class="text-gray-500 text-sm text-center py-4">自訂字庫是空的。</p>'}
@@ -1651,9 +1651,74 @@
                 deleteCustomWords([b.dataset.del]);
                 renderCustomManager();
             }));
+            const autofillBtn = document.getElementById('btn-autofill-custom');
+            if (autofillBtn) {
+                autofillBtn.addEventListener('click', async () => {
+                    const rowsEl = Array.from(content.querySelectorAll('.custom-row'));
+                    const wordsToUpdate = [];
+                    rowsEl.forEach(row => {
+                        const en = row.querySelector('[data-f="en"]').value.trim();
+                        const zhInp = row.querySelector('[data-f="zh"]');
+                        const kkInp = row.querySelector('[data-f="kk"]');
+                        const needsZh = !zhInp.value.trim() || zhInp.value.includes('自行查閱');
+                        const needsKk = !kkInp.value.trim() || kkInp.value === '音標';
+                        if (en && (needsZh || needsKk)) {
+                            wordsToUpdate.push({ en, zhInp, kkInp, needsZh, needsKk });
+                        }
+                    });
+                    if (wordsToUpdate.length > 0) {
+                        autofillBtn.innerText = '處理中...';
+                        autofillBtn.disabled = true;
+                        
+                        // 1. 批次處理中文翻譯
+                        const zhWords = wordsToUpdate.filter(x => x.needsZh);
+                        if (zhWords.length > 0) {
+                            try {
+                                const query = zhWords.map(x => x.en).join('\n');
+                                const res = await fetch(`https://translate.googleapis.com/translate_a/t?client=dict-chrome-ex&sl=en&tl=zh-TW&dt=t&q=${encodeURIComponent(query)}`);
+                                const data = await res.json();
+                                if (data && typeof data[0] === 'string') {
+                                    const zhArray = data[0].split('\n');
+                                    zhWords.forEach((item, idx) => {
+                                        item.zhInp.value = zhArray[idx] || item.zhInp.value;
+                                        item.zhInp.classList.add('bg-green-50');
+                                    });
+                                }
+                            } catch(e) {
+                                console.error('Translation error', e);
+                            }
+                        }
+                        
+                        // 2. 個別處理 KK 音標 (透過 dictionaryapi)
+                        const kkWords = wordsToUpdate.filter(x => x.needsKk);
+                        if (kkWords.length > 0) {
+                            await Promise.all(kkWords.map(async (item) => {
+                                try {
+                                    const word = item.en.split(' ')[0]; // 擷取第一個字查音標
+                                    const res = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(word)}`);
+                                    if (res.ok) {
+                                        const data = await res.json();
+                                        let phonetic = data[0]?.phonetic;
+                                        if (!phonetic && data[0]?.phonetics) {
+                                            const pObj = data[0].phonetics.find(p => p.text);
+                                            if (pObj) phonetic = pObj.text;
+                                        }
+                                        if (phonetic) {
+                                            item.kkInp.value = phonetic;
+                                            item.kkInp.classList.add('bg-green-50');
+                                        }
+                                    }
+                                } catch(e) {}
+                            }));
+                        }
+                    }
+                    const saveBtn = document.getElementById('btn-save-custom-all');
+                    if (saveBtn) saveBtn.click();
+                });
+            }
             const saveAll = document.getElementById('btn-save-custom-all');
             if (saveAll) saveAll.addEventListener('click', () => {
-                const rowsEl = [...content.querySelectorAll('.custom-row')];
+                const rowsEl = Array.from(content.querySelectorAll('.custom-row'));
                 const edits = rowsEl.map(r => ({
                     id: r.dataset.id,
                     en: r.querySelector('[data-f=en]').value.trim(),

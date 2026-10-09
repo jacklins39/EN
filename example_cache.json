@@ -26630,5 +26630,1793 @@
   "depreciate": {
     "ex": "",
     "exZh": ""
+  },
+  "nice-looking": {
+    "ex": "",
+    "exZh": ""
+  },
+  "over-weight": {
+    "ex": "",
+    "exZh": ""
+  },
+  "under-weight": {
+    "ex": "",
+    "exZh": ""
+  },
+  "bored": {
+    "ex": "she got bored with staring out of the window",
+    "exZh": "她厭倦了盯著窗外看"
+  },
+  "boring": {
+    "ex": "I've got a boring job in an office",
+    "exZh": "我在辦公室有一份無聊的工作"
+  },
+  "excited": {
+    "ex": "the excited atom returns to its former energy state and emits light or other radiation",
+    "exZh": "激發的原子回到先前的能量狀態並發出光或其他輻射"
+  },
+  "exciting": {
+    "ex": "an exciting breakthrough",
+    "exZh": "令人興奮的突破"
+  },
+  "hard-working": {
+    "ex": "an efficient, hard-working, and trusted administrator",
+    "exZh": "有效率、勤奮且值得信賴的管理員"
+  },
+  "impolite": {
+    "ex": "it would have been impolite to refuse",
+    "exZh": "拒絕是不禮貌的"
+  },
+  "interested": {
+    "ex": "seeking views from all interested parties",
+    "exZh": "徵求所有利害關係人的意見"
+  },
+  "unhappy": {
+    "ex": "an unhappy marriage",
+    "exZh": "不幸福的婚姻"
+  },
+  "tired": {
+    "ex": "tired clichés like the “information revolution.”",
+    "exZh": "像「資訊革命」這樣的陳腔濫調。"
+  },
+  "headache": {
+    "ex": "she complained of a severe headache",
+    "exZh": "她抱怨頭痛嚴重"
+  },
+  "stomachache": {
+    "ex": "",
+    "exZh": ""
+  },
+  "toothache": {
+    "ex": "he has a toothache",
+    "exZh": "他牙痛"
+  },
+  "sore throat": {
+    "ex": "she whispers through her role as if she's got a sore throat",
+    "exZh": "她在角色中低聲說話，就好像她喉嚨痛一樣"
+  },
+  "Dr.": {
+    "ex": "",
+    "exZh": ""
+  },
+  "Mr.": {
+    "ex": "Mr. Robert Smith",
+    "exZh": "羅伯特史密斯先生"
+  },
+  "Mrs.": {
+    "ex": "Mrs. Sally Jones",
+    "exZh": "莎莉瓊斯夫人"
+  },
+  "Miss": {
+    "ex": "",
+    "exZh": ""
+  },
+  "Ms.": {
+    "ex": "Ms. Sarah Brown",
+    "exZh": "莎拉布朗女士"
+  },
+  "father (dad, daddy)": {
+    "ex": "",
+    "exZh": ""
+  },
+  "grandfather (grandpa)": {
+    "ex": "",
+    "exZh": ""
+  },
+  "grandmother (grandma)": {
+    "ex": "",
+    "exZh": ""
+  },
+  "mother (mom, mommy)": {
+    "ex": "",
+    "exZh": ""
+  },
+  "married": {
+    "ex": "in the seventeenth century science was still married to religion",
+    "exZh": "在十七世紀，科學仍與宗教聯姻"
+  },
+  "a few": {
+    "ex": "",
+    "exZh": ""
+  },
+  "a little": {
+    "ex": "",
+    "exZh": ""
+  },
+  "a lot (+of +": {
+    "ex": "",
+    "exZh": ""
+  },
+  "few 43 less 44 little 45 many 46 more 47 much 48 number 49 several 50 some 51 total": {
+    "ex": "",
+    "exZh": ""
+  },
+  "midnight": {
+    "ex": "the midnight hours",
+    "exZh": "午夜時分"
+  },
+  "autumn (fall)": {
+    "ex": "",
+    "exZh": ""
+  },
+  "alarm clock": {
+    "ex": "the alarm clock wakes her up and she gets ready to go to work",
+    "exZh": "鬧鐘把她叫醒，她準備去上班"
+  },
+  "stop watch": {
+    "ex": "",
+    "exZh": ""
+  },
+  "a.m.": {
+    "ex": "",
+    "exZh": ""
+  },
+  "p.m.": {
+    "ex": "",
+    "exZh": ""
+  },
+  "o’clock": {
+    "ex": "",
+    "exZh": ""
+  },
+  "later": {
+    "ex": "later on it will be easier",
+    "exZh": "稍後會更容易"
+  },
+  "credit card": {
+    "ex": "he always paid by credit card",
+    "exZh": "他總是用信用卡付款"
+  },
+  "fast food": {
+    "ex": "",
+    "exZh": ""
+  },
+  "French fries": {
+    "ex": "",
+    "exZh": ""
+  },
+  "hot dog": {
+    "ex": "he's ordering a hot dog",
+    "exZh": "他點了一份熱狗"
+  },
+  "instant noodle": {
+    "ex": "",
+    "exZh": ""
+  },
+  "seafood": {
+    "ex": "local seafood",
+    "exZh": "當地海鮮"
+  },
+  "milk shake": {
+    "ex": "",
+    "exZh": ""
+  },
+  "soft drink": {
+    "ex": "",
+    "exZh": ""
+  },
+  "ice cream": {
+    "ex": "",
+    "exZh": ""
+  },
+  "moon cake": {
+    "ex": "",
+    "exZh": ""
+  },
+  "soy-sauce": {
+    "ex": "",
+    "exZh": ""
+  },
+  "chopsticks": {
+    "ex": "",
+    "exZh": ""
+  },
+  "raincoat": {
+    "ex": "",
+    "exZh": ""
+  },
+  "swimsuit": {
+    "ex": "",
+    "exZh": ""
+  },
+  "contact lens": {
+    "ex": "contact lens wearers",
+    "exZh": "隱形眼鏡配戴者"
+  },
+  "earrings": {
+    "ex": "",
+    "exZh": ""
+  },
+  "shoe(s)": {
+    "ex": "",
+    "exZh": ""
+  },
+  "slippers": {
+    "ex": "",
+    "exZh": ""
+  },
+  "sneakers": {
+    "ex": "",
+    "exZh": ""
+  },
+  "socks": {
+    "ex": "",
+    "exZh": ""
+  },
+  "sports": {
+    "ex": "",
+    "exZh": ""
+  },
+  "dodge ball": {
+    "ex": "",
+    "exZh": ""
+  },
+  "Frisbee": {
+    "ex": "kids were playing Frisbee",
+    "exZh": "孩子們在玩飛盤"
+  },
+  "softball": {
+    "ex": "",
+    "exZh": ""
+  },
+  "camping": {
+    "ex": "a camping trip",
+    "exZh": "露營旅行"
+  },
+  "mountain climbing": {
+    "ex": "",
+    "exZh": ""
+  },
+  "cooking": {
+    "ex": "authentic Italian cooking",
+    "exZh": "正宗的意大利烹飪"
+  },
+  "dancing": {
+    "ex": "there will be folk music, singing, and dancing",
+    "exZh": "將會有民俗音樂、歌唱和舞蹈"
+  },
+  "fishing": {
+    "ex": "fishing boats",
+    "exZh": "漁船"
+  },
+  "hiking": {
+    "ex": "she enjoys hiking and climbing in her spare time",
+    "exZh": "她業餘時間喜歡徒步旅行和爬山"
+  },
+  "jogging": {
+    "ex": "",
+    "exZh": ""
+  },
+  "roller skate": {
+    "ex": "",
+    "exZh": ""
+  },
+  "roller-skating": {
+    "ex": "",
+    "exZh": ""
+  },
+  "running": {
+    "ex": "the 122nd running of the Mid-Summer Derby",
+    "exZh": "第 122 屆仲夏德比大賽"
+  },
+  "sailing": {
+    "ex": "a sailing club",
+    "exZh": "一個帆船俱樂部"
+  },
+  "singing": {
+    "ex": "his singing is rich-toned",
+    "exZh": "他的歌聲音色豐富"
+  },
+  "skiing": {
+    "ex": "",
+    "exZh": ""
+  },
+  "swimming": {
+    "ex": "a swimming instructor",
+    "exZh": "游泳教練"
+  },
+  "computer game": {
+    "ex": "",
+    "exZh": ""
+  },
+  "pop music": {
+    "ex": "",
+    "exZh": ""
+  },
+  "dining room": {
+    "ex": "the main building has a dining room, kitchen, and TV lounge",
+    "exZh": "主樓設有餐廳、廚房和電視休息室"
+  },
+  "living room": {
+    "ex": "the apartment has a comfy living room with sofas, chairs, TV, and dining table",
+    "exZh": "公寓設有舒適的客廳，配有沙發、椅子、電視和餐桌"
+  },
+  "stairs": {
+    "ex": "",
+    "exZh": ""
+  },
+  "toothbrush": {
+    "ex": "",
+    "exZh": ""
+  },
+  "air conditioner": {
+    "ex": "",
+    "exZh": ""
+  },
+  "tape recorder": {
+    "ex": "",
+    "exZh": ""
+  },
+  "television (TV)": {
+    "ex": "",
+    "exZh": ""
+  },
+  "walkman": {
+    "ex": "",
+    "exZh": ""
+  },
+  "teapot": {
+    "ex": "",
+    "exZh": ""
+  },
+  "trash can": {
+    "ex": "",
+    "exZh": ""
+  },
+  "wok": {
+    "ex": "",
+    "exZh": ""
+  },
+  "elementary school": {
+    "ex": "",
+    "exZh": ""
+  },
+  "junior high school": {
+    "ex": "",
+    "exZh": ""
+  },
+  "senior high school": {
+    "ex": "",
+    "exZh": ""
+  },
+  "classroom": {
+    "ex": "",
+    "exZh": ""
+  },
+  "marker": {
+    "ex": "such studies may provide a unique marker in the quest to understand the brain",
+    "exZh": "此類研究可能為理解大腦的探索提供獨特的標記"
+  },
+  "pencil box": {
+    "ex": "",
+    "exZh": ""
+  },
+  "pencil case": {
+    "ex": "",
+    "exZh": ""
+  },
+  "workbook": {
+    "ex": "",
+    "exZh": ""
+  },
+  "Chinese": {
+    "ex": "",
+    "exZh": ""
+  },
+  "PE": {
+    "ex": "",
+    "exZh": ""
+  },
+  "physical education": {
+    "ex": "",
+    "exZh": ""
+  },
+  "social science": {
+    "ex": "",
+    "exZh": ""
+  },
+  "cheer leader": {
+    "ex": "",
+    "exZh": ""
+  },
+  "class leader": {
+    "ex": "",
+    "exZh": ""
+  },
+  "classmate": {
+    "ex": "",
+    "exZh": ""
+  },
+  "bookstore": {
+    "ex": "",
+    "exZh": ""
+  },
+  "convenience store": {
+    "ex": "",
+    "exZh": ""
+  },
+  "culture center": {
+    "ex": "",
+    "exZh": ""
+  },
+  "department store": {
+    "ex": "the oldest department store in London",
+    "exZh": "倫敦最古老的百貨公司"
+  },
+  "fast food restaurant": {
+    "ex": "",
+    "exZh": ""
+  },
+  "fire station": {
+    "ex": "",
+    "exZh": ""
+  },
+  "flower shop": {
+    "ex": "",
+    "exZh": ""
+  },
+  "men’s room": {
+    "ex": "",
+    "exZh": ""
+  },
+  "women’s room": {
+    "ex": "",
+    "exZh": ""
+  },
+  "movie theater": {
+    "ex": "",
+    "exZh": ""
+  },
+  "pool 43 post office 44 police station 45 restroom 46 restaurant 47 shop 48 stationery store 49 store 50 supermarket": {
+    "ex": "",
+    "exZh": ""
+  },
+  "temple 52 theater": {
+    "ex": "",
+    "exZh": ""
+  },
+  "waterfalls": {
+    "ex": "",
+    "exZh": ""
+  },
+  "farm 59 place 60 town 61 village 62 local": {
+    "ex": "",
+    "exZh": ""
+  },
+  "scooter": {
+    "ex": "a snow scooter",
+    "exZh": "雪地摩托車"
+  },
+  "airlines": {
+    "ex": "",
+    "exZh": ""
+  },
+  "bus stop": {
+    "ex": "",
+    "exZh": ""
+  },
+  "parking lot": {
+    "ex": "",
+    "exZh": ""
+  },
+  "train station": {
+    "ex": "the college itself is well located within easy access of the train station",
+    "exZh": "學院本身地理位置優越，可輕鬆前往火車站"
+  },
+  "flat tire": {
+    "ex": "",
+    "exZh": ""
+  },
+  "MRT": {
+    "ex": "",
+    "exZh": ""
+  },
+  "railway": {
+    "ex": "",
+    "exZh": ""
+  },
+  "America": {
+    "ex": "",
+    "exZh": ""
+  },
+  "Taiwan": {
+    "ex": "",
+    "exZh": ""
+  },
+  "ROC": {
+    "ex": "",
+    "exZh": ""
+  },
+  "USA": {
+    "ex": "",
+    "exZh": ""
+  },
+  "Chinese New Year": {
+    "ex": "",
+    "exZh": ""
+  },
+  "New Year’s Eve": {
+    "ex": "",
+    "exZh": ""
+  },
+  "Double Tenth Day": {
+    "ex": "",
+    "exZh": ""
+  },
+  "Dragon-boat Festival": {
+    "ex": "",
+    "exZh": ""
+  },
+  "Lantern Festival": {
+    "ex": "",
+    "exZh": ""
+  },
+  "Moon Festival": {
+    "ex": "",
+    "exZh": ""
+  },
+  "Teacher’s Day": {
+    "ex": "",
+    "exZh": ""
+  },
+  "Easter": {
+    "ex": "",
+    "exZh": ""
+  },
+  "Halloween": {
+    "ex": "",
+    "exZh": ""
+  },
+  "New Year’s Day": {
+    "ex": "",
+    "exZh": ""
+  },
+  "Mother’s Day": {
+    "ex": "",
+    "exZh": ""
+  },
+  "Father’s Day": {
+    "ex": "",
+    "exZh": ""
+  },
+  "Thanksgiving": {
+    "ex": "",
+    "exZh": ""
+  },
+  "Valentine’s Day": {
+    "ex": "",
+    "exZh": ""
+  },
+  "baby sitter": {
+    "ex": "",
+    "exZh": ""
+  },
+  "businessman": {
+    "ex": "his knowledge and talent were never in question, but he was a poor businessman",
+    "exZh": "他的知識和才華是毋庸置疑的，但他是個貧窮的商人"
+  },
+  "hair dresser": {
+    "ex": "",
+    "exZh": ""
+  },
+  "mailman": {
+    "ex": "",
+    "exZh": ""
+  },
+  "mail carrier": {
+    "ex": "",
+    "exZh": ""
+  },
+  "police officer": {
+    "ex": "",
+    "exZh": ""
+  },
+  "shopkeeper": {
+    "ex": "",
+    "exZh": ""
+  },
+  "freezing": {
+    "ex": "it was freezing cold outside",
+    "exZh": "外面很冷"
+  },
+  "snowman": {
+    "ex": "",
+    "exZh": ""
+  },
+  "woods": {
+    "ex": "",
+    "exZh": ""
+  },
+  "a 27 each": {
+    "ex": "",
+    "exZh": ""
+  },
+  "every 28 everyone (everybody)": {
+    "ex": "",
+    "exZh": ""
+  },
+  "the 29 everything": {
+    "ex": "",
+    "exZh": ""
+  },
+  "this 30 many": {
+    "ex": "",
+    "exZh": ""
+  },
+  "that 31 most": {
+    "ex": "",
+    "exZh": ""
+  },
+  "these 32 nobody": {
+    "ex": "",
+    "exZh": ""
+  },
+  "those 33 none": {
+    "ex": "",
+    "exZh": ""
+  },
+  "my 34 nothing": {
+    "ex": "",
+    "exZh": ""
+  },
+  "our 35 other": {
+    "ex": "",
+    "exZh": ""
+  },
+  "your 36 part": {
+    "ex": "",
+    "exZh": ""
+  },
+  "his 37 some": {
+    "ex": "",
+    "exZh": ""
+  },
+  "her 38 someone (somebody)": {
+    "ex": "",
+    "exZh": ""
+  },
+  "its 39 something": {
+    "ex": "",
+    "exZh": ""
+  },
+  "I, me, my 2 what": {
+    "ex": "",
+    "exZh": ""
+  },
+  "mine 3 which": {
+    "ex": "",
+    "exZh": ""
+  },
+  "myself 4 who": {
+    "ex": "",
+    "exZh": ""
+  },
+  "you, you, your 5 whose (+N.)": {
+    "ex": "",
+    "exZh": ""
+  },
+  "yours 6 when": {
+    "ex": "",
+    "exZh": ""
+  },
+  "yourself 7 where": {
+    "ex": "",
+    "exZh": ""
+  },
+  "yourselves 8 whether": {
+    "ex": "",
+    "exZh": ""
+  },
+  "he, him, his 9 while": {
+    "ex": "",
+    "exZh": ""
+  },
+  "himself 10 why": {
+    "ex": "",
+    "exZh": ""
+  },
+  "she, her, her": {
+    "ex": "",
+    "exZh": ""
+  },
+  "herself 1 be": {
+    "ex": "",
+    "exZh": ""
+  },
+  "it, it, its 2 am, are, is I,": {
+    "ex": "",
+    "exZh": ""
+  },
+  "itself 3 was, were": {
+    "ex": "",
+    "exZh": ""
+  },
+  "ours 5 do, does": {
+    "ex": "",
+    "exZh": ""
+  },
+  "they, them, their 7 have, has": {
+    "ex": "",
+    "exZh": ""
+  },
+  "themselves 9 can, could": {
+    "ex": "",
+    "exZh": ""
+  },
+  "all 10 will, would": {
+    "ex": "",
+    "exZh": ""
+  },
+  "another 11 may, might": {
+    "ex": "",
+    "exZh": ""
+  },
+  "any 12 must": {
+    "ex": "",
+    "exZh": ""
+  },
+  "anyone (anybody) 13 shall, should": {
+    "ex": "",
+    "exZh": ""
+  },
+  "anything": {
+    "ex": "he inquired whether there was anything he could do",
+    "exZh": "他問是否有什麼可以做的"
+  },
+  "in back of": {
+    "ex": "",
+    "exZh": ""
+  },
+  "in front of": {
+    "ex": "",
+    "exZh": ""
+  },
+  "out of": {
+    "ex": "",
+    "exZh": ""
+  },
+  "next to": {
+    "ex": "",
+    "exZh": ""
+  },
+  "hey": {
+    "ex": "hey, don't I know it!",
+    "exZh": "嘿嘿，我還不知道嗎！"
+  },
+  "hi": {
+    "ex": "",
+    "exZh": ""
+  },
+  "good-bye (goodbye, bye)": {
+    "ex": "",
+    "exZh": ""
+  },
+  "American": {
+    "ex": "the American continent south of the tropic of Cancer",
+    "exZh": "北迴歸線以南的美洲大陸"
+  },
+  "beginning": {
+    "ex": "the ending of one relationship and the beginning of another",
+    "exZh": "一段關係的結束與另一段關係的開始"
+  },
+  "birthday": {
+    "ex": "a birthday cake",
+    "exZh": "一個生日蛋糕"
+  },
+  "God": {
+    "ex": "God, what did I do to deserve this?",
+    "exZh": "天哪，我做了什麼值得這樣？"
+  },
+  "goodness": {
+    "ex": "goodness knows why she didn't go herself",
+    "exZh": "天知道她為什麼不親自去"
+  },
+  "leaf (leaves)": {
+    "ex": "",
+    "exZh": ""
+  },
+  "finish + V-ing": {
+    "ex": "",
+    "exZh": ""
+  },
+  "imagine + V-ing": {
+    "ex": "",
+    "exZh": ""
+  },
+  "mind + V-ing": {
+    "ex": "",
+    "exZh": ""
+  },
+  "notice + V-ing": {
+    "ex": "",
+    "exZh": ""
+  },
+  "regret 85 fight 127 pull": {
+    "ex": "",
+    "exZh": ""
+  },
+  "remember 86 follow 128 pump": {
+    "ex": "",
+    "exZh": ""
+  },
+  "remind 87 fry 129 produce": {
+    "ex": "",
+    "exZh": ""
+  },
+  "surprise 88 go 130 protect": {
+    "ex": "",
+    "exZh": ""
+  },
+  "think 89 greet 131 push": {
+    "ex": "",
+    "exZh": ""
+  },
+  "want + to VR 90 grow 132 put": {
+    "ex": "",
+    "exZh": ""
+  },
+  "wish 91 guide 133 recycle": {
+    "ex": "",
+    "exZh": ""
+  },
+  "worry 92 hand 134 revise": {
+    "ex": "",
+    "exZh": ""
+  },
+  "bless 93 hang 135 rise": {
+    "ex": "",
+    "exZh": ""
+  },
+  "act 94 help 136 roll": {
+    "ex": "",
+    "exZh": ""
+  },
+  "bathe 95 hit 137 rub": {
+    "ex": "",
+    "exZh": ""
+  },
+  "beat 96 hold 138 run": {
+    "ex": "",
+    "exZh": ""
+  },
+  "blow 97 hop 139 rush": {
+    "ex": "",
+    "exZh": ""
+  },
+  "bow 98 hunt 140 rob": {
+    "ex": "",
+    "exZh": ""
+  },
+  "break 99 hurry 141 rest": {
+    "ex": "",
+    "exZh": ""
+  },
+  "bring 100 jump 142 shake": {
+    "ex": "",
+    "exZh": ""
+  },
+  "brush 101 kick 143 shoot": {
+    "ex": "",
+    "exZh": ""
+  },
+  "carry 102 knock 144 shout": {
+    "ex": "",
+    "exZh": ""
+  },
+  "catch 103 kill 145 shut": {
+    "ex": "",
+    "exZh": ""
+  },
+  "chase 104 kiss 146 smoke": {
+    "ex": "",
+    "exZh": ""
+  },
+  "cheat 105 laugh 147 sign": {
+    "ex": "",
+    "exZh": ""
+  },
+  "choose 106 lay 148 stand": {
+    "ex": "",
+    "exZh": ""
+  },
+  "clap 107 leave 149 steal": {
+    "ex": "",
+    "exZh": ""
+  },
+  "close 108 lick 150 strike": {
+    "ex": "",
+    "exZh": ""
+  },
+  "come 109 lift 151 take": {
+    "ex": "",
+    "exZh": ""
+  },
+  "control 110 list 152 tell": {
+    "ex": "",
+    "exZh": ""
+  },
+  "collect 111 lock 153 throw": {
+    "ex": "",
+    "exZh": ""
+  },
+  "comment 112 make 154 touch": {
+    "ex": "",
+    "exZh": ""
+  },
+  "correct 113 meet 155 trace": {
+    "ex": "",
+    "exZh": ""
+  },
+  "copy 114 miss 156 trap": {
+    "ex": "",
+    "exZh": ""
+  },
+  "count 115 mix 157 type": {
+    "ex": "",
+    "exZh": ""
+  },
+  "cover 116 move 158 use": {
+    "ex": "",
+    "exZh": ""
+  },
+  "cry 117 nod 159 vote": {
+    "ex": "",
+    "exZh": ""
+  },
+  "cut 118 offer 160 walk": {
+    "ex": "",
+    "exZh": ""
+  },
+  "dial 119 open 161 wave": {
+    "ex": "",
+    "exZh": ""
+  },
+  "dig 120 pack 162 hug": {
+    "ex": "",
+    "exZh": ""
+  },
+  "deliver 121 park 163 yell": {
+    "ex": "",
+    "exZh": ""
+  },
+  "drop 122 paste 164 mop": {
+    "ex": "",
+    "exZh": ""
+  },
+  "elect 123 pause 165 accept": {
+    "ex": "",
+    "exZh": ""
+  },
+  "enter 124 pick 166 add": {
+    "ex": "",
+    "exZh": ""
+  },
+  "exist 125 plant 167 admire": {
+    "ex": "",
+    "exZh": ""
+  },
+  "feed 126 print 168 advise": {
+    "ex": "",
+    "exZh": ""
+  },
+  "agree 211 express 253 praise": {
+    "ex": "",
+    "exZh": ""
+  },
+  "allow 212 fall 254 pray": {
+    "ex": "",
+    "exZh": ""
+  },
+  "apologize 213 fill 255 prepare": {
+    "ex": "",
+    "exZh": ""
+  },
+  "appear 214 find 256 promise": {
+    "ex": "",
+    "exZh": ""
+  },
+  "appreciate 215 fit 257 provide": {
+    "ex": "",
+    "exZh": ""
+  },
+  "argue 216 focus 258 quit (+V-ing)": {
+    "ex": "",
+    "exZh": ""
+  },
+  "arrange 217 form 259 raise": {
+    "ex": "",
+    "exZh": ""
+  },
+  "assume 218 gain 260 reach": {
+    "ex": "",
+    "exZh": ""
+  },
+  "attack 219 get 261 receive": {
+    "ex": "",
+    "exZh": ""
+  },
+  "avoid + V-ing 220 give 262 refuse": {
+    "ex": "",
+    "exZh": ""
+  },
+  "become 221 handle 263 reject": {
+    "ex": "",
+    "exZh": ""
+  },
+  "begin 222 happen 264 rent": {
+    "ex": "",
+    "exZh": ""
+  },
+  "belong (to) + N. 223 hide 265 respect": {
+    "ex": "",
+    "exZh": ""
+  },
+  "broadcast 224 hurt 266 return": {
+    "ex": "",
+    "exZh": ""
+  },
+  "burst 225 improve 267 ruin": {
+    "ex": "",
+    "exZh": ""
+  },
+  "call 226 include 268 solve": {
+    "ex": "",
+    "exZh": ""
+  },
+  "calm 227 ignore 269 satisfy": {
+    "ex": "",
+    "exZh": ""
+  },
+  "cancel 228 increase 270 save": {
+    "ex": "",
+    "exZh": ""
+  },
+  "care 229 indicate 271 search": {
+    "ex": "",
+    "exZh": ""
+  },
+  "check 230 insist 272 seem": {
+    "ex": "",
+    "exZh": ""
+  },
+  "compare 231 interrupt 273 select": {
+    "ex": "",
+    "exZh": ""
+  },
+  "complain 232 introduce 274 sell": {
+    "ex": "",
+    "exZh": ""
+  },
+  "concern 233 invent 275 send": {
+    "ex": "",
+    "exZh": ""
+  },
+  "continue 234 invite 276 serve": {
+    "ex": "",
+    "exZh": ""
+  },
+  "create 235 join 277 share": {
+    "ex": "",
+    "exZh": ""
+  },
+  "date 236 judge 278 show": {
+    "ex": "",
+    "exZh": ""
+  },
+  "deal 237 keep 279 sit": {
+    "ex": "",
+    "exZh": ""
+  },
+  "decide 238 lead 280 sleep": {
+    "ex": "",
+    "exZh": ""
+  },
+  "decrease 239 let 281 start": {
+    "ex": "",
+    "exZh": ""
+  },
+  "depend 240 lie 282 stay": {
+    "ex": "",
+    "exZh": ""
+  },
+  "describe 241 limit 283 stop": {
+    "ex": "",
+    "exZh": ""
+  },
+  "detect 242 list 284 suggest": {
+    "ex": "",
+    "exZh": ""
+  },
+  "die 243 match 285 support": {
+    "ex": "",
+    "exZh": ""
+  },
+  "direct 244 mean 286 thank": {
+    "ex": "",
+    "exZh": ""
+  },
+  "disappear 245 notice + V-ing 287 treat": {
+    "ex": "",
+    "exZh": ""
+  },
+  "discover 246 obey 288 trust": {
+    "ex": "",
+    "exZh": ""
+  },
+  "discuss 247 omit 289 try": {
+    "ex": "",
+    "exZh": ""
+  },
+  "emphasize 248 own 290 visit": {
+    "ex": "",
+    "exZh": ""
+  },
+  "enjoy 249 pardon 291 wait": {
+    "ex": "",
+    "exZh": ""
+  },
+  "envy 250 plan 292 wake": {
+    "ex": "",
+    "exZh": ""
+  },
+  "excite 251 please 293 waste (+V-ing)": {
+    "ex": "",
+    "exZh": ""
+  },
+  "expect 252 pollute 294 welcome": {
+    "ex": "",
+    "exZh": ""
+  },
+  "able 43 formal": {
+    "ex": "",
+    "exZh": ""
+  },
+  "absent 44 former": {
+    "ex": "",
+    "exZh": ""
+  },
+  "afraid 45 free": {
+    "ex": "",
+    "exZh": ""
+  },
+  "alike 46 fresh": {
+    "ex": "",
+    "exZh": ""
+  },
+  "alive 47 general": {
+    "ex": "",
+    "exZh": ""
+  },
+  "alone 48 glad": {
+    "ex": "",
+    "exZh": ""
+  },
+  "American 49 great": {
+    "ex": "",
+    "exZh": ""
+  },
+  "ancient 50 hard": {
+    "ex": "",
+    "exZh": ""
+  },
+  "asleep 51 helpful": {
+    "ex": "",
+    "exZh": ""
+  },
+  "available 52 homesick": {
+    "ex": "",
+    "exZh": ""
+  },
+  "basic 53 horrible": {
+    "ex": "",
+    "exZh": ""
+  },
+  "bright 54 important": {
+    "ex": "",
+    "exZh": ""
+  },
+  "broad 55 impossible": {
+    "ex": "",
+    "exZh": ""
+  },
+  "classical 56 independent": {
+    "ex": "",
+    "exZh": ""
+  },
+  "colorful 57 instant": {
+    "ex": "",
+    "exZh": ""
+  },
+  "common 58 interesting": {
+    "ex": "",
+    "exZh": ""
+  },
+  "complete 59 latest": {
+    "ex": "",
+    "exZh": ""
+  },
+  "convenient 60 latter": {
+    "ex": "",
+    "exZh": ""
+  },
+  "correct 61 likely": {
+    "ex": "",
+    "exZh": ""
+  },
+  "crowded 62 loud": {
+    "ex": "",
+    "exZh": ""
+  },
+  "dangerous 63 lucky": {
+    "ex": "",
+    "exZh": ""
+  },
+  "dark 64 magic": {
+    "ex": "",
+    "exZh": ""
+  },
+  "dead 65 main": {
+    "ex": "",
+    "exZh": ""
+  },
+  "dear 66 major": {
+    "ex": "",
+    "exZh": ""
+  },
+  "different 67 marvelous": {
+    "ex": "",
+    "exZh": ""
+  },
+  "difficult 68 minor": {
+    "ex": "",
+    "exZh": ""
+  },
+  "dirty 69 modern": {
+    "ex": "",
+    "exZh": ""
+  },
+  "double 70 national": {
+    "ex": "",
+    "exZh": ""
+  },
+  "easy 71 necessary": {
+    "ex": "",
+    "exZh": ""
+  },
+  "electric 72 new": {
+    "ex": "",
+    "exZh": ""
+  },
+  "else 73 negative": {
+    "ex": "",
+    "exZh": ""
+  },
+  "enough 74 noisy": {
+    "ex": "",
+    "exZh": ""
+  },
+  "equal 75 only": {
+    "ex": "",
+    "exZh": ""
+  },
+  "excellent 76 ordinary": {
+    "ex": "",
+    "exZh": ""
+  },
+  "false 77 other": {
+    "ex": "",
+    "exZh": ""
+  },
+  "fancy 78 overseas": {
+    "ex": "",
+    "exZh": ""
+  },
+  "fantastic 79 own": {
+    "ex": "",
+    "exZh": ""
+  },
+  "fair 80 peaceful": {
+    "ex": "",
+    "exZh": ""
+  },
+  "fashionable 81 perfect": {
+    "ex": "",
+    "exZh": ""
+  },
+  "favorite 82 personal": {
+    "ex": "",
+    "exZh": ""
+  },
+  "fine 83 pleasant": {
+    "ex": "",
+    "exZh": ""
+  },
+  "foreign 84 popular": {
+    "ex": "",
+    "exZh": ""
+  },
+  "scared": {
+    "ex": "I was scared that people were going to take pictures of me",
+    "exZh": "我害怕人們會為我拍照"
+  },
+  "surprised": {
+    "ex": "there was a surprised silence",
+    "exZh": "一陣驚訝的沉默"
+  },
+  "usually": {
+    "ex": "he usually arrives home about one o'clock",
+    "exZh": "他通常在一點鐘左右到家"
+  },
+  "actually": {
+    "ex": "he had a thick Brooklyn accent—he sounded like my grandfather actually",
+    "exZh": "他有著濃厚的布魯克林口音——他聽起來實際上像我的祖父"
+  },
+  "finally": {
+    "ex": "to dispel finally the belief that auditors were clients of the company",
+    "exZh": "最終消除審計師是公司客戶的信念"
+  },
+  "probably": {
+    "ex": "she would probably never see him again",
+    "exZh": "她可能再也見不到他了"
+  },
+  "really": {
+    "ex": "they're not really my aunt and uncle",
+    "exZh": "他們其實不是我的阿姨和叔叔"
+  },
+  "everywhere": {
+    "ex": "I've looked everywhere",
+    "exZh": "我到處都看過"
+  },
+  "yes (yeah)": {
+    "ex": "",
+    "exZh": ""
+  },
+  "be was / were been": {
+    "ex": "",
+    "exZh": ""
+  },
+  "bear bore born, borne": {
+    "ex": "",
+    "exZh": ""
+  },
+  "beat beat beaten, beat": {
+    "ex": "",
+    "exZh": ""
+  },
+  "become became become": {
+    "ex": "",
+    "exZh": ""
+  },
+  "begin began begun": {
+    "ex": "",
+    "exZh": ""
+  },
+  "bend bent bent": {
+    "ex": "",
+    "exZh": ""
+  },
+  "bet bet, betted bet, betted": {
+    "ex": "",
+    "exZh": ""
+  },
+  "bite bit bitten": {
+    "ex": "",
+    "exZh": ""
+  },
+  "blow blew blown": {
+    "ex": "",
+    "exZh": ""
+  },
+  "break broke broken": {
+    "ex": "",
+    "exZh": ""
+  },
+  "bring brought brought": {
+    "ex": "",
+    "exZh": ""
+  },
+  "build built built": {
+    "ex": "",
+    "exZh": ""
+  },
+  "burn burned, burnt burned, burnt": {
+    "ex": "",
+    "exZh": ""
+  },
+  "burst burst burst": {
+    "ex": "",
+    "exZh": ""
+  },
+  "buy bought bought": {
+    "ex": "",
+    "exZh": ""
+  },
+  "can could --": {
+    "ex": "",
+    "exZh": ""
+  },
+  "catch caught caught": {
+    "ex": "",
+    "exZh": ""
+  },
+  "choose chose chosen": {
+    "ex": "",
+    "exZh": ""
+  },
+  "come came come": {
+    "ex": "",
+    "exZh": ""
+  },
+  "cost cost cost": {
+    "ex": "",
+    "exZh": ""
+  },
+  "cut but cut": {
+    "ex": "",
+    "exZh": ""
+  },
+  "deal dealt dealt": {
+    "ex": "",
+    "exZh": ""
+  },
+  "dig dug dug": {
+    "ex": "",
+    "exZh": ""
+  },
+  "do did done": {
+    "ex": "",
+    "exZh": ""
+  },
+  "draw drew drawn": {
+    "ex": "",
+    "exZh": ""
+  },
+  "dream dreamed, dreamt dreamed, dreamt": {
+    "ex": "",
+    "exZh": ""
+  },
+  "drink drank drunk": {
+    "ex": "",
+    "exZh": ""
+  },
+  "drive drove driven": {
+    "ex": "",
+    "exZh": ""
+  },
+  "eat ate eaten": {
+    "ex": "",
+    "exZh": ""
+  },
+  "fall fell fallen": {
+    "ex": "",
+    "exZh": ""
+  },
+  "feed fed fed": {
+    "ex": "",
+    "exZh": ""
+  },
+  "feel felt felt": {
+    "ex": "",
+    "exZh": ""
+  },
+  "fight fought fought": {
+    "ex": "",
+    "exZh": ""
+  },
+  "find found found": {
+    "ex": "",
+    "exZh": ""
+  },
+  "fly flew flown": {
+    "ex": "",
+    "exZh": ""
+  },
+  "forget forgot forgot, forgotten": {
+    "ex": "",
+    "exZh": ""
+  },
+  "forgive forgave forgiven": {
+    "ex": "",
+    "exZh": ""
+  },
+  "get got got, gotten": {
+    "ex": "",
+    "exZh": ""
+  },
+  "give gave given": {
+    "ex": "",
+    "exZh": ""
+  },
+  "go went gone": {
+    "ex": "",
+    "exZh": ""
+  },
+  "grow grew grown": {
+    "ex": "",
+    "exZh": ""
+  },
+  "hang hung hung": {
+    "ex": "",
+    "exZh": ""
+  },
+  "have had had": {
+    "ex": "",
+    "exZh": ""
+  },
+  "hear heard heard": {
+    "ex": "",
+    "exZh": ""
+  },
+  "hide hid hidden, hid": {
+    "ex": "",
+    "exZh": ""
+  },
+  "hit hit hit": {
+    "ex": "",
+    "exZh": ""
+  },
+  "hold held held": {
+    "ex": "",
+    "exZh": ""
+  },
+  "hurt hurt hurt": {
+    "ex": "",
+    "exZh": ""
+  },
+  "keep kept kept": {
+    "ex": "",
+    "exZh": ""
+  },
+  "know knew known": {
+    "ex": "",
+    "exZh": ""
+  },
+  "lay laid laid": {
+    "ex": "",
+    "exZh": ""
+  },
+  "lead led led": {
+    "ex": "",
+    "exZh": ""
+  },
+  "learn learned, learnt learned, learnt": {
+    "ex": "",
+    "exZh": ""
+  },
+  "leave left left": {
+    "ex": "",
+    "exZh": ""
+  },
+  "lend lent lent": {
+    "ex": "",
+    "exZh": ""
+  },
+  "let let let": {
+    "ex": "",
+    "exZh": ""
+  },
+  "lie liay lain": {
+    "ex": "",
+    "exZh": ""
+  },
+  "light lit, lighted lit, lighted": {
+    "ex": "",
+    "exZh": ""
+  },
+  "lose lost lost": {
+    "ex": "",
+    "exZh": ""
+  },
+  "make made made": {
+    "ex": "",
+    "exZh": ""
+  },
+  "may might --": {
+    "ex": "",
+    "exZh": ""
+  },
+  "mean meant meant": {
+    "ex": "",
+    "exZh": ""
+  },
+  "meet met met": {
+    "ex": "",
+    "exZh": ""
+  },
+  "oversleep overslept overslept": {
+    "ex": "",
+    "exZh": ""
+  },
+  "pay paid paid": {
+    "ex": "",
+    "exZh": ""
+  },
+  "put put put": {
+    "ex": "",
+    "exZh": ""
+  },
+  "read read read": {
+    "ex": "",
+    "exZh": ""
+  },
+  "ride rode ridden": {
+    "ex": "",
+    "exZh": ""
+  },
+  "ring rang rung": {
+    "ex": "",
+    "exZh": ""
+  },
+  "rise rose risen": {
+    "ex": "",
+    "exZh": ""
+  },
+  "run ran run": {
+    "ex": "",
+    "exZh": ""
+  },
+  "say said said": {
+    "ex": "",
+    "exZh": ""
+  },
+  "see saw seen": {
+    "ex": "",
+    "exZh": ""
+  },
+  "sell sold sold": {
+    "ex": "",
+    "exZh": ""
+  },
+  "send sent sent": {
+    "ex": "",
+    "exZh": ""
+  },
+  "set set set": {
+    "ex": "",
+    "exZh": ""
+  },
+  "shake shook shaken": {
+    "ex": "",
+    "exZh": ""
+  },
+  "shall should --": {
+    "ex": "",
+    "exZh": ""
+  },
+  "shine shone shone": {
+    "ex": "",
+    "exZh": ""
+  },
+  "shoot shot shot": {
+    "ex": "",
+    "exZh": ""
+  },
+  "show showed showed, shown": {
+    "ex": "",
+    "exZh": ""
+  },
+  "shut shut shut": {
+    "ex": "",
+    "exZh": ""
+  },
+  "sing sang sung": {
+    "ex": "",
+    "exZh": ""
+  },
+  "sit sat sat": {
+    "ex": "",
+    "exZh": ""
+  },
+  "sleep slept slept": {
+    "ex": "",
+    "exZh": ""
+  },
+  "smell smelled, smelt smelled, smelt": {
+    "ex": "",
+    "exZh": ""
+  },
+  "speak spoke spoken": {
+    "ex": "",
+    "exZh": ""
+  },
+  "speed sped, speeded sped, speeded": {
+    "ex": "",
+    "exZh": ""
+  },
+  "spell spelled, spelt spelled, spelt": {
+    "ex": "",
+    "exZh": ""
+  },
+  "spend spent spent": {
+    "ex": "",
+    "exZh": ""
+  },
+  "spread spread spread": {
+    "ex": "",
+    "exZh": ""
+  },
+  "stand stood stood": {
+    "ex": "",
+    "exZh": ""
+  },
+  "steal stole stolen": {
+    "ex": "",
+    "exZh": ""
+  },
+  "sweep swept swept": {
+    "ex": "",
+    "exZh": ""
+  },
+  "swim swam swum": {
+    "ex": "",
+    "exZh": ""
+  },
+  "take took taken": {
+    "ex": "",
+    "exZh": ""
+  },
+  "teach taught taught": {
+    "ex": "",
+    "exZh": ""
+  },
+  "tear tore torn": {
+    "ex": "",
+    "exZh": ""
+  },
+  "tell told told": {
+    "ex": "",
+    "exZh": ""
+  },
+  "think thought thought": {
+    "ex": "",
+    "exZh": ""
+  },
+  "throw threw thrown": {
+    "ex": "",
+    "exZh": ""
+  },
+  "understand understood understood": {
+    "ex": "",
+    "exZh": ""
+  },
+  "wake woke, waked woken, waked": {
+    "ex": "",
+    "exZh": ""
+  },
+  "wear wore worn": {
+    "ex": "",
+    "exZh": ""
+  },
+  "will would --": {
+    "ex": "",
+    "exZh": ""
+  },
+  "win won won": {
+    "ex": "",
+    "exZh": ""
+  },
+  "write wrote written": {
+    "ex": "",
+    "exZh": ""
   }
 }

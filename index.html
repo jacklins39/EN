@@ -675,19 +675,31 @@
             updateDashboard();
         });
 
+        function getUnitWords(unit) {
+            return vocabularyDB.filter(w => {
+                let u = w.unit || Math.ceil(w.id / 1000) || 1;
+                return u === unit;
+            });
+        }
+
+        function isDueForReview(w, progress, currentDay) {
+            if (!progress || progress.level === 0 || progress.level >= 5) return false;
+            return progress.nextReviewDay !== undefined && progress.nextReviewDay <= currentDay;
+        }
+
         function updateDashboard() {
             document.getElementById('current-date-display').innerText = `虛擬時間: 第 ${virtualCurrentDay} 天`;
 
             const unitWords = getUnitWords(currentUnit);
             
-            previewReviewWords = unitWords.filter(w => isDueForReview(w, userProgress[w.en] || null, virtualCurrentDay));
-            const newWordsCandidates = unitWords.filter(w => !userProgress[w.en] || userProgress[w.en].box === 0);
+            previewReviewWords = unitWords.filter(w => isDueForReview(w, userProgress[w.id] || null, virtualCurrentDay));
+            const newWordsCandidates = unitWords.filter(w => !userProgress[w.id] || userProgress[w.id].level === 0);
             
             // Randomly shuffle new words
             newWordsCandidates.sort(() => Math.random() - 0.5);
             previewNewWords = newWordsCandidates.slice(0, 20); // Get up to 20 new words
             
-            const masteredCount = unitWords.filter(w => userProgress[w.en] && userProgress[w.en].box >= 5).length;
+            const masteredCount = unitWords.filter(w => userProgress[w.id] && userProgress[w.id].level >= 5).length;
 
             document.getElementById('stat-review').innerText = previewReviewWords.length;
             document.getElementById('stat-new').innerText = previewNewWords.length;
@@ -1861,16 +1873,7 @@
             nextCard();
         }
 
-        document.getElementById('btn-show-weak').addEventListener('click', () => {
-            viewDashboard.classList.add('hidden');
-            document.getElementById('view-weak').classList.remove('hidden');
-            renderWeakView();
-        });
-        document.getElementById('btn-close-weak').addEventListener('click', () => {
-            document.getElementById('view-weak').classList.add('hidden');
-            viewDashboard.classList.remove('hidden');
-            updateDashboard();
-        });
+
         document.getElementById('btn-weak-practice').addEventListener('click', () => startWeakPractice(getWeakList().map(x => x.w)));
         document.getElementById('weak-list').addEventListener('click', (e) => {
             const row = e.target.closest('.weak-row');
@@ -1943,12 +1946,23 @@
         
         // The big entry buttons on dashboard are handled via tabs now
 
-        let savedListeningArticles = JSON.parse(localStorage.getItem('savedListeningArticles') || '[]');
+        let savedListeningArticles = [];
+        try {
+            savedListeningArticles = JSON.parse(localStorage.getItem('savedListeningArticles') || '[]');
+            if (!Array.isArray(savedListeningArticles)) savedListeningArticles = [];
+        } catch(e) {
+            console.error('Error parsing saved listening articles', e);
+            savedListeningArticles = [];
+        }
 
         function renderListeningSelect() {
             const select = document.getElementById('listening-preset');
             // 移除舊的自訂選項
-            [...select.options].forEach(o => { if (o.value.startsWith('custom_')) o.remove(); });
+            for (let i = select.options.length - 1; i >= 0; i--) {
+                if (select.options[i].value.startsWith('custom_')) {
+                    select.options[i].remove();
+                }
+            }
             const oldGroup = document.getElementById('custom-listening-group');
             if (oldGroup) oldGroup.remove();
 
@@ -1969,13 +1983,18 @@
 
         document.getElementById('listening-preset').addEventListener('change', (e) => {
             const val = e.target.value;
-            if (val !== "") {
+            const ta = document.getElementById('listening-textarea');
+            if (val === "") {
+                ta.value = "";
+                ta.dataset.lastVal = "";
+            } else {
                 if (val.startsWith('custom_')) {
                     const idx = parseInt(val.split('_')[1]);
-                    document.getElementById('listening-textarea').value = savedListeningArticles[idx].text;
+                    ta.value = savedListeningArticles[idx].text;
                 } else {
-                    document.getElementById('listening-textarea').value = builtInArticles[val].text;
+                    ta.value = builtInArticles[val].text;
                 }
+                ta.dataset.lastVal = ta.value; // Store the exact text that was populated
             }
         });
 
@@ -1992,7 +2011,8 @@
             saveBtn.classList.add('hidden'); // 預設隱藏收藏按鈕
             saveBtn.onclick = null; // 清除舊事件
 
-            if (presetSelect.value !== "" && presetSelect.value === document.getElementById('listening-textarea').dataset.lastVal) {
+            // 判斷是否為預設/收藏文章 (如果文字方塊的內容沒有被修改過)
+            if (presetSelect.value !== "" && text === document.getElementById('listening-textarea').dataset.lastVal) {
                 // 如果是從下拉選單選的且沒被亂改
                 const optText = presetSelect.options[presetSelect.selectedIndex].text;
                 titleEl.innerHTML = esc(optText).replace(/\((A1|A2|B1|B2|C1)\)/, (match, level) => {
@@ -2027,9 +2047,6 @@
                     }
                 };
             }
-            // 紀錄最後一次 generate 的值，避免改了 textarea 還以為是預設文章
-            document.getElementById('listening-textarea').dataset.lastVal = presetSelect.value;
-
             // 拆分句子 (簡單處理 . ? ! 換行)
             listeningSentences = text.split(/(?<=[.?!])\s+|\n+/).map(s => s.trim()).filter(s => s.length > 0);
             
@@ -2067,20 +2084,32 @@
 
             // 背景逐句呼叫 Google 翻譯 (確保中英文能一對一連動)
             const fetchTrans = async () => {
-                for(let i=0; i<listeningSentences.length; i++) {
-                    try {
-                        const res = await fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-TW&dt=t&q=${encodeURIComponent(listeningSentences[i])}`);
-                        const data = await res.json();
-                        if (data && data[0]) {
-                            const zh = data[0].map(x => x[0]).join('');
+                try {
+                    const query = listeningSentences.join('\n');
+                    const res = await fetch(`https://translate.googleapis.com/translate_a/t?client=dict-chrome-ex&sl=en&tl=zh-TW&dt=t&q=${encodeURIComponent(query)}`);
+                    const data = await res.json();
+                    if (data && typeof data[0] === 'string') {
+                        const fullZh = data[0];
+                        const zhArray = fullZh.split('\n');
+                        for(let i=0; i<listeningSentences.length; i++) {
                             const el = document.getElementById(`listen-zh-${i}`);
                             if(el) {
-                                el.innerText = zh + ' ';
+                                el.innerText = (zhArray[i] || '') + ' ';
                                 el.classList.remove('text-gray-400');
                                 el.classList.add('text-gray-700');
                             }
                         }
-                    } catch(e) {}
+                    }
+                } catch(e) {
+                    console.error('Translation failed', e);
+                    for(let i=0; i<listeningSentences.length; i++) {
+                        const el = document.getElementById(`listen-zh-${i}`);
+                        if(el) {
+                            el.innerText = '翻譯失敗 ';
+                            el.classList.remove('text-gray-400');
+                            el.classList.add('text-red-500');
+                        }
+                    }
                 }
             };
             fetchTrans();

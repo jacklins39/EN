@@ -1720,9 +1720,7 @@ const toeicWordsDB = [
         "en": "abide",
         "kk": "/əˈbaɪd/",
         "zh": "v. 遵守",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20202,
@@ -1790,9 +1788,7 @@ const toeicWordsDB = [
         "en": "abundant",
         "kk": "/əˈbəndənt/",
         "zh": "adj. 豐富的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20210,
@@ -1970,9 +1966,7 @@ const toeicWordsDB = [
         "en": "acknowledge",
         "kk": "/ækˈnɑɫɪdʒ/",
         "zh": "v. 承認",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20230,
@@ -2051,9 +2045,7 @@ const toeicWordsDB = [
         "en": "additional",
         "kk": "/əˈdɪʃənəɫ/",
         "zh": "adj. 額外的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20239,
@@ -2078,9 +2070,7 @@ const toeicWordsDB = [
         "en": "adhere",
         "kk": "",
         "zh": "v. 堅持；黏著",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20242,
@@ -2330,9 +2320,7 @@ const toeicWordsDB = [
         "en": "affordable",
         "kk": "",
         "zh": "adj. 負擔得起的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20270,
@@ -2366,9 +2354,7 @@ const toeicWordsDB = [
         "en": "aggravate",
         "kk": "",
         "zh": "v. 惡化",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20274,
@@ -2445,9 +2431,7 @@ const toeicWordsDB = [
         "en": "align",
         "kk": "",
         "zh": "v. 使結盟",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20283,
@@ -2472,9 +2456,7 @@ const toeicWordsDB = [
         "en": "alleviate",
         "kk": "",
         "zh": "v. 減輕",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20286,
@@ -2499,45 +2481,35 @@ const toeicWordsDB = [
         "en": "allowance",
         "kk": "/əˈɫaʊəns/",
         "zh": "n. 津貼",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20289,
         "en": "allude",
         "kk": "",
         "zh": "v. 暗示",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20290,
         "en": "ally",
         "kk": "/ˈæɫaɪ/",
         "zh": "n. 盟友",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20291,
         "en": "alter",
         "kk": "/ˈɔɫtɝ/",
         "zh": "v. 改變",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20292,
         "en": "alternate",
         "kk": "/ˈɔɫtɝˌneɪt/",
         "zh": "v. 交替",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20293,
@@ -2551,9 +2523,7 @@ const toeicWordsDB = [
         "en": "altitude",
         "kk": "/ˈæɫtəˌtud/",
         "zh": "n. 高度",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20295,
@@ -2587,9 +2557,7 @@ const toeicWordsDB = [
         "en": "ambiguity",
         "kk": "/ˌæmbɪɡˈjuəti/",
         "zh": "n. 模稜兩可",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20299,
@@ -2621,9 +2589,7 @@ const toeicWordsDB = [
         "en": "amend",
         "kk": "",
         "zh": "v. 修改",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20303,
@@ -2648,9 +2614,7 @@ const toeicWordsDB = [
         "en": "ample",
         "kk": "/ˈæmpəɫ/",
         "zh": "adj. 充足的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20306,
@@ -2666,18 +2630,14 @@ const toeicWordsDB = [
         "en": "amuse",
         "kk": "/əmˈjuz/",
         "zh": "v. 使歡樂",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20308,
         "en": "analogy",
         "kk": "/əˈnæɫədʒi/",
         "zh": "n. 類比",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20309,
@@ -2711,9 +2671,7 @@ const toeicWordsDB = [
         "en": "anchor",
         "kk": "/ˈæŋkɝ/",
         "zh": "n. 錨；主播",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20313,
@@ -2729,9 +2687,7 @@ const toeicWordsDB = [
         "en": "anecdote",
         "kk": "/ˈænəkˌdoʊt/",
         "zh": "n. 軼事",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20315,
@@ -2756,9 +2712,7 @@ const toeicWordsDB = [
         "en": "anguish",
         "kk": "",
         "zh": "n. 極度痛苦",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20318,
@@ -2817,9 +2771,7 @@ const toeicWordsDB = [
         "en": "anomalous",
         "kk": "",
         "zh": "adj. 異常的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20325,
@@ -2842,9 +2794,7 @@ const toeicWordsDB = [
         "en": "antagonism",
         "kk": "",
         "zh": "n. 敵意",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20328,
@@ -2860,18 +2810,14 @@ const toeicWordsDB = [
         "en": "anticipation",
         "kk": "/ænˌtɪsəˈpeɪʃən/",
         "zh": "n. 預期",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20330,
         "en": "antique",
         "kk": "/ænˈtik/",
         "zh": "n. 古董",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20331,
@@ -2896,36 +2842,28 @@ const toeicWordsDB = [
         "en": "apologize",
         "kk": "/əˈpɑɫəˌdʒaɪz/",
         "zh": "v. 道歉",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20334,
         "en": "apology",
         "kk": "/əˈpɑɫəˌdʒi/",
         "zh": "n. 道歉",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20335,
         "en": "appalling",
         "kk": "",
         "zh": "adj. 令人震驚的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20336,
         "en": "apparatus",
         "kk": "",
         "zh": "n. 設備",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20337,
@@ -2950,9 +2888,7 @@ const toeicWordsDB = [
         "en": "appealing",
         "kk": "",
         "zh": "adj. 吸引人的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20340,
@@ -3088,9 +3024,7 @@ const toeicWordsDB = [
         "en": "appreciation",
         "kk": "/əˌpɹiʃiˈeɪʃən/",
         "zh": "n. 感謝",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20356,
@@ -3158,9 +3092,7 @@ const toeicWordsDB = [
         "en": "aptitude",
         "kk": "/ˈæptəˌtud/",
         "zh": "n. 天資",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20364,
@@ -3176,9 +3108,7 @@ const toeicWordsDB = [
         "en": "architect",
         "kk": "/ˈɑɹkəˌtɛkt/",
         "zh": "n. 建築師",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20366,
@@ -3289,9 +3219,7 @@ const toeicWordsDB = [
         "en": "arrival",
         "kk": "/ɝˈaɪvəɫ/",
         "zh": "n. 到達",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20379,
@@ -3411,9 +3339,7 @@ const toeicWordsDB = [
         "en": "assessment",
         "kk": "/əˈsɛsmənt/",
         "zh": "n. 評估",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
+        "unit": 12
     },
     {
         "id": 20393,
@@ -3517,9 +3443,7 @@ const toeicWordsDB = [
         "en": "assumption",
         "kk": "/əˈsəmpʃən/",
         "zh": "n. 假設",
-        "unit": 13,
-        "example": "",
-        "exampleZh": ""
+        "unit": 13
     },
     {
         "id": 20405,
@@ -3535,9 +3459,7 @@ const toeicWordsDB = [
         "en": "astonish",
         "kk": "/əˈstɑnɪʃ/",
         "zh": "v. 使驚訝",
-        "unit": 13,
-        "example": "",
-        "exampleZh": ""
+        "unit": 13
     },
     {
         "id": 20407,
@@ -3650,9 +3572,7 @@ const toeicWordsDB = [
         "en": "attraction",
         "kk": "/əˈtɹækʃən/",
         "zh": "n. 吸引力",
-        "unit": 13,
-        "example": "",
-        "exampleZh": ""
+        "unit": 13
     },
     {
         "id": 20420,
@@ -3720,9 +3640,7 @@ const toeicWordsDB = [
         "en": "author",
         "kk": "/ˈɔθɝ/",
         "zh": "n. 作者",
-        "unit": 13,
-        "example": "",
-        "exampleZh": ""
+        "unit": 13
     },
     {
         "id": 20428,
@@ -3819,9 +3737,7 @@ const toeicWordsDB = [
         "en": "availability",
         "kk": "",
         "zh": "n. 可用性；空檔",
-        "unit": 13,
-        "example": "",
-        "exampleZh": ""
+        "unit": 13
     },
     {
         "id": 20439,
@@ -3981,18 +3897,14 @@ const toeicWordsDB = [
         "en": "ballot",
         "kk": "/ˈbæɫət/",
         "zh": "n. 選票",
-        "unit": 13,
-        "example": "",
-        "exampleZh": ""
+        "unit": 13
     },
     {
         "id": 20457,
         "en": "ban",
         "kk": "/ˈbæn/",
         "zh": "v. 禁止",
-        "unit": 13,
-        "example": "",
-        "exampleZh": ""
+        "unit": 13
     },
     {
         "id": 20458,
@@ -4177,9 +4089,7 @@ const toeicWordsDB = [
         "en": "beneficial",
         "kk": "/ˌbɛnəˈfɪʃəɫ/",
         "zh": "adj. 有益的",
-        "unit": 13,
-        "example": "",
-        "exampleZh": ""
+        "unit": 13
     },
     {
         "id": 20479,
@@ -4245,9 +4155,7 @@ const toeicWordsDB = [
         "en": "bid",
         "kk": "/ˈbɪd/",
         "zh": "n. 投標；v. 出價",
-        "unit": 13,
-        "example": "",
-        "exampleZh": ""
+        "unit": 13
     },
     {
         "id": 20487,
@@ -4326,9 +4234,7 @@ const toeicWordsDB = [
         "en": "blast",
         "kk": "/ˈbɫæst/",
         "zh": "n. 爆炸",
-        "unit": 13,
-        "example": "",
-        "exampleZh": ""
+        "unit": 13
     },
     {
         "id": 20496,
@@ -4425,9 +4331,7 @@ const toeicWordsDB = [
         "en": "boom",
         "kk": "/ˈbum/",
         "zh": "n. 繁榮",
-        "unit": 13,
-        "example": "",
-        "exampleZh": ""
+        "unit": 13
     },
     {
         "id": 20507,
@@ -4488,9 +4392,7 @@ const toeicWordsDB = [
         "en": "bound",
         "kk": "/ˈbaʊnd/",
         "zh": "adj. 綁住的",
-        "unit": 13,
-        "example": "",
-        "exampleZh": ""
+        "unit": 13
     },
     {
         "id": 20514,
@@ -4551,18 +4453,14 @@ const toeicWordsDB = [
         "en": "breakdown",
         "kk": "/ˈbɹeɪkˌdaʊn/",
         "zh": "n. 故障",
-        "unit": 13,
-        "example": "",
-        "exampleZh": ""
+        "unit": 13
     },
     {
         "id": 20521,
         "en": "breakthrough",
         "kk": "/ˈbɹeɪkˌθɹu/",
         "zh": "n. 突破",
-        "unit": 13,
-        "example": "",
-        "exampleZh": ""
+        "unit": 13
     },
     {
         "id": 20522,
@@ -4641,9 +4539,7 @@ const toeicWordsDB = [
         "en": "broaden",
         "kk": "/ˈbɹɔdən/",
         "zh": "v. 變寬",
-        "unit": 13,
-        "example": "",
-        "exampleZh": ""
+        "unit": 13
     },
     {
         "id": 20531,
@@ -4668,9 +4564,7 @@ const toeicWordsDB = [
         "en": "browse",
         "kk": "/ˈbɹaʊz/",
         "zh": "v. 瀏覽",
-        "unit": 13,
-        "example": "",
-        "exampleZh": ""
+        "unit": 13
     },
     {
         "id": 20534,
@@ -4844,9 +4738,7 @@ const toeicWordsDB = [
         "en": "calculator",
         "kk": "/ˈkæɫkjəˌɫeɪtɝ/",
         "zh": "n. 計算機",
-        "unit": 13,
-        "example": "",
-        "exampleZh": ""
+        "unit": 13
     },
     {
         "id": 20554,
@@ -5112,18 +5004,14 @@ const toeicWordsDB = [
         "en": "caution",
         "kk": "/ˈkɑʃən/",
         "zh": "n. 警告",
-        "unit": 13,
-        "example": "",
-        "exampleZh": ""
+        "unit": 13
     },
     {
         "id": 20584,
         "en": "cautious",
         "kk": "/ˈkɔʃəs/",
         "zh": "adj. 謹慎的",
-        "unit": 13,
-        "example": "",
-        "exampleZh": ""
+        "unit": 13
     },
     {
         "id": 20585,
@@ -5155,9 +5043,7 @@ const toeicWordsDB = [
         "en": "celebration",
         "kk": "/ˌsɛɫəˈbɹeɪʃən/",
         "zh": "n. 慶典",
-        "unit": 14,
-        "example": "",
-        "exampleZh": ""
+        "unit": 14
     },
     {
         "id": 20589,
@@ -5367,9 +5253,7 @@ const toeicWordsDB = [
         "en": "chaos",
         "kk": "/ˈkeɪɑs/",
         "zh": "n. 混亂",
-        "unit": 14,
-        "example": "",
-        "exampleZh": ""
+        "unit": 14
     },
     {
         "id": 20613,
@@ -5446,9 +5330,7 @@ const toeicWordsDB = [
         "en": "chat",
         "kk": "/ˈtʃæt/",
         "zh": "v. 聊天",
-        "unit": 14,
-        "example": "",
-        "exampleZh": ""
+        "unit": 14
     },
     {
         "id": 20622,
@@ -5500,9 +5382,7 @@ const toeicWordsDB = [
         "en": "cheerful",
         "kk": "/ˈtʃɪɹfəɫ/",
         "zh": "adj. 開朗的",
-        "unit": 14,
-        "example": "",
-        "exampleZh": ""
+        "unit": 14
     },
     {
         "id": 20628,
@@ -5687,9 +5567,7 @@ const toeicWordsDB = [
         "en": "cite",
         "kk": "/ˈsaɪt/",
         "zh": "v. 引用",
-        "unit": 14,
-        "example": "",
-        "exampleZh": ""
+        "unit": 14
     },
     {
         "id": 20649,
@@ -5712,9 +5590,7 @@ const toeicWordsDB = [
         "en": "civic",
         "kk": "/ˈsɪvɪk/",
         "zh": "adj. 城市的",
-        "unit": 14,
-        "example": "",
-        "exampleZh": ""
+        "unit": 14
     },
     {
         "id": 20652,
@@ -5766,9 +5642,7 @@ const toeicWordsDB = [
         "en": "clarity",
         "kk": "/ˈkɫɛɹəti/",
         "zh": "n. 清楚",
-        "unit": 14,
-        "example": "",
-        "exampleZh": ""
+        "unit": 14
     },
     {
         "id": 20658,
@@ -5847,9 +5721,7 @@ const toeicWordsDB = [
         "en": "clearance",
         "kk": "/ˈkɫɪɹəns/",
         "zh": "n. 清除",
-        "unit": 14,
-        "example": "",
-        "exampleZh": ""
+        "unit": 14
     },
     {
         "id": 20667,
@@ -5924,9 +5796,7 @@ const toeicWordsDB = [
         "en": "cling",
         "kk": "/ˈkɫɪŋ/",
         "zh": "v. 緊抓",
-        "unit": 14,
-        "example": "",
-        "exampleZh": ""
+        "unit": 14
     },
     {
         "id": 20676,
@@ -5976,9 +5846,7 @@ const toeicWordsDB = [
         "en": "closure",
         "kk": "/ˈkɫoʊʒɝ/",
         "zh": "n. 關閉",
-        "unit": 14,
-        "example": "",
-        "exampleZh": ""
+        "unit": 14
     },
     {
         "id": 20682,
@@ -6035,9 +5903,7 @@ const toeicWordsDB = [
         "en": "cluster",
         "kk": "/ˈkɫəstɝ/",
         "zh": "n. 簇",
-        "unit": 14,
-        "example": "",
-        "exampleZh": ""
+        "unit": 14
     },
     {
         "id": 20689,
@@ -6150,9 +6016,7 @@ const toeicWordsDB = [
         "en": "coincidence",
         "kk": "/koʊˈɪnsɪdəns/",
         "zh": "n. 巧合",
-        "unit": 14,
-        "example": "",
-        "exampleZh": ""
+        "unit": 14
     },
     {
         "id": 20702,
@@ -6213,9 +6077,7 @@ const toeicWordsDB = [
         "en": "collection",
         "kk": "/kəˈɫɛkʃən/",
         "zh": "n. 收藏品",
-        "unit": 14,
-        "example": "",
-        "exampleZh": ""
+        "unit": 14
     },
     {
         "id": 20709,
@@ -6229,9 +6091,7 @@ const toeicWordsDB = [
         "en": "collector",
         "kk": "/kəˈɫɛktɝ/",
         "zh": "n. 收藏家",
-        "unit": 14,
-        "example": "",
-        "exampleZh": ""
+        "unit": 14
     },
     {
         "id": 20711,
@@ -6256,9 +6116,7 @@ const toeicWordsDB = [
         "en": "collision",
         "kk": "/kəˈɫɪʒən/",
         "zh": "n. 碰撞",
-        "unit": 14,
-        "example": "",
-        "exampleZh": ""
+        "unit": 14
     },
     {
         "id": 20714,
@@ -6283,9 +6141,7 @@ const toeicWordsDB = [
         "en": "combat",
         "kk": "/ˈkɑmbæt/",
         "zh": "n. 戰鬥",
-        "unit": 14,
-        "example": "",
-        "exampleZh": ""
+        "unit": 14
     },
     {
         "id": 20717,
@@ -6445,9 +6301,7 @@ const toeicWordsDB = [
         "en": "commitment",
         "kk": "/kəˈmɪtmənt/",
         "zh": "n. 承諾",
-        "unit": 14,
-        "example": "",
-        "exampleZh": ""
+        "unit": 14
     },
     {
         "id": 20735,
@@ -6526,9 +6380,7 @@ const toeicWordsDB = [
         "en": "compact",
         "kk": "/ˈkɑmpækt/",
         "zh": "adj. 緊湊的",
-        "unit": 14,
-        "example": "",
-        "exampleZh": ""
+        "unit": 14
     },
     {
         "id": 20744,
@@ -6583,9 +6435,7 @@ const toeicWordsDB = [
         "en": "compass",
         "kk": "/ˈkəmpəs/",
         "zh": "n. 指南針",
-        "unit": 14,
-        "example": "",
-        "exampleZh": ""
+        "unit": 14
     },
     {
         "id": 20751,
@@ -6608,9 +6458,7 @@ const toeicWordsDB = [
         "en": "compel",
         "kk": "/kəmˈpɛɫ/",
         "zh": "v. 強迫",
-        "unit": 14,
-        "example": "",
-        "exampleZh": ""
+        "unit": 14
     },
     {
         "id": 20754,
@@ -6653,9 +6501,7 @@ const toeicWordsDB = [
         "en": "competence",
         "kk": "/ˈkɑmpətɪns/",
         "zh": "n. 能力",
-        "unit": 14,
-        "example": "",
-        "exampleZh": ""
+        "unit": 14
     },
     {
         "id": 20759,
@@ -6757,9 +6603,7 @@ const toeicWordsDB = [
         "en": "complexity",
         "kk": "/kəmˈpɫɛksəti/",
         "zh": "n. 複雜性",
-        "unit": 14,
-        "example": "",
-        "exampleZh": ""
+        "unit": 14
     },
     {
         "id": 20771,
@@ -6793,18 +6637,14 @@ const toeicWordsDB = [
         "en": "complication",
         "kk": "/ˌkɑmpɫəˈkeɪʃən/",
         "zh": "n. 併發症",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20775,
         "en": "compliment",
         "kk": "/ˈkɑmpɫəmɛnt/",
         "zh": "n. 讚美",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20776,
@@ -6863,18 +6703,14 @@ const toeicWordsDB = [
         "en": "compound",
         "kk": "/ˈkɑmpaʊnd/",
         "zh": "n. 混合物",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20783,
         "en": "comprehend",
         "kk": "/ˌkɑmpɹiˈhɛnd/",
         "zh": "v. 理解",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20784,
@@ -6917,9 +6753,7 @@ const toeicWordsDB = [
         "en": "compromise",
         "kk": "/ˈkɑmpɹəˌmaɪz/",
         "zh": "n. 妥協",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20789,
@@ -6935,9 +6769,7 @@ const toeicWordsDB = [
         "en": "compute",
         "kk": "/kəmˈpjut/",
         "zh": "v. 計算",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20791,
@@ -6951,9 +6783,7 @@ const toeicWordsDB = [
         "en": "conceal",
         "kk": "/kənˈsiɫ/",
         "zh": "v. 隱藏",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20793,
@@ -6969,18 +6799,14 @@ const toeicWordsDB = [
         "en": "conceit",
         "kk": "/kənˈsit/",
         "zh": "n. 自負",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20795,
         "en": "conceive",
         "kk": "/kənˈsiv/",
         "zh": "v. 構思",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20796,
@@ -6996,9 +6822,7 @@ const toeicWordsDB = [
         "en": "concentration",
         "kk": "/ˌkɑnsənˈtɹeɪʃən/",
         "zh": "n. 集中",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20798,
@@ -7014,9 +6838,7 @@ const toeicWordsDB = [
         "en": "conception",
         "kk": "/kənˈsɛpʃən/",
         "zh": "n. 觀念",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20800,
@@ -7032,9 +6854,7 @@ const toeicWordsDB = [
         "en": "concerning",
         "kk": "/kənˈsɝnɪŋ/",
         "zh": "prep. 關於",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20802,
@@ -7050,9 +6870,7 @@ const toeicWordsDB = [
         "en": "concession",
         "kk": "/kənˈsɛʃən/",
         "zh": "n. 讓步",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20804,
@@ -7111,9 +6929,7 @@ const toeicWordsDB = [
         "en": "condemn",
         "kk": "/kənˈdɛm/",
         "zh": "v. 譴責",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20811,
@@ -7138,9 +6954,7 @@ const toeicWordsDB = [
         "en": "conduct",
         "kk": "/ˈkɑndəkt/",
         "zh": "v. 進行",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20814,
@@ -7183,9 +6997,7 @@ const toeicWordsDB = [
         "en": "confess",
         "kk": "/kənˈfɛs/",
         "zh": "v. 承認",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20819,
@@ -7300,18 +7112,14 @@ const toeicWordsDB = [
         "en": "confront",
         "kk": "/kənˈfɹənt/",
         "zh": "v. 面對",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20832,
         "en": "confrontation",
         "kk": "/ˌkɑnfɹənˈteɪʃən/",
         "zh": "n. 對抗",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20833,
@@ -7327,9 +7135,7 @@ const toeicWordsDB = [
         "en": "confusion",
         "kk": "/kənˈfjuʒən/",
         "zh": "n. 困惑",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20835,
@@ -7397,9 +7203,7 @@ const toeicWordsDB = [
         "en": "conquest",
         "kk": "/ˈkɑŋkwɛst/",
         "zh": "n. 征服",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20843,
@@ -7449,18 +7253,14 @@ const toeicWordsDB = [
         "en": "consensus",
         "kk": "/kənˈsɛnsəs/",
         "zh": "n. 共識",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20849,
         "en": "consent",
         "kk": "/kənˈsɛnt/",
         "zh": "n. 同意",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20850,
@@ -7476,9 +7276,7 @@ const toeicWordsDB = [
         "en": "consequent",
         "kk": "/ˈkɑnsəkwənt/",
         "zh": "adj. 隨之發生的",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20852,
@@ -7494,9 +7292,7 @@ const toeicWordsDB = [
         "en": "conservation",
         "kk": "/ˌkɑnsɝˈveɪʃən/",
         "zh": "n. 保存",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20854,
@@ -7512,9 +7308,7 @@ const toeicWordsDB = [
         "en": "conserve",
         "kk": "/kənˈsɝv/",
         "zh": "v. 保存",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20856,
@@ -7548,9 +7342,7 @@ const toeicWordsDB = [
         "en": "considerate",
         "kk": "/kənˈsɪdɝət/",
         "zh": "adj. 體貼的",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20860,
@@ -7566,9 +7358,7 @@ const toeicWordsDB = [
         "en": "consist",
         "kk": "/kənˈsɪst/",
         "zh": "v. 組成",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20862,
@@ -7593,9 +7383,7 @@ const toeicWordsDB = [
         "en": "console",
         "kk": "/ˈkɑnsoʊɫ/",
         "zh": "v. 安慰",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20865,
@@ -7620,9 +7408,7 @@ const toeicWordsDB = [
         "en": "conspiracy",
         "kk": "/kənˈspɪɹəsi/",
         "zh": "n. 陰謀",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20868,
@@ -7647,9 +7433,7 @@ const toeicWordsDB = [
         "en": "constitute",
         "kk": "/ˈkɑnstəˌtut/",
         "zh": "v. 構成",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20871,
@@ -7719,9 +7503,7 @@ const toeicWordsDB = [
         "en": "consultation",
         "kk": "/ˌkɑnsəɫˈteɪʃən/",
         "zh": "n. 諮詢",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20879,
@@ -7746,9 +7528,7 @@ const toeicWordsDB = [
         "en": "consumption",
         "kk": "/kənˈsəmpʃən/",
         "zh": "n. 消費",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20882,
@@ -7773,9 +7553,7 @@ const toeicWordsDB = [
         "en": "container",
         "kk": "/kənˈteɪnɝ/",
         "zh": "n. 容器",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20885,
@@ -7791,18 +7569,14 @@ const toeicWordsDB = [
         "en": "contemplate",
         "kk": "/ˈkɑntəmˌpɫeɪt/",
         "zh": "v. 沉思",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20887,
         "en": "contemporary",
         "kk": "/kənˈtɛmpɝˌɛɹi/",
         "zh": "adj. 當代的",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20888,
@@ -7818,9 +7592,7 @@ const toeicWordsDB = [
         "en": "contend",
         "kk": "/kənˈtɛnd/",
         "zh": "v. 競爭",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20890,
@@ -7890,9 +7662,7 @@ const toeicWordsDB = [
         "en": "continuous",
         "kk": "/kənˈtɪnjuəs/",
         "zh": "adj. 連續的",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20898,
@@ -7926,9 +7696,7 @@ const toeicWordsDB = [
         "en": "contradiction",
         "kk": "/ˌkɑntɹəˈdɪkʃən/",
         "zh": "n. 矛盾",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20902,
@@ -7962,9 +7730,7 @@ const toeicWordsDB = [
         "en": "contribution",
         "kk": "/ˌkɑntɹəbˈjuʃən/",
         "zh": "n. 貢獻",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20906,
@@ -8005,9 +7771,7 @@ const toeicWordsDB = [
         "en": "controversy",
         "kk": "/ˈkɑntɹəˌvɝsi/",
         "zh": "n. 爭議",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20911,
@@ -8075,9 +7839,7 @@ const toeicWordsDB = [
         "en": "converse",
         "kk": "/ˈkɑnvɝs/",
         "zh": "v. 交談",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20919,
@@ -8093,9 +7855,7 @@ const toeicWordsDB = [
         "en": "convert",
         "kk": "/ˈkɑnvɝt/",
         "zh": "v. 轉換",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20921,
@@ -8120,9 +7880,7 @@ const toeicWordsDB = [
         "en": "conviction",
         "kk": "/kənˈvɪkʃən/",
         "zh": "n. 確信",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20924,
@@ -8174,9 +7932,7 @@ const toeicWordsDB = [
         "en": "cooperation",
         "kk": "/ˌkwɑpɝˈeɪʃən/",
         "zh": "n. 合作",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20930,
@@ -8235,9 +7991,7 @@ const toeicWordsDB = [
         "en": "copyright",
         "kk": "/ˈkɑpiˌɹaɪt/",
         "zh": "n. 版權",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20937,
@@ -8276,9 +8030,7 @@ const toeicWordsDB = [
         "en": "corps",
         "kk": "/ˈkɔɹ/",
         "zh": "n. 部隊",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20942,
@@ -8339,9 +8091,7 @@ const toeicWordsDB = [
         "en": "correspondent",
         "kk": "/ˌkɔɹəˈspɑndənt/",
         "zh": "n. 通訊記者",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20949,
@@ -8357,18 +8107,14 @@ const toeicWordsDB = [
         "en": "corrupt",
         "kk": "/kɝˈəpt/",
         "zh": "adj. 腐敗的",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20951,
         "en": "corruption",
         "kk": "/kɝˈəpʃən/",
         "zh": "n. 腐敗",
-        "unit": 15,
-        "example": "",
-        "exampleZh": ""
+        "unit": 15
     },
     {
         "id": 20952,
@@ -8445,9 +8191,7 @@ const toeicWordsDB = [
         "en": "counsel",
         "kk": "/ˈkaʊnsəɫ/",
         "zh": "n. 建議",
-        "unit": 16,
-        "example": "",
-        "exampleZh": ""
+        "unit": 16
     },
     {
         "id": 20961,
@@ -8490,9 +8234,7 @@ const toeicWordsDB = [
         "en": "counterpart",
         "kk": "/ˈkaʊntɝˌpɑɹt/",
         "zh": "n. 對應的人或物",
-        "unit": 16,
-        "example": "",
-        "exampleZh": ""
+        "unit": 16
     },
     {
         "id": 20966,
@@ -8788,9 +8530,7 @@ const toeicWordsDB = [
         "en": "critic",
         "kk": "/ˈkɹɪtɪk/",
         "zh": "n. 評論家",
-        "unit": 16,
-        "example": "",
-        "exampleZh": ""
+        "unit": 16
     },
     {
         "id": 21000,
@@ -8910,9 +8650,7 @@ const toeicWordsDB = [
         "en": "crystal",
         "kk": "/ˈkɹɪstəɫ/",
         "zh": "n. 水晶",
-        "unit": 16,
-        "example": "",
-        "exampleZh": ""
+        "unit": 16
     },
     {
         "id": 21014,
@@ -8955,9 +8693,7 @@ const toeicWordsDB = [
         "en": "cultural",
         "kk": "/ˈkəɫtʃɝəɫ/",
         "zh": "adj. 文化的",
-        "unit": 16,
-        "example": "",
-        "exampleZh": ""
+        "unit": 16
     },
     {
         "id": 21019,
@@ -9158,9 +8894,7 @@ const toeicWordsDB = [
         "en": "dare",
         "kk": "/ˈdɛɹ/",
         "zh": "v. 敢",
-        "unit": 16,
-        "example": "",
-        "exampleZh": ""
+        "unit": 16
     },
     {
         "id": 21042,
@@ -9314,9 +9048,7 @@ const toeicWordsDB = [
         "en": "decay",
         "kk": "/dɪˈkeɪ/",
         "zh": "v. 腐爛",
-        "unit": 16,
-        "example": "",
-        "exampleZh": ""
+        "unit": 16
     },
     {
         "id": 21060,
@@ -9332,9 +9064,7 @@ const toeicWordsDB = [
         "en": "deceive",
         "kk": "/dɪˈsiv/",
         "zh": "v. 欺騙",
-        "unit": 16,
-        "example": "",
-        "exampleZh": ""
+        "unit": 16
     },
     {
         "id": 21062,
@@ -9416,9 +9146,7 @@ const toeicWordsDB = [
         "en": "decoration",
         "kk": "/ˌdɛkɝˈeɪʃən/",
         "zh": "n. 裝飾",
-        "unit": 16,
-        "example": "",
-        "exampleZh": ""
+        "unit": 16
     },
     {
         "id": 21072,
@@ -9434,18 +9162,14 @@ const toeicWordsDB = [
         "en": "dedicate",
         "kk": "/ˈdɛdəˌkeɪt/",
         "zh": "v. 奉獻",
-        "unit": 16,
-        "example": "",
-        "exampleZh": ""
+        "unit": 16
     },
     {
         "id": 21074,
         "en": "dedication",
         "kk": "/ˌdɛdəˈkeɪʃən/",
         "zh": "n. 奉獻",
-        "unit": 16,
-        "example": "",
-        "exampleZh": ""
+        "unit": 16
     },
     {
         "id": 21075,
@@ -9542,9 +9266,7 @@ const toeicWordsDB = [
         "en": "defect",
         "kk": "/ˈdifɛkt/",
         "zh": "n. 缺點",
-        "unit": 16,
-        "example": "",
-        "exampleZh": ""
+        "unit": 16
     },
     {
         "id": 21086,
@@ -9578,9 +9300,7 @@ const toeicWordsDB = [
         "en": "defense",
         "kk": "/dɪˈfɛns/",
         "zh": "n. 防禦",
-        "unit": 16,
-        "example": "",
-        "exampleZh": ""
+        "unit": 16
     },
     {
         "id": 21090,
@@ -9605,9 +9325,7 @@ const toeicWordsDB = [
         "en": "deficiency",
         "kk": "/dɪˈfɪʃənsi/",
         "zh": "n. 缺乏",
-        "unit": 16,
-        "example": "",
-        "exampleZh": ""
+        "unit": 16
     },
     {
         "id": 21093,
@@ -9650,9 +9368,7 @@ const toeicWordsDB = [
         "en": "definition",
         "kk": "/ˌdɛfəˈnɪʃən/",
         "zh": "n. 定義",
-        "unit": 16,
-        "example": "",
-        "exampleZh": ""
+        "unit": 16
     },
     {
         "id": 21098,
@@ -9808,9 +9524,7 @@ const toeicWordsDB = [
         "en": "democratic",
         "kk": "/ˌdɛməˈkɹætɪk/",
         "zh": "adj. 民主的",
-        "unit": 16,
-        "example": "",
-        "exampleZh": ""
+        "unit": 16
     },
     {
         "id": 21116,
@@ -9880,9 +9594,7 @@ const toeicWordsDB = [
         "en": "density",
         "kk": "/ˈdɛnsəti/",
         "zh": "n. 密度",
-        "unit": 16,
-        "example": "",
-        "exampleZh": ""
+        "unit": 16
     },
     {
         "id": 21124,
@@ -10033,9 +9745,7 @@ const toeicWordsDB = [
         "en": "depression",
         "kk": "/dɪˈpɹɛʃən/",
         "zh": "n. 沮喪",
-        "unit": 16,
-        "example": "",
-        "exampleZh": ""
+        "unit": 16
     },
     {
         "id": 21141,
@@ -10058,9 +9768,7 @@ const toeicWordsDB = [
         "en": "deputy",
         "kk": "/ˈdɛpjəti/",
         "zh": "n. 副手",
-        "unit": 16,
-        "example": "",
-        "exampleZh": ""
+        "unit": 16
     },
     {
         "id": 21144,
@@ -10076,9 +9784,7 @@ const toeicWordsDB = [
         "en": "descend",
         "kk": "/dɪˈsɛnd/",
         "zh": "v. 下降",
-        "unit": 16,
-        "example": "",
-        "exampleZh": ""
+        "unit": 16
     },
     {
         "id": 21146,
@@ -10139,18 +9845,14 @@ const toeicWordsDB = [
         "en": "designer",
         "kk": "/dɪˈzaɪnɝ/",
         "zh": "n. 設計師",
-        "unit": 16,
-        "example": "",
-        "exampleZh": ""
+        "unit": 16
     },
     {
         "id": 21153,
         "en": "desirable",
         "kk": "/dɪˈzaɪɝəbəɫ/",
         "zh": "adj. 理想的",
-        "unit": 16,
-        "example": "",
-        "exampleZh": ""
+        "unit": 16
     },
     {
         "id": 21154,
@@ -10175,9 +9877,7 @@ const toeicWordsDB = [
         "en": "despair",
         "kk": "/dɪˈspɛɹ/",
         "zh": "n. 絕望",
-        "unit": 16,
-        "example": "",
-        "exampleZh": ""
+        "unit": 16
     },
     {
         "id": 21157,

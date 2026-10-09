@@ -2198,16 +2198,20 @@
             
             // 渲染句子
             const container = document.getElementById('listening-text-container');
-            container.innerHTML = listeningSentences.map((s, i) => 
-                `<span id="listen-s-${i}" class="transition-colors duration-200 cursor-pointer hover:bg-teal-100 rounded px-1">${esc(s)}</span> `
-            ).join('');
-
-            // 綁定點擊句子直接播放
-            listeningSentences.forEach((_, i) => {
-                document.getElementById(`listen-s-${i}`).addEventListener('click', () => {
-                    playListeningFrom(i);
-                });
-            });
+            container.innerHTML = listeningSentences.map((s, i) => {
+                let html = '';
+                const regex = /\b[a-zA-Z']+\b/g;
+                let match;
+                let lastIndex = 0;
+                while ((match = regex.exec(s)) !== null) {
+                    html += esc(s.substring(lastIndex, match.index));
+                    const wordStr = match[0].toLowerCase().replace(/'/g, "\\'");
+                    html += `<span id="listen-w-${i}-${match.index}" class="listen-word cursor-pointer transition-colors duration-150 border-b border-transparent hover:border-teal-500 rounded" data-word="${wordStr}" onclick="showWordTranslation(event, '${wordStr}')">${esc(match[0])}</span>`;
+                    lastIndex = regex.lastIndex;
+                }
+                html += esc(s.substring(lastIndex));
+                return `<span id="listen-s-${i}" class="transition-colors duration-200 rounded leading-loose" onclick="playListeningFrom(${i})">${html}</span> `
+            }).join('');
 
             // 萃取單字
             extractListeningWords(text);
@@ -2327,7 +2331,7 @@
                 const elZh = document.getElementById(`listen-zh-${i}`);
                 if (i === index) {
                     if (elEn) {
-                        elEn.classList.add('bg-teal-200', 'text-teal-900', 'font-bold');
+                        elEn.classList.add('bg-gray-50');
                         elEn.scrollIntoView({ behavior: 'smooth', block: 'center' });
                     }
                     if (elZh) {
@@ -2336,7 +2340,7 @@
                         elZh.scrollIntoView({ behavior: 'smooth', block: 'center' });
                     }
                 } else {
-                    if (elEn) elEn.classList.remove('bg-teal-200', 'text-teal-900', 'font-bold');
+                    if (elEn) elEn.classList.remove('bg-gray-50');
                     if (elZh) {
                         elZh.classList.remove('bg-teal-100', 'text-teal-800', 'font-bold');
                         if (elZh.innerText !== '翻譯載入中... ') elZh.classList.add('text-gray-700');
@@ -2346,12 +2350,17 @@
         }
 
         let listeningUtterance = null;
+        let currentListeningWordEl = null;
         
         function playListeningFrom(index) {
             if (index >= listeningSentences.length) {
                 isListeningPlaying = false;
                 updateListeningPlayBtn();
                 highlightListeningSentence(-1);
+                if (currentListeningWordEl) {
+                    currentListeningWordEl.classList.remove('bg-yellow-200', 'text-teal-900', 'font-bold');
+                    currentListeningWordEl = null;
+                }
                 return;
             }
             
@@ -2360,18 +2369,83 @@
             updateListeningPlayBtn();
             highlightListeningSentence(index);
             
+            if (currentListeningWordEl) {
+                currentListeningWordEl.classList.remove('bg-yellow-200', 'text-teal-900', 'font-bold');
+                currentListeningWordEl = null;
+            }
+
             window.speechSynthesis.cancel();
             listeningUtterance = new SpeechSynthesisUtterance(listeningSentences[index]);
             listeningUtterance.lang = 'en-US';
             listeningUtterance.rate = parseFloat(document.getElementById('listening-speed').value);
             
+            listeningUtterance.onboundary = function(event) {
+                if (event.name === 'word') {
+                    if (currentListeningWordEl) {
+                        currentListeningWordEl.classList.remove('bg-yellow-200', 'text-teal-900', 'font-bold');
+                    }
+                    const wordEl = document.getElementById(`listen-w-${index}-${event.charIndex}`);
+                    if (wordEl) {
+                        wordEl.classList.add('bg-yellow-200', 'text-teal-900', 'font-bold');
+                        currentListeningWordEl = wordEl;
+                    }
+                }
+            };
+
             listeningUtterance.onend = () => {
+                if (currentListeningWordEl) {
+                    currentListeningWordEl.classList.remove('bg-yellow-200', 'text-teal-900', 'font-bold');
+                    currentListeningWordEl = null;
+                }
                 if (isListeningPlaying) {
                     setTimeout(() => playListeningFrom(currentListeningIndex + 1), 300); // 句與句之間停頓
                 }
             };
+            listeningUtterance.onerror = () => {
+                if (currentListeningWordEl) {
+                    currentListeningWordEl.classList.remove('bg-yellow-200', 'text-teal-900', 'font-bold');
+                    currentListeningWordEl = null;
+                }
+                isListeningPlaying = false;
+                updateListeningPlayBtn();
+            };
             
             window.speechSynthesis.speak(listeningUtterance);
+        }
+
+        // 顯示單字翻譯的 tooltip
+        function showWordTranslation(e, wordText) {
+            e.stopPropagation(); // 避免觸發句子的 onclick
+
+            // 在字庫中尋找單字
+            let w = vocabularyDB.find(x => x.en.toLowerCase() === wordText);
+            
+            let tooltip = document.getElementById('word-tooltip');
+            if (!tooltip) {
+                tooltip = document.createElement('div');
+                tooltip.id = 'word-tooltip';
+                tooltip.className = 'absolute bg-gray-900 text-white text-sm px-3 py-2 rounded shadow-lg z-50 pointer-events-none transition-opacity duration-200 opacity-0 max-w-xs';
+                document.body.appendChild(tooltip);
+            }
+            
+            if (w) {
+                tooltip.innerHTML = `<div class="font-bold text-teal-300">${esc(w.en)} ${w.kk ? `<span class="font-normal text-gray-300 text-xs ml-1">${esc(w.kk)}</span>` : ''}</div><div class="mt-1">${esc(w.zh)}</div>`;
+            } else {
+                tooltip.innerHTML = `<div class="font-bold text-gray-300">${esc(wordText)}</div><div class="text-xs text-gray-400 mt-1">字庫中未收錄此單字</div>`;
+            }
+
+            // 計算位置
+            const rect = e.target.getBoundingClientRect();
+            // 先顯示以取得實際高度
+            tooltip.classList.remove('opacity-0');
+            tooltip.style.left = Math.max(10, rect.left + window.scrollX) + 'px';
+            tooltip.style.top = Math.max(10, rect.top + window.scrollY - tooltip.offsetHeight - 5) + 'px';
+            
+            // 3秒後隱藏
+            if (tooltip.timeoutId) clearTimeout(tooltip.timeoutId);
+            tooltip.timeoutId = setTimeout(() => {
+                tooltip.classList.add('opacity-0');
+            }, 3000);
         }
 
         function stopListening() {
@@ -2379,6 +2453,10 @@
             window.speechSynthesis.cancel();
             updateListeningPlayBtn();
             highlightListeningSentence(-1);
+            if (currentListeningWordEl) {
+                currentListeningWordEl.classList.remove('bg-yellow-200', 'text-teal-900', 'font-bold');
+                currentListeningWordEl = null;
+            }
             currentListeningIndex = 0;
         }
 

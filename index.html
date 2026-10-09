@@ -2206,11 +2206,12 @@
                 while ((match = regex.exec(s)) !== null) {
                     html += esc(s.substring(lastIndex, match.index));
                     const wordStr = match[0].toLowerCase().replace(/'/g, "\\'");
-                    html += `<span id="listen-w-${i}-${match.index}" class="listen-word cursor-pointer transition-colors duration-150 border-b border-transparent hover:border-teal-500 rounded" data-word="${wordStr}" onclick="showWordTranslation(event, '${wordStr}')">${esc(match[0])}</span>`;
+                    // Add data-char-index for robust tracking, and inline-block for transform (if needed) but keep it simple with colors
+                    html += `<span class="listen-word cursor-pointer transition-all duration-200 border-b-2 border-transparent hover:border-teal-400 rounded px-0.5 mx-px" data-word="${wordStr}" data-char-index="${match.index}" onclick="showWordTranslation(event, '${wordStr}')">${esc(match[0])}</span>`;
                     lastIndex = regex.lastIndex;
                 }
                 html += esc(s.substring(lastIndex));
-                return `<span id="listen-s-${i}" class="transition-colors duration-200 rounded leading-loose" onclick="playListeningFrom(${i})">${html}</span> `
+                return `<span id="listen-s-${i}" class="transition-colors duration-300 rounded leading-loose" onclick="playListeningFrom(${i})">${html}</span> `
             }).join('');
 
             // 萃取單字
@@ -2358,7 +2359,7 @@
                 updateListeningPlayBtn();
                 highlightListeningSentence(-1);
                 if (currentListeningWordEl) {
-                    currentListeningWordEl.classList.remove('bg-yellow-200', 'text-teal-900', 'font-bold');
+                    currentListeningWordEl.classList.remove('bg-teal-500', 'text-white', 'shadow-md');
                     currentListeningWordEl = null;
                 }
                 return;
@@ -2370,7 +2371,7 @@
             highlightListeningSentence(index);
             
             if (currentListeningWordEl) {
-                currentListeningWordEl.classList.remove('bg-yellow-200', 'text-teal-900', 'font-bold');
+                currentListeningWordEl.classList.remove('bg-teal-500', 'text-white', 'shadow-md');
                 currentListeningWordEl = null;
             }
 
@@ -2382,19 +2383,35 @@
             listeningUtterance.onboundary = function(event) {
                 if (event.name === 'word') {
                     if (currentListeningWordEl) {
-                        currentListeningWordEl.classList.remove('bg-yellow-200', 'text-teal-900', 'font-bold');
+                        currentListeningWordEl.classList.remove('bg-teal-500', 'text-white', 'shadow-md');
                     }
-                    const wordEl = document.getElementById(`listen-w-${index}-${event.charIndex}`);
-                    if (wordEl) {
-                        wordEl.classList.add('bg-yellow-200', 'text-teal-900', 'font-bold');
-                        currentListeningWordEl = wordEl;
+                    
+                    // Robust closest-index matching
+                    const wordEls = document.querySelectorAll(`#listen-s-${index} .listen-word`);
+                    let targetEl = null;
+                    for (let i = 0; i < wordEls.length; i++) {
+                        const charIdx = parseInt(wordEls[i].dataset.charIndex);
+                        if (charIdx >= event.charIndex) {
+                            targetEl = wordEls[i];
+                            // If it passed the index, the previous word might be a better match
+                            if (charIdx > event.charIndex && i > 0) {
+                                targetEl = wordEls[i-1];
+                            }
+                            break;
+                        }
+                    }
+                    if (!targetEl && wordEls.length > 0) targetEl = wordEls[wordEls.length - 1]; // fallback
+
+                    if (targetEl) {
+                        targetEl.classList.add('bg-teal-500', 'text-white', 'shadow-md');
+                        currentListeningWordEl = targetEl;
                     }
                 }
             };
 
             listeningUtterance.onend = () => {
                 if (currentListeningWordEl) {
-                    currentListeningWordEl.classList.remove('bg-yellow-200', 'text-teal-900', 'font-bold');
+                    currentListeningWordEl.classList.remove('bg-teal-500', 'text-white', 'shadow-md');
                     currentListeningWordEl = null;
                 }
                 if (isListeningPlaying) {
@@ -2454,7 +2471,7 @@
             updateListeningPlayBtn();
             highlightListeningSentence(-1);
             if (currentListeningWordEl) {
-                currentListeningWordEl.classList.remove('bg-yellow-200', 'text-teal-900', 'font-bold');
+                currentListeningWordEl.classList.remove('bg-teal-500', 'text-white', 'shadow-md');
                 currentListeningWordEl = null;
             }
             currentListeningIndex = 0;

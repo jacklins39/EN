@@ -1,509 +1,4 @@
-<!DOCTYPE html>
-<html lang="zh-TW">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Spaced Repetition Vocab App (Cloud Version)</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    
-    <!-- 引入外部單字庫 -->
-    <script src="words_data.js"></script>
-    <script src="toeic_data.js"></script>
-    <script src="jh_data.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
-    <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
-    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-auth-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore-compat.js"></script>
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+TC:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Inter', 'Noto Sans TC', sans-serif;
-            background-color: #f3f4f6;
-            color: #1f2937;
-            -webkit-tap-highlight-color: transparent;
-        }
-
-        .flip-card {
-            background-color: transparent;
-            perspective: 1000px;
-            width: 100%;
-            height: 300px;
-        }
-
-        .flip-card-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
-            transform-style: preserve-3d;
-        }
-
-        .flip-card.flipped .flip-card-inner {
-            transform: rotateY(180deg);
-        }
-
-        .flip-card-front, .flip-card-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            border-radius: 1rem;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-            background-color: white;
-            padding: 2rem;
-        }
-
-        .flip-card-back {
-            transform: rotateY(180deg);
-            background-color: #f8fafc;
-            border: 2px solid #e2e8f0;
-        }
-
-        .btn-action { transition: all 0.2s; }
-        .btn-action:active { transform: scale(0.95); }
-        .hidden { display: none !important; }
-        .progress-bar-fill { transition: width 0.3s ease-out; }
-        
-        @keyframes modalFadeIn {
-            from { opacity: 0; transform: scale(0.95); }
-            to { opacity: 1; transform: scale(1); }
-        }
-        .dict-modal-anim { animation: modalFadeIn 0.2s ease-out forwards; }
-    </style>
-</head>
-<body class="min-h-screen flex flex-col">
-
-    <!-- 頂部導航列 -->
-    <header class="bg-indigo-600 text-white p-4 shadow-md flex justify-between items-center relative z-10">
-        <h1 class="text-xl font-bold tracking-wider">VocabMaster</h1>
-        
-        <div class="flex items-center gap-2">
-            <!-- 開發測試按鈕 -->
-            <button id="dev-next-day-btn" class="bg-indigo-500 hover:bg-indigo-400 text-xs font-semibold py-1 px-3 rounded-full border border-indigo-300 transition-colors">
-                ⏩ +1天
-            </button>
-        </div>
-    </header>
-
-    <!-- 雲端同步提示列 -->
-    <div id="sync-banner" class="bg-yellow-100 text-yellow-800 text-xs text-center py-1 hidden">
-        目前為訪客模式，進度將不會永久儲存。請登入以啟用雲端同步。
-    </div>
-    <div id="loading-banner" class="bg-blue-100 text-blue-800 text-xs text-center py-1 hidden">
-        正在與雲端同步資料中...
-    </div>
-
-    <main class="flex-grow flex flex-col items-center justify-start pt-6 pb-24 max-w-md mx-auto w-full relative">
-        
-        <!-- 儀表板視圖 (Dashboard) -->
-        <div id="view-dashboard" class="w-full">
-            <div class="bg-white rounded-2xl shadow-lg p-6 mb-6">
-                <h2 class="text-2xl font-bold mb-1">今日學習計畫</h2>
-                <div class="flex justify-between items-center mb-6">
-                    <p class="text-gray-500 text-sm" id="current-date-display">虛擬時間: 第 1 天</p>
-                    <select id="unit-selector" class="bg-indigo-50 border border-indigo-200 text-indigo-700 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block p-2 outline-none">
-                        <option value="1">單元 1 (1-1000)</option>
-                        <option value="2">單元 2 (1001-2000)</option>
-                        <option value="3">單元 3 (2001-3000)</option>
-                        <option value="4">單元 4 (3001-4000)</option>
-                        <option value="5">單元 5 (4001-5000)</option>
-                        <option value="6">單元 6 (5001-6000)</option>
-                        <option value="7">單元 7 (6001-7000)</option>
-                        <option value="8">單元 8 (7001-8000)</option>
-                        <option value="9">單元 9 (8001-8798)</option>
-                        <option value="10">單元 10 (自訂字庫)</option>
-                        <option value="11">單元 11 (多益常考 1)</option>
-                        <option value="12">單元 12 (多益常考 2)</option>
-                        <option value="13">單元 13 (多益常考 3)</option>
-                        <option value="14">單元 14 (多益常考 4)</option>
-                        <option value="15">單元 15 (多益常考 5)</option>
-                        <option value="16">單元 16 (多益常考 6)</option>
-                        <option value="17">單元 17 (國中基本 1200字)</option>
-                        <option value="18">單元 18 (國中進階 800字)</option>
-                    </select>
-                </div>
-                
-                <div class="grid grid-cols-2 gap-4 mb-6">
-                    <div id="box-stat-review" class="bg-blue-50 rounded-xl p-4 text-center border border-blue-100 cursor-pointer hover:bg-blue-100 hover:shadow-md transition-all active:scale-95">
-                        <p class="text-blue-800 text-sm font-semibold mb-1">待複習 <span class="text-xs font-normal opacity-70">(點擊預覽)</span></p>
-                        <p class="text-3xl font-bold text-blue-600" id="stat-review">0</p>
-                    </div>
-                    <div id="box-stat-new" class="bg-green-50 rounded-xl p-4 text-center border border-green-100 cursor-pointer hover:bg-green-100 hover:shadow-md transition-all active:scale-95">
-                        <p class="text-green-800 text-sm font-semibold mb-1">新單字 <span class="text-xs font-normal opacity-70">(點擊預覽)</span></p>
-                        <p class="text-3xl font-bold text-green-600" id="stat-new">10</p>
-                    </div>
-                </div>
-
-                <div class="bg-gray-50 rounded-xl p-4 flex justify-between items-center border border-gray-100 mb-4">
-                    <div class="text-sm text-gray-600">已掌握詞彙</div>
-                    <div class="text-lg font-bold text-gray-800" id="stat-mastered">0 / 1000</div>
-                </div>
-
-                <button id="btn-show-analysis" class="w-full bg-blue-50 text-blue-700 hover:bg-blue-100 font-bold py-3 rounded-xl shadow-sm mb-6 border border-blue-200 transition-colors">
-                    📊 查看學習成效分析表
-                </button>
-
-                <button id="btn-start-session" class="btn-action w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 rounded-xl shadow-lg shadow-indigo-200 text-lg flex items-center justify-center gap-2 mb-4">
-                    開始今日課程
-                </button>
-
-                <!-- 週/月/年 錯字加強 -->
-                <div class="grid grid-cols-3 gap-2">
-                    <button id="btn-review-week" class="bg-red-50 text-red-700 p-3 rounded-xl text-sm font-bold border border-red-200 hover:bg-red-100 transition-colors shadow-sm">本週錯題</button>
-                    <button id="btn-review-month" class="bg-orange-50 text-orange-700 p-3 rounded-xl text-sm font-bold border border-orange-200 hover:bg-orange-100 transition-colors shadow-sm">本月錯題</button>
-                    <button id="btn-review-all" class="bg-yellow-50 text-yellow-700 p-3 rounded-xl text-sm font-bold border border-yellow-200 hover:bg-yellow-100 transition-colors shadow-sm">全部錯題</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- 分析視圖 (Analysis) -->
-        <div id="view-analysis" class="w-full hidden">
-            <div class="bg-white rounded-2xl shadow-lg p-6 mb-6">
-                <div class="flex justify-between items-center mb-4">
-                    <h2 class="text-2xl font-bold">學習成效分析</h2>
-                    <button id="btn-close-analysis" class="text-gray-400 hover:text-gray-600 bg-gray-100 hover:bg-gray-200 rounded-full p-2 transition">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
-                    </button>
-                </div>
-                <p class="text-gray-500 text-sm mb-4">這張圖表顯示了你在目前單元的各個記憶階段的單字分佈。長條圖越往右，代表你對該單字的長期記憶越深刻。</p>
-                <div class="mb-6 bg-white border border-gray-100 rounded-xl p-2 shadow-sm">
-                    <canvas id="masteryChart" class="w-full h-64"></canvas>
-                </div>
-            </div>
-        </div>
-
-        <!-- 字庫視圖 (Dictionary / Words) -->
-        <div id="view-weak" class="w-full hidden">
-            <div class="bg-white rounded-2xl shadow-lg p-6 mb-6">
-                <div class="flex justify-between items-center mb-4">
-                    <h2 class="text-2xl font-bold text-indigo-800">📖 單字庫</h2>
-                </div>
-                
-                <div class="flex bg-gray-100 p-1 rounded-xl mb-4">
-                    <button id="btn-dict-all" class="flex-1 py-2 text-sm font-bold rounded-lg bg-white shadow-sm text-indigo-700 transition-all">全部單字</button>
-                    <button id="btn-dict-weak" class="flex-1 py-2 text-sm font-bold rounded-lg text-gray-500 hover:text-gray-700 transition-all">弱點單字</button>
-                </div>
-
-                <div class="relative mb-4">
-                    <input type="text" id="dict-search" placeholder="搜尋單字、中文或 KK 音標..." class="w-full bg-gray-50 border border-gray-200 text-gray-800 rounded-xl pl-10 pr-4 py-3 outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 absolute left-3 top-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-                </div>
-                
-                <div id="weak-list-header" class="hidden">
-                    <p class="text-gray-500 text-xs mb-3">🔴 錯 3 次以上　🟠 錯 2 次　🟡 錯 1 次　(點擊預覽/發音)</p>
-                    <button id="btn-weak-practice" class="w-full bg-red-50 hover:bg-red-100 text-red-600 font-bold py-2 rounded-xl shadow-sm border border-red-100 mb-4 transition-colors">加強練習錯題</button>
-                </div>
-                <div id="weak-list" class="max-h-[28rem] overflow-y-auto pr-1 custom-scrollbar space-y-1"></div>
-            </div>
-        </div>
-
-        <!-- 學習視圖 (Study Session) -->
-        <div id="view-study" class="w-full hidden">
-            <!-- 進度條 -->
-            <div class="w-full mb-6">
-                <div class="flex justify-between items-end mb-2">
-                    <div>
-                        <div class="text-xs text-gray-500 font-semibold" id="session-progress-text">進度: 0/10</div>
-                        <div id="session-queue-type" class="text-indigo-600 text-xs font-bold mt-1"></div>
-                    </div>
-                    <button id="btn-quit-session" class="text-xs text-red-500 hover:text-red-700 font-medium px-2 py-1 bg-red-50 hover:bg-red-100 rounded border border-red-100 transition active:scale-95">
-                        🚪 離開放棄
-                    </button>
-                </div>
-                <div class="w-full bg-gray-200 rounded-full h-2.5">
-                    <div id="session-progress-bar" class="bg-indigo-600 h-2.5 rounded-full progress-bar-fill" style="width: 0%"></div>
-                </div>
-            </div>
-
-            <!-- 單字卡 -->
-            <div class="flip-card mb-8" id="flashcard">
-                <div class="flip-card-inner">
-                    <!-- 正面 (英文) -->
-                    <div class="flip-card-front">
-                        <button id="btn-audio" class="absolute top-4 right-4 p-2 text-gray-400 hover:text-indigo-600 rounded-full hover:bg-indigo-50 transition-colors">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
-                        </button>
-                        <h2 class="text-5xl font-extrabold text-gray-800 mb-1 tracking-tight break-all" id="card-word">Apple</h2>
-                        <p class="text-gray-400 font-mono text-lg mb-4" id="card-kk">/ˈæpəl/</p>
-                        <p id="card-front-hint" class="text-gray-400 text-sm mt-4">點擊卡片翻面看解答</p>
-                    </div>
-                    <!-- 背面 (中文) -->
-                    <div class="flip-card-back p-4">
-                        <h2 class="text-3xl font-bold text-gray-800 mb-1 break-all" id="card-word-back">Apple</h2>
-                        <p class="text-gray-400 font-mono text-sm mb-2" id="card-kk-back">/ˈæpəl/</p>
-                        <div class="w-16 h-1 bg-indigo-100 rounded my-1"></div>
-                        <p class="text-2xl text-indigo-700 font-semibold mb-4" id="card-translation">蘋果</p>
-                        
-                        <div id="example-container" class="bg-indigo-50 rounded-xl p-4 w-full text-left relative border border-indigo-100 mt-2 hidden group cursor-help transition-all duration-300 hover:shadow-md hover:bg-white">
-                            <button id="btn-example-audio" class="absolute top-2 right-2 p-1 text-indigo-400 hover:text-indigo-600 rounded-full hover:bg-indigo-100 transition-colors z-10" title="朗讀例句">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
-                            </button>
-                            <div class="text-[10px] text-indigo-400 mb-1 font-bold tracking-widest uppercase">Example 例句 <span class="text-indigo-300 normal-case ml-1 font-normal">(游標移入顯示翻譯)</span></div>
-                            <p class="text-gray-700 font-semibold mb-1 pr-8 text-[15px] leading-relaxed" id="card-example"></p>
-                            <div class="overflow-hidden transition-all duration-500 max-h-0 opacity-0 group-hover:max-h-[200px] group-hover:opacity-100 group-hover:mt-2 group-hover:pt-2 group-hover:border-t group-hover:border-dashed group-hover:border-indigo-200">
-                                <p class="text-indigo-600 text-sm font-medium" id="card-example-zh"></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 操作按鈕區 -->
-            <div id="quiz-options" class="w-full grid grid-cols-1 gap-3 hidden">
-                <!-- 4選1按鈕 -->
-            </div>
-
-            <div id="action-show-answer" class="w-full">
-                <button class="btn-action w-full bg-gray-800 hover:bg-gray-900 text-white font-bold py-4 rounded-xl shadow-lg text-lg flex flex-col items-center justify-center gap-1" id="btn-show-answer">
-                    <span>顯示解答</span>
-                    <span class="text-[10px] font-mono opacity-60 bg-gray-700 px-2 rounded hidden sm:block">空白鍵 / Enter</span>
-                </button>
-            </div>
-            
-            <div id="action-next" class="w-full hidden mt-4">
-                <button class="btn-action w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 rounded-xl shadow-lg shadow-indigo-200 text-lg flex flex-col items-center justify-center gap-1" id="btn-next-card">
-                    <span>下一題 ➔</span>
-                    <span class="text-[10px] font-mono opacity-80 bg-indigo-800 px-2 rounded hidden sm:block">空白鍵 / Enter</span>
-                </button>
-            </div>
-
-            <div id="action-rate" class="w-full grid grid-cols-2 gap-4 hidden mt-4">
-                <button class="btn-action bg-red-100 hover:bg-red-200 text-red-700 border border-red-200 font-bold py-4 rounded-xl shadow-sm text-lg flex flex-col items-center justify-center gap-1" id="btn-rate-wrong">
-                    <span>忘記了 (重來)</span>
-                    <span class="text-[10px] font-mono opacity-60 bg-red-200 px-2 rounded hidden sm:block">◀ 鍵盤左鍵</span>
-                </button>
-                <button class="btn-action bg-green-500 hover:bg-green-600 text-white font-bold py-4 rounded-xl shadow-sm shadow-green-200 text-lg flex flex-col items-center justify-center gap-1" id="btn-rate-right">
-                    <span>記得了 (過關)</span>
-                    <span class="text-[10px] font-mono opacity-80 bg-green-700 px-2 rounded hidden sm:block">鍵盤右鍵 ▶</span>
-                </button>
-            </div>
-        </div>
-
-        <!-- 聽力特訓視圖 (Listening Training) -->
-        <div id="view-listening" class="w-full hidden">
-            <div class="bg-white rounded-2xl shadow-lg p-6 mb-6">
-                <div class="flex justify-between items-center mb-4">
-                    <h2 class="text-2xl font-bold text-teal-700">🎧 聽力特訓</h2>
-                </div>
-                
-                <div id="listening-setup" class="space-y-4">
-                    <div>
-                        <label class="block text-sm font-bold text-gray-700 mb-2">選擇內建短文</label>
-                        <select id="listening-preset" class="w-full bg-gray-50 border border-gray-300 text-gray-700 rounded-lg p-3 outline-none focus:ring-2 focus:ring-teal-500">
-                            <option value="">-- 請選擇內建短文 (或在下方貼上) --</option>
-                            <option value="0">日常對話: 點餐 (A1)</option>
-                            <option value="7">生活情境: 在超市購物 (A1)</option>
-                            <option value="1">旅遊情境: 飯店入住 (A2)</option>
-                            <option value="8">機場情境: 登機廣播 (A2)</option>
-                            <option value="2">多益短文: 辦公室公告 (B1)</option>
-                            <option value="3">商業信件: 產品詢價 (B1)</option>
-                            <option value="10">健康醫療: 保持良好睡眠 (B1)</option>
-                            <option value="4">環境保護: 氣候變遷 (B2)</option>
-                            <option value="9">多益閱讀: 員工訓練通知 (B2)</option>
-                            <option value="5">科技新聞: 人工智慧 (C1)</option>
-                            <option value="6">心靈成長: 尋找熱情 (C1)</option>
-                            <option value="11">國際新聞: 經濟復甦 (C1)</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block text-sm font-bold text-gray-700 mb-2">或貼上自訂文章</label>
-                        <textarea id="listening-textarea" rows="5" class="w-full bg-gray-50 border border-gray-300 text-gray-700 rounded-lg p-3 outline-none focus:ring-2 focus:ring-teal-500" placeholder="貼上你想練習聽力的英文文章..."></textarea>
-                    </div>
-                    <button id="btn-generate-listening" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 rounded-xl shadow-md transition-colors">
-                        產生聽力教材 🚀
-                    </button>
-                </div>
-
-                <div id="listening-player" class="hidden">
-                    <div class="flex items-center gap-3 mb-4">
-                        <button id="btn-back-to-listening-setup" class="text-teal-600 hover:text-teal-800 bg-teal-50 hover:bg-teal-100 p-2 rounded-full transition-colors">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
-                        </button>
-                        <h3 class="text-xl font-bold text-teal-800 flex-1">播放器</h3>
-                    </div>
-                    <div class="flex justify-between items-start mb-3 border-b border-teal-100 pb-2 hidden" id="listening-header-container">
-                        <h3 id="listening-article-title" class="text-lg font-bold text-teal-700"></h3>
-                        <button id="btn-save-listening-article" class="text-xs bg-yellow-50 text-yellow-700 border border-yellow-200 hover:bg-yellow-100 px-3 py-1.5 rounded-full font-bold shadow-sm transition-colors hidden">
-                            ⭐ 收藏
-                        </button>
-                    </div>
-                    <div class="flex justify-between items-center mb-4 bg-teal-50 p-3 rounded-xl">
-                        <button id="btn-play-pause-listening" class="bg-teal-600 text-white p-3 rounded-full hover:bg-teal-700 transition">
-                            <svg id="icon-play" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                            <svg id="icon-pause" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                        </button>
-                        <button id="btn-stop-listening" class="text-gray-500 hover:text-red-500 p-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 10h6v4H9z" /></svg>
-                        </button>
-                        <div class="flex items-center gap-2">
-                            <label class="text-xs text-gray-500 font-bold">語速</label>
-                            <select id="listening-speed" class="text-sm bg-white border border-gray-300 rounded p-1 outline-none">
-                                <option value="0.75">慢 (0.75x)</option>
-                                <option value="1" selected>正常 (1.0x)</option>
-                                <option value="1.25">快 (1.25x)</option>
-                            </select>
-                        </div>
-                    </div>
-                    
-                    <div id="listening-text-container" class="text-lg leading-relaxed text-gray-700 font-medium bg-gray-50 p-4 rounded-xl max-h-64 overflow-y-auto custom-scrollbar mb-2">
-                        <!-- Sentences will go here -->
-                    </div>
-
-                    <button id="btn-toggle-translation" class="text-sm font-bold text-teal-600 hover:text-teal-800 flex items-center gap-1 mb-4 transition-colors hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" /></svg>
-                        顯示全文中譯
-                    </button>
-                    <div id="listening-translation-container" class="text-sm text-gray-700 font-medium bg-teal-50 p-4 rounded-xl mb-6 border border-teal-100 hidden">
-                        翻譯載入中...
-                    </div>
-
-                    <div class="border-t border-gray-100 pt-4">
-                        <h3 class="font-bold text-gray-800 mb-2 flex items-center gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
-                            本文重點單字
-                        </h3>
-                        <div id="listening-words-container" class="grid grid-cols-2 gap-2 max-h-48 overflow-y-auto custom-scrollbar">
-                            <!-- Words will go here -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 設定視圖 (Settings) -->
-        <div id="view-settings" class="w-full hidden">
-            <div class="bg-white rounded-2xl shadow-lg p-6 mb-6">
-                <h2 class="text-xl font-bold text-gray-800 mb-6 flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-                    帳號與設定
-                </h2>
-                
-                <div class="flex flex-col items-center mb-8">
-                    <img id="user-avatar" src="" class="w-20 h-20 rounded-full border-4 border-indigo-100 shadow-sm mb-3 hidden" alt="avatar">
-                    <div class="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center border border-gray-200 mb-3" id="avatar-placeholder">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
-                    </div>
-                    <div id="user-email-display" class="text-gray-500 text-sm mb-4">尚未登入</div>
-                    
-                    <button id="btn-login" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-xl shadow-md transition-colors w-full">
-                        連線 Google 帳號存檔
-                    </button>
-                    <button id="btn-logout" class="bg-gray-100 hover:bg-gray-200 text-gray-700 font-bold py-3 px-8 rounded-xl transition-colors w-full hidden">
-                        登出帳號
-                    </button>
-                </div>
-                
-                <hr class="border-gray-100 mb-6">
-                
-                <div class="space-y-4">
-                    <button id="btn-manage-custom" class="w-full flex items-center justify-between p-4 bg-white border border-gray-200 rounded-xl hover:bg-gray-50 transition-colors mb-4">
-                        <div class="flex items-center gap-3">
-                            <div class="p-2 bg-blue-100 text-blue-600 rounded-lg">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
-                            </div>
-                            <div class="text-left">
-                                <h3 class="font-bold text-gray-800">管理自訂單字庫</h3>
-                                <p class="text-xs text-gray-500">新增或刪除個人專屬單字</p>
-                            </div>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
-                    </button>
-                    
-                    <div class="w-full flex items-center justify-between p-4 bg-white border border-gray-200 rounded-xl hover:bg-gray-50 transition-colors mb-4">
-                        <div class="flex items-center gap-3">
-                            <div class="p-2 bg-green-100 text-green-600 rounded-lg">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                            </div>
-                            <div class="text-left">
-                                <h3 class="font-bold text-gray-800">每日學習數量</h3>
-                                <p class="text-xs text-gray-500">設定每天要學習的新單字數</p>
-                            </div>
-                        </div>
-                        <select id="setting-new-words" class="bg-gray-50 border border-gray-300 text-gray-700 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block p-2 outline-none cursor-pointer">
-                            <option value="5">5 個</option>
-                            <option value="10">10 個</option>
-                            <option value="15">15 個</option>
-                            <option value="20">20 個</option>
-                            <option value="30">30 個</option>
-                            <option value="50">50 個</option>
-                        </select>
-                    </div>
-                    
-                    <button id="btn-reset-progress" class="w-full flex items-center justify-between p-4 bg-white border border-red-100 rounded-xl hover:bg-red-50 transition-colors">
-                        <div class="flex items-center gap-3">
-                            <div class="p-2 bg-red-100 text-red-600 rounded-lg">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" /></svg>
-                            </div>
-                            <div class="text-left">
-                                <h3 class="font-bold text-red-600">清除所有學習進度</h3>
-                                <p class="text-xs text-red-400">注意：此動作無法復原</p>
-                            </div>
-                        </div>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- 課程結束視圖 -->
-        <div id="view-completed" class="w-full hidden text-center">
-            <div class="bg-white rounded-2xl shadow-lg p-8">
-                <div class="w-20 h-20 bg-green-100 text-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-                </div>
-                <h2 class="text-3xl font-bold text-gray-800 mb-2">太棒了！</h2>
-                <p class="text-gray-500 mb-8">你已經完成了今天的單字課程與錯題複習。進度已自動儲存。</p>
-                <button id="btn-return-dash" class="btn-action w-full bg-indigo-600 text-white font-bold py-3 rounded-xl shadow-md">返回儀表板</button>
-            </div>
-        </div>
-
-        <!-- 字典查詢彈出視窗 -->
-        <div id="dict-modal" class="fixed inset-0 bg-gray-900 bg-opacity-50 z-50 hidden flex items-center justify-center p-4 backdrop-blur-sm">
-            <div class="bg-white rounded-2xl shadow-2xl p-6 max-w-sm w-full relative dict-modal-anim">
-                <button id="btn-close-dict" class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 bg-gray-100 rounded-full p-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
-                </button>
-                <div id="dict-content" class="mt-2 min-h-[100px] flex flex-col justify-center"></div>
-            </div>
-        </div>
-
-    </main>
-
-    <nav class="fixed bottom-0 left-0 right-0 max-w-md mx-auto bg-white border-t border-gray-200 z-50 shadow-[0_-2px_10px_rgba(0,0,0,0.05)]">
-        <div class="flex justify-around items-center h-16">
-            <button id="tab-btn-dashboard" class="flex flex-col items-center justify-center w-full h-full text-indigo-600 transition-colors" onclick="switchTab('view-dashboard', this)">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
-                <span class="text-[10px] font-bold">總覽</span>
-            </button>
-            <button id="tab-btn-study" class="flex flex-col items-center justify-center w-full h-full text-gray-400 hover:text-indigo-600 transition-colors" onclick="switchTab('view-study', this)">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
-                <span class="text-[10px] font-bold">學習</span>
-            </button>
-            <button id="tab-btn-listening" class="flex flex-col items-center justify-center w-full h-full text-gray-400 hover:text-indigo-600 transition-colors" onclick="switchTab('view-listening', this)">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" /></svg>
-                <span class="text-[10px] font-bold">聽力</span>
-            </button>
-            <button id="tab-btn-weak" class="flex flex-col items-center justify-center w-full h-full text-gray-400 hover:text-indigo-600 transition-colors" onclick="switchTab('view-weak', this)">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
-                <span class="text-[10px] font-bold">字庫</span>
-            </button>
-            <button id="tab-btn-settings" class="flex flex-col items-center justify-center w-full h-full text-gray-400 hover:text-indigo-600 transition-colors" onclick="switchTab('view-settings', this)">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-                <span class="text-[10px] font-bold">設定</span>
-            </button>
-        </div>
-    </nav>
-
-    <script>
         // ==========================================
         // 1. Firebase 雲端設定區 (替換成你的金鑰)
         // ==========================================
@@ -533,18 +28,10 @@
         ];
         // 單元 11：多益常考單字 (獨立於原本字庫)
         if (typeof toeicWordsDB !== 'undefined') toeicWordsDB.forEach(w => vocabularyDB.push(w));
-        // 單元 17-18：國中單字
-        if (typeof jhWordsDB !== 'undefined') jhWordsDB.forEach(w => vocabularyDB.push(w));
 
         const SRS_INTERVALS = [0, 1, 3, 7, 14, 30]; 
         const MAX_LEVEL = 5;
-        let NEW_WORDS_PER_DAY = parseInt(localStorage.getItem('newWordsPerDay')) || 10;
-        document.getElementById('setting-new-words').value = NEW_WORDS_PER_DAY;
-        document.getElementById('setting-new-words').addEventListener('change', (e) => {
-            NEW_WORDS_PER_DAY = parseInt(e.target.value);
-            localStorage.setItem('newWordsPerDay', NEW_WORDS_PER_DAY);
-            initAppLogic(); // 重新計算今日單字
-        });
+        const NEW_WORDS_PER_DAY = 10; // 每天學習 10 個新單字
 
         let virtualCurrentDay = 0;
         let userProgress = {};
@@ -1144,11 +631,6 @@
         }
 
         function handleAnswer(isCorrect) {
-            if (isCorrect) {
-                playCorrectSound();
-            } else {
-                playWrongSound();
-            }
             const wordId = currentWord.id;
             let progress = userProgress[wordId];
             if (!isCorrect) logMistake(progress);
@@ -1324,10 +806,6 @@
             if (autoFlashcardTimerId) clearTimeout(autoFlashcardTimerId);
             viewStudy.classList.add('hidden');
             viewCompleted.classList.remove('hidden');
-            playFinishSound();
-            if (typeof confetti === 'function') {
-                confetti({ particleCount: 150, spread: 70, origin: { y: 0.6 } });
-            }
         }
 
         document.getElementById('btn-return-dash').addEventListener('click', () => {
@@ -1409,31 +887,6 @@
         // ==========================================
         // 5. 語音與字典功能 
         // ==========================================
-        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-        function playTone(freq, type, duration, vol=0.1) {
-            if(audioCtx.state === 'suspended') audioCtx.resume();
-            const osc = audioCtx.createOscillator();
-            const gain = audioCtx.createGain();
-            osc.type = type;
-            osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
-            gain.gain.setValueAtTime(vol, audioCtx.currentTime);
-            gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + duration);
-            osc.connect(gain);
-            gain.connect(audioCtx.destination);
-            osc.start();
-            osc.stop(audioCtx.currentTime + duration);
-        }
-        function playCorrectSound() {
-            playTone(523.25, 'sine', 0.1); setTimeout(() => playTone(659.25, 'sine', 0.2), 100);
-        }
-        function playWrongSound() {
-            playTone(300, 'sawtooth', 0.2, 0.2); setTimeout(() => playTone(250, 'sawtooth', 0.3, 0.2), 150);
-        }
-        function playFinishSound() {
-            playTone(523.25, 'sine', 0.1); setTimeout(() => playTone(659.25, 'sine', 0.1), 100);
-            setTimeout(() => playTone(783.99, 'sine', 0.1), 200); setTimeout(() => playTone(1046.50, 'sine', 0.4), 300);
-        }
-
         function playAudio(text) {
             if ('speechSynthesis' in window) {
                 window.speechSynthesis.cancel();
@@ -1661,7 +1114,7 @@
                 en: en,
                 kk: kk,
                 zh: zh,
-                unit: 999 // 自訂字庫專屬單元
+                unit: 10 // 自訂字庫專屬單元
             };
 
             customWordsDB.push(newWord);
@@ -1707,7 +1160,7 @@
             content.innerHTML = `
                 <div class="flex justify-between items-center mb-3 border-b border-indigo-100 pb-2">
                     <h3 class="text-xl font-bold text-indigo-800">管理自訂字庫 (${customWordsDB.length})</h3>
-                    ${customWordsDB.length ? '<div class="flex gap-3 items-center"><button id="btn-autofill-custom" class="bg-green-600 hover:bg-green-700 text-white text-xs font-bold px-3 py-1.5 rounded-lg shadow-sm transition-colors" title="自動將「請自行查閱」的單字用 Google 翻譯補齊">✨ 自動翻譯並儲存</button><button id="btn-save-custom-all" class="bg-indigo-600 text-white text-xs font-bold px-3 py-1.5 rounded-lg">💾 全部儲存</button><button id="btn-del-custom-all" class="text-xs text-red-500 underline">全部刪除</button></div>' : ''}
+                    ${customWordsDB.length ? '<div class="flex gap-3 items-center"><button id="btn-save-custom-all" class="bg-indigo-600 text-white text-xs font-bold px-3 py-1.5 rounded-lg">💾 全部儲存</button><button id="btn-del-custom-all" class="text-xs text-red-500 underline">全部刪除</button></div>' : ''}
                 </div>
                 <div class="max-h-72 overflow-y-auto pr-1 custom-scrollbar">
                     ${rows || '<p class="text-gray-500 text-sm text-center py-4">自訂字庫是空的。</p>'}
@@ -1717,84 +1170,9 @@
                 deleteCustomWords([b.dataset.del]);
                 renderCustomManager();
             }));
-            const autofillBtn = document.getElementById('btn-autofill-custom');
-            if (autofillBtn) {
-                autofillBtn.addEventListener('click', async () => {
-                    const rowsEl = Array.from(content.querySelectorAll('.custom-row'));
-                    const wordsToUpdate = [];
-                    rowsEl.forEach(row => {
-                        const en = row.querySelector('[data-f="en"]').value.trim();
-                        const zhInp = row.querySelector('[data-f="zh"]');
-                        const kkInp = row.querySelector('[data-f="kk"]');
-                        const needsZh = !zhInp.value.trim() || zhInp.value.includes('自行查閱');
-                        const needsKk = !kkInp.value.trim() || kkInp.value === '音標';
-                        if (en && (needsZh || needsKk)) {
-                            wordsToUpdate.push({ en, zhInp, kkInp, needsZh, needsKk });
-                        }
-                    });
-                    if (wordsToUpdate.length > 0) {
-                        autofillBtn.innerText = '處理中...';
-                        autofillBtn.disabled = true;
-                        
-                        // 1. 批次處理中文翻譯
-                        const zhWords = wordsToUpdate.filter(x => x.needsZh);
-                        if (zhWords.length > 0) {
-                            try {
-                                const query = zhWords.map(x => x.en).join('\n');
-                                const res = await fetch(`https://translate.googleapis.com/translate_a/t?client=dict-chrome-ex&sl=en&tl=zh-TW&dt=t&q=${encodeURIComponent(query)}`);
-                                const data = await res.json();
-                                if (data && typeof data[0] === 'string') {
-                                    const zhArray = data[0].split('\n');
-                                    zhWords.forEach((item, idx) => {
-                                        item.zhInp.value = zhArray[idx] || item.zhInp.value;
-                                        item.zhInp.classList.add('bg-green-50');
-                                    });
-                                }
-                            } catch(e) {
-                                console.error('Translation error', e);
-                            }
-                        }
-                        
-                        // 2. 個別處理 KK 音標 (透過 dictionaryapi)
-                        const kkWords = wordsToUpdate.filter(x => x.needsKk);
-                        if (kkWords.length > 0) {
-                            await Promise.all(kkWords.map(async (item) => {
-                                try {
-                                    const controller = new AbortController();
-                                    const timeoutId = setTimeout(() => controller.abort(), 3000);
-                                    const word = item.en.split(' ')[0]; // 擷取第一個字查音標
-                                    const res = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(word)}`, { signal: controller.signal });
-                                    clearTimeout(timeoutId);
-                                    if (res.ok) {
-                                        const data = await res.json();
-                                        let phonetic = data[0]?.phonetic;
-                                        if (!phonetic && data[0]?.phonetics) {
-                                            const pObj = data[0].phonetics.find(p => p.text);
-                                            if (pObj) phonetic = pObj.text;
-                                        }
-                                        if (phonetic) {
-                                            item.kkInp.value = phonetic;
-                                            item.kkInp.classList.add('bg-green-50');
-                                        }
-                                    }
-                                } catch(e) {}
-                            }));
-                        }
-                    }
-                    
-                    // 恢復按鈕狀態並自動觸發存檔
-                    autofillBtn.innerText = '完成！';
-                    setTimeout(() => {
-                        autofillBtn.innerText = '✨ 自動翻譯並儲存';
-                        autofillBtn.disabled = false;
-                    }, 2000);
-                    const saveBtn = document.getElementById('btn-save-custom-all');
-                    if (saveBtn) saveBtn.click();
-                });
-            }
             const saveAll = document.getElementById('btn-save-custom-all');
             if (saveAll) saveAll.addEventListener('click', () => {
-                const rowsEl = Array.from(content.querySelectorAll('.custom-row'));
+                const rowsEl = [...content.querySelectorAll('.custom-row')];
                 const edits = rowsEl.map(r => ({
                     id: r.dataset.id,
                     en: r.querySelector('[data-f=en]').value.trim(),
@@ -2014,7 +1392,16 @@
             nextCard();
         }
 
-
+        document.getElementById('btn-show-weak').addEventListener('click', () => {
+            viewDashboard.classList.add('hidden');
+            document.getElementById('view-weak').classList.remove('hidden');
+            renderWeakView();
+        });
+        document.getElementById('btn-close-weak').addEventListener('click', () => {
+            document.getElementById('view-weak').classList.add('hidden');
+            viewDashboard.classList.remove('hidden');
+            updateDashboard();
+        });
         document.getElementById('btn-weak-practice').addEventListener('click', () => startWeakPractice(getWeakList().map(x => x.w)));
         document.getElementById('weak-list').addEventListener('click', (e) => {
             const row = e.target.closest('.weak-row');
@@ -2225,32 +1612,20 @@
 
             // 背景逐句呼叫 Google 翻譯 (確保中英文能一對一連動)
             const fetchTrans = async () => {
-                try {
-                    const query = listeningSentences.join('\n');
-                    const res = await fetch(`https://translate.googleapis.com/translate_a/t?client=dict-chrome-ex&sl=en&tl=zh-TW&dt=t&q=${encodeURIComponent(query)}`);
-                    const data = await res.json();
-                    if (data && typeof data[0] === 'string') {
-                        const fullZh = data[0];
-                        const zhArray = fullZh.split('\n');
-                        for(let i=0; i<listeningSentences.length; i++) {
+                for(let i=0; i<listeningSentences.length; i++) {
+                    try {
+                        const res = await fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-TW&dt=t&q=${encodeURIComponent(listeningSentences[i])}`);
+                        const data = await res.json();
+                        if (data && data[0]) {
+                            const zh = data[0].map(x => x[0]).join('');
                             const el = document.getElementById(`listen-zh-${i}`);
                             if(el) {
-                                el.innerText = (zhArray[i] || '') + ' ';
+                                el.innerText = zh + ' ';
                                 el.classList.remove('text-gray-400');
                                 el.classList.add('text-gray-700');
                             }
                         }
-                    }
-                } catch(e) {
-                    console.error('Translation failed', e);
-                    for(let i=0; i<listeningSentences.length; i++) {
-                        const el = document.getElementById(`listen-zh-${i}`);
-                        if(el) {
-                            el.innerText = '翻譯失敗 ';
-                            el.classList.remove('text-gray-400');
-                            el.classList.add('text-red-500');
-                        }
-                    }
+                    } catch(e) {}
                 }
             };
             fetchTrans();
@@ -2423,6 +1798,4 @@
             renderDictView();
         });
 
-    </script>
-</body>
-</html>
+    

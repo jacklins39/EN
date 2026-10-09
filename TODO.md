@@ -10,6 +10,6 @@
 - [x] 做完後重新登入測試：進度、自訂單字能否正常存取
 
 ## 其他
-- [ ] 說「幫我繼續跑爬蟲」→ `node crawl_examples.js` (進度在 example_cache.json)
-- [ ] 爬完後 commit + push `words_data.js`、`example_cache.json`
+- [x] 說「幫我繼續跑爬蟲」→ `node crawl_examples.js` (進度在 example_cache.json)
+- [x] 爬完後 commit + push `words_data.js`、`example_cache.json`
 - [ ] (可選) 擴充單元 11 多益單字 (toeic_data.js 的 toeicRaw)

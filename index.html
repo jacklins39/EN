@@ -729,7 +729,7 @@
             
             // Randomly shuffle new words
             newWordsCandidates.sort(() => Math.random() - 0.5);
-            previewNewWords = newWordsCandidates.slice(0, 20); // Get up to 20 new words
+            previewNewWords = newWordsCandidates.slice(0, NEW_WORDS_PER_DAY); // Get up to NEW_WORDS_PER_DAY new words
             
             const masteredCount = unitWords.filter(w => userProgress[w.id] && userProgress[w.id].level >= 5).length;
 

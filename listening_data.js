@@ -2851,6 +2851,974 @@ const listeningArticlesDB = [
     "voice": "en-US-JennyNeural",
     "voiceLabel": "美式女聲 (US)",
     "audio": "audio/listening/2026_10_gen_10.mp3"
+  },
+  {
+    "id": "2026_10_toeic_11",
+    "month": "10月份",
+    "category": "toeic",
+    "title": "多益: 跨國企業併購說明會 (B2)",
+    "level": "B2",
+    "voice": "en-US-JennyNeural",
+    "voiceLabel": "美式女聲 (US)",
+    "audio": "audio/listening/2026_10_toeic_11.mp3",
+    "text": "Good morning, everyone. I am pleased to announce that our proposed merger with Apex Global has received formal regulatory approval from antitrust authorities. This strategic acquisition will significantly expand our international logistics footprint and unlock tremendous synergy across European markets. We anticipate completing the integration process by the end of the next fiscal quarter without any major organizational redundancies. A dedicated transition committee has been established to ensure uninterrupted service delivery and coordinate department alignments. You will receive personalized emails later this afternoon regarding town hall meetings and team-specific integration schedules.",
+    "sentences": [
+      {
+        "en": "Good morning, everyone.",
+        "zh": "大家早安。",
+        "start": 0.0,
+        "end": 2.39
+      },
+      {
+        "en": "I am pleased to announce that our proposed merger with Apex Global has received formal regulatory approval from antitrust authorities.",
+        "zh": "我很高興地宣布，我們與 Apex Global 的併購提案已獲得反壟斷監管機構的正式核准。",
+        "start": 2.39,
+        "end": 10.14
+      },
+      {
+        "en": "This strategic acquisition will significantly expand our international logistics footprint and unlock tremendous synergy across European markets.",
+        "zh": "這項策略性收購將大幅擴展我們在國際物流的版圖，並在歐洲市場釋放出巨大的綜效。",
+        "start": 10.14,
+        "end": 18.94
+      },
+      {
+        "en": "We anticipate completing the integration process by the end of the next fiscal quarter without any major organizational redundancies.",
+        "zh": "我們預計在下個財政季度結束前完成整合流程，且不會有大規模的組織人力重疊裁減。",
+        "start": 18.94,
+        "end": 26.84
+      },
+      {
+        "en": "A dedicated transition committee has been established to ensure uninterrupted service delivery and coordinate department alignments.",
+        "zh": "我們已成立專門的交接過渡委員會，以確保服務不中斷並協調跨部門對接。",
+        "start": 26.84,
+        "end": 34.49
+      },
+      {
+        "en": "You will receive personalized emails later this afternoon regarding town hall meetings and team-specific integration schedules.",
+        "zh": "今天下午晚些時候，各位將收到有關全員大會及團隊專屬整合時程的個別說明郵件。",
+        "start": 34.49,
+        "end": 42.02
+      }
+    ],
+    "grammar": [
+      {
+        "title": "be pleased to + 原形動詞 (很榮幸/高興能...)",
+        "explanation": "商務演講或高階主管公告最常用的客氣開場白，用以正式宣布重大喜訊或成果。",
+        "example": "I <span class='font-bold underline decoration-blue-500 decoration-2'>am pleased to announce</span> that our proposed merger has received approval."
+      },
+      {
+        "title": "anticipate + V-ing (預期做...)",
+        "explanation": "anticipate 後方慣用動名詞 (V-ing) 表示對未來進程的預估，為多益高頻文法考點。",
+        "example": "We <span class='font-bold underline decoration-blue-500 decoration-2'>anticipate completing</span> the integration process by next quarter."
+      },
+      {
+        "title": "regard (介係詞用法，關於...)",
+        "explanation": "regarding 等同於 about 或 concerning，在商用書信與公文中用來引導主旨或細節說明。",
+        "example": "You will receive personalized emails <span class='font-bold underline decoration-blue-500 decoration-2'>regarding</span> town hall meetings."
+      }
+    ],
+    "quiz": [
+      {
+        "q": "1. What is the primary purpose of this announcement?",
+        "options": [
+          "A. To announce regulatory clearance for a corporate merger",
+          "B. To inform staff about imminent company layoffs",
+          "C. To cancel an international logistics project",
+          "D. To introduce a new CEO to the shareholders"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "2. When is the integration expected to conclude?",
+        "options": [
+          "A. By the end of this week",
+          "B. By the end of next month",
+          "C. By the end of the next fiscal quarter",
+          "D. Within the next two years"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "3. What should employees expect later this afternoon?",
+        "options": [
+          "A. A new performance review",
+          "B. An email regarding integration meetings",
+          "C. A severance package notification",
+          "D. A contract renegotiation form"
+        ],
+        "ans": 1
+      }
+    ]
+  },
+  {
+    "id": "2026_10_toeic_12",
+    "month": "10月份",
+    "category": "toeic",
+    "title": "多益: 第三季度財務法說會摘要 (C1)",
+    "level": "C1",
+    "voice": "en-US-GuyNeural",
+    "voiceLabel": "美式男聲 (US)",
+    "audio": "audio/listening/2026_10_toeic_12.mp3",
+    "text": "Thank you for dialing into our third-quarter financial earnings briefing. Despite severe macroeconomic headwinds and lingering currency volatility, our core operating revenue increased by twelve percent year-over-year. Robust enterprise subscription growth and disciplined cost containment measures allowed our gross margins to surpass Wall Street consensus estimates. Looking ahead, we intend to reallocate surplus capital toward research and development in cloud-native intelligence platforms. A comprehensive breakdown of our revised fiscal projections is readily accessible in the investor relations section of our portal.",
+    "sentences": [
+      {
+        "en": "Thank you for dialing into our third-quarter financial earnings briefing.",
+        "zh": "感謝各位撥通電話參加我們的第三季度財務財報電話會議。",
+        "start": 0.0,
+        "end": 4.34
+      },
+      {
+        "en": "Despite severe macroeconomic headwinds and lingering currency volatility, our core operating revenue increased by twelve percent year-over-year.",
+        "zh": "儘管面臨嚴峻的總體經濟逆風及持續的匯率波動，我們核心營業收入仍同比成長了百分之十二。",
+        "start": 4.34,
+        "end": 12.72
+      },
+      {
+        "en": "Robust enterprise subscription growth and disciplined cost containment measures allowed our gross margins to surpass Wall Street consensus estimates.",
+        "zh": "強勁的企業訂閱增長與嚴格的成本控管措施，使我們的毛利率超越了華爾街市場預估共識。",
+        "start": 12.72,
+        "end": 20.89
+      },
+      {
+        "en": "Looking ahead, we intend to reallocate surplus capital toward research and development in cloud-native intelligence platforms.",
+        "zh": "展望未來，我們計劃將剩餘資金重新配置於雲原生智慧平台的研發。",
+        "start": 20.89,
+        "end": 28.25
+      },
+      {
+        "en": "A comprehensive breakdown of our revised fiscal projections is readily accessible in the investor relations section of our portal.",
+        "zh": "我們修正後的詳細財務預測分析報告，已可於官方投資人關係專區直接查閱。",
+        "start": 28.25,
+        "end": 35.75
+      }
+    ],
+    "grammar": [
+      {
+        "title": "Despite + 名詞片語 (儘管/雖然...)",
+        "explanation": "Despite 是介係詞，後方接名詞或動名詞，表示讓步關係；不可加 that 子句（對比 although + 完整句子）。",
+        "example": "<span class='font-bold underline decoration-blue-500 decoration-2'>Despite severe macroeconomic headwinds</span>, revenue increased."
+      },
+      {
+        "title": "allow + 受詞 + to V (使...得以做...)",
+        "explanation": "使役結構之一，表達某種因素或條件使主詞或對象得以達成目標，為多益高階長句常用結構。",
+        "example": "Cost containment measures <span class='font-bold underline decoration-blue-500 decoration-2'>allowed our gross margins to surpass</span> estimates."
+      },
+      {
+        "title": "Looking ahead (分詞構句，展望未來)",
+        "explanation": "商務報告與財報中標準的轉折承接用語，簡潔地引出下一階段的策略展望與規劃。",
+        "example": "<span class='font-bold underline decoration-blue-500 decoration-2'>Looking ahead</span>, we intend to reallocate surplus capital."
+      }
+    ],
+    "quiz": [
+      {
+        "q": "1. How much did core operating revenue grow compared to last year?",
+        "options": [
+          "A. By eight percent",
+          "B. By ten percent",
+          "C. By twelve percent",
+          "D. By fifteen percent"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "2. What will surplus capital be invested in?",
+        "options": [
+          "A. Buying back company shares",
+          "B. R&D in cloud-native intelligence platforms",
+          "C. Opening physical retail outlets",
+          "D. Paying off long-term bank debts"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "3. Where can listeners find full financial projections?",
+        "options": [
+          "A. In an upcoming press conference",
+          "B. On printed quarterly statements mailed home",
+          "C. In the investor relations section on their portal",
+          "D. By contacting customer service directly"
+        ],
+        "ans": 2
+      }
+    ]
+  },
+  {
+    "id": "2026_10_toeic_13",
+    "month": "10月份",
+    "category": "toeic",
+    "title": "多益: 全球供應鏈風險評估 (B2)",
+    "level": "B2",
+    "voice": "en-GB-RyanNeural",
+    "voiceLabel": "英式男聲 (UK)",
+    "audio": "audio/listening/2026_10_toeic_13.mp3",
+    "text": "Good afternoon, directors. I would like to draw your attention to our regional freight updates. Prolonged congestion at major maritime ports has led to unprecedented turnaround delays for inbound raw materials. To mitigate further inventory shortages, our procurement division recommends securing alternative supplier agreements across Southeast Asia. Furthermore, maintaining a three-week safety buffer for critical components will shield our domestic assembly plants from sudden logistical bottlenecks. The proposed expenditure adjustments will be submitted to the finance committee for prompt authorization early tomorrow morning.",
+    "sentences": [
+      {
+        "en": "Good afternoon, directors.",
+        "zh": "各位董事午安。",
+        "start": 0.0,
+        "end": 2.84
+      },
+      {
+        "en": "I would like to draw your attention to our regional freight updates.",
+        "zh": "我想請各位注意我們區域貨運的最新動態。",
+        "start": 2.84,
+        "end": 7.04
+      },
+      {
+        "en": "Prolonged congestion at major maritime ports has led to unprecedented turnaround delays for inbound raw materials.",
+        "zh": "主要海運港口的長期壅塞，已導致進口原物料週轉出現前所未有的延誤。",
+        "start": 7.04,
+        "end": 13.97
+      },
+      {
+        "en": "To mitigate further inventory shortages, our procurement division recommends securing alternative supplier agreements across Southeast Asia.",
+        "zh": "為了緩解庫存短缺加劇，我們的採購部門建議在東南亞敲定替代供應商合約。",
+        "start": 13.97,
+        "end": 22.12
+      },
+      {
+        "en": "Furthermore, maintaining a three-week safety buffer for critical components will shield our domestic assembly plants from sudden logistical bottlenecks.",
+        "zh": "此外，針對關鍵零組件維持三週的安全緩衝庫存，將能保護我們的國內組裝廠免受突發物流瓶頸的衝擊。",
+        "start": 22.12,
+        "end": 30.74
+      },
+      {
+        "en": "The proposed expenditure adjustments will be submitted to the finance committee for prompt authorization early tomorrow morning.",
+        "zh": "提議的支出調整將於明早提交財務委員會進行快速審核與授權。",
+        "start": 30.74,
+        "end": 37.55
+      }
+    ],
+    "grammar": [
+      {
+        "title": "draw someone's attention to... (引起某人對...的注意)",
+        "explanation": "正式商務簡報時用來引導聽眾專注於圖表、數據或核心議題的專業口語。",
+        "example": "I would like to <span class='font-bold underline decoration-blue-500 decoration-2'>draw your attention to</span> our regional freight updates."
+      },
+      {
+        "title": "lead to + 名詞/動名詞 (導致...結果)",
+        "explanation": "lead to 後面的 to 是介係詞，接名詞或動名詞，多益必考因果關係連接詞組。",
+        "example": "Congestion has <span class='font-bold underline decoration-blue-500 decoration-2'>led to unprecedented turnaround delays</span>."
+      },
+      {
+        "title": "shield A from B (保護 A 免於 B 的傷害)",
+        "explanation": "shield / protect / prevent + A + from + B，商務風險控管領域的高頻搭配片語。",
+        "example": "A safety buffer will <span class='font-bold underline decoration-blue-500 decoration-2'>shield our plants from sudden bottlenecks</span>."
+      }
+    ],
+    "quiz": [
+      {
+        "q": "1. What is causing delays according to the speaker?",
+        "options": [
+          "A. Railway maintenance work",
+          "B. Prolonged congestion at major maritime ports",
+          "C. A strike by warehouse workers",
+          "D. Severe winter storms in North America"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "2. What solution does the procurement team suggest?",
+        "options": [
+          "A. Increasing retail prices immediately",
+          "B. Canceling all existing purchase orders",
+          "C. Securing alternative supplier contracts in Southeast Asia",
+          "D. Halting all manufacturing lines temporarily"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "3. Who will review the expenditure adjustments tomorrow morning?",
+        "options": [
+          "A. The marketing division",
+          "B. The finance committee",
+          "C. Local government regulators",
+          "D. External legal consultants"
+        ],
+        "ans": 1
+      }
+    ]
+  },
+  {
+    "id": "2026_10_toeic_14",
+    "month": "10月份",
+    "category": "toeic",
+    "title": "多益: 資訊安全防護升級內部簡報 (B2)",
+    "level": "B2",
+    "voice": "en-US-JennyNeural",
+    "voiceLabel": "美式女聲 (US)",
+    "audio": "audio/listening/2026_10_toeic_14.mp3",
+    "text": "Attention, team leaders. Following an internal IT security audit, our organization is implementing enhanced authentication protocols across all networked workstations. Beginning this Friday at midnight, multi-factor verification will become mandatory whenever accessing internal repositories and cloud databases remotely. Staff members who encounter synchronization errors are advised to submit an expedited ticket through the IT help desk portal. Failure to configure your security credentials by the deadline may result in temporary suspension of administrative privileges. We appreciate your cooperation in safeguarding our proprietary corporate assets against unauthorized intrusions.",
+    "sentences": [
+      {
+        "en": "Attention, team leaders.",
+        "zh": "各位團隊主管請注意。",
+        "start": 0.0,
+        "end": 2.58
+      },
+      {
+        "en": "Following an internal IT security audit, our organization is implementing enhanced authentication protocols across all networked workstations.",
+        "zh": "在進行內部資訊安全稽核後，本公司正對所有聯網工作站實施強化身分驗證協定。",
+        "start": 2.58,
+        "end": 11.35
+      },
+      {
+        "en": "Beginning this Friday at midnight, multi-factor verification will become mandatory whenever accessing internal repositories and cloud databases remotely.",
+        "zh": "自本週五午夜起，遠端存取內部資料庫與雲端資料時，必須強制進行多因素驗證。",
+        "start": 11.35,
+        "end": 20.84
+      },
+      {
+        "en": "Staff members who encounter synchronization errors are advised to submit an expedited ticket through the IT help desk portal.",
+        "zh": "若員工遇到同步錯誤，建議立即透過 IT 服務台入口提交急件單。",
+        "start": 20.84,
+        "end": 28.43
+      },
+      {
+        "en": "Failure to configure your security credentials by the deadline may result in temporary suspension of administrative privileges.",
+        "zh": "若未在期限前設定完成安全憑證，可能會導致管理權限被暫時停用。",
+        "start": 28.43,
+        "end": 35.96
+      },
+      {
+        "en": "We appreciate your cooperation in safeguarding our proprietary corporate assets against unauthorized intrusions.",
+        "zh": "感謝大家的配合，共同保護公司的專有資產免受未經授權的入侵。",
+        "start": 35.96,
+        "end": 42.95
+      }
+    ],
+    "grammar": [
+      {
+        "title": "Following + 名詞 (在...之後/隨後)",
+        "explanation": "商業英文中比 'after' 更正式的介係詞用法，常用於政策宣導或稽核後措施發布。",
+        "example": "<span class='font-bold underline decoration-blue-500 decoration-2'>Following an internal IT security audit</span>, we are implementing new protocols."
+      },
+      {
+        "title": "be advised to + 原形動詞 (被建議/請配合做...)",
+        "explanation": "被動祈使表達，公司內部通告中比 'You should' 顯得更專業且客氣有禮。",
+        "example": "Staff members <span class='font-bold underline decoration-blue-500 decoration-2'>are advised to submit</span> an expedited ticket."
+      },
+      {
+        "title": "Failure to + 原形動詞 (若未能/未做某事)",
+        "explanation": "Failure to V 放在句首作為名詞主詞，常用於規章警告或條約罰則的條件句簡化。",
+        "example": "<span class='font-bold underline decoration-blue-500 decoration-2'>Failure to configure</span> credentials may result in suspension."
+      }
+    ],
+    "quiz": [
+      {
+        "q": "1. What is taking effect this Friday at midnight?",
+        "options": [
+          "A. Compulsory multi-factor authentication",
+          "B. Relocation to a new headquarters",
+          "C. Mandatory overtime for all staff",
+          "D. Closure of cloud databases"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "2. What should employees do if they face synchronization issues?",
+        "options": [
+          "A. Call the human resources office",
+          "B. Submit a ticket via the IT help desk portal",
+          "C. Work strictly offline until next week",
+          "D. Buy a replacement work laptop"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "3. What is a consequence of missing the security setup deadline?",
+        "options": [
+          "A. A monetary penalty",
+          "B. Complete termination of employment",
+          "C. Temporary suspension of administrative privileges",
+          "D. Mandatory re-examination of coding skills"
+        ],
+        "ans": 2
+      }
+    ]
+  },
+  {
+    "id": "2026_10_toeic_15",
+    "month": "10月份",
+    "category": "toeic",
+    "title": "多益: 永續發展與ESG投資專案 (C1)",
+    "level": "C1",
+    "voice": "en-GB-RyanNeural",
+    "voiceLabel": "英式男聲 (UK)",
+    "audio": "audio/listening/2026_10_toeic_15.mp3",
+    "text": "Distinguished shareholders, sustainability has evolved from an optional compliance benchmark into a fundamental pillar of our corporate identity. Over the past twelve months, we have successfully curtailed direct carbon emissions by eighteen percent through strategic investments in photovoltaic infrastructure. Furthermore, our newly inaugurated circular packaging initiative has drastically reduced single-use plastics across our retail fulfillment network. Institutional investors have taken note of our transparent environmental disclosures, earning our firm top ratings on major global sustainability indexes. We remain steadfastly committed to achieving net-zero operational status ahead of the scheduled industry benchmark in twenty-thirty-five.",
+    "sentences": [
+      {
+        "en": "Distinguished shareholders, sustainability has evolved from an optional compliance benchmark into a fundamental pillar of our corporate identity.",
+        "zh": "尊敬的各位股東，永續發展已從一項可有可無的合規標準，演變成我們企業身分的核心支柱。",
+        "start": 0.0,
+        "end": 8.31
+      },
+      {
+        "en": "Over the past twelve months, we have successfully curtailed direct carbon emissions by eighteen percent through strategic investments in photovoltaic infrastructure.",
+        "zh": "在過去十二個月裡，我們藉由對太陽能光電基礎設施的策略投資，成功將直接碳排放量減少了百分之十八。",
+        "start": 8.31,
+        "end": 17.61
+      },
+      {
+        "en": "Furthermore, our newly inaugurated circular packaging initiative has drastically reduced single-use plastics across our retail fulfillment network.",
+        "zh": "此外，我們新推出的循環包裝倡議，已大幅削減零售配送網路中一次性塑料的使用。",
+        "start": 17.61,
+        "end": 26.61
+      },
+      {
+        "en": "Institutional investors have taken note of our transparent environmental disclosures, earning our firm top ratings on major global sustainability indexes.",
+        "zh": "機構投資人已注意到我們透明的環境資訊揭露，這讓我們公司在主要全球永續指數上榮獲頂級評等。",
+        "start": 26.61,
+        "end": 35.95
+      },
+      {
+        "en": "We remain steadfastly committed to achieving net-zero operational status ahead of the scheduled industry benchmark in twenty-thirty-five.",
+        "zh": "我們將堅定致力於在 2035 年業界表定基準之前，提前達成營運淨零排放。",
+        "start": 35.95,
+        "end": 43.84
+      }
+    ],
+    "grammar": [
+      {
+        "title": "evolve from A into B (從 A 演化/轉型為 B)",
+        "explanation": "描繪企業轉型、科技演進或商業模式成熟時常用的高階片語動詞。",
+        "example": "Sustainability has <span class='font-bold underline decoration-blue-500 decoration-2'>evolved from an optional benchmark into a fundamental pillar</span>."
+      },
+      {
+        "title": "curtail... by [數字]% (將...縮減了百分之幾)",
+        "explanation": "curtail (減少、削減) 搭配介係詞 by 表示縮減的具體幅度，為財報與商務多益高階詞彙。",
+        "example": "We have successfully <span class='font-bold underline decoration-blue-500 decoration-2'>curtailed emissions by eighteen percent</span>."
+      },
+      {
+        "title": "remain committed to + V-ing/名詞 (依然致力於...)",
+        "explanation": "committed to 後面的 to 為介係詞，接動名詞 (V-ing)，多益第 5 部分極高頻常考陷阱題。",
+        "example": "We remain steadfastly <span class='font-bold underline decoration-blue-500 decoration-2'>committed to achieving net-zero status</span>."
+      }
+    ],
+    "quiz": [
+      {
+        "q": "1. By what percentage were direct carbon emissions reduced?",
+        "options": [
+          "A. 12 percent",
+          "B. 15 percent",
+          "C. 18 percent",
+          "D. 25 percent"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "2. What contributed to reducing single-use plastics?",
+        "options": [
+          "A. A new circular packaging initiative",
+          "B. Reducing physical store branches",
+          "C. Raising grocery delivery fees",
+          "D. Relying strictly on foreign suppliers"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "3. What is the target year mentioned for the net-zero goal?",
+        "options": [
+          "A. 2028",
+          "B. 2030",
+          "C. 2035",
+          "D. 2050"
+        ],
+        "ans": 2
+      }
+    ]
+  },
+  {
+    "id": "2026_10_toeic_16",
+    "month": "10月份",
+    "category": "toeic",
+    "title": "多益: 智慧工廠產線自動化提案 (B2)",
+    "level": "B2",
+    "voice": "en-US-GuyNeural",
+    "voiceLabel": "美式男聲 (US)",
+    "audio": "audio/listening/2026_10_toeic_16.mp3",
+    "text": "Good morning, plant supervisors. As highlighted in our latest operational review, manual packaging bottlenecks have consistently hindered our capacity to meet peak holiday delivery demands. To resolve this bottleneck, we are proposing an immediate capital investment in autonomous robotic sorting systems. Preliminary simulation models estimate that automated sorting will enhance throughput by thirty-five percent while cutting defect rates significantly. In addition, existing floor technicians will transition into specialized supervisory roles following comprehensive machinery training. The complete implementation timeline and vendor comparison chart are distributed in the folders before you.",
+    "sentences": [
+      {
+        "en": "Good morning, plant supervisors.",
+        "zh": "工廠主管們早安。",
+        "start": 0.0,
+        "end": 2.95
+      },
+      {
+        "en": "As highlighted in our latest operational review, manual packaging bottlenecks have consistently hindered our capacity to meet peak holiday delivery demands.",
+        "zh": "正如最新營運檢討報告中所指出的，人工包裝的產能瓶頸一直阻礙我們滿足節慶高峰出貨需求的能力。",
+        "start": 2.95,
+        "end": 12.05
+      },
+      {
+        "en": "To resolve this bottleneck, we are proposing an immediate capital investment in autonomous robotic sorting systems.",
+        "zh": "為了解決此瓶頸，我們提議立即對自主機器人分揀系統進行資本支出投資。",
+        "start": 12.05,
+        "end": 19.14
+      },
+      {
+        "en": "Preliminary simulation models estimate that automated sorting will enhance throughput by thirty-five percent while cutting defect rates significantly.",
+        "zh": "初步模擬模型估算，自動分揀將能提升百分之三十五的吞吐產能，同時大幅降低缺陷瑕疵率。",
+        "start": 19.14,
+        "end": 27.73
+      },
+      {
+        "en": "In addition, existing floor technicians will transition into specialized supervisory roles following comprehensive machinery training.",
+        "zh": "此外，現有的現場技術人員在完成全方位機台培訓後，將轉型為專業的督導角色。",
+        "start": 27.73,
+        "end": 35.52
+      },
+      {
+        "en": "The complete implementation timeline and vendor comparison chart are distributed in the folders before you.",
+        "zh": "完整的導入時程表與供應商比較評估表已分發在各位面前的文件夾中。",
+        "start": 35.52,
+        "end": 41.75
+      }
+    ],
+    "grammar": [
+      {
+        "title": "As highlighted in... (正如...中所強調/指出的)",
+        "explanation": "商務報告中引述數據或先前決議的固定句型，主詞與 be 動詞被省略的分詞結構。",
+        "example": "<span class='font-bold underline decoration-blue-500 decoration-2'>As highlighted in our latest review</span>, bottlenecks have hindered capacity."
+      },
+      {
+        "title": "hinder... from V-ing / hinder + 名詞 (阻礙/妨礙...)",
+        "explanation": "商用專業單字，表示某種瓶頸或障礙阻礙了生產力或業務成長。",
+        "example": "Packaging bottlenecks have consistently <span class='font-bold underline decoration-blue-500 decoration-2'>hindered our capacity to meet demands</span>."
+      },
+      {
+        "title": "transition into... (轉變為/平穩過渡至...)",
+        "explanation": "transition 當動詞使用，表示職位角色或技術系統的結構性轉變。",
+        "example": "Floor technicians will <span class='font-bold underline decoration-blue-500 decoration-2'>transition into supervisory roles</span>."
+      }
+    ],
+    "quiz": [
+      {
+        "q": "1. What current issue does the plant face?",
+        "options": [
+          "A. Lack of raw material storage",
+          "B. Inadequate warehouse lighting",
+          "C. Manual packaging bottlenecks during peak seasons",
+          "D. Machine breakdowns caused by power surges"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "2. What is the projected throughput increase with automation?",
+        "options": [
+          "A. 15 percent",
+          "B. 25 percent",
+          "C. 35 percent",
+          "D. 50 percent"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "3. What will happen to existing floor technicians?",
+        "options": [
+          "A. They will receive training for supervisory positions",
+          "B. They will be laid off immediately",
+          "C. They will be transferred to accounting",
+          "D. Their working shifts will be halved"
+        ],
+        "ans": 0
+      }
+    ]
+  },
+  {
+    "id": "2026_10_toeic_17",
+    "month": "10月份",
+    "category": "toeic",
+    "title": "多益: 跨國市場行銷策略諮詢 (C1)",
+    "level": "C1",
+    "voice": "en-US-JennyNeural",
+    "voiceLabel": "美式女聲 (US)",
+    "audio": "audio/listening/2026_10_toeic_17.mp3",
+    "text": "Welcome to today's strategic alignment workshop. When penetrating saturated consumer markets across the Asia-Pacific territory, localized brand storytelling is paramount to establishing enduring brand equity. Consumer analytics indicate that younger demographics prioritize authentic engagement over conventional broadcast advertising. Consequently, we advocate shifting fifty percent of your promotional allocation toward hyper-targeted influencer partnerships and interactive experiential showcases. By fostering organic community sentiment, your brand can bypass conventional ad-fatigue barriers and foster deep customer retention. Let us now examine the benchmark conversion metrics generated from our pilot campaign in Seoul.",
+    "sentences": [
+      {
+        "en": "Welcome to today's strategic alignment workshop.",
+        "zh": "歡迎參加今天的策略對齊研討會。",
+        "start": 0.0,
+        "end": 3.44
+      },
+      {
+        "en": "When penetrating saturated consumer markets across the Asia-Pacific territory, localized brand storytelling is paramount to establishing enduring brand equity.",
+        "zh": "在開拓亞太地區飽和的消費市場時，在地化的品牌敘事對於建立持久的品牌資產至關重要。",
+        "start": 3.44,
+        "end": 13.29
+      },
+      {
+        "en": "Consumer analytics indicate that younger demographics prioritize authentic engagement over conventional broadcast advertising.",
+        "zh": "消費者數據分析顯示，年輕族群更看重真實的互動體驗，而非傳統的大眾廣播廣告。",
+        "start": 13.29,
+        "end": 21.18
+      },
+      {
+        "en": "Consequently, we advocate shifting fifty percent of your promotional allocation toward hyper-targeted influencer partnerships and interactive experiential showcases.",
+        "zh": "因此，我們建議將百分之五十的推廣預算預算重新導向精準的網紅合作與互動體驗展示。",
+        "start": 21.18,
+        "end": 31.29
+      },
+      {
+        "en": "By fostering organic community sentiment, your brand can bypass conventional ad-fatigue barriers and foster deep customer retention.",
+        "zh": "透過培養真實的社群共鳴，您的品牌將能打破傳統廣告疲勞的壁壘，並培養深厚的客戶黏著度。",
+        "start": 31.29,
+        "end": 39.52
+      },
+      {
+        "en": "Let us now examine the benchmark conversion metrics generated from our pilot campaign in Seoul.",
+        "zh": "現在就讓我們一起檢視首爾先導行銷專案所產生的基準轉換指標。",
+        "start": 39.52,
+        "end": 45.41
+      }
+    ],
+    "grammar": [
+      {
+        "title": "be paramount to + 名詞/動名詞 (對...而言至關重要)",
+        "explanation": "paramount 表示「至高無上的、極為重要的」，比 important 或 essential 語氣更強烈，為高階商用形容詞。",
+        "example": "Storytelling is <span class='font-bold underline decoration-blue-500 decoration-2'>paramount to establishing enduring brand equity</span>."
+      },
+      {
+        "title": "prioritize A over B (優先考慮 A 勝過 B)",
+        "explanation": "商務管理決策與行銷策略核心動詞，等同於 prefer A to B 或 put A before B。",
+        "example": "Younger demographics <span class='font-bold underline decoration-blue-500 decoration-2'>prioritize authentic engagement over conventional advertising</span>."
+      },
+      {
+        "title": "advocate + V-ing / advocate + that 子句 (主張/提倡...)",
+        "explanation": "advocate 作動詞時受詞接動名詞 (V-ing)，不能接不定詞 (to V)，為多益常見易錯題。",
+        "example": "We <span class='font-bold underline decoration-blue-500 decoration-2'>advocate shifting fifty percent</span> of your promotional allocation."
+      }
+    ],
+    "quiz": [
+      {
+        "q": "1. What do consumer analytics reveal about younger audiences?",
+        "options": [
+          "A. They prefer traditional television commercials",
+          "B. They value genuine engagement over conventional advertising",
+          "C. They avoid purchasing goods online entirely",
+          "D. They respond best to printed newspaper circulars"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "2. What promotional change is recommended?",
+        "options": [
+          "A. Slashing total advertising budgets by half",
+          "B. Allocating 50% toward targeted influencers and experiential showcases",
+          "C. Terminating all marketing operations in Asia",
+          "D. Relying exclusively on celebrity endorsements"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "3. What campaign's metrics will be examined next?",
+        "options": [
+          "A. A campaign in Tokyo",
+          "B. A campaign in Singapore",
+          "C. A campaign in Seoul",
+          "D. A campaign in Sydney"
+        ],
+        "ans": 2
+      }
+    ]
+  },
+  {
+    "id": "2026_10_toeic_18",
+    "month": "10月份",
+    "category": "toeic",
+    "title": "多益: 商業合約智慧財產權授權協商 (C1)",
+    "level": "C1",
+    "voice": "en-GB-RyanNeural",
+    "voiceLabel": "英式男聲 (UK)",
+    "audio": "audio/listening/2026_10_toeic_18.mp3",
+    "text": "Good morning, legal counsel and commercial partners. We have finalized the preliminary draft of the bilateral intellectual property licensing covenant. Article Four explicitly stipulates that our client shall retain exclusive worldwide patent ownership across all cryptographic algorithms. In return, the licensee is granted non-transferable commercialization privileges across designated North American medical markets for an initial tenure of seven years. Furthermore, clause seven mandates quarterly royalty remittances accompanied by certified independent auditing statements. If both parties concur with these modified indemnification clauses, we shall proceed with executing the definitive agreement before Friday.",
+    "sentences": [
+      {
+        "en": "Good morning, legal counsel and commercial partners.",
+        "zh": "法務顧問與商業夥伴們早安。",
+        "start": 0.0,
+        "end": 4.05
+      },
+      {
+        "en": "We have finalized the preliminary draft of the bilateral intellectual property licensing covenant.",
+        "zh": "我們已完成雙邊智慧財產權授權協議初步草案的最後定稿。",
+        "start": 4.05,
+        "end": 9.85
+      },
+      {
+        "en": "Article Four explicitly stipulates that our client shall retain exclusive worldwide patent ownership across all cryptographic algorithms.",
+        "zh": "第四條明確載明，我方客戶將對所有密碼學演算法保留全球獨家專利所有權。",
+        "start": 9.85,
+        "end": 18.06
+      },
+      {
+        "en": "In return, the licensee is granted non-transferable commercialization privileges across designated North American medical markets for an initial tenure of seven years.",
+        "zh": "作為回報，被授權人將在指定的北美醫療市場享有為期七年的不可轉讓商業化權利。",
+        "start": 18.06,
+        "end": 28.0
+      },
+      {
+        "en": "Furthermore, clause seven mandates quarterly royalty remittances accompanied by certified independent auditing statements.",
+        "zh": "此外，第七條規定被授權人須每季匯出權利金，並附上經認證的獨立審計報告。",
+        "start": 28.0,
+        "end": 35.45
+      },
+      {
+        "en": "If both parties concur with these modified indemnification clauses, we shall proceed with executing the definitive agreement before Friday.",
+        "zh": "如果雙方對這些修改後的賠償條款達成一致共識，我們將在週五前正式簽署具法律約束力的最終合約。",
+        "start": 35.45,
+        "end": 43.5
+      }
+    ],
+    "grammar": [
+      {
+        "title": "stipulate that + 子句 (明文規定/載明...)",
+        "explanation": "合約法規條文標準用語，後方可接 should 或省略 should 的原形動詞 (subjunctive mood)。",
+        "example": "Article Four <span class='font-bold underline decoration-blue-500 decoration-2'>stipulates that our client shall retain</span> patent ownership."
+      },
+      {
+        "title": "be accompanied by... (附帶/伴隨有...)",
+        "explanation": "常出現在商務付款、出貨或文件繳交規定中，表示某物必須與另一物一併檢附提交。",
+        "example": "Royalty remittances <span class='font-bold underline decoration-blue-500 decoration-2'>accompanied by certified auditing statements</span>."
+      },
+      {
+        "title": "proceed with + V-ing / 名詞 (繼續進行/著手實施...)",
+        "explanation": "商務談判確認後進入下一階段行動的標準用語。",
+        "example": "We shall <span class='font-bold underline decoration-blue-500 decoration-2'>proceed with executing the definitive agreement</span>."
+      }
+    ],
+    "quiz": [
+      {
+        "q": "1. What does Article Four explicitly state?",
+        "options": [
+          "A. That the licensee owns the algorithms outright",
+          "B. That the client retains exclusive worldwide patent ownership",
+          "C. That patents are public domain after three years",
+          "D. That foreign courts will resolve all disputes"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "2. How long is the commercialization agreement valid for initially?",
+        "options": [
+          "A. Three years",
+          "B. Five years",
+          "C. Seven years",
+          "D. Ten years"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "3. What must accompany the quarterly royalty remittances?",
+        "options": [
+          "A. Certified independent auditing statements",
+          "B. Customer satisfaction surveys",
+          "C. Physical product prototypes",
+          "D. Government clearance letters"
+        ],
+        "ans": 0
+      }
+    ]
+  },
+  {
+    "id": "2026_10_toeic_19",
+    "month": "10月份",
+    "category": "toeic",
+    "title": "多益: 危機公關媒體應對聲明 (B2)",
+    "level": "B2",
+    "voice": "en-US-JennyNeural",
+    "voiceLabel": "美式女聲 (US)",
+    "audio": "audio/listening/2026_10_toeic_19.mp3",
+    "text": "Good morning, members of the press. We have convened this urgent press conference to address the recent thermal malfunction reported in our model five smart home hubs. Although no casualties or structural property damages have occurred, consumer safety remains our most paramount operational imperative. As a precautionary measure, our executive board has initiated a voluntary worldwide recall of all units manufactured between May and August. Impacted customers are entitled to an expedited complimentary hardware replacement or a full refund upon verification. A twenty-four-hour multilingual customer assistance helpline has been inaugurated to streamline retrieval procedures immediately.",
+    "sentences": [
+      {
+        "en": "Good morning, members of the press.",
+        "zh": "各位媒體記者朋友們早安。",
+        "start": 0.0,
+        "end": 2.91
+      },
+      {
+        "en": "We have convened this urgent press conference to address the recent thermal malfunction reported in our model five smart home hubs.",
+        "zh": "我們召開這次緊急記者會，是為了就我們第五代智慧家庭中樞最近傳出的過熱故障事件進行說明。",
+        "start": 2.91,
+        "end": 10.18
+      },
+      {
+        "en": "Although no casualties or structural property damages have occurred, consumer safety remains our most paramount operational imperative.",
+        "zh": "雖然目前尚未造成人員傷亡或結構性財產損害，但消費者安全仍是我們最至高無上的營運準則。",
+        "start": 10.18,
+        "end": 18.21
+      },
+      {
+        "en": "As a precautionary measure, our executive board has initiated a voluntary worldwide recall of all units manufactured between May and August.",
+        "zh": "作為預防性措施，我們的執行董事會已啟動對五月至八月期間生產之所有機型的全球主動召回。",
+        "start": 18.21,
+        "end": 27.23
+      },
+      {
+        "en": "Impacted customers are entitled to an expedited complimentary hardware replacement or a full refund upon verification.",
+        "zh": "受影響的消費者在經核對後，有權獲得快速的免費硬體更換或全額退款。",
+        "start": 27.23,
+        "end": 34.69
+      },
+      {
+        "en": "A twenty-four-hour multilingual customer assistance helpline has been inaugurated to streamline retrieval procedures immediately.",
+        "zh": "我們已立即啟用 24 小時多語言客戶協助專線，以簡化回收流程。",
+        "start": 34.69,
+        "end": 42.14
+      }
+    ],
+    "grammar": [
+      {
+        "title": "convene + 名詞 (召集/召開正式會議)",
+        "explanation": "convene a conference / meeting / session，多益公關與商務高頻字彙，比 call a meeting 更具正式色彩。",
+        "example": "We have <span class='font-bold underline decoration-blue-500 decoration-2'>convened this urgent press conference</span>."
+      },
+      {
+        "title": "be entitled to + 名詞/原形動詞 (有權享有/獲得...)",
+        "explanation": "消費者權益、員工福利或退款條款最核心句型，多益閱讀文法題幾乎每次必考。",
+        "example": "Impacted customers <span class='font-bold underline decoration-blue-500 decoration-2'>are entitled to an expedited complimentary replacement</span>."
+      },
+      {
+        "title": "upon + 名詞/動名詞 (一經...就.../在...之際)",
+        "explanation": "upon verification (經確認後)、upon arrival (一抵達時)，商務手續條件的精準簡潔表達。",
+        "example": "Customers can receive a full refund <span class='font-bold underline decoration-blue-500 decoration-2'>upon verification</span>."
+      }
+    ],
+    "quiz": [
+      {
+        "q": "1. What triggered the urgent press conference?",
+        "options": [
+          "A. A software copyright lawsuit",
+          "B. A thermal malfunction in model five smart home hubs",
+          "C. A merger rejection by European authorities",
+          "D. A nationwide courier strike"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "2. Which manufacturing batches are being recalled?",
+        "options": [
+          "A. Units made between January and March",
+          "B. Units made between May and August",
+          "C. All units sold overseas in 2024",
+          "D. Only beta test sample units"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "3. What support has been launched to assist customers?",
+        "options": [
+          "A. A 24-hour multilingual helpline",
+          "B. A mandatory trade-in program at dealerships",
+          "C. A store credit voucher mailed in December",
+          "D. In-person repair workshops on weekends"
+        ],
+        "ans": 0
+      }
+    ]
+  },
+  {
+    "id": "2026_10_toeic_20",
+    "month": "10月份",
+    "category": "toeic",
+    "title": "多益: 高階管理層繼任與組織架構調整 (C1)",
+    "level": "C1",
+    "voice": "en-US-GuyNeural",
+    "voiceLabel": "美式男聲 (US)",
+    "audio": "audio/listening/2026_10_toeic_20.mp3",
+    "text": "Good afternoon, colleagues. After an illustrious fifteen-year tenure guiding our enterprise, Chief Executive Officer Arthur Vance has announced his intended retirement at the conclusion of this calendar year. Following a rigorous external and internal search, the board of directors has unanimously confirmed Margaret Chen as his successor. Margaret previously spearheaded our international operations through unprecedented growth phases and possesses impeccable strategic acumen. The transitional handover phase will commence on November first to facilitate seamless leadership continuity across all operating verticals. Please join me in expressing our profound gratitude to Arthur and welcoming Margaret into her historic new appointment.",
+    "sentences": [
+      {
+        "en": "Good afternoon, colleagues.",
+        "zh": "各位同仁下午好。",
+        "start": 0.0,
+        "end": 2.6
+      },
+      {
+        "en": "After an illustrious fifteen-year tenure guiding our enterprise, Chief Executive Officer Arthur Vance has announced his intended retirement at the conclusion of this calendar year.",
+        "zh": "在引領我們企業度過輝煌卓越的十五年任期後，執行長 Arthur Vance 宣布了他預定於今年年底退休的計畫。",
+        "start": 2.6,
+        "end": 12.56
+      },
+      {
+        "en": "Following a rigorous external and internal search, the board of directors has unanimously confirmed Margaret Chen as his successor.",
+        "zh": "歷經嚴格的內外部遴選，董事會已全票通過確認 Margaret Chen 為他的繼任者。",
+        "start": 12.56,
+        "end": 20.21
+      },
+      {
+        "en": "Margaret previously spearheaded our international operations through unprecedented growth phases and possesses impeccable strategic acumen.",
+        "zh": "Margaret 先前曾帶領我們的國際業務度過了前所未有的成長階段，並具備無可挑剔的策略敏銳度。",
+        "start": 20.21,
+        "end": 28.34
+      },
+      {
+        "en": "The transitional handover phase will commence on November first to facilitate seamless leadership continuity across all operating verticals.",
+        "zh": "過渡交接期將於十一月一日正式展開，以促進所有業務部門領導力的無縫傳承。",
+        "start": 28.34,
+        "end": 36.4
+      },
+      {
+        "en": "Please join me in expressing our profound gratitude to Arthur and welcoming Margaret into her historic new appointment.",
+        "zh": "請大家和我一起向 Arthur 致上最深摯的謝意，並熱烈歡迎 Margaret 接下這項歷史性的嶄新任命。",
+        "start": 36.4,
+        "end": 43.0
+      }
+    ],
+    "grammar": [
+      {
+        "title": "unanimously confirm A as B (全票一致通過確認 A 為 B)",
+        "explanation": "董事會或決策機構進行人事任命或表決通過決議的最高階正式詞彙組合。",
+        "example": "The board has <span class='font-bold underline decoration-blue-500 decoration-2'>unanimously confirmed Margaret Chen as his successor</span>."
+      },
+      {
+        "title": "spearhead + 名詞 (帶頭開拓/帶領推動...)",
+        "explanation": "履歷與高階管理演講中極具魄力的及物動詞，表達領導新專案或帶領組織擴張。",
+        "example": "Margaret previously <span class='font-bold underline decoration-blue-500 decoration-2'>spearheaded our international operations</span>."
+      },
+      {
+        "title": "facilitate + 名詞 (促進/有助於使某事順利進行)",
+        "explanation": "商務管理高頻字，表示透過制度或程序減少摩擦阻礙，使流程無縫推進。",
+        "example": "Handover will commence to <span class='font-bold underline decoration-blue-500 decoration-2'>facilitate seamless leadership continuity</span>."
+      }
+    ],
+    "quiz": [
+      {
+        "q": "1. How long has Arthur Vance served as Chief Executive Officer?",
+        "options": [
+          "A. Five years",
+          "B. Ten years",
+          "C. Fifteen years",
+          "D. Twenty years"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "2. Who has been appointed as the new CEO?",
+        "options": [
+          "A. Arthur Vance",
+          "B. Margaret Chen",
+          "C. An unnamed external consultant",
+          "D. The head of human resources"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "3. When will the transitional handover phase officially start?",
+        "options": [
+          "A. On October 15",
+          "B. On November 1",
+          "C. On December 31",
+          "D. Early next year"
+        ],
+        "ans": 1
+      }
+    ]
   }
 ];
 

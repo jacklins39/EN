@@ -127,7 +127,7 @@
             <div class="bg-white rounded-2xl shadow-sm p-6 mb-6">
                 <h2 class="text-2xl font-semibold mb-1">今日學習計畫</h2>
                 <div class="flex justify-between items-center mb-6">
-                    <p class="text-[#86868B] text-sm" id="current-date-display">虛擬時間: 第 1 天</p>
+                    <p class="text-[#86868B] text-sm" id="current-date-display">虛擬時間: -</p>
                     <select id="unit-selector" aria-label="選擇學習單元" title="選擇學習單元" class="bg-[#E5E5EA] border-0 border-[#C3D0B0] text-[#0071E3] text-sm rounded-xl focus:ring-[#0071E3] focus:border-[#0071E3] block p-2 outline-none">
                         <option value="1">單元 1 (1-1000)</option>
                         <option value="2">單元 2 (1001-2000)</option>
@@ -156,7 +156,7 @@
                     </div>
                     <div id="box-stat-new" class="bg-white rounded-2xl p-4 text-center border border-gray-100 cursor-pointer hover:bg-gray-50 hover:shadow-md transition-all active:scale-95 relative overflow-hidden z-10 shadow-sm select-none">
                         <p class="text-[#0071E3] text-sm font-medium mb-1">新單字 <span class="text-xs font-normal opacity-70">(點擊預覽)</span></p>
-                        <p class="text-3xl font-semibold text-[#0071E3]" id="stat-new">10</p>
+                        <p class="text-3xl font-semibold text-[#0071E3]" id="stat-new">-</p>
                     </div>
                 </div>
 
@@ -621,6 +621,7 @@
             localStorage.setItem('newWordsPerDay', NEW_WORDS_PER_DAY);
             dailyPlans = {};
             saveDailyPlansLocally();
+            saveToCloud();
             initAppLogic(); // 重新計算今日單字
         });
 
@@ -729,6 +730,12 @@
                     userProgress = data.progress || {};
                     virtualCurrentDay = typeof data.day === 'number' ? data.day : 0;
                     dailyPlans = data.dailyPlans || {};
+                    if (typeof data.newWordsPerDay === 'number') {
+                        NEW_WORDS_PER_DAY = data.newWordsPerDay;
+                        localStorage.setItem('newWordsPerDay', NEW_WORDS_PER_DAY);
+                        const settingEl = document.getElementById('setting-new-words');
+                        if (settingEl) settingEl.value = NEW_WORDS_PER_DAY;
+                    }
                     customWordsDB = (Array.isArray(data.customWords) ? data.customWords : [])
                         .filter(cw => cw && typeof cw.en === 'string' && /^[A-Za-z][A-Za-z' -]{0,39}$/.test(cw.en))
                         .slice(0, MAX_CUSTOM_WORDS)
@@ -744,10 +751,12 @@
                     customWordsDB.forEach(cw => {
                         vocabularyDB.push(cw);
                     });
+                    saveDailyPlansLocally();
                 } else {
                     userProgress = {};
                     virtualCurrentDay = 0;
                     dailyPlans = {};
+                    saveDailyPlansLocally();
                 }
                 initAppLogic(); 
             } catch (error) {
@@ -764,6 +773,7 @@
                 progress: userProgress,
                 day: virtualCurrentDay,
                 dailyPlans: dailyPlans,
+                newWordsPerDay: NEW_WORDS_PER_DAY,
                 lastUpdated: firebase.firestore.FieldValue.serverTimestamp()
             }, { merge: true }).catch(error => {
                 console.error("雲端存檔失敗:", error);
@@ -785,6 +795,7 @@
                 localStorage.setItem('vocab_daily_plans', JSON.stringify(dailyPlans));
                 localStorage.setItem('vocab_virtual_day', String(virtualCurrentDay));
                 localStorage.setItem('vocab_last_date', getLocalDateStr());
+                localStorage.setItem('vocab_user_progress', JSON.stringify(userProgress));
             } catch(e) {}
         }
 
@@ -807,7 +818,11 @@
         }
 
         function initLocalData() {
-            userProgress = {};
+            try {
+                userProgress = JSON.parse(localStorage.getItem('vocab_user_progress') || '{}');
+            } catch(e) {
+                userProgress = {};
+            }
             virtualCurrentDay = parseInt(localStorage.getItem('vocab_virtual_day') || '0', 10);
             try {
                 dailyPlans = JSON.parse(localStorage.getItem('vocab_daily_plans') || '{}');
@@ -821,6 +836,9 @@
             checkCalendarDayRollover();
             updateDashboard();
         }
+
+        // 頁面初次載入時立即同步以本地快取渲染儀表板，避免非同步 Firebase 認證延遲導致預設數字閃爍
+        initLocalData();
 
         document.getElementById('unit-selector').addEventListener('change', (e) => {
             currentUnit = parseInt(e.target.value);
@@ -841,6 +859,15 @@
 
         function getDailyPlan(unit) {
             if (dailyPlans[unit] && dailyPlans[unit].day === virtualCurrentDay) {
+                // 若當日計畫尚未完成，且新單字數量與目前設定不一致，自動修正至當前設定數量
+                if (!dailyPlans[unit].completed && Array.isArray(dailyPlans[unit].newWordIds) && dailyPlans[unit].newWordIds.length !== NEW_WORDS_PER_DAY) {
+                    const unitWords = getUnitWords(unit);
+                    const newWordsCandidates = unitWords.filter(w => !userProgress[w.id] || userProgress[w.id].level === 0);
+                    newWordsCandidates.sort((a, b) => (Number(a.id) || 0) - (Number(b.id) || 0));
+                    dailyPlans[unit].newWordIds = newWordsCandidates.slice(0, NEW_WORDS_PER_DAY).map(w => w.id);
+                    saveDailyPlansLocally();
+                    saveToCloud();
+                }
                 return dailyPlans[unit];
             }
             const unitWords = getUnitWords(unit);
@@ -1339,7 +1366,10 @@
                 }
             }
             
-            try { saveToCloud(); } catch(e) { console.warn(e); }
+            try { 
+                saveToCloud(); 
+                saveDailyPlansLocally();
+            } catch(e) { console.warn(e); }
         }
 
         // ==========================================

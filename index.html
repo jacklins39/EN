@@ -753,10 +753,15 @@
                     });
                     saveDailyPlansLocally();
                 } else {
-                    userProgress = {};
-                    virtualCurrentDay = 0;
-                    dailyPlans = {};
-                    saveDailyPlansLocally();
+                    // 若雲端初次登入尚無存檔，保留並自動上傳本地既有進度至雲端，避免使用者的本機進度被清空
+                    if (Object.keys(userProgress).length > 0 || virtualCurrentDay > 0) {
+                        saveToCloud();
+                    } else {
+                        userProgress = {};
+                        virtualCurrentDay = 0;
+                        dailyPlans = {};
+                        saveDailyPlansLocally();
+                    }
                 }
                 initAppLogic(); 
             } catch (error) {

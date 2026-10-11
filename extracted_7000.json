@@ -1,0 +1,7968 @@
+[
+  {
+    "en": "abandon",
+    "kk": "/əˈbændən/",
+    "zh": "放棄、拋棄",
+    "example": "They had to abandon their car in the fol od.",
+    "exampleZh": "他們不得不在洪水中棄車而逃。"
+  },
+  {
+    "en": "ability",
+    "kk": "/əˈbɪləti/",
+    "zh": "能力、才能",
+    "example": "Her ability to speak three languages impressed everyone.",
+    "exampleZh": "她說三種語言的能力令所 有人印象深刻。"
+  },
+  {
+    "en": "absolute",
+    "kk": "/ˈæbsəluːt/",
+    "zh": "絕對的、完全的",
+    "example": "The king had absolute power over his subjects.",
+    "exampleZh": "國王對臣民擁有絕對權力。"
+  },
+  {
+    "en": "absorb",
+    "kk": "/əbˈzɔːrb/",
+    "zh": "吸收、理解",
+    "example": "Plants absorb carbon dioxide from the atmosphere.",
+    "exampleZh": "植物從大氣中吸收二氧化碳。"
+  },
+  {
+    "en": "abstract",
+    "kk": "/ˈæbstrækt/",
+    "zh": "抽象的、理論的",
+    "example": "Philosophy deals with many abstract concepts.",
+    "exampleZh": "哲學處理許多抽象概念。"
+  },
+  {
+    "en": "academic",
+    "kk": "/ækəˈdemɪk/",
+    "zh": "學術的、理論的",
+    "example": "She received an academic scholarship to university.",
+    "exampleZh": "她獲得了大學學術獎學金。"
+  },
+  {
+    "en": "accept",
+    "kk": "/əkˈsept/",
+    "zh": "接受、承認",
+    "example": "I accept your apology and forgive you.",
+    "exampleZh": "我接 受你的道歉並原諒你。"
+  },
+  {
+    "en": "access",
+    "kk": "/ˈækses/",
+    "zh": "進入、接近",
+    "example": "Students have free access to the library.",
+    "exampleZh": "學 生可以免費使用圖書館。"
+  },
+  {
+    "en": "account",
+    "kk": "/əˈkaʊnt/",
+    "zh": "帳戶、說明",
+    "example": "Please transfer the money to my bank account.",
+    "exampleZh": "請將錢轉到我的銀行帳戶。"
+  },
+  {
+    "en": "accurate",
+    "kk": "/ˈækjərət/",
+    "zh": "準確的、精確的",
+    "example": "The weather forecast was surprisingly accurate.",
+    "exampleZh": "天氣預報出人意料地準確。"
+  },
+  {
+    "en": "achieve",
+    "kk": "/əˈtʃiːv/",
+    "zh": "達成、實現",
+    "example": "Hard work helped him achieve his goals.",
+    "exampleZh": "努 力工作幫助他達成目標。"
+  },
+  {
+    "en": "acquire",
+    "kk": "/əˈkwaɪər/",
+    "zh": "獲得、學會",
+    "example": "Children acquire language naturally through exposure.",
+    "exampleZh": "兒童通過接觸自然地習得語言。"
+  },
+  {
+    "en": "actual",
+    "kk": "/ˈæktʃuəl/",
+    "zh": "實際的、真實的",
+    "example": "The actual cost was higher than estimated.",
+    "exampleZh": "實際成本比估計的要高。"
+  },
+  {
+    "en": "adapt",
+    "kk": "/əˈdæpt/",
+    "zh": "適應、改編",
+    "example": "Animals must adapt to survive in changing environments.",
+    "exampleZh": "動物必須適應才能在變化的環境 中生存。"
+  },
+  {
+    "en": "adequate",
+    "kk": "/ˈædɪkwət/",
+    "zh": "足夠的、適當的",
+    "example": "The hotel provided adequate but not luxurious accommodation.",
+    "exampleZh": "旅館提供了足夠但 不豪華的住宿。"
+  },
+  {
+    "en": "administration",
+    "kk": "/ədˌmɪnɪˈstreɪʃn/",
+    "zh": "管理、行政",
+    "example": "The new administration promised to reduce taxes.",
+    "exampleZh": "新政府承諾減稅。"
+  },
+  {
+    "en": "admit",
+    "kk": "/ədˈmɪt/",
+    "zh": "承認、允許進入",
+    "example": "The university will admit 500 new students this year.",
+    "exampleZh": "大學今年將錄取500名新生。"
+  },
+  {
+    "en": "adopt",
+    "kk": "/əˈdɒpt/",
+    "zh": "採用、收養",
+    "example": "The company decided to adopt a new marketing strategy.",
+    "exampleZh": "公司決定採用新的營銷策 略。"
+  },
+  {
+    "en": "adult",
+    "kk": "/ˈædʌlt/",
+    "zh": "成人、成年的",
+    "example": "Only adults are allowed to enter this area.",
+    "exampleZh": "只 有成年人才能進入這個區域。"
+  },
+  {
+    "en": "advance",
+    "kk": "/ədˈvæns/",
+    "zh": "前進、進步",
+    "example": "Technology continues to advance at a rapid pace.",
+    "exampleZh": "技術繼續快速發展。"
+  },
+  {
+    "en": "advantage",
+    "kk": "/ədˈvæntɪdʒ/",
+    "zh": "優勢、好處",
+    "example": "Speaking multiple languages gives you an advantage in the job market.",
+    "exampleZh": "會說多種語言 在就業市場上給你優勢。"
+  },
+  {
+    "en": "adventure",
+    "kk": "/ədˈventʃər/",
+    "zh": "冒險、奇遇",
+    "example": "Their trip to the Amazon was a real adventure.",
+    "exampleZh": "他們的亞馬遜之旅是一次真正的冒 險。"
+  },
+  {
+    "en": "advertise",
+    "kk": "/ˈædvətaɪz/",
+    "zh": "做廣告、宣傳",
+    "example": "Companies advertise their products on television.",
+    "exampleZh": "公司在電視上為其產品做廣告。"
+  },
+  {
+    "en": "advice",
+    "kk": "/ədˈvaɪs/",
+    "zh": "建議、忠告",
+    "example": "She gave me excellent advice about my career.",
+    "exampleZh": "她給了我關於職業的絕佳建議。"
+  },
+  {
+    "en": "afefct",
+    "kk": "/əˈfekt/",
+    "zh": "影響、感動",
+    "example": "The rain will afefct our picnic plans.",
+    "exampleZh": "雨會影響 我們的野餐計劃。"
+  },
+  {
+    "en": "afofrd",
+    "kk": "/əˈfɔːrd/",
+    "zh": "負擔得起、提供",
+    "example": "Many families cannot afofrd to buy a house.",
+    "exampleZh": "許多家庭買不起房子。"
+  },
+  {
+    "en": "afraid",
+    "kk": "/əˈfreɪd/",
+    "zh": "害怕的、擔心的",
+    "example": "She is afraid of fyl ing in airplanes.",
+    "exampleZh": "她害怕坐 飛機。"
+  },
+  {
+    "en": "agent",
+    "kk": "/ˈeɪdʒənt/",
+    "zh": "代理人、特工",
+    "example": "The real estate agent showed us three houses.",
+    "exampleZh": "房地產經紀人給我們看了三棟房子。"
+  },
+  {
+    "en": "agree",
+    "kk": "/əˈɡriː/",
+    "zh": "同意、贊成",
+    "example": "I agree with your proposal completely.",
+    "exampleZh": "我完 全同意你的提議。"
+  },
+  {
+    "en": "agriculture",
+    "kk": "/ˈæɡrɪkʌltʃər/",
+    "zh": "農業、農學",
+    "example": "Agriculture is the backbone of the country's economy.",
+    "exampleZh": "農業是該國經濟的支柱。"
+  },
+  {
+    "en": "ahead",
+    "kk": "/əˈhed/",
+    "zh": "在前面、提前",
+    "example": "Look ahead and plan for the future.",
+    "exampleZh": "向前看， 為未來做計劃。"
+  },
+  {
+    "en": "aid",
+    "kk": "/eɪd/",
+    "zh": "援助、幫助",
+    "example": "International aid arrived after the earthquake.",
+    "exampleZh": "地震後國際援助到達了。"
+  },
+  {
+    "en": "aim",
+    "kk": "/eɪm/",
+    "zh": "瞄準、目標",
+    "example": "Students should aim for excellence in their studies.",
+    "exampleZh": "學生應該在學習中追求卓越。"
+  },
+  {
+    "en": "air",
+    "kk": "/eər/",
+    "zh": "空氣、氣氛",
+    "example": "Fresh air is essential for good health.",
+    "exampleZh": "新鮮空 氣對健康至關重要。"
+  },
+  {
+    "en": "aircraft",
+    "kk": "/ˈeərkræft/",
+    "zh": "飛機、航空器",
+    "example": "The aircraft landed safely despite bad weather.",
+    "exampleZh": "儘管天氣惡劣，飛機還是安全降落了。"
+  },
+  {
+    "en": "alarm",
+    "kk": "/əˈlɑːrm/",
+    "zh": "警報、使驚慌",
+    "example": "The fire alarm woke everyone in the building.",
+    "exampleZh": "火災警報叫醒了大樓裡的每個人。"
+  },
+  {
+    "en": "album",
+    "kk": "/ˈælbəm/",
+    "zh": "相簿、專輯",
+    "example": "She keeps all her photos in a family album.",
+    "exampleZh": "她把所有照片都放在家庭相簿裡。"
+  },
+  {
+    "en": "alcohol",
+    "kk": "/ˈælkəhɒl/",
+    "zh": "酒精、酒類",
+    "example": "Driving under the inful ence of alcohol is illegal.",
+    "exampleZh": "酒後駕車是違法的。"
+  },
+  {
+    "en": "alert",
+    "kk": "/əˈlɜːrt/",
+    "zh": "警覺的、警告",
+    "example": "Security guards must stay alert at all times.",
+    "exampleZh": "保安必須時刻保持警覺。"
+  },
+  {
+    "en": "alien",
+    "kk": "/ˈeɪliən/",
+    "zh": "外星人、外國的",
+    "example": "The movie was about an alien invasion of Earth.",
+    "exampleZh": "這部電影講的是外星人入侵地球。"
+  },
+  {
+    "en": "alike",
+    "kk": "/əˈlaɪk/",
+    "zh": "相似的、同樣地",
+    "example": "The twins look alike but have difefrent personalities.",
+    "exampleZh": "雙胞胎長得很像但性格不同。"
+  },
+  {
+    "en": "alive",
+    "kk": "/əˈlaɪv/",
+    "zh": "活著的、有生氣的",
+    "example": "The old traditions are still alive in this village.",
+    "exampleZh": "古老的傳統在這個村莊仍然存在。"
+  },
+  {
+    "en": "allow",
+    "kk": "/əˈlaʊ/",
+    "zh": "允許、准許",
+    "example": "Parents should allow children to make some decisions.",
+    "exampleZh": "父母應該允許孩子做一些決定。"
+  },
+  {
+    "en": "almost",
+    "kk": "/ˈɔːlmoʊst/",
+    "zh": "幾乎、差不多",
+    "example": "We are almost finished with the project.",
+    "exampleZh": "我們 的項目差不多完成了。"
+  },
+  {
+    "en": "alone",
+    "kk": "/əˈloʊn/",
+    "zh": "獨自的、單獨地",
+    "example": "She prefers to work alone rather than in teams.",
+    "exampleZh": "她更喜歡獨自工作而不是團隊合作。"
+  },
+  {
+    "en": "along",
+    "kk": "/əˈlɔːŋ/",
+    "zh": "沿著、一起",
+    "example": "We walked along the beach at sunset.",
+    "exampleZh": "我們 在日落時沿著海灘散步。"
+  },
+  {
+    "en": "already",
+    "kk": "/ɔːlˈredi/",
+    "zh": "已經、早已",
+    "example": "I have already finished my homework.",
+    "exampleZh": "我已 經完成了作業。"
+  },
+  {
+    "en": "also",
+    "kk": "/ˈɔːlsoʊ/",
+    "zh": "也、同樣",
+    "example": "She speaks English and also French ful ently.",
+    "exampleZh": "她英語說得很流利，法語也是。"
+  },
+  {
+    "en": "alter",
+    "kk": "/ˈɔːltər/",
+    "zh": "改變、修改",
+    "example": "Climate change will alter weather patterns globally.",
+    "exampleZh": "氣候變化將改變全球天氣模式。"
+  },
+  {
+    "en": "alternative",
+    "kk": "/ɔːlˈtɜːrnətɪv/",
+    "zh": "替代方案、另一選擇",
+    "example": "Solar energy is a clean alternative to fossil fuels.",
+    "exampleZh": "太陽能是化石燃料的清潔替代品。"
+  },
+  {
+    "en": "although",
+    "kk": "/ɔːlˈðoʊ/",
+    "zh": "雖然、儘管",
+    "example": "Although it was raining, we continued our hike.",
+    "exampleZh": "雖然下雨，我們還是繼續徒步旅行。"
+  },
+  {
+    "en": "altogether",
+    "kk": "/ˌɔːltəˈɡeðər/",
+    "zh": "完全地、總共",
+    "example": "The meal cost ffity dollars altogether.",
+    "exampleZh": "這頓飯 總共花了五十美元。"
+  },
+  {
+    "en": "always",
+    "kk": "/ˈɔːlweɪz/",
+    "zh": "總是、永遠",
+    "example": "She always arrives on time for meetings.",
+    "exampleZh": "她 開會總是準時到達。"
+  },
+  {
+    "en": "amateur",
+    "kk": "/ˈæmətər/",
+    "zh": "業餘愛好者、業餘的",
+    "example": "He is an amateur photographer who takes beautiful pictures.",
+    "exampleZh": "他是一個拍攝美麗照片的業 餘攝影師。"
+  },
+  {
+    "en": "amaze",
+    "kk": "/əˈmeɪz/",
+    "zh": "使驚奇、使驚嘆",
+    "example": "The magician's tricks never fail to amaze the audience.",
+    "exampleZh": "魔術師的把戲總是讓觀眾驚嘆不已。"
+  },
+  {
+    "en": "ambition",
+    "kk": "/æmˈbɪʃn/",
+    "zh": "野心、抱負",
+    "example": "Her ambition is to become a successful doctor.",
+    "exampleZh": "她的抱負是成為一名成功的醫生。"
+  },
+  {
+    "en": "ambulance",
+    "kk": "/ˈæmbjələns/",
+    "zh": "救護車",
+    "example": "The ambulance rushed the injured person to hospital.",
+    "exampleZh": "救護車將傷者緊急送往醫院。"
+  },
+  {
+    "en": "among",
+    "kk": "/əˈmʌŋ/",
+    "zh": "在...之中、在...當中",
+    "example": "She is among the top students in her class.",
+    "exampleZh": "她是班上的頂尖學生之一。"
+  },
+  {
+    "en": "amount",
+    "kk": "/əˈmaʊnt/",
+    "zh": "數量、總計",
+    "example": "The amount of rainfall this year was below average.",
+    "exampleZh": "今年的降雨量低於平均水平。"
+  },
+  {
+    "en": "analyse",
+    "kk": "/ˈænəlaɪz/",
+    "zh": "分析、解析",
+    "example": "Scientists analyse data to understand climate patterns.",
+    "exampleZh": "科學家分析數據以了解氣候 模式。"
+  },
+  {
+    "en": "ancestor",
+    "kk": "/ˈænsestər/",
+    "zh": "祖先、先輩",
+    "example": "Many Americans can trace their ancestors back to Europe.",
+    "exampleZh": "許多美國人可以追溯他們的祖 先到歐洲。"
+  },
+  {
+    "en": "ancient",
+    "kk": "/ˈeɪnʃənt/",
+    "zh": "古代的、古老的",
+    "example": "The ancient pyramids still fascinate tourists today.",
+    "exampleZh": "古代金字塔至今仍令遊客著迷。"
+  },
+  {
+    "en": "anger",
+    "kk": "/ˈæŋɡər/",
+    "zh": "憤怒、使生氣",
+    "example": "His anger quickly faded when he understood the situation.",
+    "exampleZh": "當他了解情況後，憤怒很快就消 退了。"
+  },
+  {
+    "en": "angle",
+    "kk": "/ˈæŋɡl/",
+    "zh": "角度、觀點",
+    "example": "Look at the problem from a difefrent angle.",
+    "exampleZh": "從不同的角度看這個問題。"
+  },
+  {
+    "en": "angry",
+    "kk": "/ˈæŋɡri/",
+    "zh": "生氣的、憤怒的",
+    "example": "She became angry when she heard the unfair decision.",
+    "exampleZh": "當她聽到不公平的決定時變得 憤怒。"
+  },
+  {
+    "en": "animal",
+    "kk": "/ˈænɪml/",
+    "zh": "動物",
+    "example": "Wild animals need protection from habitat destruction.",
+    "exampleZh": "野生動物需要保護免受棲息地破 壞。"
+  },
+  {
+    "en": "anniversary",
+    "kk": "/ˌænɪˈvɜːrsəri/",
+    "zh": "週年紀念日",
+    "example": "They celebrated their wedding anniversary with a romantic dinner.",
+    "exampleZh": "他們用浪漫晚餐慶祝結 婚週年紀念日。"
+  },
+  {
+    "en": "announce",
+    "kk": "/əˈnaʊns/",
+    "zh": "宣布、公布",
+    "example": "The company will announce the new product next week.",
+    "exampleZh": "公司將在下週宣布新產品。"
+  },
+  {
+    "en": "annoy",
+    "kk": "/əˈnɔɪ/",
+    "zh": "使煩惱、打擾",
+    "example": "Loud music from neighbors can annoy residents.",
+    "exampleZh": "鄰居大聲播放音樂可能會打擾居民。"
+  },
+  {
+    "en": "annual",
+    "kk": "/ˈænjuəl/",
+    "zh": "年度的、每年的",
+    "example": "The annual company picnic is scheduled for July.",
+    "exampleZh": "公司年度野餐安排在七月。"
+  },
+  {
+    "en": "another",
+    "kk": "/əˈnʌðər/",
+    "zh": "另一個、又一個",
+    "example": "Could I have another cup of cofefe, please?",
+    "exampleZh": "我可以再要一杯咖啡嗎？"
+  },
+  {
+    "en": "answer",
+    "kk": "/ˈænsər/",
+    "zh": "答案、回答",
+    "example": "She knew the answer to every question on the test.",
+    "exampleZh": "她知道考試中每個問題的答案。"
+  },
+  {
+    "en": "anticipate",
+    "kk": "/ænˈtɪsɪpeɪt/",
+    "zh": "預期、期待",
+    "example": "We anticipate heavy traffic during rush hour.",
+    "exampleZh": "我們預期在交通尖峰時間會很擁擠。"
+  },
+  {
+    "en": "anxiety",
+    "kk": "/æŋˈzaɪəti/",
+    "zh": "焦慮、擔心",
+    "example": "Many students experience anxiety before important exams.",
+    "exampleZh": "許多學生在重要考試前會感 到焦慮。"
+  },
+  {
+    "en": "anxious",
+    "kk": "/ˈæŋkʃəs/",
+    "zh": "焦慮的、急切的",
+    "example": "Parents often feel anxious when their children are late.",
+    "exampleZh": "當孩子遲到時，父母經常感到 焦慮。"
+  },
+  {
+    "en": "any",
+    "kk": "/ˈeni/",
+    "zh": "任何的、一些",
+    "example": "Do you have any questions about the assignment?",
+    "exampleZh": "你對作業有任何問題嗎？"
+  },
+  {
+    "en": "anybody",
+    "kk": "/ˈenibɑːdi/",
+    "zh": "任何人",
+    "example": "Anybody can learn to play the piano with practice.",
+    "exampleZh": "任何人通過練習都能學會彈鋼琴。"
+  },
+  {
+    "en": "anyhow",
+    "kk": "/ˈenihæʊ/",
+    "zh": "無論如何、不管怎樣",
+    "example": "The weather looks bad, but we're going anyhow.",
+    "exampleZh": "天氣看起來很糟，但我們無論如何都要 去。"
+  },
+  {
+    "en": "anyone",
+    "kk": "/ˈeniwʌn/",
+    "zh": "任何人、無論誰",
+    "example": "Anyone interested in joining should contact the office.",
+    "exampleZh": "任何有興趣參加的人都應該聯繫辦公 室。"
+  },
+  {
+    "en": "anything",
+    "kk": "/ˈeniθɪŋ/",
+    "zh": "任何事物",
+    "example": "Is there anything I can do to help you?",
+    "exampleZh": "有什 麼我可以幫助你的嗎？"
+  },
+  {
+    "en": "anyway",
+    "kk": "/ˈeniweɪ/",
+    "zh": "無論如何、不管怎樣",
+    "example": "I don't like horror movies, but I'll watch it anyway.",
+    "exampleZh": "我不喜歡恐怖電影，但無論如何我都會 看。"
+  },
+  {
+    "en": "anywhere",
+    "kk": "/ˈeniwer/",
+    "zh": "任何地方",
+    "example": "You can find this book anywhere online.",
+    "exampleZh": "你 可以在網上任何地方找到這本書。"
+  },
+  {
+    "en": "apart",
+    "kk": "/əˈpɑːrt/",
+    "zh": "分開地、分離地",
+    "example": "The two cities are 100 kilometers apart.",
+    "exampleZh": "這兩 個城市相距100公里。"
+  },
+  {
+    "en": "apartment",
+    "kk": "/əˈpɑːrtmənt/",
+    "zh": "公寓",
+    "example": "They moved into a new apartment near downtown.",
+    "exampleZh": "他們搬進了市中心附近的新公寓。"
+  },
+  {
+    "en": "apologize",
+    "kk": "/əˈpɑːlədʒaɪz/",
+    "zh": "道歉、認錯",
+    "example": "He should apologize for his rude behavior.",
+    "exampleZh": "他應該為自己的粗魯行為道歉。"
+  },
+  {
+    "en": "apparent",
+    "kk": "/əˈpærənt/",
+    "zh": "明顯的、顯然的",
+    "example": "It was apparent that she had been crying.",
+    "exampleZh": "很明顯她一直在哭。"
+  },
+  {
+    "en": "appeal",
+    "kk": "/əˈpiːl/",
+    "zh": "呼籲、吸引力",
+    "example": "The charity made an appeal for donations.",
+    "exampleZh": "慈善機構呼籲捐款。"
+  },
+  {
+    "en": "appear",
+    "kk": "/əˈpɪr/",
+    "zh": "出現、似乎",
+    "example": "A rainbow began to appear after the storm.",
+    "exampleZh": "暴風雨後開始出現彩虹。"
+  },
+  {
+    "en": "appearance",
+    "kk": "/əˈpɪrəns/",
+    "zh": "外表、出現",
+    "example": "Don't judge people by their appearance.",
+    "exampleZh": "不 要以貌取人。"
+  },
+  {
+    "en": "appetite",
+    "kk": "/ˈæpɪtaɪt/",
+    "zh": "食慾、胃口",
+    "example": "Exercise often increases your appetite.",
+    "exampleZh": "運動 經常會增加你的食慾。"
+  },
+  {
+    "en": "apple",
+    "kk": "/ˈæpl/",
+    "zh": "蘋果",
+    "example": "An apple a day keeps the doctor away.",
+    "exampleZh": "一天 一蘋果，醫生遠離我。"
+  },
+  {
+    "en": "application",
+    "kk": "/ˌæplɪˈkeɪʃn/",
+    "zh": "申請、應用",
+    "example": "She submitted her college application early.",
+    "exampleZh": "她提早提交了大學申請。"
+  },
+  {
+    "en": "apply",
+    "kk": "/əˈplaɪ/",
+    "zh": "申請、應用",
+    "example": "Students must apply for scholarships before the deadline.",
+    "exampleZh": "學生必須在截止日期前申請獎學 金。"
+  },
+  {
+    "en": "appoint",
+    "kk": "/əˈpɔɪnt/",
+    "zh": "任命、約定",
+    "example": "The board will appoint a new CEO next month.",
+    "exampleZh": "董事會將在下個月任命新的首席執行 官。"
+  },
+  {
+    "en": "appreciate",
+    "kk": "/əˈpriːʃieɪt/",
+    "zh": "欣賞、感激",
+    "example": "I appreciate your help with this difficult project.",
+    "exampleZh": "我感激你在這個困難項目上的幫助。"
+  },
+  {
+    "en": "approach",
+    "kk": "/əˈproʊtʃ/",
+    "zh": "接近、方法",
+    "example": "We need a new approach to solve this problem.",
+    "exampleZh": "我們需要新的方法來解決這個問題。"
+  },
+  {
+    "en": "appropriate",
+    "kk": "/əˈproʊpriət/",
+    "zh": "適當的、合適的",
+    "example": "Please wear appropriate clothing for the formal dinner.",
+    "exampleZh": "請為正式晚餐穿著合適的服裝。"
+  },
+  {
+    "en": "approve",
+    "kk": "/əˈpruːv/",
+    "zh": "批准、贊成",
+    "example": "The committee will approve the budget proposal tomorrow.",
+    "exampleZh": "委員會明天將批准預算提 案。"
+  },
+  {
+    "en": "approximately",
+    "kk": "/əˈprɑːksɪmətli/",
+    "zh": "大約、近似地",
+    "example": "The trip will take approximately three hours.",
+    "exampleZh": "這次旅行大約需要三個小時。"
+  },
+  {
+    "en": "architect",
+    "kk": "/ˈɑːrkɪtekt/",
+    "zh": "建築師",
+    "example": "The famous architect designed many beautiful buildings.",
+    "exampleZh": "著名建築師設計了許多美 麗的建築。"
+  },
+  {
+    "en": "area",
+    "kk": "/ˈeriə/",
+    "zh": "地區、面積",
+    "example": "This area is known for its excellent restaurants.",
+    "exampleZh": "這個地區以其優秀的餐廳而聞名。"
+  },
+  {
+    "en": "argue",
+    "kk": "/ˈɑːrɡjuː/",
+    "zh": "爭論、辯論",
+    "example": "They often argue about politics at family dinners.",
+    "exampleZh": "他們經常在家庭聚餐時為政治爭論。"
+  },
+  {
+    "en": "argument",
+    "kk": "/ˈɑːrɡjumənt/",
+    "zh": "爭論、論據",
+    "example": "His argument for renewable energy was convincing.",
+    "exampleZh": "他支持可再生能源的論據很有說服 力。"
+  },
+  {
+    "en": "arise",
+    "kk": "/əˈraɪz/",
+    "zh": "出現、產生",
+    "example": "New opportunities often arise from unexpected situations.",
+    "exampleZh": "新機會經常從意想不到 的情況中產生。"
+  },
+  {
+    "en": "arm",
+    "kk": "/ɑːrm/",
+    "zh": "手臂、武器",
+    "example": "She broke her arm while skiing last winter.",
+    "exampleZh": "她 去年冬天滑雪時摔斷了手臂。"
+  },
+  {
+    "en": "army",
+    "kk": "/ˈɑːrmi/",
+    "zh": "軍隊、大批",
+    "example": "The army was deployed to help with disaster relief.",
+    "exampleZh": "軍隊被派遣幫助救災。"
+  },
+  {
+    "en": "around",
+    "kk": "/əˈraʊnd/",
+    "zh": "在...周圍、大約",
+    "example": "There are many shops around the central square.",
+    "exampleZh": "中央廣場周圍有許多商店。"
+  },
+  {
+    "en": "arrange",
+    "kk": "/əˈreɪndʒ/",
+    "zh": "安排、整理",
+    "example": "Please arrange the chairs in a circle for the meeting.",
+    "exampleZh": "請為會議將椅子排成圓圈。"
+  },
+  {
+    "en": "arrest",
+    "kk": "/əˈrest/",
+    "zh": "逮捕、拘留",
+    "example": "Police will arrest anyone caught stealing.",
+    "exampleZh": "警 察會逮捕任何被發現偷竊的人。"
+  },
+  {
+    "en": "arrive",
+    "kk": "/əˈraɪv/",
+    "zh": "到達、抵達",
+    "example": "The train is scheduled to arrive at 3:30 PM.",
+    "exampleZh": "火車預定下午3:30到達。"
+  },
+  {
+    "en": "arrow",
+    "kk": "/ˈæroʊ/",
+    "zh": "箭、箭頭",
+    "example": "Follow the arrow signs to reach the exit.",
+    "exampleZh": "跟著 箭頭標誌到達出口。"
+  },
+  {
+    "en": "art",
+    "kk": "/ɑːrt/",
+    "zh": "藝術、美術",
+    "example": "She studied art history at the university.",
+    "exampleZh": "她在 大學學習藝術史。"
+  },
+  {
+    "en": "article",
+    "kk": "/ˈɑːrtɪkl/",
+    "zh": "文章、物品",
+    "example": "I read an interesting article about climate change.",
+    "exampleZh": "我讀了一篇關於氣候變化的有趣文章。"
+  },
+  {
+    "en": "artificial",
+    "kk": "/ˌɑːrtɪˈfɪʃl/",
+    "zh": "人工的、人造的",
+    "example": "Artificial intelligence is changing many industries.",
+    "exampleZh": "人工智能正在改變許多行業。"
+  },
+  {
+    "en": "artist",
+    "kk": "/ˈɑːrtɪst/",
+    "zh": "藝術家、畫家",
+    "example": "The young artist displayed her paintings in the gallery.",
+    "exampleZh": "年輕藝術家在畫廊展示她的畫作。"
+  },
+  {
+    "en": "as",
+    "kk": "/æz/",
+    "zh": "作為、當...時",
+    "example": "She works as a teacher at the local school.",
+    "exampleZh": "她在當地學校當老師。"
+  },
+  {
+    "en": "ash",
+    "kk": "/æʃ/",
+    "zh": "灰燼、灰",
+    "example": "The volcano covered the city with ash.",
+    "exampleZh": "火山 用灰燼覆蓋了城市。"
+  },
+  {
+    "en": "ashamed",
+    "kk": "/əˈʃeɪmd/",
+    "zh": "羞愧的、慚愧的",
+    "example": "He felt ashamed of his poor performance.",
+    "exampleZh": "他 為自己糟糕的表現感到羞愧。"
+  },
+  {
+    "en": "aside",
+    "kk": "/əˈsaɪd/",
+    "zh": "在一邊、除...外",
+    "example": "Please set your phones aside during the meeting.",
+    "exampleZh": "會議期間請將手機放在一邊。"
+  },
+  {
+    "en": "ask",
+    "kk": "/æsk/",
+    "zh": "問、請求",
+    "example": "Students should ask questions when they don't understand.",
+    "exampleZh": "學生不懂時應該問問題。"
+  },
+  {
+    "en": "asleep",
+    "kk": "/əˈsliːp/",
+    "zh": "睡著的",
+    "example": "The baby fell asleep in her mother's arms.",
+    "exampleZh": "嬰 兒在母親的懷抱中睡著了。"
+  },
+  {
+    "en": "aspect",
+    "kk": "/ˈæspekt/",
+    "zh": "方面、層面",
+    "example": "We need to consider every aspect of the problem.",
+    "exampleZh": "我們需要考慮問題的每個方面。"
+  },
+  {
+    "en": "assess",
+    "kk": "/əˈses/",
+    "zh": "評估、評價",
+    "example": "Teachers assess students' progress throughout the semester.",
+    "exampleZh": "老師在整個學期中評 估學生的進步。"
+  },
+  {
+    "en": "asset",
+    "kk": "/ˈæset/",
+    "zh": "資產、有價值的東西",
+    "example": "Good communication skills are a valuable asset.",
+    "exampleZh": "良好的溝通技巧是寶貴的資產。"
+  },
+  {
+    "en": "assign",
+    "kk": "/əˈsaɪn/",
+    "zh": "分配、指派",
+    "example": "The teacher will assign homework every Friday.",
+    "exampleZh": "老師每個星期五都會分配作業。"
+  },
+  {
+    "en": "assist",
+    "kk": "/əˈsɪst/",
+    "zh": "協助、幫助",
+    "example": "Volunteers assist visitors at the information desk.",
+    "exampleZh": "志工在諮詢台協助訪客。"
+  },
+  {
+    "en": "assistant",
+    "kk": "/əˈsɪstənt/",
+    "zh": "助手、助理",
+    "example": "The manager's assistant scheduled all the meetings.",
+    "exampleZh": "經理的助理安排了所有會議。"
+  },
+  {
+    "en": "associate",
+    "kk": "/əˈsoʊʃieɪt/",
+    "zh": "聯想、合夥人",
+    "example": "People often associate red roses with love.",
+    "exampleZh": "人們經常將紅玫瑰與愛情聯想在一起。"
+  },
+  {
+    "en": "association",
+    "kk": "/əˌsoʊʃiˈeɪʃn/",
+    "zh": "協會、聯想",
+    "example": "She joined the teachers' association last year.",
+    "exampleZh": "她去年加入了教師協會。"
+  },
+  {
+    "en": "assume",
+    "kk": "/əˈsuːm/",
+    "zh": "假設、承擔",
+    "example": "Don't assume that everyone agrees with your opinion.",
+    "exampleZh": "不要假設每個人都同意你的觀點。"
+  },
+  {
+    "en": "assure",
+    "kk": "/əˈʃʊr/",
+    "zh": "保證、使確信",
+    "example": "The doctor assured the patient that the surgery was safe.",
+    "exampleZh": "醫生向病人保證手術是安全 的。"
+  },
+  {
+    "en": "astonish",
+    "kk": "/əˈstɑːnɪʃ/",
+    "zh": "使驚訝、使震驚",
+    "example": "The magician's performance will astonish the audience.",
+    "exampleZh": "魔術師的表演會讓觀眾感到驚訝。"
+  },
+  {
+    "en": "athlete",
+    "kk": "/ˈæθliːt/",
+    "zh": "運動員",
+    "example": "The athlete trained for hours every day.",
+    "exampleZh": "這位 運動員每天訓練數小時。"
+  },
+  {
+    "en": "atmosphere",
+    "kk": "/ˈætməsfɪr/",
+    "zh": "大氣、氣氛",
+    "example": "The restaurant has a romantic atmosphere.",
+    "exampleZh": "這家餐廳有浪漫的氣氛。"
+  },
+  {
+    "en": "atom",
+    "kk": "/ˈætəm/",
+    "zh": "原子",
+    "example": "Everything is made up of tiny particles called atoms.",
+    "exampleZh": "萬物都由稱為原子的微小粒子組成。"
+  },
+  {
+    "en": "attach",
+    "kk": "/əˈtætʃ/",
+    "zh": "附加、連接",
+    "example": "Please attach your resume to the email.",
+    "exampleZh": "請將 履歷附加到電子郵件中。"
+  },
+  {
+    "en": "attack",
+    "kk": "/əˈtæk/",
+    "zh": "攻擊、襲擊",
+    "example": "The castle was built to defend against enemy attacks.",
+    "exampleZh": "城堡是為了防禦敵人攻擊而建造的。"
+  },
+  {
+    "en": "attempt",
+    "kk": "/əˈtempt/",
+    "zh": "嘗試、企圖",
+    "example": "She made several attempts to contact him.",
+    "exampleZh": "她多次嘗試聯繫他。"
+  },
+  {
+    "en": "attend",
+    "kk": "/əˈtend/",
+    "zh": "出席、參加",
+    "example": "All students must attend the mandatory meeting.",
+    "exampleZh": "所有學生都必須參加強制性會議。"
+  },
+  {
+    "en": "attention",
+    "kk": "/əˈtenʃn/",
+    "zh": "注意力、關注",
+    "example": "Please pay attention to the safety instructions.",
+    "exampleZh": "請注意安全說明。"
+  },
+  {
+    "en": "attitude",
+    "kk": "/ˈætɪtuːd/",
+    "zh": "態度、看法",
+    "example": "A positive attitude can make a big difefrence.",
+    "exampleZh": "積極的態度可以產生很大的不同。"
+  },
+  {
+    "en": "attract",
+    "kk": "/əˈtrækt/",
+    "zh": "吸引、招引",
+    "example": "Bright colors attract attention from a distance.",
+    "exampleZh": "鮮豔的顏色從遠處就能吸引注意力。"
+  },
+  {
+    "en": "attraction",
+    "kk": "/əˈtrækʃn/",
+    "zh": "吸引力、景點",
+    "example": "The museum is a popular tourist attraction.",
+    "exampleZh": "博物館是熱門的旅遊景點。"
+  },
+  {
+    "en": "attractive",
+    "kk": "/əˈtræktɪv/",
+    "zh": "有吸引力的、迷人的",
+    "example": "The job ofefr includes many attractive benefits.",
+    "exampleZh": "這個工作機會包括許多吸引人的福 利。"
+  },
+  {
+    "en": "auction",
+    "kk": "/ˈɔːkʃn/",
+    "zh": "拍賣、競賣",
+    "example": "The painting was sold at auction for a high price.",
+    "exampleZh": "這幅畫在拍賣會上以高價售出。"
+  },
+  {
+    "en": "audience",
+    "kk": "/ˈɔːdiəns/",
+    "zh": "觀眾、聽眾",
+    "example": "The audience applauded loudly after the performance.",
+    "exampleZh": "表演結束後觀眾大聲鼓掌。"
+  },
+  {
+    "en": "author",
+    "kk": "/ˈɔːθər/",
+    "zh": "作者、作家",
+    "example": "The author will sign books at the bookstore tonight.",
+    "exampleZh": "作者今晚將在書店簽書。"
+  },
+  {
+    "en": "authority",
+    "kk": "/əˈθɔːrəti/",
+    "zh": "權威、當局",
+    "example": "The local authority issued new traffic regulations.",
+    "exampleZh": "地方當局發布了新的交通規定。"
+  },
+  {
+    "en": "automatic",
+    "kk": "/ˌɔːtəˈmætɪk/",
+    "zh": "自動的、機械的",
+    "example": "The automatic door opens when you approach.",
+    "exampleZh": "自動門在你靠近時會打開。"
+  },
+  {
+    "en": "automobile",
+    "kk": "/ˈɔːtəməbiːl/",
+    "zh": "汽車",
+    "example": "The automobile industry is embracing electric vehicles.",
+    "exampleZh": "汽車工業正在擁抱電動汽車。"
+  },
+  {
+    "en": "autumn",
+    "kk": "/ˈɔːtəm/",
+    "zh": "秋天、秋季",
+    "example": "The leaves change color in autumn.",
+    "exampleZh": "樹葉在秋 天變色。"
+  },
+  {
+    "en": "available",
+    "kk": "/əˈveɪləbl/",
+    "zh": "可得到的、有空的",
+    "example": "The doctor is available for appointments on weekdays.",
+    "exampleZh": "醫生在工作日可以預約。"
+  },
+  {
+    "en": "avenue",
+    "kk": "/ˈævənuː/",
+    "zh": "大街、途徑",
+    "example": "The main shopping avenue is always crowded.",
+    "exampleZh": "主要購物大街總是很擁擠。"
+  },
+  {
+    "en": "average",
+    "kk": "/ˈævərɪdʒ/",
+    "zh": "平均、普通的",
+    "example": "The average temperature in July is 25 degrees.",
+    "exampleZh": "七月的平均氣溫是25度。"
+  },
+  {
+    "en": "avoid",
+    "kk": "/əˈvɔɪd/",
+    "zh": "避免、迴避",
+    "example": "Try to avoid eating too much sugar.",
+    "exampleZh": "盡量避免 吃太多糖。"
+  },
+  {
+    "en": "awake",
+    "kk": "/əˈweɪk/",
+    "zh": "醒著的、喚醒",
+    "example": "The loud noise kept me awake all night.",
+    "exampleZh": "巨大 的噪音讓我整夜無法入睡。"
+  },
+  {
+    "en": "award",
+    "kk": "/əˈwɔːrd/",
+    "zh": "獎勵、頒獎",
+    "example": "She received an award for her outstanding research.",
+    "exampleZh": "她因出色的研究獲得了獎勵。"
+  },
+  {
+    "en": "aware",
+    "kk": "/əˈwer/",
+    "zh": "意識到的、知道的",
+    "example": "Students should be aware of the deadline for applications.",
+    "exampleZh": "學生應該知道申請的截止日期。"
+  },
+  {
+    "en": "away",
+    "kk": "/əˈweɪ/",
+    "zh": "離開、遠離",
+    "example": "The children played away from the busy street.",
+    "exampleZh": "孩子們在遠離繁忙街道的地方玩耍。"
+  },
+  {
+    "en": "awful",
+    "kk": "/ˈɔːfl/",
+    "zh": "可怕的、極糟的",
+    "example": "The weather was awful during our vacation.",
+    "exampleZh": "我們度假期間天氣極其糟糕。"
+  },
+  {
+    "en": "back",
+    "kk": "/bæk/",
+    "zh": "背部、返回、支持",
+    "example": "Please sit back and relax during the flight.",
+    "exampleZh": "飛行期間請坐好並放鬆。"
+  },
+  {
+    "en": "background",
+    "kk": "/ˈbækɡraʊnd/",
+    "zh": "背景、出身",
+    "example": "His background in engineering helped him solve the problem.",
+    "exampleZh": "他的工程背景幫助他解決了 問題。"
+  },
+  {
+    "en": "backward",
+    "kk": "/ˈbækwərd/",
+    "zh": "向後的、落後的",
+    "example": "The car rolled backward down the hill.",
+    "exampleZh": "汽車 向後滾下山坡。"
+  },
+  {
+    "en": "bacteria",
+    "kk": "/bækˈtɪriə/",
+    "zh": "細菌",
+    "example": "Washing hands removes harmful bacteria.",
+    "exampleZh": "洗手可以去除有害細菌。"
+  },
+  {
+    "en": "bad",
+    "kk": "/bæd/",
+    "zh": "壞的、糟糕的",
+    "example": "Smoking is bad for your health.",
+    "exampleZh": "吸煙對健康有 害。"
+  },
+  {
+    "en": "badly",
+    "kk": "/ˈbædli/",
+    "zh": "嚴重地、糟糕地",
+    "example": "The team played badly in the championship game.",
+    "exampleZh": "球隊在冠軍賽中表現糟糕。"
+  },
+  {
+    "en": "bag",
+    "kk": "/bæɡ/",
+    "zh": "袋子、包",
+    "example": "She carried her books in a large bag.",
+    "exampleZh": "她用一 個大袋子裝書。"
+  },
+  {
+    "en": "baggage",
+    "kk": "/ˈbæɡɪdʒ/",
+    "zh": "行李",
+    "example": "Passengers must check their baggage before boarding.",
+    "exampleZh": "乘客登機前必須檢查行李。"
+  },
+  {
+    "en": "bake",
+    "kk": "/beɪk/",
+    "zh": "烘烤、烘焙",
+    "example": "She likes to bake cookies for her children.",
+    "exampleZh": "她 喜歡為孩子們烘焙餅乾。"
+  },
+  {
+    "en": "balance",
+    "kk": "/ˈbæləns/",
+    "zh": "平衡、餘額",
+    "example": "It's important to balance work and family life.",
+    "exampleZh": "平衡工作和家庭生活很重要。"
+  },
+  {
+    "en": "ball",
+    "kk": "/bɔːl/",
+    "zh": "球、舞會",
+    "example": "The children played with a colorful ball in the park.",
+    "exampleZh": "孩子們在公園裡玩彩色球。"
+  },
+  {
+    "en": "ban",
+    "kk": "/bæn/",
+    "zh": "禁止、禁令",
+    "example": "The city will ban smoking in all public places.",
+    "exampleZh": "該市將禁止在所有公共場所吸煙。"
+  },
+  {
+    "en": "band",
+    "kk": "/bænd/",
+    "zh": "樂隊、帶子",
+    "example": "The rock band performed at the music festival.",
+    "exampleZh": "搖滾樂隊在音樂節上演出。"
+  },
+  {
+    "en": "bank",
+    "kk": "/bæŋk/",
+    "zh": "銀行、河岸",
+    "example": "She deposited her paycheck at the bank.",
+    "exampleZh": "她 在銀行存了薪水。"
+  },
+  {
+    "en": "bar",
+    "kk": "/bɑːr/",
+    "zh": "酒吧、條狀物",
+    "example": "They met at the bar after work for drinks.",
+    "exampleZh": "他 們下班後在酒吧喝酒。"
+  },
+  {
+    "en": "bare",
+    "kk": "/ber/",
+    "zh": "裸露的、基本的",
+    "example": "The room was bare except for a single chair.",
+    "exampleZh": "房間裡除了一把椅子外什麼都沒有。"
+  },
+  {
+    "en": "barely",
+    "kk": "/ˈberli/",
+    "zh": "僅僅、幾乎不",
+    "example": "She barely had enough money to buy lunch.",
+    "exampleZh": "她幾乎沒有足夠的錢買午餐。"
+  },
+  {
+    "en": "bargain",
+    "kk": "/ˈbɑːrɡən/",
+    "zh": "便宜貨、討價還價",
+    "example": "The antique was a real bargain at that price.",
+    "exampleZh": "那個古董以那個價格真是便宜貨。"
+  },
+  {
+    "en": "bark",
+    "kk": "/bɑːrk/",
+    "zh": "樹皮、吠叫",
+    "example": "The dog began to bark when strangers approached.",
+    "exampleZh": "當陌生人靠近時狗開始吠叫。"
+  },
+  {
+    "en": "barrier",
+    "kk": "/ˈbæriər/",
+    "zh": "障礙、屏障",
+    "example": "Language can be a barrier to communication.",
+    "exampleZh": "語言可能是溝通的障礙。"
+  },
+  {
+    "en": "base",
+    "kk": "/beɪs/",
+    "zh": "基礎、建立在",
+    "example": "Success is often based on hard work and dedication.",
+    "exampleZh": "成功通常建立在努力工作和奉獻的 基礎上。"
+  },
+  {
+    "en": "basic",
+    "kk": "/ˈbeɪsɪk/",
+    "zh": "基本的、基礎的",
+    "example": "Learning basic grammar is essential for language study.",
+    "exampleZh": "學習基本語法對語言學習至關 重要。"
+  },
+  {
+    "en": "basketball",
+    "kk": "/ˈbæskɪtbɔːl/",
+    "zh": "籃球",
+    "example": "They played basketball every evening in the gym.",
+    "exampleZh": "他們每天晚上在體育館打籃球。"
+  },
+  {
+    "en": "bat",
+    "kk": "/bæt/",
+    "zh": "蝙蝠、球棒",
+    "example": "The baseball player swung the bat with great force.",
+    "exampleZh": "棒球選手用力揮舞球棒。"
+  },
+  {
+    "en": "bath",
+    "kk": "/bæθ/",
+    "zh": "洗澡、浴缸",
+    "example": "A hot bath helps relax tired muscles.",
+    "exampleZh": "熱水澡 有助於放鬆疲勞的肌肉。"
+  },
+  {
+    "en": "bathroom",
+    "kk": "/ˈbæθruːm/",
+    "zh": "浴室、洗手間",
+    "example": "The hotel bathroom was clean and modern.",
+    "exampleZh": "酒店浴室乾淨且現代化。"
+  },
+  {
+    "en": "battery",
+    "kk": "/ˈbætəri/",
+    "zh": "電池、電瓶",
+    "example": "The car won't start because the battery is dead.",
+    "exampleZh": "汽車發動不了因為電瓶沒電了。"
+  },
+  {
+    "en": "battle",
+    "kk": "/ˈbætl/",
+    "zh": "戰鬥、鬥爭",
+    "example": "Soldiers battled bravely to defend their homeland.",
+    "exampleZh": "士兵們勇敢戰鬥保衛家園。"
+  },
+  {
+    "en": "be",
+    "kk": "/biː/",
+    "zh": "是、存在",
+    "example": "Everyone wants to be happy and successful.",
+    "exampleZh": "每個人都想要快樂和成功。"
+  },
+  {
+    "en": "beach",
+    "kk": "/biːtʃ/",
+    "zh": "海灘、沙灘",
+    "example": "Families enjoyed swimming at the sandy beach.",
+    "exampleZh": "家庭在沙灘上享受游泳。"
+  },
+  {
+    "en": "bean",
+    "kk": "/biːn/",
+    "zh": "豆子、豆類",
+    "example": "Cofefe beans are roasted before grinding.",
+    "exampleZh": "咖 啡豆在研磨前要烘焙。"
+  },
+  {
+    "en": "bear",
+    "kk": "/ber/",
+    "zh": "熊、承受",
+    "example": "The old bridge cannot bear the weight of heavy trucks.",
+    "exampleZh": "舊橋無法承受重型卡車的重量。"
+  },
+  {
+    "en": "beard",
+    "kk": "/bɪrd/",
+    "zh": "鬍須",
+    "example": "The old man had a long white beard.",
+    "exampleZh": "老人有 一把長長的白鬍子。"
+  },
+  {
+    "en": "beast",
+    "kk": "/biːst/",
+    "zh": "野獸、牲畜",
+    "example": "The legend tells of a terrible beast in the forest.",
+    "exampleZh": "傳說講述了森林中可怕的野獸。"
+  },
+  {
+    "en": "beat",
+    "kk": "/biːt/",
+    "zh": "打敗、節拍",
+    "example": "Our team will beat the opponents in tomorrow's game.",
+    "exampleZh": "我們的隊伍明天會在比賽中 打敗對手。"
+  },
+  {
+    "en": "beautiful",
+    "kk": "/ˈbjuːtɪfl/",
+    "zh": "美麗的、漂亮的",
+    "example": "The sunset over the mountains was truly beautiful.",
+    "exampleZh": "山上的日落真的很美麗。"
+  },
+  {
+    "en": "beauty",
+    "kk": "/ˈbjuːti/",
+    "zh": "美麗、美人",
+    "example": "The beauty of nature always amazes visitors.",
+    "exampleZh": "大自然的美麗總是讓遊客驚嘆。"
+  },
+  {
+    "en": "because",
+    "kk": "/bɪˈkɔːz/",
+    "zh": "因為、由於",
+    "example": "She stayed home because she was feeling sick.",
+    "exampleZh": "她待在家裡因為感覺不舒服。"
+  },
+  {
+    "en": "become",
+    "kk": "/bɪˈkʌm/",
+    "zh": "變成、成為",
+    "example": "Hard work can help you become successful.",
+    "exampleZh": "努力工作可以幫助你成功。"
+  },
+  {
+    "en": "bed",
+    "kk": "/bed/",
+    "zh": "床、河床",
+    "example": "The tired children went straight to bed.",
+    "exampleZh": "疲倦 的孩子們直接上床睡覺。"
+  },
+  {
+    "en": "bedroom",
+    "kk": "/ˈbedruːm/",
+    "zh": "臥室、睡房",
+    "example": "The house has three comfortable bedrooms.",
+    "exampleZh": "這棟房子有三間舒適的臥室。"
+  },
+  {
+    "en": "bee",
+    "kk": "/biː/",
+    "zh": "蜜蜂",
+    "example": "Bees collect nectar to make honey.",
+    "exampleZh": "蜜蜂採集 花蜜製造蜂蜜。"
+  },
+  {
+    "en": "beef",
+    "kk": "/biːf/",
+    "zh": "牛肉",
+    "example": "The restaurant serves excellent grilled beef.",
+    "exampleZh": "這家餐廳提供優質的烤牛肉。"
+  },
+  {
+    "en": "beer",
+    "kk": "/bɪr/",
+    "zh": "啤酒",
+    "example": "Friends gathered to share beer and conversation.",
+    "exampleZh": "朋友們聚在一起分享啤酒和談 話。"
+  },
+  {
+    "en": "before",
+    "kk": "/bɪˈfɔːr/",
+    "zh": "在...之前、以前",
+    "example": "Please finish your homework before watching TV.",
+    "exampleZh": "看電視前請先完成作業。"
+  },
+  {
+    "en": "beg",
+    "kk": "/beɡ/",
+    "zh": "乞求、懇求",
+    "example": "The homeless man had to beg for money.",
+    "exampleZh": "無 家可歸的人不得不乞討錢財。"
+  },
+  {
+    "en": "begin",
+    "kk": "/bɪˈɡɪn/",
+    "zh": "開始、著手",
+    "example": "The concert will begin at eight o'clock sharp.",
+    "exampleZh": "音樂會將在八點整開始。"
+  },
+  {
+    "en": "beginning",
+    "kk": "/bɪˈɡɪnɪŋ/",
+    "zh": "開始、起初",
+    "example": "The beginning of the story was very exciting.",
+    "exampleZh": "故事的開頭非常令人興奮。"
+  },
+  {
+    "en": "behave",
+    "kk": "/bɪˈheɪv/",
+    "zh": "表現、行為",
+    "example": "Children should behave properly in public places.",
+    "exampleZh": "兒童在公共場所應該表現得當。"
+  },
+  {
+    "en": "behavior",
+    "kk": "/bɪˈheɪvjər/",
+    "zh": "行為、舉止",
+    "example": "Good behavior is expected from all students.",
+    "exampleZh": "所有學生都應該有良好的行為。"
+  },
+  {
+    "en": "behind",
+    "kk": "/bɪˈhaɪnd/",
+    "zh": "在...後面、落後",
+    "example": "The shy child hid behind her mother.",
+    "exampleZh": "害羞的 孩子躲在媽媽後面。"
+  },
+  {
+    "en": "being",
+    "kk": "/ˈbiːɪŋ/",
+    "zh": "存在、生物",
+    "example": "Every living being deserves respect and care.",
+    "exampleZh": "每個生物都值得尊重和關懷。"
+  },
+  {
+    "en": "belief",
+    "kk": "/bɪˈliːf/",
+    "zh": "信念、相信",
+    "example": "His belief in hard work led to success.",
+    "exampleZh": "他對努 力工作的信念導致了成功。"
+  },
+  {
+    "en": "believe",
+    "kk": "/bɪˈliːv/",
+    "zh": "相信、認為",
+    "example": "I believe that education is very important.",
+    "exampleZh": "我相信教育非常重要。"
+  },
+  {
+    "en": "bell",
+    "kk": "/bel/",
+    "zh": "鈴、鐘",
+    "example": "The school bell rings every hour.",
+    "exampleZh": "學校的鈴每 小時響一次。"
+  },
+  {
+    "en": "belong",
+    "kk": "/bɪˈlɔːŋ/",
+    "zh": "屬於、歸屬",
+    "example": "These books belong to the library.",
+    "exampleZh": "這些書屬 於圖書館。"
+  },
+  {
+    "en": "below",
+    "kk": "/bɪˈloʊ/",
+    "zh": "在...下面、以下",
+    "example": "The temperature dropped below freezing last night.",
+    "exampleZh": "昨晚氣溫降到冰點以下。"
+  },
+  {
+    "en": "belt",
+    "kk": "/belt/",
+    "zh": "皮帶、地帶",
+    "example": "He wore a leather belt with his formal suit.",
+    "exampleZh": "他穿正裝時繫了皮帶。"
+  },
+  {
+    "en": "bench",
+    "kk": "/bentʃ/",
+    "zh": "長椅、工作台",
+    "example": "Old people sat on the bench feeding pigeons.",
+    "exampleZh": "老人們坐在長椅上餵鴿子。"
+  },
+  {
+    "en": "bend",
+    "kk": "/bend/",
+    "zh": "彎曲、轉彎",
+    "example": "The road bends sharply to the left ahead.",
+    "exampleZh": "前 方道路急劇向左彎曲。"
+  },
+  {
+    "en": "benefit",
+    "kk": "/ˈbenɪfɪt/",
+    "zh": "利益、受益",
+    "example": "Regular exercise has many health benefits.",
+    "exampleZh": "定期運動對健康有許多好處。"
+  },
+  {
+    "en": "beside",
+    "kk": "/bɪˈsaɪd/",
+    "zh": "在...旁邊、除了",
+    "example": "She sat beside her best friend during lunch.",
+    "exampleZh": "午餐時她坐在最好朋友旁邊。"
+  },
+  {
+    "en": "besides",
+    "kk": "/bɪˈsaɪdz/",
+    "zh": "除了、此外",
+    "example": "Besides studying, she also works part-time.",
+    "exampleZh": "除了學習，她還兼職工作。"
+  },
+  {
+    "en": "best",
+    "kk": "/best/",
+    "zh": "最好的、最佳地",
+    "example": "This is the best restaurant in the city.",
+    "exampleZh": "這是城 裡最好的餐廳。"
+  },
+  {
+    "en": "bet",
+    "kk": "/bet/",
+    "zh": "打賭、賭注",
+    "example": "I bet it will rain tomorrow afternoon.",
+    "exampleZh": "我打賭 明天下午會下雨。"
+  },
+  {
+    "en": "better",
+    "kk": "/ˈbetər/",
+    "zh": "更好的、更好地",
+    "example": "Practice makes your English better every day.",
+    "exampleZh": "練習讓你的英語每天都更好。"
+  },
+  {
+    "en": "between",
+    "kk": "/bɪˈtwiːn/",
+    "zh": "在...之間",
+    "example": "The meeting is scheduled between 2 and 4 PM.",
+    "exampleZh": "會議安排在下午2點到4點之間。"
+  },
+  {
+    "en": "beyond",
+    "kk": "/bɪˈjɑːnd/",
+    "zh": "超過、在...之外",
+    "example": "The mountain peak is beyond the clouds.",
+    "exampleZh": "山 峰在雲層之外。"
+  },
+  {
+    "en": "bicycle",
+    "kk": "/ˈbaɪsɪkl/",
+    "zh": "自行車、腳踏車",
+    "example": "She rides her bicycle to work every morning.",
+    "exampleZh": "她每天早上騎自行車上班。"
+  },
+  {
+    "en": "bid",
+    "kk": "/bɪd/",
+    "zh": "出價、投標",
+    "example": "The company bid for the construction contract.",
+    "exampleZh": "公司為建築合同投標。"
+  },
+  {
+    "en": "big",
+    "kk": "/bɪɡ/",
+    "zh": "大的、重要的",
+    "example": "The big decision changed her entire life.",
+    "exampleZh": "這個 重大決定改變了她的整個人生。"
+  },
+  {
+    "en": "bill",
+    "kk": "/bɪl/",
+    "zh": "帳單、法案",
+    "example": "The electricity bill arrives every month.",
+    "exampleZh": "電費 帳單每月都會到。"
+  },
+  {
+    "en": "billion",
+    "kk": "/ˈbɪljən/",
+    "zh": "十億",
+    "example": "The company is worth several billion dollars.",
+    "exampleZh": "這家公司價值數十億美元。"
+  },
+  {
+    "en": "bind",
+    "kk": "/baɪnd/",
+    "zh": "綁定、裝訂",
+    "example": "The contract will bind both parties to the agreement.",
+    "exampleZh": "合同將約束雙方遵守協議。"
+  },
+  {
+    "en": "biology",
+    "kk": "/baɪˈɑːlədʒi/",
+    "zh": "生物學",
+    "example": "She studies biology to understand living organisms.",
+    "exampleZh": "她學習生物學以了解生物體。"
+  },
+  {
+    "en": "bird",
+    "kk": "/bɜːrd/",
+    "zh": "鳥類",
+    "example": "Many birds migrate south during winter.",
+    "exampleZh": "許多 鳥類在冬季向南遷徙。"
+  },
+  {
+    "en": "birth",
+    "kk": "/bɜːrθ/",
+    "zh": "出生、誕生",
+    "example": "The birth of their frist child was exciting.",
+    "exampleZh": "他 們第一個孩子的出生令人興奮。"
+  },
+  {
+    "en": "birthday",
+    "kk": "/ˈbɜːrθdeɪ/",
+    "zh": "生日",
+    "example": "We celebrated her birthday with a big party.",
+    "exampleZh": "我們舉辦了盛大派對慶祝她的生日。"
+  },
+  {
+    "en": "bit",
+    "kk": "/bɪt/",
+    "zh": "一點、小片",
+    "example": "Could you move over just a bit?",
+    "exampleZh": "你能稍微挪 一下嗎？"
+  },
+  {
+    "en": "bite",
+    "kk": "/baɪt/",
+    "zh": "咬、叮",
+    "example": "The mosquito bite made her arm itchy.",
+    "exampleZh": "蚊子 叮咬讓她的手臂發癢。"
+  },
+  {
+    "en": "bitter",
+    "kk": "/ˈbɪtər/",
+    "zh": "苦的、痛苦的",
+    "example": "The medicine tastes very bitter.",
+    "exampleZh": "這藥嚐起來 很苦。"
+  },
+  {
+    "en": "black",
+    "kk": "/blæk/",
+    "zh": "黑色的、黑色",
+    "example": "She wore a black dress to the formal dinner.",
+    "exampleZh": "她穿了一件黑色禮服參加正式晚餐。"
+  },
+  {
+    "en": "blade",
+    "kk": "/bleɪd/",
+    "zh": "刀片、葉片",
+    "example": "The knife blade was very sharp.",
+    "exampleZh": "刀片非常鋒 利。"
+  },
+  {
+    "en": "blame",
+    "kk": "/bleɪm/",
+    "zh": "責備、歸咎",
+    "example": "Don't blame yourself for the accident.",
+    "exampleZh": "不要為 這次事故責備自己。"
+  },
+  {
+    "en": "blank",
+    "kk": "/blæŋk/",
+    "zh": "空白的、空格",
+    "example": "Please fill in the blank spaces on the form.",
+    "exampleZh": "請填寫表格上的空白處。"
+  },
+  {
+    "en": "blanket",
+    "kk": "/ˈblæŋkɪt/",
+    "zh": "毯子、覆蓋物",
+    "example": "The soft blanket kept her warm all night.",
+    "exampleZh": "柔 軟的毯子讓她整夜保持溫暖。"
+  },
+  {
+    "en": "blind",
+    "kk": "/blaɪnd/",
+    "zh": "盲的、使失明",
+    "example": "The blind musician played beautiful piano music.",
+    "exampleZh": "盲人音樂家演奏了美妙的鋼琴音樂。"
+  },
+  {
+    "en": "block",
+    "kk": "/blɑːk/",
+    "zh": "街區、阻擋",
+    "example": "The fallen tree blocked the entire road.",
+    "exampleZh": "倒下 的樹阻擋了整條道路。"
+  },
+  {
+    "en": "blood",
+    "kk": "/blʌd/",
+    "zh": "血液、血統",
+    "example": "Doctors need to test your blood pressure.",
+    "exampleZh": "醫 生需要檢查你的血壓。"
+  },
+  {
+    "en": "blow",
+    "kk": "/bloʊ/",
+    "zh": "吹、打擊",
+    "example": "Strong winds blow from the ocean.",
+    "exampleZh": "強風從海 洋吹來。"
+  },
+  {
+    "en": "blue",
+    "kk": "/bluː/",
+    "zh": "藍色的、藍色",
+    "example": "The clear sky was a beautiful blue color.",
+    "exampleZh": "晴朗 的天空是美麗的藍色。"
+  },
+  {
+    "en": "board",
+    "kk": "/bɔːrd/",
+    "zh": "木板、董事會、登機",
+    "example": "Passengers must board the plane thirty minutes early.",
+    "exampleZh": "乘客必須提前三十分鐘登機。"
+  },
+  {
+    "en": "boat",
+    "kk": "/boʊt/",
+    "zh": "船、小艇",
+    "example": "The fishing boat returned with a full catch.",
+    "exampleZh": "漁船滿載而歸。"
+  },
+  {
+    "en": "body",
+    "kk": "/ˈbɑːdi/",
+    "zh": "身體、主體",
+    "example": "Regular exercise keeps your body healthy and strong.",
+    "exampleZh": "定期運動讓你的身體健康強壯。"
+  },
+  {
+    "en": "boil",
+    "kk": "/bɔɪl/",
+    "zh": "煮沸、沸騰",
+    "example": "Please boil the water before drinking it.",
+    "exampleZh": "喝之 前請將水煮沸。"
+  },
+  {
+    "en": "bomb",
+    "kk": "/bɑːm/",
+    "zh": "炸彈、轟炸",
+    "example": "The old building was destroyed by a bomb.",
+    "exampleZh": "舊建築被炸彈摧毀了。"
+  },
+  {
+    "en": "bond",
+    "kk": "/bɑːnd/",
+    "zh": "紐帶、債券、結合",
+    "example": "The strong bond between mother and child is natural.",
+    "exampleZh": "母子之間的強烈紐帶是自然的。"
+  },
+  {
+    "en": "bone",
+    "kk": "/boʊn/",
+    "zh": "骨頭、骨骼",
+    "example": "The doctor examined the broken bone carefully.",
+    "exampleZh": "醫生仔細檢查了骨折的骨頭。"
+  },
+  {
+    "en": "book",
+    "kk": "/bʊk/",
+    "zh": "書、預訂",
+    "example": "She booked a table at the restaurant for tonight.",
+    "exampleZh": "她為今晚在餐廳預訂了桌位。"
+  },
+  {
+    "en": "boom",
+    "kk": "/buːm/",
+    "zh": "繁榮、轟鳴",
+    "example": "The technology industry experienced a boom last decade.",
+    "exampleZh": "科技行業在過去十年經歷了繁榮。"
+  },
+  {
+    "en": "boot",
+    "kk": "/buːt/",
+    "zh": "靴子、後車廂",
+    "example": "She wore waterproof boots for the hiking trip.",
+    "exampleZh": "她穿防水靴子去徒步旅行。"
+  },
+  {
+    "en": "border",
+    "kk": "/ˈbɔːrdər/",
+    "zh": "邊界、邊緣",
+    "example": "The two countries share a peaceful border.",
+    "exampleZh": "兩國共享一個和平的邊界。"
+  },
+  {
+    "en": "born",
+    "kk": "/bɔːrn/",
+    "zh": "出生、天生的",
+    "example": "She was born in a small coastal town.",
+    "exampleZh": "她出生 在一個小海濱城鎮。"
+  },
+  {
+    "en": "borrow",
+    "kk": "/ˈbɑːroʊ/",
+    "zh": "借用、借入",
+    "example": "Students can borrow books from the library.",
+    "exampleZh": "學生可以從圖書館借書。"
+  },
+  {
+    "en": "boss",
+    "kk": "/bɔːs/",
+    "zh": "老闆、上司",
+    "example": "The boss announced a pay raise for all employees.",
+    "exampleZh": "老闆宣布為所有員工加薪。"
+  },
+  {
+    "en": "both",
+    "kk": "/boʊθ/",
+    "zh": "兩者都、雙方",
+    "example": "Both students passed the difficult examination.",
+    "exampleZh": "兩個學生都通過了困難的考試。"
+  },
+  {
+    "en": "bother",
+    "kk": "/ˈbɑːðər/",
+    "zh": "煩擾、麻煩",
+    "example": "Please don't bother me while I'm studying.",
+    "exampleZh": "我學習時請不要打擾我。"
+  },
+  {
+    "en": "bottle",
+    "kk": "/ˈbɑːtl/",
+    "zh": "瓶子、一瓶",
+    "example": "She drank a bottle of water after exercising.",
+    "exampleZh": "運動後她喝了一瓶水。"
+  },
+  {
+    "en": "bottom",
+    "kk": "/ˈbɑːtəm/",
+    "zh": "底部、最低的",
+    "example": "The keys fell to the bottom of the pool.",
+    "exampleZh": "鑰匙 掉到了游泳池底部。"
+  },
+  {
+    "en": "bound",
+    "kk": "/baʊnd/",
+    "zh": "束縛的、跳躍",
+    "example": "The train is bound for the capital city.",
+    "exampleZh": "火車開 往首都。"
+  },
+  {
+    "en": "bowl",
+    "kk": "/boʊl/",
+    "zh": "碗、缽",
+    "example": "She served soup in a large ceramic bowl.",
+    "exampleZh": "她 用大陶瓷碗盛湯。"
+  },
+  {
+    "en": "box",
+    "kk": "/bɑːks/",
+    "zh": "盒子、拳擊",
+    "example": "The delivery came in a sturdy cardboard box.",
+    "exampleZh": "快遞裝在堅固的紙箱裡。"
+  },
+  {
+    "en": "boy",
+    "kk": "/bɔɪ/",
+    "zh": "男孩、兒子",
+    "example": "The young boy helped his grandmother cross the street.",
+    "exampleZh": "小男孩幫助祖母過馬路。"
+  },
+  {
+    "en": "brain",
+    "kk": "/breɪn/",
+    "zh": "大腦、頭腦",
+    "example": "The human brain is incredibly complex and powerful.",
+    "exampleZh": "人類大腦極其複雜和強大。"
+  },
+  {
+    "en": "branch",
+    "kk": "/bræntʃ/",
+    "zh": "樹枝、分支",
+    "example": "The bird built its nest on a strong branch.",
+    "exampleZh": "鳥 在結實的樹枝上築巢。"
+  },
+  {
+    "en": "brand",
+    "kk": "/brænd/",
+    "zh": "品牌、商標",
+    "example": "This brand is known for high quality products.",
+    "exampleZh": "這個品牌以高質量產品而聞名。"
+  },
+  {
+    "en": "brave",
+    "kk": "/breɪv/",
+    "zh": "勇敢的、英勇的",
+    "example": "The brave firefighter rescued the trapped family.",
+    "exampleZh": "勇敢的消防員救出了被困的家庭。"
+  },
+  {
+    "en": "bread",
+    "kk": "/bred/",
+    "zh": "麵包",
+    "example": "Fresh bread smells wonderful when it's baking.",
+    "exampleZh": "新鮮麵包烘烤時聞起來很香。"
+  },
+  {
+    "en": "break",
+    "kk": "/breɪk/",
+    "zh": "打破、休息",
+    "example": "Students have a ffiteen-minute break between classes.",
+    "exampleZh": "學生在課間有十五分鐘的休 息時間。"
+  },
+  {
+    "en": "breakfast",
+    "kk": "/ˈbrekfəst/",
+    "zh": "早餐",
+    "example": "A healthy breakfast gives you energy for the day.",
+    "exampleZh": "健康的早餐為你提供一天的能量。"
+  },
+  {
+    "en": "breast",
+    "kk": "/brest/",
+    "zh": "胸部、乳房",
+    "example": "Breast cancer awareness campaigns save many lives.",
+    "exampleZh": "乳癌意識宣傳活動拯救了許多生 命。"
+  },
+  {
+    "en": "breath",
+    "kk": "/breθ/",
+    "zh": "呼吸、氣息",
+    "example": "Take a deep breath and try to relax.",
+    "exampleZh": "深呼吸 並試著放鬆。"
+  },
+  {
+    "en": "breathe",
+    "kk": "/briːð/",
+    "zh": "呼吸",
+    "example": "Fresh mountain air is wonderful to breathe.",
+    "exampleZh": "新鮮的山間空氣呼吸起來很棒。"
+  },
+  {
+    "en": "brick",
+    "kk": "/brɪk/",
+    "zh": "磚塊",
+    "example": "The old house was built with red bricks.",
+    "exampleZh": "這棟 老房子是用紅磚建造的。"
+  },
+  {
+    "en": "bridge",
+    "kk": "/brɪdʒ/",
+    "zh": "橋梁、連接",
+    "example": "The new bridge connects the two sides of the river.",
+    "exampleZh": "新橋連接了河的兩岸。"
+  },
+  {
+    "en": "brief",
+    "kk": "/briːf/",
+    "zh": "簡短的、概要",
+    "example": "The meeting was brief but very productive.",
+    "exampleZh": "會議簡短但非常有成效。"
+  },
+  {
+    "en": "bright",
+    "kk": "/braɪt/",
+    "zh": "明亮的、聰明的",
+    "example": "The bright student always asks thoughtful questions.",
+    "exampleZh": "聰明的學生總是問深思熟慮的問題。"
+  },
+  {
+    "en": "brilliant",
+    "kk": "/ˈbrɪljənt/",
+    "zh": "輝煌的、傑出的",
+    "example": "Her brilliant performance earned a standing ovation.",
+    "exampleZh": "她出色的表演贏得了起立鼓掌。"
+  },
+  {
+    "en": "bring",
+    "kk": "/brɪŋ/",
+    "zh": "帶來、引起",
+    "example": "Please bring your passport to the airport.",
+    "exampleZh": "請 帶護照到機場。"
+  },
+  {
+    "en": "broad",
+    "kk": "/brɔːd/",
+    "zh": "寬闊的、廣泛的",
+    "example": "The river is very broad at this point.",
+    "exampleZh": "河流在這 一點非常寬闊。"
+  },
+  {
+    "en": "broadcast",
+    "kk": "/ˈbrɔːdkæst/",
+    "zh": "廣播、播送",
+    "example": "The news station will broadcast live from the event.",
+    "exampleZh": "新聞電台將從現場直播。"
+  },
+  {
+    "en": "brother",
+    "kk": "/ˈbrʌðər/",
+    "zh": "兄弟、同胞",
+    "example": "Her brother is studying medicine at university.",
+    "exampleZh": "她的兄弟在大學學醫。"
+  },
+  {
+    "en": "brown",
+    "kk": "/braʊn/",
+    "zh": "棕色的、褐色",
+    "example": "The brown leather jacket looks very stylish.",
+    "exampleZh": "棕色皮夾克看起來很時尚。"
+  },
+  {
+    "en": "brush",
+    "kk": "/brʌʃ/",
+    "zh": "刷子、刷",
+    "example": "Brush your teeth twice a day for good hygiene.",
+    "exampleZh": "為了良好的衛生習慣，每天刷牙兩次。"
+  },
+  {
+    "en": "budget",
+    "kk": "/ˈbʌdʒɪt/",
+    "zh": "預算、編預算",
+    "example": "Families should create a monthly budget for expenses.",
+    "exampleZh": "家庭應該制定月度支出預算。"
+  },
+  {
+    "en": "build",
+    "kk": "/bɪld/",
+    "zh": "建造、建立",
+    "example": "The company plans to build a new factory.",
+    "exampleZh": "公司計劃建造一座新工廠。"
+  },
+  {
+    "en": "building",
+    "kk": "/ˈbɪldɪŋ/",
+    "zh": "建築物、大樓",
+    "example": "The tall building has thirty fol ors.",
+    "exampleZh": "這棟高樓有 三十層。"
+  },
+  {
+    "en": "bullet",
+    "kk": "/ˈbʊlɪt/",
+    "zh": "子彈、項目符號",
+    "example": "The police found a bullet at the crime scene.",
+    "exampleZh": "警察在犯罪現場發現了一顆子彈。"
+  },
+  {
+    "en": "bunch",
+    "kk": "/bʌntʃ/",
+    "zh": "束、群",
+    "example": "She bought a bunch of fresh fol wers.",
+    "exampleZh": "她買了 一束新鮮花朵。"
+  },
+  {
+    "en": "burn",
+    "kk": "/bɜːrn/",
+    "zh": "燃燒、燒傷",
+    "example": "The fireplace will burn wood all evening.",
+    "exampleZh": "壁爐 整個晚上都會燒木頭。"
+  },
+  {
+    "en": "burst",
+    "kk": "/bɜːrst/",
+    "zh": "爆發、破裂",
+    "example": "The balloon will burst if you blow too much air.",
+    "exampleZh": "如果你吹太多空氣，氣球會爆炸。"
+  },
+  {
+    "en": "bury",
+    "kk": "/ˈberi/",
+    "zh": "埋葬、掩埋",
+    "example": "Pirates used to bury treasure on remote islands.",
+    "exampleZh": "海盜過去常在偏遠島嶼埋藏寶藏。"
+  },
+  {
+    "en": "bus",
+    "kk": "/bʌs/",
+    "zh": "公車、巴士",
+    "example": "The school bus picks up children every morning.",
+    "exampleZh": "校車每天早上接送孩子們。"
+  },
+  {
+    "en": "business",
+    "kk": "/ˈbɪznəs/",
+    "zh": "生意、商業",
+    "example": "She started her own business selling handmade jewelry.",
+    "exampleZh": "她開始了自己的手工珠寶 生意。"
+  },
+  {
+    "en": "busy",
+    "kk": "/ˈbɪzi/",
+    "zh": "忙碌的、繁忙的",
+    "example": "The busy intersection has traffic lights.",
+    "exampleZh": "繁忙 的十字路口有交通燈。"
+  },
+  {
+    "en": "but",
+    "kk": "/bʌt/",
+    "zh": "但是、除了",
+    "example": "The movie was long but very entertaining.",
+    "exampleZh": "電 影很長但非常有趣。"
+  },
+  {
+    "en": "butter",
+    "kk": "/ˈbʌtər/",
+    "zh": "奶油、黃油",
+    "example": "Fresh butter makes the bread taste better.",
+    "exampleZh": "新鮮奶油讓麵包嚐起來更好。"
+  },
+  {
+    "en": "button",
+    "kk": "/ˈbʌtn/",
+    "zh": "按鈕、鈕扣",
+    "example": "Press the red button to start the machine.",
+    "exampleZh": "按 紅色按鈕啟動機器。"
+  },
+  {
+    "en": "buy",
+    "kk": "/baɪ/",
+    "zh": "購買、買",
+    "example": "They decided to buy a house near the school.",
+    "exampleZh": "他們決定在學校附近買房子。"
+  },
+  {
+    "en": "by",
+    "kk": "/baɪ/",
+    "zh": "被、通過、在...旁邊",
+    "example": "The book was written by a famous author.",
+    "exampleZh": "這 本書是由著名作者寫的。"
+  },
+  {
+    "en": "cable",
+    "kk": "/ˈkeɪbl/",
+    "zh": "電纜、纜線",
+    "example": "The internet cable was damaged in the storm.",
+    "exampleZh": "網路電纜在暴風雨中受損。"
+  },
+  {
+    "en": "cake",
+    "kk": "/keɪk/",
+    "zh": "蛋糕、糕點",
+    "example": "She baked a chocolate cake for the birthday party.",
+    "exampleZh": "她為生日派對烤了巧克力蛋糕。"
+  },
+  {
+    "en": "calculate",
+    "kk": "/ˈkælkjuleɪt/",
+    "zh": "計算、估算",
+    "example": "Students must calculate the area of the triangle.",
+    "exampleZh": "學生們必須計算三角形的面積。"
+  },
+  {
+    "en": "call",
+    "kk": "/kɔːl/",
+    "zh": "呼叫、電話",
+    "example": "Please call me when you arrive safely.",
+    "exampleZh": "當你安 全到達時請打電話給我。"
+  },
+  {
+    "en": "calm",
+    "kk": "/kɑːm/",
+    "zh": "冷靜的、平靜",
+    "example": "The calm sea refel cted the sunset beautifully.",
+    "exampleZh": "平靜的海面美麗地反射著夕陽。"
+  },
+  {
+    "en": "camera",
+    "kk": "/ˈkæmərə/",
+    "zh": "照相機、攝影機",
+    "example": "The wildlife photographer used a professional camera.",
+    "exampleZh": "野生動物攝影師使用專業照相機。"
+  },
+  {
+    "en": "camp",
+    "kk": "/kæmp/",
+    "zh": "營地、露營",
+    "example": "Children love to camp in the forest during summer.",
+    "exampleZh": "孩子們喜歡在夏天到森林裡露營。"
+  },
+  {
+    "en": "campaign",
+    "kk": "/kæmˈpeɪn/",
+    "zh": "活動、競選",
+    "example": "The environmental campaign raised awareness about pollution.",
+    "exampleZh": "環保活動提高了對污染的認識。"
+  },
+  {
+    "en": "campus",
+    "kk": "/ˈkæmpəs/",
+    "zh": "校園",
+    "example": "The university campus has beautiful gardens.",
+    "exampleZh": "大學校園有美麗的花園。"
+  },
+  {
+    "en": "can",
+    "kk": "/kæn/",
+    "zh": "能夠、罐頭",
+    "example": "You can achieve anything with hard work.",
+    "exampleZh": "通過 努力工作你可以實現任何事情。"
+  },
+  {
+    "en": "cancel",
+    "kk": "/ˈkænsəl/",
+    "zh": "取消、撤銷",
+    "example": "They had to cancel the outdoor concert due to rain.",
+    "exampleZh": "由於下雨他們不得不取消戶外音樂會。"
+  },
+  {
+    "en": "cancer",
+    "kk": "/ˈkænsər/",
+    "zh": "癌症",
+    "example": "Early detection improves cancer treatment success.",
+    "exampleZh": "早期發現提高癌症治療成功率。"
+  },
+  {
+    "en": "candidate",
+    "kk": "/ˈkændɪdət/",
+    "zh": "候選人、應徵者",
+    "example": "The candidate impressed everyone during the interview.",
+    "exampleZh": "候選人在面試中給每個人留下了深刻印 象。"
+  },
+  {
+    "en": "capable",
+    "kk": "/ˈkeɪpəbl/",
+    "zh": "有能力的、能幹的",
+    "example": "She is capable of handling difficult situations.",
+    "exampleZh": "她能夠處理困難的情況。"
+  },
+  {
+    "en": "capacity",
+    "kk": "/kəˈpæsəti/",
+    "zh": "容量、能力",
+    "example": "The stadium has a capacity of 50,000 spectators.",
+    "exampleZh": "體育場可容納50,000名觀眾。"
+  },
+  {
+    "en": "capital",
+    "kk": "/ˈkæpɪtl/",
+    "zh": "首都、資本",
+    "example": "Paris is the capital city of France.",
+    "exampleZh": "巴黎是法國的 首都。"
+  },
+  {
+    "en": "captain",
+    "kk": "/ˈkæptən/",
+    "zh": "船長、隊長",
+    "example": "The ship's captain navigated through the storm.",
+    "exampleZh": "船長在暴風雨中航行。"
+  },
+  {
+    "en": "capture",
+    "kk": "/ˈkæptʃər/",
+    "zh": "捕獲、抓住",
+    "example": "The photographer managed to capture the perfect moment.",
+    "exampleZh": "攝影師成功捕捉到完美的瞬 間。"
+  },
+  {
+    "en": "car",
+    "kk": "/kɑːr/",
+    "zh": "汽車、車廂",
+    "example": "The electric car is environmentally friendly.",
+    "exampleZh": "電 動汽車對環境友好。"
+  },
+  {
+    "en": "card",
+    "kk": "/kɑːrd/",
+    "zh": "卡片、紙牌",
+    "example": "She sent a birthday card to her grandmother.",
+    "exampleZh": "她寄了一張生日賀卡給祖母。"
+  },
+  {
+    "en": "care",
+    "kk": "/ker/",
+    "zh": "關心、照顧",
+    "example": "Parents care deeply about their children's happiness.",
+    "exampleZh": "父母深深關心孩子們的幸福。"
+  },
+  {
+    "en": "career",
+    "kk": "/kəˈrɪr/",
+    "zh": "事業、職業生涯",
+    "example": "She built a successful career in medicine.",
+    "exampleZh": "她在 醫學領域建立了成功的職業生涯。"
+  },
+  {
+    "en": "careful",
+    "kk": "/ˈkerfəl/",
+    "zh": "小心的、仔細的",
+    "example": "Be careful when crossing the busy street.",
+    "exampleZh": "過繁 忙街道時要小心。"
+  },
+  {
+    "en": "carry",
+    "kk": "/ˈkæri/",
+    "zh": "攜帶、運載",
+    "example": "Strong workers carry heavy boxes easily.",
+    "exampleZh": "強壯 的工人輕鬆搬運重箱子。"
+  },
+  {
+    "en": "case",
+    "kk": "/keɪs/",
+    "zh": "案例、箱子",
+    "example": "The detective solved the difficult case quickly.",
+    "exampleZh": "偵探迅速解決了困難的案件。"
+  },
+  {
+    "en": "cash",
+    "kk": "/kæʃ/",
+    "zh": "現金",
+    "example": "Many stores still accept cash payments.",
+    "exampleZh": "許多 商店仍然接受現金付款。"
+  },
+  {
+    "en": "cast",
+    "kk": "/kæst/",
+    "zh": "投擲、演員陣容",
+    "example": "The fishing boat will cast nets at dawn.",
+    "exampleZh": "漁船會 在黎明時撒網。"
+  },
+  {
+    "en": "castle",
+    "kk": "/ˈkæsl/",
+    "zh": "城堡",
+    "example": "The ancient castle overlooks the valley.",
+    "exampleZh": "古老的 城堡俯瞰山谷。"
+  },
+  {
+    "en": "cat",
+    "kk": "/kæt/",
+    "zh": "貓",
+    "example": "The friendly cat purrs when petted gently.",
+    "exampleZh": "友善 的貓被輕撫時會發出呼嚕聲。"
+  },
+  {
+    "en": "catch",
+    "kk": "/kætʃ/",
+    "zh": "捕捉、接住",
+    "example": "The baseball player will catch the high fyl ball.",
+    "exampleZh": "棒球選手會接住高飛球。"
+  },
+  {
+    "en": "category",
+    "kk": "/ˈkætəɡɔːri/",
+    "zh": "類別、範疇",
+    "example": "Books are organized by category in the library.",
+    "exampleZh": "圖書館中的書按類別組織。"
+  },
+  {
+    "en": "cause",
+    "kk": "/kɔːz/",
+    "zh": "原因、引起",
+    "example": "Heavy rain can cause fol oding in low areas.",
+    "exampleZh": "大 雨可能在低窪地區引起洪水。"
+  },
+  {
+    "en": "cave",
+    "kk": "/keɪv/",
+    "zh": "洞穴、山洞",
+    "example": "Ancient people lived in caves for protection.",
+    "exampleZh": "古 代人住在洞穴中尋求保護。"
+  },
+  {
+    "en": "ceiling",
+    "kk": "/ˈsiːlɪŋ/",
+    "zh": "天花板",
+    "example": "The ceiling was painted with beautiful murals.",
+    "exampleZh": "天花板上畫著美麗的壁畫。"
+  },
+  {
+    "en": "celebrate",
+    "kk": "/ˈseləbreɪt/",
+    "zh": "慶祝、慶賀",
+    "example": "Families celebrate holidays with special traditions.",
+    "exampleZh": "家庭用特殊傳統慶祝節日。"
+  },
+  {
+    "en": "cell",
+    "kk": "/sel/",
+    "zh": "細胞、小室",
+    "example": "Each cell in the body has a specific function.",
+    "exampleZh": "身體中的每個細胞都有特定功能。"
+  },
+  {
+    "en": "center",
+    "kk": "/ˈsentər/",
+    "zh": "中心、集中",
+    "example": "The shopping center attracts many customers daily.",
+    "exampleZh": "購物中心每天吸引許多顧客。"
+  },
+  {
+    "en": "central",
+    "kk": "/ˈsentrəl/",
+    "zh": "中央的、主要的",
+    "example": "The central library serves the entire community.",
+    "exampleZh": "中央圖書館為整個社區服務。"
+  },
+  {
+    "en": "century",
+    "kk": "/ˈsentʃəri/",
+    "zh": "世紀、一百年",
+    "example": "The 21st century brought many technological advances.",
+    "exampleZh": "21世紀帶來了許多技術進步。"
+  },
+  {
+    "en": "ceremony",
+    "kk": "/ˈserəmoʊni/",
+    "zh": "儀式、典禮",
+    "example": "The graduation ceremony was held outdoors.",
+    "exampleZh": "畢業典禮在戶外舉行。"
+  },
+  {
+    "en": "certain",
+    "kk": "/ˈsɜːrtn/",
+    "zh": "確定的、某些的",
+    "example": "We are certain that the plan will succeed.",
+    "exampleZh": "我們 確信計劃會成功。"
+  },
+  {
+    "en": "certainly",
+    "kk": "/ˈsɜːrtnli/",
+    "zh": "當然、確實",
+    "example": "She will certainly pass the examination with her preparation.",
+    "exampleZh": "憑她的準備她肯定會通過考試。"
+  },
+  {
+    "en": "chain",
+    "kk": "/tʃeɪn/",
+    "zh": "鏈條、連鎖",
+    "example": "The bicycle chain needs regular maintenance.",
+    "exampleZh": "自行車鏈條需要定期保養。"
+  },
+  {
+    "en": "chair",
+    "kk": "/tʃer/",
+    "zh": "椅子、主席",
+    "example": "The comfortable chair supports good posture.",
+    "exampleZh": "舒適的椅子支撐良好的姿勢。"
+  },
+  {
+    "en": "chairman",
+    "kk": "/ˈtʃermən/",
+    "zh": "主席、董事長",
+    "example": "The chairman opened the meeting with welcome remarks.",
+    "exampleZh": "主席以歡迎詞開始會議。"
+  },
+  {
+    "en": "challenge",
+    "kk": "/ˈtʃælɪndʒ/",
+    "zh": "挑戰、質疑",
+    "example": "Learning a new language is an exciting challenge.",
+    "exampleZh": "學習新語言是一個令人興奮的挑戰。"
+  },
+  {
+    "en": "champion",
+    "kk": "/ˈtʃæmpiən/",
+    "zh": "冠軍、擁護者",
+    "example": "The tennis champion defended her title successfully.",
+    "exampleZh": "網球冠軍成功衛冕。"
+  },
+  {
+    "en": "chance",
+    "kk": "/tʃæns/",
+    "zh": "機會、可能性",
+    "example": "This is your chance to make a good impression.",
+    "exampleZh": "這是你留下好印象的機會。"
+  },
+  {
+    "en": "change",
+    "kk": "/tʃeɪndʒ/",
+    "zh": "改變、零錢",
+    "example": "Technology continues to change our daily lives.",
+    "exampleZh": "科技繼續改變我們的日常生活。"
+  },
+  {
+    "en": "channel",
+    "kk": "/ˈtʃænl/",
+    "zh": "頻道、渠道",
+    "example": "The news channel broadcasts updates every hour.",
+    "exampleZh": "新聞頻道每小時播放更新。"
+  },
+  {
+    "en": "chapter",
+    "kk": "/ˈtʃæptər/",
+    "zh": "章節、分會",
+    "example": "Each chapter of the book teaches new concepts.",
+    "exampleZh": "書的每一章都教授新概念。"
+  },
+  {
+    "en": "character",
+    "kk": "/ˈkærəktər/",
+    "zh": "性格、角色",
+    "example": "The main character in the story shows great courage.",
+    "exampleZh": "故事中的主角表現出極大的勇氣。"
+  },
+  {
+    "en": "charge",
+    "kk": "/tʃɑːrdʒ/",
+    "zh": "收費、充電、指控",
+    "example": "The store will charge tax on all purchases.",
+    "exampleZh": "商店 會對所有購買收取稅款。"
+  },
+  {
+    "en": "charity",
+    "kk": "/ˈtʃærəti/",
+    "zh": "慈善、慈善機構",
+    "example": "The charity provides food for homeless people.",
+    "exampleZh": "慈善機構為無家可歸的人提供食物。"
+  },
+  {
+    "en": "chart",
+    "kk": "/tʃɑːrt/",
+    "zh": "圖表、海圖",
+    "example": "The chart shows population growth over time.",
+    "exampleZh": "圖表顯示人口隨時間的增長。"
+  },
+  {
+    "en": "chase",
+    "kk": "/tʃeɪs/",
+    "zh": "追逐、追趕",
+    "example": "The dog likes to chase balls in the park.",
+    "exampleZh": "狗喜歡 在公園裡追球。"
+  },
+  {
+    "en": "cheap",
+    "kk": "/tʃiːp/",
+    "zh": "便宜的、廉價的",
+    "example": "The cheap airline tickets sold out quickly.",
+    "exampleZh": "便宜 的機票很快就賣完了。"
+  },
+  {
+    "en": "check",
+    "kk": "/tʃek/",
+    "zh": "檢查、支票",
+    "example": "Please check your answers before submitting the test.",
+    "exampleZh": "提交考試前請檢查你的答案。"
+  },
+  {
+    "en": "cheese",
+    "kk": "/tʃiːz/",
+    "zh": "起司、乳酪",
+    "example": "French cheese is famous worldwide for its quality.",
+    "exampleZh": "法國起司以其品質聞名世界。"
+  },
+  {
+    "en": "chemical",
+    "kk": "/ˈkemɪkl/",
+    "zh": "化學的、化學品",
+    "example": "The chemical reaction produced colorful fal mes.",
+    "exampleZh": "化學反應產生了彩色火焰。"
+  },
+  {
+    "en": "chemistry",
+    "kk": "/ˈkeməstri/",
+    "zh": "化學",
+    "example": "Students study chemistry to understand matter and reactions.",
+    "exampleZh": "學生學習化學以了解物質 和反應。"
+  },
+  {
+    "en": "chest",
+    "kk": "/tʃest/",
+    "zh": "胸部、箱子",
+    "example": "The treasure chest contained gold coins.",
+    "exampleZh": "寶箱 裡裝著金幣。"
+  },
+  {
+    "en": "chicken",
+    "kk": "/ˈtʃɪkən/",
+    "zh": "雞、雞肉",
+    "example": "Free-range chicken tastes better than factory-farmed.",
+    "exampleZh": "散養雞比工廠飼養的雞肉味道更 好。"
+  },
+  {
+    "en": "chief",
+    "kk": "/tʃiːf/",
+    "zh": "主要的、首領",
+    "example": "The chief executive announced the company's expansion.",
+    "exampleZh": "首席執行官宣布公司擴張。"
+  },
+  {
+    "en": "child",
+    "kk": "/tʃaɪld/",
+    "zh": "兒童、孩子",
+    "example": "Every child deserves love and proper education.",
+    "exampleZh": "每個孩子都應得到愛和良好的教育。"
+  },
+  {
+    "en": "childhood",
+    "kk": "/ˈtʃaɪldhʊd/",
+    "zh": "童年",
+    "example": "Her childhood was filled with happy memories.",
+    "exampleZh": "她的童年充滿了快樂的回憶。"
+  },
+  {
+    "en": "chin",
+    "kk": "/tʃɪn/",
+    "zh": "下巴",
+    "example": "He stroked his chin thoughtfully while deciding.",
+    "exampleZh": "他在決定時若有所思地撫摸下巴。"
+  },
+  {
+    "en": "chocolate",
+    "kk": "/ˈtʃɔːklət/",
+    "zh": "巧克力",
+    "example": "Dark chocolate contains beneficial antioxidants.",
+    "exampleZh": "黑巧克力含有有益的抗氧化劑。"
+  },
+  {
+    "en": "choice",
+    "kk": "/tʃɔɪs/",
+    "zh": "選擇、選項",
+    "example": "Students have many choices for university majors.",
+    "exampleZh": "學生在大學專業方面有很多選擇。"
+  },
+  {
+    "en": "choose",
+    "kk": "/tʃuːz/",
+    "zh": "選擇、挑選",
+    "example": "Please choose the best option for your future.",
+    "exampleZh": "請為你的未來選擇最好的選項。"
+  },
+  {
+    "en": "church",
+    "kk": "/tʃɜːrtʃ/",
+    "zh": "教堂、教會",
+    "example": "The old church bell rings every Sunday morning.",
+    "exampleZh": "古老的教堂鐘每個星期天早上響起。"
+  },
+  {
+    "en": "cigarette",
+    "kk": "/ˈsɪɡəret/",
+    "zh": "香煙",
+    "example": "Smoking cigarettes causes serious health problems.",
+    "exampleZh": "吸煙會導致嚴重的健康問題。"
+  },
+  {
+    "en": "cinema",
+    "kk": "/ˈsɪnəmə/",
+    "zh": "電影院",
+    "example": "The new cinema shows the latest movies.",
+    "exampleZh": "新電 影院放映最新電影。"
+  },
+  {
+    "en": "circle",
+    "kk": "/ˈsɜːrkl/",
+    "zh": "圓圈、環繞",
+    "example": "Children sat in a circle for story time.",
+    "exampleZh": "孩子們坐 成圓圈聽故事。"
+  },
+  {
+    "en": "circumstance",
+    "kk": "/ˈsɜːrkəmstæns/",
+    "zh": "情況、環境",
+    "example": "Under these circumstances, we must change our plan.",
+    "exampleZh": "在這些情況下，我們必須改變計劃。"
+  },
+  {
+    "en": "citizen",
+    "kk": "/ˈsɪtɪzən/",
+    "zh": "公民、市民",
+    "example": "Every citizen has rights and responsibilities.",
+    "exampleZh": "每 個公民都有權利和責任。"
+  },
+  {
+    "en": "city",
+    "kk": "/ˈsɪti/",
+    "zh": "城市",
+    "example": "The city ofefrs many cultural attractions to visitors.",
+    "exampleZh": "城市為遊客提供許多文化景點。"
+  },
+  {
+    "en": "civil",
+    "kk": "/ˈsɪvəl/",
+    "zh": "公民的、文明的",
+    "example": "Civil rights movements changed society for the better.",
+    "exampleZh": "民權運動讓社會變得更好。"
+  },
+  {
+    "en": "claim",
+    "kk": "/kleɪm/",
+    "zh": "聲稱、要求",
+    "example": "The insurance company will process your claim quickly.",
+    "exampleZh": "保險公司會迅速處理你的理賠。"
+  },
+  {
+    "en": "class",
+    "kk": "/klæs/",
+    "zh": "班級、課程、階級",
+    "example": "The class studied ancient history together.",
+    "exampleZh": "班 級一起學習古代歷史。"
+  },
+  {
+    "en": "classic",
+    "kk": "/ˈklæsɪk/",
+    "zh": "經典的、古典作品",
+    "example": "Shakespeare's plays are classic works of literature.",
+    "exampleZh": "莎士比亞的戲劇是經典文學作品。"
+  },
+  {
+    "en": "classroom",
+    "kk": "/ˈklæsruːm/",
+    "zh": "教室",
+    "example": "The classroom was equipped with modern technology.",
+    "exampleZh": "教室配備了現代技術。"
+  },
+  {
+    "en": "clean",
+    "kk": "/kliːn/",
+    "zh": "乾淨的、清潔",
+    "example": "Please keep the kitchen clean after cooking.",
+    "exampleZh": "烹飪後請保持廚房清潔。"
+  },
+  {
+    "en": "clear",
+    "kk": "/klɪr/",
+    "zh": "清楚的、清除",
+    "example": "The instructions must be clear and easy to follow.",
+    "exampleZh": "指示必須清楚且容易遵循。"
+  },
+  {
+    "en": "clerk",
+    "kk": "/klɜːrk/",
+    "zh": "職員、店員",
+    "example": "The bank clerk helped customers with their accounts.",
+    "exampleZh": "銀行職員幫助客戶處理帳戶。"
+  },
+  {
+    "en": "clever",
+    "kk": "/ˈklevər/",
+    "zh": "聰明的、機靈的",
+    "example": "The clever student solved the puzzle quickly.",
+    "exampleZh": "聰 明的學生迅速解決了謎題。"
+  },
+  {
+    "en": "each",
+    "kk": "/iːtʃ/",
+    "zh": "每個、各自",
+    "example": "Each student must complete the assignment individually.",
+    "exampleZh": "每個學生都必須單獨完成作業。"
+  },
+  {
+    "en": "eager",
+    "kk": "/ˈiːɡər/",
+    "zh": "渴望的、熱切的",
+    "example": "Young children are eager to learn new skills.",
+    "exampleZh": "小孩子渴望學習新技能。"
+  },
+  {
+    "en": "ear",
+    "kk": "/ɪr/",
+    "zh": "耳朵、聽覺",
+    "example": "Loud music can damage your ear permanently.",
+    "exampleZh": "大聲音樂可能永久損害你的耳 朵。"
+  },
+  {
+    "en": "early",
+    "kk": "/ˈɜːrli/",
+    "zh": "早的、提早",
+    "example": "Early morning exercise energizes the body.",
+    "exampleZh": "清晨運動為身體注入活力。"
+  },
+  {
+    "en": "earn",
+    "kk": "/ɜːrn/",
+    "zh": "賺取、獲得",
+    "example": "Hard work helps earn success and respect.",
+    "exampleZh": "努力工作有助於獲得成功和尊重。"
+  },
+  {
+    "en": "earth",
+    "kk": "/ɜːrθ/",
+    "zh": "地球、土地",
+    "example": "Protecting Earth is everyone's responsibility.",
+    "exampleZh": "保護地球是每個人的責任。"
+  },
+  {
+    "en": "earthquake",
+    "kk": "/ˈɜːrθkweɪk/",
+    "zh": "地震",
+    "example": "The powerful earthquake shook buildings violently.",
+    "exampleZh": "強烈地震劇烈搖晃建築物。"
+  },
+  {
+    "en": "ease",
+    "kk": "/iːz/",
+    "zh": "容易、減輕",
+    "example": "Technology should ease daily life tasks.",
+    "exampleZh": "科技 應該減輕日常生活任務。"
+  },
+  {
+    "en": "east",
+    "kk": "/iːst/",
+    "zh": "東方、東邊的",
+    "example": "The sun rises in the east every morning.",
+    "exampleZh": "太陽 每天早上從東方升起。"
+  },
+  {
+    "en": "eastern",
+    "kk": "/ˈiːstərn/",
+    "zh": "東方的、東部的",
+    "example": "Eastern philosophy emphasizes inner peace.",
+    "exampleZh": "東方哲學強調內心平靜。"
+  },
+  {
+    "en": "easy",
+    "kk": "/ˈiːzi/",
+    "zh": "容易的、簡單的",
+    "example": "This math problem is surprisingly easy.",
+    "exampleZh": "這道 數學題出人意料地簡單。"
+  },
+  {
+    "en": "eat",
+    "kk": "/iːt/",
+    "zh": "吃、進食",
+    "example": "Athletes eat nutritious foods for energy.",
+    "exampleZh": "運動 員吃營養食物獲取能量。"
+  },
+  {
+    "en": "economic",
+    "kk": "/ˌiːkəˈnɑːmɪk/",
+    "zh": "經濟的、經濟學的",
+    "example": "Economic growth benefits entire nations.",
+    "exampleZh": "經 濟增長造福整個國家。"
+  },
+  {
+    "en": "economy",
+    "kk": "/ɪˈkɑːnəmi/",
+    "zh": "經濟、經濟體",
+    "example": "Technology drives modern economy forward.",
+    "exampleZh": "科技推動現代經濟向前發展。"
+  },
+  {
+    "en": "edge",
+    "kk": "/edʒ/",
+    "zh": "邊緣、優勢",
+    "example": "Sharp knives have a dangerous edge.",
+    "exampleZh": "鋒利的 刀有危險的刀刃。"
+  },
+  {
+    "en": "education",
+    "kk": "/ˌedʒuˈkeɪʃn/",
+    "zh": "教育、教養",
+    "example": "Quality education opens doors to opportunities.",
+    "exampleZh": "優質教育為機會打開大門。"
+  },
+  {
+    "en": "efefct",
+    "kk": "/ɪˈfekt/",
+    "zh": "效果、影響",
+    "example": "Exercise has positive efefcts on health.",
+    "exampleZh": "運動 對健康有積極影響。"
+  },
+  {
+    "en": "efefctive",
+    "kk": "/ɪˈfektɪv/",
+    "zh": "有效的、起作用的",
+    "example": "Efefctive communication prevents misunderstandings.",
+    "exampleZh": "有效溝通防止誤解。"
+  },
+  {
+    "en": "efofrt",
+    "kk": "/ˈefərt/",
+    "zh": "努力、嘗試",
+    "example": "Success requires consistent efofrt and patience.",
+    "exampleZh": "成功需要持續的努力和耐心。"
+  },
+  {
+    "en": "egg",
+    "kk": "/eɡ/",
+    "zh": "雞蛋、卵",
+    "example": "Fresh eggs provide excellent protein.",
+    "exampleZh": "新鮮雞 蛋提供優質蛋白質。"
+  },
+  {
+    "en": "eight",
+    "kk": "/eɪt/",
+    "zh": "八、八個",
+    "example": "The meeting starts at eight o'clock sharp.",
+    "exampleZh": "會 議八點整開始。"
+  },
+  {
+    "en": "eighteen",
+    "kk": "/ˌeɪˈtiːn/",
+    "zh": "十八",
+    "example": "She learned to drive at eighteen years old.",
+    "exampleZh": "她 十八歲學會開車。"
+  },
+  {
+    "en": "eighty",
+    "kk": "/ˈeɪti/",
+    "zh": "八十",
+    "example": "His grandfather lived to eighty years old.",
+    "exampleZh": "他 的祖父活到八十歲。"
+  },
+  {
+    "en": "either",
+    "kk": "/ˈiːðər/",
+    "zh": "任一、或者",
+    "example": "You can choose either option for lunch.",
+    "exampleZh": "你可 以選擇任一午餐選項。"
+  },
+  {
+    "en": "election",
+    "kk": "/ɪˈlekʃn/",
+    "zh": "選舉、選擇",
+    "example": "Democratic elections ensure fair representation.",
+    "exampleZh": "民主選舉確保公平代表。"
+  },
+  {
+    "en": "electric",
+    "kk": "/ɪˈlektrɪk/",
+    "zh": "電的、電動的",
+    "example": "Electric cars reduce environmental pollution.",
+    "exampleZh": "電動汽車減少環境污染。"
+  },
+  {
+    "en": "electricity",
+    "kk": "/ɪˌlekˈtrɪsəti/",
+    "zh": "電力、電",
+    "example": "Modern life depends heavily on electricity.",
+    "exampleZh": "現 代生活嚴重依賴電力。"
+  },
+  {
+    "en": "electronic",
+    "kk": "/ɪˌlekˈtrɑːnɪk/",
+    "zh": "電子的",
+    "example": "Electronic devices simplify daily tasks.",
+    "exampleZh": "電子 設備簡化日常任務。"
+  },
+  {
+    "en": "element",
+    "kk": "/ˈeləmənt/",
+    "zh": "元素、要素",
+    "example": "Water contains hydrogen and oxygen elements.",
+    "exampleZh": "水含有氫和氧元素。"
+  },
+  {
+    "en": "elevator",
+    "kk": "/ˈeləveɪtər/",
+    "zh": "電梯、升降機",
+    "example": "The elevator stopped at every fol or.",
+    "exampleZh": "電梯在每 層樓都停。"
+  },
+  {
+    "en": "eleven",
+    "kk": "/ɪˈlevn/",
+    "zh": "十一",
+    "example": "The soccer team has eleven players.",
+    "exampleZh": "足球隊 有十一名球員。"
+  },
+  {
+    "en": "else",
+    "kk": "/els/",
+    "zh": "其他、否則",
+    "example": "Nobody else volunteered for the project.",
+    "exampleZh": "沒有 其他人自願參加這個項目。"
+  },
+  {
+    "en": "emergency",
+    "kk": "/ɪˈmɜːrdʒənsi/",
+    "zh": "緊急情況、急救",
+    "example": "Call 911 in case of emergency.",
+    "exampleZh": "緊急情況下撥 打911。"
+  },
+  {
+    "en": "emotion",
+    "kk": "/ɪˈmoʊʃn/",
+    "zh": "情感、情緒",
+    "example": "Strong emotions inful ence decision-making.",
+    "exampleZh": "強烈情感影響決策。"
+  },
+  {
+    "en": "emotional",
+    "kk": "/ɪˈmoʊʃənl/",
+    "zh": "情感的、感情用事的",
+    "example": "Emotional support helps during difficult times.",
+    "exampleZh": "情感支持在困難時期有所幫助。"
+  },
+  {
+    "en": "employ",
+    "kk": "/ɪmˈplɔɪ/",
+    "zh": "雇用、使用",
+    "example": "Companies employ skilled workers for projects.",
+    "exampleZh": "公司雇用技術工人參與項目。"
+  },
+  {
+    "en": "employee",
+    "kk": "/ɪmˈplɔɪiː/",
+    "zh": "雇員、員工",
+    "example": "Every employee deserves fair treatment.",
+    "exampleZh": "每 個員工都應得到公平對待。"
+  },
+  {
+    "en": "employment",
+    "kk": "/ɪmˈplɔɪmənt/",
+    "zh": "就業、雇用",
+    "example": "Education increases employment opportunities.",
+    "exampleZh": "教育增加就業機會。"
+  },
+  {
+    "en": "empty",
+    "kk": "/ˈempti/",
+    "zh": "空的、清空",
+    "example": "The empty classroom echoed with footsteps.",
+    "exampleZh": "空教室裡腳步聲回響。"
+  },
+  {
+    "en": "enable",
+    "kk": "/ɪˈneɪbl/",
+    "zh": "使能夠、啟用",
+    "example": "Technology enables global communication.",
+    "exampleZh": "科技使全球通信成為可能。"
+  },
+  {
+    "en": "encourage",
+    "kk": "/ɪnˈkɜːrɪdʒ/",
+    "zh": "鼓勵、促進",
+    "example": "Teachers encourage students to ask questions.",
+    "exampleZh": "老師鼓勵學生提問。"
+  },
+  {
+    "en": "end",
+    "kk": "/end/",
+    "zh": "結束、末端",
+    "example": "Every story has a beginning and end.",
+    "exampleZh": "每個故 事都有開始和結尾。"
+  },
+  {
+    "en": "enemy",
+    "kk": "/ˈenəmi/",
+    "zh": "敵人、仇敵",
+    "example": "Ignorance is education's greatest enemy.",
+    "exampleZh": "無 知是教育最大的敵人。"
+  },
+  {
+    "en": "energy",
+    "kk": "/ˈenərdʒi/",
+    "zh": "能量、精力",
+    "example": "Solar panels convert sunlight into energy.",
+    "exampleZh": "太 陽能板將陽光轉換為能量。"
+  },
+  {
+    "en": "engine",
+    "kk": "/ˈendʒɪn/",
+    "zh": "引擎、發動機",
+    "example": "The car engine needs regular maintenance.",
+    "exampleZh": "汽車引擎需要定期保養。"
+  },
+  {
+    "en": "engineer",
+    "kk": "/ˌendʒɪˈnɪr/",
+    "zh": "工程師、設計",
+    "example": "Software engineers create computer programs.",
+    "exampleZh": "軟件工程師創建計算機程序。"
+  },
+  {
+    "en": "engineering",
+    "kk": "/ˌendʒɪˈnɪrɪŋ/",
+    "zh": "工程學、工程",
+    "example": "Engineering solutions solve complex problems.",
+    "exampleZh": "工程解決方案解決複雜問題。"
+  },
+  {
+    "en": "enjoy",
+    "kk": "/ɪnˈdʒɔɪ/",
+    "zh": "享受、喜歡",
+    "example": "Children enjoy playing in the park.",
+    "exampleZh": "孩子們喜歡 在公園裡玩耍。"
+  },
+  {
+    "en": "enormous",
+    "kk": "/ɪˈnɔːrməs/",
+    "zh": "巨大的、龐大的",
+    "example": "The enormous whale swam gracefully.",
+    "exampleZh": "巨大的 鯨魚優雅地游泳。"
+  },
+  {
+    "en": "enough",
+    "kk": "/ɪˈnʌf/",
+    "zh": "足夠的、充分地",
+    "example": "There isn't enough time to finish.",
+    "exampleZh": "沒有足夠的 時間完成。"
+  },
+  {
+    "en": "enter",
+    "kk": "/ˈentər/",
+    "zh": "進入、輸入",
+    "example": "Students enter the classroom quietly.",
+    "exampleZh": "學生安 靜地進入教室。"
+  },
+  {
+    "en": "entire",
+    "kk": "/ɪnˈtaɪər/",
+    "zh": "全部的、整個的",
+    "example": "She read the entire book overnight.",
+    "exampleZh": "她一夜之 間讀完了整本書。"
+  },
+  {
+    "en": "environment",
+    "kk": "/ɪnˈvaɪrənmənt/",
+    "zh": "環境、周圍",
+    "example": "Protecting the environment benefits everyone.",
+    "exampleZh": "保護環境對每個人都有益。"
+  },
+  {
+    "en": "equal",
+    "kk": "/ˈiːkwəl/",
+    "zh": "相等的、等於",
+    "example": "All people deserve equal treatment.",
+    "exampleZh": "所有人都 應得到平等對待。"
+  },
+  {
+    "en": "equipment",
+    "kk": "/ɪˈkwɪpmənt/",
+    "zh": "設備、器材",
+    "example": "Modern equipment improves work efficiency.",
+    "exampleZh": "現代設備提高工作效率。"
+  },
+  {
+    "en": "error",
+    "kk": "/ˈerər/",
+    "zh": "錯誤、過失",
+    "example": "Careful proofreading prevents typing errors.",
+    "exampleZh": "仔細校對防止打字錯誤。"
+  },
+  {
+    "en": "escape",
+    "kk": "/ɪˈskeɪp/",
+    "zh": "逃脫、逃避",
+    "example": "The prisoner planned to escape at night.",
+    "exampleZh": "囚 犯計劃在夜間逃脫。"
+  },
+  {
+    "en": "especially",
+    "kk": "/ɪˈspeʃəli/",
+    "zh": "特別地、尤其",
+    "example": "Exercise is important, especially for seniors.",
+    "exampleZh": "運動很重要，特別是對老年人。"
+  },
+  {
+    "en": "essay",
+    "kk": "/ˈeseɪ/",
+    "zh": "論文、散文",
+    "example": "Students write essays to express ideas.",
+    "exampleZh": "學生 寫論文表達想法。"
+  },
+  {
+    "en": "essential",
+    "kk": "/ɪˈsenʃl/",
+    "zh": "必要的、基本的",
+    "example": "Water is essential for all life.",
+    "exampleZh": "水對所有生命都 是必需的。"
+  },
+  {
+    "en": "establish",
+    "kk": "/ɪˈstæblɪʃ/",
+    "zh": "建立、確立",
+    "example": "Universities establish research programs.",
+    "exampleZh": "大 學建立研究項目。"
+  },
+  {
+    "en": "estimate",
+    "kk": "/ˈestɪmət/",
+    "zh": "估計、估算",
+    "example": "Contractors estimate project costs carefully.",
+    "exampleZh": "承包商仔細估算項目成本。"
+  },
+  {
+    "en": "ethnic",
+    "kk": "/ˈeθnɪk/",
+    "zh": "種族的、民族的",
+    "example": "Ethnic diversity enriches communities.",
+    "exampleZh": "種族多 樣性豐富了社區。"
+  },
+  {
+    "en": "European",
+    "kk": "/ˌjʊrəˈpiːən/",
+    "zh": "歐洲的、歐洲人",
+    "example": "European history spans many centuries.",
+    "exampleZh": "歐洲 歷史跨越許多世紀。"
+  },
+  {
+    "en": "even",
+    "kk": "/ˈiːvən/",
+    "zh": "甚至、平坦的",
+    "example": "Even experts make mistakes sometimes.",
+    "exampleZh": "甚 至專家有時也會犯錯。"
+  },
+  {
+    "en": "evening",
+    "kk": "/ˈiːvnɪŋ/",
+    "zh": "傍晚、晚上",
+    "example": "Family dinner happens every evening.",
+    "exampleZh": "家庭晚 餐每晚都有。"
+  },
+  {
+    "en": "event",
+    "kk": "/ɪˈvent/",
+    "zh": "事件、活動",
+    "example": "The charity event raised significant funds.",
+    "exampleZh": "慈 善活動籌集了大量資金。"
+  },
+  {
+    "en": "ever",
+    "kk": "/ˈevər/",
+    "zh": "曾經、永遠",
+    "example": "Have you ever visited another country?",
+    "exampleZh": "你曾 經訪問過其他國家嗎？"
+  },
+  {
+    "en": "every",
+    "kk": "/ˈevri/",
+    "zh": "每個、所有的",
+    "example": "Every student must attend orientation.",
+    "exampleZh": "每個 學生都必須參加迎新會。"
+  },
+  {
+    "en": "everybody",
+    "kk": "/ˈevribɑːdi/",
+    "zh": "每個人、人人",
+    "example": "Everybody enjoyed the school carnival.",
+    "exampleZh": "每個 人都喜歡學校嘉年華。"
+  },
+  {
+    "en": "everyone",
+    "kk": "/ˈevriwʌn/",
+    "zh": "每個人、所有人",
+    "example": "Everyone deserves respect and kindness.",
+    "exampleZh": "每 個人都應得到尊重和善意。"
+  },
+  {
+    "en": "everything",
+    "kk": "/ˈevriθɪŋ/",
+    "zh": "一切、所有事物",
+    "example": "Everything changes with time.",
+    "exampleZh": "一切都隨著時 間而改變。"
+  },
+  {
+    "en": "everywhere",
+    "kk": "/ˈevriwer/",
+    "zh": "到處、各處",
+    "example": "Technology is found everywhere today.",
+    "exampleZh": "今天 到處都能找到科技。"
+  },
+  {
+    "en": "evidence",
+    "kk": "/ˈevɪdəns/",
+    "zh": "證據、證明",
+    "example": "Scientific evidence supports the theory.",
+    "exampleZh": "科學 證據支持這個理論。"
+  },
+  {
+    "en": "exact",
+    "kk": "/ɪɡˈzækt/",
+    "zh": "確切的、精確的",
+    "example": "Please provide the exact time of arrival.",
+    "exampleZh": "請提 供確切的到達時間。"
+  },
+  {
+    "en": "examine",
+    "kk": "/ɪɡˈzæmɪn/",
+    "zh": "檢查、審視",
+    "example": "Doctors examine patients thoroughly.",
+    "exampleZh": "醫生徹 底檢查病人。"
+  },
+  {
+    "en": "example",
+    "kk": "/ɪɡˈzæmpl/",
+    "zh": "例子、範例",
+    "example": "Teachers use examples to explain concepts.",
+    "exampleZh": "老師用例子解釋概念。"
+  },
+  {
+    "en": "excellent",
+    "kk": "/ˈeksələnt/",
+    "zh": "優秀的、卓越的",
+    "example": "She received excellent grades this semester.",
+    "exampleZh": "她這學期獲得了優秀的成績。"
+  },
+  {
+    "en": "except",
+    "kk": "/ɪkˈsept/",
+    "zh": "除了、除...之外",
+    "example": "Everyone attended except the sick student.",
+    "exampleZh": "除了生病的學生外每個人都參加了。"
+  },
+  {
+    "en": "exchange",
+    "kk": "/ɪksˈtʃeɪndʒ/",
+    "zh": "交換、兌換",
+    "example": "Students exchange ideas during discussions.",
+    "exampleZh": "學生在討論中交換想法。"
+  },
+  {
+    "en": "exciting",
+    "kk": "/ɪkˈsaɪtɪŋ/",
+    "zh": "令人興奮的、刺激的",
+    "example": "Space exploration is exciting and challenging.",
+    "exampleZh": "太空探索令人興奮且富有挑戰性。"
+  },
+  {
+    "en": "excuse",
+    "kk": "/ɪkˈskjuːs/",
+    "zh": "原諒、藉口",
+    "example": "Excuse me for interrupting your conversation.",
+    "exampleZh": "對不起打斷了你們的談話。"
+  },
+  {
+    "en": "exercise",
+    "kk": "/ˈeksərsaɪz/",
+    "zh": "運動、練習",
+    "example": "Daily exercise strengthens the body.",
+    "exampleZh": "每日運 動強化身體。"
+  },
+  {
+    "en": "exist",
+    "kk": "/ɪɡˈzɪst/",
+    "zh": "存在、生存",
+    "example": "Many problems exist in modern society.",
+    "exampleZh": "現代 社會存在許多問題。"
+  },
+  {
+    "en": "exit",
+    "kk": "/ˈeɡzɪt/",
+    "zh": "出口、離開",
+    "example": "Emergency exits must remain clear.",
+    "exampleZh": "緊急出口 必須保持暢通。"
+  },
+  {
+    "en": "expand",
+    "kk": "/ɪkˈspænd/",
+    "zh": "擴展、膨脹",
+    "example": "Companies expand into new markets.",
+    "exampleZh": "公司擴 展到新市場。"
+  },
+  {
+    "en": "expect",
+    "kk": "/ɪkˈspekt/",
+    "zh": "期待、預期",
+    "example": "Parents expect children to study hard.",
+    "exampleZh": "父母期 待孩子努力學習。"
+  },
+  {
+    "en": "expensive",
+    "kk": "/ɪkˈspensɪv/",
+    "zh": "昂貴的、花費大的",
+    "example": "Expensive cars require costly maintenance.",
+    "exampleZh": "昂貴的汽車需要高成本維護。"
+  },
+  {
+    "en": "experience",
+    "kk": "/ɪkˈspɪriəns/",
+    "zh": "經驗、體驗",
+    "example": "Travel provides valuable life experience.",
+    "exampleZh": "旅行 提供寶貴的人生經驗。"
+  },
+  {
+    "en": "experiment",
+    "kk": "/ɪkˈsperɪmənt/",
+    "zh": "實驗、試驗",
+    "example": "Scientists experiment to test hypotheses.",
+    "exampleZh": "科 學家實驗來測試假設。"
+  },
+  {
+    "en": "expert",
+    "kk": "/ˈekspɜːrt/",
+    "zh": "專家、專業的",
+    "example": "Medical experts studied the disease.",
+    "exampleZh": "醫學專 家研究了這種疾病。"
+  },
+  {
+    "en": "explain",
+    "kk": "/ɪkˈspleɪn/",
+    "zh": "解釋、說明",
+    "example": "Teachers explain difficult concepts clearly.",
+    "exampleZh": "老 師清楚地解釋困難概念。"
+  },
+  {
+    "en": "explore",
+    "kk": "/ɪkˈsplɔːr/",
+    "zh": "探索、探險",
+    "example": "Children love to explore new places.",
+    "exampleZh": "孩子們喜 歡探索新地方。"
+  },
+  {
+    "en": "explosion",
+    "kk": "/ɪkˈsploʊʒn/",
+    "zh": "爆炸、爆發",
+    "example": "The explosion was heard for miles.",
+    "exampleZh": "爆炸聲在 幾英里外都能聽到。"
+  },
+  {
+    "en": "export",
+    "kk": "/ɪkˈspɔːrt/",
+    "zh": "出口、輸出",
+    "example": "Countries export goods to other nations.",
+    "exampleZh": "國 家向其他國家出口商品。"
+  },
+  {
+    "en": "express",
+    "kk": "/ɪkˈspres/",
+    "zh": "表達、快速的",
+    "example": "Artists express emotions through their work.",
+    "exampleZh": "藝術家通過作品表達情感。"
+  },
+  {
+    "en": "expression",
+    "kk": "/ɪkˈspreʃn/",
+    "zh": "表達、表情",
+    "example": "Her facial expression showed confusion.",
+    "exampleZh": "她的 面部表情顯示困惑。"
+  },
+  {
+    "en": "extend",
+    "kk": "/ɪkˈstend/",
+    "zh": "延伸、擴展",
+    "example": "The library will extend its hours.",
+    "exampleZh": "圖書館將延長 開放時間。"
+  },
+  {
+    "en": "extra",
+    "kk": "/ˈekstrə/",
+    "zh": "額外的、特別的",
+    "example": "Students receive extra credit for projects.",
+    "exampleZh": "學 生因項目獲得額外學分。"
+  },
+  {
+    "en": "extreme",
+    "kk": "/ɪkˈstriːm/",
+    "zh": "極端的、極限",
+    "example": "Extreme weather afefcts agriculture.",
+    "exampleZh": "極端天 氣影響農業。"
+  },
+  {
+    "en": "eye",
+    "kk": "/aɪ/",
+    "zh": "眼睛、視力",
+    "example": "Reading in dim light strains the eyes.",
+    "exampleZh": "在昏暗 光線下閱讀使眼睛疲勞。"
+  },
+  {
+    "en": "face",
+    "kk": "/feɪs/",
+    "zh": "臉、面對",
+    "example": "She smiled when they faced each other.",
+    "exampleZh": "當他 們面對面時她笑了。"
+  },
+  {
+    "en": "fact",
+    "kk": "/fækt/",
+    "zh": "事實、真相",
+    "example": "Scientists base theories on proven facts.",
+    "exampleZh": "科學 家基於已證實的事實建立理論。"
+  },
+  {
+    "en": "factor",
+    "kk": "/ˈfæktər/",
+    "zh": "因素、要素",
+    "example": "Weather is an important factor in agriculture.",
+    "exampleZh": "天氣是農業的重要因素。"
+  },
+  {
+    "en": "factory",
+    "kk": "/ˈfæktəri/",
+    "zh": "工廠、製造廠",
+    "example": "The factory produces automobiles efficiently.",
+    "exampleZh": "工廠高效生產汽車。"
+  },
+  {
+    "en": "fail",
+    "kk": "/feɪl/",
+    "zh": "失敗、不及格",
+    "example": "Students who don't study may fail exams.",
+    "exampleZh": "不 學習的學生可能會考試不及格。"
+  },
+  {
+    "en": "failure",
+    "kk": "/ˈfeɪljər/",
+    "zh": "失敗、故障",
+    "example": "Failure often leads to eventual success.",
+    "exampleZh": "失敗 往往導致最終成功。"
+  },
+  {
+    "en": "fair",
+    "kk": "/fer/",
+    "zh": "公平的、集市",
+    "example": "Everyone deserves fair treatment under law.",
+    "exampleZh": "每個人都應在法律下得到公平對待。"
+  },
+  {
+    "en": "faith",
+    "kk": "/feɪθ/",
+    "zh": "信仰、信心",
+    "example": "She kept faith despite many challenges.",
+    "exampleZh": "儘管 面臨許多挑戰她仍保持信心。"
+  },
+  {
+    "en": "fall",
+    "kk": "/fɔːl/",
+    "zh": "跌倒、秋天",
+    "example": "Leaves fall from trees in autumn.",
+    "exampleZh": "秋天樹葉從 樹上掉落。"
+  },
+  {
+    "en": "false",
+    "kk": "/fɔːls/",
+    "zh": "假的、錯誤的",
+    "example": "False information spreads quickly online.",
+    "exampleZh": "虛 假信息在網上傳播很快。"
+  },
+  {
+    "en": "familiar",
+    "kk": "/fəˈmɪljər/",
+    "zh": "熟悉的、常見的",
+    "example": "The song sounded familiar to everyone.",
+    "exampleZh": "這首 歌對每個人來說都很熟悉。"
+  },
+  {
+    "en": "family",
+    "kk": "/ˈfæməli/",
+    "zh": "家庭、家族",
+    "example": "Strong families support each other.",
+    "exampleZh": "強大的家 庭互相支持。"
+  },
+  {
+    "en": "famous",
+    "kk": "/ˈfeɪməs/",
+    "zh": "著名的、出名的",
+    "example": "Famous artists inspire future generations.",
+    "exampleZh": "著 名藝術家啟發後代。"
+  },
+  {
+    "en": "fan",
+    "kk": "/fæn/",
+    "zh": "風扇、粉絲",
+    "example": "The electric fan cooled the room.",
+    "exampleZh": "電風扇讓房 間涼爽。"
+  },
+  {
+    "en": "far",
+    "kk": "/fɑːr/",
+    "zh": "遠的、遠地",
+    "example": "The mountains look far in the distance.",
+    "exampleZh": "山脈 在遠處看起來很遠。"
+  },
+  {
+    "en": "farm",
+    "kk": "/fɑːrm/",
+    "zh": "農場、務農",
+    "example": "Organic farms grow healthy vegetables.",
+    "exampleZh": "有機 農場種植健康蔬菜。"
+  },
+  {
+    "en": "farmer",
+    "kk": "/ˈfɑːrmər/",
+    "zh": "農民、農夫",
+    "example": "The farmer harvested wheat in summer.",
+    "exampleZh": "農民 在夏天收穫小麥。"
+  },
+  {
+    "en": "fashion",
+    "kk": "/ˈfæʃn/",
+    "zh": "時尚、方式",
+    "example": "Paris inful ences global fashion trends.",
+    "exampleZh": "巴黎影 響全球時尚趨勢。"
+  },
+  {
+    "en": "fast",
+    "kk": "/fæst/",
+    "zh": "快的、快速地",
+    "example": "Fast internet connections improve productivity.",
+    "exampleZh": "快速網路連接提高生產力。"
+  },
+  {
+    "en": "fat",
+    "kk": "/fæt/",
+    "zh": "胖的、脂肪",
+    "example": "Healthy diets limit saturated fat intake.",
+    "exampleZh": "健康 飲食限制飽和脂肪攝入。"
+  },
+  {
+    "en": "father",
+    "kk": "/ˈfɑːðər/",
+    "zh": "父親、爸爸",
+    "example": "Her father taught her to ride bicycles.",
+    "exampleZh": "她父親 教她騎自行車。"
+  },
+  {
+    "en": "fault",
+    "kk": "/fɔːlt/",
+    "zh": "過錯、故障",
+    "example": "The earthquake caused no fault in anyone.",
+    "exampleZh": "地震不是任何人的過錯。"
+  },
+  {
+    "en": "favor",
+    "kk": "/ˈfeɪvər/",
+    "zh": "恩惠、支持",
+    "example": "Could you do me a small favor?",
+    "exampleZh": "你能幫我一個 小忙嗎？"
+  },
+  {
+    "en": "favorite",
+    "kk": "/ˈfeɪvərɪt/",
+    "zh": "最喜愛的、最愛",
+    "example": "Chocolate is her favorite dessert.",
+    "exampleZh": "巧克力是她 最喜愛的甜點。"
+  },
+  {
+    "en": "fear",
+    "kk": "/fɪr/",
+    "zh": "恐懼、害怕",
+    "example": "Public speaking creates fear in many people.",
+    "exampleZh": "公眾演講讓許多人感到恐懼。"
+  },
+  {
+    "en": "feature",
+    "kk": "/ˈfiːtʃər/",
+    "zh": "特徵、以...為特色",
+    "example": "The new phone features advanced camera technology.",
+    "exampleZh": "新手機以先進相機技術為特色。"
+  },
+  {
+    "en": "federal",
+    "kk": "/ˈfedərəl/",
+    "zh": "聯邦的、聯邦政府的",
+    "example": "Federal laws apply to all states.",
+    "exampleZh": "聯邦法律適用 於所有州。"
+  },
+  {
+    "en": "fee",
+    "kk": "/fiː/",
+    "zh": "費用、報酬",
+    "example": "University fees increase every year.",
+    "exampleZh": "大學費用 每年都在增加。"
+  },
+  {
+    "en": "feed",
+    "kk": "/fiːd/",
+    "zh": "餵食、飼料",
+    "example": "Parents feed babies nutritious food.",
+    "exampleZh": "父母給嬰 兒餵營養食物。"
+  },
+  {
+    "en": "feel",
+    "kk": "/fiːl/",
+    "zh": "感覺、觸摸",
+    "example": "Students feel nervous before important exams.",
+    "exampleZh": "學生在重要考試前感到緊張。"
+  },
+  {
+    "en": "feeling",
+    "kk": "/ˈfiːlɪŋ/",
+    "zh": "感覺、情感",
+    "example": "Happy feelings improve mental health.",
+    "exampleZh": "快樂 的感覺改善心理健康。"
+  },
+  {
+    "en": "fellow",
+    "kk": "/ˈfeloʊ/",
+    "zh": "同伴、同事",
+    "example": "Fellow students helped during difficult times.",
+    "exampleZh": "同學在困難時期提供了幫助。"
+  },
+  {
+    "en": "female",
+    "kk": "/ˈfiːmeɪl/",
+    "zh": "女性的、雌性的",
+    "example": "Female leaders inspire young girls.",
+    "exampleZh": "女性領導 者激勵年輕女孩。"
+  },
+  {
+    "en": "fence",
+    "kk": "/fens/",
+    "zh": "圍欄、柵欄",
+    "example": "The white fence surrounds the garden.",
+    "exampleZh": "白色圍 欄包圍著花園。"
+  },
+  {
+    "en": "few",
+    "kk": "/fjuː/",
+    "zh": "少數的、幾個",
+    "example": "Only a few students arrived early.",
+    "exampleZh": "只有少數學 生早到。"
+  },
+  {
+    "en": "field",
+    "kk": "/fiːld/",
+    "zh": "田野、領域",
+    "example": "The research field attracts many scientists.",
+    "exampleZh": "研究領域吸引許多科學家。"
+  },
+  {
+    "en": "fifteen",
+    "kk": "/ˌfɪfˈtiːn/",
+    "zh": "十五",
+    "example": "The class has fifteen enthusiastic students.",
+    "exampleZh": "班級有十五名熱情的學生。"
+  },
+  {
+    "en": "fifty",
+    "kk": "/ˈfɪfti/",
+    "zh": "五十",
+    "example": "She celebrated her fiftieth birthday.",
+    "exampleZh": "她慶祝了 五十歲生日。"
+  },
+  {
+    "en": "fight",
+    "kk": "/faɪt/",
+    "zh": "戰鬥、打架",
+    "example": "Nations must fight against poverty.",
+    "exampleZh": "國家必須 與貧困作鬥爭。"
+  },
+  {
+    "en": "figure",
+    "kk": "/ˈfɪɡjər/",
+    "zh": "數字、人物、認為",
+    "example": "Scientists figure out complex equations.",
+    "exampleZh": "科學 家解出複雜方程式。"
+  },
+  {
+    "en": "file",
+    "kk": "/faɪl/",
+    "zh": "文件、檔案",
+    "example": "Students organize notes in separate files.",
+    "exampleZh": "學 生將筆記分別整理在不同檔案中。"
+  },
+  {
+    "en": "fill",
+    "kk": "/fɪl/",
+    "zh": "裝滿、填充",
+    "example": "Fill the glass with fresh water.",
+    "exampleZh": "用新鮮水裝滿玻 璃杯。"
+  },
+  {
+    "en": "film",
+    "kk": "/fɪlm/",
+    "zh": "電影、拍攝",
+    "example": "The documentary film educated audiences.",
+    "exampleZh": "紀錄片教育了觀眾。"
+  },
+  {
+    "en": "final",
+    "kk": "/ˈfaɪnl/",
+    "zh": "最終的、期末考",
+    "example": "The final decision rests with management.",
+    "exampleZh": "最 終決定由管理層決定。"
+  },
+  {
+    "en": "finally",
+    "kk": "/ˈfaɪnəli/",
+    "zh": "最後、終於",
+    "example": "Finally, the long project was completed.",
+    "exampleZh": "最後 ，這個長期項目完成了。"
+  },
+  {
+    "en": "financial",
+    "kk": "/faɪˈnænʃl/",
+    "zh": "財務的、金融的",
+    "example": "Financial planning secures future stability.",
+    "exampleZh": "財 務規劃確保未來穩定。"
+  },
+  {
+    "en": "find",
+    "kk": "/faɪnd/",
+    "zh": "找到、發現",
+    "example": "Researchers find solutions to problems.",
+    "exampleZh": "研究 人員找到問題的解決方案。"
+  },
+  {
+    "en": "fine",
+    "kk": "/faɪn/",
+    "zh": "好的、罰款",
+    "example": "The weather is fine for outdoor activities.",
+    "exampleZh": "天 氣很適合戶外活動。"
+  },
+  {
+    "en": "finger",
+    "kk": "/ˈfɪŋɡər/",
+    "zh": "手指",
+    "example": "She pointed with her index finger.",
+    "exampleZh": "她用食指指 著。"
+  },
+  {
+    "en": "finish",
+    "kk": "/ˈfɪnɪʃ/",
+    "zh": "完成、結束",
+    "example": "Students finish assignments before deadlines.",
+    "exampleZh": "學生在截止日期前完成作業。"
+  },
+  {
+    "en": "fire",
+    "kk": "/ˈfaɪər/",
+    "zh": "火、解雇",
+    "example": "The campfire provided warmth and light.",
+    "exampleZh": "營 火提供了溫暖和光亮。"
+  },
+  {
+    "en": "firm",
+    "kk": "/fɜːrm/",
+    "zh": "堅固的、公司",
+    "example": "The firm handshake showed confidence.",
+    "exampleZh": "堅實 的握手顯示了信心。"
+  },
+  {
+    "en": "first",
+    "kk": "/fɜːrst/",
+    "zh": "第一的、首先",
+    "example": "First impressions often inful ence opinions.",
+    "exampleZh": "第 一印象經常影響觀點。"
+  },
+  {
+    "en": "fish",
+    "kk": "/fɪʃ/",
+    "zh": "魚、釣魚",
+    "example": "Fresh fish provides healthy protein.",
+    "exampleZh": "新鮮魚類 提供健康蛋白質。"
+  },
+  {
+    "en": "fit",
+    "kk": "/fɪt/",
+    "zh": "合適的、適合",
+    "example": "Regular exercise keeps people fit.",
+    "exampleZh": "定期運動讓 人保持健康。"
+  },
+  {
+    "en": "five",
+    "kk": "/faɪv/",
+    "zh": "五、五個",
+    "example": "The meeting starts at five o'clock.",
+    "exampleZh": "會議五點開 始。"
+  },
+  {
+    "en": "fix",
+    "kk": "/fɪks/",
+    "zh": "修理、固定",
+    "example": "Mechanics fix broken car engines.",
+    "exampleZh": "機械師修理 壞掉的汽車引擎。"
+  },
+  {
+    "en": "fal",
+    "kk": "",
+    "zh": "旗幟、標記",
+    "example": "The national fal g represents country pride.",
+    "exampleZh": "國 旗代表國家自豪感。"
+  },
+  {
+    "en": "fal",
+    "kk": "",
+    "zh": "平坦的、公寓",
+    "example": "The fal t road made driving easy.",
+    "exampleZh": "平坦的道路 讓駕駛變得容易。"
+  },
+  {
+    "en": "flight",
+    "kk": "/fal ɪt/",
+    "zh": "飛行、航班",
+    "example": "The flight departed on schedule.",
+    "exampleZh": "航班按時起 飛。"
+  },
+  {
+    "en": "fol",
+    "kk": "",
+    "zh": "地板、樓層",
+    "example": "The marble fol or sparkled after cleaning.",
+    "exampleZh": "大 理石地板清潔後閃閃發光。"
+  },
+  {
+    "en": "fol",
+    "kk": "",
+    "zh": "流動、流量",
+    "example": "Rivers fol w toward the ocean.",
+    "exampleZh": "河流向海洋流 淌。"
+  },
+  {
+    "en": "fol",
+    "kk": "",
+    "zh": "花、開花",
+    "example": "Beautiful fol wers bloom in spring.",
+    "exampleZh": "美麗的花朵 在春天綻放。"
+  },
+  {
+    "en": "fyl",
+    "kk": "/fal ɪ/",
+    "zh": "飛、蒼蠅",
+    "example": "Birds fyl south during winter migration.",
+    "exampleZh": "鳥類 在冬季遷徙時向南飛。"
+  },
+  {
+    "en": "focus",
+    "kk": "/ˈfoʊkəs/",
+    "zh": "專注、焦點",
+    "example": "Students focus better in quiet environments.",
+    "exampleZh": "學生在安靜環境中專注度更好。"
+  },
+  {
+    "en": "folk",
+    "kk": "/foʊk/",
+    "zh": "民眾、民間的",
+    "example": "Folk music tells traditional stories.",
+    "exampleZh": "民間音樂講 述傳統故事。"
+  },
+  {
+    "en": "follow",
+    "kk": "/ˈfɑːloʊ/",
+    "zh": "跟隨、遵循",
+    "example": "Students follow safety rules carefully.",
+    "exampleZh": "學生仔 細遵循安全規則。"
+  },
+  {
+    "en": "food",
+    "kk": "/fuːd/",
+    "zh": "食物、食品",
+    "example": "Nutritious food supports healthy growth.",
+    "exampleZh": "營 養食物支持健康成長。"
+  },
+  {
+    "en": "foot",
+    "kk": "/fʊt/",
+    "zh": "腳、英尺",
+    "example": "She walked barefoot on the sand.",
+    "exampleZh": "她赤腳走在 沙灘上。"
+  },
+  {
+    "en": "football",
+    "kk": "/ˈfʊtbɔːl/",
+    "zh": "足球、美式足球",
+    "example": "Football is popular worldwide.",
+    "exampleZh": "足球在世界範 圍內很受歡迎。"
+  },
+  {
+    "en": "for",
+    "kk": "/fɔːr/",
+    "zh": "為了、給",
+    "example": "She studied hard for the exam.",
+    "exampleZh": "她為考試努力 學習。"
+  },
+  {
+    "en": "force",
+    "kk": "/fɔːrs/",
+    "zh": "力量、強迫",
+    "example": "Physical force can move heavy objects.",
+    "exampleZh": "物理 力可以移動重物。"
+  },
+  {
+    "en": "foreign",
+    "kk": "/ˈfɔːrən/",
+    "zh": "外國的、外來的",
+    "example": "Foreign languages open career opportunities.",
+    "exampleZh": "外語開啟職業機會。"
+  },
+  {
+    "en": "forest",
+    "kk": "/ˈfɔːrəst/",
+    "zh": "森林、林區",
+    "example": "The dense forest sheltered many animals.",
+    "exampleZh": "茂 密的森林庇護許多動物。"
+  },
+  {
+    "en": "forever",
+    "kk": "/fərˈevər/",
+    "zh": "永遠、永久",
+    "example": "True friendship lasts forever.",
+    "exampleZh": "真正的友誼永遠 持續。"
+  },
+  {
+    "en": "forget",
+    "kk": "/fərˈɡet/",
+    "zh": "忘記、遺忘",
+    "example": "Students sometimes forget homework assignments.",
+    "exampleZh": "學生有時會忘記作業。"
+  },
+  {
+    "en": "form",
+    "kk": "/fɔːrm/",
+    "zh": "形式、形成",
+    "example": "Ice forms when water freezes.",
+    "exampleZh": "水結冰時形成 冰。"
+  },
+  {
+    "en": "formal",
+    "kk": "/ˈfɔːrml/",
+    "zh": "正式的、正規的",
+    "example": "Formal education develops critical thinking.",
+    "exampleZh": "正規教育發展批判性思維。"
+  },
+  {
+    "en": "former",
+    "kk": "/ˈfɔːrmər/",
+    "zh": "以前的、前任的",
+    "example": "The former president visited the school.",
+    "exampleZh": "前總 統訪問了學校。"
+  },
+  {
+    "en": "fortune",
+    "kk": "/ˈfɔːrtʃən/",
+    "zh": "財富、運氣",
+    "example": "Hard work often brings good fortune.",
+    "exampleZh": "努力工 作往往帶來好運。"
+  },
+  {
+    "en": "forward",
+    "kk": "/ˈfɔːrwərd/",
+    "zh": "向前、前面的",
+    "example": "Please move forward in the line.",
+    "exampleZh": "請在隊伍中 向前移動。"
+  },
+  {
+    "en": "found",
+    "kk": "/faʊnd/",
+    "zh": "建立、發現",
+    "example": "Universities were founded centuries ago.",
+    "exampleZh": "大 學是幾個世紀前建立的。"
+  },
+  {
+    "en": "four",
+    "kk": "/fɔːr/",
+    "zh": "四、四個",
+    "example": "The table has four wooden legs.",
+    "exampleZh": "桌子有四條木 腿。"
+  },
+  {
+    "en": "fourteen",
+    "kk": "/ˌfɔːrˈtiːn/",
+    "zh": "十四",
+    "example": "Fourteen students passed the test.",
+    "exampleZh": "十四名學 生通過了考試。"
+  },
+  {
+    "en": "frame",
+    "kk": "/freɪm/",
+    "zh": "框架、構架",
+    "example": "The picture frame was made of silver.",
+    "exampleZh": "相框是 銀製的。"
+  },
+  {
+    "en": "free",
+    "kk": "/friː/",
+    "zh": "自由的、免費的",
+    "example": "Education should be free for everyone.",
+    "exampleZh": "教育 對每個人都應該是免費的。"
+  },
+  {
+    "en": "freedom",
+    "kk": "/ˈfriːdəm/",
+    "zh": "自由、自主",
+    "example": "Democracy guarantees individual freedom.",
+    "exampleZh": "民主保證個人自由。"
+  },
+  {
+    "en": "frequently",
+    "kk": "/ˈfriːkwəntli/",
+    "zh": "經常地、頻繁地",
+    "example": "Students frequently ask questions in class.",
+    "exampleZh": "學生在課堂上經常提問。"
+  },
+  {
+    "en": "fresh",
+    "kk": "/freʃ/",
+    "zh": "新鮮的、清新的",
+    "example": "Fresh air improves concentration.",
+    "exampleZh": "新鮮空氣提 高注意力。"
+  },
+  {
+    "en": "Friday",
+    "kk": "/ˈfraɪdeɪ/",
+    "zh": "星期五",
+    "example": "Friday afternoon classes end early.",
+    "exampleZh": "星期五下 午的課程提早結束。"
+  },
+  {
+    "en": "friend",
+    "kk": "/frend/",
+    "zh": "朋友、友人",
+    "example": "True friends support each other.",
+    "exampleZh": "真正的朋友 互相支持。"
+  },
+  {
+    "en": "friendly",
+    "kk": "/ˈfrendli/",
+    "zh": "友好的、友善的",
+    "example": "Friendly people make others comfortable.",
+    "exampleZh": "友 善的人讓他人感到舒適。"
+  },
+  {
+    "en": "friendship",
+    "kk": "/ˈfrendʃɪp/",
+    "zh": "友誼、友情",
+    "example": "Strong friendship develops over time.",
+    "exampleZh": "深厚的 友誼需要時間發展。"
+  },
+  {
+    "en": "from",
+    "kk": "/frʌm/",
+    "zh": "從、來自",
+    "example": "She graduated from a prestigious university.",
+    "exampleZh": "她從名牌大學畢業。"
+  },
+  {
+    "en": "front",
+    "kk": "/frʌnt/",
+    "zh": "前面、前方的",
+    "example": "Students sit in the front row.",
+    "exampleZh": "學生坐在前排。"
+  },
+  {
+    "en": "fruit",
+    "kk": "/fruːt/",
+    "zh": "水果、果實",
+    "example": "Fruit provides essential vitamins.",
+    "exampleZh": "水果提供必 需的維生素。"
+  },
+  {
+    "en": "fuel",
+    "kk": "/ˈfjuːəl/",
+    "zh": "燃料、加燃料",
+    "example": "Cars need fuel to operate properly.",
+    "exampleZh": "汽車需要 燃料才能正常運行。"
+  },
+  {
+    "en": "full",
+    "kk": "/fʊl/",
+    "zh": "滿的、完整的",
+    "example": "The full moon illuminated the night.",
+    "exampleZh": "滿月照亮 了夜晚。"
+  },
+  {
+    "en": "fun",
+    "kk": "/fʌn/",
+    "zh": "樂趣、有趣的",
+    "example": "Learning can be both educational and fun.",
+    "exampleZh": "學習既可以有教育意義又可以有趣。"
+  },
+  {
+    "en": "function",
+    "kk": "/ˈfʌŋkʃn/",
+    "zh": "功能、運作",
+    "example": "Each organ has a specific function.",
+    "exampleZh": "每個器官 都有特定功能。"
+  },
+  {
+    "en": "fund",
+    "kk": "/fʌnd/",
+    "zh": "資金、資助",
+    "example": "The scholarship fund helps needy students.",
+    "exampleZh": "獎學金基金幫助有需要的學生。"
+  },
+  {
+    "en": "fundamental",
+    "kk": "/ˌfʌndəˈmentl/",
+    "zh": "基本的、根本的",
+    "example": "Reading is a fundamental skill.",
+    "exampleZh": "閱讀是一項基 本技能。"
+  },
+  {
+    "en": "funny",
+    "kk": "/ˈfʌni/",
+    "zh": "有趣的、奇怪的",
+    "example": "The comedian told funny jokes.",
+    "exampleZh": "喜劇演員講了 有趣的笑話。"
+  },
+  {
+    "en": "furniture",
+    "kk": "/ˈfɜːrnɪtʃər/",
+    "zh": "家具",
+    "example": "Quality furniture lasts for decades.",
+    "exampleZh": "優質家具 可以使用幾十年。"
+  },
+  {
+    "en": "future",
+    "kk": "/ˈfjuːtʃər/",
+    "zh": "未來、將來的",
+    "example": "Education prepares students for the future.",
+    "exampleZh": "教育為學生的未來做準備。"
+  },
+  {
+    "en": "gain",
+    "kk": "/ɡeɪn/",
+    "zh": "獲得、增加",
+    "example": "Students gain knowledge through experience.",
+    "exampleZh": "學生透過經驗獲得知識。"
+  },
+  {
+    "en": "game",
+    "kk": "/ɡeɪm/",
+    "zh": "遊戲、比賽",
+    "example": "Educational games make learning enjoyable.",
+    "exampleZh": "教育遊戲讓學習變得有趣。"
+  },
+  {
+    "en": "garden",
+    "kk": "/ˈɡɑːrdn/",
+    "zh": "花園、菜園",
+    "example": "The school garden teaches students about nature.",
+    "exampleZh": "學校花園教導學生關於自然。"
+  },
+  {
+    "en": "gas",
+    "kk": "/ɡæs/",
+    "zh": "氣體、汽油",
+    "example": "Natural gas provides energy for cooking.",
+    "exampleZh": "天然 氣為烹飪提供能源。"
+  },
+  {
+    "en": "general",
+    "kk": "/ˈdʒenərəl/",
+    "zh": "一般的、將軍",
+    "example": "General knowledge helps in many situations.",
+    "exampleZh": "常識在許多情況下都有幫助。"
+  },
+  {
+    "en": "generate",
+    "kk": "/ˈdʒenəreɪt/",
+    "zh": "產生、生成",
+    "example": "Solar panels generate clean electricity.",
+    "exampleZh": "太陽能 板產生清潔電力。"
+  },
+  {
+    "en": "gift",
+    "kk": "/ɡɪft/",
+    "zh": "禮物、天賦",
+    "example": "Music is her natural gift.",
+    "exampleZh": "音樂是她的天賦。"
+  },
+  {
+    "en": "girl",
+    "kk": "/ɡɜːrl/",
+    "zh": "女孩、姑娘",
+    "example": "The young girl excelled in mathematics.",
+    "exampleZh": "年輕 女孩在數學方面表現出色。"
+  },
+  {
+    "en": "give",
+    "kk": "/ɡɪv/",
+    "zh": "給予、提供",
+    "example": "Teachers give students valuable feedback.",
+    "exampleZh": "老 師給學生寶貴的反饋。"
+  },
+  {
+    "en": "glass",
+    "kk": "/ɡlæs/",
+    "zh": "玻璃、眼鏡",
+    "example": "The glass windows let in natural light.",
+    "exampleZh": "玻璃窗讓 自然光進入。"
+  },
+  {
+    "en": "global",
+    "kk": "/ˈɡloʊbl/",
+    "zh": "全球的、全世界的",
+    "example": "Global warming afefcts everyone.",
+    "exampleZh": "全球暖化影 響每個人。"
+  },
+  {
+    "en": "goal",
+    "kk": "/ɡoʊl/",
+    "zh": "目標、進球",
+    "example": "Setting clear goals motivates students.",
+    "exampleZh": "設定明 確目標激勵學生。"
+  },
+  {
+    "en": "gold",
+    "kk": "/ɡoʊld/",
+    "zh": "黃金、金色的",
+    "example": "The gold medal represents excellence.",
+    "exampleZh": "金牌代 表卓越。"
+  },
+  {
+    "en": "good",
+    "kk": "/ɡʊd/",
+    "zh": "好的、良好的",
+    "example": "Good study habits improve academic performance.",
+    "exampleZh": "良好的學習習慣提升學術表現。"
+  },
+  {
+    "en": "government",
+    "kk": "/ˈɡʌvərnmənt/",
+    "zh": "政府",
+    "example": "Democratic governments serve the people.",
+    "exampleZh": "民 主政府為人民服務。"
+  },
+  {
+    "en": "grade",
+    "kk": "/ɡreɪd/",
+    "zh": "年級、評分",
+    "example": "Teachers grade assignments fairly.",
+    "exampleZh": "老師公平地 評分作業。"
+  },
+  {
+    "en": "grand",
+    "kk": "/ɡrænd/",
+    "zh": "宏偉的、重大的",
+    "example": "The grand library impressed all visitors.",
+    "exampleZh": "宏偉的 圖書館讓所有訪客印象深刻。"
+  },
+  {
+    "en": "great",
+    "kk": "/ɡreɪt/",
+    "zh": "偉大的、極好的",
+    "example": "Great teachers inspire lifelong learning.",
+    "exampleZh": "偉大的 老師啟發終身學習。"
+  },
+  {
+    "en": "green",
+    "kk": "/ɡriːn/",
+    "zh": "綠色的、綠色",
+    "example": "Green plants purify the air naturally.",
+    "exampleZh": "綠色植物 自然地淨化空氣。"
+  },
+  {
+    "en": "ground",
+    "kk": "/ɡraʊnd/",
+    "zh": "地面、根據",
+    "example": "The playground ground was covered with grass.",
+    "exampleZh": "操場地面覆蓋著草。"
+  },
+  {
+    "en": "group",
+    "kk": "/ɡruːp/",
+    "zh": "群體、分組",
+    "example": "Study groups enhance collaborative learning.",
+    "exampleZh": "學習小組增強協作學習。"
+  },
+  {
+    "en": "grow",
+    "kk": "/ɡroʊ/",
+    "zh": "成長、種植",
+    "example": "Children grow physically and intellectually.",
+    "exampleZh": "孩 子在身體和智力上成長。"
+  },
+  {
+    "en": "guard",
+    "kk": "/ɡɑːrd/",
+    "zh": "守衛、保護",
+    "example": "Security guards protect school property.",
+    "exampleZh": "保安 人員保護學校財產。"
+  },
+  {
+    "en": "guess",
+    "kk": "/ɡes/",
+    "zh": "猜測、推測",
+    "example": "Students guess answers when uncertain.",
+    "exampleZh": "學生 不確定時會猜測答案。"
+  },
+  {
+    "en": "guest",
+    "kk": "/ɡest/",
+    "zh": "客人、嘉賓",
+    "example": "The guest speaker inspired the students.",
+    "exampleZh": "客座 講者啟發了學生們。"
+  },
+  {
+    "en": "guide",
+    "kk": "/ɡaɪd/",
+    "zh": "指南、指導",
+    "example": "Teachers guide students through complex topics.",
+    "exampleZh": "老師指導學生學習複雜主題。"
+  },
+  {
+    "en": "gun",
+    "kk": "/ɡʌn/",
+    "zh": "槍、槍支",
+    "example": "Police officers carry guns for protection.",
+    "exampleZh": "警察 攜帶槍支進行保護。"
+  },
+  {
+    "en": "habit",
+    "kk": "/ˈhæbɪt/",
+    "zh": "習慣、嗜好",
+    "example": "Good study habits improve academic performance.",
+    "exampleZh": "良好的學習習慣提升學術表現。"
+  },
+  {
+    "en": "hair",
+    "kk": "/her/",
+    "zh": "頭髮、毛髮",
+    "example": "She tied her long hair in a ponytail.",
+    "exampleZh": "她把長髮紮 成馬尾。"
+  },
+  {
+    "en": "half",
+    "kk": "/hæf/",
+    "zh": "一半、半個",
+    "example": "Half the students passed the exam.",
+    "exampleZh": "一半的學 生通過了考試。"
+  },
+  {
+    "en": "hall",
+    "kk": "/hɔːl/",
+    "zh": "大廳、走廊",
+    "example": "The assembly hall accommodated all students.",
+    "exampleZh": "大會堂容納了所有學生。"
+  },
+  {
+    "en": "hand",
+    "kk": "/hænd/",
+    "zh": "手、指針",
+    "example": "Skilled hands create beautiful artwork.",
+    "exampleZh": "靈巧的 雙手創造美麗的藝術作品。"
+  },
+  {
+    "en": "handle",
+    "kk": "/ˈhændl/",
+    "zh": "處理、把手",
+    "example": "Students learn to handle stress efefctively.",
+    "exampleZh": "學 生學會有效地處理壓力。"
+  },
+  {
+    "en": "hang",
+    "kk": "/hæŋ/",
+    "zh": "懸掛、吊",
+    "example": "Students hang artwork on classroom walls.",
+    "exampleZh": "學 生將藝術作品掛在教室牆上。"
+  },
+  {
+    "en": "happen",
+    "kk": "/ˈhæpən/",
+    "zh": "發生、出現",
+    "example": "Learning breakthroughs happen with persistence.",
+    "exampleZh": "學習突破在堅持下發生。"
+  },
+  {
+    "en": "happy",
+    "kk": "/ˈhæpi/",
+    "zh": "快樂的、高興的",
+    "example": "Happy students learn more efefctively.",
+    "exampleZh": "快樂的 學生學習更有效。"
+  },
+  {
+    "en": "hard",
+    "kk": "/hɑːrd/",
+    "zh": "困難的、努力地",
+    "example": "Hard work leads to academic success.",
+    "exampleZh": "努力工 作導致學術成功。"
+  },
+  {
+    "en": "hat",
+    "kk": "/hæt/",
+    "zh": "帽子",
+    "example": "She wore a hat to protect from sun.",
+    "exampleZh": "她戴帽子 防曬。"
+  },
+  {
+    "en": "hate",
+    "kk": "/heɪt/",
+    "zh": "恨、討厭",
+    "example": "Students hate unfair treatment.",
+    "exampleZh": "學生討厭不公 平待遇。"
+  },
+  {
+    "en": "have",
+    "kk": "/hæv/",
+    "zh": "有、擁有",
+    "example": "All students have equal learning opportunities.",
+    "exampleZh": "所有學生都有平等的學習機會。"
+  },
+  {
+    "en": "head",
+    "kk": "/hed/",
+    "zh": "頭、領導",
+    "example": "The department head supervised new teachers.",
+    "exampleZh": "系主任監督新教師。"
+  },
+  {
+    "en": "health",
+    "kk": "/helθ/",
+    "zh": "健康",
+    "example": "Regular exercise maintains good health.",
+    "exampleZh": "定期 運動維持良好健康。"
+  },
+  {
+    "en": "hear",
+    "kk": "/hɪr/",
+    "zh": "聽到、聽說",
+    "example": "Students hear instructions clearly.",
+    "exampleZh": "學生清楚地 聽到指示。"
+  },
+  {
+    "en": "heart",
+    "kk": "/hɑːrt/",
+    "zh": "心臟、心",
+    "example": "A healthy heart pumps blood efficiently.",
+    "exampleZh": "健康 的心臟有效地泵血。"
+  },
+  {
+    "en": "heat",
+    "kk": "/hiːt/",
+    "zh": "熱、加熱",
+    "example": "The classroom heat made students sleepy.",
+    "exampleZh": "教 室的熱氣讓學生昏昏欲睡。"
+  },
+  {
+    "en": "heavy",
+    "kk": "/ˈhevi/",
+    "zh": "重的、嚴重的",
+    "example": "Heavy textbooks strain students' backs.",
+    "exampleZh": "沉重 的教科書讓學生背部拉傷。"
+  },
+  {
+    "en": "height",
+    "kk": "/haɪt/",
+    "zh": "高度、身高",
+    "example": "The building's height impressed visitors.",
+    "exampleZh": "建築 物的高度讓訪客印象深刻。"
+  },
+  {
+    "en": "help",
+    "kk": "/help/",
+    "zh": "幫助、協助",
+    "example": "Teachers help students overcome challenges.",
+    "exampleZh": "老師幫助學生克服挑戰。"
+  },
+  {
+    "en": "her",
+    "kk": "/hər/",
+    "zh": "她的、她",
+    "example": "Her dedication inspired fellow students.",
+    "exampleZh": "她的 奉獻精神啟發了同學們。"
+  },
+  {
+    "en": "here",
+    "kk": "/hɪr/",
+    "zh": "這裡、在此",
+    "example": "Here is where learning happens daily.",
+    "exampleZh": "這裡是 每天學習發生的地方。"
+  },
+  {
+    "en": "hero",
+    "kk": "/ˈhɪroʊ/",
+    "zh": "英雄、主角",
+    "example": "Teachers are unsung heroes of society.",
+    "exampleZh": "老師是 社會的無名英雄。"
+  },
+  {
+    "en": "hide",
+    "kk": "/haɪd/",
+    "zh": "隱藏、躲藏",
+    "example": "Students cannot hide from their responsibilities.",
+    "exampleZh": "學生無法逃避責任。"
+  },
+  {
+    "en": "high",
+    "kk": "/haɪ/",
+    "zh": "高的、高級的",
+    "example": "High standards ensure quality education.",
+    "exampleZh": "高標 準確保優質教育。"
+  },
+  {
+    "en": "keep",
+    "kk": "/kiːp/",
+    "zh": "保持、維持",
+    "example": "Students keep learning throughout their lives.",
+    "exampleZh": "學 生終生保持學習。"
+  },
+  {
+    "en": "key",
+    "kk": "/kiː/",
+    "zh": "鑰匙、關鍵的",
+    "example": "Understanding is the key to efefctive learning.",
+    "exampleZh": "理 解是有效學習的關鍵。"
+  },
+  {
+    "en": "kick",
+    "kk": "/kɪk/",
+    "zh": "踢、踢腿",
+    "example": "Soccer players kick the ball skillfully.",
+    "exampleZh": "足球運動員 熟練地踢球。"
+  },
+  {
+    "en": "kid",
+    "kk": "/kɪd/",
+    "zh": "小孩、孩子",
+    "example": "Every kid deserves quality education.",
+    "exampleZh": "每個孩子都 應得到優質教育。"
+  },
+  {
+    "en": "kill",
+    "kk": "/kɪl/",
+    "zh": "殺死、消除",
+    "example": "Stress can kill motivation and creativity.",
+    "exampleZh": "壓力會扼 殺動機和創造力。"
+  },
+  {
+    "en": "kind",
+    "kk": "/kaɪnd/",
+    "zh": "種類、善良的",
+    "example": "Kind teachers create supportive learning environments.",
+    "exampleZh": "善良的老師創造支持性學習環境。"
+  },
+  {
+    "en": "king",
+    "kk": "/kɪŋ/",
+    "zh": "國王、王者",
+    "example": "The chess king is the most important piece.",
+    "exampleZh": "國際 象棋中國王是最重要的棋子。"
+  },
+  {
+    "en": "kitchen",
+    "kk": "/ˈkɪtʃən/",
+    "zh": "廚房",
+    "example": "The school kitchen serves nutritious meals.",
+    "exampleZh": "學校 廚房提供營養餐點。"
+  },
+  {
+    "en": "knee",
+    "kk": "/niː/",
+    "zh": "膝蓋",
+    "example": "Basketball players protect their knees carefully.",
+    "exampleZh": "籃球運動員小心保護膝蓋。"
+  },
+  {
+    "en": "knife",
+    "kk": "/naɪf/",
+    "zh": "刀子、刀具",
+    "example": "The knife must be handled safely.",
+    "exampleZh": "刀子必須安全使 用。"
+  },
+  {
+    "en": "knock",
+    "kk": "/nɑːk/",
+    "zh": "敲、敲門",
+    "example": "Students knock before entering the office.",
+    "exampleZh": "學生進 辦公室前先敲門。"
+  },
+  {
+    "en": "know",
+    "kk": "/noʊ/",
+    "zh": "知道、了解",
+    "example": "Students know more when they ask questions.",
+    "exampleZh": "學 生提問時會了解更多。"
+  },
+  {
+    "en": "knowledge",
+    "kk": "/ˈnɑːlɪdʒ/",
+    "zh": "知識、學問",
+    "example": "Knowledge empowers individuals to make better choices.",
+    "exampleZh": "知識使個人能夠做出更好的選擇。"
+  },
+  {
+    "en": "lack",
+    "kk": "/læk/",
+    "zh": "缺乏、不足",
+    "example": "Students should not lack access to resources.",
+    "exampleZh": "學 生不應該缺乏資源。"
+  },
+  {
+    "en": "lady",
+    "kk": "/ˈleɪdi/",
+    "zh": "女士、淑女",
+    "example": "The lady donated books to the library.",
+    "exampleZh": "女士向圖書 館捐贈書籍。"
+  },
+  {
+    "en": "lake",
+    "kk": "/leɪk/",
+    "zh": "湖、湖泊",
+    "example": "The school trip visited a beautiful lake.",
+    "exampleZh": "學校旅行 參觀了美麗的湖泊。"
+  },
+  {
+    "en": "land",
+    "kk": "/lænd/",
+    "zh": "土地、著陸",
+    "example": "Agricultural land produces food for society.",
+    "exampleZh": "農業 用地為社會生產糧食。"
+  },
+  {
+    "en": "language",
+    "kk": "/ˈlæŋɡwɪdʒ/",
+    "zh": "語言",
+    "example": "Language connects people across cultures.",
+    "exampleZh": "語言 連接跨文化的人們。"
+  },
+  {
+    "en": "large",
+    "kk": "/lɑːrdʒ/",
+    "zh": "大的、廣泛的",
+    "example": "Large vocabularies improve communication skills.",
+    "exampleZh": "豐富的詞彙提升溝通技巧。"
+  },
+  {
+    "en": "last",
+    "kk": "/læst/",
+    "zh": "最後的、持續",
+    "example": "Good education benefits last a lifetime.",
+    "exampleZh": "良好教育 的益處持續一生。"
+  },
+  {
+    "en": "late",
+    "kk": "/leɪt/",
+    "zh": "遲的、晚的",
+    "example": "Late study sessions afefct concentration.",
+    "exampleZh": "深夜學 習影響注意力。"
+  },
+  {
+    "en": "laugh",
+    "kk": "/læf/",
+    "zh": "笑、大笑",
+    "example": "Students laugh during enjoyable lessons.",
+    "exampleZh": "學生在 有趣的課程中大笑。"
+  },
+  {
+    "en": "law",
+    "kk": "/lɔː/",
+    "zh": "法律、法則",
+    "example": "Educational laws protect student rights.",
+    "exampleZh": "教育法律 保護學生權利。"
+  },
+  {
+    "en": "lay",
+    "kk": "/leɪ/",
+    "zh": "放置、躺下",
+    "example": "Teachers lay the foundation for learning.",
+    "exampleZh": "老師為 學習奠定基礎。"
+  },
+  {
+    "en": "lead",
+    "kk": "/liːd/",
+    "zh": "領導、引導",
+    "example": "Great teachers lead by example.",
+    "exampleZh": "優秀的老師以身 作則領導。"
+  },
+  {
+    "en": "leader",
+    "kk": "/ˈliːdər/",
+    "zh": "領導者、領袖",
+    "example": "Student leaders organize school activities.",
+    "exampleZh": "學生領 袖組織學校活動。"
+  },
+  {
+    "en": "learn",
+    "kk": "/lɜːrn/",
+    "zh": "學習、得知",
+    "example": "Children learn best through active engagement.",
+    "exampleZh": "孩子通過積極參與學得最好。"
+  },
+  {
+    "en": "least",
+    "kk": "/liːst/",
+    "zh": "最少的、最小的",
+    "example": "Every student needs at least basic education.",
+    "exampleZh": "每 個學生至少需要基礎教育。"
+  },
+  {
+    "en": "leave",
+    "kk": "/liːv/",
+    "zh": "離開、留下",
+    "example": "Students leave school with valuable skills.",
+    "exampleZh": "學生帶 著寶貴技能離開學校。"
+  },
+  {
+    "en": "left",
+    "kk": "/left/",
+    "zh": "左邊的、左側",
+    "example": "Turn left at the library entrance.",
+    "exampleZh": "在圖書館入口向左 轉。"
+  },
+  {
+    "en": "leg",
+    "kk": "/leɡ/",
+    "zh": "腿、支柱",
+    "example": "Athletes strengthen their legs through training.",
+    "exampleZh": "運 動員通過訓練強化腿部。"
+  },
+  {
+    "en": "legal",
+    "kk": "/ˈliːɡl/",
+    "zh": "法律的、合法的",
+    "example": "Legal education teaches about rights and duties.",
+    "exampleZh": "法學教育教授權利和義務。"
+  },
+  {
+    "en": "less",
+    "kk": "/les/",
+    "zh": "更少的、較少",
+    "example": "Less homework allows more family time.",
+    "exampleZh": "較少的 作業允許更多家庭時間。"
+  },
+  {
+    "en": "lesson",
+    "kk": "/ˈlesn/",
+    "zh": "課程、教訓",
+    "example": "Each lesson builds upon previous knowledge.",
+    "exampleZh": "每 堂課都建立在先前知識之上。"
+  },
+  {
+    "en": "let",
+    "kk": "/let/",
+    "zh": "讓、允許",
+    "example": "Teachers let students explore their interests.",
+    "exampleZh": "老師 讓學生探索興趣。"
+  },
+  {
+    "en": "letter",
+    "kk": "/ˈletər/",
+    "zh": "字母、信件",
+    "example": "Each letter has a specific sound.",
+    "exampleZh": "每個字母都有特 定的聲音。"
+  },
+  {
+    "en": "level",
+    "kk": "/ˈlevl/",
+    "zh": "水平、程度",
+    "example": "Advanced level courses challenge students.",
+    "exampleZh": "高級 課程挑戰學生。"
+  },
+  {
+    "en": "library",
+    "kk": "/ˈlaɪbreri/",
+    "zh": "圖書館",
+    "example": "The library provides quiet study spaces.",
+    "exampleZh": "圖書館提 供安靜的學習空間。"
+  },
+  {
+    "en": "lie",
+    "kk": "/laɪ/",
+    "zh": "說謊、躺下",
+    "example": "Honesty means never telling a lie.",
+    "exampleZh": "誠實意味著從不 說謊。"
+  },
+  {
+    "en": "life",
+    "kk": "/laɪf/",
+    "zh": "生活、生命",
+    "example": "Education enriches life experiences.",
+    "exampleZh": "教育豐富人生 經歷。"
+  },
+  {
+    "en": "lift",
+    "kk": "/lɪft/",
+    "zh": "舉起、電梯",
+    "example": "Education lifts people out of poverty.",
+    "exampleZh": "教育使人們 擺脫貧困。"
+  },
+  {
+    "en": "light",
+    "kk": "/laɪt/",
+    "zh": "光、輕的",
+    "example": "Natural light improves learning environments.",
+    "exampleZh": "自 然光改善學習環境。"
+  },
+  {
+    "en": "like",
+    "kk": "/laɪk/",
+    "zh": "喜歡、像",
+    "example": "Students like interactive learning activities.",
+    "exampleZh": "學生 喜歡互動學習活動。"
+  },
+  {
+    "en": "line",
+    "kk": "/laɪn/",
+    "zh": "線、排隊",
+    "example": "Students form a line for library check-out.",
+    "exampleZh": "學生排 隊借閱圖書館書籍。"
+  },
+  {
+    "en": "link",
+    "kk": "/lɪŋk/",
+    "zh": "連結、聯繫",
+    "example": "Education links theory with practice.",
+    "exampleZh": "教育將理論 與實踐聯繫起來。"
+  },
+  {
+    "en": "list",
+    "kk": "/lɪst/",
+    "zh": "清單、列出",
+    "example": "Students list their learning goals.",
+    "exampleZh": "學生列出學習目 標。"
+  },
+  {
+    "en": "listen",
+    "kk": "/ˈlɪsn/",
+    "zh": "聽、傾聽",
+    "example": "Good students listen actively in class.",
+    "exampleZh": "好學生在課 堂上積極傾聽。"
+  },
+  {
+    "en": "little",
+    "kk": "/ˈlɪtl/",
+    "zh": "小的、少量",
+    "example": "Little children learn through play.",
+    "exampleZh": "小孩子通過遊戲 學習。"
+  },
+  {
+    "en": "live",
+    "kk": "/lɪv/",
+    "zh": "生活、居住",
+    "example": "Students live in diverse communities.",
+    "exampleZh": "學生生活在 多樣化社區中。"
+  },
+  {
+    "en": "local",
+    "kk": "/ˈloʊkl/",
+    "zh": "當地的、本地的",
+    "example": "Local schools serve community needs.",
+    "exampleZh": "當地學校 服務社區需求。"
+  },
+  {
+    "en": "lock",
+    "kk": "/lɑːk/",
+    "zh": "鎖、鎖住",
+    "example": "Students lock their lockers securely.",
+    "exampleZh": "學生安全地鎖 好儲物櫃。"
+  },
+  {
+    "en": "long",
+    "kk": "/lɔːŋ/",
+    "zh": "長的、長期的",
+    "example": "Long-term memory requires regular review.",
+    "exampleZh": "長期 記憶需要定期複習。"
+  },
+  {
+    "en": "name",
+    "kk": "/neɪm/",
+    "zh": "名字、命名",
+    "example": "Each student has a unique name and identity.",
+    "exampleZh": "每個學生都有獨特的姓名和身分。"
+  },
+  {
+    "en": "nation",
+    "kk": "/ˈneɪʃn/",
+    "zh": "國家、民族",
+    "example": "Education strengthens the nation's future.",
+    "exampleZh": "教 育強化國家的未來。"
+  },
+  {
+    "en": "natural",
+    "kk": "/ˈnætʃərəl/",
+    "zh": "自然的、天然的",
+    "example": "Natural curiosity drives efefctive learning.",
+    "exampleZh": "天 然好奇心驅動有效學習。"
+  },
+  {
+    "en": "nature",
+    "kk": "/ˈneɪtʃər/",
+    "zh": "自然、本性",
+    "example": "Understanding human nature helps teachers connect with students.",
+    "exampleZh": "理解人性幫助教師與學 生建立聯繫。"
+  },
+  {
+    "en": "near",
+    "kk": "/nɪr/",
+    "zh": "接近的、靠近",
+    "example": "The library is near the science building.",
+    "exampleZh": "圖書館 靠近科學大樓。"
+  },
+  {
+    "en": "necessary",
+    "kk": "/ˈnesəseri/",
+    "zh": "必要的、必需的",
+    "example": "Regular practice is necessary for skill development.",
+    "exampleZh": "定期練習對技能發展是必要的。"
+  },
+  {
+    "en": "neck",
+    "kk": "/nek/",
+    "zh": "脖子、頸部",
+    "example": "Students stretch their necks during breaks.",
+    "exampleZh": "學 生在休息時伸展脖子。"
+  },
+  {
+    "en": "need",
+    "kk": "/niːd/",
+    "zh": "需要、需求",
+    "example": "Students need supportive learning environments.",
+    "exampleZh": "學生需要支持性學習環境。"
+  },
+  {
+    "en": "neighbor",
+    "kk": "/ˈneɪbər/",
+    "zh": "鄰居、鄰近的",
+    "example": "School neighbors support educational activities.",
+    "exampleZh": "學校鄰居支持教育活動。"
+  },
+  {
+    "en": "neither",
+    "kk": "/ˈniːðər/",
+    "zh": "兩者都不、也不",
+    "example": "Neither teacher nor student gave up easily.",
+    "exampleZh": "老 師和學生都沒有輕易放棄。"
+  },
+  {
+    "en": "nerve",
+    "kk": "/nɜːrv/",
+    "zh": "神經、勇氣",
+    "example": "It takes nerve to speak in public.",
+    "exampleZh": "公開演講需要 勇氣。"
+  },
+  {
+    "en": "net",
+    "kk": "/net/",
+    "zh": "網、網路的",
+    "example": "The internet net connects global learners.",
+    "exampleZh": "網際 網路連接全球學習者。"
+  },
+  {
+    "en": "network",
+    "kk": "/ˈnetwɜːrk/",
+    "zh": "網絡、建立關係",
+    "example": "Social networks enhance learning opportunities.",
+    "exampleZh": "社交網絡增強學習機會。"
+  },
+  {
+    "en": "neutral",
+    "kk": "/ˈnuːtrəl/",
+    "zh": "中立的、中性的",
+    "example": "Teachers remain neutral in student conflicts.",
+    "exampleZh": "老師在學生衝突中保持中立。"
+  },
+  {
+    "en": "never",
+    "kk": "/ˈnevər/",
+    "zh": "從不、絕不",
+    "example": "Good teachers never stop learning themselves.",
+    "exampleZh": "好老師從不停止自我學習。"
+  },
+  {
+    "en": "new",
+    "kk": "/nuː/",
+    "zh": "新的、新鮮的",
+    "example": "New technologies transform education methods.",
+    "exampleZh": "新技術改變教育方法。"
+  },
+  {
+    "en": "news",
+    "kk": "/nuːz/",
+    "zh": "新聞、消息",
+    "example": "Current news connects classroom learning to real world.",
+    "exampleZh": "時事新聞將課堂學習與現實世界聯繫 起來。"
+  },
+  {
+    "en": "next",
+    "kk": "/nekst/",
+    "zh": "下一個、接下來",
+    "example": "Next semester ofefrs advanced courses.",
+    "exampleZh": "下學 期提供高級課程。"
+  },
+  {
+    "en": "nice",
+    "kk": "/naɪs/",
+    "zh": "好的、令人愉快的",
+    "example": "Nice weather encourages outdoor learning.",
+    "exampleZh": "好 天氣鼓勵戶外學習。"
+  },
+  {
+    "en": "night",
+    "kk": "/naɪt/",
+    "zh": "夜晚、晚上",
+    "example": "Some students study late into the night.",
+    "exampleZh": "一些 學生學習到深夜。"
+  },
+  {
+    "en": "nine",
+    "kk": "/naɪn/",
+    "zh": "九、九個",
+    "example": "The course lasts nine months.",
+    "exampleZh": "課程持續九個 月。"
+  },
+  {
+    "en": "nobody",
+    "kk": "/ˈnoʊbɑːdi/",
+    "zh": "沒有人、無人",
+    "example": "Nobody should be denied education.",
+    "exampleZh": "沒有人應 該被剝奪教育。"
+  },
+  {
+    "en": "noise",
+    "kk": "/nɔɪz/",
+    "zh": "噪音、雜音",
+    "example": "Excessive noise disrupts concentration.",
+    "exampleZh": "過多噪 音干擾專注力。"
+  },
+  {
+    "en": "none",
+    "kk": "/nʌn/",
+    "zh": "沒有、無一",
+    "example": "None of the students failed the test.",
+    "exampleZh": "學生中沒 有人考試不及格。"
+  },
+  {
+    "en": "normal",
+    "kk": "/ˈnɔːrml/",
+    "zh": "正常的、標準的",
+    "example": "Making mistakes is normal in the learning process.",
+    "exampleZh": "在學習過程中犯錯是正常的。"
+  },
+  {
+    "en": "north",
+    "kk": "/nɔːrθ/",
+    "zh": "北方、北部的",
+    "example": "The north campus has new facilities.",
+    "exampleZh": "北校區有 新設施。"
+  },
+  {
+    "en": "nose",
+    "kk": "/noʊz/",
+    "zh": "鼻子",
+    "example": "Students cover their nose when sneezing.",
+    "exampleZh": "學生 打噴嚏時摀住鼻子。"
+  },
+  {
+    "en": "not",
+    "kk": "/nɑːt/",
+    "zh": "不、沒有",
+    "example": "Students should not plagiarize work.",
+    "exampleZh": "學生不應 該抄襲作業。"
+  },
+  {
+    "en": "note",
+    "kk": "/noʊt/",
+    "zh": "筆記、注意",
+    "example": "Taking detailed notes improves information retention.",
+    "exampleZh": "做詳細筆記提高信息保持。"
+  },
+  {
+    "en": "nothing",
+    "kk": "/ˈnʌθɪŋ/",
+    "zh": "沒有什麼、無事",
+    "example": "Nothing replaces dedicated study time.",
+    "exampleZh": "沒有 什麼能替代專注的學習時間。"
+  },
+  {
+    "en": "notice",
+    "kk": "/ˈnoʊtɪs/",
+    "zh": "注意到、通知",
+    "example": "Students notice improvements in their skills.",
+    "exampleZh": "學生注意到技能的提升。"
+  },
+  {
+    "en": "now",
+    "kk": "/naʊ/",
+    "zh": "現在、目前",
+    "example": "Now is the time to start studying.",
+    "exampleZh": "現在是開始 學習的時候。"
+  },
+  {
+    "en": "number",
+    "kk": "/ˈnʌmbər/",
+    "zh": "數字、號碼",
+    "example": "Each student has an identification number.",
+    "exampleZh": "每 個學生都有識別號碼。"
+  },
+  {
+    "en": "object",
+    "kk": "/ˈɑːbdʒɪkt/",
+    "zh": "物體、目標",
+    "example": "Learning objects should engage multiple senses.",
+    "exampleZh": "學習物件應該調動多種感官。"
+  },
+  {
+    "en": "observe",
+    "kk": "/əbˈzɜːrv/",
+    "zh": "觀察、遵守",
+    "example": "Scientists observe phenomena carefully.",
+    "exampleZh": "科學 家仔細觀察現象。"
+  },
+  {
+    "en": "obtain",
+    "kk": "/əbˈteɪn/",
+    "zh": "獲得、取得",
+    "example": "Students obtain knowledge through various methods.",
+    "exampleZh": "學生通過各種方法獲得知識。"
+  },
+  {
+    "en": "obvious",
+    "kk": "/ˈɑːbviəs/",
+    "zh": "明顯的、顯而易見的",
+    "example": "The benefits of education are obvious to everyone.",
+    "exampleZh": "教育的益處對每個人都是顯而易見的。"
+  },
+  {
+    "en": "occasion",
+    "kk": "/əˈkeɪʒn/",
+    "zh": "場合、機會",
+    "example": "Graduation is a special occasion for families.",
+    "exampleZh": "畢業是家庭的特殊場合。"
+  },
+  {
+    "en": "occur",
+    "kk": "/əˈkɜːr/",
+    "zh": "發生、出現",
+    "example": "Learning breakthroughs occur through persistent efofrt.",
+    "exampleZh": "學習突破通過持續努力而發 生。"
+  },
+  {
+    "en": "ocean",
+    "kk": "/ˈoʊʃn/",
+    "zh": "海洋",
+    "example": "Marine biology students study ocean ecosystems.",
+    "exampleZh": "海洋生物學學生研究海洋生態系 統。"
+  },
+  {
+    "en": "odd",
+    "kk": "/ɑːd/",
+    "zh": "奇怪的、奇數的",
+    "example": "Odd numbers include 1, 3, and 5.",
+    "exampleZh": "奇數包括1、3 和5。"
+  },
+  {
+    "en": "of",
+    "kk": "/ʌv/",
+    "zh": "的、屬於",
+    "example": "Education is the key of success.",
+    "exampleZh": "教育是成功的 關鍵。"
+  },
+  {
+    "en": "off",
+    "kk": "/ɔːf/",
+    "zh": "離開、關閉",
+    "example": "Students turn off phones during class.",
+    "exampleZh": "學生上 課時關閉手機。"
+  },
+  {
+    "en": "ofefr",
+    "kk": "/ˈɔːfər/",
+    "zh": "提供、提議",
+    "example": "Universities ofefr diverse academic programs.",
+    "exampleZh": "大學提供多樣化的學術項目。"
+  },
+  {
+    "en": "office",
+    "kk": "/ˈɔːfɪs/",
+    "zh": "辦公室、職務",
+    "example": "The principal's office handles student issues.",
+    "exampleZh": "校長辦公室處理學生問題。"
+  },
+  {
+    "en": "often",
+    "kk": "/ˈɔːfən/",
+    "zh": "經常、常常",
+    "example": "Successful students often review their notes regularly.",
+    "exampleZh": "成功的學生經常定期複習筆記。"
+  },
+  {
+    "en": "oil",
+    "kk": "/ɔɪl/",
+    "zh": "油、石油",
+    "example": "Art students use oil paints for portraits.",
+    "exampleZh": "藝術 學生使用油畫顏料畫肖像。"
+  },
+  {
+    "en": "old",
+    "kk": "/oʊld/",
+    "zh": "老的、舊的",
+    "example": "Old learning methods can still be efefctive today.",
+    "exampleZh": "舊的學習方法在今天仍然有效。"
+  },
+  {
+    "en": "on",
+    "kk": "/ɑːn/",
+    "zh": "在...上、關於",
+    "example": "Students focus on their studies.",
+    "exampleZh": "學生專注於學 習。"
+  },
+  {
+    "en": "once",
+    "kk": "/wʌns/",
+    "zh": "一次、曾經",
+    "example": "Once students master basics, advanced topics follow.",
+    "exampleZh": "學生一旦掌握基礎，高級主題就會跟上。"
+  },
+  {
+    "en": "one",
+    "kk": "/wʌn/",
+    "zh": "一、一個",
+    "example": "One teacher can impact many lives.",
+    "exampleZh": "一位老師 可以影響許多生命。"
+  },
+  {
+    "en": "only",
+    "kk": "/ˈoʊnli/",
+    "zh": "只有、唯一的",
+    "example": "Only persistent efofrt leads to mastery.",
+    "exampleZh": "只有持 續努力才能達到精通。"
+  },
+  {
+    "en": "open",
+    "kk": "/ˈoʊpən/",
+    "zh": "開放的、打開",
+    "example": "Open communication enhances teacher-student relationships.",
+    "exampleZh": "開放的溝通增強 師生關係。"
+  },
+  {
+    "en": "operate",
+    "kk": "/ˈɑːpəreɪt/",
+    "zh": "操作、運行",
+    "example": "Students learn to operate laboratory equipment.",
+    "exampleZh": "學生學會操作實驗室設備。"
+  },
+  {
+    "en": "opinion",
+    "kk": "/əˈpɪnjən/",
+    "zh": "意見、觀點",
+    "example": "Students express their opinions in debates.",
+    "exampleZh": "學 生在辯論中表達觀點。"
+  },
+  {
+    "en": "opportunity",
+    "kk": "/ˌɑːpərˈtuːnəti/",
+    "zh": "機會、時機",
+    "example": "Education creates opportunities for personal growth.",
+    "exampleZh": "教育為個人成長創造機會。"
+  },
+  {
+    "en": "opposite",
+    "kk": "/ˈɑːpəzɪt/",
+    "zh": "相反的、對面",
+    "example": "Students sit opposite each other during discussions.",
+    "exampleZh": "學生在討論時面對面坐著。"
+  },
+  {
+    "en": "option",
+    "kk": "/ˈɑːpʃn/",
+    "zh": "選擇、選項",
+    "example": "Students have many course options available.",
+    "exampleZh": "學生有很多課程選擇。"
+  },
+  {
+    "en": "or",
+    "kk": "/ɔːr/",
+    "zh": "或者、還是",
+    "example": "Students can choose math or science electives.",
+    "exampleZh": "學生可以選擇數學或科學選修課。"
+  },
+  {
+    "en": "order",
+    "kk": "/ˈɔːrdər/",
+    "zh": "順序、命令",
+    "example": "Learning complex concepts requires proper order.",
+    "exampleZh": "學習複雜概念需要適當的順序。"
+  },
+  {
+    "en": "ordinary",
+    "kk": "/ˈɔːrdəneri/",
+    "zh": "普通的、平常的",
+    "example": "Ordinary students can achieve extraordinary results.",
+    "exampleZh": "普通學生可以取得非凡成果。"
+  },
+  {
+    "en": "organization",
+    "kk": "/ˌɔːrɡənəˈzeɪʃn/",
+    "zh": "組織、機構",
+    "example": "Student organizations promote leadership skills.",
+    "exampleZh": "學生組織促進領導技能。"
+  },
+  {
+    "en": "organize",
+    "kk": "/ˈɔːrɡənaɪz/",
+    "zh": "組織、安排",
+    "example": "Teachers organize field trips for students.",
+    "exampleZh": "老師 為學生組織實地考察。"
+  },
+  {
+    "en": "original",
+    "kk": "/əˈrɪdʒənl/",
+    "zh": "原始的、原創的",
+    "example": "Students create original research projects.",
+    "exampleZh": "學 生創建原創研究項目。"
+  },
+  {
+    "en": "other",
+    "kk": "/ˈʌðər/",
+    "zh": "其他的、另一個",
+    "example": "Students help other classmates succeed.",
+    "exampleZh": "學生 幫助其他同學成功。"
+  },
+  {
+    "en": "ought",
+    "kk": "/ɔːt/",
+    "zh": "應該、理應",
+    "example": "Students ought to respect their teachers.",
+    "exampleZh": "學生 應該尊重老師。"
+  },
+  {
+    "en": "our",
+    "kk": "/aʊr/",
+    "zh": "我們的",
+    "example": "Our school promotes inclusive education.",
+    "exampleZh": "我們 的學校促進包容性教育。"
+  },
+  {
+    "en": "out",
+    "kk": "/aʊt/",
+    "zh": "外面、出去",
+    "example": "Students learn out in the real world.",
+    "exampleZh": "學生在現 實世界中學習。"
+  },
+  {
+    "en": "outside",
+    "kk": "/ˌaʊtˈsaɪd/",
+    "zh": "外面、戶外",
+    "example": "Outside activities enhance classroom learning.",
+    "exampleZh": "戶外活動增強課堂學習。"
+  },
+  {
+    "en": "over",
+    "kk": "/ˈoʊvər/",
+    "zh": "在...上方、結束",
+    "example": "The semester is over in two weeks.",
+    "exampleZh": "學期兩週後 結束。"
+  },
+  {
+    "en": "own",
+    "kk": "/oʊn/",
+    "zh": "自己的、擁有",
+    "example": "Students own responsibility for their learning.",
+    "exampleZh": "學生擁有學習的責任。"
+  },
+  {
+    "en": "pack",
+    "kk": "/pæk/",
+    "zh": "打包、包裝",
+    "example": "Students pack books for the field trip.",
+    "exampleZh": "學生為 實地考察打包書籍。"
+  },
+  {
+    "en": "page",
+    "kk": "/peɪdʒ/",
+    "zh": "頁面、頁數",
+    "example": "Students read every page of the assignment.",
+    "exampleZh": "學生閱讀作業的每一頁。"
+  },
+  {
+    "en": "pain",
+    "kk": "/peɪn/",
+    "zh": "疼痛、痛苦",
+    "example": "Growing pains are part of learning.",
+    "exampleZh": "成長的痛 苦是學習的一部分。"
+  },
+  {
+    "en": "paint",
+    "kk": "/peɪnt/",
+    "zh": "油漆、繪畫",
+    "example": "Art students paint beautiful landscapes.",
+    "exampleZh": "藝術 學生繪畫美麗的風景。"
+  },
+  {
+    "en": "pair",
+    "kk": "/per/",
+    "zh": "一對、配對",
+    "example": "Students work in pairs for projects.",
+    "exampleZh": "學生成對 進行項目工作。"
+  },
+  {
+    "en": "paper",
+    "kk": "/ˈpeɪpər/",
+    "zh": "紙張、論文",
+    "example": "Students write research papers carefully.",
+    "exampleZh": "學 生仔細撰寫研究論文。"
+  },
+  {
+    "en": "parent",
+    "kk": "/ˈperənt/",
+    "zh": "父母、親代",
+    "example": "Parents support their children's education.",
+    "exampleZh": "父 母支持孩子的教育。"
+  },
+  {
+    "en": "park",
+    "kk": "/pɑːrk/",
+    "zh": "公園、停車",
+    "example": "Students study in the quiet park.",
+    "exampleZh": "學生在安靜 的公園學習。"
+  },
+  {
+    "en": "part",
+    "kk": "/pɑːrt/",
+    "zh": "部分、角色",
+    "example": "Each student plays a part in class success.",
+    "exampleZh": "每個學生在班級成功中扮演角色。"
+  },
+  {
+    "en": "particular",
+    "kk": "/pərˈtɪkjələr/",
+    "zh": "特別的、特定的",
+    "example": "This particular method works well.",
+    "exampleZh": "這種特定 方法效果很好。"
+  },
+  {
+    "en": "partner",
+    "kk": "/ˈpɑːrtnər/",
+    "zh": "夥伴、搭檔",
+    "example": "Study partners help each other learn.",
+    "exampleZh": "學習夥 伴互相幫助學習。"
+  },
+  {
+    "en": "party",
+    "kk": "/ˈpɑːrti/",
+    "zh": "聚會、政黨",
+    "example": "The graduation party celebrated achievements.",
+    "exampleZh": "畢業聚會慶祝成就。"
+  },
+  {
+    "en": "pass",
+    "kk": "/pæs/",
+    "zh": "通過、及格",
+    "example": "All students hope to pass their exams.",
+    "exampleZh": "所有學 生都希望通過考試。"
+  },
+  {
+    "en": "past",
+    "kk": "/pæst/",
+    "zh": "過去的、過去",
+    "example": "Students learn from past experiences.",
+    "exampleZh": "學生從 過去的經驗中學習。"
+  },
+  {
+    "en": "path",
+    "kk": "/pæθ/",
+    "zh": "道路、路徑",
+    "example": "Education opens many career paths.",
+    "exampleZh": "教育開 啟許多職業道路。"
+  },
+  {
+    "en": "patient",
+    "kk": "/ˈpeɪʃnt/",
+    "zh": "耐心的、病人",
+    "example": "Patient teachers help struggling students.",
+    "exampleZh": "耐 心的老師幫助有困難的學生。"
+  },
+  {
+    "en": "pattern",
+    "kk": "/ˈpætərn/",
+    "zh": "模式、圖案",
+    "example": "Recognizing patterns accelerates language learning.",
+    "exampleZh": "識別模式加速語言學習。"
+  },
+  {
+    "en": "pay",
+    "kk": "/peɪ/",
+    "zh": "支付、薪水",
+    "example": "Hard work pays off in education.",
+    "exampleZh": "在教育中努 力工作會有回報。"
+  },
+  {
+    "en": "peace",
+    "kk": "/piːs/",
+    "zh": "和平、平靜",
+    "example": "The library provides peace for studying.",
+    "exampleZh": "圖書 館為學習提供平靜。"
+  },
+  {
+    "en": "pen",
+    "kk": "/pen/",
+    "zh": "筆、鋼筆",
+    "example": "Students write notes with a pen.",
+    "exampleZh": "學生用筆做 筆記。"
+  },
+  {
+    "en": "people",
+    "kk": "/ˈpiːpl/",
+    "zh": "人們、民族",
+    "example": "Education empowers people to improve their lives.",
+    "exampleZh": "教育使人們能夠改善生活。"
+  },
+  {
+    "en": "perfect",
+    "kk": "/ˈpɜːrfɪkt/",
+    "zh": "完美的、理想的",
+    "example": "Perfect pronunciation requires continuous practice.",
+    "exampleZh": "完美發音需要持續練習。"
+  },
+  {
+    "en": "perform",
+    "kk": "/pərˈfɔːrm/",
+    "zh": "表演、執行",
+    "example": "Students perform well with proper preparation.",
+    "exampleZh": "學生在適當準備下表現良好。"
+  },
+  {
+    "en": "perhaps",
+    "kk": "/pərˈhæps/",
+    "zh": "也許、可能",
+    "example": "Perhaps the most important skill is learning how to learn.",
+    "exampleZh": "也許最重要的技能是學會如何學 習。"
+  },
+  {
+    "en": "period",
+    "kk": "/ˈpɪriəd/",
+    "zh": "時期、句號",
+    "example": "The study period lasts two hours.",
+    "exampleZh": "學習時間持 續兩小時。"
+  },
+  {
+    "en": "person",
+    "kk": "/ˈpɜːrsn/",
+    "zh": "人、個人",
+    "example": "Each person has unique learning preferences.",
+    "exampleZh": "每個人都有獨特的學習偏好。"
+  },
+  {
+    "en": "personal",
+    "kk": "/ˈpɜːrsənl/",
+    "zh": "個人的、私人的",
+    "example": "Personal growth happens through education.",
+    "exampleZh": "個人成長通過教育實現。"
+  },
+  {
+    "en": "phone",
+    "kk": "/foʊn/",
+    "zh": "電話、打電話",
+    "example": "Students phone parents about achievements.",
+    "exampleZh": "學生打電話告訴父母成就。"
+  },
+  {
+    "en": "photo",
+    "kk": "/ˈfoʊtoʊ/",
+    "zh": "照片、相片",
+    "example": "The yearbook photo captured memories.",
+    "exampleZh": "年 鑑照片捕捉了回憶。"
+  },
+  {
+    "en": "physical",
+    "kk": "/ˈfɪzɪkl/",
+    "zh": "身體的、物理的",
+    "example": "Physical exercise enhances cognitive function.",
+    "exampleZh": "體育鍛煉增強認知功能。"
+  },
+  {
+    "en": "pick",
+    "kk": "/pɪk/",
+    "zh": "挑選、選擇",
+    "example": "Students pick their favorite subjects.",
+    "exampleZh": "學生挑 選最喜歡的科目。"
+  },
+  {
+    "en": "picture",
+    "kk": "/ˈpɪktʃər/",
+    "zh": "圖片、畫面",
+    "example": "Visual pictures help memorize vocabulary efefctively.",
+    "exampleZh": "視覺圖片有助於有效記憶詞彙。"
+  },
+  {
+    "en": "piece",
+    "kk": "/piːs/",
+    "zh": "片、件",
+    "example": "Each piece of the puzzle matters.",
+    "exampleZh": "拼圖的每一 片都很重要。"
+  },
+  {
+    "en": "place",
+    "kk": "/pleɪs/",
+    "zh": "地方、放置",
+    "example": "A quiet place improves concentration during study.",
+    "exampleZh": "安靜的地方提高學習時的專注力。"
+  },
+  {
+    "en": "plan",
+    "kk": "/plæn/",
+    "zh": "計劃、規劃",
+    "example": "Study plans organize learning goals systematically.",
+    "exampleZh": "學習計劃系統地組織學習目標。"
+  },
+  {
+    "en": "plant",
+    "kk": "/plænt/",
+    "zh": "植物、種植",
+    "example": "Science students study plant biology.",
+    "exampleZh": "科學學 生研究植物生物學。"
+  },
+  {
+    "en": "play",
+    "kk": "/pleɪ/",
+    "zh": "玩、戲劇",
+    "example": "Children learn through play activities.",
+    "exampleZh": "孩子們 通過遊戲活動學習。"
+  },
+  {
+    "en": "please",
+    "kk": "/pliːz/",
+    "zh": "請、使滿意",
+    "example": "Please complete assignments on time.",
+    "exampleZh": "請按 時完成作業。"
+  },
+  {
+    "en": "plus",
+    "kk": "/plʌs/",
+    "zh": "加上、優勢",
+    "example": "Math plus science equals STEM education.",
+    "exampleZh": "數 學加科學等於STEM教育。"
+  },
+  {
+    "en": "point",
+    "kk": "/pɔɪnt/",
+    "zh": "點、指出",
+    "example": "Teachers point out important concepts.",
+    "exampleZh": "老師 指出重要概念。"
+  },
+  {
+    "en": "police",
+    "kk": "/pəˈliːs/",
+    "zh": "警察",
+    "example": "Police officers visit schools for safety talks.",
+    "exampleZh": "警察訪問學校進行安全講座。"
+  },
+  {
+    "en": "policy",
+    "kk": "/ˈpɑːləsi/",
+    "zh": "政策、方針",
+    "example": "School policies ensure student safety.",
+    "exampleZh": "學校政 策確保學生安全。"
+  },
+  {
+    "en": "politics",
+    "kk": "/ˈpɑːlətɪks/",
+    "zh": "政治",
+    "example": "Students study politics in social studies.",
+    "exampleZh": "學生 在社會學科中學習政治。"
+  },
+  {
+    "en": "poor",
+    "kk": "/pʊr/",
+    "zh": "貧窮的、糟糕的",
+    "example": "Education helps poor families improve circumstances.",
+    "exampleZh": "教育幫助貧困家庭改善環境。"
+  },
+  {
+    "en": "popular",
+    "kk": "/ˈpɑːpjələr/",
+    "zh": "受歡迎的、流行的",
+    "example": "Popular teachers engage students efefctively.",
+    "exampleZh": "受歡迎的老師有效地吸引學生。"
+  },
+  {
+    "en": "population",
+    "kk": "/ˌpɑːpjəˈleɪʃn/",
+    "zh": "人口、族群",
+    "example": "The school serves a diverse population.",
+    "exampleZh": "學校 為多元化人口服務。"
+  },
+  {
+    "en": "position",
+    "kk": "/pəˈzɪʃn/",
+    "zh": "位置、職位",
+    "example": "Teachers hold important positions in society.",
+    "exampleZh": "老師在社會中佔據重要地位。"
+  },
+  {
+    "en": "positive",
+    "kk": "/ˈpɑːzətɪv/",
+    "zh": "積極的、正面的",
+    "example": "Positive attitudes improve learning outcomes.",
+    "exampleZh": "積極的態度改善學習成果。"
+  },
+  {
+    "en": "possible",
+    "kk": "/ˈpɑːsəbl/",
+    "zh": "可能的、潜在的",
+    "example": "Education makes anything possible.",
+    "exampleZh": "教育使 一切成為可能。"
+  },
+  {
+    "en": "post",
+    "kk": "/poʊst/",
+    "zh": "郵件、張貼",
+    "example": "Students post achievements on bulletin boards.",
+    "exampleZh": "學生在佈告欄張貼成就。"
+  },
+  {
+    "en": "power",
+    "kk": "/ˈpaʊər/",
+    "zh": "力量、動力",
+    "example": "Knowledge gives students power to succeed.",
+    "exampleZh": "知識給學生成功的力量。"
+  },
+  {
+    "en": "practice",
+    "kk": "/ˈpræktɪs/",
+    "zh": "練習、實踐",
+    "example": "Regular practice transforms knowledge into skills.",
+    "exampleZh": "定期練習將知識轉化為技能。"
+  },
+  {
+    "en": "prepare",
+    "kk": "/prɪˈper/",
+    "zh": "準備、預備",
+    "example": "Students prepare thoroughly for examinations.",
+    "exampleZh": "學生為考試做充分準備。"
+  },
+  {
+    "en": "present",
+    "kk": "/ˈpreznt/",
+    "zh": "現在的、呈現",
+    "example": "Students present their research findings confdi ently.",
+    "exampleZh": "學生自信地呈現研究發現。"
+  },
+  {
+    "en": "president",
+    "kk": "/ˈprezɪdənt/",
+    "zh": "總統、主席",
+    "example": "The student council president leads meetings.",
+    "exampleZh": "學生會主席主持會議。"
+  },
+  {
+    "en": "press",
+    "kk": "/pres/",
+    "zh": "按壓、媒體",
+    "example": "Students press keys on computer keyboards.",
+    "exampleZh": "學生按電腦鍵盤上的鍵。"
+  },
+  {
+    "en": "pretty",
+    "kk": "/ˈprɪti/",
+    "zh": "漂亮的、相當",
+    "example": "The art display looks pretty impressive.",
+    "exampleZh": "藝術 展示看起來相當令人印象深刻。"
+  },
+  {
+    "en": "prevent",
+    "kk": "/prɪˈvent/",
+    "zh": "預防、阻止",
+    "example": "Good habits prevent academic problems.",
+    "exampleZh": "良 好習慣預防學術問題。"
+  },
+  {
+    "en": "price",
+    "kk": "/praɪs/",
+    "zh": "價格、定價",
+    "example": "Education's price is worth the investment.",
+    "exampleZh": "教 育的價格值得投資。"
+  },
+  {
+    "en": "primary",
+    "kk": "/ˈpraɪmeri/",
+    "zh": "主要的、小學",
+    "example": "Reading is a primary skill for learning.",
+    "exampleZh": "閱讀是 學習的主要技能。"
+  },
+  {
+    "en": "print",
+    "kk": "/prɪnt/",
+    "zh": "印刷、列印",
+    "example": "Students print their fni al reports.",
+    "exampleZh": "學生列印最 終報告。"
+  },
+  {
+    "en": "private",
+    "kk": "/ˈpraɪvət/",
+    "zh": "私人的、私立的",
+    "example": "Private study time helps concentration.",
+    "exampleZh": "私人 學習時間有助於專注。"
+  },
+  {
+    "en": "probably",
+    "kk": "/ˈprɑːbəbli/",
+    "zh": "可能地、大概",
+    "example": "Students will probably succeed with efofrt.",
+    "exampleZh": "學生努力後可能會成功。"
+  },
+  {
+    "en": "problem",
+    "kk": "/ˈprɑːbləm/",
+    "zh": "問題、難題",
+    "example": "Critical thinking solves complex problems.",
+    "exampleZh": "批 判性思維解決複雜問題。"
+  },
+  {
+    "en": "process",
+    "kk": "/ˈprɑːses/",
+    "zh": "過程、處理",
+    "example": "Learning is a continuous process of discovery.",
+    "exampleZh": "學習是一個持續的發現過程。"
+  },
+  {
+    "en": "produce",
+    "kk": "/prəˈduːs/",
+    "zh": "生產、產生",
+    "example": "Good teaching produces successful students.",
+    "exampleZh": "良好的教學培養成功的學生。"
+  },
+  {
+    "en": "product",
+    "kk": "/ˈprɑːdʌkt/",
+    "zh": "產品、結果",
+    "example": "Student projects are products of learning.",
+    "exampleZh": "學 生項目是學習的成果。"
+  },
+  {
+    "en": "professional",
+    "kk": "/prəˈfeʃənl/",
+    "zh": "專業的、專業人士",
+    "example": "Professional development improves teaching quality.",
+    "exampleZh": "專業發展提高教學質量。"
+  },
+  {
+    "en": "professor",
+    "kk": "/prəˈfesər/",
+    "zh": "教授",
+    "example": "The professor explained complex theories clearly.",
+    "exampleZh": "教授清楚地解釋複雜理論。"
+  },
+  {
+    "en": "program",
+    "kk": "/ˈproʊɡræm/",
+    "zh": "程序、項目",
+    "example": "Educational programs cater to diverse learning needs.",
+    "exampleZh": "教育項目滿足多樣化學習需 求。"
+  },
+  {
+    "en": "project",
+    "kk": "/ˈprɑːdʒekt/",
+    "zh": "項目、投射",
+    "example": "Science projects engage student creativity.",
+    "exampleZh": "科學項目啟發學生創造力。"
+  },
+  {
+    "en": "promise",
+    "kk": "/ˈprɑːmɪs/",
+    "zh": "承諾、保證",
+    "example": "Students promise to follow school rules.",
+    "exampleZh": "學生 承諾遵守學校規則。"
+  },
+  {
+    "en": "protect",
+    "kk": "/prəˈtekt/",
+    "zh": "保護、防護",
+    "example": "Schools protect student privacy rights.",
+    "exampleZh": "學校 保護學生隱私權。"
+  },
+  {
+    "en": "proud",
+    "kk": "/praʊd/",
+    "zh": "自豪的、驕傲的",
+    "example": "Parents feel proud of student achievements.",
+    "exampleZh": "父母為學生成就感到自豪。"
+  },
+  {
+    "en": "provide",
+    "kk": "/prəˈvaɪd/",
+    "zh": "提供、供應",
+    "example": "Libraries provide resources for research.",
+    "exampleZh": "圖書 館為研究提供資源。"
+  },
+  {
+    "en": "public",
+    "kk": "/ˈpʌblɪk/",
+    "zh": "公共的、公眾",
+    "example": "Public education serves all children.",
+    "exampleZh": "公立教育 為所有兒童服務。"
+  },
+  {
+    "en": "pull",
+    "kk": "/pʊl/",
+    "zh": "拉、拖",
+    "example": "Teachers pull students toward success.",
+    "exampleZh": "老師 引導學生走向成功。"
+  },
+  {
+    "en": "purpose",
+    "kk": "/ˈpɜːrpəs/",
+    "zh": "目的、用途",
+    "example": "Education's purpose is developing minds.",
+    "exampleZh": "教 育的目的是發展心智。"
+  },
+  {
+    "en": "push",
+    "kk": "/pʊʃ/",
+    "zh": "推、推動",
+    "example": "Motivation pushes students to excel.",
+    "exampleZh": "動機推 動學生追求卓越。"
+  },
+  {
+    "en": "put",
+    "kk": "/pʊt/",
+    "zh": "放置、放",
+    "example": "Students put efofrt into their studies.",
+    "exampleZh": "學生在 學習上投入努力。"
+  },
+  {
+    "en": "quality",
+    "kk": "/ˈkwɑːləti/",
+    "zh": "質量、品質",
+    "example": "Quality education requires skilled teachers and resources.",
+    "exampleZh": "優質教育需要技能嫻熟的教師和 資源。"
+  },
+  {
+    "en": "question",
+    "kk": "/ˈkwestʃən/",
+    "zh": "問題、質疑",
+    "example": "Asking good questions deepens understanding.",
+    "exampleZh": "提出好問題加深理解。"
+  },
+  {
+    "en": "quick",
+    "kk": "/kwɪk/",
+    "zh": "快速的、敏捷的",
+    "example": "Quick learners often use efefctive study strategies.",
+    "exampleZh": "快速學習者通常使用有效的學習策 略。"
+  },
+  {
+    "en": "quiet",
+    "kk": "/ˈkwaɪət/",
+    "zh": "安靜的、寧靜",
+    "example": "Quiet environments enhance concentration.",
+    "exampleZh": "安靜的環境增強專注力。"
+  },
+  {
+    "en": "quite",
+    "kk": "/kwaɪt/",
+    "zh": "相當、完全",
+    "example": "Mastering vocabulary is quite challenging but rewarding.",
+    "exampleZh": "掌握詞彙相當具有挑戰性但很有回 報。"
+  },
+  {
+    "en": "race",
+    "kk": "/reɪs/",
+    "zh": "種族、賽跑",
+    "example": "Students of every race deserve equal opportunities.",
+    "exampleZh": "每個種族的學生都應得到平等機 會。"
+  },
+  {
+    "en": "radio",
+    "kk": "/ˈreɪdioʊ/",
+    "zh": "收音機、無線電",
+    "example": "Educational radio programs reach remote areas.",
+    "exampleZh": "教育廣播節目到達偏遠地區。"
+  },
+  {
+    "en": "raise",
+    "kk": "/reɪz/",
+    "zh": "提高、舉起",
+    "example": "Good teachers raise student expectations.",
+    "exampleZh": "好老師提高學生期望。"
+  },
+  {
+    "en": "range",
+    "kk": "/reɪndʒ/",
+    "zh": "範圍、變化",
+    "example": "Vocabulary ranges from basic to advanced levels.",
+    "exampleZh": "詞彙從基礎到高級水平都有。"
+  },
+  {
+    "en": "rate",
+    "kk": "/reɪt/",
+    "zh": "比率、評級",
+    "example": "Learning rates vary among difefrent students.",
+    "exampleZh": "學習速度在不同學生之間有差異。"
+  },
+  {
+    "en": "rather",
+    "kk": "/ˈræðər/",
+    "zh": "相當、寧可",
+    "example": "Students prefer interactive rather than passive learning.",
+    "exampleZh": "學生更喜歡互動而非被動學 習。"
+  },
+  {
+    "en": "reach",
+    "kk": "/riːtʃ/",
+    "zh": "到達、達到",
+    "example": "Persistent efofrt helps students reach their goals.",
+    "exampleZh": "持續努力幫助學生達到目標。"
+  },
+  {
+    "en": "read",
+    "kk": "/riːd/",
+    "zh": "閱讀、理解",
+    "example": "Students who read extensively develop better vocabulary.",
+    "exampleZh": "廣泛閱讀的學生發展更好的詞彙。"
+  },
+  {
+    "en": "ready",
+    "kk": "/ˈredi/",
+    "zh": "準備好的、樂意的",
+    "example": "Students are ready for new challenges.",
+    "exampleZh": "學生 為新挑戰做好準備。"
+  },
+  {
+    "en": "real",
+    "kk": "/riːl/",
+    "zh": "真實的、實際的",
+    "example": "Real applications make abstract concepts concrete.",
+    "exampleZh": "實際應用使抽象概念具體化。"
+  },
+  {
+    "en": "really",
+    "kk": "/ˈriːli/",
+    "zh": "真正地、確實",
+    "example": "Students really benefit from dedicated teachers.",
+    "exampleZh": "學生確實從專心的老師那裡受益。"
+  },
+  {
+    "en": "reason",
+    "kk": "/ˈriːzn/",
+    "zh": "原因、推理",
+    "example": "Understanding the reason behind rules improves compliance.",
+    "exampleZh": "理解規則背後的原因提 高遵守性。"
+  },
+  {
+    "en": "receive",
+    "kk": "/rɪˈsiːv/",
+    "zh": "接收、獲得",
+    "example": "Students receive feedback to improve their performance.",
+    "exampleZh": "學生接受反饋以提升表現。"
+  },
+  {
+    "en": "recent",
+    "kk": "/ˈriːsnt/",
+    "zh": "最近的、近期的",
+    "example": "Recent research supports new teaching methods.",
+    "exampleZh": "最近的研究支持新的教學方法。"
+  },
+  {
+    "en": "recognize",
+    "kk": "/ˈrekəɡnaɪz/",
+    "zh": "認出、承認",
+    "example": "Teachers recognize each student's unique talents.",
+    "exampleZh": "老師認識到每個學生的獨特才能。"
+  },
+  {
+    "en": "record",
+    "kk": "/ˈrekərd/",
+    "zh": "記錄、錄音",
+    "example": "Keeping learning records tracks progress over time.",
+    "exampleZh": "保持學習記錄追蹤長期進步。"
+  },
+  {
+    "en": "red",
+    "kk": "/red/",
+    "zh": "紅色的、紅色",
+    "example": "The red pen marks important corrections.",
+    "exampleZh": "紅 筆標記重要的修正。"
+  },
+  {
+    "en": "reduce",
+    "kk": "/rɪˈduːs/",
+    "zh": "減少、降低",
+    "example": "Study groups reduce individual workload stress.",
+    "exampleZh": "學習小組減少個人工作負荷壓力。"
+  },
+  {
+    "en": "refer",
+    "kk": "/rɪˈfɜːr/",
+    "zh": "提及、參考",
+    "example": "Students refer to textbooks for information.",
+    "exampleZh": "學生參考教科書獲取信息。"
+  },
+  {
+    "en": "refel",
+    "kk": "",
+    "zh": "反映、反思",
+    "example": "Good students refel ct on their learning progress.",
+    "exampleZh": "好學生反思學習進度。"
+  },
+  {
+    "en": "region",
+    "kk": "/ˈriːdʒən/",
+    "zh": "地區、區域",
+    "example": "Each region has difefrent educational needs.",
+    "exampleZh": "每個地區都有不同的教育需求。"
+  },
+  {
+    "en": "relate",
+    "kk": "/rɪˈleɪt/",
+    "zh": "相關、敘述",
+    "example": "Students relate new knowledge to previous learning.",
+    "exampleZh": "學生將新知識與先前學習聯繫起來。"
+  },
+  {
+    "en": "relationship",
+    "kk": "/rɪˈleɪʃnʃɪp/",
+    "zh": "關係、關聯",
+    "example": "Teacher-student relationships afefct learning outcomes.",
+    "exampleZh": "師生關係影響學習成果。"
+  },
+  {
+    "en": "remain",
+    "kk": "/rɪˈmeɪn/",
+    "zh": "保持、剩餘",
+    "example": "Students remain focused during long lectures.",
+    "exampleZh": "學生在長時間講座中保持專注。"
+  },
+  {
+    "en": "remember",
+    "kk": "/rɪˈmembər/",
+    "zh": "記住、回憶",
+    "example": "Students remember information better through active engagement.",
+    "exampleZh": "學生通過積極參 與更好地記住信息。"
+  },
+  {
+    "en": "remove",
+    "kk": "/rɪˈmuːv/",
+    "zh": "移除、去掉",
+    "example": "Teachers remove distractions from classrooms.",
+    "exampleZh": "老師從教室中移除干擾因素。"
+  },
+  {
+    "en": "repeat",
+    "kk": "/rɪˈpiːt/",
+    "zh": "重複、重說",
+    "example": "Students repeat difficult concepts until mastered.",
+    "exampleZh": "學生重複困難概念直到掌握。"
+  },
+  {
+    "en": "replace",
+    "kk": "/rɪˈpleɪs/",
+    "zh": "替換、取代",
+    "example": "Digital tools replace traditional teaching methods.",
+    "exampleZh": "數位工具替代傳統教學方法。"
+  },
+  {
+    "en": "report",
+    "kk": "/rɪˈpɔːrt/",
+    "zh": "報告、報導",
+    "example": "Students report their research fni dings.",
+    "exampleZh": "學生 報告研究發現。"
+  },
+  {
+    "en": "represent",
+    "kk": "/ˌreprɪˈzent/",
+    "zh": "代表、象徵",
+    "example": "Student council represents all learners.",
+    "exampleZh": "學生 會代表所有學習者。"
+  },
+  {
+    "en": "require",
+    "kk": "/rɪˈkwaɪər/",
+    "zh": "需要、要求",
+    "example": "Advanced courses require prerequisite knowledge.",
+    "exampleZh": "高級課程需要先修知識。"
+  },
+  {
+    "en": "research",
+    "kk": "/ˈriːsɜːrtʃ/",
+    "zh": "研究、調查",
+    "example": "Students conduct research on various topics.",
+    "exampleZh": "學生對各種主題進行研究。"
+  },
+  {
+    "en": "resource",
+    "kk": "/ˈriːsɔːrs/",
+    "zh": "資源、財力",
+    "example": "Educational resources support efefctive learning.",
+    "exampleZh": "教育資源支持有效學習。"
+  },
+  {
+    "en": "respond",
+    "kk": "/rɪˈspɑːnd/",
+    "zh": "回應、反應",
+    "example": "Students respond positively to encouragement.",
+    "exampleZh": "學生對鼓勵積極回應。"
+  },
+  {
+    "en": "response",
+    "kk": "/rɪˈspɑːns/",
+    "zh": "回應、反應",
+    "example": "Teacher feedback elicits student responses.",
+    "exampleZh": "老師反饋引發學生回應。"
+  },
+  {
+    "en": "responsibility",
+    "kk": "/rɪˌspɑːnsəˈbɪləti/",
+    "zh": "責任、職責",
+    "example": "Students learn responsibility through assignments.",
+    "exampleZh": "學生通過作業學習責任。"
+  },
+  {
+    "en": "rest",
+    "kk": "/rest/",
+    "zh": "休息、剩餘",
+    "example": "Adequate rest improves learning capacity.",
+    "exampleZh": "充 分休息提高學習能力。"
+  },
+  {
+    "en": "result",
+    "kk": "/rɪˈzʌlt/",
+    "zh": "結果、導致",
+    "example": "Good study habits result in academic success.",
+    "exampleZh": "良好的學習習慣導致學術成功。"
+  },
+  {
+    "en": "return",
+    "kk": "/rɪˈtɜːrn/",
+    "zh": "返回、歸還",
+    "example": "Students return library books on time.",
+    "exampleZh": "學生按 時歸還圖書館書籍。"
+  },
+  {
+    "en": "reveal",
+    "kk": "/rɪˈviːl/",
+    "zh": "揭示、顯示",
+    "example": "Tests reveal student understanding levels.",
+    "exampleZh": "測 試揭示學生理解水平。"
+  },
+  {
+    "en": "review",
+    "kk": "/rɪˈvjuː/",
+    "zh": "複習、評論",
+    "example": "Regular review prevents forgetting learned material.",
+    "exampleZh": "定期複習防止遺忘已學材料。"
+  },
+  {
+    "en": "rich",
+    "kk": "/rɪtʃ/",
+    "zh": "富有的、豐富的",
+    "example": "Education provides rich life experiences.",
+    "exampleZh": "教育 提供豐富的人生經驗。"
+  },
+  {
+    "en": "ride",
+    "kk": "/raɪd/",
+    "zh": "騎、乘坐",
+    "example": "Students ride buses to school safely.",
+    "exampleZh": "學生安 全地乘坐校車上學。"
+  },
+  {
+    "en": "right",
+    "kk": "/raɪt/",
+    "zh": "正確的、權利",
+    "example": "All children have the right to education.",
+    "exampleZh": "所有 兒童都有受教育的權利。"
+  },
+  {
+    "en": "ring",
+    "kk": "/rɪŋ/",
+    "zh": "響、戒指",
+    "example": "School bells ring to signal class changes.",
+    "exampleZh": "學 校鈴聲響起表示換課。"
+  },
+  {
+    "en": "rise",
+    "kk": "/raɪz/",
+    "zh": "上升、起床",
+    "example": "Test scores rise with consistent study.",
+    "exampleZh": "考試成 績隨著持續學習而上升。"
+  },
+  {
+    "en": "risk",
+    "kk": "/rɪsk/",
+    "zh": "風險、冒險",
+    "example": "Trying new methods involves some risk.",
+    "exampleZh": "嘗試 新方法涉及一些風險。"
+  },
+  {
+    "en": "road",
+    "kk": "/roʊd/",
+    "zh": "道路、路",
+    "example": "Education is the road to success.",
+    "exampleZh": "教育是成功 之路。"
+  },
+  {
+    "en": "rock",
+    "kk": "/rɑːk/",
+    "zh": "岩石、搖擺",
+    "example": "Geology students study difefrent rock formations.",
+    "exampleZh": "地質學學生研究不同的岩石形成。"
+  },
+  {
+    "en": "role",
+    "kk": "/roʊl/",
+    "zh": "角色、作用",
+    "example": "Teachers play a crucial role in development.",
+    "exampleZh": "老師在發展中扮演關鍵角色。"
+  },
+  {
+    "en": "room",
+    "kk": "/ruːm/",
+    "zh": "房間、空間",
+    "example": "The classroom room accommodates thirty students.",
+    "exampleZh": "教室容納三十名學生。"
+  },
+  {
+    "en": "rule",
+    "kk": "/ruːl/",
+    "zh": "規則、統治",
+    "example": "School rules maintain order and safety.",
+    "exampleZh": "學校 規則維持秩序和安全。"
+  },
+  {
+    "en": "run",
+    "kk": "/rʌn/",
+    "zh": "跑、經營",
+    "example": "Students run the school newspaper.",
+    "exampleZh": "學生經營 校報。"
+  },
+  {
+    "en": "safe",
+    "kk": "/seɪf/",
+    "zh": "安全的、保險箱",
+    "example": "Schools ensure students feel safe and protected.",
+    "exampleZh": "學校確保學生感到安全和受保護。"
+  },
+  {
+    "en": "same",
+    "kk": "/seɪm/",
+    "zh": "相同的、同樣的",
+    "example": "All students receive the same opportunities.",
+    "exampleZh": "所 有學生都獲得相同的機會。"
+  },
+  {
+    "en": "save",
+    "kk": "/seɪv/",
+    "zh": "拯救、節省",
+    "example": "Education saves people from ignorance.",
+    "exampleZh": "教育 拯救人們免於無知。"
+  },
+  {
+    "en": "say",
+    "kk": "/seɪ/",
+    "zh": "說、講",
+    "example": "Students say their opinions freely.",
+    "exampleZh": "學生自由地表 達意見。"
+  },
+  {
+    "en": "scale",
+    "kk": "/skeɪl/",
+    "zh": "規模、稱重",
+    "example": "Educational programs operate on difefrent scales.",
+    "exampleZh": "教育項目以不同規模運作。"
+  },
+  {
+    "en": "scene",
+    "kk": "/siːn/",
+    "zh": "場景、景象",
+    "example": "The graduation scene moved parents to tears.",
+    "exampleZh": "畢業場景讓父母感動落淚。"
+  },
+  {
+    "en": "school",
+    "kk": "/skuːl/",
+    "zh": "學校、學派",
+    "example": "Modern schools integrate technology into learning.",
+    "exampleZh": "現代學校將技術融入學習。"
+  },
+  {
+    "en": "science",
+    "kk": "/ˈsaɪəns/",
+    "zh": "科學、學科",
+    "example": "Science education develops analytical thinking skills.",
+    "exampleZh": "科學教育發展分析思維技能。"
+  },
+  {
+    "en": "score",
+    "kk": "/skɔːr/",
+    "zh": "分數、得分",
+    "example": "Students score higher with proper preparation.",
+    "exampleZh": "學生通過適當準備獲得更高分數。"
+  },
+  {
+    "en": "sea",
+    "kk": "/siː/",
+    "zh": "海、海洋",
+    "example": "Marine biology explores sea life diversity.",
+    "exampleZh": "海洋 生物學探索海洋生物多樣性。"
+  },
+  {
+    "en": "season",
+    "kk": "/ˈsiːzn/",
+    "zh": "季節、賽季",
+    "example": "Each season brings difefrent learning opportunities.",
+    "exampleZh": "每個季節都帶來不同的學習機會。"
+  },
+  {
+    "en": "seat",
+    "kk": "/siːt/",
+    "zh": "座位、就座",
+    "example": "Students take their seats before class begins.",
+    "exampleZh": "學生在上課前就座。"
+  },
+  {
+    "en": "second",
+    "kk": "/ˈsekənd/",
+    "zh": "第二、秒",
+    "example": "The second semester focuses on advanced topics.",
+    "exampleZh": "第二學期專注於高級主題。"
+  },
+  {
+    "en": "section",
+    "kk": "/ˈsekʃn/",
+    "zh": "部分、章節",
+    "example": "Each textbook section covers specific concepts.",
+    "exampleZh": "教科書的每個章節涵蓋特定概念。"
+  },
+  {
+    "en": "see",
+    "kk": "/siː/",
+    "zh": "看見、理解",
+    "example": "Students see improvement through consistent efofrt.",
+    "exampleZh": "學生通過持續努力看到進步。"
+  },
+  {
+    "en": "seek",
+    "kk": "/siːk/",
+    "zh": "尋求、追求",
+    "example": "Students seek knowledge and understanding.",
+    "exampleZh": "學生尋求知識和理解。"
+  },
+  {
+    "en": "seem",
+    "kk": "/siːm/",
+    "zh": "似乎、看起來",
+    "example": "Difficult concepts seem easier with practice.",
+    "exampleZh": "困 難的概念通過練習看起來更容易。"
+  },
+  {
+    "en": "sell",
+    "kk": "/sel/",
+    "zh": "賣、出售",
+    "example": "Students sell tickets for school events.",
+    "exampleZh": "學生為 學校活動出售門票。"
+  },
+  {
+    "en": "send",
+    "kk": "/send/",
+    "zh": "發送、派遣",
+    "example": "Teachers send assignments via email.",
+    "exampleZh": "老師通過 電子郵件發送作業。"
+  },
+  {
+    "en": "sense",
+    "kk": "/sens/",
+    "zh": "感覺、理解",
+    "example": "Students develop a sense of responsibility.",
+    "exampleZh": "學 生發展責任感。"
+  },
+  {
+    "en": "serious",
+    "kk": "/ˈsɪriəs/",
+    "zh": "嚴重的、認真的",
+    "example": "Serious students achieve better results.",
+    "exampleZh": "認真的 學生取得更好的結果。"
+  },
+  {
+    "en": "serve",
+    "kk": "/sɜːrv/",
+    "zh": "服務、供應",
+    "example": "Education serves society's long-term needs.",
+    "exampleZh": "教 育服務社會的長期需求。"
+  },
+  {
+    "en": "service",
+    "kk": "/ˈsɜːrvɪs/",
+    "zh": "服務、服務業",
+    "example": "School service programs benefit communities.",
+    "exampleZh": "學校服務項目造福社區。"
+  },
+  {
+    "en": "set",
+    "kk": "/set/",
+    "zh": "設置、一套",
+    "example": "Teachers set clear expectations for students.",
+    "exampleZh": "老師為學生設定明確期望。"
+  },
+  {
+    "en": "several",
+    "kk": "/ˈsevrəl/",
+    "zh": "幾個、數個",
+    "example": "Several methods improve learning efefctiveness.",
+    "exampleZh": "幾種方法提高學習效果。"
+  },
+  {
+    "en": "shake",
+    "kk": "/ʃeɪk/",
+    "zh": "搖動、握手",
+    "example": "Students shake hands after competitions.",
+    "exampleZh": "學生 在比賽後握手。"
+  },
+  {
+    "en": "share",
+    "kk": "/ʃer/",
+    "zh": "分享、股份",
+    "example": "Students share knowledge with classmates.",
+    "exampleZh": "學 生與同學分享知識。"
+  },
+  {
+    "en": "ship",
+    "kk": "/ʃɪp/",
+    "zh": "船、運送",
+    "example": "History classes study ancient ship designs.",
+    "exampleZh": "歷 史課研究古代船隻設計。"
+  },
+  {
+    "en": "shoot",
+    "kk": "/ʃuːt/",
+    "zh": "射擊、拍攝",
+    "example": "Photography students shoot artistic images.",
+    "exampleZh": "攝影學生拍攝藝術照片。"
+  },
+  {
+    "en": "shop",
+    "kk": "/ʃɑːp/",
+    "zh": "商店、購物",
+    "example": "Students shop for school supplies carefully.",
+    "exampleZh": "學 生仔細購買學校用品。"
+  },
+  {
+    "en": "short",
+    "kk": "/ʃɔːrt/",
+    "zh": "短的、簡短的",
+    "example": "Short breaks refresh student attention.",
+    "exampleZh": "短暫休 息刷新學生注意力。"
+  },
+  {
+    "en": "shot",
+    "kk": "/ʃɑːt/",
+    "zh": "射擊、照片",
+    "example": "The yearbook shot captured student spirit.",
+    "exampleZh": "年 鑑照片捕捉學生精神。"
+  },
+  {
+    "en": "should",
+    "kk": "/ʃʊd/",
+    "zh": "應該、應當",
+    "example": "Students should always try their best.",
+    "exampleZh": "學生應該 總是盡力而為。"
+  },
+  {
+    "en": "show",
+    "kk": "/ʃoʊ/",
+    "zh": "顯示、表演",
+    "example": "Science experiments show natural phenomena.",
+    "exampleZh": "科學實驗展示自然現象。"
+  },
+  {
+    "en": "side",
+    "kk": "/saɪd/",
+    "zh": "邊、側面",
+    "example": "Students sit on both sides of the classroom.",
+    "exampleZh": "學 生坐在教室的兩邊。"
+  },
+  {
+    "en": "sign",
+    "kk": "/saɪn/",
+    "zh": "標誌、簽名",
+    "example": "Students sign up for extracurricular activities.",
+    "exampleZh": "學生報名參加課外活動。"
+  },
+  {
+    "en": "significant",
+    "kk": "/sɪɡˈnɪfɪkənt/",
+    "zh": "重要的、顯著的",
+    "example": "Education creates significant social change.",
+    "exampleZh": "教 育創造顯著的社會變革。"
+  },
+  {
+    "en": "similar",
+    "kk": "/ˈsɪmələr/",
+    "zh": "相似的、類似的",
+    "example": "Similar teaching methods work across cultures.",
+    "exampleZh": "類似的教學方法在各種文化中都有效。"
+  },
+  {
+    "en": "simple",
+    "kk": "/ˈsɪmpl/",
+    "zh": "簡單的、樸素的",
+    "example": "Simple explanations help student understanding.",
+    "exampleZh": "簡單的解釋有助於學生理解。"
+  },
+  {
+    "en": "since",
+    "kk": "/sɪns/",
+    "zh": "自從、因為",
+    "example": "Students improve since starting new program.",
+    "exampleZh": "學生自從開始新項目後有所改善。"
+  },
+  {
+    "en": "sing",
+    "kk": "/sɪŋ/",
+    "zh": "唱歌、歌唱",
+    "example": "Music students sing in the school choir.",
+    "exampleZh": "音樂學 生在學校合唱團唱歌。"
+  },
+  {
+    "en": "single",
+    "kk": "/ˈsɪŋɡl/",
+    "zh": "單一的、單身的",
+    "example": "Every single student matters equally.",
+    "exampleZh": "每一個學 生都同樣重要。"
+  },
+  {
+    "en": "sister",
+    "kk": "/ˈsɪstər/",
+    "zh": "姐妹、修女",
+    "example": "Her sister helps with homework daily.",
+    "exampleZh": "她的姐妹 每天幫助做作業。"
+  },
+  {
+    "en": "sit",
+    "kk": "/sɪt/",
+    "zh": "坐、就座",
+    "example": "Students sit quietly during examinations.",
+    "exampleZh": "學生 在考試期間安靜地坐著。"
+  },
+  {
+    "en": "situation",
+    "kk": "/ˌsɪtʃuˈeɪʃn/",
+    "zh": "情況、處境",
+    "example": "Teachers adapt to each learning situation.",
+    "exampleZh": "老 師適應每種學習情況。"
+  },
+  {
+    "en": "six",
+    "kk": "/sɪks/",
+    "zh": "六、六個",
+    "example": "The project team has six members.",
+    "exampleZh": "項目團隊有 六名成員。"
+  },
+  {
+    "en": "size",
+    "kk": "/saɪz/",
+    "zh": "大小、尺寸",
+    "example": "Class size afefcts learning quality.",
+    "exampleZh": "班級規模影 響學習質量。"
+  },
+  {
+    "en": "skill",
+    "kk": "/skɪl/",
+    "zh": "技能、技巧",
+    "example": "Communication skills benefit all areas of life.",
+    "exampleZh": "溝通技能有益於生活的各個方面。"
+  },
+  {
+    "en": "skin",
+    "kk": "/skɪn/",
+    "zh": "皮膚、表皮",
+    "example": "Biology students study skin cell structure.",
+    "exampleZh": "生物 學學生研究皮膚細胞結構。"
+  },
+  {
+    "en": "sleep",
+    "kk": "/sliːp/",
+    "zh": "睡覺、睡眠",
+    "example": "Adequate sleep improves academic performance.",
+    "exampleZh": "充足睡眠提高學術表現。"
+  },
+  {
+    "en": "small",
+    "kk": "/smɔːl/",
+    "zh": "小的、少量的",
+    "example": "Small group discussions encourage participation.",
+    "exampleZh": "小組討論鼓勵參與。"
+  },
+  {
+    "en": "smile",
+    "kk": "/smaɪl/",
+    "zh": "微笑、笑容",
+    "example": "Teachers smile to create welcoming environments.",
+    "exampleZh": "老師微笑創造歡迎的環境。"
+  },
+  {
+    "en": "social",
+    "kk": "/ˈsoʊʃl/",
+    "zh": "社會的、社交的",
+    "example": "Social interaction enhances collaborative learning.",
+    "exampleZh": "社交互動增強協作學習。"
+  },
+  {
+    "en": "society",
+    "kk": "/səˈsaɪəti/",
+    "zh": "社會、社團",
+    "example": "Education shapes society for future generations.",
+    "exampleZh": "教育為後代塑造社會。"
+  },
+  {
+    "en": "soft",
+    "kk": "/sɔːft/",
+    "zh": "軟的、溫柔的",
+    "example": "Soft skills complement technical knowledge.",
+    "exampleZh": "軟 技能補充技術知識。"
+  },
+  {
+    "en": "soil",
+    "kk": "/sɔɪl/",
+    "zh": "土壤、泥土",
+    "example": "Agriculture students analyze soil composition.",
+    "exampleZh": "農業學生分析土壤成分。"
+  },
+  {
+    "en": "soldier",
+    "kk": "/ˈsoʊldʒər/",
+    "zh": "士兵、軍人",
+    "example": "History honors brave soldiers of past wars.",
+    "exampleZh": "歷 史紀念過去戰爭的勇敢士兵。"
+  },
+  {
+    "en": "solve",
+    "kk": "/sɑːlv/",
+    "zh": "解決、解答",
+    "example": "Critical thinking helps solve complex problems.",
+    "exampleZh": "批判性思維幫助解決複雜問題。"
+  },
+  {
+    "en": "some",
+    "kk": "/sʌm/",
+    "zh": "一些、某些",
+    "example": "Some students excel in mathematics.",
+    "exampleZh": "一些學生 在數學方面表現出色。"
+  },
+  {
+    "en": "somebody",
+    "kk": "/ˈsʌmbɑːdi/",
+    "zh": "某人、有人",
+    "example": "Somebody always helps struggling students.",
+    "exampleZh": "總有人幫助有困難的學生。"
+  },
+  {
+    "en": "someone",
+    "kk": "/ˈsʌmwʌn/",
+    "zh": "某人、有人",
+    "example": "Someone needs to organize the field trip.",
+    "exampleZh": "有人 需要組織實地考察。"
+  },
+  {
+    "en": "something",
+    "kk": "/ˈsʌmθɪŋ/",
+    "zh": "某事、某物",
+    "example": "Students learn something new every day.",
+    "exampleZh": "學生 每天都學到新東西。"
+  },
+  {
+    "en": "sometimes",
+    "kk": "/ˈsʌmtaɪmz/",
+    "zh": "有時、偶爾",
+    "example": "Sometimes difficult lessons become clearer later.",
+    "exampleZh": "有時困難的課程後來變得更清楚。"
+  },
+  {
+    "en": "son",
+    "kk": "/sʌn/",
+    "zh": "兒子",
+    "example": "Her son excels in science subjects.",
+    "exampleZh": "她的兒子在 科學科目上表現出色。"
+  },
+  {
+    "en": "song",
+    "kk": "/sɔːŋ/",
+    "zh": "歌曲、歌",
+    "example": "Music class teaches traditional songs.",
+    "exampleZh": "音樂課教 授傳統歌曲。"
+  },
+  {
+    "en": "soon",
+    "kk": "/suːn/",
+    "zh": "很快、不久",
+    "example": "Students will soon master these concepts.",
+    "exampleZh": "學生 很快就會掌握這些概念。"
+  },
+  {
+    "en": "sort",
+    "kk": "/sɔːrt/",
+    "zh": "種類、分類",
+    "example": "Students sort information by importance.",
+    "exampleZh": "學生 按重要性分類信息。"
+  },
+  {
+    "en": "sound",
+    "kk": "/saʊnd/",
+    "zh": "聲音、聽起來",
+    "example": "The school bell sounds at class times.",
+    "exampleZh": "學校鈴聲 在上課時間響起。"
+  },
+  {
+    "en": "south",
+    "kk": "/saʊθ/",
+    "zh": "南方、南部的",
+    "example": "The south wing houses science laboratories.",
+    "exampleZh": "南 翼設有科學實驗室。"
+  },
+  {
+    "en": "space",
+    "kk": "/speɪs/",
+    "zh": "空間、太空",
+    "example": "Learning spaces should inspire creativity.",
+    "exampleZh": "學習 空間應該激發創造力。"
+  },
+  {
+    "en": "speak",
+    "kk": "/spiːk/",
+    "zh": "說話、講",
+    "example": "Students speak confidently in presentations.",
+    "exampleZh": "學生在演講中自信地說話。"
+  },
+  {
+    "en": "special",
+    "kk": "/ˈspeʃl/",
+    "zh": "特殊的、專門的",
+    "example": "Special attention helps struggling students succeed.",
+    "exampleZh": "特別關注幫助有困難的學生成功。"
+  },
+  {
+    "en": "specific",
+    "kk": "/spəˈsɪfɪk/",
+    "zh": "具體的、特定的",
+    "example": "Teachers provide specific feedback on assignments.",
+    "exampleZh": "老師對作業提供具體反饋。"
+  },
+  {
+    "en": "spend",
+    "kk": "/spend/",
+    "zh": "花費、度過",
+    "example": "Students spend hours on research projects.",
+    "exampleZh": "學 生在研究項目上花費數小時。"
+  },
+  {
+    "en": "staff",
+    "kk": "/stæf/",
+    "zh": "員工、職員",
+    "example": "School staff support student success.",
+    "exampleZh": "學校員工 支持學生成功。"
+  },
+  {
+    "en": "stage",
+    "kk": "/steɪdʒ/",
+    "zh": "舞台、階段",
+    "example": "Learning happens in difefrent stages.",
+    "exampleZh": "學習在不 同階段發生。"
+  },
+  {
+    "en": "standard",
+    "kk": "/ˈstændərd/",
+    "zh": "標準、標準的",
+    "example": "High standards ensure quality education.",
+    "exampleZh": "高標 準確保優質教育。"
+  },
+  {
+    "en": "star",
+    "kk": "/stɑːr/",
+    "zh": "星星、明星",
+    "example": "Top students become stars in their fields.",
+    "exampleZh": "優秀 學生在各自領域成為明星。"
+  },
+  {
+    "en": "start",
+    "kk": "/stɑːrt/",
+    "zh": "開始、起始",
+    "example": "New semester starts with orientation week.",
+    "exampleZh": "新 學期從迎新週開始。"
+  },
+  {
+    "en": "state",
+    "kk": "/steɪt/",
+    "zh": "州、陳述",
+    "example": "Each state has difefrent education policies.",
+    "exampleZh": "每 個州都有不同的教育政策。"
+  },
+  {
+    "en": "station",
+    "kk": "/ˈsteɪʃn/",
+    "zh": "車站、電台",
+    "example": "Students gather at the bus station.",
+    "exampleZh": "學生在公車 站聚集。"
+  },
+  {
+    "en": "stay",
+    "kk": "/steɪ/",
+    "zh": "停留、保持",
+    "example": "Students stay focused during lectures.",
+    "exampleZh": "學生在 講座期間保持專注。"
+  },
+  {
+    "en": "step",
+    "kk": "/step/",
+    "zh": "步驟、踏步",
+    "example": "Learning follows logical steps.",
+    "exampleZh": "學習遵循邏輯步 驟。"
+  },
+  {
+    "en": "still",
+    "kk": "/stɪl/",
+    "zh": "仍然、靜止的",
+    "example": "Students still need guidance from teachers.",
+    "exampleZh": "學 生仍然需要老師的指導。"
+  },
+  {
+    "en": "stop",
+    "kk": "/stɑːp/",
+    "zh": "停止、車站",
+    "example": "Students stop talking when class begins.",
+    "exampleZh": "學生 在上課時停止交談。"
+  },
+  {
+    "en": "store",
+    "kk": "/stɔːr/",
+    "zh": "商店、儲存",
+    "example": "Students store notes in organized binders.",
+    "exampleZh": "學生 將筆記儲存在有序的文件夾中。"
+  },
+  {
+    "en": "story",
+    "kk": "/ˈstɔːri/",
+    "zh": "故事、樓層",
+    "example": "English class analyzes classic stories.",
+    "exampleZh": "英語課分 析經典故事。"
+  },
+  {
+    "en": "strategy",
+    "kk": "/ˈstrætədʒi/",
+    "zh": "策略、戰略",
+    "example": "Efefctive learning strategies maximize study time.",
+    "exampleZh": "有效的學習策略最大化學習時間。"
+  },
+  {
+    "en": "street",
+    "kk": "/striːt/",
+    "zh": "街道、街",
+    "example": "School buses travel on busy streets safely.",
+    "exampleZh": "校車 在繁忙街道上安全行駛。"
+  },
+  {
+    "en": "strong",
+    "kk": "/strɔːŋ/",
+    "zh": "強壯的、強烈的",
+    "example": "Strong foundations support advanced learning.",
+    "exampleZh": "堅實的基礎支持高級學習。"
+  },
+  {
+    "en": "structure",
+    "kk": "/ˈstrʌktʃər/",
+    "zh": "結構、組織",
+    "example": "Clear lesson structure improves comprehension.",
+    "exampleZh": "清晰的課程結構改善理解。"
+  },
+  {
+    "en": "student",
+    "kk": "/ˈstuːdənt/",
+    "zh": "學生、學者",
+    "example": "Motivated students achieve better academic outcomes.",
+    "exampleZh": "有動機的學生獲得更好的學術成果。"
+  },
+  {
+    "en": "study",
+    "kk": "/ˈstʌdi/",
+    "zh": "學習、研究",
+    "example": "Consistent study habits lead to long-term success.",
+    "exampleZh": "持續的學習習慣導致長期成功。"
+  },
+  {
+    "en": "stuff",
+    "kk": "/stʌf/",
+    "zh": "東西、填充",
+    "example": "Students organize their school stuff neatly.",
+    "exampleZh": "學 生整齊地組織學校用品。"
+  },
+  {
+    "en": "style",
+    "kk": "/staɪl/",
+    "zh": "風格、樣式",
+    "example": "Each teacher has a unique teaching style.",
+    "exampleZh": "每位 老師都有獨特的教學風格。"
+  },
+  {
+    "en": "subject",
+    "kk": "/ˈsʌbdʒɪkt/",
+    "zh": "科目、主題",
+    "example": "Mathematics is a challenging subject for many.",
+    "exampleZh": "數學對許多人來說是具有挑戰性的科目。"
+  },
+  {
+    "en": "success",
+    "kk": "/səkˈses/",
+    "zh": "成功、成就",
+    "example": "Success requires dedication and perseverance.",
+    "exampleZh": "成功需要奉獻和毅力。"
+  },
+  {
+    "en": "such",
+    "kk": "/sʌtʃ/",
+    "zh": "這樣的、如此",
+    "example": "Such dedication inspires other students.",
+    "exampleZh": "這樣的 奉獻激勵其他學生。"
+  },
+  {
+    "en": "suddenly",
+    "kk": "/ˈsʌdənli/",
+    "zh": "突然地、忽然",
+    "example": "Understanding suddenly becomes clear.",
+    "exampleZh": "理解突 然變得清晰。"
+  },
+  {
+    "en": "sufefr",
+    "kk": "/ˈsʌfər/",
+    "zh": "遭受、忍受",
+    "example": "Students sufefr when lacking proper resources.",
+    "exampleZh": "學生缺乏適當資源時會受苦。"
+  },
+  {
+    "en": "suggest",
+    "kk": "/səɡˈdʒest/",
+    "zh": "建議、暗示",
+    "example": "Teachers suggest efefctive study methods.",
+    "exampleZh": "老 師建議有效的學習方法。"
+  },
+  {
+    "en": "summer",
+    "kk": "/ˈsʌmər/",
+    "zh": "夏天、夏季",
+    "example": "Summer programs ofefr enrichment opportunities.",
+    "exampleZh": "夏季項目提供充實機會。"
+  },
+  {
+    "en": "sun",
+    "kk": "/sʌn/",
+    "zh": "太陽、日光",
+    "example": "Solar energy from the sun powers schools.",
+    "exampleZh": "來自 太陽的太陽能為學校供電。"
+  },
+  {
+    "en": "support",
+    "kk": "/səˈpɔːrt/",
+    "zh": "支持、支撐",
+    "example": "Family support enhances student motivation.",
+    "exampleZh": "家庭支持增強學生動機。"
+  },
+  {
+    "en": "sure",
+    "kk": "/ʃʊr/",
+    "zh": "確信的、當然",
+    "example": "Students feel sure about their progress.",
+    "exampleZh": "學生對 進步感到確信。"
+  },
+  {
+    "en": "surface",
+    "kk": "/ˈsɜːrfəs/",
+    "zh": "表面、表層",
+    "example": "Chemistry explores molecular surfaces.",
+    "exampleZh": "化學探 索分子表面。"
+  },
+  {
+    "en": "system",
+    "kk": "/ˈsɪstəm/",
+    "zh": "系統、制度",
+    "example": "Educational systems must adapt to changing needs.",
+    "exampleZh": "教育系統必須適應變化的需求。"
+  },
+  {
+    "en": "table",
+    "kk": "/ˈteɪbl/",
+    "zh": "桌子、表格",
+    "example": "Students gather around the discussion table.",
+    "exampleZh": "學生圍坐在討論桌旁。"
+  },
+  {
+    "en": "take",
+    "kk": "/teɪk/",
+    "zh": "拿、服用",
+    "example": "Students take notes during lectures.",
+    "exampleZh": "學生在講 座期間做筆記。"
+  },
+  {
+    "en": "talk",
+    "kk": "/tɔːk/",
+    "zh": "談話、講話",
+    "example": "Students talk about their future goals.",
+    "exampleZh": "學生談 論未來目標。"
+  },
+  {
+    "en": "task",
+    "kk": "/tæsk/",
+    "zh": "任務、工作",
+    "example": "Each task builds essential skills.",
+    "exampleZh": "每個任務都建立 基本技能。"
+  },
+  {
+    "en": "tax",
+    "kk": "/tæks/",
+    "zh": "稅、徵稅",
+    "example": "Education funding comes from tax revenue.",
+    "exampleZh": "教 育資金來自稅收。"
+  },
+  {
+    "en": "teach",
+    "kk": "/tiːtʃ/",
+    "zh": "教授、教導",
+    "example": "Experienced teachers teach with passion and expertise.",
+    "exampleZh": "經驗豐富的教師以熱情和專業知識教 學。"
+  },
+  {
+    "en": "teacher",
+    "kk": "/ˈtiːtʃər/",
+    "zh": "教師、老師",
+    "example": "Great teachers inspire students to reach their potential.",
+    "exampleZh": "偉大的教師激勵學生發揮潛力。"
+  },
+  {
+    "en": "team",
+    "kk": "/tiːm/",
+    "zh": "團隊、小組",
+    "example": "Project teams collaborate efefctively.",
+    "exampleZh": "項目團隊 有效合作。"
+  },
+  {
+    "en": "technology",
+    "kk": "/tekˈnɑːlədʒi/",
+    "zh": "技術、科技",
+    "example": "Educational technology transforms traditional learning methods.",
+    "exampleZh": "教育技術改變傳統學習方法。"
+  },
+  {
+    "en": "television",
+    "kk": "/ˈtelɪvɪʒn/",
+    "zh": "電視、電視機",
+    "example": "Educational television programs supplement classroom learning.",
+    "exampleZh": "教育電視節目補充課堂學 習。"
+  },
+  {
+    "en": "tell",
+    "kk": "/tel/",
+    "zh": "告訴、說",
+    "example": "Teachers tell inspiring stories to students.",
+    "exampleZh": "老師 向學生講述鼓舞人心的故事。"
+  },
+  {
+    "en": "ten",
+    "kk": "/ten/",
+    "zh": "十、十個",
+    "example": "The course lasts ten weeks.",
+    "exampleZh": "課程持續十週。"
+  },
+  {
+    "en": "term",
+    "kk": "/tɜːrm/",
+    "zh": "學期、術語",
+    "example": "Spring term focuses on practical applications.",
+    "exampleZh": "春季學期專注於實際應用。"
+  },
+  {
+    "en": "test",
+    "kk": "/test/",
+    "zh": "測試、考試",
+    "example": "Regular tests assess student understanding.",
+    "exampleZh": "定 期測試評估學生理解程度。"
+  },
+  {
+    "en": "text",
+    "kk": "/tekst/",
+    "zh": "文本、教科書",
+    "example": "Digital texts provide interactive learning experiences.",
+    "exampleZh": "數位文本提供互動學習體驗。"
+  },
+  {
+    "en": "than",
+    "kk": "/ðæn/",
+    "zh": "比、超過",
+    "example": "Practice matters more than natural talent.",
+    "exampleZh": "練習 比天賦更重要。"
+  },
+  {
+    "en": "thank",
+    "kk": "/θæŋk/",
+    "zh": "感謝、謝謝",
+    "example": "Students thank teachers for their guidance.",
+    "exampleZh": "學 生感謝老師的指導。"
+  },
+  {
+    "en": "that",
+    "kk": "/ðæt/",
+    "zh": "那個、那",
+    "example": "That method works for most students.",
+    "exampleZh": "那種方 法對大多數學生有效。"
+  },
+  {
+    "en": "the",
+    "kk": "/ðə/",
+    "zh": "定冠詞",
+    "example": "The education system serves all children.",
+    "exampleZh": "教育 系統為所有兒童服務。"
+  },
+  {
+    "en": "their",
+    "kk": "/ðer/",
+    "zh": "他們的",
+    "example": "Students improve their skills through practice.",
+    "exampleZh": "學生通過練習提高技能。"
+  },
+  {
+    "en": "them",
+    "kk": "/ðem/",
+    "zh": "他們、她們",
+    "example": "Teachers encourage them to ask questions.",
+    "exampleZh": "老 師鼓勵他們提問。"
+  },
+  {
+    "en": "then",
+    "kk": "/ðen/",
+    "zh": "然後、那時",
+    "example": "Students learn basics, then advance topics.",
+    "exampleZh": "學 生學習基礎，然後是高級主題。"
+  },
+  {
+    "en": "theory",
+    "kk": "/ˈθiːəri/",
+    "zh": "理論、學說",
+    "example": "Learning theories guide efefctive teaching practices.",
+    "exampleZh": "學習理論指導有效的教學實踐。"
+  },
+  {
+    "en": "there",
+    "kk": "/ðer/",
+    "zh": "那裡、在那裡",
+    "example": "There are many learning opportunities available.",
+    "exampleZh": "那裡有許多學習機會。"
+  },
+  {
+    "en": "these",
+    "kk": "/ðiːz/",
+    "zh": "這些",
+    "example": "These skills will benefit future careers.",
+    "exampleZh": "這些技能 將有益於未來職業。"
+  },
+  {
+    "en": "under",
+    "kk": "/ˈʌndər/",
+    "zh": "在...下面、低於",
+    "example": "Students work under teacher supervision.",
+    "exampleZh": "學生 在老師監督下工作。"
+  },
+  {
+    "en": "understand",
+    "kk": "/ˌʌndərˈstænd/",
+    "zh": "理解、明白",
+    "example": "Students must understand concepts before applying them.",
+    "exampleZh": "學生必須理解概念才能應用它 們。"
+  },
+  {
+    "en": "union",
+    "kk": "/ˈjuːnjən/",
+    "zh": "聯盟、工會",
+    "example": "Teacher unions advocate for education funding.",
+    "exampleZh": "教師工會為教育資金倡議。"
+  },
+  {
+    "en": "unit",
+    "kk": "/ˈjuːnɪt/",
+    "zh": "單位、單元",
+    "example": "Each curriculum unit builds on previous knowledge.",
+    "exampleZh": "每個課程單元都建立在先前知識之 上。"
+  },
+  {
+    "en": "unite",
+    "kk": "/juˈnaɪt/",
+    "zh": "聯合、團結",
+    "example": "Common goals unite students and teachers.",
+    "exampleZh": "共同目標團結學生和老師。"
+  },
+  {
+    "en": "university",
+    "kk": "/ˌjuːnɪˈvɜːrsəti/",
+    "zh": "大學",
+    "example": "Universities provide advanced education and research opportunities.",
+    "exampleZh": "大學提供高等教育和研 究機會。"
+  },
+  {
+    "en": "unless",
+    "kk": "/ənˈles/",
+    "zh": "除非、如果不",
+    "example": "Students cannot succeed unless they study regularly.",
+    "exampleZh": "學生除非定期學習否則無法成功。"
+  },
+  {
+    "en": "until",
+    "kk": "/ənˈtɪl/",
+    "zh": "直到、到...為止",
+    "example": "Study until you master the material.",
+    "exampleZh": "學習直到 你掌握材料。"
+  },
+  {
+    "en": "up",
+    "kk": "/ʌp/",
+    "zh": "向上、上升",
+    "example": "Test scores went up after extra practice.",
+    "exampleZh": "額外 練習後考試成績上升。"
+  },
+  {
+    "en": "upon",
+    "kk": "/əˈpɑːn/",
+    "zh": "在...上、基於",
+    "example": "Success depends upon consistent efofrt.",
+    "exampleZh": "成功 取決於持續努力。"
+  },
+  {
+    "en": "urban",
+    "kk": "/ˈɜːrbən/",
+    "zh": "城市的、都市的",
+    "example": "Urban schools face unique challenges.",
+    "exampleZh": "城市學 校面臨獨特挑戰。"
+  },
+  {
+    "en": "use",
+    "kk": "/juːz/",
+    "zh": "使用、用途",
+    "example": "Efefctive teachers use diverse teaching methods.",
+    "exampleZh": "有效的教師使用多樣化的教學方法。"
+  },
+  {
+    "en": "used",
+    "kk": "/juːzd/",
+    "zh": "習慣的、二手的",
+    "example": "Students become used to digital learning tools.",
+    "exampleZh": "學生習慣了數位學習工具。"
+  },
+  {
+    "en": "useful",
+    "kk": "/ˈjuːsfəl/",
+    "zh": "有用的、實用的",
+    "example": "Useful skills prepare students for future careers.",
+    "exampleZh": "有用的技能為學生未來職業做準備。"
+  },
+  {
+    "en": "user",
+    "kk": "/ˈjuːzər/",
+    "zh": "使用者、用戶",
+    "example": "Library users access resources online.",
+    "exampleZh": "圖書館 使用者在線訪問資源。"
+  },
+  {
+    "en": "usual",
+    "kk": "/ˈjuːʒuəl/",
+    "zh": "通常的、平常的",
+    "example": "Students follow their usual study routine.",
+    "exampleZh": "學生 遵循通常的學習例行程序。"
+  },
+  {
+    "en": "usually",
+    "kk": "/ˈjuːʒuəli/",
+    "zh": "通常、一般",
+    "example": "Classes usually begin at eight o'clock.",
+    "exampleZh": "課程通 常在八點開始。"
+  },
+  {
+    "en": "value",
+    "kk": "/ˈvæljuː/",
+    "zh": "價值、重視",
+    "example": "Education has immense value for personal development.",
+    "exampleZh": "教育對個人發展有巨大價值。"
+  },
+  {
+    "en": "variety",
+    "kk": "/vəˈraɪəti/",
+    "zh": "多樣性、品種",
+    "example": "Curriculum ofefrs a variety of subjects.",
+    "exampleZh": "課程提 供多樣化的科目。"
+  },
+  {
+    "en": "various",
+    "kk": "/ˈveriəs/",
+    "zh": "各種各樣的、不同的",
+    "example": "Various learning styles require difefrent teaching approaches.",
+    "exampleZh": "各種學習風格需要不同的 教學方法。"
+  },
+  {
+    "en": "vehicle",
+    "kk": "/ˈviːəkl/",
+    "zh": "車輛、工具",
+    "example": "School vehicles transport students safely.",
+    "exampleZh": "學校 車輛安全運送學生。"
+  },
+  {
+    "en": "version",
+    "kk": "/ˈvɜːrʒn/",
+    "zh": "版本、說法",
+    "example": "Digital versions of textbooks cost less.",
+    "exampleZh": "數位版 教科書成本較低。"
+  },
+  {
+    "en": "very",
+    "kk": "/ˈveri/",
+    "zh": "非常、很",
+    "example": "Very dedicated students achieve excellence.",
+    "exampleZh": "非常專心的學生達到卓越。"
+  },
+  {
+    "en": "video",
+    "kk": "/ˈvɪdioʊ/",
+    "zh": "視頻、錄像",
+    "example": "Educational videos enhance understanding.",
+    "exampleZh": "教育視頻增強理解。"
+  },
+  {
+    "en": "view",
+    "kk": "/vjuː/",
+    "zh": "觀點、看待",
+    "example": "Students develop their own views through critical thinking.",
+    "exampleZh": "學生通過批判性思考發展自己的 觀點。"
+  },
+  {
+    "en": "village",
+    "kk": "/ˈvɪlɪdʒ/",
+    "zh": "村莊、村子",
+    "example": "Rural villages need educational support.",
+    "exampleZh": "農村 村莊需要教育支持。"
+  },
+  {
+    "en": "visit",
+    "kk": "/ˈvɪzɪt/",
+    "zh": "訪問、參觀",
+    "example": "Students visit museums for cultural education.",
+    "exampleZh": "學生參觀博物館進行文化教育。"
+  },
+  {
+    "en": "voice",
+    "kk": "/vɔɪs/",
+    "zh": "聲音、發言權",
+    "example": "Every student deserves a voice in their education.",
+    "exampleZh": "每個學生都應在教育中有發言權。"
+  },
+  {
+    "en": "vote",
+    "kk": "/voʊt/",
+    "zh": "投票、選票",
+    "example": "Students vote for class representatives.",
+    "exampleZh": "學生為 班級代表投票。"
+  },
+  {
+    "en": "wait",
+    "kk": "/weɪt/",
+    "zh": "等待、等候",
+    "example": "Patience means learning to wait for results.",
+    "exampleZh": "耐 心意味著學會等待結果。"
+  },
+  {
+    "en": "wake",
+    "kk": "/weɪk/",
+    "zh": "醒來、喚醒",
+    "example": "Students wake early for morning classes.",
+    "exampleZh": "學生 為晨課早起。"
+  },
+  {
+    "en": "walk",
+    "kk": "/wɔːk/",
+    "zh": "走、散步",
+    "example": "Students walk to nearby libraries.",
+    "exampleZh": "學生步行到 附近圖書館。"
+  },
+  {
+    "en": "wall",
+    "kk": "/wɔːl/",
+    "zh": "牆、圍牆",
+    "example": "Classroom walls display student artwork.",
+    "exampleZh": "教室 牆壁展示學生藝術作品。"
+  },
+  {
+    "en": "want",
+    "kk": "/wɑːnt/",
+    "zh": "想要、需要",
+    "example": "Students want meaningful learning experiences.",
+    "exampleZh": "學生想要有意義的學習經驗。"
+  },
+  {
+    "en": "war",
+    "kk": "/wɔːr/",
+    "zh": "戰爭",
+    "example": "History lessons examine causes of war.",
+    "exampleZh": "歷史課 檢查戰爭原因。"
+  },
+  {
+    "en": "warm",
+    "kk": "/wɔːrm/",
+    "zh": "溫暖的、使溫暖",
+    "example": "Warm classrooms create comfortable learning environments.",
+    "exampleZh": "溫暖的教室創造舒適的學習環 境。"
+  },
+  {
+    "en": "watch",
+    "kk": "/wɑːtʃ/",
+    "zh": "觀看、手錶",
+    "example": "Students watch educational documentaries.",
+    "exampleZh": "學生觀看教育紀錄片。"
+  },
+  {
+    "en": "water",
+    "kk": "/ˈwɔːtər/",
+    "zh": "水、澆水",
+    "example": "Clean water is essential for health.",
+    "exampleZh": "清潔的水對 健康至關重要。"
+  },
+  {
+    "en": "wave",
+    "kk": "/weɪv/",
+    "zh": "波浪、揮手",
+    "example": "Students wave goodbye after graduation.",
+    "exampleZh": "學 生畢業後揮手告別。"
+  },
+  {
+    "en": "way",
+    "kk": "/weɪ/",
+    "zh": "方法、道路",
+    "example": "There are many ways to approach learning challenges.",
+    "exampleZh": "有許多方法來應對學習挑戰。"
+  },
+  {
+    "en": "we",
+    "kk": "/wiː/",
+    "zh": "我們",
+    "example": "We learn better when working together.",
+    "exampleZh": "我們一 起工作時學得更好。"
+  },
+  {
+    "en": "weak",
+    "kk": "/wiːk/",
+    "zh": "弱的、虛弱的",
+    "example": "Weak foundations lead to learning difficulties.",
+    "exampleZh": "薄弱的基礎導致學習困難。"
+  },
+  {
+    "en": "wear",
+    "kk": "/wer/",
+    "zh": "穿、戴",
+    "example": "Students wear uniforms with pride.",
+    "exampleZh": "學生自豪地 穿校服。"
+  },
+  {
+    "en": "weather",
+    "kk": "/ˈweðər/",
+    "zh": "天氣、氣候",
+    "example": "Good weather encourages outdoor classes.",
+    "exampleZh": "好 天氣鼓勵戶外課程。"
+  },
+  {
+    "en": "week",
+    "kk": "/wiːk/",
+    "zh": "週、星期",
+    "example": "Students attend classes five days per week.",
+    "exampleZh": "學生每週上課五天。"
+  },
+  {
+    "en": "weight",
+    "kk": "/weɪt/",
+    "zh": "重量、重要性",
+    "example": "Teachers give equal weight to all assignments.",
+    "exampleZh": "老師給所有作業同等重要性。"
+  },
+  {
+    "en": "welcome",
+    "kk": "/ˈwelkəm/",
+    "zh": "歡迎、受歡迎的",
+    "example": "Schools welcome students from all backgrounds.",
+    "exampleZh": "學校歡迎來自各種背景的學生。"
+  },
+  {
+    "en": "well",
+    "kk": "/wel/",
+    "zh": "好地、健康的",
+    "example": "Students perform well with proper guidance.",
+    "exampleZh": "學生在適當指導下表現良好。"
+  },
+  {
+    "en": "west",
+    "kk": "/west/",
+    "zh": "西方、西部的",
+    "example": "The west wing houses the library.",
+    "exampleZh": "西翼設有圖書 館。"
+  },
+  {
+    "en": "what",
+    "kk": "/wʌt/",
+    "zh": "什麼、哪個",
+    "example": "What students learn shapes their future.",
+    "exampleZh": "學生 學習的內容塑造他們的未來。"
+  },
+  {
+    "en": "when",
+    "kk": "/wen/",
+    "zh": "什麼時候、當",
+    "example": "Learning happens when students engage actively.",
+    "exampleZh": "學生積極參與時學習就會發生。"
+  },
+  {
+    "en": "where",
+    "kk": "/wer/",
+    "zh": "哪裡、在哪裡",
+    "example": "Classrooms are where knowledge transfers occur.",
+    "exampleZh": "教室是知識轉移發生的地方。"
+  },
+  {
+    "en": "whether",
+    "kk": "/ˈweðər/",
+    "zh": "是否、無論",
+    "example": "Success depends on whether students apply themselves.",
+    "exampleZh": "成功取決於學生是否努力。"
+  },
+  {
+    "en": "which",
+    "kk": "/wɪtʃ/",
+    "zh": "哪個、哪些",
+    "example": "Students choose which subjects interest them most.",
+    "exampleZh": "學生選擇最感興趣的科目。"
+  },
+  {
+    "en": "while",
+    "kk": "/waɪl/",
+    "zh": "當...時、一段時間",
+    "example": "Students concentrate while studying.",
+    "exampleZh": "學生學習 時專注。"
+  },
+  {
+    "en": "white",
+    "kk": "/waɪt/",
+    "zh": "白色的、白色",
+    "example": "White boards replaced traditional blackboards.",
+    "exampleZh": "白板取代了傳統黑板。"
+  },
+  {
+    "en": "who",
+    "kk": "/huː/",
+    "zh": "誰、那個人",
+    "example": "Students who work hard achieve success.",
+    "exampleZh": "努力 工作的學生取得成功。"
+  },
+  {
+    "en": "whole",
+    "kk": "/hoʊl/",
+    "zh": "整個的、全部",
+    "example": "The whole class participated in the project.",
+    "exampleZh": "整 個班級都參與了項目。"
+  },
+  {
+    "en": "why",
+    "kk": "/waɪ/",
+    "zh": "為什麼",
+    "example": "Teachers explain why concepts are important.",
+    "exampleZh": "老師解釋概念為什麼重要。"
+  },
+  {
+    "en": "wide",
+    "kk": "/waɪd/",
+    "zh": "寬的、廣泛的",
+    "example": "Education opens wide career opportunities.",
+    "exampleZh": "教 育開啟廣泛的職業機會。"
+  },
+  {
+    "en": "wife",
+    "kk": "/waɪf/",
+    "zh": "妻子、太太",
+    "example": "The teacher's wife also works in education.",
+    "exampleZh": "老 師的妻子也從事教育工作。"
+  },
+  {
+    "en": "win",
+    "kk": "/wɪn/",
+    "zh": "贏、獲勝",
+    "example": "Hard work helps students win academic awards.",
+    "exampleZh": "努力工作幫助學生贏得學術獎項。"
+  },
+  {
+    "en": "wind",
+    "kk": "/wɪnd/",
+    "zh": "風、纏繞",
+    "example": "Strong wind cancelled outdoor activities.",
+    "exampleZh": "強風 取消了戶外活動。"
+  },
+  {
+    "en": "window",
+    "kk": "/ˈwɪndoʊ/",
+    "zh": "窗戶、視窗",
+    "example": "Classroom windows provide natural light.",
+    "exampleZh": "教室 窗戶提供自然光。"
+  },
+  {
+    "en": "winter",
+    "kk": "/ˈwɪntər/",
+    "zh": "冬天、冬季",
+    "example": "Winter break allows students to rest.",
+    "exampleZh": "寒假讓學 生休息。"
+  },
+  {
+    "en": "wish",
+    "kk": "/wɪʃ/",
+    "zh": "希望、願望",
+    "example": "Students wish to succeed in their studies.",
+    "exampleZh": "學生 希望在學習中成功。"
+  },
+  {
+    "en": "with",
+    "kk": "/wɪð/",
+    "zh": "和、用",
+    "example": "Students work with dedicated teachers.",
+    "exampleZh": "學生 與專心的老師一起工作。"
+  },
+  {
+    "en": "within",
+    "kk": "/wɪˈðɪn/",
+    "zh": "在...內、內部",
+    "example": "Success comes from within each student.",
+    "exampleZh": "成功 來自每個學生的內心。"
+  },
+  {
+    "en": "without",
+    "kk": "/wɪˈðaʊt/",
+    "zh": "沒有、缺乏",
+    "example": "Learning is difficult without proper resources.",
+    "exampleZh": "沒有適當資源學習很困難。"
+  },
+  {
+    "en": "woman",
+    "kk": "/ˈwʊmən/",
+    "zh": "女人、婦女",
+    "example": "Every woman deserves equal educational opportunities.",
+    "exampleZh": "每個女性都應得到平等的教育機 會。"
+  },
+  {
+    "en": "wonder",
+    "kk": "/ˈwʌndər/",
+    "zh": "想知道、奇蹟",
+    "example": "Students wonder about scientific mysteries.",
+    "exampleZh": "學生對科學奧秘感到好奇。"
+  },
+  {
+    "en": "wood",
+    "kk": "/wʊd/",
+    "zh": "木頭、森林",
+    "example": "Art students carve sculptures from wood.",
+    "exampleZh": "藝術 學生用木頭雕刻雕塑。"
+  },
+  {
+    "en": "word",
+    "kk": "/wɜːrd/",
+    "zh": "單字、話語",
+    "example": "Learning new words expands communication abilities.",
+    "exampleZh": "學習新單字擴展溝通能力。"
+  },
+  {
+    "en": "work",
+    "kk": "/wɜːrk/",
+    "zh": "工作、起作用",
+    "example": "Hard work and persistence lead to mastery.",
+    "exampleZh": "努力工作和堅持導致精通。"
+  },
+  {
+    "en": "worker",
+    "kk": "/ˈwɜːrkər/",
+    "zh": "工人、員工",
+    "example": "Education workers dedicate themselves to learning.",
+    "exampleZh": "教育工作者致力於學習。"
+  },
+  {
+    "en": "world",
+    "kk": "/wɜːrld/",
+    "zh": "世界、領域",
+    "example": "Education opens doors to the world of opportunities.",
+    "exampleZh": "教育為機會的世界打開大門。"
+  },
+  {
+    "en": "worry",
+    "kk": "/ˈwɜːri/",
+    "zh": "擔心、憂慮",
+    "example": "Students shouldn't worry about making mistakes.",
+    "exampleZh": "學生不應該擔心犯錯。"
+  },
+  {
+    "en": "write",
+    "kk": "/raɪt/",
+    "zh": "寫、書寫",
+    "example": "Students learn to write clearly and persuasively.",
+    "exampleZh": "學生學會清晰有說服力地寫作。"
+  },
+  {
+    "en": "wrong",
+    "kk": "/rɔːŋ/",
+    "zh": "錯誤的、錯誤地",
+    "example": "Learning from wrong answers improves understanding.",
+    "exampleZh": "從錯誤答案中學習提高理解。"
+  },
+  {
+    "en": "yard",
+    "kk": "/jɑːrd/",
+    "zh": "院子、碼",
+    "example": "School yards provide recreational spaces.",
+    "exampleZh": "學 校院子提供娛樂空間。"
+  },
+  {
+    "en": "year",
+    "kk": "/jɪr/",
+    "zh": "年、年度",
+    "example": "Each year brings new learning opportunities.",
+    "exampleZh": "每年都帶來新的學習機會。"
+  },
+  {
+    "en": "yellow",
+    "kk": "/ˈjeloʊ/",
+    "zh": "黃色的、黃色",
+    "example": "Yellow highlighters mark important text.",
+    "exampleZh": "黃色 螢光筆標記重要文字。"
+  },
+  {
+    "en": "yes",
+    "kk": "/jes/",
+    "zh": "是的、同意",
+    "example": "Yes, consistent efofrt produces remarkable results.",
+    "exampleZh": "是的，持續努力產生顯著結果。"
+  },
+  {
+    "en": "yesterday",
+    "kk": "/ˈjestərdeɪ/",
+    "zh": "昨天",
+    "example": "Yesterday's lesson prepared students for today's test.",
+    "exampleZh": "昨天的課程為學生今天的測試做準 備。"
+  },
+  {
+    "en": "yet",
+    "kk": "/jet/",
+    "zh": "還、然而",
+    "example": "Students haven't finished yet.",
+    "exampleZh": "學生還沒有完 成。"
+  },
+  {
+    "en": "you",
+    "kk": "/juː/",
+    "zh": "你、你們",
+    "example": "You can achieve anything with dedication.",
+    "exampleZh": "你 可以通過奉獻實現任何事情。"
+  },
+  {
+    "en": "young",
+    "kk": "/jʌŋ/",
+    "zh": "年輕的、幼小的",
+    "example": "Young minds are particularly receptive to language learning.",
+    "exampleZh": "年輕的頭腦特別容易接受語 言學習。"
+  },
+  {
+    "en": "your",
+    "kk": "/jʊr/",
+    "zh": "你的、你們的",
+    "example": "Your education is an investment in the future.",
+    "exampleZh": "你的教育是對未來的投資。"
+  },
+  {
+    "en": "yourself",
+    "kk": "/jərˈself/",
+    "zh": "你自己",
+    "example": "Believe in yourself and your abilities.",
+    "exampleZh": "相信你自 己和你的能力。"
+  },
+  {
+    "en": "zone",
+    "kk": "/zoʊn/",
+    "zh": "地區、區域",
+    "example": "Creating a comfortable study zone enhances concentration.",
+    "exampleZh": "創造舒適的學習區域增強專注 力。"
+  }
+]

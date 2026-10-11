@@ -1002,12 +1002,12 @@ const afterEnd = content.substring(arrayEnd);
 // Add comma if needed
 let finalContent = beforeEnd;
 if (!finalContent.endsWith(',')) {
-    finalContent += ',\\n';
+    finalContent += ',\n';
 } else {
-    finalContent += '\\n';
+    finalContent += '\n';
 }
 
-finalContent += newLines.join(',\\n') + '\\n' + afterEnd;
+finalContent += newLines.join(',\n') + '\n' + afterEnd;
 
 fs.writeFileSync('toeic_data.js', finalContent, 'utf8');
 console.log('Added 1000 words into toeic_data.js! Now units 12-16 exist.');

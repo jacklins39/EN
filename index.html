@@ -118,6 +118,46 @@
         .sentence-card.sentence-active .listening-wave-icon {
             display: inline-flex !important;
         }
+
+        /* 雙人互動對話專屬風格 */
+        .dialogue-card-A {
+            border-left: 4px solid #0071E3 !important;
+            background-color: rgba(240, 247, 255, 0.45);
+        }
+        .dialogue-card-B {
+            border-left: 4px solid #8936FF !important;
+            background-color: rgba(250, 245, 255, 0.55);
+        }
+        .sentence-card.dialogue-card-B.sentence-active {
+            border-color: #8936FF !important;
+            border-left-width: 4px !important;
+            background-color: #FFFFFF !important;
+            box-shadow: 0 8px 24px -4px rgba(137, 54, 255, 0.22), 0 2px 8px -2px rgba(0, 0, 0, 0.06) !important;
+        }
+        .sentence-card.dialogue-card-B.sentence-active .sentence-badge {
+            background-color: #8936FF !important;
+            color: #FFFFFF !important;
+            box-shadow: 0 2px 6px rgba(137, 54, 255, 0.35) !important;
+        }
+        .sentence-card.dialogue-card-B.sentence-active .en-text {
+            color: #8936FF !important;
+            font-weight: 700 !important;
+        }
+        .sentence-card.dialogue-card-B.sentence-active .listening-wave-icon {
+            display: inline-flex !important;
+            background-color: #F3E8FF !important;
+            color: #8936FF !important;
+        }
+        .sentence-card.dialogue-card-B.sentence-active .listening-wave-icon svg {
+            color: #8936FF !important;
+        }
+        .roleplay-box {
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .roleplay-box:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 113, 227, 0.12);
+        }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
@@ -514,6 +554,21 @@
                         <button id="btn-save-listening-article" class="text-xs bg-yellow-50 text-yellow-700 hover:bg-yellow-100 px-3 py-1.5 rounded-full font-medium shadow-sm transition-colors hidden">
                             收藏文章
                         </button>
+                    </div>
+
+                    <!-- 角色對話演練列 (對話文章專用) -->
+                    <div id="dialogue-role-bar" class="hidden mb-3 bg-gradient-to-r from-blue-50/90 to-purple-50/90 border border-blue-200/80 p-2.5 rounded-2xl shadow-sm">
+                        <div class="flex items-center justify-between gap-2">
+                            <span class="text-xs font-bold text-[#1D1D1F] flex items-center gap-1.5 shrink-0">
+                                <span>🎭</span>
+                                <span>互動角色演練</span>
+                            </span>
+                            <div class="flex items-center gap-1 bg-white/90 p-1 rounded-xl shadow-xs border border-gray-200/60">
+                                <button id="btn-role-all" class="role-mode-btn px-2.5 py-1 text-xs font-semibold rounded-lg bg-[#0071E3] text-white transition-all shadow-xs" onclick="setRolePlayMode('all')">雙方正常</button>
+                                <button id="btn-role-A" class="role-mode-btn px-2.5 py-1 text-xs font-medium rounded-lg text-gray-600 hover:text-[#0071E3] transition-all" onclick="setRolePlayMode('A')">扮演 Alex 👨‍💼</button>
+                                <button id="btn-role-B" class="role-mode-btn px-2.5 py-1 text-xs font-medium rounded-lg text-gray-600 hover:text-purple-600 transition-all" onclick="setRolePlayMode('B')">扮演 Sophia 👩‍💼</button>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- 播放控制器列 -->
@@ -2876,8 +2931,80 @@
             updateListeningPlayBtn();
             highlightListeningSentence(-1);
 
-            // 渲染句子列表 (直接包含中英對照，0 延遲無縫呈現)
+            // 角色對話演練列控制
+            const roleBar = document.getElementById('dialogue-role-bar');
+            if (roleBar) {
+                if (article.isDialogue) {
+                    roleBar.classList.remove('hidden');
+                } else {
+                    roleBar.classList.add('hidden');
+                }
+            }
+            currentRolePlayMode = 'all';
+            revealedRoleplaySentences.clear();
+            updateRoleModeButtons('all');
+
+            // 渲染句子列表 (支援一般篇章與雙人角色對話)
+            renderListeningSentences();
+
+            // 萃取單字、名師文法與測驗
+            extractListeningWords(article.text || '');
+            generateListeningGrammar(article.text || '');
+            generateListeningQuiz(listeningSentences.map(s => s.en));
+        });
+
+        // 角色對話演練狀態與功能
+        let currentRolePlayMode = 'all';
+        let revealedRoleplaySentences = new Set();
+
+        function updateRoleModeButtons(mode) {
+            const btnAll = document.getElementById('btn-role-all');
+            const btnA = document.getElementById('btn-role-A');
+            const btnB = document.getElementById('btn-role-B');
+            if (!btnAll || !btnA || !btnB) return;
+
+            [btnAll, btnA, btnB].forEach(btn => {
+                btn.className = "role-mode-btn px-2.5 py-1 text-xs font-medium rounded-lg text-gray-600 hover:text-[#0071E3] transition-all";
+            });
+
+            if (mode === 'all') {
+                btnAll.className = "role-mode-btn px-2.5 py-1 text-xs font-semibold rounded-lg bg-[#0071E3] text-white transition-all shadow-xs";
+            } else if (mode === 'A') {
+                btnA.className = "role-mode-btn px-2.5 py-1 text-xs font-semibold rounded-lg bg-[#0071E3] text-white transition-all shadow-xs";
+            } else if (mode === 'B') {
+                btnB.className = "role-mode-btn px-2.5 py-1 text-xs font-semibold rounded-lg bg-purple-600 text-white transition-all shadow-xs";
+            }
+        }
+
+        function setRolePlayMode(mode) {
+            currentRolePlayMode = mode;
+            revealedRoleplaySentences.clear();
+            updateRoleModeButtons(mode);
+            renderListeningSentences();
+            if (currentHighlightedIndex >= 0) {
+                highlightListeningSentence(currentHighlightedIndex);
+            }
+        }
+
+        function toggleRoleplayReveal(idx) {
+            if (revealedRoleplaySentences.has(idx)) {
+                revealedRoleplaySentences.delete(idx);
+            } else {
+                revealedRoleplaySentences.add(idx);
+            }
+            renderListeningSentences();
+            if (currentHighlightedIndex >= 0) {
+                highlightListeningSentence(currentHighlightedIndex);
+            }
+        }
+
+        function renderListeningSentences() {
+            const article = currentSelectedListeningArticle;
+            if (!article) return;
+            const isDialogue = !!(article.isDialogue || (listeningSentences[0] && listeningSentences[0].speaker));
             const container = document.getElementById('listening-text-container');
+            if (!container) return;
+
             container.innerHTML = listeningSentences.map((sObj, i) => {
                 const s = sObj.en || '';
                 let html = '';
@@ -2892,18 +3019,46 @@
                 }
                 html += esc(s.substring(lastIndex));
 
+                const role = sObj.role || (sObj.speaker === 'Sophia' ? 'B' : 'A');
+                const roleClass = isDialogue ? (role === 'B' ? 'dialogue-card-B' : 'dialogue-card-A') : '';
+                const speakerName = sObj.speaker || (role === 'B' ? 'Sophia' : 'Alex');
+                const roleDesc = sObj.roleDesc || (role === 'B' ? '供應商總監 (UK)' : '採購部經理 (US)');
+                const avatar = sObj.avatar || (role === 'B' ? '👩‍💼' : '👨‍💼');
+
+                const speakerBadge = isDialogue ? `
+                    <div class="flex items-center gap-1.5 mb-2">
+                        <span class="inline-flex items-center gap-1.5 text-[11px] font-bold px-2.5 py-0.5 rounded-full ${role === 'B' ? 'bg-purple-100 text-purple-700' : 'bg-blue-100 text-[#0071E3]'}">
+                            <span>${avatar}</span>
+                            <span>${esc(speakerName)} · ${esc(roleDesc)}</span>
+                        </span>
+                    </div>
+                ` : '';
+
+                // 角色扮演挖空邏輯
+                const isMasked = isDialogue && currentRolePlayMode === role && !revealedRoleplaySentences.has(i);
+
+                const contentEnHtml = isMasked ? `
+                    <div class="roleplay-box bg-white/90 border border-dashed ${role === 'B' ? 'border-purple-300 text-purple-700' : 'border-blue-300 text-[#0071E3]'} rounded-xl p-3 text-xs font-medium flex items-center justify-between cursor-pointer shadow-xs my-1 hover:border-solid transition" onclick="event.stopPropagation(); toggleRoleplayReveal(${i})">
+                        <span class="flex items-center gap-1.5"><span>🗣️</span> <strong>輪到你扮演 ${esc(speakerName)}！</strong>請看下方中文提示開口說出此句</span>
+                        <span class="text-[10px] bg-white px-2 py-0.5 rounded-md shadow-xs border border-gray-200 text-gray-700 font-semibold shrink-0">查看原句 👁️</span>
+                    </div>
+                ` : `
+                    <div id="listen-s-${i}" class="text-base md:text-lg text-[#1D1D1F] leading-relaxed font-serif en-text transition-colors">${html}</div>
+                `;
+
                 return `
-                <div id="sentence-block-${i}" class="sentence-card mb-3 p-3.5 rounded-2xl cursor-pointer" onclick="playListeningFrom(${i})">
+                <div id="sentence-block-${i}" class="sentence-card mb-3 p-3.5 rounded-2xl cursor-pointer ${roleClass}" onclick="playListeningFrom(${i})">
+                    ${speakerBadge}
                     <div class="flex items-start gap-2.5">
                         <span class="sentence-badge text-[11px] font-mono font-semibold text-gray-500 bg-gray-200 px-2 py-0.5 rounded-md mt-0.5 shrink-0 transition-all">#${i + 1}</span>
                         <div class="flex-1">
                             <div class="flex items-center gap-1.5 mb-1">
-                                <span class="listening-wave-icon hidden items-center gap-1 text-[11px] bg-blue-100 text-[#0071E3] font-bold px-2 py-0.5 rounded-full animate-pulse">
-                                    <svg class="w-3.5 h-3.5 text-[#0071E3]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd" /></svg>
+                                <span class="listening-wave-icon hidden items-center gap-1 text-[11px] ${role === 'B' ? 'bg-purple-100 text-purple-700' : 'bg-blue-100 text-[#0071E3]'} font-bold px-2 py-0.5 rounded-full animate-pulse">
+                                    <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd" /></svg>
                                     正在朗讀
                                 </span>
                             </div>
-                            <div id="listen-s-${i}" class="text-base md:text-lg text-[#1D1D1F] leading-relaxed font-serif en-text transition-colors">${html}</div>
+                            ${contentEnHtml}
                             <div id="listen-zh-${i}" class="text-xs md:text-sm text-[#86868B] mt-1.5 font-medium zh-text transition-colors">${esc(sObj.zh || '')}</div>
                         </div>
                         <button class="text-gray-300 hover:text-[#0071E3] p-1.5 rounded-full hover:bg-blue-50 shrink-0 transition" title="從此句開始播放">
@@ -2913,12 +3068,7 @@
                 </div>`;
             }).join('');
             applyTransMode();
-
-            // 萃取單字、名師文法與測驗
-            extractListeningWords(article.text || '');
-            generateListeningGrammar(article.text || '');
-            generateListeningQuiz(listeningSentences.map(s => s.en));
-        });
+        }
 
         document.getElementById('trans-mode-select').addEventListener('change', applyTransMode);
 

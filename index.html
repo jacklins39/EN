@@ -1702,24 +1702,41 @@
             }
 
             updateProgressBar();
-            if (currentQuizType !== 'zh2en' && currentQuizType !== 'fill') playAudio(currentWord.en);
             
             if (isAutoFlashcardMode) {
-                autoFlashcardTimerId = setTimeout(() => {
+                // 自動翻卡模式：嚴格等單字完整朗讀完畢 -> 緩衝 -> 翻面 -> 等例句完整朗讀完畢 -> 緩衝 -> 跳下一張
+                const pauseAfterWord = Math.max(500, autoFlashcardSpeed * 0.15);
+                const pauseAfterExample = Math.max(900, autoFlashcardSpeed * 0.25);
+
+                playAudio(currentWord.en, () => {
                     if (!isAutoFlashcardMode) return;
-                    flashcard.classList.add('flipped');
-                    // 翻面後可以念英文例句
-                    if (currentWord.example) {
-                        playAudio(currentWord.example);
-                    }
-                    
                     autoFlashcardTimerId = setTimeout(() => {
                         if (!isAutoFlashcardMode) return;
-                        cardsCompleted++;
-                        nextCard();
-                    }, autoFlashcardSpeed * 0.6);
-                    
-                }, autoFlashcardSpeed * 0.4);
+                        flashcard.classList.add('flipped');
+
+                        // 翻面後若有例句，朗讀例句，並等例句完整唸完後才跳下一張
+                        if (currentWord.example) {
+                            playAudio(currentWord.example, () => {
+                                if (!isAutoFlashcardMode) return;
+                                autoFlashcardTimerId = setTimeout(() => {
+                                    if (!isAutoFlashcardMode) return;
+                                    cardsCompleted++;
+                                    nextCard();
+                                }, pauseAfterExample);
+                            });
+                        } else {
+                            autoFlashcardTimerId = setTimeout(() => {
+                                if (!isAutoFlashcardMode) return;
+                                cardsCompleted++;
+                                nextCard();
+                            }, pauseAfterExample);
+                        }
+                    }, pauseAfterWord);
+                });
+            } else {
+                if (currentQuizType !== 'zh2en' && currentQuizType !== 'fill') {
+                    playAudio(currentWord.en);
+                }
             }
         }
 
@@ -2091,58 +2108,113 @@
             setTimeout(() => playTone(783.99, 'sine', 0.1), 200); setTimeout(() => playTone(1046.50, 'sine', 0.4), 300);
         }
 
-        // 全域真人神經單字音訊播放器
+        // 全域真人神經單字與例句音訊播放器
         const wordAudioPlayer = new Audio();
 
-        function playAudio(text) {
-            if (!text) return;
+        function playAudio(text, onEndedCallback) {
+            if (!text) {
+                if (typeof onEndedCallback === 'function') onEndedCallback();
+                return;
+            }
             try {
-                const clean = cleanText(text).trim().toLowerCase();
-                // 1. 若本機已生成 Edge-TTS 真人神經發音庫 (Jenny)
-                if (typeof window.WORDS_AUDIO_MANIFEST !== 'undefined' && window.WORDS_AUDIO_MANIFEST.has(clean)) {
-                    wordAudioPlayer.src = `audio/words/${encodeURIComponent(clean)}.mp3`;
-                    wordAudioPlayer.playbackRate = 1.0;
-                    wordAudioPlayer.play().catch(e => console.warn("Local word audio play error:", e));
-                    return;
-                }
+                const clean = cleanText(text).trim();
+                const cleanLower = clean.toLowerCase();
 
-                // 2. 若為一般單字但未在清單中，使用高傳真美式真人發音串流 (美音庫)
-                const isSingleWord = /^[a-zA-Z']+$/.test(clean);
-                if (isSingleWord) {
-                    wordAudioPlayer.src = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(clean)}&type=2`;
+                const attachCallback = (audioEl) => {
+                    if (typeof onEndedCallback === 'function') {
+                        let called = false;
+                        const done = () => {
+                            if (called) return;
+                            called = true;
+                            audioEl.removeEventListener('ended', done);
+                            audioEl.removeEventListener('error', done);
+                            onEndedCallback();
+                        };
+                        audioEl.addEventListener('ended', done);
+                        audioEl.addEventListener('error', done);
+                        // 防呆計時器，最多不超過 10 秒必執行 callback 避免卡住流程
+                        setTimeout(done, 10000);
+                    }
+                };
+
+                // 1. 若本機已生成 Edge-TTS 真人神經發音庫 (Jenny)
+                if (typeof window.WORDS_AUDIO_MANIFEST !== 'undefined' && window.WORDS_AUDIO_MANIFEST.has(cleanLower)) {
+                    wordAudioPlayer.src = `audio/words/${encodeURIComponent(cleanLower)}.mp3`;
                     wordAudioPlayer.playbackRate = 1.0;
-                    wordAudioPlayer.play().catch(() => {
-                        speakViaSynthesis(text);
+                    attachCallback(wordAudioPlayer);
+                    wordAudioPlayer.play().catch(e => {
+                        console.warn("Local word audio play error:", e);
+                        if (typeof onEndedCallback === 'function') onEndedCallback();
                     });
                     return;
                 }
 
-                // 3. 整句例句，回退到 Web Speech API
-                speakViaSynthesis(text);
+                // 2. 若為一般單字但未在清單中，使用高傳真美式真人發音串流 (美音庫)
+                const isSingleWord = /^[a-zA-Z']+$/.test(cleanLower);
+                if (isSingleWord) {
+                    wordAudioPlayer.src = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(cleanLower)}&type=2`;
+                    wordAudioPlayer.playbackRate = 1.0;
+                    attachCallback(wordAudioPlayer);
+                    wordAudioPlayer.play().catch(() => {
+                        speakViaSynthesisOrTTS(clean, onEndedCallback);
+                    });
+                    return;
+                }
+
+                // 3. 整句例句：優先使用 Google 高傳真自然音訊流，若失敗回退 Web Speech API
+                const ttsUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=en&client=tw-ob&q=${encodeURIComponent(clean)}`;
+                wordAudioPlayer.src = ttsUrl;
+                wordAudioPlayer.playbackRate = 1.0;
+                attachCallback(wordAudioPlayer);
+                wordAudioPlayer.play().catch(() => {
+                    speakViaSynthesisOrTTS(clean, onEndedCallback);
+                });
             } catch(e) {
                 console.warn('playAudio error:', e);
-                speakViaSynthesis(text);
+                speakViaSynthesisOrTTS(text, onEndedCallback);
             }
         }
 
-        function speakViaSynthesis(text) {
+        function speakViaSynthesisOrTTS(text, onEndedCallback) {
             try {
                 if ('speechSynthesis' in window && text) {
-                    window.speechSynthesis.cancel();
                     const clean = cleanText(text);
                     const utterance = new SpeechSynthesisUtterance(clean);
                     utterance.lang = 'en-US';
-                    utterance.rate = 0.9;
+                    utterance.rate = 0.95;
+                    if (typeof onEndedCallback === 'function') {
+                        let called = false;
+                        const done = () => {
+                            if (called) return;
+                            called = true;
+                            onEndedCallback();
+                        };
+                        utterance.onend = done;
+                        utterance.onerror = done;
+                        setTimeout(done, 8000);
+                    }
                     window.speechSynthesis.speak(utterance);
+                    return;
                 }
             } catch(e) {
                 console.warn('speakViaSynthesis error:', e);
             }
+            if (typeof onEndedCallback === 'function') onEndedCallback();
         }
 
-        document.getElementById('btn-audio').addEventListener('click', () => playAudio(currentWord.en));
-        document.getElementById('btn-example-audio').addEventListener('click', () => {
-            if (currentWord && currentWord.example) playAudio(currentWord.example);
+        document.getElementById('btn-audio').addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (currentWord && currentWord.en) playAudio(currentWord.en);
+        });
+
+        document.getElementById('btn-example-audio').addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (currentWord && currentWord.example) {
+                const btn = e.currentTarget;
+                btn.classList.add('text-[#0071E3]', 'scale-110');
+                setTimeout(() => btn.classList.remove('text-[#0071E3]', 'scale-110'), 400);
+                playAudio(currentWord.example);
+            }
         });
 
         // 使用事件代理處理例句點擊

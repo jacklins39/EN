@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
+    <script>
+        const _origWarn = console.warn;
+        console.warn = function(...args) {
+            if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
+            _origWarn.apply(console, args);
+        };
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫 -->
     <script src="words_data.js"></script>
@@ -869,8 +876,13 @@
             
             const masteredCount = unitWords.filter(w => userProgress[w.id] && userProgress[w.id].level >= 5).length;
 
-            document.getElementById('stat-review').innerText = plan.completed ? 0 : previewReviewWords.length;
-            document.getElementById('stat-new').innerText = plan.completed ? 0 : previewNewWords.length;
+            if (plan.completed) {
+                document.getElementById('stat-review').innerText = totalDailyCount;
+                document.getElementById('stat-new').innerText = 0;
+            } else {
+                document.getElementById('stat-review').innerText = previewReviewWords.length;
+                document.getElementById('stat-new').innerText = previewNewWords.length;
+            }
             document.getElementById('stat-mastered').innerText = `${masteredCount} / ${unitWords.length}`;
 
             if(typeof renderChart === 'function') renderChart(currentUnit);
@@ -1043,11 +1055,17 @@
         }
 
         document.getElementById('box-stat-review').addEventListener('click', () => {
-            renderPreviewModal(previewReviewWords, '待複習單字預覽');
+            const plan = getDailyPlan(currentUnit);
+            if (plan.completed) {
+                const allToday = [...previewReviewWords, ...previewNewWords];
+                renderPreviewModal(allToday, '今日已學單字 (可再次溫習)');
+            } else {
+                renderPreviewModal(previewReviewWords, '待複習單字預覽');
+            }
         });
 
         document.getElementById('box-stat-new').addEventListener('click', () => {
-            renderPreviewModal(previewNewWords, '即將學習的新單字');
+            renderPreviewModal(previewNewWords, '今日新單字預覽');
         });
 
         document.getElementById('btn-start-session').addEventListener('click', () => {

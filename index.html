@@ -356,7 +356,7 @@
                         <div class="text-xs text-[#86868B] font-medium" id="session-progress-text">進度: 0/10</div>
                         <div id="session-queue-type" class="text-[#0071E3] text-xs font-medium mt-1"></div>
                     </div>
-                    <button id="btn-quit-session" class="text-xs text-[#FF3B30] hover:text-[#FF3B30] font-medium px-2 py-1 bg-red-50 hover:bg-[#FF3B30] bg-opacity-10 rounded border-0 border-red-100 transition active:scale-95">
+                    <button id="btn-quit-session" onclick="quitSession()" class="text-xs text-[#FF3B30] hover:text-[#FF3B30] font-medium px-2 py-1 bg-red-50 hover:bg-[#FF3B30] bg-opacity-10 rounded border-0 border-red-100 transition active:scale-95 cursor-pointer">
                         🚪 離開放棄
                     </button>
                 </div>
@@ -1448,23 +1448,21 @@
             nextCard();
         });
 
-        document.getElementById('btn-quit-session').addEventListener('click', () => {
-            const targetView = (lastActiveView === 'view-study-lobby') ? 'view-study-lobby' : 'view-dashboard';
-            const targetBtn = (lastActiveView === 'view-study-lobby') ? document.getElementById('tab-btn-study') : document.getElementById('tab-btn-dashboard');
+        function quitSession() {
             if (isAutoFlashcardMode) {
                 isAutoFlashcardMode = false;
                 if (autoFlashcardTimerId) clearTimeout(autoFlashcardTimerId);
-                switchTab(targetView, targetBtn);
-                return;
             }
-            if (confirm("確定要中斷目前的學習嗎？\n目前的進度已經存檔，但剩餘的卡片將會等到下次再複習。")) {
-                currentWord = null;
-                sessionQueue = [];
-                mistakeQueue = [];
-                switchTab(targetView, targetBtn);
-                updateDashboard();
-            }
-        });
+            currentWord = null;
+            sessionQueue = [];
+            mistakeQueue = [];
+            const targetView = (lastActiveView === 'view-study-lobby') ? 'view-study-lobby' : 'view-dashboard';
+            const targetBtn = (lastActiveView === 'view-study-lobby') ? document.getElementById('tab-btn-study') : document.getElementById('tab-btn-dashboard');
+            switchTab(targetView, targetBtn);
+            updateDashboard();
+        }
+
+        document.getElementById('btn-quit-session')?.addEventListener('click', quitSession);
 
         document.getElementById('btn-show-analysis').addEventListener('click', () => {
             hideAllViews();

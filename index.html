@@ -19,6 +19,7 @@
     <script src="toeic_data.js"></script>
     <script src="jh_data.js"></script>
     <script src="listening_data.js"></script>
+    <script src="words_audio_manifest.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -2090,17 +2091,52 @@
             setTimeout(() => playTone(783.99, 'sine', 0.1), 200); setTimeout(() => playTone(1046.50, 'sine', 0.4), 300);
         }
 
+        // 全域真人神經單字音訊播放器
+        const wordAudioPlayer = new Audio();
+
         function playAudio(text) {
+            if (!text) return;
+            try {
+                const clean = cleanText(text).trim().toLowerCase();
+                // 1. 若本機已生成 Edge-TTS 真人神經發音庫 (Jenny)
+                if (typeof window.WORDS_AUDIO_MANIFEST !== 'undefined' && window.WORDS_AUDIO_MANIFEST.has(clean)) {
+                    wordAudioPlayer.src = `audio/words/${encodeURIComponent(clean)}.mp3`;
+                    wordAudioPlayer.playbackRate = 1.0;
+                    wordAudioPlayer.play().catch(e => console.warn("Local word audio play error:", e));
+                    return;
+                }
+
+                // 2. 若為一般單字但未在清單中，使用高傳真美式真人發音串流 (美音庫)
+                const isSingleWord = /^[a-zA-Z']+$/.test(clean);
+                if (isSingleWord) {
+                    wordAudioPlayer.src = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(clean)}&type=2`;
+                    wordAudioPlayer.playbackRate = 1.0;
+                    wordAudioPlayer.play().catch(() => {
+                        speakViaSynthesis(text);
+                    });
+                    return;
+                }
+
+                // 3. 整句例句，回退到 Web Speech API
+                speakViaSynthesis(text);
+            } catch(e) {
+                console.warn('playAudio error:', e);
+                speakViaSynthesis(text);
+            }
+        }
+
+        function speakViaSynthesis(text) {
             try {
                 if ('speechSynthesis' in window && text) {
                     window.speechSynthesis.cancel();
                     const clean = cleanText(text);
                     const utterance = new SpeechSynthesisUtterance(clean);
-                    utterance.lang = 'en-US'; utterance.rate = 0.9;
+                    utterance.lang = 'en-US';
+                    utterance.rate = 0.9;
                     window.speechSynthesis.speak(utterance);
                 }
             } catch(e) {
-                console.warn('playAudio error:', e);
+                console.warn('speakViaSynthesis error:', e);
             }
         }
 
@@ -2886,7 +2922,7 @@
             
             matchedWords.forEach(w => {
                 wc.innerHTML += `
-                <div class="bg-white border border-gray-100 p-2 rounded-xl flex items-center justify-between shadow-sm cursor-pointer hover:bg-gray-50" onclick="window.speechSynthesis.speak(new SpeechSynthesisUtterance('${w.en.replace(/'/g, "\\'")}'))">
+                <div class="bg-white border border-gray-100 p-2 rounded-xl flex items-center justify-between shadow-sm cursor-pointer hover:bg-gray-50" onclick="playAudio('${w.en.replace(/'/g, "\\'")}')">
                     <div>
                         <div class="font-semibold text-[#1D1D1F]">${w.en}</div>
                         <div class="text-xs text-[#86868B] truncate w-20">${w.zh}</div>

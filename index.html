@@ -727,9 +727,29 @@
                 
                 if (docSnap.exists) {
                     const data = docSnap.data();
-                    userProgress = data.progress || {};
-                    virtualCurrentDay = typeof data.day === 'number' ? data.day : 0;
-                    dailyPlans = data.dailyPlans || {};
+                    const cloudProgress = data.progress || {};
+                    const cloudDailyPlans = data.dailyPlans || {};
+                    const cloudDay = typeof data.day === 'number' ? data.day : 0;
+                    
+                    // 雙向智慧合併進度：保留最高等級與最完整紀錄，絕不被空值覆蓋
+                    for (const id in cloudProgress) {
+                        if (!userProgress[id] || (cloudProgress[id].level > (userProgress[id].level || 0))) {
+                            userProgress[id] = cloudProgress[id];
+                        }
+                    }
+                    virtualCurrentDay = Math.max(virtualCurrentDay, cloudDay);
+                    
+                    // 智慧合併當日計畫：若本地或雲端任一邊已完成，保持已完成狀態
+                    for (const unit in cloudDailyPlans) {
+                        if (!dailyPlans[unit]) {
+                            dailyPlans[unit] = cloudDailyPlans[unit];
+                        } else if (cloudDailyPlans[unit].day === dailyPlans[unit].day) {
+                            if (cloudDailyPlans[unit].completed) dailyPlans[unit].completed = true;
+                        } else if (cloudDailyPlans[unit].day > dailyPlans[unit].day) {
+                            dailyPlans[unit] = cloudDailyPlans[unit];
+                        }
+                    }
+
                     if (typeof data.newWordsPerDay === 'number') {
                         NEW_WORDS_PER_DAY = data.newWordsPerDay;
                         localStorage.setItem('newWordsPerDay', NEW_WORDS_PER_DAY);
@@ -752,16 +772,11 @@
                         vocabularyDB.push(cw);
                     });
                     saveDailyPlansLocally();
+                    saveToCloud();
                 } else {
                     // 若雲端初次登入尚無存檔，保留並自動上傳本地既有進度至雲端，避免使用者的本機進度被清空
-                    if (Object.keys(userProgress).length > 0 || virtualCurrentDay > 0) {
-                        saveToCloud();
-                    } else {
-                        userProgress = {};
-                        virtualCurrentDay = 0;
-                        dailyPlans = {};
-                        saveDailyPlansLocally();
-                    }
+                    saveToCloud();
+                    saveDailyPlansLocally();
                 }
                 initAppLogic(); 
             } catch (error) {
@@ -824,15 +839,32 @@
 
         function initLocalData() {
             try {
-                userProgress = JSON.parse(localStorage.getItem('vocab_user_progress') || '{}');
+                const saved = JSON.parse(localStorage.getItem('vocab_user_progress') || '{}');
+                if (saved && typeof saved === 'object') {
+                    for (const id in saved) {
+                        if (!userProgress[id] || (saved[id].level > (userProgress[id].level || 0))) {
+                            userProgress[id] = saved[id];
+                        }
+                    }
+                }
             } catch(e) {
-                userProgress = {};
+                console.warn("讀取本地進度異常", e);
             }
-            virtualCurrentDay = parseInt(localStorage.getItem('vocab_virtual_day') || '0', 10);
+            const savedDay = parseInt(localStorage.getItem('vocab_virtual_day') || '0', 10);
+            if (!isNaN(savedDay)) virtualCurrentDay = Math.max(virtualCurrentDay, savedDay);
             try {
-                dailyPlans = JSON.parse(localStorage.getItem('vocab_daily_plans') || '{}');
+                const savedPlans = JSON.parse(localStorage.getItem('vocab_daily_plans') || '{}');
+                if (savedPlans && typeof savedPlans === 'object') {
+                    for (const u in savedPlans) {
+                        if (!dailyPlans[u]) {
+                            dailyPlans[u] = savedPlans[u];
+                        } else if (savedPlans[u].day === dailyPlans[u].day && savedPlans[u].completed) {
+                            dailyPlans[u].completed = true;
+                        }
+                    }
+                }
             } catch(e) {
-                dailyPlans = {};
+                console.warn("讀取本地計畫異常", e);
             }
             initAppLogic();
         }
@@ -1119,6 +1151,7 @@
                 }
             });
             saveToCloud(); 
+            saveDailyPlansLocally(); 
 
             // 打亂陣列
             for (let i = sessionQueue.length - 1; i > 0; i--) {
@@ -1530,7 +1563,7 @@
         function finishSession() {
             isAutoFlashcardMode = false;
             if (autoFlashcardTimerId) clearTimeout(autoFlashcardTimerId);
-            if (sessionTitle === "一般課程" && dailyPlans[currentUnit]) {
+            if (dailyPlans[currentUnit]) {
                 dailyPlans[currentUnit].completed = true;
                 saveDailyPlansLocally();
                 saveToCloud();

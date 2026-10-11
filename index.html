@@ -439,17 +439,33 @@
                 
                 <div id="listening-setup" class="space-y-4">
                     <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2">選擇內建短文</label>
-                        <select id="listening-preset" aria-label="選擇情境短文" class="w-full bg-[#F5F5F7] border-0 border-gray-300 text-gray-700 rounded-xl p-3 outline-none focus:ring-2 focus:ring-teal-500">
-                            <option value="">-- 請選擇內建短文 (或在下方貼上) --</option>
+                        <div class="flex items-center justify-between mb-2">
+                            <label class="block text-sm font-semibold text-[#1D1D1F]">選擇情境短文 (AI 真人發音 2.0)</label>
+                            <span class="text-xs bg-blue-50 text-[#0071E3] font-medium px-2.5 py-0.5 rounded-full border border-blue-100">🎙️ 真人神經語音</span>
+                        </div>
+                        <select id="listening-preset" aria-label="選擇情境短文" class="w-full bg-[#F5F5F7] border border-gray-200 text-gray-800 rounded-xl p-3.5 outline-none focus:ring-2 focus:ring-[#0071E3] font-medium cursor-pointer shadow-sm">
+                            <option value="">-- 請選擇學習教材 --</option>
                         </select>
                     </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2">或貼上自訂文章</label>
-                        <textarea id="listening-textarea" rows="5" class="w-full bg-[#F5F5F7] border-0 border-gray-300 text-gray-700 rounded-xl p-3 outline-none focus:ring-2 focus:ring-teal-500" placeholder="貼上你想練習聽力的英文文章..."></textarea>
+
+                    <!-- 即時文章資訊卡片 -->
+                    <div id="listening-preset-card" class="hidden p-4 rounded-2xl bg-[#F5F5F7] border border-gray-200 transition-all">
+                        <div class="flex items-center justify-between mb-2">
+                            <h4 id="listening-card-title" class="font-semibold text-[#1D1D1F] text-base"></h4>
+                            <span id="listening-card-voice" class="text-xs px-2.5 py-1 rounded-full bg-blue-100 text-[#0071E3] font-semibold"></span>
+                        </div>
+                        <p id="listening-card-snippet" class="text-xs text-[#86868B] leading-relaxed line-clamp-3 mb-3"></p>
+                        <div class="flex items-center gap-2 text-[11px] text-[#86868B]">
+                            <span id="listening-card-count"></span>
+                            <span>•</span>
+                            <span class="text-green-600 font-medium">✔ 句句中英對照</span>
+                            <span>•</span>
+                            <span class="text-purple-600 font-medium">✔ 名師文法與測驗</span>
+                        </div>
                     </div>
-                    <button id="btn-generate-listening" class="w-full bg-[#0071E3] hover:bg-[#0077ED] text-white font-medium py-3 rounded-2xl shadow-sm transition-colors">
-                        產生聽力教材 🚀
+
+                    <button id="btn-generate-listening" class="w-full bg-[#0071E3] hover:bg-[#0077ED] text-white font-medium py-3.5 rounded-2xl shadow-sm transition-all active:scale-[0.99] flex items-center justify-center gap-2">
+                        <span>開始聽力特訓 🚀</span>
                     </button>
                 </div>
 
@@ -1162,8 +1178,11 @@
             } else if (viewId === 'view-listening') {
                 document.getElementById('listening-setup').classList.remove('hidden');
                 document.getElementById('listening-player').classList.add('hidden');
-                document.getElementById('listening-textarea').value = '';
-                document.getElementById('listening-preset').value = '';
+                const presetCard = document.getElementById('listening-preset-card');
+                if (presetCard) presetCard.classList.add('hidden');
+                const presetSel = document.getElementById('listening-preset');
+                if (presetSel) presetSel.value = '';
+                currentSelectedListeningArticle = null;
             }
             
             if (viewId !== 'view-listening') {
@@ -2662,7 +2681,9 @@
         // 聽力特訓模組
         // ==========================================
         // 聽力特訓短文 (來自 listening_data.js，若未載入則為空陣列)
-        window.builtInArticles = window.listeningArticlesDB || [];
+        const listeningDB = (typeof listeningArticlesDB !== 'undefined') ? listeningArticlesDB : (window.listeningArticlesDB || window.builtInArticles || []);
+        window.listeningArticlesDB = listeningDB;
+        window.builtInArticles = listeningDB;
         let currentSelectedListeningArticle = null;
 
         let listeningSentences = [];
@@ -2671,20 +2692,11 @@
         
         // The big entry buttons on dashboard are handled via tabs now
 
-        let savedListeningArticles = [];
-        try {
-            savedListeningArticles = JSON.parse(localStorage.getItem('savedListeningArticles') || '[]');
-            if (!Array.isArray(savedListeningArticles)) savedListeningArticles = [];
-        } catch(e) {
-            console.error('Error parsing saved listening articles', e);
-            savedListeningArticles = [];
-        }
-
         function renderListeningSelect() {
             const select = document.getElementById('listening-preset');
             if (!select) return;
             const prevVal = select.value;
-            select.innerHTML = '<option value="">-- 請選擇內建短文 (或在下方貼上) --</option>';
+            select.innerHTML = '<option value="">-- 請選擇學習教材 --</option>';
 
             const db = window.listeningArticlesDB || window.builtInArticles || [];
 
@@ -2712,25 +2724,12 @@
                 groups[groupKey].forEach(({ article, idx }) => {
                     const opt = document.createElement('option');
                     opt.value = idx;
-                    opt.textContent = `${article.title}`;
+                    const voiceTag = article.voiceLabel ? ` • [${article.voiceLabel}]` : '';
+                    opt.textContent = `${article.title}${voiceTag}`;
                     grpEl.appendChild(opt);
                 });
                 select.appendChild(grpEl);
             });
-
-            // 附加自訂收藏短文
-            if (savedListeningArticles.length > 0) {
-                const customGroup = document.createElement('optgroup');
-                customGroup.label = "⭐ 我的收藏文章";
-                customGroup.id = "custom-listening-group";
-                savedListeningArticles.forEach((a, i) => {
-                    const opt = document.createElement('option');
-                    opt.value = 'custom_' + i;
-                    opt.textContent = `${a.title} (${a.level || '自訂'})`;
-                    customGroup.appendChild(opt);
-                });
-                select.appendChild(customGroup);
-            }
 
             if (prevVal) select.value = prevVal;
         }
@@ -2738,99 +2737,117 @@
 
         document.getElementById('listening-preset').addEventListener('change', (e) => {
             const val = e.target.value;
-            const ta = document.getElementById('listening-textarea');
-            if (val === "") {
-                ta.value = "";
-                ta.dataset.lastVal = "";
+            const card = document.getElementById('listening-preset-card');
+            if (val === "" || val === null) {
                 currentSelectedListeningArticle = null;
-            } else {
-                if (val.startsWith('custom_')) {
-                    const idx = parseInt(val.split('_')[1]);
-                    ta.value = savedListeningArticles[idx].text;
-                    currentSelectedListeningArticle = null;
-                } else {
-                    const db = window.listeningArticlesDB || window.builtInArticles || [];
-                    const article = db[val];
-                    ta.value = article ? article.text : '';
-                    currentSelectedListeningArticle = article || null;
-                }
-                ta.dataset.lastVal = ta.value;
+                if (card) card.classList.add('hidden');
+                return;
+            }
+            const db = window.listeningArticlesDB || window.builtInArticles || [];
+            const article = db[parseInt(val, 10)];
+            if (!article) {
+                currentSelectedListeningArticle = null;
+                if (card) card.classList.add('hidden');
+                return;
+            }
+            currentSelectedListeningArticle = article;
+            if (card) {
+                const titleEl = document.getElementById('listening-card-title');
+                const voiceEl = document.getElementById('listening-card-voice');
+                const snippetEl = document.getElementById('listening-card-snippet');
+                const countEl = document.getElementById('listening-card-count');
+                if (titleEl) titleEl.textContent = article.title;
+                if (voiceEl) voiceEl.textContent = `🎙️ ${article.voiceLabel || 'AI 真人語音'}`;
+                const previewSnippet = article.sentences && article.sentences.length > 0 
+                    ? article.sentences.slice(0, 2).map(s => s.en).join(' ') 
+                    : (article.text || '');
+                if (snippetEl) snippetEl.textContent = previewSnippet;
+                const count = article.sentences ? article.sentences.length : 0;
+                if (countEl) countEl.textContent = `共 ${count} 句情境會話`;
+                card.classList.remove('hidden');
             }
         });
 
-        function estimateCEFR(text) {
-            const words = text.match(/\b[a-zA-Z']+\b/g) || [];
-            if (words.length === 0) return 'A1';
-            const avgLen = words.reduce((sum, w) => sum + w.length, 0) / words.length;
-            if (avgLen > 5.5) return 'C1';
-            if (avgLen > 5.0) return 'B2';
-            if (avgLen > 4.5) return 'B1';
-            if (avgLen > 4.0) return 'A2';
-            return 'A1';
+        // 萃取短文重點單字
+        function extractListeningWords(text) {
+            const words = text.toLowerCase().match(/\b[a-z']+\b/g) || [];
+            const uniqueWords = [...new Set(words)];
+            const getWordPriority = (w) => {
+                let score = 0;
+                const u = w.unit || 1;
+                if (u >= 11 && u <= 15) score = 100; // TOEIC words
+                else if (u >= 4 && u <= 6) score = 80 + u; // Advanced 7000 words
+                else if (u >= 2 && u <= 3) score = 40 + u; // Intermediate 7000 words
+                else if (u >= 17) score = 10; // Junior High words
+                else score = 20;
+                score += Math.min(w.en.length, 20);
+                return score;
+            };
+
+            const matchedWords = vocabularyDB
+                .filter(w => uniqueWords.includes(w.en.toLowerCase()))
+                .sort((a, b) => getWordPriority(b) - getWordPriority(a))
+                .slice(0, 20);
+            
+            const wc = document.getElementById('listening-words-container');
+            if (!wc) return;
+            wc.innerHTML = '';
+            if (matchedWords.length === 0) {
+                wc.innerHTML = '<div class="text-sm text-gray-500 col-span-2">未找到重點單字</div>';
+                return;
+            }
+            
+            matchedWords.forEach(w => {
+                wc.innerHTML += `
+                <div class="bg-white border border-gray-100 p-2 rounded-xl flex items-center justify-between shadow-sm cursor-pointer hover:bg-gray-50" onclick="window.speechSynthesis.speak(new SpeechSynthesisUtterance('${w.en.replace(/'/g, "\\'")}'))">
+                    <div>
+                        <div class="font-semibold text-[#1D1D1F]">${w.en}</div>
+                        <div class="text-xs text-[#86868B] truncate w-20">${w.zh}</div>
+                    </div>
+                    <button class="text-[#0071E3] hover:bg-[#E5E5EA] p-1 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
+                    </button>
+                </div>`;
+            });
         }
 
         document.getElementById('btn-generate-listening').addEventListener('click', () => {
-            const text = document.getElementById('listening-textarea').value.trim();
-            if (!text) return alert("請選擇或貼上文章內容");
-            
-            // 決定標題
-            const presetSelect = document.getElementById('listening-preset');
+            if (!currentSelectedListeningArticle) {
+                return alert("請先從上方選單挑選想特訓的情境短文！");
+            }
+            const article = currentSelectedListeningArticle;
+            listeningSentences = (article.sentences && article.sentences.length > 0)
+                ? article.sentences
+                : (article.text || '').split(/(?<=[.?!])\s+|\n+/).map(s => ({ en: s.trim(), zh: '', start: 0, end: 0 })).filter(s => s.en.length > 0);
+
+            if (listeningSentences.length === 0) return alert("教材內容無效，請選擇其他教材");
+
+            // 設定標題與語音標籤
             const titleEl = document.getElementById('listening-article-title');
             const headerContainer = document.getElementById('listening-header-container');
-            const saveBtn = document.getElementById('btn-save-listening-article');
-            
-            saveBtn.classList.add('hidden');
-            saveBtn.onclick = null;
-            
-            if (presetSelect.value !== "" && text === document.getElementById('listening-textarea').dataset.lastVal) {
-                // 如果是從下拉選單選的且沒被亂改
-                const optText = presetSelect.options[presetSelect.selectedIndex].text;
-                titleEl.innerHTML = esc(optText).replace(/\((A1|A2|B1|B2|C1)\)/, (match, level) => {
-                    let color = 'bg-gray-100 text-gray-700';
-                    if (level === 'A1' || level === 'A2') color = 'bg-[#E5E5EA] text-[#0071E3]';
-                    else if (level === 'B1' || level === 'B2') color = 'bg-[#F5F5F7] text-blue-700';
-                    else if (level === 'C1') color = 'bg-purple-100 text-purple-700';
-                    return `<span class="text-xs ${color} px-2 py-1 rounded font-medium align-middle ml-2">${level}</span>`;
-                });
-                headerContainer.classList.remove('hidden');
-            } else {
-                // 自訂文章
-                const estLevel = estimateCEFR(text);
-                let color = 'bg-gray-100 text-gray-700';
-                if (estLevel === 'A1' || estLevel === 'A2') color = 'bg-[#E5E5EA] text-[#0071E3]';
-                else if (estLevel === 'B1' || estLevel === 'B2') color = 'bg-[#F5F5F7] text-blue-700';
-                else if (estLevel === 'C1') color = 'bg-purple-100 text-purple-700';
-                
-                titleEl.innerHTML = `<span id="custom-article-title-text">自訂文章</span> <button onclick="const newTitle = prompt('請輸入標題:', document.getElementById('custom-article-title-text').innerText); if(newTitle) { document.getElementById('custom-article-title-text').innerText = newTitle; }" class="text-gray-400 hover:text-[#0071E3] ml-1 align-middle"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" /></svg></button> <span class="text-xs ${color} px-2 py-1 rounded font-medium align-middle ml-2" title="系統自動評估難度">系統評估: ${estLevel}</span>`;
-                headerContainer.classList.remove('hidden');
-                
-                // 顯示收藏按鈕
-                saveBtn.classList.remove('hidden');
-                saveBtn.onclick = () => {
-                    const currentTitle = document.getElementById('custom-article-title-text').innerText;
-                    const title = prompt("請為這篇文章輸入標題 (例如: BBC 新聞 - 科技)：", currentTitle === "自訂文章" ? "我的自訂文章" : currentTitle);
-                    if (title) {
-                        document.getElementById('custom-article-title-text').innerText = title;
-                        savedListeningArticles.push({ title: title, text: text, level: estLevel });
-                        localStorage.setItem('savedListeningArticles', JSON.stringify(savedListeningArticles));
-                        renderListeningSelect();
-                        saveBtn.classList.add('hidden');
-                        alert("已成功收藏至「我的收藏文章」！");
-                    }
-                };
+            if (titleEl) {
+                titleEl.innerHTML = `<div class="flex items-center gap-2 flex-wrap"><span>${esc(article.title)}</span> <span class="text-xs bg-blue-100 text-[#0071E3] font-semibold px-2.5 py-1 rounded-full">🎙️ ${esc(article.voiceLabel || 'AI 真人語音')}</span></div>`;
             }
-            // 拆分句子 (簡單處理 . ? ! 換行)
-            listeningSentences = text.split(/(?<=[.?!])\s+|\n+/).map(s => s.trim()).filter(s => s.length > 0);
-            
-            if (listeningSentences.length === 0) return alert("無法解析文章句子，請確認格式");
+            if (headerContainer) headerContainer.classList.remove('hidden');
 
             document.getElementById('listening-setup').classList.add('hidden');
             document.getElementById('listening-player').classList.remove('hidden');
-            
-            // 渲染句子
+
+            // 預載音訊與重設播放器狀態
+            if (article.audio) {
+                listeningAudioPlayer.src = article.audio;
+                listeningAudioPlayer.playbackRate = parseFloat(document.getElementById('listening-speed').value || '1');
+                listeningAudioPlayer.load();
+            }
+            currentListeningIndex = 0;
+            isListeningPlaying = false;
+            updateListeningPlayBtn();
+            highlightListeningSentence(-1);
+
+            // 渲染句子列表 (直接包含中英對照，0 延遲無縫呈現)
             const container = document.getElementById('listening-text-container');
-            
-            container.innerHTML = listeningSentences.map((s, i) => {
+            container.innerHTML = listeningSentences.map((sObj, i) => {
+                const s = sObj.en || '';
                 let html = '';
                 const regex = /\b[a-zA-Z']+\b/g;
                 let match;
@@ -2838,99 +2855,31 @@
                 while ((match = regex.exec(s)) !== null) {
                     html += esc(s.substring(lastIndex, match.index));
                     const wordStr = match[0].toLowerCase().replace(/'/g, "\\'");
-                    html += `<span class="listen-word cursor-pointer transition-colors duration-200 border-b-2 border-transparent hover:border-teal-400 rounded px-0.5 mx-px" data-word="${wordStr}" data-char-index="${match.index}" onclick="event.stopPropagation(); showWordTranslation(event, '${wordStr}')">${esc(match[0])}</span>`;
+                    html += `<span class="listen-word cursor-pointer transition-colors duration-200 border-b-2 border-transparent hover:border-[#0071E3] rounded px-0.5 mx-px" data-word="${wordStr}" onclick="event.stopPropagation(); showWordTranslation(event, '${wordStr}')">${esc(match[0])}</span>`;
                     lastIndex = regex.lastIndex;
                 }
                 html += esc(s.substring(lastIndex));
 
                 return `
-                <div class="mb-4 sentence-block group cursor-pointer p-2 rounded hover:bg-[#F5F5F7] transition-colors" onclick="playListeningFrom(${i})">
-                    <div id="listen-s-${i}" class="text-lg text-[#1D1D1F] leading-relaxed font-serif en-text transition-colors">${html}</div>
-                    <div id="listen-zh-${i}" class="text-sm text-[#86868B] mt-2 font-medium zh-text transition-colors">翻譯載入中...</div>
+                <div id="sentence-block-${i}" class="mb-3 sentence-block group cursor-pointer p-3 rounded-2xl border border-transparent hover:border-blue-200 hover:bg-[#F5F5F7] transition-all" onclick="playListeningFrom(${i})">
+                    <div class="flex items-start gap-2.5">
+                        <span class="text-[11px] font-mono font-semibold text-gray-400 bg-gray-100 px-2 py-0.5 rounded-md mt-0.5 shrink-0">#${i + 1}</span>
+                        <div class="flex-1">
+                            <div id="listen-s-${i}" class="text-base md:text-lg text-[#1D1D1F] leading-relaxed font-serif en-text transition-colors">${html}</div>
+                            <div id="listen-zh-${i}" class="text-xs md:text-sm text-[#86868B] mt-1 font-medium zh-text transition-colors">${esc(sObj.zh || '')}</div>
+                        </div>
+                        <button class="text-gray-300 group-hover:text-[#0071E3] p-1.5 rounded-full hover:bg-white shrink-0 transition" title="從此句開始播放">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" /></svg>
+                        </button>
+                    </div>
                 </div>`;
             }).join('');
             applyTransMode();
 
-
-            // 萃取單字
-            function extractListeningWords(text) {
-                const words = text.toLowerCase().match(/\b[a-z']+\b/g) || [];
-                const uniqueWords = [...new Set(words)];
-                // Calculate word priority (higher is more important/difficult)
-                const getWordPriority = (w) => {
-                    let score = 0;
-                    const u = w.unit || 1;
-                    if (u >= 11 && u <= 15) score = 100; // TOEIC words
-                    else if (u >= 4 && u <= 6) score = 80 + u; // Advanced 7000 words
-                    else if (u >= 2 && u <= 3) score = 40 + u; // Intermediate 7000 words
-                    else if (u >= 17) score = 10; // Junior High words
-                    else score = 20; // Level 1 or others
-                    
-                    score += Math.min(w.en.length, 20); // Longer words are usually harder
-                    return score;
-                };
-
-                const matchedWords = vocabularyDB
-                    .filter(w => uniqueWords.includes(w.en.toLowerCase()))
-                    .sort((a, b) => getWordPriority(b) - getWordPriority(a))
-                    .slice(0, 20);
-                
-                const wc = document.getElementById('listening-words-container');
-                wc.innerHTML = '';
-                if (matchedWords.length === 0) {
-                    wc.innerHTML = '<div class="text-sm text-gray-500 col-span-2">未找到重點單字</div>';
-                    return;
-                }
-                
-                matchedWords.forEach(w => {
-                    wc.innerHTML += `
-                    <div class="bg-white border border-gray-100 p-2 rounded-xl flex items-center justify-between shadow-sm cursor-pointer hover:bg-gray-50" onclick="window.speechSynthesis.speak(new SpeechSynthesisUtterance('${w.en.replace(/'/g, "\\'")}'))">
-                        <div>
-                            <div class="font-semibold text-[#1D1D1F]">${w.en}</div>
-                            <div class="text-xs text-[#86868B] truncate w-20">${w.zh}</div>
-                        </div>
-                        <button class="text-[#0071E3] hover:bg-[#E5E5EA] p-1 rounded-full">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
-                        </button>
-                    </div>`;
-                });
-            }
-            extractListeningWords(text);
-            generateListeningGrammar(text);
-            generateListeningQuiz(listeningSentences);
-
-            // 準備翻譯 (若為內建文章且含有預載翻譯，則 0 延遲直接秒開；否則 fallback 走 Google 翻譯 API)
-            if (currentSelectedListeningArticle && 
-                Array.isArray(currentSelectedListeningArticle.sentences) && 
-                currentSelectedListeningArticle.sentences.length > 0 && 
-                text === currentSelectedListeningArticle.text) {
-                currentSelectedListeningArticle.sentences.forEach((item, i) => {
-                    const el = document.getElementById(`listen-zh-${i}`);
-                    if (el && item && item.zh) {
-                        el.innerText = item.zh;
-                    }
-                });
-            } else {
-                // 自訂文章或使用者自行修改後的文本：逐句呼叫翻譯 API
-                const fetchTrans = async () => {
-                    const promises = listeningSentences.map(async (sentence, i) => {
-                        try {
-                            const res = await fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-TW&dt=t&q=${encodeURIComponent(sentence)}`);
-                            const data = await res.json();
-                            if (data && data[0]) {
-                                const translated = data[0].map(x => x[0]).join('');
-                                const el = document.getElementById(`listen-zh-${i}`);
-                                if(el) el.innerText = translated;
-                            }
-                        } catch (e) {
-                            const el = document.getElementById(`listen-zh-${i}`);
-                            if(el) el.innerText = '翻譯失敗';
-                        }
-                    });
-                    await Promise.all(promises);
-                };
-                fetchTrans();
-            }
+            // 萃取單字、名師文法與測驗
+            extractListeningWords(article.text || '');
+            generateListeningGrammar(article.text || '');
+            generateListeningQuiz(listeningSentences.map(s => s.en));
         });
 
         document.getElementById('trans-mode-select').addEventListener('change', applyTransMode);
@@ -3049,159 +2998,176 @@
                 alert(`已將「${word}」加入自訂字庫！`);
             }
         }
-        let listeningUtterance = null;
-        let currentListeningWordEl = null;
-        let playbackWordIndex = 0;
-        let currentSentenceWords = [];
-        let ttsInterval = null;
+        // ==========================================
+        // 聽力特訓 2.0：HTML5 原生神經語音播放器
+        // ==========================================
+        const listeningAudioPlayer = new Audio();
+        listeningAudioPlayer.preload = 'auto';
+
+        // 監聽播放進度，即時高亮對應句子並自動平滑滾動
+        listeningAudioPlayer.addEventListener('timeupdate', () => {
+            if (!isListeningPlaying || !listeningSentences || listeningSentences.length === 0) return;
+            const t = listeningAudioPlayer.currentTime;
+            
+            let foundIdx = -1;
+            for (let i = 0; i < listeningSentences.length; i++) {
+                const s = listeningSentences[i];
+                const sStart = typeof s.start === 'number' ? s.start : 0;
+                const sEnd = typeof s.end === 'number' ? s.end : 999999;
+                const isLast = (i === listeningSentences.length - 1);
+                if (t >= (sStart - 0.1) && (isLast || t < sEnd)) {
+                    foundIdx = i;
+                    break;
+                }
+            }
+
+            if (foundIdx !== -1 && foundIdx !== currentListeningIndex) {
+                currentListeningIndex = foundIdx;
+                highlightListeningSentence(foundIdx);
+            }
+        });
+
+        listeningAudioPlayer.addEventListener('ended', () => {
+            isListeningPlaying = false;
+            updateListeningPlayBtn();
+            highlightListeningSentence(-1);
+            currentListeningIndex = 0;
+        });
+
+        listeningAudioPlayer.addEventListener('pause', () => {
+            if (!listeningAudioPlayer.seeking) {
+                isListeningPlaying = false;
+                updateListeningPlayBtn();
+            }
+        });
+
+        listeningAudioPlayer.addEventListener('play', () => {
+            isListeningPlaying = true;
+            updateListeningPlayBtn();
+        });
+
+        // 語速切換連動
+        document.getElementById('listening-speed').addEventListener('change', (e) => {
+            const rate = parseFloat(e.target.value) || 1.0;
+            listeningAudioPlayer.playbackRate = rate;
+        });
 
         function highlightListeningSentence(index) {
             listeningSentences.forEach((_, i) => {
-                const block = document.getElementById(`listen-s-${i}`)?.parentElement;
+                const block = document.getElementById(`sentence-block-${i}`);
                 const enEl = document.getElementById(`listen-s-${i}`);
                 const zhEl = document.getElementById(`listen-zh-${i}`);
                 
                 if (i === index) {
                     if (block) {
-                        block.classList.add('bg-white', 'border-l-4', 'border-[#0071E3]');
-                        // Custom center scroll calculation
-                        block.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        block.classList.add('bg-white', 'border-l-4', 'border-[#0071E3]', 'shadow-sm');
+                        block.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                     }
-                    if (enEl) enEl.classList.add('text-[#0071E3]');
+                    if (enEl) enEl.classList.add('text-[#0071E3]', 'font-semibold');
                     if (zhEl) zhEl.classList.add('text-[#0071E3]');
                 } else {
-                    if (block) block.classList.remove('bg-white', 'border-l-4', 'border-[#0071E3]');
-                    if (enEl) enEl.classList.remove('text-[#0071E3]');
+                    if (block) block.classList.remove('bg-white', 'border-l-4', 'border-[#0071E3]', 'shadow-sm');
+                    if (enEl) enEl.classList.remove('text-[#0071E3]', 'font-semibold');
                     if (zhEl) zhEl.classList.remove('text-[#0071E3]');
                 }
             });
         }
 
         function playListeningFrom(index) {
-            if (index >= listeningSentences.length) {
+            if (!currentSelectedListeningArticle || !currentSelectedListeningArticle.audio) return;
+            if (index < 0 || index >= listeningSentences.length) {
                 stopListening();
                 return;
             }
-            
+
             currentListeningIndex = index;
-            isListeningPlaying = true;
-            updateListeningPlayBtn();
             highlightListeningSentence(index);
-            
-            if (currentListeningWordEl) {
-                currentListeningWordEl.classList.remove('bg-[#0071E3]', 'text-white', 'shadow-sm');
-                currentListeningWordEl = null;
+
+            const targetAudio = currentSelectedListeningArticle.audio;
+            const targetTime = (listeningSentences[index] && typeof listeningSentences[index].start === 'number') 
+                ? listeningSentences[index].start 
+                : 0;
+
+            const speed = parseFloat(document.getElementById('listening-speed').value || '1');
+
+            const startPlayback = () => {
+                try {
+                    listeningAudioPlayer.currentTime = Math.max(0, targetTime);
+                } catch(e) {}
+                listeningAudioPlayer.playbackRate = speed;
+                listeningAudioPlayer.play().then(() => {
+                    isListeningPlaying = true;
+                    updateListeningPlayBtn();
+                }).catch(err => {
+                    console.warn("Audio playback notice:", err);
+                });
+            };
+
+            if (!listeningAudioPlayer.src.endsWith(targetAudio)) {
+                listeningAudioPlayer.src = targetAudio;
+                listeningAudioPlayer.load();
+                listeningAudioPlayer.onloadedmetadata = () => {
+                    startPlayback();
+                    listeningAudioPlayer.onloadedmetadata = null;
+                };
+            } else {
+                if (listeningAudioPlayer.readyState >= 1) {
+                    startPlayback();
+                } else {
+                    listeningAudioPlayer.onloadedmetadata = () => {
+                        startPlayback();
+                        listeningAudioPlayer.onloadedmetadata = null;
+                    };
+                    listeningAudioPlayer.load();
+                }
             }
-
-            window.speechSynthesis.cancel();
-            clearInterval(ttsInterval);
-
-            // 準備逐字高亮
-            const block = document.getElementById(`listen-s-${index}`);
-            currentSentenceWords = block ? Array.from(block.querySelectorAll('.listen-word')) : [];
-            playbackWordIndex = 0;
-
-            listeningUtterance = new SpeechSynthesisUtterance(listeningSentences[index]);
-            listeningUtterance.lang = 'en-US';
-            listeningUtterance.rate = parseFloat(document.getElementById('listening-speed').value);
-            
-            // 解決 Chrome 長時間播放中斷的 bug
-            ttsInterval = setInterval(() => {
-                if (window.speechSynthesis.speaking && !window.speechSynthesis.paused) {
-                    window.speechSynthesis.pause();
-                    window.speechSynthesis.resume();
-                }
-            }, 14000);
-
-            // 當單字被發音時高亮
-            listeningUtterance.onboundary = function(event) {
-                if (event.name === 'word') {
-                    const charIndex = event.charIndex;
-                    let targetEl = currentSentenceWords.find(el => parseInt(el.getAttribute('data-char-index')) === charIndex);
-                    
-                    // Fallback to finding the closest word if exact charIndex is not perfectly matched
-                    if (!targetEl) {
-                        let minDiff = Infinity;
-                        for(let el of currentSentenceWords) {
-                            const idx = parseInt(el.getAttribute('data-char-index'));
-                            const diff = Math.abs(idx - charIndex);
-                            if(diff < minDiff && idx <= charIndex) {
-                                minDiff = diff;
-                                targetEl = el;
-                            }
-                        }
-                    }
-
-                    if (targetEl && targetEl !== currentListeningWordEl) {
-                        if (currentListeningWordEl) {
-                            currentListeningWordEl.classList.remove('bg-[#0071E3]', 'text-white', 'shadow-sm');
-                        }
-                        targetEl.classList.add('bg-[#0071E3]', 'text-white', 'shadow-sm');
-                        currentListeningWordEl = targetEl;
-                    }
-                }
-            };
-
-            listeningUtterance.onend = () => {
-                clearInterval(ttsInterval);
-                if (currentListeningWordEl) {
-                    currentListeningWordEl.classList.remove('bg-[#0071E3]', 'text-white', 'shadow-sm');
-                    currentListeningWordEl = null;
-                }
-                if (isListeningPlaying) {
-                    setTimeout(() => playListeningFrom(currentListeningIndex + 1), 300);
-                }
-            };
-            
-            listeningUtterance.onerror = (e) => {
-                clearInterval(ttsInterval);
-                if (currentListeningWordEl) {
-                    currentListeningWordEl.classList.remove('bg-[#0071E3]', 'text-white', 'shadow-sm');
-                    currentListeningWordEl = null;
-                }
-                isListeningPlaying = false;
-                updateListeningPlayBtn();
-            };
-            
-            window.speechSynthesis.speak(listeningUtterance);
         }
 
         function stopListening() {
             isListeningPlaying = false;
-            window.speechSynthesis.cancel();
+            listeningAudioPlayer.pause();
+            try { listeningAudioPlayer.currentTime = 0; } catch(e) {}
             updateListeningPlayBtn();
             highlightListeningSentence(-1);
-            if (currentListeningWordEl) {
-                currentListeningWordEl.classList.remove('bg-[#0071E3]', 'text-white', 'shadow-sm');
-                currentListeningWordEl = null;
-            }
             currentListeningIndex = 0;
         }
 
         function updateListeningPlayBtn() {
-            if (isListeningPlaying) {
-                document.getElementById('icon-play').classList.add('hidden');
-                document.getElementById('icon-pause').classList.remove('hidden');
-            } else {
-                document.getElementById('icon-play').classList.remove('hidden');
-                document.getElementById('icon-pause').classList.add('hidden');
+            const playIcon = document.getElementById('icon-play');
+            const pauseIcon = document.getElementById('icon-pause');
+            if (playIcon && pauseIcon) {
+                if (isListeningPlaying) {
+                    playIcon.classList.add('hidden');
+                    pauseIcon.classList.remove('hidden');
+                } else {
+                    playIcon.classList.remove('hidden');
+                    pauseIcon.classList.add('hidden');
+                }
             }
         }
 
         document.getElementById('btn-play-pause-listening').addEventListener('click', () => {
             if (isListeningPlaying) {
+                listeningAudioPlayer.pause();
                 isListeningPlaying = false;
-                window.speechSynthesis.cancel();
                 updateListeningPlayBtn();
             } else {
-                playListeningFrom(currentListeningIndex);
+                if (listeningAudioPlayer.paused && listeningAudioPlayer.currentTime > 0 && !listeningAudioPlayer.ended) {
+                    listeningAudioPlayer.playbackRate = parseFloat(document.getElementById('listening-speed').value || '1');
+                    listeningAudioPlayer.play().then(() => {
+                        isListeningPlaying = true;
+                        updateListeningPlayBtn();
+                    }).catch(e => console.warn(e));
+                } else {
+                    playListeningFrom(currentListeningIndex >= 0 ? currentListeningIndex : 0);
+                }
             }
         });
 
         const btnReplaySentence = document.getElementById('btn-replay-sentence');
         if (btnReplaySentence) {
             btnReplaySentence.addEventListener('click', () => {
-                if (listeningSentences.length > 0) {
+                if (listeningSentences.length > 0 && currentListeningIndex >= 0) {
                     playListeningFrom(currentListeningIndex);
                 }
             });

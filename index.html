@@ -85,7 +85,39 @@
     
         .mode-en-only .zh-text { display: none; }
         .mode-zh-only .en-text { display: none; }
-        .active-sentence { background-color: #f0fdfa !important; border-left: 4px solid #14b8a6; padding-left: 0.5rem; }
+
+        /* 聽力 2.0 播放高亮卡片樣式 */
+        .sentence-card {
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 2px solid transparent;
+            background-color: transparent;
+        }
+        .sentence-card:hover {
+            background-color: #FFFFFF;
+            border-color: #E5E5EA;
+        }
+        .sentence-card.sentence-active {
+            background-color: #FFFFFF !important;
+            border-color: #0071E3 !important;
+            box-shadow: 0 8px 24px -4px rgba(0, 113, 227, 0.2), 0 2px 8px -2px rgba(0, 0, 0, 0.06) !important;
+            transform: scale(1.015);
+        }
+        .sentence-card.sentence-active .sentence-badge {
+            background-color: #0071E3 !important;
+            color: #FFFFFF !important;
+            box-shadow: 0 2px 6px rgba(0, 113, 227, 0.35) !important;
+        }
+        .sentence-card.sentence-active .en-text {
+            color: #0071E3 !important;
+            font-weight: 700 !important;
+        }
+        .sentence-card.sentence-active .zh-text {
+            color: #1D1D1F !important;
+            font-weight: 600 !important;
+        }
+        .sentence-card.sentence-active .listening-wave-icon {
+            display: inline-flex !important;
+        }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
@@ -2861,14 +2893,20 @@
                 html += esc(s.substring(lastIndex));
 
                 return `
-                <div id="sentence-block-${i}" class="mb-3 sentence-block group cursor-pointer p-3 rounded-2xl border border-transparent hover:border-blue-200 hover:bg-[#F5F5F7] transition-all" onclick="playListeningFrom(${i})">
+                <div id="sentence-block-${i}" class="sentence-card mb-3 p-3.5 rounded-2xl cursor-pointer" onclick="playListeningFrom(${i})">
                     <div class="flex items-start gap-2.5">
-                        <span class="text-[11px] font-mono font-semibold text-gray-400 bg-gray-100 px-2 py-0.5 rounded-md mt-0.5 shrink-0">#${i + 1}</span>
+                        <span class="sentence-badge text-[11px] font-mono font-semibold text-gray-500 bg-gray-200 px-2 py-0.5 rounded-md mt-0.5 shrink-0 transition-all">#${i + 1}</span>
                         <div class="flex-1">
+                            <div class="flex items-center gap-1.5 mb-1">
+                                <span class="listening-wave-icon hidden items-center gap-1 text-[11px] bg-blue-100 text-[#0071E3] font-bold px-2 py-0.5 rounded-full animate-pulse">
+                                    <svg class="w-3.5 h-3.5 text-[#0071E3]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd" /></svg>
+                                    正在朗讀
+                                </span>
+                            </div>
                             <div id="listen-s-${i}" class="text-base md:text-lg text-[#1D1D1F] leading-relaxed font-serif en-text transition-colors">${html}</div>
-                            <div id="listen-zh-${i}" class="text-xs md:text-sm text-[#86868B] mt-1 font-medium zh-text transition-colors">${esc(sObj.zh || '')}</div>
+                            <div id="listen-zh-${i}" class="text-xs md:text-sm text-[#86868B] mt-1.5 font-medium zh-text transition-colors">${esc(sObj.zh || '')}</div>
                         </div>
-                        <button class="text-gray-300 group-hover:text-[#0071E3] p-1.5 rounded-full hover:bg-white shrink-0 transition" title="從此句開始播放">
+                        <button class="text-gray-300 hover:text-[#0071E3] p-1.5 rounded-full hover:bg-blue-50 shrink-0 transition" title="從此句開始播放">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" /></svg>
                         </button>
                     </div>
@@ -3004,9 +3042,11 @@
         const listeningAudioPlayer = new Audio();
         listeningAudioPlayer.preload = 'auto';
 
+        let currentHighlightedIndex = -1;
+
         // 監聽播放進度，即時高亮對應句子並自動平滑滾動
         listeningAudioPlayer.addEventListener('timeupdate', () => {
-            if (!isListeningPlaying || !listeningSentences || listeningSentences.length === 0) return;
+            if (!listeningSentences || listeningSentences.length === 0) return;
             const t = listeningAudioPlayer.currentTime;
             
             let foundIdx = -1;
@@ -3015,13 +3055,13 @@
                 const sStart = typeof s.start === 'number' ? s.start : 0;
                 const sEnd = typeof s.end === 'number' ? s.end : 999999;
                 const isLast = (i === listeningSentences.length - 1);
-                if (t >= (sStart - 0.1) && (isLast || t < sEnd)) {
+                if (t >= sStart && (isLast || t < sEnd)) {
                     foundIdx = i;
                     break;
                 }
             }
 
-            if (foundIdx !== -1 && foundIdx !== currentListeningIndex) {
+            if (foundIdx !== -1 && foundIdx !== currentHighlightedIndex) {
                 currentListeningIndex = foundIdx;
                 highlightListeningSentence(foundIdx);
             }
@@ -3032,6 +3072,7 @@
             updateListeningPlayBtn();
             highlightListeningSentence(-1);
             currentListeningIndex = 0;
+            currentHighlightedIndex = -1;
         });
 
         listeningAudioPlayer.addEventListener('pause', () => {
@@ -3053,22 +3094,16 @@
         });
 
         function highlightListeningSentence(index) {
+            currentHighlightedIndex = index;
             listeningSentences.forEach((_, i) => {
                 const block = document.getElementById(`sentence-block-${i}`);
-                const enEl = document.getElementById(`listen-s-${i}`);
-                const zhEl = document.getElementById(`listen-zh-${i}`);
+                if (!block) return;
                 
                 if (i === index) {
-                    if (block) {
-                        block.classList.add('bg-white', 'border-l-4', 'border-[#0071E3]', 'shadow-sm');
-                        block.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                    }
-                    if (enEl) enEl.classList.add('text-[#0071E3]', 'font-semibold');
-                    if (zhEl) zhEl.classList.add('text-[#0071E3]');
+                    block.classList.add('sentence-active');
+                    block.scrollIntoView({ behavior: 'smooth', block: 'center' });
                 } else {
-                    if (block) block.classList.remove('bg-white', 'border-l-4', 'border-[#0071E3]', 'shadow-sm');
-                    if (enEl) enEl.classList.remove('text-[#0071E3]', 'font-semibold');
-                    if (zhEl) zhEl.classList.remove('text-[#0071E3]');
+                    block.classList.remove('sentence-active');
                 }
             });
         }
@@ -3084,7 +3119,7 @@
             highlightListeningSentence(index);
 
             const targetAudio = currentSelectedListeningArticle.audio;
-            const targetTime = (listeningSentences[index] && typeof listeningSentences[index].start === 'number') 
+            const startTime = (listeningSentences[index] && typeof listeningSentences[index].start === 'number') 
                 ? listeningSentences[index].start 
                 : 0;
 
@@ -3092,12 +3127,13 @@
 
             const startPlayback = () => {
                 try {
-                    listeningAudioPlayer.currentTime = Math.max(0, targetTime);
+                    listeningAudioPlayer.currentTime = Math.max(0, startTime);
                 } catch(e) {}
                 listeningAudioPlayer.playbackRate = speed;
                 listeningAudioPlayer.play().then(() => {
                     isListeningPlaying = true;
                     updateListeningPlayBtn();
+                    highlightListeningSentence(index);
                 }).catch(err => {
                     console.warn("Audio playback notice:", err);
                 });
@@ -3130,6 +3166,7 @@
             updateListeningPlayBtn();
             highlightListeningSentence(-1);
             currentListeningIndex = 0;
+            currentHighlightedIndex = -1;
         }
 
         function updateListeningPlayBtn() {

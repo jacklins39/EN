@@ -38,70 +38,60 @@ async def generate_article_audio_with_timestamps(article, output_audio_path):
     article["voiceLabel"] = voice_label
 
     communicate = edge_tts.Communicate(text, voice)
-    word_boundaries = []
+    boundaries = []
 
     with open(output_audio_path, "wb") as f_out:
         async for chunk in communicate.stream():
             if chunk["type"] == "audio":
                 f_out.write(chunk["data"])
-            elif chunk["type"] == "WordBoundary":
-                # offset and duration in 100ns units (ticks), divide by 10,000,000 to get seconds
+            elif chunk["type"] == "SentenceBoundary":
                 offset_sec = chunk["offset"] / 10_000_000.0
-                duration_sec = chunk["duration"] / 10_000_000.0
-                word_boundaries.append({
-                    "offset": offset_sec,
-                    "duration": duration_sec,
-                    "text": chunk["text"],
-                    "end": offset_sec + duration_sec
+                dur_sec = chunk["duration"] / 10_000_000.0
+                boundaries.append({
+                    "start": round(offset_sec, 2),
+                    "end": round(offset_sec + dur_sec, 2),
+                    "text": chunk.get("text", "")
                 })
 
-    # Now calculate sentence timestamps
+    # Calculate exact sentence timestamps
     sentences = article.get("sentences", [])
-    if sentences and word_boundaries:
-        # Match words sequentially into sentences
-        # For each sentence, find the first and last word matching
-        current_word_idx = 0
-        total_wb = len(word_boundaries)
+    if sentences and boundaries:
+        def clean_str(s):
+            return re.sub(r"[^a-zA-Z0-9]", "", s).lower()
+
+        b_idx = 0
+        total_b = len(boundaries)
 
         for s_idx, s in enumerate(sentences):
-            s_words = re.findall(r"\b[a-zA-Z0-9']+\b", s["en"].lower())
-            if not s_words:
-                continue
-
+            target_clean = clean_str(s["en"])
+            matched_text = ""
             s_start = None
             s_end = None
 
-            # Look ahead for matching words
-            matched_count = 0
-            start_cand_idx = current_word_idx
+            while b_idx < total_b:
+                b = boundaries[b_idx]
+                b_clean = clean_str(b["text"])
 
-            while current_word_idx < total_wb and matched_count < len(s_words):
-                wb_word = re.sub(r"[^a-zA-Z0-9']", "", word_boundaries[current_word_idx]["text"].lower())
-                target_word = s_words[matched_count]
+                if s_start is None:
+                    s_start = b["start"]
+                s_end = b["end"]
+                matched_text += b_clean
+                b_idx += 1
 
-                if wb_word and (wb_word in target_word or target_word in wb_word):
-                    if s_start is None:
-                        s_start = word_boundaries[current_word_idx]["offset"]
-                    s_end = word_boundaries[current_word_idx]["end"]
-                    matched_count += 1
-                current_word_idx += 1
+                if target_clean in matched_text or matched_text in target_clean:
+                    if len(matched_text) >= len(target_clean) * 0.9:
+                        break
 
-            if s_start is not None and s_end is not None:
-                s["start"] = round(s_start, 2)
-                s["end"] = round(s_end, 2)
-            else:
-                # Fallback estimate if strict matching desynced
-                prev_end = sentences[s_idx - 1]["end"] if s_idx > 0 and "end" in sentences[s_idx - 1] else 0.0
-                s["start"] = prev_end
-                s["end"] = round(prev_end + max(2.0, len(s["en"].split()) * 0.4), 2)
-    elif sentences:
-        # Fallback if no word boundaries
-        cur_t = 0.0
-        for s in sentences:
-            dur = max(2.5, len(s["en"].split()) * 0.45)
-            s["start"] = round(cur_t, 2)
-            s["end"] = round(cur_t + dur, 2)
-            cur_t = s["end"]
+            s["start"] = s_start if s_start is not None else (sentences[s_idx - 1]["end"] if s_idx > 0 else 0.0)
+            s["end"] = s_end if s_end is not None else round(s["start"] + 3.0, 2)
+
+        # Gapless transitions between consecutive sentences
+        for i in range(len(sentences) - 1):
+            if sentences[i + 1]["start"] > sentences[i]["start"]:
+                sentences[i]["end"] = sentences[i + 1]["start"]
+
+        if sentences:
+            sentences[0]["start"] = 0.0
 
     article["audio"] = output_audio_path.replace("\\", "/")
     print(f"✔ 已生成 [{article['id']}] {article['title']} ({voice_label}) -> {output_audio_path}")

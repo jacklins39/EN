@@ -230,9 +230,9 @@
                 <div class="absolute -right-6 -bottom-6 w-32 h-32 bg-white/10 rounded-full blur-xl pointer-events-none"></div>
                 <div class="flex justify-between items-start relative z-10">
                     <div>
-                        <span class="inline-block px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-xs font-semibold uppercase tracking-wider mb-2">Practice Hub</span>
-                        <h2 class="text-2xl font-bold tracking-tight">🎯 自主特訓大廳</h2>
-                        <p class="text-blue-100 text-xs mt-1">多元學習模式，自由掌握練習步調</p>
+                        <span class="inline-block px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-xs font-semibold uppercase tracking-wider mb-2">Study Center</span>
+                        <h2 class="text-2xl font-bold tracking-tight">🎯 學習中心</h2>
+                        <p class="text-blue-100 text-xs mt-1">選擇練習模式，自由安排學習步調</p>
                     </div>
                     <span id="lobby-current-unit-badge" class="px-3 py-1 bg-white/20 backdrop-blur-md rounded-xl text-xs font-medium">單元 1</span>
                 </div>
@@ -275,12 +275,12 @@
                         <span>▶ 開始今日課程</span>
                     </button>
                     <button id="lobby-btn-auto-daily" class="w-full bg-blue-50 hover:bg-blue-100 text-[#0071E3] font-medium py-3 px-4 rounded-xl flex items-center justify-center gap-2 active:scale-95 transition-all text-sm">
-                        <span>🎧 自動輪播磨耳朵</span>
+                        <span>🎧 自動輪播發音</span>
                     </button>
                 </div>
             </div>
 
-            <!-- 卡片 2：隨機 10 題快問快答 -->
+            <!-- 卡片 2：隨機 10 題測驗 -->
             <div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                 <div class="flex items-start justify-between mb-3">
                     <div class="flex items-center gap-3">
@@ -288,18 +288,18 @@
                             ⚡
                         </div>
                         <div>
-                            <h3 class="font-bold text-[#1D1D1F] text-base">隨機 10 題快問快答</h3>
-                            <p class="text-xs text-[#86868B]">隨機抽 10 單字，四選一快速挑戰</p>
+                            <h3 class="font-bold text-[#1D1D1F] text-base">隨機 10 題測驗</h3>
+                            <p class="text-xs text-[#86868B]">隨機抽 10 個單字，四選一快速自測</p>
                         </div>
                     </div>
-                    <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-amber-50 text-amber-600">速戰速決</span>
+                    <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-amber-50 text-amber-600">快速測驗</span>
                 </div>
                 <button id="lobby-btn-start-rapid" class="w-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-medium py-3 px-4 rounded-xl shadow-sm flex items-center justify-center gap-2 active:scale-95 transition-all text-sm">
-                    <span>⚡ 立即開戰 (隨機 10 題)</span>
+                    <span>⚡ 開始測驗 (隨機 10 題)</span>
                 </button>
             </div>
 
-            <!-- 卡片 3：錯題強化特訓 -->
+            <!-- 卡片 3：錯題加強複習 -->
             <div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                 <div class="flex items-start justify-between mb-3">
                     <div class="flex items-center gap-3">
@@ -307,8 +307,8 @@
                             🎯
                         </div>
                         <div>
-                            <h3 class="font-bold text-[#1D1D1F] text-base">錯題強化特訓</h3>
-                            <p class="text-xs text-[#86868B]">針對歷史錯題集中突破消滅</p>
+                            <h3 class="font-bold text-[#1D1D1F] text-base">錯題加強複習</h3>
+                            <p class="text-xs text-[#86868B]">針對歷史錯題集中加強複習</p>
                         </div>
                     </div>
                     <span id="lobby-mistake-count-badge" class="text-xs font-semibold px-2.5 py-1 rounded-full bg-red-50 text-[#FF3B30]">0 字錯題</span>
@@ -327,22 +327,22 @@
                 </div>
             </div>
 
-            <!-- 卡片 4：弱點專項突擊 -->
+            <!-- 卡片 4：弱點加強練習 -->
             <div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                 <div class="flex items-start justify-between mb-3">
                     <div class="flex items-center gap-3">
                         <div class="w-10 h-10 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center font-bold text-lg">
-                            🔥
+                            💡
                         </div>
                         <div>
-                            <h3 class="font-bold text-[#1D1D1F] text-base">弱點專項突擊</h3>
-                            <p class="text-xs text-[#86868B]">錯 2 次以上的頑固弱點單字加強練</p>
+                            <h3 class="font-bold text-[#1D1D1F] text-base">弱點加強練習</h3>
+                            <p class="text-xs text-[#86868B]">針對錯 2 次以上的弱點單字強化記憶</p>
                         </div>
                     </div>
                     <span id="lobby-weak-count-badge" class="text-xs font-semibold px-2.5 py-1 rounded-full bg-purple-50 text-purple-600">0 弱點</span>
                 </div>
                 <button id="lobby-btn-weak-practice" class="w-full bg-purple-50 hover:bg-purple-100 text-purple-700 font-medium py-3 px-4 rounded-xl flex items-center justify-center gap-2 active:scale-95 transition-all text-sm">
-                    <span>🔥 開始弱點突擊練習</span>
+                    <span>💡 開始弱點加強練習</span>
                 </button>
             </div>
         </div>
@@ -647,7 +647,7 @@
                 <h2 class="text-3xl font-semibold text-[#1D1D1F] mb-2">太棒了！</h2>
                 <p class="text-[#86868B] mb-8">你已經完成了今天的單字課程與錯題複習。進度已自動儲存。</p>
                 <button id="btn-return-dash" class="btn-action w-full bg-[#0071E3] text-white font-medium py-3 rounded-2xl shadow-sm">返回儀表板</button>
-                <button id="btn-return-lobby" class="w-full bg-gray-100 hover:bg-gray-200 text-[#1D1D1F] font-medium py-3 rounded-2xl shadow-sm mt-3 transition-colors">前往特訓大廳</button>
+                <button id="btn-return-lobby" class="w-full bg-gray-100 hover:bg-gray-200 text-[#1D1D1F] font-medium py-3 rounded-2xl shadow-sm mt-3 transition-colors">前往學習中心</button>
             </div>
         </div>
 
@@ -2629,7 +2629,7 @@
         document.getElementById('btn-review-month').addEventListener('click', () => startMistakeReview(30));
         document.getElementById('btn-review-all').addEventListener('click', () => startMistakeReview(99999));
 
-        // 學習特訓大廳 (Study Lobby) 事件綁定
+        // 學習中心 (Study Center) 事件綁定
         document.getElementById('lobby-btn-start-daily')?.addEventListener('click', () => {
             document.getElementById('btn-start-session').click();
         });

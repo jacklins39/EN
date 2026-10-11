@@ -14,10 +14,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
-    <!-- 引入外部單字庫 -->
+    <!-- 引入外部單字庫與聽力短文庫 -->
     <script src="words_data.js"></script>
     <script src="toeic_data.js"></script>
     <script src="jh_data.js"></script>
+    <script src="listening_data.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -441,20 +442,6 @@
                         <label class="block text-sm font-medium text-gray-700 mb-2">選擇內建短文</label>
                         <select id="listening-preset" aria-label="選擇情境短文" class="w-full bg-[#F5F5F7] border-0 border-gray-300 text-gray-700 rounded-xl p-3 outline-none focus:ring-2 focus:ring-teal-500">
                             <option value="">-- 請選擇內建短文 (或在下方貼上) --</option>
-                            <optgroup label="9月份">
-                                <option value="0">日常對話: 點餐 (A1)</option>
-                                <option value="7">生活情境: 在超市購物 (A1)</option>
-                                <option value="1">旅遊情境: 飯店入住 (A2)</option>
-                                <option value="8">機場情境: 登機廣播 (A2)</option>
-                                <option value="2">多益短文: 辦公室公告 (B1)</option>
-                                <option value="3">商業信件: 產品詢價 (B1)</option>
-                                <option value="10">健康醫療: 保持良好睡眠 (B1)</option>
-                                <option value="4">環境保護: 氣候變遷 (B2)</option>
-                                <option value="9">多益閱讀: 員工訓練通知 (B2)</option>
-                                <option value="5">科技新聞: 人工智慧 (C1)</option>
-                                <option value="6">心靈成長: 尋找熱情 (C1)</option>
-                                <option value="11">國際新聞: 經濟復甦 (C1)</option>
-                            </optgroup>
                         </select>
                     </div>
                     <div>
@@ -2674,20 +2661,9 @@
         // ==========================================
         // 聽力特訓模組
         // ==========================================
-        const builtInArticles = [
-            { text: "Hello! I would like to order a cheeseburger and a large fries. Could I also get a diet cola? That will be all. Is it for here or to go? To go, please. Your total is eight dollars and fifty cents. Here is a ten dollar bill. Keep the change. Thank you very much! Have a nice day." },
-            { text: "Good afternoon. I have a reservation under the name of Smith. Yes, here is my passport and booking confirmation. Could I request a room with a nice view? Oh, and what time is breakfast served? Thank you. I would also like a wake-up call at seven tomorrow morning. Where is the elevator?" },
-            { text: "Attention all employees. Our annual company picnic will be held next Saturday at the central park. Family members are welcome to join. Please sign up at the front desk by Wednesday so we can order enough food. We will provide sandwiches, salads, and drinks. If you have any dietary restrictions, let us know in advance. We look forward to seeing everyone there for a day of fun and relaxation!" },
-            { text: "Dear Mr. Johnson, I am writing to inquire about the new software products listed on your company website. Our team is particularly interested in the cloud storage solutions. Could you please send us a detailed catalog and the current price list? We would also like to know if you offer any discounts for bulk purchases. I look forward to hearing from you soon. Sincerely, Jane Doe." },
-            { text: "Climate change is one of the most pressing issues of our time. Rising global temperatures are causing ice caps to melt and sea levels to rise. This leads to more frequent extreme weather events, such as hurricanes and droughts. Governments around the world are working to reduce carbon emissions by investing in renewable energy sources like wind and solar power. Everyone can help protect our environment by reducing waste and recycling." },
-            { text: "Artificial intelligence is rapidly transforming the way we live and work. Recently, engineers have developed new machine learning models that can process vast amounts of data in seconds. This technology allows software to understand human language more naturally and accurately. However, some experts express concerns about privacy and data security. As innovation accelerates, it becomes increasingly important to establish ethical guidelines for artificial intelligence development." },
-            { text: "Have you ever wondered what truly makes people successful? It is not just about intelligence or talent. Research shows that passion and perseverance are often more important. When you are deeply passionate about what you do, you are more likely to overcome obstacles and keep pushing forward. Do not be afraid of failure, because every mistake is a valuable lesson. Keep exploring your interests, stay curious, and eventually, you will find your unique path." },
-            { text: "Excuse me, could you tell me where the dairy section is? I am looking for milk and cheese. Yes, go straight down this aisle and turn left. Thank you. Also, do you have any fresh strawberries? I am sorry, but they are completely sold out today. We will get a new shipment tomorrow morning." },
-            { text: "Attention all passengers. Flight 842 to New York is now ready for boarding at gate 15. We would like to invite our first-class passengers and those needing special assistance to board first. Please have your boarding pass and identification ready. All other passengers, please remain seated until your zone is called. Thank you for choosing our airline." },
-            { text: "To all sales staff: There will be a mandatory training session on the new customer relationship management software next Friday. The workshop will start exactly at 9 AM in the main conference room. You will learn how to efficiently track client interactions and generate sales reports. Please bring your laptops. Lunch will be provided at noon. If you have any scheduling conflicts, notify your manager immediately." },
-            { text: "Getting enough quality sleep is crucial for your physical and mental health. Most adults need between seven and nine hours of sleep per night. Lack of sleep can affect your memory, mood, and immune system. To improve your sleep quality, try to go to bed at the same time every night and avoid looking at electronic screens before bedtime. A dark, quiet, and cool room also helps you fall asleep faster." },
-            { text: "Global financial markets showed signs of robust recovery this quarter, driven by strong consumer spending and stabilizing inflation rates. Major tech companies reported higher than expected earnings, boosting investor confidence. However, analysts warn that supply chain disruptions and geopolitical tensions could still pose significant risks in the long term. Central banks are closely monitoring the situation and may adjust interest rates accordingly to maintain economic stability." }
-        ];
+        // 聽力特訓短文 (來自 listening_data.js，若未載入則為空陣列)
+        window.builtInArticles = window.listeningArticlesDB || [];
+        let currentSelectedListeningArticle = null;
 
         let listeningSentences = [];
         let currentListeningIndex = 0;
@@ -2706,27 +2682,57 @@
 
         function renderListeningSelect() {
             const select = document.getElementById('listening-preset');
-            // 移除舊的自訂選項
-            for (let i = select.options.length - 1; i >= 0; i--) {
-                if (select.options[i].value.startsWith('custom_')) {
-                    select.options[i].remove();
-                }
-            }
-            const oldGroup = document.getElementById('custom-listening-group');
-            if (oldGroup) oldGroup.remove();
+            if (!select) return;
+            const prevVal = select.value;
+            select.innerHTML = '<option value="">-- 請選擇內建短文 (或在下方貼上) --</option>';
 
+            const db = window.listeningArticlesDB || window.builtInArticles || [];
+
+            // 依月份與類別自動分組 (10月份多益、10月份生活、9月份精選)
+            const groups = {};
+            db.forEach((article, idx) => {
+                const month = article.month || "精選短文";
+                let catLabel = "";
+                if (article.category === "toeic") catLabel = "多益專區";
+                else if (article.category === "general") catLabel = "生活短文";
+
+                const groupKey = catLabel ? `${month} (${catLabel})` : month;
+                if (!groups[groupKey]) groups[groupKey] = [];
+                groups[groupKey].push({ article, idx });
+            });
+
+            // 依月份排序 (優先展示當前月份 10月份)
+            Object.keys(groups).sort((a, b) => {
+                if (a.includes('10月') && !b.includes('10月')) return -1;
+                if (!a.includes('10月') && b.includes('10月')) return 1;
+                return a.localeCompare(b);
+            }).forEach(groupKey => {
+                const grpEl = document.createElement('optgroup');
+                grpEl.label = groupKey;
+                groups[groupKey].forEach(({ article, idx }) => {
+                    const opt = document.createElement('option');
+                    opt.value = idx;
+                    opt.textContent = `${article.title}`;
+                    grpEl.appendChild(opt);
+                });
+                select.appendChild(grpEl);
+            });
+
+            // 附加自訂收藏短文
             if (savedListeningArticles.length > 0) {
-                const group = document.createElement('optgroup');
-                group.label = "⭐ 我的收藏文章";
-                group.id = "custom-listening-group";
+                const customGroup = document.createElement('optgroup');
+                customGroup.label = "⭐ 我的收藏文章";
+                customGroup.id = "custom-listening-group";
                 savedListeningArticles.forEach((a, i) => {
                     const opt = document.createElement('option');
                     opt.value = 'custom_' + i;
-                    opt.textContent = `${a.title} (${a.level})`;
-                    group.appendChild(opt);
+                    opt.textContent = `${a.title} (${a.level || '自訂'})`;
+                    customGroup.appendChild(opt);
                 });
-                select.appendChild(group);
+                select.appendChild(customGroup);
             }
+
+            if (prevVal) select.value = prevVal;
         }
         renderListeningSelect();
 
@@ -2736,15 +2742,17 @@
             if (val === "") {
                 ta.value = "";
                 ta.dataset.lastVal = "";
+                currentSelectedListeningArticle = null;
             } else {
                 if (val.startsWith('custom_')) {
                     const idx = parseInt(val.split('_')[1]);
                     ta.value = savedListeningArticles[idx].text;
+                    currentSelectedListeningArticle = null;
                 } else {
-                    // builtInArticles is not visible here maybe but let's assume it was valid or we can extract from DOM
-                    // The easiest is just use the options data or we can select from the option's dataset
-                    // Let's assume builtInArticles exists as it did in the original file
-                    ta.value = builtInArticles[val] ? builtInArticles[val].text : '';
+                    const db = window.listeningArticlesDB || window.builtInArticles || [];
+                    const article = db[val];
+                    ta.value = article ? article.text : '';
+                    currentSelectedListeningArticle = article || null;
                 }
                 ta.dataset.lastVal = ta.value;
             }
@@ -2891,26 +2899,38 @@
             generateListeningGrammar(text);
             generateListeningQuiz(listeningSentences);
 
-            // 準備翻譯
-            // 逐句呼叫翻譯 API，避免長句換行遺失
-            const fetchTrans = async () => {
-                const promises = listeningSentences.map(async (sentence, i) => {
-                    try {
-                        const res = await fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-TW&dt=t&q=${encodeURIComponent(sentence)}`);
-                        const data = await res.json();
-                        if (data && data[0]) {
-                            const translated = data[0].map(x => x[0]).join('');
-                            const el = document.getElementById(`listen-zh-${i}`);
-                            if(el) el.innerText = translated;
-                        }
-                    } catch (e) {
-                        const el = document.getElementById(`listen-zh-${i}`);
-                        if(el) el.innerText = '翻譯失敗';
+            // 準備翻譯 (若為內建文章且含有預載翻譯，則 0 延遲直接秒開；否則 fallback 走 Google 翻譯 API)
+            if (currentSelectedListeningArticle && 
+                Array.isArray(currentSelectedListeningArticle.sentences) && 
+                currentSelectedListeningArticle.sentences.length > 0 && 
+                text === currentSelectedListeningArticle.text) {
+                currentSelectedListeningArticle.sentences.forEach((item, i) => {
+                    const el = document.getElementById(`listen-zh-${i}`);
+                    if (el && item && item.zh) {
+                        el.innerText = item.zh;
                     }
                 });
-                await Promise.all(promises);
-            };
-            fetchTrans();
+            } else {
+                // 自訂文章或使用者自行修改後的文本：逐句呼叫翻譯 API
+                const fetchTrans = async () => {
+                    const promises = listeningSentences.map(async (sentence, i) => {
+                        try {
+                            const res = await fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-TW&dt=t&q=${encodeURIComponent(sentence)}`);
+                            const data = await res.json();
+                            if (data && data[0]) {
+                                const translated = data[0].map(x => x[0]).join('');
+                                const el = document.getElementById(`listen-zh-${i}`);
+                                if(el) el.innerText = translated;
+                            }
+                        } catch (e) {
+                            const el = document.getElementById(`listen-zh-${i}`);
+                            if(el) el.innerText = '翻譯失敗';
+                        }
+                    });
+                    await Promise.all(promises);
+                };
+                fetchTrans();
+            }
         });
 
         document.getElementById('trans-mode-select').addEventListener('change', applyTransMode);
@@ -3346,10 +3366,14 @@
             if(!grammarContainer) return;
 
             let grammarData = null;
-            for (let db of articleGrammarDB) {
-                if (text.includes(db.match)) {
-                    grammarData = db.points;
-                    break;
+            if (currentSelectedListeningArticle && currentSelectedListeningArticle.grammar && text === currentSelectedListeningArticle.text) {
+                grammarData = currentSelectedListeningArticle.grammar;
+            } else {
+                for (let db of articleGrammarDB) {
+                    if (text.includes(db.match)) {
+                        grammarData = db.points;
+                        break;
+                    }
                 }
             }
 
@@ -3481,91 +3505,6 @@
             }
         ];
 
-        // ==========================================
-        // 動態新增預設文章系統 (方便後續自動處理擴充)
-        // ==========================================
-        function registerNewPresetArticle(month, title, text, grammarArr, quizArr) {
-            const newIndex = builtInArticles.length;
-            builtInArticles.push({ text: text });
-            
-            // 加入到下拉選單
-            const select = document.getElementById('listening-preset');
-            let group = Array.from(select.querySelectorAll('optgroup')).find(g => g.label === month);
-            if (!group) {
-                group = document.createElement('optgroup');
-                group.label = month;
-                // 將新 group 插入到 "我的收藏文章" 之前
-                const customGroup = document.getElementById('custom-listening-group');
-                if (customGroup) {
-                    select.insertBefore(group, customGroup);
-                } else {
-                    select.appendChild(group);
-                }
-            }
-            const opt = document.createElement('option');
-            opt.value = newIndex;
-            opt.textContent = title;
-            group.appendChild(opt);
-
-            // 自動註冊文法
-            articleGrammarDB.push({
-                match: text.substring(0, 30), // 使用前30字作為比對特徵
-                points: grammarArr
-            });
-
-            // 自動註冊測驗
-            articleQuizDB.push({
-                keywords: [text.substring(0, 20)], // 簡化比對
-                questions: quizArr
-            });
-        }
-
-        // --- 10月份 5篇 多益文章 ---
-        registerNewPresetArticle("10月份", "多益: 客戶投訴與退貨 (B1)", "Dear Customer Service, I am writing to express my dissatisfaction with my recent order, number 8943. I ordered a wireless mouse, but I received a keyboard instead. I need this mouse urgently for an upcoming presentation. Please arrange a replacement as soon as possible and let me know how to return the incorrect item. Thank you.", [
-            { title: "express dissatisfaction with (表達不滿)", explanation: "express (v.) + dissatisfaction (n.) + with (prep.) 用來正式表達對某事物的不滿，常見於客訴信件。", example: "I am writing to <span class='font-bold underline decoration-teal-300 decoration-2'>express my dissatisfaction with</span> my recent order." },
-            { title: "as soon as possible (盡快)", explanation: "as + adj/adv + as possible，表示在可能範圍內最快的時間，也常縮寫為 ASAP。", example: "Please arrange a replacement <span class='font-bold underline decoration-teal-300 decoration-2'>as soon as possible</span>." }
-        ], [
-            { q: "1. What is the purpose of this email?", options: ["A. To complain about a wrong item", "B. To order a keyboard", "C. To cancel a presentation", "D. To ask for a discount"], ans: 0 },
-            { q: "2. What did the customer actually receive?", options: ["A. A wireless mouse", "B. A keyboard", "C. A presentation", "D. A refund"], ans: 1 },
-            { q: "3. What does the customer ask the company to do?", options: ["A. Send a replacement quickly", "B. Give a full refund", "C. Change the order number", "D. Call them immediately"], ans: 0 }
-        ]);
-
-        registerNewPresetArticle("10月份", "多益: 產品發表會邀請 (B2)", "We are thrilled to invite you to the exclusive launch event of our newest smartphone, the Titan X. The event will take place on October 15th at the Grand Hotel downtown. There will be a live demonstration, followed by a Q&A session with our lead engineers. Refreshments will be served. Please RSVP by October 10th to secure your spot.", [
-            { title: "invite someone to + N (邀請某人參加...)", explanation: "invite + 人 + to + 活動/地點，用來正式邀請他人。", example: "We are thrilled to <span class='font-bold underline decoration-teal-300 decoration-2'>invite you to</span> the exclusive launch event." },
-            { title: "take place (舉行、發生)", explanation: "take place 等同於 happen 或 occur，但通常用於事先計畫好的事件或活動。", example: "The event will <span class='font-bold underline decoration-teal-300 decoration-2'>take place</span> on October 15th at the Grand Hotel." }
-        ], [
-            { q: "1. What is being introduced at the event?", options: ["A. A new hotel", "B. A new smartphone", "C. A new engineer", "D. A new software"], ans: 1 },
-            { q: "2. Where will the event be held?", options: ["A. At the company headquarters", "B. At a local restaurant", "C. At the Grand Hotel", "D. Online"], ans: 2 },
-            { q: "3. When is the deadline to reply to the invitation?", options: ["A. October 1st", "B. October 10th", "C. October 15th", "D. October 31st"], ans: 1 }
-        ]);
-
-        registerNewPresetArticle("10月份", "多益: 設備維修通知 (B1)", "Attention all staff. The main elevator in the west wing will be out of service for scheduled maintenance starting tomorrow at 8 AM. It is expected to be operational again by 5 PM on the same day. Please use the stairs or the service elevator in the east wing during this time. We apologize for any inconvenience this may cause.", [
-            { title: "out of service (暫停服務、故障)", explanation: "常用於告示或廣播中，表示機器、設備等無法使用。", example: "The main elevator in the west wing will be <span class='font-bold underline decoration-teal-300 decoration-2'>out of service</span>." },
-            { title: "apologize for + N/V-ing (為...道歉)", explanation: "apologize (動詞) 加上 for 介系詞，後面接道歉的原因。", example: "We <span class='font-bold underline decoration-teal-300 decoration-2'>apologize for</span> any inconvenience this may cause." }
-        ], [
-            { q: "1. What is the announcement about?", options: ["A. A power outage", "B. Elevator maintenance", "C. A new office layout", "D. Staircase repair"], ans: 1 },
-            { q: "2. When will the elevator be working again?", options: ["A. At 8 AM", "B. Tomorrow morning", "C. By 5 PM", "D. Next week"], ans: 2 },
-            { q: "3. What alternative does the speaker suggest?", options: ["A. Using the east wing elevator", "B. Working from home", "C. Taking the day off", "D. Waiting in the lobby"], ans: 0 }
-        ]);
-
-        registerNewPresetArticle("10月份", "多益: 航班延誤廣播 (B2)", "Good morning passengers. This is an announcement for flight 302 to London. Due to severe weather conditions in the destination city, our departure has been delayed by approximately two hours. In addition, we have a gate change. We will now be departing from gate 24 instead of gate 12. We will provide further updates as soon as we receive more information.", [
-            { title: "Due to + N (由於...)", explanation: "due to 是一個介系詞片語，用來表示原因，後面只能接名詞或名詞片語。", example: "<span class='font-bold underline decoration-teal-300 decoration-2'>Due to</span> severe weather conditions in the destination city, our departure has been delayed." },
-            { title: "instead of (而不是...)", explanation: "instead of 用來表示替代關係，表示做了一件事而沒有做另一件事。", example: "We will now be departing from gate 24 <span class='font-bold underline decoration-teal-300 decoration-2'>instead of</span> gate 12." }
-        ], [
-            { q: "1. Why is the flight delayed?", options: ["A. Mechanical issues", "B. Bad weather in London", "C. Lack of crew", "D. Overbooking"], ans: 1 },
-            { q: "2. How long is the expected delay?", options: ["A. One hour", "B. Two hours", "C. Three hours", "D. Four hours"], ans: 1 },
-            { q: "3. What else has changed for this flight?", options: ["A. The destination", "B. The flight number", "C. The departure gate", "D. The airline"], ans: 2 }
-        ]);
-
-        registerNewPresetArticle("10月份", "多益: 業績檢討會議 (C1)", "I would like to start this meeting by reviewing our sales performance for the third quarter. We have seen a 15% increase in revenue compared to the same period last year, which is fantastic. This growth was primarily driven by our new marketing campaign in Asia. However, our operational costs have also risen slightly, so we need to focus on improving efficiency in the upcoming quarter.", [
-            { title: "compared to (與...相比)", explanation: "compare 的過去分詞形式當作介系詞使用，用來比較兩者的差異，在商業報告中非常常見。", example: "We have seen a 15% increase in revenue <span class='font-bold underline decoration-teal-300 decoration-2'>compared to</span> the same period last year." },
-            { title: "driven by (由...驅動/帶動)", explanation: "drive 的被動語態，用來表示某個結果是受到什麼因素所促成。", example: "This growth was primarily <span class='font-bold underline decoration-teal-300 decoration-2'>driven by</span> our new marketing campaign in Asia." }
-        ], [
-            { q: "1. What is the main topic of the meeting?", options: ["A. A new product design", "B. Third quarter sales performance", "C. Hiring new staff", "D. Planning a holiday party"], ans: 1 },
-            { q: "2. How much did revenue increase?", options: ["A. 5%", "B. 10%", "C. 15%", "D. 50%"], ans: 2 },
-            { q: "3. What area needs improvement in the next quarter?", options: ["A. Marketing", "B. Revenue", "C. Efficiency", "D. Customer service"], ans: 2 }
-        ]);
-
         let currentReadingQuizData = [];
 
         // 生成多益閱讀測驗
@@ -3576,11 +3515,17 @@
             
             const fullText = sentences.join(" ");
             
-            // Find matching quiz
-            let matchedQuiz = articleQuizDB.find(db => db.keywords.every(kw => fullText.includes(kw)));
+            // 優先從當前內建文章中獲取測驗題庫，否則 fallback 至 articleQuizDB
+            let matchedQuestions = null;
+            if (currentSelectedListeningArticle && Array.isArray(currentSelectedListeningArticle.quiz) && currentSelectedListeningArticle.quiz.length > 0) {
+                matchedQuestions = currentSelectedListeningArticle.quiz;
+            } else {
+                let matchedQuiz = articleQuizDB.find(db => db.keywords.every(kw => fullText.includes(kw)));
+                if (matchedQuiz) matchedQuestions = matchedQuiz.questions;
+            }
             
-            if (!matchedQuiz) {
-                // Fallback for custom articles
+            if (!matchedQuestions) {
+                // 自訂文章或未包含測驗題庫的短文
                 quizContainer.innerHTML = `
                     <div class="flex flex-col items-center justify-center py-12 px-4 text-center h-full">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-gray-300 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
@@ -3592,7 +3537,7 @@
                 return;
             }
             
-            currentReadingQuizData = matchedQuiz.questions.map(q => ({
+            currentReadingQuizData = matchedQuestions.map(q => ({
                 q: q.q,
                 options: q.options,
                 ans: q.ans,

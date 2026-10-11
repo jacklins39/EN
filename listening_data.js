@@ -3819,6 +3819,173 @@ const listeningArticlesDB = [
         "ans": 1
       }
     ]
+  },
+  {
+    "id": "2026_10_toeic_dialogue_01",
+    "month": "10月份",
+    "category": "toeic",
+    "isDialogue": true,
+    "title": "多益 Part 3: 跨國急件採購與折扣議價 (雙人互動對話)",
+    "level": "B2",
+    "voice": "雙人對話 (美式男聲 Guy + 英式女聲 Sonia)",
+    "voiceLabel": "雙人對話 (美式男聲 Guy + 英式女聲 Sonia)",
+    "audio": "audio/listening/2026_10_toeic_dialogue_01.mp3",
+    "speakers": {
+      "A": {
+        "name": "Alex",
+        "role": "採購部經理",
+        "accent": "美式男聲",
+        "avatar": "👨‍💼",
+        "voice": "en-US-GuyNeural"
+      },
+      "B": {
+        "name": "Sophia",
+        "role": "供應商客戶總監",
+        "accent": "英式女聲",
+        "avatar": "👩‍💼",
+        "voice": "en-GB-SoniaNeural"
+      }
+    },
+    "sentences": [
+      {
+        "speaker": "Alex",
+        "role": "A",
+        "roleDesc": "採購部經理 (US)",
+        "voice": "en-US-GuyNeural",
+        "avatar": "👨‍💼",
+        "en": "Good morning, Sophia. I am calling regarding the purchase order we submitted yesterday for the five hundred enterprise hard drives.",
+        "zh": "早安，Sophia。我致電是關於我們昨天送出五百組企業級硬碟的採購訂單。",
+        "start": 0.0,
+        "end": 8.69
+      },
+      {
+        "speaker": "Sophia",
+        "role": "B",
+        "roleDesc": "供應商總監 (UK)",
+        "voice": "en-GB-SoniaNeural",
+        "avatar": "👩‍💼",
+        "en": "Good morning, Alex. Yes, I saw the order, but due to severe supply chain delays, our standard delivery timeframe would be three weeks instead of one.",
+        "zh": "早安，Alex。是的，我有看到訂單，但由於供應鏈嚴重延誤，我們的標準交貨期需要三週而非一週。",
+        "start": 8.69,
+        "end": 18.53
+      },
+      {
+        "speaker": "Alex",
+        "role": "A",
+        "roleDesc": "採購部經理 (US)",
+        "voice": "en-US-GuyNeural",
+        "avatar": "👨‍💼",
+        "en": "Three weeks will be problematic because our data center deployment is scheduled for the end of this month. Is there any possibility of expedited air freight?",
+        "zh": "三週會有問題，因為我們的資料中心部署排定在月底。有可能安排加急航空貨運嗎？",
+        "start": 18.53,
+        "end": 28.18
+      },
+      {
+        "speaker": "Sophia",
+        "role": "B",
+        "roleDesc": "供應商總監 (UK)",
+        "voice": "en-GB-SoniaNeural",
+        "avatar": "👩‍💼",
+        "en": "We can arrange priority air freight for the first two hundred units by this Friday, provided that your company covers the additional shipping surcharge.",
+        "zh": "只要貴公司願意負擔額外運費差額，我們可以在本週五前先安排前兩百組的優先航空貨運。",
+        "start": 28.18,
+        "end": 36.7
+      },
+      {
+        "speaker": "Alex",
+        "role": "A",
+        "roleDesc": "採購部經理 (US)",
+        "voice": "en-US-GuyNeural",
+        "avatar": "👨‍💼",
+        "en": "That sounds workable. However, considering the urgency and bulk volume, would you be able to extend a fifteen percent discount on the remaining batch?",
+        "zh": "這聽起來可行。不過考量到緊迫性與批發數量，剩餘批次你們能否提供百分之十五的折扣？",
+        "start": 36.7,
+        "end": 46.37
+      },
+      {
+        "speaker": "Sophia",
+        "role": "B",
+        "roleDesc": "供應商總監 (UK)",
+        "voice": "en-GB-SoniaNeural",
+        "avatar": "👩‍💼",
+        "en": "Fifteen percent is beyond my authorization limit, but I could approve a twelve percent discount if you commit to signing our annual maintenance contract.",
+        "zh": "百分之十五超出了我的授權上限，但如果您願意簽署我們的年度維護合約，我可以核准百分之十二的折扣。",
+        "start": 46.37,
+        "end": 55.13
+      },
+      {
+        "speaker": "Alex",
+        "role": "A",
+        "roleDesc": "採購部經理 (US)",
+        "voice": "en-US-GuyNeural",
+        "avatar": "👨‍💼",
+        "en": "That is a fair compromise. Could you send over the revised agreement along with the updated invoice by two o'clock today?",
+        "zh": "這是個合理的折衷方案。您能在今天下午兩點前將修改後的協議連同更新的發票寄過來嗎？",
+        "start": 55.13,
+        "end": 63.17
+      },
+      {
+        "speaker": "Sophia",
+        "role": "B",
+        "roleDesc": "供應商總監 (UK)",
+        "voice": "en-GB-SoniaNeural",
+        "avatar": "👩‍💼",
+        "en": "Certainly, Alex. I will draft the paperwork right away and email it to your legal department for final signature.",
+        "zh": "當然沒問題，Alex。我馬上起草文件，並寄給您的法務部門進行最終簽署。",
+        "start": 63.17,
+        "end": 70.99
+      }
+    ],
+    "grammar": [
+      {
+        "title": "provided that + 子句 (只要/在...前提條件下)",
+        "explanation": "多益 Part 5 & Part 6 極高頻條件連接詞，等同於 as long as 或 only if，常用於商務條款協議。",
+        "example": "We can arrange priority air freight, <span class='font-bold underline decoration-blue-500 decoration-2'>provided that your company covers the additional shipping surcharge</span>."
+      },
+      {
+        "title": "beyond one's authorization limit (超出某人權限上限)",
+        "explanation": "多益商務談判經典表達，表示該請求超過基層或主管個人的折扣/經費簽核權限。",
+        "example": "Fifteen percent is <span class='font-bold underline decoration-blue-500 decoration-2'>beyond my authorization limit</span>, but I could approve twelve percent."
+      },
+      {
+        "title": "commit to + V-ing / N (承諾/致力於某事)",
+        "explanation": "commit to 後接名詞或動名詞（V-ing），在多益合約談判與人事承諾中常作為重要考點。",
+        "example": "...if you <span class='font-bold underline decoration-blue-500 decoration-2'>commit to signing our annual maintenance contract</span>."
+      }
+    ],
+    "quiz": [
+      {
+        "q": "1. What is the main problem the man is facing regarding the purchase order?",
+        "options": [
+          "A. The supplier increased the total price by 15%",
+          "B. The standard delivery timeframe will take three weeks instead of one",
+          "C. Several hard drives were damaged during previous transit",
+          "D. The company cannot process payment before the end of the month"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "2. What solution does the woman propose for the urgent portion of the order?",
+        "options": [
+          "A. Cancelling the order and refunding the deposit",
+          "B. Delivering all 500 units by next Monday without extra fees",
+          "C. Shipping the first 200 units by air freight if the buyer pays the surcharge",
+          "D. Sourcing hard drives from another local distributor"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "3. What condition does the woman require to grant a 12% discount?",
+        "options": [
+          "A. Paying in cash upon arrival",
+          "B. Signing an annual maintenance contract",
+          "C. Increasing the total order to 1,000 units",
+          "D. Submitting written approval by 2:00 PM"
+        ],
+        "ans": 1
+      }
+    ],
+    "text": "Alex: Good morning, Sophia. I am calling regarding the purchase order we submitted yesterday for the five hundred enterprise hard drives. Sophia: Good morning, Alex. Yes, I saw the order, but due to severe supply chain delays, our standard delivery timeframe would be three weeks instead of one. Alex: Three weeks will be problematic because our data center deployment is scheduled for the end of this month. Is there any possibility of expedited air freight? Sophia: We can arrange priority air freight for the first two hundred units by this Friday, provided that your company covers the additional shipping surcharge. Alex: That sounds workable. However, considering the urgency and bulk volume, would you be able to extend a fifteen percent discount on the remaining batch? Sophia: Fifteen percent is beyond my authorization limit, but I could approve a twelve percent discount if you commit to signing our annual maintenance contract. Alex: That is a fair compromise. Could you send over the revised agreement along with the updated invoice by two o'clock today? Sophia: Certainly, Alex. I will draft the paperwork right away and email it to your legal department for final signature."
   }
 ];
 

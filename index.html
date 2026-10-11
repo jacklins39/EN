@@ -3637,6 +3637,18 @@
             }
         };
 
+        // 支援 URL 參數直接跳轉分頁 (例如 ?tab=listening)
+        window.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const tab = urlParams.get('tab');
+            if (tab === 'listening') {
+                const btn = document.getElementById('tab-btn-listening');
+                if (btn && typeof switchTab === 'function') {
+                    switchTab('view-listening', btn);
+                }
+            }
+        });
+
     </script>
 </body>
 </html>

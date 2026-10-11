@@ -3079,9 +3079,23 @@
             container.classList.add('mode-' + mode);
         }
 
-        // 顯示單字翻譯的 tooltip
+        // 顯示單字翻譯的 tooltip 並直接發音
         function showWordTranslation(e, wordText) {
             e.stopPropagation(); // 避免觸發句子的 onclick
+
+            // 1. 若背景聽力正在朗讀，暫停背景音訊以確保單字發音清晰無干擾
+            if (typeof listeningAudioPlayer !== 'undefined' && listeningAudioPlayer && !listeningAudioPlayer.paused) {
+                listeningAudioPlayer.pause();
+                if (typeof updateListeningPlayBtn === 'function') updateListeningPlayBtn();
+            }
+
+            // 2. 點擊單字之視覺觸感回饋 (瞬間亮藍)
+            if (e && e.target) {
+                e.target.classList.add('bg-blue-100', 'text-[#0071E3]', 'font-bold');
+                setTimeout(() => {
+                    e.target.classList.remove('bg-blue-100', 'text-[#0071E3]', 'font-bold');
+                }, 400);
+            }
 
             // 在字庫中尋找單字
             let w = vocabularyDB.find(x => x.en.toLowerCase() === wordText);
@@ -3133,20 +3147,48 @@
                     if (w) break;
                 }
             }
+
+            // 3. 直接發音 (優先朗讀還原後的原形，若無則朗讀當前單字)
+            const speakWord = (w && w.en) ? w.en : wordText;
+            if (typeof playAudio === 'function') {
+                playAudio(speakWord);
+            }
             
             let tooltip = document.getElementById('word-tooltip');
             if (!tooltip) {
                 tooltip = document.createElement('div');
                 tooltip.id = 'word-tooltip';
-                tooltip.className = 'absolute bg-gray-900 text-white text-sm px-3 py-2 rounded shadow-sm z-50 pointer-events-none transition-opacity duration-200 opacity-0 max-w-xs';
+                tooltip.className = 'absolute bg-gray-900 text-white text-sm px-3.5 py-2.5 rounded-xl shadow-xl z-50 pointer-events-none transition-opacity duration-200 opacity-0 max-w-xs border border-gray-700/60 backdrop-blur-md';
                 document.body.appendChild(tooltip);
             }
             
+            const safeSpeak = esc(speakWord).replace(/'/g, "\\'");
             if (w) {
-                tooltip.innerHTML = `<div class="font-medium text-teal-300">${esc(w.en)} ${w.kk ? `<span class="font-normal text-gray-300 text-xs ml-1">${esc(w.kk)}</span>` : ''}</div><div class="mt-1">${esc(w.zh)}</div>`;
+                tooltip.innerHTML = `
+                    <div class="flex items-center justify-between gap-3">
+                        <div class="font-semibold text-teal-300 text-sm">
+                            ${esc(w.en)} ${w.kk ? `<span class="font-normal text-gray-300 text-xs ml-1">${esc(w.kk)}</span>` : ''}
+                        </div>
+                        <button onclick="event.stopPropagation(); playAudio('${safeSpeak}')" class="pointer-events-auto text-teal-300 hover:text-white p-1 rounded-full hover:bg-gray-800 transition" title="重播單字發音">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
+                        </button>
+                    </div>
+                    <div class="mt-1 text-xs text-gray-100 font-medium">${esc(w.zh)}</div>
+                `;
             } else {
                 const safeWord = esc(wordText).replace(/'/g, "\\'");
-                tooltip.innerHTML = `<div class="font-medium text-gray-300">${esc(wordText)}</div><div class="text-xs text-gray-400 mt-1 flex items-center justify-between"><span>字庫中未收錄此單字</span> <button onclick="promptAddMissingWord('${safeWord}')" class="text-teal-400 hover:text-teal-300 pointer-events-auto px-2 py-0.5 rounded bg-gray-800 ml-2">➕ 加入自訂</button></div>`;
+                tooltip.innerHTML = `
+                    <div class="flex items-center justify-between gap-3">
+                        <div class="font-semibold text-gray-200 text-sm">${esc(wordText)}</div>
+                        <button onclick="event.stopPropagation(); playAudio('${safeWord}')" class="pointer-events-auto text-teal-300 hover:text-white p-1 rounded-full hover:bg-gray-800 transition" title="重播單字發音">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
+                        </button>
+                    </div>
+                    <div class="text-xs text-gray-400 mt-1.5 flex items-center justify-between">
+                        <span>字庫中未收錄</span> 
+                        <button onclick="promptAddMissingWord('${safeWord}')" class="text-teal-300 hover:text-teal-200 pointer-events-auto px-2 py-0.5 rounded bg-gray-800 text-[11px] font-medium ml-2 shadow-xs">➕ 加入自訂</button>
+                    </div>
+                `;
             }
 
             // 計算位置
@@ -3164,7 +3206,7 @@
                 }, 2000);
             };
 
-            // 預設 5 秒後隱藏 (給予足夠時間點擊按鈕)
+            // 預設 5 秒後隱藏
             if (tooltip.timeoutId) clearTimeout(tooltip.timeoutId);
             tooltip.timeoutId = setTimeout(() => {
                 tooltip.classList.add('opacity-0');

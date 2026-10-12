@@ -235,14 +235,10 @@
                     </div>
                 </div>
 
-                <div class="bg-[#F5F5F7] rounded-2xl p-4 flex justify-between items-center border-0 border-gray-100 mb-4">
+                <div class="bg-[#F5F5F7] rounded-2xl p-4 flex justify-between items-center border-0 border-gray-100 mb-6">
                     <div class="text-sm text-gray-600">已掌握詞彙</div>
                     <div class="text-lg font-semibold text-[#1D1D1F]" id="stat-mastered">0 / 1000</div>
                 </div>
-
-                <button id="btn-show-analysis" class="w-full bg-white text-blue-700 hover:bg-[#E5E5EA] font-medium py-3 rounded-2xl shadow-sm mb-6 border-0 border-blue-200 transition-colors">
-                    📊 查看學習成效分析表
-                </button>
 
                 <button id="btn-start-session" class="btn-action w-full bg-[#0071E3] hover:bg-[#0077ED] text-white font-medium py-4 rounded-2xl shadow-sm shadow-indigo-200 text-lg flex items-center justify-center gap-2 mb-4">
                     開始今日課程
@@ -682,6 +678,19 @@
                 <hr class="border-gray-100 mb-6">
                 
                 <div class="space-y-4">
+                    <button id="btn-show-analysis" class="w-full flex items-center justify-between p-4 bg-white border-0 border-gray-200 rounded-2xl hover:bg-[#F5F5F7] transition-colors mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="p-2 bg-blue-50 text-[#0071E3] rounded-xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+                            </div>
+                            <div class="text-left">
+                                <h3 class="font-semibold text-[#1D1D1F]">學習成效分析表</h3>
+                                <p class="text-xs text-[#86868B]">查看單元記憶階層分佈長條圖</p>
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+                    </button>
+                    
                     <button id="btn-manage-custom" class="w-full flex items-center justify-between p-4 bg-white border-0 border-gray-200 rounded-2xl hover:bg-[#F5F5F7] transition-colors mb-4">
                         <div class="flex items-center gap-3">
                             <div class="p-2 bg-[#F5F5F7] text-[#0071E3] rounded-xl">
@@ -1557,6 +1566,7 @@
                 isAutoFlashcardMode = false;
                 if (autoFlashcardTimerId) clearTimeout(autoFlashcardTimerId);
             }
+            stopAllAudio();
             currentWord = null;
             sessionQueue = [];
             mistakeQueue = [];
@@ -1576,10 +1586,54 @@
         });
 
         document.getElementById('btn-close-analysis').addEventListener('click', () => {
-            switchTab('view-dashboard', document.getElementById('tab-btn-dashboard'));
+            switchTab('view-settings', document.getElementById('tab-btn-settings'));
         });
 
         let autoNextTimerId = null;
+        let backsideAudioTimerId = null;
+
+        function stopAllAudio() {
+            if (backsideAudioTimerId) {
+                clearTimeout(backsideAudioTimerId);
+                backsideAudioTimerId = null;
+            }
+            if ('speechSynthesis' in window) {
+                try { window.speechSynthesis.cancel(); } catch(e) {}
+            }
+            if (typeof wordAudioPlayer !== 'undefined' && wordAudioPlayer) {
+                try {
+                    wordAudioPlayer.pause();
+                    wordAudioPlayer.currentTime = 0;
+                } catch(e) {}
+            }
+        }
+
+        function playBacksideAudio(onEndedCallback) {
+            if (backsideAudioTimerId) {
+                clearTimeout(backsideAudioTimerId);
+                backsideAudioTimerId = null;
+            }
+            if (!currentWord || !currentWord.en) {
+                if (typeof onEndedCallback === 'function') onEndedCallback();
+                return;
+            }
+            const targetWord = currentWord;
+            // 翻面第 1 步：先讀單字
+            playAudio(targetWord.en, () => {
+                if (!currentWord || currentWord.id !== targetWord.id) return;
+                // 翻面第 2 步：單字完成後，若有例句接著讀句子
+                if (targetWord.example) {
+                    backsideAudioTimerId = setTimeout(() => {
+                        if (!currentWord || currentWord.id !== targetWord.id) return;
+                        playAudio(targetWord.example, () => {
+                            if (typeof onEndedCallback === 'function') onEndedCallback();
+                        }, targetWord.id);
+                    }, 350);
+                } else {
+                    if (typeof onEndedCallback === 'function') onEndedCallback();
+                }
+            });
+        }
 
         function nextCard() {
             if (autoFlashcardTimerId) {
@@ -1590,6 +1644,7 @@
                 clearTimeout(autoNextTimerId);
                 autoNextTimerId = null;
             }
+            stopAllAudio();
             
             // 暫時取消動畫，讓卡片瞬間翻回正面，避免在翻回過程中看到新單字的背面答案
             const inner = flashcard.querySelector('.flip-card-inner');
@@ -1714,8 +1769,8 @@
             updateProgressBar();
             
             if (isAutoFlashcardMode) {
-                // 自動翻卡模式：嚴格等單字完整朗讀完畢 -> 緩衝 -> 翻面 -> 等例句完整朗讀完畢 -> 緩衝 -> 跳下一張
-                const pauseAfterWord = Math.max(500, autoFlashcardSpeed * 0.15);
+                // 自動翻卡模式：第 1 面讀單字 -> 緩衝 -> 翻面 -> 第 2 面再讀單字 -> 讀例句 -> 緩衝 -> 跳下一張
+                const pauseAfterWord = Math.max(600, autoFlashcardSpeed * 0.15);
                 const pauseAfterExample = Math.max(900, autoFlashcardSpeed * 0.25);
 
                 playAudio(currentWord.en, () => {
@@ -1724,23 +1779,15 @@
                         if (!isAutoFlashcardMode) return;
                         flashcard.classList.add('flipped');
 
-                        // 翻面後若有例句，朗讀例句，並等例句完整唸完後才跳下一張
-                        if (currentWord.example) {
-                            playAudio(currentWord.example, () => {
-                                if (!isAutoFlashcardMode) return;
-                                autoFlashcardTimerId = setTimeout(() => {
-                                    if (!isAutoFlashcardMode) return;
-                                    cardsCompleted++;
-                                    nextCard();
-                                }, pauseAfterExample);
-                            }, currentWord.id);
-                        } else {
+                        // 翻面後：先再讀單字，完成後讀例句，全部完成後跳下一張
+                        playBacksideAudio(() => {
+                            if (!isAutoFlashcardMode) return;
                             autoFlashcardTimerId = setTimeout(() => {
                                 if (!isAutoFlashcardMode) return;
                                 cardsCompleted++;
                                 nextCard();
                             }, pauseAfterExample);
-                        }
+                        });
                     }, pauseAfterWord);
                 });
             } else {
@@ -1857,13 +1904,12 @@
             } catch(e) {
                 console.error("handleAnswer error:", e);
             }
-            try {
-                playAudio(currentWord.en);
-            } catch(e) {
-                console.warn("playAudio error:", e);
-            }
-
             if (isCorrect) {
+                try {
+                    playAudio(currentWord.en);
+                } catch(e) {
+                    console.warn("playAudio error:", e);
+                }
                 // 答對：選完答案直接進入下一題（停留 600ms 顯示正確回饋，免重複點擊）
                 if (autoNextTimerId) clearTimeout(autoNextTimerId);
                 autoNextTimerId = setTimeout(() => {
@@ -1878,6 +1924,7 @@
                     flashcard.classList.add('flipped');
                     quizOptions.classList.add('hidden');
                     actionNext.classList.remove('hidden');
+                    playBacksideAudio();
                 }, 600);
             }
         }
@@ -1966,6 +2013,7 @@
         function finishSession() {
             isAutoFlashcardMode = false;
             if (autoFlashcardTimerId) clearTimeout(autoFlashcardTimerId);
+            stopAllAudio();
             if (sessionTitle === "一般課程" && dailyPlans[currentUnit]) {
                 dailyPlans[currentUnit].completed = true;
                 saveDailyPlansLocally();
@@ -1998,6 +2046,7 @@
             flashcard.classList.add('flipped');
             actionShowAnswer.classList.add('hidden');
             actionRate.classList.remove('hidden');
+            playBacksideAudio();
         });
 
         document.getElementById('btn-rate-wrong').addEventListener('click', () => { handleAnswer(false); nextCard(); });
@@ -2174,13 +2223,16 @@
 
                 // 0. 若為例句，優先檢查 Edge-TTS 真人例句庫 (Jenny Neural)
                 let exampleId = wordId || null;
-                if (!exampleId && currentWord && currentWord.id && currentWord.example) {
+                const isWordCall = currentWord && currentWord.en && (cleanLower === cleanText(currentWord.en).trim().toLowerCase());
+                
+                if (!exampleId && !isWordCall && currentWord && currentWord.id && currentWord.example) {
                     const currentCleanEx = cleanText(currentWord.example).trim().toLowerCase();
-                    if (currentCleanEx === cleanLower || cleanLower.includes(currentCleanEx) || currentCleanEx.includes(cleanLower)) {
+                    // 只有在傳入字串確實是例句本身時才認定為例句
+                    if (currentCleanEx === cleanLower || cleanLower.includes(currentCleanEx)) {
                         exampleId = currentWord.id;
                     }
                 }
-                if (!exampleId && typeof exampleSentenceToIdMap !== 'undefined' && exampleSentenceToIdMap.has(cleanLower)) {
+                if (!exampleId && !isWordCall && typeof exampleSentenceToIdMap !== 'undefined' && exampleSentenceToIdMap.has(cleanLower)) {
                     exampleId = exampleSentenceToIdMap.get(cleanLower);
                 }
 

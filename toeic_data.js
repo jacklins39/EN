@@ -1,4386 +1,5100 @@
-// 多益常考單字 (單元 11-13)
 const toeicWordsDB = [
     {
-        "id": 20070,
-        "en": "directory",
-        "kk": "/daɪˈɹɛktɝi/",
-        "zh": "n. 工商名錄；號碼簿  a 指導的；諮詢的",
+        "id": 20001,
+        "en": "abandon",
+        "kk": "/əˈbændən/",
+        "zh": "v. 拋棄;遺棄",
         "unit": 11,
-        "example": "May I see the telephone directory?",
-        "exampleZh": "我可以看一下電話簿嗎？"
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20002,
+        "en": "abide",
+        "kk": "",
+        "zh": "v. 忍受;容忍",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20003,
+        "en": "ability",
+        "kk": "/əˈbɪləti/",
+        "zh": "n. 能力;才能",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20004,
+        "en": "able",
+        "kk": "",
+        "zh": "a. 能;可;會",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20005,
+        "en": "abnormal",
+        "kk": "",
+        "zh": "a. 不正常的;反 常的",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20006,
+        "en": "abroad",
+        "kk": "",
+        "zh": "ad. 在國外;到國外",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20007,
+        "en": "aboard",
+        "kk": "",
+        "zh": "ad. 在(交通工具) 上;上(交通工具)prep 在 (交通工具)上",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20008,
+        "en": "abolish",
+        "kk": "",
+        "zh": "v. 廢除;廢止",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20009,
+        "en": "aborigine",
+        "kk": "",
+        "zh": "n. 土著;原住民",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20010,
+        "en": "abort",
+        "kk": "",
+        "zh": "v. 流產;夭折;(計 畫等)失敗",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20011,
+        "en": "abound",
+        "kk": "",
+        "zh": "v. 富足;充滿",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20012,
+        "en": "about",
+        "kk": "",
+        "zh": "ad. 在四周;到處prep. 關於;對於;在⋯⋯ 的周圍",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20013,
+        "en": "above",
+        "kk": "",
+        "zh": "ad. 在上面;向上面prep. 在⋯⋯上面;優於; 勝過",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20014,
+        "en": "above-average",
+        "kk": "",
+        "zh": "a. 在平均 水平以上;超過平均水平",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20015,
+        "en": "abrupt",
+        "kk": "",
+        "zh": "a. 突然的;唐突的",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20016,
+        "en": "abruptly",
+        "kk": "",
+        "zh": "ad. 突然地;唐突 地",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20017,
+        "en": "absence",
+        "kk": "",
+        "zh": "n. 不在,缺席",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20018,
+        "en": "absent",
+        "kk": "",
+        "zh": "a. 缺席的,不在場 的",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20019,
+        "en": "absolute",
+        "kk": "/ˈæbsəluːt/",
+        "zh": "a. 純粹的;完全 的",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20020,
+        "en": "absolutely",
+        "kk": "",
+        "zh": "ad. 絕對地,完 全地",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20021,
+        "en": "absorb",
+        "kk": "/əbˈzɔːrb/",
+        "zh": "v. 吸收;理解",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20022,
+        "en": "abstract",
+        "kk": "/ˈæbstrækt/",
+        "zh": "a. 抽象的;深奧 的n. 摘要,抽象派藝術作 品",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20023,
+        "en": "absurd",
+        "kk": "",
+        "zh": "a. 不合理的,荒謬 的",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20024,
+        "en": "abundance",
+        "kk": "",
+        "zh": "n. 豐富;充足",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20025,
+        "en": "abundant",
+        "kk": "",
+        "zh": "n. 大量的;充 足的",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20026,
+        "en": "abuse",
+        "kk": "",
+        "zh": "n. 濫用;虐待",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20027,
+        "en": "abusive",
+        "kk": "",
+        "zh": "n. 辱罵的;濫用 的",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20028,
+        "en": "academic",
+        "kk": "/ækəˈdemɪk/",
+        "zh": "a. 學校的;學 術的n. 學者;學究",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20029,
+        "en": "academy",
+        "kk": "",
+        "zh": "n. 學院;大學",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20030,
+        "en": "accelerate",
+        "kk": "",
+        "zh": "v. 加快;增長",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20031,
+        "en": "accent",
+        "kk": "",
+        "zh": "n. 口音,腔調v. 強 調,著重",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20032,
+        "en": "accept",
+        "kk": "/əkˈsept/",
+        "zh": "v. 接受;答應",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20033,
+        "en": "acceptable",
+        "kk": "",
+        "zh": "a. 可以接受 的;令人滿意的",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20034,
+        "en": "acceptance",
+        "kk": "",
+        "zh": "n. 接受;贊 同",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20035,
+        "en": "access",
+        "kk": "/ˈækses/",
+        "zh": "n. 進入;入口v. 使用;接近",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20036,
+        "en": "accessibility",
+        "kk": "",
+        "zh": "n. 易接近; 易受影響",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20037,
+        "en": "accessible",
+        "kk": "",
+        "zh": "a. 可接近的; 可進入的",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20038,
+        "en": "accessory",
+        "kk": "",
+        "zh": "n. 附件;配件a. 附屬的;輔助的",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20039,
+        "en": "accident",
+        "kk": "",
+        "zh": "n. 事故;災禍",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20040,
+        "en": "accidental",
+        "kk": "",
+        "zh": "a. 偶然的;意 外的",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20041,
+        "en": "accident-prone",
+        "kk": "",
+        "zh": "a. 容易受 傷的;容易出意外的",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20042,
+        "en": "acclaim",
+        "kk": "",
+        "zh": "v. 歡呼;喝采",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20043,
+        "en": "acclimatize",
+        "kk": "",
+        "zh": "v. 使適應新環 境",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20044,
+        "en": "accommodate",
+        "kk": "",
+        "zh": "v. 使適應; 使相符",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20045,
+        "en": "accommodation",
+        "kk": "",
+        "zh": "n. 適應; 調節",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20046,
+        "en": "accompany",
+        "kk": "",
+        "zh": "v. 陪同,伴 隨",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20047,
+        "en": "accomplish",
+        "kk": "",
+        "zh": "v. 完成,實 現,達到",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20048,
+        "en": "accomplishment",
+        "kk": "",
+        "zh": "n. 成就; 成績",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20049,
+        "en": "accord",
+        "kk": "",
+        "zh": "v. 使一致,調解",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20050,
+        "en": "according",
+        "kk": "",
+        "zh": "a. 相符的;和 諧的",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20051,
+        "en": "account",
+        "kk": "/əˈkaʊnt/",
+        "zh": "n. 帳目,帳單v. 把⋯⋯視為",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20052,
+        "en": "accountable",
+        "kk": "",
+        "zh": "a. 應負責任 的;可說明的",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20053,
+        "en": "accountant",
+        "kk": "",
+        "zh": "n. 會計師;會 計人員",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20054,
+        "en": "accounting",
+        "kk": "",
+        "zh": "n. 會計學;結 帳",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20055,
+        "en": "accrue",
+        "kk": "",
+        "zh": "v. 積累;獲得",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20056,
+        "en": "accumulate",
+        "kk": "",
+        "zh": "v. 累積;積 聚",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20057,
+        "en": "accumulation",
+        "kk": "",
+        "zh": "n. 積累;積 聚",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20058,
+        "en": "accuracy",
+        "kk": "",
+        "zh": "n. 正確;準確",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20059,
+        "en": "accurate",
+        "kk": "/ˈækjərət/",
+        "zh": "a. 準確的;精確 的",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20060,
+        "en": "accuse",
+        "kk": "",
+        "zh": "v. 控告;譴責",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20061,
+        "en": "accustom",
+        "kk": "",
+        "zh": "v. 習慣(於)",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20062,
+        "en": "ache",
+        "kk": "",
+        "zh": "n. 疼痛v. 疼痛;感 到痛苦",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20063,
+        "en": "achieve",
+        "kk": "/əˈtʃiːv/",
+        "zh": "v. 完成,實現",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20064,
+        "en": "achievement",
+        "kk": "",
+        "zh": "n. 達成;完 成",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20065,
+        "en": "acknowledge",
+        "kk": "",
+        "zh": "v. 承認",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20066,
+        "en": "acknowledgement",
+        "kk": "",
+        "zh": "n. 承 認;確認;認可",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20067,
+        "en": "acquire",
+        "kk": "/əˈkwaɪər/",
+        "zh": "v. 取得;獲得",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20068,
+        "en": "acquisitive",
+        "kk": "",
+        "zh": "a. 想獲得的; 貪得無厭的",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20069,
+        "en": "acquisition",
+        "kk": "",
+        "zh": "n. 獲得,取得",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20070,
+        "en": "acre",
+        "kk": "",
+        "zh": "n. 英畝;地產",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20071,
-        "en": "discount",
-        "kk": "/ˈdɪskaʊnt/",
-        "zh": "n. 折扣 v 打折扣",
+        "en": "across",
+        "kk": "",
+        "zh": "prep. 橫越,穿過; 在⋯⋯那邊ad. 橫過",
         "unit": 11,
-        "example": "many stores will offer a discount on bulk purchases",
-        "exampleZh": "許多商店都會為大量購買提供折扣"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20072,
-        "en": "dispatch",
-        "kk": "/dɪˈspætʃ/",
-        "zh": "v. 派遣；發送",
+        "en": "act",
+        "kk": "",
+        "zh": "v. 扮演;做事;見效n. 行為;行動",
         "unit": 11,
-        "example": "the legendary dispatch of villains by a hero",
-        "exampleZh": "英雄除惡的傳奇"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20073,
-        "en": "distribute",
-        "kk": "/dɪˈstɹɪbjut/",
-        "zh": "v. 分發；分配",
+        "en": "action",
+        "kk": "",
+        "zh": "n. 行動;行為",
         "unit": 11,
-        "example": "you can distribute the system's output over your home network",
-        "exampleZh": "您可以透過家庭網路分發系統的輸出"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20074,
-        "en": "division",
-        "kk": "/dɪˈvɪʒən/",
-        "zh": "n. 分開；分割",
+        "en": "activate",
+        "kk": "",
+        "zh": "v. 使活化;使活 潑",
         "unit": 11,
-        "example": "the plant can also be easily increased by division in autumn",
-        "exampleZh": "該植物還可以在秋季通過分株輕鬆增加"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20075,
-        "en": "document",
-        "kk": "/ˈdɑkjəmɛnt/",
-        "zh": "n. 公文；文件",
+        "en": "active",
+        "kk": "",
+        "zh": "a. 活躍的;活潑的; 積極的",
         "unit": 11,
-        "example": "Hide these documents.",
-        "exampleZh": "隱藏這些文件。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20076,
-        "en": "domestic",
-        "kk": "/dəˈmɛstɪk/",
-        "zh": "a. 家庭的；國內的",
+        "en": "activity",
+        "kk": "",
+        "zh": "n. 活動;行動",
         "unit": 11,
-        "example": "domestic chores",
-        "exampleZh": "家務事"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20077,
-        "en": "downsize",
+        "en": "actor",
         "kk": "",
-        "zh": "v. 裁減",
+        "zh": "n. 演員;行動者",
         "unit": 11,
-        "example": "recession forced many companies to downsize",
-        "exampleZh": "經濟衰退迫使許多公司縮小規模"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20078,
-        "en": "durable",
-        "kk": "/ˈdʊɹəbəɫ/",
-        "zh": "a. 經久的，耐用的；持久的",
+        "en": "actress",
+        "kk": "",
+        "zh": "n. 女演員",
         "unit": 11,
-        "example": "a durable peace can be achieved",
-        "exampleZh": "持久和平是可以實現的"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20079,
-        "en": "efficient",
-        "kk": "/ɪˈfɪʃənt/",
-        "zh": "adj. 有效率的",
+        "en": "actual",
+        "kk": "/ˈæktʃuəl/",
+        "zh": "a. 實際的;事實上 的",
         "unit": 11,
-        "example": "an efficient administrator",
-        "exampleZh": "高效率的管理者"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20080,
-        "en": "eligible",
-        "kk": "/ˈɛɫədʒəbəɫ/",
-        "zh": "a. 有資格當選的；法律上合格的",
+        "en": "actually",
+        "kk": "",
+        "zh": "ad. 實際上;真的",
         "unit": 11,
-        "example": "a foreign student is eligible to attend the school",
-        "exampleZh": "外國學生有資格就讀該學校"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20081,
-        "en": "employee",
-        "kk": "/ɛmˈpɫɔɪi/",
-        "zh": "n. 員工",
+        "en": "acute",
+        "kk": "",
+        "zh": "a. 嚴重的;敏銳的",
         "unit": 11,
-        "example": "Watch the employees.",
-        "exampleZh": "觀察員工。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20082,
-        "en": "enclose",
-        "kk": "/ɪnˈkɫoʊz/",
-        "zh": "v. 圍住；圈起",
+        "en": "adapt",
+        "kk": "/əˈdæpt/",
+        "zh": "v. 使適應,使適合",
         "unit": 11,
-        "example": "I enclose a copy of the job description",
-        "exampleZh": "我附上一份職位說明的副本"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20083,
-        "en": "endorse",
+        "en": "adapter",
         "kk": "",
-        "zh": "v. 背書；認可",
+        "zh": "n. 改編者;轉接 器",
         "unit": 11,
-        "example": "Endorse this check.",
-        "exampleZh": "簽署此支票。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20084,
-        "en": "enroll",
-        "kk": "/ɛnˈɹoʊɫ/",
-        "zh": "v. 記入名冊；被登記",
+        "en": "add",
+        "kk": "",
+        "zh": "v. 添加;增加",
         "unit": 11,
-        "example": "a campaign to enroll more foster families",
-        "exampleZh": "一項招募更多寄養家庭的運動"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20085,
-        "en": "ensure",
-        "kk": "/ɛnˈʃʊɹ/",
-        "zh": "v. 保證；擔保",
+        "en": "addict",
+        "kk": "",
+        "zh": "v. 使沉溺;使醉心",
         "unit": 11,
-        "example": "the client must ensure that accurate records be kept",
-        "exampleZh": "客戶必須確保保存準確的記錄"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20086,
-        "en": "entrepreneur",
+        "en": "addiction",
         "kk": "",
-        "zh": "n. 企業家",
+        "zh": "n. 沉溺;成癮",
         "unit": 11,
-        "example": "the music entrepreneur pulled back from financing a screenplay Hopper had written",
-        "exampleZh": "音樂企業家撤回霍珀撰寫的劇本的融資"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20087,
-        "en": "equipment",
-        "kk": "/ɪˈkwɪpmənt/",
-        "zh": "n. 裝備；配備",
+        "en": "addictive",
+        "kk": "",
+        "zh": "a. 成癮的;上癮 的",
         "unit": 11,
-        "example": "they lacked the intellectual equipment to recognize the jokes",
-        "exampleZh": "他們缺乏辨識笑話的智力設備"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20088,
-        "en": "estimate",
-        "kk": "/ˈɛstəˌmeɪt/",
-        "zh": "v. 估算；估量",
+        "en": "addition",
+        "kk": "",
+        "zh": "n. 加;附加",
         "unit": 11,
-        "example": "the aim is to estimate the effects of macroeconomic policy on the economy",
-        "exampleZh": "目的是估計宏觀經濟政策對經濟的影響"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20089,
-        "en": "evaluate",
-        "kk": "/iˈvæɫjuˌeɪt/",
-        "zh": "v. 估價；評價",
+        "en": "additionally",
+        "kk": "",
+        "zh": "ad. 附加地; 同時;此外",
         "unit": 11,
-        "example": "when you evaluate any hammer, look for precision machining",
-        "exampleZh": "當您評估任何錘子時，請尋找精密加工的產品"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20090,
-        "en": "exceed",
-        "kk": "/ɪkˈsid/",
-        "zh": "v. 超過；勝過",
+        "en": "address",
+        "kk": "",
+        "zh": "n. 住址;地址v. 向⋯⋯致詞;向⋯⋯發表 演說",
         "unit": 11,
-        "example": "Supply exceeds demand.",
-        "exampleZh": "供應超過需求。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20091,
-        "en": "exhibition",
-        "kk": "/ˌɛksəˈbɪʃən/",
-        "zh": "n. 展覽；展示",
+        "en": "adept",
+        "kk": "",
+        "zh": "n. 能手;內行",
         "unit": 11,
-        "example": "an exhibition game",
-        "exampleZh": "一場表演賽"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20092,
-        "en": "expand",
-        "kk": "/ɪkˈspænd/",
-        "zh": "v. 展開；張開",
+        "en": "adequate",
+        "kk": "/ˈædɪkwət/",
+        "zh": "a. 足夠的;適 當的",
         "unit": 11,
-        "example": "baby birds cannot expand and contract their lungs",
-        "exampleZh": "幼鳥無法擴張和收縮肺部"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20093,
-        "en": "expenditure",
+        "en": "adhere",
         "kk": "",
-        "zh": "n. 消費；支出",
+        "zh": "v. 黏附;遵守;堅 持",
         "unit": 11,
-        "example": "cuts in public expenditure",
-        "exampleZh": "削減公共開支"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20094,
-        "en": "expense",
-        "kk": "/ɪkˈspɛns/",
-        "zh": "n. 費用；價錢",
+        "en": "adjust",
+        "kk": "",
+        "zh": "v. 調整;校正",
         "unit": 11,
-        "example": "the committee does not expect members to be put to any expense",
-        "exampleZh": "委員會不希望成員承擔任何費用"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20095,
-        "en": "expire",
-        "kk": "/ɪkˈspaɪɹ/",
-        "zh": "v. 屆期；終止",
+        "en": "adjustment",
+        "kk": "",
+        "zh": "n. 調整;校正",
         "unit": 11,
-        "example": "It expires tomorrow.",
-        "exampleZh": "明天就到期了。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20096,
-        "en": "facility",
-        "kk": "/fəˈsɪɫɪti/",
-        "zh": "n. 設施；配備",
+        "en": "administrate",
+        "kk": "",
+        "zh": "v. 管理;支 配",
         "unit": 11,
-        "example": "the pianist played with great facility",
-        "exampleZh": "鋼琴家演奏得非常自如"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20097,
-        "en": "fiscal",
-        "kk": "",
-        "zh": "adj. 財政的",
+        "en": "administration",
+        "kk": "/ədˌmɪnɪˈstreɪʃn/",
+        "zh": "v. 管理; 經營;行政",
         "unit": 11,
-        "example": "monetary and fiscal policy",
-        "exampleZh": "貨幣和財政政策"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20098,
-        "en": "flexible",
-        "kk": "/ˈfɫɛksəbəɫ/",
-        "zh": "adj. 彈性的",
+        "en": "administrator",
+        "kk": "",
+        "zh": "n. 管理人; 行政官員",
         "unit": 11,
-        "example": "you can save money if you're flexible about where your room is located",
-        "exampleZh": "如果您靈活選擇房間的位置，您可以省錢"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20099,
-        "en": "forecast",
-        "kk": "/ˈfɔɹˌkæst/",
-        "zh": "n. 預報；預測 v預報；預測",
+        "en": "admirable",
+        "kk": "",
+        "zh": "a. 值得讚揚的; 令人欽佩的",
         "unit": 11,
-        "example": "rain is forecast for eastern Ohio",
-        "exampleZh": "預計俄亥俄州東部將有降雨"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20100,
-        "en": "franchise",
+        "en": "admiration",
         "kk": "",
-        "zh": "n. 特許經銷權；公民權",
+        "zh": "n. 欽佩;欣賞",
         "unit": 11,
-        "example": "Toyota granted the group a franchise",
-        "exampleZh": "豐田授予該集團特許經營權"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20101,
-        "en": "freight",
-        "kk": "/ˈfɹeɪt/",
-        "zh": "n. 貨物 v 裝貨於；運輸",
+        "en": "admire",
+        "kk": "",
+        "zh": "v. 欽佩;欣賞",
         "unit": 11,
-        "example": "a bill indicating that the freight has been paid",
-        "exampleZh": "表示運費已付的帳單"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20102,
-        "en": "furnish",
-        "kk": "/ˈfɝnɪʃ/",
-        "zh": "v. 配備家具；提供",
+        "en": "admit",
+        "kk": "/ədˈmɪt/",
+        "zh": "v. 承認;准許進入",
         "unit": 11,
-        "example": "she was able to furnish me with details of the incident",
-        "exampleZh": "她能夠向我提供事件的詳細信息"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20103,
-        "en": "generate",
-        "kk": "/ˈdʒɛnɝˌeɪt/",
-        "zh": "v. 產生；發生",
+        "en": "admittance",
+        "kk": "",
+        "zh": "n. 進入;入 場許可",
         "unit": 11,
-        "example": "changes that are likely to generate controversy",
-        "exampleZh": "可能引起爭議的變化"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20104,
-        "en": "guarantee",
-        "kk": "/ˌɡɛɹənˈti/",
-        "zh": "n. 保證；保固 v 保證；保固",
+        "en": "adolescence",
+        "kk": "",
+        "zh": "n. 青春期; 青少年時期",
         "unit": 11,
-        "example": "no one can guarantee a profit on stocks",
-        "exampleZh": "沒有人能保證股票獲利"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20105,
-        "en": "headquarters",
-        "kk": "/ˈhɛdˌkɔɹtɝz/",
-        "zh": "n. 總部",
+        "en": "adolescent",
+        "kk": "",
+        "zh": "a. 青少年的; 幼稚的n. 青少年",
         "unit": 11,
-        "example": "its national headquarters are in Florida",
-        "exampleZh": "其國家總部位於佛羅裡達州"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20106,
-        "en": "inquiry",
-        "kk": "/ˌɪnˈkwaɪˌɹi/",
-        "zh": "n. 詢問；打聽",
+        "en": "adopt",
+        "kk": "/əˈdɒpt/",
+        "zh": "v. 採取;採納",
         "unit": 11,
-        "example": "all lines of inquiry are open",
-        "exampleZh": "所有諮詢專線均已開放"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20107,
-        "en": "installation",
-        "kk": "/ˌɪnstəˈɫeɪʃən/",
-        "zh": "n. 安裝",
+        "en": "adoption",
+        "kk": "",
+        "zh": "n. 採納;採用",
         "unit": 11,
-        "example": "a video installation",
-        "exampleZh": "視訊裝置"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20108,
-        "en": "instruction",
-        "kk": "/ˌɪnˈstɹəkʃən/",
-        "zh": "n. 命令；指示",
+        "en": "adorn",
+        "kk": "",
+        "zh": "v. 裝飾;使生色",
         "unit": 11,
-        "example": "the school offers personalized instruction in a variety of skills",
-        "exampleZh": "學校提供各種技能的個人指導"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20109,
-        "en": "insurance",
-        "kk": "/ˌɪnˈʃʊɹəns/",
-        "zh": "n. 保險；保險契約",
+        "en": "adult",
+        "kk": "/ˈædʌlt/",
+        "zh": "n. 成年人a. 成年的; 成熟的",
         "unit": 11,
-        "example": "Howard is in insurance",
-        "exampleZh": "霍華德是保險人"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20110,
-        "en": "inventory",
-        "kk": "/ˌɪnvənˈtɔɹi/",
-        "zh": "n. 存貨清單；目錄",
+        "en": "advance",
+        "kk": "/ədˈvæns/",
+        "zh": "v. 前進;進展n. 前進;發展a. 先行的;預 先的",
         "unit": 11,
-        "example": "The inventory is full.",
-        "exampleZh": "庫存已滿。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20111,
-        "en": "invoice",
+        "en": "advanced",
         "kk": "",
-        "zh": "n. 發票；發貨單",
+        "zh": "a. 在前面的; 先進的;開明的",
         "unit": 11,
-        "example": "I have the invoice.",
-        "exampleZh": "我有發票。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20112,
-        "en": "itinerary",
-        "kk": "",
-        "zh": "n. 旅程；路線 a旅行的；旅程的J",
+        "en": "advantage",
+        "kk": "/ədˈvæntɪdʒ/",
+        "zh": "n. 優點;利益v. 有利於;使處於優勢",
         "unit": 11,
-        "example": "his itinerary included an official visit to Canada",
-        "exampleZh": "他的行程包括對加拿大進行正式訪問"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20113,
-        "en": "jeopardize",
-        "kk": "",
-        "zh": "v. 危害",
+        "en": "adventure",
+        "kk": "/ədˈventʃər/",
+        "zh": "n. 冒險; 冒險 精神",
         "unit": 11,
-        "example": "a devaluation of the dollar would jeopardize New York's position as a financial center",
-        "exampleZh": "美元貶值將危及紐約的金融中心地位"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20114,
-        "en": "launch",
-        "kk": "/ˈɫɔntʃ/",
-        "zh": "v. 發射；發動 n發射；發行",
+        "en": "adversary",
+        "kk": "",
+        "zh": "n. 敵手;敵人",
         "unit": 11,
-        "example": "she cruised the waterways on a luxury motor launch",
-        "exampleZh": "她乘坐豪華汽車在水道上巡遊"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20115,
-        "en": "lease",
+        "en": "adverse",
         "kk": "",
-        "zh": "n. 租約；租契 v 出租",
+        "zh": "a. 反面的;不利 的",
         "unit": 11,
-        "example": "a six-month lease on a shop",
-        "exampleZh": "商店六個月的租約"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20116,
-        "en": "liability",
-        "kk": "",
-        "zh": "n. 傾向責任",
+        "en": "advertise",
+        "kk": "/ˈædvətaɪz/",
+        "zh": "v. 廣告;公布",
         "unit": 11,
-        "example": "he has become a political liability",
-        "exampleZh": "他已成為政治負擔"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20117,
-        "en": "logistics",
+        "en": "advertisement",
         "kk": "",
-        "zh": "n. 物流；運籌",
+        "zh": "n. 廣告; 宣傳",
         "unit": 11,
-        "example": "Germany's largest beverage logistics organization",
-        "exampleZh": "德國最大的飲料物流組織"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20118,
-        "en": "maintenance",
-        "kk": "/ˈmeɪntənəns/",
-        "zh": "n. 維持；保持",
+        "en": "advice",
+        "kk": "/ədˈvaɪs/",
+        "zh": "n. 勸告;忠告",
         "unit": 11,
-        "example": "essential maintenance work",
-        "exampleZh": "必要的維護工作"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20119,
-        "en": "manufacture",
-        "kk": "/ˌmænjəˈfæktʃɝ/",
-        "zh": "v. 製造，加工  n 製造業；製品",
+        "en": "advisable",
+        "kk": "",
+        "zh": "a. 可取的;適 當的",
         "unit": 11,
-        "example": "the manufacture of armored vehicles",
-        "exampleZh": "裝甲車的製造"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20120,
-        "en": "margin",
-        "kk": "/ˈmɑɹdʒən/",
-        "zh": "n. 邊；邊沿",
+        "en": "advise",
+        "kk": "",
+        "zh": "v. 勸告;忠告",
         "unit": 11,
-        "example": "they won by a convincing 17-point margin",
-        "exampleZh": "他們以令人信服的 17 分優勢獲勝"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20121,
-        "en": "merchandise",
-        "kk": "/ˈmɝtʃənˌdaɪz/",
-        "zh": "n. 商品；貨物 v 買賣；經營",
+        "en": "adviser",
+        "kk": "",
+        "zh": "n. 顧問;勸告者",
         "unit": 11,
-        "example": "it if be below great men to be kind of recompense, and merchandise their Power",
-        "exampleZh": "如果低於偉人，可以作為一種補償，並利用他們的權力"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20122,
-        "en": "merge",
-        "kk": "/ˈmɝdʒ/",
-        "zh": "v. 合併；融合",
+        "en": "advocate",
+        "kk": "",
+        "zh": "n. 提倡者;辯 護者;律師",
         "unit": 11,
-        "example": "the turn is more like a merge than a standard right turn",
-        "exampleZh": "該轉彎更像是並道而不是標準的右轉"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20123,
-        "en": "minutes",
+        "en": "affair",
         "kk": "",
-        "zh": "n. 會議記錄",
+        "zh": "n. 事件;事務",
         "unit": 11,
-        "example": "Wait thirty minutes.",
-        "exampleZh": "等三十分鐘。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20124,
-        "en": "negotiate",
-        "kk": "/nəˈɡoʊʃiˌeɪt/",
-        "zh": "v. 協商；交涉",
+        "en": "affect",
+        "kk": "/əˈfekt/",
+        "zh": "v. 影響;對⋯⋯發 生作用",
         "unit": 11,
-        "example": "his government's willingness to negotiate",
-        "exampleZh": "他的政府願意進行談判"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20125,
-        "en": "notify",
-        "kk": "/ˈnoʊtəˌfaɪ/",
-        "zh": "v. 通知",
+        "en": "affection",
+        "kk": "",
+        "zh": "n. 愛;情愛",
         "unit": 11,
-        "example": "if he does not notify the occurrences, he may be guilty of nondisclosure",
-        "exampleZh": "如果他不通知所發生的情況，他可能犯下隱瞞罪"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20126,
-        "en": "obligation",
-        "kk": "/ˌɑbɫəˈɡeɪʃən/",
-        "zh": "n. 義務；責任",
+        "en": "affirm",
+        "kk": "",
+        "zh": "v. 申明;堅稱;證 實",
         "unit": 11,
-        "example": "she didn't want to be under an obligation to him",
-        "exampleZh": "她不想對他負有義務"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20127,
-        "en": "occupy",
-        "kk": "/ˈɑkjəˌpaɪ/",
-        "zh": "v. 佔用；佔據",
+        "en": "affirmative",
+        "kk": "",
+        "zh": "a. 肯定的;表 示贊成的",
         "unit": 11,
-        "example": "on the corporate ladder, they occupy the lowest rungs",
-        "exampleZh": "在公司的階梯上，他們佔據最低的梯級"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20128,
-        "en": "operate",
-        "kk": "/ˈɑpɝˌeɪt/",
-        "zh": "v. 營業；運轉",
+        "en": "affix",
+        "kk": "",
+        "zh": "v. 貼上;添上;附上",
         "unit": 11,
-        "example": "a shortage of workers to operate new machines",
-        "exampleZh": "缺乏操作新機器的工人"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20129,
-        "en": "order",
-        "kk": "/ˈɔɹdɝ/",
-        "zh": "n. 順序；狀況；命令 v 命令；指揮",
+        "en": "afraid",
+        "kk": "/əˈfreɪd/",
+        "zh": "a. 害怕的;恐怕; 遺憾",
         "unit": 11,
-        "example": "I asked the security guard to order me a taxi",
-        "exampleZh": "我讓保安給我叫了一輛計程車"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20130,
-        "en": "outstanding",
-        "kk": "/ˌaʊtˈstændɪŋ/",
-        "zh": "a. 顯著的；傑出的",
+        "en": "after",
+        "kk": "",
+        "zh": "prep. 在⋯之後conj. 在⋯之後ad. 以後;之後a. 以後的;後部的",
         "unit": 11,
-        "example": "works of outstanding banality",
-        "exampleZh": "傑出的平庸作品"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20131,
-        "en": "overdue",
+        "en": "afternoon",
         "kk": "",
-        "zh": "adj. 逾期的",
+        "zh": "n. 下午;午後",
         "unit": 11,
-        "example": "she was overdue for some leave",
-        "exampleZh": "她遲到了請假"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20132,
-        "en": "overtime",
+        "en": "after-tax",
         "kk": "",
-        "zh": "n. 加班 a 超過時間的 ad 超過地",
+        "zh": "a. 稅後;淨收的",
         "unit": 11,
-        "example": "an overtime ban",
-        "exampleZh": "加班禁令"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20133,
-        "en": "participate",
-        "kk": "/pɑɹˈtɪsəˌpeɪt/",
-        "zh": "v. 參加；參與",
+        "en": "afterward",
+        "kk": "",
+        "zh": "ad. 之後;以後",
         "unit": 11,
-        "example": "both members participate of harmony",
-        "exampleZh": "雙方成員和諧參與"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20134,
-        "en": "partnership",
-        "kk": "/ˈpɑɹtnɝˌʃɪp/",
-        "zh": "n. 合夥關係",
+        "en": "again",
+        "kk": "",
+        "zh": "ad. 再;再一次",
         "unit": 11,
-        "example": "we should go on working together in partnership",
-        "exampleZh": "我們應該繼續合作"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20135,
-        "en": "patron",
-        "kk": "/ˈpeɪtɹən/",
-        "zh": "n. 老主顧；贊助人",
+        "en": "against",
+        "kk": "",
+        "zh": "prep. 反對;違反",
         "unit": 11,
-        "example": "Charles became a patron of Rubens and van Dyck",
-        "exampleZh": "查爾斯成為魯本斯和凡戴克的贊助人"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20136,
-        "en": "payroll",
+        "en": "age",
         "kk": "",
-        "zh": "n. 薪金總額；發薪名單",
+        "zh": "n. 年齡v. 變老;成熟",
         "unit": 11,
-        "example": "small employers with a payroll of less than $45,000",
-        "exampleZh": "工資低於 45,000 美元的小型雇主"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20137,
-        "en": "personnel",
-        "kk": "/ˌpɝsəˈnɛɫ/",
-        "zh": "n. 人員；員工",
+        "en": "agency",
+        "kk": "",
+        "zh": "n. 經銷處;代理 機構",
         "unit": 11,
-        "example": "many of the personnel involved require training",
-        "exampleZh": "許多相關人員需要培訓"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20138,
-        "en": "postpone",
-        "kk": "/poʊˈspoʊn/",
-        "zh": "v. 延遲",
+        "en": "agenda",
+        "kk": "",
+        "zh": "n. 待議諸事項; 議程",
         "unit": 11,
-        "example": "The trial was postponed.",
-        "exampleZh": "審判被推遲。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20139,
-        "en": "precaution",
-        "kk": "/pɹiˈkɔʃən/",
-        "zh": "n. 預防措施",
+        "en": "agent",
+        "kk": "/ˈeɪdʒənt/",
+        "zh": "n. 代理商;仲介人",
         "unit": 11,
-        "example": "he had taken the precaution of seeking legal advice",
-        "exampleZh": "他已採取預防措施尋求法律建議"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20140,
-        "en": "premises",
+        "en": "aggression",
         "kk": "",
-        "zh": "n. 生產場所；經營場址",
+        "zh": "n. 侵略",
         "unit": 11,
-        "example": "business premises",
-        "exampleZh": "營業場所"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20141,
-        "en": "presentation",
-        "kk": "/ˌpɹɛzənˈteɪʃən/",
-        "zh": "n. 簡報",
+        "en": "aggressive",
+        "kk": "",
+        "zh": "a. 侵略的; 好鬥的",
         "unit": 11,
-        "example": "all patients in this group were symptomatic at initial presentation",
-        "exampleZh": "該組中的所有患者在初次就診時均出現症狀"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20142,
-        "en": "procedure",
-        "kk": "/pɹəˈsidʒɝ/",
-        "zh": "n. 程序；手續",
+        "en": "agility",
+        "kk": "",
+        "zh": "n. 敏捷;靈活",
         "unit": 11,
-        "example": "the standard procedure for informing new employees about conditions of work",
-        "exampleZh": "告知新進員工工作條件的標準程序"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20143,
-        "en": "procurement",
+        "en": "ago",
         "kk": "",
-        "zh": "n. 取得；採購",
+        "zh": "ad. 在⋯⋯以前",
         "unit": 11,
-        "example": "defense procurement",
-        "exampleZh": "國防採購"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20144,
-        "en": "productivity",
-        "kk": "/ˌpɹoʊdəkˈtɪvəti/",
-        "zh": "n. 生產力；生產率",
+        "en": "agree",
+        "kk": "/əˈɡriː/",
+        "zh": "v. 同意;贊同",
         "unit": 11,
-        "example": "agricultural productivity",
-        "exampleZh": "農業生產力"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20145,
-        "en": "profit",
-        "kk": "/ˈpɹɑfət/",
-        "zh": "n. 利潤",
+        "en": "agreement",
+        "kk": "",
+        "zh": "n. 同意;協定",
         "unit": 11,
-        "example": "his eyes brightened at the prospect of profit",
-        "exampleZh": "他的眼睛因利潤的前景而閃閃發亮"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20146,
-        "en": "promote",
-        "kk": "/pɹəˈmoʊt/",
-        "zh": "v. 晉升；促進",
+        "en": "agricultural",
+        "kk": "",
+        "zh": "a. 農業的; 務農的",
         "unit": 11,
-        "example": "some regulation is still required to promote competition",
-        "exampleZh": "仍需要一些監管來促進競爭"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20147,
-        "en": "promotion",
-        "kk": "/pɝˈmoʊʃən/",
-        "zh": "n. 升遷；促銷",
+        "en": "ahead",
+        "kk": "/əˈhed/",
+        "zh": "ad. 在前;向前; 預先",
         "unit": 11,
-        "example": "a boxing promotion",
-        "exampleZh": "拳擊促銷活動"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20148,
-        "en": "proposal",
-        "kk": "/pɹəˈpoʊzəɫ/",
-        "zh": "n. 計畫；提案；求婚",
+        "en": "aid",
+        "kk": "/eɪd/",
+        "zh": "v. 幫助;救助n. 幫助; 救助",
         "unit": 11,
-        "example": "I approve your proposal.",
-        "exampleZh": "我批准你的提議。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20149,
-        "en": "purchase",
-        "kk": "/ˈpɝtʃəs/",
-        "zh": "v. 購買；獲得",
+        "en": "aim",
+        "kk": "/eɪm/",
+        "zh": "v. 瞄準;目的",
         "unit": 11,
-        "example": "a lease valued at seven year's purchase",
-        "exampleZh": "價值七年購買的租約"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20150,
-        "en": "qualification",
-        "kk": "/ˌkwɑɫəfəˈkeɪʃən/",
-        "zh": "n. 資格",
+        "en": "air-conditioner",
+        "kk": "",
+        "zh": "n. 冷氣機",
         "unit": 11,
-        "example": "only one qualification required—a fabulous sense of humor",
-        "exampleZh": "只需要一項資格－極佳的幽默感"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20151,
-        "en": "quotation",
-        "kk": "/kwoʊˈteɪʃən/",
-        "zh": "n. 引用；引證",
+        "en": "aircraft",
+        "kk": "/ˈeərkræft/",
+        "zh": "n. 飛機;飛艇",
         "unit": 11,
-        "example": "Can you give me a quotation?",
-        "exampleZh": "你能給我報價嗎？"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20152,
-        "en": "receipt",
-        "kk": "/ɹiˈsit/",
-        "zh": "n. 收據",
+        "en": "airline",
+        "kk": "",
+        "zh": "n. 航線;航空公司",
         "unit": 11,
-        "example": "this office is already in receipt of your midterm grades",
-        "exampleZh": "該辦公室已收到您的期中成績"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20153,
-        "en": "recipient",
-        "kk": "/ɹəˈsɪpiənt/",
-        "zh": "n. 接受者；受領者  a 接受的；受領的",
+        "en": "airport",
+        "kk": "",
+        "zh": "n. 機場",
         "unit": 11,
-        "example": "the recipient of the Nobel Peace Prize",
-        "exampleZh": "諾貝爾和平獎得主"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20154,
-        "en": "recruit",
-        "kk": "/ɹəˈkɹut/",
-        "zh": "v. 徵募；僱用",
+        "en": "aisle",
+        "kk": "",
+        "zh": "n. 通道;走道",
         "unit": 11,
-        "example": "they recruit their toughest soldiers from the desert tribes",
-        "exampleZh": "他們從沙漠部落招募最強的士兵"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20155,
-        "en": "refund",
-        "kk": "/ˈɹiˌfənd/",
-        "zh": "n. 退還；償還",
+        "en": "alarm",
+        "kk": "/əˈlɑːrm/",
+        "zh": "n. 警報;鬧鐘v. 使 驚慌不安;使恐懼",
         "unit": 11,
-        "example": "you'll get an immediate tax refund",
-        "exampleZh": "您將立即獲得退稅"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20156,
-        "en": "regulation",
-        "kk": "/ˌɹɛɡjəˈɫeɪʃən/",
-        "zh": "n. 規章；規則a 標準的；正規的",
+        "en": "alert",
+        "kk": "/əˈlɜːrt/",
+        "zh": "v. 使警覺;使注意n. 警戒;警報a. 警覺的;警 惕的",
         "unit": 11,
-        "example": "the regulation of financial markets",
-        "exampleZh": "金融市場的監管"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20157,
-        "en": "reimburse",
+        "en": "align",
         "kk": "",
-        "zh": "v. 償還；歸還",
+        "zh": "v. 排成直線;使結 盟",
         "unit": 11,
-        "example": "How do I get reimbursed?",
-        "exampleZh": "我如何獲得報銷？"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20158,
-        "en": "reliable",
-        "kk": "/ɹiˈɫaɪəbəɫ/",
-        "zh": "a. 可信賴的；可靠的",
+        "en": "alike",
+        "kk": "/əˈlaɪk/",
+        "zh": "a. 相同的;相像的ad. 一樣地;相似地",
         "unit": 11,
-        "example": "a reliable source of information",
-        "exampleZh": "可靠的資訊來源"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20159,
-        "en": "relocate",
+        "en": "allege",
         "kk": "",
-        "zh": "v. 重新安置",
+        "zh": "v. 斷言;宣稱",
         "unit": 11,
-        "example": "Tom wishes to relocate.",
-        "exampleZh": "湯姆希望搬家。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20160,
-        "en": "renew",
-        "kk": "/ɹɪˈnu/",
-        "zh": "v. 使更新；使復原",
+        "en": "allegedly",
+        "kk": "",
+        "zh": "ad. 據傳說;據 宣稱",
         "unit": 11,
-        "example": "a change of scenery will recharge your batteries and renew your zest for life",
-        "exampleZh": "換個環境會為你充電，重燃你對生活的熱情"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20161,
-        "en": "renovation",
+        "en": "allergy",
         "kk": "",
-        "zh": "n. 更新；修理",
+        "zh": "n. 過敏症",
         "unit": 11,
-        "example": "this property is in need of complete renovation",
-        "exampleZh": "該房產需要徹底翻新"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20162,
-        "en": "reputation",
-        "kk": "/ˌɹɛpjəˈteɪʃən/",
-        "zh": "n. 名譽；名聲",
+        "en": "alley",
+        "kk": "",
+        "zh": "n. 小巷;小徑",
         "unit": 11,
-        "example": "his reputation was tarnished by allegations that he had taken bribes",
-        "exampleZh": "他的名譽因收賄指控而受損"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20163,
-        "en": "require",
-        "kk": "/ˌɹiˈkwaɪɝ/",
-        "zh": "v. 需要；要求",
+        "en": "alliance",
+        "kk": "",
+        "zh": "n. 結盟;聯盟",
         "unit": 11,
-        "example": "please indicate how many tickets you require",
-        "exampleZh": "請註明您需要多少張門票"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20164,
-        "en": "reservation",
-        "kk": "/ˌɹɛzɝˈveɪʃən/",
-        "zh": "n. 預定；保留",
+        "en": "allocate",
+        "kk": "",
+        "zh": "v. 分派;分配",
         "unit": 11,
-        "example": "the reservation of positions for non-Americans",
-        "exampleZh": "為非美國人保留職位"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20165,
-        "en": "resign",
-        "kk": "/ɹiˈsaɪn/",
-        "zh": "v. 放棄；辭去",
+        "en": "allow",
+        "kk": "/əˈlaʊ/",
+        "zh": "v. 允許;准許",
         "unit": 11,
-        "example": "he vows to resign himself to her direction",
-        "exampleZh": "他發誓要聽從她的指示"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20166,
-        "en": "résumé",
+        "en": "allowance",
         "kk": "",
-        "zh": "n. 履歷表",
-        "unit": 11
+        "zh": "n. 津貼;補貼",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20167,
-        "en": "retail",
-        "kk": "/ˈɹiˌteɪɫ/",
-        "zh": "n. 零售 v 零售 a零售的",
+        "en": "allure",
+        "kk": "",
+        "zh": "v. 引誘;誘惑n. 誘 惑力,魅力",
         "unit": 11,
-        "example": "it is not yet available retail",
-        "exampleZh": "尚未零售"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20168,
-        "en": "revenue",
-        "kk": "/ˈɹɛvəˌnu/",
-        "zh": "n. 收入；稅收",
+        "en": "almost",
+        "kk": "/ˈɔːlmoʊst/",
+        "zh": "ad. 幾乎;差不多",
         "unit": 11,
-        "example": "traders have lost $10,000 in revenue since the traffic scheme was implemented",
-        "exampleZh": "自流量計劃實施以來，交易者已經損失了 10,000 美元的收入"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20169,
-        "en": "revise",
-        "kk": "/ɹiˈvaɪz/",
-        "zh": "v. 修訂；校訂",
+        "en": "along",
+        "kk": "/əˈlɔːŋ/",
+        "zh": "prep. 沿著;順著ad. 向前;一起",
         "unit": 11,
-        "example": "he had cause to revise his opinion a moment after expressing it",
-        "exampleZh": "他在表達後不久就有理由修改自己的觀點"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20170,
-        "en": "salary",
-        "kk": "/ˈsæɫɝi/",
-        "zh": "n. 薪資；薪水",
+        "en": "already",
+        "kk": "/ɔːlˈredi/",
+        "zh": "ad. 已經;先前",
         "unit": 11,
-        "example": "What is your salary?",
-        "exampleZh": "你的薪水是多少？"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20171,
-        "en": "schedule",
-        "kk": "/ˈskɛdʒuɫ/",
-        "zh": "n. 時間表 v 安排；預定",
+        "en": "alter",
+        "kk": "/ˈɔːltər/",
+        "zh": "v. 改變;修改",
         "unit": 11,
-        "example": "they need a clear schedule of fixtures and fittings",
-        "exampleZh": "他們需要一個明確的固定裝置和配件時間表"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20172,
-        "en": "securities",
+        "en": "alternate",
         "kk": "",
-        "zh": "n. 證券",
-        "unit": 11
+        "zh": "a. 交替的;輪流 的n. 代理人;代替者",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20173,
-        "en": "shipment",
-        "kk": "",
-        "zh": "n. 運輸；運送",
+        "en": "alternative",
+        "kk": "/ɔːlˈtɜːrnətɪv/",
+        "zh": "a. 替代的;供 選擇的n. 選擇;二擇一",
         "unit": 11,
-        "example": "logs waiting for shipment",
-        "exampleZh": "等待發貨的日誌"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20174,
-        "en": "shortage",
-        "kk": "/ˈʃɔɹtədʒ/",
-        "zh": "n. 缺少；不足",
+        "en": "altogether",
+        "kk": "/ˌɔːltəˈɡeðər/",
+        "zh": "ad. 完全;全然",
         "unit": 11,
-        "example": "a shortage of hard cash",
-        "exampleZh": "缺乏現金"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20175,
-        "en": "specification",
-        "kk": "",
-        "zh": "n. 規格",
+        "en": "amateur",
+        "kk": "/ˈæmətər/",
+        "zh": "a. 業餘的;外行 的n. 業餘;外行",
         "unit": 11,
-        "example": "there was no clear specification of objectives",
-        "exampleZh": "沒有明確的目標"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20176,
-        "en": "sponsor",
-        "kk": "/ˈspɑnsɝ/",
-        "zh": "n. 贊助商",
+        "en": "amaze",
+        "kk": "/əˈmeɪz/",
+        "zh": "v. 使驚奇;使驚愕",
         "unit": 11,
-        "example": "a leading sponsor of the bill",
-        "exampleZh": "該法案的主要發起人"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20177,
-        "en": "staff",
-        "kk": "/ˈstæf/",
-        "zh": "n. 職員；工作人員",
+        "en": "ambiguous",
+        "kk": "",
+        "zh": "a. 含糊不清 的;引起歧義的",
         "unit": 11,
-        "example": "hospital staff were not to blame",
-        "exampleZh": "醫院工作人員不應該受到責備"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20178,
-        "en": "subscription",
-        "kk": "/səbsˈkɹɪpʃən/",
-        "zh": "n. 訂閱；同意",
+        "en": "ambition",
+        "kk": "/æmˈbɪʃn/",
+        "zh": "n. 雄心;抱負",
         "unit": 11,
-        "example": "take out a one-year subscription",
-        "exampleZh": "訂閱一年期"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20179,
-        "en": "subsidiary",
+        "en": "amend",
         "kk": "",
-        "zh": "a. 輔助的；附帶的",
+        "zh": "v. 修訂;修改",
         "unit": 11,
-        "example": "the firm's Spanish subsidiary",
-        "exampleZh": "該公司的西班牙子公司"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20180,
-        "en": "supervisor",
-        "kk": "/ˈsupɝˌvaɪzɝ/",
-        "zh": "n. 管理人；指導者",
+        "en": "amendment",
+        "kk": "",
+        "zh": "n. 改正;修 正;修正案",
         "unit": 11,
-        "example": "Tom is a supervisor.",
-        "exampleZh": "湯姆是一名主管。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20181,
-        "en": "supplier",
+        "en": "amid",
         "kk": "",
-        "zh": "n. 供應者",
+        "zh": "prep. 在⋯之間;被⋯ 包圍",
         "unit": 11,
-        "example": "every major energy supplier upped their prices",
-        "exampleZh": "每個主要能源供應商都提高了價格"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20182,
-        "en": "surplus",
-        "kk": "/ˈsɝpɫəs/",
-        "zh": "n. 剩餘物；順差a 過剩的；剩餘的",
+        "en": "among",
+        "kk": "/əˈmʌŋ/",
+        "zh": "prep. 在⋯之中; 在⋯中間",
         "unit": 11,
-        "example": "a trade surplus of $1.4 billion",
-        "exampleZh": "貿易順差14億美元"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20183,
-        "en": "tentative",
-        "kk": "/ˈtɛnətɪv/",
-        "zh": "a. 試驗性的；嘗試的",
+        "en": "amount",
+        "kk": "/əˈmaʊnt/",
+        "zh": "n. 總數;總額v. 共計;相當於",
         "unit": 11,
-        "example": "he eventually tried a few tentative steps round his hospital room",
-        "exampleZh": "他最終在病房周圍試探性地走了幾步"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20184,
-        "en": "terminate",
-        "kk": "/ˈtɝməˌneɪt/",
-        "zh": "v. 終止",
+        "en": "amplify",
+        "kk": "",
+        "zh": "v. 增強;擴大",
         "unit": 11,
-        "example": "he was advised to terminate the contract",
-        "exampleZh": "他被建議終止合約"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20185,
-        "en": "transaction",
-        "kk": "/tɹænˈzækʃən/",
-        "zh": "n. 交易；執行",
+        "en": "amuse",
+        "kk": "",
+        "zh": "v. 使歡樂;使發笑",
         "unit": 11,
-        "example": "in an ordinary commercial transaction a delivery date is essential",
-        "exampleZh": "在普通商業交易中，交貨日期至關重要"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20186,
-        "en": "transfer",
-        "kk": "/ˈtɹænsfɝ/",
-        "zh": "v. 轉換；調動",
+        "en": "analyze",
+        "kk": "",
+        "zh": "v. 分析",
         "unit": 11,
-        "example": "the transfer of assets from wealthy individuals to family members",
-        "exampleZh": "將資產從富人轉移到家庭成員"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20187,
-        "en": "transit",
-        "kk": "/ˈtɹænzɪt/",
-        "zh": "n. 運輸；過境",
+        "en": "angle",
+        "kk": "/ˈæŋɡl/",
+        "zh": "n. 角;角度",
         "unit": 11,
-        "example": "a painting was damaged in transit",
-        "exampleZh": "一幅畫在運輸途中損壞"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20188,
-        "en": "turnover",
+        "en": "animate",
         "kk": "",
-        "zh": "n. 翻倒；翻轉",
+        "zh": "v. 賦予生命;使 有生命",
         "unit": 11,
-        "example": "a turnover approaching $4 million",
-        "exampleZh": "營業額接近 400 萬美元"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20189,
-        "en": "upgrade",
-        "kk": "/ˈəpˈɡɹeɪd/",
-        "zh": "v. 提高；提升n 升級；上坡",
+        "en": "anniversary",
+        "kk": "/ˌænɪˈvɜːrsəri/",
+        "zh": "n. 週年紀念a. 週年的",
         "unit": 11,
-        "example": "check that the upgrade is installed and performing correctly",
-        "exampleZh": "檢查升級是否已安裝並正常運作"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20190,
-        "en": "utility",
-        "kk": "/juˈtɪɫəti/",
-        "zh": "n. 公用事業",
+        "en": "announce",
+        "kk": "/əˈnaʊns/",
+        "zh": "v. 宣布;發布",
         "unit": 11,
-        "example": "a handy utility for converting one graphics file type to another",
-        "exampleZh": "用於將一種圖形檔案類型轉換為另一種圖形檔案類型的便捷實用程式"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20191,
-        "en": "vacancy",
-        "kk": "/ˈveɪkənsi/",
-        "zh": "n. 空白；空缺",
+        "en": "announcement",
+        "kk": "",
+        "zh": "n. 通告; 布告",
         "unit": 11,
-        "example": "a vacancy for a shorthand typist",
-        "exampleZh": "速記打字員職缺"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20192,
-        "en": "vendor",
-        "kk": "/ˈvɛndɝ/",
-        "zh": "n. 小販；攤販",
+        "en": "annual",
+        "kk": "/ˈænjuəl/",
+        "zh": "a. 一年一次的;每 年的",
         "unit": 11,
-        "example": "an Italian ice cream vendor",
-        "exampleZh": "義大利冰淇淋攤販"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20193,
-        "en": "venue",
+        "en": "annually",
         "kk": "",
-        "zh": "n. 場地",
+        "zh": "ad. 每年;每年 一次",
         "unit": 11,
-        "example": "the river could soon be the venue for a powerboat world championship event",
-        "exampleZh": "這條河很快就會成為摩托艇世界錦標賽的舉辦地"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20194,
-        "en": "verify",
+        "en": "anonymous",
         "kk": "",
-        "zh": "v. 證明；證實",
+        "zh": "a. 匿名的; 姓氏不明的",
         "unit": 11,
-        "example": "“Can you verify that the guns are licensed?”",
-        "exampleZh": "“你能證實這些槍有許可證嗎？”"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20195,
-        "en": "warehouse",
-        "kk": "/ˈwɛɹˌhaʊs/",
-        "zh": "n. 倉庫 庫房",
+        "en": "another",
+        "kk": "/əˈnʌðər/",
+        "zh": "a. 又一;再一",
         "unit": 11,
-        "example": "a discount warehouse",
-        "exampleZh": "折扣倉庫"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20196,
-        "en": "warranty",
-        "kk": "/ˈwɔɹənti/",
-        "zh": "n. 保證；擔保",
+        "en": "answer",
+        "kk": "/ˈænsər/",
+        "zh": "v. 回答;答覆n. 回答;答覆",
         "unit": 11,
-        "example": "as your machine is under warranty, I suggest getting it checked",
-        "exampleZh": "由於您的機器在保固期內，我建議您檢查一下"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20197,
-        "en": "withdraw",
-        "kk": "/wɪðˈdɹɔ/",
-        "zh": "v. 抽回；拉開；移開",
+        "en": "antibiotic",
+        "kk": "",
+        "zh": "a. 抗生的;抗 菌的n. 抗生素;抗菌素",
         "unit": 11,
-        "example": "Withdraw your remarks!",
-        "exampleZh": "撤回你的言論！"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20198,
-        "en": "workshop",
-        "kk": "/ˈwɝkˌʃɑp/",
-        "zh": "n. 工作坊",
+        "en": "anxiety",
+        "kk": "/æŋˈzaɪəti/",
+        "zh": "n. 焦慮;掛念",
         "unit": 11,
-        "example": "a writers' workshop was held on July 25–27",
-        "exampleZh": "7月25日至27日舉辦了作家研討會"
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20199,
+        "en": "anxious",
+        "kk": "/ˈæŋkʃəs/",
+        "zh": "a. 焦慮的;掛念 的",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20200,
-        "en": "abandon",
-        "kk": "/əˈbændən/",
-        "zh": "v. 拋棄；遺棄",
+        "en": "any",
+        "kk": "/ˈeni/",
+        "zh": "a. 任一;每一prep. 任 何一個;任何人",
         "unit": 11,
-        "example": "she sings and sways with total abandon",
-        "exampleZh": "她完全放縱地唱歌、搖擺"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20201,
-        "en": "abide",
-        "kk": "/əˈbaɪd/",
-        "zh": "v. 忍受；容忍",
+        "en": "apart",
+        "kk": "/əˈpɑːrt/",
+        "zh": "ad. 分開地;有距離 地",
         "unit": 11,
-        "example": "many unskillful Men do abide in our City of London",
-        "exampleZh": "許多不熟練的人確實居住在我們的倫敦金融城"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20202,
-        "en": "abolish",
-        "kk": "/əˈbɑɫɪʃ/",
-        "zh": "v. 廢除；廢止",
+        "en": "apologetic",
+        "kk": "",
+        "zh": "a. 道歉的;認 錯的",
         "unit": 11,
-        "example": "Abolish restaurants.",
-        "exampleZh": "廢除餐廳。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20203,
-        "en": "abroad",
-        "kk": "/əˈbɹɔd/",
-        "zh": "ad. 在國外；到國外",
+        "en": "apology",
+        "kk": "",
+        "zh": "n. 道歉;陪罪",
         "unit": 11,
-        "example": "servicemen returning from abroad",
-        "exampleZh": "從國外回來的軍人"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20204,
-        "en": "abrupt",
-        "kk": "/əˈbɹəpt/",
-        "zh": "a. 突然的；唐突的",
+        "en": "apparent",
+        "kk": "/əˈpærənt/",
+        "zh": "a. 表面的;外 觀的",
         "unit": 11,
-        "example": "our round of golf came to an abrupt end on the 13th hole",
-        "exampleZh": "我們的一高爾夫球在第13洞戛然而止"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20205,
-        "en": "absence",
-        "kk": "/ˈæbsəns/",
-        "zh": "n. 不在，缺席",
+        "en": "apparently",
+        "kk": "",
+        "zh": "ad. 顯然地; 表面上",
         "unit": 11,
-        "example": "she found his total absence of facial expression disconcerting",
-        "exampleZh": "她發現他完全沒有臉部表情，這令人不安"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20206,
-        "en": "absolute",
-        "kk": "/ˈæbsəˌɫut/",
-        "zh": "a. 純粹的；完全的",
+        "en": "appeal",
+        "kk": "/əˈpiːl/",
+        "zh": "v. 呼籲;懇求",
         "unit": 11,
-        "example": "I absolutely agree.",
-        "exampleZh": "我絕對同意。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20207,
-        "en": "absorb",
-        "kk": "/əbˈzɔɹb/",
-        "zh": "v. 吸收；理解",
+        "en": "appear",
+        "kk": "/əˈpɪr/",
+        "zh": "v. 出現;顯露",
         "unit": 11,
-        "example": "Rugs absorb sound.",
-        "exampleZh": "地毯吸收聲音。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20208,
-        "en": "abstract",
-        "kk": "/ˈæbˌstɹækt/",
-        "zh": "a. 抽象的；深奧的 n 摘要，抽象派藝術作品",
+        "en": "appearance",
+        "kk": "/əˈpɪrəns/",
+        "zh": "n. 出現;顯 露",
         "unit": 11,
-        "example": "applications to abstract more water from streams",
-        "exampleZh": "從溪流中提取更多水的應用程式"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20209,
-        "en": "abundant",
-        "kk": "/əˈbəndənt/",
-        "zh": "n. 大量的；充足的",
+        "en": "appetite",
+        "kk": "/ˈæpɪtaɪt/",
+        "zh": "n. 食慾;胃口",
         "unit": 11,
-        "example": "the riverbanks were abundant in wild plants",
-        "exampleZh": "河岸上有豐富的野生植物"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20210,
-        "en": "abuse",
-        "kk": "/əbˈjus/",
-        "zh": "n. 濫用；虐待",
+        "en": "applaud",
+        "kk": "",
+        "zh": "v. 鼓掌歡迎;喝 采",
         "unit": 11,
-        "example": "an abuse of public funds",
-        "exampleZh": "濫用公共資金"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20211,
-        "en": "accelerate",
-        "kk": "/ækˈsɛɫɝˌeɪt/",
-        "zh": "v. 加快；增長",
+        "en": "appliance",
+        "kk": "",
+        "zh": "n. 用具;裝置",
         "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
         "id": 20212,
-        "en": "acceptable",
-        "kk": "/ækˈsɛptəbəɫ/",
-        "zh": "a. 可以接受的；令人滿意的",
+        "en": "applicant",
+        "kk": "",
+        "zh": "n. 申請人",
         "unit": 11,
-        "example": "has tried to find a solution acceptable to everyone",
-        "exampleZh": "試圖找到一個大家都能接受的解決方案"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20213,
-        "en": "acceptance",
-        "kk": "/ækˈsɛptəns/",
-        "zh": "n. 接受；贊同",
+        "en": "apply",
+        "kk": "/əˈplaɪ/",
+        "zh": "v. 申請;請求",
         "unit": 11,
-        "example": "charges involving the acceptance of bribes",
-        "exampleZh": "涉及受賄的指控"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20214,
-        "en": "accessible",
-        "kk": "/ækˈsɛsəbəɫ/",
-        "zh": "a. 可接近的；可進入的",
+        "en": "appoint",
+        "kk": "/əˈpɔɪnt/",
+        "zh": "v. 任命;指派",
         "unit": 11,
-        "example": "he is more accessible than most tycoons",
-        "exampleZh": "他比大多數大亨更容易接近"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20215,
-        "en": "accidental",
-        "kk": "/ˌæksəˈdɛnəɫ/",
-        "zh": "a. 偶然的；意外的",
+        "en": "appraise",
+        "kk": "",
+        "zh": "v. 估計;估量",
         "unit": 11,
-        "example": "a verdict of accidental death",
-        "exampleZh": "意外死亡的判決"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20216,
-        "en": "acclaim",
+        "en": "apprehend",
         "kk": "",
-        "zh": "v. 歡呼；喝采",
+        "zh": "v. 逮捕; 對⋯⋯擔慮",
         "unit": 11,
-        "example": "she has won acclaim for her commitment to democracy",
-        "exampleZh": "她因對民主的承諾而贏得讚譽"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20217,
-        "en": "accommodate",
-        "kk": "/əˈkɑməˌdeɪt/",
-        "zh": "v. 使適應；使相符",
+        "en": "apprentice",
+        "kk": "",
+        "zh": "n. 徒弟;見習 生",
         "unit": 11,
-        "example": "any language must accommodate new concepts",
-        "exampleZh": "任何語言都必須容納新概念"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20218,
-        "en": "accomplish",
-        "kk": "/əˈkɑmpɫɪʃ/",
-        "zh": "v. 完成，實現，達到",
+        "en": "approach",
+        "kk": "/əˈproʊtʃ/",
+        "zh": "v. 接近;靠近",
         "unit": 11,
-        "example": "What was accomplished?",
-        "exampleZh": "完成了什麼？"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20219,
-        "en": "accord",
-        "kk": "/əˈkɔɹd/",
-        "zh": "v. 使一致，調解",
+        "en": "appropriate",
+        "kk": "/əˈproʊpriət/",
+        "zh": "a. 適當的; 恰當的",
         "unit": 11,
-        "example": "the government and the rebels are in accord on one point",
-        "exampleZh": "政府和叛亂分子在某一點上意見一致"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20220,
-        "en": "account",
-        "kk": "/əˈkaʊnt/",
-        "zh": "n. 帳目，帳單 v把⋯⋯視為",
+        "en": "approval",
+        "kk": "",
+        "zh": "n. 批准;認可",
         "unit": 11,
-        "example": "another agency was awarded the account",
-        "exampleZh": "另一個機構獲得了該帳戶"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20221,
-        "en": "accountant",
-        "kk": "/əˈkaʊntənt/",
-        "zh": "n. 會計師；會計人員",
+        "en": "approve",
+        "kk": "/əˈpruːv/",
+        "zh": "v. 同意;贊許",
         "unit": 11,
-        "example": "Accountants love spreadsheets.",
-        "exampleZh": "會計師喜歡電子表格。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20222,
-        "en": "accumulate",
-        "kk": "/əkˈjumjəˌɫeɪt/",
-        "zh": "v. 累積；積聚",
+        "en": "approximate",
+        "kk": "",
+        "zh": "a. 接近的; 大約的v. 接近;近似",
         "unit": 11,
-        "example": "her goal was to accumulate a huge fortune",
-        "exampleZh": "她的目標是累積巨額財富"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20223,
-        "en": "accuracy",
-        "kk": "/ˈækjɝəsi/",
-        "zh": "n. 正確；準確",
+        "en": "apt",
+        "kk": "",
+        "zh": "a. 易於⋯的;有⋯傾 向的",
         "unit": 11,
-        "example": "the accuracy of radiocarbon dating",
-        "exampleZh": "放射性碳定年法的準確性"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20224,
-        "en": "accurate",
-        "kk": "/ˈækjɝət/",
-        "zh": "a. 準確的；精確的",
+        "en": "architect",
+        "kk": "/ˈɑːrkɪtekt/",
+        "zh": "n. 建築師;設計 師",
         "unit": 11,
-        "example": "He needs accurate data.",
-        "exampleZh": "他需要準確的數據。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20225,
-        "en": "accuse",
-        "kk": "/əkˈjuz/",
-        "zh": "v. 控告；譴責",
+        "en": "architecture",
+        "kk": "",
+        "zh": "n. 建築物; 建築學;結構",
         "unit": 11,
-        "example": "He falsely accused me.",
-        "exampleZh": "他誣告我。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20226,
-        "en": "accustom",
-        "kk": "/əˈkəstəm/",
-        "zh": "v. 習慣（於）",
+        "en": "archive",
+        "kk": "",
+        "zh": "v. 把⋯存檔;把⋯ 收集歸檔n. 檔案保管處; 文件;記錄",
         "unit": 11,
-        "example": "they tried to accustom him to their lighthearted ways",
-        "exampleZh": "他們試著讓他習慣他們輕鬆愉快的方式"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20227,
-        "en": "achieve",
-        "kk": "/əˈtʃiv/",
-        "zh": "v. 完成，實現",
+        "en": "area",
+        "kk": "/ˈeriə/",
+        "zh": "n. 地區;區域",
         "unit": 11,
-        "example": "Achieve your dreams.",
-        "exampleZh": "實現你的夢想。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20228,
-        "en": "achievement",
-        "kk": "/əˈtʃivmənt/",
-        "zh": "n. 達成；完成",
+        "en": "arena",
+        "kk": "",
+        "zh": "n. 圓形運動場;比 賽場",
         "unit": 11,
-        "example": "assessing ability in terms of academic achievement",
-        "exampleZh": "根據學業成績評估能力"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20229,
-        "en": "acknowledge",
-        "kk": "/ækˈnɑɫɪdʒ/",
-        "zh": "v. 承認",
+        "en": "argue",
+        "kk": "/ˈɑːrɡjuː/",
+        "zh": "v. 爭論;辯論;主 張",
         "unit": 11,
-        "example": "the art world has begun to acknowledge his genius",
-        "exampleZh": "藝術界開始承認他的天才"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20230,
-        "en": "acquire",
-        "kk": "/əˈkwaɪɝ/",
-        "zh": "v. 取得；獲得",
+        "en": "argument",
+        "kk": "/ˈɑːrɡjumənt/",
+        "zh": "n. 爭執;爭吵",
         "unit": 11,
-        "example": "you must acquire the rudiments of Greek",
-        "exampleZh": "你必須掌握希臘文的基礎知識"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20231,
-        "en": "acquisition",
-        "kk": "/ˌækwəˈzɪʃən/",
-        "zh": "n. 獲得，取得",
+        "en": "arise",
+        "kk": "/əˈraɪz/",
+        "zh": "v. 升起;上升;產 生",
         "unit": 11,
-        "example": "the acquisition of management skills",
-        "exampleZh": "管理技能的獲得"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20232,
-        "en": "activate",
-        "kk": "",
-        "zh": "v. 使活化；使活潑",
+        "en": "around",
+        "kk": "/əˈraʊnd/",
+        "zh": "ad. 到處;周圍prep. 圍繞;在⋯⋯附近",
         "unit": 11,
-        "example": "fumes from cooking are enough to activate the alarm",
-        "exampleZh": "烹飪產生的煙霧足以啟動警報"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20233,
-        "en": "active",
-        "kk": "/ˈæktɪv/",
-        "zh": "a. 活躍的；活潑的；積極的",
+        "en": "arouse",
+        "kk": "",
+        "zh": "v. 喚起;激動; 使奮發",
         "unit": 11,
-        "example": "I needed to change my lifestyle and become more active",
-        "exampleZh": "我需要改變生活方式並變得更加活躍"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20234,
-        "en": "actual",
-        "kk": "/ˈækʃəɫ/",
-        "zh": "a. 實際的；事實上的",
+        "en": "arrange",
+        "kk": "/əˈreɪndʒ/",
+        "zh": "v. 整理;安排; 籌備",
         "unit": 11,
-        "example": "the book could be condensed into half the space, but what of the actual content?",
-        "exampleZh": "書本來可以壓縮到一半的空間，但實際內容呢？"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20235,
-        "en": "adapt",
-        "kk": "/əˈdæpt/",
-        "zh": "v. 使適應，使適合",
+        "en": "arrest",
+        "kk": "/əˈrest/",
+        "zh": "v. 逮捕;拘留",
         "unit": 11,
-        "example": "a large organization can be slow to adapt to change",
-        "exampleZh": "大型組織適應變化的速度可能很慢"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20236,
-        "en": "addict",
-        "kk": "/ˈæˌdɪkt/",
-        "zh": "v. 使沉溺；使醉心",
+        "en": "arrival",
+        "kk": "",
+        "zh": "v. 到達;到來",
         "unit": 11,
-        "example": "a former heroin addict",
-        "exampleZh": "前海洛因癮君子"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20237,
-        "en": "addition",
-        "kk": "/əˈdɪʃən/",
-        "zh": "n. 加；附加",
+        "en": "arrive",
+        "kk": "/əˈraɪv/",
+        "zh": "v. 到達;到來",
         "unit": 11,
-        "example": "you will find the coat a useful addition to your wardrobe",
-        "exampleZh": "你會發現這件外套對你的衣櫃來說是一個有用的補充"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20238,
-        "en": "additional",
-        "kk": "/əˈdɪʃənəɫ/",
-        "zh": "adj. 額外的",
+        "en": "articulate",
+        "kk": "",
+        "zh": "v. 清楚地講話; 清晰地發音;明確有力地 表達",
         "unit": 11,
-        "example": "we require additional information",
-        "exampleZh": "我們需要更多信息"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20239,
-        "en": "address",
-        "kk": "/ˈæˌdɹɛs/",
-        "zh": "n. 住址；地址 v向⋯⋯致詞；向⋯⋯發表演說",
+        "en": "artificial",
+        "kk": "/ˌɑːrtɪˈfɪʃl/",
+        "zh": "a. 人工的;人造 的",
         "unit": 11,
-        "example": "ensure that your weight is evenly spread when you address the ball",
-        "exampleZh": "確保擊球時體重平均分佈"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20240,
-        "en": "adequate",
-        "kk": "/ˈædəˌkweɪt/",
-        "zh": "a. 足夠的；適當的",
+        "en": "ascend",
+        "kk": "",
+        "zh": "v. 登高;上升",
         "unit": 11,
-        "example": "this office is perfectly adequate for my needs",
-        "exampleZh": "這個辦公室完全可以滿足我的需要"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20241,
-        "en": "adhere",
+        "en": "assemble",
         "kk": "",
-        "zh": "v. 黏附；遵守；堅持",
+        "zh": "v. 集合;召集",
         "unit": 11,
-        "example": "the people adhere to the Muslim religion",
-        "exampleZh": "人民信奉穆斯林宗教"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20242,
-        "en": "adjacent",
+        "en": "assert",
         "kk": "",
-        "zh": "adj. 鄰近的",
+        "zh": "v. 斷言;聲稱",
         "unit": 11,
-        "example": "adjacent rooms",
-        "exampleZh": "相鄰的房間"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20243,
-        "en": "adjust",
-        "kk": "/əˈdʒəst/",
-        "zh": "v. 調整；校正",
+        "en": "assess",
+        "kk": "/əˈses/",
+        "zh": "v. 對⋯⋯進行估 價;評價",
         "unit": 11,
-        "example": "she must be allowed to grieve and to adjust in her own way",
-        "exampleZh": "必須允許她悲傷並以自己的方式進行調整"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20244,
-        "en": "administer",
-        "kk": "/ədˈmɪnəstɝ/",
-        "zh": "v. 管理",
+        "en": "assign",
+        "kk": "/əˈsaɪn/",
+        "zh": "v. 分配;分派",
         "unit": 11,
-        "example": "the chief justice will administer the oath of office",
-        "exampleZh": "首席大法官將宣誓就職"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20245,
-        "en": "administration",
-        "kk": "/ædˌmɪnɪˈstɹeɪʃən/",
-        "zh": "v. 管理；經營；行政",
+        "en": "assignment",
+        "kk": "",
+        "zh": "n. 任務;工 作",
         "unit": 11,
-        "example": "the inhabitants of the island voted to remain under French administration",
-        "exampleZh": "該島居民投票決定繼續由法國管理"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20246,
-        "en": "administrative",
-        "kk": "/ədˈmɪnəˌstɹeɪtɪv/",
-        "zh": "adj. 行政的",
+        "en": "assimilate",
+        "kk": "",
+        "zh": "v. 被吸收;被 消化",
         "unit": 11,
-        "example": "administrative staff",
-        "exampleZh": "行政人員"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20247,
-        "en": "admire",
-        "kk": "/ædˈmaɪɹ/",
-        "zh": "v. 欽佩；欣賞",
+        "en": "assist",
+        "kk": "/əˈsɪst/",
+        "zh": "v. 幫助;協助",
         "unit": 11,
-        "example": "Yanni admires Skura.",
-        "exampleZh": "雅尼欣賞斯庫拉。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20248,
-        "en": "admission",
-        "kk": "/ædˈmɪʃən/",
-        "zh": "n. 入場費；承認",
+        "en": "assistance",
+        "kk": "",
+        "zh": "n. 援助;幫助",
         "unit": 11,
-        "example": "the country's admission to the UN",
-        "exampleZh": "該國加入聯合國"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20249,
-        "en": "admit",
-        "kk": "/ədˈmɪt/",
-        "zh": "v. 承認；准許進入",
+        "en": "associate",
+        "kk": "/əˈsoʊʃieɪt/",
+        "zh": "n. 夥伴;同事a. 夥伴的;共事的",
         "unit": 11,
-        "example": "the need to inform him was too urgent to admit of further delay",
-        "exampleZh": "通知他的必要性太緊急，不能再拖延了"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20250,
-        "en": "adopt",
-        "kk": "/əˈdɑpt/",
-        "zh": "v. 採取；採納",
+        "en": "association",
+        "kk": "/əˌsoʊʃiˈeɪʃn/",
+        "zh": "n. 協會;公 會;聯盟",
         "unit": 11,
-        "example": "the committee voted 5–1 to adopt the proposal",
-        "exampleZh": "委員會以 5 比 1 的投票結果通過了該提案"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20251,
-        "en": "advance",
-        "kk": "/ədˈvæns/",
-        "zh": "v. 前進；進展 n前進；發展 a 先行的；預先的",
+        "en": "assume",
+        "kk": "/əˈsuːm/",
+        "zh": "v. 以為;假定為",
         "unit": 11,
-        "example": "the author was paid a $250,000 advance",
-        "exampleZh": "作者預付了 25 萬美元"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20252,
-        "en": "advanced",
-        "kk": "/ədˈvænst/",
-        "zh": "a. 在前面的；先進的；開明的",
+        "en": "assurance",
+        "kk": "",
+        "zh": "n. 保證",
         "unit": 11,
-        "example": "his advanced views made him unpopular",
-        "exampleZh": "他的先進觀點使他不受歡迎"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20253,
-        "en": "advantage",
-        "kk": "/ædˈvæntɪdʒ/",
-        "zh": "n. 優點；利益v 有利於；使處於優勢",
+        "en": "assure",
+        "kk": "/əˈʃʊr/",
+        "zh": "v. 向⋯⋯保證;擔 保",
         "unit": 11,
-        "example": "Tom has the advantage.",
-        "exampleZh": "湯姆有優勢。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20254,
-        "en": "advantageous",
-        "kk": "",
-        "zh": "adj. 有利的",
+        "en": "astonish",
+        "kk": "/əˈstɑːnɪʃ/",
+        "zh": "v. 使吃驚;使驚 訝",
         "unit": 11,
-        "example": "the scheme is advantageous to your company",
-        "exampleZh": "該計劃對您的公司有利"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20255,
-        "en": "advent",
+        "en": "at",
         "kk": "",
-        "zh": "n. 出現",
+        "zh": "prep. 在⋯地點;在⋯時 刻",
         "unit": 11,
-        "example": "the advent of television",
-        "exampleZh": "電視的出現"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20256,
-        "en": "adventure",
-        "kk": "/ædˈvɛntʃɝ/",
-        "zh": "n. 冒險; 冒險精神",
+        "en": "ATM",
+        "kk": "",
+        "zh": "n. 自動存提款機 (= Automatic Teller Machine)",
         "unit": 11,
-        "example": "she traveled the world in search of adventure",
-        "exampleZh": "她環遊世界尋找冒險"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20257,
-        "en": "adverse",
-        "kk": "",
-        "zh": "a. 反面的；不利的",
+        "en": "attach",
+        "kk": "/əˈtætʃ/",
+        "zh": "v. 附屬;附加",
         "unit": 11,
-        "example": "taxes are having an adverse effect on production",
-        "exampleZh": "稅收對生產產生不利影響"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20258,
-        "en": "advertise",
-        "kk": "/ˈædvɝˌtaɪz/",
-        "zh": "v. 廣告；公布",
+        "en": "attachment",
+        "kk": "",
+        "zh": "n. 附屬物; 附件",
         "unit": 11,
-        "example": "Meryl coughed briefly to advertise her presence",
-        "exampleZh": "梅莉爾短暫地咳嗽了一下以表明她的存在"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20259,
-        "en": "advertisement",
-        "kk": "/ˌædvɝˈtaɪzmənt/",
-        "zh": "n. 廣告；宣傳",
+        "en": "attain",
+        "kk": "",
+        "zh": "v. 達到;獲得n. 成 就,造詣",
         "unit": 11,
-        "example": "we received only two replies to our advertisement",
-        "exampleZh": "我們只收到了兩份對廣告的回复"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20260,
-        "en": "advice",
-        "kk": "/ædˈvaɪs/",
-        "zh": "n. 勸告；忠告",
+        "en": "attempt",
+        "kk": "/əˈtempt/",
+        "zh": "n. 企圖;嘗試v. 試圖;企圖",
         "unit": 11,
-        "example": "Never give advice.",
-        "exampleZh": "永遠不要給出建議。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20261,
-        "en": "advise",
-        "kk": "/ædˈvaɪz/",
-        "zh": "v. 勸告；忠告",
+        "en": "attend",
+        "kk": "/əˈtend/",
+        "zh": "v. 出席;參加",
         "unit": 11,
-        "example": "we advise against sending cash by mail",
-        "exampleZh": "我們建議不要以郵寄方式寄送現金"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20262,
-        "en": "adviser",
-        "kk": "/ædˈvaɪzɝ/",
-        "zh": "n. 顧問；勸告者",
+        "en": "attendance",
+        "kk": "",
+        "zh": "n. 到場;出 席",
         "unit": 11,
-        "example": "he started as a legal adviser to the company",
-        "exampleZh": "他最初擔任該公司的法律顧問"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20263,
-        "en": "advocate",
-        "kk": "/ˈædvəˌkeɪt/",
-        "zh": "n. 提倡者；辯護者；律師",
+        "en": "attention",
+        "kk": "/əˈtenʃn/",
+        "zh": "n. 注意力;專心",
         "unit": 11,
-        "example": "Mennad advocates for that.",
-        "exampleZh": "門納德主張這一點。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20264,
-        "en": "affair",
-        "kk": "/əˈfɛɹ/",
-        "zh": "n. 事件；事務",
+        "en": "attest",
+        "kk": "",
+        "zh": "v. 證實;證明",
         "unit": 11,
-        "example": "I wanted the funeral to be a family affair",
-        "exampleZh": "我希望葬禮成為家庭事務"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20265,
-        "en": "affect",
-        "kk": "/əˈfɛkt/",
-        "zh": "v. 影響；對⋯⋯發生作用",
+        "en": "attorney",
+        "kk": "",
+        "zh": "n. 律師",
         "unit": 11,
-        "example": "the dampness began to affect my health",
-        "exampleZh": "濕氣開始影響我的健康"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20266,
-        "en": "affiliate",
-        "kk": "",
-        "zh": "v. 附屬",
+        "en": "attract",
+        "kk": "/əˈtrækt/",
+        "zh": "v. 吸引;引起",
         "unit": 11,
-        "example": "the membership of the National Writers Union voted to affiliate with the United Auto Workers",
-        "exampleZh": "全國作家聯盟的成員投票加入汽車工人聯合會"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20267,
-        "en": "affirm",
-        "kk": "/əˈfɝm/",
-        "zh": "v. 確認",
+        "en": "attribute",
+        "kk": "",
+        "zh": "v. 把⋯歸因於; 把⋯歸咎於",
         "unit": 11,
-        "example": "there are five common ways parents fail to affirm their children",
-        "exampleZh": "父母未能肯定孩子的常見方式有五種"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20268,
-        "en": "afford",
-        "kk": "/əˈfɔɹd/",
-        "zh": "v. 負擔得起",
+        "en": "auction",
+        "kk": "/ˈɔːkʃn/",
+        "zh": "n. 拍賣v. 拍賣",
         "unit": 11,
-        "example": "it was taking up more time than he could afford",
-        "exampleZh": "這花費的時間超出了他的承受能力"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20269,
-        "en": "affordable",
-        "kk": "",
-        "zh": "adj. 負擔得起的",
+        "en": "audience",
+        "kk": "/ˈɔːdiəns/",
+        "zh": "n. 聽眾;觀眾",
         "unit": 11,
-        "example": "affordable housing",
-        "exampleZh": "經濟適用房"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20270,
-        "en": "agency",
-        "kk": "/ˈeɪdʒənsi/",
-        "zh": "n. 經銷處；代理機構",
+        "en": "audit",
+        "kk": "",
+        "zh": "v. 審計;查帳n. 審 計;查帳",
         "unit": 11,
-        "example": "an advertising agency",
-        "exampleZh": "一家廣告公司"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20271,
-        "en": "agenda",
-        "kk": "/əˈdʒɛndə/",
-        "zh": "n. 待議諸事項；議程",
+        "en": "auditory",
+        "kk": "",
+        "zh": "a. 耳朵的;聽覺 的n. 聽眾;禮堂",
         "unit": 11,
-        "example": "he vowed to put jobs at the top of his agenda",
-        "exampleZh": "他發誓要把就業放在第一位"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20272,
-        "en": "agent",
-        "kk": "/ˈeɪdʒənt/",
-        "zh": "n. 代理商；仲介人",
+        "en": "author",
+        "kk": "/ˈɔːθər/",
+        "zh": "n. 作者;作家",
         "unit": 11,
-        "example": "his agent was able to negotiate a long-term contract",
-        "exampleZh": "他的經紀人能夠談判一份長期合約"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20273,
-        "en": "aggravate",
-        "kk": "",
-        "zh": "v. 惡化",
+        "en": "automatic",
+        "kk": "/ˌɔːtəˈmætɪk/",
+        "zh": "a. 自動的;習 慣性的",
         "unit": 11,
-        "example": "military action would only aggravate the situation",
-        "exampleZh": "軍事行動只會加劇局勢"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20274,
-        "en": "aggressive",
-        "kk": "/əˈɡɹɛsɪv/",
-        "zh": "a. 侵略的；好鬥的",
+        "en": "available",
+        "kk": "/əˈveɪləbl/",
+        "zh": "a. 可用的;可 利用的",
         "unit": 11,
-        "example": "we needed more growth to pursue our aggressive acquisition strategy",
-        "exampleZh": "我們需要更多的成長來實施我們積極的收購策略"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20275,
-        "en": "agreement",
-        "kk": "/əˈɡɹimənt/",
-        "zh": "n. 同意；協定",
+        "en": "avenue",
+        "kk": "/ˈævənuː/",
+        "zh": "n. 大街;大道",
         "unit": 11,
-        "example": "the two officers nodded in agreement",
-        "exampleZh": "兩位軍官點頭同意"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20276,
-        "en": "agriculture",
-        "kk": "/ˈæɡɹɪˌkəɫtʃɝ/",
-        "zh": "n. 農業",
+        "en": "average",
+        "kk": "/ˈævərɪdʒ/",
+        "zh": "n. 平均;中等a. 普通的;中等的v. 平均分 配;平均達到",
         "unit": 11,
-        "example": "fungicide resistance is a serious problem facing modern agriculture",
-        "exampleZh": "殺菌劑抗性是現代農業面臨的嚴重問題"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20277,
-        "en": "aid",
-        "kk": "/ˈeɪd/",
-        "zh": "v. 幫助；救助 n 幫助；救助",
+        "en": "avert",
+        "kk": "",
+        "zh": "v. 避開;移開",
         "unit": 11,
-        "example": "700,000 tons of food aid",
-        "exampleZh": "70萬噸糧食援助"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20278,
-        "en": "airline",
-        "kk": "/ˈɛɹˌɫaɪn/",
-        "zh": "n. 航線；航空公司",
+        "en": "avoid",
+        "kk": "/əˈvɔɪd/",
+        "zh": "v. 避開;躲開",
         "unit": 11,
-        "example": "an international airline",
-        "exampleZh": "一家國際航空公司"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20279,
-        "en": "aisle",
-        "kk": "/ˈaɪəɫ/",
-        "zh": "n. 通道；走道",
+        "en": "avoidance",
+        "kk": "",
+        "zh": "n. 逃避;迴避",
         "unit": 11,
-        "example": "the tiled roof over the south aisle",
-        "exampleZh": "南過道上的瓦屋頂"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20280,
-        "en": "alert",
-        "kk": "/əˈɫɝt/",
-        "zh": "v. 使警覺；使注意 n警戒；警報 a 警覺的；警惕的",
+        "en": "await",
+        "kk": "",
+        "zh": "v. 等候;期待",
         "unit": 11,
-        "example": "an alert sounded and all the fighters took off",
-        "exampleZh": "警報響起，所有戰士起飛"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20281,
-        "en": "alienate",
-        "kk": "/ˈeɪɫjəˌneɪt/",
-        "zh": "v. 使疏遠",
+        "en": "awareness",
+        "kk": "",
+        "zh": "n. 察覺;覺 悟",
         "unit": 11,
-        "example": "the association does not wish to alienate its members",
-        "exampleZh": "協會不希望疏遠其成員"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20282,
-        "en": "align",
+        "en": "bachelor",
         "kk": "",
-        "zh": "v. 排成直線；使結盟",
+        "zh": "n. 單身漢;學士",
         "unit": 11,
-        "example": "the pattern of the border at the seam should align perfectly",
-        "exampleZh": "接縫處的邊框圖案應完美對齊"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20283,
-        "en": "alike",
-        "kk": "/əˈɫaɪk/",
-        "zh": "a. 相同的；相像的ad 一樣地；相似地",
+        "en": "back",
+        "kk": "/bæk/",
+        "zh": "n. 背部;後部v. 倒 退;後退ad. 向後;後退 地a. 後面的;後部的",
         "unit": 11,
-        "example": "the brothers were very much alike",
-        "exampleZh": "兄弟倆非常相似"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20284,
-        "en": "allege",
+        "en": "backache",
         "kk": "",
-        "zh": "v. 斷言；宣稱",
+        "zh": "n. 背痛;腰痛",
         "unit": 11,
-        "example": "What did Tom allege?",
-        "exampleZh": "湯姆指控了什麼？"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20285,
-        "en": "alleviate",
+        "en": "backbone",
         "kk": "",
-        "zh": "v. 減輕",
+        "zh": "n. 脊骨;脊柱",
         "unit": 11,
-        "example": "measures to alleviate unemployment",
-        "exampleZh": "緩解失業的措施"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20286,
-        "en": "allocate",
-        "kk": "/ˈæɫəˌkeɪt/",
-        "zh": "v. 分派；分配",
+        "en": "backbreaking",
+        "kk": "",
+        "zh": "a. 非常辛 勞的",
         "unit": 11,
-        "example": "We cannot allocate money for it.",
-        "exampleZh": "我們無法為此分配資金。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20287,
-        "en": "allow",
-        "kk": "/əˈɫaʊ/",
-        "zh": "v. 允許；准許",
+        "en": "backfire",
+        "kk": "",
+        "zh": "n. 引擎的逆火v. 事與願違",
         "unit": 11,
-        "example": "a plan to allow Sunday shopping",
-        "exampleZh": "允許週日購物的計劃"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20288,
-        "en": "allowance",
-        "kk": "/əˈɫaʊəns/",
-        "zh": "n. 津貼；補貼",
+        "en": "background",
+        "kk": "/ˈbækɡraʊnd/",
+        "zh": "n. 背景;遠 因",
         "unit": 11,
-        "example": "a seventy-five-pound baggage allowance",
-        "exampleZh": "七十五磅的行李限額"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20289,
-        "en": "allude",
+        "en": "backlash",
         "kk": "",
-        "zh": "v. 暗示",
+        "zh": "n. 反衝;強烈 反對;後座力",
         "unit": 11,
-        "example": "we will allude briefly to the main points",
-        "exampleZh": "我們將簡要提及重點"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20290,
-        "en": "ally",
-        "kk": "/ˈæɫaɪ/",
-        "zh": "n. 盟友",
+        "en": "backlog",
+        "kk": "",
+        "zh": "n. 存貨;儲備金",
         "unit": 11,
-        "example": "he was forced to dismiss his closest political ally",
-        "exampleZh": "他被迫解雇了他最親密的政治盟友"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20291,
-        "en": "alter",
-        "kk": "/ˈɔɫtɝ/",
-        "zh": "v. 改變；修改",
+        "en": "backpack",
+        "kk": "",
+        "zh": "n. 登山、遠足 用的背包",
         "unit": 11,
-        "example": "Eliot was persuaded to alter the passage",
-        "exampleZh": "艾略特被說服修改了這段話"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20292,
-        "en": "alternate",
-        "kk": "/ˈɔɫtɝˌneɪt/",
-        "zh": "a. 交替的；輪流的 n 代理人；代替者",
+        "en": "back-to-back",
+        "kk": "",
+        "zh": "ph. 背靠背",
         "unit": 11,
-        "example": "bouts of depression alternate with periods of elation",
-        "exampleZh": "一陣陣抑鬱與一陣興高采烈交替出現"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20293,
-        "en": "alternative",
-        "kk": "/ɔɫˈtɝnətɪv/",
-        "zh": "a. 替代的；供選擇的 n 選擇；二擇一",
+        "en": "backup",
+        "kk": "",
+        "zh": "n. 備用;備用物a. 備用的v. 備份",
         "unit": 11,
-        "example": "she had no alternative but to break the law",
-        "exampleZh": "她別無選擇，只能違法"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20294,
-        "en": "altitude",
-        "kk": "/ˈæɫtəˌtud/",
-        "zh": "n. 高度",
+        "en": "backward",
+        "kk": "/ˈbækwərd/",
+        "zh": "a. 向後的;反 向的ad. 向後;倒",
         "unit": 11,
-        "example": "the mechanism can freeze at altitude",
-        "exampleZh": "該機構可能會在高空凍結"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20295,
-        "en": "amateur",
-        "kk": "/ˈæməˌtɝ/",
-        "zh": "a. 業餘的；外行的 n 業餘；外行",
+        "en": "backyard",
+        "kk": "",
+        "zh": "n. 後院",
         "unit": 11,
-        "example": "Are you an amateur?",
-        "exampleZh": "你是業餘愛好者嗎？"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20296,
-        "en": "amaze",
-        "kk": "/əˈmeɪz/",
-        "zh": "v. 使驚奇；使驚愕",
+        "en": "bacteria",
+        "kk": "/bækˈtɪriə/",
+        "zh": "n. 細菌",
         "unit": 11,
-        "example": "People are amazed.",
-        "exampleZh": "人們很驚訝。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20297,
-        "en": "ambassador",
-        "kk": "/æmˈbæsədɝ/",
-        "zh": "n. 大使",
+        "en": "bad",
+        "kk": "/bæd/",
+        "zh": "a. 壞的;不好的ad. 很;非常",
         "unit": 11,
-        "example": "Ziri is an ambassador.",
-        "exampleZh": "齊裡是一名大使。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20298,
-        "en": "ambiguity",
-        "kk": "/ˌæmbɪɡˈjuəti/",
-        "zh": "n. 模稜兩可",
+        "en": "badge",
+        "kk": "",
+        "zh": "n. 徽章;紀念章",
         "unit": 11,
-        "example": "we can detect no ambiguity in this section of the Act",
-        "exampleZh": "我們在該法案的這一部分中沒有發現任何含糊之處"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20299,
-        "en": "ambiguous",
-        "kk": "/æmˈbɪɡjuəs/",
-        "zh": "a. 含糊不清的；引起歧義的",
+        "en": "badly",
+        "kk": "/ˈbædli/",
+        "zh": "ad. 壞地;拙劣地",
         "unit": 11,
-        "example": "ambiguous phrases",
-        "exampleZh": "歧義短語"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20300,
-        "en": "ambition",
-        "kk": "/æmˈbɪʃən/",
-        "zh": "n. 雄心；抱負",
+        "en": "bad-tempered",
+        "kk": "",
+        "zh": "a. 情緒惡 劣的;易怒的",
         "unit": 11,
-        "example": "Tom had no ambition.",
-        "exampleZh": "湯姆沒有野心。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20301,
-        "en": "ambitious",
-        "kk": "/æmˈbɪʃəs/",
-        "zh": "adj. 有野心的",
+        "en": "baffle",
+        "kk": "",
+        "zh": "v. 使受挫折;阻撓n. 困惑;障礙",
         "unit": 11,
-        "example": "Are you ambitious?",
-        "exampleZh": "你有野心嗎？"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20302,
-        "en": "amend",
+        "en": "baffling",
         "kk": "",
-        "zh": "v. 修訂；修改",
+        "zh": "a. 令人困惑的; 難對付的",
         "unit": 11,
-        "example": "did she amend her original will later on?",
-        "exampleZh": "她後來有修改原來的遺囑嗎？"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20303,
-        "en": "amendment",
-        "kk": "",
-        "zh": "n. 改正；修正；修正案",
+        "en": "bag",
+        "kk": "/bæɡ/",
+        "zh": "n. 袋;提袋",
         "unit": 11,
-        "example": "an amendment to existing bail laws",
-        "exampleZh": "現行保釋法的修正案"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20304,
-        "en": "amount",
-        "kk": "/əˈmaʊnt/",
-        "zh": "n. 總數；總額 v共計；相當於",
+        "en": "baggage",
+        "kk": "/ˈbæɡɪdʒ/",
+        "zh": "n. 行李",
         "unit": 11,
-        "example": "they have spent a colossal amount rebuilding the stadium",
-        "exampleZh": "他們花費巨資重建體育場"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20305,
-        "en": "ample",
-        "kk": "/ˈæmpəɫ/",
-        "zh": "adj. 充足的",
+        "en": "bail",
+        "kk": "",
+        "zh": "v. 保釋n. 保釋;保釋 金",
         "unit": 11,
-        "example": "an ample supply of consumer goods",
-        "exampleZh": "消費品供應充足"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20306,
-        "en": "amplify",
-        "kk": "/ˈæmpɫəˌfaɪ/",
-        "zh": "v. 增強；擴大",
+        "en": "bailout",
+        "kk": "",
+        "zh": "n. 跳傘;緊急(財 政)援助",
         "unit": 11,
-        "example": "Try to amplify your opportunity.",
-        "exampleZh": "試著擴大你的機會。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20307,
-        "en": "amuse",
-        "kk": "/əmˈjuz/",
-        "zh": "v. 使歡樂；使發笑",
+        "en": "bait",
+        "kk": "",
+        "zh": "n. 餌;引誘物v. 引誘; 誘惑",
         "unit": 11,
-        "example": "the hotel has planned many activities to amuse its guests",
-        "exampleZh": "酒店策劃了許多活動來招待客人"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20308,
-        "en": "analogy",
-        "kk": "/əˈnæɫədʒi/",
-        "zh": "n. 類比",
+        "en": "bake",
+        "kk": "/beɪk/",
+        "zh": "v. 烘;烤;烘培",
         "unit": 11,
-        "example": "argument from analogy",
-        "exampleZh": "類比論證"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20309,
-        "en": "analysis",
-        "kk": "/əˈnælɪsɪs/",
-        "zh": "n. 分析",
+        "en": "baker",
+        "kk": "",
+        "zh": "n. 麵包師:糕點師",
         "unit": 11,
-        "example": "We want your analysis.",
-        "exampleZh": "我們需要您的分析。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20310,
-        "en": "analyze",
-        "kk": "/ˈænəˌɫaɪz/",
-        "zh": "v. 分析",
+        "en": "bakery",
+        "kk": "",
+        "zh": "n. 麵包店;糕點店",
         "unit": 11,
-        "example": "Ziri analyzed the video.",
-        "exampleZh": "齊里分析了影片。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20311,
-        "en": "ancestor",
-        "kk": "/ˈænˌsɛstɝ/",
-        "zh": "n. 祖先",
+        "en": "balance",
+        "kk": "/ˈbæləns/",
+        "zh": "n. 平衡;均衡v. 使平衡",
         "unit": 11,
-        "example": "My ancestor told it.",
-        "exampleZh": "我的祖先告訴我。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20312,
-        "en": "anchor",
-        "kk": "/ˈæŋkɝ/",
-        "zh": "n. 錨；主播",
+        "en": "balcony",
+        "kk": "",
+        "zh": "n. 陽臺;露臺",
         "unit": 11,
-        "example": "the European Community is the economic anchor of the New Europe",
-        "exampleZh": "歐洲共同體是新歐洲的經濟支柱"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20313,
-        "en": "ancient",
-        "kk": "/ˈeɪnʃənt/",
-        "zh": "adj. 古代的",
+        "en": "bald",
+        "kk": "",
+        "zh": "a. 禿頭的;赤裸裸的",
         "unit": 11,
-        "example": "ancient forests",
-        "exampleZh": "古老的森林"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20314,
-        "en": "anecdote",
-        "kk": "/ˈænəkˌdoʊt/",
-        "zh": "n. 軼事",
+        "en": "ball (party)",
+        "kk": "",
+        "zh": "n. 舞會",
         "unit": 11,
-        "example": "his wife's death has long been the subject of rumor and anecdote",
-        "exampleZh": "他妻子的死長期以來一直是謠言和軼事的主題"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20315,
-        "en": "angle",
-        "kk": "/ˈæŋɡəɫ/",
-        "zh": "n. 角；角度",
+        "en": "ballroom",
+        "kk": "",
+        "zh": "n. 跳舞的大廳",
         "unit": 11,
-        "example": "A triangle has three angles.",
-        "exampleZh": "三角形有三個角。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20316,
-        "en": "angry",
-        "kk": "/ˈæŋɡɹi/",
-        "zh": "adj. 生氣的",
+        "en": "ban",
+        "kk": "/bæn/",
+        "zh": "n. 禁止;禁令v. 禁止; 取締",
         "unit": 11,
-        "example": "I'm angry that she didn't call me",
-        "exampleZh": "我很生氣她沒有打電話給我"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20317,
-        "en": "anguish",
-        "kk": "",
-        "zh": "n. 極度痛苦",
+        "en": "band",
+        "kk": "/bænd/",
+        "zh": "n. 帶;細繩;樂團",
         "unit": 11,
-        "example": "she shut her eyes in anguish",
-        "exampleZh": "她痛苦地閉上眼睛"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20318,
-        "en": "animate",
-        "kk": "/ˈænəˌmeɪt/",
-        "zh": "v. 賦予生命；使有生命",
+        "en": "banish",
+        "kk": "",
+        "zh": "v. 流放;放逐",
         "unit": 11,
-        "example": "party photos of animate socialites",
-        "exampleZh": "社交名流的聚會照片"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20319,
-        "en": "anniversary",
-        "kk": "/ˌænəˈvɝsɝi/",
-        "zh": "n. 週年紀念a 週年的",
+        "en": "bank",
+        "kk": "/bæŋk/",
+        "zh": "n. 銀行;堤;岸",
         "unit": 11,
-        "example": "It's their anniversary.",
-        "exampleZh": "這是他們的周年紀念日。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20320,
-        "en": "announce",
-        "kk": "/əˈnaʊns/",
-        "zh": "v. 宣布；發布",
+        "en": "bankbook",
+        "kk": "",
+        "zh": "n. 銀行存摺",
         "unit": 11,
-        "example": "Thomas is announced.",
-        "exampleZh": "托馬斯宣布。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20321,
-        "en": "announcement",
-        "kk": "/əˈnaʊnsmənt/",
-        "zh": "n. 通告；布告",
+        "en": "bankcard",
+        "kk": "",
+        "zh": "n. 銀行信用卡",
         "unit": 11,
-        "example": "Tom has an announcement.",
-        "exampleZh": "湯姆有一個公告。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20322,
-        "en": "annoy",
-        "kk": "/əˈnɔɪ/",
-        "zh": "v. 惹惱",
+        "en": "banker",
+        "kk": "",
+        "zh": "n. 銀行家",
         "unit": 11,
-        "example": "Politics annoys me.",
-        "exampleZh": "政治讓我煩惱。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20323,
-        "en": "annual",
-        "kk": "/ˈænjuəɫ/",
-        "zh": "a. 一年一次的；每年的",
+        "en": "banking",
+        "kk": "",
+        "zh": "n. 銀行業務;銀 行業",
         "unit": 11,
-        "example": "the union's annual conference",
-        "exampleZh": "工會年會"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20324,
-        "en": "anomalous",
+        "en": "bankrupt",
         "kk": "",
-        "zh": "adj. 異常的",
+        "zh": "a. 破產的v. 使 破產n. 破產者",
         "unit": 11,
-        "example": "an anomalous situation",
-        "exampleZh": "異常狀況"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20325,
-        "en": "anonymous",
-        "kk": "/əˈnɑnəməs/",
-        "zh": "a. 匿名的；姓氏不明的",
+        "en": "bankruptcy",
+        "kk": "",
+        "zh": "n. 破產;倒 閉",
         "unit": 11,
-        "example": "an anonymous phone call",
-        "exampleZh": "一個匿名電話"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20326,
-        "en": "answer",
-        "kk": "/ˈænsɝ/",
-        "zh": "v. 回答；答覆 n回答；答覆",
+        "en": "banner",
+        "kk": "",
+        "zh": "n. 旗幟;橫幅",
         "unit": 11,
-        "example": "I didn't answer him",
-        "exampleZh": "我沒有回答他"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20327,
-        "en": "antagonism",
+        "en": "banquet",
         "kk": "",
-        "zh": "n. 敵意",
+        "zh": "n. 宴會;盛宴v. 宴請",
         "unit": 11,
-        "example": "his antagonism toward the local people",
-        "exampleZh": "他對當地人的敵意"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20328,
-        "en": "anticipate",
-        "kk": "/ænˈtɪsəˌpeɪt/",
-        "zh": "v. 預期",
+        "en": "bar",
+        "kk": "/bɑːr/",
+        "zh": "n. 棒;條;酒吧",
         "unit": 11,
-        "example": "I anticipated this.",
-        "exampleZh": "我預料到了這一點。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20329,
-        "en": "anticipation",
-        "kk": "/ænˌtɪsəˈpeɪʃən/",
-        "zh": "n. 預期",
+        "en": "bar code",
+        "kk": "",
+        "zh": "n. 條碼",
         "unit": 11,
-        "example": "her eyes sparkled with anticipation",
-        "exampleZh": "她的眼睛閃爍著期待的光芒"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20330,
-        "en": "antique",
-        "kk": "/ænˈtik/",
-        "zh": "n. 古董",
+        "en": "barbecue",
+        "kk": "",
+        "zh": "n. 烤肉;燒烤v. 烤肉;燒烤",
         "unit": 11,
-        "example": "bookshelves with an antique finish",
-        "exampleZh": "仿古飾面的書架"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20331,
-        "en": "anxiety",
-        "kk": "/æŋˈzaɪəti/",
-        "zh": "n. 焦慮；掛念",
+        "en": "bare",
+        "kk": "/ber/",
+        "zh": "a. 裸的;光禿禿的v. 使赤裸;露出",
         "unit": 11,
-        "example": "Ziri felt anxiety.",
-        "exampleZh": "齊裡感到焦慮。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20332,
-        "en": "anxious",
-        "kk": "/ˈæŋkʃəs/",
-        "zh": "a. 焦慮的；掛念的",
+        "en": "barely",
+        "kk": "/ˈberli/",
+        "zh": "ad. 僅僅;勉強",
         "unit": 11,
-        "example": "Tom anxiously waited.",
-        "exampleZh": "湯姆焦急地等待著。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20333,
-        "en": "apologize",
-        "kk": "/əˈpɑɫəˌdʒaɪz/",
-        "zh": "v. 道歉",
+        "en": "bareness",
+        "kk": "",
+        "zh": "n. 赤裸;無遮 蓋",
         "unit": 11,
-        "example": "we apologize to him for our error",
-        "exampleZh": "我們為我們的錯誤向他道歉"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20334,
-        "en": "apology",
-        "kk": "/əˈpɑɫəˌdʒi/",
-        "zh": "n. 道歉；陪罪",
+        "en": "bargain",
+        "kk": "/ˈbɑːrɡən/",
+        "zh": "n. 協議;買賣v. 討價還價",
         "unit": 11,
-        "example": "we were shown into an apology for a bedroom",
-        "exampleZh": "我們被要求為一間臥室道歉"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20335,
-        "en": "appalling",
+        "en": "barren",
         "kk": "",
-        "zh": "adj. 令人震驚的",
+        "zh": "a. 不生育的;貧脊 的n. 瘠地;荒漠",
         "unit": 11,
-        "example": "his conduct was appalling",
-        "exampleZh": "他的行為令人震驚"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20336,
-        "en": "apparatus",
-        "kk": "",
-        "zh": "n. 設備",
+        "en": "barrier",
+        "kk": "/ˈbæriər/",
+        "zh": "n. 障礙物;路障",
         "unit": 11,
-        "example": "one thing about the book's apparatus does irritate: the absence of an index of titles",
-        "exampleZh": "這本書的結構有一件事確實令人惱火：沒有標題索引"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20337,
-        "en": "apparent",
-        "kk": "/əˈpɛɹənt/",
-        "zh": "a. 表面的；外觀的",
+        "en": "bas",
+        "kk": "",
+        "zh": "n. 基;底;基部n. 基 本的;基礎的",
         "unit": 11,
-        "example": "Nothing is apparent.",
-        "exampleZh": "沒有什麼是顯而易見的。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20338,
-        "en": "appeal",
-        "kk": "/əˈpiɫ/",
-        "zh": "v. 呼籲；懇求",
+        "en": "baseline",
+        "kk": "",
+        "zh": "n. 基線;底線",
         "unit": 11,
-        "example": "My lawyer appealed.",
-        "exampleZh": "我的律師提出上訴。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20339,
-        "en": "appealing",
+        "en": "basement",
         "kk": "",
-        "zh": "adj. 吸引人的",
+        "zh": "n. 地下室;地 下層",
         "unit": 11,
-        "example": "the rural life is somehow more appealing",
-        "exampleZh": "鄉村生活在某種程度上更有吸引力"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20340,
-        "en": "appear",
-        "kk": "/əˈpɪɹ/",
-        "zh": "v. 出現；顯露",
+        "en": "basic",
+        "kk": "/ˈbeɪsɪk/",
+        "zh": "n. 基礎的;基本的n. 基礎;基本原理",
         "unit": 11,
-        "example": "the paperback edition didn't appear for another two years",
-        "exampleZh": "平裝本又兩年沒有出現"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20341,
-        "en": "appearance",
-        "kk": "/əˈpɪɹəns/",
-        "zh": "n. 出現；顯露",
+        "en": "basically",
+        "kk": "",
+        "zh": "ad. 在根本上",
         "unit": 11,
-        "example": "I like the appearance of stripped antique pine",
-        "exampleZh": "我喜歡剝皮仿古松木的外觀"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20342,
-        "en": "appendix",
+        "en": "basis",
         "kk": "",
-        "zh": "n. 附錄",
+        "zh": "n. 基礎;根據",
         "unit": 11,
-        "example": "The appendix is of no use.",
-        "exampleZh": "附錄沒啥用。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20343,
-        "en": "appetite",
-        "kk": "/ˈæpəˌtaɪt/",
-        "zh": "n. 食慾；胃口",
+        "en": "basket",
+        "kk": "",
+        "zh": "n. 籃;簍;筐",
         "unit": 11,
-        "example": "he has a healthy appetite",
-        "exampleZh": "他有健康的食慾"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20344,
-        "en": "applaud",
-        "kk": "/əˈpɫɔd/",
-        "zh": "v. 鼓掌歡迎；喝采",
+        "en": "bat",
+        "kk": "/bæt/",
+        "zh": "n. 球棒;球拍v. 打; 揮打",
         "unit": 11,
-        "example": "Everyone applauded.",
-        "exampleZh": "大家紛紛鼓掌。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20345,
-        "en": "appliance",
-        "kk": "/əˈpɫaɪəns/",
-        "zh": "n. 用具；裝置",
+        "en": "batch",
+        "kk": "",
+        "zh": "n. 一批生產量;一 批",
         "unit": 11,
-        "example": "I'm appliance shopping.",
-        "exampleZh": "我是買電器的"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20346,
-        "en": "applicable",
-        "kk": "/ˈæpɫəkəbəɫ/",
-        "zh": "adj. 適用的",
+        "en": "bath",
+        "kk": "/bæθ/",
+        "zh": "n. 浴缸;洗澡",
         "unit": 11,
-        "example": "the same considerations are equally applicable to accident claims",
-        "exampleZh": "同樣的考慮也適用於事故索賠"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20347,
-        "en": "applicant",
-        "kk": "/ˈæpɫɪkənt/",
-        "zh": "n. 申請人",
+        "en": "bathe",
+        "kk": "",
+        "zh": "v. 浸入;浸洗",
         "unit": 11,
-        "example": "a job applicant",
-        "exampleZh": "求職者"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20348,
-        "en": "application",
-        "kk": "/ˌæpɫəˈkeɪʃən/",
-        "zh": "n. 申請",
+        "en": "bathroom",
+        "kk": "/ˈbæθruːm/",
+        "zh": "n. 浴室;化妝 室",
         "unit": 11,
-        "example": "I like this application.",
-        "exampleZh": "我喜歡這個應用程式。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20349,
-        "en": "apply",
-        "kk": "/əˈpɫaɪ/",
-        "zh": "v. 申請；請求",
+        "en": "battery",
+        "kk": "/ˈbætəri/",
+        "zh": "n. 電池;蓄電池",
         "unit": 11,
-        "example": "the oil industry has failed to apply appropriate standards of care",
-        "exampleZh": "石油工業未能採用適當的護理標準"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20350,
-        "en": "appoint",
-        "kk": "/əˈpɔɪnt/",
-        "zh": "v. 任命；指派",
+        "en": "battle",
+        "kk": "/ˈbætl/",
+        "zh": "v. 搏鬥;奮爭n. 戰 鬥;戰役",
         "unit": 11,
-        "example": "Who appointed him?",
-        "exampleZh": "誰任命他的？"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20351,
-        "en": "appointment",
-        "kk": "/əˈpɔɪntmənt/",
-        "zh": "n. 約會；任命",
+        "en": "bay",
+        "kk": "",
+        "zh": "n. 灣",
         "unit": 11,
-        "example": "she took up an appointment as head of communications",
-        "exampleZh": "她被任命為通訊主管"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20352,
-        "en": "appraisal",
-        "kk": "",
-        "zh": "n. 評估；考核",
+        "en": "be",
+        "kk": "/biː/",
+        "zh": "v. 是;等於aux. 正 在⋯;在⋯",
         "unit": 11,
-        "example": "treatment begins with a thorough appraisal of the patient's condition",
-        "exampleZh": "治療始於對患者病情的徹底評估"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20353,
-        "en": "appraise",
-        "kk": "",
-        "zh": "v. 估計；估量",
+        "en": "beach",
+        "kk": "/biːtʃ/",
+        "zh": "n. 海灘;海濱度假 地",
         "unit": 11,
-        "example": "Have you had the ring appraised?",
-        "exampleZh": "戒指估價了嗎？"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20354,
-        "en": "appreciate",
-        "kk": "/əˈpɹiʃiˌeɪt/",
-        "zh": "v. 欣賞；感激",
+        "en": "bearable",
+        "kk": "",
+        "zh": "a. 能耐的;忍得 住的",
         "unit": 11,
-        "example": "We appreciate them.",
-        "exampleZh": "我們很感激他們。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20355,
-        "en": "appreciation",
-        "kk": "/əˌpɹiʃiˈeɪʃən/",
-        "zh": "n. 感謝",
+        "en": "bearer",
+        "kk": "",
+        "zh": "n. 持有人;挑夫; 搬運工",
         "unit": 11,
-        "example": "they would be the first to show their appreciation",
-        "exampleZh": "他們將是第一個表達感激之情的人"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20356,
-        "en": "apprehend",
+        "en": "bearing",
         "kk": "",
-        "zh": "v. 逮捕；對⋯⋯擔慮",
+        "zh": "n. 舉止;體態; 忍耐;忍受",
         "unit": 11,
-        "example": "Gabriel was apprehended.",
-        "exampleZh": "加布里埃爾被捕。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20357,
-        "en": "apprentice",
-        "kk": "/əˈpɹɛntəs/",
-        "zh": "n. 徒弟；見習生",
+        "en": "beat",
+        "kk": "/biːt/",
+        "zh": "v. 打;擊;敲n. 敲打; 敲擊聲a. 筋疲力盡的;垂 頭喪氣的",
         "unit": 11,
-        "example": "I'm an apprentice.",
-        "exampleZh": "我是一個學徒。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20358,
-        "en": "approach",
-        "kk": "/əˈpɹoʊtʃ/",
-        "zh": "v. 接近；靠近",
+        "en": "beaten",
+        "kk": "",
+        "zh": "a. 挨打的;被打 敗的;筋疲力盡的",
         "unit": 11,
-        "example": "Winter approached.",
-        "exampleZh": "冬天將近了。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20359,
-        "en": "appropriate",
-        "kk": "/əˈpɹoʊpɹiˌeɪt/",
-        "zh": "a. 適當的；恰當的",
+        "en": "beautiful",
+        "kk": "/ˈbjuːtɪfl/",
+        "zh": "a. 漂亮的;出色 的",
         "unit": 11,
-        "example": "That is appropriate.",
-        "exampleZh": "那是合適的。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20360,
-        "en": "approval",
-        "kk": "/əˈpɹuvəɫ/",
-        "zh": "n. 批准；認可",
+        "en": "beautify",
+        "kk": "",
+        "zh": "v. 使更加美麗; 美化",
         "unit": 11,
-        "example": "the road plans have been given approval",
-        "exampleZh": "道路計劃已獲得批准"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20361,
-        "en": "approve",
-        "kk": "/əˈpɹuv/",
-        "zh": "v. 同意；贊許",
+        "en": "beauty",
+        "kk": "/ˈbjuːti/",
+        "zh": "n. 美麗;美的事物",
         "unit": 11,
-        "example": "I completely approve!",
-        "exampleZh": "我完全贊同！"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20362,
-        "en": "approximate",
-        "kk": "/əˈpɹɑksəˌmeɪt/",
-        "zh": "a. 接近的；大約的 v 接近；近似",
+        "en": "because",
+        "kk": "/bɪˈkɔːz/",
+        "zh": "conj. 因為",
         "unit": 11,
-        "example": "the calculations are very approximate",
-        "exampleZh": "計算結果非常近似"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20363,
-        "en": "aptitude",
-        "kk": "/ˈæptəˌtud/",
-        "zh": "n. 天資",
+        "en": "become",
+        "kk": "/bɪˈkʌm/",
+        "zh": "v. 變成;成為",
         "unit": 11,
-        "example": "children with an aptitude for painting and drawing",
-        "exampleZh": "有繪畫天份的孩子"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20364,
-        "en": "arbitrary",
+        "en": "becoming",
         "kk": "",
-        "zh": "adj. 任意的",
+        "zh": "a. 合適的;適 宜的n. 形成;發生",
         "unit": 11,
-        "example": "We can't tolerate such an arbitrary act.",
-        "exampleZh": "我們不能容忍這種任意的行為。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20365,
-        "en": "architect",
-        "kk": "/ˈɑɹkəˌtɛkt/",
-        "zh": "n. 建築師；設計師",
+        "en": "bed",
+        "kk": "/bed/",
+        "zh": "n. 床;睡眠處v. 睡; 臥",
         "unit": 11,
-        "example": "the great Norman architect of Durham Cathedral",
-        "exampleZh": "達勒姆大教堂的偉大諾曼建築師"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20366,
-        "en": "architecture",
-        "kk": "/ˈɑɹkəˌtɛktʃɝ/",
-        "zh": "n. 建築物；建築學；結構",
+        "en": "bed and breakfast",
+        "kk": "",
+        "zh": "ph. 夜宿兼次日早餐(縮寫為 B&B)",
         "unit": 11,
-        "example": "Tom loves architecture.",
-        "exampleZh": "湯姆熱愛建築。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20367,
-        "en": "archive",
+        "en": "bedside",
         "kk": "",
-        "zh": "v. 把⋯存檔；把⋯收集歸檔 n 檔案保管處；文件；記錄",
+        "zh": "n. 床邊;床側a. 床旁的;臨床的",
         "unit": 11,
-        "example": "She was in the archive.",
-        "exampleZh": "她在檔案館裡。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20368,
-        "en": "area",
-        "kk": "/ˈɛɹiə/",
-        "zh": "n. 地區；區域",
+        "en": "bedtime",
+        "kk": "",
+        "zh": "n. 就寢時間a. 適 於睡前的",
         "unit": 11,
-        "example": "people living in the area are at risk",
-        "exampleZh": "居住在該地區的人們處於危險之中"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20369,
-        "en": "argue",
-        "kk": "/ˈɑɹɡju/",
-        "zh": "v. 爭論；辯論；主張",
+        "en": "begin",
+        "kk": "/bɪˈɡɪn/",
+        "zh": "v. 開始;著手",
         "unit": 11,
-        "example": "don't argue with me",
-        "exampleZh": "別跟我爭論"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20370,
-        "en": "argument",
-        "kk": "/ˈɑɹɡjəmənt/",
-        "zh": "n. 爭執；爭吵",
+        "en": "beginner",
+        "kk": "",
+        "zh": "n. 初學者;新手",
         "unit": 11,
-        "example": "there was some argument about the decision",
-        "exampleZh": "對於這個決定有一些爭議"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20371,
-        "en": "arise",
-        "kk": "/ɝˈaɪz/",
-        "zh": "v. 升起；上升；產生",
+        "en": "beginning",
+        "kk": "/bɪˈɡɪnɪŋ/",
+        "zh": "n. 開始;起始",
         "unit": 11,
-        "example": "What problems can arise?",
-        "exampleZh": "可能會出現什麼問題？"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20372,
-        "en": "arm",
-        "kk": "/ˈɑɹm/",
-        "zh": "n. 手臂；武器",
+        "en": "behalf",
+        "kk": "",
+        "zh": "n. 代表;利益",
         "unit": 11,
-        "example": "as they walked he offered her his arm",
-        "exampleZh": "當他們走路時，他向她伸出了手臂"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20373,
-        "en": "arouse",
-        "kk": "/ɝˈaʊz/",
-        "zh": "v. 喚起；激動；使奮發",
+        "en": "behave",
+        "kk": "/bɪˈheɪv/",
+        "zh": "v. 表現;行為舉 止",
         "unit": 11,
-        "example": "You arouse my jealousy.",
-        "exampleZh": "你引起了我的嫉妒。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20374,
-        "en": "arrange",
-        "kk": "/ɝˈeɪndʒ/",
-        "zh": "v. 整理；安排；籌備",
+        "en": "behavior",
+        "kk": "/bɪˈheɪvjər/",
+        "zh": "n. 行為;舉止",
         "unit": 11,
-        "example": "they hoped to arrange a meeting",
-        "exampleZh": "他們希望安排一次會面"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20375,
-        "en": "arrangement",
-        "kk": "/ɝˈeɪndʒmənt/",
-        "zh": "n. 安排",
+        "en": "behavioral",
+        "kk": "",
+        "zh": "a. 行為的",
         "unit": 11,
-        "example": "the arrangement of the furniture in the room",
-        "exampleZh": "房間內家具的佈置"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20376,
-        "en": "array",
-        "kk": "",
-        "zh": "n. 一系列",
+        "en": "behind",
+        "kk": "/bɪˈhaɪnd/",
+        "zh": "ad. 在背後prep. 在⋯⋯的後面n. 背後",
         "unit": 11,
-        "example": "She dated an endless array of bad boys.",
-        "exampleZh": "她和無數壞男孩約會過。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20377,
-        "en": "arrest",
-        "kk": "/ɝˈɛst/",
-        "zh": "v. 逮捕；拘留",
+        "en": "beholder",
+        "kk": "",
+        "zh": "n. 觀看者;旁觀 者",
         "unit": 11,
-        "example": "they placed her under arrest",
-        "exampleZh": "他們逮捕了她"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20378,
-        "en": "arrival",
-        "kk": "/ɝˈaɪvəɫ/",
-        "zh": "v. 到達；到來",
+        "en": "beige",
+        "kk": "",
+        "zh": "a. 米色的n. 米黃色",
         "unit": 11,
-        "example": "he was dead on arrival at the hospital",
-        "exampleZh": "他在抵達醫院時已經死亡"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20379,
-        "en": "arrive",
-        "kk": "/ɝˈaɪv/",
-        "zh": "v. 到達；到來",
+        "en": "being",
+        "kk": "/ˈbiːɪŋ/",
+        "zh": "n. 存在;生存",
         "unit": 11,
-        "example": "Firefighters arrived.",
-        "exampleZh": "消防隊員趕到了。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20380,
-        "en": "arrogant",
-        "kk": "/ˈɛɹəɡənt/",
-        "zh": "adj. 傲慢的",
+        "en": "belated",
+        "kk": "",
+        "zh": "a. 誤期的;過時 的",
         "unit": 11,
-        "example": "a typically arrogant assumption",
-        "exampleZh": "典型的傲慢假設"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20381,
-        "en": "article",
-        "kk": "/ˈɑɹtəkəɫ/",
-        "zh": "n. 文章；物品",
+        "en": "belief",
+        "kk": "/bɪˈliːf/",
+        "zh": "n. 相信;信任",
         "unit": 11,
-        "example": "Reread the article.",
-        "exampleZh": "重讀這篇文章。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20382,
-        "en": "artificial",
-        "kk": "/ˌɑɹtəˈfɪʃəɫ/",
-        "zh": "adj. 人造的",
+        "en": "believe",
+        "kk": "/bɪˈliːv/",
+        "zh": "v. 相信;信任",
         "unit": 11,
-        "example": "Earth is artificial.",
-        "exampleZh": "地球是人造的。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20383,
-        "en": "artisan",
+        "en": "believer",
         "kk": "",
-        "zh": "n. 工匠",
+        "zh": "n. 信徒;信教者",
         "unit": 11,
-        "example": "Artisans made flambeaux and chandeliers.",
-        "exampleZh": "工匠們製作火炬和枝形吊燈。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20384,
-        "en": "artist",
-        "kk": "/ˈɑɹtəst/",
-        "zh": "n. 藝術家",
+        "en": "bell",
+        "kk": "/bel/",
+        "zh": "n. 鐘;鈴v. 鳴鐘",
         "unit": 11,
-        "example": "a con artist",
-        "exampleZh": "騙子"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20385,
-        "en": "ascertain",
+        "en": "belly",
         "kk": "",
-        "zh": "v. 查明",
+        "zh": "n. 腹;腹部v. 鼓起; 脹滿",
         "unit": 11,
-        "example": "I've ascertained the identity of the victim.",
-        "exampleZh": "我已經確定了受害者的身分。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20386,
-        "en": "aspect",
-        "kk": "/ˈæsˌpɛkt/",
-        "zh": "n. 方面",
+        "en": "belong",
+        "kk": "/bɪˈlɔːŋ/",
+        "zh": "v. 屬於;合適",
         "unit": 11,
-        "example": "There are other aspects.",
-        "exampleZh": "還有其他方面。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20387,
-        "en": "aspire",
+        "en": "belongings",
         "kk": "",
-        "zh": "v. 渴望",
+        "zh": "n. 財產;攜 帶物品",
         "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
         "id": 20388,
-        "en": "assemble",
-        "kk": "/əˈsɛmbəɫ/",
-        "zh": "v. 集合；召集",
+        "en": "beloved",
+        "kk": "",
+        "zh": "a. 心愛的;親愛 的",
         "unit": 11,
-        "example": "the males assemble and hang by their front legs within a yard or two of the female",
-        "exampleZh": "雄性聚集在一起，用前腿懸掛在距離雌性一兩碼的地方"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20389,
-        "en": "assembly",
-        "kk": "/əˈsɛmbɫi/",
-        "zh": "n. 集會；組裝",
+        "en": "below",
+        "kk": "/bɪˈloʊ/",
+        "zh": "ad. 在下面;到下面prep. 在⋯下面",
         "unit": 11,
-        "example": "Some assembly required.",
-        "exampleZh": "需要一些組裝。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20390,
-        "en": "assert",
-        "kk": "/əˈsɝt/",
-        "zh": "v. 斷言；聲稱",
+        "en": "belt",
+        "kk": "/belt/",
+        "zh": "n. 腰帶;皮帶v. 用皮 帶抽打;用帶捆住",
         "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
         "id": 20391,
-        "en": "assess",
-        "kk": "/əˈsɛs/",
-        "zh": "v. 對⋯⋯進行估價；評價",
+        "en": "bench",
+        "kk": "/bentʃ/",
+        "zh": "n. 長凳;長椅",
         "unit": 11,
-        "example": "He assessed the distance.",
-        "exampleZh": "他評估了距離。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20392,
-        "en": "assessment",
-        "kk": "/əˈsɛsmənt/",
-        "zh": "n. 評估",
+        "en": "benchmark",
+        "kk": "",
+        "zh": "n. 水準點; 基準",
         "unit": 11,
-        "example": "the assessment of educational needs",
-        "exampleZh": "教育需求評估"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20393,
-        "en": "asset",
-        "kk": "/ˈæˌsɛt/",
-        "zh": "n. 資產",
+        "en": "bend",
+        "kk": "/bend/",
+        "zh": "v. 彎曲;轉彎n. 彎 曲;轉彎處",
         "unit": 11,
-        "example": "debiting the asset account",
-        "exampleZh": "借記資產帳戶"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20394,
-        "en": "assign",
-        "kk": "/əˈsaɪn/",
-        "zh": "v. 分配；分派",
+        "en": "beneath",
+        "kk": "",
+        "zh": "ad. 在下;向下prep. 在⋯之下;向⋯下面",
         "unit": 11,
-        "example": "They assigned you a name.",
-        "exampleZh": "他們給你取了一個名字。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20395,
-        "en": "assignment",
-        "kk": "/əˈsaɪnmənt/",
-        "zh": "n. 任務；工作",
+        "en": "benefactor",
+        "kk": "",
+        "zh": "n. 捐助人;施 主",
         "unit": 11,
-        "example": "Yanni had an assignment.",
-        "exampleZh": "雅尼有一個任務。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20396,
-        "en": "assimilate",
+        "en": "beneficial",
         "kk": "",
-        "zh": "v. 被吸收；被消化",
+        "zh": "a. 有益的;有 利的",
         "unit": 11,
-        "example": "You will be assimilated.",
-        "exampleZh": "你會被同化。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20397,
-        "en": "assist",
-        "kk": "/əˈsɪst/",
-        "zh": "v. 幫助；協助",
+        "en": "benefit",
+        "kk": "/ˈbenɪfɪt/",
+        "zh": "v. 得益;受惠n. 利益;好處",
         "unit": 11,
-        "example": "Tom assisted Mary.",
-        "exampleZh": "湯姆協助瑪莉。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20398,
-        "en": "assistance",
-        "kk": "/əˈsɪstəns/",
-        "zh": "n. 援助；幫助",
+        "en": "benignl",
+        "kk": "",
+        "zh": "a. 仁慈的;親切 的",
         "unit": 11,
-        "example": "We need assistance.",
-        "exampleZh": "我們需要幫助。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20399,
-        "en": "assistant",
-        "kk": "/əˈsɪstənt/",
-        "zh": "n. 助手",
+        "en": "bent",
+        "kk": "",
+        "zh": "a. 彎曲的;決心的n. 愛好;傾向",
         "unit": 11,
-        "example": "an assistant manager",
-        "exampleZh": "助理經理"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20400,
-        "en": "associate",
-        "kk": "/əˈsoʊsiˌeɪt/",
-        "zh": "n. 夥伴；同事a 夥伴的；共事的",
+        "en": "beside",
+        "kk": "/bɪˈsaɪd/",
+        "zh": "prep. 在⋯旁;在 旁邊",
         "unit": 11,
-        "example": "I associate it with this.",
-        "exampleZh": "我把它與此連結起來。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20401,
-        "en": "association",
-        "kk": "/əˌsoʊsiˈeɪʃən/",
-        "zh": "n. 協會；公會；聯盟",
+        "en": "besides",
+        "kk": "/bɪˈsaɪdz/",
+        "zh": "ad. 此外;而且prep. 在⋯之外",
         "unit": 11,
-        "example": "Do you know that association?",
-        "exampleZh": "你知道那個協會嗎？"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20402,
-        "en": "assortment",
-        "kk": "",
-        "zh": "n. 各式各樣",
+        "en": "bet",
+        "kk": "/bet/",
+        "zh": "n. 打賭v. 打賭",
         "unit": 11,
-        "example": "We also have lentils in our assortment.",
-        "exampleZh": "我們的品種中還有扁豆。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20403,
-        "en": "assume",
-        "kk": "/əˈsum/",
-        "zh": "v. 以為；假定為",
+        "en": "betray",
+        "kk": "",
+        "zh": "v. 背叛;出賣",
         "unit": 11,
-        "example": "He assumes everything.",
-        "exampleZh": "他承擔了一切。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20404,
-        "en": "assumption",
-        "kk": "/əˈsəmpʃən/",
-        "zh": "n. 假設",
+        "en": "betrayal",
+        "kk": "",
+        "zh": "n. 背叛;密告",
         "unit": 11,
-        "example": "the assumption of an active role in regional settlements",
-        "exampleZh": "在區域解決中發揮積極作用"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20405,
-        "en": "assure",
-        "kk": "/əˈʃʊɹ/",
-        "zh": "v. 向⋯⋯保證；擔保",
+        "en": "better",
+        "kk": "/ˈbetər/",
+        "zh": "a. 較佳的;更好的v. 改善;改進",
         "unit": 11,
-        "example": "You can rest assured.",
-        "exampleZh": "您可以放心。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20406,
-        "en": "astonish",
-        "kk": "/əˈstɑnɪʃ/",
-        "zh": "v. 使吃驚；使驚訝",
+        "en": "between",
+        "kk": "/bɪˈtwiːn/",
+        "zh": "ad. 在中間;兩 者之間prep. 在⋯之間",
         "unit": 11,
-        "example": "you never fail to astonish me",
-        "exampleZh": "你總是讓我驚訝"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20407,
-        "en": "astound",
+        "en": "beverage",
         "kk": "",
-        "zh": "v. 使震驚",
+        "zh": "n. 飲料",
         "unit": 11,
-        "example": "We were astounded.",
-        "exampleZh": "我們很驚訝。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20408,
-        "en": "attach",
-        "kk": "/əˈtætʃ/",
-        "zh": "v. 附屬；附加",
+        "en": "beware",
+        "kk": "",
+        "zh": "v. 注意;提防",
         "unit": 11,
-        "example": "he doesn't attach too much importance to radical ideas",
-        "exampleZh": "他不太重視激進的想法"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20409,
-        "en": "attachment",
-        "kk": "/əˈtætʃmənt/",
-        "zh": "n. 附屬物；附件",
+        "en": "beyond",
+        "kk": "/bɪˈjɑːnd/",
+        "zh": "adv. 在更遠處; 往更遠處prep. 向⋯的那一 邊;越過",
         "unit": 11,
-        "example": "We avoid attachment.",
-        "exampleZh": "我們避免執著。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20410,
-        "en": "attack",
-        "kk": "/əˈtæk/",
-        "zh": "v. 攻擊",
+        "en": "bias",
+        "kk": "",
+        "zh": "n. 成見;偏心",
         "unit": 11,
-        "example": "an attack on inflation",
-        "exampleZh": "通貨膨脹的攻擊"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20411,
-        "en": "attain",
-        "kk": "/əˈteɪn/",
-        "zh": "v. 達到；獲得 n 成就，造詣",
+        "en": "bicycle",
+        "kk": "/ˈbaɪsɪkl/",
+        "zh": "n. 腳踏車;自行 車",
         "unit": 11,
-        "example": "Tom attained his goal.",
-        "exampleZh": "湯姆達到了他的目的。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20412,
-        "en": "attempt",
-        "kk": "/əˈtɛmpt/",
-        "zh": "n. 企圖；嘗試 v試圖；企圖",
+        "en": "bid",
+        "kk": "/bɪd/",
+        "zh": "v. 命令;吩咐;出價",
         "unit": 11,
-        "example": "The attempt failed.",
-        "exampleZh": "嘗試失敗了。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20413,
-        "en": "attend",
-        "kk": "/əˈtɛnd/",
-        "zh": "v. 出席；參加",
+        "en": "bidder",
+        "kk": "",
+        "zh": "n. 出價人;投標人",
         "unit": 11,
-        "example": "the severely wounded had two medics to attend to their wounds",
-        "exampleZh": "重傷者有兩名醫護人員來處理他們的傷口"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20414,
-        "en": "attendance",
-        "kk": "/əˈtɛndəns/",
-        "zh": "n. 到場；出席",
+        "en": "bilingual",
+        "kk": "",
+        "zh": "a. 雙語的",
         "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
         "id": 20415,
-        "en": "attendee",
-        "kk": "",
-        "zh": "n. 出席者",
+        "en": "bill",
+        "kk": "/bɪl/",
+        "zh": "n. 帳單;票據;議案",
         "unit": 11,
-        "example": "Her petulant humor upset the attendees.",
-        "exampleZh": "她任性的幽默讓與會者感到不安。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20416,
-        "en": "attention",
-        "kk": "/əˈtɛnʃən/",
-        "zh": "n. 注意力；專心",
+        "en": "billboard",
+        "kk": "",
+        "zh": "n. 廣告牌",
         "unit": 11,
-        "example": "midshipmen standing at attention",
-        "exampleZh": "見習官立正"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20417,
-        "en": "attentive",
-        "kk": "",
-        "zh": "adj. 專心的",
+        "en": "billion",
+        "kk": "/ˈbɪljən/",
+        "zh": "n. 十億",
         "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
         "id": 20418,
-        "en": "attract",
-        "kk": "/əˈtɹækt/",
-        "zh": "v. 吸引；引起",
+        "en": "bin",
+        "kk": "",
+        "zh": "n. 箱子;容器",
         "unit": 11,
-        "example": "Food attracts dogs.",
-        "exampleZh": "食物會吸引狗。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20419,
-        "en": "attraction",
-        "kk": "/əˈtɹækʃən/",
-        "zh": "n. 吸引力",
+        "en": "bind",
+        "kk": "/baɪnd/",
+        "zh": "v. 捆;綁",
         "unit": 11,
-        "example": "the church is the town's main tourist attraction",
-        "exampleZh": "教堂是鎮上主要的旅遊景點"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20420,
-        "en": "attractive",
-        "kk": "/əˈtɹæktɪv/",
-        "zh": "adj. 吸引人的",
+        "en": "binding",
+        "kk": "",
+        "zh": "n. 裝訂;封皮a. 黏合的;有約束力的",
         "unit": 11,
-        "example": "You are attractive.",
-        "exampleZh": "你很有吸引力。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20421,
-        "en": "attribute",
+        "en": "biological",
         "kk": "",
-        "zh": "v. 把⋯歸因於；把⋯歸咎於",
+        "zh": "a. 生物的;生 物學的",
         "unit": 11,
-        "example": "Ziri attributed the sound to bears.",
-        "exampleZh": "齊裡將這種聲音歸因於熊。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20422,
-        "en": "auction",
-        "kk": "/ˈɑkʃən/",
-        "zh": "n. 拍賣 v 拍賣",
+        "en": "biology",
+        "kk": "/baɪˈɑːlədʒi/",
+        "zh": "n. 生物學",
         "unit": 11,
-        "example": "The auction is over.",
-        "exampleZh": "拍賣結束了。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20423,
-        "en": "audience",
-        "kk": "/ˈɑdiəns/",
-        "zh": "n. 聽眾；觀眾",
+        "en": "birth",
+        "kk": "/bɜːrθ/",
+        "zh": "n. 出生;誕生",
         "unit": 11,
-        "example": "The audience gasped.",
-        "exampleZh": "觀眾倒吸一口冷氣。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20424,
-        "en": "audit",
-        "kk": "",
-        "zh": "v. 審計；查帳 n 審計；查帳",
+        "en": "birthday",
+        "kk": "/ˈbɜːrθdeɪ/",
+        "zh": "n. 生日",
         "unit": 11,
-        "example": "a complete audit of flora and fauna at the site",
-        "exampleZh": "對現場動植物進行全面審核"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20425,
-        "en": "auditor",
-        "kk": "",
-        "zh": "n. 審計員",
+        "en": "bit",
+        "kk": "/bɪt/",
+        "zh": "n. 小片;小塊;位元",
         "unit": 11,
-        "example": "Ziri is an auditor.",
-        "exampleZh": "Ziri 是一名審計員。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20426,
-        "en": "authentic",
-        "kk": "/əˈθɛnɪk/",
-        "zh": "adj. 真實的",
+        "en": "bite",
+        "kk": "/baɪt/",
+        "zh": "v. 咬;啃",
         "unit": 11,
-        "example": "authentic 14th-century furniture",
-        "exampleZh": "正宗的 14 世紀家具"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20427,
-        "en": "author",
-        "kk": "/ˈɔθɝ/",
-        "zh": "n. 作者；作家",
+        "en": "bitter",
+        "kk": "/ˈbɪtər/",
+        "zh": "a. 苦的;痛苦的",
         "unit": 11,
-        "example": "he is the author of several books on the subject",
-        "exampleZh": "他是多本有關該主題的書籍的作者"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20428,
-        "en": "authority",
-        "kk": "/əˈθɔɹəti/",
-        "zh": "n. 權威",
+        "en": "bizarre",
+        "kk": "",
+        "zh": "a. 奇異的;不尋 常的;奇怪的",
         "unit": 11,
-        "example": "They respect authority.",
-        "exampleZh": "他們尊重權威。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20429,
-        "en": "authorization",
-        "kk": "",
-        "zh": "n. 授權",
+        "en": "blame",
+        "kk": "/bleɪm/",
+        "zh": "v. 責備;指責",
         "unit": 11,
-        "example": "We need authorization.",
-        "exampleZh": "我們需要授權。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20430,
-        "en": "authorize",
-        "kk": "/ˈɔθɝˌaɪz/",
-        "zh": "v. 授權；批准",
+        "en": "bland",
+        "kk": "",
+        "zh": "a. 溫和的;淡而無 味的",
         "unit": 11,
-        "example": "Who authorized this?",
-        "exampleZh": "誰授權這樣做的？"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20431,
-        "en": "auto",
-        "kk": "/ˈɔtoʊ/",
-        "zh": "n. 汽車",
+        "en": "blank",
+        "kk": "/blæŋk/",
+        "zh": "a. 空的;無內容的n. 空白;空白處v. 使模糊; 刪去",
         "unit": 11,
-        "example": "Tom used auto-tune.",
-        "exampleZh": "湯姆使用了自動調諧。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20432,
-        "en": "autograph",
-        "kk": "/ˈɔtəˌɡɹæf/",
-        "zh": "n. 簽名",
+        "en": "blanket",
+        "kk": "/ˈblæŋkɪt/",
+        "zh": "n. 毛毯;毯子",
         "unit": 11,
-        "example": "Ziri signed autographs.",
-        "exampleZh": "齊裡簽名。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20433,
-        "en": "automate",
+        "en": "bleak",
         "kk": "",
-        "zh": "v. 使自動化",
+        "zh": "a. 荒涼的;無遮蔽 的",
         "unit": 11,
-        "example": "Jobs should be automated.",
-        "exampleZh": "工作應該自動化。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20434,
-        "en": "automatic",
-        "kk": "/ˌɔtəˈmætɪk/",
-        "zh": "a. 自動的；習慣性的",
+        "en": "bleed",
+        "kk": "",
+        "zh": "v. 出血;流血",
         "unit": 11,
-        "example": "This process is automatic.",
-        "exampleZh": "這個過程是自動的。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20435,
-        "en": "automation",
+        "en": "blend",
         "kk": "",
-        "zh": "n. 自動化",
+        "zh": "v. 使混雜;使交融n. 混雜;交融",
         "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
         "id": 20436,
-        "en": "automobile",
-        "kk": "/ˈɔtəmoʊˌbiɫ/",
-        "zh": "n. 汽車",
+        "en": "blender",
+        "kk": "",
+        "zh": "n. 攪拌機;混合 器",
         "unit": 11,
-        "example": "Tom drives the automobile.",
-        "exampleZh": "湯姆開汽車。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20437,
-        "en": "autonomous",
-        "kk": "",
-        "zh": "adj. 自治的",
+        "en": "blind",
+        "kk": "/blaɪnd/",
+        "zh": "a. 盲的;視而不見 的;不願承認的",
         "unit": 11,
-        "example": "This is an autonomous machine.",
-        "exampleZh": "這是一台自主機器。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20438,
-        "en": "availability",
-        "kk": "",
-        "zh": "n. 可用性；空檔",
+        "en": "block",
+        "kk": "/blɑːk/",
+        "zh": "n. 街區;障礙v. 阻 塞;堵住;封鎖",
         "unit": 11,
-        "example": "when a male bird bursts into melodious song, he is warning off other males and advertising his availability to females",
-        "exampleZh": "當一隻雄鳥突然發出悠揚的歌聲時，它是在警告其他雄鳥，並向雌鳥宣傳它的可用性"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20439,
-        "en": "available",
-        "kk": "/əˈveɪɫəbəɫ/",
-        "zh": "a. 可用的；可利用的",
+        "en": "blockage",
+        "kk": "",
+        "zh": "n. 封鎖;妨礙",
         "unit": 11,
-        "example": "Help is available.",
-        "exampleZh": "可以提供幫助。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20440,
-        "en": "avenue",
-        "kk": "/ˈævəˌnu/",
-        "zh": "n. 大街；大道",
+        "en": "blood",
+        "kk": "/blʌd/",
+        "zh": "n. 血;血液",
         "unit": 11,
-        "example": "Turn left onto Fifth Avenue.",
-        "exampleZh": "左轉進入第五大道。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20441,
-        "en": "average",
-        "kk": "/ˈævɝɪdʒ/",
-        "zh": "n. 平均；中等 a普通的；中等的 v 平均分配；平均達到",
+        "en": "bloom",
+        "kk": "",
+        "zh": "n. 開花;開花期v. 繁榮;興盛",
         "unit": 11,
-        "example": "That's about average.",
-        "exampleZh": "這大約是平均水平。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20442,
-        "en": "avoid",
-        "kk": "/əˈvɔɪd/",
-        "zh": "v. 避開；躲開",
+        "en": "blossom",
+        "kk": "",
+        "zh": "n. 開花;開花期v. 開花;生長茂盛",
         "unit": 11,
-        "example": "Sam tries to win Jess back while she tries to avoid him",
-        "exampleZh": "山姆試圖贏回傑西，而傑西則試圖避開他"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20443,
-        "en": "await",
-        "kk": "/əˈweɪt/",
-        "zh": "v. 等候；期待",
+        "en": "blow",
+        "kk": "/bloʊ/",
+        "zh": "v. 吹;吹奏",
         "unit": 11,
-        "example": "Are they awaiting us?",
-        "exampleZh": "他們在等我們嗎？"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20444,
-        "en": "awake",
-        "kk": "/əˈweɪk/",
-        "zh": "adj. 醒著的",
+        "en": "blunder",
+        "kk": "",
+        "zh": "v. 犯大錯;出漏 子n. 大錯",
         "unit": 11,
-        "example": "Adriano jolted awake.",
-        "exampleZh": "阿德里亞諾猛地驚醒。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20445,
-        "en": "award",
-        "kk": "/əˈwɔɹd/",
-        "zh": "n. 獎",
+        "en": "blur",
+        "kk": "",
+        "zh": "v. 使模糊不清;使朦 朧n. 模糊",
         "unit": 11,
-        "example": "Sami won many awards.",
-        "exampleZh": "薩米贏得了許多獎項。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20446,
-        "en": "aware",
-        "kk": "/əˈwɛɹ/",
-        "zh": "adj. 意識到的",
+        "en": "board",
+        "kk": "/bɔːrd/",
+        "zh": "n. 木板;委員會; 理事會",
         "unit": 11,
-        "example": "Yanni became aware.",
-        "exampleZh": "雅尼意識到了。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20447,
-        "en": "awareness",
+        "en": "boardroom",
         "kk": "",
-        "zh": "n. 察覺；覺悟B",
+        "zh": "n. 會議室",
         "unit": 11,
-        "example": "Yanni regained awareness.",
-        "exampleZh": "雅尼恢復了知覺。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20448,
-        "en": "awful",
-        "kk": "/ˈɑfəɫ/",
-        "zh": "adj. 糟糕的",
+        "en": "boast",
+        "kk": "",
+        "zh": "v. 自吹自擂;誇耀",
         "unit": 11,
-        "example": "an awful speech",
-        "exampleZh": "一次糟糕的演講"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20449,
-        "en": "awkward",
-        "kk": "/ˈɑkwɝd/",
-        "zh": "adj. 尷尬的",
+        "en": "boat",
+        "kk": "/boʊt/",
+        "zh": "n. 小船",
         "unit": 11,
-        "example": "He fell awkwardly.",
-        "exampleZh": "他尷尬地摔倒了。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20450,
-        "en": "backdrop",
-        "kk": "",
-        "zh": "n. 背景",
+        "en": "body",
+        "kk": "/ˈbɑːdi/",
+        "zh": "n. 身體;肉體",
         "unit": 11,
-        "example": "This waterfall is an amazing backdrop for pictures.",
-        "exampleZh": "這座瀑布是拍照的絕佳背景。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20451,
-        "en": "background",
-        "kk": "/ˈbækˌɡɹaʊnd/",
-        "zh": "n. 背景；遠因",
+        "en": "boil",
+        "kk": "/bɔɪl/",
+        "zh": "v. 沸騰;烹煮",
         "unit": 11,
-        "example": "Tom has a humble background.",
-        "exampleZh": "湯姆出身卑微。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20452,
-        "en": "backlog",
+        "en": "bold",
         "kk": "",
-        "zh": "n. 存貨；儲備金",
+        "zh": "a. 無畏的;大膽的",
         "unit": 11,
-        "example": "the company took on extra staff to clear the backlog of work",
-        "exampleZh": "公司增聘員工清理積壓的工作"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20453,
-        "en": "backup",
-        "kk": "",
-        "zh": "n. 備用；備用物a 備用的 v 備份",
+        "en": "bomb",
+        "kk": "/bɑːm/",
+        "zh": "n. 炸彈;失敗v. 轟 炸;轟擊",
         "unit": 11,
-        "example": "Tom called for backup.",
-        "exampleZh": "湯姆請求支援。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20454,
-        "en": "baggage",
-        "kk": "/ˈbæɡədʒ/",
-        "zh": "n. 行李",
+        "en": "bombard",
+        "kk": "",
+        "zh": "v. 砲擊;轟炸",
         "unit": 11,
-        "example": "Here is my baggage.",
-        "exampleZh": "這是我的行李。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20455,
-        "en": "balance",
-        "kk": "/ˈbæɫəns/",
-        "zh": "n. 平衡；均衡 v使平衡",
+        "en": "bond",
+        "kk": "/bɑːnd/",
+        "zh": "n. 聯結;聯繫",
         "unit": 11,
-        "example": "overseas investments can add balance to an investment portfolio",
-        "exampleZh": "海外投資可以增加投資組合的平衡"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20456,
-        "en": "ballot",
-        "kk": "/ˈbæɫət/",
-        "zh": "n. 選票",
+        "en": "bone",
+        "kk": "/boʊn/",
+        "zh": "n. 骨;骨頭",
         "unit": 11,
-        "example": "the commissioners were elected by ballot",
-        "exampleZh": "委員是透過投票選出的"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20457,
-        "en": "ban",
-        "kk": "/ˈbæn/",
-        "zh": "n. 禁止；禁令 v 禁止；取締",
+        "en": "bonus",
+        "kk": "",
+        "zh": "n. 紅利;獎金",
         "unit": 11,
-        "example": "a proposed ban on foreign correspondents was condemned by international leaders",
-        "exampleZh": "禁止外國記者的提議遭到國際領袖的譴責"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20458,
-        "en": "band",
-        "kk": "/ˈbænd/",
-        "zh": "n. 帶；細繩；樂團",
+        "en": "book",
+        "kk": "/bʊk/",
+        "zh": "n. 書;書籍",
         "unit": 11,
-        "example": "a narrow band of gold was her only jewelry",
-        "exampleZh": "一條窄金帶是她唯一的珠寶"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20459,
-        "en": "bankrupt",
-        "kk": "/ˈbæŋkɹəpt/",
-        "zh": "a. 破產的 v 使破產 n 破產者",
-        "unit": 11,
-        "example": "I'll bankrupt you.",
-        "exampleZh": "我會讓你破產。"
-    },
-    {
-        "id": 20460,
-        "en": "bankruptcy",
-        "kk": "",
-        "zh": "n. 破產；倒閉",
-        "unit": 11,
-        "example": "Sami declared bankruptcy.",
-        "exampleZh": "薩米宣布破產。"
-    },
-    {
-        "id": 20461,
-        "en": "banner",
-        "kk": "/ˈbænɝ/",
-        "zh": "n. 旗幟；橫幅",
-        "unit": 11,
-        "example": "The Amazigh banner is magnificent.",
-        "exampleZh": "阿馬齊格旗雄偉壯觀。"
-    },
-    {
-        "id": 20462,
-        "en": "banquet",
-        "kk": "/ˈbæŋkwət/",
-        "zh": "n. 宴會；盛宴 v宴請",
-        "unit": 11,
-        "example": "a ten-course banquet",
-        "exampleZh": "十道菜的宴會"
-    },
-    {
-        "id": 20463,
-        "en": "bare",
-        "kk": "/ˈbɛɹ/",
-        "zh": "a. 裸的；光禿禿的 v使赤裸；露出",
-        "unit": 11,
-        "example": "bare floorboards",
-        "exampleZh": "裸露的地板"
-    },
-    {
-        "id": 20464,
-        "en": "barely",
-        "kk": "/ˈbɛɹɫi/",
-        "zh": "ad. 僅僅；勉強",
-        "unit": 11,
-        "example": "Mennad barely ate.",
-        "exampleZh": "門納德幾乎沒吃東西。"
-    },
-    {
-        "id": 20465,
-        "en": "bargain",
-        "kk": "/ˈbɑɹɡən/",
-        "zh": "n. 協議；買賣 v討價還價",
-        "unit": 11,
-        "example": "I love to bargain.",
-        "exampleZh": "我喜歡討價還價。"
-    },
-    {
-        "id": 20466,
-        "en": "barrier",
-        "kk": "/ˈbæɹiɝ/",
-        "zh": "n. 障礙物；路障",
-        "unit": 11,
-        "example": "We've hit a barrier.",
-        "exampleZh": "我們遇到了障礙。"
-    },
-    {
-        "id": 20467,
-        "en": "base",
-        "kk": "/ˈbeɪs/",
-        "zh": "n. 基礎",
-        "unit": 11,
-        "example": "she and her boyfriend got to second base",
-        "exampleZh": "她和她的男朋友到達二壘"
-    },
-    {
-        "id": 20468,
-        "en": "basic",
-        "kk": "/ˈbeɪsɪk/",
-        "zh": "n. 基礎的；基本的n 基礎；基本原理",
-        "unit": 11,
-        "example": "a coarse-grained, basic, plutonic rock",
-        "exampleZh": "粗粒基性深成岩"
-    },
-    {
-        "id": 20469,
-        "en": "basis",
-        "kk": "/ˈbeɪsəs/",
-        "zh": "n. 基礎；根據",
-        "unit": 11,
-        "example": "trust is the only basis for a good working relationship",
-        "exampleZh": "信任是良好工作關係的唯一基礎"
-    },
-    {
-        "id": 20470,
-        "en": "bear",
-        "kk": "/ˈbɛɹ/",
-        "zh": "v. 忍受；承擔",
-        "unit": 11,
-        "example": "no one likes to bear the responsibility for such decisions",
-        "exampleZh": "沒有人願意為這樣的決定負責"
-    },
-    {
-        "id": 20471,
-        "en": "beat",
-        "kk": "/ˈbit/",
-        "zh": "v. 打；擊；敲 n 敲打；敲擊聲 a 筋疲力盡的；垂頭喪氣的",
-        "unit": 11,
-        "example": "public clamor for more police officers on the beat",
-        "exampleZh": "民眾呼籲增加警力"
-    },
-    {
-        "id": 20472,
-        "en": "behalf",
-        "kk": "/bɪˈhæf/",
-        "zh": "n. 代表；利益",
-        "unit": 11,
-        "example": "Speak on my behalf!",
-        "exampleZh": "代表我說話吧！"
-    },
-    {
-        "id": 20473,
-        "en": "behave",
-        "kk": "/bɪˈheɪv/",
-        "zh": "v. 表現；行為舉止",
-        "unit": 11,
-        "example": "Behave yourselves!",
-        "exampleZh": "好好表現吧！"
-    },
-    {
-        "id": 20474,
-        "en": "behavior",
-        "kk": "/bɪˈheɪvjɝ/",
-        "zh": "n. 行為；舉止",
-        "unit": 11,
-        "example": "Change your behavior.",
-        "exampleZh": "改變你的行為。"
-    },
-    {
-        "id": 20475,
-        "en": "belongings",
-        "kk": "/bɪˈɫɔŋɪŋz/",
-        "zh": "n. 財產；攜帶物品",
-        "unit": 11,
-        "example": "Pack your belongings.",
-        "exampleZh": "收拾好你的物品。"
-    },
-    {
-        "id": 20476,
-        "en": "below",
-        "kk": "/biˈɫoʊ/",
-        "zh": "ad. 在下面；到下面prep 在⋯下面",
-        "unit": 11,
-        "example": "the most common methods are shown below",
-        "exampleZh": "最常見的方法如下圖所示"
-    },
-    {
-        "id": 20477,
-        "en": "benchmark",
-        "kk": "",
-        "zh": "n. 水準點；基準",
-        "unit": 11,
-        "example": "She thinks that happiness and health should be the benchmarks for success.",
-        "exampleZh": "她認為幸福和健康應該是成功的標準。"
-    },
-    {
-        "id": 20478,
-        "en": "beneficial",
-        "kk": "/ˌbɛnəˈfɪʃəɫ/",
-        "zh": "adj. 有益的",
-        "unit": 11,
-        "example": "the beneficial effect on the economy",
-        "exampleZh": "對經濟的有利影響"
-    },
-    {
-        "id": 20479,
-        "en": "benefit",
-        "kk": "/ˈbɛnəfɪt/",
-        "zh": "n. 福利；利益",
-        "unit": 11,
-        "example": "tenants bought their houses with the benefit of a discount",
-        "exampleZh": "租戶以折扣優惠購買房屋"
-    },
-    {
-        "id": 20480,
-        "en": "beside",
-        "kk": "/ˌbiˈsaɪd/",
-        "zh": "prep. 在⋯旁；在旁邊",
-        "unit": 11,
-        "example": "on the table beside the bed",
-        "exampleZh": "在床邊的桌子上"
-    },
-    {
-        "id": 20481,
-        "en": "besides",
-        "kk": "/ˌbiˈsaɪdz/",
-        "zh": "ad. 此外；而且prep 在⋯之外",
-        "unit": 11,
-        "example": "I have no other family besides my parents",
-        "exampleZh": "除了父母我沒有其他家人"
-    },
-    {
-        "id": 20482,
-        "en": "betray",
-        "kk": "/bɪˈtɹeɪ/",
-        "zh": "v. 背叛；出賣",
-        "unit": 11,
-        "example": "They felt betrayed.",
-        "exampleZh": "他們感到被背叛了。"
-    },
-    {
-        "id": 20483,
-        "en": "beverage",
-        "kk": "/ˈbɛvɝɪdʒ/",
-        "zh": "n. 飲料",
-        "unit": 11,
-        "example": "Milk is a common beverage.",
-        "exampleZh": "牛奶是一種常見的飲料。"
-    },
-    {
-        "id": 20484,
-        "en": "beyond",
-        "kk": "/ˌbiˈɔnd/",
-        "zh": "adv. 在更遠處；往更遠處 prep 向⋯的那一邊；越過",
-        "unit": 11,
-        "example": "she blurs the boundaries between reality and what lies beyond",
-        "exampleZh": "她模糊了現實與超越之間的界限"
-    },
-    {
-        "id": 20485,
-        "en": "bias",
-        "kk": "/ˈbaɪəs/",
-        "zh": "n. 成見；偏心",
-        "unit": 11,
-        "example": "Tom seemed biased.",
-        "exampleZh": "湯姆似乎有偏見。"
-    },
-    {
-        "id": 20486,
-        "en": "bid",
-        "kk": "/ˈbɪd/",
-        "zh": "v. 命令；吩咐；出價",
-        "unit": 11,
-        "example": "guests will bid for pieces of fine jewelry",
-        "exampleZh": "客人將競標精美珠寶"
-    },
-    {
-        "id": 20487,
-        "en": "bill",
-        "kk": "/ˈbɪɫ/",
-        "zh": "n. 帳單；票據；議案",
-        "unit": 11,
-        "example": "he was running up a bill of hundreds of dollars",
-        "exampleZh": "他已經欠了幾百美元的帳單"
-    },
-    {
-        "id": 20488,
-        "en": "bind",
-        "kk": "/ˈbaɪnd/",
-        "zh": "v. 捆；綁",
-        "unit": 11,
-        "example": "a protein in a form that can bind DNA",
-        "exampleZh": "一種可以結合 DNA 的蛋白質"
-    },
-    {
-        "id": 20489,
-        "en": "biography",
-        "kk": "/baɪˈɑɡɹəfi/",
-        "zh": "n. 傳記",
-        "unit": 11,
-        "example": "Ziri wrote Rima's biography.",
-        "exampleZh": "齊裡（Ziri）撰寫了裡瑪（Rima）的傳記。"
-    },
-    {
-        "id": 20490,
-        "en": "biology",
-        "kk": "/baɪˈɑɫədʒi/",
-        "zh": "n. 生物學",
-        "unit": 11,
-        "example": "Yuri loved biology.",
-        "exampleZh": "尤里熱愛生物學。"
-    },
-    {
-        "id": 20491,
-        "en": "bitter",
-        "kk": "/ˈbɪtɝ/",
-        "zh": "a. 苦的；痛苦的",
-        "unit": 11,
-        "example": "the raw berries have an intensely bitter flavor",
-        "exampleZh": "生漿果有強烈的苦味"
-    },
-    {
-        "id": 20492,
-        "en": "blame",
-        "kk": "/ˈbɫeɪm/",
-        "zh": "v. 責備；指責",
-        "unit": 11,
-        "example": "Lukas blamed himself.",
-        "exampleZh": "盧卡斯責怪自己。"
-    },
-    {
-        "id": 20493,
-        "en": "blank",
-        "kk": "/ˈbɫæŋk/",
-        "zh": "a. 空的；無內容的n 空白；空白處 v 使模糊；刪去",
-        "unit": 11,
-        "example": "her mind went blank",
-        "exampleZh": "她的大腦一片空白"
-    },
-    {
-        "id": 20494,
-        "en": "blanket",
-        "kk": "/ˈbɫæŋkət/",
-        "zh": "n. 毛毯；毯子",
-        "unit": 11,
-        "example": "I bought a blanket.",
-        "exampleZh": "我買了一條毯子。"
-    },
-    {
-        "id": 20495,
-        "en": "blast",
-        "kk": "/ˈbɫæst/",
-        "zh": "n. 爆炸",
-        "unit": 11,
-        "example": "damn and blast this awful place!",
-        "exampleZh": "該死的，炸毀這個可怕的地方！"
-    },
-    {
-        "id": 20496,
-        "en": "blend",
-        "kk": "/ˈbɫɛnd/",
-        "zh": "v. 使混雜；使交融n 混雜；交融",
-        "unit": 11,
-        "example": "It's a special blend.",
-        "exampleZh": "這是一種特殊的混合物。"
-    },
-    {
-        "id": 20497,
-        "en": "blind",
-        "kk": "/ˈbɫaɪnd/",
-        "zh": "a. 盲的；視而不見的；不願承認的",
-        "unit": 11,
-        "example": "he's absolutely blind where you're concerned, isn't he?",
-        "exampleZh": "就你而言，他絕對是瞎子，不是嗎？"
-    },
-    {
-        "id": 20498,
-        "en": "block",
-        "kk": "/ˈbɫɑk/",
-        "zh": "n. 街區；障礙 v 阻塞；堵住；封鎖",
-        "unit": 11,
-        "example": "they tried to block the release of the film",
-        "exampleZh": "他們試圖阻止這部電影的上映"
-    },
-    {
-        "id": 20499,
-        "en": "bloom",
-        "kk": "/ˈbɫum/",
-        "zh": "n. 開花；開花期 v繁榮；興盛",
-        "unit": 11,
-        "example": "Flowers are blooming.",
-        "exampleZh": "花朵盛開。"
-    },
-    {
-        "id": 20500,
-        "en": "board",
-        "kk": "/ˈbɔɹd/",
-        "zh": "n. 木板；委員會；理事會",
-        "unit": 11,
-        "example": "they would not be able to board without a ticket",
-        "exampleZh": "沒有票他們將無法登機"
-    },
-    {
-        "id": 20501,
-        "en": "boast",
-        "kk": "/ˈboʊst/",
-        "zh": "v. 自吹自擂；誇耀",
-        "unit": 11,
-        "example": "He boasts after winning.",
-        "exampleZh": "獲勝後他誇耀。"
-    },
-    {
-        "id": 20502,
-        "en": "bold",
-        "kk": "/ˈboʊɫd/",
-        "zh": "a. 無畏的；大膽的",
-        "unit": 11,
-        "example": "she tossed him a bold look",
-        "exampleZh": "她大膽地看了他一眼"
-    },
-    {
-        "id": 20503,
-        "en": "bond",
-        "kk": "/ˈbɑnd/",
-        "zh": "n. 聯結；聯繫",
-        "unit": 11,
-        "example": "Their bond was strong.",
-        "exampleZh": "他們的聯繫很牢固。"
-    },
-    {
-        "id": 20504,
-        "en": "bonus",
-        "kk": "/ˈboʊnəs/",
-        "zh": "n. 紅利；獎金",
-        "unit": 11,
-        "example": "Did you get a bonus?",
-        "exampleZh": "你得到獎金了嗎？"
-    },
-    {
-        "id": 20505,
         "en": "booklet",
         "kk": "",
         "zh": "n. 小冊子",
         "unit": 11,
-        "example": "This booklet is free of charge.",
-        "exampleZh": "這本小冊子是免費的。"
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20460,
+        "en": "bookshelf",
+        "kk": "",
+        "zh": "n. 書架;書櫃",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20461,
+        "en": "bookstore",
+        "kk": "",
+        "zh": "n. 書店",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20462,
+        "en": "boom",
+        "kk": "/buːm/",
+        "zh": "n. 激增;繁榮v. 迅 速發展;興旺",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20463,
+        "en": "boost",
+        "kk": "",
+        "zh": "v. 推動;幫助n. 推 動;促進",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20464,
+        "en": "boot",
+        "kk": "/buːt/",
+        "zh": "n. 靴子",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20465,
+        "en": "booth",
+        "kk": "",
+        "zh": "n. 攤販;小隔間",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20466,
+        "en": "border",
+        "kk": "/ˈbɔːrdər/",
+        "zh": "n. 邊緣;邊境v. 毗鄰,接界",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20467,
+        "en": "borderline",
+        "kk": "",
+        "zh": "n. 邊界;界線",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20468,
+        "en": "boring",
+        "kk": "",
+        "zh": "a. 令人生厭的;乏 味的",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20469,
+        "en": "borrow",
+        "kk": "/ˈbɑːroʊ/",
+        "zh": "v. 借用;借",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20470,
+        "en": "boss",
+        "kk": "/bɔːs/",
+        "zh": "n. 老闆;上司",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20471,
+        "en": "bother",
+        "kk": "/ˈbɑːðər/",
+        "zh": "v. 煩擾;打攪",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20472,
+        "en": "bothersome",
+        "kk": "",
+        "zh": "a. 令人討厭 的;麻煩的",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20473,
+        "en": "bottle",
+        "kk": "/ˈbɑːtl/",
+        "zh": "n. 瓶子",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20474,
+        "en": "bottom",
+        "kk": "/ˈbɑːtəm/",
+        "zh": "n. 底部;下端",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20475,
+        "en": "boulevard",
+        "kk": "",
+        "zh": "n. 大道",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20476,
+        "en": "bounce",
+        "kk": "",
+        "zh": "v. 彈起;彈回",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20477,
+        "en": "bound",
+        "kk": "/baʊnd/",
+        "zh": "v. 跳躍;跳起",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20478,
+        "en": "boundary",
+        "kk": "",
+        "zh": "n. 邊界;分界 線",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20479,
+        "en": "bow",
+        "kk": "",
+        "zh": "n. 弓",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20480,
+        "en": "bowl",
+        "kk": "/boʊl/",
+        "zh": "n. 保齡球v. 投:滾",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20481,
+        "en": "box",
+        "kk": "/bɑːks/",
+        "zh": "n. 箱;盒;匣",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20482,
+        "en": "box office",
+        "kk": "",
+        "zh": "n. 售票處;票 房",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20483,
+        "en": "boycott",
+        "kk": "",
+        "zh": "v. 杯葛;聯合抵 制n. 杯葛;聯合抵制",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20484,
+        "en": "brace",
+        "kk": "",
+        "zh": "n. 支柱;支撐物v. 支撐;加固",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20485,
+        "en": "bracket",
+        "kk": "",
+        "zh": "n. 托架;撐架",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20486,
+        "en": "brain",
+        "kk": "/breɪn/",
+        "zh": "n. 智力,頭腦",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20487,
+        "en": "brainstorm",
+        "kk": "",
+        "zh": "v. 集體研討; 集思廣益",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20488,
+        "en": "brake",
+        "kk": "",
+        "zh": "v. 煞車n. 煞車",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20489,
+        "en": "branch",
+        "kk": "/bræntʃ/",
+        "zh": "n. 樹枝;支流; 分部;部門",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20490,
+        "en": "brand",
+        "kk": "/brænd/",
+        "zh": "n. 品牌;商標",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20491,
+        "en": "brand-new",
+        "kk": "",
+        "zh": "a. 全新的;嶄 新的",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20492,
+        "en": "brave",
+        "kk": "/breɪv/",
+        "zh": "a. 勇敢的:英勇的",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20493,
+        "en": "bravely",
+        "kk": "",
+        "zh": "ad. 勇敢地:英勇 地",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20494,
+        "en": "bravo",
+        "kk": "",
+        "zh": "n. 喝采聲",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20495,
+        "en": "breach",
+        "kk": "",
+        "zh": "n. 破壞,違反v. 破壞,違反",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20496,
+        "en": "bread",
+        "kk": "/bred/",
+        "zh": "n. 麵包",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20497,
+        "en": "breadth",
+        "kk": "",
+        "zh": "n. 寬度;幅度",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20498,
+        "en": "break",
+        "kk": "/breɪk/",
+        "zh": "v. 打破;折斷n. 破 損;休息;機會",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20499,
+        "en": "breakable",
+        "kk": "",
+        "zh": "a. 會破的;脆 的",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20500,
+        "en": "breakdown",
+        "kk": "",
+        "zh": "n. 故障;損 壞",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20501,
+        "en": "breakfast",
+        "kk": "/ˈbrekfəst/",
+        "zh": "n. 早餐",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20502,
+        "en": "breakout",
+        "kk": "",
+        "zh": "n. 包圍突破",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20503,
+        "en": "breakthrough",
+        "kk": "",
+        "zh": "n. 突破性 進展;突破",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20504,
+        "en": "breakup",
+        "kk": "",
+        "zh": "n. 中斷;中止",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20505,
+        "en": "breathe",
+        "kk": "/briːð/",
+        "zh": "v. 呼吸;呼氣",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20506,
-        "en": "boom",
-        "kk": "/ˈbum/",
-        "zh": "n. 激增；繁榮 v 迅速發展；興旺",
+        "en": "breathless",
+        "kk": "",
+        "zh": "a. 呼吸困難 的;扣人心弦的",
         "unit": 11,
-        "example": "if you get caught, boom, you're a felon",
-        "exampleZh": "如果你被抓住了，繁榮，你就是個重罪犯"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20507,
-        "en": "boost",
-        "kk": "/ˈbust/",
-        "zh": "v. 推動；幫助 n 推動；促進",
+        "en": "breathtaking",
+        "kk": "",
+        "zh": "a. 驚人的; 令人屏息的",
         "unit": 11,
-        "example": "Boost your productivity.",
-        "exampleZh": "提高您的生產力。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20508,
-        "en": "booth",
-        "kk": "/ˈbuθ/",
-        "zh": "n. 攤販；小隔間",
+        "en": "breeze",
+        "kk": "",
+        "zh": "n. 微風;和風",
         "unit": 11,
-        "example": "a ticket booth",
-        "exampleZh": "售票亭"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20509,
-        "en": "border",
-        "kk": "/ˈbɔɹdɝ/",
-        "zh": "n. 邊緣；邊境 v毗鄰，接界",
+        "en": "brick",
+        "kk": "/brɪk/",
+        "zh": "n. 磚;磚塊",
         "unit": 11,
-        "example": "France borders Spain.",
-        "exampleZh": "法國與西班牙接壤。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20510,
-        "en": "bother",
-        "kk": "/ˈbɑðɝ/",
-        "zh": "v. 煩擾；打攪",
+        "en": "bride",
+        "kk": "",
+        "zh": "n. 新娘",
         "unit": 11,
-        "example": "I hope she hasn't been a bother",
-        "exampleZh": "我希望她沒有打擾"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20511,
-        "en": "bottom",
-        "kk": "/ˈbɑtəm/",
-        "zh": "n. 底部；下端",
+        "en": "bridge",
+        "kk": "/brɪdʒ/",
+        "zh": "n. 橋:橋墩",
         "unit": 11,
-        "example": "the bottom of the page",
-        "exampleZh": "頁面底部"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20512,
-        "en": "bounce",
-        "kk": "/ˈbaʊns/",
-        "zh": "v. 彈起；彈回",
+        "en": "brief",
+        "kk": "/briːf/",
+        "zh": "a. 簡短的;短暫的",
         "unit": 11,
-        "example": "The cheque bounced.",
-        "exampleZh": "支票被退回了。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20513,
-        "en": "bound",
-        "kk": "/ˈbaʊnd/",
-        "zh": "v. 跳躍；跳起",
+        "en": "briefcase",
+        "kk": "",
+        "zh": "n. 公事包",
         "unit": 11,
-        "example": "an upper bound on each modulus",
-        "exampleZh": "每個模數的上限"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20514,
-        "en": "boundary",
-        "kk": "/ˈbaʊndɝi/",
-        "zh": "n. 邊界；分界線",
+        "en": "briefly",
+        "kk": "",
+        "zh": "a. 簡短地;短暫地",
         "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
         "id": 20515,
-        "en": "branch",
-        "kk": "/ˈbɹæntʃ/",
-        "zh": "n. 樹枝；支流；分部；部門",
+        "en": "bright",
+        "kk": "/braɪt/",
+        "zh": "a. 發亮的;晴朗的",
         "unit": 11,
-        "example": "he went to work at our Boston branch",
-        "exampleZh": "他到我們波士頓分公司工作"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20516,
-        "en": "brand",
-        "kk": "/ˈbɹænd/",
-        "zh": "n. 品牌；商標",
+        "en": "brighten",
+        "kk": "",
+        "zh": "v. 使明亮;使閃 亮",
         "unit": 11,
-        "example": "a new brand of detergent",
-        "exampleZh": "一種新品牌的洗滌劑"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20517,
-        "en": "brave",
-        "kk": "/ˈbɹeɪv/",
-        "zh": "a. 勇敢的：英勇的",
+        "en": "brilliant",
+        "kk": "/ˈbrɪljənt/",
+        "zh": "a. 光輝的;明亮 的",
         "unit": 11,
-        "example": "we had to brave the full heat of the sun",
-        "exampleZh": "我們不得不勇敢地面對太陽的炎熱"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20518,
-        "en": "breach",
+        "en": "brisk",
         "kk": "",
-        "zh": "n. 破壞，違反 v破壞，違反",
+        "zh": "a. 活潑的;生氣勃 勃的",
         "unit": 11,
-        "example": "We have a security breach.",
-        "exampleZh": "我們有安全漏洞。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20519,
-        "en": "break",
-        "kk": "/ˈbɹeɪk/",
-        "zh": "v. 打破；折斷 n 破損；休息；機會",
+        "en": "brittle",
+        "kk": "",
+        "zh": "a. 易碎的;敏感的; 難相處的",
         "unit": 11,
-        "example": "a break of 83 put him in front for the first time",
-        "exampleZh": "83桿的單桿成績讓他首次領先"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20520,
-        "en": "breakdown",
-        "kk": "/ˈbɹeɪkˌdaʊn/",
-        "zh": "n. 故障；損壞",
+        "en": "broadcast",
+        "kk": "/ˈbrɔːdkæst/",
+        "zh": "v. 廣播;播送",
         "unit": 11,
-        "example": "Heather had a breakdown following the death of her sister",
-        "exampleZh": "希瑟在姊姊過世後精神崩潰"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20521,
-        "en": "breakthrough",
-        "kk": "/ˈbɹeɪkˌθɹu/",
-        "zh": "n. 突破性進展；突破",
+        "en": "brochure",
+        "kk": "",
+        "zh": "n. 小冊子",
         "unit": 11,
-        "example": "we're seeing more and more of these breakthrough infections",
-        "exampleZh": "我們看到越來越多的突破性感染"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20522,
-        "en": "breathe",
-        "kk": "/ˈbɹið/",
-        "zh": "v. 呼吸；呼氣",
+        "en": "broker",
+        "kk": "",
+        "zh": "n. 代理人,中間人",
         "unit": 11,
-        "example": "Breathe naturally.",
-        "exampleZh": "自然呼吸。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20523,
-        "en": "brief",
-        "kk": "/ˈbɹif/",
-        "zh": "a. 簡短的；短暫的",
+        "en": "brokered",
+        "kk": "",
+        "zh": "v. 以中間人等 身分安排⋯⋯",
         "unit": 11,
-        "example": "introductions were brief and polite",
-        "exampleZh": "介紹簡短而禮貌"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20524,
-        "en": "briefcase",
-        "kk": "/ˈbɹifˌkeɪs/",
-        "zh": "n. 公事包514. brieﬂy a 簡短地；短暫地",
+        "en": "browse",
+        "kk": "",
+        "zh": "v. 瀏覽;觀看",
         "unit": 11,
-        "example": "Take this briefcase.",
-        "exampleZh": "拿著這個公事包。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20525,
-        "en": "briefing",
+        "en": "browser",
         "kk": "",
-        "zh": "n. 簡報",
+        "zh": "n. 瀏覽器",
         "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
         "id": 20526,
-        "en": "brilliant",
-        "kk": "/ˈbɹɪɫjənt/",
-        "zh": "a. 光輝的；明亮的",
+        "en": "bruise",
+        "kk": "",
+        "zh": "n. 傷痕;青腫v. 使 受瘀傷,使青腫",
         "unit": 11,
-        "example": "brilliant sunshine illuminated the scene",
-        "exampleZh": "燦爛的陽光照亮了現場"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20527,
-        "en": "bring",
-        "kk": "/ˈbɹɪŋ/",
-        "zh": "v. 帶來",
+        "en": "brush",
+        "kk": "/brʌʃ/",
+        "zh": "v. 刷;刷洗n. 刷子",
         "unit": 11,
-        "example": "I'll give you an aspirin to bring down your temperature",
-        "exampleZh": "我會給你一片阿斯匹靈來降低你的體溫"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20528,
-        "en": "broad",
-        "kk": "/ˈbɹɔd/",
-        "zh": "adj. 寬廣的",
+        "en": "brush-off",
+        "kk": "",
+        "zh": "n. 拒絕;不理 睬",
         "unit": 11,
-        "example": "three broad categories of mutual funds",
-        "exampleZh": "共同基金三大類"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20529,
-        "en": "broadcast",
-        "kk": "/ˈbɹɔdˌkæst/",
-        "zh": "v. 廣播；播送",
+        "en": "bruta",
+        "kk": "",
+        "zh": "a. 冷酷的;野蠻的",
         "unit": 11,
-        "example": "a broadcast journalist",
-        "exampleZh": "一名廣播記者"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20530,
-        "en": "broaden",
-        "kk": "/ˈbɹɔdən/",
-        "zh": "v. 變寬",
+        "en": "brutally",
+        "kk": "",
+        "zh": "ad. 冷酷地;野蠻 地",
         "unit": 11,
-        "example": "efforts to broaden classical music's appeal",
-        "exampleZh": "努力擴大古典音樂的吸引力"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20531,
-        "en": "brochure",
-        "kk": "/bɹoʊˈʃʊɹ/",
-        "zh": "n. 小冊子",
+        "en": "bubble",
+        "kk": "",
+        "zh": "n. 泡泡v. 沸騰; 冒泡",
         "unit": 11,
-        "example": "a holiday brochure",
-        "exampleZh": "假期小冊子"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20532,
-        "en": "broker",
+        "en": "bucket",
         "kk": "",
-        "zh": "n. 代理人，中間人",
+        "zh": "n. 水桶;提桶",
         "unit": 11,
-        "example": "Tom is a stock broker.",
-        "exampleZh": "湯姆是一名股票經紀人。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20533,
-        "en": "browse",
-        "kk": "/ˈbɹaʊz/",
-        "zh": "v. 瀏覽；觀看",
+        "en": "buckle",
+        "kk": "",
+        "zh": "n. 釦子;搭鉤v. 扣住;扣緊",
         "unit": 11,
-        "example": "the animals browse the high foliage of trees",
-        "exampleZh": "動物們在高高的樹葉上覓食"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20534,
-        "en": "browser",
+        "en": "budge",
         "kk": "",
-        "zh": "n. 瀏覽器",
+        "zh": "v. 微微移動;讓步",
         "unit": 11,
-        "example": "Browsers are very useful.",
-        "exampleZh": "瀏覽器非常有用。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20535,
         "en": "budget",
-        "kk": "/ˈbədʒɪt/",
-        "zh": "n. 預算；經費",
+        "kk": "/ˈbʌdʒɪt/",
+        "zh": "n. 預算;經費",
         "unit": 11,
-        "example": "Tom made a budget.",
-        "exampleZh": "湯姆做了一個預算。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20536,
         "en": "build",
-        "kk": "/ˈbɪɫd/",
-        "zh": "v. 建造；建立 n 體格；體型",
+        "kk": "/bɪld/",
+        "zh": "v. 建造;建立n. 體 格;體型",
         "unit": 11,
-        "example": "they need to build a strong relationship with journal users",
-        "exampleZh": "他們需要與期刊使用者建立牢固的關係"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20537,
         "en": "building",
-        "kk": "/ˈbɪɫdɪŋ/",
-        "zh": "n. 建築物；大樓",
+        "kk": "/ˈbɪldɪŋ/",
+        "zh": "n. 建築物;大樓",
         "unit": 11,
-        "example": "the building of democracy in Guatemala",
-        "exampleZh": "瓜地馬拉的民主建設"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20538,
         "en": "bulk",
-        "kk": "/ˈbəɫk/",
-        "zh": "n. 體積；容積 a 大量的；大批的",
+        "kk": "",
+        "zh": "n. 體積;容積a. 大量 的;大批的",
         "unit": 11,
-        "example": "I always buy in bulk.",
-        "exampleZh": "我總是批量購買。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20539,
-        "en": "bulletin",
-        "kk": "/ˈbʊɫɪtən/",
-        "zh": "n. 公告",
+        "en": "business",
+        "kk": "/ˈbɪznəs/",
+        "zh": "n. 商業;職業",
         "unit": 11,
-        "example": "log-in details will be sent out to members via the monthly bulletin",
-        "exampleZh": "登入詳細資訊將透過每月公告發送給會員"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20540,
-        "en": "bunch",
-        "kk": "/ˈbəntʃ/",
-        "zh": "n. 串",
+        "en": "businessman",
+        "kk": "",
+        "zh": "n. 商人",
         "unit": 11,
-        "example": "A bunch of nonsense!",
-        "exampleZh": "一堆廢話！"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20541,
-        "en": "bundle",
-        "kk": "/ˈbəndəɫ/",
-        "zh": "n. 束",
+        "en": "busy",
+        "kk": "/ˈbɪzi/",
+        "zh": "a. 忙碌的",
         "unit": 11,
-        "example": "he stopped occasionally in the villages to dance at country frolics, and bundle with the lasses",
-        "exampleZh": "他偶爾會在鄉村停下來，在鄉村嬉戲中跳舞，並與女孩們在一起"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20542,
-        "en": "burden",
-        "kk": "/ˈbɝdən/",
-        "zh": "n. 負擔",
+        "en": "button",
+        "kk": "/ˈbʌtn/",
+        "zh": "n. 鈕扣;按鈕",
         "unit": 11,
-        "example": "He lightened my burden.",
-        "exampleZh": "他減輕了我的負擔。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20543,
-        "en": "bureau",
-        "kk": "/ˈbjʊɹoʊ/",
-        "zh": "n. 局",
+        "en": "buy",
+        "kk": "/baɪ/",
+        "zh": "v. 買;購買",
         "unit": 11,
-        "example": "Flavio is the director of the bureau.",
-        "exampleZh": "弗拉維奧是該局局長。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20544,
-        "en": "burn",
-        "kk": "/ˈbɝn/",
-        "zh": "v. 燃燒",
+        "en": "buyer",
+        "kk": "",
+        "zh": "n. 買主;買家",
         "unit": 11,
-        "example": "exercise does help to burn calories",
-        "exampleZh": "運動確實有助於燃燒卡路里"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20545,
-        "en": "burst",
-        "kk": "/ˈbɝst/",
-        "zh": "v. 爆裂",
+        "en": "cab",
+        "kk": "",
+        "zh": "n. 計程車",
         "unit": 11,
-        "example": "he burst the balloon",
-        "exampleZh": "他把氣球弄破了"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20546,
-        "en": "business",
-        "kk": "/ˈbɪznəs/",
-        "zh": "n. 商業；職業",
+        "en": "cabin",
+        "kk": "",
+        "zh": "n. 客艙;駕駛艙",
         "unit": 11,
-        "example": "they must be told about this blackmailing business",
-        "exampleZh": "必須告訴他們有關敲詐勒索的事情"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20547,
-        "en": "button",
-        "kk": "/ˈbətən/",
-        "zh": "n. 鈕扣；按鈕",
+        "en": "cabine",
+        "kk": "",
+        "zh": "n. 櫥;櫃",
         "unit": 11,
-        "example": "just search for the app you want and click the 'buy' or 'install' button",
-        "exampleZh": "只需搜尋您想要的應用程序，然後點擊“購買”或“安裝”按鈕"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20548,
-        "en": "bypass",
-        "kk": "",
-        "zh": "v. 繞過",
+        "en": "cable",
+        "kk": "/ˈkeɪbl/",
+        "zh": "n. 纜;索",
         "unit": 11,
-        "example": "We'll bypass the city centre.",
-        "exampleZh": "我們將繞過市中心。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20549,
-        "en": "cabinet",
-        "kk": "/ˈkæbənət/",
-        "zh": "n. 櫥櫃",
+        "en": "café",
+        "kk": "",
+        "zh": "n. 咖啡廳",
         "unit": 11,
-        "example": "Here's the cabinet.",
-        "exampleZh": "這是內閣。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20550,
-        "en": "cable",
-        "kk": "/ˈkeɪbəɫ/",
-        "zh": "n. 纜；索549. café n 咖啡廳",
+        "en": "cafeteria",
+        "kk": "",
+        "zh": "n. 自助餐廳",
         "unit": 11,
-        "example": "he caught a glimpse of the mast, a cable or two downwind",
-        "exampleZh": "他瞥見了桅杆，順風的一兩條纜繩"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20551,
-        "en": "calculate",
-        "kk": "/ˈkæɫkjəˌɫeɪt/",
-        "zh": "v. 計算；算",
+        "en": "caffeine",
+        "kk": "",
+        "zh": "n. 咖啡因",
         "unit": 11,
-        "example": "I calculated hastily.",
-        "exampleZh": "我連忙算了算。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20552,
-        "en": "calculation",
-        "kk": "/ˌkæɫkjəˈɫeɪʃən/",
-        "zh": "n. 計算；估計",
+        "en": "calcium",
+        "kk": "",
+        "zh": "n. 鈣",
         "unit": 11,
-        "example": "This simplifies calculations.",
-        "exampleZh": "這簡化了計算。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20553,
-        "en": "calculator",
-        "kk": "/ˈkæɫkjəˌɫeɪtɝ/",
-        "zh": "n. 計算機",
+        "en": "calculate",
+        "kk": "/ˈkælkjuleɪt/",
+        "zh": "v. 計算;算",
         "unit": 11,
-        "example": "a pocket calculator",
-        "exampleZh": "袖珍計算器"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20554,
-        "en": "calendar",
-        "kk": "/ˈkæɫəndɝ/",
-        "zh": "n. 日曆",
+        "en": "calculation",
+        "kk": "",
+        "zh": "n. 計算;估計",
         "unit": 11,
-        "example": "it was at their discretion whether to index or calendar the records",
-        "exampleZh": "他們可以自行決定是否對記錄進行索引或日曆"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20555,
-        "en": "campaign",
-        "kk": "/kæmˈpeɪn/",
-        "zh": "n. 競選；活動",
+        "en": "calculator",
+        "kk": "",
+        "zh": "n. 計算機",
         "unit": 11,
-        "example": "Are you campaigning?",
-        "exampleZh": "你在競選嗎？"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20556,
-        "en": "campus",
-        "kk": "/ˈkæmpəs/",
-        "zh": "n. 校園；校區",
+        "en": "calendar",
+        "kk": "",
+        "zh": "n. 日曆",
         "unit": 11,
-        "example": "Are you on campus?",
-        "exampleZh": "你在校園嗎？"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20557,
-        "en": "cancel",
-        "kk": "/ˈkænsəɫ/",
-        "zh": "v. 取消；廢除；中止",
+        "en": "caliber",
+        "kk": "",
+        "zh": "n. 口徑;水準,程 度",
         "unit": 11,
-        "example": "a stamp franked and with an adhesive cancel",
-        "exampleZh": "蓋有加蓋郵戳和黏膠蓋銷的郵票"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20558,
+        "en": "call",
+        "kk": "/kɔːl/",
+        "zh": "v. 叫喊;呼叫n. 呼叫; 通話",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20559,
+        "en": "caller",
+        "kk": "",
+        "zh": "n. 訪問者;探望者",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20560,
+        "en": "calling",
+        "kk": "",
+        "zh": "n. 呼喊;召喚",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20561,
+        "en": "calm",
+        "kk": "/kɑːm/",
+        "zh": "a. 鎮靜的;沉著的v. 使鎮定;使平靜",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20562,
+        "en": "camera",
+        "kk": "/ˈkæmərə/",
+        "zh": "n. 照相機",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20563,
+        "en": "camp",
+        "kk": "/kæmp/",
+        "zh": "n. 營地;帳篷v. 紮 營;宿營",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20564,
+        "en": "campaign",
+        "kk": "/kæmˈpeɪn/",
+        "zh": "n. 競選;活動",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20565,
+        "en": "campus",
+        "kk": "/ˈkæmpəs/",
+        "zh": "n. 校園;校區",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20566,
+        "en": "cancel",
+        "kk": "/ˈkænsəl/",
+        "zh": "v. 取消;廢除;中 止",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20567,
         "en": "cancellation",
         "kk": "",
         "zh": "n. 取消",
@@ -4389,9259 +5103,3904 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 20559,
-        "en": "candidate",
-        "kk": "/ˈkændədeɪt/",
-        "zh": "n. 候選人；候補者",
-        "unit": 11,
-        "example": "Tom is a candidate.",
-        "exampleZh": "湯姆是一名候選人。"
-    },
-    {
-        "id": 20560,
-        "en": "canvas",
-        "kk": "/ˈkænvəs/",
-        "zh": "n. 帆布",
-        "unit": 11,
-        "example": "This is a very famous canvas.",
-        "exampleZh": "這是一幅非常著名的畫布。"
-    },
-    {
-        "id": 20561,
-        "en": "capable",
-        "kk": "/ˈkeɪpəbəɫ/",
-        "zh": "a. 有能力的；能幹的",
-        "unit": 11,
-        "example": "a highly capable man",
-        "exampleZh": "一個很有能力的人"
-    },
-    {
-        "id": 20562,
-        "en": "capacity",
-        "kk": "/kəˈpæsəti/",
-        "zh": "n. 容量；容積",
-        "unit": 11,
-        "example": "his capacity to inspire trust in others",
-        "exampleZh": "他激發他人信任的能力"
-    },
-    {
-        "id": 20563,
-        "en": "capital",
-        "kk": "/ˈkæpətəɫ/",
-        "zh": "n. 首都；資本",
-        "unit": 11,
-        "example": "he's a really capital fellow",
-        "exampleZh": "他真是個資本家"
-    },
-    {
-        "id": 20564,
-        "en": "capture",
-        "kk": "/ˈkæptʃɝ/",
-        "zh": "v. 捕獲；俘虜 n捕獲；俘虜",
-        "unit": 11,
-        "example": "Tom captured Mary.",
-        "exampleZh": "湯姆抓住了瑪麗。"
-    },
-    {
-        "id": 20565,
-        "en": "carbon",
-        "kk": "/ˈkɑɹbən/",
-        "zh": "n. 碳",
-        "unit": 11,
-        "example": "What about the carbon tax?",
-        "exampleZh": "那麼碳稅呢？"
-    },
-    {
-        "id": 20566,
-        "en": "care",
-        "kk": "/ˈkɛɹ/",
-        "zh": "v. 在乎：關心",
-        "unit": 11,
-        "example": "you care very deeply for him",
-        "exampleZh": "你非常關心他"
-    },
-    {
-        "id": 20567,
-        "en": "career",
-        "kk": "/kɝˈɪɹ/",
-        "zh": "n. 職業；工作",
-        "unit": 11,
-        "example": "Tom loves his career.",
-        "exampleZh": "湯姆熱愛他的職業。"
-    },
-    {
         "id": 20568,
-        "en": "careful",
-        "kk": "/ˈkɛɹfəɫ/",
-        "zh": "a. 小心翼翼的；仔細的",
+        "en": "candid",
+        "kk": "",
+        "zh": "a. 公正的,公平的",
         "unit": 11,
-        "example": "be careful not to lose her address",
-        "exampleZh": "小心不要遺失她的地址"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20569,
-        "en": "careless",
-        "kk": "",
-        "zh": "adj. 粗心的",
+        "en": "candidate",
+        "kk": "/ˈkændɪdət/",
+        "zh": "n. 候選人;候 補者",
         "unit": 11,
-        "example": "What a careless girl!",
-        "exampleZh": "真是個不小心的女孩！"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20570,
-        "en": "cargo",
-        "kk": "/ˈkɑɹˌɡoʊ/",
-        "zh": "n. 貨物",
+        "en": "capability",
+        "kk": "",
+        "zh": "n. 能力;才能",
         "unit": 11,
-        "example": "a cargo of oil",
-        "exampleZh": "一批石油"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20571,
-        "en": "carrier",
-        "kk": "/ˈkæɹiɝ/",
-        "zh": "n. 運送人；搬運人",
+        "en": "capable",
+        "kk": "/ˈkeɪpəbl/",
+        "zh": "a. 有能力的;能 幹的",
         "unit": 11,
-        "example": "Yanni is a mail carrier.",
-        "exampleZh": "雅尼是郵差。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20572,
-        "en": "carry",
-        "kk": "/ˈkæɹi/",
-        "zh": "out. Ph 實行；執行",
+        "en": "capacity",
+        "kk": "/kəˈpæsəti/",
+        "zh": "n. 容量;容積",
         "unit": 11,
-        "example": "they relied on dialogue to carry the plot",
-        "exampleZh": "他們依靠對話來推動情節"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20573,
-        "en": "cart",
-        "kk": "/ˈkɑɹt/",
-        "zh": "n. 小車，手推車",
+        "en": "capital",
+        "kk": "/ˈkæpɪtl/",
+        "zh": "n. 首都;資本",
         "unit": 11,
-        "example": "from the product page select the size and quantity you'd like and click ‘Buy’ to add it to your cart",
-        "exampleZh": "從產品頁面選擇您想要的尺寸和數量，然後點擊「購買」將其新增至您的購物車"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20574,
-        "en": "case",
-        "kk": "/ˈkeɪs/",
-        "zh": "n. 盒；套",
+        "en": "capitalization",
+        "kk": "",
+        "zh": "n. 資本化; 資本額",
         "unit": 11,
-        "example": "a libel case",
-        "exampleZh": "誹謗案"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20575,
-        "en": "cash",
-        "kk": "/ˈkæʃ/",
-        "zh": "n. 現金；現款 v把⋯⋯兌現",
+        "en": "capitalize",
+        "kk": "",
+        "zh": "v. 利用;供給 (資本)",
         "unit": 11,
-        "example": "a discount for cash",
-        "exampleZh": "現金折扣"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20576,
-        "en": "cashier",
-        "kk": "/kæˈʃɪɹ/",
-        "zh": "n. 收銀員",
+        "en": "capture",
+        "kk": "/ˈkæptʃər/",
+        "zh": "v. 捕獲;俘虜n. 捕獲;俘虜",
         "unit": 11,
-        "example": "Yanni is a cashier.",
-        "exampleZh": "雅尼是一名出納員。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20577,
-        "en": "catalog",
-        "kk": "/ˈkætəɫɔɡ/",
-        "zh": "n. 目錄；目錄冊",
+        "en": "care",
+        "kk": "/ker/",
+        "zh": "v. 在乎:關心",
         "unit": 11,
-        "example": "his life was a catalog of dismal failures",
-        "exampleZh": "他的一生充滿了令人沮喪的失敗"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20578,
-        "en": "catch",
-        "kk": "/ˈkætʃ/",
-        "zh": "v. 抓",
+        "en": "career",
+        "kk": "/kəˈrɪr/",
+        "zh": "n. 職業;工作",
         "unit": 11,
-        "example": "there was a catch in Anne's voice",
-        "exampleZh": "安妮的聲音有些哽咽"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20579,
-        "en": "category",
-        "kk": "/ˈkætəˌɡɔɹi/",
-        "zh": "n. 種類；部屬；類目",
+        "en": "careful",
+        "kk": "/ˈkerfəl/",
+        "zh": "a. 小心翼翼的;仔 細的",
         "unit": 11,
-        "example": "They announced our category.",
-        "exampleZh": "他們宣布了我們的類別。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20580,
-        "en": "cater",
-        "kk": "/ˈkeɪtɝ/",
-        "zh": "v. 提供飲食；承辦宴席",
+        "en": "carefully",
+        "kk": "",
+        "zh": "ad. 小心翼翼地; 仔細地",
         "unit": 11,
-        "example": "I am self-catering.",
-        "exampleZh": "我自己做飯。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20581,
-        "en": "catering",
+        "en": "cargo",
         "kk": "",
-        "zh": "n. 承辦酒席；提供飲食及服務",
+        "zh": "n. 貨物",
         "unit": 11,
-        "example": "high standards of catering",
-        "exampleZh": "高標準的餐飲"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20582,
-        "en": "cause",
-        "kk": "/ˈkɑz/",
-        "zh": "n. 原因；起因 v 導致；使發生",
+        "en": "carpet",
+        "kk": "",
+        "zh": "n. 地毯",
         "unit": 11,
-        "example": "I'm raising money for a good cause",
-        "exampleZh": "我正在為公益事業籌集資金"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20583,
-        "en": "caution",
-        "kk": "/ˈkɑʃən/",
-        "zh": "n. 小心；謹慎",
+        "en": "carrier",
+        "kk": "",
+        "zh": "n. 運送人;搬運人",
         "unit": 11,
-        "example": "anyone receiving a suspect package should exercise extreme caution",
-        "exampleZh": "任何收到可疑包裹的人都應格外小心"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20584,
-        "en": "cautious",
-        "kk": "/ˈkɔʃəs/",
-        "zh": "a. 十分小心的；謹慎的",
+        "en": "carry",
+        "kk": "/ˈkæri/",
+        "zh": "v. 運載;搬運;支 撐",
         "unit": 11,
-        "example": "the plan received a cautious welcome",
-        "exampleZh": "該計劃受到謹慎歡迎"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20585,
-        "en": "cease",
-        "kk": "/ˈsis/",
-        "zh": "v. 停止",
+        "en": "carry out",
+        "kk": "",
+        "zh": "ph. 實行;執行",
         "unit": 11,
-        "example": "The giggles ceased.",
-        "exampleZh": "咯咯笑聲停止了。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20586,
-        "en": "ceiling",
-        "kk": "/ˈsiɫɪŋ/",
-        "zh": "n. 天花板",
+        "en": "cart",
+        "kk": "",
+        "zh": "n. 小車,手推車",
         "unit": 11,
-        "example": "the aircraft's quoted ceiling of 24,000 feet",
-        "exampleZh": "該飛機的報價上限為 24,000 英尺"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20587,
-        "en": "celebrate",
-        "kk": "/ˈsɛɫəˌbɹeɪt/",
-        "zh": "v. 慶祝",
+        "en": "carton",
+        "kk": "",
+        "zh": "n. 紙盒;紙板箱",
         "unit": 11,
-        "example": "Everyone celebrated.",
-        "exampleZh": "大家都慶祝了。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20588,
-        "en": "celebration",
-        "kk": "/ˌsɛɫəˈbɹeɪʃən/",
-        "zh": "n. 慶典",
+        "en": "case",
+        "kk": "/keɪs/",
+        "zh": "n. 盒;套",
         "unit": 11,
-        "example": "the birth of his son was a cause for celebration",
-        "exampleZh": "他兒子的出生值得慶祝"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20589,
-        "en": "celebrity",
-        "kk": "/səˈɫɛbɹɪti/",
-        "zh": "n. 名人",
+        "en": "cash",
+        "kk": "/kæʃ/",
+        "zh": "n. 現金;現款v. 把⋯⋯兌現",
         "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
         "id": 20590,
-        "en": "cell",
-        "kk": "/ˈsɛɫ/",
-        "zh": "n. 細胞",
+        "en": "cast",
+        "kk": "/kæst/",
+        "zh": "v. 投;擲;拋n. 投; 班底;演員",
         "unit": 11,
-        "example": "a button cell for a quartz watch",
-        "exampleZh": "用於石英錶的紐帶電池"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20591,
-        "en": "censor",
+        "en": "catalog",
         "kk": "",
-        "zh": "v. 審查",
+        "zh": "n. 目錄;目錄冊",
         "unit": 11,
-        "example": "Her work was censored.",
-        "exampleZh": "她的作品受到審查。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20592,
-        "en": "census",
+        "en": "categorize",
         "kk": "",
-        "zh": "n. 人口普查",
+        "zh": "v. 將⋯分類",
         "unit": 11,
-        "example": "A census was performed in 2005.",
-        "exampleZh": "2005年進行了一次人口普查。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20593,
-        "en": "center",
-        "kk": "/ˈsɛnɝ/",
-        "zh": "n. 中心",
+        "en": "category",
+        "kk": "/ˈkætəɡɔːri/",
+        "zh": "n. 種類;部屬; 類目",
         "unit": 11,
-        "example": "to center the needle, turn the knob",
-        "exampleZh": "轉動旋鈕，使針居中"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20594,
-        "en": "central",
-        "kk": "/ˈsɛntɹəɫ/",
-        "zh": "a. 中心的；中央的",
+        "en": "cater",
+        "kk": "",
+        "zh": "v. 提供飲食;承辦 宴席",
         "unit": 11,
-        "example": "the station has a central courtyard",
-        "exampleZh": "車站有一個中央庭院"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20595,
-        "en": "century",
-        "kk": "/ˈsɛntʃɝi/",
-        "zh": "n. 世紀；一百年",
+        "en": "catering",
+        "kk": "",
+        "zh": "n. 承辦酒席;提 供飲食及服務",
         "unit": 11,
-        "example": "the fifteenth century",
-        "exampleZh": "十五世紀"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20596,
-        "en": "ceremony",
-        "kk": "/ˈsɛɹəˌmoʊni/",
-        "zh": "n. 儀式；典禮",
+        "en": "cause",
+        "kk": "/kɔːz/",
+        "zh": "n. 原因;起因v. 導 致;使發生",
         "unit": 11,
-        "example": "The ceremony stopped.",
-        "exampleZh": "儀式停止了。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20597,
-        "en": "certain",
-        "kk": "/ˈsɝtən/",
-        "zh": "a. 確鑿的；無疑的",
+        "en": "caution",
+        "kk": "",
+        "zh": "n. 小心;謹慎",
         "unit": 11,
-        "example": "true and certain knowledge of the essence of existence",
-        "exampleZh": "關於存在本質的真實且確定的知識"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20598,
-        "en": "certainly",
+        "en": "cautious",
         "kk": "",
-        "zh": "ad. 無疑地；必定604.  certiﬁcate n 證明書；執照",
+        "zh": "a. 十分小心的; 謹慎的",
         "unit": 11,
-        "example": "I certainly agree.",
-        "exampleZh": "我當然同意。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20599,
-        "en": "certificate",
-        "kk": "/sɝˈtɪfɪkət/",
-        "zh": "n. 證書",
+        "en": "central",
+        "kk": "/ˈsentrəl/",
+        "zh": "a. 中心的;中央的",
         "unit": 11,
-        "example": "graduate certificate in information technology",
-        "exampleZh": "資訊科技研究生證書"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20600,
-        "en": "certification",
-        "kk": "",
-        "zh": "n. 證明",
+        "en": "century",
+        "kk": "/ˈsentʃəri/",
+        "zh": "n. 世紀;一百年",
         "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
         "id": 20601,
-        "en": "certify",
-        "kk": "/ˈsɝtəˌfaɪ/",
-        "zh": "v. 證明，證實",
+        "en": "ceremony",
+        "kk": "/ˈserəmoʊni/",
+        "zh": "n. 儀式;典禮",
         "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
         "id": 20602,
-        "en": "chain",
-        "kk": "/ˈtʃeɪn/",
-        "zh": "n. 鏈條；連鎖；連續",
+        "en": "certain",
+        "kk": "/ˈsɜːrtn/",
+        "zh": "a. 確鑿的;無疑的",
         "unit": 11,
-        "example": "Don't yank my chain!",
-        "exampleZh": "別拉我的鍊子！"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20603,
-        "en": "chair",
-        "kk": "/ˈtʃɛɹ/",
-        "zh": "n. 椅子",
+        "en": "certainly",
+        "kk": "/ˈsɜːrtnli/",
+        "zh": "ad. 無疑地;必 定",
         "unit": 11,
-        "example": "the editorial chair",
-        "exampleZh": "編輯主席"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20604,
-        "en": "chairman",
-        "kk": "/ˈtʃɛɹmən/",
-        "zh": "n. 主席",
+        "en": "certificate",
+        "kk": "",
+        "zh": "n. 證明書;執 照",
         "unit": 11,
-        "example": "Include the chairman.",
-        "exampleZh": "包括主席。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20605,
-        "en": "challenge",
-        "kk": "/ˈtʃæɫəndʒ/",
-        "zh": "v. 挑戰；提出異議",
+        "en": "certify",
+        "kk": "",
+        "zh": "v. 證明,證實",
         "unit": 11,
-        "example": "He challenged her.",
-        "exampleZh": "他向她挑戰。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20606,
-        "en": "chamber",
-        "kk": "/ˈtʃeɪmbɝ/",
-        "zh": "n. 房間",
+        "en": "chain",
+        "kk": "/tʃeɪn/",
+        "zh": "n. 鏈條;連鎖;連 續",
         "unit": 11,
-        "example": "The chamber door is open.",
-        "exampleZh": "密室門開著。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20607,
-        "en": "champion",
-        "kk": "/ˈtʃæmpiən/",
-        "zh": "n. 冠軍",
+        "en": "challenge",
+        "kk": "/ˈtʃælɪndʒ/",
+        "zh": "v. 挑戰;提出 異議",
         "unit": 11,
-        "example": "Ziri is a champion.",
-        "exampleZh": "齊裡是冠軍。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20608,
-        "en": "championship",
-        "kk": "/ˈtʃæmpiənˌʃɪp/",
-        "zh": "n. 錦標賽",
+        "en": "change",
+        "kk": "/tʃeɪndʒ/",
+        "zh": "v. 改變;更改n. 變化;變更;零錢",
         "unit": 11,
-        "example": "He won the championship.",
-        "exampleZh": "他贏得了冠軍。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20609,
-        "en": "chance",
-        "kk": "/ˈtʃæns/",
-        "zh": "n. 機會",
+        "en": "changeable",
+        "kk": "",
+        "zh": "a. 易變的; 不定的",
         "unit": 11,
-        "example": "a chance meeting",
-        "exampleZh": "一次偶然的相遇"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20610,
-        "en": "change",
-        "kk": "/ˈtʃeɪndʒ/",
-        "zh": "v. 改變；更改 n變化；變更；零錢",
+        "en": "chapter",
+        "kk": "/ˈtʃæptər/",
+        "zh": "n. 篇章;篇",
         "unit": 11,
-        "example": "I watched him pocket the change",
-        "exampleZh": "我看著他把零錢放進口袋"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20611,
-        "en": "channel",
-        "kk": "/ˈtʃænəɫ/",
-        "zh": "n. 頻道",
+        "en": "character",
+        "kk": "/ˈkærəktər/",
+        "zh": "n. 角色;性格; 特性",
         "unit": 11,
-        "example": "Change the channel!",
-        "exampleZh": "換個頻道吧！"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20612,
-        "en": "chaos",
-        "kk": "/ˈkeɪɑs/",
-        "zh": "n. 混亂",
+        "en": "characteristic",
+        "kk": "",
+        "zh": "a. 特有的; 獨特的",
         "unit": 11,
-        "example": "snow caused chaos in the region",
-        "exampleZh": "大雪導致該地區混亂"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20613,
-        "en": "character",
-        "kk": "/ˈkɛɹɪktɝ/",
-        "zh": "n. 角色；性格；特性",
+        "en": "characterize",
+        "kk": "",
+        "zh": "v. 具有⋯⋯ 的特徵;以⋯⋯為特徵",
         "unit": 11,
-        "example": "gas lamps give the area its character",
-        "exampleZh": "煤氣燈賦予該地區特色"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20614,
-        "en": "characteristic",
-        "kk": "/ˌkɛɹəktɝˈɪstɪk/",
-        "zh": "a. 特有的；獨特的",
+        "en": "charge",
+        "kk": "/tʃɑːrdʒ/",
+        "zh": "v. 控告;索價",
         "unit": 11,
-        "example": "It is characteristic of him.",
-        "exampleZh": "這是他的特點。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20615,
-        "en": "characterize",
-        "kk": "/ˈkɛɹəktɝˌaɪz/",
-        "zh": "v. 具有⋯⋯的特徵；以⋯⋯為特徵",
+        "en": "chart",
+        "kk": "/tʃɑːrt/",
+        "zh": "n. 圖表;曲線圖",
         "unit": 11,
-        "example": "How would you characterize fast food?",
-        "exampleZh": "您如何評價快餐？"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20616,
-        "en": "charge",
-        "kk": "/ˈtʃɑɹdʒ/",
-        "zh": "v. 控告；索價",
+        "en": "check",
+        "kk": "/tʃek/",
+        "zh": "n. (美)檢查;支 票;帳單",
         "unit": 11,
-        "example": "he appeared in court on a charge of attempted murder",
-        "exampleZh": "他因謀殺未遂罪名出庭"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20617,
-        "en": "charity",
-        "kk": "/ˈtʃɛɹɪti/",
-        "zh": "n. 慈善",
+        "en": "chef",
+        "kk": "",
+        "zh": "n. 廚師",
         "unit": 11,
-        "example": "She runs a charity.",
-        "exampleZh": "她經營一家慈善機構。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20618,
-        "en": "chart",
-        "kk": "/ˈtʃɑɹt/",
-        "zh": "n. 圖表；曲線圖",
+        "en": "cheque",
+        "kk": "",
+        "zh": "n. (英)支票",
         "unit": 11,
-        "example": "scribbled on a patient's chart",
-        "exampleZh": "潦草地寫在病人的病歷上"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20619,
-        "en": "charter",
-        "kk": "",
-        "zh": "n. 憲章",
+        "en": "choice",
+        "kk": "/tʃɔɪs/",
+        "zh": "n. 選擇;挑選",
         "unit": 11,
-        "example": "We chartered a bus.",
-        "exampleZh": "我們包了一輛巴士。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20620,
-        "en": "chase",
-        "kk": "/ˈtʃeɪs/",
-        "zh": "v. 追逐",
+        "en": "choose",
+        "kk": "/tʃuːz/",
+        "zh": "v. 選擇;挑選",
         "unit": 11,
-        "example": "a chase for limited supplies of hard currency",
-        "exampleZh": "追逐有限的硬通貨供應"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20621,
-        "en": "chat",
-        "kk": "/ˈtʃæt/",
-        "zh": "v. 聊天",
+        "en": "chore",
+        "kk": "",
+        "zh": "n. 例行工作;家務 活",
         "unit": 11,
-        "example": "he dropped in for a chat",
-        "exampleZh": "他過來聊天"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20622,
-        "en": "cheap",
-        "kk": "/ˈtʃip/",
-        "zh": "adj. 便宜的",
+        "en": "circle",
+        "kk": "/ˈsɜːrkl/",
+        "zh": "n. 圓形的東西;圈v. 畫圓圈;圈出;圍著",
         "unit": 11,
-        "example": "a cheap restaurant",
-        "exampleZh": "一家便宜的餐館"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20623,
-        "en": "cheat",
-        "kk": "/ˈtʃit/",
-        "zh": "v. 欺騙",
+        "en": "circumspect",
+        "kk": "",
+        "zh": "a. 慎重的; 謹慎小心的",
         "unit": 11,
-        "example": "a liar and a cheat",
-        "exampleZh": "騙子和騙子"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20624,
-        "en": "check",
-        "kk": "/ˈtʃɛk/",
-        "zh": "n. （美）檢查；支票；帳單",
+        "en": "circumstance",
+        "kk": "/ˈsɜːrkəmstæns/",
+        "zh": "n. 情況; 環境;情勢",
         "unit": 11,
-        "example": "on Wednesdays he wore the small check",
-        "exampleZh": "星期三他戴著小支票"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20625,
-        "en": "checkout",
+        "en": "circumvent",
         "kk": "",
-        "zh": "n. 結帳",
+        "zh": "v. 規避;防 止⋯⋯發生",
         "unit": 11,
-        "example": "When is checkout time?",
-        "exampleZh": "退房時間是什麼時候？"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20626,
-        "en": "cheer",
-        "kk": "/ˈtʃɪɹ/",
-        "zh": "v. 歡呼",
+        "en": "citation",
+        "kk": "",
+        "zh": "n. 引用;引證",
         "unit": 11,
-        "example": "Everybody cheered.",
-        "exampleZh": "大家歡呼起來。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20627,
-        "en": "cheerful",
-        "kk": "/ˈtʃɪɹfəɫ/",
-        "zh": "adj. 開朗的",
+        "en": "citizen",
+        "kk": "/ˈsɪtɪzən/",
+        "zh": "n. 市民;居民",
         "unit": 11,
-        "example": "the room was painted in cheerful colors",
-        "exampleZh": "房間漆成歡快的顏色"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20628,
-        "en": "chef",
-        "kk": "/ˈʃɛf/",
-        "zh": "n. 廚師",
+        "en": "citizenship",
+        "kk": "",
+        "zh": "n. 公民權;公 民身分",
         "unit": 11,
-        "example": "Ziri became a chef.",
-        "exampleZh": "齊裡成為了一名廚師。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20629,
-        "en": "chemical",
-        "kk": "/ˈkɛməkəɫ/",
-        "zh": "adj. 化學的",
+        "en": "city",
+        "kk": "/ˈsɪti/",
+        "zh": "n. 城市;都市",
         "unit": 11,
-        "example": "chemical treatments for killing fungi",
-        "exampleZh": "殺死真菌的化學處理"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20630,
-        "en": "chemist",
-        "kk": "/ˈkɛmɪst/",
-        "zh": "n. 化學家",
+        "en": "civic",
+        "kk": "",
+        "zh": "a. 城市的;市民的",
         "unit": 11,
-        "example": "Ziri became a chemist.",
-        "exampleZh": "齊裡成為化學家。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20631,
-        "en": "chemistry",
-        "kk": "/ˈkɛməstɹi/",
-        "zh": "n. 化學",
+        "en": "claim",
+        "kk": "/kleɪm/",
+        "zh": "v. 主張;斷言;聲 稱",
         "unit": 11,
-        "example": "He likes chemistry.",
-        "exampleZh": "他喜歡化學。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20632,
-        "en": "cheque",
+        "en": "clarify",
         "kk": "",
-        "zh": "n. （英）支票",
+        "zh": "v. 澄清;闡明",
         "unit": 11,
-        "example": "They pay by cheque.",
-        "exampleZh": "他們用支票付款。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20633,
-        "en": "cherish",
-        "kk": "/ˈtʃɛɹɪʃ/",
-        "zh": "v. 珍惜",
+        "en": "clause",
+        "kk": "",
+        "zh": "n. 條款;款",
         "unit": 11,
-        "example": "Cherish the thought.",
-        "exampleZh": "珍惜這個想法。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20634,
-        "en": "chief",
-        "kk": "/ˈtʃif/",
-        "zh": "adj. 主要的",
+        "en": "clear",
+        "kk": "/klɪr/",
+        "zh": "a. 明亮的;顯然的v. 清除;收拾",
         "unit": 11,
-        "example": "the chief of police",
-        "exampleZh": "警察局長"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20635,
-        "en": "childhood",
-        "kk": "/ˈtʃaɪɫdˌhʊd/",
-        "zh": "n. 童年",
+        "en": "clearance",
+        "kk": "",
+        "zh": "n. 清除;清掃",
         "unit": 11,
-        "example": "My childhood was good.",
-        "exampleZh": "我的童年是美好的。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20636,
-        "en": "chill",
-        "kk": "/ˈtʃɪɫ/",
-        "zh": "n. 寒冷",
+        "en": "clearly",
+        "kk": "",
+        "zh": "ad. 顯然地;無疑 地;明亮地",
         "unit": 11,
-        "example": "a long-term chill in relations could hurt commerce",
-        "exampleZh": "關係長期冷淡可能會損害商業"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20637,
-        "en": "choice",
-        "kk": "/ˈtʃɔɪs/",
-        "zh": "n. 選擇；挑選",
+        "en": "clerk",
+        "kk": "/klɜːrk/",
+        "zh": "n. 辦事員;職員",
         "unit": 11,
-        "example": "this CD drive is the perfect choice for your computer",
-        "exampleZh": "該 CD 驅動器是您電腦的完美選擇"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20638,
-        "en": "choir",
-        "kk": "/ˈkwaɪɝ/",
-        "zh": "n. 合唱團",
+        "en": "client",
+        "kk": "",
+        "zh": "n. 委託人;客戶",
         "unit": 11,
-        "example": "Welcome to the choir.",
-        "exampleZh": "歡迎來到合唱團。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20639,
-        "en": "choose",
-        "kk": "/ˈtʃuz/",
-        "zh": "v. 選擇；挑選",
+        "en": "climate",
+        "kk": "",
+        "zh": "n. 氣候",
         "unit": 11,
-        "example": "I'll stay as long as I choose",
-        "exampleZh": "只要我選擇，我就會留下來"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20640,
-        "en": "chore",
-        "kk": "/ˈtʃɔɹ/",
-        "zh": "n. 例行工作；家務活",
+        "en": "climb",
+        "kk": "",
+        "zh": "v. 爬;攀爬",
         "unit": 11,
-        "example": "She did her chores.",
-        "exampleZh": "她做家事。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20641,
-        "en": "chronic",
-        "kk": "/ˈkɹɑnɪk/",
-        "zh": "adj. 慢性的",
+        "en": "clip",
+        "kk": "",
+        "zh": "v. 剪;修剪n. 剪;修 剪",
         "unit": 11,
-        "example": "a chronic liar",
-        "exampleZh": "一個長期說謊的人"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20642,
-        "en": "circle",
-        "kk": "/ˈsɝkəɫ/",
-        "zh": "n. 圓形的東西；圈v 畫圓圈；圈出；圍著",
+        "en": "clock",
+        "kk": "",
+        "zh": "n. 時鐘",
         "unit": 11,
-        "example": "they all sat around in a circle",
-        "exampleZh": "他們圍坐成一圈"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20643,
-        "en": "circuit",
-        "kk": "/ˈsɝkət/",
-        "zh": "n. 電路",
+        "en": "coach",
+        "kk": "",
+        "zh": "n. 教練v. 訓練;指 導",
         "unit": 11,
-        "example": "Where's the circuit breaker?",
-        "exampleZh": "斷路器在哪裡？"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20644,
-        "en": "circular",
-        "kk": "/ˈsɝkjəɫɝ/",
-        "zh": "adj. 圓形的",
+        "en": "cognition",
+        "kk": "",
+        "zh": "n. 認知;知識",
         "unit": 11,
-        "example": "Flavio was in a circular room.",
-        "exampleZh": "弗拉維奧在一個圓形房間裡。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20645,
-        "en": "circulate",
-        "kk": "/ˈsɝkjəˌɫeɪt/",
-        "zh": "v. 循環",
+        "en": "coherent",
+        "kk": "",
+        "zh": "a. 一致的;協調 的",
         "unit": 11,
-        "example": "Blood circulates through blood vessels.",
-        "exampleZh": "血液通過血管循環。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20646,
-        "en": "circulation",
-        "kk": "/ˈsɝkjəˌɫeɪʃən/",
-        "zh": "n. 循環",
+        "en": "cohesive",
+        "kk": "",
+        "zh": "a. 凝聚性的; 有結合力的",
         "unit": 11,
-        "example": "Blood circulation is very rapid.",
-        "exampleZh": "血液循環非常快速。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20647,
-        "en": "circumstance",
-        "kk": "/ˈsɝkəmˌstæns/",
-        "zh": "n. 情況；環境；情勢",
+        "en": "coin",
+        "kk": "",
+        "zh": "n. 硬幣",
         "unit": 11,
-        "example": "What were the circumstances?",
-        "exampleZh": "當時的情況如何？"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20648,
-        "en": "cite",
-        "kk": "/ˈsaɪt/",
-        "zh": "v. 引用",
+        "en": "coincidence",
+        "kk": "",
+        "zh": "n. 巧合;符 合",
         "unit": 11,
-        "example": "he does not cite any source for this assertion",
-        "exampleZh": "他沒有引用這說法的任何來源"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20649,
-        "en": "citizen",
-        "kk": "/ˈsɪtəzən/",
-        "zh": "n. 市民；居民",
+        "en": "collaborate",
+        "kk": "",
+        "zh": "v. 合作;勾 結",
         "unit": 11,
-        "example": "a Polish citizen",
-        "exampleZh": "波蘭公民"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20650,
-        "en": "city",
-        "kk": "/ˈsɪti/",
-        "zh": "n. 城市；都市",
+        "en": "collaboration",
+        "kk": "",
+        "zh": "v. 合作;勾 結",
         "unit": 11,
-        "example": "the city council",
-        "exampleZh": "市議會"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20651,
-        "en": "civic",
-        "kk": "/ˈsɪvɪk/",
-        "zh": "a. 城市的；市民的",
+        "en": "collateral",
+        "kk": "",
+        "zh": "a. 並行的;附 屬的n. 擔保品;抵押品",
         "unit": 11,
-        "example": "they could not be denied access to education, the vote, and other civic rights",
-        "exampleZh": "不能剝奪他們接受教育、投票和其他公民權利的權利"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20652,
-        "en": "civil",
-        "kk": "/ˈsɪvəɫ/",
-        "zh": "adj. 公民的",
+        "en": "colleague",
+        "kk": "",
+        "zh": "n. 同事;同僚",
         "unit": 11,
-        "example": "a civil action",
-        "exampleZh": "民事訴訟"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20653,
-        "en": "civilian",
-        "kk": "/səˈvɪɫjən/",
-        "zh": "n. 平民",
+        "en": "collect",
+        "kk": "",
+        "zh": "v. 收集;採集",
         "unit": 11,
-        "example": "The IDF kills civilians.",
-        "exampleZh": "以色列國防軍殺害平民。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20654,
-        "en": "civilization",
-        "kk": "/ˌsɪvəɫɪˈzeɪʃən/",
-        "zh": "n. 文明",
+        "en": "collectible",
+        "kk": "",
+        "zh": "a. 可收集的",
         "unit": 11,
-        "example": "They hate civilization.",
-        "exampleZh": "他們討厭文明。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20655,
-        "en": "claim",
-        "kk": "/ˈkɫeɪm/",
-        "zh": "v. 主張；斷言；聲稱",
+        "en": "collection",
+        "kk": "",
+        "zh": "n. 採集;收取",
         "unit": 11,
-        "example": "these sunblocks claim protection factors as high as 34",
-        "exampleZh": "這些防曬霜聲稱防護係數高達 34"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20656,
-        "en": "clarify",
-        "kk": "/ˈkɫɛɹəˌfaɪ/",
-        "zh": "v. 澄清；闡明",
+        "en": "college",
+        "kk": "",
+        "zh": "n. 大學;學院",
         "unit": 11,
-        "example": "Can you clarify that?",
-        "exampleZh": "你能澄清一下嗎？"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20657,
-        "en": "clarity",
-        "kk": "/ˈkɫɛɹəti/",
-        "zh": "n. 清楚",
+        "en": "collide",
+        "kk": "",
+        "zh": "v. 碰撞;相撞",
         "unit": 11,
-        "example": "for the sake of clarity, each of these strategies is dealt with separately",
-        "exampleZh": "為了清楚起見，這些策略中的每一個都是單獨處理的"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20658,
-        "en": "clash",
-        "kk": "/ˈkɫæʃ/",
-        "zh": "v. 衝突",
+        "en": "combination",
+        "kk": "",
+        "zh": "n. 結合;聯 合",
         "unit": 11,
-        "example": "Those colors clash.",
-        "exampleZh": "這些顏色發生衝突。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20659,
-        "en": "classic",
-        "kk": "/ˈkɫæsɪk/",
-        "zh": "adj. 經典的",
+        "en": "combine",
+        "kk": "",
+        "zh": "v. 結合;聯合",
         "unit": 11,
-        "example": "I had all the classic symptoms of flu",
-        "exampleZh": "我有流感的所有典型症狀"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20660,
-        "en": "classical",
-        "kk": "/ˈkɫæsɪkəɫ/",
-        "zh": "adj. 古典的",
+        "en": "come",
+        "kk": "",
+        "zh": "v. 來;來到",
         "unit": 11,
-        "example": "I played classical music.",
-        "exampleZh": "我演奏古典音樂。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20661,
-        "en": "classification",
-        "kk": "/ˌkɫæsəfəˈkeɪʃən/",
-        "zh": "n. 分類",
+        "en": "come across",
+        "kk": "",
+        "zh": "ph. 碰見; 被理解",
         "unit": 11,
-        "example": "Classification is not my specialty.",
-        "exampleZh": "分類不是我的專長。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20662,
-        "en": "classify",
-        "kk": "/ˈkɫæsəˌfaɪ/",
-        "zh": "v. 分類",
+        "en": "comfort",
+        "kk": "",
+        "zh": "v. 安慰;慰問n. 安逸;舒適",
         "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
         "id": 20663,
-        "en": "clause",
-        "kk": "/ˈkɫɔz/",
-        "zh": "n. 條款；款",
+        "en": "comfortable",
+        "kk": "",
+        "zh": "a. 舒適的; 舒服的",
         "unit": 11,
-        "example": "I have a nudity clause.",
-        "exampleZh": "我有一個裸體條款。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20664,
-        "en": "clean",
-        "kk": "/ˈkɫin/",
-        "zh": "adj. 乾淨的",
+        "en": "comforting",
+        "kk": "",
+        "zh": "a. 令人欣慰的",
         "unit": 11,
-        "example": "I searched him and his luggage, and he was clean",
-        "exampleZh": "我搜了他和他的行李，他很乾淨"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20665,
-        "en": "clear",
-        "kk": "/ˈkɫɪɹ/",
-        "zh": "a. 明亮的；顯然的v 清除；收拾",
+        "en": "command",
+        "kk": "",
+        "zh": "v. 指揮;控制",
         "unit": 11,
-        "example": "the plane rose high enough to clear the trees",
-        "exampleZh": "飛機升得夠高，可以清理樹木"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20666,
-        "en": "clearance",
-        "kk": "/ˈkɫɪɹəns/",
-        "zh": "n. 清除；清掃",
+        "en": "comment",
+        "kk": "",
+        "zh": "n. 註釋;評論v. 下評論",
         "unit": 11,
-        "example": "cleaning of the machine should include clearance of blockages",
-        "exampleZh": "機器的清潔應包括清除堵塞物"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20667,
-        "en": "clerk",
-        "kk": "/ˈkɫɝk/",
-        "zh": "n. 辦事員；職員",
+        "en": "commentary",
+        "kk": "",
+        "zh": "n. 評論",
         "unit": 11,
-        "example": "a chapter clerk",
-        "exampleZh": "分會文員"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20668,
-        "en": "clever",
-        "kk": "/ˈkɫɛvɝ/",
-        "zh": "adj. 聰明的",
+        "en": "commerce",
+        "kk": "",
+        "zh": "n. 商業;貿易",
         "unit": 11,
-        "example": "how clever of him to think of this!",
-        "exampleZh": "他想到這一點真是太聰明了！"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20669,
-        "en": "click",
-        "kk": "/ˈkɫɪk/",
-        "zh": "v. 點擊",
+        "en": "commercial",
+        "kk": "",
+        "zh": "a. 商業的; 商務的n. 廣告",
         "unit": 11,
-        "example": "Please click here.",
-        "exampleZh": "請點選這裡。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20670,
-        "en": "client",
-        "kk": "/ˈkɫaɪənt/",
-        "zh": "n. 委託人；客戶",
+        "en": "commission",
+        "kk": "",
+        "zh": "n. 佣金;委 任v. 委任;委託",
         "unit": 11,
-        "example": "I only have clients.",
-        "exampleZh": "我只有客戶。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20671,
-        "en": "clientele",
+        "en": "commit",
         "kk": "",
-        "zh": "n. 客戶群",
+        "zh": "v. 犯(罪);做 (錯事等)",
         "unit": 11,
-        "example": "the dancers don't mix with the clientele",
-        "exampleZh": "舞者不與顧客混在一起"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20672,
-        "en": "climate",
-        "kk": "/ˈkɫaɪmət/",
-        "zh": "n. 氣候",
+        "en": "commitment",
+        "kk": "",
+        "zh": "n. 託付;交 託",
         "unit": 11,
-        "example": "vacationing in a warm climate",
-        "exampleZh": "在溫暖的氣候中度假"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20673,
-        "en": "climax",
-        "kk": "/ˈkɫaɪˌmæks/",
-        "zh": "n. 頂點",
+        "en": "committed",
+        "kk": "",
+        "zh": "a. 忠誠的,堅 定的",
         "unit": 11,
-        "example": "The game came to a climax.",
-        "exampleZh": "比賽進入了高潮。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20674,
-        "en": "climb",
-        "kk": "/ˈkɫaɪm/",
-        "zh": "v. 爬；攀爬",
+        "en": "commodity",
+        "kk": "",
+        "zh": "n. 商品;日 用品",
         "unit": 11,
-        "example": "his long climb from poverty",
-        "exampleZh": "他擺脫貧窮的漫長歷程"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20675,
-        "en": "cling",
-        "kk": "/ˈkɫɪŋ/",
-        "zh": "v. 緊抓",
+        "en": "common",
+        "kk": "",
+        "zh": "a. 普通的;常見 的",
         "unit": 11,
-        "example": "the fish cling to the line of the weed",
-        "exampleZh": "魚依附在水草線上"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20676,
-        "en": "clinic",
-        "kk": "/ˈkɫɪnɪk/",
-        "zh": "n. 診所",
+        "en": "communication",
+        "kk": "",
+        "zh": "n. 溝通; 交流",
         "unit": 11,
-        "example": "The clinic is closed.",
-        "exampleZh": "診所已關閉。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20677,
-        "en": "clip",
-        "kk": "/ˈkɫɪp/",
-        "zh": "v. 剪；修剪 n 剪；修剪",
+        "en": "commute",
+        "kk": "",
+        "zh": "v. 通勤;替代; 代償",
         "unit": 11,
-        "example": "The clip was longer.",
-        "exampleZh": "剪輯更長。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20678,
-        "en": "clock",
-        "kk": "/ˈkɫɑk/",
-        "zh": "n. 時鐘",
+        "en": "commuter",
+        "kk": "",
+        "zh": "n. 通勤者",
         "unit": 11,
-        "example": "they play against the clock",
-        "exampleZh": "他們爭分奪秒"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20679,
-        "en": "close",
-        "kk": "/ˈkɫoʊs/",
-        "zh": "adj. 靠近的",
+        "en": "company",
+        "kk": "",
+        "zh": "n. 陪伴;公司",
         "unit": 11,
-        "example": "the months of living in close proximity to her were taking their toll",
-        "exampleZh": "與她住得很近的幾個月讓她付出了代價"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20680,
-        "en": "closet",
-        "kk": "/ˈkɫɑzət/",
-        "zh": "n. 壁櫥",
+        "en": "comparatively",
+        "kk": "",
+        "zh": "ad. 對比 地;比較地",
         "unit": 11,
-        "example": "a closet alcoholic",
-        "exampleZh": "一個櫃子裡的酒鬼"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20681,
-        "en": "closure",
-        "kk": "/ˈkɫoʊʒɝ/",
-        "zh": "n. 關閉",
+        "en": "compare",
+        "kk": "",
+        "zh": "v. 比較;對照",
         "unit": 11,
-        "example": "a closure motion",
-        "exampleZh": "關閉動議"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20682,
-        "en": "clothe",
-        "kk": "/ˈkɫoʊð/",
-        "zh": "v. 給...穿衣",
+        "en": "comparison",
+        "kk": "",
+        "zh": "n. 比較;對 照",
         "unit": 11,
-        "example": "they already had eight children to feed and clothe",
-        "exampleZh": "他們已經有八個孩子需要吃穿"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20683,
-        "en": "clothes",
-        "kk": "/ˈkɫoʊðz/",
-        "zh": "n. 衣服",
+        "en": "compatible",
+        "kk": "",
+        "zh": "a. 能共處的; 可並立的",
         "unit": 11,
-        "example": "he stripped off his clothes",
-        "exampleZh": "他脫掉了衣服"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20684,
-        "en": "clothing",
-        "kk": "/ˈkɫoʊðɪŋ/",
-        "zh": "n. 衣物",
+        "en": "compel",
+        "kk": "",
+        "zh": "v. 強迫;強求",
         "unit": 11,
-        "example": "an item of clothing",
-        "exampleZh": "一件衣服"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20685,
-        "en": "cloud",
-        "kk": "/ˈkɫaʊd/",
-        "zh": "n. 雲",
+        "en": "compensate",
+        "kk": "",
+        "zh": "v. 補償;賠 償",
         "unit": 11,
-        "example": "a cloud of dust",
-        "exampleZh": "一團塵埃"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20686,
-        "en": "clue",
-        "kk": "/ˈkɫu/",
-        "zh": "n. 線索",
+        "en": "compensation",
+        "kk": "",
+        "zh": "n. 補償; 賠償",
         "unit": 11,
-        "example": "Mennad had no clue.",
-        "exampleZh": "門納德毫無頭緒。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20687,
-        "en": "clumsy",
-        "kk": "/ˈkɫəmzi/",
-        "zh": "adj. 笨拙的",
+        "en": "compete",
+        "kk": "",
+        "zh": "v. 對抗;競爭",
         "unit": 11,
-        "example": "Flavio was clumsy.",
-        "exampleZh": "弗拉維奧很笨拙。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20688,
-        "en": "cluster",
-        "kk": "/ˈkɫəstɝ/",
-        "zh": "n. 簇",
+        "en": "competent",
+        "kk": "",
+        "zh": "a. 有能力的; 能勝任的",
         "unit": 11,
-        "example": "a cluster of antique shops",
-        "exampleZh": "古董店聚集地"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20689,
-        "en": "coach",
-        "kk": "/ˈkoʊtʃ/",
-        "zh": "n. 教練 v 訓練；指導",
+        "en": "competition",
+        "kk": "",
+        "zh": "n. 比賽;競 賽",
         "unit": 11,
-        "example": "a football coach",
-        "exampleZh": "足球教練"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20690,
-        "en": "coalition",
+        "en": "competitive",
         "kk": "",
-        "zh": "n. 聯盟",
+        "zh": "a. 競爭性的; 好競爭的",
         "unit": 11,
-        "example": "The coalition of the willing.",
-        "exampleZh": "自願聯盟。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20691,
-        "en": "coarse",
-        "kk": "/ˈkɔɹs/",
-        "zh": "adj. 粗糙的",
+        "en": "competitor",
+        "kk": "",
+        "zh": "n. 競爭者;對 手",
         "unit": 11,
-        "example": "He's coarse in manner.",
-        "exampleZh": "他的態度很粗魯。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20692,
-        "en": "coast",
-        "kk": "/ˈkoʊst/",
-        "zh": "n. 海岸",
+        "en": "complain",
+        "kk": "",
+        "zh": "v. 抱怨",
         "unit": 11,
-        "example": "the coast road",
-        "exampleZh": "海岸路"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20693,
-        "en": "code",
-        "kk": "/ˈkoʊd/",
-        "zh": "n. 代碼",
+        "en": "complaint",
+        "kk": "",
+        "zh": "n. 抱怨",
         "unit": 11,
-        "example": "He learned to code.",
-        "exampleZh": "他學會了編碼。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20694,
-        "en": "coffee",
-        "kk": "/ˈkɑfi/",
-        "zh": "n. 咖啡",
+        "en": "complete",
+        "kk": "",
+        "zh": "v. 競爭;比賽",
         "unit": 11,
-        "example": "a cup of coffee",
-        "exampleZh": "一杯咖啡"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20695,
-        "en": "cognitive",
+        "en": "completion",
         "kk": "",
-        "zh": "adj. 認知的",
+        "zh": "n. 完成;結 束",
         "unit": 11,
-        "example": "Antonio began the cognitive test.",
-        "exampleZh": "安東尼奧開始了認知測驗。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20696,
-        "en": "cohere",
+        "en": "complex",
         "kk": "",
-        "zh": "v. 連貫",
+        "zh": "a. 複雜的;錯綜 複雜的n. 複合物;綜合體",
         "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
         "id": 20697,
-        "en": "coherent",
-        "kk": "/koʊˈhɪɹənt/",
-        "zh": "a. 一致的；協調的",
+        "en": "compliant",
+        "kk": "",
+        "zh": "a. 順從的;應 允的",
         "unit": 11,
-        "example": "she was lucid and coherent and did not appear to be injured",
-        "exampleZh": "她神智清醒、思路清晰，看起來沒有受傷"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20698,
-        "en": "cohesion",
+        "en": "complicate",
         "kk": "",
-        "zh": "n. 凝聚力",
+        "zh": "v. 使複雜化; 使費解",
         "unit": 11,
-        "example": "Academic writing needs to show cohesion and coherence.",
-        "exampleZh": "學術寫作需要表現出銜接性和連貫性。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20699,
-        "en": "cohesive",
+        "en": "complicated",
         "kk": "",
-        "zh": "a. 凝聚性的；有結合力的",
+        "zh": "a. 複雜的; 難懂的",
         "unit": 11,
-        "example": "Academic writing should be cohesive.",
-        "exampleZh": "學術寫作應該具有凝聚力。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20700,
-        "en": "coincide",
-        "kk": "/ˌkoʊɪnˈsaɪd/",
-        "zh": "v. 同時發生",
+        "en": "compliment",
+        "kk": "",
+        "zh": "n. 稱讚:讚 美v. 稱讚:讚美",
         "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
         "id": 20701,
-        "en": "coincidence",
-        "kk": "/koʊˈɪnsɪdəns/",
-        "zh": "n. 巧合；符合",
+        "en": "comply",
+        "kk": "",
+        "zh": "v. 依從;順從",
         "unit": 11,
-        "example": "they met by coincidence",
-        "exampleZh": "他們偶然相遇"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20702,
-        "en": "collaborate",
+        "en": "component",
         "kk": "",
-        "zh": "v. 合作；勾結",
+        "zh": "n. 構成要素; 零件a. 組成的;構成的",
         "unit": 11,
-        "example": "Let's collaborate.",
-        "exampleZh": "讓我們合作吧。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20703,
-        "en": "collaboration",
+        "en": "compose",
         "kk": "",
-        "zh": "v. 合作；勾結",
+        "zh": "v. 作(詩,曲 等);使安定",
         "unit": 11,
-        "example": "Recognition fosters collaboration.",
-        "exampleZh": "認可促進合作。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20704,
-        "en": "collapse",
-        "kk": "/kəˈɫæps/",
-        "zh": "v. 倒塌",
+        "en": "composition",
+        "kk": "",
+        "zh": "n. 寫作;作 曲",
         "unit": 11,
-        "example": "Our house collapsed.",
-        "exampleZh": "我們的房子倒塌了。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20705,
-        "en": "collar",
-        "kk": "/ˈkɑɫɝ/",
-        "zh": "n. 衣領",
+        "en": "composure",
+        "kk": "",
+        "zh": "n. 平靜;鎮 靜",
         "unit": 11,
-        "example": "Ziri likes this collar.",
-        "exampleZh": "Ziri 喜歡這個項圈。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20706,
-        "en": "colleague",
-        "kk": "/ˈkɑɫiɡ/",
-        "zh": "n. 同事；同僚",
+        "en": "comprehend",
+        "kk": "",
+        "zh": "v. 理解;了 解",
         "unit": 11,
-        "example": "Simon was also a very good colleague",
-        "exampleZh": "西蒙也是一位非常好的同事"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20707,
-        "en": "collect",
-        "kk": "/kəˈɫɛkt/",
-        "zh": "v. 收集；採集",
+        "en": "comprehensive",
+        "kk": "",
+        "zh": "a. 廣泛 的;無所不包的",
         "unit": 11,
-        "example": "dust and dirt collect so quickly",
-        "exampleZh": "灰塵和污垢積得如此之快"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20708,
-        "en": "collection",
-        "kk": "/kəˈɫɛkʃən/",
-        "zh": "n. 採集；收取",
+        "en": "comprise",
+        "kk": "",
+        "zh": "v. 包含;包括",
         "unit": 11,
-        "example": "a record collection",
-        "exampleZh": "記錄集"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20709,
-        "en": "collective",
-        "kk": "/kəˈɫɛktɪv/",
-        "zh": "adj. 集體的",
+        "en": "compromise",
+        "kk": "",
+        "zh": "v. 妥協;和 解n. 妥協;和解",
         "unit": 11,
-        "example": "ministers who share collective responsibility",
-        "exampleZh": "分擔集體責任的部長"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20710,
-        "en": "collector",
-        "kk": "/kəˈɫɛktɝ/",
-        "zh": "n. 收藏家",
+        "en": "compute",
+        "kk": "",
+        "zh": "v. 計算;估算",
         "unit": 11,
-        "example": "an art collector",
-        "exampleZh": "藝術收藏家"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20711,
-        "en": "college",
-        "kk": "/ˈkɑɫɪdʒ/",
-        "zh": "n. 大學；學院",
+        "en": "conceal",
+        "kk": "",
+        "zh": "v. 隱藏;隱瞞",
         "unit": 11,
-        "example": "We attended college.",
-        "exampleZh": "我們上大學了。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20712,
-        "en": "collide",
-        "kk": "/kəˈɫaɪd/",
-        "zh": "v. 碰撞；相撞",
+        "en": "conceive",
+        "kk": "",
+        "zh": "v. 想像;設想",
         "unit": 11,
-        "example": "Two cars collided.",
-        "exampleZh": "兩輛車相撞了。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20713,
-        "en": "collision",
-        "kk": "/kəˈɫɪʒən/",
-        "zh": "n. 碰撞",
+        "en": "concentrate",
+        "kk": "",
+        "zh": "v. 集中;聚 集;全神貫注",
         "unit": 11,
-        "example": "a midair collision between two aircraft",
-        "exampleZh": "兩架飛機在空中相撞"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20714,
-        "en": "color",
-        "kk": "/ˈkəɫɝ/",
-        "zh": "n. 顏色",
+        "en": "concept",
+        "kk": "",
+        "zh": "n. 概念;觀念",
         "unit": 11,
-        "example": "color flooded her skin as she realized what he meant",
-        "exampleZh": "當她意識到他的意思時，顏色淹沒了她的皮膚"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20715,
-        "en": "column",
-        "kk": "/ˈkɑɫəm/",
-        "zh": "n. 專欄",
+        "en": "concern",
+        "kk": "",
+        "zh": "v. 關於;涉及n. 關心的事;關係",
         "unit": 11,
-        "example": "The column is cylindrical.",
-        "exampleZh": "柱子是圓柱形的。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20716,
-        "en": "combat",
-        "kk": "/ˈkɑmbæt/",
-        "zh": "n. 戰鬥",
+        "en": "concerning",
+        "kk": "",
+        "zh": "prep. 關於",
         "unit": 11,
-        "example": "a combat zone",
-        "exampleZh": "一個戰區"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20717,
-        "en": "combination",
-        "kk": "/ˌkɑmbəˈneɪʃən/",
-        "zh": "n. 結合；聯合",
+        "en": "conclude",
+        "kk": "",
+        "zh": "v. 結束;推斷 出",
         "unit": 11,
-        "example": "I love that combination.",
-        "exampleZh": "我喜歡這個組合。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20718,
-        "en": "combine",
-        "kk": "/ˈkɑmbaɪn/",
-        "zh": "v. 結合；聯合",
+        "en": "conclusion",
+        "kk": "",
+        "zh": "n. 結論",
         "unit": 11,
-        "example": "Germany combines modern and medieval.",
-        "exampleZh": "德國結合了現代和中世紀。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20719,
-        "en": "come",
-        "kk": "/ˈkəm/",
-        "zh": "across. Ph 碰見；被理解",
+        "en": "concrete",
+        "kk": "",
+        "zh": "a. 有形的;實在 的n. 混凝土v. 凝結;固結",
         "unit": 11,
-        "example": "do you want to come fishing tomorrow?",
-        "exampleZh": "你明天想來釣魚嗎？"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20720,
-        "en": "comedy",
-        "kk": "/ˈkɑmədi/",
-        "zh": "n. 喜劇",
+        "en": "concur",
+        "kk": "",
+        "zh": "v. 同意;一致",
         "unit": 11,
-        "example": "Ziri's comedy contains vulgarity.",
-        "exampleZh": "齊日的喜劇包含粗俗之處。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20721,
-        "en": "comfort",
-        "kk": "/ˈkəmfɝt/",
-        "zh": "v. 安慰；慰問 n安逸；舒適",
+        "en": "condition",
+        "kk": "",
+        "zh": "n. 情況;狀況",
         "unit": 11,
-        "example": "Cicadas are comforting.",
-        "exampleZh": "蟬聲讓人心曠神怡。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20722,
-        "en": "comfortable",
-        "kk": "/ˈkəmfɝtəbəɫ/",
-        "zh": "a. 舒適的；舒服的",
+        "en": "conduct",
+        "kk": "",
+        "zh": "v. 帶領;實施",
         "unit": 11,
-        "example": "a comfortable victory",
-        "exampleZh": "輕鬆的勝利"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20723,
-        "en": "comic",
-        "kk": "/ˈkɑmɪk/",
-        "zh": "adj. 滑稽的",
+        "en": "conference",
+        "kk": "",
+        "zh": "n. 會議",
         "unit": 11,
-        "example": "Tom collects comics.",
-        "exampleZh": "湯姆收集漫畫。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20724,
-        "en": "command",
-        "kk": "/kəˈmænd/",
-        "zh": "v. 指揮；控制",
+        "en": "confident",
+        "kk": "",
+        "zh": "a. 有自信的; 確信的",
         "unit": 11,
-        "example": "Wait for my command.",
-        "exampleZh": "等待我的命令。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20725,
-        "en": "commander",
-        "kk": "/kəˈmændɝ/",
-        "zh": "n. 指揮官",
+        "en": "confidential",
+        "kk": "",
+        "zh": "a. 祕密的; 機密的",
         "unit": 11,
-        "example": "Dmitri is the commander.",
-        "exampleZh": "德米特里是指揮官。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20726,
-        "en": "commemorate",
-        "kk": "/kəˈmɛmɝˌeɪt/",
-        "zh": "v. 紀念",
+        "en": "confirm",
+        "kk": "",
+        "zh": "v. 證實;確定",
         "unit": 11,
-        "example": "Who will commemorate me when I'm dead?",
-        "exampleZh": "當我死後誰來紀念我？"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20727,
-        "en": "commence",
-        "kk": "/kəˈmɛns/",
-        "zh": "v. 開始",
+        "en": "confirmation",
+        "kk": "",
+        "zh": "n. 確定;確 證",
         "unit": 11,
-        "example": "a public inquiry is due to commence on the 16th",
-        "exampleZh": "公眾調查將於16日開始"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20728,
-        "en": "commend",
+        "en": "confuse",
         "kk": "",
-        "zh": "v. 稱讚",
+        "zh": "v. 使困惑;混淆",
         "unit": 11,
-        "example": "You are to be commended for that.",
-        "exampleZh": "你應該因此受到讚揚。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20729,
-        "en": "comment",
-        "kk": "/ˈkɑmɛnt/",
-        "zh": "n. 註釋；評論v 下評論",
+        "en": "confusion",
+        "kk": "",
+        "zh": "n. 混亂;騷動",
         "unit": 11,
-        "example": "They posted comments.",
-        "exampleZh": "他們發表了評論。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20730,
-        "en": "commerce",
-        "kk": "/ˈkɑmɝs/",
-        "zh": "n. 商業；貿易",
+        "en": "conscious",
+        "kk": "",
+        "zh": "a. 神志清醒 的;有知覺的",
         "unit": 11,
-        "example": "English is useful in commerce.",
-        "exampleZh": "英語在商業上很有用。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20731,
-        "en": "commercial",
-        "kk": "/kəˈmɝʃəɫ/",
-        "zh": "a. 商業的；商務的 n 廣告",
+        "en": "consciously",
+        "kk": "",
+        "zh": "ad. 有意識 地;自覺地",
         "unit": 11,
-        "example": "We hate commercials.",
-        "exampleZh": "我們討厭廣告。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20732,
-        "en": "commission",
-        "kk": "/kəˈmɪʃən/",
-        "zh": "n. 佣金；委任 v 委任；委託",
+        "en": "consciousness",
+        "kk": "",
+        "zh": "n. 意念; 意識",
         "unit": 11,
-        "example": "he has resigned his commission",
-        "exampleZh": "他已辭去職務"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20733,
-        "en": "commit",
-        "kk": "/kəˈmɪt/",
-        "zh": "v. 犯（罪）；做（錯事等）",
+        "en": "consecutive",
+        "kk": "",
+        "zh": "a. 連續不斷 的;連貫的",
         "unit": 11,
-        "example": "Someone commited suicide.",
-        "exampleZh": "有人自殺了。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20734,
-        "en": "commitment",
-        "kk": "/kəˈmɪtmənt/",
-        "zh": "n. 託付；交託",
+        "en": "consequently",
+        "kk": "",
+        "zh": "ad. 結果; 因此;必然地",
         "unit": 11,
-        "example": "the company's commitment to quality",
-        "exampleZh": "公司對品質的承諾"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20735,
-        "en": "committee",
-        "kk": "/kəˈmɪti/",
-        "zh": "n. 委員會",
+        "en": "conservative",
+        "kk": "",
+        "zh": "a. 保守的; 守舊的n. 保守者;守舊者",
         "unit": 11,
-        "example": "Tom is on several committees.",
-        "exampleZh": "湯姆是多個委員會的成員。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20736,
-        "en": "commodity",
-        "kk": "/kəˈmɑdəti/",
-        "zh": "n. 商品；日用品",
+        "en": "conserve",
+        "kk": "",
+        "zh": "v. 保存;保護",
         "unit": 11,
-        "example": "Commodity prices were rising.",
-        "exampleZh": "大宗商品價格不斷上漲。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20737,
-        "en": "common",
-        "kk": "/ˈkɑmən/",
-        "zh": "a. 普通的；常見的",
+        "en": "consider",
+        "kk": "",
+        "zh": "v. 考慮;細想",
         "unit": 11,
-        "example": "the common or vernacular name",
-        "exampleZh": "俗名或俗名"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20738,
-        "en": "commonly",
+        "en": "consideration",
         "kk": "",
-        "zh": "adv. 通常",
+        "zh": "n. 體貼; 動機;原因",
         "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
         "id": 20739,
-        "en": "communicate",
-        "kk": "/kəmˈjunəˌkeɪt/",
-        "zh": "v. 溝通",
+        "en": "considering",
+        "kk": "",
+        "zh": "prep. 就⋯⋯ 而論;考慮到ad. 各方面 考慮起來",
         "unit": 11,
-        "example": "We communicate assertively.",
-        "exampleZh": "我們自信地溝通。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20740,
-        "en": "communication",
-        "kk": "/kəmˌjunəˈkeɪʃən/",
-        "zh": "n. 溝通；交流",
+        "en": "consist",
+        "kk": "",
+        "zh": "v. 組成;構成",
         "unit": 11,
-        "example": "Jonas lost communication.",
-        "exampleZh": "喬納斯失去了聯繫。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20741,
-        "en": "commute",
-        "kk": "/kəmˈjut/",
-        "zh": "v. 通勤；替代；代償",
+        "en": "consistency",
+        "kk": "",
+        "zh": "n. 一致;一 貫",
         "unit": 11,
-        "example": "the daily commute",
-        "exampleZh": "日常通勤"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20742,
-        "en": "commuter",
-        "kk": "/kəmˈjutɝ/",
-        "zh": "n. 通勤者",
+        "en": "consistent",
+        "kk": "",
+        "zh": "a. 始終如一 的;前後一致的",
         "unit": 11,
-        "example": "Commuters should anticipate traffic delays.",
-        "exampleZh": "通勤者應預見交通延誤。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20743,
-        "en": "compact",
-        "kk": "/ˈkɑmpækt/",
-        "zh": "adj. 緊湊的",
+        "en": "consistently",
+        "kk": "",
+        "zh": "ad. 一貫地; 固守地",
         "unit": 11,
-        "example": "strength is then introduced by infiltrating glass into the compact",
-        "exampleZh": "然後透過將玻璃滲透到緊湊體中來引入強度"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20744,
-        "en": "companion",
-        "kk": "/kəmˈpænjən/",
-        "zh": "n. 同伴",
+        "en": "constant",
+        "kk": "",
+        "zh": "a. 固定的;不變 的",
         "unit": 11,
-        "example": "You have many companions.",
-        "exampleZh": "你有很多同伴。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20745,
-        "en": "company",
-        "kk": "/ˈkəmpəˌni/",
-        "zh": "n. 陪伴；公司",
+        "en": "constrain",
+        "kk": "",
+        "zh": "v. 強迫;迫使",
         "unit": 11,
-        "example": "a shipping company",
-        "exampleZh": "一家船運公司"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20746,
-        "en": "comparable",
-        "kk": "/ˈkɑmpɝəbəɫ/",
-        "zh": "adj. 可比較的",
+        "en": "constraint",
+        "kk": "",
+        "zh": "n. 約束;限制",
         "unit": 11,
-        "example": "flaked stone and bone tools comparable to Neanderthal man's tools",
-        "exampleZh": "片狀石器和骨器可與尼安德塔人的工具相媲美"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20747,
-        "en": "comparative",
-        "kk": "/kəmˈpɛɹətɪv/",
-        "zh": "adj. 比較的",
+        "en": "construction",
+        "kk": "",
+        "zh": "n. 建造;建 設",
         "unit": 11,
-        "example": "he returned to the comparative comfort of his own home",
-        "exampleZh": "他回到了自己相對舒適的家"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20748,
-        "en": "compare",
-        "kk": "/kəmˈpɛɹ/",
-        "zh": "v. 比較；對照",
+        "en": "consultancy",
+        "kk": "",
+        "zh": "n. 諮詢公 司;顧問公司",
         "unit": 11,
-        "example": "sales were modest and cannot compare with the glory days of 1989",
-        "exampleZh": "銷量平平，無法與 1989 年的輝煌歲月相比"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20749,
-        "en": "comparison",
-        "kk": "/kəmˈpɛɹəsən/",
-        "zh": "n. 比較；對照",
+        "en": "consultant",
+        "kk": "",
+        "zh": "n. 顧問;諮詢 者",
         "unit": 11,
-        "example": "The comparison is apt.",
-        "exampleZh": "這個對比是恰當的。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20750,
-        "en": "compass",
-        "kk": "/ˈkəmpəs/",
-        "zh": "n. 指南針",
+        "en": "consume",
+        "kk": "",
+        "zh": "v. 消耗;花費",
         "unit": 11,
-        "example": "this region had within its compass many types of agriculture",
-        "exampleZh": "該地區擁有多種農業類型"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20751,
-        "en": "compassion",
-        "kk": "/kəmˈpæʃən/",
-        "zh": "n. 同情",
+        "en": "consumer",
+        "kk": "",
+        "zh": "n. 消費者",
         "unit": 11,
-        "example": "Sami showed compassion.",
-        "exampleZh": "薩米表現出了同情心。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20752,
-        "en": "compatible",
-        "kk": "/kəmˈpætəbəɫ/",
-        "zh": "a. 能共處的；可並立的",
+        "en": "consumption",
+        "kk": "",
+        "zh": "n. 消費",
         "unit": 11,
-        "example": "the printer is fully compatible with all leading software",
-        "exampleZh": "印表機與所有領先軟體完全相容"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20753,
-        "en": "compel",
-        "kk": "/kəmˈpɛɫ/",
-        "zh": "v. 強迫；強求",
+        "en": "contact",
+        "kk": "",
+        "zh": "n. 接觸;交往; 聯繫a. 接觸的;接觸傳染 的",
         "unit": 11,
-        "example": "they may compel a witness's attendance at court by issue of a summons",
-        "exampleZh": "他們可以透過發出傳票迫使證人出庭"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20754,
-        "en": "compelling",
+        "en": "contain",
         "kk": "",
-        "zh": "adj. 引人注目的",
+        "zh": "v. 包含;容納",
         "unit": 11,
-        "example": "No one has compellingly argued otherwise.",
-        "exampleZh": "沒有人提出相反的令人信服的論點。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20755,
-        "en": "compensate",
-        "kk": "/ˈkɑmpənˌseɪt/",
-        "zh": "v. 補償；賠償",
+        "en": "contemporary",
+        "kk": "",
+        "zh": "a. 當代的; 同時代的",
         "unit": 11,
-        "example": "You'll be compensated.",
-        "exampleZh": "你會得到補償的。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20756,
-        "en": "compensation",
-        "kk": "/ˌkɑmpənˈseɪʃən/",
-        "zh": "n. 補償；賠償",
+        "en": "content",
+        "kk": "",
+        "zh": "n. 滿足a. 滿足 的;滿意的v. 滿足",
         "unit": 11,
-        "example": "the gray streets of London were small compensation for the loss of her beloved Africa",
-        "exampleZh": "倫敦的灰色街道只是對她失去心愛的非洲的小小的補償"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20757,
-        "en": "compete",
-        "kk": "/kəmˈpit/",
-        "zh": "v. 對抗；競爭",
+        "en": "contest",
+        "kk": "",
+        "zh": "v. 競爭;角逐n. 比賽",
         "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
         "id": 20758,
-        "en": "competence",
-        "kk": "/ˈkɑmpətɪns/",
-        "zh": "n. 能力",
+        "en": "context",
+        "kk": "",
+        "zh": "n. 來龍去脈;背 景",
         "unit": 11,
-        "example": "the players displayed varying degrees of competence",
-        "exampleZh": "選手們展現了不同程度的能力"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20759,
-        "en": "competent",
-        "kk": "/ˈkɑmpətɪnt/",
-        "zh": "a. 有能力的；能勝任的",
+        "en": "continue",
+        "kk": "",
+        "zh": "v. 繼續;持續",
         "unit": 11,
-        "example": "make sure the firm is competent to carry out the work",
-        "exampleZh": "確保公司有能力進行這項工作"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20760,
-        "en": "competition",
-        "kk": "/ˌkɑmpəˈtɪʃən/",
-        "zh": "n. 比賽；競賽",
+        "en": "continuity",
+        "kk": "",
+        "zh": "n. 連續性;持 續性",
         "unit": 11,
-        "example": "You have competition.",
-        "exampleZh": "你有競爭。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20761,
-        "en": "competitive",
-        "kk": "/kəmˈpɛtətɪv/",
-        "zh": "a. 競爭性的；好競爭的",
+        "en": "continuous",
+        "kk": "",
+        "zh": "a. 連續的; 不斷的",
         "unit": 11,
-        "example": "a car industry competitive with any in the world",
-        "exampleZh": "與世界上任何一個汽車工業都具有競爭力的汽車工業"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20762,
-        "en": "competitor",
-        "kk": "/kəmˈpɛtətɝ/",
-        "zh": "n. 競爭者；對手",
+        "en": "contract",
+        "kk": "",
+        "zh": "n. 合約v. 締結; 承包",
         "unit": 11,
-        "example": "You're a competitor.",
-        "exampleZh": "你是一個競爭對手。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20763,
-        "en": "compile",
-        "kk": "/kəmˈpaɪɫ/",
-        "zh": "v. 編譯",
+        "en": "contractor",
+        "kk": "",
+        "zh": "n. 立契約者; 承包人",
         "unit": 11,
-        "example": "Who compiled this list?",
-        "exampleZh": "誰編製了這份清單？"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20764,
-        "en": "complain",
-        "kk": "/kəmˈpɫeɪn/",
-        "zh": "v. 抱怨",
+        "en": "contrary",
+        "kk": "",
+        "zh": "a. 相反的;對立 的ad. 相反地;反對地",
         "unit": 11,
-        "example": "her husband began to complain of headaches",
-        "exampleZh": "她的丈夫開始抱怨頭痛"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20765,
-        "en": "complaint",
-        "kk": "/kəmˈpɫeɪnt/",
-        "zh": "n. 抱怨",
+        "en": "control",
+        "kk": "",
+        "zh": "v. 控制;支配n. 支配;控制",
         "unit": 11,
-        "example": "he hasn't any cause for complaint",
-        "exampleZh": "他沒有任何理由抱怨"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20766,
-        "en": "complement",
-        "kk": "/ˈkɑmpɫəmənt/",
-        "zh": "n. 補充物",
+        "en": "controlling",
+        "kk": "",
+        "zh": "a. 管理的;控 制的",
         "unit": 11,
-        "example": "Can I complement you?",
-        "exampleZh": "我可以補充你嗎？"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20767,
-        "en": "complete",
-        "kk": "/kəmˈpɫit/",
-        "zh": "v. 競爭；比賽",
+        "en": "convenience",
+        "kk": "",
+        "zh": "n. 便利;方 便",
         "unit": 11,
-        "example": "a complete ban on smoking",
-        "exampleZh": "全面禁煙"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20768,
-        "en": "completion",
-        "kk": "/kəmˈpɫiʃən/",
-        "zh": "n. 完成；結束",
+        "en": "convenient",
+        "kk": "",
+        "zh": "a. 便利的: 方便的",
         "unit": 11,
-        "example": "the completion date is early next year",
-        "exampleZh": "竣工日期為明年初"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20769,
-        "en": "complex",
-        "kk": "/ˈkɑmpɫɛks/",
-        "zh": "a. 複雜的；錯綜複雜的 n 複合物；綜合體",
+        "en": "convention",
+        "kk": "",
+        "zh": "n. 會議;大 會;集合",
         "unit": 11,
-        "example": "a complex of hotels",
-        "exampleZh": "飯店綜合體"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20770,
-        "en": "complexity",
-        "kk": "/kəmˈpɫɛksəti/",
-        "zh": "n. 複雜性",
+        "en": "conventional",
+        "kk": "",
+        "zh": "a. 習慣的; 慣例的",
         "unit": 11,
-        "example": "an issue of great complexity",
-        "exampleZh": "一個非常複雜的問題"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20771,
-        "en": "compliance",
+        "en": "conversation",
         "kk": "",
-        "zh": "n. 遵守；合規",
+        "zh": "n. 會話;對 話",
         "unit": 11,
-        "example": "they must secure each other's cooperation or compliance",
-        "exampleZh": "他們必須確保彼此的合作或遵守"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20772,
-        "en": "complicate",
-        "kk": "/ˈkɑmpɫəˌkeɪt/",
-        "zh": "v. 使複雜化；使費解",
+        "en": "convey",
+        "kk": "",
+        "zh": "v. 告知;傳達",
         "unit": 11,
-        "example": "War is complicated.",
-        "exampleZh": "戰爭是複雜的。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20773,
-        "en": "complicated",
+        "en": "conviction",
         "kk": "",
-        "zh": "a. 複雜的；難懂的",
+        "zh": "n. 定罪;確信",
         "unit": 11,
-        "example": "War is complicated.",
-        "exampleZh": "戰爭是複雜的。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20774,
-        "en": "complication",
-        "kk": "/ˌkɑmpɫəˈkeɪʃən/",
-        "zh": "n. 併發症",
+        "en": "convince",
+        "kk": "",
+        "zh": "v. 說服",
         "unit": 11,
-        "example": "there is a complication concerning ownership of the site",
-        "exampleZh": "該網站的所有權存在複雜性"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20775,
-        "en": "compliment",
-        "kk": "/ˈkɑmpɫəmɛnt/",
-        "zh": "n. 稱讚：讚美 v 稱讚：讚美",
+        "en": "cooperation",
+        "kk": "",
+        "zh": "n. 合作;協 力",
         "unit": 11,
-        "example": "she paid me an enormous compliment",
-        "exampleZh": "她給了我極大的讚美"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20776,
-        "en": "complimentary",
+        "en": "coordinate",
         "kk": "",
-        "zh": "adj. 免費的",
+        "zh": "v. 協調;調節",
         "unit": 11,
-        "example": "The drinks are complimentary.",
-        "exampleZh": "飲料是免費的。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20777,
-        "en": "comply",
+        "en": "cope",
         "kk": "",
-        "zh": "v. 依從；順從",
+        "zh": "v. 應付;處理",
         "unit": 11,
-        "example": "Tom refused to comply.",
-        "exampleZh": "湯姆拒絕遵守。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20778,
-        "en": "component",
-        "kk": "/kəmˈpoʊnənt/",
-        "zh": "n. 構成要素；零件 a 組成的；構成的",
+        "en": "copy",
+        "kk": "",
+        "zh": "v. 抄寫;複製n. 抄 寫;副本",
         "unit": 11,
-        "example": "light passed through a prism breaks up into its component colors",
-        "exampleZh": "光透過棱鏡分解成其組成顏色"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20779,
-        "en": "compose",
-        "kk": "/kəmˈpoʊz/",
-        "zh": "v. 作（詩，曲等）；使安定",
+        "en": "cordially",
+        "kk": "",
+        "zh": "ad. 熱誠地;誠 摯地",
         "unit": 11,
-        "example": "He composed himself.",
-        "exampleZh": "他鎮定下來。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20780,
-        "en": "composer",
-        "kk": "/kəmˈpoʊzɝ/",
-        "zh": "n. 作曲家",
+        "en": "corner",
+        "kk": "",
+        "zh": "n. 角落",
         "unit": 11,
-        "example": "Composers create music.",
-        "exampleZh": "作曲家創作音樂。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20781,
-        "en": "composition",
-        "kk": "/ˌkɑmpəˈzɪʃən/",
-        "zh": "n. 寫作；作曲",
+        "en": "corporate",
+        "kk": "",
+        "zh": "a. 全體的;共 同的n. 企業;集團",
         "unit": 11,
-        "example": "It's an excellent composition.",
-        "exampleZh": "這是一首優秀的作品。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20782,
-        "en": "compound",
-        "kk": "/ˈkɑmpaʊnd/",
-        "zh": "n. 混合物",
+        "en": "correct",
+        "kk": "",
+        "zh": "a. 正確的;對的v. 改正;糾正",
         "unit": 11,
-        "example": "a compound of hydrogen and oxygen",
-        "exampleZh": "氫和氧的化合物"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20783,
-        "en": "comprehend",
-        "kk": "/ˌkɑmpɹiˈhɛnd/",
-        "zh": "v. 理解；了解",
+        "en": "corrupt",
+        "kk": "",
+        "zh": "a. 腐敗的,貪汙 的v. 墮落;腐化",
         "unit": 11,
-        "example": "I simply couldn't comprehend what had happened",
-        "exampleZh": "我簡直無法理解發生了什麼"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20784,
-        "en": "comprehension",
-        "kk": "/ˌkɑmpɹiˈhɛnʃən/",
-        "zh": "n. 理解",
+        "en": "corruption",
+        "kk": "",
+        "zh": "n. 墮落;腐化",
         "unit": 11,
-        "example": "That was beyond my comprehension.",
-        "exampleZh": "這超出了我的理解範圍。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20785,
-        "en": "comprehensive",
-        "kk": "/ˌkɑmpɹiˈhɛnsɪv/",
-        "zh": "a. 廣泛的；無所不包的",
+        "en": "cost",
+        "kk": "",
+        "zh": "v. 花費;付出n. 費 用;成本",
         "unit": 11,
-        "example": "a comprehensive collection of photographs",
-        "exampleZh": "全面的照片集"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20786,
-        "en": "compress",
+        "en": "council",
         "kk": "",
-        "zh": "v. 壓縮",
+        "zh": "n. 會議;議事",
         "unit": 11,
-        "example": "How can I compress a PDF file?",
-        "exampleZh": "如何壓縮 PDF 檔案？"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20787,
-        "en": "comprise",
-        "kk": "/kəmˈpɹaɪz/",
-        "zh": "v. 包含；包括",
+        "en": "counsel",
+        "kk": "",
+        "zh": "n. 商議;審議v. 勸告;忠告",
         "unit": 11,
-        "example": "One minute comprises sixty seconds.",
-        "exampleZh": "一分鐘包括六十秒。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20788,
-        "en": "compromise",
-        "kk": "/ˈkɑmpɹəˌmaɪz/",
-        "zh": "v. 妥協；和解 n 妥協；和解",
+        "en": "counter",
+        "kk": "",
+        "zh": "ad. 反方向地,相 反地a. 相反的v. 反對;反 擊",
         "unit": 11,
-        "example": "I should compromise the matter with my father",
-        "exampleZh": "我應該和父親妥協"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20789,
-        "en": "compulsory",
-        "kk": "/kəmˈpʌlsəri/",
-        "zh": "adj. 義務的",
+        "en": "couple",
+        "kk": "",
+        "zh": "n. 情侶;夫妻",
         "unit": 11,
-        "example": "It's not compulsory.",
-        "exampleZh": "這不是強制性的。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20790,
-        "en": "compute",
-        "kk": "/kəmˈpjut/",
-        "zh": "v. 計算；估算",
+        "en": "coupon",
+        "kk": "",
+        "zh": "n. 贈券;減價優 待券",
         "unit": 11,
-        "example": "modern circuitry can compute faster than any chess player",
-        "exampleZh": "現代電路的計算速度比任何國際象棋棋手都快"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20791,
-        "en": "computer",
-        "kk": "/kəmˈpjutɝ/",
-        "zh": "n. 電腦",
+        "en": "courier",
+        "kk": "",
+        "zh": "n. 信差;導遊; 情報員",
         "unit": 11,
-        "example": "my computer is frozen",
-        "exampleZh": "我的電腦當機了"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20792,
-        "en": "conceal",
-        "kk": "/kənˈsiɫ/",
-        "zh": "v. 隱藏；隱瞞",
+        "en": "course",
+        "kk": "",
+        "zh": "n. 路線;方向;課 程;系列",
         "unit": 11,
-        "example": "love that they had to conceal from others",
-        "exampleZh": "他們不得不向別人隱瞞的愛"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20793,
-        "en": "concede",
-        "kk": "/kənˈsid/",
-        "zh": "v. 退讓",
+        "en": "court",
+        "kk": "",
+        "zh": "n. 法庭;法院",
         "unit": 11,
-        "example": "Tom conceded the point.",
-        "exampleZh": "湯姆承認了這一點。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20794,
-        "en": "conceit",
-        "kk": "/kənˈsit/",
-        "zh": "n. 自負",
+        "en": "courteously",
+        "kk": "",
+        "zh": "ad. 有禮貌 地;親切地",
         "unit": 11,
-        "example": "the idea of the wind's singing is a prime romantic conceit",
-        "exampleZh": "風的歌唱的想法是一個主要的浪漫幻想"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20795,
-        "en": "conceive",
-        "kk": "/kənˈsiv/",
-        "zh": "v. 想像；設想",
+        "en": "courtesy",
+        "kk": "",
+        "zh": "n. 禮貌;殷勤",
         "unit": 11,
-        "example": "we could not conceive of such things happening to us",
-        "exampleZh": "我們無法想像這樣的事情會發生在我們身上"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20796,
-        "en": "concentrate",
-        "kk": "/ˈkɑnsənˌtɹeɪt/",
-        "zh": "v. 集中；聚集；全神貫注",
+        "en": "cover",
+        "kk": "",
+        "zh": "v. 遮蓋;覆蓋n. 遮 蓋物;封面",
         "unit": 11,
-        "example": "Tom really concentrated.",
-        "exampleZh": "湯姆真的很專注。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20797,
-        "en": "concentration",
-        "kk": "/ˌkɑnsənˈtɹeɪʃən/",
-        "zh": "n. 集中",
+        "en": "coverage",
+        "kk": "",
+        "zh": "n. 覆蓋;覆蓋 範圍",
         "unit": 11,
-        "example": "the largest concentration of Canada geese on earth",
-        "exampleZh": "地球上最大的加拿大鵝集中地"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20798,
-        "en": "concept",
-        "kk": "/ˈkɑnsɛpt/",
-        "zh": "n. 概念；觀念",
+        "en": "crack",
+        "kk": "",
+        "zh": "n. 裂縫;裂痕v. 裂 開;爆裂",
         "unit": 11,
-        "example": "What a crazy concept!",
-        "exampleZh": "多麼瘋狂的概念啊！"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20799,
-        "en": "conception",
-        "kk": "/kənˈsɛpʃən/",
-        "zh": "n. 觀念",
+        "en": "craft",
+        "kk": "",
+        "zh": "n. 工藝,手藝v. 精 巧地製作",
         "unit": 11,
-        "example": "the time between a product's conception and its launch",
-        "exampleZh": "產品的構思與發布之間的時間"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20800,
-        "en": "concern",
-        "kk": "/kənˈsɝn/",
-        "zh": "v. 關於；涉及 n關心的事；關係",
+        "en": "crafted",
+        "kk": "",
+        "zh": "a. 製作的;工藝 的",
         "unit": 11,
-        "example": "She was concerned.",
-        "exampleZh": "她很擔心。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20801,
-        "en": "concerning",
-        "kk": "/kənˈsɝnɪŋ/",
-        "zh": "prep. 關於",
+        "en": "crane",
+        "kk": "",
+        "zh": "n. 鶴v. 伸著脖子看",
         "unit": 11,
-        "example": "dreadful stories concerning a horrible beast",
-        "exampleZh": "關於可怕野獸的可怕故事"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20802,
-        "en": "concert",
-        "kk": "/ˈkɑnsɝt/",
-        "zh": "n. 音樂會",
+        "en": "crash",
+        "kk": "",
+        "zh": "v. 碰撞;倒下n. 墜 毀,迫降",
         "unit": 11,
-        "example": "Enjoy the concert.",
-        "exampleZh": "欣賞音樂會。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20803,
-        "en": "concession",
-        "kk": "/kənˈsɛʃən/",
-        "zh": "n. 讓步",
+        "en": "create",
+        "kk": "",
+        "zh": "v. 創造;製作",
         "unit": 11,
-        "example": "this strict rule was relaxed by concession",
-        "exampleZh": "這項嚴格的規定因讓步而放鬆"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20804,
-        "en": "concise",
-        "kk": "/kənˈsaɪs/",
-        "zh": "adj. 簡潔的",
+        "en": "creation",
+        "kk": "",
+        "zh": "n. 作品;製作物",
         "unit": 11,
-        "example": "a concise account of the country's history",
-        "exampleZh": "該國歷史的簡述"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20805,
-        "en": "conclude",
-        "kk": "/kənˈkɫud/",
-        "zh": "v. 結束；推斷出",
+        "en": "creative",
+        "kk": "",
+        "zh": "a. 有創意的:創 新的",
         "unit": 11,
-        "example": "The session was concluded.",
-        "exampleZh": "會議結束。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20806,
-        "en": "conclusion",
-        "kk": "/kənˈkɫuʒən/",
-        "zh": "n. 結論",
+        "en": "creativity",
+        "kk": "",
+        "zh": "n. 創意;創造 力",
         "unit": 11,
-        "example": "What is the conclusion?",
-        "exampleZh": "結論是什麼？"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20807,
-        "en": "conclusive",
+        "en": "creature",
         "kk": "",
-        "zh": "adj. 決定性的",
+        "zh": "n. 生物;動物",
         "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
         "id": 20808,
-        "en": "concrete",
-        "kk": "/ˈkɑnkɹit/",
-        "zh": "a. 有形的；實在的 n 混凝土 v 凝結；固結",
+        "en": "credential",
+        "kk": "",
+        "zh": "n. 憑據;證書",
         "unit": 11,
-        "example": "He's a concrete person.",
-        "exampleZh": "他是一個具體的人。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20809,
-        "en": "concur",
+        "en": "credible",
         "kk": "",
-        "zh": "v. 同意；一致",
+        "zh": "a. 可信的;可靠 的",
         "unit": 11,
-        "example": "I'm going to concur.",
-        "exampleZh": "我會同意。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20810,
-        "en": "condemn",
-        "kk": "/kənˈdɛm/",
-        "zh": "v. 譴責",
+        "en": "credit",
+        "kk": "",
+        "zh": "n. 賒帳;信譽;功 勞v. 相信;把⋯⋯歸於",
         "unit": 11,
-        "example": "fair-minded people declined to condemn her on mere suspicion",
-        "exampleZh": "公正的人拒絕僅僅因為懷疑而譴責她"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20811,
-        "en": "condense",
-        "kk": "/kənˈdɛns/",
-        "zh": "v. 壓縮",
+        "en": "creditor",
+        "kk": "",
+        "zh": "n. 債權人;貸方",
         "unit": 11,
-        "example": "Don't forget to buy condensed milk.",
-        "exampleZh": "別忘了買煉乳。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20812,
-        "en": "condition",
-        "kk": "/kənˈdɪʃən/",
-        "zh": "n. 情況；狀況",
+        "en": "crew",
+        "kk": "",
+        "zh": "n. 工作人員;船員",
         "unit": 11,
-        "example": "Fuck your conditions.",
-        "exampleZh": "操你的條件。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20813,
-        "en": "conduct",
-        "kk": "/ˈkɑndəkt/",
-        "zh": "v. 帶領；實施",
+        "en": "crime",
+        "kk": "",
+        "zh": "n. 犯罪;罪刑",
         "unit": 11,
-        "example": "members are bound by a code of conduct",
-        "exampleZh": "成員受行為準則的約束"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20814,
-        "en": "conductor",
-        "kk": "/kənˈdəktɝ/",
-        "zh": "n. 指揮",
+        "en": "criminal",
+        "kk": "",
+        "zh": "n. 罪犯a. 犯罪 的;犯法的",
         "unit": 11,
-        "example": "Ziri is a conductor.",
-        "exampleZh": "齊裡是一位指揮家。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20815,
-        "en": "cone",
-        "kk": "/ˈkoʊn/",
-        "zh": "n. 圓錐體",
+        "en": "crisis",
+        "kk": "",
+        "zh": "n. 困難;危及",
         "unit": 11,
-        "example": "Tom licked the ice cream cone.",
-        "exampleZh": "湯姆舔了舔蛋捲冰淇淋。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20816,
-        "en": "confer",
-        "kk": "/kənˈfɝ/",
-        "zh": "v. 協商",
+        "en": "criterion",
+        "kk": "",
+        "zh": "n. 標準;準則",
         "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
         "id": 20817,
-        "en": "conference",
-        "kk": "/ˈkɑnfɝəns/",
-        "zh": "n. 會議724.  conﬁdent a 有自信的；確信的725.  conﬁdential a 祕密的；機密的726. conﬁrm v 證實；確定727.  conﬁrmation n 確定；確證",
+        "en": "critic",
+        "kk": "",
+        "zh": "n. 評論家",
         "unit": 11,
-        "example": "a conference call",
-        "exampleZh": "電話會議"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20818,
-        "en": "confess",
-        "kk": "/kənˈfɛs/",
-        "zh": "v. 承認",
+        "en": "critical",
+        "kk": "",
+        "zh": "a. 批判的;評論的",
         "unit": 11,
-        "example": "once apprehended, they would confess their guilt",
-        "exampleZh": "一旦被捕，他們就會認罪"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20819,
-        "en": "confession",
-        "kk": "/kənˈfɛʃən/",
-        "zh": "n. 承認",
+        "en": "criticize",
+        "kk": "",
+        "zh": "v. 批判;評論",
         "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
         "id": 20820,
-        "en": "confide",
+        "en": "crop",
         "kk": "",
-        "zh": "v. 吐露",
+        "zh": "n. 作物:莊稼v. 播 種",
         "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
         "id": 20821,
-        "en": "confidence",
-        "kk": "/ˈkɑnfədəns/",
-        "zh": "n. 信心",
+        "en": "cross",
+        "kk": "",
+        "zh": "v. 橫穿;渡過n. 十 字形;十字架",
         "unit": 11,
-        "example": "We gained confidence.",
-        "exampleZh": "我們獲得了信心。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20822,
-        "en": "confident",
-        "kk": "/ˈkɑnfədənt/",
-        "zh": "adj. 自信的",
+        "en": "crowd",
+        "kk": "",
+        "zh": "n. 群眾;觀眾",
         "unit": 11,
-        "example": "Write confidently.",
-        "exampleZh": "自信地寫作。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20823,
-        "en": "confidential",
-        "kk": "/ˌkɑnfəˈdɛnʃəɫ/",
-        "zh": "adj. 機密的",
+        "en": "crowded",
+        "kk": "",
+        "zh": "a. 擁擠的;滿的",
         "unit": 11,
-        "example": "a confidential secretary",
-        "exampleZh": "機要秘書"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20824,
-        "en": "configure",
+        "en": "crucial",
         "kk": "",
-        "zh": "v. 配置",
+        "zh": "a. 重要的;嚴酷的",
         "unit": 11,
-        "example": "These links can be configured by site administrators.",
-        "exampleZh": "這些連結可以由網站管理員配置。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20825,
-        "en": "confine",
-        "kk": "/kənˈfaɪn/",
-        "zh": "v. 限制",
+        "en": "cruise",
+        "kk": "",
+        "zh": "v. 巡航;航遊n. 巡 航;航遊",
         "unit": 11,
-        "example": "Where did you confine them?",
-        "exampleZh": "你把他們關在哪裡了？"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20826,
-        "en": "confirm",
-        "kk": "/kənˈfɝm/",
-        "zh": "v. 確認",
+        "en": "cuisine",
+        "kk": "",
+        "zh": "n. 烹飪;烹調法; 菜餚",
         "unit": 11,
-        "example": "Mr. Baker's assistant telephoned to confirm his appointment with the chairman",
-        "exampleZh": "貝克先生的助理打電話確認他與董事長的任命"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20827,
-        "en": "confirmation",
+        "en": "cupboard",
         "kk": "",
-        "zh": "n. 確認",
+        "zh": "n. 食櫥;碗櫃",
         "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
         "id": 20828,
-        "en": "conflict",
-        "kk": "/ˈkɑnfɫɪkt/",
-        "zh": "n. 衝突",
+        "en": "cure",
+        "kk": "",
+        "zh": "n. 治療;痊癒v. 治 癒",
         "unit": 11,
-        "example": "parents' and children's interests sometimes conflict",
-        "exampleZh": "父母和孩子的利益有時會發生衝突"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20829,
-        "en": "conform",
-        "kk": "/kənˈfɔɹm/",
-        "zh": "v. 遵守",
+        "en": "curious",
+        "kk": "",
+        "zh": "a. 好奇的",
         "unit": 11,
-        "example": "Tom will never conform.",
-        "exampleZh": "湯姆永遠不會順從。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20830,
-        "en": "conformity",
+        "en": "currency",
         "kk": "",
-        "zh": "n. 遵從",
+        "zh": "n. 通貨;貨幣",
         "unit": 11,
-        "example": "We're dying from conformity.",
-        "exampleZh": "我們正在死於順從。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20831,
-        "en": "confront",
-        "kk": "/kənˈfɹənt/",
-        "zh": "v. 面對",
+        "en": "current",
+        "kk": "",
+        "zh": "a. 現時的;當前 的n. 流動;水流",
         "unit": 11,
-        "example": "usually the best thing you can do in an embarrassing situation is to confront it head on",
-        "exampleZh": "通常，在尷尬的情況下你能做的最好的事情就是直面它"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20832,
-        "en": "confrontation",
-        "kk": "/ˌkɑnfɹənˈteɪʃən/",
-        "zh": "n. 對抗",
+        "en": "cushion",
+        "kk": "",
+        "zh": "n. 墊子;坐墊",
         "unit": 11,
-        "example": "a confrontation with the legislature",
-        "exampleZh": "與立法機關的對抗"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20833,
-        "en": "confuse",
-        "kk": "/kənˈfjuz/",
-        "zh": "v. 使困惑；混淆",
+        "en": "custom",
+        "kk": "",
+        "zh": "n. 習俗;慣例a. 訂做的;訂製的",
         "unit": 11,
-        "example": "Pietro was confused.",
-        "exampleZh": "彼得羅很困惑。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20834,
-        "en": "confusion",
-        "kk": "/kənˈfjuʒən/",
-        "zh": "n. 混亂；騷動",
+        "en": "customer",
+        "kk": "",
+        "zh": "n. 顧客;買主",
         "unit": 11,
-        "example": "there seems to be some confusion about which system does what",
-        "exampleZh": "對於哪個系統做什麼似乎有些混亂"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20835,
-        "en": "congratulate",
-        "kk": "/kənˈɡɹætʃəˌɫeɪt/",
-        "zh": "v. 祝賀",
+        "en": "customize",
+        "kk": "",
+        "zh": "v. 訂做;客製 化",
         "unit": 11,
-        "example": "They congratulated me.",
-        "exampleZh": "他們向我表示祝賀。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20836,
-        "en": "congratulation",
-        "kk": "/kənˌɡɹætʃəˈɫeɪʃən/",
-        "zh": "n. 祝賀",
+        "en": "customs",
+        "kk": "",
+        "zh": "n. 關稅;海關",
         "unit": 11,
-        "example": "he began pumping the hand of his son in congratulation",
-        "exampleZh": "他開始握著兒子的手錶示祝賀"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20837,
-        "en": "congregation",
+        "en": "cutback",
         "kk": "",
-        "zh": "n. 集合",
+        "zh": "n. 減少;剪修新 芽",
         "unit": 11,
-        "example": "Donald is a congregation member.",
-        "exampleZh": "唐納德是一名會眾。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20838,
-        "en": "congress",
-        "kk": "/ˈkɑŋɡɹəs/",
-        "zh": "n. 國會",
+        "en": "cycle",
+        "kk": "",
+        "zh": "n. 週期;循環v. 循 環;輪轉",
         "unit": 11,
-        "example": "Congress refused to act.",
-        "exampleZh": "國會拒絕採取行動。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20839,
-        "en": "connect",
-        "kk": "/kəˈnɛkt/",
-        "zh": "v. 連接",
+        "en": "daily",
+        "kk": "",
+        "zh": "a. 每日的;日常的",
         "unit": 11,
-        "example": "Tom has connected.",
-        "exampleZh": "湯姆已連線。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20840,
-        "en": "connection",
-        "kk": "/kəˈnɛkʃən/",
-        "zh": "n. 連接",
+        "en": "damage",
+        "kk": "",
+        "zh": "n. 損害;損失v. 損害;毀壞",
         "unit": 11,
-        "example": "People need connection.",
-        "exampleZh": "人們需要聯繫。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20841,
-        "en": "conquer",
-        "kk": "/ˈkɑŋkɝ/",
-        "zh": "v. 征服",
+        "en": "danger",
+        "kk": "",
+        "zh": "n. 危急;危險",
         "unit": 11,
-        "example": "Who conquered Peru?",
-        "exampleZh": "誰征服了秘魯？"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20842,
-        "en": "conquest",
-        "kk": "/ˈkɑŋkwɛst/",
-        "zh": "n. 征服",
+        "en": "dangerous",
+        "kk": "",
+        "zh": "a. 危險的",
         "unit": 11,
-        "example": "the conquest of inflation",
-        "exampleZh": "征服通貨膨脹"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20843,
-        "en": "conscience",
-        "kk": "/ˈkɑnʃəns/",
-        "zh": "n. 良心",
+        "en": "dare",
+        "kk": "",
+        "zh": "aux. 敢;竟敢v. 敢; 膽敢n. 果敢行為;挑戰",
         "unit": 11,
-        "example": "He had no conscience.",
-        "exampleZh": "他沒有良心。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20844,
-        "en": "conscientious",
-        "kk": "/ˌkɑnʃiˈɛnʃəs/",
-        "zh": "adj. 認真的",
+        "en": "daring",
+        "kk": "",
+        "zh": "a. 大膽的;勇敢的",
         "unit": 11,
-        "example": "a conscientious and hardworking clerk",
-        "exampleZh": "認真勤奮的職員"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20845,
-        "en": "conscious",
-        "kk": "/ˈkɑnʃəs/",
-        "zh": "a. 神志清醒的；有知覺的",
+        "en": "data",
+        "kk": "",
+        "zh": "n. 資料;數據",
         "unit": 11,
-        "example": "Tom was conscious.",
-        "exampleZh": "湯姆還有意識。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20846,
-        "en": "consciousness",
+        "en": "database",
         "kk": "",
-        "zh": "n. 意念；意識",
+        "zh": "n. 資料庫",
         "unit": 11,
-        "example": "Ivan lost consciousness.",
-        "exampleZh": "伊万失去了知覺。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20847,
-        "en": "consecutive",
+        "en": "dawn",
         "kk": "",
-        "zh": "a. 連續不斷的；連貫的",
+        "zh": "n. 黎明,拂曉v. 破 曉;(天)剛亮",
         "unit": 11,
-        "example": "a consecutive clause",
-        "exampleZh": "連續子句"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20848,
-        "en": "consensus",
-        "kk": "/kənˈsɛnsəs/",
-        "zh": "n. 共識",
+        "en": "day",
+        "kk": "",
+        "zh": "n. 一天;日;白天",
         "unit": 11,
-        "example": "a consensus of opinion among judges",
-        "exampleZh": "法官意見一致"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20849,
-        "en": "consent",
-        "kk": "/kənˈsɛnt/",
-        "zh": "n. 同意",
+        "en": "daylight",
+        "kk": "",
+        "zh": "n. 日光;白晝",
         "unit": 11,
-        "example": "no change may be made without the consent of all the partners",
-        "exampleZh": "未經全體合夥人同意不得變更"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20850,
-        "en": "consequence",
-        "kk": "/ˈkɑnsəkwəns/",
-        "zh": "n. 結果",
+        "en": "date",
+        "kk": "",
+        "zh": "n. 日期;日子v. 註 有日期",
         "unit": 11,
-        "example": "There are consequences.",
-        "exampleZh": "這是有後果的。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20851,
-        "en": "consequent",
-        "kk": "/ˈkɑnsəkwənt/",
-        "zh": "adj. 隨之發生的",
+        "en": "daytime",
+        "kk": "",
+        "zh": "n. 白天;白晝",
         "unit": 11,
-        "example": "labor shortages would be created with a consequent increase in wages",
-        "exampleZh": "勞動力短缺將導致工資上漲"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20852,
-        "en": "consequently",
+        "en": "dazzle",
         "kk": "",
-        "zh": "ad. 結果；因此；必然地",
+        "zh": "v. 使目眩;使眼花n. 耀眼;燦爛",
         "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
         "id": 20853,
-        "en": "conservation",
-        "kk": "/ˌkɑnsɝˈveɪʃən/",
-        "zh": "n. 保存",
+        "en": "deadline",
+        "kk": "",
+        "zh": "n. 截止期限;最 後限期",
         "unit": 11,
-        "example": "they launched a week-long campaign to promote energy conservation",
-        "exampleZh": "他們發起了為期一週的節能宣傳活動"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20854,
-        "en": "conservative",
-        "kk": "/kənˈsɝvətɪv/",
-        "zh": "a. 保守的；守舊的 n 保守者；守舊者",
+        "en": "deal",
+        "kk": "",
+        "zh": "v. 經營;交易n. 交 易",
         "unit": 11,
-        "example": "We're conservatives.",
-        "exampleZh": "我們是保守派。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20855,
-        "en": "conserve",
-        "kk": "/kənˈsɝv/",
-        "zh": "v. 保存；保護",
+        "en": "dealer",
+        "kk": "",
+        "zh": "n. 業者;商人",
         "unit": 11,
-        "example": "the funds raised will help conserve endangered meadowlands",
-        "exampleZh": "籌集的資金將有助於保護瀕危草甸"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20856,
-        "en": "consider",
-        "kk": "/kənˈsɪdɝ/",
-        "zh": "v. 考慮；細想",
+        "en": "dealing",
+        "kk": "",
+        "zh": "n. 行為;商業往 來",
         "unit": 11,
-        "example": "I consider him irresponsible",
-        "exampleZh": "我認為他不負責任"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20857,
-        "en": "considerable",
-        "kk": "/kənˈsɪdɝəbəɫ/",
-        "zh": "adj. 相當大的",
+        "en": "dean",
+        "kk": "",
+        "zh": "n. 教務長;學院院 長",
         "unit": 11,
-        "example": "a position of considerable influence",
-        "exampleZh": "有相當影響力的地位"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20858,
-        "en": "considerably",
+        "en": "dear",
         "kk": "",
-        "zh": "adv. 相當地",
+        "zh": "a. 親愛的;摯愛的",
         "unit": 11,
-        "example": "She was considerably naive.",
-        "exampleZh": "她實在是太天真了。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20859,
-        "en": "considerate",
-        "kk": "/kənˈsɪdɝət/",
-        "zh": "adj. 體貼的",
+        "en": "debatable",
+        "kk": "",
+        "zh": "a. 可爭辯的; 可爭論的",
         "unit": 11,
-        "example": "be considerate over your handwriting",
-        "exampleZh": "體貼你的筆跡"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20860,
-        "en": "consideration",
-        "kk": "/kənˌsɪdɝˈeɪʃən/",
-        "zh": "n. 體貼；動機；原因",
+        "en": "debate",
+        "kk": "",
+        "zh": "v. 辯論;爭論n. 辯論",
         "unit": 11,
-        "example": "For your consideration.",
-        "exampleZh": "供您考慮。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20861,
-        "en": "consist",
-        "kk": "/kənˈsɪst/",
-        "zh": "v. 組成；構成",
+        "en": "debit",
+        "kk": "",
+        "zh": "v. 借方n. 把⋯⋯記 入借方",
         "unit": 11,
-        "example": "to turn an entire consist requires a wye",
-        "exampleZh": "轉動整個組需要一個 Y 形"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20862,
-        "en": "consistency",
+        "en": "debt",
         "kk": "",
-        "zh": "n. 一致；一貫",
+        "zh": "n. 債務;借款",
         "unit": 11,
-        "example": "Consistency is key.",
-        "exampleZh": "一致性是關鍵。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20863,
-        "en": "consistent",
-        "kk": "/kənˈsɪstənt/",
-        "zh": "a. 始終如一的；前後一致的",
+        "en": "debut",
+        "kk": "",
+        "zh": "n. 首次露面;初次 登臺",
         "unit": 11,
-        "example": "I trained consistently.",
-        "exampleZh": "我堅持不懈地訓練。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20864,
-        "en": "console",
-        "kk": "/ˈkɑnsoʊɫ/",
-        "zh": "v. 安慰",
+        "en": "decade",
+        "kk": "",
+        "zh": "n. 十;十年",
         "unit": 11,
-        "example": "you can console yourself with the thought that you did your best",
-        "exampleZh": "你可以安慰自己，你已經盡力了"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20865,
-        "en": "consolidate",
+        "en": "decease",
         "kk": "",
-        "zh": "v. 鞏固",
+        "zh": "v. 亡故n. 死亡",
         "unit": 11,
-        "example": "We can consolidate your savings accounts.",
-        "exampleZh": "我們可以整合您的儲蓄帳戶。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20866,
-        "en": "conspicuous",
+        "en": "deceit",
         "kk": "",
-        "zh": "adj. 顯著的",
+        "zh": "n. 欺騙;欺詐",
         "unit": 11,
-        "example": "Don't be too conspicuous.",
-        "exampleZh": "不要太顯眼。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20867,
-        "en": "conspiracy",
-        "kk": "/kənˈspɪɹəsi/",
-        "zh": "n. 陰謀",
+        "en": "deceitful",
+        "kk": "",
+        "zh": "a. 騙人的;欺詐 的",
         "unit": 11,
-        "example": "they were cleared of conspiracy to pervert the course of justice",
-        "exampleZh": "他們被證明沒有陰謀妨礙司法公正"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20868,
-        "en": "constant",
-        "kk": "/ˈkɑnstənt/",
-        "zh": "a. 固定的；不變的",
+        "en": "deceive",
+        "kk": "",
+        "zh": "v. 欺騙;蒙蔽",
         "unit": 11,
-        "example": "He spoke constantly.",
-        "exampleZh": "他不停地說話。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20869,
-        "en": "constantly",
+        "en": "decelerate",
         "kk": "",
-        "zh": "adv. 經常地",
+        "zh": "v. 減緩;降低 速度",
         "unit": 11,
-        "example": "He spoke constantly.",
-        "exampleZh": "他不停地說話。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20870,
-        "en": "constitute",
-        "kk": "/ˈkɑnstəˌtut/",
-        "zh": "v. 構成",
+        "en": "deceleration",
+        "kk": "",
+        "zh": "n. 減速",
         "unit": 11,
-        "example": "single parents constitute a great proportion of the poor",
-        "exampleZh": "單親父母佔貧困人口的很大一部分"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20871,
-        "en": "constitution",
-        "kk": "/ˌkɑnstəˈtuʃən/",
-        "zh": "n. 憲法",
+        "en": "decent",
+        "kk": "",
+        "zh": "a. 正派的;合乎禮 儀的",
         "unit": 11,
-        "example": "Algeria has a constitution.",
-        "exampleZh": "阿爾及利亞有憲法。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20872,
-        "en": "constraint",
+        "en": "decide",
         "kk": "",
-        "zh": "n. 約束；限制",
+        "zh": "v. 決定;決意",
         "unit": 11,
-        "example": "Tom is into constraint and logic programming.",
-        "exampleZh": "Tom 熱衷於約束和邏輯程式設計。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20873,
-        "en": "construct",
-        "kk": "/ˈkɑnstɹəkt/",
-        "zh": "v. 建造",
+        "en": "decipher",
+        "kk": "",
+        "zh": "v. 破解(密碼 等);解釋(古代文字等)",
         "unit": 11,
-        "example": "Ideas are mental constructs.",
-        "exampleZh": "想法是心理構造。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20874,
-        "en": "construction",
-        "kk": "/kənˈstɹəkʃən/",
-        "zh": "n. 建造；建設",
+        "en": "decision",
+        "kk": "",
+        "zh": "n. 決心;判斷",
         "unit": 11,
-        "example": "I worked in construction.",
-        "exampleZh": "我從事建築工作。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20875,
-        "en": "constructive",
-        "kk": "/kənˈstɹəktɪv/",
-        "zh": "adj. 建設性的",
+        "en": "decisive",
+        "kk": "",
+        "zh": "a. 決定性的;決 定的",
         "unit": 11,
-        "example": "Fyodor got constructive criticism.",
-        "exampleZh": "費奧多爾得到了建設性的批評。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20876,
-        "en": "consult",
-        "kk": "/kənˈsəɫt/",
-        "zh": "v. 請教",
+        "en": "deck",
+        "kk": "",
+        "zh": "n. 艙面;甲板",
         "unit": 11,
-        "example": "Tom was consulted.",
-        "exampleZh": "有人諮詢了湯姆。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20877,
-        "en": "consultant",
-        "kk": "/kənˈsəɫtənt/",
-        "zh": "n. 顧問；諮詢者",
+        "en": "declaration",
+        "kk": "",
+        "zh": "n. 宣告;宣 言",
         "unit": 11,
-        "example": "she is currently a self-employed business consultant",
-        "exampleZh": "她目前是個人商業顧問"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20878,
-        "en": "consultation",
-        "kk": "/ˌkɑnsəɫˈteɪʃən/",
-        "zh": "n. 諮詢",
+        "en": "declare",
+        "kk": "",
+        "zh": "v. 宣告;聲明",
         "unit": 11,
-        "example": "it's always a good idea to have a consultation with a specialist who can give you more details and more insights",
-        "exampleZh": "諮詢專家總是一個好主意，他可以為您提供更多細節和更多見解"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20879,
-        "en": "consume",
-        "kk": "/kənˈsum/",
-        "zh": "v. 消耗；花費",
+        "en": "decline",
+        "kk": "",
+        "zh": "v. 下降;下跌n. 下降;減少",
         "unit": 11,
-        "example": "Time consumes all things.",
-        "exampleZh": "時間會吞噬一切。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20880,
-        "en": "consumer",
-        "kk": "/kənˈsumɝ/",
-        "zh": "n. 消費者",
+        "en": "decode",
+        "kk": "",
+        "zh": "v. 譯解(密碼)",
         "unit": 11,
-        "example": "consumer demand",
-        "exampleZh": "消費者需求"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20881,
-        "en": "consumption",
-        "kk": "/kənˈsəmpʃən/",
-        "zh": "n. 消費",
+        "en": "decrease",
+        "kk": "",
+        "zh": "v. 減;減少",
         "unit": 11,
-        "example": "his mother had died of consumption",
-        "exampleZh": "他的母親死於肺病"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20882,
-        "en": "contact",
-        "kk": "/ˈkɑnˌtækt/",
-        "zh": "n. 接觸；交往；聯繫 a 接觸的；接觸傳染的",
+        "en": "dedicate",
+        "kk": "",
+        "zh": "v. 奉獻;獻身",
         "unit": 11,
-        "example": "contact dermatitis",
-        "exampleZh": "接觸性皮膚炎"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20883,
-        "en": "contain",
-        "kk": "/kənˈteɪn/",
-        "zh": "v. 包含；容納",
+        "en": "dedication",
+        "kk": "",
+        "zh": "n. 奉獻;供奉",
         "unit": 11,
-        "example": "she was scarcely able to contain herself as she waited to spill the beans",
-        "exampleZh": "當她等待洩露秘密時，她幾乎無法控制自己"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20884,
-        "en": "container",
-        "kk": "/kənˈteɪnɝ/",
-        "zh": "n. 容器",
+        "en": "deduce",
+        "kk": "",
+        "zh": "v. 演繹;推論",
         "unit": 11,
-        "example": "a container ship",
-        "exampleZh": "一艘貨櫃船"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20885,
-        "en": "contaminate",
-        "kk": "/kənˈtæməˌneɪt/",
-        "zh": "v. 汙染",
+        "en": "deduct",
+        "kk": "",
+        "zh": "v. 扣除;減除",
         "unit": 11,
-        "example": "This water is contaminated.",
-        "exampleZh": "這些水被污染了。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20886,
-        "en": "contemplate",
-        "kk": "/ˈkɑntəmˌpɫeɪt/",
-        "zh": "v. 沉思",
+        "en": "deduction",
+        "kk": "",
+        "zh": "n. 扣除;減除",
         "unit": 11,
-        "example": "the results of a trade war are too horrifying to contemplate",
-        "exampleZh": "貿易戰的結果慘不忍睹"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20887,
-        "en": "contemporary",
-        "kk": "/kənˈtɛmpɝˌɛɹi/",
-        "zh": "a. 當代的；同時代的",
+        "en": "deem",
+        "kk": "",
+        "zh": "v. 認為;以為",
         "unit": 11,
-        "example": "contemporary art",
-        "exampleZh": "當代藝術"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20888,
-        "en": "contempt",
-        "kk": "/kənˈtɛmpt/",
-        "zh": "n. 輕視",
+        "en": "deep",
+        "kk": "",
+        "zh": "a. 深的ad. 深深地n. 深處",
         "unit": 11,
-        "example": "Money breeds contempt.",
-        "exampleZh": "金錢會滋生輕視。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20889,
-        "en": "contend",
-        "kk": "/kənˈtɛnd/",
-        "zh": "v. 競爭",
+        "en": "deepen",
+        "kk": "",
+        "zh": "v. 使變深;使加 深;使強烈",
         "unit": 11,
-        "example": "she had to contend with his uncertain temper",
-        "exampleZh": "她必須應付他反覆無常的脾氣"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20890,
-        "en": "content",
-        "kk": "/ˈkɑntɛnt/",
-        "zh": "n. 滿足 a 滿足的；滿意的 v 滿足",
+        "en": "default",
+        "kk": "",
+        "zh": "n. 違約;拖欠;預 設v. 不履行;拖欠",
         "unit": 11,
-        "example": "Dmitri was contented.",
-        "exampleZh": "德米特里很滿意。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20891,
-        "en": "contention",
+        "en": "defeat",
         "kk": "",
-        "zh": "n. 爭論",
+        "zh": "v. 戰勝;擊敗n. 戰敗;挫折",
         "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
         "id": 20892,
-        "en": "contest",
-        "kk": "/ˈkɑntɛst/",
-        "zh": "v. 競爭；角逐 n比賽",
+        "en": "defect",
+        "kk": "",
+        "zh": "n. 缺點;缺陷v. 逃 跑;脫離",
         "unit": 11,
-        "example": "He won the contest.",
-        "exampleZh": "他贏得了比賽。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20893,
-        "en": "context",
-        "kk": "/ˈkɑntɛkst/",
-        "zh": "n. 來龍去脈；背景",
+        "en": "defend",
+        "kk": "",
+        "zh": "v. 防衛;保護",
         "unit": 11,
-        "example": "What's the context?",
-        "exampleZh": "背景是什麼？"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20894,
-        "en": "continent",
-        "kk": "/ˈkɑntənənt/",
-        "zh": "n. 大陸",
+        "en": "defense",
+        "kk": "",
+        "zh": "n. 防衛;保護",
         "unit": 11,
-        "example": "Europe is a continent.",
-        "exampleZh": "歐洲是一個大陸。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20895,
-        "en": "contingency",
+        "en": "defensive",
         "kk": "",
-        "zh": "n. 意外事故",
+        "zh": "a. 防衛的;保 衛的",
         "unit": 11,
-        "example": "Do we have a contingency plan?",
-        "exampleZh": "我們有應急計劃嗎？"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20896,
-        "en": "continue",
-        "kk": "/kənˈtɪnju/",
-        "zh": "v. 繼續；持續",
+        "en": "deficiency",
+        "kk": "",
+        "zh": "n. 不足;缺乏",
         "unit": 11,
-        "example": "they have indicated their willingness to continue in office",
-        "exampleZh": "他們已表示願意繼續任職"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20897,
-        "en": "continuous",
-        "kk": "/kənˈtɪnjuəs/",
-        "zh": "a. 連續的；不斷的",
+        "en": "definite",
+        "kk": "",
+        "zh": "a. 明確的;確切 的",
         "unit": 11,
-        "example": "there are continuous advances in design and production",
-        "exampleZh": "設計和生產不斷進步"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20898,
-        "en": "contract",
-        "kk": "/ˈkɑnˌtɹækt/",
-        "zh": "n. 合約 v 締結；承包",
+        "en": "deflate",
+        "kk": "",
+        "zh": "v. 抽出⋯⋯中的 氣",
         "unit": 11,
-        "example": "South can make the contract with correct play",
-        "exampleZh": "南方可以透過正確的表現來簽訂合約"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20899,
-        "en": "contractor",
-        "kk": "/ˈkɑnˌtɹæktɝ/",
-        "zh": "n. 立契約者；承包人",
+        "en": "deflect",
+        "kk": "",
+        "zh": "v. 使偏斜;使轉向",
         "unit": 11,
-        "example": "Ziri is a contractor.",
-        "exampleZh": "Ziri 是一名承包商。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20900,
-        "en": "contradict",
-        "kk": "/ˌkɑntɹəˈdɪkt/",
-        "zh": "v. 反駁",
+        "en": "defy",
+        "kk": "",
+        "zh": "v. 公然反抗;蔑視",
         "unit": 11,
-        "example": "She contradicts herself.",
-        "exampleZh": "她自相矛盾。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20901,
-        "en": "contradiction",
-        "kk": "/ˌkɑntɹəˈdɪkʃən/",
-        "zh": "n. 矛盾",
+        "en": "degree",
+        "kk": "",
+        "zh": "n. 度,度數;程 度",
         "unit": 11,
-        "example": "the experiment provides a contradiction of the hypothesis",
-        "exampleZh": "實驗提供了與假設相矛盾的結果"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20902,
-        "en": "contrary",
-        "kk": "/ˈkɑntɹɛɹi/",
-        "zh": "a. 相反的；對立的 ad 相反地；反對地",
+        "en": "delay",
+        "kk": "",
+        "zh": "v. 拖延;耽擱n. 延 遲;耽擱",
         "unit": 11,
-        "example": "I know nothing to the contrary.",
-        "exampleZh": "我不知道相反的情況。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20903,
-        "en": "contrast",
-        "kk": "/ˈkɑntɹæst/",
-        "zh": "n. 對比",
+        "en": "delegate",
+        "kk": "",
+        "zh": "v. 委派⋯⋯為代 表;委派(某人)做",
         "unit": 11,
-        "example": "Red contrasts well with blue.",
-        "exampleZh": "紅色與藍色形成鮮明對比。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20904,
-        "en": "contribute",
-        "kk": "/kənˈtɹɪbjut/",
-        "zh": "v. 貢獻",
+        "en": "deliberate",
+        "kk": "",
+        "zh": "a. 深思熟慮 的;慎重的v. 仔細考慮; 思考",
         "unit": 11,
-        "example": "Anyone may contribute.",
-        "exampleZh": "任何人都可以做出貢獻。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20905,
-        "en": "contribution",
-        "kk": "/ˌkɑntɹəbˈjuʃən/",
-        "zh": "n. 貢獻",
+        "en": "deliberately",
+        "kk": "",
+        "zh": "ad. 慎重地; 謹慎地",
         "unit": 11,
-        "example": "he made a lasting contribution by designing the modern radio telescope",
-        "exampleZh": "他透過設計現代電波望遠鏡做出了持久的貢獻"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20906,
-        "en": "contributor",
+        "en": "delicacy",
         "kk": "",
-        "zh": "n. 貢獻者",
+        "zh": "n. 精美;佳餚",
         "unit": 11,
-        "example": "We're Wikipedia contributors.",
-        "exampleZh": "我們是維基百科的貢獻者。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20907,
-        "en": "contrive",
+        "en": "delicate",
         "kk": "",
-        "zh": "v. 發明",
+        "zh": "a. 易碎的;嬌貴 的;纖弱的",
         "unit": 11,
-        "example": "This is a chaotic and contrived attempt.",
-        "exampleZh": "這是一種混亂且人為的嘗試。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20908,
-        "en": "control",
-        "kk": "/kənˈtɹoʊɫ/",
-        "zh": "v. 控制；支配 n支配；控制",
+        "en": "delicious",
+        "kk": "",
+        "zh": "a. 美味的;香噴 噴的",
         "unit": 11,
-        "example": "passport control",
-        "exampleZh": "護照檢查"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20909,
-        "en": "controversial",
-        "kk": "/ˌkɑntɹəˈvɝʃəɫ/",
-        "zh": "adj. 有爭議的",
+        "en": "delight",
+        "kk": "",
+        "zh": "n. 欣喜;愉快v. 高興;喜愛",
         "unit": 11,
-        "example": "years of wrangling over a controversial bypass",
-        "exampleZh": "多年來圍繞著有爭議的繞行爭論"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20910,
-        "en": "controversy",
-        "kk": "/ˈkɑntɹəˌvɝsi/",
-        "zh": "n. 爭議",
+        "en": "deliver",
+        "kk": "",
+        "zh": "v. 投遞;傳送",
         "unit": 11,
-        "example": "the announcement ended a protracted controversy",
-        "exampleZh": "這項公告結束了曠日持久的爭議"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20911,
-        "en": "convene",
+        "en": "delivery",
         "kk": "",
-        "zh": "v. 召集",
+        "zh": "n. 投遞;傳送",
         "unit": 11,
-        "example": "The assembly will convene tomorrow.",
-        "exampleZh": "大會將於明天召開。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20912,
-        "en": "convenience",
-        "kk": "/kənˈvinjəns/",
-        "zh": "n. 便利；方便",
+        "en": "delusion",
+        "kk": "",
+        "zh": "n. 迷惑;欺騙",
         "unit": 11,
-        "example": "the convenience of a portable phone",
-        "exampleZh": "手機的便利性"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20913,
-        "en": "convenient",
-        "kk": "/kənˈvinjənt/",
-        "zh": "a. 便利的：方便的",
+        "en": "demand",
+        "kk": "",
+        "zh": "v. 要求,請求n. 要求;請求",
         "unit": 11,
-        "example": "the 34-story building is convenient to downtown",
-        "exampleZh": "34層大樓，去市中心很方便"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20914,
-        "en": "convention",
-        "kk": "/kənˈvɛnʃən/",
-        "zh": "n. 會議；大會；集合",
+        "en": "demise",
+        "kk": "",
+        "zh": "n. 死亡;終止v. 轉讓;遺贈",
         "unit": 11,
-        "example": "I shit on conventions.",
-        "exampleZh": "我討厭慣例。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20915,
-        "en": "conventional",
-        "kk": "/kənˈvɛnʃənəɫ/",
-        "zh": "a. 習慣的；慣例的",
+        "en": "demographics",
+        "kk": "",
+        "zh": "n. 人口統 計資料",
         "unit": 11,
-        "example": "Conventional oil is cheaper.",
-        "exampleZh": "傳統石油較便宜。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20916,
-        "en": "converge",
+        "en": "demolish",
         "kk": "",
-        "zh": "v. 匯聚",
+        "zh": "v. 毀壞;破壞",
         "unit": 11,
-        "example": "This algorithm doesn't converge.",
-        "exampleZh": "該演算法不收斂。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20917,
-        "en": "conversation",
-        "kk": "/ˌkɑnvɝˈseɪʃən/",
-        "zh": "n. 會話；對話",
+        "en": "demonstrate",
+        "kk": "",
+        "zh": "v. 論證;證 明;示威",
         "unit": 11,
-        "example": "the two men were deep in conversation",
-        "exampleZh": "兩人正在深入交談"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20918,
-        "en": "converse",
-        "kk": "/ˈkɑnvɝs/",
-        "zh": "v. 交談",
+        "en": "demonstration",
+        "kk": "",
+        "zh": "n. 論證; 證明",
         "unit": 11,
-        "example": "his converse at such seasons was always elevating",
-        "exampleZh": "他在這樣的季節裡的對話總是令人振奮"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20919,
-        "en": "conversion",
+        "en": "denial",
         "kk": "",
-        "zh": "n. 轉換",
+        "zh": "n. 否認;否定",
         "unit": 11,
-        "example": "Conversion therapy kills.",
-        "exampleZh": "轉化療法會致命。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20920,
-        "en": "convert",
-        "kk": "/ˈkɑnvɝt/",
-        "zh": "v. 轉換",
+        "en": "dense",
+        "kk": "",
+        "zh": "a. 密集的,稠密的",
         "unit": 11,
-        "example": "he is a recent convert to the Church",
-        "exampleZh": "他是最近才皈依教會的"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20921,
-        "en": "convey",
-        "kk": "/kənˈveɪ/",
-        "zh": "v. 告知；傳達",
+        "en": "density",
+        "kk": "",
+        "zh": "n. 密集度;稠密 度",
         "unit": 11,
-        "example": "I conveyed the message to him.",
-        "exampleZh": "我把這個消息轉達給了他。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20922,
-        "en": "convict",
-        "kk": "/ˈkɑnvɪkt/",
-        "zh": "v. 定罪",
+        "en": "deny",
+        "kk": "",
+        "zh": "v. 否定,否認",
         "unit": 11,
-        "example": "She was convicted.",
-        "exampleZh": "她被定罪了。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20923,
-        "en": "conviction",
-        "kk": "/kənˈvɪkʃən/",
-        "zh": "n. 定罪；確信",
+        "en": "depart",
+        "kk": "",
+        "zh": "v. 起程,出發",
         "unit": 11,
-        "example": "his voice lacked conviction",
-        "exampleZh": "他的聲音缺乏說服力"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20924,
-        "en": "convince",
-        "kk": "/kənˈvɪns/",
-        "zh": "v. 說服",
+        "en": "department",
+        "kk": "",
+        "zh": "n. 部;司;局; 處;科",
         "unit": 11,
-        "example": "Tom was convinced.",
-        "exampleZh": "湯姆被說服了。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20925,
-        "en": "convincing",
+        "en": "departmental",
         "kk": "",
-        "zh": "adj. 令人信服的",
+        "zh": "a. 部門的; 分部的",
         "unit": 11,
-        "example": "It was convincing.",
-        "exampleZh": "這是有說服力的。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20926,
-        "en": "cook",
-        "kk": "/ˈkʊk/",
-        "zh": "v. 烹調",
+        "en": "departure",
+        "kk": "",
+        "zh": "n. 離開;出發",
         "unit": 11,
-        "example": "a short order cook",
-        "exampleZh": "速食廚師"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20927,
-        "en": "cool",
-        "kk": "/ˈkuɫ/",
-        "zh": "adj. 涼爽的",
+        "en": "depend",
+        "kk": "",
+        "zh": "v. 相信;信賴",
         "unit": 11,
-        "example": "he made no concessions to fashion, yet somehow he was hip and cool",
-        "exampleZh": "他對時尚毫不讓步，但不知怎的，他又時髦又酷"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20928,
-        "en": "cooperate",
-        "kk": "/ˈkwɑpɝˌeɪt/",
-        "zh": "v. 合作",
+        "en": "dependency",
+        "kk": "",
+        "zh": "n. 依靠;信 賴",
         "unit": 11,
-        "example": "Tom has cooperated.",
-        "exampleZh": "湯姆已經合作了。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20929,
-        "en": "cooperation",
-        "kk": "/ˌkwɑpɝˈeɪʃən/",
-        "zh": "n. 合作；協力",
+        "en": "dependent",
+        "kk": "",
+        "zh": "a. 依靠的;依 賴的",
         "unit": 11,
-        "example": "they worked in close cooperation with the AAA",
-        "exampleZh": "他們與 AAA 密切合作"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20930,
-        "en": "cooperative",
-        "kk": "/koʊˈɑpɝˌeɪtɪv/",
-        "zh": "adj. 合作的",
+        "en": "depict",
+        "kk": "",
+        "zh": "v. 描述;描寫",
         "unit": 11,
-        "example": "Was Tom cooperative?",
-        "exampleZh": "湯姆合作嗎？"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20931,
-        "en": "coordinate",
-        "kk": "/koʊˈɔɹdəˌneɪt/",
-        "zh": "v. 協調；調節",
+        "en": "deposit",
+        "kk": "",
+        "zh": "v. 放置;寄存n. 存款",
         "unit": 11,
-        "example": "you will coordinate with consultants and other departments on a variety of projects",
-        "exampleZh": "您將與顧問和其他部門協調各種項目"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20932,
-        "en": "coordination",
+        "en": "depression",
         "kk": "",
-        "zh": "n. 協調",
+        "zh": "n. 沮喪;意 氣消沉",
         "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
         "id": 20933,
-        "en": "cop",
-        "kk": "/ˈkɑp/",
-        "zh": "n. 警察",
+        "en": "describe",
+        "kk": "",
+        "zh": "v. 描繪;敘述",
         "unit": 11,
-        "example": "Cops love doughnuts.",
-        "exampleZh": "警察喜歡甜甜圈。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20934,
-        "en": "cope",
-        "kk": "/ˈkoʊp/",
-        "zh": "v. 應付；處理",
+        "en": "description",
+        "kk": "",
+        "zh": "n. 敘述;形 容",
         "unit": 11,
-        "example": "I cope with stress.",
-        "exampleZh": "我應對壓力。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20935,
-        "en": "copy",
-        "kk": "/ˈkɑpi/",
-        "zh": "v. 抄寫；複製 n 抄寫；副本",
+        "en": "deserve",
+        "kk": "",
+        "zh": "v. 應受;該得",
         "unit": 11,
-        "example": "this is Edwards, do you copy, over",
-        "exampleZh": "這是愛德華茲，聽到了嗎，結束"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20936,
-        "en": "copyright",
-        "kk": "/ˈkɑpiˌɹaɪt/",
-        "zh": "n. 版權",
+        "en": "design",
+        "kk": "",
+        "zh": "v. 設計構思;繪製n. 圖樣;圖紙",
         "unit": 11,
-        "example": "permission to reproduce photographs and other copyright material",
-        "exampleZh": "複製照片和其他版權資料的許可"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20937,
-        "en": "core",
-        "kk": "/ˈkɔɹ/",
-        "zh": "n. 核心",
+        "en": "despite",
+        "kk": "",
+        "zh": "prep. 不管;儘管n. 惡意;怨恨",
         "unit": 11,
-        "example": "Don't eat apple cores.",
-        "exampleZh": "不要吃蘋果核。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20938,
-        "en": "corner",
-        "kk": "/ˈkɔɹnɝ/",
-        "zh": "n. 角落",
+        "en": "destination",
+        "kk": "",
+        "zh": "n. 目的地; 終點",
         "unit": 11,
-        "example": "whether they will corner the market in graphics software remains to be seen",
-        "exampleZh": "他們是否會壟斷圖形軟體市場還有待觀察"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20939,
-        "en": "corporate",
-        "kk": "/ˈkɔɹpɝət/",
-        "zh": "a. 全體的；共同的 n 企業；集團",
+        "en": "destroy",
+        "kk": "",
+        "zh": "v. 毀壞;破壞",
         "unit": 11,
-        "example": "local authorities, like other corporate bodies, may reduce capital spending",
-        "exampleZh": "地方當局與其他法人機構一樣，可能會減少資本支出"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20940,
-        "en": "corporation",
-        "kk": "/ˌkɔɹpɝˈeɪʃən/",
-        "zh": "n. 公司；法人",
+        "en": "destruction",
+        "kk": "",
+        "zh": "v. 毀壞;破 壞",
         "unit": 11,
-        "example": "Corporations are not people.",
-        "exampleZh": "公司不是人。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20941,
-        "en": "corps",
-        "kk": "/ˈkɔɹ/",
-        "zh": "n. 部隊",
+        "en": "detail",
+        "kk": "",
+        "zh": "n. 細節;詳情v. 詳 述;詳細說明",
         "unit": 11,
-        "example": "the press corps",
-        "exampleZh": "記者團"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20942,
-        "en": "correct",
-        "kk": "/kɝˈɛkt/",
-        "zh": "a. 正確的；對的v 改正；糾正",
+        "en": "detailed",
+        "kk": "",
+        "zh": "a. 詳細的;精細 的",
         "unit": 11,
-        "example": "he was a polite man, invariably correct and pleasant with Mrs. Collins",
-        "exampleZh": "他是一個有禮貌的人，對柯林斯夫人總是正確且令人愉快"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20943,
-        "en": "correction",
+        "en": "detect",
         "kk": "",
-        "zh": "n. 訂正",
+        "zh": "v. 探測;察覺",
         "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
         "id": 20944,
-        "en": "correlate",
+        "en": "determine",
         "kk": "",
-        "zh": "v. 使相關",
+        "zh": "v. 決定;下決 心",
         "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
         "id": 20945,
-        "en": "correlation",
+        "en": "develop",
         "kk": "",
-        "zh": "n. 相關性",
+        "zh": "v. 開發:發展",
         "unit": 11,
-        "example": "Correlation is not causation.",
-        "exampleZh": "相關性不是因果關係。"
+        "example": "",
+        "exampleZh": ""
     },
     {
         "id": 20946,
-        "en": "correspond",
-        "kk": "/ˌkɔɹəˈspɑnd/",
-        "zh": "v. 符合",
-        "unit": 11,
-        "example": "Tom corresponded with Mary.",
-        "exampleZh": "湯姆與瑪麗通信。"
-    },
-    {
-        "id": 20947,
-        "en": "correspondence",
-        "kk": "/ˌkɔɹəˈspɑndəns/",
-        "zh": "n. 通信；信件",
-        "unit": 11,
-        "example": "his wife dealt with his private correspondence",
-        "exampleZh": "他的妻子處理他的私人信件"
-    },
-    {
-        "id": 20948,
-        "en": "correspondent",
-        "kk": "/ˌkɔɹəˈspɑndənt/",
-        "zh": "n. 通訊記者",
-        "unit": 11,
-        "example": "she wasn't much of a correspondent",
-        "exampleZh": "她不是什麼記者"
-    },
-    {
-        "id": 20949,
-        "en": "corridor",
-        "kk": "/ˈkɔɹədɝ/",
-        "zh": "n. 走廊",
-        "unit": 11,
-        "example": "Tom ran down the corridor.",
-        "exampleZh": "湯姆跑過走廊。"
-    },
-    {
-        "id": 20950,
-        "en": "corrupt",
-        "kk": "/kɝˈəpt/",
-        "zh": "a. 腐敗的，貪汙的 v 墮落；腐化",
-        "unit": 11,
-        "example": "the play can do no harm since its audience is already corrupt",
-        "exampleZh": "這齣戲不會造成任何傷害，因為它的觀眾已經腐敗了"
-    },
-    {
-        "id": 20951,
-        "en": "corruption",
-        "kk": "/kɝˈəpʃən/",
-        "zh": "n. 墮落；腐化",
-        "unit": 11,
-        "example": "a record of a word's corruption",
-        "exampleZh": "單字損壞的記錄"
-    },
-    {
-        "id": 20952,
-        "en": "cost",
-        "kk": "/ˈkɑst/",
-        "zh": "v. 花費；付出 n 費用；成本",
-        "unit": 11,
-        "example": "if you want to own an island, it'll cost you",
-        "exampleZh": "如果你想擁有一座島嶼，你就得付出代價"
-    },
-    {
-        "id": 20953,
-        "en": "costly",
-        "kk": "/ˈkɑstɫi/",
-        "zh": "adj. 昂貴的",
-        "unit": 11,
-        "example": "the government's biggest and most costly mistake",
-        "exampleZh": "政府最大且代價最高的錯誤"
-    },
-    {
-        "id": 20954,
-        "en": "costume",
-        "kk": "/ˈkɑstum/",
-        "zh": "n. 服裝",
-        "unit": 11,
-        "example": "I know this costume.",
-        "exampleZh": "我認識這套服裝。"
-    },
-    {
-        "id": 20955,
-        "en": "cottage",
-        "kk": "/ˈkɑtədʒ/",
-        "zh": "n. 小屋",
-        "unit": 11,
-        "example": "Tom built this cottage.",
-        "exampleZh": "湯姆建造了這座小屋。"
-    },
-    {
-        "id": 20956,
-        "en": "cotton",
-        "kk": "/ˈkɑtən/",
-        "zh": "n. 棉花",
-        "unit": 11,
-        "example": "a cotton reel",
-        "exampleZh": "棉捲軸"
-    },
-    {
-        "id": 20957,
-        "en": "couch",
-        "kk": "/ˈkaʊtʃ/",
-        "zh": "n. 沙發",
-        "unit": 11,
-        "example": "This couch is comfy.",
-        "exampleZh": "這個沙發很舒服。"
-    },
-    {
-        "id": 20958,
-        "en": "cough",
-        "kk": "/ˈkɑf/",
-        "zh": "v. 咳嗽",
-        "unit": 11,
-        "example": "she gave a discreet cough",
-        "exampleZh": "她小心翼翼地咳嗽了一聲"
-    },
-    {
-        "id": 20959,
-        "en": "council",
-        "kk": "/ˈkaʊnsəɫ/",
-        "zh": "n. 會議；議事",
-        "unit": 11,
-        "example": "He worked for the council.",
-        "exampleZh": "他為議會工作。"
-    },
-    {
-        "id": 20960,
-        "en": "counsel",
-        "kk": "/ˈkaʊnsəɫ/",
-        "zh": "n. 商議；審議 v勸告；忠告",
-        "unit": 11,
-        "example": "the counsel for the defense",
-        "exampleZh": "辯護律師"
-    },
-    {
-        "id": 20961,
-        "en": "counseling",
-        "kk": "",
-        "zh": "n. 輔導",
-        "unit": 11,
-        "example": "Tom may need counseling.",
-        "exampleZh": "湯姆可能需要諮詢。"
-    },
-    {
-        "id": 20962,
-        "en": "counselor",
-        "kk": "/ˈkaʊnsəɫɝ/",
-        "zh": "n. 顧問",
-        "unit": 11,
-        "example": "Call your counselor.",
-        "exampleZh": "打電話給你的輔導員。"
-    },
-    {
-        "id": 20963,
-        "en": "count",
-        "kk": "/ˈkaʊnt/",
-        "zh": "v. 計算",
-        "unit": 11,
-        "example": "I count myself fortunate to have known him",
-        "exampleZh": "我認為自己很幸運能夠認識他"
-    },
-    {
-        "id": 20964,
-        "en": "counter",
-        "kk": "/ˈkaʊntɝ/",
-        "zh": "ad. 反方向地，相反地 a 相反的 v 反對；反擊",
-        "unit": 11,
-        "example": "Pay at the counter.",
-        "exampleZh": "在櫃檯付款。"
-    },
-    {
-        "id": 20965,
-        "en": "counterpart",
-        "kk": "/ˈkaʊntɝˌpɑɹt/",
-        "zh": "n. 對應的人或物",
-        "unit": 11,
-        "example": "the minister held talks with his French counterpart",
-        "exampleZh": "部長與法國外交部長舉行會談"
-    },
-    {
-        "id": 20966,
-        "en": "country",
-        "kk": "/ˈkəntɹi/",
-        "zh": "n. 國家",
-        "unit": 11,
-        "example": "Steinbeck country includes the Monterey Peninsula",
-        "exampleZh": "斯坦貝克國家包括蒙特利半島"
-    },
-    {
-        "id": 20967,
-        "en": "countryside",
-        "kk": "/ˈkəntɹiˌsaɪd/",
-        "zh": "n. 鄉村",
-        "unit": 11,
-        "example": "they explored the surrounding countryside",
-        "exampleZh": "他們探索了周圍的鄉村"
-    },
-    {
-        "id": 20968,
-        "en": "county",
-        "kk": "/ˈkaʊni/",
-        "zh": "n. 縣",
-        "unit": 11,
-        "example": "I live in Yolo County.",
-        "exampleZh": "我住在約洛縣。"
-    },
-    {
-        "id": 20969,
-        "en": "couple",
-        "kk": "/ˈkəpəɫ/",
-        "zh": "n. 情侶；夫妻",
-        "unit": 11,
-        "example": "a honeymoon couple",
-        "exampleZh": "一對蜜月夫婦"
-    },
-    {
-        "id": 20970,
-        "en": "courage",
-        "kk": "/ˈkɝədʒ/",
-        "zh": "n. 勇氣",
-        "unit": 11,
-        "example": "she called on all her courage to face the ordeal",
-        "exampleZh": "她鼓起全部勇氣去面對磨難"
-    },
-    {
-        "id": 20971,
-        "en": "courier",
-        "kk": "",
-        "zh": "n. 信差；導遊；情報員",
-        "unit": 11,
-        "example": "the check was dispatched by courier",
-        "exampleZh": "支票是透過快遞寄出的"
-    },
-    {
-        "id": 20972,
-        "en": "course",
-        "kk": "/ˈkɔɹs/",
-        "zh": "n. 路線；方向；課程；系列",
-        "unit": 11,
-        "example": "the doctor prescribed a course of antibiotics",
-        "exampleZh": "醫生開了一個療程的抗生素"
-    },
-    {
-        "id": 20973,
-        "en": "court",
-        "kk": "/ˈkɔɹt/",
-        "zh": "n. 法庭；法院",
-        "unit": 11,
-        "example": "I prefer an indoor court",
-        "exampleZh": "我比較喜歡室內球場"
-    },
-    {
-        "id": 20974,
-        "en": "courtesy",
-        "kk": "/ˈkɝtəsi/",
-        "zh": "n. 禮貌；殷勤",
-        "unit": 11,
-        "example": "Have some courtesy.",
-        "exampleZh": "有點禮貌吧"
-    },
-    {
-        "id": 20975,
-        "en": "cover",
-        "kk": "/ˈkəvɝ/",
-        "zh": "v. 遮蓋；覆蓋 n 遮蓋物；封面",
-        "unit": 11,
-        "example": "I moved in front of Hawk to cover him as he reloaded",
-        "exampleZh": "當霍克重新裝彈時，我走到他前面掩護他"
-    },
-    {
-        "id": 20976,
-        "en": "coverage",
-        "kk": "/ˈkəvɝədʒ/",
-        "zh": "n. 覆蓋；覆蓋範圍",
-        "unit": 11,
-        "example": "a network of eighty transmitters would give nationwide coverage",
-        "exampleZh": "由八十個發射機組成的網路將覆蓋全國"
-    },
-    {
-        "id": 20977,
-        "en": "coward",
-        "kk": "/ˈkaʊɝd/",
-        "zh": "n. 懦夫",
-        "unit": 11,
-        "example": "Archers are cowards.",
-        "exampleZh": "弓箭手都是膽小鬼。"
-    },
-    {
-        "id": 20978,
-        "en": "crack",
-        "kk": "/ˈkɹæk/",
-        "zh": "n. 裂縫；裂痕 v 裂開；爆裂",
-        "unit": 11,
-        "example": "Ziri heard cracks.",
-        "exampleZh": "茲瑞聽到了破裂聲。"
-    },
-    {
-        "id": 20979,
-        "en": "craft",
-        "kk": "/ˈkɹæft/",
-        "zh": "n. 工藝，手藝 v 精巧地製作",
-        "unit": 11,
-        "example": "This is a nice craft.",
-        "exampleZh": "這是一門不錯的工藝品。"
-    },
-    {
-        "id": 20980,
-        "en": "crash",
-        "kk": "/ˈkɹæʃ/",
-        "zh": "v. 碰撞；倒下 n 墜毀，迫降",
-        "unit": 11,
-        "example": "Firefox has crashed.",
-        "exampleZh": "火狐瀏覽器崩潰了。"
-    },
-    {
-        "id": 20981,
-        "en": "crawl",
-        "kk": "/ˈkɹɔɫ/",
-        "zh": "v. 爬行",
-        "unit": 11,
-        "example": "Leonid crawled away.",
-        "exampleZh": "列昂尼德爬走了。"
-    },
-    {
-        "id": 20982,
-        "en": "crazy",
-        "kk": "/ˈkɹeɪzi/",
-        "zh": "adj. 瘋狂的",
-        "unit": 11,
-        "example": "I'm crazy about Cindy",
-        "exampleZh": "我為辛迪瘋狂"
-    },
-    {
-        "id": 20983,
-        "en": "create",
-        "kk": "/kɹiˈeɪt/",
-        "zh": "v. 創造；製作",
-        "unit": 11,
-        "example": "God created people.",
-        "exampleZh": "神創造了人。"
-    },
-    {
-        "id": 20984,
-        "en": "creation",
-        "kk": "/kɹiˈeɪʃən/",
-        "zh": "n. 作品；製作物",
-        "unit": 11,
-        "example": "God is not his creation.",
-        "exampleZh": "上帝不是祂的創造物。"
-    },
-    {
-        "id": 20985,
-        "en": "creative",
-        "kk": "/kɹiˈeɪtɪv/",
-        "zh": "a. 有創意的：創新的",
-        "unit": 11,
-        "example": "creative writing",
-        "exampleZh": "創意寫作"
-    },
-    {
-        "id": 20986,
-        "en": "creativity",
-        "kk": "/ˌkɹieɪˈtɪvəti/",
-        "zh": "n. 創意；創造力",
-        "unit": 11,
-        "example": "Unleash your creativity!",
-        "exampleZh": "釋放你的創造力！"
-    },
-    {
-        "id": 20987,
-        "en": "creator",
-        "kk": "/kɹiˈeɪtɝ/",
-        "zh": "n. 創造者",
-        "unit": 11,
-        "example": "God is the creator.",
-        "exampleZh": "神是創造者。"
-    },
-    {
-        "id": 20988,
-        "en": "creature",
-        "kk": "/ˈkɹitʃɝ/",
-        "zh": "n. 生物；動物",
-        "unit": 11,
-        "example": "He saw the creature.",
-        "exampleZh": "他看到了這個生物。"
-    },
-    {
-        "id": 20989,
-        "en": "credential",
-        "kk": "",
-        "zh": "n. 憑據；證書",
-        "unit": 11,
-        "example": "Enter your credentials.",
-        "exampleZh": "輸入您的憑證。"
-    },
-    {
-        "id": 20990,
-        "en": "credit",
-        "kk": "/ˈkɹɛdət/",
-        "zh": "n. 賒帳；信譽；功勞 v 相信；把⋯⋯歸於",
-        "unit": 11,
-        "example": "I have bad credit.",
-        "exampleZh": "我的信用不好。"
-    },
-    {
-        "id": 20991,
-        "en": "crew",
-        "kk": "/ˈkɹu/",
-        "zh": "n. 工作人員；船員",
-        "unit": 11,
-        "example": "The crew is large.",
-        "exampleZh": "船員規模很大。"
-    },
-    {
-        "id": 20992,
-        "en": "crime",
-        "kk": "/ˈkɹaɪm/",
-        "zh": "n. 犯罪；罪刑",
-        "unit": 11,
-        "example": "the victims of crime",
-        "exampleZh": "犯罪受害者"
-    },
-    {
-        "id": 20993,
-        "en": "criminal",
-        "kk": "/ˈkɹɪmənəɫ/",
-        "zh": "n. 罪犯 a 犯罪的；犯法的",
-        "unit": 11,
-        "example": "They're criminals.",
-        "exampleZh": "他們是罪犯。"
-    },
-    {
-        "id": 20994,
-        "en": "cripple",
-        "kk": "/ˈkɹɪpəɫ/",
-        "zh": "v. 使殘廢",
-        "unit": 11,
-        "example": "You crippled Mina.",
-        "exampleZh": "你把米娜弄殘了。"
-    },
-    {
-        "id": 20995,
-        "en": "crisis",
-        "kk": "/ˈkɹaɪsəs/",
-        "zh": "n. 困難；危及",
-        "unit": 11,
-        "example": "a crisis point of history",
-        "exampleZh": "歷史的危機點"
-    },
-    {
-        "id": 20996,
-        "en": "crisp",
-        "kk": "/ˈkɹɪsp/",
-        "zh": "adj. 脆的",
-        "unit": 11,
-        "example": "a crisp autumn day",
-        "exampleZh": "秋高氣爽的一天"
-    },
-    {
-        "id": 20997,
-        "en": "criteria",
-        "kk": "",
-        "zh": "n. 標準",
-        "unit": 11,
-        "example": "He judges me based on superficial criteria.",
-        "exampleZh": "他根據膚淺的標準來評判我。"
-    },
-    {
-        "id": 20998,
-        "en": "criterion",
-        "kk": "/kɹaɪˈtɪɹiən/",
-        "zh": "n. 標準；準則",
-        "unit": 11,
-        "example": "This is a secondary criterion.",
-        "exampleZh": "這是次要標準。"
-    },
-    {
-        "id": 20999,
-        "en": "critic",
-        "kk": "/ˈkɹɪtɪk/",
-        "zh": "n. 評論家",
-        "unit": 11,
-        "example": "a film critic",
-        "exampleZh": "影評人"
-    },
-    {
-        "id": 21000,
-        "en": "critical",
-        "kk": "/ˈkɹɪtɪkəɫ/",
-        "zh": "a. 批判的；評論的",
-        "unit": 11,
-        "example": "Safety is critical.",
-        "exampleZh": "安全至關重要。"
-    },
-    {
-        "id": 21001,
-        "en": "criticism",
-        "kk": "/ˈkɹɪtɪˌsɪzəm/",
-        "zh": "n. 批評",
-        "unit": 11,
-        "example": "Yanni accepts criticism.",
-        "exampleZh": "雅尼接受批評。"
-    },
-    {
-        "id": 21002,
-        "en": "criticize",
-        "kk": "/ˈkɹɪtɪˌsaɪz/",
-        "zh": "v. 批判；評論",
-        "unit": 11,
-        "example": "She criticized him.",
-        "exampleZh": "她批評他。"
-    },
-    {
-        "id": 21003,
-        "en": "crop",
-        "kk": "/ˈkɹɑp/",
-        "zh": "n. 作物：莊稼 v 播種",
-        "unit": 11,
-        "example": "she has her hair cut in a short crop",
-        "exampleZh": "她把頭髮剪成了短髮"
-    },
-    {
-        "id": 21004,
-        "en": "cross",
-        "kk": "/ˈkɹɔs/",
-        "zh": "v. 橫穿；渡過 n 十字形；十字架",
-        "unit": 11,
-        "example": "she wore a cross around her neck",
-        "exampleZh": "她脖子上戴著一個十字架"
-    },
-    {
-        "id": 21005,
-        "en": "crowd",
-        "kk": "/ˈkɹaʊd/",
-        "zh": "n. 群眾；觀眾",
-        "unit": 11,
-        "example": "he'd become just another face in the crowd",
-        "exampleZh": "他變成了人群中的另一張臉孔"
-    },
-    {
-        "id": 21006,
-        "en": "crowded",
-        "kk": "",
-        "zh": "a. 擁擠的；滿的",
-        "unit": 11,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21007,
-        "en": "crucial",
-        "kk": "/ˈkɹuʃəɫ/",
-        "zh": "a. 重要的；嚴酷的",
-        "unit": 11,
-        "example": "negotiations were at a crucial stage",
-        "exampleZh": "談判正處於關鍵階段"
-    },
-    {
-        "id": 21008,
-        "en": "crude",
-        "kk": "/ˈkɹud/",
-        "zh": "adj. 粗糙的",
-        "unit": 11,
-        "example": "a crude joke",
-        "exampleZh": "一個粗俗的笑話"
-    },
-    {
-        "id": 21009,
-        "en": "cruel",
-        "kk": "/ˈkɹuəɫ/",
-        "zh": "adj. 殘忍的",
-        "unit": 11,
-        "example": "people who are cruel to animals",
-        "exampleZh": "虐待動物的人"
-    },
-    {
-        "id": 21010,
-        "en": "cruise",
-        "kk": "/ˈkɹuz/",
-        "zh": "v. 巡航；航遊 n 巡航；航遊",
-        "unit": 11,
-        "example": "We went on a cruise.",
-        "exampleZh": "我們去搭乘遊輪旅行。"
-    },
-    {
-        "id": 21011,
-        "en": "crush",
-        "kk": "/ˈkɹəʃ/",
-        "zh": "v. 壓碎",
-        "unit": 11,
-        "example": "Jeans crush your balls.",
-        "exampleZh": "牛仔褲會壓垮你的睪丸。"
-    },
-    {
-        "id": 21012,
-        "en": "cry",
-        "kk": "/ˈkɹaɪ/",
-        "zh": "v. 哭泣",
-        "unit": 11,
-        "example": "a cry of despair",
-        "exampleZh": "絕望的呼喊"
-    },
-    {
-        "id": 21013,
-        "en": "crystal",
-        "kk": "/ˈkɹɪstəɫ/",
-        "zh": "n. 水晶",
-        "unit": 11,
-        "example": "a quartz crystal",
-        "exampleZh": "石英晶體"
-    },
-    {
-        "id": 21014,
-        "en": "cube",
-        "kk": "/ˈkjub/",
-        "zh": "n. 立方體",
-        "unit": 11,
-        "example": "Two cubed is eight.",
-        "exampleZh": "二的立方是八。"
-    },
-    {
-        "id": 21015,
-        "en": "cue",
-        "kk": "/ˈkju/",
-        "zh": "n. 暗示",
-        "unit": 11,
-        "example": "The cue ball is white.",
-        "exampleZh": "主球是白色的。"
-    },
-    {
-        "id": 21016,
-        "en": "cultivate",
-        "kk": "/ˈkəɫtəˌveɪt/",
-        "zh": "v. 培養",
-        "unit": 11,
-        "example": "Cultivate your will!",
-        "exampleZh": "培養你的意志！"
-    },
-    {
-        "id": 21017,
-        "en": "cultivation",
-        "kk": "",
-        "zh": "n. 培養",
-        "unit": 11,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21018,
-        "en": "cultural",
-        "kk": "/ˈkəɫtʃɝəɫ/",
-        "zh": "adj. 文化的",
-        "unit": 11,
-        "example": "a cultural festival",
-        "exampleZh": "文化節"
-    },
-    {
-        "id": 21019,
-        "en": "culture",
-        "kk": "/ˈkəɫtʃɝ/",
-        "zh": "n. 文化",
-        "unit": 11,
-        "example": "men of culture",
-        "exampleZh": "文化人"
-    },
-    {
-        "id": 21020,
-        "en": "cupboard",
-        "kk": "/ˈkəbɝd/",
-        "zh": "n. 食櫥；碗櫃",
-        "unit": 11,
-        "example": "The cupboard is full.",
-        "exampleZh": "櫃子滿了。"
-    },
-    {
-        "id": 21021,
-        "en": "cure",
-        "kk": "/ˈkjʊɹ/",
-        "zh": "n. 治療；痊癒 v 治癒",
-        "unit": 11,
-        "example": "he was beyond cure",
-        "exampleZh": "他已經無法治癒了"
-    },
-    {
-        "id": 21022,
-        "en": "curiosity",
-        "kk": "/ˌkjʊɹiˈɑsəti/",
-        "zh": "n. 好奇心",
-        "unit": 11,
-        "example": "Curiosity replaced shock.",
-        "exampleZh": "好奇取代了震驚。"
-    },
-    {
-        "id": 21023,
-        "en": "curious",
-        "kk": "/ˈkjʊɹiəs/",
-        "zh": "a. 好奇的",
-        "unit": 11,
-        "example": "I began to be curious about the whereabouts of the bride and groom",
-        "exampleZh": "我開始好奇新郎新娘的行蹤"
-    },
-    {
-        "id": 21024,
-        "en": "curl",
-        "kk": "/ˈkɝɫ/",
-        "zh": "v. 捲曲",
-        "unit": 11,
-        "example": "Fyodor cut his curls.",
-        "exampleZh": "費奧多爾剪掉了他的捲髮。"
-    },
-    {
-        "id": 21025,
-        "en": "currency",
-        "kk": "/ˈkɝənsi/",
-        "zh": "n. 通貨；貨幣",
-        "unit": 11,
-        "example": "That's the local currency.",
-        "exampleZh": "那是當地貨幣。"
-    },
-    {
-        "id": 21026,
-        "en": "current",
-        "kk": "/ˈkɑɹənt/",
-        "zh": "a. 現時的；當前的 n 流動；水流",
-        "unit": 11,
-        "example": "Current times are tough.",
-        "exampleZh": "當前形勢嚴峻。"
-    },
-    {
-        "id": 21027,
-        "en": "currently",
-        "kk": "",
-        "zh": "adv. 目前",
-        "unit": 11,
-        "example": "Elias is currently busy.",
-        "exampleZh": "埃利亞斯目前很忙。"
-    },
-    {
-        "id": 21028,
-        "en": "curriculum",
-        "kk": "/kɝˈɪkjəɫəm/",
-        "zh": "n. 課程",
-        "unit": 11,
-        "example": "The curriculum is attached.",
-        "exampleZh": "課程表附後。"
-    },
-    {
-        "id": 21029,
-        "en": "curve",
-        "kk": "/ˈkɝv/",
-        "zh": "n. 曲線",
-        "unit": 11,
-        "example": "Why are bananas curved?",
-        "exampleZh": "香蕉為什麼是彎的？"
-    },
-    {
-        "id": 21030,
-        "en": "custom",
-        "kk": "/ˈkəstəm/",
-        "zh": "n. 習俗；慣例 a訂做的；訂製的",
-        "unit": 11,
-        "example": "it was my custom to nap for an hour every day",
-        "exampleZh": "我的習慣是每天小睡一小時"
-    },
-    {
-        "id": 21031,
-        "en": "customer",
-        "kk": "/ˈkəstəmɝ/",
-        "zh": "n. 顧客；買主",
-        "unit": 11,
-        "example": "Mr. Harrison was a regular customer at the Golden Lion",
-        "exampleZh": "哈里森先生是金獅酒店的常客"
-    },
-    {
-        "id": 21032,
-        "en": "customs",
-        "kk": "/ˈkəstəmz/",
-        "zh": "n. 關稅；海關",
-        "unit": 11,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21033,
-        "en": "cut",
-        "kk": "/ˈkət/",
-        "zh": "v. 切割",
-        "unit": 11,
-        "example": "the country was cut into three parts",
-        "exampleZh": "這個國家被分成三個部分"
-    },
-    {
-        "id": 21034,
-        "en": "cute",
-        "kk": "/ˈkjut/",
-        "zh": "adj. 可愛的",
-        "unit": 11,
-        "example": "the baby was so cute",
-        "exampleZh": "寶寶太可愛了"
-    },
-    {
-        "id": 21035,
-        "en": "cycle",
-        "kk": "/ˈsaɪkəɫ/",
-        "zh": "n. 週期；循環 v 循環；輪轉D",
-        "unit": 11,
-        "example": "Cars repressed cycles.",
-        "exampleZh": "汽車抑制了循環。"
-    },
-    {
-        "id": 21036,
-        "en": "cylinder",
-        "kk": "/ˈsɪlɪndə(ɹ)/",
-        "zh": "n. 圓柱體",
-        "unit": 11,
-        "example": "This engine has 6 cylinders.",
-        "exampleZh": "這台引擎有 6 個汽缸。"
-    },
-    {
-        "id": 21037,
-        "en": "daily",
-        "kk": "/ˈdeɪɫi/",
-        "zh": "a. 每日的；日常的",
-        "unit": 11,
-        "example": "boats can be rented for a daily rate",
-        "exampleZh": "可按日租用船隻"
-    },
-    {
-        "id": 21038,
-        "en": "damage",
-        "kk": "/ˈdæmədʒ/",
-        "zh": "n. 損害；損失 v損害；毀壞",
-        "unit": 11,
-        "example": "bombing caused extensive damage to the town",
-        "exampleZh": "轟炸對該鎮造成了嚴重破壞"
-    },
-    {
-        "id": 21039,
-        "en": "danger",
-        "kk": "/ˈdeɪndʒɝ/",
-        "zh": "n. 危急；危險",
-        "unit": 11,
-        "example": "there was no danger of the champagne running out",
-        "exampleZh": "沒有香檳用完的危險"
-    },
-    {
-        "id": 21040,
-        "en": "dangerous",
-        "kk": "/ˈdeɪndʒɝəs/",
-        "zh": "a. 危險的",
-        "unit": 11,
-        "example": "a dangerous animal",
-        "exampleZh": "危險的動物"
-    },
-    {
-        "id": 21041,
-        "en": "dare",
-        "kk": "/ˈdɛɹ/",
-        "zh": "aux. 敢；竟敢 v 敢；膽敢 n 果敢行為；挑戰",
-        "unit": 11,
-        "example": "swap with me, I dare you",
-        "exampleZh": "與我交換，我敢你"
-    },
-    {
-        "id": 21042,
-        "en": "dark",
-        "kk": "/ˈdɑɹk/",
-        "zh": "adj. 黑暗的",
-        "unit": 11,
-        "example": "he is dark on certain points of scripture",
-        "exampleZh": "他對聖經的某些觀點很黑暗"
-    },
-    {
-        "id": 21043,
-        "en": "dash",
-        "kk": "/ˈdæʃ/",
-        "zh": "v. 猛衝",
-        "unit": 11,
-        "example": "Our hopes were dashed.",
-        "exampleZh": "我們的希望破滅了。"
-    },
-    {
-        "id": 21044,
-        "en": "data",
-        "kk": "/ˈdætə/",
-        "zh": "n. 資料；數據",
-        "unit": 11,
-        "example": "there is very little data available",
-        "exampleZh": "可用數據很少"
-    },
-    {
-        "id": 21045,
-        "en": "database",
-        "kk": "",
-        "zh": "n. 資料庫",
-        "unit": 11,
-        "example": "The database is down.",
-        "exampleZh": "資料庫已關閉。"
-    },
-    {
-        "id": 21046,
-        "en": "date",
-        "kk": "/ˈdeɪt/",
-        "zh": "n. 日期；日子 v 註有日期",
-        "unit": 11,
-        "example": "they date the paintings to 1460–70",
-        "exampleZh": "他們將這些畫作的年代定為 1460-70 年"
-    },
-    {
-        "id": 21047,
-        "en": "dawn",
-        "kk": "/ˈdɔn/",
-        "zh": "n. 黎明，拂曉 v 破曉；（天）剛亮",
-        "unit": 11,
-        "example": "the rose-pink light of dawn",
-        "exampleZh": "黎明的玫瑰粉色光芒"
-    },
-    {
-        "id": 21048,
-        "en": "dead",
-        "kk": "/ˈdɛd/",
-        "zh": "adj. 死的",
-        "unit": 11,
-        "example": "he has been dead for many years",
-        "exampleZh": "他已經死很多年了"
-    },
-    {
-        "id": 21049,
-        "en": "deadline",
-        "kk": "/ˈdɛdˌɫaɪn/",
-        "zh": "n. 截止期限；最後限期",
-        "unit": 11,
-        "example": "the deadline for submissions is February 5th",
-        "exampleZh": "提交截止日期為2月5日"
-    },
-    {
-        "id": 21050,
-        "en": "deadly",
-        "kk": "/ˈdɛdɫi/",
-        "zh": "adj. 致命的",
-        "unit": 11,
-        "example": "we are deadly enemies",
-        "exampleZh": "我們是死敵"
-    },
-    {
-        "id": 21051,
-        "en": "deaf",
-        "kk": "/ˈdɛf/",
-        "zh": "adj. 聾的",
-        "unit": 11,
-        "example": "I'm a bit deaf so you'll have to speak up",
-        "exampleZh": "我有點聾所以你得大聲說話"
-    },
-    {
-        "id": 21052,
-        "en": "deal",
-        "kk": "/ˈdiɫ/",
-        "zh": "v. 經營；交易 n 交易",
-        "unit": 11,
-        "example": "he lost a great deal of blood",
-        "exampleZh": "他失血過多"
-    },
-    {
-        "id": 21053,
-        "en": "dealer",
-        "kk": "/ˈdiɫɝ/",
-        "zh": "n. 業者；商人",
-        "unit": 11,
-        "example": "She's a drug dealer.",
-        "exampleZh": "她是一名毒販。"
-    },
-    {
-        "id": 21054,
-        "en": "debate",
-        "kk": "/dəˈbeɪt/",
-        "zh": "v. 辯論；爭論 n辯論",
-        "unit": 11,
-        "example": "the national debate on education",
-        "exampleZh": "全國教育辯論"
-    },
-    {
-        "id": 21055,
-        "en": "debris",
-        "kk": "",
-        "zh": "n. 碎片",
-        "unit": 11,
-        "example": "Debris flew everywhere.",
-        "exampleZh": "碎片飛得到處都是。"
-    },
-    {
-        "id": 21056,
-        "en": "debt",
-        "kk": "/ˈdɛt/",
-        "zh": "n. 債務；借款",
-        "unit": 11,
-        "example": "a way to reduce Third World debt",
-        "exampleZh": "減少第三世界債務的一種方法"
-    },
-    {
-        "id": 21057,
-        "en": "debut",
-        "kk": "",
-        "zh": "n. 首次露面；初次登臺",
-        "unit": 11,
-        "example": "Mary's band self-financed their debut single.",
-        "exampleZh": "瑪麗的樂團自籌資金製作了他們的首張單曲。"
-    },
-    {
-        "id": 21058,
-        "en": "decade",
-        "kk": "/ˈdɛkeɪd/",
-        "zh": "n. 十；十年",
-        "unit": 11,
-        "example": "That was decades ago.",
-        "exampleZh": "那是幾十年前的事了。"
-    },
-    {
-        "id": 21059,
-        "en": "decay",
-        "kk": "/dɪˈkeɪ/",
-        "zh": "v. 腐爛",
-        "unit": 11,
-        "example": "the decay of electrical fields in the electromagnets",
-        "exampleZh": "電磁體中電場的衰減"
-    },
-    {
-        "id": 21060,
-        "en": "deceit",
-        "kk": "",
-        "zh": "n. 欺騙；欺詐",
-        "unit": 11,
-        "example": "Sami covered his deceit perfectly.",
-        "exampleZh": "薩米完美地掩蓋了他的欺騙。"
-    },
-    {
-        "id": 21061,
-        "en": "deceive",
-        "kk": "/dɪˈsiv/",
-        "zh": "v. 欺騙；蒙蔽",
-        "unit": 11,
-        "example": "enabling the rulers to deceive themselves about the nature of their own rule",
-        "exampleZh": "使統治者能夠在自己統治的本質上欺騙自己"
-    },
-    {
-        "id": 21062,
-        "en": "decent",
-        "kk": "/ˈdisənt/",
-        "zh": "a. 正派的；合乎禮儀的",
-        "unit": 11,
-        "example": "people need decent homes",
-        "exampleZh": "人們需要體面的住房"
-    },
-    {
-        "id": 21063,
-        "en": "decide",
-        "kk": "/ˌdɪˈsaɪd/",
-        "zh": "v. 決定；決意",
-        "unit": 11,
-        "example": "we must decide the fates of the people who headed the coup",
-        "exampleZh": "我們必須決定領導政變的人的命運"
-    },
-    {
-        "id": 21064,
-        "en": "decision",
-        "kk": "/dɪˈsɪʒən/",
-        "zh": "n. 決心；判斷",
-        "unit": 11,
-        "example": "I'll make the decision on my own",
-        "exampleZh": "我會自己做決定"
-    },
-    {
-        "id": 21065,
-        "en": "decisive",
-        "kk": "/dɪˈsaɪsɪv/",
-        "zh": "a. 決定性的；決定的",
-        "unit": 11,
-        "example": "the Supreme Court voided the statute by a decisive 7–2 vote",
-        "exampleZh": "最高法院以 7 比 2 的決定性投票結果宣布該法規無效"
-    },
-    {
-        "id": 21066,
-        "en": "deck",
-        "kk": "/ˈdɛk/",
-        "zh": "n. 艙面；甲板",
-        "unit": 11,
-        "example": "All hands on deck!",
-        "exampleZh": "所有的人都在甲板上！"
-    },
-    {
-        "id": 21067,
-        "en": "declaration",
-        "kk": "/ˌdɛkɫɝˈeɪʃən/",
-        "zh": "n. 宣告；宣言",
-        "unit": 11,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21068,
-        "en": "declare",
-        "kk": "/dɪˈkɫɛɹ/",
-        "zh": "v. 宣告；聲明",
-        "unit": 11,
-        "example": "Tom declared bankruptcy.",
-        "exampleZh": "湯姆宣布破產。"
-    },
-    {
-        "id": 21069,
-        "en": "decline",
-        "kk": "/dɪˈkɫaɪn/",
-        "zh": "v. 下降；下跌 n下降；減少",
-        "unit": 11,
-        "example": "He politely declined.",
-        "exampleZh": "他禮貌地拒絕了。"
-    },
-    {
-        "id": 21070,
-        "en": "decorate",
-        "kk": "/ˈdɛkɝˌeɪt/",
-        "zh": "v. 裝飾",
-        "unit": 11,
-        "example": "Mary decorated it.",
-        "exampleZh": "瑪麗裝飾了它。"
-    },
-    {
-        "id": 21071,
-        "en": "decoration",
-        "kk": "/ˌdɛkɝˈeɪʃən/",
-        "zh": "n. 裝飾",
-        "unit": 12,
-        "example": "pearwood inlaid with floral decoration of stained woods",
-        "exampleZh": "梨木鑲嵌染色木材花卉裝飾"
-    },
-    {
-        "id": 21072,
-        "en": "decrease",
-        "kk": "/ˈdiˌkɹis/",
-        "zh": "v. 減；減少",
-        "unit": 12,
-        "example": "He decreased its value.",
-        "exampleZh": "他降低了它的價值。"
-    },
-    {
-        "id": 21073,
-        "en": "dedicate",
-        "kk": "/ˈdɛdəˌkeɪt/",
-        "zh": "v. 奉獻；獻身",
-        "unit": 12,
-        "example": "you should dedicate a telephone line to each modem you plan to install",
-        "exampleZh": "您應該為計劃安裝的每個數據機專用一條電話線"
-    },
-    {
-        "id": 21074,
-        "en": "dedication",
-        "kk": "/ˌdɛdəˈkeɪʃən/",
-        "zh": "n. 奉獻；供奉",
-        "unit": 12,
-        "example": "his dedication to his duties",
-        "exampleZh": "他對職責的奉獻"
-    },
-    {
-        "id": 21075,
-        "en": "deduct",
-        "kk": "",
-        "zh": "v. 扣除；減除",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21076,
-        "en": "deduction",
-        "kk": "",
-        "zh": "n. 扣除；減除",
-        "unit": 12,
-        "example": "Luxury spending is ineligible for tax deductions.",
-        "exampleZh": "奢侈消費不符合稅收減免的資格。"
-    },
-    {
-        "id": 21077,
-        "en": "deed",
-        "kk": "/ˈdid/",
-        "zh": "n. 行為",
-        "unit": 12,
-        "example": "Your deeds are wanton.",
-        "exampleZh": "你的行為很肆意。"
-    },
-    {
-        "id": 21078,
-        "en": "deem",
-        "kk": "/ˈdim/",
-        "zh": "v. 認為；以為",
-        "unit": 12,
-        "example": "Ziri was deemed mentally unwell.",
-        "exampleZh": "齊裡被認為精神不正常。"
-    },
-    {
-        "id": 21079,
-        "en": "deep",
-        "kk": "/ˈdip/",
-        "zh": "a. 深的 ad 深深地n 深處",
-        "unit": 12,
-        "example": "a deep sleep",
-        "exampleZh": "沉睡"
-    },
-    {
-        "id": 21080,
-        "en": "deepen",
-        "kk": "/ˈdipən/",
-        "zh": "v. 使變深；使加深；使強烈",
-        "unit": 12,
-        "example": "You deepened the holes.",
-        "exampleZh": "你加深了洞。"
-    },
-    {
-        "id": 21081,
-        "en": "deeply",
-        "kk": "",
-        "zh": "adv. 深深地",
-        "unit": 12,
-        "example": "We breathed deeply.",
-        "exampleZh": "我們深呼吸。"
-    },
-    {
-        "id": 21082,
-        "en": "deer",
-        "kk": "/ˈdɪɹ/",
-        "zh": "n. 鹿",
-        "unit": 12,
-        "example": "Deer remember faces.",
-        "exampleZh": "鹿記得面孔。"
-    },
-    {
-        "id": 21083,
-        "en": "default",
-        "kk": "",
-        "zh": "n. 違約；拖欠；預設 v 不履行；拖欠",
-        "unit": 12,
-        "example": "It’s a default configuration.",
-        "exampleZh": "這是預設配置。"
-    },
-    {
-        "id": 21084,
-        "en": "defeat",
-        "kk": "/dɪˈfit/",
-        "zh": "v. 戰勝；擊敗 n戰敗；挫折",
-        "unit": 12,
-        "example": "Karl was defeated.",
-        "exampleZh": "卡爾被打敗了。"
-    },
-    {
-        "id": 21085,
-        "en": "defect",
-        "kk": "/ˈdifɛkt/",
-        "zh": "n. 缺點；缺陷 v 逃跑；脫離",
-        "unit": 12,
-        "example": "the property is free from defect",
-        "exampleZh": "該財產沒有缺陷"
-    },
-    {
-        "id": 21086,
-        "en": "defective",
-        "kk": "",
-        "zh": "adj. 有缺陷的",
-        "unit": 12,
-        "example": "You're not defective.",
-        "exampleZh": "你沒有缺陷。"
-    },
-    {
-        "id": 21087,
-        "en": "defend",
-        "kk": "/dɪˈfɛnd/",
-        "zh": "v. 防衛；保護",
-        "unit": 12,
-        "example": "Defend yourselves.",
-        "exampleZh": "保衛自己。"
-    },
-    {
-        "id": 21088,
-        "en": "defendant",
-        "kk": "",
-        "zh": "n. 被告",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21089,
-        "en": "defense",
-        "kk": "/dɪˈfɛns/",
-        "zh": "n. 防衛；保護",
-        "unit": 12,
-        "example": "defense policy",
-        "exampleZh": "國防政策"
-    },
-    {
-        "id": 21090,
-        "en": "defensive",
-        "kk": "/dɪˈfɛnsɪv/",
-        "zh": "a. 防衛的；保衛的896. deﬁciency n 不足；缺乏897.  deﬁnite a 明確的；確切的898.  deﬂate v 抽出⋯⋯中的氣899. deﬂect v 使偏斜；使轉向",
-        "unit": 12,
-        "example": "They got defensive.",
-        "exampleZh": "他們採取了防禦措施。"
-    },
-    {
-        "id": 21091,
-        "en": "defer",
-        "kk": "",
-        "zh": "v. 推遲",
-        "unit": 12,
-        "example": "I'll defer to your expertise.",
-        "exampleZh": "我會尊重你的專業知識。"
-    },
-    {
-        "id": 21092,
-        "en": "deficiency",
-        "kk": "/dɪˈfɪʃənsi/",
-        "zh": "n. 缺乏",
-        "unit": 12,
-        "example": "vitamin A deficiency in children",
-        "exampleZh": "兒童維生素A缺乏症"
-    },
-    {
-        "id": 21093,
-        "en": "deficit",
-        "kk": "",
-        "zh": "n. 赤字",
-        "unit": 12,
-        "example": "There's a trade deficit.",
-        "exampleZh": "存在貿易逆差。"
-    },
-    {
-        "id": 21094,
-        "en": "define",
-        "kk": "/dɪˈfaɪn/",
-        "zh": "v. 定義",
-        "unit": 12,
-        "example": "His chin is defined.",
-        "exampleZh": "他的下巴輪廓分明。"
-    },
-    {
-        "id": 21095,
-        "en": "definite",
-        "kk": "/ˈdɛfənət/",
-        "zh": "adj. 明確的",
-        "unit": 12,
-        "example": "Definitely try this.",
-        "exampleZh": "一定要試試這個。"
-    },
-    {
-        "id": 21096,
-        "en": "definitely",
-        "kk": "",
-        "zh": "adv. 肯定地",
-        "unit": 12,
-        "example": "Definitely try this.",
-        "exampleZh": "一定要試試這個。"
-    },
-    {
-        "id": 21097,
-        "en": "definition",
-        "kk": "/ˌdɛfəˈnɪʃən/",
-        "zh": "n. 定義",
-        "unit": 12,
-        "example": "a dictionary definition of the verb",
-        "exampleZh": "動詞的字典定義"
-    },
-    {
-        "id": 21098,
-        "en": "degree",
-        "kk": "/dɪˈɡɹi/",
-        "zh": "n. 度，度數；程度",
-        "unit": 12,
-        "example": "a question of degree",
-        "exampleZh": "程度問題"
-    },
-    {
-        "id": 21099,
-        "en": "delay",
-        "kk": "/dɪˈɫeɪ/",
-        "zh": "v. 拖延；耽擱 n 延遲；耽擱",
-        "unit": 12,
-        "example": "I set off without delay",
-        "exampleZh": "我毫不拖延地出發了"
-    },
-    {
-        "id": 21100,
-        "en": "delegate",
-        "kk": "/ˈdɛɫəˌɡeɪt/",
-        "zh": "v. 委派⋯⋯為代表；委派（某人）做",
-        "unit": 12,
-        "example": "Who will be the delegate?",
-        "exampleZh": "誰將成為代表？"
-    },
-    {
-        "id": 21101,
-        "en": "delegation",
-        "kk": "/ˌdɛɫəˈɡeɪʃən/",
-        "zh": "n. 代表團",
-        "unit": 12,
-        "example": "One delegation followed another.",
-        "exampleZh": "一個代表團接著一個代表團。"
-    },
-    {
-        "id": 21102,
-        "en": "delete",
-        "kk": "",
-        "zh": "v. 刪除",
-        "unit": 12,
-        "example": "Delete this, please.",
-        "exampleZh": "請刪除這個。"
-    },
-    {
-        "id": 21103,
-        "en": "deliberate",
-        "kk": "/dɪˈɫɪbɝˌeɪt/",
-        "zh": "a. 深思熟慮的；慎重的 v 仔細考慮；思考",
-        "unit": 12,
-        "example": "a careful and deliberate worker",
-        "exampleZh": "細心而深思熟慮的工人"
-    },
-    {
-        "id": 21104,
-        "en": "deliberately",
-        "kk": "",
-        "zh": "ad. 慎重地；謹慎地",
-        "unit": 12,
-        "example": "Tom spoke deliberately.",
-        "exampleZh": "湯姆故意說話。"
-    },
-    {
-        "id": 21105,
-        "en": "delicate",
-        "kk": "/ˈdɛɫəkət/",
-        "zh": "a. 易碎的；嬌貴的；纖弱的",
-        "unit": 12,
-        "example": "He has delicate hands.",
-        "exampleZh": "他有一雙纖細的手。"
-    },
-    {
-        "id": 21106,
-        "en": "delicious",
-        "kk": "/dɪˈɫɪʃəs/",
-        "zh": "a. 美味的；香噴噴的",
-        "unit": 12,
-        "example": "delicious home-baked brown bread",
-        "exampleZh": "美味的自製黑麵包"
-    },
-    {
-        "id": 21107,
-        "en": "delight",
-        "kk": "/dɪˈɫaɪt/",
-        "zh": "n. 欣喜；愉快 v高興；喜愛",
-        "unit": 12,
-        "example": "Boris was delighted.",
-        "exampleZh": "鮑里斯很高興。"
-    },
-    {
-        "id": 21108,
-        "en": "delightful",
-        "kk": "/dɪˈɫaɪtfəɫ/",
-        "zh": "adj. 令人愉快的",
-        "unit": 12,
-        "example": "Cats are delightful.",
-        "exampleZh": "貓是令人愉快的。"
-    },
-    {
-        "id": 21109,
-        "en": "deliver",
-        "kk": "/dɪˈɫɪvɝ/",
-        "zh": "v. 投遞；傳送",
-        "unit": 12,
-        "example": "deliver us from misery",
-        "exampleZh": "救我們脫離苦難"
-    },
-    {
-        "id": 21110,
-        "en": "delivery",
-        "kk": "/dɪˈɫɪvɝi/",
-        "zh": "n. 投遞；傳送",
-        "unit": 12,
-        "example": "You have a delivery.",
-        "exampleZh": "你有送貨。"
-    },
-    {
-        "id": 21111,
-        "en": "demand",
-        "kk": "/dɪˈmænd/",
-        "zh": "v. 要求，請求  n要求；請求",
-        "unit": 12,
-        "example": "Are you demanding?",
-        "exampleZh": "你要求高嗎？"
-    },
-    {
-        "id": 21112,
-        "en": "demanding",
-        "kk": "/dɪˈmɑːndɪŋ/",
-        "zh": "adj. 苛求的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21113,
-        "en": "democracy",
-        "kk": "/dɪˈmɑkɹəsi/",
-        "zh": "n. 民主",
-        "unit": 12,
-        "example": "Democracy is dead.",
-        "exampleZh": "民主已死。"
-    },
-    {
-        "id": 21114,
-        "en": "democrat",
-        "kk": "/ˈdɛməˌkɹæt/",
-        "zh": "n. 民主黨員",
-        "unit": 12,
-        "example": "Democrats should be upset.",
-        "exampleZh": "民主黨人應該感到不安。"
-    },
-    {
-        "id": 21115,
-        "en": "democratic",
-        "kk": "/ˌdɛməˈkɹætɪk/",
-        "zh": "adj. 民主的",
-        "unit": 12,
-        "example": "cycling is a democratic activity that can be enjoyed by anyone",
-        "exampleZh": "騎自行車是一項民主活動，任何人都可以享受"
-    },
-    {
-        "id": 21116,
-        "en": "demographic",
-        "kk": "",
-        "zh": "adj. 人口統計的",
-        "unit": 12,
-        "example": "The country's demographics are changing.",
-        "exampleZh": "該國的人口結構正在改變。"
-    },
-    {
-        "id": 21117,
-        "en": "demolish",
-        "kk": "",
-        "zh": "v. 毀壞；破壞",
-        "unit": 12,
-        "example": "He demolished the house.",
-        "exampleZh": "他拆毀了房子。"
-    },
-    {
-        "id": 21118,
-        "en": "demonstrate",
-        "kk": "/ˈdɛmənˌstɹeɪt/",
-        "zh": "v. 論證；證明；示威",
-        "unit": 12,
-        "example": "she began to demonstrate a new-found confidence",
-        "exampleZh": "她開始展現新的自信"
-    },
-    {
-        "id": 21119,
-        "en": "demonstration",
-        "kk": "/ˌdɛmənˈstɹeɪʃən/",
-        "zh": "n. 論證；證明",
-        "unit": 12,
-        "example": "He requested a demonstration.",
-        "exampleZh": "他要求進行示威。"
-    },
-    {
-        "id": 21120,
-        "en": "denial",
-        "kk": "/dɪˈnaɪəɫ/",
-        "zh": "n. 否認；否定",
-        "unit": 12,
-        "example": "Lukas was in denial.",
-        "exampleZh": "盧卡斯否認。"
-    },
-    {
-        "id": 21121,
-        "en": "denounce",
-        "kk": "/dɪˈnaʊns/",
-        "zh": "v. 譴責",
-        "unit": 12,
-        "example": "They denounced Tom.",
-        "exampleZh": "他們譴責湯姆。"
-    },
-    {
-        "id": 21122,
-        "en": "dense",
-        "kk": "/ˈdɛns/",
-        "zh": "a. 密集的，稠密的",
-        "unit": 12,
-        "example": "Dense clouds formed.",
-        "exampleZh": "形成了濃密的雲層。"
-    },
-    {
-        "id": 21123,
-        "en": "density",
-        "kk": "/ˈdɛnsəti/",
-        "zh": "n. 密集度；稠密度",
-        "unit": 12,
-        "example": "chip density doubles every eighteen months",
-        "exampleZh": "晶片密度每十八個月翻一番"
-    },
-    {
-        "id": 21124,
-        "en": "dentist",
-        "kk": "/ˈdɛnɪst/",
-        "zh": "n. 牙醫",
-        "unit": 12,
-        "example": "Maria is a dentist.",
-        "exampleZh": "瑪麗亞是一名牙醫。"
-    },
-    {
-        "id": 21125,
-        "en": "deny",
-        "kk": "/dɪˈnaɪ/",
-        "zh": "v. 否定，否認",
-        "unit": 12,
-        "example": "they deny any responsibility for the tragedy",
-        "exampleZh": "他們否認對這場悲劇負有任何責任"
-    },
-    {
-        "id": 21126,
-        "en": "depart",
-        "kk": "/dɪˈpɑɹt/",
-        "zh": "v. 起程，出發",
-        "unit": 12,
-        "example": "Tom departed last Monday.",
-        "exampleZh": "湯姆上週一離開了。"
-    },
-    {
-        "id": 21127,
-        "en": "department",
-        "kk": "/dɪˈpɑɹtmənt/",
-        "zh": "n. 部；司；局；處；科",
-        "unit": 12,
-        "example": "that's not my department",
-        "exampleZh": "那不是我的部門"
-    },
-    {
-        "id": 21128,
-        "en": "departure",
-        "kk": "/dɪˈpɑɹtʃɝ/",
-        "zh": "n. 離開；出發",
-        "unit": 12,
-        "example": "When is your departure?",
-        "exampleZh": "你什麼時候出發？"
-    },
-    {
-        "id": 21129,
-        "en": "depend",
-        "kk": "/dɪˈpɛnd/",
-        "zh": "v. 相信；信賴",
-        "unit": 12,
-        "example": "the kind of person you could depend on",
-        "exampleZh": "你可以依賴什麼樣的人"
-    },
-    {
-        "id": 21130,
-        "en": "dependable",
-        "kk": "/dɪˈpɛndəbəɫ/",
-        "zh": "adj. 可靠的",
-        "unit": 12,
-        "example": "Tom was dependable.",
-        "exampleZh": "湯姆很可靠。"
-    },
-    {
-        "id": 21131,
-        "en": "dependence",
-        "kk": "",
-        "zh": "n. 依賴",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21132,
-        "en": "dependent",
-        "kk": "/dɪˈpɛndənt/",
-        "zh": "a. 依靠的；依賴的",
-        "unit": 12,
-        "example": "Tom has dependents.",
-        "exampleZh": "湯姆有家屬。"
-    },
-    {
-        "id": 21133,
-        "en": "depict",
-        "kk": "/dɪˈpɪkt/",
-        "zh": "v. 描述；描寫",
-        "unit": 12,
-        "example": "The mosaic depicts a butterfly.",
-        "exampleZh": "馬賽克描繪了一隻蝴蝶。"
-    },
-    {
-        "id": 21134,
-        "en": "deplete",
-        "kk": "",
-        "zh": "v. 耗盡",
-        "unit": 12,
-        "example": "Our finances are depleted.",
-        "exampleZh": "我們的財政已經耗盡。"
-    },
-    {
-        "id": 21135,
-        "en": "deploy",
-        "kk": "",
-        "zh": "v. 部署",
-        "unit": 12,
-        "example": "The K9 unit was deployed.",
-        "exampleZh": "K9部隊部署完畢。"
-    },
-    {
-        "id": 21136,
-        "en": "deployment",
-        "kk": "",
-        "zh": "n. 部署",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21137,
-        "en": "deposit",
-        "kk": "/dəˈpɑzɪt/",
-        "zh": "v. 放置；寄存 n存款",
-        "unit": 12,
-        "example": "a vault in which guests may deposit valuable property",
-        "exampleZh": "客人可以存放貴重財產的金庫"
-    },
-    {
-        "id": 21138,
-        "en": "depreciate",
-        "kk": "",
-        "zh": "v. 貶值",
-        "unit": 12,
-        "example": "Should the Algerian dinar be depreciated again?",
-        "exampleZh": "阿爾及利亞第納爾是否應該再次貶值？"
-    },
-    {
-        "id": 21139,
-        "en": "depress",
-        "kk": "/dɪˈpɹɛs/",
-        "zh": "v. 使沮喪",
-        "unit": 12,
-        "example": "Was Tom depressed?",
-        "exampleZh": "湯姆情緒低落嗎？"
-    },
-    {
-        "id": 21140,
-        "en": "depression",
-        "kk": "/dɪˈpɹɛʃən/",
-        "zh": "n. 沮喪；意氣消沉",
-        "unit": 12,
-        "example": "she was referred by a psychiatrist treating her for depression",
-        "exampleZh": "她被一位治療憂鬱症的精神科醫生轉介給她"
-    },
-    {
-        "id": 21141,
-        "en": "deprive",
-        "kk": "/dɪˈpɹaɪv/",
-        "zh": "v. 剝奪",
-        "unit": 12,
-        "example": "I'm sleep-deprived.",
-        "exampleZh": "我睡眠不足。"
-    },
-    {
-        "id": 21142,
-        "en": "depth",
-        "kk": "/ˈdɛpθ/",
-        "zh": "n. 深度",
-        "unit": 12,
-        "example": "the wine shows good depth of color",
-        "exampleZh": "該酒呈現出良好的色彩深度"
-    },
-    {
-        "id": 21143,
-        "en": "deputy",
-        "kk": "/ˈdɛpjəti/",
-        "zh": "n. 副手",
-        "unit": 12,
-        "example": "his deputy has been largely running the business for the past year",
-        "exampleZh": "過去一年裡，他的副手主要負責管理公司業務"
-    },
-    {
-        "id": 21144,
-        "en": "derive",
-        "kk": "/dɝˈaɪv/",
-        "zh": "v. 衍生",
-        "unit": 12,
-        "example": "I derived no benefit from them.",
-        "exampleZh": "我沒有從他們那裡得到任何好處。"
-    },
-    {
-        "id": 21145,
-        "en": "descend",
-        "kk": "/dɪˈsɛnd/",
-        "zh": "v. 下降",
-        "unit": 12,
-        "example": "the aircraft began to descend",
-        "exampleZh": "飛機開始下降"
-    },
-    {
-        "id": 21146,
-        "en": "describe",
-        "kk": "/dɪsˈkɹaɪb/",
-        "zh": "v. 描繪；敘述",
-        "unit": 12,
-        "example": "Describe your day.",
-        "exampleZh": "描述一下你的一天。"
-    },
-    {
-        "id": 21147,
-        "en": "description",
-        "kk": "/dɪsˈkɹɪpʃən/",
-        "zh": "n. 敘述；形容",
-        "unit": 12,
-        "example": "I like that description.",
-        "exampleZh": "我喜歡這個描述。"
-    },
-    {
-        "id": 21148,
-        "en": "desert",
-        "kk": "/ˈdɛzɝt/",
-        "zh": "n. 沙漠",
-        "unit": 12,
-        "example": "desert wastes",
-        "exampleZh": "沙漠廢棄物"
-    },
-    {
-        "id": 21149,
-        "en": "deserve",
-        "kk": "/dɪˈzɝv/",
-        "zh": "v. 應受；該得",
-        "unit": 12,
-        "example": "You deserve respect.",
-        "exampleZh": "你值得尊重。"
-    },
-    {
-        "id": 21150,
-        "en": "design",
-        "kk": "/dɪˈzaɪn/",
-        "zh": "v. 設計構思；繪製n 圖樣；圖紙",
-        "unit": 12,
-        "example": "good design can help the reader understand complicated information",
-        "exampleZh": "好的設計可以幫助讀者理解複雜的訊息"
-    },
-    {
-        "id": 21151,
-        "en": "designate",
-        "kk": "/ˈdɛzəɡˌneɪt/",
-        "zh": "v. 指定",
-        "unit": 12,
-        "example": "the Director designate",
-        "exampleZh": "候任主任"
-    },
-    {
-        "id": 21152,
-        "en": "designer",
-        "kk": "/dɪˈzaɪnɝ/",
-        "zh": "n. 設計師",
-        "unit": 12,
-        "example": "designer drugs",
-        "exampleZh": "設計藥物"
-    },
-    {
-        "id": 21153,
-        "en": "desirable",
-        "kk": "/dɪˈzaɪɝəbəɫ/",
-        "zh": "adj. 理想的",
-        "unit": 12,
-        "example": "it is desirable to exercise some social control over technology",
-        "exampleZh": "對技術實行一定的社會控制是可取的"
-    },
-    {
-        "id": 21154,
-        "en": "desire",
-        "kk": "/dɪˈzaɪɝ/",
-        "zh": "v. 渴望",
-        "unit": 12,
-        "example": "they were clinging together in fierce mutual desire",
-        "exampleZh": "他們懷著強烈的共同慾望緊緊地抱在一起"
-    },
-    {
-        "id": 21155,
-        "en": "desk",
-        "kk": "/ˈdɛsk/",
-        "zh": "n. 書桌",
-        "unit": 12,
-        "example": "the reception desk",
-        "exampleZh": "接待處"
-    },
-    {
-        "id": 21156,
-        "en": "despair",
-        "kk": "/dɪˈspɛɹ/",
-        "zh": "n. 絕望",
-        "unit": 12,
-        "example": "driven to despair, he throws himself under a train",
-        "exampleZh": "絕望之下，他投身火車底下"
-    },
-    {
-        "id": 21157,
-        "en": "desperate",
-        "kk": "/ˈdɛspɝɪt/",
-        "zh": "adj. 絕望的",
-        "unit": 12,
-        "example": "We were desperate.",
-        "exampleZh": "我們很絕望。"
-    },
-    {
-        "id": 21158,
-        "en": "despite",
-        "kk": "/dɪˈspaɪt/",
-        "zh": "prep. 不管；儘管n 惡意；怨恨",
-        "unit": 12,
-        "example": "Despite the odds, they succeeded.",
-        "exampleZh": "儘管困難重重，他們還是成功了。"
-    },
-    {
-        "id": 21159,
-        "en": "destination",
-        "kk": "/ˌdɛstəˈneɪʃən/",
-        "zh": "n. 目的地；終點",
-        "unit": 12,
-        "example": "a popular destination for golfers",
-        "exampleZh": "高爾夫球手的熱門目的地"
-    },
-    {
-        "id": 21160,
-        "en": "destiny",
-        "kk": "/ˈdɛstəni/",
-        "zh": "n. 命運",
-        "unit": 12,
-        "example": "It is his destiny!",
-        "exampleZh": "這是他的命運！"
-    },
-    {
-        "id": 21161,
-        "en": "destroy",
-        "kk": "/dɪˈstɹɔɪ/",
-        "zh": "v. 毀壞；破壞",
-        "unit": 12,
-        "example": "They destroy nature.",
-        "exampleZh": "他們破壞大自然。"
-    },
-    {
-        "id": 21162,
-        "en": "destruction",
-        "kk": "/dɪˈstɹəkʃən/",
-        "zh": "v. 毀壞；破壞",
-        "unit": 12,
-        "example": "This is total destruction.",
-        "exampleZh": "這是徹底的毀滅。"
-    },
-    {
-        "id": 21163,
-        "en": "ability",
-        "kk": "",
-        "zh": "n. 能力；才能",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21164,
-        "en": "able",
-        "kk": "",
-        "zh": "a. 能；可；會",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21165,
-        "en": "abnormal",
-        "kk": "",
-        "zh": "a. 不正常的；反常的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21166,
-        "en": "aboard",
-        "kk": "",
-        "zh": "ad. 在（交通工具）上；上（交通工具）prep 在（交通工具）上",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21167,
-        "en": "aborigine",
-        "kk": "",
-        "zh": "n. 土著；原住民",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21168,
-        "en": "abort",
-        "kk": "",
-        "zh": "v. 流產；夭折；（計畫等）失敗",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21169,
-        "en": "abound",
-        "kk": "",
-        "zh": "v. 富足；充滿",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21170,
-        "en": "about",
-        "kk": "",
-        "zh": "ad. 在四周；到處prep 關於；對於；在⋯⋯的周圍",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21171,
-        "en": "above",
-        "kk": "",
-        "zh": "ad. 在上面；向上面prep 在⋯⋯上面；優於；勝過",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21172,
-        "en": "above-average",
-        "kk": "",
-        "zh": "a. 在平均水平以上；超過平均水平",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21173,
-        "en": "abruptly",
-        "kk": "",
-        "zh": "ad. 突然地；唐突地",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21174,
-        "en": "absent",
-        "kk": "",
-        "zh": "a. 缺席的，不在場的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21175,
-        "en": "absolutely",
-        "kk": "",
-        "zh": "ad. 絕對地，完全地",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21176,
-        "en": "absurd",
-        "kk": "",
-        "zh": "a. 不合理的，荒謬的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21177,
-        "en": "abundance",
-        "kk": "",
-        "zh": "n. 豐富；充足",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21178,
-        "en": "abusive",
-        "kk": "",
-        "zh": "n. 辱罵的；濫用的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21179,
-        "en": "academic",
-        "kk": "",
-        "zh": "a. 學校的；學術的 n 學者；學究",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21180,
-        "en": "academy",
-        "kk": "",
-        "zh": "n. 學院；大學",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21181,
-        "en": "accent",
-        "kk": "",
-        "zh": "n. 口音，腔調 v 強調，著重",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21182,
-        "en": "accept",
-        "kk": "",
-        "zh": "v. 接受；答應",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21183,
-        "en": "access",
-        "kk": "",
-        "zh": "n. 進入；入口 v使用；接近",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21184,
-        "en": "accessibility",
-        "kk": "",
-        "zh": "n. 易接近；易受影響",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21185,
-        "en": "accessory",
-        "kk": "",
-        "zh": "n. 附件；配件a 附屬的；輔助的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21186,
-        "en": "accident",
-        "kk": "",
-        "zh": "n. 事故；災禍",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21187,
-        "en": "accident-prone",
-        "kk": "",
-        "zh": "a. 容易受傷的；容易出意外的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21188,
-        "en": "acclimatize",
-        "kk": "",
-        "zh": "v. 使適應新環境",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21189,
-        "en": "accommodation",
-        "kk": "",
-        "zh": "n. 適應；調節",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21190,
-        "en": "accompany",
-        "kk": "",
-        "zh": "v. 陪同，伴隨",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21191,
-        "en": "accomplishment",
-        "kk": "",
-        "zh": "n. 成就；成績",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21192,
-        "en": "according",
-        "kk": "",
-        "zh": "a. 相符的；和諧的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21193,
-        "en": "accountable",
-        "kk": "",
-        "zh": "a. 應負責任的；可說明的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21194,
-        "en": "accounting",
-        "kk": "",
-        "zh": "n. 會計學；結帳",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21195,
-        "en": "accrue",
-        "kk": "",
-        "zh": "v. 積累；獲得",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21196,
-        "en": "accumulation",
-        "kk": "",
-        "zh": "n. 積累；積聚",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21197,
-        "en": "ache",
-        "kk": "",
-        "zh": "n. 疼痛 v 疼痛；感到痛苦",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21198,
-        "en": "acknowledgement",
-        "kk": "",
-        "zh": "n. 承認；確認；認可",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21199,
-        "en": "acquisitive",
-        "kk": "",
-        "zh": "a. 想獲得的；貪得無厭的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21200,
-        "en": "acre",
-        "kk": "",
-        "zh": "n. 英畝；地產",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21201,
-        "en": "across",
-        "kk": "",
-        "zh": "prep. 橫越，穿過；在⋯⋯那邊 ad 橫過",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21202,
-        "en": "act",
-        "kk": "",
-        "zh": "v. 扮演；做事；見效 n行為；行動",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21203,
-        "en": "action",
-        "kk": "",
-        "zh": "n. 行動；行為",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21204,
-        "en": "activity",
-        "kk": "",
-        "zh": "n. 活動；行動",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21205,
-        "en": "actor",
-        "kk": "",
-        "zh": "n. 演員；行動者",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21206,
-        "en": "actress",
-        "kk": "",
-        "zh": "n. 女演員",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21207,
-        "en": "actually",
-        "kk": "",
-        "zh": "ad. 實際上；真的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21208,
-        "en": "acute",
-        "kk": "",
-        "zh": "a. 嚴重的；敏銳的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21209,
-        "en": "adapter",
-        "kk": "",
-        "zh": "n. 改編者；轉接器",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21210,
-        "en": "add",
-        "kk": "",
-        "zh": "v. 添加；增加",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21211,
-        "en": "addiction",
-        "kk": "",
-        "zh": "n. 沉溺；成癮",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21212,
-        "en": "addictive",
-        "kk": "",
-        "zh": "a. 成癮的；上癮的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21213,
-        "en": "additionally",
-        "kk": "",
-        "zh": "ad. 附加地；同時；此外",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21214,
-        "en": "adept",
-        "kk": "",
-        "zh": "n. 能手；內行",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21215,
-        "en": "adjustment",
-        "kk": "",
-        "zh": "n. 調整；校正",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21216,
-        "en": "administrate",
-        "kk": "",
-        "zh": "v. 管理；支配",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21217,
-        "en": "administrator",
-        "kk": "",
-        "zh": "n. 管理人；行政官員",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21218,
-        "en": "admirable",
-        "kk": "",
-        "zh": "a. 值得讚揚的；令人欽佩的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21219,
-        "en": "admiration",
-        "kk": "",
-        "zh": "n. 欽佩；欣賞",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21220,
-        "en": "admittance",
-        "kk": "",
-        "zh": "n. 進入；入場許可",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21221,
-        "en": "adolescence",
-        "kk": "",
-        "zh": "n. 青春期；青少年時期",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21222,
-        "en": "adolescent",
-        "kk": "",
-        "zh": "a. 青少年的；幼稚的 n 青少年",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21223,
-        "en": "adoption",
-        "kk": "",
-        "zh": "n. 採納；採用",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21224,
-        "en": "adorn",
-        "kk": "",
-        "zh": "v. 裝飾；使生色",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21225,
-        "en": "adult",
-        "kk": "",
-        "zh": "n. 成年人 a 成年的；成熟的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21226,
-        "en": "adversary",
-        "kk": "",
-        "zh": "n. 敵手；敵人",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21227,
-        "en": "advisable",
-        "kk": "",
-        "zh": "a. 可取的；適當的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21228,
-        "en": "affection",
-        "kk": "",
-        "zh": "n. 愛；情愛126.  afﬁrm v 申明；堅稱；證實127.  afﬁrmative a 肯定的；表示贊成的128. afﬁx v 貼上；添上；附上",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21229,
-        "en": "afraid",
-        "kk": "",
-        "zh": "a. 害怕的；恐怕；遺憾",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21230,
-        "en": "after",
-        "kk": "",
-        "zh": "prep. 在⋯之後 conj在⋯之後 ad 以後；之後a 以後的；後部的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21231,
-        "en": "afternoon",
-        "kk": "",
-        "zh": "n. 下午；午後",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21232,
-        "en": "after-tax",
-        "kk": "",
-        "zh": "a. 稅後；淨收的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21233,
-        "en": "afterward",
-        "kk": "",
-        "zh": "ad. 之後；以後",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21234,
-        "en": "again",
-        "kk": "",
-        "zh": "ad. 再；再一次",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21235,
-        "en": "against",
-        "kk": "",
-        "zh": "prep. 反對；違反",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21236,
-        "en": "age",
-        "kk": "",
-        "zh": "n. 年齡 v 變老；成熟",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21237,
-        "en": "aggression",
-        "kk": "",
-        "zh": "n. 侵略",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21238,
-        "en": "agility",
-        "kk": "",
-        "zh": "n. 敏捷；靈活",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21239,
-        "en": "ago",
-        "kk": "",
-        "zh": "ad. 在⋯⋯以前",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21240,
-        "en": "agree",
-        "kk": "",
-        "zh": "v. 同意；贊同",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21241,
-        "en": "agricultural",
-        "kk": "",
-        "zh": "a. 農業的；務農的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21242,
-        "en": "ahead",
-        "kk": "",
-        "zh": "ad. 在前；向前；預先",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21243,
-        "en": "aim",
-        "kk": "",
-        "zh": "v. 瞄準；目的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21244,
-        "en": "air-conditioner",
-        "kk": "",
-        "zh": "n. 冷氣機",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21245,
-        "en": "aircraft",
-        "kk": "",
-        "zh": "n. 飛機；飛艇",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21246,
-        "en": "airport",
-        "kk": "",
-        "zh": "n. 機場",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21247,
-        "en": "alarm",
-        "kk": "",
-        "zh": "n. 警報；鬧鐘 v 使驚慌不安；使恐懼",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21248,
-        "en": "allegedly",
-        "kk": "",
-        "zh": "ad. 據傳說；據宣稱",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21249,
-        "en": "allergy",
-        "kk": "",
-        "zh": "n. 過敏症",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21250,
-        "en": "alley",
-        "kk": "",
-        "zh": "n. 小巷；小徑",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21251,
-        "en": "alliance",
-        "kk": "",
-        "zh": "n. 結盟；聯盟",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21252,
-        "en": "allure",
-        "kk": "",
-        "zh": "v. 引誘；誘惑 n 誘惑力，魅力",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21253,
-        "en": "almost",
-        "kk": "",
-        "zh": "ad. 幾乎；差不多",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21254,
-        "en": "along",
-        "kk": "",
-        "zh": "prep. 沿著；順著 ad向前；一起",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21255,
-        "en": "already",
-        "kk": "",
-        "zh": "ad. 已經；先前",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21256,
-        "en": "altogether",
-        "kk": "",
-        "zh": "ad. 完全；全然",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21257,
-        "en": "amid",
-        "kk": "",
-        "zh": "prep. 在⋯之間；被⋯包圍",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21258,
-        "en": "among",
-        "kk": "",
-        "zh": "prep. 在⋯之中；在⋯中間",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21259,
-        "en": "annually",
-        "kk": "",
-        "zh": "ad. 每年；每年一次",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21260,
-        "en": "another",
-        "kk": "",
-        "zh": "a. 又一；再一",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21261,
-        "en": "antibiotic",
-        "kk": "",
-        "zh": "a. 抗生的；抗菌的 n 抗生素；抗菌素",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21262,
-        "en": "any",
-        "kk": "",
-        "zh": "a. 任一；每一 prep 任何一個；任何人",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21263,
-        "en": "apart",
-        "kk": "",
-        "zh": "ad. 分開地；有距離地",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21264,
-        "en": "apologetic",
-        "kk": "",
-        "zh": "a. 道歉的；認錯的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21265,
-        "en": "apparently",
-        "kk": "",
-        "zh": "ad. 顯然地；表面上",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21266,
-        "en": "apt",
-        "kk": "",
-        "zh": "a. 易於⋯的；有⋯傾向的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21267,
-        "en": "arena",
-        "kk": "",
-        "zh": "n. 圓形運動場；比賽場",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21268,
-        "en": "around",
-        "kk": "",
-        "zh": "ad. 到處；周圍prep 圍繞；在⋯⋯附近",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21269,
-        "en": "articulate",
-        "kk": "",
-        "zh": "v. 清楚地講話；清晰地發音；明確有力地表達239.  artiﬁcial a 人工的；人造的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21270,
-        "en": "ascend",
-        "kk": "",
-        "zh": "v. 登高；上升",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21271,
-        "en": "assurance",
-        "kk": "",
-        "zh": "n. 保證",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21272,
-        "en": "at",
-        "kk": "",
-        "zh": "prep. 在⋯地點；在⋯時刻",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21273,
-        "en": "ATM",
-        "kk": "",
-        "zh": "n. 自動存提款機(= Automatic TellerMachine)",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21274,
-        "en": "attest",
-        "kk": "",
-        "zh": "v. 證實；證明",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21275,
-        "en": "attorney",
-        "kk": "",
-        "zh": "n. 律師",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21276,
-        "en": "auditory",
-        "kk": "",
-        "zh": "a. 耳朵的；聽覺的 n 聽眾；禮堂",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21277,
-        "en": "avert",
-        "kk": "",
-        "zh": "v. 避開；移開",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21278,
-        "en": "avoidance",
-        "kk": "",
-        "zh": "n. 逃避；迴避",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21279,
-        "en": "bachelor",
-        "kk": "",
-        "zh": "n. 單身漢；學士",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21280,
-        "en": "back",
-        "kk": "",
-        "zh": "n. 背部；後部 v 倒退；後退 ad 向後；後退地 a 後面的；後部的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21281,
-        "en": "backache",
-        "kk": "",
-        "zh": "n. 背痛；腰痛",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21282,
-        "en": "backbone",
-        "kk": "",
-        "zh": "n. 脊骨；脊柱",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21283,
-        "en": "backbreaking",
-        "kk": "",
-        "zh": "a. 非常辛勞的287.  backﬁre n 引擎的逆火 v事與願違",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21284,
-        "en": "backlash",
-        "kk": "",
-        "zh": "n. 反衝；強烈反對；後座力",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21285,
-        "en": "backpack",
-        "kk": "",
-        "zh": "n. 登山、遠足用的背包292. back-to-back Ph 背靠背",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21286,
-        "en": "backward",
-        "kk": "",
-        "zh": "a. 向後的；反向的 ad 向後；倒",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21287,
-        "en": "backyard",
-        "kk": "",
-        "zh": "n. 後院",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21288,
-        "en": "bacteria",
-        "kk": "",
-        "zh": "n. 細菌",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21289,
-        "en": "bad",
-        "kk": "",
-        "zh": "a. 壞的；不好的 ad很；非常",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21290,
-        "en": "badge",
-        "kk": "",
-        "zh": "n. 徽章；紀念章",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21291,
-        "en": "badly",
-        "kk": "",
-        "zh": "ad. 壞地；拙劣地",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21292,
-        "en": "bad-tempered",
-        "kk": "",
-        "zh": "a. 情緒惡劣的；易怒的301.  bafﬂe v 使受挫折；阻撓n 困惑；障礙302.  bafﬂing a  令人困惑的；難對付的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21293,
-        "en": "bag",
-        "kk": "",
-        "zh": "n. 袋；提袋",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21294,
-        "en": "bail",
-        "kk": "",
-        "zh": "v. 保釋 n 保釋；保釋金",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21295,
-        "en": "bailout",
-        "kk": "",
-        "zh": "n. 跳傘；緊急（財政）援助",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21296,
-        "en": "bait",
-        "kk": "",
-        "zh": "n. 餌；引誘物 v 引誘；誘惑",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21297,
-        "en": "bake",
-        "kk": "",
-        "zh": "v. 烘；烤；烘培",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21298,
-        "en": "baker",
-        "kk": "",
-        "zh": "n. 麵包師：糕點師",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21299,
-        "en": "bakery",
-        "kk": "",
-        "zh": "n. 麵包店；糕點店",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21300,
-        "en": "balcony",
-        "kk": "",
-        "zh": "n. 陽臺；露臺",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21301,
-        "en": "bald",
-        "kk": "",
-        "zh": "a. 禿頭的；赤裸裸的314. ball (party) n 舞會",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21302,
-        "en": "ballroom",
-        "kk": "",
-        "zh": "n. 跳舞的大廳",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21303,
-        "en": "banish",
-        "kk": "",
-        "zh": "v. 流放；放逐",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21304,
-        "en": "bank",
-        "kk": "",
-        "zh": "n. 銀行；堤；岸",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21305,
-        "en": "bankbook",
-        "kk": "",
-        "zh": "n. 銀行存摺",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21306,
-        "en": "bankcard",
-        "kk": "",
-        "zh": "n. 銀行信用卡",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21307,
-        "en": "banker",
-        "kk": "",
-        "zh": "n. 銀行家",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21308,
-        "en": "banking",
-        "kk": "",
-        "zh": "n. 銀行業務；銀行業",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21309,
-        "en": "bar",
-        "kk": "",
-        "zh": "code. n 條碼",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21310,
-        "en": "barbecue",
-        "kk": "",
-        "zh": "n. 烤肉；燒烤v 烤肉；燒烤",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21311,
-        "en": "bareness",
-        "kk": "",
-        "zh": "n. 赤裸；無遮蓋",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21312,
-        "en": "barren",
-        "kk": "",
-        "zh": "a. 不生育的；貧脊的  n 瘠地；荒漠",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21313,
-        "en": "bas",
-        "kk": "",
-        "zh": "n. 基；底；基部 n 基本的；基礎的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21314,
-        "en": "baseline",
-        "kk": "",
-        "zh": "n. 基線；底線",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21315,
-        "en": "basement",
-        "kk": "",
-        "zh": "n. 地下室；地下層",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21316,
-        "en": "basically",
-        "kk": "",
-        "zh": "ad. 在根本上",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21317,
-        "en": "basket",
-        "kk": "",
-        "zh": "n. 籃；簍；筐",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21318,
-        "en": "bat",
-        "kk": "",
-        "zh": "n. 球棒；球拍 v 打；揮打",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21319,
-        "en": "batch",
-        "kk": "",
-        "zh": "n. 一批生產量；一批",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21320,
-        "en": "bath",
-        "kk": "",
-        "zh": "n. 浴缸；洗澡",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21321,
-        "en": "bathe",
-        "kk": "",
-        "zh": "v. 浸入；浸洗",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21322,
-        "en": "bathroom",
-        "kk": "",
-        "zh": "n. 浴室；化妝室",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21323,
-        "en": "battery",
-        "kk": "",
-        "zh": "n. 電池；蓄電池",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21324,
-        "en": "battle",
-        "kk": "",
-        "zh": "v. 搏鬥；奮爭 n 戰鬥；戰役",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21325,
-        "en": "bay",
-        "kk": "",
-        "zh": "n. 灣",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21326,
-        "en": "be",
-        "kk": "",
-        "zh": "v. 是；等於 aux 正在⋯；在⋯",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21327,
-        "en": "beach",
-        "kk": "",
-        "zh": "n. 海灘；海濱度假地",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21328,
-        "en": "bearable",
-        "kk": "",
-        "zh": "a. 能耐的；忍得住的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21329,
-        "en": "bearer",
-        "kk": "",
-        "zh": "n. 持有人；挑夫；搬運工",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21330,
-        "en": "bearing",
-        "kk": "",
-        "zh": "n. 舉止；體態；忍耐；忍受",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21331,
-        "en": "beaten",
-        "kk": "",
-        "zh": "a. 挨打的；被打敗的；筋疲力盡的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21332,
-        "en": "beautiful",
-        "kk": "",
-        "zh": "a. 漂亮的；出色的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21333,
-        "en": "beautify",
-        "kk": "",
-        "zh": "v. 使更加美麗；美化",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21334,
-        "en": "beauty",
-        "kk": "",
-        "zh": "n. 美麗；美的事物",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21335,
-        "en": "because",
-        "kk": "",
-        "zh": "conj. 因為",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21336,
-        "en": "become",
-        "kk": "",
-        "zh": "v. 變成；成為",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21337,
-        "en": "becoming",
-        "kk": "",
-        "zh": "a. 合適的；適宜的 n 形成；發生",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21338,
-        "en": "bed",
-        "kk": "",
-        "zh": "and. breakfast ph夜宿兼次日早餐（縮寫為B&B）",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21339,
-        "en": "bedside",
-        "kk": "",
-        "zh": "n. 床邊；床側 a床旁的；臨床的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21340,
-        "en": "bedtime",
-        "kk": "",
-        "zh": "n. 就寢時間 a 適於睡前的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21341,
-        "en": "begin",
-        "kk": "",
-        "zh": "v. 開始；著手",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21342,
-        "en": "beginner",
-        "kk": "",
-        "zh": "n. 初學者；新手",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21343,
-        "en": "beginning",
-        "kk": "",
-        "zh": "n. 開始；起始",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21344,
-        "en": "behavioral",
-        "kk": "",
-        "zh": "a. 行為的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21345,
-        "en": "behind",
-        "kk": "",
-        "zh": "ad. 在背後 prep在⋯⋯的後面 n 背後",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21346,
-        "en": "beholder",
-        "kk": "",
-        "zh": "n. 觀看者；旁觀者",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21347,
-        "en": "beige",
-        "kk": "",
-        "zh": "a. 米色的 n 米黃色",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21348,
-        "en": "being",
-        "kk": "",
-        "zh": "n. 存在；生存",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21349,
-        "en": "belated",
-        "kk": "",
-        "zh": "a. 誤期的；過時的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21350,
-        "en": "belief",
-        "kk": "",
-        "zh": "n. 相信；信任",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21351,
-        "en": "believe",
-        "kk": "",
-        "zh": "v. 相信；信任",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21352,
-        "en": "believer",
-        "kk": "",
-        "zh": "n. 信徒；信教者",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21353,
-        "en": "bell",
-        "kk": "",
-        "zh": "n. 鐘；鈴 v 鳴鐘",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21354,
-        "en": "belly",
-        "kk": "",
-        "zh": "n. 腹；腹部 v 鼓起；脹滿",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21355,
-        "en": "belong",
-        "kk": "",
-        "zh": "v. 屬於；合適",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21356,
-        "en": "beloved",
-        "kk": "",
-        "zh": "a. 心愛的；親愛的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21357,
-        "en": "belt",
-        "kk": "",
-        "zh": "n. 腰帶；皮帶 v 用皮帶抽打；用帶捆住",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21358,
-        "en": "bench",
-        "kk": "",
-        "zh": "n. 長凳；長椅",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21359,
-        "en": "bend",
-        "kk": "",
-        "zh": "v. 彎曲；轉彎 n 彎曲；轉彎處",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21360,
-        "en": "beneath",
-        "kk": "",
-        "zh": "ad. 在下；向下prep 在⋯之下；向⋯下面",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21361,
-        "en": "benefactor",
-        "kk": "",
-        "zh": "n. 捐助人；施主396.  beneﬁcial a 有益的；有利的397.  beneﬁt v 得益；受惠 n利益；好處",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21362,
-        "en": "benignl",
-        "kk": "",
-        "zh": "a. 仁慈的；親切的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21363,
-        "en": "bent",
-        "kk": "",
-        "zh": "a. 彎曲的；決心的n 愛好；傾向",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21364,
-        "en": "bet",
-        "kk": "",
-        "zh": "n. 打賭 v 打賭",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21365,
-        "en": "betrayal",
-        "kk": "",
-        "zh": "n. 背叛；密告",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21366,
-        "en": "better",
-        "kk": "",
-        "zh": "a. 較佳的；更好的v 改善；改進",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21367,
-        "en": "between",
-        "kk": "",
-        "zh": "ad. 在中間；兩者之間 prep 在⋯之間",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21368,
-        "en": "beware",
-        "kk": "",
-        "zh": "v. 注意；提防",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21369,
-        "en": "bicycle",
-        "kk": "",
-        "zh": "n. 腳踏車；自行車",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21370,
-        "en": "bidder",
-        "kk": "",
-        "zh": "n. 出價人；投標人",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21371,
-        "en": "bilingual",
-        "kk": "",
-        "zh": "a. 雙語的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21372,
-        "en": "billboard",
-        "kk": "",
-        "zh": "n. 廣告牌",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21373,
-        "en": "billion",
-        "kk": "",
-        "zh": "n. 十億",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21374,
-        "en": "bin",
-        "kk": "",
-        "zh": "n. 箱子；容器",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21375,
-        "en": "binding",
-        "kk": "",
-        "zh": "n. 裝訂；封皮 a黏合的；有約束力的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21376,
-        "en": "biological",
-        "kk": "",
-        "zh": "a. 生物的；生物學的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21377,
-        "en": "birth",
-        "kk": "",
-        "zh": "n. 出生；誕生",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21378,
-        "en": "birthday",
-        "kk": "",
-        "zh": "n. 生日",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21379,
-        "en": "bit",
-        "kk": "",
-        "zh": "n. 小片；小塊；位元",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21380,
-        "en": "bite",
-        "kk": "",
-        "zh": "v. 咬；啃",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21381,
-        "en": "bizarre",
-        "kk": "",
-        "zh": "a. 奇異的；不尋常的；奇怪的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21382,
-        "en": "bland",
-        "kk": "",
-        "zh": "a. 溫和的；淡而無味的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21383,
-        "en": "bleak",
-        "kk": "",
-        "zh": "a. 荒涼的；無遮蔽的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21384,
-        "en": "bleed",
-        "kk": "",
-        "zh": "v. 出血；流血",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21385,
-        "en": "blender",
-        "kk": "",
-        "zh": "n. 攪拌機；混合器",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21386,
-        "en": "blockage",
-        "kk": "",
-        "zh": "n. 封鎖；妨礙",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21387,
-        "en": "blood",
-        "kk": "",
-        "zh": "n. 血；血液",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21388,
-        "en": "blossom",
-        "kk": "",
-        "zh": "n. 開花；開花期v 開花；生長茂盛",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21389,
-        "en": "blow",
-        "kk": "",
-        "zh": "v. 吹；吹奏",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21390,
-        "en": "blunder",
-        "kk": "",
-        "zh": "v. 犯大錯；出漏子 n 大錯",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21391,
-        "en": "blur",
-        "kk": "",
-        "zh": "v. 使模糊不清；使朦朧 n 模糊",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21392,
-        "en": "boardroom",
-        "kk": "",
-        "zh": "n. 會議室",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21393,
-        "en": "boat",
-        "kk": "",
-        "zh": "n. 小船",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21394,
-        "en": "body",
-        "kk": "",
-        "zh": "n. 身體；肉體",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21395,
-        "en": "boil",
-        "kk": "",
-        "zh": "v. 沸騰；烹煮",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21396,
-        "en": "bomb",
-        "kk": "",
-        "zh": "n. 炸彈；失敗 v 轟炸；轟擊",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21397,
-        "en": "bombard",
-        "kk": "",
-        "zh": "v. 砲擊；轟炸",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21398,
-        "en": "bone",
-        "kk": "",
-        "zh": "n. 骨；骨頭",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21399,
-        "en": "book",
-        "kk": "",
-        "zh": "n. 書；書籍",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21400,
-        "en": "bookshelf",
-        "kk": "",
-        "zh": "n. 書架；書櫃",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21401,
-        "en": "bookstore",
-        "kk": "",
-        "zh": "n. 書店",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21402,
-        "en": "boot",
-        "kk": "",
-        "zh": "n. 靴子",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21403,
-        "en": "borderline",
-        "kk": "",
-        "zh": "n. 邊界；界線",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21404,
-        "en": "boring",
-        "kk": "",
-        "zh": "a. 令人生厭的；乏味的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21405,
-        "en": "borrow",
-        "kk": "",
-        "zh": "v. 借用；借",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21406,
-        "en": "boss",
-        "kk": "",
-        "zh": "n. 老闆；上司",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21407,
-        "en": "bothersome",
-        "kk": "",
-        "zh": "a. 令人討厭的；麻煩的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21408,
-        "en": "bottle",
-        "kk": "",
-        "zh": "n. 瓶子",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21409,
-        "en": "boulevard",
-        "kk": "",
-        "zh": "n. 大道",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21410,
-        "en": "bow",
-        "kk": "",
-        "zh": "n. 弓",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21411,
-        "en": "bowl",
-        "kk": "",
-        "zh": "n. 保齡球 v 投：滾",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21412,
-        "en": "box",
-        "kk": "",
-        "zh": "n. 箱；盒；匣482.  box ofﬁce n 售票處；票房",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21413,
-        "en": "boycott",
-        "kk": "",
-        "zh": "v. 杯葛；聯合抵制 n 杯葛；聯合抵制",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21414,
-        "en": "brace",
-        "kk": "",
-        "zh": "n. 支柱；支撐物  v支撐；加固",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21415,
-        "en": "bracket",
-        "kk": "",
-        "zh": "n. 托架；撐架",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21416,
-        "en": "brain",
-        "kk": "",
-        "zh": "n. 智力，頭腦",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21417,
-        "en": "brainstorm",
-        "kk": "",
-        "zh": "v. 集體研討；集思廣益",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21418,
-        "en": "brake",
-        "kk": "",
-        "zh": "v. 煞車 n 煞車",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21419,
-        "en": "brand-new",
-        "kk": "",
-        "zh": "a. 全新的；嶄新的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21420,
-        "en": "bravely",
-        "kk": "",
-        "zh": "ad. 勇敢地：英勇地",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21421,
-        "en": "bravo",
-        "kk": "",
-        "zh": "n. 喝采聲",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21422,
-        "en": "bread",
-        "kk": "",
-        "zh": "n. 麵包",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21423,
-        "en": "breadth",
-        "kk": "",
-        "zh": "n. 寬度；幅度",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21424,
-        "en": "breakable",
-        "kk": "",
-        "zh": "a. 會破的；脆的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21425,
-        "en": "breakfast",
-        "kk": "",
-        "zh": "n. 早餐",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21426,
-        "en": "breakout",
-        "kk": "",
-        "zh": "n. 包圍突破",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21427,
-        "en": "breakup",
-        "kk": "",
-        "zh": "n. 中斷；中止",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21428,
-        "en": "breathless",
-        "kk": "",
-        "zh": "a. 呼吸困難的；扣人心弦的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21429,
-        "en": "breathtaking",
-        "kk": "",
-        "zh": "a. 驚人的；令人屏息的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21430,
-        "en": "breeze",
-        "kk": "",
-        "zh": "n. 微風；和風",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21431,
-        "en": "brick",
-        "kk": "",
-        "zh": "n. 磚；磚塊",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21432,
-        "en": "bride",
-        "kk": "",
-        "zh": "n. 新娘",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21433,
-        "en": "bridge",
-        "kk": "",
-        "zh": "n. 橋：橋墩",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21434,
-        "en": "bright",
-        "kk": "",
-        "zh": "a. 發亮的；晴朗的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21435,
-        "en": "brighten",
-        "kk": "",
-        "zh": "v. 使明亮；使閃亮",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21436,
-        "en": "brisk",
-        "kk": "",
-        "zh": "a. 活潑的；生氣勃勃的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21437,
-        "en": "brittle",
-        "kk": "",
-        "zh": "a. 易碎的；敏感的；難相處的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21438,
-        "en": "brokered",
-        "kk": "",
-        "zh": "v. 以中間人等身分安排⋯⋯",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21439,
-        "en": "bruise",
-        "kk": "",
-        "zh": "n. 傷痕；青腫 v 使受瘀傷，使青腫",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21440,
-        "en": "brush",
-        "kk": "",
-        "zh": "v. 刷；刷洗 n 刷子",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21441,
-        "en": "brush-off",
-        "kk": "",
-        "zh": "n. 拒絕；不理睬",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21442,
-        "en": "bruta",
-        "kk": "",
-        "zh": "a. 冷酷的；野蠻的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21443,
-        "en": "brutally",
-        "kk": "",
-        "zh": "ad. 冷酷地；野蠻地",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21444,
-        "en": "bubble",
-        "kk": "",
-        "zh": "n. 泡泡 v 沸騰；冒泡",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21445,
-        "en": "bucket",
-        "kk": "",
-        "zh": "n. 水桶；提桶",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21446,
-        "en": "buckle",
-        "kk": "",
-        "zh": "n. 釦子；搭鉤 v扣住；扣緊",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21447,
-        "en": "budge",
-        "kk": "",
-        "zh": "v. 微微移動；讓步",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21448,
-        "en": "businessman",
-        "kk": "",
-        "zh": "n. 商人",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21449,
-        "en": "busy",
-        "kk": "",
-        "zh": "a. 忙碌的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21450,
-        "en": "buy",
-        "kk": "",
-        "zh": "v. 買；購買",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21451,
-        "en": "buyer",
-        "kk": "",
-        "zh": "n. 買主；買家",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21452,
-        "en": "cab",
-        "kk": "",
-        "zh": "n. 計程車",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21453,
-        "en": "cabin",
-        "kk": "",
-        "zh": "n. 客艙；駕駛艙",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21454,
-        "en": "cabine",
-        "kk": "",
-        "zh": "n. 櫥；櫃",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21455,
-        "en": "cafeteria",
-        "kk": "",
-        "zh": "n. 自助餐廳",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21456,
-        "en": "caffeine",
-        "kk": "",
-        "zh": "n. 咖啡因",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21457,
-        "en": "calcium",
-        "kk": "",
-        "zh": "n. 鈣",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21458,
-        "en": "caliber",
-        "kk": "",
-        "zh": "n. 口徑；水準，程度",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21459,
-        "en": "call",
-        "kk": "",
-        "zh": "v. 叫喊；呼叫 n 呼叫；通話",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21460,
-        "en": "caller",
-        "kk": "",
-        "zh": "n. 訪問者；探望者",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21461,
-        "en": "calling",
-        "kk": "",
-        "zh": "n. 呼喊；召喚",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21462,
-        "en": "calm",
-        "kk": "",
-        "zh": "a. 鎮靜的；沉著的 v使鎮定；使平靜",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21463,
-        "en": "camera",
-        "kk": "",
-        "zh": "n. 照相機",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21464,
-        "en": "camp",
-        "kk": "",
-        "zh": "n. 營地；帳篷 v 紮營；宿營",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21465,
-        "en": "candid",
-        "kk": "",
-        "zh": "a. 公正的，公平的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21466,
-        "en": "capability",
-        "kk": "",
-        "zh": "n. 能力；才能",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21467,
-        "en": "capitalization",
-        "kk": "",
-        "zh": "n. 資本化；資本額",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21468,
-        "en": "capitalize",
-        "kk": "",
-        "zh": "v. 利用；供給（資本）",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21469,
-        "en": "carefully",
-        "kk": "",
-        "zh": "ad. 小心翼翼地；仔細地",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21470,
-        "en": "carpet",
-        "kk": "",
-        "zh": "n. 地毯",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21471,
-        "en": "carton",
-        "kk": "",
-        "zh": "n. 紙盒；紙板箱",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21472,
-        "en": "cast",
-        "kk": "",
-        "zh": "v. 投；擲；拋 n 投；班底；演員",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21473,
-        "en": "categorize",
-        "kk": "",
-        "zh": "v. 將⋯分類",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21474,
-        "en": "changeable",
-        "kk": "",
-        "zh": "a. 易變的；不定的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21475,
-        "en": "chapter",
-        "kk": "",
-        "zh": "n. 篇章；篇",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21476,
-        "en": "circumspect",
-        "kk": "",
-        "zh": "a. 慎重的；謹慎小心的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21477,
-        "en": "circumvent",
-        "kk": "",
-        "zh": "v. 規避；防止⋯⋯發生",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21478,
-        "en": "citation",
-        "kk": "",
-        "zh": "n. 引用；引證",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21479,
-        "en": "citizenship",
-        "kk": "",
-        "zh": "n. 公民權；公民身分",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21480,
-        "en": "clearly",
-        "kk": "",
-        "zh": "ad. 顯然地；無疑地；明亮地",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21481,
-        "en": "cognition",
-        "kk": "",
-        "zh": "n. 認知；知識",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21482,
-        "en": "coin",
-        "kk": "",
-        "zh": "n. 硬幣",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21483,
-        "en": "collateral",
-        "kk": "",
-        "zh": "a. 並行的；附屬的 n 擔保品；抵押品",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21484,
-        "en": "collectible",
-        "kk": "",
-        "zh": "a. 可收集的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21485,
-        "en": "comforting",
-        "kk": "",
-        "zh": "a. 令人欣慰的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21486,
-        "en": "commentary",
-        "kk": "",
-        "zh": "n. 評論",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21487,
-        "en": "committed",
-        "kk": "",
-        "zh": "a. 忠誠的，堅定的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21488,
-        "en": "comparatively",
-        "kk": "",
-        "zh": "ad. 對比地；比較地",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21489,
-        "en": "compliant",
-        "kk": "",
-        "zh": "a. 順從的；應允的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21490,
-        "en": "composure",
-        "kk": "",
-        "zh": "n. 平靜；鎮靜",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21491,
-        "en": "consciously",
-        "kk": "",
-        "zh": "ad. 有意識地；自覺地",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21492,
-        "en": "considering",
-        "kk": "",
-        "zh": "prep. 就⋯⋯而論；考慮到 ad 各方面考慮起來",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21493,
-        "en": "consistently",
-        "kk": "",
-        "zh": "ad. 一貫地；固守地",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21494,
-        "en": "constrain",
-        "kk": "",
-        "zh": "v. 強迫；迫使",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21495,
-        "en": "consultancy",
-        "kk": "",
-        "zh": "n. 諮詢公司；顧問公司",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21496,
-        "en": "continuity",
-        "kk": "",
-        "zh": "n. 連續性；持續性",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21497,
-        "en": "controlling",
-        "kk": "",
-        "zh": "a. 管理的；控制的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21498,
-        "en": "cordially",
-        "kk": "",
-        "zh": "ad. 熱誠地；誠摯地",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21499,
-        "en": "coupon",
-        "kk": "",
-        "zh": "n. 贈券；減價優待券",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21500,
-        "en": "courteously",
-        "kk": "",
-        "zh": "ad. 有禮貌地；親切地",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21501,
-        "en": "crafted",
-        "kk": "",
-        "zh": "a. 製作的；工藝的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21502,
-        "en": "crane",
-        "kk": "",
-        "zh": "n. 鶴 v 伸著脖子看",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21503,
-        "en": "credible",
-        "kk": "",
-        "zh": "a. 可信的；可靠的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21504,
-        "en": "creditor",
-        "kk": "",
-        "zh": "n. 債權人；貸方",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21505,
-        "en": "cuisine",
-        "kk": "",
-        "zh": "n. 烹飪；烹調法；菜餚",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21506,
-        "en": "cushion",
-        "kk": "",
-        "zh": "n. 墊子；坐墊",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21507,
-        "en": "customize",
-        "kk": "",
-        "zh": "v. 訂做；客製化",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21508,
-        "en": "cutback",
-        "kk": "",
-        "zh": "n. 減少；剪修新芽",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21509,
-        "en": "daring",
-        "kk": "",
-        "zh": "a. 大膽的；勇敢的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21510,
-        "en": "day",
-        "kk": "",
-        "zh": "n. 一天；日；白天",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21511,
-        "en": "daylight",
-        "kk": "",
-        "zh": "n. 日光；白晝",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21512,
-        "en": "daytime",
-        "kk": "",
-        "zh": "n. 白天；白晝",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21513,
-        "en": "dazzle",
-        "kk": "",
-        "zh": "v. 使目眩；使眼花n 耀眼；燦爛",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21514,
-        "en": "dealing",
-        "kk": "",
-        "zh": "n. 行為；商業往來",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21515,
-        "en": "dean",
-        "kk": "",
-        "zh": "n. 教務長；學院院長",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21516,
-        "en": "dear",
-        "kk": "",
-        "zh": "a. 親愛的；摯愛的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21517,
-        "en": "debatable",
-        "kk": "",
-        "zh": "a. 可爭辯的；可爭論的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21518,
-        "en": "debit",
-        "kk": "",
-        "zh": "v. 借方 n 把⋯⋯記入借方",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21519,
-        "en": "decease",
-        "kk": "",
-        "zh": "v. 亡故 n 死亡",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21520,
-        "en": "deceitful",
-        "kk": "",
-        "zh": "a. 騙人的；欺詐的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21521,
-        "en": "decelerate",
-        "kk": "",
-        "zh": "v. 減緩；降低速度",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21522,
-        "en": "deceleration",
-        "kk": "",
-        "zh": "n. 減速",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21523,
-        "en": "decipher",
-        "kk": "",
-        "zh": "v. 破解（密碼等）；解釋（古代文字等）",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21524,
-        "en": "decode",
-        "kk": "",
-        "zh": "v. 譯解（密碼）",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21525,
-        "en": "deduce",
-        "kk": "",
-        "zh": "v. 演繹；推論",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21526,
-        "en": "defy",
-        "kk": "",
-        "zh": "v. 公然反抗；蔑視",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21527,
-        "en": "delicacy",
-        "kk": "",
-        "zh": "n. 精美；佳餚",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21528,
-        "en": "delusion",
-        "kk": "",
-        "zh": "n. 迷惑；欺騙",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21529,
-        "en": "demise",
-        "kk": "",
-        "zh": "n. 死亡；終止 v轉讓；遺贈",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21530,
-        "en": "demographics",
-        "kk": "",
-        "zh": "n. 人口統計資料",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21531,
-        "en": "departmental",
-        "kk": "",
-        "zh": "a. 部門的；分部的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21532,
-        "en": "dependency",
-        "kk": "",
-        "zh": "n. 依靠；信賴",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21533,
-        "en": "detail",
-        "kk": "",
-        "zh": "n. 細節；詳情 v 詳述；詳細說明",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21534,
-        "en": "detailed",
-        "kk": "",
-        "zh": "a. 詳細的；精細的",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21535,
-        "en": "detect",
-        "kk": "",
-        "zh": "v. 探測；察覺",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21536,
-        "en": "determine",
-        "kk": "",
-        "zh": "v. 決定；下決心",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21537,
-        "en": "develop",
-        "kk": "",
-        "zh": "v. 開發：發展",
-        "unit": 12,
-        "example": "",
-        "exampleZh": ""
-    },
-    {
-        "id": 21538,
         "en": "developer",
         "kk": "",
         "zh": "n. 開發者",
-        "unit": 12,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21539,
+        "id": 20947,
         "en": "development",
         "kk": "",
-        "zh": "n. 進化；發展",
-        "unit": 12,
+        "zh": "n. 進化;發 展",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21540,
+        "id": 20948,
         "en": "device",
         "kk": "",
-        "zh": "n. 設備；機器",
-        "unit": 12,
+        "zh": "n. 設備;機器",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21541,
+        "id": 20949,
         "en": "devise",
         "kk": "",
-        "zh": "n. v 設計；發明",
-        "unit": 12,
+        "zh": "n.v. 設計;發明",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21542,
+        "id": 20950,
         "en": "dial",
         "kk": "",
-        "zh": "v. 撥打；撥",
-        "unit": 12,
+        "zh": "v. 撥打;撥",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21543,
+        "id": 20951,
         "en": "diary",
         "kk": "",
-        "zh": "n. 日記；日誌",
-        "unit": 12,
+        "zh": "n. 日記;日誌",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21544,
+        "id": 20952,
         "en": "dictate",
         "kk": "",
-        "zh": "v. 口授；口述",
-        "unit": 12,
+        "zh": "v. 口授;口述",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21545,
+        "id": 20953,
         "en": "diet",
         "kk": "",
-        "zh": "n. 飲食；食物 v 節食",
-        "unit": 12,
+        "zh": "n. 飲食;食物v. 節食",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21546,
+        "id": 20954,
         "en": "dietician",
         "kk": "",
         "zh": "n. 營養學家",
-        "unit": 12,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21547,
+        "id": 20955,
         "en": "difference",
         "kk": "",
-        "zh": "n. 差別；差異",
-        "unit": 12,
+        "zh": "n. 差別;差異",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21548,
+        "id": 20956,
         "en": "different",
         "kk": "",
-        "zh": "a. 不同的；有差異的957.  difﬁcult a 困難的；艱難的958. difﬁculty n 困難；困境",
-        "unit": 12,
+        "zh": "a. 不同的;有差 異的",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21549,
+        "id": 20957,
+        "en": "difficult",
+        "kk": "",
+        "zh": "a. 困難的;艱難 的",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20958,
+        "en": "difficulty",
+        "kk": "",
+        "zh": "n. 困難;困境",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20959,
         "en": "digital",
         "kk": "",
         "zh": "a. 數位的",
-        "unit": 12,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21550,
+        "id": 20960,
         "en": "dignity",
         "kk": "",
-        "zh": "n. 尊嚴；自尊",
-        "unit": 12,
+        "zh": "n. 尊嚴;自尊",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21551,
+        "id": 20961,
         "en": "diligent",
         "kk": "",
-        "zh": "a. 勤勉的，勤奮的",
-        "unit": 12,
+        "zh": "a. 勤勉的,勤奮 的",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21552,
+        "id": 20962,
         "en": "direct",
         "kk": "",
-        "zh": "v. 指向；針對 a 徑直的；筆直的",
-        "unit": 12,
+        "zh": "v. 指向;針對a. 徑 直的;筆直的",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21553,
+        "id": 20963,
         "en": "directly",
         "kk": "",
-        "zh": "ad. 直接地；筆直地",
-        "unit": 12,
+        "zh": "ad. 直接地;筆直 地",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21554,
+        "id": 20964,
         "en": "director",
         "kk": "",
-        "zh": "n. 導演；主管；署長",
-        "unit": 12,
+        "zh": "n. 導演;主管; 署長",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21555,
+        "id": 20965,
+        "en": "directory",
+        "kk": "",
+        "zh": "n. 工商名錄;號 碼簿a. 指導的;諮詢的",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20966,
         "en": "disagree",
         "kk": "",
-        "zh": "v. 不一致；不符",
-        "unit": 12,
+        "zh": "v. 不一致;不符",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21556,
+        "id": 20967,
         "en": "disappear",
         "kk": "",
-        "zh": "v. 消失；離開",
-        "unit": 12,
+        "zh": "v. 消失;離開",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21557,
+        "id": 20968,
         "en": "discard",
         "kk": "",
-        "zh": "v. 拋棄；摒棄",
-        "unit": 12,
+        "zh": "v. 拋棄;摒棄",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21558,
+        "id": 20969,
         "en": "discern",
         "kk": "",
-        "zh": "v. 分辨；識別",
-        "unit": 12,
+        "zh": "v. 分辨;識別",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21559,
+        "id": 20970,
         "en": "discipline",
         "kk": "",
-        "zh": "n. 紀律；風紀",
-        "unit": 12,
+        "zh": "n. 紀律;風紀",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21560,
+        "id": 20971,
         "en": "disclaimer",
         "kk": "",
-        "zh": "v. 放棄；拒絕",
-        "unit": 12,
+        "zh": "v. 放棄;拒絕",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21561,
+        "id": 20972,
+        "en": "discount",
+        "kk": "",
+        "zh": "n. 折扣v. 打折 扣",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20973,
         "en": "discourage",
         "kk": "",
-        "zh": "v. 使洩氣；使沮喪",
-        "unit": 12,
+        "zh": "v. 使洩氣; 使沮喪",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21562,
+        "id": 20974,
         "en": "discouraged",
         "kk": "",
-        "zh": "a. 灰心的；沮喪的",
-        "unit": 12,
+        "zh": "a. 灰心的; 沮喪的",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21563,
+        "id": 20975,
         "en": "discouragement",
         "kk": "",
-        "zh": "n. 沮喪；氣餒",
-        "unit": 12,
+        "zh": "n. 沮 喪;氣餒",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21564,
+        "id": 20976,
         "en": "discover",
         "kk": "",
-        "zh": "v. 發現；探索",
-        "unit": 12,
+        "zh": "v. 發現;探索",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21565,
+        "id": 20977,
         "en": "discuss",
         "kk": "",
-        "zh": "v. 討論；交流",
-        "unit": 12,
+        "zh": "v. 討論;交流",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21566,
+        "id": 20978,
         "en": "discussion",
         "kk": "",
-        "zh": "n. 討論；交流",
-        "unit": 12,
+        "zh": "n. 討論;交流",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21567,
+        "id": 20979,
         "en": "disease",
         "kk": "",
-        "zh": "n. 病，疾病 v 使生病；使不健全",
-        "unit": 12,
+        "zh": "n. 病,疾病v. 使 生病;使不健全",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21568,
+        "id": 20980,
         "en": "disembark",
         "kk": "",
-        "zh": "v. 登陸；上岸",
-        "unit": 12,
+        "zh": "v. 登陸;上岸",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21569,
+        "id": 20981,
         "en": "dismal",
         "kk": "",
-        "zh": "a. 憂鬱的；沉悶的n 沮喪；抑鬱",
-        "unit": 12,
+        "zh": "a. 憂鬱的;沉悶的n. 沮喪;抑鬱",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21570,
+        "id": 20982,
         "en": "dismiss",
         "kk": "",
-        "zh": "v. 讓⋯離開；把⋯打發走",
-        "unit": 12,
+        "zh": "v. 讓⋯離開;把⋯ 打發走",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21571,
+        "id": 20983,
         "en": "dispense",
         "kk": "",
-        "zh": "v. 分配，分發v 免除；省掉",
-        "unit": 12,
+        "zh": "v. 分配,分發v. 免除;省掉",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21572,
+        "id": 20984,
         "en": "display",
         "kk": "",
-        "zh": "v. 陳列；展出 n展覽；陳列",
-        "unit": 12,
+        "zh": "v. 陳列;展出n. 展覽;陳列",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21573,
+        "id": 20985,
         "en": "disposal",
         "kk": "",
-        "zh": "n. 處理；處置",
-        "unit": 12,
+        "zh": "n. 處理;處置",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21574,
+        "id": 20986,
         "en": "dispose",
         "kk": "",
-        "zh": "n. 配置，布置",
-        "unit": 12,
+        "zh": "n. 配置,布置",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21575,
+        "id": 20987,
         "en": "dispute",
         "kk": "",
-        "zh": "v. 爭論；爭執 n爭論；爭執",
-        "unit": 12,
+        "zh": "v. 爭論;爭執n. 爭論;爭執",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21576,
+        "id": 20988,
         "en": "disrupt",
         "kk": "",
-        "zh": "v. 使分裂；使瓦解a 破裂的；中斷的",
-        "unit": 12,
+        "zh": "v. 使分裂;使瓦解a. 破裂的;中斷的",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21577,
+        "id": 20989,
         "en": "dissipate",
         "kk": "",
-        "zh": "v. 使消散；消除",
-        "unit": 12,
+        "zh": "v. 使消散;消 除",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21578,
+        "id": 20990,
         "en": "distinctive",
         "kk": "",
-        "zh": "a. 有特色的；特殊的",
-        "unit": 12,
+        "zh": "a. 有特色的; 特殊的",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21579,
+        "id": 20991,
         "en": "distinguish",
         "kk": "",
-        "zh": "v. 區別；識別",
-        "unit": 12,
+        "zh": "v. 區別;識別",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21580,
+        "id": 20992,
         "en": "distract",
         "kk": "",
-        "zh": "v. 轉移；分散",
-        "unit": 12,
+        "zh": "v. 轉移;分散",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21581,
+        "id": 20993,
         "en": "distributor",
         "kk": "",
-        "zh": "n. 分配者；批發商",
-        "unit": 12,
+        "zh": "n. 分配者;批 發商",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21582,
+        "id": 20994,
         "en": "disturb",
         "kk": "",
         "zh": "v. 打擾",
-        "unit": 12,
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21583,
+        "id": 20995,
         "en": "diverse",
         "kk": "",
-        "zh": "a. 不同的；多元的996. diversiﬁcation n 多樣化",
-        "unit": 12,
+        "zh": "a. 不同的;多元 的",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21584,
+        "id": 20996,
+        "en": "diversification",
+        "kk": "",
+        "zh": "n. 多樣化",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 20997,
         "en": "diversity",
         "kk": "",
-        "zh": "n. 差異；不同點",
-        "unit": 12,
+        "zh": "n. 差異;不同點",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21585,
+        "id": 20998,
         "en": "divert",
         "kk": "",
-        "zh": "v. 轉向；轉移",
-        "unit": 12,
+        "zh": "v. 轉向;轉移",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21586,
+        "id": 20999,
         "en": "divide",
         "kk": "",
-        "zh": "v. 分；劃分 n 分歧；不和",
-        "unit": 12,
+        "zh": "v. 分;劃分n. 分歧; 不和",
+        "unit": 11,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21587,
+        "id": 21000,
+        "en": "division",
+        "kk": "",
+        "zh": "n. 分開;分割",
+        "unit": 11,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21001,
         "en": "doctor",
         "kk": "",
         "zh": "n. 醫生",
@@ -13650,70 +9009,88 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21588,
+        "id": 21002,
+        "en": "document",
+        "kk": "",
+        "zh": "n. 公文;文件",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21003,
         "en": "documentation",
         "kk": "",
-        "zh": "n. 文件；憑證",
+        "zh": "n. 文件; 憑證",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21589,
+        "id": 21004,
+        "en": "domestic",
+        "kk": "",
+        "zh": "a. 家庭的;國 內的",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21005,
         "en": "dominate",
         "kk": "",
-        "zh": "v. 支配；統治",
+        "zh": "v. 支配;統治",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21590,
+        "id": 21006,
         "en": "donate",
         "kk": "",
-        "zh": "v. 捐獻；捐款",
+        "zh": "v. 捐獻;捐款",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21591,
+        "id": 21007,
         "en": "donation",
         "kk": "",
-        "zh": "n. 捐獻；捐款",
+        "zh": "n. 捐獻;捐款",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21592,
+        "id": 21008,
         "en": "dot",
         "kk": "",
-        "zh": "n. 點，小圓點 v 打點；加點",
+        "zh": "n. 點,小圓點v. 打 點;加點",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21593,
+        "id": 21009,
         "en": "dotted",
         "kk": "",
-        "zh": "a. 有點子的；星羅棋布的",
+        "zh": "a. 有點子的;星 羅棋布的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21594,
+        "id": 21010,
         "en": "doubt",
         "kk": "",
-        "zh": "v. 懷疑；揣測",
+        "zh": "v. 懷疑;揣測",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21595,
+        "id": 21011,
         "en": "download",
         "kk": "",
         "zh": "v. 下載",
@@ -13722,7 +9099,16 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21596,
+        "id": 21012,
+        "en": "downsize",
+        "kk": "",
+        "zh": "v. 裁減",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21013,
         "en": "downsizing",
         "kk": "",
         "zh": "n. 縮減開支",
@@ -13731,70 +9117,70 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21597,
+        "id": 21014,
         "en": "downtown",
         "kk": "",
-        "zh": "n. 商業區，鬧區",
+        "zh": "n. 商業區, 鬧區",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21598,
+        "id": 21015,
         "en": "downward",
         "kk": "",
-        "zh": "a. 向下的；下降的 ad 向下；日趨沒落地",
+        "zh": "a. 向下的; 下降的ad. 向下;日趨沒 落地",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21599,
+        "id": 21016,
         "en": "draft",
         "kk": "",
-        "zh": "n. 草稿；手稿",
+        "zh": "n. 草稿;手稿",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21600,
+        "id": 21017,
         "en": "drama",
         "kk": "",
-        "zh": "n. 戲劇；劇本",
+        "zh": "n. 戲劇;劇本",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21601,
+        "id": 21018,
         "en": "drastic",
         "kk": "",
-        "zh": "a. 激烈的；猛烈的",
+        "zh": "a. 激烈的;猛烈 的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21602,
+        "id": 21019,
         "en": "drastically",
         "kk": "",
-        "zh": "ad. 大大地；徹底地",
+        "zh": "ad. 大大地; 徹底地",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21603,
+        "id": 21020,
         "en": "draw",
         "kk": "",
-        "zh": "v. 繪製；描寫；拉n 平局；抽籤",
+        "zh": "v. 繪製;描寫;拉n. 平局;抽籤",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21604,
+        "id": 21021,
         "en": "drawer",
         "kk": "",
         "zh": "n. 抽屜",
@@ -13803,214 +9189,223 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21605,
-        "en": "dress",
+        "id": 21022,
+        "en": "dress code",
         "kk": "",
-        "zh": "code. n 穿衣法則；著裝標準",
+        "zh": "n. 穿衣法則; 著裝標準",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21606,
+        "id": 21023,
         "en": "drift",
         "kk": "",
-        "zh": "v. 漂流；漂",
+        "zh": "v. 漂流;漂",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21607,
+        "id": 21024,
         "en": "drive",
         "kk": "",
-        "zh": "v. 駕駛；開車",
+        "zh": "v. 駕駛;開車",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21608,
+        "id": 21025,
         "en": "drug",
         "kk": "",
-        "zh": "n. 藥物；藥",
+        "zh": "n. 藥物;藥",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21609,
+        "id": 21026,
         "en": "due",
         "kk": "",
-        "zh": "a. 應支付的；到期的n 應付款；稅金",
+        "zh": "a. 應支付的;到期的n. 應付款;稅金",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21610,
+        "id": 21027,
         "en": "duplicate",
         "kk": "",
-        "zh": "n. 複製品；副本 a 完全一樣的；複製的",
+        "zh": "n. 複製品;副 本a. 完全一樣的;複製 的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21611,
+        "id": 21028,
+        "en": "durable",
+        "kk": "",
+        "zh": "a. 經久的,耐用 的;持久的",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21029,
         "en": "duration",
         "kk": "",
-        "zh": "n. 持久；持續期間",
+        "zh": "n. 持久;持續 期間",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21612,
+        "id": 21030,
         "en": "during",
         "kk": "",
-        "zh": "prep. 在⋯的整個期間",
+        "zh": "prep. 在⋯的整個 期間",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21613,
+        "id": 21031,
         "en": "duty",
         "kk": "",
-        "zh": "n. 職務；勤務",
+        "zh": "n. 職務;勤務",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21614,
+        "id": 21032,
         "en": "dynamic",
         "kk": "",
-        "zh": "a. 動力的；充滿活力的E",
+        "zh": "a. 動力的;充 滿活力的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21615,
+        "id": 21033,
         "en": "each",
-        "kk": "",
-        "zh": "pron. 各個；每個 a各；每",
+        "kk": "/iːtʃ/",
+        "zh": "pron. 各個;每個a. 各;每",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21616,
+        "id": 21034,
         "en": "eager",
-        "kk": "",
-        "zh": "a. 熱心的；熱切的",
+        "kk": "/ˈiːɡər/",
+        "zh": "a. 熱心的;熱切的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21617,
+        "id": 21035,
         "en": "earn",
-        "kk": "",
-        "zh": "v. 掙得；博得",
+        "kk": "/ɜːrn/",
+        "zh": "v. 掙得;博得",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21618,
+        "id": 21036,
         "en": "earnings",
         "kk": "",
-        "zh": "n. 收入；薪資",
+        "zh": "n. 收入;薪資",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21619,
+        "id": 21037,
         "en": "ease",
-        "kk": "",
-        "zh": "v. 減輕，緩和 n 舒適；悠閒",
+        "kk": "/iːz/",
+        "zh": "v. 減輕,緩和n. 舒 適;悠閒",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21620,
+        "id": 21038,
         "en": "east",
-        "kk": "",
-        "zh": "n. 東方；東",
+        "kk": "/iːst/",
+        "zh": "n. 東方;東",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21621,
+        "id": 21039,
         "en": "easy",
-        "kk": "",
-        "zh": "a. 簡單的；輕易的",
+        "kk": "/ˈiːzi/",
+        "zh": "a. 簡單的;輕易的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21622,
+        "id": 21040,
         "en": "eco-friendly",
         "kk": "",
-        "zh": "a. 對環境友善的",
+        "zh": "a. 對環境友 善的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21623,
+        "id": 21041,
         "en": "economical",
         "kk": "",
-        "zh": "a. 經濟的；節儉的",
+        "zh": "a. 經濟的; 節儉的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21624,
+        "id": 21042,
         "en": "economize",
         "kk": "",
-        "zh": "v. 節約；節省",
+        "zh": "v. 節約;節 省",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21625,
+        "id": 21043,
         "en": "economy",
-        "kk": "",
-        "zh": "n. 節約；經濟a 廉價的；經濟的",
+        "kk": "/ɪˈkɑːnəmi/",
+        "zh": "n. 節約;經濟a. 廉價的;經濟的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21626,
+        "id": 21044,
         "en": "edge",
-        "kk": "",
-        "zh": "n. 稜；邊緣 v 使漸進；徐徐地移動",
+        "kk": "/edʒ/",
+        "zh": "n. 稜;邊緣v. 使漸 進;徐徐地移動",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21627,
+        "id": 21045,
         "en": "edit",
         "kk": "",
-        "zh": "v. 編輯；校訂",
+        "zh": "v. 編輯;校訂",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21628,
+        "id": 21046,
         "en": "editor",
         "kk": "",
         "zh": "n. 編輯",
@@ -14019,79 +9414,97 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21629,
+        "id": 21047,
         "en": "editorial",
         "kk": "",
-        "zh": "n. 社論 a 編輯的",
+        "zh": "n. 社論a. 編輯 的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21630,
+        "id": 21048,
         "en": "education",
-        "kk": "",
+        "kk": "/ˌedʒuˈkeɪʃn/",
         "zh": "n. 教育",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21631,
+        "id": 21049,
         "en": "effect",
-        "kk": "",
-        "zh": "v. 造成；產生 n 效果；效力",
+        "kk": "/ɪˈfekt/",
+        "zh": "v. 造成;產生n. 效 果;效力",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21632,
+        "id": 21050,
         "en": "effective",
-        "kk": "",
-        "zh": "a. 有效的；生效的1051.  efﬁciencyn n 效率；效能；功效1052.  efﬁcient a 效率高的；有能力的",
+        "kk": "/ɪˈfektɪv/",
+        "zh": "a. 有效的;生 效的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21633,
+        "id": 21051,
+        "en": "efficiencyn",
+        "kk": "",
+        "zh": "n. 效率;效 能;功效",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21052,
+        "en": "efficient",
+        "kk": "",
+        "zh": "a. 效率高的;有 能力的",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21053,
         "en": "effort",
-        "kk": "",
-        "zh": "n. 努力；盡力",
+        "kk": "/ˈefərt/",
+        "zh": "n. 努力;盡力",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21634,
+        "id": 21054,
         "en": "either",
-        "kk": "",
-        "zh": "a. 任一的 pron（兩者之中）任何一個",
+        "kk": "/ˈiːðər/",
+        "zh": "a. 任一的pron. (兩者之中)任何一個",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21635,
+        "id": 21055,
         "en": "eject",
         "kk": "",
-        "zh": "v. 逐出；轟出",
+        "zh": "v. 逐出;轟出",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21636,
+        "id": 21056,
         "en": "elaborate",
         "kk": "",
-        "zh": "v. 精心製作；詳盡闡述",
+        "zh": "v. 精心製作; 詳盡闡述",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21637,
+        "id": 21057,
         "en": "elder",
         "kk": "",
         "zh": "a. 年長的",
@@ -14100,61 +9513,61 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21638,
+        "id": 21058,
         "en": "elect",
         "kk": "",
-        "zh": "v. 選舉；推選",
+        "zh": "v. 選舉;推選",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21639,
+        "id": 21059,
         "en": "election",
-        "kk": "",
-        "zh": "n. 選舉；推選",
+        "kk": "/ɪˈlekʃn/",
+        "zh": "n. 選舉;推選",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21640,
+        "id": 21060,
         "en": "electric",
-        "kk": "",
-        "zh": "a. 電的；導電的",
+        "kk": "/ɪˈlektrɪk/",
+        "zh": "a. 電的;導電的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21641,
+        "id": 21061,
         "en": "electrician",
         "kk": "",
-        "zh": "n. 電工；電氣技師",
+        "zh": "n. 電工;電氣 技師",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21642,
+        "id": 21062,
         "en": "electricity",
-        "kk": "",
+        "kk": "/ɪˌlekˈtrɪsəti/",
         "zh": "n. 電力",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21643,
+        "id": 21063,
         "en": "electronic",
-        "kk": "",
-        "zh": "a. 電子的；電子操縱的",
+        "kk": "/ɪˌlekˈtrɑːnɪk/",
+        "zh": "a. 電子的;電 子操縱的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21644,
+        "id": 21064,
         "en": "elegance",
         "kk": "",
         "zh": "n. 優雅",
@@ -14163,7 +9576,7 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21645,
+        "id": 21065,
         "en": "elegant",
         "kk": "",
         "zh": "a. 優雅的",
@@ -14172,160 +9585,169 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21646,
+        "id": 21066,
         "en": "element",
-        "kk": "",
-        "zh": "n. 元素；構成",
+        "kk": "/ˈeləmənt/",
+        "zh": "n. 元素;構成",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21647,
+        "id": 21067,
         "en": "elemental",
         "kk": "",
-        "zh": "a. 基本的；原始的",
+        "zh": "a. 基本的;原 始的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21648,
+        "id": 21068,
         "en": "elementary",
         "kk": "",
-        "zh": "a. 基本的；初級的",
+        "zh": "a. 基本的; 初級的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21649,
+        "id": 21069,
         "en": "elevate",
         "kk": "",
-        "zh": "v. 舉起；抬起",
+        "zh": "v. 舉起;抬起",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21650,
+        "id": 21070,
         "en": "elevation",
         "kk": "",
-        "zh": "n. 提高；提升",
+        "zh": "n. 提高;提升",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21651,
+        "id": 21071,
         "en": "elevator",
-        "kk": "",
+        "kk": "/ˈeləveɪtər/",
         "zh": "n. 電梯",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21652,
+        "id": 21072,
+        "en": "eligible",
+        "kk": "",
+        "zh": "a. 有資格當選 的;法律上合格的",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21073,
         "en": "eliminate",
         "kk": "",
-        "zh": "v. 排除；消滅",
+        "zh": "v. 排除;消滅",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21653,
+        "id": 21074,
         "en": "elimination",
         "kk": "",
-        "zh": "n. 排除；消滅",
+        "zh": "n. 排除;消 滅",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21654,
+        "id": 21075,
         "en": "elite",
         "kk": "",
-        "zh": "n. 精華；菁英",
+        "zh": "n. 精華;菁英",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21655,
+        "id": 21076,
         "en": "else",
-        "kk": "",
-        "zh": "ad. 其他；另外",
+        "kk": "/els/",
+        "zh": "ad. 其他;另外",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21656,
+        "id": 21077,
         "en": "elsewhere",
         "kk": "",
-        "zh": "ad. 在別處；往別處",
+        "zh": "ad. 在別處; 往別處",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21657,
+        "id": 21078,
         "en": "embark",
         "kk": "",
-        "zh": "v. 從事；著手",
+        "zh": "v. 從事;著手",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21658,
+        "id": 21079,
         "en": "embrace",
         "kk": "",
-        "zh": "v. 擁抱；包括",
+        "zh": "v. 擁抱;包括",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21659,
+        "id": 21080,
         "en": "emerge",
         "kk": "",
-        "zh": "v. 浮現；出現",
+        "zh": "v. 浮現;出現",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21660,
+        "id": 21081,
         "en": "emergency",
-        "kk": "",
-        "zh": "n. 緊急情況；突然事件",
+        "kk": "/ɪˈmɜːrdʒənsi/",
+        "zh": "n. 緊急情 況;突然事件",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21661,
+        "id": 21082,
         "en": "emit",
         "kk": "",
-        "zh": "v. 散發；放射",
+        "zh": "v. 散發;放射",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21662,
+        "id": 21083,
         "en": "emotion",
-        "kk": "",
-        "zh": "n. 情感；情緒",
+        "kk": "/ɪˈmoʊʃn/",
+        "zh": "n. 情感;情緒",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21663,
+        "id": 21084,
         "en": "empathy",
         "kk": "",
         "zh": "n. 同感",
@@ -14334,34 +9756,43 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21664,
+        "id": 21085,
         "en": "emphasis",
         "kk": "",
-        "zh": "v. 強調；重視",
+        "zh": "v. 強調;重視",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21665,
+        "id": 21086,
         "en": "emphasize",
         "kk": "",
-        "zh": "v. 強調；重視",
+        "zh": "v. 強調;重 視",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21666,
+        "id": 21087,
         "en": "employ",
-        "kk": "",
-        "zh": "v. 僱用；使用",
+        "kk": "/ɪmˈplɔɪ/",
+        "zh": "v. 僱用;使用",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21667,
+        "id": 21088,
+        "en": "employee",
+        "kk": "/ɪmˈplɔɪiː/",
+        "zh": "n. 員工",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21089,
         "en": "employer",
         "kk": "",
         "zh": "n. 雇主",
@@ -14370,259 +9801,286 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21668,
+        "id": 21090,
         "en": "employment",
-        "kk": "",
-        "zh": "n. 僱用；受僱",
+        "kk": "/ɪmˈplɔɪmənt/",
+        "zh": "n. 僱用; 受僱",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21669,
+        "id": 21091,
         "en": "emulate",
         "kk": "",
-        "zh": "v. 同⋯競爭；盡力趕上",
+        "zh": "v. 同⋯競爭;盡 力趕上",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21670,
+        "id": 21092,
         "en": "enable",
-        "kk": "",
-        "zh": "v. 使能夠；賦予⋯能力",
+        "kk": "/ɪˈneɪbl/",
+        "zh": "v. 使能夠;賦予⋯ 能力",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21671,
+        "id": 21093,
+        "en": "enclose",
+        "kk": "",
+        "zh": "v. 圍住;圈起",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21094,
         "en": "enclosure",
         "kk": "",
-        "zh": "n. 圍住；封入",
+        "zh": "n. 圍住;封入",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21672,
+        "id": 21095,
         "en": "encounter",
         "kk": "",
-        "zh": "n. 遭遇；衝突v 遭遇；遇到",
+        "zh": "n. 遭遇;衝突v. 遭遇;遇到",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21673,
+        "id": 21096,
         "en": "encourage",
-        "kk": "",
-        "zh": "v. 鼓勵；鼓舞",
+        "kk": "/ɪnˈkɜːrɪdʒ/",
+        "zh": "v. 鼓勵;鼓 舞",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21674,
+        "id": 21097,
         "en": "encouragement",
         "kk": "",
-        "zh": "n. 鼓勵；鼓舞",
+        "zh": "n. 鼓 勵;鼓舞",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21675,
+        "id": 21098,
         "en": "endanger",
         "kk": "",
-        "zh": "v. 危及；使遭到危險",
+        "zh": "v. 危及;使遭 到危險",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21676,
+        "id": 21099,
         "en": "endeavor",
         "kk": "",
-        "zh": "v. 努力；力圖n 努力；盡力",
+        "zh": "v. 努力;力圖n. 努力;盡力",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21677,
+        "id": 21100,
         "en": "endorsement",
         "kk": "",
-        "zh": "n. 背書；贊同",
+        "zh": "n. 背書; 贊同",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21678,
+        "id": 21101,
         "en": "endure",
         "kk": "",
-        "zh": "v. 忍耐；忍受",
+        "zh": "v. 忍耐;忍受",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21679,
+        "id": 21102,
         "en": "energetic",
         "kk": "",
-        "zh": "a. 精力旺盛的；- 精神飽滿的",
+        "zh": "a. 精力旺盛 的;- 精神飽滿的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21680,
+        "id": 21103,
         "en": "energy",
-        "kk": "",
-        "zh": "n. 活力；幹勁",
+        "kk": "/ˈenərdʒi/",
+        "zh": "n. 活力;幹勁",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21681,
+        "id": 21104,
         "en": "enforce",
         "kk": "",
-        "zh": "v. 實施；執行",
+        "zh": "v. 實施;執行",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21682,
+        "id": 21105,
         "en": "engage",
         "kk": "",
-        "zh": "v. 吸引；佔用",
+        "zh": "v. 吸引;佔用",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21683,
+        "id": 21106,
         "en": "engagement",
         "kk": "",
-        "zh": "n. 訂婚；婚約",
+        "zh": "n. 訂婚; 婚約",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21684,
+        "id": 21107,
         "en": "engine",
-        "kk": "",
+        "kk": "/ˈendʒɪn/",
         "zh": "n. 引擎",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21685,
+        "id": 21108,
         "en": "engineer",
-        "kk": "",
+        "kk": "/ˌendʒɪˈnɪr/",
         "zh": "n. 工程師",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21686,
+        "id": 21109,
         "en": "enhance",
         "kk": "",
-        "zh": "v. 提高；升高",
+        "zh": "v. 提高;升高",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21687,
+        "id": 21110,
         "en": "enlarge",
         "kk": "",
-        "zh": "v. 擴大；擴展",
+        "zh": "v. 擴大;擴展",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21688,
+        "id": 21111,
         "en": "enlargement",
         "kk": "",
-        "zh": "n. 擴大；擴展",
+        "zh": "n. 擴大; 擴展",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21689,
+        "id": 21112,
         "en": "enlist",
         "kk": "",
-        "zh": "v. 從軍；入伍",
+        "zh": "v. 從軍;入伍",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21690,
+        "id": 21113,
         "en": "enrich",
         "kk": "",
-        "zh": "v. 使富裕；使豐富",
+        "zh": "v. 使富裕;使豐 富",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21691,
+        "id": 21114,
         "en": "enrichment",
         "kk": "",
-        "zh": "n. 致富；豐富",
+        "zh": "n. 致富;豐 富",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21692,
+        "id": 21115,
+        "en": "enroll",
+        "kk": "",
+        "zh": "v. 記入名冊;被登 記",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21116,
+        "en": "ensure",
+        "kk": "",
+        "zh": "v. 保證;擔保",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21117,
         "en": "enterprise",
         "kk": "",
-        "zh": "n. 企業；公司",
+        "zh": "n. 企業;公司",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21693,
+        "id": 21118,
         "en": "entertain",
         "kk": "",
-        "zh": "v. 娛樂；款待",
+        "zh": "v. 娛樂;款待",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21694,
+        "id": 21119,
         "en": "entertainer",
         "kk": "",
-        "zh": "n. 請客者；表演者",
+        "zh": "n. 請客者; 表演者",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21695,
+        "id": 21120,
         "en": "entertainment",
         "kk": "",
-        "zh": "n. 演藝；餘興",
+        "zh": "n. 演藝; 餘興",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21696,
+        "id": 21121,
         "en": "enthusiasm",
         "kk": "",
         "zh": "n. 熱忱",
@@ -14631,88 +10089,88 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21697,
+        "id": 21122,
         "en": "enthusiastic",
         "kk": "",
-        "zh": "a. 熱忱的；熱血的",
+        "zh": "a. 熱忱的; 熱血的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21698,
+        "id": 21123,
         "en": "entire",
-        "kk": "",
-        "zh": "a. 全部的；整個的n 全部；整體",
+        "kk": "/ɪnˈtaɪər/",
+        "zh": "a. 全部的;整個的n. 全部;整體",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21699,
+        "id": 21124,
         "en": "entirel",
         "kk": "",
-        "zh": "ad. 全部地；整個地",
+        "zh": "ad. 全部地;整個 地",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21700,
+        "id": 21125,
         "en": "entitle",
         "kk": "",
-        "zh": "v. 給⋯權力（或資格）",
+        "zh": "v. 給⋯權力(或資 格)",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21701,
+        "id": 21126,
         "en": "entitled",
         "kk": "",
-        "zh": "a. 給予權利；使有資格",
+        "zh": "a. 給予權利;使 有資格",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21702,
+        "id": 21127,
         "en": "entrance",
         "kk": "",
-        "zh": "n. 入口；門口",
+        "zh": "n. 入口;門口",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21703,
+        "id": 21128,
         "en": "entrust",
         "kk": "",
-        "zh": "v. 信託；委託",
+        "zh": "v. 信託;委託",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21704,
+        "id": 21129,
         "en": "entry",
         "kk": "",
-        "zh": "n. 入場；參加",
+        "zh": "n. 入場;參加",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21705,
+        "id": 21130,
         "en": "environment",
-        "kk": "",
+        "kk": "/ɪnˈvaɪrənmənt/",
         "zh": "n. 環境",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21706,
+        "id": 21131,
         "en": "environmental",
         "kk": "",
         "zh": "n. 環境的",
@@ -14721,646 +10179,727 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21707,
+        "id": 21132,
         "en": "envision",
         "kk": "",
-        "zh": "v. 想像；展望",
+        "zh": "v. 想像;展望",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21708,
+        "id": 21133,
         "en": "equal",
-        "kk": "",
-        "zh": "v. 平等的；均等的",
+        "kk": "/ˈiːkwəl/",
+        "zh": "v. 平等的;均等的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21709,
+        "id": 21134,
         "en": "equality",
         "kk": "",
-        "zh": "n. 平等；相等",
+        "zh": "n. 平等;相等",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21710,
+        "id": 21135,
         "en": "equip",
         "kk": "",
-        "zh": "v. 裝備；配備",
+        "zh": "v. 裝備;配備",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21711,
+        "id": 21136,
+        "en": "equipment",
+        "kk": "/ɪˈkwɪpmənt/",
+        "zh": "n. 裝備;配 備",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21137,
         "en": "equity",
         "kk": "",
-        "zh": "n. 公平；公正",
+        "zh": "n. 公平;公正",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21712,
+        "id": 21138,
         "en": "equivalent",
         "kk": "",
-        "zh": "a. 相等的；相同的",
+        "zh": "a. 相等的; 相同的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21713,
+        "id": 21139,
         "en": "error",
-        "kk": "",
-        "zh": "n. 錯誤；失誤",
+        "kk": "/ˈerər/",
+        "zh": "n. 錯誤;失誤",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21714,
+        "id": 21140,
         "en": "escort",
         "kk": "",
-        "zh": "v. 護送；陪同 n護衛隊；護航隊",
+        "zh": "v. 護送;陪同n. 護衛隊;護航隊",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21715,
+        "id": 21141,
         "en": "especially",
-        "kk": "",
-        "zh": "ad. 特別；尤其",
+        "kk": "/ɪˈspeʃəli/",
+        "zh": "ad. 特別;尤 其",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21716,
+        "id": 21142,
         "en": "essay",
-        "kk": "",
-        "zh": "n. 論文；散文",
+        "kk": "/ˈeseɪ/",
+        "zh": "n. 論文;散文",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21717,
+        "id": 21143,
         "en": "essence",
         "kk": "",
-        "zh": "n. 本質；實質",
+        "zh": "n. 本質;實質",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21718,
+        "id": 21144,
         "en": "essential",
-        "kk": "",
-        "zh": "a. 必要的；不可缺的",
+        "kk": "/ɪˈsenʃl/",
+        "zh": "a. 必要的;不 可缺的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21719,
+        "id": 21145,
         "en": "establish",
-        "kk": "",
-        "zh": "v. 建立；設立",
+        "kk": "/ɪˈstæblɪʃ/",
+        "zh": "v. 建立;設立",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21720,
+        "id": 21146,
         "en": "establishment",
         "kk": "",
-        "zh": "n. 建立；設立",
+        "zh": "n. 建立; 設立",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21721,
+        "id": 21147,
         "en": "estate",
         "kk": "",
-        "zh": "n. 財產；資產",
+        "zh": "n. 財產;資產",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21722,
+        "id": 21148,
         "en": "esteem",
         "kk": "",
-        "zh": "n. 尊重；尊敬 v尊重；尊敬",
+        "zh": "n. 尊重;尊敬v. 尊重;尊敬",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21723,
+        "id": 21149,
+        "en": "estimate",
+        "kk": "/ˈestɪmət/",
+        "zh": "v. 估算;估量",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21150,
         "en": "eternal",
         "kk": "",
-        "zh": "a. 永恆的；永久的",
+        "zh": "a. 永恆的;永久 的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21724,
+        "id": 21151,
         "en": "ethic",
         "kk": "",
-        "zh": "n. 倫理；道德",
+        "zh": "n. 倫理;道德",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21725,
+        "id": 21152,
         "en": "ethical",
         "kk": "",
-        "zh": "a. 倫理的；道德的",
+        "zh": "a. 倫理的;道德 的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21726,
+        "id": 21153,
         "en": "ethics",
         "kk": "",
-        "zh": "n. 倫理學；道德學",
+        "zh": "n. 倫理學;道德學",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21727,
+        "id": 21154,
         "en": "evade",
         "kk": "",
-        "zh": "v. 躲避；逃避",
+        "zh": "v. 躲避;逃避",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21728,
+        "id": 21155,
+        "en": "evaluate",
+        "kk": "",
+        "zh": "v. 估價;評價",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21156,
         "en": "evaluation",
         "kk": "",
-        "zh": "n. 估價；評價",
+        "zh": "n. 估價;評 價",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21729,
+        "id": 21157,
         "en": "evasive",
         "kk": "",
-        "zh": "a. 逃避的；託辭的",
+        "zh": "a. 逃避的;託辭 的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21730,
+        "id": 21158,
         "en": "even",
-        "kk": "",
-        "zh": "a. 平的；平坦的ad 甚至；連 v 使平坦",
+        "kk": "/ˈiːvən/",
+        "zh": "a. 平的;平坦的ad. 甚至;連v. 使平坦",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21731,
+        "id": 21159,
         "en": "event",
-        "kk": "",
-        "zh": "n. 事件；大事",
+        "kk": "/ɪˈvent/",
+        "zh": "n. 事件;大事",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21732,
+        "id": 21160,
         "en": "eventual",
         "kk": "",
-        "zh": "a. 最終的；最後的",
+        "zh": "a. 最終的;最 後的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21733,
+        "id": 21161,
         "en": "evidence",
-        "kk": "",
-        "zh": "n. 證據；證詞",
+        "kk": "/ˈevɪdəns/",
+        "zh": "n. 證據;證詞",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21734,
+        "id": 21162,
         "en": "evident",
         "kk": "",
-        "zh": "a. 明顯的；明白的",
+        "zh": "a. 明顯的;明白 的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21735,
+        "id": 21163,
         "en": "evoke",
         "kk": "",
-        "zh": "v. 喚起；引起",
+        "zh": "v. 喚起;引起",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21736,
+        "id": 21164,
         "en": "evolve",
         "kk": "",
-        "zh": "v. 逐步形成；發展",
+        "zh": "v. 逐步形成;發 展",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21737,
+        "id": 21165,
         "en": "exact",
-        "kk": "",
-        "zh": "a. 正確的；精準的",
+        "kk": "/ɪɡˈzækt/",
+        "zh": "a. 正確的;精準的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21738,
+        "id": 21166,
         "en": "exaggerate",
         "kk": "",
-        "zh": "v. 誇大；誇張",
+        "zh": "v. 誇大;誇 張",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21739,
+        "id": 21167,
         "en": "exaggeration",
         "kk": "",
-        "zh": "n. 誇大：誇張",
+        "zh": "n. 誇大: 誇張",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21740,
+        "id": 21168,
         "en": "exam",
         "kk": "",
-        "zh": "n. 考試；測驗",
+        "zh": "n. 考試;測驗",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21741,
+        "id": 21169,
         "en": "examination",
         "kk": "",
-        "zh": "n. 考試；測驗",
+        "zh": "n. 考試;測 驗",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21742,
+        "id": 21170,
         "en": "examine",
-        "kk": "",
-        "zh": "v. 檢驗；測試",
+        "kk": "/ɪɡˈzæmɪn/",
+        "zh": "v. 檢驗;測試",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21743,
+        "id": 21171,
         "en": "examiner",
         "kk": "",
-        "zh": "n. 主考人；檢查人",
+        "zh": "n. 主考人;檢 查人",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21744,
+        "id": 21172,
         "en": "example",
-        "kk": "",
-        "zh": "n. 範例；示範",
+        "kk": "/ɪɡˈzæmpl/",
+        "zh": "n. 範例;示範",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21745,
+        "id": 21173,
+        "en": "exceed",
+        "kk": "",
+        "zh": "v. 超過;勝過",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21174,
         "en": "excel",
         "kk": "",
-        "zh": "v. 勝過；優於",
+        "zh": "v. 勝過;優於",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21746,
+        "id": 21175,
         "en": "excellent",
-        "kk": "",
-        "zh": "a. 出色的；傑出的",
+        "kk": "/ˈeksələnt/",
+        "zh": "a. 出色的;傑 出的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21747,
+        "id": 21176,
         "en": "except",
-        "kk": "",
-        "zh": "prep. 除⋯⋯之外conj 除了 v 把⋯⋯除外",
+        "kk": "/ɪkˈsept/",
+        "zh": "prep. 除⋯⋯之外conj. 除了v. 把⋯⋯除外",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21748,
+        "id": 21177,
         "en": "exception",
         "kk": "",
-        "zh": "n. 例外；例外的人",
+        "zh": "n. 例外;例外 的人",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21749,
+        "id": 21178,
         "en": "excess",
         "kk": "",
-        "zh": "n. 超越，超過 a過量的；額外的",
+        "zh": "n. 超越,超過a. 過量的;額外的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21750,
+        "id": 21179,
         "en": "exchange",
-        "kk": "",
-        "zh": "v. 交換；調換n 交換；調換",
+        "kk": "/ɪksˈtʃeɪndʒ/",
+        "zh": "v. 交換;調換n. 交換;調換",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21751,
+        "id": 21180,
         "en": "excite",
         "kk": "",
-        "zh": "v. 刺激；使興奮",
+        "zh": "v. 刺激;使興奮",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21752,
+        "id": 21181,
         "en": "exclude",
         "kk": "",
-        "zh": "v. 排除在外；不包括",
+        "zh": "v. 排除在外;不 包括",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21753,
+        "id": 21182,
         "en": "exclusion",
         "kk": "",
-        "zh": "n. 排斥；排除在外",
+        "zh": "n. 排斥;排除 在外",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21754,
+        "id": 21183,
         "en": "exclusive",
         "kk": "",
-        "zh": "a. 排外的；除外的",
+        "zh": "a. 排外的;除 外的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21755,
+        "id": 21184,
         "en": "exclusively",
         "kk": "",
-        "zh": "ad. 專門地；專有地",
+        "zh": "ad. 專門地; 專有地",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21756,
+        "id": 21185,
         "en": "execute",
         "kk": "",
-        "zh": "v. 實施；處死",
+        "zh": "v. 實施;處死",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21757,
+        "id": 21186,
         "en": "executive",
         "kk": "",
-        "zh": "a. 執行的；實施的 n 執行者；行政官",
+        "zh": "a. 執行的;實 施的n. 執行者;行政官",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21758,
+        "id": 21187,
         "en": "exert",
         "kk": "",
-        "zh": "v. 運用；行使",
+        "zh": "v. 運用;行使",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21759,
+        "id": 21188,
         "en": "exhibit",
         "kk": "",
-        "zh": "v. 展示，陳列 n展示品；陳列品",
+        "zh": "v. 展示,陳列n. 展示品;陳列品",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21760,
-        "en": "exist",
+        "id": 21189,
+        "en": "exhibition",
         "kk": "",
-        "zh": "v. 存在；生存",
+        "zh": "n. 展覽;展示",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21761,
+        "id": 21190,
+        "en": "exist",
+        "kk": "/ɪɡˈzɪst/",
+        "zh": "v. 存在;生存",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21191,
         "en": "existence",
         "kk": "",
-        "zh": "n. 存在；實在",
+        "zh": "n. 存在;實在",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21762,
+        "id": 21192,
         "en": "exit",
-        "kk": "",
-        "zh": "v. 出口；通道 v 出去；離去",
+        "kk": "/ˈeɡzɪt/",
+        "zh": "v. 出口;通道v. 出 去;離去",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21763,
+        "id": 21193,
+        "en": "expand",
+        "kk": "/ɪkˈspænd/",
+        "zh": "v. 展開;張開",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21194,
         "en": "expansion",
         "kk": "",
-        "zh": "n. 擴展；擴張",
+        "zh": "n. 擴展;擴 張",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21764,
+        "id": 21195,
         "en": "expect",
-        "kk": "",
-        "zh": "v. 期待；預期",
+        "kk": "/ɪkˈspekt/",
+        "zh": "v. 期待;預期",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21765,
+        "id": 21196,
         "en": "expectation",
         "kk": "",
-        "zh": "n. 期待；預期",
+        "zh": "n. 期待;預 期",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21766,
+        "id": 21197,
         "en": "expedite",
         "kk": "",
-        "zh": "v. 迅速執行；促進",
+        "zh": "v. 迅速執行; 促進",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21767,
+        "id": 21198,
         "en": "expel",
         "kk": "",
-        "zh": "v. 驅逐；趕走",
+        "zh": "v. 驅逐;趕走",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21768,
+        "id": 21199,
+        "en": "expenditure",
+        "kk": "",
+        "zh": "n. 消費;支 出",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21200,
+        "en": "expense",
+        "kk": "",
+        "zh": "n. 費用;價錢",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21201,
         "en": "expensive",
-        "kk": "",
-        "zh": "a. 高價的；昂貴的",
+        "kk": "/ɪkˈspensɪv/",
+        "zh": "a. 高價的; 昂貴的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21769,
+        "id": 21202,
         "en": "experience",
-        "kk": "",
-        "zh": "n. 經驗；經歷",
+        "kk": "/ɪkˈspɪriəns/",
+        "zh": "n. 經驗;經 歷",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21770,
+        "id": 21203,
         "en": "experiment",
-        "kk": "",
-        "zh": "n. 實驗；試驗 v 進行實驗；試驗",
+        "kk": "/ɪkˈsperɪmənt/",
+        "zh": "n. 實驗;試 驗v. 進行實驗;試驗",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21771,
+        "id": 21204,
         "en": "expert",
-        "kk": "",
-        "zh": "n. 專家；能手 a熟練的；老練的",
+        "kk": "/ˈekspɜːrt/",
+        "zh": "n. 專家;能手a. 熟練的;老練的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21772,
+        "id": 21205,
         "en": "expertise",
         "kk": "",
-        "zh": "n. 專門知識；專長",
+        "zh": "n. 專門知識; 專長",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21773,
+        "id": 21206,
         "en": "expiration",
         "kk": "",
-        "zh": "n. 終結；期滿",
+        "zh": "n. 終結;期滿",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21774,
-        "en": "explain",
+        "id": 21207,
+        "en": "expire",
         "kk": "",
-        "zh": "v. 解釋；說明",
+        "zh": "v. 屆期;終止",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21775,
+        "id": 21208,
+        "en": "explain",
+        "kk": "/ɪkˈspleɪn/",
+        "zh": "v. 解釋;說明",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21209,
         "en": "explanation",
         "kk": "",
-        "zh": "n. 解釋；說明",
+        "zh": "n. 解釋;說 明",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21776,
+        "id": 21210,
         "en": "explode",
         "kk": "",
-        "zh": "v. 爆發；爆炸",
+        "zh": "v. 爆發;爆炸",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21777,
+        "id": 21211,
         "en": "explore",
-        "kk": "",
-        "zh": "v. 探險；挖掘",
+        "kk": "/ɪkˈsplɔːr/",
+        "zh": "v. 探險;挖掘",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21778,
+        "id": 21212,
         "en": "explorer",
         "kk": "",
         "zh": "n. 探險者",
@@ -15369,385 +10908,394 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21779,
+        "id": 21213,
         "en": "explosion",
-        "kk": "",
-        "zh": "n. 爆發；爆炸",
+        "kk": "/ɪkˈsploʊʒn/",
+        "zh": "n. 爆發;爆炸",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21780,
+        "id": 21214,
         "en": "export",
-        "kk": "",
-        "zh": "v. 輸出；出品",
+        "kk": "/ɪkˈspɔːrt/",
+        "zh": "v. 輸出;出品",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21781,
+        "id": 21215,
         "en": "expose",
         "kk": "",
-        "zh": "v. 使暴露於；使接觸到",
+        "zh": "v. 使暴露於;使 接觸到",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21782,
+        "id": 21216,
         "en": "exposure",
         "kk": "",
-        "zh": "n. 暴露；揭露",
+        "zh": "n. 暴露;揭露",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21783,
+        "id": 21217,
         "en": "express",
-        "kk": "",
-        "zh": "v. 表達，陳述 a快遞的 n 快遞；快運",
+        "kk": "/ɪkˈspres/",
+        "zh": "v. 表達,陳述a. 快遞的n. 快遞;快運",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21784,
+        "id": 21218,
         "en": "expression",
-        "kk": "",
-        "zh": "n. 表達；表示",
+        "kk": "/ɪkˈspreʃn/",
+        "zh": "n. 表達;表 示",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21785,
+        "id": 21219,
         "en": "extend",
-        "kk": "",
-        "zh": "v. 延長，延伸",
+        "kk": "/ɪkˈstend/",
+        "zh": "v. 延長,延伸",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21786,
+        "id": 21220,
         "en": "extension",
         "kk": "",
-        "zh": "n. 伸展；伸長",
+        "zh": "n. 伸展;伸長",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21787,
+        "id": 21221,
         "en": "extensive",
         "kk": "",
-        "zh": "a. 廣大的；廣闊的",
+        "zh": "a. 廣大的;廣 闊的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21788,
+        "id": 21222,
         "en": "extent",
         "kk": "",
-        "zh": "n. 廣度；程度",
+        "zh": "n. 廣度;程度",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21789,
+        "id": 21223,
         "en": "extra",
-        "kk": "",
+        "kk": "/ˈekstrə/",
         "zh": "a. 額外的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21790,
+        "id": 21224,
         "en": "extract",
         "kk": "",
-        "zh": "n. 抽出（物）；採掘",
+        "zh": "n. 抽出(物); 採掘",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21791,
+        "id": 21225,
         "en": "extraordinary",
         "kk": "",
-        "zh": "a. 異常的；特別的F",
+        "zh": "a. 異常 的;特別的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21792,
+        "id": 21226,
         "en": "fabric",
         "kk": "",
-        "zh": "n. 布料；織布",
+        "zh": "n. 布料;織布",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21793,
+        "id": 21227,
         "en": "fabricate",
         "kk": "",
-        "zh": "v. 製造；偽造",
+        "zh": "v. 製造;偽造",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21794,
+        "id": 21228,
         "en": "face",
-        "kk": "",
-        "zh": "n. 臉；面孔 v 面向；正對",
+        "kk": "/feɪs/",
+        "zh": "n. 臉;面孔v. 面向; 正對",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21795,
+        "id": 21229,
         "en": "facial",
         "kk": "",
-        "zh": "a. 臉的；面部的",
+        "zh": "a. 臉的;面部的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21796,
+        "id": 21230,
         "en": "facilitate",
         "kk": "",
-        "zh": "v. 促進；幫助",
+        "zh": "v. 促進;幫助",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21797,
+        "id": 21231,
         "en": "facilitator",
         "kk": "",
-        "zh": "n. 促進者；便利措施",
+        "zh": "n. 促進者;便 利措施",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21798,
+        "id": 21232,
+        "en": "facility",
+        "kk": "",
+        "zh": "n. 設施;配備",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21233,
         "en": "facto",
         "kk": "",
-        "zh": "n. 因素；成因",
+        "zh": "n. 因素;成因",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21799,
+        "id": 21234,
         "en": "factory",
-        "kk": "",
+        "kk": "/ˈfæktəri/",
         "zh": "n. 工廠",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21800,
+        "id": 21235,
         "en": "fail",
-        "kk": "",
-        "zh": "v. 失敗；不及格 n 失敗；不及格",
+        "kk": "/feɪl/",
+        "zh": "v. 失敗;不及格n. 失 敗;不及格",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21801,
+        "id": 21236,
         "en": "failure",
-        "kk": "",
-        "zh": "n. 失敗；挫敗",
+        "kk": "/ˈfeɪljər/",
+        "zh": "n. 失敗;挫敗",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21802,
+        "id": 21237,
         "en": "fair",
-        "kk": "",
-        "zh": "a. 公平的 ad 公平地；公正地 n 集市",
+        "kk": "/fer/",
+        "zh": "a. 公平的ad. 公平地; 公正地n. 集市",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21803,
+        "id": 21238,
         "en": "fairly",
         "kk": "",
-        "zh": "ad. 公平地；公正地",
+        "zh": "ad. 公平地;公正地",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21804,
+        "id": 21239,
         "en": "faith",
-        "kk": "",
-        "zh": "n. 信念；信任",
+        "kk": "/feɪθ/",
+        "zh": "n. 信念;信任",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21805,
+        "id": 21240,
         "en": "faithful",
         "kk": "",
-        "zh": "a. 忠實的；忠誠的",
+        "zh": "a. 忠實的;忠誠 的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21806,
+        "id": 21241,
         "en": "falter",
         "kk": "",
-        "zh": "v. 蹣跚；踉蹌 n 動搖；猶豫",
+        "zh": "v. 蹣跚;踉蹌n. 動 搖;猶豫",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21807,
+        "id": 21242,
         "en": "familiar",
-        "kk": "",
-        "zh": "a. 眾所周知的；熟悉的",
+        "kk": "/fəˈmɪljər/",
+        "zh": "a. 眾所周知的; 熟悉的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21808,
+        "id": 21243,
         "en": "familiarity",
         "kk": "",
-        "zh": "n. 熟悉；通曉",
+        "zh": "n. 熟悉;通曉",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21809,
+        "id": 21244,
         "en": "familiarize",
         "kk": "",
-        "zh": "v. 使熟悉；使親近",
+        "zh": "v. 使熟悉;使 親近",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21810,
+        "id": 21245,
         "en": "fare",
         "kk": "",
-        "zh": "n. 票價 v 過活；遭遇",
+        "zh": "n. 票價v. 過活;遭 遇",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21811,
+        "id": 21246,
         "en": "farewell",
         "kk": "",
-        "zh": "n. 告別；告別辭",
+        "zh": "n. 告別;告別辭",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21812,
+        "id": 21247,
         "en": "farm",
-        "kk": "",
+        "kk": "/fɑːrm/",
         "zh": "n. 農場",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21813,
+        "id": 21248,
         "en": "fascinate",
         "kk": "",
-        "zh": "v. 迷住；使神魂顛倒",
+        "zh": "v. 迷住;使神 魂顛倒",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21814,
+        "id": 21249,
         "en": "fascination",
         "kk": "",
-        "zh": "n. 魅力；陶醉",
+        "zh": "n. 魅力;陶 醉",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21815,
+        "id": 21250,
         "en": "fashion",
-        "kk": "",
+        "kk": "/ˈfæʃn/",
         "zh": "n. 時尚",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21816,
+        "id": 21251,
         "en": "fashionable",
         "kk": "",
-        "zh": "a. 流行的；時尚的",
+        "zh": "a. 流行的; 時尚的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21817,
+        "id": 21252,
         "en": "fast",
-        "kk": "",
-        "zh": "a. 快速的；迅速的",
+        "kk": "/fæst/",
+        "zh": "a. 快速的;迅速的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21818,
+        "id": 21253,
         "en": "fasten",
         "kk": "",
-        "zh": "v. 紮牢；繫緊",
+        "zh": "v. 紮牢;繫緊",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21819,
+        "id": 21254,
         "en": "fatal",
         "kk": "",
-        "zh": "a. 命運的；決定命運的",
+        "zh": "a. 命運的;決定命 運的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21820,
+        "id": 21255,
         "en": "fate",
         "kk": "",
-        "zh": "n. 命運；天命 v 命定；注定",
+        "zh": "n. 命運;天命v. 命 定;注定",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21821,
+        "id": 21256,
         "en": "father-in-law",
         "kk": "",
         "zh": "n. 岳父",
@@ -15756,61 +11304,61 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21822,
+        "id": 21257,
         "en": "fatigue",
         "kk": "",
-        "zh": "n. 疲勞；勞累 v疲勞",
+        "zh": "n. 疲勞;勞累v. 疲勞",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21823,
+        "id": 21258,
         "en": "fault",
-        "kk": "",
-        "zh": "n. 錯誤；失誤",
+        "kk": "/fɔːlt/",
+        "zh": "n. 錯誤;失誤",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21824,
+        "id": 21259,
         "en": "faulty",
         "kk": "",
-        "zh": "a. 有缺點的；不完美的",
+        "zh": "a. 有缺點的;不完 美的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21825,
+        "id": 21260,
         "en": "favor",
-        "kk": "",
-        "zh": "n. 幫助；善意的行為 v 支持；擁護",
+        "kk": "/ˈfeɪvər/",
+        "zh": "n. 幫助;善意的行 為v. 支持;擁護",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21826,
+        "id": 21261,
         "en": "favorable",
         "kk": "",
-        "zh": "a. 贊同的；稱讚的",
+        "zh": "a. 贊同的;稱 讚的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21827,
+        "id": 21262,
         "en": "favorite",
-        "kk": "",
-        "zh": "a. 喜愛的；喜歡的",
+        "kk": "/ˈfeɪvərɪt/",
+        "zh": "a. 喜愛的;喜歡 的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21828,
+        "id": 21263,
         "en": "fax",
         "kk": "",
         "zh": "n. 傳真",
@@ -15819,88 +11367,88 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21829,
+        "id": 21264,
         "en": "fear",
-        "kk": "",
-        "zh": "n. 恐懼；害怕 v 害怕；畏懼",
+        "kk": "/fɪr/",
+        "zh": "n. 恐懼;害怕v. 害 怕;畏懼",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21830,
+        "id": 21265,
         "en": "feasibility",
         "kk": "",
-        "zh": "n. 可行性；可能性",
+        "zh": "n. 可行性;可 能性",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21831,
+        "id": 21266,
         "en": "feasible",
         "kk": "",
-        "zh": "a. 可行的；可實行的",
+        "zh": "a. 可行的;可實 行的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21832,
+        "id": 21267,
         "en": "feast",
         "kk": "",
-        "zh": "n. 盛宴；筵席",
+        "zh": "n. 盛宴;筵席",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21833,
+        "id": 21268,
         "en": "feat",
         "kk": "",
-        "zh": "n. 功績；業績",
+        "zh": "n. 功績;業績",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21834,
+        "id": 21269,
         "en": "feature",
-        "kk": "",
-        "zh": "n. 特徵；特色 v以⋯⋯為特色；是⋯⋯的特色",
+        "kk": "/ˈfiːtʃər/",
+        "zh": "n. 特徵;特色v. 以⋯⋯為特色;是⋯⋯的 特色",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21835,
+        "id": 21270,
         "en": "federal",
-        "kk": "",
-        "zh": "a. 國家的；聯邦的",
+        "kk": "/ˈfedərəl/",
+        "zh": "a. 國家的;聯邦 的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21836,
+        "id": 21271,
         "en": "fee",
-        "kk": "",
-        "zh": "n. 酬金；服務費 v 付費",
+        "kk": "/fiː/",
+        "zh": "n. 酬金;服務費v. 付 費",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21837,
+        "id": 21272,
         "en": "feed",
-        "kk": "",
-        "zh": "n. 飼料；牧草 v 餵；飼養",
+        "kk": "/fiːd/",
+        "zh": "n. 飼料;牧草v. 餵; 飼養",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21838,
+        "id": 21273,
         "en": "feedback",
         "kk": "",
         "zh": "n. 回饋",
@@ -15909,70 +11457,70 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21839,
+        "id": 21274,
         "en": "fellow",
-        "kk": "",
-        "zh": "a. 同伴的；同事的n 傢伙；人",
+        "kk": "/ˈfeloʊ/",
+        "zh": "a. 同伴的;同事的n. 傢伙;人",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21840,
+        "id": 21275,
         "en": "fellowship",
         "kk": "",
-        "zh": "n. 夥伴關係；交情",
+        "zh": "n. 夥伴關係; 交情",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21841,
+        "id": 21276,
         "en": "female",
-        "kk": "",
-        "zh": "n. 女性 a 女性的",
+        "kk": "/ˈfiːmeɪl/",
+        "zh": "n. 女性a. 女性的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21842,
+        "id": 21277,
         "en": "feminine",
         "kk": "",
-        "zh": "a. 女性的；婦女的",
+        "zh": "a. 女性的;婦 女的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21843,
+        "id": 21278,
         "en": "ferry",
         "kk": "",
-        "zh": "v. 渡過；運送 n 擺渡；渡輪",
+        "zh": "v. 渡過;運送n. 擺 渡;渡輪",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21844,
+        "id": 21279,
         "en": "fertility",
         "kk": "",
-        "zh": "n. 肥沃；豐富",
+        "zh": "n. 肥沃;豐富",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21845,
+        "id": 21280,
         "en": "fertilize",
         "kk": "",
-        "zh": "v. 使肥沃；施肥",
+        "zh": "v. 使肥沃;施肥",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21846,
+        "id": 21281,
         "en": "fertilizer",
         "kk": "",
         "zh": "n. 肥料",
@@ -15981,52 +11529,349 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21847,
+        "id": 21282,
         "en": "festival",
         "kk": "",
-        "zh": "n. 節日 a 節日的",
+        "zh": "n. 節日a. 節日的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21848,
+        "id": 21283,
         "en": "fetch",
         "kk": "",
-        "zh": "v. 拿來；拿給",
+        "zh": "v. 拿來;拿給",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21849,
+        "id": 21284,
         "en": "fever",
         "kk": "",
-        "zh": "n. 發燒，發熱 v 發燒；高度興奮1285. ﬁber n 纖維；纖維製品1286. ﬁction n 小說；虛構1287. ﬁeld n 原野；田地1288.  ﬁerce a 兇猛的；殘酷的；好鬥的",
+        "zh": "n. 發燒,發熱v. 發 燒;高度興奮",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21850,
-        "en": "focus",
+        "id": 21285,
+        "en": "fiber",
         "kk": "",
-        "zh": "n. 焦點；焦距 v 聚焦",
+        "zh": "n. 纖維;纖維製品",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21851,
+        "id": 21286,
+        "en": "fiction",
+        "kk": "",
+        "zh": "n. 小說;虛構",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21287,
+        "en": "field",
+        "kk": "/fiːld/",
+        "zh": "n. 原野;田地",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21288,
+        "en": "fierce",
+        "kk": "",
+        "zh": "a. 兇猛的;殘酷的; 好鬥的",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21289,
+        "en": "fight",
+        "kk": "/faɪt/",
+        "zh": "n. 戰鬥;打鬥v. 戰 鬥;打鬥",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21290,
+        "en": "figure",
+        "kk": "/ˈfɪɡjər/",
+        "zh": "n. 外形;體形v. 計算;認為",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21291,
+        "en": "file",
+        "kk": "/faɪl/",
+        "zh": "n. 文件夾v. 歸檔提出",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21292,
+        "en": "fill",
+        "kk": "/fɪl/",
+        "zh": "v. 裝滿;填滿",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21293,
+        "en": "film",
+        "kk": "/fɪlm/",
+        "zh": "n. 膠捲影片;影片",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21294,
+        "en": "filter",
+        "kk": "",
+        "zh": "n. 濾器v. 過濾;濾 除",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21295,
+        "en": "final",
+        "kk": "/ˈfaɪnl/",
+        "zh": "a. 最後的;最終的n. 決賽;期末考",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21296,
+        "en": "finalize",
+        "kk": "",
+        "zh": "v. 完成;結束",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21297,
+        "en": "finance",
+        "kk": "",
+        "zh": "n. 財政;金融",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21298,
+        "en": "financial",
+        "kk": "/faɪˈnænʃl/",
+        "zh": "a. 財政的;金融 的",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21299,
+        "en": "finish",
+        "kk": "/ˈfɪnɪʃ/",
+        "zh": "v. 結束;完結",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21300,
+        "en": "finite",
+        "kk": "",
+        "zh": "a. 有限的",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21301,
+        "en": "fire drill",
+        "kk": "",
+        "zh": "n. 火災避難訓 練;消防演習",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21302,
+        "en": "firm",
+        "kk": "/fɜːrm/",
+        "zh": "a. 穩固的;牢固的",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21303,
+        "en": "fiscal",
+        "kk": "",
+        "zh": "a. 財政的;金融的",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21304,
+        "en": "fit",
+        "kk": "/fɪt/",
+        "zh": "v. 合身;適合a. 適合 的;健康的",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21305,
+        "en": "fitnes",
+        "kk": "",
+        "zh": "n. 健康;適當",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21306,
+        "en": "fix",
+        "kk": "/fɪks/",
+        "zh": "v. 修理;修復",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21307,
+        "en": "fixation",
+        "kk": "",
+        "zh": "n. 固定;注視",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21308,
+        "en": "fixture",
+        "kk": "",
+        "zh": "n. (房屋等的) 固定裝置",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21309,
+        "en": "flaw",
+        "kk": "",
+        "zh": "n. 裂縫;缺點v. 使 破裂;使有缺陷",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21310,
+        "en": "flawed",
+        "kk": "",
+        "zh": "a. 有缺點的;錯 誤的",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21311,
+        "en": "flawless",
+        "kk": "",
+        "zh": "a. 無瑕的;完美 的",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21312,
+        "en": "flexibility",
+        "kk": "",
+        "zh": "n. 靈活性;彈 性",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21313,
+        "en": "flight",
+        "kk": "/flaɪt/",
+        "zh": "n. 班機;航班",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21314,
+        "en": "fluctuate",
+        "kk": "",
+        "zh": "v. 波動;變動",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21315,
+        "en": "fluctuation",
+        "kk": "",
+        "zh": "n. 波動;變 動",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21316,
+        "en": "fluency",
+        "kk": "",
+        "zh": "n. 流暢",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21317,
+        "en": "fluent",
+        "kk": "",
+        "zh": "a. 流暢的;順暢的",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21318,
+        "en": "focus",
+        "kk": "/ˈfoʊkəs/",
+        "zh": "n. 焦點;焦距v. 聚 焦",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21319,
         "en": "fold",
         "kk": "",
-        "zh": "v. 折；折疊",
+        "zh": "v. 折;折疊",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21852,
+        "id": 21320,
         "en": "folder",
         "kk": "",
         "zh": "n. 資料夾",
@@ -16035,52 +11880,61 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21853,
-        "en": "foreign",
+        "id": 21321,
+        "en": "forecast",
         "kk": "",
-        "zh": "a. 外國的；陌生的",
+        "zh": "n. 預報;預測v. 預報;預測",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21854,
+        "id": 21322,
+        "en": "foreign",
+        "kk": "/ˈfɔːrən/",
+        "zh": "a. 外國的;陌生 的",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21323,
         "en": "foremost",
         "kk": "",
-        "zh": "a. 最前的；最先的 ad 首先",
+        "zh": "a. 最前的;最 先的ad. 首先",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21855,
+        "id": 21324,
         "en": "foresee",
         "kk": "",
-        "zh": "v. 預見；預知",
+        "zh": "v. 預見;預知",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21856,
+        "id": 21325,
         "en": "form",
-        "kk": "",
-        "zh": "n. 形狀；外形 v 形成；構成",
+        "kk": "/fɔːrm/",
+        "zh": "n. 形狀;外形v. 形 成;構成",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21857,
+        "id": 21326,
         "en": "formal",
-        "kk": "",
-        "zh": "a. 正式的；禮節上的",
+        "kk": "/ˈfɔːrml/",
+        "zh": "a. 正式的;禮節 上的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21858,
+        "id": 21327,
         "en": "format",
         "kk": "",
         "zh": "n. 格式",
@@ -16089,7 +11943,7 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21859,
+        "id": 21328,
         "en": "formatted",
         "kk": "",
         "zh": "a. 格式化了的",
@@ -16098,7 +11952,7 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21860,
+        "id": 21329,
         "en": "formula",
         "kk": "",
         "zh": "n. 公式",
@@ -16107,70 +11961,70 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21861,
+        "id": 21330,
         "en": "formulate",
         "kk": "",
-        "zh": "v. 使公式化；用公式表示",
+        "zh": "v. 使公式化; 用公式表示",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21862,
+        "id": 21331,
         "en": "fortunate",
         "kk": "",
-        "zh": "a. 幸運的；僥倖的",
+        "zh": "a. 幸運的;僥 倖的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21863,
+        "id": 21332,
         "en": "fortunately",
         "kk": "",
-        "zh": "ad. 幸運地；僥倖地",
+        "zh": "ad. 幸運地; 僥倖地",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21864,
+        "id": 21333,
         "en": "fortune",
-        "kk": "",
-        "zh": "n. 財產；好運",
+        "kk": "/ˈfɔːrtʃən/",
+        "zh": "n. 財產;好運",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21865,
+        "id": 21334,
         "en": "forum",
         "kk": "",
-        "zh": "n. 討論會；論壇",
+        "zh": "n. 討論會;論壇",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21866,
+        "id": 21335,
         "en": "forward",
-        "kk": "",
-        "zh": "ad. 向前 a 前面的 v 轉交；發送",
+        "kk": "/ˈfɔːrwərd/",
+        "zh": "ad. 向前a. 前面 的v. 轉交;發送",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21867,
+        "id": 21336,
         "en": "foundation",
         "kk": "",
-        "zh": "n. 建立；創辦；基金會",
+        "zh": "n. 建立;創 辦;基金會",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21868,
+        "id": 21337,
         "en": "founder",
         "kk": "",
         "zh": "n. 創辦人",
@@ -16179,34 +12033,43 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21869,
+        "id": 21338,
         "en": "fraction",
         "kk": "",
-        "zh": "n. 片段；碎片",
+        "zh": "n. 片段;碎片",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21870,
+        "id": 21339,
         "en": "frame",
-        "kk": "",
-        "zh": "n. 架構；骨架 v建造；塑造",
+        "kk": "/freɪm/",
+        "zh": "n. 架構;骨架v. 建造;塑造",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21871,
+        "id": 21340,
         "en": "framework",
         "kk": "",
-        "zh": "n. 構造；機構",
+        "zh": "n. 構造;機 構",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21872,
+        "id": 21341,
+        "en": "franchise",
+        "kk": "",
+        "zh": "n. 特許經銷 權;公民權",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21342,
         "en": "franchisor",
         "kk": "",
         "zh": "n. 特許授予人",
@@ -16215,61 +12078,70 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21873,
+        "id": 21343,
         "en": "frank",
         "kk": "",
-        "zh": "a. 坦白的；直率的",
+        "zh": "a. 坦白的;直率的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21874,
+        "id": 21344,
         "en": "frankly",
         "kk": "",
-        "zh": "ad. 率直地；坦白地",
+        "zh": "ad. 率直地;坦白 地",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21875,
+        "id": 21345,
         "en": "fraud",
         "kk": "",
-        "zh": "n. 欺騙；詭計",
+        "zh": "n. 欺騙;詭計",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21876,
+        "id": 21346,
         "en": "fraudulent",
         "kk": "",
-        "zh": "a. 欺詐的；欺騙的",
+        "zh": "a. 欺詐的;欺 騙的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21877,
+        "id": 21347,
         "en": "free",
-        "kk": "",
-        "zh": "a. 自由的；免費的ad 免費地；無約束地 v使自由；解放",
+        "kk": "/friː/",
+        "zh": "a. 自由的;免費的ad. 免費地;無約束地v. 使自由;解放",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21878,
+        "id": 21348,
         "en": "freedom",
-        "kk": "",
+        "kk": "/ˈfriːdəm/",
         "zh": "n. 自由",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21879,
+        "id": 21349,
+        "en": "freight",
+        "kk": "",
+        "zh": "n. 貨物v. 裝貨於; 運輸",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21350,
         "en": "frequency",
         "kk": "",
         "zh": "n. 頻率",
@@ -16278,7 +12150,7 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21880,
+        "id": 21351,
         "en": "frequent",
         "kk": "",
         "zh": "a. 頻繁的",
@@ -16287,52 +12159,70 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21881,
+        "id": 21352,
         "en": "frequently",
-        "kk": "",
+        "kk": "/ˈfriːkwəntli/",
         "zh": "ad. 頻繁地",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21882,
+        "id": 21353,
         "en": "frighten",
         "kk": "",
-        "zh": "v. 驚恐；害怕",
+        "zh": "v. 驚恐;害怕",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21883,
+        "id": 21354,
         "en": "fuel",
-        "kk": "",
-        "zh": "n. 燃料 v 加燃料；加油",
+        "kk": "/ˈfjuːəl/",
+        "zh": "n. 燃料v. 加燃料; 加油",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21884,
+        "id": 21355,
         "en": "fueled",
         "kk": "",
-        "zh": "a. 加燃料的1356. fulﬁll v 執行；履行1357. fulﬁllment n 履行；實現",
+        "zh": "a. 加燃料的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21885,
-        "en": "function",
+        "id": 21356,
+        "en": "fulfill",
         "kk": "",
-        "zh": "n. 功能；作用 v工作；運行",
+        "zh": "v. 執行;履行",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21886,
+        "id": 21357,
+        "en": "fulfillment",
+        "kk": "",
+        "zh": "n. 履行;實現",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21358,
+        "en": "function",
+        "kk": "/ˈfʌŋkʃn/",
+        "zh": "n. 功能;作用v. 工作;運行",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21359,
         "en": "functioning",
         "kk": "",
         "zh": "a. 運作的",
@@ -16341,34 +12231,34 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21887,
+        "id": 21360,
         "en": "fund",
-        "kk": "",
+        "kk": "/fʌnd/",
         "zh": "n. 資金",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21888,
+        "id": 21361,
         "en": "fundamental",
-        "kk": "",
-        "zh": "a. 基礎的；根本的 n 基本原則",
+        "kk": "/ˌfʌndəˈmentl/",
+        "zh": "a. 基礎的; 根本的n. 基本原則",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21889,
+        "id": 21362,
         "en": "funding",
         "kk": "",
-        "zh": "n. 資金；基金",
+        "zh": "n. 資金;基金",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21890,
+        "id": 21363,
         "en": "fundraiser",
         "kk": "",
         "zh": "n. 資金籌集人",
@@ -16377,43 +12267,43 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21891,
+        "id": 21364,
         "en": "furniture",
-        "kk": "",
-        "zh": "n. 傢俱；設備",
+        "kk": "/ˈfɜːrnɪtʃər/",
+        "zh": "n. 傢俱;設備",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21892,
+        "id": 21365,
         "en": "further",
         "kk": "",
-        "zh": "a. 更遠的 ad 更遠地 v 促進；助長G",
+        "zh": "a. 更遠的ad. 更遠 地v. 促進;助長",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21893,
+        "id": 21366,
         "en": "gamble",
         "kk": "",
-        "zh": "n. 賭博；打賭 v賭博；打賭",
+        "zh": "n. 賭博;打賭v. 賭博;打賭",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21894,
+        "id": 21367,
         "en": "gap",
         "kk": "",
-        "zh": "v. 裂開 n 缺口；隔閡",
+        "zh": "v. 裂開n. 缺口;隔 閡",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21895,
+        "id": 21368,
         "en": "garbage",
         "kk": "",
         "zh": "n. 垃圾",
@@ -16422,16 +12312,16 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21896,
+        "id": 21369,
         "en": "garment",
         "kk": "",
-        "zh": "n. 服裝；衣著",
+        "zh": "n. 服裝;衣著",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21897,
+        "id": 21370,
         "en": "gasoline",
         "kk": "",
         "zh": "n. 汽油",
@@ -16440,61 +12330,61 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21898,
+        "id": 21371,
         "en": "gas",
-        "kk": "",
-        "zh": "n. 氣體；瓦斯",
+        "kk": "/ɡæs/",
+        "zh": "n. 氣體;瓦斯",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21899,
+        "id": 21372,
         "en": "gate",
         "kk": "",
-        "zh": "n. 大門；柵欄門",
+        "zh": "n. 大門;柵欄門",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21900,
+        "id": 21373,
         "en": "gatekeeper",
         "kk": "",
-        "zh": "n. 看門人；守門員",
+        "zh": "n. 看門人; 守門員",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21901,
+        "id": 21374,
         "en": "gather",
         "kk": "",
-        "zh": "v. 收集；召集 n聚集；收穫量",
+        "zh": "v. 收集;召集n. 聚集;收穫量",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21902,
+        "id": 21375,
         "en": "gathering",
         "kk": "",
-        "zh": "n. 集會；聚集",
+        "zh": "n. 集會;聚集",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21903,
+        "id": 21376,
         "en": "gear",
         "kk": "",
-        "zh": "n. 工具；設備 v 使適應；使適合",
+        "zh": "n. 工具;設備v. 使 適應;使適合",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21904,
+        "id": 21377,
         "en": "gender",
         "kk": "",
         "zh": "n. 性別",
@@ -16503,43 +12393,52 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21905,
+        "id": 21378,
         "en": "general",
-        "kk": "",
-        "zh": "a. 普通的；一般的",
+        "kk": "/ˈdʒenərəl/",
+        "zh": "a. 普通的;一般 的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21906,
+        "id": 21379,
         "en": "generally",
         "kk": "",
-        "zh": "ad. 通常；一般地",
+        "zh": "ad. 通常;一般 地",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21907,
+        "id": 21380,
+        "en": "generate",
+        "kk": "/ˈdʒenəreɪt/",
+        "zh": "v. 產生;發生",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21381,
         "en": "generation",
         "kk": "",
-        "zh": "n. 世代；一代",
+        "zh": "n. 世代;一 代",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21908,
+        "id": 21382,
         "en": "generosity",
         "kk": "",
-        "zh": "n. 慷慨；大方",
+        "zh": "n. 慷慨;大 方",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21909,
+        "id": 21383,
         "en": "generous",
         "kk": "",
         "zh": "a. 慷慨的",
@@ -16548,16 +12447,16 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21910,
+        "id": 21384,
         "en": "genius",
         "kk": "",
-        "zh": "n. 天才；天資",
+        "zh": "n. 天才;天資",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21911,
+        "id": 21385,
         "en": "gentle",
         "kk": "",
         "zh": "a. 紳士的",
@@ -16566,7 +12465,7 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21912,
+        "id": 21386,
         "en": "gentleman",
         "kk": "",
         "zh": "n. 紳士",
@@ -16575,178 +12474,178 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21913,
+        "id": 21387,
         "en": "genuine",
         "kk": "",
-        "zh": "a. 真誠的；不造作的",
+        "zh": "a. 真誠的;不造 作的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21914,
+        "id": 21388,
         "en": "geographic",
         "kk": "",
-        "zh": "a. 地理學的；地理的",
+        "zh": "a. 地理學 的;地理的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21915,
+        "id": 21389,
         "en": "geography",
         "kk": "",
-        "zh": "n. 地理；地理學",
+        "zh": "n. 地理;地 理學",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21916,
+        "id": 21390,
         "en": "germ",
         "kk": "",
-        "zh": "n. 微生物；細菌",
+        "zh": "n. 微生物;細菌",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21917,
+        "id": 21391,
         "en": "gesture",
         "kk": "",
-        "zh": "n. 姿勢；手勢",
+        "zh": "n. 姿勢;手勢",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21918,
+        "id": 21392,
         "en": "getaway",
         "kk": "",
-        "zh": "v. 逃走；起步",
+        "zh": "v. 逃走;起步",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21919,
+        "id": 21393,
         "en": "giant",
         "kk": "",
-        "zh": "n. 巨人 a 巨人般的；巨大的",
+        "zh": "n. 巨人a. 巨人般 的;巨大的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21920,
+        "id": 21394,
         "en": "gift",
-        "kk": "",
-        "zh": "n. 禮物；天賦",
+        "kk": "/ɡɪft/",
+        "zh": "n. 禮物;天賦",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21921,
+        "id": 21395,
         "en": "gifted",
         "kk": "",
-        "zh": "a. 有天資的；有天賦的",
+        "zh": "a. 有天資的;有天 賦的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21922,
+        "id": 21396,
         "en": "gift-wrap",
         "kk": "",
-        "zh": "v. 用包裝紙包裝",
+        "zh": "v. 用包裝紙包 裝",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21923,
+        "id": 21397,
         "en": "glamor",
         "kk": "",
-        "zh": "n. 魅力；魔力",
+        "zh": "n. 魅力;魔力",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21924,
+        "id": 21398,
         "en": "glance",
         "kk": "",
-        "zh": "v. 掃視；瞥見",
+        "zh": "v. 掃視;瞥見",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21925,
+        "id": 21399,
         "en": "glitch",
         "kk": "",
-        "zh": "n. 小故障；失靈",
+        "zh": "n. 小故障;失靈",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21926,
+        "id": 21400,
         "en": "global",
-        "kk": "",
-        "zh": "a. 球狀的；全世界的",
+        "kk": "/ˈɡloʊbl/",
+        "zh": "a. 球狀的;全世界 的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21927,
+        "id": 21401,
         "en": "globe",
         "kk": "",
-        "zh": "n. 球狀物；地球",
+        "zh": "n. 球狀物;地球",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21928,
+        "id": 21402,
         "en": "gloom",
         "kk": "",
-        "zh": "n. 黑暗；陰暗 v使暗；使陰沉",
+        "zh": "n. 黑暗;陰暗v. 使暗;使陰沉",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21929,
+        "id": 21403,
         "en": "glorify",
         "kk": "",
-        "zh": "v. 讚美；美化",
+        "zh": "v. 讚美;美化",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21930,
+        "id": 21404,
         "en": "glory",
         "kk": "",
-        "zh": "n. 光榮；榮譽",
+        "zh": "n. 光榮;榮譽",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21931,
+        "id": 21405,
         "en": "glossary",
         "kk": "",
-        "zh": "n. 詞彙表；術語",
+        "zh": "n. 詞彙表;術 語",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21932,
+        "id": 21406,
         "en": "glove",
         "kk": "",
         "zh": "n. 手套",
@@ -16755,70 +12654,70 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21933,
+        "id": 21407,
         "en": "glow",
         "kk": "",
-        "zh": "v. 發光；發熱",
+        "zh": "v. 發光;發熱",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21934,
+        "id": 21408,
         "en": "goodwill",
         "kk": "",
-        "zh": "n. 善意；好心",
+        "zh": "n. 善意;好心",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21935,
+        "id": 21409,
         "en": "gorgeous",
         "kk": "",
-        "zh": "a. 燦爛的；華麗的",
+        "zh": "a. 燦爛的;華 麗的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21936,
+        "id": 21410,
         "en": "gossip",
         "kk": "",
-        "zh": "n. 閒話；聊天 v閒聊",
+        "zh": "n. 閒話;聊天v. 閒聊",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21937,
+        "id": 21411,
         "en": "govern",
         "kk": "",
-        "zh": "v. 統治；管理",
+        "zh": "v. 統治;管理",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21938,
+        "id": 21412,
         "en": "government",
-        "kk": "",
+        "kk": "/ˈɡʌvərnmənt/",
         "zh": "n. 政府",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21939,
+        "id": 21413,
         "en": "grab",
         "kk": "",
-        "zh": "v. 抓取；拾取",
+        "zh": "v. 抓取;拾取",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21940,
+        "id": 21414,
         "en": "grace",
         "kk": "",
         "zh": "n. 優雅",
@@ -16827,7 +12726,7 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21941,
+        "id": 21415,
         "en": "graceful",
         "kk": "",
         "zh": "a. 優雅的",
@@ -16836,25 +12735,25 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21942,
+        "id": 21416,
         "en": "grade",
-        "kk": "",
-        "zh": "n. 成績；等級",
+        "kk": "/ɡreɪd/",
+        "zh": "n. 成績;等級",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21943,
+        "id": 21417,
         "en": "gradual",
         "kk": "",
-        "zh": "a. 逐漸的；逐步的",
+        "zh": "a. 逐漸的;逐步 的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21944,
+        "id": 21418,
         "en": "gradually",
         "kk": "",
         "zh": "ad. 逐漸地",
@@ -16863,88 +12762,88 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21945,
+        "id": 21419,
         "en": "graduate",
         "kk": "",
-        "zh": "v. 准予畢業；授與學位",
+        "zh": "v. 准予畢業; 授與學位",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21946,
+        "id": 21420,
         "en": "grand",
-        "kk": "",
-        "zh": "a. 雄偉的；堂皇的",
+        "kk": "/ɡrænd/",
+        "zh": "a. 雄偉的;堂皇的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21947,
+        "id": 21421,
         "en": "grant",
         "kk": "",
-        "zh": "v. 同意；允許",
+        "zh": "v. 同意;允許",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21948,
+        "id": 21422,
         "en": "graph",
         "kk": "",
-        "zh": "n. 圖表；圖解",
+        "zh": "n. 圖表;圖解",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21949,
+        "id": 21423,
         "en": "grasp",
         "kk": "",
-        "zh": "v. 抓牢；握緊 n抓；握",
+        "zh": "v. 抓牢;握緊n. 抓;握",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21950,
+        "id": 21424,
         "en": "grateful",
         "kk": "",
-        "zh": "a. 感激的；感謝的",
+        "zh": "a. 感激的;感謝 的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21951,
+        "id": 21425,
         "en": "gratitude",
         "kk": "",
-        "zh": "n. 感恩；感謝",
+        "zh": "n. 感恩;感謝",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21952,
+        "id": 21426,
         "en": "gratuity",
         "kk": "",
-        "zh": "n. 賞錢；小費",
+        "zh": "n. 賞錢;小費",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21953,
+        "id": 21427,
         "en": "gravity",
         "kk": "",
-        "zh": "n. 重力；引力",
+        "zh": "n. 重力;引力",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21954,
+        "id": 21428,
         "en": "greed",
         "kk": "",
         "zh": "n. 貪心",
@@ -16953,34 +12852,34 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21955,
+        "id": 21429,
         "en": "greenhouse",
         "kk": "",
-        "zh": "n. 溫室；暖房",
+        "zh": "n. 溫室;暖 房",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21956,
+        "id": 21430,
         "en": "grin",
         "kk": "",
-        "zh": "v. 露齒而笑；齜牙咧嘴",
+        "zh": "v. 露齒而笑;齜牙咧 嘴",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21957,
+        "id": 21431,
         "en": "grip",
         "kk": "",
-        "zh": "n. 緊握；夾住",
+        "zh": "n. 緊握;夾住",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21958,
+        "id": 21432,
         "en": "grocer",
         "kk": "",
         "zh": "n. 食品雜貨商",
@@ -16989,7 +12888,7 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21959,
+        "id": 21433,
         "en": "grocery",
         "kk": "",
         "zh": "n. 食品雜貨店",
@@ -16998,115 +12897,124 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21960,
+        "id": 21434,
         "en": "groom",
         "kk": "",
-        "zh": "n. 新郎 v 打扮；穿戴",
+        "zh": "n. 新郎v. 打扮; 穿戴",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21961,
+        "id": 21435,
         "en": "gross",
         "kk": "",
-        "zh": "a. 總的；顯著的 n總額；總量",
+        "zh": "a. 總的;顯著的n. 總額;總量",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21962,
+        "id": 21436,
         "en": "ground",
-        "kk": "",
-        "zh": "n. 地面；土地",
+        "kk": "/ɡraʊnd/",
+        "zh": "n. 地面;土地",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21963,
+        "id": 21437,
         "en": "groundbreaking",
         "kk": "",
-        "zh": "a. 開創性的",
+        "zh": "a. 開創 性的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21964,
+        "id": 21438,
         "en": "grow",
-        "kk": "",
-        "zh": "v. 成長；生長",
+        "kk": "/ɡroʊ/",
+        "zh": "v. 成長;生長",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21965,
+        "id": 21439,
         "en": "growth",
         "kk": "",
-        "zh": "n. 成長；發育",
+        "zh": "n. 成長;發育",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21966,
-        "en": "guard",
+        "id": 21440,
+        "en": "guarantee",
         "kk": "",
-        "zh": "n. 哨兵；衛兵 v防範；警惕",
+        "zh": "n. 保證;保 固v. 保證;保固",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21967,
+        "id": 21441,
+        "en": "guard",
+        "kk": "/ɡɑːrd/",
+        "zh": "n. 哨兵;衛兵v. 防範;警惕",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21442,
         "en": "guardian",
         "kk": "",
-        "zh": "n. 守護者；管理員",
+        "zh": "n. 守護者;管 理員",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21968,
+        "id": 21443,
         "en": "guess",
-        "kk": "",
-        "zh": "v. 猜測；臆測",
+        "kk": "/ɡes/",
+        "zh": "v. 猜測;臆測",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21969,
+        "id": 21444,
         "en": "guest",
-        "kk": "",
-        "zh": "n. 賓客；客人",
+        "kk": "/ɡest/",
+        "zh": "n. 賓客;客人",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21970,
+        "id": 21445,
         "en": "guidance",
         "kk": "",
-        "zh": "n. 引領；帶領",
+        "zh": "n. 引領;帶領",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21971,
+        "id": 21446,
         "en": "guide",
-        "kk": "",
-        "zh": "n. 引領；帶領 v響導；指導",
+        "kk": "/ɡaɪd/",
+        "zh": "n. 引領;帶領v. 響導;指導",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21972,
+        "id": 21447,
         "en": "guidebook",
         "kk": "",
         "zh": "n. 旅行指南",
@@ -17115,7 +13023,7 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21973,
+        "id": 21448,
         "en": "guideline",
         "kk": "",
         "zh": "n. 指導方針",
@@ -17124,61 +13032,61 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21974,
+        "id": 21449,
         "en": "guilt",
         "kk": "",
-        "zh": "n. 罪惡；過失",
+        "zh": "n. 罪惡;過失",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21975,
+        "id": 21450,
         "en": "guilty",
         "kk": "",
-        "zh": "n. 有罪的；罪惡的",
+        "zh": "n. 有罪的;罪惡的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21976,
+        "id": 21451,
         "en": "gym",
         "kk": "",
-        "zh": "n. 體育館：體操",
+        "zh": "n. 體育館:體操",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21977,
+        "id": 21452,
         "en": "gymnasium",
         "kk": "",
-        "zh": "n. 體育館；體操G",
+        "zh": "n. 體育館; 體操",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21978,
+        "id": 21453,
         "en": "habit",
-        "kk": "",
-        "zh": "n. 嗜好；興趣",
+        "kk": "/ˈhæbɪt/",
+        "zh": "n. 嗜好;興趣",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21979,
+        "id": 21454,
         "en": "habitat",
         "kk": "",
-        "zh": "n. 棲息地；產地",
+        "zh": "n. 棲息地;產地",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21980,
+        "id": 21455,
         "en": "habitual",
         "kk": "",
         "zh": "a. 習慣的",
@@ -17187,25 +13095,25 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21981,
+        "id": 21456,
         "en": "hack",
         "kk": "",
-        "zh": "v. 劈；砍",
+        "zh": "v. 劈;砍",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21982,
+        "id": 21457,
         "en": "haircut",
         "kk": "",
-        "zh": "n. 髮型；理髮",
+        "zh": "n. 髮型;理髮",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21983,
+        "id": 21458,
         "en": "hairdresser",
         "kk": "",
         "zh": "n. 美髮師",
@@ -17214,61 +13122,61 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21984,
+        "id": 21459,
         "en": "half",
-        "kk": "",
-        "zh": "n. 一半 a 一半的 ad一半地",
+        "kk": "/hæf/",
+        "zh": "n. 一半a. 一半的ad. 一半地",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21985,
+        "id": 21460,
         "en": "halfway",
         "kk": "",
-        "zh": "a. 中途的 ad 中途地",
+        "zh": "a. 中途的ad. 中 途地",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21986,
+        "id": 21461,
         "en": "hall",
-        "kk": "",
-        "zh": "n. 會堂；大廳",
+        "kk": "/hɔːl/",
+        "zh": "n. 會堂;大廳",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21987,
+        "id": 21462,
         "en": "hallmark",
         "kk": "",
-        "zh": "n. 品質證明；戳記",
+        "zh": "n. 品質證明; 戳記",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21988,
+        "id": 21463,
         "en": "hallway",
         "kk": "",
-        "zh": "n. 玄關；門廳",
+        "zh": "n. 玄關;門廳",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21989,
+        "id": 21464,
         "en": "halt",
         "kk": "",
-        "zh": "n. 暫停；停止 v 停止；終止",
+        "zh": "n. 暫停;停止v. 停 止;終止",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21990,
+        "id": 21465,
         "en": "handbag",
         "kk": "",
         "zh": "n. 手提包",
@@ -17277,61 +13185,61 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21991,
+        "id": 21466,
         "en": "handbook",
         "kk": "",
-        "zh": "n. 手冊；旅行指南",
+        "zh": "n. 手冊;旅行 指南",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21992,
+        "id": 21467,
         "en": "handful",
         "kk": "",
-        "zh": "n. 一把；一握",
+        "zh": "n. 一把;一握",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21993,
+        "id": 21468,
         "en": "handicap",
         "kk": "",
-        "zh": "n. 障礙，殘障",
+        "zh": "n. 障礙,殘障",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21994,
+        "id": 21469,
         "en": "handle",
-        "kk": "",
-        "zh": "v. 操作；操縱",
+        "kk": "/ˈhændl/",
+        "zh": "v. 操作;操縱",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21995,
+        "id": 21470,
         "en": "handling",
         "kk": "",
-        "zh": "n. 操作；管理",
+        "zh": "n. 操作;管理",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21996,
+        "id": 21471,
         "en": "handout",
         "kk": "",
-        "zh": "n. 施捨物；傳單；印刷品",
+        "zh": "n. 施捨物;傳 單;印刷品",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21997,
+        "id": 21472,
         "en": "handshake",
         "kk": "",
         "zh": "n. 握手",
@@ -17340,106 +13248,106 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 21998,
+        "id": 21473,
         "en": "harbor",
         "kk": "",
-        "zh": "n. 港灣；海港 v庇護；藏匿",
+        "zh": "n. 港灣;海港v. 庇護;藏匿",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 21999,
+        "id": 21474,
         "en": "hardly",
         "kk": "",
-        "zh": "ad. 幾乎不；簡直不",
+        "zh": "ad. 幾乎不;簡直 不",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22000,
+        "id": 21475,
         "en": "hardware",
         "kk": "",
-        "zh": "n. 器件；器具",
+        "zh": "n. 器件;器具",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22001,
+        "id": 21476,
         "en": "harm",
         "kk": "",
-        "zh": "n. 傷害；危害 v 傷害；危害",
+        "zh": "n. 傷害;危害v. 傷 害;危害",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22002,
+        "id": 21477,
         "en": "harmful",
         "kk": "",
-        "zh": "a. 有害的；不良的",
+        "zh": "a. 有害的;不良 的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22003,
+        "id": 21478,
         "en": "harmony",
         "kk": "",
-        "zh": "n. 和睦；融洽",
+        "zh": "n. 和睦;融洽",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22004,
+        "id": 21479,
         "en": "harvest",
         "kk": "",
-        "zh": "n. 收成；產量 v收成；產量",
+        "zh": "n. 收成;產量v. 收成;產量",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22005,
+        "id": 21480,
         "en": "hasty",
         "kk": "",
-        "zh": "a. 匆忙的；急忙的",
+        "zh": "a. 匆忙的;急忙的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22006,
+        "id": 21481,
         "en": "hazard",
         "kk": "",
-        "zh": "n. 危險；危害物v 冒險作出；嘗試",
+        "zh": "n. 危險;危害物v. 冒險作出;嘗試",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22007,
+        "id": 21482,
         "en": "hazardous",
         "kk": "",
-        "zh": "a. 有危險的；冒險的",
+        "zh": "a. 有危險的; 冒險的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22008,
+        "id": 21483,
         "en": "headline",
         "kk": "",
-        "zh": "n. 標題；大標題",
+        "zh": "n. 標題;大標 題",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22009,
+        "id": 21484,
         "en": "headquarter",
         "kk": "",
         "zh": "n. 總部",
@@ -17448,61 +13356,61 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22010,
+        "id": 21485,
         "en": "heal",
         "kk": "",
-        "zh": "v. 癒合；痊癒",
+        "zh": "v. 癒合;痊癒",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22011,
+        "id": 21486,
         "en": "health",
-        "kk": "",
+        "kk": "/helθ/",
         "zh": "v. 健康",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22012,
+        "id": 21487,
         "en": "healthy",
         "kk": "",
-        "zh": "a. 健康的；健全的",
+        "zh": "a. 健康的;健全 的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22013,
+        "id": 21488,
         "en": "hear",
-        "kk": "",
-        "zh": "v. 聽見；聽",
+        "kk": "/hɪr/",
+        "zh": "v. 聽見;聽",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22014,
+        "id": 21489,
         "en": "heat",
-        "kk": "",
-        "zh": "n. 熱度；熱烈 v 變熱；發熱",
+        "kk": "/hiːt/",
+        "zh": "n. 熱度;熱烈v. 變 熱;發熱",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22015,
+        "id": 21490,
         "en": "heater",
         "kk": "",
-        "zh": "n. 加熱器；暖氣機",
+        "zh": "n. 加熱器;暖氣 機",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22016,
+        "id": 21491,
         "en": "heel",
         "kk": "",
         "zh": "n. 腳後跟",
@@ -17511,223 +13419,223 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22017,
+        "id": 21492,
         "en": "height",
-        "kk": "",
-        "zh": "n. 高度；海拔",
+        "kk": "/haɪt/",
+        "zh": "n. 高度;海拔",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22018,
+        "id": 21493,
         "en": "helmet",
         "kk": "",
-        "zh": "n. 帽盔；安全帽",
+        "zh": "n. 帽盔;安全帽",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22019,
+        "id": 21494,
         "en": "help",
-        "kk": "",
-        "zh": "n. 幫助 v 補救；治療",
+        "kk": "/help/",
+        "zh": "n. 幫助v. 補救;治 療",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22020,
+        "id": 21495,
         "en": "helpful",
         "kk": "",
-        "zh": "a. 有幫助的；有益的",
+        "zh": "a. 有幫助的;有 益的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22021,
+        "id": 21496,
         "en": "hemisphere",
         "kk": "",
-        "zh": "n. 半球；半球體",
+        "zh": "n. 半球;半 球體",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22022,
+        "id": 21497,
         "en": "hence",
         "kk": "",
-        "zh": "ad. 因此；由此",
+        "zh": "ad. 因此;由此",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22023,
+        "id": 21498,
         "en": "herd",
         "kk": "",
-        "zh": "n. 畜群；牧群 v 放牧",
+        "zh": "n. 畜群;牧群v. 放 牧",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22024,
+        "id": 21499,
         "en": "heritage",
         "kk": "",
-        "zh": "n. 遺產；命運",
+        "zh": "n. 遺產;命運",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22025,
+        "id": 21500,
         "en": "hesitate",
         "kk": "",
-        "zh": "v. 躊躇；猶豫",
+        "zh": "v. 躊躇;猶豫",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22026,
+        "id": 21501,
         "en": "hesitation",
         "kk": "",
-        "zh": "n. 躊躇；猶豫",
+        "zh": "n. 躊躇;猶豫",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22027,
+        "id": 21502,
         "en": "hidden",
         "kk": "",
-        "zh": "a. 隱藏的；隱祕的",
+        "zh": "a. 隱藏的;隱祕 的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22028,
+        "id": 21503,
         "en": "hide",
-        "kk": "",
+        "kk": "/haɪd/",
         "zh": "v. 隱藏",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22029,
+        "id": 21504,
         "en": "high",
-        "kk": "",
-        "zh": "a. 高的；高級的 ad高聲地，在高處",
+        "kk": "/haɪ/",
+        "zh": "a. 高的;高級的ad. 高聲地,在高處",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22030,
+        "id": 21505,
         "en": "highway",
         "kk": "",
-        "zh": "n. 公路；幹道",
+        "zh": "n. 公路;幹道",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22031,
+        "id": 21506,
         "en": "hike",
         "kk": "",
-        "zh": "v. 健行；遠足",
+        "zh": "v. 健行;遠足",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22032,
+        "id": 21507,
         "en": "hilarious",
         "kk": "",
-        "zh": "a. 可笑的；荒謬的",
+        "zh": "a. 可笑的;荒 謬的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22033,
+        "id": 21508,
         "en": "hinder",
         "kk": "",
-        "zh": "v. 妨礙；阻礙",
+        "zh": "v. 妨礙;阻礙",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22034,
+        "id": 21509,
         "en": "hint",
         "kk": "",
-        "zh": "n. 暗示 v 暗示；示意",
+        "zh": "n. 暗示v. 暗示;示 意",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22035,
+        "id": 21510,
         "en": "hire",
         "kk": "",
-        "zh": "v. 僱用 n 租用；僱用",
+        "zh": "v. 僱用n. 租用;僱 用",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22036,
+        "id": 21511,
         "en": "hobby",
         "kk": "",
-        "zh": "n. 興趣；癖好",
+        "zh": "n. 興趣;癖好",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22037,
+        "id": 21512,
         "en": "hold",
         "kk": "",
-        "zh": "v. 握著；抓住 n 掌握；支配",
+        "zh": "v. 握著;抓住n. 掌 握;支配",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22038,
+        "id": 21513,
         "en": "hole",
         "kk": "",
-        "zh": "n. 洞；破洞 v 鑿洞於；穿孔於",
+        "zh": "n. 洞;破洞v. 鑿洞 於;穿孔於",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22039,
+        "id": 21514,
         "en": "holiday",
         "kk": "",
-        "zh": "n. 節日；假日",
+        "zh": "n. 節日;假日",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22040,
+        "id": 21515,
         "en": "home",
         "kk": "",
-        "zh": "n. 家庭；家庭生活ad 在家；回家 a 家庭的",
+        "zh": "n. 家庭;家庭生活ad. 在家;回家a. 家庭的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22041,
+        "id": 21516,
         "en": "homesick",
         "kk": "",
         "zh": "n. 思家的",
@@ -17736,106 +13644,106 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22042,
+        "id": 21517,
         "en": "hometown",
         "kk": "",
-        "zh": "n. 故鄉；家鄉",
+        "zh": "n. 故鄉;家 鄉",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22043,
+        "id": 21518,
         "en": "honest",
         "kk": "",
-        "zh": "a. 誠實的；正直的",
+        "zh": "a. 誠實的;正直 的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22044,
+        "id": 21519,
         "en": "honesty",
         "kk": "",
-        "zh": "n. 誠實；正直",
+        "zh": "n. 誠實;正直",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22045,
+        "id": 21520,
         "en": "honor",
         "kk": "",
-        "zh": "n. 榮譽；名譽",
+        "zh": "n. 榮譽;名譽",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22046,
+        "id": 21521,
         "en": "honorary",
         "kk": "",
-        "zh": "a. 榮譽的; 名譽的",
+        "zh": "a. 榮譽的; 名 譽的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22047,
+        "id": 21522,
         "en": "hopeful",
         "kk": "",
-        "zh": "a. 有希望的；有前途的",
+        "zh": "a. 有希望的;有 前途的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22048,
+        "id": 21523,
         "en": "hopeless",
         "kk": "",
-        "zh": "a. 無望的；沒有辦法的",
+        "zh": "a. 無望的;沒 有辦法的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22049,
+        "id": 21524,
         "en": "horizon",
         "kk": "",
-        "zh": "n. 地平線；眼界；視野",
+        "zh": "n. 地平線;眼界; 視野",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22050,
+        "id": 21525,
         "en": "horizontal",
         "kk": "",
-        "zh": "a. 水平的；橫的",
+        "zh": "a. 水平的;橫 的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22051,
+        "id": 21526,
         "en": "horrible",
         "kk": "",
-        "zh": "a. 可怕的；令人毛骨悚然的",
+        "zh": "a. 可怕的;令人 毛骨悚然的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22052,
+        "id": 21527,
         "en": "horrify",
         "kk": "",
-        "zh": "v. 使恐懼；使驚懼",
+        "zh": "v. 使恐懼;使驚 懼",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22053,
+        "id": 21528,
         "en": "hospital",
         "kk": "",
         "zh": "n. 醫院",
@@ -17844,97 +13752,97 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22054,
+        "id": 21529,
         "en": "hospitality",
         "kk": "",
-        "zh": "n. 好客；殷勤招待",
+        "zh": "n. 好客;殷勤 招待",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22055,
+        "id": 21530,
         "en": "host",
         "kk": "",
-        "zh": "n. 主人；主辦",
+        "zh": "n. 主人;主辦",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22056,
+        "id": 21531,
         "en": "hostile",
         "kk": "",
-        "zh": "a. 敵人的；敵方的",
+        "zh": "a. 敵人的;敵方 的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22057,
+        "id": 21532,
         "en": "hotel",
         "kk": "",
-        "zh": "n. 旅館；飯店",
+        "zh": "n. 旅館;飯店",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22058,
+        "id": 21533,
         "en": "hour",
         "kk": "",
-        "zh": "n. 小時；時刻",
+        "zh": "n. 小時;時刻",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22059,
+        "id": 21534,
         "en": "hourly",
         "kk": "",
-        "zh": "a. 每小時的 ad 每小時地；頻繁地",
+        "zh": "a. 每小時的ad. 每 小時地;頻繁地",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22060,
+        "id": 21535,
         "en": "house",
         "kk": "",
-        "zh": "n. 房子；住宅",
+        "zh": "n. 房子;住宅",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22061,
+        "id": 21536,
         "en": "household",
         "kk": "",
-        "zh": "n. 家庭，戶a 家的；家庭的",
+        "zh": "n. 家庭,戶a. 家的;家庭的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22062,
+        "id": 21537,
         "en": "housekeeper",
         "kk": "",
-        "zh": "n. 管家；佣人",
+        "zh": "n. 管家; 佣人",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22063,
+        "id": 21538,
         "en": "housing",
         "kk": "",
-        "zh": "n. 房屋，住宅",
+        "zh": "n. 房屋,住宅",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22064,
+        "id": 21539,
         "en": "hub",
         "kk": "",
         "zh": "n. 集線器",
@@ -17943,25 +13851,25 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22065,
+        "id": 21540,
         "en": "huge",
         "kk": "",
-        "zh": "a. 龐大的；巨大的",
+        "zh": "a. 龐大的;巨大的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22066,
+        "id": 21541,
         "en": "humane",
         "kk": "",
-        "zh": "a. 人道的；仁慈的",
+        "zh": "a. 人道的;仁 慈的",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22067,
+        "id": 21542,
         "en": "humankind",
         "kk": "",
         "zh": "n. 人類",
@@ -17970,25 +13878,25 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22068,
-        "en": "human",
+        "id": 21543,
+        "en": "human resource",
         "kk": "",
-        "zh": "resource. n 人力資源",
+        "zh": "n. 人力 資源",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22069,
+        "id": 21544,
         "en": "humble",
         "kk": "",
-        "zh": "a. 謙遜的；謙恭的 v 使謙卑",
+        "zh": "a. 謙遜的;謙恭 的v. 使謙卑",
         "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22070,
+        "id": 21545,
         "en": "humid",
         "kk": "",
         "zh": "a. 潮濕的",
@@ -17997,3859 +13905,4120 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22071,
+        "id": 21546,
         "en": "humidity",
         "kk": "",
-        "zh": "n. 濕氣；濕度",
-        "unit": 13,
+        "zh": "n. 濕氣;濕度",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22072,
+        "id": 21547,
         "en": "humor",
         "kk": "",
-        "zh": "n. 幽默感；幽默",
-        "unit": 13,
+        "zh": "n. 幽默感;幽默",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22073,
+        "id": 21548,
         "en": "hurry",
         "kk": "",
-        "zh": "v. 使趕緊；催促 n急忙；倉促",
-        "unit": 13,
+        "zh": "v. 使趕緊;催促n. 急忙;倉促",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22074,
+        "id": 21549,
         "en": "hurt",
         "kk": "",
-        "zh": "n. 受傷；疼痛 a 受傷的 v 損害；危害",
-        "unit": 13,
+        "zh": "n. 受傷;疼痛a. 受 傷的v. 損害;危害",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22075,
+        "id": 21550,
         "en": "hush",
         "kk": "",
-        "zh": "n. 靜寂，沉默 v 使沉默，使安靜I",
-        "unit": 13,
+        "zh": "n. 靜寂,沉默v. 使 沉默,使安靜",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22076,
+        "id": 21551,
         "en": "ice",
         "kk": "",
-        "zh": "n. 冰 v 結冰",
-        "unit": 13,
+        "zh": "n. 冰v. 結冰",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22077,
+        "id": 21552,
         "en": "ice-cold",
         "kk": "",
-        "zh": "a. 冰冷的；毫無感情的",
-        "unit": 13,
+        "zh": "a. 冰冷的;毫無 感情的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22078,
+        "id": 21553,
         "en": "icon",
         "kk": "",
-        "zh": "n. 畫像；偶像",
-        "unit": 13,
+        "zh": "n. 畫像;偶像",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22079,
+        "id": 21554,
         "en": "icy",
         "kk": "",
-        "zh": "a. 多冰的；冷冰冰的",
-        "unit": 13,
+        "zh": "a. 多冰的;冷冰冰的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22080,
+        "id": 21555,
         "en": "idea",
         "kk": "",
-        "zh": "n. 打算；計畫",
-        "unit": 13,
+        "zh": "n. 打算;計畫",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22081,
+        "id": 21556,
         "en": "ideal",
         "kk": "",
-        "zh": "a. 理想的；完美的",
-        "unit": 13,
+        "zh": "a. 理想的;完美的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22082,
+        "id": 21557,
         "en": "idealize",
         "kk": "",
-        "zh": "v. 形成理想；理想化",
-        "unit": 13,
+        "zh": "v. 形成理想;理 想化",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22083,
+        "id": 21558,
         "en": "identical",
         "kk": "",
-        "zh": "a. 相同的；完全相似的1559.  identiﬁcation v 認出；識別",
-        "unit": 13,
+        "zh": "a. 相同的;完 全相似的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22084,
+        "id": 21559,
+        "en": "identification",
+        "kk": "",
+        "zh": "v. 認出; 識別",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21560,
         "en": "identify",
         "kk": "",
-        "zh": "v. 認出；識別",
-        "unit": 13,
+        "zh": "v. 認出;識別",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22085,
+        "id": 21561,
         "en": "idle",
         "kk": "",
-        "zh": "v. 閒置的；空閒的",
-        "unit": 13,
+        "zh": "v. 閒置的;空閒的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22086,
+        "id": 21562,
         "en": "idol",
         "kk": "",
         "zh": "n. 偶像",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22087,
+        "id": 21563,
         "en": "idolize",
         "kk": "",
         "zh": "v. 崇拜偶像",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22088,
+        "id": 21564,
         "en": "ignite",
         "kk": "",
-        "zh": "v. 點燃；使燃燒",
-        "unit": 13,
+        "zh": "v. 點燃;使燃燒",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22089,
+        "id": 21565,
         "en": "ignition",
         "kk": "",
-        "zh": "n. 著火；燃燒",
-        "unit": 13,
+        "zh": "n. 著火;燃燒",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22090,
+        "id": 21566,
         "en": "ignorance",
         "kk": "",
-        "zh": "n. 無知；不學無術",
-        "unit": 13,
+        "zh": "n. 無知;不學 無術",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22091,
+        "id": 21567,
         "en": "ignorant",
         "kk": "",
-        "zh": "a. 無知的；不學無術的",
-        "unit": 13,
+        "zh": "a. 無知的;不 學無術的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22092,
+        "id": 21568,
         "en": "ignore",
         "kk": "",
-        "zh": "v. 不理會；忽視",
-        "unit": 13,
+        "zh": "v. 不理會;忽視",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22093,
+        "id": 21569,
         "en": "ill",
         "kk": "",
-        "zh": "a. 生病的；壞的 n 不幸；禍害",
-        "unit": 13,
+        "zh": "a. 生病的;壞的n. 不 幸;禍害",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22094,
+        "id": 21570,
         "en": "ill-advised",
         "kk": "",
-        "zh": "a. 欠考慮的；輕率的",
-        "unit": 13,
+        "zh": "a. 欠考慮的; 輕率的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22095,
+        "id": 21571,
         "en": "illegal",
         "kk": "",
         "zh": "a. 違法的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22096,
+        "id": 21572,
         "en": "illicit",
         "kk": "",
-        "zh": "a. 不法的，違禁的",
-        "unit": 13,
+        "zh": "a. 不法的,違禁的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22097,
+        "id": 21573,
         "en": "illiteracy",
         "kk": "",
-        "zh": "n. 不識字；文盲",
-        "unit": 13,
+        "zh": "n. 不識字;文 盲",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22098,
+        "id": 21574,
         "en": "illness",
         "kk": "",
-        "zh": "n. 患病；身體不適",
-        "unit": 13,
+        "zh": "n. 患病;身體不 適",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22099,
+        "id": 21575,
         "en": "illogical",
         "kk": "",
         "zh": "a. 不合邏輯的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22100,
+        "id": 21576,
         "en": "illuminate",
         "kk": "",
-        "zh": "v. 照亮；照射",
-        "unit": 13,
+        "zh": "v. 照亮;照射",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22101,
+        "id": 21577,
         "en": "illusion",
         "kk": "",
-        "zh": "n. 錯覺；幻覺",
-        "unit": 13,
+        "zh": "n. 錯覺;幻覺",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22102,
+        "id": 21578,
         "en": "illustrate",
         "kk": "",
-        "zh": "v. 說明；闡明",
-        "unit": 13,
+        "zh": "v. 說明;闡明",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22103,
+        "id": 21579,
         "en": "illustration",
         "kk": "",
-        "zh": "n. 描繪；插畫",
-        "unit": 13,
+        "zh": "n. 描繪;插畫",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22104,
+        "id": 21580,
         "en": "image",
         "kk": "",
-        "zh": "n. 圖像；圖案",
-        "unit": 13,
+        "zh": "n. 圖像;圖案",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22105,
+        "id": 21581,
         "en": "imaginary",
         "kk": "",
-        "zh": "a. 想像的；幻想的",
-        "unit": 13,
+        "zh": "a. 想像的;幻 想的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22106,
+        "id": 21582,
         "en": "imagination",
         "kk": "",
         "zh": "n. 想像力",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22107,
+        "id": 21583,
         "en": "imagine",
         "kk": "",
         "zh": "v. 想像",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22108,
+        "id": 21584,
         "en": "imitate",
         "kk": "",
         "zh": "v. 模仿",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22109,
+        "id": 21585,
         "en": "immature",
         "kk": "",
         "zh": "a. 不成熟的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22110,
+        "id": 21586,
         "en": "immediate",
         "kk": "",
-        "zh": "a. 立刻的；立即的",
-        "unit": 13,
+        "zh": "a. 立刻的; 立即的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22111,
+        "id": 21587,
         "en": "immediately",
         "kk": "",
-        "zh": "ad. 馬上；直接地",
-        "unit": 13,
+        "zh": "ad. 馬上; 直接地",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22112,
+        "id": 21588,
         "en": "immense",
         "kk": "",
-        "zh": "a. 巨大的；廣大的",
-        "unit": 13,
+        "zh": "a. 巨大的;廣 大的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22113,
+        "id": 21589,
         "en": "immigrant",
         "kk": "",
-        "zh": "n. 移民；僑民a 移民的",
-        "unit": 13,
+        "zh": "n. 移民;僑民a. 移民的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22114,
+        "id": 21590,
         "en": "immobile",
         "kk": "",
-        "zh": "a. 不能動的；固定的",
-        "unit": 13,
+        "zh": "a. 不能動的; 固定的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22115,
+        "id": 21591,
         "en": "immune",
         "kk": "",
         "zh": "a. 免疫的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22116,
+        "id": 21592,
         "en": "impact",
         "kk": "",
         "zh": "v. 產生影響",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22117,
+        "id": 21593,
         "en": "impair",
         "kk": "",
-        "zh": "v. 損害；損傷",
-        "unit": 13,
+        "zh": "v. 損害;損傷",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22118,
+        "id": 21594,
         "en": "impartial",
         "kk": "",
-        "zh": "a. 公正的；無偏見的",
-        "unit": 13,
+        "zh": "a. 公正的;無 偏見的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22119,
+        "id": 21595,
         "en": "impatient",
         "kk": "",
-        "zh": "a. 不耐煩的，沒耐心的",
-        "unit": 13,
+        "zh": "a. 不耐煩的, 沒耐心的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22120,
+        "id": 21596,
         "en": "impeccable",
         "kk": "",
-        "zh": "a. 無懈可擊的；無缺點的",
-        "unit": 13,
+        "zh": "a. 無懈可擊 的;無缺點的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22121,
+        "id": 21597,
         "en": "impede",
         "kk": "",
-        "zh": "v. 妨礙；阻礙",
-        "unit": 13,
+        "zh": "v. 妨礙;阻礙",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22122,
+        "id": 21598,
         "en": "imperative",
         "kk": "",
-        "zh": "a. 必要的；緊急的",
-        "unit": 13,
+        "zh": "a. 必要的; 緊急的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22123,
+        "id": 21599,
         "en": "implement",
         "kk": "",
-        "zh": "n. 工具；器具 v 履行；實施",
-        "unit": 13,
+        "zh": "n. 工具;器 具v. 履行;實施",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22124,
+        "id": 21600,
         "en": "implementation",
         "kk": "",
-        "zh": "n. 履行；完成",
-        "unit": 13,
+        "zh": "n. 履 行;完成",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22125,
+        "id": 21601,
         "en": "implication",
         "kk": "",
-        "zh": "n. 牽連；涉及",
-        "unit": 13,
+        "zh": "n. 牽連;涉 及",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22126,
+        "id": 21602,
         "en": "imply",
         "kk": "",
-        "zh": "v. 暗指；暗示",
-        "unit": 13,
+        "zh": "v. 暗指;暗示",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22127,
+        "id": 21603,
         "en": "impolite",
         "kk": "",
         "zh": "a. 失禮的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22128,
+        "id": 21604,
         "en": "import",
         "kk": "",
-        "zh": "n. 進口；輸入",
-        "unit": 13,
+        "zh": "n. 進口;輸入",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22129,
+        "id": 21605,
         "en": "importance",
         "kk": "",
         "zh": "n. 重要性",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22130,
+        "id": 21606,
         "en": "important",
         "kk": "",
         "zh": "a. 重要的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22131,
+        "id": 21607,
         "en": "impose",
         "kk": "",
         "zh": "v. 強加於",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22132,
+        "id": 21608,
         "en": "impossible",
         "kk": "",
         "zh": "a. 不可能的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22133,
+        "id": 21609,
         "en": "impractical",
         "kk": "",
         "zh": "a. 不實際的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22134,
+        "id": 21610,
         "en": "impress",
         "kk": "",
-        "zh": "v. 使感動；使銘記",
-        "unit": 13,
+        "zh": "v. 使感動;使銘 記",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22135,
+        "id": 21611,
         "en": "impression",
         "kk": "",
         "zh": "n. 印象",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22136,
+        "id": 21612,
         "en": "impressive",
         "kk": "",
-        "zh": "a. 印象深刻的",
-        "unit": 13,
+        "zh": "a. 印象深刻 的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22137,
+        "id": 21613,
         "en": "improper",
         "kk": "",
         "zh": "a. 不合適的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22138,
+        "id": 21614,
         "en": "improve",
         "kk": "",
-        "zh": "v. 增強；改善",
-        "unit": 13,
+        "zh": "v. 增強;改善",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22139,
+        "id": 21615,
         "en": "improvement",
         "kk": "",
-        "zh": "n. 增強；改善",
-        "unit": 13,
+        "zh": "n. 增強; 改善",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22140,
+        "id": 21616,
         "en": "impulse",
         "kk": "",
-        "zh": "n. 衝動；刺激",
-        "unit": 13,
+        "zh": "n. 衝動;刺激",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22141,
+        "id": 21617,
         "en": "inability",
         "kk": "",
-        "zh": "n. 無能；無力",
-        "unit": 13,
+        "zh": "n. 無能;無力",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22142,
+        "id": 21618,
         "en": "inaccurate",
         "kk": "",
         "zh": "a. 不正確的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22143,
+        "id": 21619,
         "en": "inactive",
         "kk": "",
         "zh": "a. 不活躍的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22144,
+        "id": 21620,
         "en": "inadequate",
         "kk": "",
         "zh": "n. 不適切的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22145,
+        "id": 21621,
         "en": "inbound",
         "kk": "",
-        "zh": "a. 回內地的；歸本國的1622.  Inc. n 法人組織；公司 (=incorporation)",
-        "unit": 13,
+        "zh": "a. 回內地的;歸 本國的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22146,
+        "id": 21622,
+        "en": "Inc.",
+        "kk": "",
+        "zh": "n. 法人組織;公司 (= incorporation)",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21623,
         "en": "incentive",
         "kk": "",
-        "zh": "n. 鼓勵；動機a 刺激的；鼓勵的",
-        "unit": 13,
+        "zh": "n. 鼓勵;動機a. 刺激的;鼓勵的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22147,
+        "id": 21624,
         "en": "inch",
         "kk": "",
-        "zh": "n. 英吋；少許 v 緩慢地移動",
-        "unit": 13,
+        "zh": "n. 英吋;少許v. 緩 慢地移動",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22148,
+        "id": 21625,
         "en": "incident",
         "kk": "",
-        "zh": "n. 事件；事變",
-        "unit": 13,
+        "zh": "n. 事件;事變",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22149,
+        "id": 21626,
         "en": "incidental",
         "kk": "",
-        "zh": "n. 附帶的；伴隨的",
-        "unit": 13,
+        "zh": "n. 附帶的;伴 隨的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22150,
+        "id": 21627,
         "en": "incinerate",
         "kk": "",
-        "zh": "v. 焚化；灰化",
-        "unit": 13,
+        "zh": "v. 焚化;灰化",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22151,
+        "id": 21628,
         "en": "incinerator",
         "kk": "",
         "zh": "n. 焚化爐",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22152,
+        "id": 21629,
         "en": "inclination",
         "kk": "",
-        "zh": "n. 傾向；意向",
-        "unit": 13,
+        "zh": "n. 傾向;意向",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22153,
+        "id": 21630,
         "en": "incline",
         "kk": "",
-        "zh": "v. 傾斜；屈身",
-        "unit": 13,
+        "zh": "v. 傾斜;屈身",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22154,
+        "id": 21631,
         "en": "include",
         "kk": "",
-        "zh": "v. 包括；包含",
-        "unit": 13,
+        "zh": "v. 包括;包含",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22155,
+        "id": 21632,
         "en": "including",
         "kk": "",
-        "zh": "prep. 包括；包含",
-        "unit": 13,
+        "zh": "prep. 包括;包 含",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22156,
+        "id": 21633,
         "en": "inclusive",
         "kk": "",
-        "zh": "a. 包含的，包括的",
-        "unit": 13,
+        "zh": "a. 包含的,包 括的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22157,
+        "id": 21634,
         "en": "incoherent",
         "kk": "",
-        "zh": "a. 無條理的；不一貫的",
-        "unit": 13,
+        "zh": "a. 無條理的; 不一貫的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22158,
+        "id": 21635,
         "en": "income",
         "kk": "",
-        "zh": "n. 收入；收益",
-        "unit": 13,
+        "zh": "n. 收入;收益",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22159,
+        "id": 21636,
         "en": "incoming",
         "kk": "",
-        "zh": "a. 進來的 n 進來；收入",
-        "unit": 13,
+        "zh": "a. 進來的n. 進 來;收入",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22160,
+        "id": 21637,
         "en": "incompetent",
         "kk": "",
-        "zh": "a. 無能力的；不能勝任的",
-        "unit": 13,
+        "zh": "a. 無能力 的;不能勝任的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22161,
+        "id": 21638,
         "en": "incomplete",
         "kk": "",
-        "zh": "a. 不完全的；不完整的",
-        "unit": 13,
+        "zh": "a. 不完全的; 不完整的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22162,
+        "id": 21639,
         "en": "inconsistent",
         "kk": "",
-        "zh": "a. 不一致的；不協調的",
-        "unit": 13,
+        "zh": "a. 不一致 的;不協調的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22163,
+        "id": 21640,
         "en": "inconvenience",
         "kk": "",
-        "zh": "n. 不方便",
-        "unit": 13,
+        "zh": "n. 不方 便",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22164,
+        "id": 21641,
         "en": "inconvenient",
         "kk": "",
-        "zh": "a. 不方便的",
-        "unit": 13,
+        "zh": "a. 不方便 的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22165,
+        "id": 21642,
         "en": "incorporate",
         "kk": "",
-        "zh": "v. 合併；混合；組成公司",
-        "unit": 13,
+        "zh": "v. 合併;混 合;組成公司",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22166,
+        "id": 21643,
         "en": "incorporation",
         "kk": "",
-        "zh": "n. 公司；團結",
-        "unit": 13,
+        "zh": "n. 公司; 團結",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22167,
+        "id": 21644,
         "en": "incorrect",
         "kk": "",
         "zh": "a. 不正確的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22168,
+        "id": 21645,
         "en": "increase",
         "kk": "",
-        "zh": "v. 增加；增多n 增加",
-        "unit": 13,
+        "zh": "v. 增加;增多n. 增加",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22169,
+        "id": 21646,
         "en": "incredibility",
         "kk": "",
         "zh": "n. 不可信",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22170,
+        "id": 21647,
         "en": "incredible",
         "kk": "",
-        "zh": "a. 難以置信的；驚人的",
-        "unit": 13,
+        "zh": "a. 難以置信 的;驚人的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22171,
+        "id": 21648,
         "en": "incur",
         "kk": "",
-        "zh": "v. 招致；惹起",
-        "unit": 13,
+        "zh": "v. 招致;惹起",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22172,
+        "id": 21649,
         "en": "indebt",
         "kk": "",
         "zh": "v. 使負債",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22173,
+        "id": 21650,
         "en": "indecisive",
         "kk": "",
         "zh": "a. 優柔寡斷的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22174,
+        "id": 21651,
         "en": "indeed",
         "kk": "",
-        "zh": "ad. 真正地；確實1652.  indeﬁnite a 不確定的；未定的",
-        "unit": 13,
+        "zh": "ad. 真正地;確實",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22175,
+        "id": 21652,
+        "en": "indefinite",
+        "kk": "",
+        "zh": "a. 不確定的; 未定的",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21653,
         "en": "independent",
         "kk": "",
-        "zh": "a. 獨立的；自主的",
-        "unit": 13,
+        "zh": "a. 獨立的; 自主的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22176,
+        "id": 21654,
         "en": "in-depth",
         "kk": "",
-        "zh": "a. 深入的；徹底的",
-        "unit": 13,
+        "zh": "a. 深入的;徹 底的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22177,
+        "id": 21655,
         "en": "index",
         "kk": "",
-        "zh": "n. 索引 v 表明；指示",
-        "unit": 13,
+        "zh": "n. 索引v. 表明;指 示",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22178,
+        "id": 21656,
         "en": "indicate",
         "kk": "",
-        "zh": "v. 指示；指出",
-        "unit": 13,
+        "zh": "v. 指示;指出",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22179,
+        "id": 21657,
         "en": "indication",
         "kk": "",
-        "zh": "n. 徵兆；跡象",
-        "unit": 13,
+        "zh": "n. 徵兆;跡象",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22180,
+        "id": 21658,
         "en": "indicator",
         "kk": "",
-        "zh": "n. 指示者；指示物",
-        "unit": 13,
+        "zh": "n. 指示者;指 示物",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22181,
+        "id": 21659,
         "en": "indifference",
         "kk": "",
-        "zh": "n. 漠不關心；冷淡",
-        "unit": 13,
+        "zh": "n. 漠不關 心;冷淡",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22182,
+        "id": 21660,
         "en": "indifferent",
         "kk": "",
         "zh": "a. 冷淡的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22183,
+        "id": 21661,
         "en": "indispensable",
         "kk": "",
         "zh": "a. 必需的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22184,
+        "id": 21662,
         "en": "individual",
         "kk": "",
-        "zh": "a. 個體的；個人的",
-        "unit": 13,
+        "zh": "a. 個體的;個 人的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22185,
+        "id": 21663,
         "en": "indoor",
         "kk": "",
         "zh": "a. 室內的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22186,
+        "id": 21664,
         "en": "indoors",
         "kk": "",
-        "zh": "ad. 在室內；在屋裡",
-        "unit": 13,
+        "zh": "ad. 在室內;在屋 裡",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22187,
+        "id": 21665,
         "en": "industrial",
         "kk": "",
         "zh": "a. 工業的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22188,
+        "id": 21666,
         "en": "industrialize",
         "kk": "",
         "zh": "v. 工業化",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22189,
+        "id": 21667,
         "en": "industry",
         "kk": "",
-        "zh": "n. 工業；企業",
-        "unit": 13,
+        "zh": "n. 工業;企業",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22190,
+        "id": 21668,
         "en": "inevitable",
         "kk": "",
         "zh": "a. 無法避免的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22191,
+        "id": 21669,
         "en": "inevitably",
         "kk": "",
         "zh": "ad. 無法避免地",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22192,
+        "id": 21670,
         "en": "infamous",
         "kk": "",
         "zh": "a. 聲名狼藉的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22193,
+        "id": 21671,
         "en": "infancy",
         "kk": "",
-        "zh": "n. 嬰兒期；幼年",
-        "unit": 13,
+        "zh": "n. 嬰兒期;幼年",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22194,
+        "id": 21672,
         "en": "infant",
         "kk": "",
-        "zh": "n. 嬰兒 a 嬰兒的；初期的",
-        "unit": 13,
+        "zh": "n. 嬰兒a. 嬰兒的; 初期的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22195,
+        "id": 21673,
         "en": "infect",
         "kk": "",
-        "zh": "v. 使受影響；感染",
-        "unit": 13,
+        "zh": "v. 使受影響;感染",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22196,
+        "id": 21674,
         "en": "infection",
         "kk": "",
-        "zh": "n. 傳染；侵染",
-        "unit": 13,
+        "zh": "n. 傳染;侵染",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22197,
+        "id": 21675,
         "en": "infer",
         "kk": "",
-        "zh": "v. 推論；推斷",
-        "unit": 13,
+        "zh": "v. 推論;推斷",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22198,
+        "id": 21676,
         "en": "inference",
         "kk": "",
-        "zh": "n. 推論；推斷",
-        "unit": 13,
+        "zh": "n. 推論;推斷",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22199,
+        "id": 21677,
         "en": "inferior",
         "kk": "",
-        "zh": "a. 低等的；下級的1678. inﬁnite a 無限的1679. inﬁnity n 無限1680. inﬂation n 通貨膨脹1681.  inﬂict v 給予（打擊）；使遭受1682. inﬂuence n 影響；作用1683. inﬂux n 湧進；匯集",
-        "unit": 13,
+        "zh": "a. 低等的;下級 的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22200,
+        "id": 21678,
+        "en": "infinite",
+        "kk": "",
+        "zh": "a. 無限的",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21679,
+        "en": "infinity",
+        "kk": "",
+        "zh": "n. 無限",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21680,
+        "en": "inflation",
+        "kk": "",
+        "zh": "n. 通貨膨脹",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21681,
+        "en": "inflict",
+        "kk": "",
+        "zh": "v. 給予(打擊); 使遭受",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21682,
+        "en": "influence",
+        "kk": "",
+        "zh": "n. 影響;作用",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21683,
+        "en": "influx",
+        "kk": "",
+        "zh": "n. 湧進;匯集",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21684,
         "en": "info",
         "kk": "",
-        "zh": "n. 通知；報告",
-        "unit": 13,
+        "zh": "n. 通知;報告",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22201,
+        "id": 21685,
         "en": "inform",
         "kk": "",
-        "zh": "v. 通知；告知",
-        "unit": 13,
+        "zh": "v. 通知;告知",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22202,
+        "id": 21686,
         "en": "informal",
         "kk": "",
         "zh": "a. 不正式的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22203,
+        "id": 21687,
         "en": "information",
         "kk": "",
         "zh": "n. 資訊",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22204,
+        "id": 21688,
         "en": "informative",
         "kk": "",
-        "zh": "a. 見聞廣博的",
-        "unit": 13,
+        "zh": "a. 見聞廣博 的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22205,
+        "id": 21689,
         "en": "infrastructure",
         "kk": "",
-        "zh": "n. 公共建設",
-        "unit": 13,
+        "zh": "n. 公共建 設",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22206,
+        "id": 21690,
         "en": "ingredient",
         "kk": "",
-        "zh": "n. 組成；原料",
-        "unit": 13,
+        "zh": "n. 組成;原料",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22207,
+        "id": 21691,
         "en": "inhabit",
         "kk": "",
-        "zh": "v. 居住於；棲息於",
-        "unit": 13,
+        "zh": "v. 居住於;棲息 於",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22208,
+        "id": 21692,
         "en": "inhabitant",
         "kk": "",
-        "zh": "n. 居民；居住者",
-        "unit": 13,
+        "zh": "n. 居民;居住 者",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22209,
+        "id": 21693,
         "en": "inherent",
         "kk": "",
-        "zh": "a. 內在的；固有的",
-        "unit": 13,
+        "zh": "a. 內在的;固 有的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22210,
+        "id": 21694,
         "en": "initial",
         "kk": "",
-        "zh": "a. 開始的；最初的",
-        "unit": 13,
+        "zh": "a. 開始的;最初的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22211,
+        "id": 21695,
         "en": "initially",
         "kk": "",
-        "zh": "ad. 開始的；最初的",
-        "unit": 13,
+        "zh": "ad. 開始的;最初 的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22212,
+        "id": 21696,
         "en": "initiate",
         "kk": "",
         "zh": "a. 新加入的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22213,
+        "id": 21697,
         "en": "initiation",
         "kk": "",
-        "zh": "n. 開始；創始",
-        "unit": 13,
+        "zh": "n. 開始;創始",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22214,
+        "id": 21698,
         "en": "initiative",
         "kk": "",
         "zh": "a. 創始的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22215,
+        "id": 21699,
         "en": "inject",
         "kk": "",
         "zh": "v. 注射",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22216,
+        "id": 21700,
         "en": "injection",
         "kk": "",
         "zh": "n. 注射",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22217,
+        "id": 21701,
         "en": "injure",
         "kk": "",
-        "zh": "v. 傷害；損害",
-        "unit": 13,
+        "zh": "v. 傷害;損害",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22218,
+        "id": 21702,
         "en": "injured",
         "kk": "",
         "zh": "a. 受傷的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22219,
+        "id": 21703,
         "en": "injury",
         "kk": "",
         "zh": "n. 受傷",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22220,
+        "id": 21704,
         "en": "inner",
         "kk": "",
-        "zh": "a. 內部的；核心的",
-        "unit": 13,
+        "zh": "a. 內部的;核心的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22221,
+        "id": 21705,
         "en": "innocent",
         "kk": "",
-        "zh": "a. 無辜的；單純的",
-        "unit": 13,
+        "zh": "a. 無辜的;單 純的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22222,
+        "id": 21706,
         "en": "innovate",
         "kk": "",
-        "zh": "v. 創立；革新",
-        "unit": 13,
+        "zh": "v. 創立;革新",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22223,
+        "id": 21707,
         "en": "innovation",
         "kk": "",
         "zh": "n. 創新",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22224,
+        "id": 21708,
         "en": "innovator",
         "kk": "",
         "zh": "n. 創新者",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22225,
+        "id": 21709,
         "en": "inquire",
         "kk": "",
-        "zh": "v. 詢問；打聽",
-        "unit": 13,
+        "zh": "v. 詢問;打聽",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22226,
+        "id": 21710,
+        "en": "inquiry",
+        "kk": "",
+        "zh": "n. 詢問;打聽",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21711,
         "en": "insane",
         "kk": "",
-        "zh": "a. 精神錯亂的；瘋狂的",
-        "unit": 13,
+        "zh": "a. 精神錯亂的; 瘋狂的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22227,
+        "id": 21712,
         "en": "insanity",
         "kk": "",
         "zh": "n. 瘋狂",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22228,
+        "id": 21713,
         "en": "insecure",
         "kk": "",
-        "zh": "a. 不安全的；有危險的",
-        "unit": 13,
+        "zh": "a. 不安全的; 有危險的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22229,
+        "id": 21714,
         "en": "insecurity",
         "kk": "",
-        "zh": "n. 不安全；危險",
-        "unit": 13,
+        "zh": "n. 不安全;危 險",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22230,
+        "id": 21715,
         "en": "insert",
         "kk": "",
-        "zh": "v. 插入；嵌入",
-        "unit": 13,
+        "zh": "v. 插入;嵌入",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22231,
+        "id": 21716,
         "en": "inside",
         "kk": "",
-        "zh": "n. 內部；裡面 a在裡面 prep 在⋯⋯的裡面",
-        "unit": 13,
+        "zh": "n. 內部;裡面a. 在裡面prep. 在⋯⋯的裡 面",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22232,
+        "id": 21717,
         "en": "insider",
         "kk": "",
-        "zh": "n. 內部的人；會員",
-        "unit": 13,
+        "zh": "n. 內部的人;會 員",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22233,
+        "id": 21718,
         "en": "insight",
         "kk": "",
-        "zh": "n. 見解；看法1719. insigniﬁcant a 不重要的",
-        "unit": 13,
+        "zh": "n. 見解;看法",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22234,
+        "id": 21719,
+        "en": "insignificant",
+        "kk": "",
+        "zh": "a. 不重要的",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21720,
         "en": "insist",
         "kk": "",
         "zh": "v. 堅持",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22235,
+        "id": 21721,
         "en": "inspect",
         "kk": "",
-        "zh": "v. 檢查；審查",
-        "unit": 13,
+        "zh": "v. 檢查;審查",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22236,
+        "id": 21722,
         "en": "inspection",
         "kk": "",
-        "zh": "n. 檢查；審查",
-        "unit": 13,
+        "zh": "n. 檢查;審查",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22237,
+        "id": 21723,
         "en": "inspector",
         "kk": "",
-        "zh": "n. 檢查員；視察員",
-        "unit": 13,
+        "zh": "n. 檢查員;視 察員",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22238,
+        "id": 21724,
         "en": "inspiration",
         "kk": "",
-        "zh": "n. 靈感；鼓舞",
-        "unit": 13,
+        "zh": "n. 靈感;鼓 舞",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22239,
+        "id": 21725,
         "en": "inspire",
         "kk": "",
-        "zh": "v. 鼓舞；激勵",
-        "unit": 13,
+        "zh": "v. 鼓舞;激勵",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22240,
+        "id": 21726,
         "en": "inspiring",
         "kk": "",
         "zh": "a. 激勵人心的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22241,
+        "id": 21727,
         "en": "install",
         "kk": "",
-        "zh": "v. 安裝；設置",
-        "unit": 13,
+        "zh": "v. 安裝;設置",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22242,
+        "id": 21728,
         "en": "installment",
         "kk": "",
-        "zh": "n. 安裝；設置",
-        "unit": 13,
+        "zh": "n. 安裝;設 置",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22243,
+        "id": 21729,
         "en": "instance",
         "kk": "",
-        "zh": "n. 例子；實例v 引證",
-        "unit": 13,
+        "zh": "n. 例子;實例v. 引證",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22244,
+        "id": 21730,
         "en": "instant",
         "kk": "",
-        "zh": "a. 立即的；即刻的",
-        "unit": 13,
+        "zh": "a. 立即的;即刻 的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22245,
+        "id": 21731,
         "en": "instantaneously",
         "kk": "",
-        "zh": "ad. 即刻；突如其來地",
-        "unit": 13,
+        "zh": "ad. 即 刻;突如其來地",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22246,
+        "id": 21732,
         "en": "instead",
         "kk": "",
-        "zh": "ad. 反而，卻",
-        "unit": 13,
+        "zh": "ad. 反而,卻",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22247,
+        "id": 21733,
         "en": "institute",
         "kk": "",
-        "zh": "n. 協會；學院 v創立；設立",
-        "unit": 13,
+        "zh": "n. 協會;學院v. 創立;設立",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22248,
+        "id": 21734,
         "en": "institution",
         "kk": "",
-        "zh": "n. 制度；機構",
-        "unit": 13,
+        "zh": "n. 制度;機構",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22249,
+        "id": 21735,
         "en": "instruct",
         "kk": "",
-        "zh": "n. 命令；指示",
-        "unit": 13,
+        "zh": "n. 命令;指示",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22250,
+        "id": 21736,
+        "en": "instruction",
+        "kk": "",
+        "zh": "n. 命令;指 示",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21737,
         "en": "instructor",
         "kk": "",
-        "zh": "n. 教練；指導者",
-        "unit": 13,
+        "zh": "n. 教練;指導 者",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22251,
+        "id": 21738,
         "en": "instrument",
         "kk": "",
-        "zh": "n. 樂器；儀器；器具",
-        "unit": 13,
+        "zh": "n. 樂器;儀 器;器具",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22252,
+        "id": 21739,
         "en": "instrumental",
         "kk": "",
-        "zh": "a. 用樂器演奏的；有幫助的",
-        "unit": 13,
+        "zh": "a. 用樂器 演奏的;有幫助的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22253,
+        "id": 21740,
         "en": "insult",
         "kk": "",
-        "zh": "v. 侮辱；羞辱",
-        "unit": 13,
+        "zh": "v. 侮辱;羞辱",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22254,
+        "id": 21741,
+        "en": "insurance",
+        "kk": "",
+        "zh": "n. 保險;保險 契約",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21742,
         "en": "insure",
         "kk": "",
-        "zh": "v. 保證；確保",
-        "unit": 13,
+        "zh": "v. 保證;確保",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22255,
+        "id": 21743,
         "en": "integrity",
         "kk": "",
         "zh": "n. 正直",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22256,
+        "id": 21744,
         "en": "intelligence",
         "kk": "",
         "zh": "n. 聰明才智",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22257,
+        "id": 21745,
         "en": "intend",
         "kk": "",
-        "zh": "v. 想要；打算",
-        "unit": 13,
+        "zh": "v. 想要;打算",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22258,
+        "id": 21746,
         "en": "intense",
         "kk": "",
-        "zh": "a. 強烈的；劇烈的",
-        "unit": 13,
+        "zh": "a. 強烈的;劇烈 的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22259,
+        "id": 21747,
         "en": "intensify",
         "kk": "",
-        "zh": "v. 加強；增強",
-        "unit": 13,
+        "zh": "v. 加強;增強",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22260,
+        "id": 21748,
         "en": "intensive",
         "kk": "",
-        "zh": "a. 加強的；密集的",
-        "unit": 13,
+        "zh": "a. 加強的;密 集的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22261,
+        "id": 21749,
         "en": "intent",
         "kk": "",
-        "zh": "v. 意圖；目的",
-        "unit": 13,
+        "zh": "v. 意圖;目的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22262,
+        "id": 21750,
         "en": "intention",
         "kk": "",
-        "zh": "n. 意圖；目的",
-        "unit": 13,
+        "zh": "n. 意圖;目的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22263,
+        "id": 21751,
         "en": "interchangeable",
         "kk": "",
-        "zh": "a. 可交換的",
-        "unit": 13,
+        "zh": "a. 可交 換的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22264,
+        "id": 21752,
         "en": "interest",
         "kk": "",
-        "zh": "n. 興趣；喜好；利息",
-        "unit": 13,
+        "zh": "n. 興趣;喜好; 利息",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22265,
+        "id": 21753,
         "en": "interfere",
         "kk": "",
-        "zh": "v. 妨礙；衝突",
-        "unit": 13,
+        "zh": "v. 妨礙;衝突",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22266,
+        "id": 21754,
         "en": "interior",
         "kk": "",
-        "zh": "a. 內部的；內側的",
-        "unit": 13,
+        "zh": "a. 內部的;內側 的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22267,
+        "id": 21755,
         "en": "intermittent",
         "kk": "",
-        "zh": "a. 間歇的；週期性的",
-        "unit": 13,
+        "zh": "a. 間歇的; 週期性的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22268,
+        "id": 21756,
         "en": "internal",
         "kk": "",
         "zh": "a. 內部的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22269,
+        "id": 21757,
         "en": "international",
         "kk": "",
         "zh": "a. 國際的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22270,
+        "id": 21758,
         "en": "internationalize",
         "kk": "",
-        "zh": "v. 使國際化",
-        "unit": 13,
+        "zh": "v. 使國 際化",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22271,
+        "id": 21759,
         "en": "interpret",
         "kk": "",
-        "zh": "v. 解釋；說明",
-        "unit": 13,
+        "zh": "v. 解釋;說明",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22272,
+        "id": 21760,
         "en": "interpreter",
         "kk": "",
         "zh": "n. 口譯者",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22273,
+        "id": 21761,
         "en": "interrupt",
         "kk": "",
-        "zh": "v. 打擾；干擾",
-        "unit": 13,
+        "zh": "v. 打擾;干擾",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22274,
+        "id": 21762,
         "en": "interruption",
         "kk": "",
-        "zh": "n. 打擾；干擾",
-        "unit": 13,
+        "zh": "n. 打擾;干 擾",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22275,
+        "id": 21763,
         "en": "interview",
         "kk": "",
-        "zh": "n. 訪談；面試",
-        "unit": 13,
+        "zh": "n. 訪談;面試",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22276,
+        "id": 21764,
         "en": "interviewee",
         "kk": "",
-        "zh": "n. 被面試的人",
-        "unit": 13,
+        "zh": "n. 被面試的 人",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22277,
+        "id": 21765,
         "en": "interviewer",
         "kk": "",
         "zh": "n. 採訪者",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22278,
+        "id": 21766,
         "en": "intricate",
         "kk": "",
-        "zh": "a. 錯綜複雜的；複雜精細的",
-        "unit": 13,
+        "zh": "a. 錯綜複雜的; 複雜精細的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22279,
+        "id": 21767,
         "en": "introduce",
         "kk": "",
-        "zh": "v. 介紹；引見",
-        "unit": 13,
+        "zh": "v. 介紹;引見",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22280,
+        "id": 21768,
         "en": "introduction",
         "kk": "",
-        "zh": "n. 介紹；引見",
-        "unit": 13,
+        "zh": "n. 介紹;引 見",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22281,
+        "id": 21769,
         "en": "introductory",
         "kk": "",
         "zh": "a. 介紹的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22282,
+        "id": 21770,
         "en": "invent",
         "kk": "",
-        "zh": "v. 發明；創造",
-        "unit": 13,
+        "zh": "v. 發明;創造",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22283,
+        "id": 21771,
         "en": "invention",
         "kk": "",
-        "zh": "n. 發明；創造",
-        "unit": 13,
+        "zh": "n. 發明;創造",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22284,
+        "id": 21772,
         "en": "inventive",
         "kk": "",
-        "zh": "a. 發明的；創造的",
-        "unit": 13,
+        "zh": "a. 發明的;創 造的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22285,
+        "id": 21773,
         "en": "inventor",
         "kk": "",
-        "zh": "n. 發明家；創作者",
-        "unit": 13,
+        "zh": "n. 發明家;創作 者",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22286,
+        "id": 21774,
+        "en": "inventory",
+        "kk": "",
+        "zh": "n. 存貨清單; 目錄",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21775,
         "en": "invest",
         "kk": "",
         "zh": "v. 投資",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22287,
+        "id": 21776,
         "en": "investment",
         "kk": "",
         "zh": "n. 投資",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22288,
+        "id": 21777,
         "en": "investor",
         "kk": "",
         "zh": "n. 投資者",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22289,
+        "id": 21778,
         "en": "invisible",
         "kk": "",
-        "zh": "a. 看不見的；無形的",
-        "unit": 13,
+        "zh": "a. 看不見的;無 形的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22290,
+        "id": 21779,
         "en": "invitation",
         "kk": "",
-        "zh": "n. 邀請；邀請函",
-        "unit": 13,
+        "zh": "n. 邀請;邀請 函",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22291,
+        "id": 21780,
         "en": "invite",
         "kk": "",
         "zh": "v. 邀請",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22292,
+        "id": 21781,
+        "en": "invoice",
+        "kk": "",
+        "zh": "n. 發票;發貨單",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21782,
         "en": "involve",
         "kk": "",
-        "zh": "v. 涉入；參與",
-        "unit": 13,
+        "zh": "v. 涉入;參與",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22293,
+        "id": 21783,
         "en": "involvement",
         "kk": "",
         "zh": "n. 參與",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22294,
+        "id": 21784,
         "en": "irrelevant",
         "kk": "",
         "zh": "a. 不相干的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22295,
+        "id": 21785,
         "en": "issue",
         "kk": "",
-        "zh": "v. 發行；配給 n 問題；爭論",
-        "unit": 13,
+        "zh": "v. 發行;配給n. 問 題;爭論",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22296,
+        "id": 21786,
         "en": "item",
         "kk": "",
-        "zh": "n. 項目；條款",
-        "unit": 13,
+        "zh": "n. 項目;條款",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22297,
+        "id": 21787,
         "en": "itemize",
         "kk": "",
-        "zh": "v. 分條列述；詳細列舉",
-        "unit": 13,
+        "zh": "v. 分條列述;詳 細列舉",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22298,
+        "id": 21788,
+        "en": "itinerary",
+        "kk": "",
+        "zh": "n. 旅程;路線a. 旅行的;旅程的",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21789,
         "en": "janitor",
         "kk": "",
         "zh": "n. 看門人的工友",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22299,
+        "id": 21790,
         "en": "job",
         "kk": "",
-        "zh": "n. 工作；職業",
-        "unit": 13,
+        "zh": "n. 工作;職業",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22300,
+        "id": 21791,
         "en": "jobless",
         "kk": "",
         "zh": "a. 失業的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22301,
+        "id": 21792,
         "en": "jog",
         "kk": "",
-        "zh": "n. 慢跑；緩行 v 慢跑；輕搖",
-        "unit": 13,
+        "zh": "n. 慢跑;緩行v. 慢 跑;輕搖",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22302,
+        "id": 21793,
         "en": "join",
         "kk": "",
-        "zh": "v. 參與；參加",
-        "unit": 13,
+        "zh": "v. 參與;參加",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22303,
+        "id": 21794,
         "en": "joint",
         "kk": "",
-        "zh": "n. 關節；接合點",
-        "unit": 13,
+        "zh": "n. 關節;接合點",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22304,
+        "id": 21795,
         "en": "journal",
         "kk": "",
-        "zh": "n. 日報；雜誌",
-        "unit": 13,
+        "zh": "n. 日報;雜誌",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22305,
+        "id": 21796,
         "en": "journalist",
         "kk": "",
         "zh": "n. 新聞工作者",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22306,
+        "id": 21797,
         "en": "journey",
         "kk": "",
         "zh": "n. 旅行",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22307,
+        "id": 21798,
         "en": "judge",
         "kk": "",
-        "zh": "v. 審判；判決 n法官；評判",
-        "unit": 13,
+        "zh": "v. 審判;判決n. 法官;評判",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22308,
+        "id": 21799,
         "en": "judgmental",
         "kk": "",
         "zh": "a. 判定的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22309,
+        "id": 21800,
         "en": "junction",
         "kk": "",
-        "zh": "n. 連接；接合；交叉點",
-        "unit": 13,
+        "zh": "n. 連接;接合; 交叉點",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22310,
+        "id": 21801,
         "en": "justice",
         "kk": "",
-        "zh": "n. 正義；公平",
-        "unit": 13,
+        "zh": "n. 正義;公平",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22311,
+        "id": 21802,
         "en": "justify",
         "kk": "",
-        "zh": "v. 證明無罪；開釋K",
-        "unit": 13,
+        "zh": "v. 證明無罪;開釋",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22312,
+        "id": 21803,
         "en": "keen",
         "kk": "",
-        "zh": "a. 熱心的；敏銳的",
-        "unit": 13,
+        "zh": "a. 熱心的;敏銳的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22313,
+        "id": 21804,
         "en": "keenly",
         "kk": "",
-        "zh": "ad. 敏銳地；銳利地",
-        "unit": 13,
+        "zh": "ad. 敏銳地;銳利 地",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22314,
+        "id": 21805,
         "en": "keep",
-        "kk": "",
-        "zh": "v. 持有；保有",
-        "unit": 13,
+        "kk": "/kiːp/",
+        "zh": "v. 持有;保有",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22315,
+        "id": 21806,
         "en": "keeper",
         "kk": "",
-        "zh": "n. 飼養者；保管人",
-        "unit": 13,
+        "zh": "n. 飼養者;保管 人",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22316,
+        "id": 21807,
         "en": "key",
-        "kk": "",
-        "zh": "n. 鑰匙；關鍵",
-        "unit": 13,
+        "kk": "/kiː/",
+        "zh": "n. 鑰匙;關鍵",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22317,
+        "id": 21808,
         "en": "keyboard",
         "kk": "",
         "zh": "n. 鍵盤",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22318,
+        "id": 21809,
         "en": "kick",
-        "kk": "",
-        "zh": "v. 踢；剔除",
-        "unit": 13,
+        "kk": "/kɪk/",
+        "zh": "v. 踢;剔除",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22319,
+        "id": 21810,
         "en": "kickoff",
         "kk": "",
-        "zh": "n. 開球；開始",
-        "unit": 13,
+        "zh": "n. 開球;開始",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22320,
+        "id": 21811,
         "en": "kid",
-        "kk": "",
-        "zh": "n. 小孩；兒童",
-        "unit": 13,
+        "kk": "/kɪd/",
+        "zh": "n. 小孩;兒童",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22321,
+        "id": 21812,
         "en": "kidna",
         "kk": "",
         "zh": "v. 綁架",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22322,
+        "id": 21813,
         "en": "kidnapper",
         "kk": "",
         "zh": "n. 綁票者",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22323,
+        "id": 21814,
         "en": "kidney",
         "kk": "",
         "zh": "n. 腎臟",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22324,
+        "id": 21815,
         "en": "kilogram",
         "kk": "",
         "zh": "n. 公斤",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22325,
+        "id": 21816,
         "en": "kilometer",
         "kk": "",
         "zh": "n. 公里",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22326,
+        "id": 21817,
         "en": "kin",
         "kk": "",
-        "zh": "a. 同類的；類似的 n家族；親戚",
-        "unit": 13,
+        "zh": "a. 同類的;類似的n. 家族;親戚",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22327,
+        "id": 21818,
         "en": "kind",
-        "kk": "",
-        "zh": "a. 親切的；和藹的n 種類",
-        "unit": 13,
+        "kk": "/kaɪnd/",
+        "zh": "a. 親切的;和藹的n. 種類",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22328,
+        "id": 21819,
         "en": "kindly",
         "kk": "",
-        "zh": "a. 親切的；和藹的ad 親切地；勞駕，請",
-        "unit": 13,
+        "zh": "a. 親切的;和藹的ad. 親切地;勞駕,請",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22329,
+        "id": 21820,
         "en": "kindness",
         "kk": "",
-        "zh": "n. 親切；寬大",
-        "unit": 13,
+        "zh": "n. 親切;寬大",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22330,
+        "id": 21821,
         "en": "kit",
         "kk": "",
         "zh": "n. 成套工具",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22331,
+        "id": 21822,
         "en": "know",
-        "kk": "",
-        "zh": "v. 知道；了解",
-        "unit": 13,
+        "kk": "/noʊ/",
+        "zh": "v. 知道;了解",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22332,
+        "id": 21823,
         "en": "knowingly",
         "kk": "",
         "zh": "ad. 熟悉地",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22333,
+        "id": 21824,
         "en": "knowledge",
-        "kk": "",
+        "kk": "/ˈnɑːlɪdʒ/",
         "zh": "n. 知識",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22334,
+        "id": 21825,
         "en": "knowledgeable",
         "kk": "",
-        "zh": "a. 博學的；有見識的L",
-        "unit": 13,
+        "zh": "a. 博學 的;有見識的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22335,
+        "id": 21826,
         "en": "lab",
         "kk": "",
         "zh": "n. 實驗室",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22336,
+        "id": 21827,
         "en": "label",
         "kk": "",
-        "zh": "n. 貼紙；標籤 v 貼標籤於",
-        "unit": 13,
+        "zh": "n. 貼紙;標籤v. 貼 標籤於",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22337,
+        "id": 21828,
         "en": "labor",
         "kk": "",
-        "zh": "n. 勞工；勞動 v 勞動；艱苦地幹活",
-        "unit": 13,
+        "zh": "n. 勞工;勞動v. 勞 動;艱苦地幹活",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22338,
+        "id": 21829,
         "en": "laboratory",
         "kk": "",
         "zh": "n. 實驗室",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22339,
+        "id": 21830,
         "en": "lack",
-        "kk": "",
-        "zh": "v. 缺少；缺乏 n 欠缺；不足",
-        "unit": 13,
+        "kk": "/læk/",
+        "zh": "v. 缺少;缺乏n. 欠 缺;不足",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22340,
+        "id": 21831,
         "en": "lacking",
         "kk": "",
         "zh": "a. 缺乏的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22341,
+        "id": 21832,
         "en": "lag",
         "kk": "",
-        "zh": "v. 落後；延遲 n 落後；延遲",
-        "unit": 13,
+        "zh": "v. 落後;延遲n. 落後; 延遲",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22342,
+        "id": 21833,
         "en": "laid-back",
         "kk": "",
-        "zh": "a. 懶散的；閒散的",
-        "unit": 13,
+        "zh": "a. 懶散的;閒 散的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22343,
+        "id": 21834,
         "en": "lamentl",
         "kk": "",
-        "zh": "n. 哀悼；悲痛；v 哀悼，悲痛",
-        "unit": 13,
+        "zh": "n. 哀悼;悲痛;v. 哀悼,悲痛",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22344,
+        "id": 21835,
         "en": "lamp",
         "kk": "",
-        "zh": "n. 燈；油燈 v 照；照亮",
-        "unit": 13,
+        "zh": "n. 燈;油燈v. 照; 照亮",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22345,
+        "id": 21836,
         "en": "land",
-        "kk": "",
-        "zh": "n. 陸地；田地；地產 v 登陸；降落",
-        "unit": 13,
+        "kk": "/lænd/",
+        "zh": "n. 陸地;田地;地 產v. 登陸;降落",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22346,
+        "id": 21837,
         "en": "landing",
         "kk": "",
-        "zh": "n. 降落，著落",
-        "unit": 13,
+        "zh": "n. 降落,著落",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22347,
+        "id": 21838,
         "en": "landlady",
         "kk": "",
-        "zh": "n. 女房東；女地主",
-        "unit": 13,
+        "zh": "n. 女房東;女 地主",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22348,
+        "id": 21839,
         "en": "landlord",
         "kk": "",
-        "zh": "n. 地主；房東",
-        "unit": 13,
+        "zh": "n. 地主;房東",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22349,
+        "id": 21840,
         "en": "landmark",
         "kk": "",
-        "zh": "n. 地標；里程碑",
-        "unit": 13,
+        "zh": "n. 地標;里程 碑",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22350,
+        "id": 21841,
         "en": "landscape",
         "kk": "",
-        "zh": "n. 風景；景色",
-        "unit": 13,
+        "zh": "n. 風景;景 色",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22351,
+        "id": 21842,
         "en": "landscaper",
         "kk": "",
-        "zh": "n. 庭園設計家",
-        "unit": 13,
+        "zh": "n. 庭園設計 家",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22352,
+        "id": 21843,
         "en": "languish",
         "kk": "",
-        "zh": "v. 變得無生氣；衰弱",
-        "unit": 13,
+        "zh": "v. 變得無生氣; 衰弱",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22353,
+        "id": 21844,
         "en": "lapse",
         "kk": "",
-        "zh": "v. 時間流逝；跌落v 流逝；背離",
-        "unit": 13,
+        "zh": "v. 時間流逝;跌落v. 流逝;背離",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22354,
+        "id": 21845,
         "en": "large",
-        "kk": "",
-        "zh": "a. 大的；巨大的",
-        "unit": 13,
+        "kk": "/lɑːrdʒ/",
+        "zh": "a. 大的;巨大的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22355,
+        "id": 21846,
         "en": "large-scale",
         "kk": "",
         "zh": "a. 大規模的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22356,
+        "id": 21847,
         "en": "lash",
         "kk": "",
-        "zh": "n. 鞭打；抽打 v 鞭打；抽打",
-        "unit": 13,
+        "zh": "n. 鞭打;抽打v. 鞭 打;抽打",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22357,
+        "id": 21848,
         "en": "last",
-        "kk": "",
-        "zh": "v. 持續；維持1849. lasting 持久的；持續的",
-        "unit": 13,
+        "kk": "/læst/",
+        "zh": "v. 持續;維持",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22358,
+        "id": 21849,
+        "en": "lasting",
+        "kk": "",
+        "zh": "a. 持久的;持續的",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21850,
         "en": "last-minute",
         "kk": "",
         "zh": "a. 最後的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22359,
+        "id": 21851,
         "en": "late",
-        "kk": "",
-        "zh": "a. 遲的；已故的；晚期的  ad 遲到；來不及",
-        "unit": 13,
+        "kk": "/leɪt/",
+        "zh": "a. 遲的;已故的;晚 期的ad. 遲到;來不及",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22360,
+        "id": 21852,
         "en": "lately",
         "kk": "",
-        "zh": "a. 近來；最近",
-        "unit": 13,
+        "zh": "a. 近來;最近",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22361,
+        "id": 21853,
         "en": "later",
         "kk": "",
-        "zh": "a. 較晚的；更晚的ad 後來；以後",
-        "unit": 13,
+        "zh": "a. 較晚的;更晚的ad. 後來;以後",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22362,
+        "id": 21854,
         "en": "latter",
         "kk": "",
-        "zh": "a. 後者的；後面的",
-        "unit": 13,
+        "zh": "a. 後者的;後面的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22363,
+        "id": 21855,
+        "en": "launch",
+        "kk": "",
+        "zh": "v. 發射;發動n. 發射;發行",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21856,
         "en": "laundry",
         "kk": "",
-        "zh": "n. 洗衣店；送洗的衣服",
-        "unit": 13,
+        "zh": "n. 洗衣店;送洗 的衣服",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22364,
+        "id": 21857,
         "en": "lavatory",
         "kk": "",
-        "zh": "n. 盥洗室；洗手間",
-        "unit": 13,
+        "zh": "n. 盥洗室;洗手 間",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22365,
+        "id": 21858,
         "en": "law",
-        "kk": "",
-        "zh": "n. 法律；規則",
-        "unit": 13,
+        "kk": "/lɔː/",
+        "zh": "n. 法律;規則",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22366,
+        "id": 21859,
         "en": "lawful",
         "kk": "",
-        "zh": "a. 合法的；法定的",
-        "unit": 13,
+        "zh": "a. 合法的;法定的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22367,
+        "id": 21860,
         "en": "lawsuit",
         "kk": "",
         "zh": "n. 訴訟",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22368,
+        "id": 21861,
         "en": "lawyer",
         "kk": "",
         "zh": "n. 律師",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22369,
+        "id": 21862,
         "en": "lay",
-        "kk": "",
-        "zh": "v. 放；擱；下蛋",
-        "unit": 13,
+        "kk": "/leɪ/",
+        "zh": "v. 放;擱;下蛋",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22370,
+        "id": 21863,
         "en": "layer",
         "kk": "",
-        "zh": "n. 層；階層",
-        "unit": 13,
+        "zh": "n. 層;階層",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22371,
+        "id": 21864,
         "en": "layoff",
         "kk": "",
         "zh": "n. 解雇",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22372,
+        "id": 21865,
         "en": "layout",
         "kk": "",
-        "zh": "n. 安排；設計陳列",
-        "unit": 13,
+        "zh": "n. 安排;設計陳列",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22373,
+        "id": 21866,
         "en": "lead",
-        "kk": "",
-        "zh": "v. 領導；帶領",
-        "unit": 13,
+        "kk": "/liːd/",
+        "zh": "v. 領導;帶領",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22374,
+        "id": 21867,
         "en": "leader",
-        "kk": "",
+        "kk": "/ˈliːdər/",
         "zh": "n. 領導",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22375,
+        "id": 21868,
         "en": "leading",
         "kk": "",
-        "zh": "a. 領路的；帶領的1869.  leaﬂet n 傳單；單張印刷品",
-        "unit": 13,
+        "zh": "a. 領路的;帶領 的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22376,
+        "id": 21869,
+        "en": "leaflet",
+        "kk": "",
+        "zh": "n. 傳單;單張印刷 品",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21870,
         "en": "league",
         "kk": "",
-        "zh": "n. 同盟；聯盟 v同盟；聯盟",
-        "unit": 13,
+        "zh": "n. 同盟;聯盟v. 同盟;聯盟",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22377,
+        "id": 21871,
         "en": "leak",
         "kk": "",
-        "zh": "n. 漏洞；裂縫 v 洩漏",
-        "unit": 13,
+        "zh": "n. 漏洞;裂縫v. 洩 漏",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22378,
+        "id": 21872,
         "en": "leakage",
         "kk": "",
-        "zh": "n. 漏；洩漏",
-        "unit": 13,
+        "zh": "n. 漏;洩漏",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22379,
+        "id": 21873,
         "en": "lean",
         "kk": "",
-        "zh": "v. 傾身；屈身",
-        "unit": 13,
+        "zh": "v. 傾身;屈身",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22380,
+        "id": 21874,
         "en": "leap",
         "kk": "",
-        "zh": "v. 跳過；越過 n 跳；跳躍",
-        "unit": 13,
+        "zh": "v. 跳過;越過n. 跳; 跳躍",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22381,
+        "id": 21875,
         "en": "learn",
-        "kk": "",
-        "zh": "v. 學習；學會",
-        "unit": 13,
+        "kk": "/lɜːrn/",
+        "zh": "v. 學習;學會",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22382,
+        "id": 21876,
+        "en": "lease",
+        "kk": "",
+        "zh": "n. 租約;租契v. 出 租",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21877,
         "en": "least",
-        "kk": "",
-        "zh": "a. 最小的；最少的",
-        "unit": 13,
+        "kk": "/liːst/",
+        "zh": "a. 最小的;最少的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22383,
+        "id": 21878,
         "en": "leathe",
         "kk": "",
-        "zh": "n. 皮革 a 皮的；皮革製的",
-        "unit": 13,
+        "zh": "n. 皮革a. 皮的; 皮革製的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22384,
+        "id": 21879,
         "en": "leave",
-        "kk": "",
-        "zh": "v. 離開；脫離",
-        "unit": 13,
+        "kk": "/liːv/",
+        "zh": "v. 離開;脫離",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22385,
+        "id": 21880,
         "en": "lecture",
         "kk": "",
-        "zh": "n. 授課；演講",
-        "unit": 13,
+        "zh": "n. 授課;演講",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22386,
+        "id": 21881,
         "en": "legal",
-        "kk": "",
-        "zh": "a. 合法的；正當的",
-        "unit": 13,
+        "kk": "/ˈliːɡl/",
+        "zh": "a. 合法的;正當的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22387,
+        "id": 21882,
         "en": "legalize",
         "kk": "",
         "zh": "v. 使合法化",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22388,
+        "id": 21883,
         "en": "legitimate",
         "kk": "",
-        "zh": "a. 合法的；正統的",
-        "unit": 13,
+        "zh": "a. 合法的;正 統的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22389,
+        "id": 21884,
         "en": "leisure",
         "kk": "",
-        "zh": "n. 閒暇；空暇時間 a 空閒的",
-        "unit": 13,
+        "zh": "n. 閒暇;空暇時 間a. 空閒的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22390,
+        "id": 21885,
         "en": "lend",
         "kk": "",
-        "zh": "v. 借；提供",
-        "unit": 13,
+        "zh": "v. 借;提供",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22391,
+        "id": 21886,
         "en": "lesson",
-        "kk": "",
-        "zh": "n. 課程；學習",
-        "unit": 13,
+        "kk": "/ˈlesn/",
+        "zh": "n. 課程;學習",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22392,
+        "id": 21887,
         "en": "letter",
-        "kk": "",
-        "zh": "n. 信；書信",
-        "unit": 13,
+        "kk": "/ˈletər/",
+        "zh": "n. 信;書信",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22393,
+        "id": 21888,
         "en": "letterhead",
         "kk": "",
-        "zh": "n. 印在信紙的信頭",
-        "unit": 13,
+        "zh": "n. 印在信紙的 信頭",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22394,
+        "id": 21889,
         "en": "level",
-        "kk": "",
-        "zh": "n. 水平面；程度 a同水平的；同程度的 v使平等",
-        "unit": 13,
+        "kk": "/ˈlevl/",
+        "zh": "n. 水平面;程度a. 同水平的;同程度的v. 使平等",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22395,
+        "id": 21890,
         "en": "leverage",
         "kk": "",
-        "zh": "n. 手段；力量；影響力",
-        "unit": 13,
+        "zh": "n. 手段;力量; 影響力",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22396,
+        "id": 21891,
+        "en": "liability",
+        "kk": "",
+        "zh": "n. 傾向責任",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21892,
         "en": "liable",
         "kk": "",
-        "zh": "a. 易⋯⋯的；可能的",
-        "unit": 13,
+        "zh": "a. 易⋯⋯的;可能 的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22397,
+        "id": 21893,
         "en": "liberal",
         "kk": "",
-        "zh": "a. 開明的；不守舊的",
-        "unit": 13,
+        "zh": "a. 開明的;不守舊 的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22398,
+        "id": 21894,
         "en": "library",
-        "kk": "",
+        "kk": "/ˈlaɪbreri/",
         "zh": "n. 圖書館",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22399,
+        "id": 21895,
         "en": "license",
         "kk": "",
-        "zh": "n. 證照；許可 v發許可證給",
-        "unit": 13,
+        "zh": "n. 證照;許可v. 發許可證給",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22400,
+        "id": 21896,
         "en": "lifestyle",
         "kk": "",
         "zh": "n. 生活方式",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22401,
+        "id": 21897,
         "en": "likelihood",
         "kk": "",
-        "zh": "n. 可能；可能性",
-        "unit": 13,
+        "zh": "n. 可能;可能 性",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22402,
+        "id": 21898,
         "en": "likely",
         "kk": "",
-        "zh": "a. 適當的；可能的ad 很可能",
-        "unit": 13,
+        "zh": "a. 適當的;可能的ad. 很可能",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22403,
+        "id": 21899,
         "en": "limit",
         "kk": "",
-        "zh": "v. 界線；界限 v 限制；限定",
-        "unit": 13,
+        "zh": "v. 界線;界限v. 限 制;限定",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22404,
+        "id": 21900,
         "en": "limited",
         "kk": "",
-        "zh": "a. 有限的；不多的",
-        "unit": 13,
+        "zh": "a. 有限的;不多 的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22405,
+        "id": 21901,
         "en": "link",
-        "kk": "",
-        "zh": "n. 連結；聯繫 v 連接；結合",
-        "unit": 13,
+        "kk": "/lɪŋk/",
+        "zh": "n. 連結;聯繫v. 連 接;結合",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22406,
+        "id": 21902,
         "en": "list",
-        "kk": "",
-        "zh": "n. 表；名冊",
-        "unit": 13,
+        "kk": "/lɪst/",
+        "zh": "n. 表;名冊",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22407,
+        "id": 21903,
         "en": "litter",
         "kk": "",
-        "zh": "n. 廢棄物；雜亂 v弄得亂七八糟；使充滿",
-        "unit": 13,
+        "zh": "n. 廢棄物;雜亂v. 弄得亂七八糟;使充滿",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22408,
+        "id": 21904,
         "en": "load",
         "kk": "",
-        "zh": "n. 負擔；重任 v 裝；裝載",
-        "unit": 13,
+        "zh": "n. 負擔;重任v. 裝; 裝載",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22409,
+        "id": 21905,
         "en": "loan",
         "kk": "",
-        "zh": "n. 貸款 v 借出；貸與",
-        "unit": 13,
+        "zh": "n. 貸款v. 借出;貸 與",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22410,
+        "id": 21906,
         "en": "local",
-        "kk": "",
-        "zh": "a. 當地的；本地的n 本地人",
-        "unit": 13,
+        "kk": "/ˈloʊkl/",
+        "zh": "a. 當地的;本地的n. 本地人",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22411,
+        "id": 21907,
         "en": "locate",
         "kk": "",
-        "zh": "v. 設置在；座落於",
-        "unit": 13,
+        "zh": "v. 設置在;座落於",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22412,
+        "id": 21908,
         "en": "located",
         "kk": "",
-        "zh": "a. 坐落的；位於的",
-        "unit": 13,
+        "zh": "a. 坐落的;位於 的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22413,
+        "id": 21909,
         "en": "location",
         "kk": "",
-        "zh": "n. 地點；定位",
-        "unit": 13,
+        "zh": "n. 地點;定位",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22414,
+        "id": 21910,
         "en": "lock",
-        "kk": "",
-        "zh": "n. 鎖 v 鎖上",
-        "unit": 13,
+        "kk": "/lɑːk/",
+        "zh": "n. 鎖v. 鎖上",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22415,
+        "id": 21911,
         "en": "locksmith",
         "kk": "",
         "zh": "n. 鎖匠",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22416,
+        "id": 21912,
+        "en": "logistics",
+        "kk": "",
+        "zh": "n. 物流;運籌",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21913,
         "en": "logo",
         "kk": "",
         "zh": "n. 標識",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22417,
+        "id": 21914,
         "en": "loom",
         "kk": "",
         "zh": "n. 織布機",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22418,
+        "id": 21915,
         "en": "lose",
         "kk": "",
-        "zh": "v. 丟失；輸去；賠錢",
-        "unit": 13,
+        "zh": "v. 丟失;輸去;賠 錢",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22419,
+        "id": 21916,
         "en": "loss",
         "kk": "",
-        "zh": "n. 喪失；遺失",
-        "unit": 13,
+        "zh": "n. 喪失;遺失",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22420,
+        "id": 21917,
         "en": "lounge",
         "kk": "",
-        "zh": "n. 閒蕩；躺椅 v閒蕩；閒逛",
-        "unit": 13,
+        "zh": "n. 閒蕩;躺椅v. 閒蕩;閒逛",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22421,
+        "id": 21918,
         "en": "loyal",
         "kk": "",
-        "zh": "a. 忠誠的；忠心的",
-        "unit": 13,
+        "zh": "a. 忠誠的;忠心的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22422,
+        "id": 21919,
         "en": "loyalty",
         "kk": "",
-        "zh": "n. 忠誠；忠心",
-        "unit": 13,
+        "zh": "n. 忠誠;忠心",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22423,
+        "id": 21920,
         "en": "lucrative",
         "kk": "",
-        "zh": "a. 賺錢的；有利可圖的",
-        "unit": 13,
+        "zh": "a. 賺錢的;有 利可圖的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22424,
+        "id": 21921,
         "en": "luggage",
         "kk": "",
         "zh": "n. 行李",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22425,
+        "id": 21922,
         "en": "lumber",
         "kk": "",
-        "zh": "n. 木材；木料 n採伐M",
-        "unit": 13,
+        "zh": "n. 木材;木料n. 採伐",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22426,
+        "id": 21923,
         "en": "mad",
         "kk": "",
-        "zh": "a. 發瘋的；發狂的",
-        "unit": 13,
+        "zh": "a. 發瘋的;發狂的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22427,
+        "id": 21924,
         "en": "madness",
         "kk": "",
-        "zh": "n. 瘋狂；神經錯亂",
-        "unit": 13,
+        "zh": "n. 瘋狂;神經 錯亂",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22428,
+        "id": 21925,
         "en": "magazine",
         "kk": "",
-        "zh": "n. 雜誌1926.  magniﬁcent a 壯麗的；宏偉的",
-        "unit": 13,
+        "zh": "n. 雜誌",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22429,
+        "id": 21926,
+        "en": "magnificent",
+        "kk": "",
+        "zh": "a. 壯麗的; 宏偉的",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21927,
         "en": "mail",
         "kk": "",
-        "zh": "n. 信件：郵件 v 郵寄",
-        "unit": 13,
+        "zh": "n. 信件:郵件v. 郵 寄",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22430,
+        "id": 21928,
         "en": "mailing",
         "kk": "",
-        "zh": "n. 郵寄；郵件",
-        "unit": 13,
+        "zh": "n. 郵寄;郵件",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22431,
+        "id": 21929,
         "en": "main",
         "kk": "",
-        "zh": "a. 主要的；最重要的 n 主要部分；要點",
-        "unit": 13,
+        "zh": "a. 主要的;最重要 的n. 主要部分;要點",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22432,
+        "id": 21930,
         "en": "mainframe",
         "kk": "",
-        "zh": "n. 主機；中央處理器",
-        "unit": 13,
+        "zh": "n. 主機;中 央處理器",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22433,
+        "id": 21931,
         "en": "maintain",
         "kk": "",
-        "zh": "v. 維持；保持",
-        "unit": 13,
+        "zh": "v. 維持;保持",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22434,
+        "id": 21932,
+        "en": "maintenance",
+        "kk": "",
+        "zh": "n. 維持; 保持",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21933,
         "en": "major",
         "kk": "",
-        "zh": "a. 主要的；一流的",
-        "unit": 13,
+        "zh": "a. 主要的;一流的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22435,
+        "id": 21934,
         "en": "majority",
         "kk": "",
-        "zh": "n. 多數派；大多數",
-        "unit": 13,
+        "zh": "n. 多數派;大多 數",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22436,
+        "id": 21935,
         "en": "mall",
         "kk": "",
         "zh": "n. 購物中心",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22437,
+        "id": 21936,
         "en": "manage",
         "kk": "",
-        "zh": "v. 管理；經營",
-        "unit": 13,
+        "zh": "v. 管理;經營",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22438,
+        "id": 21937,
         "en": "management",
         "kk": "",
-        "zh": "n. 管理；經營",
-        "unit": 13,
+        "zh": "n. 管理; 經營",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22439,
+        "id": 21938,
         "en": "manager",
         "kk": "",
-        "zh": "n. 經理；主任",
-        "unit": 13,
+        "zh": "n. 經理;主任",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22440,
+        "id": 21939,
         "en": "managerial",
         "kk": "",
-        "zh": "a. 管理人的；經理的",
-        "unit": 13,
+        "zh": "a. 管理人 的;經理的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22441,
+        "id": 21940,
         "en": "mandate",
         "kk": "",
-        "zh": "n. 命令；指令",
-        "unit": 13,
+        "zh": "n. 命令;指令",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22442,
+        "id": 21941,
         "en": "manner",
         "kk": "",
-        "zh": "n. 方式；態度；禮貌",
-        "unit": 13,
+        "zh": "n. 方式;態度; 禮貌",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22443,
+        "id": 21942,
         "en": "manual",
         "kk": "",
-        "zh": "a. 手的；手工的n 手冊；便覽",
-        "unit": 13,
+        "zh": "a. 手的;手工的n. 手冊;便覽",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22444,
+        "id": 21943,
         "en": "manually",
         "kk": "",
         "zh": "ad. 手工地",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22445,
+        "id": 21944,
+        "en": "manufacture",
+        "kk": "",
+        "zh": "v. 製造, 加工n. 製造業;製品",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21945,
         "en": "manufacturer",
         "kk": "",
-        "zh": "n. 製造業者；廠商",
-        "unit": 13,
+        "zh": "n. 製造業 者;廠商",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22446,
+        "id": 21946,
+        "en": "margin",
+        "kk": "",
+        "zh": "n. 邊;邊沿",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21947,
         "en": "mark",
         "kk": "",
-        "zh": "n. 痕跡；汙點；記號 v 記下；標明",
-        "unit": 13,
+        "zh": "n. 痕跡;汙點;記 號v. 記下;標明",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22447,
+        "id": 21948,
         "en": "market",
         "kk": "",
-        "zh": "n. 市場；銷路",
-        "unit": 13,
+        "zh": "n. 市場;銷路",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22448,
+        "id": 21949,
         "en": "match",
         "kk": "",
-        "zh": "n. 比賽；競賽 v相配；相適合",
-        "unit": 13,
+        "zh": "n. 比賽;競賽v. 相配;相適合",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22449,
+        "id": 21950,
         "en": "maternal",
         "kk": "",
-        "zh": "a. 母親的；母性的",
-        "unit": 13,
+        "zh": "a. 母親的;母 性的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22450,
+        "id": 21951,
         "en": "matter",
         "kk": "",
-        "zh": "n. 事情；問題；事件 v 有關係；要緊",
-        "unit": 13,
+        "zh": "n. 事情;問題; 事件v. 有關係;要緊",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22451,
+        "id": 21952,
         "en": "maximum",
         "kk": "",
-        "zh": "n. 最大量；最大數 a 最大的；最多的",
-        "unit": 13,
+        "zh": "n. 最大量;最 大數a. 最大的;最多的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22452,
+        "id": 21953,
         "en": "mayor",
         "kk": "",
         "zh": "n. 市長",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22453,
+        "id": 21954,
         "en": "mean",
         "kk": "",
-        "zh": "a. 吝嗇的；小氣的v 表示⋯的意思",
-        "unit": 13,
+        "zh": "a. 吝嗇的;小氣的v. 表示⋯的意思",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22454,
+        "id": 21955,
         "en": "meaning",
         "kk": "",
-        "zh": "n. 意思；含義a 意味深長的",
-        "unit": 13,
+        "zh": "n. 意思;含義a. 意味深長的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22455,
+        "id": 21956,
         "en": "measurable",
         "kk": "",
         "zh": "a. 可測量的",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22456,
+        "id": 21957,
         "en": "measure",
         "kk": "",
-        "zh": "v. 測量；計量n 措施；手段",
-        "unit": 13,
+        "zh": "v. 測量;計量n. 措施;手段",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22457,
+        "id": 21958,
         "en": "measurement",
         "kk": "",
-        "zh": "n. 測量；測定",
-        "unit": 13,
+        "zh": "n. 測量; 測定",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22458,
+        "id": 21959,
         "en": "medicine",
         "kk": "",
-        "zh": "n. 藥；良藥",
-        "unit": 13,
+        "zh": "n. 藥;良藥",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22459,
+        "id": 21960,
         "en": "mediocre",
         "kk": "",
-        "zh": "a. 中等的；平凡的",
-        "unit": 13,
+        "zh": "a. 中等的;平 凡的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22460,
+        "id": 21961,
         "en": "medium",
         "kk": "",
-        "zh": "n. 媒介物；手段",
-        "unit": 13,
+        "zh": "n. 媒介物;手段",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22461,
+        "id": 21962,
         "en": "member",
         "kk": "",
         "zh": "n. 會員",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22462,
+        "id": 21963,
         "en": "membership",
         "kk": "",
-        "zh": "n. 會員身分；全體會員",
-        "unit": 13,
+        "zh": "n. 會員身 分;全體會員",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22463,
+        "id": 21964,
         "en": "memo",
         "kk": "",
-        "zh": "n. 備忘錄 (=memorandum) v 記入備忘錄",
-        "unit": 13,
+        "zh": "n. 備忘錄 (= memorandum)v. 記入 備忘錄",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22464,
+        "id": 21965,
         "en": "mend",
         "kk": "",
-        "zh": "v. 修補；改善 n好轉；痊癒",
-        "unit": 13,
+        "zh": "v. 修補;改善n. 好轉;痊癒",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22465,
+        "id": 21966,
         "en": "mental",
         "kk": "",
-        "zh": "a. 精神的；心理的",
-        "unit": 13,
+        "zh": "a. 精神的;心理 的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22466,
+        "id": 21967,
         "en": "mention",
         "kk": "",
-        "zh": "v. 提到；說起 n提到；說起",
-        "unit": 13,
+        "zh": "v. 提到;說起n. 提到;說起",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22467,
+        "id": 21968,
         "en": "mentor",
         "kk": "",
         "zh": "n. 導師",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22468,
+        "id": 21969,
         "en": "menu",
         "kk": "",
-        "zh": "n. 菜單；功能選單",
-        "unit": 13,
+        "zh": "n. 菜單;功能選單",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22469,
+        "id": 21970,
+        "en": "merchandise",
+        "kk": "",
+        "zh": "n. 商品; 貨物v. 買賣;經營",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21971,
+        "en": "merge",
+        "kk": "",
+        "zh": "v. 合併;融合",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 21972,
         "en": "merger",
         "kk": "",
-        "zh": "n. （公司等的）合併",
-        "unit": 13,
+        "zh": "n. (公司等的) 合併",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22470,
+        "id": 21973,
         "en": "message",
         "kk": "",
-        "zh": "n. 信息；消息v 通知；聯繫",
-        "unit": 13,
+        "zh": "n. 信息;消息v. 通知;聯繫",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22471,
+        "id": 21974,
         "en": "messenger",
         "kk": "",
-        "zh": "n. 送信人；使者",
-        "unit": 13,
+        "zh": "n. 送信人; 使者",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22472,
+        "id": 21975,
         "en": "method",
         "kk": "",
-        "zh": "n. 方法；手段",
-        "unit": 13,
+        "zh": "n. 方法;手段",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22473,
+        "id": 21976,
         "en": "meticulous",
         "kk": "",
-        "zh": "a. 過分精細的；小心翼翼的",
-        "unit": 13,
+        "zh": "a. 過分精細 的;小心翼翼的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22474,
+        "id": 21977,
         "en": "metropolitan",
         "kk": "",
-        "zh": "a. 大都市的",
-        "unit": 13,
+        "zh": "a. 大都市 的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22475,
+        "id": 21978,
         "en": "midday",
         "kk": "",
-        "zh": "n. 正午；中午",
-        "unit": 13,
+        "zh": "n. 正午;中午",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22476,
+        "id": 21979,
         "en": "midmorning",
         "kk": "",
-        "zh": "n. 上午之中段時間",
-        "unit": 13,
+        "zh": "n. 上午之中 段時間",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22477,
+        "id": 21980,
         "en": "mid-range",
         "kk": "",
-        "zh": "a. 中等的；平均的",
-        "unit": 13,
+        "zh": "a. 中等的;平 均的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22478,
+        "id": 21981,
         "en": "mild",
         "kk": "",
-        "zh": "a. 溫和的；溫柔的",
-        "unit": 13,
+        "zh": "a. 溫和的;溫柔的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22479,
+        "id": 21982,
         "en": "mildly",
         "kk": "",
-        "zh": "ad. 溫和地；溫柔地",
-        "unit": 13,
+        "zh": "ad. 溫和地;溫柔 地",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22480,
+        "id": 21983,
         "en": "millennium",
         "kk": "",
         "zh": "n. 千年期",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22481,
+        "id": 21984,
         "en": "minimum",
         "kk": "",
-        "zh": "n. 最小量；最小數 a 最小的；最少的",
-        "unit": 13,
+        "zh": "n. 最小量;最 小數a. 最小的;最少的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22482,
+        "id": 21985,
         "en": "minority",
         "kk": "",
-        "zh": "n. 少數；少數派",
-        "unit": 13,
+        "zh": "n. 少數;少數派",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22483,
+        "id": 21986,
         "en": "minute",
         "kk": "",
-        "zh": "n. 分鐘；一會兒v 記錄下來",
-        "unit": 13,
+        "zh": "n. 分鐘;一會兒v. 記錄下來",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22484,
+        "id": 21987,
         "en": "minutely",
         "kk": "",
-        "zh": "a. 每分鐘的；持續的  ad 仔細地；持續地",
-        "unit": 13,
+        "zh": "a. 每分鐘的; 持續的ad. 仔細地;持續 地",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22485,
+        "id": 21988,
         "en": "miserable",
         "kk": "",
-        "zh": "a. 痛苦的；不幸的",
-        "unit": 13,
+        "zh": "a. 痛苦的;不 幸的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22486,
+        "id": 21989,
         "en": "miserably",
         "kk": "",
-        "zh": "ad. 痛苦地；艱苦地",
-        "unit": 13,
+        "zh": "ad. 痛苦地; 艱苦地",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22487,
+        "id": 21990,
         "en": "mission",
         "kk": "",
-        "zh": "n. 使命；任務；傳教團 v 派遣；傳教",
-        "unit": 13,
+        "zh": "n. 使命;任務; 傳教團v. 派遣;傳教",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22488,
+        "id": 21991,
         "en": "mistake",
         "kk": "",
-        "zh": "v. 弄錯；誤解 n錯誤；過失",
-        "unit": 13,
+        "zh": "v. 弄錯;誤解n. 錯誤;過失",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22489,
+        "id": 21992,
         "en": "mistaken",
         "kk": "",
-        "zh": "a. 弄錯的；誤解的",
-        "unit": 13,
+        "zh": "a. 弄錯的;誤 解的",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22490,
+        "id": 21993,
         "en": "mistreat",
         "kk": "",
         "zh": "v. 虐待",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22491,
+        "id": 21994,
         "en": "mistreatment",
         "kk": "",
         "zh": "n. 虐待",
-        "unit": 13,
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22492,
+        "id": 21995,
         "en": "misunderstand",
         "kk": "",
-        "zh": "v. 誤會；曲解",
-        "unit": 13,
+        "zh": "v. 誤會; 曲解",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22493,
+        "id": 21996,
         "en": "misunderstanding",
         "kk": "",
-        "zh": "n. 誤會；曲解",
-        "unit": 13,
+        "zh": "n. 誤 會;曲解",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22494,
+        "id": 21997,
         "en": "mitigate",
         "kk": "",
-        "zh": "v. 使緩和；減輕",
-        "unit": 13,
+        "zh": "v. 使緩和;減輕",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22495,
+        "id": 21998,
         "en": "mobilize",
         "kk": "",
-        "zh": "v. 動員；調動",
-        "unit": 13,
+        "zh": "v. 動員;調動",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22496,
+        "id": 21999,
         "en": "moderately",
         "kk": "",
-        "zh": "ad. 適度地；有節制地",
-        "unit": 13,
+        "zh": "ad. 適度地; 有節制地",
+        "unit": 12,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22497,
+        "id": 22000,
         "en": "modest",
         "kk": "",
-        "zh": "a. 謙虛的；審慎的2001.  modiﬁcation n 修改；改變",
+        "zh": "a. 謙虛的;審慎 的",
+        "unit": 12,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22001,
+        "en": "modification",
+        "kk": "",
+        "zh": "n. 修改;改 變",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22498,
+        "id": 22002,
         "en": "momentum",
         "kk": "",
-        "zh": "n. 氣勢；衝力",
+        "zh": "n. 氣勢;衝 力",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22499,
+        "id": 22003,
         "en": "monetize",
         "kk": "",
         "zh": "v. 定為貨幣",
@@ -21858,223 +18027,223 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22500,
+        "id": 22004,
         "en": "money",
         "kk": "",
-        "zh": "n. 錢；貨幣",
+        "zh": "n. 錢;貨幣",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22501,
+        "id": 22005,
         "en": "monitor",
         "kk": "",
-        "zh": "n. 顯示器；螢幕v 監控；監聽",
+        "zh": "n. 顯示器;螢幕v. 監控;監聽",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22502,
+        "id": 22006,
         "en": "mood",
         "kk": "",
-        "zh": "n. 心境；情緒；氣氛",
+        "zh": "n. 心境;情緒;氣 氛",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22503,
+        "id": 22007,
         "en": "moral",
         "kk": "",
-        "zh": "a. 道德的 n 道德；品行",
+        "zh": "a. 道德的n. 道德; 品行",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22504,
+        "id": 22008,
         "en": "mortgag",
         "kk": "",
-        "zh": "n. 抵押 v 抵押",
+        "zh": "n. 抵押v. 抵押",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22505,
+        "id": 22009,
         "en": "motivate",
         "kk": "",
-        "zh": "v. 刺激；激發",
+        "zh": "v. 刺激;激發",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22506,
+        "id": 22010,
         "en": "motivation",
         "kk": "",
-        "zh": "n. 刺激；推動",
+        "zh": "n. 刺激;推 動",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22507,
+        "id": 22011,
         "en": "motive",
         "kk": "",
-        "zh": "n. 動機；主旨 a起動的；推動的 v 激起",
+        "zh": "n. 動機;主旨a. 起動的;推動的v. 激起",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22508,
+        "id": 22012,
         "en": "move",
         "kk": "",
-        "zh": "v. 移動；推動",
+        "zh": "v. 移動;推動",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22509,
+        "id": 22013,
         "en": "movement",
         "kk": "",
-        "zh": "n. 運動；活動；行動",
+        "zh": "n. 運動;活 動;行動",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22510,
+        "id": 22014,
         "en": "mul",
         "kk": "",
-        "zh": "v. 深思熟慮 n 亂糟糟；混亂",
+        "zh": "v. 深思熟慮n. 亂糟 糟;混亂",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22511,
+        "id": 22015,
         "en": "myriad",
         "kk": "",
-        "zh": "n. 無數；大量 a無數的；大量的",
+        "zh": "n. 無數;大量a. 無數的;大量的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22512,
+        "id": 22016,
         "en": "nag",
         "kk": "",
-        "zh": "v. 嘮叨；責罵不休 n好嘮叨的人",
+        "zh": "v. 嘮叨;責罵不休n. 好嘮叨的人",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22513,
+        "id": 22017,
         "en": "nail",
         "kk": "",
-        "zh": "n. 釘子；指甲 v 釘牢；使固定",
+        "zh": "n. 釘子;指甲v. 釘 牢;使固定",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22514,
+        "id": 22018,
         "en": "naive",
         "kk": "",
-        "zh": "a. 天真的；幼稚的",
+        "zh": "a. 天真的;幼稚的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22515,
+        "id": 22019,
         "en": "name",
-        "kk": "",
-        "zh": "n. 名字；姓名 v提名；任命",
+        "kk": "/neɪm/",
+        "zh": "n. 名字;姓名v. 提名;任命",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22516,
+        "id": 22020,
         "en": "namely",
         "kk": "",
-        "zh": "ad. 即；那就是",
+        "zh": "ad. 即;那就是",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22517,
+        "id": 22021,
         "en": "narrate",
         "kk": "",
-        "zh": "v. 敘述；作旁白",
+        "zh": "v. 敘述;作旁白",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22518,
+        "id": 22022,
         "en": "narration",
         "kk": "",
-        "zh": "n. 敘述；講述",
+        "zh": "n. 敘述;講述",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22519,
+        "id": 22023,
         "en": "narrator",
         "kk": "",
-        "zh": "n. 敘述者；講述者",
+        "zh": "n. 敘述者;講述 者",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22520,
+        "id": 22024,
         "en": "narrow",
         "kk": "",
-        "zh": "a. 狹的；狹窄的v 變窄；收縮",
+        "zh": "a. 狹的;狹窄的v. 變窄;收縮",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22521,
+        "id": 22025,
         "en": "narrowly",
         "kk": "",
-        "zh": "ad. 狹窄地；勉強地",
+        "zh": "ad. 狹窄地;勉 強地",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22522,
+        "id": 22026,
         "en": "nation",
-        "kk": "",
-        "zh": "n. 國民；國家",
+        "kk": "/ˈneɪʃn/",
+        "zh": "n. 國民;國家",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22523,
+        "id": 22027,
         "en": "national",
         "kk": "",
-        "zh": "a. 全國性的；國家的  n 國民；國人",
+        "zh": "a. 全國性的;國 家的n. 國民;國人",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22524,
+        "id": 22028,
         "en": "nationality",
         "kk": "",
         "zh": "n. 國籍",
@@ -22083,115 +18252,115 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22525,
+        "id": 22029,
         "en": "nationwide",
         "kk": "",
-        "zh": "a. 全國性的ad 在全國",
+        "zh": "a. 全國性的ad. 在全國",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22526,
+        "id": 22030,
         "en": "native",
         "kk": "",
-        "zh": "a. 天生的；本國的n 本地人",
+        "zh": "a. 天生的;本國的n. 本地人",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22527,
+        "id": 22031,
         "en": "natural",
-        "kk": "",
-        "zh": "a. 自然的；不做作",
+        "kk": "/ˈnætʃərəl/",
+        "zh": "a. 自然的;不做 作",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22528,
+        "id": 22032,
         "en": "naturally",
         "kk": "",
-        "zh": "ad. 自然地；天然地",
+        "zh": "ad. 自然地;天 然地",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22529,
+        "id": 22033,
         "en": "nearby",
         "kk": "",
-        "zh": "a. 附近的 ad 附近的",
+        "zh": "a. 附近的ad. 附 近的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22530,
+        "id": 22034,
         "en": "necessarily",
         "kk": "",
-        "zh": "ad. 必定；必然地",
+        "zh": "ad. 必定;必 然地",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22531,
+        "id": 22035,
         "en": "necessary",
-        "kk": "",
-        "zh": "a. 必要的，必需的",
+        "kk": "/ˈnesəseri/",
+        "zh": "a. 必要的, 必需的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22532,
+        "id": 22036,
         "en": "necessity",
         "kk": "",
-        "zh": "n. 需要；必要性",
+        "zh": "n. 需要;必要 性",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22533,
+        "id": 22037,
         "en": "need",
-        "kk": "",
-        "zh": "n. 需要；必要 v 需要",
+        "kk": "/niːd/",
+        "zh": "n. 需要;必要v. 需 要",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22534,
+        "id": 22038,
         "en": "neglect",
         "kk": "",
-        "zh": "n. 忽視；忽略 v忽視；忽略",
+        "zh": "n. 忽視;忽略v. 忽視;忽略",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22535,
+        "id": 22039,
         "en": "neglectful",
         "kk": "",
-        "zh": "a. 疏忽的；不注意的",
+        "zh": "a. 疏忽的;不 注意的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22536,
+        "id": 22040,
         "en": "negligence",
         "kk": "",
-        "zh": "n. 疏忽；粗心",
+        "zh": "n. 疏忽;粗 心",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22537,
+        "id": 22041,
         "en": "negotiable",
         "kk": "",
         "zh": "a. 可協商的",
@@ -22200,34 +18369,43 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22538,
+        "id": 22042,
+        "en": "negotiate",
+        "kk": "",
+        "zh": "v. 協商;交涉",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22043,
         "en": "negotiator",
         "kk": "",
-        "zh": "n. 磋商者；交涉者",
+        "zh": "n. 磋商者;交 涉者",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22539,
+        "id": 22044,
         "en": "nevertheless",
         "kk": "",
-        "zh": "ad. 仍然；不過",
+        "zh": "ad. 仍然; 不過",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22540,
+        "id": 22045,
         "en": "news",
-        "kk": "",
-        "zh": "n. 新聞；消息",
+        "kk": "/nuːz/",
+        "zh": "n. 新聞;消息",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22541,
+        "id": 22046,
         "en": "newsletter",
         "kk": "",
         "zh": "n. 報紙",
@@ -22236,34 +18414,34 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22542,
+        "id": 22047,
         "en": "nexus",
         "kk": "",
-        "zh": "n. 連結；連鎖",
+        "zh": "n. 連結;連鎖",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22543,
+        "id": 22048,
         "en": "nominate",
         "kk": "",
-        "zh": "v. 提名；任命",
+        "zh": "v. 提名;任命",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22544,
+        "id": 22049,
         "en": "nomination",
         "kk": "",
-        "zh": "n. 提名；任命",
+        "zh": "n. 提名;任 命",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22545,
+        "id": 22050,
         "en": "nominee",
         "kk": "",
         "zh": "n. 被提名人",
@@ -22272,16 +18450,16 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22546,
+        "id": 22051,
         "en": "note",
-        "kk": "",
-        "zh": "n. 筆記；記錄 v 注意；記下",
+        "kk": "/noʊt/",
+        "zh": "n. 筆記;記錄v. 注 意;記下",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22547,
+        "id": 22052,
         "en": "notebook",
         "kk": "",
         "zh": "n. 筆記本",
@@ -22290,16 +18468,16 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22548,
+        "id": 22053,
         "en": "notice",
-        "kk": "",
-        "zh": "v. 注意；留意",
+        "kk": "/ˈnoʊtɪs/",
+        "zh": "v. 注意;留意",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22549,
+        "id": 22054,
         "en": "novel",
         "kk": "",
         "zh": "n. 小說",
@@ -22308,25 +18486,25 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22550,
+        "id": 22055,
         "en": "novelty",
         "kk": "",
-        "zh": "n. 新穎；新奇",
+        "zh": "n. 新穎;新奇",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22551,
+        "id": 22056,
         "en": "null",
         "kk": "",
-        "zh": "a. 無效的；無價值的",
+        "zh": "a. 無效的;無價值的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22552,
+        "id": 22057,
         "en": "nurse",
         "kk": "",
         "zh": "n. 護士",
@@ -22335,115 +18513,124 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22553,
+        "id": 22058,
         "en": "nursing",
         "kk": "",
-        "zh": "n. 看護；護理",
+        "zh": "n. 看護;護理",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22554,
+        "id": 22059,
         "en": "nurture",
         "kk": "",
-        "zh": "n. 養育；教養 v養育；培育",
+        "zh": "n. 養育;教養v. 養育;培育",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22555,
+        "id": 22060,
         "en": "nutrient",
         "kk": "",
-        "zh": "a. 營養的；滋養的 n 營養物",
+        "zh": "a. 營養的;滋養 的n. 營養物",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22556,
+        "id": 22061,
         "en": "nutrition",
         "kk": "",
-        "zh": "n. 營養；滋養O",
+        "zh": "n. 營養;滋養",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22557,
+        "id": 22062,
         "en": "object",
-        "kk": "",
-        "zh": "n. 對象；目標 v反對",
+        "kk": "/ˈɑːbdʒɪkt/",
+        "zh": "n. 對象;目標v. 反對",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22558,
+        "id": 22063,
         "en": "objection",
         "kk": "",
-        "zh": "n. 反對；異議",
+        "zh": "n. 反對;異議",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22559,
+        "id": 22064,
         "en": "objective",
         "kk": "",
-        "zh": "a. 客觀的；如實的",
+        "zh": "a. 客觀的;如 實的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22560,
+        "id": 22065,
+        "en": "obligation",
+        "kk": "",
+        "zh": "n. 義務;責任",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22066,
         "en": "obligatory",
         "kk": "",
-        "zh": "n. 義不容辭的；有義務的",
+        "zh": "n. 義不容辭 的;有義務的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22561,
+        "id": 22067,
         "en": "observe",
-        "kk": "",
-        "zh": "v. 觀察；注意",
+        "kk": "/əbˈzɜːrv/",
+        "zh": "v. 觀察;注意",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22562,
+        "id": 22068,
         "en": "obsolete",
         "kk": "",
-        "zh": "a. 廢棄的；淘汰的",
+        "zh": "a. 廢棄的;淘 汰的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22563,
+        "id": 22069,
         "en": "obtain",
-        "kk": "",
-        "zh": "v. 得到；獲得",
+        "kk": "/əbˈteɪn/",
+        "zh": "v. 得到;獲得",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22564,
+        "id": 22070,
         "en": "obvious",
-        "kk": "",
+        "kk": "/ˈɑːbviəs/",
         "zh": "a. 明顯的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22565,
+        "id": 22071,
         "en": "obviously",
         "kk": "",
         "zh": "ad. 明顯地",
@@ -22452,151 +18639,178 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22566,
+        "id": 22072,
         "en": "occasion",
-        "kk": "",
-        "zh": "n. 場合；狀況",
+        "kk": "/əˈkeɪʒn/",
+        "zh": "n. 場合;狀況",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22567,
+        "id": 22073,
         "en": "occupancy",
         "kk": "",
-        "zh": "n. 佔有；入住",
+        "zh": "n. 佔有;入 住",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22568,
+        "id": 22074,
         "en": "occupation",
         "kk": "",
-        "zh": "n. 工作，職業",
+        "zh": "n. 工作,職 業",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22569,
+        "id": 22075,
         "en": "occupied",
         "kk": "",
-        "zh": "a. 佔用的；在使用的",
+        "zh": "a. 佔用的;在 使用的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22570,
+        "id": 22076,
         "en": "occur",
-        "kk": "",
-        "zh": "v. 發生；出現",
+        "kk": "/əˈkɜːr/",
+        "zh": "v. 發生;出現",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22571,
+        "id": 22077,
         "en": "occurrence",
         "kk": "",
-        "zh": "n. 發生；出現",
+        "zh": "n. 發生;出 現",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22572,
+        "id": 22078,
         "en": "offence",
         "kk": "",
-        "zh": "n. 罪過；犯法 (=offense)",
+        "zh": "n. 罪過;犯法 (= offense)",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22573,
+        "id": 22079,
         "en": "offender",
         "kk": "",
-        "zh": "n. 違法者；犯規的人",
+        "zh": "n. 違法者;犯 規的人",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22574,
+        "id": 22080,
         "en": "offense",
         "kk": "",
-        "zh": "n. 罪過；犯法",
+        "zh": "n. 罪過;犯法",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22575,
+        "id": 22081,
         "en": "offensive",
         "kk": "",
-        "zh": "a. 冒犯的；唐突的",
+        "zh": "a. 冒犯的;唐 突的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22576,
+        "id": 22082,
         "en": "offer",
-        "kk": "",
-        "zh": "v. 提供2083. ofﬁce n 辦公室；職務2084.  ofﬁcial a 官方的；公務上的",
+        "kk": "/ˈɔːfər/",
+        "zh": "v. 提供",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22577,
+        "id": 22083,
+        "en": "office",
+        "kk": "/ˈɔːfɪs/",
+        "zh": "n. 辦公室;職務",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22084,
+        "en": "official",
+        "kk": "",
+        "zh": "a. 官方的;公務 上的",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22085,
         "en": "offset",
         "kk": "",
-        "zh": "v. 補償；抵銷 n 補償；抵銷",
+        "zh": "v. 補償;抵銷n. 補 償;抵銷",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22578,
+        "id": 22086,
         "en": "omission",
         "kk": "",
-        "zh": "n. 遺漏；省略",
+        "zh": "n. 遺漏;省略",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22579,
+        "id": 22087,
         "en": "omit",
         "kk": "",
-        "zh": "v. 遺漏；省略",
+        "zh": "v. 遺漏;省略",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22580,
+        "id": 22088,
+        "en": "operate",
+        "kk": "/ˈɑːpəreɪt/",
+        "zh": "v. 營業;運轉",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22089,
         "en": "operation",
         "kk": "",
-        "zh": "a. 營業；運轉",
+        "zh": "a. 營業;運轉",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22581,
+        "id": 22090,
         "en": "operational",
         "kk": "",
-        "zh": "a. 操作上的；經營上的",
+        "zh": "a. 操作上 的;經營上的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22582,
+        "id": 22091,
         "en": "operator",
         "kk": "",
         "zh": "n. 操作者",
@@ -22605,223 +18819,232 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22583,
+        "id": 22092,
         "en": "opinion",
-        "kk": "",
-        "zh": "n. 意見；評論",
+        "kk": "/əˈpɪnjən/",
+        "zh": "n. 意見;評論",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22584,
+        "id": 22093,
         "en": "opportune",
         "kk": "",
-        "zh": "a. 恰好的；適宜的",
+        "zh": "a. 恰好的; 適宜的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22585,
+        "id": 22094,
         "en": "opportunity",
-        "kk": "",
+        "kk": "/ˌɑːpərˈtuːnəti/",
         "zh": "n. 機會",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22586,
+        "id": 22095,
         "en": "opposite",
-        "kk": "",
-        "zh": "a. 相反的；對立的 ad 在對面 prep在⋯⋯對面",
+        "kk": "/ˈɑːpəzɪt/",
+        "zh": "a. 相反的; 對立的ad. 在對面prep. 在⋯⋯對面",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22587,
+        "id": 22096,
         "en": "option",
-        "kk": "",
-        "zh": "n. 選項；選擇",
+        "kk": "/ˈɑːpʃn/",
+        "zh": "n. 選項;選擇",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22588,
+        "id": 22097,
+        "en": "order",
+        "kk": "/ˈɔːrdər/",
+        "zh": "n. 順序;狀況;命 令v. 命令;指揮",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22098,
         "en": "ordinarily",
         "kk": "",
-        "zh": "a. 通常地；慣常地",
+        "zh": "a. 通常地;慣 常地",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22589,
+        "id": 22099,
         "en": "ordinary",
-        "kk": "",
-        "zh": "a. 平凡的；通常的",
+        "kk": "/ˈɔːrdəneri/",
+        "zh": "a. 平凡的;通 常的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22590,
+        "id": 22100,
         "en": "organize",
-        "kk": "",
-        "zh": "v. 組織；安排",
+        "kk": "/ˈɔːrɡənaɪz/",
+        "zh": "v. 組織;安排",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22591,
+        "id": 22101,
         "en": "origin",
         "kk": "",
-        "zh": "n. 起源；由來",
+        "zh": "n. 起源;由來",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22592,
+        "id": 22102,
         "en": "original",
-        "kk": "",
-        "zh": "a. 本來的；最初的",
+        "kk": "/əˈrɪdʒənl/",
+        "zh": "a. 本來的;最初 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22593,
+        "id": 22103,
         "en": "originality",
         "kk": "",
-        "zh": "n. 創造力；獨創性",
+        "zh": "n. 創造力;獨 創性",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22594,
+        "id": 22104,
         "en": "originally",
         "kk": "",
-        "zh": "ad. 本來的；最初的",
+        "zh": "ad. 本來的;最 初的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22595,
+        "id": 22105,
         "en": "originate",
         "kk": "",
-        "zh": "v. 發源；來自",
+        "zh": "v. 發源;來自",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22596,
+        "id": 22106,
         "en": "outbound",
         "kk": "",
-        "zh": "a. ad 向外去的；駛向外國的",
+        "zh": "a.ad. 向外去 的;駛向外國的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22597,
+        "id": 22107,
         "en": "outdo",
         "kk": "",
-        "zh": "v. 勝過；超越",
+        "zh": "v. 勝過;超越",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22598,
+        "id": 22108,
         "en": "outdoor",
         "kk": "",
-        "zh": "a. 戶外的，露天的",
+        "zh": "a. 戶外的,露天 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22599,
+        "id": 22109,
         "en": "outer",
         "kk": "",
-        "zh": "a. 外面的；外表的",
+        "zh": "a. 外面的;外表的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22600,
+        "id": 22110,
         "en": "outgoing",
         "kk": "",
-        "zh": "a. 友好的; 外向的",
+        "zh": "a. 友好的; 外 向的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22601,
+        "id": 22111,
         "en": "outgun",
         "kk": "",
-        "zh": "v. 火力壓過；武器多於",
+        "zh": "v. 火力壓過;武 器多於",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22602,
+        "id": 22112,
         "en": "outlaw",
         "kk": "",
-        "zh": "n. 歹徒；罪犯  v法律上失效",
+        "zh": "n. 歹徒;罪犯v. 法律上失效",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22603,
+        "id": 22113,
         "en": "outlet",
         "kk": "",
-        "zh": "n. 銷路；商店",
+        "zh": "n. 銷路;商店",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22604,
+        "id": 22114,
         "en": "outline",
         "kk": "",
-        "zh": "n. 外形；輪廓 v概述；略述",
+        "zh": "n. 外形;輪廓v. 概述;略述",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22605,
+        "id": 22115,
         "en": "outlook",
         "kk": "",
-        "zh": "n. 觀點；看法",
+        "zh": "n. 觀點;看法",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22606,
+        "id": 22116,
         "en": "outmaneuver",
         "kk": "",
-        "zh": "v. 以計謀勝過",
+        "zh": "v. 以計謀 勝過",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22607,
+        "id": 22117,
         "en": "out-of-date",
         "kk": "",
         "zh": "a. 不流行的",
@@ -22830,52 +19053,52 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22608,
+        "id": 22118,
         "en": "output",
         "kk": "",
-        "zh": "v. 出產；生產 n出產；生產",
+        "zh": "v. 出產;生產n. 出產;生產",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22609,
+        "id": 22119,
         "en": "outrage",
         "kk": "",
-        "zh": "n. 惡行；暴行 v傷害；違反",
+        "zh": "n. 惡行;暴行v. 傷害;違反",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22610,
+        "id": 22120,
         "en": "outrageous",
         "kk": "",
-        "zh": "a. 可憎的；可恥的",
+        "zh": "a. 可憎的; 可恥的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22611,
+        "id": 22121,
         "en": "outrun",
         "kk": "",
-        "zh": "v. 超過；超出",
+        "zh": "v. 超過;超出",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22612,
+        "id": 22122,
         "en": "outskirt",
         "kk": "",
-        "zh": "n. 市郊；郊區",
+        "zh": "n. 市郊;郊區",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22613,
+        "id": 22123,
         "en": "outsmart",
         "kk": "",
         "zh": "v. 用計謀打敗",
@@ -22884,52 +19107,61 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22614,
+        "id": 22124,
+        "en": "outstanding",
+        "kk": "",
+        "zh": "a. 顯著的; 傑出的",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22125,
         "en": "outward",
         "kk": "",
-        "zh": "a. 向外的；往外去的  ad 向外的；往外去的",
+        "zh": "a. 向外的;往外 去的ad. 向外的;往外去 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22615,
+        "id": 22126,
         "en": "outweigh",
         "kk": "",
-        "zh": "v. 比⋯⋯重；超過",
+        "zh": "v. 比⋯⋯重; 超過",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22616,
+        "id": 22127,
         "en": "overall",
         "kk": "",
-        "zh": "a. 總的，全部的n 工作褲",
+        "zh": "a. 總的,全部的n. 工作褲",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22617,
+        "id": 22128,
         "en": "overcome",
         "kk": "",
-        "zh": "v. 戰勝；克服",
+        "zh": "v. 戰勝;克服",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22618,
+        "id": 22129,
         "en": "overhead",
         "kk": "",
-        "zh": "a. 在頭頂上的；在上頭的 ad 在上頭；高高地",
+        "zh": "a. 在頭頂上 的;在上頭的ad. 在上頭; 高高地",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22619,
+        "id": 22130,
         "en": "overlap",
         "kk": "",
         "zh": "v. 部分重疊",
@@ -22938,124 +19170,133 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22620,
+        "id": 22131,
         "en": "overlook",
         "kk": "",
-        "zh": "v. 看漏；忽略",
+        "zh": "v. 看漏;忽略",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22621,
+        "id": 22132,
         "en": "overseas",
         "kk": "",
-        "zh": "a. 在海外；在國外",
+        "zh": "a. 在海外;在 國外",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22622,
+        "id": 22133,
         "en": "oversee",
         "kk": "",
-        "zh": "v. 監視；監督",
+        "zh": "v. 監視;監督",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22623,
+        "id": 22134,
+        "en": "overtime",
+        "kk": "",
+        "zh": "n. 加班a. 超過 時間的ad. 超過地",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22135,
         "en": "overview",
         "kk": "",
-        "zh": "n. 概觀；概要",
+        "zh": "n. 概觀;概要",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22624,
+        "id": 22136,
         "en": "overwhelm",
         "kk": "",
-        "zh": "v. 戰勝；征服",
+        "zh": "v. 戰勝;征 服",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22625,
+        "id": 22137,
         "en": "ow",
         "kk": "",
-        "zh": "v. 欠；歸功於",
+        "zh": "v. 欠;歸功於",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22626,
+        "id": 22138,
         "en": "own",
-        "kk": "",
-        "zh": "a. 自己的 v 有；擁有",
+        "kk": "/oʊn/",
+        "zh": "a. 自己的v. 有;擁 有",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22627,
+        "id": 22139,
         "en": "owner",
         "kk": "",
-        "zh": "n. 物主；所有人P",
+        "zh": "n. 物主;所有人",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22628,
+        "id": 22140,
         "en": "package",
         "kk": "",
-        "zh": "n. 包裹；包",
+        "zh": "n. 包裹;包",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22629,
+        "id": 22141,
         "en": "panel",
         "kk": "",
-        "zh": "a. 控制板；陪審員名單",
+        "zh": "a. 控制板;陪審員 名單",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22630,
+        "id": 22142,
         "en": "paragraph",
         "kk": "",
-        "zh": "n. （文章的）段；節",
+        "zh": "n. (文章的) 段;節",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22631,
+        "id": 22143,
         "en": "part",
-        "kk": "",
-        "zh": "n. 部分；本分 v 分開；使分離 a 部分 ad 部分地",
+        "kk": "/pɑːrt/",
+        "zh": "n. 部分;本分v. 分 開;使分離a. 部分ad. 部 分地",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22632,
+        "id": 22144,
         "en": "partial",
         "kk": "",
-        "zh": "a. 部分的；局部的",
+        "zh": "a. 部分的;局部 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22633,
+        "id": 22145,
         "en": "participant",
         "kk": "",
         "zh": "n. 參與者",
@@ -23064,34 +19305,52 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22634,
-        "en": "particular",
+        "id": 22146,
+        "en": "participate",
         "kk": "",
-        "zh": "a. 特有的，獨特的",
+        "zh": "v. 參加;參 與",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22635,
+        "id": 22147,
+        "en": "particular",
+        "kk": "/pərˈtɪkjələr/",
+        "zh": "a. 特有的,獨 特的",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22148,
         "en": "particularly",
         "kk": "",
-        "zh": "ad. 特別；尤其",
+        "zh": "ad. 特別;尤 其",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22636,
+        "id": 22149,
         "en": "partner",
-        "kk": "",
-        "zh": "n. 夥伴；同伴",
+        "kk": "/ˈpɑːrtnər/",
+        "zh": "n. 夥伴;同伴",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22637,
+        "id": 22150,
+        "en": "partnership",
+        "kk": "",
+        "zh": "n. 合夥關係",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22151,
         "en": "part-time",
         "kk": "",
         "zh": "a. 兼職的",
@@ -23100,34 +19359,34 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22638,
+        "id": 22152,
         "en": "party",
-        "kk": "",
-        "zh": "n. 聚會；派對；黨派",
+        "kk": "/ˈpɑːrti/",
+        "zh": "n. 聚會;派對;黨 派",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22639,
+        "id": 22153,
         "en": "pass",
-        "kk": "",
-        "zh": "v. 穿過；通過 n 通行證；護照；入場證",
+        "kk": "/pæs/",
+        "zh": "v. 穿過;通過n. 通 行證;護照;入場證",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22640,
+        "id": 22154,
         "en": "passage",
         "kk": "",
-        "zh": "n. 通行；走廊",
+        "zh": "n. 通行;走廊",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22641,
+        "id": 22155,
         "en": "passenger",
         "kk": "",
         "zh": "n. 乘客",
@@ -23136,7 +19395,7 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22642,
+        "id": 22156,
         "en": "passport",
         "kk": "",
         "zh": "n. 護照",
@@ -23145,25 +19404,25 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22643,
+        "id": 22157,
         "en": "patch",
         "kk": "",
-        "zh": "n. 補釘；補片 v補綴；修補",
+        "zh": "n. 補釘;補片v. 補綴;修補",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22644,
+        "id": 22158,
         "en": "path",
-        "kk": "",
+        "kk": "/pæθ/",
         "zh": "n. 小徑",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22645,
+        "id": 22159,
         "en": "patience",
         "kk": "",
         "zh": "n. 耐心",
@@ -23172,277 +19431,304 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22646,
+        "id": 22160,
         "en": "patient",
-        "kk": "",
+        "kk": "/ˈpeɪʃnt/",
         "zh": "a. 有耐心的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22647,
+        "id": 22161,
         "en": "pattern",
-        "kk": "",
-        "zh": "n. 花樣；圖案",
+        "kk": "/ˈpætərn/",
+        "zh": "n. 花樣;圖案",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22648,
+        "id": 22162,
         "en": "pay",
-        "kk": "",
-        "zh": "v. 付；支付 n 薪俸；報酬",
+        "kk": "/peɪ/",
+        "zh": "v. 付;支付n. 薪俸; 報酬",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22649,
+        "id": 22163,
         "en": "payable",
         "kk": "",
-        "zh": "a. 應支付的；到期的",
+        "zh": "a. 應支付的;到 期的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22650,
+        "id": 22164,
         "en": "payment",
         "kk": "",
-        "zh": "n. 支付；付款",
+        "zh": "n. 支付;付款",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22651,
-        "en": "peace",
+        "id": 22165,
+        "en": "payroll",
         "kk": "",
-        "zh": "n. 和平；平靜",
+        "zh": "n. 薪金總額;發 薪名單",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22652,
+        "id": 22166,
+        "en": "peace",
+        "kk": "/piːs/",
+        "zh": "n. 和平;平靜",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22167,
         "en": "peaceful",
         "kk": "",
-        "zh": "a. 和平的；安詳的",
+        "zh": "a. 和平的;安 詳的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22653,
+        "id": 22168,
         "en": "peculiar",
         "kk": "",
-        "zh": "a. 奇怪的；乖癖的",
+        "zh": "a. 奇怪的;乖癖 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22654,
+        "id": 22169,
         "en": "penalize",
         "kk": "",
-        "zh": "v. 處罰；處刑",
+        "zh": "v. 處罰;處刑",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22655,
+        "id": 22170,
         "en": "penalty",
         "kk": "",
-        "zh": "n. 處罰；刑罰",
+        "zh": "n. 處罰;刑罰",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22656,
+        "id": 22171,
         "en": "perceive",
         "kk": "",
-        "zh": "v. 察覺；感知",
+        "zh": "v. 察覺;感知",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22657,
+        "id": 22172,
         "en": "percent",
         "kk": "",
-        "zh": "n. 百分比；百分率",
+        "zh": "n. 百分比;百分 率",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22658,
+        "id": 22173,
         "en": "percentage",
         "kk": "",
-        "zh": "n. 百分率；百分比",
+        "zh": "n. 百分率; 百分比",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22659,
+        "id": 22174,
         "en": "perception",
         "kk": "",
-        "zh": "n. 感知；感受",
+        "zh": "n. 感知;感 受",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22660,
+        "id": 22175,
         "en": "perfect",
-        "kk": "",
-        "zh": "a. 完美的；理想的",
+        "kk": "/ˈpɜːrfɪkt/",
+        "zh": "a. 完美的;理想 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22661,
+        "id": 22176,
         "en": "perform",
-        "kk": "",
-        "zh": "n. 表演；實施 v使完美；做完",
+        "kk": "/pərˈfɔːrm/",
+        "zh": "n. 表演;實施v. 使完美;做完",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22662,
+        "id": 22177,
         "en": "performance",
         "kk": "",
-        "zh": "n. 表演；成效",
+        "zh": "n. 表演; 成效",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22663,
+        "id": 22178,
         "en": "perhaps",
-        "kk": "",
-        "zh": "ad. 也許；大概",
+        "kk": "/pərˈhæps/",
+        "zh": "ad. 也許;大概",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22664,
+        "id": 22179,
         "en": "period",
-        "kk": "",
-        "zh": "n. 時期；期間；生理期",
+        "kk": "/ˈpɪriəd/",
+        "zh": "n. 時期;期間; 生理期",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22665,
+        "id": 22180,
         "en": "periodical",
         "kk": "",
-        "zh": "a. 週期的；定期的",
+        "zh": "a. 週期的;定 期的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22666,
+        "id": 22181,
         "en": "permanent",
         "kk": "",
-        "zh": "a. 永恆的；永遠的",
+        "zh": "a. 永恆的; 永遠的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22667,
+        "id": 22182,
         "en": "permit",
         "kk": "",
-        "zh": "v. 允許；許可",
+        "zh": "v. 允許;許可",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22668,
+        "id": 22183,
         "en": "persistence",
         "kk": "",
-        "zh": "n. 持續的；持久的",
+        "zh": "n. 持續的; 持久的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22669,
+        "id": 22184,
         "en": "persistent",
         "kk": "",
-        "zh": "a. 持續的；持久的",
+        "zh": "a. 持續的;持 久的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22670,
+        "id": 22185,
+        "en": "personnel",
+        "kk": "",
+        "zh": "n. 人員;員工",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22186,
         "en": "perspective",
         "kk": "",
-        "zh": "a. 透視的 n看法；觀點",
+        "zh": "a. 透視的n. 看法;觀點",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22671,
+        "id": 22187,
         "en": "persuade",
         "kk": "",
-        "zh": "v. 說服；勸服",
+        "zh": "v. 說服;勸服",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22672,
+        "id": 22188,
         "en": "persuasion",
         "kk": "",
-        "zh": "n. 說服；勸服",
+        "zh": "n. 說服;勸 服",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22673,
+        "id": 22189,
         "en": "pertain",
         "kk": "",
-        "zh": "v. 從屬；附屬",
+        "zh": "v. 從屬;附屬",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22674,
+        "id": 22190,
         "en": "pertinent",
         "kk": "",
-        "zh": "a. 恰當的；貼切的",
+        "zh": "a. 恰當的;貼 切的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22675,
+        "id": 22191,
         "en": "petrol",
         "kk": "",
-        "zh": "n. 汽油2192.  Ph.D. n 博士學位 (=Doctor of Philosophy)",
+        "zh": "n. 汽油",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22676,
+        "id": 22192,
+        "en": "Ph.D.",
+        "kk": "",
+        "zh": "n. 博士學位 (= Doctor of Philosophy)",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22193,
         "en": "pharmacy",
         "kk": "",
         "zh": "n. 藥房",
@@ -23451,16 +19737,16 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22677,
+        "id": 22194,
         "en": "photo",
-        "kk": "",
+        "kk": "/ˈfoʊtoʊ/",
         "zh": "n. 照片",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22678,
+        "id": 22195,
         "en": "photograph",
         "kk": "",
         "zh": "n. 攝影照",
@@ -23469,7 +19755,7 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22679,
+        "id": 22196,
         "en": "photographer",
         "kk": "",
         "zh": "n. 攝影師",
@@ -23478,61 +19764,61 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22680,
+        "id": 22197,
         "en": "pile",
         "kk": "",
-        "zh": "n. 堆；一堆 v 堆積；疊",
+        "zh": "n. 堆;一堆v. 堆積; 疊",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22681,
+        "id": 22198,
         "en": "pin",
         "kk": "",
-        "zh": "n. 大頭針；別針 v 別住；釘住",
+        "zh": "n. 大頭針;別針v. 別 住;釘住",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22682,
+        "id": 22199,
         "en": "pioneer",
         "kk": "",
-        "zh": "n. 拓荒者；開拓者",
+        "zh": "n. 拓荒者;開拓 者",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22683,
+        "id": 22200,
         "en": "pipeline",
         "kk": "",
-        "zh": "n. 渠道；路線",
+        "zh": "n. 渠道;路線",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22684,
+        "id": 22201,
         "en": "pitch",
         "kk": "",
-        "zh": "v. 投；擲；定在 n音高；程度",
+        "zh": "v. 投;擲;定在n. 音高;程度",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22685,
+        "id": 22202,
         "en": "place",
-        "kk": "",
-        "zh": "n. 地點；地區；身分 v 放置；安置",
+        "kk": "/pleɪs/",
+        "zh": "n. 地點;地區;身 分v. 放置;安置",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22686,
+        "id": 22203,
         "en": "placement",
         "kk": "",
         "zh": "n. 布置",
@@ -23541,34 +19827,34 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22687,
+        "id": 22204,
         "en": "placid",
         "kk": "",
-        "zh": "a. 平靜的；寧靜的",
+        "zh": "a. 平靜的;寧靜的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22688,
+        "id": 22205,
         "en": "plain",
         "kk": "",
-        "zh": "a. 簡樸的；坦白的n 平原；曠野",
+        "zh": "a. 簡樸的;坦白的n. 平原;曠野",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22689,
+        "id": 22206,
         "en": "plan",
-        "kk": "",
-        "zh": "n. 計畫；方案 v 計畫；打算",
+        "kk": "/plæn/",
+        "zh": "n. 計畫;方案v. 計 畫;打算",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22690,
+        "id": 22207,
         "en": "plane",
         "kk": "",
         "zh": "n. 飛機",
@@ -23577,7 +19863,7 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22691,
+        "id": 22208,
         "en": "planet",
         "kk": "",
         "zh": "n. 行星",
@@ -23586,52 +19872,52 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22692,
+        "id": 22209,
         "en": "plant",
-        "kk": "",
+        "kk": "/plænt/",
         "zh": "n. 植物",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22693,
+        "id": 22210,
         "en": "please",
-        "kk": "",
-        "zh": "v. 請；討人喜歡；討好",
+        "kk": "/pliːz/",
+        "zh": "v. 請;討人喜歡; 討好",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22694,
+        "id": 22211,
         "en": "pleased",
         "kk": "",
-        "zh": "a. 喜歡的；滿意的",
+        "zh": "a. 喜歡的;滿意 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22695,
+        "id": 22212,
         "en": "pleasure",
         "kk": "",
-        "zh": "n. 愉悅；滿足",
+        "zh": "n. 愉悅;滿足",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22696,
+        "id": 22213,
         "en": "plug",
         "kk": "",
-        "zh": "n. 塞子，栓； v 塞住；接通電源",
+        "zh": "n. 塞子,栓;v. 塞 住;接通電源",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22697,
+        "id": 22214,
         "en": "plumber",
         "kk": "",
         "zh": "n. 水管工",
@@ -23640,43 +19926,43 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22698,
+        "id": 22215,
         "en": "pocket",
         "kk": "",
-        "zh": "n. 口袋；財力 a袖珍的；小型的",
+        "zh": "n. 口袋;財力a. 袖珍的;小型的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22699,
+        "id": 22216,
         "en": "policy",
-        "kk": "",
-        "zh": "n. 政策；方針",
+        "kk": "/ˈpɑːləsi/",
+        "zh": "n. 政策;方針",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22700,
+        "id": 22217,
         "en": "polite",
         "kk": "",
-        "zh": "a. 有禮貌的；客氣的",
+        "zh": "a. 有禮貌的;客氣 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22701,
+        "id": 22218,
         "en": "poll",
         "kk": "",
-        "zh": "n. 投票；選舉 v 投票",
+        "zh": "n. 投票;選舉v. 投 票",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22702,
+        "id": 22219,
         "en": "pollute",
         "kk": "",
         "zh": "v. 汙染",
@@ -23685,7 +19971,7 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22703,
+        "id": 22220,
         "en": "pollution",
         "kk": "",
         "zh": "n. 汙染",
@@ -23694,79 +19980,79 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22704,
+        "id": 22221,
         "en": "ponder",
         "kk": "",
-        "zh": "v. 仔細考慮；衡量",
+        "zh": "v. 仔細考慮;衡 量",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22705,
+        "id": 22222,
         "en": "population",
-        "kk": "",
+        "kk": "/ˌpɑːpjəˈleɪʃn/",
         "zh": "n. 人口",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22706,
+        "id": 22223,
         "en": "portable",
         "kk": "",
-        "zh": "a. 手提式的；輕便的",
+        "zh": "a. 手提式的; 輕便的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22707,
+        "id": 22224,
         "en": "portfolio",
         "kk": "",
-        "zh": "n. 文件夾；個人作品",
+        "zh": "n. 文件夾;個人 作品",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22708,
+        "id": 22225,
         "en": "pose",
         "kk": "",
-        "zh": "n. 姿勢 v 擺姿勢；裝腔作勢",
+        "zh": "n. 姿勢v. 擺姿勢; 裝腔作勢",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22709,
+        "id": 22226,
         "en": "position",
-        "kk": "",
-        "zh": "n. 位置；姿態",
+        "kk": "/pəˈzɪʃn/",
+        "zh": "n. 位置;姿態",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22710,
+        "id": 22227,
         "en": "possess",
         "kk": "",
-        "zh": "v. 擁有；佔有",
+        "zh": "v. 擁有;佔有",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22711,
+        "id": 22228,
         "en": "possession",
         "kk": "",
-        "zh": "n. 擁有；所有物；財產",
+        "zh": "n. 擁有;所 有物;財產",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22712,
+        "id": 22229,
         "en": "possibility",
         "kk": "",
         "zh": "n. 可能性",
@@ -23775,43 +20061,43 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22713,
+        "id": 22230,
         "en": "possible",
-        "kk": "",
+        "kk": "/ˈpɑːsəbl/",
         "zh": "a. 可能的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22714,
+        "id": 22231,
         "en": "post",
-        "kk": "",
-        "zh": "n. 崗位；哨所",
+        "kk": "/poʊst/",
+        "zh": "n. 崗位;哨所",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22715,
+        "id": 22232,
         "en": "postage",
         "kk": "",
-        "zh": "n. 郵資；郵費",
+        "zh": "n. 郵資;郵費",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22716,
+        "id": 22233,
         "en": "posting",
         "kk": "",
-        "zh": "n. 任命；委任職位",
+        "zh": "n. 任命;委任職 位",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22717,
+        "id": 22234,
         "en": "postmaster",
         "kk": "",
         "zh": "n. 郵政局長",
@@ -23820,79 +20106,88 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22718,
+        "id": 22235,
+        "en": "postpone",
+        "kk": "",
+        "zh": "v. 延遲",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22236,
         "en": "posture",
         "kk": "",
-        "zh": "n. 姿勢；姿態",
+        "zh": "n. 姿勢;姿態",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22719,
+        "id": 22237,
         "en": "potency",
         "kk": "",
-        "zh": "n. 權力；效力",
+        "zh": "n. 權力;效力",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22720,
+        "id": 22238,
         "en": "potential",
         "kk": "",
-        "zh": "a. 有潛力的；可能的",
+        "zh": "a. 有潛力的; 可能的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22721,
+        "id": 22239,
         "en": "power",
-        "kk": "",
-        "zh": "n. 力量；權力",
+        "kk": "/ˈpaʊər/",
+        "zh": "n. 力量;權力",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22722,
+        "id": 22240,
         "en": "powerful",
         "kk": "",
-        "zh": "a. 強大的；權力大的",
+        "zh": "a. 強大的;權 力大的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22723,
+        "id": 22241,
         "en": "PR",
         "kk": "",
-        "zh": "n. 公共關係 (= publicrelations)",
+        "zh": "n. 公共關係 (= public relations)",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22724,
+        "id": 22242,
         "en": "practical",
         "kk": "",
-        "zh": "a. 有用的；實際的",
+        "zh": "a. 有用的;實 際的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22725,
+        "id": 22243,
         "en": "practice",
-        "kk": "",
+        "kk": "/ˈpræktɪs/",
         "zh": "v. 練習",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22726,
+        "id": 22244,
         "en": "precise",
         "kk": "",
         "zh": "a. 精準的",
@@ -23901,7 +20196,7 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22727,
+        "id": 22245,
         "en": "precisely",
         "kk": "",
         "zh": "ad. 精準地",
@@ -23910,25 +20205,25 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22728,
+        "id": 22246,
         "en": "precondition",
         "kk": "",
-        "zh": "n. 先決條件 v 使⋯預先適應",
+        "zh": "n. 先決條 件v. 使⋯預先適應",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22729,
+        "id": 22247,
         "en": "predict",
         "kk": "",
-        "zh": "v. 預言；預知",
+        "zh": "v. 預言;預知",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22730,
+        "id": 22248,
         "en": "predictable",
         "kk": "",
         "zh": "a. 可預言的",
@@ -23937,43 +20232,43 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22731,
+        "id": 22249,
         "en": "prediction",
         "kk": "",
-        "zh": "n. 預言；預報",
+        "zh": "n. 預言;預報",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22732,
+        "id": 22250,
         "en": "predisposition",
         "kk": "",
-        "zh": "n. 傾向；素質",
+        "zh": "n. 傾向; 素質",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22733,
+        "id": 22251,
         "en": "predominate",
         "kk": "",
-        "zh": "v. 主宰；支配",
+        "zh": "v. 主宰; 支配",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22734,
+        "id": 22252,
         "en": "preface",
         "kk": "",
-        "zh": "n. 序言；引語 v作為⋯⋯的開端",
+        "zh": "n. 序言;引語v. 作為⋯⋯的開端",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22735,
+        "id": 22253,
         "en": "prefer",
         "kk": "",
         "zh": "v. 偏好",
@@ -23982,34 +20277,43 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22736,
+        "id": 22254,
         "en": "preference",
         "kk": "",
-        "zh": "n. 偏好；喜愛",
+        "zh": "n. 偏好;喜 愛",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22737,
+        "id": 22255,
         "en": "prejudice",
         "kk": "",
-        "zh": "n. 偏見；歧視v 損害；偏見",
+        "zh": "n. 偏見;歧視v. 損害;偏見",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22738,
+        "id": 22256,
+        "en": "premises",
+        "kk": "",
+        "zh": "n. 生產場所; 經營場址",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22257,
         "en": "premium",
         "kk": "",
-        "zh": "a. 高價的；優質的  n 獎品；獎金",
+        "zh": "a. 高價的;優 質的n. 獎品;獎金",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22739,
+        "id": 22258,
         "en": "prepaid",
         "kk": "",
         "zh": "a. 預先付的",
@@ -24018,61 +20322,61 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22740,
+        "id": 22259,
         "en": "prepare",
-        "kk": "",
+        "kk": "/prɪˈper/",
         "zh": "v. 準備",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22741,
+        "id": 22260,
         "en": "prescription",
         "kk": "",
-        "zh": "n. 命令；指示；處方",
+        "zh": "n. 命令;指 示;處方",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22742,
+        "id": 22261,
         "en": "present",
-        "kk": "",
-        "zh": "a. 現在的；當前的；出席的 n 現在；目前",
+        "kk": "/ˈpreznt/",
+        "zh": "a. 現在的;當前 的;出席的n. 現在;目 前",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22743,
+        "id": 22262,
         "en": "preserve",
         "kk": "",
-        "zh": "v. 保存；保藏",
+        "zh": "v. 保存;保藏",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22744,
+        "id": 22263,
         "en": "president",
-        "kk": "",
-        "zh": "n. 總統；會長；主席",
+        "kk": "/ˈprezɪdənt/",
+        "zh": "n. 總統;會長; 主席",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22745,
+        "id": 22264,
         "en": "press",
-        "kk": "",
-        "zh": "v. 按；壓；迫使 n報刊；新聞界",
+        "kk": "/pres/",
+        "zh": "v. 按;壓;迫使n. 報刊;新聞界",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22746,
+        "id": 22265,
         "en": "pressure",
         "kk": "",
         "zh": "n. 壓力",
@@ -24081,79 +20385,79 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22747,
+        "id": 22266,
         "en": "presume",
         "kk": "",
-        "zh": "v. 設想；相假設",
+        "zh": "v. 設想;相假 設",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22748,
+        "id": 22267,
         "en": "pretend",
         "kk": "",
-        "zh": "v. 假裝；佯裝",
+        "zh": "v. 假裝;佯裝",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22749,
+        "id": 22268,
         "en": "pretense",
         "kk": "",
-        "zh": "n. 假裝；矯飾",
+        "zh": "n. 假裝;矯飾",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22750,
+        "id": 22269,
         "en": "pretentious",
         "kk": "",
-        "zh": "a. 矯飾的；做作的",
+        "zh": "a. 矯飾的; 做作的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22751,
+        "id": 22270,
         "en": "prevail",
         "kk": "",
-        "zh": "v. 勝過；戰勝",
+        "zh": "v. 勝過;戰勝",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22752,
+        "id": 22271,
         "en": "prevalent",
         "kk": "",
-        "zh": "a. 流行的；盛行的",
+        "zh": "a. 流行的;盛 行的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22753,
+        "id": 22272,
         "en": "prevent",
-        "kk": "",
-        "zh": "v. 防止；預防",
+        "kk": "/prɪˈvent/",
+        "zh": "v. 防止;預防",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22754,
+        "id": 22273,
         "en": "preventive",
         "kk": "",
-        "zh": "a. 預防的；防止的",
+        "zh": "a. 預防的; 防止的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22755,
+        "id": 22274,
         "en": "previous",
         "kk": "",
         "zh": "a. 以前的",
@@ -24162,97 +20466,97 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22756,
+        "id": 22275,
         "en": "previously",
         "kk": "",
-        "zh": "ad. 事先；以前",
+        "zh": "ad. 事先;以 前",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22757,
+        "id": 22276,
         "en": "price",
-        "kk": "",
-        "zh": "n. 費用；價錢",
+        "kk": "/praɪs/",
+        "zh": "n. 費用;價錢",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22758,
+        "id": 22277,
         "en": "priceless",
         "kk": "",
-        "zh": "a. 貴重的；無價的",
+        "zh": "a. 貴重的;無 價的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22759,
+        "id": 22278,
         "en": "primarily",
         "kk": "",
-        "zh": "ad. 首先；起初；主要地",
+        "zh": "ad. 首先;起初; 主要地",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22760,
+        "id": 22279,
         "en": "prime",
         "kk": "",
-        "zh": "a. 最初的；原始的",
+        "zh": "a. 最初的;原始的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22761,
+        "id": 22280,
         "en": "principal",
         "kk": "",
-        "zh": "a. 主要的；首要的",
+        "zh": "a. 主要的;首 要的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22762,
+        "id": 22281,
         "en": "principle",
         "kk": "",
-        "zh": "n. 原則；原理",
+        "zh": "n. 原則;原理",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22763,
+        "id": 22282,
         "en": "prior",
         "kk": "",
-        "zh": "a. 在前的；居先的",
+        "zh": "a. 在前的;居先的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22764,
+        "id": 22283,
         "en": "prioritize",
         "kk": "",
-        "zh": "v. 按優先順序處理",
+        "zh": "v. 按優先順序 處理",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22765,
+        "id": 22284,
         "en": "priority",
         "kk": "",
-        "zh": "n. 優先；重點",
+        "zh": "n. 優先;重點",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22766,
+        "id": 22285,
         "en": "privacy",
         "kk": "",
         "zh": "n. 隱私",
@@ -24261,151 +20565,205 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22767,
+        "id": 22286,
         "en": "private",
-        "kk": "",
+        "kk": "/ˈpraɪvət/",
         "zh": "a. 隱私的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22768,
+        "id": 22287,
         "en": "privatize",
         "kk": "",
-        "zh": "v. 使私有（民營）化",
+        "zh": "v. 使私有(民 營)化",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22769,
+        "id": 22288,
         "en": "privilege",
         "kk": "",
-        "zh": "n. 特權；優特",
+        "zh": "n. 特權;優特",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22770,
+        "id": 22289,
         "en": "prize",
         "kk": "",
-        "zh": "n. 獎品；獎賞",
+        "zh": "n. 獎品;獎賞",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22771,
+        "id": 22290,
         "en": "probably",
-        "kk": "",
-        "zh": "ad. 大概；或許",
+        "kk": "/ˈprɑːbəbli/",
+        "zh": "ad. 大概;或許",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22772,
+        "id": 22291,
+        "en": "procedure",
+        "kk": "",
+        "zh": "n. 程序;手續",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22292,
         "en": "proceed",
         "kk": "",
-        "zh": "v. 開始；著手；出發",
+        "zh": "v. 開始;著手; 出發",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22773,
+        "id": 22293,
         "en": "process",
-        "kk": "",
-        "zh": "n. 過程；進程 v處理；辦理",
+        "kk": "/ˈprɑːses/",
+        "zh": "n. 過程;進程v. 處理;辦理",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22774,
+        "id": 22294,
         "en": "procure",
         "kk": "",
-        "zh": "n. 引起；導致",
+        "zh": "n. 引起;導致",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22775,
-        "en": "product",
+        "id": 22295,
+        "en": "procurement",
         "kk": "",
-        "zh": "n. 產品；成品",
+        "zh": "n. 取得; 採購",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22776,
+        "id": 22296,
+        "en": "product",
+        "kk": "/ˈprɑːdʌkt/",
+        "zh": "n. 產品;成品",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22297,
         "en": "production",
         "kk": "",
-        "zh": "n. 生產；製作",
+        "zh": "n. 生產;製 作",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22777,
+        "id": 22298,
+        "en": "productivity",
+        "kk": "",
+        "zh": "n. 生產力; 生產率",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22299,
         "en": "profession",
         "kk": "",
-        "zh": "n. 職業；同業",
+        "zh": "n. 職業;同 業",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22778,
+        "id": 22300,
         "en": "professional",
-        "kk": "",
-        "zh": "a. 專業的2301.  proﬁciency n 精通；熟練2302.  proﬁt v 得益；獲益 n 利潤；盈利2303.  proﬁtable a 有利的；贏利的",
+        "kk": "/prəˈfeʃənl/",
+        "zh": "a. 專業的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22779,
+        "id": 22301,
+        "en": "proficiency",
+        "kk": "",
+        "zh": "n. 精通;熟 練",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22302,
+        "en": "profit",
+        "kk": "",
+        "zh": "v. 得益;獲益n. 利 潤;盈利",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22303,
+        "en": "profitable",
+        "kk": "",
+        "zh": "a. 有利的;贏 利的",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22304,
         "en": "profound",
         "kk": "",
-        "zh": "a. 深刻的；深切的",
+        "zh": "a. 深刻的;深 切的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22780,
+        "id": 22305,
         "en": "program",
-        "kk": "",
-        "zh": "n. 計畫；方案；節目",
+        "kk": "/ˈproʊɡræm/",
+        "zh": "n. 計畫;方案; 節目",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22781,
+        "id": 22306,
         "en": "programmer",
         "kk": "",
-        "zh": "n. 程式設計師",
+        "zh": "n. 程式設 計師",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22782,
+        "id": 22307,
         "en": "progress",
         "kk": "",
-        "zh": "v. 前進；進行n 前進；進行",
+        "zh": "v. 前進;進行n. 前進;進行",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22783,
+        "id": 22308,
         "en": "progression",
         "kk": "",
         "zh": "n. 前進",
@@ -24414,196 +20772,223 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22784,
+        "id": 22309,
         "en": "prohibit",
         "kk": "",
-        "zh": "v. 禁止；妨礙",
+        "zh": "v. 禁止;妨礙",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22785,
+        "id": 22310,
         "en": "project",
-        "kk": "",
-        "zh": "v. 計畫；投射",
+        "kk": "/ˈprɑːdʒekt/",
+        "zh": "v. 計畫;投射",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22786,
+        "id": 22311,
         "en": "projection",
         "kk": "",
-        "zh": "n. 投擲；發射；投影2312.  proliﬁc a  多產的；豐富的",
+        "zh": "n. 投擲;發射; 投影",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22787,
+        "id": 22312,
+        "en": "prolific",
+        "kk": "",
+        "zh": "a. 多產的;豐富 的",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22313,
         "en": "prolong",
         "kk": "",
-        "zh": "v. 延長；拖延",
+        "zh": "v. 延長;拖延",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22788,
+        "id": 22314,
         "en": "promise",
-        "kk": "",
-        "zh": "v. 承諾；允諾 n承諾；允諾",
+        "kk": "/ˈprɑːmɪs/",
+        "zh": "v. 承諾;允諾n. 承諾;允諾",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22789,
+        "id": 22315,
+        "en": "promote",
+        "kk": "",
+        "zh": "v. 晉升;促進",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22316,
         "en": "promotional",
         "kk": "",
-        "zh": "a. 增進的；獎勵的",
+        "zh": "a. 增進的; 獎勵的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22790,
+        "id": 22317,
         "en": "proof",
         "kk": "",
-        "zh": "n. 證據；物證 a 能抵擋的",
+        "zh": "n. 證據;物證a. 能 抵擋的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22791,
+        "id": 22318,
         "en": "proper",
         "kk": "",
-        "zh": "a. 適合的；適當的",
+        "zh": "a. 適合的;適當 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22792,
+        "id": 22319,
         "en": "property",
         "kk": "",
-        "zh": "n. 資產；所有物",
+        "zh": "n. 資產;所有 物",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22793,
+        "id": 22320,
+        "en": "proposal",
+        "kk": "",
+        "zh": "n. 計畫;提案; 求婚",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22321,
         "en": "propose",
         "kk": "",
-        "zh": "v. 計畫；建議；求婚",
+        "zh": "v. 計畫;建議; 求婚",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22794,
+        "id": 22322,
         "en": "prospect",
         "kk": "",
-        "zh": "n. 指望；預期v 勘探",
+        "zh": "n. 指望;預期v. 勘探",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22795,
+        "id": 22323,
         "en": "protect",
-        "kk": "",
-        "zh": "v. 保護；防護",
+        "kk": "/prəˈtekt/",
+        "zh": "v. 保護;防護",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22796,
+        "id": 22324,
         "en": "protection",
         "kk": "",
-        "zh": "n. 保護；防護",
+        "zh": "n. 保護;防護",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22797,
+        "id": 22325,
         "en": "proud",
-        "kk": "",
-        "zh": "a. 驕傲的；有自尊心的",
+        "kk": "/praʊd/",
+        "zh": "a. 驕傲的;有自尊 心的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22798,
+        "id": 22326,
         "en": "prove",
         "kk": "",
-        "zh": "v. 證明；證實",
+        "zh": "v. 證明;證實",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22799,
+        "id": 22327,
         "en": "provide",
-        "kk": "",
+        "kk": "/prəˈvaɪd/",
         "zh": "v. 提供",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22800,
+        "id": 22328,
         "en": "proximity",
         "kk": "",
-        "zh": "n. 接近；鄰近",
+        "zh": "n. 接近;鄰近",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22801,
+        "id": 22329,
         "en": "public",
-        "kk": "",
+        "kk": "/ˈpʌblɪk/",
         "zh": "a. 公眾的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22802,
+        "id": 22330,
         "en": "publication",
         "kk": "",
-        "zh": "n. 出版物；公布",
+        "zh": "n. 出版物; 公布",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22803,
+        "id": 22331,
         "en": "publicize",
         "kk": "",
-        "zh": "v. 宣傳；公布",
+        "zh": "v. 宣傳;公布",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22804,
+        "id": 22332,
         "en": "publish",
         "kk": "",
-        "zh": "v. 出版；發行",
+        "zh": "v. 出版;發行",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22805,
+        "id": 22333,
         "en": "publisher",
         "kk": "",
         "zh": "n. 出版社",
@@ -24612,7 +20997,7 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22806,
+        "id": 22334,
         "en": "punish",
         "kk": "",
         "zh": "v. 處罰",
@@ -24621,7 +21006,7 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22807,
+        "id": 22335,
         "en": "punishment",
         "kk": "",
         "zh": "n. 處罰",
@@ -24630,16 +21015,25 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22808,
-        "en": "pure",
+        "id": 22336,
+        "en": "purchase",
         "kk": "",
-        "zh": "a. 純潔的；完全的",
+        "zh": "v. 購買;獲得",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22809,
+        "id": 22337,
+        "en": "pure",
+        "kk": "",
+        "zh": "a. 純潔的;完全的",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22338,
         "en": "purely",
         "kk": "",
         "zh": "a. 純粹地",
@@ -24648,133 +21042,142 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22810,
+        "id": 22339,
         "en": "purify",
         "kk": "",
-        "zh": "v. 使純淨；淨化",
+        "zh": "v. 使純淨;淨化",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22811,
+        "id": 22340,
         "en": "purpose",
-        "kk": "",
-        "zh": "n. 目的；意圖",
+        "kk": "/ˈpɜːrpəs/",
+        "zh": "n. 目的;意圖",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22812,
+        "id": 22341,
         "en": "pursue",
         "kk": "",
-        "zh": "v. 追求；求愛；追趕",
+        "zh": "v. 追求;求愛; 追趕",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22813,
+        "id": 22342,
         "en": "pursuit",
         "kk": "",
-        "zh": "n. 追求；尋求Q2343.  qualiﬁcation n 資格；能力",
+        "zh": "n. 追求;尋求",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22814,
+        "id": 22343,
+        "en": "qualification",
+        "kk": "",
+        "zh": "n. 資格;能 力",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22344,
         "en": "qualify",
         "kk": "",
-        "zh": "v. 使具有資格；使合格",
+        "zh": "v. 使具有資格; 使合格",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22815,
+        "id": 22345,
         "en": "quality",
-        "kk": "",
-        "zh": "n. 品質；特性 a優良的",
+        "kk": "/ˈkwɑːləti/",
+        "zh": "n. 品質;特性a. 優良的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22816,
+        "id": 22346,
         "en": "quantity",
         "kk": "",
-        "zh": "n. 數量；分量",
+        "zh": "n. 數量;分量",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22817,
+        "id": 22347,
         "en": "quarrel",
         "kk": "",
-        "zh": "n. 爭吵；不和 v爭吵；不和",
+        "zh": "n. 爭吵;不和v. 爭吵;不和",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22818,
+        "id": 22348,
         "en": "quarter",
         "kk": "",
-        "zh": "n. 四分之一；季度",
+        "zh": "n. 四分之一;季 度",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22819,
+        "id": 22349,
         "en": "quarterly",
         "kk": "",
-        "zh": "a. 季度的 ad 一季一次地",
+        "zh": "a. 季度的ad. 一 季一次地",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22820,
+        "id": 22350,
         "en": "question",
-        "kk": "",
-        "zh": "n. 問題；詢問v 訊問；審問",
+        "kk": "/ˈkwestʃən/",
+        "zh": "n. 問題;詢問v. 訊問;審問",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22821,
+        "id": 22351,
         "en": "questionable",
         "kk": "",
-        "zh": "a. 可疑的；成問題的",
+        "zh": "a. 可疑的; 成問題的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22822,
+        "id": 22352,
         "en": "queue",
         "kk": "",
-        "zh": "n. 行列；長隊 v排隊",
+        "zh": "n. 行列;長隊v. 排隊",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22823,
+        "id": 22353,
         "en": "quick",
-        "kk": "",
-        "zh": "a. 快速的；迅速的",
+        "kk": "/kwɪk/",
+        "zh": "a. 快速的;迅速的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22824,
+        "id": 22354,
         "en": "quickly",
         "kk": "",
         "zh": "ad. 快速地",
@@ -24783,79 +21186,88 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22825,
+        "id": 22355,
         "en": "quiet",
-        "kk": "",
-        "zh": "a. 寧靜的；安定的n 安靜；靜謐 v 平靜下來",
+        "kk": "/ˈkwaɪət/",
+        "zh": "a. 寧靜的;安定的n. 安靜;靜謐v. 平靜下 來",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22826,
+        "id": 22356,
         "en": "quit",
         "kk": "",
-        "zh": "v. 解除；退出",
+        "zh": "v. 解除;退出",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22827,
+        "id": 22357,
         "en": "quite",
-        "kk": "",
-        "zh": "ad. 完全；徹底",
+        "kk": "/kwaɪt/",
+        "zh": "ad. 完全;徹底",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22828,
+        "id": 22358,
+        "en": "quotation",
+        "kk": "",
+        "zh": "n. 引用;引證",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22359,
         "en": "quote",
         "kk": "",
-        "zh": "v. 引用；引述 n引號；引語R",
+        "zh": "v. 引用;引述n. 引號;引語",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22829,
+        "id": 22360,
         "en": "race",
-        "kk": "",
-        "zh": "n. 賽跑；比 v 比速度；參加競賽",
+        "kk": "/reɪs/",
+        "zh": "n. 賽跑;比v. 比速 度;參加競賽",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22830,
+        "id": 22361,
         "en": "racial",
         "kk": "",
-        "zh": "a. 人種的；種族的",
+        "zh": "a. 人種的;種族的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22831,
+        "id": 22362,
         "en": "radical",
         "kk": "",
-        "zh": "a. 根本的；基本的 n 根部；基礎",
+        "zh": "a. 根本的;基本 的n. 根部;基礎",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22832,
+        "id": 22363,
         "en": "radio",
-        "kk": "",
-        "zh": "n. 無線電；收音機",
+        "kk": "/ˈreɪdioʊ/",
+        "zh": "n. 無線電;收音機",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22833,
+        "id": 22364,
         "en": "radioactive",
         "kk": "",
         "zh": "a. 放射性的",
@@ -24864,16 +21276,16 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22834,
+        "id": 22365,
         "en": "radius",
         "kk": "",
-        "zh": "n. 半徑；半徑距離",
+        "zh": "n. 半徑;半徑距 離",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22835,
+        "id": 22366,
         "en": "railroad",
         "kk": "",
         "zh": "n. 鐵路",
@@ -24882,133 +21294,133 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22836,
+        "id": 22367,
         "en": "raise",
-        "kk": "",
-        "zh": "v. 舉起；抬起 n 加薪；提高",
+        "kk": "/reɪz/",
+        "zh": "v. 舉起;抬起n. 加 薪;提高",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22837,
+        "id": 22368,
         "en": "random",
         "kk": "",
-        "zh": "a. 胡亂的；隨便的",
+        "zh": "a. 胡亂的;隨便 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22838,
+        "id": 22369,
         "en": "randomly",
         "kk": "",
-        "zh": "ad. 任意地；隨便地",
+        "zh": "ad. 任意地;隨 便地",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22839,
+        "id": 22370,
         "en": "range",
-        "kk": "",
-        "zh": "n. 排，行；一系列",
+        "kk": "/reɪndʒ/",
+        "zh": "n. 排,行;一系列",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22840,
+        "id": 22371,
         "en": "rank",
         "kk": "",
-        "zh": "n. 等級；地位",
+        "zh": "n. 等級;地位",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22841,
+        "id": 22372,
         "en": "rapid",
         "kk": "",
-        "zh": "a. 快的；迅速的",
+        "zh": "a. 快的;迅速的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22842,
+        "id": 22373,
         "en": "rapidly",
         "kk": "",
-        "zh": "ad. 很快地；立即",
+        "zh": "ad. 很快地;立即",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22843,
+        "id": 22374,
         "en": "rare",
         "kk": "",
-        "zh": "a. 稀有的；罕見的",
+        "zh": "a. 稀有的;罕見的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22844,
+        "id": 22375,
         "en": "rarely",
         "kk": "",
-        "zh": "ad. 很少；難得",
+        "zh": "ad. 很少;難得",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22845,
+        "id": 22376,
         "en": "rate",
-        "kk": "",
-        "zh": "v. 比例；率",
+        "kk": "/reɪt/",
+        "zh": "v. 比例;率",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22846,
+        "id": 22377,
         "en": "rather",
-        "kk": "",
-        "zh": "ad. 相當；頗",
+        "kk": "/ˈræðər/",
+        "zh": "ad. 相當;頗",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22847,
+        "id": 22378,
         "en": "rational",
         "kk": "",
-        "zh": "a. 理性的；有理性的",
+        "zh": "a. 理性的;有理 性的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22848,
+        "id": 22379,
         "en": "reac",
         "kk": "",
-        "zh": "v. 抵達；達到 n 可及之範圍",
+        "zh": "v. 抵達;達到n. 可 及之範圍",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22849,
+        "id": 22380,
         "en": "read",
-        "kk": "",
-        "zh": "v. 閱讀；攻讀 n 讀物",
+        "kk": "/riːd/",
+        "zh": "v. 閱讀;攻讀n. 讀 物",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22850,
+        "id": 22381,
         "en": "reader",
         "kk": "",
         "zh": "n. 讀者",
@@ -25017,7 +21429,7 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22851,
+        "id": 22382,
         "en": "readership",
         "kk": "",
         "zh": "n. 讀者們",
@@ -25026,7 +21438,7 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22852,
+        "id": 22383,
         "en": "readiness",
         "kk": "",
         "zh": "n. 準備就緒",
@@ -25035,115 +21447,124 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22853,
+        "id": 22384,
         "en": "ready",
-        "kk": "",
-        "zh": "a. 準備好的；願意的",
+        "kk": "/ˈredi/",
+        "zh": "a. 準備好的;願意 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22854,
+        "id": 22385,
         "en": "realization",
         "kk": "",
-        "zh": "n. 領悟；認識",
+        "zh": "n. 領悟;認 識",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22855,
+        "id": 22386,
         "en": "realize",
         "kk": "",
-        "zh": "v. 領悟；實現",
+        "zh": "v. 領悟;實現",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22856,
+        "id": 22387,
         "en": "reason",
-        "kk": "",
+        "kk": "/ˈriːzn/",
         "zh": "n. 理由",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22857,
+        "id": 22388,
         "en": "reasonable",
         "kk": "",
-        "zh": "a. 合理的；正當的",
+        "zh": "a. 合理的; 正當的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22858,
+        "id": 22389,
         "en": "rebel",
         "kk": "",
-        "zh": "n. 反抗者 a 反叛的",
+        "zh": "n. 反抗者a. 反叛的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22859,
+        "id": 22390,
         "en": "rebellion",
         "kk": "",
-        "zh": "n. 反叛；造反；叛亂",
+        "zh": "n. 反叛;造反; 叛亂",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22860,
+        "id": 22391,
         "en": "rebound",
         "kk": "",
-        "zh": "v. 彈回；跳回",
+        "zh": "v. 彈回;跳回",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22861,
+        "id": 22392,
         "en": "rebuild",
         "kk": "",
-        "zh": "v. 重建；改建",
+        "zh": "v. 重建;改建",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22862,
+        "id": 22393,
         "en": "recall",
         "kk": "",
-        "zh": "v. 回想；回憶",
+        "zh": "v. 回想;回憶",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22863,
+        "id": 22394,
+        "en": "receipt",
+        "kk": "",
+        "zh": "n. 收據",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22395,
         "en": "receive",
-        "kk": "",
-        "zh": "v. 收到；接到",
+        "kk": "/rɪˈsiːv/",
+        "zh": "v. 收到;接到",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22864,
+        "id": 22396,
         "en": "recent",
-        "kk": "",
-        "zh": "a. 新近的；最近的",
+        "kk": "/ˈriːsnt/",
+        "zh": "a. 新近的;最近 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22865,
+        "id": 22397,
         "en": "recently",
         "kk": "",
         "zh": "ad. 最近",
@@ -25152,16 +21573,16 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22866,
+        "id": 22398,
         "en": "reception",
         "kk": "",
-        "zh": "n. 接待；歡迎",
+        "zh": "n. 接待;歡迎",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22867,
+        "id": 22399,
         "en": "receptionist",
         "kk": "",
         "zh": "n. 接待員",
@@ -25170,52 +21591,61 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22868,
+        "id": 22400,
         "en": "recharge",
         "kk": "",
-        "zh": "v. 再充電於；再裝填彈藥於",
+        "zh": "v. 再充電於; 再裝填彈藥於",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22869,
+        "id": 22401,
+        "en": "recipient",
+        "kk": "",
+        "zh": "n. 接受者;受 領者a. 接受的;受領的",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22402,
         "en": "reclaim",
         "kk": "",
-        "zh": "v. 使改過；使悔改",
+        "zh": "v. 使改過;使悔 改",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22870,
+        "id": 22403,
         "en": "recognition",
         "kk": "",
-        "zh": "n. 認出；識別",
+        "zh": "n. 認出;識 別",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22871,
+        "id": 22404,
         "en": "recognizable",
         "kk": "",
-        "zh": "a. 可辨認的",
+        "zh": "a. 可辨認 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22872,
+        "id": 22405,
         "en": "recognize",
-        "kk": "",
-        "zh": "v. 認出；識別",
+        "kk": "/ˈrekəɡnaɪz/",
+        "zh": "v. 認出;識別",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22873,
+        "id": 22406,
         "en": "recommend",
         "kk": "",
         "zh": "v. 推薦",
@@ -25224,16 +21654,16 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22874,
+        "id": 22407,
         "en": "recommendation",
         "kk": "",
-        "zh": "n. 推薦",
+        "zh": "n. 推 薦",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22875,
+        "id": 22408,
         "en": "reconsider",
         "kk": "",
         "zh": "v. 重新考慮",
@@ -25242,25 +21672,25 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22876,
+        "id": 22409,
         "en": "record",
-        "kk": "",
-        "zh": "v. 記載；記錄",
+        "kk": "/ˈrekərd/",
+        "zh": "v. 記載;記錄",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22877,
+        "id": 22410,
         "en": "recover",
         "kk": "",
-        "zh": "v. 復原；恢復",
+        "zh": "v. 復原;恢復",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22878,
+        "id": 22411,
         "en": "recovery",
         "kk": "",
         "zh": "n. 復原 恢復",
@@ -25269,70 +21699,106 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22879,
+        "id": 22412,
+        "en": "recruit",
+        "kk": "",
+        "zh": "v. 徵募;僱用",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22413,
         "en": "recruitment",
         "kk": "",
-        "zh": "n. 徵募；僱用",
+        "zh": "n. 徵募;僱 用",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22880,
+        "id": 22414,
         "en": "rectangle",
         "kk": "",
-        "zh": "n. 矩形；長方形",
+        "zh": "n. 矩形;長方 形",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22881,
+        "id": 22415,
         "en": "rectify",
         "kk": "",
-        "zh": "v. 矯正；改正",
+        "zh": "v. 矯正;改正",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22882,
+        "id": 22416,
         "en": "reduce",
-        "kk": "",
-        "zh": "v. 減少；縮小",
+        "kk": "/rɪˈduːs/",
+        "zh": "v. 減少;縮小",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22883,
+        "id": 22417,
         "en": "refer",
-        "kk": "",
+        "kk": "/rɪˈfɜːr/",
         "zh": "v. 提到; 談論",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22884,
+        "id": 22418,
         "en": "reference",
         "kk": "",
-        "zh": "n. 提及；參考文獻2419. reﬂect v 反射；照出2420. reﬂection n 倒影；反省",
+        "zh": "n. 提及;參考 文獻",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22885,
+        "id": 22419,
+        "en": "reflect",
+        "kk": "/rɪˈflekt/",
+        "zh": "v. 反射;照出",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22420,
+        "en": "reflection",
+        "kk": "",
+        "zh": "n. 倒影;反省",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22421,
+        "en": "refund",
+        "kk": "",
+        "zh": "n. 退還;償還",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22422,
         "en": "refurbish",
         "kk": "",
-        "zh": "v. 再磨光；刷新",
+        "zh": "v. 再磨光;刷 新",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22886,
+        "id": 22423,
         "en": "refusal",
         "kk": "",
         "zh": "n. 拒絕",
@@ -25341,7 +21807,7 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22887,
+        "id": 22424,
         "en": "refuse",
         "kk": "",
         "zh": "v. 拒絕",
@@ -25350,133 +21816,151 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22888,
+        "id": 22425,
         "en": "regard",
         "kk": "",
-        "zh": "n. 注重；問候 v把⋯認為",
+        "zh": "n. 注重;問候v. 把⋯認為",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22889,
+        "id": 22426,
         "en": "regarding",
         "kk": "",
-        "zh": "prep. 關於；就⋯⋯而論",
+        "zh": "prep. 關於; 就⋯⋯而論",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22890,
+        "id": 22427,
         "en": "regardless",
         "kk": "",
-        "zh": "ad. 不顧一切地  a 不注意的；不留心的",
+        "zh": "ad. 不顧一切 地a. 不注意的;不留心 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22891,
+        "id": 22428,
         "en": "region",
-        "kk": "",
-        "zh": "n. 地區；地帶",
+        "kk": "/ˈriːdʒən/",
+        "zh": "n. 地區;地帶",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22892,
+        "id": 22429,
         "en": "registering",
         "kk": "",
-        "zh": "a. 登記的；註冊的",
+        "zh": "a. 登記的; 註冊的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22893,
+        "id": 22430,
         "en": "regular",
         "kk": "",
-        "zh": "a. 規則的；有規律的",
+        "zh": "a. 規則的;有規 律的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22894,
+        "id": 22431,
         "en": "regularly",
         "kk": "",
-        "zh": "ad. 定期地；有規律地",
+        "zh": "ad. 定期地;有 規律地",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22895,
+        "id": 22432,
         "en": "regulate",
         "kk": "",
-        "zh": "v. 管理；控制；校準",
+        "zh": "v. 管理;控制; 校準",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22896,
+        "id": 22433,
+        "en": "regulation",
+        "kk": "",
+        "zh": "n. 規章;規則a. 標準的;正規的",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22434,
         "en": "rehearsal",
         "kk": "",
-        "zh": "n. 排練；試演",
+        "zh": "n. 排練;試演",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22897,
+        "id": 22435,
         "en": "rehearse",
         "kk": "",
-        "zh": "v. 排練；排演",
+        "zh": "v. 排練;排演",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22898,
+        "id": 22436,
+        "en": "reimburse",
+        "kk": "",
+        "zh": "v. 償還;歸還",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22437,
         "en": "reimbursement",
         "kk": "",
-        "zh": "n. 償還；退款",
+        "zh": "n. 償還; 退款",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22899,
+        "id": 22438,
         "en": "reinforce",
         "kk": "",
-        "zh": "v. 增援；加強",
+        "zh": "v. 增援;加強",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22900,
+        "id": 22439,
         "en": "reinforcement",
         "kk": "",
-        "zh": "n. 增援；加強",
+        "zh": "n. 增援; 加強",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22901,
+        "id": 22440,
         "en": "reiterate",
         "kk": "",
-        "zh": "v. 重做；重申",
+        "zh": "v. 重做;重申",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22902,
+        "id": 22441,
         "en": "reject",
         "kk": "",
         "zh": "v. 拒絕",
@@ -25485,124 +21969,142 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22903,
+        "id": 22442,
         "en": "rejection",
         "kk": "",
-        "zh": "n. 拒絕；反對",
+        "zh": "n. 拒絕;反對",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22904,
+        "id": 22443,
         "en": "relate",
-        "kk": "",
-        "zh": "v. 使有聯繫；有關；涉及",
+        "kk": "/rɪˈleɪt/",
+        "zh": "v. 使有聯繫;有關; 涉及",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22905,
+        "id": 22444,
         "en": "relation",
         "kk": "",
-        "zh": "n. 關係；關聯",
+        "zh": "n. 關係;關聯",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22906,
+        "id": 22445,
         "en": "relationship",
-        "kk": "",
-        "zh": "n. 人際關係；戀愛關係",
+        "kk": "/rɪˈleɪʃnʃɪp/",
+        "zh": "n. 人際關 係;戀愛關係",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22907,
+        "id": 22446,
         "en": "release",
         "kk": "",
-        "zh": "v. 釋放；發行 n釋放；解放",
+        "zh": "v. 釋放;發行n. 釋放;解放",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22908,
+        "id": 22447,
         "en": "relevant",
         "kk": "",
-        "zh": "a. 有關的；切題的",
+        "zh": "a. 有關的;切題 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22909,
+        "id": 22448,
+        "en": "reliable",
+        "kk": "",
+        "zh": "a. 可信賴的;可 靠的",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22449,
         "en": "relief",
         "kk": "",
-        "zh": "n. 緩和；減輕",
+        "zh": "n. 緩和;減輕",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22910,
+        "id": 22450,
+        "en": "relocate",
+        "kk": "",
+        "zh": "v. 重新安置",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22451,
         "en": "rely",
         "kk": "",
-        "zh": "v. 倚靠；依靠",
+        "zh": "v. 倚靠;依靠",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22911,
+        "id": 22452,
         "en": "remain",
-        "kk": "",
-        "zh": "v. 剩下；餘留",
+        "kk": "/rɪˈmeɪn/",
+        "zh": "v. 剩下;餘留",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22912,
+        "id": 22453,
         "en": "remake",
         "kk": "",
-        "zh": "v. 再製；改造",
+        "zh": "v. 再製;改造",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22913,
+        "id": 22454,
         "en": "remark",
         "kk": "",
-        "zh": "v. 談到；評論 n言辭；談論",
+        "zh": "v. 談到;評論n. 言辭;談論",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22914,
+        "id": 22455,
         "en": "remarkable",
         "kk": "",
-        "zh": "a. 非凡的；卓越的",
+        "zh": "a. 非凡的; 卓越的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22915,
+        "id": 22456,
         "en": "remember",
-        "kk": "",
-        "zh": "v. 記得；記住",
+        "kk": "/rɪˈmembər/",
+        "zh": "v. 記得;記 住",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22916,
+        "id": 22457,
         "en": "remind",
         "kk": "",
         "zh": "v. 提醒",
@@ -25611,106 +22113,124 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22917,
+        "id": 22458,
         "en": "remote",
         "kk": "",
-        "zh": "a. 遙遠的；偏僻的",
+        "zh": "a. 遙遠的;偏僻 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22918,
+        "id": 22459,
         "en": "remotely",
         "kk": "",
-        "zh": "a. 遙遠地；間接地",
+        "zh": "a. 遙遠地;間 接地",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22919,
+        "id": 22460,
         "en": "removal",
         "kk": "",
-        "zh": "n. 移動；調動；免職",
+        "zh": "n. 移動;調動; 免職",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22920,
+        "id": 22461,
         "en": "remove",
-        "kk": "",
-        "zh": "v. 移動；調動",
+        "kk": "/rɪˈmuːv/",
+        "zh": "v. 移動;調動",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22921,
+        "id": 22462,
         "en": "render",
         "kk": "",
-        "zh": "v. 使得；提出",
+        "zh": "v. 使得;提出",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22922,
+        "id": 22463,
+        "en": "renew",
+        "kk": "",
+        "zh": "v. 使更新;使復 原",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22464,
         "en": "renewal",
         "kk": "",
-        "zh": "n. 更新；復原",
+        "zh": "n. 更新;復原",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22923,
+        "id": 22465,
+        "en": "renovation",
+        "kk": "",
+        "zh": "n. 更新;修 理",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22466,
         "en": "renowned",
         "kk": "",
-        "zh": "a. 有名的；有聲譽的",
+        "zh": "a. 有名的;有 聲譽的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22924,
+        "id": 22467,
         "en": "rent",
         "kk": "",
-        "zh": "n. 租金；租費 v 出租",
+        "zh": "n. 租金;租費v. 出 租",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22925,
+        "id": 22468,
         "en": "rental",
         "kk": "",
-        "zh": "a. 租賃的 n 租金；出租",
+        "zh": "a. 租賃的n. 租金; 出租",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22926,
+        "id": 22469,
         "en": "repair",
         "kk": "",
-        "zh": "v. 修理；修補 n修理；修補",
+        "zh": "v. 修理;修補n. 修理;修補",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22927,
+        "id": 22470,
         "en": "repeat",
-        "kk": "",
-        "zh": "v. 重複；重做 n重複；複寫",
+        "kk": "/rɪˈpiːt/",
+        "zh": "v. 重複;重做n. 重複;複寫",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22928,
+        "id": 22471,
         "en": "repetition",
         "kk": "",
         "zh": "n. 反覆背誦",
@@ -25719,7 +22239,7 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22929,
+        "id": 22472,
         "en": "repetitive",
         "kk": "",
         "zh": "a. 重複的",
@@ -25728,673 +22248,754 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 22930,
+        "id": 22473,
         "en": "replace",
-        "kk": "",
-        "zh": "v. 放置；替代",
+        "kk": "/rɪˈpleɪs/",
+        "zh": "v. 放置;替代",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22931,
+        "id": 22474,
         "en": "replacement",
         "kk": "",
-        "zh": "n. 取代；更換",
+        "zh": "n. 取代; 更換",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22932,
+        "id": 22475,
         "en": "replay",
         "kk": "",
-        "zh": "v. 重演；重播 n重演；重播",
+        "zh": "v. 重演;重播n. 重演;重播",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22933,
+        "id": 22476,
         "en": "reply",
         "kk": "",
-        "zh": "v. 回答；答覆",
+        "zh": "v. 回答;答覆",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22934,
+        "id": 22477,
         "en": "report",
-        "kk": "",
-        "zh": "v. 報導；記述；告發 n 報告；報導",
+        "kk": "/rɪˈpɔːrt/",
+        "zh": "v. 報導;記述;告 發n. 報告;報導",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22935,
+        "id": 22478,
         "en": "represent",
-        "kk": "",
-        "zh": "v. 描繪；代表",
+        "kk": "/ˌreprɪˈzent/",
+        "zh": "v. 描繪;代表",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22936,
+        "id": 22479,
         "en": "representative",
         "kk": "",
-        "zh": "a. 代表性的  n 典型；代表物；代表",
+        "zh": "a. 代表 性的n. 典型;代表物; 代表",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22937,
+        "id": 22480,
+        "en": "reputation",
+        "kk": "",
+        "zh": "n. 名譽;名聲",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22481,
         "en": "request",
         "kk": "",
-        "zh": "v. 要求；請求 n要求；請求",
+        "zh": "v. 要求;請求n. 要求;請求",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22938,
+        "id": 22482,
+        "en": "require",
+        "kk": "/rɪˈkwaɪər/",
+        "zh": "v. 需要;要求",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22483,
         "en": "requirement",
         "kk": "",
-        "zh": "n. 需要；必需品",
+        "zh": "n. 需要;必 需品",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22939,
+        "id": 22484,
         "en": "reschedule",
         "kk": "",
-        "zh": "v. 改期；重新編排",
+        "zh": "v. 改期;重 新編排",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22940,
+        "id": 22485,
         "en": "research",
-        "kk": "",
-        "zh": "v. 研究；調查n 研究",
+        "kk": "/ˈriːsɜːrtʃ/",
+        "zh": "v. 研究;調查n. 研究",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22941,
+        "id": 22486,
         "en": "resemblance",
         "kk": "",
-        "zh": "n. 相似；相貌相似",
+        "zh": "n. 相似; 相貌相似",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22942,
+        "id": 22487,
         "en": "resemble",
         "kk": "",
-        "zh": "v. 像；類似",
+        "zh": "v. 像;類似",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22943,
+        "id": 22488,
+        "en": "reservation",
+        "kk": "",
+        "zh": "n. 預定;保 留",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22489,
         "en": "reserve",
         "kk": "",
-        "zh": "v. 儲備；保存",
+        "zh": "v. 儲備;保存",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22944,
+        "id": 22490,
         "en": "residence",
         "kk": "",
-        "zh": "n. 住所；住宅",
+        "zh": "n. 住所;住宅",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22945,
+        "id": 22491,
         "en": "resident",
         "kk": "",
-        "zh": "n. 居民 a 居住的；定居的",
+        "zh": "n. 居民a. 居住 的;定居的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22946,
+        "id": 22492,
         "en": "residential",
         "kk": "",
-        "zh": "a. 居住的；住宅的",
+        "zh": "a. 居住的; 住宅的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22947,
+        "id": 22493,
         "en": "residual",
         "kk": "",
-        "zh": "a. 殘留的；剩餘的",
+        "zh": "a. 殘留的;剩餘 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22948,
+        "id": 22494,
         "en": "residue",
         "kk": "",
-        "zh": "n. 殘餘；剩餘",
+        "zh": "n. 殘餘;剩餘",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22949,
+        "id": 22495,
+        "en": "resign",
+        "kk": "",
+        "zh": "v. 放棄;辭去",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22496,
         "en": "resignation",
         "kk": "",
-        "zh": "n. 辭職；放棄",
+        "zh": "n. 辭職;放 棄",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22950,
+        "id": 22497,
         "en": "resist",
         "kk": "",
-        "zh": "v. 抵抗；反抗",
+        "zh": "v. 抵抗;反抗",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22951,
+        "id": 22498,
         "en": "resistance",
         "kk": "",
-        "zh": "n. 抵抗；反抗",
+        "zh": "n. 抵抗;反 抗",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22952,
+        "id": 22499,
         "en": "resolute",
         "kk": "",
-        "zh": "a. 堅決的；堅定的",
+        "zh": "a. 堅決的;堅定 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22953,
+        "id": 22500,
         "en": "resolve",
         "kk": "",
-        "zh": "v. 解決；決心 n決心；決意",
+        "zh": "v. 解決;決心n. 決心;決意",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22954,
+        "id": 22501,
         "en": "resource",
-        "kk": "",
-        "zh": "n. 資源；物力",
+        "kk": "/ˈriːsɔːrs/",
+        "zh": "n. 資源;物力",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22955,
+        "id": 22502,
         "en": "respect",
         "kk": "",
-        "zh": "n. 敬重，尊敬",
+        "zh": "n. 敬重,尊敬",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22956,
+        "id": 22503,
         "en": "respond",
-        "kk": "",
-        "zh": "n. 回答；答覆",
+        "kk": "/rɪˈspɑːnd/",
+        "zh": "n. 回答;答覆",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22957,
+        "id": 22504,
         "en": "response",
-        "kk": "",
-        "zh": "n. 回答；答覆",
+        "kk": "/rɪˈspɑːns/",
+        "zh": "n. 回答;答覆",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22958,
+        "id": 22505,
         "en": "responsible",
         "kk": "",
-        "zh": "a. 需負責任的；承擔責任的",
+        "zh": "a. 需負責任 的;承擔責任的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22959,
+        "id": 22506,
         "en": "responsive",
         "kk": "",
-        "zh": "a. 回答的；應答的",
+        "zh": "a. 回答的; 應答的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22960,
+        "id": 22507,
         "en": "restriction",
         "kk": "",
-        "zh": "n. 限制；約束",
+        "zh": "n. 限制;約束",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22961,
+        "id": 22508,
         "en": "resume",
         "kk": "",
-        "zh": "v. 恢復；重返 n梗概；履歷",
+        "zh": "v. 恢復;重返n. 梗概;履歷",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22962,
+        "id": 22509,
+        "en": "retail",
+        "kk": "",
+        "zh": "n. 零售v. 零售a. 零售的",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22510,
         "en": "retailer",
         "kk": "",
-        "zh": "n. 零售商；零售店",
+        "zh": "n. 零售商;零售 店",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22963,
+        "id": 22511,
         "en": "retai",
         "kk": "",
-        "zh": "v. 保留；保持",
+        "zh": "v. 保留;保持",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22964,
+        "id": 22512,
         "en": "retainable",
         "kk": "",
-        "zh": "a. 能保持的；可保留的",
+        "zh": "a. 能保持的; 可保留的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22965,
+        "id": 22513,
         "en": "retainer",
         "kk": "",
-        "zh": "n. 保留者；家臣",
+        "zh": "n. 保留者;家臣",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22966,
+        "id": 22514,
         "en": "retire",
         "kk": "",
-        "zh": "v. 使退卻；使退休",
+        "zh": "v. 使退卻;使退休",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22967,
+        "id": 22515,
         "en": "retirement",
         "kk": "",
-        "zh": "n. 退休；退職",
+        "zh": "n. 退休;退職",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22968,
+        "id": 22516,
         "en": "retrieve",
         "kk": "",
-        "zh": "v. 重新得到；收回",
+        "zh": "v. 重新得到;收 回",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22969,
+        "id": 22517,
         "en": "return",
-        "kk": "",
-        "zh": "v. 返回；歸",
+        "kk": "/rɪˈtɜːrn/",
+        "zh": "v. 返回;歸",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22970,
+        "id": 22518,
         "en": "reveal",
-        "kk": "",
-        "zh": "v. 展現，顯露出n 揭示；揭露",
+        "kk": "/rɪˈviːl/",
+        "zh": "v. 展現,顯露出n. 揭示;揭露",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22971,
+        "id": 22519,
+        "en": "revenue",
+        "kk": "",
+        "zh": "n. 收入;稅收",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22520,
         "en": "reverse",
         "kk": "",
-        "zh": "a. 相反的；反向的 v 顛倒；翻轉 n 相反",
+        "zh": "a. 相反的;反向 的v. 顛倒;翻轉n. 相反",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22972,
+        "id": 22521,
         "en": "review",
-        "kk": "",
-        "zh": "v. 批評，評論；檢閱",
+        "kk": "/rɪˈvjuː/",
+        "zh": "v. 批評,評論; 檢閱",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22973,
+        "id": 22522,
+        "en": "revise",
+        "kk": "",
+        "zh": "v. 修訂;校訂",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22523,
         "en": "revision",
         "kk": "",
-        "zh": "n. 修訂；校訂",
+        "zh": "n. 修訂;校訂",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22974,
+        "id": 22524,
         "en": "revive",
         "kk": "",
-        "zh": "v. 甦醒；復甦",
+        "zh": "v. 甦醒;復甦",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22975,
+        "id": 22525,
         "en": "revolve",
         "kk": "",
-        "zh": "v. 旋轉；自轉",
+        "zh": "v. 旋轉;自轉",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22976,
+        "id": 22526,
         "en": "reward",
         "kk": "",
-        "zh": "n. 報答；報償 v報答；報償",
+        "zh": "n. 報答;報償v. 報答;報償",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22977,
+        "id": 22527,
         "en": "rigorous",
         "kk": "",
-        "zh": "a. 嚴格的；嚴厲的",
+        "zh": "a. 嚴格的;嚴 厲的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22978,
+        "id": 22528,
         "en": "rise",
-        "kk": "",
-        "zh": "v. 上升；升起 n 上升；興盛",
+        "kk": "/raɪz/",
+        "zh": "v. 上升;升起n. 上 升;興盛",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22979,
+        "id": 22529,
         "en": "rival",
         "kk": "",
-        "zh": "n. 競爭者；對手 v競爭  a 競爭的",
+        "zh": "n. 競爭者;對手v. 競爭a. 競爭的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22980,
+        "id": 22530,
         "en": "rivalry",
         "kk": "",
-        "zh": "n. 競爭；對抗",
+        "zh": "n. 競爭;對抗",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22981,
+        "id": 22531,
         "en": "robust",
         "kk": "",
-        "zh": "v. 強健的；茁壯的",
+        "zh": "v. 強健的;茁壯 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22982,
+        "id": 22532,
         "en": "route",
         "kk": "",
-        "zh": "n. 路線；路程",
+        "zh": "n. 路線;路程",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22983,
+        "id": 22533,
         "en": "routine",
         "kk": "",
-        "zh": "n. 例行公事 a 例行的",
+        "zh": "n. 例行公事a. 例 行的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22984,
+        "id": 22534,
         "en": "royal",
         "kk": "",
-        "zh": "a. 皇家的；盛大的",
+        "zh": "a. 皇家的;盛大的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22985,
+        "id": 22535,
         "en": "royalty",
         "kk": "",
-        "zh": "n. 皇族；王位；王權",
+        "zh": "n. 皇族;王位; 王權",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22986,
+        "id": 22536,
         "en": "rule",
-        "kk": "",
-        "zh": "n. 規則；規定 v 統治；管轄",
+        "kk": "/ruːl/",
+        "zh": "n. 規則;規定v. 統 治;管轄",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22987,
+        "id": 22537,
         "en": "run",
-        "kk": "",
-        "zh": "v. 跑；競選 n 跑；路程；暢銷",
+        "kk": "/rʌn/",
+        "zh": "v. 跑;競選n. 跑;路 程;暢銷",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22988,
+        "id": 22538,
         "en": "rush",
         "kk": "",
-        "zh": "v. 衝，奔；催促 n匆忙；緊急S2539.  sacriﬁce n 牲禮，祭品v 犧牲；獻出",
+        "zh": "v. 衝,奔;催促n. 匆忙;緊急",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22989,
+        "id": 22539,
+        "en": "sacrifice",
+        "kk": "",
+        "zh": "n. 牲禮,祭品v. 犧牲;獻出",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22540,
         "en": "sadden",
         "kk": "",
-        "zh": "v. 使悲傷；使難過",
+        "zh": "v. 使悲傷;使難 過",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22990,
+        "id": 22541,
         "en": "sadly",
         "kk": "",
-        "zh": "ad. 悲哀地；傷心地",
+        "zh": "ad. 悲哀地;傷心地",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22991,
+        "id": 22542,
         "en": "sadness",
         "kk": "",
-        "zh": "n. 悲哀；悲傷",
+        "zh": "n. 悲哀;悲傷",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22992,
+        "id": 22543,
         "en": "safe",
-        "kk": "",
-        "zh": "n. 平安的；無損的",
+        "kk": "/seɪf/",
+        "zh": "n. 平安的;無損的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22993,
+        "id": 22544,
         "en": "safeguard",
         "kk": "",
-        "zh": "v. 保護；防衛n 保護；防衛",
+        "zh": "v. 保護;防衛n. 保護;防衛",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22994,
+        "id": 22545,
         "en": "safety",
         "kk": "",
-        "zh": "n. 安全；平安",
+        "zh": "n. 安全;平安",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22995,
+        "id": 22546,
+        "en": "salary",
+        "kk": "",
+        "zh": "n. 薪資;薪水",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22547,
         "en": "sale",
         "kk": "",
-        "zh": "n. 賣；出售；拍賣",
+        "zh": "n. 賣;出售;拍賣",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22996,
+        "id": 22548,
         "en": "salvage",
         "kk": "",
-        "zh": "n. 搶救；挽救 v救助；營救",
+        "zh": "n. 搶救;挽救v. 救助;營救",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22997,
+        "id": 22549,
         "en": "sample",
         "kk": "",
-        "zh": "n. 樣品，樣本 v品嚐；體驗 a 樣品的",
+        "zh": "n. 樣品,樣本v. 品嚐;體驗a. 樣品的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22998,
+        "id": 22550,
         "en": "sanitary",
         "kk": "",
-        "zh": "n. 公共廁所 a衛生的；清潔的",
+        "zh": "n. 公共廁所a. 衛生的;清潔的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 22999,
+        "id": 22551,
         "en": "satisfaction",
         "kk": "",
-        "zh": "n. 滿意；滿足",
+        "zh": "n. 滿意;滿 足",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23000,
+        "id": 22552,
         "en": "satisfy",
         "kk": "",
-        "zh": "v. 使滿意；使高興",
+        "zh": "v. 使滿意;使高 興",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23001,
+        "id": 22553,
         "en": "savvy",
         "kk": "",
-        "zh": "v. 懂；知曉",
+        "zh": "v. 懂;知曉",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23002,
+        "id": 22554,
         "en": "scale",
-        "kk": "",
-        "zh": "n. 大小；規模 v 攀登；增加",
+        "kk": "/skeɪl/",
+        "zh": "n. 大小;規模v. 攀 登;增加",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23003,
+        "id": 22555,
         "en": "scan",
         "kk": "",
-        "zh": "v. 細看；審視 n 掃描；細看",
+        "zh": "v. 細看;審視n. 掃 描;細看",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23004,
+        "id": 22556,
         "en": "scanner",
         "kk": "",
         "zh": "n. 掃描機",
@@ -26403,70 +23004,79 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23005,
+        "id": 22557,
         "en": "scene",
-        "kk": "",
-        "zh": "n. 布景；景色；背景",
+        "kk": "/siːn/",
+        "zh": "n. 布景;景色;背 景",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23006,
+        "id": 22558,
         "en": "scenery",
         "kk": "",
-        "zh": "n. 景色；風景",
+        "zh": "n. 景色;風景",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23007,
+        "id": 22559,
+        "en": "schedule",
+        "kk": "",
+        "zh": "n. 時間表v. 安 排;預定",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22560,
         "en": "scope",
         "kk": "",
-        "zh": "n. 顯微鏡；望遠鏡",
+        "zh": "n. 顯微鏡;望遠鏡",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23008,
+        "id": 22561,
         "en": "scratch",
         "kk": "",
-        "zh": "v. 抓；搔劃出 n刮痕；抓痕 a 湊合的",
+        "zh": "v. 抓;搔劃出n. 刮痕;抓痕a. 湊合的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23009,
+        "id": 22562,
         "en": "screen",
         "kk": "",
-        "zh": "n. 螢幕；掩蔽物",
+        "zh": "n. 螢幕;掩蔽物",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23010,
+        "id": 22563,
         "en": "scrutinize",
         "kk": "",
-        "zh": "v. 詳細檢查；細看",
+        "zh": "v. 詳細檢查; 細看",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23011,
+        "id": 22564,
         "en": "seam",
         "kk": "",
-        "zh": "n. 縫；縫合處 v縫合；接合",
+        "zh": "n. 縫;縫合處v. 縫合;接合",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23012,
+        "id": 22565,
         "en": "seamlessly",
         "kk": "",
         "zh": "ad. 無縫地",
@@ -26475,25 +23085,25 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23013,
+        "id": 22566,
         "en": "search",
         "kk": "",
-        "zh": "v. 搜查；探究 n搜查；搜尋",
+        "zh": "v. 搜查;探究n. 搜查;搜尋",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23014,
+        "id": 22567,
         "en": "season",
-        "kk": "",
+        "kk": "/ˈsiːzn/",
         "zh": "n. 季節",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23015,
+        "id": 22568,
         "en": "secret",
         "kk": "",
         "zh": "n. 秘密",
@@ -26502,79 +23112,79 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23016,
+        "id": 22569,
         "en": "section",
-        "kk": "",
-        "zh": "n. 部分；區域",
+        "kk": "/ˈsekʃn/",
+        "zh": "n. 部分;區域",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23017,
+        "id": 22570,
         "en": "secure",
         "kk": "",
-        "zh": "a. 安全的，無危險的  v 使安全；掩護",
+        "zh": "a. 安全的,無危 險的v. 使安全;掩護",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23018,
+        "id": 22571,
         "en": "security",
         "kk": "",
-        "zh": "n. 安全感；防備；保安",
+        "zh": "n. 安全感;防備; 保安",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23019,
+        "id": 22572,
         "en": "seek",
-        "kk": "",
-        "zh": "v. 尋找；探索",
+        "kk": "/siːk/",
+        "zh": "v. 尋找;探索",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23020,
+        "id": 22573,
         "en": "segment",
         "kk": "",
-        "zh": "n. 部分；部門v 分割；切割",
+        "zh": "n. 部分;部門v. 分割;切割",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23021,
+        "id": 22574,
         "en": "seldom",
         "kk": "",
-        "zh": "ad. 不常；很少 a很少的；難得的",
+        "zh": "ad. 不常;很少a. 很少的;難得的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23022,
+        "id": 22575,
         "en": "select",
         "kk": "",
-        "zh": "v. 選擇；挑選 a上等的；優等的",
+        "zh": "v. 選擇;挑選a. 上等的;優等的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23023,
+        "id": 22576,
         "en": "selection",
         "kk": "",
-        "zh": "n. 選擇；選拔",
+        "zh": "n. 選擇;選拔",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23024,
+        "id": 22577,
         "en": "selective",
         "kk": "",
         "zh": "a. 有選擇性的",
@@ -26583,34 +23193,34 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23025,
+        "id": 22578,
         "en": "self",
         "kk": "",
-        "zh": "n. 自身；自己",
+        "zh": "n. 自身;自己",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23026,
+        "id": 22579,
         "en": "self-employed",
         "kk": "",
-        "zh": "a. 自由業的；自僱的",
+        "zh": "a. 自由業 的;自僱的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23027,
+        "id": 22580,
         "en": "semester",
         "kk": "",
-        "zh": "n. 半學年；一學期",
+        "zh": "n. 半學年;一 學期",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23028,
+        "id": 22581,
         "en": "seminar",
         "kk": "",
         "zh": "n. 專題討論會",
@@ -26619,187 +23229,187 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23029,
+        "id": 22582,
         "en": "senior",
         "kk": "",
-        "zh": "a. 年長的；前輩的 n 前輩；上司；學長",
+        "zh": "a. 年長的;前輩 的n. 前輩;上司;學長",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23030,
+        "id": 22583,
         "en": "sense",
-        "kk": "",
-        "zh": "n. 感官；官能；見識 v 了解；領會",
+        "kk": "/sens/",
+        "zh": "n. 感官;官能;見 識v. 了解;領會",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23031,
+        "id": 22584,
         "en": "sensible",
         "kk": "",
-        "zh": "a. 明智的；合情理的",
+        "zh": "a. 明智的;合 情理的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23032,
+        "id": 22585,
         "en": "sensitive",
         "kk": "",
-        "zh": "a. 敏感的；靈敏的",
+        "zh": "a. 敏感的;靈 敏的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23033,
+        "id": 22586,
         "en": "separate",
         "kk": "",
-        "zh": "v. 分隔；分割",
+        "zh": "v. 分隔;分割",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23034,
+        "id": 22587,
         "en": "separation",
         "kk": "",
-        "zh": "n. 分開；分居",
+        "zh": "n. 分開;分 居",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23035,
+        "id": 22588,
         "en": "sequence",
         "kk": "",
-        "zh": "n. 連續；接續",
+        "zh": "n. 連續;接續",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23036,
+        "id": 22589,
         "en": "series",
         "kk": "",
-        "zh": "n. 連續；系列",
+        "zh": "n. 連續;系列",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23037,
+        "id": 22590,
         "en": "serious",
-        "kk": "",
-        "zh": "a. 嚴重的；危急的",
+        "kk": "/ˈsɪriəs/",
+        "zh": "a. 嚴重的;危急 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23038,
+        "id": 22591,
         "en": "serve",
-        "kk": "",
+        "kk": "/sɜːrv/",
         "zh": "v. 服務",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23039,
+        "id": 22592,
         "en": "service",
-        "kk": "",
-        "zh": "n. 服務；效勞 v服務；效勞",
+        "kk": "/ˈsɜːrvɪs/",
+        "zh": "n. 服務;效勞v. 服務;效勞",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23040,
+        "id": 22593,
         "en": "session",
         "kk": "",
-        "zh": "n. 會議；集會",
+        "zh": "n. 會議;集會",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23041,
+        "id": 22594,
         "en": "set",
-        "kk": "",
-        "zh": "v. 放；置；開始 a 固定的；不變的 n 一套；一部",
+        "kk": "/set/",
+        "zh": "v. 放;置;開始a. 固 定的;不變的n. 一套; 一部",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23042,
+        "id": 22595,
         "en": "setback",
         "kk": "",
-        "zh": "n. 挫折；失敗",
+        "zh": "n. 挫折;失敗",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23043,
+        "id": 22596,
         "en": "setup",
         "kk": "",
-        "zh": "n. 組織；機構",
+        "zh": "n. 組織;機構",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23044,
+        "id": 22597,
         "en": "several",
-        "kk": "",
-        "zh": "a. 幾個的；數個的",
+        "kk": "/ˈsevrəl/",
+        "zh": "a. 幾個的;數個 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23045,
+        "id": 22598,
         "en": "severe",
         "kk": "",
-        "zh": "a. 嚴重的；劇烈的",
+        "zh": "a. 嚴重的;劇烈 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23046,
+        "id": 22599,
         "en": "severely",
         "kk": "",
-        "zh": "ad. 嚴重地；劇烈地",
+        "zh": "ad. 嚴重地;劇 烈地",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23047,
+        "id": 22600,
         "en": "shape",
         "kk": "",
-        "zh": "n. 形狀；樣子 v使成形；塑造",
+        "zh": "n. 形狀;樣子v. 使成形;塑造",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23048,
+        "id": 22601,
         "en": "share",
-        "kk": "",
+        "kk": "/ʃer/",
         "zh": "v. 分享",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23049,
+        "id": 22602,
         "en": "shareholder",
         "kk": "",
         "zh": "n. 股東",
@@ -26808,16 +23418,16 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23050,
+        "id": 22603,
         "en": "sharp",
         "kk": "",
-        "zh": "a. 尖銳的；苛刻的ad 幾點整",
+        "zh": "a. 尖銳的;苛刻的ad. 幾點整",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23051,
+        "id": 22604,
         "en": "shelf",
         "kk": "",
         "zh": "n. 架子",
@@ -26826,34 +23436,52 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23052,
+        "id": 22605,
         "en": "ship",
-        "kk": "",
-        "zh": "n. 船；艦 v 運送；裝運",
+        "kk": "/ʃɪp/",
+        "zh": "n. 船;艦v. 運送; 裝運",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23053,
+        "id": 22606,
+        "en": "shipment",
+        "kk": "",
+        "zh": "n. 運輸;運送",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22607,
         "en": "shipping",
         "kk": "",
-        "zh": "n. 運輸；運輸業",
+        "zh": "n. 運輸;運輸 業",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23054,
-        "en": "should",
+        "id": 22608,
+        "en": "shortage",
         "kk": "",
-        "zh": "aux. 可能；該",
+        "zh": "n. 缺少;不足",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23055,
+        "id": 22609,
+        "en": "should",
+        "kk": "/ʃʊd/",
+        "zh": "aux. 可能;該",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22610,
         "en": "shredder",
         "kk": "",
         "zh": "n. 碎紙機",
@@ -26862,133 +23490,151 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23056,
+        "id": 22611,
         "en": "sight",
         "kk": "",
-        "zh": "n. 視覺；景象；觀光地 v 看見；發現",
+        "zh": "n. 視覺;景象;觀 光地v. 看見;發現",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23057,
+        "id": 22612,
         "en": "sign",
-        "kk": "",
-        "zh": "n. 徵象；前兆 v 簽名於；簽署2613.  signiﬁcance n 重要性；重要2614.  signiﬁcant a 有意義的；重要的",
+        "kk": "/saɪn/",
+        "zh": "n. 徵象;前兆v. 簽 名於;簽署",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23058,
+        "id": 22613,
+        "en": "significance",
+        "kk": "",
+        "zh": "n. 重要性; 重要",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22614,
+        "en": "significant",
+        "kk": "/sɪɡˈnɪfɪkənt/",
+        "zh": "a. 有意義的; 重要的",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22615,
         "en": "signify",
         "kk": "",
-        "zh": "v. 表示；預示",
+        "zh": "v. 表示;預示",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23059,
+        "id": 22616,
         "en": "similar",
-        "kk": "",
-        "zh": "a. 相像的；相仿",
+        "kk": "/ˈsɪmələr/",
+        "zh": "a. 相像的;相仿",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23060,
+        "id": 22617,
         "en": "simulate",
         "kk": "",
-        "zh": "v. 假裝；冒充",
+        "zh": "v. 假裝;冒充",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23061,
+        "id": 22618,
         "en": "simulation",
         "kk": "",
-        "zh": "n. 偽裝；模仿",
+        "zh": "n. 偽裝;模仿",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23062,
+        "id": 22619,
         "en": "sincere",
         "kk": "",
-        "zh": "a. 衷心的；真誠的",
+        "zh": "a. 衷心的;真誠 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23063,
+        "id": 22620,
         "en": "sincerely",
         "kk": "",
-        "zh": "ad. 真誠地；誠懇地",
+        "zh": "ad. 真誠地;誠 懇地",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23064,
+        "id": 22621,
         "en": "sinful",
         "kk": "",
-        "zh": "a. 罪孽深重的；有罪的",
+        "zh": "a. 罪孽深重的;有 罪的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23065,
+        "id": 22622,
         "en": "sink",
         "kk": "",
-        "zh": "v. 下沉；下陷 n 水槽",
+        "zh": "v. 下沉;下陷n. 水 槽",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23066,
+        "id": 22623,
         "en": "site",
         "kk": "",
-        "zh": "n. 地點；場所",
+        "zh": "n. 地點;場所",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23067,
+        "id": 22624,
         "en": "situation",
-        "kk": "",
-        "zh": "n. 狀況；處境",
+        "kk": "/ˌsɪtʃuˈeɪʃn/",
+        "zh": "n. 狀況;處境",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23068,
+        "id": 22625,
         "en": "size",
-        "kk": "",
+        "kk": "/saɪz/",
         "zh": "n. 尺寸",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23069,
+        "id": 22626,
         "en": "skill",
-        "kk": "",
-        "zh": "n. 技巧；技術",
+        "kk": "/skɪl/",
+        "zh": "n. 技巧;技術",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23070,
+        "id": 22627,
         "en": "skillful",
         "kk": "",
         "zh": "a. 有技巧的",
@@ -26997,124 +23643,124 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23071,
+        "id": 22628,
         "en": "skim",
         "kk": "",
-        "zh": "v. 撇去；瀏覽；略讀 n 脫脂牛奶",
+        "zh": "v. 撇去;瀏覽;略 讀n. 脫脂牛奶",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23072,
+        "id": 22629,
         "en": "slash",
         "kk": "",
-        "zh": "v. 減低；砍傷；抨擊 n 砍傷；砍痕",
+        "zh": "v. 減低;砍傷;抨 擊n. 砍傷;砍痕",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23073,
+        "id": 22630,
         "en": "slice",
         "kk": "",
-        "zh": "n. 薄片；切片 v 切下；割去",
+        "zh": "n. 薄片;切片v. 切 下;割去",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23074,
+        "id": 22631,
         "en": "slip",
         "kk": "",
-        "zh": "v. 滑動；滑跤 n 失足；疏忽；錯誤",
+        "zh": "v. 滑動;滑跤n. 失 足;疏忽;錯誤",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23075,
+        "id": 22632,
         "en": "slippery",
         "kk": "",
-        "zh": "a. 滑的；油滑的",
+        "zh": "a. 滑的;油滑的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23076,
+        "id": 22633,
         "en": "slogan",
         "kk": "",
-        "zh": "n. 口號；標語",
+        "zh": "n. 口號;標語",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23077,
+        "id": 22634,
         "en": "slope",
         "kk": "",
-        "zh": "n. 傾斜；坡度 v 傾斜",
+        "zh": "n. 傾斜;坡度v. 傾 斜",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23078,
+        "id": 22635,
         "en": "sloppy",
         "kk": "",
-        "zh": "a. 稀薄的；邋遢的",
+        "zh": "a. 稀薄的;邋遢 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23079,
+        "id": 22636,
         "en": "slot",
         "kk": "",
-        "zh": "n. 投幣口；自動販賣機",
+        "zh": "n. 投幣口;自動販賣 機",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23080,
+        "id": 22637,
         "en": "slump",
         "kk": "",
-        "zh": "v. 倒下；陷落 n下降；不景氣",
+        "zh": "v. 倒下;陷落n. 下降;不景氣",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23081,
+        "id": 22638,
         "en": "smoothl",
         "kk": "",
-        "zh": "ad. 平滑地；流暢地",
+        "zh": "ad. 平滑地;流 暢地",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23082,
+        "id": 22639,
         "en": "soar",
         "kk": "",
-        "zh": "v. 往上飛舞，升 n高飛；高聳",
+        "zh": "v. 往上飛舞,升n. 高飛;高聳",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23083,
+        "id": 22640,
         "en": "society",
-        "kk": "",
-        "zh": "n. 社會；交際",
+        "kk": "/səˈsaɪəti/",
+        "zh": "n. 社會;交際",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23084,
+        "id": 22641,
         "en": "software",
         "kk": "",
         "zh": "n. 軟體",
@@ -27123,115 +23769,115 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23085,
+        "id": 22642,
         "en": "solace",
         "kk": "",
-        "zh": "n. 安慰；慰藉 v安慰",
+        "zh": "n. 安慰;慰藉v. 安慰",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23086,
+        "id": 22643,
         "en": "sola",
         "kk": "",
-        "zh": "a. 太陽的；日光的",
+        "zh": "a. 太陽的;日光的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23087,
+        "id": 22644,
         "en": "solely",
         "kk": "",
-        "zh": "ad. 單獨地；唯一地",
+        "zh": "ad. 單獨地;唯一 地",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23088,
+        "id": 22645,
         "en": "solicit",
         "kk": "",
-        "zh": "v. 請求；懇求",
+        "zh": "v. 請求;懇求",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23089,
+        "id": 22646,
         "en": "solve",
-        "kk": "",
-        "zh": "v. 解決；解答",
+        "kk": "/sɑːlv/",
+        "zh": "v. 解決;解答",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23090,
+        "id": 22647,
         "en": "sophisticated",
         "kk": "",
-        "zh": "a. 世故的；精緻的",
+        "zh": "a. 世故 的;精緻的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23091,
+        "id": 22648,
         "en": "sort",
-        "kk": "",
-        "zh": "v. 挑選；區分 n 種類；品種",
+        "kk": "/sɔːrt/",
+        "zh": "v. 挑選;區分n. 種 類;品種",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23092,
+        "id": 22649,
         "en": "sound",
-        "kk": "",
-        "zh": "n. 聲音；響聲 v聽起來",
+        "kk": "/saʊnd/",
+        "zh": "n. 聲音;響聲v. 聽起來",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23093,
+        "id": 22650,
         "en": "source",
         "kk": "",
-        "zh": "n. 根源；來源 v隔開",
+        "zh": "n. 根源;來源v. 隔開",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23094,
+        "id": 22651,
         "en": "space",
-        "kk": "",
-        "zh": "n. 空間；宇宙",
+        "kk": "/speɪs/",
+        "zh": "n. 空間;宇宙",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23095,
+        "id": 22652,
         "en": "span",
         "kk": "",
-        "zh": "n. 礅距；跨度 v 橫跨；跨越",
+        "zh": "n. 礅距;跨度v. 橫 跨;跨越",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23096,
+        "id": 22653,
         "en": "special",
-        "kk": "",
+        "kk": "/ˈspeʃl/",
         "zh": "a. 特別的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23097,
+        "id": 22654,
         "en": "specialize",
         "kk": "",
         "zh": "v. 專精於",
@@ -27240,430 +23886,457 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23098,
+        "id": 22655,
         "en": "specialty",
         "kk": "",
-        "zh": "n. 專業；專長2656.  speciﬁcation n 載明；詳述",
+        "zh": "n. 專業;專長",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23099,
+        "id": 22656,
+        "en": "specification",
+        "kk": "",
+        "zh": "n. 載明; 詳述",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22657,
         "en": "specify",
         "kk": "",
-        "zh": "v. 具體指定；詳細指明",
+        "zh": "v. 具體指定;詳 細指明",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23100,
+        "id": 22658,
         "en": "speech",
         "kk": "",
-        "zh": "n. 演說；言論",
+        "zh": "n. 演說;言論",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23101,
+        "id": 22659,
         "en": "speed",
         "kk": "",
-        "zh": "n. 快速；迅速 v促進；加快",
+        "zh": "n. 快速;迅速v. 促進;加快",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23102,
+        "id": 22660,
         "en": "spend",
-        "kk": "",
-        "zh": "v. 花費；浪費",
+        "kk": "/spend/",
+        "zh": "v. 花費;浪費",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23103,
+        "id": 22661,
         "en": "splendid",
         "kk": "",
-        "zh": "a. 壯麗的；輝煌的",
+        "zh": "a. 壯麗的;輝 煌的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23104,
+        "id": 22662,
+        "en": "sponsor",
+        "kk": "",
+        "zh": "n. 贊助商",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22663,
         "en": "sponsorship",
         "kk": "",
-        "zh": "n. 資助；支持",
+        "zh": "n. 資助;支 持",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23105,
+        "id": 22664,
         "en": "spot",
         "kk": "",
-        "zh": "n. 斑點；場所 a 立即 v 玷汙；汙辱",
+        "zh": "n. 斑點;場所a. 立 即v. 玷汙;汙辱",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23106,
+        "id": 22665,
         "en": "spray",
         "kk": "",
-        "zh": "n. 噴霧；浪花 v噴灑",
+        "zh": "n. 噴霧;浪花v. 噴灑",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23107,
+        "id": 22666,
         "en": "spread",
         "kk": "",
-        "zh": "v. 伸展；傳播 n蔓延；流行",
+        "zh": "v. 伸展;傳播n. 蔓延;流行",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23108,
+        "id": 22667,
         "en": "spring",
         "kk": "",
-        "zh": "n. 春天；活力 v跳躍；提出",
+        "zh": "n. 春天;活力v. 跳躍;提出",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23109,
+        "id": 22668,
         "en": "sprinkle",
         "kk": "",
-        "zh": "v. 灑；噴；淋 n稀疏小雨；少量",
+        "zh": "v. 灑;噴;淋n. 稀疏小雨;少量",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23110,
+        "id": 22669,
         "en": "spy",
         "kk": "",
-        "zh": "n. 間諜；密探 v 監視；偵察",
+        "zh": "n. 間諜;密探v. 監 視;偵察",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23111,
+        "id": 22670,
         "en": "square",
         "kk": "",
-        "zh": "n. 正方形；廣場a 正直的公正的",
+        "zh": "n. 正方形;廣場a. 正直的公正的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23112,
+        "id": 22671,
         "en": "stability",
         "kk": "",
-        "zh": "n. 穩定；穩定性",
+        "zh": "n. 穩定;穩定性",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23113,
+        "id": 22672,
         "en": "stable",
         "kk": "",
-        "zh": "n. 馬；馬棚；畜舍",
+        "zh": "n. 馬;馬棚;畜舍",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23114,
+        "id": 22673,
         "en": "stack",
         "kk": "",
-        "zh": "n. 一堆，一疊；乾草堆 v 堆放",
+        "zh": "n. 一堆,一疊;乾 草堆v. 堆放",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23115,
+        "id": 22674,
+        "en": "staff",
+        "kk": "/stæf/",
+        "zh": "n. 職員;工作人員",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22675,
         "en": "stage",
-        "kk": "",
-        "zh": "n. 舞臺；階段 v籌劃；舉行",
+        "kk": "/steɪdʒ/",
+        "zh": "n. 舞臺;階段v. 籌劃;舉行",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23116,
+        "id": 22676,
         "en": "stake",
         "kk": "",
-        "zh": "n. 危險；股本 v 資助；押下",
+        "zh": "n. 危險;股本v. 資 助;押下",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23117,
+        "id": 22677,
         "en": "stance",
         "kk": "",
-        "zh": "n. 立場；態度",
+        "zh": "n. 立場;態度",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23118,
+        "id": 22678,
         "en": "stand",
         "kk": "",
-        "zh": "v. 站立；站著 n立場；態度",
+        "zh": "v. 站立;站著n. 立場;態度",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23119,
+        "id": 22679,
         "en": "standard",
-        "kk": "",
-        "zh": "n. 標準；水準a 標準的；一流的",
+        "kk": "/ˈstændərd/",
+        "zh": "n. 標準;水準a. 標準的;一流的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23120,
+        "id": 22680,
         "en": "standpoint",
         "kk": "",
-        "zh": "n. 立場；觀點",
+        "zh": "n. 立場;觀 點",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23121,
+        "id": 22681,
         "en": "staple",
         "kk": "",
-        "zh": "n. 主要產品 a 主要的",
+        "zh": "n. 主要產品a. 主 要的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23122,
+        "id": 22682,
         "en": "state",
-        "kk": "",
-        "zh": "n. 狀況，形態；國家；州   v 陳述；聲明",
+        "kk": "/steɪt/",
+        "zh": "n. 狀況,形態;國 家;州v. 陳述;聲明",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23123,
+        "id": 22683,
         "en": "statement",
         "kk": "",
-        "zh": "n. 陳述；說明",
+        "zh": "n. 陳述;說明",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23124,
+        "id": 22684,
         "en": "station",
-        "kk": "",
-        "zh": "n. 車站；駐地；身分",
+        "kk": "/ˈsteɪʃn/",
+        "zh": "n. 車站;駐地; 身分",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23125,
+        "id": 22685,
         "en": "stationary",
         "kk": "",
-        "zh": "a. 固定的；停滯的",
+        "zh": "a. 固定的;停 滯的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23126,
+        "id": 22686,
         "en": "stationery",
         "kk": "",
-        "zh": "n. 文具；信",
+        "zh": "n. 文具;信",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23127,
+        "id": 22687,
         "en": "statistics",
         "kk": "",
-        "zh": "n. 統計；統計資料",
+        "zh": "n. 統計;統計 資料",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23128,
+        "id": 22688,
         "en": "status",
         "kk": "",
-        "zh": "n. 地位；身分",
+        "zh": "n. 地位;身分",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23129,
+        "id": 22689,
         "en": "steadfast",
         "kk": "",
-        "zh": "a. 堅定的；不動搖的",
+        "zh": "a. 堅定的;不 動搖的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23130,
+        "id": 22690,
         "en": "steady",
         "kk": "",
-        "zh": "a. 穩固的；平穩的 v 使穩固；使穩定",
+        "zh": "a. 穩固的;平穩 的v. 使穩固;使穩定",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23131,
+        "id": 22691,
         "en": "steam",
         "kk": "",
-        "zh": "n. 蒸汽；水蒸汽v 蒸發；冒熱氣",
+        "zh": "n. 蒸汽;水蒸汽v. 蒸發;冒熱氣",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23132,
+        "id": 22692,
         "en": "stem",
         "kk": "",
-        "zh": "v. 起源於；攔住；阻擋 n 莖，樹幹",
+        "zh": "v. 起源於;攔住; 阻擋n. 莖,樹幹",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23133,
+        "id": 22693,
         "en": "stick",
         "kk": "",
-        "zh": "n. 枝條；棒狀物 v黏貼；堅持；固守",
+        "zh": "n. 枝條;棒狀物v. 黏貼;堅持;固守",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23134,
+        "id": 22694,
         "en": "stock",
         "kk": "",
-        "zh": "n. 進貨；庫存品；股票  v 庫存；貯存 a 庫存的",
+        "zh": "n. 進貨;庫存品; 股票v. 庫存;貯存a. 庫 存的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23135,
+        "id": 22695,
         "en": "storage",
         "kk": "",
-        "zh": "n. 貯藏；保管",
+        "zh": "n. 貯藏;保管",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23136,
+        "id": 22696,
         "en": "store",
-        "kk": "",
-        "zh": "n. 店舖；貯存 v 貯存",
+        "kk": "/stɔːr/",
+        "zh": "n. 店舖;貯存v. 貯 存",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23137,
+        "id": 22697,
         "en": "storm",
         "kk": "",
-        "zh": "n. 暴風雨；爆發；激動",
+        "zh": "n. 暴風雨;爆發; 激動",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23138,
+        "id": 22698,
         "en": "stormy",
         "kk": "",
-        "zh": "a. 暴風雨的；暴躁的  v 橫衝直撞；猛衝；起風暴",
+        "zh": "a. 暴風雨的;暴 躁的v. 橫衝直撞;猛衝; 起風暴",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23139,
+        "id": 22699,
         "en": "storyline",
         "kk": "",
-        "zh": "n. 故事；情節",
+        "zh": "n. 故事;情節",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23140,
+        "id": 22700,
         "en": "stout",
         "kk": "",
-        "zh": "a. 頑強的；牢固的；粗壯的",
+        "zh": "a. 頑強的;牢固的; 粗壯的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23141,
+        "id": 22701,
         "en": "straight",
         "kk": "",
-        "zh": "a. 筆直的；正直的 ad 立刻；馬上",
+        "zh": "a. 筆直的;正直 的ad. 立刻;馬上",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23142,
+        "id": 22702,
         "en": "straightforward",
         "kk": "",
-        "zh": "a. 徑直的；簡單的 ad 坦率地；直截了當地",
+        "zh": "a. 徑直 的;簡單的ad. 坦率地; 直截了當地",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23143,
+        "id": 22703,
         "en": "strategy",
-        "kk": "",
-        "zh": "n. 策略；計謀",
+        "kk": "/ˈstrætədʒi/",
+        "zh": "n. 策略;計謀",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23144,
+        "id": 22704,
         "en": "stream",
         "kk": "",
-        "zh": "n. 小河；溪流 v流；流動",
+        "zh": "n. 小河;溪流v. 流;流動",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23145,
+        "id": 22705,
         "en": "streamline",
         "kk": "",
         "zh": "a. 流線型的",
@@ -27672,97 +24345,97 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23146,
+        "id": 22706,
         "en": "strength",
         "kk": "",
-        "zh": "n. 力氣；實力強度",
+        "zh": "n. 力氣;實力 強度",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23147,
+        "id": 22707,
         "en": "strengthen",
         "kk": "",
-        "zh": "v. 增強；鞏固",
+        "zh": "v. 增強;鞏 固",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23148,
+        "id": 22708,
         "en": "stress",
         "kk": "",
-        "zh": "n. 壓力；緊張；著重 v 強調；著重",
+        "zh": "n. 壓力;緊張;著 重v. 強調;著重",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23149,
+        "id": 22709,
         "en": "stretch",
         "kk": "",
-        "zh": "n. 伸直；展開，曲解  v 伸縮；延續；吹牛",
+        "zh": "n. 伸直;展開, 曲解v. 伸縮;延續;吹 牛",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23150,
+        "id": 22710,
         "en": "strike",
         "kk": "",
-        "zh": "v. 打擊；攻擊 n 罷工；打擊",
+        "zh": "v. 打擊;攻擊n. 罷 工;打擊",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23151,
+        "id": 22711,
         "en": "strive",
         "kk": "",
-        "zh": "v. 力爭；苦幹",
+        "zh": "v. 力爭;苦幹",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23152,
+        "id": 22712,
         "en": "structure",
-        "kk": "",
-        "zh": "n. 結構 v 構造",
+        "kk": "/ˈstrʌktʃər/",
+        "zh": "n. 結構v. 構造",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23153,
+        "id": 22713,
         "en": "study",
-        "kk": "",
-        "zh": "n. 學習；研究 v 學習；研究",
+        "kk": "/ˈstʌdi/",
+        "zh": "n. 學習;研究v. 學 習;研究",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23154,
+        "id": 22714,
         "en": "style",
-        "kk": "",
-        "zh": "n. 風格；作風",
+        "kk": "/staɪl/",
+        "zh": "n. 風格;作風",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23155,
+        "id": 22715,
         "en": "subject",
-        "kk": "",
-        "zh": "n. 主題；題目 v易受⋯；易患⋯",
+        "kk": "/ˈsʌbdʒɪkt/",
+        "zh": "n. 主題;題目v. 易受⋯;易患⋯",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23156,
+        "id": 22716,
         "en": "subjectively",
         "kk": "",
         "zh": "ad. 主觀地",
@@ -27771,97 +24444,115 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23157,
+        "id": 22717,
         "en": "submit",
         "kk": "",
-        "zh": "v. 屈從；忍受；提交；呈遞；主張",
+        "zh": "v. 屈從;忍受; 提交;呈遞;主張",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23158,
+        "id": 22718,
         "en": "subordinate",
         "kk": "",
-        "zh": "a. 次要的；隸屬的 n 部下；部屬",
+        "zh": "a. 次要的; 隸屬的n. 部下;部屬",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23159,
+        "id": 22719,
         "en": "subscribe",
         "kk": "",
-        "zh": "v. 訂閱；同意",
+        "zh": "v. 訂閱;同意",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23160,
+        "id": 22720,
+        "en": "subscription",
+        "kk": "",
+        "zh": "n. 訂閱;同 意",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22721,
         "en": "subside",
         "kk": "",
-        "zh": "v. 消退；平息；減弱",
+        "zh": "v. 消退;平息; 減弱",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23161,
+        "id": 22722,
+        "en": "subsidiary",
+        "kk": "",
+        "zh": "a. 輔助的;附 帶的",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22723,
         "en": "subsidize",
         "kk": "",
-        "zh": "v. 補助；資助",
+        "zh": "v. 補助;資助",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23162,
+        "id": 22724,
         "en": "subsidy",
         "kk": "",
-        "zh": "n. 津貼；補貼",
+        "zh": "n. 津貼;補貼",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23163,
+        "id": 22725,
         "en": "substantial",
         "kk": "",
-        "zh": "a. 真實的；堅固的",
+        "zh": "a. 真實的; 堅固的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23164,
+        "id": 22726,
         "en": "substantiate",
         "kk": "",
-        "zh": "v. 證實；證明",
+        "zh": "v. 證實;證 明",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23165,
+        "id": 22727,
         "en": "substitute",
         "kk": "",
-        "zh": "n. 代替人；代替物  v 代替 a 代替的",
+        "zh": "n. 代替人;代 替物v. 代替a. 代替的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23166,
+        "id": 22728,
         "en": "subtract",
         "kk": "",
-        "zh": "v. 減去；去掉",
+        "zh": "v. 減去;去掉",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23167,
+        "id": 22729,
         "en": "subway",
         "kk": "",
         "zh": "n. 地下鐵",
@@ -27870,34 +24561,43 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23168,
+        "id": 22730,
         "en": "succeed",
         "kk": "",
-        "zh": "v. 成功；繼任",
+        "zh": "v. 成功;繼任",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23169,
+        "id": 22731,
         "en": "success",
-        "kk": "",
-        "zh": "n. 成功；成就2732.  sufﬁcient a 足夠的；充分的",
+        "kk": "/səkˈses/",
+        "zh": "n. 成功;成就",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23170,
-        "en": "suggest",
+        "id": 22732,
+        "en": "sufficient",
         "kk": "",
+        "zh": "a. 足夠的;充 分的",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22733,
+        "en": "suggest",
+        "kk": "/səɡˈdʒest/",
         "zh": "v. 建議",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23171,
+        "id": 22734,
         "en": "suggestion",
         "kk": "",
         "zh": "n. 建議",
@@ -27906,241 +24606,268 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23172,
+        "id": 22735,
         "en": "suit",
         "kk": "",
-        "zh": "n. 西裝；套；副 v相稱；彼此協調",
+        "zh": "n. 西裝;套;副v. 相稱;彼此協調",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23173,
+        "id": 22736,
         "en": "suitable",
         "kk": "",
-        "zh": "a. 適當的；合適的",
+        "zh": "a. 適當的;合適 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23174,
+        "id": 22737,
         "en": "suitcase",
         "kk": "",
-        "zh": "n. 小型旅行箱；手提箱",
+        "zh": "n. 小型旅行箱; 手提箱",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23175,
+        "id": 22738,
         "en": "suite",
         "kk": "",
-        "zh": "n. 套房；隨從",
+        "zh": "n. 套房;隨從",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23176,
+        "id": 22739,
         "en": "sum",
         "kk": "",
-        "zh": "n. 總數；總和 v 總結",
+        "zh": "n. 總數;總和v. 總 結",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23177,
+        "id": 22740,
         "en": "summarize",
         "kk": "",
-        "zh": "v. 作總結；作概括",
+        "zh": "v. 作總結; 作概括",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23178,
+        "id": 22741,
         "en": "superb",
         "kk": "",
-        "zh": "a. 堂皇的；宏偉的",
+        "zh": "a. 堂皇的;宏偉 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23179,
+        "id": 22742,
         "en": "superior",
         "kk": "",
-        "zh": "a. 較高的；上級的；高傲的",
+        "zh": "a. 較高的;上 級的;高傲的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23180,
+        "id": 22743,
         "en": "supervise",
         "kk": "",
-        "zh": "v. 監督；管理",
+        "zh": "v. 監督;管理",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23181,
+        "id": 22744,
+        "en": "supervisor",
+        "kk": "",
+        "zh": "n. 管理人; 指導者",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22745,
         "en": "supervisory",
         "kk": "",
-        "zh": "a. 管理（員）的",
+        "zh": "a. 管理 (員)的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23182,
+        "id": 22746,
         "en": "supplement",
         "kk": "",
-        "zh": "n. 增補，補充；副刊",
+        "zh": "n. 增補,補 充;副刊",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23183,
+        "id": 22747,
         "en": "supplementary",
         "kk": "",
-        "zh": "a. 增補的；補充的",
+        "zh": "a. 增補 的;補充的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23184,
+        "id": 22748,
+        "en": "supplier",
+        "kk": "",
+        "zh": "n. 供應者",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22749,
         "en": "supply",
         "kk": "",
-        "zh": "n. 供給；供應  v供給；供應",
+        "zh": "n. 供給;供應v. 供給;供應",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23185,
+        "id": 22750,
         "en": "support",
-        "kk": "",
-        "zh": "v. 支持；擁護 n支持；擁護",
+        "kk": "/səˈpɔːrt/",
+        "zh": "v. 支持;擁護n. 支持;擁護",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23186,
+        "id": 22751,
         "en": "supportive",
         "kk": "",
-        "zh": "a. 支援的；贊助的",
+        "zh": "a. 支援的; 贊助的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23187,
+        "id": 22752,
         "en": "suppose",
         "kk": "",
-        "zh": "v. 猜想；以為",
+        "zh": "v. 猜想;以為",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23188,
+        "id": 22753,
         "en": "surely",
         "kk": "",
-        "zh": "ad. 確實；無疑",
+        "zh": "ad. 確實;無疑",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23189,
+        "id": 22754,
         "en": "surface",
-        "kk": "",
-        "zh": "n. 面；表面 a 表面的；外觀的 v 顯露；呈現",
+        "kk": "/ˈsɜːrfəs/",
+        "zh": "n. 面;表面a. 表 面的;外觀的v. 顯露; 呈現",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23190,
+        "id": 22755,
         "en": "surmise",
         "kk": "",
-        "zh": "v. 推測；猜測 n推測；猜測",
+        "zh": "v. 推測;猜測n. 推測;猜測",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23191,
+        "id": 22756,
+        "en": "surplus",
+        "kk": "",
+        "zh": "n. 剩餘物;順差a. 過剩的;剩餘的",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22757,
         "en": "surprise",
         "kk": "",
-        "zh": "v. 驚喜；驚訝 n驚喜；意外",
+        "zh": "v. 驚喜;驚訝n. 驚喜;意外",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23192,
+        "id": 22758,
         "en": "survey",
         "kk": "",
-        "zh": "n. 問卷 v 調查；做問卷",
+        "zh": "n. 問卷v. 調查; 做問卷",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23193,
+        "id": 22759,
         "en": "survive",
         "kk": "",
-        "zh": "v. 生存；生還",
+        "zh": "v. 生存;生還",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23194,
+        "id": 22760,
         "en": "susceptible",
         "kk": "",
-        "zh": "a. 易被感動的；敏感的",
+        "zh": "a. 易被感動 的;敏感的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23195,
+        "id": 22761,
         "en": "suspect",
         "kk": "",
-        "zh": "v. 懷疑；不信任",
+        "zh": "v. 懷疑;不信任",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23196,
+        "id": 22762,
         "en": "suspend",
         "kk": "",
-        "zh": "v. 懸掛；使飄浮",
+        "zh": "v. 懸掛;使飄 浮",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23197,
+        "id": 22763,
         "en": "sustain",
         "kk": "",
-        "zh": "v. 支撐；承受",
+        "zh": "v. 支撐;承受",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23198,
+        "id": 22764,
         "en": "sweater",
         "kk": "",
         "zh": "n. 毛線衣",
@@ -28149,25 +24876,25 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23199,
+        "id": 22765,
         "en": "swift",
         "kk": "",
-        "zh": "a. 快速的；快捷的",
+        "zh": "a. 快速的;快捷的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23200,
+        "id": 22766,
         "en": "switch",
         "kk": "",
-        "zh": "n. 開關；轉換 v改變；轉移",
+        "zh": "n. 開關;轉換v. 改變;轉移",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23201,
+        "id": 22767,
         "en": "sympathetic",
         "kk": "",
         "zh": "a. 同情的",
@@ -28176,97 +24903,97 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23202,
+        "id": 22768,
         "en": "sympathize",
         "kk": "",
-        "zh": "v. 同情；憐憫",
+        "zh": "v. 同情;憐 憫",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23203,
+        "id": 22769,
         "en": "sympathy",
         "kk": "",
-        "zh": "n. 同情；同情心",
+        "zh": "n. 同情;同情 心",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23204,
+        "id": 22770,
         "en": "symposium",
         "kk": "",
-        "zh": "n. 討論會；座談會",
+        "zh": "n. 討論會; 座談會",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23205,
+        "id": 22771,
         "en": "synthesis",
         "kk": "",
-        "zh": "n. 綜合體；綜合",
+        "zh": "n. 綜合體;綜 合",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23206,
+        "id": 22772,
         "en": "system",
-        "kk": "",
-        "zh": "n. 制度；體制",
+        "kk": "/ˈsɪstəm/",
+        "zh": "n. 制度;體制",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23207,
+        "id": 22773,
         "en": "systematically",
         "kk": "",
-        "zh": "ad. 有系統地；有組織地T",
+        "zh": "ad. 有系 統地;有組織地",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23208,
+        "id": 22774,
         "en": "tackle",
         "kk": "",
-        "zh": "v. 著手；交涉",
+        "zh": "v. 著手;交涉",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23209,
+        "id": 22775,
         "en": "tactful",
         "kk": "",
-        "zh": "a. 機智的；圓滑的",
+        "zh": "a. 機智的;圓滑的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23210,
+        "id": 22776,
         "en": "tactic",
         "kk": "",
-        "zh": "n. 戰術；策略",
+        "zh": "n. 戰術;策略",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23211,
+        "id": 22777,
         "en": "tag",
         "kk": "",
-        "zh": "n. 牌子；標籤 v 添加；附加",
+        "zh": "n. 牌子;標籤v. 添加; 附加",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23212,
+        "id": 22778,
         "en": "tailor",
         "kk": "",
         "zh": "n. 裁縫師",
@@ -28275,25 +25002,25 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23213,
+        "id": 22779,
         "en": "take",
-        "kk": "",
-        "zh": "v. 拿；取；獲得",
+        "kk": "/teɪk/",
+        "zh": "v. 拿;取;獲得",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23214,
+        "id": 22780,
         "en": "takeout",
         "kk": "",
-        "zh": "n. 外賣；外賣的",
+        "zh": "n. 外賣;外賣的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23215,
+        "id": 22781,
         "en": "takeover",
         "kk": "",
         "zh": "n. 接管",
@@ -28302,520 +25029,529 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23216,
+        "id": 22782,
         "en": "talk",
-        "kk": "",
-        "zh": "v. 講話；談話 n 講話；談話",
+        "kk": "/tɔːk/",
+        "zh": "v. 講話;談話n. 講 話;談話",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23217,
+        "id": 22783,
         "en": "talkative",
         "kk": "",
-        "zh": "a. 多嘴的；健談的",
+        "zh": "a. 多嘴的;健 談的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23218,
+        "id": 22784,
         "en": "tangible",
         "kk": "",
-        "zh": "a. 明確的；確鑿的",
+        "zh": "a. 明確的;確鑿 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23219,
+        "id": 22785,
         "en": "tank",
         "kk": "",
-        "zh": "n. 貯水池；坦克",
+        "zh": "n. 貯水池;坦克",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23220,
+        "id": 22786,
         "en": "tap",
         "kk": "",
-        "zh": "n. 閥門；塞子 v 接通；裝上",
+        "zh": "n. 閥門;塞子v. 接通; 裝上",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23221,
+        "id": 22787,
         "en": "tape",
         "kk": "",
-        "zh": "n. 膠布；錄音帶 v錄音",
+        "zh": "n. 膠布;錄音帶v. 錄音",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23222,
+        "id": 22788,
         "en": "target",
         "kk": "",
-        "zh": "n. 靶子；目標 v對準",
+        "zh": "n. 靶子;目標v. 對準",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23223,
+        "id": 22789,
         "en": "task",
-        "kk": "",
-        "zh": "n. 任務；工作",
+        "kk": "/tæsk/",
+        "zh": "n. 任務;工作",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23224,
+        "id": 22790,
         "en": "taste",
         "kk": "",
-        "zh": "n. 味覺；味道 v 吃起來；嚐起來",
+        "zh": "n. 味覺;味道v. 吃 起來;嚐起來",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23225,
+        "id": 22791,
         "en": "tax",
-        "kk": "",
-        "zh": "n. 稅金 v 課稅",
+        "kk": "/tæks/",
+        "zh": "n. 稅金v. 課稅",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23226,
+        "id": 22792,
         "en": "tear",
         "kk": "",
-        "zh": "v. 撕開；撕裂 n 眼淚；淚珠",
+        "zh": "v. 撕開;撕裂n. 眼 淚;淚珠",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23227,
+        "id": 22793,
         "en": "tease",
         "kk": "",
-        "zh": "v. 戲弄；逗弄 n戲弄；逗弄",
+        "zh": "v. 戲弄;逗弄n. 戲弄;逗弄",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23228,
+        "id": 22794,
         "en": "technicality",
         "kk": "",
-        "zh": "n. 專門性；學術性",
+        "zh": "n. 專門性; 學術性",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23229,
+        "id": 22795,
         "en": "technician",
         "kk": "",
-        "zh": "n. 技術人員；技師",
+        "zh": "n. 技術人員; 技師",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23230,
+        "id": 22796,
         "en": "technique",
         "kk": "",
-        "zh": "n. 技巧；技術；技法",
+        "zh": "n. 技巧;技術; 技法",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23231,
+        "id": 22797,
         "en": "technological",
         "kk": "",
-        "zh": "a. 技術（學）的",
+        "zh": "a. 技術 (學)的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23232,
+        "id": 22798,
         "en": "technology",
-        "kk": "",
-        "zh": "n. 技術；科技",
+        "kk": "/tekˈnɑːlədʒi/",
+        "zh": "n. 技術;科 技",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23233,
+        "id": 22799,
         "en": "temper",
         "kk": "",
-        "zh": "n. 情緒；性情；脾氣 v 調和；緩和",
+        "zh": "n. 情緒;性情; 脾氣v. 調和;緩和",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23234,
+        "id": 22800,
         "en": "temporary",
         "kk": "",
-        "zh": "a. 臨時的；暫時的",
+        "zh": "a. 臨時的;暫 時的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23235,
+        "id": 22801,
         "en": "tenant",
         "kk": "",
-        "zh": "n. 房客；承租人",
+        "zh": "n. 房客;承租人",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23236,
+        "id": 22802,
         "en": "tender",
         "kk": "",
-        "zh": "a. 嫩的；柔軟的",
+        "zh": "a. 嫩的;柔軟的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23237,
+        "id": 22803,
         "en": "tense",
         "kk": "",
-        "zh": "a. 緊張的；拉緊的v 使繃緊；使緊張",
+        "zh": "a. 緊張的;拉緊的v. 使繃緊;使緊張",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23238,
+        "id": 22804,
         "en": "tension",
         "kk": "",
-        "zh": "n. 拉緊；繃緊 v拉緊；繃緊",
+        "zh": "n. 拉緊;繃緊v. 拉緊;繃緊",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23239,
+        "id": 22805,
+        "en": "tentative",
+        "kk": "",
+        "zh": "a. 試驗性的; 嘗試的",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22806,
         "en": "tenure",
         "kk": "",
-        "zh": "n. 佔有；佔有權",
+        "zh": "n. 佔有;佔有權",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23240,
+        "id": 22807,
         "en": "term",
-        "kk": "",
-        "zh": "n. 期；期限；任期",
+        "kk": "/tɜːrm/",
+        "zh": "n. 期;期限;任期",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23241,
+        "id": 22808,
         "en": "terminal",
         "kk": "",
-        "zh": "a. 末端的；終點的 n 終點；末站；航廈",
+        "zh": "a. 末端的;終點 的n. 終點;末站;航廈",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23242,
+        "id": 22809,
         "en": "terminology",
         "kk": "",
-        "zh": "n. 術語，專門用語",
+        "zh": "n. 術語,專 門用語",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23243,
+        "id": 22810,
         "en": "terrible",
         "kk": "",
-        "zh": "a. 可怕的；嚇人的",
+        "zh": "a. 可怕的;嚇人 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23244,
+        "id": 22811,
         "en": "territory",
         "kk": "",
-        "zh": "n. 領土；版圖；領地",
+        "zh": "n. 領土;版圖; 領地",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23245,
+        "id": 22812,
         "en": "testify",
         "kk": "",
-        "zh": "v. 作證；證實",
+        "zh": "v. 作證;證實",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23246,
+        "id": 22813,
         "en": "testimonial",
         "kk": "",
-        "zh": "n. 證明書；推薦書",
+        "zh": "n. 證明書; 推薦書",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23247,
+        "id": 22814,
         "en": "thorough",
         "kk": "",
-        "zh": "a. 徹底的；完全的",
+        "zh": "a. 徹底的;完 全的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23248,
+        "id": 22815,
         "en": "thoroughness",
         "kk": "",
-        "zh": "n. 徹底；完全",
+        "zh": "n. 徹底; 完全",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23249,
+        "id": 22816,
         "en": "though",
         "kk": "",
-        "zh": "conj. 雖然；儘管ad 然而；還是",
+        "zh": "conj. 雖然;儘管ad. 然而;還是",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23250,
+        "id": 22817,
         "en": "thought",
         "kk": "",
-        "zh": "n. 思維；思考",
+        "zh": "n. 思維;思考",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23251,
+        "id": 22818,
         "en": "thread",
         "kk": "",
-        "zh": "n. 線狀物；頭緒v 通過；穿過",
+        "zh": "n. 線狀物;頭緒v. 通過;穿過",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23252,
+        "id": 22819,
         "en": "threat",
         "kk": "",
-        "zh": "n. 威脅；恐嚇",
+        "zh": "n. 威脅;恐嚇",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23253,
+        "id": 22820,
         "en": "thrive",
         "kk": "",
-        "zh": "v. 興旺；繁榮",
+        "zh": "v. 興旺;繁榮",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23254,
+        "id": 22821,
         "en": "throughout",
         "kk": "",
-        "zh": "prep. 遍及；遍布  ad 處處；始終",
+        "zh": "prep. 遍及; 遍布ad. 處處;始終",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23255,
+        "id": 22822,
         "en": "thus",
         "kk": "",
-        "zh": "ad. 如此；這樣",
+        "zh": "ad. 如此;這樣",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23256,
+        "id": 22823,
         "en": "ticket",
         "kk": "",
-        "zh": "n. 票；券",
+        "zh": "n. 票;券",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23257,
+        "id": 22824,
         "en": "tie",
         "kk": "",
-        "zh": "v. 束縛；約束；平手",
+        "zh": "v. 束縛;約束;平手",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23258,
+        "id": 22825,
         "en": "tight",
         "kk": "",
-        "zh": "a. 牢固的；緊身的ad 緊緊地",
+        "zh": "a. 牢固的;緊身的ad. 緊緊地",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23259,
+        "id": 22826,
         "en": "time",
         "kk": "",
-        "zh": "n. 時間；時光 v 測定；記錄",
+        "zh": "n. 時間;時光v. 測 定;記錄",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23260,
+        "id": 22827,
         "en": "timeliness",
         "kk": "",
-        "zh": "n. 及時；適時",
+        "zh": "n. 及時;適時",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23261,
+        "id": 22828,
         "en": "titl",
         "kk": "",
-        "zh": "n. 標題；題目 v 加標題於",
+        "zh": "n. 標題;題目v. 加標 題於",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23262,
+        "id": 22829,
         "en": "token",
         "kk": "",
-        "zh": "n. 標記；標誌；象徵 a 象徵性的",
+        "zh": "n. 標記;標誌;象 徵a. 象徵性的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23263,
+        "id": 22830,
         "en": "toll",
         "kk": "",
-        "zh": "n. 使用費；通行費",
+        "zh": "n. 使用費;通行費",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23264,
+        "id": 22831,
         "en": "tool",
         "kk": "",
-        "zh": "n. 工具；器具",
+        "zh": "n. 工具;器具",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23265,
+        "id": 22832,
         "en": "top",
         "kk": "",
-        "zh": "n. 頂部；山頂；最高程度  a 最高的；最優良的 v 加蓋；勝過",
+        "zh": "n. 頂部;山頂;最高 程度a. 最高的;最優良 的v. 加蓋;勝過",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23266,
+        "id": 22833,
         "en": "topic",
         "kk": "",
-        "zh": "n. 主題；要旨",
+        "zh": "n. 主題;要旨",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23267,
+        "id": 22834,
         "en": "total",
         "kk": "",
-        "zh": "a. 總計的；總括的n 總數  v 合計為",
+        "zh": "a. 總計的;總括的n. 總數v. 合計為",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23268,
+        "id": 22835,
         "en": "tour",
         "kk": "",
-        "zh": "n. 旅遊；遊覽 v 旅遊；遊覽",
+        "zh": "n. 旅遊;遊覽v. 旅 遊;遊覽",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23269,
+        "id": 22836,
         "en": "tow",
         "kk": "",
-        "zh": "v. 拖；拉；牽引 n 拖；拉；牽引",
+        "zh": "v. 拖;拉;牽引n. 拖; 拉;牽引",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23270,
+        "id": 22837,
         "en": "town",
         "kk": "",
-        "zh": "n. 鎮；市鎮",
+        "zh": "n. 鎮;市鎮",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23271,
+        "id": 22838,
         "en": "track",
         "kk": "",
-        "zh": "n. 行蹤；軌道 v 跟蹤；追蹤",
+        "zh": "n. 行蹤;軌道v. 跟 蹤;追蹤",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23272,
+        "id": 22839,
         "en": "trade",
         "kk": "",
-        "zh": "n. 貿易；交易 v 交換",
+        "zh": "n. 貿易;交易v. 交 換",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23273,
+        "id": 22840,
         "en": "tradition",
         "kk": "",
         "zh": "n. 傳統 習俗",
@@ -28824,115 +25560,142 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23274,
+        "id": 22841,
         "en": "traditional",
         "kk": "",
-        "zh": "a. 傳統的2842. trafﬁc n 交通",
+        "zh": "a. 傳統的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23275,
+        "id": 22842,
+        "en": "traffic",
+        "kk": "",
+        "zh": "n. 交通",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22843,
         "en": "trail",
         "kk": "",
-        "zh": "v. 拖；曳；跟蹤 n小道；痕跡",
+        "zh": "v. 拖;曳;跟蹤n. 小道;痕跡",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23276,
+        "id": 22844,
         "en": "transact",
         "kk": "",
-        "zh": "v. 處置；執行",
+        "zh": "v. 處置;執行",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23277,
+        "id": 22845,
+        "en": "transaction",
+        "kk": "",
+        "zh": "n. 交易;執 行",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22846,
+        "en": "transfer",
+        "kk": "",
+        "zh": "v. 轉換;調動",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22847,
         "en": "trash",
         "kk": "",
-        "zh": "n. 廢物；垃圾",
+        "zh": "n. 廢物;垃圾",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23278,
+        "id": 22848,
         "en": "travel",
         "kk": "",
-        "zh": "v. 旅遊；移動",
+        "zh": "v. 旅遊;移動",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23279,
+        "id": 22849,
         "en": "traveler",
         "kk": "",
-        "zh": "n. 旅行者；旅客",
+        "zh": "n. 旅行者;旅客",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23280,
+        "id": 22850,
         "en": "treasure",
         "kk": "",
-        "zh": "n. 金銀財寶；財富  v 珍愛；珍視",
+        "zh": "n. 金銀財寶; 財富v. 珍愛;珍視",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23281,
+        "id": 22851,
         "en": "treat",
         "kk": "",
-        "zh": "v. 對待；處理 n 請客",
+        "zh": "v. 對待;處理n. 請 客",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23282,
+        "id": 22852,
         "en": "treatment",
         "kk": "",
-        "zh": "n. 對待；治療",
+        "zh": "n. 對待;治療",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23283,
+        "id": 22853,
         "en": "treaty",
         "kk": "",
-        "zh": "n. 條約；協定",
+        "zh": "n. 條約;協定",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23284,
+        "id": 22854,
         "en": "tremendous",
         "kk": "",
-        "zh": "a. 巨大的；極大的",
+        "zh": "a. 巨大的; 極大的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23285,
+        "id": 22855,
         "en": "trial",
         "kk": "",
-        "zh": "n. 試驗；審問 a 試驗的；審訊的",
+        "zh": "n. 試驗;審問a. 試 驗的;審訊的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23286,
+        "id": 22856,
         "en": "triangle",
         "kk": "",
         "zh": "n. 三角形",
@@ -28941,52 +25704,52 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23287,
+        "id": 22857,
         "en": "tribal",
         "kk": "",
-        "zh": "a. 部落的；種族的",
+        "zh": "a. 部落的;種族的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23288,
+        "id": 22858,
         "en": "tribe",
         "kk": "",
-        "zh": "n. 部落；種族",
+        "zh": "n. 部落;種族",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23289,
+        "id": 22859,
         "en": "trivial",
         "kk": "",
-        "zh": "a. 瑣細的；不重要的",
+        "zh": "a. 瑣細的;不重要 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23290,
+        "id": 22860,
         "en": "truly",
         "kk": "",
-        "zh": "ad. 真誠地；忠實地",
+        "zh": "ad. 真誠地;忠實地",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23291,
+        "id": 22861,
         "en": "trust",
         "kk": "",
-        "zh": "n. 信任；信賴 v 信任；信賴",
+        "zh": "n. 信任;信賴v. 信 任;信賴",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23292,
+        "id": 22862,
         "en": "trustee",
         "kk": "",
         "zh": "n. 受託管理人",
@@ -28995,61 +25758,70 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23293,
+        "id": 22863,
+        "en": "turnover",
+        "kk": "",
+        "zh": "n. 翻倒;翻轉",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22864,
         "en": "twice",
         "kk": "",
-        "zh": "ad. 兩次；兩回；兩倍",
+        "zh": "ad. 兩次;兩回;兩 倍",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23294,
+        "id": 22865,
         "en": "two-sided",
         "kk": "",
-        "zh": "a. 兩邊的；兩面的",
+        "zh": "a. 兩邊的;兩 面的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23295,
+        "id": 22866,
         "en": "type",
         "kk": "",
-        "zh": "n. 類型；型式 v 作為⋯的典型；打字",
+        "zh": "n. 類型;型式v. 作 為⋯的典型;打字",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23296,
+        "id": 22867,
         "en": "typical",
         "kk": "",
-        "zh": "a. 典型的；有代表性的",
+        "zh": "a. 典型的;有代 表性的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23297,
+        "id": 22868,
         "en": "typo",
         "kk": "",
-        "zh": "n. 筆誤U",
+        "zh": "n. 筆誤",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23298,
+        "id": 22869,
         "en": "ultimate",
         "kk": "",
-        "zh": "a. 最後的；最終的 n 終極；結局",
+        "zh": "a. 最後的;最終 的n. 終極;結局",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23299,
+        "id": 22870,
         "en": "ultimately",
         "kk": "",
         "zh": "ad. 終極地",
@@ -29058,79 +25830,79 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23300,
+        "id": 22871,
         "en": "ultra",
         "kk": "",
-        "zh": "a. 偏激的；過分的",
+        "zh": "a. 偏激的;過分的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23301,
+        "id": 22872,
         "en": "unable",
         "kk": "",
-        "zh": "a. 不能的；不會的",
+        "zh": "a. 不能的;不會 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23302,
+        "id": 22873,
         "en": "unacceptable",
         "kk": "",
-        "zh": "a. 無法接受的",
+        "zh": "a. 無法接 受的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23303,
+        "id": 22874,
         "en": "unaccountable",
         "kk": "",
-        "zh": "a. 無法解釋的；無責任的",
+        "zh": "a. 無法 解釋的;無責任的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23304,
+        "id": 22875,
         "en": "unaccustomed",
         "kk": "",
-        "zh": "a. 不習慣的；不熟悉的",
+        "zh": "a. 不習 慣的;不熟悉的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23305,
+        "id": 22876,
         "en": "unauthorized",
         "kk": "",
-        "zh": "a. 未被授權的",
+        "zh": "a. 未被授 權的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23306,
+        "id": 22877,
         "en": "unaware",
         "kk": "",
-        "zh": "a. 未察覺到的ad 意外地；突然地",
+        "zh": "a. 未察覺到的ad. 意外地;突然地",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23307,
+        "id": 22878,
         "en": "unbalance",
         "kk": "",
-        "zh": "v. 使失去平衡",
+        "zh": "v. 使失去平 衡",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23308,
+        "id": 22879,
         "en": "unbeatable",
         "kk": "",
         "zh": "a. 打不垮的",
@@ -29139,7 +25911,7 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23309,
+        "id": 22880,
         "en": "unbiased",
         "kk": "",
         "zh": "a. 無偏見的",
@@ -29148,7 +25920,7 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23310,
+        "id": 22881,
         "en": "uncertain",
         "kk": "",
         "zh": "a. 不確定的",
@@ -29157,7 +25929,7 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23311,
+        "id": 22882,
         "en": "uncertainty",
         "kk": "",
         "zh": "n. 不確定性",
@@ -29166,16 +25938,16 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23312,
+        "id": 22883,
         "en": "unconventional",
         "kk": "",
-        "zh": "a. 非傳統的",
+        "zh": "a. 非傳 統的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23313,
+        "id": 22884,
         "en": "underestimate",
         "kk": "",
         "zh": "v. 低估",
@@ -29184,43 +25956,43 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23314,
+        "id": 22885,
         "en": "underground",
         "kk": "",
-        "zh": "a. 地下的；不公開的",
+        "zh": "a. 地下的; 不公開的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23315,
+        "id": 22886,
         "en": "underline",
         "kk": "",
-        "zh": "v. 強調；使突出",
+        "zh": "v. 強調;使突 出",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23316,
+        "id": 22887,
         "en": "understand",
-        "kk": "",
-        "zh": "v. 了解；理解",
+        "kk": "/ˌʌndərˈstænd/",
+        "zh": "v. 了解;理 解",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23317,
+        "id": 22888,
         "en": "understatement",
         "kk": "",
-        "zh": "n. 不充分的陳述；保守的陳述",
+        "zh": "n. 不充 分的陳述;保守的陳述",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23318,
+        "id": 22889,
         "en": "underway",
         "kk": "",
         "zh": "a. 在進行中的",
@@ -29229,7 +26001,7 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23319,
+        "id": 22890,
         "en": "unfair",
         "kk": "",
         "zh": "a. 不公平的",
@@ -29238,61 +26010,70 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23320,
+        "id": 22891,
         "en": "unforeseen",
         "kk": "",
-        "zh": "ad. 預料之外的",
+        "zh": "ad. 預料之外 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23321,
+        "id": 22892,
         "en": "unfortunately",
         "kk": "",
-        "zh": "ad. 不幸地2893.  unidentiﬁed a 未辨別出的；身分不明的",
+        "zh": "ad. 不幸地",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23322,
+        "id": 22893,
+        "en": "unidentified",
+        "kk": "",
+        "zh": "a. 未辨別出 的;身分不明的",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22894,
         "en": "uniform",
         "kk": "",
-        "zh": "n. 制服 a 相同的；一致的",
+        "zh": "n. 制服a. 相同 的;一致的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23323,
+        "id": 22895,
         "en": "unify",
         "kk": "",
-        "zh": "v. 統一；聯合",
+        "zh": "v. 統一;聯合",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23324,
+        "id": 22896,
         "en": "unimaginable",
         "kk": "",
-        "zh": "a. 難以想像的；想不到的",
+        "zh": "a. 難以想 像的;想不到的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23325,
+        "id": 22897,
         "en": "union",
-        "kk": "",
-        "zh": "n. 結合；合併",
+        "kk": "/ˈjuːnjən/",
+        "zh": "n. 結合;合併",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23326,
+        "id": 22898,
         "en": "unique",
         "kk": "",
         "zh": "a. 獨特的",
@@ -29301,7 +26082,7 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23327,
+        "id": 22899,
         "en": "uniquely",
         "kk": "",
         "zh": "ad. 獨特地",
@@ -29310,7 +26091,7 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23328,
+        "id": 22900,
         "en": "uniqueness",
         "kk": "",
         "zh": "n. 獨特",
@@ -29319,88 +26100,88 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23329,
+        "id": 22901,
         "en": "unit",
-        "kk": "",
-        "zh": "n. 單位；單元",
+        "kk": "/ˈjuːnɪt/",
+        "zh": "n. 單位;單元",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23330,
+        "id": 22902,
         "en": "unite",
-        "kk": "",
-        "zh": "v. 使聯合；統一",
+        "kk": "/juˈnaɪt/",
+        "zh": "v. 使聯合;統一",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23331,
+        "id": 22903,
         "en": "university",
-        "kk": "",
+        "kk": "/ˌjuːnɪˈvɜːrsəti/",
         "zh": "n. 大學",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23332,
+        "id": 22904,
         "en": "unless",
-        "kk": "",
-        "zh": "prep. 除⋯⋯外conj 如果不；除非",
+        "kk": "/ənˈles/",
+        "zh": "prep. 除⋯⋯外conj. 如果不;除非",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23333,
+        "id": 22905,
         "en": "unlimited",
         "kk": "",
-        "zh": "a. 無限制的；無約束的",
+        "zh": "a. 無限制的; 無約束的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23334,
+        "id": 22906,
         "en": "unlock",
         "kk": "",
-        "zh": "v. 開啟；揭開",
+        "zh": "v. 開啟;揭開",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23335,
+        "id": 22907,
         "en": "unnecessary",
         "kk": "",
-        "zh": "a. 不必要的",
+        "zh": "a. 不必要 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23336,
+        "id": 22908,
         "en": "unsanitary",
         "kk": "",
-        "zh": "a. 不衛生的；有礙健康的",
+        "zh": "a. 不衛生的; 有礙健康的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23337,
+        "id": 22909,
         "en": "unsatisfactory",
         "kk": "",
-        "zh": "a. 不滿意的",
+        "zh": "a. 不滿意 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23338,
+        "id": 22910,
         "en": "upcoming",
         "kk": "",
         "zh": "a. 即將來臨的",
@@ -29409,43 +26190,52 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23339,
+        "id": 22911,
         "en": "update",
         "kk": "",
-        "zh": "v. 使現代化；更新",
+        "zh": "v. 使現代化;更 新",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23340,
-        "en": "upon",
+        "id": 22912,
+        "en": "upgrade",
         "kk": "",
-        "zh": "prep. 在⋯之上；在⋯上面",
+        "zh": "v. 提高;提升n. 升級;上坡",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23341,
+        "id": 22913,
+        "en": "upon",
+        "kk": "/əˈpɑːn/",
+        "zh": "prep. 在⋯之上; 在⋯上面",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22914,
         "en": "upwards",
         "kk": "",
-        "zh": "ad. 向上地；朝上",
+        "zh": "ad. 向上地;朝 上",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23342,
+        "id": 22915,
         "en": "urban",
-        "kk": "",
+        "kk": "/ˈɜːrbən/",
         "zh": "a. 城市的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23343,
+        "id": 22916,
         "en": "urbanize",
         "kk": "",
         "zh": "v. 使都市化",
@@ -29454,61 +26244,61 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23344,
+        "id": 22917,
         "en": "urgent",
         "kk": "",
-        "zh": "a. 急促的；急的",
+        "zh": "a. 急促的;急的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23345,
+        "id": 22918,
         "en": "use",
-        "kk": "",
+        "kk": "/juːz/",
         "zh": "v. 使用",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23346,
+        "id": 22919,
         "en": "useful",
-        "kk": "",
-        "zh": "a. 有用的；有價值的",
+        "kk": "/ˈjuːsfəl/",
+        "zh": "a. 有用的;有價值 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23347,
+        "id": 22920,
         "en": "useless",
         "kk": "",
-        "zh": "a. 無用的；無價值的",
+        "zh": "a. 無用的;無價 值的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23348,
+        "id": 22921,
         "en": "usual",
-        "kk": "",
-        "zh": "a. 通常的；平常的",
+        "kk": "/ˈjuːʒuəl/",
+        "zh": "a. 通常的;平常的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23349,
+        "id": 22922,
         "en": "usually",
-        "kk": "",
-        "zh": "ad. 通常地；慣常地",
+        "kk": "/ˈjuːʒuəli/",
+        "zh": "ad. 通常地;慣常 地",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23350,
+        "id": 22923,
         "en": "utilization",
         "kk": "",
         "zh": "n. 利用",
@@ -29517,34 +26307,43 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23351,
+        "id": 22924,
         "en": "utilize",
         "kk": "",
-        "zh": "v. 利用V",
+        "zh": "v. 利用",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23352,
+        "id": 22925,
+        "en": "vacancy",
+        "kk": "",
+        "zh": "n. 空白;空缺",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22926,
         "en": "vacant",
         "kk": "",
-        "zh": "a. 空的；空著的",
+        "zh": "a. 空的;空著的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23353,
+        "id": 22927,
         "en": "vacation",
         "kk": "",
-        "zh": "n. 假期；休假",
+        "zh": "n. 假期;休假",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23354,
+        "id": 22928,
         "en": "vaccinate",
         "kk": "",
         "zh": "v. 注射疫苗",
@@ -29553,7 +26352,7 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23355,
+        "id": 22929,
         "en": "vaccination",
         "kk": "",
         "zh": "n. 疫苗接種",
@@ -29562,34 +26361,34 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23356,
+        "id": 22930,
         "en": "vain",
         "kk": "",
-        "zh": "a. 愛虛榮的；自負的",
+        "zh": "a. 愛虛榮的;自負 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23357,
+        "id": 22931,
         "en": "valid",
         "kk": "",
-        "zh": "a. 有根據的；確鑿的",
+        "zh": "a. 有根據的;確鑿 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23358,
+        "id": 22932,
         "en": "validat",
         "kk": "",
-        "zh": "v. 使有效；使生效",
+        "zh": "v. 使有效;使生 效",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23359,
+        "id": 22933,
         "en": "valuable",
         "kk": "",
         "zh": "a. 有價值的",
@@ -29598,25 +26397,25 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23360,
+        "id": 22934,
         "en": "value",
-        "kk": "",
+        "kk": "/ˈvæljuː/",
         "zh": "n. 價值",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23361,
+        "id": 22935,
         "en": "van",
         "kk": "",
-        "zh": "n. 廂型車；小貨車",
+        "zh": "n. 廂型車;小貨車",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23362,
+        "id": 22936,
         "en": "vandalize",
         "kk": "",
         "zh": "v. 任意破壞",
@@ -29625,61 +26424,61 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23363,
+        "id": 22937,
         "en": "variable",
         "kk": "",
-        "zh": "a. 易變的；多變的",
+        "zh": "a. 易變的;多變 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23364,
+        "id": 22938,
         "en": "variation",
         "kk": "",
-        "zh": "n. 變動；差異",
+        "zh": "n. 變動;差異",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23365,
+        "id": 22939,
         "en": "variety",
-        "kk": "",
-        "zh": "n. 多樣化；變化",
+        "kk": "/vəˈraɪəti/",
+        "zh": "n. 多樣化;變化",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23366,
+        "id": 22940,
         "en": "various",
-        "kk": "",
-        "zh": "a. 不同的；各種各樣的",
+        "kk": "/ˈveriəs/",
+        "zh": "a. 不同的;各種 各樣的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23367,
+        "id": 22941,
         "en": "vary",
         "kk": "",
-        "zh": "v. 使不同；變更",
+        "zh": "v. 使不同;變更",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23368,
+        "id": 22942,
         "en": "vas",
         "kk": "",
-        "zh": "a. 廣闊的；浩瀚的",
+        "zh": "a. 廣闊的;浩瀚的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23369,
+        "id": 22943,
         "en": "vegetable",
         "kk": "",
         "zh": "n. 蔬菜",
@@ -29688,133 +26487,160 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23370,
+        "id": 22944,
         "en": "vegetarian",
         "kk": "",
-        "zh": "n. 素食主義者",
+        "zh": "n. 素食主義 者",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23371,
+        "id": 22945,
         "en": "vehicle",
-        "kk": "",
-        "zh": "a. 運載工具；手段",
+        "kk": "/ˈviːəkl/",
+        "zh": "a. 運載工具;手 段",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23372,
+        "id": 22946,
         "en": "veil",
         "kk": "",
-        "zh": "n. 面紗；面罩 v 掩飾；遮蓋",
+        "zh": "n. 面紗;面罩v. 掩 飾;遮蓋",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23373,
+        "id": 22947,
         "en": "vend",
         "kk": "",
-        "zh": "v. 出售；販賣",
+        "zh": "v. 出售;販賣",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23374,
+        "id": 22948,
+        "en": "vendor",
+        "kk": "",
+        "zh": "n. 小販;攤販",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22949,
         "en": "venture",
         "kk": "",
-        "zh": "n. 冒險事業；投機活動 v 冒險",
+        "zh": "n. 冒險事業;投 機活動v. 冒險",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23375,
+        "id": 22950,
+        "en": "verify",
+        "kk": "",
+        "zh": "v. 證明;證實",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22951,
         "en": "versatile",
         "kk": "",
-        "zh": "a. 多才多藝的；多功能的",
+        "zh": "a. 多才多藝的; 多功能的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23376,
+        "id": 22952,
         "en": "version",
-        "kk": "",
-        "zh": "n. 版本；說法",
+        "kk": "/ˈvɜːrʒn/",
+        "zh": "n. 版本;說法",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23377,
+        "id": 22953,
         "en": "vessel",
         "kk": "",
-        "zh": "n. 船；艦；血管",
+        "zh": "n. 船;艦;血管",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23378,
+        "id": 22954,
         "en": "via",
         "kk": "",
-        "zh": "prep. 透過；憑藉",
+        "zh": "prep. 透過;憑藉",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23379,
+        "id": 22955,
         "en": "viable",
         "kk": "",
-        "zh": "a. 有望成功的；切實可行的",
+        "zh": "a. 有望成功的;切 實可行的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23380,
+        "id": 22956,
         "en": "vice",
         "kk": "",
-        "zh": "versa. ad 反之亦然",
+        "zh": "v. 緊緊夾住 (=vise)",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23381,
+        "id": 22957,
+        "en": "vice versa",
+        "kk": "",
+        "zh": "ad. 反之亦然",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22958,
         "en": "victim",
         "kk": "",
-        "zh": "n. 受害者；犧牲者",
+        "zh": "n. 受害者;犧牲者",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23382,
+        "id": 22959,
         "en": "viewpoint",
         "kk": "",
-        "zh": "n. 觀點；視角",
+        "zh": "n. 觀點;視角",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23383,
+        "id": 22960,
         "en": "violation",
         "kk": "",
-        "zh": "n. 違反；違背",
+        "zh": "n. 違反;違背",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23384,
+        "id": 22961,
         "en": "virtual",
         "kk": "",
         "zh": "a. 虛擬的",
@@ -29823,133 +26649,133 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23385,
+        "id": 22962,
         "en": "visibility",
         "kk": "",
-        "zh": "n. 能見度；明顯性",
+        "zh": "n. 能見度;明顯 性",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23386,
+        "id": 22963,
         "en": "visible",
         "kk": "",
-        "zh": "a. 可看見的；清晰的",
+        "zh": "a. 可看見的;清 晰的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23387,
+        "id": 22964,
         "en": "visit",
-        "kk": "",
-        "zh": "v. 參觀；訪視",
+        "kk": "/ˈvɪzɪt/",
+        "zh": "v. 參觀;訪視",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23388,
+        "id": 22965,
         "en": "visitor",
         "kk": "",
-        "zh": "n. 參觀者；訪視者",
+        "zh": "n. 參觀者;訪視者",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23389,
+        "id": 22966,
         "en": "visual",
         "kk": "",
-        "zh": "a. 可被看見的；視覺的",
+        "zh": "a. 可被看見的;視 覺的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23390,
+        "id": 22967,
         "en": "vita",
         "kk": "",
-        "zh": "a. 生命的；充滿活力的",
+        "zh": "a. 生命的;充滿活力 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23391,
+        "id": 22968,
         "en": "vivid",
         "kk": "",
-        "zh": "a. 生動的；活潑的",
+        "zh": "a. 生動的;活潑的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23392,
+        "id": 22969,
         "en": "vocabulary",
         "kk": "",
-        "zh": "n. 單字；字彙",
+        "zh": "n. 單字;字 彙",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23393,
+        "id": 22970,
         "en": "voice",
-        "kk": "",
+        "kk": "/vɔɪs/",
         "zh": "n. 聲音",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23394,
+        "id": 22971,
         "en": "volatile",
         "kk": "",
-        "zh": "a. 易揮發的；易變的",
+        "zh": "a. 易揮發的;易 變的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23395,
+        "id": 22972,
         "en": "volunteer",
         "kk": "",
-        "zh": "n. 志願者，義工 v 自願",
+        "zh": "n. 志願者,義 工v. 自願",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23396,
+        "id": 22973,
         "en": "voucher",
         "kk": "",
-        "zh": "n. 票券；證人",
+        "zh": "n. 票券;證人",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23397,
+        "id": 22974,
         "en": "voyage",
         "kk": "",
-        "zh": "n. 航海；航行 v航海；航行W",
+        "zh": "n. 航海;航行v. 航海;航行",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23398,
+        "id": 22975,
         "en": "wage",
         "kk": "",
-        "zh": "v. 進行；從事",
+        "zh": "v. 進行;從事",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23399,
+        "id": 22976,
         "en": "wagon",
         "kk": "",
         "zh": "n. 運貨馬車",
@@ -29958,25 +26784,25 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23400,
+        "id": 22977,
         "en": "waist",
         "kk": "",
-        "zh": "n. 腰；腰部",
+        "zh": "n. 腰;腰部",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23401,
+        "id": 22978,
         "en": "wait",
-        "kk": "",
-        "zh": "v. 等；等待 n 等待",
+        "kk": "/weɪt/",
+        "zh": "v. 等;等待n. 等待",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23402,
+        "id": 22979,
         "en": "waiter",
         "kk": "",
         "zh": "n. 服務生",
@@ -29985,7 +26811,7 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23403,
+        "id": 22980,
         "en": "waitress",
         "kk": "",
         "zh": "n. 女服務生",
@@ -29994,16 +26820,16 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23404,
+        "id": 22981,
         "en": "waive",
         "kk": "",
-        "zh": "v. 放棄；撤回",
+        "zh": "v. 放棄;撤回",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23405,
+        "id": 22982,
         "en": "wallet",
         "kk": "",
         "zh": "n. 皮夾",
@@ -30012,7 +26838,7 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23406,
+        "id": 22983,
         "en": "wallpaper",
         "kk": "",
         "zh": "n. 壁紙",
@@ -30021,451 +26847,487 @@ const toeicWordsDB = [
         "exampleZh": ""
     },
     {
-        "id": 23407,
-        "en": "warm",
+        "id": 22984,
+        "en": "warehouse",
         "kk": "",
-        "zh": "a. 溫暖的；暖和的v 變暖和",
+        "zh": "n. 倉庫 庫房",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23408,
+        "id": 22985,
+        "en": "warm",
+        "kk": "/wɔːrm/",
+        "zh": "a. 溫暖的;暖和的v. 變暖和",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22986,
         "en": "warn",
         "kk": "",
-        "zh": "v. 警告；告誡",
+        "zh": "v. 警告;告誡",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23409,
+        "id": 22987,
         "en": "warning",
         "kk": "",
-        "zh": "n. 警告；告誡",
+        "zh": "n. 警告;告誡",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23410,
+        "id": 22988,
+        "en": "warranty",
+        "kk": "",
+        "zh": "n. 保證;擔保",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 22989,
         "en": "waste",
         "kk": "",
-        "zh": "v. 浪費；濫用 n浪費；荒原",
+        "zh": "v. 浪費;濫用n. 浪費;荒原",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23411,
+        "id": 22990,
         "en": "watch",
-        "kk": "",
-        "zh": "n. 看守，監視；手錶 v 觀看；注視",
+        "kk": "/wɑːtʃ/",
+        "zh": "n. 看守,監視;手 錶v. 觀看;注視",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23412,
+        "id": 22991,
         "en": "wave",
-        "kk": "",
-        "zh": "n. 海浪；浪潮 v 揮手；飄揚",
+        "kk": "/weɪv/",
+        "zh": "n. 海浪;浪潮v. 揮 手;飄揚",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23413,
+        "id": 22992,
         "en": "waver",
         "kk": "",
-        "zh": "v. 搖擺；搖晃動搖",
+        "zh": "v. 搖擺;搖晃動搖",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23414,
+        "id": 22993,
         "en": "weak",
-        "kk": "",
-        "zh": "a. 弱的；虛弱的",
+        "kk": "/wiːk/",
+        "zh": "a. 弱的;虛弱的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23415,
+        "id": 22994,
         "en": "weakness",
         "kk": "",
-        "zh": "n. 虛弱；弱點",
+        "zh": "n. 虛弱;弱點",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23416,
+        "id": 22995,
         "en": "wealth",
         "kk": "",
-        "zh": "n. 財產；資源",
+        "zh": "n. 財產;資源",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23417,
+        "id": 22996,
         "en": "weight",
-        "kk": "",
-        "zh": "n. 重量；體重",
+        "kk": "/weɪt/",
+        "zh": "n. 重量;體重",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23418,
+        "id": 22997,
         "en": "whereas",
         "kk": "",
-        "zh": "conj. 然而；反之",
+        "zh": "conj. 然而;反 之",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23419,
+        "id": 22998,
         "en": "whether",
-        "kk": "",
-        "zh": "conj. 是否；不管是⋯⋯（或是）",
+        "kk": "/ˈweðər/",
+        "zh": "conj. 是否;不 管是⋯⋯(或是)",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23420,
+        "id": 22999,
         "en": "whole",
-        "kk": "",
-        "zh": "a. 整體的；全部的",
+        "kk": "/hoʊl/",
+        "zh": "a. 整體的;全部的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23421,
+        "id": 23000,
         "en": "widespread",
         "kk": "",
-        "zh": "a. 普遍的；廣泛的",
+        "zh": "a. 普遍的; 廣泛的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23422,
+        "id": 23001,
         "en": "width",
         "kk": "",
-        "zh": "n. 寬度；闊度",
+        "zh": "n. 寬度;闊度",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23423,
+        "id": 23002,
         "en": "will",
         "kk": "",
-        "zh": "aux. 將；將要 n 意志；心願；目的",
+        "zh": "aux. 將;將要n. 意志; 心願;目的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23424,
+        "id": 23003,
         "en": "willingness",
         "kk": "",
-        "zh": "n. 自願；樂意",
+        "zh": "n. 自願;樂 意",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23425,
+        "id": 23004,
         "en": "wire",
         "kk": "",
-        "zh": "n. 電纜；電線 v 發電報；裝電線",
+        "zh": "n. 電纜;電線v. 發 電報;裝電線",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23426,
+        "id": 23005,
+        "en": "withdraw",
+        "kk": "",
+        "zh": "v. 抽回;拉開; 移開",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 23006,
         "en": "withdrawal",
         "kk": "",
-        "zh": "n. 收回；撤回 提款",
+        "zh": "n. 收回;撤 回 提款",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23427,
+        "id": 23007,
         "en": "within",
-        "kk": "",
-        "zh": "prep. 在⋯⋯範圍內；不超過 ad 在裡面；在內部",
+        "kk": "/wɪˈðɪn/",
+        "zh": "prep. 在⋯⋯範圍 內;不超過ad. 在裡面; 在內部",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23428,
+        "id": 23008,
         "en": "withstand",
         "kk": "",
-        "zh": "v. 抵擋；反抗",
+        "zh": "v. 抵擋;反抗",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23429,
+        "id": 23009,
         "en": "witness",
         "kk": "",
-        "zh": "n. 目擊者；見證人",
+        "zh": "n. 目擊者;見證 人",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23430,
+        "id": 23010,
         "en": "woeful",
         "kk": "",
-        "zh": "a. 悲哀的，悲傷的",
+        "zh": "a. 悲哀的,悲傷 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23431,
+        "id": 23011,
         "en": "wonder",
-        "kk": "",
-        "zh": "v. 納悶；想知道n 驚奇；驚異",
+        "kk": "/ˈwʌndər/",
+        "zh": "v. 納悶;想知道n. 驚奇;驚異",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23432,
+        "id": 23012,
         "en": "wo",
         "kk": "",
-        "zh": "v. 向⋯⋯求愛；招致；引起",
+        "zh": "v. 向⋯⋯求愛;招致; 引起",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23433,
+        "id": 23013,
         "en": "work",
-        "kk": "",
-        "zh": "v. 工作；勞動 n 成果；產品",
+        "kk": "/wɜːrk/",
+        "zh": "v. 工作;勞動n. 成 果;產品",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23434,
+        "id": 23014,
         "en": "workaholic",
         "kk": "",
-        "zh": "n. 工作狂；專心工作的人",
+        "zh": "n. 工作狂; 專心工作的人",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23435,
-        "en": "world",
+        "id": 23015,
+        "en": "workshop",
         "kk": "",
-        "zh": "n. 世界；地球",
+        "zh": "n. 工作坊",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23436,
+        "id": 23016,
+        "en": "world",
+        "kk": "/wɜːrld/",
+        "zh": "n. 世界;地球",
+        "unit": 13,
+        "example": "",
+        "exampleZh": ""
+    },
+    {
+        "id": 23017,
         "en": "worldwide",
         "kk": "",
-        "zh": "a. 世界範圍的；遍及全球的",
+        "zh": "a. 世界範圍 的;遍及全球的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23437,
+        "id": 23018,
         "en": "worry",
-        "kk": "",
-        "zh": "v. 擔心；擔憂",
+        "kk": "/ˈwɜːri/",
+        "zh": "v. 擔心;擔憂",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23438,
+        "id": 23019,
         "en": "would",
         "kk": "",
-        "zh": "aux. 將；要",
+        "zh": "aux. 將;要",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23439,
+        "id": 23020,
         "en": "wrist",
         "kk": "",
-        "zh": "n. 腕；腕關節X",
+        "zh": "n. 腕;腕關節",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23440,
+        "id": 23021,
         "en": "X-ray",
         "kk": "",
-        "zh": "n. X 光檢查 v 用X光線檢查Y",
+        "zh": "n. X 光檢查v. 用X 光線檢查",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23441,
+        "id": 23022,
         "en": "yacht",
         "kk": "",
-        "zh": "n. 快艇；遊艇",
+        "zh": "n. 快艇;遊艇",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23442,
+        "id": 23023,
         "en": "yard",
-        "kk": "",
-        "zh": "n. 庭院；後院",
+        "kk": "/jɑːrd/",
+        "zh": "n. 庭院;後院",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23443,
+        "id": 23024,
         "en": "yawn",
         "kk": "",
-        "zh": "n. 呵欠 v 打呵欠",
+        "zh": "n. 呵欠v. 打呵欠",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23444,
+        "id": 23025,
         "en": "year-end",
         "kk": "",
-        "zh": "n. 年終 a 年終的",
+        "zh": "n. 年終a. 年終 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23445,
+        "id": 23026,
         "en": "yearly",
         "kk": "",
-        "zh": "a. 每年的；一年一次的 ad 每年；一年一度",
+        "zh": "a. 每年的;一年一 次的ad. 每年;一年一度",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23446,
+        "id": 23027,
         "en": "yearn",
         "kk": "",
-        "zh": "v. 思念；渴望",
+        "zh": "v. 思念;渴望",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23447,
+        "id": 23028,
         "en": "yearningly",
         "kk": "",
-        "zh": "ad. 思念地；渴望地",
+        "zh": "ad. 思念地; 渴望地",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23448,
+        "id": 23029,
         "en": "yield",
         "kk": "",
-        "zh": "v. 出產；產生 n 產量；收穫量",
+        "zh": "v. 出產;產生n. 產 量;收穫量",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23449,
+        "id": 23030,
         "en": "youngster",
         "kk": "",
-        "zh": "n. 小孩；年輕人",
+        "zh": "n. 小孩;年輕 人",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23450,
+        "id": 23031,
         "en": "youth",
         "kk": "",
-        "zh": "n. 青少年時期；青年；小伙子",
+        "zh": "n. 青少年時期;青 年;小伙子",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23451,
+        "id": 23032,
         "en": "youthful",
         "kk": "",
-        "zh": "a. 年輕的；青年的Z",
+        "zh": "a. 年輕的;青年 的",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23452,
+        "id": 23033,
         "en": "zip",
         "kk": "",
-        "zh": "v. 給以速度（或力量）；使增加興趣 n 拉鍊",
+        "zh": "v. 給以速度(或力 量);使增加興趣n. 拉 鍊",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23453,
+        "id": 23034,
         "en": "zone",
-        "kk": "",
-        "zh": "n. 地帶；地區",
+        "kk": "/zoʊn/",
+        "zh": "n. 地帶;地區",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23454,
+        "id": 23035,
         "en": "zoom",
         "kk": "",
-        "zh": "v. 發出嗡嗡聲；使急遽上升",
+        "zh": "v. 發出嗡嗡聲;使 急遽上升",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23455,
+        "id": 23036,
         "en": "zoom-in",
         "kk": "",
-        "zh": "v. 用變焦距鏡頭使景物放大",
+        "zh": "v. 用變焦距鏡頭 使景物放大",
         "unit": 13,
         "example": "",
         "exampleZh": ""
     },
     {
-        "id": 23456,
-        "en": "oom-out",
+        "id": 23037,
+        "en": "zoom-out",
         "kk": "",
-        "zh": "v. 用變焦距鏡頭使景物縮小",
+        "zh": "v. 用變焦距鏡 頭使景物縮小",
         "unit": 13,
         "example": "",
         "exampleZh": ""

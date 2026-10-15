@@ -203,21 +203,28 @@
                 <h2 class="text-2xl font-semibold mb-1">今日學習計畫</h2>
                 <div class="flex justify-between items-center mb-6">
                     <p class="text-[#86868B] text-sm" id="current-date-display">虛擬時間: -</p>
-                    <select id="unit-selector" aria-label="選擇學習單元" title="選擇學習單元" class="bg-[#E5E5EA] border-0 border-[#C3D0B0] text-[#0071E3] text-sm rounded-xl focus:ring-[#0071E3] focus:border-[#0071E3] block p-2 outline-none">
-                        <option value="1">單元 1 (1-1000)</option>
-                        <option value="2">單元 2 (1001-2000)</option>
-                        <option value="3">單元 3 (2001-3000)</option>
-                        <option value="4">單元 4 (3001-4000)</option>
-                        <option value="5">單元 5 (4001-5000)</option>
-                        <option value="6">單元 6 (5001-6000)</option>
-                        <option value="7">單元 7 (6001-6546)</option>
-                        <option value="10">單元 10 (自訂字庫)</option>
-                        <option value="11">單元 11 (多益常考 1)</option>
-                        <option value="12">單元 12 (多益常考 2)</option>
-                        <option value="13">單元 13 (多益常考 3)</option>
-
-                        <option value="17">單元 17 (國中基本)</option>
-                        <option value="18">單元 18 (國中進階)</option>
+                    <select id="unit-selector" aria-label="選擇學習單元" title="選擇學習單元" class="bg-[#E5E5EA] border-0 border-[#C3D0B0] text-[#0071E3] text-sm rounded-xl focus:ring-[#0071E3] focus:border-[#0071E3] block p-2 outline-none font-medium">
+                        <optgroup label="📚 高中 7000 單字">
+                            <option value="1">單元 1 (1 - 1000)</option>
+                            <option value="2">單元 2 (1001 - 2000)</option>
+                            <option value="3">單元 3 (2001 - 3000)</option>
+                            <option value="4">單元 4 (3001 - 4000)</option>
+                            <option value="5">單元 5 (4001 - 5000)</option>
+                            <option value="6">單元 6 (5001 - 6000)</option>
+                            <option value="7">單元 7 (6001 - 6546)</option>
+                        </optgroup>
+                        <optgroup label="💼 全新制多益 3000">
+                            <option value="11">多益單元 1 (1 - 1000)</option>
+                            <option value="12">多益單元 2 (1001 - 2000)</option>
+                            <option value="13">多益單元 3 (2001 - 3037)</option>
+                        </optgroup>
+                        <optgroup label="🏫 國中基礎 2000">
+                            <option value="17">國中單元 1 (1 - 1000)</option>
+                            <option value="18">國中單元 2 (1001 - 1946)</option>
+                        </optgroup>
+                        <optgroup label="✏️ 自訂字庫">
+                            <option value="10">自訂生詞庫</option>
+                        </optgroup>
                     </select>
                 </div>
                 
@@ -831,7 +838,7 @@
         const vocabularyDB = typeof externalVocabularyDB !== 'undefined' ? externalVocabularyDB : [
             { id: 1, en: 'error', kk: '', zh: '錯誤', example: 'Please ensure words_data.js is loaded.', exampleZh: '請確保單字庫檔案已正確載入。' }
         ];
-        // 單元 11：多益常考單字 (獨立於原本字庫)
+        // 單元 11-13：多益常考單字 (獨立於原本字庫)
         if (typeof toeicWordsDB !== 'undefined') toeicWordsDB.forEach(w => vocabularyDB.push(w));
         // 單元 17-18：國中單字
         if (typeof jhWordsDB !== 'undefined') jhWordsDB.forEach(w => vocabularyDB.push(w));

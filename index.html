@@ -619,18 +619,33 @@
 
                     <!-- 播放控制器列 -->
                     <div class="flex justify-between items-center mb-4 bg-white p-3 rounded-2xl shrink-0 shadow-sm">
-                        <div class="flex items-center gap-3">
-                            <button id="btn-play-pause-listening" class="bg-[#0071E3] text-white p-3 rounded-full hover:bg-[#0077ED] transition shadow-sm" title="播放/暫停">
+                        <div class="flex items-center gap-2">
+                            <!-- 播放 / 暫停 -->
+                            <button id="btn-play-pause-listening" class="bg-[#0071E3] text-white p-2.5 rounded-full hover:bg-[#0077ED] transition shadow-sm flex items-center justify-center" title="播放/暫停">
                                 <svg id="icon-play" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                                 <svg id="icon-pause" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                             </button>
-                            <button id="btn-replay-sentence" class="text-[#0071E3] hover:text-[#0071E3] p-2 bg-[#F5F5F7] rounded-full shadow-sm" title="單句重播">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
-                                <span class="text-[10px] font-medium block -mt-1 text-center">單句</span>
+                            <!-- 單句循環 -->
+                            <button id="btn-replay-sentence" class="p-1.5 bg-[#F5F5F7] text-gray-700 hover:text-[#0071E3] rounded-2xl shadow-xs transition-all flex flex-col items-center justify-center w-11 h-11 border border-gray-200/70 cursor-pointer" title="單句循環重播（反覆循環當前句，磨耳朵專用）">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 relative" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                                    <text x="12" y="15" font-size="8" font-weight="bold" fill="currentColor" text-anchor="middle">1</text>
+                                </svg>
+                                <span id="label-replay-sentence" class="text-[9px] font-semibold block -mt-0.5 text-center leading-none">單句</span>
                             </button>
-                            <button id="btn-replay-all" class="text-[#0071E3] hover:text-[#0071E3] p-2 bg-[#F5F5F7] rounded-full shadow-sm" title="整篇重播">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.066 11.2a1 1 0 000 1.6l5.334 4A1 1 0 0019 16V8a1 1 0 00-1.6-.8l-5.333 4zM4.066 11.2a1 1 0 000 1.6l5.334 4A1 1 0 0011 16V8a1 1 0 00-1.6-.8l-5.334 4z" /></svg>
-                                <span class="text-[10px] font-medium block -mt-1 text-center">重頭</span>
+                            <!-- 全文循環 -->
+                            <button id="btn-loop-all" class="p-1.5 bg-[#F5F5F7] text-gray-700 hover:text-[#0071E3] rounded-2xl shadow-xs transition-all flex flex-col items-center justify-center w-11 h-11 border border-gray-200/70 cursor-pointer" title="全文循環重播（整篇播完自動從頭重新播放）">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                                </svg>
+                                <span id="label-loop-all" class="text-[9px] font-semibold block -mt-0.5 text-center leading-none">全文</span>
+                            </button>
+                            <!-- 重頭開始 -->
+                            <button id="btn-replay-all" class="p-1.5 bg-[#F5F5F7] text-gray-700 hover:text-[#0071E3] rounded-2xl shadow-xs transition-all flex flex-col items-center justify-center w-11 h-11 border border-gray-200/70 cursor-pointer" title="立即回到開頭播放">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.066 11.2a1 1 0 000 1.6l5.334 4A1 1 0 0019 16V8a1 1 0 00-1.6-.8l-5.333 4zM4.066 11.2a1 1 0 000 1.6l5.334 4A1 1 0 0011 16V8a1 1 0 00-1.6-.8l-5.334 4z" />
+                                </svg>
+                                <span class="text-[9px] font-semibold block -mt-0.5 text-center leading-none">重頭</span>
                             </button>
                         </div>
                         <div class="flex items-center gap-2">
@@ -3843,12 +3858,56 @@
         listeningAudioPlayer.preload = 'auto';
 
         let currentHighlightedIndex = -1;
+        let listeningLoopMode = 'none'; // 'none' | 'sentence' | 'all'
 
-        // 監聽播放進度，即時高亮對應句子並自動平滑滾動
+        function updateListeningLoopUI() {
+            const btnSentence = document.getElementById('btn-replay-sentence');
+            const btnAll = document.getElementById('btn-loop-all');
+            const labelSentence = document.getElementById('label-replay-sentence');
+            const labelAll = document.getElementById('label-loop-all');
+
+            if (btnSentence) {
+                if (listeningLoopMode === 'sentence') {
+                    btnSentence.classList.add('bg-[#0071E3]', 'text-white', 'border-transparent', 'shadow-xs');
+                    btnSentence.classList.remove('bg-[#F5F5F7]', 'text-gray-700', 'border-gray-200/70');
+                    if (labelSentence) labelSentence.innerText = '單句';
+                } else {
+                    btnSentence.classList.remove('bg-[#0071E3]', 'text-white', 'border-transparent', 'shadow-xs');
+                    btnSentence.classList.add('bg-[#F5F5F7]', 'text-gray-700', 'border-gray-200/70');
+                    if (labelSentence) labelSentence.innerText = '單句';
+                }
+            }
+
+            if (btnAll) {
+                if (listeningLoopMode === 'all') {
+                    btnAll.classList.add('bg-[#0071E3]', 'text-white', 'border-transparent', 'shadow-xs');
+                    btnAll.classList.remove('bg-[#F5F5F7]', 'text-gray-700', 'border-gray-200/70');
+                    if (labelAll) labelAll.innerText = '全文';
+                } else {
+                    btnAll.classList.remove('bg-[#0071E3]', 'text-white', 'border-transparent', 'shadow-xs');
+                    btnAll.classList.add('bg-[#F5F5F7]', 'text-gray-700', 'border-gray-200/70');
+                    if (labelAll) labelAll.innerText = '全文';
+                }
+            }
+        }
+
+        // 監聽播放進度，即時高亮對應句子並自動平滑滾動，支援單句循環
         listeningAudioPlayer.addEventListener('timeupdate', () => {
             if (!listeningSentences || listeningSentences.length === 0) return;
             const t = listeningAudioPlayer.currentTime;
             
+            // 1. 若處於「單句循環」模式：播到當前句結尾時立即循環回開頭
+            if (listeningLoopMode === 'sentence' && currentListeningIndex >= 0 && currentListeningIndex < listeningSentences.length) {
+                const s = listeningSentences[currentListeningIndex];
+                const sStart = typeof s.start === 'number' ? s.start : 0;
+                const sEnd = typeof s.end === 'number' ? s.end : 999999;
+                if (t >= (sEnd - 0.08)) {
+                    listeningAudioPlayer.currentTime = Math.max(0, sStart);
+                    return;
+                }
+            }
+
+            // 2. 正常推進計算高亮句子
             let foundIdx = -1;
             for (let i = 0; i < listeningSentences.length; i++) {
                 const s = listeningSentences[i];
@@ -3868,11 +3927,17 @@
         });
 
         listeningAudioPlayer.addEventListener('ended', () => {
-            isListeningPlaying = false;
-            updateListeningPlayBtn();
-            highlightListeningSentence(-1);
-            currentListeningIndex = 0;
-            currentHighlightedIndex = -1;
+            if (listeningLoopMode === 'all') {
+                playListeningFrom(0);
+            } else if (listeningLoopMode === 'sentence') {
+                playListeningFrom(currentListeningIndex >= 0 ? currentListeningIndex : 0);
+            } else {
+                isListeningPlaying = false;
+                updateListeningPlayBtn();
+                highlightListeningSentence(-1);
+                currentListeningIndex = 0;
+                currentHighlightedIndex = -1;
+            }
         });
 
         listeningAudioPlayer.addEventListener('pause', () => {
@@ -3967,6 +4032,8 @@
             highlightListeningSentence(-1);
             currentListeningIndex = 0;
             currentHighlightedIndex = -1;
+            listeningLoopMode = 'none';
+            updateListeningLoopUI();
         }
 
         function updateListeningPlayBtn() {
@@ -4001,15 +4068,42 @@
             }
         });
 
+        // 單句循環開關
         const btnReplaySentence = document.getElementById('btn-replay-sentence');
         if (btnReplaySentence) {
             btnReplaySentence.addEventListener('click', () => {
-                if (listeningSentences.length > 0 && currentListeningIndex >= 0) {
-                    playListeningFrom(currentListeningIndex);
+                if (listeningLoopMode === 'sentence') {
+                    listeningLoopMode = 'none';
+                } else {
+                    listeningLoopMode = 'sentence';
+                    // 開啟單句循環時，立即回到當前句開頭重新播放
+                    if (listeningSentences.length > 0) {
+                        const targetIdx = currentListeningIndex >= 0 ? currentListeningIndex : 0;
+                        playListeningFrom(targetIdx);
+                    }
                 }
+                updateListeningLoopUI();
             });
         }
         
+        // 全文循環開關
+        const btnLoopAll = document.getElementById('btn-loop-all');
+        if (btnLoopAll) {
+            btnLoopAll.addEventListener('click', () => {
+                if (listeningLoopMode === 'all') {
+                    listeningLoopMode = 'none';
+                } else {
+                    listeningLoopMode = 'all';
+                    // 若當前尚未播放，立即從當前句或開頭開始播放
+                    if (!isListeningPlaying) {
+                        playListeningFrom(currentListeningIndex >= 0 ? currentListeningIndex : 0);
+                    }
+                }
+                updateListeningLoopUI();
+            });
+        }
+
+        // 重頭開始播放
         const btnReplayAll = document.getElementById('btn-replay-all');
         if (btnReplayAll) {
             btnReplayAll.addEventListener('click', () => {

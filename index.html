@@ -1870,69 +1870,19 @@
 
             applyFront();
 
-            // 處理例句顯示 (如果有才顯示，沒有則非同步去抓)
+            // 處理例句顯示 (100% 本地寫死，零網路依賴、0毫秒極速瞬開)
             const exampleContainer = document.getElementById('example-container');
             const cardExample = document.getElementById('card-example');
             const cardExampleZh = document.getElementById('card-example-zh');
             
-            if (currentWord.example) {
+            if (currentWord.example && currentWord.example.trim()) {
                 exampleContainer.classList.remove('hidden');
                 cardExample.innerHTML = renderClickableSentence(cleanText(currentWord.example));
                 cardExampleZh.innerText = cleanText(currentWord.exampleZh) || '';
             } else {
                 exampleContainer.classList.add('hidden');
-                
-                // 動態抓取例句並翻譯
-                fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${currentWord.en}`)
-                    .then(res => res.ok ? res.json() : Promise.reject())
-                    .then(data => {
-                        // 順便補音標(如果原本沒有)
-                        if (!currentWord.kk) {
-                            let phonetic = data[0]?.phonetic || '';
-                            if (!phonetic && data[0]?.phonetics?.length > 0) {
-                                const p = data[0].phonetics.find(p => p.text);
-                                if (p) phonetic = p.text;
-                            }
-                            if (phonetic) {
-                                currentWord.kk = phonetic;
-                                document.getElementById('card-kk').innerText = phonetic;
-                                document.getElementById('card-kk-back').innerText = phonetic;
-                            }
-                        }
-
-                        // 找第一句例句
-                        let foundExample = '';
-                        for (const meaning of data[0]?.meanings || []) {
-                            for (const def of meaning.definitions || []) {
-                                if (def.example) {
-                                    foundExample = def.example;
-                                    break;
-                                }
-                            }
-                            if (foundExample) break;
-                        }
-
-                        if (foundExample) {
-                            currentWord.example = foundExample;
-                            exampleContainer.classList.remove('hidden');
-                            cardExample.innerHTML = renderClickableSentence(foundExample);
-                            cardExampleZh.innerText = '翻譯中...';
-                            
-                            // 呼叫 Google 翻譯 API 轉中文
-                            return fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-TW&dt=t&q=${encodeURIComponent(foundExample)}`);
-                        }
-                    })
-                    .then(res => res ? res.json() : null)
-                    .then(transData => {
-                        if (transData && transData[0]) {
-                            const translated = transData[0].map(x => x[0]).join('');
-                            currentWord.exampleZh = translated;
-                            cardExampleZh.innerText = translated;
-                        }
-                    })
-                    .catch(() => {
-                        // 找不到例句就不顯示
-                    });
+                cardExample.innerHTML = '';
+                cardExampleZh.innerText = '';
             }
 
             updateProgressBar();

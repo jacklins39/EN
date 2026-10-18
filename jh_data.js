@@ -1,3 +1,4 @@
+// 國中基礎 2000 單字資料庫
 const jhWordsDB = [
     {
         "id": 30001,
@@ -5,8 +6,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 有能力的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She was barely able to stand.",
+        "exampleZh": "她幾乎無法站立。"
     },
     {
         "id": 30002,
@@ -14,8 +15,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "prep. 有關",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I'm definite about this.",
+        "exampleZh": "我對此很確定。"
     },
     {
         "id": 30003,
@@ -23,8 +24,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adv. 在上方",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The cliffs towered above them.",
+        "exampleZh": "懸崖高聳在他們上方。"
     },
     {
         "id": 30004,
@@ -32,8 +33,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adv. 在國外",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She worked abroad for a year.",
+        "exampleZh": "她在國外工作了一年。"
     },
     {
         "id": 30005,
@@ -41,8 +42,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 缺席的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She was absent for nine consecutive days.",
+        "exampleZh": "她已經連續缺席九天了。"
     },
     {
         "id": 30006,
@@ -50,8 +51,8 @@ const jhWordsDB = [
         "kk": "/əkˈsept/",
         "zh": "v. 接受",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "You have to accept the inevitable.",
+        "exampleZh": "你必須接受不可避免的事情。"
     },
     {
         "id": 30007,
@@ -59,7 +60,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 意外",
         "unit": 17,
-        "example": "",
+        "example": "It was an unfortunate accident.",
         "exampleZh": ""
     },
     {
@@ -68,8 +69,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "prep. 在...對面",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Clouds drifted across the sky.",
+        "exampleZh": "雲彩飄過天際。"
     },
     {
         "id": 30009,
@@ -77,8 +78,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 行為",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Can you act as interpreter?",
+        "exampleZh": "你能擔任翻譯嗎？"
     },
     {
         "id": 30010,
@@ -86,8 +87,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 活動",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Take whatever action is needed.",
+        "exampleZh": "採取任何需要的行動。"
     },
     {
         "id": 30011,
@@ -95,8 +96,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 積極的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "They were both politically active.",
+        "exampleZh": "他們都是政治活躍分子。"
     },
     {
         "id": 30012,
@@ -104,7 +105,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 活動",
         "unit": 17,
-        "example": "",
+        "example": "Parents encourage every activity imaginable.",
         "exampleZh": ""
     },
     {
@@ -113,8 +114,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 男演員",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Grodin is a fine comic actor.",
+        "exampleZh": "格羅丁是一位優秀的喜劇演員。"
     },
     {
         "id": 30014,
@@ -122,8 +123,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 女演員",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She fancies herself (as) a serious actress.",
+        "exampleZh": "她幻想自己是一位嚴肅的演員。"
     },
     {
         "id": 30015,
@@ -131,7 +132,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adv. 確實",
         "unit": 17,
-        "example": "",
+        "example": "It's not actually raining now.",
         "exampleZh": ""
     },
     {
@@ -140,8 +141,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 增加",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Add up all the money I owe you.",
+        "exampleZh": "把我欠你的錢全部加起來。"
     },
     {
         "id": 30017,
@@ -149,8 +150,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 地址",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "They had no permanent address.",
+        "exampleZh": "他們沒有永久地址。"
     },
     {
         "id": 30018,
@@ -158,7 +159,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 欽佩",
         "unit": 17,
-        "example": "",
+        "example": "I really admire your enthusiasm.",
         "exampleZh": ""
     },
     {
@@ -167,8 +168,8 @@ const jhWordsDB = [
         "kk": "/ˈædʌlt/",
         "zh": "n. 成人",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Each ticket admits one adult.",
+        "exampleZh": "每張門票可容納一名成人。"
     },
     {
         "id": 30020,
@@ -176,7 +177,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 廣告",
         "unit": 17,
-        "example": "",
+        "example": "The advertisement is for a men's fragrance.",
         "exampleZh": ""
     },
     {
@@ -185,7 +186,7 @@ const jhWordsDB = [
         "kk": "/ədˈvaɪs/",
         "zh": "n. 勸告",
         "unit": 17,
-        "example": "",
+        "example": "He offered some useful advice.",
         "exampleZh": ""
     },
     {
@@ -194,7 +195,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 勸告",
         "unit": 17,
-        "example": "",
+        "example": "I'd advise you against doing that.",
         "exampleZh": ""
     },
     {
@@ -203,7 +204,7 @@ const jhWordsDB = [
         "kk": "/əˈfekt/",
         "zh": "v. 影響",
         "unit": 17,
-        "example": "",
+        "example": "Does television affect children's behaviour?",
         "exampleZh": ""
     },
     {
@@ -212,8 +213,8 @@ const jhWordsDB = [
         "kk": "/əˈfreɪd/",
         "zh": "adj. 害怕的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I'm afraid you guessed wrong.",
+        "exampleZh": "恐怕你猜錯了。"
     },
     {
         "id": 30025,
@@ -221,8 +222,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "conj. 在...之後",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "They arrived shortly after 5.",
+        "exampleZh": "5點多他們就到了。"
     },
     {
         "id": 30026,
@@ -230,8 +231,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 下午",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He's arriving in the afternoon.",
+        "exampleZh": "他下午到。"
     },
     {
         "id": 30027,
@@ -239,8 +240,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adv. 再度",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She smiled again, prettily.",
+        "exampleZh": "她又笑了，笑得很漂亮。"
     },
     {
         "id": 30028,
@@ -248,8 +249,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "prep. 靠著",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Rain drove against the window.",
+        "exampleZh": "雨打在窗戶上。"
     },
     {
         "id": 30029,
@@ -257,8 +258,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 年齡",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She's long past retirement age.",
+        "exampleZh": "她早已過了退休年齡。"
     },
     {
         "id": 30030,
@@ -266,8 +267,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adv. ...之前",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She was hired three years ago.",
+        "exampleZh": "她三年前被錄用。"
     },
     {
         "id": 30031,
@@ -275,8 +276,8 @@ const jhWordsDB = [
         "kk": "/əˈɡriː/",
         "zh": "v. 同意",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I don't agree with spanking.",
+        "exampleZh": "我不同意打屁股。"
     },
     {
         "id": 30032,
@@ -284,8 +285,8 @@ const jhWordsDB = [
         "kk": "/əˈhed/",
         "zh": "adv. 向前",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Already, she is thinking ahead.",
+        "exampleZh": "她已經在提前思考了。"
     },
     {
         "id": 30033,
@@ -293,8 +294,8 @@ const jhWordsDB = [
         "kk": "/eɪm/",
         "zh": "n. 目標",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "His aim was to become president.",
+        "exampleZh": "他的目標是成為總統。"
     },
     {
         "id": 30034,
@@ -302,8 +303,8 @@ const jhWordsDB = [
         "kk": "/eər/",
         "zh": "n. 空氣",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "His hands clawed the air.",
+        "exampleZh": "他的雙手在空中抓抓。"
     },
     {
         "id": 30035,
@@ -311,8 +312,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 飛機",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The airplane had dual controls.",
+        "exampleZh": "這架飛機有雙重控制。"
     },
     {
         "id": 30036,
@@ -320,8 +321,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 機場",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He was fogbound at JFK airport.",
+        "exampleZh": "他在甘迺迪機場時渾身大霧。"
     },
     {
         "id": 30037,
@@ -329,8 +330,8 @@ const jhWordsDB = [
         "kk": "/əˈlɑːrm/",
         "zh": "n. 警報器",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "An alarm bell went off.",
+        "exampleZh": "警鐘響起。"
     },
     {
         "id": 30038,
@@ -338,8 +339,8 @@ const jhWordsDB = [
         "kk": "/ˈælbəm/",
         "zh": "n. 相簿",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Their new album is dynamite.",
+        "exampleZh": "他們的新專輯是炸藥。"
     },
     {
         "id": 30039,
@@ -347,8 +348,8 @@ const jhWordsDB = [
         "kk": "/əˈlaɪk/",
         "zh": "adv. 相同地",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "My sister and I do not look alike.",
+        "exampleZh": "我和我姐姐長得不太像。"
     },
     {
         "id": 30040,
@@ -356,8 +357,8 @@ const jhWordsDB = [
         "kk": "/əˈlaɪv/",
         "zh": "adj. 活的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He's still alive, isn't he?",
+        "exampleZh": "他還活著，不是嗎？"
     },
     {
         "id": 30041,
@@ -365,8 +366,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 全部的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "They're all good players, but she's the best of all.",
+        "exampleZh": "他們都是優秀的球員，但她是其中最好的。"
     },
     {
         "id": 30042,
@@ -374,8 +375,8 @@ const jhWordsDB = [
         "kk": "/əˈlaʊ/",
         "zh": "v. 允許",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "We must allow for human error.",
+        "exampleZh": "我們必須允許人為錯誤。"
     },
     {
         "id": 30043,
@@ -383,8 +384,8 @@ const jhWordsDB = [
         "kk": "/ˈɔːlmoʊst/",
         "zh": "adv. 幾乎",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Almost overnight I was cured.",
+        "exampleZh": "幾乎一夜之間我就痊癒了。"
     },
     {
         "id": 30044,
@@ -392,8 +393,8 @@ const jhWordsDB = [
         "kk": "/əˈloʊn/",
         "zh": "adv. 獨自地",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Exercising alone can be boring.",
+        "exampleZh": "獨自運動可能會很無聊。"
     },
     {
         "id": 30045,
@@ -401,8 +402,8 @@ const jhWordsDB = [
         "kk": "/əˈlɔːŋ/",
         "zh": "prep. 沿著",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Things are going along nicely.",
+        "exampleZh": "事情進展順利。"
     },
     {
         "id": 30046,
@@ -410,8 +411,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adv. 大聲地",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She cried aloud in protest.",
+        "exampleZh": "她大聲哭泣以示抗議。"
     },
     {
         "id": 30047,
@@ -419,8 +420,8 @@ const jhWordsDB = [
         "kk": "/ɔːlˈredi/",
         "zh": "adv. 已經",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Eight o'clock had already chimed.",
+        "exampleZh": "八點鐘的鐘聲已經敲響。"
     },
     {
         "id": 30048,
@@ -428,8 +429,8 @@ const jhWordsDB = [
         "kk": "/ˈɔːlsoʊ/",
         "zh": "adv. 也",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The nation also exports beef.",
+        "exampleZh": "該國也出口牛肉。"
     },
     {
         "id": 30049,
@@ -437,8 +438,8 @@ const jhWordsDB = [
         "kk": "/ˌɔːltəˈɡeðər/",
         "zh": "adv. 總共",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I don't altogether agree with you.",
+        "exampleZh": "我不完全同意你的觀點。"
     },
     {
         "id": 30050,
@@ -446,8 +447,8 @@ const jhWordsDB = [
         "kk": "/ˈɔːlweɪz/",
         "zh": "adv. 總是",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She always looks immaculate.",
+        "exampleZh": "她看起來總是完美無缺。"
     },
     {
         "id": 30051,
@@ -455,7 +456,7 @@ const jhWordsDB = [
         "kk": "/ˈæmbjələns/",
         "zh": "n. 救護車",
         "unit": 17,
-        "example": "",
+        "example": "When the ambulance had gone, the crowd dissolved.",
         "exampleZh": ""
     },
     {
@@ -464,8 +465,8 @@ const jhWordsDB = [
         "kk": "/əˈmʌŋ/",
         "zh": "prep. 在...之間",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Bees buzzed lazily among the flowers.",
+        "exampleZh": "蜜蜂在花叢中慵懶地嗡嗡作響。"
     },
     {
         "id": 30053,
@@ -473,8 +474,8 @@ const jhWordsDB = [
         "kk": "/ˈeɪnʃənt/",
         "zh": "adj. 古代的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Lettuce was grown by the ancient Romans.",
+        "exampleZh": "生菜是古羅馬人種植的。"
     },
     {
         "id": 30054,
@@ -482,7 +483,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 天使",
         "unit": 17,
-        "example": "",
+        "example": "The angel appeared unto him in a dream.",
         "exampleZh": ""
     },
     {
@@ -491,8 +492,8 @@ const jhWordsDB = [
         "kk": "/ˈæŋɡər/",
         "zh": "n. 憤怒",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "His words ignited their anger.",
+        "exampleZh": "他的話激起了他們的憤怒。"
     },
     {
         "id": 30056,
@@ -500,8 +501,8 @@ const jhWordsDB = [
         "kk": "/ˈæŋɡri/",
         "zh": "adj. 生氣的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Roberta felt frustrated and angry.",
+        "exampleZh": "羅伯塔感到沮喪和憤怒。"
     },
     {
         "id": 30057,
@@ -509,8 +510,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 腳踝",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "John twisted his ankle badly.",
+        "exampleZh": "約翰嚴重扭傷了腳踝。"
     },
     {
         "id": 30058,
@@ -518,8 +519,8 @@ const jhWordsDB = [
         "kk": "/ˈænɪml/",
         "zh": "n. 動物",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The animal retracted into its shell.",
+        "exampleZh": "動物縮回殼裡。"
     },
     {
         "id": 30059,
@@ -527,8 +528,8 @@ const jhWordsDB = [
         "kk": "/əˈnʌðər/",
         "zh": "adj. 另外的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She was expecting another baby.",
+        "exampleZh": "她正懷著另一個孩子。"
     },
     {
         "id": 30060,
@@ -536,8 +537,8 @@ const jhWordsDB = [
         "kk": "/ˈænsər/",
         "zh": "n. 答案",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Your answer is exactly right.",
+        "exampleZh": "你的答案是完全正確的。"
     },
     {
         "id": 30061,
@@ -545,8 +546,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 螞蟻",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The ant is carrying a leaf.",
+        "exampleZh": "螞蟻拿著一片葉子。"
     },
     {
         "id": 30062,
@@ -554,8 +555,8 @@ const jhWordsDB = [
         "kk": "/ˈeni/",
         "zh": "adj. 任何的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I'd welcome any suggestions.",
+        "exampleZh": "我歡迎任何建議。"
     },
     {
         "id": 30063,
@@ -563,7 +564,7 @@ const jhWordsDB = [
         "kk": "/ˈeniwʌn/",
         "zh": "pron. 任何人",
         "unit": 17,
-        "example": "",
+        "example": "Anyone can appreciate our music.",
         "exampleZh": ""
     },
     {
@@ -572,7 +573,7 @@ const jhWordsDB = [
         "kk": "/ˈeniθɪŋ/",
         "zh": "n. 任何事物",
         "unit": 17,
-        "example": "",
+        "example": "They'll eat almost anything.",
         "exampleZh": ""
     },
     {
@@ -581,8 +582,8 @@ const jhWordsDB = [
         "kk": "/ˈeniwer/",
         "zh": "adv. 任何地方",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Did you go anywhere interesting?",
+        "exampleZh": "有沒有去什麼有趣的地方？"
     },
     {
         "id": 30066,
@@ -590,8 +591,8 @@ const jhWordsDB = [
         "kk": "/əˈpɑːrtmənt/",
         "zh": "n. 公寓",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "We rented an unfurnished apartment.",
+        "exampleZh": "我們租了一間沒有家具的公寓。"
     },
     {
         "id": 30067,
@@ -599,7 +600,7 @@ const jhWordsDB = [
         "kk": "/əˈpɑːlədʒaɪz/",
         "zh": "v. 道歉",
         "unit": 17,
-        "example": "",
+        "example": "I'm damned if I'll apologize!",
         "exampleZh": ""
     },
     {
@@ -608,8 +609,8 @@ const jhWordsDB = [
         "kk": "/əˈpɪr/",
         "zh": "v. 出現",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She will appear in court tomorrow.",
+        "exampleZh": "她將於明天出庭。"
     },
     {
         "id": 30069,
@@ -617,8 +618,8 @@ const jhWordsDB = [
         "kk": "/ˈæpl/",
         "zh": "n. 蘋果",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She crunched her apple noisily.",
+        "exampleZh": "她大聲地嚼著蘋果。"
     },
     {
         "id": 30070,
@@ -626,7 +627,7 @@ const jhWordsDB = [
         "kk": "/əˈpriːʃieɪt/",
         "zh": "v. 欣賞",
         "unit": 17,
-        "example": "",
+        "example": "Anyone can appreciate our music.",
         "exampleZh": ""
     },
     {
@@ -635,8 +636,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 四月",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "We went to Japan last April.",
+        "exampleZh": "去年四月我們去了日本。"
     },
     {
         "id": 30072,
@@ -644,8 +645,8 @@ const jhWordsDB = [
         "kk": "/ˈeriə/",
         "zh": "n. 地區",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The area is largely uninhabited.",
+        "exampleZh": "該地區大部分無人居住。"
     },
     {
         "id": 30073,
@@ -653,8 +654,8 @@ const jhWordsDB = [
         "kk": "/ˈɑːrɡjuː/",
         "zh": "v. 爭論",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I'm not disposed to argue.",
+        "exampleZh": "我不打算爭論。"
     },
     {
         "id": 30074,
@@ -662,8 +663,8 @@ const jhWordsDB = [
         "kk": "/ɑːrm/",
         "zh": "n. 手臂",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He squeezed her arm reassuringly.",
+        "exampleZh": "他安慰地握住她的手臂。"
     },
     {
         "id": 30075,
@@ -671,8 +672,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 扶手椅",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I sank down into a voluminous armchair.",
+        "exampleZh": "我坐進一張寬大的扶手椅。"
     },
     {
         "id": 30076,
@@ -680,8 +681,8 @@ const jhWordsDB = [
         "kk": "/ˈɑːrmi/",
         "zh": "n. 軍隊",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "They were old army comrades.",
+        "exampleZh": "他們是老軍隊戰友。"
     },
     {
         "id": 30077,
@@ -689,8 +690,8 @@ const jhWordsDB = [
         "kk": "/əˈraʊnd/",
         "zh": "adv. 在附近",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He arrived around five o'clock.",
+        "exampleZh": "他大約五點左右到達。"
     },
     {
         "id": 30078,
@@ -698,8 +699,8 @@ const jhWordsDB = [
         "kk": "/əˈreɪndʒ/",
         "zh": "v. 安排",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Can I arrange an appointment for Monday?",
+        "exampleZh": "我可以安排週一的預約嗎？"
     },
     {
         "id": 30079,
@@ -707,8 +708,8 @@ const jhWordsDB = [
         "kk": "/əˈraɪv/",
         "zh": "v. 到達",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "We should arrive before dark.",
+        "exampleZh": "我們應該在天黑之前到達。"
     },
     {
         "id": 30080,
@@ -716,8 +717,8 @@ const jhWordsDB = [
         "kk": "/ɑːrt/",
         "zh": "n. 藝術",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Can we call television art?",
+        "exampleZh": "我們可以稱之為電視藝術嗎？"
     },
     {
         "id": 30081,
@@ -725,8 +726,8 @@ const jhWordsDB = [
         "kk": "/ˈɑːrtɪst/",
         "zh": "n. 藝術家",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He is little known as an artist.",
+        "exampleZh": "作為一名藝術家，他鮮為人知。"
     },
     {
         "id": 30082,
@@ -734,8 +735,8 @@ const jhWordsDB = [
         "kk": "/æz/",
         "zh": "prep. 像,如同",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "You're as tall as your father.",
+        "exampleZh": "你和你父親一樣高。"
     },
     {
         "id": 30083,
@@ -743,8 +744,8 @@ const jhWordsDB = [
         "kk": "/æsk/",
         "zh": "v. 詢問",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Did you ask the price?",
+        "exampleZh": "你問過價格嗎？"
     },
     {
         "id": 30084,
@@ -752,8 +753,8 @@ const jhWordsDB = [
         "kk": "/əˈsliːp/",
         "zh": "adj. 睡著的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He had fallen asleep on the sofa.",
+        "exampleZh": "他已經在沙發上睡著了。"
     },
     {
         "id": 30085,
@@ -761,8 +762,8 @@ const jhWordsDB = [
         "kk": "/əˈsɪstənt/",
         "zh": "n. 助手",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The assistant pursed her lips.",
+        "exampleZh": "助理抿了抿唇。"
     },
     {
         "id": 30086,
@@ -770,7 +771,7 @@ const jhWordsDB = [
         "kk": "/əˈsuːm/",
         "zh": "v. 假設",
         "unit": 17,
-        "example": "",
+        "example": "Assume A knows B is guilty.",
         "exampleZh": ""
     },
     {
@@ -779,8 +780,8 @@ const jhWordsDB = [
         "kk": "/əˈtæk/",
         "zh": "n. 攻擊",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The attack on Charles was unjust.",
+        "exampleZh": "對查爾斯的攻擊是不公正的。"
     },
     {
         "id": 30088,
@@ -788,8 +789,8 @@ const jhWordsDB = [
         "kk": "/əˈtenʃn/",
         "zh": "n. 注意力",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "My shoes caught his attention.",
+        "exampleZh": "我的鞋子引起了他的注意。"
     },
     {
         "id": 30089,
@@ -797,8 +798,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 八月",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Grouse shooting begins in August.",
+        "exampleZh": "松雞射擊從八月開始。"
     },
     {
         "id": 30090,
@@ -806,8 +807,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 姑媽",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Aunt Emilie darned old socks.",
+        "exampleZh": "艾蜜莉阿姨補舊襪子。"
     },
     {
         "id": 30091,
@@ -815,8 +816,8 @@ const jhWordsDB = [
         "kk": "/ˈɔːtəm/",
         "zh": "n. 秋天",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Autumn is my favourite season.",
+        "exampleZh": "秋天是我最喜歡的季節。"
     },
     {
         "id": 30092,
@@ -824,7 +825,7 @@ const jhWordsDB = [
         "kk": "/əˈveɪləbl/",
         "zh": "adj. 可獲得的",
         "unit": 17,
-        "example": "",
+        "example": "Ample free parking is available.",
         "exampleZh": ""
     },
     {
@@ -833,8 +834,8 @@ const jhWordsDB = [
         "kk": "/əˈvɔɪd/",
         "zh": "v. 避免",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "We have tried to avoid any moralizing.",
+        "exampleZh": "我們盡力避免任何說教。"
     },
     {
         "id": 30094,
@@ -842,8 +843,8 @@ const jhWordsDB = [
         "kk": "/əˈweɪ/",
         "zh": "adv. 不在",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She walked quickly away.",
+        "exampleZh": "她快步走開。"
     },
     {
         "id": 30095,
@@ -851,8 +852,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 嬰兒",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She dreamed about her baby.",
+        "exampleZh": "她夢見了她的孩子。"
     },
     {
         "id": 30096,
@@ -860,8 +861,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "sitter. n. 保母",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She dreamed about her baby.",
+        "exampleZh": "她夢見了她的孩子。"
     },
     {
         "id": 30097,
@@ -869,8 +870,8 @@ const jhWordsDB = [
         "kk": "/bæk/",
         "zh": "n. 背部",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Let's head back home.",
+        "exampleZh": "我們回家吧。"
     },
     {
         "id": 30098,
@@ -887,8 +888,8 @@ const jhWordsDB = [
         "kk": "/bæd/",
         "zh": "adj. 壞的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Divorce is bad for children.",
+        "exampleZh": "離婚對孩子不好。"
     },
     {
         "id": 30100,
@@ -896,7 +897,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 羽毛球",
         "unit": 17,
-        "example": "",
+        "example": "While playing badminton, I ruptured my Achilles tendon.",
         "exampleZh": ""
     },
     {
@@ -905,8 +906,8 @@ const jhWordsDB = [
         "kk": "/bæɡ/",
         "zh": "n. 袋子",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Someone's left their bag behind.",
+        "exampleZh": "有人把包包落在後面了。"
     },
     {
         "id": 30102,
@@ -914,8 +915,8 @@ const jhWordsDB = [
         "kk": "/beɪk/",
         "zh": "v. 烘烤",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Bake until the crust is golden.",
+        "exampleZh": "烘烤至外皮呈金黃色。"
     },
     {
         "id": 30103,
@@ -923,8 +924,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 麵包店",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Start her own bakery.",
+        "exampleZh": "開辦自己的麵包店。"
     },
     {
         "id": 30104,
@@ -932,8 +933,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 陽臺",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She drew me onto the balcony.",
+        "exampleZh": "她把我拉到陽台。"
     },
     {
         "id": 30105,
@@ -941,8 +942,8 @@ const jhWordsDB = [
         "kk": "/bɔːl/",
         "zh": "n. 球",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The ball rolled into the net.",
+        "exampleZh": "球滾入網內。"
     },
     {
         "id": 30106,
@@ -950,8 +951,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 氣球",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "A balloon suddenly went bang.",
+        "exampleZh": "一個氣球突然爆炸了。"
     },
     {
         "id": 30107,
@@ -959,8 +960,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 香蕉",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He slipped on a banana skin.",
+        "exampleZh": "他踩到香蕉皮滑倒了。"
     },
     {
         "id": 30108,
@@ -968,8 +969,8 @@ const jhWordsDB = [
         "kk": "/bænd/",
         "zh": "n. 樂團",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The singer re-formed his band.",
+        "exampleZh": "這位歌手重組了他的樂隊。"
     },
     {
         "id": 30109,
@@ -977,8 +978,8 @@ const jhWordsDB = [
         "kk": "/bæŋk/",
         "zh": "n. 銀行",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The bank wired her the money.",
+        "exampleZh": "銀行匯了錢給她。"
     },
     {
         "id": 30110,
@@ -986,8 +987,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 火烤",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Let's have a barbecue!",
+        "exampleZh": "我們去吃燒烤吧！"
     },
     {
         "id": 30111,
@@ -995,8 +996,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 理髮師",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I gave the barber a tip.",
+        "exampleZh": "我給了理髮師小費。"
     },
     {
         "id": 30112,
@@ -1004,8 +1005,8 @@ const jhWordsDB = [
         "kk": "/bɑːrk/",
         "zh": "v. 吠叫",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Deer had stripped the tree of its bark.",
+        "exampleZh": "鹿把樹的樹皮剝掉了。"
     },
     {
         "id": 30113,
@@ -1013,8 +1014,8 @@ const jhWordsDB = [
         "kk": "/beɪs/",
         "zh": "n. 基礎",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He acted from base motives.",
+        "exampleZh": "他的行為動機卑鄙。"
     },
     {
         "id": 30114,
@@ -1022,8 +1023,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 棒球",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He often wore a baseball cap.",
+        "exampleZh": "他經常戴著棒球帽。"
     },
     {
         "id": 30115,
@@ -1031,8 +1032,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 地下室",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Kitchen goods are sold in the basement.",
+        "exampleZh": "廚房用品在地下室出售。"
     },
     {
         "id": 30116,
@@ -1040,8 +1041,8 @@ const jhWordsDB = [
         "kk": "/ˈbeɪsɪk/",
         "zh": "adj. 基礎的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Basic foodstuffs were in short supply.",
+        "exampleZh": "基本食品供應短缺。"
     },
     {
         "id": 30117,
@@ -1049,8 +1050,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 籃子",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "There was a complimentary basket of fruit in our room.",
+        "exampleZh": "我們的房間裡有一籃免費水果。"
     },
     {
         "id": 30118,
@@ -1058,8 +1059,8 @@ const jhWordsDB = [
         "kk": "/ˈbæskɪtbɔːl/",
         "zh": "n. 籃球",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He coaches basketball and soccer.",
+        "exampleZh": "他擔任籃球和足球教練。"
     },
     {
         "id": 30119,
@@ -1067,8 +1068,8 @@ const jhWordsDB = [
         "kk": "/bæt/",
         "zh": "n. 蝙蝠",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I bolted the door the instant I saw the bat.",
+        "exampleZh": "我一看到蝙蝠就鎖上門了。"
     },
     {
         "id": 30120,
@@ -1076,8 +1077,8 @@ const jhWordsDB = [
         "kk": "/bæθ/",
         "zh": "n. 沐浴",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The baby loves bath time.",
+        "exampleZh": "寶寶很喜歡洗澡。"
     },
     {
         "id": 30121,
@@ -1085,8 +1086,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 沐浴",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Slowly, people began to bathe more frequently.",
+        "exampleZh": "慢慢地，人們開始更頻繁地洗澡。"
     },
     {
         "id": 30122,
@@ -1094,8 +1095,8 @@ const jhWordsDB = [
         "kk": "/ˈbæθruːm/",
         "zh": "n. 浴室",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The bathroom floor was awash.",
+        "exampleZh": "浴室地板被水淹沒了。"
     },
     {
         "id": 30123,
@@ -1103,8 +1104,8 @@ const jhWordsDB = [
         "kk": "/biːtʃ/",
         "zh": "n. 沙灘",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "We cantered along the beach.",
+        "exampleZh": "我們沿著海灘慢跑。"
     },
     {
         "id": 30124,
@@ -1112,8 +1113,8 @@ const jhWordsDB = [
         "kk": "/biːn/",
         "zh": "n. 豆子",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "This is my favourite bean, and they are long bean.",
+        "exampleZh": "這是我最喜歡的豆子，它們是長豆子。"
     },
     {
         "id": 30125,
@@ -1121,8 +1122,8 @@ const jhWordsDB = [
         "kk": "/ber/",
         "zh": "n. 熊",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "'Bear' and 'bare' are homophonous.",
+        "exampleZh": "「熊」與「裸」同音。"
     },
     {
         "id": 30126,
@@ -1130,8 +1131,8 @@ const jhWordsDB = [
         "kk": "/bɪrd/",
         "zh": "n. 鬍鬚",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He's had his beard shaved off.",
+        "exampleZh": "他的鬍子已經被剃掉了。"
     },
     {
         "id": 30127,
@@ -1139,8 +1140,8 @@ const jhWordsDB = [
         "kk": "/biːt/",
         "zh": "v. 拍打",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "You can't beat Italian shoes.",
+        "exampleZh": "你無法打敗義大利鞋。"
     },
     {
         "id": 30128,
@@ -1148,8 +1149,8 @@ const jhWordsDB = [
         "kk": "/ˈbjuːtɪfl/",
         "zh": "adj. 美麗的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "It was a beautiful morning.",
+        "exampleZh": "這是一個美麗的早晨。"
     },
     {
         "id": 30129,
@@ -1157,8 +1158,8 @@ const jhWordsDB = [
         "kk": "/ˈbjuːti/",
         "zh": "n. 美貌",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Her beauty appeared ageless.",
+        "exampleZh": "她的美麗顯得永恆。"
     },
     {
         "id": 30130,
@@ -1166,8 +1167,8 @@ const jhWordsDB = [
         "kk": "/bɪˈkɔːz/",
         "zh": "conj. 因為",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "They are here because of us.",
+        "exampleZh": "他們因為我們而來到這裡。"
     },
     {
         "id": 30131,
@@ -1175,8 +1176,8 @@ const jhWordsDB = [
         "kk": "/bɪˈkʌm/",
         "zh": "v. 成為",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Doctors become inured to death.",
+        "exampleZh": "醫生已經見怪不怪了。"
     },
     {
         "id": 30132,
@@ -1184,8 +1185,8 @@ const jhWordsDB = [
         "kk": "/bed/",
         "zh": "n. 床",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "It's such a comfortable bed.",
+        "exampleZh": "這是一張多麼舒服的床。"
     },
     {
         "id": 30133,
@@ -1193,8 +1194,8 @@ const jhWordsDB = [
         "kk": "/ˈbedruːm/",
         "zh": "n. 臥室",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The main bedroom is enormous.",
+        "exampleZh": "主臥室很大。"
     },
     {
         "id": 30134,
@@ -1202,8 +1203,8 @@ const jhWordsDB = [
         "kk": "/biː/",
         "zh": "n. 蜜蜂",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The flower opens to reveal a bee.",
+        "exampleZh": "花開了，露出一隻蜜蜂。"
     },
     {
         "id": 30135,
@@ -1211,8 +1212,8 @@ const jhWordsDB = [
         "kk": "/biːf/",
         "zh": "n. 牛肉",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The nation also exports beef.",
+        "exampleZh": "該國也出口牛肉。"
     },
     {
         "id": 30136,
@@ -1220,8 +1221,8 @@ const jhWordsDB = [
         "kk": "/bɪr/",
         "zh": "n. 啤酒",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Are you a beer drinker?",
+        "exampleZh": "你是啤酒愛好者嗎？"
     },
     {
         "id": 30137,
@@ -1229,8 +1230,8 @@ const jhWordsDB = [
         "kk": "/bɪˈfɔːr/",
         "zh": "conj. 在...之前",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "We should arrive before dark.",
+        "exampleZh": "我們應該在天黑之前到達。"
     },
     {
         "id": 30138,
@@ -1238,8 +1239,8 @@ const jhWordsDB = [
         "kk": "/bɪˈɡɪn/",
         "zh": "v. 開始",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Their trial will shortly begin.",
+        "exampleZh": "他們的審判即將開始。"
     },
     {
         "id": 30139,
@@ -1247,8 +1248,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 初學者",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The white belt signifies that he's an absolute beginner.",
+        "exampleZh": "白帶錶示他是個絕對的初學者。"
     },
     {
         "id": 30140,
@@ -1256,7 +1257,7 @@ const jhWordsDB = [
         "kk": "/bɪˈɡɪnɪŋ/",
         "zh": "n. 開始",
         "unit": 17,
-        "example": "",
+        "example": "The snow was beginning to melt.",
         "exampleZh": ""
     },
     {
@@ -1265,7 +1266,7 @@ const jhWordsDB = [
         "kk": "/bɪˈheɪv/",
         "zh": "v. 表現",
         "unit": 17,
-        "example": "",
+        "example": "Will you kids just behave!",
         "exampleZh": ""
     },
     {
@@ -1274,8 +1275,8 @@ const jhWordsDB = [
         "kk": "/bɪˈhaɪnd/",
         "zh": "adv. 在之後",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She heard footsteps behind her.",
+        "exampleZh": "她聽到身後有腳步聲。"
     },
     {
         "id": 30143,
@@ -1283,8 +1284,8 @@ const jhWordsDB = [
         "kk": "/bɪˈliːv/",
         "zh": "v. 相信",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "They don't believe in marriage.",
+        "exampleZh": "他們不相信婚姻。"
     },
     {
         "id": 30144,
@@ -1292,8 +1293,8 @@ const jhWordsDB = [
         "kk": "/bel/",
         "zh": "n. 鈴",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The shop bell jangled loudly.",
+        "exampleZh": "商店的門鈴叮噹作響。"
     },
     {
         "id": 30145,
@@ -1301,8 +1302,8 @@ const jhWordsDB = [
         "kk": "/bɪˈlɔːŋ/",
         "zh": "v. 屬於",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The islands belong to Spain.",
+        "exampleZh": "這些島嶼屬於西班牙。"
     },
     {
         "id": 30146,
@@ -1310,8 +1311,8 @@ const jhWordsDB = [
         "kk": "/bɪˈloʊ/",
         "zh": "adv. 在下面",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "It's 15 degrees below freezing.",
+        "exampleZh": "氣溫低於冰點 15 度。"
     },
     {
         "id": 30147,
@@ -1319,8 +1320,8 @@ const jhWordsDB = [
         "kk": "/belt/",
         "zh": "n. 皮帶",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "We live in the commuter belt.",
+        "exampleZh": "我們生活在通勤帶。"
     },
     {
         "id": 30148,
@@ -1328,8 +1329,8 @@ const jhWordsDB = [
         "kk": "/bentʃ/",
         "zh": "n. 長凳",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "We sat primly at either end of a long bench.",
+        "exampleZh": "我們一本正經地坐在長凳的兩端。"
     },
     {
         "id": 30149,
@@ -1337,8 +1338,8 @@ const jhWordsDB = [
         "kk": "/bɪˈsaɪdz/",
         "zh": "adv. 此外",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I've got no family besides my parents.",
+        "exampleZh": "除了父母之外我沒有家人。"
     },
     {
         "id": 30150,
@@ -1346,8 +1347,8 @@ const jhWordsDB = [
         "kk": "/bɪˈtwiːn/",
         "zh": "prep. 在...之間",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He toggled between the two windows.",
+        "exampleZh": "他在兩個視窗之間切換。"
     },
     {
         "id": 30151,
@@ -1355,8 +1356,8 @@ const jhWordsDB = [
         "kk": "/bɪˈjɑːnd/",
         "zh": "prep. 超出",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Her honesty is beyond question.",
+        "exampleZh": "她的誠實是毋庸置疑的。"
     },
     {
         "id": 30152,
@@ -1364,8 +1365,8 @@ const jhWordsDB = [
         "kk": "/ˈbaɪsɪkl/",
         "zh": "n. 腳踏車",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Oscar had a new bicycle.",
+        "exampleZh": "奧斯卡有一輛新自行車。"
     },
     {
         "id": 30153,
@@ -1373,8 +1374,8 @@ const jhWordsDB = [
         "kk": "/bɪɡ/",
         "zh": "adj. 大的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "This shirt isn't big enough.",
+        "exampleZh": "這件襯衫不夠大。"
     },
     {
         "id": 30154,
@@ -1382,8 +1383,8 @@ const jhWordsDB = [
         "kk": "/bɪl/",
         "zh": "n. 帳單;鈔票",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Your bill includes line rental.",
+        "exampleZh": "您的帳單包括線路租金。"
     },
     {
         "id": 30155,
@@ -1391,7 +1392,7 @@ const jhWordsDB = [
         "kk": "/baɪˈɑːlədʒi/",
         "zh": "n. 生物學",
         "unit": 17,
-        "example": "",
+        "example": "Biology is my favourite subject.",
         "exampleZh": ""
     },
     {
@@ -1400,8 +1401,8 @@ const jhWordsDB = [
         "kk": "/bɜːrd/",
         "zh": "n. 鳥",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The bird continued to warble.",
+        "exampleZh": "鳥兒繼續鳴叫。"
     },
     {
         "id": 30157,
@@ -1409,7 +1410,7 @@ const jhWordsDB = [
         "kk": "/ˈbɜːrθdeɪ/",
         "zh": "n. 生日",
         "unit": 17,
-        "example": "",
+        "example": "We threw a huge birthday party.",
         "exampleZh": ""
     },
     {
@@ -1418,8 +1419,8 @@ const jhWordsDB = [
         "kk": "/baɪt/",
         "zh": "v. 咬",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Most European spiders don't bite.",
+        "exampleZh": "大多數歐洲蜘蛛不咬人。"
     },
     {
         "id": 30159,
@@ -1427,8 +1428,8 @@ const jhWordsDB = [
         "kk": "/ˈbɪtər/",
         "zh": "adj. 痛苦的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The leaves taste rather bitter.",
+        "exampleZh": "葉子的味道比較苦。"
     },
     {
         "id": 30160,
@@ -1436,8 +1437,8 @@ const jhWordsDB = [
         "kk": "/blæk/",
         "zh": "adj. 黑的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The exhaust streamed black smoke.",
+        "exampleZh": "排氣管冒著黑煙。"
     },
     {
         "id": 30161,
@@ -1445,8 +1446,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 黑板",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The menu was on a blackboard.",
+        "exampleZh": "菜單在黑板上。"
     },
     {
         "id": 30162,
@@ -1454,7 +1455,7 @@ const jhWordsDB = [
         "kk": "/bleɪm/",
         "zh": "v. 責怪",
         "unit": 17,
-        "example": "",
+        "example": "No blame attaches to you.",
         "exampleZh": ""
     },
     {
@@ -1463,8 +1464,8 @@ const jhWordsDB = [
         "kk": "/blæŋk/",
         "zh": "adj. 空白的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Do we have a blank video ?",
+        "exampleZh": "我們有空白影片嗎？"
     },
     {
         "id": 30164,
@@ -1472,7 +1473,7 @@ const jhWordsDB = [
         "kk": "/ˈblæŋkɪt/",
         "zh": "n. 毯子",
         "unit": 17,
-        "example": "",
+        "example": "I wrapped a blanket around the baby.",
         "exampleZh": ""
     },
     {
@@ -1481,8 +1482,8 @@ const jhWordsDB = [
         "kk": "/blaɪnd/",
         "zh": "adj. 失明的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Doctors think he will go blind.",
+        "exampleZh": "醫生認為他會失明。"
     },
     {
         "id": 30166,
@@ -1490,8 +1491,8 @@ const jhWordsDB = [
         "kk": "/blɑːk/",
         "zh": "n. 街區",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Block draughts around doors and windows.",
+        "exampleZh": "阻擋門窗周圍的氣流。"
     },
     {
         "id": 30167,
@@ -1499,8 +1500,8 @@ const jhWordsDB = [
         "kk": "/blʌd/",
         "zh": "n. 血",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The wound was oozing blood.",
+        "exampleZh": "傷口正在滲血。"
     },
     {
         "id": 30168,
@@ -1508,8 +1509,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 血腥的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She did bloody well to win that race.",
+        "exampleZh": "她表現出色，贏得了那場比賽。"
     },
     {
         "id": 30169,
@@ -1517,8 +1518,8 @@ const jhWordsDB = [
         "kk": "/bloʊ/",
         "zh": "v. 吹",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Blow! I completely forgot it.",
+        "exampleZh": "吹！我完全忘記了。"
     },
     {
         "id": 30170,
@@ -1526,8 +1527,8 @@ const jhWordsDB = [
         "kk": "/bluː/",
         "zh": "adj. 藍的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "His eyes were piercingly blue.",
+        "exampleZh": "他的眼睛是銳利的藍色。"
     },
     {
         "id": 30171,
@@ -1535,8 +1536,8 @@ const jhWordsDB = [
         "kk": "/boʊt/",
         "zh": "n. 船",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The boat chugged slowly along.",
+        "exampleZh": "小船緩緩前進。"
     },
     {
         "id": 30172,
@@ -1544,8 +1545,8 @@ const jhWordsDB = [
         "kk": "/ˈbɑːdi/",
         "zh": "n. 身體",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Exercise tones up your body.",
+        "exampleZh": "運動可以強身健體。"
     },
     {
         "id": 30173,
@@ -1553,8 +1554,8 @@ const jhWordsDB = [
         "kk": "/bɔɪl/",
         "zh": "v. 燒開",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She put some potatoes on to boil.",
+        "exampleZh": "她放了一些馬鈴薯來煮。"
     },
     {
         "id": 30174,
@@ -1562,8 +1563,8 @@ const jhWordsDB = [
         "kk": "/bɑːm/",
         "zh": "n. 炸彈",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The bomb has been safely disposed of.",
+        "exampleZh": "炸彈已被安全處置。"
     },
     {
         "id": 30175,
@@ -1571,8 +1572,8 @@ const jhWordsDB = [
         "kk": "/boʊn/",
         "zh": "n. 骨頭",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The dog was gnawing a bone.",
+        "exampleZh": "那隻狗正在啃骨頭。"
     },
     {
         "id": 30176,
@@ -1580,8 +1581,8 @@ const jhWordsDB = [
         "kk": "/bʊk/",
         "zh": "n. 書",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Shoot! I've forgotten my book!",
+        "exampleZh": "射擊！我忘了帶書！"
     },
     {
         "id": 30177,
@@ -1589,8 +1590,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 書櫥",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The bookcase is screwed to the wall.",
+        "exampleZh": "書櫃是用螺絲固定在牆上的。"
     },
     {
         "id": 30178,
@@ -1598,7 +1599,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 厭倦的",
         "unit": 17,
-        "example": "",
+        "example": "The boys were getting bored.",
         "exampleZh": ""
     },
     {
@@ -1607,8 +1608,8 @@ const jhWordsDB = [
         "kk": "/bɔːrn/",
         "zh": "adj. 天生的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Some people are born brainy.",
+        "exampleZh": "有些人天生聰明。"
     },
     {
         "id": 30180,
@@ -1616,8 +1617,8 @@ const jhWordsDB = [
         "kk": "/ˈbɑːroʊ/",
         "zh": "v. 借",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Can I borrow your calculator?",
+        "exampleZh": "我可以藉你的計算機嗎？"
     },
     {
         "id": 30181,
@@ -1625,8 +1626,8 @@ const jhWordsDB = [
         "kk": "/bɔːs/",
         "zh": "n. 老闆",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "His boss has a foul temper.",
+        "exampleZh": "他的老闆脾氣暴躁。"
     },
     {
         "id": 30182,
@@ -1634,8 +1635,8 @@ const jhWordsDB = [
         "kk": "/boʊθ/",
         "zh": "pron. 兩者",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Both partners shared childcare.",
+        "exampleZh": "雙方共同照顧孩子。"
     },
     {
         "id": 30183,
@@ -1643,8 +1644,8 @@ const jhWordsDB = [
         "kk": "/ˈbɑːðər/",
         "zh": "v. 使煩惱",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I hope I haven't been a bother.",
+        "exampleZh": "我希望我沒有成為麻煩。"
     },
     {
         "id": 30184,
@@ -1652,8 +1653,8 @@ const jhWordsDB = [
         "kk": "/ˈbɑːtl/",
         "zh": "n. 瓶子",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Shall I open another bottle?",
+        "exampleZh": "我要再開一瓶嗎？"
     },
     {
         "id": 30185,
@@ -1661,8 +1662,8 @@ const jhWordsDB = [
         "kk": "/ˈbɑːtəm/",
         "zh": "n. 底部",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The marriage had reached rock bottom.",
+        "exampleZh": "婚姻已經跌入谷底。"
     },
     {
         "id": 30186,
@@ -1670,8 +1671,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 弓",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He was armed with a bow and arrow.",
+        "exampleZh": "他手持弓箭。"
     },
     {
         "id": 30187,
@@ -1679,8 +1680,8 @@ const jhWordsDB = [
         "kk": "/boʊl/",
         "zh": "n. 碗",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She served him a bowl of beef stew.",
+        "exampleZh": "她給他端了一碗燉牛肉。"
     },
     {
         "id": 30188,
@@ -1688,8 +1689,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 保齡球",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "They go in for tennis and bowling.",
+        "exampleZh": "他們喜歡打網球和保齡球。"
     },
     {
         "id": 30189,
@@ -1697,8 +1698,8 @@ const jhWordsDB = [
         "kk": "/bɑːks/",
         "zh": "n. 箱子",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She was holding a large box.",
+        "exampleZh": "她手裡拿著一個大盒子。"
     },
     {
         "id": 30190,
@@ -1706,8 +1707,8 @@ const jhWordsDB = [
         "kk": "/bɔɪ/",
         "zh": "n. 男孩",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The boy has great potential.",
+        "exampleZh": "這個男孩有很大的潛力。"
     },
     {
         "id": 30191,
@@ -1715,8 +1716,8 @@ const jhWordsDB = [
         "kk": "/breɪn/",
         "zh": "n. 腦",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Alcohol acts quickly on the brain.",
+        "exampleZh": "酒精對大腦的作用很快。"
     },
     {
         "id": 30192,
@@ -1724,8 +1725,8 @@ const jhWordsDB = [
         "kk": "/bræntʃ/",
         "zh": "n. 分店",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He chopped a branch off the tree.",
+        "exampleZh": "他從樹上砍下一根樹枝。"
     },
     {
         "id": 30193,
@@ -1733,8 +1734,8 @@ const jhWordsDB = [
         "kk": "/brænd/",
         "zh": "n. 品牌",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Choose whichever brand you prefer.",
+        "exampleZh": "選擇您喜歡的品牌。"
     },
     {
         "id": 30194,
@@ -1742,8 +1743,8 @@ const jhWordsDB = [
         "kk": "/breɪv/",
         "zh": "adj. 勇敢的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Charles was brave and remarkably good-humoured.",
+        "exampleZh": "查爾斯很勇敢，而且非常幽默。"
     },
     {
         "id": 30195,
@@ -1751,8 +1752,8 @@ const jhWordsDB = [
         "kk": "/bred/",
         "zh": "n. 麵包",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The bread had a spongy texture.",
+        "exampleZh": "麵包質地鬆軟。"
     },
     {
         "id": 30196,
@@ -1760,8 +1761,8 @@ const jhWordsDB = [
         "kk": "/breɪk/",
         "zh": "v. 弄壞",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "You need a break from routine.",
+        "exampleZh": "你需要從日常生活中休息一下。"
     },
     {
         "id": 30197,
@@ -1769,8 +1770,8 @@ const jhWordsDB = [
         "kk": "/ˈbrekfəst/",
         "zh": "n. 早餐",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Your breakfast is coming soon.",
+        "exampleZh": "你的早餐很快就來了。"
     },
     {
         "id": 30198,
@@ -1778,8 +1779,8 @@ const jhWordsDB = [
         "kk": "/brɪk/",
         "zh": "n. 磚塊",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The school is built of brick.",
+        "exampleZh": "學校是磚砌的。"
     },
     {
         "id": 30199,
@@ -1787,8 +1788,8 @@ const jhWordsDB = [
         "kk": "/brɪdʒ/",
         "zh": "n. 橋",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "When was the bridge constructed?",
+        "exampleZh": "這座橋是什麼時候蓋的？"
     },
     {
         "id": 30200,
@@ -1796,8 +1797,8 @@ const jhWordsDB = [
         "kk": "/briːf/",
         "zh": "adj. 短暫的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He let out a brief cackle.",
+        "exampleZh": "他發出短促的咯咯笑聲。"
     },
     {
         "id": 30201,
@@ -1805,8 +1806,8 @@ const jhWordsDB = [
         "kk": "/braɪt/",
         "zh": "adj. 明亮的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Bright colours are his signature.",
+        "exampleZh": "明亮的色彩是他的標誌。"
     },
     {
         "id": 30202,
@@ -1814,8 +1815,8 @@ const jhWordsDB = [
         "kk": "/brɪŋ/",
         "zh": "v. 帶來",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "All you need bring are sheets.",
+        "exampleZh": "您只需攜帶床單即可。"
     },
     {
         "id": 30203,
@@ -1823,8 +1824,8 @@ const jhWordsDB = [
         "kk": "/brɔːd/",
         "zh": "adj. 寬闊的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He is tall, broad and muscular.",
+        "exampleZh": "他身材高大、寬闊、肌肉發達。"
     },
     {
         "id": 30204,
@@ -1832,8 +1833,8 @@ const jhWordsDB = [
         "kk": "/ˈbrɔːdkæst/",
         "zh": "v. 廣播",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The programme was broadcast nationally.",
+        "exampleZh": "該節目在全國播出。"
     },
     {
         "id": 30205,
@@ -1841,8 +1842,8 @@ const jhWordsDB = [
         "kk": "/ˈbrʌðər/",
         "zh": "n. 兄弟",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She's smarter than her brother.",
+        "exampleZh": "她比哥哥聰明。"
     },
     {
         "id": 30206,
@@ -1850,8 +1851,8 @@ const jhWordsDB = [
         "kk": "/braʊn/",
         "zh": "adj. 棕色的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He removed his brown slip-ons.",
+        "exampleZh": "他脫下了棕色便鞋。"
     },
     {
         "id": 30207,
@@ -1859,7 +1860,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 早午餐",
         "unit": 17,
-        "example": "",
+        "example": "What time is brunch?",
         "exampleZh": ""
     },
     {
@@ -1868,7 +1869,7 @@ const jhWordsDB = [
         "kk": "/brʌʃ/",
         "zh": "n. 刷子",
         "unit": 17,
-        "example": "",
+        "example": "Brush beaten egg over the pastry.",
         "exampleZh": ""
     },
     {
@@ -1877,7 +1878,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 桶子",
         "unit": 17,
-        "example": "",
+        "example": "She ran hot water into the bucket.",
         "exampleZh": ""
     },
     {
@@ -1886,7 +1887,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 自助餐",
         "unit": 17,
-        "example": "",
+        "example": "Dinner will be a cold buffet, not a sit-down meal.",
         "exampleZh": ""
     },
     {
@@ -1895,8 +1896,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 昆蟲",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I only did it to bug my parents.",
+        "exampleZh": "我這樣做只是為了打擾我的父母。"
     },
     {
         "id": 30212,
@@ -1904,8 +1905,8 @@ const jhWordsDB = [
         "kk": "/bɪld/",
         "zh": "v. 建造",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "There are no plans to build new offices.",
+        "exampleZh": "目前沒有建造新辦事處的計劃。"
     },
     {
         "id": 30213,
@@ -1913,8 +1914,8 @@ const jhWordsDB = [
         "kk": "/ˈbɪldɪŋ/",
         "zh": "n. 建築物",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The building soared above us.",
+        "exampleZh": "這棟建築高聳在我們頭頂上。"
     },
     {
         "id": 30214,
@@ -1922,8 +1923,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 圓麵包",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She wore her hair in a bun.",
+        "exampleZh": "她把頭髮盤成髮髻。"
     },
     {
         "id": 30215,
@@ -1931,8 +1932,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. (一)包,束",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "That car must have cost a bundle.",
+        "exampleZh": "那輛車肯定花了一大筆錢。"
     },
     {
         "id": 30216,
@@ -1940,8 +1941,8 @@ const jhWordsDB = [
         "kk": "/bɜːrn/",
         "zh": "v. 燒",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Turn the heat down or it'll burn.",
+        "exampleZh": "把火關小，不然會燒焦的。"
     },
     {
         "id": 30217,
@@ -1949,8 +1950,8 @@ const jhWordsDB = [
         "kk": "/bɜːrst/",
         "zh": "v. 爆裂",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The class burst out laughing.",
+        "exampleZh": "全班哄堂大笑。"
     },
     {
         "id": 30218,
@@ -1958,8 +1959,8 @@ const jhWordsDB = [
         "kk": "/bʌs/",
         "zh": "n. 公車",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The bus bounced down the hill.",
+        "exampleZh": "公共汽車彈著衝下山。"
     },
     {
         "id": 30219,
@@ -1967,8 +1968,8 @@ const jhWordsDB = [
         "kk": "/ˈbɪznəs/",
         "zh": "n. 商業",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "They flew business class.",
+        "exampleZh": "他們搭乘的是商務艙。"
     },
     {
         "id": 30220,
@@ -1976,7 +1977,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 商人",
         "unit": 17,
-        "example": "",
+        "example": "Warren was an adventurous businessman.",
         "exampleZh": ""
     },
     {
@@ -1985,8 +1986,8 @@ const jhWordsDB = [
         "kk": "/ˈbɪzi/",
         "zh": "adj. 忙碌的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "We're not always this busy!",
+        "exampleZh": "我們並不總是這麼忙！"
     },
     {
         "id": 30222,
@@ -1994,8 +1995,8 @@ const jhWordsDB = [
         "kk": "/bʌt/",
         "zh": "conj. 但是",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I'm married, but we're separated.",
+        "exampleZh": "我已婚，但我們分居了。"
     },
     {
         "id": 30223,
@@ -2003,8 +2004,8 @@ const jhWordsDB = [
         "kk": "/ˈbʌtər/",
         "zh": "n. 奶油",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Butter is perishable and can go rancid.",
+        "exampleZh": "黃油很容易腐爛並且會變質。"
     },
     {
         "id": 30224,
@@ -2012,8 +2013,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 蝴蝶",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The butterfly fluttered from flower to flower.",
+        "exampleZh": "蝴蝶從一朵花飛到另一朵花。"
     },
     {
         "id": 30225,
@@ -2021,7 +2022,7 @@ const jhWordsDB = [
         "kk": "/ˈbʌtn/",
         "zh": "n. 鈕扣",
         "unit": 17,
-        "example": "",
+        "example": "This button is for adjusting the volume.",
         "exampleZh": ""
     },
     {
@@ -2030,8 +2031,8 @@ const jhWordsDB = [
         "kk": "/baɪ/",
         "zh": "v. 買",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Money can't buy you happiness.",
+        "exampleZh": "金錢買不來幸福。"
     },
     {
         "id": 30227,
@@ -2039,8 +2040,8 @@ const jhWordsDB = [
         "kk": "/baɪ/",
         "zh": "prep. 沿;用...方法",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "They sleep by day and hunt by night.",
+        "exampleZh": "他們白天睡覺，晚上狩獵。"
     },
     {
         "id": 30228,
@@ -2048,7 +2049,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 甘藍菜",
         "unit": 17,
-        "example": "",
+        "example": "I've always hated cabbage.",
         "exampleZh": ""
     },
     {
@@ -2057,7 +2058,7 @@ const jhWordsDB = [
         "kk": "/ˈkeɪbl/",
         "zh": "n. 電纜",
         "unit": 17,
-        "example": "",
+        "example": "Rats had gnawed through the cable.",
         "exampleZh": ""
     },
     {
@@ -2066,7 +2067,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 自助餐廳",
         "unit": 17,
-        "example": "",
+        "example": "Does the college cafeteria provide a healthful diet?",
         "exampleZh": ""
     },
     {
@@ -2075,8 +2076,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 鳥籠",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The cage smelled of excrement.",
+        "exampleZh": "籠子裡有排泄物的味道。"
     },
     {
         "id": 30232,
@@ -2084,8 +2085,8 @@ const jhWordsDB = [
         "kk": "/keɪk/",
         "zh": "n. 蛋糕",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "That cake looks very tempting.",
+        "exampleZh": "那個蛋糕看起來很誘人。"
     },
     {
         "id": 30233,
@@ -2093,7 +2094,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 日曆",
         "unit": 17,
-        "example": "",
+        "example": "This is one of the biggest weeks in the racing calendar.",
         "exampleZh": ""
     },
     {
@@ -2102,8 +2103,8 @@ const jhWordsDB = [
         "kk": "/kɔːl/",
         "zh": "n. 呼叫",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Can we call television art?",
+        "exampleZh": "我們可以稱之為電視藝術嗎？"
     },
     {
         "id": 30235,
@@ -2111,7 +2112,7 @@ const jhWordsDB = [
         "kk": "/kɑːm/",
         "zh": "adj. 平靜的",
         "unit": 17,
-        "example": "",
+        "example": "Her voice was surprisingly calm.",
         "exampleZh": ""
     },
     {
@@ -2120,8 +2121,8 @@ const jhWordsDB = [
         "kk": "/ˈkæmərə/",
         "zh": "n. 照相機",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The camera whirred and clicked.",
+        "exampleZh": "相機嗡嗡作響並發出喀喀聲。"
     },
     {
         "id": 30237,
@@ -2129,8 +2130,8 @@ const jhWordsDB = [
         "kk": "/kæmp/",
         "zh": "v. 紮營",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He spent two weeks at camp this summer.",
+        "exampleZh": "今年夏天他在營地度過了兩週。"
     },
     {
         "id": 30238,
@@ -2138,7 +2139,7 @@ const jhWordsDB = [
         "kk": "/ˈkæmpəs/",
         "zh": "n. 校園",
         "unit": 17,
-        "example": "",
+        "example": "There are three dining halls on campus.",
         "exampleZh": ""
     },
     {
@@ -2147,8 +2148,8 @@ const jhWordsDB = [
         "kk": "/kæn/",
         "zh": "aux. 能夠",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Can you last (out) until I can get help?",
+        "exampleZh": "你能堅持下去直到我得到幫助嗎？"
     },
     {
         "id": 30240,
@@ -2156,8 +2157,8 @@ const jhWordsDB = [
         "kk": "/ˈkænsəl/",
         "zh": "v. 取消",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The customer called to cancel.",
+        "exampleZh": "客戶打電話要求取消。"
     },
     {
         "id": 30241,
@@ -2165,7 +2166,7 @@ const jhWordsDB = [
         "kk": "/ˈkænsər/",
         "zh": "n. 癌症",
         "unit": 17,
-        "example": "",
+        "example": "He has terminal lung cancer.",
         "exampleZh": ""
     },
     {
@@ -2174,7 +2175,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 蠟燭",
         "unit": 17,
-        "example": "",
+        "example": "I blew out the candle.",
         "exampleZh": ""
     },
     {
@@ -2183,8 +2184,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 糖果",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Who wants the last piece of candy?",
+        "exampleZh": "誰想要最後一塊糖果？"
     },
     {
         "id": 30244,
@@ -2192,8 +2193,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 帽子",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He often wore a baseball cap.",
+        "exampleZh": "他經常戴著棒球帽。"
     },
     {
         "id": 30245,
@@ -2201,7 +2202,7 @@ const jhWordsDB = [
         "kk": "/ˈkæptən/",
         "zh": "n. 隊長",
         "unit": 17,
-        "example": "",
+        "example": "This is the captain speaking.",
         "exampleZh": ""
     },
     {
@@ -2210,8 +2211,8 @@ const jhWordsDB = [
         "kk": "/kɑːr/",
         "zh": "n. 車子",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Buddy totalled his car.",
+        "exampleZh": "巴迪把他的車報廢了。"
     },
     {
         "id": 30247,
@@ -2219,8 +2220,8 @@ const jhWordsDB = [
         "kk": "/kɑːrd/",
         "zh": "n. 卡片",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Simon's a whiz at card games.",
+        "exampleZh": "西蒙是紙牌遊戲高手。"
     },
     {
         "id": 30248,
@@ -2228,8 +2229,8 @@ const jhWordsDB = [
         "kk": "/ker/",
         "zh": "v. 關心",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Joe Sixpack doesn't care about that.",
+        "exampleZh": "喬·斯克斯帕克並不關心這些。"
     },
     {
         "id": 30249,
@@ -2237,8 +2238,8 @@ const jhWordsDB = [
         "kk": "/ˈkerfəl/",
         "zh": "adj. 小心的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The trip needs careful planning.",
+        "exampleZh": "旅行需要仔細計劃。"
     },
     {
         "id": 30250,
@@ -2246,7 +2247,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 粗心的",
         "unit": 17,
-        "example": "",
+        "example": "She had been inexcusably careless.",
         "exampleZh": ""
     },
     {
@@ -2255,7 +2256,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 地毯",
         "unit": 17,
-        "example": "",
+        "example": "We rolled up the carpet.",
         "exampleZh": ""
     },
     {
@@ -2264,7 +2265,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 胡蘿蔔",
         "unit": 17,
-        "example": "",
+        "example": "Her carrot cake is divine.",
         "exampleZh": ""
     },
     {
@@ -2273,8 +2274,8 @@ const jhWordsDB = [
         "kk": "/ˈkæri/",
         "zh": "v. 拿,運送",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Only one carry-on is allowed.",
+        "exampleZh": "只允許攜帶一件隨身行李。"
     },
     {
         "id": 30254,
@@ -2282,7 +2283,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 卡通",
         "unit": 17,
-        "example": "",
+        "example": "They visited the Cartoon Museum.",
         "exampleZh": ""
     },
     {
@@ -2291,8 +2292,8 @@ const jhWordsDB = [
         "kk": "/keɪs/",
         "zh": "n. 例子",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He zipped his case shut.",
+        "exampleZh": "他拉上箱子的拉鍊。"
     },
     {
         "id": 30256,
@@ -2300,7 +2301,7 @@ const jhWordsDB = [
         "kk": "/kæʃ/",
         "zh": "n. 現金",
         "unit": 17,
-        "example": "",
+        "example": "I'm short of cash right now.",
         "exampleZh": ""
     },
     {
@@ -2309,7 +2310,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 卡帶",
         "unit": 17,
-        "example": "",
+        "example": "I swapped him my CD for his cassette.",
         "exampleZh": ""
     },
     {
@@ -2318,7 +2319,7 @@ const jhWordsDB = [
         "kk": "/ˈkæsl/",
         "zh": "n. 城堡",
         "unit": 17,
-        "example": "",
+        "example": "The castle was bathed in moonlight.",
         "exampleZh": ""
     },
     {
@@ -2327,8 +2328,8 @@ const jhWordsDB = [
         "kk": "/kæt/",
         "zh": "n. 貓",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Our cat hates being handled.",
+        "exampleZh": "我們的貓討厭被人撫摸。"
     },
     {
         "id": 30260,
@@ -2336,8 +2337,8 @@ const jhWordsDB = [
         "kk": "/kætʃ/",
         "zh": "v. 追捕",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Where did you catch the fish?",
+        "exampleZh": "你在哪裡釣到的魚？"
     },
     {
         "id": 30261,
@@ -2345,8 +2346,8 @@ const jhWordsDB = [
         "kk": "/kɔːz/",
         "zh": "v. 導致",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "High temperatures can cause hallucination.",
+        "exampleZh": "高溫會引起幻覺。"
     },
     {
         "id": 30262,
@@ -2354,7 +2355,7 @@ const jhWordsDB = [
         "kk": "/ˈsiːlɪŋ/",
         "zh": "n. 天花板",
         "unit": 17,
-        "example": "",
+        "example": "The ceiling was grey and cracked.",
         "exampleZh": ""
     },
     {
@@ -2363,7 +2364,7 @@ const jhWordsDB = [
         "kk": "/ˈseləbreɪt/",
         "zh": "v. 慶祝",
         "unit": 17,
-        "example": "",
+        "example": "I was in a mood to celebrate.",
         "exampleZh": ""
     },
     {
@@ -2372,7 +2373,7 @@ const jhWordsDB = [
         "kk": "/sel/",
         "zh": "n. 細胞",
         "unit": 17,
-        "example": "",
+        "example": "Each cell of our bodies contains 46 chromosomes.",
         "exampleZh": ""
     },
     {
@@ -2381,8 +2382,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 分",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I'm not a hundred per cent sure.",
+        "exampleZh": "我不是百分百確定。"
     },
     {
         "id": 30266,
@@ -2390,8 +2391,8 @@ const jhWordsDB = [
         "kk": "/ˈsentər/",
         "zh": "n. 中央",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Any shopping center is fine.",
+        "exampleZh": "任何購物中心都可以。"
     },
     {
         "id": 30267,
@@ -2399,7 +2400,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 公分",
         "unit": 17,
-        "example": "",
+        "example": "Who guesses one centimeter?",
         "exampleZh": ""
     },
     {
@@ -2408,8 +2409,8 @@ const jhWordsDB = [
         "kk": "/ˈsentrəl/",
         "zh": "adj. 中央的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The house has gas-fired central heating.",
+        "exampleZh": "房子配有瓦斯中央暖氣系統。"
     },
     {
         "id": 30269,
@@ -2417,7 +2418,7 @@ const jhWordsDB = [
         "kk": "/ˈsentʃəri/",
         "zh": "n. 世紀",
         "unit": 17,
-        "example": "",
+        "example": "A new century was dawning.",
         "exampleZh": ""
     },
     {
@@ -2426,7 +2427,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 穀類食物",
         "unit": 17,
-        "example": "",
+        "example": "He ate a large bowlful of cereal.",
         "exampleZh": ""
     },
     {
@@ -2435,8 +2436,8 @@ const jhWordsDB = [
         "kk": "/ˈsɜːrtn/",
         "zh": "adj. 確實的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "That's true, to a certain extent.",
+        "exampleZh": "在某種程度上，確實如此。"
     },
     {
         "id": 30272,
@@ -2444,7 +2445,7 @@ const jhWordsDB = [
         "kk": "/tʃer/",
         "zh": "n. 椅子",
         "unit": 17,
-        "example": "",
+        "example": "Emily edged her chair forward.",
         "exampleZh": ""
     },
     {
@@ -2453,7 +2454,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 粉筆",
         "unit": 17,
-        "example": "",
+        "example": "You may chalk it on the wall.",
         "exampleZh": ""
     },
     {
@@ -2462,8 +2463,8 @@ const jhWordsDB = [
         "kk": "/tʃæns/",
         "zh": "n. 機會",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Everyone has a chance to win.",
+        "exampleZh": "每個人都有機會獲勝。"
     },
     {
         "id": 30275,
@@ -2471,7 +2472,7 @@ const jhWordsDB = [
         "kk": "/tʃeɪndʒ/",
         "zh": "v. 改變",
         "unit": 17,
-        "example": "",
+        "example": "Needs change while policies fossilize.",
         "exampleZh": ""
     },
     {
@@ -2480,7 +2481,7 @@ const jhWordsDB = [
         "kk": "/ˈtʃænl/",
         "zh": "n. 電視臺",
         "unit": 17,
-        "example": "",
+        "example": "The programme's on Channel 4.",
         "exampleZh": ""
     },
     {
@@ -2489,7 +2490,7 @@ const jhWordsDB = [
         "kk": "/ˈkærəktər/",
         "zh": "n. 性格",
         "unit": 17,
-        "example": "",
+        "example": "She's a good judge of character.",
         "exampleZh": ""
     },
     {
@@ -2498,7 +2499,7 @@ const jhWordsDB = [
         "kk": "/tʃɑːrdʒ/",
         "zh": "v. 收費",
         "unit": 17,
-        "example": "",
+        "example": "She left her assistant in charge.",
         "exampleZh": ""
     },
     {
@@ -2507,8 +2508,8 @@ const jhWordsDB = [
         "kk": "/tʃɑːrt/",
         "zh": "n. 圖表",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He copied the chart from a book.",
+        "exampleZh": "他從一本書上複製了圖表。"
     },
     {
         "id": 30280,
@@ -2516,8 +2517,8 @@ const jhWordsDB = [
         "kk": "/tʃeɪs/",
         "zh": "v. 追趕",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "We gave chase along the footpath.",
+        "exampleZh": "我們沿著人行道追趕。"
     },
     {
         "id": 30281,
@@ -2525,8 +2526,8 @@ const jhWordsDB = [
         "kk": "/tʃiːp/",
         "zh": "adj. 便宜的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The meal was amazingly cheap.",
+        "exampleZh": "這頓飯出奇的便宜。"
     },
     {
         "id": 30282,
@@ -2534,7 +2535,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 欺騙",
         "unit": 17,
-        "example": "",
+        "example": "He was a liar and a cheat.",
         "exampleZh": ""
     },
     {
@@ -2543,8 +2544,8 @@ const jhWordsDB = [
         "kk": "/tʃek/",
         "zh": "v. 檢查",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Check whether a fuse has blown.",
+        "exampleZh": "檢查保險絲是否熔斷。"
     },
     {
         "id": 30284,
@@ -2552,7 +2553,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 歡呼",
         "unit": 17,
-        "example": "",
+        "example": "A great cheer went up from the crowd.",
         "exampleZh": ""
     },
     {
@@ -2561,7 +2562,7 @@ const jhWordsDB = [
         "kk": "/tʃiːz/",
         "zh": "n. 起司",
         "unit": 17,
-        "example": "",
+        "example": "There's mould on the cheese.",
         "exampleZh": ""
     },
     {
@@ -2570,7 +2571,7 @@ const jhWordsDB = [
         "kk": "/ˈkemɪkl/",
         "zh": "adj. 化學的",
         "unit": 17,
-        "example": "",
+        "example": "Chemical weapons are banned internationally.",
         "exampleZh": ""
     },
     {
@@ -2579,7 +2580,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 西洋棋",
         "unit": 17,
-        "example": "",
+        "example": "Chess is not a game of chance.",
         "exampleZh": ""
     },
     {
@@ -2588,8 +2589,8 @@ const jhWordsDB = [
         "kk": "/ˈtʃɪkən/",
         "zh": "n. 雞",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Luke munched the chicken sandwiches.",
+        "exampleZh": "盧克嚼著雞肉三明治。"
     },
     {
         "id": 30289,
@@ -2597,8 +2598,8 @@ const jhWordsDB = [
         "kk": "/tʃiːf/",
         "zh": "n. 首領",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Unemployment was the chief cause of poverty.",
+        "exampleZh": "失業是貧困的主要原因。"
     },
     {
         "id": 30290,
@@ -2606,8 +2607,8 @@ const jhWordsDB = [
         "kk": "/tʃaɪld/",
         "zh": "n. 小孩",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The child was born prematurely.",
+        "exampleZh": "孩子早產了。"
     },
     {
         "id": 30291,
@@ -2615,8 +2616,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 幼稚的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She's just being childish and immature.",
+        "exampleZh": "她只是幼稚、不成熟而已。"
     },
     {
         "id": 30292,
@@ -2624,8 +2625,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 天真的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He retained a childlike sense of wonder.",
+        "exampleZh": "他保留著孩子般的好奇心。"
     },
     {
         "id": 30293,
@@ -2633,7 +2634,7 @@ const jhWordsDB = [
         "kk": "/tʃɪn/",
         "zh": "n. 下巴",
         "unit": 17,
-        "example": "",
+        "example": "She rubbed her chin thoughtfully.",
         "exampleZh": ""
     },
     {
@@ -2642,7 +2643,7 @@ const jhWordsDB = [
         "kk": "/ˈtʃɔːklət/",
         "zh": "n. 巧克力",
         "unit": 17,
-        "example": "",
+        "example": "It contains real chocolate chips.",
         "exampleZh": ""
     },
     {
@@ -2651,7 +2652,7 @@ const jhWordsDB = [
         "kk": "/tʃɔɪs/",
         "zh": "n. 選擇",
         "unit": 17,
-        "example": "",
+        "example": "I wouldn't go there by choice.",
         "exampleZh": ""
     },
     {
@@ -2660,8 +2661,8 @@ const jhWordsDB = [
         "kk": "/tʃuːz/",
         "zh": "v. 選擇",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Choose whichever brand you prefer.",
+        "exampleZh": "選擇您喜歡的品牌。"
     },
     {
         "id": 30297,
@@ -2669,7 +2670,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 筷子",
         "unit": 17,
-        "example": "",
+        "example": "He can use chopsticks.",
         "exampleZh": ""
     },
     {
@@ -2678,8 +2679,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 耶誕節",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Christmas is still months away.",
+        "exampleZh": "距離聖誕節還有幾個月。"
     },
     {
         "id": 30299,
@@ -2687,7 +2688,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 豐滿的",
         "unit": 17,
-        "example": "",
+        "example": "Do you think I'm too chubby?",
         "exampleZh": ""
     },
     {
@@ -2696,8 +2697,8 @@ const jhWordsDB = [
         "kk": "/tʃɜːrtʃ/",
         "zh": "n. 教堂",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She plays the organ in church.",
+        "exampleZh": "她在教堂裡演奏風琴。"
     },
     {
         "id": 30301,
@@ -2705,7 +2706,7 @@ const jhWordsDB = [
         "kk": "/kleɪm/",
         "zh": "v. 主張",
         "unit": 17,
-        "example": "",
+        "example": "The judge allowed my claim.",
         "exampleZh": ""
     },
     {
@@ -2714,7 +2715,7 @@ const jhWordsDB = [
         "kk": "/ˈsɜːrkl/",
         "zh": "n. 圓圈",
         "unit": 17,
-        "example": "",
+        "example": "The children stood in a circle.",
         "exampleZh": ""
     },
     {
@@ -2723,8 +2724,8 @@ const jhWordsDB = [
         "kk": "/ˈsɪti/",
         "zh": "n. 城市",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The cathedral dominates the city.",
+        "exampleZh": "大教堂主宰著這座城市。"
     },
     {
         "id": 30304,
@@ -2732,7 +2733,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 拍(手)",
         "unit": 17,
-        "example": "",
+        "example": "Let's clap our hands together!",
         "exampleZh": ""
     },
     {
@@ -2741,8 +2742,8 @@ const jhWordsDB = [
         "kk": "/klæs/",
         "zh": "n. 班級",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I've joined an aerobics class.",
+        "exampleZh": "我參加了健美操班。"
     },
     {
         "id": 30306,
@@ -2750,7 +2751,7 @@ const jhWordsDB = [
         "kk": "/ˈklæsɪk/",
         "zh": "adj. 古典的",
         "unit": 17,
-        "example": "",
+        "example": "The novel may become a modern classic.",
         "exampleZh": ""
     },
     {
@@ -2759,7 +2760,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 同學",
         "unit": 17,
-        "example": "",
+        "example": "She felt like a fifth-grader who had snitched on a classmate.",
         "exampleZh": ""
     },
     {
@@ -2768,7 +2769,7 @@ const jhWordsDB = [
         "kk": "/ˈklæsruːm/",
         "zh": "n. 班級",
         "unit": 17,
-        "example": "",
+        "example": "She'd sent him outside the classroom.",
         "exampleZh": ""
     },
     {
@@ -2777,7 +2778,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 黏土",
         "unit": 17,
-        "example": "",
+        "example": "Clay is a plastic substance.",
         "exampleZh": ""
     },
     {
@@ -2786,8 +2787,8 @@ const jhWordsDB = [
         "kk": "/kliːn/",
         "zh": "adj. 乾淨的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Cats are very clean animals.",
+        "exampleZh": "貓是非常愛乾淨的動物。"
     },
     {
         "id": 30311,
@@ -2795,8 +2796,8 @@ const jhWordsDB = [
         "kk": "/klɪr/",
         "zh": "adj. 清楚的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She made her objections clear.",
+        "exampleZh": "她明確表示了自己的反對意見。"
     },
     {
         "id": 30312,
@@ -2804,7 +2805,7 @@ const jhWordsDB = [
         "kk": "/klɜːrk/",
         "zh": "n. 店員",
         "unit": 17,
-        "example": "",
+        "example": "A sharp-eyed shop clerk spotted the fake.",
         "exampleZh": ""
     },
     {
@@ -2813,8 +2814,8 @@ const jhWordsDB = [
         "kk": "/ˈklevər/",
         "zh": "adj. 聰明的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "'You are clever,' she gushed.",
+        "exampleZh": "「你很聰明，」她滔滔不絕地說。"
     },
     {
         "id": 30314,
@@ -2822,7 +2823,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 氣候",
         "unit": 17,
-        "example": "",
+        "example": "The economic climate remains uncertain.",
         "exampleZh": ""
     },
     {
@@ -2831,8 +2832,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 攀爬",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Nancy began to climb the stairs.",
+        "exampleZh": "南希開始爬樓梯。"
     },
     {
         "id": 30316,
@@ -2840,8 +2841,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 時鐘",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The clock struck the hour.",
+        "exampleZh": "時鐘敲響了整點。"
     },
     {
         "id": 30317,
@@ -2849,8 +2850,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 關",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Some smallish firms may close.",
+        "exampleZh": "一些小公司可能會關閉。"
     },
     {
         "id": 30318,
@@ -2858,7 +2859,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 櫥櫃",
         "unit": 17,
-        "example": "",
+        "example": "It was in your closet.",
         "exampleZh": ""
     },
     {
@@ -2867,7 +2868,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 衣服",
         "unit": 17,
-        "example": "",
+        "example": "She wears really funky clothes.",
         "exampleZh": ""
     },
     {
@@ -2876,8 +2877,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 雲",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The plane disappeared behind a cloud.",
+        "exampleZh": "飛機消失在雲層後面。"
     },
     {
         "id": 30321,
@@ -2885,7 +2886,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 俱樂部",
         "unit": 17,
-        "example": "",
+        "example": "He belongs to an exclusive club.",
         "exampleZh": ""
     },
     {
@@ -2894,7 +2895,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 教練",
         "unit": 17,
-        "example": "",
+        "example": "What you need is a drama coach.",
         "exampleZh": ""
     },
     {
@@ -2903,8 +2904,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 海岸",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "They live on the south coast.",
+        "exampleZh": "他們住在南海岸。"
     },
     {
         "id": 30324,
@@ -2912,8 +2913,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 大衣",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She was wearing a new coat.",
+        "exampleZh": "她穿著一件新外套。"
     },
     {
         "id": 30325,
@@ -2921,7 +2922,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 蟑螂",
         "unit": 17,
-        "example": "",
+        "example": "FIRST, catch your cockroach.",
         "exampleZh": ""
     },
     {
@@ -2930,8 +2931,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 咖啡",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Her coffee was now lukewarm.",
+        "exampleZh": "她的咖啡現在已經微溫了。"
     },
     {
         "id": 30327,
@@ -2939,7 +2940,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 硬幣",
         "unit": 17,
-        "example": "",
+        "example": "The coin rolled underneath the piano.",
         "exampleZh": ""
     },
     {
@@ -2948,8 +2949,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 可樂",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "My sister likes Coke.",
+        "exampleZh": "我姐姐喜歡可樂。"
     },
     {
         "id": 30329,
@@ -2957,8 +2958,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 冷的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "It's flipping cold today!",
+        "exampleZh": "今天天氣突然變冷了！"
     },
     {
         "id": 30330,
@@ -2966,8 +2967,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 收集",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I used to collect stamps.",
+        "exampleZh": "我以前收集郵票。"
     },
     {
         "id": 30331,
@@ -2975,7 +2976,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 大學",
         "unit": 17,
-        "example": "",
+        "example": "He studied maths at college.",
         "exampleZh": ""
     },
     {
@@ -2984,8 +2985,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 顏色",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "What color is Paul's shirt?",
+        "exampleZh": "保羅的球衣是什麼顏色的？"
     },
     {
         "id": 30333,
@@ -2993,8 +2994,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 多采多姿的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "This is a more colorful scale.",
+        "exampleZh": "這是一個更豐富多彩的音階。"
     },
     {
         "id": 30334,
@@ -3002,7 +3003,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 梳子",
         "unit": 17,
-        "example": "",
+        "example": "Your hair needs a good comb.",
         "exampleZh": ""
     },
     {
@@ -3011,8 +3012,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 來",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Have you come far?",
+        "exampleZh": "你已經走了很遠嗎？"
     },
     {
         "id": 30336,
@@ -3020,8 +3021,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 舒服的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "You'll be quite comfortable here.",
+        "exampleZh": "你在這裡會很舒服。"
     },
     {
         "id": 30337,
@@ -3029,7 +3030,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 命令",
         "unit": 17,
-        "example": "",
+        "example": "Begin when I give the command.",
         "exampleZh": ""
     },
     {
@@ -3038,7 +3039,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 意見",
         "unit": 17,
-        "example": "",
+        "example": "Buckingham Palace refused to comment.",
         "exampleZh": ""
     },
     {
@@ -3047,8 +3048,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 共同的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Jackson is a common English name.",
+        "exampleZh": "傑克森是一個常見的英文名字。"
     },
     {
         "id": 30340,
@@ -3056,7 +3057,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 公司",
         "unit": 17,
-        "example": "",
+        "example": "The company employs 18 workers.",
         "exampleZh": ""
     },
     {
@@ -3065,8 +3066,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 比較",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The point of the lesson is to compare the two countries.",
+        "exampleZh": "本課的重點是比較這兩個國家。"
     },
     {
         "id": 30342,
@@ -3074,8 +3075,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 抱怨",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I was too cowardly to complain.",
+        "exampleZh": "我太懦弱了，不敢抱怨。"
     },
     {
         "id": 30343,
@@ -3083,7 +3084,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 抱怨",
         "unit": 17,
-        "example": "",
+        "example": "You have no grounds for complaint.",
         "exampleZh": ""
     },
     {
@@ -3092,8 +3093,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 完整的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "We were in complete agreement.",
+        "exampleZh": "我們完全同意。"
     },
     {
         "id": 30345,
@@ -3101,7 +3102,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 電腦",
         "unit": 17,
-        "example": "",
+        "example": "My computer keeps going funny.",
         "exampleZh": ""
     },
     {
@@ -3110,7 +3111,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 擔心",
         "unit": 17,
-        "example": "",
+        "example": "There is no cause for concern.",
         "exampleZh": ""
     },
     {
@@ -3119,7 +3120,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 有自信的",
         "unit": 17,
-        "example": "",
+        "example": "Marina was a confident, happy child.",
         "exampleZh": ""
     },
     {
@@ -3128,7 +3129,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 衝突",
         "unit": 17,
-        "example": "",
+        "example": "She was unafraid of conflict.",
         "exampleZh": ""
     },
     {
@@ -3137,7 +3138,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 使迷惑",
         "unit": 17,
-        "example": "",
+        "example": "I always confuse my left with my right.",
         "exampleZh": ""
     },
     {
@@ -3146,7 +3147,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 道賀",
         "unit": 17,
-        "example": "",
+        "example": "We have received many letters of congratulation.",
         "exampleZh": ""
     },
     {
@@ -3155,7 +3156,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 連接",
         "unit": 17,
-        "example": "",
+        "example": "Click 'Continue' to connect to the Internet.",
         "exampleZh": ""
     },
     {
@@ -3164,8 +3165,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 考慮",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Let's consider this point further.",
+        "exampleZh": "讓我們進一步考慮這一點。"
     },
     {
         "id": 30353,
@@ -3173,7 +3174,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 體貼的",
         "unit": 17,
-        "example": "",
+        "example": "He was charming, considerate and impeccably mannered.",
         "exampleZh": ""
     },
     {
@@ -3182,7 +3183,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 聯絡",
         "unit": 17,
-        "example": "",
+        "example": "I will contact you by letter.",
         "exampleZh": ""
     },
     {
@@ -3191,8 +3192,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 使繼續",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "They'll continue to fight injustice.",
+        "exampleZh": "他們將繼續與不公義作鬥爭。"
     },
     {
         "id": 30356,
@@ -3200,7 +3201,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 合約",
         "unit": 17,
-        "example": "",
+        "example": "He mailed me the contract.",
         "exampleZh": ""
     },
     {
@@ -3209,7 +3210,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 控制",
         "unit": 17,
-        "example": "",
+        "example": "The situation is under control.",
         "exampleZh": ""
     },
     {
@@ -3218,8 +3219,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 方便的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "If it's convenient I can come tomorrow.",
+        "exampleZh": "如果方便的話我明天可以來。"
     },
     {
         "id": 30359,
@@ -3227,7 +3228,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 對話",
         "unit": 17,
-        "example": "",
+        "example": "She was engrossed in conversation.",
         "exampleZh": ""
     },
     {
@@ -3236,8 +3237,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 煮",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She's an exceptionally good cook.",
+        "exampleZh": "她是一位非常出色的廚師。"
     },
     {
         "id": 30361,
@@ -3245,8 +3246,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 點心",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Heart-shaped cookie cutters come in many sizes.",
+        "exampleZh": "心形餅乾切刀有多種尺寸。"
     },
     {
         "id": 30362,
@@ -3254,8 +3255,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 涼的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She seemed very cool and unemotional.",
+        "exampleZh": "她看起來非常冷靜，不帶任何情緒。"
     },
     {
         "id": 30363,
@@ -3263,7 +3264,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 複製",
         "unit": 17,
-        "example": "",
+        "example": "Can you copy me in on your report?",
         "exampleZh": ""
     },
     {
@@ -3272,8 +3273,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 玉米",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She pounded the corn kernels.",
+        "exampleZh": "她搗碎了玉米粒。"
     },
     {
         "id": 30365,
@@ -3281,7 +3282,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 角落",
         "unit": 17,
-        "example": "",
+        "example": "The referee awarded a corner.",
         "exampleZh": ""
     },
     {
@@ -3290,8 +3291,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 正確的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Only one of the answers is correct.",
+        "exampleZh": "只有一個答案是正確的。"
     },
     {
         "id": 30367,
@@ -3299,8 +3300,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 花費",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Success has cost him dearly.",
+        "exampleZh": "成功讓他付出了慘痛的代價。"
     },
     {
         "id": 30368,
@@ -3308,7 +3309,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 棉花",
         "unit": 17,
-        "example": "",
+        "example": "The sheets are 100% pure cotton.",
         "exampleZh": ""
     },
     {
@@ -3317,7 +3318,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 長沙發",
         "unit": 17,
-        "example": "",
+        "example": "Linda lay face down on a living room couch, nibbling popcorn.",
         "exampleZh": ""
     },
     {
@@ -3326,7 +3327,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 咳嗽",
         "unit": 17,
-        "example": "",
+        "example": "Graham began to cough violently.",
         "exampleZh": ""
     },
     {
@@ -3335,8 +3336,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 計數",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Her father was a Polish count.",
+        "exampleZh": "她的父親是波蘭伯爵。"
     },
     {
         "id": 30372,
@@ -3344,8 +3345,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 國家",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I'm a simple country girl.",
+        "exampleZh": "我是一個簡單的鄉村女孩。"
     },
     {
         "id": 30373,
@@ -3353,7 +3354,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 一對",
         "unit": 17,
-        "example": "",
+        "example": "The couple have no children.",
         "exampleZh": ""
     },
     {
@@ -3362,7 +3363,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 勇氣",
         "unit": 17,
-        "example": "",
+        "example": "He showed courage in adversity.",
         "exampleZh": ""
     },
     {
@@ -3371,8 +3372,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 課程",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The course lasts five weeks.",
+        "exampleZh": "課程為期五週。"
     },
     {
         "id": 30376,
@@ -3380,7 +3381,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 法院;球場",
         "unit": 17,
-        "example": "",
+        "example": "The court adjourned for lunch.",
         "exampleZh": ""
     },
     {
@@ -3389,7 +3390,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 表(堂)兄弟姊妹",
         "unit": 17,
-        "example": "",
+        "example": "Eric was my cousin Edward's boy.",
         "exampleZh": ""
     },
     {
@@ -3398,8 +3399,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 覆蓋",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "$100 should cover your expenses.",
+        "exampleZh": "100 美元應該可以支付你的開支。"
     },
     {
         "id": 30379,
@@ -3407,8 +3408,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 母牛",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "A mature cow has horns.",
+        "exampleZh": "一頭成熟的牛有角。"
     },
     {
         "id": 30380,
@@ -3416,8 +3417,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 牛仔",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He shows up in jeans and cowboy boots.",
+        "exampleZh": "他穿著牛仔褲和牛仔靴出現。"
     },
     {
         "id": 30381,
@@ -3425,7 +3426,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 螃蟹",
         "unit": 17,
-        "example": "",
+        "example": "I can't remember when I last had crab.",
         "exampleZh": ""
     },
     {
@@ -3434,7 +3435,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 蠟筆",
         "unit": 17,
-        "example": "",
+        "example": "Someone had scribbled all over the table in crayon.",
         "exampleZh": ""
     },
     {
@@ -3443,8 +3444,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 瘋狂的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "We're crazy about each other.",
+        "exampleZh": "我們都為彼此瘋狂。"
     },
     {
         "id": 30384,
@@ -3452,7 +3453,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 乳液",
         "unit": 17,
-        "example": "",
+        "example": "The sauce is mostly cream.",
         "exampleZh": ""
     },
     {
@@ -3461,8 +3462,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 創造",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "We set business free to create more jobs.",
+        "exampleZh": "我們放開商業自由，創造更多就業機會。"
     },
     {
         "id": 30386,
@@ -3470,7 +3471,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 罪",
         "unit": 17,
-        "example": "",
+        "example": "Crime figures are rising rapidly.",
         "exampleZh": ""
     },
     {
@@ -3479,7 +3480,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 穿過",
         "unit": 17,
-        "example": "",
+        "example": "I'm terribly cross with him.",
         "exampleZh": ""
     },
     {
@@ -3488,7 +3489,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 人群",
         "unit": 17,
-        "example": "",
+        "example": "The crowd began throwing stones.",
         "exampleZh": ""
     },
     {
@@ -3497,8 +3498,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 殘忍的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Her eyes were cruel and hard.",
+        "exampleZh": "她的目光殘忍而冷酷。"
     },
     {
         "id": 30390,
@@ -3506,8 +3507,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 哭",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She let out an anguished cry.",
+        "exampleZh": "她發出一聲痛苦的叫聲。"
     },
     {
         "id": 30391,
@@ -3515,7 +3516,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 文化",
         "unit": 17,
-        "example": "",
+        "example": "We are living in a consumer culture.",
         "exampleZh": ""
     },
     {
@@ -3524,8 +3525,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 杯子",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She crumpled up her coffee cup.",
+        "exampleZh": "她把咖啡杯弄皺了。"
     },
     {
         "id": 30393,
@@ -3533,7 +3534,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 治療",
         "unit": 17,
-        "example": "",
+        "example": "The search for a cure goes on.",
         "exampleZh": ""
     },
     {
@@ -3542,8 +3543,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 好奇的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Steve was intensely curious about the world I came from.",
+        "exampleZh": "史蒂夫對我來自的世界非常好奇。"
     },
     {
         "id": 30395,
@@ -3551,7 +3552,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 現在的",
         "unit": 17,
-        "example": "",
+        "example": "We were rowing against the current.",
         "exampleZh": ""
     },
     {
@@ -3560,7 +3561,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 窗簾",
         "unit": 17,
-        "example": "",
+        "example": "She pulled the curtain aside.",
         "exampleZh": ""
     },
     {
@@ -3569,7 +3570,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 曲線",
         "unit": 17,
-        "example": "",
+        "example": "The slope increases as you go up the curve.",
         "exampleZh": ""
     },
     {
@@ -3578,7 +3579,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 習慣",
         "unit": 17,
-        "example": "",
+        "example": "This quaint custom should be revived.",
         "exampleZh": ""
     },
     {
@@ -3587,7 +3588,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 顧客",
         "unit": 17,
-        "example": "",
+        "example": "The customer called to cancel.",
         "exampleZh": ""
     },
     {
@@ -3596,8 +3597,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 切割",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "You've had your hair cut!",
+        "exampleZh": "你已經剪頭髮了！"
     },
     {
         "id": 30401,
@@ -3605,8 +3606,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 可愛的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Shame, she's so cute!",
+        "exampleZh": "可惜了，她太可愛了！"
     },
     {
         "id": 30402,
@@ -3614,7 +3615,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 損害",
         "unit": 17,
-        "example": "",
+        "example": "The fire caused extensive damage.",
         "exampleZh": ""
     },
     {
@@ -3623,8 +3624,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 跳舞",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Come on Doreen, let's dance.",
+        "exampleZh": "來吧，多琳，我們跳舞吧。"
     },
     {
         "id": 30404,
@@ -3632,8 +3633,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 危險",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The red triangle denotes danger.",
+        "exampleZh": "紅色三角形表示危險。"
     },
     {
         "id": 30405,
@@ -3641,8 +3642,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 危險的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The man is armed and dangerous.",
+        "exampleZh": "該男子攜帶武器且危險。"
     },
     {
         "id": 30406,
@@ -3650,8 +3651,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 黑的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "We should arrive before dark.",
+        "exampleZh": "我們應該在天黑之前到達。"
     },
     {
         "id": 30407,
@@ -3659,7 +3660,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 資料",
         "unit": 17,
-        "example": "",
+        "example": "He copied the data into a notebook.",
         "exampleZh": ""
     },
     {
@@ -3668,8 +3669,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 日期",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I've got a hot date tonight.",
+        "exampleZh": "今晚我有一個熱烈的約會。"
     },
     {
         "id": 30409,
@@ -3677,8 +3678,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 女兒",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "My daughter is at university.",
+        "exampleZh": "我女兒正在讀大學。"
     },
     {
         "id": 30410,
@@ -3686,7 +3687,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 黎明",
         "unit": 17,
-        "example": "",
+        "example": "The troops landed at dawn.",
         "exampleZh": ""
     },
     {
@@ -3695,8 +3696,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 一天",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "They're improving day by day.",
+        "exampleZh": "他們正在一天天進步。"
     },
     {
         "id": 30412,
@@ -3704,8 +3705,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 死的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Suddenly the phone went dead.",
+        "exampleZh": "突然電話沒電了。"
     },
     {
         "id": 30413,
@@ -3713,8 +3714,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 聾的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The two deaf actors converse solely in signing.",
+        "exampleZh": "兩位聾啞演員僅透過手語交談。"
     },
     {
         "id": 30414,
@@ -3722,8 +3723,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 交易",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "They shook on the deal.",
+        "exampleZh": "他們對這筆交易感到震驚。"
     },
     {
         "id": 30415,
@@ -3731,8 +3732,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 親愛的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "My dear girl, you're wrong.",
+        "exampleZh": "我親愛的女孩，你錯了。"
     },
     {
         "id": 30416,
@@ -3740,8 +3741,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 死亡",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Doctors become inured to death.",
+        "exampleZh": "醫生已經見怪不怪了。"
     },
     {
         "id": 30417,
@@ -3749,7 +3750,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 辯論",
         "unit": 17,
-        "example": "",
+        "example": "Anti-war protesters disrupted the debate.",
         "exampleZh": ""
     },
     {
@@ -3758,8 +3759,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 十二月",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I keep forgetting it's December.",
+        "exampleZh": "我總是忘記現在是十二月。"
     },
     {
         "id": 30419,
@@ -3767,8 +3768,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 決定",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "It's up to you to decide.",
+        "exampleZh": "由您決定。"
     },
     {
         "id": 30420,
@@ -3776,7 +3777,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 決定",
         "unit": 17,
-        "example": "",
+        "example": "It was a collective decision.",
         "exampleZh": ""
     },
     {
@@ -3785,8 +3786,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 裝飾",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The boys are planning to decorate when they get the time.",
+        "exampleZh": "男孩們計劃一有時間就裝飾一下。"
     },
     {
         "id": 30422,
@@ -3794,7 +3795,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 減少",
         "unit": 17,
-        "example": "",
+        "example": "People should decrease the amount of fat they eat.",
         "exampleZh": ""
     },
     {
@@ -3803,8 +3804,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 深的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He sank into deep melancholia.",
+        "exampleZh": "他陷入了深深的憂鬱之中。"
     },
     {
         "id": 30424,
@@ -3812,8 +3813,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 鹿",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He'd gone deer hunting with his cousins.",
+        "exampleZh": "他和他的表兄弟一起去獵鹿。"
     },
     {
         "id": 30425,
@@ -3821,7 +3822,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 程度",
         "unit": 17,
-        "example": "",
+        "example": "She's reading for a law degree.",
         "exampleZh": ""
     },
     {
@@ -3830,8 +3831,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 美味的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He served up a delicious meal.",
+        "exampleZh": "他為我們準備了一頓美味的飯菜。"
     },
     {
         "id": 30427,
@@ -3839,8 +3840,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 投遞",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "We deliver the goods in batches.",
+        "exampleZh": "我們分批發貨。"
     },
     {
         "id": 30428,
@@ -3848,7 +3849,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 牙醫",
         "unit": 17,
-        "example": "",
+        "example": "The dentist scaled and polished my teeth.",
         "exampleZh": ""
     },
     {
@@ -3857,8 +3858,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 否認",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "My instinctive reaction was to deny everything.",
+        "exampleZh": "我的本能反應是否認一切。"
     },
     {
         "id": 30430,
@@ -3866,7 +3867,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 部門",
         "unit": 17,
-        "example": "",
+        "example": "He moved to the sales department.",
         "exampleZh": ""
     },
     {
@@ -3875,8 +3876,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 依賴",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Wage rates depend on levels of productivity.",
+        "exampleZh": "工資率取決於生產力水準。"
     },
     {
         "id": 30432,
@@ -3884,8 +3885,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 描述",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Can you describe him to me?",
+        "exampleZh": "你能給我描述一下他嗎？"
     },
     {
         "id": 30433,
@@ -3893,7 +3894,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 沙漠",
         "unit": 17,
-        "example": "",
+        "example": "The heat in the desert was extreme.",
         "exampleZh": ""
     },
     {
@@ -3902,7 +3903,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 設計",
         "unit": 17,
-        "example": "",
+        "example": "She's good at art and design.",
         "exampleZh": ""
     },
     {
@@ -3911,7 +3912,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 慾望",
         "unit": 17,
-        "example": "",
+        "example": "We all desire health and happiness.",
         "exampleZh": ""
     },
     {
@@ -3920,8 +3921,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 書桌",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "A phone trilled on the desk.",
+        "exampleZh": "桌上的電話響起。"
     },
     {
         "id": 30437,
@@ -3929,7 +3930,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 甜點",
         "unit": 17,
-        "example": "",
+        "example": "I was tempted by the dessert menu.",
         "exampleZh": ""
     },
     {
@@ -3938,8 +3939,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 查出",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Arnold could detect a certain sadness in the old man's face.",
+        "exampleZh": "阿諾德可以從老人的臉上看出某種悲傷。"
     },
     {
         "id": 30439,
@@ -3947,8 +3948,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 發展",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "How fast would the disease develop?",
+        "exampleZh": "這種疾病的發展速度有多快？"
     },
     {
         "id": 30440,
@@ -3956,7 +3957,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 撥電話",
         "unit": 17,
-        "example": "",
+        "example": "Broadband is still more expensive than dial-up services.",
         "exampleZh": ""
     },
     {
@@ -3965,7 +3966,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 鑽石",
         "unit": 17,
-        "example": "",
+        "example": "The diamond is mounted in gold.",
         "exampleZh": ""
     },
     {
@@ -3974,7 +3975,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 日記",
         "unit": 17,
-        "example": "",
+        "example": "Eleanor began to keep a diary.",
         "exampleZh": ""
     },
     {
@@ -3983,7 +3984,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 字典",
         "unit": 17,
-        "example": "",
+        "example": "Can you suggest a good dictionary?",
         "exampleZh": ""
     },
     {
@@ -3992,8 +3993,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 死",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I thought I'd die laughing.",
+        "exampleZh": "我以為我會笑死。"
     },
     {
         "id": 30445,
@@ -4001,7 +4002,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 飲食",
         "unit": 17,
-        "example": "",
+        "example": "Sugar is ubiquitous in the diet.",
         "exampleZh": ""
     },
     {
@@ -4010,7 +4011,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 差異",
         "unit": 17,
-        "example": "",
+        "example": "Few people understand the difference.",
         "exampleZh": ""
     },
     {
@@ -4019,8 +4020,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 不同的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Different countries specialized in different products.",
+        "exampleZh": "不同的國家專門生產不同的產品。"
     },
     {
         "id": 30448,
@@ -4028,8 +4029,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 困難的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The exam was quite difficult.",
+        "exampleZh": "考試相當難。"
     },
     {
         "id": 30449,
@@ -4037,7 +4038,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 困難",
         "unit": 17,
-        "example": "",
+        "example": "Do you have difficulty getting up?",
         "exampleZh": ""
     },
     {
@@ -4046,8 +4047,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 挖掘",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I'll dig some potatoes for lunch.",
+        "exampleZh": "我會挖一些馬鈴薯當午餐。"
     },
     {
         "id": 30451,
@@ -4055,7 +4056,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 勤勉的",
         "unit": 17,
-        "example": "",
+        "example": "Meyers is a diligent and prolific worker.",
         "exampleZh": ""
     },
     {
@@ -4064,7 +4065,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 外交官",
         "unit": 17,
-        "example": "",
+        "example": "Fearey had all the charm and urbanity of the trained diplomat.",
         "exampleZh": ""
     },
     {
@@ -4073,8 +4074,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 晚餐",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Dinner was in two sittings.",
+        "exampleZh": "晚餐分兩次進行。"
     },
     {
         "id": 30454,
@@ -4082,7 +4083,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 恐龍",
         "unit": 17,
-        "example": "",
+        "example": "'Dinosaur' combines CGI animation with live-action location shots.",
         "exampleZh": ""
     },
     {
@@ -4091,8 +4092,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 直的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Christopher will direct day-to-day operations.",
+        "exampleZh": "克里斯托弗將指導日常運作。"
     },
     {
         "id": 30456,
@@ -4100,7 +4101,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 方向",
         "unit": 17,
-        "example": "",
+        "example": "Which direction are you facing?",
         "exampleZh": ""
     },
     {
@@ -4109,8 +4110,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 骯髒的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Don't get your dress dirty!",
+        "exampleZh": "別弄髒你的衣服！"
     },
     {
         "id": 30458,
@@ -4118,8 +4119,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 不同意",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "'I disagree,' said Polly stoutly.",
+        "exampleZh": "「我不同意，」波莉堅決地說。"
     },
     {
         "id": 30459,
@@ -4127,8 +4128,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 消失",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "They watched the bus disappear into the distance.",
+        "exampleZh": "他們看著公車消失在遠方。"
     },
     {
         "id": 30460,
@@ -4136,8 +4137,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 發現",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "It's exciting to discover traces of earlier civilizations.",
+        "exampleZh": "發現早期文明的痕跡是令人興奮的。"
     },
     {
         "id": 30461,
@@ -4145,8 +4146,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 討論",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "They had important matters to discuss.",
+        "exampleZh": "他們有重要的事情要討論。"
     },
     {
         "id": 30462,
@@ -4154,7 +4155,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 討論",
         "unit": 17,
-        "example": "",
+        "example": "The time for discussion is past.",
         "exampleZh": ""
     },
     {
@@ -4163,8 +4164,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 盤子",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "It lapped milk from a dish.",
+        "exampleZh": "它從盤子裡舔牛奶。"
     },
     {
         "id": 30464,
@@ -4172,8 +4173,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 不誠實的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "he was a dishonest hypocrite prepared to exploit his family.",
+        "exampleZh": "他是一個不誠實的偽君子，準備利用他的家人。"
     },
     {
         "id": 30465,
@@ -4181,7 +4182,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 距離",
         "unit": 17,
-        "example": "",
+        "example": "Mountains rose in the distance.",
         "exampleZh": ""
     },
     {
@@ -4190,8 +4191,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 遠的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He's a distant cousin of mine.",
+        "exampleZh": "他是我的遠房表弟。"
     },
     {
         "id": 30467,
@@ -4199,7 +4200,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 分割",
         "unit": 17,
-        "example": "",
+        "example": "The cells began to divide rapidly.",
         "exampleZh": ""
     },
     {
@@ -4208,8 +4209,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 頭暈的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She felt dizzy and nauseous.",
+        "exampleZh": "她感到頭暈、噁心。"
     },
     {
         "id": 30469,
@@ -4217,7 +4218,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 醫生",
         "unit": 17,
-        "example": "",
+        "example": "The doctor tested her reflexes.",
         "exampleZh": ""
     },
     {
@@ -4226,8 +4227,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 狗",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The dog refused to budge.",
+        "exampleZh": "狗狗拒絕讓步。"
     },
     {
         "id": 30471,
@@ -4235,8 +4236,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 洋娃娃",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The child was clutching a doll in her hand.",
+        "exampleZh": "孩子手裡拿著一個洋娃娃。"
     },
     {
         "id": 30472,
@@ -4244,8 +4245,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 元",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The dollar continued to slide.",
+        "exampleZh": "美元繼續下滑。"
     },
     {
         "id": 30473,
@@ -4253,7 +4254,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 海豚",
         "unit": 17,
-        "example": "",
+        "example": "The dolphin is an intelligent animal.",
         "exampleZh": ""
     },
     {
@@ -4262,7 +4263,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 驢",
         "unit": 17,
-        "example": "",
+        "example": "The donkey brayed and tried to bolt.",
         "exampleZh": ""
     },
     {
@@ -4271,8 +4272,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 門",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The door opens outwards.",
+        "exampleZh": "門向外打開。"
     },
     {
         "id": 30476,
@@ -4280,7 +4281,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 點",
         "unit": 17,
-        "example": "",
+        "example": "The weaker dot-coms have collapsed.",
         "exampleZh": ""
     },
     {
@@ -4289,7 +4290,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 加倍",
         "unit": 17,
-        "example": "",
+        "example": "He served 17 double faults.",
         "exampleZh": ""
     },
     {
@@ -4298,7 +4299,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 懷疑",
         "unit": 17,
-        "example": "",
+        "example": "There was little doubt in my mind.",
         "exampleZh": ""
     },
     {
@@ -4307,7 +4308,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 甜甜圈",
         "unit": 17,
-        "example": "",
+        "example": "Don't you like a doughnut?",
         "exampleZh": ""
     },
     {
@@ -4316,8 +4317,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 鴿子",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He wore a dove-grey suit.",
+        "exampleZh": "他穿著一套鴿灰色的西裝。"
     },
     {
         "id": 30481,
@@ -4325,8 +4326,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adv. 向下",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He crouched down beside her.",
+        "exampleZh": "他在她身邊蹲下。"
     },
     {
         "id": 30482,
@@ -4334,8 +4335,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adv. 在樓下",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Denise went downstairs and made some tea.",
+        "exampleZh": "丹妮絲下樓泡了茶。"
     },
     {
         "id": 30483,
@@ -4343,7 +4344,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 商業區",
         "unit": 17,
-        "example": "",
+        "example": "Parking can be tricky downtown.",
         "exampleZh": ""
     },
     {
@@ -4352,8 +4353,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. (一)打",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Packages arrived by the dozen from America.",
+        "exampleZh": "幾十個包裹從美國運來。"
     },
     {
         "id": 30485,
@@ -4361,7 +4362,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 拖",
         "unit": 17,
-        "example": "",
+        "example": "Walking's a drag—let's drive there.",
         "exampleZh": ""
     },
     {
@@ -4370,7 +4371,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 龍",
         "unit": 17,
-        "example": "",
+        "example": "The dragon is a blue dragon.",
         "exampleZh": ""
     },
     {
@@ -4379,7 +4380,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 戲劇",
         "unit": 17,
-        "example": "",
+        "example": "He knew nothing of Greek drama.",
         "exampleZh": ""
     },
     {
@@ -4388,8 +4389,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 拉",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "They managed an honourable 2–2 draw.",
+        "exampleZh": "他們打了一場光榮的2-2平手。"
     },
     {
         "id": 30489,
@@ -4397,7 +4398,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 抽屜",
         "unit": 17,
-        "example": "",
+        "example": "She yanked open the drawer.",
         "exampleZh": ""
     },
     {
@@ -4406,8 +4407,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 夢",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He finally actualized his dream.",
+        "exampleZh": "他終於實現了他的夢想。"
     },
     {
         "id": 30491,
@@ -4415,7 +4416,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 洋裝",
         "unit": 17,
-        "example": "",
+        "example": "For lunch, dress is informal.",
         "exampleZh": ""
     },
     {
@@ -4424,8 +4425,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 喝",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "This drink tastes like sherry.",
+        "exampleZh": "這種飲料嘗起來像雪利酒。"
     },
     {
         "id": 30493,
@@ -4433,8 +4434,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 開車",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "You shouldn't drive so fast.",
+        "exampleZh": "你不應該開這麼快。"
     },
     {
         "id": 30494,
@@ -4442,8 +4443,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 駕駛人",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The driver suffered head injuries.",
+        "exampleZh": "司機頭部受傷。"
     },
     {
         "id": 30495,
@@ -4451,7 +4452,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 落下",
         "unit": 17,
-        "example": "",
+        "example": "Temperatures can drop to freezing at night.",
         "exampleZh": ""
     },
     {
@@ -4460,7 +4461,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 藥;毒品",
         "unit": 17,
-        "example": "",
+        "example": "The new drug was ineffective.",
         "exampleZh": ""
     },
     {
@@ -4469,7 +4470,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 鼓",
         "unit": 17,
-        "example": "",
+        "example": "When you beat the drum, you feel good.",
         "exampleZh": ""
     },
     {
@@ -4478,8 +4479,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 乾的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "My mouth felt completely dry.",
+        "exampleZh": "我感覺口乾舌燥。"
     },
     {
         "id": 30499,
@@ -4487,7 +4488,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 烘乾機",
         "unit": 17,
-        "example": "",
+        "example": "Do you have a hair dryer?",
         "exampleZh": ""
     },
     {
@@ -4496,8 +4497,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 鴨子",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The main course was roast duck.",
+        "exampleZh": "主菜是烤鴨。"
     },
     {
         "id": 30501,
@@ -4505,8 +4506,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 笨的;啞的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "That was a pretty dumb thing to do.",
+        "exampleZh": "這是一件非常愚蠢的事。"
     },
     {
         "id": 30502,
@@ -4514,7 +4515,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 餃子",
         "unit": 17,
-        "example": "",
+        "example": "My favorite food is dumpling.",
         "exampleZh": ""
     },
     {
@@ -4523,8 +4524,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "prep. 在...期間",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Eggs were rationed during the war.",
+        "exampleZh": "戰爭期間雞蛋實施配給制。"
     },
     {
         "id": 30504,
@@ -4532,7 +4533,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 義務",
         "unit": 17,
-        "example": "",
+        "example": "He was recalled to military duty.",
         "exampleZh": ""
     },
     {
@@ -4541,8 +4542,8 @@ const jhWordsDB = [
         "kk": "/iːtʃ/",
         "zh": "adj. 每個",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "We're crazy about each other.",
+        "exampleZh": "我們都為彼此瘋狂。"
     },
     {
         "id": 30506,
@@ -4550,8 +4551,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 老鷹",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "An eagle circled high overhead.",
+        "exampleZh": "一隻鷹在頭頂高空盤旋。"
     },
     {
         "id": 30507,
@@ -4559,8 +4560,8 @@ const jhWordsDB = [
         "kk": "/ɪr/",
         "zh": "n. 耳朵",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He tweaked Guy's ear roughly.",
+        "exampleZh": "他粗暴地扭動蓋伊的耳朵。"
     },
     {
         "id": 30508,
@@ -4568,8 +4569,8 @@ const jhWordsDB = [
         "kk": "/ˈɜːrli/",
         "zh": "adj. 早的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "We didn't leave early enough.",
+        "exampleZh": "我們離開得不夠早。"
     },
     {
         "id": 30509,
@@ -4577,8 +4578,8 @@ const jhWordsDB = [
         "kk": "/ɜːrn/",
         "zh": "v. 獲得",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "'How much (money) does she earn?",
+        "exampleZh": "“她賺多少錢？”"
     },
     {
         "id": 30510,
@@ -4586,7 +4587,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 耳環",
         "unit": 17,
-        "example": "",
+        "example": "I've lost an earring and it was an expensive one.",
         "exampleZh": ""
     },
     {
@@ -4595,8 +4596,8 @@ const jhWordsDB = [
         "kk": "/ɜːrθ/",
         "zh": "n. 地球",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The Earth orbits in an ellipse.",
+        "exampleZh": "地球繞橢圓軌道運行。"
     },
     {
         "id": 30512,
@@ -4604,8 +4605,8 @@ const jhWordsDB = [
         "kk": "/iːz/",
         "zh": "v. 放鬆",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "This should help ease the pain.",
+        "exampleZh": "這應該有助於減輕疼痛。"
     },
     {
         "id": 30513,
@@ -4613,8 +4614,8 @@ const jhWordsDB = [
         "kk": "/iːst/",
         "zh": "n. 東方",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "They live on the east coast.",
+        "exampleZh": "他們住在東海岸。"
     },
     {
         "id": 30514,
@@ -4622,8 +4623,8 @@ const jhWordsDB = [
         "kk": "/ˈiːstərn/",
         "zh": "adj. 東方的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The wild card in the picture is eastern Europe.",
+        "exampleZh": "圖中的通配符是東歐。"
     },
     {
         "id": 30515,
@@ -4631,8 +4632,8 @@ const jhWordsDB = [
         "kk": "/ˈiːzi/",
         "zh": "adj. 容易的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The problem is anything but easy.",
+        "exampleZh": "問題絕非易事。"
     },
     {
         "id": 30516,
@@ -4640,8 +4641,8 @@ const jhWordsDB = [
         "kk": "/iːt/",
         "zh": "v. 吃",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She began to eat ravenously.",
+        "exampleZh": "她開始狼吞虎嚥地吃東西。"
     },
     {
         "id": 30517,
@@ -4649,8 +4650,8 @@ const jhWordsDB = [
         "kk": "/edʒ/",
         "zh": "n. 邊緣",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Be careful—it has a sharp edge.",
+        "exampleZh": "小心——它有鋒利的邊緣。"
     },
     {
         "id": 30518,
@@ -4658,7 +4659,7 @@ const jhWordsDB = [
         "kk": "/ˌedʒuˈkeɪʃn/",
         "zh": "n. 教育",
         "unit": 17,
-        "example": "",
+        "example": "Education is a top priority.",
         "exampleZh": ""
     },
     {
@@ -4667,7 +4668,7 @@ const jhWordsDB = [
         "kk": "/ɪˈfekt/",
         "zh": "n. 影響",
         "unit": 17,
-        "example": "",
+        "example": "The effect has proved hard to reproduce.",
         "exampleZh": ""
     },
     {
@@ -4676,7 +4677,7 @@ const jhWordsDB = [
         "kk": "/ˈefərt/",
         "zh": "n. 努力",
         "unit": 17,
-        "example": "",
+        "example": "You should put more effort into your work.",
         "exampleZh": ""
     },
     {
@@ -4685,8 +4686,8 @@ const jhWordsDB = [
         "kk": "/eɡ/",
         "zh": "n. 蛋",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Brush beaten egg over the pastry.",
+        "exampleZh": "在糕點上刷上打好的蛋。"
     },
     {
         "id": 30522,
@@ -4694,8 +4695,8 @@ const jhWordsDB = [
         "kk": "/eɪt/",
         "zh": "n. 八",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The cut needed eight stitches.",
+        "exampleZh": "傷口需要縫八針。"
     },
     {
         "id": 30523,
@@ -4703,7 +4704,7 @@ const jhWordsDB = [
         "kk": "/ˌeɪˈtiːn/",
         "zh": "n. 十八",
         "unit": 17,
-        "example": "",
+        "example": "His boat is an eighteen-footer.",
         "exampleZh": ""
     },
     {
@@ -4712,8 +4713,8 @@ const jhWordsDB = [
         "kk": "/ˈeɪti/",
         "zh": "n. 八十",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He's getting on for eighty.",
+        "exampleZh": "他已經八十歲了。"
     },
     {
         "id": 30525,
@@ -4721,8 +4722,8 @@ const jhWordsDB = [
         "kk": "/ˈiːðər/",
         "zh": "prop. (兩者中)任何一個",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Pete can't go and I can't either.",
+        "exampleZh": "皮特不能去，我也不能。"
     },
     {
         "id": 30526,
@@ -4730,7 +4731,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 年長的",
         "unit": 17,
-        "example": "",
+        "example": "He is her elder by several years.",
         "exampleZh": ""
     },
     {
@@ -4739,8 +4740,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 選出",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The committee voted to re-elect him (as) chairman.",
+        "exampleZh": "委員會投票選舉他再次擔任主席。"
     },
     {
         "id": 30528,
@@ -4748,8 +4749,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 大象",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The elephant flapped its ears.",
+        "exampleZh": "大象拍打著耳朵。"
     },
     {
         "id": 30529,
@@ -4757,8 +4758,8 @@ const jhWordsDB = [
         "kk": "/ɪˈlevn/",
         "zh": "n. 十一",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Charles I ruled for eleven years.",
+        "exampleZh": "查理一世統治十一年。"
     },
     {
         "id": 30530,
@@ -4766,7 +4767,7 @@ const jhWordsDB = [
         "kk": "/ɪˈlektrɪk/",
         "zh": "adj. 電的",
         "unit": 17,
-        "example": "",
+        "example": "He invented the first electric clock.",
         "exampleZh": ""
     },
     {
@@ -4775,8 +4776,8 @@ const jhWordsDB = [
         "kk": "/els/",
         "zh": "adv. 其他",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Everyone else was getting sloshed.",
+        "exampleZh": "其他人都喝得酩酊大醉。"
     },
     {
         "id": 30532,
@@ -4784,7 +4785,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 使尷尬",
         "unit": 17,
-        "example": "",
+        "example": "When you embarrass me, I'll tell you.",
         "exampleZh": ""
     },
     {
@@ -4793,7 +4794,7 @@ const jhWordsDB = [
         "kk": "/ɪˈmoʊʃn/",
         "zh": "n. 情緒",
         "unit": 17,
-        "example": "",
+        "example": "Jealousy is a primal emotion.",
         "exampleZh": ""
     },
     {
@@ -4802,7 +4803,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 強調",
         "unit": 17,
-        "example": "",
+        "example": "He flourished the glass to emphasize the point.",
         "exampleZh": ""
     },
     {
@@ -4811,7 +4812,7 @@ const jhWordsDB = [
         "kk": "/ɪmˈplɔɪ/",
         "zh": "v. 雇用",
         "unit": 17,
-        "example": "",
+        "example": "How many people does the company employ?",
         "exampleZh": ""
     },
     {
@@ -4820,7 +4821,7 @@ const jhWordsDB = [
         "kk": "/ˈempti/",
         "zh": "adj. 空的",
         "unit": 17,
-        "example": "",
+        "example": "The nation's coffers are empty.",
         "exampleZh": ""
     },
     {
@@ -4829,8 +4830,8 @@ const jhWordsDB = [
         "kk": "/end/",
         "zh": "v. 結束",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Waitressing was a dead-end job.",
+        "exampleZh": "服務生是一份沒有出路的工作。"
     },
     {
         "id": 30538,
@@ -4838,7 +4839,7 @@ const jhWordsDB = [
         "kk": "/ˈenəmi/",
         "zh": "n. 敵人",
         "unit": 17,
-        "example": "",
+        "example": "They retreated before the enemy.",
         "exampleZh": ""
     },
     {
@@ -4847,7 +4848,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 精力充沛的",
         "unit": 17,
-        "example": "",
+        "example": "He was hardworking and energetic.",
         "exampleZh": ""
     },
     {
@@ -4856,7 +4857,7 @@ const jhWordsDB = [
         "kk": "/ˈenərdʒi/",
         "zh": "n. 精力",
         "unit": 17,
-        "example": "",
+        "example": "She's always full of energy.",
         "exampleZh": ""
     },
     {
@@ -4865,7 +4866,7 @@ const jhWordsDB = [
         "kk": "/ˈendʒɪn/",
         "zh": "n. 引擎",
         "unit": 17,
-        "example": "",
+        "example": "The engine spluttered and died.",
         "exampleZh": ""
     },
     {
@@ -4874,7 +4875,7 @@ const jhWordsDB = [
         "kk": "/ˌendʒɪˈnɪr/",
         "zh": "n. 工程師",
         "unit": 17,
-        "example": "",
+        "example": "His father meant him to be an engineer.",
         "exampleZh": ""
     },
     {
@@ -4883,8 +4884,8 @@ const jhWordsDB = [
         "kk": "/ɪnˈdʒɔɪ/",
         "zh": "v. 享受",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "You're going to enjoy this.",
+        "exampleZh": "你會喜歡這個的。"
     },
     {
         "id": 30544,
@@ -4892,8 +4893,8 @@ const jhWordsDB = [
         "kk": "/ɪˈnʌf/",
         "zh": "adj. 足夠的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Six bottles should be enough.",
+        "exampleZh": "六瓶應該夠了。"
     },
     {
         "id": 30545,
@@ -4901,8 +4902,8 @@ const jhWordsDB = [
         "kk": "/ˈentər/",
         "zh": "v. 進入",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The sentry would not let her enter.",
+        "exampleZh": "哨兵不讓她進去。"
     },
     {
         "id": 30546,
@@ -4910,7 +4911,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 入口",
         "unit": 17,
-        "example": "",
+        "example": "This entrance is in constant use.",
         "exampleZh": ""
     },
     {
@@ -4919,7 +4920,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 信封",
         "unit": 17,
-        "example": "",
+        "example": "She opened the perfumed envelope.",
         "exampleZh": ""
     },
     {
@@ -4928,7 +4929,7 @@ const jhWordsDB = [
         "kk": "/ɪnˈvaɪrənmənt/",
         "zh": "n. 自然環境",
         "unit": 17,
-        "example": "",
+        "example": "Children need a caring environment.",
         "exampleZh": ""
     },
     {
@@ -4937,7 +4938,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 忌妒",
         "unit": 17,
-        "example": "",
+        "example": "I don't envy her that job.",
         "exampleZh": ""
     },
     {
@@ -4946,8 +4947,8 @@ const jhWordsDB = [
         "kk": "/ˈiːkwəl/",
         "zh": "adj. 相等的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "We are equal in every way.",
+        "exampleZh": "我們在各方面都是平等的。"
     },
     {
         "id": 30551,
@@ -4955,7 +4956,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 橡皮擦",
         "unit": 17,
-        "example": "",
+        "example": "I hide the eraser in her boot.",
         "exampleZh": ""
     },
     {
@@ -4964,7 +4965,7 @@ const jhWordsDB = [
         "kk": "/ˈerər/",
         "zh": "n. 錯誤",
         "unit": 17,
-        "example": "",
+        "example": "Vicenzo failed to spot the error.",
         "exampleZh": ""
     },
     {
@@ -4973,8 +4974,8 @@ const jhWordsDB = [
         "kk": "/ɪˈspeʃəli/",
         "zh": "adv. 特別地",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I especially like sweet things.",
+        "exampleZh": "我特別喜歡甜的東西。"
     },
     {
         "id": 30554,
@@ -4982,7 +4983,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 前夕",
         "unit": 17,
-        "example": "",
+        "example": "Richard had turned up on Christmas Eve with Tony.",
         "exampleZh": ""
     },
     {
@@ -4991,8 +4992,8 @@ const jhWordsDB = [
         "kk": "/ˈiːvən/",
         "zh": "adv. 甚至",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She can't even change a nappy.",
+        "exampleZh": "她連尿布都不會換。"
     },
     {
         "id": 30556,
@@ -5000,8 +5001,8 @@ const jhWordsDB = [
         "kk": "/ˈiːvnɪŋ/",
         "zh": "n. 傍晚",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I'll see you tomorrow evening.",
+        "exampleZh": "明天晚上見。"
     },
     {
         "id": 30557,
@@ -5009,7 +5010,7 @@ const jhWordsDB = [
         "kk": "/ɪˈvent/",
         "zh": "n. 事件",
         "unit": 17,
-        "example": "",
+        "example": "The event was voted a great success.",
         "exampleZh": ""
     },
     {
@@ -5018,8 +5019,8 @@ const jhWordsDB = [
         "kk": "/ˈevər/",
         "zh": "adv. 從來",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "It's raining worse than ever.",
+        "exampleZh": "雨比以前下得更大了。"
     },
     {
         "id": 30559,
@@ -5027,8 +5028,8 @@ const jhWordsDB = [
         "kk": "/ˈevri/",
         "zh": "adj. 每個",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Elections take place every year.",
+        "exampleZh": "選舉每年舉行。"
     },
     {
         "id": 30560,
@@ -5036,7 +5037,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 惡魔",
         "unit": 17,
-        "example": "",
+        "example": "Good and evil may co-exist within one family.",
         "exampleZh": ""
     },
     {
@@ -5045,8 +5046,8 @@ const jhWordsDB = [
         "kk": "/ɪɡˈzækt/",
         "zh": "adj. 正確的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I don't remember the exact words.",
+        "exampleZh": "我不記得確切的詞了。"
     },
     {
         "id": 30562,
@@ -5054,8 +5055,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 考試",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He passed the exam with ease.",
+        "exampleZh": "他輕鬆地通過了考試。"
     },
     {
         "id": 30563,
@@ -5063,8 +5064,8 @@ const jhWordsDB = [
         "kk": "/ɪɡˈzæmpl/",
         "zh": "n. 例子",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Let me give you an example.",
+        "exampleZh": "讓我舉個例子。"
     },
     {
         "id": 30564,
@@ -5072,8 +5073,8 @@ const jhWordsDB = [
         "kk": "/ˈeksələnt/",
         "zh": "adj. 優秀的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Her musicianship is excellent.",
+        "exampleZh": "她的音樂才華非常出色。"
     },
     {
         "id": 30565,
@@ -5081,8 +5082,8 @@ const jhWordsDB = [
         "kk": "/ɪkˈsept/",
         "zh": "prep. 除...之外",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "They all came except Matt.",
+        "exampleZh": "除了馬特之外，他們都來了。"
     },
     {
         "id": 30566,
@@ -5090,8 +5091,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 使...興奮",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Daniel's early exposure to motor racing did not excite his interest.",
+        "exampleZh": "丹尼爾早期接觸賽車運動並沒有激發他的興趣。"
     },
     {
         "id": 30567,
@@ -5099,7 +5100,7 @@ const jhWordsDB = [
         "kk": "/ɪkˈskjuːs/",
         "zh": "v. 原諒",
         "unit": 17,
-        "example": "",
+        "example": "She served up the usual excuse.",
         "exampleZh": ""
     },
     {
@@ -5108,7 +5109,7 @@ const jhWordsDB = [
         "kk": "/ˈeksərsaɪz/",
         "zh": "n. 運動",
         "unit": 17,
-        "example": "",
+        "example": "Do you take regular exercise?",
         "exampleZh": ""
     },
     {
@@ -5117,8 +5118,8 @@ const jhWordsDB = [
         "kk": "/ɪɡˈzɪst/",
         "zh": "v. 存在",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Many possible orderings may exist.",
+        "exampleZh": "可能存在許多可能的排序。"
     },
     {
         "id": 30570,
@@ -5126,7 +5127,7 @@ const jhWordsDB = [
         "kk": "/ˈeɡzɪt/",
         "zh": "n. 出口",
         "unit": 17,
-        "example": "",
+        "example": "There was a stampede for the exit.",
         "exampleZh": ""
     },
     {
@@ -5135,8 +5136,8 @@ const jhWordsDB = [
         "kk": "/ɪkˈspekt/",
         "zh": "v. 期望",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Don't expect it to improve overnight.",
+        "exampleZh": "不要指望它會在一夜之間有所改善。"
     },
     {
         "id": 30572,
@@ -5144,8 +5145,8 @@ const jhWordsDB = [
         "kk": "/ɪkˈspensɪv/",
         "zh": "adj. 昂貴的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Food was scarce and expensive.",
+        "exampleZh": "食物稀缺且昂貴。"
     },
     {
         "id": 30573,
@@ -5153,7 +5154,7 @@ const jhWordsDB = [
         "kk": "/ɪkˈspɪriəns/",
         "zh": "n. 經驗",
         "unit": 17,
-        "example": "",
+        "example": "It was a cathartic experience.",
         "exampleZh": ""
     },
     {
@@ -5162,8 +5163,8 @@ const jhWordsDB = [
         "kk": "/ɪkˈspleɪn/",
         "zh": "v. 說明",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "It's pretty hard to explain.",
+        "exampleZh": "這很難解釋。"
     },
     {
         "id": 30575,
@@ -5171,7 +5172,7 @@ const jhWordsDB = [
         "kk": "/ɪkˈspres/",
         "zh": "v. 表達",
         "unit": 17,
-        "example": "",
+        "example": "Words cannot express how pleased I am.",
         "exampleZh": ""
     },
     {
@@ -5180,7 +5181,7 @@ const jhWordsDB = [
         "kk": "/ˈekstrə/",
         "zh": "adj. 額外的",
         "unit": 17,
-        "example": "",
+        "example": "Running shoes have extra cushioning.",
         "exampleZh": ""
     },
     {
@@ -5189,8 +5190,8 @@ const jhWordsDB = [
         "kk": "/aɪ/",
         "zh": "n. 眼睛",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The film has a painterly eye.",
+        "exampleZh": "這部電影有著繪畫般的眼光。"
     },
     {
         "id": 30578,
@@ -5198,7 +5199,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 眉毛",
         "unit": 17,
-        "example": "",
+        "example": "She raised a questioning eyebrow.",
         "exampleZh": ""
     },
     {
@@ -5207,8 +5208,8 @@ const jhWordsDB = [
         "kk": "/feɪs/",
         "zh": "n. 臉",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Her eyes flicked from face to face.",
+        "exampleZh": "她的目光從一張臉掃到另一張臉。"
     },
     {
         "id": 30580,
@@ -5216,8 +5217,8 @@ const jhWordsDB = [
         "kk": "/fækt/",
         "zh": "n. 事實",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Her argument was grounded in fact.",
+        "exampleZh": "她的論點是有事實根據的。"
     },
     {
         "id": 30581,
@@ -5225,8 +5226,8 @@ const jhWordsDB = [
         "kk": "/ˈfæktəri/",
         "zh": "n. 工廠",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Striking workers picketed the factory.",
+        "exampleZh": "罷工的工人在工廠設置了糾察線。"
     },
     {
         "id": 30582,
@@ -5234,7 +5235,7 @@ const jhWordsDB = [
         "kk": "/feɪl/",
         "zh": "v. 失敗",
         "unit": 17,
-        "example": "",
+        "example": "He won't allow himself to fail.",
         "exampleZh": ""
     },
     {
@@ -5243,7 +5244,7 @@ const jhWordsDB = [
         "kk": "/fer/",
         "zh": "adj. 公平的",
         "unit": 17,
-        "example": "",
+        "example": "The punishment was very fair.",
         "exampleZh": ""
     },
     {
@@ -5252,8 +5253,8 @@ const jhWordsDB = [
         "kk": "/fɔːl/",
         "zh": "v. 倒下",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Output will fall by 6%.",
+        "exampleZh": "產量將下降6%。"
     },
     {
         "id": 30585,
@@ -5261,8 +5262,8 @@ const jhWordsDB = [
         "kk": "/fɔːls/",
         "zh": "adj. 錯的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The thief used a false identity.",
+        "exampleZh": "小偷使用了虛假身分。"
     },
     {
         "id": 30586,
@@ -5270,8 +5271,8 @@ const jhWordsDB = [
         "kk": "/ˈfæməli/",
         "zh": "n. 家",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "They were an insular family.",
+        "exampleZh": "他們是一個與世隔絕的家庭。"
     },
     {
         "id": 30587,
@@ -5279,8 +5280,8 @@ const jhWordsDB = [
         "kk": "/ˈfeɪməs/",
         "zh": "adj. 著名的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Some day he'll be famous.",
+        "exampleZh": "總有一天他會出名的。"
     },
     {
         "id": 30588,
@@ -5288,7 +5289,7 @@ const jhWordsDB = [
         "kk": "/fæn/",
         "zh": "n. 電扇",
         "unit": 17,
-        "example": "",
+        "example": "She installed a wall-mounted electric fan.",
         "exampleZh": ""
     },
     {
@@ -5297,7 +5298,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 想像力",
         "unit": 17,
-        "example": "",
+        "example": "Do you fancy a jar after work?",
         "exampleZh": ""
     },
     {
@@ -5306,7 +5307,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 極好的",
         "unit": 17,
-        "example": "",
+        "example": "You've got the job? Fantastic!",
         "exampleZh": ""
     },
     {
@@ -5315,8 +5316,8 @@ const jhWordsDB = [
         "kk": "/fɑːr/",
         "zh": "adj. 遠方的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "It's been quiet so far.",
+        "exampleZh": "到目前為止一直很安靜。"
     },
     {
         "id": 30592,
@@ -5324,7 +5325,7 @@ const jhWordsDB = [
         "kk": "/fɑːrm/",
         "zh": "n. 農場",
         "unit": 17,
-        "example": "",
+        "example": "Whose is that farm over yonder?",
         "exampleZh": ""
     },
     {
@@ -5333,8 +5334,8 @@ const jhWordsDB = [
         "kk": "/ˈfɑːrmər/",
         "zh": "n. 農夫",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "There once was a poor farmer who had four sons.",
+        "exampleZh": "從前有一個貧窮的農民，他有四個兒子。"
     },
     {
         "id": 30594,
@@ -5342,7 +5343,7 @@ const jhWordsDB = [
         "kk": "/ˈfæʃn/",
         "zh": "n. 流行",
         "unit": 17,
-        "example": "",
+        "example": "Carolyne is a fashion designer.",
         "exampleZh": ""
     },
     {
@@ -5351,8 +5352,8 @@ const jhWordsDB = [
         "kk": "/fæst/",
         "zh": "adj. 快的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "You shouldn't drive so fast.",
+        "exampleZh": "你不應該開這麼快。"
     },
     {
         "id": 30596,
@@ -5360,7 +5361,7 @@ const jhWordsDB = [
         "kk": "/fæt/",
         "zh": "adj. 肥胖的",
         "unit": 17,
-        "example": "",
+        "example": "This dress makes me look fat.",
         "exampleZh": ""
     },
     {
@@ -5369,7 +5370,7 @@ const jhWordsDB = [
         "kk": "/ˈfɑːðər/",
         "zh": "n. 父親",
         "unit": 17,
-        "example": "",
+        "example": "His father hailed from Italy.",
         "exampleZh": ""
     },
     {
@@ -5378,7 +5379,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 水龍頭",
         "unit": 17,
-        "example": "",
+        "example": "If God turns off one faucet, he can turn on another.",
         "exampleZh": ""
     },
     {
@@ -5387,7 +5388,7 @@ const jhWordsDB = [
         "kk": "/fɔːlt/",
         "zh": "n. 缺點",
         "unit": 17,
-        "example": "",
+        "example": "His worst fault was his inconsistency.",
         "exampleZh": ""
     },
     {
@@ -5396,7 +5397,7 @@ const jhWordsDB = [
         "kk": "/ˈfeɪvərɪt/",
         "zh": "adj. 最喜歡的",
         "unit": 17,
-        "example": "",
+        "example": "What's your favorite and less favorite Chinese food?",
         "exampleZh": ""
     },
     {
@@ -5405,8 +5406,8 @@ const jhWordsDB = [
         "kk": "/fɪr/",
         "zh": "n. 害怕",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Fear clutched at her heart.",
+        "exampleZh": "恐懼抓住了她的心。"
     },
     {
         "id": 30602,
@@ -5414,8 +5415,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 二月",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "His exhibition opens on February 5.",
+        "exampleZh": "他的展覽將於2月5日開幕。"
     },
     {
         "id": 30603,
@@ -5423,7 +5424,7 @@ const jhWordsDB = [
         "kk": "/fiː/",
         "zh": "n. 費用",
         "unit": 17,
-        "example": "",
+        "example": "The fee is pitifully low.",
         "exampleZh": ""
     },
     {
@@ -5432,8 +5433,8 @@ const jhWordsDB = [
         "kk": "/fiːd/",
         "zh": "v. 餵養",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Can you feed the cat, please?",
+        "exampleZh": "請問可以餵貓嗎？"
     },
     {
         "id": 30605,
@@ -5441,8 +5442,8 @@ const jhWordsDB = [
         "kk": "/fiːl/",
         "zh": "v. 感覺",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "'I feel...' There she stopped.",
+        "exampleZh": "「我感覺……」她停了下來。"
     },
     {
         "id": 30606,
@@ -5450,8 +5451,8 @@ const jhWordsDB = [
         "kk": "/ˈfiːlɪŋ/",
         "zh": "n. 感覺",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She's feeling a little homesick.",
+        "exampleZh": "她有點想家了。"
     },
     {
         "id": 30607,
@@ -5459,7 +5460,7 @@ const jhWordsDB = [
         "kk": "/ˈfiːmeɪl/",
         "zh": "n. 女性",
         "unit": 17,
-        "example": "",
+        "example": "Oestrogen is a female sex hormone.",
         "exampleZh": ""
     },
     {
@@ -5468,7 +5469,7 @@ const jhWordsDB = [
         "kk": "/fens/",
         "zh": "n. 柵欄",
         "unit": 17,
-        "example": "",
+        "example": "The fence snagged my sweater.",
         "exampleZh": ""
     },
     {
@@ -5477,7 +5478,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 節慶",
         "unit": 17,
-        "example": "",
+        "example": "I declare this festival open.",
         "exampleZh": ""
     },
     {
@@ -5486,7 +5487,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 發燒",
         "unit": 17,
-        "example": "",
+        "example": "The fever has passed its crisis.",
         "exampleZh": ""
     },
     {
@@ -5495,8 +5496,8 @@ const jhWordsDB = [
         "kk": "/fjuː/",
         "zh": "adj. 少數的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Few soldiers were in evidence.",
+        "exampleZh": "幾乎沒有士兵在場。"
     },
     {
         "id": 30612,
@@ -5504,8 +5505,8 @@ const jhWordsDB = [
         "kk": "/ˌfɪfˈtiːn/",
         "zh": "n. 十五",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The talks began some fifteen minutes late.",
+        "exampleZh": "會談晚了大約十五分鐘才開始。"
     },
     {
         "id": 30613,
@@ -5513,7 +5514,7 @@ const jhWordsDB = [
         "kk": "/ˈfɪfti/",
         "zh": "n. 五十",
         "unit": 17,
-        "example": "",
+        "example": "Fifty is the new forty.",
         "exampleZh": ""
     },
     {
@@ -5522,8 +5523,8 @@ const jhWordsDB = [
         "kk": "/faɪt/",
         "zh": "n. 戰鬥",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Did you have a fight with him?",
+        "exampleZh": "你和他吵架了嗎？"
     },
     {
         "id": 30615,
@@ -5531,7 +5532,7 @@ const jhWordsDB = [
         "kk": "/fɪl/",
         "zh": "v. 裝滿",
         "unit": 17,
-        "example": "",
+        "example": "Dentists fill teeth and repair broken ones.",
         "exampleZh": ""
     },
     {
@@ -5540,7 +5541,7 @@ const jhWordsDB = [
         "kk": "/fɪlm/",
         "zh": "n. 電影",
         "unit": 17,
-        "example": "",
+        "example": "Jenny's writing a film script.",
         "exampleZh": ""
     },
     {
@@ -5549,8 +5550,8 @@ const jhWordsDB = [
         "kk": "/ˈfaɪnl/",
         "zh": "adj. 最後的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The judges' decision is final.",
+        "exampleZh": "評審的決定是最終決定。"
     },
     {
         "id": 30618,
@@ -5558,7 +5559,7 @@ const jhWordsDB = [
         "kk": "/ˈfaɪnəli/",
         "zh": "adv. 最後",
         "unit": 17,
-        "example": "",
+        "example": "Finally she drifted into sleep.",
         "exampleZh": ""
     },
     {
@@ -5567,7 +5568,7 @@ const jhWordsDB = [
         "kk": "/faɪnd/",
         "zh": "v. 找到",
         "unit": 17,
-        "example": "",
+        "example": "I find cooking very relaxing.",
         "exampleZh": ""
     },
     {
@@ -5576,7 +5577,7 @@ const jhWordsDB = [
         "kk": "/faɪn/",
         "zh": "adj. 精巧的",
         "unit": 17,
-        "example": "",
+        "example": "'That's fine,' he replied amiably.",
         "exampleZh": ""
     },
     {
@@ -5585,7 +5586,7 @@ const jhWordsDB = [
         "kk": "/ˈfɪŋɡər/",
         "zh": "n. 指頭",
         "unit": 17,
-        "example": "",
+        "example": "He wagged a disapproving finger.",
         "exampleZh": ""
     },
     {
@@ -5594,8 +5595,8 @@ const jhWordsDB = [
         "kk": "/ˈfɪnɪʃ/",
         "zh": "v. 結束",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Listen, I finish at one.",
+        "exampleZh": "聽著，我講完了。"
     },
     {
         "id": 30623,
@@ -5603,8 +5604,8 @@ const jhWordsDB = [
         "kk": "/ˈfaɪər/",
         "zh": "n. 火",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The wooden rafters caught fire.",
+        "exampleZh": "木椽著火了。"
     },
     {
         "id": 30624,
@@ -5612,8 +5613,8 @@ const jhWordsDB = [
         "kk": "/fɜːrst/",
         "zh": "adj. 第一的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "His first marriage broke up.",
+        "exampleZh": "他的第一次婚姻破裂了。"
     },
     {
         "id": 30625,
@@ -5621,8 +5622,8 @@ const jhWordsDB = [
         "kk": "/fɪʃ/",
         "zh": "n. 魚",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "These fish are very aggressive.",
+        "exampleZh": "這些魚非常具有攻擊性。"
     },
     {
         "id": 30626,
@@ -5630,7 +5631,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 漁夫",
         "unit": 17,
-        "example": "",
+        "example": "The fisherman rowed us back to the shore.",
         "exampleZh": ""
     },
     {
@@ -5639,7 +5640,7 @@ const jhWordsDB = [
         "kk": "/fɪt/",
         "zh": "v. 適合",
         "unit": 17,
-        "example": "",
+        "example": "Where do I fit in?",
         "exampleZh": ""
     },
     {
@@ -5648,8 +5649,8 @@ const jhWordsDB = [
         "kk": "/faɪv/",
         "zh": "n. 五",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She brought up five children.",
+        "exampleZh": "她撫養了五個孩子。"
     },
     {
         "id": 30629,
@@ -5657,7 +5658,7 @@ const jhWordsDB = [
         "kk": "/fɪks/",
         "zh": "v. 固定",
         "unit": 17,
-        "example": "",
+        "example": "He cannot fix the electricity.",
         "exampleZh": ""
     },
     {
@@ -5666,7 +5667,7 @@ const jhWordsDB = [
         "kk": "/flæɡ/",
         "zh": "n. 旗幟",
         "unit": 17,
-        "example": "",
+        "example": "The American flag was flying.",
         "exampleZh": ""
     },
     {
@@ -5675,7 +5676,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 閃光",
         "unit": 17,
-        "example": "",
+        "example": "I'll need flash for this shot.",
         "exampleZh": ""
     },
     {
@@ -5684,7 +5685,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 手電筒",
         "unit": 17,
-        "example": "",
+        "example": "Sam was flicking a flashlight on and off.",
         "exampleZh": ""
     },
     {
@@ -5693,7 +5694,7 @@ const jhWordsDB = [
         "kk": "/flaɪt/",
         "zh": "n. 飛機航次",
         "unit": 17,
-        "example": "",
+        "example": "The flight was heavily overbooked.",
         "exampleZh": ""
     },
     {
@@ -5702,7 +5703,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 洪水",
         "unit": 17,
-        "example": "",
+        "example": "The flood waters slowly retreated.",
         "exampleZh": ""
     },
     {
@@ -5711,8 +5712,8 @@ const jhWordsDB = [
         "kk": "/flɔːr/",
         "zh": "n. 地板",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The bathroom floor was awash.",
+        "exampleZh": "浴室地板被水淹沒了。"
     },
     {
         "id": 30636,
@@ -5720,7 +5721,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 麵粉",
         "unit": 17,
-        "example": "",
+        "example": "Flour is sold by the kilogram.",
         "exampleZh": ""
     },
     {
@@ -5729,8 +5730,8 @@ const jhWordsDB = [
         "kk": "/ˈflaʊər/",
         "zh": "n. 花",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I've been weeding the flower beds.",
+        "exampleZh": "我一直在為花壇除草。"
     },
     {
         "id": 30638,
@@ -5738,7 +5739,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 流行性感冒",
         "unit": 17,
-        "example": "",
+        "example": "The whole family has the flu.",
         "exampleZh": ""
     },
     {
@@ -5747,7 +5748,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 長笛",
         "unit": 17,
-        "example": "",
+        "example": "I want a flute.",
         "exampleZh": ""
     },
     {
@@ -5756,8 +5757,8 @@ const jhWordsDB = [
         "kk": "/flaɪ/",
         "zh": "v. 飛",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She brushed the fly away.",
+        "exampleZh": "她把蒼蠅趕走了。"
     },
     {
         "id": 30641,
@@ -5765,7 +5766,7 @@ const jhWordsDB = [
         "kk": "/ˈfoʊkəs/",
         "zh": "n. 焦點",
         "unit": 17,
-        "example": "",
+        "example": "He prefers to focus on the positive.",
         "exampleZh": ""
     },
     {
@@ -5774,8 +5775,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 霧",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The fog began to disperse.",
+        "exampleZh": "霧氣開始散去。"
     },
     {
         "id": 30643,
@@ -5783,8 +5784,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 濃霧的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Get away from the foggy morning.",
+        "exampleZh": "遠離大霧的早晨。"
     },
     {
         "id": 30644,
@@ -5792,8 +5793,8 @@ const jhWordsDB = [
         "kk": "/ˈfɑːloʊ/",
         "zh": "v. 跟隨",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She signalled him to follow.",
+        "exampleZh": "她示意他跟上。"
     },
     {
         "id": 30645,
@@ -5801,8 +5802,8 @@ const jhWordsDB = [
         "kk": "/fuːd/",
         "zh": "n. 食物",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Food aid is urgently needed.",
+        "exampleZh": "迫切需要糧食援助。"
     },
     {
         "id": 30646,
@@ -5810,7 +5811,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 傻子",
         "unit": 17,
-        "example": "",
+        "example": "The man's a deuced fool!",
         "exampleZh": ""
     },
     {
@@ -5819,8 +5820,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 愚笨的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "How foolish I am to entertain doubts.",
+        "exampleZh": "我是多麼愚蠢啊，居然還去懷疑。"
     },
     {
         "id": 30648,
@@ -5828,8 +5829,8 @@ const jhWordsDB = [
         "kk": "/fʊt/",
         "zh": "n. 腳",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She stamped her foot again.",
+        "exampleZh": "她又跺了跺腳。"
     },
     {
         "id": 30649,
@@ -5837,7 +5838,7 @@ const jhWordsDB = [
         "kk": "/ˈfʊtbɔːl/",
         "zh": "n. 足球",
         "unit": 17,
-        "example": "",
+        "example": "Luckily, we both love football.",
         "exampleZh": ""
     },
     {
@@ -5846,8 +5847,8 @@ const jhWordsDB = [
         "kk": "/fɔːr/",
         "zh": "prep. 為了",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He was jailed for life for murder.",
+        "exampleZh": "他因謀殺罪被判終身監禁。"
     },
     {
         "id": 30651,
@@ -5855,7 +5856,7 @@ const jhWordsDB = [
         "kk": "/fɔːrs/",
         "zh": "v. 強迫",
         "unit": 17,
-        "example": "",
+        "example": "Is religion always a force for good?",
         "exampleZh": ""
     },
     {
@@ -5864,8 +5865,8 @@ const jhWordsDB = [
         "kk": "/ˈfɔːrən/",
         "zh": "adj. 外國的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Foreign News is on page 16.",
+        "exampleZh": "《外國新聞》在第 16 頁。"
     },
     {
         "id": 30653,
@@ -5873,7 +5874,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 外國人",
         "unit": 17,
-        "example": "",
+        "example": "Being a foreigner was not a handicap.",
         "exampleZh": ""
     },
     {
@@ -5882,7 +5883,7 @@ const jhWordsDB = [
         "kk": "/ˈfɔːrəst/",
         "zh": "n. 森林",
         "unit": 17,
-        "example": "",
+        "example": "We need to preserve the forest.",
         "exampleZh": ""
     },
     {
@@ -5891,8 +5892,8 @@ const jhWordsDB = [
         "kk": "/fərˈɡet/",
         "zh": "v. 忘記",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Let's forget the whole thing.",
+        "exampleZh": "讓我們忘記整件事。"
     },
     {
         "id": 30656,
@@ -5900,8 +5901,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 原諒",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "All right, I'll forgive you.",
+        "exampleZh": "好吧，我就原諒你了。"
     },
     {
         "id": 30657,
@@ -5909,8 +5910,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 叉子",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She stabbed the air with her fork.",
+        "exampleZh": "她用叉子刺向空氣。"
     },
     {
         "id": 30658,
@@ -5918,7 +5919,7 @@ const jhWordsDB = [
         "kk": "/fɔːrm/",
         "zh": "v. 形成",
         "unit": 17,
-        "example": "",
+        "example": "He hates violence in any form.",
         "exampleZh": ""
     },
     {
@@ -5927,8 +5928,8 @@ const jhWordsDB = [
         "kk": "/ˈfɔːrml/",
         "zh": "adj. 正式的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He wore formal evening dress.",
+        "exampleZh": "他穿著正式的晚禮服。"
     },
     {
         "id": 30660,
@@ -5936,8 +5937,8 @@ const jhWordsDB = [
         "kk": "/ˈfɔːrmər/",
         "zh": "adj. 前者的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The former option would be much more sensible.",
+        "exampleZh": "前一種選擇會更明智。"
     },
     {
         "id": 30661,
@@ -5945,8 +5946,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 四十",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Fifty is the new forty.",
+        "exampleZh": "五十歲是新的四十歲。"
     },
     {
         "id": 30662,
@@ -5963,8 +5964,8 @@ const jhWordsDB = [
         "kk": "/fɔːr/",
         "zh": "n. 四",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I took four Tylenol capsules.",
+        "exampleZh": "我吃了四顆泰諾膠囊。"
     },
     {
         "id": 30664,
@@ -5972,8 +5973,8 @@ const jhWordsDB = [
         "kk": "/ˌfɔːrˈtiːn/",
         "zh": "n. 十四",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I'm fourteen years old.",
+        "exampleZh": "我今年十四歲。"
     },
     {
         "id": 30665,
@@ -5981,7 +5982,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 狐狸",
         "unit": 17,
-        "example": "",
+        "example": "He's a wily old fox.",
         "exampleZh": ""
     },
     {
@@ -5990,8 +5991,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 直率的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The talks had been brutally frank.",
+        "exampleZh": "會談非常坦率。"
     },
     {
         "id": 30667,
@@ -5999,8 +6000,8 @@ const jhWordsDB = [
         "kk": "/friː/",
         "zh": "adj. 自由的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Sterling went into free fall.",
+        "exampleZh": "斯特林開始自由落體。"
     },
     {
         "id": 30668,
@@ -6008,7 +6009,7 @@ const jhWordsDB = [
         "kk": "/ˈfriːdəm/",
         "zh": "n. 自由",
         "unit": 17,
-        "example": "",
+        "example": "He burbles on about freedom.",
         "exampleZh": ""
     },
     {
@@ -6017,8 +6018,8 @@ const jhWordsDB = [
         "kk": "/freʃ/",
         "zh": "adj. 新鮮的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "We sell only fresh local produce.",
+        "exampleZh": "我們只賣新鮮的當地農產品。"
     },
     {
         "id": 30670,
@@ -6026,8 +6027,8 @@ const jhWordsDB = [
         "kk": "/ˈfraɪdeɪ/",
         "zh": "n. 星期五",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Today is Friday, September 14th.",
+        "exampleZh": "今天是 9 月 14 日，星期五。"
     },
     {
         "id": 30671,
@@ -6035,7 +6036,7 @@ const jhWordsDB = [
         "kk": "/frend/",
         "zh": "n. 朋友",
         "unit": 17,
-        "example": "",
+        "example": "She's a very special friend.",
         "exampleZh": ""
     },
     {
@@ -6044,8 +6045,8 @@ const jhWordsDB = [
         "kk": "/ˈfrendli/",
         "zh": "adj. 友好的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The locals are very friendly.",
+        "exampleZh": "當地人非常友善。"
     },
     {
         "id": 30673,
@@ -6053,8 +6054,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 使害怕",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Sorry, I didn't mean to frighten you.",
+        "exampleZh": "抱歉，我不是故意嚇唬你的。"
     },
     {
         "id": 30674,
@@ -6062,7 +6063,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 青蛙",
         "unit": 17,
-        "example": "",
+        "example": "The frog puffed itself up.",
         "exampleZh": ""
     },
     {
@@ -6071,8 +6072,8 @@ const jhWordsDB = [
         "kk": "/frʌm/",
         "zh": "prep. 從...",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Cheap flights are available from budget travel agents from $240.",
+        "exampleZh": "廉價旅行社提供廉價航班，起價為 240 美元。"
     },
     {
         "id": 30676,
@@ -6080,8 +6081,8 @@ const jhWordsDB = [
         "kk": "/frʌnt/",
         "zh": "adj. 前面的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Charlene sat in the front pew.",
+        "exampleZh": "夏琳坐在前排。"
     },
     {
         "id": 30677,
@@ -6089,8 +6090,8 @@ const jhWordsDB = [
         "kk": "/fruːt/",
         "zh": "n. 水果",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Sugar occurs naturally in fruit.",
+        "exampleZh": "糖天然存在於水果中。"
     },
     {
         "id": 30678,
@@ -6098,7 +6099,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 油炸",
         "unit": 17,
-        "example": "",
+        "example": "You'll fry on the beach if you're not careful.",
         "exampleZh": ""
     },
     {
@@ -6107,8 +6108,8 @@ const jhWordsDB = [
         "kk": "/fʊl/",
         "zh": "adj. 滿的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She's always full of energy.",
+        "exampleZh": "她總是充滿活力。"
     },
     {
         "id": 30680,
@@ -6116,8 +6117,8 @@ const jhWordsDB = [
         "kk": "/fʌn/",
         "zh": "n. 趣味",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "It was all innocent fun.",
+        "exampleZh": "這一切都是天真的樂趣。"
     },
     {
         "id": 30681,
@@ -6125,7 +6126,7 @@ const jhWordsDB = [
         "kk": "/ˈfʌŋkʃn/",
         "zh": "n. 功能",
         "unit": 17,
-        "example": "",
+        "example": "Breathing is an automatic function of the body.",
         "exampleZh": ""
     },
     {
@@ -6134,8 +6135,8 @@ const jhWordsDB = [
         "kk": "/ˈfʌni/",
         "zh": "adj. 好笑的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She found it hilariously funny.",
+        "exampleZh": "她覺得非常好笑。"
     },
     {
         "id": 30683,
@@ -6143,7 +6144,7 @@ const jhWordsDB = [
         "kk": "/ˈfɜːrnɪtʃər/",
         "zh": "n. 傢俱",
         "unit": 17,
-        "example": "",
+        "example": "We specialize in quality furniture.",
         "exampleZh": ""
     },
     {
@@ -6152,7 +6153,7 @@ const jhWordsDB = [
         "kk": "/ˈfjuːtʃər/",
         "zh": "n. 未來",
         "unit": 17,
-        "example": "",
+        "example": "The future is not without hope.",
         "exampleZh": ""
     },
     {
@@ -6161,7 +6162,7 @@ const jhWordsDB = [
         "kk": "/ɡeɪn/",
         "zh": "v. 獲得",
         "unit": 17,
-        "example": "",
+        "example": "Regular exercise helps prevent weight gain.",
         "exampleZh": ""
     },
     {
@@ -6170,8 +6171,8 @@ const jhWordsDB = [
         "kk": "/ɡeɪm/",
         "zh": "n. 遊戲",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He paced his game skilfully.",
+        "exampleZh": "他熟練地控制著比賽的節奏。"
     },
     {
         "id": 30687,
@@ -6179,7 +6180,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 車庫",
         "unit": 17,
-        "example": "",
+        "example": "Tim climbed on to the garage roof.",
         "exampleZh": ""
     },
     {
@@ -6188,8 +6189,8 @@ const jhWordsDB = [
         "kk": "/ˈɡɑːrdn/",
         "zh": "n. 花園",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The garden looked uncared for.",
+        "exampleZh": "花園看起來無人打理。"
     },
     {
         "id": 30689,
@@ -6197,7 +6198,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 垃圾",
         "unit": 17,
-        "example": "",
+        "example": "They are especially fond of garbage.",
         "exampleZh": ""
     },
     {
@@ -6206,7 +6207,7 @@ const jhWordsDB = [
         "kk": "/ɡæs/",
         "zh": "n. 瓦斯",
         "unit": 17,
-        "example": "",
+        "example": "This gas is highly poisonous.",
         "exampleZh": ""
     },
     {
@@ -6215,7 +6216,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 大門",
         "unit": 17,
-        "example": "",
+        "example": "He pushed open the garden gate.",
         "exampleZh": ""
     },
     {
@@ -6224,8 +6225,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 集合",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Gather ye rosebuds while ye may.",
+        "exampleZh": "趁還可以的時候，收集玫瑰花蕾。"
     },
     {
         "id": 30693,
@@ -6233,7 +6234,7 @@ const jhWordsDB = [
         "kk": "/ˈdʒenərəl/",
         "zh": "adj. 一般的",
         "unit": 17,
-        "example": "",
+        "example": "My father venerated General Eisenhower.",
         "exampleZh": ""
     },
     {
@@ -6242,8 +6243,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 慷慨的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She is generous to a fault.",
+        "exampleZh": "她慷慨得過分了。"
     },
     {
         "id": 30695,
@@ -6251,7 +6252,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 天才",
         "unit": 17,
-        "example": "",
+        "example": "She was extolled as a genius.",
         "exampleZh": ""
     },
     {
@@ -6260,8 +6261,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 溫和的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "These poems reveal her gentle side.",
+        "exampleZh": "這些詩揭示了她溫柔的一面。"
     },
     {
         "id": 30697,
@@ -6269,7 +6270,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 紳士",
         "unit": 17,
-        "example": "",
+        "example": "He behaved like a true gentleman.",
         "exampleZh": ""
     },
     {
@@ -6278,7 +6279,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 地理",
         "unit": 17,
-        "example": "",
+        "example": "Geography was my weak subject.",
         "exampleZh": ""
     },
     {
@@ -6287,7 +6288,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 姿勢,手勢",
         "unit": 17,
-        "example": "",
+        "example": "They communicated entirely by gesture.",
         "exampleZh": ""
     },
     {
@@ -6296,8 +6297,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 得到",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Somebody get a doctor!",
+        "exampleZh": "有人請醫生來嗎！"
     },
     {
         "id": 30701,
@@ -6305,8 +6306,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 鬼",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "A ghost indeed! I've never heard anything so silly.",
+        "exampleZh": "確實是鬼啊！我從來沒有聽過這麼愚蠢的話。"
     },
     {
         "id": 30702,
@@ -6314,7 +6315,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 巨大的",
         "unit": 17,
-        "example": "",
+        "example": "He's a giant of a man.",
         "exampleZh": ""
     },
     {
@@ -6323,8 +6324,8 @@ const jhWordsDB = [
         "kk": "/ɡɪft/",
         "zh": "n. 禮物",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Would you like the chocolates gift-wrapped?",
+        "exampleZh": "您想要禮品包裝的巧克力嗎？"
     },
     {
         "id": 30704,
@@ -6332,8 +6333,8 @@ const jhWordsDB = [
         "kk": "/ɡɜːrl/",
         "zh": "n. 女孩",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "An older girl befriended me.",
+        "exampleZh": "一個年長的女孩和我成了朋友。"
     },
     {
         "id": 30705,
@@ -6341,8 +6342,8 @@ const jhWordsDB = [
         "kk": "/ɡɪv/",
         "zh": "v. 給予",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I'll give you a ring.",
+        "exampleZh": "我會打電話給你。"
     },
     {
         "id": 30706,
@@ -6350,8 +6351,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 高興的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I'm glad you came along.",
+        "exampleZh": "我很高興你能來。"
     },
     {
         "id": 30707,
@@ -6359,8 +6360,8 @@ const jhWordsDB = [
         "kk": "/ɡlæs/",
         "zh": "n. 玻璃",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Glass contracts as it cools.",
+        "exampleZh": "玻璃冷卻時會收縮。"
     },
     {
         "id": 30708,
@@ -6368,8 +6369,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 眼鏡",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I wear glasses for driving.",
+        "exampleZh": "我開車時戴眼鏡。"
     },
     {
         "id": 30709,
@@ -6377,7 +6378,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 手套",
         "unit": 17,
-        "example": "",
+        "example": "She bent down to pick up her glove.",
         "exampleZh": ""
     },
     {
@@ -6386,7 +6387,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 膠水",
         "unit": 17,
-        "example": "",
+        "example": "I made a model out of paper and glue.",
         "exampleZh": ""
     },
     {
@@ -6395,8 +6396,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 去",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Very well, if you want to go, go you shall.",
+        "exampleZh": "很好，如果你想去，那就去吧。"
     },
     {
         "id": 30712,
@@ -6404,7 +6405,7 @@ const jhWordsDB = [
         "kk": "/ɡoʊl/",
         "zh": "n. 目標",
         "unit": 17,
-        "example": "",
+        "example": "The second goal was disallowed.",
         "exampleZh": ""
     },
     {
@@ -6413,7 +6414,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 山羊",
         "unit": 17,
-        "example": "",
+        "example": "I roped the goat to a post.",
         "exampleZh": ""
     },
     {
@@ -6422,8 +6423,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 上帝",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Do you believe in God ?",
+        "exampleZh": "你相信上帝嗎？"
     },
     {
         "id": 30715,
@@ -6431,8 +6432,8 @@ const jhWordsDB = [
         "kk": "/ɡoʊld/",
         "zh": "n. 黃金",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Gold rings adorned his fingers.",
+        "exampleZh": "他的手指上戴著金戒指。"
     },
     {
         "id": 30716,
@@ -6440,8 +6441,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 金色的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The golden light gilded the sea.",
+        "exampleZh": "金色的光芒為大海鍍上了一層金色。"
     },
     {
         "id": 30717,
@@ -6449,7 +6450,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 高爾夫球",
         "unit": 17,
-        "example": "",
+        "example": "His favourite pastime is golf.",
         "exampleZh": ""
     },
     {
@@ -6458,8 +6459,8 @@ const jhWordsDB = [
         "kk": "/ɡʊd/",
         "zh": "adj. 好的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She speaks good English.",
+        "exampleZh": "她英語說得很好。"
     },
     {
         "id": 30719,
@@ -6467,7 +6468,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 善良",
         "unit": 17,
-        "example": "",
+        "example": "Goodness, I wonder if he knows.",
         "exampleZh": ""
     },
     {
@@ -6476,8 +6477,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 鵝",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The big white goose became a black goose.",
+        "exampleZh": "大白鵝變成了黑鵝。"
     },
     {
         "id": 30721,
@@ -6485,7 +6486,7 @@ const jhWordsDB = [
         "kk": "/ˈɡʌvərnmənt/",
         "zh": "n. 政府",
         "unit": 17,
-        "example": "",
+        "example": "The government took swift action.",
         "exampleZh": ""
     },
     {
@@ -6494,7 +6495,7 @@ const jhWordsDB = [
         "kk": "/ɡreɪd/",
         "zh": "n. 分數",
         "unit": 17,
-        "example": "",
+        "example": "I flunked math in second grade.",
         "exampleZh": ""
     },
     {
@@ -6503,7 +6504,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 克",
         "unit": 17,
-        "example": "",
+        "example": "A few twentieths of a gram can be critical.",
         "exampleZh": ""
     },
     {
@@ -6512,8 +6513,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 祖父",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "His grandfather was a professor.",
+        "exampleZh": "他的祖父是一位教授。"
     },
     {
         "id": 30725,
@@ -6521,8 +6522,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 祖母",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Her grandmother mumbled in her sleep.",
+        "exampleZh": "奶奶在睡夢中呢喃著。"
     },
     {
         "id": 30726,
@@ -6530,8 +6531,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 孫子",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He is my grandson.",
+        "exampleZh": "他是我的孫子。"
     },
     {
         "id": 30727,
@@ -6539,7 +6540,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 葡萄",
         "unit": 17,
-        "example": "",
+        "example": "Is it a grape or a plum?",
         "exampleZh": ""
     },
     {
@@ -6548,8 +6549,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 草",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The grass had grown waist-high.",
+        "exampleZh": "草已經長到及腰高了。"
     },
     {
         "id": 30729,
@@ -6557,8 +6558,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 灰色的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I want that gray coat.",
+        "exampleZh": "我想要那件灰色外套。"
     },
     {
         "id": 30730,
@@ -6566,8 +6567,8 @@ const jhWordsDB = [
         "kk": "/ɡreɪt/",
         "zh": "adj. 傑出的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "We became great buddies.",
+        "exampleZh": "我們成了好朋友。"
     },
     {
         "id": 30731,
@@ -6575,8 +6576,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 貪心的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Linda became an honest girl and was never greedy.",
+        "exampleZh": "琳達變成了一個誠實的女孩，從不貪婪。"
     },
     {
         "id": 30732,
@@ -6584,8 +6585,8 @@ const jhWordsDB = [
         "kk": "/ɡriːn/",
         "zh": "adj. 綠色的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She wore purple and green silk.",
+        "exampleZh": "她穿著紫色和綠色的絲綢。"
     },
     {
         "id": 30733,
@@ -6593,8 +6594,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 問候",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She floated down the steps to greet us.",
+        "exampleZh": "她飄下台階迎接我們。"
     },
     {
         "id": 30734,
@@ -6602,8 +6603,8 @@ const jhWordsDB = [
         "kk": "/ɡraʊnd/",
         "zh": "n. 土地",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The ground was frozen solid.",
+        "exampleZh": "地面凍得嚴嚴實實。"
     },
     {
         "id": 30735,
@@ -6611,8 +6612,8 @@ const jhWordsDB = [
         "kk": "/ɡruːp/",
         "zh": "n. 群,組",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The group encompasses all ages.",
+        "exampleZh": "該群體涵蓋所有年齡層。"
     },
     {
         "id": 30736,
@@ -6620,8 +6621,8 @@ const jhWordsDB = [
         "kk": "/ɡroʊ/",
         "zh": "v. 生長",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The economy continues to grow.",
+        "exampleZh": "經濟持續成長。"
     },
     {
         "id": 30737,
@@ -6629,7 +6630,7 @@ const jhWordsDB = [
         "kk": "/ɡɑːrd/",
         "zh": "n. 警衛",
         "unit": 17,
-        "example": "",
+        "example": "A guard was posted outside the building.",
         "exampleZh": ""
     },
     {
@@ -6638,7 +6639,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 番石榴",
         "unit": 17,
-        "example": "",
+        "example": "I want to eat guava.",
         "exampleZh": ""
     },
     {
@@ -6647,8 +6648,8 @@ const jhWordsDB = [
         "kk": "/ɡes/",
         "zh": "v. 猜測",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "'Guess what?' she said archly.",
+        "exampleZh": "「你猜怎麼著？」她調皮地說。"
     },
     {
         "id": 30740,
@@ -6656,8 +6657,8 @@ const jhWordsDB = [
         "kk": "/ɡest/",
         "zh": "n. 客人",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Our special guest tonight is...",
+        "exampleZh": "今晚我們的特別嘉賓是…"
     },
     {
         "id": 30741,
@@ -6665,8 +6666,8 @@ const jhWordsDB = [
         "kk": "/ɡaɪd/",
         "zh": "v. 引導",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The guide flashed a light into the cave.",
+        "exampleZh": "嚮導向山洞裡照射了燈光。"
     },
     {
         "id": 30742,
@@ -6674,7 +6675,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 吉他",
         "unit": 17,
-        "example": "",
+        "example": "He played some wah-wah guitar.",
         "exampleZh": ""
     },
     {
@@ -6683,8 +6684,8 @@ const jhWordsDB = [
         "kk": "/ɡʌn/",
         "zh": "n. 槍",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He refused to yield up his gun.",
+        "exampleZh": "他拒絕交出槍。"
     },
     {
         "id": 30744,
@@ -6692,7 +6693,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 小伙子",
         "unit": 17,
-        "example": "",
+        "example": "He's a real meat-and-potatoes guy.",
         "exampleZh": ""
     },
     {
@@ -6701,7 +6702,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 體育館",
         "unit": 17,
-        "example": "",
+        "example": "The commons is next to the gym.",
         "exampleZh": ""
     },
     {
@@ -6710,7 +6711,7 @@ const jhWordsDB = [
         "kk": "/ˈhæbɪt/",
         "zh": "n. 習慣",
         "unit": 17,
-        "example": "",
+        "example": "I only do it out of habit.",
         "exampleZh": ""
     },
     {
@@ -6719,8 +6720,8 @@ const jhWordsDB = [
         "kk": "/her/",
         "zh": "n. 頭髮",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Katy has long blackish hair.",
+        "exampleZh": "凱蒂有一頭黑色的長髮。"
     },
     {
         "id": 30748,
@@ -6728,8 +6729,8 @@ const jhWordsDB = [
         "kk": "/hæf/",
         "zh": "adj. 一半的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Children travel (at) half fare.",
+        "exampleZh": "兒童乘車半價。"
     },
     {
         "id": 30749,
@@ -6737,7 +6738,7 @@ const jhWordsDB = [
         "kk": "/hɔːl/",
         "zh": "n. 大廳",
         "unit": 17,
-        "example": "",
+        "example": "Applause rang through the hall.",
         "exampleZh": ""
     },
     {
@@ -6746,7 +6747,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 萬聖節",
         "unit": 17,
-        "example": "",
+        "example": "Halloween is a strange holiday.",
         "exampleZh": ""
     },
     {
@@ -6755,8 +6756,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 火腿",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I was eating ham and Swiss cheese on rye.",
+        "exampleZh": "我正在吃黑麥火腿和瑞士起司。"
     },
     {
         "id": 30752,
@@ -6764,7 +6765,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 漢堡",
         "unit": 17,
-        "example": "",
+        "example": "We stopped at a drive-in for a hamburger.",
         "exampleZh": ""
     },
     {
@@ -6773,7 +6774,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 槌子",
         "unit": 17,
-        "example": "",
+        "example": "He hit the nail squarely on the head with the hammer.",
         "exampleZh": ""
     },
     {
@@ -6782,8 +6783,8 @@ const jhWordsDB = [
         "kk": "/hænd/",
         "zh": "n. 手",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He patted her hand patronizingly.",
+        "exampleZh": "他居高臨下地拍拍她的手。"
     },
     {
         "id": 30755,
@@ -6791,7 +6792,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 手帕",
         "unit": 17,
-        "example": "",
+        "example": "The handkerchief is edged with lace.",
         "exampleZh": ""
     },
     {
@@ -6800,7 +6801,7 @@ const jhWordsDB = [
         "kk": "/ˈhændl/",
         "zh": "v. 處理",
         "unit": 17,
-        "example": "",
+        "example": "I pumped the handle like crazy.",
         "exampleZh": ""
     },
     {
@@ -6809,7 +6810,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 英俊的",
         "unit": 17,
-        "example": "",
+        "example": "He was tall, lean and handsome.",
         "exampleZh": ""
     },
     {
@@ -6818,8 +6819,8 @@ const jhWordsDB = [
         "kk": "/hæŋ/",
         "zh": "v. 掛",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Hang on—I'm not quite ready.",
+        "exampleZh": "等一下——我還沒準備好。"
     },
     {
         "id": 30759,
@@ -6827,7 +6828,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 衣架",
         "unit": 17,
-        "example": "",
+        "example": "I need some hangers.",
         "exampleZh": ""
     },
     {
@@ -6836,8 +6837,8 @@ const jhWordsDB = [
         "kk": "/ˈhæpən/",
         "zh": "v. 發生",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "That doesn't happen very often.",
+        "exampleZh": "這種情況並不常發生。"
     },
     {
         "id": 30761,
@@ -6845,8 +6846,8 @@ const jhWordsDB = [
         "kk": "/ˈhæpi/",
         "zh": "adj. 快樂的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She had a happy childhood.",
+        "exampleZh": "她有一個幸福的童年。"
     },
     {
         "id": 30762,
@@ -6854,8 +6855,8 @@ const jhWordsDB = [
         "kk": "/hɑːrd/",
         "zh": "adj. 難的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "It's pretty hard to explain.",
+        "exampleZh": "這很難解釋。"
     },
     {
         "id": 30763,
@@ -6863,8 +6864,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adv. 幾乎不",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I've got hardly any money.",
+        "exampleZh": "我幾乎沒有錢了"
     },
     {
         "id": 30764,
@@ -6872,8 +6873,8 @@ const jhWordsDB = [
         "kk": "/hæt/",
         "zh": "n. 帽子",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She pulled her hat straight.",
+        "exampleZh": "她把帽子拉直。"
     },
     {
         "id": 30765,
@@ -6881,8 +6882,8 @@ const jhWordsDB = [
         "kk": "/heɪt/",
         "zh": "v. 憎恨",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The obverse of love is hate.",
+        "exampleZh": "愛的反面是恨。"
     },
     {
         "id": 30766,
@@ -6890,8 +6891,8 @@ const jhWordsDB = [
         "kk": "/hæv/",
         "zh": "v. 有",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Times have changed and so have I.",
+        "exampleZh": "時代變了，我也變了。"
     },
     {
         "id": 30767,
@@ -6899,8 +6900,8 @@ const jhWordsDB = [
         "kk": "/hed/",
         "zh": "n. 頭",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He shook his head tiredly.",
+        "exampleZh": "他疲倦地搖搖頭。"
     },
     {
         "id": 30768,
@@ -6908,7 +6909,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 頭痛",
         "unit": 17,
-        "example": "",
+        "example": "He complained of a headache.",
         "exampleZh": ""
     },
     {
@@ -6917,8 +6918,8 @@ const jhWordsDB = [
         "kk": "/helθ/",
         "zh": "n. 健康",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He's always enjoyed good health.",
+        "exampleZh": "他一直身體健康。"
     },
     {
         "id": 30770,
@@ -6926,8 +6927,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 健康的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He has a healthy appetite.",
+        "exampleZh": "他胃口健康。"
     },
     {
         "id": 30771,
@@ -6935,8 +6936,8 @@ const jhWordsDB = [
         "kk": "/hɪr/",
         "zh": "v. 聽",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I can hear someone calling.",
+        "exampleZh": "我能聽到有人打電話。"
     },
     {
         "id": 30772,
@@ -6944,8 +6945,8 @@ const jhWordsDB = [
         "kk": "/hɑːrt/",
         "zh": "n. 心臟",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "My heart was knocking wildly.",
+        "exampleZh": "我的心劇烈地跳動著。"
     },
     {
         "id": 30773,
@@ -6953,8 +6954,8 @@ const jhWordsDB = [
         "kk": "/hiːt/",
         "zh": "n. 熱",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The heat was becoming unbearable.",
+        "exampleZh": "炎熱變得難以忍受。"
     },
     {
         "id": 30774,
@@ -6962,7 +6963,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 熱水器",
         "unit": 17,
-        "example": "",
+        "example": "This type of heater uses a lot of electricity.",
         "exampleZh": ""
     },
     {
@@ -6971,8 +6972,8 @@ const jhWordsDB = [
         "kk": "/ˈhevi/",
         "zh": "adj. 重的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "These scissors are awfully heavy.",
+        "exampleZh": "這些剪刀非常重。"
     },
     {
         "id": 30776,
@@ -6980,7 +6981,7 @@ const jhWordsDB = [
         "kk": "/haɪt/",
         "zh": "n. 高度",
         "unit": 17,
-        "example": "",
+        "example": "The aircraft was gaining height.",
         "exampleZh": ""
     },
     {
@@ -6989,7 +6990,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 直升機",
         "unit": 17,
-        "example": "",
+        "example": "The helicopter rose into the air.",
         "exampleZh": ""
     },
     {
@@ -6998,8 +6999,8 @@ const jhWordsDB = [
         "kk": "/help/",
         "zh": "n. 幫忙",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "You never help me.",
+        "exampleZh": "你從來不幫我。"
     },
     {
         "id": 30779,
@@ -7007,8 +7008,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 有助益的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Sorry I can't be more helpful.",
+        "exampleZh": "抱歉，我無法提供更多協助。"
     },
     {
         "id": 30780,
@@ -7016,7 +7017,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 母雞",
         "unit": 17,
-        "example": "",
+        "example": "The hen may not be able to feed its young.",
         "exampleZh": ""
     },
     {
@@ -7025,8 +7026,8 @@ const jhWordsDB = [
         "kk": "/hɪr/",
         "zh": "adv. 在這裡",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "'Here?' said Kate, incredulous.",
+        "exampleZh": "'這裡？ '凱特難以置信地說。"
     },
     {
         "id": 30782,
@@ -7034,7 +7035,7 @@ const jhWordsDB = [
         "kk": "/ˈhɪroʊ/",
         "zh": "n. 英雄",
         "unit": 17,
-        "example": "",
+        "example": "He was eulogized as a hero.",
         "exampleZh": ""
     },
     {
@@ -7043,8 +7044,8 @@ const jhWordsDB = [
         "kk": "/haɪd/",
         "zh": "v. 藏",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He didn't hide his pacifism.",
+        "exampleZh": "他並沒有掩飾自己的和平主義。"
     },
     {
         "id": 30784,
@@ -7052,8 +7053,8 @@ const jhWordsDB = [
         "kk": "/haɪ/",
         "zh": "adj. 高的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "How high is Mount Aconcagua?",
+        "exampleZh": "阿空加瓜山有多高？"
     },
     {
         "id": 30785,
@@ -7061,7 +7062,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 公路",
         "unit": 17,
-        "example": "",
+        "example": "Anita drove north up Pacific Highway.",
         "exampleZh": ""
     },
     {
@@ -7070,7 +7071,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 遠足",
         "unit": 17,
-        "example": "",
+        "example": "The site is reached by a 30-minute hike through dense forest.",
         "exampleZh": ""
     },
     {
@@ -7079,8 +7080,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 小山丘",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The ball rolled down the hill.",
+        "exampleZh": "球滾下了山。"
     },
     {
         "id": 30788,
@@ -7088,7 +7089,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 臀部",
         "unit": 17,
-        "example": "",
+        "example": "He fell and fractured his hip.",
         "exampleZh": ""
     },
     {
@@ -7097,7 +7098,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 河馬",
         "unit": 17,
-        "example": "",
+        "example": "The hippo lives in water.",
         "exampleZh": ""
     },
     {
@@ -7106,7 +7107,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 雇用",
         "unit": 17,
-        "example": "",
+        "example": "Do you hire out bikes?",
         "exampleZh": ""
     },
     {
@@ -7115,8 +7116,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 歷史",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I'm very interested in history.",
+        "exampleZh": "我對歷史很有興趣。"
     },
     {
         "id": 30792,
@@ -7124,8 +7125,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 打",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The ferry hit us amidships.",
+        "exampleZh": "渡輪撞到了我們的船中部。"
     },
     {
         "id": 30793,
@@ -7133,7 +7134,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 嗜好",
         "unit": 17,
-        "example": "",
+        "example": "His hobby is freefall parachuting.",
         "exampleZh": ""
     },
     {
@@ -7142,8 +7143,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 抓住",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Does your offer still hold?",
+        "exampleZh": "你的報價還有效嗎？"
     },
     {
         "id": 30795,
@@ -7151,8 +7152,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 洞",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "There's a hole in the crotch.",
+        "exampleZh": "胯部有一個洞。"
     },
     {
         "id": 30796,
@@ -7160,8 +7161,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 假日",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Today is a holiday in Wales.",
+        "exampleZh": "今天是威爾斯的假期。"
     },
     {
         "id": 30797,
@@ -7169,8 +7170,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 家",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Burglars broke into their home.",
+        "exampleZh": "竊賊闖入了他們的家。"
     },
     {
         "id": 30798,
@@ -7178,8 +7179,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 作業",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "How much homework do you get?",
+        "exampleZh": "你有多少作業？"
     },
     {
         "id": 30799,
@@ -7187,8 +7188,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 誠實的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I'm disappointed, to be honest.",
+        "exampleZh": "老實說，我很失望。"
     },
     {
         "id": 30800,
@@ -7196,7 +7197,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 誠實",
         "unit": 17,
-        "example": "",
+        "example": "Her honesty is beyond question.",
         "exampleZh": ""
     },
     {
@@ -7205,7 +7206,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 蜂蜜",
         "unit": 17,
-        "example": "",
+        "example": "Have you seen my keys, honey?",
         "exampleZh": ""
     },
     {
@@ -7214,7 +7215,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 跳躍",
         "unit": 17,
-        "example": "",
+        "example": "Hop in, I'll drive you home.",
         "exampleZh": ""
     },
     {
@@ -7223,8 +7224,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 希望",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I hope (that) you're okay.",
+        "exampleZh": "我希望你沒事。"
     },
     {
         "id": 30804,
@@ -7232,7 +7233,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 恐怖的",
         "unit": 17,
-        "example": "",
+        "example": "Ugh – it was horrible.",
         "exampleZh": ""
     },
     {
@@ -7241,8 +7242,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 馬",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "This horse needs firm handling.",
+        "exampleZh": "這匹馬需要堅定的駕馭。"
     },
     {
         "id": 30806,
@@ -7250,7 +7251,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 醫院",
         "unit": 17,
-        "example": "",
+        "example": "The VA hospital needs renovation.",
         "exampleZh": ""
     },
     {
@@ -7259,7 +7260,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 主人",
         "unit": 17,
-        "example": "",
+        "example": "Shall I take my host family a gift?",
         "exampleZh": ""
     },
     {
@@ -7268,8 +7269,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 熱的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "It's hot out – very hot, very humid.",
+        "exampleZh": "外面很熱——非常熱、非常潮濕。"
     },
     {
         "id": 30809,
@@ -7277,7 +7278,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 旅館",
         "unit": 17,
-        "example": "",
+        "example": "They bugged her hotel room.",
         "exampleZh": ""
     },
     {
@@ -7286,8 +7287,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 小時",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "That clock's an hour fast.",
+        "exampleZh": "那個時鐘快了一個小時。"
     },
     {
         "id": 30811,
@@ -7295,8 +7296,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 房子",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Their house is massive.",
+        "exampleZh": "他們的房子很大。"
     },
     {
         "id": 30812,
@@ -7304,7 +7305,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 家庭主婦",
         "unit": 17,
-        "example": "",
+        "example": "I hated the label 'housewife'.",
         "exampleZh": ""
     },
     {
@@ -7313,7 +7314,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 家事",
         "unit": 17,
-        "example": "",
+        "example": "Housework is a never-ending task.",
         "exampleZh": ""
     },
     {
@@ -7322,8 +7323,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adv. 如何",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "How much is haulage?",
+        "exampleZh": "運費是多少？"
     },
     {
         "id": 30815,
@@ -7331,8 +7332,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adv. 然而",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "On one issue, however, she was immovable.",
+        "exampleZh": "然而，在一個問題上，她卻無動於衷。"
     },
     {
         "id": 30816,
@@ -7340,8 +7341,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 巨大的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The huge, iron gate was locked.",
+        "exampleZh": "巨大的鐵門緊鎖著。"
     },
     {
         "id": 30817,
@@ -7349,8 +7350,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 人",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Human longevity runs in families.",
+        "exampleZh": "人類的長壽與家庭息息相關。"
     },
     {
         "id": 30818,
@@ -7358,8 +7359,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 謙虛的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He always makes much of his humble origins.",
+        "exampleZh": "他總是看重自己卑微的出身。"
     },
     {
         "id": 30819,
@@ -7367,8 +7368,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 潮溼的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "These plants love warm, humid atmospheres.",
+        "exampleZh": "這些植物喜歡溫暖、潮濕的氣氛。"
     },
     {
         "id": 30820,
@@ -7376,7 +7377,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 幽默",
         "unit": 17,
-        "example": "",
+        "example": "The movie mixes broad humor with romance.",
         "exampleZh": ""
     },
     {
@@ -7385,7 +7386,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 幽默的",
         "unit": 17,
-        "example": "",
+        "example": "The writing is brutally tough and savagely humorous.",
         "exampleZh": ""
     },
     {
@@ -7394,8 +7395,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 一百",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He's on three hundred a week.",
+        "exampleZh": "他每週收入三百。"
     },
     {
         "id": 30823,
@@ -7403,7 +7404,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 飢餓",
         "unit": 17,
-        "example": "",
+        "example": "Hunger drove her to steal.",
         "exampleZh": ""
     },
     {
@@ -7412,8 +7413,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 飢餓的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "You're not hungry, are you?",
+        "exampleZh": "你不餓吧？"
     },
     {
         "id": 30825,
@@ -7421,7 +7422,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 狩獵",
         "unit": 17,
-        "example": "",
+        "example": "They sleep by day and hunt by night.",
         "exampleZh": ""
     },
     {
@@ -7430,7 +7431,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 獵人",
         "unit": 17,
-        "example": "",
+        "example": "Hunter knew nearly all of this already.",
         "exampleZh": ""
     },
     {
@@ -7439,7 +7440,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 匆忙",
         "unit": 17,
-        "example": "",
+        "example": "Take your time—there's no hurry.",
         "exampleZh": ""
     },
     {
@@ -7448,8 +7449,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 受傷",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Did you hurt yourself ?",
+        "exampleZh": "你傷到自己了嗎？"
     },
     {
         "id": 30829,
@@ -7457,8 +7458,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 丈夫",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Her husband was a violent man.",
+        "exampleZh": "她的丈夫是一個暴力的人。"
     },
     {
         "id": 30830,
@@ -7466,8 +7467,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 冰",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The ice started to crack.",
+        "exampleZh": "冰開始破裂。"
     },
     {
         "id": 30831,
@@ -7475,8 +7476,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 想法",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He's dead against the idea.",
+        "exampleZh": "他堅決反對這個想法。"
     },
     {
         "id": 30832,
@@ -7484,8 +7485,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "conj. 假如",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I'll be there if poss.",
+        "exampleZh": "如果有的話我會去的。"
     },
     {
         "id": 30833,
@@ -7493,8 +7494,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 忽視",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "We cannot afford to ignore this warning.",
+        "exampleZh": "我們不能忽視這項警告。"
     },
     {
         "id": 30834,
@@ -7502,7 +7503,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 生病的",
         "unit": 17,
-        "example": "",
+        "example": "The patient is terminally ill.",
         "exampleZh": ""
     },
     {
@@ -7511,8 +7512,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 想像",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I can just imagine his reaction.",
+        "exampleZh": "我可以想像他的反應。"
     },
     {
         "id": 30836,
@@ -7520,7 +7521,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 不禮貌的",
         "unit": 17,
-        "example": "",
+        "example": "Some people think it is impolite to ask someone's age.",
         "exampleZh": ""
     },
     {
@@ -7529,7 +7530,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 重要性",
         "unit": 17,
-        "example": "",
+        "example": "This matter is of paramount importance.",
         "exampleZh": ""
     },
     {
@@ -7538,8 +7539,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 重要的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He likes to feel important.",
+        "exampleZh": "他喜歡感覺自己很重要。"
     },
     {
         "id": 30839,
@@ -7547,7 +7548,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 不可能的",
         "unit": 17,
-        "example": "",
+        "example": "Thick mist made flying impossible.",
         "exampleZh": ""
     },
     {
@@ -7556,8 +7557,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 改進",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I need to improve my English.",
+        "exampleZh": "我需要提高我的英語能力。"
     },
     {
         "id": 30841,
@@ -7565,8 +7566,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "prep. 在...之中",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "They lived in rooms in Kensington.",
+        "exampleZh": "他們住在肯辛頓的房間裡。"
     },
     {
         "id": 30842,
@@ -7574,8 +7575,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 英吋",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "There are 2.54 centimetres to an inch.",
+        "exampleZh": "一吋等於 2.54 公分。"
     },
     {
         "id": 30843,
@@ -7583,8 +7584,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 包括",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Symptoms include a sore throat.",
+        "exampleZh": "症狀包括喉嚨痛。"
     },
     {
         "id": 30844,
@@ -7592,7 +7593,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 收入",
         "unit": 17,
-        "example": "",
+        "example": "All income must be declared.",
         "exampleZh": ""
     },
     {
@@ -7601,7 +7602,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 增加",
         "unit": 17,
-        "example": "",
+        "example": "Prices will increase pro rata.",
         "exampleZh": ""
     },
     {
@@ -7610,8 +7611,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 獨立的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Mozambique became independent in 1975.",
+        "exampleZh": "莫三比克於1975年獨立。"
     },
     {
         "id": 30847,
@@ -7619,8 +7620,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 指示",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Road markings indicate where you can stop.",
+        "exampleZh": "道路標記指示您可以在哪裡停車。"
     },
     {
         "id": 30848,
@@ -7628,7 +7629,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 影響",
         "unit": 17,
-        "example": "",
+        "example": "His influence has diminished with time.",
         "exampleZh": ""
     },
     {
@@ -7637,7 +7638,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 資訊",
         "unit": 17,
-        "example": "",
+        "example": "We pooled ideas and information.",
         "exampleZh": ""
     },
     {
@@ -7646,7 +7647,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 墨水",
         "unit": 17,
-        "example": "",
+        "example": "These ink stains won't wash out.",
         "exampleZh": ""
     },
     {
@@ -7655,7 +7656,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 昆蟲",
         "unit": 17,
-        "example": "",
+        "example": "At rest the insect looks like a dead leaf.",
         "exampleZh": ""
     },
     {
@@ -7664,8 +7665,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adv. 在內部地",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The tree trunk was hollow inside.",
+        "exampleZh": "樹幹內部是空心的。"
     },
     {
         "id": 30853,
@@ -7673,8 +7674,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 堅持",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I insist on paying for the damage.",
+        "exampleZh": "我堅持要求賠償損失。"
     },
     {
         "id": 30854,
@@ -7682,7 +7683,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 激勵",
         "unit": 17,
-        "example": "",
+        "example": "We must promote originality, inspire creativity and encourage innovation.",
         "exampleZh": ""
     },
     {
@@ -7691,7 +7692,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 例子",
         "unit": 17,
-        "example": "",
+        "example": "Can you quote me an instance of when this happened?",
         "exampleZh": ""
     },
     {
@@ -7700,7 +7701,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 立即的",
         "unit": 17,
-        "example": "",
+        "example": "For an instant, Barney was tempted to flee.",
         "exampleZh": ""
     },
     {
@@ -7709,7 +7710,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 樂器",
         "unit": 17,
-        "example": "",
+        "example": "Is he learning an instrument?",
         "exampleZh": ""
     },
     {
@@ -7718,7 +7719,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 聰明的",
         "unit": 17,
-        "example": "",
+        "example": "The dolphin is an intelligent animal.",
         "exampleZh": ""
     },
     {
@@ -7727,8 +7728,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 興趣",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Interest rates should come down.",
+        "exampleZh": "利率應該會下降。"
     },
     {
         "id": 30860,
@@ -7736,7 +7737,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 感興趣的",
         "unit": 17,
-        "example": "",
+        "example": "I'm not interested in sport.",
         "exampleZh": ""
     },
     {
@@ -7745,7 +7746,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 有趣的",
         "unit": 17,
-        "example": "",
+        "example": "Did you go anywhere interesting?",
         "exampleZh": ""
     },
     {
@@ -7754,8 +7755,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 國際的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "His speciality is international law.",
+        "exampleZh": "他的專業是國際法。"
     },
     {
         "id": 30863,
@@ -7763,7 +7764,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 網路",
         "unit": 17,
-        "example": "",
+        "example": "I'm jacking into the Internet now.",
         "exampleZh": ""
     },
     {
@@ -7772,7 +7773,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 打擾",
         "unit": 17,
-        "example": "",
+        "example": "Please continue—I didn't mean to interrupt.",
         "exampleZh": ""
     },
     {
@@ -7781,7 +7782,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 訪問",
         "unit": 17,
-        "example": "",
+        "example": "She spruced up for the interview.",
         "exampleZh": ""
     },
     {
@@ -7790,8 +7791,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "prep. 進入...之內",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Caterpillars change into butterflies.",
+        "exampleZh": "毛毛蟲變蝴蝶。"
     },
     {
         "id": 30867,
@@ -7799,8 +7800,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 介紹",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Can I introduce my wife?",
+        "exampleZh": "我可以介紹一下我的妻子嗎？"
     },
     {
         "id": 30868,
@@ -7808,8 +7809,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 發明",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "So they proceeded to invent the verge-and-foliot escapement.",
+        "exampleZh": "於是他們開始發明邊緣式擒縱機構。"
     },
     {
         "id": 30869,
@@ -7817,7 +7818,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 邀請",
         "unit": 17,
-        "example": "",
+        "example": "Admission is by invitation only.",
         "exampleZh": ""
     },
     {
@@ -7826,8 +7827,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 邀請",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Who did you invite to the party?",
+        "exampleZh": "你邀請了誰來參加聚會？"
     },
     {
         "id": 30871,
@@ -7835,8 +7836,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 熨斗",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The huge, iron gate was locked.",
+        "exampleZh": "巨大的鐵門緊鎖著。"
     },
     {
         "id": 30872,
@@ -7844,7 +7845,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 島",
         "unit": 17,
-        "example": "",
+        "example": "The island is thinly populated.",
         "exampleZh": ""
     },
     {
@@ -7853,7 +7854,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 項目",
         "unit": 17,
-        "example": "",
+        "example": "This item should be hand washed.",
         "exampleZh": ""
     },
     {
@@ -7862,7 +7863,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 外套",
         "unit": 17,
-        "example": "",
+        "example": "Is your jacket real leather?",
         "exampleZh": ""
     },
     {
@@ -7871,7 +7872,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 果醬",
         "unit": 17,
-        "example": "",
+        "example": "We were stuck in a traffic jam.",
         "exampleZh": ""
     },
     {
@@ -7880,8 +7881,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 一月",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "January is my least favourite month.",
+        "exampleZh": "一月是我最不喜歡的月份。"
     },
     {
         "id": 30877,
@@ -7889,7 +7890,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 爵士樂",
         "unit": 17,
-        "example": "",
+        "example": "Jazz is mother's milk to me.",
         "exampleZh": ""
     },
     {
@@ -7898,7 +7899,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 妒忌的",
         "unit": 17,
-        "example": "",
+        "example": "She was jealous of his wealth.",
         "exampleZh": ""
     },
     {
@@ -7907,7 +7908,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 牛仔褲",
         "unit": 17,
-        "example": "",
+        "example": "His jeans were left in tatters.",
         "exampleZh": ""
     },
     {
@@ -7916,7 +7917,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 吉普車",
         "unit": 17,
-        "example": "",
+        "example": "The jeep bumped along the dirt track.",
         "exampleZh": ""
     },
     {
@@ -7925,8 +7926,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 工作",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Her job is multifaceted.",
+        "exampleZh": "她的工作是多方面的。"
     },
     {
         "id": 30882,
@@ -7934,7 +7935,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 慢跑",
         "unit": 17,
-        "example": "",
+        "example": "I got up early the next morning to jog.",
         "exampleZh": ""
     },
     {
@@ -7943,8 +7944,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 參加",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "How do these two pieces join?",
+        "exampleZh": "這兩個部分如何連接？"
     },
     {
         "id": 30884,
@@ -7952,8 +7953,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 笑話",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Whoever thought up that joke?",
+        "exampleZh": "這個笑話是誰想出來的？"
     },
     {
         "id": 30885,
@@ -7961,7 +7962,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 新聞記者",
         "unit": 17,
-        "example": "",
+        "example": "Michael Cross is a freelance journalist.",
         "exampleZh": ""
     },
     {
@@ -7970,8 +7971,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 喜悅",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "To his great joy, she accepted.",
+        "exampleZh": "讓他非常高興的是，她接受了。"
     },
     {
         "id": 30887,
@@ -7979,7 +7980,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 判斷",
         "unit": 17,
-        "example": "",
+        "example": "The judge allowed my claim.",
         "exampleZh": ""
     },
     {
@@ -7988,8 +7989,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 果汁",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The juice contains no added sugar.",
+        "exampleZh": "果汁不含添加糖。"
     },
     {
         "id": 30889,
@@ -7997,8 +7998,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 七月",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The car is taxed until July.",
+        "exampleZh": "這輛車的稅期截止到七月。"
     },
     {
         "id": 30890,
@@ -8006,8 +8007,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 跳",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "A loud bang made me jump.",
+        "exampleZh": "一聲巨響讓我跳了起來。"
     },
     {
         "id": 30891,
@@ -8015,8 +8016,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 六月",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Ann's expecting a baby in June.",
+        "exampleZh": "安六月就要生孩子了。"
     },
     {
         "id": 30892,
@@ -8024,8 +8025,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adv. 剛才",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Accountancy just isn't sexy.",
+        "exampleZh": "會計並不性感。"
     },
     {
         "id": 30893,
@@ -8033,8 +8034,8 @@ const jhWordsDB = [
         "kk": "/kiːp/",
         "zh": "v. (使)保持",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Her grandchildren keep her young.",
+        "exampleZh": "她的孫子讓她保持年輕。"
     },
     {
         "id": 30894,
@@ -8042,7 +8043,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 番茄醬",
         "unit": 17,
-        "example": "",
+        "example": "Would you like ketchup with your fries?",
         "exampleZh": ""
     },
     {
@@ -8051,8 +8052,8 @@ const jhWordsDB = [
         "kk": "/kiː/",
         "zh": "n. 鑰匙",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "His contribution could be key.",
+        "exampleZh": "他的貢獻可能是關鍵。"
     },
     {
         "id": 30896,
@@ -8060,8 +8061,8 @@ const jhWordsDB = [
         "kk": "/kɪk/",
         "zh": "v. 踢",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "This drink has quite a kick.",
+        "exampleZh": "這飲料很有勁兒。"
     },
     {
         "id": 30897,
@@ -8069,8 +8070,8 @@ const jhWordsDB = [
         "kk": "/kɪd/",
         "zh": "n. 小孩",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "'Oh, she's just a kid,' he said scathingly.",
+        "exampleZh": "「哦，她只是個孩子，」他嚴厲地說。"
     },
     {
         "id": 30898,
@@ -8078,8 +8079,8 @@ const jhWordsDB = [
         "kk": "/kɪl/",
         "zh": "v. 殺死",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Chlorine is added to kill bacteria.",
+        "exampleZh": "添加氯以殺死細菌。"
     },
     {
         "id": 30899,
@@ -8087,7 +8088,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 公斤",
         "unit": 17,
-        "example": "",
+        "example": "Flour is sold by the kilogram.",
         "exampleZh": ""
     },
     {
@@ -8096,7 +8097,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 公里",
         "unit": 17,
-        "example": "",
+        "example": "What's the area of Canada in square kilometer?",
         "exampleZh": ""
     },
     {
@@ -8105,8 +8106,8 @@ const jhWordsDB = [
         "kk": "/kaɪnd/",
         "zh": "adj. 仁慈的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I've caught some kind of lurgy.",
+        "exampleZh": "我得了某種胃病。"
     },
     {
         "id": 30902,
@@ -8114,7 +8115,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 幼稚園",
         "unit": 17,
-        "example": "",
+        "example": "She's in kindergarten now.",
         "exampleZh": ""
     },
     {
@@ -8123,8 +8124,8 @@ const jhWordsDB = [
         "kk": "/kɪŋ/",
         "zh": "n. 國王",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "His king had been checkmated.",
+        "exampleZh": "他的國王已被將死。"
     },
     {
         "id": 30904,
@@ -8132,7 +8133,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 王國",
         "unit": 17,
-        "example": "",
+        "example": "Rome annexed the Nabatean kingdom in AD 106.",
         "exampleZh": ""
     },
     {
@@ -8141,8 +8142,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 吻",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The first kiss is dynamite.",
+        "exampleZh": "初吻是炸藥。"
     },
     {
         "id": 30906,
@@ -8150,8 +8151,8 @@ const jhWordsDB = [
         "kk": "/ˈkɪtʃən/",
         "zh": "n. 廚房",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Her kitchen was kept immaculate.",
+        "exampleZh": "她的廚房保持得一塵不染。"
     },
     {
         "id": 30907,
@@ -8159,8 +8160,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 風箏",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The kite has a span of 1.5 metres.",
+        "exampleZh": "風箏的跨距為1.5米。"
     },
     {
         "id": 30908,
@@ -8168,8 +8169,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 小貓",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "From somewhere, the kitten mewed.",
+        "exampleZh": "不知道從什麼地方傳來了小貓的喵喵叫聲。"
     },
     {
         "id": 30909,
@@ -8177,8 +8178,8 @@ const jhWordsDB = [
         "kk": "/niː/",
         "zh": "n. 膝蓋",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The water was only knee-deep.",
+        "exampleZh": "水只有膝蓋深。"
     },
     {
         "id": 30910,
@@ -8186,8 +8187,8 @@ const jhWordsDB = [
         "kk": "/naɪf/",
         "zh": "n. 刀",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The knife sliced his jacket.",
+        "exampleZh": "刀劃破了他的夾克。"
     },
     {
         "id": 30911,
@@ -8195,7 +8196,7 @@ const jhWordsDB = [
         "kk": "/nɑːk/",
         "zh": "v. 敲",
         "unit": 17,
-        "example": "",
+        "example": "You don't have to knock—just walk in.",
         "exampleZh": ""
     },
     {
@@ -8204,8 +8205,8 @@ const jhWordsDB = [
         "kk": "/noʊ/",
         "zh": "v. 知道",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "You wouldn't know him.",
+        "exampleZh": "你不會認識他的。"
     },
     {
         "id": 30913,
@@ -8213,7 +8214,7 @@ const jhWordsDB = [
         "kk": "/ˈnɑːlɪdʒ/",
         "zh": "n. 知識",
         "unit": 17,
-        "example": "",
+        "example": "His knowledge of music is extensive.",
         "exampleZh": ""
     },
     {
@@ -8222,8 +8223,8 @@ const jhWordsDB = [
         "kk": "/læk/",
         "zh": "v. 缺乏",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Her eyes ached from lack of sleep.",
+        "exampleZh": "她的眼睛因缺乏睡眠而疼痛。"
     },
     {
         "id": 30915,
@@ -8231,8 +8232,8 @@ const jhWordsDB = [
         "kk": "/ˈleɪdi/",
         "zh": "n. 女士",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Her mother was a titled lady.",
+        "exampleZh": "她的母親是一位有爵位的女士。"
     },
     {
         "id": 30916,
@@ -8240,8 +8241,8 @@ const jhWordsDB = [
         "kk": "/leɪk/",
         "zh": "n. 湖泊",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "They walked around the lake.",
+        "exampleZh": "他們繞著湖走了一圈。"
     },
     {
         "id": 30917,
@@ -8249,8 +8250,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 小羊",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The lamb gave a faint bleat.",
+        "exampleZh": "小羊發出微弱的咩咩叫聲。"
     },
     {
         "id": 30918,
@@ -8258,8 +8259,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 燈",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She switched on the bedside lamp.",
+        "exampleZh": "她打開了床頭燈。"
     },
     {
         "id": 30919,
@@ -8267,8 +8268,8 @@ const jhWordsDB = [
         "kk": "/lænd/",
         "zh": "n. 土地",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "90% of the land is cultivated.",
+        "exampleZh": "90%的土地為耕地。"
     },
     {
         "id": 30920,
@@ -8276,7 +8277,7 @@ const jhWordsDB = [
         "kk": "/ˈlæŋɡwɪdʒ/",
         "zh": "n. 語言",
         "unit": 17,
-        "example": "",
+        "example": "Her language was not very ladylike.",
         "exampleZh": ""
     },
     {
@@ -8285,7 +8286,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 燈籠",
         "unit": 17,
-        "example": "",
+        "example": "The night lantern glowed softly in the darkness.",
         "exampleZh": ""
     },
     {
@@ -8294,8 +8295,8 @@ const jhWordsDB = [
         "kk": "/lɑːrdʒ/",
         "zh": "adj. 大的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He was smoking a large cigar.",
+        "exampleZh": "他抽著一支大雪茄。"
     },
     {
         "id": 30923,
@@ -8303,8 +8304,8 @@ const jhWordsDB = [
         "kk": "/læst/",
         "zh": "adj. 最後的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The doctors operated last night.",
+        "exampleZh": "醫生昨晚進行了手術。"
     },
     {
         "id": 30924,
@@ -8312,8 +8313,8 @@ const jhWordsDB = [
         "kk": "/leɪt/",
         "zh": "adj. 晚的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "They're nearly always late.",
+        "exampleZh": "他們幾乎總是遲到。"
     },
     {
         "id": 30925,
@@ -8321,7 +8322,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 稍晚的",
         "unit": 17,
-        "example": "",
+        "example": "Two days later tragedy struck.",
         "exampleZh": ""
     },
     {
@@ -8330,8 +8331,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 最新的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The latest trend is gardening.",
+        "exampleZh": "最新的趨勢是園藝。"
     },
     {
         "id": 30927,
@@ -8339,8 +8340,8 @@ const jhWordsDB = [
         "kk": "/læf/",
         "zh": "n. 笑聲",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He uttered a snorting laugh.",
+        "exampleZh": "他發出一聲鼻息般的笑聲。"
     },
     {
         "id": 30928,
@@ -8348,8 +8349,8 @@ const jhWordsDB = [
         "kk": "/lɔː/",
         "zh": "n. 法律",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Her specialty is taxation law.",
+        "exampleZh": "她的專業是稅法。"
     },
     {
         "id": 30929,
@@ -8357,7 +8358,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 律師",
         "unit": 17,
-        "example": "",
+        "example": "I should like to call my lawyer.",
         "exampleZh": ""
     },
     {
@@ -8366,8 +8367,8 @@ const jhWordsDB = [
         "kk": "/leɪ/",
         "zh": "v. 放置",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She lay in bed, contemplating.",
+        "exampleZh": "她躺在床上，陷入沉思。"
     },
     {
         "id": 30931,
@@ -8375,8 +8376,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 懶惰的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Look how lazy we've become.",
+        "exampleZh": "看看我們變得多麼懶惰。"
     },
     {
         "id": 30932,
@@ -8384,7 +8385,7 @@ const jhWordsDB = [
         "kk": "/liːd/",
         "zh": "v. 領導",
         "unit": 17,
-        "example": "",
+        "example": "He has gone into the lead.",
         "exampleZh": ""
     },
     {
@@ -8393,8 +8394,8 @@ const jhWordsDB = [
         "kk": "/ˈliːdər/",
         "zh": "n. 領袖",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The party wants her as leader.",
+        "exampleZh": "該黨希望她擔任領導人。"
     },
     {
         "id": 30934,
@@ -8402,8 +8403,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 葉子",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The trees are coming into leaf.",
+        "exampleZh": "樹木開始長葉了。"
     },
     {
         "id": 30935,
@@ -8411,8 +8412,8 @@ const jhWordsDB = [
         "kk": "/lɜːrn/",
         "zh": "v. 學習",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The kids were quick to learn.",
+        "exampleZh": "孩子們學得很快。"
     },
     {
         "id": 30936,
@@ -8420,8 +8421,8 @@ const jhWordsDB = [
         "kk": "/liːst/",
         "zh": "adv. 最少",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "It'll cost at least 500 dollars.",
+        "exampleZh": "至少要花費500美元。"
     },
     {
         "id": 30937,
@@ -8429,8 +8430,8 @@ const jhWordsDB = [
         "kk": "/liːv/",
         "zh": "v. 離開",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "We didn't leave early enough.",
+        "exampleZh": "我們離開得不夠早。"
     },
     {
         "id": 30938,
@@ -8438,8 +8439,8 @@ const jhWordsDB = [
         "kk": "/left/",
         "zh": "adj. 左邊的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He entered stage left.",
+        "exampleZh": "他進入舞台左側。"
     },
     {
         "id": 30939,
@@ -8447,8 +8448,8 @@ const jhWordsDB = [
         "kk": "/leɡ/",
         "zh": "n. 腿",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "His leg was getting better.",
+        "exampleZh": "他的腿越來越好了。"
     },
     {
         "id": 30940,
@@ -8456,8 +8457,8 @@ const jhWordsDB = [
         "kk": "/ˈliːɡl/",
         "zh": "adj. 合法的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Should euthanasia be made legal?",
+        "exampleZh": "安樂死應該合法化嗎？"
     },
     {
         "id": 30941,
@@ -8465,7 +8466,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 檸檬",
         "unit": 17,
-        "example": "",
+        "example": "I plucked a lemon from the tree.",
         "exampleZh": ""
     },
     {
@@ -8474,8 +8475,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 借",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Here, I'll lend you my pen.",
+        "exampleZh": "在這裡，我把筆借給你。"
     },
     {
         "id": 30943,
@@ -8483,8 +8484,8 @@ const jhWordsDB = [
         "kk": "/les/",
         "zh": "adj. 較少的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Her calls became less frequent.",
+        "exampleZh": "她的電話越來越少了。"
     },
     {
         "id": 30944,
@@ -8492,8 +8493,8 @@ const jhWordsDB = [
         "kk": "/ˈlesn/",
         "zh": "n. 課",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I've got a piano lesson later today.",
+        "exampleZh": "今天晚些時候我有鋼琴課。"
     },
     {
         "id": 30945,
@@ -8501,8 +8502,8 @@ const jhWordsDB = [
         "kk": "/let/",
         "zh": "v. 讓",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Let your body relax.",
+        "exampleZh": "讓你的身體放鬆。"
     },
     {
         "id": 30946,
@@ -8510,8 +8511,8 @@ const jhWordsDB = [
         "kk": "/ˈletər/",
         "zh": "n. 信",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I returned the letter unopened.",
+        "exampleZh": "我把信原封不動地退回了。"
     },
     {
         "id": 30947,
@@ -8519,7 +8520,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 生菜",
         "unit": 17,
-        "example": "",
+        "example": "Lettuce was grown by the ancient Romans.",
         "exampleZh": ""
     },
     {
@@ -8528,8 +8529,8 @@ const jhWordsDB = [
         "kk": "/ˈlevl/",
         "zh": "n. 水準",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He studied French to degree level.",
+        "exampleZh": "他學習了法語並達到了學位水平。"
     },
     {
         "id": 30949,
@@ -8537,7 +8538,7 @@ const jhWordsDB = [
         "kk": "/ˈlaɪbreri/",
         "zh": "n. 圖書館",
         "unit": 17,
-        "example": "",
+        "example": "The library is all on one level.",
         "exampleZh": ""
     },
     {
@@ -8546,7 +8547,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 舔",
         "unit": 17,
-        "example": "",
+        "example": "Well, you didn't get a lick amiss, I reckon.",
         "exampleZh": ""
     },
     {
@@ -8555,7 +8556,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 蓋子",
         "unit": 17,
-        "example": "",
+        "example": "The lid should fit snugly.",
         "exampleZh": ""
     },
     {
@@ -8564,8 +8565,8 @@ const jhWordsDB = [
         "kk": "/laɪ/",
         "zh": "n. 謊言",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "We must nail this lie.",
+        "exampleZh": "我們必須揭穿這個謊言。"
     },
     {
         "id": 30953,
@@ -8573,8 +8574,8 @@ const jhWordsDB = [
         "kk": "/laɪf/",
         "zh": "n. 生命",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Are you enjoying married life?",
+        "exampleZh": "你的婚姻生活幸福嗎？"
     },
     {
         "id": 30954,
@@ -8582,8 +8583,8 @@ const jhWordsDB = [
         "kk": "/lɪft/",
         "zh": "v. 抬起",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "There is a lift to all floors.",
+        "exampleZh": "所有樓層均設有電梯。"
     },
     {
         "id": 30955,
@@ -8591,8 +8592,8 @@ const jhWordsDB = [
         "kk": "/laɪt/",
         "zh": "n. 燈",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Suddenly a warning light blinked.",
+        "exampleZh": "突然，警告燈閃爍。"
     },
     {
         "id": 30956,
@@ -8600,7 +8601,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 閃電",
         "unit": 17,
-        "example": "",
+        "example": "Driving today demands lightning reflexes.",
         "exampleZh": ""
     },
     {
@@ -8609,8 +8610,8 @@ const jhWordsDB = [
         "kk": "/laɪk/",
         "zh": "v. 喜歡",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "It tastes like chocolate.",
+        "exampleZh": "嘗起來像巧克力。"
     },
     {
         "id": 30958,
@@ -8618,8 +8619,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adv. 可能",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "We will likely see him later.",
+        "exampleZh": "我們可能稍後會見到他。"
     },
     {
         "id": 30959,
@@ -8627,8 +8628,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 百合花",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Lily lives in a penthouse just off Park Avenue.",
+        "exampleZh": "莉莉住在公園大道附近的一間頂樓公寓。"
     },
     {
         "id": 30960,
@@ -8636,7 +8637,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 限度",
         "unit": 17,
-        "example": "",
+        "example": "The road has a 30 mph speed limit.",
         "exampleZh": ""
     },
     {
@@ -8645,8 +8646,8 @@ const jhWordsDB = [
         "kk": "/laɪn/",
         "zh": "n. 線",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Your bill includes line rental.",
+        "exampleZh": "您的帳單包括線路租金。"
     },
     {
         "id": 30962,
@@ -8654,7 +8655,7 @@ const jhWordsDB = [
         "kk": "/lɪŋk/",
         "zh": "n. 關聯",
         "unit": 17,
-        "example": "",
+        "example": "Click the link and see what happens.",
         "exampleZh": ""
     },
     {
@@ -8663,8 +8664,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 獅子",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The lion was stalking a zebra.",
+        "exampleZh": "獅子正在跟蹤斑馬。"
     },
     {
         "id": 30964,
@@ -8672,8 +8673,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 嘴唇",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She bit her lip nervously.",
+        "exampleZh": "她緊張地咬著嘴唇。"
     },
     {
         "id": 30965,
@@ -8681,7 +8682,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 液體",
         "unit": 17,
-        "example": "",
+        "example": "The liquid is then diluted.",
         "exampleZh": ""
     },
     {
@@ -8690,8 +8691,8 @@ const jhWordsDB = [
         "kk": "/lɪst/",
         "zh": "v. 把...列表",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Princess Anne topped the guest list.",
+        "exampleZh": "安妮公主名列賓客名單之首。"
     },
     {
         "id": 30967,
@@ -8699,8 +8700,8 @@ const jhWordsDB = [
         "kk": "/ˈlɪsn/",
         "zh": "v. 聽",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Why couldn't he listen to her?",
+        "exampleZh": "為什麼他就不能聽她的？"
     },
     {
         "id": 30968,
@@ -8717,8 +8718,8 @@ const jhWordsDB = [
         "kk": "/ˈlɪtl/",
         "zh": "adj. 少的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I'm feeling a little tipsy.",
+        "exampleZh": "我覺得有點醉了。"
     },
     {
         "id": 30970,
@@ -8726,8 +8727,8 @@ const jhWordsDB = [
         "kk": "/lɪv/",
         "zh": "v. 居住",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "They live in the suburbs.",
+        "exampleZh": "他們住在郊區。"
     },
     {
         "id": 30971,
@@ -8735,7 +8736,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 一條(麵包)",
         "unit": 17,
-        "example": "",
+        "example": "He was sawing energetically at a loaf of bread.",
         "exampleZh": ""
     },
     {
@@ -8744,7 +8745,7 @@ const jhWordsDB = [
         "kk": "/ˈloʊkl/",
         "zh": "adj. 本地的",
         "unit": 17,
-        "example": "",
+        "example": "He dabbles in local politics.",
         "exampleZh": ""
     },
     {
@@ -8753,7 +8754,7 @@ const jhWordsDB = [
         "kk": "/lɑːk/",
         "zh": "n. 鎖",
         "unit": 17,
-        "example": "",
+        "example": "The key doesn't fit the lock.",
         "exampleZh": ""
     },
     {
@@ -8762,7 +8763,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 寄物櫃",
         "unit": 17,
-        "example": "",
+        "example": "In the locker room, Amanda changed quickly.",
         "exampleZh": ""
     },
     {
@@ -8771,8 +8772,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 寂寞的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I could see she was lonely.",
+        "exampleZh": "我看得出來她很孤獨。"
     },
     {
         "id": 30976,
@@ -8780,8 +8781,8 @@ const jhWordsDB = [
         "kk": "/lɔːŋ/",
         "zh": "v. 渴望",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The bureaucrats dallied too long.",
+        "exampleZh": "官僚們耽擱太久了。"
     },
     {
         "id": 30977,
@@ -8789,8 +8790,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 看",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Look, that's not fair.",
+        "exampleZh": "聽著，這不公平。"
     },
     {
         "id": 30978,
@@ -8798,8 +8799,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 失去",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "No one likes to lose.",
+        "exampleZh": "沒有人喜歡失敗。"
     },
     {
         "id": 30979,
@@ -8807,7 +8808,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 失敗者",
         "unit": 17,
-        "example": "",
+        "example": "If you talk like a loser, you'll end up losing.",
         "exampleZh": ""
     },
     {
@@ -8816,8 +8817,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 許多",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She does a lot of quilting.",
+        "exampleZh": "她做了很多絎縫工作。"
     },
     {
         "id": 30981,
@@ -8825,8 +8826,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 大聲的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "She gave a loud hiccup.",
+        "exampleZh": "她大聲打了個嗝。"
     },
     {
         "id": 30982,
@@ -8834,8 +8835,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 愛",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "I love my country as you love yours.",
+        "exampleZh": "我愛我的國家，就像你愛你的國家一樣。"
     },
     {
         "id": 30983,
@@ -8843,8 +8844,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 可愛的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "You look lovely, Marcia.",
+        "exampleZh": "你看起來很可愛，瑪西亞。"
     },
     {
         "id": 30984,
@@ -8852,7 +8853,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 情人",
         "unit": 17,
-        "example": "",
+        "example": "I'm a lover of the outdoors.",
         "exampleZh": ""
     },
     {
@@ -8861,8 +8862,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 低的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The humidity is relatively low.",
+        "exampleZh": "濕度相對較低。"
     },
     {
         "id": 30986,
@@ -8870,7 +8871,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 運氣",
         "unit": 17,
-        "example": "",
+        "example": "Our luck couldn't hold forever.",
         "exampleZh": ""
     },
     {
@@ -8879,8 +8880,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 幸運的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "The 'lucky' tag stuck for years.",
+        "exampleZh": "「幸運」的標籤貼了很多年。"
     },
     {
         "id": 30988,
@@ -8888,8 +8889,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 午餐",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "We'll discuss it over lunch.",
+        "exampleZh": "我們將在午餐時討論這個問題。"
     },
     {
         "id": 30989,
@@ -8897,8 +8898,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 機器",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "This machine only accepts coins.",
+        "exampleZh": "這台機器只接受硬幣。"
     },
     {
         "id": 30990,
@@ -8906,8 +8907,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 生氣的",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "He's mad keen on planes.",
+        "exampleZh": "他對飛機非常著迷。"
     },
     {
         "id": 30991,
@@ -8915,7 +8916,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 雜誌",
         "unit": 17,
-        "example": "",
+        "example": "The magazine is still produced in-house.",
         "exampleZh": ""
     },
     {
@@ -8924,7 +8925,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 魔術",
         "unit": 17,
-        "example": "",
+        "example": "He suddenly appeared as if by magic.",
         "exampleZh": ""
     },
     {
@@ -8933,7 +8934,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 魔術師",
         "unit": 17,
-        "example": "",
+        "example": "The magician vanished in a puff of smoke.",
         "exampleZh": ""
     },
     {
@@ -8942,8 +8943,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 郵件",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "There isn't much mail today.",
+        "exampleZh": "今天郵件不多。"
     },
     {
         "id": 30995,
@@ -8951,7 +8952,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 主要的",
         "unit": 17,
-        "example": "",
+        "example": "What's the main disadvantage ?",
         "exampleZh": ""
     },
     {
@@ -8960,8 +8961,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 維持",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "It's hard to maintain competitive pricing.",
+        "exampleZh": "要保持有競爭力的價格是很困難的。"
     },
     {
         "id": 30997,
@@ -8969,7 +8970,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 主要的",
         "unit": 17,
-        "example": "",
+        "example": "Rotterdam is a major port.",
         "exampleZh": ""
     },
     {
@@ -8978,8 +8979,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 做",
         "unit": 17,
-        "example": "",
-        "exampleZh": ""
+        "example": "Four quarters make a whole.",
+        "exampleZh": "四分之四是一個整體。"
     },
     {
         "id": 30999,
@@ -8987,7 +8988,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 男性",
         "unit": 17,
-        "example": "",
+        "example": "I'm not a male chauvinist.",
         "exampleZh": ""
     },
     {
@@ -8996,7 +8997,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 商場",
         "unit": 17,
-        "example": "",
+        "example": "Let's go to the mall.",
         "exampleZh": ""
     },
     {
@@ -9005,8 +9006,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 男人",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He's a highly intelligent man.",
+        "exampleZh": "他是一個非常聰明的人。"
     },
     {
         "id": 31002,
@@ -9014,7 +9015,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 經理",
         "unit": 18,
-        "example": "",
+        "example": "John is the London area manager.",
         "exampleZh": ""
     },
     {
@@ -9023,7 +9024,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 芒果",
         "unit": 18,
-        "example": "",
+        "example": "Mango and pineapple are yellow.",
         "exampleZh": ""
     },
     {
@@ -9032,7 +9033,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 態度",
         "unit": 18,
-        "example": "",
+        "example": "She responded in like manner.",
         "exampleZh": ""
     },
     {
@@ -9041,8 +9042,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 許多的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Many pesticides are highly toxic.",
+        "exampleZh": "許多農藥具有劇毒。"
     },
     {
         "id": 31006,
@@ -9050,8 +9051,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 地圖",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I'm trying to read the map.",
+        "exampleZh": "我正在嘗試閱讀地圖。"
     },
     {
         "id": 31007,
@@ -9059,7 +9060,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 三月",
         "unit": 18,
-        "example": "",
+        "example": "The trial reopened on 6 March.",
         "exampleZh": ""
     },
     {
@@ -9068,7 +9069,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 標記",
         "unit": 18,
-        "example": "",
+        "example": "Mark was withdrawn and uncontrollable.",
         "exampleZh": ""
     },
     {
@@ -9077,8 +9078,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 市場",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The market collapsed last October.",
+        "exampleZh": "去年十月市場崩盤了。"
     },
     {
         "id": 31010,
@@ -9086,7 +9087,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 結婚",
         "unit": 18,
-        "example": "",
+        "example": "You both have to work hard at marriage.",
         "exampleZh": ""
     },
     {
@@ -9095,7 +9096,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 已婚的",
         "unit": 18,
-        "example": "",
+        "example": "They're not married, actually.",
         "exampleZh": ""
     },
     {
@@ -9104,8 +9105,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 結婚",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "They'll forbid you to marry.",
+        "exampleZh": "他們會禁止你結婚。"
     },
     {
         "id": 31013,
@@ -9113,7 +9114,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 非凡的",
         "unit": 18,
-        "example": "",
+        "example": "What a wonderful, beautiful, marvelous country!",
         "exampleZh": ""
     },
     {
@@ -9122,7 +9123,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 面具",
         "unit": 18,
-        "example": "",
+        "example": "The gunman, whose mask had slipped, fled.",
         "exampleZh": ""
     },
     {
@@ -9131,7 +9132,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 塊",
         "unit": 18,
-        "example": "",
+        "example": "The mass media tends to personalize politics.",
         "exampleZh": ""
     },
     {
@@ -9140,8 +9141,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 大師",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Students are expected to master a second language.",
+        "exampleZh": "學生應該掌握第二語言。"
     },
     {
         "id": 31017,
@@ -9149,7 +9150,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 墊子",
         "unit": 18,
-        "example": "",
+        "example": "Wipe your feet on the mat before you come in, please.",
         "exampleZh": ""
     },
     {
@@ -9158,7 +9159,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 比賽",
         "unit": 18,
-        "example": "",
+        "example": "He was watching a football match.",
         "exampleZh": ""
     },
     {
@@ -9167,7 +9168,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 配偶",
         "unit": 18,
-        "example": "",
+        "example": "He has found his ideal mate.",
         "exampleZh": ""
     },
     {
@@ -9176,7 +9177,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 材料",
         "unit": 18,
-        "example": "",
+        "example": "This material is 45% nylon.",
         "exampleZh": ""
     },
     {
@@ -9185,8 +9186,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 事情",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "This matter is their concern.",
+        "exampleZh": "這件事是他們關心的。"
     },
     {
         "id": 31022,
@@ -9194,7 +9195,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 最多的",
         "unit": 18,
-        "example": "",
+        "example": "Both face maximum forfeitures of about $1.2 million.",
         "exampleZh": ""
     },
     {
@@ -9203,8 +9204,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "aux. 可能",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "That may or may not be true.",
+        "exampleZh": "這可能是真的，也可能不是。"
     },
     {
         "id": 31024,
@@ -9212,8 +9213,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 五月",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "That may or may not be true.",
+        "exampleZh": "這可能是真的，也可能不是。"
     },
     {
         "id": 31025,
@@ -9221,8 +9222,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adv. 也許",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Maybe you should socialize more.",
+        "exampleZh": "也許你應該多社交。"
     },
     {
         "id": 31026,
@@ -9230,7 +9231,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 餐",
         "unit": 18,
-        "example": "",
+        "example": "The meal was amazingly cheap.",
         "exampleZh": ""
     },
     {
@@ -9239,8 +9240,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 意指",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "What does this sentence mean?",
+        "exampleZh": "這句話是什麼意思呢？"
     },
     {
         "id": 31028,
@@ -9248,7 +9249,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 意思",
         "unit": 18,
-        "example": "",
+        "example": "What's the meaning of this word?",
         "exampleZh": ""
     },
     {
@@ -9257,7 +9258,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 測量",
         "unit": 18,
-        "example": "",
+        "example": "He irritated me beyond measure.",
         "exampleZh": ""
     },
     {
@@ -9266,8 +9267,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 肉類",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "This meat is extremely tender.",
+        "exampleZh": "這肉特別嫩。"
     },
     {
         "id": 31031,
@@ -9275,7 +9276,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 技工",
         "unit": 18,
-        "example": "",
+        "example": "The mechanic located the fault immediately.",
         "exampleZh": ""
     },
     {
@@ -9284,7 +9285,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 大眾傳媒",
         "unit": 18,
-        "example": "",
+        "example": "Her car was mobbed by the media.",
         "exampleZh": ""
     },
     {
@@ -9293,7 +9294,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 藥",
         "unit": 18,
-        "example": "",
+        "example": "Laughter is the best medicine.",
         "exampleZh": ""
     },
     {
@@ -9302,7 +9303,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 中等的",
         "unit": 18,
-        "example": "",
+        "example": "There are three sizes—small, medium and large.",
         "exampleZh": ""
     },
     {
@@ -9311,8 +9312,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 見面",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Let's meet on neutral territory.",
+        "exampleZh": "讓我們在中立地區見面。"
     },
     {
         "id": 31036,
@@ -9320,7 +9321,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 會議",
         "unit": 18,
-        "example": "",
+        "example": "The meeting went off well.",
         "exampleZh": ""
     },
     {
@@ -9329,7 +9330,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 會員",
         "unit": 18,
-        "example": "",
+        "example": "He's a member of several London clubs.",
         "exampleZh": ""
     },
     {
@@ -9338,7 +9339,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 記憶",
         "unit": 18,
-        "example": "",
+        "example": "Memory is selective and fallible.",
         "exampleZh": ""
     },
     {
@@ -9347,7 +9348,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 菜單",
         "unit": 18,
-        "example": "",
+        "example": "The menu included roast grouse.",
         "exampleZh": ""
     },
     {
@@ -9356,7 +9357,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 信息",
         "unit": 18,
-        "example": "",
+        "example": "Message understood. Over and out.",
         "exampleZh": ""
     },
     {
@@ -9365,7 +9366,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 金屬",
         "unit": 18,
-        "example": "",
+        "example": "Rust had eaten into the metal.",
         "exampleZh": ""
     },
     {
@@ -9374,7 +9375,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 公尺",
         "unit": 18,
-        "example": "",
+        "example": "A man came to read the gas meter.",
         "exampleZh": ""
     },
     {
@@ -9383,7 +9384,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 方法",
         "unit": 18,
-        "example": "",
+        "example": "There is just one method that might work.",
         "exampleZh": ""
     },
     {
@@ -9392,7 +9393,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 微波爐",
         "unit": 18,
-        "example": "",
+        "example": "A microwave is a good investment.",
         "exampleZh": ""
     },
     {
@@ -9401,8 +9402,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 中間的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "His middle name is Justin.",
+        "exampleZh": "他的中間名是賈斯汀。"
     },
     {
         "id": 31046,
@@ -9410,7 +9411,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 午夜",
         "unit": 18,
-        "example": "",
+        "example": "They had to leave at midnight.",
         "exampleZh": ""
     },
     {
@@ -9419,8 +9420,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 英里",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "After a mile, the slope steepened.",
+        "exampleZh": "一英里後，斜坡變得陡峭。"
     },
     {
         "id": 31048,
@@ -9428,8 +9429,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 牛奶",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She's gone for some milk.",
+        "exampleZh": "她去喝牛奶了。"
     },
     {
         "id": 31049,
@@ -9437,7 +9438,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 百萬",
         "unit": 18,
-        "example": "",
+        "example": "Unfilled positions number several million countrywide.",
         "exampleZh": ""
     },
     {
@@ -9446,8 +9447,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 介意",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She had a brilliant mind.",
+        "exampleZh": "她有一個聰明的頭腦。"
     },
     {
         "id": 31051,
@@ -9455,7 +9456,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 礦",
         "unit": 18,
-        "example": "",
+        "example": "He's a distant cousin of mine.",
         "exampleZh": ""
     },
     {
@@ -9464,7 +9465,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 次要的",
         "unit": 18,
-        "example": "",
+        "example": "Relatively minor modifications were required.",
         "exampleZh": ""
     },
     {
@@ -9473,7 +9474,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "prep. 減",
         "unit": 18,
-        "example": "",
+        "example": "One minus one is zero.",
         "exampleZh": ""
     },
     {
@@ -9482,8 +9483,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 分",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "They arrived barely a minute later.",
+        "exampleZh": "不到一分鐘他們就到了。"
     },
     {
         "id": 31055,
@@ -9491,7 +9492,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 鏡子",
         "unit": 18,
-        "example": "",
+        "example": "Steam had clouded the mirror.",
         "exampleZh": ""
     },
     {
@@ -9500,8 +9501,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 小姐",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I miss thee, beloved father.",
+        "exampleZh": "我想念你，親愛的父親。"
     },
     {
         "id": 31057,
@@ -9509,8 +9510,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 想念",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I miss thee, beloved father.",
+        "exampleZh": "我想念你，親愛的父親。"
     },
     {
         "id": 31058,
@@ -9518,8 +9519,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 錯誤",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "We've made a dreadful mistake.",
+        "exampleZh": "我們犯了一個可怕的錯誤。"
     },
     {
         "id": 31059,
@@ -9527,7 +9528,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 混合",
         "unit": 18,
-        "example": "",
+        "example": "You can't mix business with pleasure.",
         "exampleZh": ""
     },
     {
@@ -9536,7 +9537,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 模特兒",
         "unit": 18,
-        "example": "",
+        "example": "I made a full-size cardboard model.",
         "exampleZh": ""
     },
     {
@@ -9545,8 +9546,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 現代的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She is very modern in outlook.",
+        "exampleZh": "她的觀點非常現代。"
     },
     {
         "id": 31062,
@@ -9554,8 +9555,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 片刻",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "It was a really scary moment.",
+        "exampleZh": "這真是一個可怕的時刻。"
     },
     {
         "id": 31063,
@@ -9563,8 +9564,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 星期一",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She started work last Monday.",
+        "exampleZh": "她上週一開始工作。"
     },
     {
         "id": 31064,
@@ -9572,8 +9573,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 錢",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Money can't buy you happiness.",
+        "exampleZh": "金錢買不來幸福。"
     },
     {
         "id": 31065,
@@ -9581,8 +9582,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 猴子",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The woolly spider monkey is the largest primate in the Americas.",
+        "exampleZh": "毛蜘蛛猴是美洲最大的靈長類動物。"
     },
     {
         "id": 31066,
@@ -9590,7 +9591,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 妖怪",
         "unit": 18,
-        "example": "",
+        "example": "He drew a monster and coloured it green.",
         "exampleZh": ""
     },
     {
@@ -9599,8 +9600,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 月份",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "We're moving house next month.",
+        "exampleZh": "我們下個月就要搬家了。"
     },
     {
         "id": 31068,
@@ -9608,8 +9609,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 月亮",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The moon is a satellite of earth.",
+        "exampleZh": "月球是地球的衛星。"
     },
     {
         "id": 31069,
@@ -9617,8 +9618,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 更多的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "More and more people are using the Internet.",
+        "exampleZh": "越來越多的人正在使用網路。"
     },
     {
         "id": 31070,
@@ -9626,8 +9627,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 早上",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I've been sneezing all morning.",
+        "exampleZh": "我整個早上都在打噴嚏。"
     },
     {
         "id": 31071,
@@ -9635,7 +9636,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 拖把",
         "unit": 18,
-        "example": "",
+        "example": "I mop the kitchen floor twice a week.",
         "exampleZh": ""
     },
     {
@@ -9644,7 +9645,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 蚊子",
         "unit": 18,
-        "example": "",
+        "example": "A single mosquito can infect a large number of people.",
         "exampleZh": ""
     },
     {
@@ -9653,8 +9654,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 最多的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Most vegetables contain fibre.",
+        "exampleZh": "大多數蔬菜都含有纖維。"
     },
     {
         "id": 31074,
@@ -9662,8 +9663,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 母親",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "His mother is partially blind.",
+        "exampleZh": "他的母親是半盲的。"
     },
     {
         "id": 31075,
@@ -9671,7 +9672,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 動作",
         "unit": 18,
-        "example": "",
+        "example": "Some scenes were filmed in slow motion.",
         "exampleZh": ""
     },
     {
@@ -9680,7 +9681,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 摩托車",
         "unit": 18,
-        "example": "",
+        "example": "They sell used and reconditioned motorcycle parts.",
         "exampleZh": ""
     },
     {
@@ -9689,8 +9690,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 山",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He mimed climbing a mountain.",
+        "exampleZh": "他模仿著爬山的動作。"
     },
     {
         "id": 31078,
@@ -9698,8 +9699,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 老鼠",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He moves the cursor, clicks the mouse.",
+        "exampleZh": "他移動遊標，點擊滑鼠。"
     },
     {
         "id": 31079,
@@ -9707,8 +9708,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 嘴巴",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "My mouth felt completely dry.",
+        "exampleZh": "我感覺口乾舌燥。"
     },
     {
         "id": 31080,
@@ -9716,8 +9717,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 移動",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I can't move my fingers.",
+        "exampleZh": "我的手指動不了。"
     },
     {
         "id": 31081,
@@ -9725,8 +9726,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 動作",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "They were watching her every movement.",
+        "exampleZh": "他們注視著她的一舉一動。"
     },
     {
         "id": 31082,
@@ -9734,8 +9735,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 電影",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "That movie was really wack.",
+        "exampleZh": "那部電影真的很古怪。"
     },
     {
         "id": 31083,
@@ -9752,7 +9753,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 捷運",
         "unit": 18,
-        "example": "",
+        "example": "I got there by MRT.",
         "exampleZh": ""
     },
     {
@@ -9761,8 +9762,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 泥濘",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Your boots are covered in mud.",
+        "exampleZh": "你的靴子沾滿了泥巴。"
     },
     {
         "id": 31086,
@@ -9770,8 +9771,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 馬克杯",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The mug tipped over, spilling hot coffee everywhere.",
+        "exampleZh": "杯子翻倒了，熱咖啡灑得到處都是。"
     },
     {
         "id": 31087,
@@ -9779,7 +9780,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 博物館",
         "unit": 18,
-        "example": "",
+        "example": "The museum is open Mon.-Sun.",
         "exampleZh": ""
     },
     {
@@ -9788,8 +9789,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 音樂",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "They played some Cajun music.",
+        "exampleZh": "他們演奏了一些卡真音樂。"
     },
     {
         "id": 31089,
@@ -9797,7 +9798,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 音樂家",
         "unit": 18,
-        "example": "",
+        "example": "He was a brilliant musician.",
         "exampleZh": ""
     },
     {
@@ -9806,8 +9807,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "aux. 必須",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "We must set realistic goals.",
+        "exampleZh": "我們必須設定現實的目標。"
     },
     {
         "id": 31091,
@@ -9815,7 +9816,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 釘子",
         "unit": 18,
-        "example": "",
+        "example": "This nail won't come out.",
         "exampleZh": ""
     },
     {
@@ -9824,8 +9825,8 @@ const jhWordsDB = [
         "kk": "/neɪm/",
         "zh": "n. 名字",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Is your name hyphenated?",
+        "exampleZh": "你的名字有連字符嗎？"
     },
     {
         "id": 31093,
@@ -9833,7 +9834,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 餐巾",
         "unit": 18,
-        "example": "",
+        "example": "Her father cleaned his glasses with a paper napkin.",
         "exampleZh": ""
     },
     {
@@ -9842,8 +9843,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 狹窄的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He turned into a narrow street.",
+        "exampleZh": "他拐進一條狹窄的街道。"
     },
     {
         "id": 31095,
@@ -9851,8 +9852,8 @@ const jhWordsDB = [
         "kk": "/ˈneɪʃn/",
         "zh": "n. 國家",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The article captured the mood of the nation.",
+        "exampleZh": "這篇文章抓住了全國人民的情緒。"
     },
     {
         "id": 31096,
@@ -9860,8 +9861,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 國家的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The area has been declared a national park.",
+        "exampleZh": "該地區已被宣佈為國家公園。"
     },
     {
         "id": 31097,
@@ -9869,8 +9870,8 @@ const jhWordsDB = [
         "kk": "/ˈnætʃərəl/",
         "zh": "adj. 自然的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She is a natural athlete.",
+        "exampleZh": "她是一位天生的運動員。"
     },
     {
         "id": 31098,
@@ -9878,8 +9879,8 @@ const jhWordsDB = [
         "kk": "/ˈneɪtʃər/",
         "zh": "n. 自然",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Violence is not in his nature.",
+        "exampleZh": "暴力不是他的本性。"
     },
     {
         "id": 31099,
@@ -9887,8 +9888,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 頑皮的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Girls, you're being very naughty.",
+        "exampleZh": "姑娘們，你們太調皮了。"
     },
     {
         "id": 31100,
@@ -9896,8 +9897,8 @@ const jhWordsDB = [
         "kk": "/nɪr/",
         "zh": "adj. 接近的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "His stables are near Oxford.",
+        "exampleZh": "他的馬厩在牛津附近。"
     },
     {
         "id": 31101,
@@ -9905,8 +9906,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adv. 幾乎",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The beach was nearly empty.",
+        "exampleZh": "海灘幾乎空無一人。"
     },
     {
         "id": 31102,
@@ -9914,8 +9915,8 @@ const jhWordsDB = [
         "kk": "/ˈnesəseri/",
         "zh": "adj. 必要的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Military action may become necessary.",
+        "exampleZh": "軍事行動可能變得必要。"
     },
     {
         "id": 31103,
@@ -9923,8 +9924,8 @@ const jhWordsDB = [
         "kk": "/nek/",
         "zh": "n. 脖子",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Her arms crept around his neck.",
+        "exampleZh": "她的手臂爬上他的脖子。"
     },
     {
         "id": 31104,
@@ -9932,7 +9933,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 項鍊",
         "unit": 18,
-        "example": "",
+        "example": "When did you first miss the necklace?",
         "exampleZh": ""
     },
     {
@@ -9941,8 +9942,8 @@ const jhWordsDB = [
         "kk": "/niːd/",
         "zh": "v. 需要",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "We need more storage now.",
+        "exampleZh": "我們現在需要更多的儲存空間。"
     },
     {
         "id": 31106,
@@ -9950,7 +9951,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 針",
         "unit": 18,
-        "example": "",
+        "example": "A compass needle points north.",
         "exampleZh": ""
     },
     {
@@ -9959,7 +9960,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 負面的",
         "unit": 18,
-        "example": "",
+        "example": "They received a negative reply.",
         "exampleZh": ""
     },
     {
@@ -9968,7 +9969,7 @@ const jhWordsDB = [
         "kk": "/ˈneɪbər/",
         "zh": "n. 鄰居",
         "unit": 18,
-        "example": "",
+        "example": "My neighbor is a doctor.",
         "exampleZh": ""
     },
     {
@@ -9977,8 +9978,8 @@ const jhWordsDB = [
         "kk": "/ˈniːðər/",
         "zh": "adv. 既不...也不",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She seemed neither surprised nor worried.",
+        "exampleZh": "她看起來既不驚訝也不擔心。"
     },
     {
         "id": 31110,
@@ -9986,7 +9987,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 姪子,外甥",
         "unit": 18,
-        "example": "",
+        "example": "He entrusted the task to his nephew.",
         "exampleZh": ""
     },
     {
@@ -9995,7 +9996,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 緊張的",
         "unit": 18,
-        "example": "",
+        "example": "He's not the nervous type.",
         "exampleZh": ""
     },
     {
@@ -10004,7 +10005,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 鳥巢",
         "unit": 18,
-        "example": "",
+        "example": "The owl seems to have deserted its nest.",
         "exampleZh": ""
     },
     {
@@ -10013,8 +10014,8 @@ const jhWordsDB = [
         "kk": "/ˈnevər/",
         "zh": "adv. 從未",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Her determination never wavered.",
+        "exampleZh": "她的決心從未動搖過。"
     },
     {
         "id": 31114,
@@ -10022,8 +10023,8 @@ const jhWordsDB = [
         "kk": "/nuː/",
         "zh": "adj. 新的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "New England is beautiful.",
+        "exampleZh": "新英格蘭很美麗。"
     },
     {
         "id": 31115,
@@ -10031,8 +10032,8 @@ const jhWordsDB = [
         "kk": "/nuːz/",
         "zh": "n. 新聞",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The news lifted our spirits.",
+        "exampleZh": "這個消息讓我們精神振奮。"
     },
     {
         "id": 31116,
@@ -10040,8 +10041,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 報紙",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "May I borrow your newspaper?",
+        "exampleZh": "可以藉你的報紙嗎？"
     },
     {
         "id": 31117,
@@ -10049,8 +10050,8 @@ const jhWordsDB = [
         "kk": "/nekst/",
         "zh": "adj. 下一個的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "When is your next appointment?",
+        "exampleZh": "您的下一次預約是什麼時候？"
     },
     {
         "id": 31118,
@@ -10058,8 +10059,8 @@ const jhWordsDB = [
         "kk": "/naɪs/",
         "zh": "adj. 友善的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "It's been nice meeting you.",
+        "exampleZh": "很高興見到你。"
     },
     {
         "id": 31119,
@@ -10067,7 +10068,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 姪女,甥女",
         "unit": 18,
-        "example": "",
+        "example": "He looked affectionately at his niece.",
         "exampleZh": ""
     },
     {
@@ -10076,8 +10077,8 @@ const jhWordsDB = [
         "kk": "/naɪt/",
         "zh": "n. 夜晚",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I couldn't sleep last night.",
+        "exampleZh": "我昨晚無法入睡。"
     },
     {
         "id": 31121,
@@ -10085,8 +10086,8 @@ const jhWordsDB = [
         "kk": "/naɪn/",
         "zh": "n. 九",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "We still sighted nine yachts.",
+        "exampleZh": "我們仍然看到了九艘遊艇。"
     },
     {
         "id": 31122,
@@ -10094,8 +10095,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 十九",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "They have nineteen days to make up their minds.",
+        "exampleZh": "他們有十九天的時間來做決定。"
     },
     {
         "id": 31123,
@@ -10103,8 +10104,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 九十",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Her weight was under ninety pounds.",
+        "exampleZh": "她的體重不到九十磅。"
     },
     {
         "id": 31124,
@@ -10112,8 +10113,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adv. 不",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She had no money coming in and no funds.",
+        "exampleZh": "她沒有錢進來，也沒有資金。"
     },
     {
         "id": 31125,
@@ -10121,7 +10122,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 點頭",
         "unit": 18,
-        "example": "",
+        "example": "Don't let yon dog nod off.",
         "exampleZh": ""
     },
     {
@@ -10130,8 +10131,8 @@ const jhWordsDB = [
         "kk": "/nɔɪz/",
         "zh": "n. 噪音",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The noise outside wakened her.",
+        "exampleZh": "外面的喧鬧聲吵醒了她。"
     },
     {
         "id": 31127,
@@ -10139,8 +10140,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 吵雜的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Our next-door neighbours are very noisy.",
+        "exampleZh": "我們的隔壁鄰居非常吵鬧。"
     },
     {
         "id": 31128,
@@ -10148,8 +10149,8 @@ const jhWordsDB = [
         "kk": "/nʌn/",
         "zh": "pron. 沒有人",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "None of them could sing in tune.",
+        "exampleZh": "他們誰都唱不準。"
     },
     {
         "id": 31129,
@@ -10157,7 +10158,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 麵條",
         "unit": 18,
-        "example": "",
+        "example": "They have two restaurants that purvey dumplings and chicken noodle soup.",
         "exampleZh": ""
     },
     {
@@ -10166,8 +10167,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 中午",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I'm leaving on the noon train.",
+        "exampleZh": "我要搭中午的火車出發。"
     },
     {
         "id": 31131,
@@ -10175,8 +10176,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "conj. 也不",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She seemed neither surprised nor worried.",
+        "exampleZh": "她看起來既不驚訝也不擔心。"
     },
     {
         "id": 31132,
@@ -10184,8 +10185,8 @@ const jhWordsDB = [
         "kk": "/nɔːrθ/",
         "zh": "n. 北方",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "A compass needle points north.",
+        "exampleZh": "指南針的指針指向北方。"
     },
     {
         "id": 31133,
@@ -10193,8 +10194,8 @@ const jhWordsDB = [
         "kk": "/noʊz/",
         "zh": "n. 鼻子",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I wrinkled my nose in disgust.",
+        "exampleZh": "我厭惡地皺起了鼻子。"
     },
     {
         "id": 31134,
@@ -10202,8 +10203,8 @@ const jhWordsDB = [
         "kk": "/nɑːt/",
         "zh": "adv. 不是",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "It's not over yet—not by a long chalk.",
+        "exampleZh": "事情還沒結束——還遠遠沒有結束。"
     },
     {
         "id": 31135,
@@ -10211,8 +10212,8 @@ const jhWordsDB = [
         "kk": "/noʊt/",
         "zh": "n. 便條",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Someone left this note for you.",
+        "exampleZh": "有人留了這張紙條給你。"
     },
     {
         "id": 31136,
@@ -10220,7 +10221,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 筆記本",
         "unit": 18,
-        "example": "",
+        "example": "Bob whipped out his notebook.",
         "exampleZh": ""
     },
     {
@@ -10229,8 +10230,8 @@ const jhWordsDB = [
         "kk": "/ˈnʌθɪŋ/",
         "zh": "pron. 沒有什麼",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Sam shrugged and said nothing.",
+        "exampleZh": "薩姆聳聳肩，什麼也沒說。"
     },
     {
         "id": 31138,
@@ -10238,8 +10239,8 @@ const jhWordsDB = [
         "kk": "/ˈnoʊtɪs/",
         "zh": "v. 注意到",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He pretended not to notice.",
+        "exampleZh": "他假裝沒有註意到。"
     },
     {
         "id": 31139,
@@ -10247,7 +10248,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 小說",
         "unit": 18,
-        "example": "",
+        "example": "Have you read her new novel?",
         "exampleZh": ""
     },
     {
@@ -10256,8 +10257,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 十一月",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She left back in November.",
+        "exampleZh": "她十一月就離開了。"
     },
     {
         "id": 31141,
@@ -10265,8 +10266,8 @@ const jhWordsDB = [
         "kk": "/naʊ/",
         "zh": "adv. 現在",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She's in kindergarten now.",
+        "exampleZh": "她現在上幼稚園了。"
     },
     {
         "id": 31142,
@@ -10274,8 +10275,8 @@ const jhWordsDB = [
         "kk": "/ˈnʌmbər/",
         "zh": "n. 數字",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "My phone number is 266998.",
+        "exampleZh": "我的電話號碼是266998。"
     },
     {
         "id": 31143,
@@ -10283,8 +10284,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 護士",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The nurse cleaned the wound.",
+        "exampleZh": "護士清理了傷口。"
     },
     {
         "id": 31144,
@@ -10292,7 +10293,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 堅果",
         "unit": 18,
-        "example": "",
+        "example": "Plant fruit and nut trees.",
         "exampleZh": ""
     },
     {
@@ -10301,8 +10302,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 聽從",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "It was his duty to obey.",
+        "exampleZh": "服從是他的職責。"
     },
     {
         "id": 31146,
@@ -10310,7 +10311,7 @@ const jhWordsDB = [
         "kk": "/ˈɑːbdʒɪkt/",
         "zh": "n. 物體",
         "unit": 18,
-        "example": "",
+        "example": "A rock is an inanimate object.",
         "exampleZh": ""
     },
     {
@@ -10319,8 +10320,8 @@ const jhWordsDB = [
         "kk": "/ˈoʊʃn/",
         "zh": "n. 海洋",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The grey ocean seethed beneath them.",
+        "exampleZh": "灰色的海洋在他們腳下沸騰。"
     },
     {
         "id": 31148,
@@ -10328,8 +10329,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adv. ...點鐘",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The clock said three o'clock.",
+        "exampleZh": "時鐘指向三點鐘。"
     },
     {
         "id": 31149,
@@ -10337,8 +10338,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 十月",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The film festival takes place in October.",
+        "exampleZh": "電影節於十月舉行。"
     },
     {
         "id": 31150,
@@ -10346,8 +10347,8 @@ const jhWordsDB = [
         "kk": "/ʌv/",
         "zh": "prep. ...的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "One of the penalties of fame is loss of privacy.",
+        "exampleZh": "名譽的懲罰之一就是失去隱私。"
     },
     {
         "id": 31151,
@@ -10355,8 +10356,8 @@ const jhWordsDB = [
         "kk": "/ɔːf/",
         "zh": "prep. 從...離開",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The wedding is off.",
+        "exampleZh": "婚禮取消了。"
     },
     {
         "id": 31152,
@@ -10364,7 +10365,7 @@ const jhWordsDB = [
         "kk": "/ˈɔːfər/",
         "zh": "v. 提出",
         "unit": 18,
-        "example": "",
+        "example": "We offer free technical support.",
         "exampleZh": ""
     },
     {
@@ -10373,8 +10374,8 @@ const jhWordsDB = [
         "kk": "/ˈɔːfɪs/",
         "zh": "n. 辦公室",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Moira bounced into the office.",
+        "exampleZh": "莫伊拉跳進辦公室。"
     },
     {
         "id": 31154,
@@ -10382,8 +10383,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 警官,官員",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The officer radioed for advice.",
+        "exampleZh": "該官員透過無線電尋求建議。"
     },
     {
         "id": 31155,
@@ -10391,8 +10392,8 @@ const jhWordsDB = [
         "kk": "/ˈɔːfən/",
         "zh": "adv. 經常",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She often goes around barefoot.",
+        "exampleZh": "她經常赤腳到處走動。"
     },
     {
         "id": 31156,
@@ -10400,8 +10401,8 @@ const jhWordsDB = [
         "kk": "/ɔɪl/",
         "zh": "n. 石油",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The price of oil increased.",
+        "exampleZh": "石油價格上漲。"
     },
     {
         "id": 31157,
@@ -10409,8 +10410,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 可以的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Okay, there is a slight difference.",
+        "exampleZh": "好吧，有一點不同。"
     },
     {
         "id": 31158,
@@ -10418,8 +10419,8 @@ const jhWordsDB = [
         "kk": "/oʊld/",
         "zh": "adj. 老的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The old man spoke deferentially.",
+        "exampleZh": "老者恭敬的說道。"
     },
     {
         "id": 31159,
@@ -10427,8 +10428,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 省略",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "If you are a student, you can omit questions 16–18.",
+        "exampleZh": "如果您是學生，則可以省略問題 16-18。"
     },
     {
         "id": 31160,
@@ -10436,8 +10437,8 @@ const jhWordsDB = [
         "kk": "/ɑːn/",
         "zh": "prep. 在...上面",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She went on and on about her trip.",
+        "exampleZh": "她滔滔不絕地講述她的旅行。"
     },
     {
         "id": 31161,
@@ -10445,8 +10446,8 @@ const jhWordsDB = [
         "kk": "/wʌns/",
         "zh": "adv. 一次",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I met Miquela once, briefly.",
+        "exampleZh": "我曾短暫見過米克拉一次。"
     },
     {
         "id": 31162,
@@ -10454,8 +10455,8 @@ const jhWordsDB = [
         "kk": "/wʌn/",
         "zh": "adj. 一個的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "One minus one is zero.",
+        "exampleZh": "一減一為零。"
     },
     {
         "id": 31163,
@@ -10463,7 +10464,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 洋蔥",
         "unit": 18,
-        "example": "",
+        "example": "I sliced up an onion.",
         "exampleZh": ""
     },
     {
@@ -10472,8 +10473,8 @@ const jhWordsDB = [
         "kk": "/ˈoʊnli/",
         "zh": "adj. 唯一的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Only the yolk contains cholesterol.",
+        "exampleZh": "只有蛋黃含有膽固醇。"
     },
     {
         "id": 31165,
@@ -10481,8 +10482,8 @@ const jhWordsDB = [
         "kk": "/ˈoʊpən/",
         "zh": "v. 打開",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The door squeaked open.",
+        "exampleZh": "門吱呀一聲打開了。"
     },
     {
         "id": 31166,
@@ -10490,8 +10491,8 @@ const jhWordsDB = [
         "kk": "/ˈɑːpəreɪt/",
         "zh": "v. 操作",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "They operate franchises in London and Paris.",
+        "exampleZh": "他們在倫敦和巴黎經營特許經營權。"
     },
     {
         "id": 31167,
@@ -10499,7 +10500,7 @@ const jhWordsDB = [
         "kk": "/əˈpɪnjən/",
         "zh": "n. 意見",
         "unit": 18,
-        "example": "",
+        "example": "We'll need an expert opinion.",
         "exampleZh": ""
     },
     {
@@ -10508,8 +10509,8 @@ const jhWordsDB = [
         "kk": "/ɔːr/",
         "zh": "conj. 或者",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I don't drink whisky or brandy or any other spirits.",
+        "exampleZh": "我不喝威士忌、白蘭地或任何其他烈酒。"
     },
     {
         "id": 31169,
@@ -10517,8 +10518,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 柑橘",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I plucked an orange from the tree.",
+        "exampleZh": "我從樹上摘了一個橘子。"
     },
     {
         "id": 31170,
@@ -10526,8 +10527,8 @@ const jhWordsDB = [
         "kk": "/ˈɔːrdər/",
         "zh": "n. 命令",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She barked out an order.",
+        "exampleZh": "她大聲下達命令。"
     },
     {
         "id": 31171,
@@ -10535,8 +10536,8 @@ const jhWordsDB = [
         "kk": "/ˈɔːrdəneri/",
         "zh": "adj. 普通的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The meal was very ordinary.",
+        "exampleZh": "這頓飯很普通。"
     },
     {
         "id": 31172,
@@ -10544,7 +10545,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 器官",
         "unit": 18,
-        "example": "",
+        "example": "The largest organ in the body is the liver.",
         "exampleZh": ""
     },
     {
@@ -10553,7 +10554,7 @@ const jhWordsDB = [
         "kk": "/ˌɔːrɡənəˈzeɪʃn/",
         "zh": "n. 機構",
         "unit": 18,
-        "example": "",
+        "example": "The organization is heavily overspent.",
         "exampleZh": ""
     },
     {
@@ -10562,8 +10563,8 @@ const jhWordsDB = [
         "kk": "/ˈʌðər/",
         "zh": "adj. 其他的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Are there any other questions?",
+        "exampleZh": "還有其他問題嗎？"
     },
     {
         "id": 31175,
@@ -10571,8 +10572,8 @@ const jhWordsDB = [
         "kk": "/aʊt/",
         "zh": "adv. 向外",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The flame sputters out.",
+        "exampleZh": "火焰噴濺而出。"
     },
     {
         "id": 31176,
@@ -10580,8 +10581,8 @@ const jhWordsDB = [
         "kk": "/ˌaʊtˈsaɪd/",
         "zh": "adv. 在外面",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Outside it was bitterly cold.",
+        "exampleZh": "外面寒冷刺骨。"
     },
     {
         "id": 31177,
@@ -10589,7 +10590,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 烤箱",
         "unit": 18,
-        "example": "",
+        "example": "Nobody relishes cleaning the oven.",
         "exampleZh": ""
     },
     {
@@ -10598,8 +10599,8 @@ const jhWordsDB = [
         "kk": "/ˈoʊvər/",
         "zh": "prep. 在...之上",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He plays the same songs over and over.",
+        "exampleZh": "他一遍又一遍地播放相同的歌曲。"
     },
     {
         "id": 31179,
@@ -10607,8 +10608,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adv. 在國外",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Nearly half the students come from overseas.",
+        "exampleZh": "近一半的學生來自海外。"
     },
     {
         "id": 31180,
@@ -10616,8 +10617,8 @@ const jhWordsDB = [
         "kk": "/oʊn/",
         "zh": "v. 擁有",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She makes her own clothes.",
+        "exampleZh": "她自己做衣服。"
     },
     {
         "id": 31181,
@@ -10625,7 +10626,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 物主",
         "unit": 18,
-        "example": "",
+        "example": "The dog looked mournfully after its owner.",
         "exampleZh": ""
     },
     {
@@ -10634,7 +10635,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 公牛",
         "unit": 18,
-        "example": "",
+        "example": "Seven sheep and eight ox.",
         "exampleZh": ""
     },
     {
@@ -10643,7 +10644,7 @@ const jhWordsDB = [
         "kk": "/pæk/",
         "zh": "v. 打包",
         "unit": 18,
-        "example": "",
+        "example": "All joiners will receive a welcome pack.",
         "exampleZh": ""
     },
     {
@@ -10652,7 +10653,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 包裹",
         "unit": 18,
-        "example": "",
+        "example": "I tore the package open.",
         "exampleZh": ""
     },
     {
@@ -10661,8 +10662,8 @@ const jhWordsDB = [
         "kk": "/peɪdʒ/",
         "zh": "n. 頁",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I ran my eyes over the page.",
+        "exampleZh": "我的目光掃過這一頁。"
     },
     {
         "id": 31186,
@@ -10670,7 +10671,7 @@ const jhWordsDB = [
         "kk": "/peɪn/",
         "zh": "n. 痛苦",
         "unit": 18,
-        "example": "",
+        "example": "The pain was receding slightly.",
         "exampleZh": ""
     },
     {
@@ -10679,8 +10680,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 痛苦的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Her glands were swollen and painful.",
+        "exampleZh": "她的腺體腫脹且疼痛。"
     },
     {
         "id": 31188,
@@ -10688,8 +10689,8 @@ const jhWordsDB = [
         "kk": "/peɪnt/",
         "zh": "v. 畫圖",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Why do people paint pictures?",
+        "exampleZh": "人們為什麼要畫畫？"
     },
     {
         "id": 31189,
@@ -10697,7 +10698,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 畫家",
         "unit": 18,
-        "example": "",
+        "example": "His father was a painter.",
         "exampleZh": ""
     },
     {
@@ -10706,8 +10707,8 @@ const jhWordsDB = [
         "kk": "/per/",
         "zh": "n. 一對",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Maximo put on a pair of glasses.",
+        "exampleZh": "馬克西莫戴上一副眼鏡。"
     },
     {
         "id": 31191,
@@ -10715,7 +10716,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 睡衣",
         "unit": 18,
-        "example": "",
+        "example": "We also need some pajamas.",
         "exampleZh": ""
     },
     {
@@ -10724,7 +10725,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 蒼白的",
         "unit": 18,
-        "example": "",
+        "example": "Rachel looked pale and weary.",
         "exampleZh": ""
     },
     {
@@ -10733,7 +10734,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 平底鍋",
         "unit": 18,
-        "example": "",
+        "example": "Oh hell, I've burned the pan.",
         "exampleZh": ""
     },
     {
@@ -10742,7 +10743,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 貓熊",
         "unit": 18,
-        "example": "",
+        "example": "The panda is a shy creature.",
         "exampleZh": ""
     },
     {
@@ -10751,8 +10752,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 褲子",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Don't tell me you've split another pair of pants!",
+        "exampleZh": "別告訴我你又裂開了一條褲子！"
     },
     {
         "id": 31196,
@@ -10760,7 +10761,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 木瓜",
         "unit": 18,
-        "example": "",
+        "example": "Apply papaya pulp on the skin.",
         "exampleZh": ""
     },
     {
@@ -10769,8 +10770,8 @@ const jhWordsDB = [
         "kk": "/ˈpeɪpər/",
         "zh": "n. 紙",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He folded the paper carefully.",
+        "exampleZh": "他小心翼翼地把紙折起來。"
     },
     {
         "id": 31198,
@@ -10778,7 +10779,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 原諒",
         "unit": 18,
-        "example": "",
+        "example": "I must crave your pardon.",
         "exampleZh": ""
     },
     {
@@ -10787,8 +10788,8 @@ const jhWordsDB = [
         "kk": "/ˈperənt/",
         "zh": "n. 父親(或母親)",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I'm wearing two hats tonight—parent and teacher.",
+        "exampleZh": "今晚我身兼兩職──家長和老師。"
     },
     {
         "id": 31200,
@@ -10796,8 +10797,8 @@ const jhWordsDB = [
         "kk": "/pɑːrk/",
         "zh": "n. 公園",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Families were strolling around the park.",
+        "exampleZh": "一家人在公園散步。"
     },
     {
         "id": 31201,
@@ -10805,7 +10806,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 鸚鵡",
         "unit": 18,
-        "example": "",
+        "example": "Generations of students have learned to parrot the standard explanations.",
         "exampleZh": ""
     },
     {
@@ -10814,8 +10815,8 @@ const jhWordsDB = [
         "kk": "/pɑːrt/",
         "zh": "n. 部分",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Have you learned your part yet?",
+        "exampleZh": "你已經學會你的部分了嗎？"
     },
     {
         "id": 31203,
@@ -10823,8 +10824,8 @@ const jhWordsDB = [
         "kk": "/pərˈtɪkjələr/",
         "zh": "adj. 特別的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He loves science fiction in particular.",
+        "exampleZh": "他特別喜歡科幻小說。"
     },
     {
         "id": 31204,
@@ -10832,7 +10833,7 @@ const jhWordsDB = [
         "kk": "/ˈpɑːrtnər/",
         "zh": "n. 夥伴",
         "unit": 18,
-        "example": "",
+        "example": "Gerry offered to partner me at tennis.",
         "exampleZh": ""
     },
     {
@@ -10841,8 +10842,8 @@ const jhWordsDB = [
         "kk": "/ˈpɑːrti/",
         "zh": "n. 派對",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The party was arranged quickly.",
+        "exampleZh": "聚會很快就安排好了。"
     },
     {
         "id": 31206,
@@ -10850,7 +10851,7 @@ const jhWordsDB = [
         "kk": "/pæs/",
         "zh": "v. 通過",
         "unit": 18,
-        "example": "",
+        "example": "She timed the pass perfectly.",
         "exampleZh": ""
     },
     {
@@ -10859,7 +10860,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 乘客",
         "unit": 18,
-        "example": "",
+        "example": "I dinged my passenger door.",
         "exampleZh": ""
     },
     {
@@ -10868,8 +10869,8 @@ const jhWordsDB = [
         "kk": "/pæst/",
         "zh": "adj. 過去的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Three runners sprinted past.",
+        "exampleZh": "三名跑者疾馳而過。"
     },
     {
         "id": 31209,
@@ -10877,7 +10878,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 麵糰",
         "unit": 18,
-        "example": "",
+        "example": "It's quicker to cut and paste than to retype.",
         "exampleZh": ""
     },
     {
@@ -10886,7 +10887,7 @@ const jhWordsDB = [
         "kk": "/pæθ/",
         "zh": "n. 小徑",
         "unit": 18,
-        "example": "",
+        "example": "The path climbed steeply upwards.",
         "exampleZh": ""
     },
     {
@@ -10895,7 +10896,7 @@ const jhWordsDB = [
         "kk": "/ˈpeɪʃnt/",
         "zh": "n. 病人",
         "unit": 18,
-        "example": "",
+        "example": "The patient is terminally ill.",
         "exampleZh": ""
     },
     {
@@ -10904,7 +10905,7 @@ const jhWordsDB = [
         "kk": "/ˈpætərn/",
         "zh": "n. 模式",
         "unit": 18,
-        "example": "",
+        "example": "All three attacks followed the same pattern.",
         "exampleZh": ""
     },
     {
@@ -10913,7 +10914,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 停頓",
         "unit": 18,
-        "example": "",
+        "example": "There was a longish pause.",
         "exampleZh": ""
     },
     {
@@ -10922,7 +10923,7 @@ const jhWordsDB = [
         "kk": "/peɪ/",
         "zh": "v. 付款",
         "unit": 18,
-        "example": "",
+        "example": "She stubbornly refused to pay.",
         "exampleZh": ""
     },
     {
@@ -10931,7 +10932,7 @@ const jhWordsDB = [
         "kk": "/piːs/",
         "zh": "n. 和平",
         "unit": 18,
-        "example": "",
+        "example": "The people yearned for peace.",
         "exampleZh": ""
     },
     {
@@ -10940,8 +10941,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 和平的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I was amazingly light-hearted and peaceful.",
+        "exampleZh": "我出奇地輕鬆、平靜。"
     },
     {
         "id": 31217,
@@ -10949,7 +10950,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 桃子",
         "unit": 18,
-        "example": "",
+        "example": "He picked out the ripest peach for me.",
         "exampleZh": ""
     },
     {
@@ -10958,7 +10959,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 梨子",
         "unit": 18,
-        "example": "",
+        "example": "She bit into a ripe juicy pear.",
         "exampleZh": ""
     },
     {
@@ -10967,7 +10968,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 花生",
         "unit": 18,
-        "example": "",
+        "example": "James flicked a peanut at her.",
         "exampleZh": ""
     },
     {
@@ -10976,8 +10977,8 @@ const jhWordsDB = [
         "kk": "/pen/",
         "zh": "n. 筆",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Where's the top of this pen?",
+        "exampleZh": "這支筆的頂部在哪裡？"
     },
     {
         "id": 31221,
@@ -10985,8 +10986,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 鉛筆",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I snapped the pencil in half.",
+        "exampleZh": "我把鉛筆折成兩半。"
     },
     {
         "id": 31222,
@@ -10994,8 +10995,8 @@ const jhWordsDB = [
         "kk": "/ˈpiːpl/",
         "zh": "n. 人",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She tends to annoy people.",
+        "exampleZh": "她很容易惹惱別人。"
     },
     {
         "id": 31223,
@@ -11003,7 +11004,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 胡椒粉",
         "unit": 18,
-        "example": "",
+        "example": "She shook some pepper onto her sandwich.",
         "exampleZh": ""
     },
     {
@@ -11012,7 +11013,7 @@ const jhWordsDB = [
         "kk": "/ˈpɜːrfɪkt/",
         "zh": "adj. 完美的",
         "unit": 18,
-        "example": "",
+        "example": "He always plays in perfect time.",
         "exampleZh": ""
     },
     {
@@ -11021,8 +11022,8 @@ const jhWordsDB = [
         "kk": "/pərˈhæps/",
         "zh": "adv. 也許",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Perhaps I spoke too hastily.",
+        "exampleZh": "也許我說得太倉促了。"
     },
     {
         "id": 31226,
@@ -11030,7 +11031,7 @@ const jhWordsDB = [
         "kk": "/ˈpɪriəd/",
         "zh": "n. 一段時間",
         "unit": 18,
-        "example": "",
+        "example": "It was a period of intense activity.",
         "exampleZh": ""
     },
     {
@@ -11039,8 +11040,8 @@ const jhWordsDB = [
         "kk": "/ˈpɜːrsənl/",
         "zh": "adj. 個人的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The letter was marked 'Personal'.",
+        "exampleZh": "這封信被標記為“個人”。"
     },
     {
         "id": 31228,
@@ -11048,8 +11049,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 寵物",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "They had had their pet dog stuffed.",
+        "exampleZh": "他們給自己的寵物狗餵了毛絨玩具。"
     },
     {
         "id": 31229,
@@ -11057,7 +11058,7 @@ const jhWordsDB = [
         "kk": "/ˈfoʊtoʊ/",
         "zh": "n. 照片",
         "unit": 18,
-        "example": "",
+        "example": "The photo wasn't very clear.",
         "exampleZh": ""
     },
     {
@@ -11066,7 +11067,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 物理",
         "unit": 18,
-        "example": "",
+        "example": "Have you read this month's 'Physics World'?",
         "exampleZh": ""
     },
     {
@@ -11075,8 +11076,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 鋼琴",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The piano was in good condition.",
+        "exampleZh": "鋼琴狀況良好。"
     },
     {
         "id": 31232,
@@ -11084,7 +11085,7 @@ const jhWordsDB = [
         "kk": "/pɪk/",
         "zh": "v. 挑選",
         "unit": 18,
-        "example": "",
+        "example": "I'll pick you up at five.",
         "exampleZh": ""
     },
     {
@@ -11093,7 +11094,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 野餐",
         "unit": 18,
-        "example": "",
+        "example": "We're going on a picnic tomorrow.",
         "exampleZh": ""
     },
     {
@@ -11102,8 +11103,8 @@ const jhWordsDB = [
         "kk": "/ˈpɪktʃər/",
         "zh": "n. 照片",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I saw her picture everywhere.",
+        "exampleZh": "我到處都看到她的照片。"
     },
     {
         "id": 31235,
@@ -11111,8 +11112,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 派",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "We all had a second helping of pie.",
+        "exampleZh": "我們都吃了第二份派。"
     },
     {
         "id": 31236,
@@ -11120,8 +11121,8 @@ const jhWordsDB = [
         "kk": "/piːs/",
         "zh": "n. 一張",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I never found the missing piece.",
+        "exampleZh": "我一直沒有找到缺少的部分。"
     },
     {
         "id": 31237,
@@ -11129,8 +11130,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 豬",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The pig rose squealing and bolted.",
+        "exampleZh": "豬尖叫著逃跑了。"
     },
     {
         "id": 31238,
@@ -11138,7 +11139,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 鴿子",
         "unit": 18,
-        "example": "",
+        "example": "A large Pigeon flew far above him.",
         "exampleZh": ""
     },
     {
@@ -11147,7 +11148,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 堆",
         "unit": 18,
-        "example": "",
+        "example": "He swept the leaves up into a pile.",
         "exampleZh": ""
     },
     {
@@ -11156,7 +11157,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 枕頭",
         "unit": 18,
-        "example": "",
+        "example": "He pummelled the pillow with his fists.",
         "exampleZh": ""
     },
     {
@@ -11165,7 +11166,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 別針",
         "unit": 18,
-        "example": "",
+        "example": "They're trying to pin it on us.",
         "exampleZh": ""
     },
     {
@@ -11174,7 +11175,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 鳳梨",
         "unit": 18,
-        "example": "",
+        "example": "Mango and pineapple are yellow.",
         "exampleZh": ""
     },
     {
@@ -11183,7 +11184,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 粉紅色的",
         "unit": 18,
-        "example": "",
+        "example": "Judi's favourite colour is pink.",
         "exampleZh": ""
     },
     {
@@ -11192,7 +11193,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 煙斗",
         "unit": 18,
-        "example": "",
+        "example": "He puffed (away) on his pipe.",
         "exampleZh": ""
     },
     {
@@ -11201,7 +11202,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 披薩",
         "unit": 18,
-        "example": "",
+        "example": "They pigged out on pizza.",
         "exampleZh": ""
     },
     {
@@ -11210,8 +11211,8 @@ const jhWordsDB = [
         "kk": "/pleɪs/",
         "zh": "n. 地方",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "That place is a madhouse.",
+        "exampleZh": "那個地方就是瘋人院。"
     },
     {
         "id": 31247,
@@ -11219,7 +11220,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 平原",
         "unit": 18,
-        "example": "",
+        "example": "It was the plain unvarnished truth.",
         "exampleZh": ""
     },
     {
@@ -11228,8 +11229,8 @@ const jhWordsDB = [
         "kk": "/plæn/",
         "zh": "n. 計畫",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "If Plan A fails, go to Plan B.",
+        "exampleZh": "如果 A 計劃失敗，則轉向 B 計劃。"
     },
     {
         "id": 31249,
@@ -11237,7 +11238,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 行星",
         "unit": 18,
-        "example": "",
+        "example": "Saturn is the second biggest planet in the solar system.",
         "exampleZh": ""
     },
     {
@@ -11246,8 +11247,8 @@ const jhWordsDB = [
         "kk": "/plænt/",
         "zh": "n. 植物",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "This plant is a vigorous grower.",
+        "exampleZh": "這種植物生長旺盛。"
     },
     {
         "id": 31251,
@@ -11255,7 +11256,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 盤子",
         "unit": 18,
-        "example": "",
+        "example": "Don't touch that plate—it's hot!",
         "exampleZh": ""
     },
     {
@@ -11264,7 +11265,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 月臺",
         "unit": 18,
-        "example": "",
+        "example": "The platform began to produce oil in 1994.",
         "exampleZh": ""
     },
     {
@@ -11273,8 +11274,8 @@ const jhWordsDB = [
         "kk": "/pleɪ/",
         "zh": "v. 玩",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I used to play basketball.",
+        "exampleZh": "我以前打籃球。"
     },
     {
         "id": 31254,
@@ -11282,8 +11283,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 運動員",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She's a good all-round player.",
+        "exampleZh": "她是一位出色的全能球員。"
     },
     {
         "id": 31255,
@@ -11291,8 +11292,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 操場",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Sam pushed me over in the playground.",
+        "exampleZh": "山姆在操場上把我推倒了。"
     },
     {
         "id": 31256,
@@ -11300,8 +11301,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 舒適的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The woman had a pleasant face.",
+        "exampleZh": "女人面容愉快。"
     },
     {
         "id": 31257,
@@ -11309,8 +11310,8 @@ const jhWordsDB = [
         "kk": "/pliːz/",
         "zh": "v. 請",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Two pints of mild, please.",
+        "exampleZh": "請來兩品脫淡啤酒。"
     },
     {
         "id": 31258,
@@ -11318,7 +11319,7 @@ const jhWordsDB = [
         "kk": "/plʌs/",
         "zh": "prep. 加",
         "unit": 18,
-        "example": "",
+        "example": "Two plus five is seven.",
         "exampleZh": ""
     },
     {
@@ -11327,8 +11328,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 口袋",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I slid the wallet into his pocket.",
+        "exampleZh": "我把錢包塞進他的口袋。"
     },
     {
         "id": 31260,
@@ -11336,7 +11337,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 詩",
         "unit": 18,
-        "example": "",
+        "example": "The poem uses simple language.",
         "exampleZh": ""
     },
     {
@@ -11345,7 +11346,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 詩人",
         "unit": 18,
-        "example": "",
+        "example": "He is a very underrated poet.",
         "exampleZh": ""
     },
     {
@@ -11354,8 +11355,8 @@ const jhWordsDB = [
         "kk": "/pɔɪnt/",
         "zh": "v. 指出",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "This last point is crucial.",
+        "exampleZh": "最後一點至關重要。"
     },
     {
         "id": 31263,
@@ -11363,7 +11364,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 毒藥",
         "unit": 18,
-        "example": "",
+        "example": "Some mushrooms contain a deadly poison.",
         "exampleZh": ""
     },
     {
@@ -11372,8 +11373,8 @@ const jhWordsDB = [
         "kk": "/pəˈliːs/",
         "zh": "n. 警察",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Police work is mainly routine.",
+        "exampleZh": "警察的工作主要是日常工作。"
     },
     {
         "id": 31265,
@@ -11381,8 +11382,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 有禮貌的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "We made polite, stilted conversation.",
+        "exampleZh": "我們進行了禮貌而生硬的交談。"
     },
     {
         "id": 31266,
@@ -11390,7 +11391,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 汙染",
         "unit": 18,
-        "example": "",
+        "example": "Mining would pollute the lake and denude the forest.",
         "exampleZh": ""
     },
     {
@@ -11399,7 +11400,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 汙染",
         "unit": 18,
-        "example": "",
+        "example": "Pollution can harm marine life.",
         "exampleZh": ""
     },
     {
@@ -11408,8 +11409,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 池塘",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The evening breeze ruffled the pond.",
+        "exampleZh": "晚風吹動了池塘。"
     },
     {
         "id": 31269,
@@ -11417,8 +11418,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 水塘",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Does the hotel have a pool?",
+        "exampleZh": "飯店有游泳池嗎？"
     },
     {
         "id": 31270,
@@ -11426,8 +11427,8 @@ const jhWordsDB = [
         "kk": "/pʊr/",
         "zh": "adj. 貧窮的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He passionately championed the poor.",
+        "exampleZh": "他熱情地支持窮人。"
     },
     {
         "id": 31271,
@@ -11435,8 +11436,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 爆米花",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Linda lay face down on a living room couch, nibbling popcorn.",
+        "exampleZh": "琳達臉朝下躺在客廳的沙發上，啃著爆米花。"
     },
     {
         "id": 31272,
@@ -11444,8 +11445,8 @@ const jhWordsDB = [
         "kk": "/ˈpɑːpjələr/",
         "zh": "adj. 受歡迎的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The restaurant is deservedly popular.",
+        "exampleZh": "這家餐廳當之無愧地很受歡迎。"
     },
     {
         "id": 31273,
@@ -11453,7 +11454,7 @@ const jhWordsDB = [
         "kk": "/ˌpɑːpjəˈleɪʃn/",
         "zh": "n. 人口",
         "unit": 18,
-        "example": "",
+        "example": "The population continues to increase.",
         "exampleZh": ""
     },
     {
@@ -11462,7 +11463,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 豬肉",
         "unit": 18,
-        "example": "",
+        "example": "Here the cooks dish out sweet and sour pork.",
         "exampleZh": ""
     },
     {
@@ -11471,7 +11472,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 港口",
         "unit": 18,
-        "example": "",
+        "example": "The ship steered into port.",
         "exampleZh": ""
     },
     {
@@ -11480,7 +11481,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 姿勢",
         "unit": 18,
-        "example": "",
+        "example": "She rearranged herself in another pose.",
         "exampleZh": ""
     },
     {
@@ -11489,8 +11490,8 @@ const jhWordsDB = [
         "kk": "/pəˈzɪʃn/",
         "zh": "n. 位置",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "My position is quite different.",
+        "exampleZh": "我的立場則截然不同。"
     },
     {
         "id": 31278,
@@ -11498,7 +11499,7 @@ const jhWordsDB = [
         "kk": "/ˈpɑːzətɪv/",
         "zh": "adj. 肯定的",
         "unit": 18,
-        "example": "",
+        "example": "The athlete tested positive for steroids.",
         "exampleZh": ""
     },
     {
@@ -11507,8 +11508,8 @@ const jhWordsDB = [
         "kk": "/ˈpɑːsəbl/",
         "zh": "adj. 有可能的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Many possible orderings may exist.",
+        "exampleZh": "可能存在許多可能的排序。"
     },
     {
         "id": 31280,
@@ -11516,7 +11517,7 @@ const jhWordsDB = [
         "kk": "/poʊst/",
         "zh": "n. 郵件",
         "unit": 18,
-        "example": "",
+        "example": "Have you opened your post yet?",
         "exampleZh": ""
     },
     {
@@ -11525,7 +11526,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 鍋",
         "unit": 18,
-        "example": "",
+        "example": "They drank a pot of coffee.",
         "exampleZh": ""
     },
     {
@@ -11534,7 +11535,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 馬鈴薯",
         "unit": 18,
-        "example": "",
+        "example": "The boiled potato was mealy.",
         "exampleZh": ""
     },
     {
@@ -11543,7 +11544,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 磅",
         "unit": 18,
-        "example": "",
+        "example": "They cost two dollars a pound.",
         "exampleZh": ""
     },
     {
@@ -11552,7 +11553,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 粉末",
         "unit": 18,
-        "example": "",
+        "example": "The snow was like powder.",
         "exampleZh": ""
     },
     {
@@ -11561,8 +11562,8 @@ const jhWordsDB = [
         "kk": "/ˈpaʊər/",
         "zh": "n. 力量",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "They've switched off the power.",
+        "exampleZh": "他們已經關掉了電源。"
     },
     {
         "id": 31286,
@@ -11570,7 +11571,7 @@ const jhWordsDB = [
         "kk": "/ˈpræktɪs/",
         "zh": "n. 練習",
         "unit": 18,
-        "example": "",
+        "example": "She runs a general practice in Hull.",
         "exampleZh": ""
     },
     {
@@ -11579,7 +11580,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 讚美",
         "unit": 18,
-        "example": "",
+        "example": "Even his praise is double-edged.",
         "exampleZh": ""
     },
     {
@@ -11588,8 +11589,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 禱告",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Will you pray to Our Lady for me?",
+        "exampleZh": "你願意為我向聖母祈禱嗎？"
     },
     {
         "id": 31289,
@@ -11597,7 +11598,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 珍貴的",
         "unit": 18,
-        "example": "",
+        "example": "Her family's support is particularly precious to Josie.",
         "exampleZh": ""
     },
     {
@@ -11606,8 +11607,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 較喜歡",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I prefer walking to climbing.",
+        "exampleZh": "比起爬山，我更喜歡步行。"
     },
     {
         "id": 31291,
@@ -11615,8 +11616,8 @@ const jhWordsDB = [
         "kk": "/prɪˈper/",
         "zh": "v. 準備",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I had no time to prepare.",
+        "exampleZh": "我沒有時間準備。"
     },
     {
         "id": 31292,
@@ -11624,7 +11625,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 存在",
         "unit": 18,
-        "example": "",
+        "example": "His presence no longer signified.",
         "exampleZh": ""
     },
     {
@@ -11633,7 +11634,7 @@ const jhWordsDB = [
         "kk": "/ˈpreznt/",
         "zh": "adj. 現在的",
         "unit": 18,
-        "example": "",
+        "example": "Her letters conflate past and present.",
         "exampleZh": ""
     },
     {
@@ -11642,7 +11643,7 @@ const jhWordsDB = [
         "kk": "/ˈprezɪdənt/",
         "zh": "n. 總統;校長",
         "unit": 18,
-        "example": "",
+        "example": "Who succeeded Kennedy as President?",
         "exampleZh": ""
     },
     {
@@ -11651,7 +11652,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 壓力",
         "unit": 18,
-        "example": "",
+        "example": "The pressure now was relentless.",
         "exampleZh": ""
     },
     {
@@ -11660,8 +11661,8 @@ const jhWordsDB = [
         "kk": "/ˈprɪti/",
         "zh": "adj. 漂亮的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The results were pretty good.",
+        "exampleZh": "結果非常好。"
     },
     {
         "id": 31297,
@@ -11669,8 +11670,8 @@ const jhWordsDB = [
         "kk": "/praɪs/",
         "zh": "n. 價格",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The price was not negotiable.",
+        "exampleZh": "價格沒商量。"
     },
     {
         "id": 31298,
@@ -11678,7 +11679,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 驕傲",
         "unit": 18,
-        "example": "",
+        "example": "His words rang with pride.",
         "exampleZh": ""
     },
     {
@@ -11687,7 +11688,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 神父",
         "unit": 18,
-        "example": "",
+        "example": "The priest anointed her with oil.",
         "exampleZh": ""
     },
     {
@@ -11696,7 +11697,7 @@ const jhWordsDB = [
         "kk": "/ˈpraɪmeri/",
         "zh": "adj. 主要的",
         "unit": 18,
-        "example": "",
+        "example": "We turn now to our primary question.",
         "exampleZh": ""
     },
     {
@@ -11705,7 +11706,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 王子",
         "unit": 18,
-        "example": "",
+        "example": "The prince should be plunged into work.",
         "exampleZh": ""
     },
     {
@@ -11714,7 +11715,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 公主",
         "unit": 18,
-        "example": "",
+        "example": "Princess Anne topped the guest list.",
         "exampleZh": ""
     },
     {
@@ -11723,7 +11724,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 原則",
         "unit": 18,
-        "example": "",
+        "example": "The principal is a very busy woman.",
         "exampleZh": ""
     },
     {
@@ -11732,8 +11733,8 @@ const jhWordsDB = [
         "kk": "/prɪnt/",
         "zh": "v. 印刷",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Click on the icon when you want to print.",
+        "exampleZh": "當您想要列印時，請按一下該圖示。"
     },
     {
         "id": 31305,
@@ -11741,7 +11742,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 監獄",
         "unit": 18,
-        "example": "",
+        "example": "The prison is infested with rats.",
         "exampleZh": ""
     },
     {
@@ -11750,8 +11751,8 @@ const jhWordsDB = [
         "kk": "/ˈpraɪvət/",
         "zh": "adj. 私人的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He has a private income.",
+        "exampleZh": "他有私人收入。"
     },
     {
         "id": 31307,
@@ -11759,7 +11760,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 獎",
         "unit": 18,
-        "example": "",
+        "example": "She stepped up to receive her prize.",
         "exampleZh": ""
     },
     {
@@ -11768,7 +11769,7 @@ const jhWordsDB = [
         "kk": "/ˈprɑːbəbli/",
         "zh": "adv. 或許",
         "unit": 18,
-        "example": "",
+        "example": "It was probably infested with cooties.",
         "exampleZh": ""
     },
     {
@@ -11777,8 +11778,8 @@ const jhWordsDB = [
         "kk": "/ˈprɑːbləm/",
         "zh": "n. 問題",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The problem is well documented.",
+        "exampleZh": "該問題有詳細記錄。"
     },
     {
         "id": 31310,
@@ -11786,7 +11787,7 @@ const jhWordsDB = [
         "kk": "/prəˈduːs/",
         "zh": "v. 製造",
         "unit": 18,
-        "example": "",
+        "example": "We sell only fresh local produce.",
         "exampleZh": ""
     },
     {
@@ -11795,7 +11796,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 製造",
         "unit": 18,
-        "example": "",
+        "example": "Production costs began to spiral.",
         "exampleZh": ""
     },
     {
@@ -11804,7 +11805,7 @@ const jhWordsDB = [
         "kk": "/prəˈfesər/",
         "zh": "n. 教授",
         "unit": 18,
-        "example": "",
+        "example": "His grandfather was a professor.",
         "exampleZh": ""
     },
     {
@@ -11813,7 +11814,7 @@ const jhWordsDB = [
         "kk": "/ˈproʊɡræm/",
         "zh": "n. 節目",
         "unit": 18,
-        "example": "",
+        "example": "The program aired last week.",
         "exampleZh": ""
     },
     {
@@ -11822,7 +11823,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 進步",
         "unit": 18,
-        "example": "",
+        "example": "Progress is maddeningly slow.",
         "exampleZh": ""
     },
     {
@@ -11831,7 +11832,7 @@ const jhWordsDB = [
         "kk": "/ˈprɑːdʒekt/",
         "zh": "n. 方案",
         "unit": 18,
-        "example": "",
+        "example": "The whole project was badly managed.",
         "exampleZh": ""
     },
     {
@@ -11840,7 +11841,7 @@ const jhWordsDB = [
         "kk": "/ˈprɑːmɪs/",
         "zh": "n. 承諾",
         "unit": 18,
-        "example": "",
+        "example": "Their future was full of promise.",
         "exampleZh": ""
     },
     {
@@ -11849,8 +11850,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 發音",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The judge will pronounce sentence today.",
+        "exampleZh": "法官今天將宣判。"
     },
     {
         "id": 31318,
@@ -11858,8 +11859,8 @@ const jhWordsDB = [
         "kk": "/prəˈtekt/",
         "zh": "v. 保護",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Women banded together to protect each other.",
+        "exampleZh": "婦女們團結起來互相保護。"
     },
     {
         "id": 31319,
@@ -11867,8 +11868,8 @@ const jhWordsDB = [
         "kk": "/praʊd/",
         "zh": "adj. 驕傲的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I'm proud of my Italian roots.",
+        "exampleZh": "我為我的義大利血統感到自豪。"
     },
     {
         "id": 31320,
@@ -11876,8 +11877,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 證明",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "This advice was to prove valuable.",
+        "exampleZh": "事實證明，這個建議很有價值。"
     },
     {
         "id": 31321,
@@ -11885,8 +11886,8 @@ const jhWordsDB = [
         "kk": "/prəˈvaɪd/",
         "zh": "v. 提供",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He refused to provide a specimen.",
+        "exampleZh": "他拒絕提供樣本。"
     },
     {
         "id": 31322,
@@ -11894,8 +11895,8 @@ const jhWordsDB = [
         "kk": "/ˈpʌblɪk/",
         "zh": "adj. 公共的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She retreated from public life.",
+        "exampleZh": "她退出了公眾生活。"
     },
     {
         "id": 31323,
@@ -11903,8 +11904,8 @@ const jhWordsDB = [
         "kk": "/pʊl/",
         "zh": "v. 拉",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "You push and I'll pull.",
+        "exampleZh": "你推，我拉。"
     },
     {
         "id": 31324,
@@ -11912,7 +11913,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 抽水機",
         "unit": 18,
-        "example": "",
+        "example": "The pump sucks air out through the valve.",
         "exampleZh": ""
     },
     {
@@ -11921,7 +11922,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 南瓜",
         "unit": 18,
-        "example": "",
+        "example": "Pumpkin pie is a traditional American dish served on Thanksgiving.",
         "exampleZh": ""
     },
     {
@@ -11930,8 +11931,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 處罰",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I don't believe that George ever had to punish the children.",
+        "exampleZh": "我不認為喬治必須懲罰孩子。"
     },
     {
         "id": 31327,
@@ -11939,7 +11940,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 小狗",
         "unit": 18,
-        "example": "",
+        "example": "A puppy stepped in the fresh cement.",
         "exampleZh": ""
     },
     {
@@ -11948,8 +11949,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 紫色的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She was dressed in purple.",
+        "exampleZh": "她穿著紫色衣服。"
     },
     {
         "id": 31329,
@@ -11957,8 +11958,8 @@ const jhWordsDB = [
         "kk": "/ˈpɜːrpəs/",
         "zh": "n. 目的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The purpose of industry is to create wealth.",
+        "exampleZh": "工業的目的是創造財富。"
     },
     {
         "id": 31330,
@@ -11966,7 +11967,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 錢包",
         "unit": 18,
-        "example": "",
+        "example": "She closed her purse with a snap.",
         "exampleZh": ""
     },
     {
@@ -11975,8 +11976,8 @@ const jhWordsDB = [
         "kk": "/pʊʃ/",
         "zh": "v. 推",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "You push and I'll pull.",
+        "exampleZh": "你推，我拉。"
     },
     {
         "id": 31332,
@@ -11984,8 +11985,8 @@ const jhWordsDB = [
         "kk": "/pʊt/",
         "zh": "v. 放置",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Danny put down his glass.",
+        "exampleZh": "丹尼放下杯子。"
     },
     {
         "id": 31333,
@@ -11993,7 +11994,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 謎題",
         "unit": 18,
-        "example": "",
+        "example": "The rise in accidents remains a puzzle.",
         "exampleZh": ""
     },
     {
@@ -12002,7 +12003,7 @@ const jhWordsDB = [
         "kk": "/ˈkwɑːləti/",
         "zh": "n. 品質",
         "unit": 18,
-        "example": "",
+        "example": "The quality is uniformly high.",
         "exampleZh": ""
     },
     {
@@ -12011,7 +12012,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 量",
         "unit": 18,
-        "example": "",
+        "example": "Is it available in sufficient quantity?",
         "exampleZh": ""
     },
     {
@@ -12020,7 +12021,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 四分之一",
         "unit": 18,
-        "example": "",
+        "example": "Nowitzki fouled Mitchell early in the third quarter.",
         "exampleZh": ""
     },
     {
@@ -12029,8 +12030,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 女王",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She curtsied to the Queen.",
+        "exampleZh": "她向女王行屈膝禮。"
     },
     {
         "id": 31338,
@@ -12038,8 +12039,8 @@ const jhWordsDB = [
         "kk": "/ˈkwestʃən/",
         "zh": "n. 問題",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "That's a very hard question.",
+        "exampleZh": "這是一個非常難的問題。"
     },
     {
         "id": 31339,
@@ -12047,8 +12048,8 @@ const jhWordsDB = [
         "kk": "/kwɪk/",
         "zh": "adj. 迅速的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He kept giving quick blinks.",
+        "exampleZh": "他不停地快速眨眼。"
     },
     {
         "id": 31340,
@@ -12056,7 +12057,7 @@ const jhWordsDB = [
         "kk": "/ˈkwaɪət/",
         "zh": "adj. 安靜的",
         "unit": 18,
-        "example": "",
+        "example": "'Be quiet,' said the teacher.",
         "exampleZh": ""
     },
     {
@@ -12065,8 +12066,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 停止",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He quit his job as an office boy.",
+        "exampleZh": "他辭去了辦公室勤雜工的工作。"
     },
     {
         "id": 31342,
@@ -12074,8 +12075,8 @@ const jhWordsDB = [
         "kk": "/kwaɪt/",
         "zh": "adv. 相當地",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I worked quite irregular hours.",
+        "exampleZh": "我的工作時間很不規律。"
     },
     {
         "id": 31343,
@@ -12083,7 +12084,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 小考",
         "unit": 18,
-        "example": "",
+        "example": "Have you entered your name for the quiz yet?",
         "exampleZh": ""
     },
     {
@@ -12092,7 +12093,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 兔子",
         "unit": 18,
-        "example": "",
+        "example": "The dog scented a rabbit.",
         "exampleZh": ""
     },
     {
@@ -12101,8 +12102,8 @@ const jhWordsDB = [
         "kk": "/reɪs/",
         "zh": "n. 賽跑",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He finished fifth in the race.",
+        "exampleZh": "他在比賽中獲得第五名。"
     },
     {
         "id": 31346,
@@ -12110,8 +12111,8 @@ const jhWordsDB = [
         "kk": "/ˈreɪdioʊ/",
         "zh": "n. 收音機",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The radio crackled into life.",
+        "exampleZh": "收音機噼裡啪啦地響了起來。"
     },
     {
         "id": 31347,
@@ -12119,8 +12120,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 鐵路",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Court decisions always went against railroad workers.",
+        "exampleZh": "法院的判決總是對鐵路工人不利。"
     },
     {
         "id": 31348,
@@ -12128,8 +12129,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 雨",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The rain continued unabated.",
+        "exampleZh": "雨一直下個不停。"
     },
     {
         "id": 31349,
@@ -12137,8 +12138,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 彩虹",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Finally the rainbow disappeared.",
+        "exampleZh": "最後彩虹消失了。"
     },
     {
         "id": 31350,
@@ -12146,8 +12147,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 多雨的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The rainy season in the Andes normally starts in December.",
+        "exampleZh": "安第斯山脈的雨季通常從十二月開始。"
     },
     {
         "id": 31351,
@@ -12155,8 +12156,8 @@ const jhWordsDB = [
         "kk": "/reɪz/",
         "zh": "v. 增加",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "How can we raise standards in schools?",
+        "exampleZh": "我們怎樣才能提高學校的標準？"
     },
     {
         "id": 31352,
@@ -12164,7 +12165,7 @@ const jhWordsDB = [
         "kk": "/reɪndʒ/",
         "zh": "n. 範圍",
         "unit": 18,
-        "example": "",
+        "example": "We stock a wide range of perfumes.",
         "exampleZh": ""
     },
     {
@@ -12173,8 +12174,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 稀少的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "This species is extremely rare.",
+        "exampleZh": "該品種極為罕見。"
     },
     {
         "id": 31354,
@@ -12182,8 +12183,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 老鼠",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He held his breath as a rat scuttled past.",
+        "exampleZh": "當一隻老鼠疾馳而過時，他屏住了呼吸。"
     },
     {
         "id": 31355,
@@ -12191,8 +12192,8 @@ const jhWordsDB = [
         "kk": "/ˈræðər/",
         "zh": "adv. 稍微",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The leaves taste rather bitter.",
+        "exampleZh": "葉子的味道比較苦。"
     },
     {
         "id": 31356,
@@ -12200,8 +12201,8 @@ const jhWordsDB = [
         "kk": "/riːtʃ/",
         "zh": "v. 到達",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I can't reach the top shelf.",
+        "exampleZh": "我搆不到最上面的架子。"
     },
     {
         "id": 31357,
@@ -12209,8 +12210,8 @@ const jhWordsDB = [
         "kk": "/riːd/",
         "zh": "v. 閱讀",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "What does the thermometer read?",
+        "exampleZh": "溫度計的讀數是什麼？"
     },
     {
         "id": 31358,
@@ -12218,8 +12219,8 @@ const jhWordsDB = [
         "kk": "/ˈredi/",
         "zh": "adj. 準備好的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Everybody ready? It's showtime!",
+        "exampleZh": "大家準備好了嗎？演出時間到了！"
     },
     {
         "id": 31359,
@@ -12227,8 +12228,8 @@ const jhWordsDB = [
         "kk": "/riːl/",
         "zh": "adj. 真的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She's a real cosmopolitan.",
+        "exampleZh": "她是一位真正的國際主義者。"
     },
     {
         "id": 31360,
@@ -12236,8 +12237,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 瞭解",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Only later did she realize her mistake.",
+        "exampleZh": "直到後來她才意識到自己的錯誤。"
     },
     {
         "id": 31361,
@@ -12245,7 +12246,7 @@ const jhWordsDB = [
         "kk": "/ˈriːli/",
         "zh": "adv. 真實地",
         "unit": 18,
-        "example": "",
+        "example": "This sweater really itches.",
         "exampleZh": ""
     },
     {
@@ -12254,8 +12255,8 @@ const jhWordsDB = [
         "kk": "/ˈriːzn/",
         "zh": "n. 理由",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The reason is blindingly obvious.",
+        "exampleZh": "原因是顯而易見的。"
     },
     {
         "id": 31363,
@@ -12263,8 +12264,8 @@ const jhWordsDB = [
         "kk": "/rɪˈsiːv/",
         "zh": "v. 收到",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He will receive $6,000 in back pay.",
+        "exampleZh": "他將收到 6,000 美元的欠薪。"
     },
     {
         "id": 31364,
@@ -12272,7 +12273,7 @@ const jhWordsDB = [
         "kk": "/ˈrekərd/",
         "zh": "n. 記錄",
         "unit": 18,
-        "example": "",
+        "example": "Profits were at record levels.",
         "exampleZh": ""
     },
     {
@@ -12281,7 +12282,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 康復",
         "unit": 18,
-        "example": "",
+        "example": "The economy is at last beginning to recover.",
         "exampleZh": ""
     },
     {
@@ -12290,7 +12291,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 長方形",
         "unit": 18,
-        "example": "",
+        "example": "This is a smaller rounded rectangle.",
         "exampleZh": ""
     },
     {
@@ -12299,7 +12300,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 回收",
         "unit": 18,
-        "example": "",
+        "example": "The objective would be to recycle 98 percent of domestic waste.",
         "exampleZh": ""
     },
     {
@@ -12308,8 +12309,8 @@ const jhWordsDB = [
         "kk": "/red/",
         "zh": "adj. 紅色的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She was wearing red lipstick.",
+        "exampleZh": "她塗著紅色口紅。"
     },
     {
         "id": 31369,
@@ -12317,7 +12318,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 冰箱",
         "unit": 18,
-        "example": "",
+        "example": "His refrigerator frequently looked half empty.",
         "exampleZh": ""
     },
     {
@@ -12326,8 +12327,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 拒絕",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I could hardly refuse, could I?",
+        "exampleZh": "我很難拒絕，不是嗎？"
     },
     {
         "id": 31371,
@@ -12335,7 +12336,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 認為",
         "unit": 18,
-        "example": "",
+        "example": "I regard this as a serious matter.",
         "exampleZh": ""
     },
     {
@@ -12344,7 +12345,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 後悔",
         "unit": 18,
-        "example": "",
+        "example": "I deeply regret what I said.",
         "exampleZh": ""
     },
     {
@@ -12353,7 +12354,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 規律的",
         "unit": 18,
-        "example": "",
+        "example": "Do you take regular exercise?",
         "exampleZh": ""
     },
     {
@@ -12362,8 +12363,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 拒絕",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Patients often reject transplanted organs.",
+        "exampleZh": "患者常常排斥移植的器官。"
     },
     {
         "id": 31375,
@@ -12371,7 +12372,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 關係",
         "unit": 18,
-        "example": "",
+        "example": "It is a question of the relation of ethics to economics.",
         "exampleZh": ""
     },
     {
@@ -12380,7 +12381,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 親戚",
         "unit": 18,
-        "example": "",
+        "example": "He's a distant relative of the mayor.",
         "exampleZh": ""
     },
     {
@@ -12389,8 +12390,8 @@ const jhWordsDB = [
         "kk": "/rɪˈmembər/",
         "zh": "v. 記得",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I'll sure remember this trip!",
+        "exampleZh": "我一定會記得這次旅行！"
     },
     {
         "id": 31378,
@@ -12398,7 +12399,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 提醒",
         "unit": 18,
-        "example": "",
+        "example": "Remind me to phone Alan before I go out.",
         "exampleZh": ""
     },
     {
@@ -12407,7 +12408,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 租借",
         "unit": 18,
-        "example": "",
+        "example": "His landlord doubled the rent.",
         "exampleZh": ""
     },
     {
@@ -12416,7 +12417,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 修理",
         "unit": 18,
-        "example": "",
+        "example": "I took my bike in for repair.",
         "exampleZh": ""
     },
     {
@@ -12425,7 +12426,7 @@ const jhWordsDB = [
         "kk": "/rɪˈpiːt/",
         "zh": "v. 重複",
         "unit": 18,
-        "example": "",
+        "example": "The claims are, I repeat, totally unfounded.",
         "exampleZh": ""
     },
     {
@@ -12434,7 +12435,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 回應",
         "unit": 18,
-        "example": "",
+        "example": "His reply was not repeatable.",
         "exampleZh": ""
     },
     {
@@ -12443,8 +12444,8 @@ const jhWordsDB = [
         "kk": "/rɪˈpɔːrt/",
         "zh": "n. 報告",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She glanced through the report.",
+        "exampleZh": "她瀏覽了一下報告。"
     },
     {
         "id": 31384,
@@ -12452,7 +12453,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 記者",
         "unit": 18,
-        "example": "",
+        "example": "He is a 24-year-old trainee reporter.",
         "exampleZh": ""
     },
     {
@@ -12461,8 +12462,8 @@ const jhWordsDB = [
         "kk": "/rɪˈkwaɪər/",
         "zh": "v. 需要",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "All decisions would require unanimity.",
+        "exampleZh": "所有決定都需要一致同意。"
     },
     {
         "id": 31386,
@@ -12470,7 +12471,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 尊重",
         "unit": 18,
-        "example": "",
+        "example": "I respect him as a doctor.",
         "exampleZh": ""
     },
     {
@@ -12479,8 +12480,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 有責任的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He's directly responsible to the boss.",
+        "exampleZh": "他直接對老闆負責。"
     },
     {
         "id": 31388,
@@ -12488,8 +12489,8 @@ const jhWordsDB = [
         "kk": "/rest/",
         "zh": "n. 休息",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Let's rest under yonder tree.",
+        "exampleZh": "我們在那棵樹下休息吧。"
     },
     {
         "id": 31389,
@@ -12497,7 +12498,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 餐廳",
         "unit": 18,
-        "example": "",
+        "example": "The restaurant is deservedly popular.",
         "exampleZh": ""
     },
     {
@@ -12506,7 +12507,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 洗手間",
         "unit": 18,
-        "example": "",
+        "example": "The girl went into the restroom with a blush.",
         "exampleZh": ""
     },
     {
@@ -12515,7 +12516,7 @@ const jhWordsDB = [
         "kk": "/rɪˈzʌlt/",
         "zh": "n. 結果",
         "unit": 18,
-        "example": "",
+        "example": "They were elated at the result.",
         "exampleZh": ""
     },
     {
@@ -12524,8 +12525,8 @@ const jhWordsDB = [
         "kk": "/rɪˈtɜːrn/",
         "zh": "v. 歸來",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Regulars return year after year.",
+        "exampleZh": "常客年復一年地回歸。"
     },
     {
         "id": 31393,
@@ -12533,7 +12534,7 @@ const jhWordsDB = [
         "kk": "/rɪˈvjuː/",
         "zh": "v. 複習",
         "unit": 18,
-        "example": "",
+        "example": "The case is subject to judicial review.",
         "exampleZh": ""
     },
     {
@@ -12542,7 +12543,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 改變",
         "unit": 18,
-        "example": "",
+        "example": "I can't come out tonight. I have to revise.",
         "exampleZh": ""
     },
     {
@@ -12551,8 +12552,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 米",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "We eat rice every single day.",
+        "exampleZh": "我們每天都吃米飯。"
     },
     {
         "id": 31396,
@@ -12560,8 +12561,8 @@ const jhWordsDB = [
         "kk": "/rɪtʃ/",
         "zh": "adj. 有錢的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "They must be stinking rich.",
+        "exampleZh": "他們一定很有錢。"
     },
     {
         "id": 31397,
@@ -12569,7 +12570,7 @@ const jhWordsDB = [
         "kk": "/raɪd/",
         "zh": "v. 騎",
         "unit": 18,
-        "example": "",
+        "example": "They hitched a ride in a truck.",
         "exampleZh": ""
     },
     {
@@ -12578,7 +12579,7 @@ const jhWordsDB = [
         "kk": "/raɪt/",
         "zh": "adj. 正確的",
         "unit": 18,
-        "example": "",
+        "example": "if only I could have helped put matters right.",
         "exampleZh": ""
     },
     {
@@ -12587,8 +12588,8 @@ const jhWordsDB = [
         "kk": "/rɪŋ/",
         "zh": "n. 戒指",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I'll give you a ring tomorrow.",
+        "exampleZh": "明天我會打電話給你。"
     },
     {
         "id": 31400,
@@ -12596,8 +12597,8 @@ const jhWordsDB = [
         "kk": "/raɪz/",
         "zh": "v. 上升",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "When water levels rise, flooding results.",
+        "exampleZh": "當水位上升時，就會發生洪水。"
     },
     {
         "id": 31401,
@@ -12605,8 +12606,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 河流",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The river gurgled and burbled.",
+        "exampleZh": "河水潺潺，潺潺。"
     },
     {
         "id": 31402,
@@ -12614,8 +12615,8 @@ const jhWordsDB = [
         "kk": "/roʊd/",
         "zh": "n. 道路",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Claire hurried along the road.",
+        "exampleZh": "克萊爾快步沿著路走。"
     },
     {
         "id": 31403,
@@ -12623,7 +12624,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 搶劫",
         "unit": 18,
-        "example": "",
+        "example": "She turned to Rob for solace.",
         "exampleZh": ""
     },
     {
@@ -12632,7 +12633,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 機器人",
         "unit": 18,
-        "example": "",
+        "example": "This is the latest in robot technology.",
         "exampleZh": ""
     },
     {
@@ -12641,8 +12642,8 @@ const jhWordsDB = [
         "kk": "/rɑːk/",
         "zh": "n. 石塊",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "A rock is an inanimate object.",
+        "exampleZh": "岩石是無生命的物體。"
     },
     {
         "id": 31406,
@@ -12650,7 +12651,7 @@ const jhWordsDB = [
         "kk": "/roʊl/",
         "zh": "n. 角色",
         "unit": 18,
-        "example": "",
+        "example": "He's a natural for the role.",
         "exampleZh": ""
     },
     {
@@ -12659,7 +12660,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 滾動",
         "unit": 18,
-        "example": "",
+        "example": "Comedy is the new rock and roll.",
         "exampleZh": ""
     },
     {
@@ -12668,8 +12669,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 屋頂",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The roof was declared unsafe.",
+        "exampleZh": "屋頂被宣布不安全。"
     },
     {
         "id": 31409,
@@ -12677,8 +12678,8 @@ const jhWordsDB = [
         "kk": "/ruːm/",
         "zh": "n. 房間",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "This room faces west.",
+        "exampleZh": "這個房間朝西。"
     },
     {
         "id": 31410,
@@ -12686,8 +12687,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 根",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "We got to the root of the problem.",
+        "exampleZh": "我們找到了問題的根源。"
     },
     {
         "id": 31411,
@@ -12695,8 +12696,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 繩子",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The rope suddenly went slack.",
+        "exampleZh": "繩子突然鬆弛了。"
     },
     {
         "id": 31412,
@@ -12704,8 +12705,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 玫瑰",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The price of gas rose.",
+        "exampleZh": "天然氣價格上漲。"
     },
     {
         "id": 31413,
@@ -12713,8 +12714,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 圓的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "We're leaving round about ten.",
+        "exampleZh": "我們十點左右出發。"
     },
     {
         "id": 31414,
@@ -12722,8 +12723,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 一排",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I took Daniel for a row.",
+        "exampleZh": "我帶丹尼爾吵了一架。"
     },
     {
         "id": 31415,
@@ -12731,8 +12732,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 皇室的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "We were given a royal welcome.",
+        "exampleZh": "我們受到了皇家般的歡迎。"
     },
     {
         "id": 31416,
@@ -12740,8 +12741,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 摩擦",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She gave her knee a quick rub.",
+        "exampleZh": "她快速地揉了揉膝蓋。"
     },
     {
         "id": 31417,
@@ -12749,8 +12750,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 橡膠",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The boy was wearing rubber-soled shoes.",
+        "exampleZh": "這個男孩穿著膠底鞋。"
     },
     {
         "id": 31418,
@@ -12758,8 +12759,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 粗魯的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The man was downright rude to us.",
+        "exampleZh": "那個人對我們非常粗魯。"
     },
     {
         "id": 31419,
@@ -12767,7 +12768,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 毀壞",
         "unit": 18,
-        "example": "",
+        "example": "The vineyards were falling into ruin.",
         "exampleZh": ""
     },
     {
@@ -12776,8 +12777,8 @@ const jhWordsDB = [
         "kk": "/ruːl/",
         "zh": "v. 統治",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "That's a good rule to go by.",
+        "exampleZh": "這是一個值得遵守的好規則。"
     },
     {
         "id": 31421,
@@ -12785,7 +12786,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 統治者;尺",
         "unit": 18,
-        "example": "",
+        "example": "The ruler cracked and splintered into pieces.",
         "exampleZh": ""
     },
     {
@@ -12794,8 +12795,8 @@ const jhWordsDB = [
         "kk": "/rʌn/",
         "zh": "v. 跑步",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Engines won't run without lubricants.",
+        "exampleZh": "沒有潤滑油，引擎就無法運轉。"
     },
     {
         "id": 31423,
@@ -12803,7 +12804,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 衝進",
         "unit": 18,
-        "example": "",
+        "example": "You can't rush a search.",
         "exampleZh": ""
     },
     {
@@ -12812,8 +12813,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 悲傷的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I overreact to anything sad.",
+        "exampleZh": "我對任何悲傷的事情都反應過度。"
     },
     {
         "id": 31425,
@@ -12821,8 +12822,8 @@ const jhWordsDB = [
         "kk": "/seɪf/",
         "zh": "adj. 安全的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The children are quite safe here.",
+        "exampleZh": "孩子們在這裡很安全。"
     },
     {
         "id": 31426,
@@ -12830,7 +12831,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 安全",
         "unit": 18,
-        "example": "",
+        "example": "They are anxious for her safety.",
         "exampleZh": ""
     },
     {
@@ -12839,8 +12840,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 航行",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "We sail at 2 p.m. tomorrow.",
+        "exampleZh": "我們下午 2 點啟航。明天。"
     },
     {
         "id": 31428,
@@ -12848,7 +12849,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 水手",
         "unit": 18,
-        "example": "",
+        "example": "A sailor carrying a sawn-off shotgun was arrested in Los Angeles.",
         "exampleZh": ""
     },
     {
@@ -12857,7 +12858,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 沙拉",
         "unit": 18,
-        "example": "",
+        "example": "The salad had lost its crispness.",
         "exampleZh": ""
     },
     {
@@ -12866,8 +12867,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 出售",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Tickets go on sale this week.",
+        "exampleZh": "門票本週開始販售。"
     },
     {
         "id": 31431,
@@ -12875,7 +12876,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 鹽",
         "unit": 18,
-        "example": "",
+        "example": "He read a poem entitled 'Salt'.",
         "exampleZh": ""
     },
     {
@@ -12884,8 +12885,8 @@ const jhWordsDB = [
         "kk": "/seɪm/",
         "zh": "adj. 相同的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Mario said the very same thing.",
+        "exampleZh": "馬裡奧也說過同樣的話。"
     },
     {
         "id": 31433,
@@ -12893,7 +12894,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 樣品",
         "unit": 18,
-        "example": "",
+        "example": "A routine DNA sample was taken.",
         "exampleZh": ""
     },
     {
@@ -12902,8 +12903,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 沙",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She traced a line in the sand.",
+        "exampleZh": "她在沙上畫了一條線。"
     },
     {
         "id": 31435,
@@ -12911,7 +12912,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 三明治",
         "unit": 18,
-        "example": "",
+        "example": "She was eating a sandwich.",
         "exampleZh": ""
     },
     {
@@ -12920,8 +12921,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 滿意",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "We cannot satisfy demand for the product.",
+        "exampleZh": "我們無法滿足對該產品的需求。"
     },
     {
         "id": 31437,
@@ -12929,7 +12930,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 星期六",
         "unit": 18,
-        "example": "",
+        "example": "We're going sailing on Saturday.",
         "exampleZh": ""
     },
     {
@@ -12938,7 +12939,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 醬料",
         "unit": 18,
-        "example": "",
+        "example": "The sauce is mostly cream.",
         "exampleZh": ""
     },
     {
@@ -12947,8 +12948,8 @@ const jhWordsDB = [
         "kk": "/seɪv/",
         "zh": "v. 拯救",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "We should try to save water.",
+        "exampleZh": "我們應該努力節約用水。"
     },
     {
         "id": 31440,
@@ -12956,8 +12957,8 @@ const jhWordsDB = [
         "kk": "/seɪ/",
         "zh": "v. 說",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He didn't even say sorry.",
+        "exampleZh": "他甚至沒有說對不起。"
     },
     {
         "id": 31441,
@@ -12965,7 +12966,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. (使)害怕",
         "unit": 18,
-        "example": "",
+        "example": "We've had quite a scare.",
         "exampleZh": ""
     },
     {
@@ -12974,7 +12975,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 圍巾",
         "unit": 18,
-        "example": "",
+        "example": "Her scarf streamed behind her.",
         "exampleZh": ""
     },
     {
@@ -12983,7 +12984,7 @@ const jhWordsDB = [
         "kk": "/siːn/",
         "zh": "n. 風景",
         "unit": 18,
-        "example": "",
+        "example": "It's a scene of complete devastation.",
         "exampleZh": ""
     },
     {
@@ -12992,7 +12993,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 景色",
         "unit": 18,
-        "example": "",
+        "example": "The area is remarkable for its scenery.",
         "exampleZh": ""
     },
     {
@@ -13001,7 +13002,7 @@ const jhWordsDB = [
         "kk": "/skuːl/",
         "zh": "n. 學校",
         "unit": 18,
-        "example": "",
+        "example": "Which school do they attend?",
         "exampleZh": ""
     },
     {
@@ -13010,7 +13011,7 @@ const jhWordsDB = [
         "kk": "/ˈsaɪəns/",
         "zh": "n. 科學",
         "unit": 18,
-        "example": "",
+        "example": "Economics is an inexact science.",
         "exampleZh": ""
     },
     {
@@ -13019,7 +13020,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 科學家",
         "unit": 18,
-        "example": "",
+        "example": "He's a brilliant young scientist.",
         "exampleZh": ""
     },
     {
@@ -13028,7 +13029,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 摩托車",
         "unit": 18,
-        "example": "",
+        "example": "A half-way house for many people is a scooter or motorbike.",
         "exampleZh": ""
     },
     {
@@ -13037,7 +13038,7 @@ const jhWordsDB = [
         "kk": "/skɔːr/",
         "zh": "n. 得分",
         "unit": 18,
-        "example": "",
+        "example": "It's my best ever score.",
         "exampleZh": ""
     },
     {
@@ -13046,7 +13047,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 螢幕",
         "unit": 18,
-        "example": "",
+        "example": "Suddenly the screen went blank.",
         "exampleZh": ""
     },
     {
@@ -13055,8 +13056,8 @@ const jhWordsDB = [
         "kk": "/siː/",
         "zh": "n. 海",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The sea rippled and sparkled.",
+        "exampleZh": "大海波光粼粼，波光粼粼。"
     },
     {
         "id": 31452,
@@ -13064,7 +13065,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 海鮮",
         "unit": 18,
-        "example": "",
+        "example": "Seafood is a speciality on the island.",
         "exampleZh": ""
     },
     {
@@ -13073,7 +13074,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 搜索",
         "unit": 18,
-        "example": "",
+        "example": "It was a fruitless search.",
         "exampleZh": ""
     },
     {
@@ -13082,8 +13083,8 @@ const jhWordsDB = [
         "kk": "/ˈsiːzn/",
         "zh": "n. 季節",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Autumn is my favourite season.",
+        "exampleZh": "秋天是我最喜歡的季節。"
     },
     {
         "id": 31455,
@@ -13091,8 +13092,8 @@ const jhWordsDB = [
         "kk": "/siːt/",
         "zh": "n. 座位",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Stephen returned to his seat.",
+        "exampleZh": "史蒂芬回到座位上。"
     },
     {
         "id": 31456,
@@ -13100,8 +13101,8 @@ const jhWordsDB = [
         "kk": "/ˈsekənd/",
         "zh": "adj. 第二的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The second goal was disallowed.",
+        "exampleZh": "第二個進球被判無效。"
     },
     {
         "id": 31457,
@@ -13109,7 +13110,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 祕密",
         "unit": 18,
-        "example": "",
+        "example": "The meeting was held in secret.",
         "exampleZh": ""
     },
     {
@@ -13118,7 +13119,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 祕書",
         "unit": 18,
-        "example": "",
+        "example": "We hired a new secretary.",
         "exampleZh": ""
     },
     {
@@ -13127,7 +13128,7 @@ const jhWordsDB = [
         "kk": "/ˈsekʃn/",
         "zh": "n. 部分",
         "unit": 18,
-        "example": "",
+        "example": "The school has a special education section.",
         "exampleZh": ""
     },
     {
@@ -13136,8 +13137,8 @@ const jhWordsDB = [
         "kk": "/siː/",
         "zh": "v. 看見",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Can I see your authorization?",
+        "exampleZh": "我可以看看你的授權嗎？"
     },
     {
         "id": 31461,
@@ -13145,8 +13146,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 種子",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The top seed won comfortably.",
+        "exampleZh": "頭號種子輕鬆獲勝。"
     },
     {
         "id": 31462,
@@ -13154,7 +13155,7 @@ const jhWordsDB = [
         "kk": "/siːk/",
         "zh": "v. 尋找",
         "unit": 18,
-        "example": "",
+        "example": "We were advised to seek legal advice.",
         "exampleZh": ""
     },
     {
@@ -13163,8 +13164,8 @@ const jhWordsDB = [
         "kk": "/siːm/",
         "zh": "v. 似乎",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "They seem an ill-assorted couple.",
+        "exampleZh": "他們看起來是一對不般配的夫妻。"
     },
     {
         "id": 31464,
@@ -13172,8 +13173,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 蹺蹺板",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Two kids can play on a seesaw.",
+        "exampleZh": "兩個孩子可以玩蹺蹺板。"
     },
     {
         "id": 31465,
@@ -13181,7 +13182,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adv. 不常",
         "unit": 18,
-        "example": "",
+        "example": "I've seldom felt so happy.",
         "exampleZh": ""
     },
     {
@@ -13190,8 +13191,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 挑選",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "click Tools on the menu bar and select Settings.",
+        "exampleZh": "點擊選單列上的“工具”並選擇“設定”。"
     },
     {
         "id": 31467,
@@ -13199,8 +13200,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 自我",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He gave a self-deprecating shrug.",
+        "exampleZh": "他自嘲地聳聳肩。"
     },
     {
         "id": 31468,
@@ -13208,8 +13209,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 自私的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She calls me lazy and selfish.",
+        "exampleZh": "她說我又懶又自私。"
     },
     {
         "id": 31469,
@@ -13217,8 +13218,8 @@ const jhWordsDB = [
         "kk": "/sel/",
         "zh": "v. 販賣",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "They sell all kinds of things.",
+        "exampleZh": "他們賣各種各樣的東西。"
     },
     {
         "id": 31470,
@@ -13226,7 +13227,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 學期",
         "unit": 18,
-        "example": "",
+        "example": "Do you think you'll pledge this semester?",
         "exampleZh": ""
     },
     {
@@ -13235,8 +13236,8 @@ const jhWordsDB = [
         "kk": "/send/",
         "zh": "v. 送",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Shall I send you the book?",
+        "exampleZh": "我把書寄給你好嗎？"
     },
     {
         "id": 31472,
@@ -13244,8 +13245,8 @@ const jhWordsDB = [
         "kk": "/sens/",
         "zh": "n. 感覺官能",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The sense of community is lost.",
+        "exampleZh": "社區意識消失了。"
     },
     {
         "id": 31473,
@@ -13253,8 +13254,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 句子",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "What does this sentence mean?",
+        "exampleZh": "這句話是什麼意思呢？"
     },
     {
         "id": 31474,
@@ -13262,8 +13263,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 九月",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The rains come in September.",
+        "exampleZh": "九月雨來了。"
     },
     {
         "id": 31475,
@@ -13271,8 +13272,8 @@ const jhWordsDB = [
         "kk": "/ˈsɪriəs/",
         "zh": "adj. 嚴重的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "You're joking. Are you serious?",
+        "exampleZh": "你在開玩笑。你是認真的？"
     },
     {
         "id": 31476,
@@ -13280,7 +13281,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 僕人",
         "unit": 18,
-        "example": "",
+        "example": "He was a loyal, distinguished and very competent civil servant.",
         "exampleZh": ""
     },
     {
@@ -13289,8 +13290,8 @@ const jhWordsDB = [
         "kk": "/sɜːrv/",
         "zh": "v. 服務",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "They serve good French cooking.",
+        "exampleZh": "他們提供美味的法式菜餚。"
     },
     {
         "id": 31478,
@@ -13298,8 +13299,8 @@ const jhWordsDB = [
         "kk": "/ˈsɜːrvɪs/",
         "zh": "n. 服務",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The service is maddeningly slow.",
+        "exampleZh": "服務速度慢得令人發狂。"
     },
     {
         "id": 31479,
@@ -13307,8 +13308,8 @@ const jhWordsDB = [
         "kk": "/set/",
         "zh": "n. 一套,一組",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I've collected the complete set.",
+        "exampleZh": "我已經收集了全套。"
     },
     {
         "id": 31480,
@@ -13316,8 +13317,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 解決",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "This should settle your stomach.",
+        "exampleZh": "這應該可以解決你的胃。"
     },
     {
         "id": 31481,
@@ -13325,8 +13326,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 七",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The performance starts at seven.",
+        "exampleZh": "表演七點開始。"
     },
     {
         "id": 31482,
@@ -13334,8 +13335,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 十七",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Jenny is seventeen years old.",
+        "exampleZh": "珍妮十七歲了。"
     },
     {
         "id": 31483,
@@ -13343,8 +13344,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 七十",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "How old is she—seventy odd?",
+        "exampleZh": "她多大了──七十多歲了？"
     },
     {
         "id": 31484,
@@ -13352,8 +13353,8 @@ const jhWordsDB = [
         "kk": "/ˈsevrəl/",
         "zh": "adj. 幾個的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She wrote him several poems.",
+        "exampleZh": "她給他寫了幾首詩。"
     },
     {
         "id": 31485,
@@ -13361,8 +13362,8 @@ const jhWordsDB = [
         "kk": "/ʃeɪk/",
         "zh": "v. 搖動",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Her hands had started to shake.",
+        "exampleZh": "她的雙手開始顫抖。"
     },
     {
         "id": 31486,
@@ -13370,8 +13371,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "aux. 將要",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Shall we order some coffee?",
+        "exampleZh": "我們要喝點咖啡嗎？"
     },
     {
         "id": 31487,
@@ -13379,8 +13380,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 形狀",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The knives were bent out of shape.",
+        "exampleZh": "刀子彎曲變形了。"
     },
     {
         "id": 31488,
@@ -13388,7 +13389,7 @@ const jhWordsDB = [
         "kk": "/ʃer/",
         "zh": "v. 分享",
         "unit": 18,
-        "example": "",
+        "example": "Share prices moved ahead today.",
         "exampleZh": ""
     },
     {
@@ -13397,8 +13398,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 鯊魚",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The shark described a circle around the shoal of fish.",
+        "exampleZh": "鯊魚在魚群周圍畫了一圈。"
     },
     {
         "id": 31490,
@@ -13406,8 +13407,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 銳利的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He has a sharp tongue.",
+        "exampleZh": "他的舌頭很尖。"
     },
     {
         "id": 31491,
@@ -13415,8 +13416,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 羊",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Sheep were grazing in the fields.",
+        "exampleZh": "羊群在田裡吃草。"
     },
     {
         "id": 31492,
@@ -13424,8 +13425,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 床單",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "This sheet has a tear in it.",
+        "exampleZh": "這張紙上有一處撕裂。"
     },
     {
         "id": 31493,
@@ -13433,7 +13434,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 架",
         "unit": 18,
-        "example": "",
+        "example": "I can't reach the top shelf.",
         "exampleZh": ""
     },
     {
@@ -13442,7 +13443,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 貝殼",
         "unit": 18,
-        "example": "",
+        "example": "The animal retracted into its shell.",
         "exampleZh": ""
     },
     {
@@ -13451,8 +13452,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 照耀",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "This gel gives a beautiful shine to the hair.",
+        "exampleZh": "這種凝膠賦予頭髮美麗的光澤。"
     },
     {
         "id": 31496,
@@ -13460,8 +13461,8 @@ const jhWordsDB = [
         "kk": "/ʃɪp/",
         "zh": "n. 船",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The ship was carrying contraband.",
+        "exampleZh": "這艘船載有違禁品。"
     },
     {
         "id": 31497,
@@ -13469,8 +13470,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 襯衫",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "What's your shirt made of?",
+        "exampleZh": "你的襯衫是什麼材質的？"
     },
     {
         "id": 31498,
@@ -13478,7 +13479,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 震驚",
         "unit": 18,
-        "example": "",
+        "example": "He's in for a shock!",
         "exampleZh": ""
     },
     {
@@ -13487,8 +13488,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 鞋子",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The back of my shoe is rubbing.",
+        "exampleZh": "我的鞋後跟在摩擦。"
     },
     {
         "id": 31500,
@@ -13496,8 +13497,8 @@ const jhWordsDB = [
         "kk": "/ʃɑːp/",
         "zh": "n. 商店",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The shop bell jangled loudly.",
+        "exampleZh": "商店的門鈴叮噹作響。"
     },
     {
         "id": 31501,
@@ -13505,7 +13506,7 @@ const jhWordsDB = [
         "kk": "/ʃuːt/",
         "zh": "v. 射擊",
         "unit": 18,
-        "example": "",
+        "example": "He'd love to shoot his film in Cuba.",
         "exampleZh": ""
     },
     {
@@ -13514,8 +13515,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 岸",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Huge waves lashed the shore.",
+        "exampleZh": "巨大的海浪拍打著海岸。"
     },
     {
         "id": 31503,
@@ -13523,8 +13524,8 @@ const jhWordsDB = [
         "kk": "/ʃɔːrt/",
         "zh": "adj. 短的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Short hair really becomes you.",
+        "exampleZh": "短髮真的很適合你。"
     },
     {
         "id": 31504,
@@ -13532,7 +13533,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 短褲",
         "unit": 18,
-        "example": "",
+        "example": "My shorts were chafing my thighs.",
         "exampleZh": ""
     },
     {
@@ -13541,7 +13542,7 @@ const jhWordsDB = [
         "kk": "/ʃʊd/",
         "zh": "aux. 應該",
         "unit": 18,
-        "example": "",
+        "example": "This should save you shedloads.",
         "exampleZh": ""
     },
     {
@@ -13550,8 +13551,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 肩膀",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The arrow pierced his shoulder.",
+        "exampleZh": "箭射穿了他的肩膀。"
     },
     {
         "id": 31507,
@@ -13559,8 +13560,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 大聲喊叫",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "It's wrong to swear and shout.",
+        "exampleZh": "罵人、喊叫都是錯的。"
     },
     {
         "id": 31508,
@@ -13568,8 +13569,8 @@ const jhWordsDB = [
         "kk": "/ʃoʊ/",
         "zh": "v. 展現",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The show was just awesome.",
+        "exampleZh": "這場演出太棒了。"
     },
     {
         "id": 31509,
@@ -13577,7 +13578,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 淋浴",
         "unit": 18,
-        "example": "",
+        "example": "She usually sings in the shower.",
         "exampleZh": ""
     },
     {
@@ -13586,7 +13587,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 蝦子",
         "unit": 18,
-        "example": "",
+        "example": "Hines slowly masticated a shrimp.",
         "exampleZh": ""
     },
     {
@@ -13595,8 +13596,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 關閉",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She slammed the door shut.",
+        "exampleZh": "她砰地關上門。"
     },
     {
         "id": 31512,
@@ -13604,8 +13605,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 害羞的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Their son was painfully shy.",
+        "exampleZh": "他們的兒子非常害羞。"
     },
     {
         "id": 31513,
@@ -13613,8 +13614,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 生病的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The sick man's pupils were dilated.",
+        "exampleZh": "病人的瞳孔放大了。"
     },
     {
         "id": 31514,
@@ -13622,8 +13623,8 @@ const jhWordsDB = [
         "kk": "/saɪd/",
         "zh": "n. 面",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The ship rolled from side to side.",
+        "exampleZh": "船從一邊搖到另一邊。"
     },
     {
         "id": 31515,
@@ -13631,7 +13632,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 人行道",
         "unit": 18,
-        "example": "",
+        "example": "Glass from broken bottles litters the sidewalk.",
         "exampleZh": ""
     },
     {
@@ -13640,8 +13641,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 視力",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Her sight is beginning to go.",
+        "exampleZh": "她的視力開始消失。"
     },
     {
         "id": 31517,
@@ -13649,7 +13650,7 @@ const jhWordsDB = [
         "kk": "/saɪn/",
         "zh": "v. 示意",
         "unit": 18,
-        "example": "",
+        "example": "The sign read 'No admittance'.",
         "exampleZh": ""
     },
     {
@@ -13658,7 +13659,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 沉默",
         "unit": 18,
-        "example": "",
+        "example": "There was a fraught silence.",
         "exampleZh": ""
     },
     {
@@ -13667,8 +13668,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 沉默的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The three men remained silent.",
+        "exampleZh": "三人保持沉默。"
     },
     {
         "id": 31520,
@@ -13676,7 +13677,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 絲",
         "unit": 18,
-        "example": "",
+        "example": "She wore purple and green silk.",
         "exampleZh": ""
     },
     {
@@ -13685,8 +13686,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 傻的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "No, silly, those aren't your shoes!",
+        "exampleZh": "不，傻瓜，那不是你的鞋！"
     },
     {
         "id": 31522,
@@ -13694,8 +13695,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 銀",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He's an Olympic silver medallist.",
+        "exampleZh": "他是奧運銀牌得主。"
     },
     {
         "id": 31523,
@@ -13703,8 +13704,8 @@ const jhWordsDB = [
         "kk": "/ˈsɪmələr/",
         "zh": "adj. 相似的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "They have uncannily similar voices.",
+        "exampleZh": "他們的聲音驚人地相似。"
     },
     {
         "id": 31524,
@@ -13712,8 +13713,8 @@ const jhWordsDB = [
         "kk": "/ˈsɪmpl/",
         "zh": "adj. 簡單的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The poem uses simple language.",
+        "exampleZh": "這首詩使用了簡單的語言。"
     },
     {
         "id": 31525,
@@ -13721,8 +13722,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adv. 簡單地",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The house was simply furnished.",
+        "exampleZh": "房子陳設簡單。"
     },
     {
         "id": 31526,
@@ -13730,8 +13731,8 @@ const jhWordsDB = [
         "kk": "/sɪns/",
         "zh": "prep. 從...時起",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "We've lived here since 1994.",
+        "exampleZh": "我們從 1994 年起就住在這裡。"
     },
     {
         "id": 31527,
@@ -13739,7 +13740,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 真誠的",
         "unit": 18,
-        "example": "",
+        "example": "He seemed sincere enough when he said he wanted to help.",
         "exampleZh": ""
     },
     {
@@ -13748,8 +13749,8 @@ const jhWordsDB = [
         "kk": "/sɪŋ/",
         "zh": "v. 唱歌",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Can white girls sing the blues?",
+        "exampleZh": "白人女孩可以唱布魯斯嗎？"
     },
     {
         "id": 31529,
@@ -13757,8 +13758,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 歌手",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The singer re-formed his band.",
+        "exampleZh": "這位歌手重組了他的樂隊。"
     },
     {
         "id": 31530,
@@ -13766,7 +13767,7 @@ const jhWordsDB = [
         "kk": "/ˈsɪŋɡl/",
         "zh": "adj. 單一的",
         "unit": 18,
-        "example": "",
+        "example": "How much is a single to York?",
         "exampleZh": ""
     },
     {
@@ -13775,7 +13776,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 沉",
         "unit": 18,
-        "example": "",
+        "example": "He decided to scour the sink.",
         "exampleZh": ""
     },
     {
@@ -13784,8 +13785,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 先生",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Is everything in order, sir?",
+        "exampleZh": "先生，一切都順利嗎？"
     },
     {
         "id": 31533,
@@ -13793,8 +13794,8 @@ const jhWordsDB = [
         "kk": "/ˈsɪstər/",
         "zh": "n. 姊妹",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "His sister Sarah helped him.",
+        "exampleZh": "他的妹妹莎拉幫助了他。"
     },
     {
         "id": 31534,
@@ -13802,8 +13803,8 @@ const jhWordsDB = [
         "kk": "/sɪt/",
         "zh": "v. 坐",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "'Sit down!' Meekly, she obeyed.",
+        "exampleZh": "'坐下！ '她溫順地服從了。"
     },
     {
         "id": 31535,
@@ -13811,8 +13812,8 @@ const jhWordsDB = [
         "kk": "/sɪks/",
         "zh": "n. 六",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Six bottles should be enough.",
+        "exampleZh": "六瓶應該夠了。"
     },
     {
         "id": 31536,
@@ -13820,8 +13821,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 十六",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He worked sixteen hours a day.",
+        "exampleZh": "他每天工作十六個小時。"
     },
     {
         "id": 31537,
@@ -13829,8 +13830,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 六十",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She is close on sixty.",
+        "exampleZh": "她已經快六十歲了。"
     },
     {
         "id": 31538,
@@ -13838,8 +13839,8 @@ const jhWordsDB = [
         "kk": "/saɪz/",
         "zh": "n. 尺碼",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The jacket was the wrong size.",
+        "exampleZh": "這件夾克的尺寸不對。"
     },
     {
         "id": 31539,
@@ -13847,7 +13848,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 溜冰",
         "unit": 18,
-        "example": "",
+        "example": "We never learned to ice skate or ski.",
         "exampleZh": ""
     },
     {
@@ -13856,7 +13857,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 滑雪",
         "unit": 18,
-        "example": "",
+        "example": "There are three ski lifts in operation.",
         "exampleZh": ""
     },
     {
@@ -13865,8 +13866,8 @@ const jhWordsDB = [
         "kk": "/skɪl/",
         "zh": "n. 技巧",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "It's time to showcase real skills.",
+        "exampleZh": "是時候展示真正的技能了。"
     },
     {
         "id": 31542,
@@ -13874,8 +13875,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 熟練的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Military tactics are skillful.",
+        "exampleZh": "軍事戰術是嫻熟的。"
     },
     {
         "id": 31543,
@@ -13883,8 +13884,8 @@ const jhWordsDB = [
         "kk": "/skɪn/",
         "zh": "n. 皮膚",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I can skin up.",
+        "exampleZh": "我可以剝皮。"
     },
     {
         "id": 31544,
@@ -13892,8 +13893,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 皮包骨的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He was quite a skinny little boy.",
+        "exampleZh": "他是個骨瘦如柴的小男孩。"
     },
     {
         "id": 31545,
@@ -13901,7 +13902,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 裙子",
         "unit": 18,
-        "example": "",
+        "example": "There's a mark on your skirt.",
         "exampleZh": ""
     },
     {
@@ -13910,8 +13911,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 天空",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Clouds drifted across the sky.",
+        "exampleZh": "雲彩飄過天際。"
     },
     {
         "id": 31547,
@@ -13919,8 +13920,8 @@ const jhWordsDB = [
         "kk": "/sliːp/",
         "zh": "v. 睡覺",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Finally she drifted into sleep.",
+        "exampleZh": "最後她迷迷糊糊地睡著了。"
     },
     {
         "id": 31548,
@@ -13928,8 +13929,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 想睡的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He had begun to feel sleepy.",
+        "exampleZh": "他開始感到困倦。"
     },
     {
         "id": 31549,
@@ -13937,8 +13938,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 纖細的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Sherry is black, tall, slender and soft-spoken.",
+        "exampleZh": "雪莉是黑人，身材高大，身材苗條，說話輕聲細語。"
     },
     {
         "id": 31550,
@@ -13946,7 +13947,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 滑動",
         "unit": 18,
-        "example": "",
+        "example": "The dollar continued to slide.",
         "exampleZh": ""
     },
     {
@@ -13955,8 +13956,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 苗條的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She goes for tall slim men.",
+        "exampleZh": "她喜歡高個子苗條的男人。"
     },
     {
         "id": 31552,
@@ -13964,7 +13965,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 拖鞋",
         "unit": 18,
-        "example": "",
+        "example": "She spent the morning padding about the house in her slippers.",
         "exampleZh": ""
     },
     {
@@ -13973,8 +13974,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 緩慢的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The process was needlessly slow.",
+        "exampleZh": "這個過程不必要地緩慢。"
     },
     {
         "id": 31554,
@@ -13982,8 +13983,8 @@ const jhWordsDB = [
         "kk": "/smɔːl/",
         "zh": "adj. 小的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The room was disappointingly small.",
+        "exampleZh": "房間小得令人失望。"
     },
     {
         "id": 31555,
@@ -13991,8 +13992,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 聰明的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She mixes with the smart set.",
+        "exampleZh": "她與聰明人混在一起。"
     },
     {
         "id": 31556,
@@ -14000,8 +14001,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 聞",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Where's that smell coming from?",
+        "exampleZh": "那味道是從哪裡來的？"
     },
     {
         "id": 31557,
@@ -14009,8 +14010,8 @@ const jhWordsDB = [
         "kk": "/smaɪl/",
         "zh": "v. 微笑",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "A smile brightened her face.",
+        "exampleZh": "她的臉上露出笑容。"
     },
     {
         "id": 31558,
@@ -14018,8 +14019,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 煙",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Smoke had blackened the walls.",
+        "exampleZh": "煙霧使牆壁變黑。"
     },
     {
         "id": 31559,
@@ -14027,7 +14028,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 點心",
         "unit": 18,
-        "example": "",
+        "example": "Lunch was a snack in the fields.",
         "exampleZh": ""
     },
     {
@@ -14036,7 +14037,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 蝸牛",
         "unit": 18,
-        "example": "",
+        "example": "Is the snail really helpful?",
         "exampleZh": ""
     },
     {
@@ -14045,8 +14046,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 蛇",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "A snake was twisting around his arm.",
+        "exampleZh": "一條蛇在他的手臂上盤旋。"
     },
     {
         "id": 31562,
@@ -14054,7 +14055,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 運動鞋",
         "unit": 18,
-        "example": "",
+        "example": "He wore old jeans and a pair of sneakers.",
         "exampleZh": ""
     },
     {
@@ -14063,8 +14064,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 雪",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "It's hard work shovelling snow.",
+        "exampleZh": "鏟雪真是辛苦啊。"
     },
     {
         "id": 31564,
@@ -14072,8 +14073,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 下雪多的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "We strode across the snowy fields.",
+        "exampleZh": "我們大步穿過雪原。"
     },
     {
         "id": 31565,
@@ -14081,8 +14082,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adv. 如此",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She is always so chic, so elegant.",
+        "exampleZh": "她總是那麼瀟灑，那麼優雅。"
     },
     {
         "id": 31566,
@@ -14090,8 +14091,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 肥皂",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He had soap suds in his ears.",
+        "exampleZh": "他的耳朵裡進了肥皂水。"
     },
     {
         "id": 31567,
@@ -14099,7 +14100,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 足球",
         "unit": 18,
-        "example": "",
+        "example": "He coaches basketball and soccer.",
         "exampleZh": ""
     },
     {
@@ -14108,8 +14109,8 @@ const jhWordsDB = [
         "kk": "/ˈsoʊʃl/",
         "zh": "adj. 社會的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I have a fantastic social life.",
+        "exampleZh": "我有很棒的社交生活。"
     },
     {
         "id": 31569,
@@ -14117,7 +14118,7 @@ const jhWordsDB = [
         "kk": "/səˈsaɪəti/",
         "zh": "n. 社會",
         "unit": 18,
-        "example": "",
+        "example": "Ours is a secular society.",
         "exampleZh": ""
     },
     {
@@ -14126,7 +14127,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 襪子",
         "unit": 18,
-        "example": "",
+        "example": "He groped around in the dark for his other sock.",
         "exampleZh": ""
     },
     {
@@ -14135,8 +14136,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 汽水",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She quickly gulped her soda.",
+        "exampleZh": "她很快就喝了一口蘇打水。"
     },
     {
         "id": 31572,
@@ -14144,8 +14145,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 沙發",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "They were snogging on the sofa.",
+        "exampleZh": "他們在沙發上接吻。"
     },
     {
         "id": 31573,
@@ -14153,8 +14154,8 @@ const jhWordsDB = [
         "kk": "/sɔːft/",
         "zh": "adj. 軟的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The grass was soft and springy.",
+        "exampleZh": "草柔軟而有彈性。"
     },
     {
         "id": 31574,
@@ -14162,7 +14163,7 @@ const jhWordsDB = [
         "kk": "/ˈsoʊldʒər/",
         "zh": "n. 士兵",
         "unit": 18,
-        "example": "",
+        "example": "The soldier acted qua soldier, not as a human being.",
         "exampleZh": ""
     },
     {
@@ -14171,8 +14172,8 @@ const jhWordsDB = [
         "kk": "/sɑːlv/",
         "zh": "v. 解決",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "It isn't going to solve a single thing.",
+        "exampleZh": "它不會解決任何一件事。"
     },
     {
         "id": 31576,
@@ -14180,8 +14181,8 @@ const jhWordsDB = [
         "kk": "/sʌm/",
         "zh": "adj. 一些的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Robin opened some champagne.",
+        "exampleZh": "羅賓開了一些香檳。"
     },
     {
         "id": 31577,
@@ -14189,8 +14190,8 @@ const jhWordsDB = [
         "kk": "/ˈsʌmwʌn/",
         "zh": "pron. 某人",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Someone threw an apple core.",
+        "exampleZh": "有人丟了一個蘋果核。"
     },
     {
         "id": 31578,
@@ -14198,8 +14199,8 @@ const jhWordsDB = [
         "kk": "/ˈsʌmθɪŋ/",
         "zh": "n. 某事",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "It tastes something like melon.",
+        "exampleZh": "嘗起來有點像甜瓜。"
     },
     {
         "id": 31579,
@@ -14207,8 +14208,8 @@ const jhWordsDB = [
         "kk": "/ˈsʌmtaɪmz/",
         "zh": "adv. 有時候",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Life seems so unfair sometimes.",
+        "exampleZh": "生活有時顯得如此不公平。"
     },
     {
         "id": 31580,
@@ -14216,8 +14217,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adv. 在某處",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Sarah's off in India somewhere.",
+        "exampleZh": "莎拉去印度某處了。"
     },
     {
         "id": 31581,
@@ -14225,8 +14226,8 @@ const jhWordsDB = [
         "kk": "/sʌn/",
         "zh": "n. 兒子",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Their son was painfully shy.",
+        "exampleZh": "他們的兒子非常害羞。"
     },
     {
         "id": 31582,
@@ -14234,8 +14235,8 @@ const jhWordsDB = [
         "kk": "/sɔːŋ/",
         "zh": "n. 歌",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The melancholy song died away.",
+        "exampleZh": "憂鬱的歌聲漸漸遠去。"
     },
     {
         "id": 31583,
@@ -14243,8 +14244,8 @@ const jhWordsDB = [
         "kk": "/suːn/",
         "zh": "adv. 不久",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Things soon returned to normal.",
+        "exampleZh": "事情很快就恢復正常。"
     },
     {
         "id": 31584,
@@ -14252,7 +14253,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 疼痛的",
         "unit": 18,
-        "example": "",
+        "example": "Symptoms include a sore throat.",
         "exampleZh": ""
     },
     {
@@ -14261,8 +14262,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 感到抱歉的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "'Sorry,' she said humbly.",
+        "exampleZh": "「抱歉，」她謙虛地說。"
     },
     {
         "id": 31586,
@@ -14270,8 +14271,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 靈魂",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "We commend her soul to God.",
+        "exampleZh": "我們將她的靈魂交託給上帝。"
     },
     {
         "id": 31587,
@@ -14279,8 +14280,8 @@ const jhWordsDB = [
         "kk": "/saʊnd/",
         "zh": "v. 聽起來",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "You don't sound very sure.",
+        "exampleZh": "你聽起來不太確定。"
     },
     {
         "id": 31588,
@@ -14288,8 +14289,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 湯",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The soup has very little taste.",
+        "exampleZh": "湯的味道很少。"
     },
     {
         "id": 31589,
@@ -14297,8 +14298,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 酸的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The heat turned the milk sour.",
+        "exampleZh": "熱量使牛奶變酸了。"
     },
     {
         "id": 31590,
@@ -14306,7 +14307,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 出處",
         "unit": 18,
-        "example": "",
+        "example": "What is their main source of income?",
         "exampleZh": ""
     },
     {
@@ -14315,8 +14316,8 @@ const jhWordsDB = [
         "kk": "/saʊθ/",
         "zh": "n. 南方",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Swallows migrate south in winter.",
+        "exampleZh": "冬季，燕子南遷。"
     },
     {
         "id": 31592,
@@ -14324,7 +14325,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 醬油",
         "unit": 18,
-        "example": "",
+        "example": "Enormous acreages of soy beans are grown in the United States.",
         "exampleZh": ""
     },
     {
@@ -14333,8 +14334,8 @@ const jhWordsDB = [
         "kk": "/speɪs/",
         "zh": "n. 空間",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She needed space to be herself.",
+        "exampleZh": "她需要空間來做自己。"
     },
     {
         "id": 31594,
@@ -14342,7 +14343,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 義大利麵",
         "unit": 18,
-        "example": "",
+        "example": "He's a dab hand at cooking spaghetti.",
         "exampleZh": ""
     },
     {
@@ -14351,8 +14352,8 @@ const jhWordsDB = [
         "kk": "/spiːk/",
         "zh": "v. 講話",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I agreed to speak second.",
+        "exampleZh": "我同意第二個發言。"
     },
     {
         "id": 31596,
@@ -14360,7 +14361,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 演講者",
         "unit": 18,
-        "example": "",
+        "example": "She's a very capable speaker.",
         "exampleZh": ""
     },
     {
@@ -14369,8 +14370,8 @@ const jhWordsDB = [
         "kk": "/ˈspeʃl/",
         "zh": "adj. 特別的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Couldn't we call a special meeting?",
+        "exampleZh": "我們就不能召開一次特別會議嗎？"
     },
     {
         "id": 31598,
@@ -14378,8 +14379,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 演講",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He muffed his opening speech.",
+        "exampleZh": "他的開場白被壓低了。"
     },
     {
         "id": 31599,
@@ -14387,7 +14388,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 速度",
         "unit": 18,
-        "example": "",
+        "example": "The car was gathering speed.",
         "exampleZh": ""
     },
     {
@@ -14396,8 +14397,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 拼寫",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I've never been able to spell.",
+        "exampleZh": "我從來都不會拼字。"
     },
     {
         "id": 31601,
@@ -14405,8 +14406,8 @@ const jhWordsDB = [
         "kk": "/spend/",
         "zh": "v. 花費(時間)",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I spend too much time watching television.",
+        "exampleZh": "我花了太多時間看電視。"
     },
     {
         "id": 31602,
@@ -14414,7 +14415,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 蜘蛛",
         "unit": 18,
-        "example": "",
+        "example": "A spider had spun a perfect web outside the window.",
         "exampleZh": ""
     },
     {
@@ -14423,7 +14424,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 精神",
         "unit": 18,
-        "example": "",
+        "example": "The human spirit is virtually indestructible.",
         "exampleZh": ""
     },
     {
@@ -14432,8 +14433,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 湯匙",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She licked the spoon clean.",
+        "exampleZh": "她把湯匙舔乾淨了。"
     },
     {
         "id": 31605,
@@ -14441,8 +14442,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 體育活動",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I'm not interested in sport.",
+        "exampleZh": "我對運動沒興趣。"
     },
     {
         "id": 31606,
@@ -14450,7 +14451,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 春天",
         "unit": 18,
-        "example": "",
+        "example": "Spring came late this year.",
         "exampleZh": ""
     },
     {
@@ -14459,7 +14460,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 廣場",
         "unit": 18,
-        "example": "",
+        "example": "They live at 95 Russell Square.",
         "exampleZh": ""
     },
     {
@@ -14468,7 +14469,7 @@ const jhWordsDB = [
         "kk": "/steɪdʒ/",
         "zh": "n. 舞臺",
         "unit": 18,
-        "example": "",
+        "example": "She pirouetted across the stage.",
         "exampleZh": ""
     },
     {
@@ -14477,8 +14478,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 樓梯",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The house had a panelled hall and a fine oak stair.",
+        "exampleZh": "房子有一個鑲板大廳和一個精美的橡木樓梯。"
     },
     {
         "id": 31610,
@@ -14486,7 +14487,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 郵票",
         "unit": 18,
-        "example": "",
+        "example": "He stuck a stamp on the envelope.",
         "exampleZh": ""
     },
     {
@@ -14495,8 +14496,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 站起來",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I couldn't stand that yowling.",
+        "exampleZh": "我受不了那種嚎叫。"
     },
     {
         "id": 31612,
@@ -14504,8 +14505,8 @@ const jhWordsDB = [
         "kk": "/stɑːr/",
         "zh": "n. 星星",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She's a US soap star.",
+        "exampleZh": "她是美國肥皂劇明星。"
     },
     {
         "id": 31613,
@@ -14513,8 +14514,8 @@ const jhWordsDB = [
         "kk": "/stɑːrt/",
         "zh": "v. 開始",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "They determined to start early.",
+        "exampleZh": "他們決定早點出發。"
     },
     {
         "id": 31614,
@@ -14522,8 +14523,8 @@ const jhWordsDB = [
         "kk": "/steɪt/",
         "zh": "v. 敘述",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Music can induce a meditative state.",
+        "exampleZh": "音樂可以引發冥想狀態。"
     },
     {
         "id": 31615,
@@ -14531,8 +14532,8 @@ const jhWordsDB = [
         "kk": "/ˈsteɪʃn/",
         "zh": "n. 車站",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The train pulled into a station.",
+        "exampleZh": "火車進站了。"
     },
     {
         "id": 31616,
@@ -14540,7 +14541,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 文具",
         "unit": 18,
-        "example": "",
+        "example": "The stationery order has arrived.",
         "exampleZh": ""
     },
     {
@@ -14549,8 +14550,8 @@ const jhWordsDB = [
         "kk": "/steɪ/",
         "zh": "v. 停留",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Will you stay for supper?",
+        "exampleZh": "你會留下來吃晚餐嗎？"
     },
     {
         "id": 31618,
@@ -14558,7 +14559,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 牛排",
         "unit": 18,
-        "example": "",
+        "example": "He dug his fork into the steak.",
         "exampleZh": ""
     },
     {
@@ -14567,8 +14568,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 偷竊",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Hunger drove her to steal.",
+        "exampleZh": "飢餓驅使她去偷竊。"
     },
     {
         "id": 31620,
@@ -14576,7 +14577,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 蒸汽",
         "unit": 18,
-        "example": "",
+        "example": "Who invented the steam engine?",
         "exampleZh": ""
     },
     {
@@ -14585,8 +14586,8 @@ const jhWordsDB = [
         "kk": "/step/",
         "zh": "v. 行走",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She took a step nearer.",
+        "exampleZh": "她又靠近了一步。"
     },
     {
         "id": 31622,
@@ -14594,8 +14595,8 @@ const jhWordsDB = [
         "kk": "/stɪl/",
         "zh": "adv. 仍然",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He still misbehaves occasionally.",
+        "exampleZh": "他還是時不時地表現不端正。"
     },
     {
         "id": 31623,
@@ -14603,7 +14604,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 小氣的",
         "unit": 18,
-        "example": "",
+        "example": "Don't be so stingy!",
         "exampleZh": ""
     },
     {
@@ -14612,7 +14613,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 胃",
         "unit": 18,
-        "example": "",
+        "example": "He had violent stomach pains.",
         "exampleZh": ""
     },
     {
@@ -14621,7 +14622,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 胃痛",
         "unit": 18,
-        "example": "",
+        "example": "I can't stand this stomachache.",
         "exampleZh": ""
     },
     {
@@ -14630,8 +14631,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 石頭",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She's trying to lose a stone.",
+        "exampleZh": "她正試圖失去一塊石頭。"
     },
     {
         "id": 31627,
@@ -14639,8 +14640,8 @@ const jhWordsDB = [
         "kk": "/stɑːp/",
         "zh": "v. 停",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Why didn't he stop me?",
+        "exampleZh": "他為什麼不阻止我？"
     },
     {
         "id": 31628,
@@ -14648,8 +14649,8 @@ const jhWordsDB = [
         "kk": "/stɔːr/",
         "zh": "n. 商店",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "They run a small grocery store.",
+        "exampleZh": "他們經營一家小雜貨店。"
     },
     {
         "id": 31629,
@@ -14657,7 +14658,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 暴風雨",
         "unit": 18,
-        "example": "",
+        "example": "The storm clouds were gathering.",
         "exampleZh": ""
     },
     {
@@ -14666,8 +14667,8 @@ const jhWordsDB = [
         "kk": "/ˈstɔːri/",
         "zh": "n. 故事",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Newspapers blew up the story.",
+        "exampleZh": "報紙報道了這個故事。"
     },
     {
         "id": 31631,
@@ -14675,7 +14676,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 火爐",
         "unit": 18,
-        "example": "",
+        "example": "I burned myself on the stove.",
         "exampleZh": ""
     },
     {
@@ -14684,7 +14685,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 直的",
         "unit": 18,
-        "example": "",
+        "example": "His teeth were perfectly straight.",
         "exampleZh": ""
     },
     {
@@ -14693,8 +14694,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 奇怪的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Then a strange thing happened.",
+        "exampleZh": "然後奇怪的事情發生了。"
     },
     {
         "id": 31634,
@@ -14702,7 +14703,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 陌生人",
         "unit": 18,
-        "example": "",
+        "example": "She married a practical stranger.",
         "exampleZh": ""
     },
     {
@@ -14711,7 +14712,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 稻草",
         "unit": 18,
-        "example": "",
+        "example": "The floors are covered with woven straw mats.",
         "exampleZh": ""
     },
     {
@@ -14720,7 +14721,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 草莓",
         "unit": 18,
-        "example": "",
+        "example": "I want a strawberry milkshake.",
         "exampleZh": ""
     },
     {
@@ -14729,7 +14730,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 小河",
         "unit": 18,
-        "example": "",
+        "example": "They jumped over the stream.",
         "exampleZh": ""
     },
     {
@@ -14738,8 +14739,8 @@ const jhWordsDB = [
         "kk": "/striːt/",
         "zh": "n. 街道",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He lives just down the street.",
+        "exampleZh": "他就住在街上。"
     },
     {
         "id": 31639,
@@ -14747,7 +14748,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 罷工",
         "unit": 18,
-        "example": "",
+        "example": "A strike has shut the factory.",
         "exampleZh": ""
     },
     {
@@ -14756,8 +14757,8 @@ const jhWordsDB = [
         "kk": "/strɔːŋ/",
         "zh": "adj. 強壯的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He's the strong silent type.",
+        "exampleZh": "他是那種沉默寡言的強者。"
     },
     {
         "id": 31641,
@@ -14765,8 +14766,8 @@ const jhWordsDB = [
         "kk": "/ˈstuːdənt/",
         "zh": "n. 學生",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Student numbers are expanding rapidly.",
+        "exampleZh": "學生人數正在迅速增加。"
     },
     {
         "id": 31642,
@@ -14774,8 +14775,8 @@ const jhWordsDB = [
         "kk": "/ˈstʌdi/",
         "zh": "v. 學習",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She was accepted to study music.",
+        "exampleZh": "她被錄取學習音樂。"
     },
     {
         "id": 31643,
@@ -14783,8 +14784,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 笨的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "How could I have been so stupid?",
+        "exampleZh": "我怎麼會這麼蠢呢？"
     },
     {
         "id": 31644,
@@ -14792,7 +14793,7 @@ const jhWordsDB = [
         "kk": "/staɪl/",
         "zh": "n. 風格",
         "unit": 18,
-        "example": "",
+        "example": "He had a dense, ponderous style.",
         "exampleZh": ""
     },
     {
@@ -14801,7 +14802,7 @@ const jhWordsDB = [
         "kk": "/ˈsʌbdʒɪkt/",
         "zh": "n. 科目",
         "unit": 18,
-        "example": "",
+        "example": "Biology is my favourite subject.",
         "exampleZh": ""
     },
     {
@@ -14810,7 +14811,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 地鐵",
         "unit": 18,
-        "example": "",
+        "example": "The subway was covered in graffiti.",
         "exampleZh": ""
     },
     {
@@ -14819,8 +14820,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 成功",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The project seemed unlikely to succeed.",
+        "exampleZh": "該項目似乎不太可能成功。"
     },
     {
         "id": 31648,
@@ -14828,7 +14829,7 @@ const jhWordsDB = [
         "kk": "/səkˈses/",
         "zh": "n. 成功",
         "unit": 18,
-        "example": "",
+        "example": "The book ensured his success.",
         "exampleZh": ""
     },
     {
@@ -14837,8 +14838,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 成功的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I think it's going to be successful.",
+        "exampleZh": "我認為它會成功。"
     },
     {
         "id": 31650,
@@ -14846,8 +14847,8 @@ const jhWordsDB = [
         "kk": "/sʌtʃ/",
         "zh": "det. 如此的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Such a view is pleasing.",
+        "exampleZh": "這樣的景色令人賞心悅目。"
     },
     {
         "id": 31651,
@@ -14855,7 +14856,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 突然的",
         "unit": 18,
-        "example": "",
+        "example": "A sudden noise startled her.",
         "exampleZh": ""
     },
     {
@@ -14864,8 +14865,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 糖",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Sugar occurs naturally in fruit.",
+        "exampleZh": "糖天然存在於水果中。"
     },
     {
         "id": 31653,
@@ -14873,7 +14874,7 @@ const jhWordsDB = [
         "kk": "/səɡˈdʒest/",
         "zh": "v. 建議",
         "unit": 18,
-        "example": "",
+        "example": "I suggest we let the matter drop.",
         "exampleZh": ""
     },
     {
@@ -14882,7 +14883,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 適合",
         "unit": 18,
-        "example": "",
+        "example": "Lighter shades suit you best.",
         "exampleZh": ""
     },
     {
@@ -14891,8 +14892,8 @@ const jhWordsDB = [
         "kk": "/ˈsʌmər/",
         "zh": "n. 夏天",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I really love summer evenings.",
+        "exampleZh": "我真的很喜歡夏天的夜晚。"
     },
     {
         "id": 31656,
@@ -14900,8 +14901,8 @@ const jhWordsDB = [
         "kk": "/sʌn/",
         "zh": "n. 太陽",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The sun disappeared from view.",
+        "exampleZh": "太陽從視野中消失了。"
     },
     {
         "id": 31657,
@@ -14909,8 +14910,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 星期天",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "We work every day except Sunday.",
+        "exampleZh": "除了星期日，我們每天都會工作。"
     },
     {
         "id": 31658,
@@ -14918,8 +14919,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 陽光充足的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "It's a brilliantly sunny morning.",
+        "exampleZh": "這是一個陽光明媚的早晨。"
     },
     {
         "id": 31659,
@@ -14927,8 +14928,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 極好的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "We had a super time.",
+        "exampleZh": "我們度過了一段美好的時光。"
     },
     {
         "id": 31660,
@@ -14936,7 +14937,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 超市",
         "unit": 18,
-        "example": "",
+        "example": "I do a weekly shop at the supermarket.",
         "exampleZh": ""
     },
     {
@@ -14945,8 +14946,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 晚餐",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Who's going to cook supper?",
+        "exampleZh": "誰來煮飯？"
     },
     {
         "id": 31662,
@@ -14954,7 +14955,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 提供",
         "unit": 18,
-        "example": "",
+        "example": "The electricity supply here is quite erratic.",
         "exampleZh": ""
     },
     {
@@ -14963,7 +14964,7 @@ const jhWordsDB = [
         "kk": "/səˈpɔːrt/",
         "zh": "v. 支持",
         "unit": 18,
-        "example": "",
+        "example": "We offer free technical support.",
         "exampleZh": ""
     },
     {
@@ -14972,8 +14973,8 @@ const jhWordsDB = [
         "kk": "/ʃʊr/",
         "zh": "adj. 確定的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "'I'm not sure,' she responded.",
+        "exampleZh": "「我不確定，」她回答。"
     },
     {
         "id": 31665,
@@ -14981,7 +14982,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 衝浪",
         "unit": 18,
-        "example": "",
+        "example": "I'm going to buy a surfboard and learn to surf.",
         "exampleZh": ""
     },
     {
@@ -14990,7 +14991,7 @@ const jhWordsDB = [
         "kk": "/ˈsɜːrfəs/",
         "zh": "n. 表面",
         "unit": 18,
-        "example": "",
+        "example": "He staggered on the uneven surface.",
         "exampleZh": ""
     },
     {
@@ -14999,8 +15000,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 驚訝",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She looked up in surprise.",
+        "exampleZh": "她驚訝地抬起頭。"
     },
     {
         "id": 31668,
@@ -15008,7 +15009,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 感到驚訝的",
         "unit": 18,
-        "example": "",
+        "example": "I'm really not a bit surprised.",
         "exampleZh": ""
     },
     {
@@ -15017,8 +15018,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 生存",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Most women will survive their spouses.",
+        "exampleZh": "大多數女性都會在她們的配偶後存活下來。"
     },
     {
         "id": 31670,
@@ -15026,7 +15027,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 吞嚥",
         "unit": 18,
-        "example": "",
+        "example": "You are asked to swallow a capsule containing vitamin B.",
         "exampleZh": ""
     },
     {
@@ -15035,7 +15036,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 天鵝",
         "unit": 18,
-        "example": "",
+        "example": "The swan flapped its wings noisily.",
         "exampleZh": ""
     },
     {
@@ -15044,7 +15045,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 毛衣",
         "unit": 18,
-        "example": "",
+        "example": "The fence snagged my sweater.",
         "exampleZh": ""
     },
     {
@@ -15053,7 +15054,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 清掃",
         "unit": 18,
-        "example": "",
+        "example": "Strong winds regularly sweep the islands.",
         "exampleZh": ""
     },
     {
@@ -15062,8 +15063,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 甜的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I especially like sweet things.",
+        "exampleZh": "我特別喜歡甜的東西。"
     },
     {
         "id": 31675,
@@ -15071,8 +15072,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 游泳",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I managed to swim to safety.",
+        "exampleZh": "我設法游到安全的地方。"
     },
     {
         "id": 31676,
@@ -15080,7 +15081,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 搖擺",
         "unit": 18,
-        "example": "",
+        "example": "I need to work on my swing.",
         "exampleZh": ""
     },
     {
@@ -15089,7 +15090,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 象徵",
         "unit": 18,
-        "example": "",
+        "example": "What's the chemical symbol for mercury?",
         "exampleZh": ""
     },
     {
@@ -15098,7 +15099,7 @@ const jhWordsDB = [
         "kk": "/ˈsɪstəm/",
         "zh": "n. 系統",
         "unit": 18,
-        "example": "",
+        "example": "Trust is implicit in the system.",
         "exampleZh": ""
     },
     {
@@ -15107,8 +15108,8 @@ const jhWordsDB = [
         "kk": "/ˈteɪbl/",
         "zh": "n. 桌子",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He thumped the table angrily.",
+        "exampleZh": "他生氣地拍著桌子。"
     },
     {
         "id": 31680,
@@ -15116,8 +15117,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 尾巴",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The pony swished its tail.",
+        "exampleZh": "小馬搖著尾巴。"
     },
     {
         "id": 31681,
@@ -15125,8 +15126,8 @@ const jhWordsDB = [
         "kk": "/teɪk/",
         "zh": "v. 拿",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Take whatever action is needed.",
+        "exampleZh": "採取任何需要的行動。"
     },
     {
         "id": 31682,
@@ -15134,8 +15135,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 故事",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She unfolded her tale to us.",
+        "exampleZh": "她向我們講述了她的故事。"
     },
     {
         "id": 31683,
@@ -15143,7 +15144,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 才能",
         "unit": 18,
-        "example": "",
+        "example": "He's got lots of talent.",
         "exampleZh": ""
     },
     {
@@ -15152,8 +15153,8 @@ const jhWordsDB = [
         "kk": "/tɔːk/",
         "zh": "v. 說話",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "They talk about it endlessly.",
+        "exampleZh": "他們無休無止地談論它。"
     },
     {
         "id": 31685,
@@ -15161,8 +15162,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 多話的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He is very talkative.",
+        "exampleZh": "他很健談。"
     },
     {
         "id": 31686,
@@ -15170,8 +15171,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 高的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She was tall and slim.",
+        "exampleZh": "她又高又苗條。"
     },
     {
         "id": 31687,
@@ -15179,7 +15180,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 橘子",
         "unit": 18,
-        "example": "",
+        "example": "Tangerine, raspberry, and kumquat have many small seeds.",
         "exampleZh": ""
     },
     {
@@ -15188,7 +15189,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 坦克",
         "unit": 18,
-        "example": "",
+        "example": "The tank became bogged down in mud.",
         "exampleZh": ""
     },
     {
@@ -15197,7 +15198,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 錄音帶",
         "unit": 18,
-        "example": "",
+        "example": "We've got her statement on tape.",
         "exampleZh": ""
     },
     {
@@ -15206,7 +15207,7 @@ const jhWordsDB = [
         "kk": "/tæsk/",
         "zh": "n. 任務",
         "unit": 18,
-        "example": "",
+        "example": "The task was a formidable one.",
         "exampleZh": ""
     },
     {
@@ -15215,8 +15216,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 味道",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The salads taste too vinegary.",
+        "exampleZh": "沙拉味道太醋了。"
     },
     {
         "id": 31692,
@@ -15224,8 +15225,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 計程車",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I hailed a passing taxi.",
+        "exampleZh": "我招呼了一輛路過的計程車。"
     },
     {
         "id": 31693,
@@ -15233,8 +15234,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 茶",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "There's hardly any tea left.",
+        "exampleZh": "茶已經所剩無幾了。"
     },
     {
         "id": 31694,
@@ -15242,8 +15243,8 @@ const jhWordsDB = [
         "kk": "/tiːtʃ/",
         "zh": "v. 教導",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Could you teach me to do that?",
+        "exampleZh": "你能教我這樣做嗎？"
     },
     {
         "id": 31695,
@@ -15251,8 +15252,8 @@ const jhWordsDB = [
         "kk": "/ˈtiːtʃər/",
         "zh": "n. 老師",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She's a very capable teacher.",
+        "exampleZh": "她是一位非常有能力的老師。"
     },
     {
         "id": 31696,
@@ -15260,7 +15261,7 @@ const jhWordsDB = [
         "kk": "/tiːm/",
         "zh": "n. 隊伍",
         "unit": 18,
-        "example": "",
+        "example": "The team was soundly defeated.",
         "exampleZh": ""
     },
     {
@@ -15269,7 +15270,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 茶壺",
         "unit": 18,
-        "example": "",
+        "example": "For some, it may seem silly, a tempest in a teapot.",
         "exampleZh": ""
     },
     {
@@ -15278,7 +15279,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 眼淚",
         "unit": 18,
-        "example": "",
+        "example": "Ann wiped a tear from her eye.",
         "exampleZh": ""
     },
     {
@@ -15287,7 +15288,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 青少年",
         "unit": 18,
-        "example": "",
+        "example": "He was acting like a lovelorn teenager.",
         "exampleZh": ""
     },
     {
@@ -15296,7 +15297,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 電話",
         "unit": 18,
-        "example": "",
+        "example": "He snatched up the telephone.",
         "exampleZh": ""
     },
     {
@@ -15305,7 +15306,7 @@ const jhWordsDB = [
         "kk": "/ˈtelɪvɪʒn/",
         "zh": "n. 電視",
         "unit": 18,
-        "example": "",
+        "example": "I'll turn the television on.",
         "exampleZh": ""
     },
     {
@@ -15314,8 +15315,8 @@ const jhWordsDB = [
         "kk": "/tel/",
         "zh": "v. 說",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Tell me what really happened.",
+        "exampleZh": "告訴我到底發生了什麼事。"
     },
     {
         "id": 31703,
@@ -15323,7 +15324,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 溫度",
         "unit": 18,
-        "example": "",
+        "example": "The temperature has dropped considerably.",
         "exampleZh": ""
     },
     {
@@ -15332,7 +15333,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 廟宇",
         "unit": 18,
-        "example": "",
+        "example": "We go to temple on Saturdays.",
         "exampleZh": ""
     },
     {
@@ -15341,8 +15342,8 @@ const jhWordsDB = [
         "kk": "/ten/",
         "zh": "n. 十",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Tickets cost ten dollars each.",
+        "exampleZh": "門票每張十美元。"
     },
     {
         "id": 31706,
@@ -15350,7 +15351,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 網球",
         "unit": 18,
-        "example": "",
+        "example": "I'm not much good at tennis.",
         "exampleZh": ""
     },
     {
@@ -15359,7 +15360,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 帳篷",
         "unit": 18,
-        "example": "",
+        "example": "I heard the tent rip.",
         "exampleZh": ""
     },
     {
@@ -15368,7 +15369,7 @@ const jhWordsDB = [
         "kk": "/tɜːrm/",
         "zh": "n. 任期",
         "unit": 18,
-        "example": "",
+        "example": "It's nearly the end of term.",
         "exampleZh": ""
     },
     {
@@ -15377,8 +15378,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 可怕的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I'm in a terrible predicament.",
+        "exampleZh": "我陷入了可怕的困境。"
     },
     {
         "id": 31710,
@@ -15386,8 +15387,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 很棒的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She's doing a terrific job.",
+        "exampleZh": "她做得很好。"
     },
     {
         "id": 31711,
@@ -15395,7 +15396,7 @@ const jhWordsDB = [
         "kk": "/test/",
         "zh": "n. 測驗",
         "unit": 18,
-        "example": "",
+        "example": "He failed his driving test.",
         "exampleZh": ""
     },
     {
@@ -15404,7 +15405,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 教科書",
         "unit": 18,
-        "example": "",
+        "example": "I gave the textbook back to him.",
         "exampleZh": ""
     },
     {
@@ -15413,8 +15414,8 @@ const jhWordsDB = [
         "kk": "/ðæn/",
         "zh": "conj. 比...",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Faith is stronger than reason.",
+        "exampleZh": "信仰比理性更強大。"
     },
     {
         "id": 31714,
@@ -15422,8 +15423,8 @@ const jhWordsDB = [
         "kk": "/θæŋk/",
         "zh": "v. 謝謝",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I'm better now, thank you.",
+        "exampleZh": "我現在好多了，謝謝。"
     },
     {
         "id": 31715,
@@ -15431,7 +15432,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 感恩節",
         "unit": 18,
-        "example": "",
+        "example": "Are you going home for Thanksgiving?",
         "exampleZh": ""
     },
     {
@@ -15440,8 +15441,8 @@ const jhWordsDB = [
         "kk": "/ðæt/",
         "zh": "pron. 那",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Phew! That was close—that car nearly hit us.",
+        "exampleZh": "唷！很接近——那輛車差點撞到我們。"
     },
     {
         "id": 31717,
@@ -15449,7 +15450,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 電影院",
         "unit": 18,
-        "example": "",
+        "example": "It's the South Theater Company.",
         "exampleZh": ""
     },
     {
@@ -15458,8 +15459,8 @@ const jhWordsDB = [
         "kk": "/ðen/",
         "zh": "adv. 然後",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The seagulls soared then dived.",
+        "exampleZh": "海鷗飛翔，然後潛入水中。"
     },
     {
         "id": 31719,
@@ -15467,8 +15468,8 @@ const jhWordsDB = [
         "kk": "/ðer/",
         "zh": "adv. 那裡",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "There were thousands of people there.",
+        "exampleZh": "那裡有數千人。"
     },
     {
         "id": 31720,
@@ -15476,8 +15477,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adv. 因此",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He's only 17 and therefore not eligible to vote.",
+        "exampleZh": "他只有 17 歲，因此沒有資格投票。"
     },
     {
         "id": 31721,
@@ -15485,8 +15486,8 @@ const jhWordsDB = [
         "kk": "/ðiːz/",
         "zh": "pron. 這些",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "These questions frustrated me.",
+        "exampleZh": "這些問題讓我很沮喪。"
     },
     {
         "id": 31722,
@@ -15494,8 +15495,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 厚的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He had thick black hair.",
+        "exampleZh": "他有一頭濃密的黑髮。"
     },
     {
         "id": 31723,
@@ -15503,7 +15504,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 小偷",
         "unit": 18,
-        "example": "",
+        "example": "The thief used a false identity.",
         "exampleZh": ""
     },
     {
@@ -15512,8 +15513,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 薄的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The dog was painfully thin.",
+        "exampleZh": "那隻狗瘦得令人痛苦。"
     },
     {
         "id": 31725,
@@ -15521,8 +15522,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 事情",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Then a strange thing happened.",
+        "exampleZh": "然後奇怪的事情發生了。"
     },
     {
         "id": 31726,
@@ -15530,8 +15531,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 想",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I think their methods stink.",
+        "exampleZh": "我認為他們的方法很糟糕。"
     },
     {
         "id": 31727,
@@ -15539,8 +15540,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 第三的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He finished in third place.",
+        "exampleZh": "他獲得第三名。"
     },
     {
         "id": 31728,
@@ -15548,8 +15549,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 口渴的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "When a baby is thirsty, it feeds more often.",
+        "exampleZh": "當寶寶口渴時，他會更頻繁地吃奶。"
     },
     {
         "id": 31729,
@@ -15557,8 +15558,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 十三",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Thirteen is often considered an unlucky number.",
+        "exampleZh": "十三常常被認為是一個不吉利的數字。"
     },
     {
         "id": 31730,
@@ -15566,8 +15567,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 三十",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Some thirty people attended the funeral.",
+        "exampleZh": "約有三十人參加了葬禮。"
     },
     {
         "id": 31731,
@@ -15575,8 +15576,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "pron. 這",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "This carpet stains easily.",
+        "exampleZh": "這塊地毯很容易弄髒。"
     },
     {
         "id": 31732,
@@ -15584,8 +15585,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "pron. 那些",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Those laws no longer pertain.",
+        "exampleZh": "這些法律不再適用。"
     },
     {
         "id": 31733,
@@ -15593,8 +15594,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "conj. 雖然",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He did reply, though not immediately.",
+        "exampleZh": "他確實回復了，儘管不是立即。"
     },
     {
         "id": 31734,
@@ -15602,8 +15603,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 想法",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I thought you'd never finish!",
+        "exampleZh": "我以為你永遠不會完成！"
     },
     {
         "id": 31735,
@@ -15611,8 +15612,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 千",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "A thousand people were there.",
+        "exampleZh": "那裡有一千人。"
     },
     {
         "id": 31736,
@@ -15620,8 +15621,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 三",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The clock said three o'clock.",
+        "exampleZh": "時鐘指向三點鐘。"
     },
     {
         "id": 31737,
@@ -15629,7 +15630,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 喉嚨",
         "unit": 18,
-        "example": "",
+        "example": "Symptoms include a sore throat.",
         "exampleZh": ""
     },
     {
@@ -15638,8 +15639,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adv. 自始至終",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He breezed through the tests.",
+        "exampleZh": "他輕鬆地通過了測試。"
     },
     {
         "id": 31739,
@@ -15647,8 +15648,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 投,扔",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I never throw anything away.",
+        "exampleZh": "我從不丟掉任何東西。"
     },
     {
         "id": 31740,
@@ -15656,7 +15657,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 拇指",
         "unit": 18,
-        "example": "",
+        "example": "There's a hole in the thumb.",
         "exampleZh": ""
     },
     {
@@ -15665,7 +15666,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 雷",
         "unit": 18,
-        "example": "",
+        "example": "Thunder cracked in the sky.",
         "exampleZh": ""
     },
     {
@@ -15674,8 +15675,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 星期四",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "We agreed to meet on Thursday.",
+        "exampleZh": "我們同意週四見面。"
     },
     {
         "id": 31743,
@@ -15683,8 +15684,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 票",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "You can have my ticket.",
+        "exampleZh": "你可以拿走我的票。"
     },
     {
         "id": 31744,
@@ -15692,7 +15693,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 整潔的",
         "unit": 18,
-        "example": "",
+        "example": "They sat in her neat and tidy kitchen.",
         "exampleZh": ""
     },
     {
@@ -15701,8 +15702,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 領帶",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He carefully knotted his tie.",
+        "exampleZh": "他小心翼翼地打結領帶。"
     },
     {
         "id": 31746,
@@ -15710,8 +15711,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 老虎",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The tiger is native to India.",
+        "exampleZh": "老虎原產於印度。"
     },
     {
         "id": 31747,
@@ -15719,8 +15720,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "conj. 直到",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "We're open till 6 o'clock.",
+        "exampleZh": "我們營業到六點。"
     },
     {
         "id": 31748,
@@ -15728,8 +15729,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 時間",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "This time they've messed up big time!",
+        "exampleZh": "這一次，他們闖大禍了！"
     },
     {
         "id": 31749,
@@ -15737,8 +15738,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 極小的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Each individual flower is tiny.",
+        "exampleZh": "每朵花都很小。"
     },
     {
         "id": 31750,
@@ -15746,7 +15747,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 祕訣",
         "unit": 18,
-        "example": "",
+        "example": "Did you give the waiter a tip?",
         "exampleZh": ""
     },
     {
@@ -15755,7 +15756,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 疲倦的",
         "unit": 18,
-        "example": "",
+        "example": "He looked tired and dishevelled.",
         "exampleZh": ""
     },
     {
@@ -15764,7 +15765,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 標題",
         "unit": 18,
-        "example": "",
+        "example": "The title is printed in italics.",
         "exampleZh": ""
     },
     {
@@ -15773,8 +15774,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "prep. 向,朝",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I was trying to save money to go to college.",
+        "exampleZh": "我想存錢去上大學。"
     },
     {
         "id": 31754,
@@ -15782,7 +15783,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 吐司",
         "unit": 18,
-        "example": "",
+        "example": "He was choking on a piece of toast.",
         "exampleZh": ""
     },
     {
@@ -15791,8 +15792,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 今天",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I'm revising Geography today.",
+        "exampleZh": "我今天正在複習地理。"
     },
     {
         "id": 31756,
@@ -15800,7 +15801,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 腳趾頭",
         "unit": 18,
-        "example": "",
+        "example": "Ouch! You trod on my toe!",
         "exampleZh": ""
     },
     {
@@ -15809,7 +15810,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 豆腐",
         "unit": 18,
-        "example": "",
+        "example": "Tofu is a kind of traditional Chinese food.",
         "exampleZh": ""
     },
     {
@@ -15818,8 +15819,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adv. 一起",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Fate had thrown them together.",
+        "exampleZh": "命運讓他們走到了一起。"
     },
     {
         "id": 31759,
@@ -15827,7 +15828,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 馬桶",
         "unit": 18,
-        "example": "",
+        "example": "Do you need the toilet ?",
         "exampleZh": ""
     },
     {
@@ -15836,7 +15837,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 番茄",
         "unit": 18,
-        "example": "",
+        "example": "It's similar in size to a tomato.",
         "exampleZh": ""
     },
     {
@@ -15845,8 +15846,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 明天",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Snow is forecast for tomorrow.",
+        "exampleZh": "預計明天會下雪。"
     },
     {
         "id": 31762,
@@ -15854,7 +15855,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 舌頭",
         "unit": 18,
-        "example": "",
+        "example": "The dog's tongue was hanging out.",
         "exampleZh": ""
     },
     {
@@ -15863,8 +15864,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 今晚",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "What's on television tonight?",
+        "exampleZh": "今晚電視有什麼節目？"
     },
     {
         "id": 31764,
@@ -15872,8 +15873,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adv. 也",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Critics derided the move as too little, too late.",
+        "exampleZh": "批評者嘲笑此舉太少、太晚。"
     },
     {
         "id": 31765,
@@ -15881,8 +15882,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 工具",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "What is this tool for?",
+        "exampleZh": "這個工具有什麼用？"
     },
     {
         "id": 31766,
@@ -15890,7 +15891,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 牙齒",
         "unit": 18,
-        "example": "",
+        "example": "He's got a front tooth missing.",
         "exampleZh": ""
     },
     {
@@ -15899,7 +15900,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 牙痛",
         "unit": 18,
-        "example": "",
+        "example": "I've got a toothache.",
         "exampleZh": ""
     },
     {
@@ -15908,7 +15909,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 牙刷",
         "unit": 18,
-        "example": "",
+        "example": "How do you choose your toothbrush?",
         "exampleZh": ""
     },
     {
@@ -15917,8 +15918,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 上面",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She got the top job.",
+        "exampleZh": "她得到了最高職位。"
     },
     {
         "id": 31770,
@@ -15926,7 +15927,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 主題",
         "unit": 18,
-        "example": "",
+        "example": "He spoke with authority on the topic.",
         "exampleZh": ""
     },
     {
@@ -15935,8 +15936,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 完全的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Total recycling is a fiction.",
+        "exampleZh": "完全回收是一個虛構的故事。"
     },
     {
         "id": 31772,
@@ -15944,8 +15945,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 感動",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She recoiled from his touch.",
+        "exampleZh": "她從他的碰觸中退縮了。"
     },
     {
         "id": 31773,
@@ -15953,8 +15954,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "prep. 朝",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She turned back toward home.",
+        "exampleZh": "她轉身朝家的方向走去。"
     },
     {
         "id": 31774,
@@ -15962,7 +15963,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 毛巾",
         "unit": 18,
-        "example": "",
+        "example": "He flicked me with a wet towel.",
         "exampleZh": ""
     },
     {
@@ -15971,7 +15972,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 塔",
         "unit": 18,
-        "example": "",
+        "example": "The tower is leaning dangerously.",
         "exampleZh": ""
     },
     {
@@ -15980,8 +15981,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 城鎮",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The town was weirdly familiar.",
+        "exampleZh": "這個小鎮有一種奇怪的熟悉感。"
     },
     {
         "id": 31777,
@@ -15989,8 +15990,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 玩具",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The toy industry is in a slump.",
+        "exampleZh": "玩具業正陷入低迷。"
     },
     {
         "id": 31778,
@@ -15998,7 +15999,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 蹤跡",
         "unit": 18,
-        "example": "",
+        "example": "The trace showed a normal heart rhythm.",
         "exampleZh": ""
     },
     {
@@ -16007,7 +16008,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 跟蹤",
         "unit": 18,
-        "example": "",
+        "example": "The track snaked perilously upwards.",
         "exampleZh": ""
     },
     {
@@ -16016,7 +16017,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 貿易",
         "unit": 18,
-        "example": "",
+        "example": "Trade was very good last month.",
         "exampleZh": ""
     },
     {
@@ -16025,7 +16026,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 傳統",
         "unit": 18,
-        "example": "",
+        "example": "This region is steeped in tradition.",
         "exampleZh": ""
     },
     {
@@ -16034,8 +16035,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 傳統的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Traditional values have been reasserted.",
+        "exampleZh": "傳統價值觀得到了重申。"
     },
     {
         "id": 31783,
@@ -16043,7 +16044,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 交通",
         "unit": 18,
-        "example": "",
+        "example": "The traffic lights were on amber.",
         "exampleZh": ""
     },
     {
@@ -16052,8 +16053,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 訓練",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The train was flying along.",
+        "exampleZh": "火車一路飛馳著。"
     },
     {
         "id": 31785,
@@ -16061,7 +16062,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 陷阱",
         "unit": 18,
-        "example": "",
+        "example": "A trap was laid, with fresh bait.",
         "exampleZh": ""
     },
     {
@@ -16070,7 +16071,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 垃圾",
         "unit": 18,
-        "example": "",
+        "example": "Would you take out the trash?",
         "exampleZh": ""
     },
     {
@@ -16079,7 +16080,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 旅行",
         "unit": 18,
-        "example": "",
+        "example": "It's cheaper to travel midweek.",
         "exampleZh": ""
     },
     {
@@ -16088,7 +16089,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 寶藏",
         "unit": 18,
-        "example": "",
+        "example": "The treasure had lain undisturbed for centuries.",
         "exampleZh": ""
     },
     {
@@ -16097,7 +16098,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 對待",
         "unit": 18,
-        "example": "",
+        "example": "Valium is usually prescribed to treat anxiety.",
         "exampleZh": ""
     },
     {
@@ -16106,8 +16107,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 樹",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Let's rest under yonder tree.",
+        "exampleZh": "我們在那棵樹下休息吧。"
     },
     {
         "id": 31791,
@@ -16115,7 +16116,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 三角形",
         "unit": 18,
-        "example": "",
+        "example": "The red triangle denotes danger.",
         "exampleZh": ""
     },
     {
@@ -16124,7 +16125,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 惡作劇",
         "unit": 18,
-        "example": "",
+        "example": "That was a nasty little trick.",
         "exampleZh": ""
     },
     {
@@ -16133,8 +16134,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 旅行",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She videotaped the entire trip.",
+        "exampleZh": "她錄下了整趟旅程。"
     },
     {
         "id": 31794,
@@ -16142,8 +16143,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 麻煩",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Are you causing trouble again?",
+        "exampleZh": "你又惹麻煩了嗎？"
     },
     {
         "id": 31795,
@@ -16151,7 +16152,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 褲子",
         "unit": 18,
-        "example": "",
+        "example": "These trousers are a bit tight.",
         "exampleZh": ""
     },
     {
@@ -16160,7 +16161,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 卡車",
         "unit": 18,
-        "example": "",
+        "example": "I've just loaded my truck up.",
         "exampleZh": ""
     },
     {
@@ -16169,8 +16170,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 真的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "This is not strictly true.",
+        "exampleZh": "這並不完全正確。"
     },
     {
         "id": 31798,
@@ -16178,7 +16179,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 喇叭",
         "unit": 18,
-        "example": "",
+        "example": "I played the trumpet in the school orchestra.",
         "exampleZh": ""
     },
     {
@@ -16187,7 +16188,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 相信",
         "unit": 18,
-        "example": "",
+        "example": "I couldn't trust him anymore.",
         "exampleZh": ""
     },
     {
@@ -16196,7 +16197,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 事實",
         "unit": 18,
-        "example": "",
+        "example": "Slowly the awful truth dawned.",
         "exampleZh": ""
     },
     {
@@ -16205,8 +16206,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 試圖",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Let's try to plan further ahead.",
+        "exampleZh": "讓我們嘗試進一步計劃。"
     },
     {
         "id": 31802,
@@ -16214,8 +16215,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. T 恤",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She wore an olive-green T-shirt.",
+        "exampleZh": "她穿著一件橄欖綠的T卹。"
     },
     {
         "id": 31803,
@@ -16223,7 +16224,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 管子",
         "unit": 18,
-        "example": "",
+        "example": "I work in the extruded tube business.",
         "exampleZh": ""
     },
     {
@@ -16232,8 +16233,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 星期二",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Tuesday is her half day.",
+        "exampleZh": "星期二是她的半天。"
     },
     {
         "id": 31805,
@@ -16241,7 +16242,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 隧道",
         "unit": 18,
-        "example": "",
+        "example": "He passed down the tunnel.",
         "exampleZh": ""
     },
     {
@@ -16250,7 +16251,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 火雞",
         "unit": 18,
-        "example": "",
+        "example": "Who's going to carve the turkey?",
         "exampleZh": ""
     },
     {
@@ -16259,8 +16260,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 轉彎",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He decided to turn professional.",
+        "exampleZh": "他決定轉為職業。"
     },
     {
         "id": 31808,
@@ -16268,7 +16269,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 烏龜",
         "unit": 18,
-        "example": "",
+        "example": "The Mock Turtle went on.",
         "exampleZh": ""
     },
     {
@@ -16277,8 +16278,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 十二",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He retired twelve batters in a row.",
+        "exampleZh": "他連續十二名擊球手退場。"
     },
     {
         "id": 31810,
@@ -16286,8 +16287,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 二十",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Twenty-eight is divisible by seven.",
+        "exampleZh": "二十八可以被七整除。"
     },
     {
         "id": 31811,
@@ -16295,8 +16296,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adv. 兩次",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I visited once or twice.",
+        "exampleZh": "我去過一兩次。"
     },
     {
         "id": 31812,
@@ -16304,8 +16305,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 二",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Two prisoners have escaped.",
+        "exampleZh": "兩名囚犯越獄了。"
     },
     {
         "id": 31813,
@@ -16313,7 +16314,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 打字",
         "unit": 18,
-        "example": "",
+        "example": "What blood type do you have?",
         "exampleZh": ""
     },
     {
@@ -16322,7 +16323,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 颱風",
         "unit": 18,
-        "example": "",
+        "example": "A typhoon is coming.",
         "exampleZh": ""
     },
     {
@@ -16331,8 +16332,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 醜陋的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "An ugly new building blocked the view from the window.",
+        "exampleZh": "一座醜陋的新建築擋住了窗外的視線。"
     },
     {
         "id": 31816,
@@ -16340,7 +16341,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 雨傘",
         "unit": 18,
-        "example": "",
+        "example": "Her umbrella blew inside out.",
         "exampleZh": ""
     },
     {
@@ -16349,8 +16350,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 叔伯",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "My uncle taught me to juggle.",
+        "exampleZh": "我叔叔教我雜耍。"
     },
     {
         "id": 31818,
@@ -16358,8 +16359,8 @@ const jhWordsDB = [
         "kk": "/ˈʌndər/",
         "zh": "prep. 在...下面",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "They feel under permanent threat.",
+        "exampleZh": "他們感到永遠受到威脅。"
     },
     {
         "id": 31819,
@@ -16367,7 +16368,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 強調",
         "unit": 18,
-        "example": "",
+        "example": "Some readers would underline the page as they read.",
         "exampleZh": ""
     },
     {
@@ -16376,8 +16377,8 @@ const jhWordsDB = [
         "kk": "/ˌʌndərˈstænd/",
         "zh": "v. 了解",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I fully understand your motives.",
+        "exampleZh": "我完全理解你的動機。"
     },
     {
         "id": 31821,
@@ -16385,7 +16386,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 內衣褲",
         "unit": 18,
-        "example": "",
+        "example": "She packed one change of underwear.",
         "exampleZh": ""
     },
     {
@@ -16394,7 +16395,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 不快樂的",
         "unit": 18,
-        "example": "",
+        "example": "I hate to see you unhappy.",
         "exampleZh": ""
     },
     {
@@ -16403,7 +16404,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 制服",
         "unit": 18,
-        "example": "",
+        "example": "He was wearing a brown uniform.",
         "exampleZh": ""
     },
     {
@@ -16412,7 +16413,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 獨一無二的",
         "unit": 18,
-        "example": "",
+        "example": "Each person's signature is unique.",
         "exampleZh": ""
     },
     {
@@ -16421,7 +16422,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 宇宙",
         "unit": 18,
-        "example": "",
+        "example": "The universe is slowly yielding up its secrets.",
         "exampleZh": ""
     },
     {
@@ -16430,7 +16431,7 @@ const jhWordsDB = [
         "kk": "/ˌjuːnɪˈvɜːrsəti/",
         "zh": "n. 大學",
         "unit": 18,
-        "example": "",
+        "example": "My daughter is at university.",
         "exampleZh": ""
     },
     {
@@ -16439,8 +16440,8 @@ const jhWordsDB = [
         "kk": "/ənˈtɪl/",
         "zh": "prep. 直到...",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She lay sleepless until dawn.",
+        "exampleZh": "她一直睡到天亮。"
     },
     {
         "id": 31828,
@@ -16448,8 +16449,8 @@ const jhWordsDB = [
         "kk": "/ʌp/",
         "zh": "adv. 向上",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Interest rates went up.",
+        "exampleZh": "利率上升。"
     },
     {
         "id": 31829,
@@ -16457,8 +16458,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 上面的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Her novels poke fun at the upper class.",
+        "exampleZh": "她的小說取笑上流社會。"
     },
     {
         "id": 31830,
@@ -16466,8 +16467,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adv. 在樓上",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I carried her bags upstairs.",
+        "exampleZh": "我把她的包包搬上樓。"
     },
     {
         "id": 31831,
@@ -16475,8 +16476,8 @@ const jhWordsDB = [
         "kk": "/juːz/",
         "zh": "v. 使用",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "That's a word I never use.",
+        "exampleZh": "這是我從來不用的詞。"
     },
     {
         "id": 31832,
@@ -16484,7 +16485,7 @@ const jhWordsDB = [
         "kk": "/ˈjuːzər/",
         "zh": "n. 使用者",
         "unit": 18,
-        "example": "",
+        "example": "I am a Windows user.",
         "exampleZh": ""
     },
     {
@@ -16493,8 +16494,8 @@ const jhWordsDB = [
         "kk": "/ˈjuːsfəl/",
         "zh": "adj. 有用的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He offered some useful advice.",
+        "exampleZh": "他提供了一些有用的建議。"
     },
     {
         "id": 31834,
@@ -16502,8 +16503,8 @@ const jhWordsDB = [
         "kk": "/ˈjuːʒuəl/",
         "zh": "adj. 通常的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He came home later than usual.",
+        "exampleZh": "他比平常回家晚了。"
     },
     {
         "id": 31835,
@@ -16511,7 +16512,7 @@ const jhWordsDB = [
         "kk": "/ˈjuːʒuəli/",
         "zh": "adv. 通常",
         "unit": 18,
-        "example": "",
+        "example": "Windows are usually sealed off.",
         "exampleZh": ""
     },
     {
@@ -16520,7 +16521,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 假期",
         "unit": 18,
-        "example": "",
+        "example": "We're going to the beach for vacation.",
         "exampleZh": ""
     },
     {
@@ -16529,7 +16530,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 山谷",
         "unit": 18,
-        "example": "",
+        "example": "Mist ascended from the valley.",
         "exampleZh": ""
     },
     {
@@ -16538,7 +16539,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 有價值的",
         "unit": 18,
-        "example": "",
+        "example": "Luckily, nothing valuable was stolen.",
         "exampleZh": ""
     },
     {
@@ -16547,7 +16548,7 @@ const jhWordsDB = [
         "kk": "/ˈvæljuː/",
         "zh": "n. 價值",
         "unit": 18,
-        "example": "",
+        "example": "Let y have the value 33.",
         "exampleZh": ""
     },
     {
@@ -16556,8 +16557,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 蔬菜",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The vegetable harvest is disastrously behind schedule.",
+        "exampleZh": "蔬菜收成嚴重落後於計劃。"
     },
     {
         "id": 31841,
@@ -16565,7 +16566,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 攤販",
         "unit": 18,
-        "example": "",
+        "example": "I think the vendor is still there.",
         "exampleZh": ""
     },
     {
@@ -16574,7 +16575,7 @@ const jhWordsDB = [
         "kk": "/ˈveri/",
         "zh": "adv. 非常",
         "unit": 18,
-        "example": "",
+        "example": "He was very polite and very correct.",
         "exampleZh": ""
     },
     {
@@ -16583,7 +16584,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 背心",
         "unit": 18,
-        "example": "",
+        "example": "His life was saved by a quarter-inch-thick bullet-proof vest.",
         "exampleZh": ""
     },
     {
@@ -16592,7 +16593,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 勝利",
         "unit": 18,
-        "example": "",
+        "example": "The team hung on for victory.",
         "exampleZh": ""
     },
     {
@@ -16601,7 +16602,7 @@ const jhWordsDB = [
         "kk": "/ˈvɪdioʊ/",
         "zh": "n. 錄影帶",
         "unit": 18,
-        "example": "",
+        "example": "Do we have a blank video ?",
         "exampleZh": ""
     },
     {
@@ -16610,7 +16611,7 @@ const jhWordsDB = [
         "kk": "/ˈvɪlɪdʒ/",
         "zh": "n. 村莊",
         "unit": 18,
-        "example": "",
+        "example": "The entire village was destroyed.",
         "exampleZh": ""
     },
     {
@@ -16619,7 +16620,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 醋",
         "unit": 18,
-        "example": "",
+        "example": "Wine vinegar tenderizes meat.",
         "exampleZh": ""
     },
     {
@@ -16628,7 +16629,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 小提琴",
         "unit": 18,
-        "example": "",
+        "example": "Lizzie used to play the violin.",
         "exampleZh": ""
     },
     {
@@ -16637,8 +16638,8 @@ const jhWordsDB = [
         "kk": "/ˈvɪzɪt/",
         "zh": "v. 探訪",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She will try and visit tomorrow.",
+        "exampleZh": "她明天會嘗試去拜訪。"
     },
     {
         "id": 31850,
@@ -16646,7 +16647,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 訪客",
         "unit": 18,
-        "example": "",
+        "example": "I wasn't expecting a visitor.",
         "exampleZh": ""
     },
     {
@@ -16655,7 +16656,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 字彙",
         "unit": 18,
-        "example": "",
+        "example": "Reading will enlarge your vocabulary.",
         "exampleZh": ""
     },
     {
@@ -16664,8 +16665,8 @@ const jhWordsDB = [
         "kk": "/vɔɪs/",
         "zh": "n. 聲音",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Her voice was suddenly breathy.",
+        "exampleZh": "她的聲音突然帶著呼吸聲。"
     },
     {
         "id": 31853,
@@ -16673,7 +16674,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 排球",
         "unit": 18,
-        "example": "",
+        "example": "They had a volleyball court in the middle of the courtyard.",
         "exampleZh": ""
     },
     {
@@ -16682,7 +16683,7 @@ const jhWordsDB = [
         "kk": "/voʊt/",
         "zh": "v. 投票",
         "unit": 18,
-        "example": "",
+        "example": "All affiliated members can vote.",
         "exampleZh": ""
     },
     {
@@ -16691,7 +16692,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 腰",
         "unit": 18,
-        "example": "",
+        "example": "The grass had grown waist-high.",
         "exampleZh": ""
     },
     {
@@ -16700,8 +16701,8 @@ const jhWordsDB = [
         "kk": "/weɪt/",
         "zh": "v. 等待",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I'll wait until they arrive.",
+        "exampleZh": "我會等到他們到來。"
     },
     {
         "id": 31857,
@@ -16709,7 +16710,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 服務生",
         "unit": 18,
-        "example": "",
+        "example": "He beckoned to the waiter.",
         "exampleZh": ""
     },
     {
@@ -16718,7 +16719,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 女服務生",
         "unit": 18,
-        "example": "",
+        "example": "She took a job as a waitress.",
         "exampleZh": ""
     },
     {
@@ -16727,8 +16728,8 @@ const jhWordsDB = [
         "kk": "/weɪk/",
         "zh": "v. 醒",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She went upstairs to wake Milton.",
+        "exampleZh": "她上樓去叫醒米爾頓。"
     },
     {
         "id": 31860,
@@ -16736,8 +16737,8 @@ const jhWordsDB = [
         "kk": "/wɔːk/",
         "zh": "v. 走",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "They walk their dogs every day.",
+        "exampleZh": "他們每天都會遛狗。"
     },
     {
         "id": 31861,
@@ -16745,8 +16746,8 @@ const jhWordsDB = [
         "kk": "/wɔːl/",
         "zh": "n. 牆壁",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She leaned against the wall.",
+        "exampleZh": "她靠在牆上。"
     },
     {
         "id": 31862,
@@ -16754,7 +16755,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 皮夾",
         "unit": 18,
-        "example": "",
+        "example": "This wallet feels like leather.",
         "exampleZh": ""
     },
     {
@@ -16763,8 +16764,8 @@ const jhWordsDB = [
         "kk": "/wɑːnt/",
         "zh": "v. 想要",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Do you want anything else?",
+        "exampleZh": "你還想要什麼嗎？"
     },
     {
         "id": 31864,
@@ -16772,8 +16773,8 @@ const jhWordsDB = [
         "kk": "/wɔːr/",
         "zh": "n. 戰爭",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Diplomacy is better than war.",
+        "exampleZh": "外交比戰​​爭好。"
     },
     {
         "id": 31865,
@@ -16781,8 +16782,8 @@ const jhWordsDB = [
         "kk": "/wɔːrm/",
         "zh": "adj. 暖和的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "This sleeping bag is very warm.",
+        "exampleZh": "這個睡袋很溫暖。"
     },
     {
         "id": 31866,
@@ -16790,8 +16791,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 洗滌",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I must wash the car tomorrow.",
+        "exampleZh": "我明天必須洗車。"
     },
     {
         "id": 31867,
@@ -16799,8 +16800,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "v. 浪費",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The waste was dumped in the sea.",
+        "exampleZh": "廢物被傾倒在海裡。"
     },
     {
         "id": 31868,
@@ -16808,8 +16809,8 @@ const jhWordsDB = [
         "kk": "/wɑːtʃ/",
         "zh": "n. 手錶",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She glanced at her watch.",
+        "exampleZh": "她看了一眼手錶。"
     },
     {
         "id": 31869,
@@ -16817,8 +16818,8 @@ const jhWordsDB = [
         "kk": "/ˈwɔːtər/",
         "zh": "n. 水",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Glucose is soluble in water.",
+        "exampleZh": "葡萄糖可溶於水。"
     },
     {
         "id": 31870,
@@ -16826,7 +16827,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 瀑布",
         "unit": 18,
-        "example": "",
+        "example": "As you descend, suddenly you see at last the hidden waterfall.",
         "exampleZh": ""
     },
     {
@@ -16835,7 +16836,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 西瓜",
         "unit": 18,
-        "example": "",
+        "example": "Watermelon contains vitamins and also potassium.",
         "exampleZh": ""
     },
     {
@@ -16844,7 +16845,7 @@ const jhWordsDB = [
         "kk": "/weɪv/",
         "zh": "n. 波浪",
         "unit": 18,
-        "example": "",
+        "example": "He dismissed her with an airy wave.",
         "exampleZh": ""
     },
     {
@@ -16853,8 +16854,8 @@ const jhWordsDB = [
         "kk": "/weɪ/",
         "zh": "n. 方式",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The doctor's on his way.",
+        "exampleZh": "醫生正在趕來的路上。"
     },
     {
         "id": 31874,
@@ -16862,8 +16863,8 @@ const jhWordsDB = [
         "kk": "/wiːk/",
         "zh": "adj. 虛弱的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Geography was my weak subject.",
+        "exampleZh": "地理是我的弱科。"
     },
     {
         "id": 31875,
@@ -16871,7 +16872,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 武器",
         "unit": 18,
-        "example": "",
+        "example": "Discipline was the new coach's secret weapon.",
         "exampleZh": ""
     },
     {
@@ -16880,8 +16881,8 @@ const jhWordsDB = [
         "kk": "/wer/",
         "zh": "v. 穿戴著",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She doesn't often wear heels.",
+        "exampleZh": "她不常穿高跟鞋。"
     },
     {
         "id": 31877,
@@ -16889,8 +16890,8 @@ const jhWordsDB = [
         "kk": "/ˈweðər/",
         "zh": "n. 天氣",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Weather conditions were fair.",
+        "exampleZh": "天氣狀況良好。"
     },
     {
         "id": 31878,
@@ -16898,8 +16899,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 結婚儀式",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The wedding day finally arrived.",
+        "exampleZh": "結婚的日子終於到了。"
     },
     {
         "id": 31879,
@@ -16907,8 +16908,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 星期三",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Let's move the meeting to Wednesday.",
+        "exampleZh": "我們把會議改到星期三吧。"
     },
     {
         "id": 31880,
@@ -16916,8 +16917,8 @@ const jhWordsDB = [
         "kk": "/wiːk/",
         "zh": "n. 週",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "We commence building next week.",
+        "exampleZh": "我們下週開始建造。"
     },
     {
         "id": 31881,
@@ -16925,7 +16926,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 平日",
         "unit": 18,
-        "example": "",
+        "example": "There are several free hours every weekday.",
         "exampleZh": ""
     },
     {
@@ -16934,8 +16935,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 週末",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Let's go fishing this weekend.",
+        "exampleZh": "這個週末我們去釣魚吧。"
     },
     {
         "id": 31883,
@@ -16943,8 +16944,8 @@ const jhWordsDB = [
         "kk": "/weɪt/",
         "zh": "n. 重量",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He's working at losing weight.",
+        "exampleZh": "他正在努力減肥。"
     },
     {
         "id": 31884,
@@ -16952,8 +16953,8 @@ const jhWordsDB = [
         "kk": "/ˈwelkəm/",
         "zh": "v. 歡迎",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I warmly welcome this decision.",
+        "exampleZh": "我對這項決定表示熱烈歡迎。"
     },
     {
         "id": 31885,
@@ -16961,8 +16962,8 @@ const jhWordsDB = [
         "kk": "/wel/",
         "zh": "adv. 很好地",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Well, well, well. How quickly things change.",
+        "exampleZh": "好吧，好吧，好吧。事情變化得有多快。"
     },
     {
         "id": 31886,
@@ -16970,8 +16971,8 @@ const jhWordsDB = [
         "kk": "/west/",
         "zh": "n. 西方",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The wind veered to the west.",
+        "exampleZh": "風轉向西了。"
     },
     {
         "id": 31887,
@@ -16979,8 +16980,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 溼的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Wet weather always depresses me.",
+        "exampleZh": "潮濕的天氣總是讓我感到沮喪。"
     },
     {
         "id": 31888,
@@ -16988,7 +16989,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 鯨魚",
         "unit": 18,
-        "example": "",
+        "example": "The whale dived as the harpoon struck it.",
         "exampleZh": ""
     },
     {
@@ -16997,8 +16998,8 @@ const jhWordsDB = [
         "kk": "/wʌt/",
         "zh": "pron. 什麼",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "'What?' she asked snappily.",
+        "exampleZh": "'什麼？ '她沒好氣地問。"
     },
     {
         "id": 31890,
@@ -17006,7 +17007,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 車輪",
         "unit": 18,
-        "example": "",
+        "example": "The wheel is pulling to the left.",
         "exampleZh": ""
     },
     {
@@ -17015,8 +17016,8 @@ const jhWordsDB = [
         "kk": "/wen/",
         "zh": "pron. 何時",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "When were you there last?",
+        "exampleZh": "你上次在那裡是什麼時候？"
     },
     {
         "id": 31892,
@@ -17024,8 +17025,8 @@ const jhWordsDB = [
         "kk": "/wer/",
         "zh": "pron. 哪裡",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Where are you living now?",
+        "exampleZh": "你現在住在哪裡？"
     },
     {
         "id": 31893,
@@ -17033,8 +17034,8 @@ const jhWordsDB = [
         "kk": "/ˈweðər/",
         "zh": "conj. 是否",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Check whether a fuse has blown.",
+        "exampleZh": "檢查保險絲是否熔斷。"
     },
     {
         "id": 31894,
@@ -17042,8 +17043,8 @@ const jhWordsDB = [
         "kk": "/wɪtʃ/",
         "zh": "pron. 哪個",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Which one's your favourite?",
+        "exampleZh": "你最喜歡哪一個？"
     },
     {
         "id": 31895,
@@ -17051,8 +17052,8 @@ const jhWordsDB = [
         "kk": "/waɪl/",
         "zh": "conj. 當...時候",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She fell while toddling around.",
+        "exampleZh": "她在蹣跚學步時摔倒了。"
     },
     {
         "id": 31896,
@@ -17060,8 +17061,8 @@ const jhWordsDB = [
         "kk": "/waɪt/",
         "zh": "adj. 白色的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "His face was ghastly white.",
+        "exampleZh": "他的臉色慘白。"
     },
     {
         "id": 31897,
@@ -17069,7 +17070,7 @@ const jhWordsDB = [
         "kk": "/huː/",
         "zh": "pron. 誰",
         "unit": 18,
-        "example": "",
+        "example": "Who did the timekeeping?",
         "exampleZh": ""
     },
     {
@@ -17078,8 +17079,8 @@ const jhWordsDB = [
         "kk": "/hoʊl/",
         "zh": "adj. 全體的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The whole idea was preposterous.",
+        "exampleZh": "整個想法是荒謬的。"
     },
     {
         "id": 31899,
@@ -17087,7 +17088,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "pron. 誰的",
         "unit": 18,
-        "example": "",
+        "example": "Whose is that farm over yonder?",
         "exampleZh": ""
     },
     {
@@ -17096,8 +17097,8 @@ const jhWordsDB = [
         "kk": "/waɪ/",
         "zh": "adv. 為何",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "'But why?' he interpolated.",
+        "exampleZh": "'但為什麼？ '他插嘴道。"
     },
     {
         "id": 31901,
@@ -17105,8 +17106,8 @@ const jhWordsDB = [
         "kk": "/waɪd/",
         "zh": "adj. 廣大的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "It's about 2 metres wide.",
+        "exampleZh": "寬約2米。"
     },
     {
         "id": 31902,
@@ -17114,8 +17115,8 @@ const jhWordsDB = [
         "kk": "/waɪf/",
         "zh": "n. 妻子",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "His wife is very religious.",
+        "exampleZh": "他的妻子非常虔誠。"
     },
     {
         "id": 31903,
@@ -17123,7 +17124,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 野生的",
         "unit": 18,
-        "example": "",
+        "example": "They went camping in the wild.",
         "exampleZh": ""
     },
     {
@@ -17132,8 +17133,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "aux. 將要",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "You will be remunerated and so will your staff.",
+        "exampleZh": "您將獲得報酬，您的員工也將獲得報酬。"
     },
     {
         "id": 31905,
@@ -17141,8 +17142,8 @@ const jhWordsDB = [
         "kk": "/wɪn/",
         "zh": "v. 獲勝",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Everyone has a chance to win.",
+        "exampleZh": "每個人都有機會獲勝。"
     },
     {
         "id": 31906,
@@ -17150,8 +17151,8 @@ const jhWordsDB = [
         "kk": "/wɪnd/",
         "zh": "n. 風",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The wind will freshen tonight.",
+        "exampleZh": "今晚風將變得清新。"
     },
     {
         "id": 31907,
@@ -17159,8 +17160,8 @@ const jhWordsDB = [
         "kk": "/ˈwɪndoʊ/",
         "zh": "n. 窗戶",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I climbed through the window.",
+        "exampleZh": "我爬進窗戶。"
     },
     {
         "id": 31908,
@@ -17168,8 +17169,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 風大的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "It was windy and Jake felt cold.",
+        "exampleZh": "風很大，傑克感到很冷。"
     },
     {
         "id": 31909,
@@ -17177,8 +17178,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 酒",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The wine had been doctored.",
+        "exampleZh": "這酒已經被竄改了。"
     },
     {
         "id": 31910,
@@ -17186,7 +17187,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 翅膀",
         "unit": 18,
-        "example": "",
+        "example": "Who's playing on the wing?",
         "exampleZh": ""
     },
     {
@@ -17195,7 +17196,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 優勝者",
         "unit": 18,
-        "example": "",
+        "example": "The winner scored 10 pts.",
         "exampleZh": ""
     },
     {
@@ -17204,8 +17205,8 @@ const jhWordsDB = [
         "kk": "/ˈwɪntər/",
         "zh": "n. 冬天",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Swallows migrate south in winter.",
+        "exampleZh": "冬季，燕子南遷。"
     },
     {
         "id": 31913,
@@ -17213,7 +17214,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 電線",
         "unit": 18,
-        "example": "",
+        "example": "The wire led to a speaker.",
         "exampleZh": ""
     },
     {
@@ -17222,8 +17223,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 明智的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "It's never wise to withhold evidence.",
+        "exampleZh": "隱瞞證據絕非明智之舉。"
     },
     {
         "id": 31915,
@@ -17231,8 +17232,8 @@ const jhWordsDB = [
         "kk": "/wɪʃ/",
         "zh": "v. 希望",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The prince's wish came true.",
+        "exampleZh": "王子的願望實現了。"
     },
     {
         "id": 31916,
@@ -17240,8 +17241,8 @@ const jhWordsDB = [
         "kk": "/wɪð/",
         "zh": "prep. 有;用",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He's more comfortable with computers than with people.",
+        "exampleZh": "與人相處相比，他更喜歡與電腦相處。"
     },
     {
         "id": 31917,
@@ -17249,8 +17250,8 @@ const jhWordsDB = [
         "kk": "/wɪˈðaʊt/",
         "zh": "prep. 沒有",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She's better off without him.",
+        "exampleZh": "沒有他，她會過得更好。"
     },
     {
         "id": 31918,
@@ -17258,7 +17259,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 狼",
         "unit": 18,
-        "example": "",
+        "example": "The wolf clawed at the tree and howled the whole night.",
         "exampleZh": ""
     },
     {
@@ -17267,8 +17268,8 @@ const jhWordsDB = [
         "kk": "/ˈwʊmən/",
         "zh": "n. 女人",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She's a very attractive woman.",
+        "exampleZh": "她是一個非常有魅力的女人。"
     },
     {
         "id": 31920,
@@ -17276,7 +17277,7 @@ const jhWordsDB = [
         "kk": "/ˈwʌndər/",
         "zh": "v. 驚訝",
         "unit": 18,
-        "example": "",
+        "example": "I wonder if you can help me.",
         "exampleZh": ""
     },
     {
@@ -17285,8 +17286,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 極好的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "They've got a wonderful house.",
+        "exampleZh": "他們有一棟很棒的房子。"
     },
     {
         "id": 31922,
@@ -17294,8 +17295,8 @@ const jhWordsDB = [
         "kk": "/wʊd/",
         "zh": "n. 木頭",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The impact splintered the wood.",
+        "exampleZh": "撞擊使木頭碎裂。"
     },
     {
         "id": 31923,
@@ -17303,7 +17304,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 羊毛",
         "unit": 18,
-        "example": "",
+        "example": "This scarf is 100% wool.",
         "exampleZh": ""
     },
     {
@@ -17312,8 +17313,8 @@ const jhWordsDB = [
         "kk": "/wɜːrd/",
         "zh": "n. 字",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The appropriate word eluded him.",
+        "exampleZh": "他想不出合適的字。"
     },
     {
         "id": 31925,
@@ -17321,8 +17322,8 @@ const jhWordsDB = [
         "kk": "/wɜːrk/",
         "zh": "v. 工作",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He's still unfit for work.",
+        "exampleZh": "他仍然不適合工作。"
     },
     {
         "id": 31926,
@@ -17330,8 +17331,8 @@ const jhWordsDB = [
         "kk": "/ˈwɜːrkər/",
         "zh": "n. 工人",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She was a zealous worker for charity.",
+        "exampleZh": "她是一位熱心慈善事業的工作者。"
     },
     {
         "id": 31927,
@@ -17339,8 +17340,8 @@ const jhWordsDB = [
         "kk": "/wɜːrld/",
         "zh": "n. 世界",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "She has three world titles.",
+        "exampleZh": "她擁有三個世界冠軍。"
     },
     {
         "id": 31928,
@@ -17348,8 +17349,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 蟲",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The early bird catches the worm.",
+        "exampleZh": "早起的鳥兒有蟲吃。"
     },
     {
         "id": 31929,
@@ -17357,8 +17358,8 @@ const jhWordsDB = [
         "kk": "/ˈwɜːri/",
         "zh": "v. 擔心",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I worry about her constantly.",
+        "exampleZh": "我時常擔心她。"
     },
     {
         "id": 31930,
@@ -17366,7 +17367,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 價值",
         "unit": 18,
-        "example": "",
+        "example": "Was it worth the effort?",
         "exampleZh": ""
     },
     {
@@ -17375,7 +17376,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 受傷",
         "unit": 18,
-        "example": "",
+        "example": "The nurse cleaned the wound.",
         "exampleZh": ""
     },
     {
@@ -17384,7 +17385,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 手腕",
         "unit": 18,
-        "example": "",
+        "example": "Kay grasped him by the wrist.",
         "exampleZh": ""
     },
     {
@@ -17393,8 +17394,8 @@ const jhWordsDB = [
         "kk": "/raɪt/",
         "zh": "v. 寫",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Write me while you're away.",
+        "exampleZh": "你不在的時候寫信給我。"
     },
     {
         "id": 31934,
@@ -17402,8 +17403,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 作者",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "'You? A writer?' she sneered.",
+        "exampleZh": "'你？作家？她冷笑道。"
     },
     {
         "id": 31935,
@@ -17411,8 +17412,8 @@ const jhWordsDB = [
         "kk": "/rɔːŋ/",
         "zh": "adj. 不對的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "'That is wrong,' he asserted.",
+        "exampleZh": "「這是錯誤的，」他斷言。"
     },
     {
         "id": 31936,
@@ -17420,7 +17421,7 @@ const jhWordsDB = [
         "kk": "/jɑːrd/",
         "zh": "n. 院子",
         "unit": 18,
-        "example": "",
+        "example": "Which door leads to the yard?",
         "exampleZh": ""
     },
     {
@@ -17429,8 +17430,8 @@ const jhWordsDB = [
         "kk": "/jɪr/",
         "zh": "n. 年",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Spending has increased year on year.",
+        "exampleZh": "支出逐年增加。"
     },
     {
         "id": 31938,
@@ -17438,8 +17439,8 @@ const jhWordsDB = [
         "kk": "/ˈjeloʊ/",
         "zh": "adj. 黃色的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "The walls were painted yellow.",
+        "exampleZh": "牆壁被漆成黃色。"
     },
     {
         "id": 31939,
@@ -17447,8 +17448,8 @@ const jhWordsDB = [
         "kk": "/jes/",
         "zh": "adv. 是的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "Yes, there's plenty of room.",
+        "exampleZh": "是的，有足夠的空間。"
     },
     {
         "id": 31940,
@@ -17456,8 +17457,8 @@ const jhWordsDB = [
         "kk": "/ˈjestərdeɪ/",
         "zh": "n. 昨天",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He signed for United yesterday.",
+        "exampleZh": "他昨天與曼聯簽約。"
     },
     {
         "id": 31941,
@@ -17465,8 +17466,8 @@ const jhWordsDB = [
         "kk": "/jet/",
         "zh": "adv. 尚未",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "They haven't finished yet.",
+        "exampleZh": "他們還沒有完成。"
     },
     {
         "id": 31942,
@@ -17474,8 +17475,8 @@ const jhWordsDB = [
         "kk": "/jʌŋ/",
         "zh": "adj. 年輕的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He's a brilliant young scientist.",
+        "exampleZh": "他是一位才華洋溢的年輕科學家。"
     },
     {
         "id": 31943,
@@ -17483,7 +17484,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 青春",
         "unit": 18,
-        "example": "",
+        "example": "The poem contrasts youth and age.",
         "exampleZh": ""
     },
     {
@@ -17492,8 +17493,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "adj. 好吃的",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "I'll bet they have yummy ice cream.",
+        "exampleZh": "我敢打賭他們一定有美味的冰淇淋。"
     },
     {
         "id": 31945,
@@ -17501,8 +17502,8 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 零",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "You've left off a zero.",
+        "exampleZh": "你漏掉了一個零。"
     },
     {
         "id": 31946,
@@ -17510,7 +17511,7 @@ const jhWordsDB = [
         "kk": "",
         "zh": "n. 動物園",
         "unit": 18,
-        "example": "",
-        "exampleZh": ""
+        "example": "He took his son Christopher to the zoo.",
+        "exampleZh": "他帶著兒子克里斯托弗去了動物園。"
     }
 ];

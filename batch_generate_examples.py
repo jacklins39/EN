@@ -45,7 +45,8 @@ async def process_item(item, sem):
 async def main():
     os.makedirs(AUDIO_DIR, exist_ok=True)
     
-    with open("examples_data.json", "r", encoding="utf-8") as f:
+    input_file = "clean_examples_data.json" if os.path.exists("clean_examples_data.json") else "examples_data.json"
+    with open(input_file, "r", encoding="utf-8") as f:
         items = json.load(f)
     
     total = len(items)
@@ -65,7 +66,7 @@ async def main():
     save_manifest(completed_ids)
     
     if not to_generate:
-        print("✔ 全部 8622 句例句真人語音已 100% 生成完畢！")
+        print(f"✔ 全部 {total} 句例句真人語音已 100% 生成完畢！")
         return
 
     # Process in chunks of 30 to prevent network pipe congestion

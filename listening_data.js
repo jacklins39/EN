@@ -10,7 +10,7 @@ const listeningArticlesDB = [
       {
         "en": "Hello! I would like to order a cheeseburger and a large fries.",
         "zh": "你好！我想點一個起司漢堡和大份薯條。",
-        "start": 0.0,
+        "start": 0,
         "end": 5.04
       },
       {
@@ -113,7 +113,33 @@ const listeningArticlesDB = [
     ],
     "voice": "en-US-JennyNeural",
     "voiceLabel": "美式女聲 (US)",
-    "audio": "audio/listening/2026_09_gen_01.mp3"
+    "audio": "audio/listening/2026_09_gen_01.mp3",
+    "vocabulary": [
+      {
+        "en": "cheeseburger",
+        "zh": "n. 起司漢堡"
+      },
+      {
+        "en": "large fries",
+        "zh": "n. 大份薯條"
+      },
+      {
+        "en": "diet cola",
+        "zh": "n. 健怡可樂"
+      },
+      {
+        "en": "total",
+        "zh": "n. 總計、總額"
+      },
+      {
+        "en": "dollar bill",
+        "zh": "n. 紙鈔"
+      },
+      {
+        "en": "change",
+        "zh": "n. 零錢、找零"
+      }
+    ]
   },
   {
     "id": "2026_09_gen_02",
@@ -126,7 +152,7 @@ const listeningArticlesDB = [
       {
         "en": "Good afternoon.",
         "zh": "午安。",
-        "start": 0.0,
+        "start": 0,
         "end": 1.75
       },
       {
@@ -223,7 +249,33 @@ const listeningArticlesDB = [
     ],
     "voice": "en-US-JennyNeural",
     "voiceLabel": "美式女聲 (US)",
-    "audio": "audio/listening/2026_09_gen_02.mp3"
+    "audio": "audio/listening/2026_09_gen_02.mp3",
+    "vocabulary": [
+      {
+        "en": "reservation",
+        "zh": "n. 預訂、預約"
+      },
+      {
+        "en": "passport",
+        "zh": "n. 護照"
+      },
+      {
+        "en": "confirmation",
+        "zh": "n. 確認函、證實"
+      },
+      {
+        "en": "request",
+        "zh": "v./n. 要求、請求"
+      },
+      {
+        "en": "wake-up call",
+        "zh": "n. 晨喚服務"
+      },
+      {
+        "en": "elevator",
+        "zh": "n. 電梯"
+      }
+    ]
   },
   {
     "id": "2026_09_toeic_01",
@@ -236,7 +288,7 @@ const listeningArticlesDB = [
       {
         "en": "Attention all employees.",
         "zh": "請全體員工注意。",
-        "start": 0.0,
+        "start": 0,
         "end": 2.48
       },
       {
@@ -327,7 +379,37 @@ const listeningArticlesDB = [
     ],
     "voice": "en-US-JennyNeural",
     "voiceLabel": "美式女聲 (US)",
-    "audio": "audio/listening/2026_09_toeic_01.mp3"
+    "audio": "audio/listening/2026_09_toeic_01.mp3",
+    "vocabulary": [
+      {
+        "en": "annual",
+        "zh": "adj. 每年的、年度的"
+      },
+      {
+        "en": "picnic",
+        "zh": "n. 野餐"
+      },
+      {
+        "en": "sign up",
+        "zh": "phr. 報名、登記"
+      },
+      {
+        "en": "advance",
+        "zh": "n./adj. 提前、預先"
+      },
+      {
+        "en": "dietary",
+        "zh": "adj. 飲食的"
+      },
+      {
+        "en": "restriction",
+        "zh": "n. 限制、規定"
+      },
+      {
+        "en": "cater",
+        "zh": "v. 承辦宴席、迎合需求"
+      }
+    ]
   },
   {
     "id": "2026_09_toeic_02",
@@ -340,7 +422,7 @@ const listeningArticlesDB = [
       {
         "en": "Dear Mr. Johnson, I am writing to inquire about the new software products listed on your company website.",
         "zh": "親愛的約翰遜先生：我寫此信是想詢問貴公司網站上列出的新軟體產品。",
-        "start": 0.0,
+        "start": 0,
         "end": 6.59
       },
       {
@@ -420,7 +502,37 @@ const listeningArticlesDB = [
     ],
     "voice": "en-US-JennyNeural",
     "voiceLabel": "美式女聲 (US)",
-    "audio": "audio/listening/2026_09_toeic_02.mp3"
+    "audio": "audio/listening/2026_09_toeic_02.mp3",
+    "vocabulary": [
+      {
+        "en": "inquire",
+        "zh": "v. 詢問、洽詢"
+      },
+      {
+        "en": "software",
+        "zh": "n. 軟體"
+      },
+      {
+        "en": "cloud storage",
+        "zh": "n. 雲端儲存"
+      },
+      {
+        "en": "bulk purchase",
+        "zh": "n. 大宗採購"
+      },
+      {
+        "en": "discount",
+        "zh": "n. 折扣"
+      },
+      {
+        "en": "detailed",
+        "zh": "adj. 詳細的、精細的"
+      },
+      {
+        "en": "schedule",
+        "zh": "v./n. 安排；日程表"
+      }
+    ]
   },
   {
     "id": "2026_09_gen_03",
@@ -433,7 +545,7 @@ const listeningArticlesDB = [
       {
         "en": "Climate change is one of the most pressing issues of our time.",
         "zh": "氣候變遷是我們這個時代最緊迫的議題之一。",
-        "start": 0.0,
+        "start": 0,
         "end": 3.81
       },
       {
@@ -507,7 +619,37 @@ const listeningArticlesDB = [
     ],
     "voice": "en-US-JennyNeural",
     "voiceLabel": "美式女聲 (US)",
-    "audio": "audio/listening/2026_09_gen_03.mp3"
+    "audio": "audio/listening/2026_09_gen_03.mp3",
+    "vocabulary": [
+      {
+        "en": "climate change",
+        "zh": "n. 氣候變遷"
+      },
+      {
+        "en": "pressing",
+        "zh": "adj. 緊迫的、迫切的"
+      },
+      {
+        "en": "global temperature",
+        "zh": "n. 全球氣溫"
+      },
+      {
+        "en": "extreme weather",
+        "zh": "n. 極端天氣"
+      },
+      {
+        "en": "hurricane",
+        "zh": "n. 颶風"
+      },
+      {
+        "en": "drought",
+        "zh": "n. 乾旱、旱災"
+      },
+      {
+        "en": "renewable energy",
+        "zh": "n. 可再生能源"
+      }
+    ]
   },
   {
     "id": "2026_09_gen_04",
@@ -520,7 +662,7 @@ const listeningArticlesDB = [
       {
         "en": "Artificial intelligence is rapidly transforming the way we live and work.",
         "zh": "人工智慧正迅速改變我們的生活與工作方式。",
-        "start": 0.0,
+        "start": 0,
         "end": 4.72
       },
       {
@@ -594,7 +736,37 @@ const listeningArticlesDB = [
     ],
     "voice": "en-US-JennyNeural",
     "voiceLabel": "美式女聲 (US)",
-    "audio": "audio/listening/2026_09_gen_04.mp3"
+    "audio": "audio/listening/2026_09_gen_04.mp3",
+    "vocabulary": [
+      {
+        "en": "artificial intelligence",
+        "zh": "n. 人工智慧 (AI)"
+      },
+      {
+        "en": "transform",
+        "zh": "v. 徹底改變、轉型"
+      },
+      {
+        "en": "machine learning",
+        "zh": "n. 機器學習"
+      },
+      {
+        "en": "algorithm",
+        "zh": "n. 演算法"
+      },
+      {
+        "en": "vast",
+        "zh": "adj. 龐大的、海量的"
+      },
+      {
+        "en": "accelerate",
+        "zh": "v. 加速、促進"
+      },
+      {
+        "en": "ethical guideline",
+        "zh": "n. 倫理準則、道德指引"
+      }
+    ]
   },
   {
     "id": "2026_09_gen_05",
@@ -607,7 +779,7 @@ const listeningArticlesDB = [
       {
         "en": "Have you ever wondered what truly makes people successful?",
         "zh": "你是否曾想過究竟是什麼讓人真正獲得成功？",
-        "start": 0.0,
+        "start": 0,
         "end": 3.75
       },
       {
@@ -687,7 +859,37 @@ const listeningArticlesDB = [
     ],
     "voice": "en-US-JennyNeural",
     "voiceLabel": "美式女聲 (US)",
-    "audio": "audio/listening/2026_09_gen_05.mp3"
+    "audio": "audio/listening/2026_09_gen_05.mp3",
+    "vocabulary": [
+      {
+        "en": "perseverance",
+        "zh": "n. 毅力、堅持不懈"
+      },
+      {
+        "en": "talent",
+        "zh": "n. 天賦、才華"
+      },
+      {
+        "en": "passion",
+        "zh": "n. 熱情、熱忱"
+      },
+      {
+        "en": "obstacle",
+        "zh": "n. 障礙、阻礙"
+      },
+      {
+        "en": "valuable lesson",
+        "zh": "n. 寶貴的教訓"
+      },
+      {
+        "en": "curiosity",
+        "zh": "n. 好奇心"
+      },
+      {
+        "en": "explore",
+        "zh": "v. 探索、發掘"
+      }
+    ]
   },
   {
     "id": "2026_09_gen_06",
@@ -700,7 +902,7 @@ const listeningArticlesDB = [
       {
         "en": "Excuse me, could you tell me where the dairy section is?",
         "zh": "不好意思，請問乳製品區在哪裡？",
-        "start": 0.0,
+        "start": 0,
         "end": 3.83
       },
       {
@@ -786,7 +988,33 @@ const listeningArticlesDB = [
     ],
     "voice": "en-US-JennyNeural",
     "voiceLabel": "美式女聲 (US)",
-    "audio": "audio/listening/2026_09_gen_06.mp3"
+    "audio": "audio/listening/2026_09_gen_06.mp3",
+    "vocabulary": [
+      {
+        "en": "dairy section",
+        "zh": "n. 乳製品區"
+      },
+      {
+        "en": "groceries",
+        "zh": "n. 食品雜貨"
+      },
+      {
+        "en": "aisle",
+        "zh": "n. （貨架間）走道"
+      },
+      {
+        "en": "produce",
+        "zh": "n. 生鮮農產品"
+      },
+      {
+        "en": "strawberries",
+        "zh": "n. 草莓"
+      },
+      {
+        "en": "sold out",
+        "zh": "adj. 售罄的、賣光的"
+      }
+    ]
   },
   {
     "id": "2026_09_gen_07",
@@ -799,7 +1027,7 @@ const listeningArticlesDB = [
       {
         "en": "Attention all passengers.",
         "zh": "各位旅客請注意。",
-        "start": 0.0,
+        "start": 0,
         "end": 2.51
       },
       {
@@ -879,7 +1107,33 @@ const listeningArticlesDB = [
     ],
     "voice": "en-GB-RyanNeural",
     "voiceLabel": "英式男聲 (UK)",
-    "audio": "audio/listening/2026_09_gen_07.mp3"
+    "audio": "audio/listening/2026_09_gen_07.mp3",
+    "vocabulary": [
+      {
+        "en": "boarding",
+        "zh": "n. 登機、登船"
+      },
+      {
+        "en": "gate",
+        "zh": "n. 登機門"
+      },
+      {
+        "en": "passenger",
+        "zh": "n. 乘客、旅客"
+      },
+      {
+        "en": "assistance",
+        "zh": "n. 協助、援助"
+      },
+      {
+        "en": "identification",
+        "zh": "n. 身分證明、證件"
+      },
+      {
+        "en": "remain seated",
+        "zh": "phr. 保持就座"
+      }
+    ]
   },
   {
     "id": "2026_09_toeic_03",
@@ -892,7 +1146,7 @@ const listeningArticlesDB = [
       {
         "en": "To all sales staff: There will be a mandatory training session on the new customer relationship management software next Friday.",
         "zh": "全體業務同仁：下週五將舉辦新客戶關係管理軟體的強制培訓課程。",
-        "start": 0.0,
+        "start": 0,
         "end": 7.71
       },
       {
@@ -972,7 +1226,37 @@ const listeningArticlesDB = [
     ],
     "voice": "en-US-JennyNeural",
     "voiceLabel": "美式女聲 (US)",
-    "audio": "audio/listening/2026_09_toeic_03.mp3"
+    "audio": "audio/listening/2026_09_toeic_03.mp3",
+    "vocabulary": [
+      {
+        "en": "mandatory",
+        "zh": "adj. 強制的、必須的"
+      },
+      {
+        "en": "training session",
+        "zh": "n. 培訓會議、訓練場次"
+      },
+      {
+        "en": "interaction",
+        "zh": "n. 互動、交際"
+      },
+      {
+        "en": "workshop",
+        "zh": "n. 研討會、工作坊"
+      },
+      {
+        "en": "efficiently",
+        "zh": "adv. 高效率地"
+      },
+      {
+        "en": "conflict",
+        "zh": "n. （時間）衝突、抵觸"
+      },
+      {
+        "en": "notify",
+        "zh": "v. 正式通知、告知"
+      }
+    ]
   },
   {
     "id": "2026_09_gen_08",
@@ -985,7 +1269,7 @@ const listeningArticlesDB = [
       {
         "en": "Getting enough quality sleep is crucial for your physical and mental health.",
         "zh": "獲得足夠且優質的睡眠對你的身心健康至關重要。",
-        "start": 0.0,
+        "start": 0,
         "end": 4.51
       },
       {
@@ -1059,7 +1343,33 @@ const listeningArticlesDB = [
     ],
     "voice": "en-US-JennyNeural",
     "voiceLabel": "美式女聲 (US)",
-    "audio": "audio/listening/2026_09_gen_08.mp3"
+    "audio": "audio/listening/2026_09_gen_08.mp3",
+    "vocabulary": [
+      {
+        "en": "crucial",
+        "zh": "adj. 至關重要的、關鍵的"
+      },
+      {
+        "en": "immune system",
+        "zh": "n. 免疫系統"
+      },
+      {
+        "en": "affect",
+        "zh": "v. 影響、產生作用"
+      },
+      {
+        "en": "consistent",
+        "zh": "adj. 規律的、前後一致的"
+      },
+      {
+        "en": "electronic screen",
+        "zh": "n. 電子螢幕"
+      },
+      {
+        "en": "dim light",
+        "zh": "n. 微弱柔和燈光"
+      }
+    ]
   },
   {
     "id": "2026_09_gen_09",
@@ -1072,7 +1382,7 @@ const listeningArticlesDB = [
       {
         "en": "Global financial markets showed signs of robust recovery this quarter, driven by strong consumer spending and stabilizing inflation rates.",
         "zh": "本季全球金融市場顯現強勁復甦跡象，主要受到強勁的消費支出及回穩的通膨率所帶動。",
-        "start": 0.0,
+        "start": 0,
         "end": 8.55
       },
       {
@@ -1140,7 +1450,37 @@ const listeningArticlesDB = [
     ],
     "voice": "en-US-JennyNeural",
     "voiceLabel": "美式女聲 (US)",
-    "audio": "audio/listening/2026_09_gen_09.mp3"
+    "audio": "audio/listening/2026_09_gen_09.mp3",
+    "vocabulary": [
+      {
+        "en": "robust",
+        "zh": "adj. 強勁的、穩固的"
+      },
+      {
+        "en": "recovery",
+        "zh": "n. 復甦、回升"
+      },
+      {
+        "en": "consumer spending",
+        "zh": "n. 消費支出"
+      },
+      {
+        "en": "earnings",
+        "zh": "n. 收益、企業獲利"
+      },
+      {
+        "en": "inflation",
+        "zh": "n. 通貨膨脹"
+      },
+      {
+        "en": "interest rate",
+        "zh": "n. 利率"
+      },
+      {
+        "en": "stabilize",
+        "zh": "v. 使穩定、平穩"
+      }
+    ]
   },
   {
     "id": "2026_10_toeic_01",
@@ -1153,7 +1493,7 @@ const listeningArticlesDB = [
       {
         "en": "Dear Customer Service, I am writing to express my dissatisfaction with my recent order, number 8943.",
         "zh": "親愛的客服團隊：我寫此信是想對最近編號 8943 的訂單表達我的不滿。",
-        "start": 0.0,
+        "start": 0,
         "end": 7.69
       },
       {
@@ -1227,7 +1567,37 @@ const listeningArticlesDB = [
     ],
     "voice": "en-US-JennyNeural",
     "voiceLabel": "美式女聲 (US)",
-    "audio": "audio/listening/2026_10_toeic_01.mp3"
+    "audio": "audio/listening/2026_10_toeic_01.mp3",
+    "vocabulary": [
+      {
+        "en": "dissatisfaction",
+        "zh": "n. 不滿意、抱怨"
+      },
+      {
+        "en": "wireless headphones",
+        "zh": "n. 無線耳機"
+      },
+      {
+        "en": "defective",
+        "zh": "adj. 有瑕疵的、故障的"
+      },
+      {
+        "en": "refund",
+        "zh": "n./v. 退款"
+      },
+      {
+        "en": "replacement",
+        "zh": "n. 更換品、換貨"
+      },
+      {
+        "en": "receipt",
+        "zh": "n. 收據、購買憑證"
+      },
+      {
+        "en": "prompt",
+        "zh": "adj. 迅速的、即時的"
+      }
+    ]
   },
   {
     "id": "2026_10_toeic_02",
@@ -1240,7 +1610,7 @@ const listeningArticlesDB = [
       {
         "en": "We are thrilled to invite you to the exclusive launch event of our newest smartphone, the Titan X.",
         "zh": "我們非常榮幸且興奮地邀請您參加我們最新款智慧型手機 Titan X 的獨家發表會。",
-        "start": 0.0,
+        "start": 0,
         "end": 6.1
       },
       {
@@ -1314,7 +1684,37 @@ const listeningArticlesDB = [
     ],
     "voice": "en-US-JennyNeural",
     "voiceLabel": "美式女聲 (US)",
-    "audio": "audio/listening/2026_10_toeic_02.mp3"
+    "audio": "audio/listening/2026_10_toeic_02.mp3",
+    "vocabulary": [
+      {
+        "en": "thrilled",
+        "zh": "adj. 非常高興的、興奮的"
+      },
+      {
+        "en": "exclusive",
+        "zh": "adj. 專屬的、獨家的"
+      },
+      {
+        "en": "launch event",
+        "zh": "n. 產品發表會"
+      },
+      {
+        "en": "demonstration",
+        "zh": "n. 實機展示、功能示範"
+      },
+      {
+        "en": "grand ballroom",
+        "zh": "n. 大宴會廳"
+      },
+      {
+        "en": "innovative",
+        "zh": "adj. 創新的、新穎的"
+      },
+      {
+        "en": "secure a spot",
+        "zh": "phr. 保留席次、確保名額"
+      }
+    ]
   },
   {
     "id": "2026_10_toeic_03",
@@ -1327,7 +1727,7 @@ const listeningArticlesDB = [
       {
         "en": "Attention all staff.",
         "zh": "全體員工請注意。",
-        "start": 0.0,
+        "start": 0,
         "end": 2.42
       },
       {
@@ -1401,7 +1801,33 @@ const listeningArticlesDB = [
     ],
     "voice": "en-US-GuyNeural",
     "voiceLabel": "美式男聲 (US)",
-    "audio": "audio/listening/2026_10_toeic_03.mp3"
+    "audio": "audio/listening/2026_10_toeic_03.mp3",
+    "vocabulary": [
+      {
+        "en": "out of service",
+        "zh": "phr. 暫停服務、維修中"
+      },
+      {
+        "en": "maintenance",
+        "zh": "n. 維修、保養"
+      },
+      {
+        "en": "technician",
+        "zh": "n. 維修技術人員"
+      },
+      {
+        "en": "stairwell",
+        "zh": "n. 樓梯間"
+      },
+      {
+        "en": "inconvenience",
+        "zh": "n. 不便、困擾"
+      },
+      {
+        "en": "operational",
+        "zh": "adj. 正常運作的"
+      }
+    ]
   },
   {
     "id": "2026_10_toeic_04",
@@ -1414,7 +1840,7 @@ const listeningArticlesDB = [
       {
         "en": "Good morning passengers.",
         "zh": "各位旅客早安。",
-        "start": 0.0,
+        "start": 0,
         "end": 2.31
       },
       {
@@ -1494,7 +1920,37 @@ const listeningArticlesDB = [
     ],
     "voice": "en-GB-RyanNeural",
     "voiceLabel": "英式男聲 (UK)",
-    "audio": "audio/listening/2026_10_toeic_04.mp3"
+    "audio": "audio/listening/2026_10_toeic_04.mp3",
+    "vocabulary": [
+      {
+        "en": "announcement",
+        "zh": "n. 公告、廣播通知"
+      },
+      {
+        "en": "severe weather",
+        "zh": "n. 惡劣天候"
+      },
+      {
+        "en": "departure",
+        "zh": "n. 起飛、啟程"
+      },
+      {
+        "en": "destination",
+        "zh": "n. 目的地"
+      },
+      {
+        "en": "delay",
+        "zh": "n./v. 延誤、耽擱"
+      },
+      {
+        "en": "meal voucher",
+        "zh": "n. 餐券、餐點兌換券"
+      },
+      {
+        "en": "gate agent",
+        "zh": "n. 登機門地勤人員"
+      }
+    ]
   },
   {
     "id": "2026_10_toeic_05",
@@ -1507,7 +1963,7 @@ const listeningArticlesDB = [
       {
         "en": "I would like to start this meeting by reviewing our sales performance for the third quarter.",
         "zh": "我想先透過回顧第三季度的銷售表現來開始這場會議。",
-        "start": 0.0,
+        "start": 0,
         "end": 5.06
       },
       {
@@ -1575,7 +2031,37 @@ const listeningArticlesDB = [
     ],
     "voice": "en-US-GuyNeural",
     "voiceLabel": "美式男聲 (US)",
-    "audio": "audio/listening/2026_10_toeic_05.mp3"
+    "audio": "audio/listening/2026_10_toeic_05.mp3",
+    "vocabulary": [
+      {
+        "en": "review",
+        "zh": "v./n. 檢討、審查"
+      },
+      {
+        "en": "performance",
+        "zh": "n. 業績、表現"
+      },
+      {
+        "en": "quarter",
+        "zh": "n. 季度、季"
+      },
+      {
+        "en": "revenue",
+        "zh": "n. 營收、營業額"
+      },
+      {
+        "en": "marketing campaign",
+        "zh": "n. 行銷宣傳活動"
+      },
+      {
+        "en": "operational efficiency",
+        "zh": "n. 營運效率"
+      },
+      {
+        "en": "upcoming",
+        "zh": "adj. 即將來臨的"
+      }
+    ]
   },
   {
     "id": "2026_10_toeic_06",
@@ -1588,7 +2074,7 @@ const listeningArticlesDB = [
       {
         "en": "Attention all personnel.",
         "zh": "全體同仁請注意。",
-        "start": 0.0,
+        "start": 0,
         "end": 2.38
       },
       {
@@ -1662,7 +2148,37 @@ const listeningArticlesDB = [
     ],
     "voice": "en-US-JennyNeural",
     "voiceLabel": "美式女聲 (US)",
-    "audio": "audio/listening/2026_10_toeic_06.mp3"
+    "audio": "audio/listening/2026_10_toeic_06.mp3",
+    "vocabulary": [
+      {
+        "en": "hybrid work",
+        "zh": "n. 混合辦公型態"
+      },
+      {
+        "en": "policy",
+        "zh": "n. 政策、規範"
+      },
+      {
+        "en": "remotely",
+        "zh": "adv. 遠端地、在家工作"
+      },
+      {
+        "en": "supervisor",
+        "zh": "n. 主管、直屬上級"
+      },
+      {
+        "en": "approval",
+        "zh": "n. 核准、批准"
+      },
+      {
+        "en": "flexibility",
+        "zh": "n. 彈性、靈活性"
+      },
+      {
+        "en": "productivity",
+        "zh": "n. 生產力、效率"
+      }
+    ]
   },
   {
     "id": "2026_10_toeic_07",
@@ -1675,7 +2191,7 @@ const listeningArticlesDB = [
       {
         "en": "To all traveling representatives: Our accounting division has implemented a streamlined travel expense reimbursement process.",
         "zh": "致全體出差同仁：我們的會計部門已實施了一套簡化的高效差旅費報銷流程。",
-        "start": 0.0,
+        "start": 0,
         "end": 7.61
       },
       {
@@ -1743,7 +2259,37 @@ const listeningArticlesDB = [
     ],
     "voice": "en-US-JennyNeural",
     "voiceLabel": "美式女聲 (US)",
-    "audio": "audio/listening/2026_10_toeic_07.mp3"
+    "audio": "audio/listening/2026_10_toeic_07.mp3",
+    "vocabulary": [
+      {
+        "en": "reimbursement",
+        "zh": "n. 費用報銷、核銷"
+      },
+      {
+        "en": "accounting division",
+        "zh": "n. 會計部門"
+      },
+      {
+        "en": "streamline",
+        "zh": "v. 精簡流程、使效率化"
+      },
+      {
+        "en": "expenditure",
+        "zh": "n. 開支、支出費用"
+      },
+      {
+        "en": "submit",
+        "zh": "v. 呈交、提交"
+      },
+      {
+        "en": "digital receipt",
+        "zh": "n. 電子收據"
+      },
+      {
+        "en": "compliance",
+        "zh": "n. 合規、遵守標準"
+      }
+    ]
   },
   {
     "id": "2026_10_toeic_08",
@@ -1756,7 +2302,7 @@ const listeningArticlesDB = [
       {
         "en": "Dear Ms. Rivera, Thank you for applying for the Senior Graphic Designer position at Apex Media.",
         "zh": "親愛的里維拉女士：感謝您應徵頂點媒體（Apex Media）的資深平面設計師職缺。",
-        "start": 0.0,
+        "start": 0,
         "end": 5.97
       },
       {
@@ -1824,7 +2370,37 @@ const listeningArticlesDB = [
     ],
     "voice": "en-US-JennyNeural",
     "voiceLabel": "美式女聲 (US)",
-    "audio": "audio/listening/2026_10_toeic_08.mp3"
+    "audio": "audio/listening/2026_10_toeic_08.mp3",
+    "vocabulary": [
+      {
+        "en": "position",
+        "zh": "n. 職位、職缺"
+      },
+      {
+        "en": "portfolio",
+        "zh": "n. 作品集、個人代表作"
+      },
+      {
+        "en": "interview",
+        "zh": "n. 面試、訪談"
+      },
+      {
+        "en": "convenient",
+        "zh": "adj. 方便的、便利的"
+      },
+      {
+        "en": "availability",
+        "zh": "n. 空檔時間、可面談時間"
+      },
+      {
+        "en": "credentials",
+        "zh": "n. 資歷、資格證明"
+      },
+      {
+        "en": "confirm",
+        "zh": "v. 確認、證實"
+      }
+    ]
   },
   {
     "id": "2026_10_toeic_09",
@@ -1837,7 +2413,7 @@ const listeningArticlesDB = [
       {
         "en": "Dear Procurement Team, We regret to inform you that our freight shipment containing the custom microchips will encounter an unexpected five-day delay due to port congestion.",
         "zh": "致採購團隊：很遺憾地通知各位，由於港口壅塞，裝載客製晶片的貨運班次將面臨突如其來的五天延遲。",
-        "start": 0.0,
+        "start": 0,
         "end": 9.16
       },
       {
@@ -1905,7 +2481,37 @@ const listeningArticlesDB = [
     ],
     "voice": "en-US-GuyNeural",
     "voiceLabel": "美式男聲 (US)",
-    "audio": "audio/listening/2026_10_toeic_09.mp3"
+    "audio": "audio/listening/2026_10_toeic_09.mp3",
+    "vocabulary": [
+      {
+        "en": "procurement",
+        "zh": "n. 採購、採購部"
+      },
+      {
+        "en": "freight shipment",
+        "zh": "n. 貨運、貨物運輸"
+      },
+      {
+        "en": "customs clearance",
+        "zh": "n. 海關清關、結關"
+      },
+      {
+        "en": "expedite",
+        "zh": "v. 加快、迅速完成"
+      },
+      {
+        "en": "compensate",
+        "zh": "v. 賠償、補償"
+      },
+      {
+        "en": "shipping surcharge",
+        "zh": "n. 運費附加費"
+      },
+      {
+        "en": "compromise",
+        "zh": "n./v. 折衷、妥協"
+      }
+    ]
   },
   {
     "id": "2026_10_toeic_10",
@@ -1918,7 +2524,7 @@ const listeningArticlesDB = [
       {
         "en": "Regarding our corporate commercial lease on the 12th floor: Our current contract expires at the end of December.",
         "zh": "關於本公司在 12 樓的商用租約：我們現有的合約將於 12 月底到期。",
-        "start": 0.0,
+        "start": 0,
         "end": 6.64
       },
       {
@@ -1980,7 +2586,37 @@ const listeningArticlesDB = [
     ],
     "voice": "en-US-GuyNeural",
     "voiceLabel": "美式男聲 (US)",
-    "audio": "audio/listening/2026_10_toeic_10.mp3"
+    "audio": "audio/listening/2026_10_toeic_10.mp3",
+    "vocabulary": [
+      {
+        "en": "commercial lease",
+        "zh": "n. 商業租約"
+      },
+      {
+        "en": "tenant",
+        "zh": "n. 承租人、房客"
+      },
+      {
+        "en": "expire",
+        "zh": "v. 到期、屆滿"
+      },
+      {
+        "en": "renewal",
+        "zh": "n. 續約、更新"
+      },
+      {
+        "en": "monthly rent",
+        "zh": "n. 每月租金"
+      },
+      {
+        "en": "facility maintenance",
+        "zh": "n. 設施維護"
+      },
+      {
+        "en": "clause",
+        "zh": "n. 合約條款"
+      }
+    ]
   },
   {
     "id": "2026_10_gen_01",
@@ -1993,7 +2629,7 @@ const listeningArticlesDB = [
       {
         "en": "Good morning.",
         "zh": "早安。",
-        "start": 0.0,
+        "start": 0,
         "end": 1.65
       },
       {
@@ -2073,7 +2709,33 @@ const listeningArticlesDB = [
     ],
     "voice": "en-US-GuyNeural",
     "voiceLabel": "美式男聲 (US)",
-    "audio": "audio/listening/2026_10_gen_01.mp3"
+    "audio": "audio/listening/2026_10_gen_01.mp3",
+    "vocabulary": [
+      {
+        "en": "round-trip ticket",
+        "zh": "n. 來回票"
+      },
+      {
+        "en": "express train",
+        "zh": "n. 特快自強號、直達列車"
+      },
+      {
+        "en": "platform",
+        "zh": "n. 月台"
+      },
+      {
+        "en": "departure time",
+        "zh": "n. 發車時間"
+      },
+      {
+        "en": "fare",
+        "zh": "n. 車資、票價"
+      },
+      {
+        "en": "schedule",
+        "zh": "n. 時刻表、班次表"
+      }
+    ]
   },
   {
     "id": "2026_10_gen_02",
@@ -2086,7 +2748,7 @@ const listeningArticlesDB = [
       {
         "en": "Excuse me, I am looking for a book on modern architectural history.",
         "zh": "不好意思，我正在找一本關於現代建築歷史的書。",
-        "start": 0.0,
+        "start": 0,
         "end": 4.67
       },
       {
@@ -2160,7 +2822,33 @@ const listeningArticlesDB = [
     ],
     "voice": "en-US-JennyNeural",
     "voiceLabel": "美式女聲 (US)",
-    "audio": "audio/listening/2026_10_gen_02.mp3"
+    "audio": "audio/listening/2026_10_gen_02.mp3",
+    "vocabulary": [
+      {
+        "en": "architectural history",
+        "zh": "n. 建築史"
+      },
+      {
+        "en": "library catalog",
+        "zh": "n. 圖書館藏目錄"
+      },
+      {
+        "en": "call number",
+        "zh": "n. （書籍）索書號"
+      },
+      {
+        "en": "borrow",
+        "zh": "v. 借閱、借入"
+      },
+      {
+        "en": "overdue fine",
+        "zh": "n. 逾期罰款"
+      },
+      {
+        "en": "renew",
+        "zh": "v. 續借（書籍）"
+      }
+    ]
   },
   {
     "id": "2026_10_gen_03",
@@ -2173,7 +2861,7 @@ const listeningArticlesDB = [
       {
         "en": "Hello, I made an online reservation for a mid-size SUV under the confirmation number T-904.",
         "zh": "你好，我有在網路上預約一輛中型休旅車，確認號碼是 T-904。",
-        "start": 0.0,
+        "start": 0,
         "end": 7.05
       },
       {
@@ -2247,7 +2935,33 @@ const listeningArticlesDB = [
     ],
     "voice": "en-GB-RyanNeural",
     "voiceLabel": "英式男聲 (UK)",
-    "audio": "audio/listening/2026_10_gen_03.mp3"
+    "audio": "audio/listening/2026_10_gen_03.mp3",
+    "vocabulary": [
+      {
+        "en": "car rental",
+        "zh": "n. 汽車租賃"
+      },
+      {
+        "en": "driver's license",
+        "zh": "n. 駕駛執照"
+      },
+      {
+        "en": "insurance coverage",
+        "zh": "n. 保險理賠範圍"
+      },
+      {
+        "en": "collision damage",
+        "zh": "n. 碰撞車損"
+      },
+      {
+        "en": "unlimited mileage",
+        "zh": "n. 不限里程"
+      },
+      {
+        "en": "fuel policy",
+        "zh": "n. 油料規定（滿油還車）"
+      }
+    ]
   },
   {
     "id": "2026_10_gen_04",
@@ -2260,7 +2974,7 @@ const listeningArticlesDB = [
       {
         "en": "Good morning, doctor.",
         "zh": "早安，醫生。",
-        "start": 0.0,
+        "start": 0,
         "end": 2.3
       },
       {
@@ -2334,7 +3048,37 @@ const listeningArticlesDB = [
     ],
     "voice": "en-US-GuyNeural",
     "voiceLabel": "美式男聲 (US)",
-    "audio": "audio/listening/2026_10_gen_04.mp3"
+    "audio": "audio/listening/2026_10_gen_04.mp3",
+    "vocabulary": [
+      {
+        "en": "symptom",
+        "zh": "n. 症狀、病徵"
+      },
+      {
+        "en": "sore throat",
+        "zh": "n. 喉嚨痛"
+      },
+      {
+        "en": "persistent cough",
+        "zh": "n. 持續性咳嗽"
+      },
+      {
+        "en": "fever",
+        "zh": "n. 發燒"
+      },
+      {
+        "en": "prescription",
+        "zh": "n. 處方箋、處方藥"
+      },
+      {
+        "en": "dosage",
+        "zh": "n. 藥物劑量、服用次數"
+      },
+      {
+        "en": "pharmacy",
+        "zh": "n. 藥局、藥房"
+      }
+    ]
   },
   {
     "id": "2026_10_gen_05",
@@ -2347,7 +3091,7 @@ const listeningArticlesDB = [
       {
         "en": "Before we head into the national park this weekend, let us double-check our camping checklist.",
         "zh": "在我們這週末啟程前往國家公園之前，讓我們先仔細檢查露營清單。",
-        "start": 0.0,
+        "start": 0,
         "end": 5.67
       },
       {
@@ -2421,7 +3165,37 @@ const listeningArticlesDB = [
     ],
     "voice": "en-US-JennyNeural",
     "voiceLabel": "美式女聲 (US)",
-    "audio": "audio/listening/2026_10_gen_05.mp3"
+    "audio": "audio/listening/2026_10_gen_05.mp3",
+    "vocabulary": [
+      {
+        "en": "camping checklist",
+        "zh": "n. 露營裝備清單"
+      },
+      {
+        "en": "waterproof tent",
+        "zh": "n. 防水帳篷"
+      },
+      {
+        "en": "sleeping bag",
+        "zh": "n. 睡袋"
+      },
+      {
+        "en": "portable stove",
+        "zh": "n. 便攜式瓦斯爐"
+      },
+      {
+        "en": "first aid kit",
+        "zh": "n. 急救箱"
+      },
+      {
+        "en": "campsite",
+        "zh": "n. 露營營地"
+      },
+      {
+        "en": "leave no trace",
+        "zh": "phr. 無痕山林原則"
+      }
+    ]
   },
   {
     "id": "2026_10_gen_06",
@@ -2434,7 +3208,7 @@ const listeningArticlesDB = [
       {
         "en": "Welcome to Metro Fitness!",
         "zh": "歡迎來到都會健身俱樂部！",
-        "start": 0.0,
+        "start": 0,
         "end": 2.41
       },
       {
@@ -2502,7 +3276,37 @@ const listeningArticlesDB = [
     ],
     "voice": "en-US-JennyNeural",
     "voiceLabel": "美式女聲 (US)",
-    "audio": "audio/listening/2026_10_gen_06.mp3"
+    "audio": "audio/listening/2026_10_gen_06.mp3",
+    "vocabulary": [
+      {
+        "en": "fitness membership",
+        "zh": "n. 健身房會籍"
+      },
+      {
+        "en": "personal trainer",
+        "zh": "n. 私人健身教練"
+      },
+      {
+        "en": "warm-up",
+        "zh": "n. 暖身運動"
+      },
+      {
+        "en": "injury prevention",
+        "zh": "n. 運動傷害預防"
+      },
+      {
+        "en": "cardio",
+        "zh": "n. 有氧運動"
+      },
+      {
+        "en": "strength training",
+        "zh": "n. 重量訓練、肌力訓練"
+      },
+      {
+        "en": "routine",
+        "zh": "n. 例行訓練計畫"
+      }
+    ]
   },
   {
     "id": "2026_10_gen_07",
@@ -2515,7 +3319,7 @@ const listeningArticlesDB = [
       {
         "en": "Good evening.",
         "zh": "晚安。",
-        "start": 0.0,
+        "start": 0,
         "end": 1.57
       },
       {
@@ -2595,7 +3399,33 @@ const listeningArticlesDB = [
     ],
     "voice": "en-US-JennyNeural",
     "voiceLabel": "美式女聲 (US)",
-    "audio": "audio/listening/2026_10_gen_07.mp3"
+    "audio": "audio/listening/2026_10_gen_07.mp3",
+    "vocabulary": [
+      {
+        "en": "anniversary dinner",
+        "zh": "n. 週年紀念晚餐"
+      },
+      {
+        "en": "peanut allergy",
+        "zh": "n. 花生過敏"
+      },
+      {
+        "en": "cross-contamination",
+        "zh": "n. 交叉污染"
+      },
+      {
+        "en": "booth seating",
+        "zh": "n. 靠窗卡座、隔間座位"
+      },
+      {
+        "en": "appetizer",
+        "zh": "n. 前菜、開胃菜"
+      },
+      {
+        "en": "notify chef",
+        "zh": "phr. 提醒主廚注意"
+      }
+    ]
   },
   {
     "id": "2026_10_gen_08",
@@ -2608,19 +3438,19 @@ const listeningArticlesDB = [
       {
         "en": "Hi there.",
         "zh": "你好。",
-        "start": 0.0,
+        "start": 0,
         "end": 1.55
       },
       {
         "en": "My two-year mobile contract recently ended, and I am interested in exploring updated unlimited 5G data plans.",
         "zh": "我的兩年門號合約最近剛到期，我想了解一下最新的 5G 上網吃到飽方案。",
         "start": 1.55,
-        "end": 9.0
+        "end": 9
       },
       {
         "en": "Because I frequently travel abroad on vacations, I am specifically looking for a package that includes complimentary international data roaming in Asia.",
         "zh": "因為我休假時常出國旅行，我特別想找包含亞洲區免費國際漫遊上網的套裝資費。",
-        "start": 9.0,
+        "start": 9,
         "end": 17.88
       },
       {
@@ -2676,7 +3506,33 @@ const listeningArticlesDB = [
     ],
     "voice": "en-US-JennyNeural",
     "voiceLabel": "美式女聲 (US)",
-    "audio": "audio/listening/2026_10_gen_08.mp3"
+    "audio": "audio/listening/2026_10_gen_08.mp3",
+    "vocabulary": [
+      {
+        "en": "mobile contract",
+        "zh": "n. 手機合約、門號綁約"
+      },
+      {
+        "en": "unlimited data",
+        "zh": "n. 網路吃到飽、無限流量"
+      },
+      {
+        "en": "international roaming",
+        "zh": "n. 國際漫遊"
+      },
+      {
+        "en": "monthly fee",
+        "zh": "n. 每月月租費"
+      },
+      {
+        "en": "upgrade plan",
+        "zh": "phr. 升級資費方案"
+      },
+      {
+        "en": "activation fee",
+        "zh": "n. 門號開通費"
+      }
+    ]
   },
   {
     "id": "2026_10_gen_09",
@@ -2689,7 +3545,7 @@ const listeningArticlesDB = [
       {
         "en": "Hi, could I please get an iced oat latte and an almond croissant?",
         "zh": "嗨，請給我一杯冰燕麥拿鐵和一個杏仁可頌好嗎？",
-        "start": 0.0,
+        "start": 0,
         "end": 4.51
       },
       {
@@ -2763,7 +3619,33 @@ const listeningArticlesDB = [
     ],
     "voice": "en-US-JennyNeural",
     "voiceLabel": "美式女聲 (US)",
-    "audio": "audio/listening/2026_10_gen_09.mp3"
+    "audio": "audio/listening/2026_10_gen_09.mp3",
+    "vocabulary": [
+      {
+        "en": "oat latte",
+        "zh": "n. 燕麥奶拿鐵"
+      },
+      {
+        "en": "croissant",
+        "zh": "n. 可頌麵包"
+      },
+      {
+        "en": "wi-fi password",
+        "zh": "n. 無線網路密碼"
+      },
+      {
+        "en": "power outlet",
+        "zh": "n. 電源插座"
+      },
+      {
+        "en": "remote work",
+        "zh": "n. 遠端工作"
+      },
+      {
+        "en": "quiet ambiance",
+        "zh": "n. 寧靜舒適的氛圍"
+      }
+    ]
   },
   {
     "id": "2026_10_gen_10",
@@ -2776,7 +3658,7 @@ const listeningArticlesDB = [
       {
         "en": "Attention residents!",
         "zh": "各位社區居民請注意！",
-        "start": 0.0,
+        "start": 0,
         "end": 2.16
       },
       {
@@ -2850,7 +3732,37 @@ const listeningArticlesDB = [
     ],
     "voice": "en-US-JennyNeural",
     "voiceLabel": "美式女聲 (US)",
-    "audio": "audio/listening/2026_10_gen_10.mp3"
+    "audio": "audio/listening/2026_10_gen_10.mp3",
+    "vocabulary": [
+      {
+        "en": "neighborhood",
+        "zh": "n. 社區、鄰里"
+      },
+      {
+        "en": "flea market",
+        "zh": "n. 跳蚤市場、二手市集"
+      },
+      {
+        "en": "charity donation",
+        "zh": "n. 慈善捐款"
+      },
+      {
+        "en": "booth registration",
+        "zh": "n. 攤位報名登記"
+      },
+      {
+        "en": "volunteer",
+        "zh": "n. 志工、義工"
+      },
+      {
+        "en": "proceeds",
+        "zh": "n. 活動收益、款項"
+      },
+      {
+        "en": "animal shelter",
+        "zh": "n. 動物收容所"
+      }
+    ]
   },
   {
     "id": "2026_10_toeic_11",
@@ -2866,7 +3778,7 @@ const listeningArticlesDB = [
       {
         "en": "Good morning, everyone.",
         "zh": "大家早安。",
-        "start": 0.0,
+        "start": 0,
         "end": 2.39
       },
       {
@@ -2948,6 +3860,36 @@ const listeningArticlesDB = [
         ],
         "ans": 1
       }
+    ],
+    "vocabulary": [
+      {
+        "en": "merger and acquisition",
+        "zh": "n. 企業併購 (M&A)"
+      },
+      {
+        "en": "regulatory approval",
+        "zh": "n. 主管機關審批、法規核准"
+      },
+      {
+        "en": "shareholder",
+        "zh": "n. 股東"
+      },
+      {
+        "en": "synergy",
+        "zh": "n. 綜效、協同效益"
+      },
+      {
+        "en": "due diligence",
+        "zh": "n. 盡職調查"
+      },
+      {
+        "en": "integration process",
+        "zh": "n. 整合流程"
+      },
+      {
+        "en": "market expansion",
+        "zh": "n. 市場擴張"
+      }
     ]
   },
   {
@@ -2964,7 +3906,7 @@ const listeningArticlesDB = [
       {
         "en": "Thank you for dialing into our third-quarter financial earnings briefing.",
         "zh": "感謝各位撥通電話參加我們的第三季度財務財報電話會議。",
-        "start": 0.0,
+        "start": 0,
         "end": 4.34
       },
       {
@@ -3040,6 +3982,36 @@ const listeningArticlesDB = [
         ],
         "ans": 2
       }
+    ],
+    "vocabulary": [
+      {
+        "en": "earnings briefing",
+        "zh": "n. 財務法人說明會、財報會"
+      },
+      {
+        "en": "macroeconomic",
+        "zh": "adj. 總體經濟的"
+      },
+      {
+        "en": "headwind",
+        "zh": "n. （經濟）逆風、阻力"
+      },
+      {
+        "en": "profit margin",
+        "zh": "n. 利潤率、毛利率"
+      },
+      {
+        "en": "dividend distribution",
+        "zh": "n. 股利分配"
+      },
+      {
+        "en": "fiscal year",
+        "zh": "n. 會計年度、財政年度"
+      },
+      {
+        "en": "guidance projection",
+        "zh": "n. 財測預估、業績展望"
+      }
     ]
   },
   {
@@ -3056,7 +4028,7 @@ const listeningArticlesDB = [
       {
         "en": "Good afternoon, directors.",
         "zh": "各位董事午安。",
-        "start": 0.0,
+        "start": 0,
         "end": 2.84
       },
       {
@@ -3138,6 +4110,36 @@ const listeningArticlesDB = [
         ],
         "ans": 1
       }
+    ],
+    "vocabulary": [
+      {
+        "en": "supply chain disruption",
+        "zh": "n. 供應鏈中斷"
+      },
+      {
+        "en": "bottleneck",
+        "zh": "n. （運輸）瓶頸、阻礙"
+      },
+      {
+        "en": "freight cost",
+        "zh": "n. 貨運成本、航運費用"
+      },
+      {
+        "en": "inventory reserve",
+        "zh": "n. 庫存存貨儲備"
+      },
+      {
+        "en": "mitigate risk",
+        "zh": "phr. 減輕、降低風險"
+      },
+      {
+        "en": "supplier diversification",
+        "zh": "n. 供應商多元化"
+      },
+      {
+        "en": "lead time",
+        "zh": "n. 前置交期、備貨時間"
+      }
     ]
   },
   {
@@ -3154,7 +4156,7 @@ const listeningArticlesDB = [
       {
         "en": "Attention, team leaders.",
         "zh": "各位團隊主管請注意。",
-        "start": 0.0,
+        "start": 0,
         "end": 2.58
       },
       {
@@ -3236,6 +4238,36 @@ const listeningArticlesDB = [
         ],
         "ans": 2
       }
+    ],
+    "vocabulary": [
+      {
+        "en": "cybersecurity audit",
+        "zh": "n. 資訊安全稽核"
+      },
+      {
+        "en": "vulnerability",
+        "zh": "n. 系統漏洞、安全性弱點"
+      },
+      {
+        "en": "phishing simulation",
+        "zh": "n. 釣魚郵件演練"
+      },
+      {
+        "en": "multi-factor authentication",
+        "zh": "n. 多身分驗證 (MFA)"
+      },
+      {
+        "en": "firewall protocol",
+        "zh": "n. 防火牆安全協議"
+      },
+      {
+        "en": "data breach",
+        "zh": "n. 資料外洩事故"
+      },
+      {
+        "en": "strict access control",
+        "zh": "n. 嚴格權限控管"
+      }
     ]
   },
   {
@@ -3252,7 +4284,7 @@ const listeningArticlesDB = [
       {
         "en": "Distinguished shareholders, sustainability has evolved from an optional compliance benchmark into a fundamental pillar of our corporate identity.",
         "zh": "尊敬的各位股東，永續發展已從一項可有可無的合規標準，演變成我們企業身分的核心支柱。",
-        "start": 0.0,
+        "start": 0,
         "end": 8.31
       },
       {
@@ -3328,6 +4360,36 @@ const listeningArticlesDB = [
         ],
         "ans": 2
       }
+    ],
+    "vocabulary": [
+      {
+        "en": "sustainability benchmark",
+        "zh": "n. 永續發展指標基準"
+      },
+      {
+        "en": "carbon footprint",
+        "zh": "n. 碳足跡"
+      },
+      {
+        "en": "green financing",
+        "zh": "n. 綠色金融融資"
+      },
+      {
+        "en": "renewable infrastructure",
+        "zh": "n. 再生能源基礎設施"
+      },
+      {
+        "en": "regulatory compliance",
+        "zh": "n. 法規遵循、合規性"
+      },
+      {
+        "en": "stakeholder value",
+        "zh": "n. 利害關係人價值"
+      },
+      {
+        "en": "decarbonization",
+        "zh": "n. 減碳、脫碳歷程"
+      }
     ]
   },
   {
@@ -3344,7 +4406,7 @@ const listeningArticlesDB = [
       {
         "en": "Good morning, plant supervisors.",
         "zh": "工廠主管們早安。",
-        "start": 0.0,
+        "start": 0,
         "end": 2.95
       },
       {
@@ -3426,6 +4488,36 @@ const listeningArticlesDB = [
         ],
         "ans": 0
       }
+    ],
+    "vocabulary": [
+      {
+        "en": "smart automation",
+        "zh": "n. 智慧自動化"
+      },
+      {
+        "en": "robotic arm",
+        "zh": "n. 機械手臂"
+      },
+      {
+        "en": "throughput rate",
+        "zh": "n. 生產吞吐量、產能效率"
+      },
+      {
+        "en": "downtime reduction",
+        "zh": "n. 停機工時減少"
+      },
+      {
+        "en": "capital expenditure",
+        "zh": "n. 資本支出 (CAPEX)"
+      },
+      {
+        "en": "quality inspection",
+        "zh": "n. 品管檢驗、良率檢測"
+      },
+      {
+        "en": "return on investment",
+        "zh": "n. 投資回報率 (ROI)"
+      }
     ]
   },
   {
@@ -3442,7 +4534,7 @@ const listeningArticlesDB = [
       {
         "en": "Welcome to today's strategic alignment workshop.",
         "zh": "歡迎參加今天的策略對齊研討會。",
-        "start": 0.0,
+        "start": 0,
         "end": 3.44
       },
       {
@@ -3524,6 +4616,36 @@ const listeningArticlesDB = [
         ],
         "ans": 2
       }
+    ],
+    "vocabulary": [
+      {
+        "en": "market penetration",
+        "zh": "n. 市場滲透率"
+      },
+      {
+        "en": "demographic profile",
+        "zh": "n. 目標客群受眾輪廓"
+      },
+      {
+        "en": "conversion rate",
+        "zh": "n. 顧客轉換率"
+      },
+      {
+        "en": "brand loyalty",
+        "zh": "n. 品牌忠誠度"
+      },
+      {
+        "en": "localized campaign",
+        "zh": "n. 在地化行銷活動"
+      },
+      {
+        "en": "influencer endorsement",
+        "zh": "n. 網紅意見領袖代言"
+      },
+      {
+        "en": "ad engagement",
+        "zh": "n. 廣告互動成效"
+      }
     ]
   },
   {
@@ -3540,7 +4662,7 @@ const listeningArticlesDB = [
       {
         "en": "Good morning, legal counsel and commercial partners.",
         "zh": "法務顧問與商業夥伴們早安。",
-        "start": 0.0,
+        "start": 0,
         "end": 4.05
       },
       {
@@ -3559,12 +4681,12 @@ const listeningArticlesDB = [
         "en": "In return, the licensee is granted non-transferable commercialization privileges across designated North American medical markets for an initial tenure of seven years.",
         "zh": "作為回報，被授權人將在指定的北美醫療市場享有為期七年的不可轉讓商業化權利。",
         "start": 18.06,
-        "end": 28.0
+        "end": 28
       },
       {
         "en": "Furthermore, clause seven mandates quarterly royalty remittances accompanied by certified independent auditing statements.",
         "zh": "此外，第七條規定被授權人須每季匯出權利金，並附上經認證的獨立審計報告。",
-        "start": 28.0,
+        "start": 28,
         "end": 35.45
       },
       {
@@ -3622,6 +4744,36 @@ const listeningArticlesDB = [
         ],
         "ans": 0
       }
+    ],
+    "vocabulary": [
+      {
+        "en": "intellectual property",
+        "zh": "n. 智慧財產權 (IP)"
+      },
+      {
+        "en": "licensing agreement",
+        "zh": "n. 授權合約、授權協議"
+      },
+      {
+        "en": "royalty fee",
+        "zh": "n. 權利金、專利使用費"
+      },
+      {
+        "en": "patent infringement",
+        "zh": "n. 專利侵權"
+      },
+      {
+        "en": "exclusive territory",
+        "zh": "n. 專屬獨家授權區域"
+      },
+      {
+        "en": "arbitration clause",
+        "zh": "n. 仲裁條款"
+      },
+      {
+        "en": "confidentiality",
+        "zh": "n. 保密義務、保密協定"
+      }
     ]
   },
   {
@@ -3638,7 +4790,7 @@ const listeningArticlesDB = [
       {
         "en": "Good morning, members of the press.",
         "zh": "各位媒體記者朋友們早安。",
-        "start": 0.0,
+        "start": 0,
         "end": 2.91
       },
       {
@@ -3720,6 +4872,36 @@ const listeningArticlesDB = [
         ],
         "ans": 0
       }
+    ],
+    "vocabulary": [
+      {
+        "en": "crisis communication",
+        "zh": "n. 危機公關應變"
+      },
+      {
+        "en": "press conference",
+        "zh": "n. 記者招待會、新聞發布會"
+      },
+      {
+        "en": "product recall",
+        "zh": "n. 產品全面召回"
+      },
+      {
+        "en": "containment protocol",
+        "zh": "n. 危機控制圍堵程序"
+      },
+      {
+        "en": "full refund",
+        "zh": "n. 全額退款"
+      },
+      {
+        "en": "brand reputation",
+        "zh": "n. 品牌信譽、商譽"
+      },
+      {
+        "en": "transparent investigation",
+        "zh": "n. 透明公開的調查"
+      }
     ]
   },
   {
@@ -3736,7 +4918,7 @@ const listeningArticlesDB = [
       {
         "en": "Good afternoon, colleagues.",
         "zh": "各位同仁下午好。",
-        "start": 0.0,
+        "start": 0,
         "end": 2.6
       },
       {
@@ -3767,7 +4949,7 @@ const listeningArticlesDB = [
         "en": "Please join me in expressing our profound gratitude to Arthur and welcoming Margaret into her historic new appointment.",
         "zh": "請大家和我一起向 Arthur 致上最深摯的謝意，並熱烈歡迎 Margaret 接下這項歷史性的嶄新任命。",
         "start": 36.4,
-        "end": 43.0
+        "end": 43
       }
     ],
     "grammar": [
@@ -3818,6 +5000,36 @@ const listeningArticlesDB = [
         ],
         "ans": 1
       }
+    ],
+    "vocabulary": [
+      {
+        "en": "executive succession",
+        "zh": "n. 高階管理層接班傳承"
+      },
+      {
+        "en": "illustrious tenure",
+        "zh": "n. 卓越輝煌的任期"
+      },
+      {
+        "en": "chief executive officer",
+        "zh": "n. 執行長 (CEO)"
+      },
+      {
+        "en": "organizational restructuring",
+        "zh": "n. 組織重組與架構調整"
+      },
+      {
+        "en": "seamless transition",
+        "zh": "n. 無縫平穩接軌過渡"
+      },
+      {
+        "en": "strategic oversight",
+        "zh": "n. 策略監督、戰略指導"
+      },
+      {
+        "en": "board of directors",
+        "zh": "n. 董事會"
+      }
     ]
   },
   {
@@ -3855,7 +5067,7 @@ const listeningArticlesDB = [
         "avatar": "👨‍💼",
         "en": "Good morning, Sophia. I am calling regarding the purchase order we submitted yesterday for the five hundred enterprise hard drives.",
         "zh": "早安，Sophia。我致電是關於我們昨天送出五百組企業級硬碟的採購訂單。",
-        "start": 0.0,
+        "start": 0,
         "end": 8.69
       },
       {
@@ -3985,7 +5197,41 @@ const listeningArticlesDB = [
         "ans": 1
       }
     ],
-    "text": "Alex: Good morning, Sophia. I am calling regarding the purchase order we submitted yesterday for the five hundred enterprise hard drives. Sophia: Good morning, Alex. Yes, I saw the order, but due to severe supply chain delays, our standard delivery timeframe would be three weeks instead of one. Alex: Three weeks will be problematic because our data center deployment is scheduled for the end of this month. Is there any possibility of expedited air freight? Sophia: We can arrange priority air freight for the first two hundred units by this Friday, provided that your company covers the additional shipping surcharge. Alex: That sounds workable. However, considering the urgency and bulk volume, would you be able to extend a fifteen percent discount on the remaining batch? Sophia: Fifteen percent is beyond my authorization limit, but I could approve a twelve percent discount if you commit to signing our annual maintenance contract. Alex: That is a fair compromise. Could you send over the revised agreement along with the updated invoice by two o'clock today? Sophia: Certainly, Alex. I will draft the paperwork right away and email it to your legal department for final signature."
+    "text": "Alex: Good morning, Sophia. I am calling regarding the purchase order we submitted yesterday for the five hundred enterprise hard drives. Sophia: Good morning, Alex. Yes, I saw the order, but due to severe supply chain delays, our standard delivery timeframe would be three weeks instead of one. Alex: Three weeks will be problematic because our data center deployment is scheduled for the end of this month. Is there any possibility of expedited air freight? Sophia: We can arrange priority air freight for the first two hundred units by this Friday, provided that your company covers the additional shipping surcharge. Alex: That sounds workable. However, considering the urgency and bulk volume, would you be able to extend a fifteen percent discount on the remaining batch? Sophia: Fifteen percent is beyond my authorization limit, but I could approve a twelve percent discount if you commit to signing our annual maintenance contract. Alex: That is a fair compromise. Could you send over the revised agreement along with the updated invoice by two o'clock today? Sophia: Certainly, Alex. I will draft the paperwork right away and email it to your legal department for final signature.",
+    "vocabulary": [
+      {
+        "en": "purchase order",
+        "zh": "n. 採購訂單 (PO)"
+      },
+      {
+        "en": "supply chain delay",
+        "zh": "n. 供應鏈延誤"
+      },
+      {
+        "en": "air freight",
+        "zh": "n. 航空貨運、空運"
+      },
+      {
+        "en": "shipping surcharge",
+        "zh": "n. 運輸附加費、加成費"
+      },
+      {
+        "en": "bulk volume",
+        "zh": "n. 大宗訂購量"
+      },
+      {
+        "en": "fair compromise",
+        "zh": "n. 公平合理的折衷妥協"
+      },
+      {
+        "en": "maintenance contract",
+        "zh": "n. 年度設備維護合約"
+      },
+      {
+        "en": "revised invoice",
+        "zh": "n. 修改後的請款發票"
+      }
+    ]
   }
 ];
 

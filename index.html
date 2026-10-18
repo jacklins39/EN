@@ -2062,13 +2062,13 @@
                     if (autoNextTimerId) clearTimeout(autoNextTimerId);
                     autoNextTimerId = setTimeout(() => {
                         nextCard();
-                    }, 250);
+                    }, 650);
                 };
                 playAudio(currentWord.en, advance);
-                // 備用防呆：最多等待 1800ms 必進下一題，防止發音異常卡死
-                autoNextTimerId = setTimeout(advance, 1800);
+                // 備用防呆：最多等待 2000ms 必進下一題，防止發音異常卡死
+                autoNextTimerId = setTimeout(advance, 2000);
             } else {
-                // 答錯：先讓使用者看清紅綠回饋 600ms，接著翻面顯示例句與詳解，並換成「下一題 ➔」按鈕
+                // 答錯：先讓使用者看清揭曉的正確答案 900ms，接著翻面顯示例句與詳解，並換成「下一題 ➔」按鈕
                 if (autoNextTimerId) clearTimeout(autoNextTimerId);
                 autoNextTimerId = setTimeout(() => {
                     const btnAudio = document.getElementById('btn-audio');
@@ -2077,7 +2077,7 @@
                     quizOptions.classList.add('hidden');
                     actionNext.classList.remove('hidden');
                     playBacksideAudio();
-                }, 600);
+                }, 900);
             }
         }
 
@@ -2136,19 +2136,75 @@
                 const btn = document.createElement('button');
                 btn.className = 'btn-action w-full bg-white hover:bg-[#F5F5F7] border-2 border-gray-200 text-[#1D1D1F] font-medium py-3 px-4 rounded-2xl shadow-sm text-left text-lg transition-colors flex items-center';
                 btn.dataset.id = opt.id;
+                btn._opt = opt;
                 btn.innerHTML = `<span class="bg-gray-100 text-gray-400 text-sm font-mono px-2 py-0.5 rounded mr-3 hidden sm:inline-block">${index + 1}</span> <span>${esc(opt[key])}</span>`;
                 btn.onclick = () => {
                     if (isShowingAnswer) return;
                     isShowingAnswer = true;
                     const isCorrect = opt.id === currentWord.id;
+
+                    // 1. 卡片正面即時揭曉正確答案與音標釋義
+                    const wordEl = document.getElementById('card-word');
+                    const kkEl = document.getElementById('card-kk');
+                    const hintEl = document.getElementById('card-front-hint');
+                    const audioBtn = document.getElementById('btn-audio');
+
+                    if (currentQuizType === 'listen') {
+                        // 盲聽題：卡片正面由 🎧 🔊 瞬間揭曉為真實英文單字、KK 音標與中文釋義
+                        wordEl.className = 'text-5xl font-extrabold text-[#1D1D1F] mb-1 tracking-tight break-all';
+                        wordEl.innerText = currentWord.en;
+                        kkEl.innerText = currentWord.kk || '';
+                        hintEl.innerHTML = `<span class="${isCorrect ? 'text-green-600' : 'text-red-500'} font-semibold text-base"><span>${isCorrect ? '✅' : '❌'} 正確解答：</span><span class="text-[#1D1D1F] font-bold">${esc(currentWord.zh)}</span></span>`;
+                        if (audioBtn) audioBtn.classList.remove('hidden');
+                    } else if (currentQuizType === 'zh2en') {
+                        // 看中選英：在下方提示列直接揭曉正確英文拼寫與音標
+                        hintEl.innerHTML = `<span class="${isCorrect ? 'text-green-600' : 'text-red-500'} font-semibold text-base"><span>${isCorrect ? '✅' : '❌'} 正確單字：</span><span class="text-[#0071E3] font-bold">${esc(currentWord.en)}</span> <span class="text-xs text-gray-500 font-normal">${esc(currentWord.kk || '')}</span></span>`;
+                        if (audioBtn) audioBtn.classList.remove('hidden');
+                    } else if (currentQuizType === 'en2zh') {
+                        // 看英選中：在下方提示列揭曉完整繁中釋義
+                        hintEl.innerHTML = `<span class="${isCorrect ? 'text-green-600' : 'text-red-500'} font-semibold text-base"><span>${isCorrect ? '✅' : '❌'} 正確釋義：</span><span class="text-[#1D1D1F] font-bold">${esc(currentWord.zh)}</span></span>`;
+                    }
+
+                    // 2. 選項按鈕即時回饋，揭曉中英雙語對照
                     Array.from(quizOptions.children).forEach(b => {
                         b.disabled = true;
-                        if (String(b.dataset.id) === String(currentWord.id)) {
-                            b.classList.remove('bg-white', 'border-gray-200');
-                            b.classList.add('bg-green-50', 'border-green-500', 'text-green-700');
-                        } else if (b === btn && !isCorrect) {
-                            b.classList.remove('bg-white', 'border-gray-200');
-                            b.classList.add('bg-red-50', 'border-red-500', 'text-red-600');
+                        const bOpt = b._opt;
+                        const isThisCorrect = String(b.dataset.id) === String(currentWord.id);
+                        const isThisClicked = b === btn;
+
+                        if (isThisCorrect) {
+                            b.classList.remove('bg-white', 'border-gray-200', 'hover:bg-[#F5F5F7]');
+                            b.classList.add('bg-green-50', 'border-green-500', 'text-green-800', 'shadow-sm');
+                            if (currentQuizType === 'listen' || currentQuizType === 'zh2en') {
+                                b.innerHTML = `
+                                    <span class="bg-green-600 text-white text-xs font-bold w-5 h-5 rounded-full inline-flex items-center justify-center mr-3 shrink-0">✓</span>
+                                    <div class="flex-1 min-w-0 flex items-baseline justify-between flex-wrap gap-1">
+                                        <span class="font-bold text-green-900">${esc(bOpt.en)}</span>
+                                        <span class="text-sm font-medium text-green-700">${esc(bOpt.zh)}</span>
+                                    </div>`;
+                            } else {
+                                b.innerHTML = `
+                                    <span class="bg-green-600 text-white text-xs font-bold w-5 h-5 rounded-full inline-flex items-center justify-center mr-3 shrink-0">✓</span>
+                                    <span class="font-bold text-green-900">${esc(bOpt.zh)}</span>`;
+                            }
+                        } else if (isThisClicked && !isCorrect) {
+                            b.classList.remove('bg-white', 'border-gray-200', 'hover:bg-[#F5F5F7]');
+                            b.classList.add('bg-red-50', 'border-red-500', 'text-red-700');
+                            if (currentQuizType === 'listen' || currentQuizType === 'zh2en') {
+                                b.innerHTML = `
+                                    <span class="bg-red-500 text-white text-xs font-bold w-5 h-5 rounded-full inline-flex items-center justify-center mr-3 shrink-0">✕</span>
+                                    <div class="flex-1 min-w-0 flex items-baseline justify-between flex-wrap gap-1">
+                                        <span class="line-through font-bold opacity-80">${esc(bOpt.en)}</span>
+                                        <span class="text-sm text-red-600">${esc(bOpt.zh)}</span>
+                                    </div>`;
+                            } else {
+                                b.innerHTML = `
+                                    <span class="bg-red-500 text-white text-xs font-bold w-5 h-5 rounded-full inline-flex items-center justify-center mr-3 shrink-0">✕</span>
+                                    <span class="line-through font-bold opacity-80">${esc(bOpt.zh)}</span>`;
+                            }
+                        } else {
+                            // 其他未選選項適度淡化
+                            b.classList.add('opacity-40');
                         }
                     });
                     finishQuizAnswer(isCorrect);
@@ -3392,25 +3448,53 @@
         });
 
         // 萃取短文重點單字
-        function extractListeningWords(text) {
-            const words = text.toLowerCase().match(/\b[a-z']+\b/g) || [];
-            const uniqueWords = [...new Set(words)];
-            const getWordPriority = (w) => {
-                let score = 0;
-                const u = w.unit || 1;
-                if (u >= 11 && u <= 15) score = 100; // TOEIC words
-                else if (u >= 4 && u <= 6) score = 80 + u; // Advanced 7000 words
-                else if (u >= 2 && u <= 3) score = 40 + u; // Intermediate 7000 words
-                else if (u >= 17) score = 10; // Junior High words
-                else score = 20;
-                score += Math.min(w.en.length, 20);
-                return score;
-            };
+        function extractListeningWords(articleOrText) {
+            let matchedWords = [];
+            
+            // 1. 若教材本身有精心策劃的重點單字庫 (5~8 個情境核心單字)，直接採用 (保證品質且絕無廢字重複)
+            if (articleOrText && typeof articleOrText === 'object' && Array.isArray(articleOrText.vocabulary) && articleOrText.vocabulary.length > 0) {
+                matchedWords = articleOrText.vocabulary;
+            } else if (currentSelectedListeningArticle && Array.isArray(currentSelectedListeningArticle.vocabulary) && currentSelectedListeningArticle.vocabulary.length > 0) {
+                matchedWords = currentSelectedListeningArticle.vocabulary;
+            } else {
+                // 2. 自訂短文或 Fallback 演算法：嚴格去重 + 排除常見停用詞 + 篇內限制最多 6 個
+                const rawText = (typeof articleOrText === 'string') 
+                    ? articleOrText 
+                    : (articleOrText && articleOrText.text ? articleOrText.text : '');
+                
+                const stopWords = new Set([
+                    'the','be','to','of','and','a','in','that','have','i','it','for','not','on','with','he','as','you','do','at','this','but','his','by','from','they','we','say','her','she','or','an','will','my','one','all','would','there','their','what','so','up','out','if','about','who','get','which','go','me','when','make','can','like','time','no','just','him','know','take','people','into','year','your','good','some','could','them','see','other','than','then','now','look','only','come','its','over','think','also','back','after','use','two','how','our','work','first','well','way','even','new','want','because','any','these','give','day','most','us','please','here','mr','ms','mrs','dr','yes','oh','ok','hello','hi'
+                ]);
+                
+                const words = (rawText.toLowerCase().match(/\b[a-z']+\b/g) || [])
+                    .filter(w => w.length > 2 && !stopWords.has(w));
+                const uniqueWords = [...new Set(words)];
+                
+                const getWordPriority = (w) => {
+                    let score = 0;
+                    const u = w.unit || 1;
+                    if (u >= 11 && u <= 15) score = 100; // TOEIC words
+                    else if (u >= 4 && u <= 6) score = 80 + u; // Advanced 7000 words
+                    else if (u >= 2 && u <= 3) score = 40 + u; // Intermediate 7000 words
+                    else if (u >= 17) score = 10; // Junior High words
+                    else score = 20;
+                    score += Math.min(w.en.length, 20);
+                    return score;
+                };
 
-            const matchedWords = vocabularyDB
-                .filter(w => uniqueWords.includes(w.en.toLowerCase()))
-                .sort((a, b) => getWordPriority(b) - getWordPriority(a))
-                .slice(0, 20);
+                const seenEn = new Set();
+                matchedWords = vocabularyDB
+                    .filter(w => {
+                        const lower = (w.en || '').toLowerCase();
+                        if (uniqueWords.includes(lower) && !seenEn.has(lower) && !stopWords.has(lower)) {
+                            seenEn.add(lower);
+                            return true;
+                        }
+                        return false;
+                    })
+                    .sort((a, b) => getWordPriority(b) - getWordPriority(a))
+                    .slice(0, 6);
+            }
             
             const wc = document.getElementById('listening-words-container');
             if (!wc) return;
@@ -3421,13 +3505,14 @@
             }
             
             matchedWords.forEach(w => {
+                const safeEn = (w.en || '').replace(/'/g, "\\'");
                 wc.innerHTML += `
-                <div class="bg-white border border-gray-100 p-2 rounded-xl flex items-center justify-between shadow-sm cursor-pointer hover:bg-gray-50" onclick="playAudio('${w.en.replace(/'/g, "\\'")}')">
-                    <div>
-                        <div class="font-semibold text-[#1D1D1F]">${w.en}</div>
-                        <div class="text-xs text-[#86868B] truncate w-20">${w.zh}</div>
+                <div class="bg-white border border-gray-100 p-2.5 rounded-xl flex items-center justify-between shadow-xs cursor-pointer hover:bg-gray-50 transition" onclick="playAudio('${safeEn}')">
+                    <div class="min-w-0 pr-2 flex-1">
+                        <div class="font-semibold text-sm text-[#1D1D1F] truncate">${esc(w.en || '')}</div>
+                        <div class="text-xs text-[#86868B] truncate mt-0.5" title="${esc(w.zh || '')}">${esc(w.zh || '')}</div>
                     </div>
-                    <button class="text-[#0071E3] hover:bg-[#E5E5EA] p-1 rounded-full">
+                    <button class="text-[#0071E3] hover:bg-[#E5E5EA] p-1.5 rounded-full shrink-0 transition" title="朗讀單字">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
                     </button>
                 </div>`;
@@ -3484,7 +3569,7 @@
             renderListeningSentences();
 
             // 萃取單字、名師文法與測驗
-            extractListeningWords(article.text || '');
+            extractListeningWords(article);
             generateListeningGrammar(article.text || '');
             generateListeningQuiz(listeningSentences.map(s => s.en));
         });

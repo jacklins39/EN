@@ -166,6 +166,7 @@
         .listening-blind-mode .sentence-card .zh-text {
             filter: blur(6px);
             opacity: 0.25;
+            -webkit-user-select: none;
             user-select: none;
             transition: filter 0.25s ease, opacity 0.25s ease;
         }
@@ -178,6 +179,7 @@
         .listening-blind-mode .sentence-card.sentence-active .zh-text {
             filter: blur(0px) !important;
             opacity: 1 !important;
+            -webkit-user-select: text;
             user-select: text;
         }
     </style>

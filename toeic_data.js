@@ -492,7 +492,7 @@ const toeicWordsDB = [
     "zh": "v. 積累;獲得",
     "unit": 11,
     "example": "She accrued her wealth slowly but surely.",
-    "exampleZh": "這是一個關於「獲得」的生活例句。"
+    "exampleZh": "她緩慢而堅定地累積了自己的財富。"
   },
   {
     "id": 20056,
@@ -1023,7 +1023,7 @@ const toeicWordsDB = [
     "zh": "n. 敵手;敵人",
     "unit": 11,
     "example": "I have turned into their adversary.",
-    "exampleZh": "這是一個關於「敵人」的生活例句。"
+    "exampleZh": "我已經變成他們的對手了。"
   },
   {
     "id": 20115,
@@ -1437,7 +1437,7 @@ const toeicWordsDB = [
     "zh": "ad. 據傳說;據 宣稱",
     "unit": 11,
     "example": "He allegedly killed her.",
-    "exampleZh": "這是一個關於「據 宣稱」的生活例句。"
+    "exampleZh": "據稱他殺了她。"
   },
   {
     "id": 20161,
@@ -2031,7 +2031,7 @@ const toeicWordsDB = [
     "zh": "v. 把⋯存檔;把⋯ 收集歸檔n. 檔案保管處; 文件;記錄",
     "unit": 11,
     "example": "She was in the archive.",
-    "exampleZh": "這是一個關於「記錄」的生活例句。"
+    "exampleZh": "她在檔案館裡。"
   },
   {
     "id": 20227,
@@ -2598,7 +2598,7 @@ const toeicWordsDB = [
     "zh": "n. 反衝;強烈 反對;後座力",
     "unit": 11,
     "example": "Do you expect a backlash?",
-    "exampleZh": "這是一個關於「後座力」的生活例句。"
+    "exampleZh": "你預計會出現反彈嗎？"
   },
   {
     "id": 20290,
@@ -2625,7 +2625,7 @@ const toeicWordsDB = [
     "zh": "ph. 背靠背",
     "unit": 11,
     "example": "Our team has lost two games back-to-back.",
-    "exampleZh": "這是一個關於「背靠背」的生活例句。"
+    "exampleZh": "我們隊已經連續輸掉兩場比賽了。"
   },
   {
     "id": 20293,
@@ -3741,7 +3741,7 @@ const toeicWordsDB = [
     "zh": "n. 廣告牌",
     "unit": 11,
     "example": "He read the billboard out loud.",
-    "exampleZh": "這是一個關於「廣告牌」的生活例句。"
+    "exampleZh": "他大聲讀出廣告看板。"
   },
   {
     "id": 20417,
@@ -4083,7 +4083,7 @@ const toeicWordsDB = [
     "zh": "v. 砲擊;轟炸",
     "unit": 11,
     "example": "Your city is being bombarded.",
-    "exampleZh": "這是一個關於「轟炸」的生活例句。"
+    "exampleZh": "你的城市正在遭受轟炸。"
   },
   {
     "id": 20455,
@@ -4182,7 +4182,7 @@ const toeicWordsDB = [
     "zh": "n. 攤販;小隔間",
     "unit": 11,
     "example": "Sami sat in the booth.",
-    "exampleZh": "這是一個關於「小隔間」的生活例句。"
+    "exampleZh": "薩米坐在包廂裡。"
   },
   {
     "id": 20466,
@@ -4443,7 +4443,7 @@ const toeicWordsDB = [
     "zh": "n. 喝采聲",
     "unit": 11,
     "example": "Bravo! What a great show!",
-    "exampleZh": "這是一個關於「喝采聲」的生活例句。"
+    "exampleZh": "太棒了！多麼精彩的表演啊！"
   },
   {
     "id": 20495,
@@ -5622,7 +5622,7 @@ const toeicWordsDB = [
     "zh": "v. 規避;防 止⋯⋯發生",
     "unit": 11,
     "example": "The law is meant to be circumvented.",
-    "exampleZh": "這是一個關於「防 止⋯⋯發生」的生活例句。"
+    "exampleZh": "法律就是用來規避的。"
   },
   {
     "id": 20626,
@@ -5667,7 +5667,7 @@ const toeicWordsDB = [
     "zh": "a. 城市的;市民的",
     "unit": 11,
     "example": "It's my civic duty.",
-    "exampleZh": "這是一個關於「市民的」的生活例句。"
+    "exampleZh": "這是我的公民義務。"
   },
   {
     "id": 20631,
@@ -6333,7 +6333,7 @@ const toeicWordsDB = [
     "zh": "n. 寫作;作 曲",
     "unit": 11,
     "example": "I love writing compositions.",
-    "exampleZh": "這是一個關於「作 曲」的生活例句。"
+    "exampleZh": "我喜歡寫作文。"
   },
   {
     "id": 20705,
@@ -6342,7 +6342,7 @@ const toeicWordsDB = [
     "zh": "n. 平靜;鎮 靜",
     "unit": 11,
     "example": "He kept his composure.",
-    "exampleZh": "這是一個關於「鎮 靜」的生活例句。"
+    "exampleZh": "他保持著鎮定。"
   },
   {
     "id": 20706,
@@ -6702,7 +6702,7 @@ const toeicWordsDB = [
     "zh": "v. 強迫;迫使",
     "unit": 11,
     "example": "I am constrained by lack of time.",
-    "exampleZh": "這是一個關於「迫使」的生活例句。"
+    "exampleZh": "我因缺乏時間而受到限制。"
   },
   {
     "id": 20746,
@@ -7530,7 +7530,7 @@ const toeicWordsDB = [
     "zh": "n. 減少;剪修新 芽",
     "unit": 11,
     "example": "The company needs to make cutbacks next year.",
-    "exampleZh": "這是一個關於「剪修新 芽」的生活例句。"
+    "exampleZh": "該公司明年需要削減開支。"
   },
   {
     "id": 20838,
@@ -8223,7 +8223,7 @@ const toeicWordsDB = [
     "zh": "n. 死亡;終止v. 轉讓;遺贈",
     "unit": 11,
     "example": "Rodrigo met his demise.",
-    "exampleZh": "這是一個關於「遺贈」的生活例句。"
+    "exampleZh": "羅德里戈去世了。"
   },
   {
     "id": 20915,
@@ -8241,7 +8241,7 @@ const toeicWordsDB = [
     "zh": "v. 毀壞;破壞",
     "unit": 11,
     "example": "He demolished the house.",
-    "exampleZh": "這是一個關於「破壞」的生活例句。"
+    "exampleZh": "他拆毀了房子。"
   },
   {
     "id": 20917,
@@ -8439,7 +8439,7 @@ const toeicWordsDB = [
     "zh": "n. 目的地; 終點",
     "unit": 11,
     "example": "What is his destination?",
-    "exampleZh": "這是一個關於「終點」的生活例句。"
+    "exampleZh": "他的目的地是什麼？"
   },
   {
     "id": 20939,
@@ -8718,7 +8718,7 @@ const toeicWordsDB = [
     "zh": "v. 分辨;識別",
     "unit": 11,
     "example": "This man discerns well.",
-    "exampleZh": "這是一個關於「識別」的生活例句。"
+    "exampleZh": "這個人的辨別能力很好。"
   },
   {
     "id": 20970,
@@ -8736,7 +8736,7 @@ const toeicWordsDB = [
     "zh": "v. 放棄;拒絕",
     "unit": 11,
     "example": "Please read our disclaimer.",
-    "exampleZh": "這是一個關於「拒絕」的生活例句。"
+    "exampleZh": "請閱讀我們的免責宣告。"
   },
   {
     "id": 20972,
@@ -8961,7 +8961,7 @@ const toeicWordsDB = [
     "zh": "n. 多樣化",
     "unit": 11,
     "example": "Economic diversification means more jobs.",
-    "exampleZh": "這是一個關於「多樣化」的生活例句。"
+    "exampleZh": "經濟多元化意味著更多的就業機會。"
   },
   {
     "id": 20997,
@@ -9114,7 +9114,7 @@ const toeicWordsDB = [
     "zh": "n. 縮減開支",
     "unit": 12,
     "example": "It's time to begin downsizing.",
-    "exampleZh": "這是一個關於「縮減開支」的生活例句。"
+    "exampleZh": "是時候開始縮小規模了。"
   },
   {
     "id": 21014,
@@ -9357,7 +9357,7 @@ const toeicWordsDB = [
     "zh": "a. 對環境友 善的",
     "unit": 12,
     "example": "Tom lives in an eco-friendly home.",
-    "exampleZh": "這是一個關於「對環境友 善的」的生活例句。"
+    "exampleZh": "湯姆住在一個環保的家裡。"
   },
   {
     "id": 21041,
@@ -9699,7 +9699,7 @@ const toeicWordsDB = [
     "zh": "v. 從事;著手",
     "unit": 12,
     "example": "Now it's time to embark.",
-    "exampleZh": "這是一個關於「著手」的生活例句。"
+    "exampleZh": "現在是時候出發了。"
   },
   {
     "id": 21079,
@@ -10005,7 +10005,7 @@ const toeicWordsDB = [
     "zh": "v. 從軍;入伍",
     "unit": 12,
     "example": "I tried to enlist.",
-    "exampleZh": "這是一個關於「入伍」的生活例句。"
+    "exampleZh": "我嘗試入伍。"
   },
   {
     "id": 21113,
@@ -10239,7 +10239,7 @@ const toeicWordsDB = [
     "zh": "a. 相等的; 相同的",
     "unit": 12,
     "example": "Give me the equivalent in dollars.",
-    "exampleZh": "這是一個關於「相同的」的生活例句。"
+    "exampleZh": "請給我等值的美元。"
   },
   {
     "id": 21139,
@@ -11301,7 +11301,7 @@ const toeicWordsDB = [
     "zh": "n. 岳父",
     "unit": 12,
     "example": "I like my father-in-law.",
-    "exampleZh": "這是一個關於「岳父」的生活例句。"
+    "exampleZh": "我喜歡我的岳父。"
   },
   {
     "id": 21257,
@@ -11409,7 +11409,7 @@ const toeicWordsDB = [
     "zh": "n. 功績;業績",
     "unit": 12,
     "example": "That isn't an easy feat.",
-    "exampleZh": "這是一個關於「業績」的生活例句。"
+    "exampleZh": "這不是一件容易的事。"
   },
   {
     "id": 21269,
@@ -11967,7 +11967,7 @@ const toeicWordsDB = [
     "zh": "v. 使公式化; 用公式表示",
     "unit": 12,
     "example": "Rodrigo formulated a plan.",
-    "exampleZh": "這是一個關於「用公式表示」的生活例句。"
+    "exampleZh": "羅德里戈制定了一個計劃。"
   },
   {
     "id": 21331,
@@ -12354,7 +12354,7 @@ const toeicWordsDB = [
     "zh": "n. 看門人; 守門員",
     "unit": 12,
     "example": "The gatekeeper checks tickets.",
-    "exampleZh": "這是一個關於「守門員」的生活例句。"
+    "exampleZh": "門衛查票。"
   },
   {
     "id": 21374,
@@ -12570,7 +12570,7 @@ const toeicWordsDB = [
     "zh": "n. 魅力;魔力",
     "unit": 12,
     "example": "She's a glamor girl.",
-    "exampleZh": "這是一個關於「魔力」的生活例句。"
+    "exampleZh": "她是個魅力女孩。"
   },
   {
     "id": 21398,
@@ -12624,7 +12624,7 @@ const toeicWordsDB = [
     "zh": "v. 讚美;美化",
     "unit": 12,
     "example": "We glorify your resurrection, O Lord.",
-    "exampleZh": "這是一個關於「美化」的生活例句。"
+    "exampleZh": "主啊，我們榮耀禰的復活。"
   },
   {
     "id": 21404,
@@ -13101,7 +13101,7 @@ const toeicWordsDB = [
     "zh": "v. 劈;砍",
     "unit": 12,
     "example": "Did you get hacked?",
-    "exampleZh": "這是一個關於「砍」的生活例句。"
+    "exampleZh": "你被黑了嗎？"
   },
   {
     "id": 21457,
@@ -13236,7 +13236,7 @@ const toeicWordsDB = [
     "zh": "n. 施捨物;傳 單;印刷品",
     "unit": 12,
     "example": "This isn't a handout.",
-    "exampleZh": "這是一個關於「印刷品」的生活例句。"
+    "exampleZh": "這不是一份講義。"
   },
   {
     "id": 21472,
@@ -13884,7 +13884,7 @@ const toeicWordsDB = [
     "zh": "n. 人力 資源",
     "unit": 12,
     "example": "Slaves are human resources.",
-    "exampleZh": "這是一個關於「人力 資源」的生活例句。"
+    "exampleZh": "奴隸是人力資源。"
   },
   {
     "id": 21544,
@@ -14154,7 +14154,7 @@ const toeicWordsDB = [
     "zh": "n. 不識字;文 盲",
     "unit": 12,
     "example": "I'm giving you a downvote for illiteracy.",
-    "exampleZh": "這是一個關於「文 盲」的生活例句。"
+    "exampleZh": "我對你的文盲投反對票。"
   },
   {
     "id": 21574,
@@ -14307,7 +14307,7 @@ const toeicWordsDB = [
     "zh": "a. 不能動的; 固定的",
     "unit": 12,
     "example": "The car stopped completely immobile.",
-    "exampleZh": "這是一個關於「固定的」的生活例句。"
+    "exampleZh": "車子完全停了下來，一動也不動。"
   },
   {
     "id": 21591,
@@ -14640,7 +14640,7 @@ const toeicWordsDB = [
     "zh": "v. 焚化;灰化",
     "unit": 12,
     "example": "Sami wanted to incinerate Layla's body.",
-    "exampleZh": "這是一個關於「灰化」的生活例句。"
+    "exampleZh": "薩米想燒掉萊拉的屍體。"
   },
   {
     "id": 21628,
@@ -14838,7 +14838,7 @@ const toeicWordsDB = [
     "zh": "v. 使負債",
     "unit": 12,
     "example": "I'm indebted to him.",
-    "exampleZh": "這是一個關於「使負債」的生活例句。"
+    "exampleZh": "我欠他的情。"
   },
   {
     "id": 21650,
@@ -14919,7 +14919,7 @@ const toeicWordsDB = [
     "zh": "n. 指示者;指 示物",
     "unit": 12,
     "example": "Put your indicator on.",
-    "exampleZh": "這是一個關於「指 示物」的生活例句。"
+    "exampleZh": "把你的指示器開啟。"
   },
   {
     "id": 21659,
@@ -15027,7 +15027,7 @@ const toeicWordsDB = [
     "zh": "a. 聲名狼藉的",
     "unit": 12,
     "example": "Sami was infamous for that shit.",
-    "exampleZh": "這是一個關於「聲名狼藉的」的生活例句。"
+    "exampleZh": "薩米因這件事而臭名昭著。"
   },
   {
     "id": 21671,
@@ -15288,7 +15288,7 @@ const toeicWordsDB = [
     "zh": "v. 注射",
     "unit": 12,
     "example": "He injected some medicine.",
-    "exampleZh": "這是一個關於「注射」的生活例句。"
+    "exampleZh": "他注射了一些藥。"
   },
   {
     "id": 21700,
@@ -15576,7 +15576,7 @@ const toeicWordsDB = [
     "zh": "ad. 即 刻;突如其來地",
     "unit": 12,
     "example": "Tom died almost instantaneously.",
-    "exampleZh": "這是一個關於「突如其來地」的生活例句。"
+    "exampleZh": "湯姆幾乎立刻就死了。"
   },
   {
     "id": 21732,
@@ -16287,7 +16287,7 @@ const toeicWordsDB = [
     "zh": "n. 開球;開始",
     "unit": 12,
     "example": "Do you have any idea what time is kickoff?",
-    "exampleZh": "這是一個關於「開始」的生活例句。"
+    "exampleZh": "你有開始嗎？"
   },
   {
     "id": 21811,
@@ -16773,7 +16773,7 @@ const toeicWordsDB = [
     "zh": "n. 解雇",
     "unit": 12,
     "example": "The company announced hundreds of layoffs.",
-    "exampleZh": "這是一個關於「解雇」的生活例句。"
+    "exampleZh": "該公司宣佈裁員數百人。"
   },
   {
     "id": 21865,
@@ -17016,7 +17016,7 @@ const toeicWordsDB = [
     "zh": "n. 傾向責任",
     "unit": 12,
     "example": "Buying a car is a liability.",
-    "exampleZh": "這是一個關於「傾向責任」的生活例句。"
+    "exampleZh": "買車是一種責任。"
   },
   {
     "id": 21892,
@@ -17970,7 +17970,7 @@ const toeicWordsDB = [
     "zh": "v. 使緩和;減輕",
     "unit": 12,
     "example": "Kind words will mitigate their fury.",
-    "exampleZh": "這是一個關於「減輕」的生活例句。"
+    "exampleZh": "善意的話語會減輕他們的憤怒。"
   },
   {
     "id": 21998,
@@ -18069,7 +18069,7 @@ const toeicWordsDB = [
     "zh": "n. 抵押v. 抵押",
     "unit": 13,
     "example": "I mortgaged my house.",
-    "exampleZh": "這是一個關於「抵押v. 抵押」的生活例句。"
+    "exampleZh": "我抵押了我的房子。"
   },
   {
     "id": 22009,
@@ -18447,7 +18447,7 @@ const toeicWordsDB = [
     "zh": "n. 被提名人",
     "unit": 13,
     "example": "Tom is a nominee.",
-    "exampleZh": "這是一個關於「被提名人」的生活例句。"
+    "exampleZh": "湯姆是被提名者。"
   },
   {
     "id": 22051,
@@ -18762,7 +18762,7 @@ const toeicWordsDB = [
     "zh": "v. 補償;抵銷n. 補 償;抵銷",
     "unit": 13,
     "example": "Is there any way to offset those costs?",
-    "exampleZh": "這是一個關於「抵銷」的生活例句。"
+    "exampleZh": "有什麼辦法可以抵銷這些成本嗎？"
   },
   {
     "id": 22086,
@@ -18771,7 +18771,7 @@ const toeicWordsDB = [
     "zh": "n. 遺漏;省略",
     "unit": 13,
     "example": "Tom made one serious omission.",
-    "exampleZh": "這是一個關於「省略」的生活例句。"
+    "exampleZh": "湯姆犯了一個嚴重的遺漏。"
   },
   {
     "id": 22087,
@@ -19041,7 +19041,7 @@ const toeicWordsDB = [
     "zh": "v. 以計謀 勝過",
     "unit": 13,
     "example": "Can you outmaneuver your opponents?",
-    "exampleZh": "這是一個關於「以計謀 勝過」的生活例句。"
+    "exampleZh": "你能智取對手嗎？"
   },
   {
     "id": 22117,
@@ -19986,7 +19986,7 @@ const toeicWordsDB = [
     "zh": "v. 仔細考慮;衡 量",
     "unit": 13,
     "example": "Bob pondered the subject.",
-    "exampleZh": "這是一個關於「衡 量」的生活例句。"
+    "exampleZh": "鮑伯沉思著這個話題。"
   },
   {
     "id": 22222,
@@ -20319,7 +20319,7 @@ const toeicWordsDB = [
     "zh": "a. 預先付的",
     "unit": 13,
     "example": "Sami's taxi was prepaid.",
-    "exampleZh": "這是一個關於「預先付的」的生活例句。"
+    "exampleZh": "薩米的計程車是預付費的。"
   },
   {
     "id": 22259,
@@ -20751,7 +20751,7 @@ const toeicWordsDB = [
     "zh": "n. 程式設 計師",
     "unit": 13,
     "example": "Juba is a programmer.",
-    "exampleZh": "這是一個關於「程式設 計師」的生活例句。"
+    "exampleZh": "朱巴是一名程式設計師。"
   },
   {
     "id": 22307,
@@ -21615,7 +21615,7 @@ const toeicWordsDB = [
     "zh": "v. 使改過;使悔 改",
     "unit": 13,
     "example": "Pietro reclaimed his innocence.",
-    "exampleZh": "這是一個關於「使悔 改」的生活例句。"
+    "exampleZh": "彼得羅恢復了清白。"
   },
   {
     "id": 22403,
@@ -21633,7 +21633,7 @@ const toeicWordsDB = [
     "zh": "a. 可辨認 的",
     "unit": 13,
     "example": "The characters are easily recognizable.",
-    "exampleZh": "這是一個關於「可辨認 的」的生活例句。"
+    "exampleZh": "人物很容易辨認。"
   },
   {
     "id": 22405,
@@ -21957,7 +21957,7 @@ const toeicWordsDB = [
     "zh": "v. 重做;重申",
     "unit": 13,
     "example": "Reiterate what you stated.",
-    "exampleZh": "這是一個關於「重申」的生活例句。"
+    "exampleZh": "重申一下你所說的話。"
   },
   {
     "id": 22441,
@@ -22074,7 +22074,7 @@ const toeicWordsDB = [
     "zh": "v. 再製;改造",
     "unit": 13,
     "example": "A movie I liked got a remake.",
-    "exampleZh": "這是一個關於「改造」的生活例句。"
+    "exampleZh": "我喜歡的一部電影被翻拍了。"
   },
   {
     "id": 22454,
@@ -22587,7 +22587,7 @@ const toeicWordsDB = [
     "zh": "n. 零售商;零售 店",
     "unit": 13,
     "example": "Some retailers charge less.",
-    "exampleZh": "這是一個關於「零售 店」的生活例句。"
+    "exampleZh": "一些零售商收費較低。"
   },
   {
     "id": 22511,
@@ -23451,7 +23451,7 @@ const toeicWordsDB = [
     "zh": "n. 運輸;運送",
     "unit": 13,
     "example": "I'm expecting a shipment.",
-    "exampleZh": "這是一個關於「運送」的生活例句。"
+    "exampleZh": "我正在等待發貨。"
   },
   {
     "id": 22607,
@@ -23955,7 +23955,7 @@ const toeicWordsDB = [
     "zh": "n. 贊助商",
     "unit": 13,
     "example": "Tom is my sponsor.",
-    "exampleZh": "這是一個關於「贊助商」的生活例句。"
+    "exampleZh": "湯姆是我的贊助商。"
   },
   {
     "id": 22663,
@@ -24198,7 +24198,7 @@ const toeicWordsDB = [
     "zh": "a. 堅定的;不 動搖的",
     "unit": 13,
     "example": "Anne steadfastly refused to confess.",
-    "exampleZh": "這是一個關於「不 動搖的」的生活例句。"
+    "exampleZh": "安妮堅決不肯承認。"
   },
   {
     "id": 22690,
@@ -24531,7 +24531,7 @@ const toeicWordsDB = [
     "zh": "v. 證實;證 明",
     "unit": 13,
     "example": "Can you substantiate that claim?",
-    "exampleZh": "這是一個關於「證 明」的生活例句。"
+    "exampleZh": "你能證實這說法嗎？"
   },
   {
     "id": 22727,
@@ -24927,7 +24927,7 @@ const toeicWordsDB = [
     "zh": "n. 討論會; 座談會",
     "unit": 13,
     "example": "I'm at a musicians' symposium.",
-    "exampleZh": "這是一個關於「座談會」的生活例句。"
+    "exampleZh": "我正在參加音樂家研討會。"
   },
   {
     "id": 22771,
@@ -25053,7 +25053,7 @@ const toeicWordsDB = [
     "zh": "a. 明確的;確鑿 的",
     "unit": 13,
     "example": "Show me tangible data.",
-    "exampleZh": "這是一個關於「確鑿 的」的生活例句。"
+    "exampleZh": "向我展示有形資料。"
   },
   {
     "id": 22785,
@@ -25152,7 +25152,7 @@ const toeicWordsDB = [
     "zh": "n. 技術人員; 技師",
     "unit": 13,
     "example": "Tom is a technician.",
-    "exampleZh": "這是一個關於「技師」的生活例句。"
+    "exampleZh": "湯姆是一名技術員。"
   },
   {
     "id": 22796,
@@ -25449,7 +25449,7 @@ const toeicWordsDB = [
     "zh": "n. 標題;題目v. 加標 題於",
     "unit": 13,
     "example": "Ziri read the titles.",
-    "exampleZh": "這是一個關於「題目v. 加標 題於」的生活例句。"
+    "exampleZh": "齊日讀了標題。"
   },
   {
     "id": 22829,
@@ -25710,7 +25710,7 @@ const toeicWordsDB = [
     "zh": "a. 部落的;種族的",
     "unit": 13,
     "example": "What is your tribal town?",
-    "exampleZh": "這是一個關於「種族的」的生活例句。"
+    "exampleZh": "你的部落城鎮是什麼？"
   },
   {
     "id": 22858,
@@ -25755,7 +25755,7 @@ const toeicWordsDB = [
     "zh": "n. 受託管理人",
     "unit": 13,
     "example": "Tom served as a trustee for three years.",
-    "exampleZh": "這是一個關於「受託管理人」的生活例句。"
+    "exampleZh": "湯姆擔任受託人三年。"
   },
   {
     "id": 22863,
@@ -26052,7 +26052,7 @@ const toeicWordsDB = [
     "zh": "v. 統一;聯合",
     "unit": 13,
     "example": "The tramcars unify the city.",
-    "exampleZh": "這是一個關於「聯合」的生活例句。"
+    "exampleZh": "有軌電車將城市統一起來。"
   },
   {
     "id": 22896,
@@ -26610,7 +26610,7 @@ const toeicWordsDB = [
     "zh": "ad. 反之亦然",
     "unit": 13,
     "example": "I love you and vice versa.",
-    "exampleZh": "這是一個關於「反之亦然」的生活例句。"
+    "exampleZh": "我愛你，反之亦然。"
   },
   {
     "id": 22958,
@@ -27267,7 +27267,7 @@ const toeicWordsDB = [
     "zh": "n. 小孩;年輕 人",
     "unit": 13,
     "example": "Tom is a typical youngster.",
-    "exampleZh": "這是一個關於「年輕 人」的生活例句。"
+    "exampleZh": "湯姆是個典型的年輕人。"
   },
   {
     "id": 23031,
@@ -27402,7 +27402,7 @@ const toeicWordsDB = [
     "zh": "n. 公告；快報",
     "unit": 11,
     "example": "Tom put the list on the bulletin board.",
-    "exampleZh": "這是一個關於「快報」的生活例句。"
+    "exampleZh": "湯姆把名單貼在佈告欄上。"
   },
   {
     "id": 23046,
@@ -27510,7 +27510,7 @@ const toeicWordsDB = [
     "zh": "v. 提供；配備家具",
     "unit": 11,
     "example": "You must furnish the house.",
-    "exampleZh": "這是一個關於「配備家具」的生活例句。"
+    "exampleZh": "你必須佈置房子。"
   },
   {
     "id": 23058,

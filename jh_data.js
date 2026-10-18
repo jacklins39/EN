@@ -1860,7 +1860,7 @@ const jhWordsDB = [
     "zh": "n. 早午餐",
     "unit": 17,
     "example": "What time is brunch?",
-    "exampleZh": "這是一個關於「早午餐」的生活例句。"
+    "exampleZh": "brunch是幾點？"
   },
   {
     "id": 30208,
@@ -4488,7 +4488,7 @@ const jhWordsDB = [
     "zh": "n. 烘乾機",
     "unit": 17,
     "example": "Do you have a hair dryer?",
-    "exampleZh": "這是一個關於「烘乾機」的生活例句。"
+    "exampleZh": "你有n. 烘乾機嗎？"
   },
   {
     "id": 30500,
@@ -6639,7 +6639,7 @@ const jhWordsDB = [
     "zh": "n. 番石榴",
     "unit": 17,
     "example": "I want to eat guava.",
-    "exampleZh": "這是一個關於「番石榴」的生活例句。"
+    "exampleZh": "我想吃n. 番石榴。"
   },
   {
     "id": 30739,
@@ -9087,7 +9087,7 @@ const jhWordsDB = [
     "zh": "n. 結婚",
     "unit": 18,
     "example": "You both have to work hard at marriage.",
-    "exampleZh": "這是一個關於「結婚」的生活例句。"
+    "exampleZh": "你們倆都必須在婚姻中努力工作。"
   },
   {
     "id": 31011,
@@ -16485,7 +16485,7 @@ const jhWordsDB = [
     "zh": "n. 使用者",
     "unit": 18,
     "example": "I am a Windows user.",
-    "exampleZh": "這是一個關於「使用者」的生活例句。"
+    "exampleZh": "我是個n. 使用者。"
   },
   {
     "id": 31833,

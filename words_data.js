@@ -12291,7 +12291,7 @@ const externalVocabularyDB = [
     "zh": "n. 早午餐",
     "unit": 2,
     "example": "What time is brunch?",
-    "exampleZh": "這是一個關於「早午餐」的生活例句。"
+    "exampleZh": "brunch是幾點？"
   },
   {
     "id": 1367,
@@ -13623,7 +13623,7 @@ const externalVocabularyDB = [
     "zh": "n. (常兼售雜貨的)藥房",
     "unit": 2,
     "example": "Tom works at a drugstore.",
-    "exampleZh": "這是一個關於「(常兼售雜貨的)藥房」的生活例句。"
+    "exampleZh": "在一家n. (常兼售雜貨的)藥房工作。"
   },
   {
     "id": 1515,
@@ -13641,7 +13641,7 @@ const externalVocabularyDB = [
     "zh": "n. 烘衣機",
     "unit": 2,
     "example": "Do you have a hair dryer?",
-    "exampleZh": "這是一個關於「烘衣機」的生活例句。"
+    "exampleZh": "你有n. 烘衣機嗎？"
   },
   {
     "id": 1517,
@@ -14496,7 +14496,7 @@ const externalVocabularyDB = [
     "zh": "n. 番石榴",
     "unit": 2,
     "example": "I want to eat guava.",
-    "exampleZh": "這是一個關於「番石榴」的生活例句。"
+    "exampleZh": "我想吃n. 番石榴。"
   },
   {
     "id": 1612,
@@ -14658,7 +14658,7 @@ const externalVocabularyDB = [
     "zh": "n. 河馬",
     "unit": 2,
     "example": "We have a hippopotamus.",
-    "exampleZh": "這是一個關於「河馬」的生活例句。"
+    "exampleZh": "我們有一隻河馬。"
   },
   {
     "id": 1630,
@@ -15441,7 +15441,7 @@ const externalVocabularyDB = [
     "zh": "n. 結婚,婚姻",
     "unit": 2,
     "example": "You both have to work hard at marriage.",
-    "exampleZh": "這是一個關於「結婚,婚姻」的生活例句。"
+    "exampleZh": "你們倆都必須在婚姻中努力工作。"
   },
   {
     "id": 1717,
@@ -15630,7 +15630,7 @@ const externalVocabularyDB = [
     "zh": "n. 地下鐵道",
     "unit": 2,
     "example": "I travel by metro.",
-    "exampleZh": "這是一個關於「地下鐵道」的生活例句。"
+    "exampleZh": "我搭地鐵出行。"
   },
   {
     "id": 1738,
@@ -17574,7 +17574,7 @@ const externalVocabularyDB = [
     "zh": "n. 大豆",
     "unit": 2,
     "example": "Let's eat soybeans instead of meat.",
-    "exampleZh": "這是一個關於「大豆」的生活例句。"
+    "exampleZh": "我們吃大豆代替肉吧。"
   },
   {
     "id": 1954,
@@ -18564,7 +18564,7 @@ const externalVocabularyDB = [
     "zh": "n. 使用者、用戶",
     "unit": 3,
     "example": "I am a Windows user.",
-    "exampleZh": "這是一個關於「使用者、用戶」的生活例句。"
+    "exampleZh": "我是個n. 使用者、用戶。"
   },
   {
     "id": 2064,
@@ -18672,7 +18672,7 @@ const externalVocabularyDB = [
     "zh": "n. 選舉人;投票人",
     "unit": 3,
     "example": "The voters want change.",
-    "exampleZh": "這是一個關於「投票人」的生活例句。"
+    "exampleZh": "選民希望有所改變。"
   },
   {
     "id": 2076,
@@ -21363,7 +21363,7 @@ const externalVocabularyDB = [
     "zh": "adj./v. 馴化;使軟化",
     "unit": 3,
     "example": "Tycho had a tame elk.",
-    "exampleZh": "這是一個關於「使軟化」的生活例句。"
+    "exampleZh": "第谷有一隻馴服的麋鹿。"
   },
   {
     "id": 2375,
@@ -22227,7 +22227,7 @@ const externalVocabularyDB = [
     "zh": "n. 莓果",
     "unit": 3,
     "example": "This berry is tasty.",
-    "exampleZh": "這是一個關於「莓果」的生活例句。"
+    "exampleZh": "這漿果很好吃。"
   },
   {
     "id": 2471,
@@ -22236,7 +22236,7 @@ const externalVocabularyDB = [
     "zh": "n. 聖經",
     "unit": 3,
     "example": "I read the Bible.",
-    "exampleZh": "這是一個關於「聖經」的生活例句。"
+    "exampleZh": "我讀過聖經。"
   },
   {
     "id": 2472,
@@ -25305,7 +25305,7 @@ const externalVocabularyDB = [
     "zh": "n. 肢;臂",
     "unit": 3,
     "example": "Cold numbs the limbs.",
-    "exampleZh": "這是一個關於「臂」的生活例句。"
+    "exampleZh": "冰冷使四肢麻木。"
   },
   {
     "id": 2813,
@@ -27222,7 +27222,7 @@ const externalVocabularyDB = [
     "zh": "v./n. 勺子;戽斗",
     "unit": 4,
     "example": "Now this is a scoop.",
-    "exampleZh": "這是一個關於「戽斗」的生活例句。"
+    "exampleZh": "現在這是一個獨家新聞。"
   },
   {
     "id": 3026,
@@ -28833,7 +28833,7 @@ const externalVocabularyDB = [
     "zh": "n. 年輕人",
     "unit": 4,
     "example": "Tom is a typical youngster.",
-    "exampleZh": "這是一個關於「年輕人」的生活例句。"
+    "exampleZh": "湯姆是個典型的年輕人。"
   },
   {
     "id": 3205,
@@ -30498,7 +30498,7 @@ const externalVocabularyDB = [
     "zh": "adj. 部落的;種族的",
     "unit": 4,
     "example": "What is your tribal town?",
-    "exampleZh": "這是一個關於「種族的」的生活例句。"
+    "exampleZh": "你的部落城鎮是什麼？"
   },
   {
     "id": 3390,
@@ -31398,7 +31398,7 @@ const externalVocabularyDB = [
     "zh": "v. 給(房間)配置(傢俱等);供應;提供",
     "unit": 4,
     "example": "You must furnish the house.",
-    "exampleZh": "這是一個關於「提供」的生活例句。"
+    "exampleZh": "你必須佈置房子。"
   },
   {
     "id": 3490,
@@ -31425,7 +31425,7 @@ const externalVocabularyDB = [
     "zh": "v. 催促;加速;趕緊",
     "unit": 4,
     "example": "He hastened back to his room.",
-    "exampleZh": "這是一個關於「趕緊」的生活例句。"
+    "exampleZh": "他趕緊回到自己的房間。"
   },
   {
     "id": 3493,
@@ -31596,7 +31596,7 @@ const externalVocabularyDB = [
     "zh": "v. 侵入,侵略",
     "unit": 4,
     "example": "China can invade Taiwan.",
-    "exampleZh": "這是一個關於「侵入,侵略」的生活例句。"
+    "exampleZh": "中國可以入侵臺灣。"
   },
   {
     "id": 3512,
@@ -32667,7 +32667,7 @@ const externalVocabularyDB = [
     "zh": "n. 原子",
     "unit": 4,
     "example": "The atom bomb went off.",
-    "exampleZh": "這是一個關於「原子」的生活例句。"
+    "exampleZh": "原子彈爆炸了。"
   },
   {
     "id": 3631,
@@ -32955,7 +32955,7 @@ const externalVocabularyDB = [
     "zh": "n. 公報;公告",
     "unit": 4,
     "example": "Tom put the list on the bulletin board.",
-    "exampleZh": "這是一個關於「公告」的生活例句。"
+    "exampleZh": "湯姆把名單貼在佈告欄上。"
   },
   {
     "id": 3663,
@@ -33180,7 +33180,7 @@ const externalVocabularyDB = [
     "zh": "v./n. 啁啾聲;唧唧聲",
     "unit": 4,
     "example": "My bird is chirping.",
-    "exampleZh": "這是一個關於「唧唧聲」的生活例句。"
+    "exampleZh": "我的鳥兒在嘰嘰喳喳地叫著。"
   },
   {
     "id": 3688,
@@ -33432,7 +33432,7 @@ const externalVocabularyDB = [
     "zh": "n. 寫作;作曲;作品;作文",
     "unit": 4,
     "example": "I love writing compositions.",
-    "exampleZh": "這是一個關於「作文」的生活例句。"
+    "exampleZh": "我喜歡寫作文。"
   },
   {
     "id": 3716,
@@ -35034,7 +35034,7 @@ const externalVocabularyDB = [
     "zh": "n. 歹徒,匪盜,流氓",
     "unit": 4,
     "example": "Tom is a gangster.",
-    "exampleZh": "這是一個關於「歹徒,匪盜,流氓」的生活例句。"
+    "exampleZh": "湯姆是一個黑幫。"
   },
   {
     "id": 3894,
@@ -35349,7 +35349,7 @@ const externalVocabularyDB = [
     "zh": "n. 憎恨,增惡;敵意",
     "unit": 4,
     "example": "Why all this hatred?",
-    "exampleZh": "這是一個關於「敵意」的生活例句。"
+    "exampleZh": "為什麼有這麼多仇恨？"
   },
   {
     "id": 3929,
@@ -36483,7 +36483,7 @@ const externalVocabularyDB = [
     "zh": "n. 名詞",
     "unit": 5,
     "example": "It's a countable noun.",
-    "exampleZh": "這是一個關於「名詞」的生活例句。"
+    "exampleZh": "這是一個可數名詞。"
   },
   {
     "id": 4055,
@@ -36798,7 +36798,7 @@ const externalVocabularyDB = [
     "zh": "n. 花瓣",
     "unit": 5,
     "example": "The petals are yellow.",
-    "exampleZh": "這是一個關於「花瓣」的生活例句。"
+    "exampleZh": "花瓣是黃色的。"
   },
   {
     "id": 4090,
@@ -38238,7 +38238,7 @@ const externalVocabularyDB = [
     "zh": "n. 技術人員,技師",
     "unit": 5,
     "example": "Tom is a technician.",
-    "exampleZh": "這是一個關於「技術人員,技師」的生活例句。"
+    "exampleZh": "湯姆是一名技術員。"
   },
   {
     "id": 4250,
@@ -38787,7 +38787,7 @@ const externalVocabularyDB = [
     "zh": "adj. 城市的;市民的",
     "unit": 5,
     "example": "It's my civic duty.",
-    "exampleZh": "這是一個關於「市民的」的生活例句。"
+    "exampleZh": "這是我的公民義務。"
   },
   {
     "id": 4311,
@@ -38823,7 +38823,7 @@ const externalVocabularyDB = [
     "zh": "adj. 洲的;大陸的",
     "unit": 5,
     "example": "I'm the continental champion.",
-    "exampleZh": "這是一個關於「大陸的」的生活例句。"
+    "exampleZh": "我是大陸冠軍。"
   },
   {
     "id": 4315,
@@ -38922,7 +38922,7 @@ const externalVocabularyDB = [
     "zh": "adj. (火等)熄滅了的;絕種的",
     "unit": 5,
     "example": "Can Berber go extinct?",
-    "exampleZh": "這是一個關於「絕種的」的生活例句。"
+    "exampleZh": "柏柏爾人會滅絕嗎？"
   },
   {
     "id": 4326,
@@ -39840,7 +39840,7 @@ const externalVocabularyDB = [
     "zh": "v. 爭取;競爭;搏鬥;聲稱",
     "unit": 5,
     "example": "They are contending for the prize.",
-    "exampleZh": "這是一個關於「聲稱」的生活例句。"
+    "exampleZh": "他們正在爭奪這個獎項。"
   },
   {
     "id": 4428,
@@ -40074,7 +40074,7 @@ const externalVocabularyDB = [
     "zh": "v. 狼吞虎嚥;(火雞)咯咯地叫",
     "unit": 5,
     "example": "The masses gobble it up.",
-    "exampleZh": "這是一個關於「(火雞)咯咯地叫」的生活例句。"
+    "exampleZh": "群眾吞噬它。"
   },
   {
     "id": 4454,
@@ -40218,7 +40218,7 @@ const externalVocabularyDB = [
     "zh": "adj./v. 表明;顯示",
     "unit": 5,
     "example": "Why haven't you manifested yet?",
-    "exampleZh": "這是一個關於「顯示」的生活例句。"
+    "exampleZh": "怎麼還沒現身？"
   },
   {
     "id": 4470,
@@ -40236,7 +40236,7 @@ const externalVocabularyDB = [
     "zh": "v. 使混合;使相混;交往",
     "unit": 5,
     "example": "Tom mingled with the crowd.",
-    "exampleZh": "這是一個關於「交往」的生活例句。"
+    "exampleZh": "湯姆混入人群中。"
   },
   {
     "id": 4472,
@@ -40326,7 +40326,7 @@ const externalVocabularyDB = [
     "zh": "v. 無意中聽到;偷聽",
     "unit": 5,
     "example": "What did Tom overhear?",
-    "exampleZh": "這是一個關於「偷聽」的生活例句。"
+    "exampleZh": "湯姆無意中聽到了什麼？"
   },
   {
     "id": 4482,
@@ -40470,7 +40470,7 @@ const externalVocabularyDB = [
     "zh": "v. 駁斥;反駁",
     "unit": 5,
     "example": "Then, you can refute it.",
-    "exampleZh": "這是一個關於「反駁」的生活例句。"
+    "exampleZh": "那麼，你就可以反駁它。"
   },
   {
     "id": 4498,
@@ -41010,7 +41010,7 @@ const externalVocabularyDB = [
     "zh": "n. 粉刺",
     "unit": 5,
     "example": "Oliver has an acne problem.",
-    "exampleZh": "這是一個關於「粉刺」的生活例句。"
+    "exampleZh": "奧利佛有痤瘡問題。"
   },
   {
     "id": 4558,
@@ -41613,7 +41613,7 @@ const externalVocabularyDB = [
     "zh": "v./n. 沼澤;泥塘",
     "unit": 5,
     "example": "Tom bought 200 bog rolls online.",
-    "exampleZh": "這是一個關於「泥塘」的生活例句。"
+    "exampleZh": "湯姆在網路上買了 200 個沼澤卷。"
   },
   {
     "id": 4625,
@@ -41649,7 +41649,7 @@ const externalVocabularyDB = [
     "zh": "n. (有篷的)貨攤;崗亭;(餐廳等)雅座",
     "unit": 5,
     "example": "Sami sat in the booth.",
-    "exampleZh": "這是一個關於「(餐廳等)雅座」的生活例句。"
+    "exampleZh": "薩米坐在包廂裡。"
   },
   {
     "id": 4629,
@@ -41964,7 +41964,7 @@ const externalVocabularyDB = [
     "zh": "n. 照顧者;管理人",
     "unit": 5,
     "example": "Tom is a caretaker.",
-    "exampleZh": "這是一個關於「管理人」的生活例句。"
+    "exampleZh": "湯姆是一名看門人。"
   },
   {
     "id": 4664,
@@ -41991,7 +41991,7 @@ const externalVocabularyDB = [
     "zh": "n. 鯉魚",
     "unit": 5,
     "example": "I caught a carp.",
-    "exampleZh": "這是一個關於「鯉魚」的生活例句。"
+    "exampleZh": "我釣到了一條鯉魚。"
   },
   {
     "id": 4667,
@@ -42252,7 +42252,7 @@ const externalVocabularyDB = [
     "zh": "n. 黑猩猩",
     "unit": 5,
     "example": "What do chimpanzees eat?",
-    "exampleZh": "這是一個關於「黑猩猩」的生活例句。"
+    "exampleZh": "黑猩猩吃什麼？"
   },
   {
     "id": 4696,
@@ -42297,7 +42297,7 @@ const externalVocabularyDB = [
     "zh": "n. 氏族;部落;家族",
     "unit": 5,
     "example": "I belong to a clan.",
-    "exampleZh": "這是一個關於「家族」的生活例句。"
+    "exampleZh": "我屬於一個氏族。"
   },
   {
     "id": 4701,
@@ -42306,7 +42306,7 @@ const externalVocabularyDB = [
     "zh": "v./n. 扣子;鉤子;夾子;緊握;緊抱",
     "unit": 5,
     "example": "This clasp won't fasten.",
-    "exampleZh": "這是一個關於「緊抱」的生活例句。"
+    "exampleZh": "這個釦子扣不緊。"
   },
   {
     "id": 4702,
@@ -42468,7 +42468,7 @@ const externalVocabularyDB = [
     "zh": "n. 共產主義",
     "unit": 5,
     "example": "Communism ruined everything here.",
-    "exampleZh": "這是一個關於「共產主義」的生活例句。"
+    "exampleZh": "共產主義毀了這裡的一切。"
   },
   {
     "id": 4720,
@@ -42477,7 +42477,7 @@ const externalVocabularyDB = [
     "zh": "adj./n. 共產主義者",
     "unit": 5,
     "example": "Ziri is a communist.",
-    "exampleZh": "這是一個關於「/n. 共產主義者」的生活例句。"
+    "exampleZh": "齊裡是共產主義者。"
   },
   {
     "id": 4721,
@@ -42711,7 +42711,7 @@ const externalVocabularyDB = [
     "zh": "n. 顧問;(學生的)輔導員;律師",
     "unit": 5,
     "example": "Tom is a counselor.",
-    "exampleZh": "這是一個關於「律師」的生活例句。"
+    "exampleZh": "湯姆是一名輔導員。"
   },
   {
     "id": 4747,
@@ -42774,7 +42774,7 @@ const externalVocabularyDB = [
     "zh": "v./n. 嬰兒床",
     "unit": 5,
     "example": "Fadil died in his crib.",
-    "exampleZh": "這是一個關於「/n. 嬰兒床」的生活例句。"
+    "exampleZh": "法迪爾死在他的嬰兒床上。"
   },
   {
     "id": 4754,
@@ -42963,7 +42963,7 @@ const externalVocabularyDB = [
     "zh": "n. 目的地,終點",
     "unit": 5,
     "example": "What is his destination?",
-    "exampleZh": "這是一個關於「目的地,終點」的生活例句。"
+    "exampleZh": "他的目的地是什麼？"
   },
   {
     "id": 4775,
@@ -43179,7 +43179,7 @@ const externalVocabularyDB = [
     "zh": "n. 鰻魚",
     "unit": 5,
     "example": "I caught an eel.",
-    "exampleZh": "這是一個關於「鰻魚」的生活例句。"
+    "exampleZh": "我抓到了一條鰻魚。"
   },
   {
     "id": 4799,
@@ -43215,7 +43215,7 @@ const externalVocabularyDB = [
     "zh": "n. 登記;入會;入伍;登記人數",
     "unit": 5,
     "example": "Enrollment will be free.",
-    "exampleZh": "這是一個關於「登記人數」的生活例句。"
+    "exampleZh": "註冊將是免費的。"
   },
   {
     "id": 4803,
@@ -43413,7 +43413,7 @@ const externalVocabularyDB = [
     "zh": "未婚夫",
     "unit": 5,
     "example": "This is my fiancée.",
-    "exampleZh": "這是一個關於「未婚夫」的生活例句。"
+    "exampleZh": "這是我的未婚妻。"
   },
   {
     "id": 4825,
@@ -43539,7 +43539,7 @@ const externalVocabularyDB = [
     "zh": "n. 敵人;反對者",
     "unit": 5,
     "example": "Are you friend or foe?",
-    "exampleZh": "這是一個關於「反對者」的生活例句。"
+    "exampleZh": "你是朋友還是敵人？"
   },
   {
     "id": 4839,
@@ -43629,7 +43629,7 @@ const externalVocabularyDB = [
     "zh": "v./n. 煙;氣;憤怒",
     "unit": 5,
     "example": "We're running on fumes.",
-    "exampleZh": "這是一個關於「憤怒」的生活例句。"
+    "exampleZh": "我們正在冒煙。"
   },
   {
     "id": 4849,
@@ -43989,7 +43989,7 @@ const externalVocabularyDB = [
     "zh": "v./n. 常去之處",
     "unit": 5,
     "example": "This doll is haunted.",
-    "exampleZh": "這是一個關於「/n. 常去之處」的生活例句。"
+    "exampleZh": "這個娃娃鬧鬼了。"
   },
   {
     "id": 4889,
@@ -44025,7 +44025,7 @@ const externalVocabularyDB = [
     "zh": "v./n. 報信者;使者;先驅",
     "unit": 5,
     "example": "This flower heralds spring.",
-    "exampleZh": "這是一個關於「先驅」的生活例句。"
+    "exampleZh": "這朵花預示著春天。"
   },
   {
     "id": 4893,
@@ -44088,7 +44088,7 @@ const externalVocabularyDB = [
     "zh": "v./n. 嘶嘶聲;噓聲",
     "unit": 5,
     "example": "Tom heard a hiss.",
-    "exampleZh": "這是一個關於「噓聲」的生活例句。"
+    "exampleZh": "湯姆聽到嘶嘶聲。"
   },
   {
     "id": 4900,
@@ -44133,7 +44133,7 @@ const externalVocabularyDB = [
     "zh": "n. 蹄",
     "unit": 5,
     "example": "I'm not hoofing it.",
-    "exampleZh": "這是一個關於「蹄」的生活例句。"
+    "exampleZh": "我不是用蹄子踢它。"
   },
   {
     "id": 4905,
@@ -44151,7 +44151,7 @@ const externalVocabularyDB = [
     "zh": "n. 人質;抵押品",
     "unit": 5,
     "example": "Am I a hostage?",
-    "exampleZh": "這是一個關於「抵押品」的生活例句。"
+    "exampleZh": "我是人質嗎？"
   },
   {
     "id": 4907,
@@ -44340,7 +44340,7 @@ const externalVocabularyDB = [
     "zh": "n. 小島",
     "unit": 5,
     "example": "The boxed pasta is in isle 9.",
-    "exampleZh": "這是一個關於「小島」的生活例句。"
+    "exampleZh": "盒裝義大利麵位於第 9 島。"
   },
   {
     "id": 4928,
@@ -44529,7 +44529,7 @@ const externalVocabularyDB = [
     "zh": "n. 緯度;",
     "unit": 5,
     "example": "Allow him more latitude.",
-    "exampleZh": "這是一個關於「latitude」的生活例句。"
+    "exampleZh": "給他更多的自由。"
   },
   {
     "id": 4949,
@@ -44538,7 +44538,7 @@ const externalVocabularyDB = [
     "zh": "n. 立法者",
     "unit": 5,
     "example": "Sami isn't a lawmaker.",
-    "exampleZh": "這是一個關於「立法者」的生活例句。"
+    "exampleZh": "薩米不是立法者。"
   },
   {
     "id": 4950,
@@ -44817,7 +44817,7 @@ const externalVocabularyDB = [
     "zh": "v./n. 糊狀物;混合飼料",
     "unit": 5,
     "example": "I mashed the medlars.",
-    "exampleZh": "這是一個關於「混合飼料」的生活例句。"
+    "exampleZh": "我把枸杞搗碎了。"
   },
   {
     "id": 4981,
@@ -44880,7 +44880,7 @@ const externalVocabularyDB = [
     "zh": "n. 美人魚",
     "unit": 5,
     "example": "Mary is a mermaid.",
-    "exampleZh": "這是一個關於「美人魚」的生活例句。"
+    "exampleZh": "瑪麗是一條美人魚。"
   },
   {
     "id": 4988,
@@ -45051,7 +45051,7 @@ const externalVocabularyDB = [
     "zh": "n. 割草機;收割機",
     "unit": 6,
     "example": "He fixed the mower.",
-    "exampleZh": "這是一個關於「收割機」的生活例句。"
+    "exampleZh": "他修好了割草機。"
   },
   {
     "id": 5007,
@@ -45132,7 +45132,7 @@ const externalVocabularyDB = [
     "zh": "v./n. 細咬;啃;少量",
     "unit": 6,
     "example": "I love to nibble cheese.",
-    "exampleZh": "這是一個關於「少量」的生活例句。"
+    "exampleZh": "我喜歡啃起司。"
   },
   {
     "id": 5016,
@@ -45204,7 +45204,7 @@ const externalVocabularyDB = [
     "zh": "adj./n. 裸體畫像;裸體",
     "unit": 6,
     "example": "He sleeps in the nude.",
-    "exampleZh": "這是一個關於「裸體」的生活例句。"
+    "exampleZh": "他裸體睡覺。"
   },
   {
     "id": 5024,
@@ -45294,7 +45294,7 @@ const externalVocabularyDB = [
     "zh": "n. 氣味",
     "unit": 6,
     "example": "He has body odor.",
-    "exampleZh": "這是一個關於「氣味」的生活例句。"
+    "exampleZh": "他有體臭。"
   },
   {
     "id": 5034,
@@ -45366,7 +45366,7 @@ const externalVocabularyDB = [
     "zh": "v./n. 裝飾品;裝飾",
     "unit": 6,
     "example": "It just works as an ornament.",
-    "exampleZh": "這是一個關於「裝飾」的生活例句。"
+    "exampleZh": "它只是起到裝飾品的作用。"
   },
   {
     "id": 5042,
@@ -45384,7 +45384,7 @@ const externalVocabularyDB = [
     "zh": "n. 駝鳥;有駝鳥心理的人",
     "unit": 6,
     "example": "Is that an ostrich?",
-    "exampleZh": "這是一個關於「有駝鳥心理的人」的生活例句。"
+    "exampleZh": "那是鴕鳥嗎？"
   },
   {
     "id": 5044,
@@ -45438,7 +45438,7 @@ const externalVocabularyDB = [
     "zh": "v./n. 溢出;過剩;泛濫",
     "unit": 6,
     "example": "That bucket is overflowing.",
-    "exampleZh": "這是一個關於「泛濫」的生活例句。"
+    "exampleZh": "那個桶子已經滿了。"
   },
   {
     "id": 5050,
@@ -45672,7 +45672,7 @@ const externalVocabularyDB = [
     "zh": "v./n. (鳥類的)棲息處",
     "unit": 6,
     "example": "A perch is a fish.",
-    "exampleZh": "這是一個關於「/n. (鳥類的)棲息處」的生活例句。"
+    "exampleZh": "鱸魚是一種魚。"
   },
   {
     "id": 5076,
@@ -45726,7 +45726,7 @@ const externalVocabularyDB = [
     "zh": "n. 香客,朝聖者",
     "unit": 6,
     "example": "Tom is a pilgrim.",
-    "exampleZh": "這是一個關於「香客,朝聖者」的生活例句。"
+    "exampleZh": "湯姆是一位朝聖者。"
   },
   {
     "id": 5082,
@@ -45825,7 +45825,7 @@ const externalVocabularyDB = [
     "zh": "v./n. 犁;除雪機",
     "unit": 6,
     "example": "Why is Tom plowing?",
-    "exampleZh": "這是一個關於「除雪機」的生活例句。"
+    "exampleZh": "湯姆為什麼要犁地？"
   },
   {
     "id": 5093,
@@ -45852,7 +45852,7 @@ const externalVocabularyDB = [
     "zh": "n. 錢包;皮夾子;袖珍本",
     "unit": 6,
     "example": "Is anything missing from your pocketbook?",
-    "exampleZh": "這是一個關於「袖珍本」的生活例句。"
+    "exampleZh": "你的錢包裡缺了什麼嗎？"
   },
   {
     "id": 5096,
@@ -46248,7 +46248,7 @@ const externalVocabularyDB = [
     "zh": "v./n. 統治;在位期間",
     "unit": 6,
     "example": "My reign is supreme.",
-    "exampleZh": "這是一個關於「在位期間」的生活例句。"
+    "exampleZh": "我的統治是至高無上的。"
   },
   {
     "id": 5140,
@@ -46356,7 +46356,7 @@ const externalVocabularyDB = [
     "zh": "v./n. 反叛;起義;反感",
     "unit": 6,
     "example": "Let the revolt begin.",
-    "exampleZh": "這是一個關於「反感」的生活例句。"
+    "exampleZh": "讓叛亂開始吧。"
   },
   {
     "id": 5152,
@@ -46401,7 +46401,7 @@ const externalVocabularyDB = [
     "zh": "v./n. 步槍,來福槍",
     "unit": 6,
     "example": "I want a rifle.",
-    "exampleZh": "這是一個關於「/n. 步槍,來福槍」的生活例句。"
+    "exampleZh": "我想要一把步槍。"
   },
   {
     "id": 5157,
@@ -46500,7 +46500,7 @@ const externalVocabularyDB = [
     "zh": "v./n. 馬鞍;(自行車、摩托車的)車座",
     "unit": 6,
     "example": "Saddle up your horses.",
-    "exampleZh": "這是一個關於「(自行車、摩托車的)車座」的生活例句。"
+    "exampleZh": "給你的馬備上馬鞍。"
   },
   {
     "id": 5168,
@@ -46545,7 +46545,7 @@ const externalVocabularyDB = [
     "zh": "adj./v./n. 野蠻人",
     "unit": 6,
     "example": "Tom was savagely beaten.",
-    "exampleZh": "這是一個關於「/v./n. 野蠻人」的生活例句。"
+    "exampleZh": "湯姆遭到毒打。"
   },
   {
     "id": 5173,
@@ -46644,7 +46644,7 @@ const externalVocabularyDB = [
     "zh": "n. 雕刻家",
     "unit": 6,
     "example": "Tom is a sculptor.",
-    "exampleZh": "這是一個關於「雕刻家」的生活例句。"
+    "exampleZh": "湯姆是一位雕塑家。"
   },
   {
     "id": 5184,
@@ -46842,7 +46842,7 @@ const externalVocabularyDB = [
     "zh": "n. 蠶",
     "unit": 6,
     "example": "The silkworm is spinning a thread.",
-    "exampleZh": "這是一個關於「蠶」的生活例句。"
+    "exampleZh": "蠶正在吐絲。"
   },
   {
     "id": 5206,
@@ -46950,7 +46950,7 @@ const externalVocabularyDB = [
     "zh": "n. 運動鞋",
     "unit": 6,
     "example": "My sneakers got wet.",
-    "exampleZh": "這是一個關於「運動鞋」的生活例句。"
+    "exampleZh": "我的運動鞋濕了。"
   },
   {
     "id": 5218,
@@ -46977,7 +46977,7 @@ const externalVocabularyDB = [
     "zh": "v./n. 噴鼻息;噴氣聲",
     "unit": 6,
     "example": "The deer began snorting.",
-    "exampleZh": "這是一個關於「噴氣聲」的生活例句。"
+    "exampleZh": "鹿開始噴鼻息。"
   },
   {
     "id": 5221,
@@ -47022,7 +47022,7 @@ const externalVocabularyDB = [
     "zh": "adj./n. 君主;元首;主權國家",
     "unit": 6,
     "example": "We need a sovereign.",
-    "exampleZh": "這是一個關於「主權國家」的生活例句。"
+    "exampleZh": "我們需要一個主權國家。"
   },
   {
     "id": 5226,
@@ -47058,7 +47058,7 @@ const externalVocabularyDB = [
     "zh": "n. 樣品;標本",
     "unit": 6,
     "example": "This is a very rare specimen.",
-    "exampleZh": "這是一個關於「標本」的生活例句。"
+    "exampleZh": "這是一個非常罕見的標本。"
   },
   {
     "id": 5230,
@@ -47526,7 +47526,7 @@ const externalVocabularyDB = [
     "zh": "n. 敘述者;(銀行)出納員",
     "unit": 6,
     "example": "Ziri is a teller.",
-    "exampleZh": "這是一個關於「(銀行)出納員」的生活例句。"
+    "exampleZh": "齊裡是一名出納員。"
   },
   {
     "id": 5282,
@@ -47589,7 +47589,7 @@ const externalVocabularyDB = [
     "zh": "n. 刺;棘;惱人的事或人",
     "unit": 6,
     "example": "It has no thorns.",
-    "exampleZh": "這是一個關於「惱人的事或人」的生活例句。"
+    "exampleZh": "它沒有刺。"
   },
   {
     "id": 5289,
@@ -47787,7 +47787,7 @@ const externalVocabularyDB = [
     "zh": "v./n. 踐踏;蹂躪;踐踏聲",
     "unit": 6,
     "example": "They trampled each other.",
-    "exampleZh": "這是一個關於「踐踏聲」的生活例句。"
+    "exampleZh": "他們互相踐踏。"
   },
   {
     "id": 5311,
@@ -47814,7 +47814,7 @@ const externalVocabularyDB = [
     "zh": "v./n. 溝;溝渠;戰壕",
     "unit": 6,
     "example": "Boris hid in a trench.",
-    "exampleZh": "這是一個關於「戰壕」的生活例句。"
+    "exampleZh": "鮑里斯躲在戰壕裡。"
   },
   {
     "id": 5314,
@@ -48093,7 +48093,7 @@ const externalVocabularyDB = [
     "zh": "n. vigor",
     "unit": 6,
     "example": "I am without vigor.",
-    "exampleZh": "這是一個關於「vigor」的生活例句。"
+    "exampleZh": "我沒有力氣。"
   },
   {
     "id": 5345,
@@ -48624,7 +48624,7 @@ const externalVocabularyDB = [
     "zh": "adj. 體積大的;笨重的",
     "unit": 6,
     "example": "This box is too bulky to carry.",
-    "exampleZh": "這是一個關於「笨重的」的生活例句。"
+    "exampleZh": "這個盒子太大了，搬不動。"
   },
   {
     "id": 5404,
@@ -48669,7 +48669,7 @@ const externalVocabularyDB = [
     "zh": "adj. 口語的;會話的",
     "unit": 6,
     "example": "She speaks with a colloquial Kabyle.",
-    "exampleZh": "這是一個關於「會話的」的生活例句。"
+    "exampleZh": "她用卡比爾口語說話。"
   },
   {
     "id": 5409,
@@ -48831,7 +48831,7 @@ const externalVocabularyDB = [
     "zh": "adj. 漸增的;蓄積的;累計的",
     "unit": 6,
     "example": "Lost sleep has a cumulative effect, I've been told.",
-    "exampleZh": "這是一個關於「累計的」的生活例句。"
+    "exampleZh": "有人告訴我，睡眠不足會產生累積效應。"
   },
   {
     "id": 5427,
@@ -48840,7 +48840,7 @@ const externalVocabularyDB = [
     "zh": "adj. 習慣上的;按慣例的",
     "unit": 6,
     "example": "It is no longer customary.",
-    "exampleZh": "這是一個關於「按慣例的」的生活例句。"
+    "exampleZh": "這已不再是慣例。"
   },
   {
     "id": 5428,
@@ -49200,7 +49200,7 @@ const externalVocabularyDB = [
     "zh": "adj. 不言明的;含蓄的",
     "unit": 6,
     "example": "He trusted her implicitly.",
-    "exampleZh": "這是一個關於「含蓄的」的生活例句。"
+    "exampleZh": "他毫不掩飾地信任她。"
   },
   {
     "id": 5468,
@@ -49371,7 +49371,7 @@ const externalVocabularyDB = [
     "zh": "adj. 蒼翠繁茂的;豐富的",
     "unit": 6,
     "example": "Tom is a lush.",
-    "exampleZh": "這是一個關於「豐富的」的生活例句。"
+    "exampleZh": "湯姆是個鬱鬱蔥蔥的人。"
   },
   {
     "id": 5487,
@@ -50262,7 +50262,7 @@ const externalVocabularyDB = [
     "zh": "v. 暗殺,詆毀",
     "unit": 6,
     "example": "Tom assassinated the king.",
-    "exampleZh": "這是一個關於「暗殺,詆毀」的生活例句。"
+    "exampleZh": "湯姆刺殺了國王。"
   },
   {
     "id": 5586,
@@ -50343,7 +50343,7 @@ const externalVocabularyDB = [
     "zh": "v. 砲擊;不斷攻擊;連續提出問題",
     "unit": 6,
     "example": "Your city is being bombarded.",
-    "exampleZh": "這是一個關於「連續提出問題」的生活例句。"
+    "exampleZh": "你的城市正在遭受轟炸。"
   },
   {
     "id": 5595,
@@ -50379,7 +50379,7 @@ const externalVocabularyDB = [
     "zh": "v. 使文明,使開化",
     "unit": 6,
     "example": "Russians are civilized people.",
-    "exampleZh": "這是一個關於「使文明,使開化」的生活例句。"
+    "exampleZh": "俄羅斯人是文明人。"
   },
   {
     "id": 5599,
@@ -50469,7 +50469,7 @@ const externalVocabularyDB = [
     "zh": "v. 濃縮;縮短;凝結",
     "unit": 6,
     "example": "A cloud is condensed steam.",
-    "exampleZh": "這是一個關於「凝結」的生活例句。"
+    "exampleZh": "雲是凝結的蒸汽。"
   },
   {
     "id": 5609,
@@ -50613,7 +50613,7 @@ const externalVocabularyDB = [
     "zh": "v. 分開;拆卸;派遣",
     "unit": 6,
     "example": "I have detached it.",
-    "exampleZh": "這是一個關於「派遣」的生活例句。"
+    "exampleZh": "我已經把它拆下來了。"
   },
   {
     "id": 5625,
@@ -50631,7 +50631,7 @@ const externalVocabularyDB = [
     "zh": "v. 嚇住;使斷念",
     "unit": 6,
     "example": "Nothing can deter me.",
-    "exampleZh": "這是一個關於「使斷念」的生活例句。"
+    "exampleZh": "沒有什麼可以阻止我。"
   },
   {
     "id": 5627,
@@ -50739,7 +50739,7 @@ const externalVocabularyDB = [
     "zh": "v. 迫使離開;取代;免職",
     "unit": 6,
     "example": "He has a displaced fracture.",
-    "exampleZh": "這是一個關於「免職」的生活例句。"
+    "exampleZh": "他骨折移位。"
   },
   {
     "id": 5639,
@@ -50820,7 +50820,7 @@ const externalVocabularyDB = [
     "zh": "v. 上船(或飛機等);從事",
     "unit": 6,
     "example": "Now it's time to embark.",
-    "exampleZh": "這是一個關於「從事」的生活例句。"
+    "exampleZh": "現在是時候出發了。"
   },
   {
     "id": 5648,
@@ -50955,7 +50955,7 @@ const externalVocabularyDB = [
     "zh": "v. 使公式化;規劃;配製",
     "unit": 6,
     "example": "Rodrigo formulated a plan.",
-    "exampleZh": "這是一個關於「配製」的生活例句。"
+    "exampleZh": "羅德里戈制定了一個計劃。"
   },
   {
     "id": 5663,
@@ -51018,7 +51018,7 @@ const externalVocabularyDB = [
     "zh": "v. 劈;砍",
     "unit": 6,
     "example": "Did you get hacked?",
-    "exampleZh": "這是一個關於「砍」的生活例句。"
+    "exampleZh": "你被黑了嗎？"
   },
   {
     "id": 5670,
@@ -51090,7 +51090,7 @@ const externalVocabularyDB = [
     "zh": "v. 注射(藥液等)",
     "unit": 6,
     "example": "He injected some medicine.",
-    "exampleZh": "這是一個關於「注射(藥液等)」的生活例句。"
+    "exampleZh": "他注射了一些藥。"
   },
   {
     "id": 5678,
@@ -51180,7 +51180,7 @@ const externalVocabularyDB = [
     "zh": "v. 毀損;損傷;玷污",
     "unit": 6,
     "example": "Go to Mars already.",
-    "exampleZh": "這是一個關於「玷污」的生活例句。"
+    "exampleZh": "已經去火星了。"
   },
   {
     "id": 5688,
@@ -51252,7 +51252,7 @@ const externalVocabularyDB = [
     "zh": "v. 養育;滋養",
     "unit": 6,
     "example": "Milk nourishes a baby.",
-    "exampleZh": "這是一個關於「滋養」的生活例句。"
+    "exampleZh": "牛奶可以滋養嬰兒。"
   },
   {
     "id": 5696,
@@ -51279,7 +51279,7 @@ const externalVocabularyDB = [
     "zh": "v. 壓迫;壓制",
     "unit": 6,
     "example": "They are being oppressed.",
-    "exampleZh": "這是一個關於「壓制」的生活例句。"
+    "exampleZh": "他們受到壓迫。"
   },
   {
     "id": 5699,
@@ -51315,7 +51315,7 @@ const externalVocabularyDB = [
     "zh": "v. 挨戶兜售;沿街叫賣",
     "unit": 6,
     "example": "Peddle your wares elsewhere.",
-    "exampleZh": "這是一個關於「沿街叫賣」的生活例句。"
+    "exampleZh": "在其他地方兜售你的商品。"
   },
   {
     "id": 5703,
@@ -51351,7 +51351,7 @@ const externalVocabularyDB = [
     "zh": "v. 仔細考慮;衡量;回想",
     "unit": 6,
     "example": "Bob pondered the subject.",
-    "exampleZh": "這是一個關於「回想」的生活例句。"
+    "exampleZh": "鮑伯沉思著這個話題。"
   },
   {
     "id": 5707,
@@ -51423,7 +51423,7 @@ const externalVocabularyDB = [
     "zh": "v. 對...起訴;告發",
     "unit": 6,
     "example": "Tom will be prosecuted.",
-    "exampleZh": "這是一個關於「告發」的生活例句。"
+    "exampleZh": "湯姆將被起訴。"
   },
   {
     "id": 5715,
@@ -51522,7 +51522,7 @@ const externalVocabularyDB = [
     "zh": "v. 抑制;鎮壓",
     "unit": 6,
     "example": "Don't repress your emotions.",
-    "exampleZh": "這是一個關於「鎮壓」的生活例句。"
+    "exampleZh": "不要壓抑你的情緒。"
   },
   {
     "id": 5726,
@@ -51567,7 +51567,7 @@ const externalVocabularyDB = [
     "zh": "v. 冒充顧客在商店內偷竊",
     "unit": 6,
     "example": "Why is shoplifting bad?",
-    "exampleZh": "這是一個關於「冒充顧客在商店內偷竊」的生活例句。"
+    "exampleZh": "為什麼入店行竊是不好的？"
   },
   {
     "id": 5731,
@@ -51819,7 +51819,7 @@ const externalVocabularyDB = [
     "zh": "v. 統一;聯合;使一致",
     "unit": 6,
     "example": "The tramcars unify the city.",
-    "exampleZh": "這是一個關於「使一致」的生活例句。"
+    "exampleZh": "有軌電車將城市統一起來。"
   },
   {
     "id": 5759,
@@ -51909,7 +51909,7 @@ const externalVocabularyDB = [
     "zh": "v. 追求;追逐",
     "unit": 6,
     "example": "He's a bit woo-woo.",
-    "exampleZh": "這是一個關於「追逐」的生活例句。"
+    "exampleZh": "他有點嗚嗚。"
   },
   {
     "id": 5769,
@@ -52035,7 +52035,7 @@ const externalVocabularyDB = [
     "zh": "n. 抽象",
     "unit": 6,
     "example": "It's a metaphysical abstraction.",
-    "exampleZh": "這是一個關於「抽象」的生活例句。"
+    "exampleZh": "這是一種形而上的抽象。"
   },
   {
     "id": 5783,
@@ -52143,7 +52143,7 @@ const externalVocabularyDB = [
     "zh": "n. 激進主義份子;行動主義者",
     "unit": 6,
     "example": "Tom is an activist.",
-    "exampleZh": "這是一個關於「行動主義者」的生活例句。"
+    "exampleZh": "湯姆是一位活動家。"
   },
   {
     "id": 5795,
@@ -52287,7 +52287,7 @@ const externalVocabularyDB = [
     "zh": "n. 分析師",
     "unit": 6,
     "example": "He's an analyst now.",
-    "exampleZh": "這是一個關於「分析師」的生活例句。"
+    "exampleZh": "他現在是一名分析師。"
   },
   {
     "id": 5811,
@@ -52377,7 +52377,7 @@ const externalVocabularyDB = [
     "zh": "n. 反義字",
     "unit": 6,
     "example": "These words are antonyms.",
-    "exampleZh": "這是一個關於「反義字」的生活例句。"
+    "exampleZh": "這些詞就是反義詞。"
   },
   {
     "id": 5821,
@@ -52584,7 +52584,7 @@ const externalVocabularyDB = [
     "zh": "n. 奴隸身分;奴役;束縛",
     "unit": 6,
     "example": "Henrietta's main kink is bondage.",
-    "exampleZh": "這是一個關於「束縛」的生活例句。"
+    "exampleZh": "亨麗埃塔的主要怪癖是束縛。"
   },
   {
     "id": 5844,
@@ -52854,7 +52854,7 @@ const externalVocabularyDB = [
     "zh": "n. 洞;(身體的)腔;(牙的)蛀洞",
     "unit": 6,
     "example": "Tom has a cavity.",
-    "exampleZh": "這是一個關於「(牙的)蛀洞」的生活例句。"
+    "exampleZh": "湯姆有一個空洞。"
   },
   {
     "id": 5874,
@@ -52971,7 +52971,7 @@ const externalVocabularyDB = [
     "zh": "v./n. 緊握;緊咬",
     "unit": 6,
     "example": "I clench my cooch.",
-    "exampleZh": "這是一個關於「緊咬」的生活例句。"
+    "exampleZh": "我握緊我的陰戶。"
   },
   {
     "id": 5887,
@@ -53187,7 +53187,7 @@ const externalVocabularyDB = [
     "zh": "n. 國會女議員;女眾議員",
     "unit": 6,
     "example": "The congresswoman released a statement on Facebook.",
-    "exampleZh": "這是一個關於「女眾議員」的生活例句。"
+    "exampleZh": "這位女議員在臉書上發表了一份宣告。"
   },
   {
     "id": 5911,
@@ -53241,7 +53241,7 @@ const externalVocabularyDB = [
     "zh": "adj./n. 成分;組成的要素;選民",
     "unit": 6,
     "example": "Do they represent their constituents?",
-    "exampleZh": "這是一個關於「選民」的生活例句。"
+    "exampleZh": "他們代表他們的選民嗎？"
   },
   {
     "id": 5917,
@@ -53340,7 +53340,7 @@ const externalVocabularyDB = [
     "zh": "n. 兵團;部隊;團",
     "unit": 6,
     "example": "He joined the Marine Corps.",
-    "exampleZh": "這是一個關於「團」的生活例句。"
+    "exampleZh": "他加入了海軍陸戰隊。"
   },
   {
     "id": 5928,
@@ -53475,7 +53475,7 @@ const externalVocabularyDB = [
     "zh": "v./n. 酥皮點心(水果派)",
     "unit": 6,
     "example": "I ate crumbled bread.",
-    "exampleZh": "這是一個關於「/n. 酥皮點心(水果派)」的生活例句。"
+    "exampleZh": "我吃了碎麵包。"
   },
   {
     "id": 5943,
@@ -53790,7 +53790,7 @@ const externalVocabularyDB = [
     "zh": "adj./n. 不贊成者;持不同政見者",
     "unit": 6,
     "example": "Dissidents aren't tolerated here.",
-    "exampleZh": "這是一個關於「持不同政見者」的生活例句。"
+    "exampleZh": "這裡不容忍持不同政見者。"
   },
   {
     "id": 5978,
@@ -53970,7 +53970,7 @@ const externalVocabularyDB = [
     "zh": "n. 狂喜;入迷",
     "unit": 6,
     "example": "Ecstasy is the upper system's drug.",
-    "exampleZh": "這是一個關於「入迷」的生活例句。"
+    "exampleZh": "搖頭丸是上位系統的藥物。"
   },
   {
     "id": 5998,
@@ -54069,7 +54069,7 @@ const externalVocabularyDB = [
     "zh": "n. 提高,增加",
     "unit": 7,
     "example": "Numerous other enhancements were added.",
-    "exampleZh": "這是一個關於「提高,增加」的生活例句。"
+    "exampleZh": "增加了許多其他增強功能。"
   },
   {
     "id": 6009,
@@ -54123,7 +54123,7 @@ const externalVocabularyDB = [
     "zh": "adj./n. 相等物;等價物",
     "unit": 7,
     "example": "Give me the equivalent in dollars.",
-    "exampleZh": "這是一個關於「等價物」的生活例句。"
+    "exampleZh": "請給我等值的美元。"
   },
   {
     "id": 6015,
@@ -54510,7 +54510,7 @@ const externalVocabularyDB = [
     "zh": "adj./n. 畫像",
     "unit": 7,
     "example": "Tom is a graphic artist.",
-    "exampleZh": "這是一個關於「/n. 畫像」的生活例句。"
+    "exampleZh": "湯姆是一點陣圖形藝術家。"
   },
   {
     "id": 6058,
@@ -54537,7 +54537,7 @@ const externalVocabularyDB = [
     "zh": "v./n. 觸摸;探索",
     "unit": 7,
     "example": "I groped for a flashlight.",
-    "exampleZh": "這是一個關於「探索」的生活例句。"
+    "exampleZh": "我摸索著找手電筒。"
   },
   {
     "id": 6061,
@@ -54627,7 +54627,7 @@ const externalVocabularyDB = [
     "zh": "n. 海洛因",
     "unit": 7,
     "example": "Tom relapsed on heroin.",
-    "exampleZh": "這是一個關於「海洛因」的生活例句。"
+    "exampleZh": "湯姆吸食海洛因舊病復發。"
   },
   {
     "id": 6071,
@@ -55122,7 +55122,7 @@ const externalVocabularyDB = [
     "zh": "n. 語言學者;通曉數種外語的人",
     "unit": 7,
     "example": "Ziri became a linguist.",
-    "exampleZh": "這是一個關於「通曉數種外語的人」的生活例句。"
+    "exampleZh": "齊裡成為語言學家。"
   },
   {
     "id": 6126,
@@ -55185,7 +55185,7 @@ const externalVocabularyDB = [
     "zh": "adj./n. 瘋子;瘋傻的人",
     "unit": 7,
     "example": "I met a lunatic.",
-    "exampleZh": "這是一個關於「瘋傻的人」的生活例句。"
+    "exampleZh": "我遇到了一個瘋子。"
   },
   {
     "id": 6133,
@@ -55239,7 +55239,7 @@ const externalVocabularyDB = [
     "zh": "v./n. 大屠殺;慘敗",
     "unit": 7,
     "example": "It was a massacre.",
-    "exampleZh": "這是一個關於「慘敗」的生活例句。"
+    "exampleZh": "這是一場屠殺。"
   },
   {
     "id": 6139,
@@ -55401,7 +55401,7 @@ const externalVocabularyDB = [
     "zh": "adj./n. 傳教士;鼓吹者;(外交)使節",
     "unit": 7,
     "example": "Tom is a missionary.",
-    "exampleZh": "這是一個關於「(外交)使節」的生活例句。"
+    "exampleZh": "湯姆是一名傳教士。"
   },
   {
     "id": 6157,
@@ -55617,7 +55617,7 @@ const externalVocabularyDB = [
     "zh": "n. 被提名人",
     "unit": 7,
     "example": "Tom is a nominee.",
-    "exampleZh": "這是一個關於「被提名人」的生活例句。"
+    "exampleZh": "湯姆是被提名者。"
   },
   {
     "id": 6181,
@@ -55698,7 +55698,7 @@ const externalVocabularyDB = [
     "zh": "n. 子女;子孫;後代",
     "unit": 7,
     "example": "Rabbits have many offspring.",
-    "exampleZh": "這是一個關於「後代」的生活例句。"
+    "exampleZh": "兔子有很多後代。"
   },
   {
     "id": 6190,
@@ -55833,7 +55833,7 @@ const externalVocabularyDB = [
     "zh": "n. 最初;開始;開端",
     "unit": 7,
     "example": "We knew it from the outset.",
-    "exampleZh": "這是一個關於「開端」的生活例句。"
+    "exampleZh": "我們從一開始就知道這一點。"
   },
   {
     "id": 6205,
@@ -55860,7 +55860,7 @@ const externalVocabularyDB = [
     "zh": "v./n. 翻轉,傾覆;周轉,流通",
     "unit": 7,
     "example": "The dishes are overturned.",
-    "exampleZh": "這是一個關於「周轉,流通」的生活例句。"
+    "exampleZh": "盤子都打翻了。"
   },
   {
     "id": 6208,
@@ -56004,7 +56004,7 @@ const externalVocabularyDB = [
     "zh": "n. 虔誠;孝順",
     "unit": 7,
     "example": "Is this what passes for piety?",
-    "exampleZh": "這是一個關於「孝順」的生活例句。"
+    "exampleZh": "這就是所謂的虔誠嗎？"
   },
   {
     "id": 6224,
@@ -56139,7 +56139,7 @@ const externalVocabularyDB = [
     "zh": "adj./n. 首相;總理",
     "unit": 7,
     "example": "The film premieres on Monday.",
-    "exampleZh": "這是一個關於「總理」的生活例句。"
+    "exampleZh": "這部電影將於週一首映。"
   },
   {
     "id": 6239,
@@ -56499,7 +56499,7 @@ const externalVocabularyDB = [
     "zh": "n. 政體;政權",
     "unit": 7,
     "example": "No regime is eternal.",
-    "exampleZh": "這是一個關於「政權」的生活例句。"
+    "exampleZh": "沒有哪個政權是永遠的。"
   },
   {
     "id": 6279,
@@ -56517,7 +56517,7 @@ const externalVocabularyDB = [
     "zh": "v./n. 韁繩;駕馭;控制",
     "unit": 7,
     "example": "Tom took over the reins.",
-    "exampleZh": "這是一個關於「控制」的生活例句。"
+    "exampleZh": "湯姆接管了大權。"
   },
   {
     "id": 6281,
@@ -56661,7 +56661,7 @@ const externalVocabularyDB = [
     "zh": "n. 修辭;修辭學;辭令",
     "unit": 7,
     "example": "This argument is pure rhetoric.",
-    "exampleZh": "這是一個關於「辭令」的生活例句。"
+    "exampleZh": "這種說法純粹是言辭。"
   },
   {
     "id": 6297,
@@ -56850,7 +56850,7 @@ const externalVocabularyDB = [
     "zh": "n. 晴朗;平靜;沈著",
     "unit": 7,
     "example": "Islam gave me serenity.",
-    "exampleZh": "這是一個關於「沈著」的生活例句。"
+    "exampleZh": "伊斯蘭教給了我平靜。"
   },
   {
     "id": 6318,
@@ -56886,7 +56886,7 @@ const externalVocabularyDB = [
     "zh": "n. 污水管;下水道",
     "unit": 7,
     "example": "Where do sewers go?",
-    "exampleZh": "這是一個關於「下水道」的生活例句。"
+    "exampleZh": "下水道通往哪裡？"
   },
   {
     "id": 6322,
@@ -57210,7 +57210,7 @@ const externalVocabularyDB = [
     "zh": "v./n. 發起者;主辦者",
     "unit": 7,
     "example": "Tom is my sponsor.",
-    "exampleZh": "這是一個關於「主辦者」的生活例句。"
+    "exampleZh": "湯姆是我的贊助商。"
   },
   {
     "id": 6358,

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
@@ -3016,8 +3016,8 @@
             const inp = 'border-0 border-gray-200 rounded px-2 py-1 text-sm outline-none focus:ring-1 focus:ring-indigo-400 min-w-0';
             const rows = customWordsDB.map(w => `
                 <div class="custom-row flex items-center gap-1 py-2 border-b border-gray-100 last:border-0" data-id="${esc(String(w.id))}">
-                    <input data-f="en" maxlength="40" value="${esc(w.en)}" class="${inp} w-1/4 font-medium">
-                    <input data-f="kk" maxlength="60" value="${esc(w.kk || '')}" placeholder="音標" class="${inp} w-1/4 font-mono text-xs">
+                    <input data-f="en" maxlength="40" value="${esc(w.en)}" class="${inp} w-[42%] shrink-0 font-medium">
+                    <input data-f="kk" maxlength="60" value="${esc(w.kk || '')}" placeholder="音標" class="${inp} w-[16%] shrink-0 font-mono text-xs">
                     <input data-f="zh" maxlength="100" value="${esc(w.zh || '')}" placeholder="中文" class="${inp} flex-1">
                     <button data-del="${esc(String(w.id))}" class="btn-del-custom text-[#FF3B30] hover:bg-red-50 border-0 border-[#E6D1C9] rounded-xl px-2 py-1 text-xs shrink-0">🗑️</button>
                 </div>`).join('');

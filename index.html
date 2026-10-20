@@ -226,7 +226,6 @@
                 <div class="flex justify-between items-center mb-6">
                     <p class="text-[#86868B] text-sm" id="current-date-display">虛擬時間: -</p>
                     <select id="unit-selector" aria-label="選擇學習單元" title="選擇學習單元" class="bg-[#E5E5EA] border-0 border-[#C3D0B0] text-[#0071E3] text-sm rounded-xl focus:ring-[#0071E3] focus:border-[#0071E3] block p-2 outline-none font-medium">
-                        <option value="0">🌟 全單元綜合打散測驗</option>
                         <optgroup label="📚 高中 7000 單字">
                             <option value="1">單元 1 (1 - 1000)</option>
                             <option value="2">單元 2 (1001 - 2000)</option>
@@ -1312,7 +1311,6 @@
         });
 
         function getUnitWords(unit) {
-            if (unit === 0) return vocabularyDB;
             return vocabularyDB.filter(w => {
                 let u = w.unit || Math.ceil(w.id / 1000) || 1;
                 return u === unit;
@@ -1324,13 +1322,23 @@
             return progress.nextReviewDay !== undefined && progress.nextReviewDay <= currentDay;
         }
 
+        function isSequentialIds(ids) {
+            if (!Array.isArray(ids) || ids.length < 3) return false;
+            for (let i = 1; i < ids.length; i++) {
+                if (Number(ids[i]) !== Number(ids[i - 1]) + 1) return false;
+            }
+            return true;
+        }
+
         function getDailyPlan(unit) {
             if (dailyPlans[unit] && dailyPlans[unit].day === virtualCurrentDay) {
-                // 若當日計畫尚未完成，且新單字數量與目前設定不一致，自動修正至當前設定數量
-                if (!dailyPlans[unit].completed && Array.isArray(dailyPlans[unit].newWordIds) && dailyPlans[unit].newWordIds.length !== NEW_WORDS_PER_DAY) {
+                // 若當日計畫尚未完成，且新單字數量不一致或是舊版的連號未打散單字，即刻在該單元內打散
+                const isLegacySeq = isSequentialIds(dailyPlans[unit].newWordIds);
+                const countMismatch = Array.isArray(dailyPlans[unit].newWordIds) && dailyPlans[unit].newWordIds.length !== NEW_WORDS_PER_DAY;
+                if (!dailyPlans[unit].completed && (countMismatch || isLegacySeq)) {
                     const unitWords = getUnitWords(unit);
                     const newWordsCandidates = unitWords.filter(w => !userProgress[w.id] || userProgress[w.id].level === 0);
-                    // 隨機打散候選單字池，避免相同字母過度集中
+                    // 該單元內部隨機打散抽樣
                     for (let i = newWordsCandidates.length - 1; i > 0; i--) {
                         const j = Math.floor(Math.random() * (i + 1));
                         [newWordsCandidates[i], newWordsCandidates[j]] = [newWordsCandidates[j], newWordsCandidates[i]];
@@ -1343,10 +1351,14 @@
             }
             const unitWords = getUnitWords(unit);
             const reviewWords = unitWords.filter(w => isDueForReview(w, userProgress[w.id] || null, virtualCurrentDay));
-            reviewWords.sort((a, b) => (Number(a.id) || 0) - (Number(b.id) || 0));
+            // 複習單字也在該單元內隨機打散
+            for (let i = reviewWords.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [reviewWords[i], reviewWords[j]] = [reviewWords[j], reviewWords[i]];
+            }
 
             const newWordsCandidates = unitWords.filter(w => !userProgress[w.id] || userProgress[w.id].level === 0);
-            // 隨機打散候選單字池，避免每天都是同字母扎堆
+            // 該單元內部隨機打散抽樣
             for (let i = newWordsCandidates.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
                 [newWordsCandidates[i], newWordsCandidates[j]] = [newWordsCandidates[j], newWordsCandidates[i]];
@@ -1572,7 +1584,7 @@
                 const p = userProgress[id];
                 if (p.lastMistakeDay !== undefined) {
                     const w = vocabularyDB.find(x => x.id == id);
-                    if (w && (currentUnit === 0 || (w.unit || Math.ceil(w.id / 1000) || 1) === currentUnit)) mistakeCount++;
+                    if (w && (w.unit || Math.ceil(w.id / 1000) || 1) === currentUnit) mistakeCount++;
                 }
             }
             const elMistakeBadge = document.getElementById('lobby-mistake-count-badge');
@@ -1586,7 +1598,7 @@
             }
 
             // 統計弱點數
-            const unitWeak = getWeakList().filter(x => x.w && (currentUnit === 0 || (x.w.unit || Math.ceil(x.w.id / 1000) || 1) === currentUnit));
+            const unitWeak = getWeakList().filter(x => x.w && (x.w.unit || Math.ceil(x.w.id / 1000) || 1) === currentUnit);
             const elWeakBadge = document.getElementById('lobby-weak-count-badge');
             if (elWeakBadge) {
                 elWeakBadge.innerText = `${unitWeak.length} 弱點`;
@@ -1615,7 +1627,7 @@
         }
 
         function startRapidQuiz(count = 10) {
-            const unitWords = (currentUnit === 0) ? vocabularyDB : getUnitWords(currentUnit);
+            const unitWords = getUnitWords(currentUnit);
             if (!unitWords.length) {
                 alert('目前單元無單字可測驗！');
                 return;
@@ -1630,7 +1642,7 @@
             }
             const selected = shuffled.slice(0, Math.min(count, shuffled.length));
             
-            sessionTitle = (currentUnit === 0) ? `全單元快測 (${selected.length} 題)` : `快問快答 (${selected.length} 題)`;
+            sessionTitle = `快問快答 (${selected.length} 題)`;
             sessionQueue = selected;
             mistakeQueue = [];
             totalCardsInSession = selected.length;
@@ -1709,6 +1721,11 @@
                     autoFlashcardSpeed = parseInt(speedSelect.value);
                     if (autoRateSelect) setSpeechRate(autoRateSelect.value);
                     sessionQueue = [...words];
+                    // 進入自動輪播前在該單元打散
+                    for (let i = sessionQueue.length - 1; i > 0; i--) {
+                        const j = Math.floor(Math.random() * (i + 1));
+                        [sessionQueue[i], sessionQueue[j]] = [sessionQueue[j], sessionQueue[i]];
+                    }
                     mistakeQueue = [];
                     totalCardsInSession = sessionQueue.length;
                     cardsCompleted = 0;
@@ -3398,7 +3415,7 @@
         });
 
         document.getElementById('lobby-btn-weak-practice')?.addEventListener('click', () => {
-            const weakWords = getWeakList().filter(x => x.w && (currentUnit === 0 || (x.w.unit || Math.ceil(x.w.id / 1000) || 1) === currentUnit)).map(x => x.w);
+            const weakWords = getWeakList().filter(x => x.w && (x.w.unit || Math.ceil(x.w.id / 1000) || 1) === currentUnit).map(x => x.w);
             if (weakWords.length === 0) {
                 alert('太棒了！本單元目前沒有弱點單字。');
                 return;

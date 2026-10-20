@@ -1,7 +1,7 @@
 # TODO (明天做)
 
 ## Firebase / Google Cloud 後台 (專案 githuben-e26eb)
-- [x] 1. Firestore 規則：Firebase Console → Firestore Database → 規則 → 貼上 `firestore.rules` → 發布 (最重要)
+- [ ] 1. **重新發布 Firestore 規則**：Firebase Console → Firestore Database → 規則 → 貼上更新後的 `firestore.rules` → 發布 (必做！補上 dailyPlans/newWordsPerDay/lastDate 白名單，否則雲端寫入會被拒絕導致跨裝置進度不同步)
 - [x] 2. 限制 API key：https://console.cloud.google.com/apis/credentials
   - 點 Browser key (`AIzaSyDwt...Ph4rg`)
   - Application restrictions → Websites → `https://jacklins39.github.io/*` (+ `http://localhost/*`)

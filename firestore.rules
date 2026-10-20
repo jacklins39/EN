@@ -6,7 +6,7 @@ service cloud.firestore {
       allow read: if request.auth != null && request.auth.uid == uid;
       allow create, update: if request.auth != null
         && request.auth.uid == uid
-        && request.resource.data.keys().hasOnly(['progress', 'day', 'customWords', 'lastUpdated'])
+        && request.resource.data.keys().hasOnly(['progress', 'day', 'customWords', 'lastUpdated', 'dailyPlans', 'newWordsPerDay', 'lastDate'])
         && (!('customWords' in request.resource.data)
             || (request.resource.data.customWords is list
                 && request.resource.data.customWords.size() <= 500));

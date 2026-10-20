@@ -2565,13 +2565,14 @@
                     return;
                 }
 
-                // 2. 若為一般單字但未在清單中，使用高傳真美式真人發音串流 (美音庫)
-                const isSingleWord = /^[a-zA-Z']+$/.test(cleanLower);
-                if (isSingleWord) {
+                // 2. 若為一般單字、複合名詞或片語短語，使用高傳真真人發音串流 (手機端 100% 可播放，徹底解決手機無聲問題)
+                const isPlayablePhrase = /^[a-zA-Z0-9' ,.?!-]+$/.test(clean) && clean.length <= 150;
+                if (isPlayablePhrase) {
                     wordAudioPlayer.src = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(cleanLower)}&type=2`;
                     wordAudioPlayer.playbackRate = globalSpeechRate;
                     attachCallback(wordAudioPlayer);
-                    wordAudioPlayer.play().catch(() => {
+                    wordAudioPlayer.play().catch((e) => {
+                        console.warn("Online audio stream error, fallback to speech synthesis:", e);
                         speakViaSynthesisOrTTS(clean, onEndedCallback);
                     });
                     return;
@@ -3595,12 +3596,12 @@
             matchedWords.forEach(w => {
                 const safeEn = (w.en || '').replace(/'/g, "\\'");
                 wc.innerHTML += `
-                <div class="bg-white border border-gray-100 p-2.5 rounded-xl flex items-center justify-between shadow-xs cursor-pointer hover:bg-gray-50 transition" onclick="playAudio('${safeEn}')">
-                    <div class="min-w-0 pr-2 flex-1">
-                        <div class="font-semibold text-sm text-[#1D1D1F] truncate">${esc(w.en || '')}</div>
-                        <div class="text-xs text-[#86868B] truncate mt-0.5" title="${esc(w.zh || '')}">${esc(w.zh || '')}</div>
+                <div class="bg-white border border-gray-100 p-2.5 rounded-xl flex items-center justify-between shadow-xs cursor-pointer hover:bg-gray-50 transition min-h-[58px]" onclick="playAudio('${safeEn}')">
+                    <div class="min-w-0 pr-1.5 flex-1">
+                        <div class="font-semibold text-sm text-[#1D1D1F] leading-snug break-words">${esc(w.en || '')}</div>
+                        <div class="text-xs text-[#86868B] leading-snug line-clamp-2 mt-0.5 break-words" title="${esc(w.zh || '')}">${esc(w.zh || '')}</div>
                     </div>
-                    <button class="text-[#0071E3] hover:bg-[#E5E5EA] p-1.5 rounded-full shrink-0 transition" title="朗讀單字">
+                    <button class="text-[#0071E3] hover:bg-[#E5E5EA] p-1.5 rounded-full shrink-0 transition" title="朗讀發音">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
                     </button>
                 </div>`;

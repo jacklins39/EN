@@ -120,20 +120,20 @@ const listeningArticlesDB = [
         "zh": "n. 起司漢堡"
       },
       {
-        "en": "large fries",
-        "zh": "n. 大份薯條"
+        "en": "fries",
+        "zh": "n. 薯條"
       },
       {
-        "en": "diet cola",
-        "zh": "n. 健怡可樂"
+        "en": "cola",
+        "zh": "n. 可樂"
       },
       {
         "en": "total",
         "zh": "n. 總計、總額"
       },
       {
-        "en": "dollar bill",
-        "zh": "n. 紙鈔"
+        "en": "bill",
+        "zh": "n. 紙鈔、帳單"
       },
       {
         "en": "change",
@@ -268,10 +268,6 @@ const listeningArticlesDB = [
         "zh": "v./n. 要求、請求"
       },
       {
-        "en": "wake-up call",
-        "zh": "n. 晨喚服務"
-      },
-      {
         "en": "elevator",
         "zh": "n. 電梯"
       }
@@ -390,8 +386,8 @@ const listeningArticlesDB = [
         "zh": "n. 野餐"
       },
       {
-        "en": "sign up",
-        "zh": "phr. 報名、登記"
+        "en": "register",
+        "zh": "v. 註冊、登記"
       },
       {
         "en": "advance",
@@ -513,12 +509,12 @@ const listeningArticlesDB = [
         "zh": "n. 軟體"
       },
       {
-        "en": "cloud storage",
-        "zh": "n. 雲端儲存"
+        "en": "storage",
+        "zh": "n. 儲存空間"
       },
       {
-        "en": "bulk purchase",
-        "zh": "n. 大宗採購"
+        "en": "bulk",
+        "zh": "n. 大量"
       },
       {
         "en": "discount",
@@ -622,20 +618,20 @@ const listeningArticlesDB = [
     "audio": "audio/listening/2026_09_gen_03.mp3",
     "vocabulary": [
       {
-        "en": "climate change",
-        "zh": "n. 氣候變遷"
+        "en": "climate",
+        "zh": "n. 氣候"
       },
       {
         "en": "pressing",
         "zh": "adj. 緊迫的、迫切的"
       },
       {
-        "en": "global temperature",
-        "zh": "n. 全球氣溫"
+        "en": "temperature",
+        "zh": "n. 溫度"
       },
       {
-        "en": "extreme weather",
-        "zh": "n. 極端天氣"
+        "en": "extreme",
+        "zh": "adj. 極端的"
       },
       {
         "en": "hurricane",
@@ -646,8 +642,8 @@ const listeningArticlesDB = [
         "zh": "n. 乾旱、旱災"
       },
       {
-        "en": "renewable energy",
-        "zh": "n. 可再生能源"
+        "en": "renewable",
+        "zh": "adj. 可再生的"
       }
     ]
   },
@@ -739,16 +735,16 @@ const listeningArticlesDB = [
     "audio": "audio/listening/2026_09_gen_04.mp3",
     "vocabulary": [
       {
-        "en": "artificial intelligence",
-        "zh": "n. 人工智慧 (AI)"
+        "en": "intelligence",
+        "zh": "n. 智慧、智能"
       },
       {
         "en": "transform",
         "zh": "v. 徹底改變、轉型"
       },
       {
-        "en": "machine learning",
-        "zh": "n. 機器學習"
+        "en": "machine",
+        "zh": "n. 機器"
       },
       {
         "en": "algorithm",
@@ -763,8 +759,8 @@ const listeningArticlesDB = [
         "zh": "v. 加速、促進"
       },
       {
-        "en": "ethical guideline",
-        "zh": "n. 倫理準則、道德指引"
+        "en": "ethical",
+        "zh": "adj. 倫理的、道德的"
       }
     ]
   },
@@ -878,8 +874,8 @@ const listeningArticlesDB = [
         "zh": "n. 障礙、阻礙"
       },
       {
-        "en": "valuable lesson",
-        "zh": "n. 寶貴的教訓"
+        "en": "lesson",
+        "zh": "n. 教訓、課程"
       },
       {
         "en": "curiosity",
@@ -991,8 +987,8 @@ const listeningArticlesDB = [
     "audio": "audio/listening/2026_09_gen_06.mp3",
     "vocabulary": [
       {
-        "en": "dairy section",
-        "zh": "n. 乳製品區"
+        "en": "dairy",
+        "zh": "n. 乳製品"
       },
       {
         "en": "groceries",
@@ -1011,8 +1007,8 @@ const listeningArticlesDB = [
         "zh": "n. 草莓"
       },
       {
-        "en": "sold out",
-        "zh": "adj. 售罄的、賣光的"
+        "en": "shortage",
+        "zh": "n. 缺貨、短缺"
       }
     ]
   },
@@ -1130,8 +1126,8 @@ const listeningArticlesDB = [
         "zh": "n. 身分證明、證件"
       },
       {
-        "en": "remain seated",
-        "zh": "phr. 保持就座"
+        "en": "seated",
+        "zh": "adj. 就座的"
       }
     ]
   },
@@ -1233,8 +1229,8 @@ const listeningArticlesDB = [
         "zh": "adj. 強制的、必須的"
       },
       {
-        "en": "training session",
-        "zh": "n. 培訓會議、訓練場次"
+        "en": "training",
+        "zh": "n. 訓練、培訓"
       },
       {
         "en": "interaction",
@@ -1350,8 +1346,8 @@ const listeningArticlesDB = [
         "zh": "adj. 至關重要的、關鍵的"
       },
       {
-        "en": "immune system",
-        "zh": "n. 免疫系統"
+        "en": "immune",
+        "zh": "adj. 免疫的"
       },
       {
         "en": "affect",
@@ -1362,12 +1358,12 @@ const listeningArticlesDB = [
         "zh": "adj. 規律的、前後一致的"
       },
       {
-        "en": "electronic screen",
-        "zh": "n. 電子螢幕"
+        "en": "screen",
+        "zh": "n. 螢幕"
       },
       {
-        "en": "dim light",
-        "zh": "n. 微弱柔和燈光"
+        "en": "dim",
+        "zh": "adj. 昏暗的"
       }
     ]
   },
@@ -1461,8 +1457,8 @@ const listeningArticlesDB = [
         "zh": "n. 復甦、回升"
       },
       {
-        "en": "consumer spending",
-        "zh": "n. 消費支出"
+        "en": "spending",
+        "zh": "n. 支出、消費"
       },
       {
         "en": "earnings",
@@ -1473,8 +1469,8 @@ const listeningArticlesDB = [
         "zh": "n. 通貨膨脹"
       },
       {
-        "en": "interest rate",
-        "zh": "n. 利率"
+        "en": "interest",
+        "zh": "n. 利息、利率"
       },
       {
         "en": "stabilize",
@@ -1574,8 +1570,8 @@ const listeningArticlesDB = [
         "zh": "n. 不滿意、抱怨"
       },
       {
-        "en": "wireless headphones",
-        "zh": "n. 無線耳機"
+        "en": "headphones",
+        "zh": "n. 耳機"
       },
       {
         "en": "defective",
@@ -1695,24 +1691,24 @@ const listeningArticlesDB = [
         "zh": "adj. 專屬的、獨家的"
       },
       {
-        "en": "launch event",
-        "zh": "n. 產品發表會"
+        "en": "launch",
+        "zh": "n. 發表、推出"
       },
       {
         "en": "demonstration",
         "zh": "n. 實機展示、功能示範"
       },
       {
-        "en": "grand ballroom",
-        "zh": "n. 大宴會廳"
+        "en": "ballroom",
+        "zh": "n. 宴會廳"
       },
       {
         "en": "innovative",
         "zh": "adj. 創新的、新穎的"
       },
       {
-        "en": "secure a spot",
-        "zh": "phr. 保留席次、確保名額"
+        "en": "secure",
+        "zh": "v. 確保、取得"
       }
     ]
   },
@@ -1803,10 +1799,6 @@ const listeningArticlesDB = [
     "voiceLabel": "美式男聲 (US)",
     "audio": "audio/listening/2026_10_toeic_03.mp3",
     "vocabulary": [
-      {
-        "en": "out of service",
-        "zh": "phr. 暫停服務、維修中"
-      },
       {
         "en": "maintenance",
         "zh": "n. 維修、保養"
@@ -1927,8 +1919,8 @@ const listeningArticlesDB = [
         "zh": "n. 公告、廣播通知"
       },
       {
-        "en": "severe weather",
-        "zh": "n. 惡劣天候"
+        "en": "severe",
+        "zh": "adj. 嚴重的、惡劣的"
       },
       {
         "en": "departure",
@@ -1943,12 +1935,12 @@ const listeningArticlesDB = [
         "zh": "n./v. 延誤、耽擱"
       },
       {
-        "en": "meal voucher",
-        "zh": "n. 餐券、餐點兌換券"
+        "en": "voucher",
+        "zh": "n. 餐券、優惠券"
       },
       {
-        "en": "gate agent",
-        "zh": "n. 登機門地勤人員"
+        "en": "agent",
+        "zh": "n. 代理人、地勤人員"
       }
     ]
   },
@@ -2050,12 +2042,12 @@ const listeningArticlesDB = [
         "zh": "n. 營收、營業額"
       },
       {
-        "en": "marketing campaign",
-        "zh": "n. 行銷宣傳活動"
+        "en": "campaign",
+        "zh": "n. 活動、宣傳活動"
       },
       {
-        "en": "operational efficiency",
-        "zh": "n. 營運效率"
+        "en": "efficiency",
+        "zh": "n. 效率"
       },
       {
         "en": "upcoming",
@@ -2151,8 +2143,8 @@ const listeningArticlesDB = [
     "audio": "audio/listening/2026_10_toeic_06.mp3",
     "vocabulary": [
       {
-        "en": "hybrid work",
-        "zh": "n. 混合辦公型態"
+        "en": "hybrid",
+        "zh": "adj. 混合的"
       },
       {
         "en": "policy",
@@ -2266,8 +2258,8 @@ const listeningArticlesDB = [
         "zh": "n. 費用報銷、核銷"
       },
       {
-        "en": "accounting division",
-        "zh": "n. 會計部門"
+        "en": "division",
+        "zh": "n. 部門"
       },
       {
         "en": "streamline",
@@ -2282,8 +2274,8 @@ const listeningArticlesDB = [
         "zh": "v. 呈交、提交"
       },
       {
-        "en": "digital receipt",
-        "zh": "n. 電子收據"
+        "en": "receipt",
+        "zh": "n. 收據"
       },
       {
         "en": "compliance",
@@ -2488,12 +2480,12 @@ const listeningArticlesDB = [
         "zh": "n. 採購、採購部"
       },
       {
-        "en": "freight shipment",
-        "zh": "n. 貨運、貨物運輸"
+        "en": "freight",
+        "zh": "n. 貨運"
       },
       {
-        "en": "customs clearance",
-        "zh": "n. 海關清關、結關"
+        "en": "customs",
+        "zh": "n. 海關"
       },
       {
         "en": "expedite",
@@ -2504,8 +2496,8 @@ const listeningArticlesDB = [
         "zh": "v. 賠償、補償"
       },
       {
-        "en": "shipping surcharge",
-        "zh": "n. 運費附加費"
+        "en": "surcharge",
+        "zh": "n. 附加費"
       },
       {
         "en": "compromise",
@@ -2589,8 +2581,8 @@ const listeningArticlesDB = [
     "audio": "audio/listening/2026_10_toeic_10.mp3",
     "vocabulary": [
       {
-        "en": "commercial lease",
-        "zh": "n. 商業租約"
+        "en": "lease",
+        "zh": "n. 租約"
       },
       {
         "en": "tenant",
@@ -2605,12 +2597,12 @@ const listeningArticlesDB = [
         "zh": "n. 續約、更新"
       },
       {
-        "en": "monthly rent",
-        "zh": "n. 每月租金"
+        "en": "rent",
+        "zh": "n. 租金"
       },
       {
-        "en": "facility maintenance",
-        "zh": "n. 設施維護"
+        "en": "facility",
+        "zh": "n. 設施"
       },
       {
         "en": "clause",
@@ -2825,24 +2817,20 @@ const listeningArticlesDB = [
     "audio": "audio/listening/2026_10_gen_02.mp3",
     "vocabulary": [
       {
-        "en": "architectural history",
-        "zh": "n. 建築史"
+        "en": "architectural",
+        "zh": "adj. 建築的"
       },
       {
-        "en": "library catalog",
-        "zh": "n. 圖書館藏目錄"
-      },
-      {
-        "en": "call number",
-        "zh": "n. （書籍）索書號"
+        "en": "catalog",
+        "zh": "n. 目錄"
       },
       {
         "en": "borrow",
-        "zh": "v. 借閱、借入"
+        "zh": "v. 借（書）"
       },
       {
-        "en": "overdue fine",
-        "zh": "n. 逾期罰款"
+        "en": "overdue",
+        "zh": "adj. 逾期的"
       },
       {
         "en": "renew",
@@ -2938,28 +2926,28 @@ const listeningArticlesDB = [
     "audio": "audio/listening/2026_10_gen_03.mp3",
     "vocabulary": [
       {
-        "en": "car rental",
-        "zh": "n. 汽車租賃"
+        "en": "rental",
+        "zh": "n. 租賃"
       },
       {
-        "en": "driver's license",
-        "zh": "n. 駕駛執照"
+        "en": "license",
+        "zh": "n. 執照"
       },
       {
-        "en": "insurance coverage",
-        "zh": "n. 保險理賠範圍"
+        "en": "insurance",
+        "zh": "n. 保險"
       },
       {
-        "en": "collision damage",
-        "zh": "n. 碰撞車損"
+        "en": "collision",
+        "zh": "n. 碰撞"
       },
       {
-        "en": "unlimited mileage",
-        "zh": "n. 不限里程"
+        "en": "mileage",
+        "zh": "n. 里程數"
       },
       {
-        "en": "fuel policy",
-        "zh": "n. 油料規定（滿油還車）"
+        "en": "fuel",
+        "zh": "n. 燃料、油"
       }
     ]
   },
@@ -3055,12 +3043,12 @@ const listeningArticlesDB = [
         "zh": "n. 症狀、病徵"
       },
       {
-        "en": "sore throat",
-        "zh": "n. 喉嚨痛"
+        "en": "throat",
+        "zh": "n. 喉嚨"
       },
       {
-        "en": "persistent cough",
-        "zh": "n. 持續性咳嗽"
+        "en": "persistent",
+        "zh": "adj. 持續的"
       },
       {
         "en": "fever",
@@ -3168,32 +3156,32 @@ const listeningArticlesDB = [
     "audio": "audio/listening/2026_10_gen_05.mp3",
     "vocabulary": [
       {
-        "en": "camping checklist",
-        "zh": "n. 露營裝備清單"
+        "en": "checklist",
+        "zh": "n. 檢查清單"
       },
       {
-        "en": "waterproof tent",
-        "zh": "n. 防水帳篷"
+        "en": "tent",
+        "zh": "n. 帳篷"
       },
       {
-        "en": "sleeping bag",
-        "zh": "n. 睡袋"
+        "en": "sleeping",
+        "zh": "adj. 睡眠的"
       },
       {
-        "en": "portable stove",
-        "zh": "n. 便攜式瓦斯爐"
+        "en": "stove",
+        "zh": "n. 爐具"
       },
       {
-        "en": "first aid kit",
-        "zh": "n. 急救箱"
+        "en": "aid",
+        "zh": "n. 救助、援助"
       },
       {
         "en": "campsite",
         "zh": "n. 露營營地"
       },
       {
-        "en": "leave no trace",
-        "zh": "phr. 無痕山林原則"
+        "en": "trace",
+        "zh": "n. 痕跡"
       }
     ]
   },
@@ -3279,28 +3267,28 @@ const listeningArticlesDB = [
     "audio": "audio/listening/2026_10_gen_06.mp3",
     "vocabulary": [
       {
-        "en": "fitness membership",
-        "zh": "n. 健身房會籍"
+        "en": "membership",
+        "zh": "n. 會員資格"
       },
       {
-        "en": "personal trainer",
-        "zh": "n. 私人健身教練"
+        "en": "trainer",
+        "zh": "n. 教練"
       },
       {
-        "en": "warm-up",
-        "zh": "n. 暖身運動"
+        "en": "warm",
+        "zh": "adj. 溫暖的、暖身的"
       },
       {
-        "en": "injury prevention",
-        "zh": "n. 運動傷害預防"
+        "en": "injury",
+        "zh": "n. 傷害、受傷"
       },
       {
         "en": "cardio",
         "zh": "n. 有氧運動"
       },
       {
-        "en": "strength training",
-        "zh": "n. 重量訓練、肌力訓練"
+        "en": "strength",
+        "zh": "n. 力量"
       },
       {
         "en": "routine",
@@ -3402,28 +3390,28 @@ const listeningArticlesDB = [
     "audio": "audio/listening/2026_10_gen_07.mp3",
     "vocabulary": [
       {
-        "en": "anniversary dinner",
-        "zh": "n. 週年紀念晚餐"
+        "en": "anniversary",
+        "zh": "n. 週年紀念"
       },
       {
-        "en": "peanut allergy",
-        "zh": "n. 花生過敏"
+        "en": "allergy",
+        "zh": "n. 過敏"
       },
       {
-        "en": "cross-contamination",
-        "zh": "n. 交叉污染"
+        "en": "contamination",
+        "zh": "n. 污染"
       },
       {
-        "en": "booth seating",
-        "zh": "n. 靠窗卡座、隔間座位"
+        "en": "booth",
+        "zh": "n. 包廂座、攤位"
       },
       {
         "en": "appetizer",
         "zh": "n. 前菜、開胃菜"
       },
       {
-        "en": "notify chef",
-        "zh": "phr. 提醒主廚注意"
+        "en": "notify",
+        "zh": "v. 通知"
       }
     ]
   },
@@ -3509,28 +3497,28 @@ const listeningArticlesDB = [
     "audio": "audio/listening/2026_10_gen_08.mp3",
     "vocabulary": [
       {
-        "en": "mobile contract",
-        "zh": "n. 手機合約、門號綁約"
+        "en": "contract",
+        "zh": "n. 合約"
       },
       {
-        "en": "unlimited data",
-        "zh": "n. 網路吃到飽、無限流量"
+        "en": "unlimited",
+        "zh": "adj. 無限制的"
       },
       {
-        "en": "international roaming",
-        "zh": "n. 國際漫遊"
+        "en": "roaming",
+        "zh": "n. 漫遊"
       },
       {
-        "en": "monthly fee",
-        "zh": "n. 每月月租費"
+        "en": "fee",
+        "zh": "n. 費用"
       },
       {
-        "en": "upgrade plan",
-        "zh": "phr. 升級資費方案"
+        "en": "upgrade",
+        "zh": "v. 升級"
       },
       {
-        "en": "activation fee",
-        "zh": "n. 門號開通費"
+        "en": "activation",
+        "zh": "n. 啟用、開通"
       }
     ]
   },
@@ -3622,28 +3610,28 @@ const listeningArticlesDB = [
     "audio": "audio/listening/2026_10_gen_09.mp3",
     "vocabulary": [
       {
-        "en": "oat latte",
-        "zh": "n. 燕麥奶拿鐵"
+        "en": "latte",
+        "zh": "n. 拿鐵"
       },
       {
         "en": "croissant",
         "zh": "n. 可頌麵包"
       },
       {
-        "en": "wi-fi password",
-        "zh": "n. 無線網路密碼"
+        "en": "password",
+        "zh": "n. 密碼"
       },
       {
-        "en": "power outlet",
-        "zh": "n. 電源插座"
+        "en": "outlet",
+        "zh": "n. 插座"
       },
       {
-        "en": "remote work",
-        "zh": "n. 遠端工作"
+        "en": "remote",
+        "zh": "adj. 遠端的"
       },
       {
-        "en": "quiet ambiance",
-        "zh": "n. 寧靜舒適的氛圍"
+        "en": "ambiance",
+        "zh": "n. 氣氛"
       }
     ]
   },
@@ -3739,16 +3727,16 @@ const listeningArticlesDB = [
         "zh": "n. 社區、鄰里"
       },
       {
-        "en": "flea market",
-        "zh": "n. 跳蚤市場、二手市集"
+        "en": "market",
+        "zh": "n. 市場"
       },
       {
-        "en": "charity donation",
-        "zh": "n. 慈善捐款"
+        "en": "donation",
+        "zh": "n. 捐款"
       },
       {
-        "en": "booth registration",
-        "zh": "n. 攤位報名登記"
+        "en": "registration",
+        "zh": "n. 登記、註冊"
       },
       {
         "en": "volunteer",
@@ -3759,8 +3747,8 @@ const listeningArticlesDB = [
         "zh": "n. 活動收益、款項"
       },
       {
-        "en": "animal shelter",
-        "zh": "n. 動物收容所"
+        "en": "shelter",
+        "zh": "n. 收容所"
       }
     ]
   },
@@ -3863,12 +3851,12 @@ const listeningArticlesDB = [
     ],
     "vocabulary": [
       {
-        "en": "merger and acquisition",
-        "zh": "n. 企業併購 (M&A)"
+        "en": "merger",
+        "zh": "n. 合併"
       },
       {
-        "en": "regulatory approval",
-        "zh": "n. 主管機關審批、法規核准"
+        "en": "approval",
+        "zh": "n. 批准"
       },
       {
         "en": "shareholder",
@@ -3879,16 +3867,16 @@ const listeningArticlesDB = [
         "zh": "n. 綜效、協同效益"
       },
       {
-        "en": "due diligence",
-        "zh": "n. 盡職調查"
+        "en": "diligence",
+        "zh": "n. 勤勉、盡職調查"
       },
       {
-        "en": "integration process",
-        "zh": "n. 整合流程"
+        "en": "integration",
+        "zh": "n. 整合"
       },
       {
-        "en": "market expansion",
-        "zh": "n. 市場擴張"
+        "en": "expansion",
+        "zh": "n. 擴張"
       }
     ]
   },
@@ -3985,8 +3973,8 @@ const listeningArticlesDB = [
     ],
     "vocabulary": [
       {
-        "en": "earnings briefing",
-        "zh": "n. 財務法人說明會、財報會"
+        "en": "earnings",
+        "zh": "n. 收益、盈餘"
       },
       {
         "en": "macroeconomic",
@@ -3997,20 +3985,20 @@ const listeningArticlesDB = [
         "zh": "n. （經濟）逆風、阻力"
       },
       {
-        "en": "profit margin",
-        "zh": "n. 利潤率、毛利率"
+        "en": "margin",
+        "zh": "n. 利潤率、邊際"
       },
       {
-        "en": "dividend distribution",
-        "zh": "n. 股利分配"
+        "en": "dividend",
+        "zh": "n. 股息"
       },
       {
-        "en": "fiscal year",
-        "zh": "n. 會計年度、財政年度"
+        "en": "fiscal",
+        "zh": "adj. 財政的、會計的"
       },
       {
-        "en": "guidance projection",
-        "zh": "n. 財測預估、業績展望"
+        "en": "projection",
+        "zh": "n. 預測"
       }
     ]
   },
@@ -4113,32 +4101,32 @@ const listeningArticlesDB = [
     ],
     "vocabulary": [
       {
-        "en": "supply chain disruption",
-        "zh": "n. 供應鏈中斷"
+        "en": "disruption",
+        "zh": "n. 中斷、混亂"
       },
       {
         "en": "bottleneck",
         "zh": "n. （運輸）瓶頸、阻礙"
       },
       {
-        "en": "freight cost",
-        "zh": "n. 貨運成本、航運費用"
+        "en": "cost",
+        "zh": "n. 成本"
       },
       {
-        "en": "inventory reserve",
-        "zh": "n. 庫存存貨儲備"
+        "en": "inventory",
+        "zh": "n. 庫存"
       },
       {
-        "en": "mitigate risk",
-        "zh": "phr. 減輕、降低風險"
+        "en": "mitigate",
+        "zh": "v. 減輕"
       },
       {
-        "en": "supplier diversification",
-        "zh": "n. 供應商多元化"
+        "en": "supplier",
+        "zh": "n. 供應商"
       },
       {
-        "en": "lead time",
-        "zh": "n. 前置交期、備貨時間"
+        "en": "lead",
+        "zh": "n. 領先、前置"
       }
     ]
   },
@@ -4241,32 +4229,32 @@ const listeningArticlesDB = [
     ],
     "vocabulary": [
       {
-        "en": "cybersecurity audit",
-        "zh": "n. 資訊安全稽核"
+        "en": "audit",
+        "zh": "n. 稽核"
       },
       {
         "en": "vulnerability",
         "zh": "n. 系統漏洞、安全性弱點"
       },
       {
-        "en": "phishing simulation",
-        "zh": "n. 釣魚郵件演練"
+        "en": "phishing",
+        "zh": "n. 網路釣魚"
       },
       {
-        "en": "multi-factor authentication",
-        "zh": "n. 多身分驗證 (MFA)"
+        "en": "authentication",
+        "zh": "n. 驗證"
       },
       {
-        "en": "firewall protocol",
-        "zh": "n. 防火牆安全協議"
+        "en": "firewall",
+        "zh": "n. 防火牆"
       },
       {
-        "en": "data breach",
-        "zh": "n. 資料外洩事故"
+        "en": "breach",
+        "zh": "n. 違反、外洩"
       },
       {
-        "en": "strict access control",
-        "zh": "n. 嚴格權限控管"
+        "en": "strict",
+        "zh": "adj. 嚴格的"
       }
     ]
   },
@@ -4363,28 +4351,28 @@ const listeningArticlesDB = [
     ],
     "vocabulary": [
       {
-        "en": "sustainability benchmark",
-        "zh": "n. 永續發展指標基準"
+        "en": "sustainability",
+        "zh": "n. 永續性"
       },
       {
-        "en": "carbon footprint",
-        "zh": "n. 碳足跡"
+        "en": "carbon",
+        "zh": "n. 碳"
       },
       {
-        "en": "green financing",
-        "zh": "n. 綠色金融融資"
+        "en": "financing",
+        "zh": "n. 融資"
       },
       {
-        "en": "renewable infrastructure",
-        "zh": "n. 再生能源基礎設施"
+        "en": "infrastructure",
+        "zh": "n. 基礎設施"
       },
       {
-        "en": "regulatory compliance",
-        "zh": "n. 法規遵循、合規性"
+        "en": "compliance",
+        "zh": "n. 遵循、合規"
       },
       {
-        "en": "stakeholder value",
-        "zh": "n. 利害關係人價值"
+        "en": "stakeholder",
+        "zh": "n. 利害關係人"
       },
       {
         "en": "decarbonization",
@@ -4491,32 +4479,32 @@ const listeningArticlesDB = [
     ],
     "vocabulary": [
       {
-        "en": "smart automation",
-        "zh": "n. 智慧自動化"
+        "en": "automation",
+        "zh": "n. 自動化"
       },
       {
-        "en": "robotic arm",
-        "zh": "n. 機械手臂"
+        "en": "robotic",
+        "zh": "adj. 機器人的"
       },
       {
-        "en": "throughput rate",
-        "zh": "n. 生產吞吐量、產能效率"
+        "en": "throughput",
+        "zh": "n. 產出量、處理量"
       },
       {
-        "en": "downtime reduction",
-        "zh": "n. 停機工時減少"
+        "en": "downtime",
+        "zh": "n. 停機時間"
       },
       {
-        "en": "capital expenditure",
-        "zh": "n. 資本支出 (CAPEX)"
+        "en": "expenditure",
+        "zh": "n. 支出"
       },
       {
-        "en": "quality inspection",
-        "zh": "n. 品管檢驗、良率檢測"
+        "en": "inspection",
+        "zh": "n. 檢查"
       },
       {
-        "en": "return on investment",
-        "zh": "n. 投資回報率 (ROI)"
+        "en": "investment",
+        "zh": "n. 投資"
       }
     ]
   },
@@ -4619,32 +4607,32 @@ const listeningArticlesDB = [
     ],
     "vocabulary": [
       {
-        "en": "market penetration",
-        "zh": "n. 市場滲透率"
+        "en": "penetration",
+        "zh": "n. 滲透"
       },
       {
-        "en": "demographic profile",
-        "zh": "n. 目標客群受眾輪廓"
+        "en": "demographic",
+        "zh": "adj. 人口統計的"
       },
       {
-        "en": "conversion rate",
-        "zh": "n. 顧客轉換率"
+        "en": "conversion",
+        "zh": "n. 轉換"
       },
       {
-        "en": "brand loyalty",
-        "zh": "n. 品牌忠誠度"
+        "en": "loyalty",
+        "zh": "n. 忠誠"
       },
       {
-        "en": "localized campaign",
-        "zh": "n. 在地化行銷活動"
+        "en": "localized",
+        "zh": "adj. 在地化的"
       },
       {
-        "en": "influencer endorsement",
-        "zh": "n. 網紅意見領袖代言"
+        "en": "endorsement",
+        "zh": "n. 代言、背書"
       },
       {
-        "en": "ad engagement",
-        "zh": "n. 廣告互動成效"
+        "en": "engagement",
+        "zh": "n. 互動、參與"
       }
     ]
   },
@@ -4747,28 +4735,28 @@ const listeningArticlesDB = [
     ],
     "vocabulary": [
       {
-        "en": "intellectual property",
-        "zh": "n. 智慧財產權 (IP)"
+        "en": "intellectual",
+        "zh": "adj. 智力的"
       },
       {
-        "en": "licensing agreement",
-        "zh": "n. 授權合約、授權協議"
+        "en": "agreement",
+        "zh": "n. 協議"
       },
       {
-        "en": "royalty fee",
-        "zh": "n. 權利金、專利使用費"
+        "en": "royalty",
+        "zh": "n. 權利金"
       },
       {
-        "en": "patent infringement",
-        "zh": "n. 專利侵權"
+        "en": "infringement",
+        "zh": "n. 侵權"
       },
       {
-        "en": "exclusive territory",
-        "zh": "n. 專屬獨家授權區域"
+        "en": "exclusive",
+        "zh": "adj. 專屬的"
       },
       {
-        "en": "arbitration clause",
-        "zh": "n. 仲裁條款"
+        "en": "arbitration",
+        "zh": "n. 仲裁"
       },
       {
         "en": "confidentiality",
@@ -4875,32 +4863,32 @@ const listeningArticlesDB = [
     ],
     "vocabulary": [
       {
-        "en": "crisis communication",
-        "zh": "n. 危機公關應變"
+        "en": "crisis",
+        "zh": "n. 危機"
       },
       {
-        "en": "press conference",
-        "zh": "n. 記者招待會、新聞發布會"
+        "en": "conference",
+        "zh": "n. 會議、記者會"
       },
       {
-        "en": "product recall",
-        "zh": "n. 產品全面召回"
+        "en": "recall",
+        "zh": "n. 召回"
       },
       {
-        "en": "containment protocol",
-        "zh": "n. 危機控制圍堵程序"
+        "en": "containment",
+        "zh": "n. 遏制"
       },
       {
-        "en": "full refund",
-        "zh": "n. 全額退款"
+        "en": "refund",
+        "zh": "n. 退款"
       },
       {
-        "en": "brand reputation",
-        "zh": "n. 品牌信譽、商譽"
+        "en": "reputation",
+        "zh": "n. 聲譽"
       },
       {
-        "en": "transparent investigation",
-        "zh": "n. 透明公開的調查"
+        "en": "transparent",
+        "zh": "adj. 透明的"
       }
     ]
   },
@@ -5003,31 +4991,31 @@ const listeningArticlesDB = [
     ],
     "vocabulary": [
       {
-        "en": "executive succession",
-        "zh": "n. 高階管理層接班傳承"
+        "en": "succession",
+        "zh": "n. 接班、繼任"
       },
       {
-        "en": "illustrious tenure",
-        "zh": "n. 卓越輝煌的任期"
+        "en": "tenure",
+        "zh": "n. 任期"
       },
       {
-        "en": "chief executive officer",
-        "zh": "n. 執行長 (CEO)"
+        "en": "executive",
+        "zh": "n. 主管、高階主管"
       },
       {
-        "en": "organizational restructuring",
-        "zh": "n. 組織重組與架構調整"
+        "en": "restructuring",
+        "zh": "n. 重組"
       },
       {
-        "en": "seamless transition",
-        "zh": "n. 無縫平穩接軌過渡"
+        "en": "transition",
+        "zh": "n. 轉換、過渡"
       },
       {
-        "en": "strategic oversight",
-        "zh": "n. 策略監督、戰略指導"
+        "en": "oversight",
+        "zh": "n. 監督"
       },
       {
-        "en": "board of directors",
+        "en": "board",
         "zh": "n. 董事會"
       }
     ]
@@ -5200,36 +5188,36 @@ const listeningArticlesDB = [
     "text": "Alex: Good morning, Sophia. I am calling regarding the purchase order we submitted yesterday for the five hundred enterprise hard drives. Sophia: Good morning, Alex. Yes, I saw the order, but due to severe supply chain delays, our standard delivery timeframe would be three weeks instead of one. Alex: Three weeks will be problematic because our data center deployment is scheduled for the end of this month. Is there any possibility of expedited air freight? Sophia: We can arrange priority air freight for the first two hundred units by this Friday, provided that your company covers the additional shipping surcharge. Alex: That sounds workable. However, considering the urgency and bulk volume, would you be able to extend a fifteen percent discount on the remaining batch? Sophia: Fifteen percent is beyond my authorization limit, but I could approve a twelve percent discount if you commit to signing our annual maintenance contract. Alex: That is a fair compromise. Could you send over the revised agreement along with the updated invoice by two o'clock today? Sophia: Certainly, Alex. I will draft the paperwork right away and email it to your legal department for final signature.",
     "vocabulary": [
       {
-        "en": "purchase order",
-        "zh": "n. 採購訂單 (PO)"
+        "en": "purchase",
+        "zh": "n. 採購"
       },
       {
-        "en": "supply chain delay",
-        "zh": "n. 供應鏈延誤"
+        "en": "delay",
+        "zh": "n. 延誤"
       },
       {
-        "en": "air freight",
-        "zh": "n. 航空貨運、空運"
+        "en": "air",
+        "zh": "n. 空氣、航空"
       },
       {
-        "en": "shipping surcharge",
-        "zh": "n. 運輸附加費、加成費"
+        "en": "surcharge",
+        "zh": "n. 附加費"
       },
       {
-        "en": "bulk volume",
-        "zh": "n. 大宗訂購量"
+        "en": "volume",
+        "zh": "n. 數量、體積"
       },
       {
-        "en": "fair compromise",
-        "zh": "n. 公平合理的折衷妥協"
+        "en": "compromise",
+        "zh": "n. 妥協"
       },
       {
-        "en": "maintenance contract",
-        "zh": "n. 年度設備維護合約"
+        "en": "maintenance",
+        "zh": "n. 維護、保養"
       },
       {
-        "en": "revised invoice",
-        "zh": "n. 修改後的請款發票"
+        "en": "invoice",
+        "zh": "n. 發票、請款單"
       }
     ]
   }

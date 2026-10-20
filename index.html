@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
@@ -18,7 +18,7 @@
     <script src="words_data.js"></script>
     <script src="toeic_data.js"></script>
     <script src="jh_data.js"></script>
-    <script src="listening_data.js"></script>
+    <script src="listening_data.js?v=20261020b"></script>
     <script src="words_audio_manifest.js"></script>
     <script src="examples_audio_manifest.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
@@ -3934,10 +3934,17 @@
                         </button>
                     </div>
                     <div class="text-xs text-gray-400 mt-1.5 flex items-center justify-between">
-                        <span>字庫中未收錄</span> 
+                        <span id="tooltip-auto-zh">翻譯中…</span> 
                         <button onclick="promptAddMissingWord('${safeWord}')" class="text-teal-300 hover:text-teal-200 pointer-events-auto px-2 py-0.5 rounded bg-gray-800 text-[11px] font-medium ml-2 shadow-xs">➕ 加入自訂</button>
                     </div>
                 `;
+            fetchQuickTranslation(wordText).then(zh => {
+                    const el = document.getElementById('tooltip-auto-zh');
+                    if (el) {
+                        el.className = 'text-xs text-gray-100 font-medium';
+                        el.textContent = zh || '字庫中未收錄';
+                    }
+                });
             }
 
             // 計算位置
@@ -3962,8 +3969,24 @@
             }, 5000);
         }
 
-        // 提示使用者輸入中文並加入自訂字庫
-        function promptAddMissingWord(word) {
+        // 自動查詢中文翻譯 (有快取)
+        const quickTranslateCache = {};
+        async function fetchQuickTranslation(word) {
+            const key = word.toLowerCase();
+            if (quickTranslateCache[key]) return quickTranslateCache[key];
+            try {
+                const res = await fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-TW&dt=t&q=${encodeURIComponent(word)}`);
+                const data = await res.json();
+                const zh = data[0].map(x => x[0]).join('').trim();
+                if (zh) quickTranslateCache[key] = zh;
+                return zh;
+            } catch (err) {
+                return '';
+            }
+        }
+
+        // 自動查中文並加入自訂字庫 (查不到才讓使用者手動輸入)
+        async function promptAddMissingWord(word) {
             const tooltip = document.getElementById('word-tooltip');
             if (tooltip) tooltip.classList.add('opacity-0');
             
@@ -3971,10 +3994,13 @@
                 alert('請先登入才能使用自訂字庫功能！');
                 return;
             }
-            const zh = prompt(`請輸入「${word}」的中文意思，將加入您的自訂字庫 (單元 999)：`);
+            let zh = await fetchQuickTranslation(word);
+            if (!zh) {
+                zh = prompt(`查不到「${word}」，請手動輸入中文意思：`);
+            }
             if (zh && zh.trim()) {
                 addCustomWord(word, '', zh.trim());
-                alert(`已將「${word}」加入自訂字庫！`);
+                alert(`已將「${word}」(${zh.trim()}) 加入自訂字庫！`);
             }
         }
         // ==========================================

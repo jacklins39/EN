@@ -2712,20 +2712,20 @@ const listeningArticlesDB = [
     "audio": "audio/listening/2026_10_gen_01.mp3",
     "vocabulary": [
       {
-        "en": "round-trip ticket",
-        "zh": "n. 來回票"
+        "en": "ticket",
+        "zh": "n. 車票、票券"
       },
       {
-        "en": "express train",
-        "zh": "n. 特快自強號、直達列車"
+        "en": "express",
+        "zh": "n. 特快車 / adj. 特快的"
       },
       {
         "en": "platform",
-        "zh": "n. 月台"
+        "zh": "n. 月台、站台"
       },
       {
-        "en": "departure time",
-        "zh": "n. 發車時間"
+        "en": "departure",
+        "zh": "n. 出發、啟程、發車"
       },
       {
         "en": "fare",

@@ -1040,7 +1040,7 @@
         function esc(s) {
             return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
         }
-        let currentUnit = 1;
+        let currentUnit = parseInt(localStorage.getItem('vocab_current_unit') || '1', 10);
         let chartInstance = null;
         
         let sessionQueue = [];
@@ -1139,11 +1139,32 @@
                     const cloudDay = typeof data.day === 'number' ? data.day : 0;
                     const cloudLastDate = data.lastDate || getLocalDateStr();
                     
-                    // 以雲端最新資料作為權威標準 (Source of Truth)
-                    userProgress = cloudProgress;
-                    virtualCurrentDay = cloudDay;
-                    dailyPlans = cloudDailyPlans;
+                    // 智慧雙向合併：防止雲端空資料覆蓋洗掉本機學習成果
+                    const mergedProgress = { ...userProgress };
+                    for (const [wid, cp] of Object.entries(cloudProgress)) {
+                        if (!mergedProgress[wid]) {
+                            mergedProgress[wid] = cp;
+                        } else {
+                            const lp = mergedProgress[wid];
+                            mergedProgress[wid] = {
+                                ...lp,
+                                ...cp,
+                                level: Math.max(lp.level || 0, cp.level || 0),
+                                nextReviewDay: Math.max(lp.nextReviewDay || 0, cp.nextReviewDay || 0),
+                                mistakes: Array.from(new Set([...(lp.mistakes || []), ...(cp.mistakes || [])]))
+                            };
+                        }
+                    }
+
+                    userProgress = mergedProgress;
+                    virtualCurrentDay = Math.max(virtualCurrentDay, cloudDay);
+                    dailyPlans = { ...cloudDailyPlans, ...dailyPlans };
                     localStorage.setItem('vocab_last_date', cloudLastDate);
+
+                    if (data.unit && !localStorage.getItem('vocab_current_unit')) {
+                        currentUnit = data.unit;
+                        localStorage.setItem('vocab_current_unit', String(currentUnit));
+                    }
 
                     if (typeof data.newWordsPerDay === 'number') {
                         NEW_WORDS_PER_DAY = data.newWordsPerDay;
@@ -1200,6 +1221,7 @@
             const payload = {
                 progress: userProgress,
                 day: virtualCurrentDay,
+                unit: currentUnit,
                 dailyPlans: dailyPlans,
                 newWordsPerDay: NEW_WORDS_PER_DAY,
                 customWords: customWordsDB,
@@ -1243,6 +1265,18 @@
                 localStorage.setItem('vocab_virtual_day', String(virtualCurrentDay));
                 localStorage.setItem('vocab_last_date', getLocalDateStr());
                 localStorage.setItem('vocab_user_progress', JSON.stringify(userProgress));
+                localStorage.setItem('vocab_current_unit', String(currentUnit));
+
+                // 安全快照：只要進度不為空，持續自動建立歷史備份以防誤刪
+                if (userProgress && Object.keys(userProgress).length > 0) {
+                    localStorage.setItem('vocab_user_progress_backup', JSON.stringify({
+                        timestamp: Date.now(),
+                        dateStr: getLocalDateStr(),
+                        progress: userProgress,
+                        day: virtualCurrentDay,
+                        unit: currentUnit
+                    }));
+                }
             } catch(e) {}
         }
 
@@ -1256,7 +1290,7 @@
                 if (diffTime > 0) {
                     const diffDays = Math.max(1, Math.round(diffTime / (1000 * 60 * 60 * 24)));
                     virtualCurrentDay += diffDays;
-                    dailyPlans = {}; // 隔天自動更新每日單字
+                    dailyPlans = {}; // 隔天自動更新每日單字排程
                     saveDailyPlansLocally();
                     saveToCloud();
                 }
@@ -1272,6 +1306,23 @@
                 console.warn("讀取本地進度異常", e);
                 userProgress = {};
             }
+
+            // 災難自動救援：若進度為空，自動檢查是否有安全快照備份進行還原
+            if (!userProgress || Object.keys(userProgress).length === 0) {
+                try {
+                    const backupRaw = localStorage.getItem('vocab_user_progress_backup');
+                    if (backupRaw) {
+                        const backup = JSON.parse(backupRaw);
+                        if (backup && backup.progress && Object.keys(backup.progress).length > 0) {
+                            console.log("偵測到本地安全快照，自動還原昨日進度");
+                            userProgress = backup.progress;
+                            if (typeof backup.day === 'number') virtualCurrentDay = Math.max(virtualCurrentDay, backup.day);
+                            if (backup.unit) currentUnit = backup.unit;
+                        }
+                    }
+                } catch(e) {}
+            }
+
             const savedDay = parseInt(localStorage.getItem('vocab_virtual_day') || '0', 10);
             virtualCurrentDay = !isNaN(savedDay) ? savedDay : 0;
             try {
@@ -1281,10 +1332,20 @@
                 console.warn("讀取本地計畫異常", e);
                 dailyPlans = {};
             }
+
+            const savedUnit = parseInt(localStorage.getItem('vocab_current_unit') || '1', 10);
+            if (savedUnit) currentUnit = savedUnit;
+            const unitSel = document.getElementById('unit-selector');
+            if (unitSel) unitSel.value = String(currentUnit);
+
             initAppLogic();
         }
 
         function initAppLogic() {
+            const unitSel = document.getElementById('unit-selector');
+            if (unitSel && String(unitSel.value) !== String(currentUnit)) {
+                unitSel.value = String(currentUnit);
+            }
             checkCalendarDayRollover();
             updateDashboard();
         }
@@ -1294,6 +1355,8 @@
 
         document.getElementById('unit-selector').addEventListener('change', (e) => {
             currentUnit = parseInt(e.target.value);
+            localStorage.setItem('vocab_current_unit', String(currentUnit));
+            saveToCloud();
             updateDashboard();
         });
 
@@ -2796,14 +2859,14 @@
                 return;
             }
 
-            // 2. 本地查不到，改用 Google Translate API
+            // 2. 本地查不到，改用多重備援線上翻譯 API
             try {
-                const response = await fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-TW&dt=t&q=${encodeURIComponent(word)}`);
-                if (!response.ok) throw new Error('Not found');
-                const data = await response.json();
-                
-                const translated = data[0].map(x => x[0]).join('');
-                renderDictModal(word, '', 'Google 翻譯', translated);
+                const translated = await fetchQuickTranslation(word);
+                if (translated) {
+                    renderDictModal(word, '', '線上翻譯', translated);
+                } else {
+                    renderDictErrorModal(word);
+                }
             } catch (e) {
                 renderDictErrorModal(word);
             }
@@ -3926,6 +3989,7 @@
                 `;
             } else {
                 const safeWord = esc(wordText).replace(/'/g, "\\'");
+                const isAlreadyCustom = customWordsDB.some(cw => cw.en.toLowerCase() === wordText.toLowerCase());
                 tooltip.innerHTML = `
                     <div class="flex items-center justify-between gap-3">
                         <div class="font-semibold text-gray-200 text-sm">${esc(wordText)}</div>
@@ -3933,26 +3997,36 @@
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
                         </button>
                     </div>
-                    <div class="text-xs text-gray-400 mt-1.5 flex items-center justify-between">
-                        <span id="tooltip-auto-zh">翻譯中…</span> 
-                        <button onclick="promptAddMissingWord('${safeWord}')" class="text-teal-300 hover:text-teal-200 pointer-events-auto px-2 py-0.5 rounded bg-gray-800 text-[11px] font-medium ml-2 shadow-xs">➕ 加入自訂</button>
+                    <div class="text-xs text-gray-400 mt-1.5 flex items-center justify-between gap-2">
+                        <span id="tooltip-auto-zh" class="truncate max-w-[140px]">翻譯中…</span> 
+                        ${isAlreadyCustom ? `<span class="text-emerald-400 text-[11px] font-medium ml-2 whitespace-nowrap">✅ 已在字庫</span>` : `<button onclick="event.stopPropagation(); promptAddMissingWord('${safeWord}', this)" class="text-teal-300 hover:text-teal-200 pointer-events-auto px-2 py-0.5 rounded bg-gray-800 text-[11px] font-medium ml-2 shadow-xs whitespace-nowrap transition-colors">➕ 加入自訂</button>`}
                     </div>
                 `;
-            fetchQuickTranslation(wordText).then(zh => {
+                fetchQuickTranslation(wordText).then(zh => {
                     const el = document.getElementById('tooltip-auto-zh');
                     if (el) {
-                        el.className = 'text-xs text-gray-100 font-medium';
+                        el.className = 'text-xs text-gray-100 font-medium truncate max-w-[140px]';
                         el.textContent = zh || '字庫中未收錄';
                     }
                 });
             }
 
-            // 計算位置
+            // 計算位置 (避免超出手機螢幕邊界)
             const rect = e.target.getBoundingClientRect();
-            // 先顯示以取得實際高度
             tooltip.classList.remove('opacity-0');
-            tooltip.style.left = Math.max(10, rect.left + window.scrollX) + 'px';
-            tooltip.style.top = Math.max(10, rect.top + window.scrollY - tooltip.offsetHeight - 5) + 'px';
+            const tooltipWidth = tooltip.offsetWidth || 200;
+            const scrollLeft = window.scrollX || window.pageXOffset || 0;
+            const scrollY = window.scrollY || window.pageYOffset || 0;
+            let leftPos = rect.left + scrollLeft;
+            const maxLeft = scrollLeft + window.innerWidth - tooltipWidth - 12;
+            leftPos = Math.max(scrollLeft + 10, Math.min(leftPos, maxLeft));
+
+            tooltip.style.left = leftPos + 'px';
+            let topPos = rect.top + scrollY - tooltip.offsetHeight - 6;
+            if (topPos < scrollY + 10) {
+                topPos = rect.bottom + scrollY + 8; // 上方空間不足時放下方
+            }
+            tooltip.style.top = topPos + 'px';
             
             // 如果游標移入 tooltip，暫停隱藏計時
             tooltip.onmouseenter = () => { if (tooltip.timeoutId) clearTimeout(tooltip.timeoutId); };
@@ -3969,38 +4043,218 @@
             }, 5000);
         }
 
-        // 自動查詢中文翻譯 (有快取)
+        // 自動查詢中文翻譯 (多重備援 API + 快取)
         const quickTranslateCache = {};
         async function fetchQuickTranslation(word) {
-            const key = word.toLowerCase();
+            const key = String(word || '').toLowerCase().trim();
+            if (!key) return '';
             if (quickTranslateCache[key]) return quickTranslateCache[key];
+
+            // 0. DOM 預載檢查：如果目前 tooltip 已經查出中文，直接使用
+            const domZh = document.getElementById('tooltip-auto-zh');
+            if (domZh && domZh.textContent) {
+                const domText = domZh.textContent.trim();
+                if (domText && !['翻譯中…', '字庫中未收錄', '查詢中...'].includes(domText)) {
+                    quickTranslateCache[key] = domText;
+                    return domText;
+                }
+            }
+
+            // 1. 首選：Google 字典擴充端點 (極少被擋，回傳純陣列)
+            try {
+                const res = await fetch(`https://translate.googleapis.com/translate_a/t?client=dict-chrome-ex&sl=en&tl=zh-TW&dt=t&q=${encodeURIComponent(word)}`);
+                if (res.ok) {
+                    const data = await res.json();
+                    let zh = '';
+                    if (Array.isArray(data) && typeof data[0] === 'string') {
+                        zh = data[0].trim();
+                    }
+                    if (zh) {
+                        quickTranslateCache[key] = zh;
+                        return zh;
+                    }
+                }
+            } catch (err) {
+                console.warn('Translate via dict-chrome-ex fallbacking...', err);
+            }
+
+            // 2. 備援 1：Google GTX 端點
             try {
                 const res = await fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-TW&dt=t&q=${encodeURIComponent(word)}`);
-                const data = await res.json();
-                const zh = data[0].map(x => x[0]).join('').trim();
-                if (zh) quickTranslateCache[key] = zh;
-                return zh;
+                if (res.ok) {
+                    const data = await res.json();
+                    if (data && data[0] && Array.isArray(data[0])) {
+                        const zh = data[0].map(x => x[0]).join('').trim();
+                        if (zh) {
+                            quickTranslateCache[key] = zh;
+                            return zh;
+                        }
+                    }
+                }
             } catch (err) {
-                return '';
+                console.warn('Translate via gtx fallbacking...', err);
             }
+
+            // 3. 備援 2：MyMemory 翻譯 API (完全跨域，不依賴 Google)
+            try {
+                const res = await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(word)}&langpair=en|zh-TW`);
+                if (res.ok) {
+                    const data = await res.json();
+                    const zh = (data && data.responseData && data.responseData.translatedText) ? data.responseData.translatedText.trim() : '';
+                    if (zh && !zh.toUpperCase().includes('QUERY LENGTH LIMIT EXCEEDED')) {
+                        quickTranslateCache[key] = zh;
+                        return zh;
+                    }
+                }
+            } catch (err) {
+                console.warn('Translate via MyMemory failed', err);
+            }
+
+            return '';
         }
 
-        // 自動查中文並加入自訂字庫 (查不到才讓使用者手動輸入)
-        async function promptAddMissingWord(word) {
-            const tooltip = document.getElementById('word-tooltip');
-            if (tooltip) tooltip.classList.add('opacity-0');
+        // 浮動 Toast 輕量提示 (手機/電腦體驗佳，不阻斷畫面)
+        function showQuickToast(msg) {
+            let toast = document.getElementById('quick-toast');
+            if (!toast) {
+                toast = document.createElement('div');
+                toast.id = 'quick-toast';
+                toast.className = 'fixed top-5 left-1/2 -translate-x-1/2 z-[9999] bg-gray-900/90 text-white text-xs sm:text-sm font-medium px-4 py-2 rounded-2xl shadow-xl backdrop-blur-md transition-all duration-300 pointer-events-none opacity-0 -translate-y-2 border border-gray-700/60 max-w-[90vw] text-center';
+                document.body.appendChild(toast);
+            }
+            toast.textContent = msg;
+            toast.classList.remove('opacity-0', '-translate-y-2');
+            toast.classList.add('opacity-100', 'translate-y-0');
+            if (toast.timeoutId) clearTimeout(toast.timeoutId);
+            toast.timeoutId = setTimeout(() => {
+                toast.classList.remove('opacity-100', 'translate-y-0');
+                toast.classList.add('opacity-0', '-translate-y-2');
+            }, 2500);
+        }
+
+        // 自訂手動輸入彈窗 (取代 iOS Safari 會變黑塊的原生 prompt)
+        function showCustomWordPromptModal(word, onConfirm) {
+            let modal = document.getElementById('custom-word-modal');
+            if (!modal) {
+                modal = document.createElement('div');
+                modal.id = 'custom-word-modal';
+                modal.className = 'fixed inset-0 bg-black/60 z-[9999] flex items-center justify-center p-4 backdrop-blur-xs transition-opacity duration-200';
+                modal.innerHTML = `
+                    <div class="bg-white rounded-2xl shadow-2xl p-6 max-w-sm w-full relative transform transition-all border border-gray-100 text-left">
+                        <h4 class="text-lg font-bold text-gray-900 mb-1">加入自訂字庫</h4>
+                        <p class="text-xs text-gray-500 mb-3">線上查無此單字翻譯，請輸入中文意思：</p>
+                        <div class="mb-3 px-3 py-1.5 bg-blue-50 text-[#0071E3] font-semibold rounded-lg text-sm inline-block" id="modal-word-badge"></div>
+                        <input id="modal-custom-zh-input" type="text" placeholder="例如：氛圍、情調" maxlength="60" class="w-full px-3 py-2.5 text-base border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#0071E3] focus:border-transparent text-gray-900 bg-white placeholder-gray-400">
+                        <div class="flex justify-end gap-2.5 mt-4">
+                            <button id="modal-custom-cancel" class="px-4 py-2 text-sm font-medium text-gray-600 bg-gray-100 hover:bg-gray-200 rounded-xl transition">取消</button>
+                            <button id="modal-custom-submit" class="px-4 py-2 text-sm font-medium text-white bg-[#0071E3] hover:bg-blue-600 rounded-xl shadow-xs transition">確定加入</button>
+                        </div>
+                    </div>
+                `;
+                document.body.appendChild(modal);
+            }
+
+            const badge = document.getElementById('modal-word-badge');
+            const input = document.getElementById('modal-custom-zh-input');
+            const btnCancel = document.getElementById('modal-custom-cancel');
+            const btnSubmit = document.getElementById('modal-custom-submit');
+
+            badge.textContent = word;
+            input.value = '';
+            modal.classList.remove('hidden');
+
+            const closeModal = () => {
+                modal.classList.add('hidden');
+            };
+
+            btnCancel.onclick = () => closeModal();
             
+            const doSubmit = () => {
+                const val = (input.value || '').trim();
+                if (!val) {
+                    input.focus();
+                    return;
+                }
+                closeModal();
+                if (typeof onConfirm === 'function') onConfirm(val);
+            };
+
+            btnSubmit.onclick = doSubmit;
+            input.onkeydown = (e) => {
+                if (e.key === 'Enter') doSubmit();
+                if (e.key === 'Escape') closeModal();
+            };
+
+            setTimeout(() => input.focus(), 100);
+        }
+
+        // 自動查中文並加入自訂字庫
+        async function promptAddMissingWord(word, btn) {
             if (!currentUser) {
                 alert('請先登入才能使用自訂字庫功能！');
                 return;
             }
-            let zh = await fetchQuickTranslation(word);
-            if (!zh) {
-                zh = prompt(`查不到「${word}」，請手動輸入中文意思：`);
+
+            // 檢查是否已在自訂字庫
+            if (customWordsDB.some(w => w.en.toLowerCase() === word.toLowerCase())) {
+                if (btn) {
+                    btn.textContent = '✅ 已在字庫';
+                    btn.classList.remove('text-teal-300');
+                    btn.classList.add('text-emerald-400');
+                    btn.disabled = true;
+                }
+                showQuickToast(`「${word}」已經在你的自訂字庫中囉！`);
+                return;
             }
-            if (zh && zh.trim()) {
-                addCustomWord(word, '', zh.trim());
-                alert(`已將「${word}」(${zh.trim()}) 加入自訂字庫！`);
+
+            const origText = btn ? btn.textContent : '';
+            if (btn) {
+                btn.textContent = '⏳ 加入中...';
+                btn.disabled = true;
+            }
+
+            let zh = await fetchQuickTranslation(word);
+
+            // 若所有 API 真的都查不到，開啟美觀自訂輸入彈窗 (不再調用 Safari 原生黑塊 prompt)
+            if (!zh) {
+                if (btn) {
+                    btn.textContent = origText;
+                    btn.disabled = false;
+                }
+                showCustomWordPromptModal(word, (inputZh) => {
+                    if (inputZh && inputZh.trim()) {
+                        executeAddCustomWord(word, inputZh.trim(), btn);
+                    }
+                });
+                return;
+            }
+
+            executeAddCustomWord(word, zh, btn);
+        }
+
+        function executeAddCustomWord(word, zh, btn) {
+            const success = addCustomWord(word, '', zh);
+            if (success) {
+                if (btn) {
+                    btn.textContent = '✅ 已加入';
+                    btn.classList.remove('text-teal-300', 'hover:text-teal-200');
+                    btn.classList.add('text-emerald-400');
+                    btn.disabled = true;
+                }
+                showQuickToast(`已將「${word}」(${zh}) 加入自訂字庫！`);
+                
+                // 1.5 秒後淡出 tooltip
+                const tooltip = document.getElementById('word-tooltip');
+                if (tooltip) {
+                    setTimeout(() => {
+                        tooltip.classList.add('opacity-0');
+                    }, 1500);
+                }
+            } else {
+                if (btn) {
+                    btn.textContent = '➕ 加入自訂';
+                    btn.disabled = false;
+                }
             }
         }
         // ==========================================

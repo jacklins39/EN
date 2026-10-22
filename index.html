@@ -276,9 +276,27 @@
                     </div>
                 </div>
 
-                <div class="bg-[#F5F5F7] rounded-2xl p-4 flex justify-between items-center border-0 border-gray-100 mb-6">
+                <div class="bg-[#F5F5F7] rounded-2xl p-4 flex justify-between items-center border-0 border-gray-100 mb-4">
                     <div class="text-sm text-gray-600">已掌握詞彙</div>
                     <div class="text-lg font-semibold text-[#1D1D1F]" id="stat-mastered">0 / 1000</div>
+                </div>
+
+                <!-- 題型選擇器 (Dashboard) -->
+                <div class="w-full mb-3 bg-white p-3.5 rounded-2xl border border-gray-100 shadow-sm">
+                    <div class="flex items-center justify-between text-xs mb-2">
+                        <span class="font-semibold text-gray-700 flex items-center gap-1.5">
+                            <span>🎯</span> 複習題型模式
+                        </span>
+                        <span id="quiz-mode-desc-dash" class="text-xs font-semibold text-[#0071E3]">智能自適應</span>
+                    </div>
+                    <div class="grid grid-cols-3 sm:grid-cols-6 gap-1 bg-gray-100 p-1 rounded-xl quiz-mode-selector">
+                        <button type="button" data-mode="auto" class="quiz-pill py-2 px-1 text-xs rounded-lg font-medium transition-all text-center">🌟 智能</button>
+                        <button type="button" data-mode="en2zh" class="quiz-pill py-2 px-1 text-xs rounded-lg font-medium transition-all text-center">🔤 英選中</button>
+                        <button type="button" data-mode="zh2en" class="quiz-pill py-2 px-1 text-xs rounded-lg font-medium transition-all text-center">🈳 中選英</button>
+                        <button type="button" data-mode="listen" class="quiz-pill py-2 px-1 text-xs rounded-lg font-medium transition-all text-center">🎧 聽音</button>
+                        <button type="button" data-mode="fill" class="quiz-pill py-2 px-1 text-xs rounded-lg font-medium transition-all text-center">⌨️ 拼寫</button>
+                        <button type="button" data-mode="card" class="quiz-pill py-2 px-1 text-xs rounded-lg font-medium transition-all text-center">🃏 翻牌</button>
+                    </div>
                 </div>
 
                 <button id="btn-start-session" class="btn-action w-full bg-[#0071E3] hover:bg-[#0077ED] text-white font-medium py-4 rounded-2xl shadow-sm shadow-indigo-200 text-lg flex items-center justify-center gap-2 mb-4">
@@ -379,6 +397,24 @@
                     <div>
                         <div class="text-[11px] text-[#86868B]">今日進度</div>
                         <div id="lobby-stat-status" class="text-xs font-semibold text-amber-600">進行中</div>
+                    </div>
+                </div>
+
+                <!-- 題型選擇器 (Study Lobby) -->
+                <div class="w-full mb-3 bg-gray-50 p-2.5 rounded-xl border border-gray-100">
+                    <div class="flex items-center justify-between text-xs mb-1.5 px-0.5">
+                        <span class="font-semibold text-gray-700 flex items-center gap-1">
+                            <span>🎯</span> 題型模式
+                        </span>
+                        <span id="quiz-mode-desc-lobby" class="text-xs font-semibold text-[#0071E3]">智能自適應</span>
+                    </div>
+                    <div class="grid grid-cols-3 sm:grid-cols-6 gap-1 bg-white p-1 rounded-lg border border-gray-200 quiz-mode-selector">
+                        <button type="button" data-mode="auto" class="quiz-pill py-1.5 px-1 text-xs rounded-md font-medium transition-all text-center">🌟 智能</button>
+                        <button type="button" data-mode="en2zh" class="quiz-pill py-1.5 px-1 text-xs rounded-md font-medium transition-all text-center">🔤 英選中</button>
+                        <button type="button" data-mode="zh2en" class="quiz-pill py-1.5 px-1 text-xs rounded-md font-medium transition-all text-center">🈳 中選英</button>
+                        <button type="button" data-mode="listen" class="quiz-pill py-1.5 px-1 text-xs rounded-md font-medium transition-all text-center">🎧 聽音</button>
+                        <button type="button" data-mode="fill" class="quiz-pill py-1.5 px-1 text-xs rounded-md font-medium transition-all text-center">⌨️ 拼寫</button>
+                        <button type="button" data-mode="card" class="quiz-pill py-1.5 px-1 text-xs rounded-md font-medium transition-all text-center">🃏 翻牌</button>
                     </div>
                 </div>
 
@@ -505,8 +541,10 @@
                     <div class="flip-card-back p-4">
                         <h2 class="text-3xl font-semibold text-[#1D1D1F] mb-1 break-all" id="card-word-back">Apple</h2>
                         <p class="text-gray-400 font-mono text-sm mb-2" id="card-kk-back">/ˈæpəl/</p>
-                        <div class="w-16 h-1 bg-indigo-100 rounded my-1"></div>
-                        <p class="text-2xl text-[#0071E3] font-medium mb-3" id="card-translation">蘋果</p>
+                        <div class="flex items-center justify-center gap-2 mb-3">
+                            <span id="card-pos-badge" class="hidden text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-blue-50 text-[#0071E3] border border-blue-200 font-mono"></span>
+                            <p class="text-2xl text-[#0071E3] font-bold" id="card-translation">蘋果</p>
+                        </div>
                         
                         <!-- 原生口說跟讀評測 -->
                         <div class="flex flex-col items-center justify-center mb-2">
@@ -1052,6 +1090,59 @@
         function esc(s) {
             return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
         }
+
+        // 解析詞性與純中文：將 "adj. 有能力的" 或 "(v.) 跑" 或 pos 欄位乾淨拆分，避免中文前綴混入詞性
+        function splitPosAndZh(zhStr, explicitPos = '') {
+            let pos = (explicitPos || '').trim();
+            let pureZh = (zhStr || '').trim();
+            
+            // 匹配如 "adj. 有能力的"、"v. 放棄"、"v./n. 計劃"、"(n.) 蘋果"、"a. 好的"、"prep. 在...之上"
+            const m = pureZh.match(/^(\(?[a-zA-Z./]+\.?\)?)\s*[:：.]?\s*(.*)$/);
+            if (m && m[1]) {
+                let detected = m[1].replace(/[()]/g, '').trim().toLowerCase();
+                if (!detected.endsWith('.')) detected += '.';
+                if (!pos) pos = detected;
+                pureZh = m[2] ? m[2].trim() : pureZh;
+            }
+            
+            // 清理開頭殘餘標點或冒號
+            pureZh = pureZh.replace(/^[:：、，,\s]+/, '').trim();
+            return { pos, pureZh: pureZh || zhStr || '' };
+        }
+
+        // 題型偏好模式管理 (auto 智能階梯, en2zh 看英選中, zh2en 看中選英, listen 盲聽辨字, fill 拼寫填空, card 卡片翻牌)
+        const QUIZ_MODE_NAMES = {
+            'auto': '🌟 智能自適應（循序階梯）',
+            'en2zh': '🔤 看英選中（快速識義）',
+            'zh2en': '🈳 看中選英（主動回想）',
+            'listen': '🎧 盲聽辨字（聽音辨字）',
+            'fill': '⌨️ 拼寫填空（鍵盤輸入）',
+            'card': '🃏 卡片翻牌（經典自評）'
+        };
+
+        function setPreferredQuizType(mode) {
+            const valid = ['auto', 'en2zh', 'zh2en', 'listen', 'fill', 'card'].includes(mode) ? mode : 'auto';
+            localStorage.setItem('preferred_quiz_type', valid);
+            updateQuizModeUI(valid);
+        }
+
+        function updateQuizModeUI(mode) {
+            const m = mode || localStorage.getItem('preferred_quiz_type') || 'auto';
+            const descText = QUIZ_MODE_NAMES[m] || QUIZ_MODE_NAMES['auto'];
+            const dashDesc = document.getElementById('quiz-mode-desc-dash');
+            const lobbyDesc = document.getElementById('quiz-mode-desc-lobby');
+            if (dashDesc) dashDesc.innerText = descText;
+            if (lobbyDesc) lobbyDesc.innerText = descText;
+
+            document.querySelectorAll('.quiz-pill').forEach(btn => {
+                const isSelected = btn.dataset.mode === m;
+                if (isSelected) {
+                    btn.className = 'quiz-pill py-2 px-1 text-xs rounded-lg font-bold transition-all text-center bg-white text-[#0071E3] shadow-xs border border-blue-100';
+                } else {
+                    btn.className = 'quiz-pill py-2 px-1 text-xs rounded-lg font-medium transition-all text-center text-gray-500 hover:text-gray-800';
+                }
+            });
+        }
         let currentUnit = parseInt(localStorage.getItem('vocab_current_unit') || '1', 10);
         let chartInstance = null;
         
@@ -1187,13 +1278,17 @@
                     customWordsDB = (Array.isArray(data.customWords) ? data.customWords : [])
                         .filter(cw => cw && typeof cw.en === 'string' && /^[A-Za-z][A-Za-z' -]{0,39}$/.test(cw.en))
                         .slice(0, MAX_CUSTOM_WORDS)
-                        .map(cw => ({
-                            id: Number(cw.id) || (10000 + Date.now()),
-                            en: cw.en,
-                            kk: String(cw.kk || '').slice(0, 60),
-                            zh: String(cw.zh || '').slice(0, 100),
-                            unit: 10
-                        }));
+                        .map(cw => {
+                            const parsed = splitPosAndZh(cw.zh, cw.pos);
+                            return {
+                                id: Number(cw.id) || (10000 + Date.now()),
+                                en: cw.en,
+                                kk: String(cw.kk || '').slice(0, 60),
+                                pos: String(cw.pos || parsed.pos || '').slice(0, 30),
+                                zh: String(parsed.pureZh || cw.zh || '').slice(0, 100),
+                                unit: 10
+                            };
+                        });
                     
                     // 合併自訂單字到主要資料庫 (去重防止重複 push)
                     const existingCustomIds = new Set(vocabularyDB.filter(w => w.unit === 10).map(w => String(w.id)));
@@ -1969,13 +2064,38 @@
 
             document.getElementById('card-word').innerText = currentWord.en;
             document.getElementById('card-word-back').innerText = currentWord.en;
-            document.getElementById('card-translation').innerText = currentWord.zh;
             
-            // 決定模式：全部統一為選擇題測驗（選答案）
+            // 解析詞性與純中文：卡片背面只顯示純中文，詞性以專屬標籤呈現，徹底避免詞性前置混淆
+            const parsed = splitPosAndZh(currentWord.zh, currentWord.pos);
+            const posBadge = document.getElementById('card-pos-badge');
+            if (posBadge) {
+                if (parsed.pos) {
+                    posBadge.innerText = parsed.pos;
+                    posBadge.classList.remove('hidden');
+                } else {
+                    posBadge.classList.add('hidden');
+                }
+            }
+            document.getElementById('card-translation').innerText = parsed.pureZh;
+            
+            // 決定題型模式：優先遵循使用者在題型選擇器挑選的題型 (或智能自適應)
             const progress = (currentWord && userProgress[currentWord.id]) ? userProgress[currentWord.id] : null;
             const forced = sessionTitle === WEAK_TITLE;
-            isQuizMode = !isAutoFlashcardMode;
-            currentQuizType = isQuizMode ? pickQuizType(progress ? progress.level : 0, forced) : 'card';
+            const prefMode = localStorage.getItem('preferred_quiz_type') || 'auto';
+            
+            if (isAutoFlashcardMode) {
+                isQuizMode = false;
+                currentQuizType = 'card';
+            } else if (prefMode === 'card') {
+                isQuizMode = false;
+                currentQuizType = 'card';
+            } else if (prefMode !== 'auto') {
+                isQuizMode = true;
+                currentQuizType = prefMode;
+            } else {
+                isQuizMode = true;
+                currentQuizType = pickQuizType(progress ? progress.level : 0, forced);
+            }
             
             if (isQuizMode) {
                 quizOptions.classList.remove('hidden');
@@ -2152,8 +2272,11 @@
             if (t === 'en2zh') {
                 hintEl.innerText = '看英文 ➜ 選出中文';
             } else if (t === 'zh2en') {
-                wordEl.className = mid; wordEl.innerText = w.zh; kkEl.innerText = '';
-                hintEl.innerText = '看中文 ➜ 選出英文';
+                const parsed = splitPosAndZh(w.zh, w.pos);
+                wordEl.className = mid; 
+                wordEl.innerText = parsed.pureZh; 
+                kkEl.innerText = '';
+                hintEl.innerHTML = parsed.pos ? `<span class="inline-block bg-blue-50 text-[#0071E3] border border-blue-200 text-xs px-2 py-0.5 rounded-full font-mono mr-1.5">${parsed.pos}</span> 看中文 ➜ 選出英文` : '看中文 ➜ 選出英文';
                 audioBtn.classList.add('hidden');
             } else if (t === 'listen') {
                 wordEl.className = 'text-5xl mb-2 font-mono';
@@ -2166,9 +2289,14 @@
                     }
                 }, 100);
             } else if (t === 'fill') {
-                wordEl.className = mid; wordEl.innerText = w.zh; kkEl.innerText = '';
-                hintEl.innerText = '看中文 ➜ 鍵盤輸入英文拼寫';
+                const parsed = splitPosAndZh(w.zh, w.pos);
+                wordEl.className = mid; 
+                wordEl.innerText = parsed.pureZh; 
+                kkEl.innerText = '';
+                hintEl.innerHTML = parsed.pos ? `<span class="inline-block bg-blue-50 text-[#0071E3] border border-blue-200 text-xs px-2 py-0.5 rounded-full font-mono mr-1.5">${parsed.pos}</span> 看中文 ➜ 鍵盤輸入英文拼寫` : '看中文 ➜ 鍵盤輸入英文拼寫';
                 audioBtn.classList.add('hidden');
+            } else if (t === 'card') {
+                hintEl.innerText = '翻牌記憶 ➜ 點擊卡片翻面看解答';
             }
         }
 
@@ -2207,16 +2335,21 @@
         }
 
         // 抽取中文釋義中的詞性標籤（支援 "v.", "n.", "adj.", "adv.", "prep.", "v./n." 等複合標記）
-        function extractPos(zh) {
+        function extractPos(zh, explicitPos = '') {
+            if (explicitPos) {
+                return explicitPos.toLowerCase().split('/').map(p => p.endsWith('.') ? p : p + '.').filter(p => p.length > 1);
+            }
             if (!zh || typeof zh !== 'string') return [];
-            const m = zh.match(/^([a-zA-Z./]+)\.?\s*/);
-            if (!m) return [];
-            return m[1].toLowerCase().split('/').map(p => p.endsWith('.') ? p : p + '.').filter(p => p.length > 1);
+            const parsed = splitPosAndZh(zh);
+            if (parsed.pos) {
+                return parsed.pos.toLowerCase().split('/').map(p => p.endsWith('.') ? p : p + '.').filter(p => p.length > 1);
+            }
+            return [];
         }
 
-        function hasOverlappingPos(zhA, targetPosList) {
+        function hasOverlappingPos(wordA, targetPosList) {
             if (!targetPosList || targetPosList.length === 0) return true;
-            const posA = extractPos(zhA);
+            const posA = extractPos(wordA.zh, wordA.pos);
             if (posA.length === 0) return false;
             return targetPosList.some(p => posA.includes(p));
         }
@@ -2231,10 +2364,10 @@
             const pool = same.length >= 30 ? same : vocabularyDB;
 
             // 同詞性干擾項匹配：優先挑選相同詞性（如同為動詞/名詞/形容詞）的單字作為選項，杜絕靠詞性猜答案
-            const targetPosList = extractPos(currentWord.zh);
+            const targetPosList = extractPos(currentWord.zh, currentWord.pos);
             let preferredPool = pool;
             if (targetPosList.length > 0) {
-                const posMatched = pool.filter(w => w.id !== currentWord.id && hasOverlappingPos(w.zh, targetPosList));
+                const posMatched = pool.filter(w => w.id !== currentWord.id && hasOverlappingPos(w, targetPosList));
                 if (posMatched.length >= 10) {
                     preferredPool = posMatched;
                 }
@@ -2262,7 +2395,10 @@
                 btn.className = 'btn-action w-full bg-white hover:bg-[#F5F5F7] border-2 border-gray-200 text-[#1D1D1F] font-medium py-3 px-4 rounded-2xl shadow-sm text-left text-lg transition-colors flex items-center';
                 btn.dataset.id = opt.id;
                 btn._opt = opt;
-                btn.innerHTML = `<span class="bg-gray-100 text-gray-400 text-sm font-mono px-2 py-0.5 rounded mr-3 hidden sm:inline-block">${index + 1}</span> <span>${esc(opt[key])}</span>`;
+                
+                // 選項文字：若為中文，一律提取純中文，去除詞性前綴，徹底消除自訂字無詞性被直接選出的破綻！
+                const optText = key === 'zh' ? splitPosAndZh(opt.zh, opt.pos).pureZh : opt.en;
+                btn.innerHTML = `<span class="bg-gray-100 text-gray-400 text-sm font-mono px-2 py-0.5 rounded mr-3 hidden sm:inline-block">${index + 1}</span> <span>${esc(optText)}</span>`;
                 btn.onclick = () => {
                     if (isShowingAnswer) return;
                     isShowingAnswer = true;
@@ -2274,12 +2410,15 @@
                     const hintEl = document.getElementById('card-front-hint');
                     const audioBtn = document.getElementById('btn-audio');
 
+                    const curParsed = splitPosAndZh(currentWord.zh, currentWord.pos);
+                    const curPosBadge = curParsed.pos ? `<span class="text-xs bg-blue-50 text-[#0071E3] border border-blue-200 px-1.5 py-0.5 rounded mr-1 font-mono">${curParsed.pos}</span>` : '';
+
                     if (currentQuizType === 'listen') {
                         // 盲聽題：卡片正面由 🎧 🔊 瞬間揭曉為真實英文單字、KK 音標與中文釋義
                         wordEl.className = 'text-5xl font-extrabold text-[#1D1D1F] mb-1 tracking-tight break-all';
                         wordEl.innerText = currentWord.en;
                         kkEl.innerText = currentWord.kk || '';
-                        hintEl.innerHTML = `<span class="${isCorrect ? 'text-green-600' : 'text-red-500'} font-semibold text-base"><span>${isCorrect ? '✅' : '❌'} 正確解答：</span><span class="text-[#1D1D1F] font-bold">${esc(currentWord.zh)}</span></span>`;
+                        hintEl.innerHTML = `<span class="${isCorrect ? 'text-green-600' : 'text-red-500'} font-semibold text-base"><span>${isCorrect ? '✅' : '❌'} 正確解答：</span>${curPosBadge}<span class="text-[#1D1D1F] font-bold">${esc(curParsed.pureZh)}</span></span>`;
                         if (audioBtn) audioBtn.classList.remove('hidden');
                     } else if (currentQuizType === 'zh2en') {
                         // 看中選英：在下方提示列直接揭曉正確英文拼寫與音標
@@ -2287,7 +2426,7 @@
                         if (audioBtn) audioBtn.classList.remove('hidden');
                     } else if (currentQuizType === 'en2zh') {
                         // 看英選中：在下方提示列揭曉完整繁中釋義
-                        hintEl.innerHTML = `<span class="${isCorrect ? 'text-green-600' : 'text-red-500'} font-semibold text-base"><span>${isCorrect ? '✅' : '❌'} 正確釋義：</span><span class="text-[#1D1D1F] font-bold">${esc(currentWord.zh)}</span></span>`;
+                        hintEl.innerHTML = `<span class="${isCorrect ? 'text-green-600' : 'text-red-500'} font-semibold text-base"><span>${isCorrect ? '✅' : '❌'} 正確釋義：</span>${curPosBadge}<span class="text-[#1D1D1F] font-bold">${esc(curParsed.pureZh)}</span></span>`;
                     }
 
                     // 2. 選項按鈕即時回饋，揭曉中英雙語對照
@@ -2296,6 +2435,8 @@
                         const bOpt = b._opt;
                         const isThisCorrect = String(b.dataset.id) === String(currentWord.id);
                         const isThisClicked = b === btn;
+                        const bParsed = splitPosAndZh(bOpt.zh, bOpt.pos);
+                        const bPosBadge = bParsed.pos ? `<span class="text-xs bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded mr-1 font-mono">${bParsed.pos}</span>` : '';
 
                         if (isThisCorrect) {
                             b.classList.remove('bg-white', 'border-gray-200', 'hover:bg-[#F5F5F7]');
@@ -2305,12 +2446,12 @@
                                     <span class="bg-green-600 text-white text-xs font-bold w-5 h-5 rounded-full inline-flex items-center justify-center mr-3 shrink-0">✓</span>
                                     <div class="flex-1 min-w-0 flex items-baseline justify-between flex-wrap gap-1">
                                         <span class="font-bold text-green-900">${esc(bOpt.en)}</span>
-                                        <span class="text-sm font-medium text-green-700">${esc(bOpt.zh)}</span>
+                                        <span class="text-sm font-medium text-green-700">${bPosBadge}${esc(bParsed.pureZh)}</span>
                                     </div>`;
                             } else {
                                 b.innerHTML = `
                                     <span class="bg-green-600 text-white text-xs font-bold w-5 h-5 rounded-full inline-flex items-center justify-center mr-3 shrink-0">✓</span>
-                                    <span class="font-bold text-green-900">${esc(bOpt.zh)}</span>`;
+                                    <span class="font-bold text-green-900">${bPosBadge}${esc(bParsed.pureZh)}</span>`;
                             }
                         } else if (isThisClicked && !isCorrect) {
                             b.classList.remove('bg-white', 'border-gray-200', 'hover:bg-[#F5F5F7]');
@@ -2320,12 +2461,12 @@
                                     <span class="bg-red-500 text-white text-xs font-bold w-5 h-5 rounded-full inline-flex items-center justify-center mr-3 shrink-0">✕</span>
                                     <div class="flex-1 min-w-0 flex items-baseline justify-between flex-wrap gap-1">
                                         <span class="line-through font-bold opacity-80">${esc(bOpt.en)}</span>
-                                        <span class="text-sm text-red-600">${esc(bOpt.zh)}</span>
+                                        <span class="text-sm text-red-600">${bPosBadge}${esc(bParsed.pureZh)}</span>
                                     </div>`;
                             } else {
                                 b.innerHTML = `
                                     <span class="bg-red-500 text-white text-xs font-bold w-5 h-5 rounded-full inline-flex items-center justify-center mr-3 shrink-0">✕</span>
-                                    <span class="line-through font-bold opacity-80">${esc(bOpt.zh)}</span>`;
+                                    <span class="line-through font-bold opacity-80">${bPosBadge}${esc(bParsed.pureZh)}</span>`;
                             }
                         } else {
                             // 其他未選選項適度淡化
@@ -2947,11 +3088,18 @@
             if (btnAdd) {
                 btnAdd.addEventListener('click', async () => {
                     let zhInput = (document.getElementById('input-custom-zh').value || '').trim();
+                    let detectedPos = '';
                     if (!zhInput) {
                         btnAdd.innerText = '翻譯中...';
-                        zhInput = await fetchQuickTranslation(word);
+                        const details = await fetchWordDetails(word);
+                        zhInput = details.zh;
+                        detectedPos = details.pos;
+                    } else {
+                        const parsed = splitPosAndZh(zhInput);
+                        zhInput = parsed.pureZh;
+                        detectedPos = parsed.pos;
                     }
-                    const success = addCustomWord(word, '', zhInput || '常用詞彙');
+                    const success = addCustomWord(word, '', zhInput || '常用詞彙', detectedPos);
                     if (success) {
                         btnAdd.innerText = '✅ 已加入單元 10';
                         btnAdd.disabled = true;
@@ -3023,7 +3171,7 @@
         }
 
         // 加入自訂單字
-        function addCustomWord(en, kk, zh) {
+        function addCustomWord(en, kk, zh, pos = '') {
             if (!currentUser) {
                 alert('請先登入才能使用自訂字庫！');
                 return false;
@@ -3033,6 +3181,7 @@
             en = String(en).trim();
             zh = String(zh || '').trim().slice(0, 100);
             kk = String(kk || '').slice(0, 60);
+            pos = String(pos || '').trim().slice(0, 30);
             if (!/^[A-Za-z][A-Za-z' -]{0,39}$/.test(en)) {
                 alert('單字格式不正確 (只允許英文字母、空格、- 和 \', 最多 40 字)。');
                 return false;
@@ -3053,16 +3202,23 @@
                 return false;
             }
 
+            const parsed = splitPosAndZh(zh, pos);
+            const nextId = customWordsDB.length > 0 
+                ? Math.max(...customWordsDB.map(w => w.id)) + 1 
+                : 10001;
+
             const newWord = {
-                id: 10000 + Date.now(), // 用時間戳確保 ID 唯一
+                id: nextId,
                 en: en,
                 kk: kk,
-                zh: zh,
+                pos: parsed.pos || pos,
+                zh: parsed.pureZh || zh,
                 unit: 10 // 自訂字庫專屬單元 (與下拉選單 value="10" 一致)
             };
 
             customWordsDB.push(newWord);
             vocabularyDB.push(newWord);
+            localStorage.setItem('vocab_custom_words', JSON.stringify(customWordsDB));
 
             db.collection('users').doc(currentUser.uid).set({
                 customWords: customWordsDB
@@ -3094,17 +3250,21 @@
         function renderCustomManager() {
             const content = document.getElementById('dict-content');
             const inp = 'border-0 border-gray-200 rounded px-2 py-1 text-sm outline-none focus:ring-1 focus:ring-indigo-400 min-w-0';
-            const rows = customWordsDB.map(w => `
-                <div class="custom-row flex items-center gap-1 py-2 border-b border-gray-100 last:border-0" data-id="${esc(String(w.id))}">
-                    <input data-f="en" maxlength="40" value="${esc(w.en)}" class="${inp} w-[45%] shrink-0 font-medium">
+            const rows = customWordsDB.map(w => {
+                const parsed = splitPosAndZh(w.zh, w.pos);
+                return `
+                <div class="custom-row flex items-center gap-1.5 py-2 border-b border-gray-100 last:border-0" data-id="${esc(String(w.id))}">
+                    <input data-f="en" maxlength="40" value="${esc(w.en)}" class="${inp} w-[36%] shrink-0 font-medium" placeholder="英文單字">
+                    <input data-f="pos" maxlength="15" value="${esc(parsed.pos || '')}" placeholder="詞性" class="${inp} w-[16%] shrink-0 text-xs font-mono text-[#0071E3] bg-blue-50/50" title="詞性 (例: n. 或 v. 或 adj.)">
                     <input data-f="kk" type="hidden" value="${esc(w.kk || '')}">
-                    <input data-f="zh" maxlength="100" value="${esc(w.zh || '')}" placeholder="中文" class="${inp} flex-1">
-                    <button data-del="${esc(String(w.id))}" class="btn-del-custom text-[#FF3B30] hover:bg-red-50 border-0 border-[#E6D1C9] rounded-xl px-2 py-1 text-xs shrink-0">🗑️</button>
-                </div>`).join('');
+                    <input data-f="zh" maxlength="100" value="${esc(parsed.pureZh)}" placeholder="中文解釋 (不需加詞性)" class="${inp} flex-1">
+                    <button data-del="${esc(String(w.id))}" class="btn-del-custom text-[#FF3B30] hover:bg-red-50 border-0 border-[#E6D1C9] rounded-xl px-2 py-1 text-xs shrink-0" title="刪除單字">🗑️</button>
+                </div>`;
+            }).join('');
             content.innerHTML = `
                 <div class="flex justify-between items-center mb-3 border-b border-[#D4DEC4] pb-2">
                     <h3 class="text-xl font-semibold text-[#0071E3]">管理自訂字庫 (${customWordsDB.length})</h3>
-                    ${customWordsDB.length ? '<div class="flex gap-3 items-center"><button id="btn-autofill-custom" class="bg-green-600 hover:bg-green-700 text-white text-xs font-medium px-3 py-1.5 rounded-xl shadow-sm transition-colors" title="自動將「請自行查閱」的單字用 Google 翻譯補齊">✨ 自動翻譯並儲存</button><button id="btn-save-custom-all" class="bg-[#0071E3] text-white text-xs font-medium px-3 py-1.5 rounded-xl">💾 全部儲存</button><button id="btn-del-custom-all" class="text-xs text-[#FF3B30] underline">全部刪除</button></div>' : ''}
+                    ${customWordsDB.length ? '<div class="flex gap-2 items-center flex-wrap"><button id="btn-autofill-custom" class="bg-green-600 hover:bg-green-700 text-white text-xs font-medium px-3 py-1.5 rounded-xl shadow-sm transition-colors" title="自動查詢單字繁體中文與詞性並儲存">✨ 自動翻譯並儲存</button><button id="btn-save-custom-all" class="bg-[#0071E3] text-white text-xs font-medium px-3 py-1.5 rounded-xl">💾 全部儲存</button><button id="btn-del-custom-all" class="text-xs text-[#FF3B30] underline ml-1">全部刪除</button></div>' : ''}
                 </div>
                 <div class="max-h-72 overflow-y-auto pr-1 custom-scrollbar">
                     ${rows || '<p class="text-[#86868B] text-sm text-center py-4">自訂字庫是空的。</p>'}
@@ -3122,35 +3282,34 @@
                     rowsEl.forEach(row => {
                         const en = row.querySelector('[data-f="en"]').value.trim();
                         const zhInp = row.querySelector('[data-f="zh"]');
-                        const kkInp = row.querySelector('[data-f="kk"]');
+                        const posInp = row.querySelector('[data-f="pos"]');
                         const needsZh = !zhInp.value.trim() || zhInp.value.includes('自行查閱');
-                        const needsKk = false; // 已移除音標欄
-                        if (en && (needsZh || needsKk)) {
-                            wordsToUpdate.push({ en, zhInp, kkInp, needsZh, needsKk });
+                        const needsPos = !posInp.value.trim();
+                        if (en && (needsZh || needsPos)) {
+                            wordsToUpdate.push({ en, zhInp, posInp, needsZh, needsPos });
                         }
                     });
                     if (wordsToUpdate.length > 0) {
                         autofillBtn.disabled = true;
-                        
-                        // 1. 逐詞並行翻譯 (使用多重備援 API，解決批次合併錯位問題)
-                        const zhWords = wordsToUpdate.filter(x => x.needsZh);
-                        if (zhWords.length > 0) {
-                            let completed = 0;
-                            await Promise.all(zhWords.map(async (item) => {
-                                try {
-                                    const zh = await fetchQuickTranslation(item.en);
-                                    if (zh && !zh.includes('自行查閱')) {
-                                        item.zhInp.value = zh;
-                                        item.zhInp.classList.add('bg-green-50');
-                                    }
-                                } catch(e) {
-                                    console.warn('翻譯失敗', item.en, e);
-                                } finally {
-                                    completed++;
-                                    autofillBtn.innerText = `翻譯中 (${completed}/${zhWords.length})...`;
+                        let completed = 0;
+                        await Promise.all(wordsToUpdate.map(async (item) => {
+                            try {
+                                const details = await fetchWordDetails(item.en);
+                                if (details.zh && !details.zh.includes('自行查閱')) {
+                                    item.zhInp.value = details.zh;
+                                    item.zhInp.classList.add('bg-green-50');
                                 }
-                            }));
-                        }
+                                if (details.pos) {
+                                    item.posInp.value = details.pos;
+                                    item.posInp.classList.add('bg-green-50');
+                                }
+                            } catch(e) {
+                                console.warn('查詢失敗', item.en, e);
+                            } finally {
+                                completed++;
+                                autofillBtn.innerText = `查詢中 (${completed}/${wordsToUpdate.length})...`;
+                            }
+                        }));
                     }
                     
                     // 恢復按鈕狀態並直接寫入資料庫儲存
@@ -3169,9 +3328,10 @@
                 const rowsEl = Array.from(content.querySelectorAll('.custom-row'));
                 const edits = rowsEl.map(r => ({
                     id: r.dataset.id,
-                    en: r.querySelector('[data-f=en]').value.trim(),
-                    kk: r.querySelector('[data-f=kk]').value.trim().slice(0, 60),
-                    zh: r.querySelector('[data-f=zh]').value.trim().slice(0, 100)
+                    en: r.querySelector('[data-f="en"]').value.trim(),
+                    pos: r.querySelector('[data-f="pos"]') ? r.querySelector('[data-f="pos"]').value.trim() : '',
+                    kk: r.querySelector('[data-f="kk"]') ? r.querySelector('[data-f="kk"]').value.trim() : '',
+                    zh: r.querySelector('[data-f="zh"]').value.trim()
                 }));
                 const seen = new Set();
                 for (const e of edits) {
@@ -3182,11 +3342,23 @@
                     seen.add(lw);
                 }
                 edits.forEach(e => {
+                    const parsed = splitPosAndZh(e.zh, e.pos);
                     const w = customWordsDB.find(x => String(x.id) === e.id);
-                    if (w) { w.en = e.en; w.kk = e.kk; w.zh = e.zh; }
+                    if (w) { 
+                        w.en = e.en; 
+                        w.kk = e.kk; 
+                        w.pos = (e.pos || parsed.pos || '').trim();
+                        w.zh = (parsed.pureZh || e.zh).trim();
+                    }
                     const vw = vocabularyDB.find(x => x.unit === 10 && String(x.id) === e.id);
-                    if (vw) { vw.en = e.en; vw.kk = e.kk; vw.zh = e.zh; }
+                    if (vw) { 
+                        vw.en = e.en; 
+                        vw.kk = e.kk; 
+                        vw.pos = (e.pos || parsed.pos || '').trim();
+                        vw.zh = (parsed.pureZh || e.zh).trim();
+                    }
                 });
+                localStorage.setItem('vocab_custom_words', JSON.stringify(customWordsDB));
                 saveDailyPlansLocally();
                 if (currentUser) {
                     db.collection('users').doc(currentUser.uid).update({ customWords: customWordsDB }).catch(console.error);
@@ -4036,6 +4208,61 @@
             }, 5000);
         }
 
+        // 同時查詢單字繁體中文與詞性 (dt=t + dt=bd)
+        const wordDetailsCache = {};
+        async function fetchWordDetails(word) {
+            const cleanWord = String(word || '').toLowerCase().trim();
+            if (!cleanWord) return { zh: '', pos: '' };
+            if (wordDetailsCache[cleanWord]) return wordDetailsCache[cleanWord];
+
+            const posMap = {
+                'noun': 'n.',
+                'verb': 'v.',
+                'adjective': 'adj.',
+                'adverb': 'adv.',
+                'preposition': 'prep.',
+                'pronoun': 'pron.',
+                'conjunction': 'conj.',
+                'interjection': 'int.'
+            };
+
+            // 1. 首選：Google GTX 端點 (同時取得繁體中文與詞性字典)
+            try {
+                const res = await fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-TW&dt=t&dt=bd&q=${encodeURIComponent(cleanWord)}`);
+                if (res.ok) {
+                    const data = await res.json();
+                    let rawZh = '';
+                    if (data && data[0] && Array.isArray(data[0])) {
+                        rawZh = data[0].map(x => x[0]).join('').trim();
+                    }
+                    let pos = '';
+                    if (data && data[1] && Array.isArray(data[1])) {
+                        const rawPosList = data[1].map(x => x[0]);
+                        const mapped = rawPosList.map(p => posMap[p.toLowerCase()] || p).slice(0, 2);
+                        if (mapped.length > 0) pos = mapped.join('/');
+                    }
+                    const parsed = splitPosAndZh(rawZh);
+                    const zh = parsed.pureZh || rawZh;
+                    if (!pos && parsed.pos) pos = parsed.pos;
+                    if (zh && !zh.includes('自行查閱')) {
+                        const result = { zh, pos };
+                        wordDetailsCache[cleanWord] = result;
+                        quickTranslateCache[cleanWord] = zh;
+                        return result;
+                    }
+                }
+            } catch(e) {
+                console.warn('fetchWordDetails gtx failed', e);
+            }
+
+            // 2. 備援：fetchQuickTranslation (純中文)
+            const fallbackZh = await fetchQuickTranslation(cleanWord);
+            const parsed = splitPosAndZh(fallbackZh);
+            const result = { zh: parsed.pureZh || fallbackZh, pos: parsed.pos || '' };
+            wordDetailsCache[cleanWord] = result;
+            return result;
+        }
+
         // 自動查詢中文翻譯 (多重備援 API + 快取)
         const quickTranslateCache = {};
         async function fetchQuickTranslation(word) {
@@ -4202,31 +4429,32 @@
 
             const origText = btn ? btn.textContent : '';
             if (btn) {
-                btn.textContent = '⏳ 加入中...';
+                btn.textContent = '⏳ 查詢中...';
                 btn.disabled = true;
             }
 
-            let zh = await fetchQuickTranslation(word);
+            const details = await fetchWordDetails(word);
 
             // 若所有 API 真的都查不到，開啟美觀自訂輸入彈窗 (不再調用 Safari 原生黑塊 prompt)
-            if (!zh) {
+            if (!details.zh) {
                 if (btn) {
                     btn.textContent = origText;
                     btn.disabled = false;
                 }
                 showCustomWordPromptModal(word, (inputZh) => {
                     if (inputZh && inputZh.trim()) {
-                        executeAddCustomWord(word, inputZh.trim(), btn);
+                        const parsed = splitPosAndZh(inputZh.trim());
+                        executeAddCustomWord(word, parsed.pureZh, parsed.pos, btn);
                     }
                 });
                 return;
             }
 
-            executeAddCustomWord(word, zh, btn);
+            executeAddCustomWord(word, details.zh, details.pos, btn);
         }
 
-        function executeAddCustomWord(word, zh, btn) {
-            const success = addCustomWord(word, '', zh);
+        function executeAddCustomWord(word, zh, pos, btn) {
+            const success = addCustomWord(word, '', zh, pos);
             if (success) {
                 if (btn) {
                     btn.textContent = '✅ 已加入';
@@ -4234,7 +4462,8 @@
                     btn.classList.add('text-emerald-400');
                     btn.disabled = true;
                 }
-                showQuickToast(`已將「${word}」(${zh}) 加入自訂字庫！`);
+                const posBadgeText = pos ? `[${pos}] ` : '';
+                showQuickToast(`已將「${word}」(${posBadgeText}${zh}) 加入自訂字庫！`);
                 
                 // 1.5 秒後淡出 tooltip
                 const tooltip = document.getElementById('word-tooltip');
@@ -5041,8 +5270,16 @@
             }
         };
 
-        // 支援 URL 參數直接跳轉分頁 (例如 ?tab=listening)
+        // 支援 URL 參數直接跳轉分頁 (例如 ?tab=listening) 與題型選擇器初始化
         window.addEventListener('DOMContentLoaded', () => {
+            // 初始化題型偏好模式按鈕
+            document.querySelectorAll('.quiz-pill').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    setPreferredQuizType(btn.dataset.mode);
+                });
+            });
+            updateQuizModeUI();
+
             const urlParams = new URLSearchParams(window.location.search);
             const tab = urlParams.get('tab');
             if (tab === 'listening') {

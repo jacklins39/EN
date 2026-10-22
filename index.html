@@ -4349,41 +4349,38 @@
             const words = Array.from(sentenceDiv.querySelectorAll('.listen-word'));
             if (words.length === 0) return;
 
-            // 1. 扣除句末自然靜音空白 (音檔結尾通常有 0.5 ~ 0.9 秒停頓，不扣除會導致整句進度被拉長而延遲)
-            const tailSilence = Math.min(1.0, Math.max(0.35, totalDuration * 0.18));
+            // 1. 扣除句末自然靜音空白 (音檔結尾通常有 0.4 ~ 0.8 秒停頓)
+            const tailSilence = Math.min(0.85, Math.max(0.3, totalDuration * 0.16));
             const effectiveSpeechDuration = Math.max(0.3, totalDuration - tailSilence);
 
-            // 2. 隨語速動態提前量補償 (消除大腦視覺傳導與句首吸氣延遲，各語速均完美貼合)
+            // 2. 漸進式平滑提前量 (前 0.5 秒平滑緩入，徹底消除突變跳字，保證如 out 等短詞絕不被跳過)
             const speed = listeningAudioPlayer.playbackRate || 1.0;
-            const leadOffset = 0.42 * speed; 
+            const maxLead = 0.26 * speed;
+            const leadRamp = Math.min(1.0, Math.max(0, rawElapsed / 0.5));
+            const leadOffset = maxLead * leadRamp;
             const adjustedElapsed = Math.min(effectiveSpeechDuration, Math.max(0, rawElapsed + leadOffset));
 
-            // 3. 依單字長度與標點停頓計算發音權重
+            // 3. 提高短單字保底權重 (保底 2.6，確保 out、to、a 等短單字在視覺上有充足停留時間)
             const weights = words.map(w => {
                 const text = w.textContent.trim();
-                let weight = Math.max(1.8, Math.pow(text.length, 0.88));
+                let weight = Math.max(2.6, Math.pow(text.length, 0.85));
                 const nextNode = w.nextSibling;
                 const nextText = (nextNode && nextNode.nodeType === Node.TEXT_NODE) ? nextNode.textContent : '';
-                if (/[,;:]/.test(nextText)) weight += 2.2; // 逗號停頓加權
+                if (/[,;:]/.test(nextText)) weight += 2.0; // 逗號停頓加權
                 return weight;
             });
 
             const totalWeight = weights.reduce((a, b) => a + b, 0);
             const currentWeightProgress = (adjustedElapsed / effectiveSpeechDuration) * totalWeight;
 
+            // 4. 連續時間軸命中判定 (保證每個單字依序被框住，無斷崖跳躍)
+            let acc = 0;
             let targetWord = words[words.length - 1];
-
-            // 句首保護：剛開始播放的瞬間 (0~0.2秒)，精準鎖定在第一個單字
-            if (rawElapsed < 0.2) {
-                targetWord = words[0];
-            } else {
-                let acc = 0;
-                for (let i = 0; i < words.length; i++) {
-                    acc += weights[i];
-                    if (currentWeightProgress <= acc) {
-                        targetWord = words[i];
-                        break;
-                    }
+            for (let i = 0; i < words.length; i++) {
+                acc += weights[i];
+                if (currentWeightProgress <= acc) {
+                    targetWord = words[i];
+                    break;
                 }
             }
 

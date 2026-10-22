@@ -121,6 +121,18 @@
             display: inline-flex !important;
         }
 
+        /* 單字朗讀即時紅框 (完整保留藍色大框，紅框精準框住當前朗讀單字) */
+        .listen-word.word-speaking {
+            outline: 2px solid #FF3B30 !important;
+            outline-offset: 1px;
+            border-radius: 3px;
+            background-color: rgba(255, 59, 48, 0.08) !important;
+            color: #D70015 !important;
+            font-weight: 700 !important;
+            box-shadow: 0 0 0 1px rgba(255, 59, 48, 0.15);
+            transition: outline 0.05s ease, background-color 0.05s ease;
+        }
+
         /* 雙人互動對話專屬風格 */
         .dialogue-card-A {
             border-left: 4px solid #0071E3 !important;
@@ -4297,6 +4309,96 @@
             }
         }
 
+        let currentActiveWordEl = null;
+        let wordTrackRafId = null;
+
+        function clearWordHighlight() {
+            if (currentActiveWordEl) {
+                currentActiveWordEl.classList.remove('word-speaking');
+                currentActiveWordEl = null;
+            }
+        }
+
+        // 動態計算當前播放進度落在哪個單字上 (加權卡拉OK時間軸)
+        function updateWordHighlight() {
+            if (!isListeningPlaying || currentHighlightedIndex < 0 || !listeningSentences || !listeningSentences[currentHighlightedIndex]) {
+                clearWordHighlight();
+                return;
+            }
+
+            const sObj = listeningSentences[currentHighlightedIndex];
+            const sStart = typeof sObj.start === 'number' ? sObj.start : 0;
+            const sEnd = typeof sObj.end === 'number' ? sObj.end : 0;
+            const duration = sEnd - sStart;
+            if (duration <= 0.05) {
+                clearWordHighlight();
+                return;
+            }
+
+            const t = listeningAudioPlayer.currentTime;
+            const elapsed = t - sStart;
+            if (elapsed < 0 || elapsed > duration + 0.15) {
+                clearWordHighlight();
+                return;
+            }
+
+            // 取得當前藍色大框框內的英文單字 DOM 節點
+            const sentenceDiv = document.getElementById(`listen-s-${currentHighlightedIndex}`);
+            if (!sentenceDiv) return;
+            const words = Array.from(sentenceDiv.querySelectorAll('.listen-word'));
+            if (words.length === 0) return;
+
+            // 依單字長度與標點停頓計算權重
+            const weights = words.map(w => {
+                const text = w.textContent.trim();
+                let weight = Math.max(1.8, text.length);
+                const nextNode = w.nextSibling;
+                const nextText = (nextNode && nextNode.nodeType === Node.TEXT_NODE) ? nextNode.textContent : '';
+                if (/[,;:]/.test(nextText)) weight += 2.4; // 句中標點停頓加權
+                return weight;
+            });
+
+            const totalWeight = weights.reduce((a, b) => a + b, 0);
+            const currentWeightProgress = Math.min(totalWeight, Math.max(0, (elapsed / duration) * totalWeight));
+
+            let acc = 0;
+            let targetWord = words[words.length - 1];
+            for (let i = 0; i < words.length; i++) {
+                acc += weights[i];
+                if (currentWeightProgress <= acc) {
+                    targetWord = words[i];
+                    break;
+                }
+            }
+
+            if (targetWord !== currentActiveWordEl) {
+                if (currentActiveWordEl) currentActiveWordEl.classList.remove('word-speaking');
+                if (targetWord) targetWord.classList.add('word-speaking');
+                currentActiveWordEl = targetWord;
+            }
+        }
+
+        function startWordTrackingLoop() {
+            if (wordTrackRafId) cancelAnimationFrame(wordTrackRafId);
+            function loop() {
+                if (isListeningPlaying && !listeningAudioPlayer.paused) {
+                    updateWordHighlight();
+                    wordTrackRafId = requestAnimationFrame(loop);
+                } else {
+                    wordTrackRafId = null;
+                }
+            }
+            wordTrackRafId = requestAnimationFrame(loop);
+        }
+
+        function stopWordTrackingLoop() {
+            if (wordTrackRafId) {
+                cancelAnimationFrame(wordTrackRafId);
+                wordTrackRafId = null;
+            }
+            clearWordHighlight();
+        }
+
         // 監聽播放進度，即時高亮對應句子並自動平滑滾動，支援單句循環
         listeningAudioPlayer.addEventListener('timeupdate', () => {
             if (!listeningSentences || listeningSentences.length === 0) return;
@@ -4309,11 +4411,12 @@
                 const sEnd = typeof s.end === 'number' ? s.end : 999999;
                 if (t >= (sEnd - 0.08)) {
                     listeningAudioPlayer.currentTime = Math.max(0, sStart);
+                    clearWordHighlight();
                     return;
                 }
             }
 
-            // 2. 正常推進計算高亮句子
+            // 2. 正常推進計算高亮句子 (完整保留藍色大框)
             let foundIdx = -1;
             for (let i = 0; i < listeningSentences.length; i++) {
                 const s = listeningSentences[i];
@@ -4330,9 +4433,12 @@
                 currentListeningIndex = foundIdx;
                 highlightListeningSentence(foundIdx);
             }
+
+            updateWordHighlight();
         });
 
         listeningAudioPlayer.addEventListener('ended', () => {
+            stopWordTrackingLoop();
             if (listeningLoopMode === 'all') {
                 playListeningFrom(0);
             } else if (listeningLoopMode === 'sentence') {
@@ -4347,6 +4453,7 @@
         });
 
         listeningAudioPlayer.addEventListener('pause', () => {
+            stopWordTrackingLoop();
             if (!listeningAudioPlayer.seeking) {
                 isListeningPlaying = false;
                 updateListeningPlayBtn();
@@ -4356,6 +4463,7 @@
         listeningAudioPlayer.addEventListener('play', () => {
             isListeningPlaying = true;
             updateListeningPlayBtn();
+            startWordTrackingLoop();
         });
 
         // 語速切換連動
@@ -4364,8 +4472,10 @@
             listeningAudioPlayer.playbackRate = rate;
         });
 
+        // 完整保留藍色大框框高亮
         function highlightListeningSentence(index) {
             currentHighlightedIndex = index;
+            clearWordHighlight();
             listeningSentences.forEach((_, i) => {
                 const block = document.getElementById(`sentence-block-${i}`);
                 if (!block) return;
@@ -4431,6 +4541,7 @@
         }
 
         function stopListening() {
+            stopWordTrackingLoop();
             isListeningPlaying = false;
             listeningAudioPlayer.pause();
             try { listeningAudioPlayer.currentTime = 0; } catch(e) {}

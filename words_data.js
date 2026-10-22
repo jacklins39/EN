@@ -58912,5 +58912,185 @@ const externalVocabularyDB = [
     "unit": 7,
     "example": "You're driving yourself too hard.",
     "exampleZh": "你把自己弄得太累了。"
+  },
+  {
+    "id": 6547,
+    "en": "cheeseburger",
+    "kk": "/ˈtʃiːzˌbɜːrɡər/",
+    "zh": "n. 起司漢堡",
+    "unit": 7,
+    "example": "He ordered a cheeseburger and large fries for lunch.",
+    "exampleZh": "他午餐點了一個起司漢堡和大份薯條。"
+  },
+  {
+    "id": 6548,
+    "en": "boston",
+    "kk": "/ˈbɔːstən/",
+    "zh": "n. 波士頓",
+    "unit": 7,
+    "example": "She moved to Boston to study medicine at Harvard.",
+    "exampleZh": "她搬到波士頓在哈佛大學攻讀醫學。"
+  },
+  {
+    "id": 6549,
+    "en": "becomes",
+    "kk": "/bɪˈkʌmz/",
+    "zh": "v. 變成、成為",
+    "unit": 7,
+    "example": "The weather becomes cooler as autumn approaches.",
+    "exampleZh": "隨著秋天臨近，天氣變得越來越涼爽。"
+  },
+  {
+    "id": 6550,
+    "en": "wrote",
+    "kk": "/roʊt/",
+    "zh": "v. 寫道、寫了",
+    "unit": 7,
+    "example": "She wrote a heartfelt letter of appreciation to her mentor.",
+    "exampleZh": "她寫了一封真摯的感謝信給她的導師。"
+  },
+  {
+    "id": 6551,
+    "en": "poems",
+    "kk": "/ˈpoʊəmz/",
+    "zh": "n. 詩、詩歌",
+    "unit": 7,
+    "example": "He enjoys reading classic poems in his spare time.",
+    "exampleZh": "他喜歡在閒暇時閱讀古典詩歌。"
+  },
+  {
+    "id": 6552,
+    "en": "orderings",
+    "kk": "/ˈɔːrdərɪŋz/",
+    "zh": "n. 訂單、排序",
+    "unit": 7,
+    "example": "The online system handles hundreds of food orderings each minute.",
+    "exampleZh": "這個線上系統每分鐘處理數百筆餐飲訂單。"
+  },
+  {
+    "id": 6553,
+    "en": "neighbours",
+    "kk": "/ˈneɪbərz/",
+    "zh": "n. 鄰居",
+    "unit": 7,
+    "example": "We are very fortunate to have friendly and helpful neighbours.",
+    "exampleZh": "我們非常幸運能擁有友善且樂於助人的鄰居。"
+  },
+  {
+    "id": 6554,
+    "en": "wireless",
+    "kk": "/ˈwaɪərləs/",
+    "zh": "adj. 無線的",
+    "unit": 7,
+    "example": "The office provides high-speed wireless Internet for all visitors.",
+    "exampleZh": "辦公室為所有訪客提供高速無線網路。"
+  },
+  {
+    "id": 6555,
+    "en": "inflammatory",
+    "kk": "/ɪnˈflæmətɔːri/",
+    "zh": "adj. 發炎的、煽動性的",
+    "unit": 7,
+    "example": "Eating fresh berries can help reduce inflammatory symptoms in the body.",
+    "exampleZh": "食用新鮮莓果有助於減輕體內的發炎症狀。"
+  },
+  {
+    "id": 6556,
+    "en": "continues",
+    "kk": "/kənˈtɪnjuːz/",
+    "zh": "v. 繼續、持續",
+    "unit": 7,
+    "example": "The company continues to invest in renewable energy research.",
+    "exampleZh": "該公司持續投資於可再生能源的研究。"
+  },
+  {
+    "id": 6557,
+    "en": "relatively",
+    "kk": "/ˈrelətɪvli/",
+    "zh": "adv. 相對地、比較而言",
+    "unit": 7,
+    "example": "The newly launched smartphone is relatively inexpensive compared to others.",
+    "exampleZh": "與其他手機相比，這款新推出的智慧型手機相對便宜。"
+  },
+  {
+    "id": 6558,
+    "en": "biomechanics",
+    "kk": "/ˌbaɪoʊmɪˈkænɪks/",
+    "zh": "n. 生物力學",
+    "unit": 7,
+    "example": "Sports scientists study biomechanics to improve athletes' performance.",
+    "exampleZh": "運動科學家研究生物力學以提升運動員的表現。"
+  },
+  {
+    "id": 6559,
+    "en": "devastation",
+    "kk": "/ˌdevəˈsteɪʃn/",
+    "zh": "n. 破壞、毀滅",
+    "unit": 7,
+    "example": "The powerful earthquake caused massive devastation along the coast.",
+    "exampleZh": "強烈地震沿岸造成了巨大的破壞與毀滅。"
+  },
+  {
+    "id": 6560,
+    "en": "hurried",
+    "kk": "/ˈhɜːrid/",
+    "zh": "adj. 慌忙的、匆忙的",
+    "unit": 7,
+    "example": "He ate a hurried breakfast before running to catch the train.",
+    "exampleZh": "他匆匆忙忙吃了早餐，然後跑去趕火車。"
+  },
+  {
+    "id": 6561,
+    "en": "ambiance",
+    "kk": "/ˈæmbiəns/",
+    "zh": "n. 氣氛、氛圍、情調",
+    "unit": 7,
+    "example": "The soft lighting and jazz music create a warm and cozy ambiance.",
+    "exampleZh": "柔和的燈光和爵士樂營造出溫暖舒適的氛圍。"
+  },
+  {
+    "id": 6562,
+    "en": "expecting",
+    "kk": "/ɪkˈspektɪŋ/",
+    "zh": "v. 期待、預期、懷孕",
+    "unit": 7,
+    "example": "We are expecting several international guests to arrive tomorrow.",
+    "exampleZh": "我們預計明天會有幾位國際貴賓到達。"
+  },
+  {
+    "id": 6563,
+    "en": "charles",
+    "kk": "/tʃɑːrlz/",
+    "zh": "n. 查爾斯",
+    "unit": 7,
+    "example": "Charles Dickens is one of the most famous British novelists.",
+    "exampleZh": "查爾斯·狄更斯是英國最著名的名作家之一。"
+  },
+  {
+    "id": 6564,
+    "en": "draughts",
+    "kk": "/drɑːfts/",
+    "zh": "n. 草稿、西洋跳棋",
+    "unit": 7,
+    "example": "He enjoys playing draughts with his grandfather on weekends.",
+    "exampleZh": "他週末喜歡和爺爺一起下西洋跳棋。"
+  },
+  {
+    "id": 6565,
+    "en": "architectural",
+    "kk": "/ˌɑːrkɪˈtektʃərəl/",
+    "zh": "adj. 建築學的、建築風格的",
+    "unit": 7,
+    "example": "The ancient city is well known for its unique architectural design.",
+    "exampleZh": "這座古城以其獨特的建築設計風格而聞名。"
+  },
+  {
+    "id": 6566,
+    "en": "arrived",
+    "kk": "/əˈraɪvd/",
+    "zh": "v. 到達、抵達",
+    "unit": 7,
+    "example": "The delivery package finally arrived at our doorstep this morning.",
+    "exampleZh": "包裹今天早上終於送達了我們的家門口。"
   }
 ];

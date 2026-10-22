@@ -133,6 +133,15 @@
             transition: outline 0.05s ease, background-color 0.05s ease;
         }
 
+        /* 劃線標註單字樣式 (翡翠綠螢光底線，如筆記重點) */
+        .listen-word.is-annotated {
+            border-bottom: 2.5px solid #10B981 !important;
+            background-color: rgba(16, 185, 129, 0.15) !important;
+            color: #065F46 !important;
+            font-weight: 600 !important;
+            border-radius: 3px;
+        }
+
         /* 雙人互動對話專屬風格 */
         .dialogue-card-A {
             border-left: 4px solid #0071E3 !important;
@@ -3800,15 +3809,258 @@
             }
         });
 
+        // ==========================================
+        // 聽力文章：單字劃線標註與單字頁聯動系統
+        // ==========================================
+        let articleCoreWords = [];
+        let currentArticleAnnotatedWords = new Set();
+
+        function getArticleAnnotateKey(article) {
+            const title = (article || currentSelectedListeningArticle)?.title || 'default';
+            return `listening_annotated_${encodeURIComponent(title)}`;
+        }
+
+        function loadArticleAnnotatedWords(article) {
+            try {
+                const raw = localStorage.getItem(getArticleAnnotateKey(article));
+                currentArticleAnnotatedWords = new Set(raw ? JSON.parse(raw) : []);
+            } catch(e) {
+                currentArticleAnnotatedWords = new Set();
+            }
+        }
+
+        function saveArticleAnnotatedWords() {
+            try {
+                localStorage.setItem(getArticleAnnotateKey(), JSON.stringify([...currentArticleAnnotatedWords]));
+            } catch(e) {
+                console.warn('saveArticleAnnotatedWords error', e);
+            }
+        }
+
+        function updateListeningWordsBadge() {
+            const btn = document.getElementById('subtab-btn-listening-words');
+            if (!btn) return;
+            const count = currentArticleAnnotatedWords.size;
+            if (count > 0) {
+                btn.innerHTML = `📝 單字 <span class="bg-emerald-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full ml-1 inline-flex items-center justify-center min-w-[18px] shadow-xs">${count}</span>`;
+            } else {
+                btn.innerHTML = `📝 單字`;
+            }
+        }
+
+        // 單字庫檢索輔助函式 (包含單字庫、自訂字庫與詞根還原)
+        function findWordInDB(wordText) {
+            const lower = String(wordText || '').toLowerCase().trim();
+            if (!lower) return null;
+            
+            // 1. 自訂字庫
+            const cw = (typeof customWordsDB !== 'undefined' ? customWordsDB : []).find(x => (x.en || '').toLowerCase() === lower);
+            if (cw) return { en: cw.en, zh: cw.zh || '', pos: cw.pos || '', kk: cw.kk || '', isCustom: true };
+
+            // 2. 內建字庫
+            let w = (typeof vocabularyDB !== 'undefined' ? vocabularyDB : []).find(x => (x.en || '').toLowerCase() === lower);
+            if (w) return { en: w.en, zh: w.zh || '', pos: w.pos || '', kk: w.kk || '', isCustom: false };
+
+            // 3. 詞根還原
+            const stems = [];
+            const irregulars = {
+                'was': 'be', 'were': 'be', 'is': 'be', 'are': 'be', 'am': 'be',
+                'has': 'have', 'had': 'have', 'did': 'do', 'done': 'do',
+                'went': 'go', 'gone': 'go', 'saw': 'see', 'seen': 'see',
+                'drove': 'drive', 'driven': 'drive', 'rose': 'rise', 'risen': 'rise',
+                'took': 'take', 'taken': 'take', 'gave': 'give', 'given': 'give',
+                'came': 'come', 'made': 'make', 'found': 'find', 'knew': 'know', 'known': 'know',
+                'thought': 'think', 'brought': 'bring', 'bought': 'buy', 'caught': 'catch',
+                'fought': 'fight', 'taught': 'teach', 'told': 'tell', 'sold': 'sell',
+                'left': 'leave', 'felt': 'feel', 'kept': 'keep', 'slept': 'sleep',
+                'meant': 'mean', 'met': 'meet', 'led': 'lead', 'read': 'read',
+                'said': 'say', 'paid': 'pay', 'laid': 'lay', 'ran': 'run',
+                'sat': 'sit', 'spoke': 'speak', 'spoken': 'speak', 'broke': 'break',
+                'broken': 'break', 'woke': 'wake', 'woken': 'wake', 'wrote': 'write',
+                'written': 'write', 'ate': 'eat', 'eaten': 'eat', 'fell': 'fall',
+                'fallen': 'fall', 'drank': 'drink', 'drunk': 'drink', 'sang': 'sing',
+                'sung': 'sing', 'swam': 'swim', 'swum': 'swim', 'began': 'begin',
+                'begun': 'begin', 'rang': 'ring', 'rung': 'ring', 'children': 'child',
+                'men': 'man', 'women': 'woman', 'teeth': 'tooth', 'feet': 'foot', 'mice': 'mouse'
+            };
+            if (irregulars[lower]) stems.push(irregulars[lower]);
+            if (lower.endsWith('ies')) stems.push(lower.slice(0, -3) + 'y');
+            if (lower.endsWith('es')) stems.push(lower.slice(0, -2));
+            if (lower.endsWith('s')) stems.push(lower.slice(0, -1));
+            if (lower.endsWith('ied')) stems.push(lower.slice(0, -3) + 'y');
+            if (lower.endsWith('ed')) stems.push(lower.slice(0, -2), lower.slice(0, -1));
+            if (lower.endsWith('ing')) stems.push(lower.slice(0, -3), lower.slice(0, -3) + 'e', lower.slice(0, -4));
+            if (lower.endsWith('ily')) stems.push(lower.slice(0, -3) + 'y');
+            if (lower.endsWith('ly')) stems.push(lower.slice(0, -2));
+            if (lower.endsWith('est')) stems.push(lower.slice(0, -3), lower.slice(0, -3) + 'e', lower.slice(0, -4));
+            if (lower.endsWith('er')) stems.push(lower.slice(0, -2), lower.slice(0, -2) + 'e', lower.slice(0, -3));
+
+            for (const stem of stems) {
+                w = (typeof vocabularyDB !== 'undefined' ? vocabularyDB : []).find(x => (x.en || '').toLowerCase() === stem);
+                if (w) return { en: w.en, zh: w.zh || '', pos: w.pos || '', kk: w.kk || '', isCustom: false, stemFrom: lower };
+            }
+
+            return null;
+        }
+
+        // 切換單字劃線標註狀態
+        async function toggleAnnotateWord(word, e) {
+            if (e && typeof e.stopPropagation === 'function') e.stopPropagation();
+            const lower = String(word || '').toLowerCase().trim();
+            if (!lower) return;
+
+            const wasMarked = currentArticleAnnotatedWords.has(lower);
+            if (wasMarked) {
+                currentArticleAnnotatedWords.delete(lower);
+                if (typeof showQuickToast === 'function') showQuickToast(`已取消標註「${lower}」`);
+            } else {
+                currentArticleAnnotatedWords.add(lower);
+                if (typeof showQuickToast === 'function') showQuickToast(`✨ 已標註「${lower}」，已同步加入單字分頁！`);
+            }
+            saveArticleAnnotatedWords();
+
+            // 1. 即時刷新聽力文章句子中所有此單字的標註底線樣式
+            document.querySelectorAll(`.listen-word[data-word="${lower}"]`).forEach(el => {
+                if (!wasMarked) {
+                    el.classList.add('is-annotated');
+                    el.classList.remove('border-transparent');
+                } else {
+                    el.classList.remove('is-annotated');
+                    el.classList.add('border-transparent');
+                }
+            });
+
+            // 2. 即時更新 Tooltip 內的標註按鈕
+            const tooltipBtn = document.getElementById(`btn-annotate-${lower}`);
+            if (tooltipBtn) {
+                const nowMarked = currentArticleAnnotatedWords.has(lower);
+                tooltipBtn.className = `pointer-events-auto px-2 py-0.5 rounded text-[11px] font-medium transition-colors flex items-center gap-1 shrink-0 ${
+                    nowMarked ? 'bg-emerald-600 text-white shadow-xs' : 'bg-gray-800 text-emerald-400 hover:bg-gray-700 border border-emerald-500/30'
+                }`;
+                tooltipBtn.innerHTML = nowMarked ? '<span>✓ 已標註</span>' : '<span>🏷️ 標註單字</span>';
+            }
+
+            // 3. 即時重新渲染單字分頁
+            renderListeningWordsTab();
+        }
+
+        // 渲染單字分頁 (包含使用者劃線標註單字與教材核心單字)
+        function renderListeningWordsTab() {
+            updateListeningWordsBadge();
+            const wc = document.getElementById('listening-words-container');
+            if (!wc) return;
+
+            let html = '';
+
+            // 1. 標註單字專區 (📌 我的劃線單字)
+            const annotatedList = Array.from(currentArticleAnnotatedWords);
+            if (annotatedList.length > 0) {
+                html += `
+                <div class="col-span-2 mb-3 bg-emerald-50/50 border border-emerald-200/80 rounded-2xl p-3 shadow-xs">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-xs font-bold text-emerald-800 flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                            📌 我的劃線單字 (${annotatedList.length})
+                        </span>
+                        <span class="text-[11px] text-emerald-600 font-medium">點擊發音 · 點 ✕ 取消標註</span>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2">
+                `;
+
+                annotatedList.forEach(word => {
+                    const safeEn = esc(word).replace(/'/g, "\\'");
+                    const info = findWordInDB(word);
+                    const isAlreadyCustom = (typeof customWordsDB !== 'undefined' && customWordsDB.some(cw => cw.en.toLowerCase() === word.toLowerCase()));
+                    const displayZh = info ? (info.pos ? `[${esc(info.pos)}] ` : '') + esc(info.zh) : '';
+
+                    html += `
+                        <div class="bg-white border border-emerald-200/70 p-2.5 rounded-xl flex items-center justify-between shadow-xs hover:border-emerald-400 transition min-h-[58px] cursor-pointer group" onclick="playAudio('${safeEn}')">
+                            <div class="min-w-0 pr-1.5 flex-1">
+                                <div class="flex items-center gap-1">
+                                    <div class="font-bold text-sm text-[#1D1D1F] leading-snug break-words">${esc(word)}</div>
+                                    ${info && info.kk ? `<span class="text-[10px] text-gray-400 font-mono hidden sm:inline">${esc(info.kk)}</span>` : ''}
+                                </div>
+                                <div id="annotated-card-zh-${esc(word)}" class="text-xs text-emerald-800 leading-snug line-clamp-2 mt-0.5 break-words font-medium" title="${displayZh}">
+                                    ${displayZh || '<span class="text-gray-400">查詢翻譯中...</span>'}
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-1 shrink-0" onclick="event.stopPropagation()">
+                                <button onclick="event.stopPropagation(); playAudio('${safeEn}')" class="text-emerald-600 hover:bg-emerald-100 p-1.5 rounded-full transition" title="朗讀發音">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
+                                </button>
+                                ${!isAlreadyCustom ? `
+                                <button onclick="event.stopPropagation(); promptAddMissingWord('${safeEn}', this)" class="text-blue-500 hover:bg-blue-50 p-1.5 rounded-full transition text-[11px]" title="加入自訂生詞庫">
+                                    ➕
+                                </button>
+                                ` : ''}
+                                <button onclick="event.stopPropagation(); toggleAnnotateWord('${safeEn}')" class="text-gray-400 hover:text-red-500 hover:bg-red-50 p-1 rounded-full transition" title="取消劃線標註">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+                    `;
+
+                    // 若快顯查無，背後非同步查詢並動態更新卡片翻譯
+                    if (!info) {
+                        fetchWordDetails(word).then(details => {
+                            const zhEl = document.getElementById(`annotated-card-zh-${word}`);
+                            if (zhEl) {
+                                const fullZh = (details.pos ? `[${details.pos}] ` : '') + (details.zh || '字庫未收錄');
+                                zhEl.textContent = fullZh;
+                                zhEl.title = fullZh;
+                            }
+                        });
+                    }
+                });
+
+                html += `
+                    </div>
+                </div>
+                <div class="col-span-2 flex items-center gap-2 my-1 text-xs font-semibold text-gray-500">
+                    <span>📚 本文核心單字</span>
+                    <div class="flex-1 border-t border-gray-200"></div>
+                </div>
+                `;
+            }
+
+            // 2. 本文既有的核心重點單字
+            if (articleCoreWords.length === 0 && annotatedList.length === 0) {
+                wc.innerHTML = '<div class="text-sm text-gray-500 col-span-2 text-center py-6">點擊文章中的單字即可隨時標註！</div>';
+                return;
+            }
+
+            articleCoreWords.forEach(w => {
+                const safeEn = (w.en || '').replace(/'/g, "\\'");
+                const isMarked = currentArticleAnnotatedWords.has((w.en || '').toLowerCase());
+                html += `
+                <div class="bg-white border border-gray-100 p-2.5 rounded-xl flex items-center justify-between shadow-xs cursor-pointer hover:bg-gray-50 transition min-h-[58px]" onclick="playAudio('${safeEn}')">
+                    <div class="min-w-0 pr-1.5 flex-1">
+                        <div class="flex items-center gap-1.5">
+                            <span class="font-semibold text-sm text-[#1D1D1F] leading-snug break-words">${esc(w.en || '')}</span>
+                            ${isMarked ? `<span class="text-[9px] bg-emerald-100 text-emerald-700 font-bold px-1.5 py-0.2 rounded-full">已劃線</span>` : ''}
+                        </div>
+                        <div class="text-xs text-[#86868B] leading-snug line-clamp-2 mt-0.5 break-words" title="${esc(w.zh || '')}">${esc(w.zh || '')}</div>
+                    </div>
+                    <div class="flex items-center gap-1 shrink-0" onclick="event.stopPropagation()">
+                        <button onclick="event.stopPropagation(); playAudio('${safeEn}')" class="text-[#0071E3] hover:bg-[#E5E5EA] p-1.5 rounded-full transition" title="朗讀發音">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
+                        </button>
+                    </div>
+                </div>`;
+            });
+
+            wc.innerHTML = html;
+        }
+
         // 萃取短文重點單字
         function extractListeningWords(articleOrText) {
-            let matchedWords = [];
+            articleCoreWords = [];
             
             // 1. 若教材本身有精心策劃的重點單字庫 (5~8 個情境核心單字)，直接採用 (保證品質且絕無廢字重複)
             if (articleOrText && typeof articleOrText === 'object' && Array.isArray(articleOrText.vocabulary) && articleOrText.vocabulary.length > 0) {
-                matchedWords = articleOrText.vocabulary;
+                articleCoreWords = articleOrText.vocabulary;
             } else if (currentSelectedListeningArticle && Array.isArray(currentSelectedListeningArticle.vocabulary) && currentSelectedListeningArticle.vocabulary.length > 0) {
-                matchedWords = currentSelectedListeningArticle.vocabulary;
+                articleCoreWords = currentSelectedListeningArticle.vocabulary;
             } else {
                 // 2. 自訂短文或 Fallback 演算法：嚴格去重 + 排除常見停用詞 + 篇內限制最多 6 個
                 const rawText = (typeof articleOrText === 'string') 
@@ -3836,7 +4088,7 @@
                 };
 
                 const seenEn = new Set();
-                matchedWords = vocabularyDB
+                articleCoreWords = vocabularyDB
                     .filter(w => {
                         const lower = (w.en || '').toLowerCase();
                         if (uniqueWords.includes(lower) && !seenEn.has(lower) && !stopWords.has(lower)) {
@@ -3849,27 +4101,7 @@
                     .slice(0, 6);
             }
             
-            const wc = document.getElementById('listening-words-container');
-            if (!wc) return;
-            wc.innerHTML = '';
-            if (matchedWords.length === 0) {
-                wc.innerHTML = '<div class="text-sm text-gray-500 col-span-2">未找到重點單字</div>';
-                return;
-            }
-            
-            matchedWords.forEach(w => {
-                const safeEn = (w.en || '').replace(/'/g, "\\'");
-                wc.innerHTML += `
-                <div class="bg-white border border-gray-100 p-2.5 rounded-xl flex items-center justify-between shadow-xs cursor-pointer hover:bg-gray-50 transition min-h-[58px]" onclick="playAudio('${safeEn}')">
-                    <div class="min-w-0 pr-1.5 flex-1">
-                        <div class="font-semibold text-sm text-[#1D1D1F] leading-snug break-words">${esc(w.en || '')}</div>
-                        <div class="text-xs text-[#86868B] leading-snug line-clamp-2 mt-0.5 break-words" title="${esc(w.zh || '')}">${esc(w.zh || '')}</div>
-                    </div>
-                    <button class="text-[#0071E3] hover:bg-[#E5E5EA] p-1.5 rounded-full shrink-0 transition" title="朗讀發音">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
-                    </button>
-                </div>`;
-            });
+            renderListeningWordsTab();
         }
 
         document.getElementById('btn-generate-listening').addEventListener('click', () => {
@@ -3917,6 +4149,9 @@
             currentRolePlayMode = 'all';
             revealedRoleplaySentences.clear();
             updateRoleModeButtons('all');
+
+            // 載入該教材之使用者標註單字
+            loadArticleAnnotatedWords(article);
 
             // 渲染句子列表 (支援一般篇章與雙人角色對話)
             renderListeningSentences();
@@ -3988,7 +4223,9 @@
                 while ((match = regex.exec(s)) !== null) {
                     html += esc(s.substring(lastIndex, match.index));
                     const wordStr = match[0].toLowerCase().replace(/'/g, "\\'");
-                    html += `<span class="listen-word cursor-pointer transition-colors duration-200 border-b-2 border-transparent hover:border-[#0071E3] rounded px-0.5 mx-px" data-word="${wordStr}" onclick="event.stopPropagation(); showWordTranslation(event, '${wordStr}')">${esc(match[0])}</span>`;
+                    const isAnnotated = currentArticleAnnotatedWords.has(wordStr);
+                    const annotatedClass = isAnnotated ? 'is-annotated' : 'border-transparent';
+                    html += `<span class="listen-word cursor-pointer transition-colors duration-200 border-b-2 ${annotatedClass} hover:border-[#0071E3] rounded px-0.5 mx-px" data-word="${wordStr}" onclick="event.stopPropagation(); showWordTranslation(event, '${wordStr}')">${esc(match[0])}</span>`;
                     lastIndex = regex.lastIndex;
                 }
                 html += esc(s.substring(lastIndex));
@@ -4176,37 +4413,56 @@
             }
             
             const safeSpeak = esc(speakWord).replace(/'/g, "\\'");
+            const cleanWordText = wordText.toLowerCase();
+            const safeWord = esc(cleanWordText).replace(/'/g, "\\'");
+            const isMarked = currentArticleAnnotatedWords.has(cleanWordText);
+            const annotateBtnHtml = `
+                <button id="btn-annotate-${cleanWordText}" onclick="event.stopPropagation(); toggleAnnotateWord('${safeWord}', event)" 
+                        class="pointer-events-auto px-2 py-0.5 rounded text-[11px] font-medium transition-colors flex items-center gap-1 shrink-0 ${
+                            isMarked ? 'bg-emerald-600 text-white shadow-xs' : 'bg-gray-800 text-emerald-400 hover:bg-gray-700 border border-emerald-500/30'
+                        }" title="標註此單字，並同步加到單字頁">
+                    ${isMarked ? '✓ 已標註' : '🏷️ 標註單字'}
+                </button>
+            `;
+
             if (w) {
+                const isAlreadyCustom = (typeof customWordsDB !== 'undefined' && customWordsDB.some(cw => cw.en.toLowerCase() === cleanWordText));
                 tooltip.innerHTML = `
                     <div class="flex items-center justify-between gap-3">
                         <div class="font-semibold text-teal-300 text-sm">
                             ${esc(w.en)} ${w.kk ? `<span class="font-normal text-gray-300 text-xs ml-1">${esc(w.kk)}</span>` : ''}
                         </div>
-                        <button onclick="event.stopPropagation(); playAudio('${safeSpeak}')" class="pointer-events-auto text-teal-300 hover:text-white p-1 rounded-full hover:bg-gray-800 transition" title="重播單字發音">
+                        <button onclick="event.stopPropagation(); playAudio('${safeSpeak}')" class="pointer-events-auto text-teal-300 hover:text-white p-1 rounded-full hover:bg-gray-800 transition shrink-0" title="重播單字發音">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
                         </button>
                     </div>
                     <div class="mt-1 text-xs text-gray-100 font-medium">${esc(w.zh)}</div>
+                    <div class="mt-2 pt-1.5 border-t border-gray-700/60 flex items-center justify-between gap-2">
+                        ${annotateBtnHtml}
+                        ${!isAlreadyCustom ? `<button onclick="event.stopPropagation(); promptAddMissingWord('${safeWord}', this)" class="text-teal-300 hover:text-teal-200 pointer-events-auto px-2 py-0.5 rounded bg-gray-800 text-[11px] font-medium shadow-xs whitespace-nowrap transition-colors">➕ 加入自訂</button>` : `<span class="text-emerald-400 text-[11px] font-medium whitespace-nowrap">✅ 已在字庫</span>`}
+                    </div>
                 `;
             } else {
-                const safeWord = esc(wordText).replace(/'/g, "\\'");
-                const isAlreadyCustom = customWordsDB.some(cw => cw.en.toLowerCase() === wordText.toLowerCase());
+                const isAlreadyCustom = (typeof customWordsDB !== 'undefined' && customWordsDB.some(cw => cw.en.toLowerCase() === cleanWordText));
                 tooltip.innerHTML = `
                     <div class="flex items-center justify-between gap-3">
                         <div class="font-semibold text-gray-200 text-sm">${esc(wordText)}</div>
-                        <button onclick="event.stopPropagation(); playAudio('${safeWord}')" class="pointer-events-auto text-teal-300 hover:text-white p-1 rounded-full hover:bg-gray-800 transition" title="重播單字發音">
+                        <button onclick="event.stopPropagation(); playAudio('${safeWord}')" class="pointer-events-auto text-teal-300 hover:text-white p-1 rounded-full hover:bg-gray-800 transition shrink-0" title="重播單字發音">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
                         </button>
                     </div>
-                    <div class="text-xs text-gray-400 mt-1.5 flex items-center justify-between gap-2">
-                        <span id="tooltip-auto-zh" class="truncate max-w-[140px]">翻譯中…</span> 
-                        ${isAlreadyCustom ? `<span class="text-emerald-400 text-[11px] font-medium ml-2 whitespace-nowrap">✅ 已在字庫</span>` : `<button onclick="event.stopPropagation(); promptAddMissingWord('${safeWord}', this)" class="text-teal-300 hover:text-teal-200 pointer-events-auto px-2 py-0.5 rounded bg-gray-800 text-[11px] font-medium ml-2 shadow-xs whitespace-nowrap transition-colors">➕ 加入自訂</button>`}
+                    <div class="text-xs text-gray-400 mt-1">
+                        <span id="tooltip-auto-zh" class="text-gray-100 font-medium">翻譯中…</span> 
+                    </div>
+                    <div class="mt-2 pt-1.5 border-t border-gray-700/60 flex items-center justify-between gap-2">
+                        ${annotateBtnHtml}
+                        ${isAlreadyCustom ? `<span class="text-emerald-400 text-[11px] font-medium whitespace-nowrap">✅ 已在字庫</span>` : `<button onclick="event.stopPropagation(); promptAddMissingWord('${safeWord}', this)" class="text-teal-300 hover:text-teal-200 pointer-events-auto px-2 py-0.5 rounded bg-gray-800 text-[11px] font-medium shadow-xs whitespace-nowrap transition-colors">➕ 加入自訂</button>`}
                     </div>
                 `;
                 fetchQuickTranslation(wordText).then(zh => {
                     const el = document.getElementById('tooltip-auto-zh');
                     if (el) {
-                        el.className = 'text-xs text-gray-100 font-medium truncate max-w-[140px]';
+                        el.className = 'text-xs text-gray-100 font-medium';
                         el.textContent = zh || '字庫中未收錄';
                     }
                 });

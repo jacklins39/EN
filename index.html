@@ -1233,7 +1233,6 @@
             const payload = {
                 progress: userProgress,
                 day: virtualCurrentDay,
-                unit: currentUnit,
                 dailyPlans: dailyPlans,
                 newWordsPerDay: NEW_WORDS_PER_DAY,
                 customWords: customWordsDB,
@@ -1254,10 +1253,13 @@
                 }
             }).catch(error => {
                 console.error("雲端存檔失敗:", error);
-                if (error.code === 'permission-denied') {
-                    alert('⚠️ 雲端存檔失敗 (權限被拒)！請確認 Firebase Console 中的 Firestore 規則已發布更新。');
+                const banner = document.getElementById('sync-banner');
+                if (banner) {
+                    banner.innerText = "⚠️ 雲端同步失敗 (本機已安全暫存)";
+                    banner.className = "bg-amber-100 text-amber-800 text-xs text-center py-1 font-medium";
+                    banner.classList.remove('hidden');
+                    setTimeout(() => banner.classList.add('hidden'), 3500);
                 }
-                throw error;
             });
         }
 
@@ -1368,7 +1370,6 @@
         document.getElementById('unit-selector').addEventListener('change', (e) => {
             currentUnit = parseInt(e.target.value);
             localStorage.setItem('vocab_current_unit', String(currentUnit));
-            saveToCloud();
             updateDashboard();
         });
 

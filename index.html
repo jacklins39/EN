@@ -2945,9 +2945,13 @@
             
             const btnAdd = document.getElementById('btn-add-custom-error');
             if (btnAdd) {
-                btnAdd.addEventListener('click', () => {
-                    const zhInput = (document.getElementById('input-custom-zh').value || '').trim();
-                    const success = addCustomWord(word, '', zhInput || '請自行查閱');
+                btnAdd.addEventListener('click', async () => {
+                    let zhInput = (document.getElementById('input-custom-zh').value || '').trim();
+                    if (!zhInput) {
+                        btnAdd.innerText = '翻譯中...';
+                        zhInput = await fetchQuickTranslation(word);
+                    }
+                    const success = addCustomWord(word, '', zhInput || '常用詞彙');
                     if (success) {
                         btnAdd.innerText = '✅ 已加入單元 10';
                         btnAdd.disabled = true;
@@ -3126,63 +3130,38 @@
                         }
                     });
                     if (wordsToUpdate.length > 0) {
-                        autofillBtn.innerText = '處理中...';
                         autofillBtn.disabled = true;
                         
-                        // 1. 批次處理中文翻譯
+                        // 1. 逐詞並行翻譯 (使用多重備援 API，解決批次合併錯位問題)
                         const zhWords = wordsToUpdate.filter(x => x.needsZh);
                         if (zhWords.length > 0) {
-                            try {
-                                const query = zhWords.map(x => x.en).join('\n');
-                                const res = await fetch(`https://translate.googleapis.com/translate_a/t?client=dict-chrome-ex&sl=en&tl=zh-TW&dt=t&q=${encodeURIComponent(query)}`);
-                                const data = await res.json();
-                                if (data && typeof data[0] === 'string') {
-                                    const zhArray = data[0].split('\n');
-                                    zhWords.forEach((item, idx) => {
-                                        item.zhInp.value = zhArray[idx] || item.zhInp.value;
-                                        item.zhInp.classList.add('bg-green-50');
-                                    });
-                                }
-                            } catch(e) {
-                                console.error('Translation error', e);
-                            }
-                        }
-                        
-                        // 2. 個別處理 KK 音標 (透過 dictionaryapi)
-                        const kkWords = wordsToUpdate.filter(x => x.needsKk);
-                        if (kkWords.length > 0) {
-                            await Promise.all(kkWords.map(async (item) => {
+                            let completed = 0;
+                            await Promise.all(zhWords.map(async (item) => {
                                 try {
-                                    const controller = new AbortController();
-                                    const timeoutId = setTimeout(() => controller.abort(), 3000);
-                                    const word = item.en.split(' ')[0]; // 擷取第一個字查音標
-                                    const res = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(word)}`, { signal: controller.signal });
-                                    clearTimeout(timeoutId);
-                                    if (res.ok) {
-                                        const data = await res.json();
-                                        let phonetic = data[0]?.phonetic;
-                                        if (!phonetic && data[0]?.phonetics) {
-                                            const pObj = data[0].phonetics.find(p => p.text);
-                                            if (pObj) phonetic = pObj.text;
-                                        }
-                                        if (phonetic) {
-                                            item.kkInp.value = phonetic;
-                                            item.kkInp.classList.add('bg-green-50');
-                                        }
+                                    const zh = await fetchQuickTranslation(item.en);
+                                    if (zh && !zh.includes('自行查閱')) {
+                                        item.zhInp.value = zh;
+                                        item.zhInp.classList.add('bg-green-50');
                                     }
-                                } catch(e) {}
+                                } catch(e) {
+                                    console.warn('翻譯失敗', item.en, e);
+                                } finally {
+                                    completed++;
+                                    autofillBtn.innerText = `翻譯中 (${completed}/${zhWords.length})...`;
+                                }
                             }));
                         }
                     }
                     
-                    // 恢復按鈕狀態並自動觸發存檔
-                    autofillBtn.innerText = '完成！';
+                    // 恢復按鈕狀態並直接寫入資料庫儲存
+                    autofillBtn.innerText = '儲存中...';
+                    const saveBtn = document.getElementById('btn-save-custom-all');
+                    if (saveBtn) saveBtn.click();
+                    
                     setTimeout(() => {
                         autofillBtn.innerText = '✨ 自動翻譯並儲存';
                         autofillBtn.disabled = false;
-                    }, 2000);
-                    const saveBtn = document.getElementById('btn-save-custom-all');
-                    if (saveBtn) saveBtn.click();
+                    }, 1500);
                 });
             }
             const saveAll = document.getElementById('btn-save-custom-all');
@@ -3201,19 +3180,20 @@
                     if (!e.zh) return alert(`「${e.en}」缺中文解釋`);
                     if (seen.has(lw)) return alert(`重複的單字：「${e.en}」`);
                     seen.add(lw);
-                    const bu = builtinUnitOf(e.en);
-                    if (bu) return alert(`「${e.en}」已在內建字庫 單元 ${bu}`);
                 }
                 edits.forEach(e => {
                     const w = customWordsDB.find(x => String(x.id) === e.id);
                     if (w) { w.en = e.en; w.kk = e.kk; w.zh = e.zh; }
+                    const vw = vocabularyDB.find(x => x.unit === 10 && String(x.id) === e.id);
+                    if (vw) { vw.en = e.en; vw.kk = e.kk; vw.zh = e.zh; }
                 });
+                saveDailyPlansLocally();
                 if (currentUser) {
                     db.collection('users').doc(currentUser.uid).update({ customWords: customWordsDB }).catch(console.error);
                 }
                 updateDashboard();
                 renderCustomManager();
-                alert('已儲存 ✅');
+                showQuickToast('自訂字庫已更新並儲存 ✅');
             });
             const all = document.getElementById('btn-del-custom-all');
             if (all) all.addEventListener('click', () => {

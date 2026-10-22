@@ -285,17 +285,15 @@
                 <div class="w-full mb-3 bg-white p-3.5 rounded-2xl border border-gray-100 shadow-sm">
                     <div class="flex items-center justify-between text-xs mb-2">
                         <span class="font-semibold text-gray-700 flex items-center gap-1.5">
-                            <span>🎯</span> 複習題型模式
+                            <span>🎯</span> 複習題型
                         </span>
-                        <span id="quiz-mode-desc-dash" class="text-xs font-semibold text-[#0071E3]">智能自適應</span>
+                        <span id="quiz-mode-desc-dash" class="text-xs font-semibold text-[#0071E3]">🔤 看英選中</span>
                     </div>
-                    <div class="grid grid-cols-3 sm:grid-cols-6 gap-1 bg-gray-100 p-1 rounded-xl quiz-mode-selector">
-                        <button type="button" data-mode="auto" class="quiz-pill py-2 px-1 text-xs rounded-lg font-medium transition-all text-center">🌟 智能</button>
+                    <div class="grid grid-cols-4 gap-1.5 bg-gray-100 p-1 rounded-xl quiz-mode-selector">
                         <button type="button" data-mode="en2zh" class="quiz-pill py-2 px-1 text-xs rounded-lg font-medium transition-all text-center">🔤 英選中</button>
-                        <button type="button" data-mode="zh2en" class="quiz-pill py-2 px-1 text-xs rounded-lg font-medium transition-all text-center">🈳 中選英</button>
+                        <button type="button" data-mode="zh2en" class="quiz-pill py-2 px-1 text-xs rounded-lg font-medium transition-all text-center">📝 中選英</button>
                         <button type="button" data-mode="listen" class="quiz-pill py-2 px-1 text-xs rounded-lg font-medium transition-all text-center">🎧 聽音</button>
                         <button type="button" data-mode="fill" class="quiz-pill py-2 px-1 text-xs rounded-lg font-medium transition-all text-center">⌨️ 拼寫</button>
-                        <button type="button" data-mode="card" class="quiz-pill py-2 px-1 text-xs rounded-lg font-medium transition-all text-center">🃏 翻牌</button>
                     </div>
                 </div>
 
@@ -404,17 +402,15 @@
                 <div class="w-full mb-3 bg-gray-50 p-2.5 rounded-xl border border-gray-100">
                     <div class="flex items-center justify-between text-xs mb-1.5 px-0.5">
                         <span class="font-semibold text-gray-700 flex items-center gap-1">
-                            <span>🎯</span> 題型模式
+                            <span>🎯</span> 複習題型
                         </span>
-                        <span id="quiz-mode-desc-lobby" class="text-xs font-semibold text-[#0071E3]">智能自適應</span>
+                        <span id="quiz-mode-desc-lobby" class="text-xs font-semibold text-[#0071E3]">🔤 看英選中</span>
                     </div>
-                    <div class="grid grid-cols-3 sm:grid-cols-6 gap-1 bg-white p-1 rounded-lg border border-gray-200 quiz-mode-selector">
-                        <button type="button" data-mode="auto" class="quiz-pill py-1.5 px-1 text-xs rounded-md font-medium transition-all text-center">🌟 智能</button>
+                    <div class="grid grid-cols-4 gap-1 bg-white p-1 rounded-lg border border-gray-200 quiz-mode-selector">
                         <button type="button" data-mode="en2zh" class="quiz-pill py-1.5 px-1 text-xs rounded-md font-medium transition-all text-center">🔤 英選中</button>
-                        <button type="button" data-mode="zh2en" class="quiz-pill py-1.5 px-1 text-xs rounded-md font-medium transition-all text-center">🈳 中選英</button>
+                        <button type="button" data-mode="zh2en" class="quiz-pill py-1.5 px-1 text-xs rounded-md font-medium transition-all text-center">📝 中選英</button>
                         <button type="button" data-mode="listen" class="quiz-pill py-1.5 px-1 text-xs rounded-md font-medium transition-all text-center">🎧 聽音</button>
                         <button type="button" data-mode="fill" class="quiz-pill py-1.5 px-1 text-xs rounded-md font-medium transition-all text-center">⌨️ 拼寫</button>
-                        <button type="button" data-mode="card" class="quiz-pill py-1.5 px-1 text-xs rounded-md font-medium transition-all text-center">🃏 翻牌</button>
                     </div>
                 </div>
 
@@ -1111,24 +1107,24 @@
         }
 
         // 題型偏好模式管理 (auto 智能階梯, en2zh 看英選中, zh2en 看中選英, listen 盲聽辨字, fill 拼寫填空, card 卡片翻牌)
+        // 題型偏好模式管理 (en2zh 看英選中, zh2en 看中選英, listen 盲聽辨字, fill 拼寫填空)
         const QUIZ_MODE_NAMES = {
-            'auto': '🌟 智能自適應（循序階梯）',
-            'en2zh': '🔤 看英選中（快速識義）',
-            'zh2en': '🈳 看中選英（主動回想）',
-            'listen': '🎧 盲聽辨字（聽音辨字）',
-            'fill': '⌨️ 拼寫填空（鍵盤輸入）',
-            'card': '🃏 卡片翻牌（經典自評）'
+            'en2zh': '🔤 看英選中',
+            'zh2en': '📝 看中選英',
+            'listen': '🎧 盲聽辨字',
+            'fill': '⌨️ 拼寫填空'
         };
 
         function setPreferredQuizType(mode) {
-            const valid = ['auto', 'en2zh', 'zh2en', 'listen', 'fill', 'card'].includes(mode) ? mode : 'auto';
+            const valid = ['en2zh', 'zh2en', 'listen', 'fill'].includes(mode) ? mode : 'en2zh';
             localStorage.setItem('preferred_quiz_type', valid);
             updateQuizModeUI(valid);
         }
 
         function updateQuizModeUI(mode) {
-            const m = mode || localStorage.getItem('preferred_quiz_type') || 'auto';
-            const descText = QUIZ_MODE_NAMES[m] || QUIZ_MODE_NAMES['auto'];
+            let m = mode || localStorage.getItem('preferred_quiz_type') || 'en2zh';
+            if (!['en2zh', 'zh2en', 'listen', 'fill'].includes(m)) m = 'en2zh';
+            const descText = QUIZ_MODE_NAMES[m] || QUIZ_MODE_NAMES['en2zh'];
             const dashDesc = document.getElementById('quiz-mode-desc-dash');
             const lobbyDesc = document.getElementById('quiz-mode-desc-lobby');
             if (dashDesc) dashDesc.innerText = descText;
@@ -2078,23 +2074,16 @@
             }
             document.getElementById('card-translation').innerText = parsed.pureZh;
             
-            // 決定題型模式：優先遵循使用者在題型選擇器挑選的題型 (或智能自適應)
-            const progress = (currentWord && userProgress[currentWord.id]) ? userProgress[currentWord.id] : null;
-            const forced = sessionTitle === WEAK_TITLE;
-            const prefMode = localStorage.getItem('preferred_quiz_type') || 'auto';
+            // 決定題型模式：依使用者選取題型（預設為 en2zh 看英選中）
+            let prefMode = localStorage.getItem('preferred_quiz_type') || 'en2zh';
+            if (!['en2zh', 'zh2en', 'listen', 'fill'].includes(prefMode)) prefMode = 'en2zh';
             
             if (isAutoFlashcardMode) {
                 isQuizMode = false;
                 currentQuizType = 'card';
-            } else if (prefMode === 'card') {
-                isQuizMode = false;
-                currentQuizType = 'card';
-            } else if (prefMode !== 'auto') {
-                isQuizMode = true;
-                currentQuizType = prefMode;
             } else {
                 isQuizMode = true;
-                currentQuizType = pickQuizType(progress ? progress.level : 0, forced);
+                currentQuizType = prefMode;
             }
             
             if (isQuizMode) {

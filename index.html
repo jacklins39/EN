@@ -4320,7 +4320,7 @@
             }
         }
 
-        // 動態計算當前播放進度落在哪個單字上 (加權卡拉OK時間軸)
+        // 動態計算當前播放進度落在哪個單字上 (自適應語速無延遲卡拉OK演算法)
         function updateWordHighlight() {
             if (!isListeningPlaying || currentHighlightedIndex < 0 || !listeningSentences || !listeningSentences[currentHighlightedIndex]) {
                 clearWordHighlight();
@@ -4330,15 +4330,15 @@
             const sObj = listeningSentences[currentHighlightedIndex];
             const sStart = typeof sObj.start === 'number' ? sObj.start : 0;
             const sEnd = typeof sObj.end === 'number' ? sObj.end : 0;
-            const duration = sEnd - sStart;
-            if (duration <= 0.05) {
+            const totalDuration = sEnd - sStart;
+            if (totalDuration <= 0.05) {
                 clearWordHighlight();
                 return;
             }
 
             const t = listeningAudioPlayer.currentTime;
-            const elapsed = t - sStart;
-            if (elapsed < 0 || elapsed > duration + 0.15) {
+            const rawElapsed = t - sStart;
+            if (rawElapsed < -0.1 || rawElapsed > totalDuration + 0.1) {
                 clearWordHighlight();
                 return;
             }
@@ -4349,26 +4349,41 @@
             const words = Array.from(sentenceDiv.querySelectorAll('.listen-word'));
             if (words.length === 0) return;
 
-            // 依單字長度與標點停頓計算權重
+            // 1. 扣除句末自然靜音空白 (音檔結尾通常有 0.5 ~ 0.9 秒停頓，不扣除會導致整句進度被拉長而延遲)
+            const tailSilence = Math.min(1.0, Math.max(0.35, totalDuration * 0.18));
+            const effectiveSpeechDuration = Math.max(0.3, totalDuration - tailSilence);
+
+            // 2. 隨語速動態提前量補償 (消除大腦視覺傳導與句首吸氣延遲，各語速均完美貼合)
+            const speed = listeningAudioPlayer.playbackRate || 1.0;
+            const leadOffset = 0.42 * speed; 
+            const adjustedElapsed = Math.min(effectiveSpeechDuration, Math.max(0, rawElapsed + leadOffset));
+
+            // 3. 依單字長度與標點停頓計算發音權重
             const weights = words.map(w => {
                 const text = w.textContent.trim();
-                let weight = Math.max(1.8, text.length);
+                let weight = Math.max(1.8, Math.pow(text.length, 0.88));
                 const nextNode = w.nextSibling;
                 const nextText = (nextNode && nextNode.nodeType === Node.TEXT_NODE) ? nextNode.textContent : '';
-                if (/[,;:]/.test(nextText)) weight += 2.4; // 句中標點停頓加權
+                if (/[,;:]/.test(nextText)) weight += 2.2; // 逗號停頓加權
                 return weight;
             });
 
             const totalWeight = weights.reduce((a, b) => a + b, 0);
-            const currentWeightProgress = Math.min(totalWeight, Math.max(0, (elapsed / duration) * totalWeight));
+            const currentWeightProgress = (adjustedElapsed / effectiveSpeechDuration) * totalWeight;
 
-            let acc = 0;
             let targetWord = words[words.length - 1];
-            for (let i = 0; i < words.length; i++) {
-                acc += weights[i];
-                if (currentWeightProgress <= acc) {
-                    targetWord = words[i];
-                    break;
+
+            // 句首保護：剛開始播放的瞬間 (0~0.2秒)，精準鎖定在第一個單字
+            if (rawElapsed < 0.2) {
+                targetWord = words[0];
+            } else {
+                let acc = 0;
+                for (let i = 0; i < words.length; i++) {
+                    acc += weights[i];
+                    if (currentWeightProgress <= acc) {
+                        targetWord = words[i];
+                        break;
+                    }
                 }
             }
 

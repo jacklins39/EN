@@ -5943,10 +5943,10 @@ const externalVocabularyDB = [
     "id": 661,
     "en": "mind",
     "kk": "/ˈmaɪnd/",
-    "zh": "v./n. 心智",
+    "zh": "v./n. 介意、留意; 心智、頭腦",
     "unit": 1,
     "example": "She had a brilliant mind.",
-    "exampleZh": "她有一個聰明的頭腦。"
+    "exampleZh": "她有一個聰穎的頭腦。"
   },
   {
     "id": 662,

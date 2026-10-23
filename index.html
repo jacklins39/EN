@@ -2741,20 +2741,29 @@
                 }
             }
 
+            const isValidOption = (cand) => {
+                if (!cand || !cand[key]) return false;
+                if (key === 'zh') {
+                    const parsed = splitPosAndZh(cand.zh, cand.pos);
+                    return /[\u4e00-\u9fa5]/.test(parsed.pureZh);
+                }
+                return /^[a-zA-Z\s\-'.]+$/.test(cand.en);
+            };
+
             const options = [currentWord];
             let attempts = 0;
             // 優先從同詞性候選池抽取干擾項
             while (options.length < 4 && attempts < 300) {
                 const r = preferredPool[Math.floor(Math.random() * preferredPool.length)];
                 attempts++;
-                if (r && r[key] && !options.find(o => norm(o[key]) === norm(r[key]))) options.push(r);
+                if (isValidOption(r) && !options.find(o => norm(o[key]) === norm(r[key]))) options.push(r);
             }
             // 若同詞性候選不足 4 個，退回一般候選池補齊
             attempts = 0;
             while (options.length < 4 && attempts < 300) {
                 const r = pool[Math.floor(Math.random() * pool.length)];
                 attempts++;
-                if (r && r[key] && !options.find(o => norm(o[key]) === norm(r[key]))) options.push(r);
+                if (isValidOption(r) && !options.find(o => norm(o[key]) === norm(r[key]))) options.push(r);
             }
             options.sort(() => Math.random() - 0.5);
 

@@ -3488,8 +3488,8 @@ const toeicWordsDB = [
     "kk": "",
     "zh": "a. 心愛的;親愛 的",
     "unit": 11,
-    "example": "I miss thee, beloved father.",
-    "exampleZh": "親愛的父親，我想念您。"
+    "example": "He dedicated the book to his beloved grandmother.",
+    "exampleZh": "他把這本書獻給他心愛的祖母。"
   },
   {
     "id": 20389,
@@ -12362,8 +12362,8 @@ const toeicWordsDB = [
     "kk": "",
     "zh": "v. 收集;召集n. 聚集;收穫量",
     "unit": 12,
-    "example": "Gather ye rosebuds while ye may.",
-    "exampleZh": "趁還可以的時候，收集玫瑰花蕾。"
+    "example": "They gathered around the campfire to tell stories.",
+    "exampleZh": "他們聚集在營火旁講故事。"
   },
   {
     "id": 21375,

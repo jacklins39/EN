@@ -8627,8 +8627,8 @@ const jhWordsDB = [
     "kk": "",
     "zh": "n. 百合花",
     "unit": 17,
-    "example": "Lily lives in a penthouse just off Park Avenue.",
-    "exampleZh": "莉莉住在公園大道附近的一間頂樓公寓。"
+    "example": "The white lily is a symbol of purity.",
+    "exampleZh": "白百合是純潔的象徵。"
   },
   {
     "id": 30960,

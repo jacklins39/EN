@@ -2433,7 +2433,7 @@ const externalVocabularyDB = [
     "id": 271,
     "en": "address",
     "kk": "[ˋæ͵drɛs]",
-    "zh": "v. 地址；n. 演說",
+    "zh": "n. 地址、住址；v. 向…致詞、處理",
     "unit": 1,
     "example": "They had no permanent address.",
     "exampleZh": "他們沒有永久地址。"
@@ -3189,7 +3189,7 @@ const externalVocabularyDB = [
     "id": 355,
     "en": "cage",
     "kk": "[kedʒ]",
-    "zh": "v. 鳥籠；n. 獸籠",
+    "zh": "n. 籠子、鳥籠；v. 把…關進籠中",
     "unit": 1,
     "example": "The cage smelled of excrement.",
     "exampleZh": "籠子裡有排泄物的味道。"
@@ -3261,7 +3261,7 @@ const externalVocabularyDB = [
     "id": 363,
     "en": "cap",
     "kk": "[kæp]",
-    "zh": "v. 無邊便帽；n. 蓋子",
+    "zh": "n. 便帽、蓋子；v. 覆蓋、戴帽、設上限",
     "unit": 1,
     "example": "He often wore a baseball cap.",
     "exampleZh": "他經常戴著棒球帽。"
@@ -3324,7 +3324,7 @@ const externalVocabularyDB = [
     "id": 370,
     "en": "cause",
     "kk": "[kɑz]",
-    "zh": "v. 原因；n. 引起",
+    "zh": "n. 原因、動機；v. 引起、導致",
     "unit": 1,
     "example": "High temperatures can cause hallucination.",
     "exampleZh": "高溫會引起幻覺。"
@@ -8202,7 +8202,7 @@ const externalVocabularyDB = [
     "id": 912,
     "en": "tail",
     "kk": "[tel]",
-    "zh": "v. 跟蹤、盯梢；n. 尾巴、狹翅須",
+    "zh": "n. 尾巴、尾部；v. 尾隨、跟蹤",
     "unit": 1,
     "example": "The pony swished its tail.",
     "exampleZh": "小馬搖著尾巴。"
@@ -17886,7 +17886,7 @@ const externalVocabularyDB = [
     "id": 1988,
     "en": "suit",
     "kk": "[sut]",
-    "zh": "v. 一套衣服；n. 訴訟",
+    "zh": "n. 套裝、西裝、訴訟；v. 適合、相配",
     "unit": 2,
     "example": "Lighter shades suit you best.",
     "exampleZh": "較淺色的衣服對你最合適。"

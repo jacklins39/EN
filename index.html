@@ -3991,19 +3991,38 @@
                     </div>`).join('')
                     : '<p class="text-[#86868B] text-sm text-center py-8">目前沒有符合條件的弱點單字 🎉</p>';
             } else {
-                // All Words Mode
-                let words = vocabularyDB;
-                
-                // If not searching, just show first 300 to avoid lag
-                if (searchInput) {
-                    words = words.filter(w => 
-                        w.en.toLowerCase().includes(searchInput) || 
-                        (w.zh && w.zh.includes(searchInput)) || 
-                        (w.kk && w.kk.includes(searchInput))
-                    ).slice(0, 300);
-                } else {
-                    words = words.slice(0, 300);
+                // All Words Mode - 全域去重演算法 (依英文單字去重，保留詞性最完整、品質最高的項目)
+                const seenEn = new Map();
+                const getScore = (item) => {
+                    if (!item) return 0;
+                    let score = (item.zh || '').length;
+                    if (item.zh && item.zh.includes('；')) score += 50; // 多詞性加分
+                    if (item.kk && item.kk.startsWith('[')) score += 20; // 標準 KK 加分
+                    if (item.example) score += 10;
+                    return score;
+                };
+
+                for (let i = 0; i < vocabularyDB.length; i++) {
+                    const w = vocabularyDB[i];
+                    if (!w || !w.en) continue;
+                    if (searchInput) {
+                        const match = w.en.toLowerCase().includes(searchInput) || 
+                            (w.zh && w.zh.includes(searchInput)) || 
+                            (w.kk && w.kk.includes(searchInput));
+                        if (!match) continue;
+                    }
+                    const key = w.en.toLowerCase().trim();
+                    const existing = seenEn.get(key);
+                    if (!existing) {
+                        seenEn.set(key, w);
+                    } else if (getScore(w) > getScore(existing)) {
+                        seenEn.set(key, w);
+                    }
+                    if (!searchInput && seenEn.size >= 300) break;
                 }
+
+                let words = Array.from(seenEn.values());
+                if (searchInput) words = words.slice(0, 300);
                 
                 html = words.length ? words.map(w => `
                     <div class="weak-row flex items-center justify-between py-3 px-3 border-b border-gray-100 last:border-0 hover:bg-[#F5F5F7] rounded-2xl cursor-pointer transition-colors" data-id="${esc(String(w.id))}">

@@ -58608,24 +58608,6 @@ const externalVocabularyDB = [
     "exampleZh": "那邊的農場是誰的？"
   },
   {
-    "id": 6513,
-    "en": "affect",
-    "kk": "[əˋfɛkt]",
-    "zh": "影響、感動",
-    "unit": 7,
-    "example": "Can you use the word afefct in a sentence?",
-    "exampleZh": "你能在句子中使用「影響、感動」這個詞嗎？"
-  },
-  {
-    "id": 6514,
-    "en": "afford",
-    "kk": "[əˋfɔrd]",
-    "zh": "負擔得起、提供",
-    "unit": 7,
-    "example": "Can you use the word afofrd in a sentence?",
-    "exampleZh": "你能在句子中使用「負擔得起、提供」這個詞嗎？"
-  },
-  {
     "id": 6515,
     "en": "analyse",
     "kk": "[ˋænə͵laɪz]",
@@ -58707,33 +58689,6 @@ const externalVocabularyDB = [
     "exampleZh": "她叫他到教室外面去。"
   },
   {
-    "id": 6524,
-    "en": "effect",
-    "kk": "[ɪˋfɛkt]",
-    "zh": "效果、影響",
-    "unit": 7,
-    "example": "Can you use the word efefct in a sentence?",
-    "exampleZh": "你能在句子中使用「效果、影響」這個詞嗎？"
-  },
-  {
-    "id": 6525,
-    "en": "effective",
-    "kk": "[ɪˋfɛktɪv]",
-    "zh": "有效的、起作用的",
-    "unit": 7,
-    "example": "Can you use the word efefctive in a sentence?",
-    "exampleZh": "你能在句子中使用「有效的、起作用的」這個詞嗎？"
-  },
-  {
-    "id": 6526,
-    "en": "effort",
-    "kk": "[ˋɛfɚt]",
-    "zh": "努力、嘗試",
-    "unit": 7,
-    "example": "Can you use the word efofrt in a sentence?",
-    "exampleZh": "你能在句子中使用「努力、嘗試」這個詞嗎？"
-  },
-  {
     "id": 6527,
     "en": "European",
     "kk": "[͵jʊrəˋpiən]",
@@ -58797,33 +58752,6 @@ const externalVocabularyDB = [
     "exampleZh": "最後她不知不覺地睡著了。"
   },
   {
-    "id": 6534,
-    "en": "flat",
-    "kk": "[flæt]",
-    "zh": "平坦的、公寓",
-    "unit": 7,
-    "example": "Sometimes when you think the sky is about to fal...",
-    "exampleZh": "有時候你以為天要塌下來了，其實是自己站歪了。—破產姐妹。"
-  },
-  {
-    "id": 6535,
-    "en": "flower",
-    "kk": "[ˋflaʊɚ]",
-    "zh": "花、開花",
-    "unit": 7,
-    "example": "FoL: What is the point of any experiment?",
-    "exampleZh": "所有實驗的目的是什麼？"
-  },
-  {
-    "id": 6536,
-    "en": "fly",
-    "kk": "[flaɪ]",
-    "zh": "飛、蒼蠅",
-    "unit": 7,
-    "example": "You're wasting your time with that couple. Just FYl.",
-    "exampleZh": "你是在這對男女身上浪費時間。意見僅供參考啦。"
-  },
-  {
     "id": 6537,
     "en": "frequently",
     "kk": "[ˋfrikwəntli]",
@@ -58831,15 +58759,6 @@ const externalVocabularyDB = [
     "unit": 7,
     "example": "His refrigerator frequently looked half empty.",
     "exampleZh": "他的冰箱經常看上去有點兒空。"
-  },
-  {
-    "id": 6538,
-    "en": "offer",
-    "kk": "[ˋɔfɚ]",
-    "zh": "提供、提議",
-    "unit": 7,
-    "example": "Can you use the word ofefr in a sentence?",
-    "exampleZh": "你能在句子中使用「提供、提議」這個詞嗎？"
   },
   {
     "id": 6539,
@@ -58860,15 +58779,6 @@ const externalVocabularyDB = [
     "exampleZh": "這件毛衣真刺癢。"
   },
   {
-    "id": 6541,
-    "en": "reflect",
-    "kk": "[rɪfˋlɛkt]",
-    "zh": "反映、反思",
-    "unit": 7,
-    "example": "Can you use the word refel in a sentence?",
-    "exampleZh": "你能在句子中使用「反映、反思」這個詞嗎？"
-  },
-  {
     "id": 6542,
     "en": "should",
     "kk": "[ʃʊd]",
@@ -58885,15 +58795,6 @@ const externalVocabularyDB = [
     "unit": 7,
     "example": "'Listen!' said Doyle suddenly.",
     "exampleZh": "“你聽！”多伊爾突然說。"
-  },
-  {
-    "id": 6544,
-    "en": "suffer",
-    "kk": "[ˋsʌfɚ]",
-    "zh": "遭受、忍受",
-    "unit": 7,
-    "example": "Can you use the word sufefr in a sentence?",
-    "exampleZh": "你能在句子中使用「遭受、忍受」這個詞嗎？"
   },
   {
     "id": 6545,

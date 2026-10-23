@@ -2143,6 +2143,7 @@
             
             if (btnPlay) {
                 btnPlay.addEventListener('click', () => {
+                    unlockMobileAudio();
                     if (words.length === 0) return;
                     
                     // 關閉 Modal
@@ -2193,6 +2194,7 @@
         });
 
         document.getElementById('btn-start-session').addEventListener('click', () => {
+            unlockMobileAudio();
             sessionTitle = "一般課程";
             sessionQueue = []; mistakeQueue = [];
 
@@ -2257,6 +2259,56 @@
         let autoNextTimerId = null;
         let backsideAudioTimerId = null;
 
+        // 全域真人神經單字、例句與中文發音播放器
+        const wordAudioPlayer = new Audio();
+        wordAudioPlayer.preload = 'auto';
+        try { wordAudioPlayer.playsInline = true; } catch(e) {}
+
+        // ==========================================
+        // 手機端 (iOS Safari / Android) 音訊自動解鎖
+        // ==========================================
+        let isMobileAudioUnlocked = false;
+        function unlockMobileAudio() {
+            if (isMobileAudioUnlocked) return;
+            isMobileAudioUnlocked = true;
+
+            // 1. 解鎖 HTML5 Audio (wordAudioPlayer) - 播放極短 0.01 秒靜音 WAV 緩衝區
+            try {
+                if (typeof wordAudioPlayer !== 'undefined' && wordAudioPlayer) {
+                    const silentWav = 'data:audio/wav;base64,UklGRigAAABXQVZFZm10IBIAAAABAAEARKwAAIhYAQACABAAAABkYXRhAgAAAAEA';
+                    wordAudioPlayer.src = silentWav;
+                    const p = wordAudioPlayer.play();
+                    if (p && typeof p.then === 'function') {
+                        p.then(() => {
+                            wordAudioPlayer.pause();
+                            wordAudioPlayer.currentTime = 0;
+                        }).catch(() => {});
+                    }
+                }
+            } catch(e) {}
+
+            // 2. 解鎖 AudioContext (音效引擎)
+            try {
+                if (typeof audioCtx !== 'undefined' && audioCtx && audioCtx.state === 'suspended') {
+                    audioCtx.resume();
+                }
+            } catch(e) {}
+
+            // 3. 解鎖 Web SpeechSynthesis (iOS Safari 必須在手勢內預熱)
+            try {
+                if ('speechSynthesis' in window) {
+                    const u = new SpeechSynthesisUtterance('');
+                    u.volume = 0;
+                    window.speechSynthesis.speak(u);
+                }
+            } catch(e) {}
+        }
+
+        // 綁定全螢幕首次觸控與點擊自動解鎖
+        ['touchstart', 'touchend', 'click', 'pointerdown'].forEach(evtType => {
+            document.addEventListener(evtType, unlockMobileAudio, { passive: true, once: true });
+        });
+
         function stopAllAudio() {
             clearAudioCallbacks();
             if (backsideAudioTimerId) {
@@ -2297,24 +2349,77 @@
         }
 
         function speakChinese(text, onEndedCallback) {
-            if (!text || !('speechSynthesis' in window)) {
+            if (!text) {
                 if (typeof onEndedCallback === 'function') onEndedCallback();
                 return;
             }
             try {
                 // 清洗括號註解、殘留詞性與標點符號，使中文發音清晰自然
-                const cleanZh = text
+                let cleanZh = text
                     .replace(/[\(（][^）\)]*[\)）]/g, '')
                     .replace(/^[a-zA-Z\.\s\/]+/, '')
                     .replace(/[a-zA-Z]+\./g, '')
-                    .replace(/[/;、~]/g, '，')
+                    .replace(/[/;；、~]/g, '，')
+                    .replace(/\s+/g, ' ')
                     .trim();
+
+                if (cleanZh.length > 150) {
+                    cleanZh = cleanZh.slice(0, 150);
+                }
 
                 if (!cleanZh) {
                     if (typeof onEndedCallback === 'function') onEndedCallback();
                     return;
                 }
 
+                const attachCallback = (audioEl) => {
+                    clearAudioCallbacks();
+                    let called = false;
+                    const done = () => {
+                        if (called) return;
+                        called = true;
+                        clearAudioCallbacks();
+                        if (typeof onEndedCallback === 'function') onEndedCallback();
+                    };
+                    const onError = () => {
+                        if (called) return;
+                        called = true;
+                        clearAudioCallbacks();
+                        speakChineseViaSynthesis(cleanZh, onEndedCallback);
+                    };
+                    currentAudioDoneHandler = done;
+                    audioEl.addEventListener('ended', done);
+                    audioEl.addEventListener('error', onError);
+                    // 逾時防呆 (中文朗讀通常 2-4 秒，設定 8 秒避免卡死)
+                    audioFallbackTimerId = setTimeout(onError, 8000);
+                };
+
+                // 優先使用 Google 高音質台灣繁體中文 TTS 串流 (100% 解決手機無聲、免下載語音包)
+                const zhUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=zh-TW&client=tw-ob&q=${encodeURIComponent(cleanZh)}`;
+                wordAudioPlayer.src = zhUrl;
+                wordAudioPlayer.playbackRate = 1.0;
+                attachCallback(wordAudioPlayer);
+                const playPromise = wordAudioPlayer.play();
+                if (playPromise !== undefined) {
+                    playPromise.catch((err) => {
+                        console.warn("Google zh TTS stream error, fallback to Web Speech API:", err);
+                        speakChineseViaSynthesis(cleanZh, onEndedCallback);
+                    });
+                }
+            } catch(e) {
+                console.warn('speakChinese error:', e);
+                speakChineseViaSynthesis(text, onEndedCallback);
+            }
+        }
+
+        function speakChineseViaSynthesis(cleanZh, onEndedCallback) {
+            if (!('speechSynthesis' in window) || !cleanZh) {
+                if (typeof onEndedCallback === 'function') onEndedCallback();
+                return;
+            }
+            try {
+                clearAudioCallbacks();
+                try { window.speechSynthesis.cancel(); } catch(e) {}
                 const utterance = new SpeechSynthesisUtterance(cleanZh);
                 utterance.lang = 'zh-TW';
                 utterance.rate = 1.0;
@@ -2326,16 +2431,21 @@
                 const done = () => {
                     if (called) return;
                     called = true;
+                    window._activeSpeechUtterance = null;
+                    if (audioFallbackTimerId) {
+                        clearTimeout(audioFallbackTimerId);
+                        audioFallbackTimerId = null;
+                    }
                     if (typeof onEndedCallback === 'function') onEndedCallback();
                 };
                 utterance.onend = done;
                 utterance.onerror = done;
-                setTimeout(done, 5000);
+                audioFallbackTimerId = setTimeout(done, 5000);
 
                 window._activeSpeechUtterance = utterance;
                 window.speechSynthesis.speak(utterance);
-            } catch(e) {
-                console.warn('speakChinese error:', e);
+            } catch(err) {
+                console.warn('speakChineseViaSynthesis error:', err);
                 if (typeof onEndedCallback === 'function') onEndedCallback();
             }
         }
@@ -2926,6 +3036,7 @@
         });
 
         document.getElementById('btn-show-answer').addEventListener('click', () => {
+            unlockMobileAudio();
             if (isShowingAnswer) return;
             isShowingAnswer = true;
             flashcard.classList.add('flipped');
@@ -2934,10 +3045,11 @@
             playBacksideAudio();
         });
 
-        document.getElementById('btn-rate-wrong').addEventListener('click', () => { handleAnswer(false); nextCard(); });
-        document.getElementById('btn-rate-right').addEventListener('click', () => { handleAnswer(true); nextCard(); });
+        document.getElementById('btn-rate-wrong').addEventListener('click', () => { unlockMobileAudio(); handleAnswer(false); nextCard(); });
+        document.getElementById('btn-rate-right').addEventListener('click', () => { unlockMobileAudio(); handleAnswer(true); nextCard(); });
         
         document.getElementById('btn-next-card').addEventListener('click', () => {
+            unlockMobileAudio();
             if (autoNextTimerId) {
                 clearTimeout(autoNextTimerId);
                 autoNextTimerId = null;
@@ -2946,6 +3058,7 @@
         });
 
         flashcard.addEventListener('click', (e) => {
+            unlockMobileAudio();
             if (e.target.closest('button') || e.target.closest('.dict-word') || e.target.closest('#example-container')) return;
             if (!isQuizMode && !isShowingAnswer) {
                 document.getElementById('btn-show-answer').click();
@@ -3065,8 +3178,70 @@
             setTimeout(() => playTone(783.99, 'sine', 0.1), 200); setTimeout(() => playTone(1046.50, 'sine', 0.4), 300);
         }
 
-        // 全域真人神經單字與例句音訊播放器
-        const wordAudioPlayer = new Audio();
+        function playOnlineAudioStream(text, onEndedCallback) {
+            const clean = cleanText(text).trim();
+            const cleanLower = clean.toLowerCase();
+
+            const attachCallback = (audioEl, fallbackFn) => {
+                clearAudioCallbacks();
+                let called = false;
+                const done = () => {
+                    if (called) return;
+                    called = true;
+                    clearAudioCallbacks();
+                    if (typeof onEndedCallback === 'function') onEndedCallback();
+                };
+                const onError = () => {
+                    if (called) return;
+                    called = true;
+                    clearAudioCallbacks();
+                    if (typeof fallbackFn === 'function') {
+                        fallbackFn();
+                    } else if (typeof onEndedCallback === 'function') {
+                        onEndedCallback();
+                    }
+                };
+                currentAudioDoneHandler = done;
+                audioEl.addEventListener('ended', done);
+                audioEl.addEventListener('error', onError);
+                audioFallbackTimerId = setTimeout(onError, 10000);
+            };
+
+            // 備援：Google 美式英語 TTS 串流 (手機端 100% 播放保證)
+            const fallbackToGoogleTTS = () => {
+                try {
+                    const googleUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=en&client=tw-ob&q=${encodeURIComponent(clean.slice(0, 200))}`;
+                    wordAudioPlayer.src = googleUrl;
+                    wordAudioPlayer.playbackRate = globalSpeechRate;
+                    attachCallback(wordAudioPlayer, () => {
+                        speakViaSynthesisOrTTS(clean, onEndedCallback);
+                    });
+                    const p = wordAudioPlayer.play();
+                    if (p && typeof p.then === 'function') {
+                        p.catch(() => speakViaSynthesisOrTTS(clean, onEndedCallback));
+                    }
+                } catch(e) {
+                    speakViaSynthesisOrTTS(clean, onEndedCallback);
+                }
+            };
+
+            // 優先：有道真人字典發音 (單字與短語例句皆適用)
+            try {
+                const youdaoUrl = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(cleanLower.slice(0, 200))}&type=2`;
+                wordAudioPlayer.src = youdaoUrl;
+                wordAudioPlayer.playbackRate = globalSpeechRate;
+                attachCallback(wordAudioPlayer, fallbackToGoogleTTS);
+                const p = wordAudioPlayer.play();
+                if (p && typeof p.then === 'function') {
+                    p.catch((err) => {
+                        console.warn("Youdao audio error, trying Google TTS:", err);
+                        fallbackToGoogleTTS();
+                    });
+                }
+            } catch(e) {
+                fallbackToGoogleTTS();
+            }
+        }
 
         // 智慧選取瀏覽器最高等級真人神經聲線 (微軟 Jenny Natural 或 Google US English)
         function getBestNeuralVoice() {
@@ -3099,6 +3274,7 @@
                 return;
             }
             try {
+                unlockMobileAudio();
                 const clean = cleanText(text).trim();
                 const cleanLower = clean.toLowerCase();
 
@@ -3142,7 +3318,7 @@
                     attachCallback(wordAudioPlayer);
                     wordAudioPlayer.play().catch(e => {
                         console.warn("Local example audio play error:", e);
-                        speakViaSynthesisOrTTS(clean, onEndedCallback);
+                        playOnlineAudioStream(clean, onEndedCallback);
                     });
                     return;
                 }
@@ -3154,29 +3330,16 @@
                     attachCallback(wordAudioPlayer);
                     wordAudioPlayer.play().catch(e => {
                         console.warn("Local word audio play error:", e);
-                        if (typeof onEndedCallback === 'function') onEndedCallback();
+                        playOnlineAudioStream(clean, onEndedCallback);
                     });
                     return;
                 }
 
-                // 2. 若為一般單字、複合名詞或片語短語，使用高傳真真人發音串流 (手機端 100% 可播放，徹底解決手機無聲問題)
-                const isPlayablePhrase = /^[a-zA-Z0-9' ,.?!-]+$/.test(clean) && clean.length <= 150;
-                if (isPlayablePhrase) {
-                    wordAudioPlayer.src = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(cleanLower)}&type=2`;
-                    wordAudioPlayer.playbackRate = globalSpeechRate;
-                    attachCallback(wordAudioPlayer);
-                    wordAudioPlayer.play().catch((e) => {
-                        console.warn("Online audio stream error, fallback to speech synthesis:", e);
-                        speakViaSynthesisOrTTS(clean, onEndedCallback);
-                    });
-                    return;
-                }
-
-                // 3. 整句例句：若尚未在本地 MP3 清單中，使用瀏覽器高傳真真人神經聲線 (Jenny/Natural)
-                speakViaSynthesisOrTTS(clean, onEndedCallback);
+                // 2. 線上真人發音串流 (手機端 100% 可播放：Youdao 優先 + Google 美式 TTS 備援)
+                playOnlineAudioStream(clean, onEndedCallback);
             } catch(e) {
                 console.warn('playAudio error:', e);
-                speakViaSynthesisOrTTS(text, onEndedCallback);
+                playOnlineAudioStream(text, onEndedCallback);
             }
         }
 
@@ -3224,17 +3387,25 @@
 
         document.getElementById('btn-audio').addEventListener('click', (e) => {
             e.stopPropagation();
+            unlockMobileAudio();
             if (currentWord && currentWord.en) playAudio(currentWord.en);
         });
 
         document.getElementById('btn-example-audio').addEventListener('click', (e) => {
             e.stopPropagation();
+            unlockMobileAudio();
             if (currentWord && currentWord.example) {
                 const btn = e.currentTarget;
                 btn.classList.add('text-[#0071E3]', 'scale-110');
                 setTimeout(() => btn.classList.remove('text-[#0071E3]', 'scale-110'), 400);
                 playAudio(currentWord.example, null, currentWord.id);
             }
+        });
+
+        document.getElementById('card-word-back')?.addEventListener('click', (e) => {
+            e.stopPropagation();
+            unlockMobileAudio();
+            if (currentWord && currentWord.en) playAudio(currentWord.en);
         });
 
         // ==========================================
@@ -3370,7 +3541,13 @@
         // 點擊中文釋義或小喇叭手動朗讀中文
         const handleSpeakZhClick = (e) => {
             e.stopPropagation();
+            unlockMobileAudio();
             if (!currentWord || !currentWord.zh) return;
+            const btn = document.getElementById('btn-speak-zh');
+            if (btn) {
+                btn.classList.add('text-[#0071E3]', 'scale-110');
+                setTimeout(() => btn.classList.remove('text-[#0071E3]', 'scale-110'), 400);
+            }
             const parsed = splitPosAndZh(currentWord.zh, currentWord.pos);
             speakChinese(parsed.pureZh || currentWord.zh);
         };

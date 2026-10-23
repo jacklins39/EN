@@ -3215,7 +3215,25 @@
             });
         }
 
+        let wasAutoFlashcardPausedByModal = false;
+
         async function lookupWord(word) {
+            // 立即凍結背景音訊與計時器，防止自動輪播或自動翻頁跳到下一個單字
+            if (autoFlashcardTimerId) {
+                clearTimeout(autoFlashcardTimerId);
+                autoFlashcardTimerId = null;
+                wasAutoFlashcardPausedByModal = true;
+            }
+            if (autoNextTimerId) {
+                clearTimeout(autoNextTimerId);
+                autoNextTimerId = null;
+            }
+            if (backsideAudioTimerId) {
+                clearTimeout(backsideAudioTimerId);
+                backsideAudioTimerId = null;
+            }
+            stopAllAudio();
+
             const modal = document.getElementById('dict-modal');
             const content = document.getElementById('dict-content');
             modal.classList.remove('hidden');
@@ -3325,11 +3343,27 @@
             }
         }
 
-        document.getElementById('btn-close-dict').addEventListener('click', () => {
-            document.getElementById('dict-modal').classList.add('hidden');
-        });
+        function closeDictModal() {
+            const modal = document.getElementById('dict-modal');
+            if (!modal || modal.classList.contains('hidden')) return;
+            modal.classList.add('hidden');
+            stopAllAudio();
+
+            // 若原本是在自動輪播模式下點開單字，關閉後給予充裕反應時間（1.5 秒）再接續跳下一張
+            if (isAutoFlashcardMode && wasAutoFlashcardPausedByModal) {
+                wasAutoFlashcardPausedByModal = false;
+                const pauseAfterExample = Math.max(1500, autoFlashcardSpeed * 0.25);
+                autoFlashcardTimerId = setTimeout(() => {
+                    if (!isAutoFlashcardMode) return;
+                    cardsCompleted++;
+                    nextCard();
+                }, pauseAfterExample);
+            }
+        }
+
+        document.getElementById('btn-close-dict').addEventListener('click', closeDictModal);
         document.getElementById('dict-modal').addEventListener('click', (e) => {
-            if (e.target === document.getElementById('dict-modal')) e.target.classList.add('hidden');
+            if (e.target === document.getElementById('dict-modal')) closeDictModal();
         });
 
         // 繪製熟悉度分佈圖 (Chart.js)
@@ -4883,7 +4917,15 @@
                 }
             }
 
-            // 3. 直接發音 (優先朗讀還原後的原形，若無則朗讀當前單字)
+            // 3. 若聽力特訓短文正在播放，立即暫停背景播放，避免背景人聲與單字發音衝突且防止句子繼續跑
+            if (typeof isListeningPlaying !== 'undefined' && isListeningPlaying && typeof listeningAudioPlayer !== 'undefined') {
+                listeningAudioPlayer.pause();
+                isListeningPlaying = false;
+                if (typeof updateListeningPlayBtn === 'function') updateListeningPlayBtn();
+                if (typeof stopWordTrackingLoop === 'function') stopWordTrackingLoop();
+            }
+
+            // 4. 直接發音 (優先朗讀還原後的原形，若無則朗讀當前單字)
             const speakWord = (w && w.en) ? w.en : wordText;
             if (typeof playAudio === 'function') {
                 playAudio(speakWord);

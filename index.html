@@ -133,13 +133,28 @@
             transition: outline 0.05s ease, background-color 0.05s ease;
         }
 
-        /* 劃線標註單字樣式 (翡翠綠螢光底線，如筆記重點) */
+        /* 內定核心單字樣式 (官方核心重點：Apple 藍色底線與柔和底色) */
+        .listen-word.is-core-word {
+            border-bottom: 2.5px solid #0071E3 !important;
+            background-color: rgba(0, 113, 227, 0.10) !important;
+            color: #0071E3 !important;
+            font-weight: 600 !important;
+            border-radius: 3px;
+        }
+        .listen-word.is-core-word:hover {
+            background-color: rgba(0, 113, 227, 0.20) !important;
+        }
+
+        /* 自行劃線標註單字樣式 (使用者個人重點：翡翠綠螢光底線) */
         .listen-word.is-annotated {
             border-bottom: 2.5px solid #10B981 !important;
             background-color: rgba(16, 185, 129, 0.15) !important;
             color: #065F46 !important;
             font-weight: 600 !important;
             border-radius: 3px;
+        }
+        .listen-word.is-annotated:hover {
+            background-color: rgba(16, 185, 129, 0.25) !important;
         }
 
         /* 雙人互動對話專屬風格 */
@@ -883,7 +898,22 @@
                     <!-- 分頁內容區 -->
                     <div class="flex-1 relative overflow-hidden flex flex-col pb-2">
                         <!-- 聽力內容 -->
-                        <div id="subtab-content-listening-text" class="subtab-content flex-1 overflow-y-auto w-full h-full bg-[#F5F5F7] p-4 rounded-2xl shadow-sm">
+                        <div id="subtab-content-listening-text" class="subtab-content flex-1 overflow-y-auto w-full h-full bg-[#F5F5F7] p-4 rounded-2xl shadow-sm space-y-2.5">
+                            <!-- 單字標註圖例 -->
+                            <div class="flex items-center justify-between px-3 py-1.5 bg-white/80 rounded-xl border border-gray-200/60 text-[11px] text-[#86868B] shadow-2xs">
+                                <div class="flex items-center gap-3">
+                                    <span class="flex items-center gap-1.5 font-medium">
+                                        <span class="w-2 h-2 rounded-full bg-[#0071E3]"></span>
+                                        <span class="text-[#0071E3] font-semibold">藍色</span> 內定核心單字
+                                    </span>
+                                    <span class="text-gray-300">|</span>
+                                    <span class="flex items-center gap-1.5 font-medium">
+                                        <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                                        <span class="text-emerald-700 font-semibold">綠色</span> 我的劃線單字
+                                    </span>
+                                </div>
+                                <span class="text-[10px] text-gray-400 hidden sm:inline">點擊單字可發音、看翻譯或劃線</span>
+                            </div>
                             <div id="listening-text-container" class="relative">
                                 <!-- 動態插入段落 -->
                             </div>
@@ -4343,10 +4373,14 @@
             document.querySelectorAll(`.listen-word[data-word="${lower}"]`).forEach(el => {
                 if (!wasMarked) {
                     el.classList.add('is-annotated');
-                    el.classList.remove('border-transparent');
+                    el.classList.remove('is-core-word', 'border-transparent');
                 } else {
                     el.classList.remove('is-annotated');
-                    el.classList.add('border-transparent');
+                    if (el.dataset.isCore === 'true' || isArticleCoreWord(el.dataset.word)) {
+                        el.classList.add('is-core-word');
+                    } else {
+                        el.classList.add('border-transparent');
+                    }
                 }
             });
 
@@ -4524,6 +4558,25 @@
             renderListeningWordsTab();
         }
 
+        // 判斷單字是否為當前文章之內定核心單字 (支援原型與常見屈折變化雙向比對)
+        function isArticleCoreWord(wordLower) {
+            if (!Array.isArray(articleCoreWords) || articleCoreWords.length === 0) return false;
+            const wStr = String(wordLower || '').toLowerCase().trim();
+            if (!wStr) return false;
+
+            for (const item of articleCoreWords) {
+                const base = (item.en || '').toLowerCase().trim();
+                if (!base) continue;
+                if (base === wStr) return true;
+                // 常見複數/過去式/進行式屈折變化雙向比對
+                if (wStr === base + 's' || wStr === base + 'es' || wStr === base + 'ed' || wStr === base + 'ing' || wStr === base + 'd') return true;
+                if (base === wStr + 's' || base === wStr + 'es' || base === wStr + 'ed' || base === wStr + 'ing' || base === wStr + 'd') return true;
+                if (wStr.endsWith('ies') && base === wStr.slice(0, -3) + 'y') return true;
+                if (base.endsWith('ies') && wStr === base.slice(0, -3) + 'y') return true;
+            }
+            return false;
+        }
+
         document.getElementById('btn-generate-listening').addEventListener('click', () => {
             if (!currentSelectedListeningArticle) {
                 return alert("請先從上方選單挑選想特訓的情境短文！");
@@ -4578,13 +4631,13 @@
             // 載入該教材之使用者標註單字
             loadArticleAnnotatedWords(article);
 
-            // 渲染句子列表 (支援一般篇章與雙人角色對話)
-            renderListeningSentences();
-
-            // 萃取單字、名師文法與測驗
+            // 萃取核心單字、重點文法與測驗
             extractListeningWords(article);
             generateListeningGrammar(article.text || '');
             generateListeningQuiz(listeningSentences.map(s => s.en));
+
+            // 渲染句子列表 (支援一般篇章與雙人角色對話，核心單字自動標註為藍色)
+            renderListeningSentences();
         });
 
         // 角色對話演練狀態與功能
@@ -4647,10 +4700,17 @@
                 let lastIndex = 0;
                 while ((match = regex.exec(s)) !== null) {
                     html += esc(s.substring(lastIndex, match.index));
-                    const wordStr = match[0].toLowerCase().replace(/'/g, "\\'");
+                    const rawWord = match[0];
+                    const wordStr = rawWord.toLowerCase().replace(/'/g, "\\'");
                     const isAnnotated = currentArticleAnnotatedWords.has(wordStr);
-                    const annotatedClass = isAnnotated ? 'is-annotated' : 'border-transparent';
-                    html += `<span class="listen-word cursor-pointer transition-colors duration-200 border-b-2 ${annotatedClass} hover:border-[#0071E3] rounded px-0.5 mx-px" data-word="${wordStr}" onclick="event.stopPropagation(); showWordTranslation(event, '${wordStr}')">${esc(match[0])}</span>`;
+                    const isCore = isArticleCoreWord(wordStr);
+                    let wordClass = 'border-transparent';
+                    if (isAnnotated) {
+                        wordClass = 'is-annotated';
+                    } else if (isCore) {
+                        wordClass = 'is-core-word';
+                    }
+                    html += `<span class="listen-word cursor-pointer transition-colors duration-200 border-b-2 ${wordClass} hover:border-[#0071E3] rounded px-0.5 mx-px" data-word="${wordStr}" data-is-core="${isCore ? 'true' : 'false'}" onclick="event.stopPropagation(); showWordTranslation(event, '${wordStr}')">${esc(rawWord)}</span>`;
                     lastIndex = regex.lastIndex;
                 }
                 html += esc(s.substring(lastIndex));
@@ -4841,6 +4901,7 @@
             const cleanWordText = wordText.toLowerCase();
             const safeWord = esc(cleanWordText).replace(/'/g, "\\'");
             const isMarked = currentArticleAnnotatedWords.has(cleanWordText);
+            const isCore = isArticleCoreWord(cleanWordText);
             const annotateBtnHtml = `
                 <button id="btn-annotate-${cleanWordText}" onclick="event.stopPropagation(); toggleAnnotateWord('${safeWord}', event)" 
                         class="pointer-events-auto px-2 py-0.5 rounded text-[11px] font-medium transition-colors flex items-center gap-1 shrink-0 ${
@@ -4854,8 +4915,10 @@
                 const isAlreadyCustom = (typeof customWordsDB !== 'undefined' && customWordsDB.some(cw => cw.en.toLowerCase() === cleanWordText));
                 tooltip.innerHTML = `
                     <div class="flex items-center justify-between gap-3">
-                        <div class="font-semibold text-teal-300 text-sm">
-                            ${esc(w.en)} ${w.kk ? `<span class="font-normal text-gray-300 text-xs ml-1">${esc(w.kk)}</span>` : ''}
+                        <div class="flex items-center gap-1.5 flex-wrap">
+                            <span class="font-semibold text-teal-300 text-sm">${esc(w.en)}</span>
+                            ${w.kk ? `<span class="font-normal text-gray-300 text-xs">${esc(w.kk)}</span>` : ''}
+                            ${isCore ? `<span class="text-[10px] bg-blue-500/25 text-blue-300 border border-blue-400/30 px-1.5 py-0.2 rounded font-medium">核心單字</span>` : ''}
                         </div>
                         <button onclick="event.stopPropagation(); playAudio('${safeSpeak}')" class="pointer-events-auto text-teal-300 hover:text-white p-1 rounded-full hover:bg-gray-800 transition shrink-0" title="重播單字發音">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
@@ -4871,7 +4934,10 @@
                 const isAlreadyCustom = (typeof customWordsDB !== 'undefined' && customWordsDB.some(cw => cw.en.toLowerCase() === cleanWordText));
                 tooltip.innerHTML = `
                     <div class="flex items-center justify-between gap-3">
-                        <div class="font-semibold text-gray-200 text-sm">${esc(wordText)}</div>
+                        <div class="flex items-center gap-1.5 flex-wrap">
+                            <span class="font-semibold text-gray-200 text-sm">${esc(wordText)}</span>
+                            ${isCore ? `<span class="text-[10px] bg-blue-500/25 text-blue-300 border border-blue-400/30 px-1.5 py-0.2 rounded font-medium">核心單字</span>` : ''}
+                        </div>
                         <button onclick="event.stopPropagation(); playAudio('${safeWord}')" class="pointer-events-auto text-teal-300 hover:text-white p-1 rounded-full hover:bg-gray-800 transition shrink-0" title="重播單字發音">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
                         </button>

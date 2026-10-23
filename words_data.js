@@ -3603,7 +3603,7 @@ const externalVocabularyDB = [
     "id": 401,
     "en": "cooky",
     "kk": "[ˋkʊki]",
-    "zh": "n. cookie",
+    "zh": "n. 餅乾、小點心",
     "unit": 1,
     "example": "All Children:Who's stole cookies from the cooky jar?",
     "exampleZh": "所有孩子：誰從餅乾罐裡偷了餅乾？"
@@ -5835,7 +5835,7 @@ const externalVocabularyDB = [
     "id": 649,
     "en": "mamma",
     "kk": "[ˋmɑmə]",
-    "zh": "n. mama",
+    "zh": "n. 媽媽、母親",
     "unit": 1,
     "example": "Then I'll stay with Susy Harper, mamma.",
     "exampleZh": "然後我會和​​蘇西哈珀住在一起，媽媽。"
@@ -10461,7 +10461,7 @@ const externalVocabularyDB = [
     "id": 1163,
     "en": "BBQ",
     "kk": "[ˋbibi͵kju]",
-    "zh": "v. 烤肉 barbecue",
+    "zh": "n. 戶外烤肉、燒烤",
     "unit": 2,
     "example": "I love BBQ season.",
     "exampleZh": "我喜歡燒烤季節。"
@@ -21828,7 +21828,7 @@ const externalVocabularyDB = [
     "id": 2426,
     "en": "advisor",
     "kk": "[ædˋvaɪzɚ]",
-    "zh": "n. adviser",
+    "zh": "n. 顧問、指導老師",
     "unit": 3,
     "example": "He was extremely protective of his role as advisor.",
     "exampleZh": "他極力保護自己的顧問角色。"
@@ -25095,7 +25095,7 @@ const externalVocabularyDB = [
     "id": 2789,
     "en": "km",
     "kk": "[kəˋlɑmətɚ]",
-    "zh": "n. kilometer",
+    "zh": "n. 公里、千米",
     "unit": 3,
     "example": "5 million km above the Earth.",
     "exampleZh": "距離地球表面5百萬公里。"
@@ -48090,7 +48090,7 @@ const externalVocabularyDB = [
     "id": 5344,
     "en": "vigor",
     "kk": "[ˋvɪɡɚ]",
-    "zh": "n. vigor",
+    "zh": "n. 活力、體力、精力",
     "unit": 6,
     "example": "I am without vigor.",
     "exampleZh": "我沒有力氣。"
@@ -55092,7 +55092,7 @@ const externalVocabularyDB = [
     "id": 6122,
     "en": "limo",
     "kk": "[ˋlɪmo]",
-    "zh": "n. limousine",
+    "zh": "n. 豪華禮車、加長型轎車",
     "unit": 7,
     "example": "He has a limo.",
     "exampleZh": "他有一輛豪華轎車。"

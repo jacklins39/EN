@@ -269,7 +269,7 @@
 
             /* 3. 各頁面加寬並置中 */
             main > div[id^="view-"] { max-width: 44rem; margin-left: auto; margin-right: auto; }
-            #view-study-lobby, #view-study { max-width: 60rem !important; }
+            #view-study-lobby, #view-study, #view-listening { max-width: 68rem !important; }
 
             /* 4. 學習中心：標題橫跨、4 張功能卡片 2x2 排列 */
             #view-study-lobby:not(.hidden) {
@@ -756,15 +756,15 @@
 
                             <!-- 已選短文時的詳細預覽卡 (桌面右側常駐，無需滾動) -->
                             <div id="listening-preset-card" class="hidden p-5 rounded-3xl bg-white border border-blue-200/90 shadow-sm space-y-3.5 transition-all">
-                                <div class="flex items-start justify-between gap-3">
-                                    <div class="min-w-0 flex-1">
-                                        <span class="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-[#0071E3] bg-blue-50 px-2.5 py-0.5 rounded-lg mb-1.5 border border-blue-100">
+                                <div>
+                                    <div class="flex items-center justify-between gap-2 flex-wrap mb-2">
+                                        <span class="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-[#0071E3] bg-blue-50 px-2.5 py-0.5 rounded-lg border border-blue-100 whitespace-nowrap">
                                             <span class="w-1.5 h-1.5 rounded-full bg-[#0071E3] animate-pulse"></span>
                                             <span>已選教材</span>
                                         </span>
-                                        <h4 id="listening-card-title" class="font-bold text-[#1D1D1F] text-base leading-snug truncate"></h4>
+                                        <span id="listening-card-voice" class="text-xs px-2.5 py-1 rounded-full bg-blue-50 text-[#0071E3] font-semibold border border-blue-100 inline-flex items-center gap-1.5 whitespace-nowrap"></span>
                                     </div>
-                                    <span id="listening-card-voice" class="text-xs px-2.5 py-1 rounded-full bg-blue-50 text-[#0071E3] font-semibold border border-blue-100 shrink-0 inline-flex items-center gap-1.5"></span>
+                                    <h4 id="listening-card-title" class="font-bold text-[#1D1D1F] text-base md:text-lg leading-snug break-words"></h4>
                                 </div>
                                 <div class="bg-[#F5F5F7] p-3 rounded-2xl border border-gray-100">
                                     <p class="text-[11px] font-bold text-gray-400 uppercase tracking-wider mb-1 flex items-center gap-1">

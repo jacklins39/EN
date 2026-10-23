@@ -8789,8 +8789,8 @@ const jhWordsDB = [
     "kk": "",
     "zh": "v. 看",
     "unit": 17,
-    "example": "Look, that's not fair.",
-    "exampleZh": "聽著，這不公平。"
+    "example": "Look at that beautiful rainbow in the sky.",
+    "exampleZh": "看天上那道美麗的彩虹。"
   },
   {
     "id": 30978,

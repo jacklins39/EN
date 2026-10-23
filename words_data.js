@@ -5747,8 +5747,8 @@ const externalVocabularyDB = [
     "kk": "/ˈɫʊk/",
     "zh": "v./n. 看;瞥;臉色;眼神;表情",
     "unit": 1,
-    "example": "Look, that's not fair.",
-    "exampleZh": "聽著，這不公平。"
+    "example": "Look at that beautiful rainbow in the sky.",
+    "exampleZh": "看天上那道美麗的彩虹。"
   },
   {
     "id": 640,

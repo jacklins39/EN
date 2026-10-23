@@ -264,7 +264,7 @@ const jhWordsDB = [
     "id": 30030,
     "en": "ago",
     "kk": "[əˋɡo]",
-    "zh": "adv. ...之前",
+    "zh": "adv. ……之前",
     "unit": 17,
     "example": "She was hired three years ago.",
     "exampleZh": "她三年前被錄用。"
@@ -462,7 +462,7 @@ const jhWordsDB = [
     "id": 30052,
     "en": "among",
     "kk": "[əˋmʌŋ]",
-    "zh": "prep. 在...之間",
+    "zh": "prep. 在……之間",
     "unit": 17,
     "example": "Bees buzzed lazily among the flowers.",
     "exampleZh": "蜜蜂在花叢中慵懶地嗡嗡作響。"
@@ -687,7 +687,7 @@ const jhWordsDB = [
     "id": 30077,
     "en": "around",
     "kk": "[ɚˋaʊnd]",
-    "zh": "prep. 在...周圍；adv. 大約",
+    "zh": "prep. 在……周圍；adv. 大約",
     "unit": 17,
     "example": "He arrived around five o'clock.",
     "exampleZh": "他大約五點左右到達。"
@@ -732,7 +732,7 @@ const jhWordsDB = [
     "id": 30082,
     "en": "as",
     "kk": "[æz]",
-    "zh": "conj. 作為；prep. 當...時",
+    "zh": "conj. 作為；prep. 當……時",
     "unit": 17,
     "example": "You're as tall as your father.",
     "exampleZh": "你和你父親一樣高。"
@@ -1227,7 +1227,7 @@ const jhWordsDB = [
     "id": 30137,
     "en": "before",
     "kk": "[bɪˋfɔr]",
-    "zh": "prep. 在...之前；adv. 以前",
+    "zh": "prep. 在……之前；adv. 以前",
     "unit": 17,
     "example": "We should arrive before dark.",
     "exampleZh": "我們應該在天黑之前到達。"
@@ -1272,7 +1272,7 @@ const jhWordsDB = [
     "id": 30142,
     "en": "behind",
     "kk": "[bɪˋhaɪnd]",
-    "zh": "prep. 在...後面；adv. 落後",
+    "zh": "prep. 在……後面；adv. 落後",
     "unit": 17,
     "example": "She heard footsteps behind her.",
     "exampleZh": "她聽到身後有腳步聲。"
@@ -1308,7 +1308,7 @@ const jhWordsDB = [
     "id": 30146,
     "en": "below",
     "kk": "[bɪˋlo]",
-    "zh": "prep. 在...下面；adv. 以下",
+    "zh": "prep. 在……下面；adv. 以下",
     "unit": 17,
     "example": "It's 15 degrees below freezing.",
     "exampleZh": "氣溫低於冰點 15 度。"
@@ -1344,7 +1344,7 @@ const jhWordsDB = [
     "id": 30150,
     "en": "between",
     "kk": "[bɪtˋwin]",
-    "zh": "prep. 在...之間",
+    "zh": "prep. 在……之間",
     "unit": 17,
     "example": "He toggled between the two windows.",
     "exampleZh": "他在兩個視窗之間切換。"
@@ -1353,7 +1353,7 @@ const jhWordsDB = [
     "id": 30151,
     "en": "beyond",
     "kk": "[bɪˋɑnd]",
-    "zh": "prep. 超過；adv. 在...之外",
+    "zh": "prep. 超過；adv. 在……之外",
     "unit": 17,
     "example": "Her honesty is beyond question.",
     "exampleZh": "她的誠實是毋庸置疑的。"
@@ -1380,7 +1380,7 @@ const jhWordsDB = [
     "id": 30154,
     "en": "bill",
     "kk": "[bɪl]",
-    "zh": "n. 帳單;鈔票",
+    "zh": "n. 帳單；鈔票",
     "unit": 17,
     "example": "Your bill includes line rental.",
     "exampleZh": "您的帳單包括線路租金。"
@@ -1929,7 +1929,7 @@ const jhWordsDB = [
     "id": 30215,
     "en": "bundle",
     "kk": "[ˋbʌndəl]",
-    "zh": "n. (一)包,束",
+    "zh": "n. (一)包、束",
     "unit": 17,
     "example": "That car must have cost a bundle.",
     "exampleZh": "那輛車肯定花了一大筆錢。"
@@ -2271,7 +2271,7 @@ const jhWordsDB = [
     "id": 30253,
     "en": "carry",
     "kk": "[ˋkæri]",
-    "zh": "v. 拿,運送",
+    "zh": "v. 拿、運送",
     "unit": 17,
     "example": "Only one carry-on is allowed.",
     "exampleZh": "只允許攜帶一件隨身行李。"
@@ -2532,7 +2532,7 @@ const jhWordsDB = [
     "id": 30282,
     "en": "cheat",
     "kk": "[tʃit]",
-    "zh": "v. 騙子；n. 欺詐,欺騙,作弊",
+    "zh": "v. 騙子；n. 欺詐、欺騙,作弊",
     "unit": 17,
     "example": "He was a liar and a cheat.",
     "exampleZh": "他是一個說謊的人，一個騙子。"
@@ -3792,7 +3792,7 @@ const jhWordsDB = [
     "id": 30422,
     "en": "decrease",
     "kk": "[dɪˋkris]",
-    "zh": "v. 減少,減小；n. 減少額,減小量",
+    "zh": "v. 減少、減小；n. 減少額、減小量",
     "unit": 17,
     "example": "People should decrease the amount of fat they eat.",
     "exampleZh": "人們應減少脂肪的攝入量。"
@@ -3801,7 +3801,7 @@ const jhWordsDB = [
     "id": 30423,
     "en": "deep",
     "kk": "[dip]",
-    "zh": "adj. 深深地；adv. 晚,遲",
+    "zh": "adj. 深深地；adv. 晚、遲",
     "unit": 17,
     "example": "He sank into deep melancholia.",
     "exampleZh": "他陷入了深深的憂鬱之中。"
@@ -4044,7 +4044,7 @@ const jhWordsDB = [
     "id": 30450,
     "en": "dig",
     "kk": "[dɪɡ]",
-    "zh": "v. 刺,戳,碰；n. 挖苦",
+    "zh": "v. 刺、戳,碰；n. 挖苦",
     "unit": 17,
     "example": "I'll dig some potatoes for lunch.",
     "exampleZh": "我會挖一些馬鈴薯當午餐。"
@@ -4197,7 +4197,7 @@ const jhWordsDB = [
     "id": 30467,
     "en": "divide",
     "kk": "[dɪˋvaɪd]",
-    "zh": "v. 分歧,不和；n. 分水嶺",
+    "zh": "v. 分歧、不和；n. 分水嶺",
     "unit": 17,
     "example": "The cells began to divide rapidly.",
     "exampleZh": "細胞迅速分裂。"
@@ -4503,7 +4503,7 @@ const jhWordsDB = [
     "id": 30501,
     "en": "dumb",
     "kk": "[dʌm]",
-    "zh": "adj. 笨的;啞的",
+    "zh": "adj. 笨的；啞的",
     "unit": 17,
     "example": "That was a pretty dumb thing to do.",
     "exampleZh": "這是一件非常愚蠢的事。"
@@ -4521,7 +4521,7 @@ const jhWordsDB = [
     "id": 30503,
     "en": "during",
     "kk": "[ˋdʊrɪŋ]",
-    "zh": "prep. 在...期間",
+    "zh": "prep. 在……期間",
     "unit": 17,
     "example": "Eggs were rationed during the war.",
     "exampleZh": "戰爭期間雞蛋實施配給制。"
@@ -5079,7 +5079,7 @@ const jhWordsDB = [
     "id": 30565,
     "en": "except",
     "kk": "[ɪkˋsɛpt]",
-    "zh": "prep. 除了；conj. 除...之外",
+    "zh": "prep. 除了；conj. 除……之外",
     "unit": 17,
     "example": "They all came except Matt.",
     "exampleZh": "除了馬特之外，他們都來了。"
@@ -5088,7 +5088,7 @@ const jhWordsDB = [
     "id": 30566,
     "en": "excite",
     "kk": "[ɪkˋsaɪt]",
-    "zh": "v. 使...興奮",
+    "zh": "v. 使……興奮",
     "unit": 17,
     "example": "Daniel's early exposure to motor racing did not excite his interest.",
     "exampleZh": "丹尼爾早期接觸賽車運動並沒有激發他的興趣。"
@@ -5954,8 +5954,8 @@ const jhWordsDB = [
     "kk": "[ˋfɔrwɚd(z)]",
     "zh": "adv. 向前",
     "unit": 17,
-    "example": "Can you use the word forward(s) in a sentence?",
-    "exampleZh": "你能在句子中使用「向前」這個詞嗎？"
+    "example": "He took two bold steps forward and introduced himself to the teacher.",
+    "exampleZh": "他大膽地向前邁出兩步，向老師自我介紹。"
   },
   {
     "id": 30663,
@@ -6069,7 +6069,7 @@ const jhWordsDB = [
     "id": 30675,
     "en": "from",
     "kk": "[frʌm]",
-    "zh": "prep. 從...",
+    "zh": "prep. 從……",
     "unit": 17,
     "example": "Cheap flights are available from budget travel agents from $240.",
     "exampleZh": "廉價旅行社提供廉價航班，起價為 240 美元。"
@@ -7257,7 +7257,7 @@ const jhWordsDB = [
     "id": 30807,
     "en": "host",
     "kk": "[host]",
-    "zh": "n. 主辦,主持；v. 以主人身分招待",
+    "zh": "n. 主辦、主持；v. 以主人身分招待",
     "unit": 17,
     "example": "Shall I take my host family a gift?",
     "exampleZh": "我要不要給主人家帶件禮物呢？"
@@ -7788,7 +7788,7 @@ const jhWordsDB = [
     "id": 30866,
     "en": "into",
     "kk": "[ˋɪntu]",
-    "zh": "prep. 進入...之內",
+    "zh": "prep. 進入……之內",
     "unit": 17,
     "example": "Caterpillars change into butterflies.",
     "exampleZh": "毛毛蟲變蝴蝶。"
@@ -8544,7 +8544,7 @@ const jhWordsDB = [
     "id": 30950,
     "en": "lick",
     "kk": "[lɪk]",
-    "zh": "v. 舔,舐；n. 少量",
+    "zh": "v. 舔、舐；n. 少量",
     "unit": 17,
     "example": "Well, you didn't get a lick amiss, I reckon.",
     "exampleZh": "嗯，我覺得你這一下捱得一點也不冤。"
@@ -8708,8 +8708,8 @@ const jhWordsDB = [
     "kk": "[ˋlitɚ]",
     "zh": "n. 升(容量單位)",
     "unit": 17,
-    "example": "Can you use the word liter in a sentence?",
-    "exampleZh": "你能在句子中使用「升(容量單位)」這個詞嗎？"
+    "example": "This plastic container can hold up to one liter of orange juice.",
+    "exampleZh": "這個塑膠容器最多可以裝下一公升的柳橙汁。"
   },
   {
     "id": 30969,
@@ -9525,7 +9525,7 @@ const jhWordsDB = [
     "id": 31059,
     "en": "mix",
     "kk": "[mɪks]",
-    "zh": "v. 混和,攪和；n. 結合",
+    "zh": "v. 混和、攪和；n. 結合",
     "unit": 18,
     "example": "You can't mix business with pleasure.",
     "exampleZh": "你不能把工作和娛樂混在一起。"
@@ -9984,7 +9984,7 @@ const jhWordsDB = [
     "id": 31110,
     "en": "nephew",
     "kk": "[ˋnɛfju]",
-    "zh": "n. 姪子,外甥",
+    "zh": "n. 姪子、外甥",
     "unit": 18,
     "example": "He entrusted the task to his nephew.",
     "exampleZh": "他把這任務託付給了他的侄兒。"
@@ -10065,7 +10065,7 @@ const jhWordsDB = [
     "id": 31119,
     "en": "niece",
     "kk": "[nis]",
-    "zh": "n. 姪女,甥女",
+    "zh": "n. 姪女、甥女",
     "unit": 18,
     "example": "He looked affectionately at his niece.",
     "exampleZh": "他慈愛地看著他的侄女。"
@@ -10326,7 +10326,7 @@ const jhWordsDB = [
     "id": 31148,
     "en": "o'clock",
     "kk": "[əkˋlɑk]",
-    "zh": "adv. ...點鐘",
+    "zh": "adv. ……點鐘",
     "unit": 18,
     "example": "The clock said three o'clock.",
     "exampleZh": "時鐘指向三點鐘。"
@@ -10344,7 +10344,7 @@ const jhWordsDB = [
     "id": 31150,
     "en": "of",
     "kk": "[ʌv]",
-    "zh": "prep. ...的",
+    "zh": "prep. ……的",
     "unit": 18,
     "example": "One of the penalties of fame is loss of privacy.",
     "exampleZh": "名譽的懲罰之一就是失去隱私。"
@@ -10380,7 +10380,7 @@ const jhWordsDB = [
     "id": 31154,
     "en": "officer",
     "kk": "[ˋɔfəsɚ]",
-    "zh": "n. 警官,官員",
+    "zh": "n. 警官、官員",
     "unit": 18,
     "example": "The officer radioed for advice.",
     "exampleZh": "該官員透過無線電尋求建議。"
@@ -10434,7 +10434,7 @@ const jhWordsDB = [
     "id": 31160,
     "en": "on",
     "kk": "[ɑn]",
-    "zh": "prep. 在...上；adv. 關於",
+    "zh": "prep. 在……上；adv. 關於",
     "unit": 18,
     "example": "She went on and on about her trip.",
     "exampleZh": "她滔滔不絕地講述她的旅行。"
@@ -10596,7 +10596,7 @@ const jhWordsDB = [
     "id": 31178,
     "en": "over",
     "kk": "[ˋovɚ]",
-    "zh": "prep. 在...上方；adv. 結束",
+    "zh": "prep. 在……上方；adv. 結束",
     "unit": 18,
     "example": "He plays the same songs over and over.",
     "exampleZh": "他一遍又一遍地播放相同的歌曲。"
@@ -10776,7 +10776,7 @@ const jhWordsDB = [
     "id": 31198,
     "en": "pardon",
     "kk": "[ˋpɑrdən]",
-    "zh": "v. 原諒,饒恕,寬恕；n. 赦免",
+    "zh": "v. 原諒、饒恕,寬恕；n. 赦免",
     "unit": 18,
     "example": "I must crave your pardon.",
     "exampleZh": "我必須懇求您原諒。"
@@ -10911,7 +10911,7 @@ const jhWordsDB = [
     "id": 31213,
     "en": "pause",
     "kk": "[pɔz]",
-    "zh": "v. 暫停,間歇；n. 躊躇,猶豫",
+    "zh": "v. 暫停、間歇；n. 躊躇、猶豫",
     "unit": 18,
     "example": "There was a longish pause.",
     "exampleZh": "有一個略長的停頓。"
@@ -11640,7 +11640,7 @@ const jhWordsDB = [
     "id": 31294,
     "en": "president",
     "kk": "[ˋprɛzə͵dɛnt]",
-    "zh": "n. 總統;校長",
+    "zh": "n. 總統；校長",
     "unit": 18,
     "example": "Who succeeded Kennedy as President?",
     "exampleZh": "接替肯尼迪任總統的是誰？"
@@ -12666,7 +12666,7 @@ const jhWordsDB = [
     "id": 31408,
     "en": "roof",
     "kk": "[ruf]",
-    "zh": "v. 給......蓋上屋頂、覆遮；n. 屋頂、車頂",
+    "zh": "v. 給…………蓋上屋頂、覆遮；n. 屋頂、車頂",
     "unit": 18,
     "example": "The roof was declared unsafe.",
     "exampleZh": "屋頂被宣布不安全。"
@@ -12783,7 +12783,7 @@ const jhWordsDB = [
     "id": 31421,
     "en": "ruler",
     "kk": "[ˋrulɚ]",
-    "zh": "n. 統治者;尺",
+    "zh": "n. 統治者；尺",
     "unit": 18,
     "example": "The ruler cracked and splintered into pieces.",
     "exampleZh": "尺子裂了，碎成了片。"
@@ -13143,7 +13143,7 @@ const jhWordsDB = [
     "id": 31461,
     "en": "seed",
     "kk": "[sid]",
-    "zh": "v. 給去籽、給......脫籽；n. 種子、籽",
+    "zh": "v. 給去籽、給…………脫籽；n. 種子、籽",
     "unit": 18,
     "example": "The top seed won comfortably.",
     "exampleZh": "頭號種子輕鬆獲勝。"
@@ -13440,7 +13440,7 @@ const jhWordsDB = [
     "id": 31494,
     "en": "shell",
     "kk": "[ʃɛl]",
-    "zh": "v. 殼,果殼；n. 貝殼",
+    "zh": "v. 殼、果殼；n. 貝殼",
     "unit": 18,
     "example": "The animal retracted into its shell.",
     "exampleZh": "這隻動物縮回到自己的殼裡。"
@@ -13953,7 +13953,7 @@ const jhWordsDB = [
     "id": 31551,
     "en": "slim",
     "kk": "[slɪm]",
-    "zh": "adj. 減肥；v. 減少,縮減",
+    "zh": "adj. 減肥；v. 減少、縮減",
     "unit": 18,
     "example": "She goes for tall slim men.",
     "exampleZh": "她喜歡高個子苗條的男人。"
@@ -13998,7 +13998,7 @@ const jhWordsDB = [
     "id": 31556,
     "en": "smell",
     "kk": "[smɛl]",
-    "zh": "v. 有……氣味、發出......的氣味；n. 氣味、臭味",
+    "zh": "v. 有……氣味、發出…………的氣味；n. 氣味、臭味",
     "unit": 18,
     "example": "Where's that smell coming from?",
     "exampleZh": "那味道是從哪裡來的？"
@@ -15060,7 +15060,7 @@ const jhWordsDB = [
     "id": 31674,
     "en": "sweet",
     "kk": "[swit]",
-    "zh": "adj. (餐後的)甜點；n. (用作稱呼語)親愛的,寶貝",
+    "zh": "adj. (餐後的)甜點；n. (用作稱呼語)親愛的、寶貝",
     "unit": 18,
     "example": "I especially like sweet things.",
     "exampleZh": "我特別喜歡甜的東西。"
@@ -15411,7 +15411,7 @@ const jhWordsDB = [
     "id": 31713,
     "en": "than",
     "kk": "[ðæn]",
-    "zh": "conj. 比...",
+    "zh": "conj. 比……",
     "unit": 18,
     "example": "Faith is stronger than reason.",
     "exampleZh": "信仰比理性更強大。"
@@ -15771,7 +15771,7 @@ const jhWordsDB = [
     "id": 31753,
     "en": "to",
     "kk": "[tu]",
-    "zh": "prep. 向,朝",
+    "zh": "prep. 向、朝",
     "unit": 18,
     "example": "I was trying to save money to go to college.",
     "exampleZh": "我想存錢去上大學。"
@@ -16185,7 +16185,7 @@ const jhWordsDB = [
     "id": 31799,
     "en": "trust",
     "kk": "[trʌst]",
-    "zh": "v. 信任,信賴；n. 託管,信託",
+    "zh": "v. 信任、信賴；n. 託管、信託",
     "unit": 18,
     "example": "I couldn't trust him anymore.",
     "exampleZh": "我再不能相信他了。"
@@ -16356,7 +16356,7 @@ const jhWordsDB = [
     "id": 31818,
     "en": "under",
     "kk": "[ˋʌndɚ]",
-    "zh": "prep. 在...下面；adv. 低於",
+    "zh": "prep. 在……下面；adv. 低於",
     "unit": 18,
     "example": "They feel under permanent threat.",
     "exampleZh": "他們感到永遠受到威脅。"
@@ -16437,7 +16437,7 @@ const jhWordsDB = [
     "id": 31827,
     "en": "until",
     "kk": "[ənˋtɪl]",
-    "zh": "prep. 直到；conj. 到...為止",
+    "zh": "prep. 直到；conj. 到……為止",
     "unit": 18,
     "example": "She lay sleepless until dawn.",
     "exampleZh": "她一直睡到天亮。"
@@ -16788,7 +16788,7 @@ const jhWordsDB = [
     "id": 31866,
     "en": "wash",
     "kk": "[wɑʃ]",
-    "zh": "v. 洗,洗滌；n. 要洗的(洗好的)衣服",
+    "zh": "v. 洗、洗滌；n. 要洗的(洗好的)衣服",
     "unit": 18,
     "example": "I must wash the car tomorrow.",
     "exampleZh": "我明天必須洗車。"
@@ -16977,7 +16977,7 @@ const jhWordsDB = [
     "id": 31887,
     "en": "wet",
     "kk": "[wɛt]",
-    "zh": "adj. 把...淋濕,打濕,弄濕；v. 尿濕",
+    "zh": "adj. 把……淋濕、打濕,弄濕；v. 尿濕",
     "unit": 18,
     "example": "Wet weather always depresses me.",
     "exampleZh": "潮濕的天氣總是讓我感到沮喪。"
@@ -17049,7 +17049,7 @@ const jhWordsDB = [
     "id": 31895,
     "en": "while",
     "kk": "[waɪl]",
-    "zh": "conj. 當...時；n. 一段時間",
+    "zh": "conj. 當……時；n. 一段時間",
     "unit": 18,
     "example": "She fell while toddling around.",
     "exampleZh": "她在蹣跚學步時摔倒了。"
@@ -17238,7 +17238,7 @@ const jhWordsDB = [
     "id": 31916,
     "en": "with",
     "kk": "[wɪð]",
-    "zh": "prep. 有;用",
+    "zh": "prep. 有；用",
     "unit": 18,
     "example": "He's more comfortable with computers than with people.",
     "exampleZh": "與人相處相比，他更喜歡與電腦相處。"

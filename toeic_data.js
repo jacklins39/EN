@@ -2622,7 +2622,7 @@ const toeicWordsDB = [
     "id": 20292,
     "en": "back-to-back",
     "kk": "[bæk tu bæk]",
-    "zh": "ph. 背靠背",
+    "zh": "adj. 連續的；adv. 背對背地",
     "unit": 11,
     "example": "Our team has lost two games back-to-back.",
     "exampleZh": "我們隊已經連續輸掉兩場比賽了。"
@@ -3288,7 +3288,7 @@ const toeicWordsDB = [
     "id": 20366,
     "en": "bed and breakfast",
     "kk": "[bɛd ənd ˋbrɛkfəst]",
-    "zh": "ph. 夜宿兼次日早餐(縮寫為 B&B)",
+    "zh": "n. 附早餐的旅宿、民宿(簡稱 B&B)",
     "unit": 11,
     "example": "Do you do bed and breakfast?",
     "exampleZh": "你們提供住宿加早餐的服務嗎？"
@@ -5259,7 +5259,7 @@ const toeicWordsDB = [
     "id": 20585,
     "en": "carry out",
     "kk": "[ˋkæri aʊt]",
-    "zh": "ph. 實行；執行",
+    "zh": "v. 實行、執行、貫徹",
     "unit": 11,
     "example": "It's just talk. He'd never carry out his threats.",
     "exampleZh": "這只不過是說說而已。他絕不會把他的恫嚇付諸行動。"
@@ -5943,7 +5943,7 @@ const toeicWordsDB = [
     "id": 20661,
     "en": "come across",
     "kk": "[kʌm əˋkrɔs]",
-    "zh": "ph. 碰見；被理解",
+    "zh": "v. 偶然遇見、碰見",
     "unit": 11,
     "example": "Did he come across as a sane, rational person?",
     "exampleZh": "他看上去是不是一個頭腦清醒而理智的人？"

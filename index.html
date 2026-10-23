@@ -3396,12 +3396,45 @@
             content.innerHTML = `
                 <div class="flex justify-between items-center mb-3 border-b border-[#D4DEC4] pb-2">
                     <h3 class="text-xl font-semibold text-[#0071E3]">管理自訂字庫 (${customWordsDB.length})</h3>
-                    ${customWordsDB.length ? '<div class="flex gap-2 items-center flex-wrap"><button id="btn-autofill-custom" class="bg-green-600 hover:bg-green-700 text-white text-xs font-medium px-3 py-1.5 rounded-xl shadow-sm transition-colors" title="自動查詢單字繁體中文與詞性並儲存">✨ 自動翻譯並儲存</button><button id="btn-save-custom-all" class="bg-[#0071E3] text-white text-xs font-medium px-3 py-1.5 rounded-xl">💾 全部儲存</button><button id="btn-del-custom-all" class="text-xs text-[#FF3B30] underline ml-1">全部刪除</button></div>' : ''}
+                    ${customWordsDB.length ? '<div class="flex gap-2 items-center flex-wrap"><button id="btn-copy-custom-list" class="bg-gray-100 hover:bg-gray-200 text-gray-700 text-xs font-medium px-2.5 py-1.5 rounded-xl border border-gray-300 transition-colors" title="一鍵複製單字清單，方便直接貼給 AI 批次移入高中 7000 單">📋 複製轉移清單</button><button id="btn-autofill-custom" class="bg-green-600 hover:bg-green-700 text-white text-xs font-medium px-3 py-1.5 rounded-xl shadow-sm transition-colors" title="自動查詢單字繁體中文與詞性並儲存">✨ 自動翻譯並儲存</button><button id="btn-save-custom-all" class="bg-[#0071E3] text-white text-xs font-medium px-3 py-1.5 rounded-xl">💾 全部儲存</button><button id="btn-del-custom-all" class="text-xs text-[#FF3B30] underline ml-1">全部刪除</button></div>' : ''}
                 </div>
                 <div class="max-h-72 overflow-y-auto pr-1 custom-scrollbar">
                     ${rows || '<p class="text-[#86868B] text-sm text-center py-4">自訂字庫是空的。</p>'}
                 </div>`;
             document.getElementById('dict-modal').classList.remove('hidden');
+            const copyBtn = document.getElementById('btn-copy-custom-list');
+            if (copyBtn) {
+                copyBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const listText = customWordsDB.map(w => (w.en || '').trim()).filter(Boolean).join('\n');
+                    if (!listText) return showQuickToast('目前沒有可複製的自訂單字');
+                    const doneCopy = () => {
+                        copyBtn.innerText = '✅ 已複製！';
+                        showQuickToast(`已複製 ${customWordsDB.length} 個單字，直接貼給 AI 即可批次轉移 📋`);
+                        setTimeout(() => { copyBtn.innerText = '📋 複製轉移清單'; }, 2000);
+                    };
+                    if (navigator.clipboard && navigator.clipboard.writeText) {
+                        navigator.clipboard.writeText(listText).then(doneCopy).catch(() => {
+                            const ta = document.createElement('textarea');
+                            ta.value = listText;
+                            document.body.appendChild(ta);
+                            ta.select();
+                            document.execCommand('copy');
+                            document.body.removeChild(ta);
+                            doneCopy();
+                        });
+                    } else {
+                        const ta = document.createElement('textarea');
+                        ta.value = listText;
+                        document.body.appendChild(ta);
+                        ta.select();
+                        document.execCommand('copy');
+                        document.body.removeChild(ta);
+                        doneCopy();
+                    }
+                });
+            }
             content.querySelectorAll('.btn-del-custom').forEach(b => b.addEventListener('click', async (e) => {
                 e.preventDefault();
                 e.stopPropagation();

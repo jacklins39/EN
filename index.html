@@ -1271,23 +1271,55 @@
             return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
         }
 
-        // 解析詞性與純中文：將 "adj. 有能力的" 或 "(v.) 跑" 或 pos 欄位乾淨拆分，避免中文前綴混入詞性
+        // 解析詞性與純中文：將 "n. 烤肉；v. 烤肉" 或 "adj. 有能力的" 或 pos 欄位乾淨拆分
         function splitPosAndZh(zhStr, explicitPos = '') {
             let pos = (explicitPos || '').trim();
             let pureZh = (zhStr || '').trim();
-            
-            // 匹配如 "adj. 有能力的"、"v. 放棄"、"v./n. 計劃"、"(n.) 蘋果"、"a. 好的"、"prep. 在...之上"
+            if (!pureZh) return { pos: '', posBadgeText: '', pureZh: '', items: [] };
+
+            // 支援如 "n. 烤肉；燒烤；v. 烤肉；燒烤" 或 "adj. 裸的；光禿禿的；v. 使赤裸；露出" 等多詞性獨立標示
+            const posRegex = /(?:^|[；;]\s*)((?:adj|adv|prep|conj|pron|int|num|det|art|aux|vi|vt|[avnd])\.)\s*/gi;
+            const matches = [...pureZh.matchAll(posRegex)];
+            if (matches && matches.length > 0) {
+                const items = [];
+                const posSet = [];
+                for (let i = 0; i < matches.length; i++) {
+                    const m = matches[i];
+                    let p = m[1].toLowerCase().trim();
+                    if (p === 'a.') p = 'adj.';
+                    if (p === 'ad.') p = 'adv.';
+                    if (!p.endsWith('.')) p += '.';
+                    const contentStart = m.index + m[0].length;
+                    const contentEnd = (i + 1 < matches.length) ? matches[i + 1].index : pureZh.length;
+                    let text = pureZh.slice(contentStart, contentEnd).trim();
+                    text = text.replace(/^[；;、，,\s]+|[；;、，,\s]+$/g, '').trim();
+                    if (text) {
+                        items.push({ pos: p, text });
+                        if (!posSet.includes(p)) posSet.push(p);
+                    }
+                }
+                if (items.length > 0) {
+                    const posBadgeText = posSet.map(p => p.toUpperCase().replace(/\.$/, '')).join(' / ');
+                    const uniqueTexts = [...new Set(items.map(it => it.text))];
+                    const cleanPureZh = uniqueTexts.join('；');
+                    return { pos: posBadgeText, posBadgeText, pureZh: cleanPureZh, items };
+                }
+            }
+
+            // 單一詞性匹配如 "adj. 有能力的"、"v. 放棄"、"prep. 在...之上"
             const m = pureZh.match(/^(\(?[a-zA-Z./]+\.?\)?)\s*[:：.]?\s*(.*)$/);
             if (m && m[1]) {
                 let detected = m[1].replace(/[()]/g, '').trim().toLowerCase();
+                if (detected === 'a.') detected = 'adj.';
+                if (detected === 'ad.') detected = 'adv.';
                 if (!detected.endsWith('.')) detected += '.';
                 if (!pos) pos = detected;
                 pureZh = m[2] ? m[2].trim() : pureZh;
             }
             
-            // 清理開頭殘餘標點或冒號
             pureZh = pureZh.replace(/^[:：、，,\s]+/, '').trim();
-            return { pos, pureZh: pureZh || zhStr || '' };
+            const badge = pos ? pos.toUpperCase().replace(/\.$/, '') : '';
+            return { pos: badge, posBadgeText: badge, pureZh: pureZh || zhStr || '', items: pos ? [{ pos, text: pureZh }] : [{ pos: '', text: pureZh }] };
         }
 
         // 題型偏好模式管理 (auto 智能階梯, en2zh 看英選中, zh2en 看中選英, listen 盲聽辨字, fill 拼寫填空, card 卡片翻牌)
@@ -2393,15 +2425,30 @@
             // 解析詞性與純中文：卡片背面只顯示純中文，詞性以專屬標籤呈現，徹底避免詞性前置混淆
             const parsed = splitPosAndZh(currentWord.zh, currentWord.pos);
             const posBadge = document.getElementById('card-pos-badge');
+            const cardTransEl = document.getElementById('card-translation');
             if (posBadge) {
-                if (parsed.pos) {
+                if (parsed.posBadgeText) {
+                    posBadge.innerText = parsed.posBadgeText;
+                    posBadge.classList.remove('hidden');
+                } else if (parsed.pos) {
                     posBadge.innerText = parsed.pos;
                     posBadge.classList.remove('hidden');
                 } else {
                     posBadge.classList.add('hidden');
                 }
             }
-            document.getElementById('card-translation').innerText = parsed.pureZh;
+            if (cardTransEl) {
+                if (parsed.items && parsed.items.length > 1) {
+                    cardTransEl.innerHTML = parsed.items.map(it => `
+                        <span class="inline-flex items-center gap-1.5 flex-wrap">
+                            <span class="text-[11px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-blue-100/70 text-[#0071E3] font-mono">${esc(it.pos.toUpperCase().replace(/\.$/, ''))}</span>
+                            <span>${esc(it.text)}</span>
+                        </span>
+                    `).join('<span class="mx-2 text-gray-300 font-normal">|</span>');
+                } else {
+                    cardTransEl.innerText = parsed.pureZh;
+                }
+            }
             
             // 決定題型模式：依使用者選取題型（預設為 en2zh 看英選中）
             let prefMode = localStorage.getItem('preferred_quiz_type') || 'en2zh';
@@ -2652,13 +2699,16 @@
             }
         }
 
-        // 抽取中文釋義中的詞性標籤（支援 "v.", "n.", "adj.", "adv.", "prep.", "v./n." 等複合標記）
+        // 抽取中文釋義中的詞性標籤（支援 "v.", "n.", "adj.", "adv.", "prep." 以及多詞性標記）
         function extractPos(zh, explicitPos = '') {
             if (explicitPos) {
                 return explicitPos.toLowerCase().split('/').map(p => p.endsWith('.') ? p : p + '.').filter(p => p.length > 1);
             }
             if (!zh || typeof zh !== 'string') return [];
             const parsed = splitPosAndZh(zh);
+            if (parsed.items && parsed.items.length > 0) {
+                return parsed.items.map(it => it.pos).filter(Boolean);
+            }
             if (parsed.pos) {
                 return parsed.pos.toLowerCase().split('/').map(p => p.endsWith('.') ? p : p + '.').filter(p => p.length > 1);
             }

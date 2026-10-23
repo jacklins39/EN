@@ -9444,7 +9444,7 @@ const jhWordsDB = [
     "id": 31050,
     "en": "mind",
     "kk": "",
-    "zh": "v./n. 介意、留意; 心智、頭腦",
+    "zh": "v. 介意、留意；n. 心智、頭腦",
     "unit": 18,
     "example": "She had a brilliant mind.",
     "exampleZh": "她有一個聰穎的頭腦。"
@@ -9507,7 +9507,7 @@ const jhWordsDB = [
     "id": 31057,
     "en": "miss",
     "kk": "",
-    "zh": "v./n. 想念、錯過; 小姐、少女",
+    "zh": "v. 想念、錯過；n. 小姐、少女",
     "unit": 18,
     "example": "Hurry up, or we will miss the bus.",
     "exampleZh": "快點，否則我們會錯過公車。"

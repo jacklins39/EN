@@ -676,44 +676,120 @@
 
         <!-- 聽力特訓視圖 (Listening Training) -->
         <div id="view-listening" class="w-full hidden">
-            <div class="bg-white rounded-2xl shadow-sm p-6 mb-6">
+            <div class="bg-white rounded-2xl shadow-sm p-6 mb-6 pb-28 lg:pb-6">
                 <div class="flex justify-between items-center mb-4">
-                    <h2 class="text-2xl font-semibold text-[#0071E3]">🎧 聽力特訓</h2>
+                    <h2 class="text-2xl font-semibold text-[#1D1D1F] flex items-center gap-2.5">
+                        <div class="w-8 h-8 rounded-xl bg-blue-50 text-[#0071E3] border border-blue-100 flex items-center justify-center shrink-0">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
+                        </div>
+                        <span>聽力特訓</span>
+                    </h2>
                 </div>
                 
-                <div id="listening-setup" class="space-y-4">
-                    <div>
-                        <div class="flex items-center justify-between mb-2">
-                            <label class="block text-sm font-semibold text-[#1D1D1F]">選擇情境短文 (AI 真人發音 2.0)</label>
-                            <span class="text-xs bg-blue-50 text-[#0071E3] font-medium px-2.5 py-0.5 rounded-full border border-blue-100">🎙️ 真人神經語音</span>
+                <div id="listening-setup">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+                        <!-- 左欄：年份月份教材選單 (寬度占 7/12) -->
+                        <div class="lg:col-span-7 xl:col-span-7 space-y-3">
+                            <div class="flex items-center justify-between pb-1">
+                                <label class="flex items-center gap-2 text-sm font-bold text-[#1D1D1F]">
+                                    <svg class="w-4 h-4 text-[#0071E3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
+                                    <span>選擇教材短文庫</span>
+                                </label>
+                                <span class="text-xs bg-blue-50/80 text-[#0071E3] font-medium px-2.5 py-0.5 rounded-full border border-blue-200/60 flex items-center gap-1">
+                                    <svg class="w-3 h-3 text-[#0071E3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z" /></svg>
+                                    <span>AI 真人神經語音 2.0</span>
+                                </span>
+                            </div>
+                            <!-- 原生 select 隱藏保留供底層相容 -->
+                            <select id="listening-preset" aria-label="選擇情境短文" class="hidden">
+                                <option value="">-- 請選擇學習教材 --</option>
+                            </select>
+                            <!-- 年份月號折疊分類手風琴 (限制最大高度與滾動條) -->
+                            <div id="listening-accordion-list" class="space-y-2.5 max-h-[580px] overflow-y-auto pr-1.5 custom-scrollbar"></div>
                         </div>
-                        <!-- 原生 select 隱藏保留供底層相容 -->
-                        <select id="listening-preset" aria-label="選擇情境短文" class="hidden">
-                            <option value="">-- 請選擇學習教材 --</option>
-                        </select>
-                        <!-- 年份月號折疊分類手風琴 (按下去再展開) -->
-                        <div id="listening-accordion-list" class="space-y-2"></div>
+
+                        <!-- 右欄：釘選預覽與開始面板 (寬度占 5/12，桌面端釘選) -->
+                        <div class="lg:col-span-5 xl:col-span-5 lg:sticky lg:top-4 space-y-4">
+                            <!-- 未選教材時的導引佔位卡 -->
+                            <div id="listening-placeholder-card" class="p-6 rounded-3xl bg-gradient-to-b from-[#F9FAFC] to-white border border-gray-200 text-center space-y-3 transition-all shadow-xs">
+                                <div class="w-14 h-14 mx-auto rounded-2xl bg-blue-50 text-[#0071E3] flex items-center justify-center border border-blue-100 shadow-2xs">
+                                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                                </div>
+                                <h4 class="font-bold text-[#1D1D1F] text-base">請從左側挑選一篇短文</h4>
+                                <p class="text-xs text-[#86868B] leading-relaxed max-w-xs mx-auto">
+                                    點選左側年份分類展開文章，點擊立即預覽對白內容並啟動聽力精聽練習！
+                                </p>
+                                <div class="pt-2 border-t border-gray-100 grid grid-cols-2 gap-2 text-[11px] text-[#86868B]">
+                                    <div class="flex items-center gap-1.5 justify-center py-1.5 bg-white rounded-xl border border-gray-100 shadow-2xs">
+                                        <svg class="w-3.5 h-3.5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                        <span>句句中英同步</span>
+                                    </div>
+                                    <div class="flex items-center gap-1.5 justify-center py-1.5 bg-white rounded-xl border border-gray-100 shadow-2xs">
+                                        <svg class="w-3.5 h-3.5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                                        <span>文法重點解析</span>
+                                    </div>
+                                    <div class="flex items-center gap-1.5 justify-center py-1.5 bg-white rounded-xl border border-gray-100 shadow-2xs">
+                                        <svg class="w-3.5 h-3.5 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" /></svg>
+                                        <span>單字劃線收藏</span>
+                                    </div>
+                                    <div class="flex items-center gap-1.5 justify-center py-1.5 bg-white rounded-xl border border-gray-100 shadow-2xs">
+                                        <svg class="w-3.5 h-3.5 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" /></svg>
+                                        <span>閱讀理解測驗</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 已選短文時的詳細預覽卡 (桌面右側常駐，無需滾動) -->
+                            <div id="listening-preset-card" class="hidden p-5 rounded-3xl bg-white border border-blue-200/90 shadow-sm space-y-3.5 transition-all">
+                                <div class="flex items-start justify-between gap-3">
+                                    <div class="min-w-0 flex-1">
+                                        <span class="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-[#0071E3] bg-blue-50 px-2.5 py-0.5 rounded-lg mb-1.5 border border-blue-100">
+                                            <span class="w-1.5 h-1.5 rounded-full bg-[#0071E3] animate-pulse"></span>
+                                            <span>已選教材</span>
+                                        </span>
+                                        <h4 id="listening-card-title" class="font-bold text-[#1D1D1F] text-base leading-snug truncate"></h4>
+                                    </div>
+                                    <span id="listening-card-voice" class="text-xs px-2.5 py-1 rounded-full bg-blue-50 text-[#0071E3] font-semibold border border-blue-100 shrink-0 inline-flex items-center gap-1.5"></span>
+                                </div>
+                                <div class="bg-[#F5F5F7] p-3 rounded-2xl border border-gray-100">
+                                    <p class="text-[11px] font-bold text-gray-400 uppercase tracking-wider mb-1 flex items-center gap-1">
+                                        <svg class="w-3 h-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                                        <span>短文內容摘要</span>
+                                    </p>
+                                    <p id="listening-card-snippet" class="text-xs text-[#515154] leading-relaxed line-clamp-3 italic"></p>
+                                </div>
+                                <div class="flex items-center gap-2 text-[11px] text-[#86868B] flex-wrap">
+                                    <span id="listening-card-count" class="font-bold text-[#1D1D1F]"></span>
+                                    <span>•</span>
+                                    <span class="text-green-600 font-medium flex items-center gap-0.5">
+                                        <svg class="w-3 h-3 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                                        <span>句句同步發音</span>
+                                    </span>
+                                    <span>•</span>
+                                    <span class="text-purple-600 font-medium flex items-center gap-0.5">
+                                        <svg class="w-3 h-3 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+                                        <span>文法測驗解析</span>
+                                    </span>
+                                </div>
+                                <button id="btn-generate-listening" class="w-full bg-[#0071E3] hover:bg-[#0077ED] text-white font-bold py-3.5 rounded-2xl shadow-sm transition-all active:scale-[0.98] flex items-center justify-center gap-2 cursor-pointer">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                    <span>開始聽力特訓</span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- 即時文章資訊卡片 -->
-                    <div id="listening-preset-card" class="hidden p-4 rounded-2xl bg-[#F5F5F7] border border-gray-200 transition-all">
-                        <div class="flex items-center justify-between mb-2">
-                            <h4 id="listening-card-title" class="font-semibold text-[#1D1D1F] text-base"></h4>
-                            <span id="listening-card-voice" class="text-xs px-2.5 py-1 rounded-full bg-blue-100 text-[#0071E3] font-semibold"></span>
+                    <!-- 手機端固定底欄 (Mobile Sticky Action Bar，選中時自動浮於底部選單上方) -->
+                    <div id="listening-mobile-bar" class="hidden fixed bottom-16 left-0 right-0 max-w-md mx-auto z-40 bg-white/95 backdrop-blur-md border-t border-b border-gray-200/90 px-4 py-2.5 items-center justify-between shadow-[0_-4px_16px_rgba(0,0,0,0.08)] lg:hidden">
+                        <div class="min-w-0 flex-1 pr-3">
+                            <span class="text-[10px] font-bold text-blue-600 uppercase tracking-wider block">已選取教材</span>
+                            <div id="listening-mobile-title" class="text-xs font-bold text-gray-900 truncate"></div>
                         </div>
-                        <p id="listening-card-snippet" class="text-xs text-[#86868B] leading-relaxed line-clamp-3 mb-3"></p>
-                        <div class="flex items-center gap-2 text-[11px] text-[#86868B]">
-                            <span id="listening-card-count"></span>
-                            <span>•</span>
-                            <span class="text-green-600 font-medium">✔ 句句中英對照</span>
-                            <span>•</span>
-                            <span class="text-purple-600 font-medium">✔ 名師文法與測驗</span>
-                        </div>
+                        <button id="btn-mobile-start-listening" class="bg-[#0071E3] hover:bg-[#0077ED] text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow-sm shrink-0 flex items-center gap-1 active:scale-95 transition-all">
+                            <span>開始特訓</span>
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                        </button>
                     </div>
-
-                    <button id="btn-generate-listening" class="w-full bg-[#0071E3] hover:bg-[#0077ED] text-white font-medium py-3.5 rounded-2xl shadow-sm transition-all active:scale-[0.99] flex items-center justify-center gap-2">
-                        <span>開始聽力特訓 🚀</span>
-                    </button>
                 </div>
 
                 <div id="listening-player" class="hidden flex flex-col h-full">
@@ -1751,22 +1827,39 @@
                 document.getElementById('listening-setup').classList.remove('hidden');
                 document.getElementById('listening-player').classList.add('hidden');
                 const presetCard = document.getElementById('listening-preset-card');
+                const placeholderCard = document.getElementById('listening-placeholder-card');
+                const mobileBar = document.getElementById('listening-mobile-bar');
                 if (presetCard) presetCard.classList.add('hidden');
+                if (placeholderCard) placeholderCard.classList.remove('hidden');
+                if (mobileBar) {
+                    mobileBar.classList.add('hidden');
+                    mobileBar.classList.remove('flex');
+                }
                 const presetSel = document.getElementById('listening-preset');
                 if (presetSel) presetSel.value = '';
                 currentSelectedListeningArticle = null;
                 document.querySelectorAll('#listening-accordion-list .listening-item').forEach(el => {
-                    el.className = 'listening-item group cursor-pointer px-3 py-2.5 rounded-xl border border-transparent hover:border-blue-200 hover:bg-blue-50/60 transition-all flex items-center justify-between gap-2';
-                    const check = el.querySelector('.item-check');
-                    if (check) check.className = 'item-check text-xs font-bold text-transparent shrink-0';
+                    el.className = 'listening-item group cursor-pointer px-3 py-2.5 rounded-xl border border-transparent hover:border-blue-200 hover:bg-blue-50/60 transition-all flex items-center justify-between gap-2.5';
+                    const radio = el.querySelector('.item-radio');
+                    if (radio) {
+                        radio.className = 'item-radio w-4 h-4 rounded-full border border-gray-300 bg-white shrink-0 flex items-center justify-center transition-all group-hover:border-[#0071E3]';
+                        radio.innerHTML = '';
+                    }
                     const title = el.querySelector('.item-title');
                     if (title) title.className = 'item-title text-sm text-[#1D1D1F] group-hover:text-[#0071E3] font-medium truncate';
+                    const voiceBadge = el.querySelector('.voice-badge');
+                    if (voiceBadge) voiceBadge.className = 'voice-badge inline-flex items-center gap-1 text-[11px] font-medium px-2 py-0.5 rounded-md bg-gray-100/90 text-gray-500 group-hover:bg-blue-100/60 group-hover:text-[#0071E3] transition-colors shrink-0';
                 });
                 document.querySelectorAll('#listening-accordion-list .group-selected-indicator').forEach(ind => ind.classList.add('hidden'));
             }
             
             if (viewId !== 'view-listening') {
                 if(typeof stopListening === 'function') stopListening();
+                const mobileBar = document.getElementById('listening-mobile-bar');
+                if (mobileBar) {
+                    mobileBar.classList.add('hidden');
+                    mobileBar.classList.remove('flex');
+                }
             }
         }
 
@@ -3892,13 +3985,15 @@
                     : "2026年";
                 const month = article.month || "精選短文";
                 let catLabel = "生活短文";
-                let catBadgeClass = "bg-emerald-50 text-emerald-700 border-emerald-200";
+                let catBadgeClass = "bg-emerald-50 text-emerald-700 border-emerald-200/80";
+                let catIconClass = "bg-emerald-50 text-emerald-600 border-emerald-100";
+                let catIconSvg = `<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>`;
+
                 if (article.category === "toeic") {
                     catLabel = "多益專區";
-                    catBadgeClass = "bg-blue-50 text-[#0071E3] border-blue-200";
-                } else if (article.category === "general") {
-                    catLabel = "生活短文";
-                    catBadgeClass = "bg-emerald-50 text-emerald-700 border-emerald-200";
+                    catBadgeClass = "bg-blue-50 text-[#0071E3] border-blue-200/80";
+                    catIconClass = "bg-blue-50 text-[#0071E3] border-blue-100";
+                    catIconSvg = `<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>`;
                 }
 
                 const groupKey = `${year} ${month} (${catLabel})`;
@@ -3908,6 +4003,8 @@
                         month,
                         catLabel,
                         catBadgeClass,
+                        catIconClass,
+                        catIconSvg,
                         items: []
                     };
                 }
@@ -3930,17 +4027,19 @@
                     return a.localeCompare(b);
                 });
 
-                sortedKeys.forEach((key) => {
+                sortedKeys.forEach((key, keyIdx) => {
                     const grp = groups[key];
                     const groupDiv = document.createElement('div');
                     groupDiv.className = 'listening-group border border-gray-200/90 rounded-2xl overflow-hidden bg-white shadow-xs transition-all';
                     
                     const headerBtn = document.createElement('button');
                     headerBtn.type = 'button';
-                    headerBtn.className = 'w-full px-4 py-3.5 flex items-center justify-between text-left hover:bg-gray-50/80 transition-colors cursor-pointer select-none';
+                    headerBtn.className = 'w-full px-4 py-3 flex items-center justify-between text-left hover:bg-gray-50/80 transition-colors cursor-pointer select-none';
                     headerBtn.innerHTML = `
-                        <div class="flex items-center gap-2.5 min-w-0">
-                            <span class="text-base shrink-0">📁</span>
+                        <div class="flex items-center gap-3 min-w-0">
+                            <div class="w-8 h-8 rounded-xl ${grp.catIconClass} border flex items-center justify-center shrink-0 shadow-2xs">
+                                ${grp.catIconSvg}
+                            </div>
                             <div class="min-w-0 flex items-center gap-2 flex-wrap">
                                 <span class="font-bold text-[#1D1D1F] text-sm">${esc(grp.year)} ${esc(grp.month)}</span>
                                 <span class="text-xs font-semibold px-2 py-0.5 rounded-lg border ${grp.catBadgeClass}">${esc(grp.catLabel)}</span>
@@ -3948,27 +4047,40 @@
                             <span class="text-xs text-gray-400 font-normal shrink-0">(${grp.items.length} 篇)</span>
                         </div>
                         <div class="flex items-center gap-1.5 shrink-0 ml-2">
-                            <span class="group-selected-indicator text-[11px] font-semibold text-[#0071E3] hidden">已選取</span>
-                            <svg class="chevron-icon w-4 h-4 text-gray-400 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
+                            <span class="group-selected-indicator text-[11px] font-semibold text-[#0071E3] bg-blue-50 px-2 py-0.5 rounded-full border border-blue-100 hidden">已選取</span>
+                            <div class="w-6 h-6 rounded-lg flex items-center justify-center text-gray-400 group-hover:text-gray-600 transition-colors">
+                                <svg class="chevron-icon w-4 h-4 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
                         </div>
                     `;
 
                     const itemsContainer = document.createElement('div');
                     itemsContainer.className = 'hidden border-t border-gray-100 p-2 space-y-1 bg-[#F9FAFC]';
 
+                    // 預設展開第 1 個分組
+                    if (keyIdx === 0) {
+                        itemsContainer.classList.remove('hidden');
+                        const chevron = headerBtn.querySelector('.chevron-icon');
+                        if (chevron) chevron.classList.add('rotate-180');
+                    }
+
                     grp.items.forEach(({ article, idx }) => {
                         const itemDiv = document.createElement('div');
-                        itemDiv.className = 'listening-item group cursor-pointer px-3 py-2.5 rounded-xl border border-transparent hover:border-blue-200 hover:bg-blue-50/60 transition-all flex items-center justify-between gap-2';
+                        itemDiv.className = 'listening-item group cursor-pointer px-3 py-2.5 rounded-xl border border-transparent hover:border-blue-200 hover:bg-blue-50/60 transition-all flex items-center justify-between gap-2.5';
                         itemDiv.dataset.idx = String(idx);
                         itemDiv.innerHTML = `
-                            <div class="flex items-center gap-2 min-w-0">
-                                <span class="item-check text-xs font-bold text-transparent shrink-0">✓</span>
+                            <div class="flex items-center gap-2.5 min-w-0">
+                                <div class="item-radio w-4 h-4 rounded-full border border-gray-300 bg-white shrink-0 flex items-center justify-center transition-all group-hover:border-[#0071E3]"></div>
                                 <span class="item-title text-sm text-[#1D1D1F] group-hover:text-[#0071E3] font-medium truncate">${esc(article.title)}</span>
                                 ${article.level ? `<span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-gray-100 text-gray-600 shrink-0 font-medium">${esc(article.level)}</span>` : ''}
                             </div>
-                            ${article.voiceLabel ? `<span class="text-[11px] text-gray-400 group-hover:text-gray-600 shrink-0 whitespace-nowrap">🎙️ ${esc(article.voiceLabel)}</span>` : ''}
+                            ${article.voiceLabel ? `
+                            <span class="voice-badge inline-flex items-center gap-1 text-[11px] font-medium px-2 py-0.5 rounded-md bg-gray-100/90 text-gray-500 group-hover:bg-blue-100/60 group-hover:text-[#0071E3] transition-colors shrink-0">
+                                <svg class="w-3 h-3 text-[#0071E3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z" /></svg>
+                                <span>${esc(article.voiceLabel)}</span>
+                            </span>` : ''}
                         `;
 
                         itemDiv.addEventListener('click', (e) => {
@@ -4005,22 +4117,35 @@
 
         function selectListeningArticleByIndex(idx) {
             const select = document.getElementById('listening-preset');
+            const placeholder = document.getElementById('listening-placeholder-card');
             const card = document.getElementById('listening-preset-card');
+            const mobileBar = document.getElementById('listening-mobile-bar');
+            const mobileTitle = document.getElementById('listening-mobile-title');
+
             if (select) select.value = String(idx);
 
             // 更新手風琴內選中項目的高亮
             document.querySelectorAll('#listening-accordion-list .listening-item').forEach(el => {
                 const isSelected = el.dataset.idx === String(idx);
-                const check = el.querySelector('.item-check');
+                const radio = el.querySelector('.item-radio');
                 const title = el.querySelector('.item-title');
+                const voiceBadge = el.querySelector('.voice-badge');
                 if (isSelected) {
-                    el.className = 'listening-item group cursor-pointer px-3 py-2.5 rounded-xl border border-[#0071E3] bg-blue-50 text-[#0071E3] font-semibold shadow-xs flex items-center justify-between gap-2';
-                    if (check) check.className = 'item-check text-xs font-bold text-[#0071E3] shrink-0';
+                    el.className = 'listening-item group cursor-pointer px-3 py-2.5 rounded-xl border border-[#0071E3] bg-blue-50/90 text-[#0071E3] font-semibold shadow-xs flex items-center justify-between gap-2.5';
+                    if (radio) {
+                        radio.className = 'item-radio w-4 h-4 rounded-full border border-[#0071E3] bg-[#0071E3] text-white shrink-0 flex items-center justify-center shadow-2xs';
+                        radio.innerHTML = '<svg class="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>';
+                    }
                     if (title) title.className = 'item-title text-sm text-[#0071E3] font-bold truncate';
+                    if (voiceBadge) voiceBadge.className = 'voice-badge inline-flex items-center gap-1 text-[11px] font-medium px-2 py-0.5 rounded-md bg-white text-[#0071E3] border border-blue-200 shrink-0';
                 } else {
-                    el.className = 'listening-item group cursor-pointer px-3 py-2.5 rounded-xl border border-transparent hover:border-blue-200 hover:bg-blue-50/60 transition-all flex items-center justify-between gap-2';
-                    if (check) check.className = 'item-check text-xs font-bold text-transparent shrink-0';
+                    el.className = 'listening-item group cursor-pointer px-3 py-2.5 rounded-xl border border-transparent hover:border-blue-200 hover:bg-blue-50/60 transition-all flex items-center justify-between gap-2.5';
+                    if (radio) {
+                        radio.className = 'item-radio w-4 h-4 rounded-full border border-gray-300 bg-white shrink-0 flex items-center justify-center transition-all group-hover:border-[#0071E3]';
+                        radio.innerHTML = '';
+                    }
                     if (title) title.className = 'item-title text-sm text-[#1D1D1F] group-hover:text-[#0071E3] font-medium truncate';
+                    if (voiceBadge) voiceBadge.className = 'voice-badge inline-flex items-center gap-1 text-[11px] font-medium px-2 py-0.5 rounded-md bg-gray-100/90 text-gray-500 group-hover:bg-blue-100/60 group-hover:text-[#0071E3] transition-colors shrink-0';
                 }
             });
 
@@ -4039,17 +4164,25 @@
             if (!article) {
                 currentSelectedListeningArticle = null;
                 if (card) card.classList.add('hidden');
+                if (placeholder) placeholder.classList.remove('hidden');
+                if (mobileBar) {
+                    mobileBar.classList.add('hidden');
+                    mobileBar.classList.remove('flex');
+                }
                 return;
             }
 
             currentSelectedListeningArticle = article;
+            if (placeholder) placeholder.classList.add('hidden');
             if (card) {
                 const titleEl = document.getElementById('listening-card-title');
                 const voiceEl = document.getElementById('listening-card-voice');
                 const snippetEl = document.getElementById('listening-card-snippet');
                 const countEl = document.getElementById('listening-card-count');
                 if (titleEl) titleEl.textContent = article.title;
-                if (voiceEl) voiceEl.textContent = `🎙️ ${article.voiceLabel || 'AI 真人語音'}`;
+                if (voiceEl) {
+                    voiceEl.innerHTML = `<svg class="w-3.5 h-3.5 text-[#0071E3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z" /></svg><span>${esc(article.voiceLabel || 'AI 真人語音')}</span>`;
+                }
                 const previewSnippet = article.sentences && article.sentences.length > 0 
                     ? article.sentences.slice(0, 2).map(s => s.en).join(' ') 
                     : (article.text || '');
@@ -4058,16 +4191,39 @@
                 if (countEl) countEl.textContent = `共 ${count} 句情境會話`;
                 card.classList.remove('hidden');
             }
+
+            // 更新手機端底部浮動列
+            if (mobileBar) {
+                if (mobileTitle) mobileTitle.textContent = article.title;
+                mobileBar.classList.remove('hidden');
+                mobileBar.classList.add('flex');
+            }
         }
 
         renderListeningSelect();
+
+        // 綁定手機端底欄開始按鈕
+        const mobileListeningStartBtn = document.getElementById('btn-mobile-start-listening');
+        if (mobileListeningStartBtn) {
+            mobileListeningStartBtn.addEventListener('click', () => {
+                const mainBtn = document.getElementById('btn-generate-listening');
+                if (mainBtn) mainBtn.click();
+            });
+        }
 
         document.getElementById('listening-preset').addEventListener('change', (e) => {
             const val = e.target.value;
             if (val === "" || val === null) {
                 currentSelectedListeningArticle = null;
+                const placeholder = document.getElementById('listening-placeholder-card');
                 const card = document.getElementById('listening-preset-card');
+                const mobileBar = document.getElementById('listening-mobile-bar');
                 if (card) card.classList.add('hidden');
+                if (placeholder) placeholder.classList.remove('hidden');
+                if (mobileBar) {
+                    mobileBar.classList.add('hidden');
+                    mobileBar.classList.remove('flex');
+                }
                 return;
             }
             selectListeningArticleByIndex(parseInt(val, 10));
@@ -4383,12 +4539,17 @@
             const titleEl = document.getElementById('listening-article-title');
             const headerContainer = document.getElementById('listening-header-container');
             if (titleEl) {
-                titleEl.innerHTML = `<div class="flex items-center gap-2 flex-wrap"><span>${esc(article.title)}</span> <span class="text-xs bg-blue-100 text-[#0071E3] font-semibold px-2.5 py-1 rounded-full">🎙️ ${esc(article.voiceLabel || 'AI 真人語音')}</span></div>`;
+                titleEl.innerHTML = `<div class="flex items-center gap-2 flex-wrap"><span>${esc(article.title)}</span> <span class="text-xs bg-blue-50 text-[#0071E3] font-semibold px-2.5 py-1 rounded-full border border-blue-100 inline-flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-[#0071E3]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z" /></svg><span>${esc(article.voiceLabel || 'AI 真人語音')}</span></span></div>`;
             }
             if (headerContainer) headerContainer.classList.remove('hidden');
 
             document.getElementById('listening-setup').classList.add('hidden');
             document.getElementById('listening-player').classList.remove('hidden');
+            const mobileBar = document.getElementById('listening-mobile-bar');
+            if (mobileBar) {
+                mobileBar.classList.add('hidden');
+                mobileBar.classList.remove('flex');
+            }
 
             // 預載音訊與重設播放器狀態
             if (article.audio) {
@@ -5417,6 +5578,13 @@
             stopListening();
             document.getElementById('listening-player').classList.add('hidden');
             document.getElementById('listening-setup').classList.remove('hidden');
+            if (currentSelectedListeningArticle) {
+                const mobileBar = document.getElementById('listening-mobile-bar');
+                if (mobileBar) {
+                    mobileBar.classList.remove('hidden');
+                    mobileBar.classList.add('flex');
+                }
+            }
         });
 
         // 字庫 Tab Events

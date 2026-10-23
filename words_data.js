@@ -5961,10 +5961,10 @@ const externalVocabularyDB = [
     "id": 663,
     "en": "miss",
     "kk": "/ˈmɪs/",
-    "zh": "v./n. 少女",
+    "zh": "v./n. 想念、錯過; 小姐、少女",
     "unit": 1,
-    "example": "I miss thee, beloved father.",
-    "exampleZh": "我想念你，親愛的父親。"
+    "example": "Hurry up, or we will miss the bus.",
+    "exampleZh": "快點，否則我們會錯過公車。"
   },
   {
     "id": 664,

@@ -2,7 +2,7 @@ const jhWordsDB = [
   {
     "id": 30001,
     "en": "able",
-    "kk": "",
+    "kk": "[ˋebəl]",
     "zh": "adj. 有能力的",
     "unit": 17,
     "example": "She was barely able to stand.",
@@ -11,7 +11,7 @@ const jhWordsDB = [
   {
     "id": 30002,
     "en": "about",
-    "kk": "",
+    "kk": "[əˋbaʊt]",
     "zh": "prep. 有關",
     "unit": 17,
     "example": "I'm definite about this.",
@@ -20,7 +20,7 @@ const jhWordsDB = [
   {
     "id": 30003,
     "en": "above",
-    "kk": "",
+    "kk": "[əˋbʌv]",
     "zh": "adv. 在上方",
     "unit": 17,
     "example": "The cliffs towered above them.",
@@ -29,7 +29,7 @@ const jhWordsDB = [
   {
     "id": 30004,
     "en": "abroad",
-    "kk": "",
+    "kk": "[əˋbrɔd]",
     "zh": "adv. 在國外",
     "unit": 17,
     "example": "She worked abroad for a year.",
@@ -38,7 +38,7 @@ const jhWordsDB = [
   {
     "id": 30005,
     "en": "absent",
-    "kk": "",
+    "kk": "[ˋæbsənt]",
     "zh": "adj. 缺席的",
     "unit": 17,
     "example": "She was absent for nine consecutive days.",
@@ -47,7 +47,7 @@ const jhWordsDB = [
   {
     "id": 30006,
     "en": "accept",
-    "kk": "/əkˈsept/",
+    "kk": "[ækˋsɛpt]",
     "zh": "v. 接受",
     "unit": 17,
     "example": "You have to accept the inevitable.",
@@ -56,7 +56,7 @@ const jhWordsDB = [
   {
     "id": 30007,
     "en": "accident",
-    "kk": "",
+    "kk": "[ˋæksədənt]",
     "zh": "n. 意外",
     "unit": 17,
     "example": "It was an unfortunate accident.",
@@ -65,7 +65,7 @@ const jhWordsDB = [
   {
     "id": 30008,
     "en": "across",
-    "kk": "",
+    "kk": "[əˋkrɔs]",
     "zh": "prep. 在...對面",
     "unit": 17,
     "example": "Clouds drifted across the sky.",
@@ -74,7 +74,7 @@ const jhWordsDB = [
   {
     "id": 30009,
     "en": "act",
-    "kk": "",
+    "kk": "[ækt]",
     "zh": "n. 行為",
     "unit": 17,
     "example": "Can you act as interpreter?",
@@ -83,7 +83,7 @@ const jhWordsDB = [
   {
     "id": 30010,
     "en": "action",
-    "kk": "",
+    "kk": "[ˋækʃən]",
     "zh": "n. 活動",
     "unit": 17,
     "example": "Take whatever action is needed.",
@@ -92,7 +92,7 @@ const jhWordsDB = [
   {
     "id": 30011,
     "en": "active",
-    "kk": "",
+    "kk": "[ˋæktɪv]",
     "zh": "adj. 積極的",
     "unit": 17,
     "example": "They were both politically active.",
@@ -101,7 +101,7 @@ const jhWordsDB = [
   {
     "id": 30012,
     "en": "activity",
-    "kk": "",
+    "kk": "[ækˋtɪvəti]",
     "zh": "n. 活動",
     "unit": 17,
     "example": "Parents encourage every activity imaginable.",
@@ -110,7 +110,7 @@ const jhWordsDB = [
   {
     "id": 30013,
     "en": "actor",
-    "kk": "",
+    "kk": "[ˋæktɚ]",
     "zh": "n. 男演員",
     "unit": 17,
     "example": "Grodin is a fine comic actor.",
@@ -119,7 +119,7 @@ const jhWordsDB = [
   {
     "id": 30014,
     "en": "actress",
-    "kk": "",
+    "kk": "[ˋæktrəs]",
     "zh": "n. 女演員",
     "unit": 17,
     "example": "She fancies herself (as) a serious actress.",
@@ -128,7 +128,7 @@ const jhWordsDB = [
   {
     "id": 30015,
     "en": "actually",
-    "kk": "",
+    "kk": "[ˋæk͵tʃuəli]",
     "zh": "adv. 確實",
     "unit": 17,
     "example": "It's not actually raining now.",
@@ -137,7 +137,7 @@ const jhWordsDB = [
   {
     "id": 30016,
     "en": "add",
-    "kk": "",
+    "kk": "[æd]",
     "zh": "v. 增加",
     "unit": 17,
     "example": "Add up all the money I owe you.",
@@ -146,7 +146,7 @@ const jhWordsDB = [
   {
     "id": 30017,
     "en": "address",
-    "kk": "",
+    "kk": "[ˋæ͵drɛs]",
     "zh": "n. 地址",
     "unit": 17,
     "example": "They had no permanent address.",
@@ -155,7 +155,7 @@ const jhWordsDB = [
   {
     "id": 30018,
     "en": "admire",
-    "kk": "",
+    "kk": "[ædˋmaɪr]",
     "zh": "v. 欽佩",
     "unit": 17,
     "example": "I really admire your enthusiasm.",
@@ -164,7 +164,7 @@ const jhWordsDB = [
   {
     "id": 30019,
     "en": "adult",
-    "kk": "/ˈædʌlt/",
+    "kk": "[əˋdʌlt]",
     "zh": "n. 成人",
     "unit": 17,
     "example": "Each ticket admits one adult.",
@@ -173,7 +173,7 @@ const jhWordsDB = [
   {
     "id": 30020,
     "en": "advertisement",
-    "kk": "",
+    "kk": "[ædˋvɝtəzmənt]",
     "zh": "n. 廣告",
     "unit": 17,
     "example": "The advertisement is for a men's fragrance.",
@@ -182,7 +182,7 @@ const jhWordsDB = [
   {
     "id": 30021,
     "en": "advice",
-    "kk": "/ədˈvaɪs/",
+    "kk": "[ædˋvaɪs]",
     "zh": "n. 勸告",
     "unit": 17,
     "example": "He offered some useful advice.",
@@ -191,7 +191,7 @@ const jhWordsDB = [
   {
     "id": 30022,
     "en": "advise",
-    "kk": "",
+    "kk": "[ædˋvaɪz]",
     "zh": "v. 勸告",
     "unit": 17,
     "example": "I'd advise you against doing that.",
@@ -200,7 +200,7 @@ const jhWordsDB = [
   {
     "id": 30023,
     "en": "affect",
-    "kk": "/əˈfekt/",
+    "kk": "[əˋfɛkt]",
     "zh": "v. 影響",
     "unit": 17,
     "example": "Does television affect children's behaviour?",
@@ -209,7 +209,7 @@ const jhWordsDB = [
   {
     "id": 30024,
     "en": "afraid",
-    "kk": "/əˈfreɪd/",
+    "kk": "[əˋfred]",
     "zh": "adj. 害怕的",
     "unit": 17,
     "example": "I'm afraid you guessed wrong.",
@@ -218,7 +218,7 @@ const jhWordsDB = [
   {
     "id": 30025,
     "en": "after",
-    "kk": "",
+    "kk": "[ˋæftɚ]",
     "zh": "conj. 在...之後",
     "unit": 17,
     "example": "They arrived shortly after 5.",
@@ -227,7 +227,7 @@ const jhWordsDB = [
   {
     "id": 30026,
     "en": "afternoon",
-    "kk": "",
+    "kk": "[͵æftɚˋnun]",
     "zh": "n. 下午",
     "unit": 17,
     "example": "He's arriving in the afternoon.",
@@ -236,7 +236,7 @@ const jhWordsDB = [
   {
     "id": 30027,
     "en": "again",
-    "kk": "",
+    "kk": "[əˋɡɛn]",
     "zh": "adv. 再度",
     "unit": 17,
     "example": "She smiled again, prettily.",
@@ -245,7 +245,7 @@ const jhWordsDB = [
   {
     "id": 30028,
     "en": "against",
-    "kk": "",
+    "kk": "[əˋɡɛnst]",
     "zh": "prep. 靠著",
     "unit": 17,
     "example": "Rain drove against the window.",
@@ -254,7 +254,7 @@ const jhWordsDB = [
   {
     "id": 30029,
     "en": "age",
-    "kk": "",
+    "kk": "[edʒ]",
     "zh": "n. 年齡",
     "unit": 17,
     "example": "She's long past retirement age.",
@@ -263,7 +263,7 @@ const jhWordsDB = [
   {
     "id": 30030,
     "en": "ago",
-    "kk": "",
+    "kk": "[əˋɡo]",
     "zh": "adv. ...之前",
     "unit": 17,
     "example": "She was hired three years ago.",
@@ -272,7 +272,7 @@ const jhWordsDB = [
   {
     "id": 30031,
     "en": "agree",
-    "kk": "/əˈɡriː/",
+    "kk": "[əˋɡri]",
     "zh": "v. 同意",
     "unit": 17,
     "example": "I don't agree with spanking.",
@@ -281,7 +281,7 @@ const jhWordsDB = [
   {
     "id": 30032,
     "en": "ahead",
-    "kk": "/əˈhed/",
+    "kk": "[əˋhɛd]",
     "zh": "adv. 向前",
     "unit": 17,
     "example": "Already, she is thinking ahead.",
@@ -290,7 +290,7 @@ const jhWordsDB = [
   {
     "id": 30033,
     "en": "aim",
-    "kk": "/eɪm/",
+    "kk": "[em]",
     "zh": "n. 目標",
     "unit": 17,
     "example": "His aim was to become president.",
@@ -299,7 +299,7 @@ const jhWordsDB = [
   {
     "id": 30034,
     "en": "air",
-    "kk": "/eər/",
+    "kk": "[ɛr]",
     "zh": "n. 空氣",
     "unit": 17,
     "example": "His hands clawed the air.",
@@ -308,7 +308,7 @@ const jhWordsDB = [
   {
     "id": 30035,
     "en": "airplane",
-    "kk": "",
+    "kk": "[ˋɛrp͵len]",
     "zh": "n. 飛機",
     "unit": 17,
     "example": "The airplane had dual controls.",
@@ -317,7 +317,7 @@ const jhWordsDB = [
   {
     "id": 30036,
     "en": "airport",
-    "kk": "",
+    "kk": "[ˋɛr͵pɔrt]",
     "zh": "n. 機場",
     "unit": 17,
     "example": "He was fogbound at JFK airport.",
@@ -326,7 +326,7 @@ const jhWordsDB = [
   {
     "id": 30037,
     "en": "alarm",
-    "kk": "/əˈlɑːrm/",
+    "kk": "[əˋlɑrm]",
     "zh": "n. 警報器",
     "unit": 17,
     "example": "An alarm bell went off.",
@@ -335,7 +335,7 @@ const jhWordsDB = [
   {
     "id": 30038,
     "en": "album",
-    "kk": "/ˈælbəm/",
+    "kk": "[ˋælbəm]",
     "zh": "n. 相簿",
     "unit": 17,
     "example": "Their new album is dynamite.",
@@ -344,7 +344,7 @@ const jhWordsDB = [
   {
     "id": 30039,
     "en": "alike",
-    "kk": "/əˈlaɪk/",
+    "kk": "[əˋlaɪk]",
     "zh": "adv. 相同地",
     "unit": 17,
     "example": "My sister and I do not look alike.",
@@ -353,7 +353,7 @@ const jhWordsDB = [
   {
     "id": 30040,
     "en": "alive",
-    "kk": "/əˈlaɪv/",
+    "kk": "[əˋlaɪv]",
     "zh": "adj. 活的",
     "unit": 17,
     "example": "He's still alive, isn't he?",
@@ -362,7 +362,7 @@ const jhWordsDB = [
   {
     "id": 30041,
     "en": "all",
-    "kk": "",
+    "kk": "[ɔl]",
     "zh": "adj. 全部的",
     "unit": 17,
     "example": "They're all good players, but she's the best of all.",
@@ -371,7 +371,7 @@ const jhWordsDB = [
   {
     "id": 30042,
     "en": "allow",
-    "kk": "/əˈlaʊ/",
+    "kk": "[əˋlaʊ]",
     "zh": "v. 允許",
     "unit": 17,
     "example": "We must allow for human error.",
@@ -380,7 +380,7 @@ const jhWordsDB = [
   {
     "id": 30043,
     "en": "almost",
-    "kk": "/ˈɔːlmoʊst/",
+    "kk": "[ˋɔl͵most]",
     "zh": "adv. 幾乎",
     "unit": 17,
     "example": "Almost overnight I was cured.",
@@ -389,7 +389,7 @@ const jhWordsDB = [
   {
     "id": 30044,
     "en": "alone",
-    "kk": "/əˈloʊn/",
+    "kk": "[əˋlon]",
     "zh": "adv. 獨自地",
     "unit": 17,
     "example": "Exercising alone can be boring.",
@@ -398,7 +398,7 @@ const jhWordsDB = [
   {
     "id": 30045,
     "en": "along",
-    "kk": "/əˈlɔːŋ/",
+    "kk": "[əˋlɔŋ]",
     "zh": "prep. 沿著",
     "unit": 17,
     "example": "Things are going along nicely.",
@@ -407,7 +407,7 @@ const jhWordsDB = [
   {
     "id": 30046,
     "en": "aloud",
-    "kk": "",
+    "kk": "[əˋlaʊd]",
     "zh": "adv. 大聲地",
     "unit": 17,
     "example": "She cried aloud in protest.",
@@ -416,7 +416,7 @@ const jhWordsDB = [
   {
     "id": 30047,
     "en": "already",
-    "kk": "/ɔːlˈredi/",
+    "kk": "[ɔlˋrɛdi]",
     "zh": "adv. 已經",
     "unit": 17,
     "example": "Eight o'clock had already chimed.",
@@ -425,7 +425,7 @@ const jhWordsDB = [
   {
     "id": 30048,
     "en": "also",
-    "kk": "/ˈɔːlsoʊ/",
+    "kk": "[ˋɔlso]",
     "zh": "adv. 也",
     "unit": 17,
     "example": "The nation also exports beef.",
@@ -434,7 +434,7 @@ const jhWordsDB = [
   {
     "id": 30049,
     "en": "altogether",
-    "kk": "/ˌɔːltəˈɡeðər/",
+    "kk": "[͵ɔltəˋɡɛðɚ]",
     "zh": "adv. 總共",
     "unit": 17,
     "example": "I don't altogether agree with you.",
@@ -443,7 +443,7 @@ const jhWordsDB = [
   {
     "id": 30050,
     "en": "always",
-    "kk": "/ˈɔːlweɪz/",
+    "kk": "[ˋɔl͵wez]",
     "zh": "adv. 總是",
     "unit": 17,
     "example": "She always looks immaculate.",
@@ -452,7 +452,7 @@ const jhWordsDB = [
   {
     "id": 30051,
     "en": "ambulance",
-    "kk": "/ˈæmbjələns/",
+    "kk": "[ˋæmbjələns]",
     "zh": "n. 救護車",
     "unit": 17,
     "example": "When the ambulance had gone, the crowd dissolved.",
@@ -461,7 +461,7 @@ const jhWordsDB = [
   {
     "id": 30052,
     "en": "among",
-    "kk": "/əˈmʌŋ/",
+    "kk": "[əˋmʌŋ]",
     "zh": "prep. 在...之間",
     "unit": 17,
     "example": "Bees buzzed lazily among the flowers.",
@@ -470,7 +470,7 @@ const jhWordsDB = [
   {
     "id": 30053,
     "en": "ancient",
-    "kk": "/ˈeɪnʃənt/",
+    "kk": "[ˋentʃənt]",
     "zh": "adj. 古代的",
     "unit": 17,
     "example": "Lettuce was grown by the ancient Romans.",
@@ -479,7 +479,7 @@ const jhWordsDB = [
   {
     "id": 30054,
     "en": "angel",
-    "kk": "",
+    "kk": "[ˋendʒəl]",
     "zh": "n. 天使",
     "unit": 17,
     "example": "The angel appeared unto him in a dream.",
@@ -488,7 +488,7 @@ const jhWordsDB = [
   {
     "id": 30055,
     "en": "anger",
-    "kk": "/ˈæŋɡər/",
+    "kk": "[ˋæŋɡɚ]",
     "zh": "n. 憤怒",
     "unit": 17,
     "example": "His words ignited their anger.",
@@ -497,7 +497,7 @@ const jhWordsDB = [
   {
     "id": 30056,
     "en": "angry",
-    "kk": "/ˈæŋɡri/",
+    "kk": "[ˋæŋɡri]",
     "zh": "adj. 生氣的",
     "unit": 17,
     "example": "Roberta felt frustrated and angry.",
@@ -506,7 +506,7 @@ const jhWordsDB = [
   {
     "id": 30057,
     "en": "ankle",
-    "kk": "",
+    "kk": "[ˋæŋkəl]",
     "zh": "n. 腳踝",
     "unit": 17,
     "example": "John twisted his ankle badly.",
@@ -515,7 +515,7 @@ const jhWordsDB = [
   {
     "id": 30058,
     "en": "animal",
-    "kk": "/ˈænɪml/",
+    "kk": "[ˋænəməl]",
     "zh": "n. 動物",
     "unit": 17,
     "example": "The animal retracted into its shell.",
@@ -524,7 +524,7 @@ const jhWordsDB = [
   {
     "id": 30059,
     "en": "another",
-    "kk": "/əˈnʌðər/",
+    "kk": "[əˋnʌðɚ]",
     "zh": "adj. 另外的",
     "unit": 17,
     "example": "She was expecting another baby.",
@@ -533,7 +533,7 @@ const jhWordsDB = [
   {
     "id": 30060,
     "en": "answer",
-    "kk": "/ˈænsər/",
+    "kk": "[ˋænsɚ]",
     "zh": "n. 答案",
     "unit": 17,
     "example": "Your answer is exactly right.",
@@ -542,7 +542,7 @@ const jhWordsDB = [
   {
     "id": 30061,
     "en": "ant",
-    "kk": "",
+    "kk": "[ænt]",
     "zh": "n. 螞蟻",
     "unit": 17,
     "example": "The ant is carrying a leaf.",
@@ -551,7 +551,7 @@ const jhWordsDB = [
   {
     "id": 30062,
     "en": "any",
-    "kk": "/ˈeni/",
+    "kk": "[ˋɛni]",
     "zh": "adj. 任何的",
     "unit": 17,
     "example": "I'd welcome any suggestions.",
@@ -560,7 +560,7 @@ const jhWordsDB = [
   {
     "id": 30063,
     "en": "anyone",
-    "kk": "/ˈeniwʌn/",
+    "kk": "[ˋɛni͵wʌn]",
     "zh": "pron. 任何人",
     "unit": 17,
     "example": "Anyone can appreciate our music.",
@@ -569,7 +569,7 @@ const jhWordsDB = [
   {
     "id": 30064,
     "en": "anything",
-    "kk": "/ˈeniθɪŋ/",
+    "kk": "[ˋɛni͵θɪŋ]",
     "zh": "n. 任何事物",
     "unit": 17,
     "example": "They'll eat almost anything.",
@@ -578,7 +578,7 @@ const jhWordsDB = [
   {
     "id": 30065,
     "en": "anywhere",
-    "kk": "/ˈeniwer/",
+    "kk": "[ˋɛni͵wɛr]",
     "zh": "adv. 任何地方",
     "unit": 17,
     "example": "Did you go anywhere interesting?",
@@ -587,7 +587,7 @@ const jhWordsDB = [
   {
     "id": 30066,
     "en": "apartment",
-    "kk": "/əˈpɑːrtmənt/",
+    "kk": "[əˋpɑrtmənt]",
     "zh": "n. 公寓",
     "unit": 17,
     "example": "We rented an unfurnished apartment.",
@@ -596,7 +596,7 @@ const jhWordsDB = [
   {
     "id": 30067,
     "en": "apologize",
-    "kk": "/əˈpɑːlədʒaɪz/",
+    "kk": "[əˋpɑlə͵dʒaɪz]",
     "zh": "v. 道歉",
     "unit": 17,
     "example": "I'm damned if I'll apologize!",
@@ -605,7 +605,7 @@ const jhWordsDB = [
   {
     "id": 30068,
     "en": "appear",
-    "kk": "/əˈpɪr/",
+    "kk": "[əˋpɪr]",
     "zh": "v. 出現",
     "unit": 17,
     "example": "She will appear in court tomorrow.",
@@ -614,7 +614,7 @@ const jhWordsDB = [
   {
     "id": 30069,
     "en": "apple",
-    "kk": "/ˈæpl/",
+    "kk": "[ˋæpəl]",
     "zh": "n. 蘋果",
     "unit": 17,
     "example": "She crunched her apple noisily.",
@@ -623,7 +623,7 @@ const jhWordsDB = [
   {
     "id": 30070,
     "en": "appreciate",
-    "kk": "/əˈpriːʃieɪt/",
+    "kk": "[əˋpriʃi͵et]",
     "zh": "v. 欣賞",
     "unit": 17,
     "example": "Anyone can appreciate our music.",
@@ -632,7 +632,7 @@ const jhWordsDB = [
   {
     "id": 30071,
     "en": "April",
-    "kk": "",
+    "kk": "[ˋeprəl]",
     "zh": "n. 四月",
     "unit": 17,
     "example": "We went to Japan last April.",
@@ -641,7 +641,7 @@ const jhWordsDB = [
   {
     "id": 30072,
     "en": "area",
-    "kk": "/ˈeriə/",
+    "kk": "[ˋɛriə]",
     "zh": "n. 地區",
     "unit": 17,
     "example": "The area is largely uninhabited.",
@@ -650,7 +650,7 @@ const jhWordsDB = [
   {
     "id": 30073,
     "en": "argue",
-    "kk": "/ˈɑːrɡjuː/",
+    "kk": "[ˋɑrɡju]",
     "zh": "v. 爭論",
     "unit": 17,
     "example": "I'm not disposed to argue.",
@@ -659,7 +659,7 @@ const jhWordsDB = [
   {
     "id": 30074,
     "en": "arm",
-    "kk": "/ɑːrm/",
+    "kk": "[ɑrm]",
     "zh": "n. 手臂",
     "unit": 17,
     "example": "He squeezed her arm reassuringly.",
@@ -668,7 +668,7 @@ const jhWordsDB = [
   {
     "id": 30075,
     "en": "armchair",
-    "kk": "",
+    "kk": "[ˋɑrm͵tʃɛr]",
     "zh": "n. 扶手椅",
     "unit": 17,
     "example": "I sank down into a voluminous armchair.",
@@ -677,7 +677,7 @@ const jhWordsDB = [
   {
     "id": 30076,
     "en": "army",
-    "kk": "/ˈɑːrmi/",
+    "kk": "[ˋɑrmi]",
     "zh": "n. 軍隊",
     "unit": 17,
     "example": "They were old army comrades.",
@@ -686,7 +686,7 @@ const jhWordsDB = [
   {
     "id": 30077,
     "en": "around",
-    "kk": "/əˈraʊnd/",
+    "kk": "[ɚˋaʊnd]",
     "zh": "adv. 在附近",
     "unit": 17,
     "example": "He arrived around five o'clock.",
@@ -695,7 +695,7 @@ const jhWordsDB = [
   {
     "id": 30078,
     "en": "arrange",
-    "kk": "/əˈreɪndʒ/",
+    "kk": "[ɚˋendʒ]",
     "zh": "v. 安排",
     "unit": 17,
     "example": "Can I arrange an appointment for Monday?",
@@ -704,7 +704,7 @@ const jhWordsDB = [
   {
     "id": 30079,
     "en": "arrive",
-    "kk": "/əˈraɪv/",
+    "kk": "[ɚˋaɪv]",
     "zh": "v. 到達",
     "unit": 17,
     "example": "We should arrive before dark.",
@@ -713,7 +713,7 @@ const jhWordsDB = [
   {
     "id": 30080,
     "en": "art",
-    "kk": "/ɑːrt/",
+    "kk": "[ɑrt]",
     "zh": "n. 藝術",
     "unit": 17,
     "example": "Can we call television art?",
@@ -722,7 +722,7 @@ const jhWordsDB = [
   {
     "id": 30081,
     "en": "artist",
-    "kk": "/ˈɑːrtɪst/",
+    "kk": "[ˋɑrtəst]",
     "zh": "n. 藝術家",
     "unit": 17,
     "example": "He is little known as an artist.",
@@ -731,7 +731,7 @@ const jhWordsDB = [
   {
     "id": 30082,
     "en": "as",
-    "kk": "/æz/",
+    "kk": "[æz]",
     "zh": "prep. 像,如同",
     "unit": 17,
     "example": "You're as tall as your father.",
@@ -740,7 +740,7 @@ const jhWordsDB = [
   {
     "id": 30083,
     "en": "ask",
-    "kk": "/æsk/",
+    "kk": "[æsk]",
     "zh": "v. 詢問",
     "unit": 17,
     "example": "Did you ask the price?",
@@ -749,7 +749,7 @@ const jhWordsDB = [
   {
     "id": 30084,
     "en": "asleep",
-    "kk": "/əˈsliːp/",
+    "kk": "[əˋslip]",
     "zh": "adj. 睡著的",
     "unit": 17,
     "example": "He had fallen asleep on the sofa.",
@@ -758,7 +758,7 @@ const jhWordsDB = [
   {
     "id": 30085,
     "en": "assistant",
-    "kk": "/əˈsɪstənt/",
+    "kk": "[əˋsɪstənt]",
     "zh": "n. 助手",
     "unit": 17,
     "example": "The assistant pursed her lips.",
@@ -767,7 +767,7 @@ const jhWordsDB = [
   {
     "id": 30086,
     "en": "assume",
-    "kk": "/əˈsuːm/",
+    "kk": "[əˋsum]",
     "zh": "v. 假設",
     "unit": 17,
     "example": "Assume A knows B is guilty.",
@@ -776,7 +776,7 @@ const jhWordsDB = [
   {
     "id": 30087,
     "en": "attack",
-    "kk": "/əˈtæk/",
+    "kk": "[əˋtæk]",
     "zh": "n. 攻擊",
     "unit": 17,
     "example": "The attack on Charles was unjust.",
@@ -785,7 +785,7 @@ const jhWordsDB = [
   {
     "id": 30088,
     "en": "attention",
-    "kk": "/əˈtenʃn/",
+    "kk": "[əˋtɛnʃən]",
     "zh": "n. 注意力",
     "unit": 17,
     "example": "My shoes caught his attention.",
@@ -794,7 +794,7 @@ const jhWordsDB = [
   {
     "id": 30089,
     "en": "August",
-    "kk": "",
+    "kk": "[ˋɑɡəst]",
     "zh": "n. 八月",
     "unit": 17,
     "example": "Grouse shooting begins in August.",
@@ -803,7 +803,7 @@ const jhWordsDB = [
   {
     "id": 30090,
     "en": "aunt",
-    "kk": "",
+    "kk": "[ænt]",
     "zh": "n. 姑媽",
     "unit": 17,
     "example": "Aunt Emilie darned old socks.",
@@ -812,7 +812,7 @@ const jhWordsDB = [
   {
     "id": 30091,
     "en": "autumn",
-    "kk": "/ˈɔːtəm/",
+    "kk": "[ˋɔtəm]",
     "zh": "n. 秋天",
     "unit": 17,
     "example": "Autumn is my favourite season.",
@@ -821,7 +821,7 @@ const jhWordsDB = [
   {
     "id": 30092,
     "en": "available",
-    "kk": "/əˈveɪləbl/",
+    "kk": "[əˋveləbəl]",
     "zh": "adj. 可獲得的",
     "unit": 17,
     "example": "Ample free parking is available.",
@@ -830,7 +830,7 @@ const jhWordsDB = [
   {
     "id": 30093,
     "en": "avoid",
-    "kk": "/əˈvɔɪd/",
+    "kk": "[əˋvɔɪd]",
     "zh": "v. 避免",
     "unit": 17,
     "example": "We have tried to avoid any moralizing.",
@@ -839,7 +839,7 @@ const jhWordsDB = [
   {
     "id": 30094,
     "en": "away",
-    "kk": "/əˈweɪ/",
+    "kk": "[əˋwe]",
     "zh": "adv. 不在",
     "unit": 17,
     "example": "She walked quickly away.",
@@ -848,7 +848,7 @@ const jhWordsDB = [
   {
     "id": 30095,
     "en": "baby",
-    "kk": "",
+    "kk": "[ˋbebi]",
     "zh": "n. 嬰兒",
     "unit": 17,
     "example": "She dreamed about her baby.",
@@ -857,7 +857,7 @@ const jhWordsDB = [
   {
     "id": 30096,
     "en": "baby",
-    "kk": "",
+    "kk": "[ˋbebi]",
     "zh": "sitter. n. 保母",
     "unit": 17,
     "example": "She dreamed about her baby.",
@@ -866,7 +866,7 @@ const jhWordsDB = [
   {
     "id": 30097,
     "en": "back",
-    "kk": "/bæk/",
+    "kk": "[bæk]",
     "zh": "n. 背部",
     "unit": 17,
     "example": "Let's head back home.",
@@ -875,7 +875,7 @@ const jhWordsDB = [
   {
     "id": 30098,
     "en": "backward(s)",
-    "kk": "",
+    "kk": "[ˋbækwɚd(z)]",
     "zh": "adv. 向後地",
     "unit": 17,
     "example": "You have put your hat backward(s).",
@@ -884,7 +884,7 @@ const jhWordsDB = [
   {
     "id": 30099,
     "en": "bad",
-    "kk": "/bæd/",
+    "kk": "[bæd]",
     "zh": "adj. 壞的",
     "unit": 17,
     "example": "Divorce is bad for children.",
@@ -893,7 +893,7 @@ const jhWordsDB = [
   {
     "id": 30100,
     "en": "badminton",
-    "kk": "",
+    "kk": "[ˋbæd͵mɪntən]",
     "zh": "n. 羽毛球",
     "unit": 17,
     "example": "While playing badminton, I ruptured my Achilles tendon.",
@@ -902,7 +902,7 @@ const jhWordsDB = [
   {
     "id": 30101,
     "en": "bag",
-    "kk": "/bæɡ/",
+    "kk": "[bæɡ]",
     "zh": "n. 袋子",
     "unit": 17,
     "example": "Someone's left their bag behind.",
@@ -911,7 +911,7 @@ const jhWordsDB = [
   {
     "id": 30102,
     "en": "bake",
-    "kk": "/beɪk/",
+    "kk": "[bek]",
     "zh": "v. 烘烤",
     "unit": 17,
     "example": "Bake until the crust is golden.",
@@ -920,7 +920,7 @@ const jhWordsDB = [
   {
     "id": 30103,
     "en": "bakery",
-    "kk": "",
+    "kk": "[ˋbekɚi]",
     "zh": "n. 麵包店",
     "unit": 17,
     "example": "Start her own bakery.",
@@ -929,7 +929,7 @@ const jhWordsDB = [
   {
     "id": 30104,
     "en": "balcony",
-    "kk": "",
+    "kk": "[ˋbælkəni]",
     "zh": "n. 陽臺",
     "unit": 17,
     "example": "She drew me onto the balcony.",
@@ -938,7 +938,7 @@ const jhWordsDB = [
   {
     "id": 30105,
     "en": "ball",
-    "kk": "/bɔːl/",
+    "kk": "[bɔl]",
     "zh": "n. 球",
     "unit": 17,
     "example": "The ball rolled into the net.",
@@ -947,7 +947,7 @@ const jhWordsDB = [
   {
     "id": 30106,
     "en": "balloon",
-    "kk": "",
+    "kk": "[bəˋlun]",
     "zh": "n. 氣球",
     "unit": 17,
     "example": "A balloon suddenly went bang.",
@@ -956,7 +956,7 @@ const jhWordsDB = [
   {
     "id": 30107,
     "en": "banana",
-    "kk": "",
+    "kk": "[bəˋnænə]",
     "zh": "n. 香蕉",
     "unit": 17,
     "example": "He slipped on a banana skin.",
@@ -965,7 +965,7 @@ const jhWordsDB = [
   {
     "id": 30108,
     "en": "band",
-    "kk": "/bænd/",
+    "kk": "[bænd]",
     "zh": "n. 樂團",
     "unit": 17,
     "example": "The singer re-formed his band.",
@@ -974,7 +974,7 @@ const jhWordsDB = [
   {
     "id": 30109,
     "en": "bank",
-    "kk": "/bæŋk/",
+    "kk": "[bæŋk]",
     "zh": "n. 銀行",
     "unit": 17,
     "example": "The bank wired her the money.",
@@ -983,7 +983,7 @@ const jhWordsDB = [
   {
     "id": 30110,
     "en": "barbecue",
-    "kk": "",
+    "kk": "[ˋbɑrbɪ͵kju]",
     "zh": "v. 火烤",
     "unit": 17,
     "example": "Let's have a barbecue!",
@@ -992,7 +992,7 @@ const jhWordsDB = [
   {
     "id": 30111,
     "en": "barber",
-    "kk": "",
+    "kk": "[ˋbɑrbɚ]",
     "zh": "n. 理髮師",
     "unit": 17,
     "example": "I gave the barber a tip.",
@@ -1001,7 +1001,7 @@ const jhWordsDB = [
   {
     "id": 30112,
     "en": "bark",
-    "kk": "/bɑːrk/",
+    "kk": "[bɑrk]",
     "zh": "v. 吠叫",
     "unit": 17,
     "example": "Deer had stripped the tree of its bark.",
@@ -1010,7 +1010,7 @@ const jhWordsDB = [
   {
     "id": 30113,
     "en": "base",
-    "kk": "/beɪs/",
+    "kk": "[bes]",
     "zh": "n. 基礎",
     "unit": 17,
     "example": "He acted from base motives.",
@@ -1019,7 +1019,7 @@ const jhWordsDB = [
   {
     "id": 30114,
     "en": "baseball",
-    "kk": "",
+    "kk": "[ˋbeˋsbɔl]",
     "zh": "n. 棒球",
     "unit": 17,
     "example": "He often wore a baseball cap.",
@@ -1028,7 +1028,7 @@ const jhWordsDB = [
   {
     "id": 30115,
     "en": "basement",
-    "kk": "",
+    "kk": "[ˋbesmənt]",
     "zh": "n. 地下室",
     "unit": 17,
     "example": "Kitchen goods are sold in the basement.",
@@ -1037,7 +1037,7 @@ const jhWordsDB = [
   {
     "id": 30116,
     "en": "basic",
-    "kk": "/ˈbeɪsɪk/",
+    "kk": "[ˋbesɪk]",
     "zh": "adj. 基礎的",
     "unit": 17,
     "example": "Basic foodstuffs were in short supply.",
@@ -1046,7 +1046,7 @@ const jhWordsDB = [
   {
     "id": 30117,
     "en": "basket",
-    "kk": "",
+    "kk": "[ˋbæskət]",
     "zh": "n. 籃子",
     "unit": 17,
     "example": "There was a complimentary basket of fruit in our room.",
@@ -1055,7 +1055,7 @@ const jhWordsDB = [
   {
     "id": 30118,
     "en": "basketball",
-    "kk": "/ˈbæskɪtbɔːl/",
+    "kk": "[ˋbæskət͵bɔl]",
     "zh": "n. 籃球",
     "unit": 17,
     "example": "He coaches basketball and soccer.",
@@ -1064,7 +1064,7 @@ const jhWordsDB = [
   {
     "id": 30119,
     "en": "bat",
-    "kk": "/bæt/",
+    "kk": "[bæt]",
     "zh": "n. 蝙蝠",
     "unit": 17,
     "example": "I bolted the door the instant I saw the bat.",
@@ -1073,7 +1073,7 @@ const jhWordsDB = [
   {
     "id": 30120,
     "en": "bath",
-    "kk": "/bæθ/",
+    "kk": "[bæθ]",
     "zh": "n. 沐浴",
     "unit": 17,
     "example": "The baby loves bath time.",
@@ -1082,7 +1082,7 @@ const jhWordsDB = [
   {
     "id": 30121,
     "en": "bathe",
-    "kk": "",
+    "kk": "[beð]",
     "zh": "v. 沐浴",
     "unit": 17,
     "example": "Slowly, people began to bathe more frequently.",
@@ -1091,7 +1091,7 @@ const jhWordsDB = [
   {
     "id": 30122,
     "en": "bathroom",
-    "kk": "/ˈbæθruːm/",
+    "kk": "[ˋbæ͵θrum]",
     "zh": "n. 浴室",
     "unit": 17,
     "example": "The bathroom floor was awash.",
@@ -1100,7 +1100,7 @@ const jhWordsDB = [
   {
     "id": 30123,
     "en": "beach",
-    "kk": "/biːtʃ/",
+    "kk": "[bitʃ]",
     "zh": "n. 沙灘",
     "unit": 17,
     "example": "We cantered along the beach.",
@@ -1109,7 +1109,7 @@ const jhWordsDB = [
   {
     "id": 30124,
     "en": "bean",
-    "kk": "/biːn/",
+    "kk": "[bin]",
     "zh": "n. 豆子",
     "unit": 17,
     "example": "This is my favourite bean, and they are long bean.",
@@ -1118,7 +1118,7 @@ const jhWordsDB = [
   {
     "id": 30125,
     "en": "bear",
-    "kk": "/ber/",
+    "kk": "[bɛr]",
     "zh": "n. 熊",
     "unit": 17,
     "example": "'Bear' and 'bare' are homophonous.",
@@ -1127,7 +1127,7 @@ const jhWordsDB = [
   {
     "id": 30126,
     "en": "beard",
-    "kk": "/bɪrd/",
+    "kk": "[bɪrd]",
     "zh": "n. 鬍鬚",
     "unit": 17,
     "example": "He's had his beard shaved off.",
@@ -1136,7 +1136,7 @@ const jhWordsDB = [
   {
     "id": 30127,
     "en": "beat",
-    "kk": "/biːt/",
+    "kk": "[bit]",
     "zh": "v. 拍打",
     "unit": 17,
     "example": "You can't beat Italian shoes.",
@@ -1145,7 +1145,7 @@ const jhWordsDB = [
   {
     "id": 30128,
     "en": "beautiful",
-    "kk": "/ˈbjuːtɪfl/",
+    "kk": "[ˋbjutəfəl]",
     "zh": "adj. 美麗的",
     "unit": 17,
     "example": "It was a beautiful morning.",
@@ -1154,7 +1154,7 @@ const jhWordsDB = [
   {
     "id": 30129,
     "en": "beauty",
-    "kk": "/ˈbjuːti/",
+    "kk": "[ˋbjuti]",
     "zh": "n. 美貌",
     "unit": 17,
     "example": "Her beauty appeared ageless.",
@@ -1163,7 +1163,7 @@ const jhWordsDB = [
   {
     "id": 30130,
     "en": "because",
-    "kk": "/bɪˈkɔːz/",
+    "kk": "[bɪˋkɔz]",
     "zh": "conj. 因為",
     "unit": 17,
     "example": "They are here because of us.",
@@ -1172,7 +1172,7 @@ const jhWordsDB = [
   {
     "id": 30131,
     "en": "become",
-    "kk": "/bɪˈkʌm/",
+    "kk": "[bɪˋkʌm]",
     "zh": "v. 成為",
     "unit": 17,
     "example": "Doctors become inured to death.",
@@ -1181,7 +1181,7 @@ const jhWordsDB = [
   {
     "id": 30132,
     "en": "bed",
-    "kk": "/bed/",
+    "kk": "[bɛd]",
     "zh": "n. 床",
     "unit": 17,
     "example": "It's such a comfortable bed.",
@@ -1190,7 +1190,7 @@ const jhWordsDB = [
   {
     "id": 30133,
     "en": "bedroom",
-    "kk": "/ˈbedruːm/",
+    "kk": "[ˋbɛ͵drum]",
     "zh": "n. 臥室",
     "unit": 17,
     "example": "The main bedroom is enormous.",
@@ -1199,7 +1199,7 @@ const jhWordsDB = [
   {
     "id": 30134,
     "en": "bee",
-    "kk": "/biː/",
+    "kk": "[bi]",
     "zh": "n. 蜜蜂",
     "unit": 17,
     "example": "The flower opens to reveal a bee.",
@@ -1208,7 +1208,7 @@ const jhWordsDB = [
   {
     "id": 30135,
     "en": "beef",
-    "kk": "/biːf/",
+    "kk": "[bif]",
     "zh": "n. 牛肉",
     "unit": 17,
     "example": "The nation also exports beef.",
@@ -1217,7 +1217,7 @@ const jhWordsDB = [
   {
     "id": 30136,
     "en": "beer",
-    "kk": "/bɪr/",
+    "kk": "[bɪr]",
     "zh": "n. 啤酒",
     "unit": 17,
     "example": "Are you a beer drinker?",
@@ -1226,7 +1226,7 @@ const jhWordsDB = [
   {
     "id": 30137,
     "en": "before",
-    "kk": "/bɪˈfɔːr/",
+    "kk": "[bɪˋfɔr]",
     "zh": "conj. 在...之前",
     "unit": 17,
     "example": "We should arrive before dark.",
@@ -1235,7 +1235,7 @@ const jhWordsDB = [
   {
     "id": 30138,
     "en": "begin",
-    "kk": "/bɪˈɡɪn/",
+    "kk": "[bɪˋɡɪn]",
     "zh": "v. 開始",
     "unit": 17,
     "example": "Their trial will shortly begin.",
@@ -1244,7 +1244,7 @@ const jhWordsDB = [
   {
     "id": 30139,
     "en": "beginner",
-    "kk": "",
+    "kk": "[bɪˋɡɪnɚ]",
     "zh": "n. 初學者",
     "unit": 17,
     "example": "The white belt signifies that he's an absolute beginner.",
@@ -1253,7 +1253,7 @@ const jhWordsDB = [
   {
     "id": 30140,
     "en": "beginning",
-    "kk": "/bɪˈɡɪnɪŋ/",
+    "kk": "[bɪˋɡɪnɪŋ]",
     "zh": "n. 開始",
     "unit": 17,
     "example": "The snow was beginning to melt.",
@@ -1262,7 +1262,7 @@ const jhWordsDB = [
   {
     "id": 30141,
     "en": "behave",
-    "kk": "/bɪˈheɪv/",
+    "kk": "[bɪˋhev]",
     "zh": "v. 表現",
     "unit": 17,
     "example": "Will you kids just behave!",
@@ -1271,7 +1271,7 @@ const jhWordsDB = [
   {
     "id": 30142,
     "en": "behind",
-    "kk": "/bɪˈhaɪnd/",
+    "kk": "[bɪˋhaɪnd]",
     "zh": "adv. 在之後",
     "unit": 17,
     "example": "She heard footsteps behind her.",
@@ -1280,7 +1280,7 @@ const jhWordsDB = [
   {
     "id": 30143,
     "en": "believe",
-    "kk": "/bɪˈliːv/",
+    "kk": "[bɪˋliv]",
     "zh": "v. 相信",
     "unit": 17,
     "example": "They don't believe in marriage.",
@@ -1289,7 +1289,7 @@ const jhWordsDB = [
   {
     "id": 30144,
     "en": "bell",
-    "kk": "/bel/",
+    "kk": "[bɛl]",
     "zh": "n. 鈴",
     "unit": 17,
     "example": "The shop bell jangled loudly.",
@@ -1298,7 +1298,7 @@ const jhWordsDB = [
   {
     "id": 30145,
     "en": "belong",
-    "kk": "/bɪˈlɔːŋ/",
+    "kk": "[bɪˋlɔŋ]",
     "zh": "v. 屬於",
     "unit": 17,
     "example": "The islands belong to Spain.",
@@ -1307,7 +1307,7 @@ const jhWordsDB = [
   {
     "id": 30146,
     "en": "below",
-    "kk": "/bɪˈloʊ/",
+    "kk": "[bɪˋlo]",
     "zh": "adv. 在下面",
     "unit": 17,
     "example": "It's 15 degrees below freezing.",
@@ -1316,7 +1316,7 @@ const jhWordsDB = [
   {
     "id": 30147,
     "en": "belt",
-    "kk": "/belt/",
+    "kk": "[bɛlt]",
     "zh": "n. 皮帶",
     "unit": 17,
     "example": "We live in the commuter belt.",
@@ -1325,7 +1325,7 @@ const jhWordsDB = [
   {
     "id": 30148,
     "en": "bench",
-    "kk": "/bentʃ/",
+    "kk": "[bɛntʃ]",
     "zh": "n. 長凳",
     "unit": 17,
     "example": "We sat primly at either end of a long bench.",
@@ -1334,7 +1334,7 @@ const jhWordsDB = [
   {
     "id": 30149,
     "en": "besides",
-    "kk": "/bɪˈsaɪdz/",
+    "kk": "[bɪˋsaɪdz]",
     "zh": "adv. 此外",
     "unit": 17,
     "example": "I've got no family besides my parents.",
@@ -1343,7 +1343,7 @@ const jhWordsDB = [
   {
     "id": 30150,
     "en": "between",
-    "kk": "/bɪˈtwiːn/",
+    "kk": "[bɪtˋwin]",
     "zh": "prep. 在...之間",
     "unit": 17,
     "example": "He toggled between the two windows.",
@@ -1352,7 +1352,7 @@ const jhWordsDB = [
   {
     "id": 30151,
     "en": "beyond",
-    "kk": "/bɪˈjɑːnd/",
+    "kk": "[bɪˋɑnd]",
     "zh": "prep. 超出",
     "unit": 17,
     "example": "Her honesty is beyond question.",
@@ -1361,7 +1361,7 @@ const jhWordsDB = [
   {
     "id": 30152,
     "en": "bicycle",
-    "kk": "/ˈbaɪsɪkl/",
+    "kk": "[ˋbaɪsɪkəl]",
     "zh": "n. 腳踏車",
     "unit": 17,
     "example": "Oscar had a new bicycle.",
@@ -1370,7 +1370,7 @@ const jhWordsDB = [
   {
     "id": 30153,
     "en": "big",
-    "kk": "/bɪɡ/",
+    "kk": "[bɪɡ]",
     "zh": "adj. 大的",
     "unit": 17,
     "example": "This shirt isn't big enough.",
@@ -1379,7 +1379,7 @@ const jhWordsDB = [
   {
     "id": 30154,
     "en": "bill",
-    "kk": "/bɪl/",
+    "kk": "[bɪl]",
     "zh": "n. 帳單;鈔票",
     "unit": 17,
     "example": "Your bill includes line rental.",
@@ -1388,7 +1388,7 @@ const jhWordsDB = [
   {
     "id": 30155,
     "en": "biology",
-    "kk": "/baɪˈɑːlədʒi/",
+    "kk": "[baɪˋɑlədʒi]",
     "zh": "n. 生物學",
     "unit": 17,
     "example": "Biology is my favourite subject.",
@@ -1397,7 +1397,7 @@ const jhWordsDB = [
   {
     "id": 30156,
     "en": "bird",
-    "kk": "/bɜːrd/",
+    "kk": "[bɝd]",
     "zh": "n. 鳥",
     "unit": 17,
     "example": "The bird continued to warble.",
@@ -1406,7 +1406,7 @@ const jhWordsDB = [
   {
     "id": 30157,
     "en": "birthday",
-    "kk": "/ˈbɜːrθdeɪ/",
+    "kk": "[ˋbɝθ͵de]",
     "zh": "n. 生日",
     "unit": 17,
     "example": "We threw a huge birthday party.",
@@ -1415,7 +1415,7 @@ const jhWordsDB = [
   {
     "id": 30158,
     "en": "bite",
-    "kk": "/baɪt/",
+    "kk": "[baɪt]",
     "zh": "v. 咬",
     "unit": 17,
     "example": "Most European spiders don't bite.",
@@ -1424,7 +1424,7 @@ const jhWordsDB = [
   {
     "id": 30159,
     "en": "bitter",
-    "kk": "/ˈbɪtər/",
+    "kk": "[ˋbɪtɚ]",
     "zh": "adj. 痛苦的",
     "unit": 17,
     "example": "The leaves taste rather bitter.",
@@ -1433,7 +1433,7 @@ const jhWordsDB = [
   {
     "id": 30160,
     "en": "black",
-    "kk": "/blæk/",
+    "kk": "[blæk]",
     "zh": "adj. 黑的",
     "unit": 17,
     "example": "The exhaust streamed black smoke.",
@@ -1442,7 +1442,7 @@ const jhWordsDB = [
   {
     "id": 30161,
     "en": "blackboard",
-    "kk": "",
+    "kk": "[ˋblæk͵bɔrd]",
     "zh": "n. 黑板",
     "unit": 17,
     "example": "The menu was on a blackboard.",
@@ -1451,7 +1451,7 @@ const jhWordsDB = [
   {
     "id": 30162,
     "en": "blame",
-    "kk": "/bleɪm/",
+    "kk": "[blem]",
     "zh": "v. 責怪",
     "unit": 17,
     "example": "No blame attaches to you.",
@@ -1460,7 +1460,7 @@ const jhWordsDB = [
   {
     "id": 30163,
     "en": "blank",
-    "kk": "/blæŋk/",
+    "kk": "[blæŋk]",
     "zh": "adj. 空白的",
     "unit": 17,
     "example": "Do we have a blank video ?",
@@ -1469,7 +1469,7 @@ const jhWordsDB = [
   {
     "id": 30164,
     "en": "blanket",
-    "kk": "/ˈblæŋkɪt/",
+    "kk": "[ˋblæŋkət]",
     "zh": "n. 毯子",
     "unit": 17,
     "example": "I wrapped a blanket around the baby.",
@@ -1478,7 +1478,7 @@ const jhWordsDB = [
   {
     "id": 30165,
     "en": "blind",
-    "kk": "/blaɪnd/",
+    "kk": "[blaɪnd]",
     "zh": "adj. 失明的",
     "unit": 17,
     "example": "Doctors think he will go blind.",
@@ -1487,7 +1487,7 @@ const jhWordsDB = [
   {
     "id": 30166,
     "en": "block",
-    "kk": "/blɑːk/",
+    "kk": "[blɑk]",
     "zh": "n. 街區",
     "unit": 17,
     "example": "Block draughts around doors and windows.",
@@ -1496,7 +1496,7 @@ const jhWordsDB = [
   {
     "id": 30167,
     "en": "blood",
-    "kk": "/blʌd/",
+    "kk": "[blʌd]",
     "zh": "n. 血",
     "unit": 17,
     "example": "The wound was oozing blood.",
@@ -1505,7 +1505,7 @@ const jhWordsDB = [
   {
     "id": 30168,
     "en": "bloody",
-    "kk": "",
+    "kk": "[ˋblʌdi]",
     "zh": "adj. 血腥的",
     "unit": 17,
     "example": "She did bloody well to win that race.",
@@ -1514,7 +1514,7 @@ const jhWordsDB = [
   {
     "id": 30169,
     "en": "blow",
-    "kk": "/bloʊ/",
+    "kk": "[blo]",
     "zh": "v. 吹",
     "unit": 17,
     "example": "Blow! I completely forgot it.",
@@ -1523,7 +1523,7 @@ const jhWordsDB = [
   {
     "id": 30170,
     "en": "blue",
-    "kk": "/bluː/",
+    "kk": "[blu]",
     "zh": "adj. 藍的",
     "unit": 17,
     "example": "His eyes were piercingly blue.",
@@ -1532,7 +1532,7 @@ const jhWordsDB = [
   {
     "id": 30171,
     "en": "boat",
-    "kk": "/boʊt/",
+    "kk": "[bot]",
     "zh": "n. 船",
     "unit": 17,
     "example": "The boat chugged slowly along.",
@@ -1541,7 +1541,7 @@ const jhWordsDB = [
   {
     "id": 30172,
     "en": "body",
-    "kk": "/ˈbɑːdi/",
+    "kk": "[ˋbɑdi]",
     "zh": "n. 身體",
     "unit": 17,
     "example": "Exercise tones up your body.",
@@ -1550,7 +1550,7 @@ const jhWordsDB = [
   {
     "id": 30173,
     "en": "boil",
-    "kk": "/bɔɪl/",
+    "kk": "[bɔɪl]",
     "zh": "v. 燒開",
     "unit": 17,
     "example": "She put some potatoes on to boil.",
@@ -1559,7 +1559,7 @@ const jhWordsDB = [
   {
     "id": 30174,
     "en": "bomb",
-    "kk": "/bɑːm/",
+    "kk": "[bɑm]",
     "zh": "n. 炸彈",
     "unit": 17,
     "example": "The bomb has been safely disposed of.",
@@ -1568,7 +1568,7 @@ const jhWordsDB = [
   {
     "id": 30175,
     "en": "bone",
-    "kk": "/boʊn/",
+    "kk": "[bon]",
     "zh": "n. 骨頭",
     "unit": 17,
     "example": "The dog was gnawing a bone.",
@@ -1577,7 +1577,7 @@ const jhWordsDB = [
   {
     "id": 30176,
     "en": "book",
-    "kk": "/bʊk/",
+    "kk": "[bʊk]",
     "zh": "n. 書",
     "unit": 17,
     "example": "Shoot! I've forgotten my book!",
@@ -1586,7 +1586,7 @@ const jhWordsDB = [
   {
     "id": 30177,
     "en": "bookcase",
-    "kk": "",
+    "kk": "[ˋbʊk͵kes]",
     "zh": "n. 書櫥",
     "unit": 17,
     "example": "The bookcase is screwed to the wall.",
@@ -1595,7 +1595,7 @@ const jhWordsDB = [
   {
     "id": 30178,
     "en": "bored",
-    "kk": "",
+    "kk": "[bɔrd]",
     "zh": "adj. 厭倦的",
     "unit": 17,
     "example": "The boys were getting bored.",
@@ -1604,7 +1604,7 @@ const jhWordsDB = [
   {
     "id": 30179,
     "en": "born",
-    "kk": "/bɔːrn/",
+    "kk": "[bɔrn]",
     "zh": "adj. 天生的",
     "unit": 17,
     "example": "Some people are born brainy.",
@@ -1613,7 +1613,7 @@ const jhWordsDB = [
   {
     "id": 30180,
     "en": "borrow",
-    "kk": "/ˈbɑːroʊ/",
+    "kk": "[ˋbɑr͵o]",
     "zh": "v. 借",
     "unit": 17,
     "example": "Can I borrow your calculator?",
@@ -1622,7 +1622,7 @@ const jhWordsDB = [
   {
     "id": 30181,
     "en": "boss",
-    "kk": "/bɔːs/",
+    "kk": "[bɑs]",
     "zh": "n. 老闆",
     "unit": 17,
     "example": "His boss has a foul temper.",
@@ -1631,7 +1631,7 @@ const jhWordsDB = [
   {
     "id": 30182,
     "en": "both",
-    "kk": "/boʊθ/",
+    "kk": "[boθ]",
     "zh": "pron. 兩者",
     "unit": 17,
     "example": "Both partners shared childcare.",
@@ -1640,7 +1640,7 @@ const jhWordsDB = [
   {
     "id": 30183,
     "en": "bother",
-    "kk": "/ˈbɑːðər/",
+    "kk": "[ˋbɑðɚ]",
     "zh": "v. 使煩惱",
     "unit": 17,
     "example": "I hope I haven't been a bother.",
@@ -1649,7 +1649,7 @@ const jhWordsDB = [
   {
     "id": 30184,
     "en": "bottle",
-    "kk": "/ˈbɑːtl/",
+    "kk": "[ˋbɑtəl]",
     "zh": "n. 瓶子",
     "unit": 17,
     "example": "Shall I open another bottle?",
@@ -1658,7 +1658,7 @@ const jhWordsDB = [
   {
     "id": 30185,
     "en": "bottom",
-    "kk": "/ˈbɑːtəm/",
+    "kk": "[ˋbɑtəm]",
     "zh": "n. 底部",
     "unit": 17,
     "example": "The marriage had reached rock bottom.",
@@ -1667,7 +1667,7 @@ const jhWordsDB = [
   {
     "id": 30186,
     "en": "bow",
-    "kk": "",
+    "kk": "[baʊ]",
     "zh": "n. 弓",
     "unit": 17,
     "example": "He was armed with a bow and arrow.",
@@ -1676,7 +1676,7 @@ const jhWordsDB = [
   {
     "id": 30187,
     "en": "bowl",
-    "kk": "/boʊl/",
+    "kk": "[bol]",
     "zh": "n. 碗",
     "unit": 17,
     "example": "She served him a bowl of beef stew.",
@@ -1685,7 +1685,7 @@ const jhWordsDB = [
   {
     "id": 30188,
     "en": "bowling",
-    "kk": "",
+    "kk": "[ˋbolɪŋ]",
     "zh": "n. 保齡球",
     "unit": 17,
     "example": "They go in for tennis and bowling.",
@@ -1694,7 +1694,7 @@ const jhWordsDB = [
   {
     "id": 30189,
     "en": "box",
-    "kk": "/bɑːks/",
+    "kk": "[bɑks]",
     "zh": "n. 箱子",
     "unit": 17,
     "example": "She was holding a large box.",
@@ -1703,7 +1703,7 @@ const jhWordsDB = [
   {
     "id": 30190,
     "en": "boy",
-    "kk": "/bɔɪ/",
+    "kk": "[bɔɪ]",
     "zh": "n. 男孩",
     "unit": 17,
     "example": "The boy has great potential.",
@@ -1712,7 +1712,7 @@ const jhWordsDB = [
   {
     "id": 30191,
     "en": "brain",
-    "kk": "/breɪn/",
+    "kk": "[bren]",
     "zh": "n. 腦",
     "unit": 17,
     "example": "Alcohol acts quickly on the brain.",
@@ -1721,7 +1721,7 @@ const jhWordsDB = [
   {
     "id": 30192,
     "en": "branch",
-    "kk": "/bræntʃ/",
+    "kk": "[bræntʃ]",
     "zh": "n. 分店",
     "unit": 17,
     "example": "He chopped a branch off the tree.",
@@ -1730,7 +1730,7 @@ const jhWordsDB = [
   {
     "id": 30193,
     "en": "brand",
-    "kk": "/brænd/",
+    "kk": "[brænd]",
     "zh": "n. 品牌",
     "unit": 17,
     "example": "Choose whichever brand you prefer.",
@@ -1739,7 +1739,7 @@ const jhWordsDB = [
   {
     "id": 30194,
     "en": "brave",
-    "kk": "/breɪv/",
+    "kk": "[brev]",
     "zh": "adj. 勇敢的",
     "unit": 17,
     "example": "Charles was brave and remarkably good-humoured.",
@@ -1748,7 +1748,7 @@ const jhWordsDB = [
   {
     "id": 30195,
     "en": "bread",
-    "kk": "/bred/",
+    "kk": "[brɛd]",
     "zh": "n. 麵包",
     "unit": 17,
     "example": "The bread had a spongy texture.",
@@ -1757,7 +1757,7 @@ const jhWordsDB = [
   {
     "id": 30196,
     "en": "break",
-    "kk": "/breɪk/",
+    "kk": "[brek]",
     "zh": "v. 弄壞",
     "unit": 17,
     "example": "You need a break from routine.",
@@ -1766,7 +1766,7 @@ const jhWordsDB = [
   {
     "id": 30197,
     "en": "breakfast",
-    "kk": "/ˈbrekfəst/",
+    "kk": "[ˋbrɛkfəst]",
     "zh": "n. 早餐",
     "unit": 17,
     "example": "Your breakfast is coming soon.",
@@ -1775,7 +1775,7 @@ const jhWordsDB = [
   {
     "id": 30198,
     "en": "brick",
-    "kk": "/brɪk/",
+    "kk": "[brɪk]",
     "zh": "n. 磚塊",
     "unit": 17,
     "example": "The school is built of brick.",
@@ -1784,7 +1784,7 @@ const jhWordsDB = [
   {
     "id": 30199,
     "en": "bridge",
-    "kk": "/brɪdʒ/",
+    "kk": "[brɪdʒ]",
     "zh": "n. 橋",
     "unit": 17,
     "example": "When was the bridge constructed?",
@@ -1793,7 +1793,7 @@ const jhWordsDB = [
   {
     "id": 30200,
     "en": "brief",
-    "kk": "/briːf/",
+    "kk": "[brif]",
     "zh": "adj. 短暫的",
     "unit": 17,
     "example": "He let out a brief cackle.",
@@ -1802,7 +1802,7 @@ const jhWordsDB = [
   {
     "id": 30201,
     "en": "bright",
-    "kk": "/braɪt/",
+    "kk": "[braɪt]",
     "zh": "adj. 明亮的",
     "unit": 17,
     "example": "Bright colours are his signature.",
@@ -1811,7 +1811,7 @@ const jhWordsDB = [
   {
     "id": 30202,
     "en": "bring",
-    "kk": "/brɪŋ/",
+    "kk": "[brɪŋ]",
     "zh": "v. 帶來",
     "unit": 17,
     "example": "All you need bring are sheets.",
@@ -1820,7 +1820,7 @@ const jhWordsDB = [
   {
     "id": 30203,
     "en": "broad",
-    "kk": "/brɔːd/",
+    "kk": "[brɔd]",
     "zh": "adj. 寬闊的",
     "unit": 17,
     "example": "He is tall, broad and muscular.",
@@ -1829,7 +1829,7 @@ const jhWordsDB = [
   {
     "id": 30204,
     "en": "broadcast",
-    "kk": "/ˈbrɔːdkæst/",
+    "kk": "[ˋbrɔd͵kæst]",
     "zh": "v. 廣播",
     "unit": 17,
     "example": "The programme was broadcast nationally.",
@@ -1838,7 +1838,7 @@ const jhWordsDB = [
   {
     "id": 30205,
     "en": "brother",
-    "kk": "/ˈbrʌðər/",
+    "kk": "[ˋbrʌðɚ]",
     "zh": "n. 兄弟",
     "unit": 17,
     "example": "She's smarter than her brother.",
@@ -1847,7 +1847,7 @@ const jhWordsDB = [
   {
     "id": 30206,
     "en": "brown",
-    "kk": "/braʊn/",
+    "kk": "[braʊn]",
     "zh": "adj. 棕色的",
     "unit": 17,
     "example": "He removed his brown slip-ons.",
@@ -1856,7 +1856,7 @@ const jhWordsDB = [
   {
     "id": 30207,
     "en": "brunch",
-    "kk": "",
+    "kk": "[brʌntʃ]",
     "zh": "n. 早午餐",
     "unit": 17,
     "example": "What time is brunch?",
@@ -1865,7 +1865,7 @@ const jhWordsDB = [
   {
     "id": 30208,
     "en": "brush",
-    "kk": "/brʌʃ/",
+    "kk": "[brʌʃ]",
     "zh": "n. 刷子",
     "unit": 17,
     "example": "Brush beaten egg over the pastry.",
@@ -1874,7 +1874,7 @@ const jhWordsDB = [
   {
     "id": 30209,
     "en": "bucket",
-    "kk": "",
+    "kk": "[ˋbʌkət]",
     "zh": "n. 桶子",
     "unit": 17,
     "example": "She ran hot water into the bucket.",
@@ -1883,7 +1883,7 @@ const jhWordsDB = [
   {
     "id": 30210,
     "en": "buffet",
-    "kk": "",
+    "kk": "[ˋbʌfət]",
     "zh": "n. 自助餐",
     "unit": 17,
     "example": "Dinner will be a cold buffet, not a sit-down meal.",
@@ -1892,7 +1892,7 @@ const jhWordsDB = [
   {
     "id": 30211,
     "en": "bug",
-    "kk": "",
+    "kk": "[bʌɡ]",
     "zh": "n. 昆蟲",
     "unit": 17,
     "example": "I only did it to bug my parents.",
@@ -1901,7 +1901,7 @@ const jhWordsDB = [
   {
     "id": 30212,
     "en": "build",
-    "kk": "/bɪld/",
+    "kk": "[bɪld]",
     "zh": "v. 建造",
     "unit": 17,
     "example": "There are no plans to build new offices.",
@@ -1910,7 +1910,7 @@ const jhWordsDB = [
   {
     "id": 30213,
     "en": "building",
-    "kk": "/ˈbɪldɪŋ/",
+    "kk": "[ˋbɪldɪŋ]",
     "zh": "n. 建築物",
     "unit": 17,
     "example": "The building soared above us.",
@@ -1919,7 +1919,7 @@ const jhWordsDB = [
   {
     "id": 30214,
     "en": "bun",
-    "kk": "",
+    "kk": "[bʌn]",
     "zh": "n. 圓麵包",
     "unit": 17,
     "example": "She wore her hair in a bun.",
@@ -1928,7 +1928,7 @@ const jhWordsDB = [
   {
     "id": 30215,
     "en": "bundle",
-    "kk": "",
+    "kk": "[ˋbʌndəl]",
     "zh": "n. (一)包,束",
     "unit": 17,
     "example": "That car must have cost a bundle.",
@@ -1937,7 +1937,7 @@ const jhWordsDB = [
   {
     "id": 30216,
     "en": "burn",
-    "kk": "/bɜːrn/",
+    "kk": "[bɝn]",
     "zh": "v. 燒",
     "unit": 17,
     "example": "Turn the heat down or it'll burn.",
@@ -1946,7 +1946,7 @@ const jhWordsDB = [
   {
     "id": 30217,
     "en": "burst",
-    "kk": "/bɜːrst/",
+    "kk": "[bɝst]",
     "zh": "v. 爆裂",
     "unit": 17,
     "example": "The class burst out laughing.",
@@ -1955,7 +1955,7 @@ const jhWordsDB = [
   {
     "id": 30218,
     "en": "bus",
-    "kk": "/bʌs/",
+    "kk": "[bʌs]",
     "zh": "n. 公車",
     "unit": 17,
     "example": "The bus bounced down the hill.",
@@ -1964,7 +1964,7 @@ const jhWordsDB = [
   {
     "id": 30219,
     "en": "business",
-    "kk": "/ˈbɪznəs/",
+    "kk": "[ˋbɪznəs]",
     "zh": "n. 商業",
     "unit": 17,
     "example": "They flew business class.",
@@ -1973,7 +1973,7 @@ const jhWordsDB = [
   {
     "id": 30220,
     "en": "businessman",
-    "kk": "",
+    "kk": "[ˋbɪznə͵smæn]",
     "zh": "n. 商人",
     "unit": 17,
     "example": "Warren was an adventurous businessman.",
@@ -1982,7 +1982,7 @@ const jhWordsDB = [
   {
     "id": 30221,
     "en": "busy",
-    "kk": "/ˈbɪzi/",
+    "kk": "[ˋbɪzi]",
     "zh": "adj. 忙碌的",
     "unit": 17,
     "example": "We're not always this busy!",
@@ -1991,7 +1991,7 @@ const jhWordsDB = [
   {
     "id": 30222,
     "en": "but",
-    "kk": "/bʌt/",
+    "kk": "[bʌt]",
     "zh": "conj. 但是",
     "unit": 17,
     "example": "I'm married, but we're separated.",
@@ -2000,7 +2000,7 @@ const jhWordsDB = [
   {
     "id": 30223,
     "en": "butter",
-    "kk": "/ˈbʌtər/",
+    "kk": "[ˋbʌtɚ]",
     "zh": "n. 奶油",
     "unit": 17,
     "example": "Butter is perishable and can go rancid.",
@@ -2009,7 +2009,7 @@ const jhWordsDB = [
   {
     "id": 30224,
     "en": "butterfly",
-    "kk": "",
+    "kk": "[ˋbʌtɚf͵laɪ]",
     "zh": "n. 蝴蝶",
     "unit": 17,
     "example": "The butterfly fluttered from flower to flower.",
@@ -2018,7 +2018,7 @@ const jhWordsDB = [
   {
     "id": 30225,
     "en": "button",
-    "kk": "/ˈbʌtn/",
+    "kk": "[ˋbʌtən]",
     "zh": "n. 鈕扣",
     "unit": 17,
     "example": "This button is for adjusting the volume.",
@@ -2027,7 +2027,7 @@ const jhWordsDB = [
   {
     "id": 30226,
     "en": "buy",
-    "kk": "/baɪ/",
+    "kk": "[baɪ]",
     "zh": "v. 買",
     "unit": 17,
     "example": "Money can't buy you happiness.",
@@ -2036,7 +2036,7 @@ const jhWordsDB = [
   {
     "id": 30227,
     "en": "by",
-    "kk": "/baɪ/",
+    "kk": "[baɪ]",
     "zh": "prep. 沿;用...方法",
     "unit": 17,
     "example": "They sleep by day and hunt by night.",
@@ -2045,7 +2045,7 @@ const jhWordsDB = [
   {
     "id": 30228,
     "en": "cabbage",
-    "kk": "",
+    "kk": "[ˋkæbədʒ]",
     "zh": "n. 甘藍菜",
     "unit": 17,
     "example": "I've always hated cabbage.",
@@ -2054,7 +2054,7 @@ const jhWordsDB = [
   {
     "id": 30229,
     "en": "cable",
-    "kk": "/ˈkeɪbl/",
+    "kk": "[ˋkebəl]",
     "zh": "n. 電纜",
     "unit": 17,
     "example": "Rats had gnawed through the cable.",
@@ -2063,7 +2063,7 @@ const jhWordsDB = [
   {
     "id": 30230,
     "en": "cafeteria",
-    "kk": "",
+    "kk": "[͵kæfəˋtɪriə]",
     "zh": "n. 自助餐廳",
     "unit": 17,
     "example": "Does the college cafeteria provide a healthful diet?",
@@ -2072,7 +2072,7 @@ const jhWordsDB = [
   {
     "id": 30231,
     "en": "cage",
-    "kk": "",
+    "kk": "[kedʒ]",
     "zh": "n. 鳥籠",
     "unit": 17,
     "example": "The cage smelled of excrement.",
@@ -2081,7 +2081,7 @@ const jhWordsDB = [
   {
     "id": 30232,
     "en": "cake",
-    "kk": "/keɪk/",
+    "kk": "[kek]",
     "zh": "n. 蛋糕",
     "unit": 17,
     "example": "That cake looks very tempting.",
@@ -2090,7 +2090,7 @@ const jhWordsDB = [
   {
     "id": 30233,
     "en": "calendar",
-    "kk": "",
+    "kk": "[ˋkæləndɚ]",
     "zh": "n. 日曆",
     "unit": 17,
     "example": "This is one of the biggest weeks in the racing calendar.",
@@ -2099,7 +2099,7 @@ const jhWordsDB = [
   {
     "id": 30234,
     "en": "call",
-    "kk": "/kɔːl/",
+    "kk": "[kɔl]",
     "zh": "n. 呼叫",
     "unit": 17,
     "example": "Can we call television art?",
@@ -2108,7 +2108,7 @@ const jhWordsDB = [
   {
     "id": 30235,
     "en": "calm",
-    "kk": "/kɑːm/",
+    "kk": "[kɑm]",
     "zh": "adj. 平靜的",
     "unit": 17,
     "example": "Her voice was surprisingly calm.",
@@ -2117,7 +2117,7 @@ const jhWordsDB = [
   {
     "id": 30236,
     "en": "camera",
-    "kk": "/ˈkæmərə/",
+    "kk": "[ˋkæmɚə]",
     "zh": "n. 照相機",
     "unit": 17,
     "example": "The camera whirred and clicked.",
@@ -2126,7 +2126,7 @@ const jhWordsDB = [
   {
     "id": 30237,
     "en": "camp",
-    "kk": "/kæmp/",
+    "kk": "[kæmp]",
     "zh": "v. 紮營",
     "unit": 17,
     "example": "He spent two weeks at camp this summer.",
@@ -2135,7 +2135,7 @@ const jhWordsDB = [
   {
     "id": 30238,
     "en": "campus",
-    "kk": "/ˈkæmpəs/",
+    "kk": "[ˋkæmpəs]",
     "zh": "n. 校園",
     "unit": 17,
     "example": "There are three dining halls on campus.",
@@ -2144,7 +2144,7 @@ const jhWordsDB = [
   {
     "id": 30239,
     "en": "can",
-    "kk": "/kæn/",
+    "kk": "[kæn]",
     "zh": "aux. 能夠",
     "unit": 17,
     "example": "Can you last (out) until I can get help?",
@@ -2153,7 +2153,7 @@ const jhWordsDB = [
   {
     "id": 30240,
     "en": "cancel",
-    "kk": "/ˈkænsəl/",
+    "kk": "[ˋkænsəl]",
     "zh": "v. 取消",
     "unit": 17,
     "example": "The customer called to cancel.",
@@ -2162,7 +2162,7 @@ const jhWordsDB = [
   {
     "id": 30241,
     "en": "cancer",
-    "kk": "/ˈkænsər/",
+    "kk": "[ˋkænsɚ]",
     "zh": "n. 癌症",
     "unit": 17,
     "example": "He has terminal lung cancer.",
@@ -2171,7 +2171,7 @@ const jhWordsDB = [
   {
     "id": 30242,
     "en": "candle",
-    "kk": "",
+    "kk": "[ˋkændəl]",
     "zh": "n. 蠟燭",
     "unit": 17,
     "example": "I blew out the candle.",
@@ -2180,7 +2180,7 @@ const jhWordsDB = [
   {
     "id": 30243,
     "en": "candy",
-    "kk": "",
+    "kk": "[ˋkændi]",
     "zh": "n. 糖果",
     "unit": 17,
     "example": "Who wants the last piece of candy?",
@@ -2189,7 +2189,7 @@ const jhWordsDB = [
   {
     "id": 30244,
     "en": "cap",
-    "kk": "",
+    "kk": "[kæp]",
     "zh": "n. 帽子",
     "unit": 17,
     "example": "He often wore a baseball cap.",
@@ -2198,7 +2198,7 @@ const jhWordsDB = [
   {
     "id": 30245,
     "en": "captain",
-    "kk": "/ˈkæptən/",
+    "kk": "[ˋkæptən]",
     "zh": "n. 隊長",
     "unit": 17,
     "example": "This is the captain speaking.",
@@ -2207,7 +2207,7 @@ const jhWordsDB = [
   {
     "id": 30246,
     "en": "car",
-    "kk": "/kɑːr/",
+    "kk": "[kɑr]",
     "zh": "n. 車子",
     "unit": 17,
     "example": "Buddy totalled his car.",
@@ -2216,7 +2216,7 @@ const jhWordsDB = [
   {
     "id": 30247,
     "en": "card",
-    "kk": "/kɑːrd/",
+    "kk": "[kɑrd]",
     "zh": "n. 卡片",
     "unit": 17,
     "example": "Simon's a whiz at card games.",
@@ -2225,7 +2225,7 @@ const jhWordsDB = [
   {
     "id": 30248,
     "en": "care",
-    "kk": "/ker/",
+    "kk": "[kɛr]",
     "zh": "v. 關心",
     "unit": 17,
     "example": "Joe Sixpack doesn't care about that.",
@@ -2234,7 +2234,7 @@ const jhWordsDB = [
   {
     "id": 30249,
     "en": "careful",
-    "kk": "/ˈkerfəl/",
+    "kk": "[ˋkɛrfəl]",
     "zh": "adj. 小心的",
     "unit": 17,
     "example": "The trip needs careful planning.",
@@ -2243,7 +2243,7 @@ const jhWordsDB = [
   {
     "id": 30250,
     "en": "careless",
-    "kk": "",
+    "kk": "[ˋkɛrləs]",
     "zh": "adj. 粗心的",
     "unit": 17,
     "example": "She had been inexcusably careless.",
@@ -2252,7 +2252,7 @@ const jhWordsDB = [
   {
     "id": 30251,
     "en": "carpet",
-    "kk": "",
+    "kk": "[ˋkɑrpət]",
     "zh": "n. 地毯",
     "unit": 17,
     "example": "We rolled up the carpet.",
@@ -2261,7 +2261,7 @@ const jhWordsDB = [
   {
     "id": 30252,
     "en": "carrot",
-    "kk": "",
+    "kk": "[ˋkærət]",
     "zh": "n. 胡蘿蔔",
     "unit": 17,
     "example": "Her carrot cake is divine.",
@@ -2270,7 +2270,7 @@ const jhWordsDB = [
   {
     "id": 30253,
     "en": "carry",
-    "kk": "/ˈkæri/",
+    "kk": "[ˋkæri]",
     "zh": "v. 拿,運送",
     "unit": 17,
     "example": "Only one carry-on is allowed.",
@@ -2279,7 +2279,7 @@ const jhWordsDB = [
   {
     "id": 30254,
     "en": "cartoon",
-    "kk": "",
+    "kk": "[kɑrˋtun]",
     "zh": "n. 卡通",
     "unit": 17,
     "example": "They visited the Cartoon Museum.",
@@ -2288,7 +2288,7 @@ const jhWordsDB = [
   {
     "id": 30255,
     "en": "case",
-    "kk": "/keɪs/",
+    "kk": "[kes]",
     "zh": "n. 例子",
     "unit": 17,
     "example": "He zipped his case shut.",
@@ -2297,7 +2297,7 @@ const jhWordsDB = [
   {
     "id": 30256,
     "en": "cash",
-    "kk": "/kæʃ/",
+    "kk": "[kæʃ]",
     "zh": "n. 現金",
     "unit": 17,
     "example": "I'm short of cash right now.",
@@ -2306,7 +2306,7 @@ const jhWordsDB = [
   {
     "id": 30257,
     "en": "cassette",
-    "kk": "",
+    "kk": "[kəˋsɛt]",
     "zh": "n. 卡帶",
     "unit": 17,
     "example": "I swapped him my CD for his cassette.",
@@ -2315,7 +2315,7 @@ const jhWordsDB = [
   {
     "id": 30258,
     "en": "castle",
-    "kk": "/ˈkæsl/",
+    "kk": "[ˋkæsəl]",
     "zh": "n. 城堡",
     "unit": 17,
     "example": "The castle was bathed in moonlight.",
@@ -2324,7 +2324,7 @@ const jhWordsDB = [
   {
     "id": 30259,
     "en": "cat",
-    "kk": "/kæt/",
+    "kk": "[kæt]",
     "zh": "n. 貓",
     "unit": 17,
     "example": "Our cat hates being handled.",
@@ -2333,7 +2333,7 @@ const jhWordsDB = [
   {
     "id": 30260,
     "en": "catch",
-    "kk": "/kætʃ/",
+    "kk": "[kætʃ]",
     "zh": "v. 追捕",
     "unit": 17,
     "example": "Where did you catch the fish?",
@@ -2342,7 +2342,7 @@ const jhWordsDB = [
   {
     "id": 30261,
     "en": "cause",
-    "kk": "/kɔːz/",
+    "kk": "[kɑz]",
     "zh": "v. 導致",
     "unit": 17,
     "example": "High temperatures can cause hallucination.",
@@ -2351,7 +2351,7 @@ const jhWordsDB = [
   {
     "id": 30262,
     "en": "ceiling",
-    "kk": "/ˈsiːlɪŋ/",
+    "kk": "[ˋsilɪŋ]",
     "zh": "n. 天花板",
     "unit": 17,
     "example": "The ceiling was grey and cracked.",
@@ -2360,7 +2360,7 @@ const jhWordsDB = [
   {
     "id": 30263,
     "en": "celebrate",
-    "kk": "/ˈseləbreɪt/",
+    "kk": "[ˋsɛlə͵bret]",
     "zh": "v. 慶祝",
     "unit": 17,
     "example": "I was in a mood to celebrate.",
@@ -2369,7 +2369,7 @@ const jhWordsDB = [
   {
     "id": 30264,
     "en": "cell",
-    "kk": "/sel/",
+    "kk": "[sɛl]",
     "zh": "n. 細胞",
     "unit": 17,
     "example": "Each cell of our bodies contains 46 chromosomes.",
@@ -2378,7 +2378,7 @@ const jhWordsDB = [
   {
     "id": 30265,
     "en": "cent",
-    "kk": "",
+    "kk": "[sɛnt]",
     "zh": "n. 分",
     "unit": 17,
     "example": "I'm not a hundred per cent sure.",
@@ -2387,7 +2387,7 @@ const jhWordsDB = [
   {
     "id": 30266,
     "en": "center",
-    "kk": "/ˈsentər/",
+    "kk": "[ˋsɛntɚ]",
     "zh": "n. 中央",
     "unit": 17,
     "example": "Any shopping center is fine.",
@@ -2396,7 +2396,7 @@ const jhWordsDB = [
   {
     "id": 30267,
     "en": "centimeter",
-    "kk": "",
+    "kk": "[ˋsɛntə͵mitɚ]",
     "zh": "n. 公分",
     "unit": 17,
     "example": "Who guesses one centimeter?",
@@ -2405,7 +2405,7 @@ const jhWordsDB = [
   {
     "id": 30268,
     "en": "central",
-    "kk": "/ˈsentrəl/",
+    "kk": "[ˋsɛntrəl]",
     "zh": "adj. 中央的",
     "unit": 17,
     "example": "The house has gas-fired central heating.",
@@ -2414,7 +2414,7 @@ const jhWordsDB = [
   {
     "id": 30269,
     "en": "century",
-    "kk": "/ˈsentʃəri/",
+    "kk": "[ˋsɛntʃɚi]",
     "zh": "n. 世紀",
     "unit": 17,
     "example": "A new century was dawning.",
@@ -2423,7 +2423,7 @@ const jhWordsDB = [
   {
     "id": 30270,
     "en": "cereal",
-    "kk": "",
+    "kk": "[ˋsɪriəl]",
     "zh": "n. 穀類食物",
     "unit": 17,
     "example": "He ate a large bowlful of cereal.",
@@ -2432,7 +2432,7 @@ const jhWordsDB = [
   {
     "id": 30271,
     "en": "certain",
-    "kk": "/ˈsɜːrtn/",
+    "kk": "[ˋsɝtən]",
     "zh": "adj. 確實的",
     "unit": 17,
     "example": "That's true, to a certain extent.",
@@ -2441,7 +2441,7 @@ const jhWordsDB = [
   {
     "id": 30272,
     "en": "chair",
-    "kk": "/tʃer/",
+    "kk": "[tʃɛr]",
     "zh": "n. 椅子",
     "unit": 17,
     "example": "Emily edged her chair forward.",
@@ -2450,7 +2450,7 @@ const jhWordsDB = [
   {
     "id": 30273,
     "en": "chalk",
-    "kk": "",
+    "kk": "[tʃɑk]",
     "zh": "n. 粉筆",
     "unit": 17,
     "example": "You may chalk it on the wall.",
@@ -2459,7 +2459,7 @@ const jhWordsDB = [
   {
     "id": 30274,
     "en": "chance",
-    "kk": "/tʃæns/",
+    "kk": "[tʃæns]",
     "zh": "n. 機會",
     "unit": 17,
     "example": "Everyone has a chance to win.",
@@ -2468,7 +2468,7 @@ const jhWordsDB = [
   {
     "id": 30275,
     "en": "change",
-    "kk": "/tʃeɪndʒ/",
+    "kk": "[tʃendʒ]",
     "zh": "v. 改變",
     "unit": 17,
     "example": "Needs change while policies fossilize.",
@@ -2477,7 +2477,7 @@ const jhWordsDB = [
   {
     "id": 30276,
     "en": "channel",
-    "kk": "/ˈtʃænl/",
+    "kk": "[ˋtʃænəl]",
     "zh": "n. 電視臺",
     "unit": 17,
     "example": "The programme's on Channel 4.",
@@ -2486,7 +2486,7 @@ const jhWordsDB = [
   {
     "id": 30277,
     "en": "character",
-    "kk": "/ˈkærəktər/",
+    "kk": "[ˋkɛrɪktɚ]",
     "zh": "n. 性格",
     "unit": 17,
     "example": "She's a good judge of character.",
@@ -2495,7 +2495,7 @@ const jhWordsDB = [
   {
     "id": 30278,
     "en": "charge",
-    "kk": "/tʃɑːrdʒ/",
+    "kk": "[tʃɑrdʒ]",
     "zh": "v. 收費",
     "unit": 17,
     "example": "She left her assistant in charge.",
@@ -2504,7 +2504,7 @@ const jhWordsDB = [
   {
     "id": 30279,
     "en": "chart",
-    "kk": "/tʃɑːrt/",
+    "kk": "[tʃɑrt]",
     "zh": "n. 圖表",
     "unit": 17,
     "example": "He copied the chart from a book.",
@@ -2513,7 +2513,7 @@ const jhWordsDB = [
   {
     "id": 30280,
     "en": "chase",
-    "kk": "/tʃeɪs/",
+    "kk": "[tʃes]",
     "zh": "v. 追趕",
     "unit": 17,
     "example": "We gave chase along the footpath.",
@@ -2522,7 +2522,7 @@ const jhWordsDB = [
   {
     "id": 30281,
     "en": "cheap",
-    "kk": "/tʃiːp/",
+    "kk": "[tʃip]",
     "zh": "adj. 便宜的",
     "unit": 17,
     "example": "The meal was amazingly cheap.",
@@ -2531,7 +2531,7 @@ const jhWordsDB = [
   {
     "id": 30282,
     "en": "cheat",
-    "kk": "",
+    "kk": "[tʃit]",
     "zh": "v. 欺騙",
     "unit": 17,
     "example": "He was a liar and a cheat.",
@@ -2540,7 +2540,7 @@ const jhWordsDB = [
   {
     "id": 30283,
     "en": "check",
-    "kk": "/tʃek/",
+    "kk": "[tʃɛk]",
     "zh": "v. 檢查",
     "unit": 17,
     "example": "Check whether a fuse has blown.",
@@ -2549,7 +2549,7 @@ const jhWordsDB = [
   {
     "id": 30284,
     "en": "cheer",
-    "kk": "",
+    "kk": "[tʃɪr]",
     "zh": "v. 歡呼",
     "unit": 17,
     "example": "A great cheer went up from the crowd.",
@@ -2558,7 +2558,7 @@ const jhWordsDB = [
   {
     "id": 30285,
     "en": "cheese",
-    "kk": "/tʃiːz/",
+    "kk": "[tʃiz]",
     "zh": "n. 起司",
     "unit": 17,
     "example": "There's mould on the cheese.",
@@ -2567,7 +2567,7 @@ const jhWordsDB = [
   {
     "id": 30286,
     "en": "chemical",
-    "kk": "/ˈkemɪkl/",
+    "kk": "[ˋkɛməkəl]",
     "zh": "adj. 化學的",
     "unit": 17,
     "example": "Chemical weapons are banned internationally.",
@@ -2576,7 +2576,7 @@ const jhWordsDB = [
   {
     "id": 30287,
     "en": "chess",
-    "kk": "",
+    "kk": "[tʃɛs]",
     "zh": "n. 西洋棋",
     "unit": 17,
     "example": "Chess is not a game of chance.",
@@ -2585,7 +2585,7 @@ const jhWordsDB = [
   {
     "id": 30288,
     "en": "chicken",
-    "kk": "/ˈtʃɪkən/",
+    "kk": "[ˋtʃɪkən]",
     "zh": "n. 雞",
     "unit": 17,
     "example": "Luke munched the chicken sandwiches.",
@@ -2594,7 +2594,7 @@ const jhWordsDB = [
   {
     "id": 30289,
     "en": "chief",
-    "kk": "/tʃiːf/",
+    "kk": "[tʃif]",
     "zh": "n. 首領",
     "unit": 17,
     "example": "Unemployment was the chief cause of poverty.",
@@ -2603,7 +2603,7 @@ const jhWordsDB = [
   {
     "id": 30290,
     "en": "child",
-    "kk": "/tʃaɪld/",
+    "kk": "[tʃaɪld]",
     "zh": "n. 小孩",
     "unit": 17,
     "example": "The child was born prematurely.",
@@ -2612,7 +2612,7 @@ const jhWordsDB = [
   {
     "id": 30291,
     "en": "childish",
-    "kk": "",
+    "kk": "[ˋtʃaɪldɪʃ]",
     "zh": "adj. 幼稚的",
     "unit": 17,
     "example": "She's just being childish and immature.",
@@ -2621,7 +2621,7 @@ const jhWordsDB = [
   {
     "id": 30292,
     "en": "childlike",
-    "kk": "",
+    "kk": "[ˋtʃaɪld͵laɪk]",
     "zh": "adj. 天真的",
     "unit": 17,
     "example": "He retained a childlike sense of wonder.",
@@ -2630,7 +2630,7 @@ const jhWordsDB = [
   {
     "id": 30293,
     "en": "chin",
-    "kk": "/tʃɪn/",
+    "kk": "[tʃɪn]",
     "zh": "n. 下巴",
     "unit": 17,
     "example": "She rubbed her chin thoughtfully.",
@@ -2639,7 +2639,7 @@ const jhWordsDB = [
   {
     "id": 30294,
     "en": "chocolate",
-    "kk": "/ˈtʃɔːklət/",
+    "kk": "[ˋtʃɔklət]",
     "zh": "n. 巧克力",
     "unit": 17,
     "example": "It contains real chocolate chips.",
@@ -2648,7 +2648,7 @@ const jhWordsDB = [
   {
     "id": 30295,
     "en": "choice",
-    "kk": "/tʃɔɪs/",
+    "kk": "[tʃɔɪs]",
     "zh": "n. 選擇",
     "unit": 17,
     "example": "I wouldn't go there by choice.",
@@ -2657,7 +2657,7 @@ const jhWordsDB = [
   {
     "id": 30296,
     "en": "choose",
-    "kk": "/tʃuːz/",
+    "kk": "[tʃuz]",
     "zh": "v. 選擇",
     "unit": 17,
     "example": "Choose whichever brand you prefer.",
@@ -2666,7 +2666,7 @@ const jhWordsDB = [
   {
     "id": 30297,
     "en": "chopstick",
-    "kk": "",
+    "kk": "[ˋtʃɑp͵stɪk]",
     "zh": "n. 筷子",
     "unit": 17,
     "example": "He can use chopsticks.",
@@ -2675,7 +2675,7 @@ const jhWordsDB = [
   {
     "id": 30298,
     "en": "Christmas",
-    "kk": "",
+    "kk": "[ˋkrɪsməs]",
     "zh": "n. 耶誕節",
     "unit": 17,
     "example": "Christmas is still months away.",
@@ -2684,7 +2684,7 @@ const jhWordsDB = [
   {
     "id": 30299,
     "en": "chubby",
-    "kk": "",
+    "kk": "[ˋtʃʌbi]",
     "zh": "adj. 豐滿的",
     "unit": 17,
     "example": "Do you think I'm too chubby?",
@@ -2693,7 +2693,7 @@ const jhWordsDB = [
   {
     "id": 30300,
     "en": "church",
-    "kk": "/tʃɜːrtʃ/",
+    "kk": "[tʃɝtʃ]",
     "zh": "n. 教堂",
     "unit": 17,
     "example": "She plays the organ in church.",
@@ -2702,7 +2702,7 @@ const jhWordsDB = [
   {
     "id": 30301,
     "en": "claim",
-    "kk": "/kleɪm/",
+    "kk": "[klem]",
     "zh": "v. 主張",
     "unit": 17,
     "example": "The judge allowed my claim.",
@@ -2711,7 +2711,7 @@ const jhWordsDB = [
   {
     "id": 30302,
     "en": "circle",
-    "kk": "/ˈsɜːrkl/",
+    "kk": "[ˋsɝkəl]",
     "zh": "n. 圓圈",
     "unit": 17,
     "example": "The children stood in a circle.",
@@ -2720,7 +2720,7 @@ const jhWordsDB = [
   {
     "id": 30303,
     "en": "city",
-    "kk": "/ˈsɪti/",
+    "kk": "[ˋsɪti]",
     "zh": "n. 城市",
     "unit": 17,
     "example": "The cathedral dominates the city.",
@@ -2729,7 +2729,7 @@ const jhWordsDB = [
   {
     "id": 30304,
     "en": "clap",
-    "kk": "",
+    "kk": "[klæp]",
     "zh": "v. 拍(手)",
     "unit": 17,
     "example": "Let's clap our hands together!",
@@ -2738,7 +2738,7 @@ const jhWordsDB = [
   {
     "id": 30305,
     "en": "class",
-    "kk": "/klæs/",
+    "kk": "[klæs]",
     "zh": "n. 班級",
     "unit": 17,
     "example": "I've joined an aerobics class.",
@@ -2747,7 +2747,7 @@ const jhWordsDB = [
   {
     "id": 30306,
     "en": "classic",
-    "kk": "/ˈklæsɪk/",
+    "kk": "[ˋklæsɪk]",
     "zh": "adj. 古典的",
     "unit": 17,
     "example": "The novel may become a modern classic.",
@@ -2756,7 +2756,7 @@ const jhWordsDB = [
   {
     "id": 30307,
     "en": "classmate",
-    "kk": "",
+    "kk": "[ˋklæ͵smet]",
     "zh": "n. 同學",
     "unit": 17,
     "example": "She felt like a fifth-grader who had snitched on a classmate.",
@@ -2765,7 +2765,7 @@ const jhWordsDB = [
   {
     "id": 30308,
     "en": "classroom",
-    "kk": "/ˈklæsruːm/",
+    "kk": "[ˋklæ͵srum]",
     "zh": "n. 班級",
     "unit": 17,
     "example": "She'd sent him outside the classroom.",
@@ -2774,7 +2774,7 @@ const jhWordsDB = [
   {
     "id": 30309,
     "en": "clay",
-    "kk": "",
+    "kk": "[kle]",
     "zh": "n. 黏土",
     "unit": 17,
     "example": "Clay is a plastic substance.",
@@ -2783,7 +2783,7 @@ const jhWordsDB = [
   {
     "id": 30310,
     "en": "clean",
-    "kk": "/kliːn/",
+    "kk": "[klin]",
     "zh": "adj. 乾淨的",
     "unit": 17,
     "example": "Cats are very clean animals.",
@@ -2792,7 +2792,7 @@ const jhWordsDB = [
   {
     "id": 30311,
     "en": "clear",
-    "kk": "/klɪr/",
+    "kk": "[klɪr]",
     "zh": "adj. 清楚的",
     "unit": 17,
     "example": "She made her objections clear.",
@@ -2801,7 +2801,7 @@ const jhWordsDB = [
   {
     "id": 30312,
     "en": "clerk",
-    "kk": "/klɜːrk/",
+    "kk": "[klɝk]",
     "zh": "n. 店員",
     "unit": 17,
     "example": "A sharp-eyed shop clerk spotted the fake.",
@@ -2810,7 +2810,7 @@ const jhWordsDB = [
   {
     "id": 30313,
     "en": "clever",
-    "kk": "/ˈklevər/",
+    "kk": "[ˋklɛvɚ]",
     "zh": "adj. 聰明的",
     "unit": 17,
     "example": "'You are clever,' she gushed.",
@@ -2819,7 +2819,7 @@ const jhWordsDB = [
   {
     "id": 30314,
     "en": "climate",
-    "kk": "",
+    "kk": "[ˋklaɪmət]",
     "zh": "n. 氣候",
     "unit": 17,
     "example": "The economic climate remains uncertain.",
@@ -2828,7 +2828,7 @@ const jhWordsDB = [
   {
     "id": 30315,
     "en": "climb",
-    "kk": "",
+    "kk": "[klaɪm]",
     "zh": "v. 攀爬",
     "unit": 17,
     "example": "Nancy began to climb the stairs.",
@@ -2837,7 +2837,7 @@ const jhWordsDB = [
   {
     "id": 30316,
     "en": "clock",
-    "kk": "",
+    "kk": "[klɑk]",
     "zh": "n. 時鐘",
     "unit": 17,
     "example": "The clock struck the hour.",
@@ -2846,7 +2846,7 @@ const jhWordsDB = [
   {
     "id": 30317,
     "en": "close",
-    "kk": "",
+    "kk": "[klos]",
     "zh": "v. 關",
     "unit": 17,
     "example": "Some smallish firms may close.",
@@ -2855,7 +2855,7 @@ const jhWordsDB = [
   {
     "id": 30318,
     "en": "closet",
-    "kk": "",
+    "kk": "[ˋklɑzət]",
     "zh": "n. 櫥櫃",
     "unit": 17,
     "example": "It was in your closet.",
@@ -2864,7 +2864,7 @@ const jhWordsDB = [
   {
     "id": 30319,
     "en": "clothes",
-    "kk": "",
+    "kk": "[kloðz]",
     "zh": "n. 衣服",
     "unit": 17,
     "example": "She wears really funky clothes.",
@@ -2873,7 +2873,7 @@ const jhWordsDB = [
   {
     "id": 30320,
     "en": "cloud",
-    "kk": "",
+    "kk": "[klaʊd]",
     "zh": "n. 雲",
     "unit": 17,
     "example": "The plane disappeared behind a cloud.",
@@ -2882,7 +2882,7 @@ const jhWordsDB = [
   {
     "id": 30321,
     "en": "club",
-    "kk": "",
+    "kk": "[klʌb]",
     "zh": "n. 俱樂部",
     "unit": 17,
     "example": "He belongs to an exclusive club.",
@@ -2891,7 +2891,7 @@ const jhWordsDB = [
   {
     "id": 30322,
     "en": "coach",
-    "kk": "",
+    "kk": "[kotʃ]",
     "zh": "n. 教練",
     "unit": 17,
     "example": "What you need is a drama coach.",
@@ -2900,7 +2900,7 @@ const jhWordsDB = [
   {
     "id": 30323,
     "en": "coast",
-    "kk": "",
+    "kk": "[kost]",
     "zh": "n. 海岸",
     "unit": 17,
     "example": "They live on the south coast.",
@@ -2909,7 +2909,7 @@ const jhWordsDB = [
   {
     "id": 30324,
     "en": "coat",
-    "kk": "",
+    "kk": "[kot]",
     "zh": "n. 大衣",
     "unit": 17,
     "example": "She was wearing a new coat.",
@@ -2918,7 +2918,7 @@ const jhWordsDB = [
   {
     "id": 30325,
     "en": "cockroach",
-    "kk": "",
+    "kk": "[ˋkɑ͵krotʃ]",
     "zh": "n. 蟑螂",
     "unit": 17,
     "example": "FIRST, catch your cockroach.",
@@ -2927,7 +2927,7 @@ const jhWordsDB = [
   {
     "id": 30326,
     "en": "coffee",
-    "kk": "",
+    "kk": "[ˋkɑfi]",
     "zh": "n. 咖啡",
     "unit": 17,
     "example": "Her coffee was now lukewarm.",
@@ -2936,7 +2936,7 @@ const jhWordsDB = [
   {
     "id": 30327,
     "en": "coin",
-    "kk": "",
+    "kk": "[kɔɪn]",
     "zh": "n. 硬幣",
     "unit": 17,
     "example": "The coin rolled underneath the piano.",
@@ -2945,7 +2945,7 @@ const jhWordsDB = [
   {
     "id": 30328,
     "en": "coke",
-    "kk": "",
+    "kk": "[kok]",
     "zh": "n. 可樂",
     "unit": 17,
     "example": "My sister likes Coke.",
@@ -2954,7 +2954,7 @@ const jhWordsDB = [
   {
     "id": 30329,
     "en": "cold",
-    "kk": "",
+    "kk": "[kold]",
     "zh": "adj. 冷的",
     "unit": 17,
     "example": "It's flipping cold today!",
@@ -2963,7 +2963,7 @@ const jhWordsDB = [
   {
     "id": 30330,
     "en": "collect",
-    "kk": "",
+    "kk": "[kəˋlɛkt]",
     "zh": "v. 收集",
     "unit": 17,
     "example": "I used to collect stamps.",
@@ -2972,7 +2972,7 @@ const jhWordsDB = [
   {
     "id": 30331,
     "en": "college",
-    "kk": "",
+    "kk": "[ˋkɑlɪdʒ]",
     "zh": "n. 大學",
     "unit": 17,
     "example": "He studied maths at college.",
@@ -2981,7 +2981,7 @@ const jhWordsDB = [
   {
     "id": 30332,
     "en": "color",
-    "kk": "",
+    "kk": "[ˋkʌlɚ]",
     "zh": "n. 顏色",
     "unit": 17,
     "example": "What color is Paul's shirt?",
@@ -2990,7 +2990,7 @@ const jhWordsDB = [
   {
     "id": 30333,
     "en": "colorful",
-    "kk": "",
+    "kk": "[ˋkʌlɚfəl]",
     "zh": "adj. 多采多姿的",
     "unit": 17,
     "example": "This is a more colorful scale.",
@@ -2999,7 +2999,7 @@ const jhWordsDB = [
   {
     "id": 30334,
     "en": "comb",
-    "kk": "",
+    "kk": "[kom]",
     "zh": "n. 梳子",
     "unit": 17,
     "example": "Your hair needs a good comb.",
@@ -3008,7 +3008,7 @@ const jhWordsDB = [
   {
     "id": 30335,
     "en": "come",
-    "kk": "",
+    "kk": "[kʌm]",
     "zh": "v. 來",
     "unit": 17,
     "example": "Have you come far?",
@@ -3017,7 +3017,7 @@ const jhWordsDB = [
   {
     "id": 30336,
     "en": "comfortable",
-    "kk": "",
+    "kk": "[ˋkʌmfɚtəbəl]",
     "zh": "adj. 舒服的",
     "unit": 17,
     "example": "You'll be quite comfortable here.",
@@ -3026,7 +3026,7 @@ const jhWordsDB = [
   {
     "id": 30337,
     "en": "command",
-    "kk": "",
+    "kk": "[kəˋmænd]",
     "zh": "v. 命令",
     "unit": 17,
     "example": "Begin when I give the command.",
@@ -3035,7 +3035,7 @@ const jhWordsDB = [
   {
     "id": 30338,
     "en": "comment",
-    "kk": "",
+    "kk": "[ˋkɑmɛnt]",
     "zh": "n. 意見",
     "unit": 17,
     "example": "Buckingham Palace refused to comment.",
@@ -3044,7 +3044,7 @@ const jhWordsDB = [
   {
     "id": 30339,
     "en": "common",
-    "kk": "",
+    "kk": "[ˋkɑmən]",
     "zh": "adj. 共同的",
     "unit": 17,
     "example": "Jackson is a common English name.",
@@ -3053,7 +3053,7 @@ const jhWordsDB = [
   {
     "id": 30340,
     "en": "company",
-    "kk": "",
+    "kk": "[ˋkʌmpə͵ni]",
     "zh": "n. 公司",
     "unit": 17,
     "example": "The company employs 18 workers.",
@@ -3062,7 +3062,7 @@ const jhWordsDB = [
   {
     "id": 30341,
     "en": "compare",
-    "kk": "",
+    "kk": "[kəmˋpɛr]",
     "zh": "v. 比較",
     "unit": 17,
     "example": "The point of the lesson is to compare the two countries.",
@@ -3071,7 +3071,7 @@ const jhWordsDB = [
   {
     "id": 30342,
     "en": "complain",
-    "kk": "",
+    "kk": "[kəmˋplen]",
     "zh": "v. 抱怨",
     "unit": 17,
     "example": "I was too cowardly to complain.",
@@ -3080,7 +3080,7 @@ const jhWordsDB = [
   {
     "id": 30343,
     "en": "complaint",
-    "kk": "",
+    "kk": "[kəmˋplent]",
     "zh": "n. 抱怨",
     "unit": 17,
     "example": "You have no grounds for complaint.",
@@ -3089,7 +3089,7 @@ const jhWordsDB = [
   {
     "id": 30344,
     "en": "complete",
-    "kk": "",
+    "kk": "[kəmˋplit]",
     "zh": "adj. 完整的",
     "unit": 17,
     "example": "We were in complete agreement.",
@@ -3098,7 +3098,7 @@ const jhWordsDB = [
   {
     "id": 30345,
     "en": "computer",
-    "kk": "",
+    "kk": "[kəmˋpjutɚ]",
     "zh": "n. 電腦",
     "unit": 17,
     "example": "My computer keeps going funny.",
@@ -3107,7 +3107,7 @@ const jhWordsDB = [
   {
     "id": 30346,
     "en": "concern",
-    "kk": "",
+    "kk": "[kənˋsɝn]",
     "zh": "n. 擔心",
     "unit": 17,
     "example": "There is no cause for concern.",
@@ -3116,7 +3116,7 @@ const jhWordsDB = [
   {
     "id": 30347,
     "en": "confident",
-    "kk": "",
+    "kk": "[ˋkɑnfədənt]",
     "zh": "adj. 有自信的",
     "unit": 17,
     "example": "Marina was a confident, happy child.",
@@ -3125,7 +3125,7 @@ const jhWordsDB = [
   {
     "id": 30348,
     "en": "conflict",
-    "kk": "",
+    "kk": "[ˋkɑnflɪkt]",
     "zh": "n. 衝突",
     "unit": 17,
     "example": "She was unafraid of conflict.",
@@ -3134,7 +3134,7 @@ const jhWordsDB = [
   {
     "id": 30349,
     "en": "confuse",
-    "kk": "",
+    "kk": "[kənˋfjuz]",
     "zh": "v. 使迷惑",
     "unit": 17,
     "example": "I always confuse my left with my right.",
@@ -3143,7 +3143,7 @@ const jhWordsDB = [
   {
     "id": 30350,
     "en": "congratulation",
-    "kk": "",
+    "kk": "[kən͵ætʃəˋleʃən]",
     "zh": "n. 道賀",
     "unit": 17,
     "example": "We have received many letters of congratulation.",
@@ -3152,7 +3152,7 @@ const jhWordsDB = [
   {
     "id": 30351,
     "en": "connect",
-    "kk": "",
+    "kk": "[kəˋnɛkt]",
     "zh": "v. 連接",
     "unit": 17,
     "example": "Click 'Continue' to connect to the Internet.",
@@ -3161,7 +3161,7 @@ const jhWordsDB = [
   {
     "id": 30352,
     "en": "consider",
-    "kk": "",
+    "kk": "[kənˋsɪdɚ]",
     "zh": "v. 考慮",
     "unit": 17,
     "example": "Let's consider this point further.",
@@ -3170,7 +3170,7 @@ const jhWordsDB = [
   {
     "id": 30353,
     "en": "considerate",
-    "kk": "",
+    "kk": "[kənˋsɪdɚət]",
     "zh": "adj. 體貼的",
     "unit": 17,
     "example": "He was charming, considerate and impeccably mannered.",
@@ -3179,7 +3179,7 @@ const jhWordsDB = [
   {
     "id": 30354,
     "en": "contact",
-    "kk": "",
+    "kk": "[ˋkɑn͵tækt]",
     "zh": "v. 聯絡",
     "unit": 17,
     "example": "I will contact you by letter.",
@@ -3188,7 +3188,7 @@ const jhWordsDB = [
   {
     "id": 30355,
     "en": "continue",
-    "kk": "",
+    "kk": "[kənˋtɪnju]",
     "zh": "v. 使繼續",
     "unit": 17,
     "example": "They'll continue to fight injustice.",
@@ -3197,7 +3197,7 @@ const jhWordsDB = [
   {
     "id": 30356,
     "en": "contract",
-    "kk": "",
+    "kk": "[ˋkɑn͵trækt]",
     "zh": "n. 合約",
     "unit": 17,
     "example": "He mailed me the contract.",
@@ -3206,7 +3206,7 @@ const jhWordsDB = [
   {
     "id": 30357,
     "en": "control",
-    "kk": "",
+    "kk": "[kənˋtrol]",
     "zh": "v. 控制",
     "unit": 17,
     "example": "The situation is under control.",
@@ -3215,7 +3215,7 @@ const jhWordsDB = [
   {
     "id": 30358,
     "en": "convenient",
-    "kk": "",
+    "kk": "[kənˋvinjənt]",
     "zh": "adj. 方便的",
     "unit": 17,
     "example": "If it's convenient I can come tomorrow.",
@@ -3224,7 +3224,7 @@ const jhWordsDB = [
   {
     "id": 30359,
     "en": "conversation",
-    "kk": "",
+    "kk": "[͵kɑnvɚˋseʃən]",
     "zh": "n. 對話",
     "unit": 17,
     "example": "She was engrossed in conversation.",
@@ -3233,7 +3233,7 @@ const jhWordsDB = [
   {
     "id": 30360,
     "en": "cook",
-    "kk": "",
+    "kk": "[kʊk]",
     "zh": "v. 煮",
     "unit": 17,
     "example": "She's an exceptionally good cook.",
@@ -3242,7 +3242,7 @@ const jhWordsDB = [
   {
     "id": 30361,
     "en": "cookie",
-    "kk": "",
+    "kk": "[ˋkʊki]",
     "zh": "n. 點心",
     "unit": 17,
     "example": "Heart-shaped cookie cutters come in many sizes.",
@@ -3251,7 +3251,7 @@ const jhWordsDB = [
   {
     "id": 30362,
     "en": "cool",
-    "kk": "",
+    "kk": "[kul]",
     "zh": "adj. 涼的",
     "unit": 17,
     "example": "She seemed very cool and unemotional.",
@@ -3260,7 +3260,7 @@ const jhWordsDB = [
   {
     "id": 30363,
     "en": "copy",
-    "kk": "",
+    "kk": "[ˋkɑpi]",
     "zh": "v. 複製",
     "unit": 17,
     "example": "Can you copy me in on your report?",
@@ -3269,7 +3269,7 @@ const jhWordsDB = [
   {
     "id": 30364,
     "en": "corn",
-    "kk": "",
+    "kk": "[kɔrn]",
     "zh": "n. 玉米",
     "unit": 17,
     "example": "She pounded the corn kernels.",
@@ -3278,7 +3278,7 @@ const jhWordsDB = [
   {
     "id": 30365,
     "en": "corner",
-    "kk": "",
+    "kk": "[ˋkɔrnɚ]",
     "zh": "n. 角落",
     "unit": 17,
     "example": "The referee awarded a corner.",
@@ -3287,7 +3287,7 @@ const jhWordsDB = [
   {
     "id": 30366,
     "en": "correct",
-    "kk": "",
+    "kk": "[kɚˋɛkt]",
     "zh": "adj. 正確的",
     "unit": 17,
     "example": "Only one of the answers is correct.",
@@ -3296,7 +3296,7 @@ const jhWordsDB = [
   {
     "id": 30367,
     "en": "cost",
-    "kk": "",
+    "kk": "[kɑst]",
     "zh": "v. 花費",
     "unit": 17,
     "example": "Success has cost him dearly.",
@@ -3305,7 +3305,7 @@ const jhWordsDB = [
   {
     "id": 30368,
     "en": "cotton",
-    "kk": "",
+    "kk": "[ˋkɑtən]",
     "zh": "n. 棉花",
     "unit": 17,
     "example": "The sheets are 100% pure cotton.",
@@ -3314,7 +3314,7 @@ const jhWordsDB = [
   {
     "id": 30369,
     "en": "couch",
-    "kk": "",
+    "kk": "[kaʊtʃ]",
     "zh": "n. 長沙發",
     "unit": 17,
     "example": "Linda lay face down on a living room couch, nibbling popcorn.",
@@ -3323,7 +3323,7 @@ const jhWordsDB = [
   {
     "id": 30370,
     "en": "cough",
-    "kk": "",
+    "kk": "[kɑf]",
     "zh": "v. 咳嗽",
     "unit": 17,
     "example": "Graham began to cough violently.",
@@ -3332,7 +3332,7 @@ const jhWordsDB = [
   {
     "id": 30371,
     "en": "count",
-    "kk": "",
+    "kk": "[kaʊnt]",
     "zh": "v. 計數",
     "unit": 17,
     "example": "Her father was a Polish count.",
@@ -3341,7 +3341,7 @@ const jhWordsDB = [
   {
     "id": 30372,
     "en": "country",
-    "kk": "",
+    "kk": "[ˋkʌntri]",
     "zh": "n. 國家",
     "unit": 17,
     "example": "I'm a simple country girl.",
@@ -3350,7 +3350,7 @@ const jhWordsDB = [
   {
     "id": 30373,
     "en": "couple",
-    "kk": "",
+    "kk": "[ˋkʌpəl]",
     "zh": "n. 一對",
     "unit": 17,
     "example": "The couple have no children.",
@@ -3359,7 +3359,7 @@ const jhWordsDB = [
   {
     "id": 30374,
     "en": "courage",
-    "kk": "",
+    "kk": "[ˋkɝədʒ]",
     "zh": "n. 勇氣",
     "unit": 17,
     "example": "He showed courage in adversity.",
@@ -3368,7 +3368,7 @@ const jhWordsDB = [
   {
     "id": 30375,
     "en": "course",
-    "kk": "",
+    "kk": "[kɔrs]",
     "zh": "n. 課程",
     "unit": 17,
     "example": "The course lasts five weeks.",
@@ -3377,7 +3377,7 @@ const jhWordsDB = [
   {
     "id": 30376,
     "en": "court",
-    "kk": "",
+    "kk": "[kɔrt]",
     "zh": "n. 法院;球場",
     "unit": 17,
     "example": "The court adjourned for lunch.",
@@ -3386,7 +3386,7 @@ const jhWordsDB = [
   {
     "id": 30377,
     "en": "cousin",
-    "kk": "",
+    "kk": "[ˋkʌzən]",
     "zh": "n. 表(堂)兄弟姊妹",
     "unit": 17,
     "example": "Eric was my cousin Edward's boy.",
@@ -3395,7 +3395,7 @@ const jhWordsDB = [
   {
     "id": 30378,
     "en": "cover",
-    "kk": "",
+    "kk": "[ˋkʌvɚ]",
     "zh": "v. 覆蓋",
     "unit": 17,
     "example": "$100 should cover your expenses.",
@@ -3404,7 +3404,7 @@ const jhWordsDB = [
   {
     "id": 30379,
     "en": "cow",
-    "kk": "",
+    "kk": "[kaʊ]",
     "zh": "n. 母牛",
     "unit": 17,
     "example": "A mature cow has horns.",
@@ -3413,7 +3413,7 @@ const jhWordsDB = [
   {
     "id": 30380,
     "en": "cowboy",
-    "kk": "",
+    "kk": "[ˋkaʊ͵bɔɪ]",
     "zh": "n. 牛仔",
     "unit": 17,
     "example": "He shows up in jeans and cowboy boots.",
@@ -3422,7 +3422,7 @@ const jhWordsDB = [
   {
     "id": 30381,
     "en": "crab",
-    "kk": "",
+    "kk": "[kræb]",
     "zh": "n. 螃蟹",
     "unit": 17,
     "example": "I can't remember when I last had crab.",
@@ -3431,7 +3431,7 @@ const jhWordsDB = [
   {
     "id": 30382,
     "en": "crayon",
-    "kk": "",
+    "kk": "[ˋkre͵ɑn]",
     "zh": "n. 蠟筆",
     "unit": 17,
     "example": "Someone had scribbled all over the table in crayon.",
@@ -3440,7 +3440,7 @@ const jhWordsDB = [
   {
     "id": 30383,
     "en": "crazy",
-    "kk": "",
+    "kk": "[ˋkrezi]",
     "zh": "adj. 瘋狂的",
     "unit": 17,
     "example": "We're crazy about each other.",
@@ -3449,7 +3449,7 @@ const jhWordsDB = [
   {
     "id": 30384,
     "en": "cream",
-    "kk": "",
+    "kk": "[krim]",
     "zh": "n. 乳液",
     "unit": 17,
     "example": "The sauce is mostly cream.",
@@ -3458,7 +3458,7 @@ const jhWordsDB = [
   {
     "id": 30385,
     "en": "create",
-    "kk": "",
+    "kk": "[kriˋet]",
     "zh": "v. 創造",
     "unit": 17,
     "example": "We set business free to create more jobs.",
@@ -3467,7 +3467,7 @@ const jhWordsDB = [
   {
     "id": 30386,
     "en": "crime",
-    "kk": "",
+    "kk": "[kraɪm]",
     "zh": "n. 罪",
     "unit": 17,
     "example": "Crime figures are rising rapidly.",
@@ -3476,7 +3476,7 @@ const jhWordsDB = [
   {
     "id": 30387,
     "en": "cross",
-    "kk": "",
+    "kk": "[krɔs]",
     "zh": "v. 穿過",
     "unit": 17,
     "example": "I'm terribly cross with him.",
@@ -3485,7 +3485,7 @@ const jhWordsDB = [
   {
     "id": 30388,
     "en": "crowd",
-    "kk": "",
+    "kk": "[kraʊd]",
     "zh": "n. 人群",
     "unit": 17,
     "example": "The crowd began throwing stones.",
@@ -3494,7 +3494,7 @@ const jhWordsDB = [
   {
     "id": 30389,
     "en": "cruel",
-    "kk": "",
+    "kk": "[ˋkruəl]",
     "zh": "adj. 殘忍的",
     "unit": 17,
     "example": "Her eyes were cruel and hard.",
@@ -3503,7 +3503,7 @@ const jhWordsDB = [
   {
     "id": 30390,
     "en": "cry",
-    "kk": "",
+    "kk": "[kraɪ]",
     "zh": "v. 哭",
     "unit": 17,
     "example": "She let out an anguished cry.",
@@ -3512,7 +3512,7 @@ const jhWordsDB = [
   {
     "id": 30391,
     "en": "culture",
-    "kk": "",
+    "kk": "[ˋkʌltʃɚ]",
     "zh": "n. 文化",
     "unit": 17,
     "example": "We are living in a consumer culture.",
@@ -3521,7 +3521,7 @@ const jhWordsDB = [
   {
     "id": 30392,
     "en": "cup",
-    "kk": "",
+    "kk": "[kʌp]",
     "zh": "n. 杯子",
     "unit": 17,
     "example": "She crumpled up her coffee cup.",
@@ -3530,7 +3530,7 @@ const jhWordsDB = [
   {
     "id": 30393,
     "en": "cure",
-    "kk": "",
+    "kk": "[kjʊr]",
     "zh": "n. 治療",
     "unit": 17,
     "example": "The search for a cure goes on.",
@@ -3539,7 +3539,7 @@ const jhWordsDB = [
   {
     "id": 30394,
     "en": "curious",
-    "kk": "",
+    "kk": "[ˋkjʊriəs]",
     "zh": "adj. 好奇的",
     "unit": 17,
     "example": "Steve was intensely curious about the world I came from.",
@@ -3548,7 +3548,7 @@ const jhWordsDB = [
   {
     "id": 30395,
     "en": "current",
-    "kk": "",
+    "kk": "[ˋkɝənt]",
     "zh": "adj. 現在的",
     "unit": 17,
     "example": "We were rowing against the current.",
@@ -3557,7 +3557,7 @@ const jhWordsDB = [
   {
     "id": 30396,
     "en": "curtain",
-    "kk": "",
+    "kk": "[ˋkɝtən]",
     "zh": "n. 窗簾",
     "unit": 17,
     "example": "She pulled the curtain aside.",
@@ -3566,7 +3566,7 @@ const jhWordsDB = [
   {
     "id": 30397,
     "en": "curve",
-    "kk": "",
+    "kk": "[kɝv]",
     "zh": "n. 曲線",
     "unit": 17,
     "example": "The slope increases as you go up the curve.",
@@ -3575,7 +3575,7 @@ const jhWordsDB = [
   {
     "id": 30398,
     "en": "custom",
-    "kk": "",
+    "kk": "[ˋkʌstəm]",
     "zh": "n. 習慣",
     "unit": 17,
     "example": "This quaint custom should be revived.",
@@ -3584,7 +3584,7 @@ const jhWordsDB = [
   {
     "id": 30399,
     "en": "customer",
-    "kk": "",
+    "kk": "[ˋkʌstəmɚ]",
     "zh": "v. 顧客",
     "unit": 17,
     "example": "The customer called to cancel.",
@@ -3593,7 +3593,7 @@ const jhWordsDB = [
   {
     "id": 30400,
     "en": "cut",
-    "kk": "",
+    "kk": "[kʌt]",
     "zh": "v. 切割",
     "unit": 17,
     "example": "You've had your hair cut!",
@@ -3602,7 +3602,7 @@ const jhWordsDB = [
   {
     "id": 30401,
     "en": "cute",
-    "kk": "",
+    "kk": "[kjut]",
     "zh": "adj. 可愛的",
     "unit": 17,
     "example": "Shame, she's so cute!",
@@ -3611,7 +3611,7 @@ const jhWordsDB = [
   {
     "id": 30402,
     "en": "damage",
-    "kk": "",
+    "kk": "[ˋdæmədʒ]",
     "zh": "v. 損害",
     "unit": 17,
     "example": "The fire caused extensive damage.",
@@ -3620,7 +3620,7 @@ const jhWordsDB = [
   {
     "id": 30403,
     "en": "dance",
-    "kk": "",
+    "kk": "[dæns]",
     "zh": "v. 跳舞",
     "unit": 17,
     "example": "Come on Doreen, let's dance.",
@@ -3629,7 +3629,7 @@ const jhWordsDB = [
   {
     "id": 30404,
     "en": "danger",
-    "kk": "",
+    "kk": "[ˋdendʒɚ]",
     "zh": "n. 危險",
     "unit": 17,
     "example": "The red triangle denotes danger.",
@@ -3638,7 +3638,7 @@ const jhWordsDB = [
   {
     "id": 30405,
     "en": "dangerous",
-    "kk": "",
+    "kk": "[ˋdendʒɚəs]",
     "zh": "adj. 危險的",
     "unit": 17,
     "example": "The man is armed and dangerous.",
@@ -3647,7 +3647,7 @@ const jhWordsDB = [
   {
     "id": 30406,
     "en": "dark",
-    "kk": "",
+    "kk": "[dɑrk]",
     "zh": "adj. 黑的",
     "unit": 17,
     "example": "We should arrive before dark.",
@@ -3656,7 +3656,7 @@ const jhWordsDB = [
   {
     "id": 30407,
     "en": "data",
-    "kk": "",
+    "kk": "[ˋdetə]",
     "zh": "n. 資料",
     "unit": 17,
     "example": "He copied the data into a notebook.",
@@ -3665,7 +3665,7 @@ const jhWordsDB = [
   {
     "id": 30408,
     "en": "date",
-    "kk": "",
+    "kk": "[det]",
     "zh": "n. 日期",
     "unit": 17,
     "example": "I've got a hot date tonight.",
@@ -3674,7 +3674,7 @@ const jhWordsDB = [
   {
     "id": 30409,
     "en": "daughter",
-    "kk": "",
+    "kk": "[ˋdɔtɚ]",
     "zh": "n. 女兒",
     "unit": 17,
     "example": "My daughter is at university.",
@@ -3683,7 +3683,7 @@ const jhWordsDB = [
   {
     "id": 30410,
     "en": "dawn",
-    "kk": "",
+    "kk": "[dɔn]",
     "zh": "n. 黎明",
     "unit": 17,
     "example": "The troops landed at dawn.",
@@ -3692,7 +3692,7 @@ const jhWordsDB = [
   {
     "id": 30411,
     "en": "day",
-    "kk": "",
+    "kk": "[de]",
     "zh": "n. 一天",
     "unit": 17,
     "example": "They're improving day by day.",
@@ -3701,7 +3701,7 @@ const jhWordsDB = [
   {
     "id": 30412,
     "en": "dead",
-    "kk": "",
+    "kk": "[dɛd]",
     "zh": "adj. 死的",
     "unit": 17,
     "example": "Suddenly the phone went dead.",
@@ -3710,7 +3710,7 @@ const jhWordsDB = [
   {
     "id": 30413,
     "en": "deaf",
-    "kk": "",
+    "kk": "[dɛf]",
     "zh": "adj. 聾的",
     "unit": 17,
     "example": "The two deaf actors converse solely in signing.",
@@ -3719,7 +3719,7 @@ const jhWordsDB = [
   {
     "id": 30414,
     "en": "deal",
-    "kk": "",
+    "kk": "[dil]",
     "zh": "n. 交易",
     "unit": 17,
     "example": "They shook on the deal.",
@@ -3728,7 +3728,7 @@ const jhWordsDB = [
   {
     "id": 30415,
     "en": "dear",
-    "kk": "",
+    "kk": "[dɪr]",
     "zh": "adj. 親愛的",
     "unit": 17,
     "example": "My dear girl, you're wrong.",
@@ -3737,7 +3737,7 @@ const jhWordsDB = [
   {
     "id": 30416,
     "en": "death",
-    "kk": "",
+    "kk": "[dɛθ]",
     "zh": "n. 死亡",
     "unit": 17,
     "example": "Doctors become inured to death.",
@@ -3746,7 +3746,7 @@ const jhWordsDB = [
   {
     "id": 30417,
     "en": "debate",
-    "kk": "",
+    "kk": "[dəˋbet]",
     "zh": "n. 辯論",
     "unit": 17,
     "example": "Anti-war protesters disrupted the debate.",
@@ -3755,7 +3755,7 @@ const jhWordsDB = [
   {
     "id": 30418,
     "en": "December",
-    "kk": "",
+    "kk": "[dɪˋsɛmbɚ]",
     "zh": "n. 十二月",
     "unit": 17,
     "example": "I keep forgetting it's December.",
@@ -3764,7 +3764,7 @@ const jhWordsDB = [
   {
     "id": 30419,
     "en": "decide",
-    "kk": "",
+    "kk": "[͵dɪsˋaɪd]",
     "zh": "v. 決定",
     "unit": 17,
     "example": "It's up to you to decide.",
@@ -3773,7 +3773,7 @@ const jhWordsDB = [
   {
     "id": 30420,
     "en": "decision",
-    "kk": "",
+    "kk": "[dɪˋsɪʒən]",
     "zh": "n. 決定",
     "unit": 17,
     "example": "It was a collective decision.",
@@ -3782,7 +3782,7 @@ const jhWordsDB = [
   {
     "id": 30421,
     "en": "decorate",
-    "kk": "",
+    "kk": "[ˋdɛkɚ͵et]",
     "zh": "v. 裝飾",
     "unit": 17,
     "example": "The boys are planning to decorate when they get the time.",
@@ -3791,7 +3791,7 @@ const jhWordsDB = [
   {
     "id": 30422,
     "en": "decrease",
-    "kk": "",
+    "kk": "[dɪˋkris]",
     "zh": "v. 減少",
     "unit": 17,
     "example": "People should decrease the amount of fat they eat.",
@@ -3800,7 +3800,7 @@ const jhWordsDB = [
   {
     "id": 30423,
     "en": "deep",
-    "kk": "",
+    "kk": "[dip]",
     "zh": "adj. 深的",
     "unit": 17,
     "example": "He sank into deep melancholia.",
@@ -3809,7 +3809,7 @@ const jhWordsDB = [
   {
     "id": 30424,
     "en": "deer",
-    "kk": "",
+    "kk": "[dɪr]",
     "zh": "n. 鹿",
     "unit": 17,
     "example": "He'd gone deer hunting with his cousins.",
@@ -3818,7 +3818,7 @@ const jhWordsDB = [
   {
     "id": 30425,
     "en": "degree",
-    "kk": "",
+    "kk": "[dɪˋɡri]",
     "zh": "n. 程度",
     "unit": 17,
     "example": "She's reading for a law degree.",
@@ -3827,7 +3827,7 @@ const jhWordsDB = [
   {
     "id": 30426,
     "en": "delicious",
-    "kk": "",
+    "kk": "[dɪˋlɪʃəs]",
     "zh": "adj. 美味的",
     "unit": 17,
     "example": "He served up a delicious meal.",
@@ -3836,7 +3836,7 @@ const jhWordsDB = [
   {
     "id": 30427,
     "en": "deliver",
-    "kk": "",
+    "kk": "[dɪˋlɪvɚ]",
     "zh": "v. 投遞",
     "unit": 17,
     "example": "We deliver the goods in batches.",
@@ -3845,7 +3845,7 @@ const jhWordsDB = [
   {
     "id": 30428,
     "en": "dentist",
-    "kk": "",
+    "kk": "[ˋdɛntəst]",
     "zh": "n. 牙醫",
     "unit": 17,
     "example": "The dentist scaled and polished my teeth.",
@@ -3854,7 +3854,7 @@ const jhWordsDB = [
   {
     "id": 30429,
     "en": "deny",
-    "kk": "",
+    "kk": "[dɪˋnaɪ]",
     "zh": "v. 否認",
     "unit": 17,
     "example": "My instinctive reaction was to deny everything.",
@@ -3863,7 +3863,7 @@ const jhWordsDB = [
   {
     "id": 30430,
     "en": "department",
-    "kk": "",
+    "kk": "[dɪˋpɑrtmənt]",
     "zh": "n. 部門",
     "unit": 17,
     "example": "He moved to the sales department.",
@@ -3872,7 +3872,7 @@ const jhWordsDB = [
   {
     "id": 30431,
     "en": "depend",
-    "kk": "",
+    "kk": "[dɪˋpɛnd]",
     "zh": "v. 依賴",
     "unit": 17,
     "example": "Wage rates depend on levels of productivity.",
@@ -3881,7 +3881,7 @@ const jhWordsDB = [
   {
     "id": 30432,
     "en": "describe",
-    "kk": "",
+    "kk": "[dɪˋskraɪb]",
     "zh": "v. 描述",
     "unit": 17,
     "example": "Can you describe him to me?",
@@ -3890,7 +3890,7 @@ const jhWordsDB = [
   {
     "id": 30433,
     "en": "desert",
-    "kk": "",
+    "kk": "[ˋdɛzɚt]",
     "zh": "n. 沙漠",
     "unit": 17,
     "example": "The heat in the desert was extreme.",
@@ -3899,7 +3899,7 @@ const jhWordsDB = [
   {
     "id": 30434,
     "en": "design",
-    "kk": "",
+    "kk": "[dɪˋzaɪn]",
     "zh": "v. 設計",
     "unit": 17,
     "example": "She's good at art and design.",
@@ -3908,7 +3908,7 @@ const jhWordsDB = [
   {
     "id": 30435,
     "en": "desire",
-    "kk": "",
+    "kk": "[dɪˋzaɪɚ]",
     "zh": "n. 慾望",
     "unit": 17,
     "example": "We all desire health and happiness.",
@@ -3917,7 +3917,7 @@ const jhWordsDB = [
   {
     "id": 30436,
     "en": "desk",
-    "kk": "",
+    "kk": "[dɛsk]",
     "zh": "n. 書桌",
     "unit": 17,
     "example": "A phone trilled on the desk.",
@@ -3926,7 +3926,7 @@ const jhWordsDB = [
   {
     "id": 30437,
     "en": "dessert",
-    "kk": "",
+    "kk": "[dɪˋzɝt]",
     "zh": "n. 甜點",
     "unit": 17,
     "example": "I was tempted by the dessert menu.",
@@ -3935,7 +3935,7 @@ const jhWordsDB = [
   {
     "id": 30438,
     "en": "detect",
-    "kk": "",
+    "kk": "[dɪˋtɛkt]",
     "zh": "v. 查出",
     "unit": 17,
     "example": "Arnold could detect a certain sadness in the old man's face.",
@@ -3944,7 +3944,7 @@ const jhWordsDB = [
   {
     "id": 30439,
     "en": "develop",
-    "kk": "",
+    "kk": "[dɪˋvɛləp]",
     "zh": "v. 發展",
     "unit": 17,
     "example": "How fast would the disease develop?",
@@ -3953,7 +3953,7 @@ const jhWordsDB = [
   {
     "id": 30440,
     "en": "dial",
-    "kk": "",
+    "kk": "[ˋdaɪəl]",
     "zh": "v. 撥電話",
     "unit": 17,
     "example": "Broadband is still more expensive than dial-up services.",
@@ -3962,7 +3962,7 @@ const jhWordsDB = [
   {
     "id": 30441,
     "en": "diamond",
-    "kk": "",
+    "kk": "[ˋdaɪmənd]",
     "zh": "n. 鑽石",
     "unit": 17,
     "example": "The diamond is mounted in gold.",
@@ -3971,7 +3971,7 @@ const jhWordsDB = [
   {
     "id": 30442,
     "en": "diary",
-    "kk": "",
+    "kk": "[ˋdaɪɚi]",
     "zh": "n. 日記",
     "unit": 17,
     "example": "Eleanor began to keep a diary.",
@@ -3980,7 +3980,7 @@ const jhWordsDB = [
   {
     "id": 30443,
     "en": "dictionary",
-    "kk": "",
+    "kk": "[ˋdɪkʃə͵nɛri]",
     "zh": "n. 字典",
     "unit": 17,
     "example": "Can you suggest a good dictionary?",
@@ -3989,7 +3989,7 @@ const jhWordsDB = [
   {
     "id": 30444,
     "en": "die",
-    "kk": "",
+    "kk": "[daɪ]",
     "zh": "v. 死",
     "unit": 17,
     "example": "I thought I'd die laughing.",
@@ -3998,7 +3998,7 @@ const jhWordsDB = [
   {
     "id": 30445,
     "en": "diet",
-    "kk": "",
+    "kk": "[ˋdaɪət]",
     "zh": "n. 飲食",
     "unit": 17,
     "example": "Sugar is ubiquitous in the diet.",
@@ -4007,7 +4007,7 @@ const jhWordsDB = [
   {
     "id": 30446,
     "en": "difference",
-    "kk": "",
+    "kk": "[ˋdɪfɚəns]",
     "zh": "n. 差異",
     "unit": 17,
     "example": "Few people understand the difference.",
@@ -4016,7 +4016,7 @@ const jhWordsDB = [
   {
     "id": 30447,
     "en": "different",
-    "kk": "",
+    "kk": "[ˋdɪfɚənt]",
     "zh": "adj. 不同的",
     "unit": 17,
     "example": "Different countries specialized in different products.",
@@ -4025,7 +4025,7 @@ const jhWordsDB = [
   {
     "id": 30448,
     "en": "difficult",
-    "kk": "",
+    "kk": "[ˋdɪfəkəlt]",
     "zh": "adj. 困難的",
     "unit": 17,
     "example": "The exam was quite difficult.",
@@ -4034,7 +4034,7 @@ const jhWordsDB = [
   {
     "id": 30449,
     "en": "difficulty",
-    "kk": "",
+    "kk": "[ˋdɪfəkəlti]",
     "zh": "n. 困難",
     "unit": 17,
     "example": "Do you have difficulty getting up?",
@@ -4043,7 +4043,7 @@ const jhWordsDB = [
   {
     "id": 30450,
     "en": "dig",
-    "kk": "",
+    "kk": "[dɪɡ]",
     "zh": "v. 挖掘",
     "unit": 17,
     "example": "I'll dig some potatoes for lunch.",
@@ -4052,7 +4052,7 @@ const jhWordsDB = [
   {
     "id": 30451,
     "en": "diligent",
-    "kk": "",
+    "kk": "[ˋdɪlɪdʒənt]",
     "zh": "adj. 勤勉的",
     "unit": 17,
     "example": "Meyers is a diligent and prolific worker.",
@@ -4061,7 +4061,7 @@ const jhWordsDB = [
   {
     "id": 30452,
     "en": "diplomat",
-    "kk": "",
+    "kk": "[ˋdɪplə͵mæt]",
     "zh": "n. 外交官",
     "unit": 17,
     "example": "Fearey had all the charm and urbanity of the trained diplomat.",
@@ -4070,7 +4070,7 @@ const jhWordsDB = [
   {
     "id": 30453,
     "en": "dinner",
-    "kk": "",
+    "kk": "[ˋdɪnɚ]",
     "zh": "n. 晚餐",
     "unit": 17,
     "example": "Dinner was in two sittings.",
@@ -4079,7 +4079,7 @@ const jhWordsDB = [
   {
     "id": 30454,
     "en": "dinosaur",
-    "kk": "",
+    "kk": "[ˋdaɪnə͵sɔr]",
     "zh": "n. 恐龍",
     "unit": 17,
     "example": "'Dinosaur' combines CGI animation with live-action location shots.",
@@ -4088,7 +4088,7 @@ const jhWordsDB = [
   {
     "id": 30455,
     "en": "direct",
-    "kk": "",
+    "kk": "[dɚˋɛkt]",
     "zh": "adj. 直的",
     "unit": 17,
     "example": "Christopher will direct day-to-day operations.",
@@ -4097,7 +4097,7 @@ const jhWordsDB = [
   {
     "id": 30456,
     "en": "direction",
-    "kk": "",
+    "kk": "[dɚˋɛkʃən]",
     "zh": "n. 方向",
     "unit": 17,
     "example": "Which direction are you facing?",
@@ -4106,7 +4106,7 @@ const jhWordsDB = [
   {
     "id": 30457,
     "en": "dirty",
-    "kk": "",
+    "kk": "[ˋdɝti]",
     "zh": "adj. 骯髒的",
     "unit": 17,
     "example": "Don't get your dress dirty!",
@@ -4115,7 +4115,7 @@ const jhWordsDB = [
   {
     "id": 30458,
     "en": "disagree",
-    "kk": "",
+    "kk": "[dɪsəˋɡri]",
     "zh": "v. 不同意",
     "unit": 17,
     "example": "'I disagree,' said Polly stoutly.",
@@ -4124,7 +4124,7 @@ const jhWordsDB = [
   {
     "id": 30459,
     "en": "disappear",
-    "kk": "",
+    "kk": "[͵dɪsəˋpɪr]",
     "zh": "v. 消失",
     "unit": 17,
     "example": "They watched the bus disappear into the distance.",
@@ -4133,7 +4133,7 @@ const jhWordsDB = [
   {
     "id": 30460,
     "en": "discover",
-    "kk": "",
+    "kk": "[dɪˋskʌvɚ]",
     "zh": "v. 發現",
     "unit": 17,
     "example": "It's exciting to discover traces of earlier civilizations.",
@@ -4142,7 +4142,7 @@ const jhWordsDB = [
   {
     "id": 30461,
     "en": "discuss",
-    "kk": "",
+    "kk": "[dɪˋskʌs]",
     "zh": "v. 討論",
     "unit": 17,
     "example": "They had important matters to discuss.",
@@ -4151,7 +4151,7 @@ const jhWordsDB = [
   {
     "id": 30462,
     "en": "discussion",
-    "kk": "",
+    "kk": "[dɪˋskʌʃən]",
     "zh": "n. 討論",
     "unit": 17,
     "example": "The time for discussion is past.",
@@ -4160,7 +4160,7 @@ const jhWordsDB = [
   {
     "id": 30463,
     "en": "dish",
-    "kk": "",
+    "kk": "[dɪʃ]",
     "zh": "n. 盤子",
     "unit": 17,
     "example": "It lapped milk from a dish.",
@@ -4169,7 +4169,7 @@ const jhWordsDB = [
   {
     "id": 30464,
     "en": "dishonest",
-    "kk": "",
+    "kk": "[dɪˋsɑnəst]",
     "zh": "adj. 不誠實的",
     "unit": 17,
     "example": "he was a dishonest hypocrite prepared to exploit his family.",
@@ -4178,7 +4178,7 @@ const jhWordsDB = [
   {
     "id": 30465,
     "en": "distance",
-    "kk": "",
+    "kk": "[ˋdɪstəns]",
     "zh": "n. 距離",
     "unit": 17,
     "example": "Mountains rose in the distance.",
@@ -4187,7 +4187,7 @@ const jhWordsDB = [
   {
     "id": 30466,
     "en": "distant",
-    "kk": "",
+    "kk": "[ˋdɪstənt]",
     "zh": "adj. 遠的",
     "unit": 17,
     "example": "He's a distant cousin of mine.",
@@ -4196,7 +4196,7 @@ const jhWordsDB = [
   {
     "id": 30467,
     "en": "divide",
-    "kk": "",
+    "kk": "[dɪˋvaɪd]",
     "zh": "v. 分割",
     "unit": 17,
     "example": "The cells began to divide rapidly.",
@@ -4205,7 +4205,7 @@ const jhWordsDB = [
   {
     "id": 30468,
     "en": "dizzy",
-    "kk": "",
+    "kk": "[ˋdɪzi]",
     "zh": "adj. 頭暈的",
     "unit": 17,
     "example": "She felt dizzy and nauseous.",
@@ -4214,7 +4214,7 @@ const jhWordsDB = [
   {
     "id": 30469,
     "en": "doctor",
-    "kk": "",
+    "kk": "[ˋdɑktɚ]",
     "zh": "n. 醫生",
     "unit": 17,
     "example": "The doctor tested her reflexes.",
@@ -4223,7 +4223,7 @@ const jhWordsDB = [
   {
     "id": 30470,
     "en": "dog",
-    "kk": "",
+    "kk": "[dɔɡ]",
     "zh": "n. 狗",
     "unit": 17,
     "example": "The dog refused to budge.",
@@ -4232,7 +4232,7 @@ const jhWordsDB = [
   {
     "id": 30471,
     "en": "doll",
-    "kk": "",
+    "kk": "[dɑl]",
     "zh": "n. 洋娃娃",
     "unit": 17,
     "example": "The child was clutching a doll in her hand.",
@@ -4241,7 +4241,7 @@ const jhWordsDB = [
   {
     "id": 30472,
     "en": "dollar",
-    "kk": "",
+    "kk": "[ˋdɑlɚ]",
     "zh": "n. 元",
     "unit": 17,
     "example": "The dollar continued to slide.",
@@ -4250,7 +4250,7 @@ const jhWordsDB = [
   {
     "id": 30473,
     "en": "dolphin",
-    "kk": "",
+    "kk": "[ˋdɑlfən]",
     "zh": "n. 海豚",
     "unit": 17,
     "example": "The dolphin is an intelligent animal.",
@@ -4259,7 +4259,7 @@ const jhWordsDB = [
   {
     "id": 30474,
     "en": "donkey",
-    "kk": "",
+    "kk": "[ˋdɑŋki]",
     "zh": "n. 驢",
     "unit": 17,
     "example": "The donkey brayed and tried to bolt.",
@@ -4268,7 +4268,7 @@ const jhWordsDB = [
   {
     "id": 30475,
     "en": "door",
-    "kk": "",
+    "kk": "[dɔr]",
     "zh": "n. 門",
     "unit": 17,
     "example": "The door opens outwards.",
@@ -4277,7 +4277,7 @@ const jhWordsDB = [
   {
     "id": 30476,
     "en": "dot",
-    "kk": "",
+    "kk": "[dɑt]",
     "zh": "n. 點",
     "unit": 17,
     "example": "The weaker dot-coms have collapsed.",
@@ -4286,7 +4286,7 @@ const jhWordsDB = [
   {
     "id": 30477,
     "en": "double",
-    "kk": "",
+    "kk": "[ˋdʌbəl]",
     "zh": "v. 加倍",
     "unit": 17,
     "example": "He served 17 double faults.",
@@ -4295,7 +4295,7 @@ const jhWordsDB = [
   {
     "id": 30478,
     "en": "doubt",
-    "kk": "",
+    "kk": "[daʊt]",
     "zh": "v. 懷疑",
     "unit": 17,
     "example": "There was little doubt in my mind.",
@@ -4304,7 +4304,7 @@ const jhWordsDB = [
   {
     "id": 30479,
     "en": "doughnut",
-    "kk": "",
+    "kk": "[ˋdo͵nʌt]",
     "zh": "n. 甜甜圈",
     "unit": 17,
     "example": "Don't you like a doughnut?",
@@ -4313,7 +4313,7 @@ const jhWordsDB = [
   {
     "id": 30480,
     "en": "dove",
-    "kk": "",
+    "kk": "[dʌv]",
     "zh": "n. 鴿子",
     "unit": 17,
     "example": "He wore a dove-grey suit.",
@@ -4322,7 +4322,7 @@ const jhWordsDB = [
   {
     "id": 30481,
     "en": "down",
-    "kk": "",
+    "kk": "[daʊn]",
     "zh": "adv. 向下",
     "unit": 17,
     "example": "He crouched down beside her.",
@@ -4331,7 +4331,7 @@ const jhWordsDB = [
   {
     "id": 30482,
     "en": "downstairs",
-    "kk": "",
+    "kk": "[ˋdaʊnˋstɛrz]",
     "zh": "adv. 在樓下",
     "unit": 17,
     "example": "Denise went downstairs and made some tea.",
@@ -4340,7 +4340,7 @@ const jhWordsDB = [
   {
     "id": 30483,
     "en": "downtown",
-    "kk": "",
+    "kk": "[ˋdaʊnˋtaʊn]",
     "zh": "n. 商業區",
     "unit": 17,
     "example": "Parking can be tricky downtown.",
@@ -4349,7 +4349,7 @@ const jhWordsDB = [
   {
     "id": 30484,
     "en": "dozen",
-    "kk": "",
+    "kk": "[ˋdʌzən]",
     "zh": "n. (一)打",
     "unit": 17,
     "example": "Packages arrived by the dozen from America.",
@@ -4358,7 +4358,7 @@ const jhWordsDB = [
   {
     "id": 30485,
     "en": "drag",
-    "kk": "",
+    "kk": "[dræɡ]",
     "zh": "v. 拖",
     "unit": 17,
     "example": "Walking's a drag—let's drive there.",
@@ -4367,7 +4367,7 @@ const jhWordsDB = [
   {
     "id": 30486,
     "en": "dragon",
-    "kk": "",
+    "kk": "[ˋdræɡən]",
     "zh": "n. 龍",
     "unit": 17,
     "example": "The dragon is a blue dragon.",
@@ -4376,7 +4376,7 @@ const jhWordsDB = [
   {
     "id": 30487,
     "en": "drama",
-    "kk": "",
+    "kk": "[ˋdrɑmə]",
     "zh": "n. 戲劇",
     "unit": 17,
     "example": "He knew nothing of Greek drama.",
@@ -4385,7 +4385,7 @@ const jhWordsDB = [
   {
     "id": 30488,
     "en": "draw",
-    "kk": "",
+    "kk": "[drɔ]",
     "zh": "v. 拉",
     "unit": 17,
     "example": "They managed an honourable 2–2 draw.",
@@ -4394,7 +4394,7 @@ const jhWordsDB = [
   {
     "id": 30489,
     "en": "drawer",
-    "kk": "",
+    "kk": "[drɔr]",
     "zh": "n. 抽屜",
     "unit": 17,
     "example": "She yanked open the drawer.",
@@ -4403,7 +4403,7 @@ const jhWordsDB = [
   {
     "id": 30490,
     "en": "dream",
-    "kk": "",
+    "kk": "[drim]",
     "zh": "n. 夢",
     "unit": 17,
     "example": "He finally actualized his dream.",
@@ -4412,7 +4412,7 @@ const jhWordsDB = [
   {
     "id": 30491,
     "en": "dress",
-    "kk": "",
+    "kk": "[drɛs]",
     "zh": "n. 洋裝",
     "unit": 17,
     "example": "For lunch, dress is informal.",
@@ -4421,7 +4421,7 @@ const jhWordsDB = [
   {
     "id": 30492,
     "en": "drink",
-    "kk": "",
+    "kk": "[drɪŋk]",
     "zh": "v. 喝",
     "unit": 17,
     "example": "This drink tastes like sherry.",
@@ -4430,7 +4430,7 @@ const jhWordsDB = [
   {
     "id": 30493,
     "en": "drive",
-    "kk": "",
+    "kk": "[draɪv]",
     "zh": "v. 開車",
     "unit": 17,
     "example": "You shouldn't drive so fast.",
@@ -4439,7 +4439,7 @@ const jhWordsDB = [
   {
     "id": 30494,
     "en": "driver",
-    "kk": "",
+    "kk": "[ˋdraɪvɚ]",
     "zh": "n. 駕駛人",
     "unit": 17,
     "example": "The driver suffered head injuries.",
@@ -4448,7 +4448,7 @@ const jhWordsDB = [
   {
     "id": 30495,
     "en": "drop",
-    "kk": "",
+    "kk": "[drɑp]",
     "zh": "v. 落下",
     "unit": 17,
     "example": "Temperatures can drop to freezing at night.",
@@ -4457,7 +4457,7 @@ const jhWordsDB = [
   {
     "id": 30496,
     "en": "drug",
-    "kk": "",
+    "kk": "[drʌɡ]",
     "zh": "n. 藥;毒品",
     "unit": 17,
     "example": "The new drug was ineffective.",
@@ -4466,7 +4466,7 @@ const jhWordsDB = [
   {
     "id": 30497,
     "en": "drum",
-    "kk": "",
+    "kk": "[drʌm]",
     "zh": "n. 鼓",
     "unit": 17,
     "example": "When you beat the drum, you feel good.",
@@ -4475,7 +4475,7 @@ const jhWordsDB = [
   {
     "id": 30498,
     "en": "dry",
-    "kk": "",
+    "kk": "[draɪ]",
     "zh": "adj. 乾的",
     "unit": 17,
     "example": "My mouth felt completely dry.",
@@ -4484,7 +4484,7 @@ const jhWordsDB = [
   {
     "id": 30499,
     "en": "dryer",
-    "kk": "",
+    "kk": "[ˋdraɪɚ]",
     "zh": "n. 烘乾機",
     "unit": 17,
     "example": "Do you have a hair dryer?",
@@ -4493,7 +4493,7 @@ const jhWordsDB = [
   {
     "id": 30500,
     "en": "duck",
-    "kk": "",
+    "kk": "[dʌk]",
     "zh": "n. 鴨子",
     "unit": 17,
     "example": "The main course was roast duck.",
@@ -4502,7 +4502,7 @@ const jhWordsDB = [
   {
     "id": 30501,
     "en": "dumb",
-    "kk": "",
+    "kk": "[dʌm]",
     "zh": "adj. 笨的;啞的",
     "unit": 17,
     "example": "That was a pretty dumb thing to do.",
@@ -4511,7 +4511,7 @@ const jhWordsDB = [
   {
     "id": 30502,
     "en": "dumpling",
-    "kk": "",
+    "kk": "[ˋdʌmplɪŋ]",
     "zh": "n. 餃子",
     "unit": 17,
     "example": "My favorite food is dumpling.",
@@ -4520,7 +4520,7 @@ const jhWordsDB = [
   {
     "id": 30503,
     "en": "during",
-    "kk": "",
+    "kk": "[ˋdʊrɪŋ]",
     "zh": "prep. 在...期間",
     "unit": 17,
     "example": "Eggs were rationed during the war.",
@@ -4529,7 +4529,7 @@ const jhWordsDB = [
   {
     "id": 30504,
     "en": "duty",
-    "kk": "",
+    "kk": "[ˋduti]",
     "zh": "n. 義務",
     "unit": 17,
     "example": "He was recalled to military duty.",
@@ -4538,7 +4538,7 @@ const jhWordsDB = [
   {
     "id": 30505,
     "en": "each",
-    "kk": "/iːtʃ/",
+    "kk": "[itʃ]",
     "zh": "adj. 每個",
     "unit": 17,
     "example": "We're crazy about each other.",
@@ -4547,7 +4547,7 @@ const jhWordsDB = [
   {
     "id": 30506,
     "en": "eagle",
-    "kk": "",
+    "kk": "[ˋiɡəl]",
     "zh": "n. 老鷹",
     "unit": 17,
     "example": "An eagle circled high overhead.",
@@ -4556,7 +4556,7 @@ const jhWordsDB = [
   {
     "id": 30507,
     "en": "ear",
-    "kk": "/ɪr/",
+    "kk": "[ir]",
     "zh": "n. 耳朵",
     "unit": 17,
     "example": "He tweaked Guy's ear roughly.",
@@ -4565,7 +4565,7 @@ const jhWordsDB = [
   {
     "id": 30508,
     "en": "early",
-    "kk": "/ˈɜːrli/",
+    "kk": "[ˋɝli]",
     "zh": "adj. 早的",
     "unit": 17,
     "example": "We didn't leave early enough.",
@@ -4574,7 +4574,7 @@ const jhWordsDB = [
   {
     "id": 30509,
     "en": "earn",
-    "kk": "/ɜːrn/",
+    "kk": "[ɝn]",
     "zh": "v. 獲得",
     "unit": 17,
     "example": "'How much (money) does she earn?",
@@ -4583,7 +4583,7 @@ const jhWordsDB = [
   {
     "id": 30510,
     "en": "earring",
-    "kk": "",
+    "kk": "[ˋɪrɪŋ]",
     "zh": "n. 耳環",
     "unit": 17,
     "example": "I've lost an earring and it was an expensive one.",
@@ -4592,7 +4592,7 @@ const jhWordsDB = [
   {
     "id": 30511,
     "en": "earth",
-    "kk": "/ɜːrθ/",
+    "kk": "[ɝθ]",
     "zh": "n. 地球",
     "unit": 17,
     "example": "The Earth orbits in an ellipse.",
@@ -4601,7 +4601,7 @@ const jhWordsDB = [
   {
     "id": 30512,
     "en": "ease",
-    "kk": "/iːz/",
+    "kk": "[iz]",
     "zh": "v. 放鬆",
     "unit": 17,
     "example": "This should help ease the pain.",
@@ -4610,7 +4610,7 @@ const jhWordsDB = [
   {
     "id": 30513,
     "en": "east",
-    "kk": "/iːst/",
+    "kk": "[ist]",
     "zh": "n. 東方",
     "unit": 17,
     "example": "They live on the east coast.",
@@ -4619,7 +4619,7 @@ const jhWordsDB = [
   {
     "id": 30514,
     "en": "eastern",
-    "kk": "/ˈiːstərn/",
+    "kk": "[ˋistɚn]",
     "zh": "adj. 東方的",
     "unit": 17,
     "example": "The wild card in the picture is eastern Europe.",
@@ -4628,7 +4628,7 @@ const jhWordsDB = [
   {
     "id": 30515,
     "en": "easy",
-    "kk": "/ˈiːzi/",
+    "kk": "[ˋizi]",
     "zh": "adj. 容易的",
     "unit": 17,
     "example": "The problem is anything but easy.",
@@ -4637,7 +4637,7 @@ const jhWordsDB = [
   {
     "id": 30516,
     "en": "eat",
-    "kk": "/iːt/",
+    "kk": "[it]",
     "zh": "v. 吃",
     "unit": 17,
     "example": "She began to eat ravenously.",
@@ -4646,7 +4646,7 @@ const jhWordsDB = [
   {
     "id": 30517,
     "en": "edge",
-    "kk": "/edʒ/",
+    "kk": "[ɛdʒ]",
     "zh": "n. 邊緣",
     "unit": 17,
     "example": "Be careful—it has a sharp edge.",
@@ -4655,7 +4655,7 @@ const jhWordsDB = [
   {
     "id": 30518,
     "en": "education",
-    "kk": "/ˌedʒuˈkeɪʃn/",
+    "kk": "[͵ɛdʒəˋkeʃən]",
     "zh": "n. 教育",
     "unit": 17,
     "example": "Education is a top priority.",
@@ -4664,7 +4664,7 @@ const jhWordsDB = [
   {
     "id": 30519,
     "en": "effect",
-    "kk": "/ɪˈfekt/",
+    "kk": "[ɪˋfɛkt]",
     "zh": "n. 影響",
     "unit": 17,
     "example": "The effect has proved hard to reproduce.",
@@ -4673,7 +4673,7 @@ const jhWordsDB = [
   {
     "id": 30520,
     "en": "effort",
-    "kk": "/ˈefərt/",
+    "kk": "[ˋɛfɚt]",
     "zh": "n. 努力",
     "unit": 17,
     "example": "You should put more effort into your work.",
@@ -4682,7 +4682,7 @@ const jhWordsDB = [
   {
     "id": 30521,
     "en": "egg",
-    "kk": "/eɡ/",
+    "kk": "[ɛɡ]",
     "zh": "n. 蛋",
     "unit": 17,
     "example": "Brush beaten egg over the pastry.",
@@ -4691,7 +4691,7 @@ const jhWordsDB = [
   {
     "id": 30522,
     "en": "eight",
-    "kk": "/eɪt/",
+    "kk": "[et]",
     "zh": "n. 八",
     "unit": 17,
     "example": "The cut needed eight stitches.",
@@ -4700,7 +4700,7 @@ const jhWordsDB = [
   {
     "id": 30523,
     "en": "eighteen",
-    "kk": "/ˌeɪˈtiːn/",
+    "kk": "[eˋtin]",
     "zh": "n. 十八",
     "unit": 17,
     "example": "His boat is an eighteen-footer.",
@@ -4709,7 +4709,7 @@ const jhWordsDB = [
   {
     "id": 30524,
     "en": "eighty",
-    "kk": "/ˈeɪti/",
+    "kk": "[ˋeti]",
     "zh": "n. 八十",
     "unit": 17,
     "example": "He's getting on for eighty.",
@@ -4718,7 +4718,7 @@ const jhWordsDB = [
   {
     "id": 30525,
     "en": "either",
-    "kk": "/ˈiːðər/",
+    "kk": "[ˋiðɚ]",
     "zh": "prop. (兩者中)任何一個",
     "unit": 17,
     "example": "Pete can't go and I can't either.",
@@ -4727,7 +4727,7 @@ const jhWordsDB = [
   {
     "id": 30526,
     "en": "elder",
-    "kk": "",
+    "kk": "[ˋɛldɚ]",
     "zh": "adj. 年長的",
     "unit": 17,
     "example": "He is her elder by several years.",
@@ -4736,7 +4736,7 @@ const jhWordsDB = [
   {
     "id": 30527,
     "en": "elect",
-    "kk": "",
+    "kk": "[ɪˋlɛkt]",
     "zh": "v. 選出",
     "unit": 17,
     "example": "The committee voted to re-elect him (as) chairman.",
@@ -4745,7 +4745,7 @@ const jhWordsDB = [
   {
     "id": 30528,
     "en": "elephant",
-    "kk": "",
+    "kk": "[ˋɛləfənt]",
     "zh": "n. 大象",
     "unit": 17,
     "example": "The elephant flapped its ears.",
@@ -4754,7 +4754,7 @@ const jhWordsDB = [
   {
     "id": 30529,
     "en": "eleven",
-    "kk": "/ɪˈlevn/",
+    "kk": "[ɪˋlɛvən]",
     "zh": "n. 十一",
     "unit": 17,
     "example": "Charles I ruled for eleven years.",
@@ -4763,7 +4763,7 @@ const jhWordsDB = [
   {
     "id": 30530,
     "en": "electric",
-    "kk": "/ɪˈlektrɪk/",
+    "kk": "[ɪˋlɛktrɪk]",
     "zh": "adj. 電的",
     "unit": 17,
     "example": "He invented the first electric clock.",
@@ -4772,7 +4772,7 @@ const jhWordsDB = [
   {
     "id": 30531,
     "en": "else",
-    "kk": "/els/",
+    "kk": "[ɛls]",
     "zh": "adv. 其他",
     "unit": 17,
     "example": "Everyone else was getting sloshed.",
@@ -4781,7 +4781,7 @@ const jhWordsDB = [
   {
     "id": 30532,
     "en": "embarrass",
-    "kk": "",
+    "kk": "[ɪmˋbɛrəs]",
     "zh": "v. 使尷尬",
     "unit": 17,
     "example": "When you embarrass me, I'll tell you.",
@@ -4790,7 +4790,7 @@ const jhWordsDB = [
   {
     "id": 30533,
     "en": "emotion",
-    "kk": "/ɪˈmoʊʃn/",
+    "kk": "[ɪˋmoʃən]",
     "zh": "n. 情緒",
     "unit": 17,
     "example": "Jealousy is a primal emotion.",
@@ -4799,7 +4799,7 @@ const jhWordsDB = [
   {
     "id": 30534,
     "en": "emphasize",
-    "kk": "",
+    "kk": "[ˋɛmfə͵saɪz]",
     "zh": "v. 強調",
     "unit": 17,
     "example": "He flourished the glass to emphasize the point.",
@@ -4808,7 +4808,7 @@ const jhWordsDB = [
   {
     "id": 30535,
     "en": "employ",
-    "kk": "/ɪmˈplɔɪ/",
+    "kk": "[ɛmˋplɔɪ]",
     "zh": "v. 雇用",
     "unit": 17,
     "example": "How many people does the company employ?",
@@ -4817,7 +4817,7 @@ const jhWordsDB = [
   {
     "id": 30536,
     "en": "empty",
-    "kk": "/ˈempti/",
+    "kk": "[ˋɛmpti]",
     "zh": "adj. 空的",
     "unit": 17,
     "example": "The nation's coffers are empty.",
@@ -4826,7 +4826,7 @@ const jhWordsDB = [
   {
     "id": 30537,
     "en": "end",
-    "kk": "/end/",
+    "kk": "[ɛnd]",
     "zh": "v. 結束",
     "unit": 17,
     "example": "Waitressing was a dead-end job.",
@@ -4835,7 +4835,7 @@ const jhWordsDB = [
   {
     "id": 30538,
     "en": "enemy",
-    "kk": "/ˈenəmi/",
+    "kk": "[ˋɛnəmi]",
     "zh": "n. 敵人",
     "unit": 17,
     "example": "They retreated before the enemy.",
@@ -4844,7 +4844,7 @@ const jhWordsDB = [
   {
     "id": 30539,
     "en": "energetic",
-    "kk": "",
+    "kk": "[͵ɛnɚˋdʒɛtɪk]",
     "zh": "adj. 精力充沛的",
     "unit": 17,
     "example": "He was hardworking and energetic.",
@@ -4853,7 +4853,7 @@ const jhWordsDB = [
   {
     "id": 30540,
     "en": "energy",
-    "kk": "/ˈenərdʒi/",
+    "kk": "[ˋɛnɚdʒi]",
     "zh": "n. 精力",
     "unit": 17,
     "example": "She's always full of energy.",
@@ -4862,7 +4862,7 @@ const jhWordsDB = [
   {
     "id": 30541,
     "en": "engine",
-    "kk": "/ˈendʒɪn/",
+    "kk": "[ˋɛndʒən]",
     "zh": "n. 引擎",
     "unit": 17,
     "example": "The engine spluttered and died.",
@@ -4871,7 +4871,7 @@ const jhWordsDB = [
   {
     "id": 30542,
     "en": "engineer",
-    "kk": "/ˌendʒɪˈnɪr/",
+    "kk": "[ˋɛndʒəˋnɪr]",
     "zh": "n. 工程師",
     "unit": 17,
     "example": "His father meant him to be an engineer.",
@@ -4880,7 +4880,7 @@ const jhWordsDB = [
   {
     "id": 30543,
     "en": "enjoy",
-    "kk": "/ɪnˈdʒɔɪ/",
+    "kk": "[͵ɛnˋdʒɔɪ]",
     "zh": "v. 享受",
     "unit": 17,
     "example": "You're going to enjoy this.",
@@ -4889,7 +4889,7 @@ const jhWordsDB = [
   {
     "id": 30544,
     "en": "enough",
-    "kk": "/ɪˈnʌf/",
+    "kk": "[ɪˋnʌf]",
     "zh": "adj. 足夠的",
     "unit": 17,
     "example": "Six bottles should be enough.",
@@ -4898,7 +4898,7 @@ const jhWordsDB = [
   {
     "id": 30545,
     "en": "enter",
-    "kk": "/ˈentər/",
+    "kk": "[ˋɛntɚ]",
     "zh": "v. 進入",
     "unit": 17,
     "example": "The sentry would not let her enter.",
@@ -4907,7 +4907,7 @@ const jhWordsDB = [
   {
     "id": 30546,
     "en": "entrance",
-    "kk": "",
+    "kk": "[ˋɛntrəns]",
     "zh": "n. 入口",
     "unit": 17,
     "example": "This entrance is in constant use.",
@@ -4916,7 +4916,7 @@ const jhWordsDB = [
   {
     "id": 30547,
     "en": "envelope",
-    "kk": "",
+    "kk": "[ˋɛnvə͵lop]",
     "zh": "n. 信封",
     "unit": 17,
     "example": "She opened the perfumed envelope.",
@@ -4925,7 +4925,7 @@ const jhWordsDB = [
   {
     "id": 30548,
     "en": "environment",
-    "kk": "/ɪnˈvaɪrənmənt/",
+    "kk": "[ɪnˋvaɪrənmənt]",
     "zh": "n. 自然環境",
     "unit": 17,
     "example": "Children need a caring environment.",
@@ -4934,7 +4934,7 @@ const jhWordsDB = [
   {
     "id": 30549,
     "en": "envy",
-    "kk": "",
+    "kk": "[ˋɛnvi]",
     "zh": "v. 忌妒",
     "unit": 17,
     "example": "I don't envy her that job.",
@@ -4943,7 +4943,7 @@ const jhWordsDB = [
   {
     "id": 30550,
     "en": "equal",
-    "kk": "/ˈiːkwəl/",
+    "kk": "[ˋikwəl]",
     "zh": "adj. 相等的",
     "unit": 17,
     "example": "We are equal in every way.",
@@ -4952,7 +4952,7 @@ const jhWordsDB = [
   {
     "id": 30551,
     "en": "eraser",
-    "kk": "",
+    "kk": "[ɪˋresɚ]",
     "zh": "n. 橡皮擦",
     "unit": 17,
     "example": "I hide the eraser in her boot.",
@@ -4961,7 +4961,7 @@ const jhWordsDB = [
   {
     "id": 30552,
     "en": "error",
-    "kk": "/ˈerər/",
+    "kk": "[ˋɛrɚ]",
     "zh": "n. 錯誤",
     "unit": 17,
     "example": "Vicenzo failed to spot the error.",
@@ -4970,7 +4970,7 @@ const jhWordsDB = [
   {
     "id": 30553,
     "en": "especially",
-    "kk": "/ɪˈspeʃəli/",
+    "kk": "[əˋspɛʃli]",
     "zh": "adv. 特別地",
     "unit": 17,
     "example": "I especially like sweet things.",
@@ -4979,7 +4979,7 @@ const jhWordsDB = [
   {
     "id": 30554,
     "en": "eve",
-    "kk": "",
+    "kk": "[iv]",
     "zh": "n. 前夕",
     "unit": 17,
     "example": "Richard had turned up on Christmas Eve with Tony.",
@@ -4988,7 +4988,7 @@ const jhWordsDB = [
   {
     "id": 30555,
     "en": "even",
-    "kk": "/ˈiːvən/",
+    "kk": "[ˋivɪn]",
     "zh": "adv. 甚至",
     "unit": 17,
     "example": "She can't even change a nappy.",
@@ -4997,7 +4997,7 @@ const jhWordsDB = [
   {
     "id": 30556,
     "en": "evening",
-    "kk": "/ˈiːvnɪŋ/",
+    "kk": "[ˋivnɪŋ]",
     "zh": "n. 傍晚",
     "unit": 17,
     "example": "I'll see you tomorrow evening.",
@@ -5006,7 +5006,7 @@ const jhWordsDB = [
   {
     "id": 30557,
     "en": "event",
-    "kk": "/ɪˈvent/",
+    "kk": "[ɪˋvɛnt]",
     "zh": "n. 事件",
     "unit": 17,
     "example": "The event was voted a great success.",
@@ -5015,7 +5015,7 @@ const jhWordsDB = [
   {
     "id": 30558,
     "en": "ever",
-    "kk": "/ˈevər/",
+    "kk": "[ˋɛvɚ]",
     "zh": "adv. 從來",
     "unit": 17,
     "example": "It's raining worse than ever.",
@@ -5024,7 +5024,7 @@ const jhWordsDB = [
   {
     "id": 30559,
     "en": "every",
-    "kk": "/ˈevri/",
+    "kk": "[ˋɛvɚi]",
     "zh": "adj. 每個",
     "unit": 17,
     "example": "Elections take place every year.",
@@ -5033,7 +5033,7 @@ const jhWordsDB = [
   {
     "id": 30560,
     "en": "evil",
-    "kk": "",
+    "kk": "[ˋivəl]",
     "zh": "n. 惡魔",
     "unit": 17,
     "example": "Good and evil may co-exist within one family.",
@@ -5042,7 +5042,7 @@ const jhWordsDB = [
   {
     "id": 30561,
     "en": "exact",
-    "kk": "/ɪɡˈzækt/",
+    "kk": "[ɪɡˋzækt]",
     "zh": "adj. 正確的",
     "unit": 17,
     "example": "I don't remember the exact words.",
@@ -5051,7 +5051,7 @@ const jhWordsDB = [
   {
     "id": 30562,
     "en": "exam",
-    "kk": "",
+    "kk": "[ɪɡˋzæm]",
     "zh": "n. 考試",
     "unit": 17,
     "example": "He passed the exam with ease.",
@@ -5060,7 +5060,7 @@ const jhWordsDB = [
   {
     "id": 30563,
     "en": "example",
-    "kk": "/ɪɡˈzæmpl/",
+    "kk": "[ɪɡˋzæmpəl]",
     "zh": "n. 例子",
     "unit": 17,
     "example": "Let me give you an example.",
@@ -5069,7 +5069,7 @@ const jhWordsDB = [
   {
     "id": 30564,
     "en": "excellent",
-    "kk": "/ˈeksələnt/",
+    "kk": "[ˋɛksələnt]",
     "zh": "adj. 優秀的",
     "unit": 17,
     "example": "Her musicianship is excellent.",
@@ -5078,7 +5078,7 @@ const jhWordsDB = [
   {
     "id": 30565,
     "en": "except",
-    "kk": "/ɪkˈsept/",
+    "kk": "[ɪkˋsɛpt]",
     "zh": "prep. 除...之外",
     "unit": 17,
     "example": "They all came except Matt.",
@@ -5087,7 +5087,7 @@ const jhWordsDB = [
   {
     "id": 30566,
     "en": "excite",
-    "kk": "",
+    "kk": "[ɪkˋsaɪt]",
     "zh": "v. 使...興奮",
     "unit": 17,
     "example": "Daniel's early exposure to motor racing did not excite his interest.",
@@ -5096,7 +5096,7 @@ const jhWordsDB = [
   {
     "id": 30567,
     "en": "excuse",
-    "kk": "/ɪkˈskjuːs/",
+    "kk": "[ɪkˋskjus]",
     "zh": "v. 原諒",
     "unit": 17,
     "example": "She served up the usual excuse.",
@@ -5105,7 +5105,7 @@ const jhWordsDB = [
   {
     "id": 30568,
     "en": "exercise",
-    "kk": "/ˈeksərsaɪz/",
+    "kk": "[ˋɛksɚ͵saɪz]",
     "zh": "n. 運動",
     "unit": 17,
     "example": "Do you take regular exercise?",
@@ -5114,7 +5114,7 @@ const jhWordsDB = [
   {
     "id": 30569,
     "en": "exist",
-    "kk": "/ɪɡˈzɪst/",
+    "kk": "[ɪɡˋzɪst]",
     "zh": "v. 存在",
     "unit": 17,
     "example": "Many possible orderings may exist.",
@@ -5123,7 +5123,7 @@ const jhWordsDB = [
   {
     "id": 30570,
     "en": "exit",
-    "kk": "/ˈeɡzɪt/",
+    "kk": "[ˋɛɡzɪt]",
     "zh": "n. 出口",
     "unit": 17,
     "example": "There was a stampede for the exit.",
@@ -5132,7 +5132,7 @@ const jhWordsDB = [
   {
     "id": 30571,
     "en": "expect",
-    "kk": "/ɪkˈspekt/",
+    "kk": "[ɪkˋspɛkt]",
     "zh": "v. 期望",
     "unit": 17,
     "example": "Don't expect it to improve overnight.",
@@ -5141,7 +5141,7 @@ const jhWordsDB = [
   {
     "id": 30572,
     "en": "expensive",
-    "kk": "/ɪkˈspensɪv/",
+    "kk": "[ɪkˋspɛnsɪv]",
     "zh": "adj. 昂貴的",
     "unit": 17,
     "example": "Food was scarce and expensive.",
@@ -5150,7 +5150,7 @@ const jhWordsDB = [
   {
     "id": 30573,
     "en": "experience",
-    "kk": "/ɪkˈspɪriəns/",
+    "kk": "[ɪkˋspɪriəns]",
     "zh": "n. 經驗",
     "unit": 17,
     "example": "It was a cathartic experience.",
@@ -5159,7 +5159,7 @@ const jhWordsDB = [
   {
     "id": 30574,
     "en": "explain",
-    "kk": "/ɪkˈspleɪn/",
+    "kk": "[ɪkˋsplen]",
     "zh": "v. 說明",
     "unit": 17,
     "example": "It's pretty hard to explain.",
@@ -5168,7 +5168,7 @@ const jhWordsDB = [
   {
     "id": 30575,
     "en": "express",
-    "kk": "/ɪkˈspres/",
+    "kk": "[ɪkˋsprɛs]",
     "zh": "v. 表達",
     "unit": 17,
     "example": "Words cannot express how pleased I am.",
@@ -5177,7 +5177,7 @@ const jhWordsDB = [
   {
     "id": 30576,
     "en": "extra",
-    "kk": "/ˈekstrə/",
+    "kk": "[ˋɛkstrə]",
     "zh": "adj. 額外的",
     "unit": 17,
     "example": "Running shoes have extra cushioning.",
@@ -5186,7 +5186,7 @@ const jhWordsDB = [
   {
     "id": 30577,
     "en": "eye",
-    "kk": "/aɪ/",
+    "kk": "[aɪ]",
     "zh": "n. 眼睛",
     "unit": 17,
     "example": "The film has a painterly eye.",
@@ -5195,7 +5195,7 @@ const jhWordsDB = [
   {
     "id": 30578,
     "en": "eyebrow",
-    "kk": "",
+    "kk": "[ˋaɪ͵braʊ]",
     "zh": "n. 眉毛",
     "unit": 17,
     "example": "She raised a questioning eyebrow.",
@@ -5204,7 +5204,7 @@ const jhWordsDB = [
   {
     "id": 30579,
     "en": "face",
-    "kk": "/feɪs/",
+    "kk": "[fes]",
     "zh": "n. 臉",
     "unit": 17,
     "example": "Her eyes flicked from face to face.",
@@ -5213,7 +5213,7 @@ const jhWordsDB = [
   {
     "id": 30580,
     "en": "fact",
-    "kk": "/fækt/",
+    "kk": "[fækt]",
     "zh": "n. 事實",
     "unit": 17,
     "example": "Her argument was grounded in fact.",
@@ -5222,7 +5222,7 @@ const jhWordsDB = [
   {
     "id": 30581,
     "en": "factory",
-    "kk": "/ˈfæktəri/",
+    "kk": "[ˋfæktɚi]",
     "zh": "n. 工廠",
     "unit": 17,
     "example": "Striking workers picketed the factory.",
@@ -5231,7 +5231,7 @@ const jhWordsDB = [
   {
     "id": 30582,
     "en": "fail",
-    "kk": "/feɪl/",
+    "kk": "[fel]",
     "zh": "v. 失敗",
     "unit": 17,
     "example": "He won't allow himself to fail.",
@@ -5240,7 +5240,7 @@ const jhWordsDB = [
   {
     "id": 30583,
     "en": "fair",
-    "kk": "/fer/",
+    "kk": "[fɛr]",
     "zh": "adj. 公平的",
     "unit": 17,
     "example": "The punishment was very fair.",
@@ -5249,7 +5249,7 @@ const jhWordsDB = [
   {
     "id": 30584,
     "en": "fall",
-    "kk": "/fɔːl/",
+    "kk": "[fɔl]",
     "zh": "v. 倒下",
     "unit": 17,
     "example": "Output will fall by 6%.",
@@ -5258,7 +5258,7 @@ const jhWordsDB = [
   {
     "id": 30585,
     "en": "false",
-    "kk": "/fɔːls/",
+    "kk": "[fɔls]",
     "zh": "adj. 錯的",
     "unit": 17,
     "example": "The thief used a false identity.",
@@ -5267,7 +5267,7 @@ const jhWordsDB = [
   {
     "id": 30586,
     "en": "family",
-    "kk": "/ˈfæməli/",
+    "kk": "[ˋfæməli]",
     "zh": "n. 家",
     "unit": 17,
     "example": "They were an insular family.",
@@ -5276,7 +5276,7 @@ const jhWordsDB = [
   {
     "id": 30587,
     "en": "famous",
-    "kk": "/ˈfeɪməs/",
+    "kk": "[ˋfeməs]",
     "zh": "adj. 著名的",
     "unit": 17,
     "example": "Some day he'll be famous.",
@@ -5285,7 +5285,7 @@ const jhWordsDB = [
   {
     "id": 30588,
     "en": "fan",
-    "kk": "/fæn/",
+    "kk": "[fæn]",
     "zh": "n. 電扇",
     "unit": 17,
     "example": "She installed a wall-mounted electric fan.",
@@ -5294,7 +5294,7 @@ const jhWordsDB = [
   {
     "id": 30589,
     "en": "fancy",
-    "kk": "",
+    "kk": "[ˋfænsi]",
     "zh": "n. 想像力",
     "unit": 17,
     "example": "Do you fancy a jar after work?",
@@ -5303,7 +5303,7 @@ const jhWordsDB = [
   {
     "id": 30590,
     "en": "fantastic",
-    "kk": "",
+    "kk": "[fænˋtæstɪk]",
     "zh": "adj. 極好的",
     "unit": 17,
     "example": "You've got the job? Fantastic!",
@@ -5312,7 +5312,7 @@ const jhWordsDB = [
   {
     "id": 30591,
     "en": "far",
-    "kk": "/fɑːr/",
+    "kk": "[fɑr]",
     "zh": "adj. 遠方的",
     "unit": 17,
     "example": "It's been quiet so far.",
@@ -5321,7 +5321,7 @@ const jhWordsDB = [
   {
     "id": 30592,
     "en": "farm",
-    "kk": "/fɑːrm/",
+    "kk": "[fɑrm]",
     "zh": "n. 農場",
     "unit": 17,
     "example": "Whose is that farm over yonder?",
@@ -5330,7 +5330,7 @@ const jhWordsDB = [
   {
     "id": 30593,
     "en": "farmer",
-    "kk": "/ˈfɑːrmər/",
+    "kk": "[ˋfɑrmɚ]",
     "zh": "n. 農夫",
     "unit": 17,
     "example": "There once was a poor farmer who had four sons.",
@@ -5339,7 +5339,7 @@ const jhWordsDB = [
   {
     "id": 30594,
     "en": "fashion",
-    "kk": "/ˈfæʃn/",
+    "kk": "[ˋfæʃən]",
     "zh": "n. 流行",
     "unit": 17,
     "example": "Carolyne is a fashion designer.",
@@ -5348,7 +5348,7 @@ const jhWordsDB = [
   {
     "id": 30595,
     "en": "fast",
-    "kk": "/fæst/",
+    "kk": "[fæst]",
     "zh": "adj. 快的",
     "unit": 17,
     "example": "You shouldn't drive so fast.",
@@ -5357,7 +5357,7 @@ const jhWordsDB = [
   {
     "id": 30596,
     "en": "fat",
-    "kk": "/fæt/",
+    "kk": "[fæt]",
     "zh": "adj. 肥胖的",
     "unit": 17,
     "example": "This dress makes me look fat.",
@@ -5366,7 +5366,7 @@ const jhWordsDB = [
   {
     "id": 30597,
     "en": "father",
-    "kk": "/ˈfɑːðər/",
+    "kk": "[ˋfɑðɚ]",
     "zh": "n. 父親",
     "unit": 17,
     "example": "His father hailed from Italy.",
@@ -5375,7 +5375,7 @@ const jhWordsDB = [
   {
     "id": 30598,
     "en": "faucet",
-    "kk": "",
+    "kk": "[ˋfɔsət]",
     "zh": "n. 水龍頭",
     "unit": 17,
     "example": "If God turns off one faucet, he can turn on another.",
@@ -5384,7 +5384,7 @@ const jhWordsDB = [
   {
     "id": 30599,
     "en": "fault",
-    "kk": "/fɔːlt/",
+    "kk": "[fɔlt]",
     "zh": "n. 缺點",
     "unit": 17,
     "example": "His worst fault was his inconsistency.",
@@ -5393,7 +5393,7 @@ const jhWordsDB = [
   {
     "id": 30600,
     "en": "favorite",
-    "kk": "/ˈfeɪvərɪt/",
+    "kk": "[ˋfevɚɪt]",
     "zh": "adj. 最喜歡的",
     "unit": 17,
     "example": "What's your favorite and less favorite Chinese food?",
@@ -5402,7 +5402,7 @@ const jhWordsDB = [
   {
     "id": 30601,
     "en": "fear",
-    "kk": "/fɪr/",
+    "kk": "[fɪr]",
     "zh": "n. 害怕",
     "unit": 17,
     "example": "Fear clutched at her heart.",
@@ -5411,7 +5411,7 @@ const jhWordsDB = [
   {
     "id": 30602,
     "en": "February",
-    "kk": "",
+    "kk": "[ˋfɛbjə͵wɛri]",
     "zh": "n. 二月",
     "unit": 17,
     "example": "His exhibition opens on February 5.",
@@ -5420,7 +5420,7 @@ const jhWordsDB = [
   {
     "id": 30603,
     "en": "fee",
-    "kk": "/fiː/",
+    "kk": "[fi]",
     "zh": "n. 費用",
     "unit": 17,
     "example": "The fee is pitifully low.",
@@ -5429,7 +5429,7 @@ const jhWordsDB = [
   {
     "id": 30604,
     "en": "feed",
-    "kk": "/fiːd/",
+    "kk": "[fid]",
     "zh": "v. 餵養",
     "unit": 17,
     "example": "Can you feed the cat, please?",
@@ -5438,7 +5438,7 @@ const jhWordsDB = [
   {
     "id": 30605,
     "en": "feel",
-    "kk": "/fiːl/",
+    "kk": "[fil]",
     "zh": "v. 感覺",
     "unit": 17,
     "example": "'I feel...' There she stopped.",
@@ -5447,7 +5447,7 @@ const jhWordsDB = [
   {
     "id": 30606,
     "en": "feeling",
-    "kk": "/ˈfiːlɪŋ/",
+    "kk": "[ˋfilɪŋ]",
     "zh": "n. 感覺",
     "unit": 17,
     "example": "She's feeling a little homesick.",
@@ -5456,7 +5456,7 @@ const jhWordsDB = [
   {
     "id": 30607,
     "en": "female",
-    "kk": "/ˈfiːmeɪl/",
+    "kk": "[ˋfi͵mel]",
     "zh": "n. 女性",
     "unit": 17,
     "example": "Oestrogen is a female sex hormone.",
@@ -5465,7 +5465,7 @@ const jhWordsDB = [
   {
     "id": 30608,
     "en": "fence",
-    "kk": "/fens/",
+    "kk": "[fɛns]",
     "zh": "n. 柵欄",
     "unit": 17,
     "example": "The fence snagged my sweater.",
@@ -5474,7 +5474,7 @@ const jhWordsDB = [
   {
     "id": 30609,
     "en": "festival",
-    "kk": "",
+    "kk": "[ˋfɛstəvəl]",
     "zh": "n. 節慶",
     "unit": 17,
     "example": "I declare this festival open.",
@@ -5483,7 +5483,7 @@ const jhWordsDB = [
   {
     "id": 30610,
     "en": "fever",
-    "kk": "",
+    "kk": "[ˋfivɚ]",
     "zh": "n. 發燒",
     "unit": 17,
     "example": "The fever has passed its crisis.",
@@ -5492,7 +5492,7 @@ const jhWordsDB = [
   {
     "id": 30611,
     "en": "few",
-    "kk": "/fjuː/",
+    "kk": "[fju]",
     "zh": "adj. 少數的",
     "unit": 17,
     "example": "Few soldiers were in evidence.",
@@ -5501,7 +5501,7 @@ const jhWordsDB = [
   {
     "id": 30612,
     "en": "fifteen",
-    "kk": "/ˌfɪfˈtiːn/",
+    "kk": "[fɪfˋtin]",
     "zh": "n. 十五",
     "unit": 17,
     "example": "The talks began some fifteen minutes late.",
@@ -5510,7 +5510,7 @@ const jhWordsDB = [
   {
     "id": 30613,
     "en": "fifty",
-    "kk": "/ˈfɪfti/",
+    "kk": "[ˋfɪfti]",
     "zh": "n. 五十",
     "unit": 17,
     "example": "Fifty is the new forty.",
@@ -5519,7 +5519,7 @@ const jhWordsDB = [
   {
     "id": 30614,
     "en": "fight",
-    "kk": "/faɪt/",
+    "kk": "[faɪt]",
     "zh": "n. 戰鬥",
     "unit": 17,
     "example": "Did you have a fight with him?",
@@ -5528,7 +5528,7 @@ const jhWordsDB = [
   {
     "id": 30615,
     "en": "fill",
-    "kk": "/fɪl/",
+    "kk": "[fɪl]",
     "zh": "v. 裝滿",
     "unit": 17,
     "example": "Dentists fill teeth and repair broken ones.",
@@ -5537,7 +5537,7 @@ const jhWordsDB = [
   {
     "id": 30616,
     "en": "film",
-    "kk": "/fɪlm/",
+    "kk": "[fɪlm]",
     "zh": "n. 電影",
     "unit": 17,
     "example": "Jenny's writing a film script.",
@@ -5546,7 +5546,7 @@ const jhWordsDB = [
   {
     "id": 30617,
     "en": "final",
-    "kk": "/ˈfaɪnl/",
+    "kk": "[ˋfaɪnəl]",
     "zh": "adj. 最後的",
     "unit": 17,
     "example": "The judges' decision is final.",
@@ -5555,7 +5555,7 @@ const jhWordsDB = [
   {
     "id": 30618,
     "en": "finally",
-    "kk": "/ˈfaɪnəli/",
+    "kk": "[ˋfaɪnəli]",
     "zh": "adv. 最後",
     "unit": 17,
     "example": "Finally she drifted into sleep.",
@@ -5564,7 +5564,7 @@ const jhWordsDB = [
   {
     "id": 30619,
     "en": "find",
-    "kk": "/faɪnd/",
+    "kk": "[faɪnd]",
     "zh": "v. 找到",
     "unit": 17,
     "example": "I find cooking very relaxing.",
@@ -5573,7 +5573,7 @@ const jhWordsDB = [
   {
     "id": 30620,
     "en": "fine",
-    "kk": "/faɪn/",
+    "kk": "[faɪn]",
     "zh": "adj. 精巧的",
     "unit": 17,
     "example": "'That's fine,' he replied amiably.",
@@ -5582,7 +5582,7 @@ const jhWordsDB = [
   {
     "id": 30621,
     "en": "finger",
-    "kk": "/ˈfɪŋɡər/",
+    "kk": "[ˋfɪŋɡɚ]",
     "zh": "n. 指頭",
     "unit": 17,
     "example": "He wagged a disapproving finger.",
@@ -5591,7 +5591,7 @@ const jhWordsDB = [
   {
     "id": 30622,
     "en": "finish",
-    "kk": "/ˈfɪnɪʃ/",
+    "kk": "[ˋfɪnɪʃ]",
     "zh": "v. 結束",
     "unit": 17,
     "example": "Listen, I finish at one.",
@@ -5600,7 +5600,7 @@ const jhWordsDB = [
   {
     "id": 30623,
     "en": "fire",
-    "kk": "/ˈfaɪər/",
+    "kk": "[ˋfaɪɚ]",
     "zh": "n. 火",
     "unit": 17,
     "example": "The wooden rafters caught fire.",
@@ -5609,7 +5609,7 @@ const jhWordsDB = [
   {
     "id": 30624,
     "en": "first",
-    "kk": "/fɜːrst/",
+    "kk": "[fɝst]",
     "zh": "adj. 第一的",
     "unit": 17,
     "example": "His first marriage broke up.",
@@ -5618,7 +5618,7 @@ const jhWordsDB = [
   {
     "id": 30625,
     "en": "fish",
-    "kk": "/fɪʃ/",
+    "kk": "[fɪʃ]",
     "zh": "n. 魚",
     "unit": 17,
     "example": "These fish are very aggressive.",
@@ -5627,7 +5627,7 @@ const jhWordsDB = [
   {
     "id": 30626,
     "en": "fisherman",
-    "kk": "",
+    "kk": "[ˋfɪʃɚ͵mæn]",
     "zh": "n. 漁夫",
     "unit": 17,
     "example": "The fisherman rowed us back to the shore.",
@@ -5636,7 +5636,7 @@ const jhWordsDB = [
   {
     "id": 30627,
     "en": "fit",
-    "kk": "/fɪt/",
+    "kk": "[fɪt]",
     "zh": "v. 適合",
     "unit": 17,
     "example": "Where do I fit in?",
@@ -5645,7 +5645,7 @@ const jhWordsDB = [
   {
     "id": 30628,
     "en": "five",
-    "kk": "/faɪv/",
+    "kk": "[faɪv]",
     "zh": "n. 五",
     "unit": 17,
     "example": "She brought up five children.",
@@ -5654,7 +5654,7 @@ const jhWordsDB = [
   {
     "id": 30629,
     "en": "fix",
-    "kk": "/fɪks/",
+    "kk": "[fɪks]",
     "zh": "v. 固定",
     "unit": 17,
     "example": "He cannot fix the electricity.",
@@ -5663,7 +5663,7 @@ const jhWordsDB = [
   {
     "id": 30630,
     "en": "flag",
-    "kk": "/flæɡ/",
+    "kk": "[flæɡ]",
     "zh": "n. 旗幟",
     "unit": 17,
     "example": "The American flag was flying.",
@@ -5672,7 +5672,7 @@ const jhWordsDB = [
   {
     "id": 30631,
     "en": "flash",
-    "kk": "",
+    "kk": "[flæʃ]",
     "zh": "n. 閃光",
     "unit": 17,
     "example": "I'll need flash for this shot.",
@@ -5681,7 +5681,7 @@ const jhWordsDB = [
   {
     "id": 30632,
     "en": "flashlight",
-    "kk": "",
+    "kk": "[ˋflæʃ͵laɪt]",
     "zh": "n. 手電筒",
     "unit": 17,
     "example": "Sam was flicking a flashlight on and off.",
@@ -5690,7 +5690,7 @@ const jhWordsDB = [
   {
     "id": 30633,
     "en": "flight",
-    "kk": "/flaɪt/",
+    "kk": "[flaɪt]",
     "zh": "n. 飛機航次",
     "unit": 17,
     "example": "The flight was heavily overbooked.",
@@ -5699,7 +5699,7 @@ const jhWordsDB = [
   {
     "id": 30634,
     "en": "flood",
-    "kk": "",
+    "kk": "[flʌd]",
     "zh": "n. 洪水",
     "unit": 17,
     "example": "The flood waters slowly retreated.",
@@ -5708,7 +5708,7 @@ const jhWordsDB = [
   {
     "id": 30635,
     "en": "floor",
-    "kk": "/flɔːr/",
+    "kk": "[flɔr]",
     "zh": "n. 地板",
     "unit": 17,
     "example": "The bathroom floor was awash.",
@@ -5717,7 +5717,7 @@ const jhWordsDB = [
   {
     "id": 30636,
     "en": "flour",
-    "kk": "",
+    "kk": "[ˋflaʊɚ]",
     "zh": "n. 麵粉",
     "unit": 17,
     "example": "Flour is sold by the kilogram.",
@@ -5726,7 +5726,7 @@ const jhWordsDB = [
   {
     "id": 30637,
     "en": "flower",
-    "kk": "/ˈflaʊər/",
+    "kk": "[ˋflaʊɚ]",
     "zh": "n. 花",
     "unit": 17,
     "example": "I've been weeding the flower beds.",
@@ -5735,7 +5735,7 @@ const jhWordsDB = [
   {
     "id": 30638,
     "en": "flu",
-    "kk": "",
+    "kk": "[flu]",
     "zh": "n. 流行性感冒",
     "unit": 17,
     "example": "The whole family has the flu.",
@@ -5744,7 +5744,7 @@ const jhWordsDB = [
   {
     "id": 30639,
     "en": "flute",
-    "kk": "",
+    "kk": "[flut]",
     "zh": "n. 長笛",
     "unit": 17,
     "example": "I want a flute.",
@@ -5753,7 +5753,7 @@ const jhWordsDB = [
   {
     "id": 30640,
     "en": "fly",
-    "kk": "/flaɪ/",
+    "kk": "[flaɪ]",
     "zh": "v. 飛",
     "unit": 17,
     "example": "She brushed the fly away.",
@@ -5762,7 +5762,7 @@ const jhWordsDB = [
   {
     "id": 30641,
     "en": "focus",
-    "kk": "/ˈfoʊkəs/",
+    "kk": "[ˋfokəs]",
     "zh": "n. 焦點",
     "unit": 17,
     "example": "He prefers to focus on the positive.",
@@ -5771,7 +5771,7 @@ const jhWordsDB = [
   {
     "id": 30642,
     "en": "fog",
-    "kk": "",
+    "kk": "[fɑɡ]",
     "zh": "n. 霧",
     "unit": 17,
     "example": "The fog began to disperse.",
@@ -5780,7 +5780,7 @@ const jhWordsDB = [
   {
     "id": 30643,
     "en": "foggy",
-    "kk": "",
+    "kk": "[ˋfɑɡi]",
     "zh": "adj. 濃霧的",
     "unit": 17,
     "example": "Get away from the foggy morning.",
@@ -5789,7 +5789,7 @@ const jhWordsDB = [
   {
     "id": 30644,
     "en": "follow",
-    "kk": "/ˈfɑːloʊ/",
+    "kk": "[ˋfɑlo]",
     "zh": "v. 跟隨",
     "unit": 17,
     "example": "She signalled him to follow.",
@@ -5798,7 +5798,7 @@ const jhWordsDB = [
   {
     "id": 30645,
     "en": "food",
-    "kk": "/fuːd/",
+    "kk": "[fud]",
     "zh": "n. 食物",
     "unit": 17,
     "example": "Food aid is urgently needed.",
@@ -5807,7 +5807,7 @@ const jhWordsDB = [
   {
     "id": 30646,
     "en": "fool",
-    "kk": "",
+    "kk": "[ful]",
     "zh": "n. 傻子",
     "unit": 17,
     "example": "The man's a deuced fool!",
@@ -5816,7 +5816,7 @@ const jhWordsDB = [
   {
     "id": 30647,
     "en": "foolish",
-    "kk": "",
+    "kk": "[ˋfulɪʃ]",
     "zh": "adj. 愚笨的",
     "unit": 17,
     "example": "How foolish I am to entertain doubts.",
@@ -5825,7 +5825,7 @@ const jhWordsDB = [
   {
     "id": 30648,
     "en": "foot",
-    "kk": "/fʊt/",
+    "kk": "[fʊt]",
     "zh": "n. 腳",
     "unit": 17,
     "example": "She stamped her foot again.",
@@ -5834,7 +5834,7 @@ const jhWordsDB = [
   {
     "id": 30649,
     "en": "football",
-    "kk": "/ˈfʊtbɔːl/",
+    "kk": "[ˋfʊt͵bɔl]",
     "zh": "n. 足球",
     "unit": 17,
     "example": "Luckily, we both love football.",
@@ -5843,7 +5843,7 @@ const jhWordsDB = [
   {
     "id": 30650,
     "en": "for",
-    "kk": "/fɔːr/",
+    "kk": "[fɔr]",
     "zh": "prep. 為了",
     "unit": 17,
     "example": "He was jailed for life for murder.",
@@ -5852,7 +5852,7 @@ const jhWordsDB = [
   {
     "id": 30651,
     "en": "force",
-    "kk": "/fɔːrs/",
+    "kk": "[fɔrs]",
     "zh": "v. 強迫",
     "unit": 17,
     "example": "Is religion always a force for good?",
@@ -5861,7 +5861,7 @@ const jhWordsDB = [
   {
     "id": 30652,
     "en": "foreign",
-    "kk": "/ˈfɔːrən/",
+    "kk": "[ˋfɔrən]",
     "zh": "adj. 外國的",
     "unit": 17,
     "example": "Foreign News is on page 16.",
@@ -5870,7 +5870,7 @@ const jhWordsDB = [
   {
     "id": 30653,
     "en": "foreigner",
-    "kk": "",
+    "kk": "[ˋfɔrənɚ]",
     "zh": "n. 外國人",
     "unit": 17,
     "example": "Being a foreigner was not a handicap.",
@@ -5879,7 +5879,7 @@ const jhWordsDB = [
   {
     "id": 30654,
     "en": "forest",
-    "kk": "/ˈfɔːrəst/",
+    "kk": "[ˋfɔrəst]",
     "zh": "n. 森林",
     "unit": 17,
     "example": "We need to preserve the forest.",
@@ -5888,7 +5888,7 @@ const jhWordsDB = [
   {
     "id": 30655,
     "en": "forget",
-    "kk": "/fərˈɡet/",
+    "kk": "[fɚˋɡɛt]",
     "zh": "v. 忘記",
     "unit": 17,
     "example": "Let's forget the whole thing.",
@@ -5897,7 +5897,7 @@ const jhWordsDB = [
   {
     "id": 30656,
     "en": "forgive",
-    "kk": "",
+    "kk": "[fɚˋɡɪv]",
     "zh": "v. 原諒",
     "unit": 17,
     "example": "All right, I'll forgive you.",
@@ -5906,7 +5906,7 @@ const jhWordsDB = [
   {
     "id": 30657,
     "en": "fork",
-    "kk": "",
+    "kk": "[fɔrk]",
     "zh": "n. 叉子",
     "unit": 17,
     "example": "She stabbed the air with her fork.",
@@ -5915,7 +5915,7 @@ const jhWordsDB = [
   {
     "id": 30658,
     "en": "form",
-    "kk": "/fɔːrm/",
+    "kk": "[fɔrm]",
     "zh": "v. 形成",
     "unit": 17,
     "example": "He hates violence in any form.",
@@ -5924,7 +5924,7 @@ const jhWordsDB = [
   {
     "id": 30659,
     "en": "formal",
-    "kk": "/ˈfɔːrml/",
+    "kk": "[ˋfɔrməl]",
     "zh": "adj. 正式的",
     "unit": 17,
     "example": "He wore formal evening dress.",
@@ -5933,7 +5933,7 @@ const jhWordsDB = [
   {
     "id": 30660,
     "en": "former",
-    "kk": "/ˈfɔːrmər/",
+    "kk": "[ˋfɔrmɚ]",
     "zh": "adj. 前者的",
     "unit": 17,
     "example": "The former option would be much more sensible.",
@@ -5942,7 +5942,7 @@ const jhWordsDB = [
   {
     "id": 30661,
     "en": "forty",
-    "kk": "",
+    "kk": "[ˋfɔrti]",
     "zh": "n. 四十",
     "unit": 17,
     "example": "Fifty is the new forty.",
@@ -5951,7 +5951,7 @@ const jhWordsDB = [
   {
     "id": 30662,
     "en": "forward(s)",
-    "kk": "",
+    "kk": "[ˋfɔrwɚd(z)]",
     "zh": "adv. 向前",
     "unit": 17,
     "example": "Can you use the word forward(s) in a sentence?",
@@ -5960,7 +5960,7 @@ const jhWordsDB = [
   {
     "id": 30663,
     "en": "four",
-    "kk": "/fɔːr/",
+    "kk": "[fɔr]",
     "zh": "n. 四",
     "unit": 17,
     "example": "I took four Tylenol capsules.",
@@ -5969,7 +5969,7 @@ const jhWordsDB = [
   {
     "id": 30664,
     "en": "fourteen",
-    "kk": "/ˌfɔːrˈtiːn/",
+    "kk": "[ˋfɔrˋtin]",
     "zh": "n. 十四",
     "unit": 17,
     "example": "I'm fourteen years old.",
@@ -5978,7 +5978,7 @@ const jhWordsDB = [
   {
     "id": 30665,
     "en": "fox",
-    "kk": "",
+    "kk": "[fɑks]",
     "zh": "n. 狐狸",
     "unit": 17,
     "example": "He's a wily old fox.",
@@ -5987,7 +5987,7 @@ const jhWordsDB = [
   {
     "id": 30666,
     "en": "frank",
-    "kk": "",
+    "kk": "[fræŋk]",
     "zh": "adj. 直率的",
     "unit": 17,
     "example": "The talks had been brutally frank.",
@@ -5996,7 +5996,7 @@ const jhWordsDB = [
   {
     "id": 30667,
     "en": "free",
-    "kk": "/friː/",
+    "kk": "[fri]",
     "zh": "adj. 自由的",
     "unit": 17,
     "example": "Sterling went into free fall.",
@@ -6005,7 +6005,7 @@ const jhWordsDB = [
   {
     "id": 30668,
     "en": "freedom",
-    "kk": "/ˈfriːdəm/",
+    "kk": "[ˋfridəm]",
     "zh": "n. 自由",
     "unit": 17,
     "example": "He burbles on about freedom.",
@@ -6014,7 +6014,7 @@ const jhWordsDB = [
   {
     "id": 30669,
     "en": "fresh",
-    "kk": "/freʃ/",
+    "kk": "[frɛʃ]",
     "zh": "adj. 新鮮的",
     "unit": 17,
     "example": "We sell only fresh local produce.",
@@ -6023,7 +6023,7 @@ const jhWordsDB = [
   {
     "id": 30670,
     "en": "Friday",
-    "kk": "/ˈfraɪdeɪ/",
+    "kk": "[ˋfraɪdi]",
     "zh": "n. 星期五",
     "unit": 17,
     "example": "Today is Friday, September 14th.",
@@ -6032,7 +6032,7 @@ const jhWordsDB = [
   {
     "id": 30671,
     "en": "friend",
-    "kk": "/frend/",
+    "kk": "[frɛnd]",
     "zh": "n. 朋友",
     "unit": 17,
     "example": "She's a very special friend.",
@@ -6041,7 +6041,7 @@ const jhWordsDB = [
   {
     "id": 30672,
     "en": "friendly",
-    "kk": "/ˈfrendli/",
+    "kk": "[ˋfrɛndli]",
     "zh": "adj. 友好的",
     "unit": 17,
     "example": "The locals are very friendly.",
@@ -6050,7 +6050,7 @@ const jhWordsDB = [
   {
     "id": 30673,
     "en": "frighten",
-    "kk": "",
+    "kk": "[ˋfraɪtən]",
     "zh": "v. 使害怕",
     "unit": 17,
     "example": "Sorry, I didn't mean to frighten you.",
@@ -6059,7 +6059,7 @@ const jhWordsDB = [
   {
     "id": 30674,
     "en": "frog",
-    "kk": "",
+    "kk": "[frɑɡ]",
     "zh": "n. 青蛙",
     "unit": 17,
     "example": "The frog puffed itself up.",
@@ -6068,7 +6068,7 @@ const jhWordsDB = [
   {
     "id": 30675,
     "en": "from",
-    "kk": "/frʌm/",
+    "kk": "[frʌm]",
     "zh": "prep. 從...",
     "unit": 17,
     "example": "Cheap flights are available from budget travel agents from $240.",
@@ -6077,7 +6077,7 @@ const jhWordsDB = [
   {
     "id": 30676,
     "en": "front",
-    "kk": "/frʌnt/",
+    "kk": "[frʌnt]",
     "zh": "adj. 前面的",
     "unit": 17,
     "example": "Charlene sat in the front pew.",
@@ -6086,7 +6086,7 @@ const jhWordsDB = [
   {
     "id": 30677,
     "en": "fruit",
-    "kk": "/fruːt/",
+    "kk": "[frut]",
     "zh": "n. 水果",
     "unit": 17,
     "example": "Sugar occurs naturally in fruit.",
@@ -6095,7 +6095,7 @@ const jhWordsDB = [
   {
     "id": 30678,
     "en": "fry",
-    "kk": "",
+    "kk": "[fraɪ]",
     "zh": "v. 油炸",
     "unit": 17,
     "example": "You'll fry on the beach if you're not careful.",
@@ -6104,7 +6104,7 @@ const jhWordsDB = [
   {
     "id": 30679,
     "en": "full",
-    "kk": "/fʊl/",
+    "kk": "[fʊl]",
     "zh": "adj. 滿的",
     "unit": 17,
     "example": "She's always full of energy.",
@@ -6113,7 +6113,7 @@ const jhWordsDB = [
   {
     "id": 30680,
     "en": "fun",
-    "kk": "/fʌn/",
+    "kk": "[fʌn]",
     "zh": "n. 趣味",
     "unit": 17,
     "example": "It was all innocent fun.",
@@ -6122,7 +6122,7 @@ const jhWordsDB = [
   {
     "id": 30681,
     "en": "function",
-    "kk": "/ˈfʌŋkʃn/",
+    "kk": "[ˋfʌŋkʃən]",
     "zh": "n. 功能",
     "unit": 17,
     "example": "Breathing is an automatic function of the body.",
@@ -6131,7 +6131,7 @@ const jhWordsDB = [
   {
     "id": 30682,
     "en": "funny",
-    "kk": "/ˈfʌni/",
+    "kk": "[ˋfʌni]",
     "zh": "adj. 好笑的",
     "unit": 17,
     "example": "She found it hilariously funny.",
@@ -6140,7 +6140,7 @@ const jhWordsDB = [
   {
     "id": 30683,
     "en": "furniture",
-    "kk": "/ˈfɜːrnɪtʃər/",
+    "kk": "[ˋfɝnɪtʃɚ]",
     "zh": "n. 傢俱",
     "unit": 17,
     "example": "We specialize in quality furniture.",
@@ -6149,7 +6149,7 @@ const jhWordsDB = [
   {
     "id": 30684,
     "en": "future",
-    "kk": "/ˈfjuːtʃər/",
+    "kk": "[ˋfjutʃɚ]",
     "zh": "n. 未來",
     "unit": 17,
     "example": "The future is not without hope.",
@@ -6158,7 +6158,7 @@ const jhWordsDB = [
   {
     "id": 30685,
     "en": "gain",
-    "kk": "/ɡeɪn/",
+    "kk": "[ɡen]",
     "zh": "v. 獲得",
     "unit": 17,
     "example": "Regular exercise helps prevent weight gain.",
@@ -6167,7 +6167,7 @@ const jhWordsDB = [
   {
     "id": 30686,
     "en": "game",
-    "kk": "/ɡeɪm/",
+    "kk": "[ɡem]",
     "zh": "n. 遊戲",
     "unit": 17,
     "example": "He paced his game skilfully.",
@@ -6176,7 +6176,7 @@ const jhWordsDB = [
   {
     "id": 30687,
     "en": "garage",
-    "kk": "",
+    "kk": "[ɡɚˋɑʒ]",
     "zh": "n. 車庫",
     "unit": 17,
     "example": "Tim climbed on to the garage roof.",
@@ -6185,7 +6185,7 @@ const jhWordsDB = [
   {
     "id": 30688,
     "en": "garden",
-    "kk": "/ˈɡɑːrdn/",
+    "kk": "[ˋɡɑrdən]",
     "zh": "n. 花園",
     "unit": 17,
     "example": "The garden looked uncared for.",
@@ -6194,7 +6194,7 @@ const jhWordsDB = [
   {
     "id": 30689,
     "en": "garbage",
-    "kk": "",
+    "kk": "[ˋɡɑrbɪdʒ]",
     "zh": "n. 垃圾",
     "unit": 17,
     "example": "They are especially fond of garbage.",
@@ -6203,7 +6203,7 @@ const jhWordsDB = [
   {
     "id": 30690,
     "en": "gas",
-    "kk": "/ɡæs/",
+    "kk": "[ɡæs]",
     "zh": "n. 瓦斯",
     "unit": 17,
     "example": "This gas is highly poisonous.",
@@ -6212,7 +6212,7 @@ const jhWordsDB = [
   {
     "id": 30691,
     "en": "gate",
-    "kk": "",
+    "kk": "[ɡet]",
     "zh": "n. 大門",
     "unit": 17,
     "example": "He pushed open the garden gate.",
@@ -6221,7 +6221,7 @@ const jhWordsDB = [
   {
     "id": 30692,
     "en": "gather",
-    "kk": "",
+    "kk": "[ˋɡæðɚ]",
     "zh": "v. 集合",
     "unit": 17,
     "example": "They gathered around the campfire to tell stories.",
@@ -6230,7 +6230,7 @@ const jhWordsDB = [
   {
     "id": 30693,
     "en": "general",
-    "kk": "/ˈdʒenərəl/",
+    "kk": "[ˋdʒɛnɚəl]",
     "zh": "adj. 一般的",
     "unit": 17,
     "example": "My father venerated General Eisenhower.",
@@ -6239,7 +6239,7 @@ const jhWordsDB = [
   {
     "id": 30694,
     "en": "generous",
-    "kk": "",
+    "kk": "[ˋdʒɛnɚəs]",
     "zh": "adj. 慷慨的",
     "unit": 17,
     "example": "She is generous to a fault.",
@@ -6248,7 +6248,7 @@ const jhWordsDB = [
   {
     "id": 30695,
     "en": "genius",
-    "kk": "",
+    "kk": "[ˋdʒinjəs]",
     "zh": "n. 天才",
     "unit": 17,
     "example": "She was extolled as a genius.",
@@ -6257,7 +6257,7 @@ const jhWordsDB = [
   {
     "id": 30696,
     "en": "gentle",
-    "kk": "",
+    "kk": "[ˋdʒɛntəl]",
     "zh": "adj. 溫和的",
     "unit": 17,
     "example": "These poems reveal her gentle side.",
@@ -6266,7 +6266,7 @@ const jhWordsDB = [
   {
     "id": 30697,
     "en": "gentleman",
-    "kk": "",
+    "kk": "[ˋdʒɛntəlmən]",
     "zh": "n. 紳士",
     "unit": 17,
     "example": "He behaved like a true gentleman.",
@@ -6275,7 +6275,7 @@ const jhWordsDB = [
   {
     "id": 30698,
     "en": "geography",
-    "kk": "",
+    "kk": "[dʒiˋɑɡrəfi]",
     "zh": "n. 地理",
     "unit": 17,
     "example": "Geography was my weak subject.",
@@ -6284,7 +6284,7 @@ const jhWordsDB = [
   {
     "id": 30699,
     "en": "gesture",
-    "kk": "",
+    "kk": "[ˋdʒɛstʃɚ]",
     "zh": "n. 姿勢,手勢",
     "unit": 17,
     "example": "They communicated entirely by gesture.",
@@ -6293,7 +6293,7 @@ const jhWordsDB = [
   {
     "id": 30700,
     "en": "get",
-    "kk": "",
+    "kk": "[ɡɛt]",
     "zh": "v. 得到",
     "unit": 17,
     "example": "Somebody get a doctor!",
@@ -6302,7 +6302,7 @@ const jhWordsDB = [
   {
     "id": 30701,
     "en": "ghost",
-    "kk": "",
+    "kk": "[ɡost]",
     "zh": "n. 鬼",
     "unit": 17,
     "example": "A ghost indeed! I've never heard anything so silly.",
@@ -6311,7 +6311,7 @@ const jhWordsDB = [
   {
     "id": 30702,
     "en": "giant",
-    "kk": "",
+    "kk": "[ˋdʒaɪənt]",
     "zh": "adj. 巨大的",
     "unit": 17,
     "example": "He's a giant of a man.",
@@ -6320,7 +6320,7 @@ const jhWordsDB = [
   {
     "id": 30703,
     "en": "gift",
-    "kk": "/ɡɪft/",
+    "kk": "[ɡɪft]",
     "zh": "n. 禮物",
     "unit": 17,
     "example": "Would you like the chocolates gift-wrapped?",
@@ -6329,7 +6329,7 @@ const jhWordsDB = [
   {
     "id": 30704,
     "en": "girl",
-    "kk": "/ɡɜːrl/",
+    "kk": "[ɡɝl]",
     "zh": "n. 女孩",
     "unit": 17,
     "example": "An older girl befriended me.",
@@ -6338,7 +6338,7 @@ const jhWordsDB = [
   {
     "id": 30705,
     "en": "give",
-    "kk": "/ɡɪv/",
+    "kk": "[ɡɪv]",
     "zh": "v. 給予",
     "unit": 17,
     "example": "I'll give you a ring.",
@@ -6347,7 +6347,7 @@ const jhWordsDB = [
   {
     "id": 30706,
     "en": "glad",
-    "kk": "",
+    "kk": "[ɡlæd]",
     "zh": "adj. 高興的",
     "unit": 17,
     "example": "I'm glad you came along.",
@@ -6356,7 +6356,7 @@ const jhWordsDB = [
   {
     "id": 30707,
     "en": "glass",
-    "kk": "/ɡlæs/",
+    "kk": "[ɡlæs]",
     "zh": "n. 玻璃",
     "unit": 17,
     "example": "Glass contracts as it cools.",
@@ -6365,7 +6365,7 @@ const jhWordsDB = [
   {
     "id": 30708,
     "en": "glasses",
-    "kk": "",
+    "kk": "[ˋɡlæsəz]",
     "zh": "n. 眼鏡",
     "unit": 17,
     "example": "I wear glasses for driving.",
@@ -6374,7 +6374,7 @@ const jhWordsDB = [
   {
     "id": 30709,
     "en": "glove",
-    "kk": "",
+    "kk": "[ɡlʌv]",
     "zh": "n. 手套",
     "unit": 17,
     "example": "She bent down to pick up her glove.",
@@ -6383,7 +6383,7 @@ const jhWordsDB = [
   {
     "id": 30710,
     "en": "glue",
-    "kk": "",
+    "kk": "[ɡlu]",
     "zh": "n. 膠水",
     "unit": 17,
     "example": "I made a model out of paper and glue.",
@@ -6392,7 +6392,7 @@ const jhWordsDB = [
   {
     "id": 30711,
     "en": "go",
-    "kk": "",
+    "kk": "[ɡo]",
     "zh": "v. 去",
     "unit": 17,
     "example": "Very well, if you want to go, go you shall.",
@@ -6401,7 +6401,7 @@ const jhWordsDB = [
   {
     "id": 30712,
     "en": "goal",
-    "kk": "/ɡoʊl/",
+    "kk": "[ɡol]",
     "zh": "n. 目標",
     "unit": 17,
     "example": "The second goal was disallowed.",
@@ -6410,7 +6410,7 @@ const jhWordsDB = [
   {
     "id": 30713,
     "en": "goat",
-    "kk": "",
+    "kk": "[ɡot]",
     "zh": "n. 山羊",
     "unit": 17,
     "example": "I roped the goat to a post.",
@@ -6419,7 +6419,7 @@ const jhWordsDB = [
   {
     "id": 30714,
     "en": "god",
-    "kk": "",
+    "kk": "[ɡɑd]",
     "zh": "n. 上帝",
     "unit": 17,
     "example": "Do you believe in God ?",
@@ -6428,7 +6428,7 @@ const jhWordsDB = [
   {
     "id": 30715,
     "en": "gold",
-    "kk": "/ɡoʊld/",
+    "kk": "[ɡold]",
     "zh": "n. 黃金",
     "unit": 17,
     "example": "Gold rings adorned his fingers.",
@@ -6437,7 +6437,7 @@ const jhWordsDB = [
   {
     "id": 30716,
     "en": "golden",
-    "kk": "",
+    "kk": "[ˋɡoldən]",
     "zh": "adj. 金色的",
     "unit": 17,
     "example": "The golden light gilded the sea.",
@@ -6446,7 +6446,7 @@ const jhWordsDB = [
   {
     "id": 30717,
     "en": "golf",
-    "kk": "",
+    "kk": "[ɡɑlf]",
     "zh": "n. 高爾夫球",
     "unit": 17,
     "example": "His favourite pastime is golf.",
@@ -6455,7 +6455,7 @@ const jhWordsDB = [
   {
     "id": 30718,
     "en": "good",
-    "kk": "/ɡʊd/",
+    "kk": "[ɡʊd]",
     "zh": "adj. 好的",
     "unit": 17,
     "example": "She speaks good English.",
@@ -6464,7 +6464,7 @@ const jhWordsDB = [
   {
     "id": 30719,
     "en": "goodness",
-    "kk": "",
+    "kk": "[ˋɡʊdnəs]",
     "zh": "n. 善良",
     "unit": 17,
     "example": "Goodness, I wonder if he knows.",
@@ -6473,7 +6473,7 @@ const jhWordsDB = [
   {
     "id": 30720,
     "en": "goose",
-    "kk": "",
+    "kk": "[ɡus]",
     "zh": "n. 鵝",
     "unit": 17,
     "example": "The big white goose became a black goose.",
@@ -6482,7 +6482,7 @@ const jhWordsDB = [
   {
     "id": 30721,
     "en": "government",
-    "kk": "/ˈɡʌvərnmənt/",
+    "kk": "[ˋɡʌvɚmənt]",
     "zh": "n. 政府",
     "unit": 17,
     "example": "The government took swift action.",
@@ -6491,7 +6491,7 @@ const jhWordsDB = [
   {
     "id": 30722,
     "en": "grade",
-    "kk": "/ɡreɪd/",
+    "kk": "[ɡred]",
     "zh": "n. 分數",
     "unit": 17,
     "example": "I flunked math in second grade.",
@@ -6500,7 +6500,7 @@ const jhWordsDB = [
   {
     "id": 30723,
     "en": "gram",
-    "kk": "",
+    "kk": "[ɡræm]",
     "zh": "n. 克",
     "unit": 17,
     "example": "A few twentieths of a gram can be critical.",
@@ -6509,7 +6509,7 @@ const jhWordsDB = [
   {
     "id": 30724,
     "en": "grandfather",
-    "kk": "",
+    "kk": "[ˋɡrænd͵fɑðɚ]",
     "zh": "n. 祖父",
     "unit": 17,
     "example": "His grandfather was a professor.",
@@ -6518,7 +6518,7 @@ const jhWordsDB = [
   {
     "id": 30725,
     "en": "grandmother",
-    "kk": "",
+    "kk": "[ˋɡrænd͵mʌðɚ]",
     "zh": "n. 祖母",
     "unit": 17,
     "example": "Her grandmother mumbled in her sleep.",
@@ -6527,7 +6527,7 @@ const jhWordsDB = [
   {
     "id": 30726,
     "en": "grandson",
-    "kk": "",
+    "kk": "[ˋɡrænd͵sʌn]",
     "zh": "n. 孫子",
     "unit": 17,
     "example": "He is my grandson.",
@@ -6536,7 +6536,7 @@ const jhWordsDB = [
   {
     "id": 30727,
     "en": "grape",
-    "kk": "",
+    "kk": "[ɡrep]",
     "zh": "n. 葡萄",
     "unit": 17,
     "example": "Is it a grape or a plum?",
@@ -6545,7 +6545,7 @@ const jhWordsDB = [
   {
     "id": 30728,
     "en": "grass",
-    "kk": "",
+    "kk": "[ɡræs]",
     "zh": "n. 草",
     "unit": 17,
     "example": "The grass had grown waist-high.",
@@ -6554,7 +6554,7 @@ const jhWordsDB = [
   {
     "id": 30729,
     "en": "gray",
-    "kk": "",
+    "kk": "[ɡre]",
     "zh": "adj. 灰色的",
     "unit": 17,
     "example": "I want that gray coat.",
@@ -6563,7 +6563,7 @@ const jhWordsDB = [
   {
     "id": 30730,
     "en": "great",
-    "kk": "/ɡreɪt/",
+    "kk": "[ɡret]",
     "zh": "adj. 傑出的",
     "unit": 17,
     "example": "We became great buddies.",
@@ -6572,7 +6572,7 @@ const jhWordsDB = [
   {
     "id": 30731,
     "en": "greedy",
-    "kk": "",
+    "kk": "[ˋɡridi]",
     "zh": "adj. 貪心的",
     "unit": 17,
     "example": "Linda became an honest girl and was never greedy.",
@@ -6581,7 +6581,7 @@ const jhWordsDB = [
   {
     "id": 30732,
     "en": "green",
-    "kk": "/ɡriːn/",
+    "kk": "[ɡrin]",
     "zh": "adj. 綠色的",
     "unit": 17,
     "example": "She wore purple and green silk.",
@@ -6590,7 +6590,7 @@ const jhWordsDB = [
   {
     "id": 30733,
     "en": "greet",
-    "kk": "",
+    "kk": "[ɡrit]",
     "zh": "v. 問候",
     "unit": 17,
     "example": "She floated down the steps to greet us.",
@@ -6599,7 +6599,7 @@ const jhWordsDB = [
   {
     "id": 30734,
     "en": "ground",
-    "kk": "/ɡraʊnd/",
+    "kk": "[ɡraʊnd]",
     "zh": "n. 土地",
     "unit": 17,
     "example": "The ground was frozen solid.",
@@ -6608,7 +6608,7 @@ const jhWordsDB = [
   {
     "id": 30735,
     "en": "group",
-    "kk": "/ɡruːp/",
+    "kk": "[ɡrup]",
     "zh": "n. 群,組",
     "unit": 17,
     "example": "The group encompasses all ages.",
@@ -6617,7 +6617,7 @@ const jhWordsDB = [
   {
     "id": 30736,
     "en": "grow",
-    "kk": "/ɡroʊ/",
+    "kk": "[ɡro]",
     "zh": "v. 生長",
     "unit": 17,
     "example": "The economy continues to grow.",
@@ -6626,7 +6626,7 @@ const jhWordsDB = [
   {
     "id": 30737,
     "en": "guard",
-    "kk": "/ɡɑːrd/",
+    "kk": "[ɡɑrd]",
     "zh": "n. 警衛",
     "unit": 17,
     "example": "A guard was posted outside the building.",
@@ -6635,7 +6635,7 @@ const jhWordsDB = [
   {
     "id": 30738,
     "en": "guava",
-    "kk": "",
+    "kk": "[ˋɡwɑvə]",
     "zh": "n. 番石榴",
     "unit": 17,
     "example": "I want to eat guava.",
@@ -6644,7 +6644,7 @@ const jhWordsDB = [
   {
     "id": 30739,
     "en": "guess",
-    "kk": "/ɡes/",
+    "kk": "[ɡɛs]",
     "zh": "v. 猜測",
     "unit": 17,
     "example": "'Guess what?' she said archly.",
@@ -6653,7 +6653,7 @@ const jhWordsDB = [
   {
     "id": 30740,
     "en": "guest",
-    "kk": "/ɡest/",
+    "kk": "[ɡɛst]",
     "zh": "n. 客人",
     "unit": 17,
     "example": "Our special guest tonight is...",
@@ -6662,7 +6662,7 @@ const jhWordsDB = [
   {
     "id": 30741,
     "en": "guide",
-    "kk": "/ɡaɪd/",
+    "kk": "[ɡaɪd]",
     "zh": "v. 引導",
     "unit": 17,
     "example": "The guide flashed a light into the cave.",
@@ -6671,7 +6671,7 @@ const jhWordsDB = [
   {
     "id": 30742,
     "en": "guitar",
-    "kk": "",
+    "kk": "[ɡɪˋtɑr]",
     "zh": "n. 吉他",
     "unit": 17,
     "example": "He played some wah-wah guitar.",
@@ -6680,7 +6680,7 @@ const jhWordsDB = [
   {
     "id": 30743,
     "en": "gun",
-    "kk": "/ɡʌn/",
+    "kk": "[ɡʌn]",
     "zh": "n. 槍",
     "unit": 17,
     "example": "He refused to yield up his gun.",
@@ -6689,7 +6689,7 @@ const jhWordsDB = [
   {
     "id": 30744,
     "en": "guy",
-    "kk": "",
+    "kk": "[ɡaɪ]",
     "zh": "n. 小伙子",
     "unit": 17,
     "example": "He's a real meat-and-potatoes guy.",
@@ -6698,7 +6698,7 @@ const jhWordsDB = [
   {
     "id": 30745,
     "en": "gym",
-    "kk": "",
+    "kk": "[dʒɪm]",
     "zh": "n. 體育館",
     "unit": 17,
     "example": "The commons is next to the gym.",
@@ -6707,7 +6707,7 @@ const jhWordsDB = [
   {
     "id": 30746,
     "en": "habit",
-    "kk": "/ˈhæbɪt/",
+    "kk": "[ˋhæbət]",
     "zh": "n. 習慣",
     "unit": 17,
     "example": "I only do it out of habit.",
@@ -6716,7 +6716,7 @@ const jhWordsDB = [
   {
     "id": 30747,
     "en": "hair",
-    "kk": "/her/",
+    "kk": "[hɛr]",
     "zh": "n. 頭髮",
     "unit": 17,
     "example": "Katy has long blackish hair.",
@@ -6725,7 +6725,7 @@ const jhWordsDB = [
   {
     "id": 30748,
     "en": "half",
-    "kk": "/hæf/",
+    "kk": "[hæf]",
     "zh": "adj. 一半的",
     "unit": 17,
     "example": "Children travel (at) half fare.",
@@ -6734,7 +6734,7 @@ const jhWordsDB = [
   {
     "id": 30749,
     "en": "hall",
-    "kk": "/hɔːl/",
+    "kk": "[hɔl]",
     "zh": "n. 大廳",
     "unit": 17,
     "example": "Applause rang through the hall.",
@@ -6743,7 +6743,7 @@ const jhWordsDB = [
   {
     "id": 30750,
     "en": "Halloween",
-    "kk": "",
+    "kk": "[͵hæləˋwin]",
     "zh": "n. 萬聖節",
     "unit": 17,
     "example": "Halloween is a strange holiday.",
@@ -6752,7 +6752,7 @@ const jhWordsDB = [
   {
     "id": 30751,
     "en": "ham",
-    "kk": "",
+    "kk": "[hæm]",
     "zh": "n. 火腿",
     "unit": 17,
     "example": "I was eating ham and Swiss cheese on rye.",
@@ -6761,7 +6761,7 @@ const jhWordsDB = [
   {
     "id": 30752,
     "en": "hamburger",
-    "kk": "",
+    "kk": "[ˋhæmbɚɡɚ]",
     "zh": "n. 漢堡",
     "unit": 17,
     "example": "We stopped at a drive-in for a hamburger.",
@@ -6770,7 +6770,7 @@ const jhWordsDB = [
   {
     "id": 30753,
     "en": "hammer",
-    "kk": "",
+    "kk": "[ˋhæmɚ]",
     "zh": "n. 槌子",
     "unit": 17,
     "example": "He hit the nail squarely on the head with the hammer.",
@@ -6779,7 +6779,7 @@ const jhWordsDB = [
   {
     "id": 30754,
     "en": "hand",
-    "kk": "/hænd/",
+    "kk": "[hænd]",
     "zh": "n. 手",
     "unit": 17,
     "example": "He patted her hand patronizingly.",
@@ -6788,7 +6788,7 @@ const jhWordsDB = [
   {
     "id": 30755,
     "en": "handkerchief",
-    "kk": "",
+    "kk": "[ˋhæŋkɚtʃɪf]",
     "zh": "n. 手帕",
     "unit": 17,
     "example": "The handkerchief is edged with lace.",
@@ -6797,7 +6797,7 @@ const jhWordsDB = [
   {
     "id": 30756,
     "en": "handle",
-    "kk": "/ˈhændl/",
+    "kk": "[ˋhændəl]",
     "zh": "v. 處理",
     "unit": 17,
     "example": "I pumped the handle like crazy.",
@@ -6806,7 +6806,7 @@ const jhWordsDB = [
   {
     "id": 30757,
     "en": "handsome",
-    "kk": "",
+    "kk": "[ˋhænsəm]",
     "zh": "adj. 英俊的",
     "unit": 17,
     "example": "He was tall, lean and handsome.",
@@ -6815,7 +6815,7 @@ const jhWordsDB = [
   {
     "id": 30758,
     "en": "hang",
-    "kk": "/hæŋ/",
+    "kk": "[hæŋ]",
     "zh": "v. 掛",
     "unit": 17,
     "example": "Hang on—I'm not quite ready.",
@@ -6824,7 +6824,7 @@ const jhWordsDB = [
   {
     "id": 30759,
     "en": "hanger",
-    "kk": "",
+    "kk": "[ˋhæŋɚ]",
     "zh": "n. 衣架",
     "unit": 17,
     "example": "I need some hangers.",
@@ -6833,7 +6833,7 @@ const jhWordsDB = [
   {
     "id": 30760,
     "en": "happen",
-    "kk": "/ˈhæpən/",
+    "kk": "[ˋhæpən]",
     "zh": "v. 發生",
     "unit": 17,
     "example": "That doesn't happen very often.",
@@ -6842,7 +6842,7 @@ const jhWordsDB = [
   {
     "id": 30761,
     "en": "happy",
-    "kk": "/ˈhæpi/",
+    "kk": "[ˋhæpi]",
     "zh": "adj. 快樂的",
     "unit": 17,
     "example": "She had a happy childhood.",
@@ -6851,7 +6851,7 @@ const jhWordsDB = [
   {
     "id": 30762,
     "en": "hard",
-    "kk": "/hɑːrd/",
+    "kk": "[hɑrd]",
     "zh": "adj. 難的",
     "unit": 17,
     "example": "It's pretty hard to explain.",
@@ -6860,7 +6860,7 @@ const jhWordsDB = [
   {
     "id": 30763,
     "en": "hardly",
-    "kk": "",
+    "kk": "[ˋhɑrdli]",
     "zh": "adv. 幾乎不",
     "unit": 17,
     "example": "I've got hardly any money.",
@@ -6869,7 +6869,7 @@ const jhWordsDB = [
   {
     "id": 30764,
     "en": "hat",
-    "kk": "/hæt/",
+    "kk": "[hæt]",
     "zh": "n. 帽子",
     "unit": 17,
     "example": "She pulled her hat straight.",
@@ -6878,7 +6878,7 @@ const jhWordsDB = [
   {
     "id": 30765,
     "en": "hate",
-    "kk": "/heɪt/",
+    "kk": "[het]",
     "zh": "v. 憎恨",
     "unit": 17,
     "example": "The obverse of love is hate.",
@@ -6887,7 +6887,7 @@ const jhWordsDB = [
   {
     "id": 30766,
     "en": "have",
-    "kk": "/hæv/",
+    "kk": "[hæv]",
     "zh": "v. 有",
     "unit": 17,
     "example": "Times have changed and so have I.",
@@ -6896,7 +6896,7 @@ const jhWordsDB = [
   {
     "id": 30767,
     "en": "head",
-    "kk": "/hed/",
+    "kk": "[hɛd]",
     "zh": "n. 頭",
     "unit": 17,
     "example": "He shook his head tiredly.",
@@ -6905,7 +6905,7 @@ const jhWordsDB = [
   {
     "id": 30768,
     "en": "headache",
-    "kk": "",
+    "kk": "[ˋhɛd͵ek]",
     "zh": "n. 頭痛",
     "unit": 17,
     "example": "He complained of a headache.",
@@ -6914,7 +6914,7 @@ const jhWordsDB = [
   {
     "id": 30769,
     "en": "health",
-    "kk": "/helθ/",
+    "kk": "[hɛlθ]",
     "zh": "n. 健康",
     "unit": 17,
     "example": "He's always enjoyed good health.",
@@ -6923,7 +6923,7 @@ const jhWordsDB = [
   {
     "id": 30770,
     "en": "healthy",
-    "kk": "",
+    "kk": "[ˋhɛlθi]",
     "zh": "adj. 健康的",
     "unit": 17,
     "example": "He has a healthy appetite.",
@@ -6932,7 +6932,7 @@ const jhWordsDB = [
   {
     "id": 30771,
     "en": "hear",
-    "kk": "/hɪr/",
+    "kk": "[hir]",
     "zh": "v. 聽",
     "unit": 17,
     "example": "I can hear someone calling.",
@@ -6941,7 +6941,7 @@ const jhWordsDB = [
   {
     "id": 30772,
     "en": "heart",
-    "kk": "/hɑːrt/",
+    "kk": "[hɑrt]",
     "zh": "n. 心臟",
     "unit": 17,
     "example": "My heart was knocking wildly.",
@@ -6950,7 +6950,7 @@ const jhWordsDB = [
   {
     "id": 30773,
     "en": "heat",
-    "kk": "/hiːt/",
+    "kk": "[hit]",
     "zh": "n. 熱",
     "unit": 17,
     "example": "The heat was becoming unbearable.",
@@ -6959,7 +6959,7 @@ const jhWordsDB = [
   {
     "id": 30774,
     "en": "heater",
-    "kk": "",
+    "kk": "[ˋhitɚ]",
     "zh": "n. 熱水器",
     "unit": 17,
     "example": "This type of heater uses a lot of electricity.",
@@ -6968,7 +6968,7 @@ const jhWordsDB = [
   {
     "id": 30775,
     "en": "heavy",
-    "kk": "/ˈhevi/",
+    "kk": "[ˋhɛvi]",
     "zh": "adj. 重的",
     "unit": 17,
     "example": "These scissors are awfully heavy.",
@@ -6977,7 +6977,7 @@ const jhWordsDB = [
   {
     "id": 30776,
     "en": "height",
-    "kk": "/haɪt/",
+    "kk": "[haɪt]",
     "zh": "n. 高度",
     "unit": 17,
     "example": "The aircraft was gaining height.",
@@ -6986,7 +6986,7 @@ const jhWordsDB = [
   {
     "id": 30777,
     "en": "helicopter",
-    "kk": "",
+    "kk": "[ˋhɛlɪ͵kɑptɚ]",
     "zh": "n. 直升機",
     "unit": 17,
     "example": "The helicopter rose into the air.",
@@ -6995,7 +6995,7 @@ const jhWordsDB = [
   {
     "id": 30778,
     "en": "help",
-    "kk": "/help/",
+    "kk": "[hɛlp]",
     "zh": "n. 幫忙",
     "unit": 17,
     "example": "You never help me.",
@@ -7004,7 +7004,7 @@ const jhWordsDB = [
   {
     "id": 30779,
     "en": "helpful",
-    "kk": "",
+    "kk": "[ˋhɛlpfəl]",
     "zh": "adj. 有助益的",
     "unit": 17,
     "example": "Sorry I can't be more helpful.",
@@ -7013,7 +7013,7 @@ const jhWordsDB = [
   {
     "id": 30780,
     "en": "hen",
-    "kk": "",
+    "kk": "[hɛn]",
     "zh": "n. 母雞",
     "unit": 17,
     "example": "The hen may not be able to feed its young.",
@@ -7022,7 +7022,7 @@ const jhWordsDB = [
   {
     "id": 30781,
     "en": "here",
-    "kk": "/hɪr/",
+    "kk": "[hir]",
     "zh": "adv. 在這裡",
     "unit": 17,
     "example": "'Here?' said Kate, incredulous.",
@@ -7031,7 +7031,7 @@ const jhWordsDB = [
   {
     "id": 30782,
     "en": "hero",
-    "kk": "/ˈhɪroʊ/",
+    "kk": "[ˋhɪro]",
     "zh": "n. 英雄",
     "unit": 17,
     "example": "He was eulogized as a hero.",
@@ -7040,7 +7040,7 @@ const jhWordsDB = [
   {
     "id": 30783,
     "en": "hide",
-    "kk": "/haɪd/",
+    "kk": "[haɪd]",
     "zh": "v. 藏",
     "unit": 17,
     "example": "He didn't hide his pacifism.",
@@ -7049,7 +7049,7 @@ const jhWordsDB = [
   {
     "id": 30784,
     "en": "high",
-    "kk": "/haɪ/",
+    "kk": "[haɪ]",
     "zh": "adj. 高的",
     "unit": 17,
     "example": "How high is Mount Aconcagua?",
@@ -7058,7 +7058,7 @@ const jhWordsDB = [
   {
     "id": 30785,
     "en": "highway",
-    "kk": "",
+    "kk": "[ˋhaɪ͵we]",
     "zh": "n. 公路",
     "unit": 17,
     "example": "Anita drove north up Pacific Highway.",
@@ -7067,7 +7067,7 @@ const jhWordsDB = [
   {
     "id": 30786,
     "en": "hike",
-    "kk": "",
+    "kk": "[haɪk]",
     "zh": "n. 遠足",
     "unit": 17,
     "example": "The site is reached by a 30-minute hike through dense forest.",
@@ -7076,7 +7076,7 @@ const jhWordsDB = [
   {
     "id": 30787,
     "en": "hill",
-    "kk": "",
+    "kk": "[hɪl]",
     "zh": "n. 小山丘",
     "unit": 17,
     "example": "The ball rolled down the hill.",
@@ -7085,7 +7085,7 @@ const jhWordsDB = [
   {
     "id": 30788,
     "en": "hip",
-    "kk": "",
+    "kk": "[hɪp]",
     "zh": "n. 臀部",
     "unit": 17,
     "example": "He fell and fractured his hip.",
@@ -7094,7 +7094,7 @@ const jhWordsDB = [
   {
     "id": 30789,
     "en": "hippo",
-    "kk": "",
+    "kk": "[ˋhɪpo]",
     "zh": "n. 河馬",
     "unit": 17,
     "example": "The hippo lives in water.",
@@ -7103,7 +7103,7 @@ const jhWordsDB = [
   {
     "id": 30790,
     "en": "hire",
-    "kk": "",
+    "kk": "[ˋhaɪɚ]",
     "zh": "v. 雇用",
     "unit": 17,
     "example": "Do you hire out bikes?",
@@ -7112,7 +7112,7 @@ const jhWordsDB = [
   {
     "id": 30791,
     "en": "history",
-    "kk": "",
+    "kk": "[ˋhɪstɚi]",
     "zh": "n. 歷史",
     "unit": 17,
     "example": "I'm very interested in history.",
@@ -7121,7 +7121,7 @@ const jhWordsDB = [
   {
     "id": 30792,
     "en": "hit",
-    "kk": "",
+    "kk": "[hɪt]",
     "zh": "v. 打",
     "unit": 17,
     "example": "The ferry hit us amidships.",
@@ -7130,7 +7130,7 @@ const jhWordsDB = [
   {
     "id": 30793,
     "en": "hobby",
-    "kk": "",
+    "kk": "[ˋhɑbi]",
     "zh": "n. 嗜好",
     "unit": 17,
     "example": "His hobby is freefall parachuting.",
@@ -7139,7 +7139,7 @@ const jhWordsDB = [
   {
     "id": 30794,
     "en": "hold",
-    "kk": "",
+    "kk": "[hold]",
     "zh": "v. 抓住",
     "unit": 17,
     "example": "Does your offer still hold?",
@@ -7148,7 +7148,7 @@ const jhWordsDB = [
   {
     "id": 30795,
     "en": "hole",
-    "kk": "",
+    "kk": "[hol]",
     "zh": "n. 洞",
     "unit": 17,
     "example": "There's a hole in the crotch.",
@@ -7157,7 +7157,7 @@ const jhWordsDB = [
   {
     "id": 30796,
     "en": "holiday",
-    "kk": "",
+    "kk": "[ˋhɑlə͵de]",
     "zh": "n. 假日",
     "unit": 17,
     "example": "Today is a holiday in Wales.",
@@ -7166,7 +7166,7 @@ const jhWordsDB = [
   {
     "id": 30797,
     "en": "home",
-    "kk": "",
+    "kk": "[hom]",
     "zh": "n. 家",
     "unit": 17,
     "example": "Burglars broke into their home.",
@@ -7175,7 +7175,7 @@ const jhWordsDB = [
   {
     "id": 30798,
     "en": "homework",
-    "kk": "",
+    "kk": "[ˋhom͵wɝk]",
     "zh": "n. 作業",
     "unit": 17,
     "example": "How much homework do you get?",
@@ -7184,7 +7184,7 @@ const jhWordsDB = [
   {
     "id": 30799,
     "en": "honest",
-    "kk": "",
+    "kk": "[ˋɑnəst]",
     "zh": "adj. 誠實的",
     "unit": 17,
     "example": "I'm disappointed, to be honest.",
@@ -7193,7 +7193,7 @@ const jhWordsDB = [
   {
     "id": 30800,
     "en": "honesty",
-    "kk": "",
+    "kk": "[ˋɑnəsti]",
     "zh": "n. 誠實",
     "unit": 17,
     "example": "Her honesty is beyond question.",
@@ -7202,7 +7202,7 @@ const jhWordsDB = [
   {
     "id": 30801,
     "en": "honey",
-    "kk": "",
+    "kk": "[ˋhʌni]",
     "zh": "n. 蜂蜜",
     "unit": 17,
     "example": "Have you seen my keys, honey?",
@@ -7211,7 +7211,7 @@ const jhWordsDB = [
   {
     "id": 30802,
     "en": "hop",
-    "kk": "",
+    "kk": "[hɑp]",
     "zh": "n. 跳躍",
     "unit": 17,
     "example": "Hop in, I'll drive you home.",
@@ -7220,7 +7220,7 @@ const jhWordsDB = [
   {
     "id": 30803,
     "en": "hope",
-    "kk": "",
+    "kk": "[hop]",
     "zh": "n. 希望",
     "unit": 17,
     "example": "I hope (that) you're okay.",
@@ -7229,7 +7229,7 @@ const jhWordsDB = [
   {
     "id": 30804,
     "en": "horrible",
-    "kk": "",
+    "kk": "[ˋhɔrəbəl]",
     "zh": "adj. 恐怖的",
     "unit": 17,
     "example": "Ugh – it was horrible.",
@@ -7238,7 +7238,7 @@ const jhWordsDB = [
   {
     "id": 30805,
     "en": "horse",
-    "kk": "",
+    "kk": "[hɔrs]",
     "zh": "n. 馬",
     "unit": 17,
     "example": "This horse needs firm handling.",
@@ -7247,7 +7247,7 @@ const jhWordsDB = [
   {
     "id": 30806,
     "en": "hospital",
-    "kk": "",
+    "kk": "[ˋhɑ͵spɪtəl]",
     "zh": "n. 醫院",
     "unit": 17,
     "example": "The VA hospital needs renovation.",
@@ -7256,7 +7256,7 @@ const jhWordsDB = [
   {
     "id": 30807,
     "en": "host",
-    "kk": "",
+    "kk": "[host]",
     "zh": "n. 主人",
     "unit": 17,
     "example": "Shall I take my host family a gift?",
@@ -7265,7 +7265,7 @@ const jhWordsDB = [
   {
     "id": 30808,
     "en": "hot",
-    "kk": "",
+    "kk": "[hɑt]",
     "zh": "adj. 熱的",
     "unit": 17,
     "example": "It's hot out – very hot, very humid.",
@@ -7274,7 +7274,7 @@ const jhWordsDB = [
   {
     "id": 30809,
     "en": "hotel",
-    "kk": "",
+    "kk": "[hoˋtɛl]",
     "zh": "n. 旅館",
     "unit": 17,
     "example": "They bugged her hotel room.",
@@ -7283,7 +7283,7 @@ const jhWordsDB = [
   {
     "id": 30810,
     "en": "hour",
-    "kk": "",
+    "kk": "[ˋaʊɚ]",
     "zh": "n. 小時",
     "unit": 17,
     "example": "That clock's an hour fast.",
@@ -7292,7 +7292,7 @@ const jhWordsDB = [
   {
     "id": 30811,
     "en": "house",
-    "kk": "",
+    "kk": "[haʊs]",
     "zh": "n. 房子",
     "unit": 17,
     "example": "Their house is massive.",
@@ -7301,7 +7301,7 @@ const jhWordsDB = [
   {
     "id": 30812,
     "en": "housewife",
-    "kk": "",
+    "kk": "[ˋhaʊ͵swaɪf]",
     "zh": "n. 家庭主婦",
     "unit": 17,
     "example": "I hated the label 'housewife'.",
@@ -7310,7 +7310,7 @@ const jhWordsDB = [
   {
     "id": 30813,
     "en": "housework",
-    "kk": "",
+    "kk": "[ˋhaʊ͵swɝk]",
     "zh": "n. 家事",
     "unit": 17,
     "example": "Housework is a never-ending task.",
@@ -7319,7 +7319,7 @@ const jhWordsDB = [
   {
     "id": 30814,
     "en": "how",
-    "kk": "",
+    "kk": "[haʊ]",
     "zh": "adv. 如何",
     "unit": 17,
     "example": "How much is haulage?",
@@ -7328,7 +7328,7 @@ const jhWordsDB = [
   {
     "id": 30815,
     "en": "however",
-    "kk": "",
+    "kk": "[͵haʊˋɛvɚ]",
     "zh": "adv. 然而",
     "unit": 17,
     "example": "On one issue, however, she was immovable.",
@@ -7337,7 +7337,7 @@ const jhWordsDB = [
   {
     "id": 30816,
     "en": "huge",
-    "kk": "",
+    "kk": "[hjudʒ]",
     "zh": "adj. 巨大的",
     "unit": 17,
     "example": "The huge, iron gate was locked.",
@@ -7346,7 +7346,7 @@ const jhWordsDB = [
   {
     "id": 30817,
     "en": "human",
-    "kk": "",
+    "kk": "[ˋhjumən]",
     "zh": "n. 人",
     "unit": 17,
     "example": "Human longevity runs in families.",
@@ -7355,7 +7355,7 @@ const jhWordsDB = [
   {
     "id": 30818,
     "en": "humble",
-    "kk": "",
+    "kk": "[ˋhʌmbəl]",
     "zh": "adj. 謙虛的",
     "unit": 17,
     "example": "He always makes much of his humble origins.",
@@ -7364,7 +7364,7 @@ const jhWordsDB = [
   {
     "id": 30819,
     "en": "humid",
-    "kk": "",
+    "kk": "[ˋhjuməd]",
     "zh": "adj. 潮溼的",
     "unit": 17,
     "example": "These plants love warm, humid atmospheres.",
@@ -7373,7 +7373,7 @@ const jhWordsDB = [
   {
     "id": 30820,
     "en": "humor",
-    "kk": "",
+    "kk": "[ˋhjumɚ]",
     "zh": "n. 幽默",
     "unit": 17,
     "example": "The movie mixes broad humor with romance.",
@@ -7382,7 +7382,7 @@ const jhWordsDB = [
   {
     "id": 30821,
     "en": "humorous",
-    "kk": "",
+    "kk": "[ˋhjumɚəs]",
     "zh": "adj. 幽默的",
     "unit": 17,
     "example": "The writing is brutally tough and savagely humorous.",
@@ -7391,7 +7391,7 @@ const jhWordsDB = [
   {
     "id": 30822,
     "en": "hundred",
-    "kk": "",
+    "kk": "[ˋhʌndrəd]",
     "zh": "n. 一百",
     "unit": 17,
     "example": "He's on three hundred a week.",
@@ -7400,7 +7400,7 @@ const jhWordsDB = [
   {
     "id": 30823,
     "en": "hunger",
-    "kk": "",
+    "kk": "[ˋhʌŋɡɚ]",
     "zh": "n. 飢餓",
     "unit": 17,
     "example": "Hunger drove her to steal.",
@@ -7409,7 +7409,7 @@ const jhWordsDB = [
   {
     "id": 30824,
     "en": "hungry",
-    "kk": "",
+    "kk": "[ˋhʌŋɡri]",
     "zh": "adj. 飢餓的",
     "unit": 17,
     "example": "You're not hungry, are you?",
@@ -7418,7 +7418,7 @@ const jhWordsDB = [
   {
     "id": 30825,
     "en": "hunt",
-    "kk": "",
+    "kk": "[hʌnt]",
     "zh": "v. 狩獵",
     "unit": 17,
     "example": "They sleep by day and hunt by night.",
@@ -7427,7 +7427,7 @@ const jhWordsDB = [
   {
     "id": 30826,
     "en": "hunter",
-    "kk": "",
+    "kk": "[ˋhʌntɚ]",
     "zh": "n. 獵人",
     "unit": 17,
     "example": "Hunter knew nearly all of this already.",
@@ -7436,7 +7436,7 @@ const jhWordsDB = [
   {
     "id": 30827,
     "en": "hurry",
-    "kk": "",
+    "kk": "[ˋhɝi]",
     "zh": "v. 匆忙",
     "unit": 17,
     "example": "Take your time—there's no hurry.",
@@ -7445,7 +7445,7 @@ const jhWordsDB = [
   {
     "id": 30828,
     "en": "hurt",
-    "kk": "",
+    "kk": "[hɝt]",
     "zh": "v. 受傷",
     "unit": 17,
     "example": "Did you hurt yourself ?",
@@ -7454,7 +7454,7 @@ const jhWordsDB = [
   {
     "id": 30829,
     "en": "husband",
-    "kk": "",
+    "kk": "[ˋhʌzbənd]",
     "zh": "n. 丈夫",
     "unit": 17,
     "example": "Her husband was a violent man.",
@@ -7463,7 +7463,7 @@ const jhWordsDB = [
   {
     "id": 30830,
     "en": "ice",
-    "kk": "",
+    "kk": "[aɪs]",
     "zh": "n. 冰",
     "unit": 17,
     "example": "The ice started to crack.",
@@ -7472,7 +7472,7 @@ const jhWordsDB = [
   {
     "id": 30831,
     "en": "idea",
-    "kk": "",
+    "kk": "[aɪˋdiə]",
     "zh": "n. 想法",
     "unit": 17,
     "example": "He's dead against the idea.",
@@ -7481,7 +7481,7 @@ const jhWordsDB = [
   {
     "id": 30832,
     "en": "if",
-    "kk": "",
+    "kk": "[ɪf]",
     "zh": "conj. 假如",
     "unit": 17,
     "example": "I'll be there if poss.",
@@ -7490,7 +7490,7 @@ const jhWordsDB = [
   {
     "id": 30833,
     "en": "ignore",
-    "kk": "",
+    "kk": "[͵ɪɡˋnɔr]",
     "zh": "v. 忽視",
     "unit": 17,
     "example": "We cannot afford to ignore this warning.",
@@ -7499,7 +7499,7 @@ const jhWordsDB = [
   {
     "id": 30834,
     "en": "ill",
-    "kk": "",
+    "kk": "[ɪl]",
     "zh": "adj. 生病的",
     "unit": 17,
     "example": "The patient is terminally ill.",
@@ -7508,7 +7508,7 @@ const jhWordsDB = [
   {
     "id": 30835,
     "en": "imagine",
-    "kk": "",
+    "kk": "[͵ɪmˋædʒən]",
     "zh": "v. 想像",
     "unit": 17,
     "example": "I can just imagine his reaction.",
@@ -7517,7 +7517,7 @@ const jhWordsDB = [
   {
     "id": 30836,
     "en": "impolite",
-    "kk": "",
+    "kk": "[͵ɪmpəˋlaɪt]",
     "zh": "adj. 不禮貌的",
     "unit": 17,
     "example": "Some people think it is impolite to ask someone's age.",
@@ -7526,7 +7526,7 @@ const jhWordsDB = [
   {
     "id": 30837,
     "en": "importance",
-    "kk": "",
+    "kk": "[͵ɪmˋpɔrtəns]",
     "zh": "n. 重要性",
     "unit": 17,
     "example": "This matter is of paramount importance.",
@@ -7535,7 +7535,7 @@ const jhWordsDB = [
   {
     "id": 30838,
     "en": "important",
-    "kk": "",
+    "kk": "[͵ɪmˋpɔrtənt]",
     "zh": "adj. 重要的",
     "unit": 17,
     "example": "He likes to feel important.",
@@ -7544,7 +7544,7 @@ const jhWordsDB = [
   {
     "id": 30839,
     "en": "impossible",
-    "kk": "",
+    "kk": "[͵ɪmˋpɑsəbəl]",
     "zh": "adj. 不可能的",
     "unit": 17,
     "example": "Thick mist made flying impossible.",
@@ -7553,7 +7553,7 @@ const jhWordsDB = [
   {
     "id": 30840,
     "en": "improve",
-    "kk": "",
+    "kk": "[͵ɪmˋpruv]",
     "zh": "v. 改進",
     "unit": 17,
     "example": "I need to improve my English.",
@@ -7562,7 +7562,7 @@ const jhWordsDB = [
   {
     "id": 30841,
     "en": "in",
-    "kk": "",
+    "kk": "[ɪn]",
     "zh": "prep. 在...之中",
     "unit": 17,
     "example": "They lived in rooms in Kensington.",
@@ -7571,7 +7571,7 @@ const jhWordsDB = [
   {
     "id": 30842,
     "en": "inch",
-    "kk": "",
+    "kk": "[ɪntʃ]",
     "zh": "n. 英吋",
     "unit": 17,
     "example": "There are 2.54 centimetres to an inch.",
@@ -7580,7 +7580,7 @@ const jhWordsDB = [
   {
     "id": 30843,
     "en": "include",
-    "kk": "",
+    "kk": "[͵ɪnˋklud]",
     "zh": "v. 包括",
     "unit": 17,
     "example": "Symptoms include a sore throat.",
@@ -7589,7 +7589,7 @@ const jhWordsDB = [
   {
     "id": 30844,
     "en": "income",
-    "kk": "",
+    "kk": "[ˋɪn͵kʌm]",
     "zh": "n. 收入",
     "unit": 17,
     "example": "All income must be declared.",
@@ -7598,7 +7598,7 @@ const jhWordsDB = [
   {
     "id": 30845,
     "en": "increase",
-    "kk": "",
+    "kk": "[͵ɪnˋkris]",
     "zh": "v. 增加",
     "unit": 17,
     "example": "Prices will increase pro rata.",
@@ -7607,7 +7607,7 @@ const jhWordsDB = [
   {
     "id": 30846,
     "en": "independent",
-    "kk": "",
+    "kk": "[͵ɪndɪˋpɛndənt]",
     "zh": "adj. 獨立的",
     "unit": 17,
     "example": "Mozambique became independent in 1975.",
@@ -7616,7 +7616,7 @@ const jhWordsDB = [
   {
     "id": 30847,
     "en": "indicate",
-    "kk": "",
+    "kk": "[ˋɪndə͵ket]",
     "zh": "v. 指示",
     "unit": 17,
     "example": "Road markings indicate where you can stop.",
@@ -7625,7 +7625,7 @@ const jhWordsDB = [
   {
     "id": 30848,
     "en": "influence",
-    "kk": "",
+    "kk": "[ˋɪnfluəns]",
     "zh": "n. 影響",
     "unit": 17,
     "example": "His influence has diminished with time.",
@@ -7634,7 +7634,7 @@ const jhWordsDB = [
   {
     "id": 30849,
     "en": "information",
-    "kk": "",
+    "kk": "[͵ɪnfɚˋmeʃən]",
     "zh": "n. 資訊",
     "unit": 17,
     "example": "We pooled ideas and information.",
@@ -7643,7 +7643,7 @@ const jhWordsDB = [
   {
     "id": 30850,
     "en": "ink",
-    "kk": "",
+    "kk": "[ɪŋk]",
     "zh": "n. 墨水",
     "unit": 17,
     "example": "These ink stains won't wash out.",
@@ -7652,7 +7652,7 @@ const jhWordsDB = [
   {
     "id": 30851,
     "en": "insect",
-    "kk": "",
+    "kk": "[ˋɪn͵sɛkt]",
     "zh": "n. 昆蟲",
     "unit": 17,
     "example": "At rest the insect looks like a dead leaf.",
@@ -7661,7 +7661,7 @@ const jhWordsDB = [
   {
     "id": 30852,
     "en": "inside",
-    "kk": "",
+    "kk": "[͵ɪnˋsaɪd]",
     "zh": "adv. 在內部地",
     "unit": 17,
     "example": "The tree trunk was hollow inside.",
@@ -7670,7 +7670,7 @@ const jhWordsDB = [
   {
     "id": 30853,
     "en": "insist",
-    "kk": "",
+    "kk": "[͵ɪnˋsɪst]",
     "zh": "v. 堅持",
     "unit": 17,
     "example": "I insist on paying for the damage.",
@@ -7679,7 +7679,7 @@ const jhWordsDB = [
   {
     "id": 30854,
     "en": "inspire",
-    "kk": "",
+    "kk": "[͵ɪnˋspaɪr]",
     "zh": "v. 激勵",
     "unit": 17,
     "example": "We must promote originality, inspire creativity and encourage innovation.",
@@ -7688,7 +7688,7 @@ const jhWordsDB = [
   {
     "id": 30855,
     "en": "instance",
-    "kk": "",
+    "kk": "[ˋɪnstəns]",
     "zh": "n. 例子",
     "unit": 17,
     "example": "Can you quote me an instance of when this happened?",
@@ -7697,7 +7697,7 @@ const jhWordsDB = [
   {
     "id": 30856,
     "en": "instant",
-    "kk": "",
+    "kk": "[ˋɪnstənt]",
     "zh": "adj. 立即的",
     "unit": 17,
     "example": "For an instant, Barney was tempted to flee.",
@@ -7706,7 +7706,7 @@ const jhWordsDB = [
   {
     "id": 30857,
     "en": "instrument",
-    "kk": "",
+    "kk": "[ˋɪnstrəmənt]",
     "zh": "n. 樂器",
     "unit": 17,
     "example": "Is he learning an instrument?",
@@ -7715,7 +7715,7 @@ const jhWordsDB = [
   {
     "id": 30858,
     "en": "intelligent",
-    "kk": "",
+    "kk": "[͵ɪnˋtɛlədʒənt]",
     "zh": "adj. 聰明的",
     "unit": 17,
     "example": "The dolphin is an intelligent animal.",
@@ -7724,7 +7724,7 @@ const jhWordsDB = [
   {
     "id": 30859,
     "en": "interest",
-    "kk": "",
+    "kk": "[ˋɪntrəst]",
     "zh": "n. 興趣",
     "unit": 17,
     "example": "Interest rates should come down.",
@@ -7733,7 +7733,7 @@ const jhWordsDB = [
   {
     "id": 30860,
     "en": "interested",
-    "kk": "",
+    "kk": "[ˋɪntrəstɪd]",
     "zh": "adj. 感興趣的",
     "unit": 17,
     "example": "I'm not interested in sport.",
@@ -7742,7 +7742,7 @@ const jhWordsDB = [
   {
     "id": 30861,
     "en": "interesting",
-    "kk": "",
+    "kk": "[ˋɪntrəstɪŋ]",
     "zh": "adj. 有趣的",
     "unit": 17,
     "example": "Did you go anywhere interesting?",
@@ -7751,7 +7751,7 @@ const jhWordsDB = [
   {
     "id": 30862,
     "en": "international",
-    "kk": "",
+    "kk": "[͵ɪntɚˋnæʃənəl]",
     "zh": "adj. 國際的",
     "unit": 17,
     "example": "His speciality is international law.",
@@ -7760,7 +7760,7 @@ const jhWordsDB = [
   {
     "id": 30863,
     "en": "Internet",
-    "kk": "",
+    "kk": "[ˋɪntɚ͵nɛt]",
     "zh": "n. 網路",
     "unit": 17,
     "example": "I'm jacking into the Internet now.",
@@ -7769,7 +7769,7 @@ const jhWordsDB = [
   {
     "id": 30864,
     "en": "Interrupt",
-    "kk": "",
+    "kk": "[͵ɪntɚˋʌpt]",
     "zh": "v. 打擾",
     "unit": 17,
     "example": "Please continue—I didn't mean to interrupt.",
@@ -7778,7 +7778,7 @@ const jhWordsDB = [
   {
     "id": 30865,
     "en": "interview",
-    "kk": "",
+    "kk": "[ˋɪntɚ͵vju]",
     "zh": "n. 訪問",
     "unit": 17,
     "example": "She spruced up for the interview.",
@@ -7787,7 +7787,7 @@ const jhWordsDB = [
   {
     "id": 30866,
     "en": "into",
-    "kk": "",
+    "kk": "[ˋɪntu]",
     "zh": "prep. 進入...之內",
     "unit": 17,
     "example": "Caterpillars change into butterflies.",
@@ -7796,7 +7796,7 @@ const jhWordsDB = [
   {
     "id": 30867,
     "en": "introduce",
-    "kk": "",
+    "kk": "[͵ɪntrəˋdus]",
     "zh": "v. 介紹",
     "unit": 17,
     "example": "Can I introduce my wife?",
@@ -7805,7 +7805,7 @@ const jhWordsDB = [
   {
     "id": 30868,
     "en": "invent",
-    "kk": "",
+    "kk": "[͵ɪnˋvɛnt]",
     "zh": "v. 發明",
     "unit": 17,
     "example": "So they proceeded to invent the verge-and-foliot escapement.",
@@ -7814,7 +7814,7 @@ const jhWordsDB = [
   {
     "id": 30869,
     "en": "invitation",
-    "kk": "",
+    "kk": "[͵ɪnvɪˋteʃən]",
     "zh": "n. 邀請",
     "unit": 17,
     "example": "Admission is by invitation only.",
@@ -7823,7 +7823,7 @@ const jhWordsDB = [
   {
     "id": 30870,
     "en": "invite",
-    "kk": "",
+    "kk": "[͵ɪnˋvaɪt]",
     "zh": "v. 邀請",
     "unit": 17,
     "example": "Who did you invite to the party?",
@@ -7832,7 +7832,7 @@ const jhWordsDB = [
   {
     "id": 30871,
     "en": "iron",
-    "kk": "",
+    "kk": "[ˋaɪɚn]",
     "zh": "n. 熨斗",
     "unit": 17,
     "example": "The huge, iron gate was locked.",
@@ -7841,7 +7841,7 @@ const jhWordsDB = [
   {
     "id": 30872,
     "en": "island",
-    "kk": "",
+    "kk": "[ˋaɪlənd]",
     "zh": "n. 島",
     "unit": 17,
     "example": "The island is thinly populated.",
@@ -7850,7 +7850,7 @@ const jhWordsDB = [
   {
     "id": 30873,
     "en": "item",
-    "kk": "",
+    "kk": "[ˋaɪtəm]",
     "zh": "n. 項目",
     "unit": 17,
     "example": "This item should be hand washed.",
@@ -7859,7 +7859,7 @@ const jhWordsDB = [
   {
     "id": 30874,
     "en": "jacket",
-    "kk": "",
+    "kk": "[ˋdʒækət]",
     "zh": "n. 外套",
     "unit": 17,
     "example": "Is your jacket real leather?",
@@ -7868,7 +7868,7 @@ const jhWordsDB = [
   {
     "id": 30875,
     "en": "jam",
-    "kk": "",
+    "kk": "[dʒæm]",
     "zh": "n. 果醬",
     "unit": 17,
     "example": "We were stuck in a traffic jam.",
@@ -7877,7 +7877,7 @@ const jhWordsDB = [
   {
     "id": 30876,
     "en": "January",
-    "kk": "",
+    "kk": "[ˋdʒænju͵ɛri]",
     "zh": "n. 一月",
     "unit": 17,
     "example": "January is my least favourite month.",
@@ -7886,7 +7886,7 @@ const jhWordsDB = [
   {
     "id": 30877,
     "en": "jazz",
-    "kk": "",
+    "kk": "[dʒæz]",
     "zh": "n. 爵士樂",
     "unit": 17,
     "example": "Jazz is mother's milk to me.",
@@ -7895,7 +7895,7 @@ const jhWordsDB = [
   {
     "id": 30878,
     "en": "jealous",
-    "kk": "",
+    "kk": "[ˋdʒɛləs]",
     "zh": "adj. 妒忌的",
     "unit": 17,
     "example": "She was jealous of his wealth.",
@@ -7904,7 +7904,7 @@ const jhWordsDB = [
   {
     "id": 30879,
     "en": "jeans",
-    "kk": "",
+    "kk": "[dʒinz]",
     "zh": "n. 牛仔褲",
     "unit": 17,
     "example": "His jeans were left in tatters.",
@@ -7913,7 +7913,7 @@ const jhWordsDB = [
   {
     "id": 30880,
     "en": "jeep",
-    "kk": "",
+    "kk": "[dʒip]",
     "zh": "n. 吉普車",
     "unit": 17,
     "example": "The jeep bumped along the dirt track.",
@@ -7922,7 +7922,7 @@ const jhWordsDB = [
   {
     "id": 30881,
     "en": "job",
-    "kk": "",
+    "kk": "[dʒɑb]",
     "zh": "n. 工作",
     "unit": 17,
     "example": "Her job is multifaceted.",
@@ -7931,7 +7931,7 @@ const jhWordsDB = [
   {
     "id": 30882,
     "en": "jog",
-    "kk": "",
+    "kk": "[dʒɑɡ]",
     "zh": "v. 慢跑",
     "unit": 17,
     "example": "I got up early the next morning to jog.",
@@ -7940,7 +7940,7 @@ const jhWordsDB = [
   {
     "id": 30883,
     "en": "join",
-    "kk": "",
+    "kk": "[dʒɔɪn]",
     "zh": "v. 參加",
     "unit": 17,
     "example": "How do these two pieces join?",
@@ -7949,7 +7949,7 @@ const jhWordsDB = [
   {
     "id": 30884,
     "en": "joke",
-    "kk": "",
+    "kk": "[dʒok]",
     "zh": "n. 笑話",
     "unit": 17,
     "example": "Whoever thought up that joke?",
@@ -7958,7 +7958,7 @@ const jhWordsDB = [
   {
     "id": 30885,
     "en": "journalist",
-    "kk": "",
+    "kk": "[ˋdʒɝnələst]",
     "zh": "n. 新聞記者",
     "unit": 17,
     "example": "Michael Cross is a freelance journalist.",
@@ -7967,7 +7967,7 @@ const jhWordsDB = [
   {
     "id": 30886,
     "en": "joy",
-    "kk": "",
+    "kk": "[dʒɔɪ]",
     "zh": "n. 喜悅",
     "unit": 17,
     "example": "To his great joy, she accepted.",
@@ -7976,7 +7976,7 @@ const jhWordsDB = [
   {
     "id": 30887,
     "en": "judge",
-    "kk": "",
+    "kk": "[dʒʌdʒ]",
     "zh": "v. 判斷",
     "unit": 17,
     "example": "The judge allowed my claim.",
@@ -7985,7 +7985,7 @@ const jhWordsDB = [
   {
     "id": 30888,
     "en": "juice",
-    "kk": "",
+    "kk": "[dʒus]",
     "zh": "n. 果汁",
     "unit": 17,
     "example": "The juice contains no added sugar.",
@@ -7994,7 +7994,7 @@ const jhWordsDB = [
   {
     "id": 30889,
     "en": "July",
-    "kk": "",
+    "kk": "[͵dʒuˋlaɪ]",
     "zh": "n. 七月",
     "unit": 17,
     "example": "The car is taxed until July.",
@@ -8003,7 +8003,7 @@ const jhWordsDB = [
   {
     "id": 30890,
     "en": "jump",
-    "kk": "",
+    "kk": "[dʒʌmp]",
     "zh": "v. 跳",
     "unit": 17,
     "example": "A loud bang made me jump.",
@@ -8012,7 +8012,7 @@ const jhWordsDB = [
   {
     "id": 30891,
     "en": "June",
-    "kk": "",
+    "kk": "[dʒun]",
     "zh": "n. 六月",
     "unit": 17,
     "example": "Ann's expecting a baby in June.",
@@ -8021,7 +8021,7 @@ const jhWordsDB = [
   {
     "id": 30892,
     "en": "just",
-    "kk": "",
+    "kk": "[dʒʌst]",
     "zh": "adv. 剛才",
     "unit": 17,
     "example": "Accountancy just isn't sexy.",
@@ -8030,7 +8030,7 @@ const jhWordsDB = [
   {
     "id": 30893,
     "en": "keep",
-    "kk": "/kiːp/",
+    "kk": "[kip]",
     "zh": "v. (使)保持",
     "unit": 17,
     "example": "Her grandchildren keep her young.",
@@ -8039,7 +8039,7 @@ const jhWordsDB = [
   {
     "id": 30894,
     "en": "ketchup",
-    "kk": "",
+    "kk": "[ˋkɛtʃəp]",
     "zh": "n. 番茄醬",
     "unit": 17,
     "example": "Would you like ketchup with your fries?",
@@ -8048,7 +8048,7 @@ const jhWordsDB = [
   {
     "id": 30895,
     "en": "key",
-    "kk": "/kiː/",
+    "kk": "[ki]",
     "zh": "n. 鑰匙",
     "unit": 17,
     "example": "His contribution could be key.",
@@ -8057,7 +8057,7 @@ const jhWordsDB = [
   {
     "id": 30896,
     "en": "kick",
-    "kk": "/kɪk/",
+    "kk": "[kɪk]",
     "zh": "v. 踢",
     "unit": 17,
     "example": "This drink has quite a kick.",
@@ -8066,7 +8066,7 @@ const jhWordsDB = [
   {
     "id": 30897,
     "en": "kid",
-    "kk": "/kɪd/",
+    "kk": "[kɪd]",
     "zh": "n. 小孩",
     "unit": 17,
     "example": "'Oh, she's just a kid,' he said scathingly.",
@@ -8075,7 +8075,7 @@ const jhWordsDB = [
   {
     "id": 30898,
     "en": "kill",
-    "kk": "/kɪl/",
+    "kk": "[kɪl]",
     "zh": "v. 殺死",
     "unit": 17,
     "example": "Chlorine is added to kill bacteria.",
@@ -8084,7 +8084,7 @@ const jhWordsDB = [
   {
     "id": 30899,
     "en": "kilogram",
-    "kk": "",
+    "kk": "[ˋkɪlə͵ɡræm]",
     "zh": "n. 公斤",
     "unit": 17,
     "example": "Flour is sold by the kilogram.",
@@ -8093,7 +8093,7 @@ const jhWordsDB = [
   {
     "id": 30900,
     "en": "kilometer",
-    "kk": "",
+    "kk": "[kəˋlɑmətɚ]",
     "zh": "n. 公里",
     "unit": 17,
     "example": "What's the area of Canada in square kilometer?",
@@ -8102,7 +8102,7 @@ const jhWordsDB = [
   {
     "id": 30901,
     "en": "kind",
-    "kk": "/kaɪnd/",
+    "kk": "[kaɪnd]",
     "zh": "adj. 仁慈的",
     "unit": 17,
     "example": "I've caught some kind of lurgy.",
@@ -8111,7 +8111,7 @@ const jhWordsDB = [
   {
     "id": 30902,
     "en": "kindergarten",
-    "kk": "",
+    "kk": "[ˋkɪndɚ͵ɡɑrtən]",
     "zh": "n. 幼稚園",
     "unit": 17,
     "example": "She's in kindergarten now.",
@@ -8120,7 +8120,7 @@ const jhWordsDB = [
   {
     "id": 30903,
     "en": "king",
-    "kk": "/kɪŋ/",
+    "kk": "[kɪŋ]",
     "zh": "n. 國王",
     "unit": 17,
     "example": "His king had been checkmated.",
@@ -8129,7 +8129,7 @@ const jhWordsDB = [
   {
     "id": 30904,
     "en": "kingdom",
-    "kk": "",
+    "kk": "[ˋkɪŋdəm]",
     "zh": "n. 王國",
     "unit": 17,
     "example": "Rome annexed the Nabatean kingdom in AD 106.",
@@ -8138,7 +8138,7 @@ const jhWordsDB = [
   {
     "id": 30905,
     "en": "kiss",
-    "kk": "",
+    "kk": "[kɪs]",
     "zh": "n. 吻",
     "unit": 17,
     "example": "The first kiss is dynamite.",
@@ -8147,7 +8147,7 @@ const jhWordsDB = [
   {
     "id": 30906,
     "en": "kitchen",
-    "kk": "/ˈkɪtʃən/",
+    "kk": "[ˋkɪtʃən]",
     "zh": "n. 廚房",
     "unit": 17,
     "example": "Her kitchen was kept immaculate.",
@@ -8156,7 +8156,7 @@ const jhWordsDB = [
   {
     "id": 30907,
     "en": "kite",
-    "kk": "",
+    "kk": "[kaɪt]",
     "zh": "n. 風箏",
     "unit": 17,
     "example": "The kite has a span of 1.5 metres.",
@@ -8165,7 +8165,7 @@ const jhWordsDB = [
   {
     "id": 30908,
     "en": "kitten",
-    "kk": "",
+    "kk": "[ˋkɪtən]",
     "zh": "n. 小貓",
     "unit": 17,
     "example": "From somewhere, the kitten mewed.",
@@ -8174,7 +8174,7 @@ const jhWordsDB = [
   {
     "id": 30909,
     "en": "knee",
-    "kk": "/niː/",
+    "kk": "[ni]",
     "zh": "n. 膝蓋",
     "unit": 17,
     "example": "The water was only knee-deep.",
@@ -8183,7 +8183,7 @@ const jhWordsDB = [
   {
     "id": 30910,
     "en": "knife",
-    "kk": "/naɪf/",
+    "kk": "[naɪf]",
     "zh": "n. 刀",
     "unit": 17,
     "example": "The knife sliced his jacket.",
@@ -8192,7 +8192,7 @@ const jhWordsDB = [
   {
     "id": 30911,
     "en": "knock",
-    "kk": "/nɑːk/",
+    "kk": "[nɑk]",
     "zh": "v. 敲",
     "unit": 17,
     "example": "You don't have to knock—just walk in.",
@@ -8201,7 +8201,7 @@ const jhWordsDB = [
   {
     "id": 30912,
     "en": "know",
-    "kk": "/noʊ/",
+    "kk": "[no]",
     "zh": "v. 知道",
     "unit": 17,
     "example": "You wouldn't know him.",
@@ -8210,7 +8210,7 @@ const jhWordsDB = [
   {
     "id": 30913,
     "en": "knowledge",
-    "kk": "/ˈnɑːlɪdʒ/",
+    "kk": "[ˋnɑlədʒ]",
     "zh": "n. 知識",
     "unit": 17,
     "example": "His knowledge of music is extensive.",
@@ -8219,7 +8219,7 @@ const jhWordsDB = [
   {
     "id": 30914,
     "en": "lack",
-    "kk": "/læk/",
+    "kk": "[læk]",
     "zh": "v. 缺乏",
     "unit": 17,
     "example": "Her eyes ached from lack of sleep.",
@@ -8228,7 +8228,7 @@ const jhWordsDB = [
   {
     "id": 30915,
     "en": "lady",
-    "kk": "/ˈleɪdi/",
+    "kk": "[ˋledi]",
     "zh": "n. 女士",
     "unit": 17,
     "example": "Her mother was a titled lady.",
@@ -8237,7 +8237,7 @@ const jhWordsDB = [
   {
     "id": 30916,
     "en": "lake",
-    "kk": "/leɪk/",
+    "kk": "[lek]",
     "zh": "n. 湖泊",
     "unit": 17,
     "example": "They walked around the lake.",
@@ -8246,7 +8246,7 @@ const jhWordsDB = [
   {
     "id": 30917,
     "en": "lamb",
-    "kk": "",
+    "kk": "[læm]",
     "zh": "n. 小羊",
     "unit": 17,
     "example": "The lamb gave a faint bleat.",
@@ -8255,7 +8255,7 @@ const jhWordsDB = [
   {
     "id": 30918,
     "en": "lamp",
-    "kk": "",
+    "kk": "[læmp]",
     "zh": "n. 燈",
     "unit": 17,
     "example": "She switched on the bedside lamp.",
@@ -8264,7 +8264,7 @@ const jhWordsDB = [
   {
     "id": 30919,
     "en": "land",
-    "kk": "/lænd/",
+    "kk": "[lænd]",
     "zh": "n. 土地",
     "unit": 17,
     "example": "90% of the land is cultivated.",
@@ -8273,7 +8273,7 @@ const jhWordsDB = [
   {
     "id": 30920,
     "en": "language",
-    "kk": "/ˈlæŋɡwɪdʒ/",
+    "kk": "[ˋlæŋɡwədʒ]",
     "zh": "n. 語言",
     "unit": 17,
     "example": "Her language was not very ladylike.",
@@ -8282,7 +8282,7 @@ const jhWordsDB = [
   {
     "id": 30921,
     "en": "lantern",
-    "kk": "",
+    "kk": "[ˋlæntɚn]",
     "zh": "n. 燈籠",
     "unit": 17,
     "example": "The night lantern glowed softly in the darkness.",
@@ -8291,7 +8291,7 @@ const jhWordsDB = [
   {
     "id": 30922,
     "en": "large",
-    "kk": "/lɑːrdʒ/",
+    "kk": "[lɑrdʒ]",
     "zh": "adj. 大的",
     "unit": 17,
     "example": "He was smoking a large cigar.",
@@ -8300,7 +8300,7 @@ const jhWordsDB = [
   {
     "id": 30923,
     "en": "last",
-    "kk": "/læst/",
+    "kk": "[læst]",
     "zh": "adj. 最後的",
     "unit": 17,
     "example": "The doctors operated last night.",
@@ -8309,7 +8309,7 @@ const jhWordsDB = [
   {
     "id": 30924,
     "en": "late",
-    "kk": "/leɪt/",
+    "kk": "[let]",
     "zh": "adj. 晚的",
     "unit": 17,
     "example": "They're nearly always late.",
@@ -8318,7 +8318,7 @@ const jhWordsDB = [
   {
     "id": 30925,
     "en": "later",
-    "kk": "",
+    "kk": "[ˋletɚ]",
     "zh": "adj. 稍晚的",
     "unit": 17,
     "example": "Two days later tragedy struck.",
@@ -8327,7 +8327,7 @@ const jhWordsDB = [
   {
     "id": 30926,
     "en": "latest",
-    "kk": "",
+    "kk": "[ˋletəst]",
     "zh": "adj. 最新的",
     "unit": 17,
     "example": "The latest trend is gardening.",
@@ -8336,7 +8336,7 @@ const jhWordsDB = [
   {
     "id": 30927,
     "en": "laugh",
-    "kk": "/læf/",
+    "kk": "[læf]",
     "zh": "n. 笑聲",
     "unit": 17,
     "example": "He uttered a snorting laugh.",
@@ -8345,7 +8345,7 @@ const jhWordsDB = [
   {
     "id": 30928,
     "en": "law",
-    "kk": "/lɔː/",
+    "kk": "[lɔ]",
     "zh": "n. 法律",
     "unit": 17,
     "example": "Her specialty is taxation law.",
@@ -8354,7 +8354,7 @@ const jhWordsDB = [
   {
     "id": 30929,
     "en": "lawyer",
-    "kk": "",
+    "kk": "[ˋlɔjɚ]",
     "zh": "n. 律師",
     "unit": 17,
     "example": "I should like to call my lawyer.",
@@ -8363,7 +8363,7 @@ const jhWordsDB = [
   {
     "id": 30930,
     "en": "lay",
-    "kk": "/leɪ/",
+    "kk": "[le]",
     "zh": "v. 放置",
     "unit": 17,
     "example": "She lay in bed, contemplating.",
@@ -8372,7 +8372,7 @@ const jhWordsDB = [
   {
     "id": 30931,
     "en": "lazy",
-    "kk": "",
+    "kk": "[ˋlezi]",
     "zh": "adj. 懶惰的",
     "unit": 17,
     "example": "Look how lazy we've become.",
@@ -8381,7 +8381,7 @@ const jhWordsDB = [
   {
     "id": 30932,
     "en": "lead",
-    "kk": "/liːd/",
+    "kk": "[lɛd]",
     "zh": "v. 領導",
     "unit": 17,
     "example": "He has gone into the lead.",
@@ -8390,7 +8390,7 @@ const jhWordsDB = [
   {
     "id": 30933,
     "en": "leader",
-    "kk": "/ˈliːdər/",
+    "kk": "[ˋlidɚ]",
     "zh": "n. 領袖",
     "unit": 17,
     "example": "The party wants her as leader.",
@@ -8399,7 +8399,7 @@ const jhWordsDB = [
   {
     "id": 30934,
     "en": "leaf",
-    "kk": "",
+    "kk": "[lif]",
     "zh": "n. 葉子",
     "unit": 17,
     "example": "The trees are coming into leaf.",
@@ -8408,7 +8408,7 @@ const jhWordsDB = [
   {
     "id": 30935,
     "en": "learn",
-    "kk": "/lɜːrn/",
+    "kk": "[lɝn]",
     "zh": "v. 學習",
     "unit": 17,
     "example": "The kids were quick to learn.",
@@ -8417,7 +8417,7 @@ const jhWordsDB = [
   {
     "id": 30936,
     "en": "least",
-    "kk": "/liːst/",
+    "kk": "[list]",
     "zh": "adv. 最少",
     "unit": 17,
     "example": "It'll cost at least 500 dollars.",
@@ -8426,7 +8426,7 @@ const jhWordsDB = [
   {
     "id": 30937,
     "en": "leave",
-    "kk": "/liːv/",
+    "kk": "[liv]",
     "zh": "v. 離開",
     "unit": 17,
     "example": "We didn't leave early enough.",
@@ -8435,7 +8435,7 @@ const jhWordsDB = [
   {
     "id": 30938,
     "en": "left",
-    "kk": "/left/",
+    "kk": "[lɛft]",
     "zh": "adj. 左邊的",
     "unit": 17,
     "example": "He entered stage left.",
@@ -8444,7 +8444,7 @@ const jhWordsDB = [
   {
     "id": 30939,
     "en": "leg",
-    "kk": "/leɡ/",
+    "kk": "[lɛɡ]",
     "zh": "n. 腿",
     "unit": 17,
     "example": "His leg was getting better.",
@@ -8453,7 +8453,7 @@ const jhWordsDB = [
   {
     "id": 30940,
     "en": "legal",
-    "kk": "/ˈliːɡl/",
+    "kk": "[ˋliɡəl]",
     "zh": "adj. 合法的",
     "unit": 17,
     "example": "Should euthanasia be made legal?",
@@ -8462,7 +8462,7 @@ const jhWordsDB = [
   {
     "id": 30941,
     "en": "lemon",
-    "kk": "",
+    "kk": "[ˋlɛmən]",
     "zh": "n. 檸檬",
     "unit": 17,
     "example": "I plucked a lemon from the tree.",
@@ -8471,7 +8471,7 @@ const jhWordsDB = [
   {
     "id": 30942,
     "en": "lend",
-    "kk": "",
+    "kk": "[lɛnd]",
     "zh": "v. 借",
     "unit": 17,
     "example": "Here, I'll lend you my pen.",
@@ -8480,7 +8480,7 @@ const jhWordsDB = [
   {
     "id": 30943,
     "en": "less",
-    "kk": "/les/",
+    "kk": "[lɛs]",
     "zh": "adj. 較少的",
     "unit": 17,
     "example": "Her calls became less frequent.",
@@ -8489,7 +8489,7 @@ const jhWordsDB = [
   {
     "id": 30944,
     "en": "lesson",
-    "kk": "/ˈlesn/",
+    "kk": "[ˋlɛsən]",
     "zh": "n. 課",
     "unit": 17,
     "example": "I've got a piano lesson later today.",
@@ -8498,7 +8498,7 @@ const jhWordsDB = [
   {
     "id": 30945,
     "en": "let",
-    "kk": "/let/",
+    "kk": "[lɛt]",
     "zh": "v. 讓",
     "unit": 17,
     "example": "Let your body relax.",
@@ -8507,7 +8507,7 @@ const jhWordsDB = [
   {
     "id": 30946,
     "en": "letter",
-    "kk": "/ˈletər/",
+    "kk": "[ˋlɛtɚ]",
     "zh": "n. 信",
     "unit": 17,
     "example": "I returned the letter unopened.",
@@ -8516,7 +8516,7 @@ const jhWordsDB = [
   {
     "id": 30947,
     "en": "lettuce",
-    "kk": "",
+    "kk": "[ˋlɛtəs]",
     "zh": "n. 生菜",
     "unit": 17,
     "example": "Lettuce was grown by the ancient Romans.",
@@ -8525,7 +8525,7 @@ const jhWordsDB = [
   {
     "id": 30948,
     "en": "level",
-    "kk": "/ˈlevl/",
+    "kk": "[ˋlɛvəl]",
     "zh": "n. 水準",
     "unit": 17,
     "example": "He studied French to degree level.",
@@ -8534,7 +8534,7 @@ const jhWordsDB = [
   {
     "id": 30949,
     "en": "library",
-    "kk": "/ˈlaɪbreri/",
+    "kk": "[ˋlaɪbrɛ͵ri]",
     "zh": "n. 圖書館",
     "unit": 17,
     "example": "The library is all on one level.",
@@ -8543,7 +8543,7 @@ const jhWordsDB = [
   {
     "id": 30950,
     "en": "lick",
-    "kk": "",
+    "kk": "[lɪk]",
     "zh": "v. 舔",
     "unit": 17,
     "example": "Well, you didn't get a lick amiss, I reckon.",
@@ -8552,7 +8552,7 @@ const jhWordsDB = [
   {
     "id": 30951,
     "en": "lid",
-    "kk": "",
+    "kk": "[lɪd]",
     "zh": "n. 蓋子",
     "unit": 17,
     "example": "The lid should fit snugly.",
@@ -8561,7 +8561,7 @@ const jhWordsDB = [
   {
     "id": 30952,
     "en": "lie",
-    "kk": "/laɪ/",
+    "kk": "[laɪ]",
     "zh": "n. 謊言",
     "unit": 17,
     "example": "We must nail this lie.",
@@ -8570,7 +8570,7 @@ const jhWordsDB = [
   {
     "id": 30953,
     "en": "life",
-    "kk": "/laɪf/",
+    "kk": "[laɪf]",
     "zh": "n. 生命",
     "unit": 17,
     "example": "Are you enjoying married life?",
@@ -8579,7 +8579,7 @@ const jhWordsDB = [
   {
     "id": 30954,
     "en": "lift",
-    "kk": "/lɪft/",
+    "kk": "[lɪft]",
     "zh": "v. 抬起",
     "unit": 17,
     "example": "There is a lift to all floors.",
@@ -8588,7 +8588,7 @@ const jhWordsDB = [
   {
     "id": 30955,
     "en": "light",
-    "kk": "/laɪt/",
+    "kk": "[laɪt]",
     "zh": "n. 燈",
     "unit": 17,
     "example": "Suddenly a warning light blinked.",
@@ -8597,7 +8597,7 @@ const jhWordsDB = [
   {
     "id": 30956,
     "en": "lightning",
-    "kk": "",
+    "kk": "[ˋlaɪtnɪŋ]",
     "zh": "n. 閃電",
     "unit": 17,
     "example": "Driving today demands lightning reflexes.",
@@ -8606,7 +8606,7 @@ const jhWordsDB = [
   {
     "id": 30957,
     "en": "like",
-    "kk": "/laɪk/",
+    "kk": "[laɪk]",
     "zh": "v. 喜歡",
     "unit": 17,
     "example": "It tastes like chocolate.",
@@ -8615,7 +8615,7 @@ const jhWordsDB = [
   {
     "id": 30958,
     "en": "likely",
-    "kk": "",
+    "kk": "[ˋlaɪkli]",
     "zh": "adv. 可能",
     "unit": 17,
     "example": "We will likely see him later.",
@@ -8624,7 +8624,7 @@ const jhWordsDB = [
   {
     "id": 30959,
     "en": "lily",
-    "kk": "",
+    "kk": "[ˋlɪli]",
     "zh": "n. 百合花",
     "unit": 17,
     "example": "The white lily is a symbol of purity.",
@@ -8633,7 +8633,7 @@ const jhWordsDB = [
   {
     "id": 30960,
     "en": "limit",
-    "kk": "",
+    "kk": "[ˋlɪmət]",
     "zh": "n. 限度",
     "unit": 17,
     "example": "The road has a 30 mph speed limit.",
@@ -8642,7 +8642,7 @@ const jhWordsDB = [
   {
     "id": 30961,
     "en": "line",
-    "kk": "/laɪn/",
+    "kk": "[laɪn]",
     "zh": "n. 線",
     "unit": 17,
     "example": "Your bill includes line rental.",
@@ -8651,7 +8651,7 @@ const jhWordsDB = [
   {
     "id": 30962,
     "en": "link",
-    "kk": "/lɪŋk/",
+    "kk": "[lɪŋk]",
     "zh": "n. 關聯",
     "unit": 17,
     "example": "Click the link and see what happens.",
@@ -8660,7 +8660,7 @@ const jhWordsDB = [
   {
     "id": 30963,
     "en": "lion",
-    "kk": "",
+    "kk": "[ˋlaɪən]",
     "zh": "n. 獅子",
     "unit": 17,
     "example": "The lion was stalking a zebra.",
@@ -8669,7 +8669,7 @@ const jhWordsDB = [
   {
     "id": 30964,
     "en": "lip",
-    "kk": "",
+    "kk": "[lɪp]",
     "zh": "n. 嘴唇",
     "unit": 17,
     "example": "She bit her lip nervously.",
@@ -8678,7 +8678,7 @@ const jhWordsDB = [
   {
     "id": 30965,
     "en": "liquid",
-    "kk": "",
+    "kk": "[ˋlɪkwəd]",
     "zh": "n. 液體",
     "unit": 17,
     "example": "The liquid is then diluted.",
@@ -8687,7 +8687,7 @@ const jhWordsDB = [
   {
     "id": 30966,
     "en": "list",
-    "kk": "/lɪst/",
+    "kk": "[lɪst]",
     "zh": "v. 把...列表",
     "unit": 17,
     "example": "Princess Anne topped the guest list.",
@@ -8696,7 +8696,7 @@ const jhWordsDB = [
   {
     "id": 30967,
     "en": "listen",
-    "kk": "/ˈlɪsn/",
+    "kk": "[ˋlɪsən]",
     "zh": "v. 聽",
     "unit": 17,
     "example": "Why couldn't he listen to her?",
@@ -8705,7 +8705,7 @@ const jhWordsDB = [
   {
     "id": 30968,
     "en": "liter",
-    "kk": "",
+    "kk": "[ˋlitɚ]",
     "zh": "n. 升(容量單位)",
     "unit": 17,
     "example": "Can you use the word liter in a sentence?",
@@ -8714,7 +8714,7 @@ const jhWordsDB = [
   {
     "id": 30969,
     "en": "little",
-    "kk": "/ˈlɪtl/",
+    "kk": "[ˋlɪtəl]",
     "zh": "adj. 少的",
     "unit": 17,
     "example": "I'm feeling a little tipsy.",
@@ -8723,7 +8723,7 @@ const jhWordsDB = [
   {
     "id": 30970,
     "en": "live",
-    "kk": "/lɪv/",
+    "kk": "[laɪv]",
     "zh": "v. 居住",
     "unit": 17,
     "example": "They live in the suburbs.",
@@ -8732,7 +8732,7 @@ const jhWordsDB = [
   {
     "id": 30971,
     "en": "loaf",
-    "kk": "",
+    "kk": "[lof]",
     "zh": "n. 一條(麵包)",
     "unit": 17,
     "example": "He was sawing energetically at a loaf of bread.",
@@ -8741,7 +8741,7 @@ const jhWordsDB = [
   {
     "id": 30972,
     "en": "local",
-    "kk": "/ˈloʊkl/",
+    "kk": "[ˋlokəl]",
     "zh": "adj. 本地的",
     "unit": 17,
     "example": "He dabbles in local politics.",
@@ -8750,7 +8750,7 @@ const jhWordsDB = [
   {
     "id": 30973,
     "en": "lock",
-    "kk": "/lɑːk/",
+    "kk": "[lɑk]",
     "zh": "n. 鎖",
     "unit": 17,
     "example": "The key doesn't fit the lock.",
@@ -8759,7 +8759,7 @@ const jhWordsDB = [
   {
     "id": 30974,
     "en": "locker",
-    "kk": "",
+    "kk": "[ˋlɑkɚ]",
     "zh": "n. 寄物櫃",
     "unit": 17,
     "example": "In the locker room, Amanda changed quickly.",
@@ -8768,7 +8768,7 @@ const jhWordsDB = [
   {
     "id": 30975,
     "en": "lonely",
-    "kk": "",
+    "kk": "[ˋlonli]",
     "zh": "adj. 寂寞的",
     "unit": 17,
     "example": "I could see she was lonely.",
@@ -8777,7 +8777,7 @@ const jhWordsDB = [
   {
     "id": 30976,
     "en": "long",
-    "kk": "/lɔːŋ/",
+    "kk": "[lɔŋ]",
     "zh": "v. 渴望",
     "unit": 17,
     "example": "The bureaucrats dallied too long.",
@@ -8786,7 +8786,7 @@ const jhWordsDB = [
   {
     "id": 30977,
     "en": "look",
-    "kk": "",
+    "kk": "[lʊk]",
     "zh": "v. 看",
     "unit": 17,
     "example": "Look at that beautiful rainbow in the sky.",
@@ -8795,7 +8795,7 @@ const jhWordsDB = [
   {
     "id": 30978,
     "en": "lose",
-    "kk": "",
+    "kk": "[luz]",
     "zh": "v. 失去",
     "unit": 17,
     "example": "No one likes to lose.",
@@ -8804,7 +8804,7 @@ const jhWordsDB = [
   {
     "id": 30979,
     "en": "loser",
-    "kk": "",
+    "kk": "[ˋluzɚ]",
     "zh": "n. 失敗者",
     "unit": 17,
     "example": "If you talk like a loser, you'll end up losing.",
@@ -8813,7 +8813,7 @@ const jhWordsDB = [
   {
     "id": 30980,
     "en": "lot",
-    "kk": "",
+    "kk": "[lɑt]",
     "zh": "n. 許多",
     "unit": 17,
     "example": "She does a lot of quilting.",
@@ -8822,7 +8822,7 @@ const jhWordsDB = [
   {
     "id": 30981,
     "en": "loud",
-    "kk": "",
+    "kk": "[laʊd]",
     "zh": "adj. 大聲的",
     "unit": 17,
     "example": "She gave a loud hiccup.",
@@ -8831,7 +8831,7 @@ const jhWordsDB = [
   {
     "id": 30982,
     "en": "love",
-    "kk": "",
+    "kk": "[lʌv]",
     "zh": "n. 愛",
     "unit": 17,
     "example": "I love my country as you love yours.",
@@ -8840,7 +8840,7 @@ const jhWordsDB = [
   {
     "id": 30983,
     "en": "lovely",
-    "kk": "",
+    "kk": "[ˋlʌvli]",
     "zh": "adj. 可愛的",
     "unit": 17,
     "example": "You look lovely, Marcia.",
@@ -8849,7 +8849,7 @@ const jhWordsDB = [
   {
     "id": 30984,
     "en": "lover",
-    "kk": "",
+    "kk": "[ˋlʌvɚ]",
     "zh": "n. 情人",
     "unit": 17,
     "example": "I'm a lover of the outdoors.",
@@ -8858,7 +8858,7 @@ const jhWordsDB = [
   {
     "id": 30985,
     "en": "low",
-    "kk": "",
+    "kk": "[lo]",
     "zh": "adj. 低的",
     "unit": 17,
     "example": "The humidity is relatively low.",
@@ -8867,7 +8867,7 @@ const jhWordsDB = [
   {
     "id": 30986,
     "en": "luck",
-    "kk": "",
+    "kk": "[lʌk]",
     "zh": "n. 運氣",
     "unit": 17,
     "example": "Our luck couldn't hold forever.",
@@ -8876,7 +8876,7 @@ const jhWordsDB = [
   {
     "id": 30987,
     "en": "lucky",
-    "kk": "",
+    "kk": "[ˋlʌki]",
     "zh": "adj. 幸運的",
     "unit": 17,
     "example": "The 'lucky' tag stuck for years.",
@@ -8885,7 +8885,7 @@ const jhWordsDB = [
   {
     "id": 30988,
     "en": "lunch",
-    "kk": "",
+    "kk": "[lʌntʃ]",
     "zh": "n. 午餐",
     "unit": 17,
     "example": "We'll discuss it over lunch.",
@@ -8894,7 +8894,7 @@ const jhWordsDB = [
   {
     "id": 30989,
     "en": "machine",
-    "kk": "",
+    "kk": "[məˋʃin]",
     "zh": "n. 機器",
     "unit": 17,
     "example": "This machine only accepts coins.",
@@ -8903,7 +8903,7 @@ const jhWordsDB = [
   {
     "id": 30990,
     "en": "mad",
-    "kk": "",
+    "kk": "[mæd]",
     "zh": "adj. 生氣的",
     "unit": 17,
     "example": "He's mad keen on planes.",
@@ -8912,7 +8912,7 @@ const jhWordsDB = [
   {
     "id": 30991,
     "en": "magazine",
-    "kk": "",
+    "kk": "[ˋmæɡə͵zin]",
     "zh": "n. 雜誌",
     "unit": 17,
     "example": "The magazine is still produced in-house.",
@@ -8921,7 +8921,7 @@ const jhWordsDB = [
   {
     "id": 30992,
     "en": "magic",
-    "kk": "",
+    "kk": "[ˋmædʒɪk]",
     "zh": "n. 魔術",
     "unit": 17,
     "example": "He suddenly appeared as if by magic.",
@@ -8930,7 +8930,7 @@ const jhWordsDB = [
   {
     "id": 30993,
     "en": "magician",
-    "kk": "",
+    "kk": "[məˋdʒɪʃən]",
     "zh": "n. 魔術師",
     "unit": 17,
     "example": "The magician vanished in a puff of smoke.",
@@ -8939,7 +8939,7 @@ const jhWordsDB = [
   {
     "id": 30994,
     "en": "mail",
-    "kk": "",
+    "kk": "[mel]",
     "zh": "n. 郵件",
     "unit": 17,
     "example": "There isn't much mail today.",
@@ -8948,7 +8948,7 @@ const jhWordsDB = [
   {
     "id": 30995,
     "en": "main",
-    "kk": "",
+    "kk": "[men]",
     "zh": "adj. 主要的",
     "unit": 17,
     "example": "What's the main disadvantage ?",
@@ -8957,7 +8957,7 @@ const jhWordsDB = [
   {
     "id": 30996,
     "en": "maintain",
-    "kk": "",
+    "kk": "[menˋten]",
     "zh": "v. 維持",
     "unit": 17,
     "example": "It's hard to maintain competitive pricing.",
@@ -8966,7 +8966,7 @@ const jhWordsDB = [
   {
     "id": 30997,
     "en": "major",
-    "kk": "",
+    "kk": "[ˋmedʒɚ]",
     "zh": "adj. 主要的",
     "unit": 17,
     "example": "Rotterdam is a major port.",
@@ -8975,7 +8975,7 @@ const jhWordsDB = [
   {
     "id": 30998,
     "en": "make",
-    "kk": "",
+    "kk": "[mek]",
     "zh": "v. 做",
     "unit": 17,
     "example": "Four quarters make a whole.",
@@ -8984,7 +8984,7 @@ const jhWordsDB = [
   {
     "id": 30999,
     "en": "male",
-    "kk": "",
+    "kk": "[mel]",
     "zh": "n. 男性",
     "unit": 17,
     "example": "I'm not a male chauvinist.",
@@ -8993,7 +8993,7 @@ const jhWordsDB = [
   {
     "id": 31000,
     "en": "mall",
-    "kk": "",
+    "kk": "[mɔl]",
     "zh": "n. 商場",
     "unit": 17,
     "example": "Let's go to the mall.",
@@ -9002,7 +9002,7 @@ const jhWordsDB = [
   {
     "id": 31001,
     "en": "man",
-    "kk": "",
+    "kk": "[mæn]",
     "zh": "n. 男人",
     "unit": 18,
     "example": "He's a highly intelligent man.",
@@ -9011,7 +9011,7 @@ const jhWordsDB = [
   {
     "id": 31002,
     "en": "manager",
-    "kk": "",
+    "kk": "[ˋmænədʒɚ]",
     "zh": "n. 經理",
     "unit": 18,
     "example": "John is the London area manager.",
@@ -9020,7 +9020,7 @@ const jhWordsDB = [
   {
     "id": 31003,
     "en": "mango",
-    "kk": "",
+    "kk": "[ˋmæŋɡo]",
     "zh": "n. 芒果",
     "unit": 18,
     "example": "Mango and pineapple are yellow.",
@@ -9029,7 +9029,7 @@ const jhWordsDB = [
   {
     "id": 31004,
     "en": "manner",
-    "kk": "",
+    "kk": "[ˋmænɚ]",
     "zh": "n. 態度",
     "unit": 18,
     "example": "She responded in like manner.",
@@ -9038,7 +9038,7 @@ const jhWordsDB = [
   {
     "id": 31005,
     "en": "many",
-    "kk": "",
+    "kk": "[ˋmɛni]",
     "zh": "adj. 許多的",
     "unit": 18,
     "example": "Many pesticides are highly toxic.",
@@ -9047,7 +9047,7 @@ const jhWordsDB = [
   {
     "id": 31006,
     "en": "map",
-    "kk": "",
+    "kk": "[mæp]",
     "zh": "n. 地圖",
     "unit": 18,
     "example": "I'm trying to read the map.",
@@ -9056,7 +9056,7 @@ const jhWordsDB = [
   {
     "id": 31007,
     "en": "March",
-    "kk": "",
+    "kk": "[mɑrtʃ]",
     "zh": "n. 三月",
     "unit": 18,
     "example": "The trial reopened on 6 March.",
@@ -9065,7 +9065,7 @@ const jhWordsDB = [
   {
     "id": 31008,
     "en": "mark",
-    "kk": "",
+    "kk": "[mɑrk]",
     "zh": "n. 標記",
     "unit": 18,
     "example": "He made a mark on the wall with a pencil.",
@@ -9074,7 +9074,7 @@ const jhWordsDB = [
   {
     "id": 31009,
     "en": "market",
-    "kk": "",
+    "kk": "[ˋmɑrkət]",
     "zh": "n. 市場",
     "unit": 18,
     "example": "The market collapsed last October.",
@@ -9083,7 +9083,7 @@ const jhWordsDB = [
   {
     "id": 31010,
     "en": "marriage",
-    "kk": "",
+    "kk": "[ˋmɛrɪdʒ]",
     "zh": "n. 結婚",
     "unit": 18,
     "example": "You both have to work hard at marriage.",
@@ -9092,7 +9092,7 @@ const jhWordsDB = [
   {
     "id": 31011,
     "en": "married",
-    "kk": "",
+    "kk": "[ˋmɛrid]",
     "zh": "adj. 已婚的",
     "unit": 18,
     "example": "They're not married, actually.",
@@ -9101,7 +9101,7 @@ const jhWordsDB = [
   {
     "id": 31012,
     "en": "marry",
-    "kk": "",
+    "kk": "[ˋmɛri]",
     "zh": "v. 結婚",
     "unit": 18,
     "example": "They'll forbid you to marry.",
@@ -9110,7 +9110,7 @@ const jhWordsDB = [
   {
     "id": 31013,
     "en": "marvelous",
-    "kk": "",
+    "kk": "[ˋmɑrvələs]",
     "zh": "adj. 非凡的",
     "unit": 18,
     "example": "What a wonderful, beautiful, marvelous country!",
@@ -9119,7 +9119,7 @@ const jhWordsDB = [
   {
     "id": 31014,
     "en": "mask",
-    "kk": "",
+    "kk": "[mæsk]",
     "zh": "n. 面具",
     "unit": 18,
     "example": "The gunman, whose mask had slipped, fled.",
@@ -9128,7 +9128,7 @@ const jhWordsDB = [
   {
     "id": 31015,
     "en": "mass",
-    "kk": "",
+    "kk": "[mæs]",
     "zh": "n. 塊",
     "unit": 18,
     "example": "The mass media tends to personalize politics.",
@@ -9137,7 +9137,7 @@ const jhWordsDB = [
   {
     "id": 31016,
     "en": "master",
-    "kk": "",
+    "kk": "[ˋmæstɚ]",
     "zh": "n. 大師",
     "unit": 18,
     "example": "Students are expected to master a second language.",
@@ -9146,7 +9146,7 @@ const jhWordsDB = [
   {
     "id": 31017,
     "en": "mat",
-    "kk": "",
+    "kk": "[mæt]",
     "zh": "n. 墊子",
     "unit": 18,
     "example": "Wipe your feet on the mat before you come in, please.",
@@ -9155,7 +9155,7 @@ const jhWordsDB = [
   {
     "id": 31018,
     "en": "match",
-    "kk": "",
+    "kk": "[mætʃ]",
     "zh": "n. 比賽",
     "unit": 18,
     "example": "He was watching a football match.",
@@ -9164,7 +9164,7 @@ const jhWordsDB = [
   {
     "id": 31019,
     "en": "mate",
-    "kk": "",
+    "kk": "[met]",
     "zh": "n. 配偶",
     "unit": 18,
     "example": "He has found his ideal mate.",
@@ -9173,7 +9173,7 @@ const jhWordsDB = [
   {
     "id": 31020,
     "en": "material",
-    "kk": "",
+    "kk": "[məˋtɪriəl]",
     "zh": "n. 材料",
     "unit": 18,
     "example": "This material is 45% nylon.",
@@ -9182,7 +9182,7 @@ const jhWordsDB = [
   {
     "id": 31021,
     "en": "matter",
-    "kk": "",
+    "kk": "[ˋmætɚ]",
     "zh": "n. 事情",
     "unit": 18,
     "example": "This matter is their concern.",
@@ -9191,7 +9191,7 @@ const jhWordsDB = [
   {
     "id": 31022,
     "en": "maximum",
-    "kk": "",
+    "kk": "[ˋmæksəməm]",
     "zh": "adj. 最多的",
     "unit": 18,
     "example": "Both face maximum forfeitures of about $1.2 million.",
@@ -9200,7 +9200,7 @@ const jhWordsDB = [
   {
     "id": 31023,
     "en": "may",
-    "kk": "",
+    "kk": "[me]",
     "zh": "aux. 可能",
     "unit": 18,
     "example": "That may or may not be true.",
@@ -9209,7 +9209,7 @@ const jhWordsDB = [
   {
     "id": 31024,
     "en": "May",
-    "kk": "",
+    "kk": "[me]",
     "zh": "n. 五月",
     "unit": 18,
     "example": "That may or may not be true.",
@@ -9218,7 +9218,7 @@ const jhWordsDB = [
   {
     "id": 31025,
     "en": "maybe",
-    "kk": "",
+    "kk": "[ˋmebi]",
     "zh": "adv. 也許",
     "unit": 18,
     "example": "Maybe you should socialize more.",
@@ -9227,7 +9227,7 @@ const jhWordsDB = [
   {
     "id": 31026,
     "en": "meal",
-    "kk": "",
+    "kk": "[mil]",
     "zh": "n. 餐",
     "unit": 18,
     "example": "The meal was amazingly cheap.",
@@ -9236,7 +9236,7 @@ const jhWordsDB = [
   {
     "id": 31027,
     "en": "mean",
-    "kk": "",
+    "kk": "[min]",
     "zh": "v. 意指",
     "unit": 18,
     "example": "What does this sentence mean?",
@@ -9245,7 +9245,7 @@ const jhWordsDB = [
   {
     "id": 31028,
     "en": "meaning",
-    "kk": "",
+    "kk": "[ˋminɪŋ]",
     "zh": "n. 意思",
     "unit": 18,
     "example": "What's the meaning of this word?",
@@ -9254,7 +9254,7 @@ const jhWordsDB = [
   {
     "id": 31029,
     "en": "measure",
-    "kk": "",
+    "kk": "[ˋmɛʒɚ]",
     "zh": "v. 測量",
     "unit": 18,
     "example": "He irritated me beyond measure.",
@@ -9263,7 +9263,7 @@ const jhWordsDB = [
   {
     "id": 31030,
     "en": "meat",
-    "kk": "",
+    "kk": "[mit]",
     "zh": "n. 肉類",
     "unit": 18,
     "example": "This meat is extremely tender.",
@@ -9272,7 +9272,7 @@ const jhWordsDB = [
   {
     "id": 31031,
     "en": "mechanic",
-    "kk": "",
+    "kk": "[məˋkænɪk]",
     "zh": "n. 技工",
     "unit": 18,
     "example": "The mechanic located the fault immediately.",
@@ -9281,7 +9281,7 @@ const jhWordsDB = [
   {
     "id": 31032,
     "en": "media",
-    "kk": "",
+    "kk": "[ˋmidiə]",
     "zh": "n. 大眾傳媒",
     "unit": 18,
     "example": "Her car was mobbed by the media.",
@@ -9290,7 +9290,7 @@ const jhWordsDB = [
   {
     "id": 31033,
     "en": "medicine",
-    "kk": "",
+    "kk": "[ˋmɛdəsən]",
     "zh": "n. 藥",
     "unit": 18,
     "example": "Laughter is the best medicine.",
@@ -9299,7 +9299,7 @@ const jhWordsDB = [
   {
     "id": 31034,
     "en": "medium",
-    "kk": "",
+    "kk": "[ˋmidiəm]",
     "zh": "adj. 中等的",
     "unit": 18,
     "example": "There are three sizes—small, medium and large.",
@@ -9308,7 +9308,7 @@ const jhWordsDB = [
   {
     "id": 31035,
     "en": "meet",
-    "kk": "",
+    "kk": "[mit]",
     "zh": "v. 見面",
     "unit": 18,
     "example": "Let's meet on neutral territory.",
@@ -9317,7 +9317,7 @@ const jhWordsDB = [
   {
     "id": 31036,
     "en": "meeting",
-    "kk": "",
+    "kk": "[ˋmitɪŋ]",
     "zh": "n. 會議",
     "unit": 18,
     "example": "The meeting went off well.",
@@ -9326,7 +9326,7 @@ const jhWordsDB = [
   {
     "id": 31037,
     "en": "member",
-    "kk": "",
+    "kk": "[ˋmɛmbɚ]",
     "zh": "n. 會員",
     "unit": 18,
     "example": "He's a member of several London clubs.",
@@ -9335,7 +9335,7 @@ const jhWordsDB = [
   {
     "id": 31038,
     "en": "memory",
-    "kk": "",
+    "kk": "[ˋmɛmɚi]",
     "zh": "n. 記憶",
     "unit": 18,
     "example": "Memory is selective and fallible.",
@@ -9344,7 +9344,7 @@ const jhWordsDB = [
   {
     "id": 31039,
     "en": "menu",
-    "kk": "",
+    "kk": "[ˋmɛnju]",
     "zh": "n. 菜單",
     "unit": 18,
     "example": "The menu included roast grouse.",
@@ -9353,7 +9353,7 @@ const jhWordsDB = [
   {
     "id": 31040,
     "en": "message",
-    "kk": "",
+    "kk": "[ˋmɛsədʒ]",
     "zh": "n. 信息",
     "unit": 18,
     "example": "Message understood. Over and out.",
@@ -9362,7 +9362,7 @@ const jhWordsDB = [
   {
     "id": 31041,
     "en": "metal",
-    "kk": "",
+    "kk": "[ˋmɛtəl]",
     "zh": "n. 金屬",
     "unit": 18,
     "example": "Rust had eaten into the metal.",
@@ -9371,7 +9371,7 @@ const jhWordsDB = [
   {
     "id": 31042,
     "en": "meter",
-    "kk": "",
+    "kk": "[ˋmitɚ]",
     "zh": "n. 公尺",
     "unit": 18,
     "example": "A man came to read the gas meter.",
@@ -9380,7 +9380,7 @@ const jhWordsDB = [
   {
     "id": 31043,
     "en": "method",
-    "kk": "",
+    "kk": "[ˋmɛθəd]",
     "zh": "n. 方法",
     "unit": 18,
     "example": "There is just one method that might work.",
@@ -9389,7 +9389,7 @@ const jhWordsDB = [
   {
     "id": 31044,
     "en": "microwave",
-    "kk": "",
+    "kk": "[ˋmaɪkrə͵wev]",
     "zh": "n. 微波爐",
     "unit": 18,
     "example": "A microwave is a good investment.",
@@ -9398,7 +9398,7 @@ const jhWordsDB = [
   {
     "id": 31045,
     "en": "middle",
-    "kk": "",
+    "kk": "[ˋmɪdəl]",
     "zh": "adj. 中間的",
     "unit": 18,
     "example": "His middle name is Justin.",
@@ -9407,7 +9407,7 @@ const jhWordsDB = [
   {
     "id": 31046,
     "en": "midnight",
-    "kk": "",
+    "kk": "[ˋmɪd͵naɪt]",
     "zh": "n. 午夜",
     "unit": 18,
     "example": "They had to leave at midnight.",
@@ -9416,7 +9416,7 @@ const jhWordsDB = [
   {
     "id": 31047,
     "en": "mile",
-    "kk": "",
+    "kk": "[maɪl]",
     "zh": "n. 英里",
     "unit": 18,
     "example": "After a mile, the slope steepened.",
@@ -9425,7 +9425,7 @@ const jhWordsDB = [
   {
     "id": 31048,
     "en": "milk",
-    "kk": "",
+    "kk": "[mɪlk]",
     "zh": "n. 牛奶",
     "unit": 18,
     "example": "She's gone for some milk.",
@@ -9434,7 +9434,7 @@ const jhWordsDB = [
   {
     "id": 31049,
     "en": "million",
-    "kk": "",
+    "kk": "[ˋmɪljən]",
     "zh": "n. 百萬",
     "unit": 18,
     "example": "Unfilled positions number several million countrywide.",
@@ -9443,7 +9443,7 @@ const jhWordsDB = [
   {
     "id": 31050,
     "en": "mind",
-    "kk": "",
+    "kk": "[maɪnd]",
     "zh": "v. 介意、留意；n. 心智、頭腦",
     "unit": 18,
     "example": "She had a brilliant mind.",
@@ -9452,7 +9452,7 @@ const jhWordsDB = [
   {
     "id": 31051,
     "en": "mine",
-    "kk": "",
+    "kk": "[maɪn]",
     "zh": "n. 礦",
     "unit": 18,
     "example": "He's a distant cousin of mine.",
@@ -9461,7 +9461,7 @@ const jhWordsDB = [
   {
     "id": 31052,
     "en": "minor",
-    "kk": "",
+    "kk": "[ˋmaɪnɚ]",
     "zh": "adj. 次要的",
     "unit": 18,
     "example": "Relatively minor modifications were required.",
@@ -9470,7 +9470,7 @@ const jhWordsDB = [
   {
     "id": 31053,
     "en": "minus",
-    "kk": "",
+    "kk": "[ˋmaɪnəs]",
     "zh": "prep. 減",
     "unit": 18,
     "example": "One minus one is zero.",
@@ -9479,7 +9479,7 @@ const jhWordsDB = [
   {
     "id": 31054,
     "en": "minute",
-    "kk": "",
+    "kk": "[ˋmɪnət]",
     "zh": "n. 分",
     "unit": 18,
     "example": "They arrived barely a minute later.",
@@ -9488,7 +9488,7 @@ const jhWordsDB = [
   {
     "id": 31055,
     "en": "mirror",
-    "kk": "",
+    "kk": "[ˋmɪrɚ]",
     "zh": "n. 鏡子",
     "unit": 18,
     "example": "Steam had clouded the mirror.",
@@ -9497,7 +9497,7 @@ const jhWordsDB = [
   {
     "id": 31056,
     "en": "Miss",
-    "kk": "",
+    "kk": "[mɪs]",
     "zh": "n. 小姐",
     "unit": 18,
     "example": "Miss Brown is our English teacher.",
@@ -9506,7 +9506,7 @@ const jhWordsDB = [
   {
     "id": 31057,
     "en": "miss",
-    "kk": "",
+    "kk": "[mɪs]",
     "zh": "v. 想念、錯過；n. 小姐、少女",
     "unit": 18,
     "example": "Hurry up, or we will miss the bus.",
@@ -9515,7 +9515,7 @@ const jhWordsDB = [
   {
     "id": 31058,
     "en": "mistake",
-    "kk": "",
+    "kk": "[mɪˋstek]",
     "zh": "n. 錯誤",
     "unit": 18,
     "example": "We've made a dreadful mistake.",
@@ -9524,7 +9524,7 @@ const jhWordsDB = [
   {
     "id": 31059,
     "en": "mix",
-    "kk": "",
+    "kk": "[mɪks]",
     "zh": "v. 混合",
     "unit": 18,
     "example": "You can't mix business with pleasure.",
@@ -9533,7 +9533,7 @@ const jhWordsDB = [
   {
     "id": 31060,
     "en": "model",
-    "kk": "",
+    "kk": "[ˋmɑdəl]",
     "zh": "n. 模特兒",
     "unit": 18,
     "example": "I made a full-size cardboard model.",
@@ -9542,7 +9542,7 @@ const jhWordsDB = [
   {
     "id": 31061,
     "en": "modern",
-    "kk": "",
+    "kk": "[ˋmɑdɚn]",
     "zh": "adj. 現代的",
     "unit": 18,
     "example": "She is very modern in outlook.",
@@ -9551,7 +9551,7 @@ const jhWordsDB = [
   {
     "id": 31062,
     "en": "moment",
-    "kk": "",
+    "kk": "[ˋmomənt]",
     "zh": "n. 片刻",
     "unit": 18,
     "example": "It was a really scary moment.",
@@ -9560,7 +9560,7 @@ const jhWordsDB = [
   {
     "id": 31063,
     "en": "Monday",
-    "kk": "",
+    "kk": "[ˋmʌndi]",
     "zh": "n. 星期一",
     "unit": 18,
     "example": "She started work last Monday.",
@@ -9569,7 +9569,7 @@ const jhWordsDB = [
   {
     "id": 31064,
     "en": "money",
-    "kk": "",
+    "kk": "[ˋmʌni]",
     "zh": "n. 錢",
     "unit": 18,
     "example": "Money can't buy you happiness.",
@@ -9578,7 +9578,7 @@ const jhWordsDB = [
   {
     "id": 31065,
     "en": "monkey",
-    "kk": "",
+    "kk": "[ˋmʌŋki]",
     "zh": "n. 猴子",
     "unit": 18,
     "example": "The woolly spider monkey is the largest primate in the Americas.",
@@ -9587,7 +9587,7 @@ const jhWordsDB = [
   {
     "id": 31066,
     "en": "monster",
-    "kk": "",
+    "kk": "[ˋmɑnstɚ]",
     "zh": "n. 妖怪",
     "unit": 18,
     "example": "He drew a monster and coloured it green.",
@@ -9596,7 +9596,7 @@ const jhWordsDB = [
   {
     "id": 31067,
     "en": "month",
-    "kk": "",
+    "kk": "[mʌnθ]",
     "zh": "n. 月份",
     "unit": 18,
     "example": "We're moving house next month.",
@@ -9605,7 +9605,7 @@ const jhWordsDB = [
   {
     "id": 31068,
     "en": "moon",
-    "kk": "",
+    "kk": "[mun]",
     "zh": "n. 月亮",
     "unit": 18,
     "example": "The moon is a satellite of earth.",
@@ -9614,7 +9614,7 @@ const jhWordsDB = [
   {
     "id": 31069,
     "en": "more",
-    "kk": "",
+    "kk": "[mɔr]",
     "zh": "adj. 更多的",
     "unit": 18,
     "example": "More and more people are using the Internet.",
@@ -9623,7 +9623,7 @@ const jhWordsDB = [
   {
     "id": 31070,
     "en": "morning",
-    "kk": "",
+    "kk": "[ˋmɔrnɪŋ]",
     "zh": "n. 早上",
     "unit": 18,
     "example": "I've been sneezing all morning.",
@@ -9632,7 +9632,7 @@ const jhWordsDB = [
   {
     "id": 31071,
     "en": "mop",
-    "kk": "",
+    "kk": "[mɑp]",
     "zh": "n. 拖把",
     "unit": 18,
     "example": "I mop the kitchen floor twice a week.",
@@ -9641,7 +9641,7 @@ const jhWordsDB = [
   {
     "id": 31072,
     "en": "mosquito",
-    "kk": "",
+    "kk": "[məˋskito]",
     "zh": "n. 蚊子",
     "unit": 18,
     "example": "A single mosquito can infect a large number of people.",
@@ -9650,7 +9650,7 @@ const jhWordsDB = [
   {
     "id": 31073,
     "en": "most",
-    "kk": "",
+    "kk": "[most]",
     "zh": "adj. 最多的",
     "unit": 18,
     "example": "Most vegetables contain fibre.",
@@ -9659,7 +9659,7 @@ const jhWordsDB = [
   {
     "id": 31074,
     "en": "mother",
-    "kk": "",
+    "kk": "[ˋmʌðɚ]",
     "zh": "n. 母親",
     "unit": 18,
     "example": "His mother is partially blind.",
@@ -9668,7 +9668,7 @@ const jhWordsDB = [
   {
     "id": 31075,
     "en": "motion",
-    "kk": "",
+    "kk": "[ˋmoʃən]",
     "zh": "n. 動作",
     "unit": 18,
     "example": "Some scenes were filmed in slow motion.",
@@ -9677,7 +9677,7 @@ const jhWordsDB = [
   {
     "id": 31076,
     "en": "motorcycle",
-    "kk": "",
+    "kk": "[ˋmotɚ͵saɪkəl]",
     "zh": "n. 摩托車",
     "unit": 18,
     "example": "They sell used and reconditioned motorcycle parts.",
@@ -9686,7 +9686,7 @@ const jhWordsDB = [
   {
     "id": 31077,
     "en": "mountain",
-    "kk": "",
+    "kk": "[ˋmaʊntən]",
     "zh": "n. 山",
     "unit": 18,
     "example": "He mimed climbing a mountain.",
@@ -9695,7 +9695,7 @@ const jhWordsDB = [
   {
     "id": 31078,
     "en": "mouse",
-    "kk": "",
+    "kk": "[maʊs]",
     "zh": "n. 老鼠",
     "unit": 18,
     "example": "He moves the cursor, clicks the mouse.",
@@ -9704,7 +9704,7 @@ const jhWordsDB = [
   {
     "id": 31079,
     "en": "mouth",
-    "kk": "",
+    "kk": "[maʊθ]",
     "zh": "n. 嘴巴",
     "unit": 18,
     "example": "My mouth felt completely dry.",
@@ -9713,7 +9713,7 @@ const jhWordsDB = [
   {
     "id": 31080,
     "en": "move",
-    "kk": "",
+    "kk": "[muv]",
     "zh": "v. 移動",
     "unit": 18,
     "example": "I can't move my fingers.",
@@ -9722,7 +9722,7 @@ const jhWordsDB = [
   {
     "id": 31081,
     "en": "movement",
-    "kk": "",
+    "kk": "[ˋmuvmənt]",
     "zh": "n. 動作",
     "unit": 18,
     "example": "They were watching her every movement.",
@@ -9731,7 +9731,7 @@ const jhWordsDB = [
   {
     "id": 31082,
     "en": "movie",
-    "kk": "",
+    "kk": "[ˋmuvi]",
     "zh": "n. 電影",
     "unit": 18,
     "example": "That movie was really wack.",
@@ -9740,7 +9740,7 @@ const jhWordsDB = [
   {
     "id": 31083,
     "en": "Mr.",
-    "kk": "",
+    "kk": "[ˋmɪstɚ]",
     "zh": "n. 先生",
     "unit": 18,
     "example": "Mr. Ryan is confident of success.",
@@ -9749,7 +9749,7 @@ const jhWordsDB = [
   {
     "id": 31084,
     "en": "MRT",
-    "kk": "",
+    "kk": "[ˋɛmˋɑrˋti]",
     "zh": "n. 捷運",
     "unit": 18,
     "example": "I got there by MRT.",
@@ -9758,7 +9758,7 @@ const jhWordsDB = [
   {
     "id": 31085,
     "en": "mud",
-    "kk": "",
+    "kk": "[mʌd]",
     "zh": "n. 泥濘",
     "unit": 18,
     "example": "Your boots are covered in mud.",
@@ -9767,7 +9767,7 @@ const jhWordsDB = [
   {
     "id": 31086,
     "en": "mug",
-    "kk": "",
+    "kk": "[mʌɡ]",
     "zh": "n. 馬克杯",
     "unit": 18,
     "example": "The mug tipped over, spilling hot coffee everywhere.",
@@ -9776,7 +9776,7 @@ const jhWordsDB = [
   {
     "id": 31087,
     "en": "museum",
-    "kk": "",
+    "kk": "[mjuˋziəm]",
     "zh": "n. 博物館",
     "unit": 18,
     "example": "The museum is open Mon.-Sun.",
@@ -9785,7 +9785,7 @@ const jhWordsDB = [
   {
     "id": 31088,
     "en": "music",
-    "kk": "",
+    "kk": "[ˋmjuzɪk]",
     "zh": "n. 音樂",
     "unit": 18,
     "example": "They played some Cajun music.",
@@ -9794,7 +9794,7 @@ const jhWordsDB = [
   {
     "id": 31089,
     "en": "musician",
-    "kk": "",
+    "kk": "[mjuˋzɪʃən]",
     "zh": "n. 音樂家",
     "unit": 18,
     "example": "He was a brilliant musician.",
@@ -9803,7 +9803,7 @@ const jhWordsDB = [
   {
     "id": 31090,
     "en": "must",
-    "kk": "",
+    "kk": "[mʌst]",
     "zh": "aux. 必須",
     "unit": 18,
     "example": "We must set realistic goals.",
@@ -9812,7 +9812,7 @@ const jhWordsDB = [
   {
     "id": 31091,
     "en": "nail",
-    "kk": "",
+    "kk": "[nel]",
     "zh": "n. 釘子",
     "unit": 18,
     "example": "This nail won't come out.",
@@ -9821,7 +9821,7 @@ const jhWordsDB = [
   {
     "id": 31092,
     "en": "name",
-    "kk": "/neɪm/",
+    "kk": "[nem]",
     "zh": "n. 名字",
     "unit": 18,
     "example": "Is your name hyphenated?",
@@ -9830,7 +9830,7 @@ const jhWordsDB = [
   {
     "id": 31093,
     "en": "napkin",
-    "kk": "",
+    "kk": "[ˋnæpkɪn]",
     "zh": "n. 餐巾",
     "unit": 18,
     "example": "Her father cleaned his glasses with a paper napkin.",
@@ -9839,7 +9839,7 @@ const jhWordsDB = [
   {
     "id": 31094,
     "en": "narrow",
-    "kk": "",
+    "kk": "[ˋnɛro]",
     "zh": "adj. 狹窄的",
     "unit": 18,
     "example": "He turned into a narrow street.",
@@ -9848,7 +9848,7 @@ const jhWordsDB = [
   {
     "id": 31095,
     "en": "nation",
-    "kk": "/ˈneɪʃn/",
+    "kk": "[ˋneʃən]",
     "zh": "n. 國家",
     "unit": 18,
     "example": "The article captured the mood of the nation.",
@@ -9857,7 +9857,7 @@ const jhWordsDB = [
   {
     "id": 31096,
     "en": "national",
-    "kk": "",
+    "kk": "[ˋnæʃənəl]",
     "zh": "adj. 國家的",
     "unit": 18,
     "example": "The area has been declared a national park.",
@@ -9866,7 +9866,7 @@ const jhWordsDB = [
   {
     "id": 31097,
     "en": "natural",
-    "kk": "/ˈnætʃərəl/",
+    "kk": "[ˋnætʃɚəl]",
     "zh": "adj. 自然的",
     "unit": 18,
     "example": "She is a natural athlete.",
@@ -9875,7 +9875,7 @@ const jhWordsDB = [
   {
     "id": 31098,
     "en": "nature",
-    "kk": "/ˈneɪtʃər/",
+    "kk": "[ˋnetʃɚ]",
     "zh": "n. 自然",
     "unit": 18,
     "example": "Violence is not in his nature.",
@@ -9884,7 +9884,7 @@ const jhWordsDB = [
   {
     "id": 31099,
     "en": "naughty",
-    "kk": "",
+    "kk": "[ˋnɔti]",
     "zh": "adj. 頑皮的",
     "unit": 18,
     "example": "Girls, you're being very naughty.",
@@ -9893,7 +9893,7 @@ const jhWordsDB = [
   {
     "id": 31100,
     "en": "near",
-    "kk": "/nɪr/",
+    "kk": "[nɪr]",
     "zh": "adj. 接近的",
     "unit": 18,
     "example": "His stables are near Oxford.",
@@ -9902,7 +9902,7 @@ const jhWordsDB = [
   {
     "id": 31101,
     "en": "nearly",
-    "kk": "",
+    "kk": "[ˋnɪrli]",
     "zh": "adv. 幾乎",
     "unit": 18,
     "example": "The beach was nearly empty.",
@@ -9911,7 +9911,7 @@ const jhWordsDB = [
   {
     "id": 31102,
     "en": "necessary",
-    "kk": "/ˈnesəseri/",
+    "kk": "[ˋnɛsə͵sɛri]",
     "zh": "adj. 必要的",
     "unit": 18,
     "example": "Military action may become necessary.",
@@ -9920,7 +9920,7 @@ const jhWordsDB = [
   {
     "id": 31103,
     "en": "neck",
-    "kk": "/nek/",
+    "kk": "[nɛk]",
     "zh": "n. 脖子",
     "unit": 18,
     "example": "Her arms crept around his neck.",
@@ -9929,7 +9929,7 @@ const jhWordsDB = [
   {
     "id": 31104,
     "en": "necklace",
-    "kk": "",
+    "kk": "[ˋnɛkləs]",
     "zh": "n. 項鍊",
     "unit": 18,
     "example": "When did you first miss the necklace?",
@@ -9938,7 +9938,7 @@ const jhWordsDB = [
   {
     "id": 31105,
     "en": "need",
-    "kk": "/niːd/",
+    "kk": "[nid]",
     "zh": "v. 需要",
     "unit": 18,
     "example": "We need more storage now.",
@@ -9947,7 +9947,7 @@ const jhWordsDB = [
   {
     "id": 31106,
     "en": "needle",
-    "kk": "",
+    "kk": "[ˋnidəl]",
     "zh": "n. 針",
     "unit": 18,
     "example": "A compass needle points north.",
@@ -9956,7 +9956,7 @@ const jhWordsDB = [
   {
     "id": 31107,
     "en": "negative",
-    "kk": "",
+    "kk": "[ˋnɛɡətɪv]",
     "zh": "adj. 負面的",
     "unit": 18,
     "example": "They received a negative reply.",
@@ -9965,7 +9965,7 @@ const jhWordsDB = [
   {
     "id": 31108,
     "en": "neighbor",
-    "kk": "/ˈneɪbər/",
+    "kk": "[ˋnebɚ]",
     "zh": "n. 鄰居",
     "unit": 18,
     "example": "My neighbor is a doctor.",
@@ -9974,7 +9974,7 @@ const jhWordsDB = [
   {
     "id": 31109,
     "en": "neither",
-    "kk": "/ˈniːðər/",
+    "kk": "[ˋniðɚ]",
     "zh": "adv. 既不...也不",
     "unit": 18,
     "example": "She seemed neither surprised nor worried.",
@@ -9983,7 +9983,7 @@ const jhWordsDB = [
   {
     "id": 31110,
     "en": "nephew",
-    "kk": "",
+    "kk": "[ˋnɛfju]",
     "zh": "n. 姪子,外甥",
     "unit": 18,
     "example": "He entrusted the task to his nephew.",
@@ -9992,7 +9992,7 @@ const jhWordsDB = [
   {
     "id": 31111,
     "en": "nervous",
-    "kk": "",
+    "kk": "[ˋnɝvəs]",
     "zh": "adj. 緊張的",
     "unit": 18,
     "example": "He's not the nervous type.",
@@ -10001,7 +10001,7 @@ const jhWordsDB = [
   {
     "id": 31112,
     "en": "nest",
-    "kk": "",
+    "kk": "[nɛst]",
     "zh": "n. 鳥巢",
     "unit": 18,
     "example": "The owl seems to have deserted its nest.",
@@ -10010,7 +10010,7 @@ const jhWordsDB = [
   {
     "id": 31113,
     "en": "never",
-    "kk": "/ˈnevər/",
+    "kk": "[ˋnɛvɚ]",
     "zh": "adv. 從未",
     "unit": 18,
     "example": "Her determination never wavered.",
@@ -10019,7 +10019,7 @@ const jhWordsDB = [
   {
     "id": 31114,
     "en": "new",
-    "kk": "/nuː/",
+    "kk": "[nu]",
     "zh": "adj. 新的",
     "unit": 18,
     "example": "New England is beautiful.",
@@ -10028,7 +10028,7 @@ const jhWordsDB = [
   {
     "id": 31115,
     "en": "news",
-    "kk": "/nuːz/",
+    "kk": "[nuz]",
     "zh": "n. 新聞",
     "unit": 18,
     "example": "The news lifted our spirits.",
@@ -10037,7 +10037,7 @@ const jhWordsDB = [
   {
     "id": 31116,
     "en": "newspaper",
-    "kk": "",
+    "kk": "[ˋnuz͵pepɚ]",
     "zh": "n. 報紙",
     "unit": 18,
     "example": "May I borrow your newspaper?",
@@ -10046,7 +10046,7 @@ const jhWordsDB = [
   {
     "id": 31117,
     "en": "next",
-    "kk": "/nekst/",
+    "kk": "[nɛkst]",
     "zh": "adj. 下一個的",
     "unit": 18,
     "example": "When is your next appointment?",
@@ -10055,7 +10055,7 @@ const jhWordsDB = [
   {
     "id": 31118,
     "en": "nice",
-    "kk": "/naɪs/",
+    "kk": "[naɪs]",
     "zh": "adj. 友善的",
     "unit": 18,
     "example": "It's been nice meeting you.",
@@ -10064,7 +10064,7 @@ const jhWordsDB = [
   {
     "id": 31119,
     "en": "niece",
-    "kk": "",
+    "kk": "[nis]",
     "zh": "n. 姪女,甥女",
     "unit": 18,
     "example": "He looked affectionately at his niece.",
@@ -10073,7 +10073,7 @@ const jhWordsDB = [
   {
     "id": 31120,
     "en": "night",
-    "kk": "/naɪt/",
+    "kk": "[naɪt]",
     "zh": "n. 夜晚",
     "unit": 18,
     "example": "I couldn't sleep last night.",
@@ -10082,7 +10082,7 @@ const jhWordsDB = [
   {
     "id": 31121,
     "en": "nine",
-    "kk": "/naɪn/",
+    "kk": "[naɪn]",
     "zh": "n. 九",
     "unit": 18,
     "example": "We still sighted nine yachts.",
@@ -10091,7 +10091,7 @@ const jhWordsDB = [
   {
     "id": 31122,
     "en": "nineteen",
-    "kk": "",
+    "kk": "[ˋnaɪnˋtin]",
     "zh": "n. 十九",
     "unit": 18,
     "example": "They have nineteen days to make up their minds.",
@@ -10100,7 +10100,7 @@ const jhWordsDB = [
   {
     "id": 31123,
     "en": "ninety",
-    "kk": "",
+    "kk": "[ˋnaɪnti]",
     "zh": "n. 九十",
     "unit": 18,
     "example": "Her weight was under ninety pounds.",
@@ -10109,7 +10109,7 @@ const jhWordsDB = [
   {
     "id": 31124,
     "en": "no",
-    "kk": "",
+    "kk": "[no]",
     "zh": "adv. 不",
     "unit": 18,
     "example": "She had no money coming in and no funds.",
@@ -10118,7 +10118,7 @@ const jhWordsDB = [
   {
     "id": 31125,
     "en": "nod",
-    "kk": "",
+    "kk": "[nɑd]",
     "zh": "v. 點頭",
     "unit": 18,
     "example": "Don't let yon dog nod off.",
@@ -10127,7 +10127,7 @@ const jhWordsDB = [
   {
     "id": 31126,
     "en": "noise",
-    "kk": "/nɔɪz/",
+    "kk": "[nɔɪz]",
     "zh": "n. 噪音",
     "unit": 18,
     "example": "The noise outside wakened her.",
@@ -10136,7 +10136,7 @@ const jhWordsDB = [
   {
     "id": 31127,
     "en": "noisy",
-    "kk": "",
+    "kk": "[ˋnɔɪzi]",
     "zh": "adj. 吵雜的",
     "unit": 18,
     "example": "Our next-door neighbours are very noisy.",
@@ -10145,7 +10145,7 @@ const jhWordsDB = [
   {
     "id": 31128,
     "en": "none",
-    "kk": "/nʌn/",
+    "kk": "[nʌn]",
     "zh": "pron. 沒有人",
     "unit": 18,
     "example": "None of them could sing in tune.",
@@ -10154,7 +10154,7 @@ const jhWordsDB = [
   {
     "id": 31129,
     "en": "noodle",
-    "kk": "",
+    "kk": "[ˋnudəl]",
     "zh": "n. 麵條",
     "unit": 18,
     "example": "They have two restaurants that purvey dumplings and chicken noodle soup.",
@@ -10163,7 +10163,7 @@ const jhWordsDB = [
   {
     "id": 31130,
     "en": "noon",
-    "kk": "",
+    "kk": "[nun]",
     "zh": "n. 中午",
     "unit": 18,
     "example": "I'm leaving on the noon train.",
@@ -10172,7 +10172,7 @@ const jhWordsDB = [
   {
     "id": 31131,
     "en": "nor",
-    "kk": "",
+    "kk": "[nɔr]",
     "zh": "conj. 也不",
     "unit": 18,
     "example": "She seemed neither surprised nor worried.",
@@ -10181,7 +10181,7 @@ const jhWordsDB = [
   {
     "id": 31132,
     "en": "north",
-    "kk": "/nɔːrθ/",
+    "kk": "[nɔrθ]",
     "zh": "n. 北方",
     "unit": 18,
     "example": "A compass needle points north.",
@@ -10190,7 +10190,7 @@ const jhWordsDB = [
   {
     "id": 31133,
     "en": "nose",
-    "kk": "/noʊz/",
+    "kk": "[noz]",
     "zh": "n. 鼻子",
     "unit": 18,
     "example": "I wrinkled my nose in disgust.",
@@ -10199,7 +10199,7 @@ const jhWordsDB = [
   {
     "id": 31134,
     "en": "not",
-    "kk": "/nɑːt/",
+    "kk": "[nɑt]",
     "zh": "adv. 不是",
     "unit": 18,
     "example": "It's not over yet—not by a long chalk.",
@@ -10208,7 +10208,7 @@ const jhWordsDB = [
   {
     "id": 31135,
     "en": "note",
-    "kk": "/noʊt/",
+    "kk": "[not]",
     "zh": "n. 便條",
     "unit": 18,
     "example": "Someone left this note for you.",
@@ -10217,7 +10217,7 @@ const jhWordsDB = [
   {
     "id": 31136,
     "en": "notebook",
-    "kk": "",
+    "kk": "[ˋnot͵bʊk]",
     "zh": "n. 筆記本",
     "unit": 18,
     "example": "Bob whipped out his notebook.",
@@ -10226,7 +10226,7 @@ const jhWordsDB = [
   {
     "id": 31137,
     "en": "nothing",
-    "kk": "/ˈnʌθɪŋ/",
+    "kk": "[ˋnʌθɪŋ]",
     "zh": "pron. 沒有什麼",
     "unit": 18,
     "example": "Sam shrugged and said nothing.",
@@ -10235,7 +10235,7 @@ const jhWordsDB = [
   {
     "id": 31138,
     "en": "notice",
-    "kk": "/ˈnoʊtɪs/",
+    "kk": "[ˋnotəs]",
     "zh": "v. 注意到",
     "unit": 18,
     "example": "He pretended not to notice.",
@@ -10244,7 +10244,7 @@ const jhWordsDB = [
   {
     "id": 31139,
     "en": "novel",
-    "kk": "",
+    "kk": "[ˋnɑvəl]",
     "zh": "n. 小說",
     "unit": 18,
     "example": "Have you read her new novel?",
@@ -10253,7 +10253,7 @@ const jhWordsDB = [
   {
     "id": 31140,
     "en": "November",
-    "kk": "",
+    "kk": "[noˋvɛmbɚ]",
     "zh": "n. 十一月",
     "unit": 18,
     "example": "She left back in November.",
@@ -10262,7 +10262,7 @@ const jhWordsDB = [
   {
     "id": 31141,
     "en": "now",
-    "kk": "/naʊ/",
+    "kk": "[naʊ]",
     "zh": "adv. 現在",
     "unit": 18,
     "example": "She's in kindergarten now.",
@@ -10271,7 +10271,7 @@ const jhWordsDB = [
   {
     "id": 31142,
     "en": "number",
-    "kk": "/ˈnʌmbər/",
+    "kk": "[ˋnʌmbɚ]",
     "zh": "n. 數字",
     "unit": 18,
     "example": "My phone number is 266998.",
@@ -10280,7 +10280,7 @@ const jhWordsDB = [
   {
     "id": 31143,
     "en": "nurse",
-    "kk": "",
+    "kk": "[nɝs]",
     "zh": "n. 護士",
     "unit": 18,
     "example": "The nurse cleaned the wound.",
@@ -10289,7 +10289,7 @@ const jhWordsDB = [
   {
     "id": 31144,
     "en": "nut",
-    "kk": "",
+    "kk": "[nʌt]",
     "zh": "n. 堅果",
     "unit": 18,
     "example": "Plant fruit and nut trees.",
@@ -10298,7 +10298,7 @@ const jhWordsDB = [
   {
     "id": 31145,
     "en": "obey",
-    "kk": "",
+    "kk": "[oˋbe]",
     "zh": "v. 聽從",
     "unit": 18,
     "example": "It was his duty to obey.",
@@ -10307,7 +10307,7 @@ const jhWordsDB = [
   {
     "id": 31146,
     "en": "object",
-    "kk": "/ˈɑːbdʒɪkt/",
+    "kk": "[ˋɑbdʒɛkt]",
     "zh": "n. 物體",
     "unit": 18,
     "example": "A rock is an inanimate object.",
@@ -10316,7 +10316,7 @@ const jhWordsDB = [
   {
     "id": 31147,
     "en": "ocean",
-    "kk": "/ˈoʊʃn/",
+    "kk": "[ˋoʃən]",
     "zh": "n. 海洋",
     "unit": 18,
     "example": "The grey ocean seethed beneath them.",
@@ -10325,7 +10325,7 @@ const jhWordsDB = [
   {
     "id": 31148,
     "en": "o'clock",
-    "kk": "",
+    "kk": "[əkˋlɑk]",
     "zh": "adv. ...點鐘",
     "unit": 18,
     "example": "The clock said three o'clock.",
@@ -10334,7 +10334,7 @@ const jhWordsDB = [
   {
     "id": 31149,
     "en": "October",
-    "kk": "",
+    "kk": "[ɑkˋtobɚ]",
     "zh": "n. 十月",
     "unit": 18,
     "example": "The film festival takes place in October.",
@@ -10343,7 +10343,7 @@ const jhWordsDB = [
   {
     "id": 31150,
     "en": "of",
-    "kk": "/ʌv/",
+    "kk": "[ʌv]",
     "zh": "prep. ...的",
     "unit": 18,
     "example": "One of the penalties of fame is loss of privacy.",
@@ -10352,7 +10352,7 @@ const jhWordsDB = [
   {
     "id": 31151,
     "en": "off",
-    "kk": "/ɔːf/",
+    "kk": "[ɔf]",
     "zh": "prep. 從...離開",
     "unit": 18,
     "example": "The wedding is off.",
@@ -10361,7 +10361,7 @@ const jhWordsDB = [
   {
     "id": 31152,
     "en": "offer",
-    "kk": "/ˈɔːfər/",
+    "kk": "[ˋɔfɚ]",
     "zh": "v. 提出",
     "unit": 18,
     "example": "We offer free technical support.",
@@ -10370,7 +10370,7 @@ const jhWordsDB = [
   {
     "id": 31153,
     "en": "office",
-    "kk": "/ˈɔːfɪs/",
+    "kk": "[ˋɔfɪs]",
     "zh": "n. 辦公室",
     "unit": 18,
     "example": "Moira bounced into the office.",
@@ -10379,7 +10379,7 @@ const jhWordsDB = [
   {
     "id": 31154,
     "en": "officer",
-    "kk": "",
+    "kk": "[ˋɔfəsɚ]",
     "zh": "n. 警官,官員",
     "unit": 18,
     "example": "The officer radioed for advice.",
@@ -10388,7 +10388,7 @@ const jhWordsDB = [
   {
     "id": 31155,
     "en": "often",
-    "kk": "/ˈɔːfən/",
+    "kk": "[ˋɔfən]",
     "zh": "adv. 經常",
     "unit": 18,
     "example": "She often goes around barefoot.",
@@ -10397,7 +10397,7 @@ const jhWordsDB = [
   {
     "id": 31156,
     "en": "oil",
-    "kk": "/ɔɪl/",
+    "kk": "[ɔɪl]",
     "zh": "n. 石油",
     "unit": 18,
     "example": "The price of oil increased.",
@@ -10406,7 +10406,7 @@ const jhWordsDB = [
   {
     "id": 31157,
     "en": "okay",
-    "kk": "",
+    "kk": "[͵oˋke]",
     "zh": "adj. 可以的",
     "unit": 18,
     "example": "Okay, there is a slight difference.",
@@ -10415,7 +10415,7 @@ const jhWordsDB = [
   {
     "id": 31158,
     "en": "old",
-    "kk": "/oʊld/",
+    "kk": "[old]",
     "zh": "adj. 老的",
     "unit": 18,
     "example": "The old man spoke deferentially.",
@@ -10424,7 +10424,7 @@ const jhWordsDB = [
   {
     "id": 31159,
     "en": "omit",
-    "kk": "",
+    "kk": "[oˋmɪt]",
     "zh": "v. 省略",
     "unit": 18,
     "example": "If you are a student, you can omit questions 16–18.",
@@ -10433,7 +10433,7 @@ const jhWordsDB = [
   {
     "id": 31160,
     "en": "on",
-    "kk": "/ɑːn/",
+    "kk": "[ɑn]",
     "zh": "prep. 在...上面",
     "unit": 18,
     "example": "She went on and on about her trip.",
@@ -10442,7 +10442,7 @@ const jhWordsDB = [
   {
     "id": 31161,
     "en": "once",
-    "kk": "/wʌns/",
+    "kk": "[wʌns]",
     "zh": "adv. 一次",
     "unit": 18,
     "example": "I met Miquela once, briefly.",
@@ -10451,7 +10451,7 @@ const jhWordsDB = [
   {
     "id": 31162,
     "en": "one",
-    "kk": "/wʌn/",
+    "kk": "[wʌn]",
     "zh": "adj. 一個的",
     "unit": 18,
     "example": "One minus one is zero.",
@@ -10460,7 +10460,7 @@ const jhWordsDB = [
   {
     "id": 31163,
     "en": "onion",
-    "kk": "",
+    "kk": "[ˋʌnjən]",
     "zh": "n. 洋蔥",
     "unit": 18,
     "example": "I sliced up an onion.",
@@ -10469,7 +10469,7 @@ const jhWordsDB = [
   {
     "id": 31164,
     "en": "only",
-    "kk": "/ˈoʊnli/",
+    "kk": "[ˋonli]",
     "zh": "adj. 唯一的",
     "unit": 18,
     "example": "Only the yolk contains cholesterol.",
@@ -10478,7 +10478,7 @@ const jhWordsDB = [
   {
     "id": 31165,
     "en": "open",
-    "kk": "/ˈoʊpən/",
+    "kk": "[ˋopən]",
     "zh": "v. 打開",
     "unit": 18,
     "example": "The door squeaked open.",
@@ -10487,7 +10487,7 @@ const jhWordsDB = [
   {
     "id": 31166,
     "en": "operate",
-    "kk": "/ˈɑːpəreɪt/",
+    "kk": "[ˋɑpɚ͵et]",
     "zh": "v. 操作",
     "unit": 18,
     "example": "They operate franchises in London and Paris.",
@@ -10496,7 +10496,7 @@ const jhWordsDB = [
   {
     "id": 31167,
     "en": "opinion",
-    "kk": "/əˈpɪnjən/",
+    "kk": "[əˋpɪnjən]",
     "zh": "n. 意見",
     "unit": 18,
     "example": "We'll need an expert opinion.",
@@ -10505,7 +10505,7 @@ const jhWordsDB = [
   {
     "id": 31168,
     "en": "or",
-    "kk": "/ɔːr/",
+    "kk": "[ɔr]",
     "zh": "conj. 或者",
     "unit": 18,
     "example": "I don't drink whisky or brandy or any other spirits.",
@@ -10514,7 +10514,7 @@ const jhWordsDB = [
   {
     "id": 31169,
     "en": "orange",
-    "kk": "",
+    "kk": "[ˋɔrəndʒ]",
     "zh": "n. 柑橘",
     "unit": 18,
     "example": "I plucked an orange from the tree.",
@@ -10523,7 +10523,7 @@ const jhWordsDB = [
   {
     "id": 31170,
     "en": "order",
-    "kk": "/ˈɔːrdər/",
+    "kk": "[ˋɔrdɚ]",
     "zh": "n. 命令",
     "unit": 18,
     "example": "She barked out an order.",
@@ -10532,7 +10532,7 @@ const jhWordsDB = [
   {
     "id": 31171,
     "en": "ordinary",
-    "kk": "/ˈɔːrdəneri/",
+    "kk": "[ˋɔrdə͵nɛri]",
     "zh": "adj. 普通的",
     "unit": 18,
     "example": "The meal was very ordinary.",
@@ -10541,7 +10541,7 @@ const jhWordsDB = [
   {
     "id": 31172,
     "en": "organ",
-    "kk": "",
+    "kk": "[ˋɔrɡən]",
     "zh": "n. 器官",
     "unit": 18,
     "example": "The largest organ in the body is the liver.",
@@ -10550,7 +10550,7 @@ const jhWordsDB = [
   {
     "id": 31173,
     "en": "organization",
-    "kk": "/ˌɔːrɡənəˈzeɪʃn/",
+    "kk": "[͵ɔrɡənəˋzeʃən]",
     "zh": "n. 機構",
     "unit": 18,
     "example": "The organization is heavily overspent.",
@@ -10559,7 +10559,7 @@ const jhWordsDB = [
   {
     "id": 31174,
     "en": "other",
-    "kk": "/ˈʌðər/",
+    "kk": "[ˋʌðɚ]",
     "zh": "adj. 其他的",
     "unit": 18,
     "example": "Are there any other questions?",
@@ -10568,7 +10568,7 @@ const jhWordsDB = [
   {
     "id": 31175,
     "en": "out",
-    "kk": "/aʊt/",
+    "kk": "[aʊt]",
     "zh": "adv. 向外",
     "unit": 18,
     "example": "The flame sputters out.",
@@ -10577,7 +10577,7 @@ const jhWordsDB = [
   {
     "id": 31176,
     "en": "outside",
-    "kk": "/ˌaʊtˈsaɪd/",
+    "kk": "[ˋaʊtˋsaɪd]",
     "zh": "adv. 在外面",
     "unit": 18,
     "example": "Outside it was bitterly cold.",
@@ -10586,7 +10586,7 @@ const jhWordsDB = [
   {
     "id": 31177,
     "en": "oven",
-    "kk": "",
+    "kk": "[ˋʌvən]",
     "zh": "n. 烤箱",
     "unit": 18,
     "example": "Nobody relishes cleaning the oven.",
@@ -10595,7 +10595,7 @@ const jhWordsDB = [
   {
     "id": 31178,
     "en": "over",
-    "kk": "/ˈoʊvər/",
+    "kk": "[ˋovɚ]",
     "zh": "prep. 在...之上",
     "unit": 18,
     "example": "He plays the same songs over and over.",
@@ -10604,7 +10604,7 @@ const jhWordsDB = [
   {
     "id": 31179,
     "en": "overseas",
-    "kk": "",
+    "kk": "[ˋovɚˋsiz]",
     "zh": "adv. 在國外",
     "unit": 18,
     "example": "Nearly half the students come from overseas.",
@@ -10613,7 +10613,7 @@ const jhWordsDB = [
   {
     "id": 31180,
     "en": "own",
-    "kk": "/oʊn/",
+    "kk": "[on]",
     "zh": "v. 擁有",
     "unit": 18,
     "example": "She makes her own clothes.",
@@ -10622,7 +10622,7 @@ const jhWordsDB = [
   {
     "id": 31181,
     "en": "owner",
-    "kk": "",
+    "kk": "[ˋonɚ]",
     "zh": "n. 物主",
     "unit": 18,
     "example": "The dog looked mournfully after its owner.",
@@ -10631,7 +10631,7 @@ const jhWordsDB = [
   {
     "id": 31182,
     "en": "ox",
-    "kk": "",
+    "kk": "[ɑks]",
     "zh": "n. 公牛",
     "unit": 18,
     "example": "Seven sheep and eight ox.",
@@ -10640,7 +10640,7 @@ const jhWordsDB = [
   {
     "id": 31183,
     "en": "pack",
-    "kk": "/pæk/",
+    "kk": "[pæk]",
     "zh": "v. 打包",
     "unit": 18,
     "example": "All joiners will receive a welcome pack.",
@@ -10649,7 +10649,7 @@ const jhWordsDB = [
   {
     "id": 31184,
     "en": "package",
-    "kk": "",
+    "kk": "[ˋpækədʒ]",
     "zh": "n. 包裹",
     "unit": 18,
     "example": "I tore the package open.",
@@ -10658,7 +10658,7 @@ const jhWordsDB = [
   {
     "id": 31185,
     "en": "page",
-    "kk": "/peɪdʒ/",
+    "kk": "[pedʒ]",
     "zh": "n. 頁",
     "unit": 18,
     "example": "I ran my eyes over the page.",
@@ -10667,7 +10667,7 @@ const jhWordsDB = [
   {
     "id": 31186,
     "en": "pain",
-    "kk": "/peɪn/",
+    "kk": "[pen]",
     "zh": "n. 痛苦",
     "unit": 18,
     "example": "The pain was receding slightly.",
@@ -10676,7 +10676,7 @@ const jhWordsDB = [
   {
     "id": 31187,
     "en": "painful",
-    "kk": "",
+    "kk": "[ˋpenfəl]",
     "zh": "adj. 痛苦的",
     "unit": 18,
     "example": "Her glands were swollen and painful.",
@@ -10685,7 +10685,7 @@ const jhWordsDB = [
   {
     "id": 31188,
     "en": "paint",
-    "kk": "/peɪnt/",
+    "kk": "[pent]",
     "zh": "v. 畫圖",
     "unit": 18,
     "example": "Why do people paint pictures?",
@@ -10694,7 +10694,7 @@ const jhWordsDB = [
   {
     "id": 31189,
     "en": "painter",
-    "kk": "",
+    "kk": "[ˋpentɚ]",
     "zh": "n. 畫家",
     "unit": 18,
     "example": "His father was a painter.",
@@ -10703,7 +10703,7 @@ const jhWordsDB = [
   {
     "id": 31190,
     "en": "pair",
-    "kk": "/per/",
+    "kk": "[pɛr]",
     "zh": "n. 一對",
     "unit": 18,
     "example": "Maximo put on a pair of glasses.",
@@ -10712,7 +10712,7 @@ const jhWordsDB = [
   {
     "id": 31191,
     "en": "pajamas",
-    "kk": "",
+    "kk": "[pəˋdʒɑməz]",
     "zh": "n. 睡衣",
     "unit": 18,
     "example": "We also need some pajamas.",
@@ -10721,7 +10721,7 @@ const jhWordsDB = [
   {
     "id": 31192,
     "en": "pale",
-    "kk": "",
+    "kk": "[pel]",
     "zh": "adj. 蒼白的",
     "unit": 18,
     "example": "Rachel looked pale and weary.",
@@ -10730,7 +10730,7 @@ const jhWordsDB = [
   {
     "id": 31193,
     "en": "pan",
-    "kk": "",
+    "kk": "[pæn]",
     "zh": "n. 平底鍋",
     "unit": 18,
     "example": "Oh hell, I've burned the pan.",
@@ -10739,7 +10739,7 @@ const jhWordsDB = [
   {
     "id": 31194,
     "en": "panda",
-    "kk": "",
+    "kk": "[ˋpændə]",
     "zh": "n. 貓熊",
     "unit": 18,
     "example": "The panda is a shy creature.",
@@ -10748,7 +10748,7 @@ const jhWordsDB = [
   {
     "id": 31195,
     "en": "pants",
-    "kk": "",
+    "kk": "[pænts]",
     "zh": "n. 褲子",
     "unit": 18,
     "example": "Don't tell me you've split another pair of pants!",
@@ -10757,7 +10757,7 @@ const jhWordsDB = [
   {
     "id": 31196,
     "en": "papaya",
-    "kk": "",
+    "kk": "[pəˋpaɪə]",
     "zh": "n. 木瓜",
     "unit": 18,
     "example": "Apply papaya pulp on the skin.",
@@ -10766,7 +10766,7 @@ const jhWordsDB = [
   {
     "id": 31197,
     "en": "paper",
-    "kk": "/ˈpeɪpər/",
+    "kk": "[ˋpepɚ]",
     "zh": "n. 紙",
     "unit": 18,
     "example": "He folded the paper carefully.",
@@ -10775,7 +10775,7 @@ const jhWordsDB = [
   {
     "id": 31198,
     "en": "pardon",
-    "kk": "",
+    "kk": "[ˋpɑrdən]",
     "zh": "n. 原諒",
     "unit": 18,
     "example": "I must crave your pardon.",
@@ -10784,7 +10784,7 @@ const jhWordsDB = [
   {
     "id": 31199,
     "en": "parent",
-    "kk": "/ˈperənt/",
+    "kk": "[ˋpɛrənt]",
     "zh": "n. 父親(或母親)",
     "unit": 18,
     "example": "I'm wearing two hats tonight—parent and teacher.",
@@ -10793,7 +10793,7 @@ const jhWordsDB = [
   {
     "id": 31200,
     "en": "park",
-    "kk": "/pɑːrk/",
+    "kk": "[pɑrk]",
     "zh": "n. 公園",
     "unit": 18,
     "example": "Families were strolling around the park.",
@@ -10802,7 +10802,7 @@ const jhWordsDB = [
   {
     "id": 31201,
     "en": "parrot",
-    "kk": "",
+    "kk": "[ˋpɛrət]",
     "zh": "n. 鸚鵡",
     "unit": 18,
     "example": "Generations of students have learned to parrot the standard explanations.",
@@ -10811,7 +10811,7 @@ const jhWordsDB = [
   {
     "id": 31202,
     "en": "part",
-    "kk": "/pɑːrt/",
+    "kk": "[pɑrt]",
     "zh": "n. 部分",
     "unit": 18,
     "example": "Have you learned your part yet?",
@@ -10820,7 +10820,7 @@ const jhWordsDB = [
   {
     "id": 31203,
     "en": "particular",
-    "kk": "/pərˈtɪkjələr/",
+    "kk": "[pɚˋtɪkjəlɚ]",
     "zh": "adj. 特別的",
     "unit": 18,
     "example": "He loves science fiction in particular.",
@@ -10829,7 +10829,7 @@ const jhWordsDB = [
   {
     "id": 31204,
     "en": "partner",
-    "kk": "/ˈpɑːrtnər/",
+    "kk": "[ˋpɑrtnɚ]",
     "zh": "n. 夥伴",
     "unit": 18,
     "example": "Gerry offered to partner me at tennis.",
@@ -10838,7 +10838,7 @@ const jhWordsDB = [
   {
     "id": 31205,
     "en": "party",
-    "kk": "/ˈpɑːrti/",
+    "kk": "[ˋpɑrti]",
     "zh": "n. 派對",
     "unit": 18,
     "example": "The party was arranged quickly.",
@@ -10847,7 +10847,7 @@ const jhWordsDB = [
   {
     "id": 31206,
     "en": "pass",
-    "kk": "/pæs/",
+    "kk": "[pæs]",
     "zh": "v. 通過",
     "unit": 18,
     "example": "She timed the pass perfectly.",
@@ -10856,7 +10856,7 @@ const jhWordsDB = [
   {
     "id": 31207,
     "en": "passenger",
-    "kk": "",
+    "kk": "[ˋpæsəndʒɚ]",
     "zh": "n. 乘客",
     "unit": 18,
     "example": "I dinged my passenger door.",
@@ -10865,7 +10865,7 @@ const jhWordsDB = [
   {
     "id": 31208,
     "en": "past",
-    "kk": "/pæst/",
+    "kk": "[pæst]",
     "zh": "adj. 過去的",
     "unit": 18,
     "example": "Three runners sprinted past.",
@@ -10874,7 +10874,7 @@ const jhWordsDB = [
   {
     "id": 31209,
     "en": "paste",
-    "kk": "",
+    "kk": "[pest]",
     "zh": "n. 麵糰",
     "unit": 18,
     "example": "It's quicker to cut and paste than to retype.",
@@ -10883,7 +10883,7 @@ const jhWordsDB = [
   {
     "id": 31210,
     "en": "path",
-    "kk": "/pæθ/",
+    "kk": "[pæθ]",
     "zh": "n. 小徑",
     "unit": 18,
     "example": "The path climbed steeply upwards.",
@@ -10892,7 +10892,7 @@ const jhWordsDB = [
   {
     "id": 31211,
     "en": "patient",
-    "kk": "/ˈpeɪʃnt/",
+    "kk": "[ˋpeʃənt]",
     "zh": "n. 病人",
     "unit": 18,
     "example": "The patient is terminally ill.",
@@ -10901,7 +10901,7 @@ const jhWordsDB = [
   {
     "id": 31212,
     "en": "pattern",
-    "kk": "/ˈpætərn/",
+    "kk": "[ˋpætɚn]",
     "zh": "n. 模式",
     "unit": 18,
     "example": "All three attacks followed the same pattern.",
@@ -10910,7 +10910,7 @@ const jhWordsDB = [
   {
     "id": 31213,
     "en": "pause",
-    "kk": "",
+    "kk": "[pɔz]",
     "zh": "n. 停頓",
     "unit": 18,
     "example": "There was a longish pause.",
@@ -10919,7 +10919,7 @@ const jhWordsDB = [
   {
     "id": 31214,
     "en": "pay",
-    "kk": "/peɪ/",
+    "kk": "[pe]",
     "zh": "v. 付款",
     "unit": 18,
     "example": "She stubbornly refused to pay.",
@@ -10928,7 +10928,7 @@ const jhWordsDB = [
   {
     "id": 31215,
     "en": "peace",
-    "kk": "/piːs/",
+    "kk": "[pis]",
     "zh": "n. 和平",
     "unit": 18,
     "example": "The people yearned for peace.",
@@ -10937,7 +10937,7 @@ const jhWordsDB = [
   {
     "id": 31216,
     "en": "peaceful",
-    "kk": "",
+    "kk": "[ˋpisfəl]",
     "zh": "adj. 和平的",
     "unit": 18,
     "example": "I was amazingly light-hearted and peaceful.",
@@ -10946,7 +10946,7 @@ const jhWordsDB = [
   {
     "id": 31217,
     "en": "peach",
-    "kk": "",
+    "kk": "[pitʃ]",
     "zh": "n. 桃子",
     "unit": 18,
     "example": "He picked out the ripest peach for me.",
@@ -10955,7 +10955,7 @@ const jhWordsDB = [
   {
     "id": 31218,
     "en": "pear",
-    "kk": "",
+    "kk": "[pɛr]",
     "zh": "n. 梨子",
     "unit": 18,
     "example": "She bit into a ripe juicy pear.",
@@ -10964,7 +10964,7 @@ const jhWordsDB = [
   {
     "id": 31219,
     "en": "peanut",
-    "kk": "",
+    "kk": "[ˋpinət]",
     "zh": "n. 花生",
     "unit": 18,
     "example": "James flicked a peanut at her.",
@@ -10973,7 +10973,7 @@ const jhWordsDB = [
   {
     "id": 31220,
     "en": "pen",
-    "kk": "/pen/",
+    "kk": "[pɛn]",
     "zh": "n. 筆",
     "unit": 18,
     "example": "Where's the top of this pen?",
@@ -10982,7 +10982,7 @@ const jhWordsDB = [
   {
     "id": 31221,
     "en": "pencil",
-    "kk": "",
+    "kk": "[ˋpɛnsəl]",
     "zh": "n. 鉛筆",
     "unit": 18,
     "example": "I snapped the pencil in half.",
@@ -10991,7 +10991,7 @@ const jhWordsDB = [
   {
     "id": 31222,
     "en": "people",
-    "kk": "/ˈpiːpl/",
+    "kk": "[ˋpipəl]",
     "zh": "n. 人",
     "unit": 18,
     "example": "She tends to annoy people.",
@@ -11000,7 +11000,7 @@ const jhWordsDB = [
   {
     "id": 31223,
     "en": "pepper",
-    "kk": "",
+    "kk": "[ˋpɛpɚ]",
     "zh": "n. 胡椒粉",
     "unit": 18,
     "example": "She shook some pepper onto her sandwich.",
@@ -11009,7 +11009,7 @@ const jhWordsDB = [
   {
     "id": 31224,
     "en": "perfect",
-    "kk": "/ˈpɜːrfɪkt/",
+    "kk": "[pɚˋfɛkt]",
     "zh": "adj. 完美的",
     "unit": 18,
     "example": "He always plays in perfect time.",
@@ -11018,7 +11018,7 @@ const jhWordsDB = [
   {
     "id": 31225,
     "en": "perhaps",
-    "kk": "/pərˈhæps/",
+    "kk": "[pɚˋhæps]",
     "zh": "adv. 也許",
     "unit": 18,
     "example": "Perhaps I spoke too hastily.",
@@ -11027,7 +11027,7 @@ const jhWordsDB = [
   {
     "id": 31226,
     "en": "period",
-    "kk": "/ˈpɪriəd/",
+    "kk": "[ˋpɪriəd]",
     "zh": "n. 一段時間",
     "unit": 18,
     "example": "It was a period of intense activity.",
@@ -11036,7 +11036,7 @@ const jhWordsDB = [
   {
     "id": 31227,
     "en": "personal",
-    "kk": "/ˈpɜːrsənl/",
+    "kk": "[ˋpɝsɪnəl]",
     "zh": "adj. 個人的",
     "unit": 18,
     "example": "The letter was marked 'Personal'.",
@@ -11045,7 +11045,7 @@ const jhWordsDB = [
   {
     "id": 31228,
     "en": "pet",
-    "kk": "",
+    "kk": "[pɛt]",
     "zh": "n. 寵物",
     "unit": 18,
     "example": "They had had their pet dog stuffed.",
@@ -11054,7 +11054,7 @@ const jhWordsDB = [
   {
     "id": 31229,
     "en": "photo",
-    "kk": "/ˈfoʊtoʊ/",
+    "kk": "[ˋfo͵to]",
     "zh": "n. 照片",
     "unit": 18,
     "example": "The photo wasn't very clear.",
@@ -11063,7 +11063,7 @@ const jhWordsDB = [
   {
     "id": 31230,
     "en": "physics",
-    "kk": "",
+    "kk": "[ˋfɪzɪks]",
     "zh": "n. 物理",
     "unit": 18,
     "example": "Have you read this month's 'Physics World'?",
@@ -11072,7 +11072,7 @@ const jhWordsDB = [
   {
     "id": 31231,
     "en": "piano",
-    "kk": "",
+    "kk": "[piˋæno]",
     "zh": "n. 鋼琴",
     "unit": 18,
     "example": "The piano was in good condition.",
@@ -11081,7 +11081,7 @@ const jhWordsDB = [
   {
     "id": 31232,
     "en": "pick",
-    "kk": "/pɪk/",
+    "kk": "[pɪk]",
     "zh": "v. 挑選",
     "unit": 18,
     "example": "I'll pick you up at five.",
@@ -11090,7 +11090,7 @@ const jhWordsDB = [
   {
     "id": 31233,
     "en": "picnic",
-    "kk": "",
+    "kk": "[ˋpɪk͵nɪk]",
     "zh": "n. 野餐",
     "unit": 18,
     "example": "We're going on a picnic tomorrow.",
@@ -11099,7 +11099,7 @@ const jhWordsDB = [
   {
     "id": 31234,
     "en": "picture",
-    "kk": "/ˈpɪktʃər/",
+    "kk": "[ˋpɪktʃɚ]",
     "zh": "n. 照片",
     "unit": 18,
     "example": "I saw her picture everywhere.",
@@ -11108,7 +11108,7 @@ const jhWordsDB = [
   {
     "id": 31235,
     "en": "pie",
-    "kk": "",
+    "kk": "[paɪ]",
     "zh": "n. 派",
     "unit": 18,
     "example": "We all had a second helping of pie.",
@@ -11117,7 +11117,7 @@ const jhWordsDB = [
   {
     "id": 31236,
     "en": "piece",
-    "kk": "/piːs/",
+    "kk": "[pis]",
     "zh": "n. 一張",
     "unit": 18,
     "example": "I never found the missing piece.",
@@ -11126,7 +11126,7 @@ const jhWordsDB = [
   {
     "id": 31237,
     "en": "pig",
-    "kk": "",
+    "kk": "[pɪɡ]",
     "zh": "n. 豬",
     "unit": 18,
     "example": "The pig rose squealing and bolted.",
@@ -11135,7 +11135,7 @@ const jhWordsDB = [
   {
     "id": 31238,
     "en": "pigeon",
-    "kk": "",
+    "kk": "[ˋpɪdʒən]",
     "zh": "n. 鴿子",
     "unit": 18,
     "example": "A large Pigeon flew far above him.",
@@ -11144,7 +11144,7 @@ const jhWordsDB = [
   {
     "id": 31239,
     "en": "pile",
-    "kk": "",
+    "kk": "[paɪl]",
     "zh": "n. 堆",
     "unit": 18,
     "example": "He swept the leaves up into a pile.",
@@ -11153,7 +11153,7 @@ const jhWordsDB = [
   {
     "id": 31240,
     "en": "pillow",
-    "kk": "",
+    "kk": "[ˋpɪlo]",
     "zh": "n. 枕頭",
     "unit": 18,
     "example": "He pummelled the pillow with his fists.",
@@ -11162,7 +11162,7 @@ const jhWordsDB = [
   {
     "id": 31241,
     "en": "pin",
-    "kk": "",
+    "kk": "[pɪn]",
     "zh": "n. 別針",
     "unit": 18,
     "example": "They're trying to pin it on us.",
@@ -11171,7 +11171,7 @@ const jhWordsDB = [
   {
     "id": 31242,
     "en": "pineapple",
-    "kk": "",
+    "kk": "[ˋpaɪ͵næpəl]",
     "zh": "n. 鳳梨",
     "unit": 18,
     "example": "Mango and pineapple are yellow.",
@@ -11180,7 +11180,7 @@ const jhWordsDB = [
   {
     "id": 31243,
     "en": "pink",
-    "kk": "",
+    "kk": "[pɪŋk]",
     "zh": "adj. 粉紅色的",
     "unit": 18,
     "example": "Judi's favourite colour is pink.",
@@ -11189,7 +11189,7 @@ const jhWordsDB = [
   {
     "id": 31244,
     "en": "pipe",
-    "kk": "",
+    "kk": "[paɪp]",
     "zh": "n. 煙斗",
     "unit": 18,
     "example": "He puffed (away) on his pipe.",
@@ -11198,7 +11198,7 @@ const jhWordsDB = [
   {
     "id": 31245,
     "en": "pizza",
-    "kk": "",
+    "kk": "[ˋpitsə]",
     "zh": "n. 披薩",
     "unit": 18,
     "example": "They pigged out on pizza.",
@@ -11207,7 +11207,7 @@ const jhWordsDB = [
   {
     "id": 31246,
     "en": "place",
-    "kk": "/pleɪs/",
+    "kk": "[ples]",
     "zh": "n. 地方",
     "unit": 18,
     "example": "That place is a madhouse.",
@@ -11216,7 +11216,7 @@ const jhWordsDB = [
   {
     "id": 31247,
     "en": "plain",
-    "kk": "",
+    "kk": "[plen]",
     "zh": "n. 平原",
     "unit": 18,
     "example": "It was the plain unvarnished truth.",
@@ -11225,7 +11225,7 @@ const jhWordsDB = [
   {
     "id": 31248,
     "en": "plan",
-    "kk": "/plæn/",
+    "kk": "[plæn]",
     "zh": "n. 計畫",
     "unit": 18,
     "example": "If Plan A fails, go to Plan B.",
@@ -11234,7 +11234,7 @@ const jhWordsDB = [
   {
     "id": 31249,
     "en": "planet",
-    "kk": "",
+    "kk": "[ˋplænət]",
     "zh": "n. 行星",
     "unit": 18,
     "example": "Saturn is the second biggest planet in the solar system.",
@@ -11243,7 +11243,7 @@ const jhWordsDB = [
   {
     "id": 31250,
     "en": "plant",
-    "kk": "/plænt/",
+    "kk": "[plænt]",
     "zh": "n. 植物",
     "unit": 18,
     "example": "This plant is a vigorous grower.",
@@ -11252,7 +11252,7 @@ const jhWordsDB = [
   {
     "id": 31251,
     "en": "plate",
-    "kk": "",
+    "kk": "[plet]",
     "zh": "n. 盤子",
     "unit": 18,
     "example": "Don't touch that plate—it's hot!",
@@ -11261,7 +11261,7 @@ const jhWordsDB = [
   {
     "id": 31252,
     "en": "platform",
-    "kk": "",
+    "kk": "[ˋplæt͵fɔrm]",
     "zh": "n. 月臺",
     "unit": 18,
     "example": "The platform began to produce oil in 1994.",
@@ -11270,7 +11270,7 @@ const jhWordsDB = [
   {
     "id": 31253,
     "en": "play",
-    "kk": "/pleɪ/",
+    "kk": "[ple]",
     "zh": "v. 玩",
     "unit": 18,
     "example": "I used to play basketball.",
@@ -11279,7 +11279,7 @@ const jhWordsDB = [
   {
     "id": 31254,
     "en": "player",
-    "kk": "",
+    "kk": "[ˋpleɚ]",
     "zh": "n. 運動員",
     "unit": 18,
     "example": "She's a good all-round player.",
@@ -11288,7 +11288,7 @@ const jhWordsDB = [
   {
     "id": 31255,
     "en": "playground",
-    "kk": "",
+    "kk": "[ˋple͵ɡraʊnd]",
     "zh": "n. 操場",
     "unit": 18,
     "example": "Sam pushed me over in the playground.",
@@ -11297,7 +11297,7 @@ const jhWordsDB = [
   {
     "id": 31256,
     "en": "pleasant",
-    "kk": "",
+    "kk": "[ˋplɛzənt]",
     "zh": "adj. 舒適的",
     "unit": 18,
     "example": "The woman had a pleasant face.",
@@ -11306,7 +11306,7 @@ const jhWordsDB = [
   {
     "id": 31257,
     "en": "please",
-    "kk": "/pliːz/",
+    "kk": "[pliz]",
     "zh": "v. 請",
     "unit": 18,
     "example": "Two pints of mild, please.",
@@ -11315,7 +11315,7 @@ const jhWordsDB = [
   {
     "id": 31258,
     "en": "plus",
-    "kk": "/plʌs/",
+    "kk": "[plʌs]",
     "zh": "prep. 加",
     "unit": 18,
     "example": "Two plus five is seven.",
@@ -11324,7 +11324,7 @@ const jhWordsDB = [
   {
     "id": 31259,
     "en": "pocket",
-    "kk": "",
+    "kk": "[ˋpɑkət]",
     "zh": "n. 口袋",
     "unit": 18,
     "example": "I slid the wallet into his pocket.",
@@ -11333,7 +11333,7 @@ const jhWordsDB = [
   {
     "id": 31260,
     "en": "poem",
-    "kk": "",
+    "kk": "[ˋpoəm]",
     "zh": "n. 詩",
     "unit": 18,
     "example": "The poem uses simple language.",
@@ -11342,7 +11342,7 @@ const jhWordsDB = [
   {
     "id": 31261,
     "en": "poet",
-    "kk": "",
+    "kk": "[ˋpoət]",
     "zh": "n. 詩人",
     "unit": 18,
     "example": "He is a very underrated poet.",
@@ -11351,7 +11351,7 @@ const jhWordsDB = [
   {
     "id": 31262,
     "en": "point",
-    "kk": "/pɔɪnt/",
+    "kk": "[pɔɪnt]",
     "zh": "v. 指出",
     "unit": 18,
     "example": "This last point is crucial.",
@@ -11360,7 +11360,7 @@ const jhWordsDB = [
   {
     "id": 31263,
     "en": "poison",
-    "kk": "",
+    "kk": "[ˋpɔɪzən]",
     "zh": "n. 毒藥",
     "unit": 18,
     "example": "Some mushrooms contain a deadly poison.",
@@ -11369,7 +11369,7 @@ const jhWordsDB = [
   {
     "id": 31264,
     "en": "police",
-    "kk": "/pəˈliːs/",
+    "kk": "[pəˋlis]",
     "zh": "n. 警察",
     "unit": 18,
     "example": "Police work is mainly routine.",
@@ -11378,7 +11378,7 @@ const jhWordsDB = [
   {
     "id": 31265,
     "en": "polite",
-    "kk": "",
+    "kk": "[pəˋlaɪt]",
     "zh": "adj. 有禮貌的",
     "unit": 18,
     "example": "We made polite, stilted conversation.",
@@ -11387,7 +11387,7 @@ const jhWordsDB = [
   {
     "id": 31266,
     "en": "pollute",
-    "kk": "",
+    "kk": "[pəˋlut]",
     "zh": "v. 汙染",
     "unit": 18,
     "example": "Mining would pollute the lake and denude the forest.",
@@ -11396,7 +11396,7 @@ const jhWordsDB = [
   {
     "id": 31267,
     "en": "pollution",
-    "kk": "",
+    "kk": "[pəˋluʃən]",
     "zh": "n. 汙染",
     "unit": 18,
     "example": "Pollution can harm marine life.",
@@ -11405,7 +11405,7 @@ const jhWordsDB = [
   {
     "id": 31268,
     "en": "pond",
-    "kk": "",
+    "kk": "[pɑnd]",
     "zh": "n. 池塘",
     "unit": 18,
     "example": "The evening breeze ruffled the pond.",
@@ -11414,7 +11414,7 @@ const jhWordsDB = [
   {
     "id": 31269,
     "en": "pool",
-    "kk": "",
+    "kk": "[pul]",
     "zh": "n. 水塘",
     "unit": 18,
     "example": "Does the hotel have a pool?",
@@ -11423,7 +11423,7 @@ const jhWordsDB = [
   {
     "id": 31270,
     "en": "poor",
-    "kk": "/pʊr/",
+    "kk": "[pur]",
     "zh": "adj. 貧窮的",
     "unit": 18,
     "example": "He passionately championed the poor.",
@@ -11432,7 +11432,7 @@ const jhWordsDB = [
   {
     "id": 31271,
     "en": "popcorn",
-    "kk": "",
+    "kk": "[ˋpɑp͵kɔrn]",
     "zh": "n. 爆米花",
     "unit": 18,
     "example": "Linda lay face down on a living room couch, nibbling popcorn.",
@@ -11441,7 +11441,7 @@ const jhWordsDB = [
   {
     "id": 31272,
     "en": "popular",
-    "kk": "/ˈpɑːpjələr/",
+    "kk": "[ˋpɑpjəlɚ]",
     "zh": "adj. 受歡迎的",
     "unit": 18,
     "example": "The restaurant is deservedly popular.",
@@ -11450,7 +11450,7 @@ const jhWordsDB = [
   {
     "id": 31273,
     "en": "population",
-    "kk": "/ˌpɑːpjəˈleɪʃn/",
+    "kk": "[͵pɑpjəˋleʃən]",
     "zh": "n. 人口",
     "unit": 18,
     "example": "The population continues to increase.",
@@ -11459,7 +11459,7 @@ const jhWordsDB = [
   {
     "id": 31274,
     "en": "pork",
-    "kk": "",
+    "kk": "[pɔrk]",
     "zh": "n. 豬肉",
     "unit": 18,
     "example": "Here the cooks dish out sweet and sour pork.",
@@ -11468,7 +11468,7 @@ const jhWordsDB = [
   {
     "id": 31275,
     "en": "port",
-    "kk": "",
+    "kk": "[pɔrt]",
     "zh": "n. 港口",
     "unit": 18,
     "example": "The ship steered into port.",
@@ -11477,7 +11477,7 @@ const jhWordsDB = [
   {
     "id": 31276,
     "en": "pose",
-    "kk": "",
+    "kk": "[poz]",
     "zh": "n. 姿勢",
     "unit": 18,
     "example": "She rearranged herself in another pose.",
@@ -11486,7 +11486,7 @@ const jhWordsDB = [
   {
     "id": 31277,
     "en": "position",
-    "kk": "/pəˈzɪʃn/",
+    "kk": "[pəˋzɪʃən]",
     "zh": "n. 位置",
     "unit": 18,
     "example": "My position is quite different.",
@@ -11495,7 +11495,7 @@ const jhWordsDB = [
   {
     "id": 31278,
     "en": "positive",
-    "kk": "/ˈpɑːzətɪv/",
+    "kk": "[ˋpɑzətɪv]",
     "zh": "adj. 肯定的",
     "unit": 18,
     "example": "The athlete tested positive for steroids.",
@@ -11504,7 +11504,7 @@ const jhWordsDB = [
   {
     "id": 31279,
     "en": "possible",
-    "kk": "/ˈpɑːsəbl/",
+    "kk": "[ˋpɑsəbəl]",
     "zh": "adj. 有可能的",
     "unit": 18,
     "example": "Many possible orderings may exist.",
@@ -11513,7 +11513,7 @@ const jhWordsDB = [
   {
     "id": 31280,
     "en": "post",
-    "kk": "/poʊst/",
+    "kk": "[post]",
     "zh": "n. 郵件",
     "unit": 18,
     "example": "Have you opened your post yet?",
@@ -11522,7 +11522,7 @@ const jhWordsDB = [
   {
     "id": 31281,
     "en": "pot",
-    "kk": "",
+    "kk": "[pɑt]",
     "zh": "n. 鍋",
     "unit": 18,
     "example": "They drank a pot of coffee.",
@@ -11531,7 +11531,7 @@ const jhWordsDB = [
   {
     "id": 31282,
     "en": "potato",
-    "kk": "",
+    "kk": "[pəˋte͵to]",
     "zh": "n. 馬鈴薯",
     "unit": 18,
     "example": "The boiled potato was mealy.",
@@ -11540,7 +11540,7 @@ const jhWordsDB = [
   {
     "id": 31283,
     "en": "pound",
-    "kk": "",
+    "kk": "[paʊnd]",
     "zh": "n. 磅",
     "unit": 18,
     "example": "They cost two dollars a pound.",
@@ -11549,7 +11549,7 @@ const jhWordsDB = [
   {
     "id": 31284,
     "en": "powder",
-    "kk": "",
+    "kk": "[ˋpaʊdɚ]",
     "zh": "n. 粉末",
     "unit": 18,
     "example": "The snow was like powder.",
@@ -11558,7 +11558,7 @@ const jhWordsDB = [
   {
     "id": 31285,
     "en": "power",
-    "kk": "/ˈpaʊər/",
+    "kk": "[ˋpaʊɚ]",
     "zh": "n. 力量",
     "unit": 18,
     "example": "They've switched off the power.",
@@ -11567,7 +11567,7 @@ const jhWordsDB = [
   {
     "id": 31286,
     "en": "practice",
-    "kk": "/ˈpræktɪs/",
+    "kk": "[ˋpræktəs]",
     "zh": "n. 練習",
     "unit": 18,
     "example": "She runs a general practice in Hull.",
@@ -11576,7 +11576,7 @@ const jhWordsDB = [
   {
     "id": 31287,
     "en": "praise",
-    "kk": "",
+    "kk": "[prez]",
     "zh": "n. 讚美",
     "unit": 18,
     "example": "Even his praise is double-edged.",
@@ -11585,7 +11585,7 @@ const jhWordsDB = [
   {
     "id": 31288,
     "en": "pray",
-    "kk": "",
+    "kk": "[pre]",
     "zh": "v. 禱告",
     "unit": 18,
     "example": "Will you pray to Our Lady for me?",
@@ -11594,7 +11594,7 @@ const jhWordsDB = [
   {
     "id": 31289,
     "en": "precious",
-    "kk": "",
+    "kk": "[ˋprɛʃəs]",
     "zh": "adj. 珍貴的",
     "unit": 18,
     "example": "Her family's support is particularly precious to Josie.",
@@ -11603,7 +11603,7 @@ const jhWordsDB = [
   {
     "id": 31290,
     "en": "prefer",
-    "kk": "",
+    "kk": "[prəˋfɝ]",
     "zh": "v. 較喜歡",
     "unit": 18,
     "example": "I prefer walking to climbing.",
@@ -11612,7 +11612,7 @@ const jhWordsDB = [
   {
     "id": 31291,
     "en": "prepare",
-    "kk": "/prɪˈper/",
+    "kk": "[priˋpɛr]",
     "zh": "v. 準備",
     "unit": 18,
     "example": "I had no time to prepare.",
@@ -11621,7 +11621,7 @@ const jhWordsDB = [
   {
     "id": 31292,
     "en": "presence",
-    "kk": "",
+    "kk": "[ˋprɛzəns]",
     "zh": "n. 存在",
     "unit": 18,
     "example": "His presence no longer signified.",
@@ -11630,7 +11630,7 @@ const jhWordsDB = [
   {
     "id": 31293,
     "en": "present",
-    "kk": "/ˈpreznt/",
+    "kk": "[ˋprɛzənt]",
     "zh": "adj. 現在的",
     "unit": 18,
     "example": "Her letters conflate past and present.",
@@ -11639,7 +11639,7 @@ const jhWordsDB = [
   {
     "id": 31294,
     "en": "president",
-    "kk": "/ˈprezɪdənt/",
+    "kk": "[ˋprɛzə͵dɛnt]",
     "zh": "n. 總統;校長",
     "unit": 18,
     "example": "Who succeeded Kennedy as President?",
@@ -11648,7 +11648,7 @@ const jhWordsDB = [
   {
     "id": 31295,
     "en": "pressure",
-    "kk": "",
+    "kk": "[ˋprɛʃɚ]",
     "zh": "n. 壓力",
     "unit": 18,
     "example": "The pressure now was relentless.",
@@ -11657,7 +11657,7 @@ const jhWordsDB = [
   {
     "id": 31296,
     "en": "pretty",
-    "kk": "/ˈprɪti/",
+    "kk": "[ˋprɪti]",
     "zh": "adj. 漂亮的",
     "unit": 18,
     "example": "The results were pretty good.",
@@ -11666,7 +11666,7 @@ const jhWordsDB = [
   {
     "id": 31297,
     "en": "price",
-    "kk": "/praɪs/",
+    "kk": "[praɪs]",
     "zh": "n. 價格",
     "unit": 18,
     "example": "The price was not negotiable.",
@@ -11675,7 +11675,7 @@ const jhWordsDB = [
   {
     "id": 31298,
     "en": "pride",
-    "kk": "",
+    "kk": "[praɪd]",
     "zh": "n. 驕傲",
     "unit": 18,
     "example": "His words rang with pride.",
@@ -11684,7 +11684,7 @@ const jhWordsDB = [
   {
     "id": 31299,
     "en": "priest",
-    "kk": "",
+    "kk": "[prist]",
     "zh": "n. 神父",
     "unit": 18,
     "example": "The priest anointed her with oil.",
@@ -11693,7 +11693,7 @@ const jhWordsDB = [
   {
     "id": 31300,
     "en": "primary",
-    "kk": "/ˈpraɪmeri/",
+    "kk": "[ˋpraɪ͵mɛri]",
     "zh": "adj. 主要的",
     "unit": 18,
     "example": "We turn now to our primary question.",
@@ -11702,7 +11702,7 @@ const jhWordsDB = [
   {
     "id": 31301,
     "en": "prince",
-    "kk": "",
+    "kk": "[prɪns]",
     "zh": "n. 王子",
     "unit": 18,
     "example": "The prince should be plunged into work.",
@@ -11711,7 +11711,7 @@ const jhWordsDB = [
   {
     "id": 31302,
     "en": "princess",
-    "kk": "",
+    "kk": "[ˋprɪnsɛs]",
     "zh": "n. 公主",
     "unit": 18,
     "example": "Princess Anne topped the guest list.",
@@ -11720,7 +11720,7 @@ const jhWordsDB = [
   {
     "id": 31303,
     "en": "principal",
-    "kk": "",
+    "kk": "[ˋprɪnsəpəl]",
     "zh": "n. 原則",
     "unit": 18,
     "example": "The principal is a very busy woman.",
@@ -11729,7 +11729,7 @@ const jhWordsDB = [
   {
     "id": 31304,
     "en": "print",
-    "kk": "/prɪnt/",
+    "kk": "[prɪnt]",
     "zh": "v. 印刷",
     "unit": 18,
     "example": "Click on the icon when you want to print.",
@@ -11738,7 +11738,7 @@ const jhWordsDB = [
   {
     "id": 31305,
     "en": "prison",
-    "kk": "",
+    "kk": "[ˋprɪzən]",
     "zh": "n. 監獄",
     "unit": 18,
     "example": "The prison is infested with rats.",
@@ -11747,7 +11747,7 @@ const jhWordsDB = [
   {
     "id": 31306,
     "en": "private",
-    "kk": "/ˈpraɪvət/",
+    "kk": "[ˋpraɪvət]",
     "zh": "adj. 私人的",
     "unit": 18,
     "example": "He has a private income.",
@@ -11756,7 +11756,7 @@ const jhWordsDB = [
   {
     "id": 31307,
     "en": "prize",
-    "kk": "",
+    "kk": "[praɪz]",
     "zh": "n. 獎",
     "unit": 18,
     "example": "She stepped up to receive her prize.",
@@ -11765,7 +11765,7 @@ const jhWordsDB = [
   {
     "id": 31308,
     "en": "probably",
-    "kk": "/ˈprɑːbəbli/",
+    "kk": "[ˋprɑbəb͵li]",
     "zh": "adv. 或許",
     "unit": 18,
     "example": "It was probably infested with cooties.",
@@ -11774,7 +11774,7 @@ const jhWordsDB = [
   {
     "id": 31309,
     "en": "problem",
-    "kk": "/ˈprɑːbləm/",
+    "kk": "[ˋprɑbləm]",
     "zh": "n. 問題",
     "unit": 18,
     "example": "The problem is well documented.",
@@ -11783,7 +11783,7 @@ const jhWordsDB = [
   {
     "id": 31310,
     "en": "produce",
-    "kk": "/prəˈduːs/",
+    "kk": "[prəˋdus]",
     "zh": "v. 製造",
     "unit": 18,
     "example": "We sell only fresh local produce.",
@@ -11792,7 +11792,7 @@ const jhWordsDB = [
   {
     "id": 31311,
     "en": "production",
-    "kk": "",
+    "kk": "[prəˋdʌkʃən]",
     "zh": "n. 製造",
     "unit": 18,
     "example": "Production costs began to spiral.",
@@ -11801,7 +11801,7 @@ const jhWordsDB = [
   {
     "id": 31312,
     "en": "professor",
-    "kk": "/prəˈfesər/",
+    "kk": "[prəˋfɛsɚ]",
     "zh": "n. 教授",
     "unit": 18,
     "example": "His grandfather was a professor.",
@@ -11810,7 +11810,7 @@ const jhWordsDB = [
   {
     "id": 31313,
     "en": "program",
-    "kk": "/ˈproʊɡræm/",
+    "kk": "[ˋpro͵ɡræm]",
     "zh": "n. 節目",
     "unit": 18,
     "example": "The program aired last week.",
@@ -11819,7 +11819,7 @@ const jhWordsDB = [
   {
     "id": 31314,
     "en": "progress",
-    "kk": "",
+    "kk": "[ˋprɑ͵ɡrɛs]",
     "zh": "n. 進步",
     "unit": 18,
     "example": "Progress is maddeningly slow.",
@@ -11828,7 +11828,7 @@ const jhWordsDB = [
   {
     "id": 31315,
     "en": "project",
-    "kk": "/ˈprɑːdʒekt/",
+    "kk": "[ˋprɑdʒɛkt]",
     "zh": "n. 方案",
     "unit": 18,
     "example": "The whole project was badly managed.",
@@ -11837,7 +11837,7 @@ const jhWordsDB = [
   {
     "id": 31316,
     "en": "promise",
-    "kk": "/ˈprɑːmɪs/",
+    "kk": "[ˋprɑməs]",
     "zh": "n. 承諾",
     "unit": 18,
     "example": "Their future was full of promise.",
@@ -11846,7 +11846,7 @@ const jhWordsDB = [
   {
     "id": 31317,
     "en": "pronounce",
-    "kk": "",
+    "kk": "[prəˋnaʊns]",
     "zh": "v. 發音",
     "unit": 18,
     "example": "The judge will pronounce sentence today.",
@@ -11855,7 +11855,7 @@ const jhWordsDB = [
   {
     "id": 31318,
     "en": "protect",
-    "kk": "/prəˈtekt/",
+    "kk": "[prəˋtɛkt]",
     "zh": "v. 保護",
     "unit": 18,
     "example": "Women banded together to protect each other.",
@@ -11864,7 +11864,7 @@ const jhWordsDB = [
   {
     "id": 31319,
     "en": "proud",
-    "kk": "/praʊd/",
+    "kk": "[praʊd]",
     "zh": "adj. 驕傲的",
     "unit": 18,
     "example": "I'm proud of my Italian roots.",
@@ -11873,7 +11873,7 @@ const jhWordsDB = [
   {
     "id": 31320,
     "en": "prove",
-    "kk": "",
+    "kk": "[pruv]",
     "zh": "v. 證明",
     "unit": 18,
     "example": "This advice was to prove valuable.",
@@ -11882,7 +11882,7 @@ const jhWordsDB = [
   {
     "id": 31321,
     "en": "provide",
-    "kk": "/prəˈvaɪd/",
+    "kk": "[prəˋvaɪd]",
     "zh": "v. 提供",
     "unit": 18,
     "example": "He refused to provide a specimen.",
@@ -11891,7 +11891,7 @@ const jhWordsDB = [
   {
     "id": 31322,
     "en": "public",
-    "kk": "/ˈpʌblɪk/",
+    "kk": "[ˋpʌblɪk]",
     "zh": "adj. 公共的",
     "unit": 18,
     "example": "She retreated from public life.",
@@ -11900,7 +11900,7 @@ const jhWordsDB = [
   {
     "id": 31323,
     "en": "pull",
-    "kk": "/pʊl/",
+    "kk": "[pʊl]",
     "zh": "v. 拉",
     "unit": 18,
     "example": "You push and I'll pull.",
@@ -11909,7 +11909,7 @@ const jhWordsDB = [
   {
     "id": 31324,
     "en": "pump",
-    "kk": "",
+    "kk": "[pʌmp]",
     "zh": "n. 抽水機",
     "unit": 18,
     "example": "The pump sucks air out through the valve.",
@@ -11918,7 +11918,7 @@ const jhWordsDB = [
   {
     "id": 31325,
     "en": "pumpkin",
-    "kk": "",
+    "kk": "[ˋpʌmpkɪn]",
     "zh": "n. 南瓜",
     "unit": 18,
     "example": "Pumpkin pie is a traditional American dish served on Thanksgiving.",
@@ -11927,7 +11927,7 @@ const jhWordsDB = [
   {
     "id": 31326,
     "en": "punish",
-    "kk": "",
+    "kk": "[ˋpʌnɪʃ]",
     "zh": "v. 處罰",
     "unit": 18,
     "example": "I don't believe that George ever had to punish the children.",
@@ -11936,7 +11936,7 @@ const jhWordsDB = [
   {
     "id": 31327,
     "en": "puppy",
-    "kk": "",
+    "kk": "[ˋpʌpi]",
     "zh": "n. 小狗",
     "unit": 18,
     "example": "A puppy stepped in the fresh cement.",
@@ -11945,7 +11945,7 @@ const jhWordsDB = [
   {
     "id": 31328,
     "en": "purple",
-    "kk": "",
+    "kk": "[ˋpɝpəl]",
     "zh": "adj. 紫色的",
     "unit": 18,
     "example": "She was dressed in purple.",
@@ -11954,7 +11954,7 @@ const jhWordsDB = [
   {
     "id": 31329,
     "en": "purpose",
-    "kk": "/ˈpɜːrpəs/",
+    "kk": "[ˋpɝpəs]",
     "zh": "n. 目的",
     "unit": 18,
     "example": "The purpose of industry is to create wealth.",
@@ -11963,7 +11963,7 @@ const jhWordsDB = [
   {
     "id": 31330,
     "en": "purse",
-    "kk": "",
+    "kk": "[pɝs]",
     "zh": "n. 錢包",
     "unit": 18,
     "example": "She closed her purse with a snap.",
@@ -11972,7 +11972,7 @@ const jhWordsDB = [
   {
     "id": 31331,
     "en": "push",
-    "kk": "/pʊʃ/",
+    "kk": "[pʊʃ]",
     "zh": "v. 推",
     "unit": 18,
     "example": "You push and I'll pull.",
@@ -11981,7 +11981,7 @@ const jhWordsDB = [
   {
     "id": 31332,
     "en": "put",
-    "kk": "/pʊt/",
+    "kk": "[pʊt]",
     "zh": "v. 放置",
     "unit": 18,
     "example": "Danny put down his glass.",
@@ -11990,7 +11990,7 @@ const jhWordsDB = [
   {
     "id": 31333,
     "en": "puzzle",
-    "kk": "",
+    "kk": "[ˋpʌzəl]",
     "zh": "n. 謎題",
     "unit": 18,
     "example": "The rise in accidents remains a puzzle.",
@@ -11999,7 +11999,7 @@ const jhWordsDB = [
   {
     "id": 31334,
     "en": "quality",
-    "kk": "/ˈkwɑːləti/",
+    "kk": "[ˋkwɑləti]",
     "zh": "n. 品質",
     "unit": 18,
     "example": "The quality is uniformly high.",
@@ -12008,7 +12008,7 @@ const jhWordsDB = [
   {
     "id": 31335,
     "en": "quantity",
-    "kk": "",
+    "kk": "[ˋkwɑntəti]",
     "zh": "n. 量",
     "unit": 18,
     "example": "Is it available in sufficient quantity?",
@@ -12017,7 +12017,7 @@ const jhWordsDB = [
   {
     "id": 31336,
     "en": "quarter",
-    "kk": "",
+    "kk": "[ˋkwɔrtɚ]",
     "zh": "n. 四分之一",
     "unit": 18,
     "example": "Nowitzki fouled Mitchell early in the third quarter.",
@@ -12026,7 +12026,7 @@ const jhWordsDB = [
   {
     "id": 31337,
     "en": "queen",
-    "kk": "",
+    "kk": "[kwin]",
     "zh": "n. 女王",
     "unit": 18,
     "example": "She curtsied to the Queen.",
@@ -12035,7 +12035,7 @@ const jhWordsDB = [
   {
     "id": 31338,
     "en": "question",
-    "kk": "/ˈkwestʃən/",
+    "kk": "[ˋkwɛstʃən]",
     "zh": "n. 問題",
     "unit": 18,
     "example": "That's a very hard question.",
@@ -12044,7 +12044,7 @@ const jhWordsDB = [
   {
     "id": 31339,
     "en": "quick",
-    "kk": "/kwɪk/",
+    "kk": "[kwɪk]",
     "zh": "adj. 迅速的",
     "unit": 18,
     "example": "He kept giving quick blinks.",
@@ -12053,7 +12053,7 @@ const jhWordsDB = [
   {
     "id": 31340,
     "en": "quiet",
-    "kk": "/ˈkwaɪət/",
+    "kk": "[ˋkwaɪət]",
     "zh": "adj. 安靜的",
     "unit": 18,
     "example": "'Be quiet,' said the teacher.",
@@ -12062,7 +12062,7 @@ const jhWordsDB = [
   {
     "id": 31341,
     "en": "quit",
-    "kk": "",
+    "kk": "[kwɪt]",
     "zh": "v. 停止",
     "unit": 18,
     "example": "He quit his job as an office boy.",
@@ -12071,7 +12071,7 @@ const jhWordsDB = [
   {
     "id": 31342,
     "en": "quite",
-    "kk": "/kwaɪt/",
+    "kk": "[kwaɪt]",
     "zh": "adv. 相當地",
     "unit": 18,
     "example": "I worked quite irregular hours.",
@@ -12080,7 +12080,7 @@ const jhWordsDB = [
   {
     "id": 31343,
     "en": "quiz",
-    "kk": "",
+    "kk": "[kwɪz]",
     "zh": "n. 小考",
     "unit": 18,
     "example": "Have you entered your name for the quiz yet?",
@@ -12089,7 +12089,7 @@ const jhWordsDB = [
   {
     "id": 31344,
     "en": "rabbit",
-    "kk": "",
+    "kk": "[ˋræbət]",
     "zh": "n. 兔子",
     "unit": 18,
     "example": "The dog scented a rabbit.",
@@ -12098,7 +12098,7 @@ const jhWordsDB = [
   {
     "id": 31345,
     "en": "race",
-    "kk": "/reɪs/",
+    "kk": "[res]",
     "zh": "n. 賽跑",
     "unit": 18,
     "example": "He finished fifth in the race.",
@@ -12107,7 +12107,7 @@ const jhWordsDB = [
   {
     "id": 31346,
     "en": "radio",
-    "kk": "/ˈreɪdioʊ/",
+    "kk": "[ˋredi͵o]",
     "zh": "n. 收音機",
     "unit": 18,
     "example": "The radio crackled into life.",
@@ -12116,7 +12116,7 @@ const jhWordsDB = [
   {
     "id": 31347,
     "en": "railroad",
-    "kk": "",
+    "kk": "[ˋrel͵rod]",
     "zh": "n. 鐵路",
     "unit": 18,
     "example": "Court decisions always went against railroad workers.",
@@ -12125,7 +12125,7 @@ const jhWordsDB = [
   {
     "id": 31348,
     "en": "rain",
-    "kk": "",
+    "kk": "[ren]",
     "zh": "n. 雨",
     "unit": 18,
     "example": "The rain continued unabated.",
@@ -12134,7 +12134,7 @@ const jhWordsDB = [
   {
     "id": 31349,
     "en": "rainbow",
-    "kk": "",
+    "kk": "[ˋren͵bo]",
     "zh": "n. 彩虹",
     "unit": 18,
     "example": "Finally the rainbow disappeared.",
@@ -12143,7 +12143,7 @@ const jhWordsDB = [
   {
     "id": 31350,
     "en": "rainy",
-    "kk": "",
+    "kk": "[ˋreni]",
     "zh": "adj. 多雨的",
     "unit": 18,
     "example": "The rainy season in the Andes normally starts in December.",
@@ -12152,7 +12152,7 @@ const jhWordsDB = [
   {
     "id": 31351,
     "en": "raise",
-    "kk": "/reɪz/",
+    "kk": "[rez]",
     "zh": "v. 增加",
     "unit": 18,
     "example": "How can we raise standards in schools?",
@@ -12161,7 +12161,7 @@ const jhWordsDB = [
   {
     "id": 31352,
     "en": "range",
-    "kk": "/reɪndʒ/",
+    "kk": "[rendʒ]",
     "zh": "n. 範圍",
     "unit": 18,
     "example": "We stock a wide range of perfumes.",
@@ -12170,7 +12170,7 @@ const jhWordsDB = [
   {
     "id": 31353,
     "en": "rare",
-    "kk": "",
+    "kk": "[rɛr]",
     "zh": "adj. 稀少的",
     "unit": 18,
     "example": "This species is extremely rare.",
@@ -12179,7 +12179,7 @@ const jhWordsDB = [
   {
     "id": 31354,
     "en": "rat",
-    "kk": "",
+    "kk": "[ræt]",
     "zh": "n. 老鼠",
     "unit": 18,
     "example": "He held his breath as a rat scuttled past.",
@@ -12188,7 +12188,7 @@ const jhWordsDB = [
   {
     "id": 31355,
     "en": "rather",
-    "kk": "/ˈræðər/",
+    "kk": "[ˋræðɚ]",
     "zh": "adv. 稍微",
     "unit": 18,
     "example": "The leaves taste rather bitter.",
@@ -12197,7 +12197,7 @@ const jhWordsDB = [
   {
     "id": 31356,
     "en": "reach",
-    "kk": "/riːtʃ/",
+    "kk": "[ritʃ]",
     "zh": "v. 到達",
     "unit": 18,
     "example": "I can't reach the top shelf.",
@@ -12206,7 +12206,7 @@ const jhWordsDB = [
   {
     "id": 31357,
     "en": "read",
-    "kk": "/riːd/",
+    "kk": "[rɛd]",
     "zh": "v. 閱讀",
     "unit": 18,
     "example": "What does the thermometer read?",
@@ -12215,7 +12215,7 @@ const jhWordsDB = [
   {
     "id": 31358,
     "en": "ready",
-    "kk": "/ˈredi/",
+    "kk": "[ˋrɛdi]",
     "zh": "adj. 準備好的",
     "unit": 18,
     "example": "Everybody ready? It's showtime!",
@@ -12224,7 +12224,7 @@ const jhWordsDB = [
   {
     "id": 31359,
     "en": "real",
-    "kk": "/riːl/",
+    "kk": "[ril]",
     "zh": "adj. 真的",
     "unit": 18,
     "example": "She's a real cosmopolitan.",
@@ -12233,7 +12233,7 @@ const jhWordsDB = [
   {
     "id": 31360,
     "en": "realize",
-    "kk": "",
+    "kk": "[ˋriə͵laɪz]",
     "zh": "v. 瞭解",
     "unit": 18,
     "example": "Only later did she realize her mistake.",
@@ -12242,7 +12242,7 @@ const jhWordsDB = [
   {
     "id": 31361,
     "en": "really",
-    "kk": "/ˈriːli/",
+    "kk": "[ˋrɪli]",
     "zh": "adv. 真實地",
     "unit": 18,
     "example": "This sweater really itches.",
@@ -12251,7 +12251,7 @@ const jhWordsDB = [
   {
     "id": 31362,
     "en": "reason",
-    "kk": "/ˈriːzn/",
+    "kk": "[ˋrizən]",
     "zh": "n. 理由",
     "unit": 18,
     "example": "The reason is blindingly obvious.",
@@ -12260,7 +12260,7 @@ const jhWordsDB = [
   {
     "id": 31363,
     "en": "receive",
-    "kk": "/rɪˈsiːv/",
+    "kk": "[rəˋsiv]",
     "zh": "v. 收到",
     "unit": 18,
     "example": "He will receive $6,000 in back pay.",
@@ -12269,7 +12269,7 @@ const jhWordsDB = [
   {
     "id": 31364,
     "en": "record",
-    "kk": "/ˈrekərd/",
+    "kk": "[rəˋkɔrd]",
     "zh": "n. 記錄",
     "unit": 18,
     "example": "Profits were at record levels.",
@@ -12278,7 +12278,7 @@ const jhWordsDB = [
   {
     "id": 31365,
     "en": "recover",
-    "kk": "",
+    "kk": "[rɪˋkʌvɚ]",
     "zh": "v. 康復",
     "unit": 18,
     "example": "The economy is at last beginning to recover.",
@@ -12287,7 +12287,7 @@ const jhWordsDB = [
   {
     "id": 31366,
     "en": "rectangle",
-    "kk": "",
+    "kk": "[ˋrɛktæŋɡəl]",
     "zh": "n. 長方形",
     "unit": 18,
     "example": "This is a smaller rounded rectangle.",
@@ -12296,7 +12296,7 @@ const jhWordsDB = [
   {
     "id": 31367,
     "en": "recycle",
-    "kk": "",
+    "kk": "[riˋsaɪkəl]",
     "zh": "v. 回收",
     "unit": 18,
     "example": "The objective would be to recycle 98 percent of domestic waste.",
@@ -12305,7 +12305,7 @@ const jhWordsDB = [
   {
     "id": 31368,
     "en": "red",
-    "kk": "/red/",
+    "kk": "[rɛd]",
     "zh": "adj. 紅色的",
     "unit": 18,
     "example": "She was wearing red lipstick.",
@@ -12314,7 +12314,7 @@ const jhWordsDB = [
   {
     "id": 31369,
     "en": "refrigerator",
-    "kk": "",
+    "kk": "[rəˋfrɪdʒɚ͵etɚ]",
     "zh": "n. 冰箱",
     "unit": 18,
     "example": "His refrigerator frequently looked half empty.",
@@ -12323,7 +12323,7 @@ const jhWordsDB = [
   {
     "id": 31370,
     "en": "refuse",
-    "kk": "",
+    "kk": "[rəˋfjuz]",
     "zh": "v. 拒絕",
     "unit": 18,
     "example": "I could hardly refuse, could I?",
@@ -12332,7 +12332,7 @@ const jhWordsDB = [
   {
     "id": 31371,
     "en": "regard",
-    "kk": "",
+    "kk": "[rɪˋɡɑrd]",
     "zh": "v. 認為",
     "unit": 18,
     "example": "I regard this as a serious matter.",
@@ -12341,7 +12341,7 @@ const jhWordsDB = [
   {
     "id": 31372,
     "en": "regret",
-    "kk": "",
+    "kk": "[rəˋɡrɛt]",
     "zh": "n. 後悔",
     "unit": 18,
     "example": "I deeply regret what I said.",
@@ -12350,7 +12350,7 @@ const jhWordsDB = [
   {
     "id": 31373,
     "en": "regular",
-    "kk": "",
+    "kk": "[ˋrɛɡjəlɚ]",
     "zh": "adj. 規律的",
     "unit": 18,
     "example": "Do you take regular exercise?",
@@ -12359,7 +12359,7 @@ const jhWordsDB = [
   {
     "id": 31374,
     "en": "reject",
-    "kk": "",
+    "kk": "[rɪˋdʒɛkt]",
     "zh": "v. 拒絕",
     "unit": 18,
     "example": "Patients often reject transplanted organs.",
@@ -12368,7 +12368,7 @@ const jhWordsDB = [
   {
     "id": 31375,
     "en": "relation",
-    "kk": "",
+    "kk": "[riˋleʃən]",
     "zh": "n. 關係",
     "unit": 18,
     "example": "It is a question of the relation of ethics to economics.",
@@ -12377,7 +12377,7 @@ const jhWordsDB = [
   {
     "id": 31376,
     "en": "relative",
-    "kk": "",
+    "kk": "[ˋrɛlətɪv]",
     "zh": "n. 親戚",
     "unit": 18,
     "example": "He's a distant relative of the mayor.",
@@ -12386,7 +12386,7 @@ const jhWordsDB = [
   {
     "id": 31377,
     "en": "remember",
-    "kk": "/rɪˈmembər/",
+    "kk": "[rɪˋmɛmbɚ]",
     "zh": "v. 記得",
     "unit": 18,
     "example": "I'll sure remember this trip!",
@@ -12395,7 +12395,7 @@ const jhWordsDB = [
   {
     "id": 31378,
     "en": "remind",
-    "kk": "",
+    "kk": "[riˋmaɪnd]",
     "zh": "v. 提醒",
     "unit": 18,
     "example": "Remind me to phone Alan before I go out.",
@@ -12404,7 +12404,7 @@ const jhWordsDB = [
   {
     "id": 31379,
     "en": "rent",
-    "kk": "",
+    "kk": "[rɛnt]",
     "zh": "v. 租借",
     "unit": 18,
     "example": "His landlord doubled the rent.",
@@ -12413,7 +12413,7 @@ const jhWordsDB = [
   {
     "id": 31380,
     "en": "repair",
-    "kk": "",
+    "kk": "[rɪˋpɛr]",
     "zh": "v. 修理",
     "unit": 18,
     "example": "I took my bike in for repair.",
@@ -12422,7 +12422,7 @@ const jhWordsDB = [
   {
     "id": 31381,
     "en": "repeat",
-    "kk": "/rɪˈpiːt/",
+    "kk": "[rɪˋpit]",
     "zh": "v. 重複",
     "unit": 18,
     "example": "The claims are, I repeat, totally unfounded.",
@@ -12431,7 +12431,7 @@ const jhWordsDB = [
   {
     "id": 31382,
     "en": "reply",
-    "kk": "",
+    "kk": "[rɪpˋlaɪ]",
     "zh": "v. 回應",
     "unit": 18,
     "example": "His reply was not repeatable.",
@@ -12440,7 +12440,7 @@ const jhWordsDB = [
   {
     "id": 31383,
     "en": "report",
-    "kk": "/rɪˈpɔːrt/",
+    "kk": "[riˋpɔrt]",
     "zh": "n. 報告",
     "unit": 18,
     "example": "She glanced through the report.",
@@ -12449,7 +12449,7 @@ const jhWordsDB = [
   {
     "id": 31384,
     "en": "reporter",
-    "kk": "",
+    "kk": "[rɪˋpɔrtɚ]",
     "zh": "n. 記者",
     "unit": 18,
     "example": "He is a 24-year-old trainee reporter.",
@@ -12458,7 +12458,7 @@ const jhWordsDB = [
   {
     "id": 31385,
     "en": "require",
-    "kk": "/rɪˈkwaɪər/",
+    "kk": "[͵rikˋwaɪɚ]",
     "zh": "v. 需要",
     "unit": 18,
     "example": "All decisions would require unanimity.",
@@ -12467,7 +12467,7 @@ const jhWordsDB = [
   {
     "id": 31386,
     "en": "respect",
-    "kk": "",
+    "kk": "[rɪˋspɛkt]",
     "zh": "n. 尊重",
     "unit": 18,
     "example": "I respect him as a doctor.",
@@ -12476,7 +12476,7 @@ const jhWordsDB = [
   {
     "id": 31387,
     "en": "responsible",
-    "kk": "",
+    "kk": "[riˋspɑnsəbəl]",
     "zh": "adj. 有責任的",
     "unit": 18,
     "example": "He's directly responsible to the boss.",
@@ -12485,7 +12485,7 @@ const jhWordsDB = [
   {
     "id": 31388,
     "en": "rest",
-    "kk": "/rest/",
+    "kk": "[rɛst]",
     "zh": "n. 休息",
     "unit": 18,
     "example": "Let's rest under yonder tree.",
@@ -12494,7 +12494,7 @@ const jhWordsDB = [
   {
     "id": 31389,
     "en": "restaurant",
-    "kk": "",
+    "kk": "[ˋrɛstɚ͵ɑnt]",
     "zh": "n. 餐廳",
     "unit": 18,
     "example": "The restaurant is deservedly popular.",
@@ -12503,7 +12503,7 @@ const jhWordsDB = [
   {
     "id": 31390,
     "en": "restroom",
-    "kk": "",
+    "kk": "[ˋrɛ͵strum]",
     "zh": "n. 洗手間",
     "unit": 18,
     "example": "The girl went into the restroom with a blush.",
@@ -12512,7 +12512,7 @@ const jhWordsDB = [
   {
     "id": 31391,
     "en": "result",
-    "kk": "/rɪˈzʌlt/",
+    "kk": "[rɪˋzʌlt]",
     "zh": "n. 結果",
     "unit": 18,
     "example": "They were elated at the result.",
@@ -12521,7 +12521,7 @@ const jhWordsDB = [
   {
     "id": 31392,
     "en": "return",
-    "kk": "/rɪˈtɜːrn/",
+    "kk": "[rɪˋtɝn]",
     "zh": "v. 歸來",
     "unit": 18,
     "example": "Regulars return year after year.",
@@ -12530,7 +12530,7 @@ const jhWordsDB = [
   {
     "id": 31393,
     "en": "review",
-    "kk": "/rɪˈvjuː/",
+    "kk": "[͵riˋvju]",
     "zh": "v. 複習",
     "unit": 18,
     "example": "The case is subject to judicial review.",
@@ -12539,7 +12539,7 @@ const jhWordsDB = [
   {
     "id": 31394,
     "en": "revise",
-    "kk": "",
+    "kk": "[rɪˋvaɪz]",
     "zh": "v. 改變",
     "unit": 18,
     "example": "I can't come out tonight. I have to revise.",
@@ -12548,7 +12548,7 @@ const jhWordsDB = [
   {
     "id": 31395,
     "en": "rice",
-    "kk": "",
+    "kk": "[raɪs]",
     "zh": "n. 米",
     "unit": 18,
     "example": "We eat rice every single day.",
@@ -12557,7 +12557,7 @@ const jhWordsDB = [
   {
     "id": 31396,
     "en": "rich",
-    "kk": "/rɪtʃ/",
+    "kk": "[rɪtʃ]",
     "zh": "adj. 有錢的",
     "unit": 18,
     "example": "They must be stinking rich.",
@@ -12566,7 +12566,7 @@ const jhWordsDB = [
   {
     "id": 31397,
     "en": "ride",
-    "kk": "/raɪd/",
+    "kk": "[raɪd]",
     "zh": "v. 騎",
     "unit": 18,
     "example": "They hitched a ride in a truck.",
@@ -12575,7 +12575,7 @@ const jhWordsDB = [
   {
     "id": 31398,
     "en": "right",
-    "kk": "/raɪt/",
+    "kk": "[raɪt]",
     "zh": "adj. 正確的",
     "unit": 18,
     "example": "if only I could have helped put matters right.",
@@ -12584,7 +12584,7 @@ const jhWordsDB = [
   {
     "id": 31399,
     "en": "ring",
-    "kk": "/rɪŋ/",
+    "kk": "[rɪŋ]",
     "zh": "n. 戒指",
     "unit": 18,
     "example": "I'll give you a ring tomorrow.",
@@ -12593,7 +12593,7 @@ const jhWordsDB = [
   {
     "id": 31400,
     "en": "rise",
-    "kk": "/raɪz/",
+    "kk": "[raɪz]",
     "zh": "v. 上升",
     "unit": 18,
     "example": "When water levels rise, flooding results.",
@@ -12602,7 +12602,7 @@ const jhWordsDB = [
   {
     "id": 31401,
     "en": "river",
-    "kk": "",
+    "kk": "[ˋrɪvɚ]",
     "zh": "n. 河流",
     "unit": 18,
     "example": "The river gurgled and burbled.",
@@ -12611,7 +12611,7 @@ const jhWordsDB = [
   {
     "id": 31402,
     "en": "road",
-    "kk": "/roʊd/",
+    "kk": "[rod]",
     "zh": "n. 道路",
     "unit": 18,
     "example": "Claire hurried along the road.",
@@ -12620,7 +12620,7 @@ const jhWordsDB = [
   {
     "id": 31403,
     "en": "rob",
-    "kk": "",
+    "kk": "[rɑb]",
     "zh": "v. 搶劫",
     "unit": 18,
     "example": "She turned to Rob for solace.",
@@ -12629,7 +12629,7 @@ const jhWordsDB = [
   {
     "id": 31404,
     "en": "robot",
-    "kk": "",
+    "kk": "[ˋro͵bɑt]",
     "zh": "n. 機器人",
     "unit": 18,
     "example": "This is the latest in robot technology.",
@@ -12638,7 +12638,7 @@ const jhWordsDB = [
   {
     "id": 31405,
     "en": "rock",
-    "kk": "/rɑːk/",
+    "kk": "[rɑk]",
     "zh": "n. 石塊",
     "unit": 18,
     "example": "A rock is an inanimate object.",
@@ -12647,7 +12647,7 @@ const jhWordsDB = [
   {
     "id": 31406,
     "en": "role",
-    "kk": "/roʊl/",
+    "kk": "[rol]",
     "zh": "n. 角色",
     "unit": 18,
     "example": "He's a natural for the role.",
@@ -12656,7 +12656,7 @@ const jhWordsDB = [
   {
     "id": 31407,
     "en": "roll",
-    "kk": "",
+    "kk": "[rol]",
     "zh": "v. 滾動",
     "unit": 18,
     "example": "Comedy is the new rock and roll.",
@@ -12665,7 +12665,7 @@ const jhWordsDB = [
   {
     "id": 31408,
     "en": "roof",
-    "kk": "",
+    "kk": "[ruf]",
     "zh": "n. 屋頂",
     "unit": 18,
     "example": "The roof was declared unsafe.",
@@ -12674,7 +12674,7 @@ const jhWordsDB = [
   {
     "id": 31409,
     "en": "room",
-    "kk": "/ruːm/",
+    "kk": "[rum]",
     "zh": "n. 房間",
     "unit": 18,
     "example": "This room faces west.",
@@ -12683,7 +12683,7 @@ const jhWordsDB = [
   {
     "id": 31410,
     "en": "root",
-    "kk": "",
+    "kk": "[rut]",
     "zh": "n. 根",
     "unit": 18,
     "example": "We got to the root of the problem.",
@@ -12692,7 +12692,7 @@ const jhWordsDB = [
   {
     "id": 31411,
     "en": "rope",
-    "kk": "",
+    "kk": "[rop]",
     "zh": "n. 繩子",
     "unit": 18,
     "example": "The rope suddenly went slack.",
@@ -12701,7 +12701,7 @@ const jhWordsDB = [
   {
     "id": 31412,
     "en": "rose",
-    "kk": "",
+    "kk": "[roz]",
     "zh": "n. 玫瑰",
     "unit": 18,
     "example": "The price of gas rose.",
@@ -12710,7 +12710,7 @@ const jhWordsDB = [
   {
     "id": 31413,
     "en": "round",
-    "kk": "",
+    "kk": "[raʊnd]",
     "zh": "adj. 圓的",
     "unit": 18,
     "example": "We're leaving round about ten.",
@@ -12719,7 +12719,7 @@ const jhWordsDB = [
   {
     "id": 31414,
     "en": "row",
-    "kk": "",
+    "kk": "[ro]",
     "zh": "n. 一排",
     "unit": 18,
     "example": "I took Daniel for a row.",
@@ -12728,7 +12728,7 @@ const jhWordsDB = [
   {
     "id": 31415,
     "en": "royal",
-    "kk": "",
+    "kk": "[ˋrɔɪəl]",
     "zh": "adj. 皇室的",
     "unit": 18,
     "example": "We were given a royal welcome.",
@@ -12737,7 +12737,7 @@ const jhWordsDB = [
   {
     "id": 31416,
     "en": "rub",
-    "kk": "",
+    "kk": "[rʌb]",
     "zh": "v. 摩擦",
     "unit": 18,
     "example": "She gave her knee a quick rub.",
@@ -12746,7 +12746,7 @@ const jhWordsDB = [
   {
     "id": 31417,
     "en": "rubber",
-    "kk": "",
+    "kk": "[ˋrʌbɚ]",
     "zh": "n. 橡膠",
     "unit": 18,
     "example": "The boy was wearing rubber-soled shoes.",
@@ -12755,7 +12755,7 @@ const jhWordsDB = [
   {
     "id": 31418,
     "en": "rude",
-    "kk": "",
+    "kk": "[rud]",
     "zh": "adj. 粗魯的",
     "unit": 18,
     "example": "The man was downright rude to us.",
@@ -12764,7 +12764,7 @@ const jhWordsDB = [
   {
     "id": 31419,
     "en": "ruin",
-    "kk": "",
+    "kk": "[ˋruən]",
     "zh": "v. 毀壞",
     "unit": 18,
     "example": "The vineyards were falling into ruin.",
@@ -12773,7 +12773,7 @@ const jhWordsDB = [
   {
     "id": 31420,
     "en": "rule",
-    "kk": "/ruːl/",
+    "kk": "[rul]",
     "zh": "v. 統治",
     "unit": 18,
     "example": "That's a good rule to go by.",
@@ -12782,7 +12782,7 @@ const jhWordsDB = [
   {
     "id": 31421,
     "en": "ruler",
-    "kk": "",
+    "kk": "[ˋrulɚ]",
     "zh": "n. 統治者;尺",
     "unit": 18,
     "example": "The ruler cracked and splintered into pieces.",
@@ -12791,7 +12791,7 @@ const jhWordsDB = [
   {
     "id": 31422,
     "en": "run",
-    "kk": "/rʌn/",
+    "kk": "[rʌn]",
     "zh": "v. 跑步",
     "unit": 18,
     "example": "Engines won't run without lubricants.",
@@ -12800,7 +12800,7 @@ const jhWordsDB = [
   {
     "id": 31423,
     "en": "rush",
-    "kk": "",
+    "kk": "[rʌʃ]",
     "zh": "v. 衝進",
     "unit": 18,
     "example": "You can't rush a search.",
@@ -12809,7 +12809,7 @@ const jhWordsDB = [
   {
     "id": 31424,
     "en": "sad",
-    "kk": "",
+    "kk": "[sæd]",
     "zh": "adj. 悲傷的",
     "unit": 18,
     "example": "I overreact to anything sad.",
@@ -12818,7 +12818,7 @@ const jhWordsDB = [
   {
     "id": 31425,
     "en": "safe",
-    "kk": "/seɪf/",
+    "kk": "[sef]",
     "zh": "adj. 安全的",
     "unit": 18,
     "example": "The children are quite safe here.",
@@ -12827,7 +12827,7 @@ const jhWordsDB = [
   {
     "id": 31426,
     "en": "safety",
-    "kk": "",
+    "kk": "[ˋsefti]",
     "zh": "n. 安全",
     "unit": 18,
     "example": "They are anxious for her safety.",
@@ -12836,7 +12836,7 @@ const jhWordsDB = [
   {
     "id": 31427,
     "en": "sail",
-    "kk": "",
+    "kk": "[sel]",
     "zh": "v. 航行",
     "unit": 18,
     "example": "We sail at 2 p.m. tomorrow.",
@@ -12845,7 +12845,7 @@ const jhWordsDB = [
   {
     "id": 31428,
     "en": "sailor",
-    "kk": "",
+    "kk": "[ˋselɚ]",
     "zh": "n. 水手",
     "unit": 18,
     "example": "A sailor carrying a sawn-off shotgun was arrested in Los Angeles.",
@@ -12854,7 +12854,7 @@ const jhWordsDB = [
   {
     "id": 31429,
     "en": "salad",
-    "kk": "",
+    "kk": "[ˋsæləd]",
     "zh": "n. 沙拉",
     "unit": 18,
     "example": "The salad had lost its crispness.",
@@ -12863,7 +12863,7 @@ const jhWordsDB = [
   {
     "id": 31430,
     "en": "sale",
-    "kk": "",
+    "kk": "[sel]",
     "zh": "n. 出售",
     "unit": 18,
     "example": "Tickets go on sale this week.",
@@ -12872,7 +12872,7 @@ const jhWordsDB = [
   {
     "id": 31431,
     "en": "salt",
-    "kk": "",
+    "kk": "[sɔlt]",
     "zh": "n. 鹽",
     "unit": 18,
     "example": "He read a poem entitled 'Salt'.",
@@ -12881,7 +12881,7 @@ const jhWordsDB = [
   {
     "id": 31432,
     "en": "same",
-    "kk": "/seɪm/",
+    "kk": "[sem]",
     "zh": "adj. 相同的",
     "unit": 18,
     "example": "Mario said the very same thing.",
@@ -12890,7 +12890,7 @@ const jhWordsDB = [
   {
     "id": 31433,
     "en": "sample",
-    "kk": "",
+    "kk": "[ˋsæmpəl]",
     "zh": "n. 樣品",
     "unit": 18,
     "example": "A routine DNA sample was taken.",
@@ -12899,7 +12899,7 @@ const jhWordsDB = [
   {
     "id": 31434,
     "en": "sand",
-    "kk": "",
+    "kk": "[sænd]",
     "zh": "n. 沙",
     "unit": 18,
     "example": "She traced a line in the sand.",
@@ -12908,7 +12908,7 @@ const jhWordsDB = [
   {
     "id": 31435,
     "en": "sandwich",
-    "kk": "",
+    "kk": "[ˋsændwɪtʃ]",
     "zh": "n. 三明治",
     "unit": 18,
     "example": "She was eating a sandwich.",
@@ -12917,7 +12917,7 @@ const jhWordsDB = [
   {
     "id": 31436,
     "en": "satisfy",
-    "kk": "",
+    "kk": "[ˋsætə͵sfaɪ]",
     "zh": "v. 滿意",
     "unit": 18,
     "example": "We cannot satisfy demand for the product.",
@@ -12926,7 +12926,7 @@ const jhWordsDB = [
   {
     "id": 31437,
     "en": "Saturday",
-    "kk": "",
+    "kk": "[ˋsætɚdi]",
     "zh": "n. 星期六",
     "unit": 18,
     "example": "We're going sailing on Saturday.",
@@ -12935,7 +12935,7 @@ const jhWordsDB = [
   {
     "id": 31438,
     "en": "sauce",
-    "kk": "",
+    "kk": "[sɔs]",
     "zh": "n. 醬料",
     "unit": 18,
     "example": "The sauce is mostly cream.",
@@ -12944,7 +12944,7 @@ const jhWordsDB = [
   {
     "id": 31439,
     "en": "save",
-    "kk": "/seɪv/",
+    "kk": "[sev]",
     "zh": "v. 拯救",
     "unit": 18,
     "example": "We should try to save water.",
@@ -12953,7 +12953,7 @@ const jhWordsDB = [
   {
     "id": 31440,
     "en": "say",
-    "kk": "/seɪ/",
+    "kk": "[se]",
     "zh": "v. 說",
     "unit": 18,
     "example": "He didn't even say sorry.",
@@ -12962,7 +12962,7 @@ const jhWordsDB = [
   {
     "id": 31441,
     "en": "scare",
-    "kk": "",
+    "kk": "[skɛr]",
     "zh": "v. (使)害怕",
     "unit": 18,
     "example": "We've had quite a scare.",
@@ -12971,7 +12971,7 @@ const jhWordsDB = [
   {
     "id": 31442,
     "en": "scarf",
-    "kk": "",
+    "kk": "[skɑrf]",
     "zh": "n. 圍巾",
     "unit": 18,
     "example": "Her scarf streamed behind her.",
@@ -12980,7 +12980,7 @@ const jhWordsDB = [
   {
     "id": 31443,
     "en": "scene",
-    "kk": "/siːn/",
+    "kk": "[sin]",
     "zh": "n. 風景",
     "unit": 18,
     "example": "It's a scene of complete devastation.",
@@ -12989,7 +12989,7 @@ const jhWordsDB = [
   {
     "id": 31444,
     "en": "scenery",
-    "kk": "",
+    "kk": "[ˋsinɚi]",
     "zh": "n. 景色",
     "unit": 18,
     "example": "The area is remarkable for its scenery.",
@@ -12998,7 +12998,7 @@ const jhWordsDB = [
   {
     "id": 31445,
     "en": "school",
-    "kk": "/skuːl/",
+    "kk": "[skul]",
     "zh": "n. 學校",
     "unit": 18,
     "example": "Which school do they attend?",
@@ -13007,7 +13007,7 @@ const jhWordsDB = [
   {
     "id": 31446,
     "en": "science",
-    "kk": "/ˈsaɪəns/",
+    "kk": "[ˋsaɪəns]",
     "zh": "n. 科學",
     "unit": 18,
     "example": "Economics is an inexact science.",
@@ -13016,7 +13016,7 @@ const jhWordsDB = [
   {
     "id": 31447,
     "en": "scientist",
-    "kk": "",
+    "kk": "[ˋsaɪəntɪst]",
     "zh": "n. 科學家",
     "unit": 18,
     "example": "He's a brilliant young scientist.",
@@ -13025,7 +13025,7 @@ const jhWordsDB = [
   {
     "id": 31448,
     "en": "scooter",
-    "kk": "",
+    "kk": "[ˋskutɚ]",
     "zh": "n. 摩托車",
     "unit": 18,
     "example": "A half-way house for many people is a scooter or motorbike.",
@@ -13034,7 +13034,7 @@ const jhWordsDB = [
   {
     "id": 31449,
     "en": "score",
-    "kk": "/skɔːr/",
+    "kk": "[skɔr]",
     "zh": "n. 得分",
     "unit": 18,
     "example": "It's my best ever score.",
@@ -13043,7 +13043,7 @@ const jhWordsDB = [
   {
     "id": 31450,
     "en": "screen",
-    "kk": "",
+    "kk": "[skrin]",
     "zh": "n. 螢幕",
     "unit": 18,
     "example": "Suddenly the screen went blank.",
@@ -13052,7 +13052,7 @@ const jhWordsDB = [
   {
     "id": 31451,
     "en": "sea",
-    "kk": "/siː/",
+    "kk": "[si]",
     "zh": "n. 海",
     "unit": 18,
     "example": "The sea rippled and sparkled.",
@@ -13061,7 +13061,7 @@ const jhWordsDB = [
   {
     "id": 31452,
     "en": "seafood",
-    "kk": "",
+    "kk": "[ˋsi͵fud]",
     "zh": "n. 海鮮",
     "unit": 18,
     "example": "Seafood is a speciality on the island.",
@@ -13070,7 +13070,7 @@ const jhWordsDB = [
   {
     "id": 31453,
     "en": "search",
-    "kk": "",
+    "kk": "[sɝtʃ]",
     "zh": "v. 搜索",
     "unit": 18,
     "example": "It was a fruitless search.",
@@ -13079,7 +13079,7 @@ const jhWordsDB = [
   {
     "id": 31454,
     "en": "season",
-    "kk": "/ˈsiːzn/",
+    "kk": "[ˋsizən]",
     "zh": "n. 季節",
     "unit": 18,
     "example": "Autumn is my favourite season.",
@@ -13088,7 +13088,7 @@ const jhWordsDB = [
   {
     "id": 31455,
     "en": "seat",
-    "kk": "/siːt/",
+    "kk": "[sit]",
     "zh": "n. 座位",
     "unit": 18,
     "example": "Stephen returned to his seat.",
@@ -13097,7 +13097,7 @@ const jhWordsDB = [
   {
     "id": 31456,
     "en": "second",
-    "kk": "/ˈsekənd/",
+    "kk": "[ˋsɛkənd]",
     "zh": "adj. 第二的",
     "unit": 18,
     "example": "The second goal was disallowed.",
@@ -13106,7 +13106,7 @@ const jhWordsDB = [
   {
     "id": 31457,
     "en": "secret",
-    "kk": "",
+    "kk": "[ˋsikrət]",
     "zh": "n. 祕密",
     "unit": 18,
     "example": "The meeting was held in secret.",
@@ -13115,7 +13115,7 @@ const jhWordsDB = [
   {
     "id": 31458,
     "en": "secretary",
-    "kk": "",
+    "kk": "[ˋsɛkrə͵tɛri]",
     "zh": "n. 祕書",
     "unit": 18,
     "example": "We hired a new secretary.",
@@ -13124,7 +13124,7 @@ const jhWordsDB = [
   {
     "id": 31459,
     "en": "section",
-    "kk": "/ˈsekʃn/",
+    "kk": "[ˋsɛkʃən]",
     "zh": "n. 部分",
     "unit": 18,
     "example": "The school has a special education section.",
@@ -13133,7 +13133,7 @@ const jhWordsDB = [
   {
     "id": 31460,
     "en": "see",
-    "kk": "/siː/",
+    "kk": "[si]",
     "zh": "v. 看見",
     "unit": 18,
     "example": "Can I see your authorization?",
@@ -13142,7 +13142,7 @@ const jhWordsDB = [
   {
     "id": 31461,
     "en": "seed",
-    "kk": "",
+    "kk": "[sid]",
     "zh": "n. 種子",
     "unit": 18,
     "example": "The top seed won comfortably.",
@@ -13151,7 +13151,7 @@ const jhWordsDB = [
   {
     "id": 31462,
     "en": "seek",
-    "kk": "/siːk/",
+    "kk": "[sik]",
     "zh": "v. 尋找",
     "unit": 18,
     "example": "We were advised to seek legal advice.",
@@ -13160,7 +13160,7 @@ const jhWordsDB = [
   {
     "id": 31463,
     "en": "seem",
-    "kk": "/siːm/",
+    "kk": "[sim]",
     "zh": "v. 似乎",
     "unit": 18,
     "example": "They seem an ill-assorted couple.",
@@ -13169,7 +13169,7 @@ const jhWordsDB = [
   {
     "id": 31464,
     "en": "seesaw",
-    "kk": "",
+    "kk": "[ˋsi͵sɔ]",
     "zh": "n. 蹺蹺板",
     "unit": 18,
     "example": "Two kids can play on a seesaw.",
@@ -13178,7 +13178,7 @@ const jhWordsDB = [
   {
     "id": 31465,
     "en": "seldom",
-    "kk": "",
+    "kk": "[ˋsɛldəm]",
     "zh": "adv. 不常",
     "unit": 18,
     "example": "I've seldom felt so happy.",
@@ -13187,7 +13187,7 @@ const jhWordsDB = [
   {
     "id": 31466,
     "en": "select",
-    "kk": "",
+    "kk": "[səˋlɛkt]",
     "zh": "v. 挑選",
     "unit": 18,
     "example": "click Tools on the menu bar and select Settings.",
@@ -13196,7 +13196,7 @@ const jhWordsDB = [
   {
     "id": 31467,
     "en": "self",
-    "kk": "",
+    "kk": "[sɛlf]",
     "zh": "n. 自我",
     "unit": 18,
     "example": "He gave a self-deprecating shrug.",
@@ -13205,7 +13205,7 @@ const jhWordsDB = [
   {
     "id": 31468,
     "en": "selfish",
-    "kk": "",
+    "kk": "[ˋsɛlfɪʃ]",
     "zh": "adj. 自私的",
     "unit": 18,
     "example": "She calls me lazy and selfish.",
@@ -13214,7 +13214,7 @@ const jhWordsDB = [
   {
     "id": 31469,
     "en": "sell",
-    "kk": "/sel/",
+    "kk": "[sɛl]",
     "zh": "v. 販賣",
     "unit": 18,
     "example": "They sell all kinds of things.",
@@ -13223,7 +13223,7 @@ const jhWordsDB = [
   {
     "id": 31470,
     "en": "semester",
-    "kk": "",
+    "kk": "[səˋmɛstɚ]",
     "zh": "n. 學期",
     "unit": 18,
     "example": "Do you think you'll pledge this semester?",
@@ -13232,7 +13232,7 @@ const jhWordsDB = [
   {
     "id": 31471,
     "en": "send",
-    "kk": "/send/",
+    "kk": "[sɛnd]",
     "zh": "v. 送",
     "unit": 18,
     "example": "Shall I send you the book?",
@@ -13241,7 +13241,7 @@ const jhWordsDB = [
   {
     "id": 31472,
     "en": "sense",
-    "kk": "/sens/",
+    "kk": "[sɛns]",
     "zh": "n. 感覺官能",
     "unit": 18,
     "example": "The sense of community is lost.",
@@ -13250,7 +13250,7 @@ const jhWordsDB = [
   {
     "id": 31473,
     "en": "sentence",
-    "kk": "",
+    "kk": "[ˋsɛntəns]",
     "zh": "n. 句子",
     "unit": 18,
     "example": "What does this sentence mean?",
@@ -13259,7 +13259,7 @@ const jhWordsDB = [
   {
     "id": 31474,
     "en": "September",
-    "kk": "",
+    "kk": "[sɛpˋtɛmbɚ]",
     "zh": "n. 九月",
     "unit": 18,
     "example": "The rains come in September.",
@@ -13268,7 +13268,7 @@ const jhWordsDB = [
   {
     "id": 31475,
     "en": "serious",
-    "kk": "/ˈsɪriəs/",
+    "kk": "[ˋsɪriəs]",
     "zh": "adj. 嚴重的",
     "unit": 18,
     "example": "You're joking. Are you serious?",
@@ -13277,7 +13277,7 @@ const jhWordsDB = [
   {
     "id": 31476,
     "en": "servant",
-    "kk": "",
+    "kk": "[ˋsɝvənt]",
     "zh": "n. 僕人",
     "unit": 18,
     "example": "He was a loyal, distinguished and very competent civil servant.",
@@ -13286,7 +13286,7 @@ const jhWordsDB = [
   {
     "id": 31477,
     "en": "serve",
-    "kk": "/sɜːrv/",
+    "kk": "[sɝv]",
     "zh": "v. 服務",
     "unit": 18,
     "example": "They serve good French cooking.",
@@ -13295,7 +13295,7 @@ const jhWordsDB = [
   {
     "id": 31478,
     "en": "service",
-    "kk": "/ˈsɜːrvɪs/",
+    "kk": "[ˋsɝvəs]",
     "zh": "n. 服務",
     "unit": 18,
     "example": "The service is maddeningly slow.",
@@ -13304,7 +13304,7 @@ const jhWordsDB = [
   {
     "id": 31479,
     "en": "set",
-    "kk": "/set/",
+    "kk": "[sɛt]",
     "zh": "n. 一套,一組",
     "unit": 18,
     "example": "I've collected the complete set.",
@@ -13313,7 +13313,7 @@ const jhWordsDB = [
   {
     "id": 31480,
     "en": "settle",
-    "kk": "",
+    "kk": "[ˋsɛtəl]",
     "zh": "v. 解決",
     "unit": 18,
     "example": "This should settle your stomach.",
@@ -13322,7 +13322,7 @@ const jhWordsDB = [
   {
     "id": 31481,
     "en": "seven",
-    "kk": "",
+    "kk": "[ˋsɛvən]",
     "zh": "n. 七",
     "unit": 18,
     "example": "The performance starts at seven.",
@@ -13331,7 +13331,7 @@ const jhWordsDB = [
   {
     "id": 31482,
     "en": "seventeen",
-    "kk": "",
+    "kk": "[ˋsɛvənˋtin]",
     "zh": "n. 十七",
     "unit": 18,
     "example": "Jenny is seventeen years old.",
@@ -13340,7 +13340,7 @@ const jhWordsDB = [
   {
     "id": 31483,
     "en": "seventy",
-    "kk": "",
+    "kk": "[ˋsɛvənti]",
     "zh": "n. 七十",
     "unit": 18,
     "example": "How old is she—seventy odd?",
@@ -13349,7 +13349,7 @@ const jhWordsDB = [
   {
     "id": 31484,
     "en": "several",
-    "kk": "/ˈsevrəl/",
+    "kk": "[ˋsɛvrəl]",
     "zh": "adj. 幾個的",
     "unit": 18,
     "example": "She wrote him several poems.",
@@ -13358,7 +13358,7 @@ const jhWordsDB = [
   {
     "id": 31485,
     "en": "shake",
-    "kk": "/ʃeɪk/",
+    "kk": "[ʃek]",
     "zh": "v. 搖動",
     "unit": 18,
     "example": "Her hands had started to shake.",
@@ -13367,7 +13367,7 @@ const jhWordsDB = [
   {
     "id": 31486,
     "en": "shall",
-    "kk": "",
+    "kk": "[ʃæl]",
     "zh": "aux. 將要",
     "unit": 18,
     "example": "Shall we order some coffee?",
@@ -13376,7 +13376,7 @@ const jhWordsDB = [
   {
     "id": 31487,
     "en": "shape",
-    "kk": "",
+    "kk": "[ʃep]",
     "zh": "n. 形狀",
     "unit": 18,
     "example": "The knives were bent out of shape.",
@@ -13385,7 +13385,7 @@ const jhWordsDB = [
   {
     "id": 31488,
     "en": "share",
-    "kk": "/ʃer/",
+    "kk": "[ʃɛr]",
     "zh": "v. 分享",
     "unit": 18,
     "example": "Share prices moved ahead today.",
@@ -13394,7 +13394,7 @@ const jhWordsDB = [
   {
     "id": 31489,
     "en": "shark",
-    "kk": "",
+    "kk": "[ʃɑrk]",
     "zh": "n. 鯊魚",
     "unit": 18,
     "example": "The shark described a circle around the shoal of fish.",
@@ -13403,7 +13403,7 @@ const jhWordsDB = [
   {
     "id": 31490,
     "en": "sharp",
-    "kk": "",
+    "kk": "[ʃɑrp]",
     "zh": "adj. 銳利的",
     "unit": 18,
     "example": "He has a sharp tongue.",
@@ -13412,7 +13412,7 @@ const jhWordsDB = [
   {
     "id": 31491,
     "en": "sheep",
-    "kk": "",
+    "kk": "[ʃip]",
     "zh": "n. 羊",
     "unit": 18,
     "example": "Sheep were grazing in the fields.",
@@ -13421,7 +13421,7 @@ const jhWordsDB = [
   {
     "id": 31492,
     "en": "sheet",
-    "kk": "",
+    "kk": "[ʃit]",
     "zh": "n. 床單",
     "unit": 18,
     "example": "This sheet has a tear in it.",
@@ -13430,7 +13430,7 @@ const jhWordsDB = [
   {
     "id": 31493,
     "en": "shelf",
-    "kk": "",
+    "kk": "[ʃɛlf]",
     "zh": "n. 架",
     "unit": 18,
     "example": "I can't reach the top shelf.",
@@ -13439,7 +13439,7 @@ const jhWordsDB = [
   {
     "id": 31494,
     "en": "shell",
-    "kk": "",
+    "kk": "[ʃɛl]",
     "zh": "n. 貝殼",
     "unit": 18,
     "example": "The animal retracted into its shell.",
@@ -13448,7 +13448,7 @@ const jhWordsDB = [
   {
     "id": 31495,
     "en": "shine",
-    "kk": "",
+    "kk": "[ʃaɪn]",
     "zh": "v. 照耀",
     "unit": 18,
     "example": "This gel gives a beautiful shine to the hair.",
@@ -13457,7 +13457,7 @@ const jhWordsDB = [
   {
     "id": 31496,
     "en": "ship",
-    "kk": "/ʃɪp/",
+    "kk": "[ʃɪp]",
     "zh": "n. 船",
     "unit": 18,
     "example": "The ship was carrying contraband.",
@@ -13466,7 +13466,7 @@ const jhWordsDB = [
   {
     "id": 31497,
     "en": "shirt",
-    "kk": "",
+    "kk": "[ʃɝt]",
     "zh": "n. 襯衫",
     "unit": 18,
     "example": "What's your shirt made of?",
@@ -13475,7 +13475,7 @@ const jhWordsDB = [
   {
     "id": 31498,
     "en": "shock",
-    "kk": "",
+    "kk": "[ʃɑk]",
     "zh": "n. 震驚",
     "unit": 18,
     "example": "He's in for a shock!",
@@ -13484,7 +13484,7 @@ const jhWordsDB = [
   {
     "id": 31499,
     "en": "shoe",
-    "kk": "",
+    "kk": "[ʃu]",
     "zh": "n. 鞋子",
     "unit": 18,
     "example": "The back of my shoe is rubbing.",
@@ -13493,7 +13493,7 @@ const jhWordsDB = [
   {
     "id": 31500,
     "en": "shop",
-    "kk": "/ʃɑːp/",
+    "kk": "[ʃɑp]",
     "zh": "n. 商店",
     "unit": 18,
     "example": "The shop bell jangled loudly.",
@@ -13502,7 +13502,7 @@ const jhWordsDB = [
   {
     "id": 31501,
     "en": "shoot",
-    "kk": "/ʃuːt/",
+    "kk": "[ʃut]",
     "zh": "v. 射擊",
     "unit": 18,
     "example": "He'd love to shoot his film in Cuba.",
@@ -13511,7 +13511,7 @@ const jhWordsDB = [
   {
     "id": 31502,
     "en": "shore",
-    "kk": "",
+    "kk": "[ʃɔr]",
     "zh": "n. 岸",
     "unit": 18,
     "example": "Huge waves lashed the shore.",
@@ -13520,7 +13520,7 @@ const jhWordsDB = [
   {
     "id": 31503,
     "en": "short",
-    "kk": "/ʃɔːrt/",
+    "kk": "[ʃɔrt]",
     "zh": "adj. 短的",
     "unit": 18,
     "example": "Short hair really becomes you.",
@@ -13529,7 +13529,7 @@ const jhWordsDB = [
   {
     "id": 31504,
     "en": "shorts",
-    "kk": "",
+    "kk": "[ʃɔrts]",
     "zh": "n. 短褲",
     "unit": 18,
     "example": "My shorts were chafing my thighs.",
@@ -13538,7 +13538,7 @@ const jhWordsDB = [
   {
     "id": 31505,
     "en": "should",
-    "kk": "/ʃʊd/",
+    "kk": "[ʃʊd]",
     "zh": "aux. 應該",
     "unit": 18,
     "example": "This should save you shedloads.",
@@ -13547,7 +13547,7 @@ const jhWordsDB = [
   {
     "id": 31506,
     "en": "shoulder",
-    "kk": "",
+    "kk": "[ˋʃoldɚ]",
     "zh": "n. 肩膀",
     "unit": 18,
     "example": "The arrow pierced his shoulder.",
@@ -13556,7 +13556,7 @@ const jhWordsDB = [
   {
     "id": 31507,
     "en": "shout",
-    "kk": "",
+    "kk": "[ʃaʊt]",
     "zh": "v. 大聲喊叫",
     "unit": 18,
     "example": "It's wrong to swear and shout.",
@@ -13565,7 +13565,7 @@ const jhWordsDB = [
   {
     "id": 31508,
     "en": "show",
-    "kk": "/ʃoʊ/",
+    "kk": "[ʃo]",
     "zh": "v. 展現",
     "unit": 18,
     "example": "The show was just awesome.",
@@ -13574,7 +13574,7 @@ const jhWordsDB = [
   {
     "id": 31509,
     "en": "shower",
-    "kk": "",
+    "kk": "[ˋʃaʊɚ]",
     "zh": "n. 淋浴",
     "unit": 18,
     "example": "She usually sings in the shower.",
@@ -13583,7 +13583,7 @@ const jhWordsDB = [
   {
     "id": 31510,
     "en": "shrimp",
-    "kk": "",
+    "kk": "[ʃrɪmp]",
     "zh": "n. 蝦子",
     "unit": 18,
     "example": "Hines slowly masticated a shrimp.",
@@ -13592,7 +13592,7 @@ const jhWordsDB = [
   {
     "id": 31511,
     "en": "shut",
-    "kk": "",
+    "kk": "[ʃʌt]",
     "zh": "v. 關閉",
     "unit": 18,
     "example": "She slammed the door shut.",
@@ -13601,7 +13601,7 @@ const jhWordsDB = [
   {
     "id": 31512,
     "en": "shy",
-    "kk": "",
+    "kk": "[ʃaɪ]",
     "zh": "adj. 害羞的",
     "unit": 18,
     "example": "Their son was painfully shy.",
@@ -13610,7 +13610,7 @@ const jhWordsDB = [
   {
     "id": 31513,
     "en": "sick",
-    "kk": "",
+    "kk": "[sɪk]",
     "zh": "adj. 生病的",
     "unit": 18,
     "example": "The sick man's pupils were dilated.",
@@ -13619,7 +13619,7 @@ const jhWordsDB = [
   {
     "id": 31514,
     "en": "side",
-    "kk": "/saɪd/",
+    "kk": "[saɪd]",
     "zh": "n. 面",
     "unit": 18,
     "example": "The ship rolled from side to side.",
@@ -13628,7 +13628,7 @@ const jhWordsDB = [
   {
     "id": 31515,
     "en": "sidewalk",
-    "kk": "",
+    "kk": "[ˋsaɪd͵wɔk]",
     "zh": "n. 人行道",
     "unit": 18,
     "example": "Glass from broken bottles litters the sidewalk.",
@@ -13637,7 +13637,7 @@ const jhWordsDB = [
   {
     "id": 31516,
     "en": "sight",
-    "kk": "",
+    "kk": "[saɪt]",
     "zh": "n. 視力",
     "unit": 18,
     "example": "Her sight is beginning to go.",
@@ -13646,7 +13646,7 @@ const jhWordsDB = [
   {
     "id": 31517,
     "en": "sign",
-    "kk": "/saɪn/",
+    "kk": "[saɪn]",
     "zh": "v. 示意",
     "unit": 18,
     "example": "The sign read 'No admittance'.",
@@ -13655,7 +13655,7 @@ const jhWordsDB = [
   {
     "id": 31518,
     "en": "silence",
-    "kk": "",
+    "kk": "[ˋsaɪləns]",
     "zh": "n. 沉默",
     "unit": 18,
     "example": "There was a fraught silence.",
@@ -13664,7 +13664,7 @@ const jhWordsDB = [
   {
     "id": 31519,
     "en": "silent",
-    "kk": "",
+    "kk": "[ˋsaɪlənt]",
     "zh": "adj. 沉默的",
     "unit": 18,
     "example": "The three men remained silent.",
@@ -13673,7 +13673,7 @@ const jhWordsDB = [
   {
     "id": 31520,
     "en": "silk",
-    "kk": "",
+    "kk": "[sɪlk]",
     "zh": "n. 絲",
     "unit": 18,
     "example": "She wore purple and green silk.",
@@ -13682,7 +13682,7 @@ const jhWordsDB = [
   {
     "id": 31521,
     "en": "silly",
-    "kk": "",
+    "kk": "[ˋsɪli]",
     "zh": "adj. 傻的",
     "unit": 18,
     "example": "No, silly, those aren't your shoes!",
@@ -13691,7 +13691,7 @@ const jhWordsDB = [
   {
     "id": 31522,
     "en": "silver",
-    "kk": "",
+    "kk": "[ˋsɪlvɚ]",
     "zh": "n. 銀",
     "unit": 18,
     "example": "He's an Olympic silver medallist.",
@@ -13700,7 +13700,7 @@ const jhWordsDB = [
   {
     "id": 31523,
     "en": "similar",
-    "kk": "/ˈsɪmələr/",
+    "kk": "[ˋsɪməlɚ]",
     "zh": "adj. 相似的",
     "unit": 18,
     "example": "They have uncannily similar voices.",
@@ -13709,7 +13709,7 @@ const jhWordsDB = [
   {
     "id": 31524,
     "en": "simple",
-    "kk": "/ˈsɪmpl/",
+    "kk": "[ˋsɪmpəl]",
     "zh": "adj. 簡單的",
     "unit": 18,
     "example": "The poem uses simple language.",
@@ -13718,7 +13718,7 @@ const jhWordsDB = [
   {
     "id": 31525,
     "en": "simply",
-    "kk": "",
+    "kk": "[ˋsɪmpli]",
     "zh": "adv. 簡單地",
     "unit": 18,
     "example": "The house was simply furnished.",
@@ -13727,7 +13727,7 @@ const jhWordsDB = [
   {
     "id": 31526,
     "en": "since",
-    "kk": "/sɪns/",
+    "kk": "[sɪns]",
     "zh": "prep. 從...時起",
     "unit": 18,
     "example": "We've lived here since 1994.",
@@ -13736,7 +13736,7 @@ const jhWordsDB = [
   {
     "id": 31527,
     "en": "sincere",
-    "kk": "",
+    "kk": "[sɪnˋsɪr]",
     "zh": "adj. 真誠的",
     "unit": 18,
     "example": "He seemed sincere enough when he said he wanted to help.",
@@ -13745,7 +13745,7 @@ const jhWordsDB = [
   {
     "id": 31528,
     "en": "sing",
-    "kk": "/sɪŋ/",
+    "kk": "[sɪŋ]",
     "zh": "v. 唱歌",
     "unit": 18,
     "example": "Can white girls sing the blues?",
@@ -13754,7 +13754,7 @@ const jhWordsDB = [
   {
     "id": 31529,
     "en": "singer",
-    "kk": "",
+    "kk": "[ˋsɪŋɚ]",
     "zh": "n. 歌手",
     "unit": 18,
     "example": "The singer re-formed his band.",
@@ -13763,7 +13763,7 @@ const jhWordsDB = [
   {
     "id": 31530,
     "en": "single",
-    "kk": "/ˈsɪŋɡl/",
+    "kk": "[ˋsɪŋɡəl]",
     "zh": "adj. 單一的",
     "unit": 18,
     "example": "How much is a single to York?",
@@ -13772,7 +13772,7 @@ const jhWordsDB = [
   {
     "id": 31531,
     "en": "sink",
-    "kk": "",
+    "kk": "[sɪŋk]",
     "zh": "v. 沉",
     "unit": 18,
     "example": "He decided to scour the sink.",
@@ -13781,7 +13781,7 @@ const jhWordsDB = [
   {
     "id": 31532,
     "en": "sir",
-    "kk": "",
+    "kk": "[sɝ]",
     "zh": "n. 先生",
     "unit": 18,
     "example": "Is everything in order, sir?",
@@ -13790,7 +13790,7 @@ const jhWordsDB = [
   {
     "id": 31533,
     "en": "sister",
-    "kk": "/ˈsɪstər/",
+    "kk": "[ˋsɪstɚ]",
     "zh": "n. 姊妹",
     "unit": 18,
     "example": "His sister Sarah helped him.",
@@ -13799,7 +13799,7 @@ const jhWordsDB = [
   {
     "id": 31534,
     "en": "sit",
-    "kk": "/sɪt/",
+    "kk": "[sɪt]",
     "zh": "v. 坐",
     "unit": 18,
     "example": "'Sit down!' Meekly, she obeyed.",
@@ -13808,7 +13808,7 @@ const jhWordsDB = [
   {
     "id": 31535,
     "en": "six",
-    "kk": "/sɪks/",
+    "kk": "[sɪks]",
     "zh": "n. 六",
     "unit": 18,
     "example": "Six bottles should be enough.",
@@ -13817,7 +13817,7 @@ const jhWordsDB = [
   {
     "id": 31536,
     "en": "sixteen",
-    "kk": "",
+    "kk": "[sɪkˋstin]",
     "zh": "n. 十六",
     "unit": 18,
     "example": "He worked sixteen hours a day.",
@@ -13826,7 +13826,7 @@ const jhWordsDB = [
   {
     "id": 31537,
     "en": "sixty",
-    "kk": "",
+    "kk": "[ˋsɪksti]",
     "zh": "n. 六十",
     "unit": 18,
     "example": "She is close on sixty.",
@@ -13835,7 +13835,7 @@ const jhWordsDB = [
   {
     "id": 31538,
     "en": "size",
-    "kk": "/saɪz/",
+    "kk": "[saɪz]",
     "zh": "n. 尺碼",
     "unit": 18,
     "example": "The jacket was the wrong size.",
@@ -13844,7 +13844,7 @@ const jhWordsDB = [
   {
     "id": 31539,
     "en": "skate",
-    "kk": "",
+    "kk": "[sket]",
     "zh": "v. 溜冰",
     "unit": 18,
     "example": "We never learned to ice skate or ski.",
@@ -13853,7 +13853,7 @@ const jhWordsDB = [
   {
     "id": 31540,
     "en": "ski",
-    "kk": "",
+    "kk": "[ski]",
     "zh": "v. 滑雪",
     "unit": 18,
     "example": "There are three ski lifts in operation.",
@@ -13862,7 +13862,7 @@ const jhWordsDB = [
   {
     "id": 31541,
     "en": "skill",
-    "kk": "/skɪl/",
+    "kk": "[skɪl]",
     "zh": "n. 技巧",
     "unit": 18,
     "example": "It's time to showcase real skills.",
@@ -13871,7 +13871,7 @@ const jhWordsDB = [
   {
     "id": 31542,
     "en": "skillful",
-    "kk": "",
+    "kk": "[ˋskɪlfəl]",
     "zh": "adj. 熟練的",
     "unit": 18,
     "example": "Military tactics are skillful.",
@@ -13880,7 +13880,7 @@ const jhWordsDB = [
   {
     "id": 31543,
     "en": "skin",
-    "kk": "/skɪn/",
+    "kk": "[skɪn]",
     "zh": "n. 皮膚",
     "unit": 18,
     "example": "I can skin up.",
@@ -13889,7 +13889,7 @@ const jhWordsDB = [
   {
     "id": 31544,
     "en": "skinny",
-    "kk": "",
+    "kk": "[ˋskɪni]",
     "zh": "adj. 皮包骨的",
     "unit": 18,
     "example": "He was quite a skinny little boy.",
@@ -13898,7 +13898,7 @@ const jhWordsDB = [
   {
     "id": 31545,
     "en": "skirt",
-    "kk": "",
+    "kk": "[skɝt]",
     "zh": "n. 裙子",
     "unit": 18,
     "example": "There's a mark on your skirt.",
@@ -13907,7 +13907,7 @@ const jhWordsDB = [
   {
     "id": 31546,
     "en": "sky",
-    "kk": "",
+    "kk": "[skaɪ]",
     "zh": "n. 天空",
     "unit": 18,
     "example": "Clouds drifted across the sky.",
@@ -13916,7 +13916,7 @@ const jhWordsDB = [
   {
     "id": 31547,
     "en": "sleep",
-    "kk": "/sliːp/",
+    "kk": "[slip]",
     "zh": "v. 睡覺",
     "unit": 18,
     "example": "Finally she drifted into sleep.",
@@ -13925,7 +13925,7 @@ const jhWordsDB = [
   {
     "id": 31548,
     "en": "sleepy",
-    "kk": "",
+    "kk": "[ˋslipi]",
     "zh": "adj. 想睡的",
     "unit": 18,
     "example": "He had begun to feel sleepy.",
@@ -13934,7 +13934,7 @@ const jhWordsDB = [
   {
     "id": 31549,
     "en": "slender",
-    "kk": "",
+    "kk": "[ˋslɛndɚ]",
     "zh": "adj. 纖細的",
     "unit": 18,
     "example": "Sherry is black, tall, slender and soft-spoken.",
@@ -13943,7 +13943,7 @@ const jhWordsDB = [
   {
     "id": 31550,
     "en": "slide",
-    "kk": "",
+    "kk": "[slaɪd]",
     "zh": "v. 滑動",
     "unit": 18,
     "example": "The dollar continued to slide.",
@@ -13952,7 +13952,7 @@ const jhWordsDB = [
   {
     "id": 31551,
     "en": "slim",
-    "kk": "",
+    "kk": "[slɪm]",
     "zh": "adj. 苗條的",
     "unit": 18,
     "example": "She goes for tall slim men.",
@@ -13961,7 +13961,7 @@ const jhWordsDB = [
   {
     "id": 31552,
     "en": "slippers",
-    "kk": "",
+    "kk": "[ˋslɪpɚz]",
     "zh": "n. 拖鞋",
     "unit": 18,
     "example": "She spent the morning padding about the house in her slippers.",
@@ -13970,7 +13970,7 @@ const jhWordsDB = [
   {
     "id": 31553,
     "en": "slow",
-    "kk": "",
+    "kk": "[slo]",
     "zh": "adj. 緩慢的",
     "unit": 18,
     "example": "The process was needlessly slow.",
@@ -13979,7 +13979,7 @@ const jhWordsDB = [
   {
     "id": 31554,
     "en": "small",
-    "kk": "/smɔːl/",
+    "kk": "[smɔl]",
     "zh": "adj. 小的",
     "unit": 18,
     "example": "The room was disappointingly small.",
@@ -13988,7 +13988,7 @@ const jhWordsDB = [
   {
     "id": 31555,
     "en": "smart",
-    "kk": "",
+    "kk": "[smɑrt]",
     "zh": "adj. 聰明的",
     "unit": 18,
     "example": "She mixes with the smart set.",
@@ -13997,7 +13997,7 @@ const jhWordsDB = [
   {
     "id": 31556,
     "en": "smell",
-    "kk": "",
+    "kk": "[smɛl]",
     "zh": "v. 聞",
     "unit": 18,
     "example": "Where's that smell coming from?",
@@ -14006,7 +14006,7 @@ const jhWordsDB = [
   {
     "id": 31557,
     "en": "smile",
-    "kk": "/smaɪl/",
+    "kk": "[smaɪl]",
     "zh": "v. 微笑",
     "unit": 18,
     "example": "A smile brightened her face.",
@@ -14015,7 +14015,7 @@ const jhWordsDB = [
   {
     "id": 31558,
     "en": "smoke",
-    "kk": "",
+    "kk": "[smok]",
     "zh": "n. 煙",
     "unit": 18,
     "example": "Smoke had blackened the walls.",
@@ -14024,7 +14024,7 @@ const jhWordsDB = [
   {
     "id": 31559,
     "en": "snack",
-    "kk": "",
+    "kk": "[snæk]",
     "zh": "n. 點心",
     "unit": 18,
     "example": "Lunch was a snack in the fields.",
@@ -14033,7 +14033,7 @@ const jhWordsDB = [
   {
     "id": 31560,
     "en": "snail",
-    "kk": "",
+    "kk": "[snel]",
     "zh": "n. 蝸牛",
     "unit": 18,
     "example": "Is the snail really helpful?",
@@ -14042,7 +14042,7 @@ const jhWordsDB = [
   {
     "id": 31561,
     "en": "snake",
-    "kk": "",
+    "kk": "[snek]",
     "zh": "n. 蛇",
     "unit": 18,
     "example": "A snake was twisting around his arm.",
@@ -14051,7 +14051,7 @@ const jhWordsDB = [
   {
     "id": 31562,
     "en": "sneakers",
-    "kk": "",
+    "kk": "[ˋsnikɚz]",
     "zh": "n. 運動鞋",
     "unit": 18,
     "example": "He wore old jeans and a pair of sneakers.",
@@ -14060,7 +14060,7 @@ const jhWordsDB = [
   {
     "id": 31563,
     "en": "snow",
-    "kk": "",
+    "kk": "[sno]",
     "zh": "n. 雪",
     "unit": 18,
     "example": "It's hard work shovelling snow.",
@@ -14069,7 +14069,7 @@ const jhWordsDB = [
   {
     "id": 31564,
     "en": "snowy",
-    "kk": "",
+    "kk": "[ˋsnoi]",
     "zh": "adj. 下雪多的",
     "unit": 18,
     "example": "We strode across the snowy fields.",
@@ -14078,7 +14078,7 @@ const jhWordsDB = [
   {
     "id": 31565,
     "en": "so",
-    "kk": "",
+    "kk": "[so]",
     "zh": "adv. 如此",
     "unit": 18,
     "example": "She is always so chic, so elegant.",
@@ -14087,7 +14087,7 @@ const jhWordsDB = [
   {
     "id": 31566,
     "en": "soap",
-    "kk": "",
+    "kk": "[sop]",
     "zh": "n. 肥皂",
     "unit": 18,
     "example": "He had soap suds in his ears.",
@@ -14096,7 +14096,7 @@ const jhWordsDB = [
   {
     "id": 31567,
     "en": "soccer",
-    "kk": "",
+    "kk": "[ˋsɑkɚ]",
     "zh": "n. 足球",
     "unit": 18,
     "example": "He coaches basketball and soccer.",
@@ -14105,7 +14105,7 @@ const jhWordsDB = [
   {
     "id": 31568,
     "en": "social",
-    "kk": "/ˈsoʊʃl/",
+    "kk": "[ˋsoʃəl]",
     "zh": "adj. 社會的",
     "unit": 18,
     "example": "I have a fantastic social life.",
@@ -14114,7 +14114,7 @@ const jhWordsDB = [
   {
     "id": 31569,
     "en": "society",
-    "kk": "/səˈsaɪəti/",
+    "kk": "[səˋsaɪəti]",
     "zh": "n. 社會",
     "unit": 18,
     "example": "Ours is a secular society.",
@@ -14123,7 +14123,7 @@ const jhWordsDB = [
   {
     "id": 31570,
     "en": "sock",
-    "kk": "",
+    "kk": "[sɑk]",
     "zh": "n. 襪子",
     "unit": 18,
     "example": "He groped around in the dark for his other sock.",
@@ -14132,7 +14132,7 @@ const jhWordsDB = [
   {
     "id": 31571,
     "en": "soda",
-    "kk": "",
+    "kk": "[ˋsodə]",
     "zh": "n. 汽水",
     "unit": 18,
     "example": "She quickly gulped her soda.",
@@ -14141,7 +14141,7 @@ const jhWordsDB = [
   {
     "id": 31572,
     "en": "sofa",
-    "kk": "",
+    "kk": "[ˋsofə]",
     "zh": "n. 沙發",
     "unit": 18,
     "example": "They were snogging on the sofa.",
@@ -14150,7 +14150,7 @@ const jhWordsDB = [
   {
     "id": 31573,
     "en": "soft",
-    "kk": "/sɔːft/",
+    "kk": "[sɑft]",
     "zh": "adj. 軟的",
     "unit": 18,
     "example": "The grass was soft and springy.",
@@ -14159,7 +14159,7 @@ const jhWordsDB = [
   {
     "id": 31574,
     "en": "soldier",
-    "kk": "/ˈsoʊldʒər/",
+    "kk": "[ˋsoldʒɚ]",
     "zh": "n. 士兵",
     "unit": 18,
     "example": "The soldier acted qua soldier, not as a human being.",
@@ -14168,7 +14168,7 @@ const jhWordsDB = [
   {
     "id": 31575,
     "en": "solve",
-    "kk": "/sɑːlv/",
+    "kk": "[sɑlv]",
     "zh": "v. 解決",
     "unit": 18,
     "example": "It isn't going to solve a single thing.",
@@ -14177,7 +14177,7 @@ const jhWordsDB = [
   {
     "id": 31576,
     "en": "some",
-    "kk": "/sʌm/",
+    "kk": "[sʌm]",
     "zh": "adj. 一些的",
     "unit": 18,
     "example": "Robin opened some champagne.",
@@ -14186,7 +14186,7 @@ const jhWordsDB = [
   {
     "id": 31577,
     "en": "someone",
-    "kk": "/ˈsʌmwʌn/",
+    "kk": "[ˋsʌm͵wʌn]",
     "zh": "pron. 某人",
     "unit": 18,
     "example": "Someone threw an apple core.",
@@ -14195,7 +14195,7 @@ const jhWordsDB = [
   {
     "id": 31578,
     "en": "something",
-    "kk": "/ˈsʌmθɪŋ/",
+    "kk": "[ˋsʌmθɪŋ]",
     "zh": "n. 某事",
     "unit": 18,
     "example": "It tastes something like melon.",
@@ -14204,7 +14204,7 @@ const jhWordsDB = [
   {
     "id": 31579,
     "en": "sometimes",
-    "kk": "/ˈsʌmtaɪmz/",
+    "kk": "[səmˋtaɪmz]",
     "zh": "adv. 有時候",
     "unit": 18,
     "example": "Life seems so unfair sometimes.",
@@ -14213,7 +14213,7 @@ const jhWordsDB = [
   {
     "id": 31580,
     "en": "somewhere",
-    "kk": "",
+    "kk": "[ˋsʌm͵wɛr]",
     "zh": "adv. 在某處",
     "unit": 18,
     "example": "Sarah's off in India somewhere.",
@@ -14222,7 +14222,7 @@ const jhWordsDB = [
   {
     "id": 31581,
     "en": "son",
-    "kk": "/sʌn/",
+    "kk": "[sʌn]",
     "zh": "n. 兒子",
     "unit": 18,
     "example": "Their son was painfully shy.",
@@ -14231,7 +14231,7 @@ const jhWordsDB = [
   {
     "id": 31582,
     "en": "song",
-    "kk": "/sɔːŋ/",
+    "kk": "[sɔŋ]",
     "zh": "n. 歌",
     "unit": 18,
     "example": "The melancholy song died away.",
@@ -14240,7 +14240,7 @@ const jhWordsDB = [
   {
     "id": 31583,
     "en": "soon",
-    "kk": "/suːn/",
+    "kk": "[sun]",
     "zh": "adv. 不久",
     "unit": 18,
     "example": "Things soon returned to normal.",
@@ -14249,7 +14249,7 @@ const jhWordsDB = [
   {
     "id": 31584,
     "en": "sore",
-    "kk": "",
+    "kk": "[sɔr]",
     "zh": "adj. 疼痛的",
     "unit": 18,
     "example": "Symptoms include a sore throat.",
@@ -14258,7 +14258,7 @@ const jhWordsDB = [
   {
     "id": 31585,
     "en": "sorry",
-    "kk": "",
+    "kk": "[ˋsɑri]",
     "zh": "adj. 感到抱歉的",
     "unit": 18,
     "example": "'Sorry,' she said humbly.",
@@ -14267,7 +14267,7 @@ const jhWordsDB = [
   {
     "id": 31586,
     "en": "soul",
-    "kk": "",
+    "kk": "[sol]",
     "zh": "n. 靈魂",
     "unit": 18,
     "example": "We commend her soul to God.",
@@ -14276,7 +14276,7 @@ const jhWordsDB = [
   {
     "id": 31587,
     "en": "sound",
-    "kk": "/saʊnd/",
+    "kk": "[saʊnd]",
     "zh": "v. 聽起來",
     "unit": 18,
     "example": "You don't sound very sure.",
@@ -14285,7 +14285,7 @@ const jhWordsDB = [
   {
     "id": 31588,
     "en": "soup",
-    "kk": "",
+    "kk": "[sup]",
     "zh": "n. 湯",
     "unit": 18,
     "example": "The soup has very little taste.",
@@ -14294,7 +14294,7 @@ const jhWordsDB = [
   {
     "id": 31589,
     "en": "sour",
-    "kk": "",
+    "kk": "[ˋsaʊɚ]",
     "zh": "adj. 酸的",
     "unit": 18,
     "example": "The heat turned the milk sour.",
@@ -14303,7 +14303,7 @@ const jhWordsDB = [
   {
     "id": 31590,
     "en": "source",
-    "kk": "",
+    "kk": "[sɔrs]",
     "zh": "n. 出處",
     "unit": 18,
     "example": "What is their main source of income?",
@@ -14312,7 +14312,7 @@ const jhWordsDB = [
   {
     "id": 31591,
     "en": "south",
-    "kk": "/saʊθ/",
+    "kk": "[saʊθ]",
     "zh": "n. 南方",
     "unit": 18,
     "example": "Swallows migrate south in winter.",
@@ -14321,7 +14321,7 @@ const jhWordsDB = [
   {
     "id": 31592,
     "en": "soy",
-    "kk": "",
+    "kk": "[sɔɪ]",
     "zh": "n. 醬油",
     "unit": 18,
     "example": "Enormous acreages of soy beans are grown in the United States.",
@@ -14330,7 +14330,7 @@ const jhWordsDB = [
   {
     "id": 31593,
     "en": "space",
-    "kk": "/speɪs/",
+    "kk": "[spes]",
     "zh": "n. 空間",
     "unit": 18,
     "example": "She needed space to be herself.",
@@ -14339,7 +14339,7 @@ const jhWordsDB = [
   {
     "id": 31594,
     "en": "spaghetti",
-    "kk": "",
+    "kk": "[spəˋɡɛti]",
     "zh": "n. 義大利麵",
     "unit": 18,
     "example": "He's a dab hand at cooking spaghetti.",
@@ -14348,7 +14348,7 @@ const jhWordsDB = [
   {
     "id": 31595,
     "en": "speak",
-    "kk": "/spiːk/",
+    "kk": "[spik]",
     "zh": "v. 講話",
     "unit": 18,
     "example": "I agreed to speak second.",
@@ -14357,7 +14357,7 @@ const jhWordsDB = [
   {
     "id": 31596,
     "en": "speaker",
-    "kk": "",
+    "kk": "[ˋspikɚ]",
     "zh": "n. 演講者",
     "unit": 18,
     "example": "She's a very capable speaker.",
@@ -14366,7 +14366,7 @@ const jhWordsDB = [
   {
     "id": 31597,
     "en": "special",
-    "kk": "/ˈspeʃl/",
+    "kk": "[ˋspɛʃəl]",
     "zh": "adj. 特別的",
     "unit": 18,
     "example": "Couldn't we call a special meeting?",
@@ -14375,7 +14375,7 @@ const jhWordsDB = [
   {
     "id": 31598,
     "en": "speech",
-    "kk": "",
+    "kk": "[spitʃ]",
     "zh": "n. 演講",
     "unit": 18,
     "example": "He muffed his opening speech.",
@@ -14384,7 +14384,7 @@ const jhWordsDB = [
   {
     "id": 31599,
     "en": "speed",
-    "kk": "",
+    "kk": "[spid]",
     "zh": "n. 速度",
     "unit": 18,
     "example": "The car was gathering speed.",
@@ -14393,7 +14393,7 @@ const jhWordsDB = [
   {
     "id": 31600,
     "en": "spell",
-    "kk": "",
+    "kk": "[spɛl]",
     "zh": "v. 拼寫",
     "unit": 18,
     "example": "I've never been able to spell.",
@@ -14402,7 +14402,7 @@ const jhWordsDB = [
   {
     "id": 31601,
     "en": "spend",
-    "kk": "/spend/",
+    "kk": "[spɛnd]",
     "zh": "v. 花費(時間)",
     "unit": 18,
     "example": "I spend too much time watching television.",
@@ -14411,7 +14411,7 @@ const jhWordsDB = [
   {
     "id": 31602,
     "en": "spider",
-    "kk": "",
+    "kk": "[ˋspaɪdɚ]",
     "zh": "n. 蜘蛛",
     "unit": 18,
     "example": "A spider had spun a perfect web outside the window.",
@@ -14420,7 +14420,7 @@ const jhWordsDB = [
   {
     "id": 31603,
     "en": "spirit",
-    "kk": "",
+    "kk": "[ˋspɪrət]",
     "zh": "n. 精神",
     "unit": 18,
     "example": "The human spirit is virtually indestructible.",
@@ -14429,7 +14429,7 @@ const jhWordsDB = [
   {
     "id": 31604,
     "en": "spoon",
-    "kk": "",
+    "kk": "[spun]",
     "zh": "n. 湯匙",
     "unit": 18,
     "example": "She licked the spoon clean.",
@@ -14438,7 +14438,7 @@ const jhWordsDB = [
   {
     "id": 31605,
     "en": "sport",
-    "kk": "",
+    "kk": "[spɔrt]",
     "zh": "n. 體育活動",
     "unit": 18,
     "example": "I'm not interested in sport.",
@@ -14447,7 +14447,7 @@ const jhWordsDB = [
   {
     "id": 31606,
     "en": "spring",
-    "kk": "",
+    "kk": "[sprɪŋ]",
     "zh": "n. 春天",
     "unit": 18,
     "example": "Spring came late this year.",
@@ -14456,7 +14456,7 @@ const jhWordsDB = [
   {
     "id": 31607,
     "en": "square",
-    "kk": "",
+    "kk": "[skwɛr]",
     "zh": "n. 廣場",
     "unit": 18,
     "example": "They live at 95 Russell Square.",
@@ -14465,7 +14465,7 @@ const jhWordsDB = [
   {
     "id": 31608,
     "en": "stage",
-    "kk": "/steɪdʒ/",
+    "kk": "[stedʒ]",
     "zh": "n. 舞臺",
     "unit": 18,
     "example": "She pirouetted across the stage.",
@@ -14474,7 +14474,7 @@ const jhWordsDB = [
   {
     "id": 31609,
     "en": "stair",
-    "kk": "",
+    "kk": "[stɛr]",
     "zh": "n. 樓梯",
     "unit": 18,
     "example": "The house had a panelled hall and a fine oak stair.",
@@ -14483,7 +14483,7 @@ const jhWordsDB = [
   {
     "id": 31610,
     "en": "stamp",
-    "kk": "",
+    "kk": "[stæmp]",
     "zh": "n. 郵票",
     "unit": 18,
     "example": "He stuck a stamp on the envelope.",
@@ -14492,7 +14492,7 @@ const jhWordsDB = [
   {
     "id": 31611,
     "en": "stand",
-    "kk": "",
+    "kk": "[stænd]",
     "zh": "v. 站起來",
     "unit": 18,
     "example": "I couldn't stand that yowling.",
@@ -14501,7 +14501,7 @@ const jhWordsDB = [
   {
     "id": 31612,
     "en": "star",
-    "kk": "/stɑːr/",
+    "kk": "[stɑr]",
     "zh": "n. 星星",
     "unit": 18,
     "example": "She's a US soap star.",
@@ -14510,7 +14510,7 @@ const jhWordsDB = [
   {
     "id": 31613,
     "en": "start",
-    "kk": "/stɑːrt/",
+    "kk": "[stɑrt]",
     "zh": "v. 開始",
     "unit": 18,
     "example": "They determined to start early.",
@@ -14519,7 +14519,7 @@ const jhWordsDB = [
   {
     "id": 31614,
     "en": "state",
-    "kk": "/steɪt/",
+    "kk": "[stet]",
     "zh": "v. 敘述",
     "unit": 18,
     "example": "Music can induce a meditative state.",
@@ -14528,7 +14528,7 @@ const jhWordsDB = [
   {
     "id": 31615,
     "en": "station",
-    "kk": "/ˈsteɪʃn/",
+    "kk": "[ˋsteʃən]",
     "zh": "n. 車站",
     "unit": 18,
     "example": "The train pulled into a station.",
@@ -14537,7 +14537,7 @@ const jhWordsDB = [
   {
     "id": 31616,
     "en": "stationery",
-    "kk": "",
+    "kk": "[ˋsteʃə͵nɛri]",
     "zh": "n. 文具",
     "unit": 18,
     "example": "The stationery order has arrived.",
@@ -14546,7 +14546,7 @@ const jhWordsDB = [
   {
     "id": 31617,
     "en": "stay",
-    "kk": "/steɪ/",
+    "kk": "[ste]",
     "zh": "v. 停留",
     "unit": 18,
     "example": "Will you stay for supper?",
@@ -14555,7 +14555,7 @@ const jhWordsDB = [
   {
     "id": 31618,
     "en": "steak",
-    "kk": "",
+    "kk": "[stek]",
     "zh": "n. 牛排",
     "unit": 18,
     "example": "He dug his fork into the steak.",
@@ -14564,7 +14564,7 @@ const jhWordsDB = [
   {
     "id": 31619,
     "en": "steal",
-    "kk": "",
+    "kk": "[stil]",
     "zh": "v. 偷竊",
     "unit": 18,
     "example": "Hunger drove her to steal.",
@@ -14573,7 +14573,7 @@ const jhWordsDB = [
   {
     "id": 31620,
     "en": "steam",
-    "kk": "",
+    "kk": "[stim]",
     "zh": "n. 蒸汽",
     "unit": 18,
     "example": "Who invented the steam engine?",
@@ -14582,7 +14582,7 @@ const jhWordsDB = [
   {
     "id": 31621,
     "en": "step",
-    "kk": "/step/",
+    "kk": "[stɛp]",
     "zh": "v. 行走",
     "unit": 18,
     "example": "She took a step nearer.",
@@ -14591,7 +14591,7 @@ const jhWordsDB = [
   {
     "id": 31622,
     "en": "still",
-    "kk": "/stɪl/",
+    "kk": "[stɪl]",
     "zh": "adv. 仍然",
     "unit": 18,
     "example": "He still misbehaves occasionally.",
@@ -14600,7 +14600,7 @@ const jhWordsDB = [
   {
     "id": 31623,
     "en": "stingy",
-    "kk": "",
+    "kk": "[ˋstɪndʒi]",
     "zh": "adj. 小氣的",
     "unit": 18,
     "example": "Don't be so stingy!",
@@ -14609,7 +14609,7 @@ const jhWordsDB = [
   {
     "id": 31624,
     "en": "stomach",
-    "kk": "",
+    "kk": "[ˋstʌmək]",
     "zh": "n. 胃",
     "unit": 18,
     "example": "He had violent stomach pains.",
@@ -14618,7 +14618,7 @@ const jhWordsDB = [
   {
     "id": 31625,
     "en": "stomachache",
-    "kk": "",
+    "kk": "[ˋstʌmək͵ek]",
     "zh": "n. 胃痛",
     "unit": 18,
     "example": "I can't stand this stomachache.",
@@ -14627,7 +14627,7 @@ const jhWordsDB = [
   {
     "id": 31626,
     "en": "stone",
-    "kk": "",
+    "kk": "[ston]",
     "zh": "n. 石頭",
     "unit": 18,
     "example": "She's trying to lose a stone.",
@@ -14636,7 +14636,7 @@ const jhWordsDB = [
   {
     "id": 31627,
     "en": "stop",
-    "kk": "/stɑːp/",
+    "kk": "[stɑp]",
     "zh": "v. 停",
     "unit": 18,
     "example": "Why didn't he stop me?",
@@ -14645,7 +14645,7 @@ const jhWordsDB = [
   {
     "id": 31628,
     "en": "store",
-    "kk": "/stɔːr/",
+    "kk": "[stɔr]",
     "zh": "n. 商店",
     "unit": 18,
     "example": "They run a small grocery store.",
@@ -14654,7 +14654,7 @@ const jhWordsDB = [
   {
     "id": 31629,
     "en": "storm",
-    "kk": "",
+    "kk": "[stɔrm]",
     "zh": "n. 暴風雨",
     "unit": 18,
     "example": "The storm clouds were gathering.",
@@ -14663,7 +14663,7 @@ const jhWordsDB = [
   {
     "id": 31630,
     "en": "story",
-    "kk": "/ˈstɔːri/",
+    "kk": "[ˋstɔri]",
     "zh": "n. 故事",
     "unit": 18,
     "example": "Newspapers blew up the story.",
@@ -14672,7 +14672,7 @@ const jhWordsDB = [
   {
     "id": 31631,
     "en": "stove",
-    "kk": "",
+    "kk": "[stov]",
     "zh": "n. 火爐",
     "unit": 18,
     "example": "I burned myself on the stove.",
@@ -14681,7 +14681,7 @@ const jhWordsDB = [
   {
     "id": 31632,
     "en": "straight",
-    "kk": "",
+    "kk": "[stret]",
     "zh": "adj. 直的",
     "unit": 18,
     "example": "His teeth were perfectly straight.",
@@ -14690,7 +14690,7 @@ const jhWordsDB = [
   {
     "id": 31633,
     "en": "strange",
-    "kk": "",
+    "kk": "[strendʒ]",
     "zh": "adj. 奇怪的",
     "unit": 18,
     "example": "Then a strange thing happened.",
@@ -14699,7 +14699,7 @@ const jhWordsDB = [
   {
     "id": 31634,
     "en": "stranger",
-    "kk": "",
+    "kk": "[ˋstrendʒɚ]",
     "zh": "n. 陌生人",
     "unit": 18,
     "example": "She married a practical stranger.",
@@ -14708,7 +14708,7 @@ const jhWordsDB = [
   {
     "id": 31635,
     "en": "straw",
-    "kk": "",
+    "kk": "[strɔ]",
     "zh": "n. 稻草",
     "unit": 18,
     "example": "The floors are covered with woven straw mats.",
@@ -14717,7 +14717,7 @@ const jhWordsDB = [
   {
     "id": 31636,
     "en": "strawberry",
-    "kk": "",
+    "kk": "[ˋstrɔb͵ɛri]",
     "zh": "n. 草莓",
     "unit": 18,
     "example": "I want a strawberry milkshake.",
@@ -14726,7 +14726,7 @@ const jhWordsDB = [
   {
     "id": 31637,
     "en": "stream",
-    "kk": "",
+    "kk": "[strim]",
     "zh": "n. 小河",
     "unit": 18,
     "example": "They jumped over the stream.",
@@ -14735,7 +14735,7 @@ const jhWordsDB = [
   {
     "id": 31638,
     "en": "street",
-    "kk": "/striːt/",
+    "kk": "[strit]",
     "zh": "n. 街道",
     "unit": 18,
     "example": "He lives just down the street.",
@@ -14744,7 +14744,7 @@ const jhWordsDB = [
   {
     "id": 31639,
     "en": "strike",
-    "kk": "",
+    "kk": "[straɪk]",
     "zh": "n. 罷工",
     "unit": 18,
     "example": "A strike has shut the factory.",
@@ -14753,7 +14753,7 @@ const jhWordsDB = [
   {
     "id": 31640,
     "en": "strong",
-    "kk": "/strɔːŋ/",
+    "kk": "[strɔŋ]",
     "zh": "adj. 強壯的",
     "unit": 18,
     "example": "He's the strong silent type.",
@@ -14762,7 +14762,7 @@ const jhWordsDB = [
   {
     "id": 31641,
     "en": "student",
-    "kk": "/ˈstuːdənt/",
+    "kk": "[ˋstudənt]",
     "zh": "n. 學生",
     "unit": 18,
     "example": "Student numbers are expanding rapidly.",
@@ -14771,7 +14771,7 @@ const jhWordsDB = [
   {
     "id": 31642,
     "en": "study",
-    "kk": "/ˈstʌdi/",
+    "kk": "[ˋstʌdi]",
     "zh": "v. 學習",
     "unit": 18,
     "example": "She was accepted to study music.",
@@ -14780,7 +14780,7 @@ const jhWordsDB = [
   {
     "id": 31643,
     "en": "stupid",
-    "kk": "",
+    "kk": "[ˋstupəd]",
     "zh": "adj. 笨的",
     "unit": 18,
     "example": "How could I have been so stupid?",
@@ -14789,7 +14789,7 @@ const jhWordsDB = [
   {
     "id": 31644,
     "en": "style",
-    "kk": "/staɪl/",
+    "kk": "[staɪl]",
     "zh": "n. 風格",
     "unit": 18,
     "example": "He had a dense, ponderous style.",
@@ -14798,7 +14798,7 @@ const jhWordsDB = [
   {
     "id": 31645,
     "en": "subject",
-    "kk": "/ˈsʌbdʒɪkt/",
+    "kk": "[səbˋdʒɛkt]",
     "zh": "n. 科目",
     "unit": 18,
     "example": "Biology is my favourite subject.",
@@ -14807,7 +14807,7 @@ const jhWordsDB = [
   {
     "id": 31646,
     "en": "subway",
-    "kk": "",
+    "kk": "[ˋsʌb͵we]",
     "zh": "n. 地鐵",
     "unit": 18,
     "example": "The subway was covered in graffiti.",
@@ -14816,7 +14816,7 @@ const jhWordsDB = [
   {
     "id": 31647,
     "en": "succeed",
-    "kk": "",
+    "kk": "[səkˋsid]",
     "zh": "v. 成功",
     "unit": 18,
     "example": "The project seemed unlikely to succeed.",
@@ -14825,7 +14825,7 @@ const jhWordsDB = [
   {
     "id": 31648,
     "en": "success",
-    "kk": "/səkˈses/",
+    "kk": "[səkˋsɛs]",
     "zh": "n. 成功",
     "unit": 18,
     "example": "The book ensured his success.",
@@ -14834,7 +14834,7 @@ const jhWordsDB = [
   {
     "id": 31649,
     "en": "successful",
-    "kk": "",
+    "kk": "[səkˋsɛsfəl]",
     "zh": "adj. 成功的",
     "unit": 18,
     "example": "I think it's going to be successful.",
@@ -14843,7 +14843,7 @@ const jhWordsDB = [
   {
     "id": 31650,
     "en": "such",
-    "kk": "/sʌtʃ/",
+    "kk": "[sʌtʃ]",
     "zh": "det. 如此的",
     "unit": 18,
     "example": "Such a view is pleasing.",
@@ -14852,7 +14852,7 @@ const jhWordsDB = [
   {
     "id": 31651,
     "en": "sudden",
-    "kk": "",
+    "kk": "[ˋsʌdən]",
     "zh": "adj. 突然的",
     "unit": 18,
     "example": "A sudden noise startled her.",
@@ -14861,7 +14861,7 @@ const jhWordsDB = [
   {
     "id": 31652,
     "en": "sugar",
-    "kk": "",
+    "kk": "[ˋʃʊɡɚ]",
     "zh": "n. 糖",
     "unit": 18,
     "example": "Sugar occurs naturally in fruit.",
@@ -14870,7 +14870,7 @@ const jhWordsDB = [
   {
     "id": 31653,
     "en": "suggest",
-    "kk": "/səɡˈdʒest/",
+    "kk": "[səˋdʒɛst]",
     "zh": "v. 建議",
     "unit": 18,
     "example": "I suggest we let the matter drop.",
@@ -14879,7 +14879,7 @@ const jhWordsDB = [
   {
     "id": 31654,
     "en": "suit",
-    "kk": "",
+    "kk": "[sut]",
     "zh": "v. 適合",
     "unit": 18,
     "example": "Lighter shades suit you best.",
@@ -14888,7 +14888,7 @@ const jhWordsDB = [
   {
     "id": 31655,
     "en": "summer",
-    "kk": "/ˈsʌmər/",
+    "kk": "[ˋsʌmɚ]",
     "zh": "n. 夏天",
     "unit": 18,
     "example": "I really love summer evenings.",
@@ -14897,7 +14897,7 @@ const jhWordsDB = [
   {
     "id": 31656,
     "en": "sun",
-    "kk": "/sʌn/",
+    "kk": "[sʌn]",
     "zh": "n. 太陽",
     "unit": 18,
     "example": "The sun disappeared from view.",
@@ -14906,7 +14906,7 @@ const jhWordsDB = [
   {
     "id": 31657,
     "en": "Sunday",
-    "kk": "",
+    "kk": "[ˋsʌn͵de]",
     "zh": "n. 星期天",
     "unit": 18,
     "example": "We work every day except Sunday.",
@@ -14915,7 +14915,7 @@ const jhWordsDB = [
   {
     "id": 31658,
     "en": "sunny",
-    "kk": "",
+    "kk": "[ˋsʌni]",
     "zh": "adj. 陽光充足的",
     "unit": 18,
     "example": "It's a brilliantly sunny morning.",
@@ -14924,7 +14924,7 @@ const jhWordsDB = [
   {
     "id": 31659,
     "en": "super",
-    "kk": "",
+    "kk": "[ˋsupɚ]",
     "zh": "adj. 極好的",
     "unit": 18,
     "example": "We had a super time.",
@@ -14933,7 +14933,7 @@ const jhWordsDB = [
   {
     "id": 31660,
     "en": "supermarket",
-    "kk": "",
+    "kk": "[ˋsupɚ͵mɑrkɪt]",
     "zh": "n. 超市",
     "unit": 18,
     "example": "I do a weekly shop at the supermarket.",
@@ -14942,7 +14942,7 @@ const jhWordsDB = [
   {
     "id": 31661,
     "en": "supper",
-    "kk": "",
+    "kk": "[ˋsʌpɚ]",
     "zh": "n. 晚餐",
     "unit": 18,
     "example": "Who's going to cook supper?",
@@ -14951,7 +14951,7 @@ const jhWordsDB = [
   {
     "id": 31662,
     "en": "supply",
-    "kk": "",
+    "kk": "[səpˋlaɪ]",
     "zh": "v. 提供",
     "unit": 18,
     "example": "The electricity supply here is quite erratic.",
@@ -14960,7 +14960,7 @@ const jhWordsDB = [
   {
     "id": 31663,
     "en": "support",
-    "kk": "/səˈpɔːrt/",
+    "kk": "[səˋpɔrt]",
     "zh": "v. 支持",
     "unit": 18,
     "example": "We offer free technical support.",
@@ -14969,7 +14969,7 @@ const jhWordsDB = [
   {
     "id": 31664,
     "en": "sure",
-    "kk": "/ʃʊr/",
+    "kk": "[ʃʊr]",
     "zh": "adj. 確定的",
     "unit": 18,
     "example": "'I'm not sure,' she responded.",
@@ -14978,7 +14978,7 @@ const jhWordsDB = [
   {
     "id": 31665,
     "en": "surf",
-    "kk": "",
+    "kk": "[sɝf]",
     "zh": "v. 衝浪",
     "unit": 18,
     "example": "I'm going to buy a surfboard and learn to surf.",
@@ -14987,7 +14987,7 @@ const jhWordsDB = [
   {
     "id": 31666,
     "en": "surface",
-    "kk": "/ˈsɜːrfəs/",
+    "kk": "[ˋsɝfəs]",
     "zh": "n. 表面",
     "unit": 18,
     "example": "He staggered on the uneven surface.",
@@ -14996,7 +14996,7 @@ const jhWordsDB = [
   {
     "id": 31667,
     "en": "surprise",
-    "kk": "",
+    "kk": "[sɚˋpraɪz]",
     "zh": "v. 驚訝",
     "unit": 18,
     "example": "She looked up in surprise.",
@@ -15005,7 +15005,7 @@ const jhWordsDB = [
   {
     "id": 31668,
     "en": "surprised",
-    "kk": "",
+    "kk": "[sɚˋpraɪzd]",
     "zh": "adj. 感到驚訝的",
     "unit": 18,
     "example": "I'm really not a bit surprised.",
@@ -15014,7 +15014,7 @@ const jhWordsDB = [
   {
     "id": 31669,
     "en": "survive",
-    "kk": "",
+    "kk": "[sɚˋvaɪv]",
     "zh": "v. 生存",
     "unit": 18,
     "example": "Most women will survive their spouses.",
@@ -15023,7 +15023,7 @@ const jhWordsDB = [
   {
     "id": 31670,
     "en": "swallow",
-    "kk": "",
+    "kk": "[ˋswɑlo]",
     "zh": "v. 吞嚥",
     "unit": 18,
     "example": "You are asked to swallow a capsule containing vitamin B.",
@@ -15032,7 +15032,7 @@ const jhWordsDB = [
   {
     "id": 31671,
     "en": "swan",
-    "kk": "",
+    "kk": "[swɑn]",
     "zh": "n. 天鵝",
     "unit": 18,
     "example": "The swan flapped its wings noisily.",
@@ -15041,7 +15041,7 @@ const jhWordsDB = [
   {
     "id": 31672,
     "en": "sweater",
-    "kk": "",
+    "kk": "[ˋswɛtɚ]",
     "zh": "n. 毛衣",
     "unit": 18,
     "example": "The fence snagged my sweater.",
@@ -15050,7 +15050,7 @@ const jhWordsDB = [
   {
     "id": 31673,
     "en": "sweep",
-    "kk": "",
+    "kk": "[swip]",
     "zh": "v. 清掃",
     "unit": 18,
     "example": "Strong winds regularly sweep the islands.",
@@ -15059,7 +15059,7 @@ const jhWordsDB = [
   {
     "id": 31674,
     "en": "sweet",
-    "kk": "",
+    "kk": "[swit]",
     "zh": "adj. 甜的",
     "unit": 18,
     "example": "I especially like sweet things.",
@@ -15068,7 +15068,7 @@ const jhWordsDB = [
   {
     "id": 31675,
     "en": "swim",
-    "kk": "",
+    "kk": "[swɪm]",
     "zh": "v. 游泳",
     "unit": 18,
     "example": "I managed to swim to safety.",
@@ -15077,7 +15077,7 @@ const jhWordsDB = [
   {
     "id": 31676,
     "en": "swing",
-    "kk": "",
+    "kk": "[swɪŋ]",
     "zh": "v. 搖擺",
     "unit": 18,
     "example": "I need to work on my swing.",
@@ -15086,7 +15086,7 @@ const jhWordsDB = [
   {
     "id": 31677,
     "en": "symbol",
-    "kk": "",
+    "kk": "[ˋsɪmbəl]",
     "zh": "n. 象徵",
     "unit": 18,
     "example": "What's the chemical symbol for mercury?",
@@ -15095,7 +15095,7 @@ const jhWordsDB = [
   {
     "id": 31678,
     "en": "system",
-    "kk": "/ˈsɪstəm/",
+    "kk": "[ˋsɪstəm]",
     "zh": "n. 系統",
     "unit": 18,
     "example": "Trust is implicit in the system.",
@@ -15104,7 +15104,7 @@ const jhWordsDB = [
   {
     "id": 31679,
     "en": "table",
-    "kk": "/ˈteɪbl/",
+    "kk": "[ˋtebəl]",
     "zh": "n. 桌子",
     "unit": 18,
     "example": "He thumped the table angrily.",
@@ -15113,7 +15113,7 @@ const jhWordsDB = [
   {
     "id": 31680,
     "en": "tail",
-    "kk": "",
+    "kk": "[tel]",
     "zh": "n. 尾巴",
     "unit": 18,
     "example": "The pony swished its tail.",
@@ -15122,7 +15122,7 @@ const jhWordsDB = [
   {
     "id": 31681,
     "en": "take",
-    "kk": "/teɪk/",
+    "kk": "[tek]",
     "zh": "v. 拿",
     "unit": 18,
     "example": "Take whatever action is needed.",
@@ -15131,7 +15131,7 @@ const jhWordsDB = [
   {
     "id": 31682,
     "en": "tale",
-    "kk": "",
+    "kk": "[tel]",
     "zh": "n. 故事",
     "unit": 18,
     "example": "She unfolded her tale to us.",
@@ -15140,7 +15140,7 @@ const jhWordsDB = [
   {
     "id": 31683,
     "en": "talent",
-    "kk": "",
+    "kk": "[ˋtælənt]",
     "zh": "n. 才能",
     "unit": 18,
     "example": "He's got lots of talent.",
@@ -15149,7 +15149,7 @@ const jhWordsDB = [
   {
     "id": 31684,
     "en": "talk",
-    "kk": "/tɔːk/",
+    "kk": "[tɔk]",
     "zh": "v. 說話",
     "unit": 18,
     "example": "They talk about it endlessly.",
@@ -15158,7 +15158,7 @@ const jhWordsDB = [
   {
     "id": 31685,
     "en": "talkative",
-    "kk": "",
+    "kk": "[ˋtɔkətɪv]",
     "zh": "adj. 多話的",
     "unit": 18,
     "example": "He is very talkative.",
@@ -15167,7 +15167,7 @@ const jhWordsDB = [
   {
     "id": 31686,
     "en": "tall",
-    "kk": "",
+    "kk": "[tɔl]",
     "zh": "adj. 高的",
     "unit": 18,
     "example": "She was tall and slim.",
@@ -15176,7 +15176,7 @@ const jhWordsDB = [
   {
     "id": 31687,
     "en": "tangerine",
-    "kk": "",
+    "kk": "[͵tændʒɚˋin]",
     "zh": "n. 橘子",
     "unit": 18,
     "example": "Tangerine, raspberry, and kumquat have many small seeds.",
@@ -15185,7 +15185,7 @@ const jhWordsDB = [
   {
     "id": 31688,
     "en": "tank",
-    "kk": "",
+    "kk": "[tæŋk]",
     "zh": "n. 坦克",
     "unit": 18,
     "example": "The tank became bogged down in mud.",
@@ -15194,7 +15194,7 @@ const jhWordsDB = [
   {
     "id": 31689,
     "en": "tape",
-    "kk": "",
+    "kk": "[tep]",
     "zh": "n. 錄音帶",
     "unit": 18,
     "example": "We've got her statement on tape.",
@@ -15203,7 +15203,7 @@ const jhWordsDB = [
   {
     "id": 31690,
     "en": "task",
-    "kk": "/tæsk/",
+    "kk": "[tæsk]",
     "zh": "n. 任務",
     "unit": 18,
     "example": "The task was a formidable one.",
@@ -15212,7 +15212,7 @@ const jhWordsDB = [
   {
     "id": 31691,
     "en": "taste",
-    "kk": "",
+    "kk": "[test]",
     "zh": "n. 味道",
     "unit": 18,
     "example": "The salads taste too vinegary.",
@@ -15221,7 +15221,7 @@ const jhWordsDB = [
   {
     "id": 31692,
     "en": "taxi",
-    "kk": "",
+    "kk": "[ˋtæksi]",
     "zh": "n. 計程車",
     "unit": 18,
     "example": "I hailed a passing taxi.",
@@ -15230,7 +15230,7 @@ const jhWordsDB = [
   {
     "id": 31693,
     "en": "tea",
-    "kk": "",
+    "kk": "[ti]",
     "zh": "n. 茶",
     "unit": 18,
     "example": "There's hardly any tea left.",
@@ -15239,7 +15239,7 @@ const jhWordsDB = [
   {
     "id": 31694,
     "en": "teach",
-    "kk": "/tiːtʃ/",
+    "kk": "[titʃ]",
     "zh": "v. 教導",
     "unit": 18,
     "example": "Could you teach me to do that?",
@@ -15248,7 +15248,7 @@ const jhWordsDB = [
   {
     "id": 31695,
     "en": "teacher",
-    "kk": "/ˈtiːtʃər/",
+    "kk": "[ˋtitʃɚ]",
     "zh": "n. 老師",
     "unit": 18,
     "example": "She's a very capable teacher.",
@@ -15257,7 +15257,7 @@ const jhWordsDB = [
   {
     "id": 31696,
     "en": "team",
-    "kk": "/tiːm/",
+    "kk": "[tim]",
     "zh": "n. 隊伍",
     "unit": 18,
     "example": "The team was soundly defeated.",
@@ -15266,7 +15266,7 @@ const jhWordsDB = [
   {
     "id": 31697,
     "en": "teapot",
-    "kk": "",
+    "kk": "[ˋti͵pɑt]",
     "zh": "n. 茶壺",
     "unit": 18,
     "example": "For some, it may seem silly, a tempest in a teapot.",
@@ -15275,7 +15275,7 @@ const jhWordsDB = [
   {
     "id": 31698,
     "en": "tear",
-    "kk": "",
+    "kk": "[tɛr]",
     "zh": "n. 眼淚",
     "unit": 18,
     "example": "Ann wiped a tear from her eye.",
@@ -15284,7 +15284,7 @@ const jhWordsDB = [
   {
     "id": 31699,
     "en": "teenager",
-    "kk": "",
+    "kk": "[ˋti͵nedʒɚ]",
     "zh": "n. 青少年",
     "unit": 18,
     "example": "He was acting like a lovelorn teenager.",
@@ -15293,7 +15293,7 @@ const jhWordsDB = [
   {
     "id": 31700,
     "en": "telephone",
-    "kk": "",
+    "kk": "[ˋtɛlə͵fon]",
     "zh": "n. 電話",
     "unit": 18,
     "example": "He snatched up the telephone.",
@@ -15302,7 +15302,7 @@ const jhWordsDB = [
   {
     "id": 31701,
     "en": "television",
-    "kk": "/ˈtelɪvɪʒn/",
+    "kk": "[ˋtɛlə͵vɪʒən]",
     "zh": "n. 電視",
     "unit": 18,
     "example": "I'll turn the television on.",
@@ -15311,7 +15311,7 @@ const jhWordsDB = [
   {
     "id": 31702,
     "en": "tell",
-    "kk": "/tel/",
+    "kk": "[tɛl]",
     "zh": "v. 說",
     "unit": 18,
     "example": "Tell me what really happened.",
@@ -15320,7 +15320,7 @@ const jhWordsDB = [
   {
     "id": 31703,
     "en": "temperature",
-    "kk": "",
+    "kk": "[ˋtɛmprətʃɚ]",
     "zh": "n. 溫度",
     "unit": 18,
     "example": "The temperature has dropped considerably.",
@@ -15329,7 +15329,7 @@ const jhWordsDB = [
   {
     "id": 31704,
     "en": "temple",
-    "kk": "",
+    "kk": "[ˋtɛmpəl]",
     "zh": "n. 廟宇",
     "unit": 18,
     "example": "We go to temple on Saturdays.",
@@ -15338,7 +15338,7 @@ const jhWordsDB = [
   {
     "id": 31705,
     "en": "ten",
-    "kk": "/ten/",
+    "kk": "[tɛn]",
     "zh": "n. 十",
     "unit": 18,
     "example": "Tickets cost ten dollars each.",
@@ -15347,7 +15347,7 @@ const jhWordsDB = [
   {
     "id": 31706,
     "en": "tennis",
-    "kk": "",
+    "kk": "[ˋtɛnəs]",
     "zh": "n. 網球",
     "unit": 18,
     "example": "I'm not much good at tennis.",
@@ -15356,7 +15356,7 @@ const jhWordsDB = [
   {
     "id": 31707,
     "en": "tent",
-    "kk": "",
+    "kk": "[tɛnt]",
     "zh": "n. 帳篷",
     "unit": 18,
     "example": "I heard the tent rip.",
@@ -15365,7 +15365,7 @@ const jhWordsDB = [
   {
     "id": 31708,
     "en": "term",
-    "kk": "/tɜːrm/",
+    "kk": "[tɝm]",
     "zh": "n. 任期",
     "unit": 18,
     "example": "It's nearly the end of term.",
@@ -15374,7 +15374,7 @@ const jhWordsDB = [
   {
     "id": 31709,
     "en": "terrible",
-    "kk": "",
+    "kk": "[ˋtɛrəbəl]",
     "zh": "adj. 可怕的",
     "unit": 18,
     "example": "I'm in a terrible predicament.",
@@ -15383,7 +15383,7 @@ const jhWordsDB = [
   {
     "id": 31710,
     "en": "terrific",
-    "kk": "",
+    "kk": "[tɚˋɪfɪk]",
     "zh": "adj. 很棒的",
     "unit": 18,
     "example": "She's doing a terrific job.",
@@ -15392,7 +15392,7 @@ const jhWordsDB = [
   {
     "id": 31711,
     "en": "test",
-    "kk": "/test/",
+    "kk": "[tɛst]",
     "zh": "n. 測驗",
     "unit": 18,
     "example": "He failed his driving test.",
@@ -15401,7 +15401,7 @@ const jhWordsDB = [
   {
     "id": 31712,
     "en": "textbook",
-    "kk": "",
+    "kk": "[ˋtɛk͵stbʊk]",
     "zh": "n. 教科書",
     "unit": 18,
     "example": "I gave the textbook back to him.",
@@ -15410,7 +15410,7 @@ const jhWordsDB = [
   {
     "id": 31713,
     "en": "than",
-    "kk": "/ðæn/",
+    "kk": "[ðæn]",
     "zh": "conj. 比...",
     "unit": 18,
     "example": "Faith is stronger than reason.",
@@ -15419,7 +15419,7 @@ const jhWordsDB = [
   {
     "id": 31714,
     "en": "thank",
-    "kk": "/θæŋk/",
+    "kk": "[θæŋk]",
     "zh": "v. 謝謝",
     "unit": 18,
     "example": "I'm better now, thank you.",
@@ -15428,7 +15428,7 @@ const jhWordsDB = [
   {
     "id": 31715,
     "en": "Thanksgiving",
-    "kk": "",
+    "kk": "[͵θæŋˋksɡɪvɪŋ]",
     "zh": "n. 感恩節",
     "unit": 18,
     "example": "Are you going home for Thanksgiving?",
@@ -15437,7 +15437,7 @@ const jhWordsDB = [
   {
     "id": 31716,
     "en": "that",
-    "kk": "/ðæt/",
+    "kk": "[ðæt]",
     "zh": "pron. 那",
     "unit": 18,
     "example": "Phew! That was close—that car nearly hit us.",
@@ -15446,7 +15446,7 @@ const jhWordsDB = [
   {
     "id": 31717,
     "en": "theater",
-    "kk": "",
+    "kk": "[ˋθiətɚ]",
     "zh": "n. 電影院",
     "unit": 18,
     "example": "It's the South Theater Company.",
@@ -15455,7 +15455,7 @@ const jhWordsDB = [
   {
     "id": 31718,
     "en": "then",
-    "kk": "/ðen/",
+    "kk": "[ðɛn]",
     "zh": "adv. 然後",
     "unit": 18,
     "example": "The seagulls soared then dived.",
@@ -15464,7 +15464,7 @@ const jhWordsDB = [
   {
     "id": 31719,
     "en": "there",
-    "kk": "/ðer/",
+    "kk": "[ðɛr]",
     "zh": "adv. 那裡",
     "unit": 18,
     "example": "There were thousands of people there.",
@@ -15473,7 +15473,7 @@ const jhWordsDB = [
   {
     "id": 31720,
     "en": "therefore",
-    "kk": "",
+    "kk": "[ˋðɛr͵fɔr]",
     "zh": "adv. 因此",
     "unit": 18,
     "example": "He's only 17 and therefore not eligible to vote.",
@@ -15482,7 +15482,7 @@ const jhWordsDB = [
   {
     "id": 31721,
     "en": "these",
-    "kk": "/ðiːz/",
+    "kk": "[ðiz]",
     "zh": "pron. 這些",
     "unit": 18,
     "example": "These questions frustrated me.",
@@ -15491,7 +15491,7 @@ const jhWordsDB = [
   {
     "id": 31722,
     "en": "thick",
-    "kk": "",
+    "kk": "[θɪk]",
     "zh": "adj. 厚的",
     "unit": 18,
     "example": "He had thick black hair.",
@@ -15500,7 +15500,7 @@ const jhWordsDB = [
   {
     "id": 31723,
     "en": "thief",
-    "kk": "",
+    "kk": "[θif]",
     "zh": "n. 小偷",
     "unit": 18,
     "example": "The thief used a false identity.",
@@ -15509,7 +15509,7 @@ const jhWordsDB = [
   {
     "id": 31724,
     "en": "thin",
-    "kk": "",
+    "kk": "[θɪn]",
     "zh": "adj. 薄的",
     "unit": 18,
     "example": "The dog was painfully thin.",
@@ -15518,7 +15518,7 @@ const jhWordsDB = [
   {
     "id": 31725,
     "en": "thing",
-    "kk": "",
+    "kk": "[θɪŋ]",
     "zh": "n. 事情",
     "unit": 18,
     "example": "Then a strange thing happened.",
@@ -15527,7 +15527,7 @@ const jhWordsDB = [
   {
     "id": 31726,
     "en": "think",
-    "kk": "",
+    "kk": "[θɪŋk]",
     "zh": "v. 想",
     "unit": 18,
     "example": "I think their methods stink.",
@@ -15536,7 +15536,7 @@ const jhWordsDB = [
   {
     "id": 31727,
     "en": "third",
-    "kk": "",
+    "kk": "[θɝd]",
     "zh": "adj. 第三的",
     "unit": 18,
     "example": "He finished in third place.",
@@ -15545,7 +15545,7 @@ const jhWordsDB = [
   {
     "id": 31728,
     "en": "thirsty",
-    "kk": "",
+    "kk": "[ˋθɝsti]",
     "zh": "adj. 口渴的",
     "unit": 18,
     "example": "When a baby is thirsty, it feeds more often.",
@@ -15554,7 +15554,7 @@ const jhWordsDB = [
   {
     "id": 31729,
     "en": "thirteen",
-    "kk": "",
+    "kk": "[ˋθɝˋtin]",
     "zh": "n. 十三",
     "unit": 18,
     "example": "Thirteen is often considered an unlucky number.",
@@ -15563,7 +15563,7 @@ const jhWordsDB = [
   {
     "id": 31730,
     "en": "thirty",
-    "kk": "",
+    "kk": "[ˋθɝ͵di]",
     "zh": "n. 三十",
     "unit": 18,
     "example": "Some thirty people attended the funeral.",
@@ -15572,7 +15572,7 @@ const jhWordsDB = [
   {
     "id": 31731,
     "en": "this",
-    "kk": "",
+    "kk": "[ðɪs]",
     "zh": "pron. 這",
     "unit": 18,
     "example": "This carpet stains easily.",
@@ -15581,7 +15581,7 @@ const jhWordsDB = [
   {
     "id": 31732,
     "en": "those",
-    "kk": "",
+    "kk": "[ðoz]",
     "zh": "pron. 那些",
     "unit": 18,
     "example": "Those laws no longer pertain.",
@@ -15590,7 +15590,7 @@ const jhWordsDB = [
   {
     "id": 31733,
     "en": "though",
-    "kk": "",
+    "kk": "[ðo]",
     "zh": "conj. 雖然",
     "unit": 18,
     "example": "He did reply, though not immediately.",
@@ -15599,7 +15599,7 @@ const jhWordsDB = [
   {
     "id": 31734,
     "en": "thought",
-    "kk": "",
+    "kk": "[θɔt]",
     "zh": "n. 想法",
     "unit": 18,
     "example": "I thought you'd never finish!",
@@ -15608,7 +15608,7 @@ const jhWordsDB = [
   {
     "id": 31735,
     "en": "thousand",
-    "kk": "",
+    "kk": "[ˋθaʊzənd]",
     "zh": "n. 千",
     "unit": 18,
     "example": "A thousand people were there.",
@@ -15617,7 +15617,7 @@ const jhWordsDB = [
   {
     "id": 31736,
     "en": "three",
-    "kk": "",
+    "kk": "[θri]",
     "zh": "n. 三",
     "unit": 18,
     "example": "The clock said three o'clock.",
@@ -15626,7 +15626,7 @@ const jhWordsDB = [
   {
     "id": 31737,
     "en": "throat",
-    "kk": "",
+    "kk": "[θrot]",
     "zh": "n. 喉嚨",
     "unit": 18,
     "example": "Symptoms include a sore throat.",
@@ -15635,7 +15635,7 @@ const jhWordsDB = [
   {
     "id": 31738,
     "en": "through",
-    "kk": "",
+    "kk": "[θru]",
     "zh": "adv. 自始至終",
     "unit": 18,
     "example": "He breezed through the tests.",
@@ -15644,7 +15644,7 @@ const jhWordsDB = [
   {
     "id": 31739,
     "en": "throw",
-    "kk": "",
+    "kk": "[θro]",
     "zh": "v. 投,扔",
     "unit": 18,
     "example": "I never throw anything away.",
@@ -15653,7 +15653,7 @@ const jhWordsDB = [
   {
     "id": 31740,
     "en": "thumb",
-    "kk": "",
+    "kk": "[θʌm]",
     "zh": "n. 拇指",
     "unit": 18,
     "example": "There's a hole in the thumb.",
@@ -15662,7 +15662,7 @@ const jhWordsDB = [
   {
     "id": 31741,
     "en": "thunder",
-    "kk": "",
+    "kk": "[ˋθʌndɚ]",
     "zh": "n. 雷",
     "unit": 18,
     "example": "Thunder cracked in the sky.",
@@ -15671,7 +15671,7 @@ const jhWordsDB = [
   {
     "id": 31742,
     "en": "Thursday",
-    "kk": "",
+    "kk": "[ˋθɝz͵de]",
     "zh": "n. 星期四",
     "unit": 18,
     "example": "We agreed to meet on Thursday.",
@@ -15680,7 +15680,7 @@ const jhWordsDB = [
   {
     "id": 31743,
     "en": "ticket",
-    "kk": "",
+    "kk": "[ˋtɪkət]",
     "zh": "n. 票",
     "unit": 18,
     "example": "You can have my ticket.",
@@ -15689,7 +15689,7 @@ const jhWordsDB = [
   {
     "id": 31744,
     "en": "tidy",
-    "kk": "",
+    "kk": "[ˋtaɪdi]",
     "zh": "adj. 整潔的",
     "unit": 18,
     "example": "They sat in her neat and tidy kitchen.",
@@ -15698,7 +15698,7 @@ const jhWordsDB = [
   {
     "id": 31745,
     "en": "tie",
-    "kk": "",
+    "kk": "[taɪ]",
     "zh": "n. 領帶",
     "unit": 18,
     "example": "He carefully knotted his tie.",
@@ -15707,7 +15707,7 @@ const jhWordsDB = [
   {
     "id": 31746,
     "en": "tiger",
-    "kk": "",
+    "kk": "[ˋtaɪɡɚ]",
     "zh": "n. 老虎",
     "unit": 18,
     "example": "The tiger is native to India.",
@@ -15716,7 +15716,7 @@ const jhWordsDB = [
   {
     "id": 31747,
     "en": "till",
-    "kk": "",
+    "kk": "[tɪl]",
     "zh": "conj. 直到",
     "unit": 18,
     "example": "We're open till 6 o'clock.",
@@ -15725,7 +15725,7 @@ const jhWordsDB = [
   {
     "id": 31748,
     "en": "time",
-    "kk": "",
+    "kk": "[taɪm]",
     "zh": "n. 時間",
     "unit": 18,
     "example": "This time they've messed up big time!",
@@ -15734,7 +15734,7 @@ const jhWordsDB = [
   {
     "id": 31749,
     "en": "tiny",
-    "kk": "",
+    "kk": "[ˋtaɪni]",
     "zh": "adj. 極小的",
     "unit": 18,
     "example": "Each individual flower is tiny.",
@@ -15743,7 +15743,7 @@ const jhWordsDB = [
   {
     "id": 31750,
     "en": "tip",
-    "kk": "",
+    "kk": "[tɪp]",
     "zh": "n. 祕訣",
     "unit": 18,
     "example": "Did you give the waiter a tip?",
@@ -15752,7 +15752,7 @@ const jhWordsDB = [
   {
     "id": 31751,
     "en": "tired",
-    "kk": "",
+    "kk": "[ˋtaɪɚd]",
     "zh": "adj. 疲倦的",
     "unit": 18,
     "example": "He looked tired and dishevelled.",
@@ -15761,7 +15761,7 @@ const jhWordsDB = [
   {
     "id": 31752,
     "en": "title",
-    "kk": "",
+    "kk": "[ˋtaɪtəl]",
     "zh": "n. 標題",
     "unit": 18,
     "example": "The title is printed in italics.",
@@ -15770,7 +15770,7 @@ const jhWordsDB = [
   {
     "id": 31753,
     "en": "to",
-    "kk": "",
+    "kk": "[tu]",
     "zh": "prep. 向,朝",
     "unit": 18,
     "example": "I was trying to save money to go to college.",
@@ -15779,7 +15779,7 @@ const jhWordsDB = [
   {
     "id": 31754,
     "en": "toast",
-    "kk": "",
+    "kk": "[tost]",
     "zh": "n. 吐司",
     "unit": 18,
     "example": "He was choking on a piece of toast.",
@@ -15788,7 +15788,7 @@ const jhWordsDB = [
   {
     "id": 31755,
     "en": "today",
-    "kk": "",
+    "kk": "[təˋde]",
     "zh": "n. 今天",
     "unit": 18,
     "example": "I'm revising Geography today.",
@@ -15797,7 +15797,7 @@ const jhWordsDB = [
   {
     "id": 31756,
     "en": "toe",
-    "kk": "",
+    "kk": "[to]",
     "zh": "n. 腳趾頭",
     "unit": 18,
     "example": "Ouch! You trod on my toe!",
@@ -15806,7 +15806,7 @@ const jhWordsDB = [
   {
     "id": 31757,
     "en": "tofu",
-    "kk": "",
+    "kk": "[ˋtofu]",
     "zh": "n. 豆腐",
     "unit": 18,
     "example": "Tofu is a kind of traditional Chinese food.",
@@ -15815,7 +15815,7 @@ const jhWordsDB = [
   {
     "id": 31758,
     "en": "together",
-    "kk": "",
+    "kk": "[təˋɡɛðɚ]",
     "zh": "adv. 一起",
     "unit": 18,
     "example": "Fate had thrown them together.",
@@ -15824,7 +15824,7 @@ const jhWordsDB = [
   {
     "id": 31759,
     "en": "toilet",
-    "kk": "",
+    "kk": "[ˋtɔɪlət]",
     "zh": "n. 馬桶",
     "unit": 18,
     "example": "Do you need the toilet ?",
@@ -15833,7 +15833,7 @@ const jhWordsDB = [
   {
     "id": 31760,
     "en": "tomato",
-    "kk": "",
+    "kk": "[təˋme͵to]",
     "zh": "n. 番茄",
     "unit": 18,
     "example": "It's similar in size to a tomato.",
@@ -15842,7 +15842,7 @@ const jhWordsDB = [
   {
     "id": 31761,
     "en": "tomorrow",
-    "kk": "",
+    "kk": "[təˋmɑr͵o]",
     "zh": "n. 明天",
     "unit": 18,
     "example": "Snow is forecast for tomorrow.",
@@ -15851,7 +15851,7 @@ const jhWordsDB = [
   {
     "id": 31762,
     "en": "tongue",
-    "kk": "",
+    "kk": "[tʌŋ]",
     "zh": "n. 舌頭",
     "unit": 18,
     "example": "The dog's tongue was hanging out.",
@@ -15860,7 +15860,7 @@ const jhWordsDB = [
   {
     "id": 31763,
     "en": "tonight",
-    "kk": "",
+    "kk": "[təˋnaɪt]",
     "zh": "n. 今晚",
     "unit": 18,
     "example": "What's on television tonight?",
@@ -15869,7 +15869,7 @@ const jhWordsDB = [
   {
     "id": 31764,
     "en": "too",
-    "kk": "",
+    "kk": "[tu]",
     "zh": "adv. 也",
     "unit": 18,
     "example": "Critics derided the move as too little, too late.",
@@ -15878,7 +15878,7 @@ const jhWordsDB = [
   {
     "id": 31765,
     "en": "tool",
-    "kk": "",
+    "kk": "[tul]",
     "zh": "n. 工具",
     "unit": 18,
     "example": "What is this tool for?",
@@ -15887,7 +15887,7 @@ const jhWordsDB = [
   {
     "id": 31766,
     "en": "tooth",
-    "kk": "",
+    "kk": "[tuθ]",
     "zh": "n. 牙齒",
     "unit": 18,
     "example": "He's got a front tooth missing.",
@@ -15896,7 +15896,7 @@ const jhWordsDB = [
   {
     "id": 31767,
     "en": "toothache",
-    "kk": "",
+    "kk": "[ˋtuθ͵ek]",
     "zh": "n. 牙痛",
     "unit": 18,
     "example": "I've got a toothache.",
@@ -15905,7 +15905,7 @@ const jhWordsDB = [
   {
     "id": 31768,
     "en": "toothbrush",
-    "kk": "",
+    "kk": "[ˋtuθbrəʃ]",
     "zh": "n. 牙刷",
     "unit": 18,
     "example": "How do you choose your toothbrush?",
@@ -15914,7 +15914,7 @@ const jhWordsDB = [
   {
     "id": 31769,
     "en": "top",
-    "kk": "",
+    "kk": "[tɑp]",
     "zh": "n. 上面",
     "unit": 18,
     "example": "She got the top job.",
@@ -15923,7 +15923,7 @@ const jhWordsDB = [
   {
     "id": 31770,
     "en": "topic",
-    "kk": "",
+    "kk": "[ˋtɑpɪk]",
     "zh": "n. 主題",
     "unit": 18,
     "example": "He spoke with authority on the topic.",
@@ -15932,7 +15932,7 @@ const jhWordsDB = [
   {
     "id": 31771,
     "en": "total",
-    "kk": "",
+    "kk": "[ˋtotəl]",
     "zh": "adj. 完全的",
     "unit": 18,
     "example": "Total recycling is a fiction.",
@@ -15941,7 +15941,7 @@ const jhWordsDB = [
   {
     "id": 31772,
     "en": "touch",
-    "kk": "",
+    "kk": "[tʌtʃ]",
     "zh": "v. 感動",
     "unit": 18,
     "example": "She recoiled from his touch.",
@@ -15950,7 +15950,7 @@ const jhWordsDB = [
   {
     "id": 31773,
     "en": "toward",
-    "kk": "",
+    "kk": "[təˋwɔrd]",
     "zh": "prep. 朝",
     "unit": 18,
     "example": "She turned back toward home.",
@@ -15959,7 +15959,7 @@ const jhWordsDB = [
   {
     "id": 31774,
     "en": "towel",
-    "kk": "",
+    "kk": "[ˋtaʊəl]",
     "zh": "n. 毛巾",
     "unit": 18,
     "example": "He flicked me with a wet towel.",
@@ -15968,7 +15968,7 @@ const jhWordsDB = [
   {
     "id": 31775,
     "en": "tower",
-    "kk": "",
+    "kk": "[ˋtaʊɚ]",
     "zh": "n. 塔",
     "unit": 18,
     "example": "The tower is leaning dangerously.",
@@ -15977,7 +15977,7 @@ const jhWordsDB = [
   {
     "id": 31776,
     "en": "town",
-    "kk": "",
+    "kk": "[taʊn]",
     "zh": "n. 城鎮",
     "unit": 18,
     "example": "The town was weirdly familiar.",
@@ -15986,7 +15986,7 @@ const jhWordsDB = [
   {
     "id": 31777,
     "en": "toy",
-    "kk": "",
+    "kk": "[tɔɪ]",
     "zh": "n. 玩具",
     "unit": 18,
     "example": "The toy industry is in a slump.",
@@ -15995,7 +15995,7 @@ const jhWordsDB = [
   {
     "id": 31778,
     "en": "trace",
-    "kk": "",
+    "kk": "[tres]",
     "zh": "n. 蹤跡",
     "unit": 18,
     "example": "The trace showed a normal heart rhythm.",
@@ -16004,7 +16004,7 @@ const jhWordsDB = [
   {
     "id": 31779,
     "en": "track",
-    "kk": "",
+    "kk": "[træk]",
     "zh": "v. 跟蹤",
     "unit": 18,
     "example": "The track snaked perilously upwards.",
@@ -16013,7 +16013,7 @@ const jhWordsDB = [
   {
     "id": 31780,
     "en": "trade",
-    "kk": "",
+    "kk": "[tred]",
     "zh": "n. 貿易",
     "unit": 18,
     "example": "Trade was very good last month.",
@@ -16022,7 +16022,7 @@ const jhWordsDB = [
   {
     "id": 31781,
     "en": "tradition",
-    "kk": "",
+    "kk": "[trəˋdɪʃən]",
     "zh": "n. 傳統",
     "unit": 18,
     "example": "This region is steeped in tradition.",
@@ -16031,7 +16031,7 @@ const jhWordsDB = [
   {
     "id": 31782,
     "en": "traditional",
-    "kk": "",
+    "kk": "[trəˋdɪʃənəl]",
     "zh": "adj. 傳統的",
     "unit": 18,
     "example": "Traditional values have been reasserted.",
@@ -16040,7 +16040,7 @@ const jhWordsDB = [
   {
     "id": 31783,
     "en": "traffic",
-    "kk": "",
+    "kk": "[ˋtræfɪk]",
     "zh": "n. 交通",
     "unit": 18,
     "example": "The traffic lights were on amber.",
@@ -16049,7 +16049,7 @@ const jhWordsDB = [
   {
     "id": 31784,
     "en": "train",
-    "kk": "",
+    "kk": "[tren]",
     "zh": "n. 訓練",
     "unit": 18,
     "example": "The train was flying along.",
@@ -16058,7 +16058,7 @@ const jhWordsDB = [
   {
     "id": 31785,
     "en": "trap",
-    "kk": "",
+    "kk": "[træp]",
     "zh": "n. 陷阱",
     "unit": 18,
     "example": "A trap was laid, with fresh bait.",
@@ -16067,7 +16067,7 @@ const jhWordsDB = [
   {
     "id": 31786,
     "en": "trash",
-    "kk": "",
+    "kk": "[træʃ]",
     "zh": "n. 垃圾",
     "unit": 18,
     "example": "Would you take out the trash?",
@@ -16076,7 +16076,7 @@ const jhWordsDB = [
   {
     "id": 31787,
     "en": "travel",
-    "kk": "",
+    "kk": "[ˋtrævəl]",
     "zh": "v. 旅行",
     "unit": 18,
     "example": "It's cheaper to travel midweek.",
@@ -16085,7 +16085,7 @@ const jhWordsDB = [
   {
     "id": 31788,
     "en": "treasure",
-    "kk": "",
+    "kk": "[ˋtrɛʒɚ]",
     "zh": "n. 寶藏",
     "unit": 18,
     "example": "The treasure had lain undisturbed for centuries.",
@@ -16094,7 +16094,7 @@ const jhWordsDB = [
   {
     "id": 31789,
     "en": "treat",
-    "kk": "",
+    "kk": "[trit]",
     "zh": "v. 對待",
     "unit": 18,
     "example": "Valium is usually prescribed to treat anxiety.",
@@ -16103,7 +16103,7 @@ const jhWordsDB = [
   {
     "id": 31790,
     "en": "tree",
-    "kk": "",
+    "kk": "[tri]",
     "zh": "n. 樹",
     "unit": 18,
     "example": "Let's rest under yonder tree.",
@@ -16112,7 +16112,7 @@ const jhWordsDB = [
   {
     "id": 31791,
     "en": "triangle",
-    "kk": "",
+    "kk": "[ˋtraɪ͵æŋɡəl]",
     "zh": "n. 三角形",
     "unit": 18,
     "example": "The red triangle denotes danger.",
@@ -16121,7 +16121,7 @@ const jhWordsDB = [
   {
     "id": 31792,
     "en": "trick",
-    "kk": "",
+    "kk": "[trɪk]",
     "zh": "n. 惡作劇",
     "unit": 18,
     "example": "That was a nasty little trick.",
@@ -16130,7 +16130,7 @@ const jhWordsDB = [
   {
     "id": 31793,
     "en": "trip",
-    "kk": "",
+    "kk": "[trɪp]",
     "zh": "n. 旅行",
     "unit": 18,
     "example": "She videotaped the entire trip.",
@@ -16139,7 +16139,7 @@ const jhWordsDB = [
   {
     "id": 31794,
     "en": "trouble",
-    "kk": "",
+    "kk": "[ˋtrʌbəl]",
     "zh": "n. 麻煩",
     "unit": 18,
     "example": "Are you causing trouble again?",
@@ -16148,7 +16148,7 @@ const jhWordsDB = [
   {
     "id": 31795,
     "en": "trousers",
-    "kk": "",
+    "kk": "[ˋtraʊzɚz]",
     "zh": "n. 褲子",
     "unit": 18,
     "example": "These trousers are a bit tight.",
@@ -16157,7 +16157,7 @@ const jhWordsDB = [
   {
     "id": 31796,
     "en": "truck",
-    "kk": "",
+    "kk": "[trʌk]",
     "zh": "n. 卡車",
     "unit": 18,
     "example": "I've just loaded my truck up.",
@@ -16166,7 +16166,7 @@ const jhWordsDB = [
   {
     "id": 31797,
     "en": "true",
-    "kk": "",
+    "kk": "[tru]",
     "zh": "adj. 真的",
     "unit": 18,
     "example": "This is not strictly true.",
@@ -16175,7 +16175,7 @@ const jhWordsDB = [
   {
     "id": 31798,
     "en": "trumpet",
-    "kk": "",
+    "kk": "[ˋtrʌmpət]",
     "zh": "n. 喇叭",
     "unit": 18,
     "example": "I played the trumpet in the school orchestra.",
@@ -16184,7 +16184,7 @@ const jhWordsDB = [
   {
     "id": 31799,
     "en": "trust",
-    "kk": "",
+    "kk": "[trʌst]",
     "zh": "v. 相信",
     "unit": 18,
     "example": "I couldn't trust him anymore.",
@@ -16193,7 +16193,7 @@ const jhWordsDB = [
   {
     "id": 31800,
     "en": "truth",
-    "kk": "",
+    "kk": "[truθ]",
     "zh": "n. 事實",
     "unit": 18,
     "example": "Slowly the awful truth dawned.",
@@ -16202,7 +16202,7 @@ const jhWordsDB = [
   {
     "id": 31801,
     "en": "try",
-    "kk": "",
+    "kk": "[traɪ]",
     "zh": "v. 試圖",
     "unit": 18,
     "example": "Let's try to plan further ahead.",
@@ -16211,7 +16211,7 @@ const jhWordsDB = [
   {
     "id": 31802,
     "en": "T-shirt",
-    "kk": "",
+    "kk": "[ti ʃɝt]",
     "zh": "n. T 恤",
     "unit": 18,
     "example": "She wore an olive-green T-shirt.",
@@ -16220,7 +16220,7 @@ const jhWordsDB = [
   {
     "id": 31803,
     "en": "tube",
-    "kk": "",
+    "kk": "[tub]",
     "zh": "n. 管子",
     "unit": 18,
     "example": "I work in the extruded tube business.",
@@ -16229,7 +16229,7 @@ const jhWordsDB = [
   {
     "id": 31804,
     "en": "Tuesday",
-    "kk": "",
+    "kk": "[ˋtuzdi]",
     "zh": "n. 星期二",
     "unit": 18,
     "example": "Tuesday is her half day.",
@@ -16238,7 +16238,7 @@ const jhWordsDB = [
   {
     "id": 31805,
     "en": "Tunnel",
-    "kk": "",
+    "kk": "[ˋtʌnəl]",
     "zh": "n. 隧道",
     "unit": 18,
     "example": "He passed down the tunnel.",
@@ -16247,7 +16247,7 @@ const jhWordsDB = [
   {
     "id": 31806,
     "en": "turkey",
-    "kk": "",
+    "kk": "[ˋtɝki]",
     "zh": "n. 火雞",
     "unit": 18,
     "example": "Who's going to carve the turkey?",
@@ -16256,7 +16256,7 @@ const jhWordsDB = [
   {
     "id": 31807,
     "en": "turn",
-    "kk": "",
+    "kk": "[tɝn]",
     "zh": "v. 轉彎",
     "unit": 18,
     "example": "He decided to turn professional.",
@@ -16265,7 +16265,7 @@ const jhWordsDB = [
   {
     "id": 31808,
     "en": "turtle",
-    "kk": "",
+    "kk": "[ˋtɝtəl]",
     "zh": "n. 烏龜",
     "unit": 18,
     "example": "The Mock Turtle went on.",
@@ -16274,7 +16274,7 @@ const jhWordsDB = [
   {
     "id": 31809,
     "en": "twelve",
-    "kk": "",
+    "kk": "[twɛlv]",
     "zh": "n. 十二",
     "unit": 18,
     "example": "He retired twelve batters in a row.",
@@ -16283,7 +16283,7 @@ const jhWordsDB = [
   {
     "id": 31810,
     "en": "twenty",
-    "kk": "",
+    "kk": "[ˋtwɛnti]",
     "zh": "n. 二十",
     "unit": 18,
     "example": "Twenty-eight is divisible by seven.",
@@ -16292,7 +16292,7 @@ const jhWordsDB = [
   {
     "id": 31811,
     "en": "twice",
-    "kk": "",
+    "kk": "[twaɪs]",
     "zh": "adv. 兩次",
     "unit": 18,
     "example": "I visited once or twice.",
@@ -16301,7 +16301,7 @@ const jhWordsDB = [
   {
     "id": 31812,
     "en": "two",
-    "kk": "",
+    "kk": "[tu]",
     "zh": "n. 二",
     "unit": 18,
     "example": "Two prisoners have escaped.",
@@ -16310,7 +16310,7 @@ const jhWordsDB = [
   {
     "id": 31813,
     "en": "type",
-    "kk": "",
+    "kk": "[taɪp]",
     "zh": "v. 打字",
     "unit": 18,
     "example": "What blood type do you have?",
@@ -16319,7 +16319,7 @@ const jhWordsDB = [
   {
     "id": 31814,
     "en": "typhoon",
-    "kk": "",
+    "kk": "[͵taɪˋfun]",
     "zh": "n. 颱風",
     "unit": 18,
     "example": "A typhoon is coming.",
@@ -16328,7 +16328,7 @@ const jhWordsDB = [
   {
     "id": 31815,
     "en": "ugly",
-    "kk": "",
+    "kk": "[ˋʌɡli]",
     "zh": "adj. 醜陋的",
     "unit": 18,
     "example": "An ugly new building blocked the view from the window.",
@@ -16337,7 +16337,7 @@ const jhWordsDB = [
   {
     "id": 31816,
     "en": "umbrella",
-    "kk": "",
+    "kk": "[əˋmbrɛlə]",
     "zh": "n. 雨傘",
     "unit": 18,
     "example": "Her umbrella blew inside out.",
@@ -16346,7 +16346,7 @@ const jhWordsDB = [
   {
     "id": 31817,
     "en": "uncle",
-    "kk": "",
+    "kk": "[ˋʌŋkəl]",
     "zh": "n. 叔伯",
     "unit": 18,
     "example": "My uncle taught me to juggle.",
@@ -16355,7 +16355,7 @@ const jhWordsDB = [
   {
     "id": 31818,
     "en": "under",
-    "kk": "/ˈʌndər/",
+    "kk": "[ˋʌndɚ]",
     "zh": "prep. 在...下面",
     "unit": 18,
     "example": "They feel under permanent threat.",
@@ -16364,7 +16364,7 @@ const jhWordsDB = [
   {
     "id": 31819,
     "en": "underline",
-    "kk": "",
+    "kk": "[ˋʌndɚ͵laɪn]",
     "zh": "v. 強調",
     "unit": 18,
     "example": "Some readers would underline the page as they read.",
@@ -16373,7 +16373,7 @@ const jhWordsDB = [
   {
     "id": 31820,
     "en": "understand",
-    "kk": "/ˌʌndərˈstænd/",
+    "kk": "[͵ʌndɚˋstænd]",
     "zh": "v. 了解",
     "unit": 18,
     "example": "I fully understand your motives.",
@@ -16382,7 +16382,7 @@ const jhWordsDB = [
   {
     "id": 31821,
     "en": "underwear",
-    "kk": "",
+    "kk": "[ˋʌndɚ͵wɛr]",
     "zh": "n. 內衣褲",
     "unit": 18,
     "example": "She packed one change of underwear.",
@@ -16391,7 +16391,7 @@ const jhWordsDB = [
   {
     "id": 31822,
     "en": "unhappy",
-    "kk": "",
+    "kk": "[ənˋhæpi]",
     "zh": "adj. 不快樂的",
     "unit": 18,
     "example": "I hate to see you unhappy.",
@@ -16400,7 +16400,7 @@ const jhWordsDB = [
   {
     "id": 31823,
     "en": "uniform",
-    "kk": "",
+    "kk": "[ˋjunə͵fɔrm]",
     "zh": "n. 制服",
     "unit": 18,
     "example": "He was wearing a brown uniform.",
@@ -16409,7 +16409,7 @@ const jhWordsDB = [
   {
     "id": 31824,
     "en": "unique",
-    "kk": "",
+    "kk": "[juˋnik]",
     "zh": "adj. 獨一無二的",
     "unit": 18,
     "example": "Each person's signature is unique.",
@@ -16418,7 +16418,7 @@ const jhWordsDB = [
   {
     "id": 31825,
     "en": "universe",
-    "kk": "",
+    "kk": "[ˋjunə͵vɝs]",
     "zh": "n. 宇宙",
     "unit": 18,
     "example": "The universe is slowly yielding up its secrets.",
@@ -16427,7 +16427,7 @@ const jhWordsDB = [
   {
     "id": 31826,
     "en": "university",
-    "kk": "/ˌjuːnɪˈvɜːrsəti/",
+    "kk": "[͵junəˋvɝsəti]",
     "zh": "n. 大學",
     "unit": 18,
     "example": "My daughter is at university.",
@@ -16436,7 +16436,7 @@ const jhWordsDB = [
   {
     "id": 31827,
     "en": "until",
-    "kk": "/ənˈtɪl/",
+    "kk": "[ənˋtɪl]",
     "zh": "prep. 直到...",
     "unit": 18,
     "example": "She lay sleepless until dawn.",
@@ -16445,7 +16445,7 @@ const jhWordsDB = [
   {
     "id": 31828,
     "en": "up",
-    "kk": "/ʌp/",
+    "kk": "[ʌp]",
     "zh": "adv. 向上",
     "unit": 18,
     "example": "Interest rates went up.",
@@ -16454,7 +16454,7 @@ const jhWordsDB = [
   {
     "id": 31829,
     "en": "upper",
-    "kk": "",
+    "kk": "[ˋʌpɚ]",
     "zh": "adj. 上面的",
     "unit": 18,
     "example": "Her novels poke fun at the upper class.",
@@ -16463,7 +16463,7 @@ const jhWordsDB = [
   {
     "id": 31830,
     "en": "upstairs",
-    "kk": "",
+    "kk": "[əpˋstɛrz]",
     "zh": "adv. 在樓上",
     "unit": 18,
     "example": "I carried her bags upstairs.",
@@ -16472,7 +16472,7 @@ const jhWordsDB = [
   {
     "id": 31831,
     "en": "use",
-    "kk": "/juːz/",
+    "kk": "[jus]",
     "zh": "v. 使用",
     "unit": 18,
     "example": "That's a word I never use.",
@@ -16481,7 +16481,7 @@ const jhWordsDB = [
   {
     "id": 31832,
     "en": "user",
-    "kk": "/ˈjuːzər/",
+    "kk": "[ˋjuzɚ]",
     "zh": "n. 使用者",
     "unit": 18,
     "example": "I am a Windows user.",
@@ -16490,7 +16490,7 @@ const jhWordsDB = [
   {
     "id": 31833,
     "en": "useful",
-    "kk": "/ˈjuːsfəl/",
+    "kk": "[ˋjusfəl]",
     "zh": "adj. 有用的",
     "unit": 18,
     "example": "He offered some useful advice.",
@@ -16499,7 +16499,7 @@ const jhWordsDB = [
   {
     "id": 31834,
     "en": "usual",
-    "kk": "/ˈjuːʒuəl/",
+    "kk": "[ˋjuʒəwəl]",
     "zh": "adj. 通常的",
     "unit": 18,
     "example": "He came home later than usual.",
@@ -16508,7 +16508,7 @@ const jhWordsDB = [
   {
     "id": 31835,
     "en": "usually",
-    "kk": "/ˈjuːʒuəli/",
+    "kk": "[ˋjuʒəwəli]",
     "zh": "adv. 通常",
     "unit": 18,
     "example": "Windows are usually sealed off.",
@@ -16517,7 +16517,7 @@ const jhWordsDB = [
   {
     "id": 31836,
     "en": "vacation",
-    "kk": "",
+    "kk": "[veˋkeʃən]",
     "zh": "n. 假期",
     "unit": 18,
     "example": "We're going to the beach for vacation.",
@@ -16526,7 +16526,7 @@ const jhWordsDB = [
   {
     "id": 31837,
     "en": "valley",
-    "kk": "",
+    "kk": "[ˋvæli]",
     "zh": "n. 山谷",
     "unit": 18,
     "example": "Mist ascended from the valley.",
@@ -16535,7 +16535,7 @@ const jhWordsDB = [
   {
     "id": 31838,
     "en": "valuable",
-    "kk": "",
+    "kk": "[ˋvæljəbəl]",
     "zh": "adj. 有價值的",
     "unit": 18,
     "example": "Luckily, nothing valuable was stolen.",
@@ -16544,7 +16544,7 @@ const jhWordsDB = [
   {
     "id": 31839,
     "en": "value",
-    "kk": "/ˈvæljuː/",
+    "kk": "[ˋvælju]",
     "zh": "n. 價值",
     "unit": 18,
     "example": "Let y have the value 33.",
@@ -16553,7 +16553,7 @@ const jhWordsDB = [
   {
     "id": 31840,
     "en": "vegetable",
-    "kk": "",
+    "kk": "[ˋvɛdʒtəbəl]",
     "zh": "n. 蔬菜",
     "unit": 18,
     "example": "The vegetable harvest is disastrously behind schedule.",
@@ -16562,7 +16562,7 @@ const jhWordsDB = [
   {
     "id": 31841,
     "en": "vendor",
-    "kk": "",
+    "kk": "[ˋvɛndɚ]",
     "zh": "n. 攤販",
     "unit": 18,
     "example": "I think the vendor is still there.",
@@ -16571,7 +16571,7 @@ const jhWordsDB = [
   {
     "id": 31842,
     "en": "very",
-    "kk": "/ˈveri/",
+    "kk": "[ˋvɛri]",
     "zh": "adv. 非常",
     "unit": 18,
     "example": "He was very polite and very correct.",
@@ -16580,7 +16580,7 @@ const jhWordsDB = [
   {
     "id": 31843,
     "en": "vest",
-    "kk": "",
+    "kk": "[vɛst]",
     "zh": "n. 背心",
     "unit": 18,
     "example": "His life was saved by a quarter-inch-thick bullet-proof vest.",
@@ -16589,7 +16589,7 @@ const jhWordsDB = [
   {
     "id": 31844,
     "en": "victory",
-    "kk": "",
+    "kk": "[ˋvɪktɚi]",
     "zh": "n. 勝利",
     "unit": 18,
     "example": "The team hung on for victory.",
@@ -16598,7 +16598,7 @@ const jhWordsDB = [
   {
     "id": 31845,
     "en": "video",
-    "kk": "/ˈvɪdioʊ/",
+    "kk": "[ˋvɪdio]",
     "zh": "n. 錄影帶",
     "unit": 18,
     "example": "Do we have a blank video ?",
@@ -16607,7 +16607,7 @@ const jhWordsDB = [
   {
     "id": 31846,
     "en": "village",
-    "kk": "/ˈvɪlɪdʒ/",
+    "kk": "[ˋvɪlədʒ]",
     "zh": "n. 村莊",
     "unit": 18,
     "example": "The entire village was destroyed.",
@@ -16616,7 +16616,7 @@ const jhWordsDB = [
   {
     "id": 31847,
     "en": "vinegar",
-    "kk": "",
+    "kk": "[ˋvɪnəɡɚ]",
     "zh": "n. 醋",
     "unit": 18,
     "example": "Wine vinegar tenderizes meat.",
@@ -16625,7 +16625,7 @@ const jhWordsDB = [
   {
     "id": 31848,
     "en": "violin",
-    "kk": "",
+    "kk": "[vaɪəˋlɪn]",
     "zh": "n. 小提琴",
     "unit": 18,
     "example": "Lizzie used to play the violin.",
@@ -16634,7 +16634,7 @@ const jhWordsDB = [
   {
     "id": 31849,
     "en": "visit",
-    "kk": "/ˈvɪzɪt/",
+    "kk": "[ˋvɪzɪt]",
     "zh": "v. 探訪",
     "unit": 18,
     "example": "She will try and visit tomorrow.",
@@ -16643,7 +16643,7 @@ const jhWordsDB = [
   {
     "id": 31850,
     "en": "visitor",
-    "kk": "",
+    "kk": "[ˋvɪzɪtɚ]",
     "zh": "n. 訪客",
     "unit": 18,
     "example": "I wasn't expecting a visitor.",
@@ -16652,7 +16652,7 @@ const jhWordsDB = [
   {
     "id": 31851,
     "en": "vocabulary",
-    "kk": "",
+    "kk": "[voˋkæbjə͵lɛri]",
     "zh": "n. 字彙",
     "unit": 18,
     "example": "Reading will enlarge your vocabulary.",
@@ -16661,7 +16661,7 @@ const jhWordsDB = [
   {
     "id": 31852,
     "en": "voice",
-    "kk": "/vɔɪs/",
+    "kk": "[vɔɪs]",
     "zh": "n. 聲音",
     "unit": 18,
     "example": "Her voice was suddenly breathy.",
@@ -16670,7 +16670,7 @@ const jhWordsDB = [
   {
     "id": 31853,
     "en": "volleyball",
-    "kk": "",
+    "kk": "[ˋvɑli͵bɔl]",
     "zh": "n. 排球",
     "unit": 18,
     "example": "They had a volleyball court in the middle of the courtyard.",
@@ -16679,7 +16679,7 @@ const jhWordsDB = [
   {
     "id": 31854,
     "en": "vote",
-    "kk": "/voʊt/",
+    "kk": "[vot]",
     "zh": "v. 投票",
     "unit": 18,
     "example": "All affiliated members can vote.",
@@ -16688,7 +16688,7 @@ const jhWordsDB = [
   {
     "id": 31855,
     "en": "waist",
-    "kk": "",
+    "kk": "[west]",
     "zh": "n. 腰",
     "unit": 18,
     "example": "The grass had grown waist-high.",
@@ -16697,7 +16697,7 @@ const jhWordsDB = [
   {
     "id": 31856,
     "en": "wait",
-    "kk": "/weɪt/",
+    "kk": "[wet]",
     "zh": "v. 等待",
     "unit": 18,
     "example": "I'll wait until they arrive.",
@@ -16706,7 +16706,7 @@ const jhWordsDB = [
   {
     "id": 31857,
     "en": "waiter",
-    "kk": "",
+    "kk": "[ˋwetɚ]",
     "zh": "n. 服務生",
     "unit": 18,
     "example": "He beckoned to the waiter.",
@@ -16715,7 +16715,7 @@ const jhWordsDB = [
   {
     "id": 31858,
     "en": "waitress",
-    "kk": "",
+    "kk": "[ˋwetrəs]",
     "zh": "n. 女服務生",
     "unit": 18,
     "example": "She took a job as a waitress.",
@@ -16724,7 +16724,7 @@ const jhWordsDB = [
   {
     "id": 31859,
     "en": "wake",
-    "kk": "/weɪk/",
+    "kk": "[wek]",
     "zh": "v. 醒",
     "unit": 18,
     "example": "She went upstairs to wake Milton.",
@@ -16733,7 +16733,7 @@ const jhWordsDB = [
   {
     "id": 31860,
     "en": "walk",
-    "kk": "/wɔːk/",
+    "kk": "[wɔk]",
     "zh": "v. 走",
     "unit": 18,
     "example": "They walk their dogs every day.",
@@ -16742,7 +16742,7 @@ const jhWordsDB = [
   {
     "id": 31861,
     "en": "wall",
-    "kk": "/wɔːl/",
+    "kk": "[wɔl]",
     "zh": "n. 牆壁",
     "unit": 18,
     "example": "She leaned against the wall.",
@@ -16751,7 +16751,7 @@ const jhWordsDB = [
   {
     "id": 31862,
     "en": "wallet",
-    "kk": "",
+    "kk": "[ˋwɔlət]",
     "zh": "n. 皮夾",
     "unit": 18,
     "example": "This wallet feels like leather.",
@@ -16760,7 +16760,7 @@ const jhWordsDB = [
   {
     "id": 31863,
     "en": "want",
-    "kk": "/wɑːnt/",
+    "kk": "[wɑnt]",
     "zh": "v. 想要",
     "unit": 18,
     "example": "Do you want anything else?",
@@ -16769,7 +16769,7 @@ const jhWordsDB = [
   {
     "id": 31864,
     "en": "war",
-    "kk": "/wɔːr/",
+    "kk": "[wɔr]",
     "zh": "n. 戰爭",
     "unit": 18,
     "example": "Diplomacy is better than war.",
@@ -16778,7 +16778,7 @@ const jhWordsDB = [
   {
     "id": 31865,
     "en": "warm",
-    "kk": "/wɔːrm/",
+    "kk": "[wɔrm]",
     "zh": "adj. 暖和的",
     "unit": 18,
     "example": "This sleeping bag is very warm.",
@@ -16787,7 +16787,7 @@ const jhWordsDB = [
   {
     "id": 31866,
     "en": "wash",
-    "kk": "",
+    "kk": "[wɑʃ]",
     "zh": "v. 洗滌",
     "unit": 18,
     "example": "I must wash the car tomorrow.",
@@ -16796,7 +16796,7 @@ const jhWordsDB = [
   {
     "id": 31867,
     "en": "waste",
-    "kk": "",
+    "kk": "[west]",
     "zh": "v. 浪費",
     "unit": 18,
     "example": "The waste was dumped in the sea.",
@@ -16805,7 +16805,7 @@ const jhWordsDB = [
   {
     "id": 31868,
     "en": "watch",
-    "kk": "/wɑːtʃ/",
+    "kk": "[wɑtʃ]",
     "zh": "n. 手錶",
     "unit": 18,
     "example": "She glanced at her watch.",
@@ -16814,7 +16814,7 @@ const jhWordsDB = [
   {
     "id": 31869,
     "en": "water",
-    "kk": "/ˈwɔːtər/",
+    "kk": "[ˋwɔtɚ]",
     "zh": "n. 水",
     "unit": 18,
     "example": "Glucose is soluble in water.",
@@ -16823,7 +16823,7 @@ const jhWordsDB = [
   {
     "id": 31870,
     "en": "waterfall",
-    "kk": "",
+    "kk": "[ˋwɔtɚ͵fɔl]",
     "zh": "n. 瀑布",
     "unit": 18,
     "example": "As you descend, suddenly you see at last the hidden waterfall.",
@@ -16832,7 +16832,7 @@ const jhWordsDB = [
   {
     "id": 31871,
     "en": "watermelon",
-    "kk": "",
+    "kk": "[ˋwɔtɚ͵mɛlən]",
     "zh": "n. 西瓜",
     "unit": 18,
     "example": "Watermelon contains vitamins and also potassium.",
@@ -16841,7 +16841,7 @@ const jhWordsDB = [
   {
     "id": 31872,
     "en": "wave",
-    "kk": "/weɪv/",
+    "kk": "[wev]",
     "zh": "n. 波浪",
     "unit": 18,
     "example": "He dismissed her with an airy wave.",
@@ -16850,7 +16850,7 @@ const jhWordsDB = [
   {
     "id": 31873,
     "en": "way",
-    "kk": "/weɪ/",
+    "kk": "[we]",
     "zh": "n. 方式",
     "unit": 18,
     "example": "The doctor's on his way.",
@@ -16859,7 +16859,7 @@ const jhWordsDB = [
   {
     "id": 31874,
     "en": "weak",
-    "kk": "/wiːk/",
+    "kk": "[wik]",
     "zh": "adj. 虛弱的",
     "unit": 18,
     "example": "Geography was my weak subject.",
@@ -16868,7 +16868,7 @@ const jhWordsDB = [
   {
     "id": 31875,
     "en": "weapon",
-    "kk": "",
+    "kk": "[ˋwɛpən]",
     "zh": "n. 武器",
     "unit": 18,
     "example": "Discipline was the new coach's secret weapon.",
@@ -16877,7 +16877,7 @@ const jhWordsDB = [
   {
     "id": 31876,
     "en": "wear",
-    "kk": "/wer/",
+    "kk": "[wɛr]",
     "zh": "v. 穿戴著",
     "unit": 18,
     "example": "She doesn't often wear heels.",
@@ -16886,7 +16886,7 @@ const jhWordsDB = [
   {
     "id": 31877,
     "en": "weather",
-    "kk": "/ˈweðər/",
+    "kk": "[ˋwɛðɚ]",
     "zh": "n. 天氣",
     "unit": 18,
     "example": "Weather conditions were fair.",
@@ -16895,7 +16895,7 @@ const jhWordsDB = [
   {
     "id": 31878,
     "en": "wedding",
-    "kk": "",
+    "kk": "[ˋwɛdɪŋ]",
     "zh": "n. 結婚儀式",
     "unit": 18,
     "example": "The wedding day finally arrived.",
@@ -16904,7 +16904,7 @@ const jhWordsDB = [
   {
     "id": 31879,
     "en": "Wednesday",
-    "kk": "",
+    "kk": "[ˋwɛnzdi]",
     "zh": "n. 星期三",
     "unit": 18,
     "example": "Let's move the meeting to Wednesday.",
@@ -16913,7 +16913,7 @@ const jhWordsDB = [
   {
     "id": 31880,
     "en": "week",
-    "kk": "/wiːk/",
+    "kk": "[wik]",
     "zh": "n. 週",
     "unit": 18,
     "example": "We commence building next week.",
@@ -16922,7 +16922,7 @@ const jhWordsDB = [
   {
     "id": 31881,
     "en": "weekday",
-    "kk": "",
+    "kk": "[ˋwik͵de]",
     "zh": "n. 平日",
     "unit": 18,
     "example": "There are several free hours every weekday.",
@@ -16931,7 +16931,7 @@ const jhWordsDB = [
   {
     "id": 31882,
     "en": "weekend",
-    "kk": "",
+    "kk": "[ˋwi͵kɛnd]",
     "zh": "n. 週末",
     "unit": 18,
     "example": "Let's go fishing this weekend.",
@@ -16940,7 +16940,7 @@ const jhWordsDB = [
   {
     "id": 31883,
     "en": "weight",
-    "kk": "/weɪt/",
+    "kk": "[wet]",
     "zh": "n. 重量",
     "unit": 18,
     "example": "He's working at losing weight.",
@@ -16949,7 +16949,7 @@ const jhWordsDB = [
   {
     "id": 31884,
     "en": "welcome",
-    "kk": "/ˈwelkəm/",
+    "kk": "[ˋwɛlkəm]",
     "zh": "v. 歡迎",
     "unit": 18,
     "example": "I warmly welcome this decision.",
@@ -16958,7 +16958,7 @@ const jhWordsDB = [
   {
     "id": 31885,
     "en": "well",
-    "kk": "/wel/",
+    "kk": "[wɛl]",
     "zh": "adv. 很好地",
     "unit": 18,
     "example": "Well, well, well. How quickly things change.",
@@ -16967,7 +16967,7 @@ const jhWordsDB = [
   {
     "id": 31886,
     "en": "west",
-    "kk": "/west/",
+    "kk": "[wɛst]",
     "zh": "n. 西方",
     "unit": 18,
     "example": "The wind veered to the west.",
@@ -16976,7 +16976,7 @@ const jhWordsDB = [
   {
     "id": 31887,
     "en": "wet",
-    "kk": "",
+    "kk": "[wɛt]",
     "zh": "adj. 溼的",
     "unit": 18,
     "example": "Wet weather always depresses me.",
@@ -16985,7 +16985,7 @@ const jhWordsDB = [
   {
     "id": 31888,
     "en": "whale",
-    "kk": "",
+    "kk": "[wel]",
     "zh": "n. 鯨魚",
     "unit": 18,
     "example": "The whale dived as the harpoon struck it.",
@@ -16994,7 +16994,7 @@ const jhWordsDB = [
   {
     "id": 31889,
     "en": "what",
-    "kk": "/wʌt/",
+    "kk": "[wʌt]",
     "zh": "pron. 什麼",
     "unit": 18,
     "example": "'What?' she asked snappily.",
@@ -17003,7 +17003,7 @@ const jhWordsDB = [
   {
     "id": 31890,
     "en": "wheel",
-    "kk": "",
+    "kk": "[wil]",
     "zh": "n. 車輪",
     "unit": 18,
     "example": "The wheel is pulling to the left.",
@@ -17012,7 +17012,7 @@ const jhWordsDB = [
   {
     "id": 31891,
     "en": "when",
-    "kk": "/wen/",
+    "kk": "[wɛn]",
     "zh": "pron. 何時",
     "unit": 18,
     "example": "When were you there last?",
@@ -17021,7 +17021,7 @@ const jhWordsDB = [
   {
     "id": 31892,
     "en": "where",
-    "kk": "/wer/",
+    "kk": "[wɛr]",
     "zh": "pron. 哪裡",
     "unit": 18,
     "example": "Where are you living now?",
@@ -17030,7 +17030,7 @@ const jhWordsDB = [
   {
     "id": 31893,
     "en": "whether",
-    "kk": "/ˈweðər/",
+    "kk": "[ˋwɛðɚ]",
     "zh": "conj. 是否",
     "unit": 18,
     "example": "Check whether a fuse has blown.",
@@ -17039,7 +17039,7 @@ const jhWordsDB = [
   {
     "id": 31894,
     "en": "which",
-    "kk": "/wɪtʃ/",
+    "kk": "[wɪtʃ]",
     "zh": "pron. 哪個",
     "unit": 18,
     "example": "Which one's your favourite?",
@@ -17048,7 +17048,7 @@ const jhWordsDB = [
   {
     "id": 31895,
     "en": "while",
-    "kk": "/waɪl/",
+    "kk": "[waɪl]",
     "zh": "conj. 當...時候",
     "unit": 18,
     "example": "She fell while toddling around.",
@@ -17057,7 +17057,7 @@ const jhWordsDB = [
   {
     "id": 31896,
     "en": "white",
-    "kk": "/waɪt/",
+    "kk": "[waɪt]",
     "zh": "adj. 白色的",
     "unit": 18,
     "example": "His face was ghastly white.",
@@ -17066,7 +17066,7 @@ const jhWordsDB = [
   {
     "id": 31897,
     "en": "who",
-    "kk": "/huː/",
+    "kk": "[hu]",
     "zh": "pron. 誰",
     "unit": 18,
     "example": "Who did the timekeeping?",
@@ -17075,7 +17075,7 @@ const jhWordsDB = [
   {
     "id": 31898,
     "en": "whole",
-    "kk": "/hoʊl/",
+    "kk": "[hol]",
     "zh": "adj. 全體的",
     "unit": 18,
     "example": "The whole idea was preposterous.",
@@ -17084,7 +17084,7 @@ const jhWordsDB = [
   {
     "id": 31899,
     "en": "whose",
-    "kk": "",
+    "kk": "[huz]",
     "zh": "pron. 誰的",
     "unit": 18,
     "example": "Whose is that farm over yonder?",
@@ -17093,7 +17093,7 @@ const jhWordsDB = [
   {
     "id": 31900,
     "en": "why",
-    "kk": "/waɪ/",
+    "kk": "[waɪ]",
     "zh": "adv. 為何",
     "unit": 18,
     "example": "'But why?' he interpolated.",
@@ -17102,7 +17102,7 @@ const jhWordsDB = [
   {
     "id": 31901,
     "en": "wide",
-    "kk": "/waɪd/",
+    "kk": "[waɪd]",
     "zh": "adj. 廣大的",
     "unit": 18,
     "example": "It's about 2 metres wide.",
@@ -17111,7 +17111,7 @@ const jhWordsDB = [
   {
     "id": 31902,
     "en": "wife",
-    "kk": "/waɪf/",
+    "kk": "[waɪf]",
     "zh": "n. 妻子",
     "unit": 18,
     "example": "His wife is very religious.",
@@ -17120,7 +17120,7 @@ const jhWordsDB = [
   {
     "id": 31903,
     "en": "wild",
-    "kk": "",
+    "kk": "[waɪld]",
     "zh": "adj. 野生的",
     "unit": 18,
     "example": "They went camping in the wild.",
@@ -17129,7 +17129,7 @@ const jhWordsDB = [
   {
     "id": 31904,
     "en": "will",
-    "kk": "",
+    "kk": "[wɪl]",
     "zh": "aux. 將要",
     "unit": 18,
     "example": "You will be remunerated and so will your staff.",
@@ -17138,7 +17138,7 @@ const jhWordsDB = [
   {
     "id": 31905,
     "en": "win",
-    "kk": "/wɪn/",
+    "kk": "[wɪn]",
     "zh": "v. 獲勝",
     "unit": 18,
     "example": "Everyone has a chance to win.",
@@ -17147,7 +17147,7 @@ const jhWordsDB = [
   {
     "id": 31906,
     "en": "wind",
-    "kk": "/wɪnd/",
+    "kk": "[waɪnd]",
     "zh": "n. 風",
     "unit": 18,
     "example": "The wind will freshen tonight.",
@@ -17156,7 +17156,7 @@ const jhWordsDB = [
   {
     "id": 31907,
     "en": "window",
-    "kk": "/ˈwɪndoʊ/",
+    "kk": "[ˋwɪndo]",
     "zh": "n. 窗戶",
     "unit": 18,
     "example": "I climbed through the window.",
@@ -17165,7 +17165,7 @@ const jhWordsDB = [
   {
     "id": 31908,
     "en": "windy",
-    "kk": "",
+    "kk": "[ˋwɪndi]",
     "zh": "adj. 風大的",
     "unit": 18,
     "example": "It was windy and Jake felt cold.",
@@ -17174,7 +17174,7 @@ const jhWordsDB = [
   {
     "id": 31909,
     "en": "wine",
-    "kk": "",
+    "kk": "[waɪn]",
     "zh": "n. 酒",
     "unit": 18,
     "example": "The wine had been doctored.",
@@ -17183,7 +17183,7 @@ const jhWordsDB = [
   {
     "id": 31910,
     "en": "wing",
-    "kk": "",
+    "kk": "[wɪŋ]",
     "zh": "n. 翅膀",
     "unit": 18,
     "example": "Who's playing on the wing?",
@@ -17192,7 +17192,7 @@ const jhWordsDB = [
   {
     "id": 31911,
     "en": "winner",
-    "kk": "",
+    "kk": "[ˋwɪnɚ]",
     "zh": "n. 優勝者",
     "unit": 18,
     "example": "The winner scored 10 pts.",
@@ -17201,7 +17201,7 @@ const jhWordsDB = [
   {
     "id": 31912,
     "en": "winter",
-    "kk": "/ˈwɪntər/",
+    "kk": "[ˋwɪntɚ]",
     "zh": "n. 冬天",
     "unit": 18,
     "example": "Swallows migrate south in winter.",
@@ -17210,7 +17210,7 @@ const jhWordsDB = [
   {
     "id": 31913,
     "en": "wire",
-    "kk": "",
+    "kk": "[ˋwaɪɚ]",
     "zh": "n. 電線",
     "unit": 18,
     "example": "The wire led to a speaker.",
@@ -17219,7 +17219,7 @@ const jhWordsDB = [
   {
     "id": 31914,
     "en": "wise",
-    "kk": "",
+    "kk": "[waɪz]",
     "zh": "adj. 明智的",
     "unit": 18,
     "example": "It's never wise to withhold evidence.",
@@ -17228,7 +17228,7 @@ const jhWordsDB = [
   {
     "id": 31915,
     "en": "wish",
-    "kk": "/wɪʃ/",
+    "kk": "[wɪʃ]",
     "zh": "v. 希望",
     "unit": 18,
     "example": "The prince's wish came true.",
@@ -17237,7 +17237,7 @@ const jhWordsDB = [
   {
     "id": 31916,
     "en": "with",
-    "kk": "/wɪð/",
+    "kk": "[wɪð]",
     "zh": "prep. 有;用",
     "unit": 18,
     "example": "He's more comfortable with computers than with people.",
@@ -17246,7 +17246,7 @@ const jhWordsDB = [
   {
     "id": 31917,
     "en": "without",
-    "kk": "/wɪˈðaʊt/",
+    "kk": "[wɪˋθaʊt]",
     "zh": "prep. 沒有",
     "unit": 18,
     "example": "She's better off without him.",
@@ -17255,7 +17255,7 @@ const jhWordsDB = [
   {
     "id": 31918,
     "en": "wolf",
-    "kk": "",
+    "kk": "[wʊlf]",
     "zh": "n. 狼",
     "unit": 18,
     "example": "The wolf clawed at the tree and howled the whole night.",
@@ -17264,7 +17264,7 @@ const jhWordsDB = [
   {
     "id": 31919,
     "en": "woman",
-    "kk": "/ˈwʊmən/",
+    "kk": "[ˋwʊmən]",
     "zh": "n. 女人",
     "unit": 18,
     "example": "She's a very attractive woman.",
@@ -17273,7 +17273,7 @@ const jhWordsDB = [
   {
     "id": 31920,
     "en": "wonder",
-    "kk": "/ˈwʌndər/",
+    "kk": "[ˋwʌndɚ]",
     "zh": "v. 驚訝",
     "unit": 18,
     "example": "I wonder if you can help me.",
@@ -17282,7 +17282,7 @@ const jhWordsDB = [
   {
     "id": 31921,
     "en": "wonderful",
-    "kk": "",
+    "kk": "[ˋwʌndɚfəl]",
     "zh": "adj. 極好的",
     "unit": 18,
     "example": "They've got a wonderful house.",
@@ -17291,7 +17291,7 @@ const jhWordsDB = [
   {
     "id": 31922,
     "en": "wood",
-    "kk": "/wʊd/",
+    "kk": "[wʊd]",
     "zh": "n. 木頭",
     "unit": 18,
     "example": "The impact splintered the wood.",
@@ -17300,7 +17300,7 @@ const jhWordsDB = [
   {
     "id": 31923,
     "en": "wool",
-    "kk": "",
+    "kk": "[wʊl]",
     "zh": "n. 羊毛",
     "unit": 18,
     "example": "This scarf is 100% wool.",
@@ -17309,7 +17309,7 @@ const jhWordsDB = [
   {
     "id": 31924,
     "en": "word",
-    "kk": "/wɜːrd/",
+    "kk": "[wɝd]",
     "zh": "n. 字",
     "unit": 18,
     "example": "The appropriate word eluded him.",
@@ -17318,7 +17318,7 @@ const jhWordsDB = [
   {
     "id": 31925,
     "en": "work",
-    "kk": "/wɜːrk/",
+    "kk": "[wɝk]",
     "zh": "v. 工作",
     "unit": 18,
     "example": "He's still unfit for work.",
@@ -17327,7 +17327,7 @@ const jhWordsDB = [
   {
     "id": 31926,
     "en": "worker",
-    "kk": "/ˈwɜːrkər/",
+    "kk": "[ˋwɝkɚ]",
     "zh": "n. 工人",
     "unit": 18,
     "example": "She was a zealous worker for charity.",
@@ -17336,7 +17336,7 @@ const jhWordsDB = [
   {
     "id": 31927,
     "en": "world",
-    "kk": "/wɜːrld/",
+    "kk": "[wɝld]",
     "zh": "n. 世界",
     "unit": 18,
     "example": "She has three world titles.",
@@ -17345,7 +17345,7 @@ const jhWordsDB = [
   {
     "id": 31928,
     "en": "worm",
-    "kk": "",
+    "kk": "[wɝm]",
     "zh": "n. 蟲",
     "unit": 18,
     "example": "The early bird catches the worm.",
@@ -17354,7 +17354,7 @@ const jhWordsDB = [
   {
     "id": 31929,
     "en": "worry",
-    "kk": "/ˈwɜːri/",
+    "kk": "[ˋwɝi]",
     "zh": "v. 擔心",
     "unit": 18,
     "example": "I worry about her constantly.",
@@ -17363,7 +17363,7 @@ const jhWordsDB = [
   {
     "id": 31930,
     "en": "worth",
-    "kk": "",
+    "kk": "[wɝθ]",
     "zh": "n. 價值",
     "unit": 18,
     "example": "Was it worth the effort?",
@@ -17372,7 +17372,7 @@ const jhWordsDB = [
   {
     "id": 31931,
     "en": "wound",
-    "kk": "",
+    "kk": "[waʊnd]",
     "zh": "n. 受傷",
     "unit": 18,
     "example": "The nurse cleaned the wound.",
@@ -17381,7 +17381,7 @@ const jhWordsDB = [
   {
     "id": 31932,
     "en": "wrist",
-    "kk": "",
+    "kk": "[rɪst]",
     "zh": "n. 手腕",
     "unit": 18,
     "example": "Kay grasped him by the wrist.",
@@ -17390,7 +17390,7 @@ const jhWordsDB = [
   {
     "id": 31933,
     "en": "write",
-    "kk": "/raɪt/",
+    "kk": "[raɪt]",
     "zh": "v. 寫",
     "unit": 18,
     "example": "Write me while you're away.",
@@ -17399,7 +17399,7 @@ const jhWordsDB = [
   {
     "id": 31934,
     "en": "writer",
-    "kk": "",
+    "kk": "[ˋraɪtɚ]",
     "zh": "n. 作者",
     "unit": 18,
     "example": "'You? A writer?' she sneered.",
@@ -17408,7 +17408,7 @@ const jhWordsDB = [
   {
     "id": 31935,
     "en": "wrong",
-    "kk": "/rɔːŋ/",
+    "kk": "[rɔŋ]",
     "zh": "adj. 不對的",
     "unit": 18,
     "example": "'That is wrong,' he asserted.",
@@ -17417,7 +17417,7 @@ const jhWordsDB = [
   {
     "id": 31936,
     "en": "yard",
-    "kk": "/jɑːrd/",
+    "kk": "[jɑrd]",
     "zh": "n. 院子",
     "unit": 18,
     "example": "Which door leads to the yard?",
@@ -17426,7 +17426,7 @@ const jhWordsDB = [
   {
     "id": 31937,
     "en": "year",
-    "kk": "/jɪr/",
+    "kk": "[jɪr]",
     "zh": "n. 年",
     "unit": 18,
     "example": "Spending has increased year on year.",
@@ -17435,7 +17435,7 @@ const jhWordsDB = [
   {
     "id": 31938,
     "en": "yellow",
-    "kk": "/ˈjeloʊ/",
+    "kk": "[ˋjɛlo]",
     "zh": "adj. 黃色的",
     "unit": 18,
     "example": "The walls were painted yellow.",
@@ -17444,7 +17444,7 @@ const jhWordsDB = [
   {
     "id": 31939,
     "en": "yes",
-    "kk": "/jes/",
+    "kk": "[jɛs]",
     "zh": "adv. 是的",
     "unit": 18,
     "example": "Yes, there's plenty of room.",
@@ -17453,7 +17453,7 @@ const jhWordsDB = [
   {
     "id": 31940,
     "en": "yesterday",
-    "kk": "/ˈjestərdeɪ/",
+    "kk": "[ˋjɛstɚ͵de]",
     "zh": "n. 昨天",
     "unit": 18,
     "example": "He signed for United yesterday.",
@@ -17462,7 +17462,7 @@ const jhWordsDB = [
   {
     "id": 31941,
     "en": "yet",
-    "kk": "/jet/",
+    "kk": "[jɛt]",
     "zh": "adv. 尚未",
     "unit": 18,
     "example": "They haven't finished yet.",
@@ -17471,7 +17471,7 @@ const jhWordsDB = [
   {
     "id": 31942,
     "en": "young",
-    "kk": "/jʌŋ/",
+    "kk": "[jʌŋ]",
     "zh": "adj. 年輕的",
     "unit": 18,
     "example": "He's a brilliant young scientist.",
@@ -17480,7 +17480,7 @@ const jhWordsDB = [
   {
     "id": 31943,
     "en": "youth",
-    "kk": "",
+    "kk": "[juθ]",
     "zh": "n. 青春",
     "unit": 18,
     "example": "The poem contrasts youth and age.",
@@ -17489,7 +17489,7 @@ const jhWordsDB = [
   {
     "id": 31944,
     "en": "yummy",
-    "kk": "",
+    "kk": "[ˋjʌmi]",
     "zh": "adj. 好吃的",
     "unit": 18,
     "example": "I'll bet they have yummy ice cream.",
@@ -17498,7 +17498,7 @@ const jhWordsDB = [
   {
     "id": 31945,
     "en": "zero",
-    "kk": "",
+    "kk": "[ˋzɪro]",
     "zh": "n. 零",
     "unit": 18,
     "example": "You've left off a zero.",
@@ -17507,7 +17507,7 @@ const jhWordsDB = [
   {
     "id": 31946,
     "en": "zoo",
-    "kk": "",
+    "kk": "[zu]",
     "zh": "n. 動物園",
     "unit": 18,
     "example": "He took his son Christopher to the zoo.",

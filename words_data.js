@@ -3,7 +3,7 @@ const externalVocabularyDB = [
     "id": 1,
     "en": "able",
     "kk": "[ˋebəl]",
-    "zh": "adj. 能;有能力的",
+    "zh": "adj. 能；有能力的",
     "unit": 1,
     "example": "She was barely able to stand.",
     "exampleZh": "她幾乎無法站立。"
@@ -318,7 +318,7 @@ const externalVocabularyDB = [
     "id": 36,
     "en": "mad",
     "kk": "[mæd]",
-    "zh": "adj. 發火;發瘋;發狂的",
+    "zh": "adj. 發火；發瘋；發狂的",
     "unit": 1,
     "example": "He's mad keen on planes.",
     "exampleZh": "他對飛機非常著迷。"
@@ -471,7 +471,7 @@ const externalVocabularyDB = [
     "id": 53,
     "en": "silly",
     "kk": "[ˋsɪli]",
-    "zh": "adj. 傻的;無聊的",
+    "zh": "adj. 傻的；無聊的",
     "unit": 1,
     "example": "No, silly, those aren't your shoes!",
     "exampleZh": "不，傻瓜，那不是你的鞋！"
@@ -516,7 +516,7 @@ const externalVocabularyDB = [
     "id": 58,
     "en": "sorry",
     "kk": "[ˋsɑri]",
-    "zh": "adj. 抱歉;遺憾的",
+    "zh": "adj. 抱歉；遺憾的",
     "unit": 1,
     "example": "'Sorry,' she said humbly.",
     "exampleZh": "「抱歉，」她謙虛地說。"
@@ -588,7 +588,7 @@ const externalVocabularyDB = [
     "id": 66,
     "en": "those",
     "kk": "[ðoz]",
-    "zh": "pron. 那些的;那",
+    "zh": "pron. 那些的；那",
     "unit": 1,
     "example": "Those laws no longer pertain.",
     "exampleZh": "這些法律不再適用。"
@@ -642,7 +642,7 @@ const externalVocabularyDB = [
     "id": 72,
     "en": "yucky",
     "kk": "[ˋjʌki]",
-    "zh": "adj. 討人厭的;噁心的",
+    "zh": "adj. 討人厭的；噁心的",
     "unit": 1,
     "example": "And I only get yucky deserts, mummy.",
     "exampleZh": "我只吃到令人厭惡的甜點，媽媽。"
@@ -687,7 +687,7 @@ const externalVocabularyDB = [
     "id": 77,
     "en": "am",
     "kk": "[æm]",
-    "zh": "v. 是,在; be 動詞第一人稱,單數,現在式",
+    "zh": "v. 是、在； be 動詞第一人稱、單數,現在式",
     "unit": 1,
     "example": "I must admit I am impressed.",
     "exampleZh": "我必須承認我印象深刻。"
@@ -705,7 +705,7 @@ const externalVocabularyDB = [
     "id": 79,
     "en": "are",
     "kk": "[ɑr]",
-    "zh": "v. 是,在; be 動詞第一、第三人稱, 複數, 現在式; 第二次人單、複數, 現在式",
+    "zh": "v. 是、在； be 動詞第一、第三人稱, 複數, 現在式； 第二次人單、複數, 現在式",
     "unit": 1,
     "example": "Certain courses are compulsory, others are optional.",
     "exampleZh": "某些課程是必修的，其他課程是可選的。"
@@ -840,7 +840,7 @@ const externalVocabularyDB = [
     "id": 94,
     "en": "darken",
     "kk": "[ˋdɑrkən]",
-    "zh": "v. 使變暗;變黑",
+    "zh": "v. 使變暗；變黑",
     "unit": 1,
     "example": "The sky began to darken as the storm approached.",
     "exampleZh": "隨著暴風雨的臨近，天空開始變暗。"
@@ -939,7 +939,7 @@ const externalVocabularyDB = [
     "id": 105,
     "en": "get",
     "kk": "[ɡɛt]",
-    "zh": "v. 得到;拿到",
+    "zh": "v. 得到；拿到",
     "unit": 1,
     "example": "Somebody get a doctor!",
     "exampleZh": "有人請醫生來嗎！"
@@ -984,7 +984,7 @@ const externalVocabularyDB = [
     "id": 110,
     "en": "is",
     "kk": "[ɪz]",
-    "zh": "v. 是,在; be 動詞第三人稱,單數,現在式",
+    "zh": "v. 是、在； be 動詞第三人稱、單數,現在式",
     "unit": 1,
     "example": "Where is Sophy? Is she safe?",
     "exampleZh": "蘇菲在哪裡？她安全嗎？"
@@ -1047,7 +1047,7 @@ const externalVocabularyDB = [
     "id": 117,
     "en": "make",
     "kk": "[mek]",
-    "zh": "v. 製造; 使得",
+    "zh": "v. 製造； 使得",
     "unit": 1,
     "example": "Four quarters make a whole.",
     "exampleZh": "四分之四是一個整體。"
@@ -1110,7 +1110,7 @@ const externalVocabularyDB = [
     "id": 124,
     "en": "prove",
     "kk": "[pruv]",
-    "zh": "v. 證明,證實",
+    "zh": "v. 證明、證實",
     "unit": 1,
     "example": "This advice was to prove valuable.",
     "exampleZh": "事實證明，這個建議很有價值。"
@@ -1335,7 +1335,7 @@ const externalVocabularyDB = [
     "id": 149,
     "en": "weigh",
     "kk": "[we]",
-    "zh": "v. 稱...的重量",
+    "zh": "v. 稱……的重量",
     "unit": 1,
     "example": "The largest stones weigh over five tonnes apiece.",
     "exampleZh": "最大的石頭每塊重超過五噸。"
@@ -1362,7 +1362,7 @@ const externalVocabularyDB = [
     "id": 152,
     "en": "do",
     "kk": "[du]",
-    "zh": "v. 構成否定句,疑問句,或強調句",
+    "zh": "v. 構成否定句、疑問句,或強調句",
     "unit": 1,
     "example": "What do you propose to do now?",
     "exampleZh": "您現在打算做什麼？"
@@ -1380,7 +1380,7 @@ const externalVocabularyDB = [
     "id": 154,
     "en": "shall",
     "kk": "[ʃæl]",
-    "zh": "v. 將;應該",
+    "zh": "v. 將；應該",
     "unit": 1,
     "example": "Shall we order some coffee?",
     "exampleZh": "我們要喝點咖啡嗎？"
@@ -1506,7 +1506,7 @@ const externalVocabularyDB = [
     "id": 168,
     "en": "deep",
     "kk": "[dip]",
-    "zh": "adj. 深深地；adv. 晚,遲",
+    "zh": "adj. 深深地；adv. 晚、遲",
     "unit": 1,
     "example": "He sank into deep melancholia.",
     "exampleZh": "他陷入了深深的憂鬱之中。"
@@ -1668,7 +1668,7 @@ const externalVocabularyDB = [
     "id": 186,
     "en": "maybe",
     "kk": "[ˋmebi]",
-    "zh": "adv. 可能;也許",
+    "zh": "adv. 可能；也許",
     "unit": 1,
     "example": "Maybe you should socialize more.",
     "exampleZh": "也許你應該多社交。"
@@ -1695,7 +1695,7 @@ const externalVocabularyDB = [
     "id": 189,
     "en": "much",
     "kk": "[mʌtʃ]",
-    "zh": "adj. 非常;很;差不多,幾乎",
+    "zh": "adj. 非常；很；差不多、幾乎",
     "unit": 1,
     "example": "She's much better today.",
     "exampleZh": "她今天好多了。"
@@ -1722,7 +1722,7 @@ const externalVocabularyDB = [
     "id": 192,
     "en": "nope",
     "kk": "[nop]",
-    "zh": "adv. (否定的答話)不是;沒有;不可以",
+    "zh": "adv. (否定的答話)不是；沒有；不可以",
     "unit": 1,
     "example": "Analyzing an article — nope.",
     "exampleZh": "分析一篇文章——不。"
@@ -1857,7 +1857,7 @@ const externalVocabularyDB = [
     "id": 207,
     "en": "this",
     "kk": "[ðɪs]",
-    "zh": "pron. 這麼,這樣地",
+    "zh": "pron. 這麼、這樣地",
     "unit": 1,
     "example": "This carpet stains easily.",
     "exampleZh": "這塊地毯很容易弄髒。"
@@ -1866,7 +1866,7 @@ const externalVocabularyDB = [
     "id": 208,
     "en": "thus",
     "kk": "[ðʌs]",
-    "zh": "adv. 如此,這樣",
+    "zh": "adv. 如此、這樣",
     "unit": 1,
     "example": "Many scholars have argued thus.",
     "exampleZh": "許多學者都曾這樣爭論過。"
@@ -1884,7 +1884,7 @@ const externalVocabularyDB = [
     "id": 210,
     "en": "too",
     "kk": "[tu]",
-    "zh": "adv. 也是;過於",
+    "zh": "adv. 也是；過於",
     "unit": 1,
     "example": "Critics derided the move as too little, too late.",
     "exampleZh": "批評者嘲笑此舉太少、太晚。"
@@ -1938,7 +1938,7 @@ const externalVocabularyDB = [
     "id": 216,
     "en": "according to",
     "kk": "[əˋkɔrdɪŋ tu]",
-    "zh": "prep. 根據;按照",
+    "zh": "prep. 根據；按照",
     "unit": 1,
     "example": "Everything went according to plan.",
     "exampleZh": "一切都按計劃進行。"
@@ -1974,7 +1974,7 @@ const externalVocabularyDB = [
     "id": 220,
     "en": "among",
     "kk": "[əˋmʌŋ]",
-    "zh": "prep. 在...之中、在...當中",
+    "zh": "prep. 在……之中、在……當中",
     "unit": 1,
     "example": "Bees buzzed lazily among the flowers.",
     "exampleZh": "蜜蜂在花叢中慵懶地嗡嗡作響。"
@@ -1983,7 +1983,7 @@ const externalVocabularyDB = [
     "id": 221,
     "en": "around",
     "kk": "[ɚˋaʊnd]",
-    "zh": "prep. 在...周圍；adv. 大約",
+    "zh": "prep. 在……周圍；adv. 大約",
     "unit": 1,
     "example": "He arrived around five o'clock.",
     "exampleZh": "他大約五點左右到達。"
@@ -2001,7 +2001,7 @@ const externalVocabularyDB = [
     "id": 223,
     "en": "behind",
     "kk": "[bɪˋhaɪnd]",
-    "zh": "prep. 在...後面；adv. 落後",
+    "zh": "prep. 在……後面；adv. 落後",
     "unit": 1,
     "example": "She heard footsteps behind her.",
     "exampleZh": "她聽到身後有腳步聲。"
@@ -2010,7 +2010,7 @@ const externalVocabularyDB = [
     "id": 224,
     "en": "below",
     "kk": "[bɪˋlo]",
-    "zh": "prep. 在...下面；adv. 以下",
+    "zh": "prep. 在……下面；adv. 以下",
     "unit": 1,
     "example": "It's 15 degrees below freezing.",
     "exampleZh": "氣溫低於冰點 15 度。"
@@ -2019,7 +2019,7 @@ const externalVocabularyDB = [
     "id": 225,
     "en": "beside",
     "kk": "[bɪˋsaɪd]",
-    "zh": "prep. 在...旁邊、除了",
+    "zh": "prep. 在……旁邊、除了",
     "unit": 1,
     "example": "She kneeled down beside him.",
     "exampleZh": "她跪在他身邊。"
@@ -2028,7 +2028,7 @@ const externalVocabularyDB = [
     "id": 226,
     "en": "between",
     "kk": "[bɪtˋwin]",
-    "zh": "prep. 在...之間",
+    "zh": "prep. 在……之間",
     "unit": 1,
     "example": "He toggled between the two windows.",
     "exampleZh": "他在兩個視窗之間切換。"
@@ -2055,7 +2055,7 @@ const externalVocabularyDB = [
     "id": 229,
     "en": "except",
     "kk": "[ɪkˋsɛpt]",
-    "zh": "prep. 除了；conj. 除...之外",
+    "zh": "prep. 除了；conj. 除……之外",
     "unit": 1,
     "example": "They all came except Matt.",
     "exampleZh": "除了馬特之外，他們都來了。"
@@ -2064,10 +2064,10 @@ const externalVocabularyDB = [
     "id": 230,
     "en": "excepting",
     "kk": "[͵ɛkˋsɛptɪŋ]",
-    "zh": "prep. 除...之外",
+    "zh": "prep. 除……之外",
     "unit": 1,
-    "example": "Can you use the word excepting in a sentence?",
-    "exampleZh": "你能在句子中使用「除...之外」這個詞嗎？"
+    "example": "Everyone passed the final exam, excepting two students.",
+    "exampleZh": "除了兩名學生之外，大家都通過了期末考試。"
   },
   {
     "id": 231,
@@ -2136,7 +2136,7 @@ const externalVocabularyDB = [
     "id": 238,
     "en": "on",
     "kk": "[ɑn]",
-    "zh": "prep. 在...上；adv. 關於",
+    "zh": "prep. 在……上；adv. 關於",
     "unit": 1,
     "example": "She went on and on about her trip.",
     "exampleZh": "她滔滔不絕地講述她的旅行。"
@@ -2145,7 +2145,7 @@ const externalVocabularyDB = [
     "id": 239,
     "en": "over",
     "kk": "[ˋovɚ]",
-    "zh": "prep. 在...上方；adv. 結束",
+    "zh": "prep. 在……上方；adv. 結束",
     "unit": 1,
     "example": "He plays the same songs over and over.",
     "exampleZh": "他一遍又一遍地播放相同的歌曲。"
@@ -2154,7 +2154,7 @@ const externalVocabularyDB = [
     "id": 240,
     "en": "to",
     "kk": "[tu]",
-    "zh": "prep. 到;向",
+    "zh": "prep. 到；向",
     "unit": 1,
     "example": "I was trying to save money to go to college.",
     "exampleZh": "我想存錢去上大學。"
@@ -2163,7 +2163,7 @@ const externalVocabularyDB = [
     "id": 241,
     "en": "toward",
     "kk": "[təˋwɔrd]",
-    "zh": "prep. 向;對",
+    "zh": "prep. 向；對",
     "unit": 1,
     "example": "She turned back toward home.",
     "exampleZh": "她轉身朝家的方向走去。"
@@ -2172,7 +2172,7 @@ const externalVocabularyDB = [
     "id": 242,
     "en": "towards",
     "kk": "[təˋwɔrdz]",
-    "zh": "prep. 向,朝;面對;將近;大約",
+    "zh": "prep. 向、朝；面對；將近；大約",
     "unit": 1,
     "example": "Phil moved towards the window.",
     "exampleZh": "菲爾走向窗戶。"
@@ -2181,7 +2181,7 @@ const externalVocabularyDB = [
     "id": 243,
     "en": "under",
     "kk": "[ˋʌndɚ]",
-    "zh": "prep. 在...下面；adv. 低於",
+    "zh": "prep. 在……下面；adv. 低於",
     "unit": 1,
     "example": "They feel under permanent threat.",
     "exampleZh": "他們感到永遠受到威脅。"
@@ -2217,7 +2217,7 @@ const externalVocabularyDB = [
     "id": 247,
     "en": "as",
     "kk": "[æz]",
-    "zh": "conj. 作為；prep. 當...時",
+    "zh": "conj. 作為；prep. 當……時",
     "unit": 1,
     "example": "You're as tall as your father.",
     "exampleZh": "你和你父親一樣高。"
@@ -2235,7 +2235,7 @@ const externalVocabularyDB = [
     "id": 249,
     "en": "before",
     "kk": "[bɪˋfɔr]",
-    "zh": "prep. 在...之前；adv. 以前",
+    "zh": "prep. 在……之前；adv. 以前",
     "unit": 1,
     "example": "We should arrive before dark.",
     "exampleZh": "我們應該在天黑之前到達。"
@@ -2361,7 +2361,7 @@ const externalVocabularyDB = [
     "id": 263,
     "en": "until",
     "kk": "[ənˋtɪl]",
-    "zh": "prep. 直到；conj. 到...為止",
+    "zh": "prep. 直到；conj. 到……為止",
     "unit": 1,
     "example": "She lay sleepless until dawn.",
     "exampleZh": "她一直睡到天亮。"
@@ -2451,7 +2451,7 @@ const externalVocabularyDB = [
     "id": 273,
     "en": "afternoon",
     "kk": "[͵æftɚˋnun]",
-    "zh": "n. 下午;午後",
+    "zh": "n. 下午；午後",
     "unit": 1,
     "example": "He's arriving in the afternoon.",
     "exampleZh": "他下午到。"
@@ -2622,7 +2622,7 @@ const externalVocabularyDB = [
     "id": 292,
     "en": "aunt",
     "kk": "[ænt]",
-    "zh": "n. 姨媽;姑媽",
+    "zh": "n. 姨媽；姑媽",
     "unit": 1,
     "example": "Aunt Emilie darned old socks.",
     "exampleZh": "艾蜜莉阿姨補舊襪子。"
@@ -2631,7 +2631,7 @@ const externalVocabularyDB = [
     "id": 293,
     "en": "auntie",
     "kk": "[ˋænti]",
-    "zh": "n. (aunt 的暱稱)伯母;嬸母;姑母;姨母;舅母",
+    "zh": "n. (aunt 的暱稱)伯母；嬸母；姑母；姨母；舅母",
     "unit": 1,
     "example": "Dear auntie, thanks very much!",
     "exampleZh": "親愛的阿姨，非常感謝！"
@@ -2640,7 +2640,7 @@ const externalVocabularyDB = [
     "id": 294,
     "en": "aunty",
     "kk": "[ˋænti]",
-    "zh": "n. (aunt 的暱稱)伯母;嬸母;姑母;姨母;舅母",
+    "zh": "n. (aunt 的暱稱)伯母；嬸母；姑母；姨母；舅母",
     "unit": 1,
     "example": "How is aunty Shirley?",
     "exampleZh": "雪莉阿姨怎麼樣了？"
@@ -3171,7 +3171,7 @@ const externalVocabularyDB = [
     "id": 353,
     "en": "bye",
     "kk": "[baɪ]",
-    "zh": "n. 次要的東西;(體育比賽中)輪空",
+    "zh": "n. 次要的東西；(體育比賽中)輪空",
     "unit": 1,
     "example": "She waved bye-bye and got into the car.",
     "exampleZh": "她揮手告別，上了車。"
@@ -3180,7 +3180,7 @@ const externalVocabularyDB = [
     "id": 354,
     "en": "cab",
     "kk": "[kæb]",
-    "zh": "n. 計程車;出租馬車",
+    "zh": "n. 計程車；出租馬車",
     "unit": 1,
     "example": "We'll take a cab to save time.",
     "exampleZh": "我們會坐計程車來節省時間。"
@@ -3522,7 +3522,7 @@ const externalVocabularyDB = [
     "id": 392,
     "en": "cocoa",
     "kk": "[ˋkoko]",
-    "zh": "n. 可可粉;可可樹;可可色",
+    "zh": "n. 可可粉；可可樹；可可色",
     "unit": 1,
     "example": "Ghana's main export is cocoa.",
     "exampleZh": "加納的主要出口產品是可可。"
@@ -3657,7 +3657,7 @@ const externalVocabularyDB = [
     "id": 407,
     "en": "country",
     "kk": "[ˋkʌntri]",
-    "zh": "n. 國家;鄉下",
+    "zh": "n. 國家；鄉下",
     "unit": 1,
     "example": "I'm a simple country girl.",
     "exampleZh": "我是一個簡單的鄉村女孩。"
@@ -3711,7 +3711,7 @@ const externalVocabularyDB = [
     "id": 413,
     "en": "cub",
     "kk": "[kʌb]",
-    "zh": "n. 幼鯨;牛棚",
+    "zh": "n. 幼鯨；牛棚",
     "unit": 1,
     "example": "Pluck the lad from him—to the horse-pond wi' the cub!",
     "exampleZh": "把小伙子從他身邊奪走──帶著小崽子去馬塘！"
@@ -3765,7 +3765,7 @@ const externalVocabularyDB = [
     "id": 419,
     "en": "dancer",
     "kk": "[ˋdænsɚ]",
-    "zh": "n. 舞蹈演員;舞蹈家",
+    "zh": "n. 舞蹈演員；舞蹈家",
     "unit": 1,
     "example": "I trained as a ballet dancer.",
     "exampleZh": "我受訓成為芭蕾舞者。"
@@ -3810,7 +3810,7 @@ const externalVocabularyDB = [
     "id": 424,
     "en": "day",
     "kk": "[de]",
-    "zh": "n. 白天;日",
+    "zh": "n. 白天；日",
     "unit": 1,
     "example": "They're improving day by day.",
     "exampleZh": "他們正在一天天進步。"
@@ -3873,7 +3873,7 @@ const externalVocabularyDB = [
     "id": 431,
     "en": "dig",
     "kk": "[dɪɡ]",
-    "zh": "v. 刺,戳,碰；n. 挖苦",
+    "zh": "v. 刺、戳,碰；n. 挖苦",
     "unit": 1,
     "example": "I'll dig some potatoes for lunch.",
     "exampleZh": "我會挖一些馬鈴薯當午餐。"
@@ -4206,7 +4206,7 @@ const externalVocabularyDB = [
     "id": 468,
     "en": "examination",
     "kk": "[ɪɡ͵zæməˋneʃən]",
-    "zh": "n. 檢查,調查",
+    "zh": "n. 檢查、調查",
     "unit": 1,
     "example": "Your proposals are still under examination.",
     "exampleZh": "您的建議仍在審查中。"
@@ -4359,7 +4359,7 @@ const externalVocabularyDB = [
     "id": 485,
     "en": "feelings",
     "kk": "[ˋfilɪŋz]",
-    "zh": "n. 感覺,觸覺",
+    "zh": "n. 感覺、觸覺",
     "unit": 1,
     "example": "He tried to analyse his feelings.",
     "exampleZh": "他試著分析自己的感受。"
@@ -4755,7 +4755,7 @@ const externalVocabularyDB = [
     "id": 529,
     "en": "good-by",
     "kk": "[ɡʊd baɪ]",
-    "zh": "n. 告別,再見,道別的話",
+    "zh": "n. 告別、再見,道別的話",
     "unit": 1,
     "example": "Good-by, Marionette, and good luck.",
     "exampleZh": "再見，木偶，祝你好運。"
@@ -4782,7 +4782,7 @@ const externalVocabularyDB = [
     "id": 532,
     "en": "grandchild",
     "kk": "[ˋɡrænd͵tʃaɪld]",
-    "zh": "n. 孫子;孫女;外孫;外孫女",
+    "zh": "n. 孫子；孫女；外孫；外孫女",
     "unit": 1,
     "example": "She lived to see her first grandchild.",
     "exampleZh": "她活著見到了她的第一個孫子。"
@@ -4791,7 +4791,7 @@ const externalVocabularyDB = [
     "id": 533,
     "en": "granddaughter",
     "kk": "[ˋɡræn͵dɔtɚ]",
-    "zh": "n. 孫女;外孫女",
+    "zh": "n. 孫女；外孫女",
     "unit": 1,
     "example": "Her granddaughter loved it.",
     "exampleZh": "她的孫女很喜歡它。"
@@ -4800,7 +4800,7 @@ const externalVocabularyDB = [
     "id": 534,
     "en": "grandfather",
     "kk": "[ˋɡrænd͵fɑðɚ]",
-    "zh": "n. 祖父;外祖父",
+    "zh": "n. 祖父；外祖父",
     "unit": 1,
     "example": "His grandfather was a professor.",
     "exampleZh": "他的祖父是一位教授。"
@@ -4809,7 +4809,7 @@ const externalVocabularyDB = [
     "id": 535,
     "en": "grandma",
     "kk": "[ˋɡrændmɑ]",
-    "zh": "n. 祖母;外祖母",
+    "zh": "n. 祖母；外祖母",
     "unit": 1,
     "example": "Grandma was from Scotland.",
     "exampleZh": "祖母來自蘇格蘭。"
@@ -4818,7 +4818,7 @@ const externalVocabularyDB = [
     "id": 536,
     "en": "grandmother",
     "kk": "[ˋɡrænd͵mʌðɚ]",
-    "zh": "n. 祖母;外祖母",
+    "zh": "n. 祖母；外祖母",
     "unit": 1,
     "example": "Her grandmother mumbled in her sleep.",
     "exampleZh": "奶奶在睡夢中呢喃著。"
@@ -4827,7 +4827,7 @@ const externalVocabularyDB = [
     "id": 537,
     "en": "grandpa",
     "kk": "[ˋɡrænd͵pɑ]",
-    "zh": "n. 祖父;外祖父",
+    "zh": "n. 祖父；外祖父",
     "unit": 1,
     "example": "Grandpa was not yet back from the war.",
     "exampleZh": "爺爺還沒從戰爭中回來。"
@@ -4836,7 +4836,7 @@ const externalVocabularyDB = [
     "id": 538,
     "en": "grandson",
     "kk": "[ˋɡrænd͵sʌn]",
-    "zh": "n. 孫子;外孫",
+    "zh": "n. 孫子；外孫",
     "unit": 1,
     "example": "He is my grandson.",
     "exampleZh": "他是我的孫子。"
@@ -5286,7 +5286,7 @@ const externalVocabularyDB = [
     "id": 588,
     "en": "job",
     "kk": "[dʒɑb]",
-    "zh": "n. 職業;工作",
+    "zh": "n. 職業；工作",
     "unit": 1,
     "example": "Her job is multifaceted.",
     "exampleZh": "她的工作是多方面的。"
@@ -5313,7 +5313,7 @@ const externalVocabularyDB = [
     "id": 591,
     "en": "joy",
     "kk": "[dʒɔɪ]",
-    "zh": "n. 歡喜;樂趣",
+    "zh": "n. 歡喜；樂趣",
     "unit": 1,
     "example": "To his great joy, she accepted.",
     "exampleZh": "讓他非常高興的是，她接受了。"
@@ -5367,7 +5367,7 @@ const externalVocabularyDB = [
     "id": 597,
     "en": "keeper",
     "kk": "[ˋkipɚ]",
-    "zh": "n. 保管人;守衛",
+    "zh": "n. 保管人；守衛",
     "unit": 1,
     "example": "He won the soccer game with the goal keeper.",
     "exampleZh": "他和守門員一起贏得了足球比賽。"
@@ -5754,7 +5754,7 @@ const externalVocabularyDB = [
     "id": 640,
     "en": "lot",
     "kk": "[lɑt]",
-    "zh": "n. 很多,多數;一批;一塊地",
+    "zh": "n. 很多、多數；一批；一塊地",
     "unit": 1,
     "example": "She does a lot of quilting.",
     "exampleZh": "她做了很多絎縫工作。"
@@ -6087,7 +6087,7 @@ const externalVocabularyDB = [
     "id": 677,
     "en": "mouse",
     "kk": "[maʊs]",
-    "zh": "n. 老鼠; 滑鼠",
+    "zh": "n. 老鼠； 滑鼠",
     "unit": 1,
     "example": "He moves the cursor, clicks the mouse.",
     "exampleZh": "他移動遊標，點擊滑鼠。"
@@ -6141,7 +6141,7 @@ const externalVocabularyDB = [
     "id": 683,
     "en": "mummy",
     "kk": "[ˋmʌmi]",
-    "zh": "n. 木乃伊;(兒語)媽媽",
+    "zh": "n. 木乃伊；(兒語)媽媽",
     "unit": 1,
     "example": "Mummy, I've got a tummy ache.",
     "exampleZh": "媽媽，我肚子痛。"
@@ -6375,7 +6375,7 @@ const externalVocabularyDB = [
     "id": 709,
     "en": "O.K.",
     "kk": "[ˋoˋke]",
-    "zh": "adj. 認可,批准",
+    "zh": "adj. 認可、批准",
     "unit": 1,
     "example": "O.K. I made a boo-boo. I apologize.",
     "exampleZh": "好吧。我犯了一個低階錯誤。我道歉。"
@@ -6420,7 +6420,7 @@ const externalVocabularyDB = [
     "id": 714,
     "en": "officer",
     "kk": "[ˋɔfəsɚ]",
-    "zh": "n. 軍官;官員",
+    "zh": "n. 軍官；官員",
     "unit": 1,
     "example": "The officer radioed for advice.",
     "exampleZh": "該官員透過無線電尋求建議。"
@@ -6636,7 +6636,7 @@ const externalVocabularyDB = [
     "id": 738,
     "en": "payment",
     "kk": "[ˋpemənt]",
-    "zh": "n. 支付,付款",
+    "zh": "n. 支付、付款",
     "unit": 1,
     "example": "Payment is due on 1 October.",
     "exampleZh": "付款日期為 10 月 1 日。"
@@ -6780,7 +6780,7 @@ const externalVocabularyDB = [
     "id": 754,
     "en": "player",
     "kk": "[ˋpleɚ]",
-    "zh": "n. 遊戲者;運動者;表演者",
+    "zh": "n. 遊戲者；運動者；表演者",
     "unit": 1,
     "example": "She's a good all-round player.",
     "exampleZh": "她是一位出色的全能球員。"
@@ -6789,7 +6789,7 @@ const externalVocabularyDB = [
     "id": 755,
     "en": "playground",
     "kk": "[ˋple͵ɡraʊnd]",
-    "zh": "n. 遊樂場;運動場",
+    "zh": "n. 遊樂場；運動場",
     "unit": 1,
     "example": "Sam pushed me over in the playground.",
     "exampleZh": "山姆在操場上把我推倒了。"
@@ -6807,7 +6807,7 @@ const externalVocabularyDB = [
     "id": 757,
     "en": "poetry",
     "kk": "[ˋpoətri]",
-    "zh": "n. 詩,詩歌,韻文",
+    "zh": "n. 詩、詩歌,韻文",
     "unit": 1,
     "example": "Jay reads poetry so beautifully.",
     "exampleZh": "傑伊讀詩真好。"
@@ -6834,7 +6834,7 @@ const externalVocabularyDB = [
     "id": 760,
     "en": "policeman",
     "kk": "[pəˋlismən]",
-    "zh": "n. 警察,警員",
+    "zh": "n. 警察、警員",
     "unit": 1,
     "example": "An injured policeman was led away by colleagues.",
     "exampleZh": "一名受傷的警察被同事帶走。"
@@ -7113,7 +7113,7 @@ const externalVocabularyDB = [
     "id": 791,
     "en": "rice",
     "kk": "[raɪs]",
-    "zh": "n. 稻米;飯",
+    "zh": "n. 稻米；飯",
     "unit": 1,
     "example": "We eat rice every single day.",
     "exampleZh": "我們每天都吃米飯。"
@@ -7185,7 +7185,7 @@ const externalVocabularyDB = [
     "id": 799,
     "en": "roof",
     "kk": "[ruf]",
-    "zh": "v. 給......蓋上屋頂、覆遮；n. 屋頂、車頂",
+    "zh": "v. 給…………蓋上屋頂、覆遮；n. 屋頂、車頂",
     "unit": 1,
     "example": "The roof was declared unsafe.",
     "exampleZh": "屋頂被宣布不安全。"
@@ -7203,7 +7203,7 @@ const externalVocabularyDB = [
     "id": 801,
     "en": "rooster",
     "kk": "[ˋrustɚ]",
-    "zh": "n. 雄雞;狂妄自負的人",
+    "zh": "n. 雄雞；狂妄自負的人",
     "unit": 1,
     "example": "The rooster has chicks now.",
     "exampleZh": "公雞現在已經生小雞了。"
@@ -7302,7 +7302,7 @@ const externalVocabularyDB = [
     "id": 812,
     "en": "sale",
     "kk": "[sel]",
-    "zh": "n. 售賣;賤賣",
+    "zh": "n. 售賣；賤賣",
     "unit": 1,
     "example": "Tickets go on sale this week.",
     "exampleZh": "門票本週開始販售。"
@@ -7410,7 +7410,7 @@ const externalVocabularyDB = [
     "id": 824,
     "en": "seed",
     "kk": "[sid]",
-    "zh": "v. 給去籽、給......脫籽；n. 種子、籽",
+    "zh": "v. 給去籽、給…………脫籽；n. 種子、籽",
     "unit": 1,
     "example": "The top seed won comfortably.",
     "exampleZh": "頭號種子輕鬆獲勝。"
@@ -7428,7 +7428,7 @@ const externalVocabularyDB = [
     "id": 826,
     "en": "self",
     "kk": "[sɛlf]",
-    "zh": "n. 自身,自己;自我",
+    "zh": "n. 自身、自己；自我",
     "unit": 1,
     "example": "He gave a self-deprecating shrug.",
     "exampleZh": "他自嘲地聳聳肩。"
@@ -7545,7 +7545,7 @@ const externalVocabularyDB = [
     "id": 839,
     "en": "sheet",
     "kk": "[ʃit]",
-    "zh": "n. 一張(紙);床單",
+    "zh": "n. 一張(紙)；床單",
     "unit": 1,
     "example": "This sheet has a tear in it.",
     "exampleZh": "這張紙上有一處撕裂。"
@@ -7779,7 +7779,7 @@ const externalVocabularyDB = [
     "id": 865,
     "en": "smell",
     "kk": "[smɛl]",
-    "zh": "v. 有……氣味、發出......的氣味；n. 氣味、臭味",
+    "zh": "v. 有……氣味、發出…………的氣味；n. 氣味、臭味",
     "unit": 1,
     "example": "Where's that smell coming from?",
     "exampleZh": "那味道是從哪裡來的？"
@@ -7833,7 +7833,7 @@ const externalVocabularyDB = [
     "id": 871,
     "en": "soda",
     "kk": "[ˋsodə]",
-    "zh": "n. 蘇打;汽水",
+    "zh": "n. 蘇打；汽水",
     "unit": 1,
     "example": "She quickly gulped her soda.",
     "exampleZh": "她很快就喝了一口蘇打水。"
@@ -7950,7 +7950,7 @@ const externalVocabularyDB = [
     "id": 884,
     "en": "speech",
     "kk": "[spitʃ]",
-    "zh": "n. 言論;演講",
+    "zh": "n. 言論；演講",
     "unit": 1,
     "example": "He muffed his opening speech.",
     "exampleZh": "他的開場白被壓低了。"
@@ -7977,7 +7977,7 @@ const externalVocabularyDB = [
     "id": 887,
     "en": "stair",
     "kk": "[stɛr]",
-    "zh": "n. 梯級;樓梯",
+    "zh": "n. 梯級；樓梯",
     "unit": 1,
     "example": "The house had a panelled hall and a fine oak stair.",
     "exampleZh": "房子有一個鑲板大廳和一個精美的橡木樓梯。"
@@ -8022,7 +8022,7 @@ const externalVocabularyDB = [
     "id": 892,
     "en": "statement",
     "kk": "[ˋstetmənt]",
-    "zh": "n. 陳述,說明;結單",
+    "zh": "n. 陳述、說明；結單",
     "unit": 1,
     "example": "The statement is really confusing.",
     "exampleZh": "聲明確實令人困惑。"
@@ -8175,7 +8175,7 @@ const externalVocabularyDB = [
     "id": 909,
     "en": "sweet",
     "kk": "[swit]",
-    "zh": "adj. (餐後的)甜點；n. (用作稱呼語)親愛的,寶貝",
+    "zh": "adj. (餐後的)甜點；n. (用作稱呼語)親愛的、寶貝",
     "unit": 1,
     "example": "I especially like sweet things.",
     "exampleZh": "我特別喜歡甜的東西。"
@@ -8211,7 +8211,7 @@ const externalVocabularyDB = [
     "id": 913,
     "en": "tale",
     "kk": "[tel]",
-    "zh": "n. 故事,傳說;謊話",
+    "zh": "n. 故事、傳說；謊話",
     "unit": 1,
     "example": "She unfolded her tale to us.",
     "exampleZh": "她向我們講述了她的故事。"
@@ -8310,7 +8310,7 @@ const externalVocabularyDB = [
     "id": 924,
     "en": "thing",
     "kk": "[θɪŋ]",
-    "zh": "n. 事物;東西",
+    "zh": "n. 事物；東西",
     "unit": 1,
     "example": "Then a strange thing happened.",
     "exampleZh": "然後奇怪的事情發生了。"
@@ -8454,7 +8454,7 @@ const externalVocabularyDB = [
     "id": 940,
     "en": "tone",
     "kk": "[ton]",
-    "zh": "n. 音色,音調;色調",
+    "zh": "n. 音色、音調；色調",
     "unit": 1,
     "example": "Her flippant tone irked him.",
     "exampleZh": "她輕率的語氣讓他很惱火。"
@@ -8769,7 +8769,7 @@ const externalVocabularyDB = [
     "id": 975,
     "en": "wash",
     "kk": "[wɑʃ]",
-    "zh": "v. 洗,洗滌；n. 要洗的(洗好的)衣服",
+    "zh": "v. 洗、洗滌；n. 要洗的(洗好的)衣服",
     "unit": 1,
     "example": "I must wash the car tomorrow.",
     "exampleZh": "我明天必須洗車。"
@@ -8913,7 +8913,7 @@ const externalVocabularyDB = [
     "id": 991,
     "en": "while",
     "kk": "[waɪl]",
-    "zh": "conj. 當...時；n. 一段時間",
+    "zh": "conj. 當……時；n. 一段時間",
     "unit": 1,
     "example": "She fell while toddling around.",
     "exampleZh": "她在蹣跚學步時摔倒了。"
@@ -9282,7 +9282,7 @@ const externalVocabularyDB = [
     "id": 1032,
     "en": "bony",
     "kk": "[ˋboni]",
-    "zh": "adj. 骨的;似骨的",
+    "zh": "adj. 骨的；似骨的",
     "unit": 2,
     "example": "Humans are bony fish.",
     "exampleZh": "人類是硬骨魚。"
@@ -9336,7 +9336,7 @@ const externalVocabularyDB = [
     "id": 1038,
     "en": "cloudy",
     "kk": "[ˋklaʊdi]",
-    "zh": "adj. 多雲的;陰天的",
+    "zh": "adj. 多雲的；陰天的",
     "unit": 2,
     "example": "Tonight will be cloudy.",
     "exampleZh": "今晚將是多雲。"
@@ -9372,7 +9372,7 @@ const externalVocabularyDB = [
     "id": 1042,
     "en": "costly",
     "kk": "[ˋkɑstli]",
-    "zh": "adj. 昂貴的;代價高的",
+    "zh": "adj. 昂貴的；代價高的",
     "unit": 2,
     "example": "You want to avoid costly legal proceedings if you can.",
     "exampleZh": "如果可以的話，您希望避免昂貴的法律訴訟。"
@@ -9381,7 +9381,7 @@ const externalVocabularyDB = [
     "id": 1043,
     "en": "crazy",
     "kk": "[ˋkrezi]",
-    "zh": "adj. 古怪的;著迷的",
+    "zh": "adj. 古怪的；著迷的",
     "unit": 2,
     "example": "We're crazy about each other.",
     "exampleZh": "我們都為彼此瘋狂。"
@@ -9462,7 +9462,7 @@ const externalVocabularyDB = [
     "id": 1052,
     "en": "dumb",
     "kk": "[dʌm]",
-    "zh": "adj. 愚笨的;啞的",
+    "zh": "adj. 愚笨的；啞的",
     "unit": 2,
     "example": "That was a pretty dumb thing to do.",
     "exampleZh": "這是一件非常愚蠢的事。"
@@ -9534,7 +9534,7 @@ const externalVocabularyDB = [
     "id": 1060,
     "en": "fearful",
     "kk": "[ˋfɪrfəl]",
-    "zh": "adj. 可怕的;害怕的",
+    "zh": "adj. 可怕的；害怕的",
     "unit": 2,
     "example": "Bankers were fearful of a world banking crisis.",
     "exampleZh": "銀行家擔心世界銀行業危機。"
@@ -9624,7 +9624,7 @@ const externalVocabularyDB = [
     "id": 1070,
     "en": "grassy",
     "kk": "[ˋɡræsi]",
-    "zh": "adj. 長滿草的;似草的",
+    "zh": "adj. 長滿草的；似草的",
     "unit": 2,
     "example": "The buildings are hidden behind grassy banks.",
     "exampleZh": "這些建築物隱藏在綠草如茵的河岸後面。"
@@ -9651,7 +9651,7 @@ const externalVocabularyDB = [
     "id": 1073,
     "en": "hateful",
     "kk": "[ˋhetfəl]",
-    "zh": "adj. 可恨的;充滿憎恨的",
+    "zh": "adj. 可恨的；充滿憎恨的",
     "unit": 2,
     "example": "I'm sorry. That was a hateful thing to say.",
     "exampleZh": "對不起。這話真是可恨啊。"
@@ -9732,7 +9732,7 @@ const externalVocabularyDB = [
     "id": 1082,
     "en": "latest",
     "kk": "[ˋletəst]",
-    "zh": "adj. 最新的;最近的;最遲的",
+    "zh": "adj. 最新的；最近的；最遲的",
     "unit": 2,
     "example": "The latest trend is gardening.",
     "exampleZh": "最新的趨勢是園藝。"
@@ -9750,7 +9750,7 @@ const externalVocabularyDB = [
     "id": 1084,
     "en": "lone",
     "kk": "[lon]",
-    "zh": "adj. 孤單的;無伴的",
+    "zh": "adj. 孤單的；無伴的",
     "unit": 2,
     "example": "A lone sea gull flew across the sky.",
     "exampleZh": "一隻孤獨的海鷗飛過天空。"
@@ -9777,7 +9777,7 @@ const externalVocabularyDB = [
     "id": 1087,
     "en": "measurable",
     "kk": "[ˋmɛʒɚəbəl]",
-    "zh": "adj. 可測量的;可預見的",
+    "zh": "adj. 可測量的；可預見的",
     "unit": 2,
     "example": "a small but measurable improvement in behavior.",
     "exampleZh": "行為上的微小但可衡量的改善。"
@@ -9795,7 +9795,7 @@ const externalVocabularyDB = [
     "id": 1089,
     "en": "movable",
     "kk": "[ˋmuvəbəl]",
-    "zh": "adj. 可動的,可移動的",
+    "zh": "adj. 可動的、可移動的",
     "unit": 2,
     "example": "It's a vinyl doll with movable arms and legs.",
     "exampleZh": "這是一個帶有可活動手臂和腿的乙烯基娃娃。"
@@ -9840,7 +9840,7 @@ const externalVocabularyDB = [
     "id": 1094,
     "en": "neat",
     "kk": "[nit]",
-    "zh": "adj. 整潔的;整齊的",
+    "zh": "adj. 整潔的；整齊的",
     "unit": 2,
     "example": "She was wearing a neat black suit.",
     "exampleZh": "她穿著整齊的黑色西裝。"
@@ -9858,7 +9858,7 @@ const externalVocabularyDB = [
     "id": 1096,
     "en": "northern",
     "kk": "[ˋnɔrðɚn]",
-    "zh": "adj. 北方的;向北方的",
+    "zh": "adj. 北方的；向北方的",
     "unit": 2,
     "example": "He had a pleasant, lilting northern accent.",
     "exampleZh": "他有著愉快、輕快的北方口音。"
@@ -9894,7 +9894,7 @@ const externalVocabularyDB = [
     "id": 1100,
     "en": "peaceful",
     "kk": "[ˋpisfəl]",
-    "zh": "adj. 寧靜的;和平的",
+    "zh": "adj. 寧靜的；和平的",
     "unit": 2,
     "example": "I was amazingly light-hearted and peaceful.",
     "exampleZh": "我出奇地輕鬆、平靜。"
@@ -9912,7 +9912,7 @@ const externalVocabularyDB = [
     "id": 1102,
     "en": "playful",
     "kk": "[ˋplefəl]",
-    "zh": "adj. 愛玩耍的;開玩笑的",
+    "zh": "adj. 愛玩耍的；開玩笑的",
     "unit": 2,
     "example": "John smiled at them and gave Richard a playful poke.",
     "exampleZh": "約翰對他們微笑，俏皮地戳了理查德一下。"
@@ -9921,7 +9921,7 @@ const externalVocabularyDB = [
     "id": 1103,
     "en": "pleasant",
     "kk": "[ˋplɛzənt]",
-    "zh": "adj. 愉快的;美好的",
+    "zh": "adj. 愉快的；美好的",
     "unit": 2,
     "example": "The woman had a pleasant face.",
     "exampleZh": "女人面容愉快。"
@@ -9975,7 +9975,7 @@ const externalVocabularyDB = [
     "id": 1109,
     "en": "rainy",
     "kk": "[ˋreni]",
-    "zh": "adj. 下雨的;多雨的",
+    "zh": "adj. 下雨的；多雨的",
     "unit": 2,
     "example": "The rainy season in the Andes normally starts in December.",
     "exampleZh": "安第斯山脈的雨季通常從十二月開始。"
@@ -10020,7 +10020,7 @@ const externalVocabularyDB = [
     "id": 1114,
     "en": "rocky",
     "kk": "[ˋrɑki]",
-    "zh": "adj. 岩石的;多岩石的",
+    "zh": "adj. 岩石的；多岩石的",
     "unit": 2,
     "example": "The land dropped precipitously down to the rocky shore.",
     "exampleZh": "地面陡然下降到岩石海岸。"
@@ -10047,7 +10047,7 @@ const externalVocabularyDB = [
     "id": 1117,
     "en": "salty",
     "kk": "[ˋsɔlti]",
-    "zh": "adj. 有鹽分的;鹹味濃的",
+    "zh": "adj. 有鹽分的；鹹味濃的",
     "unit": 2,
     "example": "She could smell the salty tang of the sea.",
     "exampleZh": "她能聞到海水的鹹味。"
@@ -10092,7 +10092,7 @@ const externalVocabularyDB = [
     "id": 1122,
     "en": "skilled",
     "kk": "[skɪld]",
-    "zh": "adj. 熟練的;有技能的",
+    "zh": "adj. 熟練的；有技能的",
     "unit": 2,
     "example": "She is a skilled calligrapher.",
     "exampleZh": "她是一位技藝高超的書法家。"
@@ -10137,7 +10137,7 @@ const externalVocabularyDB = [
     "id": 1127,
     "en": "snowy",
     "kk": "[ˋsnoi]",
-    "zh": "adj. 似雪的;多雪的",
+    "zh": "adj. 似雪的；多雪的",
     "unit": 2,
     "example": "We strode across the snowy fields.",
     "exampleZh": "我們大步穿過雪原。"
@@ -10155,7 +10155,7 @@ const externalVocabularyDB = [
     "id": 1129,
     "en": "southern",
     "kk": "[ˋsʌðɚn]",
-    "zh": "adj. 南方的;向南方的",
+    "zh": "adj. 南方的；向南方的",
     "unit": 2,
     "example": "He mimicked her southern accent.",
     "exampleZh": "他模仿她的南方口音。"
@@ -10164,7 +10164,7 @@ const externalVocabularyDB = [
     "id": 1130,
     "en": "strict",
     "kk": "[strɪkt]",
-    "zh": "adj. 嚴謹的,精確的",
+    "zh": "adj. 嚴謹的、精確的",
     "unit": 2,
     "example": "She's a very strict disciplinarian.",
     "exampleZh": "她是一個紀律非常嚴格的人。"
@@ -10200,7 +10200,7 @@ const externalVocabularyDB = [
     "id": 1134,
     "en": "tasty",
     "kk": "[ˋtesti]",
-    "zh": "adj. 高雅的;大方的",
+    "zh": "adj. 高雅的；大方的",
     "unit": 2,
     "example": "Although it is tasty, crab is very filling.",
     "exampleZh": "螃蟹雖然好吃，但吃起來很飽。"
@@ -10227,7 +10227,7 @@ const externalVocabularyDB = [
     "id": 1137,
     "en": "terrific",
     "kk": "[tɚˋɪfɪk]",
-    "zh": "adj. 非常好的;可怕的",
+    "zh": "adj. 非常好的；可怕的",
     "unit": 2,
     "example": "She's doing a terrific job.",
     "exampleZh": "她做得很好。"
@@ -10236,7 +10236,7 @@ const externalVocabularyDB = [
     "id": 1138,
     "en": "thick",
     "kk": "[θɪk]",
-    "zh": "adj. 粗的;厚的",
+    "zh": "adj. 粗的；厚的",
     "unit": 2,
     "example": "He had thick black hair.",
     "exampleZh": "他有一頭濃密的黑髮。"
@@ -10317,7 +10317,7 @@ const externalVocabularyDB = [
     "id": 1147,
     "en": "willing",
     "kk": "[ˋwɪlɪŋ]",
-    "zh": "adj. 願意的,樂意的",
+    "zh": "adj. 願意的、樂意的",
     "unit": 2,
     "example": "I'm willing to help, within limits.",
     "exampleZh": "我願意在有限的範圍內提供協助。"
@@ -10344,7 +10344,7 @@ const externalVocabularyDB = [
     "id": 1150,
     "en": "wonderful",
     "kk": "[ˋwʌndɚfəl]",
-    "zh": "adj. 很棒的;奇妙的",
+    "zh": "adj. 很棒的；奇妙的",
     "unit": 2,
     "example": "They've got a wonderful house.",
     "exampleZh": "他們有一棟很棒的房子。"
@@ -10353,7 +10353,7 @@ const externalVocabularyDB = [
     "id": 1151,
     "en": "wooden",
     "kk": "[ˋwʊdən]",
-    "zh": "adj. 木製的;僵硬的;笨拙的",
+    "zh": "adj. 木製的；僵硬的；笨拙的",
     "unit": 2,
     "example": "They sat on wooden boxes.",
     "exampleZh": "他們坐在木箱上。"
@@ -10533,7 +10533,7 @@ const externalVocabularyDB = [
     "id": 1171,
     "en": "clothe",
     "kk": "[kloð]",
-    "zh": "v. 給...穿衣;為...提供衣服",
+    "zh": "v. 給……穿衣；為……提供衣服",
     "unit": 2,
     "example": "They clothe their children in the latest fashions.",
     "exampleZh": "他們給孩子穿最流行的衣服。"
@@ -10596,7 +10596,7 @@ const externalVocabularyDB = [
     "id": 1178,
     "en": "contain",
     "kk": "[kənˋten]",
-    "zh": "v. 包含;容納",
+    "zh": "v. 包含；容納",
     "unit": 2,
     "example": "This drink doesn't contain any alcohol.",
     "exampleZh": "這種飲料不含任何酒精。"
@@ -10632,7 +10632,7 @@ const externalVocabularyDB = [
     "id": 1182,
     "en": "deliver",
     "kk": "[dɪˋlɪvɚ]",
-    "zh": "v. 遞送;發表,講;給……接生",
+    "zh": "v. 遞送；發表、講；給……接生",
     "unit": 2,
     "example": "We deliver the goods in batches.",
     "exampleZh": "我們分批發貨。"
@@ -10641,7 +10641,7 @@ const externalVocabularyDB = [
     "id": 1183,
     "en": "deny",
     "kk": "[dɪˋnaɪ]",
-    "zh": "v. 否定,否認",
+    "zh": "v. 否定、否認",
     "unit": 2,
     "example": "My instinctive reaction was to deny everything.",
     "exampleZh": "我的本能反應是否認一切。"
@@ -10686,7 +10686,7 @@ const externalVocabularyDB = [
     "id": 1188,
     "en": "disagree",
     "kk": "[dɪsəˋɡri]",
-    "zh": "v. 不一致,不符",
+    "zh": "v. 不一致、不符",
     "unit": 2,
     "example": "'I disagree,' said Polly stoutly.",
     "exampleZh": "「我不同意，」波莉堅決地說。"
@@ -10758,7 +10758,7 @@ const externalVocabularyDB = [
     "id": 1196,
     "en": "excite",
     "kk": "[ɪkˋsaɪt]",
-    "zh": "v. 使興奮;使激動",
+    "zh": "v. 使興奮；使激動",
     "unit": 2,
     "example": "Daniel's early exposure to motor racing did not excite his interest.",
     "exampleZh": "丹尼爾早期接觸賽車運動並沒有激發他的興趣。"
@@ -10803,7 +10803,7 @@ const externalVocabularyDB = [
     "id": 1201,
     "en": "frighten",
     "kk": "[ˋfraɪtən]",
-    "zh": "v. 害怕;吃驚",
+    "zh": "v. 害怕；吃驚",
     "unit": 2,
     "example": "Sorry, I didn't mean to frighten you.",
     "exampleZh": "抱歉，我不是故意嚇唬你的。"
@@ -10821,7 +10821,7 @@ const externalVocabularyDB = [
     "id": 1203,
     "en": "govern",
     "kk": "[ˋɡʌvɚn]",
-    "zh": "v. 統治;管理",
+    "zh": "v. 統治；管理",
     "unit": 2,
     "example": "They were utterly unfit to govern.",
     "exampleZh": "他們完全不適合執政。"
@@ -10830,7 +10830,7 @@ const externalVocabularyDB = [
     "id": 1204,
     "en": "greet",
     "kk": "[ɡrit]",
-    "zh": "v. 問候;致敬",
+    "zh": "v. 問候；致敬",
     "unit": 2,
     "example": "She floated down the steps to greet us.",
     "exampleZh": "她飄下台階迎接我們。"
@@ -10956,7 +10956,7 @@ const externalVocabularyDB = [
     "id": 1218,
     "en": "locate",
     "kk": "[ˋlo͵ket]",
-    "zh": "v. 把...設置在;使...座落於",
+    "zh": "v. 把……設置在；使……座落於",
     "unit": 2,
     "example": "Rescue planes are trying to locate the missing sailors.",
     "exampleZh": "救援飛機正在努力尋找失蹤的水手。"
@@ -10965,7 +10965,7 @@ const externalVocabularyDB = [
     "id": 1219,
     "en": "lose",
     "kk": "[luz]",
-    "zh": "v. 輸;失去",
+    "zh": "v. 輸；失去",
     "unit": 2,
     "example": "No one likes to lose.",
     "exampleZh": "沒有人喜歡失敗。"
@@ -10974,7 +10974,7 @@ const externalVocabularyDB = [
     "id": 1220,
     "en": "lower",
     "kk": "[ˋloɚ]",
-    "zh": "v. 放下,降下;放低;減低;減弱",
+    "zh": "v. 放下、降下；放低；減低；減弱",
     "unit": 2,
     "example": "She bit her lower lip.",
     "exampleZh": "她咬著下唇。"
@@ -10983,7 +10983,7 @@ const externalVocabularyDB = [
     "id": 1221,
     "en": "maintain",
     "kk": "[menˋten]",
-    "zh": "v. 維持;保養",
+    "zh": "v. 維持；保養",
     "unit": 2,
     "example": "It's hard to maintain competitive pricing.",
     "exampleZh": "要保持有競爭力的價格是很困難的。"
@@ -10992,7 +10992,7 @@ const externalVocabularyDB = [
     "id": 1222,
     "en": "multiply",
     "kk": "[ˋmʌltəp͵laɪ]",
-    "zh": "v. 乘,使相乘",
+    "zh": "v. 乘、使相乘",
     "unit": 2,
     "example": "These creatures can multiply quickly.",
     "exampleZh": "這些生物可以快速繁殖。"
@@ -11073,7 +11073,7 @@ const externalVocabularyDB = [
     "id": 1231,
     "en": "pronounce",
     "kk": "[prəˋnaʊns]",
-    "zh": "v. 發...音",
+    "zh": "v. 發……音",
     "unit": 2,
     "example": "The judge will pronounce sentence today.",
     "exampleZh": "法官今天將宣判。"
@@ -11118,7 +11118,7 @@ const externalVocabularyDB = [
     "id": 1236,
     "en": "quit",
     "kk": "[kwɪt]",
-    "zh": "v. 放棄;離職",
+    "zh": "v. 放棄；離職",
     "unit": 2,
     "example": "He quit his job as an office boy.",
     "exampleZh": "他辭去了辦公室勤雜工的工作。"
@@ -11127,7 +11127,7 @@ const externalVocabularyDB = [
     "id": 1237,
     "en": "realize",
     "kk": "[ˋriə͵laɪz]",
-    "zh": "v. 認知;實現",
+    "zh": "v. 認知；實現",
     "unit": 2,
     "example": "Only later did she realize her mistake.",
     "exampleZh": "直到後來她才意識到自己的錯誤。"
@@ -11199,7 +11199,7 @@ const externalVocabularyDB = [
     "id": 1245,
     "en": "settle",
     "kk": "[ˋsɛtəl]",
-    "zh": "v. 安放;安頓;解決(問題等)",
+    "zh": "v. 安放；安頓；解決(問題等)",
     "unit": 2,
     "example": "This should settle your stomach.",
     "exampleZh": "這應該可以解決你的胃。"
@@ -11208,7 +11208,7 @@ const externalVocabularyDB = [
     "id": 1246,
     "en": "slim",
     "kk": "[slɪm]",
-    "zh": "adj. 減肥；v. 減少,縮減",
+    "zh": "adj. 減肥；v. 減少、縮減",
     "unit": 2,
     "example": "She goes for tall slim men.",
     "exampleZh": "她喜歡高個子苗條的男人。"
@@ -11235,7 +11235,7 @@ const externalVocabularyDB = [
     "id": 1249,
     "en": "subtract",
     "kk": "[səbˋtrækt]",
-    "zh": "v. 減,減去",
+    "zh": "v. 減、減去",
     "unit": 2,
     "example": "The pupil could add and subtract but hadn't learned to divide.",
     "exampleZh": "學生會加減法，但還沒學會除法。"
@@ -11253,7 +11253,7 @@ const externalVocabularyDB = [
     "id": 1251,
     "en": "survive",
     "kk": "[sɚˋvaɪv]",
-    "zh": "v. 在...之後仍然活著",
+    "zh": "v. 在……之後仍然活著",
     "unit": 2,
     "example": "Most women will survive their spouses.",
     "exampleZh": "大多數女性都會在她們的配偶後存活下來。"
@@ -11271,7 +11271,7 @@ const externalVocabularyDB = [
     "id": 1253,
     "en": "wed",
     "kk": "[wɛd]",
-    "zh": "v. 娶;嫁",
+    "zh": "v. 娶；嫁",
     "unit": 2,
     "example": "The couple plan to wed next summer.",
     "exampleZh": "這對夫婦計劃明年夏天結婚。"
@@ -11280,7 +11280,7 @@ const externalVocabularyDB = [
     "id": 1254,
     "en": "wet",
     "kk": "[wɛt]",
-    "zh": "adj. 把...淋濕,打濕,弄濕；v. 尿濕",
+    "zh": "adj. 把……淋濕、打濕,弄濕；v. 尿濕",
     "unit": 2,
     "example": "Wet weather always depresses me.",
     "exampleZh": "潮濕的天氣總是讓我感到沮喪。"
@@ -11289,7 +11289,7 @@ const externalVocabularyDB = [
     "id": 1255,
     "en": "widen",
     "kk": "[ˋwaɪdən]",
-    "zh": "v. 加寬;擴大",
+    "zh": "v. 加寬；擴大",
     "unit": 2,
     "example": "They widened the road.",
     "exampleZh": "他們拓寬了道路。"
@@ -11388,7 +11388,7 @@ const externalVocabularyDB = [
     "id": 1266,
     "en": "backwards",
     "kk": "[ˋbækwɚdz]",
-    "zh": "adv. 向後;倒,逆;往回,向原處",
+    "zh": "adv. 向後；倒、逆；往回、向原處",
     "unit": 2,
     "example": "He took a step backwards.",
     "exampleZh": "他向後退了一步。"
@@ -11424,7 +11424,7 @@ const externalVocabularyDB = [
     "id": 1270,
     "en": "forwards",
     "kk": "[ˋfɔrwɚdz]",
-    "zh": "adv. 向前;往後,今後;提前地",
+    "zh": "adv. 向前；往後、今後；提前地",
     "unit": 2,
     "example": "The traffic rolled slowly forwards.",
     "exampleZh": "車流緩緩前進。"
@@ -11442,7 +11442,7 @@ const externalVocabularyDB = [
     "id": 1272,
     "en": "hardly",
     "kk": "[ˋhɑrdli]",
-    "zh": "adv. 幾乎不,簡直不",
+    "zh": "adv. 幾乎不、簡直不",
     "unit": 2,
     "example": "I've got hardly any money.",
     "exampleZh": "我幾乎沒有錢了"
@@ -11451,7 +11451,7 @@ const externalVocabularyDB = [
     "id": 1273,
     "en": "however",
     "kk": "[͵haʊˋɛvɚ]",
-    "zh": "adv. 無論如何,不管怎樣",
+    "zh": "adv. 無論如何、不管怎樣",
     "unit": 2,
     "example": "On one issue, however, she was immovable.",
     "exampleZh": "然而，在一個問題上，她卻無動於衷。"
@@ -11478,7 +11478,7 @@ const externalVocabularyDB = [
     "id": 1276,
     "en": "nearly",
     "kk": "[ˋnɪrli]",
-    "zh": "adv. 幾乎,差不多;密切地,親密地",
+    "zh": "adv. 幾乎、差不多；密切地、親密地",
     "unit": 2,
     "example": "The beach was nearly empty.",
     "exampleZh": "海灘幾乎空無一人。"
@@ -11514,7 +11514,7 @@ const externalVocabularyDB = [
     "id": 1280,
     "en": "simply",
     "kk": "[ˋsɪmpli]",
-    "zh": "adv. 簡單地,簡易地;簡明地;只不過",
+    "zh": "adv. 簡單地、簡易地；簡明地；只不過",
     "unit": 2,
     "example": "The house was simply furnished.",
     "exampleZh": "房子陳設簡單。"
@@ -11550,7 +11550,7 @@ const externalVocabularyDB = [
     "id": 1284,
     "en": "beyond",
     "kk": "[bɪˋɑnd]",
-    "zh": "prep. 超過；adv. 在...之外",
+    "zh": "prep. 超過；adv. 在……之外",
     "unit": 2,
     "example": "Her honesty is beyond question.",
     "exampleZh": "她的誠實是毋庸置疑的。"
@@ -11559,7 +11559,7 @@ const externalVocabularyDB = [
     "id": 1285,
     "en": "per",
     "kk": "[pɝ]",
-    "zh": "prep. 經,由;每;按照",
+    "zh": "prep. 經、由；每；按照",
     "unit": 2,
     "example": "The price is $40 per person.",
     "exampleZh": "價格為每人40美元。"
@@ -11586,7 +11586,7 @@ const externalVocabularyDB = [
     "id": 1288,
     "en": "upon",
     "kk": "[əˋpɑn]",
-    "zh": "prep. 在...上、基於",
+    "zh": "prep. 在……上、基於",
     "unit": 2,
     "example": "The wedding season is upon us.",
     "exampleZh": "婚禮季節即將來臨。"
@@ -11595,7 +11595,7 @@ const externalVocabularyDB = [
     "id": 1289,
     "en": "within",
     "kk": "[wɪˋðɪn]",
-    "zh": "prep. 在...內；adv. 內部",
+    "zh": "prep. 在……內；adv. 內部",
     "unit": 2,
     "example": "The rift within the party deepened.",
     "exampleZh": "黨內的裂痕進一步加深。"
@@ -11667,7 +11667,7 @@ const externalVocabularyDB = [
     "id": 1297,
     "en": "addition",
     "kk": "[əˋdɪʃən]",
-    "zh": "n. 加;附加",
+    "zh": "n. 加；附加",
     "unit": 2,
     "example": "She's ready to learn simple addition and subtraction.",
     "exampleZh": "她準備學習簡單的加法和減法。"
@@ -11685,7 +11685,7 @@ const externalVocabularyDB = [
     "id": 1299,
     "en": "affair",
     "kk": "[əˋfɛr]",
-    "zh": "n. 事件;風流韻事;喜慶活動",
+    "zh": "n. 事件；風流韻事；喜慶活動",
     "unit": 2,
     "example": "Lunch was a leisurely affair.",
     "exampleZh": "午餐吃得很悠閒。"
@@ -11811,7 +11811,7 @@ const externalVocabularyDB = [
     "id": 1313,
     "en": "apron",
     "kk": "[ˋeprən]",
-    "zh": "n. 圍裙;工作裙",
+    "zh": "n. 圍裙；工作裙",
     "unit": 2,
     "example": "She wiped her floury hands on her apron.",
     "exampleZh": "她在圍裙上擦了擦沾滿麵粉的手。"
@@ -11838,7 +11838,7 @@ const externalVocabularyDB = [
     "id": 1316,
     "en": "arrangement",
     "kk": "[ɚˋendʒmənt]",
-    "zh": "n. 安排;準備工作",
+    "zh": "n. 安排；準備工作",
     "unit": 2,
     "example": "That arrangement suits me fine.",
     "exampleZh": "這個安排很適合我。"
@@ -11903,8 +11903,8 @@ const externalVocabularyDB = [
     "kk": "[ˋbebi ˋsɪtɚ]",
     "zh": "n. 保姆",
     "unit": 2,
-    "example": "Can you use the word baby-sitter in a sentence?",
-    "exampleZh": "你能在句子中使用「保姆」這個詞嗎？"
+    "example": "We hired a reliable baby-sitter to watch the kids on Saturday evening.",
+    "exampleZh": "我們週六晚上請了一位可靠的保姆來照顧孩子。"
   },
   {
     "id": 1324,
@@ -11937,7 +11937,7 @@ const externalVocabularyDB = [
     "id": 1327,
     "en": "banker",
     "kk": "[ˋbæŋkɚ]",
-    "zh": "n. 銀行家;莊家",
+    "zh": "n. 銀行家；莊家",
     "unit": 2,
     "example": "It made sense to appoint a banker to this job.",
     "exampleZh": "任命一名銀行家擔任這項工作是有道理的。"
@@ -11973,7 +11973,7 @@ const externalVocabularyDB = [
     "id": 1331,
     "en": "basics",
     "kk": "[ˋbesɪks]",
-    "zh": "n. 基礎;基本原理(或原則)",
+    "zh": "n. 基礎；基本原理(或原則)",
     "unit": 2,
     "example": "He forced himself to do the basics.",
     "exampleZh": "他強迫自己做基礎工作。"
@@ -12315,7 +12315,7 @@ const externalVocabularyDB = [
     "id": 1369,
     "en": "bundle",
     "kk": "[ˋbʌndəl]",
-    "zh": "n. 捆;大量",
+    "zh": "n. 捆；大量",
     "unit": 2,
     "example": "That car must have cost a bundle.",
     "exampleZh": "那輛車肯定花了一大筆錢。"
@@ -12387,7 +12387,7 @@ const externalVocabularyDB = [
     "id": 1377,
     "en": "café",
     "kk": "[kəˋfe]",
-    "zh": "小餐館;咖啡廳",
+    "zh": "n. 小餐館、咖啡廳",
     "unit": 2,
     "example": "He walked jauntily into the café.",
     "exampleZh": "他昂首闊步地走進了咖啡館。"
@@ -12405,7 +12405,7 @@ const externalVocabularyDB = [
     "id": 1379,
     "en": "calendar",
     "kk": "[ˋkæləndɚ]",
-    "zh": "n. 日曆;月曆;行事曆",
+    "zh": "n. 日曆；月曆；行事曆",
     "unit": 2,
     "example": "This is one of the biggest weeks in the racing calendar.",
     "exampleZh": "這是全年賽馬日程表中最重要的幾個星期之一。"
@@ -12513,7 +12513,7 @@ const externalVocabularyDB = [
     "id": 1391,
     "en": "catsup",
     "kk": "[ˋkɛtʃəp]",
-    "zh": "n. 果醬;番茄醬",
+    "zh": "n. 果醬；番茄醬",
     "unit": 2,
     "example": "I use a special dressing and homemade catsup.",
     "exampleZh": "我用了特別的佐料和自制的番茄醬。"
@@ -12603,7 +12603,7 @@ const externalVocabularyDB = [
     "id": 1401,
     "en": "cheat",
     "kk": "[tʃit]",
-    "zh": "v. 騙子；n. 欺詐,欺騙,作弊",
+    "zh": "v. 騙子；n. 欺詐、欺騙,作弊",
     "unit": 2,
     "example": "He was a liar and a cheat.",
     "exampleZh": "他是一個說謊的人，一個騙子。"
@@ -12711,7 +12711,7 @@ const externalVocabularyDB = [
     "id": 1413,
     "en": "claw",
     "kk": "[klɔ]",
-    "zh": "v. (動物的)爪,腳爪；n. (蟹,蝦等的)鉗,螯",
+    "zh": "v. (動物的)爪、腳爪；n. (蟹、蝦等的)鉗、螯",
     "unit": 2,
     "example": "An iron claw gripped his shoulder.",
     "exampleZh": "一隻鐵爪抓住了他的肩膀。"
@@ -12729,7 +12729,7 @@ const externalVocabularyDB = [
     "id": 1415,
     "en": "cleaner",
     "kk": "[ˋklinɚ]",
-    "zh": "n. 清潔工;乾洗店;吸塵器;清潔劑",
+    "zh": "n. 清潔工；乾洗店；吸塵器；清潔劑",
     "unit": 2,
     "example": "He was a window cleaner.",
     "exampleZh": "他是一名窗戶清潔工。"
@@ -12756,7 +12756,7 @@ const externalVocabularyDB = [
     "id": 1418,
     "en": "closet",
     "kk": "[ˋklɑzət]",
-    "zh": "n. 壁櫥;衣櫥",
+    "zh": "n. 壁櫥；衣櫥",
     "unit": 2,
     "example": "It was in your closet.",
     "exampleZh": "在你的衣櫥裡。"
@@ -12765,7 +12765,7 @@ const externalVocabularyDB = [
     "id": 1419,
     "en": "cloth",
     "kk": "[klɔθ]",
-    "zh": "n. 布;(棉,毛,合成纖維等)織物;衣料",
+    "zh": "n. 布；(棉、毛,合成纖維等)織物；衣料",
     "unit": 2,
     "example": "The cloth should be laid flat.",
     "exampleZh": "布應展開平放。"
@@ -12783,7 +12783,7 @@ const externalVocabularyDB = [
     "id": 1421,
     "en": "clothing",
     "kk": "[ˋkloðɪŋ]",
-    "zh": "n. (總稱)衣服,衣著",
+    "zh": "n. (總稱)衣服、衣著",
     "unit": 2,
     "example": "His clothing was stained with mud.",
     "exampleZh": "他的衣服沾了泥。"
@@ -12873,7 +12873,7 @@ const externalVocabularyDB = [
     "id": 1431,
     "en": "completion",
     "kk": "[kəmˋpliʃən]",
-    "zh": "n. 完成,實現",
+    "zh": "n. 完成、實現",
     "unit": 2,
     "example": "The project is nearing completion.",
     "exampleZh": "這項工程就要竣工了。"
@@ -12936,7 +12936,7 @@ const externalVocabularyDB = [
     "id": 1438,
     "en": "controller",
     "kk": "[kənˋtrolɚ]",
-    "zh": "n. 主計官;主管;控制器",
+    "zh": "n. 主計官；主管；控制器",
     "unit": 2,
     "example": "It knows nothing about the view or controller.",
     "exampleZh": "它對檢視或控制器一無所知。"
@@ -12954,7 +12954,7 @@ const externalVocabularyDB = [
     "id": 1440,
     "en": "cooker",
     "kk": "[ˋkʊkɚ]",
-    "zh": "n. 炊具,烹調器具",
+    "zh": "n. 炊具、烹調器具",
     "unit": 2,
     "example": "I'm looking for a cooker today.",
     "exampleZh": "我今天在找一個炊具。"
@@ -12999,7 +12999,7 @@ const externalVocabularyDB = [
     "id": 1445,
     "en": "countryside",
     "kk": "[ˋkʌntri͵saɪd]",
-    "zh": "n. 鄉間,農村",
+    "zh": "n. 鄉間、農村",
     "unit": 2,
     "example": "I pine for the countryside.",
     "exampleZh": "我渴望鄉下的生活。"
@@ -13098,7 +13098,7 @@ const externalVocabularyDB = [
     "id": 1456,
     "en": "crisis",
     "kk": "[ˋkraɪsəs]",
-    "zh": "n. 危機;緊急關頭",
+    "zh": "n. 危機；緊急關頭",
     "unit": 2,
     "example": "There was a crisis looming.",
     "exampleZh": "危機迫在眉睫。"
@@ -13197,7 +13197,7 @@ const externalVocabularyDB = [
     "id": 1467,
     "en": "data",
     "kk": "[ˋdetə]",
-    "zh": "n. 資料,數據",
+    "zh": "n. 資料、數據",
     "unit": 2,
     "example": "He copied the data into a notebook.",
     "exampleZh": "他把資料抄在了筆記本上。"
@@ -13224,7 +13224,7 @@ const externalVocabularyDB = [
     "id": 1470,
     "en": "debt",
     "kk": "[dɛt]",
-    "zh": "n. 債,借款",
+    "zh": "n. 債、借款",
     "unit": 2,
     "example": "We are finally clear of debt.",
     "exampleZh": "我們終於償清了債務。"
@@ -13278,7 +13278,7 @@ const externalVocabularyDB = [
     "id": 1476,
     "en": "depth",
     "kk": "[dɛpθ]",
-    "zh": "n. 深度,厚度",
+    "zh": "n. 深度、厚度",
     "unit": 2,
     "example": "What's the depth of the water here?",
     "exampleZh": "這兒的水有多深？"
@@ -13323,7 +13323,7 @@ const externalVocabularyDB = [
     "id": 1481,
     "en": "development",
     "kk": "[dɪˋvɛləpmənt]",
-    "zh": "n. 生長;發展",
+    "zh": "n. 生長；發展",
     "unit": 2,
     "example": "This land is ripe for development.",
     "exampleZh": "這片土地適宜開發。"
@@ -13332,7 +13332,7 @@ const externalVocabularyDB = [
     "id": 1482,
     "en": "dew",
     "kk": "[du]",
-    "zh": "n. 露水;朝氣",
+    "zh": "n. 露水；朝氣",
     "unit": 2,
     "example": "The dew gathered on the leaves.",
     "exampleZh": "露水在葉片上聚集。"
@@ -13404,7 +13404,7 @@ const externalVocabularyDB = [
     "id": 1490,
     "en": "direction",
     "kk": "[dɚˋɛkʃən]",
-    "zh": "n. 方向; 指示",
+    "zh": "n. 方向； 指示",
     "unit": 2,
     "example": "Which direction are you facing?",
     "exampleZh": "你面朝哪個方向？"
@@ -13413,7 +13413,7 @@ const externalVocabularyDB = [
     "id": 1491,
     "en": "director",
     "kk": "[dɚˋɛktɚ]",
-    "zh": "n. 董事;局長;主任;導演",
+    "zh": "n. 董事；局長；主任；導演",
     "unit": 2,
     "example": "The director has the most to lose.",
     "exampleZh": "主任可能會損失最大。"
@@ -13422,7 +13422,7 @@ const externalVocabularyDB = [
     "id": 1492,
     "en": "disagreement",
     "kk": "[dɪsəˋɡrimənt]",
-    "zh": "n. 意見不一;不一致",
+    "zh": "n. 意見不一；不一致",
     "unit": 2,
     "example": "The disagreement arose over a different use of terminology.",
     "exampleZh": "分歧的緣起在於專門用語使用的不同。"
@@ -13458,7 +13458,7 @@ const externalVocabularyDB = [
     "id": 1496,
     "en": "divide",
     "kk": "[dɪˋvaɪd]",
-    "zh": "v. 分歧,不和；n. 分水嶺",
+    "zh": "v. 分歧、不和；n. 分水嶺",
     "unit": 2,
     "example": "The cells began to divide rapidly.",
     "exampleZh": "細胞迅速分裂。"
@@ -13467,7 +13467,7 @@ const externalVocabularyDB = [
     "id": 1497,
     "en": "division",
     "kk": "[dɪˋvɪʒən]",
-    "zh": "n. 區域;部分;除(法)",
+    "zh": "n. 區域；部分；除(法)",
     "unit": 2,
     "example": "Ford was attached to the 101st Airborne Division.",
     "exampleZh": "福特曾屬於第101空降師。"
@@ -13584,7 +13584,7 @@ const externalVocabularyDB = [
     "id": 1510,
     "en": "drawing",
     "kk": "[ˋdrɔɪŋ]",
-    "zh": "n. 描繪,素描;製圖;抽籤;提款",
+    "zh": "n. 描繪、素描；製圖；抽籤；提款",
     "unit": 2,
     "example": "I'm not very good at drawing.",
     "exampleZh": "我不擅長繪畫。"
@@ -13656,7 +13656,7 @@ const externalVocabularyDB = [
     "id": 1518,
     "en": "duty",
     "kk": "[ˋduti]",
-    "zh": "n. 義務;關稅",
+    "zh": "n. 義務；關稅",
     "unit": 2,
     "example": "He was recalled to military duty.",
     "exampleZh": "他被召回執行軍事任務。"
@@ -13737,7 +13737,7 @@ const externalVocabularyDB = [
     "id": 1527,
     "en": "encouragement",
     "kk": "[ɛnˋkɝɪdʒmənt]",
-    "zh": "n. 鼓勵;獎勵;促進",
+    "zh": "n. 鼓勵；獎勵；促進",
     "unit": 2,
     "example": "Her words were a great encouragement to them.",
     "exampleZh": "她的話對他們是極大的鼓舞。"
@@ -13746,7 +13746,7 @@ const externalVocabularyDB = [
     "id": 1528,
     "en": "ending",
     "kk": "[ˋɛndɪŋ]",
-    "zh": "n. 結局,結尾;終結;字尾",
+    "zh": "n. 結局、結尾；終結；字尾",
     "unit": 2,
     "example": "The ending was pretty obvious.",
     "exampleZh": "結尾十分平淡。"
@@ -13773,7 +13773,7 @@ const externalVocabularyDB = [
     "id": 1531,
     "en": "enjoyment",
     "kk": "[͵ɛnˋdʒɔɪmənt]",
-    "zh": "n. 樂趣,享受",
+    "zh": "n. 樂趣、享受",
     "unit": 2,
     "example": "I get a lot of enjoyment from music.",
     "exampleZh": "我從音樂中獲得很多樂趣。"
@@ -13836,7 +13836,7 @@ const externalVocabularyDB = [
     "id": 1538,
     "en": "excitement",
     "kk": "[ɪkˋsaɪtmənt]",
-    "zh": "n. 刺激;興奮,激動",
+    "zh": "n. 刺激；興奮、激動",
     "unit": 2,
     "example": "She was voluble with excitement.",
     "exampleZh": "她因為激動而變得很健談。"
@@ -13899,7 +13899,7 @@ const externalVocabularyDB = [
     "id": 1545,
     "en": "eyebrow",
     "kk": "[ˋaɪ͵braʊ]",
-    "zh": "n. 眉,眉毛",
+    "zh": "n. 眉、眉毛",
     "unit": 2,
     "example": "She raised a questioning eyebrow.",
     "exampleZh": "她懷疑地挑起眉頭。"
@@ -14025,7 +14025,7 @@ const externalVocabularyDB = [
     "id": 1559,
     "en": "fighter",
     "kk": "[ˋfaɪtɚ]",
-    "zh": "n. 戰士,鬥士",
+    "zh": "n. 戰士、鬥士",
     "unit": 2,
     "example": "He is a redoubtable fighter.",
     "exampleZh": "他是個厲害的鬥士。"
@@ -14063,8 +14063,8 @@ const externalVocabularyDB = [
     "kk": "[ˋfaɪr͵wʊmən]",
     "zh": "n. 女消防隊員",
     "unit": 2,
-    "example": "Can you use the word firewoman in a sentence?",
-    "exampleZh": "你能在句子中使用「女消防隊員」這個詞嗎？"
+    "example": "The courageous firewoman rescued a family from the burning apartment.",
+    "exampleZh": "英勇的女消防隊員從著火的公寓中救出了一家人。"
   },
   {
     "id": 1564,
@@ -14268,7 +14268,7 @@ const externalVocabularyDB = [
     "id": 1586,
     "en": "freezer",
     "kk": "[ˋfrizɚ]",
-    "zh": "n. 冰箱的冷凍部;冷凍箱",
+    "zh": "n. 冰箱的冷凍部；冷凍箱",
     "unit": 2,
     "example": "We need to stock up the freezer.",
     "exampleZh": "我們需要在冰櫃裡存滿東西。"
@@ -14286,7 +14286,7 @@ const externalVocabularyDB = [
     "id": 1588,
     "en": "fright",
     "kk": "[fraɪt]",
-    "zh": "n. 驚嚇,恐怖",
+    "zh": "n. 驚嚇、恐怖",
     "unit": 2,
     "example": "She shrieked in fright.",
     "exampleZh": "她嚇得尖叫起來。"
@@ -14340,7 +14340,7 @@ const externalVocabularyDB = [
     "id": 1594,
     "en": "gardener",
     "kk": "[ˋɡɑrdənɚ]",
-    "zh": "n. 園丁;花匠",
+    "zh": "n. 園丁；花匠",
     "unit": 2,
     "example": "My wife's a keen gardener.",
     "exampleZh": "我的妻子是個熱衷園藝的人。"
@@ -14349,7 +14349,7 @@ const externalVocabularyDB = [
     "id": 1595,
     "en": "gate",
     "kk": "[ɡet]",
-    "zh": "n. 柵門;登機門",
+    "zh": "n. 柵門；登機門",
     "unit": 2,
     "example": "He pushed open the garden gate.",
     "exampleZh": "他推開了花園的門。"
@@ -14475,7 +14475,7 @@ const externalVocabularyDB = [
     "id": 1609,
     "en": "growth",
     "kk": "[ɡroθ]",
-    "zh": "n. 成長;發育;增大",
+    "zh": "n. 成長；發育；增大",
     "unit": 2,
     "example": "Economic growth has slowed a little.",
     "exampleZh": "經濟增長稍有減緩。"
@@ -14511,7 +14511,7 @@ const externalVocabularyDB = [
     "id": 1613,
     "en": "guy",
     "kk": "[ɡaɪ]",
-    "zh": "n. 傢伙;人",
+    "zh": "n. 傢伙；人",
     "unit": 2,
     "example": "He's a real meat-and-potatoes guy.",
     "exampleZh": "他是個十分崇尚簡樸的人。"
@@ -14619,7 +14619,7 @@ const externalVocabularyDB = [
     "id": 1625,
     "en": "heroine",
     "kk": "[ˋhɛroən]",
-    "zh": "n. 女英雄,女傑",
+    "zh": "n. 女英雄、女傑",
     "unit": 2,
     "example": "The heroine is played by Demi Moore.",
     "exampleZh": "女主角由黛米•摩爾扮演。"
@@ -14628,7 +14628,7 @@ const externalVocabularyDB = [
     "id": 1626,
     "en": "highway",
     "kk": "[ˋhaɪ͵we]",
-    "zh": "n. 公路;幹道",
+    "zh": "n. 公路；幹道",
     "unit": 2,
     "example": "Anita drove north up Pacific Highway.",
     "exampleZh": "安尼塔開車沿著太平洋公路向北行駛。"
@@ -14682,7 +14682,7 @@ const externalVocabularyDB = [
     "id": 1632,
     "en": "holder",
     "kk": "[ˋholdɚ]",
-    "zh": "n. 持有者;支托物",
+    "zh": "n. 持有者；支托物",
     "unit": 2,
     "example": "If the holder loses the interest, it's no big deal.",
     "exampleZh": "如果持有人失去了利息，也沒什麼大不了的。"
@@ -14691,7 +14691,7 @@ const externalVocabularyDB = [
     "id": 1633,
     "en": "honey",
     "kk": "[ˋhʌni]",
-    "zh": "n. 蜂蜜;心愛的人",
+    "zh": "n. 蜂蜜；心愛的人",
     "unit": 2,
     "example": "Have you seen my keys, honey?",
     "exampleZh": "你見到我的鑰匙了嗎，寶貝？"
@@ -14790,7 +14790,7 @@ const externalVocabularyDB = [
     "id": 1644,
     "en": "icebox",
     "kk": "[ˋaɪ͵sbɑks]",
-    "zh": "n. 冷藏庫;冰箱",
+    "zh": "n. 冷藏庫；冰箱",
     "unit": 2,
     "example": "He slunk to the icebox.",
     "exampleZh": "他溜向冰櫃。"
@@ -14817,7 +14817,7 @@ const externalVocabularyDB = [
     "id": 1647,
     "en": "improvement",
     "kk": "[͵ɪmˋpruvmənt]",
-    "zh": "n. 改進,改善",
+    "zh": "n. 改進、改善",
     "unit": 2,
     "example": "This is a marginal improvement on October.",
     "exampleZh": "這是對10月份的一個小小的改進。"
@@ -14844,7 +14844,7 @@ const externalVocabularyDB = [
     "id": 1650,
     "en": "independence",
     "kk": "[͵ɪndɪˋpɛndəns]",
-    "zh": "n. 獨立;自主;自立",
+    "zh": "n. 獨立；自主；自立",
     "unit": 2,
     "example": "He was afraid of losing his independence.",
     "exampleZh": "他擔心喪失自己的獨立。"
@@ -14853,7 +14853,7 @@ const externalVocabularyDB = [
     "id": 1651,
     "en": "industry",
     "kk": "[ˋɪndəstri]",
-    "zh": "n. 企業;行業",
+    "zh": "n. 企業；行業",
     "unit": 2,
     "example": "The industry is strictly regulated.",
     "exampleZh": "這個行業有嚴格的管理。"
@@ -14943,7 +14943,7 @@ const externalVocabularyDB = [
     "id": 1661,
     "en": "item",
     "kk": "[ˋaɪtəm]",
-    "zh": "n. 項目;品目",
+    "zh": "n. 項目；品目",
     "unit": 2,
     "example": "This item should be hand washed.",
     "exampleZh": "這件物品要用手洗。"
@@ -14952,7 +14952,7 @@ const externalVocabularyDB = [
     "id": 1662,
     "en": "jacket",
     "kk": "[ˋdʒækət]",
-    "zh": "n. 夾克;外套",
+    "zh": "n. 夾克；外套",
     "unit": 2,
     "example": "Is your jacket real leather?",
     "exampleZh": "你的夾克是真皮的嗎？"
@@ -15024,7 +15024,7 @@ const externalVocabularyDB = [
     "id": 1670,
     "en": "judgement",
     "kk": "[ˋdʒʌdʒmənt]",
-    "zh": "n. 審判; 裁判;評價",
+    "zh": "n. 審判； 裁判；評價",
     "unit": 2,
     "example": "His judgement was warped by prejudice.",
     "exampleZh": "他因偏見而判斷有誤。"
@@ -15033,7 +15033,7 @@ const externalVocabularyDB = [
     "id": 1671,
     "en": "judgment",
     "kk": "[ˋdʒʌdʒmənt]",
-    "zh": "n. 審判;裁判;判斷力",
+    "zh": "n. 審判；裁判；判斷力",
     "unit": 2,
     "example": "His judgment was unreliable.",
     "exampleZh": "他的判斷是不可靠的。"
@@ -15114,7 +15114,7 @@ const externalVocabularyDB = [
     "id": 1680,
     "en": "lane",
     "kk": "[len]",
-    "zh": "n. 巷,弄;車道",
+    "zh": "n. 巷、弄；車道",
     "unit": 2,
     "example": "The road is only one lane wide.",
     "exampleZh": "這條路只有一個車道那麼寬。"
@@ -15141,7 +15141,7 @@ const externalVocabularyDB = [
     "id": 1683,
     "en": "lap",
     "kk": "[læp]",
-    "zh": "n. 膝部;(衣,裙等的)下襬",
+    "zh": "n. 膝部；(衣、裙等的)下襬",
     "unit": 2,
     "example": "Her eyes dropped to her lap.",
     "exampleZh": "她雙目低垂，看著自己的腿。"
@@ -15186,7 +15186,7 @@ const externalVocabularyDB = [
     "id": 1688,
     "en": "length",
     "kk": "[lɛŋkθ]",
-    "zh": "n. (距離,尺寸的)長度",
+    "zh": "n. (距離、尺寸的)長度",
     "unit": 2,
     "example": "The sleeves are unequal in length.",
     "exampleZh": "這兩隻衣袖不一般長。"
@@ -15195,7 +15195,7 @@ const externalVocabularyDB = [
     "id": 1689,
     "en": "leopard",
     "kk": "[ˋlɛpɚd]",
-    "zh": "n. 豹;美洲豹",
+    "zh": "n. 豹；美洲豹",
     "unit": 2,
     "example": "Which has spots, a leopard or a tiger?",
     "exampleZh": "有斑點的是豹還是虎？"
@@ -15222,7 +15222,7 @@ const externalVocabularyDB = [
     "id": 1692,
     "en": "lick",
     "kk": "[lɪk]",
-    "zh": "v. 舔,舐；n. 少量",
+    "zh": "v. 舔、舐；n. 少量",
     "unit": 2,
     "example": "Well, you didn't get a lick amiss, I reckon.",
     "exampleZh": "嗯，我覺得你這一下捱得一點也不冤。"
@@ -15348,7 +15348,7 @@ const externalVocabularyDB = [
     "id": 1706,
     "en": "luck",
     "kk": "[lʌk]",
-    "zh": "n. 好運;幸運",
+    "zh": "n. 好運；幸運",
     "unit": 2,
     "example": "Our luck couldn't hold forever.",
     "exampleZh": "我們的好運不可能永遠保持不變。"
@@ -15420,7 +15420,7 @@ const externalVocabularyDB = [
     "id": 1714,
     "en": "manner",
     "kk": "[ˋmænɚ]",
-    "zh": "n. 舉止;態度",
+    "zh": "n. 舉止；態度",
     "unit": 2,
     "example": "She responded in like manner.",
     "exampleZh": "她以類似的方式作出了反應。"
@@ -15438,7 +15438,7 @@ const externalVocabularyDB = [
     "id": 1716,
     "en": "marriage",
     "kk": "[ˋmɛrɪdʒ]",
-    "zh": "n. 結婚,婚姻",
+    "zh": "n. 結婚、婚姻",
     "unit": 2,
     "example": "You both have to work hard at marriage.",
     "exampleZh": "你們倆都必須在婚姻中努力工作。"
@@ -15456,7 +15456,7 @@ const externalVocabularyDB = [
     "id": 1718,
     "en": "mass",
     "kk": "[mæs]",
-    "zh": "n. 團;塊",
+    "zh": "n. 團；塊",
     "unit": 2,
     "example": "The mass media tends to personalize politics.",
     "exampleZh": "大眾傳媒往往把政治個人化。"
@@ -15465,7 +15465,7 @@ const externalVocabularyDB = [
     "id": 1719,
     "en": "mat",
     "kk": "[mæt]",
-    "zh": "n. 蓆子;墊子",
+    "zh": "n. 蓆子；墊子",
     "unit": 2,
     "example": "Wipe your feet on the mat before you come in, please.",
     "exampleZh": "請在墊子上擦擦腳再進來。"
@@ -15510,7 +15510,7 @@ const externalVocabularyDB = [
     "id": 1724,
     "en": "means",
     "kk": "[minz]",
-    "zh": "n. 手段,方法;工具;收入",
+    "zh": "n. 手段、方法；工具；收入",
     "unit": 2,
     "example": "My family means everything to me.",
     "exampleZh": "對我來說家庭意味著一切。"
@@ -15519,7 +15519,7 @@ const externalVocabularyDB = [
     "id": 1725,
     "en": "measurement",
     "kk": "[ˋmɛʒɚmənt]",
-    "zh": "n. 測量法;測定;尺寸",
+    "zh": "n. 測量法；測定；尺寸",
     "unit": 2,
     "example": "Here is a rough-and-ready measurement.",
     "exampleZh": "這是一次馬馬虎虎的測量。"
@@ -15546,7 +15546,7 @@ const externalVocabularyDB = [
     "id": 1728,
     "en": "melody",
     "kk": "[ˋmɛlədi]",
-    "zh": "n. 旋律;主調",
+    "zh": "n. 旋律；主調",
     "unit": 2,
     "example": "Classical music has the melody.",
     "exampleZh": "古典音樂有旋律。"
@@ -15555,7 +15555,7 @@ const externalVocabularyDB = [
     "id": 1729,
     "en": "melon",
     "kk": "[ˋmɛlən]",
-    "zh": "n. 瓜,甜瓜",
+    "zh": "n. 瓜、甜瓜",
     "unit": 2,
     "example": "It tastes something like melon.",
     "exampleZh": "這吃起來有點像甜瓜。"
@@ -15591,7 +15591,7 @@ const externalVocabularyDB = [
     "id": 1733,
     "en": "message",
     "kk": "[ˋmɛsədʒ]",
-    "zh": "n. 消息;音信",
+    "zh": "n. 消息；音信",
     "unit": 2,
     "example": "Message understood. Over and out.",
     "exampleZh": "訊息聽懂了。通話完畢。"
@@ -15609,7 +15609,7 @@ const externalVocabularyDB = [
     "id": 1735,
     "en": "meter",
     "kk": "[ˋmitɚ]",
-    "zh": "n. 公尺;計量器",
+    "zh": "n. 公尺；計量器",
     "unit": 2,
     "example": "A man came to read the gas meter.",
     "exampleZh": "有位男子來查過煤氣表。"
@@ -15654,7 +15654,7 @@ const externalVocabularyDB = [
     "id": 1740,
     "en": "mine",
     "kk": "[maɪn]",
-    "zh": "pron. 我的東西;礦;源泉;地雷;坑道",
+    "zh": "pron. 我的東西；礦；源泉；地雷；坑道",
     "unit": 2,
     "example": "He's a distant cousin of mine.",
     "exampleZh": "他是我遠房的一個表親。"
@@ -15681,7 +15681,7 @@ const externalVocabularyDB = [
     "id": 1743,
     "en": "mix",
     "kk": "[mɪks]",
-    "zh": "v. 混和,攪和；n. 結合",
+    "zh": "v. 混和、攪和；n. 結合",
     "unit": 2,
     "example": "You can't mix business with pleasure.",
     "exampleZh": "你不能把工作和娛樂混在一起。"
@@ -15717,7 +15717,7 @@ const externalVocabularyDB = [
     "id": 1747,
     "en": "moth",
     "kk": "[mɔθ]",
-    "zh": "n. 蛾;蠹,蛀蟲",
+    "zh": "n. 蛾；蠹、蛀蟲",
     "unit": 2,
     "example": "I watched the moth crawl up the outside of the lampshade.",
     "exampleZh": "我看著蛾子爬上燈罩表面。"
@@ -15744,7 +15744,7 @@ const externalVocabularyDB = [
     "id": 1750,
     "en": "mule",
     "kk": "[mjul]",
-    "zh": "n. 騾;固執的人",
+    "zh": "n. 騾；固執的人",
     "unit": 2,
     "example": "He's as stubborn as a mule.",
     "exampleZh": "他像騾子一樣倔。"
@@ -15825,7 +15825,7 @@ const externalVocabularyDB = [
     "id": 1759,
     "en": "nephew",
     "kk": "[ˋnɛfju]",
-    "zh": "n. 侄子;外甥",
+    "zh": "n. 侄子；外甥",
     "unit": 2,
     "example": "He entrusted the task to his nephew.",
     "exampleZh": "他把這任務託付給了他的侄兒。"
@@ -15852,7 +15852,7 @@ const externalVocabularyDB = [
     "id": 1762,
     "en": "niece",
     "kk": "[nis]",
-    "zh": "n. 侄女;外甥女",
+    "zh": "n. 侄女；外甥女",
     "unit": 2,
     "example": "He looked affectionately at his niece.",
     "exampleZh": "他慈愛地看著他的侄女。"
@@ -16050,7 +16050,7 @@ const externalVocabularyDB = [
     "id": 1784,
     "en": "painter",
     "kk": "[ˋpentɚ]",
-    "zh": "n. 油漆匠;畫家",
+    "zh": "n. 油漆匠；畫家",
     "unit": 2,
     "example": "His father was a painter.",
     "exampleZh": "他父親是一位畫家。"
@@ -16059,7 +16059,7 @@ const externalVocabularyDB = [
     "id": 1785,
     "en": "painting",
     "kk": "[ˋpentɪŋ]",
-    "zh": "n. 油畫,水彩畫",
+    "zh": "n. 油畫、水彩畫",
     "unit": 2,
     "example": "Painting can be very therapeutic.",
     "exampleZh": "繪畫可以使人很放鬆。"
@@ -16077,7 +16077,7 @@ const externalVocabularyDB = [
     "id": 1787,
     "en": "palm",
     "kk": "[pɑm]",
-    "zh": "n. 手掌,手心",
+    "zh": "n. 手掌、手心",
     "unit": 2,
     "example": "He muted the strings with his palm.",
     "exampleZh": "他用手掌抹琴絃消音。"
@@ -16113,7 +16113,7 @@ const externalVocabularyDB = [
     "id": 1791,
     "en": "pardon",
     "kk": "[ˋpɑrdən]",
-    "zh": "v. 原諒,饒恕,寬恕；n. 赦免",
+    "zh": "v. 原諒、饒恕,寬恕；n. 赦免",
     "unit": 2,
     "example": "I must crave your pardon.",
     "exampleZh": "我必須懇求您原諒。"
@@ -16212,7 +16212,7 @@ const externalVocabularyDB = [
     "id": 1802,
     "en": "peanut",
     "kk": "[ˋpinət]",
-    "zh": "n. 花生;花生果;花生米",
+    "zh": "n. 花生；花生果；花生米",
     "unit": 2,
     "example": "James flicked a peanut at her.",
     "exampleZh": "詹姆斯朝她輕輕彈一顆花生。"
@@ -16293,7 +16293,7 @@ const externalVocabularyDB = [
     "id": 1811,
     "en": "photographer",
     "kk": "[fəˋtɑɡrəfɚ]",
-    "zh": "n. 攝影師,照相師",
+    "zh": "n. 攝影師、照相師",
     "unit": 2,
     "example": "She was a keen amateur photographer.",
     "exampleZh": "她是一個痴迷的業餘攝影師。"
@@ -16374,7 +16374,7 @@ const externalVocabularyDB = [
     "id": 1820,
     "en": "ping-pong",
     "kk": "[pɪŋ pɔŋ]",
-    "zh": "n. 乒乓球,桌球",
+    "zh": "n. 乒乓球、桌球",
     "unit": 2,
     "example": "We need some ping-pong balls.",
     "exampleZh": "我們需要一些乒乓球。"
@@ -16446,7 +16446,7 @@ const externalVocabularyDB = [
     "id": 1828,
     "en": "platform",
     "kk": "[ˋplæt͵fɔrm]",
-    "zh": "n. 月台;平台",
+    "zh": "n. 月台；平台",
     "unit": 2,
     "example": "The platform began to produce oil in 1994.",
     "exampleZh": "1994年，這個鑽井平臺開始產油。"
@@ -16617,7 +16617,7 @@ const externalVocabularyDB = [
     "id": 1847,
     "en": "presence",
     "kk": "[ˋprɛzəns]",
-    "zh": "n. 出席,在場",
+    "zh": "n. 出席、在場",
     "unit": 2,
     "example": "His presence no longer signified.",
     "exampleZh": "他在不在場已不重要。"
@@ -16689,7 +16689,7 @@ const externalVocabularyDB = [
     "id": 1855,
     "en": "principle",
     "kk": "[ˋprɪnsəpəl]",
-    "zh": "n. 主義;真諦",
+    "zh": "n. 主義；真諦",
     "unit": 2,
     "example": "It's not just a matter of principle.",
     "exampleZh": "這不僅僅是個原則問題。"
@@ -16698,7 +16698,7 @@ const externalVocabularyDB = [
     "id": 1856,
     "en": "printer",
     "kk": "[ˋprɪntɚ]",
-    "zh": "n. 印表機;印刷業者",
+    "zh": "n. 印表機；印刷業者",
     "unit": 2,
     "example": "Is the printer plugged in?",
     "exampleZh": "印表機接上電源沒有？"
@@ -16716,10 +16716,10 @@ const externalVocabularyDB = [
     "id": 1858,
     "en": "prisoner",
     "kk": "[ˋprɪzənɚ]",
-    "zh": "n. 囚犯;俘虜",
+    "zh": "n. 囚犯；俘虜",
     "unit": 2,
-    "example": "Can you use the word prisoner in a sentence?",
-    "exampleZh": "你能在句子中使用「俘虜」這個詞嗎？"
+    "example": "The prisoner was granted parole after demonstrating good conduct for ten years.",
+    "exampleZh": "該囚犯在展現了十年的良好品行後獲得假釋。"
   },
   {
     "id": 1859,
@@ -16743,7 +16743,7 @@ const externalVocabularyDB = [
     "id": 1861,
     "en": "producer",
     "kk": "[prəˋdusɚ]",
-    "zh": "n. 生產者,製造者製片人",
+    "zh": "n. 生產者、製造者製片人",
     "unit": 2,
     "example": "Libya is a major oil producer.",
     "exampleZh": "利比亞是主要石油生產國之一。"
@@ -16806,7 +16806,7 @@ const externalVocabularyDB = [
     "id": 1868,
     "en": "punishment",
     "kk": "[ˋpʌnɪʃmənt]",
-    "zh": "n. 處罰;懲罰",
+    "zh": "n. 處罰；懲罰",
     "unit": 2,
     "example": "The punishment was very fair.",
     "exampleZh": "這個處罰很公正。"
@@ -16824,7 +16824,7 @@ const externalVocabularyDB = [
     "id": 1870,
     "en": "puppet",
     "kk": "[ˋpʌpət]",
-    "zh": "n. 木偶;傀儡",
+    "zh": "n. 木偶；傀儡",
     "unit": 2,
     "example": "It's a puppet. Do you like puppets?",
     "exampleZh": "它是一個木偶。你喜歡木偶嗎？"
@@ -16914,7 +16914,7 @@ const externalVocabularyDB = [
     "id": 1880,
     "en": "reality",
     "kk": "[͵riˋælə͵ti]",
-    "zh": "n. 現實;真實",
+    "zh": "n. 現實；真實",
     "unit": 2,
     "example": "She refuses to face reality.",
     "exampleZh": "她不肯面對現實。"
@@ -16977,7 +16977,7 @@ const externalVocabularyDB = [
     "id": 1887,
     "en": "relation",
     "kk": "[riˋleʃən]",
-    "zh": "n. 關係,關聯",
+    "zh": "n. 關係、關聯",
     "unit": 2,
     "example": "It is a question of the relation of ethics to economics.",
     "exampleZh": "這是個道德和經濟之間關係的問題。"
@@ -17022,7 +17022,7 @@ const externalVocabularyDB = [
     "id": 1892,
     "en": "requirement",
     "kk": "[rɪkˋwaɪrmənt]",
-    "zh": "n. 需要;必需品",
+    "zh": "n. 需要；必需品",
     "unit": 2,
     "example": "What is the minimum entrance requirement for this course?",
     "exampleZh": "這個學程的基本入學條件是什麼？"
@@ -17076,7 +17076,7 @@ const externalVocabularyDB = [
     "id": 1898,
     "en": "riches",
     "kk": "[ˋrɪtʃəz]",
-    "zh": "n. 財富,財產;富有,豐饒",
+    "zh": "n. 財富、財產；富有、豐饒",
     "unit": 2,
     "example": "Hers was a classic tale of rags to riches.",
     "exampleZh": "她的經歷是從赤貧到富有的一個典型例子。"
@@ -17112,7 +17112,7 @@ const externalVocabularyDB = [
     "id": 1902,
     "en": "ruler",
     "kk": "[ˋrulɚ]",
-    "zh": "n. 尺;統治者",
+    "zh": "n. 尺；統治者",
     "unit": 2,
     "example": "The ruler cracked and splintered into pieces.",
     "exampleZh": "尺子裂了，碎成了片。"
@@ -17121,7 +17121,7 @@ const externalVocabularyDB = [
     "id": 1903,
     "en": "runner",
     "kk": "[ˋrʌnɚ]",
-    "zh": "n. 賽跑者;逃亡者",
+    "zh": "n. 賽跑者；逃亡者",
     "unit": 2,
     "example": "So you're a runner, huh?",
     "exampleZh": "這麼說，你是個跑步愛好者嘍？"
@@ -17274,7 +17274,7 @@ const externalVocabularyDB = [
     "id": 1920,
     "en": "selection",
     "kk": "[səˋlɛkʃən]",
-    "zh": "n. 選擇;選拔;選集,文選",
+    "zh": "n. 選擇；選拔；選集、文選",
     "unit": 2,
     "example": "Selection is based solely on merit.",
     "exampleZh": "選拔唯賢。"
@@ -17301,7 +17301,7 @@ const externalVocabularyDB = [
     "id": 1923,
     "en": "settlement",
     "kk": "[ˋsɛtəlmənt]",
-    "zh": "n. 解決;清算;定居",
+    "zh": "n. 解決；清算；定居",
     "unit": 2,
     "example": "An amicable settlement was reached.",
     "exampleZh": "已達成和解。"
@@ -17328,7 +17328,7 @@ const externalVocabularyDB = [
     "id": 1926,
     "en": "shell",
     "kk": "[ʃɛl]",
-    "zh": "v. 殼,果殼；n. 貝殼",
+    "zh": "v. 殼、果殼；n. 貝殼",
     "unit": 2,
     "example": "The animal retracted into its shell.",
     "exampleZh": "這隻動物縮回到自己的殼裡。"
@@ -17409,7 +17409,7 @@ const externalVocabularyDB = [
     "id": 1935,
     "en": "silk",
     "kk": "[sɪlk]",
-    "zh": "n. 蠶絲,絲;絲織物(品),綢布",
+    "zh": "n. 蠶絲、絲；絲織物(品),綢布",
     "unit": 2,
     "example": "She wore purple and green silk.",
     "exampleZh": "她穿著紫色和綠色的絲綢。"
@@ -17526,7 +17526,7 @@ const externalVocabularyDB = [
     "id": 1948,
     "en": "solution",
     "kk": "[səˋluʃən]",
-    "zh": "n. 解答;溶劑",
+    "zh": "n. 解答；溶劑",
     "unit": 2,
     "example": "Do you have a better solution?",
     "exampleZh": "你有更好的解決辦法嗎？"
@@ -17562,7 +17562,7 @@ const externalVocabularyDB = [
     "id": 1952,
     "en": "soy",
     "kk": "[sɔɪ]",
-    "zh": "n. 醬油;大豆",
+    "zh": "n. 醬油；大豆",
     "unit": 2,
     "example": "Enormous acreages of soy beans are grown in the United States.",
     "exampleZh": "在美國種植有大面積的大豆。"
@@ -17580,7 +17580,7 @@ const externalVocabularyDB = [
     "id": 1954,
     "en": "speaker",
     "kk": "[ˋspikɚ]",
-    "zh": "n. 演講者;揚聲器",
+    "zh": "n. 演講者；揚聲器",
     "unit": 2,
     "example": "She's a very capable speaker.",
     "exampleZh": "她是一個非常有能力的演說者。"
@@ -17598,7 +17598,7 @@ const externalVocabularyDB = [
     "id": 1956,
     "en": "spelling",
     "kk": "[ˋspɛlɪŋ]",
-    "zh": "n. 拼字;拼寫;拼法",
+    "zh": "n. 拼字；拼寫；拼法",
     "unit": 2,
     "example": "Her spelling isn't too hot.",
     "exampleZh": "她的拼寫不太好。"
@@ -17778,7 +17778,7 @@ const externalVocabularyDB = [
     "id": 1976,
     "en": "straw",
     "kk": "[strɔ]",
-    "zh": "n. 稻草;吸管",
+    "zh": "n. 稻草；吸管",
     "unit": 2,
     "example": "The floors are covered with woven straw mats.",
     "exampleZh": "地板上鋪著用草編織的墊子。"
@@ -17976,7 +17976,7 @@ const externalVocabularyDB = [
     "id": 1998,
     "en": "symbol",
     "kk": "[ˋsɪmbəl]",
-    "zh": "n. 符號;象徵",
+    "zh": "n. 符號；象徵",
     "unit": 2,
     "example": "What's the chemical symbol for mercury?",
     "exampleZh": "水銀的化學符號是什麼？"
@@ -18012,7 +18012,7 @@ const externalVocabularyDB = [
     "id": 2002,
     "en": "tank",
     "kk": "[tæŋk]",
-    "zh": "n. 槽;坦克",
+    "zh": "n. 槽；坦克",
     "unit": 3,
     "example": "The tank became bogged down in mud.",
     "exampleZh": "坦克陷入了爛泥中。"
@@ -18102,7 +18102,7 @@ const externalVocabularyDB = [
     "id": 2012,
     "en": "temple",
     "kk": "[ˋtɛmpəl]",
-    "zh": "n. 廟宇;神殿",
+    "zh": "n. 廟宇；神殿",
     "unit": 3,
     "example": "We go to temple on Saturdays.",
     "exampleZh": "我們每個星期六去寺廟。"
@@ -18156,7 +18156,7 @@ const externalVocabularyDB = [
     "id": 2018,
     "en": "theater",
     "kk": "[ˋθiətɚ]",
-    "zh": "n. 戲院;劇院",
+    "zh": "n. 戲院；劇院",
     "unit": 3,
     "example": "It's the South Theater Company.",
     "exampleZh": "這是南方戲劇公司。"
@@ -18282,7 +18282,7 @@ const externalVocabularyDB = [
     "id": 2032,
     "en": "topic",
     "kk": "[ˋtɑpɪk]",
-    "zh": "n. 論題;話題",
+    "zh": "n. 論題；話題",
     "unit": 3,
     "example": "He spoke with authority on the topic.",
     "exampleZh": "他就這個課題發表權威意見。"
@@ -18390,7 +18390,7 @@ const externalVocabularyDB = [
     "id": 2044,
     "en": "treatment",
     "kk": "[ˋtritmənt]",
-    "zh": "n. 對待;待遇;治療法",
+    "zh": "n. 對待；待遇；治療法",
     "unit": 3,
     "example": "She is responding well to treatment.",
     "exampleZh": "她經過治療大有起色。"
@@ -18453,7 +18453,7 @@ const externalVocabularyDB = [
     "id": 2051,
     "en": "trust",
     "kk": "[trʌst]",
-    "zh": "v. 信任,信賴；n. 託管,信託",
+    "zh": "v. 信任、信賴；n. 託管、信託",
     "unit": 3,
     "example": "I couldn't trust him anymore.",
     "exampleZh": "我再不能相信他了。"
@@ -18462,7 +18462,7 @@ const externalVocabularyDB = [
     "id": 2052,
     "en": "truth",
     "kk": "[truθ]",
-    "zh": "n. 事實;真相",
+    "zh": "n. 事實；真相",
     "unit": 3,
     "example": "Slowly the awful truth dawned.",
     "exampleZh": "可怕的事實慢慢地清晰起來。"
@@ -18534,7 +18534,7 @@ const externalVocabularyDB = [
     "id": 2060,
     "en": "underground",
     "kk": "[ˋʌndɚ͵ɡraʊnd]",
-    "zh": "n. 地面下層;地下組織",
+    "zh": "n. 地面下層；地下組織",
     "unit": 3,
     "example": "I always travel by underground.",
     "exampleZh": "我總是乘地鐵。"
@@ -18669,7 +18669,7 @@ const externalVocabularyDB = [
     "id": 2075,
     "en": "voter",
     "kk": "[ˋvotɚ]",
-    "zh": "n. 選舉人;投票人",
+    "zh": "n. 選舉人；投票人",
     "unit": 3,
     "example": "The voters want change.",
     "exampleZh": "選民希望有所改變。"
@@ -18858,7 +18858,7 @@ const externalVocabularyDB = [
     "id": 2096,
     "en": "wool",
     "kk": "[wʊl]",
-    "zh": "n. 羊毛;毛織品",
+    "zh": "n. 羊毛；毛織品",
     "unit": 3,
     "example": "This scarf is 100% wool.",
     "exampleZh": "這條披肩是純毛的。"
@@ -18894,7 +18894,7 @@ const externalVocabularyDB = [
     "id": 2100,
     "en": "youth",
     "kk": "[juθ]",
-    "zh": "n. 青少年;青少年時代",
+    "zh": "n. 青少年；青少年時代",
     "unit": 3,
     "example": "The poem contrasts youth and age.",
     "exampleZh": "這首詩對比了青春與老年。"
@@ -18912,7 +18912,7 @@ const externalVocabularyDB = [
     "id": 2102,
     "en": "acceptable",
     "kk": "[ækˋsɛptəbəl]",
-    "zh": "adj. 可以接受的;令人滿意的",
+    "zh": "adj. 可以接受的；令人滿意的",
     "unit": 3,
     "example": "Ten beaches were graded as acceptable.",
     "exampleZh": "有十個沙灘屬於可接受的那一類。"
@@ -18939,7 +18939,7 @@ const externalVocabularyDB = [
     "id": 2105,
     "en": "additional",
     "kk": "[əˋdɪʃənəl]",
-    "zh": "adj. 附加的;額外的",
+    "zh": "adj. 附加的；額外的",
     "unit": 3,
     "example": "Additional cream would make it too rich.",
     "exampleZh": "額外的奶油會使它過於油膩。"
@@ -18948,7 +18948,7 @@ const externalVocabularyDB = [
     "id": 2106,
     "en": "advanced",
     "kk": "[ədˋvænst]",
-    "zh": "adj. 先進的;高等的",
+    "zh": "adj. 先進的；高等的",
     "unit": 3,
     "example": "Oil shares advanced amid economic recovery hopes.",
     "exampleZh": "在一片經濟復甦的希望中石油股票價格上漲。"
@@ -19011,7 +19011,7 @@ const externalVocabularyDB = [
     "id": 2113,
     "en": "bold",
     "kk": "[bold]",
-    "zh": "adj. 無畏的;大膽的",
+    "zh": "adj. 無畏的；大膽的",
     "unit": 3,
     "example": "Amrita becomes a bold, daring rebel.",
     "exampleZh": "阿莫瑞塔成了一位英勇無畏的反叛者。"
@@ -19038,7 +19038,7 @@ const externalVocabularyDB = [
     "id": 2116,
     "en": "casual",
     "kk": "[ˋkæʒəwəl]",
-    "zh": "adj. 非正式的;隨便的",
+    "zh": "adj. 非正式的；隨便的",
     "unit": 3,
     "example": "She dresses with casual elegance.",
     "exampleZh": "她的穿著隨意而不失雅緻。"
@@ -19047,7 +19047,7 @@ const externalVocabularyDB = [
     "id": 2117,
     "en": "ceramic",
     "kk": "[sɚˋæmɪk]",
-    "zh": "adj. 陶器的;製陶藝術的",
+    "zh": "adj. 陶器的；製陶藝術的",
     "unit": 3,
     "example": "I studied ceramic engineering at school.",
     "exampleZh": "我在學校攻讀陶瓷工程學。"
@@ -19056,7 +19056,7 @@ const externalVocabularyDB = [
     "id": 2118,
     "en": "changeable",
     "kk": "[ˋtʃendʒəbəl]",
-    "zh": "adj. 易變的;不定的",
+    "zh": "adj. 易變的；不定的",
     "unit": 3,
     "example": "The weather is very changeable at this time of year.",
     "exampleZh": "年年在這個時候天氣都變化無常。"
@@ -19110,7 +19110,7 @@ const externalVocabularyDB = [
     "id": 2124,
     "en": "conscious",
     "kk": "[ˋkɑnʃəs]",
-    "zh": "adj. 神志清醒的,有知覺的",
+    "zh": "adj. 神志清醒的、有知覺的",
     "unit": 3,
     "example": "I'm very conscious of my weight.",
     "exampleZh": "我很在意自己的體重。"
@@ -19119,7 +19119,7 @@ const externalVocabularyDB = [
     "id": 2125,
     "en": "considerable",
     "kk": "[kənˋsɪdɚəbəl]",
-    "zh": "adj. 相當大的;相當多的",
+    "zh": "adj. 相當大的；相當多的",
     "unit": 3,
     "example": "Damage to the building was considerable.",
     "exampleZh": "對這棟建築物的損壞相當嚴重。"
@@ -19128,7 +19128,7 @@ const externalVocabularyDB = [
     "id": 2126,
     "en": "countable",
     "kk": "[ˋkaʊntəbəl]",
-    "zh": "adj. 可計算的;可數的",
+    "zh": "adj. 可計算的；可數的",
     "unit": 3,
     "example": "Are they countable nouns or uncountable nouns?",
     "exampleZh": "它們是可數名詞還是不可數名詞？"
@@ -19146,7 +19146,7 @@ const externalVocabularyDB = [
     "id": 2128,
     "en": "crisp",
     "kk": "[krɪsp]",
-    "zh": "adj. 脆的,酥的,鬆脆的",
+    "zh": "adj. 脆的、酥的,鬆脆的",
     "unit": 3,
     "example": "Cook the bacon until it begins to crisp.",
     "exampleZh": "烤制燻肉直到變脆。"
@@ -19155,7 +19155,7 @@ const externalVocabularyDB = [
     "id": 2129,
     "en": "crispy",
     "kk": "[ˋkrɪspi]",
-    "zh": "adj. 酥脆的;清脆的",
+    "zh": "adj. 酥脆的；清脆的",
     "unit": 3,
     "example": "Wax apple is a small and crispy fruit.",
     "exampleZh": "蓮霧是一種小而脆的水果。"
@@ -19164,7 +19164,7 @@ const externalVocabularyDB = [
     "id": 2130,
     "en": "crunchy",
     "kk": "[ˋkrʌntʃi]",
-    "zh": "adj. 發嘎吱嘎吱聲的;易碎的",
+    "zh": "adj. 發嘎吱嘎吱聲的；易碎的",
     "unit": 3,
     "example": "The texture is crunchy, but smelt a little of pub food.",
     "exampleZh": "口感很脆，但聞起來有點像酒館食物的味道。"
@@ -19173,7 +19173,7 @@ const externalVocabularyDB = [
     "id": 2131,
     "en": "cultural",
     "kk": "[ˋkʌltʃɚəl]",
-    "zh": "adj. 教養的;人文的",
+    "zh": "adj. 教養的；人文的",
     "unit": 3,
     "example": "Gender roles are often conditioned by cultural factors.",
     "exampleZh": "文化因素常常對性別的角色有著重要的影響。"
@@ -19191,7 +19191,7 @@ const externalVocabularyDB = [
     "id": 2133,
     "en": "desirable",
     "kk": "[dɪˋzaɪrəbəl]",
-    "zh": "adj. 值得嚮往的;富有魅力的",
+    "zh": "adj. 值得嚮往的；富有魅力的",
     "unit": 3,
     "example": "The house has many desirable features.",
     "exampleZh": "這棟房子有許多吸引人的特點。"
@@ -19227,7 +19227,7 @@ const externalVocabularyDB = [
     "id": 2137,
     "en": "dramatic",
     "kk": "[drəˋmætɪk]",
-    "zh": "adj. 戲劇性的;引人注目的",
+    "zh": "adj. 戲劇性的；引人注目的",
     "unit": 3,
     "example": "She gave a dramatic shudder of repulsion.",
     "exampleZh": "她由於厭惡而身體劇烈發抖。"
@@ -19263,7 +19263,7 @@ const externalVocabularyDB = [
     "id": 2141,
     "en": "efficient",
     "kk": "[ɪˋfɪʃənt]",
-    "zh": "adj. 效率高的;有能力的",
+    "zh": "adj. 效率高的；有能力的",
     "unit": 3,
     "example": "Graphite is a highly efficient conductor of electricity.",
     "exampleZh": "石墨是一種高效的電導體。"
@@ -19272,7 +19272,7 @@ const externalVocabularyDB = [
     "id": 2142,
     "en": "elderly",
     "kk": "[ˋɛldɚli]",
-    "zh": "adj. 年長的;上了年紀的",
+    "zh": "adj. 年長的；上了年紀的",
     "unit": 3,
     "example": "Many elderly people live in poverty.",
     "exampleZh": "許多老年人生活於貧困之中。"
@@ -19317,7 +19317,7 @@ const externalVocabularyDB = [
     "id": 2147,
     "en": "enjoyable",
     "kk": "[͵ɛnˋdʒɔɪəbəl]",
-    "zh": "adj. 快樂的;有樂趣的",
+    "zh": "adj. 快樂的；有樂趣的",
     "unit": 3,
     "example": "It was much more enjoyable than I had expected.",
     "exampleZh": "它比我原先想的要令人愉快得多。"
@@ -19326,7 +19326,7 @@ const externalVocabularyDB = [
     "id": 2148,
     "en": "environmental",
     "kk": "[ɪn͵vaɪrənˋmɛntəl]",
-    "zh": "adj. 環境的;有關環境(保護)的",
+    "zh": "adj. 環境的；有關環境(保護)的",
     "unit": 3,
     "example": "She cares deeply about environmental issues.",
     "exampleZh": "她對環境問題深感擔憂。"
@@ -19335,7 +19335,7 @@ const externalVocabularyDB = [
     "id": 2149,
     "en": "expressive",
     "kk": "[ɪkˋsprɛsɪv]",
-    "zh": "adj. 表達的;表情豐富的",
+    "zh": "adj. 表達的；表情豐富的",
     "unit": 3,
     "example": "You can train people to be more expressive.",
     "exampleZh": "你可以培訓人們使其更富於表現力。"
@@ -19362,7 +19362,7 @@ const externalVocabularyDB = [
     "id": 2152,
     "en": "fond",
     "kk": "[fɑnd]",
-    "zh": "adj. 喜歡的;愛好的",
+    "zh": "adj. 喜歡的；愛好的",
     "unit": 3,
     "example": "I'm not overly fond of pasta.",
     "exampleZh": "我不怎麼太喜愛義大利麵食。"
@@ -19380,7 +19380,7 @@ const externalVocabularyDB = [
     "id": 2154,
     "en": "gradual",
     "kk": "[ˋɡrædʒuəl]",
-    "zh": "adj. 逐漸的,逐步的",
+    "zh": "adj. 逐漸的、逐步的",
     "unit": 3,
     "example": "Losing weight is a slow, gradual process.",
     "exampleZh": "減肥是一個緩慢而逐漸的過程。"
@@ -19389,7 +19389,7 @@ const externalVocabularyDB = [
     "id": 2155,
     "en": "handy",
     "kk": "[ˋhændi]",
-    "zh": "adj. 便利的;靈活的;易於操作的",
+    "zh": "adj. 便利的；靈活的；易於操作的",
     "unit": 3,
     "example": "Don't throw that away—it might come in handy.",
     "exampleZh": "別把它扔了—它或許有用。"
@@ -19407,7 +19407,7 @@ const externalVocabularyDB = [
     "id": 2157,
     "en": "hasty",
     "kk": "[ˋhesti]",
-    "zh": "adj. 倉促的,輕率的",
+    "zh": "adj. 倉促的、輕率的",
     "unit": 3,
     "example": "Let's not make any hasty decisions.",
     "exampleZh": "我們不要匆忙作決定。"
@@ -19425,7 +19425,7 @@ const externalVocabularyDB = [
     "id": 2159,
     "en": "historical",
     "kk": "[hɪˋstɔrɪkəl]",
-    "zh": "adj. 歷史的,史學的",
+    "zh": "adj. 歷史的、史學的",
     "unit": 3,
     "example": "Was Robin Hood a historical figure?",
     "exampleZh": "羅賓漢是歷史人物嗎？"
@@ -19488,7 +19488,7 @@ const externalVocabularyDB = [
     "id": 2166,
     "en": "indoor",
     "kk": "[ˋɪn͵dɔr]",
-    "zh": "adj. 室內的,戶內的",
+    "zh": "adj. 室內的、戶內的",
     "unit": 3,
     "example": "Central heating is bad news for indoor plants.",
     "exampleZh": "中央供暖系統不利於室內植物。"
@@ -19497,7 +19497,7 @@ const externalVocabularyDB = [
     "id": 2167,
     "en": "industrial",
     "kk": "[͵ɪnˋdʌstriəl]",
-    "zh": "adj. 工業的,產業的",
+    "zh": "adj. 工業的、產業的",
     "unit": 3,
     "example": "Japan's industrial output increased by 2%.",
     "exampleZh": "日本的工業產量增長了2%。"
@@ -19515,7 +19515,7 @@ const externalVocabularyDB = [
     "id": 2169,
     "en": "innocent",
     "kk": "[ˋɪnəsənt]",
-    "zh": "adj. 無罪的,清白的",
+    "zh": "adj. 無罪的、清白的",
     "unit": 3,
     "example": "The accused was found innocent.",
     "exampleZh": "被告被判定無罪。"
@@ -19542,7 +19542,7 @@ const externalVocabularyDB = [
     "id": 2172,
     "en": "joyful",
     "kk": "[ˋdʒɔɪfəl]",
-    "zh": "adj. 高興的,充滿喜悅的",
+    "zh": "adj. 高興的、充滿喜悅的",
     "unit": 3,
     "example": "It was a joyful meeting.",
     "exampleZh": "這是一次令人高興的見面。"
@@ -19569,7 +19569,7 @@ const externalVocabularyDB = [
     "id": 2175,
     "en": "lively",
     "kk": "[ˋlaɪvli]",
-    "zh": "adj. 精力充沛的;活潑的",
+    "zh": "adj. 精力充沛的；活潑的",
     "unit": 3,
     "example": "She had a sweet, lively personality.",
     "exampleZh": "她有著可愛活潑的性格。"
@@ -19587,7 +19587,7 @@ const externalVocabularyDB = [
     "id": 2177,
     "en": "magical",
     "kk": "[ˋmædʒɪkəl]",
-    "zh": "adj. 魔術的,魔法的",
+    "zh": "adj. 魔術的、魔法的",
     "unit": 3,
     "example": "Her words had a magical effect on us.",
     "exampleZh": "她的話對我們有一種魔力般的作用。"
@@ -19623,7 +19623,7 @@ const externalVocabularyDB = [
     "id": 2181,
     "en": "mature",
     "kk": "[məˋtʃʊr]",
-    "zh": "adj. 成熟的;到期的",
+    "zh": "adj. 成熟的；到期的",
     "unit": 3,
     "example": "Jane is very mature for her age.",
     "exampleZh": "簡年齡不大，卻很成熟。"
@@ -19632,7 +19632,7 @@ const externalVocabularyDB = [
     "id": 2182,
     "en": "meaningful",
     "kk": "[ˋminɪŋfəl]",
-    "zh": "adj. 意味深長的;有意義的",
+    "zh": "adj. 意味深長的；有意義的",
     "unit": 3,
     "example": "She gave me a meaningful look.",
     "exampleZh": "她意味深長地看了我一眼。"
@@ -19641,7 +19641,7 @@ const externalVocabularyDB = [
     "id": 2183,
     "en": "medical",
     "kk": "[ˋmɛdəkəl]",
-    "zh": "adj. 醫學的;醫術的;醫療的",
+    "zh": "adj. 醫學的；醫術的；醫療的",
     "unit": 3,
     "example": "Her medical bills mounted up.",
     "exampleZh": "她的醫療賬單越來越多。"
@@ -19650,7 +19650,7 @@ const externalVocabularyDB = [
     "id": 2184,
     "en": "mental",
     "kk": "[ˋmɛntəl]",
-    "zh": "adj. 精神的,心理的",
+    "zh": "adj. 精神的、心理的",
     "unit": 3,
     "example": "We're worried about his mental state.",
     "exampleZh": "我們擔心他的精神狀況。"
@@ -19659,7 +19659,7 @@ const externalVocabularyDB = [
     "id": 2185,
     "en": "merry",
     "kk": "[ˋmɛri]",
-    "zh": "adj. 愉快的,興高采烈的",
+    "zh": "adj. 愉快的、興高采烈的",
     "unit": 3,
     "example": "She was humming a merry little tune.",
     "exampleZh": "她輕輕地哼著一首歡快的小曲兒。"
@@ -19668,7 +19668,7 @@ const externalVocabularyDB = [
     "id": 2186,
     "en": "mighty",
     "kk": "[ˋmaɪti]",
-    "zh": "adj. 強大的;強有力的",
+    "zh": "adj. 強大的；強有力的",
     "unit": 3,
     "example": "It's something you'll be mighty proud of.",
     "exampleZh": "這是個你會非常驕傲的事。"
@@ -19677,7 +19677,7 @@ const externalVocabularyDB = [
     "id": 2187,
     "en": "missing",
     "kk": "[ˋmɪsɪŋ]",
-    "zh": "adj. 缺掉的;失蹤的;找不到的",
+    "zh": "adj. 缺掉的；失蹤的；找不到的",
     "unit": 3,
     "example": "The roofs had shingles missing.",
     "exampleZh": "屋頂的一些瓦板不見了。"
@@ -19686,7 +19686,7 @@ const externalVocabularyDB = [
     "id": 2188,
     "en": "mobile",
     "kk": "[ˋmobəl]",
-    "zh": "adj. 移動式的;流動的",
+    "zh": "adj. 移動式的；流動的",
     "unit": 3,
     "example": "My mobile phone is extremely useful.",
     "exampleZh": "我的手機極為有用。"
@@ -19695,7 +19695,7 @@ const externalVocabularyDB = [
     "id": 2189,
     "en": "moist",
     "kk": "[mɔɪst]",
-    "zh": "adj. 潮濕的,微濕的",
+    "zh": "adj. 潮濕的、微濕的",
     "unit": 3,
     "example": "The outside air was heavy and moist and sultry.",
     "exampleZh": "戶外的空氣陰沉、潮溼而悶熱。"
@@ -19749,7 +19749,7 @@ const externalVocabularyDB = [
     "id": 2195,
     "en": "outdoor",
     "kk": "[ˋaʊt͵dɔr]",
-    "zh": "adj. 戶外的,露天的,野外的",
+    "zh": "adj. 戶外的、露天的,野外的",
     "unit": 3,
     "example": "They both love outdoor pursuits.",
     "exampleZh": "他們倆都喜歡戶外活動。"
@@ -19758,7 +19758,7 @@ const externalVocabularyDB = [
     "id": 2196,
     "en": "outer",
     "kk": "[ˋaʊtɚ]",
-    "zh": "adj. 外面的,外表的",
+    "zh": "adj. 外面的、外表的",
     "unit": 3,
     "example": "He heard a voice in the outer room.",
     "exampleZh": "他聽到外屋有人聲。"
@@ -19767,7 +19767,7 @@ const externalVocabularyDB = [
     "id": 2197,
     "en": "pale",
     "kk": "[pel]",
-    "zh": "adj. 蒼白的;黯淡的",
+    "zh": "adj. 蒼白的；黯淡的",
     "unit": 3,
     "example": "Rachel looked pale and weary.",
     "exampleZh": "雷切爾看起來蒼白而疲憊。"
@@ -19776,7 +19776,7 @@ const externalVocabularyDB = [
     "id": 2198,
     "en": "political",
     "kk": "[pəˋlɪtəkəl]",
-    "zh": "adj. 政治的;政治上的",
+    "zh": "adj. 政治的；政治上的",
     "unit": 3,
     "example": "What is his political creed?",
     "exampleZh": "他的政治信仰是什麼？"
@@ -19803,7 +19803,7 @@ const externalVocabularyDB = [
     "id": 2201,
     "en": "previous",
     "kk": "[ˋpriviəs]",
-    "zh": "adj. 先的,以前的",
+    "zh": "adj. 先的、以前的",
     "unit": 3,
     "example": "Her previous calm gave way to terror.",
     "exampleZh": "她先前的泰然自若已變為驚恐。"
@@ -19830,7 +19830,7 @@ const externalVocabularyDB = [
     "id": 2204,
     "en": "proper",
     "kk": "[ˋprɑpɚ]",
-    "zh": "adj. 適合的,適當的",
+    "zh": "adj. 適合的、適當的",
     "unit": 3,
     "example": "She's a proper little madam.",
     "exampleZh": "她真是個說一不二的小姑奶奶。"
@@ -19839,7 +19839,7 @@ const externalVocabularyDB = [
     "id": 2205,
     "en": "protective",
     "kk": "[prəˋtɛktɪv]",
-    "zh": "adj. 保護的,防護的",
+    "zh": "adj. 保護的、防護的",
     "unit": 3,
     "example": "The arrogance became his protective carapace.",
     "exampleZh": "傲慢成了他的保護殼。"
@@ -19857,7 +19857,7 @@ const externalVocabularyDB = [
     "id": 2207,
     "en": "queer",
     "kk": "[kwɪr]",
-    "zh": "adj. 古怪的;頭暈眼花的",
+    "zh": "adj. 古怪的；頭暈眼花的",
     "unit": 3,
     "example": "His face was a queer pink colour.",
     "exampleZh": "他滿臉奇怪的粉紅色。"
@@ -19875,7 +19875,7 @@ const externalVocabularyDB = [
     "id": 2209,
     "en": "raw",
     "kk": "[rɑ]",
-    "zh": "adj. 生的,未煮過的;未加工的",
+    "zh": "adj. 生的、未煮過的；未加工的",
     "unit": 3,
     "example": "Exploitable raw materials were in short supply.",
     "exampleZh": "可開採的原料供應短缺。"
@@ -19884,7 +19884,7 @@ const externalVocabularyDB = [
     "id": 2210,
     "en": "reasonable",
     "kk": "[ˋrizənəbəl]",
-    "zh": "adj. 合理的,正當的",
+    "zh": "adj. 合理的、正當的",
     "unit": 3,
     "example": "He's a reasonable sort of person.",
     "exampleZh": "他是那種通情達理的人。"
@@ -19893,7 +19893,7 @@ const externalVocabularyDB = [
     "id": 2211,
     "en": "regional",
     "kk": "[ˋridʒənəl]",
-    "zh": "adj. 地區的,局部的",
+    "zh": "adj. 地區的、局部的",
     "unit": 3,
     "example": "The Garden's menu is based on Hawaiian regional cuisine.",
     "exampleZh": "花園飯店的菜餚以夏威夷地區的烹飪風格為基礎。"
@@ -19902,7 +19902,7 @@ const externalVocabularyDB = [
     "id": 2212,
     "en": "reliable",
     "kk": "[rɪˋlaɪəbəl]",
-    "zh": "adj. 可信賴的;可靠的;確實的",
+    "zh": "adj. 可信賴的；可靠的；確實的",
     "unit": 3,
     "example": "She was efficient and reliable.",
     "exampleZh": "她既能幹又可靠。"
@@ -19911,7 +19911,7 @@ const externalVocabularyDB = [
     "id": 2213,
     "en": "religious",
     "kk": "[rɪˋlɪdʒəs]",
-    "zh": "adj. 宗教的;虔誠的",
+    "zh": "adj. 宗教的；虔誠的",
     "unit": 3,
     "example": "His wife is very religious.",
     "exampleZh": "她的妻子非常虔誠。"
@@ -19920,7 +19920,7 @@ const externalVocabularyDB = [
     "id": 2214,
     "en": "remote",
     "kk": "[rɪˋmot]",
-    "zh": "adj. 遙遠的;偏僻的",
+    "zh": "adj. 遙遠的；偏僻的",
     "unit": 3,
     "example": "It works by remote control.",
     "exampleZh": "它透過遙控工作。"
@@ -19938,7 +19938,7 @@ const externalVocabularyDB = [
     "id": 2216,
     "en": "rotten",
     "kk": "[ˋrɑtən]",
-    "zh": "adj. 腐爛的;發臭的",
+    "zh": "adj. 腐爛的；發臭的",
     "unit": 3,
     "example": "She spoils the children rotten.",
     "exampleZh": "她很溺愛孩子。"
@@ -19965,7 +19965,7 @@ const externalVocabularyDB = [
     "id": 2219,
     "en": "scarce",
     "kk": "[skɛrs]",
-    "zh": "adj. 缺乏的;不足的",
+    "zh": "adj. 缺乏的；不足的",
     "unit": 3,
     "example": "Food was scarce and expensive.",
     "exampleZh": "食物匱乏而且昂貴。"
@@ -19974,7 +19974,7 @@ const externalVocabularyDB = [
     "id": 2220,
     "en": "scary",
     "kk": "[ˋskɛri]",
-    "zh": "adj. 膽小的;提心吊膽的",
+    "zh": "adj. 膽小的；提心吊膽的",
     "unit": 3,
     "example": "It was a really scary moment.",
     "exampleZh": "那一刻真是嚇人。"
@@ -19992,7 +19992,7 @@ const externalVocabularyDB = [
     "id": 2222,
     "en": "secondary",
     "kk": "[ˋsɛkən͵dɛri]",
-    "zh": "adj. 第二的;次要的",
+    "zh": "adj. 第二的；次要的",
     "unit": 3,
     "example": "She taught history at a secondary school.",
     "exampleZh": "她在一所中學教過歷史。"
@@ -20001,7 +20001,7 @@ const externalVocabularyDB = [
     "id": 2223,
     "en": "sensible",
     "kk": "[ˋsɛnsəbəl]",
-    "zh": "adj. 有知覺的;明顯的",
+    "zh": "adj. 有知覺的；明顯的",
     "unit": 3,
     "example": "A luggage rack is a sensible option.",
     "exampleZh": "行李架是個明智的選擇。"
@@ -20010,7 +20010,7 @@ const externalVocabularyDB = [
     "id": 2224,
     "en": "sensitive",
     "kk": "[ˋsɛnsətɪv]",
-    "zh": "adj. 敏感的;易受傷害的",
+    "zh": "adj. 敏感的；易受傷害的",
     "unit": 3,
     "example": "She is very sensitive by nature.",
     "exampleZh": "她生性很敏感。"
@@ -20019,7 +20019,7 @@ const externalVocabularyDB = [
     "id": 2225,
     "en": "sexual",
     "kk": "[ˋsɛkʃuəl]",
-    "zh": "adj. 兩性的;關於性關係的;性慾的",
+    "zh": "adj. 兩性的；關於性關係的；性慾的",
     "unit": 3,
     "example": "Women's groups denounced sexual discrimination.",
     "exampleZh": "婦女組織譴責性別歧視。"
@@ -20037,7 +20037,7 @@ const externalVocabularyDB = [
     "id": 2227,
     "en": "shady",
     "kk": "[ˋʃedi]",
-    "zh": "adj. 靠不住的;名聲不好的",
+    "zh": "adj. 靠不住的；名聲不好的",
     "unit": 3,
     "example": "Thatched pavilions provide shady retreats for relaxing and reading in privacy.",
     "exampleZh": "茅亭為獨自放鬆和看書提供陰涼的幽僻之所。"
@@ -20055,7 +20055,7 @@ const externalVocabularyDB = [
     "id": 2229,
     "en": "shiny",
     "kk": "[ˋʃaɪni]",
-    "zh": "adj. 晴朗的;有光澤的",
+    "zh": "adj. 晴朗的；有光澤的",
     "unit": 3,
     "example": "Her blonde hair was shiny and clean.",
     "exampleZh": "她的金髮閃亮而整齊。"
@@ -20082,7 +20082,7 @@ const externalVocabularyDB = [
     "id": 2232,
     "en": "slippery",
     "kk": "[ˋslɪpɚi]",
-    "zh": "adj. 容易滑的;不明確的",
+    "zh": "adj. 容易滑的；不明確的",
     "unit": 3,
     "example": "Don't believe what he says—he's a slippery customer.",
     "exampleZh": "他說什麼你可別信—他是個滑頭。"
@@ -20091,7 +20091,7 @@ const externalVocabularyDB = [
     "id": 2233,
     "en": "solid",
     "kk": "[ˋsɑləd]",
-    "zh": "adj. 結實的;堅固的",
+    "zh": "adj. 結實的；堅固的",
     "unit": 3,
     "example": "These chains seem fairly solid.",
     "exampleZh": "這些鏈子看著挺結實。"
@@ -20109,7 +20109,7 @@ const externalVocabularyDB = [
     "id": 2235,
     "en": "stable",
     "kk": "[ˋstebəl]",
-    "zh": "adj. 穩定的,牢固的",
+    "zh": "adj. 穩定的、牢固的",
     "unit": 3,
     "example": "Mentally, she is not very stable.",
     "exampleZh": "她的心理狀態不十分穩定。"
@@ -20118,7 +20118,7 @@ const externalVocabularyDB = [
     "id": 2236,
     "en": "stale",
     "kk": "[stel]",
-    "zh": "adj. 不新鮮的;污濁的;陳舊的",
+    "zh": "adj. 不新鮮的；污濁的；陳舊的",
     "unit": 3,
     "example": "Their marriage had gone stale.",
     "exampleZh": "他們的婚姻已了無熱情。"
@@ -20136,7 +20136,7 @@ const externalVocabularyDB = [
     "id": 2238,
     "en": "sticky",
     "kk": "[ˋstɪki]",
-    "zh": "adj. 黏的;塗有黏膠物質的;泥濘的",
+    "zh": "adj. 黏的；塗有黏膠物質的；泥濘的",
     "unit": 3,
     "example": "The plant exudes a sticky fluid.",
     "exampleZh": "這種植物分泌出一種黏液。"
@@ -20145,7 +20145,7 @@ const externalVocabularyDB = [
     "id": 2239,
     "en": "stiff",
     "kk": "[stɪf]",
-    "zh": "adj. 硬的;挺的;拘謹的,不自然的",
+    "zh": "adj. 硬的；挺的；拘謹的、不自然的",
     "unit": 3,
     "example": "She greeted him with stiff formality.",
     "exampleZh": "她拘謹地按禮節向他致意。"
@@ -20163,7 +20163,7 @@ const externalVocabularyDB = [
     "id": 2241,
     "en": "stubborn",
     "kk": "[ˋstʌbɚn]",
-    "zh": "adj. 倔強的,頑固的",
+    "zh": "adj. 倔強的、頑固的",
     "unit": 3,
     "example": "Mick was stubborn and domineering with a very bad temper.",
     "exampleZh": "麥克既固執又剛愎自用，脾氣還很壞。"
@@ -20172,7 +20172,7 @@ const externalVocabularyDB = [
     "id": 2242,
     "en": "sufficient",
     "kk": "[səˋfɪʃənt]",
-    "zh": "adj. 足夠的,充分的",
+    "zh": "adj. 足夠的、充分的",
     "unit": 3,
     "example": "Is it available in sufficient quantity?",
     "exampleZh": "這東西能不能足量供應？"
@@ -20181,7 +20181,7 @@ const externalVocabularyDB = [
     "id": 2243,
     "en": "suitable",
     "kk": "[ˋsutəbəl]",
-    "zh": "adj. 適當的;合適的;適宜的",
+    "zh": "adj. 適當的；合適的；適宜的",
     "unit": 3,
     "example": "She seems eminently suitable for the job.",
     "exampleZh": "她看來非常適合這個工作。"
@@ -20190,7 +20190,7 @@ const externalVocabularyDB = [
     "id": 2244,
     "en": "swift",
     "kk": "[swɪft]",
-    "zh": "adj. 快速的,快捷的",
+    "zh": "adj. 快速的、快捷的",
     "unit": 3,
     "example": "With a swift movement, Matthew Jerrold sat upright.",
     "exampleZh": "馬修·傑羅德迅速地坐直了。"
@@ -20199,7 +20199,7 @@ const externalVocabularyDB = [
     "id": 2245,
     "en": "technical",
     "kk": "[ˋtɛknɪkəl]",
-    "zh": "adj. 專門的,技術性的",
+    "zh": "adj. 專門的、技術性的",
     "unit": 3,
     "example": "We offer free technical support.",
     "exampleZh": "我們免費提供技術支援。"
@@ -20208,7 +20208,7 @@ const externalVocabularyDB = [
     "id": 2246,
     "en": "temporary",
     "kk": "[ˋtɛmpɚ͵ɛri]",
-    "zh": "adj. 臨時的;暫時的",
+    "zh": "adj. 臨時的；暫時的",
     "unit": 3,
     "example": "His job here is only temporary.",
     "exampleZh": "他在這兒的工作只是暫時的。"
@@ -20226,7 +20226,7 @@ const externalVocabularyDB = [
     "id": 2248,
     "en": "thankful",
     "kk": "[ˋθæŋkfəl]",
-    "zh": "adj. 感謝的,感激的",
+    "zh": "adj. 感謝的、感激的",
     "unit": 3,
     "example": "I was thankful that he hadn't been hurt.",
     "exampleZh": "他沒有受傷，我感到很欣慰。"
@@ -20235,7 +20235,7 @@ const externalVocabularyDB = [
     "id": 2249,
     "en": "tricky",
     "kk": "[ˋtrɪki]",
-    "zh": "adj. 狡猾的;機警的",
+    "zh": "adj. 狡猾的；機警的",
     "unit": 3,
     "example": "He and I have talked through this whole tricky problem.",
     "exampleZh": "他和我已經詳細討論了這一整個棘手的問題。"
@@ -20262,7 +20262,7 @@ const externalVocabularyDB = [
     "id": 2252,
     "en": "typical",
     "kk": "[ˋtɪpəkəl]",
-    "zh": "adj. 典型的,有代表性的",
+    "zh": "adj. 典型的、有代表性的",
     "unit": 3,
     "example": "It was typical family entertainment.",
     "exampleZh": "這是典型的家庭娛樂活動。"
@@ -20271,7 +20271,7 @@ const externalVocabularyDB = [
     "id": 2253,
     "en": "vacant",
     "kk": "[ˋvekənt]",
-    "zh": "adj. 空白的;(職位)空缺的",
+    "zh": "adj. 空白的；(職位)空缺的",
     "unit": 3,
     "example": "The seat next to him was vacant.",
     "exampleZh": "他旁邊的座位空著。"
@@ -20316,7 +20316,7 @@ const externalVocabularyDB = [
     "id": 2258,
     "en": "vivid",
     "kk": "[ˋvɪvəd]",
-    "zh": "adj. 鮮豔的;生動的",
+    "zh": "adj. 鮮豔的；生動的",
     "unit": 3,
     "example": "His eyes were a vivid green.",
     "exampleZh": "他的眼睛碧綠。"
@@ -20325,7 +20325,7 @@ const externalVocabularyDB = [
     "id": 2259,
     "en": "wealthy",
     "kk": "[ˋwɛlθi]",
-    "zh": "adj. 富裕的;豐富的",
+    "zh": "adj. 富裕的；豐富的",
     "unit": 3,
     "example": "They live in a wealthy suburb of Chicago.",
     "exampleZh": "他們住在芝加哥郊區的一處富人區。"
@@ -20334,7 +20334,7 @@ const externalVocabularyDB = [
     "id": 2260,
     "en": "wicked",
     "kk": "[ˋwɪkəd]",
-    "zh": "adj. 缺德的;淘氣的;過分的",
+    "zh": "adj. 缺德的；淘氣的；過分的",
     "unit": 3,
     "example": "Jane has a wicked sense of humour.",
     "exampleZh": "簡有一種惡作劇的幽默感。"
@@ -20352,7 +20352,7 @@ const externalVocabularyDB = [
     "id": 2262,
     "en": "admire",
     "kk": "[ædˋmaɪr]",
-    "zh": "v. 欽佩;欣賞",
+    "zh": "v. 欽佩；欣賞",
     "unit": 3,
     "example": "I really admire your enthusiasm.",
     "exampleZh": "我確實欽佩你的熱情。"
@@ -20478,7 +20478,7 @@ const externalVocabularyDB = [
     "id": 2276,
     "en": "awaken",
     "kk": "[əˋwekən]",
-    "zh": "v. 醒;覺醒;喚起",
+    "zh": "v. 醒；覺醒；喚起",
     "unit": 3,
     "example": "He did not awaken.",
     "exampleZh": "他沒有醒來。"
@@ -20514,7 +20514,7 @@ const externalVocabularyDB = [
     "id": 2280,
     "en": "bless",
     "kk": "[blɛs]",
-    "zh": "v. 祝福;保佑",
+    "zh": "v. 祝福；保佑",
     "unit": 3,
     "example": "Good luck and God bless you.",
     "exampleZh": "祝你好運，願上帝保佑你。"
@@ -20559,7 +20559,7 @@ const externalVocabularyDB = [
     "id": 2285,
     "en": "communicate",
     "kk": "[kəˋmjunə͵ket]",
-    "zh": "v. 傳達;傳遞",
+    "zh": "v. 傳達；傳遞",
     "unit": 3,
     "example": "They successfully communicate their knowledge to others.",
     "exampleZh": "他們成功地把他們的知識傳達給別人。"
@@ -20568,7 +20568,7 @@ const externalVocabularyDB = [
     "id": 2286,
     "en": "compete",
     "kk": "[kəmˋpit]",
-    "zh": "v. 競爭;對抗",
+    "zh": "v. 競爭；對抗",
     "unit": 3,
     "example": "We can't compete with them on price.",
     "exampleZh": "我們在價格上無法與他們競爭。"
@@ -20577,7 +20577,7 @@ const externalVocabularyDB = [
     "id": 2287,
     "en": "conclude",
     "kk": "[kənˋklud]",
-    "zh": "v. 推斷出,斷定",
+    "zh": "v. 推斷出、斷定",
     "unit": 3,
     "example": "What do you conclude from that?",
     "exampleZh": "你從這件事中得出了什麼結論？"
@@ -20595,7 +20595,7 @@ const externalVocabularyDB = [
     "id": 2289,
     "en": "connect",
     "kk": "[kəˋnɛkt]",
-    "zh": "v. 連接,連結",
+    "zh": "v. 連接、連結",
     "unit": 3,
     "example": "Click 'Continue' to connect to the Internet.",
     "exampleZh": "點選 Continue 連線到網際網路。"
@@ -20613,7 +20613,7 @@ const externalVocabularyDB = [
     "id": 2291,
     "en": "deafen",
     "kk": "[ˋdɛfən]",
-    "zh": "v. 使聾;淹沒(聲音)",
+    "zh": "v. 使聾；淹沒(聲音)",
     "unit": 3,
     "example": "Did he deafen you?",
     "exampleZh": "他讓你變聾了嗎？"
@@ -20622,7 +20622,7 @@ const externalVocabularyDB = [
     "id": 2292,
     "en": "deepen",
     "kk": "[ˋdipən]",
-    "zh": "v. 使加深;使強烈;使變濃",
+    "zh": "v. 使加深；使強烈；使變濃",
     "unit": 3,
     "example": "There were plans to deepen a stretch of the river.",
     "exampleZh": "曾經有過加深一段河道的計劃。"
@@ -20631,7 +20631,7 @@ const externalVocabularyDB = [
     "id": 2293,
     "en": "define",
     "kk": "[dɪˋfaɪn]",
-    "zh": "v. 解釋,給...下定義",
+    "zh": "v. 解釋、給……下定義",
     "unit": 3,
     "example": "The term 'mental illness' is difficult to define.",
     "exampleZh": "“精神病”這個詞很難下定義。"
@@ -20640,7 +20640,7 @@ const externalVocabularyDB = [
     "id": 2294,
     "en": "destroy",
     "kk": "[dɪˋstrɔɪ]",
-    "zh": "v. 毀壞,破壞",
+    "zh": "v. 毀壞、破壞",
     "unit": 3,
     "example": "The company produces chemicals that destroy ticks and mites.",
     "exampleZh": "該公司生產消滅壁蝨和蟎蟲的化學品。"
@@ -20667,7 +20667,7 @@ const externalVocabularyDB = [
     "id": 2297,
     "en": "dine",
     "kk": "[daɪn]",
-    "zh": "v. 進餐,用餐",
+    "zh": "v. 進餐、用餐",
     "unit": 3,
     "example": "We always dine out at weekends.",
     "exampleZh": "我們週末總是在外吃飯。"
@@ -20685,7 +20685,7 @@ const externalVocabularyDB = [
     "id": 2299,
     "en": "drown",
     "kk": "[draʊn]",
-    "zh": "v. 淹沒,浸濕",
+    "zh": "v. 淹沒、浸濕",
     "unit": 3,
     "example": "Animals get tangled in fishing nets and drown.",
     "exampleZh": "動物被纏在漁網裡淹死了。"
@@ -20694,7 +20694,7 @@ const externalVocabularyDB = [
     "id": 2300,
     "en": "edit",
     "kk": "[ˋɛdət]",
-    "zh": "v. 編輯;校訂",
+    "zh": "v. 編輯；校訂",
     "unit": 3,
     "example": "He undertook to edit the text himself.",
     "exampleZh": "他承諾親自編輯正文。"
@@ -20748,7 +20748,7 @@ const externalVocabularyDB = [
     "id": 2306,
     "en": "engage",
     "kk": "[ɛnˋɡedʒ]",
-    "zh": "v. 使訂婚;使忙於",
+    "zh": "v. 使訂婚；使忙於",
     "unit": 3,
     "example": "They tried to engage him in conversation.",
     "exampleZh": "他們試圖使他加入談話。"
@@ -20757,7 +20757,7 @@ const externalVocabularyDB = [
     "id": 2307,
     "en": "erase",
     "kk": "[ɪˋres]",
-    "zh": "v. 擦掉,抹去",
+    "zh": "v. 擦掉、抹去",
     "unit": 3,
     "example": "They are desperate to erase the memory of that last defeat.",
     "exampleZh": "他們急於抹去上次失敗的記憶。"
@@ -20775,7 +20775,7 @@ const externalVocabularyDB = [
     "id": 2309,
     "en": "fade",
     "kk": "[fed]",
-    "zh": "v. 凋謝,枯萎;(顏色)褪去",
+    "zh": "v. 凋謝、枯萎；(顏色)褪去",
     "unit": 3,
     "example": "My resentment of her slowly began to fade.",
     "exampleZh": "我對她的怨恨慢慢地開始消退了。"
@@ -20784,7 +20784,7 @@ const externalVocabularyDB = [
     "id": 2310,
     "en": "fasten",
     "kk": "[ˋfæsən]",
-    "zh": "v. 紮牢;繫緊",
+    "zh": "v. 紮牢；繫緊",
     "unit": 3,
     "example": "They fasten with a drawstring.",
     "exampleZh": "它們是用拉繩繫緊的。"
@@ -20811,7 +20811,7 @@ const externalVocabularyDB = [
     "id": 2313,
     "en": "frustrate",
     "kk": "[ˋfrʌ͵stret]",
-    "zh": "v. 挫敗;阻撓",
+    "zh": "v. 挫敗；阻撓",
     "unit": 3,
     "example": "Gender inequality continues to frustrate a lot of female employees.",
     "exampleZh": "性別不平等仍然讓許多女員工感到沮喪。"
@@ -20820,7 +20820,7 @@ const externalVocabularyDB = [
     "id": 2314,
     "en": "heal",
     "kk": "[hil]",
-    "zh": "v. 癒合;痊癒",
+    "zh": "v. 癒合；痊癒",
     "unit": 3,
     "example": "As they heal, the bones will fuse together.",
     "exampleZh": "骨頭癒合時將會連線在一起。"
@@ -20829,7 +20829,7 @@ const externalVocabularyDB = [
     "id": 2315,
     "en": "hesitate",
     "kk": "[ˋhɛzə͵tet]",
-    "zh": "v. 躊躇;猶豫",
+    "zh": "v. 躊躇；猶豫",
     "unit": 3,
     "example": "He's the kind of filmmaker who doesn't hesitate to over-sentimentalize.",
     "exampleZh": "他是那種煽起情來從不遲疑的電影製作人。"
@@ -20838,7 +20838,7 @@ const externalVocabularyDB = [
     "id": 2316,
     "en": "impress",
     "kk": "[͵ɪmˋprɛs]",
-    "zh": "v. 給...極深的印象",
+    "zh": "v. 給……極深的印象",
     "unit": 3,
     "example": "It didn't impress me as a good place to live.",
     "exampleZh": "那地方沒有給我留下適合居住的印象。"
@@ -20847,7 +20847,7 @@ const externalVocabularyDB = [
     "id": 2317,
     "en": "inform",
     "kk": "[͵ɪnˋfɔrm]",
-    "zh": "v. 通知,告知",
+    "zh": "v. 通知、告知",
     "unit": 3,
     "example": "They would inform him of any progress they had made.",
     "exampleZh": "他們將把自己所取得的任何進展都告訴他。"
@@ -20856,7 +20856,7 @@ const externalVocabularyDB = [
     "id": 2318,
     "en": "injure",
     "kk": "[ˋɪndʒɚ]",
-    "zh": "v. 傷害;損害;毀壞",
+    "zh": "v. 傷害；損害；毀壞",
     "unit": 3,
     "example": "This could seriously injure the company's reputation.",
     "exampleZh": "這會嚴重損害公司的聲譽。"
@@ -20865,7 +20865,7 @@ const externalVocabularyDB = [
     "id": 2319,
     "en": "inspect",
     "kk": "[͵ɪnˋspɛkt]",
-    "zh": "v. 檢查;審查",
+    "zh": "v. 檢查；審查",
     "unit": 3,
     "example": "Elaine went outside to inspect the playing field.",
     "exampleZh": "伊萊恩到外邊去檢查運動場。"
@@ -20883,7 +20883,7 @@ const externalVocabularyDB = [
     "id": 2321,
     "en": "investigate",
     "kk": "[͵ɪnˋvɛstə͵ɡet]",
-    "zh": "v. 調查,研究",
+    "zh": "v. 調查、研究",
     "unit": 3,
     "example": "He felt impelled to investigate further.",
     "exampleZh": "他覺得有必要作進一步調查。"
@@ -20901,7 +20901,7 @@ const externalVocabularyDB = [
     "id": 2323,
     "en": "lengthen",
     "kk": "[ˋlɛŋθən]",
-    "zh": "v. 使加長,使延長",
+    "zh": "v. 使加長、使延長",
     "unit": 3,
     "example": "Can you lengthen it?",
     "exampleZh": "你可以利用下襬把一件外衣放長。"
@@ -20910,7 +20910,7 @@ const externalVocabularyDB = [
     "id": 2324,
     "en": "loosen",
     "kk": "[ˋlusən]",
-    "zh": "v. 鬆開,解開",
+    "zh": "v. 鬆開、解開",
     "unit": 3,
     "example": "Relax, smile; loosen up in mind and body.",
     "exampleZh": "放鬆，微笑；身心俱放鬆。"
@@ -20919,7 +20919,7 @@ const externalVocabularyDB = [
     "id": 2325,
     "en": "manage",
     "kk": "[ˋmænədʒ]",
-    "zh": "v. 管理;經營;處理",
+    "zh": "v. 管理；經營；處理",
     "unit": 3,
     "example": "Can you manage that suitcase?",
     "exampleZh": "你弄得動那個箱子嗎？"
@@ -20928,7 +20928,7 @@ const externalVocabularyDB = [
     "id": 2326,
     "en": "melt",
     "kk": "[mɛlt]",
-    "zh": "v. 融化;熔化",
+    "zh": "v. 融化；熔化",
     "unit": 3,
     "example": "The snow was beginning to melt.",
     "exampleZh": "積雪開始融化了。"
@@ -20937,7 +20937,7 @@ const externalVocabularyDB = [
     "id": 2327,
     "en": "memorize",
     "kk": "[ˋmɛmɚ͵aɪz]",
-    "zh": "v. 記住;背熟",
+    "zh": "v. 記住；背熟",
     "unit": 3,
     "example": "I don't try to memorize speeches word for word.",
     "exampleZh": "我不會嘗試去逐字地背那些演說。"
@@ -20946,7 +20946,7 @@ const externalVocabularyDB = [
     "id": 2328,
     "en": "mend",
     "kk": "[mɛnd]",
-    "zh": "v. 修理,修補",
+    "zh": "v. 修理、修補",
     "unit": 3,
     "example": "Somebody helped me to mend the puncture.",
     "exampleZh": "有人幫我補了車胎上的洞。"
@@ -20957,14 +20957,14 @@ const externalVocabularyDB = [
     "kk": "[əbˋzɝv]",
     "zh": "v. 觀察、遵守",
     "unit": 3,
-    "example": "Can you use the word observe in a sentence?",
-    "exampleZh": "你能在句子中使用「觀察、遵守」這個詞嗎？"
+    "example": "Scientists continuously observe natural weather patterns across the Pacific.",
+    "exampleZh": "科學家持續觀察太平洋各地的自然氣候模式。"
   },
   {
     "id": 2330,
     "en": "owe",
     "kk": "[o]",
-    "zh": "v. 欠(債等);應給予;應該做",
+    "zh": "v. 欠(債等)；應給予；應該做",
     "unit": 3,
     "example": "I owe everything to him.",
     "exampleZh": "我的一切都歸功於他。"
@@ -20973,7 +20973,7 @@ const externalVocabularyDB = [
     "id": 2331,
     "en": "participate",
     "kk": "[pɑrˋtɪsə͵pet]",
-    "zh": "v. 參加,參與",
+    "zh": "v. 參加、參與",
     "unit": 3,
     "example": "She didn't participate in the discussion.",
     "exampleZh": "她沒有參加討論。"
@@ -20982,7 +20982,7 @@ const externalVocabularyDB = [
     "id": 2332,
     "en": "pave",
     "kk": "[pev]",
-    "zh": "v. 鋪,築(路等)",
+    "zh": "v. 鋪、築(路等)",
     "unit": 3,
     "example": "The road is paved.",
     "exampleZh": "美國地質調查局的地質學家托馬斯·鮑恩說，這是在古埃及發現的唯一一條鋪好的路。"
@@ -21000,7 +21000,7 @@ const externalVocabularyDB = [
     "id": 2334,
     "en": "persuade",
     "kk": "[pɚˋswed]",
-    "zh": "v. 說服,勸服",
+    "zh": "v. 說服、勸服",
     "unit": 3,
     "example": "I did my damnedest to persuade her.",
     "exampleZh": "我已經全力以赴地去說服她了。"
@@ -21018,7 +21018,7 @@ const externalVocabularyDB = [
     "id": 2336,
     "en": "postpone",
     "kk": "[poˋstpon]",
-    "zh": "v. 延遲,延緩",
+    "zh": "v. 延遲、延緩",
     "unit": 3,
     "example": "I, for one, would prefer to postpone the meeting.",
     "exampleZh": "主張推遲會期的，我就是一個。"
@@ -21027,7 +21027,7 @@ const externalVocabularyDB = [
     "id": 2337,
     "en": "pour",
     "kk": "[pɔr]",
-    "zh": "v. 倒,灌,注",
+    "zh": "v. 倒、灌,注",
     "unit": 3,
     "example": "Will you pour the coffee?",
     "exampleZh": "你來倒咖啡好嗎？"
@@ -21036,7 +21036,7 @@ const externalVocabularyDB = [
     "id": 2338,
     "en": "pretend",
     "kk": "[priˋtɛnd]",
-    "zh": "v. 佯裝;假裝",
+    "zh": "v. 佯裝；假裝",
     "unit": 3,
     "example": "Let's pretend (that) we're astronauts.",
     "exampleZh": "咱們裝扮成太空人吧。"
@@ -21063,7 +21063,7 @@ const externalVocabularyDB = [
     "id": 2341,
     "en": "pursue",
     "kk": "[pɚˋsu]",
-    "zh": "v. 追求;從事",
+    "zh": "v. 追求；從事",
     "unit": 3,
     "example": "She wishes to pursue a medical career.",
     "exampleZh": "她希望從事醫學工作。"
@@ -21090,7 +21090,7 @@ const externalVocabularyDB = [
     "id": 2344,
     "en": "recover",
     "kk": "[rɪˋkʌvɚ]",
-    "zh": "v. 尋回;恢復",
+    "zh": "v. 尋回；恢復",
     "unit": 3,
     "example": "The economy is at last beginning to recover.",
     "exampleZh": "經濟終於開始復甦了。"
@@ -21117,7 +21117,7 @@ const externalVocabularyDB = [
     "id": 2347,
     "en": "relax",
     "kk": "[rɪˋlæks]",
-    "zh": "v. 使鬆弛,使鬆懈,放鬆",
+    "zh": "v. 使鬆弛、使鬆懈,放鬆",
     "unit": 3,
     "example": "A bath can relax tense muscles.",
     "exampleZh": "泡個澡能放鬆緊繃的肌肉。"
@@ -21126,7 +21126,7 @@ const externalVocabularyDB = [
     "id": 2348,
     "en": "rely",
     "kk": "[rɪˋlaɪ]",
-    "zh": "v. 依靠,依賴",
+    "zh": "v. 依靠、依賴",
     "unit": 3,
     "example": "We rely entirely on voluntary contribution.",
     "exampleZh": "我們全靠自願捐贈。"
@@ -21162,7 +21162,7 @@ const externalVocabularyDB = [
     "id": 2352,
     "en": "renew",
     "kk": "[rɪˋnu]",
-    "zh": "v. 換新;修補",
+    "zh": "v. 換新；修補",
     "unit": 3,
     "example": "We have to renew our efforts to attract young players.",
     "exampleZh": "我們只好重新開始努力吸引年輕隊員。"
@@ -21189,7 +21189,7 @@ const externalVocabularyDB = [
     "id": 2355,
     "en": "resist",
     "kk": "[rɪˋzɪst]",
-    "zh": "v. 抵抗,反抗;抗拒",
+    "zh": "v. 抵抗、反抗；抗拒",
     "unit": 3,
     "example": "Few can resist the lure of adventure.",
     "exampleZh": "很少有人能抵禦歷險的誘惑力。"
@@ -21207,7 +21207,7 @@ const externalVocabularyDB = [
     "id": 2357,
     "en": "restrict",
     "kk": "[riˋstrɪkt]",
-    "zh": "v. 限制;限定;約束",
+    "zh": "v. 限制；限定；約束",
     "unit": 3,
     "example": "Having small children tends to restrict your freedom.",
     "exampleZh": "有年幼的孩子往往會限制你的自由。"
@@ -21225,7 +21225,7 @@ const externalVocabularyDB = [
     "id": 2359,
     "en": "rid",
     "kk": "[rɪd]",
-    "zh": "v. 使免除;使擺脫;從...清除",
+    "zh": "v. 使免除；使擺脫；從……清除",
     "unit": 3,
     "example": "I can't get rid of this headache.",
     "exampleZh": "我這頭疼老也不好。"
@@ -21252,7 +21252,7 @@ const externalVocabularyDB = [
     "id": 2362,
     "en": "seize",
     "kk": "[siz]",
-    "zh": "v. 抓住;捉住;沒收;扣押",
+    "zh": "v. 抓住；捉住；沒收；扣押",
     "unit": 3,
     "example": "Seize life while you have it.",
     "exampleZh": "當你活著的時候，好好把握生命。"
@@ -21261,7 +21261,7 @@ const externalVocabularyDB = [
     "id": 2363,
     "en": "sew",
     "kk": "[so]",
-    "zh": "v. 縫製;縫補",
+    "zh": "v. 縫製；縫補",
     "unit": 3,
     "example": "I know how to sew a button on.",
     "exampleZh": "我知道怎麼縫上釦子。"
@@ -21270,7 +21270,7 @@ const externalVocabularyDB = [
     "id": 2364,
     "en": "shorten",
     "kk": "[ˋʃɔrtən]",
-    "zh": "v. 使變短;縮短",
+    "zh": "v. 使變短；縮短",
     "unit": 3,
     "example": "Smoking can shorten your life.",
     "exampleZh": "吸菸會縮短你的壽命。"
@@ -21279,7 +21279,7 @@ const externalVocabularyDB = [
     "id": 2365,
     "en": "shrink",
     "kk": "[ʃrɪŋk]",
-    "zh": "v. 縮短,皺縮",
+    "zh": "v. 縮短、皺縮",
     "unit": 3,
     "example": "I've seen a shrink already.",
     "exampleZh": "我已經看過了精神病醫生。"
@@ -21297,7 +21297,7 @@ const externalVocabularyDB = [
     "id": 2367,
     "en": "spoil",
     "kk": "[spɔɪl]",
-    "zh": "v. 寵壞,溺愛",
+    "zh": "v. 寵壞、溺愛",
     "unit": 3,
     "example": "Don't let him spoil your evening.",
     "exampleZh": "別讓他搞得你一晚上不開心。"
@@ -21306,7 +21306,7 @@ const externalVocabularyDB = [
     "id": 2368,
     "en": "starve",
     "kk": "[stɑrv]",
-    "zh": "v. 餓死;餓得慌;渴望",
+    "zh": "v. 餓死；餓得慌；渴望",
     "unit": 3,
     "example": "If my back go idle, I starve.",
     "exampleZh": "如果我的背閒著，那我就要捱餓了。"
@@ -21333,7 +21333,7 @@ const externalVocabularyDB = [
     "id": 2371,
     "en": "suppose",
     "kk": "[səˋpoz]",
-    "zh": "v. 猜想,以為;假定",
+    "zh": "v. 猜想、以為；假定",
     "unit": 3,
     "example": "I suppose you think you're funny.",
     "exampleZh": "我想你認為自己很有趣。"
@@ -21342,7 +21342,7 @@ const externalVocabularyDB = [
     "id": 2372,
     "en": "surround",
     "kk": "[sɚˋaʊnd]",
-    "zh": "v. 圍,圍繞",
+    "zh": "v. 圍、圍繞",
     "unit": 3,
     "example": "The police fanned out to surround the house.",
     "exampleZh": "警察散開包圍了這座房子。"
@@ -21351,7 +21351,7 @@ const externalVocabularyDB = [
     "id": 2373,
     "en": "swear",
     "kk": "[swɛr]",
-    "zh": "v. 發誓;宣誓",
+    "zh": "v. 發誓；宣誓",
     "unit": 3,
     "example": "I swear by Almighty God...",
     "exampleZh": "我向全能的上帝起誓，我以下所說句句屬實。"
@@ -21369,7 +21369,7 @@ const externalVocabularyDB = [
     "id": 2375,
     "en": "tend",
     "kk": "[tɛnd]",
-    "zh": "v. 走向;趨向;照料",
+    "zh": "v. 走向；趨向；照料",
     "unit": 3,
     "example": "Morals tend to be deeply ingrained.",
     "exampleZh": "道德觀念往往是根深蒂固的。"
@@ -21378,7 +21378,7 @@ const externalVocabularyDB = [
     "id": 2376,
     "en": "threaten",
     "kk": "[ˋθrɛtən]",
-    "zh": "v. 威脅,恐嚇",
+    "zh": "v. 威脅、恐嚇",
     "unit": 3,
     "example": "Humans also threaten carnivorous plants in other ways.",
     "exampleZh": "人類還以其他方式對食肉植物產生威脅。"
@@ -21396,7 +21396,7 @@ const externalVocabularyDB = [
     "id": 2378,
     "en": "tighten",
     "kk": "[ˋtaɪtən]",
-    "zh": "v. 變緊,繃緊",
+    "zh": "v. 變緊、繃緊",
     "unit": 3,
     "example": "The thought of Nick made her throat tighten.",
     "exampleZh": "一想到尼克就會讓她的喉嚨發緊。"
@@ -21414,16 +21414,16 @@ const externalVocabularyDB = [
     "id": 2380,
     "en": "vanish",
     "kk": "[ˋvænɪʃ]",
-    "zh": "v. 使不見;使消失",
+    "zh": "v. 使不見；使消失",
     "unit": 3,
-    "example": "Can you use the word vanish in a sentence?",
-    "exampleZh": "你能在句子中使用「使消失」這個詞嗎？"
+    "example": "The morning fog began to vanish as the bright sun climbed above the horizon.",
+    "exampleZh": "隨著朝陽升出地平線，晨霧開始消散。"
   },
   {
     "id": 2381,
     "en": "vary",
     "kk": "[ˋvɛri]",
-    "zh": "v. 使不同;變更;呈多樣化",
+    "zh": "v. 使不同；變更；呈多樣化",
     "unit": 3,
     "example": "Her novels vary in length.",
     "exampleZh": "她的小說篇幅長短不一。"
@@ -21432,7 +21432,7 @@ const externalVocabularyDB = [
     "id": 2382,
     "en": "waken",
     "kk": "[ˋwekən]",
-    "zh": "v. 醒來;睡醒;喚醒",
+    "zh": "v. 醒來；睡醒；喚醒",
     "unit": 3,
     "example": "Naomi would waken to the twitter of birds.",
     "exampleZh": "娜奧米會被鳥兒吱吱喳喳的叫聲吵醒。"
@@ -21450,7 +21450,7 @@ const externalVocabularyDB = [
     "id": 2384,
     "en": "weaken",
     "kk": "[ˋwikən]",
-    "zh": "v. 削弱,減弱",
+    "zh": "v. 削弱、減弱",
     "unit": 3,
     "example": "Nothing could weaken his resolve to continue.",
     "exampleZh": "什麼也不能削弱他繼續下去的決心。"
@@ -21459,7 +21459,7 @@ const externalVocabularyDB = [
     "id": 2385,
     "en": "dare",
     "kk": "[dɛr]",
-    "zh": "v. 敢;竟敢",
+    "zh": "v. 敢；竟敢",
     "unit": 3,
     "example": "I didn't dare look at him.",
     "exampleZh": "我不敢看他。"
@@ -21477,7 +21477,7 @@ const externalVocabularyDB = [
     "id": 2387,
     "en": "afterward",
     "kk": "[ˋæftɚwɚd]",
-    "zh": "adv. 之後,以後,後來",
+    "zh": "adv. 之後、以後,後來",
     "unit": 3,
     "example": "I'll tell you what happened afterward.",
     "exampleZh": "我告訴你後來發生了什麼事。"
@@ -21486,7 +21486,7 @@ const externalVocabularyDB = [
     "id": 2388,
     "en": "afterwards",
     "kk": "[ˋæftɚwɚdz]",
-    "zh": "adv. 之後,後來",
+    "zh": "adv. 之後、後來",
     "unit": 3,
     "example": "We had a good laugh about it afterwards.",
     "exampleZh": "我們後來對此笑了個痛快。"
@@ -21504,7 +21504,7 @@ const externalVocabularyDB = [
     "id": 2390,
     "en": "aside",
     "kk": "[əˋsaɪd]",
-    "zh": "adv. 在一邊、除...外",
+    "zh": "adv. 在一邊、除……外",
     "unit": 3,
     "example": "She pulled the curtain aside.",
     "exampleZh": "她把窗簾拉向一邊。"
@@ -21531,7 +21531,7 @@ const externalVocabularyDB = [
     "id": 2393,
     "en": "fairly",
     "kk": "[ˋfɛrli]",
-    "zh": "adv. 公平地,公正地",
+    "zh": "adv. 公平地、公正地",
     "unit": 3,
     "example": "Our plans are fairly elastic.",
     "exampleZh": "我們的計劃有相當大的靈活性。"
@@ -21540,7 +21540,7 @@ const externalVocabularyDB = [
     "id": 2394,
     "en": "farther",
     "kk": "[ˋfɑrðɚ]",
-    "zh": "adj. (距離,時間)更遠地；adv. 此外",
+    "zh": "adj. (距離、時間)更遠地；adv. 此外",
     "unit": 3,
     "example": "How much farther is it?",
     "exampleZh": "還有多遠？"
@@ -21558,7 +21558,7 @@ const externalVocabularyDB = [
     "id": 2396,
     "en": "forth",
     "kk": "[fɔrθ]",
-    "zh": "adv. 向前;向前方;向外",
+    "zh": "adv. 向前；向前方；向外",
     "unit": 3,
     "example": "He paced back and forth.",
     "exampleZh": "他來回踱步。"
@@ -21576,7 +21576,7 @@ const externalVocabularyDB = [
     "id": 2398,
     "en": "indeed",
     "kk": "[͵ɪnˋdid]",
-    "zh": "adv. 確實,實在",
+    "zh": "adv. 確實、實在",
     "unit": 3,
     "example": "The 1980s were indeed boom years.",
     "exampleZh": "20世紀80年代確實是繁榮的時代。"
@@ -21585,7 +21585,7 @@ const externalVocabularyDB = [
     "id": 2399,
     "en": "indoors",
     "kk": "[ˋɪn͵dɔrz]",
-    "zh": "adv. 在室內,在屋裡",
+    "zh": "adv. 在室內、在屋裡",
     "unit": 3,
     "example": "Many herbs can be grown indoors.",
     "exampleZh": "很多草本植物能在室內種植。"
@@ -21594,7 +21594,7 @@ const externalVocabularyDB = [
     "id": 2400,
     "en": "instead",
     "kk": "[͵ɪnˋstɛd]",
-    "zh": "adv. 反而,卻",
+    "zh": "adv. 反而、卻",
     "unit": 3,
     "example": "Instead of tragedy, we got melodrama.",
     "exampleZh": "我們看到的是情節劇，而不是悲劇。"
@@ -21603,7 +21603,7 @@ const externalVocabularyDB = [
     "id": 2401,
     "en": "outdoors",
     "kk": "[ˋaʊtˋdɔrz]",
-    "zh": "adv. 在戶外,在野外,在露天;往戶外",
+    "zh": "adv. 在戶外、在野外,在露天；往戶外",
     "unit": 3,
     "example": "I'm a lover of the outdoors.",
     "exampleZh": "我是個戶外活動愛好者。"
@@ -21630,7 +21630,7 @@ const externalVocabularyDB = [
     "id": 2404,
     "en": "shortly",
     "kk": "[ˋʃɔrtli]",
-    "zh": "adv. 立刻,馬上;簡短地,扼要地",
+    "zh": "adv. 立刻、馬上；簡短地、扼要地",
     "unit": 3,
     "example": "Their trial will shortly begin.",
     "exampleZh": "他們的審訊很快就要開始。"
@@ -21657,7 +21657,7 @@ const externalVocabularyDB = [
     "id": 2407,
     "en": "sometime",
     "kk": "[ˋsʌm͵taɪm]",
-    "zh": "adv. 某一時候;日後,改天",
+    "zh": "adv. 某一時候；日後、改天",
     "unit": 3,
     "example": "Why don't you come and see me sometime.",
     "exampleZh": "你何不在某個時間來看看我？"
@@ -21666,7 +21666,7 @@ const externalVocabularyDB = [
     "id": 2408,
     "en": "somewhat",
     "kk": "[ˋsʌmˋwʌt]",
-    "zh": "adv. 有點,稍微",
+    "zh": "adv. 有點、稍微",
     "unit": 3,
     "example": "Research in this area is somewhat equivocal.",
     "exampleZh": "這個領域的研究有些難以理解。"
@@ -21693,7 +21693,7 @@ const externalVocabularyDB = [
     "id": 2411,
     "en": "aboard",
     "kk": "[əˋbɔrd]",
-    "zh": "adv. 上(船,飛機,車)；prep. 在(船,飛機,車)上",
+    "zh": "adv. 上(船、飛機,車)；prep. 在(船、飛機,車)上",
     "unit": 3,
     "example": "She invited 750 people aboard the luxury yacht, the Savarona.",
     "exampleZh": "她邀請了750人登上這艘豪華遊艇，薩瓦羅納號。"
@@ -21702,7 +21702,7 @@ const externalVocabularyDB = [
     "id": 2412,
     "en": "beneath",
     "kk": "[bɪˋniθ]",
-    "zh": "prep. 在...之下",
+    "zh": "prep. 在……之下",
     "unit": 3,
     "example": "The boat heaved beneath them.",
     "exampleZh": "小船在他們腳下顛簸著。"
@@ -21711,7 +21711,7 @@ const externalVocabularyDB = [
     "id": 2413,
     "en": "onto",
     "kk": "[ˋɑntu]",
-    "zh": "prep. 到...之上;向...之上",
+    "zh": "prep. 到……之上；向……之上",
     "unit": 3,
     "example": "Our house backs onto the river.",
     "exampleZh": "我們的房子背向河流。"
@@ -21729,7 +21729,7 @@ const externalVocabularyDB = [
     "id": 2415,
     "en": "accident",
     "kk": "[ˋæksədənt]",
-    "zh": "n. 事故;災禍",
+    "zh": "n. 事故；災禍",
     "unit": 3,
     "example": "It was an unfortunate accident.",
     "exampleZh": "那是一次不幸的事故。"
@@ -21819,7 +21819,7 @@ const externalVocabularyDB = [
     "id": 2425,
     "en": "adviser",
     "kk": "[ædˋvaɪzɚ]",
-    "zh": "n. 顧問;指導教授",
+    "zh": "n. 顧問；指導教授",
     "unit": 3,
     "example": "He was their adviser, confidant and confessor.",
     "exampleZh": "他是他們的顧問、知己和傾訴物件。"
@@ -21846,7 +21846,7 @@ const externalVocabularyDB = [
     "id": 2428,
     "en": "alley",
     "kk": "[ˋæli]",
-    "zh": "n. 小巷,後街",
+    "zh": "n. 小巷、後街",
     "unit": 3,
     "example": "I dodged back into the alley and waited a minute.",
     "exampleZh": "我往後一閃，躲進衚衕裡等了一會兒。"
@@ -21855,7 +21855,7 @@ const externalVocabularyDB = [
     "id": 2429,
     "en": "amazement",
     "kk": "[əˋmezmənt]",
-    "zh": "n. 驚奇,詫異",
+    "zh": "n. 驚奇、詫異",
     "unit": 3,
     "example": "She looked at him in amazement.",
     "exampleZh": "她驚愕地望著他。"
@@ -21927,7 +21927,7 @@ const externalVocabularyDB = [
     "id": 2437,
     "en": "aquarium",
     "kk": "[əkˋwɛriəm]",
-    "zh": "n. 養魚缸;水族館",
+    "zh": "n. 養魚缸；水族館",
     "unit": 3,
     "example": "The aquarium has some interesting specimens of unusual tropical fish.",
     "exampleZh": "水族館裡有一些很有趣的罕見的熱帶魚。"
@@ -22152,7 +22152,7 @@ const externalVocabularyDB = [
     "id": 2462,
     "en": "barn",
     "kk": "[bɑrn]",
-    "zh": "n. 穀倉;糧倉",
+    "zh": "n. 穀倉；糧倉",
     "unit": 3,
     "example": "A barn adjoins the farmhouse.",
     "exampleZh": "一座穀倉緊靠著農舍。"
@@ -22341,7 +22341,7 @@ const externalVocabularyDB = [
     "id": 2483,
     "en": "bravery",
     "kk": "[ˋbrevɚi]",
-    "zh": "n. 勇敢,勇氣",
+    "zh": "n. 勇敢、勇氣",
     "unit": 3,
     "example": "The reports commend her bravery.",
     "exampleZh": "報告稱讚她的英勇。"
@@ -22386,7 +22386,7 @@ const externalVocabularyDB = [
     "id": 2488,
     "en": "brook",
     "kk": "[brʊk]",
-    "zh": "n. 小河,小溪",
+    "zh": "n. 小河、小溪",
     "unit": 3,
     "example": "The Bow Brook forms the western boundary of the wood.",
     "exampleZh": "鮑溪成了樹林的西邊界。"
@@ -22404,7 +22404,7 @@ const externalVocabularyDB = [
     "id": 2490,
     "en": "brow",
     "kk": "[braʊ]",
-    "zh": "n. 眉頭;眉毛",
+    "zh": "n. 眉頭；眉毛",
     "unit": 3,
     "example": "She mopped his fevered brow.",
     "exampleZh": "她擦了他那發燒的前額。"
@@ -22521,7 +22521,7 @@ const externalVocabularyDB = [
     "id": 2503,
     "en": "burglar",
     "kk": "[ˋbɝɡlɚ]",
-    "zh": "n. 夜賊,破門盜竊者",
+    "zh": "n. 夜賊、破門盜竊者",
     "unit": 3,
     "example": "The burglar alarm should be professionally installed.",
     "exampleZh": "防盜警報應當由專業人員安裝。"
@@ -22566,7 +22566,7 @@ const externalVocabularyDB = [
     "id": 2508,
     "en": "cane",
     "kk": "[ken]",
-    "zh": "n. 藤條;手杖",
+    "zh": "n. 藤條；手杖",
     "unit": 3,
     "example": "In his hand, he carried a gold-tipped cane.",
     "exampleZh": "他手裡拿著一根有金制端部的手杖。"
@@ -22611,7 +22611,7 @@ const externalVocabularyDB = [
     "id": 2513,
     "en": "carpenter",
     "kk": "[ˋkɑrpəntɚ]",
-    "zh": "n. 木工,木匠",
+    "zh": "n. 木工、木匠",
     "unit": 3,
     "example": "For instance, my neighbor is a master carpenter.",
     "exampleZh": "例如，我的鄰居是個木工大師。"
@@ -22620,7 +22620,7 @@ const externalVocabularyDB = [
     "id": 2514,
     "en": "carriage",
     "kk": "[ˋkærɪdʒ]",
-    "zh": "n. 運輸;運費",
+    "zh": "n. 運輸；運費",
     "unit": 3,
     "example": "At length the carriage stopped.",
     "exampleZh": "馬車終於停了下來。"
@@ -22647,7 +22647,7 @@ const externalVocabularyDB = [
     "id": 2517,
     "en": "cattle",
     "kk": "[ˋkætəl]",
-    "zh": "n. 牛;牲口,家畜",
+    "zh": "n. 牛；牲口、家畜",
     "unit": 3,
     "example": "The cattle are fed barley.",
     "exampleZh": "這些牛要喂大麥。"
@@ -22737,7 +22737,7 @@ const externalVocabularyDB = [
     "id": 2527,
     "en": "cheek",
     "kk": "[tʃik]",
-    "zh": "n. 臉頰;腮幫子",
+    "zh": "n. 臉頰；腮幫子",
     "unit": 3,
     "example": "The leaves brushed her cheek.",
     "exampleZh": "葉子輕拂她的面頰。"
@@ -22881,7 +22881,7 @@ const externalVocabularyDB = [
     "id": 2543,
     "en": "client",
     "kk": "[ˋklaɪənt]",
-    "zh": "n. 顧客,客戶",
+    "zh": "n. 顧客、客戶",
     "unit": 3,
     "example": "Do you have a client named Peters?",
     "exampleZh": "你們有一位名叫彼得斯的客戶嗎？"
@@ -22890,7 +22890,7 @@ const externalVocabularyDB = [
     "id": 2544,
     "en": "clinic",
     "kk": "[ˋklɪnɪk]",
-    "zh": "n. 診所,門診所",
+    "zh": "n. 診所、門診所",
     "unit": 3,
     "example": "He is being treated at the London clinic.",
     "exampleZh": "他正在倫敦一傢俬人診所接受治療。"
@@ -22908,7 +22908,7 @@ const externalVocabularyDB = [
     "id": 2546,
     "en": "clue",
     "kk": "[klu]",
-    "zh": "n. 線索,跡象,提示",
+    "zh": "n. 線索、跡象,提示",
     "unit": 3,
     "example": "I'm sorry, I haven't a clue.",
     "exampleZh": "對不起，我一無所知。"
@@ -22926,7 +22926,7 @@ const externalVocabularyDB = [
     "id": 2548,
     "en": "coconut",
     "kk": "[ˋkokə͵nʌt]",
-    "zh": "n. 椰子;椰子肉",
+    "zh": "n. 椰子；椰子肉",
     "unit": 3,
     "example": "The beach was fringed by coconut palms.",
     "exampleZh": "沿海岸邊長著椰子樹。"
@@ -22953,7 +22953,7 @@ const externalVocabularyDB = [
     "id": 2551,
     "en": "college",
     "kk": "[ˋkɑlɪdʒ]",
-    "zh": "n. 學院;大學",
+    "zh": "n. 學院；大學",
     "unit": 3,
     "example": "He studied maths at college.",
     "exampleZh": "他在大學裡學過數學。"
@@ -22971,7 +22971,7 @@ const externalVocabularyDB = [
     "id": 2553,
     "en": "column",
     "kk": "[ˋkɑləm]",
-    "zh": "n. (報紙的)欄,段;行",
+    "zh": "n. (報紙的)欄、段；行",
     "unit": 3,
     "example": "His column is syndicated throughout the world.",
     "exampleZh": "他的專欄文章在世界各地的報刊發表。"
@@ -22989,7 +22989,7 @@ const externalVocabularyDB = [
     "id": 2555,
     "en": "comma",
     "kk": "[ˋkɑmə]",
-    "zh": "n. 逗號;停頓",
+    "zh": "n. 逗號；停頓",
     "unit": 3,
     "example": "Not a comma was left out.",
     "exampleZh": "一個逗號都沒遺漏。"
@@ -23025,7 +23025,7 @@ const externalVocabularyDB = [
     "id": 2559,
     "en": "comparison",
     "kk": "[kəmˋpɛrəsən]",
-    "zh": "n. 比較,對照",
+    "zh": "n. 比較、對照",
     "unit": 3,
     "example": "It is demonstrably an unfair comparison.",
     "exampleZh": "這顯然是一種不公平的相似對比。"
@@ -23034,7 +23034,7 @@ const externalVocabularyDB = [
     "id": 2560,
     "en": "complaint",
     "kk": "[kəmˋplent]",
-    "zh": "n. 抱怨;抗議;怨言",
+    "zh": "n. 抱怨；抗議；怨言",
     "unit": 3,
     "example": "You have no grounds for complaint.",
     "exampleZh": "你沒有理由抱怨。"
@@ -23061,7 +23061,7 @@ const externalVocabularyDB = [
     "id": 2563,
     "en": "concert",
     "kk": "[ˋkɑnsɚt]",
-    "zh": "n. 音樂會,演奏會",
+    "zh": "n. 音樂會、演奏會",
     "unit": 3,
     "example": "When does the concert begin?",
     "exampleZh": "音樂會什麼時間開始？"
@@ -23070,7 +23070,7 @@ const externalVocabularyDB = [
     "id": 2564,
     "en": "conclusion",
     "kk": "[kənˋkluʒən]",
-    "zh": "n. 結論;推論",
+    "zh": "n. 結論；推論",
     "unit": 3,
     "example": "What led you to this conclusion?",
     "exampleZh": "你是如何得出這個結論的？"
@@ -23088,7 +23088,7 @@ const externalVocabularyDB = [
     "id": 2566,
     "en": "cone",
     "kk": "[kon]",
-    "zh": "n. 圓錐體;圓錐形",
+    "zh": "n. 圓錐體；圓錐形",
     "unit": 3,
     "example": "TYP single cylinder hydraulic cone crusher wins two proprietary technologies.",
     "exampleZh": "TYP 單缸液壓圓錐破碎機獲得兩項專利技術。"
@@ -23097,7 +23097,7 @@ const externalVocabularyDB = [
     "id": 2567,
     "en": "connection",
     "kk": "[kəˋnɛkʃən]",
-    "zh": "n. 連接;聯絡;銜接",
+    "zh": "n. 連接；聯絡；銜接",
     "unit": 3,
     "example": "I felt a strong connection between us.",
     "exampleZh": "我感覺到了我們之間的強烈關係。"
@@ -23115,7 +23115,7 @@ const externalVocabularyDB = [
     "id": 2569,
     "en": "constant",
     "kk": "[ˋkɑnstənt]",
-    "zh": "adj. 常數,衡量；n. 不變的事物",
+    "zh": "adj. 常數、衡量；n. 不變的事物",
     "unit": 3,
     "example": "Inflation is a constant threat.",
     "exampleZh": "通貨膨脹是一種持續的威脅。"
@@ -23124,7 +23124,7 @@ const externalVocabularyDB = [
     "id": 2570,
     "en": "continent",
     "kk": "[ˋkɑntənənt]",
-    "zh": "n. 大陸,陸地;大洲",
+    "zh": "n. 大陸、陸地；大洲",
     "unit": 3,
     "example": "She loved the African continent.",
     "exampleZh": "她熱愛非洲大陸。"
@@ -23151,7 +23151,7 @@ const externalVocabularyDB = [
     "id": 2573,
     "en": "coward",
     "kk": "[ˋkaʊɚd]",
-    "zh": "n. 懦夫,膽怯者",
+    "zh": "n. 懦夫、膽怯者",
     "unit": 3,
     "example": "'Coward!' a tiny inner voice insisted.",
     "exampleZh": "“膽小鬼！”內心一個小聲音堅持說。"
@@ -23187,7 +23187,7 @@ const externalVocabularyDB = [
     "id": 2577,
     "en": "creator",
     "kk": "[kriˋetɚ]",
-    "zh": "n. 創造者;創作者",
+    "zh": "n. 創造者；創作者",
     "unit": 3,
     "example": "The popular short video creator you were watching?",
     "exampleZh": "你剛才在看的那位熱門短影片創作者？"
@@ -23196,7 +23196,7 @@ const externalVocabularyDB = [
     "id": 2578,
     "en": "creature",
     "kk": "[ˋkritʃɚ]",
-    "zh": "n. 生物;動物",
+    "zh": "n. 生物；動物",
     "unit": 3,
     "example": "The panda is a shy creature.",
     "exampleZh": "熊貓是一種膽小的動物。"
@@ -23259,7 +23259,7 @@ const externalVocabularyDB = [
     "id": 2585,
     "en": "cupboard",
     "kk": "[ˋkʌbɚd]",
-    "zh": "n. 食櫥;碗櫃",
+    "zh": "n. 食櫥；碗櫃",
     "unit": 3,
     "example": "The cupboard is easy to assemble.",
     "exampleZh": "這個櫥櫃容易組裝。"
@@ -23286,7 +23286,7 @@ const externalVocabularyDB = [
     "id": 2588,
     "en": "dairy",
     "kk": "[ˋdɛri]",
-    "zh": "n. 牛奶店;牛奶及乳品業",
+    "zh": "n. 牛奶店；牛奶及乳品業",
     "unit": 3,
     "example": "He kept a few dairy cows.",
     "exampleZh": "他養了幾頭奶牛。"
@@ -23313,7 +23313,7 @@ const externalVocabularyDB = [
     "id": 2591,
     "en": "dash",
     "kk": "[dæʃ]",
-    "zh": "v. 急衝,奔跑；n. 破折號",
+    "zh": "v. 急衝、奔跑；n. 破折號",
     "unit": 3,
     "example": "He cut quite a dash in his uniform.",
     "exampleZh": "他穿著這身制服顯得特帥。"
@@ -23322,7 +23322,7 @@ const externalVocabularyDB = [
     "id": 2592,
     "en": "dealer",
     "kk": "[ˋdilɚ]",
-    "zh": "n. 業者;商人;發牌者",
+    "zh": "n. 業者；商人；發牌者",
     "unit": 3,
     "example": "He is a successful car dealer.",
     "exampleZh": "他是一個成功的汽車經銷商。"
@@ -23331,7 +23331,7 @@ const externalVocabularyDB = [
     "id": 2593,
     "en": "decade",
     "kk": "[dɛˋked]",
-    "zh": "n. 十;十年",
+    "zh": "n. 十；十年",
     "unit": 3,
     "example": "Women have become more assertive in the past decade.",
     "exampleZh": "婦女在過去十年已變得更堅定自信。"
@@ -23340,7 +23340,7 @@ const externalVocabularyDB = [
     "id": 2594,
     "en": "deck",
     "kk": "[dɛk]",
-    "zh": "n. (船的) 艙面,甲板;(紙牌的)一副",
+    "zh": "n. (船的) 艙面、甲板；(紙牌的)一副",
     "unit": 3,
     "example": "My cabin is on deck C.",
     "exampleZh": "我的艙位在C層甲板。"
@@ -23349,7 +23349,7 @@ const externalVocabularyDB = [
     "id": 2595,
     "en": "deed",
     "kk": "[did]",
-    "zh": "n. 契據;證書",
+    "zh": "n. 契據；證書",
     "unit": 3,
     "example": "He is all talk and no deed.",
     "exampleZh": "他光說空話，沒有行動。"
@@ -23358,7 +23358,7 @@ const externalVocabularyDB = [
     "id": 2596,
     "en": "definition",
     "kk": "[͵dɛfəˋnɪʃən]",
-    "zh": "n. 定義;釋義",
+    "zh": "n. 定義；釋義",
     "unit": 3,
     "example": "What's your definition of happiness?",
     "exampleZh": "你對幸福的定義是什麼？"
@@ -23367,7 +23367,7 @@ const externalVocabularyDB = [
     "id": 2597,
     "en": "delivery",
     "kk": "[dɪˋlɪvɚi]",
-    "zh": "n. 投遞,傳送",
+    "zh": "n. 投遞、傳送",
     "unit": 3,
     "example": "Delivery is free of charge.",
     "exampleZh": "免費送貨。"
@@ -23378,8 +23378,8 @@ const externalVocabularyDB = [
     "kk": "[dɪˋmɑkrəsi]",
     "zh": "n. 民主",
     "unit": 3,
-    "example": "Can you use the word democracy in a sentence?",
-    "exampleZh": "你能在句子中使用「民主」這個詞嗎？"
+    "example": "Freedom of the press remains an essential cornerstone of modern democracy.",
+    "exampleZh": "新聞自由依然是現代民主的重要基石。"
   },
   {
     "id": 2599,
@@ -23394,7 +23394,7 @@ const externalVocabularyDB = [
     "id": 2600,
     "en": "description",
     "kk": "[dɪˋskrɪpʃən]",
-    "zh": "n. 敘述;形容",
+    "zh": "n. 敘述；形容",
     "unit": 3,
     "example": "The description was pretty vague.",
     "exampleZh": "這項描述是相當含糊的。"
@@ -23403,7 +23403,7 @@ const externalVocabularyDB = [
     "id": 2601,
     "en": "designer",
     "kk": "[dɪˋzaɪnɚ]",
-    "zh": "n. 設計者;構思者;時裝設計師",
+    "zh": "n. 設計者；構思者；時裝設計師",
     "unit": 3,
     "example": "Carolyne is a fashion designer.",
     "exampleZh": "卡羅琳是位時裝設計師。"
@@ -23421,7 +23421,7 @@ const externalVocabularyDB = [
     "id": 2603,
     "en": "devil",
     "kk": "[ˋdɛvəl]",
-    "zh": "n. 魔鬼,惡魔",
+    "zh": "n. 魔鬼、惡魔",
     "unit": 3,
     "example": "He's a crafty old devil.",
     "exampleZh": "他是個奸詐狡猾的傢伙。"
@@ -23430,7 +23430,7 @@ const externalVocabularyDB = [
     "id": 2604,
     "en": "dialogue",
     "kk": "[ˋdaɪə͵lɔɡ]",
-    "zh": "n. 對話;交談",
+    "zh": "n. 對話；交談",
     "unit": 3,
     "example": "They were substituting violence for dialogue.",
     "exampleZh": "他們那時在以暴力代替對話。"
@@ -23466,7 +23466,7 @@ const externalVocabularyDB = [
     "id": 2608,
     "en": "dirt",
     "kk": "[dɝt]",
-    "zh": "n. 污物;爛泥;灰塵",
+    "zh": "n. 污物；爛泥；灰塵",
     "unit": 3,
     "example": "His clothes were covered in dirt.",
     "exampleZh": "他的衣服沾滿了汙垢。"
@@ -23475,7 +23475,7 @@ const externalVocabularyDB = [
     "id": 2609,
     "en": "disappointment",
     "kk": "[͵dɪsəˋpɔɪntmənt]",
-    "zh": "n. 失望;掃興,沮喪",
+    "zh": "n. 失望；掃興、沮喪",
     "unit": 3,
     "example": "She bore the disappointment nobly.",
     "exampleZh": "她很失望，但表現得很大度。"
@@ -23484,7 +23484,7 @@ const externalVocabularyDB = [
     "id": 2610,
     "en": "disc",
     "kk": "[dɪsk]",
-    "zh": "n. 圓盤;盤狀物;磁盤;鐵餅",
+    "zh": "n. 圓盤；盤狀物；磁盤；鐵餅",
     "unit": 3,
     "example": "The Beatles cut their first disc in 1962.",
     "exampleZh": "披頭士樂隊於1962年灌製了他們的第一張唱片。"
@@ -23502,7 +23502,7 @@ const externalVocabularyDB = [
     "id": 2612,
     "en": "discotheque",
     "kk": "[ˋdɪsko͵tɛk]",
-    "zh": "n. 小舞廳;迪斯科舞廳",
+    "zh": "n. 小舞廳；迪斯科舞廳",
     "unit": 3,
     "example": "Is there a discotheque in this town?",
     "exampleZh": "本鎮有迪斯科舞廳嗎？"
@@ -23529,7 +23529,7 @@ const externalVocabularyDB = [
     "id": 2615,
     "en": "disease",
     "kk": "[dɪˋziz]",
-    "zh": "n. 病,疾病",
+    "zh": "n. 病、疾病",
     "unit": 3,
     "example": "Disease often goes with poverty.",
     "exampleZh": "疾病與貧窮常常相伴而生。"
@@ -23538,7 +23538,7 @@ const externalVocabularyDB = [
     "id": 2616,
     "en": "disk",
     "kk": "[dɪsk]",
-    "zh": "n. 圓盤;(電腦)磁盤",
+    "zh": "n. 圓盤；(電腦)磁盤",
     "unit": 3,
     "example": "My computer can't read the disk you sent.",
     "exampleZh": "我的電腦不能讀你送來的盤。"
@@ -23619,7 +23619,7 @@ const externalVocabularyDB = [
     "id": 2625,
     "en": "drunk",
     "kk": "[drʌŋk]",
-    "zh": "adj. 醉漢,酒鬼；n. 酒宴,鬧飲",
+    "zh": "adj. 醉漢、酒鬼；n. 酒宴、鬧飲",
     "unit": 3,
     "example": "He was arrested for drunk driving.",
     "exampleZh": "他因為醉酒駕車被拘留了。"
@@ -23655,7 +23655,7 @@ const externalVocabularyDB = [
     "id": 2629,
     "en": "earnings",
     "kk": "[ˋɝnɪŋz]",
-    "zh": "n. 收入,工資",
+    "zh": "n. 收入、工資",
     "unit": 3,
     "example": "He trebled his earnings in two years.",
     "exampleZh": "他在兩年間收入增加了兩倍。"
@@ -23682,7 +23682,7 @@ const externalVocabularyDB = [
     "id": 2632,
     "en": "editor",
     "kk": "[ˋɛdətɚ]",
-    "zh": "n. 編者;校訂者",
+    "zh": "n. 編者；校訂者",
     "unit": 3,
     "example": "We're losing a first-rate editor in Jen.",
     "exampleZh": "我們即將失去珍這位一流的編輯。"
@@ -23745,7 +23745,7 @@ const externalVocabularyDB = [
     "id": 2639,
     "en": "employer",
     "kk": "[ɛmˋplɔɪɚ]",
-    "zh": "n. 雇主,雇用者",
+    "zh": "n. 雇主、雇用者",
     "unit": 3,
     "example": "He had been sent to Rome by his employer.",
     "exampleZh": "他被僱主派到羅馬去了。"
@@ -23763,7 +23763,7 @@ const externalVocabularyDB = [
     "id": 2641,
     "en": "engagement",
     "kk": "[ɛnˋɡedʒmənt]",
-    "zh": "n. 訂婚;諾言;雇用;交戰",
+    "zh": "n. 訂婚；諾言；雇用；交戰",
     "unit": 3,
     "example": "They've broken off their engagement.",
     "exampleZh": "他們突然解除了婚約。"
@@ -23790,7 +23790,7 @@ const externalVocabularyDB = [
     "id": 2644,
     "en": "entry",
     "kk": "[ˋɛntri]",
-    "zh": "n. 進入,入場;入口",
+    "zh": "n. 進入、入場；入口",
     "unit": 3,
     "example": "Entry to the museum is free.",
     "exampleZh": "這座博物館免費參觀。"
@@ -23826,7 +23826,7 @@ const externalVocabularyDB = [
     "id": 2648,
     "en": "excellence",
     "kk": "[ˋɛksələns]",
-    "zh": "n. 優秀;傑出;卓越",
+    "zh": "n. 優秀；傑出；卓越",
     "unit": 3,
     "example": "Bresson is par excellence the Catholic filmmaker.",
     "exampleZh": "佈雷森是個非常出色的天主教電影製作人。"
@@ -23844,7 +23844,7 @@ const externalVocabularyDB = [
     "id": 2650,
     "en": "exhibition",
     "kk": "[͵ɛksəˋbɪʃən]",
-    "zh": "n. 展覽;展覽會",
+    "zh": "n. 展覽；展覽會",
     "unit": 3,
     "example": "The exhibition is held annually.",
     "exampleZh": "這個展覽每年舉行一次。"
@@ -23853,7 +23853,7 @@ const externalVocabularyDB = [
     "id": 2651,
     "en": "existence",
     "kk": "[ɛɡˋzɪstəns]",
-    "zh": "n. 存在,實在",
+    "zh": "n. 存在、實在",
     "unit": 3,
     "example": "I lead a pretty mundane existence.",
     "exampleZh": "我過著相當平淡的生活。"
@@ -23871,7 +23871,7 @@ const externalVocabularyDB = [
     "id": 2653,
     "en": "expectation",
     "kk": "[͵ɛkspɛkˋteʃən]",
-    "zh": "n. 期待;預期",
+    "zh": "n. 期待；預期",
     "unit": 3,
     "example": "There was an air of expectation and great curiosity.",
     "exampleZh": "有著一種期待和好奇的感覺。"
@@ -23880,7 +23880,7 @@ const externalVocabularyDB = [
     "id": 2654,
     "en": "expense",
     "kk": "[ɪkˋspɛns]",
-    "zh": "n. 費用;支出;消耗",
+    "zh": "n. 費用；支出；消耗",
     "unit": 3,
     "example": "He can comfortably afford the extra expense.",
     "exampleZh": "他支付這些額外的費用毫無問題。"
@@ -23988,7 +23988,7 @@ const externalVocabularyDB = [
     "id": 2666,
     "en": "fanatic",
     "kk": "[fəˋnætɪk]",
-    "zh": "n. 狂熱者;盲信者",
+    "zh": "n. 狂熱者；盲信者",
     "unit": 3,
     "example": "She's a non-smoking, non-drinking fitness fanatic.",
     "exampleZh": "她不吸菸，不喝酒，熱衷健身。"
@@ -24006,7 +24006,7 @@ const externalVocabularyDB = [
     "id": 2668,
     "en": "fare",
     "kk": "[fɛr]",
-    "zh": "n. (交通工具的)票價,車(船)費",
+    "zh": "n. (交通工具的)票價、車(船)費",
     "unit": 3,
     "example": "Children travel (at) half fare.",
     "exampleZh": "兒童交通費減半。"
@@ -24060,7 +24060,7 @@ const externalVocabularyDB = [
     "id": 2674,
     "en": "feature",
     "kk": "[ˋfitʃɚ]",
-    "zh": "n. 特徵；v. 以...為特色",
+    "zh": "n. 特徵；v. 以……為特色",
     "unit": 3,
     "example": "His eyes are his most notable feature.",
     "exampleZh": "他的雙眼是他最明顯的特徵。"
@@ -24123,7 +24123,7 @@ const externalVocabularyDB = [
     "id": 2681,
     "en": "flesh",
     "kk": "[flɛʃ]",
-    "zh": "n. 肉,肌肉",
+    "zh": "n. 肉、肌肉",
     "unit": 3,
     "example": "I'm only flesh and blood, like anyone else.",
     "exampleZh": "我只是血肉之軀，跟其他人一樣。"
@@ -24141,7 +24141,7 @@ const externalVocabularyDB = [
     "id": 2683,
     "en": "flock",
     "kk": "[flɑk]",
-    "zh": "v. (飛禽,牲畜等的)群；n. 人群,群眾",
+    "zh": "v. (飛禽、牲畜等的)群；n. 人群、群眾",
     "unit": 3,
     "example": "They kept a small flock of sheep.",
     "exampleZh": "他們養了一小群綿羊。"
@@ -24168,7 +24168,7 @@ const externalVocabularyDB = [
     "id": 2686,
     "en": "follower",
     "kk": "[ˋfɑloɚ]",
-    "zh": "n. 追隨者;信徒",
+    "zh": "n. 追隨者；信徒",
     "unit": 3,
     "example": "She is a leader, not a follower.",
     "exampleZh": "她是領導者，不是追隨者。"
@@ -24177,7 +24177,7 @@ const externalVocabularyDB = [
     "id": 2687,
     "en": "forehead",
     "kk": "[ˋfɔrhɛd]",
-    "zh": "n. 額,前額",
+    "zh": "n. 額、前額",
     "unit": 3,
     "example": "A frown creased her forehead.",
     "exampleZh": "她一皺眉，額頭顯出了皺紋。"
@@ -24195,7 +24195,7 @@ const externalVocabularyDB = [
     "id": 2689,
     "en": "fountain",
     "kk": "[ˋfaʊntən]",
-    "zh": "n. 泉水;噴泉;水源",
+    "zh": "n. 泉水；噴泉；水源",
     "unit": 3,
     "example": "They came to a fountain.",
     "exampleZh": "他們來到一座噴泉處。"
@@ -24240,7 +24240,7 @@ const externalVocabularyDB = [
     "id": 2694,
     "en": "fur",
     "kk": "[fɝ]",
-    "zh": "n. 軟毛;毛皮製品",
+    "zh": "n. 軟毛；毛皮製品",
     "unit": 3,
     "example": "Wearing fur has become unfashionable.",
     "exampleZh": "穿裘皮服裝已經變得不流行了。"
@@ -24276,7 +24276,7 @@ const externalVocabularyDB = [
     "id": 2698,
     "en": "gang",
     "kk": "[ɡæŋ]",
-    "zh": "v. 一幫,一群；n. 惡少幫",
+    "zh": "v. 一幫、一群；n. 惡少幫",
     "unit": 3,
     "example": "Police suspect a local gang.",
     "exampleZh": "警方懷疑當地的一個不良幫派。"
@@ -24285,7 +24285,7 @@ const externalVocabularyDB = [
     "id": 2699,
     "en": "gap",
     "kk": "[ɡæp]",
-    "zh": "n. 裂口,缺口",
+    "zh": "n. 裂口、缺口",
     "unit": 3,
     "example": "The product has filled a gap in the market.",
     "exampleZh": "這個產品填補了市場的空白。"
@@ -24294,7 +24294,7 @@ const externalVocabularyDB = [
     "id": 2700,
     "en": "garlic",
     "kk": "[ˋɡɑrlɪk]",
-    "zh": "n. 大蒜;蒜頭",
+    "zh": "n. 大蒜；蒜頭",
     "unit": 3,
     "example": "I'm never sparing with the garlic.",
     "exampleZh": "我從不吝嗇使用大蒜。"
@@ -24357,7 +24357,7 @@ const externalVocabularyDB = [
     "id": 2707,
     "en": "gossip",
     "kk": "[ˋɡɑsəp]",
-    "zh": "v. 閒話,聊天；n. 流言蜚語",
+    "zh": "v. 閒話、聊天；n. 流言蜚語",
     "unit": 3,
     "example": "He loved gossip and scandal.",
     "exampleZh": "他喜歡閒話和流言蜚語。"
@@ -24375,7 +24375,7 @@ const externalVocabularyDB = [
     "id": 2709,
     "en": "gown",
     "kk": "[ɡaʊn]",
-    "zh": "n. (婦女穿的)長禮服;晨衣,睡袍",
+    "zh": "n. (婦女穿的)長禮服；晨衣、睡袍",
     "unit": 3,
     "example": "Her gown was very French and very chic.",
     "exampleZh": "她的禮服是地道的法國風格，非常時髦有品位。"
@@ -24395,14 +24395,14 @@ const externalVocabularyDB = [
     "kk": "[ˋɡrædʒəwət]",
     "zh": "v. 獲得學位、大學畢業；n. 大學畢業生、學士學位獲得者",
     "unit": 3,
-    "example": "Can you use the word graduate in a sentence?",
-    "exampleZh": "你能在句子中使用「/n. 大學畢業生」這個詞嗎？"
+    "example": "She worked diligently so that she could graduate at the top of her university class.",
+    "exampleZh": "她勤奮學習，以便能以全班第一名的成績從大學畢業。"
   },
   {
     "id": 2712,
     "en": "grain",
     "kk": "[ɡren]",
-    "zh": "n. 穀物;(砂,鹽等的)粒,細粒",
+    "zh": "n. 穀物；(砂、鹽等的)粒、細粒",
     "unit": 3,
     "example": "Surplus grain is being sold for export.",
     "exampleZh": "過剩的穀物正銷往國外。"
@@ -24420,7 +24420,7 @@ const externalVocabularyDB = [
     "id": 2714,
     "en": "grasp",
     "kk": "[ɡræsp]",
-    "zh": "v. 抓,緊握；n. 抱",
+    "zh": "v. 抓、緊握；n. 抱",
     "unit": 3,
     "example": "Success was within her grasp.",
     "exampleZh": "她有把握獲得成功。"
@@ -24438,7 +24438,7 @@ const externalVocabularyDB = [
     "id": 2716,
     "en": "greenhouse",
     "kk": "[ˋɡrin͵haʊs]",
-    "zh": "n. 溫室,暖房",
+    "zh": "n. 溫室、暖房",
     "unit": 3,
     "example": "It sets targets for reduction of greenhouse-gas emissions.",
     "exampleZh": "它為減少溫室氣體排放設立了目標。"
@@ -24456,7 +24456,7 @@ const externalVocabularyDB = [
     "id": 2718,
     "en": "grocery",
     "kk": "[ˋɡrosɚi]",
-    "zh": "n. 食品雜貨; 食品雜貨店",
+    "zh": "n. 食品雜貨； 食品雜貨店",
     "unit": 3,
     "example": "They run a small grocery store.",
     "exampleZh": "他們經營一家小食品雜貨店。"
@@ -24465,7 +24465,7 @@ const externalVocabularyDB = [
     "id": 2719,
     "en": "guardian",
     "kk": "[ˋɡɑrdiən]",
-    "zh": "n. 保護者,守護者;管理員",
+    "zh": "n. 保護者、守護者；管理員",
     "unit": 3,
     "example": "Destiny's legal guardian was her grandmother.",
     "exampleZh": "德斯蒂妮的法定監護人是她的祖母。"
@@ -24474,7 +24474,7 @@ const externalVocabularyDB = [
     "id": 2720,
     "en": "guidance",
     "kk": "[ˋɡaɪdəns]",
-    "zh": "n. 指導;引導;領導",
+    "zh": "n. 指導；引導；領導",
     "unit": 3,
     "example": "Adam sought guidance from the Almighty.",
     "exampleZh": "亞當向上帝尋求指導。"
@@ -24492,7 +24492,7 @@ const externalVocabularyDB = [
     "id": 2722,
     "en": "gym",
     "kk": "[dʒɪm]",
-    "zh": "n. 體育館;體育;體操",
+    "zh": "n. 體育館；體育；體操",
     "unit": 3,
     "example": "The commons is next to the gym.",
     "exampleZh": "學生公共食堂在體育館的旁邊。"
@@ -24501,7 +24501,7 @@ const externalVocabularyDB = [
     "id": 2723,
     "en": "gymnasium",
     "kk": "[dʒɪmˋneziəm]",
-    "zh": "n. 體育館;健身房",
+    "zh": "n. 體育館；健身房",
     "unit": 3,
     "example": "I have found a new gymnasium.",
     "exampleZh": "我找到了一個新的健身房。"
@@ -24519,7 +24519,7 @@ const externalVocabularyDB = [
     "id": 2725,
     "en": "hallway",
     "kk": "[ˋhɔl͵we]",
-    "zh": "n. 玄關;門廳,走",
+    "zh": "n. 玄關；門廳、走",
     "unit": 3,
     "example": "The door opened onto a well-lit hallway.",
     "exampleZh": "這扇門對著一個照明很好的門廳。"
@@ -24528,7 +24528,7 @@ const externalVocabularyDB = [
     "id": 2726,
     "en": "handful",
     "kk": "[ˋhænd͵fʊl]",
-    "zh": "n. 少數,少量",
+    "zh": "n. 少數、少量",
     "unit": 3,
     "example": "Only a handful of people came.",
     "exampleZh": "只有少數幾個人來了。"
@@ -24546,7 +24546,7 @@ const externalVocabularyDB = [
     "id": 2728,
     "en": "harm",
     "kk": "[hɑrm]",
-    "zh": "v. 損傷,傷害；n. 危害",
+    "zh": "v. 損傷、傷害；n. 危害",
     "unit": 3,
     "example": "He would never harm anyone.",
     "exampleZh": "他永遠不會傷害任何人。"
@@ -24573,7 +24573,7 @@ const externalVocabularyDB = [
     "id": 2731,
     "en": "hawk",
     "kk": "[hɔk]",
-    "zh": "n. 鷹,隼",
+    "zh": "n. 鷹、隼",
     "unit": 3,
     "example": "A hawk hovered over the hill.",
     "exampleZh": "一隻鷹在小山的上空翱翔。"
@@ -24600,7 +24600,7 @@ const externalVocabularyDB = [
     "id": 2734,
     "en": "headquarters",
     "kk": "[ˋhɛd͵kwɔrtɚz]",
-    "zh": "n. 總部,總公司,總局",
+    "zh": "n. 總部、總公司,總局",
     "unit": 3,
     "example": "The warning was radioed to headquarters.",
     "exampleZh": "透過無線電向總部發出了警報。"
@@ -24618,7 +24618,7 @@ const externalVocabularyDB = [
     "id": 2736,
     "en": "heaven",
     "kk": "[ˋhɛvən]",
-    "zh": "n. 天國;上帝",
+    "zh": "n. 天國；上帝",
     "unit": 3,
     "example": "Heaven knows what they put in it.",
     "exampleZh": "天知道他們往裡面放了些什麼。"
@@ -24636,7 +24636,7 @@ const externalVocabularyDB = [
     "id": 2738,
     "en": "hell",
     "kk": "[hɛl]",
-    "zh": "n. 地獄,冥府",
+    "zh": "n. 地獄、冥府",
     "unit": 3,
     "example": "Oh hell, I've burned the pan.",
     "exampleZh": "真該死，我把鍋燒煳了。"
@@ -24645,7 +24645,7 @@ const externalVocabularyDB = [
     "id": 2739,
     "en": "helmet",
     "kk": "[ˋhɛlmət]",
-    "zh": "n. 盔;頭盔;鋼盔;帽盔;安全帽",
+    "zh": "n. 盔；頭盔；鋼盔；帽盔；安全帽",
     "unit": 3,
     "example": "He locked his helmet into position with a click.",
     "exampleZh": "他喀噠一聲把頭盔扣好。"
@@ -24681,7 +24681,7 @@ const externalVocabularyDB = [
     "id": 2743,
     "en": "hive",
     "kk": "[haɪv]",
-    "zh": "n. 蜂房;蜂巢;熱鬧的場所",
+    "zh": "n. 蜂房；蜂巢；熱鬧的場所",
     "unit": 3,
     "example": "A dark cloud of bees comes swarming out of the hive.",
     "exampleZh": "黑壓壓的一大群蜜蜂從那座蜂巢湧過來。"
@@ -24699,7 +24699,7 @@ const externalVocabularyDB = [
     "id": 2745,
     "en": "hometown",
     "kk": "[ˋhom͵taʊn]",
-    "zh": "n. 故鄉;家鄉",
+    "zh": "n. 故鄉；家鄉",
     "unit": 3,
     "example": "We asked Jason to write an essay about his hometown.",
     "exampleZh": "我們讓傑森寫一篇關於他家鄉的短文。"
@@ -24726,7 +24726,7 @@ const externalVocabularyDB = [
     "id": 2748,
     "en": "horn",
     "kk": "[hɔrn]",
-    "zh": "n. 角;觸角;喇叭",
+    "zh": "n. 角；觸角；喇叭",
     "unit": 3,
     "example": "He sounded the car horn.",
     "exampleZh": "他按響了汽車喇叭。"
@@ -24735,7 +24735,7 @@ const externalVocabularyDB = [
     "id": 2749,
     "en": "horror",
     "kk": "[ˋhɔrɚ]",
-    "zh": "n. 恐怖,震驚,毛骨悚然",
+    "zh": "n. 恐怖、震驚,毛骨悚然",
     "unit": 3,
     "example": "It's a spoof on horror movies.",
     "exampleZh": "這是對恐怖片的滑稽模仿。"
@@ -24780,7 +24780,7 @@ const externalVocabularyDB = [
     "id": 2754,
     "en": "hut",
     "kk": "[hʌt]",
-    "zh": "n. 小屋;臨時營房",
+    "zh": "n. 小屋；臨時營房",
     "unit": 3,
     "example": "The little prefabricated hut was lifted away by a huge crane.",
     "exampleZh": "那間小小的預製棚屋被一臺巨大的起重機吊走了。"
@@ -24807,7 +24807,7 @@ const externalVocabularyDB = [
     "id": 2757,
     "en": "ignorance",
     "kk": "[ˋɪɡnɚəns]",
-    "zh": "n. 無知,不學無術;愚昧",
+    "zh": "n. 無知、不學無術；愚昧",
     "unit": 3,
     "example": "She was reluctant to confess her ignorance.",
     "exampleZh": "她不願意承認自己無知。"
@@ -24825,7 +24825,7 @@ const externalVocabularyDB = [
     "id": 2759,
     "en": "imagination",
     "kk": "[͵ɪm͵ædʒəˋneʃən]",
-    "zh": "n. 想像力;創造力",
+    "zh": "n. 想像力；創造力",
     "unit": 3,
     "example": "That child has a very active imagination.",
     "exampleZh": "那個小孩想象力十分豐富。"
@@ -24870,7 +24870,7 @@ const externalVocabularyDB = [
     "id": 2764,
     "en": "inn",
     "kk": "[ɪn]",
-    "zh": "n. 小旅館,客棧",
+    "zh": "n. 小旅館、客棧",
     "unit": 3,
     "example": "I always feel at home at Ye Olde Starre Inn.",
     "exampleZh": "在昨日星辰客棧，我總是覺得非常舒適安逸。"
@@ -24879,7 +24879,7 @@ const externalVocabularyDB = [
     "id": 2765,
     "en": "inspector",
     "kk": "[͵ɪnˋspɛktɚ]",
-    "zh": "n. 檢查員;視察員;督察員",
+    "zh": "n. 檢查員；視察員；督察員",
     "unit": 3,
     "example": "The document was duly signed by the inspector.",
     "exampleZh": "這份檔案已由檢查員簽妥。"
@@ -24888,7 +24888,7 @@ const externalVocabularyDB = [
     "id": 2766,
     "en": "instruction",
     "kk": "[͵ɪnˋstrʌkʃən]",
-    "zh": "n. 教學,講授",
+    "zh": "n. 教學、講授",
     "unit": 3,
     "example": "Each candidate is given instruction in safety.",
     "exampleZh": "每位候選人都被給予了安全指導。"
@@ -24897,7 +24897,7 @@ const externalVocabularyDB = [
     "id": 2767,
     "en": "introduction",
     "kk": "[͵ɪntrəˋdʌkʃən]",
-    "zh": "n. 介紹;正式引見",
+    "zh": "n. 介紹；正式引見",
     "unit": 3,
     "example": "It's a useful introduction to an extremely complex subject.",
     "exampleZh": "這是對一門極為複雜的學科的有益入門教程。"
@@ -24933,7 +24933,7 @@ const externalVocabularyDB = [
     "id": 2771,
     "en": "jar",
     "kk": "[dʒɑr]",
-    "zh": "n. 罐,罈",
+    "zh": "n. 罐、罈",
     "unit": 3,
     "example": "This jar will hold a kilo.",
     "exampleZh": "這個罐子能盛一千克。"
@@ -24951,7 +24951,7 @@ const externalVocabularyDB = [
     "id": 2773,
     "en": "jelly",
     "kk": "[ˋdʒɛli]",
-    "zh": "n. 果凍;果醬",
+    "zh": "n. 果凍；果醬",
     "unit": 3,
     "example": "I want some jelly, please.",
     "exampleZh": "我想要些果凍，謝謝。"
@@ -24978,7 +24978,7 @@ const externalVocabularyDB = [
     "id": 2776,
     "en": "jewelry",
     "kk": "[ˋdʒuəlri]",
-    "zh": "n. (總稱)珠寶;首飾",
+    "zh": "n. (總稱)珠寶；首飾",
     "unit": 3,
     "example": "I asked him to have my jewelry valued.",
     "exampleZh": "我請求他為我的珠寶估價。"
@@ -24987,7 +24987,7 @@ const externalVocabularyDB = [
     "id": 2777,
     "en": "journal",
     "kk": "[ˋdʒɝnəl]",
-    "zh": "n. 日報;雜誌;期刊;日誌",
+    "zh": "n. 日報；雜誌；期刊；日誌",
     "unit": 3,
     "example": "Sara confided to her journal.",
     "exampleZh": "薩拉在日記中傾吐心事。"
@@ -25005,7 +25005,7 @@ const externalVocabularyDB = [
     "id": 2779,
     "en": "jungle",
     "kk": "[ˋdʒʌŋɡəl]",
-    "zh": "n. (熱帶)叢林,密林",
+    "zh": "n. (熱帶)叢林、密林",
     "unit": 3,
     "example": "The tiger's home is in the jungle.",
     "exampleZh": "老虎棲息在叢林裡。"
@@ -25023,7 +25023,7 @@ const externalVocabularyDB = [
     "id": 2781,
     "en": "justice",
     "kk": "[ˋdʒʌstəs]",
-    "zh": "n. 正義;公平",
+    "zh": "n. 正義；公平",
     "unit": 3,
     "example": "Justice will prevail over tyranny.",
     "exampleZh": "正義必將戰勝暴虐。"
@@ -25086,7 +25086,7 @@ const externalVocabularyDB = [
     "id": 2788,
     "en": "kit",
     "kk": "[kɪt]",
-    "zh": "n. 成套工具;配套元件",
+    "zh": "n. 成套工具；配套元件",
     "unit": 3,
     "example": "My boyhood hero was Kit Carson.",
     "exampleZh": "我孩提時的偶像是基特·卡森。"
@@ -25104,7 +25104,7 @@ const externalVocabularyDB = [
     "id": 2790,
     "en": "knight",
     "kk": "[naɪt]",
-    "zh": "v. 騎士,武士；n. 護衛者",
+    "zh": "v. 騎士、武士；n. 護衛者",
     "unit": 3,
     "example": "The brave knight fought to defend the kingdom.",
     "exampleZh": "英勇的騎士奮戰保衛王國。"
@@ -25167,7 +25167,7 @@ const externalVocabularyDB = [
     "id": 2797,
     "en": "laughter",
     "kk": "[ˋlæftɚ]",
-    "zh": "n. 笑;笑聲",
+    "zh": "n. 笑；笑聲",
     "unit": 3,
     "example": "The shouts changed to laughter.",
     "exampleZh": "叫喊聲變成了笑聲。"
@@ -25176,7 +25176,7 @@ const externalVocabularyDB = [
     "id": 2798,
     "en": "laundry",
     "kk": "[ˋlɔndri]",
-    "zh": "n. 洗衣店;送洗的衣服",
+    "zh": "n. 洗衣店；送洗的衣服",
     "unit": 3,
     "example": "The hotel has a laundry service.",
     "exampleZh": "旅館提供洗衣服務。"
@@ -25185,7 +25185,7 @@ const externalVocabularyDB = [
     "id": 2799,
     "en": "lawn",
     "kk": "[lɔn]",
-    "zh": "n. 草坪,草地",
+    "zh": "n. 草坪、草地",
     "unit": 3,
     "example": "There were ducks quacking on the lawn.",
     "exampleZh": "有鴨子在草坪上發出嘎嘎的叫著。"
@@ -25194,7 +25194,7 @@ const externalVocabularyDB = [
     "id": 2800,
     "en": "leak",
     "kk": "[lik]",
-    "zh": "v. (水,瓦斯等的)漏出；n. 漏電",
+    "zh": "v. (水、瓦斯等的)漏出；n. 漏電",
     "unit": 3,
     "example": "Water had started to leak into the cellar.",
     "exampleZh": "水已開始滲入地下室。"
@@ -25221,7 +25221,7 @@ const externalVocabularyDB = [
     "id": 2803,
     "en": "leisure",
     "kk": "[ˋlɛʒɚ]",
-    "zh": "n. 閒暇,空暇時間",
+    "zh": "n. 閒暇、空暇時間",
     "unit": 3,
     "example": "Whale-watching has become a growth leisure industry.",
     "exampleZh": "觀鯨業已成為一個快速發展的休閒產業。"
@@ -25230,7 +25230,7 @@ const externalVocabularyDB = [
     "id": 2804,
     "en": "lens",
     "kk": "[lɛnz]",
-    "zh": "n. 透鏡;鏡片",
+    "zh": "n. 透鏡；鏡片",
     "unit": 3,
     "example": "Some adjustment of the lens may be necessary.",
     "exampleZh": "可能需要調整一下鏡頭。"
@@ -25248,7 +25248,7 @@ const externalVocabularyDB = [
     "id": 2806,
     "en": "liberty",
     "kk": "[ˋlɪbɚ͵ti]",
-    "zh": "n. 自由;自由權",
+    "zh": "n. 自由；自由權",
     "unit": 3,
     "example": "He firmly believes liberty is inseparable from social justice.",
     "exampleZh": "他堅信自由與社會正義是不可分開的。"
@@ -25284,7 +25284,7 @@ const externalVocabularyDB = [
     "id": 2810,
     "en": "lifetime",
     "kk": "[ˋlaɪf͵taɪm]",
-    "zh": "n. 一生,終身",
+    "zh": "n. 一生、終身",
     "unit": 3,
     "example": "You've given a lifetime of service to athletics.",
     "exampleZh": "你一生致力於體育事業。"
@@ -25302,7 +25302,7 @@ const externalVocabularyDB = [
     "id": 2812,
     "en": "limb",
     "kk": "[lɪm]",
-    "zh": "n. 肢;臂",
+    "zh": "n. 肢；臂",
     "unit": 3,
     "example": "Cold numbs the limbs.",
     "exampleZh": "冰冷使四肢麻木。"
@@ -25311,7 +25311,7 @@ const externalVocabularyDB = [
     "id": 2813,
     "en": "linen",
     "kk": "[ˋlɪnən]",
-    "zh": "n. 亞麻布製品(如床單,桌巾,內衣等)",
+    "zh": "n. 亞麻布製品(如床單、桌巾,內衣等)",
     "unit": 3,
     "example": "This material is linen.",
     "exampleZh": "這塊材料是亞麻的。"
@@ -25356,7 +25356,7 @@ const externalVocabularyDB = [
     "id": 2818,
     "en": "lobby",
     "kk": "[ˋlɑbi]",
-    "zh": "n. 大廳;門廊",
+    "zh": "n. 大廳；門廊",
     "unit": 3,
     "example": "Farmers will lobby Congress for higher subsidies.",
     "exampleZh": "農民將遊說國會提高對農業的補貼。"
@@ -25383,7 +25383,7 @@ const externalVocabularyDB = [
     "id": 2821,
     "en": "lord",
     "kk": "[lɔrd]",
-    "zh": "n. (大寫)上帝,基督",
+    "zh": "n. (大寫)上帝、基督",
     "unit": 3,
     "example": "The medieval lord lived in a fortified castle.",
     "exampleZh": "中世紀的領主住在堅固的城堡裡。"
@@ -25392,7 +25392,7 @@ const externalVocabularyDB = [
     "id": 2822,
     "en": "loudspeaker",
     "kk": "[ˋlaʊd͵spikɚ]",
-    "zh": "n. 揚聲器,擴聲器,喇叭",
+    "zh": "n. 揚聲器、擴聲器,喇叭",
     "unit": 3,
     "example": "One boy did an imitation of a soldier with a loudspeaker.",
     "exampleZh": "一個男孩拿著揚聲器學著士兵的樣子。"
@@ -25419,7 +25419,7 @@ const externalVocabularyDB = [
     "id": 2825,
     "en": "lung",
     "kk": "[lʌŋ]",
-    "zh": "n. 肺,肺臟",
+    "zh": "n. 肺、肺臟",
     "unit": 3,
     "example": "He has terminal lung cancer.",
     "exampleZh": "他患有晚期肺癌。"
@@ -25428,7 +25428,7 @@ const externalVocabularyDB = [
     "id": 2826,
     "en": "magnet",
     "kk": "[ˋmæɡnət]",
-    "zh": "n. 磁鐵,磁石",
+    "zh": "n. 磁鐵、磁石",
     "unit": 3,
     "example": "I do clinical at a magnet hospital.",
     "exampleZh": "我在磁力醫院做臨床工作。"
@@ -25437,7 +25437,7 @@ const externalVocabularyDB = [
     "id": 2827,
     "en": "maid",
     "kk": "[med]",
-    "zh": "n. 侍女;女僕",
+    "zh": "n. 侍女；女僕",
     "unit": 3,
     "example": "There is a maid to do the housework.",
     "exampleZh": "有個女僕做家務事。"
@@ -25455,7 +25455,7 @@ const externalVocabularyDB = [
     "id": 2829,
     "en": "majority",
     "kk": "[məˋdʒɔrəti]",
-    "zh": "n. 過半數,大多數",
+    "zh": "n. 過半數、大多數",
     "unit": 3,
     "example": "The vast majority live further inland.",
     "exampleZh": "大多數人居住在更遠的內陸。"
@@ -25473,7 +25473,7 @@ const externalVocabularyDB = [
     "id": 2831,
     "en": "management",
     "kk": "[ˋmænədʒmənt]",
-    "zh": "n. 管理;經營;處理",
+    "zh": "n. 管理；經營；處理",
     "unit": 3,
     "example": "The report blames bad management.",
     "exampleZh": "報告歸咎於管理不善。"
@@ -25500,7 +25500,7 @@ const externalVocabularyDB = [
     "id": 2834,
     "en": "manners",
     "kk": "[ˋmænɚz]",
-    "zh": "n. 禮貌;規矩;風俗,習慣",
+    "zh": "n. 禮貌；規矩；風俗、習慣",
     "unit": 3,
     "example": "He dressed well and had impeccable manners.",
     "exampleZh": "他穿著得體，舉止無可挑剔。"
@@ -25545,7 +25545,7 @@ const externalVocabularyDB = [
     "id": 2839,
     "en": "mayor",
     "kk": "[ˋmeɚ]",
-    "zh": "n. 市長,鎮長",
+    "zh": "n. 市長、鎮長",
     "unit": 3,
     "example": "The mayor kicked off the party.",
     "exampleZh": "市長揭開了宴會的序幕。"
@@ -25554,7 +25554,7 @@ const externalVocabularyDB = [
     "id": 2840,
     "en": "meadow",
     "kk": "[ˋmɛd͵o]",
-    "zh": "n. 草地,牧草地",
+    "zh": "n. 草地、牧草地",
     "unit": 3,
     "example": "Ten men went to mow a meadow.",
     "exampleZh": "十個人去割一片草地。"
@@ -25572,7 +25572,7 @@ const externalVocabularyDB = [
     "id": 2842,
     "en": "medal",
     "kk": "[ˋmɛdəl]",
-    "zh": "n. 獎章,紀念章,勳章",
+    "zh": "n. 獎章、紀念章,勳章",
     "unit": 3,
     "example": "She walked away with the gold medal.",
     "exampleZh": "她輕鬆地摘走了金牌。"
@@ -25581,7 +25581,7 @@ const externalVocabularyDB = [
     "id": 2843,
     "en": "media",
     "kk": "[ˋmidiə]",
-    "zh": "n. 媒介物;新聞媒介",
+    "zh": "n. 媒介物；新聞媒介",
     "unit": 3,
     "example": "Her car was mobbed by the media.",
     "exampleZh": "她的汽車被媒體團團圍住。"
@@ -25590,7 +25590,7 @@ const externalVocabularyDB = [
     "id": 2844,
     "en": "medium",
     "kk": "[ˋmidiəm]",
-    "zh": "n. 中間;中庸;媒體;工具;傳播媒介",
+    "zh": "n. 中間；中庸；媒體；工具；傳播媒介",
     "unit": 3,
     "example": "There are three sizes—small, medium and large.",
     "exampleZh": "有三種尺寸—小號、中號和大號。"
@@ -25653,7 +25653,7 @@ const externalVocabularyDB = [
     "id": 2851,
     "en": "might",
     "kk": "[maɪt]",
-    "zh": "n. 力量,威力",
+    "zh": "n. 力量、威力",
     "unit": 3,
     "example": "'I might,' he said enigmatically.",
     "exampleZh": "“我也許會的。”他神秘地說道。"
@@ -25662,7 +25662,7 @@ const externalVocabularyDB = [
     "id": 2852,
     "en": "mike",
     "kk": "[maɪk]",
-    "zh": "n. 擴音器;麥克風",
+    "zh": "n. 擴音器；麥克風",
     "unit": 3,
     "example": "Hello, Peter, it's Mike here.",
     "exampleZh": "喂，彼得，我是邁克。"
@@ -25707,7 +25707,7 @@ const externalVocabularyDB = [
     "id": 2857,
     "en": "minority",
     "kk": "[maɪˋnɔrəti]",
-    "zh": "n. 少數;少數民族;未成年",
+    "zh": "n. 少數；少數民族；未成年",
     "unit": 3,
     "example": "Only a tiny minority hold such extreme views.",
     "exampleZh": "只有極少數人持這樣極端的觀點。"
@@ -25725,7 +25725,7 @@ const externalVocabularyDB = [
     "id": 2859,
     "en": "misery",
     "kk": "[ˋmɪzɚi]",
-    "zh": "n. 痛苦;不幸;悲慘;窮困",
+    "zh": "n. 痛苦；不幸；悲慘；窮困",
     "unit": 3,
     "example": "Their energies were focused on the alleviation of the refugees' misery.",
     "exampleZh": "他們把精力集中在了對難民苦難的減輕上。"
@@ -25734,7 +25734,7 @@ const externalVocabularyDB = [
     "id": 2860,
     "en": "missile",
     "kk": "[ˋmɪsəl]",
-    "zh": "n. 飛彈,導彈",
+    "zh": "n. 飛彈、導彈",
     "unit": 3,
     "example": "The missile homed in on the target.",
     "exampleZh": "導彈正向目標飛去。"
@@ -25743,7 +25743,7 @@ const externalVocabularyDB = [
     "id": 2861,
     "en": "mission",
     "kk": "[ˋmɪʃən]",
-    "zh": "n. 使節團;使命,任務",
+    "zh": "n. 使節團；使命、任務",
     "unit": 3,
     "example": "The mission was a washout.",
     "exampleZh": "這個任務徹底失敗了。"
@@ -25761,7 +25761,7 @@ const externalVocabularyDB = [
     "id": 2863,
     "en": "mixture",
     "kk": "[ˋmɪkstʃɚ]",
-    "zh": "n. 混合,混和",
+    "zh": "n. 混合、混和",
     "unit": 3,
     "example": "Air is a mixture of gases.",
     "exampleZh": "空氣為混合氣體。"
@@ -25788,7 +25788,7 @@ const externalVocabularyDB = [
     "id": 2866,
     "en": "monk",
     "kk": "[mʌŋk]",
-    "zh": "n. 修道士;僧侶",
+    "zh": "n. 修道士；僧侶",
     "unit": 3,
     "example": "He disguised himself as a monk.",
     "exampleZh": "他將自己扮作一個僧人。"
@@ -25797,7 +25797,7 @@ const externalVocabularyDB = [
     "id": 2867,
     "en": "mood",
     "kk": "[mud]",
-    "zh": "n. 心情,心境,情緒",
+    "zh": "n. 心情、心境,情緒",
     "unit": 3,
     "example": "My sunny mood suddenly darkened.",
     "exampleZh": "我快樂的情緒突然黯淡下來。"
@@ -25833,7 +25833,7 @@ const externalVocabularyDB = [
     "id": 2871,
     "en": "motor",
     "kk": "[ˋmotɚ]",
-    "zh": "n. 馬達,發動機",
+    "zh": "n. 馬達、發動機",
     "unit": 3,
     "example": "Both motor and sensory functions are affected.",
     "exampleZh": "運動功能和感覺功能都受到影響。"
@@ -25851,7 +25851,7 @@ const externalVocabularyDB = [
     "id": 2873,
     "en": "muscle",
     "kk": "[ˋmʌsəl]",
-    "zh": "n. 肌;肌肉",
+    "zh": "n. 肌；肌肉",
     "unit": 3,
     "example": "I've torn a calf muscle.",
     "exampleZh": "我拉傷了小腿肌肉。"
@@ -25878,7 +25878,7 @@ const externalVocabularyDB = [
     "id": 2876,
     "en": "mystery",
     "kk": "[ˋmɪstɚi]",
-    "zh": "n. 神祕,祕密",
+    "zh": "n. 神祕、祕密",
     "unit": 3,
     "example": "She's a lady of mystery.",
     "exampleZh": "她是一個神秘的女人。"
@@ -25995,7 +25995,7 @@ const externalVocabularyDB = [
     "id": 2889,
     "en": "nun",
     "kk": "[nʌn]",
-    "zh": "n. 修女;尼姑",
+    "zh": "n. 修女；尼姑",
     "unit": 3,
     "example": "Were you a nun here eleven years ago?",
     "exampleZh": "你是十一年前在這裡的修女嗎？"
@@ -26022,7 +26022,7 @@ const externalVocabularyDB = [
     "id": 2892,
     "en": "operator",
     "kk": "[ˋɑpɚ͵etɚ]",
-    "zh": "n. 接線生;運算符號",
+    "zh": "n. 接線生；運算符號",
     "unit": 3,
     "example": "The operator will put you through.",
     "exampleZh": "接線員將為你接通電話。"
@@ -26049,7 +26049,7 @@ const externalVocabularyDB = [
     "id": 2895,
     "en": "origin",
     "kk": "[ˋɔrədʒən]",
-    "zh": "n. 起源;由來",
+    "zh": "n. 起源；由來",
     "unit": 3,
     "example": "The origin of the custom is obscure.",
     "exampleZh": "該習俗的起源鮮為人知。"
@@ -26085,7 +26085,7 @@ const externalVocabularyDB = [
     "id": 2899,
     "en": "overcoat",
     "kk": "[ˋovɚ͵kot]",
-    "zh": "n. 外套,大衣",
+    "zh": "n. 外套、大衣",
     "unit": 3,
     "example": "He wore an overcoat over his suit.",
     "exampleZh": "他在西服外面再加了一件大衣。"
@@ -26094,7 +26094,7 @@ const externalVocabularyDB = [
     "id": 2900,
     "en": "ownership",
     "kk": "[ˋonɚ͵ʃɪp]",
-    "zh": "n. 物主身分;所有權",
+    "zh": "n. 物主身分；所有權",
     "unit": 3,
     "example": "Ownership of the land is currently being disputed.",
     "exampleZh": "這塊土地的所有權現在還有爭議。"
@@ -26112,7 +26112,7 @@ const externalVocabularyDB = [
     "id": 2902,
     "en": "pail",
     "kk": "[pel]",
-    "zh": "n. 桶;提桶",
+    "zh": "n. 桶；提桶",
     "unit": 3,
     "example": "The water drained out of the hole in the pail.",
     "exampleZh": "水從桶的孔裡流出來。"
@@ -26121,7 +26121,7 @@ const externalVocabularyDB = [
     "id": 2903,
     "en": "pal",
     "kk": "[pæl]",
-    "zh": "n. 伙伴;好友",
+    "zh": "n. 伙伴；好友",
     "unit": 3,
     "example": "Maybe you should find a pen pal.",
     "exampleZh": "也許你應該找個筆友。"
@@ -26130,7 +26130,7 @@ const externalVocabularyDB = [
     "id": 2904,
     "en": "palace",
     "kk": "[ˋpæləs]",
-    "zh": "n. 皇宮,宮殿",
+    "zh": "n. 皇宮、宮殿",
     "unit": 3,
     "example": "We drove through the palace gates.",
     "exampleZh": "我們驅車駛過重重宮門。"
@@ -26139,7 +26139,7 @@ const externalVocabularyDB = [
     "id": 2905,
     "en": "pancake",
     "kk": "[ˋpæn͵kek]",
-    "zh": "n. 薄煎餅,薄烤餅",
+    "zh": "n. 薄煎餅、薄烤餅",
     "unit": 3,
     "example": "It's like an English pancake.",
     "exampleZh": "這很像英國的煎餅。"
@@ -26184,7 +26184,7 @@ const externalVocabularyDB = [
     "id": 2910,
     "en": "passage",
     "kk": "[ˋpæsədʒ]",
-    "zh": "n. 通行;走廊,過道",
+    "zh": "n. 通行；走廊、過道",
     "unit": 3,
     "example": "He read a passage from Emerson.",
     "exampleZh": "他讀了一段愛默生的作品。"
@@ -26193,7 +26193,7 @@ const externalVocabularyDB = [
     "id": 2911,
     "en": "passion",
     "kk": "[ˋpæʃən]",
-    "zh": "n. 熱情,激情;酷愛",
+    "zh": "n. 熱情、激情；酷愛",
     "unit": 3,
     "example": "The English have a passion for gardens.",
     "exampleZh": "英國人酷愛花園。"
@@ -26202,7 +26202,7 @@ const externalVocabularyDB = [
     "id": 2912,
     "en": "passport",
     "kk": "[ˋpæ͵spɔrt]",
-    "zh": "n. 護照;通行證;執照",
+    "zh": "n. 護照；通行證；執照",
     "unit": 3,
     "example": "He's gone off with my passport.",
     "exampleZh": "他拿走了我的護照。"
@@ -26211,7 +26211,7 @@ const externalVocabularyDB = [
     "id": 2913,
     "en": "password",
     "kk": "[ˋpæ͵swɝd]",
-    "zh": "n. 密碼;口令;暗語",
+    "zh": "n. 密碼；口令；暗語",
     "unit": 3,
     "example": "You need a password to log on.",
     "exampleZh": "登入需要密碼。"
@@ -26220,7 +26220,7 @@ const externalVocabularyDB = [
     "id": 2914,
     "en": "patience",
     "kk": "[ˋpeʃəns]",
-    "zh": "n. 耐心;忍耐;耐性;毅力",
+    "zh": "n. 耐心；忍耐；耐性；毅力",
     "unit": 3,
     "example": "'Patience' is my middle name!",
     "exampleZh": "我的最大特點就是有耐心！"
@@ -26229,7 +26229,7 @@ const externalVocabularyDB = [
     "id": 2915,
     "en": "pause",
     "kk": "[pɔz]",
-    "zh": "v. 暫停,間歇；n. 躊躇,猶豫",
+    "zh": "v. 暫停、間歇；n. 躊躇、猶豫",
     "unit": 3,
     "example": "There was a longish pause.",
     "exampleZh": "有一個略長的停頓。"
@@ -26238,7 +26238,7 @@ const externalVocabularyDB = [
     "id": 2916,
     "en": "pavement",
     "kk": "[ˋpevmənt]",
-    "zh": "n. 鋪築過的地面;人行道",
+    "zh": "n. 鋪築過的地面；人行道",
     "unit": 3,
     "example": "He spewed up on the pavement.",
     "exampleZh": "他在人行道上吐了。"
@@ -26292,7 +26292,7 @@ const externalVocabularyDB = [
     "id": 2922,
     "en": "peel",
     "kk": "[pil]",
-    "zh": "v. (水果,蔬菜等的)皮；n. (對蝦等的)殼",
+    "zh": "v. (水果、蔬菜等的)皮；n. (對蝦等的)殼",
     "unit": 3,
     "example": "The paintwork is beginning to peel.",
     "exampleZh": "漆面已經開始剝落了。"
@@ -26310,7 +26310,7 @@ const externalVocabularyDB = [
     "id": 2924,
     "en": "penny",
     "kk": "[ˋpɛni]",
-    "zh": "n. 便士;一便士硬幣",
+    "zh": "n. 便士；一便士硬幣",
     "unit": 3,
     "example": "It didn't cost a penny.",
     "exampleZh": "那東西沒花一分錢。"
@@ -26319,7 +26319,7 @@ const externalVocabularyDB = [
     "id": 2925,
     "en": "performance",
     "kk": "[pɚˋfɔrməns]",
-    "zh": "n. 演出;演奏;表演",
+    "zh": "n. 演出；演奏；表演",
     "unit": 3,
     "example": "Her performance displayed great art.",
     "exampleZh": "她的表演展現了精湛的技藝。"
@@ -26328,7 +26328,7 @@ const externalVocabularyDB = [
     "id": 2926,
     "en": "permission",
     "kk": "[pɚˋmɪʃən]",
-    "zh": "n. 允許,許可,同意",
+    "zh": "n. 允許、許可,同意",
     "unit": 3,
     "example": "She begged permission to leave.",
     "exampleZh": "她請求允許她離開。"
@@ -26346,7 +26346,7 @@ const externalVocabularyDB = [
     "id": 2928,
     "en": "personality",
     "kk": "[͵pɝsəˋnælɪti]",
-    "zh": "n. 人格,品格",
+    "zh": "n. 人格、品格",
     "unit": 3,
     "example": "Their son is a real personality.",
     "exampleZh": "他們的兒子真是有個性。"
@@ -26355,7 +26355,7 @@ const externalVocabularyDB = [
     "id": 2929,
     "en": "pest",
     "kk": "[pɛst]",
-    "zh": "n. ,害蟲;有害的植物",
+    "zh": "n. ,害蟲；有害的植物",
     "unit": 3,
     "example": "There is no pest here.",
     "exampleZh": "這裡沒有害蟲。"
@@ -26373,7 +26373,7 @@ const externalVocabularyDB = [
     "id": 2931,
     "en": "pill",
     "kk": "[pɪl]",
-    "zh": "n. 藥丸,藥片;(女用)口服避孕藥",
+    "zh": "n. 藥丸、藥片；(女用)口服避孕藥",
     "unit": 3,
     "example": "Every pill made my insides turn upside down.",
     "exampleZh": "每片藥都使我的胃翻江倒海。"
@@ -26409,7 +26409,7 @@ const externalVocabularyDB = [
     "id": 2935,
     "en": "pit",
     "kk": "[pɪt]",
-    "zh": "v. 窪坑,凹處；n. 地窖",
+    "zh": "v. 窪坑、凹處；n. 地窖",
     "unit": 3,
     "example": "I could use a pit stop.",
     "exampleZh": "我可以休息一下。"
@@ -26445,7 +26445,7 @@ const externalVocabularyDB = [
     "id": 2939,
     "en": "plug",
     "kk": "[plʌɡ]",
-    "zh": "v. 塞子,栓；n. 堵塞物",
+    "zh": "v. 塞子、栓；n. 堵塞物",
     "unit": 3,
     "example": "The plug broke, exposing live wires.",
     "exampleZh": "插頭壞了，露出帶電的電線。"
@@ -26454,7 +26454,7 @@ const externalVocabularyDB = [
     "id": 2940,
     "en": "plum",
     "kk": "[plʌm]",
-    "zh": "n. 洋李; 梅子",
+    "zh": "n. 洋李； 梅子",
     "unit": 3,
     "example": "Cut the plum tomatoes in half.",
     "exampleZh": "把這個李子形番茄對半切開。"
@@ -26463,7 +26463,7 @@ const externalVocabularyDB = [
     "id": 2941,
     "en": "plumber",
     "kk": "[ˋplʌmɚ]",
-    "zh": "n. 管子工,鉛管工",
+    "zh": "n. 管子工、鉛管工",
     "unit": 3,
     "example": "This past week, a plumber completed work at my residence.",
     "exampleZh": "上週，一位水管工在我的住所完成了工作。"
@@ -26472,7 +26472,7 @@ const externalVocabularyDB = [
     "id": 2942,
     "en": "pole",
     "kk": "[pol]",
-    "zh": "n. 柱;竿",
+    "zh": "n. 柱；竿",
     "unit": 3,
     "example": "The truck crashed into a telegraph pole.",
     "exampleZh": "卡車撞上了電線杆。"
@@ -26499,7 +26499,7 @@ const externalVocabularyDB = [
     "id": 2945,
     "en": "poll",
     "kk": "[pol]",
-    "zh": "v. 民意測驗；n. 投票,選舉",
+    "zh": "v. 民意測驗；n. 投票、選舉",
     "unit": 3,
     "example": "The final result of the poll will be known tomorrow.",
     "exampleZh": "投票結果將於明天公佈。"
@@ -26508,7 +26508,7 @@ const externalVocabularyDB = [
     "id": 2946,
     "en": "pony",
     "kk": "[ˋpo͵ni]",
-    "zh": "n. 矮種馬;小馬",
+    "zh": "n. 矮種馬；小馬",
     "unit": 3,
     "example": "The pony swished its tail.",
     "exampleZh": "小馬刷刷地甩著尾巴。"
@@ -26517,7 +26517,7 @@ const externalVocabularyDB = [
     "id": 2947,
     "en": "porcelain",
     "kk": "[ˋpɔrsələn]",
-    "zh": "n. 瓷;(總稱)瓷器",
+    "zh": "n. 瓷；(總稱)瓷器",
     "unit": 3,
     "example": "There were lilies everywhere in tall white porcelain vases.",
     "exampleZh": "到處都是插在白瓷高花瓶裡的百合花。"
@@ -26535,7 +26535,7 @@ const externalVocabularyDB = [
     "id": 2949,
     "en": "portrait",
     "kk": "[ˋpɔrtrət]",
-    "zh": "n. 肖像,畫像;相片",
+    "zh": "n. 肖像、畫像；相片",
     "unit": 3,
     "example": "We hung her portrait above the fireplace.",
     "exampleZh": "我們把她的畫像掛在壁爐上方。"
@@ -26544,7 +26544,7 @@ const externalVocabularyDB = [
     "id": 2950,
     "en": "postage",
     "kk": "[ˋpostədʒ]",
-    "zh": "n. 郵資,郵費",
+    "zh": "n. 郵資、郵費",
     "unit": 3,
     "example": "For foreign orders postage is extra.",
     "exampleZh": "對於國外訂單，郵資是另計的。"
@@ -26553,7 +26553,7 @@ const externalVocabularyDB = [
     "id": 2951,
     "en": "poster",
     "kk": "[ˋpostɚ]",
-    "zh": "n. 招貼,海報,廣告(畫)",
+    "zh": "n. 招貼、海報,廣告(畫)",
     "unit": 3,
     "example": "The artwork for the poster was done by my sister.",
     "exampleZh": "該海報的圖片是我妹妹製作的。"
@@ -26562,7 +26562,7 @@ const externalVocabularyDB = [
     "id": 2952,
     "en": "postponement",
     "kk": "[poˋstponmənt]",
-    "zh": "n. 延期;延緩",
+    "zh": "n. 延期；延緩",
     "unit": 3,
     "example": "The first is the postponement of, if not retreat from, marriage.",
     "exampleZh": "第一種情況是推遲婚姻，就算不是徹底不結婚的話。"
@@ -26580,7 +26580,7 @@ const externalVocabularyDB = [
     "id": 2954,
     "en": "poverty",
     "kk": "[ˋpɑvɚti]",
-    "zh": "n. 貧窮,貧困",
+    "zh": "n. 貧窮、貧困",
     "unit": 3,
     "example": "Disease often goes with poverty.",
     "exampleZh": "疾病與貧窮常常相伴而生。"
@@ -26598,7 +26598,7 @@ const externalVocabularyDB = [
     "id": 2956,
     "en": "prayer",
     "kk": "[prɛr]",
-    "zh": "n. 祈禱,禱告",
+    "zh": "n. 祈禱、禱告",
     "unit": 3,
     "example": "The Brethren meet regularly for prayer.",
     "exampleZh": "兄弟教會成員定期聚集祈禱。"
@@ -26607,7 +26607,7 @@ const externalVocabularyDB = [
     "id": 2957,
     "en": "preparation",
     "kk": "[͵prɛpɚˋeʃən]",
-    "zh": "n. 準備,預備",
+    "zh": "n. 準備、預備",
     "unit": 3,
     "example": "The key to success is preparation.",
     "exampleZh": "成功的關鍵是準備。"
@@ -26625,7 +26625,7 @@ const externalVocabularyDB = [
     "id": 2959,
     "en": "priest",
     "kk": "[prist]",
-    "zh": "n. 牧師;神父",
+    "zh": "n. 牧師；神父",
     "unit": 3,
     "example": "The priest anointed her with oil.",
     "exampleZh": "神父為她傅油。"
@@ -26652,7 +26652,7 @@ const externalVocabularyDB = [
     "id": 2962,
     "en": "profit",
     "kk": "[ˋprɑfət]",
-    "zh": "v. 利潤,盈利；n. 收益",
+    "zh": "v. 利潤、盈利；n. 收益",
     "unit": 3,
     "example": "Profit from exports rose 7.3%.",
     "exampleZh": "出口利潤增長了7.3%。"
@@ -26670,7 +26670,7 @@ const externalVocabularyDB = [
     "id": 2964,
     "en": "proof",
     "kk": "[pruf]",
-    "zh": "n. 證據;物證;證明",
+    "zh": "n. 證據；物證；證明",
     "unit": 3,
     "example": "We didn't have any definite proof.",
     "exampleZh": "我們沒有任何確鑿的證據。"
@@ -26679,7 +26679,7 @@ const externalVocabularyDB = [
     "id": 2965,
     "en": "property",
     "kk": "[ˋprɑpɚti]",
-    "zh": "n. 財產,資產",
+    "zh": "n. 財產、資產",
     "unit": 3,
     "example": "The property was owned communally.",
     "exampleZh": "這財產屬集體所有。"
@@ -26688,7 +26688,7 @@ const externalVocabularyDB = [
     "id": 2966,
     "en": "proposal",
     "kk": "[prəˋpozəl]",
-    "zh": "n. 提議;計劃;提案",
+    "zh": "n. 提議；計劃；提案",
     "unit": 3,
     "example": "The proposal was emphatically defeated.",
     "exampleZh": "這個建議已被斷然否決。"
@@ -26751,7 +26751,7 @@ const externalVocabularyDB = [
     "id": 2973,
     "en": "rag",
     "kk": "[ræɡ]",
-    "zh": "n. 破布;抹布;破爛衣衫",
+    "zh": "n. 破布；抹布；破爛衣衫",
     "unit": 3,
     "example": "He plugged the hole in the pipe with an old rag.",
     "exampleZh": "他用一塊舊破布把管子上的那個洞塞住了。"
@@ -26769,7 +26769,7 @@ const externalVocabularyDB = [
     "id": 2975,
     "en": "rank",
     "kk": "[ræŋk]",
-    "zh": "v. 等級；n. 地位,身分",
+    "zh": "v. 等級；n. 地位、身分",
     "unit": 3,
     "example": "He rose to the rank of general.",
     "exampleZh": "他升至將級軍官。"
@@ -26787,7 +26787,7 @@ const externalVocabularyDB = [
     "id": 2977,
     "en": "ray",
     "kk": "[re]",
-    "zh": "n. 光線;輻射線",
+    "zh": "n. 光線；輻射線",
     "unit": 3,
     "example": "It will only register on sophisticated X-ray equipment.",
     "exampleZh": "只有在先進的X光裝置上它才會顯示出來。"
@@ -26805,7 +26805,7 @@ const externalVocabularyDB = [
     "id": 2979,
     "en": "reaction",
     "kk": "[riˋækʃən]",
-    "zh": "n. 反應,感應",
+    "zh": "n. 反應、感應",
     "unit": 3,
     "example": "His reaction struck me as odd.",
     "exampleZh": "他的反應令我詫異。"
@@ -26814,7 +26814,7 @@ const externalVocabularyDB = [
     "id": 2980,
     "en": "receipt",
     "kk": "[rɪˋsit]",
-    "zh": "n. 收據,收條",
+    "zh": "n. 收據、收條",
     "unit": 3,
     "example": "Can I have a receipt, please?",
     "exampleZh": "請給我開個收據，好嗎？"
@@ -26823,7 +26823,7 @@ const externalVocabularyDB = [
     "id": 2981,
     "en": "receiver",
     "kk": "[rəˋsivɚ]",
-    "zh": "n. 受領人;收件人,收款人",
+    "zh": "n. 受領人；收件人、收款人",
     "unit": 3,
     "example": "He crashed down the telephone receiver.",
     "exampleZh": "他砰的一聲將電話聽筒摔下來。"
@@ -26832,7 +26832,7 @@ const externalVocabularyDB = [
     "id": 2982,
     "en": "recorder",
     "kk": "[rɪˋkɔrdɚ]",
-    "zh": "n. 錄影機;錄音機",
+    "zh": "n. 錄影機；錄音機",
     "unit": 3,
     "example": "He was wired up to a police tape recorder.",
     "exampleZh": "他被連線到了警方的錄音機上。"
@@ -26850,7 +26850,7 @@ const externalVocabularyDB = [
     "id": 2984,
     "en": "release",
     "kk": "[riˋlis]",
-    "zh": "v. 發行,發表；n. 釋放,解放",
+    "zh": "v. 發行、發表；n. 釋放、解放",
     "unit": 3,
     "example": "He refused to release her arm.",
     "exampleZh": "他不肯放開她的胳膊。"
@@ -26859,7 +26859,7 @@ const externalVocabularyDB = [
     "id": 2985,
     "en": "relief",
     "kk": "[rɪˋlif]",
-    "zh": "n. 緩和,減輕;解除",
+    "zh": "n. 緩和、減輕；解除",
     "unit": 3,
     "example": "Relief supplies were rushed in.",
     "exampleZh": "救援物資很快就運來了。"
@@ -26868,7 +26868,7 @@ const externalVocabularyDB = [
     "id": 2986,
     "en": "religion",
     "kk": "[rɪˋlɪdʒən]",
-    "zh": "n. 宗教;宗教信仰",
+    "zh": "n. 宗教；宗教信仰",
     "unit": 3,
     "example": "Do you still practise your religion?",
     "exampleZh": "你還奉行你的宗教信仰嗎？"
@@ -26895,7 +26895,7 @@ const externalVocabularyDB = [
     "id": 2989,
     "en": "replacement",
     "kk": "[rɪpˋlesmənt]",
-    "zh": "n. 取代;接替",
+    "zh": "n. 取代；接替",
     "unit": 3,
     "example": "We need to find a replacement for Sue.",
     "exampleZh": "我們需要找一個替代休的人。"
@@ -26913,7 +26913,7 @@ const externalVocabularyDB = [
     "id": 2991,
     "en": "republic",
     "kk": "[riˋpʌblək]",
-    "zh": "n. 共和國;共和政體",
+    "zh": "n. 共和國；共和政體",
     "unit": 3,
     "example": "In 1918, Austria became a republic.",
     "exampleZh": "1918年奧地利成為共和國。"
@@ -26931,7 +26931,7 @@ const externalVocabularyDB = [
     "id": 2993,
     "en": "reserve",
     "kk": "[rɪˋzɝv]",
-    "zh": "v. 儲備(物);儲備金;保留(物);儲藏量",
+    "zh": "v. 儲備(物)；儲備金；保留(物)；儲藏量",
     "unit": 3,
     "example": "I'll reserve a table for five.",
     "exampleZh": "我要預訂一個5人的餐位。"
@@ -26967,7 +26967,7 @@ const externalVocabularyDB = [
     "id": 2997,
     "en": "ribbon",
     "kk": "[ˋrɪbən]",
-    "zh": "n. 緞帶;絲帶",
+    "zh": "n. 緞帶；絲帶",
     "unit": 3,
     "example": "The road was a ribbon of moonlight.",
     "exampleZh": "這條路在月光下如同一條緞帶。"
@@ -26976,7 +26976,7 @@ const externalVocabularyDB = [
     "id": 2998,
     "en": "riddle",
     "kk": "[ˋrɪdəl]",
-    "zh": "n. 謎,謎語",
+    "zh": "n. 謎、謎語",
     "unit": 3,
     "example": "Can you answer this riddle?",
     "exampleZh": "你能猜出這個謎語嗎？"
@@ -27012,7 +27012,7 @@ const externalVocabularyDB = [
     "id": 3002,
     "en": "robber",
     "kk": "[ˋrɑbɚ]",
-    "zh": "n. 搶劫者,強盜",
+    "zh": "n. 搶劫者、強盜",
     "unit": 4,
     "example": "This was the first time he had confronted an armed robber.",
     "exampleZh": "這是他第一次面對一個武裝劫匪。"
@@ -27021,7 +27021,7 @@ const externalVocabularyDB = [
     "id": 3003,
     "en": "robbery",
     "kk": "[ˋrɑbɚi]",
-    "zh": "n. 搶劫;盜取;搶劫案",
+    "zh": "n. 搶劫；盜取；搶劫案",
     "unit": 4,
     "example": "Morris had pleaded guilty to robbery.",
     "exampleZh": "莫里斯已經承認犯有搶劫罪。"
@@ -27030,7 +27030,7 @@ const externalVocabularyDB = [
     "id": 3004,
     "en": "robe",
     "kk": "[rob]",
-    "zh": "v. 長袍,浴衣,睡袍；n. 學士服",
+    "zh": "v. 長袍、浴衣,睡袍；n. 學士服",
     "unit": 4,
     "example": "Kyle put on a robe and went down to the kitchen.",
     "exampleZh": "凱爾穿上睡袍，下樓去了廚房。"
@@ -27057,7 +27057,7 @@ const externalVocabularyDB = [
     "id": 3007,
     "en": "rot",
     "kk": "[rɑt]",
-    "zh": "v. 腐爛,腐壞；n. 腐敗,墮落",
+    "zh": "v. 腐爛、腐壞；n. 腐敗、墮落",
     "unit": 4,
     "example": "The house was riddled with dry rot.",
     "exampleZh": "屋子因木材幹腐而變得千瘡百孔。"
@@ -27084,7 +27084,7 @@ const externalVocabularyDB = [
     "id": 3010,
     "en": "rug",
     "kk": "[rʌɡ]",
-    "zh": "n. 小地毯;毛皮地毯",
+    "zh": "n. 小地毯；毛皮地毯",
     "unit": 4,
     "example": "The corners of the rug were curling up.",
     "exampleZh": "地毯的各角捲起來了。"
@@ -27111,7 +27111,7 @@ const externalVocabularyDB = [
     "id": 3013,
     "en": "sack",
     "kk": "[sæk]",
-    "zh": "n. 袋;粗布袋",
+    "zh": "n. 袋；粗布袋",
     "unit": 4,
     "example": "Four hundred workers face the sack.",
     "exampleZh": "四百名工人面臨解僱的危險。"
@@ -27120,7 +27120,7 @@ const externalVocabularyDB = [
     "id": 3014,
     "en": "sake",
     "kk": "[sek]",
-    "zh": "n. 理由;緣故;利益",
+    "zh": "n. 理由；緣故；利益",
     "unit": 4,
     "example": "'For heavens' sake!' he burst out.",
     "exampleZh": "“天哪！”他大叫一聲。"
@@ -27138,7 +27138,7 @@ const externalVocabularyDB = [
     "id": 3016,
     "en": "sausage",
     "kk": "[ˋsɔsədʒ]",
-    "zh": "n. 香腸,臘腸",
+    "zh": "n. 香腸、臘腸",
     "unit": 4,
     "example": "That sausage doesn't smell right.",
     "exampleZh": "這香腸聞起來不對勁。"
@@ -27147,7 +27147,7 @@ const externalVocabularyDB = [
     "id": 3017,
     "en": "saving",
     "kk": "[ˋsevɪŋ]",
-    "zh": "n. 挽救;節儉,節約;儲金",
+    "zh": "n. 挽救；節儉、節約；儲金",
     "unit": 4,
     "example": "I'm not very good at saving.",
     "exampleZh": "我不大攢得住錢。"
@@ -27165,7 +27165,7 @@ const externalVocabularyDB = [
     "id": 3019,
     "en": "scarecrow",
     "kk": "[ˋskær͵kro]",
-    "zh": "n. 稻草人;威嚇物",
+    "zh": "n. 稻草人；威嚇物",
     "unit": 4,
     "example": "Michael Jackson sported the Scarecrow outfit in The Wiz.",
     "exampleZh": "邁克爾·傑克遜在《新綠野仙蹤》中穿著稻草人服裝。"
@@ -27264,7 +27264,7 @@ const externalVocabularyDB = [
     "id": 3030,
     "en": "seal",
     "kk": "[sil]",
-    "zh": "v. 圖章,印信；n. 封(印)",
+    "zh": "v. 圖章、印信；n. 封(印)",
     "unit": 4,
     "example": "The letter bore the president's seal.",
     "exampleZh": "信上蓋有總統的印章。"
@@ -27273,7 +27273,7 @@ const externalVocabularyDB = [
     "id": 3031,
     "en": "security",
     "kk": "[sɪˋkjʊrəti]",
-    "zh": "n. 安全;保安;保障;證券,債券證券,債券",
+    "zh": "n. 安全；保安；保障；證券、債券證券,債券",
     "unit": 4,
     "example": "He was upgraded to security guard.",
     "exampleZh": "他被提升為保安。"
@@ -27282,7 +27282,7 @@ const externalVocabularyDB = [
     "id": 3032,
     "en": "separation",
     "kk": "[͵sɛpɚˋeʃən]",
-    "zh": "n. 分開;分離",
+    "zh": "n. 分開；分離",
     "unit": 4,
     "example": "They agreed to a trial separation.",
     "exampleZh": "他們同意嘗試一次分居。"
@@ -27291,7 +27291,7 @@ const externalVocabularyDB = [
     "id": 3033,
     "en": "sex",
     "kk": "[sɛks]",
-    "zh": "n. 性別;色情;性交;性慾;性感",
+    "zh": "n. 性別；色情；性交；性慾；性感",
     "unit": 4,
     "example": "He was very open in his attitudes about sex.",
     "exampleZh": "他對性的態度很開放。"
@@ -27336,7 +27336,7 @@ const externalVocabularyDB = [
     "id": 3038,
     "en": "shave",
     "kk": "[ʃev]",
-    "zh": "v. 剃刀,刮鬍刀；n. 修面",
+    "zh": "v. 剃刀、刮鬍刀；n. 修面",
     "unit": 4,
     "example": "He never seemed to need a shave.",
     "exampleZh": "他似乎從不需要刮臉。"
@@ -27381,7 +27381,7 @@ const externalVocabularyDB = [
     "id": 3043,
     "en": "similarity",
     "kk": "[͵sɪməˋlɛrəti]",
-    "zh": "n. 類似;相似",
+    "zh": "n. 類似；相似",
     "unit": 4,
     "example": "There was a very basic similarity in our philosophy.",
     "exampleZh": "我們的人生哲學在根本上很相似。"
@@ -27462,7 +27462,7 @@ const externalVocabularyDB = [
     "id": 3052,
     "en": "sleeve",
     "kk": "[sliv]",
-    "zh": "n. 袖子;袖套",
+    "zh": "n. 袖子；袖套",
     "unit": 4,
     "example": "The dog pawed at my sleeve.",
     "exampleZh": "狗一直撓我的衣袖。"
@@ -27480,7 +27480,7 @@ const externalVocabularyDB = [
     "id": 3054,
     "en": "slope",
     "kk": "[slop]",
-    "zh": "n. 傾斜;坡度",
+    "zh": "n. 傾斜；坡度",
     "unit": 4,
     "example": "After a mile, the slope steepened.",
     "exampleZh": "過了一英里後，山坡變陡了。"
@@ -27516,7 +27516,7 @@ const externalVocabularyDB = [
     "id": 3058,
     "en": "spade",
     "kk": "[sped]",
-    "zh": "n. 鏟;鍬",
+    "zh": "n. 鏟；鍬",
     "unit": 4,
     "example": "The spade jarred on something metal.",
     "exampleZh": "鐵鍬撞在什麼金屬物件上發出刺耳的聲音。"
@@ -27534,7 +27534,7 @@ const externalVocabularyDB = [
     "id": 3060,
     "en": "spice",
     "kk": "[spaɪs]",
-    "zh": "v. 香料,調味品；n. 少許,一點",
+    "zh": "v. 香料、調味品；n. 少許、一點",
     "unit": 4,
     "example": "The Spice Islands were within the Spanish domains.",
     "exampleZh": "香料群島曾是西班牙的領地。"
@@ -27570,7 +27570,7 @@ const externalVocabularyDB = [
     "id": 3064,
     "en": "spite",
     "kk": "[spaɪt]",
-    "zh": "n. 惡意,心術不良",
+    "zh": "n. 惡意、心術不良",
     "unit": 4,
     "example": "In spite of great peril, I have survived.",
     "exampleZh": "儘管危險巨大，我還是活了下來。"
@@ -27633,7 +27633,7 @@ const externalVocabularyDB = [
     "id": 3071,
     "en": "stab",
     "kk": "[stæb]",
-    "zh": "v. 刺,戳；n. 刺破的傷口",
+    "zh": "v. 刺、戳；n. 刺破的傷口",
     "unit": 4,
     "example": "She felt a sudden stab of pain in the chest.",
     "exampleZh": "她胸部突然感到一陣劇痛。"
@@ -27642,7 +27642,7 @@ const externalVocabularyDB = [
     "id": 3072,
     "en": "stadium",
     "kk": "[ˋstediəm]",
-    "zh": "n. 體育場,運動場;球場;競技場",
+    "zh": "n. 體育場、運動場；球場；競技場",
     "unit": 4,
     "example": "The stadium holds 75 000 spectators.",
     "exampleZh": "該體育場可容納7.5萬名觀眾。"
@@ -27669,7 +27669,7 @@ const externalVocabularyDB = [
     "id": 3075,
     "en": "statue",
     "kk": "[ˋstætʃ͵u]",
-    "zh": "n. 雕像,塑像",
+    "zh": "n. 雕像、塑像",
     "unit": 4,
     "example": "I stared fixedly at the statue.",
     "exampleZh": "我目不轉睛地看著那尊雕像。"
@@ -27696,7 +27696,7 @@ const externalVocabularyDB = [
     "id": 3078,
     "en": "stepfather",
     "kk": "[ˋstɛp͵fɑðɚ]",
-    "zh": "n. 繼父,後父",
+    "zh": "n. 繼父、後父",
     "unit": 4,
     "example": "His stepfather ran a prosperous paint business.",
     "exampleZh": "他的繼父曾經營一家生意興旺的塗料公司。"
@@ -27705,7 +27705,7 @@ const externalVocabularyDB = [
     "id": 3079,
     "en": "stepmother",
     "kk": "[ˋstɛp͵mʌðɚ]",
-    "zh": "n. 繼母,後母",
+    "zh": "n. 繼母、後母",
     "unit": 4,
     "example": "They learned to accept their stepmother in time.",
     "exampleZh": "過了一段時間之後他們學會了接受他們的繼母。"
@@ -27768,7 +27768,7 @@ const externalVocabularyDB = [
     "id": 3086,
     "en": "stool",
     "kk": "[stul]",
-    "zh": "n. 凳子;擱腳凳;解大便",
+    "zh": "n. 凳子；擱腳凳；解大便",
     "unit": 4,
     "example": "He hoisted himself onto a high stool.",
     "exampleZh": "他抬身坐上了一張高凳子。"
@@ -27786,7 +27786,7 @@ const externalVocabularyDB = [
     "id": 3088,
     "en": "strength",
     "kk": "[strɛŋkθ]",
-    "zh": "n. 力量,力氣",
+    "zh": "n. 力量、力氣",
     "unit": 4,
     "example": "Tact was never Mr. Moore's strength.",
     "exampleZh": "老練從來不是穆爾先生的長處。"
@@ -27795,7 +27795,7 @@ const externalVocabularyDB = [
     "id": 3089,
     "en": "strip",
     "kk": "[strɪp]",
-    "zh": "v. 條,帶；n. 脫衣舞",
+    "zh": "v. 條、帶；n. 脫衣舞",
     "unit": 4,
     "example": "The runway is simply a strip of grass.",
     "exampleZh": "所謂跑道不過是一長條草地而已。"
@@ -27813,7 +27813,7 @@ const externalVocabularyDB = [
     "id": 3091,
     "en": "studio",
     "kk": "[ˋstudi͵o]",
-    "zh": "n. 工作室,畫室;雕塑室;照相館",
+    "zh": "n. 工作室、畫室；雕塑室；照相館",
     "unit": 4,
     "example": "Hemingway's studio is to the right.",
     "exampleZh": "海明威的工作室在右邊。"
@@ -27840,7 +27840,7 @@ const externalVocabularyDB = [
     "id": 3094,
     "en": "substance",
     "kk": "[ˋsʌbstəns]",
-    "zh": "n. 物質;主旨;要義",
+    "zh": "n. 物質；主旨；要義",
     "unit": 4,
     "example": "Petrol is a volatile substance.",
     "exampleZh": "汽油是揮發性物質。"
@@ -27858,7 +27858,7 @@ const externalVocabularyDB = [
     "id": 3096,
     "en": "suck",
     "kk": "[sʌk]",
-    "zh": "v. 吸吮,吸食；n. 一口",
+    "zh": "v. 吸吮、吸食；n. 一口",
     "unit": 4,
     "example": "Greenfly can literally suck a plant dry.",
     "exampleZh": "蚜蟲的確能把一株植物吸乾。"
@@ -27867,10 +27867,10 @@ const externalVocabularyDB = [
     "id": 3097,
     "en": "suicide",
     "kk": "[ˋsuə͵saɪd]",
-    "zh": "n. 自殺,自殺行為",
+    "zh": "n. 自殺、自殺行為",
     "unit": 4,
-    "example": "Can you use the word suicide in a sentence?",
-    "exampleZh": "你能在句子中使用「自殺,自殺行為」這個詞嗎？"
+    "example": "Community hotlines offer professional guidance to assist people contemplating suicide.",
+    "exampleZh": "社區熱線提供專業諮詢，協助企圖自殺的人走出困境。"
   },
   {
     "id": 3098,
@@ -27885,7 +27885,7 @@ const externalVocabularyDB = [
     "id": 3099,
     "en": "summary",
     "kk": "[ˋsʌmɚi]",
-    "zh": "n. 總結,摘要",
+    "zh": "n. 總結、摘要",
     "unit": 4,
     "example": "The following is a summary of events.",
     "exampleZh": "現將重大事件綜述如下。"
@@ -27894,7 +27894,7 @@ const externalVocabularyDB = [
     "id": 3100,
     "en": "summit",
     "kk": "[ˋsʌmət]",
-    "zh": "n. 頂峰;最高級會議",
+    "zh": "n. 頂峰；最高級會議",
     "unit": 4,
     "example": "This path leads to the summit.",
     "exampleZh": "這條路通往山頂。"
@@ -27921,7 +27921,7 @@ const externalVocabularyDB = [
     "id": 3103,
     "en": "survival",
     "kk": "[sɚˋvaɪvəl]",
-    "zh": "n. 倖存;殘存",
+    "zh": "n. 倖存；殘存",
     "unit": 4,
     "example": "It was a matter of simple survival.",
     "exampleZh": "這完全是能不能生存的問題。"
@@ -27930,7 +27930,7 @@ const externalVocabularyDB = [
     "id": 3104,
     "en": "survivor",
     "kk": "[sɚˋvaɪvɚ]",
-    "zh": "n. 倖存者,生還者",
+    "zh": "n. 倖存者、生還者",
     "unit": 4,
     "example": "I'm a survivor. I'll get by.",
     "exampleZh": "我是個倖存者。能勉強過活。"
@@ -27948,7 +27948,7 @@ const externalVocabularyDB = [
     "id": 3106,
     "en": "suspicion",
     "kk": "[səˋspɪʃən]",
-    "zh": "n. 懷疑,疑心,猜疑",
+    "zh": "n. 懷疑、疑心,猜疑",
     "unit": 4,
     "example": "She viewed him with suspicion.",
     "exampleZh": "她以懷疑的目光看待他。"
@@ -27984,7 +27984,7 @@ const externalVocabularyDB = [
     "id": 3110,
     "en": "sword",
     "kk": "[sɔrd]",
-    "zh": "n. 劍,刀",
+    "zh": "n. 劍、刀",
     "unit": 4,
     "example": "He buckled on his sword.",
     "exampleZh": "他把劍扣好。"
@@ -28002,7 +28002,7 @@ const externalVocabularyDB = [
     "id": 3112,
     "en": "tablet",
     "kk": "[ˋtæblət]",
-    "zh": "n. 藥片;小片",
+    "zh": "n. 藥片；小片",
     "unit": 4,
     "example": "Use calcium tablet to supplement.",
     "exampleZh": "服用鈣片來補充鈣質。"
@@ -28056,7 +28056,7 @@ const externalVocabularyDB = [
     "id": 3118,
     "en": "technique",
     "kk": "[tɛkˋnik]",
-    "zh": "n. 技巧;技術",
+    "zh": "n. 技巧；技術",
     "unit": 4,
     "example": "She showed her students the technique.",
     "exampleZh": "她向學生演示了那個技巧。"
@@ -28074,7 +28074,7 @@ const externalVocabularyDB = [
     "id": 3120,
     "en": "temper",
     "kk": "[ˋtɛmpɚ]",
-    "zh": "n. 情緒;脾氣;暴躁",
+    "zh": "n. 情緒；脾氣；暴躁",
     "unit": 4,
     "example": "She has a vicious temper.",
     "exampleZh": "她性情暴虐。"
@@ -28092,7 +28092,7 @@ const externalVocabularyDB = [
     "id": 3122,
     "en": "territory",
     "kk": "[ˋtɛrɪ͵tɔri]",
-    "zh": "n. 領土,版圖",
+    "zh": "n. 領土、版圖",
     "unit": 4,
     "example": "The war was carried into enemy territory.",
     "exampleZh": "戰爭已推進到敵方境內。"
@@ -28119,7 +28119,7 @@ const externalVocabularyDB = [
     "id": 3125,
     "en": "thirst",
     "kk": "[θɝst]",
-    "zh": "n. 渴,口渴",
+    "zh": "n. 渴、口渴",
     "unit": 4,
     "example": "Order me a soda, I'm dying of thirst.",
     "exampleZh": "給我要杯汽水，我快渴死了。"
@@ -28137,7 +28137,7 @@ const externalVocabularyDB = [
     "id": 3127,
     "en": "threat",
     "kk": "[θrɛt]",
-    "zh": "n. 威脅,恐嚇",
+    "zh": "n. 威脅、恐嚇",
     "unit": 4,
     "example": "Inflation is a constant threat.",
     "exampleZh": "通貨膨脹是一種持續的威脅。"
@@ -28155,7 +28155,7 @@ const externalVocabularyDB = [
     "id": 3129,
     "en": "tide",
     "kk": "[taɪd]",
-    "zh": "n. 潮汐;潮水",
+    "zh": "n. 潮汐；潮水",
     "unit": 4,
     "example": "Is the tide coming in or going out?",
     "exampleZh": "現在是漲潮還是落潮？"
@@ -28164,7 +28164,7 @@ const externalVocabularyDB = [
     "id": 3130,
     "en": "timber",
     "kk": "[ˋtɪmbɚ]",
-    "zh": "n. 木材;樹林",
+    "zh": "n. 木材；樹林",
     "unit": 4,
     "example": "Men were loading up a truck with timber.",
     "exampleZh": "工人正在把木料裝上卡車。"
@@ -28173,7 +28173,7 @@ const externalVocabularyDB = [
     "id": 3131,
     "en": "tissue",
     "kk": "[ˋtɪ͵sju]",
-    "zh": "n. 紙巾;面紙;(動植物的)組織[",
+    "zh": "n. 紙巾；面紙；(動植物的)組織[",
     "unit": 4,
     "example": "As we age we lose muscle tissue.",
     "exampleZh": "隨著年紀的增大，我們會失去一些肌肉組織。"
@@ -28182,7 +28182,7 @@ const externalVocabularyDB = [
     "id": 3132,
     "en": "tobacco",
     "kk": "[təˋbæk͵o]",
-    "zh": "n. 菸草;煙葉",
+    "zh": "n. 菸草；煙葉",
     "unit": 4,
     "example": "His breath reeked of tobacco.",
     "exampleZh": "他滿嘴煙臭味。"
@@ -28200,7 +28200,7 @@ const externalVocabularyDB = [
     "id": 3134,
     "en": "tortoise",
     "kk": "[ˋtɔrtəs]",
-    "zh": "n. 陸龜;龜,烏龜",
+    "zh": "n. 陸龜；龜、烏龜",
     "unit": 4,
     "example": "Tortoise, you're here? So fast!",
     "exampleZh": "烏龜，你跑到這兒了？這麼快！"
@@ -28218,7 +28218,7 @@ const externalVocabularyDB = [
     "id": 3136,
     "en": "tourism",
     "kk": "[ˋtʊr͵ɪzəm]",
-    "zh": "n. 旅遊,觀光",
+    "zh": "n. 旅遊、觀光",
     "unit": 4,
     "example": "Tourism is vital for the economy.",
     "exampleZh": "旅遊業對於經濟至關重要。"
@@ -28227,7 +28227,7 @@ const externalVocabularyDB = [
     "id": 3137,
     "en": "tourist",
     "kk": "[ˋtʊrəst]",
-    "zh": "n. 旅遊者,觀光者",
+    "zh": "n. 旅遊者、觀光者",
     "unit": 4,
     "example": "A passing tourist snapped the incident.",
     "exampleZh": "一個過路的遊客把這件事拍了下來。"
@@ -28254,7 +28254,7 @@ const externalVocabularyDB = [
     "id": 3140,
     "en": "trader",
     "kk": "[ˋtredɚ]",
-    "zh": "n. 商人;交易人",
+    "zh": "n. 商人；交易人",
     "unit": 4,
     "example": "A trader said gold sold briskly on the local market.",
     "exampleZh": "一位貿易商說黃金在當地市場的銷售很興旺。"
@@ -28290,7 +28290,7 @@ const externalVocabularyDB = [
     "id": 3144,
     "en": "traveler",
     "kk": "[ˋtrævəlɚ]",
-    "zh": "n. 旅客;遊客",
+    "zh": "n. 旅客；遊客",
     "unit": 4,
     "example": "Are you a good traveler?",
     "exampleZh": "你是個很棒的旅行家嗎？"
@@ -28299,7 +28299,7 @@ const externalVocabularyDB = [
     "id": 3145,
     "en": "tray",
     "kk": "[tre]",
-    "zh": "n. 盤子,托盤",
+    "zh": "n. 盤子、托盤",
     "unit": 4,
     "example": "Stark took two whiskeys from a tray.",
     "exampleZh": "斯塔克從托盤裡拿了兩杯威士忌。"
@@ -28317,7 +28317,7 @@ const externalVocabularyDB = [
     "id": 3147,
     "en": "trend",
     "kk": "[trɛnd]",
-    "zh": "n. 趨勢,傾向;時尚",
+    "zh": "n. 趨勢、傾向；時尚",
     "unit": 4,
     "example": "This is a growing trend.",
     "exampleZh": "這是一個不斷增長的趨勢。"
@@ -28326,7 +28326,7 @@ const externalVocabularyDB = [
     "id": 3148,
     "en": "tribe",
     "kk": "[traɪb]",
-    "zh": "n. 部落;種族",
+    "zh": "n. 部落；種族",
     "unit": 4,
     "example": "The valley is inhabited by the Dani tribe.",
     "exampleZh": "這個山谷里居住著丹尼部落。"
@@ -28344,7 +28344,7 @@ const externalVocabularyDB = [
     "id": 3150,
     "en": "trunk",
     "kk": "[trʌŋk]",
-    "zh": "n. 樹幹;大血管",
+    "zh": "n. 樹幹；大血管",
     "unit": 4,
     "example": "I closed and roped the trunk.",
     "exampleZh": "我把箱子蓋上，用繩子捆結實。"
@@ -28416,7 +28416,7 @@ const externalVocabularyDB = [
     "id": 3158,
     "en": "twig",
     "kk": "[twɪɡ]",
-    "zh": "n. 細枝;嫩枝",
+    "zh": "n. 細枝；嫩枝",
     "unit": 4,
     "example": "He shifted his weight and a twig snapped.",
     "exampleZh": "他挪了挪身子，一根樹枝隨即喀嚓一聲折斷了。"
@@ -28461,7 +28461,7 @@ const externalVocabularyDB = [
     "id": 3163,
     "en": "unity",
     "kk": "[ˋjunəti]",
-    "zh": "n. 整體;一貫性",
+    "zh": "n. 整體；一貫性",
     "unit": 4,
     "example": "Speakers at the rally expressed sentiments of unity.",
     "exampleZh": "集會上的發言者們表達了團結的觀點。"
@@ -28524,7 +28524,7 @@ const externalVocabularyDB = [
     "id": 3170,
     "en": "verse",
     "kk": "[vɝs]",
-    "zh": "n. 詩;韻文",
+    "zh": "n. 詩；韻文",
     "unit": 4,
     "example": "This verse describes three signs of spring.",
     "exampleZh": "這節詩描述了春天的3個徵兆。"
@@ -28578,7 +28578,7 @@ const externalVocabularyDB = [
     "id": 3176,
     "en": "vision",
     "kk": "[ˋvɪʒən]",
-    "zh": "n. 視力;視覺;洞察力",
+    "zh": "n. 視力；視覺；洞察力",
     "unit": 4,
     "example": "Cats have good night vision.",
     "exampleZh": "貓在夜間視力好。"
@@ -28596,7 +28596,7 @@ const externalVocabularyDB = [
     "id": 3178,
     "en": "volume",
     "kk": "[ˋvɑljum]",
-    "zh": "n. 卷,冊",
+    "zh": "n. 卷、冊",
     "unit": 4,
     "example": "This knob controls the volume.",
     "exampleZh": "此旋鈕調節音量。"
@@ -28614,7 +28614,7 @@ const externalVocabularyDB = [
     "id": 3180,
     "en": "wage",
     "kk": "[wedʒ]",
-    "zh": "n. 薪水;報酬",
+    "zh": "n. 薪水；報酬",
     "unit": 4,
     "example": "Wage rates depend on levels of productivity.",
     "exampleZh": "工資水平取決於生產量的多寡。"
@@ -28623,7 +28623,7 @@ const externalVocabularyDB = [
     "id": 3181,
     "en": "wages",
     "kk": "[ˋwedʒəz]",
-    "zh": "n. 代價;報償;工資總額",
+    "zh": "n. 代價；報償；工資總額",
     "unit": 4,
     "example": "Wages are paid on Fridays.",
     "exampleZh": "每星期五發工資。"
@@ -28650,7 +28650,7 @@ const externalVocabularyDB = [
     "id": 3184,
     "en": "warmth",
     "kk": "[wɔrmθ]",
-    "zh": "n. 溫暖;親切;熱情",
+    "zh": "n. 溫暖；親切；熱情",
     "unit": 4,
     "example": "These perfumes have warmth and sensuality.",
     "exampleZh": "這些香水溫暖且令人愉悅。"
@@ -28668,7 +28668,7 @@ const externalVocabularyDB = [
     "id": 3186,
     "en": "wealth",
     "kk": "[wɛlθ]",
-    "zh": "n. 財富;大量",
+    "zh": "n. 財富；大量",
     "unit": 4,
     "example": "She was jealous of his wealth.",
     "exampleZh": "她嫉妒他的富有。"
@@ -28767,7 +28767,7 @@ const externalVocabularyDB = [
     "id": 3197,
     "en": "wisdom",
     "kk": "[ˋwɪzdəm]",
-    "zh": "n. 智慧,才智;名言",
+    "zh": "n. 智慧、才智；名言",
     "unit": 4,
     "example": "They were godlike in their wisdom and compassion.",
     "exampleZh": "他們的智慧和關愛有如聖賢一般。"
@@ -28884,7 +28884,7 @@ const externalVocabularyDB = [
     "id": 3210,
     "en": "accidental",
     "kk": "[͵æksəˋdɛntəl]",
-    "zh": "adj. 偶然的;意外的",
+    "zh": "adj. 偶然的；意外的",
     "unit": 4,
     "example": "The coroner recorded a verdict of accidental death.",
     "exampleZh": "驗屍官判定這是一次意外死亡。"
@@ -28902,7 +28902,7 @@ const externalVocabularyDB = [
     "id": 3212,
     "en": "admirable",
     "kk": "[ˋædmɚəbəl]",
-    "zh": "adj. 值得讚揚的;絕妙的",
+    "zh": "adj. 值得讚揚的；絕妙的",
     "unit": 4,
     "example": "He was an admirable chairman.",
     "exampleZh": "他是位值得尊敬的主席。"
@@ -28911,7 +28911,7 @@ const externalVocabularyDB = [
     "id": 3213,
     "en": "aggressive",
     "kk": "[əˋɡrɛsɪv]",
-    "zh": "adj. 好鬥的,挑釁的;有進取精神的",
+    "zh": "adj. 好鬥的、挑釁的；有進取精神的",
     "unit": 4,
     "example": "These fish are very aggressive.",
     "exampleZh": "這些魚十分好鬥。"
@@ -28992,7 +28992,7 @@ const externalVocabularyDB = [
     "id": 3222,
     "en": "athletic",
     "kk": "[æθˋlɛtɪk]",
-    "zh": "adj. 運動的,體育的;行動敏捷的",
+    "zh": "adj. 運動的、體育的；行動敏捷的",
     "unit": 4,
     "example": "Xandra is an athletic 36-year-old with a 21-year-old's body.",
     "exampleZh": "贊德拉是位36歲卻有著21歲人體格的運動型人。"
@@ -29010,7 +29010,7 @@ const externalVocabularyDB = [
     "id": 3224,
     "en": "audio",
     "kk": "[ˋɑdi͵o]",
-    "zh": "adj. 聽覺的,聲音的",
+    "zh": "adj. 聽覺的、聲音的",
     "unit": 4,
     "example": "This digital audio player supports multiple formats.",
     "exampleZh": "這臺數字音訊播放器支援多種格式。"
@@ -29019,7 +29019,7 @@ const externalVocabularyDB = [
     "id": 3225,
     "en": "awkward",
     "kk": "[ˋɑkwɚd]",
-    "zh": "adj. 笨拙的;尷尬的",
+    "zh": "adj. 笨拙的；尷尬的",
     "unit": 4,
     "example": "15 is an awkward age.",
     "exampleZh": "15歲是個尷尬的年紀。"
@@ -29037,7 +29037,7 @@ const externalVocabularyDB = [
     "id": 3227,
     "en": "broke",
     "kk": "[brok]",
-    "zh": "adj. 一文不名的;破了產的",
+    "zh": "adj. 一文不名的；破了產的",
     "unit": 4,
     "example": "His first marriage broke up.",
     "exampleZh": "他的第一次婚姻破裂了。"
@@ -29046,7 +29046,7 @@ const externalVocabularyDB = [
     "id": 3228,
     "en": "brutal",
     "kk": "[ˋbrutəl]",
-    "zh": "adj. 野蠻的;粗暴的",
+    "zh": "adj. 野蠻的；粗暴的",
     "unit": 4,
     "example": "Hook itched to do it, but it seemed too brutal.",
     "exampleZh": "胡克很想這麼做，但似乎太殘忍了。"
@@ -29055,7 +29055,7 @@ const externalVocabularyDB = [
     "id": 3229,
     "en": "circular",
     "kk": "[ˋsɝkjəlɚ]",
-    "zh": "adj. 圓形的;環形的",
+    "zh": "adj. 圓形的；環形的",
     "unit": 4,
     "example": "Are the pillars circular or quadrate?",
     "exampleZh": "柱子是圓的還是方的？"
@@ -29073,7 +29073,7 @@ const externalVocabularyDB = [
     "id": 3231,
     "en": "coarse",
     "kk": "[kɔrs]",
-    "zh": "adj. 粗的,粗糙的",
+    "zh": "adj. 粗的、粗糙的",
     "unit": 4,
     "example": "The man was brutish and coarse.",
     "exampleZh": "這個人野蠻而粗俗。"
@@ -29093,14 +29093,14 @@ const externalVocabularyDB = [
     "kk": "[ˋkɑnsəkwənt]",
     "zh": "adj. 隨之發生的",
     "unit": 4,
-    "example": "Can you use the word consequent in a sentence?",
-    "exampleZh": "你能在句子中使用「隨之發生的」這個詞嗎？"
+    "example": "The factory shutdown and the consequent job losses impacted the whole town.",
+    "exampleZh": "工廠倒閉以及隨之而來的失業潮衝擊了整個小鎮。"
   },
   {
     "id": 3234,
     "en": "consistent",
     "kk": "[kənˋsɪstənt]",
-    "zh": "adj. 始終如一的,前後一致的",
+    "zh": "adj. 始終如一的、前後一致的",
     "unit": 4,
     "example": "Graham is so solidly consistent.",
     "exampleZh": "格雷厄姆非常可靠穩定。"
@@ -29109,7 +29109,7 @@ const externalVocabularyDB = [
     "id": 3235,
     "en": "constructive",
     "kk": "[kənˋstrʌktɪv]",
-    "zh": "adj. 建設性的;積極的;有助益的",
+    "zh": "adj. 建設性的；積極的；有助益的",
     "unit": 4,
     "example": "She welcomes constructive criticism.",
     "exampleZh": "她歡迎建設性的批評意見。"
@@ -29118,7 +29118,7 @@ const externalVocabularyDB = [
     "id": 3236,
     "en": "continual",
     "kk": "[kənˋtɪnjuəl]",
-    "zh": "adj. 不間斷的,連續的",
+    "zh": "adj. 不間斷的、連續的",
     "unit": 4,
     "example": "She finds the continual confrontation very wearing.",
     "exampleZh": "她發現持續的對峙使人精疲力竭。"
@@ -29127,7 +29127,7 @@ const externalVocabularyDB = [
     "id": 3237,
     "en": "continuous",
     "kk": "[kənˋtɪnjuəs]",
-    "zh": "adj. 連續的,不斷的",
+    "zh": "adj. 連續的、不斷的",
     "unit": 4,
     "example": "The continuous rain had saturated the soil.",
     "exampleZh": "連綿不斷的雨把土地淋了個透。"
@@ -29136,7 +29136,7 @@ const externalVocabularyDB = [
     "id": 3238,
     "en": "conventional",
     "kk": "[kənˋvɛnʃənəl]",
-    "zh": "adj. 習慣的,慣例的",
+    "zh": "adj. 習慣的、慣例的",
     "unit": 4,
     "example": "Biofuels can be mixed with conventional fuels.",
     "exampleZh": "生物燃料能夠和傳統燃料混合。"
@@ -29145,7 +29145,7 @@ const externalVocabularyDB = [
     "id": 3239,
     "en": "courageous",
     "kk": "[kɚˋedʒəs]",
-    "zh": "adj. 英勇的,勇敢的",
+    "zh": "adj. 英勇的、勇敢的",
     "unit": 4,
     "example": "The children were very courageous.",
     "exampleZh": "孩子們都很勇敢。"
@@ -29163,7 +29163,7 @@ const externalVocabularyDB = [
     "id": 3241,
     "en": "critical",
     "kk": "[ˋkrɪtɪkəl]",
-    "zh": "adj. 緊要的,關鍵性的,危急的",
+    "zh": "adj. 緊要的、關鍵性的,危急的",
     "unit": 4,
     "example": "We need to become critical text-readers.",
     "exampleZh": "我們需要成為批判性的文字閱讀者。"
@@ -29172,7 +29172,7 @@ const externalVocabularyDB = [
     "id": 3242,
     "en": "defensible",
     "kk": "[dɪˋfɛnsəbəl]",
-    "zh": "adj. 可防禦的;可辯護的",
+    "zh": "adj. 可防禦的；可辯護的",
     "unit": 4,
     "example": "Her reasons for acting are morally defensible.",
     "exampleZh": "她表演的理由道德上講是合乎情理的。"
@@ -29190,7 +29190,7 @@ const externalVocabularyDB = [
     "id": 3244,
     "en": "definite",
     "kk": "[ˋdɛfənət]",
-    "zh": "adj. 明確的,確切的",
+    "zh": "adj. 明確的、確切的",
     "unit": 4,
     "example": "That's definite then, is it?",
     "exampleZh": "那麼，那是確切的了，是嗎？"
@@ -29199,7 +29199,7 @@ const externalVocabularyDB = [
     "id": 3245,
     "en": "delicate",
     "kk": "[ˋdɛləkət]",
-    "zh": "adj. 易碎的;嬌貴的",
+    "zh": "adj. 易碎的；嬌貴的",
     "unit": 4,
     "example": "Babies have very delicate skin.",
     "exampleZh": "嬰兒的皮膚非常嬌嫩。"
@@ -29208,7 +29208,7 @@ const externalVocabularyDB = [
     "id": 3246,
     "en": "delightful",
     "kk": "[dɪˋlaɪtfəl]",
-    "zh": "adj. 令人愉快的,令人高興的",
+    "zh": "adj. 令人愉快的、令人高興的",
     "unit": 4,
     "example": "The cottage had a delightful sea view.",
     "exampleZh": "這小屋可以看到宜人的海景。"
@@ -29217,7 +29217,7 @@ const externalVocabularyDB = [
     "id": 3247,
     "en": "dense",
     "kk": "[dɛns]",
-    "zh": "adj. 密集的,稠密的",
+    "zh": "adj. 密集的、稠密的",
     "unit": 4,
     "example": "The area was covered in dense jungle.",
     "exampleZh": "這個地區叢林密佈。"
@@ -29226,7 +29226,7 @@ const externalVocabularyDB = [
     "id": 3248,
     "en": "dependable",
     "kk": "[dɪˋpɛndəbəl]",
-    "zh": "adj. 可靠的;可信任的",
+    "zh": "adj. 可靠的；可信任的",
     "unit": 4,
     "example": "He was a good friend, a dependable companion.",
     "exampleZh": "他是個好朋友，一個可以信賴的同伴。"
@@ -29262,7 +29262,7 @@ const externalVocabularyDB = [
     "id": 3252,
     "en": "distinguished",
     "kk": "[dɪˋstɪŋɡwɪʃt]",
-    "zh": "adj. 卓越的;著名的",
+    "zh": "adj. 卓越的；著名的",
     "unit": 4,
     "example": "He was the most distinguished scholar in his field.",
     "exampleZh": "他是這一領域成就最為卓著的學者。"
@@ -29271,7 +29271,7 @@ const externalVocabularyDB = [
     "id": 3253,
     "en": "divine",
     "kk": "[dɪˋvaɪn]",
-    "zh": "adj. 神授的,天賜的",
+    "zh": "adj. 神授的、天賜的",
     "unit": 4,
     "example": "The sentry was our young Divine.",
     "exampleZh": "這名哨兵是我們年輕的神職人員。"
@@ -29280,7 +29280,7 @@ const externalVocabularyDB = [
     "id": 3254,
     "en": "dominant",
     "kk": "[ˋdɑmənənt]",
-    "zh": "adj. 佔優勢的,支配的,統治的",
+    "zh": "adj. 佔優勢的、支配的,統治的",
     "unit": 4,
     "example": "Economically, the centre of Spain has lost its dominant role.",
     "exampleZh": "西班牙中部在經濟上已失去了其主導地位。"
@@ -29289,7 +29289,7 @@ const externalVocabularyDB = [
     "id": 3255,
     "en": "durable",
     "kk": "[ˋdʊrəbəl]",
-    "zh": "adj. 經久的,耐用的",
+    "zh": "adj. 經久的、耐用的",
     "unit": 4,
     "example": "The durable high-impact plastic case is water resistant to 100 feet.",
     "exampleZh": "這種耐久的高強度塑膠盒在100英尺水深以內是防水的。"
@@ -29325,7 +29325,7 @@ const externalVocabularyDB = [
     "id": 3259,
     "en": "economical",
     "kk": "[͵ɛkəˋnɑmɪkəl]",
-    "zh": "adj. 經濟的,節約的",
+    "zh": "adj. 經濟的、節約的",
     "unit": 4,
     "example": "Fans of electric cars say they are clean, quiet, and economical.",
     "exampleZh": "電動車愛好者說電動車無汙染，無噪音，而且經濟。"
@@ -29334,7 +29334,7 @@ const externalVocabularyDB = [
     "id": 3260,
     "en": "elegant",
     "kk": "[ˋɛləɡənt]",
-    "zh": "adj. 優美的,漂亮的",
+    "zh": "adj. 優美的、漂亮的",
     "unit": 4,
     "example": "She was tall and elegant.",
     "exampleZh": "她身材修長，優雅大方。"
@@ -29343,7 +29343,7 @@ const externalVocabularyDB = [
     "id": 3261,
     "en": "elementary",
     "kk": "[͵ɛləˋmɛntri]",
-    "zh": "adj. 基本的;初級的,基礎的",
+    "zh": "adj. 基本的；初級的、基礎的",
     "unit": 4,
     "example": "Literacy now includes elementary computer skills.",
     "exampleZh": "有文化現在包括基本的計算機技能。"
@@ -29370,7 +29370,7 @@ const externalVocabularyDB = [
     "id": 3264,
     "en": "envious",
     "kk": "[ˋɛnviəs]",
-    "zh": "adj. 嫉妒的;羨慕的",
+    "zh": "adj. 嫉妒的；羨慕的",
     "unit": 4,
     "example": "Everyone is so envious of her.",
     "exampleZh": "人人都那麼羨慕她。"
@@ -29379,7 +29379,7 @@ const externalVocabularyDB = [
     "id": 3265,
     "en": "eventual",
     "kk": "[əˋvɛntʃuəl]",
-    "zh": "adj. 最後的;結果的",
+    "zh": "adj. 最後的；結果的",
     "unit": 4,
     "example": "The village school may face eventual closure.",
     "exampleZh": "這所鄉村學校可能最終會面臨關閉。"
@@ -29388,7 +29388,7 @@ const externalVocabularyDB = [
     "id": 3266,
     "en": "evident",
     "kk": "[ˋɛvədənt]",
-    "zh": "adj. 明顯的;明白的",
+    "zh": "adj. 明顯的；明白的",
     "unit": 4,
     "example": "The threat of inflation is already evident in bond prices.",
     "exampleZh": "通貨膨脹的威脅在證券價格上已經是明顯可見的。"
@@ -29397,7 +29397,7 @@ const externalVocabularyDB = [
     "id": 3267,
     "en": "experimental",
     "kk": "[ɪk͵spɛrɪˋmɛntəl]",
-    "zh": "adj. 實驗性的;試驗性的",
+    "zh": "adj. 實驗性的；試驗性的",
     "unit": 4,
     "example": "The equipment is still at the experimental stage.",
     "exampleZh": "這種裝置仍處於試驗階段。"
@@ -29406,7 +29406,7 @@ const externalVocabularyDB = [
     "id": 3268,
     "en": "facial",
     "kk": "[ˋfeʃəl]",
-    "zh": "adj. 臉的;面部的",
+    "zh": "adj. 臉的；面部的",
     "unit": 4,
     "example": "There are exercises that tauten facial muscles.",
     "exampleZh": "有些練習可以讓面部肌肉緊繃起來。"
@@ -29415,7 +29415,7 @@ const externalVocabularyDB = [
     "id": 3269,
     "en": "faithful",
     "kk": "[ˋfeθfəl]",
-    "zh": "adj. 忠實的;忠誠的",
+    "zh": "adj. 忠實的；忠誠的",
     "unit": 4,
     "example": "The officers died faithful to the honour of a soldier.",
     "exampleZh": "軍官們懷著對軍人氣節的忠誠而捐軀。"
@@ -29451,7 +29451,7 @@ const externalVocabularyDB = [
     "id": 3273,
     "en": "fertile",
     "kk": "[ˋfɝtəl]",
-    "zh": "adj. (土地)肥沃的,富饒的;受精的",
+    "zh": "adj. (土地)肥沃的、富饒的；受精的",
     "unit": 4,
     "example": "Farmers worked the fertile valleys.",
     "exampleZh": "農民們開墾了這個肥沃的山谷。"
@@ -29460,7 +29460,7 @@ const externalVocabularyDB = [
     "id": 3274,
     "en": "fierce",
     "kk": "[fɪrs]",
-    "zh": "adj. 兇猛的;殘酷的",
+    "zh": "adj. 兇猛的；殘酷的",
     "unit": 4,
     "example": "She spoke in a fierce whisper.",
     "exampleZh": "她惡狠狠地低聲說話。"
@@ -29478,7 +29478,7 @@ const externalVocabularyDB = [
     "id": 3276,
     "en": "flexible",
     "kk": "[ˋflɛksəbəl]",
-    "zh": "adj. 可彎曲的;可變通的",
+    "zh": "adj. 可彎曲的；可變通的",
     "unit": 4,
     "example": "WYSIWYG editing makes your word processing smoother and more flexible.",
     "exampleZh": "“所見即所得”編輯使你的文字資訊處理更加順暢和靈活。"
@@ -29487,7 +29487,7 @@ const externalVocabularyDB = [
     "id": 3277,
     "en": "fluent",
     "kk": "[ˋfluənt]",
-    "zh": "adj. 流利的,流暢的",
+    "zh": "adj. 流利的、流暢的",
     "unit": 4,
     "example": "She speaks fluent and idiomatic English.",
     "exampleZh": "她講一口流利地道的英語。"
@@ -29496,7 +29496,7 @@ const externalVocabularyDB = [
     "id": 3278,
     "en": "fortunate",
     "kk": "[ˋfɔrtʃənət]",
-    "zh": "adj. 幸運的,僥倖的",
+    "zh": "adj. 幸運的、僥倖的",
     "unit": 4,
     "example": "In this respect we are very fortunate.",
     "exampleZh": "在這方面，我們是很幸運的。"
@@ -29514,7 +29514,7 @@ const externalVocabularyDB = [
     "id": 3280,
     "en": "functional",
     "kk": "[ˋfʌŋkʃənəl]",
-    "zh": "adj. 機能的;實用的",
+    "zh": "adj. 機能的；實用的",
     "unit": 4,
     "example": "The mirror is functional yet decorative.",
     "exampleZh": "這鏡子能照人，但也有裝飾作用。"
@@ -29532,7 +29532,7 @@ const externalVocabularyDB = [
     "id": 3282,
     "en": "genuine",
     "kk": "[ˋdʒɛnjəwən]",
-    "zh": "adj. 真的;非偽造的",
+    "zh": "adj. 真的；非偽造的",
     "unit": 4,
     "example": "Only genuine refugees can apply for asylum.",
     "exampleZh": "只有真正的難民才能申請政治避難。"
@@ -29541,16 +29541,16 @@ const externalVocabularyDB = [
     "id": 3283,
     "en": "gifted",
     "kk": "[ˋɡɪftəd]",
-    "zh": "adj. 有天資的,有天賦的",
+    "zh": "adj. 有天資的、有天賦的",
     "unit": 4,
-    "example": "Can you use the word gifted in a sentence?",
-    "exampleZh": "你能在句子中使用「有天資的,有天賦的」這個詞嗎？"
+    "example": "The school created a tailored program to nurture gifted young musicians.",
+    "exampleZh": "學校制定了一套客製化課程，專門培養有天賦的年輕音樂家。"
   },
   {
     "id": 3284,
     "en": "gigantic",
     "kk": "[dʒaɪˋɡæntɪk]",
-    "zh": "adj. 巨大的,龐大的",
+    "zh": "adj. 巨大的、龐大的",
     "unit": 4,
     "example": "The gigantic natural harbour is a haven for boats.",
     "exampleZh": "這個巨大的天然港是船舶的避風港。"
@@ -29559,7 +29559,7 @@ const externalVocabularyDB = [
     "id": 3285,
     "en": "glorious",
     "kk": "[ˋɡlɔriəs]",
-    "zh": "adj. 壯觀的,壯麗的",
+    "zh": "adj. 壯觀的、壯麗的",
     "unit": 4,
     "example": "They had three weeks of glorious sunshine.",
     "exampleZh": "他們度過了三週陽光燦爛的日子。"
@@ -29568,7 +29568,7 @@ const externalVocabularyDB = [
     "id": 3286,
     "en": "graceful",
     "kk": "[ˋɡresfəl]",
-    "zh": "adj. 優美的,雅緻的",
+    "zh": "adj. 優美的、雅緻的",
     "unit": 4,
     "example": "His walk was lithe and graceful.",
     "exampleZh": "他的步態柔韌而優雅。"
@@ -29577,7 +29577,7 @@ const externalVocabularyDB = [
     "id": 3287,
     "en": "gracious",
     "kk": "[ˋɡreʃəs]",
-    "zh": "adj. 親切的;和藹的",
+    "zh": "adj. 親切的；和藹的",
     "unit": 4,
     "example": "She is a lovely and gracious woman.",
     "exampleZh": "她是個可愛而和藹的女人。"
@@ -29586,7 +29586,7 @@ const externalVocabularyDB = [
     "id": 3288,
     "en": "grammatical",
     "kk": "[ɡrəˋmætəkəl]",
-    "zh": "adj. 文法的;合乎文法的",
+    "zh": "adj. 文法的；合乎文法的",
     "unit": 4,
     "example": "It contains many grammatical errors.",
     "exampleZh": "它包含許多語法錯誤。"
@@ -29595,7 +29595,7 @@ const externalVocabularyDB = [
     "id": 3289,
     "en": "grateful",
     "kk": "[ˋɡretfəl]",
-    "zh": "adj. 感謝的,感激的",
+    "zh": "adj. 感謝的、感激的",
     "unit": 4,
     "example": "We're grateful for your business.",
     "exampleZh": "感謝您的光顧。"
@@ -29676,7 +29676,7 @@ const externalVocabularyDB = [
     "id": 3298,
     "en": "ignorant",
     "kk": "[ˋɪɡnɚənt]",
-    "zh": "adj. 無知的,不學無術的",
+    "zh": "adj. 無知的、不學無術的",
     "unit": 4,
     "example": "He's ignorant about modern technology.",
     "exampleZh": "他對現代科技一無所知。"
@@ -29694,7 +29694,7 @@ const externalVocabularyDB = [
     "id": 3300,
     "en": "imaginary",
     "kk": "[͵ɪmˋædʒə͵nɛri]",
-    "zh": "adj. 虛構的;幻想的",
+    "zh": "adj. 虛構的；幻想的",
     "unit": 4,
     "example": "Lots of children have imaginary friends.",
     "exampleZh": "許多孩子都有假想的朋友。"
@@ -29703,7 +29703,7 @@ const externalVocabularyDB = [
     "id": 3301,
     "en": "imaginative",
     "kk": "[͵ɪmˋædʒənətɪv]",
-    "zh": "adj. 虛構的;幻想的",
+    "zh": "adj. 虛構的；幻想的",
     "unit": 4,
     "example": "The show's a keeper–daring, imaginative and provocative.",
     "exampleZh": "這部電影值得收藏–大膽、富於想像力和煽動性。"
@@ -29721,7 +29721,7 @@ const externalVocabularyDB = [
     "id": 3303,
     "en": "informative",
     "kk": "[͵ɪnˋfɔrmətɪv]",
-    "zh": "adj. 教育性的;有益的",
+    "zh": "adj. 教育性的；有益的",
     "unit": 4,
     "example": "Burton's text is concise and informative.",
     "exampleZh": "伯頓的文章文字簡潔、內容豐富。"
@@ -29739,7 +29739,7 @@ const externalVocabularyDB = [
     "id": 3305,
     "en": "intense",
     "kk": "[͵ɪnˋtɛns]",
-    "zh": "adj. 強烈的,劇烈的",
+    "zh": "adj. 強烈的、劇烈的",
     "unit": 4,
     "example": "It was a period of intense activity.",
     "exampleZh": "那是活動激烈的時期。"
@@ -29748,7 +29748,7 @@ const externalVocabularyDB = [
     "id": 3306,
     "en": "intensive",
     "kk": "[͵ɪnˋtɛnsɪv]",
-    "zh": "adj. 加強的;密集的",
+    "zh": "adj. 加強的；密集的",
     "unit": 4,
     "example": "Intensive cultivation has impoverished the soil.",
     "exampleZh": "集約耕作使土壤變得貧瘠。"
@@ -29757,7 +29757,7 @@ const externalVocabularyDB = [
     "id": 3307,
     "en": "keen",
     "kk": "[kin]",
-    "zh": "adj. 熱心的;敏銳的;渴望的",
+    "zh": "adj. 熱心的；敏銳的；渴望的",
     "unit": 4,
     "example": "My wife's a keen gardener.",
     "exampleZh": "我的妻子是個熱衷園藝的人。"
@@ -29775,7 +29775,7 @@ const externalVocabularyDB = [
     "id": 3309,
     "en": "learned",
     "kk": "[lɝnd]",
-    "zh": "adj. 有學問的,博學的;精通的",
+    "zh": "adj. 有學問的、博學的；精通的",
     "unit": 4,
     "example": "Have you learned your part yet?",
     "exampleZh": "你記住你的臺詞了嗎？"
@@ -29784,7 +29784,7 @@ const externalVocabularyDB = [
     "id": 3310,
     "en": "literary",
     "kk": "[ˋlɪtɚ͵ɛri]",
-    "zh": "adj. 文學的,文藝的",
+    "zh": "adj. 文學的、文藝的",
     "unit": 4,
     "example": "He edits the literary journal, Murmur.",
     "exampleZh": "他編輯了《私語》這本文學雜誌。"
@@ -29793,7 +29793,7 @@ const externalVocabularyDB = [
     "id": 3311,
     "en": "logical",
     "kk": "[ˋlɑdʒɪkəl]",
-    "zh": "adj. 合邏輯的;合理的",
+    "zh": "adj. 合邏輯的；合理的",
     "unit": 4,
     "example": "There was a logical explanation.",
     "exampleZh": "存在一個合理的解釋。"
@@ -29802,7 +29802,7 @@ const externalVocabularyDB = [
     "id": 3312,
     "en": "lousy",
     "kk": "[ˋlaʊzi]",
-    "zh": "adj. 不潔的;卑鄙的;討厭的",
+    "zh": "adj. 不潔的；卑鄙的；討厭的",
     "unit": 4,
     "example": "I was a lousy secretary.",
     "exampleZh": "我曾是個蹩腳的秘書。"
@@ -29811,7 +29811,7 @@ const externalVocabularyDB = [
     "id": 3313,
     "en": "loyal",
     "kk": "[ˋlɔɪəl]",
-    "zh": "adj. 忠誠的,忠心的",
+    "zh": "adj. 忠誠的、忠心的",
     "unit": 4,
     "example": "They had remained loyal to the president.",
     "exampleZh": "他們一直忠於總統。"
@@ -29820,7 +29820,7 @@ const externalVocabularyDB = [
     "id": 3314,
     "en": "lunar",
     "kk": "[ˋlunɚ]",
-    "zh": "adj. 月的;陰曆的",
+    "zh": "adj. 月的；陰曆的",
     "unit": 4,
     "example": "Bring lunar materials back to Earth.",
     "exampleZh": "把月球上的物質帶回地球。"
@@ -29829,7 +29829,7 @@ const externalVocabularyDB = [
     "id": 3315,
     "en": "luxurious",
     "kk": "[ləɡˋʒɝiəs]",
-    "zh": "adj. 奢侈的;驕奢淫逸的",
+    "zh": "adj. 奢侈的；驕奢淫逸的",
     "unit": 4,
     "example": "To enable rental increases, you have to have luxurious furnishings.",
     "exampleZh": "為能實現租金增長，你得有豪華的室內陳設。"
@@ -29838,7 +29838,7 @@ const externalVocabularyDB = [
     "id": 3316,
     "en": "magnetic",
     "kk": "[mæɡˋnɛtɪk]",
-    "zh": "adj. 磁鐵的;磁性的",
+    "zh": "adj. 磁鐵的；磁性的",
     "unit": 4,
     "example": "The mineral is weakly magnetic.",
     "exampleZh": "這種礦石有輕微的磁性。"
@@ -29847,7 +29847,7 @@ const externalVocabularyDB = [
     "id": 3317,
     "en": "magnificent",
     "kk": "[mæɡˋnɪfəsənt]",
-    "zh": "adj. 壯麗的,宏偉的",
+    "zh": "adj. 壯麗的、宏偉的",
     "unit": 4,
     "example": "The Taj Mahal is a magnificent building.",
     "exampleZh": "泰姬陵是一座宏偉的建築。"
@@ -29865,7 +29865,7 @@ const externalVocabularyDB = [
     "id": 3319,
     "en": "memorable",
     "kk": "[ˋmɛmɚəbəl]",
-    "zh": "adj. 值得懷念的;難忘的",
+    "zh": "adj. 值得懷念的；難忘的",
     "unit": 4,
     "example": "Her speech was memorable for its polemic rather than its substance.",
     "exampleZh": "她的演說之所以令人難忘，不是因其內容而是因其辯論方法。"
@@ -29874,7 +29874,7 @@ const externalVocabularyDB = [
     "id": 3320,
     "en": "mere",
     "kk": "[mɪr]",
-    "zh": "adj. 僅僅的,只不過的",
+    "zh": "adj. 僅僅的、只不過的",
     "unit": 4,
     "example": "It cost a mere bagatelle.",
     "exampleZh": "這個只花了一點錢。"
@@ -29892,7 +29892,7 @@ const externalVocabularyDB = [
     "id": 3322,
     "en": "mild",
     "kk": "[maɪld]",
-    "zh": "adj. 溫和的,溫柔的",
+    "zh": "adj. 溫和的、溫柔的",
     "unit": 4,
     "example": "He's a mild, inoffensive man.",
     "exampleZh": "他是個溫和有禮的男人。"
@@ -29901,7 +29901,7 @@ const externalVocabularyDB = [
     "id": 3323,
     "en": "miserable",
     "kk": "[ˋmɪzɚəbəl]",
-    "zh": "adj. 悽慘的;悲哀的",
+    "zh": "adj. 悽慘的；悲哀的",
     "unit": 4,
     "example": "They ended by making themselves miserable.",
     "exampleZh": "他們到頭來把自己弄慘了。"
@@ -29910,7 +29910,7 @@ const externalVocabularyDB = [
     "id": 3324,
     "en": "moderate",
     "kk": "[ˋmɑdɚət]",
-    "zh": "adj. 中等的,適度的",
+    "zh": "adj. 中等的、適度的",
     "unit": 4,
     "example": "The team enjoyed only moderate success last season.",
     "exampleZh": "上個賽季，這個隊伍只取得了中等成績。"
@@ -29919,7 +29919,7 @@ const externalVocabularyDB = [
     "id": 3325,
     "en": "modest",
     "kk": "[ˋmɑdəst]",
-    "zh": "adj. 審慎的;適度的",
+    "zh": "adj. 審慎的；適度的",
     "unit": 4,
     "example": "She's very modest about her success.",
     "exampleZh": "她對自己的成功非常謙虛。"
@@ -29928,16 +29928,16 @@ const externalVocabularyDB = [
     "id": 3326,
     "en": "mountainous",
     "kk": "[ˋmaʊntənəs]",
-    "zh": "adj. 多山的;巨大的",
+    "zh": "adj. 多山的；巨大的",
     "unit": 4,
-    "example": "Can you use the word mountainous in a sentence?",
-    "exampleZh": "你能在句子中使用「巨大的」這個詞嗎？"
+    "example": "The hikers admired the breathtaking vista of the rugged mountainous territory.",
+    "exampleZh": "登山客讚嘆這片崎嶇多山地區令人屏息的壯麗景色。"
   },
   {
     "id": 3327,
     "en": "muddy",
     "kk": "[ˋmʌdi]",
-    "zh": "adj. 多爛泥的;泥濘的",
+    "zh": "adj. 多爛泥的；泥濘的",
     "unit": 4,
     "example": "The muddy water slowly cleared.",
     "exampleZh": "渾濁的水慢慢變得清澈起來。"
@@ -29946,7 +29946,7 @@ const externalVocabularyDB = [
     "id": 3328,
     "en": "multiple",
     "kk": "[ˋmʌltəpəl]",
-    "zh": "adj. 複合的;多樣的",
+    "zh": "adj. 複合的；多樣的",
     "unit": 4,
     "example": "She suffered multiple lacerations to the face.",
     "exampleZh": "她的面部多處被劃傷。"
@@ -29955,7 +29955,7 @@ const externalVocabularyDB = [
     "id": 3329,
     "en": "mutual",
     "kk": "[ˋmjutʃuəl]",
-    "zh": "adj. 相互的;共同的",
+    "zh": "adj. 相互的；共同的",
     "unit": 4,
     "example": "Our relationship was based on mutual dependence.",
     "exampleZh": "我們的關係建立在相互依存的基礎上。"
@@ -29964,7 +29964,7 @@ const externalVocabularyDB = [
     "id": 3330,
     "en": "mysterious",
     "kk": "[mɪˋstɪriəs]",
-    "zh": "adj. 神祕的;不可思議的",
+    "zh": "adj. 神祕的；不可思議的",
     "unit": 4,
     "example": "The ship sank in mysterious circumstances.",
     "exampleZh": "那艘船神秘地沉沒了。"
@@ -29991,7 +29991,7 @@ const externalVocabularyDB = [
     "id": 3333,
     "en": "nuclear",
     "kk": "[ˋnukliɚ]",
-    "zh": "adj. 原子能的;細胞核的",
+    "zh": "adj. 原子能的；細胞核的",
     "unit": 4,
     "example": "Nuclear power is cleaner than coal.",
     "exampleZh": "核能比煤更清潔。"
@@ -30000,7 +30000,7 @@ const externalVocabularyDB = [
     "id": 3334,
     "en": "numerous",
     "kk": "[ˋnumɚəs]",
-    "zh": "adj. 許多的,很多的",
+    "zh": "adj. 許多的、很多的",
     "unit": 4,
     "example": "Numerous marriages now end in divorce.",
     "exampleZh": "現在許多婚姻都以離婚而告終。"
@@ -30009,7 +30009,7 @@ const externalVocabularyDB = [
     "id": 3335,
     "en": "obedient",
     "kk": "[oˋbidiənt]",
-    "zh": "adj. 服從的,順從的",
+    "zh": "adj. 服從的、順從的",
     "unit": 4,
     "example": "He was always obedient to his father's wishes.",
     "exampleZh": "他一向順從父親的意願。"
@@ -30018,7 +30018,7 @@ const externalVocabularyDB = [
     "id": 3336,
     "en": "occasional",
     "kk": "[əˋkeʒənəl]",
-    "zh": "adj. 偶爾的,非經常的",
+    "zh": "adj. 偶爾的、非經常的",
     "unit": 4,
     "example": "She went on occasional drinking binges.",
     "exampleZh": "她偶爾狂飲一番。"
@@ -30027,7 +30027,7 @@ const externalVocabularyDB = [
     "id": 3337,
     "en": "offensive",
     "kk": "[əˋfɛnsɪv]",
-    "zh": "adj. 冒犯的,唐突的",
+    "zh": "adj. 冒犯的、唐突的",
     "unit": 4,
     "example": "They launched the offensive on January 10.",
     "exampleZh": "他們於1月10日發動了進攻。"
@@ -30045,7 +30045,7 @@ const externalVocabularyDB = [
     "id": 3339,
     "en": "outstanding",
     "kk": "[͵aʊtˋstændɪŋ]",
-    "zh": "adj. 傑出的;未償付的",
+    "zh": "adj. 傑出的；未償付的",
     "unit": 4,
     "example": "He is unarguably an outstanding man.",
     "exampleZh": "毋庸置疑，他是一個出色的人。"
@@ -30054,7 +30054,7 @@ const externalVocabularyDB = [
     "id": 3340,
     "en": "partial",
     "kk": "[ˋpɑrʃəl]",
-    "zh": "adj. 部分的,局部的;不完全的",
+    "zh": "adj. 部分的、局部的；不完全的",
     "unit": 4,
     "example": "I might be accused of being partial.",
     "exampleZh": "我可能會被人指責是偏袒的。"
@@ -30063,7 +30063,7 @@ const externalVocabularyDB = [
     "id": 3341,
     "en": "passive",
     "kk": "[ˋpæsɪv]",
-    "zh": "adj. 被動的;消極的",
+    "zh": "adj. 被動的；消極的",
     "unit": 4,
     "example": "Campaigners handed out leaflets on passive smoking.",
     "exampleZh": "發起人分發了關於被動吸菸的傳單。"
@@ -30072,7 +30072,7 @@ const externalVocabularyDB = [
     "id": 3342,
     "en": "peculiar",
     "kk": "[pəˋkjuljɚ]",
-    "zh": "adj. 奇怪的;乖癖的",
+    "zh": "adj. 奇怪的；乖癖的",
     "unit": 4,
     "example": "I had a peculiar feeling we'd met before.",
     "exampleZh": "我有一種奇怪的感覺，覺得我們以前見過面。"
@@ -30081,7 +30081,7 @@ const externalVocabularyDB = [
     "id": 3343,
     "en": "permanent",
     "kk": "[ˋpɝmənənt]",
-    "zh": "adj. 永久的,永恆的;永遠的",
+    "zh": "adj. 永久的、永恆的；永遠的",
     "unit": 4,
     "example": "The accident has not done any permanent damage.",
     "exampleZh": "那場事故沒有造成什麼永久性損傷。"
@@ -30126,7 +30126,7 @@ const externalVocabularyDB = [
     "id": 3348,
     "en": "plentiful",
     "kk": "[ˋplɛntəfəl]",
-    "zh": "adj. 豐富的,充足的;多的",
+    "zh": "adj. 豐富的、充足的；多的",
     "unit": 4,
     "example": "Rainfall is plentiful in the area.",
     "exampleZh": "這個地區雨量充足。"
@@ -30135,7 +30135,7 @@ const externalVocabularyDB = [
     "id": 3349,
     "en": "poisonous",
     "kk": "[ˋpɔɪzənəs]",
-    "zh": "adj. 有毒的;有害的",
+    "zh": "adj. 有毒的；有害的",
     "unit": 4,
     "example": "This gas is highly poisonous.",
     "exampleZh": "這種氣體有劇毒。"
@@ -30144,7 +30144,7 @@ const externalVocabularyDB = [
     "id": 3350,
     "en": "portable",
     "kk": "[ˋpɔrtəbəl]",
-    "zh": "adj. 手提式的;輕便的",
+    "zh": "adj. 手提式的；輕便的",
     "unit": 4,
     "example": "This portable seat folds flat for easy storage.",
     "exampleZh": "這張行動式座椅可折平，便於存放。"
@@ -30153,7 +30153,7 @@ const externalVocabularyDB = [
     "id": 3351,
     "en": "precise",
     "kk": "[prɪˋsaɪs]",
-    "zh": "adj. 精確的;準確的",
+    "zh": "adj. 精確的；準確的",
     "unit": 4,
     "example": "She gave me clear and precise directions.",
     "exampleZh": "她給了我清晰而準確的指示。"
@@ -30162,7 +30162,7 @@ const externalVocabularyDB = [
     "id": 3352,
     "en": "preferable",
     "kk": "[ˋprɛfɚəbəl]",
-    "zh": "adj. 更可取的,更合意的",
+    "zh": "adj. 更可取的、更合意的",
     "unit": 4,
     "example": "Housing the crew in a watertight cabin is obviously preferable.",
     "exampleZh": "將船員安置在水密艙中顯然是更可取的。"
@@ -30180,7 +30180,7 @@ const externalVocabularyDB = [
     "id": 3354,
     "en": "primitive",
     "kk": "[ˋprɪmətɪv]",
-    "zh": "adj. 原始的;遠古的;早期的",
+    "zh": "adj. 原始的；遠古的；早期的",
     "unit": 4,
     "example": "Duffy's primitive guitar playing is well below par.",
     "exampleZh": "達菲簡單的吉他演奏遠遠低於預期的標準。"
@@ -30189,7 +30189,7 @@ const externalVocabularyDB = [
     "id": 3355,
     "en": "productive",
     "kk": "[prəˋdʌktɪv]",
-    "zh": "adj. 生產的,生產性的",
+    "zh": "adj. 生產的、生產性的",
     "unit": 4,
     "example": "It is fertile and productive.",
     "exampleZh": "它肥沃多產。"
@@ -30207,7 +30207,7 @@ const externalVocabularyDB = [
     "id": 3357,
     "en": "prominent",
     "kk": "[ˋprɑmənənt]",
-    "zh": "adj. 卓越的,著名的",
+    "zh": "adj. 卓越的、著名的",
     "unit": 4,
     "example": "He had an angular face with prominent cheekbones.",
     "exampleZh": "他有一張顴骨突出、稜角分明的臉。"
@@ -30216,7 +30216,7 @@ const externalVocabularyDB = [
     "id": 3358,
     "en": "promising",
     "kk": "[ˋprɑməsɪŋ]",
-    "zh": "adj. 有希望的,有前途的",
+    "zh": "adj. 有希望的、有前途的",
     "unit": 4,
     "example": "He was voted most promising new director.",
     "exampleZh": "他當選為最有前途的新導演。"
@@ -30225,7 +30225,7 @@ const externalVocabularyDB = [
     "id": 3359,
     "en": "prosperous",
     "kk": "[ˋprɑspɚəs]",
-    "zh": "adj. 興旺的,繁榮的,昌盛的",
+    "zh": "adj. 興旺的、繁榮的,昌盛的",
     "unit": 4,
     "example": "Dirty streets are no advertisement for a prosperous society.",
     "exampleZh": "骯髒的街道絕不是繁榮社會的景象。"
@@ -30234,7 +30234,7 @@ const externalVocabularyDB = [
     "id": 3360,
     "en": "psychological",
     "kk": "[͵saɪkəˋlɑdʒɪkəl]",
-    "zh": "adj. 心理的,精神的",
+    "zh": "adj. 心理的、精神的",
     "unit": 4,
     "example": "The problem was psychological rather than physiological.",
     "exampleZh": "這是個心理而不是生理問題。"
@@ -30252,7 +30252,7 @@ const externalVocabularyDB = [
     "id": 3362,
     "en": "reluctant",
     "kk": "[rɪˋlʌktənt]",
-    "zh": "adj. 不情願的;勉強的",
+    "zh": "adj. 不情願的；勉強的",
     "unit": 4,
     "example": "Mr. Spero was reluctant to ask for help.",
     "exampleZh": "斯珀洛先生不願意請求幫助。"
@@ -30261,7 +30261,7 @@ const externalVocabularyDB = [
     "id": 3363,
     "en": "remarkable",
     "kk": "[rɪˋmɑrkəbəl]",
-    "zh": "adj. 非凡的;卓越的",
+    "zh": "adj. 非凡的；卓越的",
     "unit": 4,
     "example": "He was a remarkable man.",
     "exampleZh": "他是個非凡卓越的人。"
@@ -30270,7 +30270,7 @@ const externalVocabularyDB = [
     "id": 3364,
     "en": "respectable",
     "kk": "[rɪˋspɛktəbəl]",
-    "zh": "adj. 值得尊敬的;體面的",
+    "zh": "adj. 值得尊敬的；體面的",
     "unit": 4,
     "example": "He came from a perfectly respectable middle-class family.",
     "exampleZh": "他來自一個非常體面的中產階級家庭。"
@@ -30279,7 +30279,7 @@ const externalVocabularyDB = [
     "id": 3365,
     "en": "respectful",
     "kk": "[rɪˋspɛktfəl]",
-    "zh": "adj. 恭敬的;尊敬人的",
+    "zh": "adj. 恭敬的；尊敬人的",
     "unit": 4,
     "example": "He was very respectful at home and obedient to his parents.",
     "exampleZh": "他在家裡很尊重人而且順從父母。"
@@ -30288,7 +30288,7 @@ const externalVocabularyDB = [
     "id": 3366,
     "en": "rural",
     "kk": "[ˋrʊrəl]",
-    "zh": "adj. 農村的;田園的",
+    "zh": "adj. 農村的；田園的",
     "unit": 4,
     "example": "It was a delightful rural scene.",
     "exampleZh": "那是賞心悅目的鄉村風光。"
@@ -30297,7 +30297,7 @@ const externalVocabularyDB = [
     "id": 3367,
     "en": "severe",
     "kk": "[səˋvɪr]",
-    "zh": "adj. 嚴重的;劇烈的",
+    "zh": "adj. 嚴重的；劇烈的",
     "unit": 4,
     "example": "The patient suffered severe brain trauma.",
     "exampleZh": "患者的大腦受到嚴重損傷。"
@@ -30306,7 +30306,7 @@ const externalVocabularyDB = [
     "id": 3368,
     "en": "shameful",
     "kk": "[ˋʃemfəl]",
-    "zh": "adj. 可恥的,丟臉的",
+    "zh": "adj. 可恥的、丟臉的",
     "unit": 4,
     "example": "It's shameful for him to tell a lie.",
     "exampleZh": "對他來說，撒謊是可恥的。"
@@ -30315,7 +30315,7 @@ const externalVocabularyDB = [
     "id": 3369,
     "en": "shortsighted",
     "kk": "[ˋʃɔrtˋsaɪtɪd]",
-    "zh": "adj. 近視的;目光短淺的,缺乏遠見的",
+    "zh": "adj. 近視的；目光短淺的、缺乏遠見的",
     "unit": 4,
     "example": "As you get older, you may become long-sighted or shortsighted.",
     "exampleZh": "隨著年齡的增長，你可能變得遠視或近視。"
@@ -30324,7 +30324,7 @@ const externalVocabularyDB = [
     "id": 3370,
     "en": "solar",
     "kk": "[ˋsolɚ]",
-    "zh": "adj. 太陽的;日光的",
+    "zh": "adj. 太陽的；日光的",
     "unit": 4,
     "example": "Solar panels trap energy from the sun.",
     "exampleZh": "太陽能電池板吸收太陽能。"
@@ -30333,7 +30333,7 @@ const externalVocabularyDB = [
     "id": 3371,
     "en": "sorrowful",
     "kk": "[ˋsɑrofəl]",
-    "zh": "adj. 悲傷的;令人傷心的",
+    "zh": "adj. 悲傷的；令人傷心的",
     "unit": 4,
     "example": "His father's face looked suddenly soft and sorrowful.",
     "exampleZh": "他父親的面容忽然變得溫柔而悲傷。"
@@ -30342,7 +30342,7 @@ const externalVocabularyDB = [
     "id": 3372,
     "en": "spicy",
     "kk": "[ˋspaɪsi]",
-    "zh": "adj. 辛辣的;痛快的",
+    "zh": "adj. 辛辣的；痛快的",
     "unit": 4,
     "example": "Thai food is hot and spicy.",
     "exampleZh": "泰國食品很辛辣。"
@@ -30351,7 +30351,7 @@ const externalVocabularyDB = [
     "id": 3373,
     "en": "spiritual",
     "kk": "[ˋspɪrɪ͵tʃuəl]",
-    "zh": "adj. 心靈的;崇高純潔的",
+    "zh": "adj. 心靈的；崇高純潔的",
     "unit": 4,
     "example": "He is the spiritual leader of the world's Catholics.",
     "exampleZh": "他是世界天主教的宗教領袖。"
@@ -30360,7 +30360,7 @@ const externalVocabularyDB = [
     "id": 3374,
     "en": "splendid",
     "kk": "[ˋsplɛndɪd]",
-    "zh": "adj. 燦爛的;傑出的",
+    "zh": "adj. 燦爛的；傑出的",
     "unit": 4,
     "example": "The book includes a wealth of splendid photographs.",
     "exampleZh": "這本書有大量非常好的照片。"
@@ -30378,7 +30378,7 @@ const externalVocabularyDB = [
     "id": 3376,
     "en": "suspicious",
     "kk": "[səˋspɪʃəs]",
-    "zh": "adj. 猜疑的,疑心的;多疑的",
+    "zh": "adj. 猜疑的、疑心的；多疑的",
     "unit": 4,
     "example": "I'm suspicious of his motives.",
     "exampleZh": "我懷疑他的動機。"
@@ -30387,7 +30387,7 @@ const externalVocabularyDB = [
     "id": 3377,
     "en": "sympathetic",
     "kk": "[͵sɪmpəˋθɛtɪk]",
-    "zh": "adj. 同情的;有同情心的",
+    "zh": "adj. 同情的；有同情心的",
     "unit": 4,
     "example": "Tourists are, in the main, sympathetic people.",
     "exampleZh": "遊客們大都是有同情心的人。"
@@ -30396,7 +30396,7 @@ const externalVocabularyDB = [
     "id": 3378,
     "en": "systematic",
     "kk": "[͵sɪstəˋmætɪk]",
-    "zh": "adj. 有系統的;成體系的",
+    "zh": "adj. 有系統的；成體系的",
     "unit": 4,
     "example": "They commenced a systematic search.",
     "exampleZh": "他們開始了系統的搜查。"
@@ -30405,7 +30405,7 @@ const externalVocabularyDB = [
     "id": 3379,
     "en": "technological",
     "kk": "[͵tɛknəˋlɑdʒɪkəl]",
-    "zh": "adj. 技術(學)的,工藝(學)的",
+    "zh": "adj. 技術(學)的、工藝(學)的",
     "unit": 4,
     "example": "A new technological age had dawned.",
     "exampleZh": "新技術時代已經開始。"
@@ -30414,7 +30414,7 @@ const externalVocabularyDB = [
     "id": 3380,
     "en": "thorough",
     "kk": "[ˋθɝo]",
-    "zh": "adj. 徹底的;完全的",
+    "zh": "adj. 徹底的；完全的",
     "unit": 4,
     "example": "We are making a thorough investigation.",
     "exampleZh": "我們正在進行徹底的調查。"
@@ -30432,7 +30432,7 @@ const externalVocabularyDB = [
     "id": 3382,
     "en": "timid",
     "kk": "[ˋtɪmɪd]",
-    "zh": "adj. 膽小的;羞怯的",
+    "zh": "adj. 膽小的；羞怯的",
     "unit": 4,
     "example": "Normally timid, they rarely stray far from their burrows.",
     "exampleZh": "它們通常很膽小，極少遠離自己的洞穴。"
@@ -30450,7 +30450,7 @@ const externalVocabularyDB = [
     "id": 3384,
     "en": "tolerable",
     "kk": "[ˋtɑlɚəbəl]",
-    "zh": "adj. 可忍受的;可容忍的",
+    "zh": "adj. 可忍受的；可容忍的",
     "unit": 4,
     "example": "At times, the heat was barely tolerable.",
     "exampleZh": "有時天氣炎熱得幾乎令人難以忍受。"
@@ -30459,7 +30459,7 @@ const externalVocabularyDB = [
     "id": 3385,
     "en": "tolerant",
     "kk": "[ˋtɑlɚənt]",
-    "zh": "adj. 忍受的,容忍的",
+    "zh": "adj. 忍受的、容忍的",
     "unit": 4,
     "example": "Is she more mellow and tolerant?",
     "exampleZh": "她更平和、更寬容了嗎？"
@@ -30468,7 +30468,7 @@ const externalVocabularyDB = [
     "id": 3386,
     "en": "tough",
     "kk": "[tʌf]",
-    "zh": "adj. 堅韌的,牢固的;頑固的;棘手的",
+    "zh": "adj. 堅韌的、牢固的；頑固的；棘手的",
     "unit": 4,
     "example": "She's hard-boiled, tough, and funny.",
     "exampleZh": "她冷峻、堅韌而風趣。"
@@ -30477,7 +30477,7 @@ const externalVocabularyDB = [
     "id": 3387,
     "en": "tragic",
     "kk": "[ˋtrædʒɪk]",
-    "zh": "adj. 悲慘的,不幸的",
+    "zh": "adj. 悲慘的、不幸的",
     "unit": 4,
     "example": "The novel is comic and tragic.",
     "exampleZh": "這本小說兼有喜劇和悲劇的特點。"
@@ -30486,7 +30486,7 @@ const externalVocabularyDB = [
     "id": 3388,
     "en": "tremendous",
     "kk": "[trəˋmɛndəs]",
-    "zh": "adj. 巨大的;極度的,驚人的",
+    "zh": "adj. 巨大的；極度的、驚人的",
     "unit": 4,
     "example": "It was a tremendous experience.",
     "exampleZh": "這是個了不起的經歷。"
@@ -30495,7 +30495,7 @@ const externalVocabularyDB = [
     "id": 3389,
     "en": "tribal",
     "kk": "[ˋtraɪbəl]",
-    "zh": "adj. 部落的;種族的",
+    "zh": "adj. 部落的；種族的",
     "unit": 4,
     "example": "What is your tribal town?",
     "exampleZh": "你的部落城鎮是什麼？"
@@ -30504,7 +30504,7 @@ const externalVocabularyDB = [
     "id": 3390,
     "en": "troublesome",
     "kk": "[ˋtrʌbəlsəm]",
-    "zh": "adj. 麻煩的,棘手的",
+    "zh": "adj. 麻煩的、棘手的",
     "unit": 4,
     "example": "Tom's whole class were of a pattern--restless, noisy, and troublesome.",
     "exampleZh": "湯姆的整個班級都是一個模式——躁動不安、吵吵鬧鬧、麻煩不斷。"
@@ -30522,7 +30522,7 @@ const externalVocabularyDB = [
     "id": 3392,
     "en": "urgent",
     "kk": "[ˋɝdʒənt]",
-    "zh": "adj. 緊急的,急迫的",
+    "zh": "adj. 緊急的、急迫的",
     "unit": 4,
     "example": "This condition requires urgent treatment.",
     "exampleZh": "這種情況得緊急處理。"
@@ -30531,7 +30531,7 @@ const externalVocabularyDB = [
     "id": 3393,
     "en": "vain",
     "kk": "[ven]",
-    "zh": "adj. 愛虛榮的;徒然的",
+    "zh": "adj. 愛虛榮的；徒然的",
     "unit": 4,
     "example": "He was vain and bombastic.",
     "exampleZh": "他既虛榮又浮誇。"
@@ -30540,7 +30540,7 @@ const externalVocabularyDB = [
     "id": 3394,
     "en": "vast",
     "kk": "[væst]",
-    "zh": "adj. 廣闊的,浩瀚的;非常的",
+    "zh": "adj. 廣闊的、浩瀚的；非常的",
     "unit": 4,
     "example": "His business empire was vast.",
     "exampleZh": "他的企業規模龐大。"
@@ -30558,7 +30558,7 @@ const externalVocabularyDB = [
     "id": 3396,
     "en": "visual",
     "kk": "[ˋvɪʒəwəl]",
-    "zh": "adj. 視力的;光學的",
+    "zh": "adj. 視力的；光學的",
     "unit": 4,
     "example": "We work on improving visual acuity.",
     "exampleZh": "我們致力於提高視覺敏銳度。"
@@ -30567,7 +30567,7 @@ const externalVocabularyDB = [
     "id": 3397,
     "en": "vital",
     "kk": "[ˋvaɪtəl]",
-    "zh": "adj. 充滿活力的;致命的",
+    "zh": "adj. 充滿活力的；致命的",
     "unit": 4,
     "example": "Tourism is vital for the economy.",
     "exampleZh": "旅遊業對於經濟至關重要。"
@@ -30585,7 +30585,7 @@ const externalVocabularyDB = [
     "id": 3399,
     "en": "youthful",
     "kk": "[ˋjuθfəl]",
-    "zh": "adj. 年輕的;富青春活力的",
+    "zh": "adj. 年輕的；富青春活力的",
     "unit": 4,
     "example": "She's a very youthful 65.",
     "exampleZh": "她65歲了，但顯得非常年輕。"
@@ -30612,7 +30612,7 @@ const externalVocabularyDB = [
     "id": 3402,
     "en": "accompany",
     "kk": "[əˋkʌmpəni]",
-    "zh": "v. 陪同;伴隨",
+    "zh": "v. 陪同；伴隨",
     "unit": 4,
     "example": "Government monitors will continue to accompany reporters.",
     "exampleZh": "政府監督員們將繼續陪同記者們。"
@@ -30621,7 +30621,7 @@ const externalVocabularyDB = [
     "id": 3403,
     "en": "accomplish",
     "kk": "[əˋkɑmplɪʃ]",
-    "zh": "v. 完成;實現;達到",
+    "zh": "v. 完成；實現；達到",
     "unit": 4,
     "example": "What do you want to accomplish? By when?",
     "exampleZh": "你想要完成什麼？截止到什麼時候？"
@@ -30639,7 +30639,7 @@ const externalVocabularyDB = [
     "id": 3405,
     "en": "acquaint",
     "kk": "[əkˋwent]",
-    "zh": "v. 使認識;使熟悉",
+    "zh": "v. 使認識；使熟悉",
     "unit": 4,
     "example": "You will first need to acquaint yourself with the filing system.",
     "exampleZh": "你首先需要熟悉檔案歸檔方法。"
@@ -30666,7 +30666,7 @@ const externalVocabularyDB = [
     "id": 3408,
     "en": "adjust",
     "kk": "[əˋdʒʌst]",
-    "zh": "v. 校準;調整;適應",
+    "zh": "v. 校準；調整；適應",
     "unit": 4,
     "example": "How did you adjust to college life?",
     "exampleZh": "你是怎麼適應大學生活的？"
@@ -30675,7 +30675,7 @@ const externalVocabularyDB = [
     "id": 3409,
     "en": "amuse",
     "kk": "[əˋmjuz]",
-    "zh": "v. 逗...高興",
+    "zh": "v. 逗……高興",
     "unit": 4,
     "example": "This will amuse you.",
     "exampleZh": "這個會逗你笑的。"
@@ -30729,7 +30729,7 @@ const externalVocabularyDB = [
     "id": 3415,
     "en": "arouse",
     "kk": "[ɚˋaʊz]",
-    "zh": "v. 喚起;激動;叫醒",
+    "zh": "v. 喚起；激動；叫醒",
     "unit": 4,
     "example": "They arouse the interest of all the readers.",
     "exampleZh": "它們引起了所有讀者的興趣。"
@@ -30738,7 +30738,7 @@ const externalVocabularyDB = [
     "id": 3416,
     "en": "assemble",
     "kk": "[əˋsɛmbəl]",
-    "zh": "v. 集合,召集",
+    "zh": "v. 集合、召集",
     "unit": 4,
     "example": "The cupboard is easy to assemble.",
     "exampleZh": "這個櫥櫃容易組裝。"
@@ -30783,7 +30783,7 @@ const externalVocabularyDB = [
     "id": 3421,
     "en": "await",
     "kk": "[əˋwet]",
-    "zh": "v. 等候,期待",
+    "zh": "v. 等候、期待",
     "unit": 4,
     "example": "We eagerly await the sound of the engines.",
     "exampleZh": "我們急切地等待引擎的轟鳴聲。"
@@ -30792,7 +30792,7 @@ const externalVocabularyDB = [
     "id": 3422,
     "en": "broil",
     "kk": "[brɔɪl]",
-    "zh": "v. 烤;炙",
+    "zh": "v. 烤；炙",
     "unit": 4,
     "example": "Broil, bake or poach it with dill.",
     "exampleZh": "烤，烘或加香料水煮。"
@@ -30810,7 +30810,7 @@ const externalVocabularyDB = [
     "id": 3424,
     "en": "carve",
     "kk": "[kɑrv]",
-    "zh": "v. 刻,雕刻",
+    "zh": "v. 刻、雕刻",
     "unit": 4,
     "example": "They began to carve separate letters.",
     "exampleZh": "他們開始雕刻獨立的字母。"
@@ -30819,7 +30819,7 @@ const externalVocabularyDB = [
     "id": 3425,
     "en": "cherish",
     "kk": "[ˋtʃɛrɪʃ]",
-    "zh": "v. 撫育;愛護",
+    "zh": "v. 撫育；愛護",
     "unit": 4,
     "example": "Time is valuable, and we should cherish it.",
     "exampleZh": "時間寶貴，我們應該珍惜時間。"
@@ -30828,7 +30828,7 @@ const externalVocabularyDB = [
     "id": 3426,
     "en": "circulate",
     "kk": "[ˋsɝkjə͵let]",
-    "zh": "v. 流通;發行",
+    "zh": "v. 流通；發行",
     "unit": 4,
     "example": "Rumours began to circulate about his financial problems.",
     "exampleZh": "有關他財務困難的謠言開始流傳開來。"
@@ -30837,7 +30837,7 @@ const externalVocabularyDB = [
     "id": 3427,
     "en": "clarify",
     "kk": "[ˋklɛrə͵faɪ]",
-    "zh": "v. 澄清;闡明",
+    "zh": "v. 澄清；闡明",
     "unit": 4,
     "example": "I hope you could clarify a few things for me.",
     "exampleZh": "我希望你能幫我澄清幾件事。"
@@ -30846,7 +30846,7 @@ const externalVocabularyDB = [
     "id": 3428,
     "en": "classify",
     "kk": "[ˋklæsə͵faɪ]",
-    "zh": "v. 將...分類",
+    "zh": "v. 將……分類",
     "unit": 4,
     "example": "These weird diets are hard to classify.",
     "exampleZh": "這些奇怪的飲食習慣很難歸類。"
@@ -30855,7 +30855,7 @@ const externalVocabularyDB = [
     "id": 3429,
     "en": "commit",
     "kk": "[kəˋmɪt]",
-    "zh": "v. 使作出保證;犯(罪),做(錯事等)",
+    "zh": "v. 使作出保證；犯(罪),做(錯事等)",
     "unit": 4,
     "example": "You don't have to commit yourself now, just think about it.",
     "exampleZh": "你不必現在表態，只需考慮一下這件事。"
@@ -30873,7 +30873,7 @@ const externalVocabularyDB = [
     "id": 3431,
     "en": "compose",
     "kk": "[kəmˋpoz]",
-    "zh": "v. 作(詩,曲等);構(圖)",
+    "zh": "v. 作(詩、曲等)；構(圖)",
     "unit": 4,
     "example": "Ten men compose the committee.",
     "exampleZh": "委員會由十人組成。"
@@ -30882,7 +30882,7 @@ const externalVocabularyDB = [
     "id": 3432,
     "en": "concentrate",
     "kk": "[ˋkɑnsən͵tret]",
-    "zh": "v. 濃縮;全神貫注",
+    "zh": "v. 濃縮；全神貫注",
     "unit": 4,
     "example": "We need to concentrate on our core business.",
     "exampleZh": "我們需要集中在核心業務上。"
@@ -30891,7 +30891,7 @@ const externalVocabularyDB = [
     "id": 3433,
     "en": "confess",
     "kk": "[kənˋfɛs]",
-    "zh": "v. 坦白,供認,承認",
+    "zh": "v. 坦白、供認,承認",
     "unit": 4,
     "example": "We persuaded her to confess her crime.",
     "exampleZh": "我們說服她坦白她的罪行。"
@@ -30900,7 +30900,7 @@ const externalVocabularyDB = [
     "id": 3434,
     "en": "confine",
     "kk": "[kənˋfaɪn]",
-    "zh": "v. 限制;使局限",
+    "zh": "v. 限制；使局限",
     "unit": 4,
     "example": "He did not confine himself to the one language.",
     "exampleZh": "他沒把自己侷限於這一門語言。"
@@ -30909,7 +30909,7 @@ const externalVocabularyDB = [
     "id": 3435,
     "en": "congratulate",
     "kk": "[kənˋætʃə͵let]",
-    "zh": "v. 祝賀;恭禧",
+    "zh": "v. 祝賀；恭禧",
     "unit": 4,
     "example": "I congratulate all of you on this achievement.",
     "exampleZh": "我祝賀你們的這一成就。"
@@ -30918,7 +30918,7 @@ const externalVocabularyDB = [
     "id": 3436,
     "en": "conquer",
     "kk": "[ˋkɑŋkɚ]",
-    "zh": "v. 克服;征服",
+    "zh": "v. 克服；征服",
     "unit": 4,
     "example": "The band is now setting out to conquer the world.",
     "exampleZh": "這支樂隊現在要去征服世界。"
@@ -30927,7 +30927,7 @@ const externalVocabularyDB = [
     "id": 3437,
     "en": "consist",
     "kk": "[kənˋsɪst]",
-    "zh": "v. 組成,構成",
+    "zh": "v. 組成、構成",
     "unit": 4,
     "example": "True education does not consist in simply being taught facts.",
     "exampleZh": "真正的教育並不在於簡單地講授事實。"
@@ -30936,7 +30936,7 @@ const externalVocabularyDB = [
     "id": 3438,
     "en": "constitute",
     "kk": "[ˋkɑnstə͵tut]",
-    "zh": "v. 構成,組成",
+    "zh": "v. 構成、組成",
     "unit": 4,
     "example": "Both of these lobes together constitute a pi bond.",
     "exampleZh": "上下兩片葉一起組成了一根 π 鍵。"
@@ -30945,7 +30945,7 @@ const externalVocabularyDB = [
     "id": 3439,
     "en": "construct",
     "kk": "[kənˋstrʌkt]",
-    "zh": "v. 建造,構成",
+    "zh": "v. 建造、構成",
     "unit": 4,
     "example": "Volunteers will help to construct a boardwalk around two ponds.",
     "exampleZh": "志願者們將幫助在兩個池塘周圍修建一條木板步道。"
@@ -30954,7 +30954,7 @@ const externalVocabularyDB = [
     "id": 3440,
     "en": "consult",
     "kk": "[kənˋsʌlt]",
-    "zh": "v. 與...商量",
+    "zh": "v. 與……商量",
     "unit": 4,
     "example": "He needed to consult with an attorney.",
     "exampleZh": "他需要和律師諮詢。"
@@ -30963,7 +30963,7 @@ const externalVocabularyDB = [
     "id": 3441,
     "en": "consume",
     "kk": "[kənˋsum]",
-    "zh": "v. 消耗,花費;耗盡",
+    "zh": "v. 消耗、花費；耗盡",
     "unit": 4,
     "example": "They consume plenty of cereal for breakfast.",
     "exampleZh": "他們早餐吃大量麥片。"
@@ -30972,7 +30972,7 @@ const externalVocabularyDB = [
     "id": 3442,
     "en": "contribute",
     "kk": "[kənˋtrɪbjut]",
-    "zh": "v. 捐獻,捐助;貢獻,出力",
+    "zh": "v. 捐獻、捐助；貢獻、出力",
     "unit": 4,
     "example": "Do you wish to contribute?",
     "exampleZh": "你想捐助嗎？"
@@ -30981,7 +30981,7 @@ const externalVocabularyDB = [
     "id": 3443,
     "en": "converse",
     "kk": "[ˋkɑnvɚs]",
-    "zh": "v. 交談,談話",
+    "zh": "v. 交談、談話",
     "unit": 4,
     "example": "The two deaf actors converse solely in signing.",
     "exampleZh": "兩位聾啞演員只靠打手勢語交談。"
@@ -30990,7 +30990,7 @@ const externalVocabularyDB = [
     "id": 3444,
     "en": "convey",
     "kk": "[kənˋve]",
-    "zh": "v. 運送;傳達",
+    "zh": "v. 運送；傳達",
     "unit": 4,
     "example": "Euclid was trying to convey his idea of a geometrical point.",
     "exampleZh": "歐幾里德正試圖表達他的一個幾何學觀點。"
@@ -30999,7 +30999,7 @@ const externalVocabularyDB = [
     "id": 3445,
     "en": "convince",
     "kk": "[kənˋvɪns]",
-    "zh": "v. 使信服;說服",
+    "zh": "v. 使信服；說服",
     "unit": 4,
     "example": "She utterly failed to convince them.",
     "exampleZh": "她根本沒有說服他們。"
@@ -31008,7 +31008,7 @@ const externalVocabularyDB = [
     "id": 3446,
     "en": "cooperate",
     "kk": "[koˋɑpɚ͵et]",
-    "zh": "v. 合作,協作;(事物)配合",
+    "zh": "v. 合作、協作；(事物)配合",
     "unit": 4,
     "example": "He indicated his willingness to cooperate.",
     "exampleZh": "他暗示願意合作。"
@@ -31026,7 +31026,7 @@ const externalVocabularyDB = [
     "id": 3448,
     "en": "correspond",
     "kk": "[͵kɔrəˋspɑnd]",
-    "zh": "v. 符合,一致",
+    "zh": "v. 符合、一致",
     "unit": 4,
     "example": "Your account and hers do not correspond.",
     "exampleZh": "你說的情況與她說的不相符。"
@@ -31035,7 +31035,7 @@ const externalVocabularyDB = [
     "id": 3449,
     "en": "cram",
     "kk": "[kræm]",
-    "zh": "v. 把...塞滿;死記硬背",
+    "zh": "v. 把……塞滿；死記硬背",
     "unit": 4,
     "example": "After school, I go to a cram school.",
     "exampleZh": "放學後，我會去補習班。"
@@ -31044,7 +31044,7 @@ const externalVocabularyDB = [
     "id": 3450,
     "en": "criticize",
     "kk": "[ˋkrɪtɪ͵saɪz]",
-    "zh": "v. 批評;批判;苛求",
+    "zh": "v. 批評；批判；苛求",
     "unit": 4,
     "example": "All you ever do is criticize!",
     "exampleZh": "你就知道批評！"
@@ -31053,7 +31053,7 @@ const externalVocabularyDB = [
     "id": 3451,
     "en": "declare",
     "kk": "[dɪkˋlɛr]",
-    "zh": "v. 宣佈,宣告",
+    "zh": "v. 宣佈、宣告",
     "unit": 4,
     "example": "I declare this festival open.",
     "exampleZh": "我宣佈慶祝活動開始。"
@@ -31062,7 +31062,7 @@ const externalVocabularyDB = [
     "id": 3452,
     "en": "defend",
     "kk": "[dɪˋfɛnd]",
-    "zh": "v. 防禦;保衛;保護",
+    "zh": "v. 防禦；保衛；保護",
     "unit": 4,
     "example": "How can you defend such behaviour?",
     "exampleZh": "你怎能為這種行為辯解呢？"
@@ -31080,7 +31080,7 @@ const externalVocabularyDB = [
     "id": 3454,
     "en": "depart",
     "kk": "[dɪˋpɑrt]",
-    "zh": "v. 起程,出發;離開,離去",
+    "zh": "v. 起程、出發；離開、離去",
     "unit": 4,
     "example": "All aboard! The ship is about to depart.",
     "exampleZh": "請各位上船！船就要離開了。"
@@ -31098,7 +31098,7 @@ const externalVocabularyDB = [
     "id": 3456,
     "en": "deserve",
     "kk": "[dɪˋzɝv]",
-    "zh": "v. 應受,該得",
+    "zh": "v. 應受、該得",
     "unit": 4,
     "example": "These proposals deserve careful study.",
     "exampleZh": "這些建議值得認真研究。"
@@ -31107,7 +31107,7 @@ const externalVocabularyDB = [
     "id": 3457,
     "en": "devise",
     "kk": "[dɪˋvaɪz]",
-    "zh": "v. 設計;發明",
+    "zh": "v. 設計；發明",
     "unit": 4,
     "example": "We build intricate habitats and devise complex recipes for our food.",
     "exampleZh": "我們建造複雜精細的居所，設計複雜的食譜。"
@@ -31116,7 +31116,7 @@ const externalVocabularyDB = [
     "id": 3458,
     "en": "devote",
     "kk": "[dɪˋvot]",
-    "zh": "v. 將...奉獻",
+    "zh": "v. 將……奉獻",
     "unit": 4,
     "example": "The original intention was to devote three months to the project.",
     "exampleZh": "最初的計劃是在這個專案上投入三個月的時間。"
@@ -31125,7 +31125,7 @@ const externalVocabularyDB = [
     "id": 3459,
     "en": "differ",
     "kk": "[ˋdɪfɚ]",
-    "zh": "v. 不同,相異",
+    "zh": "v. 不同、相異",
     "unit": 4,
     "example": "French and English differ in this respect.",
     "exampleZh": "在這方面法語和英語不同。"
@@ -31143,7 +31143,7 @@ const externalVocabularyDB = [
     "id": 3461,
     "en": "discourage",
     "kk": "[dɪˋskɝɪdʒ]",
-    "zh": "v. 使洩氣,使沮喪",
+    "zh": "v. 使洩氣、使沮喪",
     "unit": 4,
     "example": "His parents tried to discourage him from being an actor.",
     "exampleZh": "他的父母試圖阻止他去當演員。"
@@ -31152,7 +31152,7 @@ const externalVocabularyDB = [
     "id": 3462,
     "en": "dismiss",
     "kk": "[dɪˋsmɪs]",
-    "zh": "v. 解散,遣散;解雇;開除",
+    "zh": "v. 解散、遣散；解雇；開除",
     "unit": 4,
     "example": "I think we can safely dismiss their objections.",
     "exampleZh": "我認為我們對他們的異議完全可以不予理會。"
@@ -31161,7 +31161,7 @@ const externalVocabularyDB = [
     "id": 3463,
     "en": "distinguish",
     "kk": "[dɪˋstɪŋɡwɪʃ]",
-    "zh": "v. 區別;識別",
+    "zh": "v. 區別；識別",
     "unit": 4,
     "example": "Could he distinguish right from wrong?",
     "exampleZh": "他能辨別是非嗎？"
@@ -31170,7 +31170,7 @@ const externalVocabularyDB = [
     "id": 3464,
     "en": "distribute",
     "kk": "[dɪˋstrɪbjut]",
-    "zh": "v. 分發;分配",
+    "zh": "v. 分發；分配",
     "unit": 4,
     "example": "Aid workers helped distribute corn, milk and other staples.",
     "exampleZh": "救助人員協助分發穀物、牛奶及其他必需的食物。"
@@ -31179,7 +31179,7 @@ const externalVocabularyDB = [
     "id": 3465,
     "en": "disturb",
     "kk": "[dɪˋstɝb]",
-    "zh": "v. 妨礙,打擾",
+    "zh": "v. 妨礙、打擾",
     "unit": 4,
     "example": "I didn't like to disturb you.",
     "exampleZh": "我本不願打攪你。"
@@ -31188,7 +31188,7 @@ const externalVocabularyDB = [
     "id": 3466,
     "en": "dominate",
     "kk": "[ˋdɑmə͵net]",
-    "zh": "v. 支配,統治,控制",
+    "zh": "v. 支配、統治,控制",
     "unit": 4,
     "example": "The big companies dominate the lower price points.",
     "exampleZh": "大公司在低端價格領域占主導地位。"
@@ -31206,7 +31206,7 @@ const externalVocabularyDB = [
     "id": 3468,
     "en": "eliminate",
     "kk": "[ɪˋlɪmə͵net]",
-    "zh": "v. 排除,消除",
+    "zh": "v. 排除、消除",
     "unit": 4,
     "example": "This diet claims to eliminate toxins from the body.",
     "exampleZh": "這種飲食據稱具有排除體內毒素的作用。"
@@ -31224,7 +31224,7 @@ const externalVocabularyDB = [
     "id": 3470,
     "en": "emerge",
     "kk": "[ɪˋmɝdʒ]",
-    "zh": "v. 浮現;出現",
+    "zh": "v. 浮現；出現",
     "unit": 4,
     "example": "New things emerge day after day.",
     "exampleZh": "新的事物每天都在出現。"
@@ -31233,7 +31233,7 @@ const externalVocabularyDB = [
     "id": 3471,
     "en": "enclose",
     "kk": "[ɪnˋkloz]",
-    "zh": "v. 圍住;圈起",
+    "zh": "v. 圍住；圈起",
     "unit": 4,
     "example": "Please enclose your remittance, making checks payable to Valley Technology Services.",
     "exampleZh": "請隨信附上您的匯款，支票收款方為瓦利科技服務公司。"
@@ -31242,7 +31242,7 @@ const externalVocabularyDB = [
     "id": 3472,
     "en": "endanger",
     "kk": "[ɛnˋdendʒɚ]",
-    "zh": "v. 危及;使遭到危險",
+    "zh": "v. 危及；使遭到危險",
     "unit": 4,
     "example": "Development of the area would endanger wildlife.",
     "exampleZh": "開發這一地區將會危及野生生物。"
@@ -31251,7 +31251,7 @@ const externalVocabularyDB = [
     "id": 3473,
     "en": "endure",
     "kk": "[ɛndˋjʊr]",
-    "zh": "v. 忍耐,忍受",
+    "zh": "v. 忍耐、忍受",
     "unit": 4,
     "example": "He can't endure being defeated.",
     "exampleZh": "他無法忍受失敗。"
@@ -31260,7 +31260,7 @@ const externalVocabularyDB = [
     "id": 3474,
     "en": "enforce",
     "kk": "[ɛnˋfɔrs]",
-    "zh": "v. 實施,執行",
+    "zh": "v. 實施、執行",
     "unit": 4,
     "example": "The legislation will be difficult to enforce.",
     "exampleZh": "這一法規將難以實施。"
@@ -31269,7 +31269,7 @@ const externalVocabularyDB = [
     "id": 3475,
     "en": "enlarge",
     "kk": "[͵ɛnˋlɑrdʒ]",
-    "zh": "v. 擴大;擴展",
+    "zh": "v. 擴大；擴展",
     "unit": 4,
     "example": "Reading will enlarge your vocabulary.",
     "exampleZh": "閱讀能擴大詞彙量。"
@@ -31278,7 +31278,7 @@ const externalVocabularyDB = [
     "id": 3476,
     "en": "entertain",
     "kk": "[͵ɛntɚˋten]",
-    "zh": "v. 招待,款待",
+    "zh": "v. 招待、款待",
     "unit": 4,
     "example": "I don't like to entertain guests anymore.",
     "exampleZh": "我不再喜歡招待客人。"
@@ -31287,7 +31287,7 @@ const externalVocabularyDB = [
     "id": 3477,
     "en": "equip",
     "kk": "[ɪkˋwɪp]",
-    "zh": "v. 裝備,配備",
+    "zh": "v. 裝備、配備",
     "unit": 4,
     "example": "The charity provided money to staff and equip two hospitals.",
     "exampleZh": "這個慈善機構提供資金裝備了兩家醫院並配備了人員。"
@@ -31305,7 +31305,7 @@ const externalVocabularyDB = [
     "id": 3479,
     "en": "evaluate",
     "kk": "[ɪˋvælju͵et]",
-    "zh": "v. 對...評價",
+    "zh": "v. 對……評價",
     "unit": 4,
     "example": "The market situation is difficult to evaluate.",
     "exampleZh": "市場形勢難以評估。"
@@ -31314,7 +31314,7 @@ const externalVocabularyDB = [
     "id": 3480,
     "en": "exaggerate",
     "kk": "[ɪɡˋzædʒɚ͵et]",
-    "zh": "v. 張,誇大;對...言過其實",
+    "zh": "v. 張、誇大；對……言過其實",
     "unit": 4,
     "example": "He tends to exaggerate the difficulties.",
     "exampleZh": "他往往誇大困難。"
@@ -31359,7 +31359,7 @@ const externalVocabularyDB = [
     "id": 3485,
     "en": "flatter",
     "kk": "[ˋflætɚ]",
-    "zh": "v. 諂媚;奉承",
+    "zh": "v. 諂媚；奉承",
     "unit": 4,
     "example": "Are you trying to flatter me?",
     "exampleZh": "你是想討好我？"
@@ -31368,7 +31368,7 @@ const externalVocabularyDB = [
     "id": 3486,
     "en": "flee",
     "kk": "[fli]",
-    "zh": "v. 逃離;逃避",
+    "zh": "v. 逃離；逃避",
     "unit": 4,
     "example": "He was caught trying to flee the country.",
     "exampleZh": "他試圖逃離該國時被抓住了。"
@@ -31377,7 +31377,7 @@ const externalVocabularyDB = [
     "id": 3487,
     "en": "forbid",
     "kk": "[fɚˋbɪd]",
-    "zh": "v. 禁止,不許",
+    "zh": "v. 禁止、不許",
     "unit": 4,
     "example": "No. I forbid it. You cannot.",
     "exampleZh": "不，我不準。你不可以。"
@@ -31395,7 +31395,7 @@ const externalVocabularyDB = [
     "id": 3489,
     "en": "furnish",
     "kk": "[ˋfɝnɪʃ]",
-    "zh": "v. 給(房間)配置(傢俱等);供應;提供",
+    "zh": "v. 給(房間)配置(傢俱等)；供應；提供",
     "unit": 4,
     "example": "You must furnish the house.",
     "exampleZh": "你必須佈置房子。"
@@ -31404,7 +31404,7 @@ const externalVocabularyDB = [
     "id": 3490,
     "en": "grieve",
     "kk": "[ɡriv]",
-    "zh": "v. 使悲傷;使苦惱",
+    "zh": "v. 使悲傷；使苦惱",
     "unit": 4,
     "example": "I didn't have any time to grieve.",
     "exampleZh": "我沒有時間去悲傷。"
@@ -31413,7 +31413,7 @@ const externalVocabularyDB = [
     "id": 3491,
     "en": "harden",
     "kk": "[ˋhɑrdən]",
-    "zh": "v. 使變硬;使變堅固",
+    "zh": "v. 使變硬；使變堅固",
     "unit": 4,
     "example": "Their action can only serve to harden the attitude of landowners.",
     "exampleZh": "他們的舉動只會使土地所有者們的態度變得強硬。"
@@ -31422,7 +31422,7 @@ const externalVocabularyDB = [
     "id": 3492,
     "en": "hasten",
     "kk": "[ˋhesən]",
-    "zh": "v. 催促;加速;趕緊",
+    "zh": "v. 催促；加速；趕緊",
     "unit": 4,
     "example": "He hastened back to his room.",
     "exampleZh": "他趕緊回到自己的房間。"
@@ -31431,7 +31431,7 @@ const externalVocabularyDB = [
     "id": 3493,
     "en": "horrify",
     "kk": "[ˋhɔrə͵faɪ]",
-    "zh": "v. 使恐懼,使驚懼",
+    "zh": "v. 使恐懼、使驚懼",
     "unit": 4,
     "example": "Such sentiments might horrify some corporate executives.",
     "exampleZh": "這種熱情可能會讓一些公司高管大為驚駭。"
@@ -31440,7 +31440,7 @@ const externalVocabularyDB = [
     "id": 3494,
     "en": "host",
     "kk": "[host]",
-    "zh": "n. 主辦,主持；v. 以主人身分招待",
+    "zh": "n. 主辦、主持；v. 以主人身分招待",
     "unit": 4,
     "example": "Shall I take my host family a gift?",
     "exampleZh": "我要不要給主人家帶件禮物呢？"
@@ -31449,7 +31449,7 @@ const externalVocabularyDB = [
     "id": 3495,
     "en": "identify",
     "kk": "[aɪˋdɛntə͵faɪ]",
-    "zh": "v. 確認;識別",
+    "zh": "v. 確認；識別",
     "unit": 4,
     "example": "First of all we must identify the problem areas.",
     "exampleZh": "首先我們必須找出問題所在。"
@@ -31467,7 +31467,7 @@ const externalVocabularyDB = [
     "id": 3497,
     "en": "illustrate",
     "kk": "[ˋɪlə͵stret]",
-    "zh": "v. (用圖,實例等)說明",
+    "zh": "v. (用圖、實例等)說明",
     "unit": 4,
     "example": "One example will suffice to illustrate the point.",
     "exampleZh": "舉一個例子就足以說明這一點。"
@@ -31485,7 +31485,7 @@ const externalVocabularyDB = [
     "id": 3499,
     "en": "immigrate",
     "kk": "[ˋɪmə͵ɡret]",
-    "zh": "v. 遷移;遷入",
+    "zh": "v. 遷移；遷入",
     "unit": 4,
     "example": "10,000 people are expected to immigrate in the next two years.",
     "exampleZh": "在今後兩年裡，一萬人有望移民。"
@@ -31494,7 +31494,7 @@ const externalVocabularyDB = [
     "id": 3500,
     "en": "imply",
     "kk": "[͵ɪmˋplaɪ]",
-    "zh": "v. 暗指;暗示;意味著",
+    "zh": "v. 暗指；暗示；意味著",
     "unit": 4,
     "example": "How dare she imply that I was lying?",
     "exampleZh": "她竟敢暗示我在撒謊？"
@@ -31512,7 +31512,7 @@ const externalVocabularyDB = [
     "id": 3502,
     "en": "infect",
     "kk": "[͵ɪnˋfɛkt]",
-    "zh": "v. 傳染;侵染;感染",
+    "zh": "v. 傳染；侵染；感染",
     "unit": 4,
     "example": "A single mosquito can infect a large number of people.",
     "exampleZh": "一隻蚊子就能傳染很多人。"
@@ -31530,7 +31530,7 @@ const externalVocabularyDB = [
     "id": 3504,
     "en": "install",
     "kk": "[͵ɪnˋstɔl]",
-    "zh": "v. 安裝,設置",
+    "zh": "v. 安裝、設置",
     "unit": 4,
     "example": "The shower is easy to install.",
     "exampleZh": "淋浴器易於安裝。"
@@ -31548,7 +31548,7 @@ const externalVocabularyDB = [
     "id": 3506,
     "en": "intend",
     "kk": "[͵ɪnˋtɛnd]",
-    "zh": "v. 想要;打算",
+    "zh": "v. 想要；打算",
     "unit": 4,
     "example": "I don't intend staying long.",
     "exampleZh": "我不打算長期逗留。"
@@ -31557,7 +31557,7 @@ const externalVocabularyDB = [
     "id": 3507,
     "en": "intensify",
     "kk": "[ɪnˋtɛnsə͵faɪ]",
-    "zh": "v. 加強,增強",
+    "zh": "v. 加強、增強",
     "unit": 4,
     "example": "I observe the flaws, and believe they are set to intensify.",
     "exampleZh": "我觀察了這些缺陷，並認為它們會加劇。"
@@ -31575,7 +31575,7 @@ const externalVocabularyDB = [
     "id": 3509,
     "en": "interfere",
     "kk": "[͵ɪntɚˋfɪr]",
-    "zh": "v. 介入;干涉,干預",
+    "zh": "v. 介入；干涉、干預",
     "unit": 4,
     "example": "We take the view that it would be wrong to interfere.",
     "exampleZh": "我們所持的態度是：干涉是錯誤的。"
@@ -31593,7 +31593,7 @@ const externalVocabularyDB = [
     "id": 3511,
     "en": "invade",
     "kk": "[͵ɪnˋved]",
-    "zh": "v. 侵入,侵略",
+    "zh": "v. 侵入、侵略",
     "unit": 4,
     "example": "China can invade Taiwan.",
     "exampleZh": "中國可以入侵臺灣。"
@@ -31611,7 +31611,7 @@ const externalVocabularyDB = [
     "id": 3513,
     "en": "involve",
     "kk": "[͵ɪnˋvɑlv]",
-    "zh": "v. 使捲入,連累;牽涉",
+    "zh": "v. 使捲入、連累；牽涉",
     "unit": 4,
     "example": "Most air rage incidents involve heavy drinking.",
     "exampleZh": "大多數空中憤怒事件都與酗酒有關。"
@@ -31638,7 +31638,7 @@ const externalVocabularyDB = [
     "id": 3516,
     "en": "lighten",
     "kk": "[ˋlaɪtən]",
-    "zh": "v. 使光明,照亮",
+    "zh": "v. 使光明、照亮",
     "unit": 4,
     "example": "An efficient bulb may lighten the load of power stations.",
     "exampleZh": "節能燈可減輕發電站的負荷。"
@@ -31647,7 +31647,7 @@ const externalVocabularyDB = [
     "id": 3517,
     "en": "mislead",
     "kk": "[mɪˋslid]",
-    "zh": "v. 把...帶錯方向;把...引入歧途",
+    "zh": "v. 把……帶錯方向；把……引入歧途",
     "unit": 4,
     "example": "I have just realized I mislead you in something.",
     "exampleZh": "我剛剛意識到我在某件事上誤導你了。"
@@ -31656,7 +31656,7 @@ const externalVocabularyDB = [
     "id": 3518,
     "en": "misunderstand",
     "kk": "[͵mɪsəndɚˋstænd]",
-    "zh": "v. 誤會;曲解",
+    "zh": "v. 誤會；曲解",
     "unit": 4,
     "example": "Don't misunderstand me—I am grateful for all you've done.",
     "exampleZh": "別誤解我的意思—我對你所做的一切都很感激。"
@@ -31665,7 +31665,7 @@ const externalVocabularyDB = [
     "id": 3519,
     "en": "motivate",
     "kk": "[ˋmotə͵vet]",
-    "zh": "v. 給...動機;刺激",
+    "zh": "v. 給……動機；刺激",
     "unit": 4,
     "example": "How do you motivate people to work hard and efficiently?",
     "exampleZh": "你是如何激勵人們努力而高效地工作的？"
@@ -31683,7 +31683,7 @@ const externalVocabularyDB = [
     "id": 3521,
     "en": "negotiate",
     "kk": "[nəˋɡoʃi͵et]",
-    "zh": "v. 談判,協商",
+    "zh": "v. 談判、協商",
     "unit": 4,
     "example": "Opposition grew and the government agreed to negotiate.",
     "exampleZh": "反對勢力日益強烈，政府同意進行談判。"
@@ -31692,7 +31692,7 @@ const externalVocabularyDB = [
     "id": 3522,
     "en": "nevertheless",
     "kk": "[͵nɛvɚðəˋlɛs]",
-    "zh": "v. 仍然,不過,然而",
+    "zh": "v. 仍然、不過,然而",
     "unit": 4,
     "example": "Our defeat was expected but it is disappointing nevertheless.",
     "exampleZh": "我們的失敗是意料中的事，儘管如此，還是令人失望。"
@@ -31710,7 +31710,7 @@ const externalVocabularyDB = [
     "id": 3524,
     "en": "occupy",
     "kk": "[ˋɑkjə͵paɪ]",
-    "zh": "v. 佔領,佔據",
+    "zh": "v. 佔領、佔據",
     "unit": 4,
     "example": "How much memory does the program occupy?",
     "exampleZh": "這個程式佔用多少記憶體？"
@@ -31719,7 +31719,7 @@ const externalVocabularyDB = [
     "id": 3525,
     "en": "offend",
     "kk": "[əˋfɛnd]",
-    "zh": "v. 冒犯;觸怒",
+    "zh": "v. 冒犯；觸怒",
     "unit": 4,
     "example": "A TV interviewer must be careful not to offend.",
     "exampleZh": "電視採訪者必須小心別得罪人。"
@@ -31737,7 +31737,7 @@ const externalVocabularyDB = [
     "id": 3527,
     "en": "overcome",
     "kk": "[ˋovɚ͵kʌm]",
-    "zh": "v. 戰勝;克服",
+    "zh": "v. 戰勝；克服",
     "unit": 4,
     "example": "They had to overcome formidable obstacles.",
     "exampleZh": "他們得克服重重障礙。"
@@ -31746,7 +31746,7 @@ const externalVocabularyDB = [
     "id": 3528,
     "en": "overlook",
     "kk": "[ˋovɚ͵lʊk]",
-    "zh": "v. 眺望;俯瞰",
+    "zh": "v. 眺望；俯瞰",
     "unit": 4,
     "example": "Houses which overlook the lake cost more.",
     "exampleZh": "俯瞰湖泊的房子要價高些。"
@@ -31755,7 +31755,7 @@ const externalVocabularyDB = [
     "id": 3529,
     "en": "overtake",
     "kk": "[ˋovɚ͵tek]",
-    "zh": "v. 追上;趕上;超過",
+    "zh": "v. 追上；趕上；超過",
     "unit": 4,
     "example": "It's dangerous to overtake on a bend.",
     "exampleZh": "在彎道強行超車是危險的。"
@@ -31764,7 +31764,7 @@ const externalVocabularyDB = [
     "id": 3530,
     "en": "overthrow",
     "kk": "[ˋovɚ͵θro]",
-    "zh": "v. 打倒;推翻;廢除",
+    "zh": "v. 打倒；推翻；廢除",
     "unit": 4,
     "example": "He leaves, determined to overthrow the doge.",
     "exampleZh": "他帶著推翻總督的決心離開。"
@@ -31773,7 +31773,7 @@ const externalVocabularyDB = [
     "id": 3531,
     "en": "portray",
     "kk": "[pɔrˋtre]",
-    "zh": "v. 畫;描寫",
+    "zh": "v. 畫；描寫",
     "unit": 4,
     "example": "What was it like to see someone portray you?",
     "exampleZh": "看到有人扮演你是怎樣的感覺？"
@@ -31782,7 +31782,7 @@ const externalVocabularyDB = [
     "id": 3532,
     "en": "possess",
     "kk": "[pəˋzɛs]",
-    "zh": "v. 擁有,持有;具有",
+    "zh": "v. 擁有、持有；具有",
     "unit": 4,
     "example": "What skills should he possess?",
     "exampleZh": "他應該具備什麼樣的技能？"
@@ -31791,7 +31791,7 @@ const externalVocabularyDB = [
     "id": 3533,
     "en": "predict",
     "kk": "[prɪˋdɪkt]",
-    "zh": "v. 預言;預料",
+    "zh": "v. 預言；預料",
     "unit": 4,
     "example": "It is impossible to predict what will happen.",
     "exampleZh": "預知未來的事是不可能的。"
@@ -31800,7 +31800,7 @@ const externalVocabularyDB = [
     "id": 3534,
     "en": "preserve",
     "kk": "[prəˋzɝv]",
-    "zh": "v. 保存,保藏;防腐",
+    "zh": "v. 保存、保藏；防腐",
     "unit": 4,
     "example": "We need to preserve the forest.",
     "exampleZh": "我們需要保護森林。"
@@ -31809,7 +31809,7 @@ const externalVocabularyDB = [
     "id": 3535,
     "en": "proceed",
     "kk": "[prəˋsid]",
-    "zh": "v. 開始,著手",
+    "zh": "v. 開始、著手",
     "unit": 4,
     "example": "Passengers for Rome should proceed to Gate 32 for boarding.",
     "exampleZh": "前往羅馬的旅客，請到32號登機口登機。"
@@ -31818,7 +31818,7 @@ const externalVocabularyDB = [
     "id": 3536,
     "en": "prosper",
     "kk": "[ˋprɑspɚ]",
-    "zh": "v. 繁榮,昌盛",
+    "zh": "v. 繁榮、昌盛",
     "unit": 4,
     "example": "They cannot prosper without cooperating with each other.",
     "exampleZh": "他們不相互合作就無法繁榮發展。"
@@ -31827,7 +31827,7 @@ const externalVocabularyDB = [
     "id": 3537,
     "en": "publish",
     "kk": "[ˋpʌblɪʃ]",
-    "zh": "v. 出版;發行;刊載",
+    "zh": "v. 出版；發行；刊載",
     "unit": 4,
     "example": "The DOT is to publish the conference proceedings.",
     "exampleZh": "運輸部將公佈會議記錄。"
@@ -31836,7 +31836,7 @@ const externalVocabularyDB = [
     "id": 3538,
     "en": "recite",
     "kk": "[rəˋsaɪt]",
-    "zh": "v. 背誦;朗誦;詳述",
+    "zh": "v. 背誦；朗誦；詳述",
     "unit": 4,
     "example": "She can recite the whole poem from memory.",
     "exampleZh": "她能背誦全詩。"
@@ -31872,7 +31872,7 @@ const externalVocabularyDB = [
     "id": 3542,
     "en": "refresh",
     "kk": "[rɪˋfrɛʃ]",
-    "zh": "v. 使得到補充;更新",
+    "zh": "v. 使得到補充；更新",
     "unit": 4,
     "example": "Are you looking to refresh your image or pivot it?",
     "exampleZh": "你是想更新個人形象還是徹底轉型重塑？"
@@ -31881,7 +31881,7 @@ const externalVocabularyDB = [
     "id": 3543,
     "en": "regulate",
     "kk": "[ˋrɛɡjə͵let]",
-    "zh": "v. 為...制訂規章;調節",
+    "zh": "v. 為……制訂規章；調節",
     "unit": 4,
     "example": "The FCC has no statutory authority to regulate the Internet.",
     "exampleZh": "美國聯邦通訊委員會沒有規範因特網的法定權力。"
@@ -31890,7 +31890,7 @@ const externalVocabularyDB = [
     "id": 3544,
     "en": "relieve",
     "kk": "[rɪˋliv]",
-    "zh": "v. 緩和,減輕;解除",
+    "zh": "v. 緩和、減輕；解除",
     "unit": 4,
     "example": "Drugs can relieve much of the pain.",
     "exampleZh": "藥物可以大大緩解疼痛。"
@@ -31899,7 +31899,7 @@ const externalVocabularyDB = [
     "id": 3545,
     "en": "resemble",
     "kk": "[rɪˋzɛmbəl]",
-    "zh": "v. 像,類似",
+    "zh": "v. 像、類似",
     "unit": 4,
     "example": "Stunt people must resemble the stars they stand in for.",
     "exampleZh": "特技演員必須和他們所替身的明星長相相似。"
@@ -31908,7 +31908,7 @@ const externalVocabularyDB = [
     "id": 3546,
     "en": "resign",
     "kk": "[rɪˋzaɪn]",
-    "zh": "v. 放棄,辭去",
+    "zh": "v. 放棄、辭去",
     "unit": 4,
     "example": "I feel I should resign.",
     "exampleZh": "我認為我應該辭職。"
@@ -31926,7 +31926,7 @@ const externalVocabularyDB = [
     "id": 3548,
     "en": "retain",
     "kk": "[rɪˋten]",
-    "zh": "v. 保留,保持",
+    "zh": "v. 保留、保持",
     "unit": 4,
     "example": "He struggled to retain control of the situation.",
     "exampleZh": "他曾努力保持對局勢的控制。"
@@ -31935,7 +31935,7 @@ const externalVocabularyDB = [
     "id": 3549,
     "en": "retire",
     "kk": "[rɪˋtaɪr]",
-    "zh": "v. 退休;退役",
+    "zh": "v. 退休；退役",
     "unit": 4,
     "example": "He has announced his intention to retire.",
     "exampleZh": "他已經宣佈他打算退休。"
@@ -31944,7 +31944,7 @@ const externalVocabularyDB = [
     "id": 3550,
     "en": "revise",
     "kk": "[rɪˋvaɪz]",
-    "zh": "v. 校訂;更改",
+    "zh": "v. 校訂；更改",
     "unit": 4,
     "example": "I can't come out tonight. I have to revise.",
     "exampleZh": "我今晚不能出去。我得複習。"
@@ -31953,7 +31953,7 @@ const externalVocabularyDB = [
     "id": 3551,
     "en": "strengthen",
     "kk": "[ˋstrɛŋθən]",
-    "zh": "v. 加強;增強",
+    "zh": "v. 加強；增強",
     "unit": 4,
     "example": "The exercises are designed to strengthen your stomach muscles.",
     "exampleZh": "這些活動目的在於增強你的腹部肌肉。"
@@ -31962,7 +31962,7 @@ const externalVocabularyDB = [
     "id": 3552,
     "en": "strive",
     "kk": "[straɪv]",
-    "zh": "v. 努力,苦幹,奮鬥;反抗,鬥爭",
+    "zh": "v. 努力、苦幹,奮鬥；反抗、鬥爭",
     "unit": 4,
     "example": "Newspaper editors all strive to be first with a story.",
     "exampleZh": "報紙編輯都力爭率先報道。"
@@ -31971,7 +31971,7 @@ const externalVocabularyDB = [
     "id": 3553,
     "en": "summarize",
     "kk": "[ˋsʌmɚ͵aɪz]",
-    "zh": "v. 總結,概述,概括",
+    "zh": "v. 總結、概述,概括",
     "unit": 4,
     "example": "Can we summarize the problem from my point of view?",
     "exampleZh": "可以從我的角度來總結一下這個問題嗎？"
@@ -31998,7 +31998,7 @@ const externalVocabularyDB = [
     "id": 3556,
     "en": "terrify",
     "kk": "[ˋtɛrə͵faɪ]",
-    "zh": "v. 使害怕;使恐怖",
+    "zh": "v. 使害怕；使恐怖",
     "unit": 4,
     "example": "Don't let the title of Kelly's book terrify you.",
     "exampleZh": "不要被凱利的著作的名稱嚇到。"
@@ -32007,7 +32007,7 @@ const externalVocabularyDB = [
     "id": 3557,
     "en": "tolerate",
     "kk": "[ˋtɑlɚ͵et]",
-    "zh": "v. 忍受;寬恕;容許",
+    "zh": "v. 忍受；寬恕；容許",
     "unit": 4,
     "example": "I don't know how you tolerate that noise!",
     "exampleZh": "我不知道你怎麼能忍受那樣的噪音！"
@@ -32016,7 +32016,7 @@ const externalVocabularyDB = [
     "id": 3558,
     "en": "transform",
     "kk": "[trænˋsfɔrm]",
-    "zh": "v. 使改變;使轉化",
+    "zh": "v. 使改變；使轉化",
     "unit": 4,
     "example": "It was an event that would transform my life.",
     "exampleZh": "那是能夠徹底改變我一生的一件事。"
@@ -32043,7 +32043,7 @@ const externalVocabularyDB = [
     "id": 3561,
     "en": "violate",
     "kk": "[ˋvaɪəlet]",
-    "zh": "v. 違犯;擾亂",
+    "zh": "v. 違犯；擾亂",
     "unit": 4,
     "example": "Thornburgh said such demands wouldn't violate the First Amendment.",
     "exampleZh": "桑伯說這樣的要求不違反第一修正案。"
@@ -32052,7 +32052,7 @@ const externalVocabularyDB = [
     "id": 3562,
     "en": "withdraw",
     "kk": "[wɪˋðdrɔ]",
-    "zh": "v. 提取;撤離",
+    "zh": "v. 提取；撤離",
     "unit": 4,
     "example": "A back injury forced her to withdraw from Wimbledon.",
     "exampleZh": "一處背傷迫使她退出了溫布林登網球賽。"
@@ -32061,7 +32061,7 @@ const externalVocabularyDB = [
     "id": 3563,
     "en": "elsewhere",
     "kk": "[ˋɛl͵swɛr]",
-    "zh": "adv. 在別處;往別處",
+    "zh": "adv. 在別處；往別處",
     "unit": 4,
     "example": "Prices are higher here than elsewhere.",
     "exampleZh": "這裡的價格比其他地方高。"
@@ -32070,7 +32070,7 @@ const externalVocabularyDB = [
     "id": 3564,
     "en": "furthermore",
     "kk": "[ˋfɝðɚ͵mɔr]",
-    "zh": "adv. 而且,此外,再者",
+    "zh": "adv. 而且、此外,再者",
     "unit": 4,
     "example": "Furthermore, they claim that any such interference is completely ineffective.",
     "exampleZh": "此外，他們聲稱任何此類干涉都是完全無效的。"
@@ -32079,7 +32079,7 @@ const externalVocabularyDB = [
     "id": 3565,
     "en": "highly",
     "kk": "[ˋhaɪli]",
-    "zh": "adv. 非常,很,高度地",
+    "zh": "adv. 非常、很,高度地",
     "unit": 4,
     "example": "He's a highly intelligent man.",
     "exampleZh": "他是一個很有才智的人。"
@@ -32088,7 +32088,7 @@ const externalVocabularyDB = [
     "id": 3566,
     "en": "largely",
     "kk": "[ˋlɑrdʒli]",
-    "zh": "adv. 大部分;主要地;大量地",
+    "zh": "adv. 大部分；主要地；大量地",
     "unit": 4,
     "example": "The area is largely uninhabited.",
     "exampleZh": "這個地區大部分是無人居住的。"
@@ -32097,7 +32097,7 @@ const externalVocabularyDB = [
     "id": 3567,
     "en": "lately",
     "kk": "[ˋletli]",
-    "zh": "adv. 近來,最近;不久前",
+    "zh": "adv. 近來、最近；不久前",
     "unit": 4,
     "example": "She's been very edgy lately.",
     "exampleZh": "她近來一直煩躁不安。"
@@ -32115,7 +32115,7 @@ const externalVocabularyDB = [
     "id": 3569,
     "en": "moreover",
     "kk": "[mɔˋrovɚ]",
-    "zh": "adv. 並且,加之,此外",
+    "zh": "adv. 並且、加之,此外",
     "unit": 4,
     "example": "Moreover, you're a social being.",
     "exampleZh": "而且，你是個社會人。"
@@ -32124,7 +32124,7 @@ const externalVocabularyDB = [
     "id": 3570,
     "en": "mostly",
     "kk": "[ˋmostli]",
-    "zh": "adv. 一般地,通常",
+    "zh": "adv. 一般地、通常",
     "unit": 4,
     "example": "I am working with mostly highly motivated people.",
     "exampleZh": "我正與大多都積極性很高的人們共事。"
@@ -32133,7 +32133,7 @@ const externalVocabularyDB = [
     "id": 3571,
     "en": "namely",
     "kk": "[ˋnemli]",
-    "zh": "adv. 即,那就是",
+    "zh": "adv. 即、那就是",
     "unit": 4,
     "example": "A district should serve its clientele, namely students, staff, and parents.",
     "exampleZh": "一個學區應該服務於其主顧，即學生、教職員工和家長。"
@@ -32142,7 +32142,7 @@ const externalVocabularyDB = [
     "id": 3572,
     "en": "nowadays",
     "kk": "[ˋnaʊə͵dez]",
-    "zh": "adv. 現今,時下",
+    "zh": "adv. 現今、時下",
     "unit": 4,
     "example": "Men are doing more housework nowadays.",
     "exampleZh": "現今男人正在承擔越來越多的家務。"
@@ -32151,7 +32151,7 @@ const externalVocabularyDB = [
     "id": 3573,
     "en": "otherwise",
     "kk": "[ˋʌðɚ͵waɪz]",
-    "zh": "adv. 除此以外;否則,不然",
+    "zh": "adv. 除此以外；否則、不然",
     "unit": 4,
     "example": "Shut the window, otherwise it'll get too cold in here.",
     "exampleZh": "把窗戶關好，不然屋子裡就太冷了。"
@@ -32169,7 +32169,7 @@ const externalVocabularyDB = [
     "id": 3575,
     "en": "roughly",
     "kk": "[ˋrʌfli]",
-    "zh": "adv. 粗糙地;粗暴地;大約",
+    "zh": "adv. 粗糙地；粗暴地；大約",
     "unit": 4,
     "example": "Sales are up by roughly 10%.",
     "exampleZh": "銷售額上升了大約10%。"
@@ -32178,7 +32178,7 @@ const externalVocabularyDB = [
     "id": 3576,
     "en": "scarcely",
     "kk": "[ˋskɛrsli]",
-    "zh": "adv. 幾乎不,幾乎沒有",
+    "zh": "adv. 幾乎不、幾乎沒有",
     "unit": 4,
     "example": "It can scarcely be coincidence.",
     "exampleZh": "這決不可能是巧合。"
@@ -32196,7 +32196,7 @@ const externalVocabularyDB = [
     "id": 3578,
     "en": "amid",
     "kk": "[əˋmɪd]",
-    "zh": "prep. 在...之間;在...之中",
+    "zh": "prep. 在……之間；在……之中",
     "unit": 4,
     "example": "The firm collapsed amid allegations of fraud.",
     "exampleZh": "該公司在一片欺詐的指責聲中倒閉了。"
@@ -32205,7 +32205,7 @@ const externalVocabularyDB = [
     "id": 3579,
     "en": "amidst",
     "kk": "[əˋmɪdst]",
-    "zh": "prep. 在...之中;在...中間",
+    "zh": "prep. 在……之中；在……中間",
     "unit": 4,
     "example": "Amidst the current bunch of nonentities, he is a towering figure.",
     "exampleZh": "在目前這幫無足輕重的人裡面，他算是鶴立雞群了。"
@@ -32223,7 +32223,7 @@ const externalVocabularyDB = [
     "id": 3581,
     "en": "despite",
     "kk": "[dɪˋspaɪt]",
-    "zh": "prep. 不管,儘管,任憑",
+    "zh": "prep. 不管、儘管,任憑",
     "unit": 4,
     "example": "Despite our worries everything turned out well.",
     "exampleZh": "儘管我們都很擔心，結果一切都順利。"
@@ -32241,7 +32241,7 @@ const externalVocabularyDB = [
     "id": 3583,
     "en": "regarding",
     "kk": "[rɪˋɡɑrdɪŋ]",
-    "zh": "prep. 關於;就...而論",
+    "zh": "prep. 關於；就……而論",
     "unit": 4,
     "example": "She has said nothing regarding your request.",
     "exampleZh": "關於你的要求，她什麼也沒說。"
@@ -32259,7 +32259,7 @@ const externalVocabularyDB = [
     "id": 3585,
     "en": "accent",
     "kk": "[əkˋsɛnt]",
-    "zh": "n. 重音;腔調",
+    "zh": "n. 重音；腔調",
     "unit": 4,
     "example": "He mimicked her southern accent.",
     "exampleZh": "他滑稽地模仿她的南方口音。"
@@ -32268,7 +32268,7 @@ const externalVocabularyDB = [
     "id": 3586,
     "en": "acceptance",
     "kk": "[ækˋsɛptəns]",
-    "zh": "n. 接受;領受;(票據等的)承兌,認付",
+    "zh": "n. 接受；領受；(票據等的)承兌、認付",
     "unit": 4,
     "example": "The new laws have gained widespread acceptance.",
     "exampleZh": "新法律獲得廣泛贊同。"
@@ -32286,7 +32286,7 @@ const externalVocabularyDB = [
     "id": 3588,
     "en": "accomplishment",
     "kk": "[əˋkɑmplɪʃmənt]",
-    "zh": "n. 成就;成績;造詣;實現",
+    "zh": "n. 成就；成績；造詣；實現",
     "unit": 4,
     "example": "Judy's most famous accomplishment was learning how to fly.",
     "exampleZh": "朱迪最著名的成就是學會了如何飛行。"
@@ -32304,7 +32304,7 @@ const externalVocabularyDB = [
     "id": 3590,
     "en": "accuracy",
     "kk": "[ˋækjɚəsi]",
-    "zh": "n. 正確(性);準確(性)",
+    "zh": "n. 正確(性)；準確(性)",
     "unit": 4,
     "example": "A high degree of accuracy is needed.",
     "exampleZh": "需要高度的準確性。"
@@ -32349,7 +32349,7 @@ const externalVocabularyDB = [
     "id": 3595,
     "en": "adjustment",
     "kk": "[əˋdʒʌstmənt]",
-    "zh": "n. 調節;調整",
+    "zh": "n. 調節；調整",
     "unit": 4,
     "example": "Some adjustment of the lens may be necessary.",
     "exampleZh": "可能需要調整一下鏡頭。"
@@ -32358,7 +32358,7 @@ const externalVocabularyDB = [
     "id": 3596,
     "en": "admiration",
     "kk": "[͵ædmɚˋeʃən]",
-    "zh": "n. 欽佩;羨慕",
+    "zh": "n. 欽佩；羨慕",
     "unit": 4,
     "example": "He professed his admiration for their work.",
     "exampleZh": "他表示欽佩他們的工作。"
@@ -32367,7 +32367,7 @@ const externalVocabularyDB = [
     "id": 3597,
     "en": "admission",
     "kk": "[ædˋmɪʃən]",
-    "zh": "n. 進入許可;入場費;承認",
+    "zh": "n. 進入許可；入場費；承認",
     "unit": 4,
     "example": "Admission is by invitation only.",
     "exampleZh": "憑請柬入場。"
@@ -32385,7 +32385,7 @@ const externalVocabularyDB = [
     "id": 3599,
     "en": "agency",
     "kk": "[ˋedʒənsi]",
-    "zh": "n. 仲介;代理",
+    "zh": "n. 仲介；代理",
     "unit": 4,
     "example": "I was headhunted by a marketing agency.",
     "exampleZh": "我被一家銷售代理公司物色上了。"
@@ -32421,7 +32421,7 @@ const externalVocabularyDB = [
     "id": 3603,
     "en": "allowance",
     "kk": "[əˋlaʊəns]",
-    "zh": "n. 津貼,零用錢",
+    "zh": "n. 津貼、零用錢",
     "unit": 4,
     "example": "The budget made allowance for inflation.",
     "exampleZh": "預算考慮到了通貨膨脹。"
@@ -32448,7 +32448,7 @@ const externalVocabularyDB = [
     "id": 3606,
     "en": "amusement",
     "kk": "[əˋmjuzmənt]",
-    "zh": "n. 樂趣;消遣",
+    "zh": "n. 樂趣；消遣",
     "unit": 4,
     "example": "Amusement gleamed in his eyes.",
     "exampleZh": "他眼睛裡流露出愉悅的神情。"
@@ -32502,7 +32502,7 @@ const externalVocabularyDB = [
     "id": 3612,
     "en": "appliance",
     "kk": "[əpˋlaɪəns]",
-    "zh": "n. 用具;裝置,設備",
+    "zh": "n. 用具；裝置、設備",
     "unit": 4,
     "example": "The appliance acts as an STS for an SP.",
     "exampleZh": "這個裝置充當一個 SP 的 STS。"
@@ -32529,7 +32529,7 @@ const externalVocabularyDB = [
     "id": 3615,
     "en": "appointment",
     "kk": "[əˋpɔɪntmənt]",
-    "zh": "n. (尤指正式的)約會;約定",
+    "zh": "n. (尤指正式的)約會；約定",
     "unit": 4,
     "example": "When is your next appointment?",
     "exampleZh": "你下一次預約時間是什麼時候？"
@@ -32538,7 +32538,7 @@ const externalVocabularyDB = [
     "id": 3616,
     "en": "appreciation",
     "kk": "[ə͵priʃiˋeʃən]",
-    "zh": "n. 欣賞,鑑賞;賞識",
+    "zh": "n. 欣賞、鑑賞；賞識",
     "unit": 4,
     "example": "She shows little appreciation of good music.",
     "exampleZh": "她感受不到美好音樂的妙處。"
@@ -32547,7 +32547,7 @@ const externalVocabularyDB = [
     "id": 3617,
     "en": "approval",
     "kk": "[əˋpruvəl]",
-    "zh": "n. 批准;認可",
+    "zh": "n. 批准；認可",
     "unit": 4,
     "example": "There was a roar of approval.",
     "exampleZh": "響起了一片表示贊成的喊叫聲。"
@@ -32565,7 +32565,7 @@ const externalVocabularyDB = [
     "id": 3619,
     "en": "arms",
     "kk": "[ɑrmz]",
-    "zh": "n. 武器;戰爭;戰鬥;兵役",
+    "zh": "n. 武器；戰爭；戰鬥；兵役",
     "unit": 4,
     "example": "He waved his arms expansively.",
     "exampleZh": "他豪爽地揮舞著雙臂。"
@@ -32601,7 +32601,7 @@ const externalVocabularyDB = [
     "id": 3623,
     "en": "assembly",
     "kk": "[əˋsɛmbli]",
-    "zh": "n. 集會;集合",
+    "zh": "n. 集會；集合",
     "unit": 4,
     "example": "The assembly was mandated to draft a constitution.",
     "exampleZh": "大會被授權起草一份章程。"
@@ -32610,7 +32610,7 @@ const externalVocabularyDB = [
     "id": 3624,
     "en": "assignment",
     "kk": "[əˋsaɪnmənt]",
-    "zh": "n. (分派的)任務;工作;(課外)作業",
+    "zh": "n. (分派的)任務；工作；(課外)作業",
     "unit": 4,
     "example": "I had set myself a tough assignment.",
     "exampleZh": "我給自己定了一項艱鉅任務。"
@@ -32619,7 +32619,7 @@ const externalVocabularyDB = [
     "id": 3625,
     "en": "assistance",
     "kk": "[əˋsɪstəns]",
-    "zh": "n. 幫助,協助",
+    "zh": "n. 幫助、協助",
     "unit": 4,
     "example": "Can I be of any assistance?",
     "exampleZh": "我能有所幫助嗎？"
@@ -32673,7 +32673,7 @@ const externalVocabularyDB = [
     "id": 3631,
     "en": "attachment",
     "kk": "[əˋtætʃmənt]",
-    "zh": "n. 連接;安裝;附著;附屬物;附件;扣押;扣押令",
+    "zh": "n. 連接；安裝；附著；附屬物；附件；扣押；扣押令",
     "unit": 4,
     "example": "And these attachment styles carry on into adulthood.",
     "exampleZh": "這些依戀型別會延續到成年。"
@@ -32754,7 +32754,7 @@ const externalVocabularyDB = [
     "id": 3640,
     "en": "basin",
     "kk": "[ˋbesən]",
-    "zh": "n. 臉盆;盆地",
+    "zh": "n. 臉盆；盆地",
     "unit": 4,
     "example": "Water dripped into a basin at the back of the room.",
     "exampleZh": "水滴入房間後面的一個盆裡。"
@@ -32835,7 +32835,7 @@ const externalVocabularyDB = [
     "id": 3649,
     "en": "blessing",
     "kk": "[ˋblɛsɪŋ]",
-    "zh": "n. 祈神賜福;祝福",
+    "zh": "n. 祈神賜福；祝福",
     "unit": 4,
     "example": "The bishop said the blessing.",
     "exampleZh": "主教祝福（會眾）。"
@@ -32916,7 +32916,7 @@ const externalVocabularyDB = [
     "id": 3658,
     "en": "bracelet",
     "kk": "[ˋbreslət]",
-    "zh": "n. 手鐲;臂鐲",
+    "zh": "n. 手鐲；臂鐲",
     "unit": 4,
     "example": "Her bracelet was set with emeralds.",
     "exampleZh": "她的手鐲上鑲有綠寶石。"
@@ -32927,8 +32927,8 @@ const externalVocabularyDB = [
     "kk": "[brəˋzɪr]",
     "zh": "n. 胸罩",
     "unit": 4,
-    "example": "Can you use the word brassiere in a sentence?",
-    "exampleZh": "你能在句子中使用「胸罩」這個詞嗎？"
+    "example": "She chose a seamless brassiere that provided gentle support throughout the day.",
+    "exampleZh": "她選了一款無痕胸罩，整天都能提供舒適的支撐。"
   },
   {
     "id": 3660,
@@ -32952,7 +32952,7 @@ const externalVocabularyDB = [
     "id": 3662,
     "en": "bulletin",
     "kk": "[ˋbʊlɪtən]",
-    "zh": "n. 公報;公告",
+    "zh": "n. 公報；公告",
     "unit": 4,
     "example": "Tom put the list on the bulletin board.",
     "exampleZh": "湯姆把名單貼在佈告欄上。"
@@ -32961,7 +32961,7 @@ const externalVocabularyDB = [
     "id": 3663,
     "en": "cabinet",
     "kk": "[ˋkæbənət]",
-    "zh": "n. 櫥,櫃;內閣",
+    "zh": "n. 櫥、櫃；內閣",
     "unit": 4,
     "example": "The cabinet rallied behind the Prime Minister.",
     "exampleZh": "內閣團結一致支援首相。"
@@ -32970,7 +32970,7 @@ const externalVocabularyDB = [
     "id": 3664,
     "en": "calculation",
     "kk": "[͵kælkjəˋleʃən]",
-    "zh": "n. 計算;估計,推測;盤算",
+    "zh": "n. 計算；估計、推測；盤算",
     "unit": 4,
     "example": "Cathy did a rough calculation.",
     "exampleZh": "凱茜作了一個粗略的計算。"
@@ -33024,7 +33024,7 @@ const externalVocabularyDB = [
     "id": 3670,
     "en": "cape",
     "kk": "[kep]",
-    "zh": "n. 岬,海角",
+    "zh": "n. 岬、海角",
     "unit": 4,
     "example": "I like that part of Cape Town.",
     "exampleZh": "我喜歡開普敦的那個地方。"
@@ -33069,7 +33069,7 @@ const externalVocabularyDB = [
     "id": 3675,
     "en": "carrier",
     "kk": "[ˋkæriɚ]",
-    "zh": "n. 運送人;從事運輸業公司;帶菌者",
+    "zh": "n. 運送人；從事運輸業公司；帶菌者",
     "unit": 4,
     "example": "They brought baby Michael along in a carrier.",
     "exampleZh": "他們把小邁克爾放在嬰兒車上一起帶來了。"
@@ -33132,7 +33132,7 @@ const externalVocabularyDB = [
     "id": 3682,
     "en": "chamber",
     "kk": "[ˋtʃembɚ]",
-    "zh": "n. 室,房間;議院",
+    "zh": "n. 室、房間；議院",
     "unit": 4,
     "example": "The chamber was ablaze with light.",
     "exampleZh": "該大廳當時燈火輝煌。"
@@ -33267,7 +33267,7 @@ const externalVocabularyDB = [
     "id": 3697,
     "en": "classification",
     "kk": "[͵klæsəfəˋkeʃən]",
-    "zh": "n. 分類;分級",
+    "zh": "n. 分類；分級",
     "unit": 4,
     "example": "The classification based on DNA seems to be much more reliable.",
     "exampleZh": "基於 DNA 的分類似乎更可靠。"
@@ -33276,7 +33276,7 @@ const externalVocabularyDB = [
     "id": 3698,
     "en": "cliff",
     "kk": "[klɪf]",
-    "zh": "n. 懸崖,峭壁",
+    "zh": "n. 懸崖、峭壁",
     "unit": 4,
     "example": "The cliff is gradually crumbling away.",
     "exampleZh": "峭壁正在逐漸崩坍。"
@@ -33339,7 +33339,7 @@ const externalVocabularyDB = [
     "id": 3705,
     "en": "commander",
     "kk": "[kəˋmændɚ]",
-    "zh": "n. 指揮官,司令官",
+    "zh": "n. 指揮官、司令官",
     "unit": 4,
     "example": "The commander had been forewarned of the attack.",
     "exampleZh": "指揮官預先得到敵人要發動襲擊的警告。"
@@ -33357,7 +33357,7 @@ const externalVocabularyDB = [
     "id": 3707,
     "en": "commerce",
     "kk": "[ˋkɑmɚs]",
-    "zh": "n. 商業,貿易,交易",
+    "zh": "n. 商業、貿易,交易",
     "unit": 4,
     "example": "The music business marries art and commerce.",
     "exampleZh": "音樂行當將藝術和商業結合在一起。"
@@ -33366,7 +33366,7 @@ const externalVocabularyDB = [
     "id": 3708,
     "en": "communication",
     "kk": "[kə͵mjunəˋkeʃən]",
-    "zh": "n. 交往;通信",
+    "zh": "n. 交往；通信",
     "unit": 4,
     "example": "Good communication is key to our success.",
     "exampleZh": "良好的溝通是我們成功的關鍵。"
@@ -33393,7 +33393,7 @@ const externalVocabularyDB = [
     "id": 3711,
     "en": "companion",
     "kk": "[kəmˋpænjən]",
-    "zh": "n. 同伴,伴侶",
+    "zh": "n. 同伴、伴侶",
     "unit": 4,
     "example": "Claude was a charming, sophisticated companion.",
     "exampleZh": "克勞德是個有魅力、見多識廣的夥伴。"
@@ -33402,7 +33402,7 @@ const externalVocabularyDB = [
     "id": 3712,
     "en": "competition",
     "kk": "[͵kɑmpəˋtɪʃən]",
-    "zh": "n. 競爭,角逐",
+    "zh": "n. 競爭、角逐",
     "unit": 4,
     "example": "Competition for jobs is acute.",
     "exampleZh": "求職競爭非常激烈。"
@@ -33411,7 +33411,7 @@ const externalVocabularyDB = [
     "id": 3713,
     "en": "competitor",
     "kk": "[kəmˋpɛtətɚ]",
-    "zh": "n. 競爭者;對手",
+    "zh": "n. 競爭者；對手",
     "unit": 4,
     "example": "The opposite of an opportunist is a competitor.",
     "exampleZh": "與機會主義者對立的是競爭者。"
@@ -33429,7 +33429,7 @@ const externalVocabularyDB = [
     "id": 3715,
     "en": "composition",
     "kk": "[͵kɑmpəˋzɪʃən]",
-    "zh": "n. 寫作;作曲;作品;作文",
+    "zh": "n. 寫作；作曲；作品；作文",
     "unit": 4,
     "example": "I love writing compositions.",
     "exampleZh": "我喜歡寫作文。"
@@ -33438,7 +33438,7 @@ const externalVocabularyDB = [
     "id": 3716,
     "en": "concentration",
     "kk": "[͵kɑnsənˋtreʃən]",
-    "zh": "n. 專心;濃縮",
+    "zh": "n. 專心；濃縮",
     "unit": 4,
     "example": "Her brow furrowed in concentration.",
     "exampleZh": "她眉頭緊鎖全神貫注。"
@@ -33447,7 +33447,7 @@ const externalVocabularyDB = [
     "id": 3717,
     "en": "concept",
     "kk": "[ˋkɑnsɛpt]",
-    "zh": "n. 概念,觀念",
+    "zh": "n. 概念、觀念",
     "unit": 4,
     "example": "The concept of saturation marketing makes perfect sense.",
     "exampleZh": "飽和營銷的概念很有道理。"
@@ -33474,7 +33474,7 @@ const externalVocabularyDB = [
     "id": 3720,
     "en": "conference",
     "kk": "[ˋkɑnfɚəns]",
-    "zh": "n. (正式)會議;討論會,協商會",
+    "zh": "n. (正式)會議；討論會、協商會",
     "unit": 4,
     "example": "It was a good-humoured conference.",
     "exampleZh": "會議的氣氛很愉快。"
@@ -33483,7 +33483,7 @@ const externalVocabularyDB = [
     "id": 3721,
     "en": "confidence",
     "kk": "[ˋkɑnfədəns]",
-    "zh": "n. 自信,信心,把握",
+    "zh": "n. 自信、信心,把握",
     "unit": 4,
     "example": "Her confidence had never flagged.",
     "exampleZh": "她的信心從未減弱。"
@@ -33492,7 +33492,7 @@ const externalVocabularyDB = [
     "id": 3722,
     "en": "confusion",
     "kk": "[kənˋfjuʒən]",
-    "zh": "n. 困惑;慌亂",
+    "zh": "n. 困惑；慌亂",
     "unit": 4,
     "example": "Mandy's predominant emotion was confusion.",
     "exampleZh": "曼迪的主導情緒是困惑。"
@@ -33510,7 +33510,7 @@ const externalVocabularyDB = [
     "id": 3724,
     "en": "conjunction",
     "kk": "[kənˋdʒʌŋkʃən]",
-    "zh": "n. 連接詞;結合;關聯",
+    "zh": "n. 連接詞；結合；關聯",
     "unit": 4,
     "example": "Textbooks are designed to be used in conjunction with classroom teaching.",
     "exampleZh": "教科書被設計成與課堂教學配合使用。"
@@ -33519,7 +33519,7 @@ const externalVocabularyDB = [
     "id": 3725,
     "en": "conscience",
     "kk": "[ˋkɑnʃəns]",
-    "zh": "n. 良心;道義心",
+    "zh": "n. 良心；道義心",
     "unit": 4,
     "example": "He won't let it trouble his conscience.",
     "exampleZh": "他不會讓這件事搞得自己良心不安。"
@@ -33528,7 +33528,7 @@ const externalVocabularyDB = [
     "id": 3726,
     "en": "consequence",
     "kk": "[ˋkɑnsəkwəns]",
-    "zh": "n. 結果,後果",
+    "zh": "n. 結果、後果",
     "unit": 4,
     "example": "This is a necessary consequence of progress.",
     "exampleZh": "這是發展的必然後果。"
@@ -33555,7 +33555,7 @@ const externalVocabularyDB = [
     "id": 3729,
     "en": "constitution",
     "kk": "[͵kɑnstəˋtuʃən]",
-    "zh": "n. 憲法;章程,法規",
+    "zh": "n. 憲法；章程、法規",
     "unit": 4,
     "example": "A new constitution was promulgated last month.",
     "exampleZh": "上個月頒佈了一部新憲法。"
@@ -33564,7 +33564,7 @@ const externalVocabularyDB = [
     "id": 3730,
     "en": "construction",
     "kk": "[kənˋstrʌkʃən]",
-    "zh": "n. 建造,建設",
+    "zh": "n. 建造、建設",
     "unit": 4,
     "example": "The railway is still under construction.",
     "exampleZh": "這條鐵路仍在建設之中。"
@@ -33582,7 +33582,7 @@ const externalVocabularyDB = [
     "id": 3732,
     "en": "consumer",
     "kk": "[kənˋsumɚ]",
-    "zh": "n. 消費者;消耗者",
+    "zh": "n. 消費者；消耗者",
     "unit": 4,
     "example": "We are living in a consumer culture.",
     "exampleZh": "我們生活在一種消費文化之中。"
@@ -33609,7 +33609,7 @@ const externalVocabularyDB = [
     "id": 3735,
     "en": "contentment",
     "kk": "[kənˋtɛntmənt]",
-    "zh": "n. 知足;滿意",
+    "zh": "n. 知足；滿意",
     "unit": 4,
     "example": "They found contentment in living a simple life.",
     "exampleZh": "他們在簡樸的生活中得到滿足。"
@@ -33627,7 +33627,7 @@ const externalVocabularyDB = [
     "id": 3737,
     "en": "context",
     "kk": "[ˋkɑntɛkst]",
-    "zh": "n. 上下文;文章脈絡",
+    "zh": "n. 上下文；文章脈絡",
     "unit": 4,
     "example": "His decision can only be understood in context.",
     "exampleZh": "只有瞭解來龍去脈才能明白他的決定。"
@@ -33663,7 +33663,7 @@ const externalVocabularyDB = [
     "id": 3741,
     "en": "convenience",
     "kk": "[kənˋvinjəns]",
-    "zh": "n. 方便;合宜",
+    "zh": "n. 方便；合宜",
     "unit": 4,
     "example": "The hotel combines comfort with convenience.",
     "exampleZh": "這家旅館既舒適又方便。"
@@ -33672,7 +33672,7 @@ const externalVocabularyDB = [
     "id": 3742,
     "en": "convention",
     "kk": "[kənˋvɛnʃən]",
-    "zh": "n. 會議,大會",
+    "zh": "n. 會議、大會",
     "unit": 4,
     "example": "The convention does not apply to us.",
     "exampleZh": "該協定對我們不適用。"
@@ -33681,7 +33681,7 @@ const externalVocabularyDB = [
     "id": 3743,
     "en": "cooperation",
     "kk": "[ko͵ɑpɚˋeʃən]",
-    "zh": "n. 合作;協力",
+    "zh": "n. 合作；協力",
     "unit": 4,
     "example": "The cooperation between the two is minimal.",
     "exampleZh": "兩者之間的合作是最低程度的。"
@@ -33708,7 +33708,7 @@ const externalVocabularyDB = [
     "id": 3746,
     "en": "cord",
     "kk": "[kɔrd]",
-    "zh": "n. 細繩,粗線,索",
+    "zh": "n. 細繩、粗線,索",
     "unit": 4,
     "example": "He began to worry at the knot in the cord.",
     "exampleZh": "他開始解繩子上的結。"
@@ -33726,7 +33726,7 @@ const externalVocabularyDB = [
     "id": 3748,
     "en": "costume",
     "kk": "[kɑˋstum]",
-    "zh": "n. 服裝,裝束",
+    "zh": "n. 服裝、裝束",
     "unit": 4,
     "example": "Carol boasted about her costume.",
     "exampleZh": "卡羅爾吹噓著她的戲裝。"
@@ -33780,7 +33780,7 @@ const externalVocabularyDB = [
     "id": 3754,
     "en": "craft",
     "kk": "[kræft]",
-    "zh": "n. 工藝,手藝",
+    "zh": "n. 工藝、手藝",
     "unit": 4,
     "example": "Craft Resources also sells yarn and embroidery floss.",
     "exampleZh": "“手工之家”也售賣紗線和繡花絲線。"
@@ -33789,7 +33789,7 @@ const externalVocabularyDB = [
     "id": 3755,
     "en": "creation",
     "kk": "[kriˋeʃən]",
-    "zh": "n. 創造;創作;創立",
+    "zh": "n. 創造；創作；創立",
     "unit": 4,
     "example": "The bathroom is entirely my own creation.",
     "exampleZh": "這個浴室完全是我個人的創作。"
@@ -33816,7 +33816,7 @@ const externalVocabularyDB = [
     "id": 3758,
     "en": "critic",
     "kk": "[ˋkrɪtɪk]",
-    "zh": "n. 批評家,評論家",
+    "zh": "n. 批評家、評論家",
     "unit": 4,
     "example": "Turner is a writer and critic.",
     "exampleZh": "特納是一位作家和評論家。"
@@ -33825,7 +33825,7 @@ const externalVocabularyDB = [
     "id": 3759,
     "en": "criticism",
     "kk": "[ˋkrɪtɪ͵sɪzəm]",
-    "zh": "n. 批評;評論",
+    "zh": "n. 批評；評論",
     "unit": 4,
     "example": "He shrugged off the criticism.",
     "exampleZh": "他對批評不予理睬。"
@@ -33834,7 +33834,7 @@ const externalVocabularyDB = [
     "id": 3760,
     "en": "cruelty",
     "kk": "[ˋkrulti]",
-    "zh": "n. 殘酷,殘忍",
+    "zh": "n. 殘酷、殘忍",
     "unit": 4,
     "example": "Cruelty was quite alien to him.",
     "exampleZh": "他絕無殘忍之心。"
@@ -33861,7 +33861,7 @@ const externalVocabularyDB = [
     "id": 3763,
     "en": "cucumber",
     "kk": "[ˋkjukəmbɚ]",
-    "zh": "n. 黃瓜,胡瓜",
+    "zh": "n. 黃瓜、胡瓜",
     "unit": 4,
     "example": "Bess stabbed a slice of cucumber.",
     "exampleZh": "貝斯戳起一片黃瓜。"
@@ -33879,7 +33879,7 @@ const externalVocabularyDB = [
     "id": 3765,
     "en": "cunning",
     "kk": "[ˋkʌnɪŋ]",
-    "zh": "adj. 狡猾,奸詐；n. 靈巧,熟練",
+    "zh": "adj. 狡猾、奸詐；n. 靈巧、熟練",
     "unit": 4,
     "example": "He was as cunning as a fox.",
     "exampleZh": "他像狐狸一樣狡猾。"
@@ -33960,7 +33960,7 @@ const externalVocabularyDB = [
     "id": 3774,
     "en": "decoration",
     "kk": "[͵dɛkɚˋeʃən]",
-    "zh": "n. 裝飾,裝潢",
+    "zh": "n. 裝飾、裝潢",
     "unit": 4,
     "example": "He gave Stephanie a free hand in the decoration.",
     "exampleZh": "他讓斯蒂芬妮在裝潢時便宜行事。"
@@ -33969,7 +33969,7 @@ const externalVocabularyDB = [
     "id": 3775,
     "en": "decrease",
     "kk": "[dɪˋkris]",
-    "zh": "v. 減少,減小；n. 減少額,減小量",
+    "zh": "v. 減少、減小；n. 減少額、減小量",
     "unit": 4,
     "example": "People should decrease the amount of fat they eat.",
     "exampleZh": "人們應減少脂肪的攝入量。"
@@ -33987,7 +33987,7 @@ const externalVocabularyDB = [
     "id": 3777,
     "en": "defense",
     "kk": "[dɪˋfɛns]",
-    "zh": "n. 防禦,保衛,防護",
+    "zh": "n. 防禦、保衛,防護",
     "unit": 4,
     "example": "A Defense Department spokesman briefed reporters.",
     "exampleZh": "一位國防部發言人向記者們介紹了情況。"
@@ -34023,7 +34023,7 @@ const externalVocabularyDB = [
     "id": 3781,
     "en": "departure",
     "kk": "[dɪˋpɑrtʃɚ]",
-    "zh": "n. 離開;出發,起程",
+    "zh": "n. 離開；出發、起程",
     "unit": 4,
     "example": "It was a radical departure from tradition.",
     "exampleZh": "這從根本上違背了傳統。"
@@ -34041,7 +34041,7 @@ const externalVocabularyDB = [
     "id": 3783,
     "en": "depression",
     "kk": "[dɪˋprɛʃən]",
-    "zh": "n. 沮喪,意氣消沈",
+    "zh": "n. 沮喪、意氣消沈",
     "unit": 4,
     "example": "She had slid into a depression.",
     "exampleZh": "她不知不覺地抑鬱寡歡起來。"
@@ -34050,7 +34050,7 @@ const externalVocabularyDB = [
     "id": 3784,
     "en": "destruction",
     "kk": "[dɪˋstrʌkʃən]",
-    "zh": "n. 破壞;毀滅;消滅",
+    "zh": "n. 破壞；毀滅；消滅",
     "unit": 4,
     "example": "In the poem he laments the destruction of the countryside.",
     "exampleZh": "在那首詩裡他對鄉村遭到的破壞流露出悲哀。"
@@ -34068,7 +34068,7 @@ const externalVocabularyDB = [
     "id": 3786,
     "en": "determination",
     "kk": "[dɪ͵tɝməˋneʃən]",
-    "zh": "n. 堅定;果斷",
+    "zh": "n. 堅定；果斷",
     "unit": 4,
     "example": "He showed great courage and determination.",
     "exampleZh": "他表現得十分勇敢和果斷。"
@@ -34077,7 +34077,7 @@ const externalVocabularyDB = [
     "id": 3787,
     "en": "device",
     "kk": "[dɪˋvaɪs]",
-    "zh": "n. 儀器,裝置",
+    "zh": "n. 儀器、裝置",
     "unit": 4,
     "example": "The device was protected by patent.",
     "exampleZh": "這一裝置受專利保護。"
@@ -34104,7 +34104,7 @@ const externalVocabularyDB = [
     "id": 3790,
     "en": "digestion",
     "kk": "[daɪˋdʒɛstʃən]",
-    "zh": "n. 消化;(知識等的)領悟,吸收",
+    "zh": "n. 消化；(知識等的)領悟、吸收",
     "unit": 4,
     "example": "No liquids are served with meals because they interfere with digestion.",
     "exampleZh": "上菜時不提供飲料，因為會妨礙消化。"
@@ -34122,7 +34122,7 @@ const externalVocabularyDB = [
     "id": 3792,
     "en": "diligence",
     "kk": "[ˋdɪlədʒəns]",
-    "zh": "n. 勤勉;勤奮",
+    "zh": "n. 勤勉；勤奮",
     "unit": 4,
     "example": "Little by little his diligence was rewarded.",
     "exampleZh": "漸漸地，他的勤奮得到了回報。"
@@ -34158,7 +34158,7 @@ const externalVocabularyDB = [
     "id": 3796,
     "en": "disaster",
     "kk": "[dɪˋzæstɚ]",
-    "zh": "n. 災害,災難,不幸",
+    "zh": "n. 災害、災難,不幸",
     "unit": 4,
     "example": "A disaster was narrowly averted.",
     "exampleZh": "及時防止了一場災難。"
@@ -34167,7 +34167,7 @@ const externalVocabularyDB = [
     "id": 3797,
     "en": "discipline",
     "kk": "[ˋdɪsəplən]",
-    "zh": "v. 紀律,風紀；n. 教養",
+    "zh": "v. 紀律、風紀；n. 教養",
     "unit": 4,
     "example": "Discipline was the new coach's secret weapon.",
     "exampleZh": "嚴格的訓練是這位新教練的秘密武器。"
@@ -34176,7 +34176,7 @@ const externalVocabularyDB = [
     "id": 3798,
     "en": "discouragement",
     "kk": "[dɪˋskɝɪdʒmənt]",
-    "zh": "n. 沮喪,氣餒,洩氣;勸阻",
+    "zh": "n. 沮喪、氣餒,洩氣；勸阻",
     "unit": 4,
     "example": "One discouragement to reading is that books are expensive.",
     "exampleZh": "讀書的一大障礙是書很貴。"
@@ -34203,7 +34203,7 @@ const externalVocabularyDB = [
     "id": 3801,
     "en": "disorder",
     "kk": "[dɪˋsɔrdɚ]",
-    "zh": "v. 混亂,無秩序；n. 不適,小病",
+    "zh": "v. 混亂、無秩序；n. 不適、小病",
     "unit": 4,
     "example": "I have bipolar disorder.",
     "exampleZh": "我有一個夢想，有一天，當告訴別人我得了躁鬱症的時候，我不再低聲細氣。當我坦白地說出自己患有心理疾病時，我不再感到羞愧。"
@@ -34221,7 +34221,7 @@ const externalVocabularyDB = [
     "id": 3803,
     "en": "distribution",
     "kk": "[͵dɪstrəˋbjuʃən]",
-    "zh": "n. 分發;分配",
+    "zh": "n. 分發；分配",
     "unit": 4,
     "example": "They studied the geographical distribution of the disease.",
     "exampleZh": "他們研究了這種疾病的地域分佈情況。"
@@ -34230,7 +34230,7 @@ const externalVocabularyDB = [
     "id": 3804,
     "en": "district",
     "kk": "[ˋdɪstrɪkt]",
-    "zh": "n. 地區,區域,地帶",
+    "zh": "n. 地區、區域,地帶",
     "unit": 4,
     "example": "I drove around the business district.",
     "exampleZh": "我繞著商業區行駛。"
@@ -34302,7 +34302,7 @@ const externalVocabularyDB = [
     "id": 3812,
     "en": "drill",
     "kk": "[drɪl]",
-    "zh": "v. 鑽,鑽頭；n. 鑽床",
+    "zh": "v. 鑽、鑽頭；n. 鑽床",
     "unit": 4,
     "example": "The drill has variable speed control.",
     "exampleZh": "這鑽機有變速控制。"
@@ -34320,7 +34320,7 @@ const externalVocabularyDB = [
     "id": 3814,
     "en": "dynasty",
     "kk": "[ˋdaɪnəsti]",
-    "zh": "n. 王朝;朝代",
+    "zh": "n. 王朝；朝代",
     "unit": 4,
     "example": "The Seljuk dynasty of Syria was founded in 1094.",
     "exampleZh": "敘利亞的塞爾柱王朝建立於1094年。"
@@ -34374,7 +34374,7 @@ const externalVocabularyDB = [
     "id": 3820,
     "en": "efficiency",
     "kk": "[ɪˋfɪʃənsi]",
-    "zh": "n. 效率;效能",
+    "zh": "n. 效率；效能",
     "unit": 4,
     "example": "She arranged everything with her customary efficiency.",
     "exampleZh": "她以她特有的高效率把一切都已安排妥當。"
@@ -34383,7 +34383,7 @@ const externalVocabularyDB = [
     "id": 3821,
     "en": "elastic",
     "kk": "[ɪˋlæstɪk]",
-    "zh": "adj. 橡皮帶,鬆緊帶；n. 橡皮圈",
+    "zh": "adj. 橡皮帶、鬆緊帶；n. 橡皮圈",
     "unit": 4,
     "example": "Beat it until the dough is slightly elastic.",
     "exampleZh": "反覆捶打，直到麵糰略有彈性。"
@@ -34392,7 +34392,7 @@ const externalVocabularyDB = [
     "id": 3822,
     "en": "electrician",
     "kk": "[ɪlɛkˋtrɪʃən]",
-    "zh": "n. 電工;電氣技師",
+    "zh": "n. 電工；電氣技師",
     "unit": 4,
     "example": "He was an electrician by profession.",
     "exampleZh": "他的職業是電工。"
@@ -34428,7 +34428,7 @@ const externalVocabularyDB = [
     "id": 3826,
     "en": "embarrassment",
     "kk": "[ɪmˋbɛrəsmənt]",
-    "zh": "n. 窘;難堪;使人為難的人(或事物)",
+    "zh": "n. 窘；難堪；使人為難的人(或事物)",
     "unit": 4,
     "example": "Embarrassment rooted her to the spot.",
     "exampleZh": "她尷尬得呆住了。"
@@ -34446,7 +34446,7 @@ const externalVocabularyDB = [
     "id": 3828,
     "en": "emphasis",
     "kk": "[ˋɛmfəsəs]",
-    "zh": "n. 強調,重視,重點",
+    "zh": "n. 強調、重視,重點",
     "unit": 4,
     "example": "The course has a vocational emphasis.",
     "exampleZh": "這門課程著重職業培訓。"
@@ -34473,7 +34473,7 @@ const externalVocabularyDB = [
     "id": 3831,
     "en": "enforcement",
     "kk": "[ɛnˋfɔrsmənt]",
-    "zh": "n. 執行;強制",
+    "zh": "n. 執行；強制",
     "unit": 4,
     "example": "The doctors want stricter enforcement of existing laws.",
     "exampleZh": "醫生們希望現行法律的執行能更嚴格。"
@@ -34500,7 +34500,7 @@ const externalVocabularyDB = [
     "id": 3834,
     "en": "entertainment",
     "kk": "[͵ɛntɚˋtenmənt]",
-    "zh": "n. 招待,款待; 演藝界",
+    "zh": "n. 招待、款待； 演藝界",
     "unit": 4,
     "example": "It was typical family entertainment.",
     "exampleZh": "這是典型的家庭娛樂活動。"
@@ -34509,7 +34509,7 @@ const externalVocabularyDB = [
     "id": 3835,
     "en": "enthusiasm",
     "kk": "[ɪnˋθuzi͵æzəm]",
-    "zh": "n. 熱心,熱情",
+    "zh": "n. 熱心、熱情",
     "unit": 4,
     "example": "I really admire your enthusiasm.",
     "exampleZh": "我確實欽佩你的熱情。"
@@ -34518,7 +34518,7 @@ const externalVocabularyDB = [
     "id": 3836,
     "en": "equality",
     "kk": "[ɪkˋwɑləti]",
-    "zh": "n. 相等;平等",
+    "zh": "n. 相等；平等",
     "unit": 4,
     "example": "Europe is not a gender-equality heaven.",
     "exampleZh": "歐洲不是性別平等的天堂。"
@@ -34536,7 +34536,7 @@ const externalVocabularyDB = [
     "id": 3838,
     "en": "era",
     "kk": "[ˋɛrə]",
-    "zh": "n. 時代;年代",
+    "zh": "n. 時代；年代",
     "unit": 4,
     "example": "It's the end of an era.",
     "exampleZh": "這是一個時代的終結。"
@@ -34545,7 +34545,7 @@ const externalVocabularyDB = [
     "id": 3839,
     "en": "errand",
     "kk": "[ˋɛrənd]",
-    "zh": "n. 差事,差使",
+    "zh": "n. 差事、差使",
     "unit": 4,
     "example": "He sent me on a fool's errand.",
     "exampleZh": "他派我去幹白費力的事。"
@@ -34581,7 +34581,7 @@ const externalVocabularyDB = [
     "id": 3843,
     "en": "establishment",
     "kk": "[ɪˋstæblɪʃmənt]",
-    "zh": "n. 建立;創立;建立的機構",
+    "zh": "n. 建立；創立；建立的機構",
     "unit": 4,
     "example": "The speaker announced the establishment of a new college.",
     "exampleZh": "發言人宣佈了新學院的成立。"
@@ -34599,7 +34599,7 @@ const externalVocabularyDB = [
     "id": 3845,
     "en": "evaluation",
     "kk": "[ɪ͵væljuˋeʃən]",
-    "zh": "n. 評估;估價",
+    "zh": "n. 評估；估價",
     "unit": 4,
     "example": "He got a good evaluation.",
     "exampleZh": "他得到了很好的評價。"
@@ -34626,7 +34626,7 @@ const externalVocabularyDB = [
     "id": 3848,
     "en": "examinee",
     "kk": "[ɪɡ͵zæməˋni]",
-    "zh": "n. 應試者;受檢查者",
+    "zh": "n. 應試者；受檢查者",
     "unit": 4,
     "example": "The examinee answered the question with confidence.",
     "exampleZh": "考生很有自信地回答問題。"
@@ -34635,7 +34635,7 @@ const externalVocabularyDB = [
     "id": 3849,
     "en": "examiner",
     "kk": "[ɪɡˋzæmənɚ]",
-    "zh": "n. 主考人;檢查人;審查員",
+    "zh": "n. 主考人；檢查人；審查員",
     "unit": 4,
     "example": "A medical examiner has listed the deaths as homicides.",
     "exampleZh": "驗屍官已將這些死亡列為他殺案件。"
@@ -34671,7 +34671,7 @@ const externalVocabularyDB = [
     "id": 3853,
     "en": "expansion",
     "kk": "[ɪkˋspænʃən]",
-    "zh": "n. 擴展;擴張",
+    "zh": "n. 擴展；擴張",
     "unit": 4,
     "example": "The company intends a slow-down in expansion.",
     "exampleZh": "公司準備放慢擴充套件速度。"
@@ -34680,7 +34680,7 @@ const externalVocabularyDB = [
     "id": 3854,
     "en": "explanation",
     "kk": "[͵ɛkspləˋneʃən]",
-    "zh": "n. 說明,解釋",
+    "zh": "n. 說明、解釋",
     "unit": 4,
     "example": "There was a logical explanation.",
     "exampleZh": "存在一個合理的解釋。"
@@ -34707,7 +34707,7 @@ const externalVocabularyDB = [
     "id": 3857,
     "en": "exposure",
     "kk": "[ɪkˋspoʒɚ]",
-    "zh": "n. 暴露;暴曬",
+    "zh": "n. 暴露；暴曬",
     "unit": 4,
     "example": "Exposure to the sun ages the skin.",
     "exampleZh": "太陽曝曬會使皮膚粗老。"
@@ -34716,7 +34716,7 @@ const externalVocabularyDB = [
     "id": 3858,
     "en": "extent",
     "kk": "[ɪkˋstɛnt]",
-    "zh": "n. 程度;限度;範圍",
+    "zh": "n. 程度；限度；範圍",
     "unit": 4,
     "example": "That's true, to a certain extent.",
     "exampleZh": "在一定程度上的確如此。"
@@ -34725,7 +34725,7 @@ const externalVocabularyDB = [
     "id": 3859,
     "en": "facility",
     "kk": "[fəˋsɪlɪti]",
-    "zh": "n. 能力;技能;設備, 設施; 工具;(供特定用途的)場所",
+    "zh": "n. 能力；技能；設備, 設施； 工具；(供特定用途的)場所",
     "unit": 4,
     "example": "She has a facility for languages.",
     "exampleZh": "她有語言天賦。"
@@ -34734,7 +34734,7 @@ const externalVocabularyDB = [
     "id": 3860,
     "en": "fame",
     "kk": "[fem]",
-    "zh": "n. 聲譽,名望",
+    "zh": "n. 聲譽、名望",
     "unit": 4,
     "example": "Fame hasn't really changed him.",
     "exampleZh": "名聲並沒有使他有絲毫改變。"
@@ -34743,7 +34743,7 @@ const externalVocabularyDB = [
     "id": 3861,
     "en": "fantasy",
     "kk": "[ˋfæntəsi]",
-    "zh": "n. 空想;幻想",
+    "zh": "n. 空想；幻想",
     "unit": 4,
     "example": "He retreated into a world of fantasy.",
     "exampleZh": "他遁入了幻想世界。"
@@ -34752,7 +34752,7 @@ const externalVocabularyDB = [
     "id": 3862,
     "en": "farewell",
     "kk": "[͵fɛrˋwɛl]",
-    "zh": "n. 告別;告別辭",
+    "zh": "n. 告別；告別辭",
     "unit": 4,
     "example": "I bade all my friends farewell.",
     "exampleZh": "我告別了所有的朋友。"
@@ -34806,7 +34806,7 @@ const externalVocabularyDB = [
     "id": 3868,
     "en": "firecracker",
     "kk": "[ˋfaɪɚ͵krækɚ]",
-    "zh": "n. 爆竹;鞭炮",
+    "zh": "n. 爆竹；鞭炮",
     "unit": 4,
     "example": "The firecracker didn't go off.",
     "exampleZh": "爆竹沒響。"
@@ -34860,7 +34860,7 @@ const externalVocabularyDB = [
     "id": 3874,
     "en": "formation",
     "kk": "[fɔrˋmeʃən]",
-    "zh": "n. 形成;構成物; 形態, 結構",
+    "zh": "n. 形成；構成物； 形態, 結構",
     "unit": 4,
     "example": "He was flying in formation with seven other jets.",
     "exampleZh": "他和另外7架噴氣式飛機編隊飛行。"
@@ -34869,7 +34869,7 @@ const externalVocabularyDB = [
     "id": 3875,
     "en": "formula",
     "kk": "[ˋfɔrmjələ]",
-    "zh": "n. 配方,處方;公式",
+    "zh": "n. 配方、處方；公式",
     "unit": 4,
     "example": "The formula is jealously guarded.",
     "exampleZh": "對該配方戒備森嚴。"
@@ -34878,7 +34878,7 @@ const externalVocabularyDB = [
     "id": 3876,
     "en": "fort",
     "kk": "[fɔrt]",
-    "zh": "n. 堡壘,要塞",
+    "zh": "n. 堡壘、要塞",
     "unit": 4,
     "example": "He made a firm decision to leave Fort Multry by boat.",
     "exampleZh": "他作出了明確的決定，要乘船離開穆爾特里堡。"
@@ -34896,7 +34896,7 @@ const externalVocabularyDB = [
     "id": 3878,
     "en": "foundation",
     "kk": "[faʊnˋdeʃən]",
-    "zh": "n. 建立,創辦;基礎;基金會",
+    "zh": "n. 建立、創辦；基礎；基金會",
     "unit": 4,
     "example": "The allegations were without foundation.",
     "exampleZh": "這些指控沒有根據。"
@@ -34905,7 +34905,7 @@ const externalVocabularyDB = [
     "id": 3879,
     "en": "founder",
     "kk": "[ˋfaʊndɚ]",
-    "zh": "n. 創立者;奠基者",
+    "zh": "n. 創立者；奠基者",
     "unit": 4,
     "example": "Its founder Rodolphe Julian was a canny businessman.",
     "exampleZh": "其創始人魯道夫·朱利安是一位精明的商人。"
@@ -34914,7 +34914,7 @@ const externalVocabularyDB = [
     "id": 3880,
     "en": "fragrance",
     "kk": "[ˋfreɡrəns]",
-    "zh": "n. 芬芳;香味",
+    "zh": "n. 芬芳；香味",
     "unit": 4,
     "example": "The advertisement is for a men's fragrance.",
     "exampleZh": "這則廣告介紹一款男士香水。"
@@ -34941,7 +34941,7 @@ const externalVocabularyDB = [
     "id": 3883,
     "en": "frequency",
     "kk": "[ˋfrikwənsi]",
-    "zh": "n. 頻率,次數",
+    "zh": "n. 頻率、次數",
     "unit": 4,
     "example": "The frequency of Kara's phone calls increased rapidly.",
     "exampleZh": "卡拉打電話的頻率迅速增加。"
@@ -34950,7 +34950,7 @@ const externalVocabularyDB = [
     "id": 3884,
     "en": "freshman",
     "kk": "[ˋfrɛʃmən]",
-    "zh": "n. 一年級生,新生",
+    "zh": "n. 一年級生、新生",
     "unit": 4,
     "example": "A freshman adviser lives in each residence hall.",
     "exampleZh": "每棟學生宿舍樓裡住著一位新生指導老師。"
@@ -34977,7 +34977,7 @@ const externalVocabularyDB = [
     "id": 3887,
     "en": "frustration",
     "kk": "[frəˋstreʃən]",
-    "zh": "n. 失望;挫折",
+    "zh": "n. 失望；挫折",
     "unit": 4,
     "example": "She telephoned her best friend to vent her frustration.",
     "exampleZh": "她打電話給自己最好的朋友來發洩她的沮喪。"
@@ -34995,7 +34995,7 @@ const externalVocabularyDB = [
     "id": 3889,
     "en": "fulfillment",
     "kk": "[fʊlˋfɪlmənt]",
-    "zh": "n. 完成,履行;實現;成就(感)",
+    "zh": "n. 完成、履行；實現；成就(感)",
     "unit": 4,
     "example": "It was an outlet for their personal fulfillment.",
     "exampleZh": "它是他們實現個人價值的一個出口。"
@@ -35013,7 +35013,7 @@ const externalVocabularyDB = [
     "id": 3891,
     "en": "funeral",
     "kk": "[ˋfjunɚəl]",
-    "zh": "n. 喪葬,葬儀",
+    "zh": "n. 喪葬、葬儀",
     "unit": 4,
     "example": "A funeral wake was in progress.",
     "exampleZh": "葬禮前在守靈。"
@@ -35022,7 +35022,7 @@ const externalVocabularyDB = [
     "id": 3892,
     "en": "gallery",
     "kk": "[ˋɡælɚi]",
-    "zh": "n. 畫廊,美術館",
+    "zh": "n. 畫廊、美術館",
     "unit": 4,
     "example": "We zoomed through the gallery.",
     "exampleZh": "我們快速穿過了畫廊。"
@@ -35031,7 +35031,7 @@ const externalVocabularyDB = [
     "id": 3893,
     "en": "gangster",
     "kk": "[ˋɡæŋstɚ]",
-    "zh": "n. 歹徒,匪盜,流氓",
+    "zh": "n. 歹徒、匪盜,流氓",
     "unit": 4,
     "example": "Tom is a gangster.",
     "exampleZh": "湯姆是一個黑幫。"
@@ -35058,7 +35058,7 @@ const externalVocabularyDB = [
     "id": 3896,
     "en": "gene",
     "kk": "[dʒin]",
-    "zh": "n. 基因,遺傳因子",
+    "zh": "n. 基因、遺傳因子",
     "unit": 4,
     "example": "The gene for asthma has been identified.",
     "exampleZh": "哮喘病的基因已被識別。"
@@ -35067,7 +35067,7 @@ const externalVocabularyDB = [
     "id": 3897,
     "en": "generation",
     "kk": "[͵dʒɛnɚˋeʃən]",
-    "zh": "n. 世代;產生",
+    "zh": "n. 世代；產生",
     "unit": 4,
     "example": "He is arguably the best actor of his generation.",
     "exampleZh": "按理他是他那一代中最優秀的演員。"
@@ -35076,7 +35076,7 @@ const externalVocabularyDB = [
     "id": 3898,
     "en": "generosity",
     "kk": "[͵dʒɛnɚˋɑsəti]",
-    "zh": "n. 寬宏大量;慷慨",
+    "zh": "n. 寬宏大量；慷慨",
     "unit": 4,
     "example": "We were amazed by his generosity.",
     "exampleZh": "他的慷慨令我們喜出望外。"
@@ -35094,7 +35094,7 @@ const externalVocabularyDB = [
     "id": 3900,
     "en": "germ",
     "kk": "[dʒɝm]",
-    "zh": "n. 微生物;細菌;病菌",
+    "zh": "n. 微生物；細菌；病菌",
     "unit": 4,
     "example": "This was the germ of a book.",
     "exampleZh": "這是一本書的創作萌芽。"
@@ -35112,7 +35112,7 @@ const externalVocabularyDB = [
     "id": 3902,
     "en": "ginger",
     "kk": "[ˋdʒɪndʒɚ]",
-    "zh": "n. 生薑,薑",
+    "zh": "n. 生薑、薑",
     "unit": 4,
     "example": "I live mostly on coffee and ginger ale.",
     "exampleZh": "我喝咖啡和薑汁飲料幾乎成癮。"
@@ -35139,7 +35139,7 @@ const externalVocabularyDB = [
     "id": 3905,
     "en": "globe",
     "kk": "[ɡlob]",
-    "zh": "n. 地球儀;地球",
+    "zh": "n. 地球儀；地球",
     "unit": 4,
     "example": "He still wheels and deals around the globe.",
     "exampleZh": "他仍在世界各地鑽營謀取。"
@@ -35148,7 +35148,7 @@ const externalVocabularyDB = [
     "id": 3906,
     "en": "goods",
     "kk": "[ɡʊdz]",
-    "zh": "n. 商品;貨物",
+    "zh": "n. 商品；貨物",
     "unit": 4,
     "example": "Prices are marked on the goods.",
     "exampleZh": "價格標在商品上。"
@@ -35193,7 +35193,7 @@ const externalVocabularyDB = [
     "id": 3911,
     "en": "gratitude",
     "kk": "[ˋɡrætə͵tud]",
-    "zh": "n. 感激之情,感恩,感謝",
+    "zh": "n. 感激之情、感恩,感謝",
     "unit": 4,
     "example": "He smiled at them with gratitude.",
     "exampleZh": "他向他們笑了笑表示謝意。"
@@ -35211,7 +35211,7 @@ const externalVocabularyDB = [
     "id": 3913,
     "en": "greeting",
     "kk": "[ˋɡritɪŋ]",
-    "zh": "n. 問候,迎接,招呼;賀詞;問候語",
+    "zh": "n. 問候、迎接,招呼；賀詞；問候語",
     "unit": 4,
     "example": "He managed to croak a greeting.",
     "exampleZh": "他勉強用沙啞的嗓音打招呼。"
@@ -35220,7 +35220,7 @@ const externalVocabularyDB = [
     "id": 3914,
     "en": "grief",
     "kk": "[ɡrif]",
-    "zh": "n. 悲痛,悲傷",
+    "zh": "n. 悲痛、悲傷",
     "unit": 4,
     "example": "For months he was prostrated with grief.",
     "exampleZh": "他好幾個月都悲痛不已。"
@@ -35238,7 +35238,7 @@ const externalVocabularyDB = [
     "id": 3916,
     "en": "groom",
     "kk": "[ɡrum]",
-    "zh": "n. 馬伕;新郎",
+    "zh": "n. 馬伕；新郎",
     "unit": 4,
     "example": "Guests toasted the bride and groom with champagne.",
     "exampleZh": "客人們以香檳為新娘新郎敬酒。"
@@ -35256,7 +35256,7 @@ const externalVocabularyDB = [
     "id": 3918,
     "en": "guilt",
     "kk": "[ɡɪlt]",
-    "zh": "n. 有罪;犯罪;過失",
+    "zh": "n. 有罪；犯罪；過失",
     "unit": 4,
     "example": "Carolyn was consumed with guilt.",
     "exampleZh": "卡羅琳深感內疚。"
@@ -35274,7 +35274,7 @@ const externalVocabularyDB = [
     "id": 3920,
     "en": "gull",
     "kk": "[ɡʌl]",
-    "zh": "n. 鷗,海鷗; 易受騙的人",
+    "zh": "n. 鷗、海鷗； 易受騙的人",
     "unit": 4,
     "example": "The gull held the fish in its beak.",
     "exampleZh": "海鷗嘴裡叼著魚。"
@@ -35283,7 +35283,7 @@ const externalVocabularyDB = [
     "id": 3921,
     "en": "halt",
     "kk": "[hɔlt]",
-    "zh": "v. 暫停,停止；n. 終止",
+    "zh": "v. 暫停、停止；n. 終止",
     "unit": 4,
     "example": "The bus shuddered to a halt.",
     "exampleZh": "公共汽車劇烈地晃動著停了下來。"
@@ -35292,7 +35292,7 @@ const externalVocabularyDB = [
     "id": 3922,
     "en": "handwriting",
     "kk": "[ˋhæn͵draɪtɪŋ]",
-    "zh": "n. 書寫;手寫",
+    "zh": "n. 書寫；手寫",
     "unit": 4,
     "example": "Can anyone decipher his handwriting?",
     "exampleZh": "有誰能辨認他的字跡？"
@@ -35301,7 +35301,7 @@ const externalVocabularyDB = [
     "id": 3923,
     "en": "hardship",
     "kk": "[ˋhɑrdʃɪp]",
-    "zh": "n. 艱難,困苦",
+    "zh": "n. 艱難、困苦",
     "unit": 4,
     "example": "Welfare provides a cushion against hardship.",
     "exampleZh": "福利給困苦提供了一個緩解。"
@@ -35310,7 +35310,7 @@ const externalVocabularyDB = [
     "id": 3924,
     "en": "hardware",
     "kk": "[ˋhɑrd͵wɛr]",
-    "zh": "n. 金屬器件;硬體",
+    "zh": "n. 金屬器件；硬體",
     "unit": 4,
     "example": "The components are readily available in hardware stores.",
     "exampleZh": "這些零件在五金商店容易買到。"
@@ -35328,7 +35328,7 @@ const externalVocabularyDB = [
     "id": 3926,
     "en": "harmony",
     "kk": "[ˋhɑrməni]",
-    "zh": "n. 和諧;協調",
+    "zh": "n. 和諧；協調",
     "unit": 4,
     "example": "Here, we live in harmony with nature.",
     "exampleZh": "在這裡，我們與自然和諧而居。"
@@ -35337,7 +35337,7 @@ const externalVocabularyDB = [
     "id": 3927,
     "en": "haste",
     "kk": "[hest]",
-    "zh": "n. 急忙;慌忙;性急",
+    "zh": "n. 急忙；慌忙；性急",
     "unit": 4,
     "example": "She made haste to open the door.",
     "exampleZh": "她急忙開啟門。"
@@ -35346,7 +35346,7 @@ const externalVocabularyDB = [
     "id": 3928,
     "en": "hatred",
     "kk": "[ˋhetrəd]",
-    "zh": "n. 憎恨,增惡;敵意",
+    "zh": "n. 憎恨、增惡；敵意",
     "unit": 4,
     "example": "Why all this hatred?",
     "exampleZh": "為什麼有這麼多仇恨？"
@@ -35382,7 +35382,7 @@ const externalVocabularyDB = [
     "id": 3932,
     "en": "hesitation",
     "kk": "[͵hɛzəˋteʃən]",
-    "zh": "n. 躊躇,猶豫",
+    "zh": "n. 躊躇、猶豫",
     "unit": 4,
     "example": "Brian's hesitation was almost imperceptible.",
     "exampleZh": "布萊恩的猶豫幾乎難以察覺。"
@@ -35391,7 +35391,7 @@ const externalVocabularyDB = [
     "id": 3933,
     "en": "homeland",
     "kk": "[ˋhom͵lænd]",
-    "zh": "n. 祖國;家鄉",
+    "zh": "n. 祖國；家鄉",
     "unit": 4,
     "example": "Many are planning to return to their homeland.",
     "exampleZh": "很多人正計劃回到自己的祖國去。"
@@ -35445,7 +35445,7 @@ const externalVocabularyDB = [
     "id": 3939,
     "en": "household",
     "kk": "[ˋhaʊ͵shold]",
-    "zh": "n. 一家人;家眷;家庭,戶",
+    "zh": "n. 一家人；家眷；家庭、戶",
     "unit": 4,
     "example": "Today, fashion designers are household names.",
     "exampleZh": "如今，服裝設計師們家喻戶曉。"
@@ -35472,7 +35472,7 @@ const externalVocabularyDB = [
     "id": 3942,
     "en": "humanity",
     "kk": "[hjuˋmænɪti]",
-    "zh": "n. 人性;人道;慈愛",
+    "zh": "n. 人性；人道；慈愛",
     "unit": 4,
     "example": "It helps engender a sense of common humanity.",
     "exampleZh": "它有助於引發一種共同的人道主義精神。"
@@ -35481,7 +35481,7 @@ const externalVocabularyDB = [
     "id": 3943,
     "en": "humidity",
     "kk": "[hjuˋmɪdəti]",
-    "zh": "n. 濕氣,濕度",
+    "zh": "n. 濕氣、濕度",
     "unit": 4,
     "example": "The humidity is relatively low.",
     "exampleZh": "溼度相對較低。"
@@ -35490,7 +35490,7 @@ const externalVocabularyDB = [
     "id": 3944,
     "en": "hurricane",
     "kk": "[ˋhɝə͵ken]",
-    "zh": "n. 颶風,暴風雨",
+    "zh": "n. 颶風、暴風雨",
     "unit": 4,
     "example": "Sometimes a nor'easter can be worse than a hurricane.",
     "exampleZh": "一場東北風暴有時比一次颶風還糟糕。"
@@ -35517,7 +35517,7 @@ const externalVocabularyDB = [
     "id": 3947,
     "en": "identification",
     "kk": "[aɪ͵dɛntəfəˋkeʃən]",
-    "zh": "n. 認出;識別",
+    "zh": "n. 認出；識別",
     "unit": 4,
     "example": "Can I see some identification, please?",
     "exampleZh": "請出示任何身份證件好嗎？"
@@ -35544,7 +35544,7 @@ const externalVocabularyDB = [
     "id": 3950,
     "en": "illustration",
     "kk": "[͵ɪləˋstreʃən]",
-    "zh": "n. 說明,圖解",
+    "zh": "n. 說明、圖解",
     "unit": 4,
     "example": "She looked like a princess in a nineteenth-century illustration.",
     "exampleZh": "她看上去像19世紀插圖裡的公主。"
@@ -35553,7 +35553,7 @@ const externalVocabularyDB = [
     "id": 3951,
     "en": "imitation",
     "kk": "[͵ɪməˋteʃən]",
-    "zh": "n. 模仿,模擬;仿造;偽造",
+    "zh": "n. 模仿、模擬；仿造；偽造",
     "unit": 4,
     "example": "A child learns to talk by imitation.",
     "exampleZh": "小孩子透過模仿學會說話。"
@@ -35562,7 +35562,7 @@ const externalVocabularyDB = [
     "id": 3952,
     "en": "immigrant",
     "kk": "[ˋɪməɡrənt]",
-    "zh": "n. 移民,僑民",
+    "zh": "n. 移民、僑民",
     "unit": 4,
     "example": "Immigrant workers were classed as aliens.",
     "exampleZh": "移民來的工人被歸入僑民類。"
@@ -35580,7 +35580,7 @@ const externalVocabularyDB = [
     "id": 3954,
     "en": "impact",
     "kk": "[͵ɪmˋpækt]",
-    "zh": "v. 衝擊,撞擊；n. 影響",
+    "zh": "v. 衝擊、撞擊；n. 影響",
     "unit": 4,
     "example": "A violent impact hurtled her forward.",
     "exampleZh": "一股劇烈的衝擊力將她猛地向前拋了出去。"
@@ -35598,7 +35598,7 @@ const externalVocabularyDB = [
     "id": 3956,
     "en": "incident",
     "kk": "[ˋɪnsədənt]",
-    "zh": "n. 事件;事變",
+    "zh": "n. 事件；事變",
     "unit": 4,
     "example": "That incident sparked it off.",
     "exampleZh": "那一事件引發了它。"
@@ -35607,7 +35607,7 @@ const externalVocabularyDB = [
     "id": 3957,
     "en": "indication",
     "kk": "[͵ɪndəˋkeʃən]",
-    "zh": "n. 指示;指點",
+    "zh": "n. 指示；指點",
     "unit": 4,
     "example": "There is no indication which way the vote could go.",
     "exampleZh": "沒有跡象表明投票的結果會怎麼樣。"
@@ -35625,7 +35625,7 @@ const externalVocabularyDB = [
     "id": 3959,
     "en": "infection",
     "kk": "[͵ɪnˋfɛkʃən]",
-    "zh": "n. 傳染;侵染",
+    "zh": "n. 傳染；侵染",
     "unit": 4,
     "example": "Cholera is a bacterial infection.",
     "exampleZh": "霍亂是一種由細菌引起的感染。"
@@ -35652,7 +35652,7 @@ const externalVocabularyDB = [
     "id": 3962,
     "en": "ingredient",
     "kk": "[͵ɪnˋidiənt]",
-    "zh": "n. 要素,因素",
+    "zh": "n. 要素、因素",
     "unit": 4,
     "example": "What is the active ingredient in aspirin?",
     "exampleZh": "什麼是阿司匹林中的有效成分？"
@@ -35697,7 +35697,7 @@ const externalVocabularyDB = [
     "id": 3967,
     "en": "inspection",
     "kk": "[͵ɪnˋspɛkʃən]",
-    "zh": "n. 檢查;檢閱;視察",
+    "zh": "n. 檢查；檢閱；視察",
     "unit": 4,
     "example": "Engineers carried out a thorough inspection of the track.",
     "exampleZh": "工程師對軌道進行了徹底檢查。"
@@ -35715,7 +35715,7 @@ const externalVocabularyDB = [
     "id": 3969,
     "en": "instinct",
     "kk": "[ˋɪnstɪŋkt]",
-    "zh": "n. 本能;天性;直覺",
+    "zh": "n. 本能；天性；直覺",
     "unit": 4,
     "example": "Many birds have a remarkable homing instinct.",
     "exampleZh": "很多鳥類具有了不起的返回原地的本能。"
@@ -35724,7 +35724,7 @@ const externalVocabularyDB = [
     "id": 3970,
     "en": "instructor",
     "kk": "[͵ɪnˋstrʌktɚ]",
-    "zh": "n. 教練;指導者",
+    "zh": "n. 教練；指導者",
     "unit": 4,
     "example": "The plane was piloted by the instructor.",
     "exampleZh": "飛機由教練員駕駛。"
@@ -35742,7 +35742,7 @@ const externalVocabularyDB = [
     "id": 3972,
     "en": "insurance",
     "kk": "[͵ɪnˋʃʊrəns]",
-    "zh": "n. 保險;保險契約",
+    "zh": "n. 保險；保險契約",
     "unit": 4,
     "example": "Medical insurance is very pricey.",
     "exampleZh": "醫療保險很昂貴。"
@@ -35760,7 +35760,7 @@ const externalVocabularyDB = [
     "id": 3974,
     "en": "intelligence",
     "kk": "[͵ɪnˋtɛlədʒəns]",
-    "zh": "n. 智能;智慧;理解力",
+    "zh": "n. 智能；智慧；理解力",
     "unit": 4,
     "example": "Many dyslexics have above-average intelligence.",
     "exampleZh": "很多誦讀困難者的智力都在平均水平以上。"
@@ -35769,7 +35769,7 @@ const externalVocabularyDB = [
     "id": 3975,
     "en": "intensity",
     "kk": "[ɪnˋtɛnsəti]",
-    "zh": "n. 強度;極度",
+    "zh": "n. 強度；極度",
     "unit": 4,
     "example": "The solemn intensity of Jade's gaze discomfited him.",
     "exampleZh": "在傑德強烈而嚴肅的凝視下他狼狽不堪。"
@@ -35814,7 +35814,7 @@ const externalVocabularyDB = [
     "id": 3980,
     "en": "interruption",
     "kk": "[͵ɪntɚˋʌpʃən]",
-    "zh": "n. 中止;干擾",
+    "zh": "n. 中止；干擾",
     "unit": 4,
     "example": "The sudden interruption stopped Justin in mid-sentence.",
     "exampleZh": "賈斯廷話說到一半時被突然打斷了。"
@@ -35832,7 +35832,7 @@ const externalVocabularyDB = [
     "id": 3982,
     "en": "intonation",
     "kk": "[͵ɪntəˋneʃən]",
-    "zh": "n. 語調;抑揚之聲",
+    "zh": "n. 語調；抑揚之聲",
     "unit": 4,
     "example": "We worked on pronunciation, stress and intonation.",
     "exampleZh": "我們學習了語音、重讀和語調。"
@@ -35841,7 +35841,7 @@ const externalVocabularyDB = [
     "id": 3983,
     "en": "invasion",
     "kk": "[͵ɪnˋveʒən]",
-    "zh": "n. 入侵,侵略",
+    "zh": "n. 入侵、侵略",
     "unit": 4,
     "example": "There was widespread condemnation of the invasion.",
     "exampleZh": "那次侵略遭到了人們普遍的譴責。"
@@ -35850,7 +35850,7 @@ const externalVocabularyDB = [
     "id": 3984,
     "en": "invention",
     "kk": "[͵ɪnˋvɛnʃən]",
-    "zh": "n. 發明,創造",
+    "zh": "n. 發明、創造",
     "unit": 4,
     "example": "His invention was not commercially successful.",
     "exampleZh": "他的發明從贏利角度看並不成功。"
@@ -35868,7 +35868,7 @@ const externalVocabularyDB = [
     "id": 3986,
     "en": "investment",
     "kk": "[͵ɪnˋvɛstmənt]",
-    "zh": "n. 投資;投資額",
+    "zh": "n. 投資；投資額",
     "unit": 4,
     "example": "Investment is all about running risks.",
     "exampleZh": "投資就是要冒風險。"
@@ -35904,7 +35904,7 @@ const externalVocabularyDB = [
     "id": 3990,
     "en": "jealousy",
     "kk": "[ˋdʒɛləsi]",
-    "zh": "n. 妒忌;猜忌",
+    "zh": "n. 妒忌；猜忌",
     "unit": 4,
     "example": "Jealousy is a primal emotion.",
     "exampleZh": "嫉妒是一種原始情感。"
@@ -35931,7 +35931,7 @@ const externalVocabularyDB = [
     "id": 3993,
     "en": "lab",
     "kk": "[læb]",
-    "zh": "n. 實驗室,研究室",
+    "zh": "n. 實驗室、研究室",
     "unit": 4,
     "example": "The lab assistant was wearing a white overall.",
     "exampleZh": "實驗室助手穿著一件白罩衣。"
@@ -35940,7 +35940,7 @@ const externalVocabularyDB = [
     "id": 3994,
     "en": "labor",
     "kk": "[ˋlebɚ]",
-    "zh": "v. 勞工；n. 分娩,陣痛",
+    "zh": "v. 勞工；n. 分娩、陣痛",
     "unit": 4,
     "example": "The fruit of labor is sweetest.",
     "exampleZh": "勞動的果實最甜美。"
@@ -35949,7 +35949,7 @@ const externalVocabularyDB = [
     "id": 3995,
     "en": "laboratory",
     "kk": "[ˋlæbrə͵tɔri]",
-    "zh": "n. 實驗室,研究室",
+    "zh": "n. 實驗室、研究室",
     "unit": 4,
     "example": "Laboratory and field tests have been conducted.",
     "exampleZh": "已進行實驗室試驗和現場試驗。"
@@ -35967,7 +35967,7 @@ const externalVocabularyDB = [
     "id": 3997,
     "en": "landmark",
     "kk": "[ˋlænd͵mɑrk]",
-    "zh": "n. 地標,陸標;里程碑",
+    "zh": "n. 地標、陸標；里程碑",
     "unit": 4,
     "example": "Marble Arch is a famous London landmark.",
     "exampleZh": "大理石拱門是倫敦著名的標誌性建築。"
@@ -35985,7 +35985,7 @@ const externalVocabularyDB = [
     "id": 3999,
     "en": "landslide",
     "kk": "[ˋlænd͵slaɪd]",
-    "zh": "n. 山崩;(選舉中的)壓倒性大勝利",
+    "zh": "n. 山崩；(選舉中的)壓倒性大勝利",
     "unit": 4,
     "example": "Their house was buried by a landslide.",
     "exampleZh": "他們的房子被一次山體滑坡掩埋了。"
@@ -36012,7 +36012,7 @@ const externalVocabularyDB = [
     "id": 4002,
     "en": "learning",
     "kk": "[ˋlɝnɪŋ]",
-    "zh": "n. 學習;學問,學識",
+    "zh": "n. 學習；學問、學識",
     "unit": 5,
     "example": "She's still learning to read.",
     "exampleZh": "她還在學習識字。"
@@ -36039,7 +36039,7 @@ const externalVocabularyDB = [
     "id": 4005,
     "en": "legend",
     "kk": "[ˋlɛdʒənd]",
-    "zh": "n. 傳說;傳奇故事",
+    "zh": "n. 傳說；傳奇故事",
     "unit": 5,
     "example": "She was a legend in her own lifetime.",
     "exampleZh": "她在世的時候就是一個傳奇人物。"
@@ -36057,7 +36057,7 @@ const externalVocabularyDB = [
     "id": 4007,
     "en": "limitation",
     "kk": "[͵lɪmɪˋteʃən]",
-    "zh": "n. 極限,限度",
+    "zh": "n. 極限、限度",
     "unit": 5,
     "example": "They would resist any limitation of their powers.",
     "exampleZh": "他們會抵制對他們權力的任何限制。"
@@ -36066,7 +36066,7 @@ const externalVocabularyDB = [
     "id": 4008,
     "en": "liquor",
     "kk": "[ˋlɪkɚ]",
-    "zh": "n. 酒;含酒精飲料",
+    "zh": "n. 酒；含酒精飲料",
     "unit": 5,
     "example": "She drinks wine and beer but no liquor.",
     "exampleZh": "她喝葡萄酒和啤酒，但不沾烈性酒。"
@@ -36075,7 +36075,7 @@ const externalVocabularyDB = [
     "id": 4009,
     "en": "literature",
     "kk": "[ˋlɪtɚətʃɚ]",
-    "zh": "n. 文學;文學作品",
+    "zh": "n. 文學；文學作品",
     "unit": 5,
     "example": "She lectures in Russian literature.",
     "exampleZh": "她講授俄羅斯文學。"
@@ -36093,7 +36093,7 @@ const externalVocabularyDB = [
     "id": 4011,
     "en": "location",
     "kk": "[loˋkeʃən]",
-    "zh": "n. 位置;場所",
+    "zh": "n. 位置；場所",
     "unit": 5,
     "example": "Its geographical location stimulated overseas mercantile enterprise.",
     "exampleZh": "它的地理位置激發了海外商業企業的興趣。"
@@ -36111,7 +36111,7 @@ const externalVocabularyDB = [
     "id": 4013,
     "en": "logic",
     "kk": "[ˋlɑdʒɪk]",
-    "zh": "n. 邏輯;邏輯學",
+    "zh": "n. 邏輯；邏輯學",
     "unit": 5,
     "example": "I had to concede the logic of this.",
     "exampleZh": "我得承認這件事情有它的邏輯。"
@@ -36120,7 +36120,7 @@ const externalVocabularyDB = [
     "id": 4014,
     "en": "lotion",
     "kk": "[ˋloʃən]",
-    "zh": "n. (化妝等用的)化妝水,塗劑",
+    "zh": "n. (化妝等用的)化妝水、塗劑",
     "unit": 5,
     "example": "She rubbed the lotion into her skin.",
     "exampleZh": "她把潤膚液揉搓進皮膚裡。"
@@ -36129,7 +36129,7 @@ const externalVocabularyDB = [
     "id": 4015,
     "en": "loyalty",
     "kk": "[ˋlɔɪəlti]",
-    "zh": "n. 忠誠;忠心",
+    "zh": "n. 忠誠；忠心",
     "unit": 5,
     "example": "Their loyalty only went so far.",
     "exampleZh": "他們的忠誠只能到這個程度。"
@@ -36138,7 +36138,7 @@ const externalVocabularyDB = [
     "id": 4016,
     "en": "luxury",
     "kk": "[ˋlʌɡʒɚi]",
-    "zh": "n. 奢侈品,奢華;享受,樂趣",
+    "zh": "n. 奢侈品、奢華；享受、樂趣",
     "unit": 5,
     "example": "Hot baths are my favourite luxury.",
     "exampleZh": "熱水浴是我鍾愛而難得的享受。"
@@ -36156,7 +36156,7 @@ const externalVocabularyDB = [
     "id": 4018,
     "en": "machinery",
     "kk": "[məˋʃinɚi]",
-    "zh": "n. 機器;機械",
+    "zh": "n. 機器；機械",
     "unit": 5,
     "example": "They set the machinery in motion.",
     "exampleZh": "他們將機器開動起來。"
@@ -36165,7 +36165,7 @@ const externalVocabularyDB = [
     "id": 4019,
     "en": "madam",
     "kk": "[ˋmædəm]",
-    "zh": "n. 夫人,太太",
+    "zh": "n. 夫人、太太",
     "unit": 5,
     "example": "Can I help you, madam?",
     "exampleZh": "要幫忙嗎，夫人？"
@@ -36174,7 +36174,7 @@ const externalVocabularyDB = [
     "id": 4020,
     "en": "makeup",
     "kk": "[ˋme͵kʌp]",
-    "zh": "n. 構造;性格;化妝;補考;排版",
+    "zh": "n. 構造；性格；化妝；補考；排版",
     "unit": 5,
     "example": "She retouched her makeup.",
     "exampleZh": "她修整了一下自己的妝容。"
@@ -36201,7 +36201,7 @@ const externalVocabularyDB = [
     "id": 4023,
     "en": "manufacturer",
     "kk": "[͵mænjəˋfæktʃɚɚ]",
-    "zh": "n. 製造業者,廠商",
+    "zh": "n. 製造業者、廠商",
     "unit": 5,
     "example": "There were several possibilities open to each manufacturer.",
     "exampleZh": "每個製造商都有幾種可能的選擇。"
@@ -36219,7 +36219,7 @@ const externalVocabularyDB = [
     "id": 4025,
     "en": "margin",
     "kk": "[ˋmɑrdʒən]",
-    "zh": "n. 邊緣;利潤",
+    "zh": "n. 邊緣；利潤",
     "unit": 5,
     "example": "He won by a narrow margin.",
     "exampleZh": "他以微小的差額獲勝。"
@@ -36228,7 +36228,7 @@ const externalVocabularyDB = [
     "id": 4026,
     "en": "maturity",
     "kk": "[məˋtʃʊrəti]",
-    "zh": "n. 成熟;完善;(支票等的)到期",
+    "zh": "n. 成熟；完善；(支票等的)到期",
     "unit": 5,
     "example": "Her poems show great maturity.",
     "exampleZh": "她的詩歌顯得非常成熟。"
@@ -36273,7 +36273,7 @@ const externalVocabularyDB = [
     "id": 4031,
     "en": "mercy",
     "kk": "[ˋmɝsi]",
-    "zh": "n. 慈悲,憐憫;仁慈",
+    "zh": "n. 慈悲、憐憫；仁慈",
     "unit": 5,
     "example": "God have mercy on us.",
     "exampleZh": "上帝憐憫我們吧。"
@@ -36282,7 +36282,7 @@ const externalVocabularyDB = [
     "id": 4032,
     "en": "merit",
     "kk": "[ˋmɛrət]",
-    "zh": "n. 長處,優點;法律依據",
+    "zh": "n. 長處、優點；法律依據",
     "unit": 5,
     "example": "The plan is entirely without merit.",
     "exampleZh": "這個計劃毫無價值。"
@@ -36327,7 +36327,7 @@ const externalVocabularyDB = [
     "id": 4037,
     "en": "minister",
     "kk": "[ˋmɪnəstɚ]",
-    "zh": "n. 部長;大臣",
+    "zh": "n. 部長；大臣",
     "unit": 5,
     "example": "The minister pronounced the benediction.",
     "exampleZh": "牧師做了賜福祈禱。"
@@ -36345,7 +36345,7 @@ const externalVocabularyDB = [
     "id": 4039,
     "en": "mischief",
     "kk": "[ˋmɪstʃəf]",
-    "zh": "n. 頑皮,淘氣",
+    "zh": "n. 頑皮、淘氣",
     "unit": 5,
     "example": "Her eyes were full of mischief.",
     "exampleZh": "她眼睛裡滿是使壞的神情。"
@@ -36354,7 +36354,7 @@ const externalVocabularyDB = [
     "id": 4040,
     "en": "misfortune",
     "kk": "[mɪˋsfɔrtʃən]",
-    "zh": "n. 不幸;惡運",
+    "zh": "n. 不幸；惡運",
     "unit": 5,
     "example": "He has known great misfortune in his life.",
     "exampleZh": "他一生中經歷過巨大的不幸。"
@@ -36363,7 +36363,7 @@ const externalVocabularyDB = [
     "id": 4041,
     "en": "modesty",
     "kk": "[ˋmɑdəsti]",
-    "zh": "n. 謙遜,虛心",
+    "zh": "n. 謙遜、虛心",
     "unit": 5,
     "example": "He accepted the award with characteristic modesty.",
     "exampleZh": "他以他一貫的謙遜態度接受了獎勵。"
@@ -36390,7 +36390,7 @@ const externalVocabularyDB = [
     "id": 4044,
     "en": "monument",
     "kk": "[ˋmɑnjumənt]",
-    "zh": "n. 紀念碑,紀念塔,紀念館",
+    "zh": "n. 紀念碑、紀念塔,紀念館",
     "unit": 5,
     "example": "The whole house is a monument to her craftsmanship.",
     "exampleZh": "那整座房子是她技藝的一座豐碑。"
@@ -36399,7 +36399,7 @@ const externalVocabularyDB = [
     "id": 4045,
     "en": "motivation",
     "kk": "[͵motəˋveʃən]",
-    "zh": "n. 刺激;推動",
+    "zh": "n. 刺激；推動",
     "unit": 5,
     "example": "He's intelligent enough but he lacks motivation.",
     "exampleZh": "他很聰明，但缺乏積極性。"
@@ -36408,7 +36408,7 @@ const externalVocabularyDB = [
     "id": 4046,
     "en": "mudslide",
     "kk": "[ˋmʌdslaɪd]",
-    "zh": "n. 塌方;山崩",
+    "zh": "n. 塌方；山崩",
     "unit": 5,
     "example": "The mudslide caused a disaster.",
     "exampleZh": "泥石流造成嚴重災害。"
@@ -36417,7 +36417,7 @@ const externalVocabularyDB = [
     "id": 4047,
     "en": "murderer",
     "kk": "[ˋmɝdɚɚ]",
-    "zh": "n. 謀殺犯,兇手",
+    "zh": "n. 謀殺犯、兇手",
     "unit": 5,
     "example": "One of these men may have been the murderer.",
     "exampleZh": "這些人中有一個可能就是謀殺者。"
@@ -36435,7 +36435,7 @@ const externalVocabularyDB = [
     "id": 4049,
     "en": "mustache",
     "kk": "[ˋmʌ͵stæʃ]",
-    "zh": "n. 髭;小鬍子",
+    "zh": "n. 髭；小鬍子",
     "unit": 5,
     "example": "He has a mustache.",
     "exampleZh": "他是非常好的人，有一點兒小鬍子。"
@@ -36462,7 +36462,7 @@ const externalVocabularyDB = [
     "id": 4052,
     "en": "nightmare",
     "kk": "[ˋnaɪt͵mɛr]",
-    "zh": "n. 夢魘;惡夢",
+    "zh": "n. 夢魘；惡夢",
     "unit": 5,
     "example": "Maureen put the nightmare behind her.",
     "exampleZh": "莫琳將噩夢拋諸腦後。"
@@ -36471,7 +36471,7 @@ const externalVocabularyDB = [
     "id": 4053,
     "en": "nonsense",
     "kk": "[ˋnɑnsɛns]",
-    "zh": "n. 胡說;胡鬧",
+    "zh": "n. 胡說；胡鬧",
     "unit": 5,
     "example": "'Nonsense!' he said hotly.",
     "exampleZh": "“廢話！”他怒氣衝衝地說。"
@@ -36489,7 +36489,7 @@ const externalVocabularyDB = [
     "id": 4055,
     "en": "nursery",
     "kk": "[ˋnɝsɚi]",
-    "zh": "n. 托兒所;苗圃",
+    "zh": "n. 托兒所；苗圃",
     "unit": 5,
     "example": "Her youngest child is at nursery now.",
     "exampleZh": "她最小的孩子現在上託兒所。"
@@ -36507,7 +36507,7 @@ const externalVocabularyDB = [
     "id": 4057,
     "en": "obedience",
     "kk": "[oˋbidiəns]",
-    "zh": "n. 服從;順從",
+    "zh": "n. 服從；順從",
     "unit": 5,
     "example": "Isabella had been taught unquestioning obedience.",
     "exampleZh": "伊莎貝拉被教導要不加質詢地順從。"
@@ -36516,7 +36516,7 @@ const externalVocabularyDB = [
     "id": 4058,
     "en": "objection",
     "kk": "[əbˋdʒɛkʃən]",
-    "zh": "n. 反對;異議",
+    "zh": "n. 反對；異議",
     "unit": 5,
     "example": "I have no objection to your request.",
     "exampleZh": "我不反對你的請求。"
@@ -36534,7 +36534,7 @@ const externalVocabularyDB = [
     "id": 4060,
     "en": "observation",
     "kk": "[͵ɑbzɚˋveʃən]",
-    "zh": "n. 觀察;觀測",
+    "zh": "n. 觀察；觀測",
     "unit": 5,
     "example": "She has good powers of observation.",
     "exampleZh": "她有很強的觀察力。"
@@ -36543,7 +36543,7 @@ const externalVocabularyDB = [
     "id": 4061,
     "en": "obstacle",
     "kk": "[ˋɑbstəkəl]",
-    "zh": "n. 障礙(物);妨礙",
+    "zh": "n. 障礙(物)；妨礙",
     "unit": 5,
     "example": "Overcrowding remains a large obstacle to improving conditions.",
     "exampleZh": "過度擁擠仍然是改善條件的一大障礙。"
@@ -36552,7 +36552,7 @@ const externalVocabularyDB = [
     "id": 4062,
     "en": "occupation",
     "kk": "[͵ɑkjəˋpeʃən]",
-    "zh": "n. 工作,職業;佔領;佔用",
+    "zh": "n. 工作、職業；佔領；佔用",
     "unit": 5,
     "example": "Her main occupation seems to be shopping.",
     "exampleZh": "逛商店購物似乎是她的主要消遣。"
@@ -36561,7 +36561,7 @@ const externalVocabularyDB = [
     "id": 4063,
     "en": "offense",
     "kk": "[əˋfɛns]",
-    "zh": "n. 進攻,攻擊;冒犯;觸怒",
+    "zh": "n. 進攻、攻擊；冒犯；觸怒",
     "unit": 5,
     "example": "Determine how serious the offense was.",
     "exampleZh": "確定冒犯行為有多嚴重。"
@@ -36579,7 +36579,7 @@ const externalVocabularyDB = [
     "id": 4065,
     "en": "operation",
     "kk": "[͵ɑpɚˋeʃən]",
-    "zh": "n. 手術;操作",
+    "zh": "n. 手術；操作",
     "unit": 5,
     "example": "The operation saved her life.",
     "exampleZh": "手術挽救了她的生命。"
@@ -36615,7 +36615,7 @@ const externalVocabularyDB = [
     "id": 4069,
     "en": "outcome",
     "kk": "[ˋaʊt͵kʌm]",
-    "zh": "n. 結果;結局",
+    "zh": "n. 結果；結局",
     "unit": 5,
     "example": "Nobody could predict the outcome.",
     "exampleZh": "誰也無法預料結果如何。"
@@ -36633,7 +36633,7 @@ const externalVocabularyDB = [
     "id": 4071,
     "en": "oxygen",
     "kk": "[ˋɑksədʒən]",
-    "zh": "n. 氧;氧氣",
+    "zh": "n. 氧；氧氣",
     "unit": 5,
     "example": "All life depends ultimately on oxygen.",
     "exampleZh": "一切生命歸根到底都要依賴氧氣。"
@@ -36651,7 +36651,7 @@ const externalVocabularyDB = [
     "id": 4073,
     "en": "panel",
     "kk": "[ˋpænəl]",
-    "zh": "n. 鑲板;壁板;專門小組",
+    "zh": "n. 鑲板；壁板；專門小組",
     "unit": 5,
     "example": "He assembled a panel of scholars to advise him.",
     "exampleZh": "他集結了一個學者小組為他出謀劃策。"
@@ -36669,7 +36669,7 @@ const externalVocabularyDB = [
     "id": 4075,
     "en": "paragraph",
     "kk": "[ˋpærə͵ɡræf]",
-    "zh": "n. (文章的)段,節",
+    "zh": "n. (文章的)段、節",
     "unit": 5,
     "example": "The editor struck out the whole paragraph.",
     "exampleZh": "編輯把整段全部刪去了。"
@@ -36741,7 +36741,7 @@ const externalVocabularyDB = [
     "id": 4083,
     "en": "penalty",
     "kk": "[ˋpɛnəlti]",
-    "zh": "n. 處罰;刑罰;罰款",
+    "zh": "n. 處罰；刑罰；罰款",
     "unit": 5,
     "example": "He was fouled inside the penalty area.",
     "exampleZh": "在罰球區內對方隊員對他犯規。"
@@ -36759,7 +36759,7 @@ const externalVocabularyDB = [
     "id": 4085,
     "en": "percentage",
     "kk": "[pɚˋsɛntədʒ]",
-    "zh": "n. 百分率,百分比",
+    "zh": "n. 百分率、百分比",
     "unit": 5,
     "example": "The figure is expressed as a percentage.",
     "exampleZh": "數字是用百分率表示的。"
@@ -36768,7 +36768,7 @@ const externalVocabularyDB = [
     "id": 4086,
     "en": "perfection",
     "kk": "[pɚˋfɛkʃən]",
-    "zh": "n. 完美;盡善盡美",
+    "zh": "n. 完美；盡善盡美",
     "unit": 5,
     "example": "His quest for perfection is relentless.",
     "exampleZh": "他對完美的追求是不懈的。"
@@ -36786,7 +36786,7 @@ const externalVocabularyDB = [
     "id": 4088,
     "en": "persuasion",
     "kk": "[pɚˋsweʒən]",
-    "zh": "n. 說服,勸說",
+    "zh": "n. 說服、勸說",
     "unit": 5,
     "example": "He had to use all his powers of persuasion.",
     "exampleZh": "他只好使出說服人的全部本領。"
@@ -36831,7 +36831,7 @@ const externalVocabularyDB = [
     "id": 4093,
     "en": "photography",
     "kk": "[fəˋtɑɡrəfi]",
-    "zh": "n. 照相術,攝影術",
+    "zh": "n. 照相術、攝影術",
     "unit": 5,
     "example": "Photography is one of her hobbies.",
     "exampleZh": "攝影是她的愛好之一。"
@@ -36867,7 +36867,7 @@ const externalVocabularyDB = [
     "id": 4097,
     "en": "pianist",
     "kk": "[piˋænəst]",
-    "zh": "n. 鋼琴家;鋼琴演奏者",
+    "zh": "n. 鋼琴家；鋼琴演奏者",
     "unit": 5,
     "example": "Howard is a talented pianist.",
     "exampleZh": "霍華德是一名有天賦的鋼琴家。"
@@ -36939,7 +36939,7 @@ const externalVocabularyDB = [
     "id": 4105,
     "en": "popularity",
     "kk": "[͵pɑpjəˋlɛrəti]",
-    "zh": "n. 普及;流行;聲望",
+    "zh": "n. 普及；流行；聲望",
     "unit": 5,
     "example": "His popularity has slipped recently.",
     "exampleZh": "近來他已不如過去那樣受歡迎。"
@@ -36948,7 +36948,7 @@ const externalVocabularyDB = [
     "id": 4106,
     "en": "porter",
     "kk": "[ˋpɔrtɚ]",
-    "zh": "n. 搬運工人,腳夫",
+    "zh": "n. 搬運工人、腳夫",
     "unit": 5,
     "example": "The porter could not understand me.",
     "exampleZh": "那個搬運工聽不懂我說的話。"
@@ -36957,7 +36957,7 @@ const externalVocabularyDB = [
     "id": 4107,
     "en": "possession",
     "kk": "[pəˋzɛʃən]",
-    "zh": "n. 擁有;佔有;所有物",
+    "zh": "n. 擁有；佔有；所有物",
     "unit": 5,
     "example": "The car had been his proudest possession.",
     "exampleZh": "這輛汽車是他最引以自豪的財產。"
@@ -36975,7 +36975,7 @@ const externalVocabularyDB = [
     "id": 4109,
     "en": "preposition",
     "kk": "[͵prɛpəˋzɪʃən]",
-    "zh": "n. 介系詞;前置詞",
+    "zh": "n. 介系詞；前置詞",
     "unit": 5,
     "example": "The verb 'rely' takes the preposition 'on'.",
     "exampleZh": "動詞rely需要和介詞on連用。"
@@ -36993,7 +36993,7 @@ const externalVocabularyDB = [
     "id": 4111,
     "en": "preservation",
     "kk": "[͵prɛzɚˋveʃən]",
-    "zh": "n. 維護;維持;保存;保藏;防腐",
+    "zh": "n. 維護；維持；保存；保藏；防腐",
     "unit": 5,
     "example": "The paintings were in an excellent state of preservation.",
     "exampleZh": "這些繪畫儲存得非常好。"
@@ -37002,7 +37002,7 @@ const externalVocabularyDB = [
     "id": 4112,
     "en": "prevention",
     "kk": "[priˋvɛnʃən]",
-    "zh": "n. 預防,防止",
+    "zh": "n. 預防、防止",
     "unit": 5,
     "example": "Crime prevention had to be given more prominence.",
     "exampleZh": "犯罪預防得給予更多重視。"
@@ -37020,7 +37020,7 @@ const externalVocabularyDB = [
     "id": 4114,
     "en": "privacy",
     "kk": "[ˋpraɪvəsi]",
-    "zh": "n. 祕密,私下",
+    "zh": "n. 祕密、私下",
     "unit": 5,
     "example": "French privacy laws are very strict.",
     "exampleZh": "法國的隱私法非常嚴格。"
@@ -37038,7 +37038,7 @@ const externalVocabularyDB = [
     "id": 4116,
     "en": "procedure",
     "kk": "[prəˋsidʒɚ]",
-    "zh": "n. 程序;手續;步驟",
+    "zh": "n. 程序；手續；步驟",
     "unit": 5,
     "example": "Christina dimly recalled the procedure.",
     "exampleZh": "克里斯蒂娜隱約地記起了那個步驟。"
@@ -37047,7 +37047,7 @@ const externalVocabularyDB = [
     "id": 4117,
     "en": "production",
     "kk": "[prəˋdʌkʃən]",
-    "zh": "n. 製造;生產",
+    "zh": "n. 製造；生產",
     "unit": 5,
     "example": "Production costs began to spiral.",
     "exampleZh": "生產成本開始加速上漲。"
@@ -37083,7 +37083,7 @@ const externalVocabularyDB = [
     "id": 4121,
     "en": "promotion",
     "kk": "[prəˋmoʃən]",
-    "zh": "n. 提升,晉級",
+    "zh": "n. 提升、晉級",
     "unit": 5,
     "example": "She's due for promotion soon.",
     "exampleZh": "她很快該晉升了。"
@@ -37110,7 +37110,7 @@ const externalVocabularyDB = [
     "id": 4124,
     "en": "pronunciation",
     "kk": "[pro͵nʌnsiˋeʃən]",
-    "zh": "n. 發音;發音法;讀法",
+    "zh": "n. 發音；發音法；讀法",
     "unit": 5,
     "example": "She gave the word its French pronunciation.",
     "exampleZh": "她給出了這個單詞的法語發音。"
@@ -37119,7 +37119,7 @@ const externalVocabularyDB = [
     "id": 4125,
     "en": "prosperity",
     "kk": "[prɑˋspɛrəti]",
-    "zh": "n. 興旺,繁榮,昌盛,成功",
+    "zh": "n. 興旺、繁榮,昌盛、成功",
     "unit": 5,
     "example": "Their prosperity depends on export-led growth.",
     "exampleZh": "他們的繁榮依靠的是出口帶來的增長。"
@@ -37146,7 +37146,7 @@ const externalVocabularyDB = [
     "id": 4128,
     "en": "proverb",
     "kk": "[ˋprɑvɚb]",
-    "zh": "n. 諺語,俗語",
+    "zh": "n. 諺語、俗語",
     "unit": 5,
     "example": "The woman exclaimed, and thence the proverb: It is so mahogany!",
     "exampleZh": "那女人叫了起來，因此才有了這句諺語：這是多麼美麗的桃花心木啊！"
@@ -37173,7 +37173,7 @@ const externalVocabularyDB = [
     "id": 4131,
     "en": "publication",
     "kk": "[͵pʌblɪˋkeʃən]",
-    "zh": "n. 出版;發表,宣佈",
+    "zh": "n. 出版；發表、宣佈",
     "unit": 5,
     "example": "All reports are vetted before publication.",
     "exampleZh": "所有報道都要經過仔細檢查後才能發表。"
@@ -37182,7 +37182,7 @@ const externalVocabularyDB = [
     "id": 4132,
     "en": "publicity",
     "kk": "[pəbˋlɪsəti]",
-    "zh": "n. 名聲;宣傳",
+    "zh": "n. 名聲；宣傳",
     "unit": 5,
     "example": "All the publicity nearly sent him crazy.",
     "exampleZh": "成天生活在公眾的注意之下讓他差一點發瘋了。"
@@ -37200,7 +37200,7 @@ const externalVocabularyDB = [
     "id": 4134,
     "en": "pursuit",
     "kk": "[pɚˋsut]",
-    "zh": "n. 追蹤,追擊",
+    "zh": "n. 追蹤、追擊",
     "unit": 5,
     "example": "The pursuit of money ruled his life.",
     "exampleZh": "對金錢的追求支配著他的生活。"
@@ -37227,7 +37227,7 @@ const externalVocabularyDB = [
     "id": 4137,
     "en": "quotation",
     "kk": "[kwoˋteʃən]",
-    "zh": "n. 引用;引證;引文",
+    "zh": "n. 引用；引證；引文",
     "unit": 5,
     "example": "Each chapter begins with a quotation.",
     "exampleZh": "每一章的開頭都有一條引語。"
@@ -37245,7 +37245,7 @@ const externalVocabularyDB = [
     "id": 4139,
     "en": "rainfall",
     "kk": "[ˋren͵fɔl]",
-    "zh": "n. 降雨,下雨;降雨量",
+    "zh": "n. 降雨、下雨；降雨量",
     "unit": 5,
     "example": "There has been below average rainfall this month.",
     "exampleZh": "這個月的降雨低於平均降雨量。"
@@ -37272,7 +37272,7 @@ const externalVocabularyDB = [
     "id": 4142,
     "en": "reception",
     "kk": "[rɪˋsɛpʃən]",
-    "zh": "n. 接待,接見;接待處",
+    "zh": "n. 接待、接見；接待處",
     "unit": 5,
     "example": "The reception was a subdued affair.",
     "exampleZh": "招待會開得冷冷清清的。"
@@ -37290,7 +37290,7 @@ const externalVocabularyDB = [
     "id": 4144,
     "en": "recognition",
     "kk": "[͵rɛkəɡˋnɪʃən]",
-    "zh": "n. 認出,識別;承認",
+    "zh": "n. 認出、識別；承認",
     "unit": 5,
     "example": "Her unusual talent gained her worldwide recognition.",
     "exampleZh": "她非凡的才能舉世公認。"
@@ -37299,7 +37299,7 @@ const externalVocabularyDB = [
     "id": 4145,
     "en": "recovery",
     "kk": "[rɪˋkʌvri]",
-    "zh": "n. 恢復,復甦;復元,痊癒",
+    "zh": "n. 恢復、復甦；復元、痊癒",
     "unit": 5,
     "example": "The patient made a rapid recovery.",
     "exampleZh": "病人很快恢復了健康。"
@@ -37308,7 +37308,7 @@ const externalVocabularyDB = [
     "id": 4146,
     "en": "recreation",
     "kk": "[͵rɛkriˋeʃən]",
-    "zh": "n. 消遣;娛樂",
+    "zh": "n. 消遣；娛樂",
     "unit": 5,
     "example": "Saturday afternoon is for recreation and outings.",
     "exampleZh": "週六下午是娛樂和外出的時間。"
@@ -37317,7 +37317,7 @@ const externalVocabularyDB = [
     "id": 4147,
     "en": "reduction",
     "kk": "[rəˋdʌkʃən]",
-    "zh": "n. 減少;削減",
+    "zh": "n. 減少；削減",
     "unit": 5,
     "example": "There has been some reduction in unemployment.",
     "exampleZh": "失業人數有所減少。"
@@ -37326,7 +37326,7 @@ const externalVocabularyDB = [
     "id": 4148,
     "en": "reference",
     "kk": "[ˋrɛfɚəns]",
-    "zh": "n. 參考文獻;出處;提及",
+    "zh": "n. 參考文獻；出處；提及",
     "unit": 5,
     "example": "The grid reference is C8.",
     "exampleZh": "地圖上的座標方格數字為C8。"
@@ -37335,7 +37335,7 @@ const externalVocabularyDB = [
     "id": 4149,
     "en": "reflection",
     "kk": "[rɪfˋlɛkʃən]",
-    "zh": "n. 反射;回響",
+    "zh": "n. 反射；回響",
     "unit": 5,
     "example": "He admired his reflection in the mirror.",
     "exampleZh": "他欣賞著自己在鏡中的影像。"
@@ -37353,7 +37353,7 @@ const externalVocabularyDB = [
     "id": 4151,
     "en": "refugee",
     "kk": "[ˋrɛfjudʒi]",
-    "zh": "n. 難民;流亡者",
+    "zh": "n. 難民；流亡者",
     "unit": 5,
     "example": "They were granted refugee status.",
     "exampleZh": "他們獲得了難民身份。"
@@ -37380,7 +37380,7 @@ const externalVocabularyDB = [
     "id": 4154,
     "en": "registration",
     "kk": "[͵rɛdʒɪˋstreʃən]",
-    "zh": "n. 登記,註冊,掛號",
+    "zh": "n. 登記、註冊,掛號",
     "unit": 5,
     "example": "They have campaigned strongly for compulsory registration of dogs.",
     "exampleZh": "他們大力開展了狗的強制性登記活動。"
@@ -37389,7 +37389,7 @@ const externalVocabularyDB = [
     "id": 4155,
     "en": "regulation",
     "kk": "[͵rɛɡjəˋleʃən]",
-    "zh": "n. 規章;規則,規定;條例",
+    "zh": "n. 規章；規則、規定；條例",
     "unit": 5,
     "example": "The regulation operates in favour of married couples.",
     "exampleZh": "這一規定的實施有利於已婚夫婦。"
@@ -37398,7 +37398,7 @@ const externalVocabularyDB = [
     "id": 4156,
     "en": "rejection",
     "kk": "[rɪˋdʒɛkʃən]",
-    "zh": "n. 拒絕;退回",
+    "zh": "n. 拒絕；退回",
     "unit": 5,
     "example": "Jane still nurses the pain of rejection.",
     "exampleZh": "簡依然懷著被拒絕的痛苦。"
@@ -37416,7 +37416,7 @@ const externalVocabularyDB = [
     "id": 4158,
     "en": "relaxation",
     "kk": "[͵rilækˋseʃən]",
-    "zh": "n. 緩和,放寬,減輕",
+    "zh": "n. 緩和、放寬,減輕",
     "unit": 5,
     "example": "I go bowling for relaxation.",
     "exampleZh": "我玩保齡球放鬆自己。"
@@ -37425,7 +37425,7 @@ const externalVocabularyDB = [
     "id": 4159,
     "en": "remark",
     "kk": "[rɪˋmɑrk]",
-    "zh": "v. 言辭；n. 談論,評論",
+    "zh": "v. 言辭；n. 談論、評論",
     "unit": 5,
     "example": "Was that remark directed at me?",
     "exampleZh": "那話是衝著我來的嗎？"
@@ -37443,7 +37443,7 @@ const externalVocabularyDB = [
     "id": 4161,
     "en": "repetition",
     "kk": "[͵rɛpəˋtɪʃən]",
-    "zh": "n. 重複;反覆",
+    "zh": "n. 重複；反覆",
     "unit": 5,
     "example": "It is real prayer, and not mechanical repetition.",
     "exampleZh": "這是真正的祈禱，而不是機械式的重複。"
@@ -37452,7 +37452,7 @@ const externalVocabularyDB = [
     "id": 4162,
     "en": "representation",
     "kk": "[͵rɛprəzɛnˋteʃən]",
-    "zh": "n. 代表,代理",
+    "zh": "n. 代表、代理",
     "unit": 5,
     "example": "A graphical representation of results is shown in figure 1.",
     "exampleZh": "圖1中顯示了結果的圖解表示。"
@@ -37461,7 +37461,7 @@ const externalVocabularyDB = [
     "id": 4163,
     "en": "reputation",
     "kk": "[͵rɛpjəˋteʃən]",
-    "zh": "n. 名譽,名聲",
+    "zh": "n. 名譽、名聲",
     "unit": 5,
     "example": "Her reputation was in tatters.",
     "exampleZh": "她已名譽掃地。"
@@ -37488,7 +37488,7 @@ const externalVocabularyDB = [
     "id": 4166,
     "en": "researcher",
     "kk": "[ˋrisɚtʃɚ]",
-    "zh": "n. 研究員;調查者",
+    "zh": "n. 研究員；調查者",
     "unit": 5,
     "example": "He chose to join the company as a market researcher.",
     "exampleZh": "他選擇加入這家公司當一名市場研究員。"
@@ -37497,7 +37497,7 @@ const externalVocabularyDB = [
     "id": 4167,
     "en": "reservation",
     "kk": "[͵rɛzɚˋveʃən]",
-    "zh": "n. 保留(意見);預訂的房間(或席座)",
+    "zh": "n. 保留(意見)；預訂的房間(或席座)",
     "unit": 5,
     "example": "We can hold your reservation for three days.",
     "exampleZh": "您的預訂我們可以保留三天。"
@@ -37506,7 +37506,7 @@ const externalVocabularyDB = [
     "id": 4168,
     "en": "resignation",
     "kk": "[͵rɛzəɡˋneʃən]",
-    "zh": "n. 辭職;放棄",
+    "zh": "n. 辭職；放棄",
     "unit": 5,
     "example": "Her resignation caused quite a stir.",
     "exampleZh": "她的辭職引起很大震動。"
@@ -37515,7 +37515,7 @@ const externalVocabularyDB = [
     "id": 4169,
     "en": "resistance",
     "kk": "[rɪˋzɪstəns]",
-    "zh": "n. 抵抗,反抗",
+    "zh": "n. 抵抗、反抗",
     "unit": 5,
     "example": "Diamonds have extreme resistance to abrasion.",
     "exampleZh": "鑽石極抗磨損。"
@@ -37524,7 +37524,7 @@ const externalVocabularyDB = [
     "id": 4170,
     "en": "resolution",
     "kk": "[͵rɛzəˋluʃən]",
-    "zh": "n. 決心;決定;解決",
+    "zh": "n. 決心；決定；解決",
     "unit": 5,
     "example": "They refused to comply with the UN resolution.",
     "exampleZh": "他們拒絕遵守聯合國的決議。"
@@ -37533,7 +37533,7 @@ const externalVocabularyDB = [
     "id": 4171,
     "en": "resolve",
     "kk": "[riˋzɑlv]",
-    "zh": "v. 決心,決意；n. 堅決,剛毅,果斷",
+    "zh": "v. 決心、決意；n. 堅決、剛毅,果斷",
     "unit": 5,
     "example": "Nothing could weaken his resolve to continue.",
     "exampleZh": "什麼也不能削弱他繼續下去的決心。"
@@ -37542,7 +37542,7 @@ const externalVocabularyDB = [
     "id": 4172,
     "en": "restriction",
     "kk": "[riˋstrɪkʃən]",
-    "zh": "n. 限制;約束;限定;限制規定",
+    "zh": "n. 限制；約束；限定；限制規定",
     "unit": 5,
     "example": "The intent of this restriction was twofold.",
     "exampleZh": "這種限制的意圖是雙重的。"
@@ -37569,7 +37569,7 @@ const externalVocabularyDB = [
     "id": 4175,
     "en": "reunion",
     "kk": "[riˋunjən]",
-    "zh": "n. 團聚;重聚",
+    "zh": "n. 團聚；重聚",
     "unit": 5,
     "example": "Christmas is a time of reunion.",
     "exampleZh": "聖誕節是團聚的日子。"
@@ -37587,7 +37587,7 @@ const externalVocabularyDB = [
     "id": 4177,
     "en": "revision",
     "kk": "[riˋvɪʒən]",
-    "zh": "n. 修訂;校訂;修正",
+    "zh": "n. 修訂；校訂；修正",
     "unit": 5,
     "example": "Have you started your revision yet?",
     "exampleZh": "你開始複習了嗎？"
@@ -37596,7 +37596,7 @@ const externalVocabularyDB = [
     "id": 4178,
     "en": "revolution",
     "kk": "[͵rɛvəˋluʃən]",
-    "zh": "n. 革命;循環",
+    "zh": "n. 革命；循環",
     "unit": 5,
     "example": "The feeding of dairy cows has undergone a revolution.",
     "exampleZh": "奶牛的餵食已經歷了一場革命。"
@@ -37632,7 +37632,7 @@ const externalVocabularyDB = [
     "id": 4182,
     "en": "rhythm",
     "kk": "[ˋrɪðəm]",
-    "zh": "n. 節奏;韻律",
+    "zh": "n. 節奏；韻律",
     "unit": 5,
     "example": "It's a funky sort of rhythm.",
     "exampleZh": "這是一種音低節奏強的旋律。"
@@ -37641,7 +37641,7 @@ const externalVocabularyDB = [
     "id": 4183,
     "en": "romance",
     "kk": "[roˋmæns]",
-    "zh": "n. 戀愛,風流韻事;愛情小說",
+    "zh": "n. 戀愛、風流韻事；愛情小說",
     "unit": 5,
     "example": "This is a slow-burn romance.",
     "exampleZh": "這是一場發展緩慢的戀情。"
@@ -37650,7 +37650,7 @@ const externalVocabularyDB = [
     "id": 4184,
     "en": "route",
     "kk": "[rut]",
-    "zh": "v. 按特定路線傳送、以......線路傳送；n. 路線、航線",
+    "zh": "v. 按特定路線傳送、以…………線路傳送；n. 路線、航線",
     "unit": 5,
     "example": "The route is well signposted.",
     "exampleZh": "這條路線路標設定完善。"
@@ -37695,7 +37695,7 @@ const externalVocabularyDB = [
     "id": 4189,
     "en": "salesperson",
     "kk": "[ˋselz͵pɝsən]",
-    "zh": "n. 店員,售貨員",
+    "zh": "n. 店員、售貨員",
     "unit": 5,
     "example": "They will usually send a salesperson out to measure your bathroom.",
     "exampleZh": "他們通常會派一名推銷員去測量你的浴室。"
@@ -37704,7 +37704,7 @@ const externalVocabularyDB = [
     "id": 4190,
     "en": "saleswoman",
     "kk": "[ˋselz͵wʊmən]",
-    "zh": "n. 女店員;售貨員",
+    "zh": "n. 女店員；售貨員",
     "unit": 5,
     "example": "She is cut out to be a saleswoman.",
     "exampleZh": "做一個售貨員對她來說是再合適不過了。"
@@ -37722,7 +37722,7 @@ const externalVocabularyDB = [
     "id": 4192,
     "en": "satisfaction",
     "kk": "[͵sætəˋsfækʃən]",
-    "zh": "n. 滿意,滿足",
+    "zh": "n. 滿意、滿足",
     "unit": 5,
     "example": "It gave me a feeling of satisfaction.",
     "exampleZh": "它給了我一種滿足感。"
@@ -37758,7 +37758,7 @@ const externalVocabularyDB = [
     "id": 4196,
     "en": "screwdriver",
     "kk": "[ˋskru͵draɪvɚ]",
-    "zh": "n. 螺絲刀;螺絲起子",
+    "zh": "n. 螺絲刀；螺絲起子",
     "unit": 5,
     "example": "Have you got a whatchamacallit? You know... a screwdriver?",
     "exampleZh": "你有一把…叫什麼來著的？你知道的…螺絲刀嗎？"
@@ -37767,7 +37767,7 @@ const externalVocabularyDB = [
     "id": 4197,
     "en": "sculpture",
     "kk": "[ˋskʌlptʃɚ]",
-    "zh": "v. 雕刻品,雕塑品；n. 雕",
+    "zh": "v. 雕刻品、雕塑品；n. 雕",
     "unit": 5,
     "example": "I take no real interest in monumental sculpture.",
     "exampleZh": "我對宏偉的雕塑並沒有真正感興趣。"
@@ -37794,7 +37794,7 @@ const externalVocabularyDB = [
     "id": 4200,
     "en": "settler",
     "kk": "[ˋsɛtəlɚ]",
-    "zh": "n. 殖民者;開拓者",
+    "zh": "n. 殖民者；開拓者",
     "unit": 5,
     "example": "I was a guide, a pathfinder, an original settler.",
     "exampleZh": "我已然是一個引路人、開拓者、定居先驅。"
@@ -37848,7 +37848,7 @@ const externalVocabularyDB = [
     "id": 4206,
     "en": "sightseeing",
     "kk": "[ˋsaɪtˋsiɪŋ]",
-    "zh": "n. 觀光,遊覽",
+    "zh": "n. 觀光、遊覽",
     "unit": 5,
     "example": "Did you have a chance to do any sightseeing ?",
     "exampleZh": "你有沒有出去遊覽的機會？"
@@ -37857,7 +37857,7 @@ const externalVocabularyDB = [
     "id": 4207,
     "en": "significance",
     "kk": "[səɡˋnɪfɪkəns]",
-    "zh": "n. 重要性,重要",
+    "zh": "n. 重要性、重要",
     "unit": 5,
     "example": "They discussed the statistical significance of the results.",
     "exampleZh": "他們討論了這些結果在統計學上的意義。"
@@ -37866,7 +37866,7 @@ const externalVocabularyDB = [
     "id": 4208,
     "en": "sincerity",
     "kk": "[sɪnˋsɛrəti]",
-    "zh": "n. 真實;誠心誠意",
+    "zh": "n. 真實；誠心誠意",
     "unit": 5,
     "example": "He impressed her with his sincerity.",
     "exampleZh": "他的真誠打動了她。"
@@ -37884,7 +37884,7 @@ const externalVocabularyDB = [
     "id": 4210,
     "en": "site",
     "kk": "[saɪt]",
-    "zh": "v. 使坐落在、為......選址；n. 工地、用地",
+    "zh": "v. 使坐落在、為…………選址；n. 工地、用地",
     "unit": 5,
     "example": "This site is definitely worth bookmarking.",
     "exampleZh": "這個網站絕對值得設電子書籤。"
@@ -37938,7 +37938,7 @@ const externalVocabularyDB = [
     "id": 4216,
     "en": "slogan",
     "kk": "[ˋsloɡən]",
-    "zh": "n. 口號,標語",
+    "zh": "n. 口號、標語",
     "unit": 5,
     "example": "The ceremony was disrupted by unprecedented heckling and slogan-chanting.",
     "exampleZh": "典禮因前所未有的起鬨和口號聲而中斷。"
@@ -37974,7 +37974,7 @@ const externalVocabularyDB = [
     "id": 4220,
     "en": "socket",
     "kk": "[ˋsɑkət]",
-    "zh": "n. 插座;插口",
+    "zh": "n. 插座；插口",
     "unit": 5,
     "example": "Is the cable long enough to reach the socket?",
     "exampleZh": "電線夠得著插座嗎？"
@@ -37992,7 +37992,7 @@ const externalVocabularyDB = [
     "id": 4222,
     "en": "sophomore",
     "kk": "[ˋsɑf͵mɔr]",
-    "zh": "n. (大學;高中的)二年級學生",
+    "zh": "n. (大學；高中的)二年級學生",
     "unit": 5,
     "example": "Their daughter is a sophomore at Yale.",
     "exampleZh": "他們的女兒在耶魯大學讀大二。"
@@ -38001,7 +38001,7 @@ const externalVocabularyDB = [
     "id": 4223,
     "en": "souvenir",
     "kk": "[͵suvəˋnɪr]",
-    "zh": "n. 紀念品,紀念物",
+    "zh": "n. 紀念品、紀念物",
     "unit": 5,
     "example": "I bought the ring as a souvenir of Greece.",
     "exampleZh": "我買了一枚戒指，留作對希臘的紀念。"
@@ -38028,7 +38028,7 @@ const externalVocabularyDB = [
     "id": 4226,
     "en": "sparkle",
     "kk": "[ˋspɑrkəl]",
-    "zh": "v. 火花；n. 閃耀,閃光",
+    "zh": "v. 火花；n. 閃耀、閃光",
     "unit": 5,
     "example": "The performance lacked sparkle.",
     "exampleZh": "這場演出缺少亮點。"
@@ -38055,7 +38055,7 @@ const externalVocabularyDB = [
     "id": 4229,
     "en": "species",
     "kk": "[ˋspiʃiz]",
-    "zh": "n. 種類;種",
+    "zh": "n. 種類；種",
     "unit": 5,
     "example": "This species is extremely rare.",
     "exampleZh": "這一物種極為罕見。"
@@ -38073,7 +38073,7 @@ const externalVocabularyDB = [
     "id": 4231,
     "en": "sportsman",
     "kk": "[ˋspɔrtsmən]",
-    "zh": "n. 運動家;願意冒險的人",
+    "zh": "n. 運動家；願意冒險的人",
     "unit": 5,
     "example": "The man doesn't look like a sportsman.",
     "exampleZh": "這個人看起來不像運動員。"
@@ -38082,7 +38082,7 @@ const externalVocabularyDB = [
     "id": 4232,
     "en": "sportsmanship",
     "kk": "[ˋspɔrtsmən͵ʃɪp]",
-    "zh": "n. 運動員精神,運動道德",
+    "zh": "n. 運動員精神、運動道德",
     "unit": 5,
     "example": "He has good sportsmanship.",
     "exampleZh": "他很有體育道德。"
@@ -38100,7 +38100,7 @@ const externalVocabularyDB = [
     "id": 4234,
     "en": "status",
     "kk": "[ˋstætəs]",
-    "zh": "n. 狀況,狀態",
+    "zh": "n. 狀況、狀態",
     "unit": 5,
     "example": "Exotic pets are the latest status symbol.",
     "exampleZh": "養珍禽異獸是表現社會地位的最時髦方式。"
@@ -38136,7 +38136,7 @@ const externalVocabularyDB = [
     "id": 4238,
     "en": "suggestion",
     "kk": "[səˋdʒɛstʃən]",
-    "zh": "n. 建議,提議",
+    "zh": "n. 建議、提議",
     "unit": 5,
     "example": "He received my suggestion coolly.",
     "exampleZh": "他對我的建議反應冷淡。"
@@ -38181,7 +38181,7 @@ const externalVocabularyDB = [
     "id": 4243,
     "en": "surroundings",
     "kk": "[sɚˋaʊndɪŋz]",
-    "zh": "n. 周圍的事物;周圍的情況",
+    "zh": "n. 周圍的事物；周圍的情況",
     "unit": 5,
     "example": "We dined in sumptuous surroundings.",
     "exampleZh": "我們在富麗堂皇的環境中用餐。"
@@ -38208,7 +38208,7 @@ const externalVocabularyDB = [
     "id": 4246,
     "en": "sympathy",
     "kk": "[ˋsɪmpəθi]",
-    "zh": "n. 同情,同情心;弔唁",
+    "zh": "n. 同情、同情心；弔唁",
     "unit": 5,
     "example": "She was angling for sympathy.",
     "exampleZh": "她有意博取同情。"
@@ -38217,7 +38217,7 @@ const externalVocabularyDB = [
     "id": 4247,
     "en": "symphony",
     "kk": "[ˋsɪmfəni]",
-    "zh": "n. 交響樂,交響曲",
+    "zh": "n. 交響樂、交響曲",
     "unit": 5,
     "example": "Symphony musicians cannot necessarily sight-read.",
     "exampleZh": "交響樂樂師不一定能視奏。"
@@ -38235,7 +38235,7 @@ const externalVocabularyDB = [
     "id": 4249,
     "en": "technician",
     "kk": "[tɛkˋnɪʃən]",
-    "zh": "n. 技術人員,技師",
+    "zh": "n. 技術人員、技師",
     "unit": 5,
     "example": "Tom is a technician.",
     "exampleZh": "湯姆是一名技術員。"
@@ -38271,7 +38271,7 @@ const externalVocabularyDB = [
     "id": 4253,
     "en": "tendency",
     "kk": "[ˋtɛndənsi]",
-    "zh": "n. 傾向;癖性",
+    "zh": "n. 傾向；癖性",
     "unit": 5,
     "example": "She had a tendency to sing flat.",
     "exampleZh": "她的唱音傾向於偏低。"
@@ -38280,7 +38280,7 @@ const externalVocabularyDB = [
     "id": 4254,
     "en": "tension",
     "kk": "[ˋtɛnʃən]",
-    "zh": "n. 緊張;張力",
+    "zh": "n. 緊張；張力",
     "unit": 5,
     "example": "For several hours, tension mounted.",
     "exampleZh": "幾個小時中，緊張局勢加劇了。"
@@ -38289,7 +38289,7 @@ const externalVocabularyDB = [
     "id": 4255,
     "en": "terror",
     "kk": "[ˋtɛrɚ]",
-    "zh": "n. 恐怖,驚駭",
+    "zh": "n. 恐怖、驚駭",
     "unit": 5,
     "example": "Her eyes were wild with terror.",
     "exampleZh": "她的眼睛裡充滿了恐懼。"
@@ -38298,7 +38298,7 @@ const externalVocabularyDB = [
     "id": 4256,
     "en": "theme",
     "kk": "[θim]",
-    "zh": "n. 主題思想;題材",
+    "zh": "n. 主題思想；題材",
     "unit": 5,
     "example": "A slow theme introduces the first movement.",
     "exampleZh": "緩慢的主旋律引出了第一樂章。"
@@ -38307,7 +38307,7 @@ const externalVocabularyDB = [
     "id": 4257,
     "en": "tolerance",
     "kk": "[ˋtɑlɚəns]",
-    "zh": "n. 寬容,寬大",
+    "zh": "n. 寬容、寬大",
     "unit": 5,
     "example": "She had no tolerance for jokes of any kind.",
     "exampleZh": "她容不得開任何玩笑。"
@@ -38316,7 +38316,7 @@ const externalVocabularyDB = [
     "id": 4258,
     "en": "tomb",
     "kk": "[tum]",
-    "zh": "n. 墓;墓碑",
+    "zh": "n. 墓；墓碑",
     "unit": 5,
     "example": "But I couldn't find her tomb.",
     "exampleZh": "但我始終沒有找到她的陵墓。"
@@ -38343,7 +38343,7 @@ const externalVocabularyDB = [
     "id": 4261,
     "en": "translation",
     "kk": "[træˋnzleʃən]",
-    "zh": "n. 譯文;譯本",
+    "zh": "n. 譯文；譯本",
     "unit": 5,
     "example": "The irony is lost in translation.",
     "exampleZh": "原文的反語用法在翻譯中丟失了。"
@@ -38361,7 +38361,7 @@ const externalVocabularyDB = [
     "id": 4263,
     "en": "transportation",
     "kk": "[͵trænspɚˋteʃən]",
-    "zh": "n. 運輸;輸送;交通車輛",
+    "zh": "n. 運輸；輸送；交通車輛",
     "unit": 5,
     "example": "The company will provide transportation.",
     "exampleZh": "這家公司將提供交通工具。"
@@ -38451,7 +38451,7 @@ const externalVocabularyDB = [
     "id": 4273,
     "en": "usage",
     "kk": "[ˋjusədʒ]",
-    "zh": "n. 使用,用法",
+    "zh": "n. 使用、用法",
     "unit": 5,
     "example": "Car usage is predicted to increase.",
     "exampleZh": "汽車的使用率預計會增長。"
@@ -38478,7 +38478,7 @@ const externalVocabularyDB = [
     "id": 4276,
     "en": "vessel",
     "kk": "[ˋvɛsəl]",
-    "zh": "n. 船,艦;器皿;血管",
+    "zh": "n. 船、艦；器皿；血管",
     "unit": 5,
     "example": "The vessel yesterday reached anchorage off Dubai.",
     "exampleZh": "該船昨日抵達迪拜附近的錨地。"
@@ -38496,10 +38496,10 @@ const externalVocabularyDB = [
     "id": 4278,
     "en": "violation",
     "kk": "[vaɪəˋleʃən]",
-    "zh": "n. 違反;違背",
+    "zh": "n. 違反；違背",
     "unit": 5,
-    "example": "Can you use the word violation in a sentence?",
-    "exampleZh": "你能在句子中使用「違背」這個詞嗎？"
+    "example": "Driving without a valid license constitutes a severe violation of safety laws.",
+    "exampleZh": "無照駕駛構成了對安全法規的嚴重違反。"
   },
   {
     "id": 4279,
@@ -38514,7 +38514,7 @@ const externalVocabularyDB = [
     "id": 4280,
     "en": "virtue",
     "kk": "[ˋvɝtʃu]",
-    "zh": "n. 美德;優點",
+    "zh": "n. 美德；優點",
     "unit": 5,
     "example": "The plan has the virtue of simplicity.",
     "exampleZh": "這項計劃的優點是簡單。"
@@ -38568,7 +38568,7 @@ const externalVocabularyDB = [
     "id": 4286,
     "en": "walnut",
     "kk": "[ˋwɔl͵nʌt]",
-    "zh": "n. 胡桃;胡桃色",
+    "zh": "n. 胡桃；胡桃色",
     "unit": 5,
     "example": "She watches him plane the surface of a walnut board.",
     "exampleZh": "她看著他刨一塊胡桃木板。"
@@ -38595,7 +38595,7 @@ const externalVocabularyDB = [
     "id": 4289,
     "en": "welfare",
     "kk": "[ˋwɛl͵fɛr]",
-    "zh": "n. 福利;社會救濟",
+    "zh": "n. 福利；社會救濟",
     "unit": 5,
     "example": "Welfare provides a cushion against hardship.",
     "exampleZh": "福利給困苦提供了一個緩解。"
@@ -38604,7 +38604,7 @@ const externalVocabularyDB = [
     "id": 4290,
     "en": "wit",
     "kk": "[wɪt]",
-    "zh": "n. 機智;風趣",
+    "zh": "n. 機智；風趣",
     "unit": 5,
     "example": "Boulding was known for his biting wit.",
     "exampleZh": "博爾丁以其嘲諷式的風趣而出名。"
@@ -38613,7 +38613,7 @@ const externalVocabularyDB = [
     "id": 4291,
     "en": "witch",
     "kk": "[wɪtʃ]",
-    "zh": "n. 女巫,巫婆",
+    "zh": "n. 女巫、巫婆",
     "unit": 5,
     "example": "The witch foretold that she would marry a prince.",
     "exampleZh": "女巫預言她將嫁給王子。"
@@ -38631,7 +38631,7 @@ const externalVocabularyDB = [
     "id": 4293,
     "en": "wizard",
     "kk": "[ˋwɪzɚd]",
-    "zh": "n. 奇才;高手;男巫",
+    "zh": "n. 奇才；高手；男巫",
     "unit": 5,
     "example": "The wizard recited a spell.",
     "exampleZh": "巫師唸了一道咒語。"
@@ -38667,7 +38667,7 @@ const externalVocabularyDB = [
     "id": 4297,
     "en": "abrupt",
     "kk": "[əˋbrʌpt]",
-    "zh": "adj. 突然的;意外的",
+    "zh": "adj. 突然的；意外的",
     "unit": 5,
     "example": "He was abrupt to the point of rudeness.",
     "exampleZh": "他唐突到了無禮的地步。"
@@ -38676,7 +38676,7 @@ const externalVocabularyDB = [
     "id": 4298,
     "en": "absurd",
     "kk": "[əbˋsɝd]",
-    "zh": "adj. 荒謬的;愚蠢的",
+    "zh": "adj. 荒謬的；愚蠢的",
     "unit": 5,
     "example": "His high-flown style just sounds absurd today.",
     "exampleZh": "他的浮誇風格如今聽起來真是荒謬。"
@@ -38685,7 +38685,7 @@ const externalVocabularyDB = [
     "id": 4299,
     "en": "abundant",
     "kk": "[əˋbʌndənt]",
-    "zh": "adj. 大量的;充足的; 豐富的",
+    "zh": "adj. 大量的；充足的； 豐富的",
     "unit": 5,
     "example": "There is an abundant supply of cheap labour.",
     "exampleZh": "有豐富的廉價勞動力供應。"
@@ -38703,7 +38703,7 @@ const externalVocabularyDB = [
     "id": 4301,
     "en": "airtight",
     "kk": "[ˋɛr͵taɪt]",
-    "zh": "adj. 密閉的;無懈可擊的",
+    "zh": "adj. 密閉的；無懈可擊的",
     "unit": 5,
     "example": "Food will last longer if kept in an airtight container.",
     "exampleZh": "如果貯藏在密封的容器裡，食物能保持比較久的時間。"
@@ -38721,7 +38721,7 @@ const externalVocabularyDB = [
     "id": 4303,
     "en": "ample",
     "kk": "[ˋæmpəl]",
-    "zh": "adj. 大量的;充裕的",
+    "zh": "adj. 大量的；充裕的",
     "unit": 5,
     "example": "Ample free parking is available.",
     "exampleZh": "有寬敞的免費停車場。"
@@ -38730,7 +38730,7 @@ const externalVocabularyDB = [
     "id": 4304,
     "en": "apt",
     "kk": "[æpt]",
-    "zh": "adj. 易於...的;恰當的;聰明的",
+    "zh": "adj. 易於……的；恰當的；聰明的",
     "unit": 5,
     "example": "It was an apt comment.",
     "exampleZh": "這是一個恰當的評論。"
@@ -38739,7 +38739,7 @@ const externalVocabularyDB = [
     "id": 4305,
     "en": "barren",
     "kk": "[ˋbærən]",
-    "zh": "adj. 貧瘠的;荒蕪的;不妊的",
+    "zh": "adj. 貧瘠的；荒蕪的；不妊的",
     "unit": 5,
     "example": "The land was barren and infertile.",
     "exampleZh": "這片土地荒蕪而貧瘠。"
@@ -38748,7 +38748,7 @@ const externalVocabularyDB = [
     "id": 4306,
     "en": "beneficial",
     "kk": "[͵bɛnəˋfɪʃəl]",
-    "zh": "adj. 有益的;有利的",
+    "zh": "adj. 有益的；有利的",
     "unit": 5,
     "example": "A good diet is beneficial to health.",
     "exampleZh": "良好的飲食有益於健康。"
@@ -38757,7 +38757,7 @@ const externalVocabularyDB = [
     "id": 4307,
     "en": "carefree",
     "kk": "[ˋkɛr͵fri]",
-    "zh": "adj. 無憂無慮的;輕鬆愉快的",
+    "zh": "adj. 無憂無慮的；輕鬆愉快的",
     "unit": 5,
     "example": "Chantal remembered carefree summers at the beach.",
     "exampleZh": "香岱兒想起了在海灘上的那些無憂無慮的夏日。"
@@ -38766,7 +38766,7 @@ const externalVocabularyDB = [
     "id": 4308,
     "en": "cautious",
     "kk": "[ˋkɔʃəs]",
-    "zh": "adj. 十分小心的;謹慎的",
+    "zh": "adj. 十分小心的；謹慎的",
     "unit": 5,
     "example": "They've taken a very cautious approach.",
     "exampleZh": "他們採取了十分謹慎的態度。"
@@ -38784,7 +38784,7 @@ const externalVocabularyDB = [
     "id": 4310,
     "en": "civic",
     "kk": "[ˋsɪvɪk]",
-    "zh": "adj. 城市的;市民的",
+    "zh": "adj. 城市的；市民的",
     "unit": 5,
     "example": "It's my civic duty.",
     "exampleZh": "這是我的公民義務。"
@@ -38793,7 +38793,7 @@ const externalVocabularyDB = [
     "id": 4311,
     "en": "compassionate",
     "kk": "[kəmˋpæʃənət]",
-    "zh": "adj. 有同情心的;慈悲的",
+    "zh": "adj. 有同情心的；慈悲的",
     "unit": 5,
     "example": "She has a wise, compassionate face.",
     "exampleZh": "她有一張智慧和同情的臉。"
@@ -38811,7 +38811,7 @@ const externalVocabularyDB = [
     "id": 4313,
     "en": "contagious",
     "kk": "[kənˋtedʒəs]",
-    "zh": "adj. 接觸傳染的;(感情等)感染性的",
+    "zh": "adj. 接觸傳染的；(感情等)感染性的",
     "unit": 5,
     "example": "Scarlet fever is highly contagious.",
     "exampleZh": "猩紅熱的接觸傳染性很強。"
@@ -38820,7 +38820,7 @@ const externalVocabularyDB = [
     "id": 4314,
     "en": "continental",
     "kk": "[͵kɑntəˋnɛntəl]",
-    "zh": "adj. 洲的;大陸的",
+    "zh": "adj. 洲的；大陸的",
     "unit": 5,
     "example": "I'm the continental champion.",
     "exampleZh": "我是大陸冠軍。"
@@ -38829,7 +38829,7 @@ const externalVocabularyDB = [
     "id": 4315,
     "en": "cowardly",
     "kk": "[ˋkaʊɚdli]",
-    "zh": "adj. 膽小的;懦怯的",
+    "zh": "adj. 膽小的；懦怯的",
     "unit": 5,
     "example": "He was weak, cowardly and treacherous.",
     "exampleZh": "他軟弱、膽怯、奸詐。"
@@ -38838,7 +38838,7 @@ const externalVocabularyDB = [
     "id": 4316,
     "en": "cozy",
     "kk": "[ˋkozi]",
-    "zh": "adj. 舒適的;愜意的",
+    "zh": "adj. 舒適的；愜意的",
     "unit": 5,
     "example": "This cozy workplace no longer exists here.",
     "exampleZh": "這個舒適的工作環境已經不復存在了。"
@@ -38847,7 +38847,7 @@ const externalVocabularyDB = [
     "id": 4317,
     "en": "descriptive",
     "kk": "[dɪˋskrɪptɪv]",
-    "zh": "adj. 描寫的;描述性的",
+    "zh": "adj. 描寫的；描述性的",
     "unit": 5,
     "example": "These might be patronymic, descriptive or occupational.",
     "exampleZh": "這些可能是父源性的、描述性的或職業性的。"
@@ -38856,7 +38856,7 @@ const externalVocabularyDB = [
     "id": 4318,
     "en": "destructive",
     "kk": "[dɪˋstrʌktɪv]",
-    "zh": "adj. 破壞的;毀滅性的",
+    "zh": "adj. 破壞的；毀滅性的",
     "unit": 5,
     "example": "He was unable to contain his own destructive feelings.",
     "exampleZh": "他無法剋制自己的消極情緒。"
@@ -38865,7 +38865,7 @@ const externalVocabularyDB = [
     "id": 4319,
     "en": "distinctive",
     "kk": "[dɪˋstɪŋktɪv]",
-    "zh": "adj. 有特色的;特殊的",
+    "zh": "adj. 有特色的；特殊的",
     "unit": 5,
     "example": "Chick peas have a distinctive, delicious, and nutty flavour.",
     "exampleZh": "鷹嘴豆有獨特可口的堅果味。"
@@ -38883,7 +38883,7 @@ const externalVocabularyDB = [
     "id": 4321,
     "en": "enthusiastic",
     "kk": "[ɪn͵θuziˋæstɪk]",
-    "zh": "adj. 熱情的;熱烈的",
+    "zh": "adj. 熱情的；熱烈的",
     "unit": 5,
     "example": "He is an enthusiastic skier.",
     "exampleZh": "他是個熱情的滑雪愛好者。"
@@ -38892,7 +38892,7 @@ const externalVocabularyDB = [
     "id": 4322,
     "en": "eternal",
     "kk": "[ɪˋtɝnəl]",
-    "zh": "adj. 永久的;永恆的",
+    "zh": "adj. 永久的；永恆的",
     "unit": 5,
     "example": "He has the upbeat manner of an eternal optimist.",
     "exampleZh": "他永遠都持樂觀主義者的那種快樂態度。"
@@ -38901,7 +38901,7 @@ const externalVocabularyDB = [
     "id": 4323,
     "en": "exceptional",
     "kk": "[ɪkˋsɛpʃənəl]",
-    "zh": "adj. 例外的;異常的;特殊的",
+    "zh": "adj. 例外的；異常的；特殊的",
     "unit": 5,
     "example": "Their technical ability is exceptional.",
     "exampleZh": "他們的技能是非凡的。"
@@ -38910,7 +38910,7 @@ const externalVocabularyDB = [
     "id": 4324,
     "en": "extensive",
     "kk": "[ɪkˋstɛnsɪv]",
-    "zh": "adj. 廣大的;廣闊的",
+    "zh": "adj. 廣大的；廣闊的",
     "unit": 5,
     "example": "Extensive repair work is being carried out.",
     "exampleZh": "大規模的修繕工作正在進行。"
@@ -38919,7 +38919,7 @@ const externalVocabularyDB = [
     "id": 4325,
     "en": "extinct",
     "kk": "[ɪkˋstɪŋkt]",
-    "zh": "adj. (火等)熄滅了的;絕種的",
+    "zh": "adj. (火等)熄滅了的；絕種的",
     "unit": 5,
     "example": "Can Berber go extinct?",
     "exampleZh": "柏柏爾人會滅絕嗎？"
@@ -38928,7 +38928,7 @@ const externalVocabularyDB = [
     "id": 4326,
     "en": "extraordinary",
     "kk": "[͵ɛkstrəˋɔrdə͵nɛri]",
-    "zh": "adj. 異常的;特別的",
+    "zh": "adj. 異常的；特別的",
     "unit": 5,
     "example": "His behaviour was extraordinary and inexplicable.",
     "exampleZh": "他的行為離奇且令人費解。"
@@ -38946,7 +38946,7 @@ const externalVocabularyDB = [
     "id": 4328,
     "en": "feeble",
     "kk": "[ˋfibəl]",
-    "zh": "adj. 虛弱的;軟弱的",
+    "zh": "adj. 虛弱的；軟弱的",
     "unit": 5,
     "example": "The heartbeat was feeble and irregular.",
     "exampleZh": "心搏無力，心律不齊。"
@@ -38966,14 +38966,14 @@ const externalVocabularyDB = [
     "kk": "[ˋfræntɪk]",
     "zh": "adj. (因喜悅或憤怒等)發狂似的",
     "unit": 5,
-    "example": "Can you use the word frantic in a sentence?",
-    "exampleZh": "你能在句子中使用「(因喜悅或憤怒等)發狂似的」這個詞嗎？"
+    "example": "The rescue team made frantic attempts to locate survivors under the rubble.",
+    "exampleZh": "搜救團隊在廢墟下焦急萬分地搜尋倖存者。"
   },
   {
     "id": 4331,
     "en": "geographical",
     "kk": "[͵dʒiəˋɡræfɪkəl]",
-    "zh": "adj. 地理學的;地理的",
+    "zh": "adj. 地理學的；地理的",
     "unit": 5,
     "example": "The survey covers a wide geographical area.",
     "exampleZh": "此項調查覆蓋的地理區域非常廣闊。"
@@ -38982,7 +38982,7 @@ const externalVocabularyDB = [
     "id": 4332,
     "en": "gorgeous",
     "kk": "[ˋɡɔrdʒəs]",
-    "zh": "adj. 燦爛的;華麗的;極好的",
+    "zh": "adj. 燦爛的；華麗的；極好的",
     "unit": 5,
     "example": "It was absolutely gorgeous.",
     "exampleZh": "那真是美麗絕倫。"
@@ -38991,7 +38991,7 @@ const externalVocabularyDB = [
     "id": 4333,
     "en": "grim",
     "kk": "[ɡrɪm]",
-    "zh": "adj. 無情的;嚴厲的;恐怖的",
+    "zh": "adj. 無情的；嚴厲的；恐怖的",
     "unit": 5,
     "example": "They painted a grim picture of growing crime.",
     "exampleZh": "他們描繪了一個犯罪增長的嚴酷局面。"
@@ -39000,7 +39000,7 @@ const externalVocabularyDB = [
     "id": 4334,
     "en": "hardy",
     "kk": "[ˋhɑrdi]",
-    "zh": "adj. 能吃苦耐勞的;(植物等)耐寒的",
+    "zh": "adj. 能吃苦耐勞的；(植物等)耐寒的",
     "unit": 5,
     "example": "Hardy played the fiddle at local dances.",
     "exampleZh": "哈迪在當地的舞會上拉了小提琴。"
@@ -39009,7 +39009,7 @@ const externalVocabularyDB = [
     "id": 4335,
     "en": "hearty",
     "kk": "[ˋhɑrti]",
-    "zh": "adj. 衷心的;健壯的;豐盛的",
+    "zh": "adj. 衷心的；健壯的；豐盛的",
     "unit": 5,
     "example": "The men ate a hearty breakfast.",
     "exampleZh": "男士們吃了一頓豐盛的早餐。"
@@ -39020,8 +39020,8 @@ const externalVocabularyDB = [
     "kk": "[ˋhɛvənli]",
     "zh": "adj. 天堂般的",
     "unit": 5,
-    "example": "Can you use the word heavenly in a sentence?",
-    "exampleZh": "你能在句子中使用「天堂般的」這個詞嗎？"
+    "example": "Fresh berries served with clotted cream tasted simply heavenly.",
+    "exampleZh": "新鮮莓果搭配凝脂奶油，嚐起來簡直是人間美味。"
   },
   {
     "id": 4337,
@@ -39036,7 +39036,7 @@ const externalVocabularyDB = [
     "id": 4338,
     "en": "hostile",
     "kk": "[ˋhɑstəl]",
-    "zh": "adj. 敵方的;懷敵意的",
+    "zh": "adj. 敵方的；懷敵意的",
     "unit": 5,
     "example": "It depends what you mean by 'hostile'.",
     "exampleZh": "那得看你所說的hostile的含義。"
@@ -39045,7 +39045,7 @@ const externalVocabularyDB = [
     "id": 4339,
     "en": "immense",
     "kk": "[͵ɪmˋɛns]",
-    "zh": "adj. 巨大的;廣大的",
+    "zh": "adj. 巨大的；廣大的",
     "unit": 5,
     "example": "The benefits are immense.",
     "exampleZh": "效益是極大的。"
@@ -39063,7 +39063,7 @@ const externalVocabularyDB = [
     "id": 4341,
     "en": "indifferent",
     "kk": "[͵ɪnˋdɪfrənt]",
-    "zh": "adj. 不感興趣的;中立的;無關緊要的",
+    "zh": "adj. 不感興趣的；中立的；無關緊要的",
     "unit": 5,
     "example": "He was mute, distant, and indifferent.",
     "exampleZh": "他緘默無言，對人疏遠而且冷漠。"
@@ -39072,7 +39072,7 @@ const externalVocabularyDB = [
     "id": 4342,
     "en": "indignant",
     "kk": "[͵ɪnˋdɪɡnənt]",
-    "zh": "adj. 憤怒的;憤慨的",
+    "zh": "adj. 憤怒的；憤慨的",
     "unit": 5,
     "example": "They were indignant that they hadn't been invited.",
     "exampleZh": "他們因沒有受到邀請而憤憤不平。"
@@ -39081,7 +39081,7 @@ const externalVocabularyDB = [
     "id": 4343,
     "en": "indispensable",
     "kk": "[͵ɪndɪˋspɛnsəbəl]",
-    "zh": "adj. 必不可少的;必需的",
+    "zh": "adj. 必不可少的；必需的",
     "unit": 5,
     "example": "She was becoming indispensable to him.",
     "exampleZh": "對他來說她正變得不可或缺。"
@@ -39108,7 +39108,7 @@ const externalVocabularyDB = [
     "id": 4346,
     "en": "knowledgeable",
     "kk": "[ˋnɑlədʒəbəl]",
-    "zh": "adj. 博學的;有見識的",
+    "zh": "adj. 博學的；有見識的",
     "unit": 5,
     "example": "She is very knowledgeable about plants.",
     "exampleZh": "她對植物很在行。"
@@ -39117,7 +39117,7 @@ const externalVocabularyDB = [
     "id": 4347,
     "en": "lifelong",
     "kk": "[ˋlaɪfˋlɔŋ]",
-    "zh": "adj. 終身的;一輩子的",
+    "zh": "adj. 終身的；一輩子的",
     "unit": 5,
     "example": "It had been her lifelong ambition.",
     "exampleZh": "這是她終身追求的目標。"
@@ -39126,7 +39126,7 @@ const externalVocabularyDB = [
     "id": 4348,
     "en": "lofty",
     "kk": "[ˋlɔfti]",
-    "zh": "adj. 高聳的;極高的;高傲的",
+    "zh": "adj. 高聳的；極高的；高傲的",
     "unit": 5,
     "example": "The people all over the country resounded his lofty moral character.",
     "exampleZh": "全國人民都對他高尚的品德交口稱讚，反響熱烈。"
@@ -39135,7 +39135,7 @@ const externalVocabularyDB = [
     "id": 4349,
     "en": "lonesome",
     "kk": "[ˋlonsəm]",
-    "zh": "adj. 寂寞的;孤單的;荒涼的",
+    "zh": "adj. 寂寞的；孤單的；荒涼的",
     "unit": 5,
     "example": "I felt lonesome in the strange land.",
     "exampleZh": "在那陌生的地方我覺得寂寞。"
@@ -39144,7 +39144,7 @@ const externalVocabularyDB = [
     "id": 4350,
     "en": "majestic",
     "kk": "[məˋdʒɛstɪk]",
-    "zh": "adj. 雄偉的;威嚴的;崇高的",
+    "zh": "adj. 雄偉的；威嚴的；崇高的",
     "unit": 5,
     "example": "Hotel Majestic is located near Casa Batllo.",
     "exampleZh": "雄偉的酒店位於巴特洛別墅附近。"
@@ -39153,7 +39153,7 @@ const externalVocabularyDB = [
     "id": 4351,
     "en": "marginal",
     "kk": "[ˋmɑrdʒənəl]",
-    "zh": "adj. 頁邊的;邊緣的;不重要的",
+    "zh": "adj. 頁邊的；邊緣的；不重要的",
     "unit": 5,
     "example": "It will lower the private marginal product of capital.",
     "exampleZh": "它將降低私人資本的邊際產品。"
@@ -39162,7 +39162,7 @@ const externalVocabularyDB = [
     "id": 4352,
     "en": "martial",
     "kk": "[ˋmɑrʃəl]",
-    "zh": "adj. 戰爭的;軍事的;尚武的",
+    "zh": "adj. 戰爭的；軍事的；尚武的",
     "unit": 5,
     "example": "All the men now face court martial.",
     "exampleZh": "現在所有這些軍人都面臨軍事法庭的審判。"
@@ -39171,7 +39171,7 @@ const externalVocabularyDB = [
     "id": 4353,
     "en": "massive",
     "kk": "[ˋmæsɪv]",
-    "zh": "adj. 厚實的;粗大的;大量的",
+    "zh": "adj. 厚實的；粗大的；大量的",
     "unit": 5,
     "example": "We ran up a massive hotel bill.",
     "exampleZh": "我們累積了大筆的旅館費。"
@@ -39180,7 +39180,7 @@ const externalVocabularyDB = [
     "id": 4354,
     "en": "minimal",
     "kk": "[ˋmɪnəməl]",
-    "zh": "adj. 最小的;極微的",
+    "zh": "adj. 最小的；極微的",
     "unit": 5,
     "example": "The cooperation between the two is minimal.",
     "exampleZh": "兩者之間的合作是最低程度的。"
@@ -39189,7 +39189,7 @@ const externalVocabularyDB = [
     "id": 4355,
     "en": "monstrous",
     "kk": "[ˋmɑnstrəs]",
-    "zh": "adj. 怪異的;駭人聽聞的;巨大的",
+    "zh": "adj. 怪異的；駭人聽聞的；巨大的",
     "unit": 5,
     "example": "I characterize it as monstrous.",
     "exampleZh": "我將其描述為駭人的。"
@@ -39198,7 +39198,7 @@ const externalVocabularyDB = [
     "id": 4356,
     "en": "muscular",
     "kk": "[ˋmʌskjəlɚ]",
-    "zh": "adj. 肌肉的;健壯的",
+    "zh": "adj. 肌肉的；健壯的",
     "unit": 5,
     "example": "He is tall, broad and muscular.",
     "exampleZh": "他身高體寬，肌肉發達。"
@@ -39207,7 +39207,7 @@ const externalVocabularyDB = [
     "id": 4357,
     "en": "naive",
     "kk": "[͵naɪˋiv]",
-    "zh": "adj. 天真的;幼稚的;輕信的",
+    "zh": "adj. 天真的；幼稚的；輕信的",
     "unit": 5,
     "example": "Their approach to life is refreshingly naive.",
     "exampleZh": "他們對待生活的態度天真率直，令人耳目一新。"
@@ -39216,7 +39216,7 @@ const externalVocabularyDB = [
     "id": 4358,
     "en": "nasty",
     "kk": "[ˋnæsti]",
-    "zh": "adj. 齷齪的;卑鄙的;難處理的",
+    "zh": "adj. 齷齪的；卑鄙的；難處理的",
     "unit": 5,
     "example": "That was a nasty little trick.",
     "exampleZh": "這是個可惡的小騙局。"
@@ -39234,7 +39234,7 @@ const externalVocabularyDB = [
     "id": 4360,
     "en": "noticeable",
     "kk": "[ˋnotəsəbəl]",
-    "zh": "adj. 顯而易見的;顯著的",
+    "zh": "adj. 顯而易見的；顯著的",
     "unit": 5,
     "example": "It was noticeable that none of the family were present.",
     "exampleZh": "很明顯這一家沒有人在場。"
@@ -39243,7 +39243,7 @@ const externalVocabularyDB = [
     "id": 4361,
     "en": "obstinate",
     "kk": "[ˋɑbstənət]",
-    "zh": "adj. 頑固的;頑強的",
+    "zh": "adj. 頑固的；頑強的",
     "unit": 5,
     "example": "He is obstinate and determined and will not give up.",
     "exampleZh": "他固執、堅決，不會放棄。"
@@ -39252,7 +39252,7 @@ const externalVocabularyDB = [
     "id": 4362,
     "en": "outgoing",
     "kk": "[ˋaʊt͵ɡoɪŋ]",
-    "zh": "adj. 直率的;往外的;即將離職的;友善的",
+    "zh": "adj. 直率的；往外的；即將離職的；友善的",
     "unit": 5,
     "example": "She is such a gregarious and outgoing person.",
     "exampleZh": "她就是這樣一個愛社交而且外向的人。"
@@ -39261,7 +39261,7 @@ const externalVocabularyDB = [
     "id": 4363,
     "en": "passionate",
     "kk": "[ˋpæʃənət]",
-    "zh": "adj. 熱情的;激昂的",
+    "zh": "adj. 熱情的；激昂的",
     "unit": 5,
     "example": "He was passionate about all literature.",
     "exampleZh": "他對所有文學作品都有熱情。"
@@ -39279,7 +39279,7 @@ const externalVocabularyDB = [
     "id": 4365,
     "en": "poetic",
     "kk": "[poˋɛtɪk]",
-    "zh": "adj. 詩的;韻文的",
+    "zh": "adj. 詩的；韻文的",
     "unit": 5,
     "example": "Nikolai Demidenko gave an exciting yet poetic performance.",
     "exampleZh": "尼古拉·德米丹柯獻上了一場激動人心而又富有詩意的演出。"
@@ -39288,7 +39288,7 @@ const externalVocabularyDB = [
     "id": 4366,
     "en": "polar",
     "kk": "[ˋpolɚ]",
-    "zh": "adj. 北極的;南極的;截然對立的",
+    "zh": "adj. 北極的；南極的；截然對立的",
     "unit": 5,
     "example": "The polar vortex is a system of wintertime winds.",
     "exampleZh": "極地渦旋是冬季風形成的一個風系。"
@@ -39297,7 +39297,7 @@ const externalVocabularyDB = [
     "id": 4367,
     "en": "prehistoric",
     "kk": "[͵prihɪˋstɔrɪk]",
-    "zh": "adj. 史前的;舊式的",
+    "zh": "adj. 史前的；舊式的",
     "unit": 5,
     "example": "Beside this, prehistoric man looks technologically primitive.",
     "exampleZh": "除此之外，史前人類使用的技術看起來比較簡陋。"
@@ -39306,7 +39306,7 @@ const externalVocabularyDB = [
     "id": 4368,
     "en": "priceless",
     "kk": "[ˋpraɪsləs]",
-    "zh": "adj. 無價的;稀世之珍的",
+    "zh": "adj. 無價的；稀世之珍的",
     "unit": 5,
     "example": "They are priceless, unique and irreplaceable.",
     "exampleZh": "它們是無價的、獨一無二的，不可替代的。"
@@ -39315,7 +39315,7 @@ const externalVocabularyDB = [
     "id": 4369,
     "en": "ragged",
     "kk": "[ˋræɡəd]",
-    "zh": "adj. 破爛的;不整潔的;參差不齊的",
+    "zh": "adj. 破爛的；不整潔的；參差不齊的",
     "unit": 5,
     "example": "Their performance was still very ragged.",
     "exampleZh": "他們的表演仍然很粗糙。"
@@ -39324,7 +39324,7 @@ const externalVocabularyDB = [
     "id": 4370,
     "en": "reckless",
     "kk": "[ˋrɛkləs]",
-    "zh": "adj. 不在乎的;魯莽的",
+    "zh": "adj. 不在乎的；魯莽的",
     "unit": 5,
     "example": "She was a good rider, but reckless.",
     "exampleZh": "她是個好騎手，但太魯莽。"
@@ -39333,7 +39333,7 @@ const externalVocabularyDB = [
     "id": 4371,
     "en": "ridiculous",
     "kk": "[rɪˋdɪkjələs]",
-    "zh": "adj. 可笑的,荒謬的;滑稽的",
+    "zh": "adj. 可笑的、荒謬的；滑稽的",
     "unit": 5,
     "example": "I look ridiculous in this hat.",
     "exampleZh": "我戴這頂帽子看上去很可笑。"
@@ -39342,7 +39342,7 @@ const externalVocabularyDB = [
     "id": 4372,
     "en": "rigid",
     "kk": "[ˋrɪdʒəd]",
-    "zh": "adj. 堅硬的;嚴格的;死板的",
+    "zh": "adj. 堅硬的；嚴格的；死板的",
     "unit": 5,
     "example": "The curriculum was too narrow and too rigid.",
     "exampleZh": "課程設定過於狹窄和死板。"
@@ -39351,7 +39351,7 @@ const externalVocabularyDB = [
     "id": 4373,
     "en": "robust",
     "kk": "[roˋbʌst]",
-    "zh": "adj. 強健的;健全的;結實的",
+    "zh": "adj. 強健的；健全的；結實的",
     "unit": 5,
     "example": "She was almost 90, but still very robust.",
     "exampleZh": "她將近90歲了，但身體仍然十分強健。"
@@ -39360,16 +39360,16 @@ const externalVocabularyDB = [
     "id": 4374,
     "en": "rugged",
     "kk": "[ˋrʌɡəd]",
-    "zh": "adj. 高低不平的;粗糙的;粗線條的",
+    "zh": "adj. 高低不平的；粗糙的；粗線條的",
     "unit": 5,
-    "example": "Can you use the word rugged in a sentence?",
-    "exampleZh": "你能在句子中使用「粗線條的」這個詞嗎？"
+    "example": "The four-wheel-drive vehicle handled the rugged terrain with impressive ease.",
+    "exampleZh": "這款四輪驅動車毫不費力地應付了崎嶇的地形。"
   },
   {
     "id": 4375,
     "en": "sacred",
     "kk": "[ˋsekrəd]",
-    "zh": "adj. 神的;神聖的",
+    "zh": "adj. 神的；神聖的",
     "unit": 5,
     "example": "Cows are sacred to Hindus.",
     "exampleZh": "印度教徒把牛奉為聖物。"
@@ -39378,7 +39378,7 @@ const externalVocabularyDB = [
     "id": 4376,
     "en": "shabby",
     "kk": "[ˋʃæbi]",
-    "zh": "adj. 破爛的;破舊的;邋遢的",
+    "zh": "adj. 破爛的；破舊的；邋遢的",
     "unit": 5,
     "example": "She wore shabby old jeans and a T-shirt.",
     "exampleZh": "她穿著一條破舊的牛仔褲和一件T恤衫。"
@@ -39387,7 +39387,7 @@ const externalVocabularyDB = [
     "id": 4377,
     "en": "sloppy",
     "kk": "[ˋslɑpi]",
-    "zh": "adj. 懶散的;草率的",
+    "zh": "adj. 懶散的；草率的",
     "unit": 5,
     "example": "He has little patience for sloppy work from colleagues.",
     "exampleZh": "他無法忍耐同事們馬虎的工作。"
@@ -39405,7 +39405,7 @@ const externalVocabularyDB = [
     "id": 4379,
     "en": "solemn",
     "kk": "[ˋsɑləm]",
-    "zh": "adj. 嚴肅的;莊嚴的;鄭重的",
+    "zh": "adj. 嚴肅的；莊嚴的；鄭重的",
     "unit": 5,
     "example": "Erica was solemn, pulling at her blonde curls.",
     "exampleZh": "埃麗卡表情嚴肅，拉扯著她金黃色的捲髮。"
@@ -39414,7 +39414,7 @@ const externalVocabularyDB = [
     "id": 4380,
     "en": "statistical",
     "kk": "[stəˋtɪstɪkəl]",
-    "zh": "adj. 統計的;統計學的",
+    "zh": "adj. 統計的；統計學的",
     "unit": 5,
     "example": "They discussed the statistical significance of the results.",
     "exampleZh": "他們討論了這些結果在統計學上的意義。"
@@ -39423,7 +39423,7 @@ const externalVocabularyDB = [
     "id": 4381,
     "en": "stern",
     "kk": "[stɝn]",
-    "zh": "adj. 嚴厲的;堅定的",
+    "zh": "adj. 嚴厲的；堅定的",
     "unit": 5,
     "example": "Her voice was stern.",
     "exampleZh": "她聲調嚴厲。"
@@ -39432,7 +39432,7 @@ const externalVocabularyDB = [
     "id": 4382,
     "en": "stout",
     "kk": "[staʊt]",
-    "zh": "adj. 矮胖的;結實的;牢固的",
+    "zh": "adj. 矮胖的；結實的；牢固的",
     "unit": 5,
     "example": "Jacobs was a stout, florid man.",
     "exampleZh": "雅各布斯是個身材結實，臉色紅潤的男人。"
@@ -39441,7 +39441,7 @@ const externalVocabularyDB = [
     "id": 4383,
     "en": "straightforward",
     "kk": "[ˋstretˋfɔrwɚd]",
-    "zh": "adj. 一直向前的;正直的;簡單易懂的",
+    "zh": "adj. 一直向前的；正直的；簡單易懂的",
     "unit": 5,
     "example": "The instructions are reasonably straightforward.",
     "exampleZh": "用法說明還算簡單易懂。"
@@ -39450,7 +39450,7 @@ const externalVocabularyDB = [
     "id": 4384,
     "en": "structural",
     "kk": "[ˋstrʌktʃɚəl]",
-    "zh": "adj. 建築上的;建築用的;結構上的",
+    "zh": "adj. 建築上的；建築用的；結構上的",
     "unit": 5,
     "example": "Storms have caused structural damage to hundreds of homes.",
     "exampleZh": "幾場暴風雨毀了成百上千所住宅，連結構都破壞了。"
@@ -39459,7 +39459,7 @@ const externalVocabularyDB = [
     "id": 4385,
     "en": "sturdy",
     "kk": "[ˋstɝdi]",
-    "zh": "adj. 結實的;健康的;堅固的",
+    "zh": "adj. 結實的；健康的；堅固的",
     "unit": 5,
     "example": "She was a short, sturdy woman in her early sixties.",
     "exampleZh": "她是一位六十出頭、矮小結實的女人。"
@@ -39468,7 +39468,7 @@ const externalVocabularyDB = [
     "id": 4386,
     "en": "stylish",
     "kk": "[ˋstaɪlɪʃ]",
-    "zh": "adj. 時髦的;漂亮的",
+    "zh": "adj. 時髦的；漂亮的",
     "unit": 5,
     "example": "Its shops are among the most stylish on the Continent.",
     "exampleZh": "其商店位列歐洲大陸最時尚的商店之中。"
@@ -39477,7 +39477,7 @@ const externalVocabularyDB = [
     "id": 4387,
     "en": "substantial",
     "kk": "[səbˋstænʃəl]",
-    "zh": "adj. 大量的;實在的",
+    "zh": "adj. 大量的；實在的",
     "unit": 5,
     "example": "He ate a substantial breakfast.",
     "exampleZh": "他吃了一頓豐盛的早餐。"
@@ -39486,7 +39486,7 @@ const externalVocabularyDB = [
     "id": 4388,
     "en": "superficial",
     "kk": "[͵supɚˋfɪʃəl]",
-    "zh": "adj. 外表的;粗略的;膚淺的",
+    "zh": "adj. 外表的；粗略的；膚淺的",
     "unit": 5,
     "example": "The other injured man had a superficial stomach wound.",
     "exampleZh": "另一名受傷男子是腹部表層受傷。"
@@ -39495,7 +39495,7 @@ const externalVocabularyDB = [
     "id": 4389,
     "en": "supreme",
     "kk": "[səˋprim]",
-    "zh": "adj. 最高的,至上的",
+    "zh": "adj. 最高的、至上的",
     "unit": 5,
     "example": "The Supreme Court ruled in Fitzgerald's favour.",
     "exampleZh": "最高法院判定菲茨傑拉德勝訴。"
@@ -39504,7 +39504,7 @@ const externalVocabularyDB = [
     "id": 4390,
     "en": "tentative",
     "kk": "[ˋtɛntətɪv]",
-    "zh": "adj. 試驗性的;暫時性的;猶豫的",
+    "zh": "adj. 試驗性的；暫時性的；猶豫的",
     "unit": 5,
     "example": "I'm taking the first tentative steps towards fitness.",
     "exampleZh": "我試探性地開始實施健身計劃。"
@@ -39513,7 +39513,7 @@ const externalVocabularyDB = [
     "id": 4391,
     "en": "toxic",
     "kk": "[ˋtɑksɪk]",
-    "zh": "adj. 毒(性)的;有毒的",
+    "zh": "adj. 毒(性)的；有毒的",
     "unit": 5,
     "example": "Many pesticides are highly toxic.",
     "exampleZh": "許多殺蟲劑毒性很大。"
@@ -39522,7 +39522,7 @@ const externalVocabularyDB = [
     "id": 4392,
     "en": "transparent",
     "kk": "[trænˋspɛrənt]",
-    "zh": "adj. 透明的;一目了然的;易懂的",
+    "zh": "adj. 透明的；一目了然的；易懂的",
     "unit": 5,
     "example": "The insect's wings are almost transparent.",
     "exampleZh": "這昆蟲的翅膀幾乎是透明的。"
@@ -39531,7 +39531,7 @@ const externalVocabularyDB = [
     "id": 4393,
     "en": "understandable",
     "kk": "[͵ʌndɚˋstændəbəl]",
-    "zh": "adj. 可理解的;能懂的",
+    "zh": "adj. 可理解的；能懂的",
     "unit": 5,
     "example": "Their attitude is perfectly understandable.",
     "exampleZh": "他們的態度是完全可以理解的。"
@@ -39540,7 +39540,7 @@ const externalVocabularyDB = [
     "id": 4394,
     "en": "vague",
     "kk": "[veɡ]",
-    "zh": "adj. (形狀等)模糊不清的;曖昧的",
+    "zh": "adj. (形狀等)模糊不清的；曖昧的",
     "unit": 5,
     "example": "The description was pretty vague.",
     "exampleZh": "這項描述是相當含糊的。"
@@ -39558,7 +39558,7 @@ const externalVocabularyDB = [
     "id": 4396,
     "en": "wary",
     "kk": "[ˋwɛri]",
-    "zh": "adj. 小心翼翼的;謹防的",
+    "zh": "adj. 小心翼翼的；謹防的",
     "unit": 5,
     "example": "Be wary of strangers who offer you a ride.",
     "exampleZh": "提防那些主動讓你搭車的陌生人。"
@@ -39576,7 +39576,7 @@ const externalVocabularyDB = [
     "id": 4398,
     "en": "wholesome",
     "kk": "[ˋholsəm]",
-    "zh": "adj. 有益健康的;強健的",
+    "zh": "adj. 有益健康的；強健的",
     "unit": 5,
     "example": "Water is a wholesome drink.",
     "exampleZh": "水是有益健康的飲料。"
@@ -39612,7 +39612,7 @@ const externalVocabularyDB = [
     "id": 4402,
     "en": "abide",
     "kk": "[əˋbaɪd]",
-    "zh": "v. 忍受;等候",
+    "zh": "v. 忍受；等候",
     "unit": 5,
     "example": "They have got to abide by the rules.",
     "exampleZh": "他們必須要遵守規定。"
@@ -39621,7 +39621,7 @@ const externalVocabularyDB = [
     "id": 4403,
     "en": "abolish",
     "kk": "[əˋbɑlɪʃ]",
-    "zh": "v. 廢除;廢止",
+    "zh": "v. 廢除；廢止",
     "unit": 5,
     "example": "These reforms will abolish racially discriminatory laws.",
     "exampleZh": "這些改革將廢除種族歧視法律。"
@@ -39648,7 +39648,7 @@ const externalVocabularyDB = [
     "id": 4406,
     "en": "adore",
     "kk": "[əˋdɔr]",
-    "zh": "v. 崇拜;愛慕",
+    "zh": "v. 崇拜；愛慕",
     "unit": 5,
     "example": "I simply adore his music!",
     "exampleZh": "我簡直太喜愛他的音樂了！"
@@ -39666,7 +39666,7 @@ const externalVocabularyDB = [
     "id": 4408,
     "en": "applaud",
     "kk": "[əpˋlɔd]",
-    "zh": "v. 向...鼓掌;稱讚",
+    "zh": "v. 向……鼓掌；稱讚",
     "unit": 5,
     "example": "We applaud her decision.",
     "exampleZh": "我們稱讚她的決定。"
@@ -39675,7 +39675,7 @@ const externalVocabularyDB = [
     "id": 4409,
     "en": "ascend",
     "kk": "[əˋsɛnd]",
-    "zh": "v. 登高;上升;",
+    "zh": "v. 登高；上升；",
     "unit": 5,
     "example": "The stairs ascend beyond the height of the bookcase.",
     "exampleZh": "樓梯超過了書架的高度。"
@@ -39693,7 +39693,7 @@ const externalVocabularyDB = [
     "id": 4411,
     "en": "beautify",
     "kk": "[ˋbjutɪ͵faɪ]",
-    "zh": "v. 使更加美麗;美化",
+    "zh": "v. 使更加美麗；美化",
     "unit": 5,
     "example": "Claire worked to beautify the garden.",
     "exampleZh": "克萊爾為美化花園工作著。"
@@ -39702,7 +39702,7 @@ const externalVocabularyDB = [
     "id": 4412,
     "en": "beware",
     "kk": "[bɪˋwɛr]",
-    "zh": "v. 當心;提防",
+    "zh": "v. 當心；提防",
     "unit": 5,
     "example": "Motorists were warned to beware of slippery conditions.",
     "exampleZh": "汽車駕駛者被提醒小心路滑。"
@@ -39711,7 +39711,7 @@ const externalVocabularyDB = [
     "id": 4413,
     "en": "broaden",
     "kk": "[ˋbrɔdən]",
-    "zh": "v. 變寬;變闊;擴大",
+    "zh": "v. 變寬；變闊；擴大",
     "unit": 5,
     "example": "We must broaden our appeal.",
     "exampleZh": "我們必須擴大我們的吸引力。"
@@ -39720,7 +39720,7 @@ const externalVocabularyDB = [
     "id": 4414,
     "en": "cite",
     "kk": "[saɪt]",
-    "zh": "v. 引用;舉出;表揚",
+    "zh": "v. 引用；舉出；表揚",
     "unit": 5,
     "example": "Can you cite another case like this?",
     "exampleZh": "你能舉另外一個像這樣的例項嗎？"
@@ -39729,7 +39729,7 @@ const externalVocabularyDB = [
     "id": 4415,
     "en": "cling",
     "kk": "[klɪŋ]",
-    "zh": "v. 黏著;依附;墨守",
+    "zh": "v. 黏著；依附；墨守",
     "unit": 5,
     "example": "He had one last hope to cling on to.",
     "exampleZh": "他還抱著最後的一線希望。"
@@ -39738,7 +39738,7 @@ const externalVocabularyDB = [
     "id": 4416,
     "en": "commute",
     "kk": "[kəˋmjut]",
-    "zh": "v. 減刑;通勤",
+    "zh": "v. 減刑；通勤",
     "unit": 5,
     "example": "So how long is your commute?",
     "exampleZh": "那麼你上下班路程要花多長時間？"
@@ -39747,7 +39747,7 @@ const externalVocabularyDB = [
     "id": 4417,
     "en": "compel",
     "kk": "[kəmˋpɛl]",
-    "zh": "v. 強迫;強求",
+    "zh": "v. 強迫；強求",
     "unit": 5,
     "example": "Nothing can compel me to do such a thing.",
     "exampleZh": "沒有什麼能強迫我做這樣的事。"
@@ -39756,7 +39756,7 @@ const externalVocabularyDB = [
     "id": 4418,
     "en": "comprehend",
     "kk": "[͵kɑmpriˋhɛnd]",
-    "zh": "v. 理解;領會;包含",
+    "zh": "v. 理解；領會；包含",
     "unit": 5,
     "example": "I just cannot comprehend your attitude.",
     "exampleZh": "我就是不能理解你的態度。"
@@ -39765,7 +39765,7 @@ const externalVocabularyDB = [
     "id": 4419,
     "en": "compute",
     "kk": "[kəmˋpjut]",
-    "zh": "v. 計算;估算;推斷",
+    "zh": "v. 計算；估算；推斷",
     "unit": 5,
     "example": "How do we compute this formula?",
     "exampleZh": "我們該怎樣計算這個式子呢？"
@@ -39774,7 +39774,7 @@ const externalVocabularyDB = [
     "id": 4420,
     "en": "computerize",
     "kk": "[kəmˋpjutɚ͵aɪz]",
-    "zh": "v. 使電腦化;用電腦處理",
+    "zh": "v. 使電腦化；用電腦處理",
     "unit": 5,
     "example": "Let's totally computerize the operation.",
     "exampleZh": "讓我們把操作都電腦化吧。"
@@ -39783,7 +39783,7 @@ const externalVocabularyDB = [
     "id": 4421,
     "en": "conceal",
     "kk": "[kənˋsil]",
-    "zh": "v. 隱蔽,隱藏",
+    "zh": "v. 隱蔽、隱藏",
     "unit": 5,
     "example": "Tim could barely conceal his disappointment.",
     "exampleZh": "蒂姆幾乎掩飾不住自己的失望。"
@@ -39792,7 +39792,7 @@ const externalVocabularyDB = [
     "id": 4422,
     "en": "conceive",
     "kk": "[kənˋsiv]",
-    "zh": "v. 構想出;設想;懷孕",
+    "zh": "v. 構想出；設想；懷孕",
     "unit": 5,
     "example": "She is unable to conceive.",
     "exampleZh": "她不能懷孕。"
@@ -39801,7 +39801,7 @@ const externalVocabularyDB = [
     "id": 4423,
     "en": "condemn",
     "kk": "[kənˋdɛm]",
-    "zh": "v. 責備;譴責;判刑",
+    "zh": "v. 責備；譴責；判刑",
     "unit": 5,
     "example": "The Church has a duty to condemn violence.",
     "exampleZh": "基督教會有義務譴責暴力。"
@@ -39810,7 +39810,7 @@ const externalVocabularyDB = [
     "id": 4424,
     "en": "confront",
     "kk": "[kənˋfrʌnt]",
-    "zh": "v. 面臨;遭遇",
+    "zh": "v. 面臨；遭遇",
     "unit": 5,
     "example": "Once again, I chose to confront the issue head-on.",
     "exampleZh": "又一次，我選擇了直面這個問題。"
@@ -39819,7 +39819,7 @@ const externalVocabularyDB = [
     "id": 4425,
     "en": "contaminate",
     "kk": "[kənˋtæmə͵net]",
-    "zh": "v. 弄髒;污染",
+    "zh": "v. 弄髒；污染",
     "unit": 5,
     "example": "Radioactivity cannot contaminate the food that is packaged.",
     "exampleZh": "包裝好的食品不會受到放射性汙染。"
@@ -39828,7 +39828,7 @@ const externalVocabularyDB = [
     "id": 4426,
     "en": "contemplate",
     "kk": "[ˋkɑntəm͵plet]",
-    "zh": "v. 凝視;思忖;仔細考慮",
+    "zh": "v. 凝視；思忖；仔細考慮",
     "unit": 5,
     "example": "Central banks start to contemplate their exit strategies.",
     "exampleZh": "央行開始盤算他們的退出策略。"
@@ -39837,7 +39837,7 @@ const externalVocabularyDB = [
     "id": 4427,
     "en": "contend",
     "kk": "[kənˋtɛnd]",
-    "zh": "v. 爭取;競爭;搏鬥;聲稱",
+    "zh": "v. 爭取；競爭；搏鬥；聲稱",
     "unit": 5,
     "example": "They are contending for the prize.",
     "exampleZh": "他們正在爭奪這個獎項。"
@@ -39846,7 +39846,7 @@ const externalVocabularyDB = [
     "id": 4428,
     "en": "convert",
     "kk": "[ˋkɑnvɚt]",
-    "zh": "v. 轉變;變換;改變信仰",
+    "zh": "v. 轉變；變換；改變信仰",
     "unit": 5,
     "example": "She, too, was a convert to Roman Catholicism.",
     "exampleZh": "她也改信羅馬天主教了。"
@@ -39864,7 +39864,7 @@ const externalVocabularyDB = [
     "id": 4430,
     "en": "deceive",
     "kk": "[dɪˋsiv]",
-    "zh": "v. 欺騙,蒙蔽",
+    "zh": "v. 欺騙、蒙蔽",
     "unit": 5,
     "example": "I detest those who deceive me.",
     "exampleZh": "我厭惡那些欺騙我的人。"
@@ -39882,7 +39882,7 @@ const externalVocabularyDB = [
     "id": 4432,
     "en": "devour",
     "kk": "[dɪˋvaʊɚ]",
-    "zh": "v. 狼吞虎嚥地吃;吞沒",
+    "zh": "v. 狼吞虎嚥地吃；吞沒",
     "unit": 5,
     "example": "The dogs come and devour the bacon.",
     "exampleZh": "狗來吃掉了肉。"
@@ -39891,7 +39891,7 @@ const externalVocabularyDB = [
     "id": 4433,
     "en": "discriminate",
     "kk": "[dɪˋskrɪmə͵net]",
-    "zh": "v. 歧視;區分出",
+    "zh": "v. 歧視；區分出",
     "unit": 5,
     "example": "When do babies learn to discriminate voices?",
     "exampleZh": "嬰兒什麼時候學會辨別嗓音呢？"
@@ -39900,7 +39900,7 @@ const externalVocabularyDB = [
     "id": 4434,
     "en": "dispense",
     "kk": "[dɪˋspɛns]",
-    "zh": "v. 分配;執行;配(藥)",
+    "zh": "v. 分配；執行；配(藥)",
     "unit": 5,
     "example": "Can we dispense with the formalities?",
     "exampleZh": "我們可以免去這些客套嗎？"
@@ -39909,7 +39909,7 @@ const externalVocabularyDB = [
     "id": 4435,
     "en": "dispose",
     "kk": "[dɪˋspoz]",
-    "zh": "v. 配置;處置",
+    "zh": "v. 配置；處置",
     "unit": 5,
     "example": "Obviously we ask all our customers to dispose of litter responsibly.",
     "exampleZh": "顯然，我們要求所有的顧客負責任地處理垃圾。"
@@ -39918,7 +39918,7 @@ const externalVocabularyDB = [
     "id": 4436,
     "en": "dwell",
     "kk": "[dwɛl]",
-    "zh": "v. 居住;存在於;思索",
+    "zh": "v. 居住；存在於；思索",
     "unit": 5,
     "example": "He certainly does not dwell on his handicap.",
     "exampleZh": "他當然絕不會老是想著自己的缺陷。"
@@ -39936,7 +39936,7 @@ const externalVocabularyDB = [
     "id": 4438,
     "en": "elevate",
     "kk": "[ˋɛlə͵vet]",
-    "zh": "v. 提高;振奮;升職",
+    "zh": "v. 提高；振奮；升職",
     "unit": 5,
     "example": "I built a platform to elevate the bed.",
     "exampleZh": "我搭了一個臺子把床抬高了。"
@@ -39945,7 +39945,7 @@ const externalVocabularyDB = [
     "id": 4439,
     "en": "enroll",
     "kk": "[ɛˋnrol]",
-    "zh": "v. 把...記入名冊,登記",
+    "zh": "v. 把……記入名冊、登記",
     "unit": 5,
     "example": "The school will enroll new students in August.",
     "exampleZh": "這所學校將於八月份招收新生。"
@@ -39954,7 +39954,7 @@ const externalVocabularyDB = [
     "id": 4440,
     "en": "ensure",
     "kk": "[ɛnˋʃʊr]",
-    "zh": "v. 保證;擔保",
+    "zh": "v. 保證；擔保",
     "unit": 5,
     "example": "We tried to ensure that everyone got a fair deal.",
     "exampleZh": "我們曾盡力保證每個人都受到公平待遇。"
@@ -39963,7 +39963,7 @@ const externalVocabularyDB = [
     "id": 4441,
     "en": "entitle",
     "kk": "[ɛnˋtaɪtəl]",
-    "zh": "v. 給...權力(或資格)",
+    "zh": "v. 給……權力(或資格)",
     "unit": 5,
     "example": "This ticket does not entitle you to travel first class.",
     "exampleZh": "你拿這張票不能坐頭等艙。"
@@ -39972,7 +39972,7 @@ const externalVocabularyDB = [
     "id": 4442,
     "en": "equate",
     "kk": "[ɪkˋwet]",
-    "zh": "v. 用符號表示某種關係;等同",
+    "zh": "v. 用符號表示某種關係；等同",
     "unit": 5,
     "example": "The author doesn't equate liberalism and conservatism.",
     "exampleZh": "該作者沒有將自由主義等同於保守主義。"
@@ -39990,7 +39990,7 @@ const externalVocabularyDB = [
     "id": 4444,
     "en": "erupt",
     "kk": "[ɪˋrʌpt]",
-    "zh": "v. 噴出;爆發",
+    "zh": "v. 噴出；爆發",
     "unit": 5,
     "example": "Ash began to erupt from the crater.",
     "exampleZh": "火山灰開始從火山口噴出。"
@@ -39999,7 +39999,7 @@ const externalVocabularyDB = [
     "id": 4445,
     "en": "exceed",
     "kk": "[ɪkˋsid]",
-    "zh": "v. 超過;勝過",
+    "zh": "v. 超過；勝過",
     "unit": 5,
     "example": "It is dangerous to exceed the recommended dose.",
     "exampleZh": "超過建議使用的劑量會有危險。"
@@ -40008,7 +40008,7 @@ const externalVocabularyDB = [
     "id": 4446,
     "en": "excel",
     "kk": "[ɪkˋsɛl]",
-    "zh": "v. 勝過;突出",
+    "zh": "v. 勝過；突出",
     "unit": 5,
     "example": "Women excel at certain tasks, men at others.",
     "exampleZh": "女性擅長某些任務，男性擅長其他任務。"
@@ -40017,7 +40017,7 @@ const externalVocabularyDB = [
     "id": 4447,
     "en": "exclaim",
     "kk": "[ɪkˋsklem]",
-    "zh": "v. 呼喊;驚叫",
+    "zh": "v. 呼喊；驚叫",
     "unit": 5,
     "example": "The spectacular sunrise made us exclaim in surprise.",
     "exampleZh": "壯觀的日出讓我們驚歎不已。"
@@ -40026,7 +40026,7 @@ const externalVocabularyDB = [
     "id": 4448,
     "en": "exclude",
     "kk": "[ɪkˋsklud]",
-    "zh": "v. 拒絕接納;排除在外",
+    "zh": "v. 拒絕接納；排除在外",
     "unit": 5,
     "example": "We should not exclude the possibility of negotiation.",
     "exampleZh": "我們不應該排除談判的可能性。"
@@ -40035,7 +40035,7 @@ const externalVocabularyDB = [
     "id": 4449,
     "en": "execute",
     "kk": "[ˋɛksə͵kjut]",
-    "zh": "v. 實施;執行;處死",
+    "zh": "v. 實施；執行；處死",
     "unit": 5,
     "example": "We execute that instruction and we move to the next one.",
     "exampleZh": "我們執行完這條指令，然後就轉到下一條指令。"
@@ -40044,7 +40044,7 @@ const externalVocabularyDB = [
     "id": 4450,
     "en": "falter",
     "kk": "[ˋfɔltɚ]",
-    "zh": "v. 踉蹌;搖晃;結巴地說話",
+    "zh": "v. 踉蹌；搖晃；結巴地說話",
     "unit": 5,
     "example": "Will the economic miracle falter or even collapse?",
     "exampleZh": "這種經濟奇蹟會衰退甚至崩潰嗎？"
@@ -40053,7 +40053,7 @@ const externalVocabularyDB = [
     "id": 4451,
     "en": "fascinate",
     "kk": "[ˋfæsə͵net]",
-    "zh": "v. 迷住,使神魂顛倒",
+    "zh": "v. 迷住、使神魂顛倒",
     "unit": 5,
     "example": "The private lives of movie stars never fail to fascinate.",
     "exampleZh": "電影明星的私生活總為人所津津樂道。"
@@ -40062,7 +40062,7 @@ const externalVocabularyDB = [
     "id": 4452,
     "en": "gnaw",
     "kk": "[nɔ]",
-    "zh": "v. 啃;嚙;折磨",
+    "zh": "v. 啃；嚙；折磨",
     "unit": 5,
     "example": "I am condemned to gnaw!",
     "exampleZh": "我被迫不停地啃噬！"
@@ -40071,7 +40071,7 @@ const externalVocabularyDB = [
     "id": 4453,
     "en": "gobble",
     "kk": "[ˋɡɑbəl]",
-    "zh": "v. 狼吞虎嚥;(火雞)咯咯地叫",
+    "zh": "v. 狼吞虎嚥；(火雞)咯咯地叫",
     "unit": 5,
     "example": "The masses gobble it up.",
     "exampleZh": "群眾吞噬它。"
@@ -40080,7 +40080,7 @@ const externalVocabularyDB = [
     "id": 4454,
     "en": "graze",
     "kk": "[ɡrez]",
-    "zh": "v. 吃草;放牧;擦傷",
+    "zh": "v. 吃草；放牧；擦傷",
     "unit": 5,
     "example": "The land is used by local people to graze their animals.",
     "exampleZh": "這塊地當地人用來放牧。"
@@ -40089,7 +40089,7 @@ const externalVocabularyDB = [
     "id": 4455,
     "en": "heighten",
     "kk": "[ˋhaɪtən]",
-    "zh": "v. 加高;增高;增加",
+    "zh": "v. 加高；增高；增加",
     "unit": 5,
     "example": "Both factors heighten the danger of a hacker break-in.",
     "exampleZh": "這兩個因素提高了駭客入侵的危險。"
@@ -40098,7 +40098,7 @@ const externalVocabularyDB = [
     "id": 4456,
     "en": "impose",
     "kk": "[͵ɪmˋpoz]",
-    "zh": "v. 徵(稅);加(負擔等)於",
+    "zh": "v. 徵(稅)；加(負擔等)於",
     "unit": 5,
     "example": "She didn't want to impose her values on her family.",
     "exampleZh": "她並不想勉強家人接受自己的價值觀。"
@@ -40107,7 +40107,7 @@ const externalVocabularyDB = [
     "id": 4457,
     "en": "induce",
     "kk": "[͵ɪnˋdus]",
-    "zh": "v. 導致;誘導;歸納出",
+    "zh": "v. 導致；誘導；歸納出",
     "unit": 5,
     "example": "Nothing would induce me to take the job.",
     "exampleZh": "沒有什麼能誘使我接受這份工作。"
@@ -40116,7 +40116,7 @@ const externalVocabularyDB = [
     "id": 4458,
     "en": "indulge",
     "kk": "[͵ɪnˋdʌldʒ]",
-    "zh": "v. 沈迷於;滿足(慾望等);縱容",
+    "zh": "v. 沈迷於；滿足(慾望等)；縱容",
     "unit": 5,
     "example": "Only rarely will she indulge in a glass of wine.",
     "exampleZh": "她只是偶爾才會喝上杯葡萄酒。"
@@ -40125,7 +40125,7 @@ const externalVocabularyDB = [
     "id": 4459,
     "en": "inherit",
     "kk": "[͵ɪnˋhɛrət]",
-    "zh": "v. 繼承(傳統,遺產等)",
+    "zh": "v. 繼承(傳統、遺產等)",
     "unit": 5,
     "example": "He has no son to inherit his land.",
     "exampleZh": "他沒有兒子來繼承他的土地。"
@@ -40134,7 +40134,7 @@ const externalVocabularyDB = [
     "id": 4460,
     "en": "inquire",
     "kk": "[͵ɪnˋkwaɪr]",
-    "zh": "v. 訊問;查問;調查",
+    "zh": "v. 訊問；查問；調查",
     "unit": 5,
     "example": "He called them several times to inquire about job possibilities.",
     "exampleZh": "他給他們打了幾次電話打聽就業的可能性。"
@@ -40143,7 +40143,7 @@ const externalVocabularyDB = [
     "id": 4461,
     "en": "insure",
     "kk": "[͵ɪnˋʃʊr]",
-    "zh": "v. 投保;確保",
+    "zh": "v. 投保；確保",
     "unit": 5,
     "example": "We insure against all damage, accidental or otherwise.",
     "exampleZh": "我們的保險包括一切意外或其他損失。"
@@ -40161,7 +40161,7 @@ const externalVocabularyDB = [
     "id": 4463,
     "en": "justify",
     "kk": "[ˋdʒʌstə͵faɪ]",
-    "zh": "v. 證明...是正當的;辯解",
+    "zh": "v. 證明……是正當的；辯解",
     "unit": 5,
     "example": "How can they justify paying such huge salaries?",
     "exampleZh": "他們怎能證明付這麼大筆薪金是正當的呢？"
@@ -40170,7 +40170,7 @@ const externalVocabularyDB = [
     "id": 4464,
     "en": "kindle",
     "kk": "[ˋkɪndəl]",
-    "zh": "v. 點燃;煽動;照亮",
+    "zh": "v. 點燃；煽動；照亮",
     "unit": 5,
     "example": "Kindle allows you to do so.",
     "exampleZh": "Kindle 允許你這樣做。"
@@ -40179,7 +40179,7 @@ const externalVocabularyDB = [
     "id": 4465,
     "en": "lame",
     "kk": "[lem]",
-    "zh": "adj. 使跛腳；v. 使...變得無力",
+    "zh": "adj. 使跛腳；v. 使……變得無力",
     "unit": 5,
     "example": "What do I want with a lame donkey?",
     "exampleZh": "我要一隻瘸腿的驢子幹什麼？"
@@ -40188,7 +40188,7 @@ const externalVocabularyDB = [
     "id": 4466,
     "en": "lessen",
     "kk": "[ˋlɛsən]",
-    "zh": "v. 變小;變少;減輕",
+    "zh": "v. 變小；變少；減輕",
     "unit": 5,
     "example": "Toolbelts free both hands and lessen the risk of dropping hammers.",
     "exampleZh": "工具帶解放了雙手，並減少了錘子掉落的危險。"
@@ -40197,7 +40197,7 @@ const externalVocabularyDB = [
     "id": 4467,
     "en": "linger",
     "kk": "[ˋlɪŋɡɚ]",
-    "zh": "v. 繼續逗留;持續;磨蹭",
+    "zh": "v. 繼續逗留；持續；磨蹭",
     "unit": 5,
     "example": "It's strange how childhood impressions linger.",
     "exampleZh": "童年的印象經久不忘，真是不可思議。"
@@ -40206,7 +40206,7 @@ const externalVocabularyDB = [
     "id": 4468,
     "en": "magnify",
     "kk": "[ˋmæɡnə͵faɪ]",
-    "zh": "v. 放大;擴大;誇張",
+    "zh": "v. 放大；擴大；誇張",
     "unit": 5,
     "example": "Get my magnifying glass.",
     "exampleZh": "讓我把我的放大鏡拿來。"
@@ -40224,7 +40224,7 @@ const externalVocabularyDB = [
     "id": 4470,
     "en": "mediate",
     "kk": "[ˋmidi͵et]",
-    "zh": "v. 調停解決;傳達",
+    "zh": "v. 調停解決；傳達",
     "unit": 5,
     "example": "The Secretary-General was asked to mediate in the dispute.",
     "exampleZh": "有人請秘書長來調解這次紛爭。"
@@ -40233,7 +40233,7 @@ const externalVocabularyDB = [
     "id": 4471,
     "en": "mingle",
     "kk": "[ˋmɪŋɡəl]",
-    "zh": "v. 使混合;使相混;交往",
+    "zh": "v. 使混合；使相混；交往",
     "unit": 5,
     "example": "Tom mingled with the crowd.",
     "exampleZh": "湯姆混入人群中。"
@@ -40251,7 +40251,7 @@ const externalVocabularyDB = [
     "id": 4473,
     "en": "modify",
     "kk": "[ˋmɑdə͵faɪ]",
-    "zh": "v. 更改;修改",
+    "zh": "v. 更改；修改",
     "unit": 5,
     "example": "The club members did agree to modify their recruitment policy.",
     "exampleZh": "俱樂部成員確已同意修改他們的入會政策。"
@@ -40260,7 +40260,7 @@ const externalVocabularyDB = [
     "id": 4474,
     "en": "mourn",
     "kk": "[mɔrn]",
-    "zh": "v. 哀痛;哀悼",
+    "zh": "v. 哀痛；哀悼",
     "unit": 5,
     "example": "They mourn the passing of a simpler way of life.",
     "exampleZh": "他們對逝去的較為淳樸的生活感到惋惜。"
@@ -40269,7 +40269,7 @@ const externalVocabularyDB = [
     "id": 4475,
     "en": "navigate",
     "kk": "[ˋnævə͵ɡet]",
-    "zh": "v. 航行於;飛行於;操縱;導航",
+    "zh": "v. 航行於；飛行於；操縱；導航",
     "unit": 5,
     "example": "Most bats navigate by echolocation.",
     "exampleZh": "大多數蝙蝠透過回聲定位飛行。"
@@ -40278,7 +40278,7 @@ const externalVocabularyDB = [
     "id": 4476,
     "en": "nominate",
     "kk": "[ˋnɑmənət]",
-    "zh": "v. 提名;任命",
+    "zh": "v. 提名；任命",
     "unit": 5,
     "example": "The Security Council can nominate anyone for secretary-general.",
     "exampleZh": "安全理事會可以提名任何人為秘書長。"
@@ -40287,7 +40287,7 @@ const externalVocabularyDB = [
     "id": 4477,
     "en": "notify",
     "kk": "[ˋnotə͵faɪ]",
-    "zh": "v. 通知;公佈",
+    "zh": "v. 通知；公佈",
     "unit": 5,
     "example": "Please notify us if the above is not correct.",
     "exampleZh": "如果上面所說的不正確，請通知我們。"
@@ -40296,7 +40296,7 @@ const externalVocabularyDB = [
     "id": 4478,
     "en": "outdo",
     "kk": "[͵aʊtˋdu]",
-    "zh": "v. 勝過;超越",
+    "zh": "v. 勝過；超越",
     "unit": 5,
     "example": "But he needed to outdo himself.",
     "exampleZh": "但他需要超越自我。"
@@ -40305,7 +40305,7 @@ const externalVocabularyDB = [
     "id": 4479,
     "en": "overdo",
     "kk": "[ˋovɚˋdu]",
-    "zh": "v. 把...做得過分;使過於疲勞",
+    "zh": "v. 把……做得過分；使過於疲勞",
     "unit": 5,
     "example": "It is important never to overdo new exercises.",
     "exampleZh": "重要的是，千萬不要過度進行一項新的鍛鍊。"
@@ -40323,7 +40323,7 @@ const externalVocabularyDB = [
     "id": 4481,
     "en": "overhear",
     "kk": "[ˋovɚˋhir]",
-    "zh": "v. 無意中聽到;偷聽",
+    "zh": "v. 無意中聽到；偷聽",
     "unit": 5,
     "example": "What did Tom overhear?",
     "exampleZh": "湯姆無意中聽到了什麼？"
@@ -40341,7 +40341,7 @@ const externalVocabularyDB = [
     "id": 4483,
     "en": "overwhelm",
     "kk": "[͵ovɚˋwɛlm]",
-    "zh": "v. 壓倒;征服;使受不了",
+    "zh": "v. 壓倒；征服；使受不了",
     "unit": 5,
     "example": "The various pros and cons should not blindly overwhelm one another.",
     "exampleZh": "各種利弊不應盲目地相互壓倒。"
@@ -40350,7 +40350,7 @@ const externalVocabularyDB = [
     "id": 4484,
     "en": "penetrate",
     "kk": "[ˋpɛnə͵tret]",
-    "zh": "v. 穿過;透過;識破;滲透入",
+    "zh": "v. 穿過；透過；識破；滲透入",
     "unit": 5,
     "example": "X-rays can penetrate many objects.",
     "exampleZh": "X射線能穿透很多物體。"
@@ -40359,7 +40359,7 @@ const externalVocabularyDB = [
     "id": 4485,
     "en": "perceive",
     "kk": "[pɚˋsiv]",
-    "zh": "v. 察覺;感知;意識到",
+    "zh": "v. 察覺；感知；意識到",
     "unit": 5,
     "example": "Voters perceive him as a decisive and resolute international leader.",
     "exampleZh": "選民認識到他是一位果斷、堅定的國際領袖。"
@@ -40368,7 +40368,7 @@ const externalVocabularyDB = [
     "id": 4486,
     "en": "perish",
     "kk": "[ˋpɛrɪʃ]",
-    "zh": "v. 消滅;暴卒;枯萎",
+    "zh": "v. 消滅；暴卒；枯萎",
     "unit": 5,
     "example": "Most of the butterflies perish in the first frosts of autumn.",
     "exampleZh": "大多數蝴蝶在秋季初霜來臨時死亡。"
@@ -40377,7 +40377,7 @@ const externalVocabularyDB = [
     "id": 4487,
     "en": "persist",
     "kk": "[pɚˋsɪst]",
-    "zh": "v. 堅持;固執",
+    "zh": "v. 堅持；固執",
     "unit": 5,
     "example": "Existential questions requiring religious answers still persist.",
     "exampleZh": "需要宗教解答的生命問題持續存在著。"
@@ -40386,7 +40386,7 @@ const externalVocabularyDB = [
     "id": 4488,
     "en": "plead",
     "kk": "[plid]",
-    "zh": "v. 為(案件)辯護;懇求",
+    "zh": "v. 為(案件)辯護；懇求",
     "unit": 5,
     "example": "They will plead with him to pull back from confrontation.",
     "exampleZh": "他們會懇求他不要再對抗下去。"
@@ -40395,7 +40395,7 @@ const externalVocabularyDB = [
     "id": 4489,
     "en": "preach",
     "kk": "[pritʃ]",
-    "zh": "v. 佈道;說教",
+    "zh": "v. 佈道；說教",
     "unit": 5,
     "example": "I'm sorry, I didn't mean to preach.",
     "exampleZh": "很抱歉，我並沒有說教的意思。"
@@ -40404,7 +40404,7 @@ const externalVocabularyDB = [
     "id": 4490,
     "en": "prevail",
     "kk": "[prɪˋvel]",
-    "zh": "v. 勝過;優勝;流行",
+    "zh": "v. 勝過；優勝；流行",
     "unit": 5,
     "example": "We hoped that common sense would prevail.",
     "exampleZh": "我們希望常識能佔上風。"
@@ -40413,7 +40413,7 @@ const externalVocabularyDB = [
     "id": 4491,
     "en": "prolong",
     "kk": "[prəˋlɔŋ]",
-    "zh": "v. 延長;拉長;拖延",
+    "zh": "v. 延長；拉長；拖延",
     "unit": 5,
     "example": "What factors shorten, prolong, or amplify the effect of deception?",
     "exampleZh": "什麼因素縮短、延長或放大了欺騙的效果？"
@@ -40422,7 +40422,7 @@ const externalVocabularyDB = [
     "id": 4492,
     "en": "publicize",
     "kk": "[ˋpʌblɪ͵saɪz]",
-    "zh": "v. 宣傳;公佈;廣告",
+    "zh": "v. 宣傳；公佈；廣告",
     "unit": 5,
     "example": "The author appeared on television to publicize her latest book.",
     "exampleZh": "作者出現在電視上宣傳她的新書。"
@@ -40440,7 +40440,7 @@ const externalVocabularyDB = [
     "id": 4494,
     "en": "reap",
     "kk": "[rip]",
-    "zh": "v. 收割;收穫",
+    "zh": "v. 收割；收穫",
     "unit": 5,
     "example": "Machines that reap and thresh in one operation.",
     "exampleZh": "同時完成收割和脫粒的機器。"
@@ -40449,7 +40449,7 @@ const externalVocabularyDB = [
     "id": 4495,
     "en": "reckon",
     "kk": "[ˋrɛkən]",
-    "zh": "v. 認為;把...看作;覺得;測量",
+    "zh": "v. 認為；把……看作；覺得；測量",
     "unit": 5,
     "example": "I reckon she's pulling in over $100 000.",
     "exampleZh": "我估計她要賺10多萬。"
@@ -40458,7 +40458,7 @@ const externalVocabularyDB = [
     "id": 4496,
     "en": "recommend",
     "kk": "[͵rɛkəˋmɛnd]",
-    "zh": "v. 推薦,介紹",
+    "zh": "v. 推薦、介紹",
     "unit": 5,
     "example": "I recommend (that) he see a lawyer.",
     "exampleZh": "我建議他去找個律師。"
@@ -40467,7 +40467,7 @@ const externalVocabularyDB = [
     "id": 4497,
     "en": "refute",
     "kk": "[rɪˋfjut]",
-    "zh": "v. 駁斥;反駁",
+    "zh": "v. 駁斥；反駁",
     "unit": 5,
     "example": "Then, you can refute it.",
     "exampleZh": "那麼，你就可以反駁它。"
@@ -40476,7 +40476,7 @@ const externalVocabularyDB = [
     "id": 4498,
     "en": "rejoice",
     "kk": "[rɪˋdʒɔɪs]",
-    "zh": "v. 欣喜;慶祝",
+    "zh": "v. 欣喜；慶祝",
     "unit": 5,
     "example": "When the war ended, people finally had cause to rejoice.",
     "exampleZh": "戰爭結束，人們終於可以歡欣鼓舞了。"
@@ -40485,7 +40485,7 @@ const externalVocabularyDB = [
     "id": 4499,
     "en": "repay",
     "kk": "[riˋpe]",
-    "zh": "v. 償還;報答",
+    "zh": "v. 償還；報答",
     "unit": 5,
     "example": "I'll repay the money I owe them next week.",
     "exampleZh": "我將在下個星期償還欠他們的錢。"
@@ -40494,7 +40494,7 @@ const externalVocabularyDB = [
     "id": 4500,
     "en": "reproduce",
     "kk": "[͵riprəˋdus]",
-    "zh": "v. 繁殖;複製",
+    "zh": "v. 繁殖；複製",
     "unit": 5,
     "example": "Most reptiles reproduce by laying eggs on land.",
     "exampleZh": "大多數爬行動物透過在陸地產卵進行繁殖。"
@@ -40503,7 +40503,7 @@ const externalVocabularyDB = [
     "id": 4501,
     "en": "resent",
     "kk": "[rɪˋzɛnt]",
-    "zh": "v. 憤慨;怨恨",
+    "zh": "v. 憤慨；怨恨",
     "unit": 5,
     "example": "It is only natural that he should resent you.",
     "exampleZh": "他會怨恨你是很自然的。"
@@ -40512,7 +40512,7 @@ const externalVocabularyDB = [
     "id": 4502,
     "en": "reside",
     "kk": "[rɪˋzaɪd]",
-    "zh": "v. 居住;駐在",
+    "zh": "v. 居住；駐在",
     "unit": 5,
     "example": "I reside at the mission at St. Michael's.",
     "exampleZh": "我住在聖邁克爾教堂的佈道所。"
@@ -40521,7 +40521,7 @@ const externalVocabularyDB = [
     "id": 4503,
     "en": "restrain",
     "kk": "[riˋstren]",
-    "zh": "v. 抑制;約束",
+    "zh": "v. 抑制；約束",
     "unit": 5,
     "example": "The government is taking steps to restrain inflation.",
     "exampleZh": "政府正在採取措施控制通貨膨脹。"
@@ -40530,7 +40530,7 @@ const externalVocabularyDB = [
     "id": 4504,
     "en": "revive",
     "kk": "[rɪˋvaɪv]",
-    "zh": "v. 復甦;恢復生機;使甦醒",
+    "zh": "v. 復甦；恢復生機；使甦醒",
     "unit": 5,
     "example": "The paramedics couldn't revive her.",
     "exampleZh": "護理人員無法使她甦醒。"
@@ -40539,7 +40539,7 @@ const externalVocabularyDB = [
     "id": 4505,
     "en": "revolve",
     "kk": "[riˋvɑlv]",
-    "zh": "v. 旋轉;自轉;以...為中心",
+    "zh": "v. 旋轉；自轉；以……為中心",
     "unit": 5,
     "example": "Girls' groups more frequently revolve around cooperative enterprises.",
     "exampleZh": "女孩們的小群體更多時候圍繞各類協作活動展開。"
@@ -40548,7 +40548,7 @@ const externalVocabularyDB = [
     "id": 4506,
     "en": "secure",
     "kk": "[sɪˋkjʊr]",
-    "zh": "adj. 把...弄牢；v. 關緊",
+    "zh": "adj. 把……弄牢；v. 關緊",
     "unit": 5,
     "example": "Double-check that the ladder is secure.",
     "exampleZh": "再檢查一下梯子是否安全。"
@@ -40557,7 +40557,7 @@ const externalVocabularyDB = [
     "id": 4507,
     "en": "sharpen",
     "kk": "[ˋʃɑrpən]",
-    "zh": "v. 削尖,磨快",
+    "zh": "v. 削尖、磨快",
     "unit": 5,
     "example": "He needs to sharpen up before the Olympic trials.",
     "exampleZh": "在奧運會選拔賽之前，他需要進一步提高自己。"
@@ -40566,7 +40566,7 @@ const externalVocabularyDB = [
     "id": 4508,
     "en": "shatter",
     "kk": "[ˋʃætɚ]",
-    "zh": "v. 粉碎;砸碎",
+    "zh": "v. 粉碎；砸碎",
     "unit": 5,
     "example": "A failure would shatter the hopes of many people.",
     "exampleZh": "一次失敗會粉碎很多人的希望。"
@@ -40575,7 +40575,7 @@ const externalVocabularyDB = [
     "id": 4509,
     "en": "slay",
     "kk": "[sle]",
-    "zh": "v. 殺死;殺害",
+    "zh": "v. 殺死；殺害",
     "unit": 5,
     "example": "Those old movies still slay me!",
     "exampleZh": "那些老影片依舊讓我著迷！"
@@ -40593,7 +40593,7 @@ const externalVocabularyDB = [
     "id": 4511,
     "en": "soften",
     "kk": "[ˋsɑfən]",
-    "zh": "v. 使變柔軟;使變和藹",
+    "zh": "v. 使變柔軟；使變和藹",
     "unit": 5,
     "example": "Fry the onions until they soften.",
     "exampleZh": "把洋蔥炒軟。"
@@ -40611,7 +40611,7 @@ const externalVocabularyDB = [
     "id": 4513,
     "en": "startle",
     "kk": "[ˋstɑrtəl]",
-    "zh": "v. 使驚嚇;使驚奇",
+    "zh": "v. 使驚嚇；使驚奇",
     "unit": 5,
     "example": "Hereditary hyperekplexia is also called startle disease.",
     "exampleZh": "遺傳性過度驚駭也被稱為驚嚇病。"
@@ -40620,16 +40620,16 @@ const externalVocabularyDB = [
     "id": 4514,
     "en": "straighten",
     "kk": "[ˋstretən]",
-    "zh": "v. 把...弄直;澄清",
+    "zh": "v. 把……弄直；澄清",
     "unit": 5,
-    "example": "Can you use the word straighten in a sentence?",
-    "exampleZh": "你能在句子中使用「澄清」這個詞嗎？"
+    "example": "He paused before the mirror to straighten his necktie before the interview.",
+    "exampleZh": "面試前他在鏡子前停下腳步，把領帶整理齊整。"
   },
   {
     "id": 4515,
     "en": "stun",
     "kk": "[stʌn]",
-    "zh": "v. 使昏迷;使大吃一驚",
+    "zh": "v. 使昏迷；使大吃一驚",
     "unit": 5,
     "example": "A guard zapped him with the stun gun.",
     "exampleZh": "一名警衛用眩暈槍擊中了他。"
@@ -40638,7 +40638,7 @@ const externalVocabularyDB = [
     "id": 4516,
     "en": "submit",
     "kk": "[səbˋmɪt]",
-    "zh": "v. 提交;呈遞;使服從",
+    "zh": "v. 提交；呈遞；使服從",
     "unit": 5,
     "example": "Job applicants have to submit a specimen of handwriting.",
     "exampleZh": "求職者必須提交一份筆跡樣本。"
@@ -40656,7 +40656,7 @@ const externalVocabularyDB = [
     "id": 4518,
     "en": "supervise",
     "kk": "[ˋsupɚ͵vaɪz]",
-    "zh": "v. 監督;管理;指導",
+    "zh": "v. 監督；管理；指導",
     "unit": 5,
     "example": "I supervise the packing of all mail orders.",
     "exampleZh": "我監督所有郵購商品的包裝。"
@@ -40665,7 +40665,7 @@ const externalVocabularyDB = [
     "id": 4519,
     "en": "suppress",
     "kk": "[səˋprɛs]",
-    "zh": "v. 鎮壓;壓制;抑制",
+    "zh": "v. 鎮壓；壓制；抑制",
     "unit": 5,
     "example": "They suppress the ingenuity of our people and businesses.",
     "exampleZh": "它們抑制我們的人民和企業的創造力。"
@@ -40683,7 +40683,7 @@ const externalVocabularyDB = [
     "id": 4521,
     "en": "sustain",
     "kk": "[səˋsten]",
-    "zh": "v. 支撐;承受",
+    "zh": "v. 支撐；承受",
     "unit": 5,
     "example": "Which planets can sustain life?",
     "exampleZh": "哪些行星可以維持生命的存在？"
@@ -40692,7 +40692,7 @@ const externalVocabularyDB = [
     "id": 4522,
     "en": "sympathize",
     "kk": "[ˋsɪmpə͵θaɪz]",
-    "zh": "v. 同情;憐憫",
+    "zh": "v. 同情；憐憫",
     "unit": 5,
     "example": "I find it very hard to sympathize with him.",
     "exampleZh": "我覺得很難去同情他。"
@@ -40701,7 +40701,7 @@ const externalVocabularyDB = [
     "id": 4523,
     "en": "tackle",
     "kk": "[ˋtækəl]",
-    "zh": "v. 著手對付(或處理);擒抱並摔倒",
+    "zh": "v. 著手對付(或處理)；擒抱並摔倒",
     "unit": 5,
     "example": "We were awarded a penalty after a late tackle.",
     "exampleZh": "對方剷球犯規後，我們得到了一個點球。"
@@ -40710,7 +40710,7 @@ const externalVocabularyDB = [
     "id": 4524,
     "en": "tempt",
     "kk": "[tɛmpt]",
-    "zh": "v. 引誘;誘惑",
+    "zh": "v. 引誘；誘惑",
     "unit": 5,
     "example": "Cars like that may tempt drivers to speed.",
     "exampleZh": "那樣的汽車可能會引誘司機超速行駛。"
@@ -40728,7 +40728,7 @@ const externalVocabularyDB = [
     "id": 4526,
     "en": "vibrate",
     "kk": "[ˋvaɪbret]",
-    "zh": "v. 顫動;振動;震動",
+    "zh": "v. 顫動；振動；震動",
     "unit": 5,
     "example": "The ground shook and the cliffs seemed to vibrate.",
     "exampleZh": "大地搖晃，那些懸崖似乎在顫動。"
@@ -40746,7 +40746,7 @@ const externalVocabularyDB = [
     "id": 4528,
     "en": "wither",
     "kk": "[ˋwɪðɚ]",
-    "zh": "v. 枯萎;凋謝",
+    "zh": "v. 枯萎；凋謝",
     "unit": 5,
     "example": "In autumn the leaves wither and fall off the trees.",
     "exampleZh": "秋天，樹葉枯萎並從樹上落下來。"
@@ -40782,7 +40782,7 @@ const externalVocabularyDB = [
     "id": 4532,
     "en": "beforehand",
     "kk": "[bɪˋfɔr͵hænd]",
-    "zh": "adv. 事先;提前地",
+    "zh": "adv. 事先；提前地",
     "unit": 5,
     "example": "I wish we'd known about it beforehand.",
     "exampleZh": "要是我們預先知道這事就好了。"
@@ -40836,7 +40836,7 @@ const externalVocabularyDB = [
     "id": 4538,
     "en": "hence",
     "kk": "[hɛns]",
-    "zh": "adv. 因此;由此",
+    "zh": "adv. 因此；由此",
     "unit": 5,
     "example": "Hence we avoid the dreaded paralyses by analysis.",
     "exampleZh": "因此，我們避免了可怕的分析癱瘓。"
@@ -40863,7 +40863,7 @@ const externalVocabularyDB = [
     "id": 4541,
     "en": "nonetheless",
     "kk": "[͵nʌnðəˋlɛs]",
-    "zh": "adv. 但是;仍然",
+    "zh": "adv. 但是；仍然",
     "unit": 5,
     "example": "Nonetheless, it's smart to exercise caution.",
     "exampleZh": "儘管如此，保持謹慎是明智的。"
@@ -40881,7 +40881,7 @@ const externalVocabularyDB = [
     "id": 4543,
     "en": "outward",
     "kk": "[ˋaʊtwɚd]",
-    "zh": "adj. 向外；adv. 出海,出港",
+    "zh": "adj. 向外；adv. 出海、出港",
     "unit": 5,
     "example": "The top door opened outward.",
     "exampleZh": "最上面的門向外開著。"
@@ -40890,7 +40890,7 @@ const externalVocabularyDB = [
     "id": 4544,
     "en": "outwards",
     "kk": "[ˋaʊtwɚdz]",
-    "zh": "adv. 向外;出海,出港;顯而易見地",
+    "zh": "adv. 向外；出海、出港；顯而易見地",
     "unit": 5,
     "example": "Now pull the corners outwards and downwards.",
     "exampleZh": "現在向下向外拉開這個角。"
@@ -40908,7 +40908,7 @@ const externalVocabularyDB = [
     "id": 4546,
     "en": "undoubtedly",
     "kk": "[ənˋdaʊtɪdli]",
-    "zh": "adv. 毫無疑問地;肯定地",
+    "zh": "adv. 毫無疑問地；肯定地",
     "unit": 5,
     "example": "Mozart's compositions are undoubtedly among the world's greatest.",
     "exampleZh": "莫扎特的作品無疑位列於世界上最偉大的作品之中。"
@@ -40926,7 +40926,7 @@ const externalVocabularyDB = [
     "id": 4548,
     "en": "upwards",
     "kk": "[ˋʌpwɚdz]",
-    "zh": "adv. 向上地,朝上",
+    "zh": "adv. 向上地、朝上",
     "unit": 5,
     "example": "'There,' said Jack, pointing upwards.",
     "exampleZh": "“那兒，”傑克往上指著說。"
@@ -40935,7 +40935,7 @@ const externalVocabularyDB = [
     "id": 4549,
     "en": "versus",
     "kk": "[ˋvɝsəs]",
-    "zh": "prep. (常略作v.或vs.)與...相對",
+    "zh": "prep. (常略作v.或vs.)與……相對",
     "unit": 5,
     "example": "It is France versus Brazil in the final.",
     "exampleZh": "決賽是法國隊對巴西隊。"
@@ -40944,7 +40944,7 @@ const externalVocabularyDB = [
     "id": 4550,
     "en": "via",
     "kk": "[ˋvaɪə]",
-    "zh": "prep. 經由;取道;憑藉",
+    "zh": "prep. 經由；取道；憑藉",
     "unit": 5,
     "example": "We flew home via Dubai.",
     "exampleZh": "我們乘飛機經迪拜回國。"
@@ -40953,7 +40953,7 @@ const externalVocabularyDB = [
     "id": 4551,
     "en": "lest",
     "kk": "[lɛst]",
-    "zh": "conj. 惟恐;免得;擔心",
+    "zh": "conj. 惟恐；免得；擔心",
     "unit": 5,
     "example": "They intervened promptly lest their dispute escalate.",
     "exampleZh": "他們迅速介入，以免爭端升級。"
@@ -40962,7 +40962,7 @@ const externalVocabularyDB = [
     "id": 4552,
     "en": "whereas",
     "kk": "[wɛˋræz]",
-    "zh": "conj. (常用在句首)反之;而",
+    "zh": "conj. (常用在句首)反之；而",
     "unit": 5,
     "example": "Some of the studies show positive results, whereas others do not.",
     "exampleZh": "有一些研究結果令人滿意，然而其他的則不然。"
@@ -40980,7 +40980,7 @@ const externalVocabularyDB = [
     "id": 4554,
     "en": "academy",
     "kk": "[əˋkædəmi]",
-    "zh": "n. 學院;大學;研究院",
+    "zh": "n. 學院；大學；研究院",
     "unit": 5,
     "example": "The Academy Awards appear to validate his career.",
     "exampleZh": "這些奧斯卡金像獎看來證實了他的職業生涯的價值。"
@@ -40998,7 +40998,7 @@ const externalVocabularyDB = [
     "id": 4556,
     "en": "acknowledgement",
     "kk": "[ækˋnɑlɪdʒmənt]",
-    "zh": "n. 承認;確認;致謝;回音;公證狀",
+    "zh": "n. 承認；確認；致謝；回音；公證狀",
     "unit": 5,
     "example": "The flowers were a small acknowledgement of your kindness.",
     "exampleZh": "這些花聊表謝意，感謝你的好心幫助。"
@@ -41016,7 +41016,7 @@ const externalVocabularyDB = [
     "id": 4558,
     "en": "admiral",
     "kk": "[ˋædmɚəl]",
-    "zh": "n. 艦隊司令; 海軍上將",
+    "zh": "n. 艦隊司令； 海軍上將",
     "unit": 5,
     "example": "The admiral visited the ships under his command.",
     "exampleZh": "艦隊司令視察了他所統率的軍艦。"
@@ -41052,16 +41052,16 @@ const externalVocabularyDB = [
     "id": 4562,
     "en": "advertiser",
     "kk": "[ˋædvɚ͵taɪzɚ]",
-    "zh": "n. 刊登廣告者;廣告客戶",
+    "zh": "n. 刊登廣告者；廣告客戶",
     "unit": 5,
-    "example": "Can you use the word advertiser in a sentence?",
-    "exampleZh": "你能在句子中使用「廣告客戶」這個詞嗎？"
+    "example": "The digital magazine allows an advertiser to target specific demographic segments.",
+    "exampleZh": "這份數位雜誌允許廣告客戶鎖定特定族群進行宣傳。"
   },
   {
     "id": 4563,
     "en": "affection",
     "kk": "[əˋfɛkʃən]",
-    "zh": "n. 愛慕;鍾愛",
+    "zh": "n. 愛慕；鍾愛",
     "unit": 5,
     "example": "She thought of him with affection.",
     "exampleZh": "她懷著喜愛想起了他。"
@@ -41097,7 +41097,7 @@ const externalVocabularyDB = [
     "id": 4567,
     "en": "airway",
     "kk": "[ˋɛr͵we]",
-    "zh": "n. 風道;氣道;航空公司",
+    "zh": "n. 風道；氣道；航空公司",
     "unit": 5,
     "example": "First check that the accident victim doesn't have an obstructed airway.",
     "exampleZh": "首先要確保事故受傷者的氣道通暢。"
@@ -41106,7 +41106,7 @@ const externalVocabularyDB = [
     "id": 4568,
     "en": "aisle",
     "kk": "[aɪl]",
-    "zh": "n. 通道;走道",
+    "zh": "n. 通道；走道",
     "unit": 5,
     "example": "The aisle was floored with ancient bricks.",
     "exampleZh": "過道由古舊的磚塊鋪就。"
@@ -41169,7 +41169,7 @@ const externalVocabularyDB = [
     "id": 4575,
     "en": "altitude",
     "kk": "[ˋæltə͵tud]",
-    "zh": "n. 高度;海拔",
+    "zh": "n. 高度；海拔",
     "unit": 5,
     "example": "They were flying at high altitude.",
     "exampleZh": "他們正在高空飛行。"
@@ -41187,7 +41187,7 @@ const externalVocabularyDB = [
     "id": 4577,
     "en": "anthem",
     "kk": "[ˋænθəm]",
-    "zh": "n. 國歌;頌歌",
+    "zh": "n. 國歌；頌歌",
     "unit": 5,
     "example": "The band played the Czech anthem.",
     "exampleZh": "這支樂隊演奏了捷克國歌。"
@@ -41205,7 +41205,7 @@ const externalVocabularyDB = [
     "id": 4579,
     "en": "applause",
     "kk": "[əpˋlɔz]",
-    "zh": "n. 鼓掌歡迎,喝采",
+    "zh": "n. 鼓掌歡迎、喝采",
     "unit": 5,
     "example": "Applause rang through the hall.",
     "exampleZh": "掌聲響徹整個大廳。"
@@ -41232,7 +41232,7 @@ const externalVocabularyDB = [
     "id": 4582,
     "en": "arena",
     "kk": "[ɚˋinə]",
-    "zh": "n. 體育場;競技場",
+    "zh": "n. 體育場；競技場",
     "unit": 5,
     "example": "A 20,000-seat arena with a retractable roof is planned.",
     "exampleZh": "一個可容納2萬名觀眾、帶伸縮頂棚的競技場正在規劃中。"
@@ -41241,7 +41241,7 @@ const externalVocabularyDB = [
     "id": 4583,
     "en": "armor",
     "kk": "[ˋɑrmɚ]",
-    "zh": "v. 盔甲;裝甲;(動；n. 植物)保護層",
+    "zh": "v. 盔甲；裝甲；(動；n. 植物)保護層",
     "unit": 5,
     "example": "The new armor is not pure liquid, of course.",
     "exampleZh": "當然，這種新型的裝甲並不是純液體。"
@@ -41250,7 +41250,7 @@ const externalVocabularyDB = [
     "id": 4584,
     "en": "ass",
     "kk": "[æs]",
-    "zh": "n. 驢子;笨蛋;太自負的人",
+    "zh": "n. 驢子；笨蛋；太自負的人",
     "unit": 5,
     "example": "I jumped back and fell on my ass.",
     "exampleZh": "我往後一跳，摔了個屁股墩。"
@@ -41277,7 +41277,7 @@ const externalVocabularyDB = [
     "id": 4587,
     "en": "astonishment",
     "kk": "[əˋstɑnɪʃmənt]",
-    "zh": "n. 驚訝;驚愕",
+    "zh": "n. 驚訝；驚愕",
     "unit": 5,
     "example": "To her astonishment, he smiled.",
     "exampleZh": "使她驚訝的是，他笑了。"
@@ -41286,7 +41286,7 @@ const externalVocabularyDB = [
     "id": 4588,
     "en": "astronaut",
     "kk": "[ˋæstrə͵nɑt]",
-    "zh": "n. 太空人,宇航員",
+    "zh": "n. 太空人、宇航員",
     "unit": 5,
     "example": "An astronaut took it from space.",
     "exampleZh": "一名宇航員從太空把它帶了回來。"
@@ -41313,7 +41313,7 @@ const externalVocabularyDB = [
     "id": 4591,
     "en": "attendance",
     "kk": "[əˋtɛndəns]",
-    "zh": "n. 出席;出席人數;侍候",
+    "zh": "n. 出席；出席人數；侍候",
     "unit": 5,
     "example": "His attendance record was spotty.",
     "exampleZh": "他的出勤記錄時好時差。"
@@ -41322,7 +41322,7 @@ const externalVocabularyDB = [
     "id": 4592,
     "en": "auditorium",
     "kk": "[͵ɔdəˋtɔriəm]",
-    "zh": "n. 會堂;禮堂",
+    "zh": "n. 會堂；禮堂",
     "unit": 5,
     "example": "Schreiber addressed an auditorium overflowing with journalists.",
     "exampleZh": "施賴伯向擠滿了新聞記者的觀眾席致辭。"
@@ -41331,7 +41331,7 @@ const externalVocabularyDB = [
     "id": 4593,
     "en": "auxiliary",
     "kk": "[ɑɡˋzɪljɚi]",
-    "zh": "n. 輔助者;助動詞",
+    "zh": "n. 輔助者；助動詞",
     "unit": 5,
     "example": "Esperanto was invented as an auxiliary language.",
     "exampleZh": "世界語是作為輔助語發明的。"
@@ -41358,7 +41358,7 @@ const externalVocabularyDB = [
     "id": 4596,
     "en": "backbone",
     "kk": "[ˋbæk͵bon]",
-    "zh": "n. 脊柱;支柱;骨幹",
+    "zh": "n. 脊柱；支柱；骨幹",
     "unit": 5,
     "example": "They ain't got any backbone.",
     "exampleZh": "她們沒有骨氣。"
@@ -41367,7 +41367,7 @@ const externalVocabularyDB = [
     "id": 4597,
     "en": "badge",
     "kk": "[bædʒ]",
-    "zh": "n. 徽章;證章",
+    "zh": "n. 徽章；證章",
     "unit": 5,
     "example": "All delegates must wear a badge.",
     "exampleZh": "所有代表都要佩戴徽章。"
@@ -41394,7 +41394,7 @@ const externalVocabularyDB = [
     "id": 4600,
     "en": "bandit",
     "kk": "[ˋbændət]",
-    "zh": "n. 強盜;土匪",
+    "zh": "n. 強盜；土匪",
     "unit": 5,
     "example": "Jesse was an outlaw, a bandit, a criminal.",
     "exampleZh": "傑西曾是個逃犯、土匪、罪犯。"
@@ -41403,7 +41403,7 @@ const externalVocabularyDB = [
     "id": 4601,
     "en": "banner",
     "kk": "[ˋbænɚ]",
-    "zh": "n. 旗幟;橫幅;大標題",
+    "zh": "n. 旗幟；橫幅；大標題",
     "unit": 5,
     "example": "Our group was awarded a red banner.",
     "exampleZh": "我們小組被授予了一面紅旗。"
@@ -41448,7 +41448,7 @@ const externalVocabularyDB = [
     "id": 4606,
     "en": "batch",
     "kk": "[bætʃ]",
-    "zh": "n. 一批;一群;一爐;一團",
+    "zh": "n. 一批；一群；一爐；一團",
     "unit": 5,
     "example": "I baked a batch of cookies.",
     "exampleZh": "我烤了一批小甜餅。"
@@ -41466,7 +41466,7 @@ const externalVocabularyDB = [
     "id": 4608,
     "en": "bazaar",
     "kk": "[bəˋzɑr]",
-    "zh": "n. (中東的)市場;商店街;義賣",
+    "zh": "n. (中東的)市場；商店街；義賣",
     "unit": 5,
     "example": "Kamal was a vendor in Cairo's open-air bazaar.",
     "exampleZh": "卡莫爾曾是開羅露天集市的攤販。"
@@ -41484,7 +41484,7 @@ const externalVocabularyDB = [
     "id": 4610,
     "en": "belongings",
     "kk": "[bɪˋlɔŋɪŋz]",
-    "zh": "n. 財產;攜帶物品",
+    "zh": "n. 財產；攜帶物品",
     "unit": 5,
     "example": "She gathered up her belongings.",
     "exampleZh": "她收拾起她的私人物品。"
@@ -41583,7 +41583,7 @@ const externalVocabularyDB = [
     "id": 4621,
     "en": "blues",
     "kk": "[bluz]",
-    "zh": "n. 藍調;憂鬱",
+    "zh": "n. 藍調；憂鬱",
     "unit": 5,
     "example": "Can white girls sing the blues?",
     "exampleZh": "白人女孩會唱藍調嗎？"
@@ -41601,7 +41601,7 @@ const externalVocabularyDB = [
     "id": 4623,
     "en": "bodyguard",
     "kk": "[ˋbɑdi͵ɡɑrd]",
-    "zh": "n. 保鏢;護衛隊",
+    "zh": "n. 保鏢；護衛隊",
     "unit": 5,
     "example": "Are you my bodyguard?",
     "exampleZh": "你是我的保鏢。"
@@ -41628,7 +41628,7 @@ const externalVocabularyDB = [
     "id": 4626,
     "en": "bonus",
     "kk": "[ˋbonəs]",
-    "zh": "n. 獎金;額外津貼;分紅",
+    "zh": "n. 獎金；額外津貼；分紅",
     "unit": 5,
     "example": "The committee backtracked by scrapping the controversial bonus system.",
     "exampleZh": "該委員會改變主意，廢除充滿爭議性的獎金系統。"
@@ -41646,7 +41646,7 @@ const externalVocabularyDB = [
     "id": 4628,
     "en": "booth",
     "kk": "[buθ]",
-    "zh": "n. (有篷的)貨攤;崗亭;(餐廳等)雅座",
+    "zh": "n. (有篷的)貨攤；崗亭；(餐廳等)雅座",
     "unit": 5,
     "example": "Sami sat in the booth.",
     "exampleZh": "薩米坐在包廂裡。"
@@ -41655,7 +41655,7 @@ const externalVocabularyDB = [
     "id": 4629,
     "en": "boredom",
     "kk": "[ˋbɔrdəm]",
-    "zh": "n. 無聊;厭倦",
+    "zh": "n. 無聊；厭倦",
     "unit": 5,
     "example": "He had given up attending lectures out of sheer boredom.",
     "exampleZh": "他已經不再去聽講座了，純粹出於厭倦。"
@@ -41664,7 +41664,7 @@ const externalVocabularyDB = [
     "id": 4630,
     "en": "bosom",
     "kk": "[ˋbʊzəm]",
-    "zh": "n. 胸;乳房;(衣服的)襟;胸懷",
+    "zh": "n. 胸；乳房；(衣服的)襟；胸懷",
     "unit": 5,
     "example": "They were bosom buddies.",
     "exampleZh": "他們曾是知心的夥伴。"
@@ -41673,7 +41673,7 @@ const externalVocabularyDB = [
     "id": 4631,
     "en": "botany",
     "kk": "[ˋbɑtəni]",
-    "zh": "n. 植物學;(總稱)一個地區的植物",
+    "zh": "n. 植物學；(總稱)一個地區的植物",
     "unit": 5,
     "example": "They shared a common interest in botany.",
     "exampleZh": "他們都對植物學感興趣。"
@@ -41682,7 +41682,7 @@ const externalVocabularyDB = [
     "id": 4632,
     "en": "boulevard",
     "kk": "[ˋbʊlə͵vɑrd]",
-    "zh": "n. 林蔭大道;大馬路",
+    "zh": "n. 林蔭大道；大馬路",
     "unit": 5,
     "example": "Why did the animal activists gather on Hollywood Boulevard?",
     "exampleZh": "為什麼動物保護者們聚集在好萊塢大道？"
@@ -41700,7 +41700,7 @@ const externalVocabularyDB = [
     "id": 4634,
     "en": "boundary",
     "kk": "[ˋbaʊndɚi]",
-    "zh": "n. 邊界;分界線;界限",
+    "zh": "n. 邊界；分界線；界限",
     "unit": 5,
     "example": "The Bow Brook forms the western boundary of the wood.",
     "exampleZh": "鮑溪成了樹林的西邊界。"
@@ -41709,7 +41709,7 @@ const externalVocabularyDB = [
     "id": 4635,
     "en": "bowel",
     "kk": "[ˋbaʊəl]",
-    "zh": "n. 腸;內部;深處",
+    "zh": "n. 腸；內部；深處",
     "unit": 5,
     "example": "The boy was suffering from a bowel obstruction.",
     "exampleZh": "那男孩當時在受腸梗阻之苦。"
@@ -41718,7 +41718,7 @@ const externalVocabularyDB = [
     "id": 4636,
     "en": "boxer",
     "kk": "[ˋbɑksɚ]",
-    "zh": "n. 拳擊手;拳師;拳師狗",
+    "zh": "n. 拳擊手；拳師；拳師狗",
     "unit": 5,
     "example": "The boxer jabbed at his opponent.",
     "exampleZh": "拳擊手向對手猛擊。"
@@ -41727,7 +41727,7 @@ const externalVocabularyDB = [
     "id": 4637,
     "en": "boxing",
     "kk": "[ˋbɑksɪŋ]",
-    "zh": "n. 拳擊;拳術;裝箱",
+    "zh": "n. 拳擊；拳術；裝箱",
     "unit": 5,
     "example": "I chose boxing because it is my favourite sport.",
     "exampleZh": "我選擇了拳擊，因為那是我最喜愛的運動。"
@@ -41747,8 +41747,8 @@ const externalVocabularyDB = [
     "kk": "[bres]",
     "zh": "v. 作好準備、支撐；n. 支撐物、支架",
     "unit": 5,
-    "example": "Can you use the word brace in a sentence?",
-    "exampleZh": "你能在句子中使用「(牙齒)矯正器」這個詞嗎？"
+    "example": "Coastal communities were advised to brace for the incoming tropical cyclone.",
+    "exampleZh": "沿海社區收到通知，務必做好應對即將來襲的熱帶氣旋的準備。"
   },
   {
     "id": 4640,
@@ -41763,7 +41763,7 @@ const externalVocabularyDB = [
     "id": 4641,
     "en": "breadth",
     "kk": "[brɛdθ]",
-    "zh": "n. 寬度;幅度;寬宏",
+    "zh": "n. 寬度；幅度；寬宏",
     "unit": 5,
     "example": "We won by a hair's breadth.",
     "exampleZh": "我們以些微之差贏了對手。"
@@ -41826,7 +41826,7 @@ const externalVocabularyDB = [
     "id": 4648,
     "en": "brotherhood",
     "kk": "[ˋbrʌðɚ͵hʊd]",
-    "zh": "n. 兄弟關係;同志關係",
+    "zh": "n. 兄弟關係；同志關係",
     "unit": 5,
     "example": "We have the seed of brotherhood, love, compassion, insight.",
     "exampleZh": "我們有手足情誼、愛、同情和洞察力的種子。"
@@ -41862,7 +41862,7 @@ const externalVocabularyDB = [
     "id": 4652,
     "en": "bulk",
     "kk": "[bʌlk]",
-    "zh": "n. 體積;容積;大塊;大多數",
+    "zh": "n. 體積；容積；大塊；大多數",
     "unit": 5,
     "example": "It's cheaper to buy in bulk.",
     "exampleZh": "大批購買便宜些。"
@@ -41907,7 +41907,7 @@ const externalVocabularyDB = [
     "id": 4657,
     "en": "calf",
     "kk": "[kæf]",
-    "zh": "n. 小牛;(鯨、象等的)幼兒;小腿",
+    "zh": "n. 小牛；(鯨、象等的)幼兒；小腿",
     "unit": 5,
     "example": "The calf lapped up the bucket of milk.",
     "exampleZh": "牛犢把那桶牛奶津津有味地喝光了。"
@@ -41916,7 +41916,7 @@ const externalVocabularyDB = [
     "id": 4658,
     "en": "calligraphy",
     "kk": "[kəˋlɪɡrəfi]",
-    "zh": "n. 書法;筆跡",
+    "zh": "n. 書法；筆跡",
     "unit": 5,
     "example": "His calligraphy is vigorous and forceful.",
     "exampleZh": "他的書法蒼勁有力。"
@@ -41925,7 +41925,7 @@ const externalVocabularyDB = [
     "id": 4659,
     "en": "canal",
     "kk": "[kəˋnæl]",
-    "zh": "n. 運河;河渠",
+    "zh": "n. 運河；河渠",
     "unit": 5,
     "example": "The canal is open to shipping.",
     "exampleZh": "運河可以通航了。"
@@ -41943,7 +41943,7 @@ const externalVocabularyDB = [
     "id": 4661,
     "en": "carbon",
     "kk": "[ˋkɑrbən]",
-    "zh": "n. 碳;複寫紙",
+    "zh": "n. 碳；複寫紙",
     "unit": 5,
     "example": "Carbon has a valency of 4.",
     "exampleZh": "碳的化合價是4價。"
@@ -41952,7 +41952,7 @@ const externalVocabularyDB = [
     "id": 4662,
     "en": "cardboard",
     "kk": "[ˋkɑrd͵bɔrd]",
-    "zh": "n. 硬紙板;卡紙板",
+    "zh": "n. 硬紙板；卡紙板",
     "unit": 5,
     "example": "I made a full-size cardboard model.",
     "exampleZh": "我做了一個和原物一樣大小的硬紙板模型。"
@@ -41961,7 +41961,7 @@ const externalVocabularyDB = [
     "id": 4663,
     "en": "caretaker",
     "kk": "[ˋkɛr͵tekɚ]",
-    "zh": "n. 照顧者;管理人",
+    "zh": "n. 照顧者；管理人",
     "unit": 5,
     "example": "Tom is a caretaker.",
     "exampleZh": "湯姆是一名看門人。"
@@ -41970,7 +41970,7 @@ const externalVocabularyDB = [
     "id": 4664,
     "en": "carnation",
     "kk": "[kɑrˋneʃən]",
-    "zh": "n. 康乃馨;淡紅色",
+    "zh": "n. 康乃馨；淡紅色",
     "unit": 5,
     "example": "We all wear a green carnation.",
     "exampleZh": "我們都帶著綠色的康乃馨。"
@@ -41979,7 +41979,7 @@ const externalVocabularyDB = [
     "id": 4665,
     "en": "carnival",
     "kk": "[ˋkɑrnəvəl]",
-    "zh": "n. 狂歡節;嘉年華會",
+    "zh": "n. 狂歡節；嘉年華會",
     "unit": 5,
     "example": "There is a local carnival every year.",
     "exampleZh": "當地每年都舉行狂歡節。"
@@ -41997,7 +41997,7 @@ const externalVocabularyDB = [
     "id": 4667,
     "en": "carton",
     "kk": "[ˋkɑrtən]",
-    "zh": "n. 紙盒;紙板箱",
+    "zh": "n. 紙盒；紙板箱",
     "unit": 5,
     "example": "You need to click on the milk carton.",
     "exampleZh": "你需要按一下牛奶紙盒。"
@@ -42033,7 +42033,7 @@ const externalVocabularyDB = [
     "id": 4671,
     "en": "celebrity",
     "kk": "[səˋlɛbrɪti]",
-    "zh": "n. 名人;名流",
+    "zh": "n. 名人；名流",
     "unit": 5,
     "example": "She achieved celebrity status overnight.",
     "exampleZh": "她一夜之間成為名流。"
@@ -42069,7 +42069,7 @@ const externalVocabularyDB = [
     "id": 4675,
     "en": "cellphone",
     "kk": "[ˋsɛlfon]",
-    "zh": "n. 手機,大哥大",
+    "zh": "n. 手機、大哥大",
     "unit": 5,
     "example": "I talked to her on my cellphone.",
     "exampleZh": "我用手機跟她通了話。"
@@ -42078,7 +42078,7 @@ const externalVocabularyDB = [
     "id": 4676,
     "en": "cell-phone",
     "kk": "[sɛl fon]",
-    "zh": "n. 手機,大哥大",
+    "zh": "n. 手機、大哥大",
     "unit": 5,
     "example": "May I use your cell phone?",
     "exampleZh": "我能用你的手機嗎？"
@@ -42087,7 +42087,7 @@ const externalVocabularyDB = [
     "id": 4677,
     "en": "cellular phone",
     "kk": "[ˋsɛljəlɚ fon]",
-    "zh": "n. 手機,大哥大",
+    "zh": "n. 手機、大哥大",
     "unit": 5,
     "example": "Now you add a cellular phone number to the XML.",
     "exampleZh": "現在你向 XML 新增一個行動電話號碼。"
@@ -42150,7 +42150,7 @@ const externalVocabularyDB = [
     "id": 4684,
     "en": "chairwoman",
     "kk": "[ˋtʃɛr͵wʊmən]",
-    "zh": "n. 女主席;女議長",
+    "zh": "n. 女主席；女議長",
     "unit": 5,
     "example": "The chairwoman is up against the greatest challenge to her position.",
     "exampleZh": "女主席面臨她職位的最大挑戰。"
@@ -42186,7 +42186,7 @@ const externalVocabularyDB = [
     "id": 4688,
     "en": "check-in",
     "kk": "[tʃɛk ɪn]",
-    "zh": "n. 辦理投宿(或登機)手續;報到",
+    "zh": "n. 辦理投宿(或登機)手續；報到",
     "unit": 5,
     "example": "Do you know your check-in time?",
     "exampleZh": "你知道辦理登機手續的時間嗎？"
@@ -42195,7 +42195,7 @@ const externalVocabularyDB = [
     "id": 4689,
     "en": "check-out",
     "kk": "[tʃɛk aʊt]",
-    "zh": "n. 檢查;調查;付款退租;下班離開",
+    "zh": "n. 檢查；調查；付款退租；下班離開",
     "unit": 5,
     "example": "Check out the hats.",
     "exampleZh": "檢查一下這些帽子。"
@@ -42204,7 +42204,7 @@ const externalVocabularyDB = [
     "id": 4690,
     "en": "checkup",
     "kk": "[ˋtʃɛk͵ʌp]",
-    "zh": "n. 檢查;體檢",
+    "zh": "n. 檢查；體檢",
     "unit": 5,
     "example": "A man goes to his doctor for a complete checkup.",
     "exampleZh": "一個男人去看大夫，做一個全面檢查。"
@@ -42213,7 +42213,7 @@ const externalVocabularyDB = [
     "id": 4691,
     "en": "chef",
     "kk": "[ʃɛf]",
-    "zh": "n. (餐館等的)主廚;大師傅",
+    "zh": "n. (餐館等的)主廚；大師傅",
     "unit": 5,
     "example": "Michael is a professionally-trained chef.",
     "exampleZh": "邁克爾是受過職業培訓的廚師。"
@@ -42258,7 +42258,7 @@ const externalVocabularyDB = [
     "id": 4696,
     "en": "choir",
     "kk": "[ˋkwaɪɚ]",
-    "zh": "n. (教堂的)唱詩班;合唱團",
+    "zh": "n. (教堂的)唱詩班；合唱團",
     "unit": 5,
     "example": "The choir walked solemnly past.",
     "exampleZh": "合唱隊嚴肅地走了過去。"
@@ -42267,7 +42267,7 @@ const externalVocabularyDB = [
     "id": 4697,
     "en": "chord",
     "kk": "[kɔrd]",
-    "zh": "n. (樂器的)弦;心弦;弦桿;和音",
+    "zh": "n. (樂器的)弦；心弦；弦桿；和音",
     "unit": 5,
     "example": "The speaker had obviously struck a chord with his audience.",
     "exampleZh": "講演者顯然已引起了聽眾的共鳴。"
@@ -42276,7 +42276,7 @@ const externalVocabularyDB = [
     "id": 4698,
     "en": "circuit",
     "kk": "[ˋsɝkət]",
-    "zh": "n. 環道;一圈;巡迴路線;電路",
+    "zh": "n. 環道；一圈；巡迴路線；電路",
     "unit": 5,
     "example": "Fewer workers are needed to solder circuit boards.",
     "exampleZh": "焊接電路板需要較少的工人。"
@@ -42285,7 +42285,7 @@ const externalVocabularyDB = [
     "id": 4699,
     "en": "clam",
     "kk": "[klæm]",
-    "zh": "n. 蛤;蚌;守口如瓶的人",
+    "zh": "n. 蛤；蚌；守口如瓶的人",
     "unit": 5,
     "example": "The barnacle and the clam are filter feeders.",
     "exampleZh": "藤壺和蛤類是濾食性動物。"
@@ -42294,7 +42294,7 @@ const externalVocabularyDB = [
     "id": 4700,
     "en": "clan",
     "kk": "[klæn]",
-    "zh": "n. 氏族;部落;家族",
+    "zh": "n. 氏族；部落；家族",
     "unit": 5,
     "example": "I belong to a clan.",
     "exampleZh": "我屬於一個氏族。"
@@ -42312,7 +42312,7 @@ const externalVocabularyDB = [
     "id": 4702,
     "en": "clause",
     "kk": "[klɔz]",
-    "zh": "n. (文件的)條款;子句",
+    "zh": "n. (文件的)條款；子句",
     "unit": 5,
     "example": "The final clause in the contract will be left untouched.",
     "exampleZh": "合同的最後一項條款將不作改動。"
@@ -42375,7 +42375,7 @@ const externalVocabularyDB = [
     "id": 4709,
     "en": "colleague",
     "kk": "[ˋkɑliɡ]",
-    "zh": "n. 同事,同僚",
+    "zh": "n. 同事、同僚",
     "unit": 5,
     "example": "They rated him highly as a colleague.",
     "exampleZh": "作為同事，他們對他評價甚高。"
@@ -42447,7 +42447,7 @@ const externalVocabularyDB = [
     "id": 4717,
     "en": "commodity",
     "kk": "[kəˋmɑdəti]",
-    "zh": "n. 商品;日用品",
+    "zh": "n. 商品；日用品",
     "unit": 5,
     "example": "Crude oil is the world's most important commodity.",
     "exampleZh": "原油是世界上最重要的商品。"
@@ -42510,7 +42510,7 @@ const externalVocabularyDB = [
     "id": 4724,
     "en": "compassion",
     "kk": "[kəmˋpæʃən]",
-    "zh": "n. 憐憫;同情",
+    "zh": "n. 憐憫；同情",
     "unit": 5,
     "example": "Mom was incensed at his lack of compassion.",
     "exampleZh": "媽媽對他缺乏同情心非常憤怒。"
@@ -42537,7 +42537,7 @@ const externalVocabularyDB = [
     "id": 4727,
     "en": "comprehension",
     "kk": "[͵kɑmpriˋhɛnʃən]",
-    "zh": "n. 理解;理解力",
+    "zh": "n. 理解；理解力",
     "unit": 5,
     "example": "This was utterly beyond her comprehension.",
     "exampleZh": "這完全超出了她的理解力。"
@@ -42555,7 +42555,7 @@ const externalVocabularyDB = [
     "id": 4729,
     "en": "comrade",
     "kk": "[ˋkɑ͵mræd]",
-    "zh": "n. 夥伴;同事;(共產黨的)同志",
+    "zh": "n. 夥伴；同事；(共產黨的)同志",
     "unit": 5,
     "example": "How does that shot please you, comrade?",
     "exampleZh": "那一槍你覺得怎麼樣，同志？"
@@ -42573,7 +42573,7 @@ const externalVocabularyDB = [
     "id": 4731,
     "en": "confession",
     "kk": "[kənˋfɛʃən]",
-    "zh": "n. 承認;供認;告解",
+    "zh": "n. 承認；供認；告解",
     "unit": 5,
     "example": "I have a confession to make.",
     "exampleZh": "我要作個坦白。"
@@ -42591,7 +42591,7 @@ const externalVocabularyDB = [
     "id": 4733,
     "en": "conserve",
     "kk": "[kənˋsɝv]",
-    "zh": "v. 糖漬食品,蜜餞；n. 果醬",
+    "zh": "v. 糖漬食品、蜜餞；n. 果醬",
     "unit": 5,
     "example": "People should insulate their homes to conserve energy.",
     "exampleZh": "人們應該使住房隔冷以儲存能量。"
@@ -42627,7 +42627,7 @@ const externalVocabularyDB = [
     "id": 4737,
     "en": "contempt",
     "kk": "[kənˋtɛmpt]",
-    "zh": "n. 輕視;(對法庭等的)藐視",
+    "zh": "n. 輕視；(對法庭等的)藐視",
     "unit": 5,
     "example": "She looked at him with contempt.",
     "exampleZh": "她輕蔑地看著他。"
@@ -42636,7 +42636,7 @@ const externalVocabularyDB = [
     "id": 4738,
     "en": "continuity",
     "kk": "[͵kɑntəˋnuəti]",
-    "zh": "n. 連續性;一貫性",
+    "zh": "n. 連續性；一貫性",
     "unit": 5,
     "example": "Modulus of continuity of the automated production has become a trend.",
     "exampleZh": "自動化生產的連續性模已成為一種趨勢。"
@@ -42647,8 +42647,8 @@ const externalVocabularyDB = [
     "kk": "[ˋkɑnvɪkt]",
     "zh": "v. 定罪、宣判……有罪；n. 已決犯、服刑囚犯",
     "unit": 5,
-    "example": "Can you use the word convict in a sentence?",
-    "exampleZh": "你能在句子中使用「/n. (服刑的)囚犯」這個詞嗎？"
+    "example": "The jury deliberated for three hours before deciding to convict the defendant.",
+    "exampleZh": "陪審團在審議了三個小時後，決定判定被告有罪。"
   },
   {
     "id": 4740,
@@ -42681,7 +42681,7 @@ const externalVocabularyDB = [
     "id": 4743,
     "en": "correspondence",
     "kk": "[͵kɔrəˋspɑndəns]",
-    "zh": "n. 一致;相對應;通信;(總稱)信件",
+    "zh": "n. 一致；相對應；通信；(總稱)信件",
     "unit": 5,
     "example": "We have been in correspondence for months.",
     "exampleZh": "我們通訊幾個月了。"
@@ -42690,7 +42690,7 @@ const externalVocabularyDB = [
     "id": 4744,
     "en": "corridor",
     "kk": "[ˋkɔrədɚ]",
-    "zh": "n. 迴廊,通道",
+    "zh": "n. 迴廊、通道",
     "unit": 5,
     "example": "She ran out into the corridor.",
     "exampleZh": "她跑出來，衝進走廊。"
@@ -42708,7 +42708,7 @@ const externalVocabularyDB = [
     "id": 4746,
     "en": "counselor",
     "kk": "[ˋkaʊnsəlɚ]",
-    "zh": "n. 顧問;(學生的)輔導員;律師",
+    "zh": "n. 顧問；(學生的)輔導員；律師",
     "unit": 5,
     "example": "Tom is a counselor.",
     "exampleZh": "湯姆是一名輔導員。"
@@ -42717,7 +42717,7 @@ const externalVocabularyDB = [
     "id": 4747,
     "en": "coupon",
     "kk": "[ˋku͵pɔn]",
-    "zh": "n. 回數票;減價優待券",
+    "zh": "n. 回數票；減價優待券",
     "unit": 5,
     "example": "He paid with a two-for-one coupon.",
     "exampleZh": "他用一張買二送一優惠券結賬。"
@@ -42726,7 +42726,7 @@ const externalVocabularyDB = [
     "id": 4748,
     "en": "courtyard",
     "kk": "[ˋkɔr͵tjɑrd]",
-    "zh": "n. 庭院;天井",
+    "zh": "n. 庭院；天井",
     "unit": 5,
     "example": "Sunlight was streaming into the courtyard.",
     "exampleZh": "陽光正照進那院子。"
@@ -42735,7 +42735,7 @@ const externalVocabularyDB = [
     "id": 4749,
     "en": "cracker",
     "kk": "[ˋkrækɚ]",
-    "zh": "n. (淡或鹹的)薄脆餅乾;鞭炮",
+    "zh": "n. (淡或鹹的)薄脆餅乾；鞭炮",
     "unit": 5,
     "example": "He put cheese on a cracker.",
     "exampleZh": "他在一塊餅乾上放了乳酪。"
@@ -42762,7 +42762,7 @@ const externalVocabularyDB = [
     "id": 4752,
     "en": "creek",
     "kk": "[krik]",
-    "zh": "n. 小河;溪",
+    "zh": "n. 小河；溪",
     "unit": 5,
     "example": "I'll bet we could find some at North Creek—in the mine.",
     "exampleZh": "我打賭我們能在小溪北邊的礦井裡面找到一些。"
@@ -42789,7 +42789,7 @@ const externalVocabularyDB = [
     "id": 4755,
     "en": "crossing",
     "kk": "[ˋkrɔsɪŋ]",
-    "zh": "n. 交叉;交叉點,橫穿;雜交",
+    "zh": "n. 交叉；交叉點、橫穿；雜交",
     "unit": 5,
     "example": "The field trip involved crossing a raging torrent.",
     "exampleZh": "越野旅行包括跨越一條洶湧的急流。"
@@ -42825,7 +42825,7 @@ const externalVocabularyDB = [
     "id": 4759,
     "en": "cuisine",
     "kk": "[kwɪˋzin]",
-    "zh": "n. 烹飪(法);菜餚",
+    "zh": "n. 烹飪(法)；菜餚",
     "unit": 5,
     "example": "The Garden's menu is based on Hawaiian regional cuisine.",
     "exampleZh": "花園飯店的菜餚以夏威夷地區的烹飪風格為基礎。"
@@ -42843,7 +42843,7 @@ const externalVocabularyDB = [
     "id": 4761,
     "en": "currency",
     "kk": "[ˋkɝənsi]",
-    "zh": "n. 通貨;貨幣",
+    "zh": "n. 通貨；貨幣",
     "unit": 5,
     "example": "Its currency is pegged to the dollar.",
     "exampleZh": "其貨幣與美元的匯率固定了。"
@@ -42870,7 +42870,7 @@ const externalVocabularyDB = [
     "id": 4764,
     "en": "customs",
     "kk": "[ˋkʌstəmz]",
-    "zh": "n. 關稅;報關手續;海關出入境口",
+    "zh": "n. 關稅；報關手續；海關出入境口",
     "unit": 5,
     "example": "The ship was boarded by customs officials.",
     "exampleZh": "海關官員登上了這艘船。"
@@ -42906,7 +42906,7 @@ const externalVocabularyDB = [
     "id": 4768,
     "en": "declaration",
     "kk": "[͵dɛklɚˋeʃən]",
-    "zh": "n. 宣佈,宣告;宣言,聲明",
+    "zh": "n. 宣佈、宣告；宣言、聲明",
     "unit": 5,
     "example": "It was meant to sound like an epoch-making declaration.",
     "exampleZh": "有意讓它聽起來像是一個劃時代的宣言。"
@@ -42924,7 +42924,7 @@ const externalVocabularyDB = [
     "id": 4770,
     "en": "delegation",
     "kk": "[͵dɛləˋɡeʃən]",
-    "zh": "n. 授權;代表團",
+    "zh": "n. 授權；代表團",
     "unit": 5,
     "example": "The delegation was carrying a message of thanks to President Mubarak.",
     "exampleZh": "代表團向穆巴拉克總統傳達謝意。"
@@ -42942,7 +42942,7 @@ const externalVocabularyDB = [
     "id": 4772,
     "en": "denial",
     "kk": "[dɪˋnaɪəl]",
-    "zh": "n. 否認;拒絕",
+    "zh": "n. 否認；拒絕",
     "unit": 5,
     "example": "Joanna's denial rang true.",
     "exampleZh": "喬安娜的否認聽上去像是真的。"
@@ -42960,7 +42960,7 @@ const externalVocabularyDB = [
     "id": 4774,
     "en": "destination",
     "kk": "[͵dɛstəˋneʃən]",
-    "zh": "n. 目的地,終點",
+    "zh": "n. 目的地、終點",
     "unit": 5,
     "example": "What is his destination?",
     "exampleZh": "他的目的地是什麼？"
@@ -42969,7 +42969,7 @@ const externalVocabularyDB = [
     "id": 4775,
     "en": "destiny",
     "kk": "[ˋdɛstəni]",
-    "zh": "n. 命運;天數",
+    "zh": "n. 命運；天數",
     "unit": 5,
     "example": "Her destiny was entwined with his.",
     "exampleZh": "她與他的命運緊密相聯。"
@@ -42978,7 +42978,7 @@ const externalVocabularyDB = [
     "id": 4776,
     "en": "detergent",
     "kk": "[dɪˋtɝdʒənt]",
-    "zh": "n. 洗潔劑,洗衣粉",
+    "zh": "n. 洗潔劑、洗衣粉",
     "unit": 5,
     "example": "The detergent comes in powder or liquid form.",
     "exampleZh": "這種洗滌劑有粉狀或液態兩種。"
@@ -43005,7 +43005,7 @@ const externalVocabularyDB = [
     "id": 4779,
     "en": "disbelief",
     "kk": "[͵dɪsbɪˋlif]",
-    "zh": "n. 不信;懷疑",
+    "zh": "n. 不信；懷疑",
     "unit": 5,
     "example": "He shook his head in disbelief.",
     "exampleZh": "他搖頭表示不信。"
@@ -43023,7 +43023,7 @@ const externalVocabularyDB = [
     "id": 4781,
     "en": "disciple",
     "kk": "[dɪˋsaɪpəl]",
-    "zh": "n. 信徒;門徒",
+    "zh": "n. 信徒；門徒",
     "unit": 5,
     "example": "The disciple was appalled.",
     "exampleZh": "這弟子怕了。"
@@ -43032,7 +43032,7 @@ const externalVocabularyDB = [
     "id": 4782,
     "en": "distinction",
     "kk": "[dɪˋstɪŋkʃən]",
-    "zh": "n. 區別;殊勳;榮譽",
+    "zh": "n. 區別；殊勳；榮譽",
     "unit": 5,
     "example": "He graduated with distinction.",
     "exampleZh": "他以優異成績畢業。"
@@ -43068,7 +43068,7 @@ const externalVocabularyDB = [
     "id": 4786,
     "en": "doorway",
     "kk": "[ˋdɔr͵we]",
-    "zh": "n. 出入口;門口",
+    "zh": "n. 出入口；門口",
     "unit": 5,
     "example": "Judith was hovering in the doorway.",
     "exampleZh": "朱迪絲在門口徘徊。"
@@ -43086,7 +43086,7 @@ const externalVocabularyDB = [
     "id": 4788,
     "en": "dough",
     "kk": "[do]",
-    "zh": "n. 生麵糰;現款",
+    "zh": "n. 生麵糰；現款",
     "unit": 5,
     "example": "If the dough is sticky, add more flour.",
     "exampleZh": "如果麵糰很粘，就再加些麵粉。"
@@ -43113,7 +43113,7 @@ const externalVocabularyDB = [
     "id": 4791,
     "en": "dressing",
     "kk": "[ˋdrɛsɪŋ]",
-    "zh": "n. 打扮;佈置,裝飾;(拌沙拉等用的)調料",
+    "zh": "n. 打扮；佈置、裝飾；(拌沙拉等用的)調料",
     "unit": 5,
     "example": "Many of our patients need help with dressing.",
     "exampleZh": "我們的許多病人需要有人幫助穿衣。"
@@ -43131,7 +43131,7 @@ const externalVocabularyDB = [
     "id": 4793,
     "en": "duration",
     "kk": "[ˋdʊrˋeʃən]",
-    "zh": "n. 持續,持久",
+    "zh": "n. 持續、持久",
     "unit": 5,
     "example": "The duration of previous geologic periods was difficult to determine.",
     "exampleZh": "以前很難確定地質期的持續時間。"
@@ -43140,7 +43140,7 @@ const externalVocabularyDB = [
     "id": 4794,
     "en": "dusk",
     "kk": "[dʌsk]",
-    "zh": "n. 薄暮,黃昏",
+    "zh": "n. 薄暮、黃昏",
     "unit": 5,
     "example": "We arrived home at dusk.",
     "exampleZh": "我們於黃昏時分到家了。"
@@ -43158,7 +43158,7 @@ const externalVocabularyDB = [
     "id": 4796,
     "en": "dwelling",
     "kk": "[ˋdwɛlɪŋ]",
-    "zh": "n. 住處;寓所",
+    "zh": "n. 住處；寓所",
     "unit": 5,
     "example": "After dwelling in Rio for ten years, she moved to Lisbon.",
     "exampleZh": "她在里約居住了10年之後遷居到里斯本去了。"
@@ -43185,7 +43185,7 @@ const externalVocabularyDB = [
     "id": 4799,
     "en": "ego",
     "kk": "[ˋiɡo]",
-    "zh": "n. 自我;自負",
+    "zh": "n. 自我；自負",
     "unit": 5,
     "example": "Superman's alter ego was Clark Kent.",
     "exampleZh": "超人的第二自我是克拉克•肯特。"
@@ -43212,7 +43212,7 @@ const externalVocabularyDB = [
     "id": 4802,
     "en": "enrollment",
     "kk": "[ɛˋnrolmənt]",
-    "zh": "n. 登記;入會;入伍;登記人數",
+    "zh": "n. 登記；入會；入伍；登記人數",
     "unit": 5,
     "example": "Enrollment will be free.",
     "exampleZh": "註冊將是免費的。"
@@ -43221,7 +43221,7 @@ const externalVocabularyDB = [
     "id": 4803,
     "en": "enterprise",
     "kk": "[ˋɛntɚ͵praɪz]",
-    "zh": "n. 企業,公司",
+    "zh": "n. 企業、公司",
     "unit": 5,
     "example": "Horse breeding is indeed a risky enterprise.",
     "exampleZh": "養馬的確是一項有風險的事業。"
@@ -43311,7 +43311,7 @@ const externalVocabularyDB = [
     "id": 4813,
     "en": "extension",
     "kk": "[ɪkˋstɛnʃən]",
-    "zh": "n. 伸長;擴大;延期",
+    "zh": "n. 伸長；擴大；延期",
     "unit": 5,
     "example": "They've built an extension on.",
     "exampleZh": "他們進行了一項擴建。"
@@ -43338,7 +43338,7 @@ const externalVocabularyDB = [
     "id": 4816,
     "en": "eyelash",
     "kk": "[ˋaɪ͵læʃ]",
-    "zh": "n. (一根)睫毛;(一根)眼毛",
+    "zh": "n. (一根)睫毛；(一根)眼毛",
     "unit": 5,
     "example": "There is an eyelash length slider bar.",
     "exampleZh": "有一個睫毛長度滑動條。"
@@ -43347,7 +43347,7 @@ const externalVocabularyDB = [
     "id": 4817,
     "en": "eyelid",
     "kk": "[ˋaɪ͵lɪd]",
-    "zh": "n. 眼皮;眼瞼",
+    "zh": "n. 眼皮；眼瞼",
     "unit": 5,
     "example": "His left eyelid twitched involuntarily.",
     "exampleZh": "他的左眼皮不由自主地跳著。"
@@ -43356,7 +43356,7 @@ const externalVocabularyDB = [
     "id": 4818,
     "en": "fabric",
     "kk": "[ˋfæbrɪk]",
-    "zh": "n. 布料;織品",
+    "zh": "n. 布料；織品",
     "unit": 5,
     "example": "The fabric moulds to the body.",
     "exampleZh": "這種織物很貼身。"
@@ -43410,7 +43410,7 @@ const externalVocabularyDB = [
     "id": 4824,
     "en": "fiancé",
     "kk": "[͵fiɑnˋse]",
-    "zh": "未婚夫",
+    "zh": "n. 未婚夫",
     "unit": 5,
     "example": "This is my fiancée.",
     "exampleZh": "這是我的未婚妻。"
@@ -43419,7 +43419,7 @@ const externalVocabularyDB = [
     "id": 4825,
     "en": "fiancée",
     "kk": "[͵fiɑnˋse]",
-    "zh": "未婚妻",
+    "zh": "n. 未婚妻",
     "unit": 5,
     "example": "The whole incident had upset me and my fiancée terribly.",
     "exampleZh": "整個事件已使我和我的未婚妻非常煩惱。"
@@ -43455,7 +43455,7 @@ const externalVocabularyDB = [
     "id": 4829,
     "en": "fin",
     "kk": "[fɪn]",
-    "zh": "n. 鰭;鰭狀物",
+    "zh": "n. 鰭；鰭狀物",
     "unit": 5,
     "example": "Without a fin, a shark can no longer swim.",
     "exampleZh": "沒有鰭，一條鯊魚就再不能游泳了。"
@@ -43527,7 +43527,7 @@ const externalVocabularyDB = [
     "id": 4837,
     "en": "fluency",
     "kk": "[ˋfluənsi]",
-    "zh": "n. 流暢;流暢的說話(或寫作)",
+    "zh": "n. 流暢；流暢的說話(或寫作)",
     "unit": 5,
     "example": "The team lacked fluency during the first half.",
     "exampleZh": "該隊在上半場打得不夠流暢。"
@@ -43536,7 +43536,7 @@ const externalVocabularyDB = [
     "id": 4838,
     "en": "foe",
     "kk": "[fo]",
-    "zh": "n. 敵人;反對者",
+    "zh": "n. 敵人；反對者",
     "unit": 5,
     "example": "Are you friend or foe?",
     "exampleZh": "你是朋友還是敵人？"
@@ -43545,7 +43545,7 @@ const externalVocabularyDB = [
     "id": 4839,
     "en": "foil",
     "kk": "[fɔɪl]",
-    "zh": "n. 箔;花劍劍術",
+    "zh": "n. 箔；花劍劍術",
     "unit": 5,
     "example": "Wrap the meat in foil before you cook it.",
     "exampleZh": "把肉用錫箔裹起來後再烹調。"
@@ -43581,7 +43581,7 @@ const externalVocabularyDB = [
     "id": 4843,
     "en": "fowl",
     "kk": "[faʊl]",
-    "zh": "n. 禽;禽肉",
+    "zh": "n. 禽；禽肉",
     "unit": 5,
     "example": "This is a fowl.",
     "exampleZh": "最近一次抽樣調查的結果，讓我們有95%的把握相信，有1 - 3%的人口是真正的素食主義者，也就是說，他們從來不吃肉類、魚類或家禽。"
@@ -43590,7 +43590,7 @@ const externalVocabularyDB = [
     "id": 4844,
     "en": "fraction",
     "kk": "[ˋfrækʃən]",
-    "zh": "n. 小部分;片段;碎片",
+    "zh": "n. 小部分；片段；碎片",
     "unit": 5,
     "example": "Their economy is still a fraction of ours.",
     "exampleZh": "他們的經濟仍然是我們的一部分。"
@@ -43599,7 +43599,7 @@ const externalVocabularyDB = [
     "id": 4845,
     "en": "framework",
     "kk": "[ˋfrem͵wɝk]",
-    "zh": "n. 架構;組織",
+    "zh": "n. 架構；組織",
     "unit": 5,
     "example": "She sets up a framework to deconstruct various categories of film.",
     "exampleZh": "她建立了一個框架來解析影視的各種分類。"
@@ -43617,7 +43617,7 @@ const externalVocabularyDB = [
     "id": 4847,
     "en": "frontier",
     "kk": "[frənˋtɪr]",
-    "zh": "n. 邊境;邊疆;新領域",
+    "zh": "n. 邊境；邊疆；新領域",
     "unit": 5,
     "example": "Rugged individualism forged America's frontier society.",
     "exampleZh": "堅定的個人主義鑄就了美國這個前沿社會。"
@@ -43635,7 +43635,7 @@ const externalVocabularyDB = [
     "id": 4849,
     "en": "fury",
     "kk": "[ˋfjʊri]",
-    "zh": "n. 狂怒;狂暴;猛烈",
+    "zh": "n. 狂怒；狂暴；猛烈",
     "unit": 5,
     "example": "Fury propelled her into action.",
     "exampleZh": "怒火驅使她行動起來。"
@@ -43671,7 +43671,7 @@ const externalVocabularyDB = [
     "id": 4853,
     "en": "garment",
     "kk": "[ˋɡɑrmənt]",
-    "zh": "n. 服裝;衣著",
+    "zh": "n. 服裝；衣著",
     "unit": 5,
     "example": "This garment must be dry-cleaned only.",
     "exampleZh": "這件衣服只可乾洗。"
@@ -43689,7 +43689,7 @@ const externalVocabularyDB = [
     "id": 4855,
     "en": "gathering",
     "kk": "[ˋɡæðɚɪŋ]",
-    "zh": "n. 集會,聚集",
+    "zh": "n. 集會、聚集",
     "unit": 5,
     "example": "The storm clouds were gathering.",
     "exampleZh": "暴風雨烏雲正在聚集。"
@@ -43752,7 +43752,7 @@ const externalVocabularyDB = [
     "id": 4862,
     "en": "glee",
     "kk": "[ɡli]",
-    "zh": "n. 快樂;歡欣",
+    "zh": "n. 快樂；歡欣",
     "unit": 5,
     "example": "She couldn't disguise her glee at their embarrassment.",
     "exampleZh": "看到他們難堪的樣子她不禁喜形於色。"
@@ -43797,7 +43797,7 @@ const externalVocabularyDB = [
     "id": 4867,
     "en": "gospel",
     "kk": "[ˋɡɑspəl]",
-    "zh": "n. 基督教教義;福音書",
+    "zh": "n. 基督教教義；福音書",
     "unit": 5,
     "example": "He wouldn't say this if it weren't the gospel truth.",
     "exampleZh": "如果這不是絕對真理，他就不會這麼說。"
@@ -43887,7 +43887,7 @@ const externalVocabularyDB = [
     "id": 4877,
     "en": "guideline",
     "kk": "[ˋɡaɪd͵laɪn]",
-    "zh": "n. 指南;指導方針",
+    "zh": "n. 指南；指導方針",
     "unit": 5,
     "example": "A written IQ test is merely a guideline.",
     "exampleZh": "書面的智商測試只是個參考。"
@@ -43923,7 +43923,7 @@ const externalVocabularyDB = [
     "id": 4881,
     "en": "gypsy",
     "kk": "[ˋdʒɪpsi]",
-    "zh": "n. 吉普賽人;流浪者",
+    "zh": "n. 吉普賽人；流浪者",
     "unit": 5,
     "example": "There was a gypsy camp hidden in a forest outside Moscow.",
     "exampleZh": "莫斯科外的森林中藏有一個吉普賽人營地。"
@@ -43932,7 +43932,7 @@ const externalVocabularyDB = [
     "id": 4882,
     "en": "hairdo",
     "kk": "[ˋhɛr͵du]",
-    "zh": "n. 髮式,髮型; 做頭髮",
+    "zh": "n. 髮式、髮型； 做頭髮",
     "unit": 5,
     "example": "I have a new hairdo.",
     "exampleZh": "我剪了一個新發型。"
@@ -43959,7 +43959,7 @@ const externalVocabularyDB = [
     "id": 4885,
     "en": "handicraft",
     "kk": "[ˋhændi͵kræft]",
-    "zh": "n. 手工藝;手工藝品",
+    "zh": "n. 手工藝；手工藝品",
     "unit": 5,
     "example": "Her hobbies are music, reading and handicraft.",
     "exampleZh": "她的愛好是音樂、讀書和手工。"
@@ -44013,7 +44013,7 @@ const externalVocabularyDB = [
     "id": 4891,
     "en": "heir",
     "kk": "[ɛr]",
-    "zh": "n. 繼承人;嗣子",
+    "zh": "n. 繼承人；嗣子",
     "unit": 5,
     "example": "Her duty was to produce an heir to the throne.",
     "exampleZh": "她的任務就是生育王位繼承人。"
@@ -44031,7 +44031,7 @@ const externalVocabularyDB = [
     "id": 4893,
     "en": "herb",
     "kk": "[ɝb]",
-    "zh": "n. 草本植物;藥草",
+    "zh": "n. 草本植物；藥草",
     "unit": 5,
     "example": "The dried herb is obtainable from health shops.",
     "exampleZh": "這種幹藥草在保健店裡能買到。"
@@ -44148,7 +44148,7 @@ const externalVocabularyDB = [
     "id": 4906,
     "en": "hostage",
     "kk": "[ˋhɑstɪdʒ]",
-    "zh": "n. 人質;抵押品",
+    "zh": "n. 人質；抵押品",
     "unit": 5,
     "example": "Am I a hostage?",
     "exampleZh": "我是人質嗎？"
@@ -44166,7 +44166,7 @@ const externalVocabularyDB = [
     "id": 4908,
     "en": "housing",
     "kk": "[ˋhaʊzɪŋ]",
-    "zh": "n. 房屋,住宅",
+    "zh": "n. 房屋、住宅",
     "unit": 5,
     "example": "The housing market needs a kick-start.",
     "exampleZh": "房產市場需要重振。"
@@ -44211,7 +44211,7 @@ const externalVocabularyDB = [
     "id": 4913,
     "en": "idiot",
     "kk": "[ˋɪd͵iət]",
-    "zh": "n. 白癡;笨蛋",
+    "zh": "n. 白癡；笨蛋",
     "unit": 5,
     "example": "I felt like a complete idiot.",
     "exampleZh": "我感到完全像個傻瓜。"
@@ -44220,7 +44220,7 @@ const externalVocabularyDB = [
     "id": 4914,
     "en": "impulse",
     "kk": "[ˋɪmpəls]",
-    "zh": "n. 衝動;推動力",
+    "zh": "n. 衝動；推動力",
     "unit": 5,
     "example": "I resisted the impulse to laugh.",
     "exampleZh": "我強忍著沒有笑出來。"
@@ -44247,7 +44247,7 @@ const externalVocabularyDB = [
     "id": 4917,
     "en": "indifference",
     "kk": "[͵ɪnˋdɪfɚəns]",
-    "zh": "n. 漠不關心;無關緊要",
+    "zh": "n. 漠不關心；無關緊要",
     "unit": 5,
     "example": "Their father treated them with indifference.",
     "exampleZh": "他們的父親對他們漠不關心。"
@@ -44274,7 +44274,7 @@ const externalVocabularyDB = [
     "id": 4920,
     "en": "institute",
     "kk": "[ˋɪnstə͵tut]",
-    "zh": "v. (專科性的)學校,大學；n. 研究所",
+    "zh": "v. (專科性的)學校、大學；n. 研究所",
     "unit": 5,
     "example": "Mr. Lin is associate director of the Institute.",
     "exampleZh": "林先生是該研究所的副主任。"
@@ -44292,7 +44292,7 @@ const externalVocabularyDB = [
     "id": 4922,
     "en": "interference",
     "kk": "[͵ɪntɚˋfɪrəns]",
-    "zh": "n. 干涉,干預;擾亂",
+    "zh": "n. 干涉、干預；擾亂",
     "unit": 5,
     "example": "Furthermore, they claim that any such interference is completely ineffective.",
     "exampleZh": "此外，他們聲稱任何此類干涉都是完全無效的。"
@@ -44310,7 +44310,7 @@ const externalVocabularyDB = [
     "id": 4924,
     "en": "interpretation",
     "kk": "[͵ɪn͵tɝprɪˋteʃən]",
-    "zh": "n. 解釋;闡明",
+    "zh": "n. 解釋；闡明",
     "unit": 5,
     "example": "History is always a matter of interpretation.",
     "exampleZh": "歷史總是一個詮釋的問題。"
@@ -44373,7 +44373,7 @@ const externalVocabularyDB = [
     "id": 4931,
     "en": "jade",
     "kk": "[dʒed]",
-    "zh": "n. 玉;玉製品;綠玉色",
+    "zh": "n. 玉；玉製品；綠玉色",
     "unit": 5,
     "example": "The Burmese jade choker in the catalogue was very beautiful.",
     "exampleZh": "該目錄中的緬甸玉貼頸項鍊非常漂亮。"
@@ -44382,7 +44382,7 @@ const externalVocabularyDB = [
     "id": 4932,
     "en": "janitor",
     "kk": "[ˋdʒænətɚ]",
-    "zh": "n. 清潔工;管理員;看門人",
+    "zh": "n. 清潔工；管理員；看門人",
     "unit": 5,
     "example": "Ed Roberts had been a school janitor for a long time.",
     "exampleZh": "埃德·羅伯茨做學校的看門人已很久了。"
@@ -44391,7 +44391,7 @@ const externalVocabularyDB = [
     "id": 4933,
     "en": "jasmine",
     "kk": "[ˋdʒæzmən]",
-    "zh": "n. 茉莉;淡黃色",
+    "zh": "n. 茉莉；淡黃色",
     "unit": 5,
     "example": "Jasmine flowers scent the air.",
     "exampleZh": "空氣中瀰漫著茉莉花香。"
@@ -44427,7 +44427,7 @@ const externalVocabularyDB = [
     "id": 4937,
     "en": "journalism",
     "kk": "[ˋdʒɝnə͵lɪzəm]",
-    "zh": "n. 新聞業;新聞學",
+    "zh": "n. 新聞業；新聞學",
     "unit": 5,
     "example": "I've made some useful contacts in journalism.",
     "exampleZh": "我在新聞界結交了一些有用的人。"
@@ -44481,7 +44481,7 @@ const externalVocabularyDB = [
     "id": 4943,
     "en": "lad",
     "kk": "[læd]",
-    "zh": "n. 男孩;小伙子",
+    "zh": "n. 男孩；小伙子",
     "unit": 5,
     "example": "He's a nice lad.",
     "exampleZh": "他是個好小夥子。"
@@ -44517,7 +44517,7 @@ const externalVocabularyDB = [
     "id": 4947,
     "en": "lash",
     "kk": "[læʃ]",
-    "zh": "n. 鞭打;(風浪等的)猛烈打擊;斥責",
+    "zh": "n. 鞭打；(風浪等的)猛烈打擊；斥責",
     "unit": 5,
     "example": "They could lash out.",
     "exampleZh": "他們可以猛烈抨擊。"
@@ -44526,7 +44526,7 @@ const externalVocabularyDB = [
     "id": 4948,
     "en": "latitude",
     "kk": "[ˋlætə͵tud]",
-    "zh": "n. 緯度;",
+    "zh": "n. 緯度；",
     "unit": 5,
     "example": "Allow him more latitude.",
     "exampleZh": "給他更多的自由。"
@@ -44562,7 +44562,7 @@ const externalVocabularyDB = [
     "id": 4952,
     "en": "legislation",
     "kk": "[͵lɛdʒəˋsleʃən]",
-    "zh": "n. 立法;法規",
+    "zh": "n. 立法；法規",
     "unit": 5,
     "example": "The legislation is still in draft form.",
     "exampleZh": "這條法規還只是項草案。"
@@ -44571,7 +44571,7 @@ const externalVocabularyDB = [
     "id": 4953,
     "en": "lieutenant",
     "kk": "[luˋtɛnənt]",
-    "zh": "n. 中尉(或少尉);助理官",
+    "zh": "n. 中尉(或少尉)；助理官",
     "unit": 5,
     "example": "The lieutenant stopped and stood stock-still.",
     "exampleZh": "上尉停了下來，紋絲不動地站著。"
@@ -44580,7 +44580,7 @@ const externalVocabularyDB = [
     "id": 4954,
     "en": "likelihood",
     "kk": "[ˋlaɪkli͵hʊd]",
-    "zh": "n. 可能;可能性",
+    "zh": "n. 可能；可能性",
     "unit": 5,
     "example": "There is very little likelihood of that happening.",
     "exampleZh": "幾乎沒有發生那種事情的可能。"
@@ -44670,7 +44670,7 @@ const externalVocabularyDB = [
     "id": 4964,
     "en": "lottery",
     "kk": "[ˋlɑtɚi]",
-    "zh": "n. 獎券;彩票;抽籤;運氣",
+    "zh": "n. 獎券；彩票；抽籤；運氣",
     "unit": 5,
     "example": "The lottery provides harmless fun for millions.",
     "exampleZh": "彩票抽獎為數百萬人提供正當娛樂。"
@@ -44724,7 +44724,7 @@ const externalVocabularyDB = [
     "id": 4970,
     "en": "mainstream",
     "kk": "[ˋmen͵strim]",
-    "zh": "n. (河的)主流;主要傾向",
+    "zh": "n. (河的)主流；主要傾向",
     "unit": 5,
     "example": "Arran became increasingly estranged from the mainstream of Hollywood.",
     "exampleZh": "阿倫變得越來越脫離好萊塢主流了。"
@@ -44733,7 +44733,7 @@ const externalVocabularyDB = [
     "id": 4971,
     "en": "maintenance",
     "kk": "[ˋmentənəns]",
-    "zh": "n. 維持;維修;保養",
+    "zh": "n. 維持；維修；保養",
     "unit": 5,
     "example": "Small gardens can be high maintenance.",
     "exampleZh": "小花園也會有很高的維護費。"
@@ -44742,7 +44742,7 @@ const externalVocabularyDB = [
     "id": 4972,
     "en": "majesty",
     "kk": "[ˋmædʒəsti]",
-    "zh": "n. 雄偉;壯麗;(帝王的)威嚴",
+    "zh": "n. 雄偉；壯麗；(帝王的)威嚴",
     "unit": 5,
     "example": "A fine day, your Majesty!",
     "exampleZh": "天氣真好，陛下！"
@@ -44760,7 +44760,7 @@ const externalVocabularyDB = [
     "id": 4974,
     "en": "mansion",
     "kk": "[ˋmænʃən]",
-    "zh": "n. 大廈,大樓",
+    "zh": "n. 大廈、大樓",
     "unit": 5,
     "example": "The mansion has been put up for sale.",
     "exampleZh": "該豪宅已待售。"
@@ -44769,7 +44769,7 @@ const externalVocabularyDB = [
     "id": 4975,
     "en": "maple",
     "kk": "[ˋmepəl]",
-    "zh": "n. 槭樹;楓樹",
+    "zh": "n. 槭樹；楓樹",
     "unit": 5,
     "example": "She was stoking the stove with sticks of maple.",
     "exampleZh": "她正在給爐子添楓樹枝。"
@@ -44787,7 +44787,7 @@ const externalVocabularyDB = [
     "id": 4977,
     "en": "marshal",
     "kk": "[ˋmɑrʃəl]",
-    "zh": "n. 元帥;高級將官;典禮官",
+    "zh": "n. 元帥；高級將官；典禮官",
     "unit": 5,
     "example": "Police were brought in to marshal the crowd.",
     "exampleZh": "警察奉命來維持秩序。"
@@ -44832,7 +44832,7 @@ const externalVocabularyDB = [
     "id": 4982,
     "en": "masterpiece",
     "kk": "[ˋmæstɚ͵pis]",
-    "zh": "n. 傑作,名作",
+    "zh": "n. 傑作、名作",
     "unit": 5,
     "example": "The work was acclaimed as a masterpiece.",
     "exampleZh": "該作品被譽為傑作。"
@@ -44841,7 +44841,7 @@ const externalVocabularyDB = [
     "id": 4983,
     "en": "mayonnaise",
     "kk": "[ˋmeə͵nez]",
-    "zh": "n. 蛋黃醬;美乃滋",
+    "zh": "n. 蛋黃醬；美乃滋",
     "unit": 5,
     "example": "The bread, pastry and mayonnaise are homemade.",
     "exampleZh": "麵包、糕點和蛋黃醬都是自家做的。"
@@ -44859,7 +44859,7 @@ const externalVocabularyDB = [
     "id": 4985,
     "en": "mechanics",
     "kk": "[məˋkænɪks]",
-    "zh": "n. 力學;機械學;技術;技巧",
+    "zh": "n. 力學；機械學；技術；技巧",
     "unit": 5,
     "example": "He has not studied mechanics or engineering.",
     "exampleZh": "他沒有學習過力學或者工程學。"
@@ -44904,7 +44904,7 @@ const externalVocabularyDB = [
     "id": 4990,
     "en": "mileage",
     "kk": "[ˋmaɪlədʒ]",
-    "zh": "n. 總英里數;(每單位燃料的)行駛哩數",
+    "zh": "n. 總英里數；(每單位燃料的)行駛哩數",
     "unit": 5,
     "example": "My annual mileage is about 10 000.",
     "exampleZh": "我一年的行駛里程大約為1萬英里。"
@@ -44913,7 +44913,7 @@ const externalVocabularyDB = [
     "id": 4991,
     "en": "milestone",
     "kk": "[ˋmaɪl͵ston]",
-    "zh": "n. 里程碑;劃時代的事件",
+    "zh": "n. 里程碑；劃時代的事件",
     "unit": 5,
     "example": "This milestone comes at a small cost.",
     "exampleZh": "這一里程碑的代價很小。"
@@ -44922,7 +44922,7 @@ const externalVocabularyDB = [
     "id": 4992,
     "en": "mint",
     "kk": "[mɪnt]",
-    "zh": "n. 薄荷;薄荷糖;造幣廠",
+    "zh": "n. 薄荷；薄荷糖；造幣廠",
     "unit": 5,
     "example": "The ice tasted of mint.",
     "exampleZh": "這刨冰有薄荷味兒。"
@@ -44931,7 +44931,7 @@ const externalVocabularyDB = [
     "id": 4993,
     "en": "miser",
     "kk": "[ˋmaɪzɚ]",
-    "zh": "n. 吝嗇鬼;守財奴",
+    "zh": "n. 吝嗇鬼；守財奴",
     "unit": 5,
     "example": "I'm married to a miser.",
     "exampleZh": "我嫁了個守財奴。"
@@ -44940,7 +44940,7 @@ const externalVocabularyDB = [
     "id": 4994,
     "en": "mistress",
     "kk": "[ˋmɪstrəs]",
-    "zh": "n. 女主人,主婦",
+    "zh": "n. 女主人、主婦",
     "unit": 5,
     "example": "Mistress Mary felt quite contrary.",
     "exampleZh": "瑪麗小姐覺得完全相反。"
@@ -44967,7 +44967,7 @@ const externalVocabularyDB = [
     "id": 4997,
     "en": "mode",
     "kk": "[mod]",
-    "zh": "n. 方式;型;模式",
+    "zh": "n. 方式；型；模式",
     "unit": 5,
     "example": "Page Mode shows headers, footers, footnotes and page numbers.",
     "exampleZh": "頁面模式顯示頁首、頁尾、腳註和頁碼。"
@@ -44976,7 +44976,7 @@ const externalVocabularyDB = [
     "id": 4998,
     "en": "molecule",
     "kk": "[ˋmɑlə͵kjul]",
-    "zh": "n. 分子;微小顆粒",
+    "zh": "n. 分子；微小顆粒",
     "unit": 5,
     "example": "The DNA molecule is compounded from many smaller molecules.",
     "exampleZh": "脫氧核糖核酸分子是由許多更小的分子組成的。"
@@ -45012,7 +45012,7 @@ const externalVocabularyDB = [
     "id": 5002,
     "en": "motherhood",
     "kk": "[ˋmʌðɚ͵hʊd]",
-    "zh": "n. 母性;(總稱)母親們",
+    "zh": "n. 母性；(總稱)母親們",
     "unit": 6,
     "example": "Who could argue against motherhood and apple pie ?",
     "exampleZh": "誰會反對母性與家庭的溫馨呢？"
@@ -45021,7 +45021,7 @@ const externalVocabularyDB = [
     "id": 5003,
     "en": "motive",
     "kk": "[ˋmotɪv]",
-    "zh": "n. 動機;主旨",
+    "zh": "n. 動機；主旨",
     "unit": 6,
     "example": "The motive for the killing is unknown.",
     "exampleZh": "殺人的動機不明。"
@@ -45048,7 +45048,7 @@ const externalVocabularyDB = [
     "id": 5006,
     "en": "mower",
     "kk": "[ˋmoɚ]",
-    "zh": "n. 割草機;收割機",
+    "zh": "n. 割草機；收割機",
     "unit": 6,
     "example": "He fixed the mower.",
     "exampleZh": "他修好了割草機。"
@@ -45066,7 +45066,7 @@ const externalVocabularyDB = [
     "id": 5008,
     "en": "muse",
     "kk": "[mjuz]",
-    "zh": "n. 沈思;冥想",
+    "zh": "n. 沈思；冥想",
     "unit": 6,
     "example": "So how do you train your Muse?",
     "exampleZh": "如何訓練你的靈感？"
@@ -45075,7 +45075,7 @@ const externalVocabularyDB = [
     "id": 5009,
     "en": "mustard",
     "kk": "[ˋmʌstɚd]",
-    "zh": "n. 芥末;芥菜;芥末色",
+    "zh": "n. 芥末；芥菜；芥末色",
     "unit": 6,
     "example": "Your wit is as thick as Tewkesbury Mustard.",
     "exampleZh": "你的智慧像圖克斯伯裡芥末一樣厚。"
@@ -45102,7 +45102,7 @@ const externalVocabularyDB = [
     "id": 5012,
     "en": "myth",
     "kk": "[mɪθ]",
-    "zh": "n. 神話;虛構的人(或事物)",
+    "zh": "n. 神話；虛構的人(或事物)",
     "unit": 6,
     "example": "It's impossible to disentangle the myth from reality.",
     "exampleZh": "分清神話和現實是不可能的。"
@@ -45174,7 +45174,7 @@ const externalVocabularyDB = [
     "id": 5020,
     "en": "notion",
     "kk": "[ˋnoʃən]",
-    "zh": "n. 概念;想法;打算",
+    "zh": "n. 概念；想法；打算",
     "unit": 6,
     "example": "She had only a vague notion of what might happen.",
     "exampleZh": "對於可能發生的事她只有一個模糊的概念。"
@@ -45183,7 +45183,7 @@ const externalVocabularyDB = [
     "id": 5021,
     "en": "novice",
     "kk": "[ˋnɑvəs]",
-    "zh": "n. 新手;初學者",
+    "zh": "n. 新手；初學者",
     "unit": 6,
     "example": "I'm a complete novice at skiing.",
     "exampleZh": "滑雪我完全是個新手。"
@@ -45192,7 +45192,7 @@ const externalVocabularyDB = [
     "id": 5022,
     "en": "nucleus",
     "kk": "[ˋnukliəs]",
-    "zh": "n. (原子)核;細胞核;核心",
+    "zh": "n. (原子)核；細胞核；核心",
     "unit": 6,
     "example": "Matt Cummings and Liko Soules-Ono form the nucleus of the team.",
     "exampleZh": "馬特·卡明斯和萊克·索爾斯-奧諾形成了這個團隊的核心。"
@@ -45210,7 +45210,7 @@ const externalVocabularyDB = [
     "id": 5024,
     "en": "oar",
     "kk": "[ɔr]",
-    "zh": "n. 槳;櫓;划手",
+    "zh": "n. 槳；櫓；划手",
     "unit": 6,
     "example": "Cold worlds shake from the oar.",
     "exampleZh": "冰冷的天地隨船槳划動而震顫。"
@@ -45228,7 +45228,7 @@ const externalVocabularyDB = [
     "id": 5026,
     "en": "oath",
     "kk": "[oθ]",
-    "zh": "n. 誓言;宣誓",
+    "zh": "n. 誓言；宣誓",
     "unit": 6,
     "example": "He took an oath of loyalty to the government.",
     "exampleZh": "他做了效忠於政府的宣誓。"
@@ -45237,7 +45237,7 @@ const externalVocabularyDB = [
     "id": 5027,
     "en": "oatmeal",
     "kk": "[ˋot͵mil]",
-    "zh": "n. 燕麥片;燕麥粥",
+    "zh": "n. 燕麥片；燕麥粥",
     "unit": 6,
     "example": "Oatmeal is a good second best.",
     "exampleZh": "燕麥片是不錯的第二選擇。"
@@ -45255,7 +45255,7 @@ const externalVocabularyDB = [
     "id": 5029,
     "en": "observer",
     "kk": "[əbˋzɝvɚ]",
-    "zh": "n. 觀察員;奉行者",
+    "zh": "n. 觀察員；奉行者",
     "unit": 6,
     "example": "The talks took place in the presence of a diplomatic observer.",
     "exampleZh": "會談是在一位外交觀察家在場的情況下進行的。"
@@ -45264,7 +45264,7 @@ const externalVocabularyDB = [
     "id": 5030,
     "en": "occurrence",
     "kk": "[əˋkɝəns]",
-    "zh": "n. 發生;出現;事件",
+    "zh": "n. 發生；出現；事件",
     "unit": 6,
     "example": "Complaints seemed to be an everyday occurrence.",
     "exampleZh": "投訴似乎成了天天發生的事。"
@@ -45282,7 +45282,7 @@ const externalVocabularyDB = [
     "id": 5032,
     "en": "odds",
     "kk": "[ɑdz]",
-    "zh": "n. 機會;可能性;投注賠率;不和",
+    "zh": "n. 機會；可能性；投注賠率；不和",
     "unit": 6,
     "example": "What were the odds against?",
     "exampleZh": "賠率是多少？"
@@ -45309,7 +45309,7 @@ const externalVocabularyDB = [
     "id": 5035,
     "en": "opponent",
     "kk": "[əˋponənt]",
-    "zh": "n. 對手;敵手,反對者",
+    "zh": "n. 對手；敵手、反對者",
     "unit": 6,
     "example": "The boxer jabbed at his opponent.",
     "exampleZh": "拳擊手向對手猛擊。"
@@ -45318,7 +45318,7 @@ const externalVocabularyDB = [
     "id": 5036,
     "en": "optimism",
     "kk": "[ˋɑptə͵mɪzəm]",
-    "zh": "n. 樂觀;樂觀主義",
+    "zh": "n. 樂觀；樂觀主義",
     "unit": 6,
     "example": "He radiated self-confidence and optimism.",
     "exampleZh": "他顯得自信樂觀。"
@@ -45327,7 +45327,7 @@ const externalVocabularyDB = [
     "id": 5037,
     "en": "orchard",
     "kk": "[ˋɔrtʃɚd]",
-    "zh": "n. 果樹園;果樹林",
+    "zh": "n. 果樹園；果樹林",
     "unit": 6,
     "example": "I went into the orchard.",
     "exampleZh": "我進了果園。"
@@ -45336,7 +45336,7 @@ const externalVocabularyDB = [
     "id": 5038,
     "en": "organizer",
     "kk": "[ˋɔrɡə͵naɪzɚ]",
-    "zh": "n. 組織者;萬用記事本",
+    "zh": "n. 組織者；萬用記事本",
     "unit": 6,
     "example": "She was by reputation a good organizer.",
     "exampleZh": "久聞她是個出色的組織者。"
@@ -45372,7 +45372,7 @@ const externalVocabularyDB = [
     "id": 5042,
     "en": "orphanage",
     "kk": "[ˋɔrfənədʒ]",
-    "zh": "n. 孤兒院;孤兒身分",
+    "zh": "n. 孤兒院；孤兒身分",
     "unit": 6,
     "example": "She visited a Thai orphanage.",
     "exampleZh": "她參觀了泰國的一家孤兒院。"
@@ -45381,7 +45381,7 @@ const externalVocabularyDB = [
     "id": 5043,
     "en": "ostrich",
     "kk": "[ˋɔstrɪtʃ]",
-    "zh": "n. 駝鳥;有駝鳥心理的人",
+    "zh": "n. 駝鳥；有駝鳥心理的人",
     "unit": 6,
     "example": "Is that an ostrich?",
     "exampleZh": "那是鴕鳥嗎？"
@@ -45390,7 +45390,7 @@ const externalVocabularyDB = [
     "id": 5044,
     "en": "ounce",
     "kk": "[aʊns]",
-    "zh": "n. 盎司,英兩",
+    "zh": "n. 盎司、英兩",
     "unit": 6,
     "example": "This little ball of gold weighs a quarter of an ounce.",
     "exampleZh": "這個小金球重0.25盎司。"
@@ -45408,7 +45408,7 @@ const externalVocabularyDB = [
     "id": 5046,
     "en": "outsider",
     "kk": "[aʊtˋsaɪdɚ]",
-    "zh": "n. 外人;門外漢;局外人",
+    "zh": "n. 外人；門外漢；局外人",
     "unit": 6,
     "example": "She always wagered on an outsider.",
     "exampleZh": "她總是把賭注押在不大可能獲勝的馬上。"
@@ -45417,7 +45417,7 @@ const externalVocabularyDB = [
     "id": 5047,
     "en": "outskirts",
     "kk": "[ˋaʊt͵skɝts]",
-    "zh": "n. (複數)郊外;郊區",
+    "zh": "n. (複數)郊外；郊區",
     "unit": 6,
     "example": "They live on the outskirts of Milan.",
     "exampleZh": "他們住在米蘭市郊。"
@@ -45453,7 +45453,7 @@ const externalVocabularyDB = [
     "id": 5051,
     "en": "oyster",
     "kk": "[ˋɔɪstɚ]",
-    "zh": "n. 牡蠣;沈默寡言的人",
+    "zh": "n. 牡蠣；沈默寡言的人",
     "unit": 6,
     "example": "Oyster beds, on the mudflats, are a form of fish farming.",
     "exampleZh": "灘塗牡蠣養殖場是一種水產養殖方式。"
@@ -45480,7 +45480,7 @@ const externalVocabularyDB = [
     "id": 5054,
     "en": "packet",
     "kk": "[ˋpækət]",
-    "zh": "n. 小包(裹);小捆;小袋",
+    "zh": "n. 小包(裹)；小捆；小袋",
     "unit": 6,
     "example": "A packet of photographs arrived with the mail.",
     "exampleZh": "一包照片郵寄來了。"
@@ -45498,7 +45498,7 @@ const externalVocabularyDB = [
     "id": 5056,
     "en": "pane",
     "kk": "[pen]",
-    "zh": "n. 窗玻璃片;窗格;嵌板",
+    "zh": "n. 窗玻璃片；窗格；嵌板",
     "unit": 6,
     "example": "It will break the window-pane!",
     "exampleZh": "它會打破窗玻璃的！"
@@ -45525,7 +45525,7 @@ const externalVocabularyDB = [
     "id": 5059,
     "en": "parlor",
     "kk": "[ˋpɑrlɚ]",
-    "zh": "n. 客廳;接待室",
+    "zh": "n. 客廳；接待室",
     "unit": 6,
     "example": "The parlor overlooks the street.",
     "exampleZh": "這客廳可俯瞰街道。"
@@ -45534,7 +45534,7 @@ const externalVocabularyDB = [
     "id": 5060,
     "en": "participant",
     "kk": "[pɑrˋtɪsəpənt]",
-    "zh": "n. 關係者;參與者",
+    "zh": "n. 關係者；參與者",
     "unit": 6,
     "example": "He has been an active participant in the discussion.",
     "exampleZh": "他一直積極參與這次討論。"
@@ -45543,7 +45543,7 @@ const externalVocabularyDB = [
     "id": 5061,
     "en": "particle",
     "kk": "[ˋpɑrtəkəl]",
-    "zh": "n. 微粒;顆粒",
+    "zh": "n. 微粒；顆粒",
     "unit": 6,
     "example": "Particle physicists and astronomers collaborate often.",
     "exampleZh": "粒子物理學家和天文學家經常合作。"
@@ -45552,7 +45552,7 @@ const externalVocabularyDB = [
     "id": 5062,
     "en": "pastime",
     "kk": "[ˋpæ͵staɪm]",
-    "zh": "n. 消遣;娛樂",
+    "zh": "n. 消遣；娛樂",
     "unit": 6,
     "example": "His favourite pastime is golf.",
     "exampleZh": "他最喜歡的消遣是打高爾夫。"
@@ -45606,7 +45606,7 @@ const externalVocabularyDB = [
     "id": 5068,
     "en": "patron",
     "kk": "[ˋpetrən]",
-    "zh": "n. 贊助者;主顧(尤指老顧客)",
+    "zh": "n. 贊助者；主顧(尤指老顧客)",
     "unit": 6,
     "example": "Frederick the Great was the patron of many artists.",
     "exampleZh": "腓特烈大帝是許多藝術家的贊助人。"
@@ -45615,7 +45615,7 @@ const externalVocabularyDB = [
     "id": 5069,
     "en": "peacock",
     "kk": "[ˋpi͵kɑk]",
-    "zh": "n. 孔雀;愛炫耀的人",
+    "zh": "n. 孔雀；愛炫耀的人",
     "unit": 6,
     "example": "The peacock spreads its splendid tail.",
     "exampleZh": "孔雀展開了它那燦爛奪目的尾巴。"
@@ -45678,7 +45678,7 @@ const externalVocabularyDB = [
     "id": 5076,
     "en": "performer",
     "kk": "[pɚˋfɔrmɚ]",
-    "zh": "n. 演出者;演奏者;表演者",
+    "zh": "n. 演出者；演奏者；表演者",
     "unit": 6,
     "example": "She was a consummate performer.",
     "exampleZh": "她是個技藝非凡的表演者。"
@@ -45696,7 +45696,7 @@ const externalVocabularyDB = [
     "id": 5078,
     "en": "personnel",
     "kk": "[͵pɝsəˋnɛl]",
-    "zh": "n. (總稱)人員;員工;人事部門",
+    "zh": "n. (總稱)人員；員工；人事部門",
     "unit": 6,
     "example": "Her first job was in personnel.",
     "exampleZh": "她的第一份工作是在人事部。"
@@ -45705,7 +45705,7 @@ const externalVocabularyDB = [
     "id": 5079,
     "en": "pessimism",
     "kk": "[ˋpɛsə͵mɪzəm]",
-    "zh": "n. 悲觀;悲觀主義",
+    "zh": "n. 悲觀；悲觀主義",
     "unit": 6,
     "example": "Optimism was gradually taking the place of pessimism.",
     "exampleZh": "樂觀正逐漸替代悲觀。"
@@ -45714,7 +45714,7 @@ const externalVocabularyDB = [
     "id": 5080,
     "en": "pier",
     "kk": "[pɪr]",
-    "zh": "n. 碼頭;防波堤",
+    "zh": "n. 碼頭；防波堤",
     "unit": 6,
     "example": "The pier is a wooden structure.",
     "exampleZh": "這個碼頭是木結構建築。"
@@ -45723,7 +45723,7 @@ const externalVocabularyDB = [
     "id": 5081,
     "en": "pilgrim",
     "kk": "[ˋpɪlɡrəm]",
-    "zh": "n. 香客,朝聖者",
+    "zh": "n. 香客、朝聖者",
     "unit": 6,
     "example": "Tom is a pilgrim.",
     "exampleZh": "湯姆是一位朝聖者。"
@@ -45732,7 +45732,7 @@ const externalVocabularyDB = [
     "id": 5082,
     "en": "pillar",
     "kk": "[ˋpɪlɚ]",
-    "zh": "n. 柱子;棟樑",
+    "zh": "n. 柱子；棟樑",
     "unit": 6,
     "example": "My father is a pillar of the community.",
     "exampleZh": "我父親是社群的頂樑柱。"
@@ -45741,7 +45741,7 @@ const externalVocabularyDB = [
     "id": 5083,
     "en": "pimple",
     "kk": "[ˋpɪmpəl]",
-    "zh": "n. 丘疹;面皰",
+    "zh": "n. 丘疹；面皰",
     "unit": 6,
     "example": "Look, this is a pimple!",
     "exampleZh": "看，這是一個痘痘。"
@@ -45777,7 +45777,7 @@ const externalVocabularyDB = [
     "id": 5087,
     "en": "plague",
     "kk": "[pleɡ]",
-    "zh": "n. 瘟疫;天災;禍患",
+    "zh": "n. 瘟疫；天災；禍患",
     "unit": 6,
     "example": "It's like a plague.",
     "exampleZh": "這聽上去像是半夜睡夢中憋尿的問題，但實際上卻是令人討厭的車輛氾濫問題。"
@@ -45786,7 +45786,7 @@ const externalVocabularyDB = [
     "id": 5088,
     "en": "plantation",
     "kk": "[͵plænˋteʃən]",
-    "zh": "n. 大農園;造林地",
+    "zh": "n. 大農園；造林地",
     "unit": 6,
     "example": "They also own about 40 hectares of coffee plantation.",
     "exampleZh": "他們還擁有大約40公頃的咖啡種植園。"
@@ -45804,7 +45804,7 @@ const externalVocabularyDB = [
     "id": 5090,
     "en": "plea",
     "kk": "[pli]",
-    "zh": "n. 請求;懇求",
+    "zh": "n. 請求；懇求",
     "unit": 6,
     "example": "He reached a plea bargain with the authorities.",
     "exampleZh": "他和當局達成了辯訴交易。"
@@ -45849,7 +45849,7 @@ const externalVocabularyDB = [
     "id": 5095,
     "en": "pocketbook",
     "kk": "[ˋpɑkət͵bʊk]",
-    "zh": "n. 錢包;皮夾子;袖珍本",
+    "zh": "n. 錢包；皮夾子；袖珍本",
     "unit": 6,
     "example": "Is anything missing from your pocketbook?",
     "exampleZh": "你的錢包裡缺了什麼嗎？"
@@ -45867,7 +45867,7 @@ const externalVocabularyDB = [
     "id": 5097,
     "en": "porch",
     "kk": "[pɔrtʃ]",
-    "zh": "n. 門廊;入口處;走廊",
+    "zh": "n. 門廊；入口處；走廊",
     "unit": 6,
     "example": "A small boy tumbled off the porch.",
     "exampleZh": "一個小男孩從門廊上摔了下去。"
@@ -45876,7 +45876,7 @@ const externalVocabularyDB = [
     "id": 5098,
     "en": "potential",
     "kk": "[pəˋtɛnʃəl]",
-    "zh": "adj. 可能性；n. 潛力,潛能",
+    "zh": "adj. 可能性；n. 潛力、潛能",
     "unit": 6,
     "example": "The boy has great potential.",
     "exampleZh": "這個男孩有很大的潛力。"
@@ -45903,7 +45903,7 @@ const externalVocabularyDB = [
     "id": 5101,
     "en": "precaution",
     "kk": "[priˋkɔʃən]",
-    "zh": "n. 謹慎;預防措施",
+    "zh": "n. 謹慎；預防措施",
     "unit": 6,
     "example": "Take every precaution to prevent the flag from becoming soiled.",
     "exampleZh": "要採取一切預防措施，以防旗幟被弄髒。"
@@ -45912,7 +45912,7 @@ const externalVocabularyDB = [
     "id": 5102,
     "en": "preference",
     "kk": "[ˋprɛfɚəns]",
-    "zh": "n. 偏愛;優先(權)",
+    "zh": "n. 偏愛；優先(權)",
     "unit": 6,
     "example": "I can't say that I have any particular preference.",
     "exampleZh": "我說不出自己有什麼特別偏好。"
@@ -45957,7 +45957,7 @@ const externalVocabularyDB = [
     "id": 5107,
     "en": "priority",
     "kk": "[praɪˋɔrəti]",
-    "zh": "n. 在先;重點;優先權",
+    "zh": "n. 在先；重點；優先權",
     "unit": 6,
     "example": "Club members will be given priority.",
     "exampleZh": "俱樂部成員享有優先權。"
@@ -45966,7 +45966,7 @@ const externalVocabularyDB = [
     "id": 5108,
     "en": "procession",
     "kk": "[prəˋsɛʃən]",
-    "zh": "n. 一(長)列;一(長)排;隊伍",
+    "zh": "n. 一(長)列；一(長)排；隊伍",
     "unit": 6,
     "example": "The procession made its way down the hill.",
     "exampleZh": "隊伍走下山了。"
@@ -46020,7 +46020,7 @@ const externalVocabularyDB = [
     "id": 5114,
     "en": "province",
     "kk": "[ˋprɑvəns]",
-    "zh": "n. 省,州",
+    "zh": "n. 省、州",
     "unit": 6,
     "example": "Guerrilla groups are active in the province.",
     "exampleZh": "游擊隊組織在該省活動。"
@@ -46065,7 +46065,7 @@ const externalVocabularyDB = [
     "id": 5119,
     "en": "pyramid",
     "kk": "[ˋpɪrəmɪd]",
-    "zh": "n. (常大寫)金字塔;三角錐",
+    "zh": "n. (常大寫)金字塔；三角錐",
     "unit": 6,
     "example": "Imagine this as a pyramid and not a triangle.",
     "exampleZh": "想象這是個金字塔，而不是個三角形。"
@@ -46092,7 +46092,7 @@ const externalVocabularyDB = [
     "id": 5122,
     "en": "quest",
     "kk": "[kwɛst]",
-    "zh": "n. 追求;探索",
+    "zh": "n. 追求；探索",
     "unit": 6,
     "example": "His quest for perfection is relentless.",
     "exampleZh": "他對完美的追求是不懈的。"
@@ -46137,7 +46137,7 @@ const externalVocabularyDB = [
     "id": 5127,
     "en": "rail",
     "kk": "[rel]",
-    "zh": "n. 欄杆;扶手;鐵軌",
+    "zh": "n. 欄杆；扶手；鐵軌",
     "unit": 6,
     "example": "Ticket prices include your flight and onward rail journey.",
     "exampleZh": "票價包括您的飛行航程和接續的鐵路旅費。"
@@ -46164,7 +46164,7 @@ const externalVocabularyDB = [
     "id": 5130,
     "en": "rascal",
     "kk": "[ˋræskəl]",
-    "zh": "n. 無賴;淘氣鬼",
+    "zh": "n. 無賴；淘氣鬼",
     "unit": 6,
     "example": "Come here, you little rascal!",
     "exampleZh": "過來，你這個小壞蛋！"
@@ -46173,7 +46173,7 @@ const externalVocabularyDB = [
     "id": 5131,
     "en": "ratio",
     "kk": "[ˋreʃi͵o]",
-    "zh": "n. 比率;比例",
+    "zh": "n. 比率；比例",
     "unit": 6,
     "example": "The school has a very high teacher-student ratio.",
     "exampleZh": "這所學校的師生比例很高。"
@@ -46191,7 +46191,7 @@ const externalVocabularyDB = [
     "id": 5133,
     "en": "realm",
     "kk": "[rɛlm]",
-    "zh": "n. 王國;國土;領土",
+    "zh": "n. 王國；國土；領土",
     "unit": 6,
     "example": "Defence of the realm is crucial.",
     "exampleZh": "王國的防禦是至關重要的。"
@@ -46209,7 +46209,7 @@ const externalVocabularyDB = [
     "id": 5135,
     "en": "reef",
     "kk": "[rif]",
-    "zh": "n. 礁;暗礁",
+    "zh": "n. 礁；暗礁",
     "unit": 6,
     "example": "Our boat foundered on a reef.",
     "exampleZh": "我們的船觸礁沉沒。"
@@ -46236,7 +46236,7 @@ const externalVocabularyDB = [
     "id": 5138,
     "en": "refuge",
     "kk": "[ˋrɛfjudʒ]",
-    "zh": "n. 躲避;避難;避難所",
+    "zh": "n. 躲避；避難；避難所",
     "unit": 6,
     "example": "They took refuge in a bomb shelter.",
     "exampleZh": "他們在一個防空洞裡避難。"
@@ -46254,7 +46254,7 @@ const externalVocabularyDB = [
     "id": 5140,
     "en": "relic",
     "kk": "[ˋrɛlɪk]",
-    "zh": "n. 遺物;遺風;遺跡",
+    "zh": "n. 遺物；遺風；遺跡",
     "unit": 6,
     "example": "The statue was created to hold a holy relic.",
     "exampleZh": "這座雕像是為了供奉聖物而建造的。"
@@ -46263,7 +46263,7 @@ const externalVocabularyDB = [
     "id": 5141,
     "en": "reminder",
     "kk": "[riˋmaɪndɚ]",
-    "zh": "n. 提醒者,提醒物;催函",
+    "zh": "n. 提醒者、提醒物；催函",
     "unit": 6,
     "example": "This has been a timely reminder to us all.",
     "exampleZh": "對我們大家來說這個提醒非常及時。"
@@ -46290,7 +46290,7 @@ const externalVocabularyDB = [
     "id": 5144,
     "en": "resentment",
     "kk": "[rɪˋzɛntmənt]",
-    "zh": "n. 憤慨;怨恨",
+    "zh": "n. 憤慨；怨恨",
     "unit": 6,
     "example": "He bears no resentment towards them.",
     "exampleZh": "他對他們毫無怨恨。"
@@ -46299,7 +46299,7 @@ const externalVocabularyDB = [
     "id": 5145,
     "en": "residence",
     "kk": "[ˋrɛzɪdəns]",
-    "zh": "n. 住所;住宅",
+    "zh": "n. 住所；住宅",
     "unit": 6,
     "example": "They had entered the country and had applied for permanent residence.",
     "exampleZh": "他們已進入了那個國家，並已經申請了永久居住權。"
@@ -46407,7 +46407,7 @@ const externalVocabularyDB = [
     "id": 5157,
     "en": "rim",
     "kk": "[rɪm]",
-    "zh": "v. 形成......的邊沿、給......鑲邊；n. 邊沿、一週",
+    "zh": "v. 形成…………的邊沿、給…………鑲邊；n. 邊沿、一週",
     "unit": 6,
     "example": "Bike rim is placed on the ground.",
     "exampleZh": "腳踏車輪圈被放在地上。"
@@ -46434,7 +46434,7 @@ const externalVocabularyDB = [
     "id": 5160,
     "en": "rival",
     "kk": "[ˋraɪvəl]",
-    "zh": "v. 與......相匹敵、比得上；n. 競爭對手、敵手",
+    "zh": "v. 與…………相匹敵、比得上；n. 競爭對手、敵手",
     "unit": 6,
     "example": "Rival fans hurled abuse at each other.",
     "exampleZh": "兩幫對立的球迷相互高聲辱罵。"
@@ -46461,7 +46461,7 @@ const externalVocabularyDB = [
     "id": 5163,
     "en": "rod",
     "kk": "[rɑd]",
-    "zh": "n. 棒,桿,竿",
+    "zh": "n. 棒、桿,竿",
     "unit": 6,
     "example": "The rod bent double, the reel shrieked and ratcheted.",
     "exampleZh": "該操作杆加倍彎曲，線軸發出刺耳的嗒嗒聲。"
@@ -46470,7 +46470,7 @@ const externalVocabularyDB = [
     "id": 5164,
     "en": "rubbish",
     "kk": "[ˋrʌbɪʃ]",
-    "zh": "n. 垃圾;廢物",
+    "zh": "n. 垃圾；廢物",
     "unit": 6,
     "example": "The streets were littered with rubbish.",
     "exampleZh": "街上到處都是垃圾。"
@@ -46533,7 +46533,7 @@ const externalVocabularyDB = [
     "id": 5171,
     "en": "sandal",
     "kk": "[ˋsændəl]",
-    "zh": "n. 涼鞋;拖鞋",
+    "zh": "n. 涼鞋；拖鞋",
     "unit": 6,
     "example": "Constant use had fretted the sandal strap to the breaking point.",
     "exampleZh": "涼鞋由於經常穿，鞋帶快磨斷了。"
@@ -46560,7 +46560,7 @@ const externalVocabularyDB = [
     "id": 5174,
     "en": "scandal",
     "kk": "[ˋskændəl]",
-    "zh": "n. 醜聞;醜事",
+    "zh": "n. 醜聞；醜事",
     "unit": 6,
     "example": "The press could scent a scandal.",
     "exampleZh": "記者覺察出有樁醜聞。"
@@ -46659,7 +46659,7 @@ const externalVocabularyDB = [
     "id": 5185,
     "en": "sensation",
     "kk": "[sɛnˋseʃən]",
-    "zh": "n. 感覺;知覺;轟動",
+    "zh": "n. 感覺；知覺；轟動",
     "unit": 6,
     "example": "News of his arrest caused a sensation.",
     "exampleZh": "他被捕的訊息引起了轟動。"
@@ -46668,7 +46668,7 @@ const externalVocabularyDB = [
     "id": 5186,
     "en": "sensitivity",
     "kk": "[͵sɛnsɪˋtɪvɪti]",
-    "zh": "n. 敏感性;感受性",
+    "zh": "n. 敏感性；感受性",
     "unit": 6,
     "example": "Some children develop a sensitivity to cow's milk.",
     "exampleZh": "有的孩子對牛奶過敏。"
@@ -46677,7 +46677,7 @@ const externalVocabularyDB = [
     "id": 5187,
     "en": "sentiment",
     "kk": "[ˋsɛntəmənt]",
-    "zh": "n. 感情;情緒;感傷",
+    "zh": "n. 感情；情緒；感傷",
     "unit": 6,
     "example": "With the last sentiment, Arnold was in hearty agreement.",
     "exampleZh": "對於最後一個觀點，阿諾德強烈贊同。"
@@ -46686,7 +46686,7 @@ const externalVocabularyDB = [
     "id": 5188,
     "en": "sergeant",
     "kk": "[ˋsɑrdʒənt]",
-    "zh": "n. 中士;警官",
+    "zh": "n. 中士；警官",
     "unit": 6,
     "example": "The sergeant assigned him to KP.",
     "exampleZh": "中士派他下伙房去幫廚。"
@@ -46695,7 +46695,7 @@ const externalVocabularyDB = [
     "id": 5189,
     "en": "series",
     "kk": "[ˋsɪriz]",
-    "zh": "n. 連續;系列",
+    "zh": "n. 連續；系列",
     "unit": 6,
     "example": "Her new series is compulsive viewing.",
     "exampleZh": "她的新系列節目引人入勝。"
@@ -46704,7 +46704,7 @@ const externalVocabularyDB = [
     "id": 5190,
     "en": "sermon",
     "kk": "[ˋsɝmən]",
-    "zh": "n. 佈道;說教",
+    "zh": "n. 佈道；說教",
     "unit": 6,
     "example": "Cardinal Murphy will deliver the sermon on Sunday.",
     "exampleZh": "墨菲紅衣主教將在週日佈道。"
@@ -46713,7 +46713,7 @@ const externalVocabularyDB = [
     "id": 5191,
     "en": "server",
     "kk": "[ˋsɝvɚ]",
-    "zh": "n. 侍者;伺服器",
+    "zh": "n. 侍者；伺服器",
     "unit": 6,
     "example": "The server is designed to store huge amounts of data.",
     "exampleZh": "該伺服器是為儲存大量資料設計的。"
@@ -46722,7 +46722,7 @@ const externalVocabularyDB = [
     "id": 5192,
     "en": "setting",
     "kk": "[ˋsɛtɪŋ]",
-    "zh": "n. 安裝;設定;鑲嵌;背景",
+    "zh": "n. 安裝；設定；鑲嵌；背景",
     "unit": 6,
     "example": "The sun was just setting.",
     "exampleZh": "太陽剛往下落。"
@@ -46758,7 +46758,7 @@ const externalVocabularyDB = [
     "id": 5196,
     "en": "shortage",
     "kk": "[ˋʃɔrtədʒ]",
-    "zh": "n. 缺少,不足,匱乏",
+    "zh": "n. 缺少、不足,匱乏",
     "unit": 6,
     "example": "There is an acute shortage of water.",
     "exampleZh": "水嚴重短缺。"
@@ -46767,7 +46767,7 @@ const externalVocabularyDB = [
     "id": 5197,
     "en": "shortcoming",
     "kk": "[ˋʃɔrt͵kʌmɪŋ]",
-    "zh": "n. 缺點,短處",
+    "zh": "n. 缺點、短處",
     "unit": 6,
     "example": "The shortcoming in education is the cause contributing to juvenile delinquency.",
     "exampleZh": "教育上的缺失是助長青少年犯罪的原因。"
@@ -46803,7 +46803,7 @@ const externalVocabularyDB = [
     "id": 5201,
     "en": "shrine",
     "kk": "[ʃraɪn]",
-    "zh": "n. 聖壇;神殿",
+    "zh": "n. 聖壇；神殿",
     "unit": 6,
     "example": "Wimbledon is a shrine for all lovers of tennis.",
     "exampleZh": "溫布林登是所有網球愛好者的聖地。"
@@ -46812,7 +46812,7 @@ const externalVocabularyDB = [
     "id": 5202,
     "en": "shrub",
     "kk": "[ʃrʌb]",
-    "zh": "n. 矮樹;灌木",
+    "zh": "n. 矮樹；灌木",
     "unit": 6,
     "example": "Once shrub covers everything, you lose the meadow habitat.",
     "exampleZh": "一旦灌木覆蓋了一切，你就失去了草地的棲息地。"
@@ -46857,7 +46857,7 @@ const externalVocabularyDB = [
     "id": 5207,
     "en": "skeleton",
     "kk": "[ˋskɛlətən]",
-    "zh": "n. 骨骼;骨瘦如柴的人(或動物);概略",
+    "zh": "n. 骨骼；骨瘦如柴的人(或動物)；概略",
     "unit": 6,
     "example": "The human skeleton consists of 206 bones.",
     "exampleZh": "人的骨骼由206塊骨頭組成。"
@@ -46866,7 +46866,7 @@ const externalVocabularyDB = [
     "id": 5208,
     "en": "skull",
     "kk": "[skʌl]",
-    "zh": "n. 頭骨;骷髏畫",
+    "zh": "n. 頭骨；骷髏畫",
     "unit": 6,
     "example": "She fell and fractured her skull.",
     "exampleZh": "她跌倒摔裂了顱骨。"
@@ -47028,7 +47028,7 @@ const externalVocabularyDB = [
     "id": 5226,
     "en": "spacecraft",
     "kk": "[ˋspe͵skræft]",
-    "zh": "n. 太空船,航天器",
+    "zh": "n. 太空船、航天器",
     "unit": 6,
     "example": "The two spacecraft will link up in orbit.",
     "exampleZh": "兩艘宇宙飛船將在軌道上對接。"
@@ -47046,7 +47046,7 @@ const externalVocabularyDB = [
     "id": 5228,
     "en": "specialist",
     "kk": "[ˋspɛʃələst]",
-    "zh": "n. 專家;專科醫生",
+    "zh": "n. 專家；專科醫生",
     "unit": 6,
     "example": "My doctor referred me to a specialist.",
     "exampleZh": "我的醫生讓我去找一位專家診治。"
@@ -47055,7 +47055,7 @@ const externalVocabularyDB = [
     "id": 5229,
     "en": "specimen",
     "kk": "[ˋspɛsəmən]",
-    "zh": "n. 樣品;標本",
+    "zh": "n. 樣品；標本",
     "unit": 6,
     "example": "This is a very rare specimen.",
     "exampleZh": "這是一個非常罕見的標本。"
@@ -47064,7 +47064,7 @@ const externalVocabularyDB = [
     "id": 5230,
     "en": "spectacle",
     "kk": "[ˋspɛktəkəl]",
-    "zh": "n. 景象;奇觀;壯觀",
+    "zh": "n. 景象；奇觀；壯觀",
     "unit": 6,
     "example": "The sunset was a stunning spectacle.",
     "exampleZh": "夕陽西斜，異常壯觀。"
@@ -47073,7 +47073,7 @@ const externalVocabularyDB = [
     "id": 5231,
     "en": "spectator",
     "kk": "[ˋspɛktetɚ]",
-    "zh": "n. 旁觀者;目擊者",
+    "zh": "n. 旁觀者；目擊者",
     "unit": 6,
     "example": "The most popular spectator sport is football.",
     "exampleZh": "足球是最吸引觀眾的體育比賽。"
@@ -47082,7 +47082,7 @@ const externalVocabularyDB = [
     "id": 5232,
     "en": "spine",
     "kk": "[spaɪn]",
-    "zh": "n. 脊柱;書脊;骨氣",
+    "zh": "n. 脊柱；書脊；骨氣",
     "unit": 6,
     "example": "The disease had deformed his spine.",
     "exampleZh": "疾病導致他脊柱變形。"
@@ -47091,7 +47091,7 @@ const externalVocabularyDB = [
     "id": 5233,
     "en": "splendor",
     "kk": "[ˋsplɛndɚ]",
-    "zh": "n. 光輝;壯觀;輝煌",
+    "zh": "n. 光輝；壯觀；輝煌",
     "unit": 6,
     "example": "The splendor of it was beyond all imagination!",
     "exampleZh": "它的輝煌是超乎想象的！"
@@ -47145,7 +47145,7 @@ const externalVocabularyDB = [
     "id": 5239,
     "en": "stack",
     "kk": "[stæk]",
-    "zh": "v. 使成整齊的一堆、使成疊地放在…...；n. 一堆、垛",
+    "zh": "v. 使成整齊的一堆、使成疊地放在………；n. 一堆、垛",
     "unit": 6,
     "example": "A stack of files awaited me on my desk.",
     "exampleZh": "我桌上有一堆檔案正待我去處理。"
@@ -47172,7 +47172,7 @@ const externalVocabularyDB = [
     "id": 5242,
     "en": "stake",
     "kk": "[stek]",
-    "zh": "v. 拿…...冒險、以…...打賭；n. 股本、股份",
+    "zh": "v. 拿………冒險、以………打賭；n. 股本、股份",
     "unit": 6,
     "example": "Joan of Arc was burnt at the stake.",
     "exampleZh": "聖女貞德被處以火刑。"
@@ -47208,7 +47208,7 @@ const externalVocabularyDB = [
     "id": 5246,
     "en": "statistic",
     "kk": "[stəˋtɪstɪk]",
-    "zh": "n. 統計量;統計數值",
+    "zh": "n. 統計量；統計數值",
     "unit": 6,
     "example": "I know the statistics.",
     "exampleZh": "一個統計報告包含了無數的資料，但是在看的時候，你怎麼會知道那些需要重點關注？"
@@ -47244,7 +47244,7 @@ const externalVocabularyDB = [
     "id": 5250,
     "en": "steward",
     "kk": "[ˋstuɚd]",
-    "zh": "n. 男服務員;管家",
+    "zh": "n. 男服務員；管家",
     "unit": 6,
     "example": "They also claim that the security team elbowed aside a steward.",
     "exampleZh": "他們還聲稱治安隊把一名乘務員推到了一邊。"
@@ -47280,7 +47280,7 @@ const externalVocabularyDB = [
     "id": 5254,
     "en": "storage",
     "kk": "[ˋstɔrədʒ]",
-    "zh": "n. 貯藏;貯藏庫",
+    "zh": "n. 貯藏；貯藏庫",
     "unit": 6,
     "example": "We need more storage now.",
     "exampleZh": "現在我們需要更多的貯存場所。"
@@ -47352,7 +47352,7 @@ const externalVocabularyDB = [
     "id": 5262,
     "en": "stripe",
     "kk": "[straɪp]",
-    "zh": "n. 條紋;斑紋;線條",
+    "zh": "n. 條紋；斑紋；線條",
     "unit": 6,
     "example": "The shirt is striped.",
     "exampleZh": "黑色平跟鞋顯然是首選，但紅色平跟鞋的色彩非常出挑，一年四季都可以穿。它可以和條紋衫以及雙排扣大衣搭配。"
@@ -47406,7 +47406,7 @@ const externalVocabularyDB = [
     "id": 5268,
     "en": "suitcase",
     "kk": "[ˋsut͵kes]",
-    "zh": "n. 小型旅行箱;手提箱",
+    "zh": "n. 小型旅行箱；手提箱",
     "unit": 6,
     "example": "Can you manage that suitcase?",
     "exampleZh": "你弄得動那個箱子嗎？"
@@ -47415,7 +47415,7 @@ const externalVocabularyDB = [
     "id": 5269,
     "en": "sulfur",
     "kk": "[ˋsʌlfɚ]",
-    "zh": "n. 硫(磺);硫磺色",
+    "zh": "n. 硫(磺)；硫磺色",
     "unit": 6,
     "example": "After the fragments' entry, these analyses revealed unprecedented traces of sulfur.",
     "exampleZh": "在碎片進入之後，這些分析揭示了前所未有的硫磺痕跡。"
@@ -47433,7 +47433,7 @@ const externalVocabularyDB = [
     "id": 5271,
     "en": "supervisor",
     "kk": "[ˋsupɚ͵vaɪzɚ]",
-    "zh": "n. 管理人;指導者",
+    "zh": "n. 管理人；指導者",
     "unit": 6,
     "example": "The supervisor is always very critical.",
     "exampleZh": "主管總是很挑剔。"
@@ -47496,7 +47496,7 @@ const externalVocabularyDB = [
     "id": 5278,
     "en": "tart",
     "kk": "[tɑrt]",
-    "zh": "n. 水果餡餅;水果蛋糕",
+    "zh": "n. 水果餡餅；水果蛋糕",
     "unit": 6,
     "example": "The tart flavour of the cranberries adds piquancy.",
     "exampleZh": "越橘的酸味很可口。"
@@ -47514,7 +47514,7 @@ const externalVocabularyDB = [
     "id": 5280,
     "en": "tavern",
     "kk": "[ˋtævɚn]",
-    "zh": "n. 小酒館;小客棧",
+    "zh": "n. 小酒館；小客棧",
     "unit": 6,
     "example": "Here—it's the number of a room—in a tavern, you know!",
     "exampleZh": "這兒——這是房間號——是客棧裡的，你知道吧！"
@@ -47523,7 +47523,7 @@ const externalVocabularyDB = [
     "id": 5281,
     "en": "teller",
     "kk": "[ˋtɛlɚ]",
-    "zh": "n. 敘述者;(銀行)出納員",
+    "zh": "n. 敘述者；(銀行)出納員",
     "unit": 6,
     "example": "Ziri is a teller.",
     "exampleZh": "齊裡是一名出納員。"
@@ -47532,7 +47532,7 @@ const externalVocabularyDB = [
     "id": 5282,
     "en": "tempo",
     "kk": "[ˋtɛm͵po]",
-    "zh": "n. 速度;拍子",
+    "zh": "n. 速度；拍子",
     "unit": 6,
     "example": "It's a difficult piece, with numerous changes of tempo.",
     "exampleZh": "這支曲子節奏變化多，難度很大。"
@@ -47541,7 +47541,7 @@ const externalVocabularyDB = [
     "id": 5283,
     "en": "temptation",
     "kk": "[tɛmˋteʃən]",
-    "zh": "n. 引誘;誘惑;誘惑物",
+    "zh": "n. 引誘；誘惑；誘惑物",
     "unit": 6,
     "example": "An expensive bicycle is a temptation to thieves.",
     "exampleZh": "高檔腳踏車對竊賊是個誘惑。"
@@ -47577,7 +47577,7 @@ const externalVocabularyDB = [
     "id": 5287,
     "en": "thigh",
     "kk": "[θaɪ]",
-    "zh": "n. 股;大腿",
+    "zh": "n. 股；大腿",
     "unit": 6,
     "example": "A thigh injury increasingly hindered her mobility.",
     "exampleZh": "大腿上的傷愈發束縛了她的活動自由。"
@@ -47586,7 +47586,7 @@ const externalVocabularyDB = [
     "id": 5288,
     "en": "thorn",
     "kk": "[θɔrn]",
-    "zh": "n. 刺;棘;惱人的事或人",
+    "zh": "n. 刺；棘；惱人的事或人",
     "unit": 6,
     "example": "It has no thorns.",
     "exampleZh": "它沒有刺。"
@@ -47613,7 +47613,7 @@ const externalVocabularyDB = [
     "id": 5291,
     "en": "throne",
     "kk": "[θron]",
-    "zh": "n. 王座;神座;君權;帝王",
+    "zh": "n. 王座；神座；君權；帝王",
     "unit": 6,
     "example": "The country acknowledged his claim to the throne.",
     "exampleZh": "這個國家承認了他繼承王位的權利。"
@@ -47685,7 +47685,7 @@ const externalVocabularyDB = [
     "id": 5299,
     "en": "toad",
     "kk": "[tod]",
-    "zh": "n. 蟾蜍;令人討厭的人",
+    "zh": "n. 蟾蜍；令人討厭的人",
     "unit": 6,
     "example": "Toad burst out laughing.",
     "exampleZh": "蟾蜍託德哈哈大笑。"
@@ -47703,7 +47703,7 @@ const externalVocabularyDB = [
     "id": 5301,
     "en": "token",
     "kk": "[ˋtokən]",
-    "zh": "n. 標誌;象徵;代價券;籌碼",
+    "zh": "n. 標誌；象徵；代價券；籌碼",
     "unit": 6,
     "example": "We charge only a token fee for use of the facilities.",
     "exampleZh": "我們對使用這些設施只收取象徵性的費用。"
@@ -47730,7 +47730,7 @@ const externalVocabularyDB = [
     "id": 5304,
     "en": "torrent",
     "kk": "[ˋtɔrənt]",
-    "zh": "n. 洪流;(話語的)連發;(感情的)狂潮",
+    "zh": "n. 洪流；(話語的)連發；(感情的)狂潮",
     "unit": 6,
     "example": "The stream had become a raging torrent.",
     "exampleZh": "小溪變成了一條洶湧的急流。"
@@ -47748,7 +47748,7 @@ const externalVocabularyDB = [
     "id": 5306,
     "en": "tournament",
     "kk": "[ˋtʊrnəmənt]",
-    "zh": "n. 比賽;錦標賽",
+    "zh": "n. 比賽；錦標賽",
     "unit": 6,
     "example": "She sprang a surprise by winning the tournament.",
     "exampleZh": "這次比賽她獲得冠軍，爆了個大冷門。"
@@ -47766,7 +47766,7 @@ const externalVocabularyDB = [
     "id": 5308,
     "en": "traitor",
     "kk": "[ˋtretɚ]",
-    "zh": "n. 叛徒;賣國賊;背叛者",
+    "zh": "n. 叛徒；賣國賊；背叛者",
     "unit": 6,
     "example": "He was labelled (as) a traitor by his former colleagues.",
     "exampleZh": "他被以前的同事稱為叛徒。"
@@ -47793,7 +47793,7 @@ const externalVocabularyDB = [
     "id": 5311,
     "en": "treasury",
     "kk": "[ˋtrɛʒɚi]",
-    "zh": "n. 金庫;庫房;國庫;寶庫",
+    "zh": "n. 金庫；庫房；國庫；寶庫",
     "unit": 6,
     "example": "The treasury secretary identified the most heavily indebted countries.",
     "exampleZh": "財政部長明確指出了負債最多的一些國家。"
@@ -47802,7 +47802,7 @@ const externalVocabularyDB = [
     "id": 5312,
     "en": "treaty",
     "kk": "[ˋtriti]",
-    "zh": "n. 條約,協定",
+    "zh": "n. 條約、協定",
     "unit": 6,
     "example": "They concluded a treaty with Turkey.",
     "exampleZh": "他們同土耳其締結了一項條約。"
@@ -47820,7 +47820,7 @@ const externalVocabularyDB = [
     "id": 5314,
     "en": "tribute",
     "kk": "[ˋtrɪbjut]",
-    "zh": "n. 進貢;敬意;尊崇",
+    "zh": "n. 進貢；敬意；尊崇",
     "unit": 6,
     "example": "The song is a tribute to Roy Orbison.",
     "exampleZh": "這首歌是敬獻給羅伊·奧比森的。"
@@ -47865,7 +47865,7 @@ const externalVocabularyDB = [
     "id": 5319,
     "en": "trout",
     "kk": "[traʊt]",
-    "zh": "n. 鱒魚;鮭鱒魚",
+    "zh": "n. 鱒魚；鮭鱒魚",
     "unit": 6,
     "example": "Shall we have trout for dinner?",
     "exampleZh": "我們正餐吃鱒魚好嗎？"
@@ -47901,7 +47901,7 @@ const externalVocabularyDB = [
     "id": 5323,
     "en": "tyrant",
     "kk": "[ˋtaɪrənt]",
-    "zh": "n. 暴君;專橫的人",
+    "zh": "n. 暴君；專橫的人",
     "unit": 6,
     "example": "He is a tyrant who knows no pity.",
     "exampleZh": "他是一個不知憐憫的暴君。"
@@ -47919,7 +47919,7 @@ const externalVocabularyDB = [
     "id": 5325,
     "en": "undergraduate",
     "kk": "[͵ʌndɚˋɡrædʒəwət]",
-    "zh": "n. 大學生;大學肄業生",
+    "zh": "n. 大學生；大學肄業生",
     "unit": 6,
     "example": "She got her undergraduate degree from Nanjing University.",
     "exampleZh": "她本科畢業於南京大學。"
@@ -47964,7 +47964,7 @@ const externalVocabularyDB = [
     "id": 5330,
     "en": "vacancy",
     "kk": "[ˋvekənsi]",
-    "zh": "n. 空;空白;空房;空缺",
+    "zh": "n. 空；空白；空房；空缺",
     "unit": 6,
     "example": "The vacancy has already been filled.",
     "exampleZh": "該空缺已有人接任。"
@@ -47982,7 +47982,7 @@ const externalVocabularyDB = [
     "id": 5332,
     "en": "vanity",
     "kk": "[ˋvænəti]",
-    "zh": "n. 自負;虛榮;梳妝臺",
+    "zh": "n. 自負；虛榮；梳妝臺",
     "unit": 6,
     "example": "Men who use steroids are motivated by sheer vanity.",
     "exampleZh": "服用類固醇的男人們純粹是受了虛榮心的驅使。"
@@ -48000,7 +48000,7 @@ const externalVocabularyDB = [
     "id": 5334,
     "en": "vegetation",
     "kk": "[͵vɛdʒəˋteʃən]",
-    "zh": "n. 植被;草木",
+    "zh": "n. 植被；草木",
     "unit": 6,
     "example": "We fought our way through the dense vegetation.",
     "exampleZh": "我們在茂密的植被中開出一條通路。"
@@ -48018,7 +48018,7 @@ const externalVocabularyDB = [
     "id": 5336,
     "en": "vein",
     "kk": "[ven]",
-    "zh": "n. 靜脈;(葉、翅、礦)脈;紋理",
+    "zh": "n. 靜脈；(葉、翅、礦)脈；紋理",
     "unit": 6,
     "example": "A tiny wire is threaded through a vein to the heart.",
     "exampleZh": "一根細金屬絲從靜脈裡穿到心臟。"
@@ -48081,7 +48081,7 @@ const externalVocabularyDB = [
     "id": 5343,
     "en": "viewer",
     "kk": "[ˋvjuɚ]",
-    "zh": "n. 觀看者;觀眾",
+    "zh": "n. 觀看者；觀眾",
     "unit": 6,
     "example": "Background music may aid viewer understanding by linking scenes.",
     "exampleZh": "背景音樂可以透過聯絡場景來幫助觀眾理解。"
@@ -48099,7 +48099,7 @@ const externalVocabularyDB = [
     "id": 5345,
     "en": "villain",
     "kk": "[ˋvɪlən]",
-    "zh": "n. 壞人;反派角色",
+    "zh": "n. 壞人；反派角色",
     "unit": 6,
     "example": "Frank ran errands for a seedy local villain.",
     "exampleZh": "弗蘭克為當地一個聲名狼藉的惡棍跑腿。"
@@ -48108,7 +48108,7 @@ const externalVocabularyDB = [
     "id": 5346,
     "en": "vine",
     "kk": "[vaɪn]",
-    "zh": "n. 藤;藤蔓;葡萄樹",
+    "zh": "n. 藤；藤蔓；葡萄樹",
     "unit": 6,
     "example": "A vine wraps round a big tree.",
     "exampleZh": "一根藤繞在一棵大樹上。"
@@ -48171,7 +48171,7 @@ const externalVocabularyDB = [
     "id": 5353,
     "en": "ware",
     "kk": "[wɛr]",
-    "zh": "n. (特定種類的)陶器;貨物",
+    "zh": "n. (特定種類的)陶器；貨物",
     "unit": 6,
     "example": "The merchant displayed his ceramic wares at the market.",
     "exampleZh": "商人在市集上展示他的陶瓷器皿。"
@@ -48189,7 +48189,7 @@ const externalVocabularyDB = [
     "id": 5355,
     "en": "warrior",
     "kk": "[ˋwɔriɚ]",
-    "zh": "n. 武士;戰士;勇士",
+    "zh": "n. 武士；戰士；勇士",
     "unit": 6,
     "example": "The fighting transforms him into a warrior.",
     "exampleZh": "戰鬥使他成為一名戰士。"
@@ -48306,7 +48306,7 @@ const externalVocabularyDB = [
     "id": 5368,
     "en": "wilderness",
     "kk": "[ˋwɪldɚnəs]",
-    "zh": "n. 荒野,荒漠",
+    "zh": "n. 荒野、荒漠",
     "unit": 6,
     "example": "This area has been christened 'Britain's last wilderness'.",
     "exampleZh": "這個地區被命名為“英國最後的荒野”。"
@@ -48324,7 +48324,7 @@ const externalVocabularyDB = [
     "id": 5370,
     "en": "woe",
     "kk": "[wo]",
-    "zh": "n. 悲哀;災難",
+    "zh": "n. 悲哀；災難",
     "unit": 6,
     "example": "He listened to my tale of woe.",
     "exampleZh": "他聽了我悲傷的故事。"
@@ -48342,7 +48342,7 @@ const externalVocabularyDB = [
     "id": 5372,
     "en": "workshop",
     "kk": "[ˋwɝk͵ʃɑp]",
-    "zh": "n. 作坊;研討會",
+    "zh": "n. 作坊；研討會",
     "unit": 6,
     "example": "This workshop helps young unemployed people.",
     "exampleZh": "這個講習班幫助失業的年輕人。"
@@ -48360,7 +48360,7 @@ const externalVocabularyDB = [
     "id": 5374,
     "en": "wreath",
     "kk": "[riθ]",
-    "zh": "n. 花圈;花冠",
+    "zh": "n. 花圈；花冠",
     "unit": 6,
     "example": "The Queen laid a wreath at the war memorial.",
     "exampleZh": "女王向陣亡將士紀念碑獻了花圈。"
@@ -48396,7 +48396,7 @@ const externalVocabularyDB = [
     "id": 5378,
     "en": "yeast",
     "kk": "[jist]",
-    "zh": "n. 酵母;酵母片",
+    "zh": "n. 酵母；酵母片",
     "unit": 6,
     "example": "Yeast is essential for the fermentation that produces alcohol.",
     "exampleZh": "酵母對釀酒的發酵是必要的。"
@@ -48459,7 +48459,7 @@ const externalVocabularyDB = [
     "id": 5385,
     "en": "absentminded",
     "kk": "[͵æbsəntˋmaɪndɪd]",
-    "zh": "adj. 心不在焉的;健忘的",
+    "zh": "adj. 心不在焉的；健忘的",
     "unit": 6,
     "example": "Tell him never be absentminded.",
     "exampleZh": "告訴他切不可心不在焉。"
@@ -48468,7 +48468,7 @@ const externalVocabularyDB = [
     "id": 5386,
     "en": "accessible",
     "kk": "[ækˋsɛsəbəl]",
-    "zh": "adj. 可(或易)接近的;可(或易)得到的",
+    "zh": "adj. 可(或易)接近的；可(或易)得到的",
     "unit": 6,
     "example": "The museum is easily accessible by car.",
     "exampleZh": "開車可以方便地到達博物館。"
@@ -48477,7 +48477,7 @@ const externalVocabularyDB = [
     "id": 5387,
     "en": "accountable",
     "kk": "[əˋkaʊntəbəl]",
-    "zh": "adj. 應負責任的;可說明的",
+    "zh": "adj. 應負責任的；可說明的",
     "unit": 6,
     "example": "Politicians are ultimately accountable to the voters.",
     "exampleZh": "從政者最終是向選民負責。"
@@ -48486,7 +48486,7 @@ const externalVocabularyDB = [
     "id": 5388,
     "en": "acute",
     "kk": "[əˋkjut]",
-    "zh": "adj. 尖銳的;敏銳的;劇烈的",
+    "zh": "adj. 尖銳的；敏銳的；劇烈的",
     "unit": 6,
     "example": "He collapsed from acute renal failure.",
     "exampleZh": "他的身體因嚴重的腎衰竭而垮掉了。"
@@ -48495,7 +48495,7 @@ const externalVocabularyDB = [
     "id": 5389,
     "en": "administrative",
     "kk": "[ədˋmɪnə͵stretɪv]",
-    "zh": "adj. 管理的;行政的",
+    "zh": "adj. 管理的；行政的",
     "unit": 6,
     "example": "Administrative work occupies half of my time.",
     "exampleZh": "行政事務佔用了我一半的時間。"
@@ -48504,7 +48504,7 @@ const externalVocabularyDB = [
     "id": 5390,
     "en": "affectionate",
     "kk": "[əˋfɛkʃənət]",
-    "zh": "adj. 充滿深情的;溫柔親切的",
+    "zh": "adj. 充滿深情的；溫柔親切的",
     "unit": 6,
     "example": "He gave her knee an affectionate pat.",
     "exampleZh": "他溫情地拍了拍她的膝蓋。"
@@ -48549,16 +48549,16 @@ const externalVocabularyDB = [
     "id": 5395,
     "en": "applicable",
     "kk": "[ˋæpləkəbəl]",
-    "zh": "adj. 合用的;可實施的",
+    "zh": "adj. 合用的；可實施的",
     "unit": 6,
-    "example": "Can you use the word applicable in a sentence?",
-    "exampleZh": "你能在句子中使用「可實施的」這個詞嗎？"
+    "example": "The discount coupon is applicable only to newly registered members.",
+    "exampleZh": "此折扣券僅適用於新註冊的會員。"
   },
   {
     "id": 5396,
     "en": "arrogant",
     "kk": "[ˋɛrəɡənt]",
-    "zh": "adj. 傲慢的;自大的",
+    "zh": "adj. 傲慢的；自大的",
     "unit": 6,
     "example": "That sounds arrogant, doesn't it?",
     "exampleZh": "那聽起來很傲慢，不是嗎？"
@@ -48567,7 +48567,7 @@ const externalVocabularyDB = [
     "id": 5397,
     "en": "authentic",
     "kk": "[əˋθɛntɪk]",
-    "zh": "adj. 可信的;真實的",
+    "zh": "adj. 可信的；真實的",
     "unit": 6,
     "example": "I don't know if the painting is authentic.",
     "exampleZh": "我不知道這幅畫是不是真跡。"
@@ -48576,7 +48576,7 @@ const externalVocabularyDB = [
     "id": 5398,
     "en": "awesome",
     "kk": "[ˋɑsəm]",
-    "zh": "adj. 令人敬畏的;非凡的",
+    "zh": "adj. 令人敬畏的；非凡的",
     "unit": 6,
     "example": "It's a totally awesome experience.",
     "exampleZh": "這是個棒極了的經歷。"
@@ -48585,7 +48585,7 @@ const externalVocabularyDB = [
     "id": 5399,
     "en": "biological",
     "kk": "[͵baɪəˋlɑdʒɪkəl]",
-    "zh": "adj. 生物的;生物學的",
+    "zh": "adj. 生物的；生物學的",
     "unit": 6,
     "example": "Many biological processes are controlled by hormones.",
     "exampleZh": "許多生物變化過程都是由激素控制的。"
@@ -48594,7 +48594,7 @@ const externalVocabularyDB = [
     "id": 5400,
     "en": "bizarre",
     "kk": "[bəˋzɑr]",
-    "zh": "adj. 奇異的;異乎尋常的",
+    "zh": "adj. 奇異的；異乎尋常的",
     "unit": 6,
     "example": "The building was of bizarre construction.",
     "exampleZh": "這建築構造奇異。"
@@ -48603,7 +48603,7 @@ const externalVocabularyDB = [
     "id": 5401,
     "en": "bleak",
     "kk": "[blik]",
-    "zh": "adj. 荒涼的;陰冷的;無希望的",
+    "zh": "adj. 荒涼的；陰冷的；無希望的",
     "unit": 6,
     "example": "The outlook for jobs is bleak.",
     "exampleZh": "就業市場前景暗淡。"
@@ -48612,7 +48612,7 @@ const externalVocabularyDB = [
     "id": 5402,
     "en": "brisk",
     "kk": "[brɪsk]",
-    "zh": "adj. 輕快的;興旺的;寒冷而清新的",
+    "zh": "adj. 輕快的；興旺的；寒冷而清新的",
     "unit": 6,
     "example": "She adopted a brisk businesslike tone.",
     "exampleZh": "她用一種公務口吻，說話乾脆利落。"
@@ -48621,7 +48621,7 @@ const externalVocabularyDB = [
     "id": 5403,
     "en": "bulky",
     "kk": "[ˋbʌlki]",
-    "zh": "adj. 體積大的;笨重的",
+    "zh": "adj. 體積大的；笨重的",
     "unit": 6,
     "example": "This box is too bulky to carry.",
     "exampleZh": "這個盒子太大了，搬不動。"
@@ -48630,7 +48630,7 @@ const externalVocabularyDB = [
     "id": 5404,
     "en": "charitable",
     "kk": "[ˋtʃærətəbəl]",
-    "zh": "adj. 慈善的;寬容的",
+    "zh": "adj. 慈善的；寬容的",
     "unit": 6,
     "example": "He had set up two charitable trusts.",
     "exampleZh": "他已經成立了兩家慈善信託機構。"
@@ -48639,7 +48639,7 @@ const externalVocabularyDB = [
     "id": 5405,
     "en": "chronic",
     "kk": "[ˋkrɑnɪk]",
-    "zh": "adj. (病)慢性的;(人)久病的;長期的",
+    "zh": "adj. (病)慢性的；(人)久病的；長期的",
     "unit": 6,
     "example": "He was suffering from chronic bronchitis.",
     "exampleZh": "他患有慢性支氣管炎。"
@@ -48648,7 +48648,7 @@ const externalVocabularyDB = [
     "id": 5406,
     "en": "clinical",
     "kk": "[ˋklɪnəkəl]",
-    "zh": "adj. 臨床的;診所的",
+    "zh": "adj. 臨床的；診所的",
     "unit": 6,
     "example": "The new drug is undergoing clinical trials.",
     "exampleZh": "這種新藥正在進行臨床試驗。"
@@ -48657,7 +48657,7 @@ const externalVocabularyDB = [
     "id": 5407,
     "en": "coherent",
     "kk": "[koˋhɪrənt]",
-    "zh": "adj. 一致的;條理清楚的;連貫的",
+    "zh": "adj. 一致的；條理清楚的；連貫的",
     "unit": 6,
     "example": "The subjects of the curriculum form a coherent whole.",
     "exampleZh": "課程中的科目構成了一個連貫的整體。"
@@ -48666,7 +48666,7 @@ const externalVocabularyDB = [
     "id": 5408,
     "en": "colloquial",
     "kk": "[kəˋlokwiəl]",
-    "zh": "adj. 口語的;會話的",
+    "zh": "adj. 口語的；會話的",
     "unit": 6,
     "example": "She speaks with a colloquial Kabyle.",
     "exampleZh": "她用卡比爾口語說話。"
@@ -48675,7 +48675,7 @@ const externalVocabularyDB = [
     "id": 5409,
     "en": "communicative",
     "kk": "[kəˋmjunəkətɪv]",
-    "zh": "adj. 愛說話的;交際的",
+    "zh": "adj. 愛說話的；交際的",
     "unit": 6,
     "example": "I don't find him very communicative.",
     "exampleZh": "我發現他不太愛說話。"
@@ -48684,7 +48684,7 @@ const externalVocabularyDB = [
     "id": 5410,
     "en": "comparable",
     "kk": "[ˋkɑmpɚəbəl]",
-    "zh": "adj. 可比較的;比得上的",
+    "zh": "adj. 可比較的；比得上的",
     "unit": 6,
     "example": "By contrast, the comparable figure for Canada is 16 percent.",
     "exampleZh": "對比之下，加拿大的可比數字是16%。"
@@ -48693,7 +48693,7 @@ const externalVocabularyDB = [
     "id": 5411,
     "en": "comparative",
     "kk": "[kəmˋpɛrətɪv]",
-    "zh": "adj. 比較的;相對的",
+    "zh": "adj. 比較的；相對的",
     "unit": 6,
     "example": "The task was accomplished with comparative ease.",
     "exampleZh": "這項任務完成得比較容易。"
@@ -48702,7 +48702,7 @@ const externalVocabularyDB = [
     "id": 5412,
     "en": "compatible",
     "kk": "[kəmˋpætəbəl]",
-    "zh": "adj. 能共處的;可並立的;相容的",
+    "zh": "adj. 能共處的；可並立的；相容的",
     "unit": 6,
     "example": "The new system will be compatible with existing equipment.",
     "exampleZh": "新的系統將與現有的裝置相互相容。"
@@ -48711,7 +48711,7 @@ const externalVocabularyDB = [
     "id": 5413,
     "en": "competent",
     "kk": "[ˋkɑmpətɪnt]",
-    "zh": "adj. 有能力的;能幹的;能勝任的",
+    "zh": "adj. 有能力的；能幹的；能勝任的",
     "unit": 6,
     "example": "He's very competent in his work.",
     "exampleZh": "他非常勝任自己的工作。"
@@ -48720,7 +48720,7 @@ const externalVocabularyDB = [
     "id": 5414,
     "en": "comprehensive",
     "kk": "[͵kɑmpriˋhɛnsɪv]",
-    "zh": "adj. 廣泛的;綜合的",
+    "zh": "adj. 廣泛的；綜合的",
     "unit": 6,
     "example": "Streaming within comprehensive schools is common practice.",
     "exampleZh": "綜合中學常把學生按能力分班。"
@@ -48738,7 +48738,7 @@ const externalVocabularyDB = [
     "id": 5416,
     "en": "confidential",
     "kk": "[͵kɑnfəˋdɛnʃəl]",
-    "zh": "adj. 祕密的;機密的",
+    "zh": "adj. 祕密的；機密的",
     "unit": 6,
     "example": "The deliberations of the committee are completely confidential.",
     "exampleZh": "委員會的審議過程是絕對保密的。"
@@ -48747,7 +48747,7 @@ const externalVocabularyDB = [
     "id": 5417,
     "en": "conscientious",
     "kk": "[͵kɑnʃiˋɛnʃəs]",
-    "zh": "adj. 憑良心的;誠實的;認真的",
+    "zh": "adj. 憑良心的；誠實的；認真的",
     "unit": 6,
     "example": "We are generally very conscientious about our work.",
     "exampleZh": "我們一般對工作都是很認真的。"
@@ -48756,7 +48756,7 @@ const externalVocabularyDB = [
     "id": 5418,
     "en": "controversial",
     "kk": "[͵kɑntrəˋvɝʃəl]",
-    "zh": "adj. 有爭議的;好議論的",
+    "zh": "adj. 有爭議的；好議論的",
     "unit": 6,
     "example": "Immigration is a controversial issue in many countries.",
     "exampleZh": "移民在很多國家都是一個有爭議的問題。"
@@ -48765,7 +48765,7 @@ const externalVocabularyDB = [
     "id": 5419,
     "en": "cordial",
     "kk": "[ˋkɔrdʒəl]",
-    "zh": "adj. 熱忱的;衷心的",
+    "zh": "adj. 熱忱的；衷心的",
     "unit": 6,
     "example": "He had never known him to be so chatty and cordial.",
     "exampleZh": "他以前從來不知道他是這樣一個健談而友善的人。"
@@ -48774,7 +48774,7 @@ const externalVocabularyDB = [
     "id": 5420,
     "en": "corporate",
     "kk": "[ˋkɔrpɚət]",
-    "zh": "adj. 法人(組織)的;團體的;共同的",
+    "zh": "adj. 法人(組織)的；團體的；共同的",
     "unit": 6,
     "example": "The BBC is a corporate body.",
     "exampleZh": "英國廣播公司為法人團體。"
@@ -48783,7 +48783,7 @@ const externalVocabularyDB = [
     "id": 5421,
     "en": "cosmetic",
     "kk": "[kɑzˋmɛtɪk]",
-    "zh": "adj. 化妝用的;裝飾性的;表面的",
+    "zh": "adj. 化妝用的；裝飾性的；表面的",
     "unit": 6,
     "example": "Melanie plunked her cosmetic case down on a chair.",
     "exampleZh": "梅拉妮把化妝盒漫不經心地扔到了椅子上。"
@@ -48792,7 +48792,7 @@ const externalVocabularyDB = [
     "id": 5422,
     "en": "credible",
     "kk": "[ˋkrɛdəbəl]",
-    "zh": "adj. 可信的;可靠的",
+    "zh": "adj. 可信的；可靠的",
     "unit": 6,
     "example": "Her claims seem credible to many.",
     "exampleZh": "她的說法似乎在許多人看來是可信的。"
@@ -48801,7 +48801,7 @@ const externalVocabularyDB = [
     "id": 5423,
     "en": "crooked",
     "kk": "[ˋkrʊkəd]",
-    "zh": "adj. 彎曲的;欺詐的;不正派的",
+    "zh": "adj. 彎曲的；欺詐的；不正派的",
     "unit": 6,
     "example": "Your glasses are on crooked.",
     "exampleZh": "你的眼鏡歪了。"
@@ -48810,7 +48810,7 @@ const externalVocabularyDB = [
     "id": 5424,
     "en": "crucial",
     "kk": "[ˋkruʃəl]",
-    "zh": "adj. 決定性的;重要的",
+    "zh": "adj. 決定性的；重要的",
     "unit": 6,
     "example": "This last point is crucial.",
     "exampleZh": "剛講的這一點是關鍵的。"
@@ -48819,7 +48819,7 @@ const externalVocabularyDB = [
     "id": 5425,
     "en": "crude",
     "kk": "[krud]",
-    "zh": "adj. 未經加工的;粗野的;粗糙的",
+    "zh": "adj. 未經加工的；粗野的；粗糙的",
     "unit": 6,
     "example": "Must you be quite so crude?",
     "exampleZh": "你一定要這樣粗魯嗎？"
@@ -48828,7 +48828,7 @@ const externalVocabularyDB = [
     "id": 5426,
     "en": "cumulative",
     "kk": "[ˋkjumjələtɪv]",
-    "zh": "adj. 漸增的;蓄積的;累計的",
+    "zh": "adj. 漸增的；蓄積的；累計的",
     "unit": 6,
     "example": "Lost sleep has a cumulative effect, I've been told.",
     "exampleZh": "有人告訴我，睡眠不足會產生累積效應。"
@@ -48837,7 +48837,7 @@ const externalVocabularyDB = [
     "id": 5427,
     "en": "customary",
     "kk": "[ˋkʌstə͵mɛri]",
-    "zh": "adj. 習慣上的;按慣例的",
+    "zh": "adj. 習慣上的；按慣例的",
     "unit": 6,
     "example": "It is no longer customary.",
     "exampleZh": "這已不再是慣例。"
@@ -48846,7 +48846,7 @@ const externalVocabularyDB = [
     "id": 5428,
     "en": "decent",
     "kk": "[ˋdisənt]",
-    "zh": "adj. 正派的;體面的",
+    "zh": "adj. 正派的；體面的",
     "unit": 6,
     "example": "He did the decent thing and resigned.",
     "exampleZh": "他做得很體面，辭職了。"
@@ -48855,7 +48855,7 @@ const externalVocabularyDB = [
     "id": 5429,
     "en": "decisive",
     "kk": "[dɪˋsaɪsɪv]",
-    "zh": "adj. 決定性的;確定的;果斷的",
+    "zh": "adj. 決定性的；確定的；果斷的",
     "unit": 6,
     "example": "He is decisive and won't shrink from a fight.",
     "exampleZh": "他很果斷，而且不會逃避戰鬥。"
@@ -48864,7 +48864,7 @@ const externalVocabularyDB = [
     "id": 5430,
     "en": "dental",
     "kk": "[ˋdɛntəl]",
-    "zh": "adj. 牙齒的;牙科的",
+    "zh": "adj. 牙齒的；牙科的",
     "unit": 6,
     "example": "I've got a dental appointment at 3 o'clock.",
     "exampleZh": "我約了3點看牙醫。"
@@ -48873,7 +48873,7 @@ const externalVocabularyDB = [
     "id": 5431,
     "en": "destined",
     "kk": "[ˋdɛstɪnd]",
-    "zh": "adj. 命中注定的;(場所)預定的",
+    "zh": "adj. 命中注定的；(場所)預定的",
     "unit": 6,
     "example": "What if I'm destined to fail?",
     "exampleZh": "如果我註定要失敗呢？"
@@ -48882,7 +48882,7 @@ const externalVocabularyDB = [
     "id": 5432,
     "en": "diplomatic",
     "kk": "[͵dɪpləˋmætɪk]",
-    "zh": "adj. 外交的;有外交手腕的",
+    "zh": "adj. 外交的；有外交手腕的",
     "unit": 6,
     "example": "Britain and Argentina reopened diplomatic relations.",
     "exampleZh": "英國和阿根廷重新建立了外交關係。"
@@ -48891,7 +48891,7 @@ const externalVocabularyDB = [
     "id": 5433,
     "en": "disastrous",
     "kk": "[dɪˋzæstrəs]",
-    "zh": "adj. 災害的;悲慘的",
+    "zh": "adj. 災害的；悲慘的",
     "unit": 6,
     "example": "If word got out now, a scandal could be disastrous.",
     "exampleZh": "如果現在洩露訊息，醜聞可能會是災難性的。"
@@ -48900,7 +48900,7 @@ const externalVocabularyDB = [
     "id": 5434,
     "en": "disciplinary",
     "kk": "[ˋdɪsəplə͵nɛri]",
-    "zh": "adj. 訓練的;紀律的;懲戒的",
+    "zh": "adj. 訓練的；紀律的；懲戒的",
     "unit": 6,
     "example": "He will now face a disciplinary hearing for having an affair.",
     "exampleZh": "他將因一起風流韻事而面對一場紀律聽證會。"
@@ -48909,7 +48909,7 @@ const externalVocabularyDB = [
     "id": 5435,
     "en": "discreet",
     "kk": "[dɪˋskrit]",
-    "zh": "adj. 謹慎的;謙虛的;不引人注意的",
+    "zh": "adj. 謹慎的；謙虛的；不引人注意的",
     "unit": 6,
     "example": "They were gossipy and not always discreet.",
     "exampleZh": "他們愛說閒話，而且不總是言語謹慎。"
@@ -48918,7 +48918,7 @@ const externalVocabularyDB = [
     "id": 5436,
     "en": "disgraceful",
     "kk": "[dɪˋsɡresfəl]",
-    "zh": "adj. 不名譽的;可恥的",
+    "zh": "adj. 不名譽的；可恥的",
     "unit": 6,
     "example": "His behaviour was absolutely disgraceful!",
     "exampleZh": "他的行為真可恥！"
@@ -48927,7 +48927,7 @@ const externalVocabularyDB = [
     "id": 5437,
     "en": "dispensable",
     "kk": "[dɪˋspɛnsəbəl]",
-    "zh": "adj. 非必要的;可分配的",
+    "zh": "adj. 非必要的；可分配的",
     "unit": 6,
     "example": "They looked on music and art lessons as dispensable.",
     "exampleZh": "他們認為音樂課和美術課是可有可無的。"
@@ -48936,7 +48936,7 @@ const externalVocabularyDB = [
     "id": 5438,
     "en": "diverse",
     "kk": "[daɪˋvɝs]",
-    "zh": "adj. 互異的;多變化的",
+    "zh": "adj. 互異的；多變化的",
     "unit": 6,
     "example": "Cuba is a composite of diverse traditions and people.",
     "exampleZh": "古巴是一個不同傳統和民族的融合體。"
@@ -48945,7 +48945,7 @@ const externalVocabularyDB = [
     "id": 5439,
     "en": "drastic",
     "kk": "[ˋdræstɪk]",
-    "zh": "adj. 激烈的;極端的",
+    "zh": "adj. 激烈的；極端的",
     "unit": 6,
     "example": "Talk to me before you do anything drastic.",
     "exampleZh": "你採取任何重大行動之前要跟我談談。"
@@ -48954,7 +48954,7 @@ const externalVocabularyDB = [
     "id": 5440,
     "en": "dreary",
     "kk": "[ˋdrɪri]",
-    "zh": "adj. 慘淡的;沈悶的",
+    "zh": "adj. 慘淡的；沈悶的",
     "unit": 6,
     "example": "They will brighten the dreary lives of Cubans.",
     "exampleZh": "他們將照亮古巴人沉悶的生活。"
@@ -48963,7 +48963,7 @@ const externalVocabularyDB = [
     "id": 5441,
     "en": "dual",
     "kk": "[ˋduəl]",
-    "zh": "adj. 雙的;雙倍的;雙重的",
+    "zh": "adj. 雙的；雙倍的；雙重的",
     "unit": 6,
     "example": "Dual language programs can be an exception.",
     "exampleZh": "雙語課程可能是個例外。"
@@ -48972,7 +48972,7 @@ const externalVocabularyDB = [
     "id": 5442,
     "en": "dubious",
     "kk": "[ˋdubiəs]",
-    "zh": "adj. 半信半疑的;含糊的",
+    "zh": "adj. 半信半疑的；含糊的",
     "unit": 6,
     "example": "The testimony given by him is dubious.",
     "exampleZh": "他作的證不可信。"
@@ -48981,16 +48981,16 @@ const externalVocabularyDB = [
     "id": 5443,
     "en": "edible",
     "kk": "[ˋɛdəbəl]",
-    "zh": "adj. 可食的,食用的",
+    "zh": "adj. 可食的、食用的",
     "unit": 6,
-    "example": "Can you use the word edible in a sentence?",
-    "exampleZh": "你能在句子中使用「可食的,食用的」這個詞嗎？"
+    "example": "Some colorful wild mushrooms look attractive but are completely not edible.",
+    "exampleZh": "有些色彩鮮豔的野生蘑菇外觀誘人，但完全不可食用。"
   },
   {
     "id": 5444,
     "en": "eligible",
     "kk": "[ˋɛlədʒəbəl]",
-    "zh": "adj. 有資格當選的;合格的",
+    "zh": "adj. 有資格當選的；合格的",
     "unit": 6,
     "example": "They are not eligible for sick pay.",
     "exampleZh": "他們沒有資格領病假工資。"
@@ -48999,7 +48999,7 @@ const externalVocabularyDB = [
     "id": 5445,
     "en": "eloquent",
     "kk": "[ˋɛləkwənt]",
-    "zh": "adj. 雄辯的;口才流利的",
+    "zh": "adj. 雄辯的；口才流利的",
     "unit": 6,
     "example": "I heard him make a very eloquent speech at that dinner.",
     "exampleZh": "我聽他在那次晚餐上做了一次很有說服力的演說。"
@@ -49008,7 +49008,7 @@ const externalVocabularyDB = [
     "id": 5446,
     "en": "emphatic",
     "kk": "[ɛmˋfætɪk]",
-    "zh": "adj. 強調的;著重的",
+    "zh": "adj. 強調的；著重的",
     "unit": 6,
     "example": "His response was immediate and emphatic.",
     "exampleZh": "他的回答迅速且斷然。"
@@ -49017,7 +49017,7 @@ const externalVocabularyDB = [
     "id": 5447,
     "en": "ethical",
     "kk": "[ˋɛθɪkəl]",
-    "zh": "adj. 倫理的;道德的",
+    "zh": "adj. 倫理的；道德的",
     "unit": 6,
     "example": "The trade association promotes ethical business practices.",
     "exampleZh": "這個貿易協會提倡合乎道德標準的商業行為。"
@@ -49026,7 +49026,7 @@ const externalVocabularyDB = [
     "id": 5448,
     "en": "excessive",
     "kk": "[ɪkˋsɛsɪv]",
-    "zh": "adj. 過度的;極度的",
+    "zh": "adj. 過度的；極度的",
     "unit": 6,
     "example": "Excessive conformity is usually caused by fear of disapproval.",
     "exampleZh": "過分隨大流通常是由於擔心不被認同造成的。"
@@ -49035,7 +49035,7 @@ const externalVocabularyDB = [
     "id": 5449,
     "en": "exclusive",
     "kk": "[ɪkˋsklusɪv]",
-    "zh": "adj. 排外的;唯一的;獨家的",
+    "zh": "adj. 排外的；唯一的；獨家的",
     "unit": 6,
     "example": "Some papers thought they had an exclusive.",
     "exampleZh": "一些報社以為他們有一條獨家報道。"
@@ -49044,7 +49044,7 @@ const externalVocabularyDB = [
     "id": 5450,
     "en": "explicit",
     "kk": "[ɪkˋsplɪsət]",
-    "zh": "adj. 詳盡的;清楚的",
+    "zh": "adj. 詳盡的；清楚的",
     "unit": 6,
     "example": "He gave me very explicit directions on how to get there.",
     "exampleZh": "他清楚地向我說明了去那兒的路線。"
@@ -49053,7 +49053,7 @@ const externalVocabularyDB = [
     "id": 5451,
     "en": "exquisite",
     "kk": "[ˋɛkskwəzət]",
-    "zh": "adj. 精緻的;精良的;精選的",
+    "zh": "adj. 精緻的；精良的；精選的",
     "unit": 6,
     "example": "We admired her exquisite handiwork.",
     "exampleZh": "我們欣賞她精緻的手工藝品。"
@@ -49071,7 +49071,7 @@ const externalVocabularyDB = [
     "id": 5453,
     "en": "fabulous",
     "kk": "[ˋfæbjələs]",
-    "zh": "adj. 極好的;驚人的",
+    "zh": "adj. 極好的；驚人的",
     "unit": 6,
     "example": "Jane is a fabulous cook.",
     "exampleZh": "簡的烹飪技巧堪稱一絕。"
@@ -49080,7 +49080,7 @@ const externalVocabularyDB = [
     "id": 5454,
     "en": "feasible",
     "kk": "[ˋfizəbəl]",
-    "zh": "adj. 可行的;可能的",
+    "zh": "adj. 可行的；可能的",
     "unit": 6,
     "example": "How feasible is this vision?",
     "exampleZh": "這一設想的可行性如何？"
@@ -49098,7 +49098,7 @@ const externalVocabularyDB = [
     "id": 5456,
     "en": "fireproof",
     "kk": "[ˋfaɪɚ͵pruf]",
-    "zh": "adj. 防火的;耐火的",
+    "zh": "adj. 防火的；耐火的",
     "unit": 6,
     "example": "Each building had fireproof drywalls to protect the stairwells.",
     "exampleZh": "每座大樓都有防火幹板牆保護其樓梯井。"
@@ -49107,7 +49107,7 @@ const externalVocabularyDB = [
     "id": 5457,
     "en": "formidable",
     "kk": "[ˋfɔrmədəbəl]",
-    "zh": "adj. 令人畏懼的;難對付的",
+    "zh": "adj. 令人畏懼的；難對付的",
     "unit": 6,
     "example": "The task was a formidable one.",
     "exampleZh": "這任務非常艱鉅。"
@@ -49125,7 +49125,7 @@ const externalVocabularyDB = [
     "id": 5459,
     "en": "fragile",
     "kk": "[ˋfrædʒəl]",
-    "zh": "adj. 易碎的;虛弱的",
+    "zh": "adj. 易碎的；虛弱的",
     "unit": 6,
     "example": "The economy remains extremely fragile.",
     "exampleZh": "經濟仍然極其脆弱。"
@@ -49134,7 +49134,7 @@ const externalVocabularyDB = [
     "id": 5460,
     "en": "frail",
     "kk": "[frel]",
-    "zh": "adj. 身體虛弱的;易損壞的",
+    "zh": "adj. 身體虛弱的；易損壞的",
     "unit": 6,
     "example": "She lay in bed looking frail.",
     "exampleZh": "她躺在床上，看上去很虛弱。"
@@ -49143,7 +49143,7 @@ const externalVocabularyDB = [
     "id": 5461,
     "en": "genetic",
     "kk": "[dʒəˋnɛtɪk]",
-    "zh": "adj. 基因的;遺傳(學)的",
+    "zh": "adj. 基因的；遺傳(學)的",
     "unit": 6,
     "example": "Eye colour shows more than your genetic inheritance.",
     "exampleZh": "眼睛的顏色顯示的不只是你基因的遺傳特徵。"
@@ -49152,7 +49152,7 @@ const externalVocabularyDB = [
     "id": 5462,
     "en": "gloomy",
     "kk": "[ˋɡlumi]",
-    "zh": "adj. 陰暗的;憂鬱的",
+    "zh": "adj. 陰暗的；憂鬱的",
     "unit": 6,
     "example": "They found him in a gloomy, downbeat mood.",
     "exampleZh": "他們發現他心情沮喪而消沉。"
@@ -49161,7 +49161,7 @@ const externalVocabularyDB = [
     "id": 5463,
     "en": "honorary",
     "kk": "[ˋɑnɚ͵ɛri]",
-    "zh": "adj. (學位等)名譽上的;名譽職位的",
+    "zh": "adj. (學位等)名譽上的；名譽職位的",
     "unit": 6,
     "example": "Harvard awarded him an honorary degree.",
     "exampleZh": "哈佛大學授予他榮譽學位。"
@@ -49170,7 +49170,7 @@ const externalVocabularyDB = [
     "id": 5464,
     "en": "hospitable",
     "kk": "[ˋhɑˋspɪtəbəl]",
-    "zh": "adj. 好客的;(氣候等)宜人的",
+    "zh": "adj. 好客的；(氣候等)宜人的",
     "unit": 6,
     "example": "The locals are hospitable and welcoming.",
     "exampleZh": "當地人熱情好客。"
@@ -49179,7 +49179,7 @@ const externalVocabularyDB = [
     "id": 5465,
     "en": "hysterical",
     "kk": "[hɪˋstɛrɪkəl]",
-    "zh": "adj. 歇斯底里的;極可笑的",
+    "zh": "adj. 歇斯底里的；極可笑的",
     "unit": 6,
     "example": "He became almost hysterical when I told him.",
     "exampleZh": "我告訴他時，他幾乎要發瘋了。"
@@ -49188,7 +49188,7 @@ const externalVocabularyDB = [
     "id": 5466,
     "en": "immune",
     "kk": "[͵ɪˋmjun]",
-    "zh": "adj. 免疫的;免於...的",
+    "zh": "adj. 免疫的；免於……的",
     "unit": 6,
     "example": "Adults are often immune to German measles.",
     "exampleZh": "成人往往對風疹有免疫力。"
@@ -49197,7 +49197,7 @@ const externalVocabularyDB = [
     "id": 5467,
     "en": "implicit",
     "kk": "[͵ɪmˋplɪsət]",
-    "zh": "adj. 不言明的;含蓄的",
+    "zh": "adj. 不言明的；含蓄的",
     "unit": 6,
     "example": "He trusted her implicitly.",
     "exampleZh": "他毫不掩飾地信任她。"
@@ -49206,7 +49206,7 @@ const externalVocabularyDB = [
     "id": 5468,
     "en": "imposing",
     "kk": "[͵ɪmˋpozɪŋ]",
-    "zh": "adj. 壯觀的;氣勢宏偉的;莊嚴的",
+    "zh": "adj. 壯觀的；氣勢宏偉的；莊嚴的",
     "unit": 6,
     "example": "He was an imposing man.",
     "exampleZh": "他是個儀表堂堂的男子漢。"
@@ -49215,7 +49215,7 @@ const externalVocabularyDB = [
     "id": 5469,
     "en": "incidental",
     "kk": "[͵ɪnsɪˋdɛntəl]",
-    "zh": "adj. 易發生的;附帶的",
+    "zh": "adj. 易發生的；附帶的",
     "unit": 6,
     "example": "The discovery was incidental to their main research.",
     "exampleZh": "這一發現是他們主要研究中的附帶收穫。"
@@ -49224,7 +49224,7 @@ const externalVocabularyDB = [
     "id": 5470,
     "en": "inclusive",
     "kk": "[͵ɪnˋklusɪv]",
-    "zh": "adj. 包含的;包括在內的",
+    "zh": "adj. 包含的；包括在內的",
     "unit": 6,
     "example": "Answer questions 8 to 12 inclusive.",
     "exampleZh": "回答第8到第12題。"
@@ -49242,7 +49242,7 @@ const externalVocabularyDB = [
     "id": 5472,
     "en": "infectious",
     "kk": "[͵ɪnˋfɛkʃəs]",
-    "zh": "adj. 傳染的;有感染力的",
+    "zh": "adj. 傳染的；有感染力的",
     "unit": 6,
     "example": "Infectious diseases can be acquired in several ways.",
     "exampleZh": "傳染病的感染途徑有幾種。"
@@ -49251,7 +49251,7 @@ const externalVocabularyDB = [
     "id": 5473,
     "en": "ingenious",
     "kk": "[͵ɪnˋdʒinjəs]",
-    "zh": "adj. 心靈手巧的;足智多謀的",
+    "zh": "adj. 心靈手巧的；足智多謀的",
     "unit": 6,
     "example": "You must have managed to escape, you clever, ingenious, intelligent Toad!",
     "exampleZh": "你一定是設法逃出來的，你這聰明機靈的癩蛤蟆！"
@@ -49260,7 +49260,7 @@ const externalVocabularyDB = [
     "id": 5474,
     "en": "inherent",
     "kk": "[ɪnˋhɪrənt]",
-    "zh": "adj. 固有的;與生俱來的",
+    "zh": "adj. 固有的；與生俱來的",
     "unit": 6,
     "example": "Individuality is a valued and inherent part of the British character.",
     "exampleZh": "個性是英國人重視並固有的特徵。"
@@ -49278,7 +49278,7 @@ const externalVocabularyDB = [
     "id": 5476,
     "en": "intact",
     "kk": "[͵ɪnˋtækt]",
-    "zh": "adj. 完整無缺的;原封不動的",
+    "zh": "adj. 完整無缺的；原封不動的",
     "unit": 6,
     "example": "This vase has been preserved intact.",
     "exampleZh": "這個花瓶儲存得完好無損。"
@@ -49287,7 +49287,7 @@ const externalVocabularyDB = [
     "id": 5477,
     "en": "invaluable",
     "kk": "[͵ɪnˋvæljəbəl]",
-    "zh": "adj. 非常貴重的;無價的",
+    "zh": "adj. 非常貴重的；無價的",
     "unit": 6,
     "example": "In his job, patience is an invaluable asset.",
     "exampleZh": "他乾的這份工作，耐心是無價之寶。"
@@ -49296,16 +49296,16 @@ const externalVocabularyDB = [
     "id": 5478,
     "en": "ironic",
     "kk": "[aɪˋrɑnɪk]",
-    "zh": "adj. 具有諷刺意味的;挖苦的",
+    "zh": "adj. 具有諷刺意味的；挖苦的",
     "unit": 6,
-    "example": "Can you use the word ironic in a sentence?",
-    "exampleZh": "你能在句子中使用「挖苦的」這個詞嗎？"
+    "example": "It was deeply ironic that the internet security firm suffered a major data breach.",
+    "exampleZh": "十分諷刺的是，這家網路安全公司竟然遭遇了嚴重的資料外洩。"
   },
   {
     "id": 5479,
     "en": "irritable",
     "kk": "[ˋɪrətəbəl]",
-    "zh": "adj. 易怒的;急躁的",
+    "zh": "adj. 易怒的；急躁的",
     "unit": 6,
     "example": "Teething can be painful and make your baby irritable.",
     "exampleZh": "出牙可能會很痛苦，會使嬰兒煩躁易怒。"
@@ -49314,7 +49314,7 @@ const externalVocabularyDB = [
     "id": 5480,
     "en": "joyous",
     "kk": "[ˋdʒɔɪəs]",
-    "zh": "adj. 快樂的;高興的",
+    "zh": "adj. 快樂的；高興的",
     "unit": 6,
     "example": "Let the joyous news be spread!",
     "exampleZh": "讓快樂的訊息傳播吧！"
@@ -49323,7 +49323,7 @@ const externalVocabularyDB = [
     "id": 5481,
     "en": "legendary",
     "kk": "[ˋlɛdʒən͵dɛri]",
-    "zh": "adj. 傳說的;傳奇的",
+    "zh": "adj. 傳說的；傳奇的",
     "unit": 6,
     "example": "The Dutch battle against the sea is legendary.",
     "exampleZh": "荷蘭人與大海的戰鬥是傳奇的。"
@@ -49332,7 +49332,7 @@ const externalVocabularyDB = [
     "id": 5482,
     "en": "legislative",
     "kk": "[ˋlɛdʒə͵sletɪv]",
-    "zh": "adj. 立法的;有立法權的",
+    "zh": "adj. 立法的；有立法權的",
     "unit": 6,
     "example": "Today's hearing was just the first step in the legislative process.",
     "exampleZh": "今天的聽證會僅僅是立法程式的第一步。"
@@ -49341,7 +49341,7 @@ const externalVocabularyDB = [
     "id": 5483,
     "en": "lengthy",
     "kk": "[ˋlɛŋθi]",
-    "zh": "adj. 長的;冗長的;囉唆的",
+    "zh": "adj. 長的；冗長的；囉唆的",
     "unit": 6,
     "example": "A deal was struck after lengthy negotiations.",
     "exampleZh": "經過漫長的談判終於達成了協議。"
@@ -49350,7 +49350,7 @@ const externalVocabularyDB = [
     "id": 5484,
     "en": "liable",
     "kk": "[ˋlaɪəbəl]",
-    "zh": "adj. 易...的;可能的;負有法律責任的",
+    "zh": "adj. 易……的；可能的；負有法律責任的",
     "unit": 6,
     "example": "You will be liable for any damage caused.",
     "exampleZh": "你必須對造成的任何損失負賠償責任。"
@@ -49359,7 +49359,7 @@ const externalVocabularyDB = [
     "id": 5485,
     "en": "literal",
     "kk": "[ˋlɪtɚəl]",
-    "zh": "adj. 照字面的;原義的;如實的",
+    "zh": "adj. 照字面的；原義的；如實的",
     "unit": 6,
     "example": "The literal meaning of 'petrify' is 'turn to stone'.",
     "exampleZh": "petrify的字面意思是turn to stone（變成石頭）。"
@@ -49368,7 +49368,7 @@ const externalVocabularyDB = [
     "id": 5486,
     "en": "lush",
     "kk": "[lʌʃ]",
-    "zh": "adj. 蒼翠繁茂的;豐富的",
+    "zh": "adj. 蒼翠繁茂的；豐富的",
     "unit": 6,
     "example": "Tom is a lush.",
     "exampleZh": "湯姆是個鬱鬱蔥蔥的人。"
@@ -49377,7 +49377,7 @@ const externalVocabularyDB = [
     "id": 5487,
     "en": "medieval",
     "kk": "[mɪˋdivəl]",
-    "zh": "adj. 中世紀的;中古風的;守舊的",
+    "zh": "adj. 中世紀的；中古風的；守舊的",
     "unit": 6,
     "example": "He began studying politics and medieval history.",
     "exampleZh": "他開始學習政治學和中世紀史。"
@@ -49386,7 +49386,7 @@ const externalVocabularyDB = [
     "id": 5488,
     "en": "miraculous",
     "kk": "[mɚˋækjələs]",
-    "zh": "adj. 神奇的;奇蹟般的",
+    "zh": "adj. 神奇的；奇蹟般的",
     "unit": 6,
     "example": "She's made a miraculous recovery.",
     "exampleZh": "她奇蹟般地康復了。"
@@ -49395,7 +49395,7 @@ const externalVocabularyDB = [
     "id": 5489,
     "en": "mischievous",
     "kk": "[ˋmɪstʃəvəs]",
-    "zh": "adj. 惡作劇的;淘氣的",
+    "zh": "adj. 惡作劇的；淘氣的",
     "unit": 6,
     "example": "Berg tilts his head and a mischievous look crosses his face.",
     "exampleZh": "伯格歪著腦袋，一種淘氣的表情在他的臉上一閃而過。"
@@ -49404,7 +49404,7 @@ const externalVocabularyDB = [
     "id": 5490,
     "en": "monotonous",
     "kk": "[məˋnɑtənəs]",
-    "zh": "adj. 單調的;無變化的",
+    "zh": "adj. 單調的；無變化的",
     "unit": 6,
     "example": "My job is monotonous.",
     "exampleZh": "我在汽車工廠的工作頗為單調乏味。"
@@ -49413,7 +49413,7 @@ const externalVocabularyDB = [
     "id": 5491,
     "en": "mournful",
     "kk": "[ˋmɔrnfəl]",
-    "zh": "adj. 憂傷的;悲切的",
+    "zh": "adj. 憂傷的；悲切的",
     "unit": 6,
     "example": "He looked mournful, even near to tears.",
     "exampleZh": "他看上去很悲傷，幾乎要掉淚了。"
@@ -49422,7 +49422,7 @@ const externalVocabularyDB = [
     "id": 5492,
     "en": "municipal",
     "kk": "[mjuˋnɪsəpəl]",
-    "zh": "adj. 市的;市政的",
+    "zh": "adj. 市的；市政的",
     "unit": 6,
     "example": "The municipal authorities gave the go-ahead for the march.",
     "exampleZh": "市政當局批准了此次遊行。"
@@ -49458,7 +49458,7 @@ const externalVocabularyDB = [
     "id": 5496,
     "en": "operational",
     "kk": "[͵ɑpɚˋeʃənəl]",
-    "zh": "adj. 操作上的;經營上的",
+    "zh": "adj. 操作上的；經營上的",
     "unit": 6,
     "example": "The new airport is now fully operational.",
     "exampleZh": "新機場現在可全面投入運營。"
@@ -49467,7 +49467,7 @@ const externalVocabularyDB = [
     "id": 5497,
     "en": "optional",
     "kk": "[ˋɑpʃənəl]",
-    "zh": "adj. 隨意的;非必須的",
+    "zh": "adj. 隨意的；非必須的",
     "unit": 6,
     "example": "Certain courses are compulsory, others are optional.",
     "exampleZh": "某些課程是必修的，其他是選修的。"
@@ -49476,7 +49476,7 @@ const externalVocabularyDB = [
     "id": 5498,
     "en": "outrageous",
     "kk": "[aʊˋtredʒəs]",
-    "zh": "adj. 可恥的;無法無天的;令人吃驚的",
+    "zh": "adj. 可恥的；無法無天的；令人吃驚的",
     "unit": 6,
     "example": "By diplomatic standards, this was outrageous behaviour.",
     "exampleZh": "按外交標準，這是不可接受的行為。"
@@ -49485,7 +49485,7 @@ const externalVocabularyDB = [
     "id": 5499,
     "en": "pathetic",
     "kk": "[pəˋθɛtɪk]",
-    "zh": "adj. 可憐的;可悲的",
+    "zh": "adj. 可憐的；可悲的",
     "unit": 6,
     "example": "The small group of onlookers presented a pathetic sight.",
     "exampleZh": "那一小群旁觀者顯出一幅可憐的樣子。"
@@ -49503,7 +49503,7 @@ const externalVocabularyDB = [
     "id": 5501,
     "en": "persistent",
     "kk": "[pɚˋsɪstənt]",
-    "zh": "adj. 堅持不懈的;固執的;持續的",
+    "zh": "adj. 堅持不懈的；固執的；持續的",
     "unit": 6,
     "example": "I had a persistent cough for over a month.",
     "exampleZh": "我持續咳嗽已經一個多月了。"
@@ -49512,7 +49512,7 @@ const externalVocabularyDB = [
     "id": 5502,
     "en": "petty",
     "kk": "[ˋpɛt͵i]",
-    "zh": "adj. 小的;瑣碎的;氣量小的",
+    "zh": "adj. 小的；瑣碎的；氣量小的",
     "unit": 6,
     "example": "How could you be so petty?",
     "exampleZh": "你怎麼那麼小氣呢？"
@@ -49521,7 +49521,7 @@ const externalVocabularyDB = [
     "id": 5503,
     "en": "photographic",
     "kk": "[͵fotəˋɡræfɪk]",
-    "zh": "adj. 攝影(術)的;攝影用的",
+    "zh": "adj. 攝影(術)的；攝影用的",
     "unit": 6,
     "example": "The equipment of the photographic studio was expensive.",
     "exampleZh": "這個攝影室的裝備花費巨大。"
@@ -49530,7 +49530,7 @@ const externalVocabularyDB = [
     "id": 5504,
     "en": "picturesque",
     "kk": "[ˋpɪktʃɚəsk]",
-    "zh": "adj. 圖畫般的;美麗的",
+    "zh": "adj. 圖畫般的；美麗的",
     "unit": 6,
     "example": "El Alcazar is now the most picturesque area in Spain.",
     "exampleZh": "阿爾卡薩爾城堡現在是西班牙最風景如畫的地方。"
@@ -49539,7 +49539,7 @@ const externalVocabularyDB = [
     "id": 5505,
     "en": "pious",
     "kk": "[ˋpaɪəs]",
-    "zh": "adj. 虔誠的;篤信的",
+    "zh": "adj. 虔誠的；篤信的",
     "unit": 6,
     "example": "Catherine was a pious, earnest woman.",
     "exampleZh": "凱瑟琳是位虔誠、真摯的女子。"
@@ -49548,7 +49548,7 @@ const externalVocabularyDB = [
     "id": 5506,
     "en": "premature",
     "kk": "[͵priməˋtʃʊr]",
-    "zh": "adj. 過早的;草率的;早產的",
+    "zh": "adj. 過早的；草率的；早產的",
     "unit": 6,
     "example": "The baby was four weeks premature.",
     "exampleZh": "這個嬰兒早產了四周。"
@@ -49557,7 +49557,7 @@ const externalVocabularyDB = [
     "id": 5507,
     "en": "presidential",
     "kk": "[͵prɛzəˋdɛnʃəl]",
-    "zh": "adj. 總統的;總統選舉的",
+    "zh": "adj. 總統的；總統選舉的",
     "unit": 6,
     "example": "A presidential election was scheduled for last December.",
     "exampleZh": "一場總統大選計劃在去年12月舉行。"
@@ -49566,7 +49566,7 @@ const externalVocabularyDB = [
     "id": 5508,
     "en": "profound",
     "kk": "[proˋfaʊnd]",
-    "zh": "adj. 深刻的;深度的",
+    "zh": "adj. 深刻的；深度的",
     "unit": 6,
     "example": "Her speech made a profound impact on everyone.",
     "exampleZh": "她的講話對每個人都有深遠的影響。"
@@ -49575,7 +49575,7 @@ const externalVocabularyDB = [
     "id": 5509,
     "en": "prone",
     "kk": "[pron]",
-    "zh": "adj. 有...傾向的;俯伏的",
+    "zh": "adj. 有……傾向的；俯伏的",
     "unit": 6,
     "example": "These plants are peculiarly prone to disease.",
     "exampleZh": "這些植物特別容易發生病變。"
@@ -49584,7 +49584,7 @@ const externalVocabularyDB = [
     "id": 5510,
     "en": "prospective",
     "kk": "[prəˋspɛktɪv]",
-    "zh": "adj. 預期的;盼望中的;未來的",
+    "zh": "adj. 預期的；盼望中的；未來的",
     "unit": 6,
     "example": "The prospective inspector prospected his prospect with his own perspective.",
     "exampleZh": "這位準檢查員以自己的視角勘察了他的勘探區域。"
@@ -49611,7 +49611,7 @@ const externalVocabularyDB = [
     "id": 5513,
     "en": "random",
     "kk": "[ˋrændəm]",
-    "zh": "adj. 胡亂的;隨機的",
+    "zh": "adj. 胡亂的；隨機的",
     "unit": 6,
     "example": "Police will conduct random breath tests.",
     "exampleZh": "警察會隨機進行吹氣酒精測試。"
@@ -49620,7 +49620,7 @@ const externalVocabularyDB = [
     "id": 5514,
     "en": "rational",
     "kk": "[ˋræʃənəl]",
-    "zh": "adj. 理性的;明事理的;合理的",
+    "zh": "adj. 理性的；明事理的；合理的",
     "unit": 6,
     "example": "There is no rational explanation for his actions.",
     "exampleZh": "對他的所作所為無法作出合理的解釋。"
@@ -49629,7 +49629,7 @@ const externalVocabularyDB = [
     "id": 5515,
     "en": "recreational",
     "kk": "[͵rɛkriˋeʃənəl]",
-    "zh": "adj. 消遣的;娛樂的;休養的",
+    "zh": "adj. 消遣的；娛樂的；休養的",
     "unit": 6,
     "example": "What recreational facilities are now available?",
     "exampleZh": "什麼娛樂設施現在是可用的？"
@@ -49638,7 +49638,7 @@ const externalVocabularyDB = [
     "id": 5516,
     "en": "redundant",
     "kk": "[rɪˋdʌndənt]",
-    "zh": "adj. 多餘的;過剩的",
+    "zh": "adj. 多餘的；過剩的",
     "unit": 6,
     "example": "Changes in technology may mean that once-valued skills are now redundant.",
     "exampleZh": "技術的變化可能意味著從前受重視的技巧現在變得多餘了。"
@@ -49647,7 +49647,7 @@ const externalVocabularyDB = [
     "id": 5517,
     "en": "reflective",
     "kk": "[rɪfˋlɛktɪv]",
-    "zh": "adj. 反射的;沈思的;反映的",
+    "zh": "adj. 反射的；沈思的；反映的",
     "unit": 6,
     "example": "On dark nights children should wear reflective clothing.",
     "exampleZh": "在漆黑的夜晚，兒童應該穿可以反光的衣服。"
@@ -49656,7 +49656,7 @@ const externalVocabularyDB = [
     "id": 5518,
     "en": "relevant",
     "kk": "[ˋrɛləvənt]",
-    "zh": "adj. 有關的;切題的",
+    "zh": "adj. 有關的；切題的",
     "unit": 6,
     "example": "Do you have the relevant experience?",
     "exampleZh": "你有相關的經歷嗎？"
@@ -49665,7 +49665,7 @@ const externalVocabularyDB = [
     "id": 5519,
     "en": "renowned",
     "kk": "[rɪˋnaʊnd]",
-    "zh": "adj. 有名的;有聲譽的",
+    "zh": "adj. 有名的；有聲譽的",
     "unit": 6,
     "example": "The area is renowned for its Romanesque churches.",
     "exampleZh": "這個地區以其羅馬式教堂聞名。"
@@ -49674,7 +49674,7 @@ const externalVocabularyDB = [
     "id": 5520,
     "en": "residential",
     "kk": "[͵rɛzɪˋdɛnʃəl]",
-    "zh": "adj. 居住的;住宅的",
+    "zh": "adj. 居住的；住宅的",
     "unit": 6,
     "example": "No such vision guided residential and community care though.",
     "exampleZh": "然而，並沒有這樣的願景來指導居家護理和社群護理工作。"
@@ -49692,7 +49692,7 @@ const externalVocabularyDB = [
     "id": 5522,
     "en": "resolute",
     "kk": "[ˋrɛzə͵lut]",
-    "zh": "adj. 堅決的;不屈不撓的",
+    "zh": "adj. 堅決的；不屈不撓的",
     "unit": 6,
     "example": "Voters perceive him as a decisive and resolute international leader.",
     "exampleZh": "選民認識到他是一位果斷、堅定的國際領袖。"
@@ -49701,7 +49701,7 @@ const externalVocabularyDB = [
     "id": 5523,
     "en": "respective",
     "kk": "[rɪˋspɛktɪv]",
-    "zh": "adj. 分別的;各自的",
+    "zh": "adj. 分別的；各自的",
     "unit": 6,
     "example": "It is important that we dovetail our respective interests.",
     "exampleZh": "我們尋求各自利益共同點是重要的。"
@@ -49710,7 +49710,7 @@ const externalVocabularyDB = [
     "id": 5524,
     "en": "rhythmic",
     "kk": "[ˋrɪðmɪk]",
-    "zh": "adj. 有節奏的;有韻律的",
+    "zh": "adj. 有節奏的；有韻律的",
     "unit": 6,
     "example": "Good breathing is slow, rhythmic and deep.",
     "exampleZh": "良好的呼吸緩慢、有節奏並且深沉。"
@@ -49719,7 +49719,7 @@ const externalVocabularyDB = [
     "id": 5525,
     "en": "rigorous",
     "kk": "[ˋrɪɡɚəs]",
-    "zh": "adj. 嚴格的;嚴厲的;嚴密的",
+    "zh": "adj. 嚴格的；嚴厲的；嚴密的",
     "unit": 6,
     "example": "The work failed to meet their rigorous standards.",
     "exampleZh": "工作沒有達到他們的嚴格標準。"
@@ -49728,7 +49728,7 @@ const externalVocabularyDB = [
     "id": 5526,
     "en": "sane",
     "kk": "[sen]",
-    "zh": "adj. 神志正常的;頭腦清楚的",
+    "zh": "adj. 神志正常的；頭腦清楚的",
     "unit": 6,
     "example": "Did he come across as a sane, rational person?",
     "exampleZh": "他看上去是不是一個頭腦清醒而理智的人？"
@@ -49737,7 +49737,7 @@ const externalVocabularyDB = [
     "id": 5527,
     "en": "scenic",
     "kk": "[ˋsinɪk]",
-    "zh": "adj. 風景的;景色秀麗的",
+    "zh": "adj. 風景的；景色秀麗的",
     "unit": 6,
     "example": "This is an extremely scenic part of America.",
     "exampleZh": "這是美國風景極其優美的一個地區。"
@@ -49755,7 +49755,7 @@ const externalVocabularyDB = [
     "id": 5529,
     "en": "sentimental",
     "kk": "[͵sɛntəˋmɛntəl]",
-    "zh": "adj. 情深的;情感;多愁善感的",
+    "zh": "adj. 情深的；情感；多愁善感的",
     "unit": 6,
     "example": "This ring has great sentimental value for me.",
     "exampleZh": "這枚戒指對我來說很有紀念意義。"
@@ -49764,7 +49764,7 @@ const externalVocabularyDB = [
     "id": 5530,
     "en": "serene",
     "kk": "[sɚˋin]",
-    "zh": "adj. 安詳的;寧靜的",
+    "zh": "adj. 安詳的；寧靜的",
     "unit": 6,
     "example": "They were serene and unwilling to inflict pain on others.",
     "exampleZh": "他們很平靜，不願給他人造成痛苦。"
@@ -49773,7 +49773,7 @@ const externalVocabularyDB = [
     "id": 5531,
     "en": "shrewd",
     "kk": "[ʃrud]",
-    "zh": "adj. 精明的;狡猾的;機靈的",
+    "zh": "adj. 精明的；狡猾的；機靈的",
     "unit": 6,
     "example": "She's a shrewd businesswoman.",
     "exampleZh": "她是一個精明的商人。"
@@ -49782,7 +49782,7 @@ const externalVocabularyDB = [
     "id": 5532,
     "en": "simultaneous",
     "kk": "[͵saɪməlˋteniəs]",
-    "zh": "adj. 同時發生的;同步的",
+    "zh": "adj. 同時發生的；同步的",
     "unit": 6,
     "example": "This event was almost simultaneous with that one.",
     "exampleZh": "這件事幾乎是與那件事同時發生的。"
@@ -49791,7 +49791,7 @@ const externalVocabularyDB = [
     "id": 5533,
     "en": "skeptical",
     "kk": "[ˋskɛptəkəl]",
-    "zh": "adj. 懷疑的;多疑的",
+    "zh": "adj. 懷疑的；多疑的",
     "unit": 6,
     "example": "Andrew Hacker, for the record, remains skeptical.",
     "exampleZh": "準確來說，安德魯·哈克仍然對此表示懷疑。"
@@ -49809,7 +49809,7 @@ const externalVocabularyDB = [
     "id": 5535,
     "en": "sociable",
     "kk": "[ˋsoʃəbəl]",
-    "zh": "adj. 好交際的;善交際的",
+    "zh": "adj. 好交際的；善交際的",
     "unit": 6,
     "example": "Presumably, he had some sociable interests.",
     "exampleZh": "據推測，他有一些社交興趣。"
@@ -49818,7 +49818,7 @@ const externalVocabularyDB = [
     "id": 5536,
     "en": "sophisticated",
     "kk": "[səˋfɪstə͵ketɪd]",
-    "zh": "adj. 老於世故的;精通的;精密的",
+    "zh": "adj. 老於世故的；精通的；精密的",
     "unit": 6,
     "example": "Claude was a charming, sophisticated companion.",
     "exampleZh": "克勞德是個有魅力、見多識廣的夥伴。"
@@ -49827,7 +49827,7 @@ const externalVocabularyDB = [
     "id": 5537,
     "en": "spacious",
     "kk": "[ˋspeʃəs]",
-    "zh": "adj. 寬敞的;廣闊的",
+    "zh": "adj. 寬敞的；廣闊的",
     "unit": 6,
     "example": "They specified a spacious entrance hall.",
     "exampleZh": "他們明確要求門廳要寬敞。"
@@ -49836,7 +49836,7 @@ const externalVocabularyDB = [
     "id": 5538,
     "en": "spontaneous",
     "kk": "[spɑnˋteniəs]",
-    "zh": "adj. 自發的;自然的",
+    "zh": "adj. 自發的；自然的",
     "unit": 6,
     "example": "The audience burst into spontaneous applause.",
     "exampleZh": "觀眾自發地鼓起掌來。"
@@ -49845,7 +49845,7 @@ const externalVocabularyDB = [
     "id": 5539,
     "en": "stationary",
     "kk": "[ˋsteʃə͵nɛri]",
-    "zh": "adj. 不動的;定居的",
+    "zh": "adj. 不動的；定居的",
     "unit": 6,
     "example": "In short, the shinbashira was acting like an enormous stationary pendulum.",
     "exampleZh": "簡而言之，這個中心支柱就像一個巨大而靜止的鐘擺。"
@@ -49863,7 +49863,7 @@ const externalVocabularyDB = [
     "id": 5541,
     "en": "subjective",
     "kk": "[səbˋdʒɛktɪv]",
-    "zh": "adj. 主觀的;個人的;主詞的",
+    "zh": "adj. 主觀的；個人的；主詞的",
     "unit": 6,
     "example": "Everyone's opinion is bound to be subjective.",
     "exampleZh": "每個人的意見都必定是主觀的。"
@@ -49872,7 +49872,7 @@ const externalVocabularyDB = [
     "id": 5542,
     "en": "subsequent",
     "kk": "[ˋsʌbsəkwənt]",
-    "zh": "adj. 隨後的;接著發生的",
+    "zh": "adj. 隨後的；接著發生的",
     "unit": 6,
     "example": "Subsequent events confirmed our doubts.",
     "exampleZh": "後來發生的事證實了我們的懷疑。"
@@ -49881,7 +49881,7 @@ const externalVocabularyDB = [
     "id": 5543,
     "en": "subtle",
     "kk": "[ˋsʌtəl]",
-    "zh": "adj. 微妙的;難捉摸的",
+    "zh": "adj. 微妙的；難捉摸的",
     "unit": 6,
     "example": "The job required a subtle mind.",
     "exampleZh": "那項工作需要一個頭腦敏銳的人去做。"
@@ -49890,7 +49890,7 @@ const externalVocabularyDB = [
     "id": 5544,
     "en": "suburban",
     "kk": "[səˋbɝbən]",
-    "zh": "adj. 郊區的;近郊的",
+    "zh": "adj. 郊區的；近郊的",
     "unit": 6,
     "example": "Meg is a lawyer-mom in suburban Washington, D.C.",
     "exampleZh": "梅格是華盛頓郊區的一名律師媽媽。"
@@ -49899,7 +49899,7 @@ const externalVocabularyDB = [
     "id": 5545,
     "en": "successive",
     "kk": "[səkˋsɛsɪv]",
-    "zh": "adj. 連續的;後繼的;繼承的",
+    "zh": "adj. 連續的；後繼的；繼承的",
     "unit": 6,
     "example": "This was their fourth successive win.",
     "exampleZh": "這是他們連續第四次獲勝。"
@@ -49908,7 +49908,7 @@ const externalVocabularyDB = [
     "id": 5546,
     "en": "superb",
     "kk": "[sʊˋpɝb]",
-    "zh": "adj. 宏偉的;華麗的; 上乘的,一流的",
+    "zh": "adj. 宏偉的；華麗的； 上乘的、一流的",
     "unit": 6,
     "example": "The car's in superb condition.",
     "exampleZh": "這輛車車況極好。"
@@ -49917,7 +49917,7 @@ const externalVocabularyDB = [
     "id": 5547,
     "en": "supersonic",
     "kk": "[͵supɚˋsɑnɪk]",
-    "zh": "adj. 超音波的;超音速的",
+    "zh": "adj. 超音波的；超音速的",
     "unit": 6,
     "example": "There was a huge bang; it sounded like a supersonic jet.",
     "exampleZh": "發出一聲巨響；聽起來像一架超音速噴氣式飛機。"
@@ -49935,7 +49935,7 @@ const externalVocabularyDB = [
     "id": 5549,
     "en": "symbolic",
     "kk": "[sɪmˋbɑlɪk]",
-    "zh": "adj. 象徵的;符號的",
+    "zh": "adj. 象徵的；符號的",
     "unit": 6,
     "example": "The dove is symbolic of peace.",
     "exampleZh": "鴿子是和平的象徵。"
@@ -49944,7 +49944,7 @@ const externalVocabularyDB = [
     "id": 5550,
     "en": "tedious",
     "kk": "[ˋtidiəs]",
-    "zh": "adj. 冗長乏味的;使人厭煩的",
+    "zh": "adj. 冗長乏味的；使人厭煩的",
     "unit": 6,
     "example": "The journey soon became tedious.",
     "exampleZh": "那次旅行不久就變得乏味起來。"
@@ -49953,7 +49953,7 @@ const externalVocabularyDB = [
     "id": 5551,
     "en": "theatrical",
     "kk": "[θiˋætrɪkəl]",
-    "zh": "adj. 劇場的;戲劇的;戲劇性的",
+    "zh": "adj. 劇場的；戲劇的；戲劇性的",
     "unit": 6,
     "example": "She's well known in theatrical circles.",
     "exampleZh": "她在戲劇界赫赫有名。"
@@ -49962,7 +49962,7 @@ const externalVocabularyDB = [
     "id": 5552,
     "en": "theoretical",
     "kk": "[͵θiɚˋɛtɪkəl]",
-    "zh": "adj. 理論的;非應用的;假設的",
+    "zh": "adj. 理論的；非應用的；假設的",
     "unit": 6,
     "example": "The course is essentially theoretical in orientation.",
     "exampleZh": "該課程的目標基本上是理論性的。"
@@ -49971,7 +49971,7 @@ const externalVocabularyDB = [
     "id": 5553,
     "en": "thrifty",
     "kk": "[ˋθrɪfti]",
-    "zh": "adj. 節儉的;茂盛的",
+    "zh": "adj. 節儉的；茂盛的",
     "unit": 6,
     "example": "Being thrifty comes as no great surprise.",
     "exampleZh": "節儉這一點並不令人驚訝。"
@@ -49980,7 +49980,7 @@ const externalVocabularyDB = [
     "id": 5554,
     "en": "tranquil",
     "kk": "[ˋtræŋkwəl]",
-    "zh": "adj. 平靜的;安靜的;安寧的",
+    "zh": "adj. 平靜的；安靜的；安寧的",
     "unit": 6,
     "example": "She led a tranquil life in the country.",
     "exampleZh": "她過著恬靜的鄉村生活。"
@@ -49989,7 +49989,7 @@ const externalVocabularyDB = [
     "id": 5555,
     "en": "triumphant",
     "kk": "[traɪˋʌmfənt]",
-    "zh": "adj. 勝利的;得意洋洋的",
+    "zh": "adj. 勝利的；得意洋洋的",
     "unit": 6,
     "example": "The captain's voice was triumphant.",
     "exampleZh": "船長的聲音聽起來得意洋洋的。"
@@ -49998,7 +49998,7 @@ const externalVocabularyDB = [
     "id": 5556,
     "en": "trivial",
     "kk": "[ˋtrɪviəl]",
-    "zh": "adj. 瑣細的;平凡的",
+    "zh": "adj. 瑣細的；平凡的",
     "unit": 6,
     "example": "It's a trivial matter and not worth fighting about.",
     "exampleZh": "這是一樁小事，不值得為之爭辯。"
@@ -50016,7 +50016,7 @@ const externalVocabularyDB = [
     "id": 5558,
     "en": "valiant",
     "kk": "[ˋvæljənt]",
-    "zh": "adj. 勇敢的;英勇的",
+    "zh": "adj. 勇敢的；英勇的",
     "unit": 6,
     "example": "The valiant Colonel Monteynard admired this barricade.",
     "exampleZh": "勇敢的蒙特那上校讚美這座街壘。"
@@ -50025,7 +50025,7 @@ const externalVocabularyDB = [
     "id": 5559,
     "en": "valid",
     "kk": "[ˋvælɪd]",
-    "zh": "adj. 有根據的;有效的",
+    "zh": "adj. 有根據的；有效的",
     "unit": 6,
     "example": "All tickets are valid for two months.",
     "exampleZh": "所有的票在兩個月內有效。"
@@ -50034,7 +50034,7 @@ const externalVocabularyDB = [
     "id": 5560,
     "en": "versatile",
     "kk": "[ˋvɝsətəl]",
-    "zh": "adj. 多才多藝的;多功能的",
+    "zh": "adj. 多才多藝的；多功能的",
     "unit": 6,
     "example": "He is sparkling and versatile in front of the camera.",
     "exampleZh": "他在攝影機前聰穎機智、多才多藝。"
@@ -50043,7 +50043,7 @@ const externalVocabularyDB = [
     "id": 5561,
     "en": "vicious",
     "kk": "[ˋvɪʃəs]",
-    "zh": "adj. 惡意的;惡毒的",
+    "zh": "adj. 惡意的；惡毒的",
     "unit": 6,
     "example": "We need to break the vicious cycle of violence and counterviolence.",
     "exampleZh": "我們需要結束暴力和反暴力的惡性迴圈。"
@@ -50061,7 +50061,7 @@ const externalVocabularyDB = [
     "id": 5563,
     "en": "virtual",
     "kk": "[ˋvɝtʃuəl]",
-    "zh": "adj. 實質上的;虛擬的",
+    "zh": "adj. 實質上的；虛擬的",
     "unit": 6,
     "example": "One day virtual reality will revolutionize the entertainment industry.",
     "exampleZh": "有朝一日虛擬現實將給娛樂業帶來一場革命。"
@@ -50079,7 +50079,7 @@ const externalVocabularyDB = [
     "id": 5565,
     "en": "vulgar",
     "kk": "[ˋvʌlɡɚ]",
-    "zh": "adj. 粗俗的;下流的",
+    "zh": "adj. 粗俗的；下流的",
     "unit": 6,
     "example": "I think it's a very vulgar house.",
     "exampleZh": "我認為這是一棟很俗氣的房子。"
@@ -50088,7 +50088,7 @@ const externalVocabularyDB = [
     "id": 5566,
     "en": "vulnerable",
     "kk": "[ˋvʌlnɚəbəl]",
-    "zh": "adj. 易受傷的;有弱點的",
+    "zh": "adj. 易受傷的；有弱點的",
     "unit": 6,
     "example": "She was left feeling exposed and vulnerable.",
     "exampleZh": "她感到自己孤立無助，非常脆弱。"
@@ -50097,7 +50097,7 @@ const externalVocabularyDB = [
     "id": 5567,
     "en": "watertight",
     "kk": "[ˋwɔtɚ͵taɪt]",
-    "zh": "adj. 不透水的;無懈可擊的",
+    "zh": "adj. 不透水的；無懈可擊的",
     "unit": 6,
     "example": "This argument is not watertight.",
     "exampleZh": "這一論點並非無懈可擊。"
@@ -50106,7 +50106,7 @@ const externalVocabularyDB = [
     "id": 5568,
     "en": "whatsoever",
     "kk": "[͵wʌtsoˋɛvɚ]",
-    "zh": "adj. 不管什麼樣的;無論怎麼的",
+    "zh": "adj. 不管什麼樣的；無論怎麼的",
     "unit": 6,
     "example": "They showed no consideration whatsoever for my feelings.",
     "exampleZh": "他們根本不體諒我的感情。"
@@ -50115,7 +50115,7 @@ const externalVocabularyDB = [
     "id": 5569,
     "en": "witty",
     "kk": "[ˋwɪti]",
-    "zh": "adj. 機智的;說話風趣的",
+    "zh": "adj. 機智的；說話風趣的",
     "unit": 6,
     "example": "They were very intellectual and witty.",
     "exampleZh": "他們非常聰明、機智。"
@@ -50133,7 +50133,7 @@ const externalVocabularyDB = [
     "id": 5571,
     "en": "abound",
     "kk": "[əˋbaʊnd]",
-    "zh": "v. 大量存在;富足;充滿",
+    "zh": "v. 大量存在；富足；充滿",
     "unit": 6,
     "example": "Opportunities for misinterpretation, error, and self-deception abound.",
     "exampleZh": "誤解、犯錯和自我欺騙的機會比比皆是。"
@@ -50142,7 +50142,7 @@ const externalVocabularyDB = [
     "id": 5572,
     "en": "accelerate",
     "kk": "[ækˋsɛlɚ͵et]",
-    "zh": "v. 加快;增長",
+    "zh": "v. 加快；增長",
     "unit": 6,
     "example": "Growth will accelerate to 2.9 percent next year.",
     "exampleZh": "增長明年將加快到2.9%。"
@@ -50151,7 +50151,7 @@ const externalVocabularyDB = [
     "id": 5573,
     "en": "accommodate",
     "kk": "[əˋkɑmə͵det]",
-    "zh": "v. 能容納;能提供...膳宿;給...方便",
+    "zh": "v. 能容納；能提供……膳宿；給……方便",
     "unit": 6,
     "example": "The roads are built to accommodate gradual temperature changes.",
     "exampleZh": "這些道路是為適應氣溫的逐漸變化而建的。"
@@ -50160,7 +50160,7 @@ const externalVocabularyDB = [
     "id": 5574,
     "en": "accumulate",
     "kk": "[əˋkjumjə͵let]",
-    "zh": "v. 累積;積聚",
+    "zh": "v. 累積；積聚",
     "unit": 6,
     "example": "Lead can accumulate in the body until toxic levels are reached.",
     "exampleZh": "鉛可以在體內積聚直至到達有毒的程度。"
@@ -50169,7 +50169,7 @@ const externalVocabularyDB = [
     "id": 5575,
     "en": "administer",
     "kk": "[ədˋmɪnəstɚ]",
-    "zh": "v. 管理;給予;執行",
+    "zh": "v. 管理；給予；執行",
     "unit": 6,
     "example": "The Council has plenary powers to administer the agreement.",
     "exampleZh": "理事會擁有全權執行這項協議。"
@@ -50178,7 +50178,7 @@ const externalVocabularyDB = [
     "id": 5576,
     "en": "administrate",
     "kk": "[ædˋmɪnɪ͵stret]",
-    "zh": "v. 管理;支配",
+    "zh": "v. 管理；支配",
     "unit": 6,
     "example": "To administrate, supervise and issue the journalist permits across the country.",
     "exampleZh": "管理、監製和核發全國新聞記者證。"
@@ -50187,7 +50187,7 @@ const externalVocabularyDB = [
     "id": 5577,
     "en": "affirm",
     "kk": "[əˋfɝm]",
-    "zh": "v. 斷言;申明;堅稱",
+    "zh": "v. 斷言；申明；堅稱",
     "unit": 6,
     "example": "I can affirm that no one will lose their job.",
     "exampleZh": "我可以肯定，誰都不會丟掉工作。"
@@ -50196,16 +50196,16 @@ const externalVocabularyDB = [
     "id": 5578,
     "en": "alienate",
     "kk": "[ˋeljə͵net]",
-    "zh": "v. 使疏遠;離間",
+    "zh": "v. 使疏遠；離間",
     "unit": 6,
-    "example": "Can you use the word alienate in a sentence?",
-    "exampleZh": "你能在句子中使用「離間」這個詞嗎？"
+    "example": "Repeated hostility will inevitably alienate loyal supporters and partners.",
+    "exampleZh": "屢次的敵對態度勢必會疏遠忠實的支持者與合作夥伴。"
   },
   {
     "id": 5579,
     "en": "allocate",
     "kk": "[ˋælə͵ket]",
-    "zh": "v. 分派;分配",
+    "zh": "v. 分派；分配",
     "unit": 6,
     "example": "We then allocate the memory.",
     "exampleZh": "然後我們分配記憶體。"
@@ -50214,7 +50214,7 @@ const externalVocabularyDB = [
     "id": 5580,
     "en": "amplify",
     "kk": "[ˋæmplə͵faɪ]",
-    "zh": "v. 放大(聲音等);擴大",
+    "zh": "v. 放大(聲音等)；擴大",
     "unit": 6,
     "example": "This landscape seemed to trap and amplify sounds.",
     "exampleZh": "這種地形好像能聚攏和擴大聲音。"
@@ -50259,7 +50259,7 @@ const externalVocabularyDB = [
     "id": 5585,
     "en": "assassinate",
     "kk": "[əˋsæsə͵net]",
-    "zh": "v. 暗殺,詆毀",
+    "zh": "v. 暗殺、詆毀",
     "unit": 6,
     "example": "Tom assassinated the king.",
     "exampleZh": "湯姆刺殺了國王。"
@@ -50268,7 +50268,7 @@ const externalVocabularyDB = [
     "id": 5586,
     "en": "assert",
     "kk": "[əˋsɝt]",
-    "zh": "v. 斷言;堅持",
+    "zh": "v. 斷言；堅持",
     "unit": 6,
     "example": "She continued to assert her innocence.",
     "exampleZh": "她仍然堅稱自己無辜。"
@@ -50286,7 +50286,7 @@ const externalVocabularyDB = [
     "id": 5588,
     "en": "attain",
     "kk": "[əˋten]",
-    "zh": "v. 達到;獲得",
+    "zh": "v. 達到；獲得",
     "unit": 6,
     "example": "Then how does one attain this level of organization?",
     "exampleZh": "那麼，如何才能達到這種規劃水平？"
@@ -50295,7 +50295,7 @@ const externalVocabularyDB = [
     "id": 5589,
     "en": "authorize",
     "kk": "[ˋɔθɚ͵aɪz]",
-    "zh": "v. 授權給;批准",
+    "zh": "v. 授權給；批准",
     "unit": 6,
     "example": "Only the president could authorize the use of the atomic bomb.",
     "exampleZh": "只有總統能授權原子彈的使用。"
@@ -50304,7 +50304,7 @@ const externalVocabularyDB = [
     "id": 5590,
     "en": "beckon",
     "kk": "[ˋbɛkən]",
-    "zh": "v. (招手或點頭)示意;召喚",
+    "zh": "v. (招手或點頭)示意；召喚",
     "unit": 6,
     "example": "Seen from afar, its towering buildings beckon the visitor in.",
     "exampleZh": "遠遠望去，它的高聳建築就像在召喚遊客。"
@@ -50313,7 +50313,7 @@ const externalVocabularyDB = [
     "id": 5591,
     "en": "besiege",
     "kk": "[bɪˋsidʒ]",
-    "zh": "v. 圍攻;圍困;煩擾",
+    "zh": "v. 圍攻；圍困；煩擾",
     "unit": 6,
     "example": "The army besieged the city for several months.",
     "exampleZh": "軍隊圍困了這座城市數月之久。"
@@ -50322,10 +50322,10 @@ const externalVocabularyDB = [
     "id": 5592,
     "en": "betray",
     "kk": "[bɪˋtre]",
-    "zh": "v. 背叛;出賣",
+    "zh": "v. 背叛；出賣",
     "unit": 6,
-    "example": "Can you use the word betray in a sentence?",
-    "exampleZh": "你能在句子中使用「出賣」這個詞嗎？"
+    "example": "A true friend would never betray your confidence or share your secrets.",
+    "exampleZh": "真正的朋友絕不會出賣你的信任，也不會洩漏你的秘密。"
   },
   {
     "id": 5593,
@@ -50340,7 +50340,7 @@ const externalVocabularyDB = [
     "id": 5594,
     "en": "bombard",
     "kk": "[bɑmˋbɑrd]",
-    "zh": "v. 砲擊;不斷攻擊;連續提出問題",
+    "zh": "v. 砲擊；不斷攻擊；連續提出問題",
     "unit": 6,
     "example": "Your city is being bombarded.",
     "exampleZh": "你的城市正在遭受轟炸。"
@@ -50349,7 +50349,7 @@ const externalVocabularyDB = [
     "id": 5595,
     "en": "cater",
     "kk": "[ˋketɚ]",
-    "zh": "v. 承辦宴席;迎合",
+    "zh": "v. 承辦宴席；迎合",
     "unit": 6,
     "example": "We cater to an exclusive clientele.",
     "exampleZh": "我們滿足一個特殊客戶群的需求。"
@@ -50358,7 +50358,7 @@ const externalVocabularyDB = [
     "id": 5596,
     "en": "certify",
     "kk": "[ˋsɝtə͵faɪ]",
-    "zh": "v. 證明;保證;發證書(或執照等)",
+    "zh": "v. 證明；保證；發證書(或執照等)",
     "unit": 6,
     "example": "We can certify for his honesty.",
     "exampleZh": "我們可以保證他的誠實。"
@@ -50367,7 +50367,7 @@ const externalVocabularyDB = [
     "id": 5597,
     "en": "characterize",
     "kk": "[ˋkɛrəktɚ͵aɪz]",
-    "zh": "v. 描繪...的特性;具有...的特徵",
+    "zh": "v. 描繪……的特性；具有……的特徵",
     "unit": 6,
     "example": "I characterize it as monstrous.",
     "exampleZh": "我將其描述為駭人的。"
@@ -50376,7 +50376,7 @@ const externalVocabularyDB = [
     "id": 5598,
     "en": "civilize",
     "kk": "[ˋsɪvə͵laɪz]",
-    "zh": "v. 使文明,使開化",
+    "zh": "v. 使文明、使開化",
     "unit": 6,
     "example": "Russians are civilized people.",
     "exampleZh": "俄羅斯人是文明人。"
@@ -50385,7 +50385,7 @@ const externalVocabularyDB = [
     "id": 5599,
     "en": "cleanse",
     "kk": "[klɛnz]",
-    "zh": "v. 清洗;淨化",
+    "zh": "v. 清洗；淨化",
     "unit": 6,
     "example": "Catherine demonstrated the proper way to cleanse the face.",
     "exampleZh": "凱瑟琳演示了潔面的正確方法。"
@@ -50394,7 +50394,7 @@ const externalVocabularyDB = [
     "id": 5600,
     "en": "coincide",
     "kk": "[͵koɪnˋsaɪd]",
-    "zh": "v. 同時發生;巧合;一致",
+    "zh": "v. 同時發生；巧合；一致",
     "unit": 6,
     "example": "The interests of employers and employees do not always coincide.",
     "exampleZh": "僱主和僱員的利益並不總是一致的。"
@@ -50403,7 +50403,7 @@ const externalVocabularyDB = [
     "id": 5601,
     "en": "collide",
     "kk": "[kəˋlaɪd]",
-    "zh": "v. 相撞;衝突;抵觸",
+    "zh": "v. 相撞；衝突；抵觸",
     "unit": 6,
     "example": "They regularly collide over policy decisions.",
     "exampleZh": "他們經常在政策決策上發生衝突。"
@@ -50412,7 +50412,7 @@ const externalVocabularyDB = [
     "id": 5602,
     "en": "commemorate",
     "kk": "[kəˋmɛmɚ͵et]",
-    "zh": "v. 慶祝;紀念",
+    "zh": "v. 慶祝；紀念",
     "unit": 6,
     "example": "The city commissioned a monument to commemorate the battle.",
     "exampleZh": "該市委託修建了一座紀念碑以紀念這次戰役。"
@@ -50421,7 +50421,7 @@ const externalVocabularyDB = [
     "id": 5603,
     "en": "commence",
     "kk": "[kəˋmɛns]",
-    "zh": "v. 開始;著手;得學位",
+    "zh": "v. 開始；著手；得學位",
     "unit": 6,
     "example": "We commence building next week.",
     "exampleZh": "我們下週破土動工。"
@@ -50430,7 +50430,7 @@ const externalVocabularyDB = [
     "id": 5604,
     "en": "compensate",
     "kk": "[ˋkɑmpən͵set]",
-    "zh": "v. 補償;賠償;酬報",
+    "zh": "v. 補償；賠償；酬報",
     "unit": 6,
     "example": "Nothing can compensate for the loss of a loved one.",
     "exampleZh": "失去心愛的人是無法補償的。"
@@ -50439,7 +50439,7 @@ const externalVocabularyDB = [
     "id": 5605,
     "en": "compile",
     "kk": "[kəmˋpaɪl]",
-    "zh": "v. 匯編;收集(資料等);編譯(程式)",
+    "zh": "v. 匯編；收集(資料等)；編譯(程式)",
     "unit": 6,
     "example": "The book took 10 years to compile.",
     "exampleZh": "這本書花了10年編寫。"
@@ -50448,7 +50448,7 @@ const externalVocabularyDB = [
     "id": 5606,
     "en": "comprise",
     "kk": "[kəmˋpraɪz]",
-    "zh": "v. 包括;由...組成",
+    "zh": "v. 包括；由……組成",
     "unit": 6,
     "example": "These objects comprise functions and data of the system.",
     "exampleZh": "這些物件包含系統的功能和資料。"
@@ -50457,7 +50457,7 @@ const externalVocabularyDB = [
     "id": 5607,
     "en": "concede",
     "kk": "[kənˋsid]",
-    "zh": "v. (勉強)承認;讓步;承認失敗",
+    "zh": "v. (勉強)承認；讓步；承認失敗",
     "unit": 6,
     "example": "I had to concede the logic of this.",
     "exampleZh": "我得承認這件事情有它的邏輯。"
@@ -50466,7 +50466,7 @@ const externalVocabularyDB = [
     "id": 5608,
     "en": "condense",
     "kk": "[kənˋdɛns]",
-    "zh": "v. 濃縮;縮短;凝結",
+    "zh": "v. 濃縮；縮短；凝結",
     "unit": 6,
     "example": "A cloud is condensed steam.",
     "exampleZh": "雲是凝結的蒸汽。"
@@ -50475,7 +50475,7 @@ const externalVocabularyDB = [
     "id": 5609,
     "en": "confer",
     "kk": "[kənˋfɝ]",
-    "zh": "v. 授予(學位等);給予;協商",
+    "zh": "v. 授予(學位等)；給予；協商",
     "unit": 6,
     "example": "He wanted to confer with his colleagues before reaching a decision.",
     "exampleZh": "他想與他的同事先商議一下再作出決定。"
@@ -50484,7 +50484,7 @@ const externalVocabularyDB = [
     "id": 5610,
     "en": "conform",
     "kk": "[kənˋfɔrm]",
-    "zh": "v. 遵照;符合;使一致",
+    "zh": "v. 遵照；符合；使一致",
     "unit": 6,
     "example": "The building does not conform with safety regulations.",
     "exampleZh": "這座建築物不符合安全條例。"
@@ -50493,7 +50493,7 @@ const externalVocabularyDB = [
     "id": 5611,
     "en": "contradict",
     "kk": "[͵kɑntrəˋdɪkt]",
-    "zh": "v. 否定(陳述等);反駁;與...矛盾",
+    "zh": "v. 否定(陳述等)；反駁；與……矛盾",
     "unit": 6,
     "example": "She dared not contradict him.",
     "exampleZh": "她不敢反駁他。"
@@ -50502,7 +50502,7 @@ const externalVocabularyDB = [
     "id": 5612,
     "en": "covet",
     "kk": "[ˋkʌvət]",
-    "zh": "v. 垂涎;貪圖",
+    "zh": "v. 垂涎；貪圖",
     "unit": 6,
     "example": "I briefly covet something, and then the urge passes.",
     "exampleZh": "我會短暫地渴望一件東西，然後這種購買慾就消失了。"
@@ -50511,7 +50511,7 @@ const externalVocabularyDB = [
     "id": 5613,
     "en": "cultivate",
     "kk": "[ˋkʌltə͵vet]",
-    "zh": "v. 栽培(作物等);養殖(魚等);培育",
+    "zh": "v. 栽培(作物等)；養殖(魚等)；培育",
     "unit": 6,
     "example": "The people cultivate mainly rice and beans.",
     "exampleZh": "這裡的人們主要種植稻子和豆類。"
@@ -50520,7 +50520,7 @@ const externalVocabularyDB = [
     "id": 5614,
     "en": "dedicate",
     "kk": "[ˋdɛdə͵ket]",
-    "zh": "v. 奉獻;獻身於;舉行落成典禮",
+    "zh": "v. 奉獻；獻身於；舉行落成典禮",
     "unit": 6,
     "example": "To her I dedicate this book.",
     "exampleZh": "我把這本書獻給她。"
@@ -50529,7 +50529,7 @@ const externalVocabularyDB = [
     "id": 5615,
     "en": "deem",
     "kk": "[dim]",
-    "zh": "v. 認為;視作",
+    "zh": "v. 認為；視作",
     "unit": 6,
     "example": "They deem travel an important part of their life.",
     "exampleZh": "他們認為旅行是他們生活中重要的一部分。"
@@ -50538,7 +50538,7 @@ const externalVocabularyDB = [
     "id": 5616,
     "en": "degrade",
     "kk": "[dɪˋɡred]",
-    "zh": "v. 貶低;降級;降低",
+    "zh": "v. 貶低；降級；降低",
     "unit": 6,
     "example": "Jays prefer crickets, but crickets degrade more quickly.",
     "exampleZh": "松雞喜歡蟋蟀，但蟋蟀退化得更快。"
@@ -50556,7 +50556,7 @@ const externalVocabularyDB = [
     "id": 5618,
     "en": "denounce",
     "kk": "[dɪˋnaʊns]",
-    "zh": "v. 譴責;告發",
+    "zh": "v. 譴責；告發",
     "unit": 6,
     "example": "If we fail, they will denounce us.",
     "exampleZh": "如果我們失敗了，他們會譴責我們。"
@@ -50565,7 +50565,7 @@ const externalVocabularyDB = [
     "id": 5619,
     "en": "depict",
     "kk": "[dɪˋpɪkt]",
-    "zh": "v. 描畫;雕出;描述",
+    "zh": "v. 描畫；雕出；描述",
     "unit": 6,
     "example": "It proved hard to depict objectively.",
     "exampleZh": "事實證明很難客觀地描述它。"
@@ -50583,7 +50583,7 @@ const externalVocabularyDB = [
     "id": 5621,
     "en": "derive",
     "kk": "[dɚˋaɪv]",
-    "zh": "v. 取得;衍生出",
+    "zh": "v. 取得；衍生出",
     "unit": 6,
     "example": "Most patients derive enjoyment from leafing through old picture albums.",
     "exampleZh": "大部分病人能從翻閱舊相簿中獲得樂趣。"
@@ -50592,7 +50592,7 @@ const externalVocabularyDB = [
     "id": 5622,
     "en": "descend",
     "kk": "[dɪˋsɛnd]",
-    "zh": "v. (走)下來;下降;來自於",
+    "zh": "v. (走)下來；下降；來自於",
     "unit": 6,
     "example": "The pilots were told to descend to 2,000 feet.",
     "exampleZh": "飛行員被告知要下降到2000英尺的高度。"
@@ -50610,7 +50610,7 @@ const externalVocabularyDB = [
     "id": 5624,
     "en": "detach",
     "kk": "[ˋdɪt͵ætʃ]",
-    "zh": "v. 分開;拆卸;派遣",
+    "zh": "v. 分開；拆卸；派遣",
     "unit": 6,
     "example": "I have detached it.",
     "exampleZh": "我已經把它拆下來了。"
@@ -50619,7 +50619,7 @@ const externalVocabularyDB = [
     "id": 5625,
     "en": "detain",
     "kk": "[dɪˋten]",
-    "zh": "v. 留住;扣留",
+    "zh": "v. 留住；扣留",
     "unit": 6,
     "example": "He caught her arm in a subconscious attempt to detain her.",
     "exampleZh": "他下意識地抓住了她的胳膊，試圖留住她。"
@@ -50628,7 +50628,7 @@ const externalVocabularyDB = [
     "id": 5626,
     "en": "deter",
     "kk": "[dɪˋtɝ]",
-    "zh": "v. 嚇住;使斷念",
+    "zh": "v. 嚇住；使斷念",
     "unit": 6,
     "example": "Nothing can deter me.",
     "exampleZh": "沒有什麼可以阻止我。"
@@ -50637,7 +50637,7 @@ const externalVocabularyDB = [
     "id": 5627,
     "en": "deteriorate",
     "kk": "[dɪˋtɪriɚ͵et]",
-    "zh": "v. 惡化;(價值)下降;退化;墮落",
+    "zh": "v. 惡化；(價值)下降；退化；墮落",
     "unit": 6,
     "example": "There are fears that the situation might deteriorate into full-scale war.",
     "exampleZh": "人們擔心局勢會惡化為全面戰爭。"
@@ -50646,7 +50646,7 @@ const externalVocabularyDB = [
     "id": 5628,
     "en": "devalue",
     "kk": "[dɪˋvæl͵ju]",
-    "zh": "v. 降低價值;(貨幣)貶值",
+    "zh": "v. 降低價值；(貨幣)貶值",
     "unit": 6,
     "example": "Let's not devalue her work unjustly.",
     "exampleZh": "我們不要不公正地貶低她的工作。"
@@ -50664,7 +50664,7 @@ const externalVocabularyDB = [
     "id": 5630,
     "en": "dictate",
     "kk": "[dɪkˋtet]",
-    "zh": "v. 口授,口述,",
+    "zh": "v. 口授、口述,",
     "unit": 6,
     "example": "I've got a long report I must dictate.",
     "exampleZh": "我拿到了一份我必須要口述的很長的報告。"
@@ -50673,7 +50673,7 @@ const externalVocabularyDB = [
     "id": 5631,
     "en": "differentiate",
     "kk": "[͵dɪfɚˋɛnʃi͵et]",
-    "zh": "v. 構成差別;區分",
+    "zh": "v. 構成差別；區分",
     "unit": 6,
     "example": "I can't differentiate one variety from another.",
     "exampleZh": "我無法將這幾個品種區別開來。"
@@ -50682,7 +50682,7 @@ const externalVocabularyDB = [
     "id": 5632,
     "en": "diminish",
     "kk": "[dɪˋmɪnɪʃ]",
-    "zh": "v. 減少;減小;縮減",
+    "zh": "v. 減少；減小；縮減",
     "unit": 6,
     "example": "Deserts in sub-Saharan Africa will diminish gradually.",
     "exampleZh": "撒哈拉以南非洲的沙漠將逐漸減少。"
@@ -50691,7 +50691,7 @@ const externalVocabularyDB = [
     "id": 5633,
     "en": "disable",
     "kk": "[dɪˋsebəl]",
-    "zh": "v. 使失去能力;使傷殘",
+    "zh": "v. 使失去能力；使傷殘",
     "unit": 6,
     "example": "I will disable it again after the migration.",
     "exampleZh": "我將在遷移結束後再次禁用它。"
@@ -50700,7 +50700,7 @@ const externalVocabularyDB = [
     "id": 5634,
     "en": "disapprove",
     "kk": "[͵dɪsəˋpruv]",
-    "zh": "v. 不贊成;不同意",
+    "zh": "v. 不贊成；不同意",
     "unit": 6,
     "example": "One gets the impression that they disapprove.",
     "exampleZh": "本人的印象是，他們不贊成。"
@@ -50709,7 +50709,7 @@ const externalVocabularyDB = [
     "id": 5635,
     "en": "disclose",
     "kk": "[dɪˋskloz]",
-    "zh": "v. 使露出;揭發;透露",
+    "zh": "v. 使露出；揭發；透露",
     "unit": 6,
     "example": "Neither side would disclose details of the transaction.",
     "exampleZh": "雙方都不會透露交易的細節。"
@@ -50718,7 +50718,7 @@ const externalVocabularyDB = [
     "id": 5636,
     "en": "dismantle",
     "kk": "[dɪˋsmæntəl]",
-    "zh": "v. 去掉覆蓋物;拆除",
+    "zh": "v. 去掉覆蓋物；拆除",
     "unit": 6,
     "example": "They decided to dismantle the machine and start again from scratch.",
     "exampleZh": "他們決定拆掉機器，從頭再來。"
@@ -50727,7 +50727,7 @@ const externalVocabularyDB = [
     "id": 5637,
     "en": "disperse",
     "kk": "[dɪˋspɝs]",
-    "zh": "v. 驅散;解散;散佈",
+    "zh": "v. 驅散；解散；散佈",
     "unit": 6,
     "example": "The fog began to disperse.",
     "exampleZh": "霧開始散了。"
@@ -50736,7 +50736,7 @@ const externalVocabularyDB = [
     "id": 5638,
     "en": "displace",
     "kk": "[dɪˋsples]",
-    "zh": "v. 迫使離開;取代;免職",
+    "zh": "v. 迫使離開；取代；免職",
     "unit": 6,
     "example": "He has a displaced fracture.",
     "exampleZh": "他骨折移位。"
@@ -50745,7 +50745,7 @@ const externalVocabularyDB = [
     "id": 5639,
     "en": "displease",
     "kk": "[dɪˋspliz]",
-    "zh": "v. 使不高興;得罪",
+    "zh": "v. 使不高興；得罪",
     "unit": 6,
     "example": "Not wishing to displease her, he avoided answering the question.",
     "exampleZh": "由於不想對她有所冒犯，他迴避了這個問題。"
@@ -50754,7 +50754,7 @@ const externalVocabularyDB = [
     "id": 5640,
     "en": "dissolve",
     "kk": "[dɪˋzɑlv]",
-    "zh": "v. 分解;使融化",
+    "zh": "v. 分解；使融化",
     "unit": 6,
     "example": "Warm the sugar slightly first to make it dissolve quicker.",
     "exampleZh": "首先把糖微微加熱讓它更快地溶化。"
@@ -50772,7 +50772,7 @@ const externalVocabularyDB = [
     "id": 5642,
     "en": "distort",
     "kk": "[dɪˋstɔrt]",
-    "zh": "v. 扭曲;曲解;變形",
+    "zh": "v. 扭曲；曲解；變形",
     "unit": 6,
     "example": "A painter may exaggerate or distort shapes and forms.",
     "exampleZh": "畫家可能會誇大或扭曲形狀與形式。"
@@ -50781,7 +50781,7 @@ const externalVocabularyDB = [
     "id": 5643,
     "en": "distract",
     "kk": "[dɪˋstrækt]",
-    "zh": "v. 轉移(目標);使分心",
+    "zh": "v. 轉移(目標)；使分心",
     "unit": 6,
     "example": "It was another attempt to distract attention from the truth.",
     "exampleZh": "這又是企圖分散人們對事實真相的注意力。"
@@ -50799,7 +50799,7 @@ const externalVocabularyDB = [
     "id": 5645,
     "en": "divert",
     "kk": "[daɪˋvɝt]",
-    "zh": "v. 轉向;改道;使分心",
+    "zh": "v. 轉向；改道；使分心",
     "unit": 6,
     "example": "Planes can be diverted.",
     "exampleZh": "飛機可以改道。"
@@ -50808,7 +50808,7 @@ const externalVocabularyDB = [
     "id": 5646,
     "en": "donate",
     "kk": "[ˋdo͵net]",
-    "zh": "v. 捐獻,捐贈",
+    "zh": "v. 捐獻、捐贈",
     "unit": 6,
     "example": "They should donate at the registration point.",
     "exampleZh": "他們應該在註冊登記處捐款。"
@@ -50817,7 +50817,7 @@ const externalVocabularyDB = [
     "id": 5647,
     "en": "embark",
     "kk": "[ɛmˋbɑrk]",
-    "zh": "v. 上船(或飛機等);從事",
+    "zh": "v. 上船(或飛機等)；從事",
     "unit": 6,
     "example": "Now it's time to embark.",
     "exampleZh": "現在是時候出發了。"
@@ -50835,7 +50835,7 @@ const externalVocabularyDB = [
     "id": 5649,
     "en": "enact",
     "kk": "[ɪˋnækt]",
-    "zh": "v. 制定(法律);扮演(角色)",
+    "zh": "v. 制定(法律)；扮演(角色)",
     "unit": 6,
     "example": "Another six states allow initiatives only to enact statutes.",
     "exampleZh": "另有六個州僅允許透過公民提案來制定法規。"
@@ -50844,7 +50844,7 @@ const externalVocabularyDB = [
     "id": 5650,
     "en": "enhance",
     "kk": "[ɛnˋhæns]",
-    "zh": "v. 提高,增加",
+    "zh": "v. 提高、增加",
     "unit": 6,
     "example": "Large paintings can enhance the feeling of space in small rooms.",
     "exampleZh": "大幅畫作能增加小房間的寬敞感。"
@@ -50853,7 +50853,7 @@ const externalVocabularyDB = [
     "id": 5651,
     "en": "enlighten",
     "kk": "[͵ɛnˋlaɪtən]",
-    "zh": "v. 啟發;啟迪",
+    "zh": "v. 啟發；啟迪",
     "unit": 6,
     "example": "The results may enlighten you.",
     "exampleZh": "這個結果可能會對你有啟發。"
@@ -50862,7 +50862,7 @@ const externalVocabularyDB = [
     "id": 5652,
     "en": "enrich",
     "kk": "[ɛˋnrɪtʃ]",
-    "zh": "v. 使富裕;使豐富;使肥沃",
+    "zh": "v. 使富裕；使豐富；使肥沃",
     "unit": 6,
     "example": "We work only to enrich others.",
     "exampleZh": "我們工作只是為了讓別人更富有。"
@@ -50871,7 +50871,7 @@ const externalVocabularyDB = [
     "id": 5653,
     "en": "erode",
     "kk": "[ɪˋrod]",
-    "zh": "v. 腐蝕;侵蝕;磨損",
+    "zh": "v. 腐蝕；侵蝕；磨損",
     "unit": 6,
     "example": "They may erode the workplace environment.",
     "exampleZh": "它們可能會侵蝕工作場所環境。"
@@ -50889,7 +50889,7 @@ const externalVocabularyDB = [
     "id": 5655,
     "en": "evacuate",
     "kk": "[ɪˋvækjə͵et]",
-    "zh": "v. 撤離;避難;疏散",
+    "zh": "v. 撤離；避難；疏散",
     "unit": 6,
     "example": "All we can do is to evacuate.",
     "exampleZh": "我們所能做的只有撤離。"
@@ -50898,7 +50898,7 @@ const externalVocabularyDB = [
     "id": 5656,
     "en": "evolve",
     "kk": "[ɪˋvɑlv]",
-    "zh": "v. 使逐步形成;發展",
+    "zh": "v. 使逐步形成；發展",
     "unit": 6,
     "example": "They grow and evolve with age.",
     "exampleZh": "它們隨著年齡增長而發展演變。"
@@ -50907,7 +50907,7 @@ const externalVocabularyDB = [
     "id": 5657,
     "en": "exert",
     "kk": "[ɪɡˋzɝt]",
-    "zh": "v. 用(力);施加",
+    "zh": "v. 用(力)；施加",
     "unit": 6,
     "example": "In order to be successful he would have to exert himself.",
     "exampleZh": "他必須努力才能成功。"
@@ -50916,7 +50916,7 @@ const externalVocabularyDB = [
     "id": 5658,
     "en": "expel",
     "kk": "[ɪkˋspɛl]",
-    "zh": "v. 驅逐;排出;開除",
+    "zh": "v. 驅逐；排出；開除",
     "unit": 6,
     "example": "The heart muscles contract to expel the blood.",
     "exampleZh": "心臟肌肉收縮以擠壓出血液。"
@@ -50925,7 +50925,7 @@ const externalVocabularyDB = [
     "id": 5659,
     "en": "expire",
     "kk": "[ɪkˋspaɪr]",
-    "zh": "v. 失效;滿期;吐氣",
+    "zh": "v. 失效；滿期；吐氣",
     "unit": 6,
     "example": "When does your driving licence expire?",
     "exampleZh": "你的駕照什麼時候到期？"
@@ -50934,7 +50934,7 @@ const externalVocabularyDB = [
     "id": 5660,
     "en": "facilitate",
     "kk": "[fəˋsɪlə͵tet]",
-    "zh": "v. 使容易;促進;幫助",
+    "zh": "v. 使容易；促進；幫助",
     "unit": 6,
     "example": "The new airport will facilitate the development of tourism.",
     "exampleZh": "新機場將促進旅遊業的發展。"
@@ -50943,7 +50943,7 @@ const externalVocabularyDB = [
     "id": 5661,
     "en": "foresee",
     "kk": "[fɔrˋsi]",
-    "zh": "v. 預見;預知",
+    "zh": "v. 預見；預知",
     "unit": 6,
     "example": "He did not foresee any problems.",
     "exampleZh": "他沒有預見到任何問題。"
@@ -50952,7 +50952,7 @@ const externalVocabularyDB = [
     "id": 5662,
     "en": "formulate",
     "kk": "[ˋfɔrmjə͵let]",
-    "zh": "v. 使公式化;規劃;配製",
+    "zh": "v. 使公式化；規劃；配製",
     "unit": 6,
     "example": "Rodrigo formulated a plan.",
     "exampleZh": "羅德里戈制定了一個計劃。"
@@ -50961,7 +50961,7 @@ const externalVocabularyDB = [
     "id": 5663,
     "en": "forsake",
     "kk": "[fɔrˋsek]",
-    "zh": "v. 拋棄;革除",
+    "zh": "v. 拋棄；革除",
     "unit": 6,
     "example": "I still love him and I would never forsake him.",
     "exampleZh": "我仍然愛他，我永遠不會離棄他。"
@@ -50970,7 +50970,7 @@ const externalVocabularyDB = [
     "id": 5664,
     "en": "fortify",
     "kk": "[ˋfɔrtɪ͵faɪ]",
-    "zh": "v. 築防禦工事於;增強",
+    "zh": "v. 築防禦工事於；增強",
     "unit": 6,
     "example": "Fortify your decision with a commitment.",
     "exampleZh": "用付出讓你的決定更加堅定。"
@@ -50988,7 +50988,7 @@ const externalVocabularyDB = [
     "id": 5666,
     "en": "fret",
     "kk": "[frɛt]",
-    "zh": "v. 使苦惱;使煩躁",
+    "zh": "v. 使苦惱；使煩躁",
     "unit": 6,
     "example": "If it's out of your control, why fret about it?",
     "exampleZh": "如果這是你無法控制的，為什麼要為此煩惱呢？"
@@ -50997,7 +50997,7 @@ const externalVocabularyDB = [
     "id": 5667,
     "en": "generalize",
     "kk": "[ˋdʒɛnɚə͵laɪz]",
-    "zh": "v. 泛論;概括",
+    "zh": "v. 泛論；概括",
     "unit": 6,
     "example": "It would be foolish to generalize from a single example.",
     "exampleZh": "僅從一個事例進行歸納的做法是愚蠢的。"
@@ -51015,7 +51015,7 @@ const externalVocabularyDB = [
     "id": 5669,
     "en": "hack",
     "kk": "[hæk]",
-    "zh": "v. 劈;砍",
+    "zh": "v. 劈；砍",
     "unit": 6,
     "example": "Did you get hacked?",
     "exampleZh": "你被黑了嗎？"
@@ -51024,7 +51024,7 @@ const externalVocabularyDB = [
     "id": 5670,
     "en": "harass",
     "kk": "[hɚˋæs]",
-    "zh": "v. 騷擾;使煩惱",
+    "zh": "v. 騷擾；使煩惱",
     "unit": 6,
     "example": "He will bring up your past to haunt and harass you.",
     "exampleZh": "他將帶你回到從前，困擾和騷擾你。"
@@ -51042,7 +51042,7 @@ const externalVocabularyDB = [
     "id": 5672,
     "en": "humiliate",
     "kk": "[hjuˋmɪli͵et]",
-    "zh": "v. 羞辱;使丟臉",
+    "zh": "v. 羞辱；使丟臉",
     "unit": 6,
     "example": "I didn't want to humiliate her in front of her colleagues.",
     "exampleZh": "我不想當著她同事們的面令她難堪。"
@@ -51051,7 +51051,7 @@ const externalVocabularyDB = [
     "id": 5673,
     "en": "illuminate",
     "kk": "[͵ɪlˋumɪnɪt]",
-    "zh": "v. 照亮;用燈裝飾;啟發",
+    "zh": "v. 照亮；用燈裝飾；啟發",
     "unit": 6,
     "example": "Second, data can illuminate patterns of behavior we haven't yet noticed.",
     "exampleZh": "其次，資料可以闡明一些我們尚未注意到的行為模式。"
@@ -51060,7 +51060,7 @@ const externalVocabularyDB = [
     "id": 5674,
     "en": "imprison",
     "kk": "[͵ɪmˋprɪzən]",
-    "zh": "v. 監禁;束縛",
+    "zh": "v. 監禁；束縛",
     "unit": 6,
     "example": "They don't imprison first-time offenders.",
     "exampleZh": "他們通常不監禁初次犯罪的人。"
@@ -51069,7 +51069,7 @@ const externalVocabularyDB = [
     "id": 5675,
     "en": "infer",
     "kk": "[͵ɪnˋfɝ]",
-    "zh": "v. 推斷,推論",
+    "zh": "v. 推斷、推論",
     "unit": 6,
     "example": "What can we infer about the author?",
     "exampleZh": "我們可以推斷出關於作者的什麼？"
@@ -51078,7 +51078,7 @@ const externalVocabularyDB = [
     "id": 5676,
     "en": "inhabit",
     "kk": "[͵ɪnˋhæbət]",
-    "zh": "v. 居住於;棲息於",
+    "zh": "v. 居住於；棲息於",
     "unit": 6,
     "example": "They inhabit reed huts built on stilts above the water.",
     "exampleZh": "他們居住在建在水中木樁上的蘆葦草屋裡。"
@@ -51096,7 +51096,7 @@ const externalVocabularyDB = [
     "id": 5678,
     "en": "integrate",
     "kk": "[ˋɪntə͵ɡret]",
-    "zh": "v. 使結合;求積分",
+    "zh": "v. 使結合；求積分",
     "unit": 6,
     "example": "He didn't integrate successfully into the Italian way of life.",
     "exampleZh": "他沒有成功融入到義大利的生活方式中去。"
@@ -51105,7 +51105,7 @@ const externalVocabularyDB = [
     "id": 5679,
     "en": "intervene",
     "kk": "[͵ɪntɚˋvin]",
-    "zh": "v. 介入;干預;調停",
+    "zh": "v. 介入；干預；調停",
     "unit": 6,
     "example": "The problem lies in deciding when to intervene.",
     "exampleZh": "問題在於決定何時介入。"
@@ -51114,7 +51114,7 @@ const externalVocabularyDB = [
     "id": 5680,
     "en": "intimidate",
     "kk": "[͵ɪnˋtɪmɪ͵det]",
-    "zh": "v. 威嚇;脅迫",
+    "zh": "v. 威嚇；脅迫",
     "unit": 6,
     "example": "Jones had set out to intimidate and dominate Paul.",
     "exampleZh": "瓊斯曾試圖威脅並控制保羅。"
@@ -51123,7 +51123,7 @@ const externalVocabularyDB = [
     "id": 5681,
     "en": "intrude",
     "kk": "[͵ɪnˋtrud]",
-    "zh": "v. 侵入;闖入",
+    "zh": "v. 侵入；闖入",
     "unit": 6,
     "example": "I'm sorry to intrude on you like this.",
     "exampleZh": "很抱歉這樣打擾你。"
@@ -51132,7 +51132,7 @@ const externalVocabularyDB = [
     "id": 5682,
     "en": "irritate",
     "kk": "[ˋɪrɪ͵tet]",
-    "zh": "v. 使惱怒;使煩躁",
+    "zh": "v. 使惱怒；使煩躁",
     "unit": 6,
     "example": "Some drugs can irritate the lining of the stomach.",
     "exampleZh": "有些藥物會刺激胃內壁。"
@@ -51141,7 +51141,7 @@ const externalVocabularyDB = [
     "id": 5683,
     "en": "kidnap",
     "kk": "[ˋkɪd͵næp]",
-    "zh": "v. 綁架;劫持",
+    "zh": "v. 綁架；劫持",
     "unit": 6,
     "example": "He admitted the charge of kidnap.",
     "exampleZh": "他對綁架的指控供認不諱。"
@@ -51159,7 +51159,7 @@ const externalVocabularyDB = [
     "id": 5685,
     "en": "liberate",
     "kk": "[ˋlɪb͵ɝ͵et]",
-    "zh": "v. 解放,使獲自由",
+    "zh": "v. 解放、使獲自由",
     "unit": 6,
     "example": "They planned to march on and liberate the city.",
     "exampleZh": "他們打算繼續前進解放這座城市。"
@@ -51168,7 +51168,7 @@ const externalVocabularyDB = [
     "id": 5686,
     "en": "manipulate",
     "kk": "[məˋnɪpjə͵let]",
-    "zh": "v. 操作;運用;操縱;對...做手腳",
+    "zh": "v. 操作；運用；操縱；對……做手腳",
     "unit": 6,
     "example": "The technology uses a pen to manipulate a computer.",
     "exampleZh": "這項技術使用筆來操作計算機。"
@@ -51177,7 +51177,7 @@ const externalVocabularyDB = [
     "id": 5687,
     "en": "mar",
     "kk": "[mɑr]",
-    "zh": "v. 毀損;損傷;玷污",
+    "zh": "v. 毀損；損傷；玷污",
     "unit": 6,
     "example": "Go to Mars already.",
     "exampleZh": "已經去火星了。"
@@ -51186,7 +51186,7 @@ const externalVocabularyDB = [
     "id": 5688,
     "en": "meditate",
     "kk": "[ˋmɛdə͵tet]",
-    "zh": "v. 沈思;深思熟慮",
+    "zh": "v. 沈思；深思熟慮",
     "unit": 6,
     "example": "You need to learn how to meditate.",
     "exampleZh": "你需要學習如何冥想。"
@@ -51204,7 +51204,7 @@ const externalVocabularyDB = [
     "id": 5690,
     "en": "merge",
     "kk": "[mɝdʒ]",
-    "zh": "v. 合併;融合",
+    "zh": "v. 合併；融合",
     "unit": 6,
     "example": "His department will merge with mine.",
     "exampleZh": "他的部門將和我的合併。"
@@ -51213,7 +51213,7 @@ const externalVocabularyDB = [
     "id": 5691,
     "en": "migrate",
     "kk": "[ˋmaɪ͵ɡret]",
-    "zh": "v. 移居;定期移棲;回游",
+    "zh": "v. 移居；定期移棲；回游",
     "unit": 6,
     "example": "Swallows migrate south in winter.",
     "exampleZh": "燕子在冬天遷徙到南方。"
@@ -51222,7 +51222,7 @@ const externalVocabularyDB = [
     "id": 5692,
     "en": "minimize",
     "kk": "[ˋmɪnə͵maɪz]",
-    "zh": "v. 使減到最少(或最小);低估",
+    "zh": "v. 使減到最少(或最小)；低估",
     "unit": 6,
     "example": "Minimize any windows you have opened.",
     "exampleZh": "把你開啟的所有視窗最小化。"
@@ -51231,7 +51231,7 @@ const externalVocabularyDB = [
     "id": 5693,
     "en": "mobilize",
     "kk": "[ˋmobə͵laɪz]",
-    "zh": "v. 動員;調動",
+    "zh": "v. 動員；調動",
     "unit": 6,
     "example": "The troops were ordered to mobilize.",
     "exampleZh": "部隊接到了動員令。"
@@ -51240,7 +51240,7 @@ const externalVocabularyDB = [
     "id": 5694,
     "en": "narrate",
     "kk": "[ˋnɛr͵et]",
-    "zh": "v. 講(故事);敘述;作旁白",
+    "zh": "v. 講(故事)；敘述；作旁白",
     "unit": 6,
     "example": "The three of them narrate the same events from three perspectives.",
     "exampleZh": "他們3個人從3個角度敘述同樣那些事件。"
@@ -51249,7 +51249,7 @@ const externalVocabularyDB = [
     "id": 5695,
     "en": "nourish",
     "kk": "[ˋnɝɪʃ]",
-    "zh": "v. 養育;滋養",
+    "zh": "v. 養育；滋養",
     "unit": 6,
     "example": "Milk nourishes a baby.",
     "exampleZh": "牛奶可以滋養嬰兒。"
@@ -51258,7 +51258,7 @@ const externalVocabularyDB = [
     "id": 5696,
     "en": "oblige",
     "kk": "[əbˋlaɪdʒ]",
-    "zh": "v. 使不得不;迫使;施恩於",
+    "zh": "v. 使不得不；迫使；施恩於",
     "unit": 6,
     "example": "Would you oblige me with some information?",
     "exampleZh": "拜託您給我透露些訊息好嗎？"
@@ -51276,7 +51276,7 @@ const externalVocabularyDB = [
     "id": 5698,
     "en": "oppress",
     "kk": "[əˋprɛs]",
-    "zh": "v. 壓迫;壓制",
+    "zh": "v. 壓迫；壓制",
     "unit": 6,
     "example": "They are being oppressed.",
     "exampleZh": "他們受到壓迫。"
@@ -51285,7 +51285,7 @@ const externalVocabularyDB = [
     "id": 5699,
     "en": "originate",
     "kk": "[ɚˋɪdʒə͵net]",
-    "zh": "v. 發源;來自",
+    "zh": "v. 發源；來自",
     "unit": 6,
     "example": "All carbohydrates originate from plants.",
     "exampleZh": "所有的碳水化合物均來源於植物。"
@@ -51303,16 +51303,16 @@ const externalVocabularyDB = [
     "id": 5701,
     "en": "paralyze",
     "kk": "[ˋpɛrə͵laɪz]",
-    "zh": "v. 使麻痺;使癱瘓",
+    "zh": "v. 使麻痺；使癱瘓",
     "unit": 6,
-    "example": "Can you use the word paralyze in a sentence?",
-    "exampleZh": "你能在句子中使用「使癱瘓」這個詞嗎？"
+    "example": "The sudden nationwide power outage threatened to paralyze subway transit systems.",
+    "exampleZh": "突然的全國性停電恐將使地鐵交通系統陷入癱瘓。"
   },
   {
     "id": 5702,
     "en": "peddle",
     "kk": "[ˋpɛdəl]",
-    "zh": "v. 挨戶兜售;沿街叫賣",
+    "zh": "v. 挨戶兜售；沿街叫賣",
     "unit": 6,
     "example": "Peddle your wares elsewhere.",
     "exampleZh": "在其他地方兜售你的商品。"
@@ -51321,7 +51321,7 @@ const externalVocabularyDB = [
     "id": 5703,
     "en": "persevere",
     "kk": "[pɚsəˋvɪr]",
-    "zh": "v. 堅持不懈;不屈不撓",
+    "zh": "v. 堅持不懈；不屈不撓",
     "unit": 6,
     "example": "You have to persevere with difficult students.",
     "exampleZh": "對難教的學生你必須堅持誨人不倦的精神。"
@@ -51330,7 +51330,7 @@ const externalVocabularyDB = [
     "id": 5704,
     "en": "pierce",
     "kk": "[pɪrs]",
-    "zh": "v. 刺穿;穿透",
+    "zh": "v. 刺穿；穿透",
     "unit": 6,
     "example": "They failed to pierce the Liverpool defence.",
     "exampleZh": "他們未能突破利物浦隊的防線。"
@@ -51339,7 +51339,7 @@ const externalVocabularyDB = [
     "id": 5705,
     "en": "poach",
     "kk": "[potʃ]",
-    "zh": "v. 水煮(蛋);偷獵;侵佔",
+    "zh": "v. 水煮(蛋)；偷獵；侵佔",
     "unit": 6,
     "example": "Companies sometimes poach employees from one another.",
     "exampleZh": "一些公司有時會相互挖走對方的僱員。"
@@ -51348,7 +51348,7 @@ const externalVocabularyDB = [
     "id": 5706,
     "en": "ponder",
     "kk": "[ˋpɑndɚ]",
-    "zh": "v. 仔細考慮;衡量;回想",
+    "zh": "v. 仔細考慮；衡量；回想",
     "unit": 6,
     "example": "Bob pondered the subject.",
     "exampleZh": "鮑伯沉思著這個話題。"
@@ -51357,7 +51357,7 @@ const externalVocabularyDB = [
     "id": 5707,
     "en": "populate",
     "kk": "[ˋpɑpjə͵let]",
-    "zh": "v. 居住於;移民於",
+    "zh": "v. 居住於；移民於",
     "unit": 6,
     "example": "You must populate both sections for the same profile.",
     "exampleZh": "您必須填充同一份概要檔案的這兩個部分。"
@@ -51366,7 +51366,7 @@ const externalVocabularyDB = [
     "id": 5708,
     "en": "precede",
     "kk": "[prɪˋsid]",
-    "zh": "v. 處在...之前;(地位等)高於",
+    "zh": "v. 處在……之前；(地位等)高於",
     "unit": 6,
     "example": "He gestured to Alice to precede them from the room.",
     "exampleZh": "他示意艾麗斯從房間裡出來走在他們前面。"
@@ -51375,7 +51375,7 @@ const externalVocabularyDB = [
     "id": 5709,
     "en": "prescribe",
     "kk": "[prəˋskraɪb]",
-    "zh": "v. 規定;指定;開(藥方)",
+    "zh": "v. 規定；指定；開(藥方)",
     "unit": 6,
     "example": "The physician may prescribe but not administer the drug.",
     "exampleZh": "內科醫師可以開處方但不可發藥。"
@@ -51384,7 +51384,7 @@ const externalVocabularyDB = [
     "id": 5710,
     "en": "preside",
     "kk": "[prɪˋzaɪd]",
-    "zh": "v. 主持;管轄",
+    "zh": "v. 主持；管轄",
     "unit": 6,
     "example": "They asked if I would preside at the committee meeting.",
     "exampleZh": "他們問我是否會主持委員會會議。"
@@ -51393,7 +51393,7 @@ const externalVocabularyDB = [
     "id": 5711,
     "en": "presume",
     "kk": "[prɪˋzum]",
-    "zh": "v. 假定;認為;擅自(做)",
+    "zh": "v. 假定；認為；擅自(做)",
     "unit": 6,
     "example": "We must presume innocence until we have proof of guilt.",
     "exampleZh": "在證實一個人有罪之前，我們必須假定其無辜。"
@@ -51411,7 +51411,7 @@ const externalVocabularyDB = [
     "id": 5713,
     "en": "propel",
     "kk": "[prəˋpɛl]",
-    "zh": "v. 推進;推動;驅策",
+    "zh": "v. 推進；推動；驅策",
     "unit": 6,
     "example": "Scientists believe that making stone tools helped propel that evolution.",
     "exampleZh": "科學家認為，製造石器幫助推進了這種進化。"
@@ -51420,7 +51420,7 @@ const externalVocabularyDB = [
     "id": 5714,
     "en": "prosecute",
     "kk": "[ˋprɑsə͵kjut]",
-    "zh": "v. 對...起訴;告發",
+    "zh": "v. 對……起訴；告發",
     "unit": 6,
     "example": "Tom will be prosecuted.",
     "exampleZh": "湯姆將被起訴。"
@@ -51429,7 +51429,7 @@ const externalVocabularyDB = [
     "id": 5715,
     "en": "provoke",
     "kk": "[prəˋvok]",
-    "zh": "v. 對...挑釁;煽動;激怒",
+    "zh": "v. 對……挑釁；煽動；激怒",
     "unit": 6,
     "example": "His duty was to conciliate the people, not to provoke them.",
     "exampleZh": "他的任務是安撫這些人，而不是激怒他們。"
@@ -51438,7 +51438,7 @@ const externalVocabularyDB = [
     "id": 5716,
     "en": "purify",
     "kk": "[ˋpjʊrə͵faɪ]",
-    "zh": "v. 使純淨;淨化",
+    "zh": "v. 使純淨；淨化",
     "unit": 6,
     "example": "One tablet will purify a litre of water.",
     "exampleZh": "一丸即可淨化一升水。"
@@ -51447,7 +51447,7 @@ const externalVocabularyDB = [
     "id": 5717,
     "en": "quench",
     "kk": "[kwɛntʃ]",
-    "zh": "v. 壓制;抑制;解(渴);熄滅",
+    "zh": "v. 壓制；抑制；解(渴)；熄滅",
     "unit": 6,
     "example": "He stopped to quench his thirst at a stream.",
     "exampleZh": "他停在一條小溪邊喝水解渴。"
@@ -51456,7 +51456,7 @@ const externalVocabularyDB = [
     "id": 5718,
     "en": "radiate",
     "kk": "[ˋrediət]",
-    "zh": "adj. (光；v. 熱等)散發;輻射;煥發",
+    "zh": "adj. (光；v. 熱等)散發；輻射；煥發",
     "unit": 6,
     "example": "Five roads radiate from the square.",
     "exampleZh": "五條道路由廣場向外延伸。"
@@ -51465,7 +51465,7 @@ const externalVocabularyDB = [
     "id": 5719,
     "en": "reconcile",
     "kk": "[ˋrɛkən͵saɪl]",
-    "zh": "v. 和解;使一致;使安於",
+    "zh": "v. 和解；使一致；使安於",
     "unit": 6,
     "example": "He could not reconcile himself to the prospect of losing her.",
     "exampleZh": "他一想到有可能失去她，就覺得難以忍受。"
@@ -51474,7 +51474,7 @@ const externalVocabularyDB = [
     "id": 5720,
     "en": "recur",
     "kk": "[rɪˋkɝ]",
-    "zh": "v. 再發生;再現",
+    "zh": "v. 再發生；再現",
     "unit": 6,
     "example": "A number of themes recur.",
     "exampleZh": "許多主題重現。"
@@ -51483,7 +51483,7 @@ const externalVocabularyDB = [
     "id": 5721,
     "en": "refine",
     "kk": "[rəˋfaɪn]",
-    "zh": "v. 提煉;精鍊",
+    "zh": "v. 提煉；精鍊",
     "unit": 6,
     "example": "They use this way to refine sugar.",
     "exampleZh": "他們用這種方法精製糖。"
@@ -51492,7 +51492,7 @@ const externalVocabularyDB = [
     "id": 5722,
     "en": "rehearse",
     "kk": "[riˋhɝs]",
-    "zh": "v. 排練,排演",
+    "zh": "v. 排練、排演",
     "unit": 6,
     "example": "We were given only two weeks to rehearse.",
     "exampleZh": "只給了我們兩個星期排練。"
@@ -51501,7 +51501,7 @@ const externalVocabularyDB = [
     "id": 5723,
     "en": "reinforce",
     "kk": "[͵riɪnˋfɔrs]",
-    "zh": "v. 增援;加強;加深",
+    "zh": "v. 增援；加強；加深",
     "unit": 6,
     "example": "I do expect some commitment to reinforce coordination.",
     "exampleZh": "我確實期待會有一些加強協作的承諾。"
@@ -51510,7 +51510,7 @@ const externalVocabularyDB = [
     "id": 5724,
     "en": "render",
     "kk": "[ˋrɛndɚ]",
-    "zh": "v. 使得;使成為;提供",
+    "zh": "v. 使得；使成為；提供",
     "unit": 6,
     "example": "It's a concept that is difficult to render into English.",
     "exampleZh": "這個概念難以用英語來表達。"
@@ -51519,7 +51519,7 @@ const externalVocabularyDB = [
     "id": 5725,
     "en": "repress",
     "kk": "[riˋprɛs]",
-    "zh": "v. 抑制;鎮壓",
+    "zh": "v. 抑制；鎮壓",
     "unit": 6,
     "example": "Don't repress your emotions.",
     "exampleZh": "不要壓抑你的情緒。"
@@ -51530,14 +51530,14 @@ const externalVocabularyDB = [
     "kk": "[rɪˋtæli͵et]",
     "zh": "v. 報復",
     "unit": 6,
-    "example": "Can you use the word retaliate in a sentence?",
-    "exampleZh": "你能在句子中使用「報復」這個詞嗎？"
+    "example": "The nation warned it would retaliate swiftly if its airspace was breached.",
+    "exampleZh": "該國警告若領空遭到侵犯，將會迅速採取反擊報復。"
   },
   {
     "id": 5727,
     "en": "retrieve",
     "kk": "[rɪˋtriv]",
-    "zh": "v. 收回;檢索;使恢復",
+    "zh": "v. 收回；檢索；使恢復",
     "unit": 6,
     "example": "Retrieve the previous page of search results.",
     "exampleZh": "檢索搜尋結果的前一頁面。"
@@ -51546,7 +51546,7 @@ const externalVocabularyDB = [
     "id": 5728,
     "en": "rotate",
     "kk": "[ˋro͵tet]",
-    "zh": "v. 旋轉;輪流",
+    "zh": "v. 旋轉；輪流",
     "unit": 6,
     "example": "With a low-pitched rumbling noise, the propeller began to rotate.",
     "exampleZh": "隨著低沉的隆隆聲，螺旋槳開始旋轉起來。"
@@ -51555,10 +51555,10 @@ const externalVocabularyDB = [
     "id": 5729,
     "en": "seduce",
     "kk": "[sɪˋdus]",
-    "zh": "v. 誘惑;引誘",
+    "zh": "v. 誘惑；引誘",
     "unit": 6,
-    "example": "Can you use the word seduce in a sentence?",
-    "exampleZh": "你能在句子中使用「引誘」這個詞嗎？"
+    "example": "Unscrupulous marketers use exaggerated claims to seduce vulnerable consumers.",
+    "exampleZh": "不肖行銷人員利用誇大不實的說詞來誘惑脆弱的消費者。"
   },
   {
     "id": 5730,
@@ -51573,7 +51573,7 @@ const externalVocabularyDB = [
     "id": 5731,
     "en": "shun",
     "kk": "[ʃʌn]",
-    "zh": "v. 躲開;迴避",
+    "zh": "v. 躲開；迴避",
     "unit": 6,
     "example": "They wear simple clothes and shun modern contrivances.",
     "exampleZh": "他們穿著簡單，避免了現代裝束。"
@@ -51582,7 +51582,7 @@ const externalVocabularyDB = [
     "id": 5732,
     "en": "signify",
     "kk": "[ˋsɪɡnə͵faɪ]",
-    "zh": "v. 表示...的意思;意味著",
+    "zh": "v. 表示……的意思；意味著",
     "unit": 6,
     "example": "He nodded to signify that he agreed.",
     "exampleZh": "他點頭表示同意。"
@@ -51591,7 +51591,7 @@ const externalVocabularyDB = [
     "id": 5733,
     "en": "simplify",
     "kk": "[ˋsɪmplə͵faɪ]",
-    "zh": "v. 簡化,精簡;使單純;使平易",
+    "zh": "v. 簡化、精簡；使單純；使平易",
     "unit": 6,
     "example": "Our aim is to simplify the complex social security system.",
     "exampleZh": "我們的目的是要簡化複雜的社會保險體系。"
@@ -51609,7 +51609,7 @@ const externalVocabularyDB = [
     "id": 5735,
     "en": "soar",
     "kk": "[sɔr]",
-    "zh": "v. 往上飛舞;翱翔;暴漲",
+    "zh": "v. 往上飛舞；翱翔；暴漲",
     "unit": 6,
     "example": "His market share continues to soar.",
     "exampleZh": "他的市場份額不斷高漲。"
@@ -51618,7 +51618,7 @@ const externalVocabularyDB = [
     "id": 5736,
     "en": "socialize",
     "kk": "[ˋsoʃə͵laɪz]",
-    "zh": "v. 交際;社會主義化",
+    "zh": "v. 交際；社會主義化",
     "unit": 6,
     "example": "Socialize with friends, but don't overspend on lavish entertainment.",
     "exampleZh": "與朋友交往，但不要在奢侈的娛樂上過度消費。"
@@ -51627,7 +51627,7 @@ const externalVocabularyDB = [
     "id": 5737,
     "en": "soothe",
     "kk": "[suð]",
-    "zh": "v. 安慰;哄;減輕",
+    "zh": "v. 安慰；哄；減輕",
     "unit": 6,
     "example": "It uses therapy animals to soothe nervous passengers.",
     "exampleZh": "它使用治療動物來安撫緊張的乘客。"
@@ -51636,7 +51636,7 @@ const externalVocabularyDB = [
     "id": 5738,
     "en": "specialize",
     "kk": "[ˋspɛʃə͵laɪz]",
-    "zh": "v. 專攻;專門從事",
+    "zh": "v. 專攻；專門從事",
     "unit": 6,
     "example": "We specialize in quality furniture.",
     "exampleZh": "我們專營高檔傢俱。"
@@ -51645,7 +51645,7 @@ const externalVocabularyDB = [
     "id": 5739,
     "en": "specify",
     "kk": "[ˋspɛsə͵faɪ]",
-    "zh": "v. 具體指定;詳細指明",
+    "zh": "v. 具體指定；詳細指明",
     "unit": 6,
     "example": "How do you specify what you want?",
     "exampleZh": "你怎樣具體指明你想要什麼？"
@@ -51654,7 +51654,7 @@ const externalVocabularyDB = [
     "id": 5740,
     "en": "speculate",
     "kk": "[ˋspɛkjə͵let]",
-    "zh": "v. 推測;投機;推斷",
+    "zh": "v. 推測；投機；推斷",
     "unit": 6,
     "example": "It's always hard to speculate about the future.",
     "exampleZh": "推測未來總是很難的。"
@@ -51663,7 +51663,7 @@ const externalVocabularyDB = [
     "id": 5741,
     "en": "stabilize",
     "kk": "[ˋstebə͵laɪz]",
-    "zh": "v. 使穩定;使穩固",
+    "zh": "v. 使穩定；使穩固",
     "unit": 6,
     "example": "It is anticipated that inflation will stabilize at 3%.",
     "exampleZh": "據預測，通貨膨脹將穩定在3%。"
@@ -51672,7 +51672,7 @@ const externalVocabularyDB = [
     "id": 5742,
     "en": "stimulate",
     "kk": "[ˋstɪmjə͵let]",
-    "zh": "v. 刺激;激勵;使興奮;促使",
+    "zh": "v. 刺激；激勵；使興奮；促使",
     "unit": 6,
     "example": "These businesses stimulate the creation of local jobs.",
     "exampleZh": "這些企業刺激了當地就業機會的產生。"
@@ -51681,7 +51681,7 @@ const externalVocabularyDB = [
     "id": 5743,
     "en": "strangle",
     "kk": "[ˋstræŋɡəl]",
-    "zh": "v. 勒死;扼住;悶住",
+    "zh": "v. 勒死；扼住；悶住",
     "unit": 6,
     "example": "Well, well, 'cried her husband crossly,' don't strangle me for that!",
     "exampleZh": "“好啦，好啦。”她丈夫煩惱地叫道，“不要為了這個就要把我勒死啦！”"
@@ -51690,7 +51690,7 @@ const externalVocabularyDB = [
     "id": 5744,
     "en": "subscribe",
     "kk": "[səbˋskraɪb]",
-    "zh": "v. 訂閱;認捐;簽名",
+    "zh": "v. 訂閱；認捐；簽名",
     "unit": 6,
     "example": "Which journals does the library subscribe to?",
     "exampleZh": "圖書館訂有哪些報刊？"
@@ -51699,7 +51699,7 @@ const externalVocabularyDB = [
     "id": 5745,
     "en": "suffocate",
     "kk": "[ˋsʌfə͵ket]",
-    "zh": "v. 使窒息;扼制",
+    "zh": "v. 使窒息；扼制",
     "unit": 6,
     "example": "Will he suffocate their faith?",
     "exampleZh": "他會將自己的信仰扼殺麼？"
@@ -51708,7 +51708,7 @@ const externalVocabularyDB = [
     "id": 5746,
     "en": "surpass",
     "kk": "[sɚˋpæs]",
-    "zh": "v. 勝過;大於;多於",
+    "zh": "v. 勝過；大於；多於",
     "unit": 6,
     "example": "He was determined to surpass the achievements of his older brothers.",
     "exampleZh": "他決心超過他的幾位哥哥的成就。"
@@ -51717,7 +51717,7 @@ const externalVocabularyDB = [
     "id": 5747,
     "en": "symbolize",
     "kk": "[ˋsɪmbə͵laɪz]",
-    "zh": "v. 象徵,標誌",
+    "zh": "v. 象徵、標誌",
     "unit": 6,
     "example": "Blue can also symbolize trust and dependability.",
     "exampleZh": "藍色還可以象徵信任和可靠性。"
@@ -51726,7 +51726,7 @@ const externalVocabularyDB = [
     "id": 5748,
     "en": "terminate",
     "kk": "[ˋtɝmə͵net]",
-    "zh": "v. 使結束;使終止;解雇",
+    "zh": "v. 使結束；使終止；解雇",
     "unit": 6,
     "example": "This train will terminate at Lamy.",
     "exampleZh": "這列火車的終點站是拉米。"
@@ -51735,7 +51735,7 @@ const externalVocabularyDB = [
     "id": 5749,
     "en": "thrive",
     "kk": "[θraɪv]",
-    "zh": "v. 興旺;繁榮;茂盛生長",
+    "zh": "v. 興旺；繁榮；茂盛生長",
     "unit": 6,
     "example": "New businesses thrive in this area.",
     "exampleZh": "新商家在這一地區蓬勃興起。"
@@ -51744,7 +51744,7 @@ const externalVocabularyDB = [
     "id": 5750,
     "en": "topple",
     "kk": "[ˋtɑpəl]",
-    "zh": "v. 使倒塌;推翻",
+    "zh": "v. 使倒塌；推翻",
     "unit": 6,
     "example": "So, why don't they topple over at the first tremor?",
     "exampleZh": "那麼，為什麼它們在首次抖動時不倒塌？"
@@ -51753,7 +51753,7 @@ const externalVocabularyDB = [
     "id": 5751,
     "en": "transmit",
     "kk": "[træˋnzmɪt]",
-    "zh": "v. 傳送;傳達;發射;播送;傳染",
+    "zh": "v. 傳送；傳達；發射；播送；傳染",
     "unit": 6,
     "example": "Anopheles mosquitos transmit malaria.",
     "exampleZh": "瘧蚊傳播瘧疾。"
@@ -51762,7 +51762,7 @@ const externalVocabularyDB = [
     "id": 5752,
     "en": "uncover",
     "kk": "[ənˋkʌvɚ]",
-    "zh": "v. 揭開...的蓋子;揭露",
+    "zh": "v. 揭開……的蓋子；揭露",
     "unit": 6,
     "example": "When the seedlings sprout, uncover the tray.",
     "exampleZh": "幼苗發芽後，揭開盤上的遮蓋物。"
@@ -51771,7 +51771,7 @@ const externalVocabularyDB = [
     "id": 5753,
     "en": "undergo",
     "kk": "[͵ʌndɚˋɡo]",
-    "zh": "v. 經歷;接受(治療、檢查等)",
+    "zh": "v. 經歷；接受(治療、檢查等)",
     "unit": 6,
     "example": "Fans may undergo body searches by security guards.",
     "exampleZh": "仰慕者們可能要接受保安人員的搜身。"
@@ -51780,7 +51780,7 @@ const externalVocabularyDB = [
     "id": 5754,
     "en": "undermine",
     "kk": "[ˋʌndɚ͵maɪn]",
-    "zh": "v. 侵蝕...的基礎;暗中破壞",
+    "zh": "v. 侵蝕……的基礎；暗中破壞",
     "unit": 6,
     "example": "The continued fighting threatens to undermine efforts to negotiate an agreement.",
     "exampleZh": "持續的戰鬥有可能破壞透過談判達成協議的努力。"
@@ -51789,7 +51789,7 @@ const externalVocabularyDB = [
     "id": 5755,
     "en": "undertake",
     "kk": "[ˋʌndɚ͵tek]",
-    "zh": "v. 著手做;進行",
+    "zh": "v. 著手做；進行",
     "unit": 6,
     "example": "University professors both teach and undertake research.",
     "exampleZh": "大學教授既要教學又要從事研究工作。"
@@ -51798,7 +51798,7 @@ const externalVocabularyDB = [
     "id": 5756,
     "en": "undo",
     "kk": "[ənˋdu]",
-    "zh": "v. 解開;脫去(衣服等);取消",
+    "zh": "v. 解開；脫去(衣服等)；取消",
     "unit": 6,
     "example": "Oh, do let me help to undo it!",
     "exampleZh": "哦，讓我幫你解開它吧！"
@@ -51807,7 +51807,7 @@ const externalVocabularyDB = [
     "id": 5757,
     "en": "unfold",
     "kk": "[ənˋfold]",
-    "zh": "v. 展開;呈現",
+    "zh": "v. 展開；呈現",
     "unit": 6,
     "example": "I begin to unfold myself.",
     "exampleZh": "我開始展開自己。"
@@ -51816,7 +51816,7 @@ const externalVocabularyDB = [
     "id": 5758,
     "en": "unify",
     "kk": "[ˋjunə͵faɪ]",
-    "zh": "v. 統一;聯合;使一致",
+    "zh": "v. 統一；聯合；使一致",
     "unit": 6,
     "example": "The tramcars unify the city.",
     "exampleZh": "有軌電車將城市統一起來。"
@@ -51825,7 +51825,7 @@ const externalVocabularyDB = [
     "id": 5759,
     "en": "unlock",
     "kk": "[ənˋlɑk]",
-    "zh": "v. 開鎖;開啟",
+    "zh": "v. 開鎖；開啟",
     "unit": 6,
     "example": "You will find the bike can unlock itself.",
     "exampleZh": "你會發現腳踏車可以自行解鎖。"
@@ -51843,7 +51843,7 @@ const externalVocabularyDB = [
     "id": 5761,
     "en": "uphold",
     "kk": "[əpˋhold]",
-    "zh": "v. 舉起;支撐;維護",
+    "zh": "v. 舉起；支撐；維護",
     "unit": 6,
     "example": "We have a duty to uphold the law.",
     "exampleZh": "維護法律是我們的責任。"
@@ -51861,7 +51861,7 @@ const externalVocabularyDB = [
     "id": 5763,
     "en": "vend",
     "kk": "[vɛnd]",
-    "zh": "v. 出售;販賣",
+    "zh": "v. 出售；販賣",
     "unit": 6,
     "example": "Do you vend magazines here?",
     "exampleZh": "你們這兒賣雜誌嗎？"
@@ -51870,7 +51870,7 @@ const externalVocabularyDB = [
     "id": 5764,
     "en": "victimize",
     "kk": "[ˋvɪktəmaɪz]",
-    "zh": "v. 使犧牲;使痛苦",
+    "zh": "v. 使犧牲；使痛苦",
     "unit": 6,
     "example": "I have stated I will not victimize anybody.",
     "exampleZh": "我已經宣告，我不會傷害任何人。"
@@ -51879,7 +51879,7 @@ const externalVocabularyDB = [
     "id": 5765,
     "en": "visualize",
     "kk": "[ˋvɪʒwə͵laɪz]",
-    "zh": "v. 使顯現;使形象化",
+    "zh": "v. 使顯現；使形象化",
     "unit": 6,
     "example": "He could not visualize her as old.",
     "exampleZh": "他無法想像她年老的樣子。"
@@ -51897,7 +51897,7 @@ const externalVocabularyDB = [
     "id": 5767,
     "en": "withstand",
     "kk": "[wɪθˋstænd]",
-    "zh": "v. 抵擋;反抗;禁得起",
+    "zh": "v. 抵擋；反抗；禁得起",
     "unit": 6,
     "example": "The aircraft is designed to withstand turbulent conditions.",
     "exampleZh": "這架飛機是為經受猛烈的氣流而設計的。"
@@ -51906,7 +51906,7 @@ const externalVocabularyDB = [
     "id": 5768,
     "en": "woo",
     "kk": "[wu]",
-    "zh": "v. 追求;追逐",
+    "zh": "v. 追求；追逐",
     "unit": 6,
     "example": "He's a bit woo-woo.",
     "exampleZh": "他有點嗚嗚。"
@@ -51915,7 +51915,7 @@ const externalVocabularyDB = [
     "id": 5769,
     "en": "yearn",
     "kk": "[jɝn]",
-    "zh": "v. 思念;渴望;嚮往",
+    "zh": "v. 思念；渴望；嚮往",
     "unit": 6,
     "example": "As humans, we yearn for social connection.",
     "exampleZh": "作為人類，我們渴望有社會聯絡。"
@@ -51924,7 +51924,7 @@ const externalVocabularyDB = [
     "id": 5770,
     "en": "accordingly",
     "kk": "[əˋkɔrdɪŋli]",
-    "zh": "adv. 照著;相應地;因此",
+    "zh": "adv. 照著；相應地；因此",
     "unit": 6,
     "example": "It is a difficult job and they should be paid accordingly.",
     "exampleZh": "它是一項艱鉅的工作，他們應該相應地獲得報酬。"
@@ -51933,7 +51933,7 @@ const externalVocabularyDB = [
     "id": 5771,
     "en": "deadly",
     "kk": "[ˋdɛdli]",
-    "zh": "adj. 死一般地；adv. 非常,極度地",
+    "zh": "adj. 死一般地；adv. 非常、極度地",
     "unit": 6,
     "example": "Some mushrooms contain a deadly poison.",
     "exampleZh": "有些蘑菇含有致命毒素。"
@@ -51942,7 +51942,7 @@ const externalVocabularyDB = [
     "id": 5772,
     "en": "likewise",
     "kk": "[ˋlaɪk͵waɪz]",
-    "zh": "adv. 同樣地;也;又",
+    "zh": "adv. 同樣地；也；又",
     "unit": 6,
     "example": "Her second marriage was likewise unhappy.",
     "exampleZh": "她的第二次婚姻也不幸福。"
@@ -51978,7 +51978,7 @@ const externalVocabularyDB = [
     "id": 5776,
     "en": "thereafter",
     "kk": "[ðɛˋræftɚ]",
-    "zh": "adv. 之後;以後",
+    "zh": "adv. 之後；以後",
     "unit": 6,
     "example": "Thereafter she wrote articles for papers and magazines in Paris.",
     "exampleZh": "從那以後，她為巴黎的報紙和雜誌撰稿。"
@@ -51987,7 +51987,7 @@ const externalVocabularyDB = [
     "id": 5777,
     "en": "thereby",
     "kk": "[ˋðɛrˋbaɪ]",
-    "zh": "adv. 因此;由此",
+    "zh": "adv. 因此；由此",
     "unit": 6,
     "example": "This had been dismantled in 1933, thereby breaking the link.",
     "exampleZh": "這一設施於1933年被拆除，從而切斷了（運河間的）聯絡。"
@@ -51996,7 +51996,7 @@ const externalVocabularyDB = [
     "id": 5778,
     "en": "alongside",
     "kk": "[əˋlɔŋˋsaɪd]",
-    "zh": "adv. 在...旁邊；prep. 沿著...的邊",
+    "zh": "adv. 在……旁邊；prep. 沿著……的邊",
     "unit": 6,
     "example": "We tied up alongside the quay.",
     "exampleZh": "我們把船停靠在碼頭邊上。"
@@ -52005,7 +52005,7 @@ const externalVocabularyDB = [
     "id": 5779,
     "en": "abbreviation",
     "kk": "[ə͵briviˋeʃən]",
-    "zh": "n. 縮寫;省略",
+    "zh": "n. 縮寫；省略",
     "unit": 6,
     "example": "What's the abbreviation for 'Saint'?",
     "exampleZh": "Saint的縮寫形式是什麼？"
@@ -52041,7 +52041,7 @@ const externalVocabularyDB = [
     "id": 5783,
     "en": "abundance",
     "kk": "[əˋbʌndəns]",
-    "zh": "n. 豐富;充足",
+    "zh": "n. 豐富；充足",
     "unit": 6,
     "example": "Fruit and vegetables grew in abundance on the island.",
     "exampleZh": "該島盛產水果和蔬菜。"
@@ -52059,7 +52059,7 @@ const externalVocabularyDB = [
     "id": 5785,
     "en": "acceleration",
     "kk": "[͵æk͵sɛlɚˋeʃən]",
-    "zh": "n. 加速;促進",
+    "zh": "n. 加速；促進",
     "unit": 6,
     "example": "Acceleration and velocity are both vectors.",
     "exampleZh": "加速度和速度都是向量。"
@@ -52077,7 +52077,7 @@ const externalVocabularyDB = [
     "id": 5787,
     "en": "accommodation",
     "kk": "[ə͵kɑməˋdeʃən]",
-    "zh": "n. 適應;方便設施;住處",
+    "zh": "n. 適應；方便設施；住處",
     "unit": 6,
     "example": "The accommodation is simple but spacious.",
     "exampleZh": "住處簡樸但寬敞。"
@@ -52095,7 +52095,7 @@ const externalVocabularyDB = [
     "id": 5789,
     "en": "accordance",
     "kk": "[əˋkɔrdəns]",
-    "zh": "n. 一致;和諧;符合",
+    "zh": "n. 一致；和諧；符合",
     "unit": 6,
     "example": "FIE must operate in accordance with its investment license.",
     "exampleZh": "外商投資企業必須按照投資許可證的規定進行經營。"
@@ -52104,7 +52104,7 @@ const externalVocabularyDB = [
     "id": 5790,
     "en": "accounting",
     "kk": "[əˋkaʊntɪŋ]",
-    "zh": "n. 會計;會計學",
+    "zh": "n. 會計；會計學",
     "unit": 6,
     "example": "The debate revolves around specific accounting techniques.",
     "exampleZh": "這場討論圍繞具體的會計技巧。"
@@ -52113,16 +52113,16 @@ const externalVocabularyDB = [
     "id": 5791,
     "en": "accumulation",
     "kk": "[ə͵kjumjəˋleʃən]",
-    "zh": "n. 累積;積聚",
+    "zh": "n. 累積；積聚",
     "unit": 6,
-    "example": "Can you use the word accumulation in a sentence?",
-    "exampleZh": "你能在句子中使用「積聚」這個詞嗎？"
+    "example": "The heavy accumulation of fallen leaves clogged the outdoor drainage pipes.",
+    "exampleZh": "落葉的大量堆積堵塞了室外的排水管。"
   },
   {
     "id": 5792,
     "en": "accusation",
     "kk": "[͵ækjəˋzeʃən]",
-    "zh": "n. 指控;指責",
+    "zh": "n. 指控；指責",
     "unit": 6,
     "example": "He took the ridiculous accusation in stride.",
     "exampleZh": "他從容應對那荒謬的指控。"
@@ -52131,7 +52131,7 @@ const externalVocabularyDB = [
     "id": 5793,
     "en": "acquisition",
     "kk": "[͵ækwəˋzɪʃən]",
-    "zh": "n. 收購;取得",
+    "zh": "n. 收購；取得",
     "unit": 6,
     "example": "What's the cost of customer acquisition?",
     "exampleZh": "獲得一個客戶的成本有多大？"
@@ -52140,7 +52140,7 @@ const externalVocabularyDB = [
     "id": 5794,
     "en": "activist",
     "kk": "[ˋæktəvəst]",
-    "zh": "n. 激進主義份子;行動主義者",
+    "zh": "n. 激進主義份子；行動主義者",
     "unit": 6,
     "example": "Tom is an activist.",
     "exampleZh": "湯姆是一位活動家。"
@@ -52149,7 +52149,7 @@ const externalVocabularyDB = [
     "id": 5795,
     "en": "adaptation",
     "kk": "[͵ædəpˋteʃən]",
-    "zh": "n. 適應;改寫",
+    "zh": "n. 適應；改寫",
     "unit": 6,
     "example": "This recipe is an adaptation of an old favourite.",
     "exampleZh": "這個食譜是一個傳統名食譜的改編。"
@@ -52167,7 +52167,7 @@ const externalVocabularyDB = [
     "id": 5797,
     "en": "addiction",
     "kk": "[əˋdɪkʃən]",
-    "zh": "n. 沈溺;上癮",
+    "zh": "n. 沈溺；上癮",
     "unit": 6,
     "example": "She helped him fight his drug addiction.",
     "exampleZh": "她幫助了他對抗自己的毒癮。"
@@ -52185,7 +52185,7 @@ const externalVocabularyDB = [
     "id": 5799,
     "en": "administrator",
     "kk": "[ədˋmɪnə͵stretɚ]",
-    "zh": "n. 管理人;行政官員",
+    "zh": "n. 管理人；行政官員",
     "unit": 6,
     "example": "He is well-intentioned but a poor administrator.",
     "exampleZh": "他用意良好，但卻是位糟糕的管理者。"
@@ -52203,7 +52203,7 @@ const externalVocabularyDB = [
     "id": 5801,
     "en": "aggression",
     "kk": "[əˋɡrɛʃən]",
-    "zh": "n. 侵略;侵犯行為",
+    "zh": "n. 侵略；侵犯行為",
     "unit": 6,
     "example": "Aggression is by no means a male-only trait.",
     "exampleZh": "攻擊性決不是男性獨有的特徵。"
@@ -52221,7 +52221,7 @@ const externalVocabularyDB = [
     "id": 5803,
     "en": "alliance",
     "kk": "[əˋlaɪəns]",
-    "zh": "n. 結盟;聯盟",
+    "zh": "n. 結盟；聯盟",
     "unit": 6,
     "example": "Art shouldn't enter an unholy alliance with business.",
     "exampleZh": "藝術不該和商業成為錯誤的同盟。"
@@ -52239,7 +52239,7 @@ const externalVocabularyDB = [
     "id": 5805,
     "en": "ambiguity",
     "kk": "[͵æmbɪˋɡjuəti]",
-    "zh": "n. 意義不明確;模稜兩可的話",
+    "zh": "n. 意義不明確；模稜兩可的話",
     "unit": 6,
     "example": "It's a work full of paradox and ambiguity.",
     "exampleZh": "這部作品充滿了似非而是及模稜兩可之處。"
@@ -52259,23 +52259,23 @@ const externalVocabularyDB = [
     "kk": "[ˋæm͵bʊʃ]",
     "zh": "v. 埋伏；n. 伏擊",
     "unit": 6,
-    "example": "Can you use the word ambush in a sentence?",
-    "exampleZh": "你能在句子中使用「伏擊」這個詞嗎？"
+    "example": "The patrol unit walked directly into a planned ambush set by rebel forces.",
+    "exampleZh": "巡邏部隊直接走進了叛軍佈設的預謀伏擊圈。"
   },
   {
     "id": 5808,
     "en": "analects",
     "kk": "[ˋænə͵lɛkts]",
-    "zh": "n. 文選;論集",
+    "zh": "n. 文選；論集",
     "unit": 6,
-    "example": "Can you use the word analects in a sentence?",
-    "exampleZh": "你能在句子中使用「論集」這個詞嗎？"
+    "example": "Scholars gathered to analyze philosophical dialogues preserved in the classic analects.",
+    "exampleZh": "學者們齊聚一堂，探討經典語錄論集裡保存的哲學對話。"
   },
   {
     "id": 5809,
     "en": "analogy",
     "kk": "[əˋnælədʒi]",
-    "zh": "n. 相似;類推;類比",
+    "zh": "n. 相似；類推；類比",
     "unit": 6,
     "example": "The analogy between music and fragrance has stuck.",
     "exampleZh": "音樂與香味的類比已經深入人心了。"
@@ -52311,7 +52311,7 @@ const externalVocabularyDB = [
     "id": 5813,
     "en": "anecdote",
     "kk": "[ˋænək͵dot]",
-    "zh": "n. 軼事;祕史",
+    "zh": "n. 軼事；祕史",
     "unit": 6,
     "example": "There she read an anecdote.",
     "exampleZh": "她在那讀到一樁軼事。"
@@ -52320,7 +52320,7 @@ const externalVocabularyDB = [
     "id": 5814,
     "en": "annoyance",
     "kk": "[əˋnɔɪəns]",
-    "zh": "n. 惱怒;打擾;討厭的東西(或人)",
+    "zh": "n. 惱怒；打擾；討厭的東西(或人)",
     "unit": 6,
     "example": "She made her annoyance plain.",
     "exampleZh": "她滿臉不耐煩。"
@@ -52338,7 +52338,7 @@ const externalVocabularyDB = [
     "id": 5816,
     "en": "antenna",
     "kk": "[ænˋtɛnə]",
-    "zh": "n. 觸角;觸鬚;天線",
+    "zh": "n. 觸角；觸鬚；天線",
     "unit": 6,
     "example": "You'll need a good antenna to exploit the radio's performance.",
     "exampleZh": "你需要一根好的天線來充分利用該電臺的節目。"
@@ -52392,7 +52392,7 @@ const externalVocabularyDB = [
     "id": 5822,
     "en": "aptitude",
     "kk": "[ˋæptə͵tud]",
-    "zh": "n. 傾向;習性;天資",
+    "zh": "n. 傾向；習性；天資",
     "unit": 6,
     "example": "He has shown some kind of aptitude.",
     "exampleZh": "他展示出了一些天賦。"
@@ -52410,7 +52410,7 @@ const externalVocabularyDB = [
     "id": 5824,
     "en": "artery",
     "kk": "[ˋɑrtɚi]",
-    "zh": "n. 動脈;要道",
+    "zh": "n. 動脈；要道",
     "unit": 6,
     "example": "He had an operation last year to widen a heart artery.",
     "exampleZh": "他去年動了一次擴張心臟動脈的手術。"
@@ -52419,7 +52419,7 @@ const externalVocabularyDB = [
     "id": 5825,
     "en": "artifact",
     "kk": "[ˋɑrtə͵fækt]",
-    "zh": "n. 人工製品;手工藝品",
+    "zh": "n. 人工製品；手工藝品",
     "unit": 6,
     "example": "The Clovis point may be the most analyzed artifact in archaeology.",
     "exampleZh": "克洛維斯矛頭可能是考古學中被分析得最多的手工藝品。"
@@ -52428,7 +52428,7 @@ const externalVocabularyDB = [
     "id": 5826,
     "en": "assessment",
     "kk": "[əˋsɛsmənt]",
-    "zh": "n. 估價;評價",
+    "zh": "n. 估價；評價",
     "unit": 6,
     "example": "The government is rejigging some tax assessment methods.",
     "exampleZh": "政府正在調整一些稅務評估方法。"
@@ -52437,7 +52437,7 @@ const externalVocabularyDB = [
     "id": 5827,
     "en": "assumption",
     "kk": "[əˋsʌmpʃən]",
-    "zh": "n. 假設;擔任",
+    "zh": "n. 假設；擔任",
     "unit": 6,
     "example": "The whole argument rests on a false assumption.",
     "exampleZh": "整個論證都是基於一個錯誤的假設。"
@@ -52446,7 +52446,7 @@ const externalVocabularyDB = [
     "id": 5828,
     "en": "asthma",
     "kk": "[ˋæzmə]",
-    "zh": "n. 氣喘(病);哮喘",
+    "zh": "n. 氣喘(病)；哮喘",
     "unit": 6,
     "example": "She suffers from bronchial asthma.",
     "exampleZh": "她患有支氣管哮喘。"
@@ -52455,7 +52455,7 @@ const externalVocabularyDB = [
     "id": 5829,
     "en": "asylum",
     "kk": "[əˋsaɪləm]",
-    "zh": "n. 收容院;避難所;政治庇護",
+    "zh": "n. 收容院；避難所；政治庇護",
     "unit": 6,
     "example": "Only genuine refugees can apply for asylum.",
     "exampleZh": "只有真正的難民才能申請政治避難。"
@@ -52464,7 +52464,7 @@ const externalVocabularyDB = [
     "id": 5830,
     "en": "attainment",
     "kk": "[əˋtenmənt]",
-    "zh": "n. 達到;獲得;到達;成就;學識,才能",
+    "zh": "n. 達到；獲得；到達；成就；學識、才能",
     "unit": 6,
     "example": "The attainment of his ambitions was still a dream.",
     "exampleZh": "他要實現的抱負仍然是一個夢想。"
@@ -52482,7 +52482,7 @@ const externalVocabularyDB = [
     "id": 5832,
     "en": "attic",
     "kk": "[ˋætɪk]",
-    "zh": "n. 頂樓;閣樓",
+    "zh": "n. 頂樓；閣樓",
     "unit": 6,
     "example": "We need the steps to get into the attic.",
     "exampleZh": "我們得踩著梯子才能爬到閣樓上去。"
@@ -52509,7 +52509,7 @@ const externalVocabularyDB = [
     "id": 5835,
     "en": "autonomy",
     "kk": "[ɔˋtɑnəmi]",
-    "zh": "n. 自治;自治權;自治團體",
+    "zh": "n. 自治；自治權；自治團體",
     "unit": 6,
     "example": "She sets a high value on autonomy.",
     "exampleZh": "她高度重視自主權。"
@@ -52518,7 +52518,7 @@ const externalVocabularyDB = [
     "id": 5836,
     "en": "aviation",
     "kk": "[͵eviˋeʃən]",
-    "zh": "n. 航空;飛行",
+    "zh": "n. 航空；飛行",
     "unit": 6,
     "example": "The civil aviation minister ordered all the planes to be grounded.",
     "exampleZh": "該民航部長命令所有飛機不得起飛。"
@@ -52527,7 +52527,7 @@ const externalVocabularyDB = [
     "id": 5837,
     "en": "barometer",
     "kk": "[bɚˋɑmɪtɚ]",
-    "zh": "n. 晴雨表;顯示變化的事物",
+    "zh": "n. 晴雨表；顯示變化的事物",
     "unit": 6,
     "example": "Infant mortality is a reliable barometer of socio-economic conditions.",
     "exampleZh": "嬰兒死亡率是社會經濟狀況的可靠指標。"
@@ -52581,7 +52581,7 @@ const externalVocabularyDB = [
     "id": 5843,
     "en": "bondage",
     "kk": "[ˋbɑndɪdʒ]",
-    "zh": "n. 奴隸身分;奴役;束縛",
+    "zh": "n. 奴隸身分；奴役；束縛",
     "unit": 6,
     "example": "Henrietta's main kink is bondage.",
     "exampleZh": "亨麗埃塔的主要怪癖是束縛。"
@@ -52599,7 +52599,7 @@ const externalVocabularyDB = [
     "id": 5845,
     "en": "bout",
     "kk": "[baʊt]",
-    "zh": "n. (拳擊等)比賽;較量;(疾病等)發作",
+    "zh": "n. (拳擊等)比賽；較量；(疾病等)發作",
     "unit": 6,
     "example": "This bout of self-pity was getting me nowhere.",
     "exampleZh": "這一陣自哀自憐對我不會有什麼好處。"
@@ -52617,7 +52617,7 @@ const externalVocabularyDB = [
     "id": 5847,
     "en": "breakdown",
     "kk": "[ˋbrek͵daʊn]",
-    "zh": "n. 故障;損壞;崩潰;分析",
+    "zh": "n. 故障；損壞；崩潰；分析",
     "unit": 6,
     "example": "First, let's look at a breakdown of the costs.",
     "exampleZh": "我們首先看一下成本的詳細數字。"
@@ -52626,7 +52626,7 @@ const externalVocabularyDB = [
     "id": 5848,
     "en": "breakthrough",
     "kk": "[ˋbrek͵θru]",
-    "zh": "n. 突圍;突破;突破性進展",
+    "zh": "n. 突圍；突破；突破性進展",
     "unit": 6,
     "example": "God willing, there will be a breakthrough.",
     "exampleZh": "天公作美的話，會有所突破。"
@@ -52635,7 +52635,7 @@ const externalVocabularyDB = [
     "id": 5849,
     "en": "breakup",
     "kk": "[ˋbre͵kʌp]",
-    "zh": "n. 分裂;關係破裂;解體",
+    "zh": "n. 分裂；關係破裂；解體",
     "unit": 6,
     "example": "The Justice Department advocated a breakup of Microsoft.",
     "exampleZh": "司法部主張微軟公司解體。"
@@ -52653,7 +52653,7 @@ const externalVocabularyDB = [
     "id": 5851,
     "en": "brink",
     "kk": "[brɪŋk]",
-    "zh": "n. 邊;邊緣",
+    "zh": "n. 邊；邊緣",
     "unit": 6,
     "example": "The hotel is teetering on the brink of bankruptcy.",
     "exampleZh": "這家旅館正瀕臨破產。"
@@ -52689,7 +52689,7 @@ const externalVocabularyDB = [
     "id": 5855,
     "en": "bureaucracy",
     "kk": "[bjʊˋrɑkrəsi]",
-    "zh": "n. 官僚政治;(總稱)官僚",
+    "zh": "n. 官僚政治；(總稱)官僚",
     "unit": 6,
     "example": "Bureaucracy can entangle applications for months.",
     "exampleZh": "官僚主義會使申請耽擱數月之久。"
@@ -52698,7 +52698,7 @@ const externalVocabularyDB = [
     "id": 5856,
     "en": "burial",
     "kk": "[ˋbɛriəl]",
-    "zh": "n. 埋葬;葬禮;墓地",
+    "zh": "n. 埋葬；葬禮；墓地",
     "unit": 6,
     "example": "The priest prepared the body for burial.",
     "exampleZh": "牧師為屍體做好了下葬的準備。"
@@ -52743,7 +52743,7 @@ const externalVocabularyDB = [
     "id": 5861,
     "en": "capability",
     "kk": "[͵kepəˋbɪləti]",
-    "zh": "n. 能力;性能",
+    "zh": "n. 能力；性能",
     "unit": 6,
     "example": "No one ever questioned her capability.",
     "exampleZh": "從來沒有人質疑過她的能力。"
@@ -52752,7 +52752,7 @@ const externalVocabularyDB = [
     "id": 5862,
     "en": "capsule",
     "kk": "[ˋkæpsəl]",
-    "zh": "n. 小盒;膠囊;太空艙",
+    "zh": "n. 小盒；膠囊；太空艙",
     "unit": 6,
     "example": "A Russian space capsule is currently orbiting the Earth.",
     "exampleZh": "一個俄羅斯太空艙目前正環繞地球飛行。"
@@ -52779,7 +52779,7 @@ const externalVocabularyDB = [
     "id": 5865,
     "en": "captivity",
     "kk": "[kæpˋtɪvəti]",
-    "zh": "n. 囚禁;束縛",
+    "zh": "n. 囚禁；束縛",
     "unit": 6,
     "example": "Cheetahs breed very poorly in captivity.",
     "exampleZh": "獵豹在圈養的情況下繁殖力很差。"
@@ -52788,7 +52788,7 @@ const externalVocabularyDB = [
     "id": 5866,
     "en": "carbohydrate",
     "kk": "[͵kɑrboˋhaɪ͵dret]",
-    "zh": "n. 碳水化合物;含醣食物",
+    "zh": "n. 碳水化合物；含醣食物",
     "unit": 6,
     "example": "Protein and carbohydrate provide 4 calories per gram.",
     "exampleZh": "蛋白質和碳水化合物每克可提供4卡路里熱量。"
@@ -52806,7 +52806,7 @@ const externalVocabularyDB = [
     "id": 5868,
     "en": "carol",
     "kk": "[ˋkærəl]",
-    "zh": "n. (耶誕)頌歌;讚美詩",
+    "zh": "n. (耶誕)頌歌；讚美詩",
     "unit": 6,
     "example": "Carol boasted about her costume.",
     "exampleZh": "卡羅爾吹噓著她的戲裝。"
@@ -52833,7 +52833,7 @@ const externalVocabularyDB = [
     "id": 5871,
     "en": "catastrophe",
     "kk": "[kəˋtæstrəfi]",
-    "zh": "n. 大災難;慘敗",
+    "zh": "n. 大災難；慘敗",
     "unit": 6,
     "example": "From all points of view, war would be a catastrophe.",
     "exampleZh": "從各個方面來看，戰爭都會是一場災難。"
@@ -52842,7 +52842,7 @@ const externalVocabularyDB = [
     "id": 5872,
     "en": "cavalry",
     "kk": "[ˋkævəlri]",
-    "zh": "n. 騎兵;騎兵部隊",
+    "zh": "n. 騎兵；騎兵部隊",
     "unit": 6,
     "example": "The cavalry must immediately replenish the new horse.",
     "exampleZh": "騎兵部隊必須立即補充新馬。"
@@ -52851,7 +52851,7 @@ const externalVocabularyDB = [
     "id": 5873,
     "en": "cavity",
     "kk": "[ˋkævəti]",
-    "zh": "n. 洞;(身體的)腔;(牙的)蛀洞",
+    "zh": "n. 洞；(身體的)腔；(牙的)蛀洞",
     "unit": 6,
     "example": "Tom has a cavity.",
     "exampleZh": "湯姆有一個空洞。"
@@ -52860,7 +52860,7 @@ const externalVocabularyDB = [
     "id": 5874,
     "en": "cemetery",
     "kk": "[ˋsɛmə͵tɛri]",
-    "zh": "n. 公墓;墓地",
+    "zh": "n. 公墓；墓地",
     "unit": 6,
     "example": "He was buried in Highgate Cemetery.",
     "exampleZh": "他被安葬在海格特墓地。"
@@ -52869,7 +52869,7 @@ const externalVocabularyDB = [
     "id": 5875,
     "en": "certainty",
     "kk": "[ˋsɝtənti]",
-    "zh": "n. 確實;必然",
+    "zh": "n. 確實；必然",
     "unit": 6,
     "example": "Their suspicions hardened into certainty.",
     "exampleZh": "他們由懷疑變成肯定。"
@@ -52878,7 +52878,7 @@ const externalVocabularyDB = [
     "id": 5876,
     "en": "champagne",
     "kk": "[ʃæmˋpen]",
-    "zh": "n. 香檳酒;香檳酒色",
+    "zh": "n. 香檳酒；香檳酒色",
     "unit": 6,
     "example": "The champagne sloshed and spilt.",
     "exampleZh": "香檳酒向四處噴射。"
@@ -52887,7 +52887,7 @@ const externalVocabularyDB = [
     "id": 5877,
     "en": "chaos",
     "kk": "[ˋkeɑs]",
-    "zh": "n. 混亂;雜亂的一團",
+    "zh": "n. 混亂；雜亂的一團",
     "unit": 6,
     "example": "He was ultimately overthrown and the country descended into chaos.",
     "exampleZh": "他最終被推翻，國家陷入了混亂。"
@@ -52896,7 +52896,7 @@ const externalVocabularyDB = [
     "id": 5878,
     "en": "charcoal",
     "kk": "[ˋtʃɑr͵kol]",
-    "zh": "n. 木炭;炭筆;深灰色",
+    "zh": "n. 木炭；炭筆；深灰色",
     "unit": 6,
     "example": "The commando blackened his face with charcoal.",
     "exampleZh": "那名突擊隊員用木炭把他的臉塗黑。"
@@ -52932,7 +52932,7 @@ const externalVocabularyDB = [
     "id": 5882,
     "en": "chunk",
     "kk": "[tʃʌŋk]",
-    "zh": "n. (肉、木材等的)大塊;厚片",
+    "zh": "n. (肉、木材等的)大塊；厚片",
     "unit": 6,
     "example": "Chester Cheetah chews a chunk of cheep cheddar cheese.",
     "exampleZh": "切斯特獵豹嚼著一大塊切達乾酪。"
@@ -52950,7 +52950,7 @@ const externalVocabularyDB = [
     "id": 5884,
     "en": "clarity",
     "kk": "[ˋklɛrəti]",
-    "zh": "n. (思想、文體等的)清楚;明晰",
+    "zh": "n. (思想、文體等的)清楚；明晰",
     "unit": 6,
     "example": "It was a model of clarity.",
     "exampleZh": "這是表達清晰的範例。"
@@ -52959,7 +52959,7 @@ const externalVocabularyDB = [
     "id": 5885,
     "en": "clearance",
     "kk": "[ˋklɪrəns]",
-    "zh": "n. 清掃;出空;清倉大拍賣",
+    "zh": "n. 清掃；出空；清倉大拍賣",
     "unit": 6,
     "example": "I'm waiting for clearance from headquarters.",
     "exampleZh": "我在等待總部的錄用審查許可。"
@@ -52986,7 +52986,7 @@ const externalVocabularyDB = [
     "id": 5888,
     "en": "closure",
     "kk": "[ˋkloʒɚ]",
-    "zh": "n. 關閉;打烊;結束;終止",
+    "zh": "n. 關閉；打烊；結束；終止",
     "unit": 6,
     "example": "The reasons for closure are multifarious.",
     "exampleZh": "關閉的原因多種多樣。"
@@ -52995,7 +52995,7 @@ const externalVocabularyDB = [
     "id": 5889,
     "en": "coffin",
     "kk": "[ˋkɔfɪn]",
-    "zh": "n. 棺材;靈柩",
+    "zh": "n. 棺材；靈柩",
     "unit": 6,
     "example": "Four soldiers stood guard over the coffin.",
     "exampleZh": "有四名士兵守護靈柩。"
@@ -53022,7 +53022,7 @@ const externalVocabularyDB = [
     "id": 5892,
     "en": "collector",
     "kk": "[kəˋlɛktɚ]",
-    "zh": "n. 收集者;收藏家",
+    "zh": "n. 收集者；收藏家",
     "unit": 6,
     "example": "He was a collector of antiques.",
     "exampleZh": "他是個古董收藏家。"
@@ -53031,7 +53031,7 @@ const externalVocabularyDB = [
     "id": 5893,
     "en": "collision",
     "kk": "[kəˋlɪʒən]",
-    "zh": "n. 相撞;衝突;抵觸",
+    "zh": "n. 相撞；衝突；抵觸",
     "unit": 6,
     "example": "He said it was true that a collision had happened.",
     "exampleZh": "他說碰撞真的發生了一次。"
@@ -53049,7 +53049,7 @@ const externalVocabularyDB = [
     "id": 5895,
     "en": "commentary",
     "kk": "[ˋkɑmən͵tɛri]",
-    "zh": "n. 評論;註釋",
+    "zh": "n. 評論；註釋",
     "unit": 6,
     "example": "You can hear commentary on the game at halftime.",
     "exampleZh": "你可在中場休息時聽到對比賽的評論。"
@@ -53058,7 +53058,7 @@ const externalVocabularyDB = [
     "id": 5896,
     "en": "commitment",
     "kk": "[kəˋmɪtmənt]",
-    "zh": "n. 託付,交託; 承諾, 保證",
+    "zh": "n. 託付、交託； 承諾, 保證",
     "unit": 6,
     "example": "We made a commitment to keep working together.",
     "exampleZh": "我們作了承諾要繼續在一起工作。"
@@ -53067,7 +53067,7 @@ const externalVocabularyDB = [
     "id": 5897,
     "en": "companionship",
     "kk": "[kəmˋpænjən͵ʃɪp]",
-    "zh": "n. 友誼;交往;伴侶關係",
+    "zh": "n. 友誼；交往；伴侶關係",
     "unit": 6,
     "example": "I depended on his companionship and on his judgment.",
     "exampleZh": "我依賴他的陪伴和他的判斷。"
@@ -53076,7 +53076,7 @@ const externalVocabularyDB = [
     "id": 5898,
     "en": "compensation",
     "kk": "[͵kɑmpənˋseʃən]",
-    "zh": "n. 補償;賠償;報酬",
+    "zh": "n. 補償；賠償；報酬",
     "unit": 6,
     "example": "The injured party got some compensation.",
     "exampleZh": "受害方得到了一些補償。"
@@ -53085,7 +53085,7 @@ const externalVocabularyDB = [
     "id": 5899,
     "en": "competence",
     "kk": "[ˋkɑmpətɪns]",
-    "zh": "n. 能力;勝任;稱職",
+    "zh": "n. 能力；勝任；稱職",
     "unit": 6,
     "example": "Many people have testified to his competence.",
     "exampleZh": "很多人已證實了他的能力。"
@@ -53103,7 +53103,7 @@ const externalVocabularyDB = [
     "id": 5901,
     "en": "complexion",
     "kk": "[kəmˋplɛkʃən]",
-    "zh": "n. 面色;膚色",
+    "zh": "n. 面色；膚色",
     "unit": 6,
     "example": "My complexion remained pale and pasty.",
     "exampleZh": "我的臉色依舊蒼白憔悴。"
@@ -53112,7 +53112,7 @@ const externalVocabularyDB = [
     "id": 5902,
     "en": "complexity",
     "kk": "[kəmˋplɛksəti]",
-    "zh": "n. 複雜(性);錯綜(性)",
+    "zh": "n. 複雜(性)；錯綜(性)",
     "unit": 6,
     "example": "I was astonished by the size and complexity of the problem.",
     "exampleZh": "這個問題的複雜性和涉及面之廣使我感到驚訝。"
@@ -53121,7 +53121,7 @@ const externalVocabularyDB = [
     "id": 5903,
     "en": "complication",
     "kk": "[͵kɑmpləˋkeʃən]",
-    "zh": "n. 複雜(化);併發症;(新出現的)困難",
+    "zh": "n. 複雜(化)；併發症；(新出現的)困難",
     "unit": 6,
     "example": "Blindness is a common complication of diabetes.",
     "exampleZh": "失明是糖尿病常有的一種併發症。"
@@ -53139,7 +53139,7 @@ const externalVocabularyDB = [
     "id": 5905,
     "en": "conceit",
     "kk": "[kənˋsit]",
-    "zh": "n. 自滿;自負",
+    "zh": "n. 自滿；自負",
     "unit": 6,
     "example": "Reyes emits confidence without conceit.",
     "exampleZh": "羅伊斯表現出自信但不自負。"
@@ -53148,7 +53148,7 @@ const externalVocabularyDB = [
     "id": 5906,
     "en": "conception",
     "kk": "[kənˋsɛpʃən]",
-    "zh": "n. 概念;創始",
+    "zh": "n. 概念；創始",
     "unit": 6,
     "example": "This entire conception is scientifically inaccurate.",
     "exampleZh": "整個概念在科學上是不準確的。"
@@ -53157,7 +53157,7 @@ const externalVocabularyDB = [
     "id": 5907,
     "en": "concession",
     "kk": "[kənˋsɛʃən]",
-    "zh": "n. 讓步;讓予物",
+    "zh": "n. 讓步；讓予物",
     "unit": 6,
     "example": "This concession may not be enough.",
     "exampleZh": "這個讓步可能還不夠。"
@@ -53184,7 +53184,7 @@ const externalVocabularyDB = [
     "id": 5910,
     "en": "congresswoman",
     "kk": "[ˋkɑŋɡrə͵swʊmən]",
-    "zh": "n. 國會女議員;女眾議員",
+    "zh": "n. 國會女議員；女眾議員",
     "unit": 6,
     "example": "The congresswoman released a statement on Facebook.",
     "exampleZh": "這位女議員在臉書上發表了一份宣告。"
@@ -53193,7 +53193,7 @@ const externalVocabularyDB = [
     "id": 5911,
     "en": "conquest",
     "kk": "[ˋkɑŋkwɛst]",
-    "zh": "n. 征服;克服;佔領",
+    "zh": "n. 征服；克服；佔領",
     "unit": 6,
     "example": "The chase is always much more exciting than the conquest anyway.",
     "exampleZh": "無論如何，追求總比征服更令人興奮。"
@@ -53202,7 +53202,7 @@ const externalVocabularyDB = [
     "id": 5912,
     "en": "consensus",
     "kk": "[kənˋsɛnsəs]",
-    "zh": "n. 一致;合意;輿論",
+    "zh": "n. 一致；合意；輿論",
     "unit": 6,
     "example": "There is a growing consensus of opinion on this issue.",
     "exampleZh": "對這個問題的看法日趨一致。"
@@ -53211,7 +53211,7 @@ const externalVocabularyDB = [
     "id": 5913,
     "en": "conservation",
     "kk": "[͵kɑnsɚˋveʃən]",
-    "zh": "n. 保存;(對自然資源的)保護",
+    "zh": "n. 保存；(對自然資源的)保護",
     "unit": 6,
     "example": "Scientific research and conservation are intimately connected.",
     "exampleZh": "科學研究與環境保護聯絡密切。"
@@ -53220,7 +53220,7 @@ const externalVocabularyDB = [
     "id": 5914,
     "en": "consolation",
     "kk": "[͵kɑnsəˋleʃən]",
-    "zh": "n. 安慰;慰藉",
+    "zh": "n. 安慰；慰藉",
     "unit": 6,
     "example": "The little girl is a great consolation to her parents.",
     "exampleZh": "這個小女孩給她父母帶來了莫大的慰藉。"
@@ -53229,7 +53229,7 @@ const externalVocabularyDB = [
     "id": 5915,
     "en": "conspiracy",
     "kk": "[kənˋspɪrəsi]",
-    "zh": "n. 陰謀;謀叛;共謀",
+    "zh": "n. 陰謀；謀叛；共謀",
     "unit": 6,
     "example": "This led to his indictment on allegations of conspiracy.",
     "exampleZh": "這件事最終使他被控犯有共謀罪。"
@@ -53247,7 +53247,7 @@ const externalVocabularyDB = [
     "id": 5917,
     "en": "consultation",
     "kk": "[͵kɑnsəlˋteʃən]",
-    "zh": "n. 諮詢;商議",
+    "zh": "n. 諮詢；商議",
     "unit": 6,
     "example": "David gives the first consultation gratis.",
     "exampleZh": "戴維免費提供第一次諮詢。"
@@ -53256,7 +53256,7 @@ const externalVocabularyDB = [
     "id": 5918,
     "en": "consumption",
     "kk": "[kənˋsʌmpʃən]",
-    "zh": "n. 消耗;用盡;消耗量",
+    "zh": "n. 消耗；用盡；消耗量",
     "unit": 6,
     "example": "Energy consumption rises as countries industrialize.",
     "exampleZh": "能源消耗隨著各國工業化而增加。"
@@ -53265,7 +53265,7 @@ const externalVocabularyDB = [
     "id": 5919,
     "en": "contemplation",
     "kk": "[͵kɑntəmˋpleʃən]",
-    "zh": "n. 凝視;沈思;冥想",
+    "zh": "n. 凝視；沈思；冥想",
     "unit": 6,
     "example": "He sat there deep in contemplation.",
     "exampleZh": "他坐在那裡沉思著。"
@@ -53274,7 +53274,7 @@ const externalVocabularyDB = [
     "id": 5920,
     "en": "contestant",
     "kk": "[kənˋtɛstənt]",
-    "zh": "n. 參加競賽者;角逐者",
+    "zh": "n. 參加競賽者；角逐者",
     "unit": 6,
     "example": "The fifth contestant won the biggest prize.",
     "exampleZh": "第五名選手贏得了最高獎。"
@@ -53283,7 +53283,7 @@ const externalVocabularyDB = [
     "id": 5921,
     "en": "contractor",
     "kk": "[ˋkɑn͵træktɚ]",
-    "zh": "n. 承包商;立契約者",
+    "zh": "n. 承包商；立契約者",
     "unit": 6,
     "example": "It criticizes the main contractor for seriously erring in its estimates.",
     "exampleZh": "它批評主承包商在估算中嚴重出錯。"
@@ -53292,7 +53292,7 @@ const externalVocabularyDB = [
     "id": 5922,
     "en": "contradiction",
     "kk": "[͵kɑntrəˋdɪkʃən]",
-    "zh": "n. 矛盾;否認;反駁",
+    "zh": "n. 矛盾；否認；反駁",
     "unit": 6,
     "example": "How can we resolve this apparent contradiction?",
     "exampleZh": "我們怎樣才能解決這個明顯的矛盾呢？"
@@ -53301,7 +53301,7 @@ const externalVocabularyDB = [
     "id": 5923,
     "en": "controversy",
     "kk": "[ˋkɑntrə͵vɝsi]",
-    "zh": "n. 爭論;爭議",
+    "zh": "n. 爭論；爭議",
     "unit": 6,
     "example": "He is no stranger to controversy.",
     "exampleZh": "他對爭論見得多了。"
@@ -53310,7 +53310,7 @@ const externalVocabularyDB = [
     "id": 5924,
     "en": "conviction",
     "kk": "[kənˋvɪkʃən]",
-    "zh": "n. 定罪;證明有罪;確信",
+    "zh": "n. 定罪；證明有罪；確信",
     "unit": 6,
     "example": "'Not true!' she said with conviction.",
     "exampleZh": "“不真實！”她肯定地說道。"
@@ -53337,7 +53337,7 @@ const externalVocabularyDB = [
     "id": 5927,
     "en": "corps",
     "kk": "[kɔr]",
-    "zh": "n. 兵團;部隊;團",
+    "zh": "n. 兵團；部隊；團",
     "unit": 6,
     "example": "He joined the Marine Corps.",
     "exampleZh": "他加入了海軍陸戰隊。"
@@ -53346,7 +53346,7 @@ const externalVocabularyDB = [
     "id": 5928,
     "en": "corpse",
     "kk": "[kɔrps]",
-    "zh": "n. 屍體;殘骸",
+    "zh": "n. 屍體；殘骸",
     "unit": 6,
     "example": "Detectives placed the corpse in a body bag.",
     "exampleZh": "刑警們把屍體裝進了一個運屍袋。"
@@ -53355,7 +53355,7 @@ const externalVocabularyDB = [
     "id": 5929,
     "en": "correspondent",
     "kk": "[͵kɔrəˋspɑndənt]",
-    "zh": "n. 通信者;通訊記者",
+    "zh": "n. 通信者；通訊記者",
     "unit": 6,
     "example": "One ABC correspondent had totally missed the point of the question.",
     "exampleZh": "美國廣播公司的一名記者完全沒有領會這個問題的關鍵。"
@@ -53364,7 +53364,7 @@ const externalVocabularyDB = [
     "id": 5930,
     "en": "corruption",
     "kk": "[kɚˋʌpʃən]",
-    "zh": "n. 墮落;腐化;貪污;賄賂",
+    "zh": "n. 墮落；腐化；貪污；賄賂",
     "unit": 6,
     "example": "She is awaiting trial on corruption charges.",
     "exampleZh": "她因被控貪汙正等候審判。"
@@ -53373,7 +53373,7 @@ const externalVocabularyDB = [
     "id": 5931,
     "en": "cosmetics",
     "kk": "[kɑzˋmɛtɪks]",
-    "zh": "n. 化妝品,美容品",
+    "zh": "n. 化妝品、美容品",
     "unit": 6,
     "example": "Cosmetics are used for adornment.",
     "exampleZh": "化妝品是用來修飾的。"
@@ -53400,7 +53400,7 @@ const externalVocabularyDB = [
     "id": 5934,
     "en": "coverage",
     "kk": "[ˋkʌvɚədʒ]",
-    "zh": "n. 覆蓋範圍;保險項目;新聞報導",
+    "zh": "n. 覆蓋範圍；保險項目；新聞報導",
     "unit": 6,
     "example": "The incident has received wide coverage in the press.",
     "exampleZh": "這個事件已被新聞界廣泛報道。"
@@ -53418,7 +53418,7 @@ const externalVocabularyDB = [
     "id": 5936,
     "en": "credibility",
     "kk": "[͵krɛdəˋbɪlɪti]",
-    "zh": "n. 可信性;確實性",
+    "zh": "n. 可信性；確實性",
     "unit": 6,
     "example": "Credibility holds the key to development.",
     "exampleZh": "誠信是發展的關鍵。"
@@ -53427,7 +53427,7 @@ const externalVocabularyDB = [
     "id": 5937,
     "en": "criterion",
     "kk": "[kraɪˋtɪriən]",
-    "zh": "n. (判斷、批評的)標準;尺度",
+    "zh": "n. (判斷、批評的)標準；尺度",
     "unit": 6,
     "example": "The main criterion is value for money.",
     "exampleZh": "主要的標準是錢要用得划算。"
@@ -53454,7 +53454,7 @@ const externalVocabularyDB = [
     "id": 5940,
     "en": "cruiser",
     "kk": "[ˋkruzɚ]",
-    "zh": "n. 巡洋艦;遊艇;警察巡邏車",
+    "zh": "n. 巡洋艦；遊艇；警察巡邏車",
     "unit": 6,
     "example": "The cruiser was heavily armoured.",
     "exampleZh": "這艘巡洋艦有堅固的裝甲。"
@@ -53463,7 +53463,7 @@ const externalVocabularyDB = [
     "id": 5941,
     "en": "crumb",
     "kk": "[krʌm]",
-    "zh": "n. 麵包屑;碎屑;少許",
+    "zh": "n. 麵包屑；碎屑；少許",
     "unit": 6,
     "example": "She flicked a crumb off the corner of her mouth.",
     "exampleZh": "她輕輕擦去了嘴角的麵包屑。"
@@ -53490,7 +53490,7 @@ const externalVocabularyDB = [
     "id": 5944,
     "en": "daffodil",
     "kk": "[ˋdæfə͵dɪl]",
-    "zh": "n. 黃水仙花;淡黃色",
+    "zh": "n. 黃水仙花；淡黃色",
     "unit": 6,
     "example": "The daffodils are out.",
     "exampleZh": "水仙花開了。"
@@ -53508,7 +53508,7 @@ const externalVocabularyDB = [
     "id": 5946,
     "en": "daybreak",
     "kk": "[ˋde͵brek]",
-    "zh": "n. 黎明;破曉",
+    "zh": "n. 黎明；破曉",
     "unit": 6,
     "example": "We left before daybreak.",
     "exampleZh": "我們是在黎明前出發的。"
@@ -53526,7 +53526,7 @@ const externalVocabularyDB = [
     "id": 5948,
     "en": "dedication",
     "kk": "[͵dɛdəˋkeʃən]",
-    "zh": "n. 奉獻;揭幕儀式;獻身",
+    "zh": "n. 奉獻；揭幕儀式；獻身",
     "unit": 6,
     "example": "Her dedication to her work was admirable.",
     "exampleZh": "她對工作的奉獻精神可欽可佩。"
@@ -53544,7 +53544,7 @@ const externalVocabularyDB = [
     "id": 5950,
     "en": "deficiency",
     "kk": "[dɪˋfɪʃənsi]",
-    "zh": "n. 不足;缺陷;缺點",
+    "zh": "n. 不足；缺陷；缺點",
     "unit": 6,
     "example": "Vitamin deficiency in the diet can cause illness.",
     "exampleZh": "飲食中缺乏維生素可能導致疾病。"
@@ -53571,7 +53571,7 @@ const externalVocabularyDB = [
     "id": 5953,
     "en": "deputy",
     "kk": "[ˋdɛpjəti]",
-    "zh": "n. 代表,代理人;副職,副手",
+    "zh": "n. 代表、代理人；副職、副手",
     "unit": 6,
     "example": "Who has she designated (as) her deputy?",
     "exampleZh": "她委任了誰為她的副手？"
@@ -53580,7 +53580,7 @@ const externalVocabularyDB = [
     "id": 5954,
     "en": "descendant",
     "kk": "[dɪˋsɛndənt]",
-    "zh": "n. 後裔;從某一來源傳下的東西",
+    "zh": "n. 後裔；從某一來源傳下的東西",
     "unit": 6,
     "example": "These adaptations served their descendant well as they invaded land.",
     "exampleZh": "這些適應機制在它們的後代進化成陸生生物時起了很好的協助作用。"
@@ -53589,7 +53589,7 @@ const externalVocabularyDB = [
     "id": 5955,
     "en": "descent",
     "kk": "[dɪˋsɛnt]",
-    "zh": "n. 下降;下傾;血統",
+    "zh": "n. 下降；下傾；血統",
     "unit": 6,
     "example": "All the contributors were of African descent.",
     "exampleZh": "所有捐助者都是非洲血統。"
@@ -53607,7 +53607,7 @@ const externalVocabularyDB = [
     "id": 5957,
     "en": "diagnosis",
     "kk": "[͵daɪəɡˋnosəs]",
-    "zh": "n. 診斷;診斷書;調查分析",
+    "zh": "n. 診斷；診斷書；調查分析",
     "unit": 6,
     "example": "They are waiting for the doctor's diagnosis.",
     "exampleZh": "他們正在等待醫生的診斷結論。"
@@ -53634,7 +53634,7 @@ const externalVocabularyDB = [
     "id": 5960,
     "en": "dictation",
     "kk": "[dɪkˋteʃən]",
-    "zh": "n. 口述;聽寫",
+    "zh": "n. 口述；聽寫",
     "unit": 6,
     "example": "She is transcribing, from his dictation, the diaries of Simon Forman.",
     "exampleZh": "她正在根據他的口述記錄西蒙·福曼的日記。"
@@ -53652,7 +53652,7 @@ const externalVocabularyDB = [
     "id": 5962,
     "en": "dilemma",
     "kk": "[dɪˋlɛmə]",
-    "zh": "n. 困境;進退兩難",
+    "zh": "n. 困境；進退兩難",
     "unit": 6,
     "example": "I didn't have a ready answer for this dilemma.",
     "exampleZh": "我沒有現成的答案來解決這個進退兩難的問題。"
@@ -53661,7 +53661,7 @@ const externalVocabularyDB = [
     "id": 5963,
     "en": "dimension",
     "kk": "[dɪˋmɛnʃən]",
-    "zh": "n. (長;寬;厚;高等的)尺寸;大小",
+    "zh": "n. (長；寬；厚；高等的)尺寸；大小",
     "unit": 6,
     "example": "You will open a new dimension to your life.",
     "exampleZh": "你將為你的生活開啟一個新的維度。"
@@ -53670,7 +53670,7 @@ const externalVocabularyDB = [
     "id": 5964,
     "en": "diplomacy",
     "kk": "[dɪpˋloməsi]",
-    "zh": "n. 外交;外交手腕",
+    "zh": "n. 外交；外交手腕",
     "unit": 6,
     "example": "UN mediators are conducting shuttle diplomacy between the two sides.",
     "exampleZh": "聯合國調解員們在雙方之間進行著穿梭外交。"
@@ -53679,7 +53679,7 @@ const externalVocabularyDB = [
     "id": 5965,
     "en": "directory",
     "kk": "[dɚˋɛktɚi]",
-    "zh": "n. 姓名住址簿;使用手冊",
+    "zh": "n. 姓名住址簿；使用手冊",
     "unit": 6,
     "example": "This command deletes files from the directory.",
     "exampleZh": "這一指令把文件從目錄中刪除。"
@@ -53688,7 +53688,7 @@ const externalVocabularyDB = [
     "id": 5966,
     "en": "disability",
     "kk": "[͵dɪsəˋbɪlɪti]",
-    "zh": "n. 無能;殘障",
+    "zh": "n. 無能；殘障",
     "unit": 6,
     "example": "We all fear disability or infirmity.",
     "exampleZh": "我們都害怕傷殘或體弱。"
@@ -53706,7 +53706,7 @@ const externalVocabularyDB = [
     "id": 5968,
     "en": "disclosure",
     "kk": "[dɪˋskloʒɚ]",
-    "zh": "n. 透露;揭發的事情",
+    "zh": "n. 透露；揭發的事情",
     "unit": 6,
     "example": "Currently they are not subject to data disclosure control.",
     "exampleZh": "當前它們不受資料公開控制的影響。"
@@ -53724,7 +53724,7 @@ const externalVocabularyDB = [
     "id": 5970,
     "en": "discrimination",
     "kk": "[dɪ͵skrɪməˋneʃən]",
-    "zh": "n. 歧視;辨別力",
+    "zh": "n. 歧視；辨別力",
     "unit": 6,
     "example": "Women's groups denounced sexual discrimination.",
     "exampleZh": "婦女組織譴責性別歧視。"
@@ -53769,7 +53769,7 @@ const externalVocabularyDB = [
     "id": 5975,
     "en": "disposal",
     "kk": "[dɪˋspozəl]",
-    "zh": "n. 處理;(自由)處置權",
+    "zh": "n. 處理；(自由)處置權",
     "unit": 6,
     "example": "Congress passed a law that regulates the disposal of waste.",
     "exampleZh": "國會透過了一條管理廢物處理的法律。"
@@ -53796,7 +53796,7 @@ const externalVocabularyDB = [
     "id": 5978,
     "en": "distraction",
     "kk": "[dɪˋstrækʃən]",
-    "zh": "n. 分心;注意力分散",
+    "zh": "n. 分心；注意力分散",
     "unit": 6,
     "example": "Distraction is also a serious issue.",
     "exampleZh": "分心也是一個嚴重的問題。"
@@ -53814,7 +53814,7 @@ const externalVocabularyDB = [
     "id": 5980,
     "en": "disturbance",
     "kk": "[dɪˋstɝbəns]",
-    "zh": "n. 擾亂;打擾",
+    "zh": "n. 擾亂；打擾",
     "unit": 6,
     "example": "During the disturbance which followed, three Englishmen were hurt.",
     "exampleZh": "在隨後的騷亂中，3個英國人受傷了。"
@@ -53823,7 +53823,7 @@ const externalVocabularyDB = [
     "id": 5981,
     "en": "diversion",
     "kk": "[daɪˋvɝʒən]",
-    "zh": "n. 轉向;轉移;分散注意力",
+    "zh": "n. 轉向；轉移；分散注意力",
     "unit": 6,
     "example": "The party will make a pleasant diversion.",
     "exampleZh": "晚會會是一個很不錯的消遣。"
@@ -53832,7 +53832,7 @@ const externalVocabularyDB = [
     "id": 5982,
     "en": "diversity",
     "kk": "[dɪˋvɝsɪti]",
-    "zh": "n. 差異;多樣性",
+    "zh": "n. 差異；多樣性",
     "unit": 6,
     "example": "Two of our greatest strengths are diversity and community.",
     "exampleZh": "我們的兩個最大優點是多樣性和團體精神。"
@@ -53841,7 +53841,7 @@ const externalVocabularyDB = [
     "id": 5983,
     "en": "doctrine",
     "kk": "[ˋdɑktrən]",
-    "zh": "n. 教義;信條",
+    "zh": "n. 教義；信條",
     "unit": 6,
     "example": "The doctrine is unchangeable.",
     "exampleZh": "這條教義是不可改變的。"
@@ -53868,7 +53868,7 @@ const externalVocabularyDB = [
     "id": 5986,
     "en": "donation",
     "kk": "[doˋneʃən]",
-    "zh": "n. 捐獻;捐款",
+    "zh": "n. 捐獻；捐款",
     "unit": 6,
     "example": "You can of course help by giving them a donation directly.",
     "exampleZh": "你當然可以透過直接給他們一筆捐贈來幫助他們。"
@@ -53877,7 +53877,7 @@ const externalVocabularyDB = [
     "id": 5987,
     "en": "donor",
     "kk": "[ˋdonɚ]",
-    "zh": "n. 贈送人;捐贈者",
+    "zh": "n. 贈送人；捐贈者",
     "unit": 6,
     "example": "The donor prefers to remain anonymous.",
     "exampleZh": "捐贈者希望不披露姓名。"
@@ -53895,7 +53895,7 @@ const externalVocabularyDB = [
     "id": 5989,
     "en": "dosage",
     "kk": "[ˋdosədʒ]",
-    "zh": "n. (藥的)劑量;服法",
+    "zh": "n. (藥的)劑量；服法",
     "unit": 6,
     "example": "He was put on a high dosage of vitamin C.",
     "exampleZh": "他在大劑量服用維生素C。"
@@ -53904,7 +53904,7 @@ const externalVocabularyDB = [
     "id": 5990,
     "en": "drawback",
     "kk": "[ˋdrɔb͵æk]",
-    "zh": "n. 缺點;不利條件;障礙",
+    "zh": "n. 缺點；不利條件；障礙",
     "unit": 6,
     "example": "The main drawback to it is the cost.",
     "exampleZh": "它的主要缺點是成本高。"
@@ -53958,7 +53958,7 @@ const externalVocabularyDB = [
     "id": 5996,
     "en": "ecology",
     "kk": "[ɪˋkɑlədʒi]",
-    "zh": "n. 生態學;生態",
+    "zh": "n. 生態學；生態",
     "unit": 6,
     "example": "Oil pollution could damage the fragile ecology of the coral reefs.",
     "exampleZh": "石油汙染可能破壞珊瑚礁脆弱的生態環境。"
@@ -53967,7 +53967,7 @@ const externalVocabularyDB = [
     "id": 5997,
     "en": "ecstasy",
     "kk": "[ˋɛkstəsi]",
-    "zh": "n. 狂喜;入迷",
+    "zh": "n. 狂喜；入迷",
     "unit": 6,
     "example": "Ecstasy is the upper system's drug.",
     "exampleZh": "搖頭丸是上位系統的藥物。"
@@ -54003,7 +54003,7 @@ const externalVocabularyDB = [
     "id": 6001,
     "en": "eloquence",
     "kk": "[ˋɛləkwəns]",
-    "zh": "n. 雄辯;(流利的)口才",
+    "zh": "n. 雄辯；(流利的)口才",
     "unit": 7,
     "example": "She was struck by his simple, spellbinding eloquence.",
     "exampleZh": "她被他簡潔、富有鼓動性的口才迷住了。"
@@ -54012,7 +54012,7 @@ const externalVocabularyDB = [
     "id": 6002,
     "en": "emigrant",
     "kk": "[ˋɛməɡrənt]",
-    "zh": "n. (往他國的)移民;移出者",
+    "zh": "n. (往他國的)移民；移出者",
     "unit": 7,
     "example": "He is a British emigrant to Australia.",
     "exampleZh": "他是個移居澳大利亞的英國人。"
@@ -54021,7 +54021,7 @@ const externalVocabularyDB = [
     "id": 6003,
     "en": "emigration",
     "kk": "[͵ɛməˋɡreʃən]",
-    "zh": "n. 移居;(總稱)移民",
+    "zh": "n. 移居；(總稱)移民",
     "unit": 7,
     "example": "Emigration to the West reached a peak in the 1830's.",
     "exampleZh": "向西部遷移的行為在19世紀30年代達到頂峰。"
@@ -54030,16 +54030,16 @@ const externalVocabularyDB = [
     "id": 6004,
     "en": "enactment",
     "kk": "[ɛˋnæktmənt]",
-    "zh": "n. (法律的)制定;法規,條例",
+    "zh": "n. (法律的)制定；法規、條例",
     "unit": 7,
-    "example": "Can you use the word enactment in a sentence?",
-    "exampleZh": "你能在句子中使用「法規,條例」這個詞嗎？"
+    "example": "Public health advocates celebrated the enactment of legislation banning public smoking.",
+    "exampleZh": "公共衛生倡導者慶祝禁止公共場所吸菸法規的正式頒布。"
   },
   {
     "id": 6005,
     "en": "enclosure",
     "kk": "[ɛnˋkloʒɚ]",
-    "zh": "n. 封入;圈地;圍牆;附件",
+    "zh": "n. 封入；圈地；圍牆；附件",
     "unit": 7,
     "example": "Within those precincts, within that enclosure, there's a large, open courtyard.",
     "exampleZh": "在這些區域內，在圍牆內，有一個大的、開放的庭院。"
@@ -54057,7 +54057,7 @@ const externalVocabularyDB = [
     "id": 6007,
     "en": "endurance",
     "kk": "[ˋɛndɚəns]",
-    "zh": "n. 忍耐,耐久力",
+    "zh": "n. 忍耐、耐久力",
     "unit": 7,
     "example": "He showed remarkable endurance throughout his illness.",
     "exampleZh": "他在整個生病期間表現出非凡的忍耐力。"
@@ -54066,7 +54066,7 @@ const externalVocabularyDB = [
     "id": 6008,
     "en": "enhancement",
     "kk": "[ɛnˋhænsmənt]",
-    "zh": "n. 提高,增加",
+    "zh": "n. 提高、增加",
     "unit": 7,
     "example": "Numerous other enhancements were added.",
     "exampleZh": "增加了許多其他增強功能。"
@@ -54075,7 +54075,7 @@ const externalVocabularyDB = [
     "id": 6009,
     "en": "enlightenment",
     "kk": "[͵ɛnˋlaɪtənmənt]",
-    "zh": "n. 啟蒙;教化;開明",
+    "zh": "n. 啟蒙；教化；開明",
     "unit": 7,
     "example": "This will give some enlightenment.",
     "exampleZh": "這會提供某種啟迪。"
@@ -54084,10 +54084,10 @@ const externalVocabularyDB = [
     "id": 6010,
     "en": "enrichment",
     "kk": "[ɛˋnrɪtʃmənt]",
-    "zh": "n. 致富;豐富;添加肥料;增強食品營養",
+    "zh": "n. 致富；豐富；添加肥料；增強食品營養",
     "unit": 7,
-    "example": "Can you use the word enrichment in a sentence?",
-    "exampleZh": "你能在句子中使用「增強食品營養」這個詞嗎？"
+    "example": "Interactive workshops offer practical skills and intellectual enrichment for adults.",
+    "exampleZh": "互動工作坊為成年人提供實用技能與心靈層面的充實。"
   },
   {
     "id": 6011,
@@ -54102,7 +54102,7 @@ const externalVocabularyDB = [
     "id": 6012,
     "en": "episode",
     "kk": "[ˋɛpə͵sod]",
-    "zh": "n. 一個事件;一節;一齣;一集",
+    "zh": "n. 一個事件；一節；一齣；一集",
     "unit": 7,
     "example": "The final episode will be shown next Sunday.",
     "exampleZh": "最後一集將於下週日播放。"
@@ -54111,7 +54111,7 @@ const externalVocabularyDB = [
     "id": 6013,
     "en": "equation",
     "kk": "[ɪkˋweʒən]",
-    "zh": "n. 方程式;等式;相等",
+    "zh": "n. 方程式；等式；相等",
     "unit": 7,
     "example": "X and Y in the equation are both unknowns.",
     "exampleZh": "等式中的X和Y都是未知數。"
@@ -54129,7 +54129,7 @@ const externalVocabularyDB = [
     "id": 6015,
     "en": "eruption",
     "kk": "[͵iˋrʌpʃən]",
-    "zh": "n. 爆發;噴出",
+    "zh": "n. 爆發；噴出",
     "unit": 7,
     "example": "Volcanic ash showered down on the town after the eruption.",
     "exampleZh": "火山噴發後，小城落了一層火山灰。"
@@ -54138,7 +54138,7 @@ const externalVocabularyDB = [
     "id": 6016,
     "en": "essence",
     "kk": "[ˋɛsəns]",
-    "zh": "n. 本質;要素;精華;精油",
+    "zh": "n. 本質；要素；精華；精油",
     "unit": 7,
     "example": "The essence of dialectical thought is division.",
     "exampleZh": "辯證思想的實質是二分法。"
@@ -54147,7 +54147,7 @@ const externalVocabularyDB = [
     "id": 6017,
     "en": "eternity",
     "kk": "[ɪˋtɝnəti]",
-    "zh": "n. 永遠;永恆;永世",
+    "zh": "n. 永遠；永恆；永世",
     "unit": 7,
     "example": "Eternity is not a distance but a determination.",
     "exampleZh": "永恆不是一段距離，而是一種決心。"
@@ -54165,7 +54165,7 @@ const externalVocabularyDB = [
     "id": 6019,
     "en": "evolution",
     "kk": "[͵ɛvəˋluʃən]",
-    "zh": "n. 發展,進展",
+    "zh": "n. 發展、進展",
     "unit": 7,
     "example": "Darwin eventually put forward a model of biological evolution.",
     "exampleZh": "達爾文最終提出了一套生物進化的理論模式。"
@@ -54183,7 +54183,7 @@ const externalVocabularyDB = [
     "id": 6021,
     "en": "execution",
     "kk": "[͵ɛksəˋkjuʃən]",
-    "zh": "n. 實行;執行;死刑",
+    "zh": "n. 實行；執行；死刑",
     "unit": 7,
     "example": "The idea was good, but the execution was poor.",
     "exampleZh": "這個主意倒不錯，可實施情況不理想。"
@@ -54201,7 +54201,7 @@ const externalVocabularyDB = [
     "id": 6023,
     "en": "expedition",
     "kk": "[͵ɛkspəˋdɪʃən]",
-    "zh": "n. 遠征(隊);探險(隊)",
+    "zh": "n. 遠征(隊)；探險(隊)",
     "unit": 7,
     "example": "The expedition was bedevilled by bad weather.",
     "exampleZh": "探險隊深受惡劣天氣的困擾。"
@@ -54210,7 +54210,7 @@ const externalVocabularyDB = [
     "id": 6024,
     "en": "expertise",
     "kk": "[͵ɛkspɚˋtiz]",
-    "zh": "n. 專門知識;專門技術",
+    "zh": "n. 專門知識；專門技術",
     "unit": 7,
     "example": "Griffith's expertise is in writing legal briefs.",
     "exampleZh": "格里菲思的專長在於撰寫法律案情摘要。"
@@ -54219,7 +54219,7 @@ const externalVocabularyDB = [
     "id": 6025,
     "en": "expiration",
     "kk": "[͵ɛkspɚˋeʃən]",
-    "zh": "n. 失效;期滿;吐氣",
+    "zh": "n. 失效；期滿；吐氣",
     "unit": 7,
     "example": "The expiration date on this yogurt was November 20.",
     "exampleZh": "這酸奶的有效期到11月20日。"
@@ -54228,7 +54228,7 @@ const externalVocabularyDB = [
     "id": 6026,
     "en": "exploit",
     "kk": "[ˋɛk͵splɔɪt]",
-    "zh": "v. 功績,功勳；n. 英勇的行為",
+    "zh": "v. 功績、功勳；n. 英勇的行為",
     "unit": 7,
     "example": "What do you think my last exploit was?",
     "exampleZh": "你覺得我最近乾的那樁出格事是什麼？"
@@ -54237,7 +54237,7 @@ const externalVocabularyDB = [
     "id": 6027,
     "en": "exploration",
     "kk": "[͵ɛksplɚˋeʃən]",
-    "zh": "n. 勘查;探測",
+    "zh": "n. 勘查；探測",
     "unit": 7,
     "example": "The moon landing inaugurated a new era in space exploration.",
     "exampleZh": "登陸月球開創了太空探索的新紀元。"
@@ -54255,7 +54255,7 @@ const externalVocabularyDB = [
     "id": 6029,
     "en": "eyesight",
     "kk": "[ˋaɪ͵saɪt]",
-    "zh": "n. 視力,目力",
+    "zh": "n. 視力、目力",
     "unit": 7,
     "example": "His eyesight is getting dim.",
     "exampleZh": "他的視力越來越差。"
@@ -54264,7 +54264,7 @@ const externalVocabularyDB = [
     "id": 6030,
     "en": "faction",
     "kk": "[ˋfækʃən]",
-    "zh": "n. 派別;小集團;派系之爭",
+    "zh": "n. 派別；小集團；派系之爭",
     "unit": 7,
     "example": "But the royal faction did not give up without a fight.",
     "exampleZh": "但是王室派系並沒有不戰而降。"
@@ -54273,7 +54273,7 @@ const externalVocabularyDB = [
     "id": 6031,
     "en": "faculty",
     "kk": "[ˋfækəlti]",
-    "zh": "n. (學校的)全體教員;官能",
+    "zh": "n. (學校的)全體教員；官能",
     "unit": 7,
     "example": "The faculty agreed on a change in the requirements.",
     "exampleZh": "全體教員同意改變要求。"
@@ -54282,7 +54282,7 @@ const externalVocabularyDB = [
     "id": 6032,
     "en": "familiarity",
     "kk": "[fə͵mɪlˋjɛrəti]",
-    "zh": "n. 熟悉;通曉",
+    "zh": "n. 熟悉；通曉",
     "unit": 7,
     "example": "Tony was unnerved by the uncanny familiarity of her face.",
     "exampleZh": "託尼被她不尋常的熟悉面孔弄得心煩意亂。"
@@ -54300,7 +54300,7 @@ const externalVocabularyDB = [
     "id": 6034,
     "en": "fascination",
     "kk": "[͵fæsəˋneʃən]",
-    "zh": "n. 迷戀;陶醉",
+    "zh": "n. 迷戀；陶醉",
     "unit": 7,
     "example": "The girls listened in fascination as the story unfolded.",
     "exampleZh": "故事情節逐漸展開，小女孩都入迷地聽著。"
@@ -54309,7 +54309,7 @@ const externalVocabularyDB = [
     "id": 6035,
     "en": "federation",
     "kk": "[͵fɛdɚˋeʃən]",
-    "zh": "n. 聯邦政府;聯邦制度;聯盟",
+    "zh": "n. 聯邦政府；聯邦制度；聯盟",
     "unit": 7,
     "example": "In the future we envision a federation of companies.",
     "exampleZh": "我們設想將來會有公司聯盟。"
@@ -54327,7 +54327,7 @@ const externalVocabularyDB = [
     "id": 6037,
     "en": "fertility",
     "kk": "[fɚˋtɪləti]",
-    "zh": "n. 肥沃;繁殖力",
+    "zh": "n. 肥沃；繁殖力",
     "unit": 7,
     "example": "The women were given fertility drugs to stimulate the ovaries.",
     "exampleZh": "那些婦女得到了促進卵巢功能的生育藥。"
@@ -54336,7 +54336,7 @@ const externalVocabularyDB = [
     "id": 6038,
     "en": "fidelity",
     "kk": "[fəˋdɛləti]",
-    "zh": "n. 忠誠;忠貞",
+    "zh": "n. 忠誠；忠貞",
     "unit": 7,
     "example": "He believed in marital fidelity.",
     "exampleZh": "他贊成對婚姻忠實。"
@@ -54354,7 +54354,7 @@ const externalVocabularyDB = [
     "id": 6040,
     "en": "fleet",
     "kk": "[flit]",
-    "zh": "n. 艦隊;機群;車隊",
+    "zh": "n. 艦隊；機群；車隊",
     "unit": 7,
     "example": "Russia and Ukraine have been disputing the ownership of the fleet.",
     "exampleZh": "俄羅斯和烏克蘭一直在爭奪該艦隊的所有權。"
@@ -54417,7 +54417,7 @@ const externalVocabularyDB = [
     "id": 6047,
     "en": "fraud",
     "kk": "[frɔd]",
-    "zh": "n. 詭計;騙子;假貨",
+    "zh": "n. 詭計；騙子；假貨",
     "unit": 7,
     "example": "He was convicted of fraud.",
     "exampleZh": "他被判犯有詐騙罪。"
@@ -54435,7 +54435,7 @@ const externalVocabularyDB = [
     "id": 6049,
     "en": "friction",
     "kk": "[ˋfrɪkʃən]",
-    "zh": "n. 摩擦;不和;爭執",
+    "zh": "n. 摩擦；不和；爭執",
     "unit": 7,
     "example": "The pistons are graphite-coated to reduce friction.",
     "exampleZh": "活塞表面塗有石墨以減少摩擦。"
@@ -54453,7 +54453,7 @@ const externalVocabularyDB = [
     "id": 6051,
     "en": "generator",
     "kk": "[ˋdʒɛnɚ͵etɚ]",
-    "zh": "n. 發電機;產生器",
+    "zh": "n. 發電機；產生器",
     "unit": 7,
     "example": "Go to the generator.",
     "exampleZh": "去發電機那兒。"
@@ -54471,7 +54471,7 @@ const externalVocabularyDB = [
     "id": 6053,
     "en": "glamour",
     "kk": "[ˋɡlæmɚ]",
-    "zh": "n. 魅力,誘惑力;迷人的美;妖豔",
+    "zh": "n. 魅力、誘惑力；迷人的美；妖豔",
     "unit": 7,
     "example": "We need someone with youth, glamour and pizzazz.",
     "exampleZh": "我們需要一位年富力強、魅力十足、風度翩翩的人。"
@@ -54581,8 +54581,8 @@ const externalVocabularyDB = [
     "kk": "[hɚˋæsmənt]",
     "zh": "n. 騷擾",
     "unit": 7,
-    "example": "Can you use the word harassment in a sentence?",
-    "exampleZh": "你能在句子中使用「騷擾」這個詞嗎？"
+    "example": "The human resources department investigated complaints regarding workplace harassment.",
+    "exampleZh": "人力資源部對有關職場騷擾的投訴展開了調查。"
   },
   {
     "id": 6066,
@@ -54597,7 +54597,7 @@ const externalVocabularyDB = [
     "id": 6067,
     "en": "hemisphere",
     "kk": "[ˋhɛmɪ͵sfɪr]",
-    "zh": "n. (地球的)半球;半球體",
+    "zh": "n. (地球的)半球；半球體",
     "unit": 7,
     "example": "Which makes earth, and in particular, the northern hemisphere, warmer.",
     "exampleZh": "這使得地球變暖了，尤其是北半球地區。"
@@ -54615,7 +54615,7 @@ const externalVocabularyDB = [
     "id": 6069,
     "en": "heritage",
     "kk": "[ˋhɛrətədʒ]",
-    "zh": "n. 遺產;繼承物;傳統",
+    "zh": "n. 遺產；繼承物；傳統",
     "unit": 7,
     "example": "They take great pride in their heritage.",
     "exampleZh": "他們為自己的傳統感到十分自豪。"
@@ -54651,7 +54651,7 @@ const externalVocabularyDB = [
     "id": 6073,
     "en": "hospitality",
     "kk": "[͵hɑspəˋtæləti]",
-    "zh": "n. 好客;殷勤招待",
+    "zh": "n. 好客；殷勤招待",
     "unit": 7,
     "example": "He wasn't expecting our hospitality.",
     "exampleZh": "他沒有期待我們的熱情款待。"
@@ -54660,7 +54660,7 @@ const externalVocabularyDB = [
     "id": 6074,
     "en": "hostility",
     "kk": "[hɑˋstɪləti]",
-    "zh": "n. 敵意;敵視;戰爭行動",
+    "zh": "n. 敵意；敵視；戰爭行動",
     "unit": 7,
     "example": "Hostility glinted in his eyes.",
     "exampleZh": "他眼睛裡流露出敵意。"
@@ -54696,7 +54696,7 @@ const externalVocabularyDB = [
     "id": 6078,
     "en": "hygiene",
     "kk": "[ˋhaɪ͵dʒin]",
-    "zh": "n. 衛生;衛生學;保健法",
+    "zh": "n. 衛生；衛生學；保健法",
     "unit": 7,
     "example": "She wasn't very fastidious about personal hygiene.",
     "exampleZh": "她不過分講究個人衛生。"
@@ -54705,7 +54705,7 @@ const externalVocabularyDB = [
     "id": 6079,
     "en": "hypocrisy",
     "kk": "[hɪˋpɑkrəsi]",
-    "zh": "n. 偽善;虛偽",
+    "zh": "n. 偽善；虛偽",
     "unit": 7,
     "example": "Her denials reeked of hypocrisy.",
     "exampleZh": "她那樣否認顯然很虛偽。"
@@ -54714,7 +54714,7 @@ const externalVocabularyDB = [
     "id": 6080,
     "en": "hypocrite",
     "kk": "[ˋhɪpə͵krɪt]",
-    "zh": "n. 偽善者;偽君子",
+    "zh": "n. 偽善者；偽君子",
     "unit": 7,
     "example": "The newspapers branded her a hypocrite.",
     "exampleZh": "報章指她是偽君子。"
@@ -54723,7 +54723,7 @@ const externalVocabularyDB = [
     "id": 6081,
     "en": "illusion",
     "kk": "[͵ɪlˋuʒən]",
-    "zh": "n. 錯覺;假象;幻想",
+    "zh": "n. 錯覺；假象；幻想",
     "unit": 7,
     "example": "The idea of absolute personal freedom is an illusion.",
     "exampleZh": "絕對個人自由的觀念是一種幻想。"
@@ -54750,7 +54750,7 @@ const externalVocabularyDB = [
     "id": 6084,
     "en": "implication",
     "kk": "[͵ɪmpləˋkeʃən]",
-    "zh": "n. 含意;言外之意;暗示",
+    "zh": "n. 含意；言外之意；暗示",
     "unit": 7,
     "example": "The implication was plain, if left unstated.",
     "exampleZh": "即使不說出來，隱含義也很明顯。"
@@ -54759,7 +54759,7 @@ const externalVocabularyDB = [
     "id": 6085,
     "en": "imprisonment",
     "kk": "[͵ɪmˋprɪzənmənt]",
-    "zh": "n. 監禁;限止",
+    "zh": "n. 監禁；限止",
     "unit": 7,
     "example": "He faced imprisonment for contempt of court.",
     "exampleZh": "他因藐視法庭罪而面臨監禁。"
@@ -54786,7 +54786,7 @@ const externalVocabularyDB = [
     "id": 6088,
     "en": "indignation",
     "kk": "[͵ɪndɪɡˋneʃən]",
-    "zh": "n. 憤怒;憤慨;義憤",
+    "zh": "n. 憤怒；憤慨；義憤",
     "unit": 7,
     "example": "He could scarcely keep in his indignation.",
     "exampleZh": "他幾乎控制不住自己的憤怒。"
@@ -54795,7 +54795,7 @@ const externalVocabularyDB = [
     "id": 6089,
     "en": "inference",
     "kk": "[ˋɪnfɚəns]",
-    "zh": "n. 推論,推斷",
+    "zh": "n. 推論、推斷",
     "unit": 7,
     "example": "An evolutionary inference can then be drawn.",
     "exampleZh": "這樣就可以得到一個關於進化的推論。"
@@ -54804,7 +54804,7 @@ const externalVocabularyDB = [
     "id": 6090,
     "en": "ingenuity",
     "kk": "[͵ɪndʒəˋnuə͵ti]",
-    "zh": "n. 心靈手巧;獨創性;足智多謀",
+    "zh": "n. 心靈手巧；獨創性；足智多謀",
     "unit": 7,
     "example": "It's limited only by your ingenuity!",
     "exampleZh": "它僅受限於你的創造力！"
@@ -54813,7 +54813,7 @@ const externalVocabularyDB = [
     "id": 6091,
     "en": "inhabitant",
     "kk": "[ɪnˋhæbətənt]",
-    "zh": "n. 居民,居住者",
+    "zh": "n. 居民、居住者",
     "unit": 7,
     "example": "The Manchurian Tiger is the typical forest inhabitant.",
     "exampleZh": "東北虎是典型的林棲動物。"
@@ -54840,7 +54840,7 @@ const externalVocabularyDB = [
     "id": 6094,
     "en": "injustice",
     "kk": "[͵ɪnˋdʒʌstɪs]",
-    "zh": "n. 非正義;不公正",
+    "zh": "n. 非正義；不公正",
     "unit": 7,
     "example": "You cannot erase injustice from the world.",
     "exampleZh": "任何人都不可能讓非正義從世界上消失。"
@@ -54849,7 +54849,7 @@ const externalVocabularyDB = [
     "id": 6095,
     "en": "innovation",
     "kk": "[͵ɪnəˋveʃən]",
-    "zh": "n. 革新;創新;新事物",
+    "zh": "n. 革新；創新；新事物",
     "unit": 7,
     "example": "Capitalism stresses innovation, competition and individualism.",
     "exampleZh": "資本主義強調的是創新、競爭和個人至上。"
@@ -54858,7 +54858,7 @@ const externalVocabularyDB = [
     "id": 6096,
     "en": "inquiry",
     "kk": "[͵ɪnˋkwaɪ͵ri]",
-    "zh": "n. 詢問,打聽;質詢",
+    "zh": "n. 詢問、打聽；質詢",
     "unit": 7,
     "example": "The board of inquiry is continuing its investigations.",
     "exampleZh": "調查委員會在繼續做調查。"
@@ -54867,7 +54867,7 @@ const externalVocabularyDB = [
     "id": 6097,
     "en": "insight",
     "kk": "[ˋɪn͵saɪt]",
-    "zh": "n. 洞察力;洞悉",
+    "zh": "n. 洞察力；洞悉",
     "unit": 7,
     "example": "Where do you get all of your insight from?",
     "exampleZh": "你的所有洞察力從何而來？"
@@ -54885,7 +54885,7 @@ const externalVocabularyDB = [
     "id": 6099,
     "en": "installation",
     "kk": "[͵ɪnstəˋleʃən]",
-    "zh": "n. 設施;安裝",
+    "zh": "n. 設施；安裝",
     "unit": 7,
     "example": "Installation of the new system will take several days.",
     "exampleZh": "新系統的安裝需要幾天時間。"
@@ -54894,7 +54894,7 @@ const externalVocabularyDB = [
     "id": 6100,
     "en": "installment",
     "kk": "[͵ɪnˋstɔlmənt]",
-    "zh": "n. 分期付款;安置",
+    "zh": "n. 分期付款；安置",
     "unit": 7,
     "example": "I will cover these transitions in the next installment.",
     "exampleZh": "我將在下期連載中涵蓋這些變化。"
@@ -54912,7 +54912,7 @@ const externalVocabularyDB = [
     "id": 6102,
     "en": "integration",
     "kk": "[͵ɪntəˋɡreʃən]",
-    "zh": "n. 整合;積分",
+    "zh": "n. 整合；積分",
     "unit": 7,
     "example": "The aim is to promote closer economic integration.",
     "exampleZh": "目的是進一步促進經濟一體化。"
@@ -54921,7 +54921,7 @@ const externalVocabularyDB = [
     "id": 6103,
     "en": "integrity",
     "kk": "[͵ɪnˋtɛɡrəti]",
-    "zh": "n. 正直;廉正;健全",
+    "zh": "n. 正直；廉正；健全",
     "unit": 7,
     "example": "Mayhew is a man of rock-solid integrity.",
     "exampleZh": "梅休是一個正直可靠的男人。"
@@ -54930,7 +54930,7 @@ const externalVocabularyDB = [
     "id": 6104,
     "en": "intellect",
     "kk": "[ˋɪntə͵lɛkt]",
-    "zh": "n. 智力;理解力;有才智的人",
+    "zh": "n. 智力；理解力；有才智的人",
     "unit": 7,
     "example": "She is famed for her intellect.",
     "exampleZh": "她因才智而出名。"
@@ -54939,7 +54939,7 @@ const externalVocabularyDB = [
     "id": 6105,
     "en": "intersection",
     "kk": "[͵ɪntɚˋsɛkʃən]",
-    "zh": "n. 交叉點;十字路口",
+    "zh": "n. 交叉點；十字路口",
     "unit": 7,
     "example": "We crossed at a busy intersection.",
     "exampleZh": "我們穿過了一個繁忙的道路交叉口。"
@@ -54948,7 +54948,7 @@ const externalVocabularyDB = [
     "id": 6106,
     "en": "interval",
     "kk": "[ˋɪntɚvəl]",
-    "zh": "n. 間隔;距離",
+    "zh": "n. 間隔；距離",
     "unit": 7,
     "example": "The interval between major earthquakes might be 200 years.",
     "exampleZh": "大地震之間的間隔時間可能有200年。"
@@ -54957,7 +54957,7 @@ const externalVocabularyDB = [
     "id": 6107,
     "en": "intervention",
     "kk": "[͵ɪntɚˋvɛnʃən]",
-    "zh": "n. 介入;干預;調停",
+    "zh": "n. 介入；干預；調停",
     "unit": 7,
     "example": "Military intervention will only aggravate the conflict even further.",
     "exampleZh": "軍事介入只會使衝突加劇。"
@@ -54966,7 +54966,7 @@ const externalVocabularyDB = [
     "id": 6108,
     "en": "intimacy",
     "kk": "[ˋɪntəməsi]",
-    "zh": "n. 熟悉;親密;親近",
+    "zh": "n. 熟悉；親密；親近",
     "unit": 7,
     "example": "Haptics in communication often suggest the level of intimacy.",
     "exampleZh": "在交流中，觸覺學通常暗示著親密程度。"
@@ -54975,7 +54975,7 @@ const externalVocabularyDB = [
     "id": 6109,
     "en": "intruder",
     "kk": "[͵ɪnˋtrudɚ]",
-    "zh": "n. 侵入者;闖入者",
+    "zh": "n. 侵入者；闖入者",
     "unit": 7,
     "example": "Armed guards wrestled with the intruder.",
     "exampleZh": "武裝警衛和闖入者扭打起來。"
@@ -54993,16 +54993,16 @@ const externalVocabularyDB = [
     "id": 6111,
     "en": "investigator",
     "kk": "[͵ɪnˋvɛstə͵ɡetɚ]",
-    "zh": "n. 調查者;研究者",
+    "zh": "n. 調查者；研究者",
     "unit": 7,
-    "example": "Can you use the word investigator in a sentence?",
-    "exampleZh": "你能在句子中使用「研究者」這個詞嗎？"
+    "example": "A senior investigator examined the financial ledger for signs of fraud.",
+    "exampleZh": "一名資深調查員審查了財務帳冊，以尋找舞弊的跡象。"
   },
   {
     "id": 6112,
     "en": "irony",
     "kk": "[ˋaɪrəni]",
-    "zh": "n. 反語;諷刺;出乎意料的結果",
+    "zh": "n. 反語；諷刺；出乎意料的結果",
     "unit": 7,
     "example": "She spoke with heavy irony.",
     "exampleZh": "她的話充滿了諷刺。"
@@ -55011,7 +55011,7 @@ const externalVocabularyDB = [
     "id": 6113,
     "en": "irritation",
     "kk": "[͵ɪrɪˋteʃən]",
-    "zh": "n. 激怒;惱怒",
+    "zh": "n. 激怒；惱怒",
     "unit": 7,
     "example": "These oils may cause irritation to sensitive skins.",
     "exampleZh": "這幾種油可能會對敏感皮膚有刺激。"
@@ -55020,7 +55020,7 @@ const externalVocabularyDB = [
     "id": 6114,
     "en": "kernel",
     "kk": "[ˋkɝnəl]",
-    "zh": "n. (果核或果殼內的)仁;核心,要點",
+    "zh": "n. (果核或果殼內的)仁；核心、要點",
     "unit": 7,
     "example": "TUN and TAP are virtual network kernel drivers.",
     "exampleZh": "TUN 和 TAP 是虛擬的網路核心裝置。"
@@ -55038,7 +55038,7 @@ const externalVocabularyDB = [
     "id": 6116,
     "en": "lava",
     "kk": "[ˋlɑvə]",
-    "zh": "n. 熔岩;火山岩",
+    "zh": "n. 熔岩；火山岩",
     "unit": 7,
     "example": "Lava is extruded from the volcano.",
     "exampleZh": "熔岩從火山中噴出。"
@@ -55047,7 +55047,7 @@ const externalVocabularyDB = [
     "id": 6117,
     "en": "layman",
     "kk": "[ˋlemən]",
-    "zh": "n. (未受神職的)一般信徒;外行人",
+    "zh": "n. (未受神職的)一般信徒；外行人",
     "unit": 7,
     "example": "Where the law is concerned, I am only a layman.",
     "exampleZh": "談到法律，我不過是門外漢。"
@@ -55056,7 +55056,7 @@ const externalVocabularyDB = [
     "id": 6118,
     "en": "layout",
     "kk": "[ˋle͵aʊt]",
-    "zh": "n. 設計;佈局;版面設計",
+    "zh": "n. 設計；佈局；版面設計",
     "unit": 7,
     "example": "The layout is hard to fault ergonomically.",
     "exampleZh": "這一設計從工效學方面看幾乎無懈可擊。"
@@ -55065,7 +55065,7 @@ const externalVocabularyDB = [
     "id": 6119,
     "en": "legislator",
     "kk": "[ˋlɛdʒə͵sletɚ]",
-    "zh": "n. 立法委員;國會議員",
+    "zh": "n. 立法委員；國會議員",
     "unit": 7,
     "example": "Which countries have the largest number of people per legislator?",
     "exampleZh": "哪些國家的議員代表最多數的人？"
@@ -55074,7 +55074,7 @@ const externalVocabularyDB = [
     "id": 6120,
     "en": "legislature",
     "kk": "[ˋlɛdʒə͵sletʃɚ]",
-    "zh": "n. 立法機關;(美國的)州議會",
+    "zh": "n. 立法機關；(美國的)州議會",
     "unit": 7,
     "example": "A roar of approval resounded through the legislature.",
     "exampleZh": "一片贊成聲在議會中迴響。"
@@ -55083,7 +55083,7 @@ const externalVocabularyDB = [
     "id": 6121,
     "en": "liberation",
     "kk": "[͵lɪb͵ɝˋeʃən]",
-    "zh": "n. 解放;釋出",
+    "zh": "n. 解放；釋出",
     "unit": 7,
     "example": "We call this data liberation.",
     "exampleZh": "我們管這叫“資料解放”。"
@@ -55110,7 +55110,7 @@ const externalVocabularyDB = [
     "id": 6124,
     "en": "liner",
     "kk": "[ˋlaɪnɚ]",
-    "zh": "n. 班輪;眼線筆",
+    "zh": "n. 班輪；眼線筆",
     "unit": 7,
     "example": "The liner went straight to Nanjing.",
     "exampleZh": "班輪徑直開往南京。"
@@ -55119,7 +55119,7 @@ const externalVocabularyDB = [
     "id": 6125,
     "en": "linguist",
     "kk": "[ˋlɪŋɡwɪst]",
-    "zh": "n. 語言學者;通曉數種外語的人",
+    "zh": "n. 語言學者；通曉數種外語的人",
     "unit": 7,
     "example": "Ziri became a linguist.",
     "exampleZh": "齊裡成為語言學家。"
@@ -55130,8 +55130,8 @@ const externalVocabularyDB = [
     "kk": "[ˋlɪkwəd ˋkrɪstəl dɪˋsple]",
     "zh": "n. 液晶顯示 (LCD)",
     "unit": 7,
-    "example": "Can you use the word liquid crystal display in a sentence?",
-    "exampleZh": "你能在句子中使用「液晶顯示 (LCD)」這個詞嗎？"
+    "example": "The modern instrument panel incorporates a glare-free liquid crystal display.",
+    "exampleZh": "現代化的儀表板配備了防眩光的液晶顯示螢幕。"
   },
   {
     "id": 6127,
@@ -55139,14 +55139,14 @@ const externalVocabularyDB = [
     "kk": "[ˋlitɚ]",
     "zh": "n. 公升",
     "unit": 7,
-    "example": "Can you use the word liter in a sentence?",
-    "exampleZh": "你能在句子中使用「公升」這個詞嗎？"
+    "example": "You should drink approximately two liters of pure water every day.",
+    "exampleZh": "你每天應該喝大約兩公升的純水。"
   },
   {
     "id": 6128,
     "en": "literacy",
     "kk": "[ˋlɪtɚəsi]",
-    "zh": "n. 識字;讀寫能力",
+    "zh": "n. 識字；讀寫能力",
     "unit": 7,
     "example": "Many adults have problems with literacy and numeracy.",
     "exampleZh": "很多成年人有讀寫和計算的困難。"
@@ -55164,7 +55164,7 @@ const externalVocabularyDB = [
     "id": 6130,
     "en": "longevity",
     "kk": "[lɔnˋdʒɛvəti]",
-    "zh": "n. 長壽;壽命",
+    "zh": "n. 長壽；壽命",
     "unit": 7,
     "example": "Human longevity runs in families.",
     "exampleZh": "人類長壽是有遺傳的。"
@@ -55209,7 +55209,7 @@ const externalVocabularyDB = [
     "id": 6135,
     "en": "magnitude",
     "kk": "[ˋmæɡnə͵tud]",
-    "zh": "n. 巨大;重大;強度",
+    "zh": "n. 巨大；重大；強度",
     "unit": 7,
     "example": "We did not realize the magnitude of the problem.",
     "exampleZh": "我們沒有意識到這個問題的重要性。"
@@ -55227,7 +55227,7 @@ const externalVocabularyDB = [
     "id": 6137,
     "en": "manuscript",
     "kk": "[ˋmænjə͵skrɪpt]",
-    "zh": "n. 手稿;打字稿;原稿",
+    "zh": "n. 手稿；打字稿；原稿",
     "unit": 7,
     "example": "I read her poems in manuscript.",
     "exampleZh": "我讀過她的詩作的手稿。"
@@ -55245,7 +55245,7 @@ const externalVocabularyDB = [
     "id": 6139,
     "en": "mastery",
     "kk": "[ˋmæstɚi]",
-    "zh": "n. 支配;統治;精通;掌握",
+    "zh": "n. 支配；統治；精通；掌握",
     "unit": 7,
     "example": "She has mastery of several languages.",
     "exampleZh": "她精通數門語言。"
@@ -55254,7 +55254,7 @@ const externalVocabularyDB = [
     "id": 6140,
     "en": "material",
     "kk": "[məˋtɪriəl]",
-    "zh": "n. 材料,原料",
+    "zh": "n. 材料、原料",
     "unit": 7,
     "example": "This material is 45% nylon.",
     "exampleZh": "這種材料含45%的尼龍。"
@@ -55263,7 +55263,7 @@ const externalVocabularyDB = [
     "id": 6141,
     "en": "materialism",
     "kk": "[məˋtɪriə͵lɪzəm]",
-    "zh": "n. 唯物論;唯物主義",
+    "zh": "n. 唯物論；唯物主義",
     "unit": 7,
     "example": "Scientific materialism thus triumphed over ignorance and superstition.",
     "exampleZh": "科學唯物主義就這樣戰勝了無知和迷信。"
@@ -55281,7 +55281,7 @@ const externalVocabularyDB = [
     "id": 6143,
     "en": "mechanism",
     "kk": "[ˋmɛkə͵nɪzəm]",
-    "zh": "n. 機械裝置;機械作用;結構",
+    "zh": "n. 機械裝置；機械作用；結構",
     "unit": 7,
     "example": "Pain acts as a natural defence mechanism.",
     "exampleZh": "疼痛算是一種自然防護機制的作用。"
@@ -55290,7 +55290,7 @@ const externalVocabularyDB = [
     "id": 6144,
     "en": "medication",
     "kk": "[͵mɛdəˋkeʃən]",
-    "zh": "n. 藥物治療;藥物",
+    "zh": "n. 藥物治療；藥物",
     "unit": 7,
     "example": "He's very sick. He needs medication.",
     "exampleZh": "他病得很重，需要藥物治療。"
@@ -55299,7 +55299,7 @@ const externalVocabularyDB = [
     "id": 6145,
     "en": "meditation",
     "kk": "[͵mɛdəˋteʃən]",
-    "zh": "n. 沈思;默想;冥想",
+    "zh": "n. 沈思；默想；冥想",
     "unit": 7,
     "example": "She found peace through yoga and meditation.",
     "exampleZh": "她透過瑜伽和冥想找到了寧靜。"
@@ -55317,7 +55317,7 @@ const externalVocabularyDB = [
     "id": 6147,
     "en": "mentality",
     "kk": "[mɛnˋtæləti]",
-    "zh": "n. 智力;精神性;心理狀態",
+    "zh": "n. 智力；精神性；心理狀態",
     "unit": 7,
     "example": "I cannot understand the mentality of football hooligans.",
     "exampleZh": "我無法理解足球流氓的心態。"
@@ -55335,7 +55335,7 @@ const externalVocabularyDB = [
     "id": 6149,
     "en": "metaphor",
     "kk": "[ˋmɛtəfɔr]",
-    "zh": "n. 隱喻;象徵",
+    "zh": "n. 隱喻；象徵",
     "unit": 7,
     "example": "This metaphor is very appropriate.",
     "exampleZh": "這個比喻很貼切。"
@@ -55353,7 +55353,7 @@ const externalVocabularyDB = [
     "id": 6151,
     "en": "migration",
     "kk": "[maɪˋɡreʃən]",
-    "zh": "n. 遷移;遷徙;移民群",
+    "zh": "n. 遷移；遷徙；移民群",
     "unit": 7,
     "example": "During the last recession, migration to the sunbelt accelerated.",
     "exampleZh": "前一個經濟蕭條期間，向美國南部陽光地帶移民的速度加快了。"
@@ -55371,7 +55371,7 @@ const externalVocabularyDB = [
     "id": 6153,
     "en": "miller",
     "kk": "[ˋmɪlɚ]",
-    "zh": "n. 磨坊主;碾磨工",
+    "zh": "n. 磨坊主；碾磨工",
     "unit": 7,
     "example": "Miller professed himself dissatisfied with Broadway theatre.",
     "exampleZh": "米勒表示他對百老匯劇院不滿。"
@@ -55407,7 +55407,7 @@ const externalVocabularyDB = [
     "id": 6157,
     "en": "modernization",
     "kk": "[͵mɑdɚnəˋzeʃən]",
-    "zh": "n. 現代化;現代化的事物",
+    "zh": "n. 現代化；現代化的事物",
     "unit": 7,
     "example": "Modernization will bring a number of benefits to Chinese people.",
     "exampleZh": "現代化將給中國人民帶來許多好處。"
@@ -55425,7 +55425,7 @@ const externalVocabularyDB = [
     "id": 6159,
     "en": "momentum",
     "kk": "[moˋmɛntəm]",
-    "zh": "n. 動量;氣勢;動力",
+    "zh": "n. 動量；氣勢；動力",
     "unit": 7,
     "example": "The vehicle gained momentum as the road dipped.",
     "exampleZh": "那輛車順著坡越跑衝力越大。"
@@ -55434,7 +55434,7 @@ const externalVocabularyDB = [
     "id": 6160,
     "en": "monopoly",
     "kk": "[məˋnɑpəli]",
-    "zh": "n. 獨佔;專賣;壟斷",
+    "zh": "n. 獨佔；專賣；壟斷",
     "unit": 7,
     "example": "Had he succeeded, he would have acquired a monopoly.",
     "exampleZh": "如果他那時成功了，他就會獲得壟斷地位。"
@@ -55443,7 +55443,7 @@ const externalVocabularyDB = [
     "id": 6161,
     "en": "monotony",
     "kk": "[məˋnɑtəni]",
-    "zh": "n. 單調;千篇一律",
+    "zh": "n. 單調；千篇一律",
     "unit": 7,
     "example": "Only Canary Wharf and a few towers elsewhere break the monotony.",
     "exampleZh": "只有金絲雀碼頭和其他地方的一些高塔打破單調的局面。"
@@ -55452,7 +55452,7 @@ const externalVocabularyDB = [
     "id": 6162,
     "en": "morale",
     "kk": "[mɚˋæl]",
-    "zh": "n. 士氣;鬥志;道德",
+    "zh": "n. 士氣；鬥志；道德",
     "unit": 7,
     "example": "The news has done wonders for our morale.",
     "exampleZh": "這訊息大大振奮了我們計程車氣。"
@@ -55461,7 +55461,7 @@ const externalVocabularyDB = [
     "id": 6163,
     "en": "morality",
     "kk": "[mɚˋæləti]",
-    "zh": "n. 道德;倫理;寓意",
+    "zh": "n. 道德；倫理；寓意",
     "unit": 7,
     "example": "Standards of morality seem to be dropping.",
     "exampleZh": "道德標準似乎在下降。"
@@ -55470,7 +55470,7 @@ const externalVocabularyDB = [
     "id": 6164,
     "en": "motto",
     "kk": "[ˋmɑto]",
-    "zh": "n. 座右銘;格言",
+    "zh": "n. 座右銘；格言",
     "unit": 7,
     "example": "'Live and let live.' That's my motto.",
     "exampleZh": "“待人寬如待己。”這就是我的座右銘。"
@@ -55479,7 +55479,7 @@ const externalVocabularyDB = [
     "id": 6165,
     "en": "mouthpiece",
     "kk": "[ˋmaʊθ͵pis]",
-    "zh": "n. 樂器的吹口;電話的送話口;代言人",
+    "zh": "n. 樂器的吹口；電話的送話口；代言人",
     "unit": 7,
     "example": "He shouted into the mouthpiece.",
     "exampleZh": "他衝著電話話筒大叫。"
@@ -55515,7 +55515,7 @@ const externalVocabularyDB = [
     "id": 6169,
     "en": "narrator",
     "kk": "[ˋnɛretɚ]",
-    "zh": "n. 解說員;敘述者",
+    "zh": "n. 解說員；敘述者",
     "unit": 7,
     "example": "The novel has an omniscient narrator.",
     "exampleZh": "這部小說有一個全知全能的敘述者。"
@@ -55524,7 +55524,7 @@ const externalVocabularyDB = [
     "id": 6170,
     "en": "nationalism",
     "kk": "[ˋnæʃənə͵lɪzəm]",
-    "zh": "n. 民族主義;國家主義",
+    "zh": "n. 民族主義；國家主義",
     "unit": 7,
     "example": "I think we'd better leave the subject of nationalism.",
     "exampleZh": "我想我們最好不要再談論民族主義這個話題了。"
@@ -55542,7 +55542,7 @@ const externalVocabularyDB = [
     "id": 6172,
     "en": "navel",
     "kk": "[ˋnevəl]",
-    "zh": "n. 肚臍;中央;中心",
+    "zh": "n. 肚臍；中央；中心",
     "unit": 7,
     "example": "She dismisses the reform process as an exercise in collective navel-gazing.",
     "exampleZh": "她對這場改革嗤之以鼻，認為只是場無實際行動的集體空想而已。"
@@ -55551,7 +55551,7 @@ const externalVocabularyDB = [
     "id": 6173,
     "en": "navigation",
     "kk": "[ˋnævəˋɡeʃən]",
-    "zh": "n. 航海;航空;導航",
+    "zh": "n. 航海；航空；導航",
     "unit": 7,
     "example": "Pack ice around Iceland was becoming a threat to navigation.",
     "exampleZh": "冰島周圍的浮冰一度成為船舶航行的威脅。"
@@ -55560,7 +55560,7 @@ const externalVocabularyDB = [
     "id": 6174,
     "en": "negotiation",
     "kk": "[nɪ͵ɡoʃiˋeʃən]",
-    "zh": "n. 談判,協商",
+    "zh": "n. 談判、協商",
     "unit": 7,
     "example": "Prolonged negotiation was not desirable.",
     "exampleZh": "拖得很長的談判是不受歡迎的。"
@@ -55569,7 +55569,7 @@ const externalVocabularyDB = [
     "id": 6175,
     "en": "neon",
     "kk": "[ˋniɑn]",
-    "zh": "n. 氖;霓虹燈",
+    "zh": "n. 氖；霓虹燈",
     "unit": 7,
     "example": "A neon sign flashed on and off above the door.",
     "exampleZh": "門上方霓虹燈忽明忽暗地閃爍著。"
@@ -55605,7 +55605,7 @@ const externalVocabularyDB = [
     "id": 6179,
     "en": "nomination",
     "kk": "[͵nɑməˋneʃən]",
-    "zh": "n. 提名;任命",
+    "zh": "n. 提名；任命",
     "unit": 7,
     "example": "They opposed her nomination to the post of Deputy Director.",
     "exampleZh": "他們反對任命她為副主任。"
@@ -55623,7 +55623,7 @@ const externalVocabularyDB = [
     "id": 6181,
     "en": "norm",
     "kk": "[nɔrm]",
-    "zh": "n. 基準;規範;定額",
+    "zh": "n. 基準；規範；定額",
     "unit": 7,
     "example": "Non-smoking is now the norm in most workplaces.",
     "exampleZh": "大多數工作場所現在都已禁止吸菸。"
@@ -55632,7 +55632,7 @@ const externalVocabularyDB = [
     "id": 6182,
     "en": "nourishment",
     "kk": "[ˋnɝɪʃmənt]",
-    "zh": "n. 食物,營養品;養育,滋養",
+    "zh": "n. 食物、營養品；養育、滋養",
     "unit": 7,
     "example": "Sugar gives quick relief to hunger but provides no lasting nourishment.",
     "exampleZh": "糖能快速緩解飢餓感，但不提供持久的營養。"
@@ -55641,7 +55641,7 @@ const externalVocabularyDB = [
     "id": 6183,
     "en": "nuisance",
     "kk": "[ˋnusəns]",
-    "zh": "n. 討厭的人(或事物);騷擾行為",
+    "zh": "n. 討厭的人(或事物)；騷擾行為",
     "unit": 7,
     "example": "I'm a nuisance, I know.",
     "exampleZh": "我是個討厭鬼，我知道。"
@@ -55668,7 +55668,7 @@ const externalVocabularyDB = [
     "id": 6186,
     "en": "nutrition",
     "kk": "[nuˋtrɪʃən]",
-    "zh": "n. 營養,滋養",
+    "zh": "n. 營養、滋養",
     "unit": 7,
     "example": "There are alternative sources of nutrition to animal meat.",
     "exampleZh": "有能替代動物肉類的其他營養來源。"
@@ -55686,7 +55686,7 @@ const externalVocabularyDB = [
     "id": 6188,
     "en": "offering",
     "kk": "[ˋɔfɚɪŋ]",
-    "zh": "n. 提供;供奉;捐獻物;供物;課程",
+    "zh": "n. 提供；供奉；捐獻物；供物；課程",
     "unit": 7,
     "example": "They wooed customers by offering low interest rates.",
     "exampleZh": "他們透過提供低利率來爭取顧客。"
@@ -55695,7 +55695,7 @@ const externalVocabularyDB = [
     "id": 6189,
     "en": "offspring",
     "kk": "[ˋɔf͵sprɪŋ]",
-    "zh": "n. 子女;子孫;後代",
+    "zh": "n. 子女；子孫；後代",
     "unit": 7,
     "example": "Rabbits have many offspring.",
     "exampleZh": "兔子有很多後代。"
@@ -55704,7 +55704,7 @@ const externalVocabularyDB = [
     "id": 6190,
     "en": "opposition",
     "kk": "[͵ɑpəˋzɪʃən]",
-    "zh": "n. 反對;反抗",
+    "zh": "n. 反對；反抗",
     "unit": 7,
     "example": "He's gone to work for the opposition.",
     "exampleZh": "他去為競爭對手工作了。"
@@ -55713,7 +55713,7 @@ const externalVocabularyDB = [
     "id": 6191,
     "en": "oppression",
     "kk": "[əˋprɛʃən]",
-    "zh": "n. 壓迫;壓制",
+    "zh": "n. 壓迫；壓制",
     "unit": 7,
     "example": "Where there is oppression, there is resistance.",
     "exampleZh": "哪裡有壓迫，哪裡就有反抗。"
@@ -55731,7 +55731,7 @@ const externalVocabularyDB = [
     "id": 6193,
     "en": "ordeal",
     "kk": "[ɔrˋdil]",
-    "zh": "n. 嚴峻考驗;折磨",
+    "zh": "n. 嚴峻考驗；折磨",
     "unit": 7,
     "example": "He spoke frankly about the ordeal.",
     "exampleZh": "他直率地講出了苦難的經歷。"
@@ -55749,7 +55749,7 @@ const externalVocabularyDB = [
     "id": 6195,
     "en": "organism",
     "kk": "[ˋɔrɡə͵nɪzəm]",
-    "zh": "n. 生物;有機體",
+    "zh": "n. 生物；有機體",
     "unit": 7,
     "example": "Multiplication of cells leads to rapid growth of the organism.",
     "exampleZh": "細胞的繁殖導致有機體的迅速生長。"
@@ -55758,7 +55758,7 @@ const externalVocabularyDB = [
     "id": 6196,
     "en": "originality",
     "kk": "[ɚ͵ɪdʒəˋnælɪti]",
-    "zh": "n. 創造力;獨創性;創見;創舉",
+    "zh": "n. 創造力；獨創性；創見；創舉",
     "unit": 7,
     "example": "The book is completely lacking in originality.",
     "exampleZh": "這部書完全沒有創意。"
@@ -55767,7 +55767,7 @@ const externalVocabularyDB = [
     "id": 6197,
     "en": "outbreak",
     "kk": "[ˋaʊ͵tbrek]",
-    "zh": "n. 爆發;暴動",
+    "zh": "n. 爆發；暴動",
     "unit": 7,
     "example": "The area was struck by an outbreak of cholera.",
     "exampleZh": "那一地區爆發了霍亂。"
@@ -55785,7 +55785,7 @@ const externalVocabularyDB = [
     "id": 6199,
     "en": "outing",
     "kk": "[ˋaʊtɪŋ]",
-    "zh": "n. 遠足;郊遊",
+    "zh": "n. 遠足；郊遊",
     "unit": 7,
     "example": "They are going for a spring outing.",
     "exampleZh": "他們要去春遊。"
@@ -55803,7 +55803,7 @@ const externalVocabularyDB = [
     "id": 6201,
     "en": "outlet",
     "kk": "[ˋaʊt͵lɛt]",
-    "zh": "n. 出口;出路;商店",
+    "zh": "n. 出口；出路；商店",
     "unit": 7,
     "example": "Sport became the perfect outlet for his aggression.",
     "exampleZh": "運動成為他攻擊性心理的最佳出路。"
@@ -55812,7 +55812,7 @@ const externalVocabularyDB = [
     "id": 6202,
     "en": "outlook",
     "kk": "[ˋaʊt͵lʊk]",
-    "zh": "n. 觀點;展望;風光;瞭望",
+    "zh": "n. 觀點；展望；風光；瞭望",
     "unit": 7,
     "example": "He had a practical outlook on life.",
     "exampleZh": "他的人生觀很實際。"
@@ -55830,7 +55830,7 @@ const externalVocabularyDB = [
     "id": 6204,
     "en": "outset",
     "kk": "[ˋaʊt͵sɛt]",
-    "zh": "n. 最初;開始;開端",
+    "zh": "n. 最初；開始；開端",
     "unit": 7,
     "example": "We knew it from the outset.",
     "exampleZh": "我們從一開始就知道這一點。"
@@ -55857,7 +55857,7 @@ const externalVocabularyDB = [
     "id": 6207,
     "en": "overturn",
     "kk": "[ˋovɚ͵tɝn]",
-    "zh": "v. 翻轉,傾覆；n. 周轉,流通",
+    "zh": "v. 翻轉、傾覆；n. 周轉、流通",
     "unit": 7,
     "example": "The dishes are overturned.",
     "exampleZh": "盤子都打翻了。"
@@ -55866,7 +55866,7 @@ const externalVocabularyDB = [
     "id": 6208,
     "en": "pact",
     "kk": "[pækt]",
-    "zh": "n. 契約;協定",
+    "zh": "n. 契約；協定",
     "unit": 7,
     "example": "Last month he signed a new non-aggression pact with Germany.",
     "exampleZh": "上個月他與德國簽署了一份新的互不侵犯條約。"
@@ -55884,7 +55884,7 @@ const externalVocabularyDB = [
     "id": 6210,
     "en": "parliament",
     "kk": "[ˋpɑrləmənt]",
-    "zh": "n. 議會,國會",
+    "zh": "n. 議會、國會",
     "unit": 7,
     "example": "They bulldozed the tax through Parliament.",
     "exampleZh": "他們使稅收提案在議會強行透過。"
@@ -55920,7 +55920,7 @@ const externalVocabularyDB = [
     "id": 6214,
     "en": "perception",
     "kk": "[pɚˋsɛpʃən]",
-    "zh": "n. 感知;察覺;認知",
+    "zh": "n. 感知；察覺；認知",
     "unit": 7,
     "example": "She showed great perception in her assessment of the family situation.",
     "exampleZh": "她對家庭狀況的分析顯示出敏銳的洞察力。"
@@ -55929,7 +55929,7 @@ const externalVocabularyDB = [
     "id": 6215,
     "en": "perseverance",
     "kk": "[͵pɝsəˋvɪrəns]",
-    "zh": "n. 堅持不懈;堅忍不拔",
+    "zh": "n. 堅持不懈；堅忍不拔",
     "unit": 7,
     "example": "Undeniably, perseverance can help us succeed.",
     "exampleZh": "不可否認，堅持不懈可以幫助我們成功。"
@@ -55938,7 +55938,7 @@ const externalVocabularyDB = [
     "id": 6216,
     "en": "persistence",
     "kk": "[pɚˋsɪstəns]",
-    "zh": "n. 堅持;固執;持續",
+    "zh": "n. 堅持；固執；持續",
     "unit": 7,
     "example": "Skill comes only with practice, patience, and persistence.",
     "exampleZh": "只有透過練習、耐心和堅持不懈才能獲得技能。"
@@ -55974,7 +55974,7 @@ const externalVocabularyDB = [
     "id": 6220,
     "en": "pharmacist",
     "kk": "[ˋfɑrməsɪst]",
-    "zh": "n. 配藥者;藥劑師",
+    "zh": "n. 配藥者；藥劑師",
     "unit": 7,
     "example": "The pharmacist will make up your prescription.",
     "exampleZh": "藥劑師會給你依處方配藥。"
@@ -55983,7 +55983,7 @@ const externalVocabularyDB = [
     "id": 6221,
     "en": "pharmacy",
     "kk": "[ˋfɑrməsi]",
-    "zh": "n. 製藥業;藥房",
+    "zh": "n. 製藥業；藥房",
     "unit": 7,
     "example": "He spent four years studying pharmacy.",
     "exampleZh": "他花了4年時間學習藥劑學。"
@@ -56001,7 +56001,7 @@ const externalVocabularyDB = [
     "id": 6223,
     "en": "piety",
     "kk": "[ˋpaɪəti]",
-    "zh": "n. 虔誠;孝順",
+    "zh": "n. 虔誠；孝順",
     "unit": 7,
     "example": "Is this what passes for piety?",
     "exampleZh": "這就是所謂的虔誠嗎？"
@@ -56010,7 +56010,7 @@ const externalVocabularyDB = [
     "id": 6224,
     "en": "pipeline",
     "kk": "[ˋpaɪp͵laɪn]",
-    "zh": "n. 導管;輸油管",
+    "zh": "n. 導管；輸油管",
     "unit": 7,
     "example": "They made a pipeline blow up test.",
     "exampleZh": "他們做了一個管線爆破試驗。"
@@ -56019,7 +56019,7 @@ const externalVocabularyDB = [
     "id": 6225,
     "en": "pitcher",
     "kk": "[ˋpɪtʃɚ]",
-    "zh": "n. 大水罐;一壺的量;投手",
+    "zh": "n. 大水罐；一壺的量；投手",
     "unit": 7,
     "example": "The Marlin pitcher struck out the first batter he faced.",
     "exampleZh": "那位馬林投手使他面對的第一個擊球員三擊不中而出局。"
@@ -56028,7 +56028,7 @@ const externalVocabularyDB = [
     "id": 6226,
     "en": "plight",
     "kk": "[plaɪt]",
-    "zh": "n. 境況;困境",
+    "zh": "n. 境況；困境",
     "unit": 7,
     "example": "We were deeply moved by her plight.",
     "exampleZh": "她的困境深深地打動了我們。"
@@ -56046,7 +56046,7 @@ const externalVocabularyDB = [
     "id": 6228,
     "en": "poacher",
     "kk": "[ˋpotʃɚ]",
-    "zh": "n. 煮蛋用的鍋;蒸鍋;偷獵者",
+    "zh": "n. 煮蛋用的鍋；蒸鍋；偷獵者",
     "unit": 7,
     "example": "Tips may be phoned anonymously to1-800-POACHER.",
     "exampleZh": "舉報可以匿名打電話1-800-POACHER。"
@@ -56073,7 +56073,7 @@ const externalVocabularyDB = [
     "id": 6231,
     "en": "precedent",
     "kk": "[ˋprɛsɪdənt]",
-    "zh": "n. 先例;慣例",
+    "zh": "n. 先例；慣例",
     "unit": 7,
     "example": "They were determined to break from precedent.",
     "exampleZh": "他們決心打破先例。"
@@ -56082,7 +56082,7 @@ const externalVocabularyDB = [
     "id": 6232,
     "en": "precision",
     "kk": "[priˋsɪʒən]",
-    "zh": "n. 精確(性);準確(性);清晰(性)",
+    "zh": "n. 精確(性)；準確(性)；清晰(性)",
     "unit": 7,
     "example": "He lacked profundity and analytical precision.",
     "exampleZh": "他缺乏深度和分析的精確性。"
@@ -56091,7 +56091,7 @@ const externalVocabularyDB = [
     "id": 6233,
     "en": "predecessor",
     "kk": "[ˋprɛdə͵sɛsɚ]",
-    "zh": "n. 前任;祖先",
+    "zh": "n. 前任；祖先",
     "unit": 7,
     "example": "The new governor is an improvement on his predecessor.",
     "exampleZh": "新任總督勝過他的前任。"
@@ -56100,7 +56100,7 @@ const externalVocabularyDB = [
     "id": 6234,
     "en": "prediction",
     "kk": "[priˋdɪkʃən]",
-    "zh": "n. 預言;預報",
+    "zh": "n. 預言；預報",
     "unit": 7,
     "example": "His prediction was right on the money.",
     "exampleZh": "他的預測準確無誤。"
@@ -56145,7 +56145,7 @@ const externalVocabularyDB = [
     "id": 6239,
     "en": "prescription",
     "kk": "[prəˋskrɪpʃən]",
-    "zh": "n. 指示;法規;處方",
+    "zh": "n. 指示；法規；處方",
     "unit": 7,
     "example": "Nicola got her prescription for strep.",
     "exampleZh": "妮古拉拿了治療鏈球菌性咽喉炎的處方藥。"
@@ -56163,7 +56163,7 @@ const externalVocabularyDB = [
     "id": 6241,
     "en": "prestige",
     "kk": "[prɛˋstiʒ]",
-    "zh": "n. 名望;聲望",
+    "zh": "n. 名望；聲望",
     "unit": 7,
     "example": "He is a scientist of high prestige.",
     "exampleZh": "他是一位聲望很高的科學家。"
@@ -56181,7 +56181,7 @@ const externalVocabularyDB = [
     "id": 6243,
     "en": "productivity",
     "kk": "[͵prodəkˋtɪvəti]",
-    "zh": "n. 生產力;生產率",
+    "zh": "n. 生產力；生產率",
     "unit": 7,
     "example": "We need to increase productivity.",
     "exampleZh": "我們需要提高生產力。"
@@ -56190,7 +56190,7 @@ const externalVocabularyDB = [
     "id": 6244,
     "en": "proficiency",
     "kk": "[prəˋfɪʃənsi]",
-    "zh": "n. 精通;熟練",
+    "zh": "n. 精通；熟練",
     "unit": 7,
     "example": "He has a high proficiency in several languages.",
     "exampleZh": "他精通多種語言。"
@@ -56208,7 +56208,7 @@ const externalVocabularyDB = [
     "id": 6246,
     "en": "prohibition",
     "kk": "[͵proəˋbɪʃən]",
-    "zh": "n. 禁止;禁令",
+    "zh": "n. 禁止；禁令",
     "unit": 7,
     "example": "The park has a prohibition against flower-picking.",
     "exampleZh": "公園裡禁止摘花。"
@@ -56217,10 +56217,10 @@ const externalVocabularyDB = [
     "id": 6247,
     "en": "projection",
     "kk": "[prəˋdʒɛkʃən]",
-    "zh": "n. 規劃;投影;投射;預測",
+    "zh": "n. 規劃；投影；投射；預測",
     "unit": 7,
-    "example": "Can you use the word projection in a sentence?",
-    "exampleZh": "你能在句子中使用「預測」這個詞嗎？"
+    "example": "The quarterly projection estimates substantial increases in global export sales.",
+    "exampleZh": "季度預測估計全球出口銷售額將有大幅增長。"
   },
   {
     "id": 6248,
@@ -56235,7 +56235,7 @@ const externalVocabularyDB = [
     "id": 6249,
     "en": "propeller",
     "kk": "[prəˋpɛlɚ]",
-    "zh": "n. 螺旋槳;推進器",
+    "zh": "n. 螺旋槳；推進器",
     "unit": 7,
     "example": "The rope fouled the propeller.",
     "exampleZh": "繩索纏住了螺旋槳。"
@@ -56244,7 +56244,7 @@ const externalVocabularyDB = [
     "id": 6250,
     "en": "prose",
     "kk": "[proz]",
-    "zh": "n. 散文;平凡",
+    "zh": "n. 散文；平凡",
     "unit": 7,
     "example": "Shute's prose is stark and chillingly unsentimental.",
     "exampleZh": "舒特的散文刻板而冷峻。"
@@ -56253,7 +56253,7 @@ const externalVocabularyDB = [
     "id": 6251,
     "en": "prosecution",
     "kk": "[͵prɑsəˋkjuʃən]",
-    "zh": "n. 起訴;告發",
+    "zh": "n. 起訴；告發",
     "unit": 7,
     "example": "No one should be immune from prosecution.",
     "exampleZh": "任何人都不應免於被起訴。"
@@ -56280,7 +56280,7 @@ const externalVocabularyDB = [
     "id": 6254,
     "en": "purity",
     "kk": "[ˋpjʊrəti]",
-    "zh": "n. 純淨;清潔;純潔",
+    "zh": "n. 純淨；清潔；純潔",
     "unit": 7,
     "example": "The water is regularly tested for purity.",
     "exampleZh": "水的純度定期受到檢測。"
@@ -56289,7 +56289,7 @@ const externalVocabularyDB = [
     "id": 6255,
     "en": "qualification",
     "kk": "[͵kwɑləfəˋkeʃən]",
-    "zh": "n. 資格,能力",
+    "zh": "n. 資格、能力",
     "unit": 7,
     "example": "The plan was approved without qualification.",
     "exampleZh": "這項計劃獲得無條件批准。"
@@ -56307,7 +56307,7 @@ const externalVocabularyDB = [
     "id": 6257,
     "en": "questionnaire",
     "kk": "[͵kwɛstʃəˋnɛr]",
-    "zh": "n. 問卷;意見調查表",
+    "zh": "n. 問卷；意見調查表",
     "unit": 7,
     "example": "2 000 shoppers completed our questionnaire.",
     "exampleZh": "2 000名顧客填寫了我們的調查表。"
@@ -56316,7 +56316,7 @@ const externalVocabularyDB = [
     "id": 6258,
     "en": "racism",
     "kk": "[ˋre͵sɪzəm]",
-    "zh": "n. 種族主義;種族歧視",
+    "zh": "n. 種族主義；種族歧視",
     "unit": 7,
     "example": "Racism has been a scar on the game.",
     "exampleZh": "種族主義行為給這項運動抹了黑。"
@@ -56406,7 +56406,7 @@ const externalVocabularyDB = [
     "id": 6268,
     "en": "realism",
     "kk": "[ˋriəlɪzəm]",
-    "zh": "n. 現實性;現實主義",
+    "zh": "n. 現實性；現實主義",
     "unit": 7,
     "example": "Both realism and naturalism are mimetic systems or practices of representation.",
     "exampleZh": "現實主義和自然主義都是模仿的做法或者表現的習慣而已。"
@@ -56415,7 +56415,7 @@ const externalVocabularyDB = [
     "id": 6269,
     "en": "realization",
     "kk": "[ˋriləˋzeʃən]",
-    "zh": "n. 領悟;體現",
+    "zh": "n. 領悟；體現",
     "unit": 7,
     "example": "It was the realization of his greatest ambition.",
     "exampleZh": "這就實現了他的宏偉抱負。"
@@ -56424,7 +56424,7 @@ const externalVocabularyDB = [
     "id": 6270,
     "en": "rebellion",
     "kk": "[rɪˋbɛljən]",
-    "zh": "n. 反叛;反抗",
+    "zh": "n. 反叛；反抗",
     "unit": 7,
     "example": "They hadn't reckoned on a rebellion.",
     "exampleZh": "他們沒有料到會發生叛亂。"
@@ -56451,7 +56451,7 @@ const externalVocabularyDB = [
     "id": 6273,
     "en": "recommendation",
     "kk": "[͵rɛkəmənˋdeʃən]",
-    "zh": "n. 推薦;推薦信",
+    "zh": "n. 推薦；推薦信",
     "unit": 7,
     "example": "I got the job on the strength of your recommendation.",
     "exampleZh": "由於您的推薦，我得到了那份工作。"
@@ -56469,7 +56469,7 @@ const externalVocabularyDB = [
     "id": 6275,
     "en": "refinement",
     "kk": "[rəˋfaɪnmənt]",
-    "zh": "n. 優雅,高雅;提煉,精煉",
+    "zh": "n. 優雅、高雅；提煉、精煉",
     "unit": 7,
     "example": "Her mother is a woman with great refinement.",
     "exampleZh": "她母親是一個非常文雅的女人。"
@@ -56478,7 +56478,7 @@ const externalVocabularyDB = [
     "id": 6276,
     "en": "refreshment",
     "kk": "[rəˋfrɛʃmənt]",
-    "zh": "n. 茶點;精力恢復",
+    "zh": "n. 茶點；精力恢復",
     "unit": 7,
     "example": "May I offer you some refreshment?",
     "exampleZh": "可以請您吃點喝點什麼嗎？"
@@ -56496,7 +56496,7 @@ const externalVocabularyDB = [
     "id": 6278,
     "en": "regime",
     "kk": "[rəˋʒim]",
-    "zh": "n. 政體;政權",
+    "zh": "n. 政體；政權",
     "unit": 7,
     "example": "No regime is eternal.",
     "exampleZh": "沒有哪個政權是永遠的。"
@@ -56505,7 +56505,7 @@ const externalVocabularyDB = [
     "id": 6279,
     "en": "rehearsal",
     "kk": "[rɪˋhɝsəl]",
-    "zh": "n. 排練,試演;練習",
+    "zh": "n. 排練、試演；練習",
     "unit": 7,
     "example": "We only had six days of rehearsal.",
     "exampleZh": "我們只有六天的排練時間。"
@@ -56532,7 +56532,7 @@ const externalVocabularyDB = [
     "id": 6282,
     "en": "reliance",
     "kk": "[rɪˋlaɪəns]",
-    "zh": "n. 信任;依賴",
+    "zh": "n. 信任；依賴",
     "unit": 7,
     "example": "People learned self-reliance because they had to.",
     "exampleZh": "人們學會了自立因為他們不得不這樣做。"
@@ -56550,7 +56550,7 @@ const externalVocabularyDB = [
     "id": 6284,
     "en": "remainder",
     "kk": "[rɪˋmendɚ]",
-    "zh": "n. 剩餘物;其餘的人;餘數",
+    "zh": "n. 剩餘物；其餘的人；餘數",
     "unit": 7,
     "example": "He gulped down the remainder of his coffee.",
     "exampleZh": "他一口喝完了剩下的咖啡。"
@@ -56559,7 +56559,7 @@ const externalVocabularyDB = [
     "id": 6285,
     "en": "removal",
     "kk": "[rɪˋmuvəl]",
-    "zh": "n. 除去;免職",
+    "zh": "n. 除去；免職",
     "unit": 7,
     "example": "They rejected a demand for the removal of all nuclear weapons.",
     "exampleZh": "他們拒絕了清除所有核武器的要求。"
@@ -56577,7 +56577,7 @@ const externalVocabularyDB = [
     "id": 6287,
     "en": "rental",
     "kk": "[ˋrɛntəl]",
-    "zh": "n. 租金;租賃;出租",
+    "zh": "n. 租金；租賃；出租",
     "unit": 7,
     "example": "Your bill includes line rental.",
     "exampleZh": "你的賬單包括電話線路的租用費。"
@@ -56595,7 +56595,7 @@ const externalVocabularyDB = [
     "id": 6289,
     "en": "reservoir",
     "kk": "[ˋrɛzəv͵wɑr]",
-    "zh": "n. 蓄水庫;貯水池",
+    "zh": "n. 蓄水庫；貯水池",
     "unit": 7,
     "example": "Torrents of water gushed into the reservoir.",
     "exampleZh": "急流湧進了水庫。"
@@ -56604,7 +56604,7 @@ const externalVocabularyDB = [
     "id": 6290,
     "en": "restoration",
     "kk": "[͵rɛstɚˋeʃən]",
-    "zh": "n. 恢復;復辟;修復;重建;歸還",
+    "zh": "n. 恢復；復辟；修復；重建；歸還",
     "unit": 7,
     "example": "I specialized in the restoration of old houses.",
     "exampleZh": "我擅長舊房的修復。"
@@ -56613,7 +56613,7 @@ const externalVocabularyDB = [
     "id": 6291,
     "en": "restraint",
     "kk": "[rɪˋstrent]",
-    "zh": "n. 克制;控制;管押",
+    "zh": "n. 克制；控制；管押",
     "unit": 7,
     "example": "They behaved with more restraint than I'd expected.",
     "exampleZh": "他們表現了比我預想還多的剋制。"
@@ -56631,7 +56631,7 @@ const externalVocabularyDB = [
     "id": 6293,
     "en": "revelation",
     "kk": "[͵rɛvəˋleʃən]",
-    "zh": "n. 揭示;顯示;天啟",
+    "zh": "n. 揭示；顯示；天啟",
     "unit": 7,
     "example": "The revelation of his past leads to his resignation.",
     "exampleZh": "他的過去被揭露了，這導致了他的辭職。"
@@ -56640,7 +56640,7 @@ const externalVocabularyDB = [
     "id": 6294,
     "en": "revenue",
     "kk": "[ˋrɛvə͵nu]",
-    "zh": "n. (國家的)歲入;稅收",
+    "zh": "n. (國家的)歲入；稅收",
     "unit": 7,
     "example": "If they overestimate, they lose revenue.",
     "exampleZh": "如果他們過高地估算，就會損失收入。"
@@ -56649,7 +56649,7 @@ const externalVocabularyDB = [
     "id": 6295,
     "en": "revival",
     "kk": "[rɪˋvaɪvəl]",
-    "zh": "n. 甦醒;再生;復興",
+    "zh": "n. 甦醒；再生；復興",
     "unit": 7,
     "example": "There are encouraging signs of an artistic revival.",
     "exampleZh": "有了鼓舞人心的藝術復興的跡象。"
@@ -56658,7 +56658,7 @@ const externalVocabularyDB = [
     "id": 6296,
     "en": "rhetoric",
     "kk": "[ˋrɛtɚɪk]",
-    "zh": "n. 修辭;修辭學;辭令",
+    "zh": "n. 修辭；修辭學；辭令",
     "unit": 7,
     "example": "This argument is pure rhetoric.",
     "exampleZh": "這種說法純粹是言辭。"
@@ -56685,7 +56685,7 @@ const externalVocabularyDB = [
     "id": 6299,
     "en": "rite",
     "kk": "[raɪt]",
-    "zh": "n. 儀式;慣例",
+    "zh": "n. 儀式；慣例",
     "unit": 7,
     "example": "It's a rite of passage.",
     "exampleZh": "不管這是慶祝誕生，觀察流逝，還是哀悼死亡，這些行為都極為親密而私人。"
@@ -56712,7 +56712,7 @@ const externalVocabularyDB = [
     "id": 6302,
     "en": "rotation",
     "kk": "[roˋteʃən]",
-    "zh": "n. 旋轉;自轉;輪流",
+    "zh": "n. 旋轉；自轉；輪流",
     "unit": 7,
     "example": "Wheat, maize and sugar beet are planted in rotation.",
     "exampleZh": "小麥、玉米和甜菜是輪流種植的。"
@@ -56721,7 +56721,7 @@ const externalVocabularyDB = [
     "id": 6303,
     "en": "royalty",
     "kk": "[ˋrɔɪəlti]",
-    "zh": "n. (總稱)皇族或王族;王位;專利權稅",
+    "zh": "n. (總稱)皇族或王族；王位；專利權稅",
     "unit": 7,
     "example": "None of us are royalty.",
     "exampleZh": "我們都不是皇室成員。"
@@ -56748,7 +56748,7 @@ const externalVocabularyDB = [
     "id": 6306,
     "en": "saloon",
     "kk": "[səˋlun]",
-    "zh": "n. (旅館;輪船等的)大廳;酒館",
+    "zh": "n. (旅館；輪船等的)大廳；酒館",
     "unit": 7,
     "example": "How did it look in the furthest saloon?",
     "exampleZh": "在最遠的那個酒吧間裡，情況怎麼樣？"
@@ -56757,7 +56757,7 @@ const externalVocabularyDB = [
     "id": 6307,
     "en": "salvation",
     "kk": "[sælˋveʃən]",
-    "zh": "n. 拯救;救星;救世",
+    "zh": "n. 拯救；救星；救世",
     "unit": 7,
     "example": "The Salvation Army shops depend on regular supplies of saleable items.",
     "exampleZh": "救世軍商店靠的是獲得容易賣物品的經常性的供應。"
@@ -56775,7 +56775,7 @@ const externalVocabularyDB = [
     "id": 6309,
     "en": "sanctuary",
     "kk": "[ˋsæŋktʃu͵ɛri]",
-    "zh": "n. 聖所;聖殿;庇護所",
+    "zh": "n. 聖所；聖殿；庇護所",
     "unit": 7,
     "example": "The church became a sanctuary for the refugees.",
     "exampleZh": "教堂成為這些難民的庇護所。"
@@ -56784,7 +56784,7 @@ const externalVocabularyDB = [
     "id": 6310,
     "en": "sanitation",
     "kk": "[͵sænəˋteʃən]",
-    "zh": "n. 公共衛生;衛生設備",
+    "zh": "n. 公共衛生；衛生設備",
     "unit": 7,
     "example": "We have programs for clean water and sanitation.",
     "exampleZh": "我們有清潔飲用水和衛生裝置的專案。"
@@ -56793,7 +56793,7 @@ const externalVocabularyDB = [
     "id": 6311,
     "en": "scope",
     "kk": "[skop]",
-    "zh": "n. 範圍;領域",
+    "zh": "n. 範圍；領域",
     "unit": 7,
     "example": "There's still plenty of scope for improvement.",
     "exampleZh": "還有很大的改進餘地。"
@@ -56811,7 +56811,7 @@ const externalVocabularyDB = [
     "id": 6313,
     "en": "sector",
     "kk": "[ˋsɛktɚ]",
-    "zh": "n. 扇形;扇形面部分;部門",
+    "zh": "n. 扇形；扇形面部分；部門",
     "unit": 7,
     "example": "The retail sector has been a significant underperformer.",
     "exampleZh": "零售部是明顯表現不佳的部門。"
@@ -56847,7 +56847,7 @@ const externalVocabularyDB = [
     "id": 6317,
     "en": "serenity",
     "kk": "[sɚˋɛnəti]",
-    "zh": "n. 晴朗;平靜;沈著",
+    "zh": "n. 晴朗；平靜；沈著",
     "unit": 7,
     "example": "Islam gave me serenity.",
     "exampleZh": "伊斯蘭教給了我平靜。"
@@ -56856,7 +56856,7 @@ const externalVocabularyDB = [
     "id": 6318,
     "en": "serving",
     "kk": "[ˋsɝvɪŋ]",
-    "zh": "n. 服務;侍候;(食物、飲料等)一份",
+    "zh": "n. 服務；侍候；(食物、飲料等)一份",
     "unit": 7,
     "example": "She was serving behind the counter.",
     "exampleZh": "她在櫃檯服務。"
@@ -56865,7 +56865,7 @@ const externalVocabularyDB = [
     "id": 6319,
     "en": "session",
     "kk": "[ˋsɛʃən]",
-    "zh": "n. 開庭;會期;講習會",
+    "zh": "n. 開庭；會期；講習會",
     "unit": 7,
     "example": "The court is now in session.",
     "exampleZh": "法庭現在正在開庭。"
@@ -56874,7 +56874,7 @@ const externalVocabularyDB = [
     "id": 6320,
     "en": "setback",
     "kk": "[ˋsɛt͵bæk]",
-    "zh": "n. 挫折;倒退",
+    "zh": "n. 挫折；倒退",
     "unit": 7,
     "example": "That would be a severe setback.",
     "exampleZh": "那將會是一個嚴重的挫折。"
@@ -56883,7 +56883,7 @@ const externalVocabularyDB = [
     "id": 6321,
     "en": "sewer",
     "kk": "[ˋsuɚ]",
-    "zh": "n. 污水管;下水道",
+    "zh": "n. 污水管；下水道",
     "unit": 7,
     "example": "Where do sewers go?",
     "exampleZh": "下水道通往哪裡？"
@@ -56910,7 +56910,7 @@ const externalVocabularyDB = [
     "id": 6324,
     "en": "siege",
     "kk": "[sidʒ]",
-    "zh": "n. 圍攻;包圍;圍城",
+    "zh": "n. 圍攻；包圍；圍城",
     "unit": 7,
     "example": "The siege has ended peacefully.",
     "exampleZh": "圍城已經和平地結束了。"
@@ -56919,7 +56919,7 @@ const externalVocabularyDB = [
     "id": 6325,
     "en": "signature",
     "kk": "[ˋsɪɡnətʃɚ]",
-    "zh": "n. 簽名,簽署",
+    "zh": "n. 簽名、簽署",
     "unit": 7,
     "example": "The document bore her signature.",
     "exampleZh": "檔案上有她的簽字。"
@@ -56937,7 +56937,7 @@ const externalVocabularyDB = [
     "id": 6327,
     "en": "simplicity",
     "kk": "[sɪmˋplɪsəti]",
-    "zh": "n. 簡單;單純",
+    "zh": "n. 簡單；單純",
     "unit": 7,
     "example": "The plan has the virtue of simplicity.",
     "exampleZh": "這項計劃的優點是簡單。"
@@ -56973,7 +56973,7 @@ const externalVocabularyDB = [
     "id": 6331,
     "en": "slavery",
     "kk": "[ˋslevɚi]",
-    "zh": "n. 奴隸身分;奴役",
+    "zh": "n. 奴隸身分；奴役",
     "unit": 7,
     "example": "They thought slavery was morally wrong.",
     "exampleZh": "他們當時認為奴隸制是不道義的。"
@@ -57090,7 +57090,7 @@ const externalVocabularyDB = [
     "id": 6344,
     "en": "solitude",
     "kk": "[ˋsɑlə͵tud]",
-    "zh": "n. 孤獨;隱居",
+    "zh": "n. 孤獨；隱居",
     "unit": 7,
     "example": "The boy's solitude is like the mower.",
     "exampleZh": "這個男孩的孤獨就像割草者一樣。"
@@ -57099,7 +57099,7 @@ const externalVocabularyDB = [
     "id": 6345,
     "en": "sovereignty",
     "kk": "[ˋsɑvrənti]",
-    "zh": "n. 統治權;主權;主權國家",
+    "zh": "n. 統治權；主權；主權國家",
     "unit": 7,
     "example": "Chinese people cherish their independence and sovereignty.",
     "exampleZh": "中國人民珍視他們的獨立和主權。"
@@ -57117,7 +57117,7 @@ const externalVocabularyDB = [
     "id": 6347,
     "en": "specialty",
     "kk": "[ˋspɛʃəlti]",
-    "zh": "n. 專業;專長",
+    "zh": "n. 專業；專長",
     "unit": 7,
     "example": "Her specialty is taxation law.",
     "exampleZh": "她的專長是稅法。"
@@ -57135,7 +57135,7 @@ const externalVocabularyDB = [
     "id": 6349,
     "en": "spectrum",
     "kk": "[ˋspɛktrəm]",
-    "zh": "n. 光譜;頻譜",
+    "zh": "n. 光譜；頻譜",
     "unit": 7,
     "example": "Red and violet are at opposite ends of the spectrum.",
     "exampleZh": "紅色和紫色位於光譜的兩端。"
@@ -57144,7 +57144,7 @@ const externalVocabularyDB = [
     "id": 6350,
     "en": "sphere",
     "kk": "[sfɪr]",
-    "zh": "n. 球;球體;球形",
+    "zh": "n. 球；球體；球形",
     "unit": 7,
     "example": "Because the earth spins, it is not a perfect sphere.",
     "exampleZh": "因為地球旋轉，所以它不是個完完全全的球體。"
@@ -57180,7 +57180,7 @@ const externalVocabularyDB = [
     "id": 6354,
     "en": "spokesman",
     "kk": "[ˋspoksmən]",
-    "zh": "n. 發言人,代言人",
+    "zh": "n. 發言人、代言人",
     "unit": 7,
     "example": "A Defense Department spokesman briefed reporters.",
     "exampleZh": "一位國防部發言人向記者們介紹了情況。"
@@ -57234,7 +57234,7 @@ const externalVocabularyDB = [
     "id": 6360,
     "en": "squad",
     "kk": "[skwɑd]",
-    "zh": "n. 班;小隊;小組",
+    "zh": "n. 班；小隊；小組",
     "unit": 7,
     "example": "He was disappointed with his exclusion from the England squad.",
     "exampleZh": "他對自己沒有入選英格蘭隊感到失望。"
@@ -57252,7 +57252,7 @@ const externalVocabularyDB = [
     "id": 6362,
     "en": "stability",
     "kk": "[stəˋbɪlɪti]",
-    "zh": "n. 穩定;穩定性;安定",
+    "zh": "n. 穩定；穩定性；安定",
     "unit": 7,
     "example": "Political stability, meanwhile, will be a prime concern.",
     "exampleZh": "與此同時，政治穩定將是頭等大事。"
@@ -57306,7 +57306,7 @@ const externalVocabularyDB = [
     "id": 6368,
     "en": "starvation",
     "kk": "[stɑrˋveʃən]",
-    "zh": "n. 飢餓;挨餓",
+    "zh": "n. 飢餓；挨餓",
     "unit": 7,
     "example": "Starvation brings biochemical changes in the body.",
     "exampleZh": "飢餓引起體內的生化變化。"
@@ -57324,7 +57324,7 @@ const externalVocabularyDB = [
     "id": 6370,
     "en": "stature",
     "kk": "[ˋstætʃɚ]",
-    "zh": "n. 身高;高度",
+    "zh": "n. 身高；高度",
     "unit": 7,
     "example": "Mother was of very small stature, barely five feet tall.",
     "exampleZh": "母親身材嬌小，僅有5英尺高。"
@@ -57333,7 +57333,7 @@ const externalVocabularyDB = [
     "id": 6371,
     "en": "steamer",
     "kk": "[ˋstimɚ]",
-    "zh": "n. 汽船;蒸鍋;蒸籠",
+    "zh": "n. 汽船；蒸鍋；蒸籠",
     "unit": 7,
     "example": "When does your steamer sail?",
     "exampleZh": "你們的輪船什麼時候啟航？"
@@ -57342,7 +57342,7 @@ const externalVocabularyDB = [
     "id": 6372,
     "en": "stimulation",
     "kk": "[͵stɪmjəˋleʃən]",
-    "zh": "n. 刺激;興奮;激勵",
+    "zh": "n. 刺激；興奮；激勵",
     "unit": 7,
     "example": "The playgroup provides plenty of stimulation for the children.",
     "exampleZh": "這個遊戲小組為孩子們提供了大量的刺激。"
@@ -57351,7 +57351,7 @@ const externalVocabularyDB = [
     "id": 6373,
     "en": "stimulus",
     "kk": "[ˋstɪmjələs]",
-    "zh": "n. 刺激;刺激品;興奮劑",
+    "zh": "n. 刺激；刺激品；興奮劑",
     "unit": 7,
     "example": "For many firms, they are a stimulus to revenue.",
     "exampleZh": "對許多公司來說，它們是刺激收入的因素。"
@@ -57387,7 +57387,7 @@ const externalVocabularyDB = [
     "id": 6377,
     "en": "subscription",
     "kk": "[səbˋskrɪpʃən]",
-    "zh": "n. 訂閱費;會費;捐款;署名",
+    "zh": "n. 訂閱費；會費；捐款；署名",
     "unit": 7,
     "example": "Very few subscription libraries exist today.",
     "exampleZh": "目前存在的訂閱庫非常少。"
@@ -57396,7 +57396,7 @@ const externalVocabularyDB = [
     "id": 6378,
     "en": "substitution",
     "kk": "[͵sʌbstɪˋtuʃən]",
-    "zh": "n. 代替;代替物",
+    "zh": "n. 代替；代替物",
     "unit": 7,
     "example": "Substitution: Player No. 4 for No. 3.",
     "exampleZh": "換人: 3號下, 4號上。"
@@ -57405,7 +57405,7 @@ const externalVocabularyDB = [
     "id": 6379,
     "en": "succession",
     "kk": "[səkˋsɛʃən]",
-    "zh": "n. 連續;一連串;繼承權",
+    "zh": "n. 連續；一連串；繼承權",
     "unit": 7,
     "example": "They had three children in quick succession.",
     "exampleZh": "短短几年間，他們接連生了三個孩子。"
@@ -57414,7 +57414,7 @@ const externalVocabularyDB = [
     "id": 6380,
     "en": "successor",
     "kk": "[səkˋsɛsɚ]",
-    "zh": "n. 繼任者;繼承人",
+    "zh": "n. 繼任者；繼承人",
     "unit": 7,
     "example": "Mr. Olsen has always avoided anointing any successor.",
     "exampleZh": "奧爾森先生總是避免指定任何繼任者。"
@@ -57423,7 +57423,7 @@ const externalVocabularyDB = [
     "id": 6381,
     "en": "suite",
     "kk": "[swit]",
-    "zh": "n. 套房;系列",
+    "zh": "n. 套房；系列",
     "unit": 7,
     "example": "We were entertained in the company's hospitality suite.",
     "exampleZh": "公司款待我們住進他們的迎賓套間。"
@@ -57432,7 +57432,7 @@ const externalVocabularyDB = [
     "id": 6382,
     "en": "superiority",
     "kk": "[͵supɪriˋɔrɪti]",
-    "zh": "n. 優越;優勢;上級",
+    "zh": "n. 優越；優勢；上級",
     "unit": 7,
     "example": "We have air superiority.",
     "exampleZh": "我們有空中優勢。"
@@ -57441,7 +57441,7 @@ const externalVocabularyDB = [
     "id": 6383,
     "en": "supervision",
     "kk": "[͵supɚˋvɪʒən]",
-    "zh": "n. 管理;監督",
+    "zh": "n. 管理；監督",
     "unit": 7,
     "example": "They require less supervision and training.",
     "exampleZh": "它們需要更少的監督和訓練。"
@@ -57468,7 +57468,7 @@ const externalVocabularyDB = [
     "id": 6386,
     "en": "suspense",
     "kk": "[səˋspɛns]",
-    "zh": "n. 掛慮;懸疑;暫時停止",
+    "zh": "n. 掛慮；懸疑；暫時停止",
     "unit": 7,
     "example": "The time of suspense is dreadful.",
     "exampleZh": "懸念叢生的那段時光是十分難熬的。"
@@ -57477,7 +57477,7 @@ const externalVocabularyDB = [
     "id": 6387,
     "en": "suspension",
     "kk": "[səˋspɛnʃən]",
-    "zh": "n. 暫停;中止;停職",
+    "zh": "n. 暫停；中止；停職",
     "unit": 7,
     "example": "The car's improved suspension gives you a smoother ride.",
     "exampleZh": "汽車懸架經過改進，乘坐起來更平穩。"
@@ -57504,7 +57504,7 @@ const externalVocabularyDB = [
     "id": 6390,
     "en": "symptom",
     "kk": "[ˋsɪmptəm]",
-    "zh": "n. 症狀,徵候",
+    "zh": "n. 症狀、徵候",
     "unit": 7,
     "example": "One prominent symptom of the disease is progressive loss of memory.",
     "exampleZh": "這種病的一個突出症狀是記憶的逐步喪失。"
@@ -57513,7 +57513,7 @@ const externalVocabularyDB = [
     "id": 6391,
     "en": "synonym",
     "kk": "[ˋsɪnə͵nɪm]",
-    "zh": "n. 同義字;同物異名",
+    "zh": "n. 同義字；同物異名",
     "unit": 7,
     "example": "Give the synonym and antonym of this word.",
     "exampleZh": "給出這個詞的同義詞和反義詞。"
@@ -57531,7 +57531,7 @@ const externalVocabularyDB = [
     "id": 6393,
     "en": "tact",
     "kk": "[tækt]",
-    "zh": "n. 老練;機智;得體",
+    "zh": "n. 老練；機智；得體",
     "unit": 7,
     "example": "Tact was never Mr. Moore's strength.",
     "exampleZh": "老練從來不是穆爾先生的長處。"
@@ -57540,7 +57540,7 @@ const externalVocabularyDB = [
     "id": 6394,
     "en": "tactic",
     "kk": "[ˋtæktɪk]",
-    "zh": "n. 戰術;策略;手法",
+    "zh": "n. 戰術；策略；手法",
     "unit": 7,
     "example": "One tactic involves where to display the goods.",
     "exampleZh": "其中一個策略涉及到在哪裡展示商品。"
@@ -57549,7 +57549,7 @@ const externalVocabularyDB = [
     "id": 6395,
     "en": "tariff",
     "kk": "[ˋtɛrəf]",
-    "zh": "n. 關稅;稅率",
+    "zh": "n. 關稅；稅率",
     "unit": 7,
     "example": "The tariff scorecard is only part of the story.",
     "exampleZh": "關稅方面的交鋒只是故事的一小部分。"
@@ -57558,7 +57558,7 @@ const externalVocabularyDB = [
     "id": 6396,
     "en": "temperament",
     "kk": "[ˋtɛmprəmənt]",
-    "zh": "n. 氣質;性情",
+    "zh": "n. 氣質；性情",
     "unit": 7,
     "example": "His only weakness is his temperament.",
     "exampleZh": "他惟一的弱點是他的脾氣。"
@@ -57567,7 +57567,7 @@ const externalVocabularyDB = [
     "id": 6397,
     "en": "tempest",
     "kk": "[ˋtɛmpəst]",
-    "zh": "n. 暴風雨;暴風雪;騷動",
+    "zh": "n. 暴風雨；暴風雪；騷動",
     "unit": 7,
     "example": "I hadn't foreseen the tempest my request would cause.",
     "exampleZh": "我沒有想到我的請求會帶來這麼大一場風波。"
@@ -57594,7 +57594,7 @@ const externalVocabularyDB = [
     "id": 6400,
     "en": "theft",
     "kk": "[θɛft]",
-    "zh": "n. 偷竊,盜竊",
+    "zh": "n. 偷竊、盜竊",
     "unit": 7,
     "example": "Are we insured against theft?",
     "exampleZh": "我們保了盜竊險沒有？"
@@ -57612,7 +57612,7 @@ const externalVocabularyDB = [
     "id": 6402,
     "en": "therapy",
     "kk": "[ˋθɛrəpi]",
-    "zh": "n. 治療,療法",
+    "zh": "n. 治療、療法",
     "unit": 7,
     "example": "Group therapy classes have been his salvation.",
     "exampleZh": "他一直靠參加集體療法班來調節心理。"
@@ -57621,7 +57621,7 @@ const externalVocabularyDB = [
     "id": 6403,
     "en": "thermometer",
     "kk": "[θɚˋmɑmətɚ]",
-    "zh": "n. 溫度計;寒暑錶",
+    "zh": "n. 溫度計；寒暑錶",
     "unit": 7,
     "example": "The thermometer read 105 degrees Fahrenheit.",
     "exampleZh": "溫度計顯示為華氏105度。"
@@ -57630,7 +57630,7 @@ const externalVocabularyDB = [
     "id": 6404,
     "en": "threshold",
     "kk": "[ˋθrɛʃ͵old]",
-    "zh": "n. 門檻;開端;起點",
+    "zh": "n. 門檻；開端；起點",
     "unit": 7,
     "example": "He stepped across the threshold.",
     "exampleZh": "他邁過門檻。"
@@ -57639,7 +57639,7 @@ const externalVocabularyDB = [
     "id": 6405,
     "en": "thrift",
     "kk": "[θrɪft]",
-    "zh": "n. 節儉;繁茂;互助儲蓄銀行",
+    "zh": "n. 節儉；繁茂；互助儲蓄銀行",
     "unit": 7,
     "example": "To practice thrift is a virtue.",
     "exampleZh": "節儉是美德。"
@@ -57675,7 +57675,7 @@ const externalVocabularyDB = [
     "id": 6409,
     "en": "trait",
     "kk": "[tret]",
-    "zh": "n. 特徵;特點;特性;少許",
+    "zh": "n. 特徵；特點；特性；少許",
     "unit": 7,
     "example": "We call this trait sensation-seeking.",
     "exampleZh": "我們把這種特質稱為尋求刺激。"
@@ -57684,7 +57684,7 @@ const externalVocabularyDB = [
     "id": 6410,
     "en": "tranquilizer",
     "kk": "[ˋtræŋkwə͵laɪzɚ]",
-    "zh": "n. 鎮定劑;精神安定劑",
+    "zh": "n. 鎮定劑；精神安定劑",
     "unit": 7,
     "example": "Laughter is a tranquilizer with no side effects.",
     "exampleZh": "笑聲是一種沒有副作用的鎮靜劑。"
@@ -57693,7 +57693,7 @@ const externalVocabularyDB = [
     "id": 6411,
     "en": "transaction",
     "kk": "[trænˋzækʃən]",
-    "zh": "n. 辦理;處置;執行;交易",
+    "zh": "n. 辦理；處置；執行；交易",
     "unit": 7,
     "example": "Neither side would disclose details of the transaction.",
     "exampleZh": "雙方都不會透露交易的細節。"
@@ -57702,7 +57702,7 @@ const externalVocabularyDB = [
     "id": 6412,
     "en": "transcript",
     "kk": "[ˋtræn͵skrɪpt]",
-    "zh": "n. 抄本;謄本;成績報告單",
+    "zh": "n. 抄本；謄本；成績報告單",
     "unit": 7,
     "example": "We don't know how the transcript leaked.",
     "exampleZh": "我們不知道抄本是怎樣洩露的。"
@@ -57711,7 +57711,7 @@ const externalVocabularyDB = [
     "id": 6413,
     "en": "transformation",
     "kk": "[͵trænsfɚˋmeʃən]",
-    "zh": "n. 變化;轉變;變形;變質",
+    "zh": "n. 變化；轉變；變形；變質",
     "unit": 7,
     "example": "The transformation of American sea power began in 1940.",
     "exampleZh": "美國海軍力量的改革開始於1940年。"
@@ -57738,7 +57738,7 @@ const externalVocabularyDB = [
     "id": 6416,
     "en": "transition",
     "kk": "[trænˋzɪʃən]",
-    "zh": "n. 過渡;過渡時期;轉變",
+    "zh": "n. 過渡；過渡時期；轉變",
     "unit": 7,
     "example": "Inevitably the transition will yield some sticky moments.",
     "exampleZh": "轉型過程中難免會有棘手的時候。"
@@ -57747,7 +57747,7 @@ const externalVocabularyDB = [
     "id": 6417,
     "en": "transmission",
     "kk": "[trænˋsmɪʃən]",
-    "zh": "n. 傳送;傳染;傳播;變速器;播送",
+    "zh": "n. 傳送；傳染；傳播；變速器；播送",
     "unit": 7,
     "example": "Heterosexual contact is responsible for the bulk of HIV transmission.",
     "exampleZh": "異性間的性接觸是造成大多數艾滋病病毒傳播的原因。"
@@ -57765,7 +57765,7 @@ const externalVocabularyDB = [
     "id": 6419,
     "en": "trauma",
     "kk": "[ˋtrɔmə]",
-    "zh": "n. 外傷;傷口;(感情方面的)創傷",
+    "zh": "n. 外傷；傷口；(感情方面的)創傷",
     "unit": 7,
     "example": "The patient suffered severe brain trauma.",
     "exampleZh": "患者的大腦受到嚴重損傷。"
@@ -57783,7 +57783,7 @@ const externalVocabularyDB = [
     "id": 6421,
     "en": "treason",
     "kk": "[ˋtrizən]",
-    "zh": "n. 叛國罪;謀反罪;叛國;背叛",
+    "zh": "n. 叛國罪；謀反罪；叛國；背叛",
     "unit": 7,
     "example": "They charged treason against him.",
     "exampleZh": "他們控告他犯了叛國罪。"
@@ -57801,7 +57801,7 @@ const externalVocabularyDB = [
     "id": 6423,
     "en": "tremor",
     "kk": "[ˋtrɛmɚ]",
-    "zh": "n. 震顫;顫抖",
+    "zh": "n. 震顫；顫抖",
     "unit": 7,
     "example": "There was a slight tremor in his voice.",
     "exampleZh": "他的聲音略微有點兒顫抖。"
@@ -57828,7 +57828,7 @@ const externalVocabularyDB = [
     "id": 6426,
     "en": "trophy",
     "kk": "[ˋtrofi]",
-    "zh": "n. 戰利品;獎品",
+    "zh": "n. 戰利品；獎品",
     "unit": 7,
     "example": "He held the trophy proudly aloft.",
     "exampleZh": "他驕傲地把獎盃舉向空中。"
@@ -57855,7 +57855,7 @@ const externalVocabularyDB = [
     "id": 6429,
     "en": "truce",
     "kk": "[trus]",
-    "zh": "n. 停戰;休戰協定",
+    "zh": "n. 停戰；休戰協定",
     "unit": 7,
     "example": "The local government and the army negotiated a truce.",
     "exampleZh": "該地方政府和軍方談判達成了休戰協定。"
@@ -57873,7 +57873,7 @@ const externalVocabularyDB = [
     "id": 6431,
     "en": "tumor",
     "kk": "[ˋtumɚ]",
-    "zh": "n. 腫瘤;腫塊",
+    "zh": "n. 腫瘤；腫塊",
     "unit": 7,
     "example": "A child was wrongly diagnosed as having a bone tumor.",
     "exampleZh": "一個孩子被誤診為有骨瘤。"
@@ -57882,7 +57882,7 @@ const externalVocabularyDB = [
     "id": 6432,
     "en": "turmoil",
     "kk": "[ˋtɝ͵mɔɪl]",
-    "zh": "n. 騷動;混亂",
+    "zh": "n. 騷動；混亂",
     "unit": 7,
     "example": "She lived through the turmoil of the French Revolution.",
     "exampleZh": "她經歷過法國大革命的混亂之後仍舊活著。"
@@ -57891,7 +57891,7 @@ const externalVocabularyDB = [
     "id": 6433,
     "en": "twilight",
     "kk": "[ˋtwaɪ͵laɪt]",
-    "zh": "n. 微明;薄暮;暮年;朦朧狀態",
+    "zh": "n. 微明；薄暮；暮年；朦朧狀態",
     "unit": 7,
     "example": "They returned at twilight.",
     "exampleZh": "他們在黃昏時返回。"
@@ -57900,7 +57900,7 @@ const externalVocabularyDB = [
     "id": 6434,
     "en": "tyranny",
     "kk": "[ˋtɪrəni]",
-    "zh": "n. 暴政;專制;暴虐",
+    "zh": "n. 暴政；專制；暴虐",
     "unit": 7,
     "example": "Justice will prevail over tyranny.",
     "exampleZh": "正義必將戰勝暴虐。"
@@ -57936,7 +57936,7 @@ const externalVocabularyDB = [
     "id": 6438,
     "en": "unemployment",
     "kk": "[͵ʌnɪmˋplɔɪmənt]",
-    "zh": "n. 失業;失業狀態",
+    "zh": "n. 失業；失業狀態",
     "unit": 7,
     "example": "Unemployment has soared to 18%.",
     "exampleZh": "失業率猛升到了18%。"
@@ -57945,7 +57945,7 @@ const externalVocabularyDB = [
     "id": 6439,
     "en": "upbringing",
     "kk": "[ˋʌ͵pbrɪŋɪŋ]",
-    "zh": "n. 養育;教養",
+    "zh": "n. 養育；教養",
     "unit": 7,
     "example": "Martin's upbringing shaped his whole life.",
     "exampleZh": "馬丁的教養影響了他的一生。"
@@ -57972,7 +57972,7 @@ const externalVocabularyDB = [
     "id": 6442,
     "en": "urgency",
     "kk": "[ˋɝdʒənsi]",
-    "zh": "n. 緊急;迫切;急事",
+    "zh": "n. 緊急；迫切；急事",
     "unit": 7,
     "example": "This is a matter of some urgency.",
     "exampleZh": "這件事相當緊迫。"
@@ -57999,7 +57999,7 @@ const externalVocabularyDB = [
     "id": 6445,
     "en": "utensil",
     "kk": "[juˋtɛnsəl]",
-    "zh": "n. 器皿;用具",
+    "zh": "n. 器皿；用具",
     "unit": 7,
     "example": "Objective To discuss the limitation of ultrasonic detection on prevenception utensil.",
     "exampleZh": "目的探討超聲在宮內節育器觀察上的侷限性。"
@@ -58008,7 +58008,7 @@ const externalVocabularyDB = [
     "id": 6446,
     "en": "utility",
     "kk": "[juˋtɪləti]",
-    "zh": "n. 效用;實用;公用事業",
+    "zh": "n. 效用；實用；公用事業",
     "unit": 7,
     "example": "The non-satiation of utility does not stand any longer.",
     "exampleZh": "效用非飽和性不再成立。"
@@ -58035,7 +58035,7 @@ const externalVocabularyDB = [
     "id": 6449,
     "en": "validity",
     "kk": "[vəˋlɪdəti]",
-    "zh": "n. 確實;有效性",
+    "zh": "n. 確實；有效性",
     "unit": 7,
     "example": "We had doubts about the validity of their argument.",
     "exampleZh": "我們對他們的論點的正確性有過懷疑。"
@@ -58062,7 +58062,7 @@ const externalVocabularyDB = [
     "id": 6452,
     "en": "variation",
     "kk": "[͵vɛriˋeʃən]",
-    "zh": "n. 變化;變異",
+    "zh": "n. 變化；變異",
     "unit": 7,
     "example": "This variation shows up in the trees growth rings.",
     "exampleZh": "這種變化表現在樹木的年輪中。"
@@ -58098,7 +58098,7 @@ const externalVocabularyDB = [
     "id": 6456,
     "en": "vet",
     "kk": "[vɛt]",
-    "zh": "n. 獸醫; 老兵",
+    "zh": "n. 獸醫； 老兵",
     "unit": 7,
     "example": "The vet had improvised a harness.",
     "exampleZh": "獸醫臨時湊成了一套馬具。"
@@ -58107,7 +58107,7 @@ const externalVocabularyDB = [
     "id": 6457,
     "en": "veteran",
     "kk": "[ˋvɛtɚən]",
-    "zh": "n. 富有經驗的人;退役軍人",
+    "zh": "n. 富有經驗的人；退役軍人",
     "unit": 7,
     "example": "He is a veteran parliamentarian whose views enjoy widespread respect.",
     "exampleZh": "他是一位資深議員，其觀點受到廣泛尊重。"
@@ -58125,7 +58125,7 @@ const externalVocabularyDB = [
     "id": 6459,
     "en": "vibration",
     "kk": "[vaɪˋbreʃən]",
-    "zh": "n. 顫動;振動;震動",
+    "zh": "n. 顫動；振動；震動",
     "unit": 7,
     "example": "These can cause vibration and damage the blades of the turbines.",
     "exampleZh": "這些（氣泡）會引起振動並損壞渦輪機的葉片。"
@@ -58134,7 +58134,7 @@ const externalVocabularyDB = [
     "id": 6460,
     "en": "vice",
     "kk": "[vaɪs]",
-    "zh": "n. 惡;罪行;惡習",
+    "zh": "n. 惡；罪行；惡習",
     "unit": 7,
     "example": "Greed is a terrible vice.",
     "exampleZh": "貪婪是一種惡習。"
@@ -58152,7 +58152,7 @@ const externalVocabularyDB = [
     "id": 6462,
     "en": "villa",
     "kk": "[ˋvɪlə]",
-    "zh": "n. 別墅;(城郊)住宅",
+    "zh": "n. 別墅；(城郊)住宅",
     "unit": 7,
     "example": "We rented a holiday villa in Spain.",
     "exampleZh": "我們在西班牙租了一座假日別墅。"
@@ -58170,7 +58170,7 @@ const externalVocabularyDB = [
     "id": 6464,
     "en": "vitality",
     "kk": "[vaɪˋtæləti]",
-    "zh": "n. 活力;生命力",
+    "zh": "n. 活力；生命力",
     "unit": 7,
     "example": "It was a performance of verve and vitality.",
     "exampleZh": "這是一場充滿激情與活力的演出。"
@@ -58188,7 +58188,7 @@ const externalVocabularyDB = [
     "id": 6466,
     "en": "vocation",
     "kk": "[voˋkeʃən]",
-    "zh": "n. 行業;天職",
+    "zh": "n. 行業；天職",
     "unit": 7,
     "example": "He has a vocation for teaching.",
     "exampleZh": "他是教書的材料。"
@@ -58197,7 +58197,7 @@ const externalVocabularyDB = [
     "id": 6467,
     "en": "vogue",
     "kk": "[voɡ]",
-    "zh": "n. 風行;時髦事物(人物)",
+    "zh": "n. 風行；時髦事物(人物)",
     "unit": 7,
     "example": "That Vogue is from two months ago.",
     "exampleZh": "那本《時尚》是兩個月前的了。"
@@ -58215,7 +58215,7 @@ const externalVocabularyDB = [
     "id": 6469,
     "en": "wardrobe",
     "kk": "[ˋwɔr͵drob]",
-    "zh": "n. 衣櫃;(個人的)全部服裝",
+    "zh": "n. 衣櫃；(個人的)全部服裝",
     "unit": 7,
     "example": "Jeans are a staple part of everyone's wardrobe.",
     "exampleZh": "在每個人的衣櫥裡，牛仔褲是必不可少的。"
@@ -58224,7 +58224,7 @@ const externalVocabularyDB = [
     "id": 6470,
     "en": "warfare",
     "kk": "[ˋwɔr͵fɛr]",
-    "zh": "n. 戰爭;衝突;鬥爭",
+    "zh": "n. 戰爭；衝突；鬥爭",
     "unit": 7,
     "example": "These clashes could develop into open warfare.",
     "exampleZh": "這些衝突可能會發展成公開的戰爭。"
@@ -58233,7 +58233,7 @@ const externalVocabularyDB = [
     "id": 6471,
     "en": "warranty",
     "kk": "[ˋwɔrənti]",
-    "zh": "n. 保證書;保單",
+    "zh": "n. 保證書；保單",
     "unit": 7,
     "example": "Is the car still under warranty ?",
     "exampleZh": "這輛汽車仍在保修期內嗎？"
@@ -58278,7 +58278,7 @@ const externalVocabularyDB = [
     "id": 6476,
     "en": "zeal",
     "kk": "[zil]",
-    "zh": "n. 熱心;熱誠",
+    "zh": "n. 熱心；熱誠",
     "unit": 7,
     "example": "His reforming zeal was boundless.",
     "exampleZh": "他的改革熱情是無窮盡的。"
@@ -58485,7 +58485,7 @@ const externalVocabularyDB = [
     "id": 6499,
     "en": "a",
     "kk": "[ə]",
-    "zh": "一個",
+    "zh": "art. 一、一個",
     "unit": 7,
     "example": "They had a butler, a cook, and a maid.",
     "exampleZh": "他們有一位管家、一位廚師和一位女僕。"
@@ -58494,7 +58494,7 @@ const externalVocabularyDB = [
     "id": 6500,
     "en": "an",
     "kk": "[æn]",
-    "zh": "一個(母音前)",
+    "zh": "art. 一、一個 (用於母音前)",
     "unit": 7,
     "example": "An iron bar stuck out at an angle.",
     "exampleZh": "一根鐵條成一定角度地突出來。"
@@ -58505,14 +58505,14 @@ const externalVocabularyDB = [
     "kk": "[ðə]",
     "zh": "art. 定冠詞",
     "unit": 7,
-    "example": "Can you use the word the in a sentence?",
-    "exampleZh": "你能在句子中使用「定冠詞」這個詞嗎？"
+    "example": "The sun rises in the east and sets in the west every single day.",
+    "exampleZh": "太陽每天都從東方升起，從西方落下。"
   },
   {
     "id": 6502,
     "en": "was",
     "kk": "[wɑz]",
-    "zh": "是(過去式)",
+    "zh": "v. 是 (am/is 的過去式)",
     "unit": 7,
     "example": "She was widowed when she was 35.",
     "exampleZh": "她35歲時就守了寡。"
@@ -58521,7 +58521,7 @@ const externalVocabularyDB = [
     "id": 6503,
     "en": "were",
     "kk": "[wɝ]",
-    "zh": "是(過去式)",
+    "zh": "v. 是 (are 的過去式)",
     "unit": 7,
     "example": "The kids were happy, the crowds were stoked.",
     "exampleZh": "孩子們很高興，周圍的人也興奮起來了。"
@@ -58530,7 +58530,7 @@ const externalVocabularyDB = [
     "id": 6504,
     "en": "been",
     "kk": "[bɪn]",
-    "zh": "是(過去分詞)",
+    "zh": "v. 是 (be 的過去分詞)",
     "unit": 7,
     "example": "You've been very kind.",
     "exampleZh": "你真是體貼入微。"
@@ -58539,7 +58539,7 @@ const externalVocabularyDB = [
     "id": 6505,
     "en": "does",
     "kk": "[dʌz]",
-    "zh": "做(第三人稱)",
+    "zh": "v. 做 (do 的第三人稱單數)",
     "unit": 7,
     "example": "What does this sentence mean?",
     "exampleZh": "這個句子是什麼意思？"
@@ -58548,7 +58548,7 @@ const externalVocabularyDB = [
     "id": 6506,
     "en": "did",
     "kk": "[dɪd]",
-    "zh": "做(過去式)",
+    "zh": "v. 做 (do 的過去式)",
     "unit": 7,
     "example": "Did anyone see you?",
     "exampleZh": "有沒有人見到了你？"
@@ -58557,7 +58557,7 @@ const externalVocabularyDB = [
     "id": 6507,
     "en": "done",
     "kk": "[dʌn]",
-    "zh": "做(過去分詞)",
+    "zh": "v. 做 (do 的過去分詞)",
     "unit": 7,
     "example": "She'd never done Pilates before.",
     "exampleZh": "她以前從未做過普拉提。"
@@ -58566,7 +58566,7 @@ const externalVocabularyDB = [
     "id": 6508,
     "en": "has",
     "kk": "[hæz]",
-    "zh": "有(第三人稱)",
+    "zh": "v. 有 (have 的第三人稱單數)",
     "unit": 7,
     "example": "Vegetarianism has been mainstreamed.",
     "exampleZh": "素食主義已為大多數人所接受。"
@@ -58575,7 +58575,7 @@ const externalVocabularyDB = [
     "id": 6509,
     "en": "had",
     "kk": "[hæd]",
-    "zh": "有(過去式)",
+    "zh": "v. 有 (have 的過去式/過去分詞)",
     "unit": 7,
     "example": "They had used what money they had.",
     "exampleZh": "他們用盡了所有的錢。"

@@ -9500,17 +9500,17 @@ const jhWordsDB = [
     "kk": "",
     "zh": "n. 小姐",
     "unit": 18,
-    "example": "I miss thee, beloved father.",
-    "exampleZh": "我想念你，親愛的父親。"
+    "example": "Miss Brown is our English teacher.",
+    "exampleZh": "布朗小姐是我們的英文老師。"
   },
   {
     "id": 31057,
     "en": "miss",
     "kk": "",
-    "zh": "v. 想念",
+    "zh": "v./n. 想念、錯過; 小姐、少女",
     "unit": 18,
-    "example": "I miss thee, beloved father.",
-    "exampleZh": "我想念你，親愛的父親。"
+    "example": "Hurry up, or we will miss the bus.",
+    "exampleZh": "快點，否則我們會錯過公車。"
   },
   {
     "id": 31058,

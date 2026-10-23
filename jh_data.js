@@ -6224,8 +6224,8 @@ const jhWordsDB = [
     "kk": "",
     "zh": "v. 集合",
     "unit": 17,
-    "example": "Gather ye rosebuds while ye may.",
-    "exampleZh": "趁還可以的時候，收集玫瑰花蕾。"
+    "example": "They gathered around the campfire to tell stories.",
+    "exampleZh": "他們聚集在營火旁講故事。"
   },
   {
     "id": 30693,

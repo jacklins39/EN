@@ -7421,8 +7421,8 @@ const toeicWordsDB = [
     "kk": "",
     "zh": "v. 巡航;航遊n. 巡 航;航遊",
     "unit": 11,
-    "example": "He was billed as the new Tom Cruise.",
-    "exampleZh": "他被宣傳為新湯姆•克魯斯。"
+    "example": "They took a luxury cruise around the Mediterranean.",
+    "exampleZh": "他們搭乘豪華遊輪環遊地中海。"
   },
   {
     "id": 20826,
@@ -7709,8 +7709,8 @@ const toeicWordsDB = [
     "kk": "",
     "zh": "n. 教務長;學院院 長",
     "unit": 11,
-    "example": "I have tremendous respect for Dean.",
-    "exampleZh": "我非常敬重迪安。"
+    "example": "The dean of the medical school announced the new program.",
+    "exampleZh": "醫學院院長宣布了這項新計畫。"
   },
   {
     "id": 20858,
@@ -12785,8 +12785,8 @@ const toeicWordsDB = [
     "kk": "",
     "zh": "v. 同意;允許",
     "unit": 12,
-    "example": "The film features Cary Grant as a professor.",
-    "exampleZh": "這部電影由卡里•格蘭特飾演一位教授。"
+    "example": "The university received a research grant from the government.",
+    "exampleZh": "該大學獲得了政府的科研補助金。"
   },
   {
     "id": 21422,
@@ -17519,8 +17519,8 @@ const toeicWordsDB = [
     "kk": "",
     "zh": "n. 痕跡;汙點;記 號v. 記下;標明",
     "unit": 12,
-    "example": "Mark was withdrawn and uncontrollable.",
-    "exampleZh": "馬克性格孤僻，無法管束。"
+    "example": "He made a mark on the wall with a pencil.",
+    "exampleZh": "他用鉛筆在牆上做了一個記號。"
   },
   {
     "id": 21948,

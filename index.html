@@ -632,7 +632,10 @@
                         <p class="text-gray-400 font-mono text-sm mb-2" id="card-kk-back">/ˈæpəl/</p>
                         <div class="flex items-center justify-center gap-2 mb-3">
                             <span id="card-pos-badge" class="hidden text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-blue-50 text-[#0071E3] border border-blue-200 font-mono"></span>
-                            <p class="text-2xl text-[#0071E3] font-bold" id="card-translation">蘋果</p>
+                            <p class="text-2xl text-[#0071E3] font-bold cursor-pointer hover:underline inline-flex items-center gap-1" id="card-translation" title="點擊朗讀中文釋義">蘋果</p>
+                            <button id="btn-speak-zh" class="p-1 text-blue-400 hover:text-[#0071E3] hover:bg-blue-50 rounded-full transition-colors cursor-pointer" title="朗讀中文釋義" aria-label="朗讀中文釋義">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
+                            </button>
                         </div>
                         
                         <!-- 原生口說跟讀評測 -->
@@ -1044,6 +1047,22 @@
                             <option value="1.25">1.25x (稍快)</option>
                             <option value="1.5">1.5x (快速)</option>
                         </select>
+                    </div>
+
+                    <div class="w-full flex items-center justify-between p-4 bg-white border-0 border-gray-200 rounded-2xl hover:bg-[#F5F5F7] transition-colors mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="p-2 bg-blue-50 text-[#0071E3] rounded-xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z" /></svg>
+                            </div>
+                            <div class="text-left">
+                                <h3 class="font-semibold text-[#1D1D1F]">翻牌朗讀中文釋義</h3>
+                                <p class="text-xs text-[#86868B]">卡片翻面時，自動以自然中文語音朗讀釋義</p>
+                            </div>
+                        </div>
+                        <label class="relative inline-flex items-center cursor-pointer">
+                            <input type="checkbox" id="setting-speak-zh" class="sr-only peer" checked>
+                            <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#0071E3]"></div>
+                        </label>
                     </div>
 
 
@@ -2224,6 +2243,71 @@
             }
         }
 
+        function getBestChineseVoice() {
+            if (!('speechSynthesis' in window)) return null;
+            const voices = window.speechSynthesis.getVoices() || [];
+            if (voices.length === 0) return null;
+
+            // 1. 優先繁體中文台灣高音質神經聲線 (Natural / HsiaoChen / Yating / HanHan)
+            const twNatural = voices.find(v => (v.lang === 'zh-TW' || v.lang === 'zh_TW' || v.lang.toLowerCase() === 'zh-tw') && 
+                (v.name.includes('Natural') || v.name.includes('Online') || v.name.includes('Neural') || v.name.includes('HsiaoChen') || v.name.includes('Yating')));
+            if (twNatural) return twNatural;
+
+            // 2. 一般台灣繁體
+            const twVoice = voices.find(v => v.lang === 'zh-TW' || v.lang === 'zh_TW' || v.lang.toLowerCase() === 'zh-tw' || v.name.includes('Taiwan') || v.name.includes('國語'));
+            if (twVoice) return twVoice;
+
+            // 3. 其它繁中/中文
+            const hkVoice = voices.find(v => v.lang === 'zh-HK' || v.lang === 'zh-Hant');
+            if (hkVoice) return hkVoice;
+
+            return voices.find(v => v.lang && v.lang.toLowerCase().startsWith('zh')) || null;
+        }
+
+        function speakChinese(text, onEndedCallback) {
+            if (!text || !('speechSynthesis' in window)) {
+                if (typeof onEndedCallback === 'function') onEndedCallback();
+                return;
+            }
+            try {
+                // 清洗括號註解、殘留詞性與標點符號，使中文發音清晰自然
+                const cleanZh = text
+                    .replace(/[\(（][^）\)]*[\)）]/g, '')
+                    .replace(/^[a-zA-Z\.\s\/]+/, '')
+                    .replace(/[a-zA-Z]+\./g, '')
+                    .replace(/[/;、~]/g, '，')
+                    .trim();
+
+                if (!cleanZh) {
+                    if (typeof onEndedCallback === 'function') onEndedCallback();
+                    return;
+                }
+
+                const utterance = new SpeechSynthesisUtterance(cleanZh);
+                utterance.lang = 'zh-TW';
+                utterance.rate = 1.0;
+
+                const voice = getBestChineseVoice();
+                if (voice) utterance.voice = voice;
+
+                let called = false;
+                const done = () => {
+                    if (called) return;
+                    called = true;
+                    if (typeof onEndedCallback === 'function') onEndedCallback();
+                };
+                utterance.onend = done;
+                utterance.onerror = done;
+                setTimeout(done, 5000);
+
+                window._activeSpeechUtterance = utterance;
+                window.speechSynthesis.speak(utterance);
+            } catch(e) {
+                console.warn('speakChinese error:', e);
+                if (typeof onEndedCallback === 'function') onEndedCallback();
+            }
+        }
+
         function playBacksideAudio(onEndedCallback) {
             stopAllAudio();
             if (!currentWord || !currentWord.en) {
@@ -2231,19 +2315,37 @@
                 return;
             }
             const targetWord = currentWord;
-            // 翻面第 1 步：先讀單字
+            const isSpeakZh = localStorage.getItem('speak_zh_enabled') !== 'false'; // 預設開啟
+
+            // 翻面第 1 步：先讀英文單字
             playAudio(targetWord.en, () => {
                 if (!currentWord || currentWord.id !== targetWord.id) return;
-                // 翻面第 2 步：單字完成後，若有例句接著讀句子
-                if (targetWord.example) {
+
+                // 第 3 步：若有例句接著讀句子
+                const playExampleStep = () => {
+                    if (!currentWord || currentWord.id !== targetWord.id) return;
+                    if (targetWord.example) {
+                        backsideAudioTimerId = setTimeout(() => {
+                            if (!currentWord || currentWord.id !== targetWord.id) return;
+                            playAudio(targetWord.example, () => {
+                                if (typeof onEndedCallback === 'function') onEndedCallback();
+                            }, targetWord.id);
+                        }, 350);
+                    } else {
+                        if (typeof onEndedCallback === 'function') onEndedCallback();
+                    }
+                };
+
+                // 第 2 步：若開啟中文朗讀，接著讀中文釋義
+                if (isSpeakZh && targetWord.zh) {
+                    const parsed = splitPosAndZh(targetWord.zh, targetWord.pos);
+                    const zhText = parsed.pureZh || targetWord.zh;
                     backsideAudioTimerId = setTimeout(() => {
                         if (!currentWord || currentWord.id !== targetWord.id) return;
-                        playAudio(targetWord.example, () => {
-                            if (typeof onEndedCallback === 'function') onEndedCallback();
-                        }, targetWord.id);
-                    }, 300);
+                        speakChinese(zhText, playExampleStep);
+                    }, 250);
                 } else {
-                    if (typeof onEndedCallback === 'function') onEndedCallback();
+                    playExampleStep();
                 }
             });
         }
@@ -3205,6 +3307,26 @@
                 lookupWord(wordSpan.getAttribute('data-word'));
             }
         });
+
+        // 點擊中文釋義或小喇叭手動朗讀中文
+        const handleSpeakZhClick = (e) => {
+            e.stopPropagation();
+            if (!currentWord || !currentWord.zh) return;
+            const parsed = splitPosAndZh(currentWord.zh, currentWord.pos);
+            speakChinese(parsed.pureZh || currentWord.zh);
+        };
+        document.getElementById('card-translation')?.addEventListener('click', handleSpeakZhClick);
+        document.getElementById('btn-speak-zh')?.addEventListener('click', handleSpeakZhClick);
+
+        // 設定：翻牌朗讀中文開關
+        const settingSpeakZhEl = document.getElementById('setting-speak-zh');
+        if (settingSpeakZhEl) {
+            const savedSpeakZh = localStorage.getItem('speak_zh_enabled');
+            settingSpeakZhEl.checked = savedSpeakZh !== 'false';
+            settingSpeakZhEl.addEventListener('change', (e) => {
+                localStorage.setItem('speak_zh_enabled', e.target.checked ? 'true' : 'false');
+            });
+        }
 
         function renderClickableSentence(sentence) {
             if (!sentence) return '';

@@ -639,11 +639,15 @@
                             </button>
                         </div>
                         
-                        <!-- 原生口說跟讀評測 -->
-                        <div class="flex flex-col items-center justify-center mb-2">
+                        <!-- 原生口說跟讀評測 & 單字三態詳解 -->
+                        <div class="flex items-center justify-center gap-2 mb-2 flex-wrap">
                             <button id="btn-speech-eval" class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-blue-50 text-[#0071E3] hover:bg-blue-100 border border-blue-200 transition-all flex items-center gap-1.5 shadow-xs cursor-pointer active:scale-95" title="點擊開麥，朗讀英文單字評測發音">
                                 <span id="speech-eval-icon">🎤</span>
                                 <span id="speech-eval-text">口說跟讀評測</span>
+                            </button>
+                            <button id="btn-card-detail" class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-600 hover:bg-indigo-100 border border-indigo-200 transition-all flex items-center gap-1.5 shadow-xs cursor-pointer active:scale-95" title="查看三態變化、搭配詞與用法說明" onclick="event.stopPropagation(); if (currentWord && currentWord.en) showWordDetailModal(currentWord.en);">
+                                <span>📖</span>
+                                <span>三態與用法</span>
                             </button>
                             <div id="speech-eval-result" class="hidden text-xs font-medium py-1 px-3 rounded-full mt-1.5 transition-all"></div>
                         </div>
@@ -4146,7 +4150,7 @@
             return { name: `單元 ${unit}`, color: 'bg-gray-100 text-gray-700 border-gray-200' };
         }
 
-        async function showWordDetailModal(word) {
+        async function showWordDetailModal(word, fallbackData = null) {
             if (!word) return;
             const cleanWord = String(word).trim().toLowerCase().replace(/['".,!?]/g, '');
             if (!cleanWord) return;
@@ -4177,6 +4181,17 @@
             let item = vocabularyDB.find(w => w.en.toLowerCase() === cleanWord);
             if (!item && typeof customWordsDB !== 'undefined') {
                 item = customWordsDB.find(w => w.en.toLowerCase() === cleanWord);
+            }
+            if (!item && fallbackData && fallbackData.zh) {
+                item = {
+                    en: cleanWord,
+                    kk: fallbackData.kk || '',
+                    zh: fallbackData.zh || '',
+                    pos: fallbackData.pos || '',
+                    unit: 0,
+                    example: fallbackData.example || '',
+                    exampleZh: fallbackData.exampleZh || ''
+                };
             }
 
             if (item) {
@@ -5067,7 +5082,7 @@
                 practice.classList.toggle('opacity-50', !weakList.length);
                 
                 html = weakList.length ? weakList.map(({ w, c }) => `
-                    <div class="weak-row flex items-center justify-between py-3 px-3 border-b border-gray-100 last:border-0 hover:bg-[#F5F5F7] rounded-2xl cursor-pointer transition-colors" data-id="${esc(String(w.id))}">
+                    <div class="weak-row flex items-center justify-between py-3 px-3 border-b border-gray-100 last:border-0 hover:bg-[#F5F5F7] rounded-2xl cursor-pointer transition-colors" data-id="${esc(String(w.id))}" data-word="${esc(w.en)}">
                         <div class="flex items-center gap-3 min-w-0">
                             <span class="text-lg">${weakDot(c)}</span>
                             <div class="min-w-0">
@@ -5113,7 +5128,7 @@
                 if (searchInput) words = words.slice(0, 300);
                 
                 html = words.length ? words.map(w => `
-                    <div class="weak-row flex items-center justify-between py-3 px-3 border-b border-gray-100 last:border-0 hover:bg-[#F5F5F7] rounded-2xl cursor-pointer transition-colors" data-id="${esc(String(w.id))}">
+                    <div class="weak-row flex items-center justify-between py-3 px-3 border-b border-gray-100 last:border-0 hover:bg-[#F5F5F7] rounded-2xl cursor-pointer transition-colors" data-id="${esc(String(w.id))}" data-word="${esc(w.en)}">
                         <div class="flex items-center gap-3 min-w-0">
                             <div class="min-w-0">
                                 <div class="font-semibold text-[#1D1D1F] text-[15px]">${esc(w.en)} <span class="text-[10px] text-gray-400 font-mono ml-1">${esc(w.kk || '')}</span></div>
@@ -5154,6 +5169,7 @@
                 <div class="grid grid-cols-2 gap-2">
                     <button id="btn-weak-one" class="bg-[#0071E3] text-white font-medium py-2 rounded-xl text-sm">🎯 立即練習</button>
                     <button id="btn-weak-clear" class="bg-gray-100 text-gray-600 font-medium py-2 rounded-xl text-sm border-0 border-gray-200">✅ 移除紀錄</button>
+                    <button id="btn-weak-detail" class="col-span-2 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-medium py-2 rounded-xl text-sm transition">📖 查看三態與用法詳解</button>
                 </div>`;
             document.getElementById('dict-modal').classList.remove('hidden');
             document.getElementById('btn-close-dict').addEventListener('click', () => {
@@ -5171,6 +5187,10 @@
                 document.getElementById('dict-modal').classList.add('hidden');
                 renderWeakView();
                 updateDashboard();
+            });
+            document.getElementById('btn-weak-detail')?.addEventListener('click', () => {
+                document.getElementById('dict-modal').classList.add('hidden');
+                showWordDetailModal(w.en);
             });
         }
 
@@ -5197,8 +5217,8 @@
                 if (currentDictMode === 'weak') {
                     openWeakDetail(row.dataset.id);
                 } else {
-                    const w = vocabularyDB.find(x => String(x.id) === String(row.dataset.id));
-                    if (w) playAudio(w.en);
+                    const word = row.dataset.word || (vocabularyDB.find(x => String(x.id) === String(row.dataset.id)) || {}).en;
+                    if (word) showWordDetailModal(word);
                 }
             }
         });
@@ -5743,7 +5763,7 @@
                             <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
                             📌 我的劃線單字 (${annotatedList.length})
                         </span>
-                        <span class="text-[11px] text-emerald-600 font-medium">點擊發音 · 點 ✕ 取消標註</span>
+                        <span class="text-[11px] text-emerald-600 font-medium">點卡片看三態詳解 · 點 🔊 發音 · 點 ✕ 取消</span>
                     </div>
                     <div class="grid grid-cols-2 gap-2">
                 `;
@@ -5755,7 +5775,7 @@
                     const displayZh = info ? (info.pos ? `[${esc(info.pos)}] ` : '') + esc(info.zh) : '';
 
                     html += `
-                        <div class="bg-white border border-emerald-200/70 p-2.5 rounded-xl flex items-center justify-between shadow-xs hover:border-emerald-400 transition min-h-[58px] cursor-pointer group" onclick="playAudio('${safeEn}')">
+                        <div class="bg-white border border-emerald-200/70 p-2.5 rounded-xl flex items-center justify-between shadow-xs hover:border-emerald-400 hover:bg-emerald-50/30 transition min-h-[58px] cursor-pointer group" onclick="showWordDetailModal('${safeEn}')" title="點擊查看「${esc(word)}」的三態變化與詳細說明">
                             <div class="min-w-0 pr-1.5 flex-1">
                                 <div class="flex items-center gap-1">
                                     <div class="font-bold text-sm text-[#1D1D1F] leading-snug break-words">${esc(word)}</div>
@@ -5814,7 +5834,7 @@
                 const safeEn = (w.en || '').replace(/'/g, "\\'");
                 const isMarked = currentArticleAnnotatedWords.has((w.en || '').toLowerCase());
                 html += `
-                <div class="bg-white border border-gray-100 p-2.5 rounded-xl flex items-center justify-between shadow-xs cursor-pointer hover:bg-gray-50 transition min-h-[58px]" onclick="playAudio('${safeEn}')">
+                <div class="bg-white border border-gray-100 p-2.5 rounded-xl flex items-center justify-between shadow-xs cursor-pointer hover:bg-blue-50/50 hover:border-blue-200 transition min-h-[58px]" onclick="showWordDetailModal('${safeEn}', { zh: '${esc(w.zh || '')}', pos: '${esc(w.pos || '')}' })" title="點擊查看「${esc(w.en || '')}」的三態變化與詳細說明">
                     <div class="min-w-0 pr-1.5 flex-1">
                         <div class="flex items-center gap-1.5">
                             <span class="font-semibold text-sm text-[#1D1D1F] leading-snug break-words">${esc(w.en || '')}</span>
@@ -6260,8 +6280,11 @@
                         </button>
                     </div>
                     <div class="mt-1 text-xs text-gray-100 font-medium">${esc(w.zh)}</div>
-                    <div class="mt-2 pt-1.5 border-t border-gray-700/60 flex items-center justify-between gap-2">
-                        ${annotateBtnHtml}
+                    <div class="mt-2 pt-1.5 border-t border-gray-700/60 flex items-center justify-between gap-1.5 flex-wrap">
+                        <div class="flex items-center gap-1.5">
+                            ${annotateBtnHtml}
+                            <button onclick="event.stopPropagation(); showWordDetailModal('${safeSpeak}')" class="text-blue-300 hover:text-white pointer-events-auto px-2 py-0.5 rounded bg-gray-800 hover:bg-blue-600 text-[11px] font-medium shadow-xs whitespace-nowrap transition-colors flex items-center gap-1" title="查看三態與詳細用法">📖 詳解</button>
+                        </div>
                         ${!isAlreadyCustom ? `<button onclick="event.stopPropagation(); promptAddMissingWord('${safeWord}', this)" class="text-teal-300 hover:text-teal-200 pointer-events-auto px-2 py-0.5 rounded bg-gray-800 text-[11px] font-medium shadow-xs whitespace-nowrap transition-colors">➕ 加入自訂</button>` : `<span class="text-emerald-400 text-[11px] font-medium whitespace-nowrap">✅ 已在字庫</span>`}
                     </div>
                 `;
@@ -6280,8 +6303,11 @@
                     <div class="text-xs text-gray-400 mt-1">
                         <span id="tooltip-auto-zh" class="text-gray-100 font-medium">翻譯中…</span> 
                     </div>
-                    <div class="mt-2 pt-1.5 border-t border-gray-700/60 flex items-center justify-between gap-2">
-                        ${annotateBtnHtml}
+                    <div class="mt-2 pt-1.5 border-t border-gray-700/60 flex items-center justify-between gap-1.5 flex-wrap">
+                        <div class="flex items-center gap-1.5">
+                            ${annotateBtnHtml}
+                            <button onclick="event.stopPropagation(); showWordDetailModal('${safeWord}')" class="text-blue-300 hover:text-white pointer-events-auto px-2 py-0.5 rounded bg-gray-800 hover:bg-blue-600 text-[11px] font-medium shadow-xs whitespace-nowrap transition-colors flex items-center gap-1" title="查看三態與詳細用法">📖 詳解</button>
+                        </div>
                         ${isAlreadyCustom ? `<span class="text-emerald-400 text-[11px] font-medium whitespace-nowrap">✅ 已在字庫</span>` : `<button onclick="event.stopPropagation(); promptAddMissingWord('${safeWord}', this)" class="text-teal-300 hover:text-teal-200 pointer-events-auto px-2 py-0.5 rounded bg-gray-800 text-[11px] font-medium shadow-xs whitespace-nowrap transition-colors">➕ 加入自訂</button>`}
                     </div>
                 `;

@@ -32,6 +32,10 @@
   - 精選高頻核心搭配片語（Collocations）與實用例句（支援獨立朗讀發音）。
   - 內建相識詞（Synonyms）與 Datamuse API 動態擴充，標籤支援無限層級點擊穿透查詞。
   - 雙層 Modal 架構，關閉詳解卡即可無縫回到原本的預覽清單，不中斷學習節奏。
+- [x] 7. **全域 11,573 筆繁體中文釋義「真人高音質 MP3」庫 (zh-TW-HsiaoChenNeural)**
+  - 徹底解決手機端 (iOS Safari / Android Chrome) 因第三方 Google TTS Referer 阻擋與 Web Speech API 限制導致的「手機翻卡無中文聲」長年痛點。
+  - 運用微軟高階神經聲線 `zh-TW-HsiaoChenNeural`（台灣自然女聲）全量離線批次產製 11,573 筆繁體中文真人 MP3 放置於 `audio/zh/{id}.mp3`。
+  - 實裝 `zh_audio_manifest.js` 快速索引表，翻卡翻面時由原生 `<audio>` 直接以同源 MP3 秒播，發音字正腔圓、無延遲、無跨域錯誤。
 
 ## 詞庫品質五大健檢標準與定期執行規範
 > **執行指令**：`python scripts/audit_database.py`（每次新增/編輯單字庫後必跑，自動驗收 11,573 筆單字）

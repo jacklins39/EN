@@ -21,6 +21,7 @@
     <script src="listening_data.js?v=20261020b"></script>
     <script src="words_audio_manifest.js"></script>
     <script src="examples_audio_manifest.js"></script>
+    <script src="zh_audio_manifest.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -2378,30 +2379,14 @@
             return voices.find(v => v.lang && v.lang.toLowerCase().startsWith('zh')) || null;
         }
 
-        function speakChinese(text, onEndedCallback) {
-            if (!text) {
+        function speakChinese(text, onEndedCallback, wordObj = null) {
+            if (!text && !wordObj) {
                 if (typeof onEndedCallback === 'function') onEndedCallback();
                 return;
             }
             try {
-                // 清洗括號註解、殘留詞性與標點符號，使中文發音清晰自然
-                let cleanZh = text
-                    .replace(/[\(（][^）\)]*[\)）]/g, '')
-                    .replace(/^[a-zA-Z\.\s\/]+/, '')
-                    .replace(/[a-zA-Z]+\./g, '')
-                    .replace(/[/;；、~]/g, '，')
-                    .replace(/\s+/g, ' ')
-                    .trim();
-
-                if (cleanZh.length > 150) {
-                    cleanZh = cleanZh.slice(0, 150);
-                }
-
-                if (!cleanZh) {
-                    if (typeof onEndedCallback === 'function') onEndedCallback();
-                    return;
-                }
-
+                unlockMobileAudio();
+                const target = wordObj || currentWord;
                 const attachCallback = (audioEl) => {
                     clearAudioCallbacks();
                     let called = false;
@@ -2424,18 +2409,43 @@
                     audioFallbackTimerId = setTimeout(onError, 8000);
                 };
 
-                // 優先使用 Google 高音質台灣繁體中文 TTS 串流 (100% 解決手機無聲、免下載語音包)
-                const zhUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=zh-TW&client=tw-ob&q=${encodeURIComponent(cleanZh)}`;
-                wordAudioPlayer.src = zhUrl;
-                wordAudioPlayer.playbackRate = 1.0;
-                attachCallback(wordAudioPlayer);
-                const playPromise = wordAudioPlayer.play();
-                if (playPromise !== undefined) {
-                    playPromise.catch((err) => {
-                        console.warn("Google zh TTS stream error, fallback to Web Speech API:", err);
-                        speakChineseViaSynthesis(cleanZh, onEndedCallback);
-                    });
+                // 清洗括號註解、殘留詞性與標點符號，使中文發音清晰自然
+                let rawText = text || (target ? target.zh : '');
+                let cleanZh = rawText
+                    .replace(/[\(（][^）\)]*[\)）]/g, '')
+                    .replace(/^[a-zA-Z\.\s\/]+/, '')
+                    .replace(/[a-zA-Z]+\./g, '')
+                    .replace(/[/;；、~]/g, '，')
+                    .replace(/\s+/g, ' ')
+                    .trim();
+
+                if (cleanZh.length > 150) {
+                    cleanZh = cleanZh.slice(0, 150);
                 }
+
+                // 1. 優先使用本機 Edge-TTS 真人繁體中文 MP3 (zh-TW-HsiaoChenNeural)
+                // 100% 解決手機無聲問題，與英文單字/例句真人發音享有同等高音質！
+                if (target && target.id && typeof window.ZH_AUDIO_MANIFEST !== 'undefined' && window.ZH_AUDIO_MANIFEST.has(Number(target.id))) {
+                    wordAudioPlayer.src = `audio/zh/${target.id}.mp3`;
+                    wordAudioPlayer.playbackRate = 1.0;
+                    attachCallback(wordAudioPlayer);
+                    const playPromise = wordAudioPlayer.play();
+                    if (playPromise !== undefined) {
+                        playPromise.catch((err) => {
+                            console.warn("Local zh audio play error, fallback to Web Speech API:", err);
+                            speakChineseViaSynthesis(cleanZh, onEndedCallback);
+                        });
+                    }
+                    return;
+                }
+
+                if (!cleanZh) {
+                    if (typeof onEndedCallback === 'function') onEndedCallback();
+                    return;
+                }
+
+                // 2. 備援：若該單字尚未在真人清單中，以 Web Speech API 朗讀
+                speakChineseViaSynthesis(cleanZh, onEndedCallback);
             } catch(e) {
                 console.warn('speakChinese error:', e);
                 speakChineseViaSynthesis(text, onEndedCallback);
@@ -2514,7 +2524,7 @@
                     const zhText = parsed.pureZh || targetWord.zh;
                     backsideAudioTimerId = setTimeout(() => {
                         if (!currentWord || currentWord.id !== targetWord.id) return;
-                        speakChinese(zhText, playExampleStep);
+                        speakChinese(zhText, playExampleStep, targetWord);
                     }, 250);
                 } else {
                     playExampleStep();
@@ -3579,7 +3589,7 @@
                 setTimeout(() => btn.classList.remove('text-[#0071E3]', 'scale-110'), 400);
             }
             const parsed = splitPosAndZh(currentWord.zh, currentWord.pos);
-            speakChinese(parsed.pureZh || currentWord.zh);
+            speakChinese(parsed.pureZh || currentWord.zh, null, currentWord);
         };
         document.getElementById('card-translation')?.addEventListener('click', handleSpeakZhClick);
         document.getElementById('btn-speak-zh')?.addEventListener('click', handleSpeakZhClick);

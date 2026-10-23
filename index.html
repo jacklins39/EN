@@ -1342,6 +1342,15 @@
                             };
                         });
                     
+                    // 自動過濾已收錄於官方題庫 (unit 1~9) 的自訂單字，防止重複
+                    const officialWordsSet = new Set(
+                        (typeof externalVocabularyDB !== 'undefined' ? externalVocabularyDB : [])
+                            .filter(w => w && w.unit !== 10 && w.en)
+                            .map(w => w.en.trim().toLowerCase())
+                    );
+                    const cloudInitialLen = customWordsDB.length;
+                    customWordsDB = customWordsDB.filter(cw => !officialWordsSet.has((cw.en || '').trim().toLowerCase()));
+
                     // 清理舊有的 unit 10，完全以當前 customWordsDB 為準同步至 vocabularyDB
                     for (let i = vocabularyDB.length - 1; i >= 0; i--) {
                         if (vocabularyDB[i].unit === 10) vocabularyDB.splice(i, 1);
@@ -1351,6 +1360,11 @@
                     });
                     localStorage.setItem('vocab_custom_words', JSON.stringify(customWordsDB));
                     saveDailyPlansLocally();
+
+                    // 若剛好篩除了已收錄至官方字庫的重複單字，背景非同步將乾淨版本寫回雲端
+                    if (cloudInitialLen !== customWordsDB.length && currentUser) {
+                        saveToCloud(true);
+                    }
                     if (!isSilent) {
                         const syncBanner = document.getElementById('sync-banner');
                         if (syncBanner) {
@@ -1504,13 +1518,19 @@
             try {
                 const savedCustom = JSON.parse(localStorage.getItem('vocab_custom_words') || '[]');
                 if (Array.isArray(savedCustom)) {
-                    customWordsDB = savedCustom;
+                    const officialWordsSet = new Set(
+                        (typeof externalVocabularyDB !== 'undefined' ? externalVocabularyDB : [])
+                            .filter(w => w && w.unit !== 10 && w.en)
+                            .map(w => w.en.trim().toLowerCase())
+                    );
+                    customWordsDB = savedCustom.filter(cw => !officialWordsSet.has((cw.en || '').trim().toLowerCase()));
                     for (let i = vocabularyDB.length - 1; i >= 0; i--) {
                         if (vocabularyDB[i].unit === 10) vocabularyDB.splice(i, 1);
                     }
                     customWordsDB.forEach(cw => {
                         vocabularyDB.push(cw);
                     });
+                    localStorage.setItem('vocab_custom_words', JSON.stringify(customWordsDB));
                 }
             } catch(e) {
                 console.warn("讀取本地自訂字庫異常", e);
@@ -3294,16 +3314,32 @@
 
         // 刪除自訂單字 (同步移除學習進度、本地快取並寫回雲端)
         async function deleteCustomWords(ids) {
-            const set = new Set(ids.map(String));
-            customWordsDB = customWordsDB.filter(w => !set.has(String(w.id)));
-            for (let i = vocabularyDB.length - 1; i >= 0; i--) {
-                if (vocabularyDB[i].unit === 10 && set.has(String(vocabularyDB[i].id))) {
-                    vocabularyDB.splice(i, 1);
+            const isDeleteAll = !ids || ids === 'ALL' || (Array.isArray(ids) && (ids.length === 0 || ids.length >= customWordsDB.length));
+            if (isDeleteAll) {
+                const allCustomIds = new Set(customWordsDB.map(w => String(w.id)));
+                customWordsDB = [];
+                for (let i = vocabularyDB.length - 1; i >= 0; i--) {
+                    if (vocabularyDB[i].unit === 10) vocabularyDB.splice(i, 1);
                 }
+                allCustomIds.forEach(id => { delete userProgress[id]; });
+            } else {
+                const idSet = new Set((Array.isArray(ids) ? ids : [ids]).map(String));
+                const lowerEns = new Set((Array.isArray(ids) ? ids : [ids]).filter(x => typeof x === 'string').map(x => x.trim().toLowerCase()));
+
+                customWordsDB = customWordsDB.filter(w => {
+                    const matchId = idSet.has(String(w.id));
+                    const matchEn = w.en && lowerEns.has(w.en.trim().toLowerCase());
+                    return !matchId && !matchEn;
+                });
+                for (let i = vocabularyDB.length - 1; i >= 0; i--) {
+                    if (vocabularyDB[i].unit === 10) {
+                        const matchId = idSet.has(String(vocabularyDB[i].id));
+                        const matchEn = vocabularyDB[i].en && lowerEns.has((vocabularyDB[i].en || '').trim().toLowerCase());
+                        if (matchId || matchEn) vocabularyDB.splice(i, 1);
+                    }
+                }
+                idSet.forEach(id => { delete userProgress[id]; });
             }
-            set.forEach(id => { 
-                delete userProgress[id]; 
-            });
 
             // 清除自訂字庫的排程快取
             if (dailyPlans && dailyPlans[10]) {
@@ -3315,18 +3351,27 @@
             localStorage.setItem('vocab_user_progress', JSON.stringify(userProgress));
             saveDailyPlansLocally();
 
-            // 2. 雲端同步 (使用 merge: true 完全以當前狀態覆蓋)
+            // 2. 雲端雙重強制同步 (先完整寫入確保無舊欄位阻擋，再直接更新 customWords)
             if (currentUser) {
                 try {
-                    await db.collection('users').doc(currentUser.uid).set({
-                        customWords: customWordsDB,
-                        progress: userProgress,
-                        dailyPlans: dailyPlans
-                    }, { merge: true });
+                    await saveToCloud(true);
+                    await db.collection('users').doc(currentUser.uid).update({
+                        customWords: customWordsDB
+                    });
                     showQuickToast('已刪除並同步至雲端 ✅');
                 } catch(e) {
                     console.error("雲端刪除同步失敗:", e);
-                    showQuickToast('⚠️ 雲端更新異常，本機已清除');
+                    try {
+                        await db.collection('users').doc(currentUser.uid).set({
+                            customWords: customWordsDB,
+                            progress: userProgress,
+                            dailyPlans: dailyPlans
+                        }, { merge: true });
+                        showQuickToast('已刪除並同步至雲端 ✅');
+                    } catch(e2) {
+                        console.error("備用 set 亦失敗:", e2);
+                        showQuickToast('⚠️ 雲端同步異常，本地已成功清除');
+                    }
                 }
             } else {
                 showQuickToast('已自自訂字庫刪除 ✅');
@@ -3357,10 +3402,15 @@
                     ${rows || '<p class="text-[#86868B] text-sm text-center py-4">自訂字庫是空的。</p>'}
                 </div>`;
             document.getElementById('dict-modal').classList.remove('hidden');
-            content.querySelectorAll('.btn-del-custom').forEach(b => b.addEventListener('click', async () => {
+            content.querySelectorAll('.btn-del-custom').forEach(b => b.addEventListener('click', async (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                const wordId = b.dataset.del;
+                const row = b.closest('.custom-row');
+                const wordEn = row ? row.querySelector('[data-f="en"]')?.value?.trim() : '';
                 b.disabled = true;
                 b.innerText = "⏳";
-                await deleteCustomWords([b.dataset.del]);
+                await deleteCustomWords([wordId, wordEn].filter(Boolean));
                 renderCustomManager();
             }));
             const autofillBtn = document.getElementById('btn-autofill-custom');
@@ -3457,11 +3507,13 @@
                 showQuickToast('自訂字庫已更新並儲存 ✅');
             });
             const all = document.getElementById('btn-del-custom-all');
-            if (all) all.addEventListener('click', async () => {
+            if (all) all.addEventListener('click', async (e) => {
+                e.preventDefault();
+                e.stopPropagation();
                 if (!confirm(`確定刪除全部 ${customWordsDB.length} 個自訂單字？(含學習進度)`)) return;
                 all.disabled = true;
                 all.innerText = "刪除中...";
-                await deleteCustomWords(customWordsDB.map(w => w.id));
+                await deleteCustomWords('ALL');
                 renderCustomManager();
             });
             document.getElementById('btn-close-dict').addEventListener('click', () => {

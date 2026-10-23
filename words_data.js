@@ -15431,8 +15431,8 @@ const externalVocabularyDB = [
     "kk": "/ˈmɑɹk/",
     "zh": "v./n. 記號",
     "unit": 2,
-    "example": "Mark was withdrawn and uncontrollable.",
-    "exampleZh": "馬克性格孤僻，無法管束。"
+    "example": "He made a mark on the wall with a pencil.",
+    "exampleZh": "他用鉛筆在牆上做了一個記號。"
   },
   {
     "id": 1716,
@@ -16160,8 +16160,8 @@ const externalVocabularyDB = [
     "kk": "/ˈpæt/",
     "zh": "v./n. 輕拍,輕打",
     "unit": 2,
-    "example": "Pat has always loved gardening.",
-    "exampleZh": "帕特一直喜愛園藝。"
+    "example": "He gave the dog an affectionate pat on the head.",
+    "exampleZh": "他親暱地輕拍了狗狗的頭。"
   },
   {
     "id": 1797,
@@ -25106,8 +25106,8 @@ const externalVocabularyDB = [
     "kk": "/ˈnaɪt/",
     "zh": "v./n. 騎士,武士;護衛者",
     "unit": 3,
-    "example": "This collection of essays is edited by Ellen Knight.",
-    "exampleZh": "這本散文集是由埃倫·奈特編選的。"
+    "example": "The brave knight fought to defend the kingdom.",
+    "exampleZh": "英勇的騎士奮戰保衛王國。"
   },
   {
     "id": 2791,
@@ -43808,8 +43808,8 @@ const externalVocabularyDB = [
     "kk": "/ˈɡɹænt/",
     "zh": "v./n. 獎學金,助學金",
     "unit": 5,
-    "example": "The film features Cary Grant as a professor.",
-    "exampleZh": "這部電影由卡里•格蘭特飾演一位教授。"
+    "example": "The university received a research grant from the government.",
+    "exampleZh": "該大學獲得了政府的科研補助金。"
   },
   {
     "id": 4869,
@@ -44123,8 +44123,8 @@ const externalVocabularyDB = [
     "kk": "/ˈhʊd/",
     "zh": "v./n. 兜帽;風帽;罩;車蓋",
     "unit": 5,
-    "example": "Was Robin Hood a historical figure?",
-    "exampleZh": "羅賓漢是歷史人物嗎？"
+    "example": "He put up his hood to protect himself from the rain.",
+    "exampleZh": "他戴上兜帽避雨。"
   },
   {
     "id": 4904,
@@ -44366,8 +44366,8 @@ const externalVocabularyDB = [
     "kk": "/ˈdʒæk/",
     "zh": "v./n. 千斤頂;(紙牌中的)J牌,杰克;水手",
     "unit": 5,
-    "example": "Jack chided himself for worrying.",
-    "exampleZh": "傑克責備自己多慮。"
+    "example": "You will need a car jack to change the flat tire.",
+    "exampleZh": "換爆胎時你需要一個千斤頂。"
   },
   {
     "id": 4931,
@@ -46454,8 +46454,8 @@ const externalVocabularyDB = [
     "kk": "/ˈɹɑbən/",
     "zh": "n. 知更鳥",
     "unit": 6,
-    "example": "Was Robin Hood a historical figure?",
-    "exampleZh": "羅賓漢是歷史人物嗎？"
+    "example": "A robin was singing in the oak tree.",
+    "exampleZh": "一隻知更鳥在橡樹上唱歌。"
   },
   {
     "id": 5163,
@@ -53447,8 +53447,8 @@ const externalVocabularyDB = [
     "kk": "/ˈkɹuz/",
     "zh": "v./n. 巡航;航遊;巡邏",
     "unit": 6,
-    "example": "He was billed as the new Tom Cruise.",
-    "exampleZh": "他被宣傳為新湯姆•克魯斯。"
+    "example": "They took a luxury cruise around the Mediterranean.",
+    "exampleZh": "他們搭乘豪華遊輪環遊地中海。"
   },
   {
     "id": 5940,

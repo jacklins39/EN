@@ -9068,8 +9068,8 @@ const jhWordsDB = [
     "kk": "",
     "zh": "n. 標記",
     "unit": 18,
-    "example": "Mark was withdrawn and uncontrollable.",
-    "exampleZh": "馬克性格孤僻，無法管束。"
+    "example": "He made a mark on the wall with a pencil.",
+    "exampleZh": "他用鉛筆在牆上做了一個記號。"
   },
   {
     "id": 31009,

@@ -9201,16 +9201,7 @@ const jhWordsDB = [
     "id": 31023,
     "en": "may",
     "kk": "[me]",
-    "zh": "v. 五月；n. 山楂花、五月",
-    "unit": 18,
-    "example": "That may or may not be true.",
-    "exampleZh": "這可能是真的，也可能不是。"
-  },
-  {
-    "id": 31024,
-    "en": "May",
-    "kk": "[me]",
-    "zh": "v. 五月；n. 山楂花、五月",
+    "zh": "aux. 可以、可能；n. 五月",
     "unit": 18,
     "example": "That may or may not be true.",
     "exampleZh": "這可能是真的，也可能不是。"
@@ -9495,19 +9486,10 @@ const jhWordsDB = [
     "exampleZh": "水蒸氣使鏡子變得模糊不清。"
   },
   {
-    "id": 31056,
-    "en": "Miss",
-    "kk": "[mɪs]",
-    "zh": "v. 想念、錯過；n. 小姐、少女",
-    "unit": 18,
-    "example": "Miss Brown is our English teacher.",
-    "exampleZh": "布朗小姐是我們的英文老師。"
-  },
-  {
     "id": 31057,
     "en": "miss",
     "kk": "[mɪs]",
-    "zh": "v. 想念、錯過；n. 小姐、少女",
+    "zh": "v. 想念、錯過；n. 小姐",
     "unit": 18,
     "example": "Hurry up, or we will miss the bus.",
     "exampleZh": "快點，否則我們會錯過公車。"

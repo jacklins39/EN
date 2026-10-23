@@ -3243,7 +3243,7 @@ const externalVocabularyDB = [
     "id": 361,
     "en": "can",
     "kk": "[kæn]",
-    "zh": "modal v./n. 能夠、罐頭",
+    "zh": "aux. 能夠、可以；n. 罐頭、鐵罐",
     "unit": 1,
     "example": "Can you last (out) until I can get help?",
     "exampleZh": "你能堅持下去直到我得到幫助嗎？"
@@ -21468,7 +21468,7 @@ const externalVocabularyDB = [
     "id": 2386,
     "en": "ought",
     "kk": "[ɔt]",
-    "zh": "modal v. 應該、理應",
+    "zh": "aux. 應當、應該",
     "unit": 3,
     "example": "You ought to give up smoking.",
     "exampleZh": "你應該戒菸。"
@@ -58782,7 +58782,7 @@ const externalVocabularyDB = [
     "id": 6542,
     "en": "should",
     "kk": "[ʃʊd]",
-    "zh": "modal v. 應該、應當",
+    "zh": "aux. 應該、應當",
     "unit": 7,
     "example": "This should save you shedloads.",
     "exampleZh": "這應該可以幫你省下許多錢。"

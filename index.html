@@ -1118,6 +1118,25 @@
             </div>
         </div>
 
+        <!-- 全功能單字深度詳解彈窗 (動詞三態 / 詞形變化 / 搭配詞用法 / 相似詞 / 例句) -->
+        <div id="word-detail-modal" class="fixed inset-0 bg-gray-900/60 z-[70] hidden flex items-center justify-center p-3 sm:p-4 backdrop-blur-md">
+            <div class="bg-white rounded-3xl shadow-2xl p-5 sm:p-6 max-w-lg w-full relative dict-modal-anim max-h-[90vh] flex flex-col border border-gray-100">
+                <!-- 頂部導航與關閉列 -->
+                <div class="flex justify-between items-center pb-3 border-b border-gray-100 mb-3 shrink-0">
+                    <div class="flex items-center gap-2">
+                        <span id="detail-modal-source-badge" class="text-xs font-bold px-2.5 py-1 rounded-full bg-blue-50 text-[#0071E3] border border-blue-200 font-mono">單字深度詳解</span>
+                    </div>
+                    <button id="btn-close-word-detail" class="text-gray-400 hover:text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-full p-1.5 transition-colors cursor-pointer" title="關閉">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                    </button>
+                </div>
+                <!-- 滾動詳解內容區 -->
+                <div id="word-detail-content" class="overflow-y-auto pr-1 custom-scrollbar space-y-4">
+                    <!-- 動態注入內容 -->
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <nav class="fixed bottom-0 bg-white/90 backdrop-blur-md border-t border-gray-200 shadow-[0_-2px_10px_rgba(0,0,0,0.02)] left-0 right-0 max-w-md mx-auto bg-white border-t border-gray-200 z-50 shadow-[0_-2px_10px_rgba(0,0,0,0.05)]">
@@ -1278,7 +1297,7 @@
             if (!pureZh) return { pos: '', posBadgeText: '', pureZh: '', items: [] };
 
             // 支援如 "n. 烤肉；燒烤；v. 烤肉；燒烤" 或 "adj. 裸的；光禿禿的；v. 使赤裸；露出" 等多詞性獨立標示
-            const posRegex = /(?:^|[；;]\s*)((?:adj|adv|prep|conj|pron|int|num|det|art|aux|vi|vt|[avnd])\.)\s*/gi;
+            const posRegex = /(?:^|[；;]\s*)((?:adj|adv|prep|conj|pron|int|num|det|art|aux|modal\s*v|ph|vi|vt|[avnd])\.)\s*/gi;
             const matches = [...pureZh.matchAll(posRegex)];
             if (matches && matches.length > 0) {
                 const items = [];
@@ -2091,22 +2110,33 @@
         // ==========================================
         function renderPreviewModal(words, title) {
             const listHtml = words.map((w, i) => `
-                <div id="preview-row-${i}" class="preview-word-row flex justify-between items-center py-3 border-b border-gray-100 last:border-0 hover:bg-[#F5F5F7] transition px-2 rounded cursor-pointer" onclick="playAudio('${esc(w.en)}')">
+                <div id="preview-row-${i}" class="preview-word-row group flex justify-between items-center py-2.5 px-3 border-b border-gray-100 last:border-0 hover:bg-blue-50/60 rounded-xl transition-all cursor-pointer" onclick="showWordDetailModal('${esc(w.en)}')">
                     <div class="flex flex-col">
-                        <span class="font-semibold text-[#1D1D1F] text-lg flex items-center gap-2">
-                            ${esc(w.en)}
-                            <svg class="h-4 w-4 text-indigo-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd" /></svg>
-                        </span>
+                        <div class="flex items-center gap-2">
+                            <span class="font-bold text-[#1D1D1F] group-hover:text-[#0071E3] text-lg transition-colors">
+                                ${esc(w.en)}
+                            </span>
+                            <button type="button" class="p-1 text-blue-400 hover:text-[#0071E3] hover:bg-blue-100 rounded-full transition cursor-pointer" title="聆聽發音" onclick="event.stopPropagation(); unlockMobileAudio(); playAudio('${esc(w.en)}')">
+                                <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd" /></svg>
+                            </button>
+                        </div>
                         <span class="text-xs text-[#86868B] font-mono">${esc(w.kk || '')}</span>
                     </div>
-                    <span class="text-sm text-gray-600 font-medium text-right max-w-[50%] truncate" title="${esc(w.zh)}">${esc(w.zh)}</span>
+                    <div class="flex items-center gap-2 max-w-[55%]">
+                        <span class="text-sm text-gray-600 font-medium text-right truncate" title="${esc(w.zh)}">${esc(w.zh)}</span>
+                        <span class="text-gray-300 group-hover:text-[#0071E3] group-hover:translate-x-0.5 transition-all text-xs font-semibold">➔</span>
+                    </div>
                 </div>
             `).join('');
 
             const content = document.getElementById('dict-content');
             content.innerHTML = `
-                <div class="flex justify-between items-center mb-4 border-b border-[#D4DEC4] pb-2">
+                <div class="flex justify-between items-center mb-3 border-b border-[#D4DEC4] pb-2">
                     <h3 class="text-xl font-semibold text-[#0071E3]">${title} (<span id="preview-count">0</span>/${words.length})</h3>
+                </div>
+                <div class="text-[11px] text-gray-500 mb-2.5 flex items-center gap-1.5 bg-blue-50/60 px-2.5 py-1.5 rounded-lg border border-blue-100/60">
+                    <span class="text-blue-500 text-xs">💡</span>
+                    <span>點擊任一單字即可帶出「動詞三態、常見用法、相似詞與例句」詳解卡；點擊小喇叭可直接試聽發音。</span>
                 </div>
                 <div class="flex flex-col sm:flex-row items-center gap-2 mb-3 bg-[#F5F5F7] p-2 rounded-xl border-0 border-gray-100">
                     <select id="auto-play-speed" aria-label="自動播放速度" class="text-sm border-0 border-gray-300 rounded p-1.5 bg-white text-gray-700 outline-none focus:ring-1 focus:ring-[#0071E3] w-full sm:flex-grow">
@@ -3575,7 +3605,542 @@
 
         let wasAutoFlashcardPausedByModal = false;
 
-        async function lookupWord(word) {
+        // ==========================================
+        // 語言學引擎：動詞三態、詞形變化、高頻搭配與相似詞
+        // ==========================================
+        const IRREGULAR_VERBS = {
+            "be": { past: "was / were", pp: "been", ing: "being", s: "is / are" },
+            "have": { past: "had", pp: "had", ing: "having", s: "has" },
+            "do": { past: "did", pp: "done", ing: "doing", s: "does" },
+            "go": { past: "went", pp: "gone", ing: "going", s: "goes" },
+            "say": { past: "said", pp: "said", ing: "saying", s: "says" },
+            "get": { past: "got", pp: "got / gotten", ing: "getting", s: "gets" },
+            "make": { past: "made", pp: "made", ing: "making", s: "makes" },
+            "know": { past: "knew", pp: "known", ing: "knowing", s: "knows" },
+            "think": { past: "thought", pp: "thought", ing: "thinking", s: "thinks" },
+            "take": { past: "took", pp: "taken", ing: "taking", s: "takes" },
+            "see": { past: "saw", pp: "seen", ing: "seeing", s: "sees" },
+            "come": { past: "came", pp: "come", ing: "coming", s: "comes" },
+            "want": { past: "wanted", pp: "wanted", ing: "wanting", s: "wants" },
+            "look": { past: "looked", pp: "looked", ing: "looking", s: "looks" },
+            "use": { past: "used", pp: "used", ing: "using", s: "uses" },
+            "find": { past: "found", pp: "found", ing: "finding", s: "finds" },
+            "give": { past: "gave", pp: "given", ing: "giving", s: "gives" },
+            "tell": { past: "told", pp: "told", ing: "telling", s: "tells" },
+            "work": { past: "worked", pp: "worked", ing: "working", s: "works" },
+            "call": { past: "called", pp: "called", ing: "calling", s: "calls" },
+            "try": { past: "tried", pp: "tried", ing: "trying", s: "tries" },
+            "ask": { past: "asked", pp: "asked", ing: "asking", s: "asks" },
+            "need": { past: "needed", pp: "needed", ing: "needing", s: "needs" },
+            "feel": { past: "felt", pp: "felt", ing: "feeling", s: "feels" },
+            "become": { past: "became", pp: "become", ing: "becoming", s: "becomes" },
+            "leave": { past: "left", pp: "left", ing: "leaving", s: "leaves" },
+            "put": { past: "put", pp: "put", ing: "putting", s: "puts" },
+            "mean": { past: "meant", pp: "meant", ing: "meaning", s: "means" },
+            "keep": { past: "kept", pp: "kept", ing: "keeping", s: "keeps" },
+            "let": { past: "let", pp: "let", ing: "letting", s: "lets" },
+            "begin": { past: "began", pp: "begun", ing: "beginning", s: "begins" },
+            "seem": { past: "seemed", pp: "seemed", ing: "seeming", s: "seems" },
+            "help": { past: "helped", pp: "helped", ing: "helping", s: "helps" },
+            "talk": { past: "talked", pp: "talked", ing: "talking", s: "talks" },
+            "turn": { past: "turned", pp: "turned", ing: "turning", s: "turns" },
+            "start": { past: "started", pp: "started", ing: "starting", s: "starts" },
+            "show": { past: "showed", pp: "shown / showed", ing: "showing", s: "shows" },
+            "hear": { past: "heard", pp: "heard", ing: "hearing", s: "hears" },
+            "play": { past: "played", pp: "played", ing: "playing", s: "plays" },
+            "run": { past: "ran", pp: "run", ing: "running", s: "runs" },
+            "move": { past: "moved", pp: "moved", ing: "moving", s: "moves" },
+            "like": { past: "liked", pp: "liked", ing: "liking", s: "likes" },
+            "live": { past: "lived", pp: "lived", ing: "living", s: "lives" },
+            "believe": { past: "believed", pp: "believed", ing: "believing", s: "believes" },
+            "hold": { past: "held", pp: "held", ing: "holding", s: "holds" },
+            "bring": { past: "brought", pp: "brought", ing: "bringing", s: "brings" },
+            "happen": { past: "happened", pp: "happened", ing: "happening", s: "happens" },
+            "write": { past: "wrote", pp: "written", ing: "writing", s: "writes" },
+            "provide": { past: "provided", pp: "provided", ing: "providing", s: "provides" },
+            "sit": { past: "sat", pp: "sat", ing: "sitting", s: "sits" },
+            "stand": { past: "stood", pp: "stood", ing: "standing", s: "stands" },
+            "lose": { past: "lost", pp: "lost", ing: "losing", s: "loses" },
+            "pay": { past: "paid", pp: "paid", ing: "paying", s: "pays" },
+            "meet": { past: "met", pp: "met", ing: "meeting", s: "meets" },
+            "include": { past: "included", pp: "included", ing: "including", s: "includes" },
+            "continue": { past: "continued", pp: "continued", ing: "continuing", s: "continues" },
+            "set": { past: "set", pp: "set", ing: "setting", s: "sets" },
+            "learn": { past: "learned / learnt", pp: "learned / learnt", ing: "learning", s: "learns" },
+            "change": { past: "changed", pp: "changed", ing: "changing", s: "changes" },
+            "lead": { past: "led", pp: "led", ing: "leading", s: "leads" },
+            "understand": { past: "understood", pp: "understood", ing: "understanding", s: "understands" },
+            "watch": { past: "watched", pp: "watched", ing: "watching", s: "watches" },
+            "follow": { past: "followed", pp: "followed", ing: "following", s: "follows" },
+            "stop": { past: "stopped", pp: "stopped", ing: "stopping", s: "stops" },
+            "create": { past: "created", pp: "created", ing: "creating", s: "creates" },
+            "speak": { past: "spoke", pp: "spoken", ing: "speaking", s: "speaks" },
+            "read": { past: "read [rɛd]", pp: "read [rɛd]", ing: "reading", s: "reads" },
+            "allow": { past: "allowed", pp: "allowed", ing: "allowing", s: "allows" },
+            "add": { past: "added", pp: "added", ing: "adding", s: "adds" },
+            "spend": { past: "spent", pp: "spent", ing: "spending", s: "spends" },
+            "grow": { past: "grew", pp: "grown", ing: "growing", s: "grows" },
+            "open": { past: "opened", pp: "opened", ing: "opening", s: "opens" },
+            "walk": { past: "walked", pp: "walked", ing: "walking", s: "walks" },
+            "win": { past: "won", pp: "won", ing: "winning", s: "wins" },
+            "teach": { past: "taught", pp: "taught", ing: "teaching", s: "teaches" },
+            "offer": { past: "offered", pp: "offered", ing: "offering", s: "offers" },
+            "remember": { past: "remembered", pp: "remembered", ing: "remembering", s: "remembers" },
+            "buy": { past: "bought", pp: "bought", ing: "buying", s: "buys" },
+            "wait": { past: "waited", pp: "waited", ing: "waiting", s: "waits" },
+            "serve": { past: "served", pp: "served", ing: "serving", s: "serves" },
+            "die": { past: "died", pp: "died", ing: "dying", s: "dies" },
+            "send": { past: "sent", pp: "sent", ing: "sending", s: "sends" },
+            "build": { past: "built", pp: "built", ing: "building", s: "builds" },
+            "stay": { past: "stayed", pp: "stayed", ing: "staying", s: "stays" },
+            "fall": { past: "fell", pp: "fallen", ing: "falling", s: "falls" },
+            "cut": { past: "cut", pp: "cut", ing: "cutting", s: "cuts" },
+            "reach": { past: "reached", pp: "reached", ing: "reaching", s: "reaches" },
+            "kill": { past: "killed", pp: "killed", ing: "killing", s: "kills" },
+            "raise": { past: "raised", pp: "raised", ing: "raising", s: "raises" },
+            "pass": { past: "passed", pp: "passed", ing: "passing", s: "passes" },
+            "sell": { past: "sold", pp: "sold", ing: "selling", s: "sells" },
+            "decide": { past: "decided", pp: "decided", ing: "deciding", s: "decides" },
+            "return": { past: "returned", pp: "returned", ing: "returning", s: "returns" },
+            "explain": { past: "explained", pp: "explained", ing: "explaining", s: "explains" },
+            "hope": { past: "hoped", pp: "hoped", ing: "hoping", s: "hopes" },
+            "carry": { past: "carried", pp: "carried", ing: "carrying", s: "carries" },
+            "drive": { past: "drove", pp: "driven", ing: "driving", s: "drives" },
+            "break": { past: "broke", pp: "broken", ing: "breaking", s: "breaks" },
+            "receive": { past: "received", pp: "received", ing: "receiving", s: "receives" },
+            "agree": { past: "agreed", pp: "agreed", ing: "agreeing", s: "agrees" },
+            "support": { past: "supported", pp: "supported", ing: "supporting", s: "supports" },
+            "hit": { past: "hit", pp: "hit", ing: "hitting", s: "hits" },
+            "produce": { past: "produced", pp: "produced", ing: "producing", s: "produces" },
+            "eat": { past: "ate", pp: "eaten", ing: "eating", s: "eats" },
+            "catch": { past: "caught", pp: "caught", ing: "catching", s: "catches" },
+            "draw": { past: "drew", pp: "drawn", ing: "drawing", s: "draws" },
+            "choose": { past: "chose", pp: "chosen", ing: "choosing", s: "chooses" },
+            "cause": { past: "caused", pp: "caused", ing: "causing", s: "causes" },
+            "point": { past: "pointed", pp: "pointed", ing: "pointing", s: "points" },
+            "listen": { past: "listened", pp: "listened", ing: "listening", s: "listens" },
+            "wear": { past: "wore", pp: "worn", ing: "wearing", s: "wears" },
+            "fight": { past: "fought", pp: "fought", ing: "fighting", s: "fights" },
+            "throw": { past: "threw", pp: "thrown", ing: "throwing", s: "throws" },
+            "star": { past: "starred", pp: "starred", ing: "starring", s: "stars" },
+            "fly": { past: "flew", pp: "flown", ing: "flying", s: "flies" },
+            "sleep": { past: "slept", pp: "slept", ing: "sleeping", s: "sleeps" },
+            "ride": { past: "rode", pp: "ridden", ing: "riding", s: "rides" },
+            "sing": { past: "sang", pp: "sung", ing: "singing", s: "sings" },
+            "drink": { past: "drank", pp: "drunk", ing: "drinking", s: "drinks" },
+            "swim": { past: "swam", pp: "swum", ing: "swimming", s: "swims" },
+            "forget": { past: "forgot", pp: "forgotten", ing: "forgetting", s: "forgets" },
+            "hide": { past: "hid", pp: "hidden", ing: "hiding", s: "hides" },
+            "ring": { past: "rang", pp: "rung", ing: "ringing", s: "rings" },
+            "shut": { past: "shut", pp: "shut", ing: "shutting", s: "shuts" },
+            "hurt": { past: "hurt", pp: "hurt", ing: "hurting", s: "hurts" },
+            "rise": { past: "rose", pp: "risen", ing: "rising", s: "rises" },
+            "wake": { past: "woke", pp: "woken", ing: "waking", s: "wakes" },
+            "blow": { past: "blew", pp: "blown", ing: "blowing", s: "blows" },
+            "burn": { past: "burned / burnt", pp: "burned / burnt", ing: "burning", s: "burns" },
+            "feed": { past: "fed", pp: "fed", ing: "feeding", s: "feeds" },
+            "bite": { past: "bit", pp: "bitten", ing: "biting", s: "bites" },
+            "shake": { past: "shook", pp: "shaken", ing: "shaking", s: "shakes" },
+            "shine": { past: "shone", pp: "shone", ing: "shining", s: "shines" },
+            "shoot": { past: "shot", pp: "shot", ing: "shooting", s: "shoots" },
+            "steal": { past: "stole", pp: "stolen", ing: "stealing", s: "steals" },
+            "tear": { past: "tore", pp: "torn", ing: "tearing", s: "tears" },
+            "freeze": { past: "froze", pp: "frozen", ing: "freezing", s: "freezes" },
+            "lend": { past: "lent", pp: "lent", ing: "lending", s: "lends" },
+            "dig": { past: "dug", pp: "dug", ing: "digging", s: "digs" },
+            "sink": { past: "sank", pp: "sunk", ing: "sinking", s: "sinks" }
+        };
+
+        const IRREGULAR_PLURALS = {
+            "child": "children",
+            "foot": "feet",
+            "tooth": "teeth",
+            "man": "men",
+            "woman": "women",
+            "mouse": "mice",
+            "person": "people",
+            "sheep": "sheep",
+            "fish": "fish",
+            "deer": "deer",
+            "ox": "oxen",
+            "goose": "geese",
+            "datum": "data",
+            "crisis": "crises",
+            "basis": "bases",
+            "analysis": "analyses",
+            "phenomenon": "phenomena",
+            "criterion": "criteria"
+        };
+
+        const IRREGULAR_COMPS = {
+            "good": { base: "good", comp: "better", super: "best" },
+            "well": { base: "well", comp: "better", super: "best" },
+            "bad": { base: "bad", comp: "worse", super: "worst" },
+            "badly": { base: "badly", comp: "worse", super: "worst" },
+            "far": { base: "far", comp: "farther / further", super: "farthest / furthest" },
+            "little": { base: "little", comp: "less", super: "least" },
+            "many": { base: "many", comp: "more", super: "most" },
+            "much": { base: "much", comp: "more", super: "most" },
+            "old": { base: "old", comp: "older / elder", super: "oldest / eldest" }
+        };
+
+        const CORE_WORD_COLLOCATIONS = {
+            "star": [
+                { en: "star in a movie", zh: "主演電影" },
+                { en: "shooting star", zh: "流星" },
+                { en: "movie star / pop star", zh: "電影明星 / 流行巨星" },
+                { en: "under the stars", zh: "在星空下；露天" }
+            ],
+            "speech": [
+                { en: "give / make a speech", zh: "發表演說" },
+                { en: "freedom of speech", zh: "言論自由" },
+                { en: "speech impediment", zh: "語言障礙" },
+                { en: "keynote speech", zh: "主題演講" }
+            ],
+            "lesson": [
+                { en: "learn a lesson", zh: "吸取教訓；學到一課" },
+                { en: "teach someone a lesson", zh: "給某人一個教訓" },
+                { en: "take lessons in...", zh: "上...的課程" },
+                { en: "piano / tennis lesson", zh: "鋼琴課 / 網球課" }
+            ],
+            "ask": [
+                { en: "ask for help / advice", zh: "請求協助 / 建議" },
+                { en: "ask about...", zh: "詢問關於..." },
+                { en: "ask someone out", zh: "約某人出去約會" },
+                { en: "ask a favor", zh: "請求幫忙" },
+                { en: "ask a question", zh: "提出問題" }
+            ],
+            "make": [
+                { en: "make a decision", zh: "做出決定" },
+                { en: "make a mistake", zh: "犯錯" },
+                { en: "make sense", zh: "有道理；合邏輯" },
+                { en: "make sure", zh: "確保；查明" }
+            ],
+            "take": [
+                { en: "take advantage of", zh: "利用；佔便宜" },
+                { en: "take care of", zh: "照顧；照料" },
+                { en: "take part in", zh: "參加；參與" },
+                { en: "take for granted", zh: "視為理所當然" }
+            ],
+            "get": [
+                { en: "get rid of", zh: "擺脫；去除" },
+                { en: "get used to", zh: "習慣於" },
+                { en: "get along with", zh: "與...和睦相處" },
+                { en: "get in touch with", zh: "與...取得聯繫" }
+            ],
+            "give": [
+                { en: "give up", zh: "放棄" },
+                { en: "give in", zh: "屈服；讓步" },
+                { en: "give rise to", zh: "引起；導致" },
+                { en: "give a hand", zh: "幫一把；協助" }
+            ],
+            "keep": [
+                { en: "keep in mind", zh: "牢記在心" },
+                { en: "keep up with", zh: "跟上...進度" },
+                { en: "keep in touch", zh: "保持聯絡" },
+                { en: "keep track of", zh: "記錄；追蹤" }
+            ],
+            "look": [
+                { en: "look forward to", zh: "期待；盼望" },
+                { en: "look into", zh: "調查；研究" },
+                { en: "look after", zh: "照料；照顧" },
+                { en: "look down on", zh: "輕視；瞧不起" }
+            ],
+            "turn": [
+                { en: "turn down", zh: "拒絕；調低" },
+                { en: "turn out", zh: "結果是；證明為" },
+                { en: "turn up", zh: "出現；調高" },
+                { en: "turn into", zh: "轉變成" }
+            ],
+            "break": [
+                { en: "break down", zh: "故障；崩潰" },
+                { en: "break up", zh: "分手；結束" },
+                { en: "break into", zh: "闖入；突然開始" },
+                { en: "break through", zh: "突破" }
+            ],
+            "come": [
+                { en: "come across", zh: "偶然遇見；碰上" },
+                { en: "come up with", zh: "想出；提出" },
+                { en: "come true", zh: "實現；成真" },
+                { en: "come down with", zh: "感染；染病" }
+            ],
+            "bring": [
+                { en: "bring about", zh: "引起；導致" },
+                { en: "bring up", zh: "撫養；提出討論" },
+                { en: "bring to light", zh: "揭露；公諸於世" }
+            ],
+            "set": [
+                { en: "set up", zh: "建立；設置" },
+                { en: "set off", zh: "出發；引爆" },
+                { en: "set an example", zh: "樹立榜樣" }
+            ],
+            "hold": [
+                { en: "hold on", zh: "稍等；堅持" },
+                { en: "hold back", zh: "阻礙；克制" },
+                { en: "hold accountable", zh: "追究責任" }
+            ],
+            "catch": [
+                { en: "catch up with", zh: "趕上" },
+                { en: "catch one's eye", zh: "吸引某人注意" },
+                { en: "catch a cold", zh: "感冒" }
+            ],
+            "fall": [
+                { en: "fall apart", zh: "瓦解；崩潰" },
+                { en: "fall behind", zh: "落後" },
+                { en: "fall in love with", zh: "愛上..." }
+            ],
+            "lead": [
+                { en: "lead to", zh: "導致；引起" },
+                { en: "lead the way", zh: "引路；帶頭" },
+                { en: "lead a life", zh: "過生活" }
+            ],
+            "pay": [
+                { en: "pay attention to", zh: "注意；專注於" },
+                { en: "pay off", zh: "得到回報；還清" }
+            ],
+            "run": [
+                { en: "run out of", zh: "耗盡；用完" },
+                { en: "run into", zh: "偶遇；撞上" },
+                { en: "run a business", zh: "經營生意" }
+            ],
+            "call": [
+                { en: "call off", zh: "取消" },
+                { en: "call for", zh: "要求；呼籲" },
+                { en: "call back", zh: "回電" }
+            ],
+            "carry": [
+                { en: "carry out", zh: "執行；落實" },
+                { en: "carry on", zh: "繼續進行" }
+            ],
+            "stand": [
+                { en: "stand for", zh: "代表；象徵" },
+                { en: "stand out", zh: "突出；顯眼" },
+                { en: "stand by", zh: "支持；待命" }
+            ],
+            "deal": [
+                { en: "deal with", zh: "處理；應對" },
+                { en: "make a deal", zh: "達成交易；妥協" }
+            ]
+        };
+
+        const CORE_WORD_SYNONYMS = {
+            "star": ["celebrity", "icon", "lead", "performer", "luminary", "superstar"],
+            "speech": ["address", "lecture", "presentation", "talk", "discourse", "oration"],
+            "lesson": ["class", "instruction", "lecture", "tutorial", "moral", "session"],
+            "ask": ["inquire", "request", "demand", "question", "beg", "seek"],
+            "happy": ["glad", "cheerful", "joyful", "delighted", "content", "pleased"],
+            "sad": ["unhappy", "sorrowful", "depressed", "gloomy", "mournful", "down"],
+            "big": ["large", "huge", "enormous", "giant", "vast", "immense"],
+            "small": ["tiny", "little", "miniature", "compact", "petite", "minor"],
+            "fast": ["quick", "rapid", "swift", "speedy", "brisk", "prompt"],
+            "slow": ["gradual", "sluggish", "leisurely", "delayed", "steady", "unhurried"],
+            "smart": ["intelligent", "clever", "bright", "sharp", "wise", "brilliant"],
+            "difficult": ["hard", "challenging", "tough", "demanding", "arduous", "complex"],
+            "easy": ["simple", "effortless", "straightforward", "uncomplicated", "smooth"],
+            "start": ["begin", "commence", "initiate", "launch", "open"],
+            "stop": ["halt", "cease", "terminate", "pause", "conclude", "end"],
+            "important": ["crucial", "essential", "significant", "vital", "critical", "major"],
+            "help": ["assist", "aid", "support", "serve", "facilitate", "relieve"],
+            "show": ["display", "exhibit", "demonstrate", "reveal", "present", "indicate"],
+            "think": ["believe", "consider", "ponder", "reflect", "contemplate", "judge"],
+            "make": ["create", "build", "construct", "produce", "generate", "form"],
+            "change": ["alter", "modify", "transform", "shift", "vary", "adjust"],
+            "problem": ["issue", "trouble", "difficulty", "obstacle", "dilemma", "challenge"],
+            "goal": ["target", "aim", "objective", "purpose", "ambition"],
+            "job": ["career", "occupation", "profession", "vocation", "work", "position"],
+            "buy": ["purchase", "acquire", "obtain", "procure"],
+            "break": ["smash", "fracture", "shatter", "crack", "rupture"],
+            "clean": ["spotless", "tidy", "pure", "neat", "immaculate"],
+            "angry": ["furious", "mad", "irritated", "indignant", "annoyed"],
+            "beautiful": ["gorgeous", "lovely", "attractive", "pretty", "stunning"],
+            "rich": ["wealthy", "affluent", "prosperous", "loaded", "well-off"],
+            "poor": ["needy", "destitute", "penniless", "impoverished", "broke"]
+        };
+
+        function isVowel(c) {
+            return 'aeiou'.includes((c || '').toLowerCase());
+        }
+
+        function computeWordForms(word, posStr = '') {
+            const w = (word || '').trim().toLowerCase();
+            if (!w || !/^[a-z]+$/i.test(w)) return null;
+
+            const forms = {
+                word: w,
+                isVerb: false,
+                isNoun: false,
+                isAdj: false,
+                verbForms: null,
+                nounForms: null,
+                adjForms: null
+            };
+
+            const p = (posStr || '').toLowerCase();
+            const hasV = p.includes('v.') || p.includes('vi.') || p.includes('vt.');
+            const hasN = p.includes('n.');
+            const hasAdj = p.includes('adj.') || p.includes('a.');
+
+            // 1. 動詞變化
+            if (hasV || (IRREGULAR_VERBS[w] !== undefined && IRREGULAR_VERBS[w] !== null)) {
+                forms.isVerb = true;
+                if (IRREGULAR_VERBS[w]) {
+                    forms.verbForms = {
+                        base: w,
+                        past: IRREGULAR_VERBS[w].past,
+                        pp: IRREGULAR_VERBS[w].pp,
+                        ing: IRREGULAR_VERBS[w].ing,
+                        s: IRREGULAR_VERBS[w].s
+                    };
+                } else {
+                    let sForm = w + 's';
+                    if (w.endsWith('s') || w.endsWith('sh') || w.endsWith('ch') || w.endsWith('x') || w.endsWith('z') || w.endsWith('o')) {
+                        sForm = w + 'es';
+                    } else if (w.endsWith('y') && w.length > 1 && !isVowel(w[w.length - 2])) {
+                        sForm = w.slice(0, -1) + 'ies';
+                    }
+
+                    let ingForm = w + 'ing';
+                    let edForm = w + 'ed';
+
+                    if (w.endsWith('ie')) {
+                        ingForm = w.slice(0, -2) + 'ying';
+                        edForm = w + 'd';
+                    } else if (w.endsWith('e') && !w.endsWith('ee')) {
+                        ingForm = w.slice(0, -1) + 'ing';
+                        edForm = w + 'd';
+                    } else if (w.endsWith('y') && w.length > 1 && !isVowel(w[w.length - 2])) {
+                        edForm = w.slice(0, -1) + 'ied';
+                    } else if (w.length >= 3) {
+                        const c1 = w[w.length - 3];
+                        const v = w[w.length - 2];
+                        const c2 = w[w.length - 1];
+                        if (!isVowel(c1) && isVowel(v) && !isVowel(c2) && !'wxy'.includes(c2)) {
+                            ingForm = w + c2 + 'ing';
+                            edForm = w + c2 + 'ed';
+                        }
+                    }
+
+                    forms.verbForms = {
+                        base: w,
+                        past: edForm,
+                        pp: edForm,
+                        ing: ingForm,
+                        s: sForm
+                    };
+                }
+            }
+
+            // 2. 名詞複數變化
+            if (hasN || IRREGULAR_PLURALS[w] || (!hasV && !hasAdj && !forms.isVerb)) {
+                forms.isNoun = true;
+                if (IRREGULAR_PLURALS[w]) {
+                    forms.nounForms = {
+                        singular: w,
+                        plural: IRREGULAR_PLURALS[w]
+                    };
+                } else {
+                    let plural = w + 's';
+                    if (w.endsWith('s') || w.endsWith('sh') || w.endsWith('ch') || w.endsWith('x') || w.endsWith('z')) {
+                        plural = w + 'es';
+                    } else if (w.endsWith('y') && w.length > 1 && !isVowel(w[w.length - 2])) {
+                        plural = w.slice(0, -1) + 'ies';
+                    } else if (['leaf', 'life', 'knife', 'half', 'thief', 'wolf', 'shelf', 'wife'].includes(w)) {
+                        plural = w.replace(/fe?$/, 'ves');
+                    }
+                    forms.nounForms = {
+                        singular: w,
+                        plural: plural
+                    };
+                }
+            }
+
+            // 3. 形容詞比較級與最高級
+            if (hasAdj || IRREGULAR_COMPS[w]) {
+                forms.isAdj = true;
+                if (IRREGULAR_COMPS[w]) {
+                    forms.adjForms = IRREGULAR_COMPS[w];
+                } else {
+                    if (w.endsWith('y') && w.length > 1 && !isVowel(w[w.length - 2])) {
+                        forms.adjForms = {
+                            base: w,
+                            comp: w.slice(0, -1) + 'ier',
+                            super: w.slice(0, -1) + 'iest'
+                        };
+                    } else if (w.endsWith('e')) {
+                        forms.adjForms = {
+                            base: w,
+                            comp: w + 'r',
+                            super: w + 'st'
+                        };
+                    } else if (w.length <= 5) {
+                        let doubleC = '';
+                        if (w.length >= 3) {
+                            const c1 = w[w.length - 3];
+                            const v = w[w.length - 2];
+                            const c2 = w[w.length - 1];
+                            if (!isVowel(c1) && isVowel(v) && !isVowel(c2) && !'wxy'.includes(c2)) {
+                                doubleC = c2;
+                            }
+                        }
+                        forms.adjForms = {
+                            base: w,
+                            comp: w + doubleC + 'er',
+                            super: w + doubleC + 'est'
+                        };
+                    } else {
+                        forms.adjForms = {
+                            base: w,
+                            comp: 'more ' + w,
+                            super: 'most ' + w
+                        };
+                    }
+                }
+            }
+
+            return forms;
+        }
+
+        function getWordCollocations(word, currentItem = null) {
+            const w = (word || '').trim().toLowerCase();
+            const list = [];
+            if (CORE_WORD_COLLOCATIONS[w]) {
+                list.push(...CORE_WORD_COLLOCATIONS[w]);
+            }
+            if (list.length < 4 && typeof vocabularyDB !== 'undefined') {
+                for (const item of vocabularyDB) {
+                    if (list.length >= 4) break;
+                    if (!item || !item.en) continue;
+                    const enLower = item.en.toLowerCase();
+                    if (enLower.includes(' ') && enLower.split(/\s+/).includes(w) && !list.find(c => c.en.toLowerCase() === enLower)) {
+                        const parsed = splitPosAndZh(item.zh, item.pos);
+                        list.push({ en: item.en, zh: parsed.pureZh || item.zh });
+                    }
+                }
+            }
+            return list;
+        }
+
+        function getWordSynonyms(word) {
+            const w = (word || '').trim().toLowerCase();
+            if (CORE_WORD_SYNONYMS[w]) {
+                return [...CORE_WORD_SYNONYMS[w]];
+            }
+            return [];
+        }
+
+        function getUnitBadgeInfo(unit) {
+            if (unit >= 1 && unit <= 6) return { name: `高中 7000 單字 (單元 ${unit})`, color: 'bg-blue-50 text-[#0071E3] border-blue-200' };
+            if (unit >= 11 && unit <= 13) return { name: `TOEIC 多益核心 (單元 ${unit})`, color: 'bg-emerald-50 text-emerald-700 border-emerald-200' };
+            if (unit >= 17 && unit <= 18) return { name: `國中基礎 1200 (單元 ${unit})`, color: 'bg-amber-50 text-amber-700 border-amber-200' };
+            if (unit === 10) return { name: '自訂字庫', color: 'bg-purple-50 text-purple-700 border-purple-200' };
+            return { name: `單元 ${unit}`, color: 'bg-gray-100 text-gray-700 border-gray-200' };
+        }
+
+        async function showWordDetailModal(word) {
+            if (!word) return;
+            const cleanWord = String(word).trim().toLowerCase().replace(/['".,!?]/g, '');
+            if (!cleanWord) return;
+
             // 立即凍結背景音訊與計時器，防止自動輪播或自動翻頁跳到下一個單字
             if (autoFlashcardTimerId) {
                 clearTimeout(autoFlashcardTimerId);
@@ -3592,30 +4157,328 @@
             }
             stopAllAudio();
 
-            const modal = document.getElementById('dict-modal');
-            const content = document.getElementById('dict-content');
+            const modal = document.getElementById('word-detail-modal');
+            const content = document.getElementById('word-detail-content');
+            if (!modal || !content) return;
+
             modal.classList.remove('hidden');
-            content.innerHTML = `<div class="flex justify-center py-4"><div class="animate-spin rounded-full h-8 w-8 border-b-2 border-indigo-600"></div></div>`;
-            
-            // 1. 先查本地單字庫 (瞬間完成)
-            const localWord = vocabularyDB.find(w => w.en.toLowerCase() === word.toLowerCase());
-            
-            if (localWord) {
-                renderDictModal(word, localWord.kk || '', '內建 7000 單字庫', localWord.zh);
-                return;
+
+            // 1. 本地字庫精準查找
+            let item = vocabularyDB.find(w => w.en.toLowerCase() === cleanWord);
+            if (!item && typeof customWordsDB !== 'undefined') {
+                item = customWordsDB.find(w => w.en.toLowerCase() === cleanWord);
             }
 
-            // 2. 本地查不到，改用多重備援線上翻譯 API
-            try {
-                const translated = await fetchQuickTranslation(word);
-                if (translated) {
-                    renderDictModal(word, '', '線上翻譯', translated);
-                } else {
-                    renderDictErrorModal(word);
+            if (item) {
+                renderWordDetailCard(item);
+            } else {
+                content.innerHTML = `
+                    <div class="flex flex-col items-center justify-center py-12 space-y-3">
+                        <div class="animate-spin rounded-full h-10 w-10 border-b-2 border-[#0071E3]"></div>
+                        <p class="text-sm text-gray-500 font-medium">正在為你檢索「<span class="font-bold text-gray-800">${esc(cleanWord)}</span>」的完整釋義與詞形變化...</p>
+                    </div>
+                `;
+                try {
+                    const trans = await fetchQuickTranslation(cleanWord);
+                    if (trans) {
+                        const tempItem = {
+                            en: cleanWord,
+                            kk: '',
+                            zh: trans,
+                            unit: 0,
+                            example: '',
+                            exampleZh: ''
+                        };
+                        renderWordDetailCard(tempItem, true);
+                    } else {
+                        renderWordDetailCard({
+                            en: cleanWord,
+                            kk: '',
+                            zh: '常用詞彙',
+                            unit: 0,
+                            example: '',
+                            exampleZh: ''
+                        }, true);
+                    }
+                } catch(e) {
+                    renderWordDetailCard({
+                        en: cleanWord,
+                        kk: '',
+                        zh: '常用詞彙',
+                        unit: 0,
+                        example: '',
+                        exampleZh: ''
+                    }, true);
                 }
-            } catch (e) {
-                renderDictErrorModal(word);
             }
+        }
+
+        function renderWordDetailCard(item, isExternal = false) {
+            const content = document.getElementById('word-detail-content');
+            if (!content) return;
+
+            const w = item;
+            const parsed = splitPosAndZh(w.zh, w.pos);
+            const forms = computeWordForms(w.en, w.zh);
+            const collocations = getWordCollocations(w.en, w);
+            const synonyms = getWordSynonyms(w.en);
+            const unitInfo = isExternal ? { name: '外部查詢', color: 'bg-purple-50 text-purple-700 border-purple-200' } : getUnitBadgeInfo(w.unit || builtinUnitOf(w.en) || 1);
+
+            // 更新彈窗頂部來源徽章
+            const badgeEl = document.getElementById('detail-modal-source-badge');
+            if (badgeEl) {
+                badgeEl.className = `text-xs font-bold px-2.5 py-1 rounded-full border ${unitInfo.color} font-mono`;
+                badgeEl.innerText = unitInfo.name;
+            }
+
+            // 動詞變化區塊 HTML
+            let formsHtml = '';
+            if (forms) {
+                if (forms.verbForms) {
+                    formsHtml += `
+                        <div class="bg-gradient-to-br from-blue-50/70 to-indigo-50/50 p-3.5 rounded-2xl border border-blue-100/80">
+                            <div class="flex items-center gap-1.5 text-xs font-bold text-blue-900 mb-2">
+                                <span>⚡</span><span>動詞三態與詞形變化 (Verb Forms)</span>
+                            </div>
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs">
+                                <div class="bg-white/95 p-2 rounded-xl border border-blue-100/60 shadow-2xs">
+                                    <span class="text-gray-400 block text-[10px] font-semibold">原形 (Base)</span>
+                                    <span class="font-bold text-gray-800 font-mono text-sm">${esc(forms.verbForms.base || w.en)}</span>
+                                </div>
+                                <div class="bg-white/95 p-2 rounded-xl border border-blue-100/60 shadow-2xs">
+                                    <span class="text-blue-500 block text-[10px] font-semibold">過去式 (Past)</span>
+                                    <span class="font-bold text-[#0071E3] font-mono text-sm">${esc(forms.verbForms.past)}</span>
+                                </div>
+                                <div class="bg-white/95 p-2 rounded-xl border border-blue-100/60 shadow-2xs">
+                                    <span class="text-purple-500 block text-[10px] font-semibold">過去分詞 (P.P.)</span>
+                                    <span class="font-bold text-purple-700 font-mono text-sm">${esc(forms.verbForms.pp)}</span>
+                                </div>
+                                <div class="bg-white/95 p-2 rounded-xl border border-blue-100/60 shadow-2xs">
+                                    <span class="text-emerald-500 block text-[10px] font-semibold">現在分詞 (-ing)</span>
+                                    <span class="font-bold text-emerald-700 font-mono text-sm">${esc(forms.verbForms.ing)}</span>
+                                </div>
+                            </div>
+                            <div class="mt-2 text-[11px] text-gray-500 flex items-center justify-between px-1">
+                                <span>第三人稱單數現在式 (-s/-es)：<strong class="text-gray-800 font-mono">${esc(forms.verbForms.s)}</strong></span>
+                            </div>
+                        </div>
+                    `;
+                }
+                if (forms.nounForms) {
+                    formsHtml += `
+                        <div class="bg-amber-50/60 p-3 rounded-2xl border border-amber-200/70">
+                            <div class="flex items-center gap-1.5 text-xs font-bold text-amber-900 mb-1.5">
+                                <span>📦</span><span>名詞單複數變化 (Noun Plurals)</span>
+                            </div>
+                            <div class="flex items-center gap-4 text-xs">
+                                <span class="text-gray-600">單數：<strong class="text-gray-900 font-mono text-sm">${esc(forms.nounForms.singular)}</strong></span>
+                                <span class="text-gray-600">複數 (Plural)：<strong class="text-amber-700 font-mono text-sm">${esc(forms.nounForms.plural)}</strong></span>
+                            </div>
+                        </div>
+                    `;
+                }
+                if (forms.adjForms) {
+                    formsHtml += `
+                        <div class="bg-emerald-50/60 p-3 rounded-2xl border border-emerald-200/70">
+                            <div class="flex items-center gap-1.5 text-xs font-bold text-emerald-900 mb-1.5">
+                                <span>📈</span><span>形容詞比較級與最高級 (Degrees of Comparison)</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-xs flex-wrap">
+                                <span class="text-gray-600">原級：<strong class="text-gray-900 font-mono text-sm">${esc(forms.adjForms.base)}</strong></span>
+                                <span class="text-gray-600">比較級：<strong class="text-emerald-700 font-mono text-sm">${esc(forms.adjForms.comp)}</strong></span>
+                                <span class="text-gray-600">最高級：<strong class="text-emerald-800 font-mono text-sm">${esc(forms.adjForms.super)}</strong></span>
+                            </div>
+                        </div>
+                    `;
+                }
+            }
+
+            // 搭配詞區塊 HTML
+            let collocationsHtml = '';
+            if (collocations && collocations.length > 0) {
+                collocationsHtml = `
+                    <div class="bg-white p-3.5 rounded-2xl border border-gray-200 shadow-2xs">
+                        <div class="flex items-center gap-1.5 text-xs font-bold text-gray-700 mb-2.5">
+                            <span class="text-amber-500">📌</span><span>常用搭配與精選片語 (Collocations & Phrases)</span>
+                        </div>
+                        <div class="space-y-1.5">
+                            ${collocations.map(col => `
+                                <div class="flex items-center justify-between text-xs py-1.5 px-2.5 bg-gray-50 rounded-xl hover:bg-blue-50/60 transition group">
+                                    <div class="flex items-center gap-2">
+                                        <button type="button" class="text-blue-500 hover:text-[#0071E3] cursor-pointer p-0.5" title="朗讀搭配片語" onclick="unlockMobileAudio(); playAudio('${esc(col.en)}')">
+                                            <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217z" clip-rule="evenodd" /></svg>
+                                        </button>
+                                        <span class="font-bold text-gray-800 font-mono group-hover:text-[#0071E3] transition-colors">${esc(col.en)}</span>
+                                    </div>
+                                    <span class="text-gray-600 font-medium text-right">${esc(col.zh)}</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            }
+
+            // 相似詞區塊 HTML
+            const synonymsHtml = `
+                <div class="bg-indigo-50/40 p-3.5 rounded-2xl border border-indigo-100">
+                    <div class="flex items-center justify-between text-xs font-bold text-indigo-900 mb-2">
+                        <div class="flex items-center gap-1.5">
+                            <span>🔗</span><span>相似詞 / 替換詞彙 (Synonyms)</span>
+                        </div>
+                        <span class="text-[10px] text-indigo-400 font-normal">點擊標籤可立即展開詳解</span>
+                    </div>
+                    <div id="detail-synonyms-container" class="flex flex-wrap gap-1.5">
+                        ${synonyms.length > 0 ? synonyms.map(s => `
+                            <button type="button" class="px-2.5 py-1 text-xs font-medium rounded-full bg-white text-indigo-700 hover:bg-[#0071E3] hover:text-white border border-indigo-200/80 shadow-2xs hover:scale-105 active:scale-95 transition-all cursor-pointer" onclick="showWordDetailModal('${esc(s)}')">
+                                ${esc(s)} ➔
+                            </button>
+                        `).join('') : `<span class="text-xs text-gray-400 py-1">正在擴充詞彙庫...</span>`}
+                    </div>
+                </div>
+            `;
+
+            // 例句區塊 HTML
+            const exampleHtml = w.example ? `
+                <div class="bg-blue-50/40 p-3.5 rounded-2xl border border-blue-100">
+                    <div class="flex items-center justify-between text-xs font-bold text-blue-900 mb-2">
+                        <div class="flex items-center gap-1.5">
+                            <span>💬</span><span>實用生活例句</span>
+                        </div>
+                        <button type="button" class="text-xs text-[#0071E3] hover:underline flex items-center gap-1 cursor-pointer font-medium" onclick="unlockMobileAudio(); playAudio('${esc(w.example)}')">
+                            <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd" /></svg>
+                            <span>聆聽整句發音</span>
+                        </button>
+                    </div>
+                    <p class="text-gray-800 text-sm leading-relaxed mb-1 font-medium" id="detail-card-example">${renderClickableSentence(w.example)}</p>
+                    <p class="text-gray-500 text-xs">${esc(w.exampleZh || '')}</p>
+                </div>
+            ` : '';
+
+            // 外部辭典與自訂字庫區塊 HTML
+            const externalDictHtml = `
+                <div class="pt-2 border-t border-gray-100 flex flex-col gap-2">
+                    <div class="grid grid-cols-3 gap-2 text-center text-xs font-medium">
+                        <a href="https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/${encodeURIComponent(w.en)}" target="_blank" rel="noopener noreferrer" class="py-2 px-1 bg-red-50 text-red-700 hover:bg-red-100 rounded-xl border border-red-200 transition">Cambridge</a>
+                        <a href="https://tw.dictionary.search.yahoo.com/search?p=${encodeURIComponent(w.en)}" target="_blank" rel="noopener noreferrer" class="py-2 px-1 bg-purple-50 text-purple-700 hover:bg-purple-100 rounded-xl border border-purple-200 transition">Yahoo 字典</a>
+                        <a href="https://translate.google.com/?sl=en&tl=zh-TW&text=${encodeURIComponent(w.en)}&op=translate" target="_blank" rel="noopener noreferrer" class="py-2 px-1 bg-blue-50 text-[#0071E3] hover:bg-blue-100 rounded-xl border border-blue-200 transition">Google 翻譯</a>
+                    </div>
+                    ${builtinUnitOf(w.en) ? `<div class="text-center text-[#86868B] text-xs py-1">收錄於：${getUnitBadgeInfo(w.unit || builtinUnitOf(w.en)).name}</div>` : `
+                    <button id="btn-detail-add-custom" class="w-full text-center bg-green-50 text-[#0071E3] hover:bg-green-100 font-medium py-2 rounded-xl text-xs border border-green-200 transition-colors shadow-2xs">
+                        ➕ 將此單字加入「自訂字庫 (單元 10)」
+                    </button>`}
+                </div>
+            `;
+
+            content.innerHTML = `
+                <!-- 單字標題與發音列 -->
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-[#1D1D1F] tracking-tight mb-1">${esc(w.en)}</h2>
+                        <div class="flex items-center gap-2 flex-wrap">
+                            ${w.kk ? `<span class="text-xs sm:text-sm font-mono text-gray-500 bg-gray-100 px-2 py-0.5 rounded-md">${esc(w.kk)}</span>` : ''}
+                            ${parsed.pos ? `<span class="text-xs font-bold px-2 py-0.5 rounded-md bg-blue-100 text-blue-800 uppercase tracking-wider">${esc(parsed.pos)}</span>` : ''}
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-1.5 shrink-0">
+                        <button id="btn-detail-audio-word" type="button" class="p-2 text-white bg-[#0071E3] hover:bg-[#0077ED] rounded-xl shadow-sm hover:scale-105 active:scale-95 transition-all cursor-pointer flex items-center gap-1 text-xs font-semibold" title="朗讀發音">
+                            <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd" /></svg>
+                            <span>發音</span>
+                        </button>
+                        <button id="btn-detail-audio-slow" type="button" class="p-2 text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-xl transition-all cursor-pointer text-xs font-medium" title="慢速朗讀 (0.75x)">
+                            <span>🐢 慢速</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 釋義清單 -->
+                <div class="space-y-1.5 bg-gray-50/80 p-3 rounded-2xl border border-gray-100">
+                    ${parsed.items && parsed.items.length > 0 ? parsed.items.map(it => `
+                        <div class="flex items-start gap-2">
+                            <span class="px-2 py-0.5 text-[11px] font-bold rounded-md bg-blue-100 text-blue-800 uppercase tracking-wide shrink-0 mt-0.5">${esc(it.pos)}</span>
+                            <span class="text-gray-800 font-medium text-sm leading-snug">${esc(it.text)}</span>
+                        </div>
+                    `).join('') : `
+                        <div class="text-gray-800 font-medium text-sm">${esc(parsed.pureZh || w.zh)}</div>
+                    `}
+                </div>
+
+                <!-- 詞形變化 (動詞三態 / 複數 / 比較級) -->
+                ${formsHtml}
+
+                <!-- 常見用法與搭配詞 -->
+                ${collocationsHtml}
+
+                <!-- 相似詞與同義替換 -->
+                ${synonymsHtml}
+
+                <!-- 生活實用例句 -->
+                ${exampleHtml}
+
+                <!-- 外部權威辭典與字庫操作 -->
+                ${externalDictHtml}
+            `;
+
+            // 事件綁定：音訊播放
+            document.getElementById('btn-detail-audio-word')?.addEventListener('click', () => {
+                unlockMobileAudio();
+                playAudio(w.en);
+            });
+            document.getElementById('btn-detail-audio-slow')?.addEventListener('click', () => {
+                unlockMobileAudio();
+                if ('speechSynthesis' in window) {
+                    const u = new SpeechSynthesisUtterance(w.en);
+                    u.lang = 'en-US';
+                    u.rate = 0.75;
+                    window.speechSynthesis.speak(u);
+                } else {
+                    playAudio(w.en);
+                }
+            });
+
+            // 事件綁定：例句點擊查單字
+            document.getElementById('detail-card-example')?.addEventListener('click', (e) => {
+                const wordSpan = e.target.closest('.dict-word');
+                if (wordSpan) {
+                    e.stopPropagation();
+                    showWordDetailModal(wordSpan.getAttribute('data-word'));
+                }
+            });
+
+            // 事件綁定：加入自訂字庫
+            const btnAddCustom = document.getElementById('btn-detail-add-custom');
+            if (btnAddCustom) {
+                btnAddCustom.addEventListener('click', () => {
+                    const success = addCustomWord(w.en, w.kk || '', parsed.pureZh || w.zh, parsed.pos || '');
+                    if (success) {
+                        btnAddCustom.innerText = '✅ 已加入自訂字庫 (單元 10)';
+                        btnAddCustom.disabled = true;
+                        btnAddCustom.classList.add('opacity-50', 'cursor-not-allowed');
+                    }
+                });
+            }
+
+            // 非同步自 Datamuse 擴充同義詞庫
+            fetch(`https://api.datamuse.com/words?rel_syn=${encodeURIComponent(w.en)}&max=6`)
+                .then(r => r.json())
+                .then(data => {
+                    if (Array.isArray(data) && data.length > 0) {
+                        const datamuseSyns = data.map(d => d.word).filter(s => /^[a-z]+$/i.test(s));
+                        const merged = [...new Set([...synonyms, ...datamuseSyns])].slice(0, 8);
+                        const container = document.getElementById('detail-synonyms-container');
+                        if (container && merged.length > 0) {
+                            container.innerHTML = merged.map(s => `
+                                <button type="button" class="px-2.5 py-1 text-xs font-medium rounded-full bg-white text-indigo-700 hover:bg-[#0071E3] hover:text-white border border-indigo-200/80 shadow-2xs hover:scale-105 active:scale-95 transition-all cursor-pointer" onclick="showWordDetailModal('${esc(s)}')">
+                                    ${esc(s)} ➔
+                                </button>
+                            `).join('');
+                        }
+                    }
+                })
+                .catch(() => {});
+        }
+
+        async function lookupWord(word) {
+            showWordDetailModal(word);
         }
 
         function renderDictModal(word, phonetic, pos, def) {
@@ -3722,6 +4585,44 @@
         document.getElementById('btn-close-dict').addEventListener('click', closeDictModal);
         document.getElementById('dict-modal').addEventListener('click', (e) => {
             if (e.target === document.getElementById('dict-modal')) closeDictModal();
+        });
+
+        function closeWordDetailModal() {
+            const modal = document.getElementById('word-detail-modal');
+            if (!modal || modal.classList.contains('hidden')) return;
+            modal.classList.add('hidden');
+            stopAllAudio();
+
+            // 若原本是在自動輪播模式下點開單字且底層的預覽彈窗已關閉，關閉後給予充裕反應時間接續跳下一張
+            const dictModal = document.getElementById('dict-modal');
+            const isDictOpen = dictModal && !dictModal.classList.contains('hidden');
+            if (!isDictOpen && isAutoFlashcardMode && wasAutoFlashcardPausedByModal) {
+                wasAutoFlashcardPausedByModal = false;
+                const pauseAfterExample = Math.max(1500, autoFlashcardSpeed * 0.25);
+                autoFlashcardTimerId = setTimeout(() => {
+                    if (!isAutoFlashcardMode) return;
+                    cardsCompleted++;
+                    nextCard();
+                }, pauseAfterExample);
+            }
+        }
+
+        document.getElementById('btn-close-word-detail')?.addEventListener('click', closeWordDetailModal);
+        document.getElementById('word-detail-modal')?.addEventListener('click', (e) => {
+            if (e.target === document.getElementById('word-detail-modal')) closeWordDetailModal();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                const detailModal = document.getElementById('word-detail-modal');
+                if (detailModal && !detailModal.classList.contains('hidden')) {
+                    closeWordDetailModal();
+                    return;
+                }
+                const dictModal = document.getElementById('dict-modal');
+                if (dictModal && !dictModal.classList.contains('hidden')) {
+                    closeDictModal();
+                }
+            }
         });
 
         // 繪製熟悉度分佈圖 (Chart.js)

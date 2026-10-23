@@ -687,9 +687,12 @@
                             <label class="block text-sm font-semibold text-[#1D1D1F]">選擇情境短文 (AI 真人發音 2.0)</label>
                             <span class="text-xs bg-blue-50 text-[#0071E3] font-medium px-2.5 py-0.5 rounded-full border border-blue-100">🎙️ 真人神經語音</span>
                         </div>
-                        <select id="listening-preset" aria-label="選擇情境短文" class="w-full bg-[#F5F5F7] border border-gray-200 text-gray-800 rounded-xl p-3.5 outline-none focus:ring-2 focus:ring-[#0071E3] font-medium cursor-pointer shadow-sm">
+                        <!-- 原生 select 隱藏保留供底層相容 -->
+                        <select id="listening-preset" aria-label="選擇情境短文" class="hidden">
                             <option value="">-- 請選擇學習教材 --</option>
                         </select>
+                        <!-- 年份月號折疊分類手風琴 (按下去再展開) -->
+                        <div id="listening-accordion-list" class="space-y-2"></div>
                     </div>
 
                     <!-- 即時文章資訊卡片 -->
@@ -1752,6 +1755,14 @@
                 const presetSel = document.getElementById('listening-preset');
                 if (presetSel) presetSel.value = '';
                 currentSelectedListeningArticle = null;
+                document.querySelectorAll('#listening-accordion-list .listening-item').forEach(el => {
+                    el.className = 'listening-item group cursor-pointer px-3 py-2.5 rounded-xl border border-transparent hover:border-blue-200 hover:bg-blue-50/60 transition-all flex items-center justify-between gap-2';
+                    const check = el.querySelector('.item-check');
+                    if (check) check.className = 'item-check text-xs font-bold text-transparent shrink-0';
+                    const title = el.querySelector('.item-title');
+                    if (title) title.className = 'item-title text-sm text-[#1D1D1F] group-hover:text-[#0071E3] font-medium truncate';
+                });
+                document.querySelectorAll('#listening-accordion-list .group-selected-indicator').forEach(ind => ind.classList.add('hidden'));
             }
             
             if (viewId !== 'view-listening') {
@@ -3866,62 +3877,171 @@
 
         function renderListeningSelect() {
             const select = document.getElementById('listening-preset');
+            const accordion = document.getElementById('listening-accordion-list');
             if (!select) return;
             const prevVal = select.value;
             select.innerHTML = '<option value="">-- 請選擇學習教材 --</option>';
 
             const db = window.listeningArticlesDB || window.builtInArticles || [];
 
-            // 依月份與類別自動分組 (10月份多益、10月份生活、9月份精選)
+            // 依年份、月份與類別分組 (例: 2026年 10月份 (生活短文))
             const groups = {};
             db.forEach((article, idx) => {
+                const year = (article.id && article.id.length >= 4 && !isNaN(article.id.slice(0, 4)))
+                    ? `${article.id.slice(0, 4)}年`
+                    : "2026年";
                 const month = article.month || "精選短文";
-                let catLabel = "";
-                if (article.category === "toeic") catLabel = "多益專區";
-                else if (article.category === "general") catLabel = "生活短文";
+                let catLabel = "生活短文";
+                let catBadgeClass = "bg-emerald-50 text-emerald-700 border-emerald-200";
+                if (article.category === "toeic") {
+                    catLabel = "多益專區";
+                    catBadgeClass = "bg-blue-50 text-[#0071E3] border-blue-200";
+                } else if (article.category === "general") {
+                    catLabel = "生活短文";
+                    catBadgeClass = "bg-emerald-50 text-emerald-700 border-emerald-200";
+                }
 
-                const groupKey = catLabel ? `${month} (${catLabel})` : month;
-                if (!groups[groupKey]) groups[groupKey] = [];
-                groups[groupKey].push({ article, idx });
+                const groupKey = `${year} ${month} (${catLabel})`;
+                if (!groups[groupKey]) {
+                    groups[groupKey] = {
+                        year,
+                        month,
+                        catLabel,
+                        catBadgeClass,
+                        items: []
+                    };
+                }
+                groups[groupKey].items.push({ article, idx });
+
+                // 原生 option 同步保留供底層相容
+                const opt = document.createElement('option');
+                opt.value = idx;
+                const voiceTag = article.voiceLabel ? ` • [${article.voiceLabel}]` : '';
+                opt.textContent = `[${groupKey}] ${article.title}${voiceTag}`;
+                select.appendChild(opt);
             });
 
-            // 依月份排序 (優先展示當前月份 10月份)
-            Object.keys(groups).sort((a, b) => {
-                if (a.includes('10月') && !b.includes('10月')) return -1;
-                if (!a.includes('10月') && b.includes('10月')) return 1;
-                return a.localeCompare(b);
-            }).forEach(groupKey => {
-                const grpEl = document.createElement('optgroup');
-                grpEl.label = groupKey;
-                groups[groupKey].forEach(({ article, idx }) => {
-                    const opt = document.createElement('option');
-                    opt.value = idx;
-                    const voiceTag = article.voiceLabel ? ` • [${article.voiceLabel}]` : '';
-                    opt.textContent = `${article.title}${voiceTag}`;
-                    grpEl.appendChild(opt);
+            if (accordion) {
+                accordion.innerHTML = '';
+                // 排序：10月份排最前面，其次 9月份
+                const sortedKeys = Object.keys(groups).sort((a, b) => {
+                    if (a.includes('10月') && !b.includes('10月')) return -1;
+                    if (!a.includes('10月') && b.includes('10月')) return 1;
+                    return a.localeCompare(b);
                 });
-                select.appendChild(grpEl);
+
+                sortedKeys.forEach((key) => {
+                    const grp = groups[key];
+                    const groupDiv = document.createElement('div');
+                    groupDiv.className = 'listening-group border border-gray-200/90 rounded-2xl overflow-hidden bg-white shadow-xs transition-all';
+                    
+                    const headerBtn = document.createElement('button');
+                    headerBtn.type = 'button';
+                    headerBtn.className = 'w-full px-4 py-3.5 flex items-center justify-between text-left hover:bg-gray-50/80 transition-colors cursor-pointer select-none';
+                    headerBtn.innerHTML = `
+                        <div class="flex items-center gap-2.5 min-w-0">
+                            <span class="text-base shrink-0">📁</span>
+                            <div class="min-w-0 flex items-center gap-2 flex-wrap">
+                                <span class="font-bold text-[#1D1D1F] text-sm">${esc(grp.year)} ${esc(grp.month)}</span>
+                                <span class="text-xs font-semibold px-2 py-0.5 rounded-lg border ${grp.catBadgeClass}">${esc(grp.catLabel)}</span>
+                            </div>
+                            <span class="text-xs text-gray-400 font-normal shrink-0">(${grp.items.length} 篇)</span>
+                        </div>
+                        <div class="flex items-center gap-1.5 shrink-0 ml-2">
+                            <span class="group-selected-indicator text-[11px] font-semibold text-[#0071E3] hidden">已選取</span>
+                            <svg class="chevron-icon w-4 h-4 text-gray-400 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                    `;
+
+                    const itemsContainer = document.createElement('div');
+                    itemsContainer.className = 'hidden border-t border-gray-100 p-2 space-y-1 bg-[#F9FAFC]';
+
+                    grp.items.forEach(({ article, idx }) => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'listening-item group cursor-pointer px-3 py-2.5 rounded-xl border border-transparent hover:border-blue-200 hover:bg-blue-50/60 transition-all flex items-center justify-between gap-2';
+                        itemDiv.dataset.idx = String(idx);
+                        itemDiv.innerHTML = `
+                            <div class="flex items-center gap-2 min-w-0">
+                                <span class="item-check text-xs font-bold text-transparent shrink-0">✓</span>
+                                <span class="item-title text-sm text-[#1D1D1F] group-hover:text-[#0071E3] font-medium truncate">${esc(article.title)}</span>
+                                ${article.level ? `<span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-gray-100 text-gray-600 shrink-0 font-medium">${esc(article.level)}</span>` : ''}
+                            </div>
+                            ${article.voiceLabel ? `<span class="text-[11px] text-gray-400 group-hover:text-gray-600 shrink-0 whitespace-nowrap">🎙️ ${esc(article.voiceLabel)}</span>` : ''}
+                        `;
+
+                        itemDiv.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            selectListeningArticleByIndex(idx);
+                        });
+
+                        itemsContainer.appendChild(itemDiv);
+                    });
+
+                    // 點擊標題展開/折疊
+                    headerBtn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const isExpanded = !itemsContainer.classList.contains('hidden');
+                        const chevron = headerBtn.querySelector('.chevron-icon');
+                        if (isExpanded) {
+                            itemsContainer.classList.add('hidden');
+                            if (chevron) chevron.classList.remove('rotate-180');
+                        } else {
+                            itemsContainer.classList.remove('hidden');
+                            if (chevron) chevron.classList.add('rotate-180');
+                        }
+                    });
+
+                    groupDiv.appendChild(headerBtn);
+                    groupDiv.appendChild(itemsContainer);
+                    accordion.appendChild(groupDiv);
+                });
+            }
+
+            if (prevVal) selectListeningArticleByIndex(parseInt(prevVal, 10));
+        }
+
+        function selectListeningArticleByIndex(idx) {
+            const select = document.getElementById('listening-preset');
+            const card = document.getElementById('listening-preset-card');
+            if (select) select.value = String(idx);
+
+            // 更新手風琴內選中項目的高亮
+            document.querySelectorAll('#listening-accordion-list .listening-item').forEach(el => {
+                const isSelected = el.dataset.idx === String(idx);
+                const check = el.querySelector('.item-check');
+                const title = el.querySelector('.item-title');
+                if (isSelected) {
+                    el.className = 'listening-item group cursor-pointer px-3 py-2.5 rounded-xl border border-[#0071E3] bg-blue-50 text-[#0071E3] font-semibold shadow-xs flex items-center justify-between gap-2';
+                    if (check) check.className = 'item-check text-xs font-bold text-[#0071E3] shrink-0';
+                    if (title) title.className = 'item-title text-sm text-[#0071E3] font-bold truncate';
+                } else {
+                    el.className = 'listening-item group cursor-pointer px-3 py-2.5 rounded-xl border border-transparent hover:border-blue-200 hover:bg-blue-50/60 transition-all flex items-center justify-between gap-2';
+                    if (check) check.className = 'item-check text-xs font-bold text-transparent shrink-0';
+                    if (title) title.className = 'item-title text-sm text-[#1D1D1F] group-hover:text-[#0071E3] font-medium truncate';
+                }
             });
 
-            if (prevVal) select.value = prevVal;
-        }
-        renderListeningSelect();
+            // 標記所屬的群組為已選取
+            document.querySelectorAll('#listening-accordion-list .listening-group').forEach(grp => {
+                const hasSelected = grp.querySelector('.listening-item.border-\\[\\#0071E3\\]');
+                const ind = grp.querySelector('.group-selected-indicator');
+                if (ind) {
+                    if (hasSelected) ind.classList.remove('hidden');
+                    else ind.classList.add('hidden');
+                }
+            });
 
-        document.getElementById('listening-preset').addEventListener('change', (e) => {
-            const val = e.target.value;
-            const card = document.getElementById('listening-preset-card');
-            if (val === "" || val === null) {
-                currentSelectedListeningArticle = null;
-                if (card) card.classList.add('hidden');
-                return;
-            }
             const db = window.listeningArticlesDB || window.builtInArticles || [];
-            const article = db[parseInt(val, 10)];
+            const article = db[idx];
             if (!article) {
                 currentSelectedListeningArticle = null;
                 if (card) card.classList.add('hidden');
                 return;
             }
+
             currentSelectedListeningArticle = article;
             if (card) {
                 const titleEl = document.getElementById('listening-card-title');
@@ -3938,6 +4058,19 @@
                 if (countEl) countEl.textContent = `共 ${count} 句情境會話`;
                 card.classList.remove('hidden');
             }
+        }
+
+        renderListeningSelect();
+
+        document.getElementById('listening-preset').addEventListener('change', (e) => {
+            const val = e.target.value;
+            if (val === "" || val === null) {
+                currentSelectedListeningArticle = null;
+                const card = document.getElementById('listening-preset-card');
+                if (card) card.classList.add('hidden');
+                return;
+            }
+            selectListeningArticleByIndex(parseInt(val, 10));
         });
 
         // ==========================================

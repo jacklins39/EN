@@ -1198,7 +1198,7 @@
                 <button id="btn-close-dict" class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 hover:bg-gray-200/70 bg-gray-100 rounded-full p-1.5 transition-colors z-10">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
                 </button>
-                <div id="dict-content" class="mt-2 min-h-[100px] flex flex-col justify-center"></div>
+                <div id="dict-content" class="mt-1 min-h-0 flex-1 flex flex-col justify-start overflow-hidden"></div>
             </div>
         </div>
 
@@ -2615,52 +2615,30 @@
         // 單字預覽功能
         // ==========================================
         function renderPreviewModal(words, title) {
-            const listHtml = words.map((w, i) => {
-                const p = splitPosAndZh(w.zh, w.pos);
-                const items = (p.items && p.items.length > 0) ? p.items : [{ pos: p.pos || w.pos || '', text: p.pureZh || w.zh }];
-                const defsHtml = items.map(it => {
-                    const cleanPos = (it.pos || p.pos || w.pos || '').toUpperCase().replace(/\.$/, '').trim();
-                    return `
-                        <div class="inline-flex items-center gap-1.5 bg-[#F5F5F7] group-hover:bg-white border border-gray-200/80 group-hover:border-blue-200 px-2 py-0.5 rounded-lg text-xs max-w-full overflow-hidden transition-colors">
-                            ${cleanPos ? `<span class="text-[10px] font-extrabold uppercase px-1.5 py-0.5 rounded bg-[#0071E3] text-white font-mono leading-none tracking-tight shrink-0 min-w-[28px] text-center">${esc(cleanPos)}</span>` : ''}
-                            <span class="text-gray-700 font-semibold truncate leading-snug">${esc(it.text)}</span>
+            const listHtml = words.map((w, i) => `
+                <div id="preview-row-${i}" class="preview-word-row flex items-center justify-between py-3 px-3 border-b border-gray-100 last:border-0 hover:bg-[#F5F5F7] rounded-2xl cursor-pointer transition-colors" onclick="showWordDetailModal('${esc(w.en)}')">
+                    <div class="flex items-center gap-3 min-w-0">
+                        <div class="min-w-0">
+                            <div class="font-semibold text-[#1D1D1F] text-[15px]">${esc(w.en)} <span class="text-[10px] text-gray-400 font-mono ml-1">${esc(w.kk || '')}</span></div>
+                            <div class="text-[13px] text-[#86868B] truncate">${esc(w.zh)}</div>
                         </div>
-                    `;
-                }).join('');
-
-                return `
-                <div id="preview-row-${i}" class="preview-word-row group flex items-center justify-between gap-2.5 sm:gap-3 py-2.5 sm:py-3 px-2.5 sm:px-3.5 border-b border-gray-100 last:border-0 hover:bg-blue-50/50 rounded-2xl transition-all cursor-pointer" onclick="showWordDetailModal('${esc(w.en)}')">
-                    <div class="flex flex-col min-w-[96px] sm:min-w-[130px] max-w-[44%] sm:max-w-[46%] shrink-0">
-                        <div class="flex items-center gap-1.5">
-                            <span class="font-bold text-[#1D1D1F] group-hover:text-[#0071E3] text-base sm:text-lg leading-tight transition-colors">
-                                ${esc(w.en)}
-                            </span>
-                            <button type="button" class="p-1 text-[#0071E3] bg-blue-50/80 hover:bg-[#0071E3] hover:text-white rounded-full transition cursor-pointer shrink-0" title="聆聽發音" onclick="event.stopPropagation(); unlockMobileAudio(); playAudio('${esc(w.en)}')">
-                                <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd" /></svg>
-                            </button>
-                        </div>
-                        <span class="text-xs text-[#86868B] font-mono mt-0.5">${esc(w.kk || '')}</span>
                     </div>
-                    <div class="flex-1 min-w-0 flex flex-col items-end gap-1">
-                        ${defsHtml}
+                    <div class="shrink-0 ml-2">
+                        <button type="button" class="text-indigo-400 hover:text-[#0071E3] p-1 cursor-pointer" title="聆聽發音" onclick="event.stopPropagation(); unlockMobileAudio(); playAudio('${esc(w.en)}')">🔊</button>
                     </div>
-                    <div class="shrink-0 text-gray-300 group-hover:text-[#0071E3] group-hover:translate-x-0.5 transition-all pl-0.5">
-                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M9 5l7 7-7 7" /></svg>
-                    </div>
-                </div>`;
-            }).join('');
+                </div>`).join('');
 
             const content = document.getElementById('dict-content');
             content.innerHTML = `
-                <div class="flex items-center justify-between gap-2 pr-8 mb-2.5 pb-2.5 border-b border-gray-100">
+                <div class="flex items-center justify-between gap-2 pr-8 mb-2.5 pb-2.5 border-b border-gray-100 shrink-0">
                     <h3 class="text-lg sm:text-xl font-bold text-[#1D1D1F] tracking-tight truncate">${title}</h3>
                     <span class="shrink-0 text-xs font-bold px-2.5 py-1 rounded-full bg-blue-50 text-[#0071E3] border border-blue-100">共 ${words.length} 字</span>
                 </div>
-                <div class="text-xs text-gray-500 mb-2.5 flex items-center gap-1.5 bg-blue-50/50 px-3 py-1.5 rounded-xl border border-blue-100/60">
+                <div class="text-xs text-gray-500 mb-2.5 flex items-center gap-1.5 bg-blue-50/50 px-3 py-1.5 rounded-xl border border-blue-100/60 shrink-0">
                     <span class="text-blue-500 shrink-0">💡</span>
-                    <span class="leading-relaxed">點擊單字可開啟「三態、搭配詞與例句」詳解卡；點擊小喇叭直接發音。</span>
+                    <span class="leading-relaxed">點擊單字可開啟「三態、搭配詞與例句」詳解卡；點擊 🔊 直接發音。</span>
                 </div>
-                <div class="grid grid-cols-2 sm:flex items-center gap-1.5 sm:gap-2 mb-3 bg-[#F5F5F7] p-2 rounded-2xl border border-gray-200/60">
+                <div class="grid grid-cols-2 sm:flex items-center gap-1.5 sm:gap-2 mb-2.5 bg-[#F5F5F7] p-2 rounded-2xl border border-gray-200/60 shrink-0">
                     <select id="auto-play-speed" aria-label="自動播放速度" class="col-span-1 text-xs sm:text-sm font-medium border border-gray-200/80 rounded-xl px-2.5 py-2 bg-white text-gray-700 outline-none focus:ring-2 focus:ring-[#0071E3]/30 focus:border-[#0071E3] w-full sm:flex-1 min-w-0 cursor-pointer">
                         <option value="2000">⏱️ 間隔 2.0秒 (極快)</option>
                         <option value="3500">⏱️ 間隔 3.5秒 (快)</option>
@@ -2668,7 +2646,7 @@
                         <option value="7000">⏱️ 間隔 7.0秒 (慢)</option>
                         <option value="10000">⏱️ 間隔 10秒 (極慢)</option>
                     </select>
-                    <select id="auto-speech-rate" aria-label="語速" class="col-span-1 text-xs sm:text-sm font-medium border border-gray-200/80 rounded-xl px-2.5 py-2 bg-white text-gray-700 outline-none focus:ring-2 focus:ring-[#0071E3]/30 focus:border-[#0071E3] w-full sm:w-[116px] shrink-0 cursor-pointer">
+                    <select id="auto-speech-rate" aria-label="語速" class="col-span-1 text-xs sm:text-sm font-medium border border-gray-200/80 rounded-xl px-2.5 py-2 bg-white text-gray-700 outline-none focus:ring-2 focus:ring-[#0071E3]/30 focus:border-[#0071E3] w-full sm:w-[132px] shrink-0 cursor-pointer">
                         <option value="0.75">🗣️ 語速 0.75x</option>
                         <option value="0.85">🗣️ 語速 0.85x</option>
                         <option value="1.0" selected>🗣️ 語速 1.0x</option>
@@ -2679,7 +2657,7 @@
                         <span>▶</span><span>自動輪播發音</span>
                     </button>
                 </div>
-                <div class="max-h-[50vh] overflow-y-auto pr-1 custom-scrollbar divide-y divide-gray-50" id="preview-list-container">
+                <div class="flex-1 min-h-0 max-h-[52vh] overflow-y-auto pr-1 custom-scrollbar space-y-1" id="preview-list-container">
                     ${listHtml || '<p class="text-[#86868B] text-sm text-center py-6">目前沒有單字。</p>'}
                 </div>
             `;

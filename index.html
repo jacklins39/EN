@@ -1272,41 +1272,62 @@
 
         const SRS_INTERVALS = [0, 1, 3, 7, 14, 30]; 
         const MAX_LEVEL = 5;
-        let NEW_WORDS_PER_DAY = parseInt(localStorage.getItem('newWordsPerDay')) || 10;
-        document.getElementById('setting-new-words').value = NEW_WORDS_PER_DAY;
-        document.getElementById('setting-new-words').addEventListener('change', (e) => {
-            NEW_WORDS_PER_DAY = parseInt(e.target.value);
-            localStorage.setItem('newWordsPerDay', NEW_WORDS_PER_DAY);
-            dailyPlans = {};
-            saveDailyPlansLocally();
-            saveToCloud();
-            initAppLogic(); // 重新計算今日單字
-        });
+        const VALID_NEW_WORDS_COUNTS = [5, 10, 15, 20, 30, 50];
+        const VALID_UNIT_IDS = [1, 2, 3, 4, 5, 6, 7, 10, 11, 12, 13, 17, 18];
+        const VALID_SPEECH_RATES = ['0.75', '0.85', '1.0', '1.25', '1.5'];
+
+        function normalizeNewWordsPerDay(val) {
+            const n = parseInt(val, 10);
+            return VALID_NEW_WORDS_COUNTS.includes(n) ? n : 10;
+        }
+
+        function normalizeUnitId(val) {
+            const n = parseInt(val, 10);
+            return VALID_UNIT_IDS.includes(n) ? n : 1;
+        }
+
+        let NEW_WORDS_PER_DAY = normalizeNewWordsPerDay(localStorage.getItem('newWordsPerDay'));
+        const settingNewWordsInitEl = document.getElementById('setting-new-words');
+        if (settingNewWordsInitEl) {
+            settingNewWordsInitEl.value = String(NEW_WORDS_PER_DAY);
+            if (settingNewWordsInitEl.selectedIndex === -1) settingNewWordsInitEl.value = '10';
+            settingNewWordsInitEl.addEventListener('change', (e) => {
+                NEW_WORDS_PER_DAY = normalizeNewWordsPerDay(e.target.value);
+                localStorage.setItem('newWordsPerDay', String(NEW_WORDS_PER_DAY));
+                dailyPlans = {};
+                saveDailyPlansLocally();
+                saveToCloud();
+                initAppLogic(); // 重新計算今日單字
+            });
+        }
 
         // 全域發音語速控制與 GC 防護
-        let globalSpeechRate = parseFloat(localStorage.getItem('vocab_speech_rate')) || 1.0;
+        function formatSpeechRateStr(rate) {
+            const n = parseFloat(rate);
+            if (!Number.isFinite(n)) return '1.0';
+            const s = n === 1 ? '1.0' : String(n);
+            return VALID_SPEECH_RATES.includes(s) ? s : '1.0';
+        }
+
+        let globalSpeechRate = parseFloat(formatSpeechRateStr(localStorage.getItem('vocab_speech_rate'))) || 1.0;
         window._activeSpeechUtterance = null;
         let currentAudioDoneHandler = null;
         let audioFallbackTimerId = null;
 
-        function formatSpeechRateStr(rate) {
-            const n = parseFloat(rate) || 1.0;
-            return n === 1 ? '1.0' : String(n);
-        }
-
         function setSpeechRate(rate) {
-            globalSpeechRate = parseFloat(rate) || 1.0;
-            const rateStr = formatSpeechRateStr(globalSpeechRate);
+            const rateStr = formatSpeechRateStr(rate);
+            globalSpeechRate = parseFloat(rateStr) || 1.0;
             localStorage.setItem('vocab_speech_rate', rateStr);
             if (typeof wordAudioPlayer !== 'undefined' && wordAudioPlayer) {
                 wordAudioPlayer.playbackRate = globalSpeechRate;
             }
-            const s1 = document.getElementById('setting-speech-rate');
-            if (s1 && s1.value !== rateStr) s1.value = rateStr;
-            const s2 = document.getElementById('study-speech-rate');
-            if (s2 && s2.value !== rateStr) s2.value = rateStr;
-            const s3 = document.getElementById('auto-speech-rate');
-            if (s3 && s3.value !== rateStr) s3.value = rateStr;
+            ['setting-speech-rate', 'study-speech-rate', 'auto-speech-rate'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) {
+                    el.value = rateStr;
+                    if (el.selectedIndex === -1) el.value = '1.0';
+                }
+            });
         }
 
         function clearAudioCallbacks() {
@@ -1428,7 +1449,7 @@
                 }
             });
         }
-        let currentUnit = parseInt(localStorage.getItem('vocab_current_unit') || '1', 10);
+        let currentUnit = normalizeUnitId(localStorage.getItem('vocab_current_unit'));
         let chartInstance = null;
         
         let sessionQueue = [];
@@ -1802,18 +1823,24 @@
                         dailyPlans = mergedPlans;
                     }
 
-                    if (typeof data.unit === 'number' && data.unit >= 1) {
-                        currentUnit = data.unit;
+                    if (typeof data.unit === 'number') {
+                        currentUnit = normalizeUnitId(data.unit);
                         localStorage.setItem('vocab_current_unit', String(currentUnit));
                         const unitSel = document.getElementById('unit-selector');
-                        if (unitSel) unitSel.value = String(currentUnit);
+                        if (unitSel) {
+                            unitSel.value = String(currentUnit);
+                            if (unitSel.selectedIndex === -1) unitSel.value = '1';
+                        }
                     }
 
                     if (typeof data.newWordsPerDay === 'number') {
-                        NEW_WORDS_PER_DAY = data.newWordsPerDay;
-                        localStorage.setItem('newWordsPerDay', NEW_WORDS_PER_DAY);
+                        NEW_WORDS_PER_DAY = normalizeNewWordsPerDay(data.newWordsPerDay);
+                        localStorage.setItem('newWordsPerDay', String(NEW_WORDS_PER_DAY));
                         const settingEl = document.getElementById('setting-new-words');
-                        if (settingEl) settingEl.value = NEW_WORDS_PER_DAY;
+                        if (settingEl) {
+                            settingEl.value = String(NEW_WORDS_PER_DAY);
+                            if (settingEl.selectedIndex === -1) settingEl.value = '10';
+                        }
                     }
                     customWordsDB = (Array.isArray(data.customWords) ? data.customWords : [])
                         .filter(cw => cw && typeof cw.en === 'string' && /^[A-Za-z][A-Za-z' -]{0,39}$/.test(cw.en))
@@ -2042,10 +2069,12 @@
                 dailyPlans = {};
             }
 
-            const savedUnit = parseInt(localStorage.getItem('vocab_current_unit') || '1', 10);
-            if (savedUnit) currentUnit = savedUnit;
+            currentUnit = normalizeUnitId(localStorage.getItem('vocab_current_unit'));
             const unitSel = document.getElementById('unit-selector');
-            if (unitSel) unitSel.value = String(currentUnit);
+            if (unitSel) {
+                unitSel.value = String(currentUnit);
+                if (unitSel.selectedIndex === -1) unitSel.value = '1';
+            }
 
             // 本地快取立即載入自訂單字，避免初次重整尚未連上雲端時資料落差
             try {
@@ -2607,9 +2636,13 @@
 
             const btnPlay = document.getElementById('btn-auto-play');
             const speedSelect = document.getElementById('auto-play-speed');
+            if (speedSelect && (speedSelect.selectedIndex === -1 || !speedSelect.value)) {
+                speedSelect.value = '5000';
+            }
             const autoRateSelect = document.getElementById('auto-speech-rate');
             if (autoRateSelect) {
                 autoRateSelect.value = formatSpeechRateStr(globalSpeechRate);
+                if (autoRateSelect.selectedIndex === -1) autoRateSelect.value = '1.0';
                 autoRateSelect.addEventListener('change', (e) => setSpeechRate(e.target.value));
             }
             

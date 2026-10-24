@@ -644,7 +644,10 @@
                         <div class="flex items-center justify-center gap-2 mb-3 flex-wrap max-w-full px-1">
                             <span id="card-pos-badge" class="hidden text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-blue-50 text-[#0071E3] border border-blue-200 font-mono shrink-0"></span>
                             <div class="cursor-pointer inline-flex items-center justify-center gap-1.5 sm:gap-2 flex-wrap max-w-full" id="card-translation" title="點擊朗讀中文釋義">
-                                <span class="text-lg sm:text-xl text-[#0071E3] font-bold hover:underline">蘋果</span>
+                                <span class="inline-flex items-center gap-1.5 bg-blue-50/80 hover:bg-blue-100/80 border border-blue-200/70 px-2.5 py-1 rounded-xl shadow-2xs transition-colors shrink-0 max-w-full">
+                                    <span class="text-[10px] font-extrabold uppercase px-1.5 py-0.5 rounded bg-[#0071E3] text-white font-mono leading-none tracking-wide shrink-0">N</span>
+                                    <span class="text-sm sm:text-[15px] font-bold text-[#0071E3] leading-snug break-words">蘋果</span>
+                                </span>
                             </div>
                             <button id="btn-speak-zh" class="p-1 text-blue-400 hover:text-[#0071E3] hover:bg-blue-50 rounded-full transition-colors cursor-pointer shrink-0" title="朗讀中文釋義" aria-label="朗讀中文釋義">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
@@ -2191,9 +2194,21 @@
                         </div>
                         <span class="text-xs text-[#86868B] font-mono">${esc(w.kk || '')}</span>
                     </div>
-                    <div class="flex items-center gap-2 max-w-[55%]">
-                        <span class="text-sm text-gray-600 font-medium text-right truncate" title="${esc(w.zh)}">${esc(w.zh)}</span>
-                        <span class="text-gray-300 group-hover:text-[#0071E3] group-hover:translate-x-0.5 transition-all text-xs font-semibold">➔</span>
+                    <div class="flex items-center gap-1.5 max-w-[62%] flex-wrap justify-end">
+                        ${(() => {
+                            const p = splitPosAndZh(w.zh, w.pos);
+                            const items = (p.items && p.items.length > 0) ? p.items : [{ pos: p.pos || w.pos || '', text: p.pureZh || w.zh }];
+                            return items.map(it => {
+                                const cleanPos = (it.pos || p.pos || w.pos || '').toUpperCase().replace(/\.$/, '').trim();
+                                return `
+                                    <span class="inline-flex items-center gap-1 bg-blue-50/80 hover:bg-blue-100/80 border border-blue-200/70 px-2 py-0.5 rounded-lg text-xs font-bold text-[#0071E3] shrink-0 max-w-full">
+                                        ${cleanPos ? `<span class="text-[9px] font-extrabold uppercase px-1 py-0.5 rounded bg-[#0071E3] text-white font-mono leading-none tracking-tight shrink-0">${esc(cleanPos)}</span>` : ''}
+                                        <span class="truncate max-w-[120px] sm:max-w-[200px] leading-snug">${esc(it.text)}</span>
+                                    </span>
+                                `;
+                            }).join('');
+                        })()}
+                        <span class="text-gray-300 group-hover:text-[#0071E3] group-hover:translate-x-0.5 transition-all text-xs font-semibold ml-0.5 shrink-0">➔</span>
                     </div>
                 </div>
             `).join('');
@@ -2642,47 +2657,39 @@
             document.getElementById('card-word').innerText = currentWord.en;
             document.getElementById('card-word-back').innerText = currentWord.en;
             
-            // 解析詞性與純中文：卡片背面只顯示純中文，詞性以專屬標籤呈現，徹底避免詞性前置混淆
+            // 解析詞性與純中文：卡片背面全單字（無論單詞性或多詞性）全面統一為精緻膠囊與一致字體
             const parsed = splitPosAndZh(currentWord.zh, currentWord.pos);
             const posBadge = document.getElementById('card-pos-badge');
             const cardTransEl = document.getElementById('card-translation');
-            const isMultiPos = parsed.items && parsed.items.length > 1;
 
+            // 詞性徽章已全面整合至膠囊內部，外層舊式獨立標籤永久隱藏
             if (posBadge) {
-                // 多詞性時各項自帶獨立詞性膠囊標籤，隱藏左側重複的外層標籤，節省大量版面空間避免擠壓破版
-                if (!isMultiPos && (parsed.posBadgeText || parsed.pos)) {
-                    posBadge.innerText = parsed.posBadgeText || parsed.pos;
-                    posBadge.classList.remove('hidden');
-                } else {
-                    posBadge.classList.add('hidden');
-                }
+                posBadge.classList.add('hidden');
             }
 
             if (cardTransEl) {
-                const totalChars = (parsed.items || []).reduce((acc, it) => acc + (it.text || '').length, 0) || (parsed.pureZh || '').length;
+                const items = (parsed.items && parsed.items.length > 0)
+                    ? parsed.items
+                    : [{ pos: parsed.pos || currentWord.pos || '', text: parsed.pureZh || currentWord.zh || '' }];
 
-                if (isMultiPos) {
-                    // 多詞性排版：依總字數自適應字級，避免字多時折行擁擠或字單獨掉到下一行
-                    const isLong = totalChars > 22 || parsed.items.length >= 3;
-                    const fontClass = isLong ? 'text-xs sm:text-[13px]' : 'text-sm sm:text-[15px]';
-                    const padClass = isLong ? 'px-2 py-0.5' : 'px-2.5 py-1';
+                const totalChars = items.reduce((acc, it) => acc + (it.text || '').length, 0);
+                // 自適應字級：多字或 3 詞性以上微縮至 13px，其餘全單字統一採用截圖中精緻的 15px 粗體
+                const isLong = totalChars > 22 || items.length >= 3;
+                const fontClass = isLong ? 'text-xs sm:text-[13px]' : 'text-sm sm:text-[15px]';
+                const padClass = isLong ? 'px-2 py-0.5' : 'px-2.5 py-1';
 
-                    cardTransEl.innerHTML = parsed.items.map(it => `
+                cardTransEl.innerHTML = items.map(it => {
+                    const rawPos = (it.pos || parsed.pos || currentWord.pos || '').toUpperCase().replace(/\.$/, '').trim();
+                    const posHtml = rawPos
+                        ? `<span class="text-[10px] font-extrabold uppercase px-1.5 py-0.5 rounded bg-[#0071E3] text-white font-mono leading-none tracking-wide shrink-0">${esc(rawPos)}</span>`
+                        : '';
+                    return `
                         <span class="inline-flex items-center gap-1.5 bg-blue-50/80 hover:bg-blue-100/80 border border-blue-200/70 ${padClass} rounded-xl shadow-2xs transition-colors shrink-0 max-w-full">
-                            <span class="text-[10px] font-extrabold uppercase px-1.5 py-0.5 rounded bg-[#0071E3] text-white font-mono leading-none tracking-wide shrink-0">${esc(it.pos.toUpperCase().replace(/\.$/, ''))}</span>
+                            ${posHtml}
                             <span class="${fontClass} font-bold text-[#0071E3] leading-snug break-words">${esc(it.text)}</span>
                         </span>
-                    `).join('');
-                } else {
-                    // 單詞性排版：階梯式適應字級 (短詞 20px, 中詞 17px, 長詞 14~15px)
-                    let fontClass = 'text-lg sm:text-xl font-bold';
-                    if (totalChars > 16) {
-                        fontClass = 'text-xs sm:text-sm font-semibold';
-                    } else if (totalChars > 8) {
-                        fontClass = 'text-sm sm:text-base font-bold';
-                    }
-                    cardTransEl.innerHTML = `<span class="${fontClass} text-[#0071E3] hover:underline leading-snug break-words text-center">${esc(parsed.pureZh)}</span>`;
-                }
+                    `;
+                }).join('');
             }
             
             // 決定題型模式：依使用者選取題型（預設為 en2zh 看英選中）
@@ -3023,14 +3030,20 @@
                     const audioBtn = document.getElementById('btn-audio');
 
                     const curParsed = splitPosAndZh(currentWord.zh, currentWord.pos);
-                    const curPosBadge = curParsed.pos ? `<span class="text-xs bg-blue-50 text-[#0071E3] border border-blue-200 px-1.5 py-0.5 rounded mr-1 font-mono">${curParsed.pos}</span>` : '';
+                    const curItems = (curParsed.items && curParsed.items.length > 0)
+                        ? curParsed.items
+                        : [{ pos: curParsed.pos || currentWord.pos || '', text: curParsed.pureZh }];
+                    const curCapsulesHtml = curItems.map(it => {
+                        const rawPos = (it.pos || curParsed.pos || '').toUpperCase().replace(/\.$/, '').trim();
+                        return `<span class="inline-flex items-center gap-1 bg-blue-50/90 border border-blue-200/70 px-2 py-0.5 rounded-lg text-xs font-bold text-[#0071E3] align-middle">${rawPos ? `<span class="text-[9px] font-extrabold uppercase px-1 py-0.2 rounded bg-[#0071E3] text-white font-mono leading-none shrink-0">${esc(rawPos)}</span>` : ''}<span>${esc(it.text)}</span></span>`;
+                    }).join(' ');
 
                     if (currentQuizType === 'listen') {
                         // 盲聽題：卡片正面由 🎧 🔊 瞬間揭曉為真實英文單字、KK 音標與中文釋義
                         wordEl.className = 'text-5xl font-extrabold text-[#1D1D1F] mb-1 tracking-tight break-all';
                         wordEl.innerText = currentWord.en;
                         kkEl.innerText = currentWord.kk || '';
-                        hintEl.innerHTML = `<span class="${isCorrect ? 'text-green-600' : 'text-red-500'} font-semibold text-base"><span>${isCorrect ? '✅' : '❌'} 正確解答：</span>${curPosBadge}<span class="text-[#1D1D1F] font-bold">${esc(curParsed.pureZh)}</span></span>`;
+                        hintEl.innerHTML = `<span class="${isCorrect ? 'text-green-600' : 'text-red-500'} font-semibold text-base inline-flex items-center gap-1.5 flex-wrap"><span>${isCorrect ? '✅' : '❌'} 正確解答：</span>${curCapsulesHtml}</span>`;
                         if (audioBtn) audioBtn.classList.remove('hidden');
                     } else if (currentQuizType === 'zh2en') {
                         // 看中選英：在下方提示列直接揭曉正確英文拼寫與音標
@@ -3038,7 +3051,7 @@
                         if (audioBtn) audioBtn.classList.remove('hidden');
                     } else if (currentQuizType === 'en2zh') {
                         // 看英選中：在下方提示列揭曉完整繁中釋義
-                        hintEl.innerHTML = `<span class="${isCorrect ? 'text-green-600' : 'text-red-500'} font-semibold text-base"><span>${isCorrect ? '✅' : '❌'} 正確釋義：</span>${curPosBadge}<span class="text-[#1D1D1F] font-bold">${esc(curParsed.pureZh)}</span></span>`;
+                        hintEl.innerHTML = `<span class="${isCorrect ? 'text-green-600' : 'text-red-500'} font-semibold text-base inline-flex items-center gap-1.5 flex-wrap"><span>${isCorrect ? '✅' : '❌'} 正確釋義：</span>${curCapsulesHtml}</span>`;
                     }
 
                     // 2. 選項按鈕即時回饋，揭曉中英雙語對照
@@ -4557,16 +4570,20 @@
                     </div>
                 </div>
 
-                <!-- 釋義清單 -->
-                <div class="space-y-1.5 bg-gray-50/80 p-3 rounded-2xl border border-gray-100">
-                    ${parsed.items && parsed.items.length > 0 ? parsed.items.map(it => `
-                        <div class="flex items-start gap-2">
-                            <span class="px-2 py-0.5 text-[11px] font-bold rounded-md bg-blue-100 text-blue-800 uppercase tracking-wide shrink-0 mt-0.5">${esc(it.pos)}</span>
-                            <span class="text-gray-800 font-medium text-sm leading-snug">${esc(it.text)}</span>
-                        </div>
-                    `).join('') : `
-                        <div class="text-gray-800 font-medium text-sm">${esc(parsed.pureZh || w.zh)}</div>
-                    `}
+                <!-- 釋義清單 (全面統一為膠囊標籤與字體) -->
+                <div class="flex items-center gap-2 flex-wrap">
+                    ${(parsed.items && parsed.items.length > 0 ? parsed.items : [{ pos: parsed.pos || w.pos || '', text: parsed.pureZh || w.zh }]).map(it => {
+                        const rawPos = (it.pos || parsed.pos || w.pos || '').toUpperCase().replace(/\.$/, '').trim();
+                        const posHtml = rawPos
+                            ? `<span class="text-[10px] font-extrabold uppercase px-1.5 py-0.5 rounded bg-[#0071E3] text-white font-mono leading-none tracking-wide shrink-0">${esc(rawPos)}</span>`
+                            : '';
+                        return `
+                            <span class="inline-flex items-center gap-1.5 bg-blue-50/80 hover:bg-blue-100/80 border border-blue-200/70 px-2.5 py-1 rounded-xl shadow-2xs transition-colors shrink-0 max-w-full">
+                                ${posHtml}
+                                <span class="text-sm sm:text-[15px] font-bold text-[#0071E3] leading-snug break-words">${esc(it.text)}</span>
+                            </span>
+                        `;
+                    }).join('')}
                 </div>
 
                 <!-- 詞形變化 (動詞三態 / 複數 / 比較級) -->

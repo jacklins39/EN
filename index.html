@@ -97,6 +97,91 @@
             to { opacity: 1; transform: scale(1); }
         }
         .dict-modal-anim { animation: modalFadeIn 0.2s ease-out forwards; }
+
+        /* 作答動態互動回饋 (答對彈跳發光 / 答錯阻尼震動 / 浮動記憶膠囊 / 連勝徽章) */
+        @keyframes cardCorrectPop {
+            0% { transform: scale(1); }
+            35% { transform: scale(1.024); }
+            70% { transform: scale(0.995); }
+            100% { transform: scale(1); }
+        }
+        @keyframes cardWrongShake {
+            0%, 100% { transform: translateX(0); }
+            18% { transform: translateX(-8px) rotate(-0.8deg); }
+            36% { transform: translateX(7px) rotate(0.8deg); }
+            54% { transform: translateX(-5px) rotate(-0.4deg); }
+            72% { transform: translateX(4px) rotate(0.4deg); }
+            90% { transform: translateX(-2px); }
+        }
+        .flip-card.card-correct-anim {
+            animation: cardCorrectPop 0.48s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .flip-card.card-correct-anim .flip-card-front,
+        .flip-card.card-correct-anim .flip-card-back {
+            border-color: #10B981 !important;
+            box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.22), 0 14px 32px -6px rgba(16, 185, 129, 0.18) !important;
+            transition: border-color 0.15s ease, box-shadow 0.15s ease;
+        }
+        .flip-card.card-wrong-anim {
+            animation: cardWrongShake 0.44s cubic-bezier(0.36, 0.07, 0.19, 0.97);
+        }
+        .flip-card.card-wrong-anim .flip-card-front,
+        .flip-card.card-wrong-anim .flip-card-back {
+            border-color: #F43F5E !important;
+            box-shadow: 0 0 0 3px rgba(244, 63, 94, 0.22), 0 14px 32px -6px rgba(244, 63, 94, 0.16) !important;
+            transition: border-color 0.15s ease, box-shadow 0.15s ease;
+        }
+        @keyframes feedbackToastPop {
+            0% { opacity: 0; transform: translate(-50%, 10px) scale(0.85); }
+            20% { opacity: 1; transform: translate(-50%, 0px) scale(1.04); }
+            35% { opacity: 1; transform: translate(-50%, -2px) scale(1); }
+            80% { opacity: 1; transform: translate(-50%, -5px) scale(1); }
+            100% { opacity: 0; transform: translate(-50%, -14px) scale(0.95); }
+        }
+        .feedback-toast-anim {
+            animation: feedbackToastPop 1.05s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+        @keyframes comboBadgeBounce {
+            0% { transform: scale(0.82); }
+            45% { transform: scale(1.18); }
+            100% { transform: scale(1); }
+        }
+        .combo-pop-anim {
+            animation: comboBadgeBounce 0.36s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        @keyframes optCorrectPop {
+            0% { transform: scale(0.98); }
+            50% { transform: scale(1.015); }
+            100% { transform: scale(1); }
+        }
+        .opt-correct-anim {
+            animation: optCorrectPop 0.32s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        @keyframes optWrongShake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            50% { transform: translateX(5px); }
+            75% { transform: translateX(-3px); }
+        }
+        .opt-wrong-anim {
+            animation: optWrongShake 0.34s ease-in-out;
+        }
+        @keyframes trophyHeroPop {
+            0% { opacity: 0; transform: scale(0.55) rotate(-8deg); }
+            60% { opacity: 1; transform: scale(1.08) rotate(3deg); }
+            82% { transform: scale(0.97) rotate(-1deg); }
+            100% { opacity: 1; transform: scale(1) rotate(0deg); }
+        }
+        .trophy-hero-anim {
+            animation: trophyHeroPop 0.65s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+        @keyframes statCardSlideUp {
+            0% { opacity: 0; transform: translateY(12px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .stat-card-anim-1 { animation: statCardSlideUp 0.45s cubic-bezier(0.22, 1, 0.36, 1) 0.08s both; }
+        .stat-card-anim-2 { animation: statCardSlideUp 0.45s cubic-bezier(0.22, 1, 0.36, 1) 0.16s both; }
+        .stat-card-anim-3 { animation: statCardSlideUp 0.45s cubic-bezier(0.22, 1, 0.36, 1) 0.24s both; }
     
         .mode-en-only .zh-text { display: none; }
         .mode-zh-only .en-text { display: none; }
@@ -670,7 +755,10 @@
             <div class="w-full mb-3.5 sm:mb-5">
                 <div class="flex justify-between items-end mb-2">
                     <div>
-                        <div class="text-xs text-[#86868B] font-medium" id="session-progress-text">進度: 0/10</div>
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <div class="text-xs text-[#86868B] font-medium" id="session-progress-text">進度: 0/10</div>
+                            <span id="session-combo-badge" class="hidden inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-bold bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-2xs">🔥 連對 2</span>
+                        </div>
                         <div id="session-queue-type" class="text-[#0071E3] text-xs font-medium mt-1"></div>
                     </div>
                     <div class="flex items-center gap-2">
@@ -695,7 +783,8 @@
             </div>
 
             <!-- 單字卡 -->
-            <div class="flip-card mb-4 sm:mb-6" id="flashcard">
+            <div class="flip-card mb-4 sm:mb-6 relative" id="flashcard">
+                <div id="card-feedback-toast" class="hidden pointer-events-none absolute top-3.5 left-1/2 -translate-x-1/2 z-30 whitespace-nowrap px-3.5 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1.5"></div>
                 <div class="flip-card-inner">
                     <!-- 正面 (英文) -->
                     <div class="flip-card-front">
@@ -1181,16 +1270,68 @@
             </div>
         </div>
 
-        <!-- 課程結束視圖 -->
+        <!-- 課程結束視圖 (動態過關戰報與單字復盤) -->
         <div id="view-completed" class="w-full hidden text-center">
-            <div class="bg-white rounded-2xl shadow-sm p-8">
-                <div class="w-20 h-20 bg-[#E5E5EA] text-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            <div class="bg-white rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.05)] border border-slate-200/80 p-5 sm:p-7 relative overflow-hidden">
+                <!-- 頂部背景光暈裝飾 -->
+                <div class="pointer-events-none absolute -top-16 left-1/2 -translate-x-1/2 w-64 h-32 bg-gradient-to-b from-blue-400/15 via-emerald-400/10 to-transparent blur-2xl rounded-full"></div>
+
+                <!-- 動態評價徽章 -->
+                <div class="relative z-10 flex flex-col items-center">
+                    <span id="completed-rank-badge" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80 mb-3 shadow-2xs">
+                        🏆 S 級 · 完美通關
+                    </span>
+                    <div id="completed-hero-icon" class="trophy-hero-anim w-20 h-20 bg-gradient-to-br from-emerald-400 to-teal-600 text-white rounded-3xl flex items-center justify-center mx-auto mb-3.5 shadow-lg shadow-emerald-500/20 border-2 border-white">
+                        <span class="text-4xl">🏆</span>
+                    </div>
+                    <h2 id="completed-title" class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-1">完美通關！</h2>
+                    <p id="completed-subtitle" class="text-xs sm:text-sm text-slate-500 mb-5 max-w-md mx-auto">你已經完成了今天的單字課程與錯題複習，進度已自動同步儲存。</p>
                 </div>
-                <h2 class="text-3xl font-semibold text-[#1D1D1F] mb-2">太棒了！</h2>
-                <p class="text-[#86868B] mb-8">你已經完成了今天的單字課程與錯題複習。進度已自動儲存。</p>
-                <button id="btn-return-dash" class="btn-action w-full bg-[#0071E3] text-white font-medium py-3 rounded-2xl shadow-sm">返回儀表板</button>
-                <button id="btn-return-lobby" class="w-full bg-gray-100 hover:bg-gray-200 text-[#1D1D1F] font-medium py-3 rounded-2xl shadow-sm mt-3 transition-colors">前往學習中心</button>
+
+                <!-- 3 大動態跳字數據卡 -->
+                <div class="grid grid-cols-3 gap-2.5 sm:gap-3 mb-5 relative z-10">
+                    <div class="stat-card-anim-1 bg-slate-50/90 border border-slate-200/75 rounded-2xl p-3 text-center">
+                        <div class="text-[11px] font-semibold text-slate-500 mb-0.5">本回完訓</div>
+                        <div class="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight" id="completed-stat-words">0</div>
+                        <div class="text-[10px] text-slate-400 mt-0.5" id="completed-stat-words-sub">單字</div>
+                    </div>
+                    <div class="stat-card-anim-2 bg-emerald-50/60 border border-emerald-200/70 rounded-2xl p-3 text-center">
+                        <div class="text-[11px] font-semibold text-emerald-700 mb-0.5">首次正確率</div>
+                        <div class="text-xl sm:text-2xl font-extrabold text-emerald-600 tracking-tight" id="completed-stat-accuracy">100%</div>
+                        <div class="text-[10px] text-emerald-600/80 mt-0.5" id="completed-stat-accuracy-sub">一次過關</div>
+                    </div>
+                    <div class="stat-card-anim-3 bg-amber-50/60 border border-amber-200/70 rounded-2xl p-3 text-center">
+                        <div class="text-[11px] font-semibold text-amber-700 mb-0.5">最高連對</div>
+                        <div class="text-xl sm:text-2xl font-extrabold text-amber-600 tracking-tight" id="completed-stat-streak">🔥 0</div>
+                        <div class="text-[10px] text-amber-600/80 mt-0.5" id="completed-stat-streak-sub">Combo 紀錄</div>
+                    </div>
+                </div>
+
+                <!-- 本回完訓單字成長復盤清單 (可點擊聽發音與看三態詳解) -->
+                <div id="completed-recap-box" class="bg-slate-50/80 border border-slate-200/75 rounded-2xl p-3.5 mb-5 text-left relative z-10">
+                    <div class="flex items-center justify-between mb-2 pb-1.5 border-b border-slate-200/60">
+                        <span class="text-xs font-bold text-slate-700 flex items-center gap-1.5">
+                            <span>✨</span> 本回記憶升級單字
+                        </span>
+                        <span class="text-[11px] text-slate-400">點單字看詳解 · 點 🔊 發音</span>
+                    </div>
+                    <div id="completed-words-list" class="max-h-48 overflow-y-auto pr-1 custom-scrollbar divide-y divide-slate-200/50"></div>
+                </div>
+
+                <!-- 底部操作按鈕 -->
+                <div class="space-y-2.5 relative z-10">
+                    <button id="btn-return-dash" class="btn-action w-full bg-gradient-to-r from-[#0071E3] to-[#005BB5] hover:from-[#0077ED] hover:to-[#0062C4] text-white font-semibold py-3 px-4 rounded-xl shadow-sm text-sm sm:text-[15px] cursor-pointer">
+                        返回儀表板
+                    </button>
+                    <div class="grid grid-cols-2 gap-2.5">
+                        <button id="btn-return-lobby" class="btn-action w-full bg-slate-100 hover:bg-slate-200/80 text-slate-700 font-semibold py-2.5 px-3 rounded-xl text-xs sm:text-sm transition-colors cursor-pointer">
+                            前往學習中心
+                        </button>
+                        <button id="btn-completed-rapid" class="btn-action w-full bg-blue-50 hover:bg-blue-100/80 text-[#0071E3] border border-blue-200/60 font-semibold py-2.5 px-3 rounded-xl text-xs sm:text-sm transition-colors cursor-pointer">
+                            ⚡ 再來一輪快問快答
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -2580,6 +2721,7 @@
             mistakeQueue = [];
             totalCardsInSession = sessionQueue.length;
             cardsCompleted = 0;
+            resetSessionStats(sessionQueue);
             sessionTitle = title;
             switchTab('view-study', document.getElementById('tab-btn-study'));
             nextCard();
@@ -2606,6 +2748,7 @@
             mistakeQueue = [];
             totalCardsInSession = selected.length;
             cardsCompleted = 0;
+            resetSessionStats(selected);
             isMistakeMode = false;
             isAutoFlashcardMode = false;
             
@@ -2752,7 +2895,8 @@
             }
 
             totalCardsInSession = sessionQueue.length;
-            cardsCompleted = 0; isMistakeMode = false;
+            cardsCompleted = 0;
+            resetSessionStats(sessionQueue); isMistakeMode = false;
 
             switchTab('view-study', document.getElementById('tab-btn-study'));
             nextCard();
@@ -3033,7 +3177,114 @@
             });
         }
 
+        // ==========================================
+        // 當次課程互動戰報與連對追蹤 (Session Interactive Stats)
+        // ==========================================
+        let sessionStats = {
+            streak: 0,
+            maxStreak: 0,
+            totalAnswers: 0,
+            initialWords: [],
+            wordMap: {}
+        };
+        let cardAnimTimerId = null;
+        let toastAnimTimerId = null;
+
+        function resetSessionStats(wordsList = []) {
+            sessionStats = {
+                streak: 0,
+                maxStreak: 0,
+                totalAnswers: 0,
+                initialWords: Array.isArray(wordsList) ? [...wordsList] : [],
+                wordMap: {}
+            };
+            const comboBadge = document.getElementById('session-combo-badge');
+            if (comboBadge) {
+                comboBadge.classList.add('hidden');
+                comboBadge.classList.remove('combo-pop-anim');
+            }
+            const toastEl = document.getElementById('card-feedback-toast');
+            if (toastEl) {
+                toastEl.classList.add('hidden');
+                toastEl.classList.remove('feedback-toast-anim');
+            }
+            if (flashcard) {
+                flashcard.classList.remove('card-correct-anim', 'card-wrong-anim');
+            }
+        }
+
+        function triggerAnswerFeedbackUI(isCorrect, oldLevel, newLevel, streak, wasMistakeMode) {
+            // 1. 單字卡實體微互動 (答對彈跳翠綠光暈 / 答錯水平震動玫瑰光暈)
+            if (flashcard) {
+                flashcard.classList.remove('card-correct-anim', 'card-wrong-anim');
+                void flashcard.offsetWidth;
+                flashcard.classList.add(isCorrect ? 'card-correct-anim' : 'card-wrong-anim');
+                if (cardAnimTimerId) clearTimeout(cardAnimTimerId);
+                cardAnimTimerId = setTimeout(() => {
+                    flashcard.classList.remove('card-correct-anim', 'card-wrong-anim');
+                }, 520);
+            }
+
+            // 2. 卡片頂部浮動記憶膠囊 (#card-feedback-toast)
+            const toastEl = document.getElementById('card-feedback-toast');
+            if (toastEl) {
+                toastEl.classList.remove('hidden', 'feedback-toast-anim');
+                void toastEl.offsetWidth;
+                if (isCorrect) {
+                    let levelText = '';
+                    if (wasMistakeMode) {
+                        levelText = '✅ 錯題攻克 · 回歸 LV1';
+                    } else if (newLevel >= MAX_LEVEL) {
+                        levelText = `👑 晉升 LV${newLevel} 永久精通！`;
+                    } else {
+                        levelText = `✨ 記憶升級 LV${oldLevel} ➔ LV${newLevel}`;
+                    }
+                    if (streak >= 3) {
+                        levelText += ` · 🔥 ${streak} 連對`;
+                    }
+                    toastEl.className = 'pointer-events-none absolute top-3.5 left-1/2 -translate-x-1/2 z-30 whitespace-nowrap px-3.5 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1.5 bg-emerald-600 text-white border border-emerald-400 feedback-toast-anim';
+                    toastEl.innerText = levelText;
+                } else {
+                    toastEl.className = 'pointer-events-none absolute top-3.5 left-1/2 -translate-x-1/2 z-30 whitespace-nowrap px-3.5 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1.5 bg-rose-500 text-white border border-rose-300 feedback-toast-anim';
+                    toastEl.innerText = '💪 已加入錯題重練 · 稍後再戰';
+                }
+                if (toastAnimTimerId) clearTimeout(toastAnimTimerId);
+                toastAnimTimerId = setTimeout(() => {
+                    toastEl.classList.add('hidden');
+                    toastEl.classList.remove('feedback-toast-anim');
+                }, 1050);
+            }
+
+            // 3. 頂部即時連勝徽章 (#session-combo-badge) 與里程碑彩帶
+            const comboBadge = document.getElementById('session-combo-badge');
+            if (comboBadge) {
+                if (isCorrect && streak >= 2) {
+                    comboBadge.classList.remove('hidden', 'combo-pop-anim');
+                    void comboBadge.offsetWidth;
+                    if (streak >= 5) {
+                        comboBadge.className = 'inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-gradient-to-r from-rose-500 via-orange-500 to-amber-500 text-white shadow-xs combo-pop-anim';
+                        comboBadge.innerText = `🔥 ${streak} 連勝無雙！`;
+                    } else {
+                        comboBadge.className = 'inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-bold bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-2xs combo-pop-anim';
+                        comboBadge.innerText = `🔥 連對 ${streak}`;
+                    }
+                    // 連對達 5、10、15、20 題時發射輕量級慶祝彩花
+                    if ((streak === 5 || streak === 10 || streak === 15 || streak === 20) && typeof confetti === 'function') {
+                        try {
+                            confetti({ particleCount: 28, spread: 55, origin: { y: 0.32 }, scalar: 0.75 });
+                        } catch (e) {}
+                    }
+                } else {
+                    comboBadge.classList.add('hidden');
+                    comboBadge.classList.remove('combo-pop-anim');
+                }
+            }
+        }
+
         function nextCard() {
+            if (cardsCompleted === 0 && !isMistakeMode && mistakeQueue.length === 0 && sessionStats.totalAnswers === 0 && sessionStats.initialWords.length === 0 && sessionQueue.length > 0) {
+                resetSessionStats(sessionQueue);
+            }
             if (autoFlashcardTimerId) {
                 clearTimeout(autoFlashcardTimerId);
                 autoFlashcardTimerId = null;
@@ -3197,6 +3448,7 @@
             }
             let progress = userProgress[wordId];
             if (typeof progress.level !== 'number') progress.level = 0;
+            const prevLevel = progress.level;
             if (progress.level === 0 && progress.firstLearnedDay === undefined) {
                 progress.firstLearnedDay = virtualCurrentDay;
             }
@@ -3231,6 +3483,35 @@
                     mistakeQueue.push(currentWord);
                 }
             }
+
+            // 記錄當次課程戰報與連對數
+            sessionStats.totalAnswers++;
+            if (isCorrect) {
+                sessionStats.streak++;
+                if (sessionStats.streak > sessionStats.maxStreak) {
+                    sessionStats.maxStreak = sessionStats.streak;
+                }
+            } else {
+                sessionStats.streak = 0;
+            }
+            if (!sessionStats.wordMap[wordId]) {
+                sessionStats.wordMap[wordId] = {
+                    word: currentWord,
+                    oldLevel: prevLevel,
+                    newLevel: progress.level,
+                    firstTryCorrect: isCorrect,
+                    mistakes: isCorrect ? 0 : 1
+                };
+            } else {
+                sessionStats.wordMap[wordId].newLevel = progress.level;
+                if (!isCorrect) sessionStats.wordMap[wordId].mistakes++;
+            }
+
+            // 觸發卡片與連勝動態微互動
+            try {
+                triggerAnswerFeedbackUI(isCorrect, prevLevel, progress.level, sessionStats.streak, isMistakeMode);
+                updateProgressBar();
+            } catch (e) { console.warn(e); }
             
             progress.updatedAt = Date.now();
             try { 
@@ -3463,8 +3744,8 @@
                         const bPosBadge = bParsed.pos ? `<span class="text-xs bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded mr-1 font-mono">${bParsed.pos}</span>` : '';
 
                         if (isThisCorrect) {
-                            b.classList.remove('bg-white', 'border-gray-200', 'hover:bg-[#F5F5F7]');
-                            b.classList.add('bg-green-50', 'border-green-500', 'text-green-800', 'shadow-sm');
+                            b.classList.remove('bg-white', 'border-gray-200', 'border-slate-200/90', 'hover:bg-[#F5F5F7]', 'hover:bg-slate-50');
+                            b.classList.add('bg-emerald-50', 'border-emerald-500', 'text-emerald-800', 'shadow-sm', 'opt-correct-anim');
                             if (currentQuizType === 'listen' || currentQuizType === 'zh2en') {
                                 b.innerHTML = `
                                     <span class="bg-green-600 text-white text-xs font-bold w-5 h-5 rounded-full inline-flex items-center justify-center mr-3 shrink-0">✓</span>
@@ -3478,8 +3759,8 @@
                                     <span class="font-bold text-green-900">${bPosBadge}${esc(bParsed.pureZh)}</span>`;
                             }
                         } else if (isThisClicked && !isCorrect) {
-                            b.classList.remove('bg-white', 'border-gray-200', 'hover:bg-[#F5F5F7]');
-                            b.classList.add('bg-red-50', 'border-red-500', 'text-red-700');
+                            b.classList.remove('bg-white', 'border-gray-200', 'border-slate-200/90', 'hover:bg-[#F5F5F7]', 'hover:bg-slate-50');
+                            b.classList.add('bg-rose-50', 'border-rose-500', 'text-rose-700', 'opt-wrong-anim');
                             if (currentQuizType === 'listen' || currentQuizType === 'zh2en') {
                                 b.innerHTML = `
                                     <span class="bg-red-500 text-white text-xs font-bold w-5 h-5 rounded-full inline-flex items-center justify-center mr-3 shrink-0">✕</span>
@@ -3542,7 +3823,152 @@
             document.getElementById('session-progress-text').innerText = `進度: ${cardsCompleted} / ${totalCardsInSession}`;
         }
 
+        function animateCountUp(el, targetVal, suffix = '', prefix = '', duration = 620) {
+            if (!el) return;
+            const startTime = performance.now();
+            const step = (now) => {
+                const progress = Math.min((now - startTime) / duration, 1);
+                const eased = 1 - Math.pow(1 - progress, 3); // cubic ease-out
+                const cur = Math.round(targetVal * eased);
+                el.innerText = `${prefix}${cur}${suffix}`;
+                if (progress < 1) {
+                    requestAnimationFrame(step);
+                } else {
+                    el.innerText = `${prefix}${targetVal}${suffix}`;
+                }
+            };
+            requestAnimationFrame(step);
+        }
+
+        function renderCompletedSessionUI(wasAutoPlay) {
+            const rankBadge = document.getElementById('completed-rank-badge');
+            const heroIcon = document.getElementById('completed-hero-icon');
+            const titleEl = document.getElementById('completed-title');
+            const subtitleEl = document.getElementById('completed-subtitle');
+            const elWords = document.getElementById('completed-stat-words');
+            const elWordsSub = document.getElementById('completed-stat-words-sub');
+            const elAcc = document.getElementById('completed-stat-accuracy');
+            const elAccSub = document.getElementById('completed-stat-accuracy-sub');
+            const elStreak = document.getElementById('completed-stat-streak');
+            const elStreakSub = document.getElementById('completed-stat-streak-sub');
+            const listEl = document.getElementById('completed-words-list');
+
+            // 觸發獎盃動態重播
+            if (heroIcon) {
+                heroIcon.classList.remove('trophy-hero-anim');
+                void heroIcon.offsetWidth;
+                heroIcon.classList.add('trophy-hero-anim');
+            }
+
+            const entries = Object.values(sessionStats.wordMap || {});
+            const isAutoOrEmpty = wasAutoPlay || entries.length === 0;
+
+            if (isAutoOrEmpty) {
+                const wordsCount = sessionStats.initialWords.length || totalCardsInSession || 0;
+                if (rankBadge) {
+                    rankBadge.className = 'inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-blue-50 text-[#0071E3] border border-blue-200/80 mb-3 shadow-2xs';
+                    rankBadge.innerText = '🎧 語音跟讀 · 輪播完畢';
+                }
+                if (heroIcon) {
+                    heroIcon.className = 'trophy-hero-anim w-20 h-20 bg-gradient-to-br from-[#0071E3] to-indigo-600 text-white rounded-3xl flex items-center justify-center mx-auto mb-3.5 shadow-lg shadow-blue-500/20 border-2 border-white';
+                    heroIcon.innerHTML = '<span class="text-4xl">🎧</span>';
+                }
+                if (titleEl) titleEl.innerText = '輪播溫習完成！';
+                if (subtitleEl) subtitleEl.innerText = `已完整聆聽 ${wordsCount} 個單字與真人例句發音，點擊下方列表可隨時抽查。`;
+                animateCountUp(elWords, wordsCount, ' 字');
+                if (elWordsSub) elWordsSub.innerText = '本輪播總字數';
+                animateCountUp(elAcc, 100, '%');
+                if (elAccSub) elAccSub.innerText = '完整聆聽率';
+                if (elStreak) elStreak.innerText = '🔊 100%';
+                if (elStreakSub) elStreakSub.innerText = '雙語神經語音';
+
+                if (listEl) {
+                    const recapWords = sessionStats.initialWords || [];
+                    listEl.innerHTML = recapWords.map(w => `
+                        <div class="flex items-center justify-between py-2.5 px-2 hover:bg-white rounded-xl cursor-pointer transition-colors" onclick="showWordDetailModal('${esc(w.en)}')">
+                            <div class="min-w-0 pr-2">
+                                <div class="font-bold text-slate-900 text-sm">${esc(w.en)} <span class="text-[11px] text-slate-400 font-mono ml-1">${esc(w.kk || '')}</span></div>
+                                <div class="text-xs text-slate-500 truncate">${esc(w.zh)}</div>
+                            </div>
+                            <div class="flex items-center gap-2 shrink-0">
+                                <span class="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-blue-50 text-[#0071E3] border border-blue-100">🎧 已聆聽</span>
+                                <button type="button" class="text-slate-400 hover:text-[#0071E3] p-1 cursor-pointer" onclick="event.stopPropagation(); unlockMobileAudio(); playAudio('${esc(w.en)}')">🔊</button>
+                            </div>
+                        </div>`).join('') || '<div class="text-xs text-slate-400 text-center py-4">本回無單字紀錄</div>';
+                }
+                return;
+            }
+
+            const uniqueCount = entries.length;
+            const firstTryCount = entries.filter(e => e.firstTryCorrect).length;
+            const accuracy = Math.round((firstTryCount / Math.max(1, uniqueCount)) * 100);
+            const maxStreak = sessionStats.maxStreak || firstTryCount;
+
+            if (accuracy === 100) {
+                if (rankBadge) {
+                    rankBadge.className = 'inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80 mb-3 shadow-2xs';
+                    rankBadge.innerText = '🏆 S 級 · 完美無瑕';
+                }
+                if (heroIcon) {
+                    heroIcon.className = 'trophy-hero-anim w-20 h-20 bg-gradient-to-br from-emerald-400 to-teal-600 text-white rounded-3xl flex items-center justify-center mx-auto mb-3.5 shadow-lg shadow-emerald-500/20 border-2 border-white';
+                    heroIcon.innerHTML = '<span class="text-4xl">🏆</span>';
+                }
+                if (titleEl) titleEl.innerText = '完美通關！';
+                if (subtitleEl) subtitleEl.innerText = `太神了！${uniqueCount} 個單字全部一次命中，記憶吸收率 100%！`;
+            } else if (accuracy >= 80) {
+                if (rankBadge) {
+                    rankBadge.className = 'inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-blue-50 text-[#0071E3] border border-blue-200/80 mb-3 shadow-2xs';
+                    rankBadge.innerText = '🌟 A 級 · 表現優異';
+                }
+                if (heroIcon) {
+                    heroIcon.className = 'trophy-hero-anim w-20 h-20 bg-gradient-to-br from-[#0071E3] to-indigo-600 text-white rounded-3xl flex items-center justify-center mx-auto mb-3.5 shadow-lg shadow-blue-500/20 border-2 border-white';
+                    heroIcon.innerHTML = '<span class="text-4xl">🌟</span>';
+                }
+                if (titleEl) titleEl.innerText = '表現優異！順利完訓';
+                if (subtitleEl) subtitleEl.innerText = `高準確率完成今日單字特訓，錯題也已全數攻克並同步存檔！`;
+            } else {
+                if (rankBadge) {
+                    rankBadge.className = 'inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-50 text-amber-700 border border-amber-200/80 mb-3 shadow-2xs';
+                    rankBadge.innerText = '💪 B 級 · 錯題全數攻克';
+                }
+                if (heroIcon) {
+                    heroIcon.className = 'trophy-hero-anim w-20 h-20 bg-gradient-to-br from-amber-400 to-orange-500 text-white rounded-3xl flex items-center justify-center mx-auto mb-3.5 shadow-lg shadow-amber-500/20 border-2 border-white';
+                    heroIcon.innerHTML = '<span class="text-4xl">💪</span>';
+                }
+                if (titleEl) titleEl.innerText = '堅持到底！完訓成功';
+                if (subtitleEl) subtitleEl.innerText = `所有不熟的單字都已在重練中攻克，反覆提取讓記憶更牢固！`;
+            }
+
+            animateCountUp(elWords, uniqueCount, ' 字');
+            if (elWordsSub) elWordsSub.innerText = sessionStats.totalAnswers > uniqueCount ? `含重練共 ${sessionStats.totalAnswers} 次作答` : '全部一次過關';
+            animateCountUp(elAcc, accuracy, '%');
+            if (elAccSub) elAccSub.innerText = `首答命中 ${firstTryCount}/${uniqueCount}`;
+            animateCountUp(elStreak, maxStreak, '', '🔥 ');
+            if (elStreakSub) elStreakSub.innerText = maxStreak >= 5 ? '神級連勝紀錄' : '最高連對紀錄';
+
+            if (listEl) {
+                listEl.innerHTML = entries.map(item => {
+                    const w = item.word;
+                    const badgeHtml = item.firstTryCorrect
+                        ? `<span class="text-[11px] font-bold px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200/70">✨ LV${item.oldLevel} ➔ LV${item.newLevel}</span>`
+                        : `<span class="text-[11px] font-bold px-2 py-0.5 rounded-full bg-amber-50 text-amber-700 border border-amber-200/70">🔄 錯題攻克 LV${item.newLevel}</span>`;
+                    return `
+                        <div class="flex items-center justify-between py-2.5 px-2 hover:bg-white rounded-xl cursor-pointer transition-colors" onclick="showWordDetailModal('${esc(w.en)}')">
+                            <div class="min-w-0 pr-2">
+                                <div class="font-bold text-slate-900 text-sm">${esc(w.en)} <span class="text-[11px] text-slate-400 font-mono ml-1">${esc(w.kk || '')}</span></div>
+                                <div class="text-xs text-slate-500 truncate">${esc(w.zh)}</div>
+                            </div>
+                            <div class="flex items-center gap-1.5 shrink-0">
+                                ${badgeHtml}
+                                <button type="button" class="text-slate-400 hover:text-[#0071E3] p-1 cursor-pointer" title="聆聽發音" onclick="event.stopPropagation(); unlockMobileAudio(); playAudio('${esc(w.en)}')">🔊</button>
+                            </div>
+                        </div>`;
+                }).join('');
+            }
+        }
+
         function finishSession() {
+            const wasAutoPlay = isAutoFlashcardMode;
             isAutoFlashcardMode = false;
             if (autoFlashcardTimerId) clearTimeout(autoFlashcardTimerId);
             stopAllAudio();
@@ -3554,11 +3980,18 @@
             currentWord = null;
             sessionQueue = [];
             mistakeQueue = [];
+            renderCompletedSessionUI(wasAutoPlay);
             hideAllViews();
             viewCompleted.classList.remove('hidden');
             playFinishSound();
             if (typeof confetti === 'function') {
-                confetti({ particleCount: 150, spread: 70, origin: { y: 0.6 } });
+                confetti({ particleCount: 110, spread: 75, origin: { y: 0.6 } });
+                setTimeout(() => {
+                    try {
+                        confetti({ particleCount: 60, angle: 60, spread: 55, origin: { x: 0.1, y: 0.65 } });
+                        confetti({ particleCount: 60, angle: 120, spread: 55, origin: { x: 0.9, y: 0.65 } });
+                    } catch (e) {}
+                }, 260);
             }
         }
 
@@ -3570,6 +4003,11 @@
         document.getElementById('btn-return-lobby')?.addEventListener('click', () => {
             switchTab('view-study-lobby', document.getElementById('tab-btn-study'));
             updateDashboard();
+        });
+
+        document.getElementById('btn-completed-rapid')?.addEventListener('click', () => {
+            unlockMobileAudio();
+            startRapidQuiz(10);
         });
 
         document.getElementById('btn-show-answer').addEventListener('click', () => {
@@ -6006,7 +6444,7 @@
             sessionTitle = WEAK_TITLE;
             sessionQueue = q; mistakeQueue = [];
             isMistakeMode = false; isAutoFlashcardMode = false;
-            totalCardsInSession = q.length; cardsCompleted = 0;
+            totalCardsInSession = q.length; cardsCompleted = 0; resetSessionStats(q);
             switchTab('view-study', document.getElementById('tab-btn-study'));
             nextCard();
         }
@@ -6048,7 +6486,8 @@
             }
 
             totalCardsInSession = sessionQueue.length;
-            cardsCompleted = 0; isMistakeMode = false;
+            cardsCompleted = 0;
+            resetSessionStats(sessionQueue); isMistakeMode = false;
             sessionTitle = `錯題特訓 (${sessionQueue.length} 字)`;
 
             switchTab('view-study', document.getElementById('tab-btn-study'));

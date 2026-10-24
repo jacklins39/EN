@@ -1460,7 +1460,12 @@
                 loadingBanner.classList.remove('hidden');
                 await loadDataFromCloud();
                 loadingBanner.classList.add('hidden');
+                setupRealtimeCloudListener(user.uid);
             } else {
+                if (typeof unsubscribeCloudListener === 'function' && unsubscribeCloudListener) {
+                    unsubscribeCloudListener();
+                    unsubscribeCloudListener = null;
+                }
                 currentUser = null;
                 loginBtn.classList.remove('hidden');
                 logoutBtn.classList.add('hidden');
@@ -1598,6 +1603,25 @@
             return { exists: true, data: () => parsed };
         }
 
+        let unsubscribeCloudListener = null;
+        function setupRealtimeCloudListener(uid) {
+            if (unsubscribeCloudListener) {
+                unsubscribeCloudListener();
+                unsubscribeCloudListener = null;
+            }
+            try {
+                unsubscribeCloudListener = db.collection('users').doc(uid).onSnapshot((docSnap) => {
+                    if (!docSnap || !docSnap.exists || docSnap.metadata.hasPendingWrites || isCloudLoading || suppressCloudSave) return;
+                    // 外部裝置 (如手機) 寫入雲端時，自動觸發靜默同步更新畫面
+                    loadDataFromCloud(true).catch(console.warn);
+                }, (err) => {
+                    console.warn("Realtime listener warning:", err?.message || err);
+                });
+            } catch (e) {
+                console.warn("Failed to attach realtime listener:", e);
+            }
+        }
+
         async function loadDataFromCloud(isSilent = false) {
             if (!currentUser) return;
             const now = Date.now();
@@ -1727,20 +1751,20 @@
                     if (isDayRolled) {
                         dailyPlans = {};
                     } else {
-                        // 雲端每日排程為權威基準，已完成狀態 (completed: true) 優先
-                        const mergedPlans = { ...dailyPlans };
-                        for (const [u, cp] of Object.entries(cloudDailyPlans)) {
-                            const lp = mergedPlans[u];
-                            if (!lp) {
+                        // 僅保留當日 (cloudDay) 的有效排程，且任一裝置已完成 (completed: true) 即優先採用
+                        const mergedPlans = {};
+                        const allUnits = new Set([...Object.keys(dailyPlans || {}), ...Object.keys(cloudDailyPlans || {})]);
+                        for (const u of allUnits) {
+                            const lp = (dailyPlans && dailyPlans[u] && dailyPlans[u].day === cloudDay) ? dailyPlans[u] : null;
+                            const cp = (cloudDailyPlans && cloudDailyPlans[u] && cloudDailyPlans[u].day === cloudDay) ? cloudDailyPlans[u] : null;
+                            if (lp && cp) {
+                                if (cp.completed && !lp.completed) mergedPlans[u] = cp;
+                                else if (!cp.completed && lp.completed) mergedPlans[u] = lp;
+                                else mergedPlans[u] = { ...cp, completed: Boolean(cp.completed || lp.completed) };
+                            } else if (cp) {
                                 mergedPlans[u] = cp;
-                            } else {
-                                if (cp.completed && !lp.completed) {
-                                    mergedPlans[u] = cp;
-                                } else if (!cp.completed && lp.completed) {
-                                    mergedPlans[u] = lp;
-                                } else if ((cp.day || 0) >= (lp.day || 0)) {
-                                    mergedPlans[u] = cp;
-                                }
+                            } else if (lp) {
+                                mergedPlans[u] = lp;
                             }
                         }
                         dailyPlans = mergedPlans;
@@ -2064,45 +2088,88 @@
             return arr;
         }
 
+        // 判斷單字是否為「今日 (virtualCurrentDay) 剛學過的新單字」，防止另一台裝置重算排程時多抽一輪新單字
+        function isWordNewlyLearnedToday(w, currentDay) {
+            const p = userProgress[w.id];
+            if (!p || !p.level) return false;
+            if (p.firstLearnedDay === currentDay) return true;
+            const interval = SRS_INTERVALS[p.level] || 1;
+            const studiedDay = (p.nextReviewDay || 0) - interval;
+            if (p.level === 1 && studiedDay === currentDay) {
+                const hasOldMistake = Array.isArray(p.mistakes) && p.mistakes.some(m => m && typeof m.day === 'number' && m.day < currentDay);
+                if (!hasOldMistake) return true;
+            }
+            return false;
+        }
+
         function getDailyPlan(unit) {
             const daySeed = (Number(unit) * 100000) + Number(virtualCurrentDay || 1);
+            const unitWords = getUnitWords(unit);
 
-            // 若當日已有計畫，直接使用，不再無故重新洗牌
+            // 找出在 userProgress 中今日已經學過的新單字 (例如剛在手機端學完的 10 個新字)
+            const alreadyLearnedToday = unitWords.filter(w => isWordNewlyLearnedToday(w, virtualCurrentDay));
+            alreadyLearnedToday.sort((a, b) => a.id - b.id);
+
+            // 若當日已有計畫，檢查是否需要與已學進度對齊
             if (dailyPlans[unit] && dailyPlans[unit].day === virtualCurrentDay && Array.isArray(dailyPlans[unit].newWordIds)) {
-                // 若當日未完成且因新單字設定改變需補齊，採用確定性種子精準擴增或縮減
-                const countMismatch = dailyPlans[unit].newWordIds.length !== NEW_WORDS_PER_DAY;
-                if (!dailyPlans[unit].completed && countMismatch) {
-                    const unitWords = getUnitWords(unit);
-                    const newWordsCandidates = unitWords.filter(w => !userProgress[w.id] || userProgress[w.id].level === 0);
-                    // 排序保證全裝置初始序列一致
+                const plan = dailyPlans[unit];
+                let changed = false;
+
+                // 若另一台裝置已學過今日新字，但本地排程卻全是未學過的字 (因先後各自生成排程)，自動將已學新字納入今日排程
+                if (alreadyLearnedToday.length > 0) {
+                    const learnedIds = alreadyLearnedToday.map(w => w.id);
+                    const currentLearnedInPlan = plan.newWordIds.filter(id => userProgress[id] && userProgress[id].level > 0);
+                    if (currentLearnedInPlan.length < learnedIds.length) {
+                        const unlearnedCandidates = unitWords.filter(w => !userProgress[w.id] || userProgress[w.id].level === 0);
+                        unlearnedCandidates.sort((a, b) => a.id - b.id);
+                        const shuffledNew = seededShuffle(unlearnedCandidates, daySeed);
+                        const needed = Math.max(0, NEW_WORDS_PER_DAY - learnedIds.length);
+                        plan.newWordIds = [...learnedIds.slice(0, NEW_WORDS_PER_DAY), ...shuffledNew.slice(0, needed).map(w => w.id)];
+                        changed = true;
+                    }
+                }
+
+                const countMismatch = plan.newWordIds.length !== NEW_WORDS_PER_DAY;
+                if (!plan.completed && countMismatch) {
+                    const learnedIds = alreadyLearnedToday.map(w => w.id).slice(0, NEW_WORDS_PER_DAY);
+                    const newWordsCandidates = unitWords.filter(w => (!userProgress[w.id] || userProgress[w.id].level === 0) && !learnedIds.includes(w.id));
                     newWordsCandidates.sort((a, b) => a.id - b.id);
                     const shuffledNew = seededShuffle(newWordsCandidates, daySeed);
-                    dailyPlans[unit].newWordIds = shuffledNew.slice(0, NEW_WORDS_PER_DAY).map(w => w.id);
+                    const needed = Math.max(0, NEW_WORDS_PER_DAY - learnedIds.length);
+                    plan.newWordIds = [...learnedIds, ...shuffledNew.slice(0, needed).map(w => w.id)];
+                    changed = true;
+                }
+
+                if (changed) {
                     saveDailyPlansLocally();
                     saveToCloud();
                 }
-                return dailyPlans[unit];
+                return plan;
             }
-
-            const unitWords = getUnitWords(unit);
 
             // 複習單字：排序後依確定性種子打散
             const dueWords = unitWords.filter(w => isDueForReview(w, userProgress[w.id] || null, virtualCurrentDay));
             dueWords.sort((a, b) => a.id - b.id);
             const reviewWords = seededShuffle(dueWords, daySeed + 7);
 
-            // 今日新單字：排序後依確定性種子打散抽取，任何裝置、任何時間算出的前 N 個單字 100% 絕對完全一致！
-            const newWordsCandidates = unitWords.filter(w => !userProgress[w.id] || userProgress[w.id].level === 0);
+            // 今日新單字：優先納入今日已在其他裝置學完的新單字，剩餘名額才由 level 0 候選池依確定性種子補齊
+            const learnedIds = alreadyLearnedToday.map(w => w.id).slice(0, NEW_WORDS_PER_DAY);
+            const newWordsCandidates = unitWords.filter(w => (!userProgress[w.id] || userProgress[w.id].level === 0) && !learnedIds.includes(w.id));
             newWordsCandidates.sort((a, b) => a.id - b.id);
             const shuffledNew = seededShuffle(newWordsCandidates, daySeed);
-            const newWords = shuffledNew.slice(0, NEW_WORDS_PER_DAY);
+            const needed = Math.max(0, NEW_WORDS_PER_DAY - learnedIds.length);
+            const finalNewWordIds = [...learnedIds, ...shuffledNew.slice(0, needed).map(w => w.id)];
+
+            const isAlreadyDone = (finalNewWordIds.length > 0 || reviewWords.length > 0) &&
+                finalNewWordIds.every(id => userProgress[id] && userProgress[id].level > 0) &&
+                reviewWords.every(w => !isDueForReview(w, userProgress[w.id] || null, virtualCurrentDay));
 
             dailyPlans[unit] = {
                 day: virtualCurrentDay,
                 date: getLocalDateStr(),
-                newWordIds: newWords.map(w => w.id),
+                newWordIds: finalNewWordIds,
                 reviewWordIds: reviewWords.map(w => w.id),
-                completed: false
+                completed: isAlreadyDone
             };
             saveDailyPlansLocally();
             saveToCloud();
@@ -2116,9 +2183,23 @@
             const unitWords = getUnitWords(currentUnit);
             const plan = getDailyPlan(currentUnit);
             
-            previewReviewWords = plan.reviewWordIds.map(id => vocabularyDB.find(w => w.id == id)).filter(Boolean);
-            previewNewWords = plan.newWordIds.map(id => vocabularyDB.find(w => w.id == id)).filter(Boolean);
-            const totalDailyCount = previewReviewWords.length + previewNewWords.length;
+            const allPlanReviewWords = (plan.reviewWordIds || []).map(id => vocabularyDB.find(w => w.id == id)).filter(Boolean);
+            const allPlanNewWords = (plan.newWordIds || []).map(id => vocabularyDB.find(w => w.id == id)).filter(Boolean);
+            const remainingReviewWords = allPlanReviewWords.filter(w => isDueForReview(w, userProgress[w.id] || null, virtualCurrentDay));
+            const remainingNewWords = allPlanNewWords.filter(w => !userProgress[w.id] || userProgress[w.id].level === 0);
+
+            const totalDailyCount = allPlanReviewWords.length + allPlanNewWords.length;
+            const remainingDailyCount = remainingReviewWords.length + remainingNewWords.length;
+
+            // 若今日排程的所有複習字與新單字皆已在 userProgress 完成，自動將今日計畫標記為 completed
+            if (!plan.completed && totalDailyCount > 0 && remainingDailyCount === 0) {
+                plan.completed = true;
+                saveDailyPlansLocally();
+                saveToCloud();
+            }
+
+            previewReviewWords = plan.completed ? allPlanReviewWords : remainingReviewWords;
+            previewNewWords = plan.completed ? allPlanNewWords : (remainingNewWords.length > 0 ? remainingNewWords : allPlanNewWords);
             
             const masteredCount = unitWords.filter(w => userProgress[w.id] && userProgress[w.id].level >= 5).length;
 
@@ -2126,8 +2207,8 @@
                 document.getElementById('stat-review').innerText = totalDailyCount;
                 document.getElementById('stat-new').innerText = 0;
             } else {
-                document.getElementById('stat-review').innerText = previewReviewWords.length;
-                document.getElementById('stat-new').innerText = previewNewWords.length;
+                document.getElementById('stat-review').innerText = remainingReviewWords.length;
+                document.getElementById('stat-new').innerText = remainingNewWords.length;
             }
             document.getElementById('stat-mastered').innerText = `${masteredCount} / ${unitWords.length}`;
 
@@ -2146,7 +2227,7 @@
                 startBtn.classList.remove('opacity-50', 'cursor-not-allowed');
                 startBtn.onclick = null;
             } else {
-                startBtn.innerText = `開始今日課程 (${totalDailyCount} 字)`;
+                startBtn.innerText = `開始今日課程 (${remainingDailyCount} 字)`;
                 startBtn.disabled = false;
                 startBtn.classList.remove('opacity-50', 'cursor-not-allowed');
                 startBtn.onclick = null;
@@ -2278,9 +2359,11 @@
             }
 
             const plan = getDailyPlan(currentUnit);
-            const reviewWords = (plan.reviewWordIds || []).map(id => vocabularyDB.find(w => w.id == id)).filter(Boolean);
-            const newWords = (plan.newWordIds || []).map(id => vocabularyDB.find(w => w.id == id)).filter(Boolean);
-            const totalDaily = reviewWords.length + newWords.length;
+            const allReviewWords = (plan.reviewWordIds || []).map(id => vocabularyDB.find(w => w.id == id)).filter(Boolean);
+            const allNewWords = (plan.newWordIds || []).map(id => vocabularyDB.find(w => w.id == id)).filter(Boolean);
+            const reviewWords = plan.completed ? allReviewWords : allReviewWords.filter(w => isDueForReview(w, userProgress[w.id] || null, virtualCurrentDay));
+            const newWords = plan.completed ? [] : allNewWords.filter(w => !userProgress[w.id] || userProgress[w.id].level === 0);
+            const totalDaily = plan.completed ? (allReviewWords.length + allNewWords.length) : (reviewWords.length + newWords.length);
 
             const elReview = document.getElementById('lobby-stat-review');
             const elNew = document.getElementById('lobby-stat-new');
@@ -2547,8 +2630,10 @@
             sessionQueue = []; mistakeQueue = [];
 
             const plan = getDailyPlan(currentUnit);
-            const reviewWords = plan.reviewWordIds.map(id => vocabularyDB.find(w => w.id == id)).filter(Boolean);
-            const newWords = plan.newWordIds.map(id => vocabularyDB.find(w => w.id == id)).filter(Boolean);
+            const allReviewWords = plan.reviewWordIds.map(id => vocabularyDB.find(w => w.id == id)).filter(Boolean);
+            const allNewWords = plan.newWordIds.map(id => vocabularyDB.find(w => w.id == id)).filter(Boolean);
+            const reviewWords = plan.completed ? allReviewWords : allReviewWords.filter(w => isDueForReview(w, userProgress[w.id] || null, virtualCurrentDay));
+            const newWords = plan.completed ? allNewWords : allNewWords.filter(w => !userProgress[w.id] || userProgress[w.id].level === 0);
 
             sessionQueue = [...reviewWords, ...newWords];
 
@@ -3033,6 +3118,9 @@
             }
             let progress = userProgress[wordId];
             if (typeof progress.level !== 'number') progress.level = 0;
+            if (progress.level === 0 && progress.firstLearnedDay === undefined) {
+                progress.firstLearnedDay = virtualCurrentDay;
+            }
             if (typeof progress.nextReviewDay !== 'number') progress.nextReviewDay = 0;
             if (!Array.isArray(progress.mistakes)) progress.mistakes = [];
 

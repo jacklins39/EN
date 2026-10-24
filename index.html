@@ -1128,10 +1128,10 @@
             </div>
         </div>
 
-        <!-- 字典查詢彈出視窗 -->
-        <div id="dict-modal" class="fixed inset-0 bg-gray-900 bg-opacity-50 z-50 hidden flex items-center justify-center p-4 backdrop-blur-sm">
-            <div class="bg-white rounded-2xl shadow-2xl p-6 max-w-sm w-full relative dict-modal-anim">
-                <button id="btn-close-dict" class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 bg-gray-100 rounded-full p-1">
+        <!-- 字典查詢與單字預覽彈出視窗 -->
+        <div id="dict-modal" class="fixed inset-0 bg-gray-900/55 z-50 hidden flex items-center justify-center p-3 sm:p-4 backdrop-blur-sm">
+            <div class="bg-white rounded-3xl shadow-2xl p-5 sm:p-6 max-w-md sm:max-w-lg w-full relative dict-modal-anim max-h-[88vh] flex flex-col border border-gray-100">
+                <button id="btn-close-dict" class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 hover:bg-gray-200/70 bg-gray-100 rounded-full p-1.5 transition-colors z-10">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
                 </button>
                 <div id="dict-content" class="mt-2 min-h-[100px] flex flex-col justify-center"></div>
@@ -1270,18 +1270,24 @@
         let currentAudioDoneHandler = null;
         let audioFallbackTimerId = null;
 
+        function formatSpeechRateStr(rate) {
+            const n = parseFloat(rate) || 1.0;
+            return n === 1 ? '1.0' : String(n);
+        }
+
         function setSpeechRate(rate) {
             globalSpeechRate = parseFloat(rate) || 1.0;
-            localStorage.setItem('vocab_speech_rate', globalSpeechRate);
+            const rateStr = formatSpeechRateStr(globalSpeechRate);
+            localStorage.setItem('vocab_speech_rate', rateStr);
             if (typeof wordAudioPlayer !== 'undefined' && wordAudioPlayer) {
                 wordAudioPlayer.playbackRate = globalSpeechRate;
             }
             const s1 = document.getElementById('setting-speech-rate');
-            if (s1 && s1.value !== String(globalSpeechRate)) s1.value = String(globalSpeechRate);
+            if (s1 && s1.value !== rateStr) s1.value = rateStr;
             const s2 = document.getElementById('study-speech-rate');
-            if (s2 && s2.value !== String(globalSpeechRate)) s2.value = String(globalSpeechRate);
+            if (s2 && s2.value !== rateStr) s2.value = rateStr;
             const s3 = document.getElementById('auto-speech-rate');
-            if (s3 && s3.value !== String(globalSpeechRate)) s3.value = String(globalSpeechRate);
+            if (s3 && s3.value !== rateStr) s3.value = rateStr;
         }
 
         function clearAudioCallbacks() {
@@ -1298,12 +1304,12 @@
 
         const settingSpeechRateEl = document.getElementById('setting-speech-rate');
         if (settingSpeechRateEl) {
-            settingSpeechRateEl.value = String(globalSpeechRate);
+            settingSpeechRateEl.value = formatSpeechRateStr(globalSpeechRate);
             settingSpeechRateEl.addEventListener('change', (e) => setSpeechRate(e.target.value));
         }
         const studySpeechRateEl = document.getElementById('study-speech-rate');
         if (studySpeechRateEl) {
-            studySpeechRateEl.value = String(globalSpeechRate);
+            studySpeechRateEl.value = formatSpeechRateStr(globalSpeechRate);
             studySpeechRateEl.addEventListener('change', (e) => setSpeechRate(e.target.value));
         }
 
@@ -2498,68 +2504,72 @@
         // 單字預覽功能
         // ==========================================
         function renderPreviewModal(words, title) {
-            const listHtml = words.map((w, i) => `
-                <div id="preview-row-${i}" class="preview-word-row group flex justify-between items-center py-2.5 px-3 border-b border-gray-100 last:border-0 hover:bg-blue-50/60 rounded-xl transition-all cursor-pointer" onclick="showWordDetailModal('${esc(w.en)}')">
-                    <div class="flex flex-col">
-                        <div class="flex items-center gap-2">
-                            <span class="font-bold text-[#1D1D1F] group-hover:text-[#0071E3] text-lg transition-colors">
+            const listHtml = words.map((w, i) => {
+                const p = splitPosAndZh(w.zh, w.pos);
+                const items = (p.items && p.items.length > 0) ? p.items : [{ pos: p.pos || w.pos || '', text: p.pureZh || w.zh }];
+                const defsHtml = items.map(it => {
+                    const cleanPos = (it.pos || p.pos || w.pos || '').toUpperCase().replace(/\.$/, '').trim();
+                    return `
+                        <div class="inline-flex items-center gap-1.5 bg-[#F5F5F7] group-hover:bg-white border border-gray-200/80 group-hover:border-blue-200 px-2 py-0.5 rounded-lg text-xs max-w-full transition-colors">
+                            ${cleanPos ? `<span class="text-[10px] font-extrabold uppercase px-1.5 py-0.5 rounded bg-[#0071E3] text-white font-mono leading-none tracking-tight shrink-0 min-w-[28px] text-center">${esc(cleanPos)}</span>` : ''}
+                            <span class="text-gray-700 font-semibold truncate leading-snug">${esc(it.text)}</span>
+                        </div>
+                    `;
+                }).join('');
+
+                return `
+                <div id="preview-row-${i}" class="preview-word-row group flex items-center justify-between gap-3 py-3 px-3.5 border-b border-gray-100 last:border-0 hover:bg-blue-50/50 rounded-2xl transition-all cursor-pointer" onclick="showWordDetailModal('${esc(w.en)}')">
+                    <div class="flex flex-col min-w-[110px] sm:min-w-[130px] shrink-0">
+                        <div class="flex items-center gap-1.5">
+                            <span class="font-bold text-[#1D1D1F] group-hover:text-[#0071E3] text-base sm:text-lg leading-tight transition-colors">
                                 ${esc(w.en)}
                             </span>
-                            <button type="button" class="p-1 text-blue-400 hover:text-[#0071E3] hover:bg-blue-100 rounded-full transition cursor-pointer" title="聆聽發音" onclick="event.stopPropagation(); unlockMobileAudio(); playAudio('${esc(w.en)}')">
-                                <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd" /></svg>
+                            <button type="button" class="p-1 text-[#0071E3] bg-blue-50/80 hover:bg-[#0071E3] hover:text-white rounded-full transition cursor-pointer shrink-0" title="聆聽發音" onclick="event.stopPropagation(); unlockMobileAudio(); playAudio('${esc(w.en)}')">
+                                <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd" /></svg>
                             </button>
                         </div>
-                        <span class="text-xs text-[#86868B] font-mono">${esc(w.kk || '')}</span>
+                        <span class="text-xs text-[#86868B] font-mono mt-0.5">${esc(w.kk || '')}</span>
                     </div>
-                    <div class="flex items-center gap-1.5 max-w-[62%] flex-wrap justify-end">
-                        ${(() => {
-                            const p = splitPosAndZh(w.zh, w.pos);
-                            const items = (p.items && p.items.length > 0) ? p.items : [{ pos: p.pos || w.pos || '', text: p.pureZh || w.zh }];
-                            return items.map(it => {
-                                const cleanPos = (it.pos || p.pos || w.pos || '').toUpperCase().replace(/\.$/, '').trim();
-                                return `
-                                    <span class="inline-flex items-center gap-1 bg-blue-50/80 hover:bg-blue-100/80 border border-blue-200/70 px-2 py-0.5 rounded-lg text-xs font-bold text-[#0071E3] shrink-0 max-w-full">
-                                        ${cleanPos ? `<span class="text-[9px] font-extrabold uppercase px-1 py-0.5 rounded bg-[#0071E3] text-white font-mono leading-none tracking-tight shrink-0">${esc(cleanPos)}</span>` : ''}
-                                        <span class="truncate max-w-[120px] sm:max-w-[200px] leading-snug">${esc(it.text)}</span>
-                                    </span>
-                                `;
-                            }).join('');
-                        })()}
-                        <span class="text-gray-300 group-hover:text-[#0071E3] group-hover:translate-x-0.5 transition-all text-xs font-semibold ml-0.5 shrink-0">➔</span>
+                    <div class="flex-1 min-w-0 flex flex-col items-end gap-1">
+                        ${defsHtml}
                     </div>
-                </div>
-            `).join('');
+                    <div class="shrink-0 text-gray-300 group-hover:text-[#0071E3] group-hover:translate-x-0.5 transition-all pl-0.5">
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M9 5l7 7-7 7" /></svg>
+                    </div>
+                </div>`;
+            }).join('');
 
             const content = document.getElementById('dict-content');
             content.innerHTML = `
-                <div class="flex justify-between items-center mb-3 border-b border-[#D4DEC4] pb-2">
-                    <h3 class="text-xl font-semibold text-[#0071E3]">${title} (<span id="preview-count">0</span>/${words.length})</h3>
+                <div class="flex items-center justify-between gap-2 pr-8 mb-2.5 pb-2.5 border-b border-gray-100">
+                    <h3 class="text-lg sm:text-xl font-bold text-[#1D1D1F] tracking-tight truncate">${title}</h3>
+                    <span class="shrink-0 text-xs font-bold px-2.5 py-1 rounded-full bg-blue-50 text-[#0071E3] border border-blue-100">共 ${words.length} 字</span>
                 </div>
-                <div class="text-[11px] text-gray-500 mb-2.5 flex items-center gap-1.5 bg-blue-50/60 px-2.5 py-1.5 rounded-lg border border-blue-100/60">
-                    <span class="text-blue-500 text-xs">💡</span>
-                    <span>點擊任一單字即可帶出「動詞三態、常見用法、相似詞與例句」詳解卡；點擊小喇叭可直接試聽發音。</span>
+                <div class="text-xs text-gray-500 mb-2.5 flex items-center gap-1.5 bg-blue-50/50 px-3 py-1.5 rounded-xl border border-blue-100/60">
+                    <span class="text-blue-500 shrink-0">💡</span>
+                    <span class="leading-relaxed">點擊單字可開啟「三態、搭配詞與例句」詳解卡；點擊小喇叭直接發音。</span>
                 </div>
-                <div class="flex flex-col sm:flex-row items-center gap-2 mb-3 bg-[#F5F5F7] p-2 rounded-xl border-0 border-gray-100">
-                    <select id="auto-play-speed" aria-label="自動播放速度" class="text-sm border-0 border-gray-300 rounded p-1.5 bg-white text-gray-700 outline-none focus:ring-1 focus:ring-[#0071E3] w-full sm:flex-grow">
-                        <option value="2000">翻卡間隔: 極快 (2.0秒)</option>
-                        <option value="3500">翻卡間隔: 快 (3.5秒)</option>
-                        <option value="5000" selected>翻卡間隔: 中等 (5.0秒)</option>
-                        <option value="7000">翻卡間隔: 慢 (7.0秒)</option>
-                        <option value="10000">翻卡間隔: 極慢 (10.0秒)</option>
+                <div class="flex items-center gap-1.5 sm:gap-2 mb-3 bg-[#F5F5F7] p-2 rounded-2xl border border-gray-200/60">
+                    <select id="auto-play-speed" aria-label="自動播放速度" class="text-xs sm:text-sm font-medium border border-gray-200/80 rounded-xl px-2.5 py-2 bg-white text-gray-700 outline-none focus:ring-2 focus:ring-[#0071E3]/30 focus:border-[#0071E3] flex-1 min-w-0 cursor-pointer">
+                        <option value="2000">⏱️ 間隔 2.0秒 (極快)</option>
+                        <option value="3500">⏱️ 間隔 3.5秒 (快)</option>
+                        <option value="5000" selected>⏱️ 間隔 5.0秒 (適中)</option>
+                        <option value="7000">⏱️ 間隔 7.0秒 (慢)</option>
+                        <option value="10000">⏱️ 間隔 10秒 (極慢)</option>
                     </select>
-                    <select id="auto-speech-rate" aria-label="語速" class="text-sm border-0 border-gray-300 rounded p-1.5 bg-white text-gray-700 outline-none focus:ring-1 focus:ring-[#0071E3] w-full sm:w-auto">
-                        <option value="0.75">語速 0.75x</option>
-                        <option value="0.85">語速 0.85x</option>
-                        <option value="1.0" selected>語速 1.0x</option>
-                        <option value="1.25">語速 1.25x</option>
-                        <option value="1.5">語速 1.5x</option>
+                    <select id="auto-speech-rate" aria-label="語速" class="text-xs sm:text-sm font-medium border border-gray-200/80 rounded-xl px-2.5 py-2 bg-white text-gray-700 outline-none focus:ring-2 focus:ring-[#0071E3]/30 focus:border-[#0071E3] w-[108px] sm:w-[118px] shrink-0 cursor-pointer">
+                        <option value="0.75">🗣️ 0.75x</option>
+                        <option value="0.85">🗣️ 0.85x</option>
+                        <option value="1.0" selected>🗣️ 1.0x</option>
+                        <option value="1.25">🗣️ 1.25x</option>
+                        <option value="1.5">🗣️ 1.5x</option>
                     </select>
-                    <button id="btn-auto-play" class="bg-[#0071E3] text-white px-3 py-1.5 rounded-xl text-sm font-medium hover:bg-[#0077ED] shadow-sm transition-colors w-full sm:flex-grow text-center">
-                        ▶️ 自動輪播發音
+                    <button id="btn-auto-play" class="bg-[#0071E3] text-white px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold hover:bg-[#0077ED] active:scale-95 shadow-xs transition-all shrink-0 whitespace-nowrap flex items-center gap-1 cursor-pointer">
+                        <span>▶</span><span>自動輪播</span>
                     </button>
                 </div>
-                <div class="max-h-72 overflow-y-auto mb-2 pr-2 custom-scrollbar" id="preview-list-container">
-                    ${listHtml || '<p class="text-[#86868B] text-sm text-center py-4">目前沒有單字。</p>'}
+                <div class="max-h-[50vh] overflow-y-auto pr-1 custom-scrollbar divide-y divide-gray-50" id="preview-list-container">
+                    ${listHtml || '<p class="text-[#86868B] text-sm text-center py-6">目前沒有單字。</p>'}
                 </div>
             `;
             document.getElementById('dict-modal').classList.remove('hidden');
@@ -2568,7 +2578,7 @@
             const speedSelect = document.getElementById('auto-play-speed');
             const autoRateSelect = document.getElementById('auto-speech-rate');
             if (autoRateSelect) {
-                autoRateSelect.value = String(globalSpeechRate);
+                autoRateSelect.value = formatSpeechRateStr(globalSpeechRate);
                 autoRateSelect.addEventListener('change', (e) => setSpeechRate(e.target.value));
             }
             

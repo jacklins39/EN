@@ -22,6 +22,7 @@
     <script src="words_audio_manifest.js"></script>
     <script src="examples_audio_manifest.js"></script>
     <script src="zh_audio_manifest.js"></script>
+    <script src="collocations_audio_manifest.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -33,6 +34,12 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+TC:wght@400;700&display=swap');
 
         body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #F5F5F7; color: #1D1D1F; -webkit-font-smoothing: antialiased; }
+
+        /* 消除行動裝置 300ms 點擊延遲與反白閃爍 */
+        html, body, button, [role="button"], .cursor-pointer, .weak-row, .preview-word-row {
+            touch-action: manipulation;
+            -webkit-tap-highlight-color: transparent;
+        }
 
         .flip-card {
             background-color: transparent;
@@ -631,10 +638,12 @@
                     <div class="flip-card-back p-4">
                         <h2 class="text-3xl font-semibold text-[#1D1D1F] mb-1 break-all" id="card-word-back">Apple</h2>
                         <p class="text-gray-400 font-mono text-sm mb-2" id="card-kk-back">/ˈæpəl/</p>
-                        <div class="flex items-center justify-center gap-2 mb-3">
-                            <span id="card-pos-badge" class="hidden text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-blue-50 text-[#0071E3] border border-blue-200 font-mono"></span>
-                            <p class="text-2xl text-[#0071E3] font-bold cursor-pointer hover:underline inline-flex items-center gap-1" id="card-translation" title="點擊朗讀中文釋義">蘋果</p>
-                            <button id="btn-speak-zh" class="p-1 text-blue-400 hover:text-[#0071E3] hover:bg-blue-50 rounded-full transition-colors cursor-pointer" title="朗讀中文釋義" aria-label="朗讀中文釋義">
+                        <div class="flex items-center justify-center gap-2 mb-3 flex-wrap max-w-full px-1">
+                            <span id="card-pos-badge" class="hidden text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-blue-50 text-[#0071E3] border border-blue-200 font-mono shrink-0"></span>
+                            <div class="cursor-pointer inline-flex items-center justify-center gap-1.5 sm:gap-2 flex-wrap max-w-full" id="card-translation" title="點擊朗讀中文釋義">
+                                <span class="text-lg sm:text-xl text-[#0071E3] font-bold hover:underline">蘋果</span>
+                            </div>
+                            <button id="btn-speak-zh" class="p-1 text-blue-400 hover:text-[#0071E3] hover:bg-blue-50 rounded-full transition-colors cursor-pointer shrink-0" title="朗讀中文釋義" aria-label="朗讀中文釋義">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
                             </button>
                         </div>
@@ -1558,6 +1567,8 @@
                             setTimeout(() => syncBanner.classList.add('hidden'), 2500);
                         }
                     }
+                    // 雙向合併後自動將聯集最高進度即時寫回雲端，確保電腦與手機瞬間統一
+                    saveToCloud();
                 } else {
                     // 若雲端初次登入尚無存檔，保留並自動上傳本地既有進度至雲端，避免使用者的本機進度被清空
                     saveToCloud();
@@ -2303,22 +2314,24 @@
         // 手機端 (iOS Safari / Android) 音訊自動解鎖
         // ==========================================
         let isMobileAudioUnlocked = false;
+        const dummyUnlockAudio = new Audio();
+        dummyUnlockAudio.preload = 'auto';
+        try { dummyUnlockAudio.playsInline = true; } catch(e) {}
+
         function unlockMobileAudio() {
             if (isMobileAudioUnlocked) return;
             isMobileAudioUnlocked = true;
 
-            // 1. 解鎖 HTML5 Audio (wordAudioPlayer) - 播放極短 0.01 秒靜音 WAV 緩衝區
+            // 1. 使用專用獨立 dummy 音訊解鎖 HTML5 Audio 權限，絕不污染主播放器 wordAudioPlayer
             try {
-                if (typeof wordAudioPlayer !== 'undefined' && wordAudioPlayer) {
-                    const silentWav = 'data:audio/wav;base64,UklGRigAAABXQVZFZm10IBIAAAABAAEARKwAAIhYAQACABAAAABkYXRhAgAAAAEA';
-                    wordAudioPlayer.src = silentWav;
-                    const p = wordAudioPlayer.play();
-                    if (p && typeof p.then === 'function') {
-                        p.then(() => {
-                            wordAudioPlayer.pause();
-                            wordAudioPlayer.currentTime = 0;
-                        }).catch(() => {});
-                    }
+                dummyUnlockAudio.src = 'data:audio/wav;base64,UklGRigAAABXQVZFZm10IBIAAAABAAEARKwAAIhYAQACABAAAABkYXRhAgAAAAEA';
+                const p = dummyUnlockAudio.play();
+                if (p && typeof p.then === 'function') {
+                    p.then(() => {
+                        dummyUnlockAudio.pause();
+                        dummyUnlockAudio.currentTime = 0;
+                        dummyUnlockAudio.src = '';
+                    }).catch(() => {});
                 }
             } catch(e) {}
 
@@ -2580,27 +2593,42 @@
             const parsed = splitPosAndZh(currentWord.zh, currentWord.pos);
             const posBadge = document.getElementById('card-pos-badge');
             const cardTransEl = document.getElementById('card-translation');
+            const isMultiPos = parsed.items && parsed.items.length > 1;
+
             if (posBadge) {
-                if (parsed.posBadgeText) {
-                    posBadge.innerText = parsed.posBadgeText;
-                    posBadge.classList.remove('hidden');
-                } else if (parsed.pos) {
-                    posBadge.innerText = parsed.pos;
+                // 多詞性時各項自帶獨立詞性膠囊標籤，隱藏左側重複的外層標籤，節省大量版面空間避免擠壓破版
+                if (!isMultiPos && (parsed.posBadgeText || parsed.pos)) {
+                    posBadge.innerText = parsed.posBadgeText || parsed.pos;
                     posBadge.classList.remove('hidden');
                 } else {
                     posBadge.classList.add('hidden');
                 }
             }
+
             if (cardTransEl) {
-                if (parsed.items && parsed.items.length > 1) {
+                const totalChars = (parsed.items || []).reduce((acc, it) => acc + (it.text || '').length, 0) || (parsed.pureZh || '').length;
+
+                if (isMultiPos) {
+                    // 多詞性排版：依總字數自適應字級，避免字多時折行擁擠或字單獨掉到下一行
+                    const isLong = totalChars > 22 || parsed.items.length >= 3;
+                    const fontClass = isLong ? 'text-xs sm:text-[13px]' : 'text-sm sm:text-[15px]';
+                    const padClass = isLong ? 'px-2 py-0.5' : 'px-2.5 py-1';
+
                     cardTransEl.innerHTML = parsed.items.map(it => `
-                        <span class="inline-flex items-center gap-1.5 flex-wrap">
-                            <span class="text-[11px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-blue-100/70 text-[#0071E3] font-mono">${esc(it.pos.toUpperCase().replace(/\.$/, ''))}</span>
-                            <span>${esc(it.text)}</span>
+                        <span class="inline-flex items-center gap-1.5 bg-blue-50/80 hover:bg-blue-100/80 border border-blue-200/70 ${padClass} rounded-xl shadow-2xs transition-colors shrink-0 max-w-full">
+                            <span class="text-[10px] font-extrabold uppercase px-1.5 py-0.5 rounded bg-[#0071E3] text-white font-mono leading-none tracking-wide shrink-0">${esc(it.pos.toUpperCase().replace(/\.$/, ''))}</span>
+                            <span class="${fontClass} font-bold text-[#0071E3] leading-snug break-words">${esc(it.text)}</span>
                         </span>
-                    `).join('<span class="mx-2 text-gray-300 font-normal">|</span>');
+                    `).join('');
                 } else {
-                    cardTransEl.innerText = parsed.pureZh;
+                    // 單詞性排版：階梯式適應字級 (短詞 20px, 中詞 17px, 長詞 14~15px)
+                    let fontClass = 'text-lg sm:text-xl font-bold';
+                    if (totalChars > 16) {
+                        fontClass = 'text-xs sm:text-sm font-semibold';
+                    } else if (totalChars > 8) {
+                        fontClass = 'text-sm sm:text-base font-bold';
+                    }
+                    cardTransEl.innerHTML = `<span class="${fontClass} text-[#0071E3] hover:underline leading-snug break-words text-center">${esc(parsed.pureZh)}</span>`;
                 }
             }
             
@@ -3322,25 +3350,59 @@
                 const clean = cleanText(text).trim();
                 const cleanLower = clean.toLowerCase();
 
-                const attachCallback = (audioEl) => {
+                // 立即重置播放器狀態，防止前次播放殘留
+                try {
+                    wordAudioPlayer.pause();
+                    wordAudioPlayer.currentTime = 0;
+                } catch(e) {}
+
+                const attachCallback = (audioEl, fallbackFn) => {
                     clearAudioCallbacks();
-                    if (typeof onEndedCallback === 'function') {
+                    if (typeof onEndedCallback === 'function' || typeof fallbackFn === 'function') {
                         let called = false;
                         const done = () => {
                             if (called) return;
                             called = true;
                             clearAudioCallbacks();
-                            onEndedCallback();
+                            if (typeof onEndedCallback === 'function') onEndedCallback();
+                        };
+                        const onError = (e) => {
+                            if (called) return;
+                            // 使用者快速連按產生的中斷 AbortError，絕不進入 online fallback
+                            if (audioEl && audioEl.error && audioEl.error.code === 20) return;
+                            called = true;
+                            clearAudioCallbacks();
+                            if (typeof fallbackFn === 'function') {
+                                fallbackFn();
+                            } else if (typeof onEndedCallback === 'function') {
+                                onEndedCallback();
+                            }
                         };
                         currentAudioDoneHandler = done;
-                        audioEl.addEventListener('ended', done);
-                        audioEl.addEventListener('error', done);
-                        // 防呆計時器，最多不超過 12 秒必執行 callback 避免卡住流程
+                        audioEl.addEventListener('ended', done, { once: true });
+                        audioEl.addEventListener('error', onError, { once: true });
                         audioFallbackTimerId = setTimeout(done, 12000);
                     }
                 };
 
-                // 0. 若為例句，優先檢查 Edge-TTS 真人例句庫 (Jenny Neural)
+                // 0. 優先比對：常用搭配詞與精選片語 (Collocations & Phrases)
+                if (typeof window.COLLOCATIONS_AUDIO_MANIFEST !== 'undefined' && window.COLLOCATIONS_AUDIO_MANIFEST.has(cleanLower)) {
+                    const colPath = window.COLLOCATIONS_AUDIO_MANIFEST.get(cleanLower);
+                    wordAudioPlayer.src = colPath;
+                    wordAudioPlayer.playbackRate = globalSpeechRate;
+                    attachCallback(wordAudioPlayer, () => playOnlineAudioStream(clean, onEndedCallback));
+                    const p = wordAudioPlayer.play();
+                    if (p && typeof p.catch === 'function') {
+                        p.catch(e => {
+                            if (e && (e.name === 'AbortError' || e.code === 20)) return;
+                            console.warn("Collocation audio error, trying online:", e);
+                            playOnlineAudioStream(clean, onEndedCallback);
+                        });
+                    }
+                    return;
+                }
+
+                // 1. 若為例句，檢查 Edge-TTS 真人例句庫 (Jenny Neural)
                 let exampleId = null;
                 const isWordCall = currentWord && currentWord.en && (cleanLower === cleanText(currentWord.en).trim().toLowerCase());
                 
@@ -3359,27 +3421,42 @@
                 if (exampleId && typeof window.EXAMPLES_AUDIO_MANIFEST !== 'undefined' && window.EXAMPLES_AUDIO_MANIFEST.has(Number(exampleId))) {
                     wordAudioPlayer.src = `audio/examples/${exampleId}.mp3`;
                     wordAudioPlayer.playbackRate = globalSpeechRate;
-                    attachCallback(wordAudioPlayer);
-                    wordAudioPlayer.play().catch(e => {
-                        console.warn("Local example audio play error:", e);
-                        playOnlineAudioStream(clean, onEndedCallback);
-                    });
+                    attachCallback(wordAudioPlayer, () => playOnlineAudioStream(clean, onEndedCallback));
+                    const p = wordAudioPlayer.play();
+                    if (p && typeof p.catch === 'function') {
+                        p.catch(e => {
+                            if (e && (e.name === 'AbortError' || e.code === 20)) return;
+                            console.warn("Local example audio play error:", e);
+                            playOnlineAudioStream(clean, onEndedCallback);
+                        });
+                    }
                     return;
                 }
 
-                // 1. 若本機已生成 Edge-TTS 單字真人神經發音庫 (Jenny)
-                if (typeof window.WORDS_AUDIO_MANIFEST !== 'undefined' && window.WORDS_AUDIO_MANIFEST.has(cleanLower)) {
-                    wordAudioPlayer.src = `audio/words/${encodeURIComponent(cleanLower)}.mp3`;
+                // 2. 若本機已收錄真人神經單字庫 (包含所有原形與動詞三態變化形 asked, asking, asks 等)
+                const cleanUnderscore = cleanLower.replace(/[/\\:*?"<>|\s]+/g, '_').replace(/_+/g, '_').replace(/^_|_$/g, '');
+                const matchedWordKey = (typeof window.WORDS_AUDIO_MANIFEST !== 'undefined') ? (
+                    window.WORDS_AUDIO_MANIFEST.has(cleanLower) ? cleanLower : (
+                        window.WORDS_AUDIO_MANIFEST.has(cleanUnderscore) ? cleanUnderscore : null
+                    )
+                ) : null;
+
+                if (matchedWordKey) {
+                    wordAudioPlayer.src = `audio/words/${encodeURIComponent(matchedWordKey)}.mp3`;
                     wordAudioPlayer.playbackRate = globalSpeechRate;
-                    attachCallback(wordAudioPlayer);
-                    wordAudioPlayer.play().catch(e => {
-                        console.warn("Local word audio play error:", e);
-                        playOnlineAudioStream(clean, onEndedCallback);
-                    });
+                    attachCallback(wordAudioPlayer, () => playOnlineAudioStream(clean, onEndedCallback));
+                    const p = wordAudioPlayer.play();
+                    if (p && typeof p.catch === 'function') {
+                        p.catch(e => {
+                            if (e && (e.name === 'AbortError' || e.code === 20)) return;
+                            console.warn("Local word audio play error:", e);
+                            playOnlineAudioStream(clean, onEndedCallback);
+                        });
+                    }
                     return;
                 }
 
-                // 2. 線上真人發音串流 (手機端 100% 可播放：Youdao 優先 + Google 美式 TTS 備援)
+                // 3. 備援：線上真人發音串流 (手機端 100% 可播放：Youdao 優先 + Google 美式 TTS 備援)
                 playOnlineAudioStream(clean, onEndedCallback);
             } catch(e) {
                 console.warn('playAudio error:', e);
@@ -4266,25 +4343,37 @@
                                 <span>⚡</span><span>動詞三態與詞形變化 (Verb Forms)</span>
                             </div>
                             <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs">
-                                <div class="bg-white/95 p-2 rounded-xl border border-blue-100/60 shadow-2xs">
-                                    <span class="text-gray-400 block text-[10px] font-semibold">原形 (Base)</span>
+                                <div class="bg-white/95 p-2 rounded-xl border border-blue-100/60 shadow-2xs cursor-pointer hover:border-blue-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.verbForms.base || w.en)}')" title="點擊聆聽原形發音">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-gray-400 block text-[10px] font-semibold">原形 (Base)</span>
+                                        <span class="text-blue-400 text-[10px]">🔊</span>
+                                    </div>
                                     <span class="font-bold text-gray-800 font-mono text-sm">${esc(forms.verbForms.base || w.en)}</span>
                                 </div>
-                                <div class="bg-white/95 p-2 rounded-xl border border-blue-100/60 shadow-2xs">
-                                    <span class="text-blue-500 block text-[10px] font-semibold">過去式 (Past)</span>
+                                <div class="bg-white/95 p-2 rounded-xl border border-blue-100/60 shadow-2xs cursor-pointer hover:border-blue-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.verbForms.past.split('/')[0].trim())}')" title="點擊聆聽過去式發音">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-blue-500 block text-[10px] font-semibold">過去式 (Past)</span>
+                                        <span class="text-blue-400 text-[10px]">🔊</span>
+                                    </div>
                                     <span class="font-bold text-[#0071E3] font-mono text-sm">${esc(forms.verbForms.past)}</span>
                                 </div>
-                                <div class="bg-white/95 p-2 rounded-xl border border-blue-100/60 shadow-2xs">
-                                    <span class="text-purple-500 block text-[10px] font-semibold">過去分詞 (P.P.)</span>
+                                <div class="bg-white/95 p-2 rounded-xl border border-blue-100/60 shadow-2xs cursor-pointer hover:border-blue-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.verbForms.pp.split('/')[0].trim())}')" title="點擊聆聽過去分詞發音">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-purple-500 block text-[10px] font-semibold">過去分詞 (P.P.)</span>
+                                        <span class="text-purple-400 text-[10px]">🔊</span>
+                                    </div>
                                     <span class="font-bold text-purple-700 font-mono text-sm">${esc(forms.verbForms.pp)}</span>
                                 </div>
-                                <div class="bg-white/95 p-2 rounded-xl border border-blue-100/60 shadow-2xs">
-                                    <span class="text-emerald-500 block text-[10px] font-semibold">現在分詞 (-ing)</span>
+                                <div class="bg-white/95 p-2 rounded-xl border border-blue-100/60 shadow-2xs cursor-pointer hover:border-blue-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.verbForms.ing.split('/')[0].trim())}')" title="點擊聆聽現在分詞發音">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-emerald-500 block text-[10px] font-semibold">現在分詞 (-ing)</span>
+                                        <span class="text-emerald-400 text-[10px]">🔊</span>
+                                    </div>
                                     <span class="font-bold text-emerald-700 font-mono text-sm">${esc(forms.verbForms.ing)}</span>
                                 </div>
                             </div>
                             <div class="mt-2 text-[11px] text-gray-500 flex items-center justify-between px-1">
-                                <span>第三人稱單數現在式 (-s/-es)：<strong class="text-gray-800 font-mono">${esc(forms.verbForms.s)}</strong></span>
+                                <span>第三人稱單數現在式 (-s/-es)：<strong class="text-gray-800 font-mono cursor-pointer hover:text-[#0071E3]" onclick="playAudio('${esc(forms.verbForms.s.split('/')[0].trim())}')">${esc(forms.verbForms.s)} <span class="text-blue-400 text-[10px]">🔊</span></strong></span>
                             </div>
                         </div>
                     `;
@@ -4296,8 +4385,8 @@
                                 <span>📦</span><span>名詞單複數變化 (Noun Plurals)</span>
                             </div>
                             <div class="flex items-center gap-4 text-xs">
-                                <span class="text-gray-600">單數：<strong class="text-gray-900 font-mono text-sm">${esc(forms.nounForms.singular)}</strong></span>
-                                <span class="text-gray-600">複數 (Plural)：<strong class="text-amber-700 font-mono text-sm">${esc(forms.nounForms.plural)}</strong></span>
+                                <span class="text-gray-600">單數：<strong class="text-gray-900 font-mono text-sm cursor-pointer hover:text-[#0071E3]" onclick="playAudio('${esc(forms.nounForms.singular)}')">${esc(forms.nounForms.singular)} 🔊</strong></span>
+                                <span class="text-gray-600">複數 (Plural)：<strong class="text-amber-700 font-mono text-sm cursor-pointer hover:text-[#0071E3]" onclick="playAudio('${esc(forms.nounForms.plural)}')">${esc(forms.nounForms.plural)} 🔊</strong></span>
                             </div>
                         </div>
                     `;
@@ -4309,9 +4398,9 @@
                                 <span>📈</span><span>形容詞比較級與最高級 (Degrees of Comparison)</span>
                             </div>
                             <div class="flex items-center gap-3 text-xs flex-wrap">
-                                <span class="text-gray-600">原級：<strong class="text-gray-900 font-mono text-sm">${esc(forms.adjForms.base)}</strong></span>
-                                <span class="text-gray-600">比較級：<strong class="text-emerald-700 font-mono text-sm">${esc(forms.adjForms.comp)}</strong></span>
-                                <span class="text-gray-600">最高級：<strong class="text-emerald-800 font-mono text-sm">${esc(forms.adjForms.super)}</strong></span>
+                                <span class="text-gray-600">原級：<strong class="text-gray-900 font-mono text-sm cursor-pointer hover:text-[#0071E3]" onclick="playAudio('${esc(forms.adjForms.base)}')">${esc(forms.adjForms.base)} 🔊</strong></span>
+                                <span class="text-gray-600">比較級：<strong class="text-emerald-700 font-mono text-sm cursor-pointer hover:text-[#0071E3]" onclick="playAudio('${esc(forms.adjForms.comp)}')">${esc(forms.adjForms.comp)} 🔊</strong></span>
+                                <span class="text-gray-600">最高級：<strong class="text-emerald-800 font-mono text-sm cursor-pointer hover:text-[#0071E3]" onclick="playAudio('${esc(forms.adjForms.super)}')">${esc(forms.adjForms.super)} 🔊</strong></span>
                             </div>
                         </div>
                     `;
@@ -4328,9 +4417,9 @@
                         </div>
                         <div class="space-y-1.5">
                             ${collocations.map(col => `
-                                <div class="flex items-center justify-between text-xs py-1.5 px-2.5 bg-gray-50 rounded-xl hover:bg-blue-50/60 transition group">
+                                <div class="flex items-center justify-between text-xs py-1.5 px-2.5 bg-gray-50 rounded-xl hover:bg-blue-50/60 transition group cursor-pointer active:scale-98" onclick="playAudio('${esc(col.en)}')">
                                     <div class="flex items-center gap-2">
-                                        <button type="button" class="text-blue-500 hover:text-[#0071E3] cursor-pointer p-0.5" title="朗讀搭配片語" onclick="unlockMobileAudio(); playAudio('${esc(col.en)}')">
+                                        <button type="button" class="text-blue-500 hover:text-[#0071E3] p-0.5" title="朗讀搭配片語">
                                             <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217z" clip-rule="evenodd" /></svg>
                                         </button>
                                         <span class="font-bold text-gray-800 font-mono group-hover:text-[#0071E3] transition-colors">${esc(col.en)}</span>

@@ -368,7 +368,7 @@
                 
                 <div class="grid grid-cols-2 gap-4 mb-6">
                     <div id="box-stat-review" class="bg-white rounded-2xl p-4 text-center border border-gray-100 cursor-pointer hover:bg-gray-50 hover:shadow-md transition-all active:scale-95 relative overflow-hidden z-10 shadow-sm select-none">
-                        <p class="text-[#1D1D1F] text-sm font-medium mb-1">待複習 <span class="text-xs font-normal opacity-70">(點擊預覽)</span></p>
+                        <p class="text-[#1D1D1F] text-sm font-medium mb-1"><span id="stat-review-label">待複習</span> <span class="text-xs font-normal opacity-70">(點擊預覽)</span></p>
                         <p class="text-3xl font-semibold text-[#0071E3]" id="stat-review">0</p>
      <svg class="absolute -bottom-2 -right-2 w-10 h-10 text-[#0071E3] opacity-10 transform rotate-12" viewBox="0 0 24 24" fill="currentColor">
          <path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 7,14 7,14C7,14 14,12 17,8Z" />
@@ -416,15 +416,34 @@
 
         <!-- 分析視圖 (Analysis) -->
         <div id="view-analysis" class="w-full hidden">
-            <div class="bg-white rounded-2xl shadow-sm p-6 mb-6">
-                <div class="flex justify-between items-center mb-4">
-                    <h2 class="text-2xl font-semibold">學習成效分析</h2>
-                    <button id="btn-close-analysis" class="text-gray-400 hover:text-gray-600 bg-gray-100 hover:bg-gray-200 rounded-full p-2 transition">
+            <div class="bg-white rounded-3xl shadow-sm p-6 mb-6 border border-gray-100">
+                <div class="flex justify-between items-center mb-3">
+                    <div>
+                        <h2 class="text-2xl font-bold text-[#1D1D1F]">📈 每日學習成長圖</h2>
+                        <p class="text-[#86868B] text-xs mt-0.5">記錄目前單元每日實際完成的單字數（新單字＋複習）與累計詞彙成長曲線</p>
+                    </div>
+                    <button id="btn-close-analysis" class="text-gray-400 hover:text-gray-600 bg-gray-100 hover:bg-gray-200 rounded-full p-2 transition cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
                     </button>
                 </div>
-                <p class="text-[#86868B] text-sm mb-4">這張圖表顯示了你在目前單元的各個記憶階段的單字分佈。長條圖越往右，代表你對該單字的長期記憶越深刻。</p>
-                <div class="mb-6 bg-white border-0 border-gray-100 rounded-2xl p-2 shadow-sm">
+                <div class="grid grid-cols-3 gap-2.5 mb-4">
+                    <div class="bg-blue-50/70 border border-blue-100 rounded-2xl p-3 text-center">
+                        <div class="text-[11px] font-semibold text-blue-600 mb-0.5">今日完成單字</div>
+                        <div id="analysis-stat-today" class="text-2xl font-extrabold text-[#0071E3]">0</div>
+                        <div id="analysis-stat-today-sub" class="text-[10px] text-gray-500 mt-0.5">新學 0 · 複習 0</div>
+                    </div>
+                    <div class="bg-emerald-50/70 border border-emerald-100 rounded-2xl p-3 text-center">
+                        <div class="text-[11px] font-semibold text-emerald-700 mb-0.5">累計已學詞彙</div>
+                        <div id="analysis-stat-cumulative" class="text-2xl font-extrabold text-emerald-600">0</div>
+                        <div class="text-[10px] text-gray-500 mt-0.5">本單元已解鎖</div>
+                    </div>
+                    <div class="bg-amber-50/70 border border-amber-100 rounded-2xl p-3 text-center">
+                        <div class="text-[11px] font-semibold text-amber-700 mb-0.5">日均完成量</div>
+                        <div id="analysis-stat-avg" class="text-2xl font-extrabold text-amber-600">0</div>
+                        <div id="analysis-stat-days" class="text-[10px] text-gray-500 mt-0.5">共 1 天紀錄</div>
+                    </div>
+                </div>
+                <div class="mb-2 bg-[#FBFBFD] border border-gray-100 rounded-2xl p-3 sm:p-4 shadow-2xs">
                     <canvas id="masteryChart" class="w-full h-64"></canvas>
                 </div>
             </div>
@@ -487,7 +506,7 @@
 
                 <div class="bg-[#F5F5F7] rounded-xl p-3 flex justify-around items-center mb-4 text-center">
                     <div>
-                        <div class="text-[11px] text-[#86868B]">待複習</div>
+                        <div id="lobby-stat-review-label" class="text-[11px] text-[#86868B]">待複習</div>
                         <div id="lobby-stat-review" class="text-lg font-bold text-[#0071E3]">0</div>
                     </div>
                     <div class="w-[1px] h-8 bg-gray-200"></div>
@@ -1729,6 +1748,10 @@
                                 if (mergedMistakes.length > 30) mergedMistakes = mergedMistakes.slice(-30);
                             }
 
+                            const mergedStudyDays = Array.from(new Set([...(lp.studyDays || []), ...(cp.studyDays || [])]))
+                                .map(Number)
+                                .filter(d => d > 0)
+                                .sort((a, b) => a - b);
                             const mergedItem = {
                                 ...lp,
                                 ...cp,
@@ -1737,6 +1760,9 @@
                                 nextReviewDay: hasTimestamp ? (primary.nextReviewDay ?? 0) : Math.max(lp.nextReviewDay || 0, cp.nextReviewDay || 0),
                                 mistakes: mergedMistakes
                             };
+                            if (mergedStudyDays.length > 0) mergedItem.studyDays = mergedStudyDays;
+                            const firstDay = Math.min(lp.firstLearnedDay || Infinity, cp.firstLearnedDay || Infinity);
+                            if (Number.isFinite(firstDay)) mergedItem.firstLearnedDay = firstDay;
                             if (clearTime > 0) mergedItem.mistakesClearedAt = clearTime;
                             if (Math.max(lTime, cTime) > 0) mergedItem.updatedAt = Math.max(lTime, cTime);
                             if (mergedMistakes.length === 0 && clearTime > 0) {
@@ -2209,10 +2235,13 @@
             
             const masteredCount = unitWords.filter(w => userProgress[w.id] && userProgress[w.id].level >= 5).length;
 
+            const reviewLabelEl = document.getElementById('stat-review-label');
             if (plan.completed) {
+                if (reviewLabelEl) reviewLabelEl.innerText = '今日已學';
                 document.getElementById('stat-review').innerText = totalDailyCount;
                 document.getElementById('stat-new').innerText = 0;
             } else {
+                if (reviewLabelEl) reviewLabelEl.innerText = '待複習';
                 document.getElementById('stat-review').innerText = remainingReviewWords.length;
                 document.getElementById('stat-new').innerText = remainingNewWords.length;
             }
@@ -2377,6 +2406,8 @@
             const elDailyBadge = document.getElementById('lobby-daily-badge');
             const elDailyBtn = document.getElementById('lobby-btn-start-daily');
 
+            const elReviewLabel = document.getElementById('lobby-stat-review-label');
+            if (elReviewLabel) elReviewLabel.innerText = plan.completed ? '今日已學' : '待複習';
             if (elReview) elReview.innerText = plan.completed ? totalDaily : reviewWords.length;
             if (elNew) elNew.innerText = plan.completed ? 0 : newWords.length;
 
@@ -2647,15 +2678,7 @@
 
             sessionQueue = [...reviewWords, ...newWords];
 
-            // 正式開始學習時，才將新單字加入 userProgress
-            newWords.forEach(w => { 
-                if (!userProgress[w.id]) {
-                    userProgress[w.id] = { level: 0, nextReviewDay: 0, isLearning: true };
-                } else {
-                    userProgress[w.id].isLearning = true; 
-                }
-            });
-            saveToCloud(); 
+            // 實際作答完成時由 handleAnswer 寫入 userProgress，避免未作答退出的單字汙染 LV0 統計
             saveDailyPlansLocally(); 
 
             // 打亂陣列
@@ -3138,11 +3161,14 @@
                 try { logMistake(progress); } catch(e) { console.warn(e); }
             }
 
+            if (!Array.isArray(progress.studyDays)) progress.studyDays = [];
+
             if (isMistakeMode) {
                 if (isCorrect) {
                     cardsCompleted++;
                     progress.level = 1;
                     progress.nextReviewDay = virtualCurrentDay + (SRS_INTERVALS[progress.level] || 1);
+                    if (!progress.studyDays.includes(virtualCurrentDay)) progress.studyDays.push(virtualCurrentDay);
                 } else {
                     mistakeQueue.push(currentWord);
                 }
@@ -3151,6 +3177,7 @@
                 if (isCorrect) {
                     progress.level = Math.min(progress.level + 1, MAX_LEVEL);
                     progress.nextReviewDay = virtualCurrentDay + (SRS_INTERVALS[progress.level] || 1);
+                    if (!progress.studyDays.includes(virtualCurrentDay)) progress.studyDays.push(virtualCurrentDay);
                 } else {
                     progress.level = Math.max(0, progress.level - 1); // 答錯只降一級，降低挫折感
                     progress.nextReviewDay = virtualCurrentDay;
@@ -5249,18 +5276,116 @@
             }
         });
 
-        // 繪製熟悉度分佈圖 (Chart.js)
+        // 繪製每日完成單字與累計詞彙成長圖 (Chart.js)
         function renderChart(unit) {
             const ctx = document.getElementById('masteryChart');
             if (!ctx) return;
-            
-            let levels = [0, 0, 0, 0, 0, 0]; // Level 0 to 5
-            for (let id in userProgress) {
-                const w = vocabularyDB.find(word => word.id == id);
-                if (w && w.unit === unit && userProgress[id].isLearning) {
-                    levels[userProgress[id].level] = (levels[userProgress[id].level] || 0) + 1;
+
+            const maxDay = Math.max(1, Number(virtualCurrentDay) || 1);
+            const newPerDay = new Array(maxDay + 1).fill(0);
+            const reviewPerDay = new Array(maxDay + 1).fill(0);
+            const unitWords = getUnitWords(unit);
+
+            // 收集還沒標註 firstLearnedDay 的舊資料，依配額精準回推第 1~(maxDay-1) 天
+            const inferredNewDays = [];
+
+            for (const w of unitWords) {
+                const p = userProgress[w.id];
+                if (!p || !p.level || p.level < 1) continue;
+
+                const L = Math.min(p.level, MAX_LEVEL);
+                const interval = SRS_INTERVALS[L] || 1;
+                const lastStudiedDay = Math.max(1, Math.min(maxDay, (p.nextReviewDay || (maxDay + interval)) - interval));
+
+                if (Array.isArray(p.studyDays) && p.studyDays.length > 0) {
+                    const days = Array.from(new Set([...p.studyDays, lastStudiedDay]))
+                        .map(Number)
+                        .filter(d => d >= 1 && d <= maxDay)
+                        .sort((a, b) => a - b);
+                    days.forEach((d, idx) => {
+                        if (idx === 0) newPerDay[d]++;
+                        else reviewPerDay[d]++;
+                    });
+                } else {
+                    // 由 SRS 等級與到期日精準還原每日學習軌跡
+                    if (L === 1) {
+                        const d1 = (p.firstLearnedDay >= 1 && p.firstLearnedDay <= maxDay) ? p.firstLearnedDay : lastStudiedDay;
+                        newPerDay[d1]++;
+                    } else {
+                        reviewPerDay[lastStudiedDay]++;
+                        let curD = lastStudiedDay;
+                        for (let k = L - 1; k >= 2; k--) {
+                            const prevInterval = SRS_INTERVALS[k] || 1;
+                            curD = Math.max(k, curD - prevInterval);
+                            reviewPerDay[curD]++;
+                        }
+                        if (p.firstLearnedDay >= 1 && p.firstLearnedDay <= curD) {
+                            newPerDay[p.firstLearnedDay]++;
+                        } else {
+                            inferredNewDays.push(Math.max(1, curD - 1));
+                        }
+                    }
                 }
             }
+
+            // 將舊資料無 firstLearnedDay 的單字依每日新字配額 (NEW_WORDS_PER_DAY) 分配至對應天數
+            inferredNewDays.sort((a, b) => b - a);
+            for (const maxAllowedDay of inferredNewDays) {
+                let placed = false;
+                for (let d = maxAllowedDay; d >= 1; d--) {
+                    if (newPerDay[d] < NEW_WORDS_PER_DAY) {
+                        newPerDay[d]++;
+                        placed = true;
+                        break;
+                    }
+                }
+                if (!placed) newPerDay[1]++;
+            }
+
+            const labels = [];
+            const dailyTotals = [];
+            const dailyNewArr = [];
+            const dailyRevArr = [];
+            const cumulativeTotals = [];
+
+            let runningCumulative = 0;
+            for (let d = 1; d <= maxDay; d++) {
+                runningCumulative += newPerDay[d];
+                const tot = newPerDay[d] + reviewPerDay[d];
+                labels.push(`第 ${d} 天`);
+                dailyNewArr.push(newPerDay[d]);
+                dailyRevArr.push(reviewPerDay[d]);
+                dailyTotals.push(tot);
+                cumulativeTotals.push(runningCumulative);
+            }
+
+            // 更新上方 3 張統計小卡
+            const todayTotal = dailyTotals[maxDay - 1] || 0;
+            const todayNew = dailyNewArr[maxDay - 1] || 0;
+            const todayRev = dailyRevArr[maxDay - 1] || 0;
+            const totalCumulative = cumulativeTotals[maxDay - 1] || 0;
+            const sumAllDays = dailyTotals.reduce((a, b) => a + b, 0);
+            const avgDaily = maxDay > 0 ? Math.round((sumAllDays / maxDay) * 10) / 10 : 0;
+
+            const elToday = document.getElementById('analysis-stat-today');
+            const elTodaySub = document.getElementById('analysis-stat-today-sub');
+            const elCum = document.getElementById('analysis-stat-cumulative');
+            const elAvg = document.getElementById('analysis-stat-avg');
+            const elDays = document.getElementById('analysis-stat-days');
+
+            if (elToday) elToday.innerText = `${todayTotal} 字`;
+            if (elTodaySub) elTodaySub.innerText = `新學 ${todayNew} · 複習 ${todayRev}`;
+            if (elCum) elCum.innerText = `${totalCumulative} 字`;
+            if (elAvg) elAvg.innerText = `${avgDaily} 字`;
+            if (elDays) elDays.innerText = `共 ${maxDay} 天紀錄`;
+
+            // 若天數超過 14 天，圖表僅展示最近 14 天以保持清晰
+            const sliceStart = Math.max(0, labels.length - 14);
+            const viewLabels = labels.slice(sliceStart);
+            const viewTotals = dailyTotals.slice(sliceStart);
+            const viewNew = dailyNewArr.slice(sliceStart);
+            const viewRev = dailyRevArr.slice(sliceStart);
+            const viewCumulative = cumulativeTotals.slice(sliceStart);
 
             if (chartInstance) {
                 chartInstance.destroy();
@@ -5269,28 +5394,68 @@
             chartInstance = new Chart(ctx, {
                 type: 'bar',
                 data: {
-                    labels: ['初學(LV0)', '略懂(LV1)', '熟悉(LV2)', '掌握(LV3)', '深刻(LV4)', '精熟(MAX)'],
-                    datasets: [{
-                        label: '單字數量',
-                        data: levels,
-                        backgroundColor: [
-                            '#fee2e2', '#ffedd5', '#fef3c7', '#dcfce7', '#e0e7ff', '#c7d2fe'
-                        ],
-                        borderColor: [
-                            '#ef4444', '#f97316', '#eab308', '#22c55e', '#6366f1', '#4f46e5'
-                        ],
-                        borderWidth: 1,
-                        borderRadius: 4
-                    }]
+                    labels: viewLabels,
+                    datasets: [
+                        {
+                            type: 'bar',
+                            label: '當日完成單字 (新學+複習)',
+                            data: viewTotals,
+                            backgroundColor: 'rgba(0, 113, 227, 0.18)',
+                            borderColor: '#0071E3',
+                            borderWidth: 2,
+                            borderRadius: 8,
+                            maxBarThickness: 44,
+                            order: 2
+                        },
+                        {
+                            type: 'line',
+                            label: '累計已學單字成長',
+                            data: viewCumulative,
+                            borderColor: '#10B981',
+                            backgroundColor: 'rgba(16, 185, 129, 0.12)',
+                            borderWidth: 2.5,
+                            pointBackgroundColor: '#10B981',
+                            pointBorderColor: '#ffffff',
+                            pointBorderWidth: 2,
+                            pointRadius: 4,
+                            tension: 0.3,
+                            fill: false,
+                            order: 1
+                        }
+                    ]
                 },
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
+                    interaction: {
+                        mode: 'index',
+                        intersect: false
+                    },
                     plugins: {
-                        legend: { display: false }
+                        legend: {
+                            display: true,
+                            position: 'top',
+                            labels: {
+                                usePointStyle: true,
+                                boxWidth: 8,
+                                font: { size: 11 }
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                afterBody: (items) => {
+                                    const idx = items[0]?.dataIndex;
+                                    if (idx === undefined) return '';
+                                    return `  └ 新學: ${viewNew[idx]} 字 ／ 複習: ${viewRev[idx]} 字`;
+                                }
+                            }
+                        }
                     },
                     scales: {
-                        y: { beginAtZero: true, ticks: { stepSize: 1 } }
+                        y: {
+                            beginAtZero: true,
+                            ticks: { precision: 0 }
+                        }
                     }
                 }
             });

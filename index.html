@@ -232,10 +232,16 @@
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'M PLUS Rounded 1c', sans-serif; background-color: #F7F4EB; color: #4A463F; }
-        /* Custom scrollbar for natural feel */
-        ::-webkit-scrollbar { width: 6px; }
-        ::-webkit-scrollbar-thumb { background: #d4cec4; border-radius: 4px; }
+        body {
+            font-family: 'Inter', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #F4F6F9;
+            color: #1D1D1F;
+            -webkit-font-smoothing: antialiased;
+        }
+        /* Custom scrollbar for sleek feel */
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 9999px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
     </style>
 
     <!-- ==========================================================
@@ -245,16 +251,25 @@
          ========================================================== -->
     <style>
         @media (min-width: 1024px) {
-            /* 1. 導航列 → 左側側邊欄 */
+            /* 1. 導航列 → 左側精品側邊欄 */
             nav.fixed {
                 top: 0 !important; bottom: 0 !important; left: 0 !important; right: auto !important;
-                width: 15rem !important; max-width: none !important; margin: 0 !important;
-                border-top: 0 !important; border-right: 1px solid #E5E5EA !important;
-                box-shadow: none !important; background: #fff !important;
+                width: 14.5rem !important; max-width: none !important; margin: 0 !important;
+                border-top: 0 !important; border-right: 1px solid rgba(226, 232, 240, 0.85) !important;
+                box-shadow: 4px 0 24px -12px rgba(15, 23, 42, 0.04) !important;
+                background: rgba(255, 255, 255, 0.96) !important;
+                backdrop-filter: blur(12px);
             }
             nav.fixed::before {
-                content: 'VocabMaster'; display: block; padding: 1.25rem 1.5rem 0.75rem;
-                font-size: 1.25rem; font-weight: 700; letter-spacing: 0.02em; color: #0071E3;
+                content: '📘 VocabMaster';
+                display: block;
+                padding: 1.35rem 1.35rem 1rem;
+                margin-bottom: 0.25rem;
+                font-size: 1.05rem;
+                font-weight: 800;
+                letter-spacing: -0.01em;
+                color: #0F172A;
+                border-bottom: 1px solid #F1F5F9;
             }
             nav.fixed > div {
                 flex-direction: column; justify-content: flex-start; align-items: stretch;
@@ -263,24 +278,30 @@
             nav.fixed button {
                 flex-direction: row !important; justify-content: flex-start !important;
                 width: 100% !important; height: auto !important;
-                padding: 0.75rem 1rem; gap: 0.75rem; border-radius: 0.75rem;
+                padding: 0.65rem 0.9rem; gap: 0.7rem; border-radius: 0.75rem;
+                transition: all 0.18s ease;
             }
-            nav.fixed button svg { margin-bottom: 0 !important; }
-            nav.fixed button span { font-size: 0.95rem !important; }
-            nav.fixed button:hover { background: #F5F5F7; }
-            nav.fixed button.text-\[\#0071E3\] { background: #EAF3FF; font-weight: 600; }
+            nav.fixed button svg { margin-bottom: 0 !important; width: 1.15rem !important; height: 1.15rem !important; }
+            nav.fixed button span { font-size: 0.875rem !important; letter-spacing: 0.01em; }
+            nav.fixed button:hover { background: #F8FAFC; color: #0F172A; }
+            nav.fixed button.text-\[\#0071E3\] {
+                background: linear-gradient(135deg, #EFF6FF 0%, #E0F2FE 100%);
+                color: #0071E3 !important;
+                font-weight: 600;
+                box-shadow: inset 3px 0 0 #0071E3;
+            }
 
             /* 2. 頂部列、提示列、主內容區讓出側邊欄空間 */
-            body > header, body > #sync-banner, body > #loading-banner { margin-left: 15rem !important; }
+            body > header, body > #sync-banner, body > #loading-banner { margin-left: 14.5rem !important; }
             main {
-                margin-left: 15rem !important; margin-right: 0 !important;
-                width: calc(100% - 15rem) !important; max-width: none !important;
+                margin-left: 14.5rem !important; margin-right: 0 !important;
+                width: calc(100% - 14.5rem) !important; max-width: none !important;
                 padding-left: 2rem; padding-right: 2rem; padding-bottom: 3rem !important;
             }
 
             /* 3. 各頁面加寬並置中 */
-            main > div[id^="view-"] { max-width: 44rem; margin-left: auto; margin-right: auto; }
-            #view-study-lobby, #view-study, #view-listening { max-width: 68rem !important; }
+            main > div[id^="view-"] { max-width: 38rem; margin-left: auto; margin-right: auto; }
+            #view-study-lobby, #view-study, #view-listening { max-width: 64rem !important; }
 
             /* 4. 學習中心：標題橫跨、4 張功能卡片 2x2 排列 */
             #view-study-lobby:not(.hidden) {
@@ -293,10 +314,10 @@
             /* 5. 測驗頁：左側單字卡、右側作答區 */
             #view-study:not(.hidden) {
                 display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
-                column-gap: 2rem; align-items: start;
+                column-gap: 1.75rem; align-items: start;
             }
             #view-study > :first-child { grid-column: 1 / -1; }
-            #view-study > #flashcard { grid-column: 1; grid-row: 2; height: 340px; }
+            #view-study > #flashcard { grid-column: 1; grid-row: 2; height: 320px; }
             #view-study > #quiz-options,
             #view-study > #action-show-answer,
             #view-study > #action-next,
@@ -309,14 +330,24 @@
 </head>
 <body class="min-h-screen flex flex-col">
 
-    <!-- 頂部導航列 -->
-    <header class="bg-[#0071E3] text-white p-4 shadow-sm flex justify-between items-center relative z-10">
-        <h1 class="text-xl font-semibold tracking-wider">VocabMaster</h1>
+    <!-- 頂部毛玻璃導航列 (電腦版自動隱藏重複的 VocabMaster 標題，改為環境狀態列) -->
+    <header class="bg-white/85 backdrop-blur-md border-b border-slate-200/70 text-[#1D1D1F] px-4 sm:px-6 py-2.5 flex justify-between items-center sticky top-0 z-20">
+        <div class="flex items-center gap-2.5">
+            <!-- 手機版顯示品牌 Logo；電腦版已有左側邊欄 Logo 故隱藏，彻底消除雙重標題 -->
+            <div class="flex items-center gap-2 lg:hidden">
+                <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-[#0071E3] to-indigo-600 text-white flex items-center justify-center text-xs font-bold shadow-xs">V</span>
+                <h1 class="text-base font-extrabold tracking-tight text-slate-900">VocabMaster</h1>
+            </div>
+            <div class="hidden lg:flex items-center gap-2 text-xs font-medium text-slate-500">
+                <span class="inline-block w-2 h-2 rounded-full bg-emerald-500"></span>
+                <span>艾賓浩斯 SRS 智慧間隔記憶空間</span>
+            </div>
+        </div>
         
         <div class="flex items-center gap-2">
             <!-- 開發測試按鈕 -->
-            <button id="dev-next-day-btn" class="bg-[#4B7353] hover:bg-indigo-400 text-xs font-medium py-1 px-3 rounded-full border-0 border-indigo-300 transition-colors">
-                ⏩ +1天
+            <button id="dev-next-day-btn" class="bg-slate-100 hover:bg-slate-200/80 text-slate-600 hover:text-slate-900 text-xs font-semibold py-1.5 px-3 rounded-full border border-slate-200/80 transition-all active:scale-95 cursor-pointer">
+                ⏩ 推進 +1天
             </button>
         </div>
     </header>
@@ -333,15 +364,17 @@
         
         <!-- 儀表板視圖 (Dashboard) -->
         <div id="view-dashboard" class="w-full relative">
-        <!-- Background decoration -->
-        
-        
-        
-            <div class="bg-white rounded-2xl shadow-sm p-6 mb-6">
-                <h2 class="text-2xl font-semibold mb-1">今日學習計畫</h2>
-                <div class="flex justify-between items-center mb-6">
-                    <p class="text-[#86868B] text-sm" id="current-date-display">虛擬時間: -</p>
-                    <select id="unit-selector" aria-label="選擇學習單元" title="選擇學習單元" class="bg-[#E5E5EA] border-0 border-[#C3D0B0] text-[#0071E3] text-sm rounded-xl focus:ring-[#0071E3] focus:border-[#0071E3] block p-2 outline-none font-medium">
+            <div class="bg-white rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-200/75 p-5 sm:p-6 mb-6">
+                <!-- 頂部標題與單元選單整合列 -->
+                <div class="flex flex-wrap justify-between items-center gap-3 pb-4 mb-4 border-b border-slate-100">
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <h2 class="text-lg sm:text-xl font-bold text-slate-900 tracking-tight">今日學習計畫</h2>
+                            <span class="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-600" id="current-date-display">虛擬時間: -</span>
+                        </div>
+                        <p class="text-xs text-slate-400 mt-0.5">點擊下方數據卡可預覽單字與聽發音</p>
+                    </div>
+                    <select id="unit-selector" aria-label="選擇學習單元" title="選擇學習單元" class="bg-slate-50 hover:bg-slate-100/80 border border-slate-200/90 text-[#0071E3] text-xs sm:text-sm rounded-xl focus:ring-2 focus:ring-[#0071E3]/20 focus:border-[#0071E3] py-2 px-3 outline-none font-semibold cursor-pointer transition-colors">
                         <optgroup label="📚 高中 7000 單字">
                             <option value="1">單元 1 (1 - 1000)</option>
                             <option value="2">單元 2 (1001 - 2000)</option>
@@ -366,50 +399,60 @@
                     </select>
                 </div>
                 
-                <div class="grid grid-cols-2 gap-4 mb-6">
-                    <div id="box-stat-review" class="bg-white rounded-2xl p-4 text-center border border-gray-100 cursor-pointer hover:bg-gray-50 hover:shadow-md transition-all active:scale-95 relative overflow-hidden z-10 shadow-sm select-none">
-                        <p class="text-[#1D1D1F] text-sm font-medium mb-1"><span id="stat-review-label">待複習</span> <span class="text-xs font-normal opacity-70">(點擊預覽)</span></p>
-                        <p class="text-3xl font-semibold text-[#0071E3]" id="stat-review">0</p>
-     <svg class="absolute -bottom-2 -right-2 w-10 h-10 text-[#0071E3] opacity-10 transform rotate-12" viewBox="0 0 24 24" fill="currentColor">
-         <path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 7,14 7,14C7,14 14,12 17,8Z" />
-     </svg>
+                <!-- 雙欄核心指標卡 -->
+                <div class="grid grid-cols-2 gap-3 mb-4">
+                    <div id="box-stat-review" class="group bg-gradient-to-br from-slate-50/90 to-blue-50/30 rounded-2xl p-3.5 border border-slate-200/70 cursor-pointer hover:border-blue-300 hover:shadow-sm transition-all active:scale-[0.98] relative overflow-hidden select-none">
+                        <div class="flex items-center justify-between mb-1">
+                            <span class="text-slate-600 text-xs font-semibold" id="stat-review-label">待複習</span>
+                            <span class="text-[10px] font-medium text-[#0071E3] bg-blue-50 px-1.5 py-0.5 rounded-md group-hover:bg-[#0071E3] group-hover:text-white transition-colors">預覽 ➔</span>
+                        </div>
+                        <p class="text-2xl font-extrabold text-slate-900 tracking-tight" id="stat-review">0</p>
                     </div>
-                    <div id="box-stat-new" class="bg-white rounded-2xl p-4 text-center border border-gray-100 cursor-pointer hover:bg-gray-50 hover:shadow-md transition-all active:scale-95 relative overflow-hidden z-10 shadow-sm select-none">
-                        <p class="text-[#0071E3] text-sm font-medium mb-1">新單字 <span class="text-xs font-normal opacity-70">(點擊預覽)</span></p>
-                        <p class="text-3xl font-semibold text-[#0071E3]" id="stat-new">-</p>
+                    <div id="box-stat-new" class="group bg-gradient-to-br from-slate-50/90 to-indigo-50/30 rounded-2xl p-3.5 border border-slate-200/70 cursor-pointer hover:border-blue-300 hover:shadow-sm transition-all active:scale-[0.98] relative overflow-hidden select-none">
+                        <div class="flex items-center justify-between mb-1">
+                            <span class="text-slate-600 text-xs font-semibold">今日新單字</span>
+                            <span class="text-[10px] font-medium text-[#0071E3] bg-blue-50 px-1.5 py-0.5 rounded-md group-hover:bg-[#0071E3] group-hover:text-white transition-colors">預覽 ➔</span>
+                        </div>
+                        <p class="text-2xl font-extrabold text-[#0071E3] tracking-tight" id="stat-new">-</p>
                     </div>
                 </div>
 
-                <div class="bg-[#F5F5F7] rounded-2xl p-4 flex justify-between items-center border-0 border-gray-100 mb-4">
-                    <div class="text-sm text-gray-600">已掌握詞彙</div>
-                    <div class="text-lg font-semibold text-[#1D1D1F]" id="stat-mastered">0 / 1000</div>
+                <!-- 詞彙掌握進度條 -->
+                <div class="bg-slate-50/90 rounded-2xl p-3.5 border border-slate-200/60 mb-4">
+                    <div class="flex justify-between items-center mb-1.5">
+                        <span class="text-xs font-semibold text-slate-600">單元學習與掌握進度</span>
+                        <span class="text-xs font-bold text-slate-800 font-mono" id="stat-mastered">0 / 1000</span>
+                    </div>
+                    <div class="w-full bg-slate-200/80 rounded-full h-2 overflow-hidden">
+                        <div id="stat-mastered-bar" class="bg-gradient-to-r from-[#0071E3] to-emerald-500 h-2 rounded-full transition-all duration-500" style="width: 0%"></div>
+                    </div>
                 </div>
 
                 <!-- 題型選擇器 (Dashboard) -->
-                <div class="w-full mb-3 bg-white p-3.5 rounded-2xl border border-gray-100 shadow-sm">
+                <div class="w-full mb-4 bg-slate-50/60 p-3 rounded-2xl border border-slate-200/60">
                     <div class="flex items-center justify-between text-xs mb-2">
-                        <span class="font-semibold text-gray-700 flex items-center gap-1.5">
-                            <span>🎯</span> 複習題型
+                        <span class="font-semibold text-slate-600 flex items-center gap-1.5">
+                            <span>🎯</span> 測驗題型模式
                         </span>
-                        <span id="quiz-mode-desc-dash" class="text-xs font-semibold text-[#0071E3]">🔤 看英選中</span>
+                        <span id="quiz-mode-desc-dash" class="text-[11px] font-semibold text-[#0071E3]">🔤 看英選中</span>
                     </div>
-                    <div class="grid grid-cols-4 gap-1.5 bg-gray-100 p-1 rounded-xl quiz-mode-selector">
-                        <button type="button" data-mode="en2zh" class="quiz-pill py-2 px-1 text-xs rounded-lg font-medium transition-all text-center">🔤 英選中</button>
-                        <button type="button" data-mode="zh2en" class="quiz-pill py-2 px-1 text-xs rounded-lg font-medium transition-all text-center">📝 中選英</button>
-                        <button type="button" data-mode="listen" class="quiz-pill py-2 px-1 text-xs rounded-lg font-medium transition-all text-center">🎧 聽音</button>
-                        <button type="button" data-mode="fill" class="quiz-pill py-2 px-1 text-xs rounded-lg font-medium transition-all text-center">⌨️ 拼寫</button>
+                    <div class="grid grid-cols-4 gap-1 bg-slate-200/60 p-1 rounded-xl quiz-mode-selector">
+                        <button type="button" data-mode="en2zh" class="quiz-pill py-1.5 px-1 text-xs rounded-lg font-medium transition-all text-center cursor-pointer">🔤 英選中</button>
+                        <button type="button" data-mode="zh2en" class="quiz-pill py-1.5 px-1 text-xs rounded-lg font-medium transition-all text-center cursor-pointer">📝 中選英</button>
+                        <button type="button" data-mode="listen" class="quiz-pill py-1.5 px-1 text-xs rounded-lg font-medium transition-all text-center cursor-pointer">🎧 聽音</button>
+                        <button type="button" data-mode="fill" class="quiz-pill py-1.5 px-1 text-xs rounded-lg font-medium transition-all text-center cursor-pointer">⌨️ 拼寫</button>
                     </div>
                 </div>
 
-                <button id="btn-start-session" class="btn-action w-full bg-[#0071E3] hover:bg-[#0077ED] text-white font-medium py-4 rounded-2xl shadow-sm shadow-indigo-200 text-lg flex items-center justify-center gap-2 mb-4">
+                <button id="btn-start-session" class="btn-action w-full bg-gradient-to-r from-[#0071E3] to-[#005BB5] hover:from-[#0077ED] hover:to-[#0062C4] text-white font-semibold py-3 px-4 rounded-xl shadow-sm text-sm sm:text-[15px] flex items-center justify-center gap-2 mb-3 cursor-pointer transition-all active:scale-[0.99]">
                     開始今日課程
                 </button>
 
-                <!-- 週/月/年 錯字加強 -->
-                <div class="grid grid-cols-3 gap-2">
-                    <button id="btn-review-week" class="flex-1 bg-white text-[#1D1D1F] border border-gray-200 py-3 rounded-2xl font-medium shadow-sm active:scale-95 transition-transform text-sm">本週錯題</button>
-                    <button id="btn-review-month" class="flex-1 bg-white text-[#1D1D1F] border border-gray-200 py-3 rounded-2xl font-medium shadow-sm active:scale-95 transition-transform text-sm">本月錯題</button>
-                    <button id="btn-review-all" class="flex-1 bg-[#0071E3] text-white border border-transparent py-3 rounded-2xl font-medium shadow-sm active:scale-95 transition-transform text-sm">全部錯題</button>
+                <!-- 週/月/年 錯字加強 (次要層級膠囊按鈕，不與主 CTA 搶色) -->
+                <div class="grid grid-cols-3 gap-2 pt-1">
+                    <button id="btn-review-week" class="flex-1 bg-slate-50 hover:bg-slate-100 text-slate-700 border border-slate-200/80 py-2 rounded-xl font-medium active:scale-95 transition-all text-xs cursor-pointer">本週錯題</button>
+                    <button id="btn-review-month" class="flex-1 bg-slate-50 hover:bg-slate-100 text-slate-700 border border-slate-200/80 py-2 rounded-xl font-medium active:scale-95 transition-all text-xs cursor-pointer">本月錯題</button>
+                    <button id="btn-review-all" class="flex-1 bg-rose-50/70 hover:bg-rose-100/80 text-rose-600 border border-rose-200/80 py-2 rounded-xl font-semibold active:scale-95 transition-all text-xs cursor-pointer">🎯 全部錯題</button>
                 </div>
             </div>
         </div>
@@ -652,13 +695,13 @@
                         <button id="btn-audio" class="absolute top-4 right-4 p-2 text-gray-400 hover:text-[#0071E3] rounded-full hover:bg-[#E5E5EA] transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
                         </button>
-                        <h2 class="text-5xl font-extrabold text-[#1D1D1F] mb-1 tracking-tight break-all" id="card-word">Apple</h2>
-                        <p class="text-gray-400 font-mono text-lg mb-4" id="card-kk">/ˈæpəl/</p>
-                        <p id="card-front-hint" class="text-gray-400 text-sm mt-4">點擊卡片翻面看解答</p>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-[#1D1D1F] mb-1 tracking-tight break-all" id="card-word">Apple</h2>
+                        <p class="text-gray-400 font-mono text-base mb-3" id="card-kk">/ˈæpəl/</p>
+                        <p id="card-front-hint" class="text-gray-400 text-xs sm:text-sm mt-3">點擊卡片翻面看解答</p>
                     </div>
                     <!-- 背面 (中文) -->
                     <div class="flip-card-back p-4">
-                        <h2 class="text-3xl font-semibold text-[#1D1D1F] mb-1 break-all" id="card-word-back">Apple</h2>
+                        <h2 class="text-2xl font-bold text-[#1D1D1F] mb-0.5 break-all" id="card-word-back">Apple</h2>
                         <p class="text-gray-400 font-mono text-sm mb-2" id="card-kk-back">/ˈæpəl/</p>
                         <div class="flex items-center justify-center gap-2 mb-3 flex-wrap max-w-full px-1">
                             <span id="card-pos-badge" class="hidden text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-blue-50 text-[#0071E3] border border-blue-200 font-mono shrink-0"></span>
@@ -2263,6 +2306,7 @@
             previewNewWords = plan.completed ? allPlanNewWords : (remainingNewWords.length > 0 ? remainingNewWords : allPlanNewWords);
             
             const masteredCount = unitWords.filter(w => userProgress[w.id] && userProgress[w.id].level >= 5).length;
+            const learnedCount = unitWords.filter(w => userProgress[w.id] && userProgress[w.id].level >= 1).length;
 
             const reviewLabelEl = document.getElementById('stat-review-label');
             if (plan.completed) {
@@ -2274,7 +2318,12 @@
                 document.getElementById('stat-review').innerText = remainingReviewWords.length;
                 document.getElementById('stat-new').innerText = remainingNewWords.length;
             }
-            document.getElementById('stat-mastered').innerText = `${masteredCount} / ${unitWords.length}`;
+            document.getElementById('stat-mastered').innerText = `已學 ${learnedCount} · 精熟 ${masteredCount} / ${unitWords.length}`;
+            const masteredBar = document.getElementById('stat-mastered-bar');
+            if (masteredBar) {
+                const pct = unitWords.length > 0 ? Math.min(100, Math.round((learnedCount / unitWords.length) * 1000) / 10) : 0;
+                masteredBar.style.width = `${pct > 0 ? Math.max(pct, 2) : 0}%`;
+            }
 
             if(typeof renderChart === 'function') renderChart(currentUnit);
 
@@ -3263,8 +3312,8 @@
             const kkEl = document.getElementById('card-kk');
             const hintEl = document.getElementById('card-front-hint');
             const audioBtn = document.getElementById('btn-audio');
-            const big = 'text-5xl font-extrabold text-[#1D1D1F] mb-1 tracking-tight break-all';
-            const mid = 'text-3xl font-semibold text-[#1D1D1F] mb-1 break-all px-2';
+            const big = 'text-3xl sm:text-4xl font-extrabold text-[#1D1D1F] mb-1 tracking-tight break-all';
+            const mid = 'text-xl sm:text-2xl font-bold text-[#1D1D1F] mb-1 break-all px-2';
             wordEl.className = big;
             hintEl.className = 'text-gray-400 text-sm mt-4';
             hintEl.innerText = '點擊卡片翻面看解答';
@@ -3404,7 +3453,7 @@
 
             options.forEach((opt, index) => {
                 const btn = document.createElement('button');
-                btn.className = 'btn-action w-full bg-white hover:bg-[#F5F5F7] border-2 border-gray-200 text-[#1D1D1F] font-medium py-3 px-4 rounded-2xl shadow-sm text-left text-lg transition-colors flex items-center';
+                btn.className = 'btn-action w-full bg-white hover:bg-slate-50 border border-slate-200/90 text-[#1D1D1F] font-medium py-2.5 px-3.5 rounded-xl shadow-2xs text-left text-[15px] transition-all flex items-center cursor-pointer';
                 btn.dataset.id = opt.id;
                 btn._opt = opt;
                 

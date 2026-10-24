@@ -58993,5 +58993,50 @@ const externalVocabularyDB = [
     "unit": 7,
     "example": "The delivery package finally arrived at our doorstep this morning.",
     "exampleZh": "包裹今天早上終於送達了我們的家門口。"
+  },
+  {
+    "id": 6567,
+    "en": "borrowed",
+    "kk": "[ˋbɑrod]",
+    "zh": "v. 借用、借入；adj. 借來的、抄襲的",
+    "unit": 7,
+    "example": "He returned the book he had borrowed from the public library.",
+    "exampleZh": "他歸還了從公共圖書館借來的那本書。"
+  },
+  {
+    "id": 6568,
+    "en": "sank",
+    "kk": "[sæŋk]",
+    "zh": "v. 下沉、沉沒、陷入",
+    "unit": 7,
+    "example": "The old wooden ship sank to the bottom of the ocean during the storm.",
+    "exampleZh": "那艘老舊的木船在暴風雨中沉沒到大洋海底。"
+  },
+  {
+    "id": 6569,
+    "en": "disappeared",
+    "kk": "[͵dɪsəˋpɪrd]",
+    "zh": "v. 消失、不見、失蹤",
+    "unit": 7,
+    "example": "The sun quickly disappeared behind the thick dark clouds.",
+    "exampleZh": "太陽迅速消失在濃厚的烏雲後方。"
+  },
+  {
+    "id": 6570,
+    "en": "commend",
+    "kk": "[kəˋmɛnd]",
+    "zh": "v. 稱讚、表揚、推薦",
+    "unit": 7,
+    "example": "The mayor decided to commend the firefighters for their bravery.",
+    "exampleZh": "市長決定表揚消防員們的英勇表現。"
+  },
+  {
+    "id": 6571,
+    "en": "discounts",
+    "kk": "[ˋdɪskaʊnts]",
+    "zh": "n. 折扣、減價；v. 打折、不全信",
+    "unit": 7,
+    "example": "Many stores offer special discounts to students and senior citizens.",
+    "exampleZh": "許多商店為學生與年長者提供特別折扣。"
   }
 ];

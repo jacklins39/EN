@@ -84,5 +84,20 @@ window.COLLOCATIONS_AUDIO_MANIFEST = new Map(Object.entries({
   "stand out": "audio/collocations/stand_out.mp3",
   "stand by": "audio/collocations/stand_by.mp3",
   "deal with": "audio/collocations/deal_with.mp3",
-  "make a deal": "audio/collocations/make_a_deal.mp3"
+  "make a deal": "audio/collocations/make_a_deal.mp3",
+  "borrow from": "audio/collocations/borrow_from.mp3",
+  "live on borrowed time": "audio/collocations/live_on_borrowed_time.mp3",
+  "borrow money": "audio/collocations/borrow_money.mp3",
+  "sink or swim": "audio/collocations/sink_or_swim.mp3",
+  "sink into": "audio/collocations/sink_into.mp3",
+  "heart sank": "audio/collocations/heart_sank.mp3",
+  "disappear into thin air": "audio/collocations/disappear_into_thin_air.mp3",
+  "disappear from sight": "audio/collocations/disappear_from_sight.mp3",
+  "disappear without a trace": "audio/collocations/disappear_without_a_trace.mp3",
+  "commend for": "audio/collocations/commend_for.mp3",
+  "highly commend": "audio/collocations/highly_commend.mp3",
+  "commend to": "audio/collocations/commend_to.mp3",
+  "at a discount": "audio/collocations/at_a_discount.mp3",
+  "offer a discount": "audio/collocations/offer_a_discount.mp3",
+  "bulk discount": "audio/collocations/bulk_discount.mp3"
 }));

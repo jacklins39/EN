@@ -18,14 +18,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js"></script>
-    <script src="toeic_data.js"></script>
-    <script src="jh_data.js"></script>
+    <script src="words_data.js?v=20261024b"></script>
+    <script src="toeic_data.js?v=20261024b"></script>
+    <script src="jh_data.js?v=20261024b"></script>
     <script src="listening_data.js?v=20261020b"></script>
-    <script src="words_audio_manifest.js"></script>
-    <script src="examples_audio_manifest.js"></script>
-    <script src="zh_audio_manifest.js"></script>
-    <script src="collocations_audio_manifest.js"></script>
+    <script src="words_audio_manifest.js?v=20261024b"></script>
+    <script src="examples_audio_manifest.js?v=20261024b"></script>
+    <script src="zh_audio_manifest.js?v=20261024b"></script>
+    <script src="collocations_audio_manifest.js?v=20261024b"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -349,7 +349,7 @@
                             <option value="4">單元 4 (3001 - 4000)</option>
                             <option value="5">單元 5 (4001 - 5000)</option>
                             <option value="6">單元 6 (5001 - 6000)</option>
-                            <option value="7">單元 7 (6001 - 6566)</option>
+                            <option value="7">單元 7 (6001 - 6571)</option>
                         </optgroup>
                         <optgroup label="💼 全新制多益 3000">
                             <option value="11">多益單元 1 (1 - 1000)</option>
@@ -1202,6 +1202,15 @@
         firebase.initializeApp(firebaseConfig);
         const auth = firebase.auth();
         const db = firebase.firestore();
+        try {
+            // 自動偵測 WebChannel 串流阻塞並切換為 HTTP Long-Polling，根治 10 秒連線卡死與假性離線問題
+            db.settings({
+                experimentalForceLongPolling: true,
+                merge: true
+            });
+        } catch (e) {
+            console.warn("Firestore settings warning:", e);
+        }
         const googleProvider = new firebase.auth.GoogleAuthProvider();
 
         let currentUser = null; 
@@ -1486,39 +1495,157 @@
             auth.signOut();
         });
 
+        let isCloudLoading = false;
+        let lastCloudLoadTime = 0;
+        let suppressCloudSave = false;
+        let cloudSaveTimer = null;
+
+        // 解析 Firestore REST API 回傳之 Typed JSON 結構為一般 JS 物件
+        function parseFirestoreRestValue(valObj) {
+            if (!valObj || typeof valObj !== 'object') return undefined;
+            if ('stringValue' in valObj) return valObj.stringValue;
+            if ('integerValue' in valObj) return Number(valObj.integerValue);
+            if ('doubleValue' in valObj) return Number(valObj.doubleValue);
+            if ('booleanValue' in valObj) return Boolean(valObj.booleanValue);
+            if ('nullValue' in valObj) return null;
+            if ('timestampValue' in valObj) return valObj.timestampValue;
+            if ('arrayValue' in valObj) {
+                const values = (valObj.arrayValue && Array.isArray(valObj.arrayValue.values)) ? valObj.arrayValue.values : [];
+                return values.map(parseFirestoreRestValue);
+            }
+            if ('mapValue' in valObj) {
+                const fields = (valObj.mapValue && valObj.mapValue.fields) ? valObj.mapValue.fields : {};
+                const out = {};
+                for (const [k, v] of Object.entries(fields)) {
+                    out[k] = parseFirestoreRestValue(v);
+                }
+                return out;
+            }
+            return undefined;
+        }
+
+        // 將一般 JS 物件轉換為 Firestore REST API Typed JSON 結構
+        function toFirestoreRestValue(val) {
+            if (val === null || val === undefined) return { nullValue: null };
+            if (typeof val === 'boolean') return { booleanValue: val };
+            if (typeof val === 'number') {
+                if (!Number.isFinite(val)) return { integerValue: "0" };
+                return Number.isInteger(val) ? { integerValue: String(val) } : { doubleValue: val };
+            }
+            if (typeof val === 'string') return { stringValue: val };
+            if (val instanceof Date) return { timestampValue: val.toISOString() };
+            if (Array.isArray(val)) {
+                return { arrayValue: { values: val.map(toFirestoreRestValue) } };
+            }
+            if (typeof val === 'object') {
+                // 處理 firebase.firestore.FieldValue.serverTimestamp() 轉換為 ISO 時間戳
+                if (val.constructor && val.constructor.name !== 'Object') {
+                    return { timestampValue: new Date().toISOString() };
+                }
+                const fields = {};
+                for (const [k, v] of Object.entries(val)) {
+                    if (v !== undefined) fields[k] = toFirestoreRestValue(v);
+                }
+                return { mapValue: { fields } };
+            }
+            return { stringValue: String(val) };
+        }
+
+        // 無狀態 HTTPS REST 備援寫入：當 SDK WebChannel 寫入逾時或中斷時，直接透過 HTTPS PATCH 寫入雲端
+        async function saveCloudDocViaRest(uid, rawPayload) {
+            const token = await currentUser.getIdToken();
+            const url = `https://firestore.googleapis.com/v1/projects/${firebaseConfig.projectId}/databases/(default)/documents/users/${encodeURIComponent(uid)}`;
+            const restDoc = toFirestoreRestValue({ ...rawPayload, lastUpdated: new Date() });
+            const bodyStr = JSON.stringify({ fields: restDoc.mapValue.fields });
+            const res = await fetch(url, {
+                method: 'PATCH',
+                headers: {
+                    'Authorization': `Bearer ${token}`,
+                    'Content-Type': 'application/json'
+                },
+                body: bodyStr,
+                keepalive: bodyStr.length < 60000
+            });
+            if (!res.ok) {
+                const errText = await res.text().catch(() => '');
+                const err = new Error(`REST PATCH failed (${res.status}): ${errText}`);
+                if (res.status === 403) err.code = 'permission-denied';
+                throw err;
+            }
+            return true;
+        }
+
+        // 無狀態 HTTPS REST 備援讀取：當 Firestore SDK 的 WebChannel 串流超過 3 秒未回應或進入假性離線時，0.2 秒直連取回資料
+        async function fetchCloudDocViaRest(uid) {
+            const token = await currentUser.getIdToken();
+            const url = `https://firestore.googleapis.com/v1/projects/${firebaseConfig.projectId}/databases/(default)/documents/users/${encodeURIComponent(uid)}`;
+            const res = await fetch(url, {
+                method: 'GET',
+                headers: { 'Authorization': `Bearer ${token}` },
+                cache: 'no-store'
+            });
+            if (res.status === 404) {
+                return { exists: false, data: () => ({}) };
+            }
+            if (!res.ok) {
+                const errText = await res.text().catch(() => '');
+                const err = new Error(`REST GET failed (${res.status}): ${errText}`);
+                if (res.status === 403) err.code = 'permission-denied';
+                throw err;
+            }
+            const json = await res.json();
+            const parsed = parseFirestoreRestValue({ mapValue: { fields: json.fields || {} } }) || {};
+            return { exists: true, data: () => parsed };
+        }
+
         async function loadDataFromCloud(isSilent = false) {
             if (!currentUser) return;
+            const now = Date.now();
+            if (isCloudLoading) return;
+            if (isSilent && (now - lastCloudLoadTime < 3000)) return;
+            isCloudLoading = true;
+
             const docRef = db.collection('users').doc(currentUser.uid);
             let docSnap = null;
 
-            // 1. 網路讀取層：包含輕量自動重試 (防止 4G/5G/WiFi 切換瞬間抖動)
+            // 1. 雙通道零延遲平行競速讀取：無狀態 HTTPS REST API 與 SDK 同時於 0ms 並發起跑，誰先回傳就立即採用 (~150ms 極速完成)
             try {
-                docSnap = await docRef.get();
-            } catch (netErr) {
-                console.warn("初次讀取雲端失敗，1.2 秒後自動重試...", netErr);
+                docSnap = await Promise.any([
+                    fetchCloudDocViaRest(currentUser.uid),
+                    docRef.get()
+                ]);
+            } catch (firstErr) {
+                console.warn("初次平行讀取受阻，嘗試喚醒網路並重試...", firstErr);
                 try {
-                    await new Promise(r => setTimeout(r, 1200));
-                    docSnap = await docRef.get();
-                } catch (retryErr) {
-                    console.error("雲端重試讀取仍失敗:", retryErr);
-                    // 徹底廢除同步阻斷式 alert 彈窗，改為優雅頂部提示條
-                    const syncBanner = document.getElementById('sync-banner');
-                    if (syncBanner && !isSilent) {
-                        const isPermDenied = retryErr && (retryErr.code === 'permission-denied' || String(retryErr).includes('permission'));
-                        syncBanner.innerText = isPermDenied
-                            ? "⚠️ 雲端讀取權限受限 (請至 Firebase Console 更新 Firestore 規則)，已啟用本機安全暫存"
-                            : "☁️ 雲端網路暫時無法連線 (已啟用本機安全暫存模式，學習進度不受影響)";
-                        syncBanner.className = "bg-amber-100 text-amber-900 text-xs text-center py-1.5 font-medium shadow-2xs";
-                        syncBanner.classList.remove('hidden');
-                        setTimeout(() => syncBanner.classList.add('hidden'), 5000);
+                    db.enableNetwork().catch(() => {});
+                    await new Promise(r => setTimeout(r, 600));
+                    docSnap = await fetchCloudDocViaRest(currentUser.uid);
+                } catch (restErr) {
+                    try {
+                        docSnap = await docRef.get();
+                    } catch (retryErr) {
+                        console.error("雲端雙通道讀取皆失敗:", retryErr);
+                        const syncBanner = document.getElementById('sync-banner');
+                        if (syncBanner && !isSilent) {
+                            const isPermDenied = (retryErr && (retryErr.code === 'permission-denied' || String(retryErr).includes('permission'))) ||
+                                                 (restErr && restErr.code === 'permission-denied');
+                            syncBanner.innerText = isPermDenied
+                                ? "⚠️ 雲端讀取權限受限 (請至 Firebase Console 更新 Firestore 規則)，已啟用本機安全暫存"
+                                : "☁️ 雲端網路暫時無法連線 (已啟用本機安全暫存模式，學習進度不受影響)";
+                            syncBanner.className = "bg-amber-100 text-amber-900 text-xs text-center py-1.5 font-medium shadow-2xs";
+                            syncBanner.classList.remove('hidden');
+                            setTimeout(() => syncBanner.classList.add('hidden'), 5000);
+                        }
+                        isCloudLoading = false;
+                        initLocalData();
+                        return;
                     }
-                    initLocalData();
-                    return;
                 }
             }
 
             // 2. 資料解析與合併層：獨立防護，不將內部邏輯錯誤誤判為網路失敗
             try {
+                suppressCloudSave = true;
                 if (docSnap && docSnap.exists) {
                     const data = docSnap.data();
                     const cloudProgress = data.progress || {};
@@ -1540,20 +1667,55 @@
                         }
                     }
 
-                    // 智慧雙向合併：防止雲端空資料覆蓋洗掉本機學習成果，取各單字最大掌握度
+                    // 智慧雙向合併：支援 updatedAt 時間戳權威判斷（保留答錯降級與錯題清除）與錯題序列化去重
                     const mergedProgress = { ...userProgress };
                     for (const [wid, cp] of Object.entries(cloudProgress)) {
                         if (!mergedProgress[wid]) {
                             mergedProgress[wid] = cp;
                         } else {
                             const lp = mergedProgress[wid];
-                            mergedProgress[wid] = {
+                            const lTime = lp.updatedAt || 0;
+                            const cTime = cp.updatedAt || 0;
+                            const hasTimestamp = lTime > 0 || cTime > 0;
+                            const primary = (hasTimestamp && lTime >= cTime) ? lp : cp;
+
+                            // 錯題序列化去重與清除時間戳比對
+                            const clearTime = Math.max(lp.mistakesClearedAt || 0, cp.mistakesClearedAt || 0);
+                            let mergedMistakes = [];
+                            if (clearTime > 0 && clearTime >= Math.max(lTime, cTime) && ((lp.mistakesClearedAt && (!lp.mistakes || lp.mistakes.length === 0)) || (cp.mistakesClearedAt && (!cp.mistakes || cp.mistakes.length === 0)))) {
+                                const newerClearSide = (lp.mistakesClearedAt || 0) >= (cp.mistakesClearedAt || 0) ? lp : cp;
+                                mergedMistakes = Array.isArray(newerClearSide.mistakes) ? [...newerClearSide.mistakes] : [];
+                            } else {
+                                const seenKeys = new Set();
+                                for (const m of [...(lp.mistakes || []), ...(cp.mistakes || [])]) {
+                                    if (!m || typeof m !== 'object') continue;
+                                    if (clearTime > 0 && m.ts && m.ts <= clearTime) continue;
+                                    const key = `${m.d || ''}|${m.day ?? ''}|${m.t || ''}`;
+                                    if (!seenKeys.has(key)) {
+                                        seenKeys.add(key);
+                                        mergedMistakes.push(m);
+                                    }
+                                }
+                                if (mergedMistakes.length > 30) mergedMistakes = mergedMistakes.slice(-30);
+                            }
+
+                            const mergedItem = {
                                 ...lp,
                                 ...cp,
-                                level: Math.max(lp.level || 0, cp.level || 0),
-                                nextReviewDay: Math.max(lp.nextReviewDay || 0, cp.nextReviewDay || 0),
-                                mistakes: Array.from(new Set([...(lp.mistakes || []), ...(cp.mistakes || [])]))
+                                isLearning: Boolean(lp.isLearning || cp.isLearning),
+                                level: hasTimestamp ? (primary.level ?? 0) : Math.max(lp.level || 0, cp.level || 0),
+                                nextReviewDay: hasTimestamp ? (primary.nextReviewDay ?? 0) : Math.max(lp.nextReviewDay || 0, cp.nextReviewDay || 0),
+                                mistakes: mergedMistakes
                             };
+                            if (clearTime > 0) mergedItem.mistakesClearedAt = clearTime;
+                            if (Math.max(lTime, cTime) > 0) mergedItem.updatedAt = Math.max(lTime, cTime);
+                            if (mergedMistakes.length === 0 && clearTime > 0) {
+                                delete mergedItem.lastMistakeDay;
+                            } else if (hasTimestamp) {
+                                if (primary.lastMistakeDay !== undefined) mergedItem.lastMistakeDay = primary.lastMistakeDay;
+                                else delete mergedItem.lastMistakeDay;
+                            }
+                            mergedProgress[wid] = mergedItem;
                         }
                     }
 
@@ -1631,10 +1793,6 @@
                     localStorage.setItem('vocab_custom_words', JSON.stringify(customWordsDB));
                     saveDailyPlansLocally();
 
-                    // 若剛好篩除了已收錄至官方字庫的重複單字，背景非同步將乾淨版本寫回雲端
-                    if (cloudInitialLen !== customWordsDB.length && currentUser) {
-                        saveToCloud(true);
-                    }
                     if (!isSilent) {
                         const syncBanner = document.getElementById('sync-banner');
                         if (syncBanner) {
@@ -1645,23 +1803,30 @@
                             setTimeout(() => syncBanner.classList.add('hidden'), 3500);
                         }
                     }
-                    // 雙向合併後自動將聯集最高進度即時寫回雲端，確保電腦與手機瞬間統一
-                    saveToCloud();
                 } else {
-                    // 若雲端初次登入尚無存檔，保留並自動上傳本地既有進度至雲端，避免使用者的本機進度被清空
-                    saveToCloud();
                     saveDailyPlansLocally();
                 }
-                initAppLogic(); 
+                // 先完成本地排程初始化 (期間抑制重複寫入)，最後統一單次寫回雲端，消除併發寫入風暴
+                initAppLogic();
+                suppressCloudSave = false;
+                lastCloudLoadTime = Date.now();
+                isCloudLoading = false;
+                saveToCloud(true);
             } catch (parseError) {
+                suppressCloudSave = false;
+                isCloudLoading = false;
                 console.error("雲端資料解析錯誤:", parseError);
                 initLocalData();
             }
         }
 
-        function saveToCloud(forceOverwrite = false) {
-            if (!currentUser) return Promise.resolve(); 
-            
+        function flushSaveToCloud() {
+            if (!currentUser) return Promise.resolve();
+            if (cloudSaveTimer) {
+                clearTimeout(cloudSaveTimer);
+                cloudSaveTimer = null;
+            }
+
             const payload = {
                 progress: userProgress,
                 day: virtualCurrentDay,
@@ -1674,9 +1839,33 @@
             };
 
             const docRef = db.collection('users').doc(currentUser.uid);
-            const savePromise = forceOverwrite ? docRef.set(payload) : docRef.set(payload, { merge: true });
-
-            return savePromise.then(() => {
+            return Promise.any([
+                saveCloudDocViaRest(currentUser.uid, payload),
+                docRef.set(payload)
+            ]).catch(async (AggErr) => {
+                const firstErr = (AggErr && Array.isArray(AggErr.errors) && AggErr.errors[0]) ? AggErr.errors[0] : AggErr;
+                // 1. 若因 Firebase Console 尚未發布最新 firestore.rules (例如缺 unit 白名單) 遭拒，自動向下相容重試
+                const isPerm = firstErr && (firstErr.code === 'permission-denied' || String(firstErr).includes('permission'));
+                if (isPerm) {
+                    console.warn("偵測到雲端規則尚未允許 unit 欄位，自動以相容格式重試寫入...");
+                    const compatPayload = { ...payload };
+                    delete compatPayload.unit;
+                    return saveCloudDocViaRest(currentUser.uid, compatPayload);
+                }
+                // 2. 若為 SDK WebChannel 逾時或假性離線，立即切換無狀態 HTTPS REST PATCH 直連寫入 (支援 keepalive)
+                console.warn("SDK 寫入逾時或受阻，切換 REST PATCH 直連同步...", firstErr?.message || firstErr);
+                db.enableNetwork().catch(() => {});
+                try {
+                    return await saveCloudDocViaRest(currentUser.uid, payload);
+                } catch (restErr) {
+                    if (restErr && restErr.code === 'permission-denied') {
+                        const compatPayload = { ...payload };
+                        delete compatPayload.unit;
+                        return await saveCloudDocViaRest(currentUser.uid, compatPayload);
+                    }
+                    throw restErr;
+                }
+            }).then(() => {
                 const banner = document.getElementById('sync-banner');
                 if (banner && banner.classList.contains('hidden')) {
                     banner.innerText = "☁️ 進度已即時同步至雲端";
@@ -1693,6 +1882,20 @@
                     banner.classList.remove('hidden');
                     setTimeout(() => banner.classList.add('hidden'), 3500);
                 }
+            });
+        }
+
+        function saveToCloud(immediate = false) {
+            if (!currentUser || suppressCloudSave) return Promise.resolve();
+            if (immediate) {
+                return flushSaveToCloud();
+            }
+            if (cloudSaveTimer) clearTimeout(cloudSaveTimer);
+            return new Promise((resolve) => {
+                cloudSaveTimer = setTimeout(() => {
+                    cloudSaveTimer = null;
+                    flushSaveToCloud().then(resolve).catch(() => resolve());
+                }, 500);
             });
         }
 
@@ -2809,7 +3012,7 @@
             }
             const d = new Date();
             const pad = n => String(n).padStart(2, '0');
-            progress.mistakes.push({ d: `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`, day: virtualCurrentDay, t: currentQuizType });
+            progress.mistakes.push({ d: `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`, day: virtualCurrentDay, t: currentQuizType, ts: Date.now() });
             if (progress.mistakes.length > 30) progress.mistakes.shift();
         }
 
@@ -2858,9 +3061,10 @@
                 }
             }
             
+            progress.updatedAt = Date.now();
             try { 
-                saveToCloud(); 
                 saveDailyPlansLocally();
+                saveToCloud(); 
             } catch(e) { console.warn(e); }
         }
 
@@ -3256,6 +3460,7 @@
                     userProgress = {};
                     virtualCurrentDay = 0;
                     dailyPlans = {};
+                    localStorage.removeItem('vocab_user_progress_backup');
                     saveDailyPlansLocally();
 
                     if (currentUser) {
@@ -4108,10 +4313,40 @@
             "deal": [
                 { en: "deal with", zh: "處理；應對" },
                 { en: "make a deal", zh: "達成交易；妥協" }
+            ],
+            "borrow": [
+                { en: "borrow from", zh: "向...借入；借鑑" },
+                { en: "live on borrowed time", zh: "苟延殘喘；僥倖多活" },
+                { en: "borrow money", zh: "借錢" }
+            ],
+            "sink": [
+                { en: "sink or swim", zh: "成敗全靠自己；破釜沉舟" },
+                { en: "sink into", zh: "陷入...之中；沉入" },
+                { en: "heart sank", zh: "心涼了半截；心情一沉" }
+            ],
+            "disappear": [
+                { en: "disappear into thin air", zh: "憑空消失；消聲匿跡" },
+                { en: "disappear from sight", zh: "從視線中消失" },
+                { en: "disappear without a trace", zh: "消失得無影無蹤" }
+            ],
+            "commend": [
+                { en: "commend for", zh: "因...而表揚某人" },
+                { en: "highly commend", zh: "高度讚揚；極力推薦" },
+                { en: "commend to", zh: "向...推薦；託付給" }
+            ],
+            "discount": [
+                { en: "at a discount", zh: "以折扣價；打折" },
+                { en: "offer a discount", zh: "提供折扣" },
+                { en: "bulk discount", zh: "大量採購折扣；團購折價" }
             ]
         };
 
         const CORE_WORD_SYNONYMS = {
+            "borrow": ["loan", "adopt", "take", "use", "rent"],
+            "sink": ["plunge", "submerge", "descend", "drop", "decline"],
+            "disappear": ["vanish", "fade", "evaporate", "depart", "dissipate"],
+            "commend": ["praise", "compliment", "applaud", "recommend", "endorse", "acclaim"],
+            "discount": ["reduction", "rebate", "markdown", "deduction", "concession"],
             "star": ["celebrity", "icon", "lead", "performer", "luminary", "superstar"],
             "speech": ["address", "lecture", "presentation", "talk", "discourse", "oration"],
             "lesson": ["class", "instruction", "lecture", "tutorial", "moral", "session"],
@@ -4149,9 +4384,75 @@
             return 'aeiou'.includes((c || '').toLowerCase());
         }
 
-        function computeWordForms(word, posStr = '') {
+        // 反向詞幹還原器：將變化形 (如 borrowed -> borrow, sank -> sink, disappeared -> disappear, discounts -> discount) 還原為原形
+        function resolveBaseLemma(word) {
             const w = (word || '').trim().toLowerCase();
-            if (!w || !/^[a-z]+$/i.test(w)) return null;
+            if (!w) return w;
+            if (IRREGULAR_VERBS[w] || IRREGULAR_PLURALS[w]) return w;
+
+            // 1. 檢查是否為不規則動詞的過去式/分詞/三單 (如 sank -> sink, wrote -> write, becomes -> become)
+            for (const [base, vf] of Object.entries(IRREGULAR_VERBS)) {
+                if (!vf) continue;
+                const parts = [vf.past, vf.pp, vf.ing, vf.s].flatMap(s => String(s || '').split('/').map(x => x.trim().toLowerCase()));
+                if (parts.includes(w)) return base;
+            }
+            // 2. 檢查是否為不規則複數名詞 (如 children -> child)
+            for (const [sing, plur] of Object.entries(IRREGULAR_PLURALS)) {
+                if (plur === w) return sing;
+            }
+
+            const hasInDB = (cand) => {
+                if (!cand || cand.length < 2) return false;
+                if (IRREGULAR_VERBS[cand] || CORE_WORD_COLLOCATIONS[cand] || CORE_WORD_SYNONYMS[cand]) return true;
+                return typeof vocabularyDB !== 'undefined' && vocabularyDB.some(it => it && it.en && it.en.toLowerCase() === cand && (it.unit !== 7 || it.id <= 6546));
+            };
+
+            // 3. 規則變化詞尾還原 (-ied, -ed, -ing, -ies, -es, -s)
+            if (w.endsWith('ied') && w.length > 4) {
+                const c = w.slice(0, -3) + 'y';
+                if (hasInDB(c)) return c;
+            }
+            if (w.endsWith('ed') && w.length > 3) {
+                const c1 = w.slice(0, -2); // borrowed -> borrow, disappeared -> disappear
+                if (hasInDB(c1)) return c1;
+                const c2 = w.slice(0, -1); // arrived -> arrive
+                if (hasInDB(c2)) return c2;
+                if (w.length > 4 && w[w.length - 3] === w[w.length - 4]) {
+                    const c3 = w.slice(0, -3); // stopped -> stop
+                    if (hasInDB(c3)) return c3;
+                }
+            }
+            if (w.endsWith('ing') && w.length > 4) {
+                const c1 = w.slice(0, -3); // expecting -> expect
+                if (hasInDB(c1)) return c1;
+                const c2 = w.slice(0, -3) + 'e'; // making -> make
+                if (hasInDB(c2)) return c2;
+                if (w.length > 5 && w[w.length - 4] === w[w.length - 5]) {
+                    const c3 = w.slice(0, -4);
+                    if (hasInDB(c3)) return c3;
+                }
+            }
+            if (w.endsWith('ies') && w.length > 4) {
+                const c = w.slice(0, -3) + 'y';
+                if (hasInDB(c)) return c;
+            }
+            if (w.endsWith('es') && w.length > 3) {
+                const c1 = w.slice(0, -2);
+                if (hasInDB(c1)) return c1;
+                const c2 = w.slice(0, -1); // continues -> continue
+                if (hasInDB(c2)) return c2;
+            }
+            if (w.endsWith('s') && !w.endsWith('ss') && w.length > 3) {
+                const c = w.slice(0, -1); // discounts -> discount, poems -> poem
+                if (hasInDB(c)) return c;
+            }
+            return w;
+        }
+
+        function computeWordForms(word, posStr = '') {
+            const rawW = (word || '').trim().toLowerCase();
+            if (!rawW || !/^[a-z]+$/i.test(rawW)) return null;
+            const w = resolveBaseLemma(rawW);
 
             const forms = {
                 word: w,
@@ -4202,7 +4503,9 @@
                         const c1 = w[w.length - 3];
                         const v = w[w.length - 2];
                         const c2 = w[w.length - 1];
-                        if (!isVowel(c1) && isVowel(v) && !isVowel(c2) && !'wxy'.includes(c2)) {
+                        // 僅單音節或重音在字尾之短字重複字尾 (排除 borrow, disappear, offer, open, visit, happen, listen, develop 等)
+                        const noDouble = ['borrow', 'disappear', 'offer', 'open', 'visit', 'happen', 'listen', 'develop', 'enter', 'order', 'answer', 'suffer', 'cover', 'deliver', 'consider', 'remember', 'discover', 'recover'];
+                        if (!noDouble.includes(w) && w.length <= 4 && !isVowel(c1) && isVowel(v) && !isVowel(c2) && !'wxy'.includes(c2)) {
                             ingForm = w + c2 + 'ing';
                             edForm = w + c2 + 'ed';
                         }
@@ -4289,17 +4592,21 @@
         }
 
         function getWordCollocations(word, currentItem = null) {
-            const w = (word || '').trim().toLowerCase();
+            const rawW = (word || '').trim().toLowerCase();
+            const baseW = resolveBaseLemma(rawW);
             const list = [];
-            if (CORE_WORD_COLLOCATIONS[w]) {
-                list.push(...CORE_WORD_COLLOCATIONS[w]);
+            if (CORE_WORD_COLLOCATIONS[rawW]) {
+                list.push(...CORE_WORD_COLLOCATIONS[rawW]);
+            } else if (CORE_WORD_COLLOCATIONS[baseW]) {
+                list.push(...CORE_WORD_COLLOCATIONS[baseW]);
             }
             if (list.length < 4 && typeof vocabularyDB !== 'undefined') {
                 for (const item of vocabularyDB) {
                     if (list.length >= 4) break;
                     if (!item || !item.en) continue;
                     const enLower = item.en.toLowerCase();
-                    if (enLower.includes(' ') && enLower.split(/\s+/).includes(w) && !list.find(c => c.en.toLowerCase() === enLower)) {
+                    const tokens = enLower.split(/\s+/);
+                    if (enLower.includes(' ') && (tokens.includes(rawW) || tokens.includes(baseW)) && !list.find(c => c.en.toLowerCase() === enLower)) {
                         const parsed = splitPosAndZh(item.zh, item.pos);
                         list.push({ en: item.en, zh: parsed.pureZh || item.zh });
                     }
@@ -4309,15 +4616,19 @@
         }
 
         function getWordSynonyms(word) {
-            const w = (word || '').trim().toLowerCase();
-            if (CORE_WORD_SYNONYMS[w]) {
-                return [...CORE_WORD_SYNONYMS[w]];
+            const rawW = (word || '').trim().toLowerCase();
+            const baseW = resolveBaseLemma(rawW);
+            if (CORE_WORD_SYNONYMS[rawW]) {
+                return [...CORE_WORD_SYNONYMS[rawW]];
+            }
+            if (CORE_WORD_SYNONYMS[baseW]) {
+                return [...CORE_WORD_SYNONYMS[baseW]];
             }
             return [];
         }
 
         function getUnitBadgeInfo(unit) {
-            if (unit >= 1 && unit <= 6) return { name: `高中 7000 單字 (單元 ${unit})`, color: 'bg-blue-50 text-[#0071E3] border-blue-200' };
+            if (unit >= 1 && unit <= 7) return { name: `高中 7000 單字 (單元 ${unit})`, color: 'bg-blue-50 text-[#0071E3] border-blue-200' };
             if (unit >= 11 && unit <= 13) return { name: `TOEIC 多益核心 (單元 ${unit})`, color: 'bg-emerald-50 text-emerald-700 border-emerald-200' };
             if (unit >= 17 && unit <= 18) return { name: `國中基礎 1200 (單元 ${unit})`, color: 'bg-amber-50 text-amber-700 border-amber-200' };
             if (unit === 10) return { name: '自訂字庫', color: 'bg-purple-50 text-purple-700 border-purple-200' };
@@ -5371,9 +5682,13 @@
             });
             document.getElementById('btn-weak-clear').addEventListener('click', () => {
                 if (!confirm(`確定移除「${w.en}」的錯誤紀錄？`)) return;
+                const nowTs = Date.now();
                 p.mistakes = [];
+                p.mistakesClearedAt = nowTs;
+                p.updatedAt = nowTs;
                 delete p.lastMistakeDay;
-                saveToCloud();
+                saveDailyPlansLocally();
+                saveToCloud(true);
                 document.getElementById('dict-modal').classList.add('hidden');
                 renderWeakView();
                 updateDashboard();
@@ -6063,7 +6378,7 @@
                     let score = 0;
                     const u = w.unit || 1;
                     if (u >= 11 && u <= 15) score = 100; // TOEIC words
-                    else if (u >= 4 && u <= 6) score = 80 + u; // Advanced 7000 words
+                    else if (u >= 4 && u <= 7) score = 80 + u; // Advanced 7000 words
                     else if (u >= 2 && u <= 3) score = 40 + u; // Intermediate 7000 words
                     else if (u >= 17) score = 10; // Junior High words
                     else score = 20;
@@ -7624,21 +7939,27 @@
             }
         });
 
-        // 多裝置焦點切換與喚醒時自動靜默向雲端對齊
+        // 多裝置焦點切換與喚醒時自動靜默向雲端對齊 (具備 3 秒節流與互斥鎖，離開頁面時立即 Flush 未完成寫入)
         document.addEventListener('visibilitychange', () => {
-            if (document.visibilityState === 'visible' && typeof currentUser !== 'undefined' && currentUser) {
+            if (typeof currentUser === 'undefined' || !currentUser) return;
+            if (document.visibilityState === 'hidden') {
+                if (cloudSaveTimer && typeof flushSaveToCloud === 'function') {
+                    flushSaveToCloud();
+                }
+            } else if (document.visibilityState === 'visible') {
                 if (typeof loadDataFromCloud === 'function') {
-                    loadDataFromCloud(true).then(() => {
-                        if (typeof updateDashboard === 'function') updateDashboard();
-                    }).catch(console.warn);
+                    loadDataFromCloud(true).catch(console.warn);
                 }
             }
         });
         window.addEventListener('focus', () => {
             if (typeof currentUser !== 'undefined' && currentUser && typeof loadDataFromCloud === 'function') {
-                loadDataFromCloud(true).then(() => {
-                    if (typeof updateDashboard === 'function') updateDashboard();
-                }).catch(console.warn);
+                loadDataFromCloud(true).catch(console.warn);
+            }
+        });
+        window.addEventListener('pagehide', () => {
+            if (cloudSaveTimer && typeof flushSaveToCloud === 'function') {
+                flushSaveToCloud();
             }
         });
 

@@ -1506,12 +1506,32 @@
 
                     userProgress = mergedProgress;
                     virtualCurrentDay = Math.max(virtualCurrentDay, cloudDay);
-                    dailyPlans = { ...cloudDailyPlans, ...dailyPlans };
+                    localStorage.setItem('vocab_virtual_day', String(virtualCurrentDay));
                     localStorage.setItem('vocab_last_date', cloudLastDate);
 
-                    if (data.unit && !localStorage.getItem('vocab_current_unit')) {
+                    // 智慧合併 dailyPlans：完成狀態(completed)為最高優先，雲端當日排程優先於本地未排程
+                    const mergedPlans = { ...dailyPlans };
+                    for (const [u, cp] of Object.entries(cloudDailyPlans)) {
+                        const lp = mergedPlans[u];
+                        if (!lp) {
+                            mergedPlans[u] = cp;
+                        } else {
+                            if (cp.completed && !lp.completed) {
+                                mergedPlans[u] = cp;
+                            } else if (!cp.completed && lp.completed) {
+                                mergedPlans[u] = lp;
+                            } else if ((cp.day || 0) >= (lp.day || 0)) {
+                                mergedPlans[u] = cp;
+                            }
+                        }
+                    }
+                    dailyPlans = mergedPlans;
+
+                    if (typeof data.unit === 'number' && data.unit >= 1) {
                         currentUnit = data.unit;
                         localStorage.setItem('vocab_current_unit', String(currentUnit));
+                        const unitSel = document.getElementById('unit-selector');
+                        if (unitSel) unitSel.value = String(currentUnit);
                     }
 
                     if (typeof data.newWordsPerDay === 'number') {
@@ -1561,10 +1581,11 @@
                     if (!isSilent) {
                         const syncBanner = document.getElementById('sync-banner');
                         if (syncBanner) {
-                            syncBanner.innerText = `☁️ 雲端進度已同步 (進度第 ${virtualCurrentDay} 天)`;
+                            const userLabel = currentUser && currentUser.email ? currentUser.email.split('@')[0] : '已登入';
+                            syncBanner.innerText = `☁️ 雲端已同步 (${userLabel} · 單元 ${currentUnit} · 第 ${virtualCurrentDay} 天)`;
                             syncBanner.className = "bg-green-100 text-green-800 text-xs text-center py-1 font-medium";
                             syncBanner.classList.remove('hidden');
-                            setTimeout(() => syncBanner.classList.add('hidden'), 2500);
+                            setTimeout(() => syncBanner.classList.add('hidden'), 3500);
                         }
                     }
                     // 雙向合併後自動將聯集最高進度即時寫回雲端，確保電腦與手機瞬間統一
@@ -1593,6 +1614,7 @@
                 dailyPlans: dailyPlans,
                 newWordsPerDay: NEW_WORDS_PER_DAY,
                 customWords: customWordsDB,
+                unit: currentUnit,
                 lastDate: getLocalDateStr(),
                 lastUpdated: firebase.firestore.FieldValue.serverTimestamp()
             };
@@ -1750,6 +1772,7 @@
             currentUnit = parseInt(e.target.value);
             localStorage.setItem('vocab_current_unit', String(currentUnit));
             updateDashboard();
+            saveToCloud();
         });
 
         function getUnitWords(unit) {

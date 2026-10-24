@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         const _origWarn = console.warn;
@@ -319,8 +322,8 @@
     </header>
 
     <!-- 雲端同步提示列 -->
-    <div id="sync-banner" class="bg-yellow-100 text-yellow-800 text-xs text-center py-1 hidden">
-        目前為訪客模式，進度將不會永久儲存。請登入以啟用雲端同步。
+    <div id="sync-banner" class="bg-amber-100 text-amber-900 text-xs text-center py-1.5 hidden cursor-pointer hover:bg-amber-200 transition-colors font-medium px-2 shadow-2xs">
+        👉 目前為訪客模式（進度僅暫存此裝置），點此登入 Google 啟用跨裝置雲端同步
     </div>
     <div id="loading-banner" class="bg-[#F5F5F7] text-[#1D1D1F] text-xs text-center py-1 hidden">
         正在與雲端同步資料中...
@@ -1470,6 +1473,12 @@
             });
         });
 
+        document.getElementById('sync-banner')?.addEventListener('click', () => {
+            if (!currentUser) {
+                auth.signInWithPopup(googleProvider).catch(console.error);
+            }
+        });
+
         document.getElementById('btn-logout').addEventListener('click', () => {
             auth.signOut();
         });
@@ -1484,10 +1493,24 @@
                     const data = docSnap.data();
                     const cloudProgress = data.progress || {};
                     const cloudDailyPlans = data.dailyPlans || {};
-                    const cloudDay = typeof data.day === 'number' ? data.day : 0;
-                    const cloudLastDate = data.lastDate || getLocalDateStr();
+                    let cloudDay = typeof data.day === 'number' ? data.day : 0;
+                    const todayStr = getLocalDateStr();
+                    const cloudLastDate = data.lastDate || todayStr;
                     
-                    // 智慧雙向合併：防止雲端空資料覆蓋洗掉本機學習成果
+                    // 跨日檢查：以雲端紀錄的日期為唯一基準，防止多裝置重複增加虛擬天數
+                    let isDayRolled = false;
+                    if (cloudLastDate !== todayStr) {
+                        const d1 = new Date(cloudLastDate);
+                        const d2 = new Date(todayStr);
+                        const diffTime = d2.getTime() - d1.getTime();
+                        if (diffTime > 0) {
+                            const diffDays = Math.max(1, Math.round(diffTime / (1000 * 60 * 60 * 24)));
+                            cloudDay += diffDays;
+                            isDayRolled = true;
+                        }
+                    }
+
+                    // 智慧雙向合併：防止雲端空資料覆蓋洗掉本機學習成果，取各單字最大掌握度
                     const mergedProgress = { ...userProgress };
                     for (const [wid, cp] of Object.entries(cloudProgress)) {
                         if (!mergedProgress[wid]) {
@@ -1505,27 +1528,31 @@
                     }
 
                     userProgress = mergedProgress;
-                    virtualCurrentDay = Math.max(virtualCurrentDay, cloudDay);
+                    virtualCurrentDay = cloudDay;
                     localStorage.setItem('vocab_virtual_day', String(virtualCurrentDay));
-                    localStorage.setItem('vocab_last_date', cloudLastDate);
+                    localStorage.setItem('vocab_last_date', todayStr);
 
-                    // 智慧合併 dailyPlans：完成狀態(completed)為最高優先，雲端當日排程優先於本地未排程
-                    const mergedPlans = { ...dailyPlans };
-                    for (const [u, cp] of Object.entries(cloudDailyPlans)) {
-                        const lp = mergedPlans[u];
-                        if (!lp) {
-                            mergedPlans[u] = cp;
-                        } else {
-                            if (cp.completed && !lp.completed) {
+                    if (isDayRolled) {
+                        dailyPlans = {};
+                    } else {
+                        // 雲端每日排程為權威基準，已完成狀態 (completed: true) 優先
+                        const mergedPlans = { ...dailyPlans };
+                        for (const [u, cp] of Object.entries(cloudDailyPlans)) {
+                            const lp = mergedPlans[u];
+                            if (!lp) {
                                 mergedPlans[u] = cp;
-                            } else if (!cp.completed && lp.completed) {
-                                mergedPlans[u] = lp;
-                            } else if ((cp.day || 0) >= (lp.day || 0)) {
-                                mergedPlans[u] = cp;
+                            } else {
+                                if (cp.completed && !lp.completed) {
+                                    mergedPlans[u] = cp;
+                                } else if (!cp.completed && lp.completed) {
+                                    mergedPlans[u] = lp;
+                                } else if ((cp.day || 0) >= (lp.day || 0)) {
+                                    mergedPlans[u] = cp;
+                                }
                             }
                         }
+                        dailyPlans = mergedPlans;
                     }
-                    dailyPlans = mergedPlans;
 
                     if (typeof data.unit === 'number' && data.unit >= 1) {
                         currentUnit = data.unit;
@@ -1674,6 +1701,9 @@
         }
 
         function checkCalendarDayRollover() {
+            // 已登入狀態下，天數與換日統一由 loadDataFromCloud 依據雲端時間計算，防止多裝置重複計算
+            if (currentUser) return;
+
             const todayStr = getLocalDateStr();
             const lastDate = localStorage.getItem('vocab_last_date');
             if (lastDate && lastDate !== todayStr) {

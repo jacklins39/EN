@@ -18,17 +18,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261025V10"></script>
-    <script src="toeic_data.js?v=20261025V10"></script>
-    <script src="jh_data.js?v=20261025V10"></script>
-    <script src="listening_data.js?v=20261025V10"></script>
-    <script src="words_audio_manifest.js?v=20261025V10"></script>
-    <script src="examples_audio_manifest.js?v=20261025V10"></script>
-    <script src="zh_audio_manifest.js?v=20261025V10"></script>
-    <script src="collocations_audio_manifest.js?v=20261025V10"></script>
-    <script src="syn_ant_data.js?v=20261025V10"></script>
-    <script src="synonyms_unit8_data.js?v=20261025V10"></script>
-    <script src="examples_unit9_data.js?v=20261025V10"></script>
+    <script src="words_data.js?v=20261025V11"></script>
+    <script src="toeic_data.js?v=20261025V11"></script>
+    <script src="jh_data.js?v=20261025V11"></script>
+    <script src="listening_data.js?v=20261025V11"></script>
+    <script src="words_audio_manifest.js?v=20261025V11"></script>
+    <script src="examples_audio_manifest.js?v=20261025V11"></script>
+    <script src="zh_audio_manifest.js?v=20261025V11"></script>
+    <script src="collocations_audio_manifest.js?v=20261025V11"></script>
+    <script src="syn_ant_data.js?v=20261025V11"></script>
+    <script src="synonyms_unit8_data.js?v=20261025V11"></script>
+    <script src="examples_unit9_data.js?v=20261025V11"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -1237,9 +1237,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261025V10</span>
+                        <span id="app-version-display">版本 20261025V11</span>
                     </div>
-                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261025V10</p>
+                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261025V11</p>
                 </div>
             </div>
         </div>
@@ -3362,7 +3362,7 @@
             
             if (currentWord.example && currentWord.example.trim()) {
                 exampleContainer.classList.remove('hidden');
-                cardExample.innerHTML = renderClickableSentence(cleanText(currentWord.example));
+                cardExample.innerHTML = renderClickableSentence(cleanText(currentWord.example), currentWord.en);
                 cardExampleZh.innerText = cleanText(currentWord.exampleZh) || '';
             } else {
                 exampleContainer.classList.add('hidden');
@@ -4348,15 +4348,19 @@
                 if (exampleId && typeof window.EXAMPLES_AUDIO_MANIFEST !== 'undefined' && window.EXAMPLES_AUDIO_MANIFEST.has(Number(exampleId))) {
                     wordAudioPlayer.src = `audio/examples/${exampleId}.mp3`;
                     wordAudioPlayer.playbackRate = globalSpeechRate;
-                    attachCallback(wordAudioPlayer, () => playOnlineAudioStream(clean, onEndedCallback));
+                    attachCallback(wordAudioPlayer, () => speakViaSynthesisOrTTS(clean, onEndedCallback));
                     const p = wordAudioPlayer.play();
                     if (p && typeof p.catch === 'function') {
                         p.catch(e => {
                             if (e && (e.name === 'AbortError' || e.code === 20)) return;
-                            console.warn("Local example audio play error:", e);
-                            playOnlineAudioStream(clean, onEndedCallback);
+                            console.warn("Local example audio play error, fallback to TTS:", e);
+                            speakViaSynthesisOrTTS(clean, onEndedCallback);
                         });
                     }
+                    return;
+                } else if (!isWordCall && clean.includes(' ')) {
+                    // 若為例句且本地尚未快取音檔，直接以瀏覽器原生神經聲線朗讀，零等待零延遲
+                    speakViaSynthesisOrTTS(clean, onEndedCallback);
                     return;
                 }
 
@@ -4615,13 +4619,28 @@
         function renderClickableSentence(sentence, targetEn = '') {
             if (!sentence) return '';
             const clean = cleanText(sentence);
-            const focusTarget = String(targetEn || (currentWord && currentWord.en) || '').toLowerCase().trim();
+            const focusTarget = String(targetEn || (currentWord && currentWord.en) || '').toLowerCase().trim().replace(/['".,!?]/g, '');
             const focusLemma = focusTarget ? resolveBaseLemma(focusTarget) : '';
+
+            // 分詞：切分單字，自然相容連字號複合詞 (如 ill-fitting 切為 ill 與 fitting)
             return clean.replace(/\b([a-zA-Z]+(?:'[a-zA-Z]+)?)\b/g, (match) => {
                 const cleanWord = match.toLowerCase().replace(/['".,!?]/g, '');
-                const isTarget = focusTarget && (cleanWord === focusTarget || (focusLemma && resolveBaseLemma(cleanWord) === focusLemma));
+                
+                // 多重比對邏輯：精確相同、詞幹相同、或前綴包含 (如 discern/discerns, irate/irately)
+                let isTarget = false;
+                if (focusTarget) {
+                    if (cleanWord === focusTarget) {
+                        isTarget = true;
+                    } else if (focusLemma && (resolveBaseLemma(cleanWord) === focusLemma || cleanWord === focusLemma)) {
+                        isTarget = true;
+                    } else if (focusTarget.length >= 4 && cleanWord.length >= 4 && (cleanWord.startsWith(focusTarget) || focusTarget.startsWith(cleanWord))) {
+                        isTarget = true;
+                    }
+                }
+
+                // 標記樣式：目標生詞以亮眼天藍色圓角底色+加粗+底線醒目標註
                 const styleClass = isTarget
-                    ? 'text-[#0071E3] font-bold border-b border-[#0071E3]/40'
+                    ? 'text-[#0071E3] font-black bg-blue-100/80 px-1 py-0.5 rounded border-b-2 border-[#0071E3] shadow-2xs'
                     : 'text-slate-700 hover:text-[#0071E3] border-b border-dotted border-slate-300 hover:border-[#0071E3]';
                 return `<span class="dict-word cursor-pointer ${styleClass} transition-colors" data-word="${cleanWord}">${match}</span>`;
             });
@@ -6069,7 +6088,7 @@
                             <span>聆聽整句發音</span>
                         </button>
                     </div>
-                    <p class="text-gray-800 text-sm leading-relaxed mb-1 font-medium" id="detail-card-example">${renderClickableSentence(w.example)}</p>
+                    <p class="text-gray-800 text-sm leading-relaxed mb-1 font-medium" id="detail-card-example">${renderClickableSentence(w.example, w.en)}</p>
                     <p class="text-gray-500 text-xs">${esc(w.exampleZh || '')}</p>
                 </div>
             ` : '';

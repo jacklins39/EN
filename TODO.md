@@ -55,3 +55,9 @@
   2. **例句**：Edge-TTS Jenny Neural 高音質 MP3，存入 `audio/examples/{id}.mp3`，並同步更新 `examples_audio_manifest.js`。
   3. **中文釋義**：HsiaoChen 台灣女聲 MP3，存入 `audio/zh/{id}.mp3`，並同步更新 `zh_audio_manifest.js`。
   4. **聽力短文/句子**：存入 `audio/listening/`，保持離線 100% 可播放。
+
+## 雙音標規範 (美式 KK + 英式 Oxford IPA - 永續執行)
+- [x] **英美雙音標標準配置**：
+  1. **美式音標 (KK)**：維持台灣課綱標準美式 KK 音標，記錄於各單字物件之 `kk` 欄位。
+  2. **英式音標 (Oxford IPA)**：爬取 Yahoo 奇摩字典（Oxford 牛津中文字典權威英式 IPA），全量建立 `uk_phonetics_manifest.js` 索引庫，並在資料庫寫入 `uk` 欄位。
+  3. **前端視覺連動**：卡片正反面均呈現 `[美] [ˋwɔtɚ]  [英] /ˈwɔːtə(r)/` 雙膠囊徽章；當播放美音女聲時，美式徽章亮藍發光；當播放英音男聲時，英式徽章亮紫發光。

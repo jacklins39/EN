@@ -9,7 +9,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261025V17';
+        const APP_BUILD_VERSION = '20261025V18';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -30,17 +30,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261025V17"></script>
-    <script src="toeic_data.js?v=20261025V17"></script>
-    <script src="jh_data.js?v=20261025V17"></script>
-    <script src="listening_data.js?v=20261025V17"></script>
-    <script src="words_audio_manifest.js?v=20261025V17"></script>
-    <script src="examples_audio_manifest.js?v=20261025V17"></script>
-    <script src="zh_audio_manifest.js?v=20261025V17"></script>
-    <script src="collocations_audio_manifest.js?v=20261025V17"></script>
-    <script src="syn_ant_data.js?v=20261025V17"></script>
-    <script src="synonyms_unit8_data.js?v=20261025V17"></script>
-    <script src="examples_unit9_data.js?v=20261025V17"></script>
+    <script src="words_data.js?v=20261025V18"></script>
+    <script src="toeic_data.js?v=20261025V18"></script>
+    <script src="jh_data.js?v=20261025V18"></script>
+    <script src="listening_data.js?v=20261025V18"></script>
+    <script src="uk_phonetics_manifest.js?v=20261025V18"></script>
+    <script src="words_audio_manifest.js?v=20261025V18"></script>
+    <script src="examples_audio_manifest.js?v=20261025V18"></script>
+    <script src="zh_audio_manifest.js?v=20261025V18"></script>
+    <script src="collocations_audio_manifest.js?v=20261025V18"></script>
+    <script src="syn_ant_data.js?v=20261025V18"></script>
+    <script src="synonyms_unit8_data.js?v=20261025V18"></script>
+    <script src="examples_unit9_data.js?v=20261025V18"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -759,14 +760,34 @@
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-7 sm:w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
                         </button>
                         <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#1D1D1F] mb-0.5 tracking-tight break-all" id="card-word">Apple</h2>
-                        <p class="text-gray-400 font-mono text-sm sm:text-base mb-1" id="card-kk">/ˈæpəl/</p>
+                        <!-- 雙音標展示 (🇺🇸 美式 KK / 🇬🇧 英式牛津 IPA - 雙標並列、連動發音高亮) -->
+                        <div class="flex items-center justify-center gap-2 font-mono text-xs sm:text-sm my-1 flex-wrap" id="card-phonetic-row">
+                            <span id="card-phonetic-us" class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-blue-50/90 text-blue-700 border border-blue-200/60 font-medium transition-all" title="美式 KK 音標">
+                                <span class="text-[10px] font-sans font-bold text-blue-500">美</span>
+                                <span id="card-kk">/ˈæpəl/</span>
+                            </span>
+                            <span id="card-phonetic-uk" class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-purple-50/90 text-purple-700 border border-purple-200/60 font-medium transition-all" title="英式牛津音標 (Yahoo 字典)">
+                                <span class="text-[10px] font-sans font-bold text-purple-500">英</span>
+                                <span id="card-uk">/ˈæpl/</span>
+                            </span>
+                        </div>
                         <p id="card-front-hint" class="text-gray-400 text-[11px] sm:text-xs mt-1">點擊卡片翻面看解答</p>
                     </div>
                     <!-- 背面 (中文與例句 - 支援完整滾動防截斷) -->
                     <div class="flip-card-back">
                         <div class="flex items-baseline justify-center gap-1.5 mb-0.5">
                             <h2 class="text-xl sm:text-2xl font-bold text-[#1D1D1F] break-all" id="card-word-back">Apple</h2>
-                            <span class="text-slate-400 font-mono text-xs" id="card-kk-back">/ˈæpəl/</span>
+                        </div>
+                        <!-- 背面雙音標展示 (🇺🇸 美式 KK / 🇬🇧 英式牛津 IPA) -->
+                        <div class="flex items-center justify-center gap-2 font-mono text-[11px] sm:text-xs mb-1.5 flex-wrap" id="card-phonetic-row-back">
+                            <span id="card-phonetic-us-back" class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-blue-50/90 text-blue-700 border border-blue-200/60 font-medium transition-all" title="美式 KK 音標">
+                                <span class="text-[9px] font-sans font-bold text-blue-500">美</span>
+                                <span id="card-kk-back">/ˈæpəl/</span>
+                            </span>
+                            <span id="card-phonetic-uk-back" class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-purple-50/90 text-purple-700 border border-purple-200/60 font-medium transition-all" title="英式牛津音標 (Yahoo 字典)">
+                                <span class="text-[9px] font-sans font-bold text-purple-500">英</span>
+                                <span id="card-uk-back">/ˈæpl/</span>
+                            </span>
                         </div>
                         <!-- 真人雙口音切換：美音女聲 / 英音男聲 -->
                         <div class="flex items-center justify-center gap-2 mb-1.5 shrink-0">
@@ -1284,9 +1305,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261025V17</span>
+                        <span id="app-version-display">版本 20261025V18</span>
                     </div>
-                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261025V17</p>
+                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261025V18</p>
                 </div>
             </div>
         </div>
@@ -3403,16 +3424,7 @@
                 actionShowAnswer.classList.remove('hidden');
             }
 
-            document.getElementById('card-kk').innerText = '...';
-            document.getElementById('card-kk-back').innerText = '...';
-
-            if (currentWord.kk) {
-                document.getElementById('card-kk').innerText = currentWord.kk;
-                document.getElementById('card-kk-back').innerText = currentWord.kk;
-            } else {
-                document.getElementById('card-kk').innerText = '';
-                document.getElementById('card-kk-back').innerText = '';
-            }
+            updateCardPhonetics(currentWord);
 
             applyFront();
 
@@ -3653,13 +3665,13 @@
                 const parsed = splitPosAndZh(w.zh, w.pos);
                 wordEl.className = mid; 
                 wordEl.innerText = parsed.pureZh; 
-                kkEl.innerText = '';
+                const rf = document.getElementById('card-phonetic-row'); if (rf) rf.style.display = 'none';
                 hintEl.innerHTML = parsed.pos ? `<span class="inline-block bg-blue-50 text-[#0071E3] border border-blue-200 text-xs px-2 py-0.5 rounded-full font-mono mr-1.5">${parsed.pos}</span> 看中文 ➜ 選出英文` : '看中文 ➜ 選出英文';
                 audioBtn.classList.add('hidden');
             } else if (t === 'listen') {
                 wordEl.className = 'text-5xl mb-2 font-mono';
                 wordEl.innerText = '🎧 🔊';
-                kkEl.innerText = '';
+                const rf = document.getElementById('card-phonetic-row'); if (rf) rf.style.display = 'none';
                 hintEl.innerText = '盲聽辨音 ➜ 選出正確單字 (可點音訊重播)';
                 setTimeout(() => {
                     if (currentQuizType === 'listen' && currentWord && currentWord.en) {
@@ -3670,7 +3682,7 @@
                 const parsed = splitPosAndZh(w.zh, w.pos);
                 wordEl.className = mid; 
                 wordEl.innerText = parsed.pureZh; 
-                kkEl.innerText = '';
+                const rf = document.getElementById('card-phonetic-row'); if (rf) rf.style.display = 'none';
                 hintEl.innerHTML = parsed.pos ? `<span class="inline-block bg-blue-50 text-[#0071E3] border border-blue-200 text-xs px-2 py-0.5 rounded-full font-mono mr-1.5">${parsed.pos}</span> 看中文 ➜ 鍵盤輸入英文拼寫` : '看中文 ➜ 鍵盤輸入英文拼寫';
                 audioBtn.classList.add('hidden');
             } else if (t === 'card') {
@@ -3806,7 +3818,7 @@
                         // 盲聽題：卡片正面由 🎧 🔊 瞬間揭曉為真實英文單字、KK 音標與中文釋義
                         wordEl.className = 'text-5xl font-extrabold text-[#1D1D1F] mb-1 tracking-tight break-all';
                         wordEl.innerText = currentWord.en;
-                        kkEl.innerText = currentWord.kk || '';
+                        updateCardPhonetics(currentWord);
                         hintEl.innerHTML = `<span class="${isCorrect ? 'text-green-600' : 'text-red-500'} font-semibold text-base inline-flex items-center gap-1.5 flex-wrap"><span>${isCorrect ? '✅' : '❌'} 正確解答：</span>${curCapsulesHtml}</span>`;
                         if (audioBtn) audioBtn.classList.remove('hidden');
                     } else if (currentQuizType === 'zh2en') {
@@ -4334,7 +4346,74 @@
         }
 
         // 卡片背面雙口音膠囊按鈕狀態動態高亮 (播放美音亮藍、播放英音亮紫、靜止時並列精緻顯示)
+        
+        // 雙音標動態渲染與顯示 (美式 KK / 英式 Oxford IPA)
+        function updateCardPhonetics(wordObj) {
+            const w = wordObj || currentWord || {};
+            const kk = w.kk || '';
+            const cleanEn = (w.en || '').trim().toLowerCase();
+            const uk = w.uk || (window.UK_PHONETICS_MANIFEST && window.UK_PHONETICS_MANIFEST[cleanEn]) || '';
+
+            // Front elements
+            const kkEl = document.getElementById('card-kk');
+            const ukEl = document.getElementById('card-uk');
+            const badgeUs = document.getElementById('card-phonetic-us');
+            const badgeUk = document.getElementById('card-phonetic-uk');
+            const rowFront = document.getElementById('card-phonetic-row');
+
+            if (kkEl) kkEl.innerText = kk;
+            if (ukEl) ukEl.innerText = uk;
+            if (badgeUs) badgeUs.style.display = kk ? 'inline-flex' : 'none';
+            if (badgeUk) badgeUk.style.display = uk ? 'inline-flex' : 'none';
+            if (rowFront) rowFront.style.display = (kk || uk) ? 'flex' : 'none';
+
+            // Back elements
+            const kkBackEl = document.getElementById('card-kk-back');
+            const ukBackEl = document.getElementById('card-uk-back');
+            const badgeUsBack = document.getElementById('card-phonetic-us-back');
+            const badgeUkBack = document.getElementById('card-phonetic-uk-back');
+            const rowBack = document.getElementById('card-phonetic-row-back');
+
+            if (kkBackEl) kkBackEl.innerText = kk;
+            if (ukBackEl) ukBackEl.innerText = uk;
+            if (badgeUsBack) badgeUsBack.style.display = kk ? 'inline-flex' : 'none';
+            if (badgeUkBack) badgeUkBack.style.display = uk ? 'inline-flex' : 'none';
+            if (rowBack) rowBack.style.display = (kk || uk) ? 'flex' : 'none';
+
+            updatePhoneticHighlight(null);
+        }
+
+        // 音標播放高亮連動 (播放美音高亮美式音標，播放英音高亮英式音標)
+        function updatePhoneticHighlight(accent = null) {
+            const badgeUs = document.getElementById('card-phonetic-us');
+            const badgeUk = document.getElementById('card-phonetic-uk');
+            const badgeUsBack = document.getElementById('card-phonetic-us-back');
+            const badgeUkBack = document.getElementById('card-phonetic-uk-back');
+
+            const baseUs = 'inline-flex items-center gap-1 px-2 py-0.5 rounded-md transition-all font-medium border ';
+            const baseUk = 'inline-flex items-center gap-1 px-2 py-0.5 rounded-md transition-all font-medium border ';
+            const baseUsBack = 'inline-flex items-center gap-1 px-1.5 py-0.5 rounded transition-all font-medium border ';
+            const baseUkBack = 'inline-flex items-center gap-1 px-1.5 py-0.5 rounded transition-all font-medium border ';
+
+            if (accent === 'us') {
+                if (badgeUs) badgeUs.className = baseUs + 'bg-blue-100 text-blue-900 border-blue-400 ring-2 ring-blue-300 font-bold scale-105 shadow-xs';
+                if (badgeUsBack) badgeUsBack.className = baseUsBack + 'bg-blue-100 text-blue-900 border-blue-400 ring-2 ring-blue-300 font-bold scale-105 shadow-xs';
+                if (badgeUk) badgeUk.className = baseUk + 'bg-slate-50 text-slate-400 border-slate-200 opacity-60';
+                if (badgeUkBack) badgeUkBack.className = baseUkBack + 'bg-slate-50 text-slate-400 border-slate-200 opacity-60';
+            } else if (accent === 'uk') {
+                if (badgeUk) badgeUk.className = baseUk + 'bg-purple-100 text-purple-900 border-purple-400 ring-2 ring-purple-300 font-bold scale-105 shadow-xs';
+                if (badgeUkBack) badgeUkBack.className = baseUkBack + 'bg-purple-100 text-purple-900 border-purple-400 ring-2 ring-purple-300 font-bold scale-105 shadow-xs';
+                if (badgeUs) badgeUs.className = baseUs + 'bg-slate-50 text-slate-400 border-slate-200 opacity-60';
+                if (badgeUsBack) badgeUsBack.className = baseUsBack + 'bg-slate-50 text-slate-400 border-slate-200 opacity-60';
+            } else {
+                if (badgeUs) badgeUs.className = baseUs + 'bg-blue-50/90 text-blue-700 border-blue-200/60 hover:bg-blue-100';
+                if (badgeUsBack) badgeUsBack.className = baseUsBack + 'bg-blue-50/90 text-blue-700 border-blue-200/60 hover:bg-blue-100';
+                if (badgeUk) badgeUk.className = baseUk + 'bg-purple-50/90 text-purple-700 border-purple-200/60 hover:bg-purple-100';
+                if (badgeUkBack) badgeUkBack.className = baseUkBack + 'bg-purple-50/90 text-purple-700 border-purple-200/60 hover:bg-purple-100';
+            }
+        }
         function updateCardVoiceButtonsHighlight(activePlayingAccent = null) {
+            updatePhoneticHighlight(activePlayingAccent);
             const btnUs = document.getElementById('btn-card-voice-us');
             const btnUk = document.getElementById('btn-card-voice-uk');
             if (!btnUs || !btnUk) return;

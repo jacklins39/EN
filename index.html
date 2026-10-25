@@ -18,17 +18,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261025V11"></script>
-    <script src="toeic_data.js?v=20261025V11"></script>
-    <script src="jh_data.js?v=20261025V11"></script>
-    <script src="listening_data.js?v=20261025V11"></script>
-    <script src="words_audio_manifest.js?v=20261025V11"></script>
-    <script src="examples_audio_manifest.js?v=20261025V11"></script>
-    <script src="zh_audio_manifest.js?v=20261025V11"></script>
-    <script src="collocations_audio_manifest.js?v=20261025V11"></script>
-    <script src="syn_ant_data.js?v=20261025V11"></script>
-    <script src="synonyms_unit8_data.js?v=20261025V11"></script>
-    <script src="examples_unit9_data.js?v=20261025V11"></script>
+    <script src="words_data.js?v=20261025V13"></script>
+    <script src="toeic_data.js?v=20261025V13"></script>
+    <script src="jh_data.js?v=20261025V13"></script>
+    <script src="listening_data.js?v=20261025V13"></script>
+    <script src="words_audio_manifest.js?v=20261025V13"></script>
+    <script src="examples_audio_manifest.js?v=20261025V13"></script>
+    <script src="zh_audio_manifest.js?v=20261025V13"></script>
+    <script src="collocations_audio_manifest.js?v=20261025V13"></script>
+    <script src="syn_ant_data.js?v=20261025V13"></script>
+    <script src="synonyms_unit8_data.js?v=20261025V13"></script>
+    <script src="examples_unit9_data.js?v=20261025V13"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -756,6 +756,15 @@
                             <h2 class="text-xl sm:text-2xl font-bold text-[#1D1D1F] break-all" id="card-word-back">Apple</h2>
                             <span class="text-slate-400 font-mono text-xs" id="card-kk-back">/ˈæpəl/</span>
                         </div>
+                        <!-- 真人雙口音切換：美音女聲 / 英音男聲 -->
+                        <div class="flex items-center justify-center gap-2 mb-1.5 shrink-0">
+                            <button type="button" id="btn-card-voice-us" class="px-2.5 py-0.5 rounded-full text-xs font-bold flex items-center gap-1 cursor-pointer transition-all active:scale-95 shadow-2xs border bg-blue-50 text-[#0071E3] border-blue-300 ring-2 ring-blue-400/30" title="真人美音 (女聲)">
+                                <span>🇺🇸 美音 👩</span>
+                            </button>
+                            <button type="button" id="btn-card-voice-uk" class="px-2.5 py-0.5 rounded-full text-xs font-bold flex items-center gap-1 cursor-pointer transition-all active:scale-95 shadow-2xs border bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200" title="真人英音 (男聲)">
+                                <span>🇬🇧 英音 👨</span>
+                            </button>
+                        </div>
                         <div class="flex items-center justify-center gap-1 mb-1.5 max-w-full px-1">
                             <span id="card-pos-badge" class="hidden"></span>
                             <div class="cursor-pointer text-center text-slate-700 font-semibold text-sm sm:text-[15px] leading-snug" id="card-translation" title="點擊朗讀中文釋義">n. 蘋果</div>
@@ -1191,6 +1200,22 @@
 
                     <div class="w-full flex items-center justify-between p-4 bg-white border-0 border-gray-200 rounded-2xl hover:bg-[#F5F5F7] transition-colors mb-4">
                         <div class="flex items-center gap-3">
+                            <div class="p-2 bg-indigo-50 text-indigo-600 rounded-xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z" /></svg>
+                            </div>
+                            <div class="text-left">
+                                <h3 class="font-semibold text-[#1D1D1F]">單字預設發音口音</h3>
+                                <p class="text-xs text-[#86868B]">真實母語錄音：美音女聲 vs 英音男聲</p>
+                            </div>
+                        </div>
+                        <select id="setting-voice-accent" aria-label="設定單字預設發音口音" class="bg-[#F5F5F7] border-0 border-gray-300 text-gray-700 text-sm rounded-xl focus:ring-[#0071E3] focus:border-[#0071E3] block p-2 outline-none cursor-pointer">
+                            <option value="us" selected>🇺🇸 美音 (真人女聲)</option>
+                            <option value="uk">🇬🇧 英音 (真人男聲)</option>
+                        </select>
+                    </div>
+
+                    <div class="w-full flex items-center justify-between p-4 bg-white border-0 border-gray-200 rounded-2xl hover:bg-[#F5F5F7] transition-colors mb-4">
+                        <div class="flex items-center gap-3">
                             <div class="p-2 bg-blue-50 text-[#0071E3] rounded-xl">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z" /></svg>
                             </div>
@@ -1237,9 +1262,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261025V11</span>
+                        <span id="app-version-display">版本 20261025V13</span>
                     </div>
-                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261025V11</p>
+                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261025V13</p>
                 </div>
             </div>
         </div>
@@ -3305,6 +3330,7 @@
 
             document.getElementById('card-word').innerText = currentWord.en;
             document.getElementById('card-word-back').innerText = currentWord.en;
+            updateCardVoiceButtonsHighlight();
             
             // 解析詞性與純中文：卡片背面全單字（無論單詞性或多詞性）全面統一為精緻膠囊與一致字體
             const parsed = splitPosAndZh(currentWord.zh, currentWord.pos);
@@ -4242,6 +4268,167 @@
             }
         }
 
+        // 取得 / 設定使用者偏好的發音口音 ('us' 美音女聲 / 'uk' 英音男聲)
+        function getPreferredVoiceAccent() {
+            const saved = localStorage.getItem('preferred_voice_accent');
+            return (saved === 'uk' || saved === 'us') ? saved : 'us';
+        }
+
+        function setPreferredVoiceAccent(accent) {
+            if (accent === 'uk' || accent === 'us') {
+                localStorage.setItem('preferred_voice_accent', accent);
+                const sel = document.getElementById('setting-voice-accent');
+                if (sel) sel.value = accent;
+                updateCardVoiceButtonsHighlight();
+            }
+        }
+
+        // 卡片背面雙口音膠囊按鈕狀態高亮
+        function updateCardVoiceButtonsHighlight(activePlayingAccent = null) {
+            const btnUs = document.getElementById('btn-card-voice-us');
+            const btnUk = document.getElementById('btn-card-voice-uk');
+            if (!btnUs || !btnUk) return;
+
+            const preferred = getPreferredVoiceAccent();
+            const active = activePlayingAccent || preferred;
+
+            const baseClass = 'px-2.5 py-0.5 rounded-full text-xs font-bold flex items-center gap-1 cursor-pointer transition-all active:scale-95 shadow-2xs border ';
+
+            if (active === 'us') {
+                btnUs.className = baseClass + 'bg-blue-50 text-[#0071E3] border-blue-300 ring-2 ring-blue-400/30 font-extrabold';
+                btnUk.className = baseClass + 'bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200';
+            } else {
+                btnUk.className = baseClass + 'bg-indigo-50 text-indigo-700 border-indigo-300 ring-2 ring-indigo-400/30 font-extrabold';
+                btnUs.className = baseClass + 'bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200';
+            }
+        }
+
+        // 真人雙口音單字發音 (1: 🇬🇧 英音男聲, 2: 🇺🇸 美音女聲)
+        function playWordAccent(word, accent = null, onEndedCallback) {
+            if (!word) {
+                if (typeof onEndedCallback === 'function') onEndedCallback();
+                return;
+            }
+            try {
+                unlockMobileAudio();
+                const clean = cleanText(word).trim();
+                if (!clean) {
+                    if (typeof onEndedCallback === 'function') onEndedCallback();
+                    return;
+                }
+                const cleanLower = clean.toLowerCase();
+                const targetAccent = (accent === 'uk' || accent === 'us') ? accent : getPreferredVoiceAccent();
+                const typeCode = (targetAccent === 'uk') ? 1 : 2; // 1 = 🇬🇧 英音男聲, 2 = 🇺🇸 美音女聲
+
+                try {
+                    wordAudioPlayer.pause();
+                    wordAudioPlayer.currentTime = 0;
+                } catch(e) {}
+
+                const attachCallback = (audioEl, fallbackFn) => {
+                    clearAudioCallbacks();
+                    let called = false;
+                    const done = () => {
+                        if (called) return;
+                        called = true;
+                        clearAudioCallbacks();
+                        if (typeof onEndedCallback === 'function') onEndedCallback();
+                    };
+                    const onError = (e) => {
+                        if (called) return;
+                        if (audioEl && audioEl.error && audioEl.error.code === 20) return;
+                        called = true;
+                        clearAudioCallbacks();
+                        if (typeof fallbackFn === 'function') fallbackFn();
+                        else if (typeof onEndedCallback === 'function') onEndedCallback();
+                    };
+                    currentAudioDoneHandler = done;
+                    audioEl.addEventListener('ended', done, { once: true });
+                    audioEl.addEventListener('error', onError, { once: true });
+                    audioFallbackTimerId = setTimeout(done, 10000);
+                };
+
+                const fallbackToSpeechSynthesis = () => {
+                    speakWordViaSynthesis(clean, targetAccent, onEndedCallback);
+                };
+
+                // 優先使用線上真人母語錄音串流 (有道原聲：1 英音男聲 / 2 美音女聲)
+                const youdaoUrl = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(cleanLower)}&type=${typeCode}`;
+                wordAudioPlayer.src = youdaoUrl;
+                wordAudioPlayer.playbackRate = globalSpeechRate;
+                attachCallback(wordAudioPlayer, fallbackToSpeechSynthesis);
+                const p = wordAudioPlayer.play();
+                if (p && typeof p.catch === 'function') {
+                    p.catch(e => {
+                        if (e && (e.name === 'AbortError' || e.code === 20)) return;
+                        console.warn('Youdao voice playback error, fallback to synthesis:', e);
+                        fallbackToSpeechSynthesis();
+                    });
+                }
+            } catch(e) {
+                console.warn('playWordAccent error:', e);
+                speakWordViaSynthesis(word, accent || getPreferredVoiceAccent(), onEndedCallback);
+            }
+        }
+
+        // 瀏覽器原生語音合成備援 (針對口音自動指派 英音男聲 / 美音女聲)
+        function speakWordViaSynthesis(text, accent, onEndedCallback) {
+            if (!('speechSynthesis' in window) || !text) {
+                if (typeof onEndedCallback === 'function') onEndedCallback();
+                return;
+            }
+            clearAudioCallbacks();
+            try { window.speechSynthesis.cancel(); } catch(e) {}
+            const clean = cleanText(text).trim();
+            const utterance = new SpeechSynthesisUtterance(clean);
+            utterance.rate = globalSpeechRate;
+            window._activeSpeechUtterance = utterance;
+
+            const isUk = (accent === 'uk');
+            utterance.lang = isUk ? 'en-GB' : 'en-US';
+
+            try {
+                const voices = window.speechSynthesis.getVoices() || [];
+                if (voices.length > 0) {
+                    let bestVoice = null;
+                    if (isUk) {
+                        bestVoice = voices.find(v => {
+                            const l = v.lang.replace('_', '-').toLowerCase();
+                            return l.startsWith('en-gb') && /george|oliver|ryan|male|guy/i.test(v.name);
+                        }) || voices.find(v => v.lang.replace('_', '-').toLowerCase().startsWith('en-gb'))
+                           || voices.find(v => /uk|british/i.test(v.name));
+                    } else {
+                        bestVoice = voices.find(v => {
+                            const l = v.lang.replace('_', '-').toLowerCase();
+                            return l.startsWith('en-us') && /jenny|zira|samantha|female|natural/i.test(v.name);
+                        }) || voices.find(v => v.lang.replace('_', '-').toLowerCase().startsWith('en-us'));
+                    }
+                    if (bestVoice) utterance.voice = bestVoice;
+                }
+            } catch(e) {}
+
+            let called = false;
+            const done = () => {
+                if (called) return;
+                called = true;
+                window._activeSpeechUtterance = null;
+                if (audioFallbackTimerId) {
+                    clearTimeout(audioFallbackTimerId);
+                    audioFallbackTimerId = null;
+                }
+                if (typeof onEndedCallback === 'function') onEndedCallback();
+            };
+            utterance.onend = done;
+            utterance.onerror = done;
+            audioFallbackTimerId = setTimeout(done, 10000);
+
+            try {
+                window.speechSynthesis.speak(utterance);
+            } catch(e) {
+                done();
+            }
+        }
+
         // 智慧選取瀏覽器最高等級真人神經聲線 (微軟 Jenny Natural 或 Google US English)
         function getBestNeuralVoice() {
             if (!('speechSynthesis' in window)) return null;
@@ -4364,34 +4551,11 @@
                     return;
                 }
 
-                // 2. 若本機已收錄真人神經單字庫 (包含所有原形與動詞三態變化形 asked, asking, asks 等)
-                const cleanUnderscore = cleanLower.replace(/[/\\:*?"<>|\s]+/g, '_').replace(/_+/g, '_').replace(/^_|_$/g, '');
-                const matchedWordKey = (typeof window.WORDS_AUDIO_MANIFEST !== 'undefined') ? (
-                    window.WORDS_AUDIO_MANIFEST.has(cleanLower) ? cleanLower : (
-                        window.WORDS_AUDIO_MANIFEST.has(cleanUnderscore) ? cleanUnderscore : null
-                    )
-                ) : null;
-
-                if (matchedWordKey) {
-                    wordAudioPlayer.src = `audio/words/${encodeURIComponent(matchedWordKey)}.mp3`;
-                    wordAudioPlayer.playbackRate = globalSpeechRate;
-                    attachCallback(wordAudioPlayer, () => playOnlineAudioStream(clean, onEndedCallback));
-                    const p = wordAudioPlayer.play();
-                    if (p && typeof p.catch === 'function') {
-                        p.catch(e => {
-                            if (e && (e.name === 'AbortError' || e.code === 20)) return;
-                            console.warn("Local word audio play error:", e);
-                            playOnlineAudioStream(clean, onEndedCallback);
-                        });
-                    }
-                    return;
-                }
-
-                // 3. 備援：線上真人發音串流 (手機端 100% 可播放：Youdao 優先 + Google 美式 TTS 備援)
-                playOnlineAudioStream(clean, onEndedCallback);
+                // 2. 單字發音：全面使用真實母語人聲 (美音女聲 / 英音男聲，依偏好口音設定播放)
+                playWordAccent(clean, getPreferredVoiceAccent(), onEndedCallback);
             } catch(e) {
                 console.warn('playAudio error:', e);
-                playOnlineAudioStream(text, onEndedCallback);
+                playWordAccent(text, getPreferredVoiceAccent(), onEndedCallback);
             }
         }
 
@@ -4458,6 +4622,24 @@
             e.stopPropagation();
             unlockMobileAudio();
             if (currentWord && currentWord.en) playAudio(currentWord.en);
+        });
+
+        document.getElementById('btn-card-voice-us')?.addEventListener('click', (e) => {
+            e.stopPropagation();
+            unlockMobileAudio();
+            if (currentWord && currentWord.en) {
+                updateCardVoiceButtonsHighlight('us');
+                playWordAccent(currentWord.en, 'us');
+            }
+        });
+
+        document.getElementById('btn-card-voice-uk')?.addEventListener('click', (e) => {
+            e.stopPropagation();
+            unlockMobileAudio();
+            if (currentWord && currentWord.en) {
+                updateCardVoiceButtonsHighlight('uk');
+                playWordAccent(currentWord.en, 'uk');
+            }
         });
 
         // ==========================================
@@ -4605,6 +4787,15 @@
         };
         document.getElementById('card-translation')?.addEventListener('click', handleSpeakZhClick);
         document.getElementById('btn-speak-zh')?.addEventListener('click', handleSpeakZhClick);
+
+        // 設定：單字預設發音口音
+        const settingVoiceAccentEl = document.getElementById('setting-voice-accent');
+        if (settingVoiceAccentEl) {
+            settingVoiceAccentEl.value = getPreferredVoiceAccent();
+            settingVoiceAccentEl.addEventListener('change', (e) => {
+                setPreferredVoiceAccent(e.target.value);
+            });
+        }
 
         // 設定：翻牌朗讀中文開關
         const settingSpeakZhEl = document.getElementById('setting-speak-zh');
@@ -6118,12 +6309,14 @@
                             ${parsed.pos ? `<span class="text-xs font-bold px-2 py-0.5 rounded-md bg-blue-100 text-blue-800 uppercase tracking-wider">${esc(parsed.pos)}</span>` : ''}
                         </div>
                     </div>
-                    <div class="flex items-center gap-1.5 shrink-0">
-                        <button id="btn-detail-audio-word" type="button" class="p-2 text-white bg-[#0071E3] hover:bg-[#0077ED] rounded-xl shadow-sm hover:scale-105 active:scale-95 transition-all cursor-pointer flex items-center gap-1 text-xs font-semibold" title="朗讀發音">
-                            <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd" /></svg>
-                            <span>發音</span>
+                    <div class="flex items-center gap-1.5 shrink-0 flex-wrap justify-end">
+                        <button id="btn-detail-audio-us" type="button" class="px-2.5 py-1.5 rounded-xl font-bold text-xs flex items-center gap-1 shadow-2xs transition-all active:scale-95 cursor-pointer ${getPreferredVoiceAccent() === 'us' ? 'bg-[#0071E3] text-white ring-2 ring-blue-300 font-extrabold' : 'bg-blue-50 text-[#0071E3] border border-blue-200 hover:bg-blue-100'}" title="真人美音 (女聲)">
+                            <span>🇺🇸 美音 👩</span>
                         </button>
-                        <button id="btn-detail-audio-slow" type="button" class="p-2 text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-xl transition-all cursor-pointer text-xs font-medium" title="慢速朗讀 (0.75x)">
+                        <button id="btn-detail-audio-uk" type="button" class="px-2.5 py-1.5 rounded-xl font-bold text-xs flex items-center gap-1 shadow-2xs transition-all active:scale-95 cursor-pointer ${getPreferredVoiceAccent() === 'uk' ? 'bg-indigo-600 text-white ring-2 ring-indigo-300 font-extrabold' : 'bg-slate-100 text-slate-700 border border-slate-200 hover:bg-slate-200'}" title="真人英音 (男聲)">
+                            <span>🇬🇧 英音 👨</span>
+                        </button>
+                        <button id="btn-detail-audio-slow" type="button" class="p-1.5 text-gray-600 bg-gray-100 hover:bg-gray-200 rounded-xl transition-all cursor-pointer text-xs font-medium" title="慢速朗讀 (0.75x)">
                             <span>🐢 慢速</span>
                         </button>
                     </div>
@@ -6150,20 +6343,24 @@
                 ${externalDictHtml}
             `;
 
-            // 事件綁定：音訊播放
-            document.getElementById('btn-detail-audio-word')?.addEventListener('click', () => {
+            // 事件綁定：音訊播放 (支援美音女聲 / 英音男聲 / 慢速)
+            document.getElementById('btn-detail-audio-us')?.addEventListener('click', () => {
                 unlockMobileAudio();
-                playAudio(w.en);
+                playWordAccent(w.en, 'us');
+            });
+            document.getElementById('btn-detail-audio-uk')?.addEventListener('click', () => {
+                unlockMobileAudio();
+                playWordAccent(w.en, 'uk');
             });
             document.getElementById('btn-detail-audio-slow')?.addEventListener('click', () => {
                 unlockMobileAudio();
                 if ('speechSynthesis' in window) {
                     const u = new SpeechSynthesisUtterance(w.en);
-                    u.lang = 'en-US';
+                    u.lang = getPreferredVoiceAccent() === 'uk' ? 'en-GB' : 'en-US';
                     u.rate = 0.75;
                     window.speechSynthesis.speak(u);
                 } else {
-                    playAudio(w.en);
+                    playWordAccent(w.en, getPreferredVoiceAccent());
                 }
             });
 

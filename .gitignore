@@ -3,3 +3,6 @@ __pycache__/
 *$py.class
 .DS_Store
 Thumbs.db
+
+crawler_progress.log
+syn_ant_checkpoint.json

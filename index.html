@@ -26,6 +26,7 @@
     <script src="examples_audio_manifest.js?v=20261025V6"></script>
     <script src="zh_audio_manifest.js?v=20261025V6"></script>
     <script src="collocations_audio_manifest.js?v=20261025V6"></script>
+    <script src="syn_ant_data.js?v=20261025V6"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -5275,6 +5276,20 @@
             const result = [];
             const seen = new Set([rawW, baseW]);
 
+            // 0. Yahoo / Oxford 權威落地字典庫優先
+            if (typeof SYN_ANT_DB !== 'undefined') {
+                const dbEntry = SYN_ANT_DB[rawW] || SYN_ANT_DB[baseW];
+                if (dbEntry && Array.isArray(dbEntry.syn)) {
+                    for (const s of dbEntry.syn) {
+                        const sLower = s.toLowerCase();
+                        if (!seen.has(sLower)) {
+                            seen.add(sLower);
+                            result.push(s);
+                        }
+                    }
+                }
+            }
+
             // 1. 核心精選同義詞庫優先
             const coreList = CORE_WORD_SYNONYMS[rawW] || CORE_WORD_SYNONYMS[baseW];
             if (coreList && Array.isArray(coreList)) {
@@ -5717,7 +5732,34 @@
         function getWordAntonyms(word) {
             const rawW = (word || '').trim().toLowerCase();
             const baseW = resolveBaseLemma(rawW);
-            return (CORE_WORD_ANTONYMS[rawW] || CORE_WORD_ANTONYMS[baseW] || []).slice(0, 4);
+            const result = [];
+            const seen = new Set([rawW, baseW]);
+
+            // 0. Yahoo / Oxford 權威落地字典庫優先
+            if (typeof SYN_ANT_DB !== 'undefined') {
+                const dbEntry = SYN_ANT_DB[rawW] || SYN_ANT_DB[baseW];
+                if (dbEntry && Array.isArray(dbEntry.ant)) {
+                    for (const a of dbEntry.ant) {
+                        const aLower = a.toLowerCase();
+                        if (!seen.has(aLower)) {
+                            seen.add(aLower);
+                            result.push(a);
+                        }
+                    }
+                }
+            }
+
+            // 1. 精選核心反義詞
+            const coreList = CORE_WORD_ANTONYMS[rawW] || CORE_WORD_ANTONYMS[baseW] || [];
+            for (const a of coreList) {
+                const aLower = a.toLowerCase();
+                if (!seen.has(aLower)) {
+                    seen.add(aLower);
+                    result.push(a);
+                }
+            }
+
+            return result.slice(0, 4);
         }
 
         function getUnitBadgeInfo(unit) {
@@ -5826,7 +5868,8 @@
             const collocations = getWordCollocations(w.en, w);
             const synonyms = getWordSynonyms(w.en, w);
             const antonyms = getWordAntonyms(w.en);
-            const coreSynSet = new Set((CORE_WORD_SYNONYMS[w.en.toLowerCase()] || CORE_WORD_SYNONYMS[resolveBaseLemma(w.en.toLowerCase())] || []).map(s => s.toLowerCase()));
+            const yahooSynList = (typeof SYN_ANT_DB !== 'undefined' && (SYN_ANT_DB[w.en.toLowerCase()]?.syn || SYN_ANT_DB[resolveBaseLemma(w.en.toLowerCase())]?.syn)) || [];
+            const coreSynSet = new Set([...(CORE_WORD_SYNONYMS[w.en.toLowerCase()] || CORE_WORD_SYNONYMS[resolveBaseLemma(w.en.toLowerCase())] || []).map(s => s.toLowerCase()), ...yahooSynList.map(s => s.toLowerCase())]);
             const unitInfo = isExternal ? { name: '外部查詢', color: 'bg-purple-50 text-purple-700 border-purple-200' } : getUnitBadgeInfo(w.unit || builtinUnitOf(w.en) || 1);
 
             // 更新彈窗頂部來源徽章

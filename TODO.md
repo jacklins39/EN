@@ -47,3 +47,11 @@
   4. **機械占位例句**：`0 筆`（無 `This is a / an...` 或 `I have a...` 之機械重複造句）
   5. **格式或英文殘留**：`0 筆`（無反斜線跳脫字元、引號殘留或未翻譯英文殘留）
 
+
+
+## 專案音訊規範 (硬性標準 - 永續執行)
+- [x] **全內容實體 MP3 政策**：專案嚴禁依賴瀏覽器機械 TTS。未來所有新增單字、生活例句、聽力短文或短句，**一律必須生成實體 MP3 音訊檔**並推送到倉庫：
+  1. **單字 (雙真人口音)**：美音女聲存至 `audio/words/us/{word}.mp3`、英音男聲存至 `audio/words/uk/{word}.mp3`，並同步更新 `words_audio_manifest.js`。
+  2. **例句**：Edge-TTS Jenny Neural 高音質 MP3，存入 `audio/examples/{id}.mp3`，並同步更新 `examples_audio_manifest.js`。
+  3. **中文釋義**：HsiaoChen 台灣女聲 MP3，存入 `audio/zh/{id}.mp3`，並同步更新 `zh_audio_manifest.js`。
+  4. **聽力短文/句子**：存入 `audio/listening/`，保持離線 100% 可播放。

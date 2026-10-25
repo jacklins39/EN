@@ -7,3 +7,4 @@ Thumbs.db
 crawler_progress.log
 syn_ant_checkpoint.json
 missing_synonyms_list.json
+round2_missing_words.json

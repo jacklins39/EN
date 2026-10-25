@@ -1,7 +1,7 @@
 /**
- * 高中 7000 單字擴充單元 - 單元 8 (權威相近詞特訓庫)
- * 收錄不在原有 1~7 單元之高頻大考核心同義詞，共 891 筆
- * 產生時間: 2026-10-25 19:09:55
+ * 高中 7000 單字擴充單元 - 單元 8 (權威同反義詞特訓庫)
+ * 完整收錄牛津與 Yahoo 字典全部同義詞與反義詞，共 1091 筆
+ * 產生時間: 2026-10-25 19:24:13
  */
 const synUnit8WordsDB = [
   {
@@ -8022,6 +8022,1806 @@ const synUnit8WordsDB = [
     "unit": 8,
     "example": "He tried to learn how to use the word vaporescent correctly.",
     "exampleZh": "他試著學習如何正確使用「vaporescent」這個單字。"
+  },
+  {
+    "id": 7892,
+    "en": "unafraid",
+    "kk": "[ˌʌnəˈfreɪd]",
+    "zh": "adj. 不怕的，無畏的",
+    "unit": 8,
+    "example": "She was unafraid of conflict.",
+    "exampleZh": "她不怕發生衝突。"
+  },
+  {
+    "id": 7893,
+    "en": "unimportant",
+    "kk": "[ˌʌnɪmˈpɔːrt(ə)nt]",
+    "zh": "adj. 不重要的，無關緊要的，瑣碎的",
+    "unit": 8,
+    "example": "This consideration was not unimportant.",
+    "exampleZh": "這項考慮並非無關緊要。"
+  },
+  {
+    "id": 7894,
+    "en": "uncertain",
+    "kk": "[ənˋsɝtən]",
+    "zh": "adj. 不確定的",
+    "unit": 8,
+    "example": "The economic climate remains uncertain.",
+    "exampleZh": "經濟氣候依然是不確定。"
+  },
+  {
+    "id": 7895,
+    "en": "careless",
+    "kk": "[ˋkɛrləs]",
+    "zh": "adj. 粗心的",
+    "unit": 8,
+    "example": "She had been inexcusably careless.",
+    "exampleZh": "她曾粗心大意得不可原諒。"
+  },
+  {
+    "id": 7896,
+    "en": "extravagant",
+    "kk": "[ɪkˈstrævəɡənt]",
+    "zh": "adj. 奢侈的，揮霍的；不切實際的，放肆的；豪華的，精美的",
+    "unit": 8,
+    "example": "She's got very extravagant tastes.",
+    "exampleZh": "她有很奢侈的嗜好。"
+  },
+  {
+    "id": 7897,
+    "en": "inattentive",
+    "kk": "[ˌɪnəˈtentɪv]",
+    "zh": "adj. 疏忽的，怠慢的，不注意的",
+    "unit": 8,
+    "example": "Boredom has been linked to behavior issues including inattentive driving, mindless snacking, excessive drinking, and addictive gambling.",
+    "exampleZh": "無聊感與諸多行為問題相關，包括分心駕駛、無意識進食、過度飲酒以及賭博成癮。"
+  },
+  {
+    "id": 7898,
+    "en": "living",
+    "kk": "[ˈlɪvɪŋ]",
+    "zh": "adj. 活著的，活的；在使用的，在實施的；居住的，起居的；<文>（水）流淌不息的；活躍的；逼真的；n. 生計，收入；生活方式；活著的人（the living）；教區牧師的聖職（聖俸）；v. 居住；生活；生長；繼續存在（live 的現在分詞形式）；【名】 （Living）（英）利文（人名）",
+    "unit": 8,
+    "example": "Whereabouts are you living?",
+    "exampleZh": "你居住的確切地點是哪裡？"
+  },
+  {
+    "id": 7899,
+    "en": "uneasy",
+    "kk": "[ʌnˈiːzi]",
+    "zh": "adj. 擔憂的，不安的；令人不舒服的，不安穩的；（情況）不穩定的；（書或音樂）難懂的，晦澀的；不和諧的，矛盾的",
+    "unit": 8,
+    "example": "Mollie gave an uneasy little titter.",
+    "exampleZh": "莫莉不自在地微微竊笑了一下。"
+  },
+  {
+    "id": 7900,
+    "en": "streetwise",
+    "kk": "[ˈstriːtwaɪz]",
+    "zh": "adj. 適應都市生活的，在城市街頭混得開的，有街頭生存智慧的",
+    "unit": 8,
+    "example": "They are two streetwise and sassy girls from Queens.",
+    "exampleZh": "她們是兩個來自皇后區的精明潑辣的女孩。"
+  },
+  {
+    "id": 7901,
+    "en": "chaste",
+    "kk": "[tʃeɪst]",
+    "zh": "adj. 純潔的；貞潔的；有道德的；樸素的；n. （Chaste）人名；（法）沙斯特",
+    "unit": 8,
+    "example": "Patriarchal culture and institutions constructed them as chaste, silent, obedient, and subordinate.",
+    "exampleZh": "父權文化和制度把她們塑造成貞潔、沉默、順從和低下的人。"
+  },
+  {
+    "id": 7902,
+    "en": "accommodating",
+    "kk": "[əˈkɑːmədeɪtɪŋ]",
+    "zh": "adj. 樂於助人的；肯通融的；隨和的，溫順的；v. 容納；為……提供住宿；使適應；調節（accommodate 的現在分詞）",
+    "unit": 8,
+    "example": "Eddie was among the most approachable athletes on the team, always very accommodating to me.",
+    "exampleZh": "艾迪是隊裡最容易接近的運動員之一，總是很樂於幫助我。"
+  },
+  {
+    "id": 7903,
+    "en": "trustworthy",
+    "kk": "[ˈtrʌstwɜːrði]",
+    "zh": "adj. 值得信賴的，可信的",
+    "unit": 8,
+    "example": "He is a trustworthy and level-headed leader.",
+    "exampleZh": "他是個可信賴的、頭腦冷靜的領導。"
+  },
+  {
+    "id": 7904,
+    "en": "experienced",
+    "kk": "[ɪkˈspɪriənst]",
+    "zh": "adj. 熟練的，有經驗的；v. 經歷，遭遇；體會到，感受到（experience 的過去式和過去分詞形式）",
+    "unit": 8,
+    "example": "She's an experienced rider.",
+    "exampleZh": "她是位有經驗的騎手。"
+  },
+  {
+    "id": 7905,
+    "en": "processed",
+    "kk": "[ˈprɑːsest]",
+    "zh": "adj. 經過特殊加工的，精製的；v. 加工（食品或其他物質）；處理（文件、要求等）；（計算機）處理（數據）（process 的過去式和過去分詞）",
+    "unit": 8,
+    "example": "Our sales information is processed by computer.",
+    "exampleZh": "我們的銷售信息是用計算機處理的。"
+  },
+  {
+    "id": 7906,
+    "en": "tired",
+    "kk": "[ˋtaɪɚd]",
+    "zh": "adj. 疲倦的",
+    "unit": 8,
+    "example": "He looked tired and dishevelled.",
+    "exampleZh": "他衣冠不整，顯得很疲倦。"
+  },
+  {
+    "id": 7907,
+    "en": "dismayed",
+    "kk": "[dɪsˈmeɪd]",
+    "zh": "adj. 擔心的，失望沮喪的，驚愕的；v. 使灰心沮喪，使驚慌害怕（dismay 的過去式及過去分詞）",
+    "unit": 8,
+    "example": "They were dismayed to find that the ferry had already left.",
+    "exampleZh": "他們發現渡船已經離開，感到很失望。"
+  },
+  {
+    "id": 7908,
+    "en": "unwilling",
+    "kk": "[ʌnˈwɪlɪŋ]",
+    "zh": "adj. 不願意的，不情願的（不想做某事，常作表語後接不定式 to do）；勉強的（並非出於自願，多作定語）",
+    "unit": 8,
+    "example": "She is tough, unwilling to take no for an answer.",
+    "exampleZh": "她很難對付，不答應不肯罷休。"
+  },
+  {
+    "id": 7909,
+    "en": "unwelcome",
+    "kk": "[ʌnˈwelkəm]",
+    "zh": "adj. 不受歡迎的，討厭的，不被接受的",
+    "unit": 8,
+    "example": "A most unwelcome event claimed his attention.",
+    "exampleZh": "一件最討厭的事情需要他去考慮。"
+  },
+  {
+    "id": 7910,
+    "en": "distressing",
+    "kk": "[dɪˈstresɪŋ]",
+    "zh": "adj. 令人痛苦的，使人悲傷的，令人煩惱的；v. distress 的現在分詞（動名詞）：使痛苦，使憂慮，使困苦",
+    "unit": 8,
+    "example": "She witnessed some very distressing scenes.",
+    "exampleZh": "她目睹過一些令人非常痛苦的場面。"
+  },
+  {
+    "id": 7911,
+    "en": "unfortunate",
+    "kk": "[ʌnˈfɔːrtʃənət]",
+    "zh": "adj. 不幸的，倒黴的；令人遺憾的，不適當的，尷尬的；不成功的，不利的；<委婉>（指人）生活窮困的，境遇艱難的；n. 不幸的人，苦命人（常用複數）",
+    "unit": 8,
+    "example": "It was an unfortunate accident.",
+    "exampleZh": "那是一次不幸的事故。"
+  },
+  {
+    "id": 7912,
+    "en": "wispy",
+    "kk": "[ˈwɪspi]",
+    "zh": "adj. 纖細的，稀疏的，一縷縷的；瘦弱的，脆弱的；模糊的，隱約的",
+    "unit": 8,
+    "example": "NASA says that white wispy cirrus clouds on Earth are made of ice crystals.",
+    "exampleZh": "美國航天局說，在地球上稀薄的白色捲雲是由冰晶所組成的。"
+  },
+  {
+    "id": 7913,
+    "en": "friable",
+    "kk": "[ˈfraɪəbl]",
+    "zh": "adj. 易碎的，脆弱的；（土壤）疏鬆的，鬆散易碎的",
+    "unit": 8,
+    "example": "You friable shore with trails of debris.",
+    "exampleZh": "易脆的岸散殘跡。"
+  },
+  {
+    "id": 7914,
+    "en": "dispassionate",
+    "kk": "[dɪsˈpæʃənət]",
+    "zh": "adj. 不帶感情的，平心靜氣的，冷靜客觀的；公平的，不偏不倚的，不帶偏見的",
+    "unit": 8,
+    "example": "We, as prosecutors, try to be dispassionate about the cases we bring.",
+    "exampleZh": "我們作為公訴人儘量在經手的案件上不帶偏見。"
+  },
+  {
+    "id": 7915,
+    "en": "inessential",
+    "kk": "[ˌɪnɪˈsenʃl]",
+    "zh": "adj. 非必要的，無關緊要的；n. 非必要之物，無關緊要的東西（常用複數）",
+    "unit": 8,
+    "example": "We have omitted footnotes which we judged inessential to the text.",
+    "exampleZh": "我們省去了我們認為和正文無關緊要的腳註。"
+  },
+  {
+    "id": 7916,
+    "en": "irrelevant",
+    "kk": "[͵ɪrˋɛləvənt]",
+    "zh": "adj. 不相干的",
+    "unit": 8,
+    "example": "A lot of nit-picking was going on about irrelevant things.",
+    "exampleZh": "對不相干的事情一直大肆吹毛求疵。"
+  },
+  {
+    "id": 7917,
+    "en": "insignificant",
+    "kk": "[͵ɪnsɪˋɡnjɪfɪkənt]",
+    "zh": "adj. 不重要的",
+    "unit": 8,
+    "example": "In 1949 Bonn was a small, insignificant city.",
+    "exampleZh": "1949年，波恩還是個不足稱道的小城市。"
+  },
+  {
+    "id": 7918,
+    "en": "unlucky",
+    "kk": "[ʌnˈlʌki]",
+    "zh": "adj. 不幸的，不走運的，倒黴的；不吉利的，招致厄運的",
+    "unit": 8,
+    "example": "He was very unlucky not to win.",
+    "exampleZh": "他不幸輸了。"
+  },
+  {
+    "id": 7919,
+    "en": "unfavourable",
+    "kk": "[ʌnˈfeɪvərəbl]",
+    "zh": "adj. 不利的，不適宜的；反對的，不贊同的",
+    "unit": 8,
+    "example": "The conditions were unfavourable for agriculture.",
+    "exampleZh": "這些條件不利於農業。"
+  },
+  {
+    "id": 7920,
+    "en": "meagre",
+    "kk": "[ˈmiːɡər]",
+    "zh": "adj. 微薄的，不足的，貧乏的；瘦的，瘦削的",
+    "unit": 8,
+    "example": "She has moved to a small house and is living off her meagre savings.",
+    "exampleZh": "她搬進了一幢小房子，靠自己微薄的積蓄過日子。"
+  },
+  {
+    "id": 7921,
+    "en": "scanty",
+    "kk": "[ˈskænti]",
+    "zh": "adj. 少量的，不足的；（衣服）暴露的，緊（身）的；n. <非正式>女式小短褲（或襯褲）（scanties）",
+    "unit": 8,
+    "example": "The boy followed the old man, who commanded him to open the bag in which he carried his scanty dinner.",
+    "exampleZh": "男孩跟著老人，老人命令他打開袋子，袋子裡裝著他僅有的晚餐。"
+  },
+  {
+    "id": 7922,
+    "en": "unruffled",
+    "kk": "[ʌnˈrʌfld]",
+    "zh": "adj. 鎮定的，平靜的，不騷動的；（水面）無波紋的；平整的，未弄亂的，不起皺的；v. 使平整；變得平靜（unruffle 的過去分詞）",
+    "unit": 8,
+    "example": "He remained unruffled by their accusations.",
+    "exampleZh": "對於他們的指控他處之泰然。"
+  },
+  {
+    "id": 7923,
+    "en": "aristocracy",
+    "kk": "[ˌærɪˈstɑːkrəsi]",
+    "zh": "n. 貴族，貴族階級；貴族統治",
+    "unit": 8,
+    "example": "An \"aristocracy of virtue and talent\" thus could be recruited from all classes.",
+    "exampleZh": "因此，「德才兼備的貴族」可以從各個階層中招募。"
+  },
+  {
+    "id": 7924,
+    "en": "existing",
+    "kk": "[ɪɡˈzɪstɪŋ]",
+    "zh": "adj. 現存的，現行的；v. 存在，實有；生活，生活方式（exist 的現在分詞形式）",
+    "unit": 8,
+    "example": "Existing timbers are replaced or renewed.",
+    "exampleZh": "現有的木材在被替換或更新。"
+  },
+  {
+    "id": 7925,
+    "en": "hackneyed",
+    "kk": "[ˈhæknid]",
+    "zh": "adj. 〈貶〉（言語、說法、題材等）因過度使用而陳腐的，老套的，平庸的；v. 〈舊〉出租（馬匹、馬車等）；役使（hackney 的過去式和過去分詞）",
+    "unit": 8,
+    "example": "This article is rather hackneyed.",
+    "exampleZh": "這篇文章寫得太呆板。"
+  },
+  {
+    "id": 7926,
+    "en": "unpleasant",
+    "kk": "[ʌnˈplez(ə)nt]",
+    "zh": "adj. 令人不快的，不舒服的； 不友善的，不客氣的；使人生氣的，引發暴力的",
+    "unit": 8,
+    "example": "She thought he was an unpleasant man.",
+    "exampleZh": "她曾認為他是個令人不愉快的人。"
+  },
+  {
+    "id": 7927,
+    "en": "unreal",
+    "kk": "[ˌʌnˈriːəl]",
+    "zh": "adj. 不真實的，假的，虛構的；（指情況或經歷）離奇的，難以置信的；<非正式>極好的，絕妙的",
+    "unit": 8,
+    "example": "Almost all fictional detectives are unreal.",
+    "exampleZh": "幾乎所有小說裡的偵探都是虛構的。"
+  },
+  {
+    "id": 7928,
+    "en": "austere",
+    "kk": "[ɔːˈstɪr]",
+    "zh": "adj. 樸實的，質樸的；（人）嚴肅的，嚴厲的；（生活）簡樸的，苦行的；（開支）緊縮的，節制的",
+    "unit": 8,
+    "example": "The life of the troops was still comparatively austere.",
+    "exampleZh": "部隊生活相對而言仍然簡樸。"
+  },
+  {
+    "id": 7929,
+    "en": "demanding",
+    "kk": "[dɪˈmændɪŋ]",
+    "zh": "adj. 費時費力的；苛刻的，難以滿足的；v. 強烈要求；需要，需求（demand 的現在分詞形式）",
+    "unit": 8,
+    "example": "Ricky was a very demanding child.",
+    "exampleZh": "裡基是個非常苛求的孩子。"
+  },
+  {
+    "id": 7930,
+    "en": "complicated",
+    "kk": "[ˋkɑmplə͵ketəd]",
+    "zh": "adj. 複雜的；難懂的",
+    "unit": 8,
+    "example": "The instructions look very complicated.",
+    "exampleZh": "這說明書看起來很難懂。"
+  },
+  {
+    "id": 7931,
+    "en": "lurid",
+    "kk": "[ˈlʊrɪd]",
+    "zh": "adj. 可怕的，聳人聽聞的，駭人聽聞的；（顏色）刺眼的，俗豔的，華麗而庸俗的；（火光、天空等）火紅的，血紅的，火燒似的；（文語）慘白的，蒼白的",
+    "unit": 8,
+    "example": "She took care to paint her toe nails a lurid red or orange.",
+    "exampleZh": "她小心翼翼地把腳趾甲塗成豔麗的紅色或桔色。"
+  },
+  {
+    "id": 7932,
+    "en": "scruffy",
+    "kk": "[ˈskrʌfi]",
+    "zh": "adj. 邋遢的，破舊骯髒的，不整齊的",
+    "unit": 8,
+    "example": "For months, workers have been feverishly sprucing up Dili, Timor-Leste's scruffy capital.",
+    "exampleZh": "數月來，東帝汶的工人們忙著打扮其破舊的首都帝力。"
+  },
+  {
+    "id": 7933,
+    "en": "unfashionable",
+    "kk": "[ʌnˈfæʃnəbl]",
+    "zh": "adj. 過時的，不時髦的",
+    "unit": 8,
+    "example": "As an academic, it's my job to tell the truth, to explain the scientific evidence before us, irrespective of how unfashionable my conclusions are.",
+    "exampleZh": "作為一名學者，講真話、解釋擺在我們面前的科學證據是我的職責，無論我的結論多麼不受歡迎。"
+  },
+  {
+    "id": 7934,
+    "en": "downmarket",
+    "kk": "[ˌdaʊnˈmɑːrkɪt]",
+    "zh": "adj. 面向低收入人消費者的，低檔的，價廉質次的；adv. 面向低收入消費者地，低檔品市場地",
+    "unit": 8,
+    "example": "The company wants to break away from its downmarket image.",
+    "exampleZh": "這個公司想擺脫它面向低消費階層的形象。"
+  },
+  {
+    "id": 7935,
+    "en": "impossible",
+    "kk": "[͵ɪmˋpɑsəbəl]",
+    "zh": "adj. 不可能的",
+    "unit": 8,
+    "example": "Thick mist made flying impossible.",
+    "exampleZh": "濃霧使得無法飛行。"
+  },
+  {
+    "id": 7936,
+    "en": "unlikely",
+    "kk": "[ʌnˈlaɪkli]",
+    "zh": "adj. 不大可能發生的；未必真實的，難以相信的； 非心目中的，不大恰當的；不典型的；（兩個人或物）不般配的；adv. 未必",
+    "unit": 8,
+    "example": "A military coup seems unlikely.",
+    "exampleZh": "一場兵變似乎不太可能。"
+  },
+  {
+    "id": 7937,
+    "en": "unsympathetic",
+    "kk": "[ˌʌnˌsɪmpəˈθetɪk]",
+    "zh": "adj. 不表同情的，不同情的，無動於衷的；對…不支持的，不贊同的；（尤指文學或戲劇中的人物）不討人喜歡的，令人生厭的",
+    "unit": 8,
+    "example": "I hate to admit it, but he is unkind and unsympathetic to people.",
+    "exampleZh": "我討厭承認它，可是他對人真是不友好且沒有同情心。"
+  },
+  {
+    "id": 7938,
+    "en": "unrepentant",
+    "kk": "[ˌʌnrɪˈpentənt]",
+    "zh": "adj. 不後悔的，不感到羞愧的；頑固不化的，執迷不悟的",
+    "unit": 8,
+    "example": "Pamela was unrepentant about her strong language and abrasive remarks.",
+    "exampleZh": "帕梅拉對自己激烈粗暴的言論不感到羞愧。"
+  },
+  {
+    "id": 7939,
+    "en": "relaxed",
+    "kk": "[rɪˈlækst]",
+    "zh": "adj. 放鬆的，輕鬆的；舒適的，自在的；不加以拘束的，隨便的；（肌肉或其他身體部位）放鬆的；（頭髮）拉直的；（衣服）寬鬆的，肥大的；v. 休息，（使）放鬆；放心，鎮定；鬆開，（使）鬆弛（relax 的過去式和過去分詞）",
+    "unit": 8,
+    "example": "The alcohol warmed and relaxed him.",
+    "exampleZh": "這酒使他渾身發暖輕鬆起來。"
+  },
+  {
+    "id": 7940,
+    "en": "astute",
+    "kk": "[əˈstuːt]",
+    "zh": "adj. 精明的，機敏的，敏銳的；<貶>狡猾的，詭計多端的",
+    "unit": 8,
+    "example": "She was politically astute.",
+    "exampleZh": "她政治上很精明。"
+  },
+  {
+    "id": 7941,
+    "en": "prudent",
+    "kk": "[ˈpruːd(ə)nt]",
+    "zh": "adj. 謹慎的，慎重的；節儉的；【名】 （Prudent）（法）普呂當（人名）",
+    "unit": 8,
+    "example": "It is clearly prudent to take all precautions.",
+    "exampleZh": "採取一切防範措施顯然是慎重的。"
+  },
+  {
+    "id": 7942,
+    "en": "unconvincing",
+    "kk": "[ˌʌnkənˈvɪnsɪŋ]",
+    "zh": "adj. 令人難以信服的，令人懷疑的，沒有說服力的；不真實的",
+    "unit": 8,
+    "example": "I find the characters in the book very unconvincing.",
+    "exampleZh": "我覺得書中的人物很不真實。"
+  },
+  {
+    "id": 7943,
+    "en": "useless",
+    "kk": "[ˋjusləs]",
+    "zh": "adj. 無用的；無價值的",
+    "unit": 8,
+    "example": "It's useless worrying about it.",
+    "exampleZh": "為這事擔心無濟於事。"
+  },
+  {
+    "id": 7944,
+    "en": "disadvantageous",
+    "kk": "[ˌdɪsædvənˈteɪdʒəs]",
+    "zh": "adj. 不利的，有害的，不便的（常與 to 或 for 連用）",
+    "unit": 8,
+    "example": "The deal will not be disadvantageous to your company.",
+    "exampleZh": "這項交易不會對你公司不利。"
+  },
+  {
+    "id": 7945,
+    "en": "incompetent",
+    "kk": "[͵ɪnˋkɑmpətənt]",
+    "zh": "adj. 無能力的；不能勝任的",
+    "unit": 8,
+    "example": "He wants the power to fire incompetent employees.",
+    "exampleZh": "他希望有權解僱不稱職的僱員。"
+  },
+  {
+    "id": 7946,
+    "en": "convincing",
+    "kk": "[kənˈvɪnsɪŋ]",
+    "zh": "adj. 令人信服的，有說服力的；（勝利）輕鬆的，確定無疑的；v. 使確信，使信服；說服，勸服（convince 的現在分詞形式）",
+    "unit": 8,
+    "example": "Our greatest problem is convincing them.",
+    "exampleZh": "我們最重要的問題是說服他們。"
+  },
+  {
+    "id": 7947,
+    "en": "disallow",
+    "kk": "[ˌdɪsəˈlaʊ]",
+    "zh": "vt. 不准許，不允許，禁止；駁回，不接受，判為無效",
+    "unit": 8,
+    "example": "Disallow: /ignoring/human/orders",
+    "exampleZh": "不允許：/忽略/人類/命令"
+  },
+  {
+    "id": 7948,
+    "en": "demolish",
+    "kk": "[dɪˋmɑlɪʃ]",
+    "zh": "v. 毀壞；破壞",
+    "unit": 8,
+    "example": "He demolished the house.",
+    "exampleZh": "他拆毀了房子。"
+  },
+  {
+    "id": 7949,
+    "en": "restrained",
+    "kk": "[rɪˈstreɪnd]",
+    "zh": "adj. 剋制的，自制的；拘謹的，矜持的，內斂的；素淨的，不花哨的；受限制的，被約束的，被制止的；v. 抑制，控制；約束，制止（restrain 的過去式和過去分詞）",
+    "unit": 8,
+    "example": "Under the circumstances, he felt he'd been very restrained.",
+    "exampleZh": "在這種環境下，他覺得他一直很剋制。"
+  },
+  {
+    "id": 7950,
+    "en": "withhold",
+    "kk": "[wɪðˈhoʊld]",
+    "zh": "v. 保留，隱瞞，扣留；剋制，抑制（情感或反應等）",
+    "unit": 8,
+    "example": "It's never wise to withhold evidence.",
+    "exampleZh": "隱瞞證據絕不明智。"
+  },
+  {
+    "id": 7951,
+    "en": "disprove",
+    "kk": "[ˌdɪsˈpruːv]",
+    "zh": "vt. 反駁，證明……是虛假的",
+    "unit": 8,
+    "example": "This is almost impossible for the \"offender\" to disprove.",
+    "exampleZh": "這對於「違規者」來說幾乎是無法反駁的。"
+  },
+  {
+    "id": 7952,
+    "en": "unprepared",
+    "kk": "[ˌʌnprɪˈperd]",
+    "zh": "adj. 無準備的，尚未準備好的；即席的；不願意的",
+    "unit": 8,
+    "example": "These people are usually unable or unprepared to endure the long haul.",
+    "exampleZh": "這些人通常無法或沒有準備好忍受長期的艱難歷程。"
+  },
+  {
+    "id": 7953,
+    "en": "incomplete",
+    "kk": "[͵ɪnkəmˋplit]",
+    "zh": "adj. 不完全的；不完整的",
+    "unit": 8,
+    "example": "Spoken language contains many incomplete sentences.",
+    "exampleZh": "口語中有很多不完整的句子。"
+  },
+  {
+    "id": 7954,
+    "en": "disbelieve",
+    "kk": "[ˌdɪsbɪˈliːv]",
+    "zh": "v. 不相信，懷疑",
+    "unit": 8,
+    "example": "Why should I disbelieve her story?",
+    "exampleZh": "我為什麼要懷疑她的說法呢？"
+  },
+  {
+    "id": 7955,
+    "en": "accompanied",
+    "kk": "[əˈkʌmpənid]",
+    "zh": "v. 陪伴，伴隨；伴奏（accompany 的過去分詞）；adj. 伴隨的；相伴的",
+    "unit": 8,
+    "example": "His wife accompanied him on the trip.",
+    "exampleZh": "那次旅行他由妻子陪同。"
+  },
+  {
+    "id": 7956,
+    "en": "loved",
+    "kk": "[lʌvd]",
+    "zh": "v. 愛，熱愛（love 的過去式和過去分詞）；adj. 受珍愛的，被愛的，心愛的（常作定語，如 loved ones 親人）",
+    "unit": 8,
+    "example": "Pat has always loved gardening.",
+    "exampleZh": "帕特一直喜愛園藝。"
+  },
+  {
+    "id": 7957,
+    "en": "wanted",
+    "kk": "[ˈwɑːntɪd]",
+    "zh": "adj. 被警方追捕的，被通緝的；為人渴望和喜愛的，受人照料的；v. 需要；想要，希望；（用於提出建議）應該（want 的過去式和過去分詞形式）",
+    "unit": 8,
+    "example": "He wanted more hard evidence.",
+    "exampleZh": "他想要更多確鑿的證據。"
+  },
+  {
+    "id": 7958,
+    "en": "losing",
+    "kk": "[ˈluːzɪŋ]",
+    "zh": "n. 失敗，失利；損失，喪失；adj. 輸的，失敗的；虧損的；導致失敗的；v. 失去；損失（lose 的 ing 形式）；錯過；輸掉",
+    "unit": 8,
+    "example": "I'm terrified of losing you.",
+    "exampleZh": "我真害怕失去你。"
+  },
+  {
+    "id": 7959,
+    "en": "undress",
+    "kk": "[ʌnˈdres]",
+    "zh": "v. 使脫衣服；使卸去裝飾；把（傷口上的）敷料拿開；n. 裸體；（別於禮服）軍便服；adj. 便服的",
+    "unit": 8,
+    "example": "We stagger from our rooms in various states of undress to the sound of fire engines screaming round the corner, guaranteeing we are all wide awake.",
+    "exampleZh": "我們衣衫不整地從各自房間裡搖搖晃晃走出來，消防車在拐角處呼嘯而過的聲響，把我們全都徹底弄醒了。"
+  },
+  {
+    "id": 7960,
+    "en": "reappear",
+    "kk": "[ˌriːəˈpɪr]",
+    "zh": "vi. 再次出現，重新出現，再現",
+    "unit": 8,
+    "example": "If these silent genes are somehow switched back on, they argued, long-lost traits could reappear.",
+    "exampleZh": "他們認為，如果這些沉默的基因以某種方式被重新激活，長期丟失的性狀可能會重新出現。"
+  },
+  {
+    "id": 7961,
+    "en": "interesting",
+    "kk": "[ˋɪntrəstɪŋ]",
+    "zh": "adj. 有趣的",
+    "unit": 8,
+    "example": "Did you go anywhere interesting?",
+    "exampleZh": "你去過任何有趣的地方嗎？"
+  },
+  {
+    "id": 7962,
+    "en": "resonant",
+    "kk": "[ˈrezənənt]",
+    "zh": "adj. （聲音）洪亮的，渾厚迴響的；共振的，諧振的（用於物理學、電子學、聲學等技術語境）；引起共鳴的，意味深長的（比喻用法）",
+    "unit": 8,
+    "example": "His voice sounded oddly resonant in the empty room.",
+    "exampleZh": "他的聲音在空房間裡聽起來奇特地洪亮。"
+  },
+  {
+    "id": 7963,
+    "en": "conceited",
+    "kk": "[kənˈsiːtɪd]",
+    "zh": "adj. 自負的，驕傲自大的",
+    "unit": 8,
+    "example": "Slightly is the most conceited of the boys.",
+    "exampleZh": "斯萊特利是這些男孩中最自負的。"
+  },
+  {
+    "id": 7964,
+    "en": "worsen",
+    "kk": "[ˈwɜːrs(ə)n]",
+    "zh": "v. （使）惡化，（使）更糟",
+    "unit": 8,
+    "example": "We were worried that one tiny jolt could worsen her injuries.",
+    "exampleZh": "我們擔心一次輕微的顛簸都可能加劇她的傷情。"
+  },
+  {
+    "id": 7965,
+    "en": "disobey",
+    "kk": "[ˌdɪsəˈbeɪ]",
+    "zh": "v. 不服從，違抗，違反",
+    "unit": 8,
+    "example": "To question or disobey the law is tantamount to destroying the authority of the law.",
+    "exampleZh": "質疑或違抗法律就等同於摧毀法律的權威。"
+  },
+  {
+    "id": 7966,
+    "en": "defy",
+    "kk": "[dɪˋfaɪ]",
+    "zh": "v. 公然反抗；蔑視",
+    "unit": 8,
+    "example": "We had to defy them whatever the cost.",
+    "exampleZh": "我們必須不惜一切代價反抗他們。"
+  },
+  {
+    "id": 7967,
+    "en": "disorganize",
+    "kk": "[dɪsˈɔːrɡəˌnaɪz]",
+    "zh": "vt. 擾亂；瓦解；使……混亂；破壞組織",
+    "unit": 8,
+    "example": "Calamity use to discontinue the peace process of social life and disorganize the normal movement of social orderliness.",
+    "exampleZh": "災害中止社會生活的和平進程、瓦解社會秩序的正常運轉。"
+  },
+  {
+    "id": 7968,
+    "en": "detract",
+    "kk": "[dɪˈtrækt]",
+    "zh": "vi. 減損，降低，使遜色（常與 from 連用）；貶低；vt. 轉移，使分心（罕用，現代英語通常用 distract）",
+    "unit": 8,
+    "example": "There is a view that using celebrities can detract people from the problems at hand.",
+    "exampleZh": "有觀點認為，利用名人可以轉移人們對當前問題的注意力。"
+  },
+  {
+    "id": 7969,
+    "en": "mediocre",
+    "kk": "[͵midiˋokɚ]",
+    "zh": "adj. 中等的；平凡的",
+    "unit": 8,
+    "example": "I thought the play was only mediocre.",
+    "exampleZh": "我認為這部戲劇只是平庸之作。"
+  },
+  {
+    "id": 7970,
+    "en": "plump",
+    "kk": "[plʌmp]",
+    "zh": "adj. 胖乎乎的，豐滿的；圓鼓鼓的，又大又圓的；v. 使更軟，使更圓（plump up）；（隨意地）放置；（隨意地）坐下，躺下；專意於，特意選定（plump for）；重重（或不拘禮節）地放下，丟下；adv. 突然地，重重地；直接地；n. <古>突然前衝，重重墜落；一群；【名】 （Plump）（美、英）普倫普（人名）",
+    "unit": 8,
+    "example": "He pushed a plump little hand toward me.",
+    "exampleZh": "他向我伸出一隻胖乎乎的小手。"
+  },
+  {
+    "id": 7971,
+    "en": "dissatisfy",
+    "kk": "[ˈdɪssætɪsˌfaɪ]",
+    "zh": "v. 使不滿，使失望",
+    "unit": 8,
+    "example": "You have the ability to either satisfy or dissatisfy them when you contact them.",
+    "exampleZh": "在和他們接觸時，你既可以讓他們感到滿意，也可能讓他們感到不滿。"
+  },
+  {
+    "id": 7972,
+    "en": "flop",
+    "kk": "[flɑːp]",
+    "zh": "v. （尤指疲勞時）撲通坐下，猛然倒下；（沉重、笨拙或不自主地）落下，懸掛；<非正式>（書、戲劇、電影等）砸鍋，完全失敗；<非正式>（在指定地點）休息，睡覺；<非正式>（籃球運動中）假摔；n. <非正式>（書、戲劇、電影等）失敗；撲通聲，重墜聲；<非正式，美>廉價旅館，便宜棲身處；adv. 正好地，恰巧地",
+    "unit": 8,
+    "example": "Lisa Kudrow has seen her career flop since Friends.",
+    "exampleZh": "在《老友記》播出後，麗莎·庫卓的演藝事業曾遭遇滑鐵盧。"
+  },
+  {
+    "id": 7973,
+    "en": "renounce",
+    "kk": "[rɪˈnaʊns]",
+    "zh": "v. 聲明放棄，拋棄；<法律>（尤指繼承人或受託人）放棄（權利或地位）；拒絕承認，拒絕遵守；宣佈與……斷絕關係，宣佈摒棄",
+    "unit": 8,
+    "example": "Not everyone who seeks to renounce their citizenship does so for tax reasons.",
+    "exampleZh": "並不是所有放棄國籍的人都是因為稅收的原因。"
+  },
+  {
+    "id": 7974,
+    "en": "abdicate",
+    "kk": "[ˈæbdɪkeɪt]",
+    "zh": "v. 退位；放棄（責任），失（職）；放棄",
+    "unit": 8,
+    "example": "King Juan Carlos of Spain once insisted \"kings don't abdicate, they die in their sleep\".",
+    "exampleZh": "西班牙國王胡安卡洛斯曾堅稱：「國王們沒有退位，他們在睡夢中去世了。」"
+  },
+  {
+    "id": 7975,
+    "en": "retard",
+    "kk": "[rɪˈtɑːrd]",
+    "zh": "v. <正式>阻礙，減緩；減慢，受到阻滯；n. <非正式>弱智，笨蛋；延遲，阻止",
+    "unit": 8,
+    "example": "Others are spraying trees with a chemical to retard growth.",
+    "exampleZh": "另一些人則往樹上噴灑化學藥劑以延緩其生長。"
+  },
+  {
+    "id": 7976,
+    "en": "inability",
+    "kk": "[͵ɪnəˋbɪlɪti]",
+    "zh": "n. 無能；無力",
+    "unit": 8,
+    "example": "Her inability to concentrate could cause an accident.",
+    "exampleZh": "她無法集中注意力可能會導致意外。"
+  },
+  {
+    "id": 7977,
+    "en": "incapacity",
+    "kk": "[ˌɪnkəˈpæsəti]",
+    "zh": "n. <正式>無能力，無能，無力；（法律）無行為能力，無法律資格",
+    "unit": 8,
+    "example": "She returned to work after a long period of incapacity.",
+    "exampleZh": "她病了很長一段時間之後回去工作了。"
+  },
+  {
+    "id": 7978,
+    "en": "defence",
+    "kk": "[dɪˈfens]",
+    "zh": "n. 防禦，防禦物；國防；辯護，答辯；辯方，辯護律師；防守隊員，後衛；衛冕；v. 防禦，防守",
+    "unit": 8,
+    "example": "Defence of the realm is crucial.",
+    "exampleZh": "王國的防禦是至關重要的。"
+  },
+  {
+    "id": 7979,
+    "en": "occupied",
+    "kk": "[ˋɑkjə͵paɪd]",
+    "zh": "adj. 佔用的；在使用的",
+    "unit": 8,
+    "example": "He occupied himself with packing the car.",
+    "exampleZh": "他忙於裝那輛車。"
+  },
+  {
+    "id": 7980,
+    "en": "disembark",
+    "kk": "[dɪsɛmˋbɑrk]",
+    "zh": "v. 登陸；上岸",
+    "unit": 8,
+    "example": "Seven second-class passengers prepared to disembark.",
+    "exampleZh": "7名二等艙的旅客準備下船了。"
+  },
+  {
+    "id": 7981,
+    "en": "dunce",
+    "kk": "[dʌns]",
+    "zh": "n. 傻瓜，笨人，劣學生",
+    "unit": 8,
+    "example": "Michael may have been a dunce at mathematics, but he was gifted at languages.",
+    "exampleZh": "邁克爾在數學方面可能是個笨學生，但他在語言方面是有天賦的。"
+  },
+  {
+    "id": 7982,
+    "en": "misrepresent",
+    "kk": "[ˌmɪsˌreprɪˈzent]",
+    "zh": "vt. 歪曲，誤傳；篡改，偽造（數據、文件等）；不恰當地代表（某人或某群體）；vi. 作失實陳述；歪曲報道",
+    "unit": 8,
+    "example": "It's a shame the way the media can twist your words and misrepresent you.",
+    "exampleZh": "媒體歪曲人們的話語及誤傳人們的本意的作風是可恥的。"
+  },
+  {
+    "id": 7983,
+    "en": "elongate",
+    "kk": "[ɪˈlɔːŋɡeɪt]",
+    "zh": "vt. 拉長，使延長，使伸長；vi. 拉長，延長，伸長；adj. 細長的，伸長的，延長的",
+    "unit": 8,
+    "example": "Uvala is a large elongate sinkhole resulting from enlargement.",
+    "exampleZh": "灰巖幹谷是由於擴大而形成的一個大的拉長的天坑。"
+  },
+  {
+    "id": 7984,
+    "en": "relinquish",
+    "kk": "[rɪˈlɪŋkwɪʃ]",
+    "zh": "v. <正式>（尤指不情願地）放棄，交出（權力、職位等）；<正式>（不情願地）鬆開",
+    "unit": 8,
+    "example": "He does not intend to relinquish power.",
+    "exampleZh": "他不打算放棄權力。"
+  },
+  {
+    "id": 7985,
+    "en": "uncooperative",
+    "kk": "[ˌʌnkoʊˈɑːpərətɪv]",
+    "zh": "adj. 不合作的，不配合的；（指天氣、環境等）不作美的，不利的",
+    "unit": 8,
+    "example": "She became uncooperative: unwilling to do her homework or help with any household chores.",
+    "exampleZh": "她變得不合作起來：不願做作業或是幫助分擔家務。"
+  },
+  {
+    "id": 7986,
+    "en": "adventurous",
+    "kk": "[ædˈventʃərəs]",
+    "zh": "adj. 勇於冒險的，敢於創新的；愛冒險的；刺激不斷的，充滿驚險的；新奇的，令人興奮的",
+    "unit": 8,
+    "example": "Warren was an adventurous businessman.",
+    "exampleZh": "沃倫是一位有冒險精神的商人。"
+  },
+  {
+    "id": 7987,
+    "en": "materialize",
+    "kk": "[məˈtɪriəlaɪz]",
+    "zh": "v. 實現，成為現實；突然顯現，奇怪地出現",
+    "unit": 8,
+    "example": "Their much vaunted reforms did not materialize.",
+    "exampleZh": "他們大肆吹噓的改革並沒有實現。"
+  },
+  {
+    "id": 7988,
+    "en": "untidy",
+    "kk": "[ʌnˈtaɪdi]",
+    "zh": "adj. 不整潔的，凌亂的，不整齊的；（指人）邋遢的，不修邊幅的，懶散的；不乾淨利落的，不簡練的；v. 使不整潔，弄亂，使雜亂無章",
+    "unit": 8,
+    "example": "My room looks very untidy.",
+    "exampleZh": "我的房間看起來很不整潔。"
+  },
+  {
+    "id": 7989,
+    "en": "disorganized",
+    "kk": "[dɪsˈɔːrɡənaɪzd]",
+    "zh": "adj. 雜亂無章的，無計劃的；（人）無條理的",
+    "unit": 8,
+    "example": "His study folder is badly disorganized.",
+    "exampleZh": "他的學習文件夾非常雜亂。"
+  },
+  {
+    "id": 7990,
+    "en": "slacken",
+    "kk": "[ˈslækən]",
+    "zh": "vi. 鬆勁，懈怠；變緩慢，減弱，減輕；（繩、抓握等）變鬆，變鬆弛；vt. 使緩慢；使減弱；使鬆弛",
+    "unit": 8,
+    "example": "Inflationary pressures continued to slacken last month.",
+    "exampleZh": "通貨膨脹的壓力上個月持續減輕。"
+  },
+  {
+    "id": 7991,
+    "en": "bolster",
+    "kk": "[ˈboʊlstər]",
+    "zh": "v. 增強，激勵；鞏固（地位），加強；改善，改進；給（座位）加軟墊；n. 長枕，墊枕；承梁（用於支撐或減少摩擦）；託木；（削磚用的）鑿刀；【名】 （Bolster）（美、印、荷）博爾斯特（人名）",
+    "unit": 8,
+    "example": "The country is free to adopt policies to bolster its economy.",
+    "exampleZh": "這個國家可自由採取措施來鞏固經濟。"
+  },
+  {
+    "id": 7992,
+    "en": "slightly",
+    "kk": "[ˈslaɪtli]",
+    "zh": "adv. 稍微，輕微地；（指某人身材）纖弱地，瘦小地",
+    "unit": 8,
+    "example": "He slackened the ropes slightly.",
+    "exampleZh": "他把繩子稍稍放鬆一些。"
+  },
+  {
+    "id": 7993,
+    "en": "massively",
+    "kk": "[ˈmæsɪvli]",
+    "zh": "adv. 大量地，大規模地，極大地；沉重地，厚實地",
+    "unit": 8,
+    "example": "Where are Chinese gooseberries most massively planted?",
+    "exampleZh": "哪裡是種植獼猴桃最多的地方？"
+  },
+  {
+    "id": 7994,
+    "en": "hugely",
+    "kk": "[ˈhjuːdʒli]",
+    "zh": "adv. 極度，非常，巨大地",
+    "unit": 8,
+    "example": "His debut album was hugely successful Stateside.",
+    "exampleZh": "他的首張專輯在美國獲得了巨大成功。"
+  },
+  {
+    "id": 7995,
+    "en": "slack",
+    "kk": "[slæk]",
+    "zh": "adj. 不緊的，鬆弛的；（生意）蕭條的，清淡的；懈怠的，敷衍了事的；（潮水）遲緩的，平緩的；<西印度>淫蕩的，下流的；n. （繩索的）鬆弛部分；富餘部分，閒置部分；褲子（slacks）；煤屑；<非正式>懈怠，懶散；v. 懈怠，偷懶；使（繩索等）鬆弛；減緩，放慢；熟化（石灰）；<英，非正式>緩慢（或懶散地）工作；【名】 （Slack）（美）斯萊克（人名）",
+    "unit": 8,
+    "example": "Discipline in the classroom is very slack.",
+    "exampleZh": "班裡紀律十分鬆懈。"
+  },
+  {
+    "id": 7996,
+    "en": "disinclination",
+    "kk": "[ˌdɪsˌɪnklɪˈneɪʃn]",
+    "zh": "n. 不感興趣；厭惡；不起勁",
+    "unit": 8,
+    "example": "They are showing a marked disinclination to pursue these opportunities.",
+    "exampleZh": "他們對爭取這類機會明顯表現出不情願的態度。"
+  },
+  {
+    "id": 7997,
+    "en": "repel",
+    "kk": "[rɪˈpel]",
+    "zh": "v. 擊退，驅逐；抵禦，驅除；使厭惡，使反感；抵制，不願接受；排斥，相斥",
+    "unit": 8,
+    "example": "They have fifty thousand troops along the border ready to repel any attack.",
+    "exampleZh": "他們沿邊界有5萬軍隊，隨時準備擊退任何進攻。"
+  },
+  {
+    "id": 7998,
+    "en": "demise",
+    "kk": "[dɪˋmaɪz]",
+    "zh": "n. 死亡；終止；v. 轉讓；遺贈",
+    "unit": 8,
+    "example": "Rodrigo met his demise.",
+    "exampleZh": "羅德里戈去世了。"
+  },
+  {
+    "id": 7999,
+    "en": "lowercase",
+    "kk": "[ˌloʊərˈkeɪs]",
+    "zh": "adj. 小寫的，小寫字體的；n. 小寫字母（總稱）；小寫字體；v. 用小寫字體書寫（或打印）；將（字母或文本）轉換為小寫",
+    "unit": 8,
+    "example": "It was printed in lowercase.",
+    "exampleZh": "這是用小寫體打印的。"
+  },
+  {
+    "id": 8000,
+    "en": "unattractiveness",
+    "kk": "",
+    "zh": "n.無趣，缺乏吸引力",
+    "unit": 8,
+    "example": "The strawberry is red, has a liking for the unusual unattractiveness.",
+    "exampleZh": "草莓是紅色的，看上去非常的漂亮。"
+  },
+  {
+    "id": 8001,
+    "en": "unconcern",
+    "kk": "[ˌʌnkənˈsɜːrn]",
+    "zh": "n. 不關心，不感興趣，冷淡；不擔憂，若無其事，漫不經心",
+    "unit": 8,
+    "example": "She'd mentioned it casually once, surprising him by her unconcern.",
+    "exampleZh": "她隨意地提過一次這個事，她的漠不關心讓他吃驚。"
+  },
+  {
+    "id": 8002,
+    "en": "debit",
+    "kk": "[ˋdɛbɪt]",
+    "zh": "v. 借方；n. 把……記入借方",
+    "unit": 8,
+    "example": "We pay all our bills by direct debit.",
+    "exampleZh": "我們以直接借記方式支付所有賬單。"
+  },
+  {
+    "id": 8003,
+    "en": "commendable",
+    "kk": "[kəˈmendəbl]",
+    "zh": "adj. 值得讚揚的，值得稱讚的",
+    "unit": 8,
+    "example": "I'm really glad to see you all here. It is indeed commendable that you got up so early in class.",
+    "exampleZh": "我真的很高興在這見到大家。你們起這麼早來上課的確值得表揚。"
+  },
+  {
+    "id": 8004,
+    "en": "happiness",
+    "kk": "[ˈhæpinəs]",
+    "zh": "n. 快樂，幸福",
+    "unit": 8,
+    "example": "Money can't buy you happiness.",
+    "exampleZh": "金錢不能為你買到幸福。"
+  },
+  {
+    "id": 8005,
+    "en": "disinfect",
+    "kk": "[ˌdɪsɪnˈfekt]",
+    "zh": "v. 給……殺菌，為……消毒；給（計算機）殺毒",
+    "unit": 8,
+    "example": "Chlorine is used to disinfect water.",
+    "exampleZh": "氯用來給水消毒。"
+  },
+  {
+    "id": 8006,
+    "en": "misinterpret",
+    "kk": "[ˌmɪsɪnˈtɜːrprət]",
+    "zh": "v. 曲解，誤解",
+    "unit": 8,
+    "example": "My biggest problem is that people always misinterpret me as being aggressive.",
+    "exampleZh": "我最大的問題是人們總是把我誤解成一個好鬥的人。"
+  },
+  {
+    "id": 8007,
+    "en": "sap",
+    "kk": "[sæp]",
+    "zh": "n. （植物的）汁，液；<非正式>傻瓜，容易上當的人；元氣，活力；<史>（用以偷襲設防場所的）坑道，地道；大頭短棒，棍棒；v. 使削弱，使虛弱；<史>挖坑道；用大頭短棒擊，用棍棒打；（地理）（水或冰川作用）逐漸侵蝕；<古>破壞……的基礎，侵蝕……的基礎；【名】 （Sap）（印、美、法、荷）薩（人名）",
+    "unit": 8,
+    "example": "The sap of this plant blisters the skin.",
+    "exampleZh": "這種植物的汁液會使皮膚起水皰。"
+  },
+  {
+    "id": 8008,
+    "en": "unfavourably",
+    "kk": "[ʌnˈfeɪvərəbli]",
+    "zh": "adv. 不利地；不適宜地",
+    "unit": 8,
+    "example": "His reluctance to return to the cabin impressed them all unfavourably, and the mutinous sounds again broke forth.",
+    "exampleZh": "他不願回到船艙裡，給所有人留下了不好的印象，不滿的抗議聲又再次響了起來。"
+  },
+  {
+    "id": 8009,
+    "en": "disparagingly",
+    "kk": "[dɪˈspærɪdʒɪŋli]",
+    "zh": "adv. 以輕視的態度，蔑視地，以貶抑的口吻",
+    "unit": 8,
+    "example": "He spoke disparagingly of his colleagues.",
+    "exampleZh": "他言辭之中很是看不起同事。"
+  },
+  {
+    "id": 8010,
+    "en": "complimentary",
+    "kk": "[ˌkɑːmplɪˈmentri]",
+    "zh": "adj. 讚美的，表示欽佩的；免費贈送的",
+    "unit": 8,
+    "example": "There was a complimentary basket of fruit in our room.",
+    "exampleZh": "我們房間裡有一籃免費贈送的水果。"
+  },
+  {
+    "id": 8011,
+    "en": "synthesis",
+    "kk": "[ˋsɪnθəsəs]",
+    "zh": "n. 綜合體；綜合",
+    "unit": 8,
+    "example": "Instead, he advocates a synthesis of these two views.",
+    "exampleZh": "相反，他主張綜合這兩種觀點。"
+  },
+  {
+    "id": 8012,
+    "en": "nervousness",
+    "kk": "[ˈnɜːrvəsnəs]",
+    "zh": "n. 緊張不安，焦慮，惶恐；神經質，神經過敏",
+    "unit": 8,
+    "example": "He tried to hide his nervousness.",
+    "exampleZh": "他試圖掩飾他的惶恐不安。"
+  },
+  {
+    "id": 8013,
+    "en": "uncertainty",
+    "kk": "[ənˋsɝtənti]",
+    "zh": "n. 不確定性",
+    "unit": 8,
+    "example": "It was a time of terrible uncertainty.",
+    "exampleZh": "那是一段非常不確定的時期。"
+  },
+  {
+    "id": 8014,
+    "en": "subordination",
+    "kk": "[səˌbɔːrdɪˈneɪʃn]",
+    "zh": "n. 從屬，隸屬，下級地位，次要；主從關係",
+    "unit": 8,
+    "example": "What is the nature of this subordination and what is its dynamic?",
+    "exampleZh": "是什麼性質的從屬關係，什麼是動態？"
+  },
+  {
+    "id": 8015,
+    "en": "weakness",
+    "kk": "[ˋwiknəs]",
+    "zh": "n. 虛弱；弱點",
+    "unit": 8,
+    "example": "His only weakness is his temperament.",
+    "exampleZh": "他惟一的弱點是他的脾氣。"
+  },
+  {
+    "id": 8016,
+    "en": "deprecate",
+    "kk": "[ˈdeprəkeɪt]",
+    "zh": "vt. <正式>反對，抨擊，聲明不贊成；貶低，輕視；（計算機）將功能、接口等標記為過時，不再推薦使用",
+    "unit": 8,
+    "example": "You should not deprecate your own worth.",
+    "exampleZh": "你不應該貶低你自己的價值。"
+  },
+  {
+    "id": 8017,
+    "en": "belittle",
+    "kk": "[bɪˈlɪt(ə)l]",
+    "zh": "vt. 輕視，貶低，小看；使相形見小，使顯得不重要",
+    "unit": 8,
+    "example": "We mustn't belittle her outstanding achievement.",
+    "exampleZh": "我們不應該輕視她的傑出成就。"
+  },
+  {
+    "id": 8018,
+    "en": "uncharacteristic",
+    "kk": "[ˌʌnˌkærəktəˈrɪstɪk]",
+    "zh": "adj. 不典型的，無典型特徵的",
+    "unit": 8,
+    "example": "The remark was quite uncharacteristic of her.",
+    "exampleZh": "這話很不像是她說的。"
+  },
+  {
+    "id": 8019,
+    "en": "likeness",
+    "kk": "[ˈlaɪknəs]",
+    "zh": "n. 相似，相像，相似之處；肖像，畫像（含照片、雕像等）；樣子；相似物",
+    "unit": 8,
+    "example": "These myths have a startling likeness to one another.",
+    "exampleZh": "這些神話彼此有驚人的相似之處。"
+  },
+  {
+    "id": 8020,
+    "en": "cheerfulness",
+    "kk": "[ˈtʃɪrflnəs]",
+    "zh": "n. 高興，快活，愉快；開朗，樂觀，歡快",
+    "unit": 8,
+    "example": "Their eyes were the same color as the sea, full of cheerfulness and undefeated spirit.",
+    "exampleZh": "他們的眼睛和大海同色，滿是愉悅與不屈的神采。"
+  },
+  {
+    "id": 8021,
+    "en": "protuberance",
+    "kk": "[proʊˈtuːbərəns]",
+    "zh": "n. 突起，突出；結節，瘤；隆起、突出的狀態",
+    "unit": 8,
+    "example": "There is a big protuberance on the trunk.",
+    "exampleZh": "樹幹上有個大包。"
+  },
+  {
+    "id": 8022,
+    "en": "pusillanimity",
+    "kk": "[ˌpjʊsləˈnɪməti]",
+    "zh": "n. 膽怯；無氣力；優柔寡斷",
+    "unit": 8,
+    "example": "Polls, however, suggest the Japanese are crying out for leadership on the issue, not pusillanimity.",
+    "exampleZh": "但民意調查表明，在這個問題上，日本國民迫切需要的是領導責任而不是優柔寡斷。"
+  },
+  {
+    "id": 8023,
+    "en": "inefficiency",
+    "kk": "[ˌɪnɪˈfɪʃnsi]",
+    "zh": "n. 低效率，無效率；無能；低效之處，效率低下的做法（常用複數）",
+    "unit": 8,
+    "example": "The inefficiency of the distribution system has led to the loss of millions of tons of food.",
+    "exampleZh": "分送系統的低效已經造成了數百萬噸食物的損失。"
+  },
+  {
+    "id": 8024,
+    "en": "incompetence",
+    "kk": "[ɪnˈkɑːmpɪtəns]",
+    "zh": "n. 無能力，不勝任，不稱職；（醫學）器官或瓣膜功能不全（尤指瓣膜關閉不全）",
+    "unit": 8,
+    "example": "She felt she had been made a scapegoat for her boss's incompetence.",
+    "exampleZh": "她覺得，本是老闆無能，但她卻成了替罪羊。"
+  },
+  {
+    "id": 8025,
+    "en": "shamelessness",
+    "kk": "[ˈʃeɪmləsnəs]",
+    "zh": "無恥",
+    "unit": 8,
+    "example": "Of course, not all rich man has a trait of shamelessness.",
+    "exampleZh": "當然，也不是每一個有錢的人都具備無恥的性格。"
+  },
+  {
+    "id": 8026,
+    "en": "unhitch",
+    "kk": "[ʌnˈhɪtʃ]",
+    "zh": "vt. 解開……的套具；解開繩子；放鬆",
+    "unit": 8,
+    "example": "The trailer was wonderful on the smoother roads near Beijing, and it was a big advantage to be able to unhitch the car and use it separately, leaving the horses tied safely to the trailer.",
+    "exampleZh": "拖車在北京周邊的較為平坦的道路上使用效果很棒，能夠將車分開來用也是一個很大的優勢，而馬也能夠安全地系在拖車上。"
+  },
+  {
+    "id": 8027,
+    "en": "intransigence",
+    "kk": "[ɪnˈtrænzɪdʒəns]",
+    "zh": "n. （正式，不可數，常含貶義）不妥協，不讓步，不調和",
+    "unit": 8,
+    "example": "He often appeared angry and frustrated by the intransigence of both sides.",
+    "exampleZh": "他好像總是為雙方的強硬態度而憤怒和沮喪。"
+  },
+  {
+    "id": 8028,
+    "en": "misconduct",
+    "kk": "[ˌmɪsˈkɑːndʌkt]",
+    "zh": "n. <正式>不端行為；（冰球）對違反規則的處罰；管理不善，翫忽職守；v. 處理不當；行為不檢（misconduct oneself）",
+    "unit": 8,
+    "example": "I will not tolerate harassment or any other form of misconduct.",
+    "exampleZh": "我不能容忍騷擾或任何其它形式的不正當行為。"
+  },
+  {
+    "id": 8029,
+    "en": "disparage",
+    "kk": "[dɪˈspærɪdʒ]",
+    "zh": "v. <正式>貶低，詆譭",
+    "unit": 8,
+    "example": "I don't mean to disparage your achievements.",
+    "exampleZh": "我並不想貶低你的成就。"
+  },
+  {
+    "id": 8030,
+    "en": "unimaginativeness",
+    "kk": "",
+    "zh": "n．缺乏想象力，無創意：指一個人或事物缺乏創造力、想象力或新穎性。",
+    "unit": 8,
+    "example": "He tried to learn how to use the word unimaginativeness correctly.",
+    "exampleZh": "他試著學習如何正確使用「unimaginativeness」這個單字。"
+  },
+  {
+    "id": 8031,
+    "en": "fecklessness",
+    "kk": "[ˈfekləsnəs]",
+    "zh": "n. 徒勞；低效率；無能；不負責任",
+    "unit": 8,
+    "example": "The Fed's fecklessness is, to be sure, not unique.",
+    "exampleZh": "美聯儲的不負責任無疑不是獨有的。"
+  },
+  {
+    "id": 8032,
+    "en": "refined",
+    "kk": "[rɪˈfaɪnd]",
+    "zh": "adj. 精煉的；有教養的，文雅的；精確的，靈活巧妙的；v. 精煉，提純；改進，改善；使……文雅（refine 的過去式和過去分詞）",
+    "unit": 8,
+    "example": "El Salvador produces 100,000 tons of refined copper annually.",
+    "exampleZh": "薩爾瓦多一年生產10萬噸精煉銅。"
+  },
+  {
+    "id": 8033,
+    "en": "underuse",
+    "kk": "[ˌʌndərˈjuːs]",
+    "zh": "v. 未充分利用；n. 使用不足，未充分利用",
+    "unit": 8,
+    "example": "I'm sure you underuse Betty's intelligence on a daily basis.",
+    "exampleZh": "我確信你只讓她做些日常基礎工作真是浪…"
+  },
+  {
+    "id": 8034,
+    "en": "predator",
+    "kk": "[ˈpredətər]",
+    "zh": "n. 捕食性動物； 掠奪者，掠奪成性的人（或組織）",
+    "unit": 8,
+    "example": "Now if you are a bird and there is a predator around.",
+    "exampleZh": "假設你是一隻鳥，且現在周圍有捕食者。"
+  },
+  {
+    "id": 8035,
+    "en": "obscurity",
+    "kk": "[əbˈskjʊrəti]",
+    "zh": "n. 無名，默默無聞；費解，晦澀；<文>昏暗，黑暗",
+    "unit": 8,
+    "example": "He spent most of his life working in obscurity.",
+    "exampleZh": "他在默默無聞的工作中度過了大半生。"
+  },
+  {
+    "id": 8036,
+    "en": "vagueness",
+    "kk": "[ˈveɪɡnəs]",
+    "zh": "n. 模糊，含糊，曖昧；朦朧（指形狀或輪廓不清）；茫然",
+    "unit": 8,
+    "example": "I - I am not just concerned with the vagueness.",
+    "exampleZh": "我不僅關注其含糊不清。"
+  },
+  {
+    "id": 8037,
+    "en": "blurriness",
+    "kk": "",
+    "zh": "n. 模糊，模糊不清，模糊強度",
+    "unit": 8,
+    "example": "It is a good idea to blur the environment map to simulate the blurriness of a reflection.",
+    "exampleZh": "它採用模糊環境的方式來模擬反射模糊。"
+  },
+  {
+    "id": 8038,
+    "en": "opacity",
+    "kk": "[oʊˈpæsəti]",
+    "zh": "n. 不透明（性），不透光（性），（塗料、紙張等的）遮蓋力；<正式>晦澀難懂，不透明（指含義、信息、政策等）；（計算機、圖形軟件）不透明度；（醫學）混濁，不透明病變（可數，複數 opacities；尤指晶狀體、角膜）",
+    "unit": 8,
+    "example": "This brings us back to the excessive cleverness and opacity that we hope to avoid.",
+    "exampleZh": "這就又回到了我們希望避免的那種過度賣弄小聰明、信息不透明的問題上。"
+  },
+  {
+    "id": 8039,
+    "en": "murkiness",
+    "kk": "[ˈmɜːrkɪnɪs]",
+    "zh": "n. 陰沉；黑暗",
+    "unit": 8,
+    "example": "Ms Munro comes from southern Ontario, an area of considerable psychic murkiness and oddity.",
+    "exampleZh": "芒羅女士（Ms Munro）來自南安大略，一個奇特古怪的地方。"
+  },
+  {
+    "id": 8040,
+    "en": "coalescence",
+    "kk": "[ˌkoʊəˈles(ə)ns]",
+    "zh": "n. 合併，聯合，接合；（物理、化學、氣象等）聚結，併合",
+    "unit": 8,
+    "example": "This shows continuous coalescence and redispersion.",
+    "exampleZh": "這表明聚集和再分散在不斷地進行。"
+  },
+  {
+    "id": 8041,
+    "en": "disinterest",
+    "kk": "[dɪsˈɪntrəst]",
+    "zh": "n. 不關心，無興趣；（較正式）公正，不偏不倚，中立；vt. （罕用）使不關心，使失去興趣",
+    "unit": 8,
+    "example": "His total disinterest in money puzzled his family.",
+    "exampleZh": "他對金錢毫無興趣使他的家人感到迷惑不解。"
+  },
+  {
+    "id": 8042,
+    "en": "humility",
+    "kk": "[hjuːˈmɪləti]",
+    "zh": "n. 謙遜，謙恭",
+    "unit": 8,
+    "example": "Her first defeat was an early lesson in humility.",
+    "exampleZh": "她的第一次失敗使她很早便懂得了謙遜。"
+  },
+  {
+    "id": 8043,
+    "en": "confirmation",
+    "kk": "[͵kɑnfɚˋmeʃən]",
+    "zh": "n. 確定；確證",
+    "unit": 8,
+    "example": "She glanced over at James for confirmation.",
+    "exampleZh": "她瞟了詹姆斯一眼尋求確認。"
+  },
+  {
+    "id": 8044,
+    "en": "reaffirmation",
+    "kk": "[ˌriːˌæfərˈmeɪʃ(ə)n]",
+    "zh": "n. 重申；再斷言；再確認",
+    "unit": 8,
+    "example": "It's like a reaffirmation of the world of intelligence.",
+    "exampleZh": "這就像是對世界情報的又一次肯定。"
+  },
+  {
+    "id": 8045,
+    "en": "acquittal",
+    "kk": "[əˈkwɪt(ə)l]",
+    "zh": "n. （法律）無罪判決，宣告無罪，無罪開釋；（舊義，法律用語）債務等的清償，職責的履行，盡職",
+    "unit": 8,
+    "example": "The jury voted 8-to-4 in favour of acquittal.",
+    "exampleZh": "該陪審團以8票比4票投票贊成無罪判決。"
+  },
+  {
+    "id": 8046,
+    "en": "implausibility",
+    "kk": "[ɪmˌplɔːzəˈbɪləti]",
+    "zh": "n. 難以相信，不像真實",
+    "unit": 8,
+    "example": "Kafka's novels opened up a yawning \"frontier to implausibility\".",
+    "exampleZh": "卡夫卡的小說則打開了一個無限擴張的非理性世界。"
+  },
+  {
+    "id": 8047,
+    "en": "apathy",
+    "kk": "[ˈæpəθi]",
+    "zh": "n. 冷淡，無興趣",
+    "unit": 8,
+    "example": "They told me about isolation and public apathy.",
+    "exampleZh": "他們向我講述了孤立感與公眾的冷漠。"
+  },
+  {
+    "id": 8048,
+    "en": "laziness",
+    "kk": "[ˈleɪzinəs]",
+    "zh": "n. 怠惰，無精打采",
+    "unit": 8,
+    "example": "It's laziness, pure and simple.",
+    "exampleZh": "這全然是懶惰。"
+  },
+  {
+    "id": 8049,
+    "en": "deconsecration",
+    "kk": "",
+    "zh": "n. （宗教建築物的）還俗",
+    "unit": 8,
+    "example": "He tried to learn how to use the word deconsecration correctly.",
+    "exampleZh": "他試著學習如何正確使用「deconsecration」這個單字。"
+  },
+  {
+    "id": 8050,
+    "en": "ascent",
+    "kk": "[əˈsent]",
+    "zh": "n. 垂直上升；上坡路；攀登；（地位、職務的）提升，（水平的）提高；（某些宗教中的）昇天",
+    "unit": 8,
+    "example": "Burke pushed the button and the lift began its slow ascent.",
+    "exampleZh": "伯克按下按鈕，電梯開始了其緩慢的上升。"
+  },
+  {
+    "id": 8051,
+    "en": "tactlessness",
+    "kk": "[ˈtæktləsnəs]",
+    "zh": "n. 不圓滑；不乖巧",
+    "unit": 8,
+    "example": "Mrs. Hardie hurried to make up for her tactlessness by asking her guest about his holiday.",
+    "exampleZh": "哈迪太太趕緊問她的客人假期過得如何，以彌補此前不得體的言行。"
+  },
+  {
+    "id": 8052,
+    "en": "recruitment",
+    "kk": "[rəˋkrutmənt]",
+    "zh": "n. 徵募；僱用",
+    "unit": 8,
+    "example": "Recruitment advertisements routinely call for 'team players'.",
+    "exampleZh": "招聘廣告經常會招聘「有團隊精神的人」。"
+  },
+  {
+    "id": 8053,
+    "en": "honour",
+    "kk": "[ˈɑːnər]",
+    "zh": "n. 尊敬；榮幸；高尚品德，氣節；榮譽；獎勵，榮譽稱號；大學榮譽學位課程；優異成績；法官大人，（美國）市長閣下；<舊>貞操；最大點數的牌；v. 尊敬；表彰；信守，執行（承諾）；兌現（支票）；【名】 （Honour）（英）昂納（人名）",
+    "unit": 8,
+    "example": "The bank had no mandate to honour the cheque.",
+    "exampleZh": "銀行沒有得到指令來承兌這張支票。"
+  },
+  {
+    "id": 8054,
+    "en": "impartiality",
+    "kk": "[ˌɪmˌpɑːrʃiˈæləti]",
+    "zh": "n. （不可數）公正，公平，不偏不倚",
+    "unit": 8,
+    "example": "To take sides at a later point would be to suggest that the earlier presumptive impartiality was a sham.",
+    "exampleZh": "在以後的某一時刻偏袒某一方，就意味著先前假定的公正只是一種假象。"
+  },
+  {
+    "id": 8055,
+    "en": "fictional",
+    "kk": "[ˈfɪkʃən(ə)l]",
+    "zh": "adj. 虛構的，小說（中）的",
+    "unit": 8,
+    "example": "Almost all fictional detectives are unreal.",
+    "exampleZh": "幾乎所有小說裡的偵探都是虛構的。"
+  },
+  {
+    "id": 8056,
+    "en": "intensification",
+    "kk": "[ɪnˌtensɪfɪˈkeɪʃ(ə)n]",
+    "zh": "n. 強化，加劇，激烈化；（農業、經濟）集約化，生產強化；（攝影）增強明暗度，影像增強",
+    "unit": 8,
+    "example": "This decline reflects an intensification-and globalisation-of competition.",
+    "exampleZh": "這個費用的減少反映出了競爭的激烈化和全球化。"
+  },
+  {
+    "id": 8057,
+    "en": "unremarkable",
+    "kk": "[ˌʌnrɪˈmɑːrkəbl]",
+    "zh": "adj. 平凡的，不顯著的，不值得注意的；（醫學）正常的，未見異常的",
+    "unit": 8,
+    "example": "Nebula DG 129 looks pretty unremarkable in the visible spectrum.",
+    "exampleZh": "DG 129 星雲在這個可見光譜中看起來相當不起眼。"
+  },
+  {
+    "id": 8058,
+    "en": "jerky",
+    "kk": "[ˈdʒɜːrki]",
+    "zh": "adj. （動作、節奏等）不平穩的，急促而不流暢的；（非正式）愚蠢的，傻的；n. 乾肉條，燻肉條，肉乾（通常不可數，尤指牛肉乾）",
+    "unit": 8,
+    "example": "More and more frustration boiled over at how herky-jerky the allocation process had become.",
+    "exampleZh": "對於這套分配流程變得如此反覆無常，越來越多人的不滿情緒徹底爆發了。"
+  },
+  {
+    "id": 8059,
+    "en": "static",
+    "kk": "[ˈstætɪk]",
+    "zh": "adj. 靜止的，停滯的；靜電的；靜力的；（計算機）（儲存器，儲存）靜態的；（計算機）（程序，變量）靜態的；（物理）（物體）靜止的，不動的；n. 靜電；（廣播、電視裡的）靜電噪聲，靜電干擾；<美，非正式>不停的抱怨，指責；靜力學",
+    "unit": 8,
+    "example": "My hair gets full of static when I brush it.",
+    "exampleZh": "我梳頭時頭髮就有好多靜電。"
+  },
+  {
+    "id": 8060,
+    "en": "softened",
+    "kk": "['sɔfənd]",
+    "zh": "adj. 軟化的，變軟的；緩和的，溫和的，柔和的；退火的；v. soften 的過去式和過去分詞（使變軟、變溫和、變柔和）",
+    "unit": 8,
+    "example": "Is your heart not yet softened?",
+    "exampleZh": "你的心還沒有軟下來嗎？"
+  },
+  {
+    "id": 8061,
+    "en": "smallness",
+    "kk": "[ˈsmɔːlnəs]",
+    "zh": "n. 小；貧乏；小氣",
+    "unit": 8,
+    "example": "The next really important thing is the smallness of Judea.",
+    "exampleZh": "還有一點很重要，就是朱迪亞的渺小性。"
+  },
+  {
+    "id": 8062,
+    "en": "triviality",
+    "kk": "[ˌtrɪviˈæləti]",
+    "zh": "n. 瑣碎，無足輕重，平凡，淺薄，輕浮；瑣事，小事，雞毛蒜皮；（數學、邏輯學）平凡性",
+    "unit": 8,
+    "example": "His speech was one of great triviality.",
+    "exampleZh": "他的講話根本無足輕重。"
+  },
+  {
+    "id": 8063,
+    "en": "reactionary",
+    "kk": "[riˈækʃəneri]",
+    "zh": "adj. 反動的，保守的；n. 反動派，保守人士",
+    "unit": 8,
+    "example": "Critics viewed him as a reactionary, even a monarchist.",
+    "exampleZh": "批評者們把他看成是反動分子，甚至是君主主義者。"
+  },
+  {
+    "id": 8064,
+    "en": "damnation",
+    "kk": "[dæmˈneɪʃn]",
+    "zh": "n. （宗教）被罰下地獄，永罰；詛咒，譴責，非難；int. 該死，糟了",
+    "unit": 8,
+    "example": "Words can be your salvation. Words can also be your damnation.",
+    "exampleZh": "你的話會拯救你，也會成為你的詛咒。"
+  },
+  {
+    "id": 8065,
+    "en": "intricacy",
+    "kk": "[ˈɪntrɪkəsi]",
+    "zh": "n. 錯綜複雜的事物（或細節）；盤根錯節，複雜精細",
+    "unit": 8,
+    "example": "The price depends on the intricacy of the work.",
+    "exampleZh": "價格取決於工藝的精細程度。"
+  },
+  {
+    "id": 8066,
+    "en": "ornateness",
+    "kk": "",
+    "zh": "n. 華麗",
+    "unit": 8,
+    "example": "I love luxury. And luxury lies not in richness and ornateness but in the absence of vulgarity.",
+    "exampleZh": "我愛奢侈。奢侈並不意味著貴重與裝飾華麗，奢侈就是屏除粗俗。"
+  },
+  {
+    "id": 8067,
+    "en": "fanciness",
+    "kk": "",
+    "zh": "n. 花俏；空想",
+    "unit": 8,
+    "example": "Snails with the shells that you put on the table, fanciness.",
+    "exampleZh": "還有放在桌上的帶殼蝸牛，真有趣。"
+  },
+  {
+    "id": 8068,
+    "en": "pretentiousness",
+    "kk": "[prɪˈtenʃəsnəs]",
+    "zh": "n. 自負，自命不凡，裝腔作勢",
+    "unit": 8,
+    "example": "His moral confusion and pretentiousness are reflected in his over-elaborate speech and style of writing.",
+    "exampleZh": "他過於修飾的寫作風格及學說，反映出他混淆道德又自命不凡。"
+  },
+  {
+    "id": 8069,
+    "en": "affectation",
+    "kk": "[ˌæfekˈteɪʃ(ə)n]",
+    "zh": "n. 做作，矯揉造作；假裝，裝模作樣，故作姿態",
+    "unit": 8,
+    "example": "Kay has no affectation at all.",
+    "exampleZh": "凱一點也不做作。"
+  },
+  {
+    "id": 8070,
+    "en": "placidity",
+    "kk": "[pləˈsɪdəti]",
+    "zh": "n. 平靜，平穩，安靜；平和，溫和，沉靜",
+    "unit": 8,
+    "example": "The swift and indifferent placidity of that look troubled me.",
+    "exampleZh": "那一掃而過的冷漠沉靜的目光使我深感不安。"
+  },
+  {
+    "id": 8071,
+    "en": "phlegm",
+    "kk": "[flem]",
+    "zh": "n. 痰，呼吸道粘液（感冒或呼吸道感染時產生的稠厚分泌物）；粘液（古代生理學四體液之一）；粘液質（氣質類型）",
+    "unit": 8,
+    "example": "Are you coughing up phlegm?",
+    "exampleZh": "你咳嗽有痰嗎？"
+  },
+  {
+    "id": 8072,
+    "en": "colourful",
+    "kk": "[ˈkʌlərf(ə)l]",
+    "zh": "adj. 顏色鮮豔的，五彩繽紛的；有趣的，生動的；（語言）粗俗的",
+    "unit": 8,
+    "example": "The seas around Bermuda are full of colourful corals and fantastic fish.",
+    "exampleZh": "百慕大周圍的海域中到處都是五彩的珊瑚蟲和奇異的魚類。"
+  },
+  {
+    "id": 8073,
+    "en": "inclusion",
+    "kk": "[ɪnˈkluːʒ(ə)n]",
+    "zh": "n. 包含，包括；包含物，包括的人；認同感，歸屬感",
+    "unit": 8,
+    "example": "This will cost money, but if social inclusion is to succeed, it must be spent.",
+    "exampleZh": "這將花費金錢，但是要想社會包容取得成功，這筆錢就必須得花。"
+  },
+  {
+    "id": 8074,
+    "en": "conscientiousness",
+    "kk": "[ˌkɑːnʃiˈenʃəsnəs]",
+    "zh": "n. 盡責，認真勤勉；憑良心辦事，本著良心；（心理學）盡責性人格",
+    "unit": 8,
+    "example": "Environmental conscientiousness isn't always enough to make customers recycle old goods.",
+    "exampleZh": "環保意識並不足以讓顧客回收舊商品。"
+  },
+  {
+    "id": 8075,
+    "en": "legalize",
+    "kk": "[ˋliɡə͵laɪz]",
+    "zh": "v. 使合法化",
+    "unit": 8,
+    "example": "To legalize private space explorations.",
+    "exampleZh": "使私人空間探索合法化。"
+  },
+  {
+    "id": 8076,
+    "en": "favour",
+    "kk": "[ˈfeɪvər]",
+    "zh": "n. 支持，喜愛；幫忙，恩惠；偏愛；小禮物；同意性交；v. 偏袒，偏愛；支持，更喜歡；有利於；長得像；悉心照料",
+    "unit": 8,
+    "example": "The court found in her favour.",
+    "exampleZh": "法庭判決對她有利。"
+  },
+  {
+    "id": 8077,
+    "en": "excitable",
+    "kk": "[ɪkˈsaɪtəbl]",
+    "zh": "adj. （多用於人或動物）易激動的，易興奮的（有時也譯作“易怒的”）；（生理學、生物學）可興奮的，能對刺激作出反應的",
+    "unit": 8,
+    "example": "Mary sat beside Elaine, who today seemed excitable.",
+    "exampleZh": "瑪麗坐在了伊萊恩旁邊，伊萊恩今天似乎容易激動。"
+  },
+  {
+    "id": 8078,
+    "en": "temperamental",
+    "kk": "[ˌtemprəˈmentl]",
+    "zh": "adj. 喜怒無常的，性情多變的；氣質的，性情的；（機器、汽車等）性能不穩定的，易壞的",
+    "unit": 8,
+    "example": "He is very temperamental and critical.",
+    "exampleZh": "他喜怒無常，而且吹毛求疵。"
+  },
+  {
+    "id": 8079,
+    "en": "jerkily",
+    "kk": "[ˈdʒɜːrkɪli]",
+    "zh": "adv. 痙攣性地；顛簸地",
+    "unit": 8,
+    "example": "The car moved off jerkily.",
+    "exampleZh": "汽車顛簸著開走了。"
+  },
+  {
+    "id": 8080,
+    "en": "disastrously",
+    "kk": "[dɪˈzæstrəsli]",
+    "zh": "adv. 災難性地，極其糟糕地，悲慘地",
+    "unit": 8,
+    "example": "How could everything go so disastrously wrong?",
+    "exampleZh": "怎麼會事事都出這麼大的錯呢？"
+  },
+  {
+    "id": 8081,
+    "en": "abrasively",
+    "kk": "[əˈbreɪsɪvli]",
+    "zh": "adv. 研磨地；磨蝕地；粗暴地",
+    "unit": 8,
+    "example": "His family, she now knew, included an abrasively vigorous mother of eighty-seven.",
+    "exampleZh": "她現在知道，他家裡有一位八十七歲，精神矍鑠而惹人生氣的母親。"
+  },
+  {
+    "id": 8082,
+    "en": "disloyal",
+    "kk": "[dɪsˈlɔɪəl]",
+    "zh": "adj. 不忠的，不忠誠的，背叛的",
+    "unit": 8,
+    "example": "Accusing us of being disloyal to cover his own sorry behaviour is truly execrable.",
+    "exampleZh": "用指控我們的不忠來掩蓋他個人的不當行為真是很惡劣。"
+  },
+  {
+    "id": 8083,
+    "en": "irresolute",
+    "kk": "[ɪˈrezəluːt]",
+    "zh": "adj. <正式>優柔寡斷的，躊躇不定的，無決斷的",
+    "unit": 8,
+    "example": "The worst reason to launch an attack would be a fear of seeming irresolute.",
+    "exampleZh": "發起攻擊最壞的理由就是因為害怕看起來猶豫不決。"
+  },
+  {
+    "id": 8084,
+    "en": "discouraging",
+    "kk": "[dɪsˈkɜːrɪdʒɪŋ]",
+    "zh": "adj. 使人沮喪的，令人氣餒的；v. discourage 的現在分詞或動名詞：使氣餒，使沮喪，使失去勇氣；勸阻，阻止",
+    "unit": 8,
+    "example": "Her criticisms had the effect of discouraging him completely.",
+    "exampleZh": "她的批評使他完全喪失了信心。"
+  },
+  {
+    "id": 8085,
+    "en": "accustomed",
+    "kk": "[əˈkʌstəmd]",
+    "zh": "adj. 習慣的，適應的；慣常的，通常的；（眼睛對光線變化）習慣了的，適應了的；v. 使習慣於，使適應（accustom 的過去式和過去分詞）",
+    "unit": 8,
+    "example": "Some are so accustomed to pigging out, they can't cut back.",
+    "exampleZh": "有些人習慣暴飲暴食了，他們不可能縮減食量。"
+  },
+  {
+    "id": 8086,
+    "en": "settled",
+    "kk": "[ˈsetld]",
+    "zh": "adj. 定居的，穩定的；習慣的，舒適自在的；有人居住的；決定的，定下的；v. 解決，結束（糾紛）；確定，決定；移居，定居（settle 的過去式和過去分詞形式）",
+    "unit": 8,
+    "example": "His gaze settled on her face.",
+    "exampleZh": "他的目光落在她臉上。"
+  },
+  {
+    "id": 8087,
+    "en": "predictable",
+    "kk": "[prɪˋdɪktəbəl]",
+    "zh": "adj. 可預言的",
+    "unit": 8,
+    "example": "The ending of the book was entirely predictable.",
+    "exampleZh": "那本書的結局完全是可以想見的。"
+  },
+  {
+    "id": 8088,
+    "en": "enquire",
+    "kk": "[ɪnˈkwaɪər]",
+    "zh": "v. 詢問，打聽；問好，問候；求見（某人），要求與某人談話；調查，查究",
+    "unit": 8,
+    "example": "I called the station to enquire about train times.",
+    "exampleZh": "我打電話到車站詢問了火車時刻。"
+  },
+  {
+    "id": 8089,
+    "en": "rig",
+    "kk": "[rɪɡ]",
+    "zh": "v. 操縱（選舉、比賽）；（給船隻）裝帆，提供索具；（秘密地）安裝，裝配；臨時搭建，臨時架起；（給某人或某物）裝束，打扮；n. 鑽井架，鑽塔；<美>大型卡車；（成套的）裝置，裝備；帆桅的裝配（方式）；服裝，制服；<古>詭計，騙局",
+    "unit": 8,
+    "example": "It took a team of engineers to rig it up.",
+    "exampleZh": "需要一組工程師團隊來把它臨時組裝搭建好。"
+  },
+  {
+    "id": 8090,
+    "en": "correlate",
+    "kk": "[ˈkɔːrəleɪt; ˈkɔːrələt]",
+    "zh": "v. 相互關聯；顯示緊密聯繫；n. 相關的事物",
+    "unit": 8,
+    "example": "This would cause problems if you tried to correlate sent and received messages.",
+    "exampleZh": "這將導致您在試圖關聯發送與接收消息時產生問題。"
+  },
+  {
+    "id": 8091,
+    "en": "ferret",
+    "kk": "[ˈferɪt]",
+    "zh": "n. 雪貂；白鼬；（尤指在封閉或狹小空間中的）搜尋，查找；搜尋者；v. （翻箱倒櫃地）搜尋，尋找；搜出，查獲某物；用雪貂獵鼠（獵兔）；不斷地煩擾、糾纏；擔心",
+    "unit": 8,
+    "example": "The team is trying to ferret out missing details.",
+    "exampleZh": "該團隊正試圖搜尋遺失的細節。"
   }
 ];
 

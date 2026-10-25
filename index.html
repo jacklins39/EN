@@ -9,7 +9,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261025V20';
+        const APP_BUILD_VERSION = '20261025V21';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -30,18 +30,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261025V20"></script>
-    <script src="toeic_data.js?v=20261025V20"></script>
-    <script src="jh_data.js?v=20261025V20"></script>
-    <script src="listening_data.js?v=20261025V20"></script>
-    <script src="uk_phonetics_manifest.js?v=20261025V20"></script>
-    <script src="words_audio_manifest.js?v=20261025V20"></script>
-    <script src="examples_audio_manifest.js?v=20261025V20"></script>
-    <script src="zh_audio_manifest.js?v=20261025V20"></script>
-    <script src="collocations_audio_manifest.js?v=20261025V20"></script>
-    <script src="syn_ant_data.js?v=20261025V20"></script>
-    <script src="synonyms_unit8_data.js?v=20261025V20"></script>
-    <script src="examples_unit9_data.js?v=20261025V20"></script>
+    <script src="words_data.js?v=20261025V21"></script>
+    <script src="toeic_data.js?v=20261025V21"></script>
+    <script src="jh_data.js?v=20261025V21"></script>
+    <script src="listening_data.js?v=20261025V21"></script>
+    <script src="uk_phonetics_manifest.js?v=20261025V21"></script>
+    <script src="words_audio_manifest.js?v=20261025V21"></script>
+    <script src="examples_audio_manifest.js?v=20261025V21"></script>
+    <script src="zh_audio_manifest.js?v=20261025V21"></script>
+    <script src="collocations_audio_manifest.js?v=20261025V21"></script>
+    <script src="syn_ant_data.js?v=20261025V21"></script>
+    <script src="synonyms_unit8_data.js?v=20261025V21"></script>
+    <script src="examples_unit9_data.js?v=20261025V21"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -697,7 +697,7 @@
                 </div>
 
                 <div class="relative mb-4">
-                    <input type="text" id="dict-search" placeholder="搜尋單字、中文或 KK 音標..." class="w-full bg-[#F5F5F7] border-0 border-gray-200 text-[#1D1D1F] rounded-2xl pl-10 pr-4 py-3 outline-none focus:ring-2 focus:ring-[#0071E3] focus:border-transparent transition-all">
+                    <input type="text" id="dict-search" placeholder="搜尋單字、中文或英美音標..." class="w-full bg-[#F5F5F7] border-0 border-gray-200 text-[#1D1D1F] rounded-2xl pl-10 pr-4 py-3 outline-none focus:ring-2 focus:ring-[#0071E3] focus:border-transparent transition-all">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 absolute left-3 top-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                 </div>
                 
@@ -1305,9 +1305,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261025V20</span>
+                        <span id="app-version-display">版本 20261025V21</span>
                     </div>
-                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261025V20</p>
+                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261025V21</p>
                 </div>
             </div>
         </div>
@@ -2826,7 +2826,7 @@
                 <div id="preview-row-${i}" class="preview-word-row flex items-center justify-between py-3 px-3 border-b border-gray-100 last:border-0 hover:bg-[#F5F5F7] rounded-2xl cursor-pointer transition-colors" onclick="showWordDetailModal('${esc(w.en)}')">
                     <div class="flex items-center gap-3 min-w-0">
                         <div class="min-w-0">
-                            <div class="font-semibold text-[#1D1D1F] text-[15px]">${esc(w.en)} <span class="text-[10px] text-gray-400 font-mono ml-1">${esc(w.kk || '')}</span></div>
+                            <div class="font-semibold text-[#1D1D1F] text-[15px] flex items-center gap-1.5 flex-wrap">${esc(w.en)} ${renderPhoneticsBadgesHtml(w, 'sm')}</div>
                             <div class="text-[13px] text-[#86868B] truncate">${esc(w.zh)}</div>
                         </div>
                     </div>
@@ -3994,7 +3994,7 @@
                     listEl.innerHTML = recapWords.map(w => `
                         <div class="flex items-center justify-between py-2.5 px-2 hover:bg-white rounded-xl cursor-pointer transition-colors" onclick="showWordDetailModal('${esc(w.en)}')">
                             <div class="min-w-0 pr-2">
-                                <div class="font-bold text-slate-900 text-sm">${esc(w.en)} <span class="text-[11px] text-slate-400 font-mono ml-1">${esc(w.kk || '')}</span></div>
+                                <div class="font-bold text-slate-900 text-sm flex items-center gap-1.5 flex-wrap">${esc(w.en)} ${renderPhoneticsBadgesHtml(w, 'sm')}</div>
                                 <div class="text-xs text-slate-500 truncate">${esc(w.zh)}</div>
                             </div>
                             <div class="flex items-center gap-2 shrink-0">
@@ -4062,7 +4062,7 @@
                     return `
                         <div class="flex items-center justify-between py-2.5 px-2 hover:bg-white rounded-xl cursor-pointer transition-colors" onclick="showWordDetailModal('${esc(w.en)}')">
                             <div class="min-w-0 pr-2">
-                                <div class="font-bold text-slate-900 text-sm">${esc(w.en)} <span class="text-[11px] text-slate-400 font-mono ml-1">${esc(w.kk || '')}</span></div>
+                                <div class="font-bold text-slate-900 text-sm flex items-center gap-1.5 flex-wrap">${esc(w.en)} ${renderPhoneticsBadgesHtml(w, 'sm')}</div>
                                 <div class="text-xs text-slate-500 truncate">${esc(w.zh)}</div>
                             </div>
                             <div class="flex items-center gap-1.5 shrink-0">
@@ -4358,6 +4358,32 @@
 
         // 卡片背面雙口音膠囊按鈕狀態動態高亮 (播放美音亮藍、播放英音亮紫、靜止時並列精緻顯示)
         
+        function getWordPhonetics(w) {
+            if (!w) return { kk: '', uk: '' };
+            const kk = w.kk || '';
+            const cleanEn = (w.en || '').trim().toLowerCase();
+            const uk = w.uk || (window.UK_PHONETICS_MANIFEST && window.UK_PHONETICS_MANIFEST[cleanEn]) || '';
+            return { kk, uk };
+        }
+
+        // 全域雙音標徽章渲染器 (支援單字庫、詳解卡、預覽清單)
+        function renderPhoneticsBadgesHtml(w, size = 'sm') {
+            const { kk, uk } = getWordPhonetics(w);
+            if (!kk && !uk) return '';
+            const isLg = size === 'lg';
+            const pad = isLg ? 'px-2 py-0.5 text-xs sm:text-sm' : 'px-1.5 py-0.2 text-[10px] sm:text-[11px]';
+            const tagSize = isLg ? 'text-[10px]' : 'text-[9px]';
+            let out = '<span class="inline-flex items-center gap-1.5 flex-wrap align-middle select-none">';
+            if (kk) {
+                out += '<span class="inline-flex items-center gap-0.5 ' + pad + ' font-mono text-blue-700 bg-blue-50/90 border border-blue-200/60 rounded-md font-medium" title="美式 KK 音標"><span class="' + tagSize + ' font-sans font-bold text-blue-500">美</span><span>' + esc(kk) + '</span></span>';
+            }
+            if (uk) {
+                out += '<span class="inline-flex items-center gap-0.5 ' + pad + ' font-mono text-purple-700 bg-purple-50/90 border border-purple-200/60 rounded-md font-medium" title="英式牛津音標 (Yahoo 字典)"><span class="' + tagSize + ' font-sans font-bold text-purple-500">英</span><span>' + esc(uk) + '</span></span>';
+            }
+            out += '</span>';
+            return out;
+        }
+
         // 雙音標動態渲染與顯示 (美式 KK / 英式 Oxford IPA)
         function updateCardPhonetics(wordObj) {
             const w = wordObj || currentWord || {};
@@ -6505,7 +6531,7 @@
                     <div>
                         <h2 class="text-2xl sm:text-3xl font-extrabold text-[#1D1D1F] tracking-tight mb-1">${esc(w.en)}</h2>
                         <div class="flex items-center gap-2 flex-wrap">
-                            ${w.kk ? `<span class="text-xs sm:text-sm font-mono text-gray-500 bg-gray-100 px-2 py-0.5 rounded-md">${esc(w.kk)}</span>` : ''}
+                            ${renderPhoneticsBadgesHtml(w, 'lg')}
                             ${parsed.pos ? `<span class="text-xs font-bold px-2 py-0.5 rounded-md bg-blue-100 text-blue-800 uppercase tracking-wider">${esc(parsed.pos)}</span>` : ''}
                         </div>
                     </div>
@@ -7319,7 +7345,7 @@
                     weakList = weakList.filter(item => 
                         item.w.en.toLowerCase().includes(searchInput) || 
                         (item.w.zh && item.w.zh.includes(searchInput)) || 
-                        (item.w.kk && item.w.kk.includes(searchInput))
+                        (item.w.kk && item.w.kk.toLowerCase().includes(searchInput)) || ((item.w.uk || (window.UK_PHONETICS_MANIFEST && window.UK_PHONETICS_MANIFEST[item.w.en.toLowerCase()])) && (item.w.uk || window.UK_PHONETICS_MANIFEST[item.w.en.toLowerCase()]).toLowerCase().includes(searchInput))
                     );
                 }
                 
@@ -7333,7 +7359,7 @@
                         <div class="flex items-center gap-3 min-w-0">
                             <span class="text-lg">${weakDot(c)}</span>
                             <div class="min-w-0">
-                                <div class="font-semibold text-[#1D1D1F] text-[15px]">${esc(w.en)} <span class="text-[10px] text-gray-400 font-mono ml-1">${esc(w.kk || '')}</span></div>
+                                <div class="font-semibold text-[#1D1D1F] text-[15px] flex items-center gap-1.5 flex-wrap">${esc(w.en)} ${renderPhoneticsBadgesHtml(w, 'sm')}</div>
                                 <div class="text-[13px] text-[#86868B] truncate">${esc(w.zh)}</div>
                             </div>
                         </div>
@@ -7358,7 +7384,7 @@
                     if (searchInput) {
                         const match = w.en.toLowerCase().includes(searchInput) || 
                             (w.zh && w.zh.includes(searchInput)) || 
-                            (w.kk && w.kk.includes(searchInput));
+                            (w.kk && w.kk.toLowerCase().includes(searchInput)) || ((w.uk || (window.UK_PHONETICS_MANIFEST && window.UK_PHONETICS_MANIFEST[w.en.toLowerCase()])) && (w.uk || window.UK_PHONETICS_MANIFEST[w.en.toLowerCase()]).toLowerCase().includes(searchInput));
                         if (!match) continue;
                     }
                     const key = w.en.toLowerCase().trim();
@@ -7378,7 +7404,7 @@
                     <div class="weak-row flex items-center justify-between py-3 px-3 border-b border-gray-100 last:border-0 hover:bg-[#F5F5F7] rounded-2xl cursor-pointer transition-colors" data-id="${esc(String(w.id))}" data-word="${esc(w.en)}">
                         <div class="flex items-center gap-3 min-w-0">
                             <div class="min-w-0">
-                                <div class="font-semibold text-[#1D1D1F] text-[15px]">${esc(w.en)} <span class="text-[10px] text-gray-400 font-mono ml-1">${esc(w.kk || '')}</span></div>
+                                <div class="font-semibold text-[#1D1D1F] text-[15px] flex items-center gap-1.5 flex-wrap">${esc(w.en)} ${renderPhoneticsBadgesHtml(w, 'sm')}</div>
                                 <div class="text-[13px] text-[#86868B] truncate">${esc(w.zh)}</div>
                             </div>
                         </div>
@@ -7409,7 +7435,7 @@
             const content = document.getElementById('dict-content');
             content.innerHTML = `
                 <h3 class="text-2xl font-semibold text-[#1D1D1F]">${weakDot(c)} ${esc(w.en)}</h3>
-                <div class="text-[#86868B] font-mono text-sm mb-1">${esc(w.kk || '')}</div>
+                <div class="mb-2">${renderPhoneticsBadgesHtml(w, 'lg')}</div>
                 <div class="text-[#0071E3] font-medium mb-3">${esc(w.zh)}</div>
                 <div class="bg-red-50 border-0 border-red-100 rounded-xl p-3 mb-3 max-h-40 overflow-y-auto">${rows}</div>
                 <div class="text-sm font-medium text-[#FF3B30] mb-4">💡 ${esc(weakAdvice(p, c))}</div>

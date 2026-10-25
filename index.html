@@ -457,7 +457,7 @@
                     <div>
                         <div class="flex items-center justify-between sm:justify-start gap-2">
                             <h2 class="text-lg sm:text-xl font-bold text-slate-900 tracking-tight">今日學習計畫</h2>
-                            <span class="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-600" id="current-date-display">虛擬時間: -</span>
+                            <span class="text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-600 font-mono" id="current-date-display">--</span>
                         </div>
                         <p class="text-xs text-slate-400 mt-0.5">點擊下方數據卡可預覽單字與聽發音</p>
                     </div>
@@ -2430,9 +2430,20 @@
             return dailyPlans[unit];
         }
 
+        function getFormattedCalendarDate(days) {
+            const d = new Date();
+            const y = d.getFullYear();
+            const m = String(d.getMonth() + 1).padStart(2, '0');
+            const date = String(d.getDate()).padStart(2, '0');
+            const dayNames = ['日', '一', '二', '三', '四', '五', '六'];
+            const dayName = dayNames[d.getDay()];
+            const totalDays = Math.max(1, Number(days) || 1);
+            return `${y}/${m}/${date} (${dayName}) · 共 ${totalDays} 天`;
+        }
+
         function updateDashboard() {
             checkCalendarDayRollover();
-            document.getElementById('current-date-display').innerText = `虛擬時間: 第 ${virtualCurrentDay} 天`;
+            document.getElementById('current-date-display').innerText = getFormattedCalendarDate(virtualCurrentDay);
 
             const unitWords = getUnitWords(currentUnit);
             const plan = getDailyPlan(currentUnit);

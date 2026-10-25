@@ -9,7 +9,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261025V26';
+        const APP_BUILD_VERSION = '20261025V27';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -30,19 +30,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261025V26"></script>
-    <script src="toeic_data.js?v=20261025V26"></script>
-    <script src="jh_data.js?v=20261025V26"></script>
-    <script src="listening_data.js?v=20261025V26"></script>
-    <script src="yahoo_dict_data.js?v=20261025V26"></script>
-    <script src="uk_phonetics_manifest.js?v=20261025V26"></script>
-    <script src="words_audio_manifest.js?v=20261025V26"></script>
-    <script src="examples_audio_manifest.js?v=20261025V26"></script>
-    <script src="zh_audio_manifest.js?v=20261025V26"></script>
-    <script src="collocations_audio_manifest.js?v=20261025V26"></script>
-    <script src="syn_ant_data.js?v=20261025V26"></script>
-    <script src="synonyms_unit8_data.js?v=20261025V26"></script>
-    <script src="examples_unit9_data.js?v=20261025V26"></script>
+    <script src="words_data.js?v=20261025V27"></script>
+    <script src="toeic_data.js?v=20261025V27"></script>
+    <script src="jh_data.js?v=20261025V27"></script>
+    <script src="listening_data.js?v=20261025V27"></script>
+    <script src="yahoo_dict_data.js?v=20261025V27"></script>
+    <script src="uk_phonetics_manifest.js?v=20261025V27"></script>
+    <script src="words_audio_manifest.js?v=20261025V27"></script>
+    <script src="examples_audio_manifest.js?v=20261025V27"></script>
+    <script src="zh_audio_manifest.js?v=20261025V27"></script>
+    <script src="collocations_audio_manifest.js?v=20261025V27"></script>
+    <script src="syn_ant_data.js?v=20261025V27"></script>
+    <script src="synonyms_unit8_data.js?v=20261025V27"></script>
+    <script src="examples_unit9_data.js?v=20261025V27"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -1311,9 +1311,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261025V26</span>
+                        <span id="app-version-display">版本 20261025V27</span>
                     </div>
-                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261025V26</p>
+                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261025V27</p>
                 </div>
             </div>
         </div>
@@ -4402,19 +4402,19 @@
             return { kk, uk };
         }
 
-        // 全域雙音標徽章渲染器 (支援單字庫、詳解卡、預覽清單)
+        // 全域雙音標徽章渲染器 (支援單字庫、詳解卡、預覽清單，純細體防折行設計)
         function renderPhoneticsBadgesHtml(w, size = 'sm') {
             const { kk, uk } = getWordPhonetics(w);
             if (!kk && !uk) return '';
             const isLg = size === 'lg';
-            const pad = isLg ? 'px-2 py-0.5 text-xs sm:text-sm' : 'px-1.5 py-0.2 text-[10px] sm:text-[11px]';
-            const tagSize = isLg ? 'text-[10px]' : 'text-[9px]';
+            const pad = isLg ? 'px-2 py-0.5 text-[11px] sm:text-xs' : 'px-1.5 py-0.2 text-[10px] sm:text-[11px]';
+            const tagSize = isLg ? 'text-[9.5px]' : 'text-[9px]';
             let out = '<span class="inline-flex items-center gap-1.5 flex-wrap align-middle select-none">';
             if (kk) {
-                out += '<span class="inline-flex items-center gap-0.5 ' + pad + ' font-mono text-blue-700 bg-blue-50/90 border border-blue-200/60 rounded-md font-medium" title="美式 KK 音標"><span class="' + tagSize + ' font-sans font-bold text-blue-500">美</span><span>' + esc(kk) + '</span></span>';
+                out += '<span class="inline-flex items-center gap-1 ' + pad + ' font-mono text-blue-700 bg-blue-50/80 border border-blue-200/50 rounded-lg font-normal whitespace-nowrap cursor-pointer hover:bg-blue-100/70 active:scale-95 transition-all" title="點擊聆聽美式發音" onclick="event.stopPropagation(); unlockMobileAudio(); playWordAccent(\'' + esc(w.en) + '\', \'us\')"><span class="' + tagSize + ' font-sans font-semibold text-blue-500">美</span><span>' + esc(kk) + '</span><span class="text-[9px] text-blue-400">🔊</span></span>';
             }
             if (uk) {
-                out += '<span class="inline-flex items-center gap-0.5 ' + pad + ' font-mono text-purple-700 bg-purple-50/90 border border-purple-200/60 rounded-md font-medium" title="英式牛津音標 (Yahoo 字典)"><span class="' + tagSize + ' font-sans font-bold text-purple-500">英</span><span>' + esc(uk) + '</span></span>';
+                out += '<span class="inline-flex items-center gap-1 ' + pad + ' font-mono text-purple-700 bg-purple-50/80 border border-purple-200/50 rounded-lg font-normal whitespace-nowrap cursor-pointer hover:bg-purple-100/70 active:scale-95 transition-all" title="點擊聆聽英式牛津發音" onclick="event.stopPropagation(); unlockMobileAudio(); playWordAccent(\'' + esc(w.en) + '\', \'uk\')"><span class="' + tagSize + ' font-sans font-semibold text-purple-500">英</span><span>' + esc(uk) + '</span><span class="text-[9px] text-purple-400">🔊</span></span>';
             }
             out += '</span>';
             return out;
@@ -6618,34 +6618,42 @@
             `;
 
             content.innerHTML = `
-                <!-- 單字標題與發音列 -->
-                <div class="flex justify-between items-start">
-                    <div>
-                        <h2 class="text-2xl sm:text-3xl font-extrabold text-[#1D1D1F] tracking-tight mb-1">${esc(w.en)}</h2>
-                        <div class="flex items-center gap-2 flex-wrap">
+                <!-- 單字標題與發音列 (極簡精緻、純細體與輕巧按鈕設計) -->
+                <div class="flex justify-between items-start gap-2">
+                    <div class="min-w-0 flex-1">
+                        <h2 class="text-2xl sm:text-3xl font-bold text-[#1D1D1F] tracking-tight mb-1.5">${esc(w.en)}</h2>
+                        <div class="flex items-center gap-1.5 flex-wrap">
                             ${renderPhoneticsBadgesHtml(w, 'lg')}
-                            ${parsed.pos ? `<span class="text-xs font-bold font-mono px-2 py-0.5 rounded-md bg-blue-50 text-[#0071E3] border border-blue-200/80 lowercase">${esc(parsed.items && parsed.items.length > 0 ? parsed.items.map(it => it.pos.toLowerCase().endsWith('.') ? it.pos.toLowerCase() : it.pos.toLowerCase() + '.').join(' / ') : (parsed.pos.toLowerCase().endsWith('.') ? parsed.pos.toLowerCase() : parsed.pos.toLowerCase() + '.'))}</span>` : ''}
                         </div>
                     </div>
-                    <div class="flex items-center gap-1.5 shrink-0 flex-wrap justify-end">
-                        <button id="btn-detail-audio-both" type="button" class="px-2.5 py-1.5 rounded-xl font-bold text-xs flex items-center gap-1 shadow-2xs transition-all active:scale-95 cursor-pointer bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:opacity-95" title="雙口音輪播 (美音 ➔ 英音)">
-                            <span>🔄 雙音輪播</span>
+                    <div class="flex items-center gap-1 shrink-0 flex-wrap justify-end">
+                        <button id="btn-detail-audio-both" type="button" class="px-2.5 py-1 rounded-lg font-medium text-[11px] sm:text-xs flex items-center gap-1 shadow-2xs transition-all active:scale-95 cursor-pointer bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:opacity-95" title="雙口音輪播 (美音 ➔ 英音)">
+                            <span>🔄 雙音</span>
                         </button>
-                        <button id="btn-detail-audio-us" type="button" class="px-2 py-1.5 rounded-xl font-bold text-xs flex items-center gap-1 shadow-2xs transition-all active:scale-95 cursor-pointer bg-blue-50 text-[#0071E3] border border-blue-200 hover:bg-blue-100" title="真人美音 (女聲)">
-                            <span>🇺🇸 美音 👩</span>
+                        <button id="btn-detail-audio-us" type="button" class="px-2 py-1 rounded-lg font-medium text-[11px] sm:text-xs flex items-center gap-1 shadow-2xs transition-all active:scale-95 cursor-pointer bg-blue-50 text-[#0071E3] border border-blue-200/80 hover:bg-blue-100" title="真人美音 (女聲)">
+                            <span>🇺🇸 美音</span>
                         </button>
-                        <button id="btn-detail-audio-uk" type="button" class="px-2 py-1.5 rounded-xl font-bold text-xs flex items-center gap-1 shadow-2xs transition-all active:scale-95 cursor-pointer bg-slate-100 text-slate-700 border border-slate-200 hover:bg-slate-200" title="真人英音 (男聲)">
-                            <span>🇬🇧 英音 👨</span>
+                        <button id="btn-detail-audio-uk" type="button" class="px-2 py-1 rounded-lg font-medium text-[11px] sm:text-xs flex items-center gap-1 shadow-2xs transition-all active:scale-95 cursor-pointer bg-slate-100 text-slate-700 border border-slate-200 hover:bg-slate-200" title="真人英音 (男聲)">
+                            <span>🇬🇧 英音</span>
                         </button>
-                        <button id="btn-detail-audio-slow" type="button" class="p-1.5 text-gray-600 bg-gray-100 hover:bg-gray-200 rounded-xl transition-all cursor-pointer text-xs font-medium" title="慢速朗讀 (0.75x)">
+                        <button id="btn-detail-audio-slow" type="button" class="p-1 text-gray-500 bg-gray-100 hover:bg-gray-200 rounded-lg transition-all cursor-pointer text-xs font-medium" title="慢速朗讀 (0.75x)">
                             <span>🐢 慢速</span>
                         </button>
                     </div>
                 </div>
 
-                <!-- 釋義清單 (乾淨純文字字典排版) -->
-                <div class="text-slate-700 font-semibold text-base sm:text-lg leading-relaxed bg-slate-50 px-3.5 py-2.5 rounded-2xl border border-slate-200/70">
-                    ${esc(w.zh)}
+                <!-- 釋義清單 (細體、優雅結構化字典排版) -->
+                <div class="bg-slate-50/80 px-3.5 py-2.5 rounded-2xl border border-slate-200/60 space-y-1.5">
+                    ${parsed.items && parsed.items.length > 0 ? parsed.items.map(it => `
+                        <div class="flex items-baseline gap-2 text-xs sm:text-[13.5px] leading-relaxed">
+                            <span class="font-mono text-[11px] font-medium px-1.5 py-0.5 rounded-md bg-blue-50 text-[#0071E3] border border-blue-200/60 lowercase shrink-0 select-none">${esc(it.pos)}</span>
+                            <span class="text-slate-700 font-normal tracking-wide">${esc(it.text)}</span>
+                        </div>
+                    `).join('') : `
+                        <div class="text-slate-700 font-normal text-xs sm:text-[13.5px] leading-relaxed">
+                            ${esc(w.zh)}
+                        </div>
+                    `}
                 </div>
 
                 <!-- 詞形變化 (動詞三態 / 複數 / 比較級) -->

@@ -396,8 +396,8 @@ const externalVocabularyDB = [
     "uk": "/ˈnɔɪzi/",
     "zh": "adj. 喧鬧的、嗓門大的、聒噪的、嘈雜的",
     "unit": 1,
-    "example": "The students on the grass bank cheered noisily.",
-    "exampleZh": "學生們在草堤上喧鬧地歡呼。"
+    "example": "The kids were playing in the noisy playground.",
+    "exampleZh": "孩子們在嘈雜的遊樂場上玩耍。"
   },
   {
     "id": 41,
@@ -2006,8 +2006,8 @@ const externalVocabularyDB = [
     "uk": "/sləʊ/",
     "zh": "adj. 慢慢地、低速的、緩慢的、慢速的；vt. 遲遲地、放慢速度、減速、降低；adv. 慢了地、低速地、緩慢地",
     "unit": 1,
-    "example": "My resentment of her slowly began to fade.",
-    "exampleZh": "我對她的怨恨慢慢地開始消退了。"
+    "example": "The old bus was very slow on the steep hill.",
+    "exampleZh": "老舊的公車在陡峭的山坡上行駛得非常緩慢。"
   },
   {
     "id": 202,
@@ -3436,8 +3436,8 @@ const externalVocabularyDB = [
     "uk": "/ˈbrʌðə(r)/",
     "zh": "n. 兄弟、同胞、哥哥、弟弟；int. 老兄",
     "unit": 1,
-    "example": "...the film company Warner Brothers.",
-    "exampleZh": "華納兄弟影業公司"
+    "example": "My older brother works as a software engineer in Taipei.",
+    "exampleZh": "我的哥哥在台北擔任軟體工程師。"
   },
   {
     "id": 345,
@@ -4206,8 +4206,8 @@ const externalVocabularyDB = [
     "uk": "/dɑːk/",
     "zh": "adj. 黑暗的、昏暗的、深色的、暗色的；n. 黑暗、暗處、暗色、陰影",
     "unit": 1,
-    "example": "The light went out, and the room was plunged into darkness.",
-    "exampleZh": "燈滅了，房間陷入了黑暗之中。"
+    "example": "It was already dark outside when we finally arrived home.",
+    "exampleZh": "當我們終於到家時，外面天色已經暗了。"
   },
   {
     "id": 422,
@@ -4846,8 +4846,8 @@ const externalVocabularyDB = [
     "uk": "/ˈfiːlɪŋz/",
     "zh": "n. 感覺、觸覺、感情、情緒",
     "unit": 1,
-    "example": "I also had a strange feeling in my neck.",
-    "exampleZh": "我的脖子也有一種奇怪的感覺。"
+    "example": "You should respect other people's feelings in a team.",
+    "exampleZh": "在團隊中你應該尊重他人的感受。"
   },
   {
     "id": 486,
@@ -5406,8 +5406,8 @@ const externalVocabularyDB = [
     "uk": "/ɡreɪt/",
     "zh": "adj. 偉大的、極好的、著名的、大型的；adv. 很好地、很棒地；n. 偉人、偉大的事物、金曲",
     "unit": 1,
-    "example": "A nation must take certain risks to achieve greatness.",
-    "exampleZh": "一個國家必須冒一定風險來成就偉大的事業。"
+    "example": "She did a great job on her final presentation yesterday.",
+    "exampleZh": "她昨天的期末簡報表現得非常出色。"
   },
   {
     "id": 542,
@@ -6246,8 +6246,8 @@ const externalVocabularyDB = [
     "uk": "/ˈles(ə)n/",
     "zh": "n. 課程、教訓、一節課、一課時；vt. 給……上課、教訓、訓誡",
     "unit": 1,
-    "example": "we all need to better understand the thinking of the other side.",
-    "exampleZh": "從危機中還要吸取一個教訓–我們都需要更好地理解對方的想法。"
+    "example": "We learned an important lesson from our past mistakes.",
+    "exampleZh": "我們從過去的錯誤中學到了重要的一課。"
   },
   {
     "id": 626,
@@ -7226,8 +7226,8 @@ const externalVocabularyDB = [
     "uk": "/aʊt/",
     "zh": "adv. 外面、出現、向外、在室外；prep. 出去、從……裡面出去、離開；adj. 熄滅的、盛開的、面市的、出局的；vt. 擊倒、擊暈、揭露（某人）是同性戀、熄滅；n. 出路、脫身辦法、使球員出局的辦法、在野黨",
     "unit": 1,
-    "example": "very hot, very humid.",
-    "exampleZh": "外面熱烘烘的–非常熱，非常潮溼。"
+    "example": "It is sunny today, so the children want to play out.",
+    "exampleZh": "今天陽光明媚，所以孩子們想在外面玩。"
   },
   {
     "id": 724,
@@ -10896,8 +10896,8 @@ const externalVocabularyDB = [
     "uk": "/ˈneɪkɪd/",
     "zh": "adj. 裸體的、裸露的、無遮蓋的、肉眼的",
     "unit": 2,
-    "example": "He had pulled the blanket over his body to hide his nakedness.",
-    "exampleZh": "他拽過了毯子蓋在他的身體上以遮住他的裸體。"
+    "example": "The baby was naked and enjoying the warm bath.",
+    "exampleZh": "小嬰兒光著身子，開心地享受著溫水澡。"
   },
   {
     "id": 1091,
@@ -11016,8 +11016,8 @@ const externalVocabularyDB = [
     "uk": "/ˈpleɪf(ə)l/",
     "zh": "adj. 愛玩耍的、開玩笑的、愛嬉戲的、頑皮的",
     "unit": 2,
-    "example": "She pushed him away playfully.",
-    "exampleZh": "她開玩笑地將他推開。"
+    "example": "The playful puppy ran around the garden chasing butterflies.",
+    "exampleZh": "頑皮的小狗在花園裡到處跑著追蝴蝶。"
   },
   {
     "id": 1103,
@@ -11056,8 +11056,8 @@ const externalVocabularyDB = [
     "uk": "/ˈpaʊəf(ə)l/",
     "zh": "adj. 強有力的、強大的、有影響力的、大功率的；adv. 非常、很",
     "unit": 2,
-    "example": "He is described as a strong, powerfully-built man of 60.",
-    "exampleZh": "他被描述成一個身強力壯的60歲的人。"
+    "example": "The new sports car is equipped with a very powerful engine.",
+    "exampleZh": "這款新跑車配備了非常強大的引擎。"
   },
   {
     "id": 1107,
@@ -17566,8 +17566,8 @@ const externalVocabularyDB = [
     "uk": "/ˈneɡətɪv/",
     "zh": "adj. 有害的、負面的、悲觀的、消極的；n. 底片、負片、否定詞、否定句；v. 拒絕、否定、推翻、證偽",
     "unit": 2,
-    "example": "This will negatively affect the result over the first half of the year.",
-    "exampleZh": "這將會給前半年的結果帶來負面影響。"
+    "example": "Stress can have a very negative impact on your health.",
+    "exampleZh": "壓力會對你的健康產生非常負面的影響。"
   },
   {
     "id": 1758,
@@ -18246,8 +18246,8 @@ const externalVocabularyDB = [
     "uk": "/pleɪn/",
     "zh": "adj. 無裝飾的、樸素的、單色的、無花紋的；adv. 完全地、簡直、明白地、不含糊地；n. 平原、平針、樸實無華的東西",
     "unit": 2,
-    "example": "He was very tall and plainly dressed.",
-    "exampleZh": "他個子很高，穿著樸素。"
+    "example": "She prefers to wear plain clothes without any fancy patterns.",
+    "exampleZh": "她喜歡穿沒有任何花俏圖案的樸素衣服。"
   },
   {
     "id": 1826,
@@ -21696,8 +21696,8 @@ const externalVocabularyDB = [
     "uk": "/ɪnˈtɜːn(ə)l/",
     "zh": "adj. 內部的、體內的、內政的、國內的；n. 內部部件、內部特徵、內臟",
     "unit": 3,
-    "example": "The state is not a unified and internally coherent entity.",
-    "exampleZh": "這個國家不是一個內部凝聚的統一體。"
+    "example": "The company launched an internal investigation into the matter.",
+    "exampleZh": "公司針對此事展開了內部調查。"
   },
   {
     "id": 2171,
@@ -21766,8 +21766,8 @@ const externalVocabularyDB = [
     "uk": "/ˈmædʒɪk(ə)l/",
     "zh": "adj. 魔術的、魔法的、神奇的、迷人的",
     "unit": 3,
-    "example": "During the holiday season the town is magically transformed into a Christmas wonderland.",
-    "exampleZh": "在節日期間該鎮魔法般地變成了聖誕仙境。"
+    "example": "Watching the sunset over the ocean was a truly magical moment.",
+    "exampleZh": "看著夕陽落在海面上真是一個神奇美妙的時刻。"
   },
   {
     "id": 2178,
@@ -22436,8 +22436,8 @@ const externalVocabularyDB = [
     "uk": "/swɪft/",
     "zh": "adj. 快速的、快捷的、迅速的、立刻的；n. 雨燕、蝙蝠蛾、繃架；adv. 迅速",
     "unit": 3,
-    "example": "Lenny moved swiftly and silently across the front lawn.",
-    "exampleZh": "蘭尼快速並且無聲地穿過前面的草坪。"
+    "example": "The government promised to take swift action against the problem.",
+    "exampleZh": "政府承諾將針對該問題採取迅速行動。"
   },
   {
     "id": 2245,
@@ -23086,8 +23086,8 @@ const externalVocabularyDB = [
     "uk": "/feɪd/",
     "zh": "v. 凋謝、枯萎、褪去、逐漸消失；n. 淡入、淡出、褪色、變暗；adj. 平淡的、乏味的",
     "unit": 3,
-    "example": "especially under the impact of direct sunlight.",
-    "exampleZh": "所有顏色都會褪色–尤其是在直射陽光的影響下。"
+    "example": "The bright colors of the curtain began to fade in the sun.",
+    "exampleZh": "窗簾鮮豔的顏色在陽光下開始褪色。"
   },
   {
     "id": 2310,
@@ -23766,8 +23766,8 @@ const externalVocabularyDB = [
     "uk": "/ˈtaɪdi/",
     "zh": "adj. 整潔的、有條理的、愛整潔的、愛整齊的；vt. 使整潔、整理；n. 盛零碎物品的容器、整理、收拾、罩單",
     "unit": 3,
-    "example": "I'm very impressed by your tidiness and order.",
-    "exampleZh": "你的整潔和條理性給我留下了非常深刻的印象。"
+    "example": "Please keep your bedroom clean and tidy at all times.",
+    "exampleZh": "請隨時保持你的臥室乾淨整潔。"
   },
   {
     "id": 2378,
@@ -32336,8 +32336,8 @@ const externalVocabularyDB = [
     "uk": "/kənˈsɪstənt/",
     "zh": "adj. 始終如一的、前後一致的、一貫的、持續的",
     "unit": 4,
-    "example": "It's something I have consistently denied.",
-    "exampleZh": "這是我始終否認的事。"
+    "example": "His actions are not consistent with what he promised before.",
+    "exampleZh": "他的行動與他之前承諾的不一致。"
   },
   {
     "id": 3235,
@@ -32466,8 +32466,8 @@ const externalVocabularyDB = [
     "uk": "/dens/",
     "zh": "adj. 密集的、稠密的、濃密的、濃重的",
     "unit": 4,
-    "example": "Java is a densely populated island.",
-    "exampleZh": "爪哇是一個人口稠密的島嶼。"
+    "example": "The hikers got lost in the dense forest during the heavy fog.",
+    "exampleZh": "登山客在濃霧中迷失在茂密的森林裡。"
   },
   {
     "id": 3248,
@@ -32486,8 +32486,8 @@ const externalVocabularyDB = [
     "uk": "/ˈdespərət/",
     "zh": "adj. 極度渴望的、不顧一切的、拼命的、極需要的",
     "unit": 4,
-    "example": "He was a boy who desperately needed affection.",
-    "exampleZh": "他是個極度需要關愛的孩子。"
+    "example": "They made a desperate attempt to rescue the trapped passengers.",
+    "exampleZh": "他們進行了殊死一搏的努力來營救被困的乘客。"
   },
   {
     "id": 3250,
@@ -32526,8 +32526,8 @@ const externalVocabularyDB = [
     "uk": "/dɪˈvaɪn/",
     "zh": "adj. 神授的、天賜的、神的、絕妙的；v. 猜測、推測、占卜、預測；n. 牧師、神學家、天意、上帝",
     "unit": 4,
-    "example": "The law was divinely ordained.",
-    "exampleZh": "此法律為神授。"
+    "example": "Ancient people believed that their king had divine power.",
+    "exampleZh": "古代人相信他們的國王擁有神聖的力量。"
   },
   {
     "id": 3254,
@@ -33126,8 +33126,8 @@ const externalVocabularyDB = [
     "uk": "/ˈlɔɪəl/",
     "zh": "adj. 忠誠的、忠心的、忠貞的",
     "unit": 4,
-    "example": "They have loyally supported their party and their leader.",
-    "exampleZh": "他們忠心耿耿地支援自己的政黨和領導人。"
+    "example": "A dog is well known as a loyal companion to humans.",
+    "exampleZh": "狗是眾所皆知對人類忠誠的夥伴。"
   },
   {
     "id": 3314,
@@ -33616,8 +33616,8 @@ const externalVocabularyDB = [
     "uk": "/rɪˈlʌktənt/",
     "zh": "adj. 不情願的、勉強的",
     "unit": 4,
-    "example": "We have reluctantly agreed to let him go.",
-    "exampleZh": "我們已勉強同意讓他走了。"
+    "example": "She was reluctant to leave her hometown for a new job.",
+    "exampleZh": "她很不情願為了新工作離開家鄉。"
   },
   {
     "id": 3363,
@@ -34656,8 +34656,8 @@ const externalVocabularyDB = [
     "uk": "/ˈdɒmɪneɪt/",
     "zh": "vt. 支配、統治、控制、在……中佔首要地位",
     "unit": 4,
-    "example": "They had five centuries of domination by the Romans.",
-    "exampleZh": "他們被羅馬人統治了5個世紀。"
+    "example": "One tech giant continues to dominate the global smartphone market.",
+    "exampleZh": "一家科技巨頭繼續主導全球智慧型手機市場。"
   },
   {
     "id": 3467,
@@ -39046,8 +39046,8 @@ const externalVocabularyDB = [
     "uk": "/ɡləʊb/",
     "zh": "n. 地球儀、地球、世界、球體；v. 成球狀",
     "unit": 4,
-    "example": "of our globe's surface is water.",
-    "exampleZh": "我們地球表面的70%是水。"
+    "example": "She traveled around the globe to explore different cultural traditions.",
+    "exampleZh": "她環遊全球以探索不同的文化傳統。"
   },
   {
     "id": 3906,
@@ -39896,8 +39896,8 @@ const externalVocabularyDB = [
     "uk": "/ˈdʒeləsi/",
     "zh": "n. 妒忌、猜忌、嫉妒、羨慕",
     "unit": 4,
-    "example": "he didn't mind me talking to other guys.",
-    "exampleZh": "開始時，他的猜忌只是小小地表現出來–他並不介意我和其他男孩子說話。"
+    "example": "His constant jealousy eventually ruined their long relationship.",
+    "exampleZh": "他無休止的嫉妒最終毀了他們長久的關係。"
   },
   {
     "id": 3991,
@@ -42966,8 +42966,8 @@ const externalVocabularyDB = [
     "uk": "/əˈbrʌpt/",
     "zh": "adj. 突然的、意外的、粗魯的、唐突的",
     "unit": 5,
-    "example": "He stopped abruptly and looked my way.",
-    "exampleZh": "他突然停住，向我看了過來。"
+    "example": "The meeting came to an abrupt end when the fire alarm rang.",
+    "exampleZh": "當火警響起時，會議突然中斷結束了。"
   },
   {
     "id": 4298,
@@ -43296,8 +43296,8 @@ const externalVocabularyDB = [
     "uk": "/ˈfræntɪk/",
     "zh": "adj. 發狂似的、緊張忙亂的、無法控制感情的",
     "unit": 5,
-    "example": "She clutched frantically at Emily's arm.",
-    "exampleZh": "她發狂似地緊緊抓著艾米莉的胳膊。"
+    "example": "There was a frantic rush to buy concert tickets before they sold out.",
+    "exampleZh": "在門票售罄之前，出現了一陣瘋狂的搶購潮。"
   },
   {
     "id": 4331,
@@ -48236,8 +48236,8 @@ const externalVocabularyDB = [
     "uk": "/fiˈɒnseɪ/",
     "zh": "n. 未婚夫",
     "unit": 5,
-    "example": "This is my fiancée.",
-    "exampleZh": "這是我的未婚妻。"
+    "example": "She introduced her fiancé to all her close friends at the party.",
+    "exampleZh": "她在派對上向所有的親密朋友介紹了她的未婚夫。"
   },
   {
     "id": 4825,
@@ -48246,8 +48246,8 @@ const externalVocabularyDB = [
     "uk": "/fiˈɒnseɪ/",
     "zh": "n. 未婚妻",
     "unit": 5,
-    "example": "The whole incident had upset me and my fiancée terribly.",
-    "exampleZh": "整個事件已使我和我的未婚妻非常煩惱。"
+    "example": "He bought an elegant diamond ring for his fiancée.",
+    "exampleZh": "他為他的未婚妻買了一枚優雅的鑽戒。"
   },
   {
     "id": 4826,
@@ -48736,8 +48736,8 @@ const externalVocabularyDB = [
     "uk": "/ɡrəʊs/",
     "zh": "adj. 總的、毛的、嚴重的、極端的；adv. 總共、全部；vt. 總共賺得；n. 一羅、毛收入、總收入",
     "unit": 5,
-    "example": "2 million a year.",
-    "exampleZh": "全年總銷售額達到近二百萬美元。"
+    "example": "The company reported a gross profit of five million dollars this year.",
+    "exampleZh": "該公司報告今年毛利潤達到了五百萬美元。"
   },
   {
     "id": 4875,
@@ -53906,8 +53906,8 @@ const externalVocabularyDB = [
     "uk": "/æmˈbɪɡjuəs/",
     "zh": "adj. 含糊不清的、模稜兩可的、有歧義的、不明朗的",
     "unit": 6,
-    "example": "The national conference on democracy ended ambiguously.",
-    "exampleZh": "這次全國民主大會含糊其詞地結束了。"
+    "example": "The instructions on the exam paper were somewhat ambiguous to students.",
+    "exampleZh": "試卷上的說明對學生來說有些模稜兩可。"
   },
   {
     "id": 5392,
@@ -53966,8 +53966,8 @@ const externalVocabularyDB = [
     "uk": "/ɔːˈθentɪk/",
     "zh": "adj. 可信的、真實的、原作的、真跡的",
     "unit": 6,
-    "example": "There are factors, however, that have cast doubt on the statue's authenticity.",
-    "exampleZh": "然而，有些因素已經讓人們對這座雕像的真實性產生了懷疑。"
+    "example": "We enjoyed an authentic Italian dinner at the downtown restaurant.",
+    "exampleZh": "我們在市中心的餐廳享用了道地的義大利晚餐。"
   },
   {
     "id": 5398,
@@ -54446,8 +54446,8 @@ const externalVocabularyDB = [
     "uk": "/ˈeləkwənt/",
     "zh": "adj. 雄辯的、口才流利的、傳神的、明確表示的",
     "unit": 6,
-    "example": "She can speak with an eloquence that is almost inspirational.",
-    "exampleZh": "她能用一種近乎激發靈感的口才發言。"
+    "example": "The lawyer gave an eloquent speech to defend his innocent client.",
+    "exampleZh": "律師發表了一場雄辯的演說來為他無辜的當事人辯護。"
   },
   {
     "id": 5446,
@@ -54586,8 +54586,8 @@ const externalVocabularyDB = [
     "uk": "/ˈfrædʒaɪl/",
     "zh": "adj. 易碎的、虛弱的、易損的、不牢固的",
     "unit": 6,
-    "example": "Older drivers are more likely to be seriously injured because of the fragility of their bones.",
-    "exampleZh": "年紀較大的司機因骨骼易碎而更可能會受重傷。"
+    "example": "Please handle the antique glass vase with care because it is fragile.",
+    "exampleZh": "請小心拿放這只古董玻璃花瓶，因為它非常脆弱易碎。"
   },
   {
     "id": 5460,
@@ -54666,8 +54666,8 @@ const externalVocabularyDB = [
     "uk": "/ɪmˈplɪsɪt/",
     "zh": "adj. 不言明的、含蓄的、未言明的、內含的",
     "unit": 6,
-    "example": "The jury implicitly criticized the government by their verdict.",
-    "exampleZh": "陪審團透過他們的裁決含蓄地批評了政府。"
+    "example": "There was an implicit trust between the two business partners.",
+    "exampleZh": "兩位商業夥伴之間有著心照不宣的信任。"
   },
   {
     "id": 5468,
@@ -55216,8 +55216,8 @@ const externalVocabularyDB = [
     "uk": "/ˈrezəluːt/",
     "zh": "adj. 堅決的、不屈不撓的、果斷的",
     "unit": 6,
-    "example": "He resolutely refused to speak English unless forced to.",
-    "exampleZh": "除非被逼迫，他堅決拒絕說英語。"
+    "example": "She remained resolute in her decision to pursue an artistic career.",
+    "exampleZh": "她堅持追求藝術事業的決定，態度始終堅決。"
   },
   {
     "id": 5523,
@@ -55826,8 +55826,8 @@ const externalVocabularyDB = [
     "uk": "/əˈprɒksɪmət/",
     "zh": "adj. 大概的、近似的；vt. 類似、接近、模仿、模擬",
     "unit": 6,
-    "example": "150 million is to be spent on improvements.",
-    "exampleZh": "大概1.5億美元將花在改進上。"
+    "example": "Can you provide an approximate cost for the house renovation?",
+    "exampleZh": "你能提供一個房屋翻新的大概費用嗎？"
   },
   {
     "id": 5584,
@@ -57926,8 +57926,8 @@ const externalVocabularyDB = [
     "uk": "/ˌækwɪˈzɪʃ(ə)n/",
     "zh": "n. 收購、取得、學得、習得",
     "unit": 6,
-    "example": "...the acquisition of a profitable paper recycling company.",
-    "exampleZh": "對一家有利潤的廢紙回收公司的收購。"
+    "example": "The tech company announced the acquisition of a promising AI startup.",
+    "exampleZh": "這家科技公司宣布收購了一家具發展前景的人工智慧新創公司。"
   },
   {
     "id": 5794,
@@ -59736,8 +59736,8 @@ const externalVocabularyDB = [
     "uk": "/dɪˈspəʊzəb(ə)l/",
     "zh": "adj. 一次性的、用完即丟棄的、可支配的、可自由使用的；n. 一次性用品",
     "unit": 6,
-    "example": "3 billion-plus annual diaper market.",
-    "exampleZh": "目前，一次性尿布佔年銷售額30多億美元的尿布市場的80%至85%左右。"
+    "example": "Most fast food restaurants use disposable cups and paper bags.",
+    "exampleZh": "大多數速食餐廳使用免洗杯和紙袋。"
   },
   {
     "id": 5975,
@@ -60826,8 +60826,8 @@ const externalVocabularyDB = [
     "uk": "/ˈɪmplɪment/",
     "zh": "vt. 執行、貫徹、為……提供工具；n. 工具、器具、履行、手段",
     "unit": 7,
-    "example": "Very little has been achieved in the implementation of the peace agreement signed last January.",
-    "exampleZh": "去年1月份簽署的和平協議的執行幾乎沒有什麼進展。"
+    "example": "The school board decided to implement new safety measures immediately.",
+    "exampleZh": "學校董事會決定立即實施新的安全措施。"
   },
   {
     "id": 6084,
@@ -64506,8 +64506,8 @@ const externalVocabularyDB = [
     "uk": "/ˈveəriəb(ə)l/",
     "zh": "adj. 可變物、易變的、多變的、時好時壞的；n. 可變因素、可變性、變數、變元",
     "unit": 7,
-    "example": "There's a great deal of variability between individuals.",
-    "exampleZh": "個體之間存在著很大的可變性。"
+    "example": "Mountain weather is highly variable and can change in minutes.",
+    "exampleZh": "山區的天氣極為多變，幾分鐘內就會改變。"
   },
   {
     "id": 6452,

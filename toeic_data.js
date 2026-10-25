@@ -3366,8 +3366,8 @@ const toeicWordsDB = [
     "uk": "/beɪs/",
     "zh": "n. 基本的、基礎的、根基、底部；vt. 以……為基礎、把基地設在……；adj. 卑鄙的、下流的、低劣的",
     "unit": 11,
-    "example": "Feature sets pull BAs to create stories.",
-    "exampleZh": "特性集促使BA(業務分析師)建立使用者故事。"
+    "example": "The multinational firm decided to base its regional headquarters in Singapore.",
+    "exampleZh": "這家跨國企業決定將其區域總部設立在新加坡。"
   },
   {
     "id": 20338,
@@ -26886,8 +26886,8 @@ const toeicWordsDB = [
     "uk": "/ˈstedfɑːst/",
     "zh": "adj. 堅定的、不動搖的、忠誠的",
     "unit": 13,
-    "example": "Anne steadfastly refused to confess.",
-    "exampleZh": "安妮堅決不肯承認。"
+    "example": "He remained a steadfast partner throughout the difficult corporate restructuring.",
+    "exampleZh": "在整個艱難的企業重組過程中，他始終是一位堅定可靠的夥伴。"
   },
   {
     "id": 22690,

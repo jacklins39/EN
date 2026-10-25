@@ -18,14 +18,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261025V3"></script>
-    <script src="toeic_data.js?v=20261025V3"></script>
-    <script src="jh_data.js?v=20261025V3"></script>
-    <script src="listening_data.js?v=20261025V3"></script>
-    <script src="words_audio_manifest.js?v=20261025V3"></script>
-    <script src="examples_audio_manifest.js?v=20261025V3"></script>
-    <script src="zh_audio_manifest.js?v=20261025V3"></script>
-    <script src="collocations_audio_manifest.js?v=20261025V3"></script>
+    <script src="words_data.js?v=20261025V4"></script>
+    <script src="toeic_data.js?v=20261025V4"></script>
+    <script src="jh_data.js?v=20261025V4"></script>
+    <script src="listening_data.js?v=20261025V4"></script>
+    <script src="words_audio_manifest.js?v=20261025V4"></script>
+    <script src="examples_audio_manifest.js?v=20261025V4"></script>
+    <script src="zh_audio_manifest.js?v=20261025V4"></script>
+    <script src="collocations_audio_manifest.js?v=20261025V4"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -1193,9 +1193,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261025V3</span>
+                        <span id="app-version-display">版本 20261025V4</span>
                     </div>
-                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261025V3</p>
+                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261025V4</p>
                 </div>
             </div>
         </div>
@@ -5009,9 +5009,10 @@
             };
 
             const p = (posStr || '').toLowerCase();
-            const hasV = p.includes('v.') || p.includes('vi.') || p.includes('vt.');
-            const hasN = p.includes('n.');
-            const hasAdj = p.includes('adj.') || p.includes('a.');
+            // 以詞界判斷詞性，避免 pron./adv./conj. 內含 n./v./a. 造成誤判
+            const hasV = /(^|[^a-z])(v|vi|vt)\./.test(p);
+            const hasN = /(^|[^a-z])n\./.test(p);
+            const hasAdj = /(^|[^a-z])(adj|a)\./.test(p);
 
             // 1. 動詞變化
             if (hasV || (IRREGULAR_VERBS[w] !== undefined && IRREGULAR_VERBS[w] !== null)) {
@@ -5066,7 +5067,7 @@
             }
 
             // 2. 名詞複數變化
-            if (hasN || IRREGULAR_PLURALS[w] || (!hasV && !hasAdj && !forms.isVerb)) {
+            if (hasN || (IRREGULAR_PLURALS[w] && !p)) {
                 forms.isNoun = true;
                 if (IRREGULAR_PLURALS[w]) {
                     forms.nounForms = {
@@ -5262,15 +5263,18 @@
 
             if (info && info.tokens && info.tokens.length > 0) {
                 for (const token of info.tokens) {
-                    if (result.length >= 6) break;
+                    if (result.length >= 4) break;
                     const candidates = index.tokenToWords.get(token) || [];
                     for (const candLower of candidates) {
                         if (seen.has(candLower)) continue;
                         const candInfo = index.wordInfo.get(candLower);
                         if (!candInfo) continue;
 
-                        // 詞性相容性檢查 (若雙方皆標註詞性，必須具備相容詞性)
-                        if (info.posSet && info.posSet.size > 0 && candInfo.posSet && candInfo.posSet.size > 0) {
+                        // 詞性必須明確且相容 (任一方缺詞性即略過，避免文不對題)
+                        if (!info.posSet || info.posSet.size === 0 || !candInfo.posSet || candInfo.posSet.size === 0) continue;
+                        // 片語、與原字同字根的變形不列入
+                        if (candLower.includes(' ') || candLower.startsWith(baseW) || baseW.startsWith(candLower)) continue;
+                        {
                             let hasCommonPos = false;
                             for (const p of info.posSet) {
                                 if (candInfo.posSet.has(p)) {
@@ -5283,12 +5287,403 @@
 
                         seen.add(candLower);
                         result.push(candInfo.en);
-                        if (result.length >= 6) break;
+                        if (result.length >= 4) break;
                     }
                 }
             }
 
             return result;
+        }
+
+        // 精選反義詞庫 (人工校對、雙向對照；僅收錄詞性一致且語意明確相反之字，不做自動推估)
+        const CORE_WORD_ANTONYMS = {
+            "able": ["unable"],
+            "above": ["below"],
+            "absence": ["presence"],
+            "absent": ["present"],
+            "abundant": ["scarce"],
+            "accept": ["refuse", "reject"],
+            "accurate": ["inaccurate"],
+            "active": ["passive"],
+            "add": ["subtract"],
+            "admit": ["deny"],
+            "advance": ["postpone"],
+            "advantage": ["disadvantage"],
+            "after": ["before"],
+            "agree": ["disagree"],
+            "alive": ["dead"],
+            "allow": ["forbid"],
+            "always": ["never"],
+            "ancient": ["modern"],
+            "answer": ["question"],
+            "apart": ["together"],
+            "appear": ["disappear"],
+            "approve": ["disapprove"],
+            "arrive": ["depart"],
+            "artificial": ["natural"],
+            "ascend": ["descend"],
+            "asleep": ["awake"],
+            "asset": ["liability"],
+            "attack": ["defend"],
+            "attract": ["repel"],
+            "awake": ["asleep"],
+            "beautiful": ["ugly"],
+            "before": ["after"],
+            "begin": ["finish"],
+            "beginning": ["end"],
+            "below": ["above"],
+            "best": ["worst"],
+            "better": ["worse"],
+            "big": ["small"],
+            "birth": ["death"],
+            "bitter": ["sweet"],
+            "black": ["white"],
+            "boring": ["interesting"],
+            "borrow": ["lend"],
+            "bottom": ["top"],
+            "brave": ["cowardly"],
+            "break": ["repair"],
+            "bright": ["dim"],
+            "broad": ["narrow"],
+            "buy": ["sell"],
+            "calm": ["nervous"],
+            "capable": ["incapable"],
+            "careful": ["careless"],
+            "careless": ["careful"],
+            "cause": ["effect"],
+            "cautious": ["reckless"],
+            "chaos": ["order"],
+            "cheap": ["expensive"],
+            "clean": ["dirty"],
+            "clear": ["vague"],
+            "clever": ["stupid"],
+            "close": ["open"],
+            "cold": ["hot"],
+            "come": ["go"],
+            "comfortable": ["uncomfortable"],
+            "common": ["rare"],
+            "complex": ["simple"],
+            "compulsory": ["voluntary"],
+            "concave": ["convex"],
+            "conceal": ["reveal"],
+            "confident": ["insecure"],
+            "connect": ["disconnect"],
+            "construct": ["destroy"],
+            "convex": ["concave"],
+            "cool": ["warm"],
+            "correct": ["incorrect"],
+            "cowardly": ["brave"],
+            "create": ["destroy"],
+            "cruel": ["kind"],
+            "cry": ["laugh"],
+            "curved": ["straight"],
+            "dangerous": ["safe"],
+            "dark": ["light"],
+            "day": ["night"],
+            "dead": ["alive"],
+            "death": ["birth"],
+            "decrease": ["increase"],
+            "deep": ["shallow"],
+            "defeat": ["victory"],
+            "defend": ["attack"],
+            "deficit": ["surplus"],
+            "deflate": ["inflate"],
+            "demand": ["supply"],
+            "deny": ["admit"],
+            "depart": ["arrive"],
+            "dependent": ["independent"],
+            "deposit": ["withdraw"],
+            "descend": ["ascend"],
+            "destroy": ["construct", "create"],
+            "different": ["same"],
+            "difficult": ["easy"],
+            "diligent": ["lazy"],
+            "dim": ["bright"],
+            "dirty": ["clean"],
+            "disadvantage": ["advantage"],
+            "disagree": ["agree"],
+            "disappear": ["appear"],
+            "disapprove": ["approve"],
+            "disconnect": ["connect"],
+            "discourage": ["encourage"],
+            "dishonest": ["honest"],
+            "disobey": ["obey"],
+            "domestic": ["foreign"],
+            "down": ["up"],
+            "drunk": ["sober"],
+            "dry": ["wet"],
+            "early": ["late"],
+            "east": ["west"],
+            "easy": ["difficult"],
+            "effect": ["cause"],
+            "empty": ["full"],
+            "encourage": ["discourage"],
+            "end": ["beginning"],
+            "enemy": ["friend"],
+            "enter": ["exit"],
+            "equal": ["unequal"],
+            "evening": ["morning"],
+            "exclude": ["include"],
+            "exit": ["enter"],
+            "expand": ["shrink"],
+            "expense": ["income"],
+            "expensive": ["cheap"],
+            "export": ["import"],
+            "exterior": ["interior"],
+            "external": ["internal"],
+            "extraordinary": ["ordinary"],
+            "fail": ["succeed"],
+            "failure": ["success"],
+            "fake": ["genuine"],
+            "fall": ["rise"],
+            "false": ["true"],
+            "famous": ["unknown"],
+            "fast": ["slow"],
+            "fat": ["thin"],
+            "female": ["male"],
+            "few": ["many"],
+            "finish": ["begin"],
+            "fire": ["hire"],
+            "first": ["last"],
+            "float": ["sink"],
+            "follow": ["lead"],
+            "foolish": ["wise"],
+            "forbid": ["allow"],
+            "foreign": ["domestic"],
+            "forget": ["remember"],
+            "frequent": ["rare"],
+            "fresh": ["stale"],
+            "friend": ["enemy"],
+            "full": ["empty"],
+            "gain": ["loss"],
+            "generous": ["stingy"],
+            "gentle": ["rough"],
+            "genuine": ["fake"],
+            "go": ["come"],
+            "guilty": ["innocent"],
+            "happiness": ["misery"],
+            "happy": ["sad"],
+            "hard": ["soft"],
+            "hate": ["love"],
+            "healthy": ["sick"],
+            "heavy": ["light"],
+            "high": ["low"],
+            "hire": ["fire"],
+            "honest": ["dishonest"],
+            "horizontal": ["vertical"],
+            "hot": ["cold"],
+            "huge": ["tiny"],
+            "humble": ["proud"],
+            "ignore": ["notice"],
+            "illegal": ["legal"],
+            "impatient": ["patient"],
+            "import": ["export"],
+            "impossible": ["possible"],
+            "inaccurate": ["accurate"],
+            "incapable": ["capable"],
+            "include": ["exclude"],
+            "income": ["expense"],
+            "incorrect": ["correct"],
+            "increase": ["decrease"],
+            "independent": ["dependent"],
+            "inferior": ["superior"],
+            "inflate": ["deflate"],
+            "innocent": ["guilty"],
+            "insecure": ["confident"],
+            "inside": ["outside"],
+            "interesting": ["boring"],
+            "interior": ["exterior"],
+            "internal": ["external"],
+            "invisible": ["visible"],
+            "irregular": ["regular"],
+            "join": ["leave"],
+            "junior": ["senior"],
+            "kind": ["cruel"],
+            "last": ["first"],
+            "late": ["early"],
+            "laugh": ["cry"],
+            "lazy": ["diligent"],
+            "lead": ["follow"],
+            "learn": ["teach"],
+            "leave": ["join"],
+            "left": ["right"],
+            "legal": ["illegal"],
+            "lend": ["borrow"],
+            "liability": ["asset"],
+            "light": ["dark", "heavy"],
+            "liquid": ["solid"],
+            "loose": ["tight"],
+            "lose": ["win"],
+            "loss": ["profit", "gain"],
+            "loud": ["quiet"],
+            "love": ["hate"],
+            "low": ["high"],
+            "lower": ["raise"],
+            "major": ["minor"],
+            "male": ["female"],
+            "many": ["few"],
+            "maximize": ["minimize"],
+            "maximum": ["minimum"],
+            "minimize": ["maximize"],
+            "minimum": ["maximum"],
+            "minor": ["major"],
+            "misery": ["happiness"],
+            "modern": ["ancient"],
+            "morning": ["evening"],
+            "narrow": ["broad", "wide"],
+            "natural": ["artificial"],
+            "near": ["remote"],
+            "negative": ["positive"],
+            "nervous": ["calm"],
+            "never": ["always"],
+            "new": ["old"],
+            "night": ["day"],
+            "noisy": ["quiet", "silent"],
+            "north": ["south"],
+            "notice": ["ignore"],
+            "obey": ["disobey"],
+            "occupied": ["vacant"],
+            "old": ["new", "young"],
+            "opaque": ["transparent"],
+            "open": ["close", "shut"],
+            "optimism": ["pessimism"],
+            "optimistic": ["pessimistic"],
+            "order": ["chaos"],
+            "ordinary": ["extraordinary"],
+            "outside": ["inside"],
+            "passive": ["active"],
+            "patient": ["impatient"],
+            "peace": ["war"],
+            "permanent": ["temporary"],
+            "pessimism": ["optimism"],
+            "pessimistic": ["optimistic"],
+            "polite": ["rude"],
+            "poor": ["rich"],
+            "positive": ["negative"],
+            "possible": ["impossible"],
+            "postpone": ["advance"],
+            "presence": ["absence"],
+            "present": ["absent"],
+            "private": ["public"],
+            "profit": ["loss"],
+            "proud": ["humble"],
+            "public": ["private"],
+            "pull": ["push"],
+            "punish": ["reward"],
+            "push": ["pull"],
+            "quality": ["quantity"],
+            "quantity": ["quality"],
+            "question": ["answer"],
+            "quiet": ["loud", "noisy"],
+            "raise": ["lower"],
+            "rare": ["common", "frequent"],
+            "receive": ["send"],
+            "reckless": ["cautious"],
+            "refuse": ["accept"],
+            "regular": ["irregular"],
+            "reject": ["accept"],
+            "remember": ["forget"],
+            "remote": ["near"],
+            "repair": ["break"],
+            "repel": ["attract"],
+            "retail": ["wholesale"],
+            "reveal": ["conceal"],
+            "reward": ["punish"],
+            "rich": ["poor"],
+            "right": ["left"],
+            "rise": ["fall"],
+            "rough": ["gentle", "smooth"],
+            "rude": ["polite"],
+            "rural": ["urban"],
+            "sad": ["happy"],
+            "safe": ["dangerous"],
+            "same": ["different"],
+            "save": ["spend"],
+            "scarce": ["abundant"],
+            "sell": ["buy"],
+            "send": ["receive"],
+            "senior": ["junior"],
+            "shallow": ["deep"],
+            "short": ["tall"],
+            "shrink": ["expand"],
+            "shut": ["open"],
+            "sick": ["healthy"],
+            "silent": ["noisy"],
+            "simple": ["complex"],
+            "sink": ["float"],
+            "slow": ["fast"],
+            "small": ["big"],
+            "smart": ["stupid"],
+            "smooth": ["rough"],
+            "sober": ["drunk"],
+            "soft": ["hard"],
+            "solid": ["liquid"],
+            "south": ["north"],
+            "spend": ["save"],
+            "stale": ["fresh"],
+            "stingy": ["generous"],
+            "straight": ["curved"],
+            "strength": ["weakness"],
+            "strong": ["weak"],
+            "stupid": ["clever", "smart"],
+            "subtract": ["add"],
+            "succeed": ["fail"],
+            "success": ["failure"],
+            "sunrise": ["sunset"],
+            "sunset": ["sunrise"],
+            "superior": ["inferior"],
+            "supply": ["demand"],
+            "surplus": ["deficit"],
+            "sweet": ["bitter"],
+            "tall": ["short"],
+            "tame": ["wild"],
+            "teach": ["learn"],
+            "temporary": ["permanent"],
+            "thick": ["thin"],
+            "thin": ["fat", "thick"],
+            "tight": ["loose"],
+            "tiny": ["huge"],
+            "together": ["apart"],
+            "top": ["bottom"],
+            "transparent": ["opaque"],
+            "true": ["false"],
+            "ugly": ["beautiful"],
+            "unable": ["able"],
+            "uncomfortable": ["comfortable"],
+            "unequal": ["equal"],
+            "unknown": ["famous"],
+            "up": ["down"],
+            "urban": ["rural"],
+            "useful": ["useless"],
+            "useless": ["useful"],
+            "vacant": ["occupied"],
+            "vague": ["clear"],
+            "vertical": ["horizontal"],
+            "victory": ["defeat"],
+            "visible": ["invisible"],
+            "voluntary": ["compulsory"],
+            "war": ["peace"],
+            "warm": ["cool"],
+            "weak": ["strong"],
+            "weakness": ["strength"],
+            "west": ["east"],
+            "wet": ["dry"],
+            "white": ["black"],
+            "wholesale": ["retail"],
+            "wide": ["narrow"],
+            "wild": ["tame"],
+            "win": ["lose"],
+            "wise": ["foolish"],
+            "withdraw": ["deposit"],
+            "worse": ["better"],
+            "worst": ["best"],
+            "young": ["old"],
+        };
+
+        function getWordAntonyms(word) {
+            const rawW = (word || '').trim().toLowerCase();
+            const baseW = resolveBaseLemma(rawW);
+            return (CORE_WORD_ANTONYMS[rawW] || CORE_WORD_ANTONYMS[baseW] || []).slice(0, 4);
         }
 
         function getUnitBadgeInfo(unit) {
@@ -5396,6 +5791,8 @@
             const forms = computeWordForms(w.en, w.zh);
             const collocations = getWordCollocations(w.en, w);
             const synonyms = getWordSynonyms(w.en, w);
+            const antonyms = getWordAntonyms(w.en);
+            const coreSynSet = new Set((CORE_WORD_SYNONYMS[w.en.toLowerCase()] || CORE_WORD_SYNONYMS[resolveBaseLemma(w.en.toLowerCase())] || []).map(s => s.toLowerCase()));
             const unitInfo = isExternal ? { name: '外部查詢', color: 'bg-purple-50 text-purple-700 border-purple-200' } : getUnitBadgeInfo(w.unit || builtinUnitOf(w.en) || 1);
 
             // 更新彈窗頂部來源徽章
@@ -5504,24 +5901,29 @@
                 `;
             }
 
-            // 相似詞區塊 HTML
-            const synonymsHtml = `
-                <div class="bg-indigo-50/40 p-3.5 rounded-2xl border border-indigo-100">
-                    <div class="flex items-center justify-between text-xs font-bold text-indigo-900 mb-2">
-                        <div class="flex items-center gap-1.5">
-                            <span>🔗</span><span>相似詞 / 替換詞彙 (Synonyms)</span>
-                        </div>
-                        <span class="text-[10px] text-indigo-400 font-normal">點擊標籤可立即展開詳解</span>
+            // 同義 / 反義詞區塊 HTML (精選詞庫優先；語意推估僅作參考並明確標示)
+            const relTag = (s, tone) => `
+                <button type="button" class="px-2.5 py-1 text-xs font-medium rounded-full bg-white ${tone} border shadow-2xs hover:bg-[#0071E3] hover:text-white hover:border-[#0071E3] active:scale-95 transition-all cursor-pointer" onclick="showWordDetailModal('${esc(s)}')">${esc(s)}</button>`;
+            const hasInferred = synonyms.some(s => !coreSynSet.has(s.toLowerCase()));
+            const synonymsHtml = (synonyms.length || antonyms.length) ? `
+                <div class="bg-slate-50/70 p-3.5 rounded-2xl border border-slate-200/70 space-y-2.5">
+                    <div class="flex items-center justify-between text-xs font-bold text-slate-700">
+                        <span>🔗 同義 / 反義詞</span>
+                        <span class="text-[10px] text-slate-400 font-normal">點擊可查看該字詳解</span>
                     </div>
-                    <div id="detail-synonyms-container" class="flex flex-wrap gap-1.5">
-                        ${synonyms.length > 0 ? synonyms.map(s => `
-                            <button type="button" class="px-2.5 py-1 text-xs font-medium rounded-full bg-white text-indigo-700 hover:bg-[#0071E3] hover:text-white border border-indigo-200/80 shadow-2xs hover:scale-105 active:scale-95 transition-all cursor-pointer" onclick="showWordDetailModal('${esc(s)}')">
-                                ${esc(s)} ➔
-                            </button>
-                        `).join('') : `<span class="text-xs text-gray-400 py-1">暫無直接相似詞彙</span>`}
-                    </div>
+                    ${synonyms.length ? `
+                    <div class="flex items-start gap-2">
+                        <span class="shrink-0 mt-1 text-[10px] font-bold px-1.5 py-0.5 rounded-md bg-blue-50 text-[#0071E3]">同義</span>
+                        <div class="flex flex-wrap gap-1.5">${synonyms.map(s => relTag(s, 'text-slate-700 border-slate-200')).join('')}</div>
+                    </div>` : ''}
+                    ${antonyms.length ? `
+                    <div class="flex items-start gap-2">
+                        <span class="shrink-0 mt-1 text-[10px] font-bold px-1.5 py-0.5 rounded-md bg-rose-50 text-rose-600">反義</span>
+                        <div class="flex flex-wrap gap-1.5">${antonyms.map(s => relTag(s, 'text-slate-700 border-slate-200')).join('')}</div>
+                    </div>` : ''}
+                    ${hasInferred ? `<p class="text-[10px] text-slate-400">＊部分同義詞依中文釋義比對推估，語境不同時可能無法直接替換</p>` : ''}
                 </div>
-            `;
+            ` : '';
 
             // 例句區塊 HTML
             const exampleHtml = w.example ? `

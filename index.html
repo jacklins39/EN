@@ -359,8 +359,13 @@
                 border-bottom: 1px solid #F1F5F9;
             }
             nav.fixed > div {
-                flex-direction: column; justify-content: flex-start; align-items: stretch;
-                height: auto !important; padding: 0.5rem 0.75rem; gap: 0.25rem;
+                display: flex !important;
+                flex-direction: column !important;
+                justify-content: flex-start !important;
+                align-items: stretch !important;
+                height: auto !important;
+                padding: 0.5rem 0.75rem;
+                gap: 0.25rem;
             }
             nav.fixed button {
                 flex-direction: row !important; justify-content: flex-start !important;
@@ -504,14 +509,18 @@
                     </div>
                 </div>
 
-                <!-- 詞彙掌握進度條 -->
-                <div class="bg-slate-50/90 rounded-2xl p-3 border border-slate-200/60 mb-3">
-                    <div class="flex justify-between items-center mb-1.5">
-                        <span class="text-xs font-semibold text-slate-600">單元學習與掌握進度</span>
-                        <span class="text-xs font-bold text-slate-800 font-mono" id="stat-mastered">0 / 1000</span>
+                <!-- 詞彙掌握進度條 (直接整合成長曲線入口，語意與視覺完全統一) -->
+                <div onclick="switchTab('view-analysis', null)" class="group bg-gradient-to-br from-slate-50/90 to-blue-50/20 rounded-2xl p-3 sm:p-3.5 border border-slate-200/70 hover:border-blue-300 hover:shadow-sm transition-all cursor-pointer active:scale-[0.99] mb-3 select-none">
+                    <div class="flex justify-between items-center mb-1.5 gap-2">
+                        <span class="text-[11px] sm:text-xs font-semibold text-slate-600 truncate">單元學習與掌握進度</span>
+                        <span id="btn-view-analysis" class="text-[10px] font-medium text-[#0071E3] bg-blue-50 px-1.5 py-0.5 rounded-md group-hover:bg-[#0071E3] group-hover:text-white transition-colors shrink-0">📈 成長曲線 ➔</span>
                     </div>
-                    <div class="w-full bg-slate-200/80 rounded-full h-2 overflow-hidden">
+                    <div class="w-full bg-slate-200/80 rounded-full h-2 overflow-hidden mb-1.5">
                         <div id="stat-mastered-bar" class="bg-gradient-to-r from-[#0071E3] to-emerald-500 h-2 rounded-full transition-all duration-500" style="width: 0%"></div>
+                    </div>
+                    <div class="flex justify-between items-center text-[11px] text-slate-400">
+                        <span class="truncate pr-2">點擊查看每日詞彙成長圖</span>
+                        <span class="font-bold text-slate-700 font-mono shrink-0" id="stat-mastered">0 / 1000</span>
                     </div>
                 </div>
 
@@ -531,65 +540,59 @@
                     </div>
                 </div>
 
-                <!-- 主行動按鈕群：開始今日課程 + 自動輪播發音 (手機版單欄自適應，不擠壓破版) -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-3">
+                <!-- 主行動按鈕群：開始今日課程 + 自動輪播發音 -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     <button id="btn-start-session" class="btn-action w-full bg-gradient-to-r from-[#0071E3] to-[#005BB5] hover:from-[#0077ED] hover:to-[#0062C4] text-white font-semibold py-3 px-3 rounded-xl shadow-sm text-sm flex items-center justify-center gap-1.5 cursor-pointer transition-all active:scale-[0.99]">
                         <span>▶ 開始今日課程</span>
                     </button>
-                    <button id="lobby-btn-auto-daily" class="w-full bg-blue-50/80 hover:bg-blue-100 text-[#0071E3] font-semibold py-3 px-3 rounded-xl border border-blue-200/70 flex items-center justify-center gap-1.5 cursor-pointer transition-all active:scale-[0.99] text-sm">
+                    <button id="lobby-btn-auto-daily" class="w-full bg-slate-50 hover:bg-blue-50/70 text-[#0071E3] font-semibold py-2.5 sm:py-3 px-3 rounded-xl border border-slate-200/90 hover:border-blue-200 flex items-center justify-center gap-1.5 cursor-pointer transition-all active:scale-[0.99] text-sm">
                         <span>🎧 自動輪播發音</span>
                     </button>
                 </div>
+            </div>
 
-                <!-- 自主特訓與錯題加強專區 (整合自原學習中心) -->
-                <div class="space-y-2 pt-1 border-t border-slate-100">
-                    <div class="flex items-center justify-between text-xs font-bold text-slate-700 px-0.5 pt-1">
-                        <span class="flex items-center gap-1"><span>⚡</span> 自主加強與特訓專區</span>
-                        <button id="btn-view-analysis" type="button" class="text-[11px] text-[#0071E3] hover:underline font-medium cursor-pointer" onclick="switchTab('view-analysis', null)">📈 成長曲線 ➔</button>
+            <!-- 第二張獨立卡片：自主強化與錯題複習 (分離式架構 + 統一 Apple 極簡冷色調) -->
+            <div class="bg-white rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-200/75 p-3.5 sm:p-5 mb-4 box-border">
+                <div class="flex items-center justify-between pb-2.5 mb-3 border-b border-slate-100">
+                    <div class="min-w-0">
+                        <h3 class="text-sm sm:text-base font-bold text-slate-900 tracking-tight">自主加練與錯題複習</h3>
+                        <p class="text-[11px] text-slate-400 mt-0.5 truncate">自由練習不影響每日排程，隨時強化記憶弱點</p>
                     </div>
+                </div>
 
-                    <!-- 隨機 10 題與弱點特訓卡 -->
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                        <!-- 隨機 10 題卡 -->
-                        <div class="bg-gradient-to-br from-amber-50/70 to-orange-50/50 p-2.5 sm:p-3 rounded-2xl border border-amber-200/70 flex items-center justify-between min-w-0">
-                            <div class="min-w-0 pr-1.5">
-                                <div class="font-bold text-slate-800 text-xs sm:text-sm flex items-center gap-1">
-                                    <span>⚡</span> 隨機 10 題自測
-                                </div>
-                                <div class="text-[10px] text-slate-500 truncate">利用零碎時間快測</div>
-                            </div>
-                            <button id="lobby-btn-start-rapid" class="shrink-0 bg-amber-500 hover:bg-amber-600 text-white font-bold py-1.5 px-3 rounded-xl text-xs shadow-2xs active:scale-95 transition-all cursor-pointer">
-                                開始 ➔
-                            </button>
+                <!-- 雙欄 Bento 特訓卡 (與上方待複習/新單字雙卡視覺對稱) -->
+                <div class="grid grid-cols-2 gap-2 sm:gap-3 mb-3">
+                    <!-- 隨機 10 題自測 -->
+                    <button id="lobby-btn-start-rapid" type="button" class="group bg-gradient-to-br from-slate-50/90 to-blue-50/30 rounded-2xl p-3 sm:p-3.5 border border-slate-200/70 cursor-pointer hover:border-blue-300 hover:shadow-sm transition-all active:scale-[0.98] text-left min-w-0">
+                        <div class="flex items-center justify-between mb-1 gap-1">
+                            <span class="text-slate-700 text-[11px] sm:text-xs font-bold truncate">⚡ 隨機 10 題</span>
+                            <span class="text-[10px] font-medium text-[#0071E3] bg-blue-50 px-1.5 py-0.5 rounded-md group-hover:bg-[#0071E3] group-hover:text-white transition-colors shrink-0">快測 ➔</span>
                         </div>
+                        <p class="text-[11px] text-slate-500 font-medium truncate">零碎時間快速抽考</p>
+                    </button>
 
-                        <!-- 弱點強化卡 -->
-                        <div class="bg-gradient-to-br from-purple-50/70 to-indigo-50/50 p-2.5 sm:p-3 rounded-2xl border border-purple-200/70 flex items-center justify-between min-w-0">
-                            <div class="min-w-0 pr-1.5">
-                                <div class="font-bold text-slate-800 text-xs sm:text-sm flex items-center gap-1">
-                                    <span>💡</span> 頑固弱點特訓
-                                </div>
-                                <div class="text-[10px] text-purple-700 font-semibold truncate" id="lobby-weak-count-badge">0 弱點</div>
-                            </div>
-                            <button id="lobby-btn-weak-practice" class="shrink-0 bg-purple-600 hover:bg-purple-700 text-white font-bold py-1.5 px-3 rounded-xl text-xs shadow-2xs active:scale-95 transition-all cursor-pointer">
-                                練弱點 ➔
-                            </button>
+                    <!-- 頑固弱點特訓 -->
+                    <button id="lobby-btn-weak-practice" type="button" class="group bg-gradient-to-br from-slate-50/90 to-indigo-50/30 rounded-2xl p-3 sm:p-3.5 border border-slate-200/70 cursor-pointer hover:border-blue-300 hover:shadow-sm transition-all active:scale-[0.98] text-left min-w-0">
+                        <div class="flex items-center justify-between mb-1 gap-1">
+                            <span class="text-slate-700 text-[11px] sm:text-xs font-bold truncate">💡 弱點特訓</span>
+                            <span class="text-[10px] font-medium text-[#0071E3] bg-blue-50 px-1.5 py-0.5 rounded-md group-hover:bg-[#0071E3] group-hover:text-white transition-colors shrink-0">特訓 ➔</span>
                         </div>
+                        <p class="text-[11px] text-slate-500 font-medium truncate" id="lobby-weak-count-badge">0 個弱點單字</p>
+                    </button>
+                </div>
+
+                <!-- 歷史錯題集中複習 -->
+                <div class="bg-slate-50/70 p-2.5 sm:p-3 rounded-2xl border border-slate-200/60">
+                    <div class="flex items-center justify-between mb-2 px-0.5">
+                        <span class="text-[11px] sm:text-xs font-semibold text-slate-600 flex items-center gap-1">
+                            <span>🎯</span> 歷史錯題集中複習
+                        </span>
+                        <span id="lobby-mistake-count-badge" class="text-[11px] font-semibold text-[#0071E3] font-mono">0 字錯題</span>
                     </div>
-
-                    <!-- 錯題集中複習 (本週 / 本月 / 全部) -->
-                    <div class="bg-rose-50/50 p-2.5 sm:p-3 rounded-2xl border border-rose-200/70">
-                        <div class="flex items-center justify-between mb-2 px-0.5">
-                            <span class="text-xs font-bold text-rose-900 flex items-center gap-1">
-                                <span>🎯</span> 歷史錯題集中複習
-                            </span>
-                            <span id="lobby-mistake-count-badge" class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-rose-100 text-rose-700">0 錯題</span>
-                        </div>
-                        <div class="grid grid-cols-3 gap-1.5">
-                            <button id="btn-review-week" class="bg-white hover:bg-rose-50 text-slate-700 hover:text-rose-600 border border-slate-200/80 py-2 px-1 rounded-xl font-medium active:scale-95 transition-all text-[11px] truncate cursor-pointer text-center">本週錯題</button>
-                            <button id="btn-review-month" class="bg-white hover:bg-rose-50 text-slate-700 hover:text-rose-600 border border-slate-200/80 py-2 px-1 rounded-xl font-medium active:scale-95 transition-all text-[11px] truncate cursor-pointer text-center">本月錯題</button>
-                            <button id="btn-review-all" class="bg-rose-500 hover:bg-rose-600 text-white font-bold py-2 px-1 rounded-xl active:scale-95 transition-all text-[11px] truncate cursor-pointer text-center shadow-2xs">全部錯題</button>
-                        </div>
+                    <div class="grid grid-cols-3 gap-1.5">
+                        <button id="btn-review-week" type="button" class="bg-white hover:bg-blue-50/60 text-slate-700 hover:text-[#0071E3] border border-slate-200/80 hover:border-blue-200 py-2 px-1 rounded-xl font-semibold active:scale-95 transition-all text-[11px] sm:text-xs truncate cursor-pointer text-center shadow-2xs">本週錯題</button>
+                        <button id="btn-review-month" type="button" class="bg-white hover:bg-blue-50/60 text-slate-700 hover:text-[#0071E3] border border-slate-200/80 hover:border-blue-200 py-2 px-1 rounded-xl font-semibold active:scale-95 transition-all text-[11px] sm:text-xs truncate cursor-pointer text-center shadow-2xs">本月錯題</button>
+                        <button id="btn-review-all" type="button" class="bg-white hover:bg-[#0071E3] text-[#0071E3] hover:text-white border border-blue-200 hover:border-[#0071E3] py-2 px-1 rounded-xl font-bold active:scale-95 transition-all text-[11px] sm:text-xs truncate cursor-pointer text-center shadow-2xs">全部錯題</button>
                     </div>
                 </div>
             </div>
@@ -2624,24 +2627,20 @@
             }
             const elMistakeBadge = document.getElementById('lobby-mistake-count-badge');
             if (elMistakeBadge) {
-                elMistakeBadge.innerText = `${mistakeCount} 字錯題`;
-                if (mistakeCount > 0) {
-                    elMistakeBadge.className = "text-xs font-semibold px-2.5 py-1 rounded-full bg-red-50 text-[#FF3B30]";
-                } else {
-                    elMistakeBadge.className = "text-xs font-semibold px-2.5 py-1 rounded-full bg-gray-100 text-gray-500";
-                }
+                elMistakeBadge.innerText = mistakeCount > 0 ? `共 ${mistakeCount} 字錯題` : '目前無錯題';
+                elMistakeBadge.className = mistakeCount > 0
+                    ? "text-[11px] font-semibold text-[#0071E3] font-mono"
+                    : "text-[11px] font-medium text-slate-400 font-mono";
             }
 
             // 統計弱點數
             const unitWeak = getWeakList().filter(x => x.w && (x.w.unit || Math.ceil(x.w.id / 1000) || 1) === currentUnit);
             const elWeakBadge = document.getElementById('lobby-weak-count-badge');
             if (elWeakBadge) {
-                elWeakBadge.innerText = `${unitWeak.length} 弱點`;
-                if (unitWeak.length > 0) {
-                    elWeakBadge.className = "text-xs font-semibold px-2.5 py-1 rounded-full bg-purple-50 text-purple-600";
-                } else {
-                    elWeakBadge.className = "text-xs font-semibold px-2.5 py-1 rounded-full bg-gray-100 text-gray-500";
-                }
+                elWeakBadge.innerText = unitWeak.length > 0 ? `目前 ${unitWeak.length} 個弱點詞` : '目前無弱點單字';
+                elWeakBadge.className = unitWeak.length > 0
+                    ? "text-[11px] text-[#0071E3] font-semibold truncate"
+                    : "text-[11px] text-slate-500 font-medium truncate";
             }
         }
 

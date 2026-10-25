@@ -8,6 +8,18 @@
     <meta http-equiv="Expires" content="0">
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
+        // 自動版本校驗與強制防快取載入
+        const APP_BUILD_VERSION = '20261025V17';
+        const savedBuild = localStorage.getItem('app_build_version');
+        if (savedBuild !== APP_BUILD_VERSION) {
+            localStorage.setItem('app_build_version', APP_BUILD_VERSION);
+            if (!window.location.search.includes('v=' + APP_BUILD_VERSION)) {
+                const sep = window.location.search ? '&' : '?';
+                window.location.replace(window.location.pathname + window.location.search + sep + 'v=' + APP_BUILD_VERSION + '&t=' + Date.now());
+            }
+        }
+    </script>
+    <script>
         const _origWarn = console.warn;
         console.warn = function(...args) {
             if (args[0] && typeof args[0] === 'string' && args[0].includes('cdn.tailwindcss.com')) return;
@@ -18,17 +30,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261025V16"></script>
-    <script src="toeic_data.js?v=20261025V16"></script>
-    <script src="jh_data.js?v=20261025V16"></script>
-    <script src="listening_data.js?v=20261025V16"></script>
-    <script src="words_audio_manifest.js?v=20261025V16"></script>
-    <script src="examples_audio_manifest.js?v=20261025V16"></script>
-    <script src="zh_audio_manifest.js?v=20261025V16"></script>
-    <script src="collocations_audio_manifest.js?v=20261025V16"></script>
-    <script src="syn_ant_data.js?v=20261025V16"></script>
-    <script src="synonyms_unit8_data.js?v=20261025V16"></script>
-    <script src="examples_unit9_data.js?v=20261025V16"></script>
+    <script src="words_data.js?v=20261025V17"></script>
+    <script src="toeic_data.js?v=20261025V17"></script>
+    <script src="jh_data.js?v=20261025V17"></script>
+    <script src="listening_data.js?v=20261025V17"></script>
+    <script src="words_audio_manifest.js?v=20261025V17"></script>
+    <script src="examples_audio_manifest.js?v=20261025V17"></script>
+    <script src="zh_audio_manifest.js?v=20261025V17"></script>
+    <script src="collocations_audio_manifest.js?v=20261025V17"></script>
+    <script src="syn_ant_data.js?v=20261025V17"></script>
+    <script src="synonyms_unit8_data.js?v=20261025V17"></script>
+    <script src="examples_unit9_data.js?v=20261025V17"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -1198,20 +1210,29 @@
                         </select>
                     </div>
 
-                    <div class="w-full flex items-center justify-between p-3.5 sm:p-4 bg-white border-0 border-gray-200 rounded-2xl hover:bg-[#F5F5F7] transition-colors mb-4 gap-2">
-                        <div class="flex items-center gap-2.5 sm:gap-3 min-w-0 flex-1">
-                            <div class="p-2 bg-indigo-50 text-indigo-600 rounded-xl shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z" /></svg>
+                    <!-- 單字發音口音偏好 (iOS 分段選擇器排版，零溢位) -->
+                    <div class="w-full p-4 bg-white border-0 border-gray-200 rounded-2xl hover:bg-[#F5F5F7] transition-colors mb-4">
+                        <div class="flex items-center justify-between mb-3">
+                            <div class="flex items-center gap-2.5 sm:gap-3 min-w-0">
+                                <div class="p-2 bg-indigo-50 text-indigo-600 rounded-xl shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z" /></svg>
+                                </div>
+                                <div class="text-left min-w-0">
+                                    <h3 class="font-semibold text-[#1D1D1F] text-sm sm:text-base">單字發音口音</h3>
+                                    <p class="text-[11px] sm:text-xs text-[#86868B]">翻面自動播放：美音 ➔ 英音</p>
+                                </div>
                             </div>
-                            <div class="text-left min-w-0 flex-1">
-                                <h3 class="font-semibold text-[#1D1D1F] text-sm sm:text-base truncate">單字發音偏好</h3>
-                                <p class="text-[11px] sm:text-xs text-[#86868B] truncate">美音女聲 ➔ 英音男聲輪播</p>
-                            </div>
+                            <span class="text-[11px] font-bold text-[#0071E3] bg-blue-50 px-2.5 py-0.5 rounded-full border border-blue-100 shrink-0">預設輪播</span>
                         </div>
-                        <select id="setting-voice-accent" aria-label="設定單字預設發音口音" class="bg-[#F5F5F7] border-0 border-gray-300 text-gray-700 text-xs sm:text-sm rounded-xl focus:ring-[#0071E3] focus:border-[#0071E3] block p-2 outline-none cursor-pointer shrink-0 max-w-[130px] sm:max-w-none truncate">
-                            <option value="both" selected>🔄 雙音輪播</option>
-                            <option value="us">🇺🇸 僅美音</option>
-                            <option value="uk">🇬🇧 僅英音</option>
+                        <div class="grid grid-cols-3 gap-1.5 p-1 bg-[#F5F5F7] rounded-xl border border-gray-200/70 select-none">
+                            <button type="button" id="pill-accent-both" class="py-2 px-1 text-xs rounded-lg font-bold transition-all text-center bg-white text-[#0071E3] shadow-xs border border-blue-100/60 cursor-pointer" onclick="setPreferredVoiceAccent('both')">🔄 雙音輪播</button>
+                            <button type="button" id="pill-accent-us" class="py-2 px-1 text-xs rounded-lg font-medium transition-all text-center text-gray-500 hover:text-gray-800 cursor-pointer" onclick="setPreferredVoiceAccent('us')">🇺🇸 美音女聲</button>
+                            <button type="button" id="pill-accent-uk" class="py-2 px-1 text-xs rounded-lg font-medium transition-all text-center text-gray-500 hover:text-gray-800 cursor-pointer" onclick="setPreferredVoiceAccent('uk')">🇬🇧 英音男聲</button>
+                        </div>
+                        <select id="setting-voice-accent" class="hidden">
+                            <option value="both" selected>both</option>
+                            <option value="us">us</option>
+                            <option value="uk">uk</option>
                         </select>
                     </div>
 
@@ -1263,9 +1284,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261025V16</span>
+                        <span id="app-version-display">版本 20261025V17</span>
                     </div>
-                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261025V16</p>
+                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261025V17</p>
                 </div>
             </div>
         </div>
@@ -2503,6 +2524,7 @@
             }
 
             if (typeof updateStudyLobby === 'function') updateStudyLobby();
+            if (viewId === 'view-settings' && typeof updateVoiceAccentUI === 'function') updateVoiceAccentUI();
         }
 
         // ==========================================
@@ -4287,11 +4309,26 @@
             return (saved === 'uk' || saved === 'us' || saved === 'both') ? saved : 'both';
         }
 
+        function updateVoiceAccentUI(accent) {
+            const act = accent || getPreferredVoiceAccent();
+            const btnBoth = document.getElementById('pill-accent-both');
+            const btnUs = document.getElementById('pill-accent-us');
+            const btnUk = document.getElementById('pill-accent-uk');
+            const sel = document.getElementById('setting-voice-accent');
+            if (sel) sel.value = act;
+
+            const activeClass = 'py-2 px-1 text-xs rounded-lg font-bold transition-all text-center bg-white text-[#0071E3] shadow-xs border border-blue-100/60 cursor-pointer';
+            const inactiveClass = 'py-2 px-1 text-xs rounded-lg font-medium transition-all text-center text-gray-500 hover:text-gray-800 cursor-pointer';
+
+            if (btnBoth) btnBoth.className = (act === 'both') ? activeClass : inactiveClass;
+            if (btnUs) btnUs.className = (act === 'us') ? activeClass : inactiveClass;
+            if (btnUk) btnUk.className = (act === 'uk') ? activeClass : inactiveClass;
+        }
+
         function setPreferredVoiceAccent(accent) {
             if (accent === 'uk' || accent === 'us' || accent === 'both') {
                 localStorage.setItem('preferred_voice_accent', accent);
-                const sel = document.getElementById('setting-voice-accent');
-                if (sel) sel.value = accent;
+                updateVoiceAccentUI(accent);
                 updateCardVoiceButtonsHighlight('both');
             }
         }
@@ -4861,6 +4898,7 @@
         document.getElementById('btn-speak-zh')?.addEventListener('click', handleSpeakZhClick);
 
         // 設定：單字預設發音口音
+        updateVoiceAccentUI();
         const settingVoiceAccentEl = document.getElementById('setting-voice-accent');
         if (settingVoiceAccentEl) {
             settingVoiceAccentEl.value = getPreferredVoiceAccent();

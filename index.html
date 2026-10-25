@@ -18,17 +18,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261025V14"></script>
-    <script src="toeic_data.js?v=20261025V14"></script>
-    <script src="jh_data.js?v=20261025V14"></script>
-    <script src="listening_data.js?v=20261025V14"></script>
-    <script src="words_audio_manifest.js?v=20261025V14"></script>
-    <script src="examples_audio_manifest.js?v=20261025V14"></script>
-    <script src="zh_audio_manifest.js?v=20261025V14"></script>
-    <script src="collocations_audio_manifest.js?v=20261025V14"></script>
-    <script src="syn_ant_data.js?v=20261025V14"></script>
-    <script src="synonyms_unit8_data.js?v=20261025V14"></script>
-    <script src="examples_unit9_data.js?v=20261025V14"></script>
+    <script src="words_data.js?v=20261025V15"></script>
+    <script src="toeic_data.js?v=20261025V15"></script>
+    <script src="jh_data.js?v=20261025V15"></script>
+    <script src="listening_data.js?v=20261025V15"></script>
+    <script src="words_audio_manifest.js?v=20261025V15"></script>
+    <script src="examples_audio_manifest.js?v=20261025V15"></script>
+    <script src="zh_audio_manifest.js?v=20261025V15"></script>
+    <script src="collocations_audio_manifest.js?v=20261025V15"></script>
+    <script src="syn_ant_data.js?v=20261025V15"></script>
+    <script src="synonyms_unit8_data.js?v=20261025V15"></script>
+    <script src="examples_unit9_data.js?v=20261025V15"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -1209,8 +1209,9 @@
                             </div>
                         </div>
                         <select id="setting-voice-accent" aria-label="設定單字預設發音口音" class="bg-[#F5F5F7] border-0 border-gray-300 text-gray-700 text-sm rounded-xl focus:ring-[#0071E3] focus:border-[#0071E3] block p-2 outline-none cursor-pointer">
-                            <option value="us" selected>🇺🇸 美音 (真人女聲)</option>
-                            <option value="uk">🇬🇧 英音 (真人男聲)</option>
+                            <option value="both" selected>🔄 雙口音輪播 (美音 ➔ 英音) [預設]</option>
+                            <option value="us">🇺🇸 僅美音 (真人女聲)</option>
+                            <option value="uk">🇬🇧 僅英音 (真人男聲)</option>
                         </select>
                     </div>
 
@@ -1262,9 +1263,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261025V14</span>
+                        <span id="app-version-display">版本 20261025V15</span>
                     </div>
-                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261025V14</p>
+                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261025V15</p>
                 </div>
             </div>
         </div>
@@ -3151,36 +3152,48 @@
             const targetWord = currentWord;
             const isSpeakZh = localStorage.getItem('speak_zh_enabled') !== 'false'; // 預設開啟
 
-            // 翻面第 1 步：先讀英文單字
-            playAudio(targetWord.en, () => {
+            // 翻牌雙口音輪播鏈：美音女聲 ➔ 短暫間隔 ➔ 英音男聲 ➔ 中文釋義 ➔ 實用例句 (完全免手動選)
+            // 第 1 步：播放 🇺🇸 美音 (真人女聲)
+            updateCardVoiceButtonsHighlight('us');
+            playWordAccent(targetWord.en, 'us', () => {
                 if (!currentWord || currentWord.id !== targetWord.id) return;
 
-                // 第 3 步：若有例句接著讀句子
-                const playExampleStep = () => {
+                // 第 2 步：間隔 260ms 後播放 🇬🇧 英音 (真人男聲)
+                backsideAudioTimerId = setTimeout(() => {
                     if (!currentWord || currentWord.id !== targetWord.id) return;
-                    if (targetWord.example) {
-                        backsideAudioTimerId = setTimeout(() => {
-                            if (!currentWord || currentWord.id !== targetWord.id) return;
-                            playAudio(targetWord.example, () => {
-                                if (typeof onEndedCallback === 'function') onEndedCallback();
-                            }, targetWord.id);
-                        }, 350);
-                    } else {
-                        if (typeof onEndedCallback === 'function') onEndedCallback();
-                    }
-                };
-
-                // 第 2 步：若開啟中文朗讀，接著讀中文釋義
-                if (isSpeakZh && targetWord.zh) {
-                    const parsed = splitPosAndZh(targetWord.zh, targetWord.pos);
-                    const zhText = parsed.pureZh || targetWord.zh;
-                    backsideAudioTimerId = setTimeout(() => {
+                    updateCardVoiceButtonsHighlight('uk');
+                    playWordAccent(targetWord.en, 'uk', () => {
                         if (!currentWord || currentWord.id !== targetWord.id) return;
-                        speakChinese(zhText, playExampleStep, targetWord);
-                    }, 250);
-                } else {
-                    playExampleStep();
-                }
+                        updateCardVoiceButtonsHighlight('both');
+
+                        // 第 4 步：例句朗讀
+                        const playExampleStep = () => {
+                            if (!currentWord || currentWord.id !== targetWord.id) return;
+                            if (targetWord.example) {
+                                backsideAudioTimerId = setTimeout(() => {
+                                    if (!currentWord || currentWord.id !== targetWord.id) return;
+                                    playAudio(targetWord.example, () => {
+                                        if (typeof onEndedCallback === 'function') onEndedCallback();
+                                    }, targetWord.id);
+                                }, 350);
+                            } else {
+                                if (typeof onEndedCallback === 'function') onEndedCallback();
+                            }
+                        };
+
+                        // 第 3 步：若開啟中文朗讀，接著讀中文釋義
+                        if (isSpeakZh && targetWord.zh) {
+                            const parsed = splitPosAndZh(targetWord.zh, targetWord.pos);
+                            const zhText = parsed.pureZh || targetWord.zh;
+                            backsideAudioTimerId = setTimeout(() => {
+                                if (!currentWord || currentWord.id !== targetWord.id) return;
+                                speakChinese(zhText, playExampleStep, targetWord);
+                            }, 250);
+                        } else {
+                            playExampleStep();
+                        }
+                    });
+                }, 260);
             });
         }
 
@@ -4268,42 +4281,44 @@
             }
         }
 
-        // 取得 / 設定使用者偏好的發音口音 ('us' 美音女聲 / 'uk' 英音男聲)
+        // 取得 / 設定使用者偏好的發音口音 ('both' 雙音輪播 / 'us' 美音女聲 / 'uk' 英音男聲)
         function getPreferredVoiceAccent() {
             const saved = localStorage.getItem('preferred_voice_accent');
-            return (saved === 'uk' || saved === 'us') ? saved : 'us';
+            return (saved === 'uk' || saved === 'us' || saved === 'both') ? saved : 'both';
         }
 
         function setPreferredVoiceAccent(accent) {
-            if (accent === 'uk' || accent === 'us') {
+            if (accent === 'uk' || accent === 'us' || accent === 'both') {
                 localStorage.setItem('preferred_voice_accent', accent);
                 const sel = document.getElementById('setting-voice-accent');
                 if (sel) sel.value = accent;
-                updateCardVoiceButtonsHighlight();
+                updateCardVoiceButtonsHighlight('both');
             }
         }
 
-        // 卡片背面雙口音膠囊按鈕狀態高亮
+        // 卡片背面雙口音膠囊按鈕狀態動態高亮 (播放美音亮藍、播放英音亮紫、靜止時並列精緻顯示)
         function updateCardVoiceButtonsHighlight(activePlayingAccent = null) {
             const btnUs = document.getElementById('btn-card-voice-us');
             const btnUk = document.getElementById('btn-card-voice-uk');
             if (!btnUs || !btnUk) return;
 
-            const preferred = getPreferredVoiceAccent();
-            const active = activePlayingAccent || preferred;
+            const baseUs = 'px-2.5 py-0.5 rounded-full text-xs font-bold flex items-center gap-1 cursor-pointer transition-all shadow-2xs border ';
+            const baseUk = 'px-2.5 py-0.5 rounded-full text-xs font-bold flex items-center gap-1 cursor-pointer transition-all shadow-2xs border ';
 
-            const baseClass = 'px-2.5 py-0.5 rounded-full text-xs font-bold flex items-center gap-1 cursor-pointer transition-all active:scale-95 shadow-2xs border ';
-
-            if (active === 'us') {
-                btnUs.className = baseClass + 'bg-blue-50 text-[#0071E3] border-blue-300 ring-2 ring-blue-400/30 font-extrabold';
-                btnUk.className = baseClass + 'bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200';
+            if (activePlayingAccent === 'us') {
+                btnUs.className = baseUs + 'bg-[#0071E3] text-white border-blue-600 ring-2 ring-blue-300 scale-105 font-extrabold';
+                btnUk.className = baseUk + 'bg-slate-100 text-slate-500 border-slate-200 opacity-60';
+            } else if (activePlayingAccent === 'uk') {
+                btnUk.className = baseUk + 'bg-indigo-600 text-white border-indigo-700 ring-2 ring-indigo-300 scale-105 font-extrabold';
+                btnUs.className = baseUs + 'bg-slate-100 text-slate-500 border-slate-200 opacity-60';
             } else {
-                btnUk.className = baseClass + 'bg-indigo-50 text-indigo-700 border-indigo-300 ring-2 ring-indigo-400/30 font-extrabold';
-                btnUs.className = baseClass + 'bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200';
+                // idle / both state: 並列展示，無需使用者手動切換
+                btnUs.className = baseUs + 'bg-blue-50 text-[#0071E3] border-blue-200 hover:bg-blue-100';
+                btnUk.className = baseUk + 'bg-indigo-50 text-indigo-700 border-indigo-200 hover:bg-indigo-100';
             }
         }
 
-        // 真人雙口音單字發音 (1: 🇬🇧 英音男聲, 2: 🇺🇸 美音女聲 - 本地離線 MP3 優先 + 線上真人原聲 + 語音合成備援)
+        // 真人雙口音單字發音 (1: 🇬🇧 英音男聲, 2: 🇺🇸 美音女聲, both: 雙音連續輪播)
         function playWordAccent(word, accent = null, onEndedCallback) {
             if (!word) {
                 if (typeof onEndedCallback === 'function') onEndedCallback();
@@ -4318,7 +4333,23 @@
                 }
                 const cleanLower = clean.toLowerCase();
                 const cleanSafe = cleanLower.replace(/[/\\:*?"<>|\s]+/g, '_').replace(/_+/g, '_').replace(/^_|_$/g, '');
-                const targetAccent = (accent === 'uk' || accent === 'us') ? accent : getPreferredVoiceAccent();
+                const targetAccent = (accent === 'uk' || accent === 'us' || accent === 'both') ? accent : getPreferredVoiceAccent();
+
+                // 若為雙音輪播模式，依序播放美音女聲 -> 間隔 260ms -> 英音男聲
+                if (targetAccent === 'both') {
+                    updateCardVoiceButtonsHighlight('us');
+                    playWordAccent(word, 'us', () => {
+                        setTimeout(() => {
+                            updateCardVoiceButtonsHighlight('uk');
+                            playWordAccent(word, 'uk', () => {
+                                updateCardVoiceButtonsHighlight('both');
+                                if (typeof onEndedCallback === 'function') onEndedCallback();
+                            });
+                        }, 260);
+                    });
+                    return;
+                }
+
                 const typeCode = (targetAccent === 'uk') ? 1 : 2; // 1 = 🇬🇧 英音男聲, 2 = 🇺🇸 美音女聲
                 const isUk = (targetAccent === 'uk');
 
@@ -4652,7 +4683,7 @@
         document.getElementById('card-word-back')?.addEventListener('click', (e) => {
             e.stopPropagation();
             unlockMobileAudio();
-            if (currentWord && currentWord.en) playAudio(currentWord.en);
+            if (currentWord && currentWord.en) playBacksideAudio();
         });
 
         document.getElementById('btn-card-voice-us')?.addEventListener('click', (e) => {
@@ -6341,10 +6372,13 @@
                         </div>
                     </div>
                     <div class="flex items-center gap-1.5 shrink-0 flex-wrap justify-end">
-                        <button id="btn-detail-audio-us" type="button" class="px-2.5 py-1.5 rounded-xl font-bold text-xs flex items-center gap-1 shadow-2xs transition-all active:scale-95 cursor-pointer ${getPreferredVoiceAccent() === 'us' ? 'bg-[#0071E3] text-white ring-2 ring-blue-300 font-extrabold' : 'bg-blue-50 text-[#0071E3] border border-blue-200 hover:bg-blue-100'}" title="真人美音 (女聲)">
+                        <button id="btn-detail-audio-both" type="button" class="px-2.5 py-1.5 rounded-xl font-bold text-xs flex items-center gap-1 shadow-2xs transition-all active:scale-95 cursor-pointer bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:opacity-95" title="雙口音輪播 (美音 ➔ 英音)">
+                            <span>🔄 雙音輪播</span>
+                        </button>
+                        <button id="btn-detail-audio-us" type="button" class="px-2 py-1.5 rounded-xl font-bold text-xs flex items-center gap-1 shadow-2xs transition-all active:scale-95 cursor-pointer bg-blue-50 text-[#0071E3] border border-blue-200 hover:bg-blue-100" title="真人美音 (女聲)">
                             <span>🇺🇸 美音 👩</span>
                         </button>
-                        <button id="btn-detail-audio-uk" type="button" class="px-2.5 py-1.5 rounded-xl font-bold text-xs flex items-center gap-1 shadow-2xs transition-all active:scale-95 cursor-pointer ${getPreferredVoiceAccent() === 'uk' ? 'bg-indigo-600 text-white ring-2 ring-indigo-300 font-extrabold' : 'bg-slate-100 text-slate-700 border border-slate-200 hover:bg-slate-200'}" title="真人英音 (男聲)">
+                        <button id="btn-detail-audio-uk" type="button" class="px-2 py-1.5 rounded-xl font-bold text-xs flex items-center gap-1 shadow-2xs transition-all active:scale-95 cursor-pointer bg-slate-100 text-slate-700 border border-slate-200 hover:bg-slate-200" title="真人英音 (男聲)">
                             <span>🇬🇧 英音 👨</span>
                         </button>
                         <button id="btn-detail-audio-slow" type="button" class="p-1.5 text-gray-600 bg-gray-100 hover:bg-gray-200 rounded-xl transition-all cursor-pointer text-xs font-medium" title="慢速朗讀 (0.75x)">
@@ -6374,7 +6408,11 @@
                 ${externalDictHtml}
             `;
 
-            // 事件綁定：音訊播放 (支援美音女聲 / 英音男聲 / 慢速)
+            // 事件綁定：音訊播放 (支援雙音輪播 / 美音女聲 / 英音男聲 / 慢速)
+            document.getElementById('btn-detail-audio-both')?.addEventListener('click', () => {
+                unlockMobileAudio();
+                playWordAccent(w.en, 'both');
+            });
             document.getElementById('btn-detail-audio-us')?.addEventListener('click', () => {
                 unlockMobileAudio();
                 playWordAccent(w.en, 'us');

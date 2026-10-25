@@ -64,16 +64,30 @@
             background-color: transparent;
             perspective: 1000px;
             width: 100%;
-            height: 195px; /* 手機版黃金緊湊高度：釋放空間讓下方4個選項完整呈現 */
+            height: 315px; /* 手機版全卡片黃金高度：完整展示單字、雙音標、釋義與例句，零滾動防截斷 */
+            transition: height 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        /* 當 4 選 1 作答模式且正面等待答題時，適度調降卡片高度以留出充裕空間展示作答選項 */
+        #view-study.quiz-options-active .flip-card:not(.flipped),
+        #view-study:has(#quiz-options:not(.hidden)) .flip-card:not(.flipped) {
+            height: 200px;
         }
         @media (min-width: 640px) {
             .flip-card {
-                height: 250px;
+                height: 320px;
+            }
+            #view-study.quiz-options-active .flip-card:not(.flipped),
+            #view-study:has(#quiz-options:not(.hidden)) .flip-card:not(.flipped) {
+                height: 230px;
             }
         }
         @media (min-width: 1024px) {
             .flip-card {
-                height: 310px;
+                height: 330px;
+            }
+            #view-study.quiz-options-active .flip-card:not(.flipped),
+            #view-study:has(#quiz-options:not(.hidden)) .flip-card:not(.flipped) {
+                height: 330px;
             }
         }
 
@@ -843,21 +857,21 @@
                 <!-- 4選1按鈕 -->
             </div>
 
-            <div id="action-show-answer" class="w-full">
+            <div id="action-show-answer" class="w-full mt-6 sm:mt-8">
                 <button class="btn-action w-full bg-gray-800 hover:bg-gray-900 text-white font-medium py-4 rounded-2xl shadow-sm text-lg flex flex-col items-center justify-center gap-1" id="btn-show-answer">
                     <span>顯示解答</span>
                     <span class="text-[10px] font-mono opacity-60 bg-gray-700 px-2 rounded hidden sm:block">空白鍵 / Enter</span>
                 </button>
             </div>
             
-            <div id="action-next" class="w-full hidden mt-4">
+            <div id="action-next" class="w-full hidden mt-6 sm:mt-8">
                 <button class="btn-action w-full bg-[#0071E3] hover:bg-[#0077ED] text-white font-medium py-4 rounded-2xl shadow-sm shadow-indigo-200 text-lg flex flex-col items-center justify-center gap-1" id="btn-next-card">
                     <span>下一題 ➔</span>
                     <span class="text-[10px] font-mono opacity-80 bg-indigo-800 px-2 rounded hidden sm:block">空白鍵 / Enter</span>
                 </button>
             </div>
 
-            <div id="action-rate" class="w-full grid grid-cols-2 gap-4 hidden mt-4">
+            <div id="action-rate" class="w-full grid grid-cols-2 gap-4 hidden mt-6 sm:mt-8">
                 <button class="btn-action bg-[#FF3B30] bg-opacity-10 hover:bg-red-200 text-[#FF3B30] border-0 border-[#E6D1C9] font-medium py-4 rounded-2xl shadow-sm text-lg flex flex-col items-center justify-center gap-1" id="btn-rate-wrong">
                     <span>忘記了 (重來)</span>
                     <span class="text-[10px] font-mono opacity-60 bg-red-200 px-2 rounded hidden sm:block">◀ 鍵盤左鍵</span>
@@ -3391,6 +3405,10 @@
             const inner = flashcard.querySelector('.flip-card-inner');
             if (inner) inner.style.transition = 'none';
             flashcard.classList.remove('flipped');
+            const cardBack = flashcard?.querySelector('.flip-card-back');
+            if (cardBack) cardBack.scrollTop = 0;
+            const cardFront = flashcard?.querySelector('.flip-card-front');
+            if (cardFront) cardFront.scrollTop = 0;
             void flashcard.offsetWidth; // 強制重繪
             if (inner) inner.style.transition = '';
             actionShowAnswer.classList.add('hidden');
@@ -3447,10 +3465,14 @@
             }
             
             if (isQuizMode) {
+                if (studyViewEl) studyViewEl.classList.add('quiz-options-active');
                 quizOptions.classList.remove('hidden');
                 setupQuizMode();
-            } else if (!isAutoFlashcardMode) {
-                actionShowAnswer.classList.remove('hidden');
+            } else {
+                if (studyViewEl) studyViewEl.classList.remove('quiz-options-active');
+                if (!isAutoFlashcardMode) {
+                    actionShowAnswer.classList.remove('hidden');
+                }
             }
 
             updateCardPhonetics(currentWord);
@@ -3484,6 +3506,8 @@
                     autoFlashcardTimerId = setTimeout(() => {
                         if (!isAutoFlashcardMode) return;
                         flashcard.classList.add('flipped');
+                        const cardBack = flashcard?.querySelector('.flip-card-back');
+                        if (cardBack) cardBack.scrollTop = 0;
 
                         // 翻面後：先再讀單字，完成後讀例句，全部完成後跳下一張
                         playBacksideAudio(() => {
@@ -3751,9 +3775,13 @@
                 autoNextTimerId = setTimeout(() => {
                     const btnAudio = document.getElementById('btn-audio');
                     if (btnAudio) btnAudio.classList.remove('hidden');
+                    const studyViewEl = document.getElementById('view-study');
+                    if (studyViewEl) studyViewEl.classList.remove('quiz-options-active');
                     flashcard.classList.add('flipped');
                     quizOptions.classList.add('hidden');
                     actionNext.classList.remove('hidden');
+                    const cardBack = flashcard?.querySelector('.flip-card-back');
+                    if (cardBack) cardBack.scrollTop = 0;
                     playBacksideAudio();
                 }, 900);
             }
@@ -4159,6 +4187,8 @@
             flashcard.classList.add('flipped');
             actionShowAnswer.classList.add('hidden');
             actionRate.classList.remove('hidden');
+            const cardBack = flashcard?.querySelector('.flip-card-back');
+            if (cardBack) cardBack.scrollTop = 0;
             playBacksideAudio();
         });
 
@@ -6454,12 +6484,27 @@
                 if (forms.nounForms) {
                     formsHtml += `
                         <div class="bg-amber-50/60 p-3 rounded-2xl border border-amber-200/70">
-                            <div class="flex items-center gap-1.5 text-xs font-bold text-amber-900 mb-1.5">
-                                <span>📦</span><span>名詞單複數變化 (Noun Plurals)</span>
+                            <div class="flex items-center justify-between text-xs font-bold text-amber-900 mb-2">
+                                <div class="flex items-center gap-1.5">
+                                    <span>📦</span><span>名詞單複數變化 (Noun Plurals)</span>
+                                </div>
+                                <span class="text-[10px] text-amber-600 font-normal">點擊發音</span>
                             </div>
-                            <div class="flex items-center gap-4 text-xs">
-                                <span class="text-gray-600">單數：<strong class="text-gray-900 font-mono text-sm cursor-pointer hover:text-[#0071E3]" onclick="playAudio('${esc(forms.nounForms.singular)}')">${esc(forms.nounForms.singular)} 🔊</strong></span>
-                                <span class="text-gray-600">複數 (Plural)：<strong class="text-amber-700 font-mono text-sm cursor-pointer hover:text-[#0071E3]" onclick="playAudio('${esc(forms.nounForms.plural)}')">${esc(forms.nounForms.plural)} 🔊</strong></span>
+                            <div class="grid grid-cols-2 gap-2">
+                                <div class="bg-white/95 p-2.5 rounded-xl border border-amber-200/60 shadow-2xs cursor-pointer hover:border-amber-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.nounForms.singular)}')">
+                                    <div class="flex items-center justify-between mb-1">
+                                        <span class="text-amber-800 block text-[10px] font-semibold">單數 (Singular)</span>
+                                        <span class="text-amber-500 text-[10px]">🔊</span>
+                                    </div>
+                                    <span class="font-bold text-gray-800 font-mono text-xs sm:text-sm truncate" title="${esc(forms.nounForms.singular)}">${esc(forms.nounForms.singular)}</span>
+                                </div>
+                                <div class="bg-white/95 p-2.5 rounded-xl border border-amber-200/60 shadow-2xs cursor-pointer hover:border-amber-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.nounForms.plural)}')">
+                                    <div class="flex items-center justify-between mb-1">
+                                        <span class="text-amber-800 block text-[10px] font-semibold">複數 (Plural)</span>
+                                        <span class="text-amber-500 text-[10px]">🔊</span>
+                                    </div>
+                                    <span class="font-bold text-amber-700 font-mono text-xs sm:text-sm truncate" title="${esc(forms.nounForms.plural)}">${esc(forms.nounForms.plural)}</span>
+                                </div>
                             </div>
                         </div>
                     `;
@@ -6467,13 +6512,34 @@
                 if (forms.adjForms) {
                     formsHtml += `
                         <div class="bg-emerald-50/60 p-3 rounded-2xl border border-emerald-200/70">
-                            <div class="flex items-center gap-1.5 text-xs font-bold text-emerald-900 mb-1.5">
-                                <span>📈</span><span>形容詞比較級與最高級 (Degrees of Comparison)</span>
+                            <div class="flex items-center justify-between text-xs font-bold text-emerald-900 mb-2">
+                                <div class="flex items-center gap-1.5">
+                                    <span>📈</span><span>形容詞比較級與最高級 (Degrees of Comparison)</span>
+                                </div>
+                                <span class="text-[10px] text-emerald-600 font-normal">點擊發音</span>
                             </div>
-                            <div class="flex items-center gap-3 text-xs flex-wrap">
-                                <span class="text-gray-600">原級：<strong class="text-gray-900 font-mono text-sm cursor-pointer hover:text-[#0071E3]" onclick="playAudio('${esc(forms.adjForms.base)}')">${esc(forms.adjForms.base)} 🔊</strong></span>
-                                <span class="text-gray-600">比較級：<strong class="text-emerald-700 font-mono text-sm cursor-pointer hover:text-[#0071E3]" onclick="playAudio('${esc(forms.adjForms.comp)}')">${esc(forms.adjForms.comp)} 🔊</strong></span>
-                                <span class="text-gray-600">最高級：<strong class="text-emerald-800 font-mono text-sm cursor-pointer hover:text-[#0071E3]" onclick="playAudio('${esc(forms.adjForms.super)}')">${esc(forms.adjForms.super)} 🔊</strong></span>
+                            <div class="grid grid-cols-3 gap-2">
+                                <div class="bg-white/95 p-2 rounded-xl border border-emerald-200/60 shadow-2xs cursor-pointer hover:border-emerald-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.adjForms.base)}')">
+                                    <div class="flex items-center justify-between mb-1">
+                                        <span class="text-emerald-700 block text-[10px] font-semibold">原級 (Base)</span>
+                                        <span class="text-emerald-500 text-[10px]">🔊</span>
+                                    </div>
+                                    <span class="font-bold text-gray-800 font-mono text-xs sm:text-sm truncate" title="${esc(forms.adjForms.base)}">${esc(forms.adjForms.base)}</span>
+                                </div>
+                                <div class="bg-white/95 p-2 rounded-xl border border-emerald-200/60 shadow-2xs cursor-pointer hover:border-emerald-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.adjForms.comp)}')">
+                                    <div class="flex items-center justify-between mb-1">
+                                        <span class="text-emerald-700 block text-[10px] font-semibold">比較級 (Comp)</span>
+                                        <span class="text-emerald-500 text-[10px]">🔊</span>
+                                    </div>
+                                    <span class="font-bold text-emerald-700 font-mono text-xs sm:text-sm truncate" title="${esc(forms.adjForms.comp)}">${esc(forms.adjForms.comp)}</span>
+                                </div>
+                                <div class="bg-white/95 p-2 rounded-xl border border-emerald-200/60 shadow-2xs cursor-pointer hover:border-emerald-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.adjForms.super)}')">
+                                    <div class="flex items-center justify-between mb-1">
+                                        <span class="text-emerald-800 block text-[10px] font-semibold">最高級 (Super)</span>
+                                        <span class="text-emerald-500 text-[10px]">🔊</span>
+                                    </div>
+                                    <span class="font-bold text-emerald-800 font-mono text-xs sm:text-sm truncate" title="${esc(forms.adjForms.super)}">${esc(forms.adjForms.super)}</span>
+                                </div>
                             </div>
                         </div>
                     `;
@@ -6562,25 +6628,25 @@
             `;
 
             content.innerHTML = `
-                <!-- 單字標題與發音列 (極簡精緻、純細體與輕巧按鈕設計) -->
-                <div class="flex justify-between items-start gap-2">
+                <!-- 單字標題與發音列 (響應式防折行截斷、純細體與俐落工具列設計) -->
+                <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-2.5">
                     <div class="min-w-0 flex-1">
-                        <h2 class="text-2xl sm:text-3xl font-bold text-[#1D1D1F] tracking-tight mb-1.5">${esc(w.en)}</h2>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-[#1D1D1F] tracking-tight mb-1.5 break-words">${esc(w.en)}</h2>
                         <div class="flex items-center gap-1.5 flex-wrap">
                             ${renderPhoneticsBadgesHtml(w, 'lg')}
                         </div>
                     </div>
-                    <div class="flex items-center gap-1 shrink-0 flex-wrap justify-end">
-                        <button id="btn-detail-audio-both" type="button" class="px-2.5 py-1 rounded-lg font-medium text-[11px] sm:text-xs flex items-center gap-1 shadow-2xs transition-all active:scale-95 cursor-pointer bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:opacity-95" title="雙口音輪播 (美音 ➔ 英音)">
+                    <div class="flex items-center gap-1.5 shrink-0 flex-wrap sm:justify-end pt-0.5">
+                        <button id="btn-detail-audio-both" type="button" class="px-2.5 py-1.5 rounded-xl font-medium text-xs flex items-center gap-1 shadow-2xs transition-all active:scale-95 cursor-pointer bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:opacity-95" title="雙口音輪播 (美音 ➔ 英音)">
                             <span>🔄 雙音</span>
                         </button>
-                        <button id="btn-detail-audio-us" type="button" class="px-2 py-1 rounded-lg font-medium text-[11px] sm:text-xs flex items-center gap-1 shadow-2xs transition-all active:scale-95 cursor-pointer bg-blue-50 text-[#0071E3] border border-blue-200/80 hover:bg-blue-100" title="真人美音 (女聲)">
+                        <button id="btn-detail-audio-us" type="button" class="px-2.5 py-1.5 rounded-xl font-medium text-xs flex items-center gap-1 shadow-2xs transition-all active:scale-95 cursor-pointer bg-blue-50 text-[#0071E3] border border-blue-200/80 hover:bg-blue-100" title="真人美音 (女聲)">
                             <span>🇺🇸 美音</span>
                         </button>
-                        <button id="btn-detail-audio-uk" type="button" class="px-2 py-1 rounded-lg font-medium text-[11px] sm:text-xs flex items-center gap-1 shadow-2xs transition-all active:scale-95 cursor-pointer bg-slate-100 text-slate-700 border border-slate-200 hover:bg-slate-200" title="真人英音 (男聲)">
+                        <button id="btn-detail-audio-uk" type="button" class="px-2.5 py-1.5 rounded-xl font-medium text-xs flex items-center gap-1 shadow-2xs transition-all active:scale-95 cursor-pointer bg-slate-100 text-slate-700 border border-slate-200 hover:bg-slate-200" title="真人英音 (男聲)">
                             <span>🇬🇧 英音</span>
                         </button>
-                        <button id="btn-detail-audio-slow" type="button" class="p-1 text-gray-500 bg-gray-100 hover:bg-gray-200 rounded-lg transition-all cursor-pointer text-xs font-medium" title="慢速朗讀 (0.75x)">
+                        <button id="btn-detail-audio-slow" type="button" class="px-2 py-1.5 text-gray-500 bg-gray-100 hover:bg-gray-200 rounded-xl transition-all cursor-pointer text-xs font-medium" title="慢速朗讀 (0.75x)">
                             <span>🐢 慢速</span>
                         </button>
                     </div>

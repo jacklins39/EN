@@ -2174,10 +2174,10 @@ const externalVocabularyDB = [
     "en": "against",
     "kk": "[əˋɡɛnst]",
     "uk": "/əˈɡenst/",
-    "zh": "prep. 反對",
+    "zh": "prep. 反對；違反；靠著；對著",
     "unit": 1,
-    "example": "Rain drove against the window.",
-    "exampleZh": "雨打在窗戶上。"
+    "example": "Are you for or against the plan?",
+    "exampleZh": "你贊成還是反對這個計畫？"
   },
   {
     "id": 219,

@@ -9,7 +9,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261025V24';
+        const APP_BUILD_VERSION = '20261025V25';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -30,19 +30,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261025V24"></script>
-    <script src="toeic_data.js?v=20261025V24"></script>
-    <script src="jh_data.js?v=20261025V24"></script>
-    <script src="listening_data.js?v=20261025V24"></script>
-    <script src="yahoo_dict_data.js?v=20261025V24"></script>
-    <script src="uk_phonetics_manifest.js?v=20261025V24"></script>
-    <script src="words_audio_manifest.js?v=20261025V24"></script>
-    <script src="examples_audio_manifest.js?v=20261025V24"></script>
-    <script src="zh_audio_manifest.js?v=20261025V24"></script>
-    <script src="collocations_audio_manifest.js?v=20261025V24"></script>
-    <script src="syn_ant_data.js?v=20261025V24"></script>
-    <script src="synonyms_unit8_data.js?v=20261025V24"></script>
-    <script src="examples_unit9_data.js?v=20261025V24"></script>
+    <script src="words_data.js?v=20261025V25"></script>
+    <script src="toeic_data.js?v=20261025V25"></script>
+    <script src="jh_data.js?v=20261025V25"></script>
+    <script src="listening_data.js?v=20261025V25"></script>
+    <script src="yahoo_dict_data.js?v=20261025V25"></script>
+    <script src="uk_phonetics_manifest.js?v=20261025V25"></script>
+    <script src="words_audio_manifest.js?v=20261025V25"></script>
+    <script src="examples_audio_manifest.js?v=20261025V25"></script>
+    <script src="zh_audio_manifest.js?v=20261025V25"></script>
+    <script src="collocations_audio_manifest.js?v=20261025V25"></script>
+    <script src="syn_ant_data.js?v=20261025V25"></script>
+    <script src="synonyms_unit8_data.js?v=20261025V25"></script>
+    <script src="examples_unit9_data.js?v=20261025V25"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -657,7 +657,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
                     </button>
                 </div>
-                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 mb-4">
+                <div class="grid grid-cols-2 sm:grid-cols-5 gap-2.5 mb-4">
                     <div class="bg-blue-50/70 border border-blue-100 rounded-2xl p-3 text-center">
                         <div class="text-[11px] font-semibold text-blue-600 mb-0.5">今日消化單字</div>
                         <div id="analysis-stat-today" class="text-2xl font-extrabold text-[#0071E3]">0</div>
@@ -668,10 +668,15 @@
                         <div id="analysis-stat-practice-count" class="text-2xl font-extrabold text-indigo-600">0</div>
                         <div id="analysis-stat-practice-sub" class="text-[10px] text-gray-500 mt-0.5">自測/特訓即時累計</div>
                     </div>
-                    <div class="bg-emerald-50/70 border border-emerald-100 rounded-2xl p-3 text-center">
-                        <div class="text-[11px] font-semibold text-emerald-700 mb-0.5">累計已學詞彙</div>
-                        <div id="analysis-stat-cumulative" class="text-2xl font-extrabold text-emerald-600">0</div>
+                    <div class="bg-sky-50/70 border border-sky-100 rounded-2xl p-3 text-center">
+                        <div class="text-[11px] font-semibold text-sky-700 mb-0.5">累計已學詞彙</div>
+                        <div id="analysis-stat-cumulative" class="text-2xl font-extrabold text-sky-600">0</div>
                         <div class="text-[10px] text-gray-500 mt-0.5">本單元已解鎖</div>
+                    </div>
+                    <div class="bg-emerald-50/70 border border-emerald-100 rounded-2xl p-3 text-center">
+                        <div class="text-[11px] font-semibold text-emerald-700 mb-0.5">累計熟練單字</div>
+                        <div id="analysis-stat-mastered" class="text-2xl font-extrabold text-emerald-600">0</div>
+                        <div id="analysis-stat-mastered-sub" class="text-[10px] text-gray-500 mt-0.5">LV5 熟練掌握</div>
                     </div>
                     <div class="bg-amber-50/70 border border-amber-100 rounded-2xl p-3 text-center">
                         <div class="text-[11px] font-semibold text-amber-700 mb-0.5">日均消化量</div>
@@ -1306,9 +1311,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261025V24</span>
+                        <span id="app-version-display">版本 20261025V25</span>
                     </div>
-                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261025V24</p>
+                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261025V25</p>
                 </div>
             </div>
         </div>
@@ -3595,10 +3600,16 @@
                 cardsCompleted++;
                 if (isCorrect) {
                     progress.level = Math.min(progress.level + 1, MAX_LEVEL);
+                    if (progress.level >= MAX_LEVEL && !progress.masteredDay) {
+                        progress.masteredDay = virtualCurrentDay;
+                    }
                     progress.nextReviewDay = virtualCurrentDay + (SRS_INTERVALS[progress.level] || 1);
                     if (!progress.studyDays.includes(virtualCurrentDay)) progress.studyDays.push(virtualCurrentDay);
                 } else {
                     progress.level = Math.max(0, progress.level - 1); // 答錯只降一級，降低挫折感
+                    if (progress.level < MAX_LEVEL) {
+                        delete progress.masteredDay;
+                    }
                     progress.nextReviewDay = virtualCurrentDay;
                     progress.lastMistakeDay = virtualCurrentDay; // 記錄錯題發生日
                     mistakeQueue.push(currentWord);
@@ -6926,22 +6937,46 @@
             const dailyRevArr = [];
             const cumulativeTotals = [];
 
+            // 熟練單字 (Level 5 / 完全掌握) 每日累計成長曲線
+            const masteredPerDay = new Array(maxDay + 1).fill(0);
+            for (const w of unitWords) {
+                const p = userProgress[w.id];
+                if (!p || !p.level || p.level < MAX_LEVEL) continue;
+
+                let mDay = maxDay;
+                if (p.masteredDay && p.masteredDay >= 1 && p.masteredDay <= maxDay) {
+                    mDay = p.masteredDay;
+                } else if (Array.isArray(p.studyDays) && p.studyDays.length > 0) {
+                    mDay = Math.max(1, Math.min(maxDay, p.studyDays[p.studyDays.length - 1]));
+                } else {
+                    const interval = SRS_INTERVALS[MAX_LEVEL] || 1;
+                    mDay = Math.max(1, Math.min(maxDay, (p.nextReviewDay || (maxDay + interval)) - interval));
+                }
+                masteredPerDay[mDay]++;
+            }
+
             let runningCumulative = 0;
+            let runningMastered = 0;
+            const cumulativeMastered = [];
+
             for (let d = 1; d <= maxDay; d++) {
                 runningCumulative += newPerDay[d];
+                runningMastered += masteredPerDay[d];
                 const tot = newPerDay[d] + reviewPerDay[d];
                 labels.push(`第 ${d} 天`);
                 dailyNewArr.push(newPerDay[d]);
                 dailyRevArr.push(reviewPerDay[d]);
                 dailyTotals.push(tot);
                 cumulativeTotals.push(runningCumulative);
+                cumulativeMastered.push(runningMastered);
             }
 
-            // 更新上方 4 張統計小卡
+            // 更新上方 5 張統計小卡
             const todayTotal = dailyTotals[maxDay - 1] || 0;
             const todayNew = dailyNewArr[maxDay - 1] || 0;
             const todayRev = dailyRevArr[maxDay - 1] || 0;
             const totalCumulative = cumulativeTotals[maxDay - 1] || 0;
+            const totalMastered = cumulativeMastered[maxDay - 1] || 0;
             const sumAllDays = dailyTotals.reduce((a, b) => a + b, 0);
             const avgDaily = maxDay > 0 ? Math.round((sumAllDays / maxDay) * 10) / 10 : 0;
 
@@ -6950,6 +6985,8 @@
             const elPracticeCount = document.getElementById('analysis-stat-practice-count');
             const elPracticeSub = document.getElementById('analysis-stat-practice-sub');
             const elCum = document.getElementById('analysis-stat-cumulative');
+            const elMastered = document.getElementById('analysis-stat-mastered');
+            const elMasteredSub = document.getElementById('analysis-stat-mastered-sub');
             const elAvg = document.getElementById('analysis-stat-avg');
             const elDays = document.getElementById('analysis-stat-days');
 
@@ -6969,6 +7006,8 @@
             }
 
             if (elCum) elCum.innerText = `${totalCumulative} 字`;
+            if (elMastered) elMastered.innerText = `${totalMastered} 字`;
+            if (elMasteredSub) elMasteredSub.innerText = totalCumulative > 0 ? `掌握率 ${Math.round((totalMastered / totalCumulative) * 100)}%` : `LV5 熟練掌握`;
             if (elAvg) elAvg.innerText = `${avgDaily} 字`;
             if (elDays) elDays.innerText = `共 ${maxDay} 天紀錄`;
 
@@ -6979,6 +7018,7 @@
             const viewNew = dailyNewArr.slice(sliceStart);
             const viewRev = dailyRevArr.slice(sliceStart);
             const viewCumulative = cumulativeTotals.slice(sliceStart);
+            const viewMastered = cumulativeMastered.slice(sliceStart);
 
             if (chartInstance) {
                 chartInstance.destroy();
@@ -6998,20 +7038,35 @@
                             borderWidth: 2,
                             borderRadius: 8,
                             maxBarThickness: 44,
-                            order: 2
+                            order: 3
                         },
                         {
                             type: 'line',
                             label: '累計已學單字成長',
                             data: viewCumulative,
-                            borderColor: '#10B981',
-                            backgroundColor: 'rgba(16, 185, 129, 0.12)',
+                            borderColor: '#0284C7',
+                            backgroundColor: 'rgba(2, 132, 199, 0.12)',
                             borderWidth: 2.5,
-                            pointBackgroundColor: '#10B981',
+                            pointBackgroundColor: '#0284C7',
                             pointBorderColor: '#ffffff',
                             pointBorderWidth: 2,
                             pointRadius: 4,
                             tension: 0.3,
+                            fill: false,
+                            order: 2
+                        },
+                        {
+                            type: 'line',
+                            label: '累計熟練掌握 (LV5 完訓)',
+                            data: viewMastered,
+                            borderColor: '#10B981',
+                            backgroundColor: 'rgba(16, 185, 129, 0.15)',
+                            borderWidth: 3,
+                            pointBackgroundColor: '#10B981',
+                            pointBorderColor: '#ffffff',
+                            pointBorderWidth: 2,
+                            pointRadius: 4.5,
+                            tension: 0.35,
                             fill: false,
                             order: 1
                         }
@@ -7039,7 +7094,10 @@
                                 afterBody: (items) => {
                                     const idx = items[0]?.dataIndex;
                                     if (idx === undefined) return '';
-                                    return `  └ 新學: ${viewNew[idx]} 字 ／ 複習: ${viewRev[idx]} 字`;
+                                    return [
+                                        `  └ 新學: ${viewNew[idx]} 字 ／ 複習: ${viewRev[idx]} 字`,
+                                        `  └ 累計已學: ${viewCumulative[idx]} 字 ／ 累計熟練: ${viewMastered[idx]} 字`
+                                    ];
                                 }
                             }
                         }

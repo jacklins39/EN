@@ -9,7 +9,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261025V21';
+        const APP_BUILD_VERSION = '20261025V22';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -30,18 +30,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261025V21"></script>
-    <script src="toeic_data.js?v=20261025V21"></script>
-    <script src="jh_data.js?v=20261025V21"></script>
-    <script src="listening_data.js?v=20261025V21"></script>
-    <script src="uk_phonetics_manifest.js?v=20261025V21"></script>
-    <script src="words_audio_manifest.js?v=20261025V21"></script>
-    <script src="examples_audio_manifest.js?v=20261025V21"></script>
-    <script src="zh_audio_manifest.js?v=20261025V21"></script>
-    <script src="collocations_audio_manifest.js?v=20261025V21"></script>
-    <script src="syn_ant_data.js?v=20261025V21"></script>
-    <script src="synonyms_unit8_data.js?v=20261025V21"></script>
-    <script src="examples_unit9_data.js?v=20261025V21"></script>
+    <script src="words_data.js?v=20261025V22"></script>
+    <script src="toeic_data.js?v=20261025V22"></script>
+    <script src="jh_data.js?v=20261025V22"></script>
+    <script src="listening_data.js?v=20261025V22"></script>
+    <script src="uk_phonetics_manifest.js?v=20261025V22"></script>
+    <script src="words_audio_manifest.js?v=20261025V22"></script>
+    <script src="examples_audio_manifest.js?v=20261025V22"></script>
+    <script src="zh_audio_manifest.js?v=20261025V22"></script>
+    <script src="collocations_audio_manifest.js?v=20261025V22"></script>
+    <script src="syn_ant_data.js?v=20261025V22"></script>
+    <script src="synonyms_unit8_data.js?v=20261025V22"></script>
+    <script src="examples_unit9_data.js?v=20261025V22"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -1305,9 +1305,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261025V21</span>
+                        <span id="app-version-display">版本 20261025V22</span>
                     </div>
-                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261025V21</p>
+                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261025V22</p>
                 </div>
             </div>
         </div>
@@ -2127,6 +2127,16 @@
                     }
                 } else {
                     saveDailyPlansLocally();
+                    if (!isSilent) {
+                        const syncBanner = document.getElementById('sync-banner');
+                        if (syncBanner) {
+                            const userLabel = currentUser && currentUser.email ? currentUser.email.split('@')[0] : '已登入';
+                            syncBanner.innerText = `☁️ 雲端已就緒 (${userLabel} · 首次連線建立成功)`;
+                            syncBanner.className = "bg-green-100 text-green-800 text-xs text-center py-1 font-medium";
+                            syncBanner.classList.remove('hidden');
+                            setTimeout(() => syncBanner.classList.add('hidden'), 3500);
+                        }
+                    }
                 }
                 // 先完成本地排程初始化 (期間抑制重複寫入)，最後統一單次寫回雲端，消除併發寫入風暴
                 initAppLogic();
@@ -2142,7 +2152,7 @@
             }
         }
 
-        function flushSaveToCloud() {
+        function flushSaveToCloud(bannerMessage = null) {
             if (!currentUser) return Promise.resolve();
             if (cloudSaveTimer) {
                 clearTimeout(cloudSaveTimer);
@@ -2188,12 +2198,15 @@
                     throw restErr;
                 }
             }).then(() => {
-                const banner = document.getElementById('sync-banner');
-                if (banner && banner.classList.contains('hidden')) {
-                    banner.innerText = "☁️ 進度已即時同步至雲端";
-                    banner.className = "bg-green-100 text-green-800 text-xs text-center py-1 font-medium";
-                    banner.classList.remove('hidden');
-                    setTimeout(() => banner.classList.add('hidden'), 2000);
+                // 關鍵時機提示：只在明確傳入提示文字時（如整回結算、重要手動變更）才彈出提示，一般做題過程保持全靜默
+                if (bannerMessage) {
+                    const banner = document.getElementById('sync-banner');
+                    if (banner) {
+                        banner.innerText = typeof bannerMessage === 'string' ? bannerMessage : "☁️ 進度已即時同步至雲端";
+                        banner.className = "bg-green-100 text-green-800 text-xs text-center py-1 font-medium";
+                        banner.classList.remove('hidden');
+                        setTimeout(() => banner.classList.add('hidden'), 2500);
+                    }
                 }
             }).catch(error => {
                 console.error("雲端存檔失敗:", error);
@@ -2207,16 +2220,16 @@
             });
         }
 
-        function saveToCloud(immediate = false) {
+        function saveToCloud(immediate = false, bannerMessage = null) {
             if (!currentUser || suppressCloudSave) return Promise.resolve();
             if (immediate) {
-                return flushSaveToCloud();
+                return flushSaveToCloud(bannerMessage);
             }
             if (cloudSaveTimer) clearTimeout(cloudSaveTimer);
             return new Promise((resolve) => {
                 cloudSaveTimer = setTimeout(() => {
                     cloudSaveTimer = null;
-                    flushSaveToCloud().then(resolve).catch(() => resolve());
+                    flushSaveToCloud(bannerMessage).then(resolve).catch(() => resolve());
                 }, 500);
             });
         }
@@ -4082,8 +4095,9 @@
             if (sessionTitle === "一般課程" && dailyPlans[currentUnit]) {
                 dailyPlans[currentUnit].completed = true;
                 saveDailyPlansLocally();
-                saveToCloud();
             }
+            // 整回結算成果：立即同步至雲端並明確提示
+            saveToCloud(true, "☁️ 本回學習成果已安全同步至雲端");
             currentWord = null;
             sessionQueue = [];
             mistakeQueue = [];

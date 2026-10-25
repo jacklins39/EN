@@ -9,7 +9,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261025V27';
+        const APP_BUILD_VERSION = '20261025V28';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -30,19 +30,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261025V27"></script>
-    <script src="toeic_data.js?v=20261025V27"></script>
-    <script src="jh_data.js?v=20261025V27"></script>
-    <script src="listening_data.js?v=20261025V27"></script>
-    <script src="yahoo_dict_data.js?v=20261025V27"></script>
-    <script src="uk_phonetics_manifest.js?v=20261025V27"></script>
-    <script src="words_audio_manifest.js?v=20261025V27"></script>
-    <script src="examples_audio_manifest.js?v=20261025V27"></script>
-    <script src="zh_audio_manifest.js?v=20261025V27"></script>
-    <script src="collocations_audio_manifest.js?v=20261025V27"></script>
-    <script src="syn_ant_data.js?v=20261025V27"></script>
-    <script src="synonyms_unit8_data.js?v=20261025V27"></script>
-    <script src="examples_unit9_data.js?v=20261025V27"></script>
+    <script src="words_data.js?v=20261025V28"></script>
+    <script src="toeic_data.js?v=20261025V28"></script>
+    <script src="jh_data.js?v=20261025V28"></script>
+    <script src="listening_data.js?v=20261025V28"></script>
+    <script src="yahoo_dict_data.js?v=20261025V28"></script>
+    <script src="uk_phonetics_manifest.js?v=20261025V28"></script>
+    <script src="words_audio_manifest.js?v=20261025V28"></script>
+    <script src="examples_audio_manifest.js?v=20261025V28"></script>
+    <script src="zh_audio_manifest.js?v=20261025V28"></script>
+    <script src="collocations_audio_manifest.js?v=20261025V28"></script>
+    <script src="syn_ant_data.js?v=20261025V28"></script>
+    <script src="synonyms_unit8_data.js?v=20261025V28"></script>
+    <script src="examples_unit9_data.js?v=20261025V28"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -806,7 +806,7 @@
                         </div>
                         <div class="flex items-center justify-center gap-1 mb-1.5 max-w-full px-1">
                             <span id="card-pos-badge" class="hidden"></span>
-                            <div class="cursor-pointer text-center text-slate-700 font-semibold text-sm sm:text-[15px] leading-snug" id="card-translation" title="點擊朗讀中文釋義">n. 蘋果</div>
+                            <div class="cursor-pointer text-center text-slate-700 font-normal text-xs sm:text-sm leading-relaxed" id="card-translation" title="點擊朗讀中文釋義">n. 蘋果</div>
                             <button id="btn-speak-zh" class="p-0.5 text-slate-400 hover:text-[#0071E3] hover:bg-blue-50 rounded-full transition-colors cursor-pointer shrink-0" title="朗讀中文釋義" aria-label="朗讀中文釋義">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
                             </button>
@@ -1311,9 +1311,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261025V27</span>
+                        <span id="app-version-display">版本 20261025V28</span>
                     </div>
-                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261025V27</p>
+                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261025V28</p>
                 </div>
             </div>
         </div>
@@ -3858,7 +3858,7 @@
                     const hintEl = document.getElementById('card-front-hint');
                     const audioBtn = document.getElementById('btn-audio');
 
-                    const curCapsulesHtml = `<span class="text-slate-700 font-semibold text-sm sm:text-base">${esc(currentWord.zh)}</span>`;
+                    const curCapsulesHtml = `<span class="text-slate-700 font-normal text-xs sm:text-sm">${esc(currentWord.zh)}</span>`;
 
                     if (currentQuizType === 'listen') {
                         // 盲聽題：卡片正面由 🎧 🔊 瞬間揭曉為真實英文單字、KK 音標與中文釋義

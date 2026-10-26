@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261026V28';
+        const APP_BUILD_VERSION = '20261026V29';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -31,19 +31,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261026V28"></script>
-    <script src="toeic_data.js?v=20261026V28"></script>
-    <script src="jh_data.js?v=20261026V28"></script>
-    <script src="listening_data.js?v=20261026V28"></script>
-    <script src="listening_words_data.js?v=20261026V28"></script>
-    <script src="uk_phonetics_manifest.js?v=20261026V28"></script>
-    <script src="words_audio_manifest.js?v=20261026V28"></script>
-    <script src="examples_audio_manifest.js?v=20261026V28"></script>
-    <script src="zh_audio_manifest.js?v=20261026V28"></script>
-    <script src="collocations_audio_manifest.js?v=20261026V28"></script>
-    <script src="syn_ant_data.js?v=20261026V28"></script>
-    <script src="synonyms_unit8_data.js?v=20261026V28"></script>
-    <script src="examples_unit9_data.js?v=20261026V28"></script>
+    <script src="words_data.js?v=20261026V29"></script>
+    <script src="toeic_data.js?v=20261026V29"></script>
+    <script src="jh_data.js?v=20261026V29"></script>
+    <script src="listening_data.js?v=20261026V29"></script>
+    <script src="listening_words_data.js?v=20261026V29"></script>
+    <script src="uk_phonetics_manifest.js?v=20261026V29"></script>
+    <script src="words_audio_manifest.js?v=20261026V29"></script>
+    <script src="examples_audio_manifest.js?v=20261026V29"></script>
+    <script src="zh_audio_manifest.js?v=20261026V29"></script>
+    <script src="collocations_audio_manifest.js?v=20261026V29"></script>
+    <script src="syn_ant_data.js?v=20261026V29"></script>
+    <script src="synonyms_unit8_data.js?v=20261026V29"></script>
+    <script src="examples_unit9_data.js?v=20261026V29"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -7434,7 +7434,14 @@
             const yahooSynList = (typeof SYN_ANT_DB !== 'undefined' && (SYN_ANT_DB[w.en.toLowerCase()]?.syn || SYN_ANT_DB[resolveBaseLemma(w.en.toLowerCase())]?.syn)) || [];
 
             const coreSynSet = new Set([...(CORE_WORD_SYNONYMS[w.en.toLowerCase()] || CORE_WORD_SYNONYMS[resolveBaseLemma(w.en.toLowerCase())] || []).map(s => s.toLowerCase()), ...yahooSynList.map(s => s.toLowerCase())]);
-            const unitInfo = isExternal ? { name: '外部查詢', color: 'bg-purple-50 text-purple-700 border-purple-200' } : getUnitBadgeInfo(w.unit || builtinUnitOf(w.en) || 1);
+            let detectedUnit = w.unit || builtinUnitOf(w.en);
+            if (!detectedUnit) {
+                const inListening = typeof listeningArticlesDB !== 'undefined' && listeningArticlesDB.some(a => (a.vocabulary || []).some(v => v.en && v.en.toLowerCase() === w.en.toLowerCase()));
+                if (inListening) detectedUnit = 19;
+            }
+            const unitInfo = (isExternal && !detectedUnit)
+                ? { name: '外部查詢', color: 'bg-purple-50 text-purple-700 border-purple-200' }
+                : (detectedUnit ? getUnitBadgeInfo(detectedUnit) : { name: '外部詞彙', color: 'bg-purple-50 text-purple-700 border-purple-200' });
 
             // 更新彈窗頂部來源徽章
             const badgeEl = document.getElementById('detail-modal-source-badge');
@@ -7517,7 +7524,7 @@
                         <a href="https://tw.dictionary.search.yahoo.com/search?p=${encodeURIComponent(w.en)}" target="_blank" rel="noopener noreferrer" class="py-2 px-1 bg-purple-50 text-purple-700 hover:bg-purple-100 rounded-xl border border-purple-200 transition">Yahoo 字典</a>
                         <a href="https://translate.google.com/?sl=en&tl=zh-TW&text=${encodeURIComponent(w.en)}&op=translate" target="_blank" rel="noopener noreferrer" class="py-2 px-1 bg-blue-50 text-[#0071E3] hover:bg-blue-100 rounded-xl border border-blue-200 transition">Google 翻譯</a>
                     </div>
-                    ${builtinUnitOf(w.en) ? `<div class="text-center text-[#86868B] text-xs py-1">收錄於：${getUnitBadgeInfo(w.unit || builtinUnitOf(w.en)).name}</div>` : `
+                    ${(detectedUnit || builtinUnitOf(w.en)) ? `<div class="text-center text-[#86868B] text-xs py-1">收錄於：${getUnitBadgeInfo(detectedUnit || builtinUnitOf(w.en)).name}</div>` : `
                     <button id="btn-detail-add-custom" class="w-full text-center bg-green-50 text-[#0071E3] hover:bg-green-100 font-medium py-2 rounded-xl text-xs border border-green-200 transition-colors shadow-2xs">
                         ➕ 將此單字加入「自訂字庫 (單元 10)」
                     </button>`}
@@ -7525,27 +7532,29 @@
             `;
 
             content.innerHTML = `
-                <!-- 單字標題與發音列 (響應式防折行截斷、純細體與俐落工具列設計) -->
-                <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-2.5">
-                    <div class="min-w-0 flex-1">
-                        <h2 class="text-2xl sm:text-3xl font-extrabold text-[#1D1D1F] tracking-tight mb-1.5 break-words">${esc(w.en)}</h2>
+                <!-- 單字標題與發音列 (全寬展示防英文切斷斷字，發音按鈕靈活兩端對齊) -->
+                <div class="space-y-2 mb-2">
+                    <div class="w-full">
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-[#1D1D1F] tracking-tight break-normal overflow-wrap-normal select-all">${esc(w.en)}</h2>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                         <div class="flex items-center gap-1.5 flex-wrap">
                             ${renderPhoneticsBadgesHtml(w, 'lg')}
                         </div>
-                    </div>
-                    <div class="flex items-center gap-1.5 shrink-0 flex-wrap sm:justify-end pt-0.5">
-                        <button id="btn-detail-audio-both" type="button" class="px-2.5 py-1.5 rounded-xl font-medium text-xs flex items-center gap-1 shadow-2xs transition-all active:scale-95 cursor-pointer bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:opacity-95" title="雙口音輪播 (美音 ➔ 英音)">
-                            <span>🔄 雙音</span>
-                        </button>
-                        <button id="btn-detail-audio-us" type="button" class="px-2.5 py-1.5 rounded-xl font-medium text-xs flex items-center gap-1 shadow-2xs transition-all active:scale-95 cursor-pointer bg-blue-50 text-[#0071E3] border border-blue-200/80 hover:bg-blue-100" title="真人美音 (女聲)">
-                            <span>🇺🇸 美音</span>
-                        </button>
-                        <button id="btn-detail-audio-uk" type="button" class="px-2.5 py-1.5 rounded-xl font-medium text-xs flex items-center gap-1 shadow-2xs transition-all active:scale-95 cursor-pointer bg-slate-100 text-slate-700 border border-slate-200 hover:bg-slate-200" title="真人英音 (男聲)">
-                            <span>🇬🇧 英音</span>
-                        </button>
-                        <button id="btn-detail-audio-slow" type="button" class="px-2 py-1.5 text-gray-500 bg-gray-100 hover:bg-gray-200 rounded-xl transition-all cursor-pointer text-xs font-medium" title="慢速朗讀 (0.75x)">
-                            <span>🐢 慢速</span>
-                        </button>
+                        <div class="flex items-center gap-1.5 shrink-0 flex-wrap sm:justify-end">
+                            <button id="btn-detail-audio-both" type="button" class="px-2.5 py-1.5 rounded-xl font-medium text-xs flex items-center gap-1 shadow-2xs transition-all active:scale-95 cursor-pointer bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:opacity-95" title="雙口音輪播 (美音 ➔ 英音)">
+                                <span>🔄 雙音</span>
+                            </button>
+                            <button id="btn-detail-audio-us" type="button" class="px-2.5 py-1.5 rounded-xl font-medium text-xs flex items-center gap-1 shadow-2xs transition-all active:scale-95 cursor-pointer bg-blue-50 text-[#0071E3] border border-blue-200/80 hover:bg-blue-100" title="真人美音 (女聲)">
+                                <span>🇺🇸 美音</span>
+                            </button>
+                            <button id="btn-detail-audio-uk" type="button" class="px-2.5 py-1.5 rounded-xl font-medium text-xs flex items-center gap-1 shadow-2xs transition-all active:scale-95 cursor-pointer bg-slate-100 text-slate-700 border border-slate-200 hover:bg-slate-200" title="真人英音 (男聲)">
+                                <span>🇬🇧 英音</span>
+                            </button>
+                            <button id="btn-detail-audio-slow" type="button" class="px-2 py-1.5 text-gray-500 bg-gray-100 hover:bg-gray-200 rounded-xl transition-all cursor-pointer text-xs font-medium" title="慢速朗讀 (0.75x)">
+                                <span>🐢 慢速</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
 

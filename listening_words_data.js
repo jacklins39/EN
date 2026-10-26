@@ -119,5 +119,55 @@ const listeningWordsDB = [
     "unit": 19,
     "example": "All software deliverables must be thoroughly tested before final handover to the client.",
     "exampleZh": "所有軟體交付成果在最終移交給客戶前都必須經過徹底測試。"
+  },
+  {
+    "id": 31959,
+    "en": "discretionary",
+    "kk": "[dɪsˋkrɛʃən͵ɛrɪ]",
+    "uk": "/dɪˈskreʃənri/",
+    "zh": "adj. 自由裁量的、非必要的、隨意支配的",
+    "unit": 19,
+    "example": "The board voted to reduce discretionary expenditures on corporate travel this quarter.",
+    "exampleZh": "董事會投票決定在本季度削減企業差旅等非必要自由支配開支。"
+  },
+  {
+    "id": 31960,
+    "en": "adjuster",
+    "kk": "[əˋdʒʌstɚ]",
+    "uk": "/əˈdʒʌstə(r)/",
+    "zh": "n. 理賠理算審查員、調解人",
+    "unit": 19,
+    "example": "The insurance claims adjuster inspected the damaged factory equipment on Tuesday.",
+    "exampleZh": "保險理賠理算審查員於週二實地檢查了受損的工廠設備。"
+  },
+  {
+    "id": 31961,
+    "en": "redundancy",
+    "kk": "[rɪˋdʌndənsɪ]",
+    "uk": "/rɪˈdʌndənsi/",
+    "zh": "n. 冗餘、重複資源、人員多餘",
+    "unit": 19,
+    "example": "Merging the regional sales offices eliminated unnecessary operational redundancy.",
+    "exampleZh": "合併區域業務辦事處消除了不必要的營運冗餘。"
+  },
+  {
+    "id": 31962,
+    "en": "roadmap",
+    "kk": "[ˋrod͵mæp]",
+    "uk": "/ˈrəʊdmæp/",
+    "zh": "n. 策略藍圖、指導計劃、發展規劃",
+    "unit": 19,
+    "example": "The executive team presented a three-year strategic roadmap for technological innovation.",
+    "exampleZh": "高階主管團隊提出了一份為期三年的技術創新策略藍圖。"
+  },
+  {
+    "id": 31963,
+    "en": "conversion",
+    "kk": "[kənˋvɝʒən]",
+    "uk": "/kənˈvɜːʃn/",
+    "zh": "n. 轉換、線上顧客轉換率",
+    "unit": 19,
+    "example": "Our targeted email campaign achieved an unprecedented website visitor conversion rate.",
+    "exampleZh": "我們精準定向的電子郵件行銷活動實現了史無前例的網站訪客轉換率。"
   }
 ];

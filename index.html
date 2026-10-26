@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261026V31';
+        const APP_BUILD_VERSION = '20261026V32';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -31,19 +31,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261026V31"></script>
-    <script src="toeic_data.js?v=20261026V31"></script>
-    <script src="jh_data.js?v=20261026V31"></script>
-    <script src="listening_data.js?v=20261026V31"></script>
-    <script src="listening_words_data.js?v=20261026V31"></script>
-    <script src="uk_phonetics_manifest.js?v=20261026V31"></script>
-    <script src="words_audio_manifest.js?v=20261026V31"></script>
-    <script src="examples_audio_manifest.js?v=20261026V31"></script>
-    <script src="zh_audio_manifest.js?v=20261026V31"></script>
-    <script src="collocations_audio_manifest.js?v=20261026V31"></script>
-    <script src="syn_ant_data.js?v=20261026V31"></script>
-    <script src="synonyms_unit8_data.js?v=20261026V31"></script>
-    <script src="examples_unit9_data.js?v=20261026V31"></script>
+    <script src="words_data.js?v=20261026V32"></script>
+    <script src="toeic_data.js?v=20261026V32"></script>
+    <script src="jh_data.js?v=20261026V32"></script>
+    <script src="listening_data.js?v=20261026V32"></script>
+    <script src="listening_words_data.js?v=20261026V32"></script>
+    <script src="uk_phonetics_manifest.js?v=20261026V32"></script>
+    <script src="words_audio_manifest.js?v=20261026V32"></script>
+    <script src="examples_audio_manifest.js?v=20261026V32"></script>
+    <script src="zh_audio_manifest.js?v=20261026V32"></script>
+    <script src="collocations_audio_manifest.js?v=20261026V32"></script>
+    <script src="syn_ant_data.js?v=20261026V32"></script>
+    <script src="synonyms_unit8_data.js?v=20261026V32"></script>
+    <script src="examples_unit9_data.js?v=20261026V32"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -544,7 +544,9 @@
                             <option value="4">單元 4 (3001 - 4000)</option>
                             <option value="5">單元 5 (4001 - 5000)</option>
                             <option value="6">單元 6 (5001 - 6000)</option>
-                            <option value="7">單元 7 (6001 - 9053 · 2611 字)</option>
+                            <option value="7">單元 7 (6001 - 7000 · 1000 字)</option>
+                            <option value="8">單元 8 (7001 - 8000 · 1000 字)</option>
+                            <option value="9">單元 9 (8001 - 8611 · 611 字)</option>
                         </optgroup>
                         <optgroup label="💼 全新制多益 3000">
                             <option value="11">多益單元 1 (1 - 1000)</option>
@@ -1634,10 +1636,9 @@
         const SRS_INTERVALS = [0, 1, 3, 7, 14, 30]; 
         const MAX_LEVEL = 5;
         const VALID_NEW_WORDS_COUNTS = [5, 10, 15, 20, 30, 50];
-        const VALID_UNIT_IDS = [1, 2, 3, 4, 5, 6, 7, 10, 11, 12, 13, 17, 18, 19];
+        const VALID_UNIT_IDS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 17, 18, 19];
         function normalizeCurrentUnit(u) {
             const num = parseInt(u, 10);
-            if (num === 8 || num === 9) return 7; // 原單元 8、9 已合併移至單元 7
             return VALID_UNIT_IDS.includes(num) ? num : 1;
         }
         const VALID_SPEECH_RATES = ['0.75', '0.85', '1.0', '1.25', '1.5'];
@@ -7337,7 +7338,7 @@
             return result.slice(0, 4);
         }
 
-        // 全局統一單元命名映射配置 (單一真實來源 Single Source of Truth)
+        // 全局統一單元命名映射配置 (單一真實來源 Single Source of Truth，高中單元 1~9 每單元 1000 字原則)
         const UNIT_CONFIG = {
             1:  { badge: '高中 7000 單 (單元 1)', short: '單元 1', color: 'bg-blue-50 text-[#0071E3] border-blue-200' },
             2:  { badge: '高中 7000 單 (單元 2)', short: '單元 2', color: 'bg-blue-50 text-[#0071E3] border-blue-200' },
@@ -7346,6 +7347,8 @@
             5:  { badge: '高中 7000 單 (單元 5)', short: '單元 5', color: 'bg-blue-50 text-[#0071E3] border-blue-200' },
             6:  { badge: '高中 7000 單 (單元 6)', short: '單元 6', color: 'bg-blue-50 text-[#0071E3] border-blue-200' },
             7:  { badge: '高中 7000 單 (單元 7)', short: '單元 7', color: 'bg-blue-50 text-[#0071E3] border-blue-200' },
+            8:  { badge: '高中 7000 單 (單元 8)', short: '單元 8', color: 'bg-blue-50 text-[#0071E3] border-blue-200' },
+            9:  { badge: '高中 7000 單 (單元 9)', short: '單元 9', color: 'bg-blue-50 text-[#0071E3] border-blue-200' },
             11: { badge: '全新制多益 (單元 1)', short: '多益單元 1', color: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
             12: { badge: '全新制多益 (單元 2)', short: '多益單元 2', color: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
             13: { badge: '全新制多益 (單元 3)', short: '多益單元 3', color: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
@@ -7357,7 +7360,6 @@
 
         function getUnitBadgeInfo(unit) {
             unit = Number(unit);
-            if (unit === 8 || unit === 9) unit = 7; // 原單元 8、9 歸屬至單元 7
             const conf = UNIT_CONFIG[unit];
             if (conf) return { name: conf.badge, color: conf.color };
             return { name: `單元 ${unit}`, color: 'bg-gray-100 text-gray-700 border-gray-200' };
@@ -7365,7 +7367,6 @@
 
         function getUnitShortName(unit) {
             unit = Number(unit);
-            if (unit === 8 || unit === 9) unit = 7;
             const conf = UNIT_CONFIG[unit];
             if (conf) return conf.short;
             return `單元 ${unit}`;
@@ -7899,7 +7900,6 @@
 
         function getUnitDisplayName(unit) {
             unit = Number(unit);
-            if (unit === 8 || unit === 9) unit = 7;
             const unitSel = document.getElementById('unit-selector');
             if (unitSel) {
                 const opt = unitSel.querySelector(`option[value="${unit}"]`);
@@ -8339,7 +8339,7 @@
             if (!word) return 0;
             const lw = String(word).trim().toLowerCase();
             const hit = vocabularyDB.find(w => w.unit !== 10 && w.en && w.en.toLowerCase() === lw);
-            if (hit) return (hit.unit === 8 || hit.unit === 9) ? 7 : (hit.unit || 1);
+            if (hit) return hit.unit || 1;
             if (typeof listeningWordsDB !== 'undefined') {
                 const lHit = listeningWordsDB.find(w => w.en && w.en.toLowerCase() === lw);
                 if (lHit) return 19;

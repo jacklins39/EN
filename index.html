@@ -9,7 +9,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261026V8';
+        const APP_BUILD_VERSION = '20261026V9';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -30,18 +30,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261026V8"></script>
-    <script src="toeic_data.js?v=20261026V8"></script>
-    <script src="jh_data.js?v=20261026V8"></script>
-    <script src="listening_data.js?v=20261026V8"></script>
-    <script src="uk_phonetics_manifest.js?v=20261026V8"></script>
-    <script src="words_audio_manifest.js?v=20261026V8"></script>
-    <script src="examples_audio_manifest.js?v=20261026V8"></script>
-    <script src="zh_audio_manifest.js?v=20261026V8"></script>
-    <script src="collocations_audio_manifest.js?v=20261026V8"></script>
-    <script src="syn_ant_data.js?v=20261026V8"></script>
-    <script src="synonyms_unit8_data.js?v=20261026V8"></script>
-    <script src="examples_unit9_data.js?v=20261026V8"></script>
+    <script src="words_data.js?v=20261026V9"></script>
+    <script src="toeic_data.js?v=20261026V9"></script>
+    <script src="jh_data.js?v=20261026V9"></script>
+    <script src="listening_data.js?v=20261026V9"></script>
+    <script src="uk_phonetics_manifest.js?v=20261026V9"></script>
+    <script src="words_audio_manifest.js?v=20261026V9"></script>
+    <script src="examples_audio_manifest.js?v=20261026V9"></script>
+    <script src="zh_audio_manifest.js?v=20261026V9"></script>
+    <script src="collocations_audio_manifest.js?v=20261026V9"></script>
+    <script src="syn_ant_data.js?v=20261026V9"></script>
+    <script src="synonyms_unit8_data.js?v=20261026V9"></script>
+    <script src="examples_unit9_data.js?v=20261026V9"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -1332,9 +1332,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261026V8</span>
+                        <span id="app-version-display">版本 20261026V9</span>
                     </div>
-                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261026V8</p>
+                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261026V9</p>
                 </div>
             </div>
         </div>
@@ -1756,7 +1756,7 @@
             return { pos: badge, posBadgeText: badge, pureZh: pureZh || zhStr || '', formattedZh: formatted, items: badge ? [{ pos: badge, text: pureZh }] : [{ pos: '', text: pureZh }] };
         }
 
-        // 取得單字最核心、最常聽到的精簡中文釋義 (供卡片翻面朗讀與精簡展示)
+        // 取得單字最核心、最常聽到的精簡中文釋義 (供卡片翻面、測驗選項與題目精簡展示)
         function getConciseZh(zhStr, explicitPos = '', exampleZh = '', exampleEn = '', targetEn = '') {
             if (!zhStr) return '';
             const parsed = splitPosAndZh(zhStr, explicitPos, exampleZh, exampleEn, targetEn);
@@ -1766,13 +1766,15 @@
             } else {
                 firstText = parsed.pureZh || zhStr;
             }
-            // 清除括號註釋
+            // 清除括號註釋與冗長省略號
             firstText = firstText.replace(/[\(（][^）\)]*[\)）]/g, '').trim();
-            // 依頓號、逗號切分詞條，取前 1～2 個最核心常用詞 (字數控制在 8 字內)
-            const terms = firstText.split(/[,，、/]/).map(t => t.trim()).filter(Boolean);
+            firstText = firstText.replace(/[…\.]{2,}的?/g, '').trim();
+            // 依頓號、逗號、分號切分詞條，取前 1～2 個最核心常用詞 (字數控制在 8 字內)
+            const rawTerms = firstText.split(/[,，、/；;\s]+/).map(t => t.trim()).filter(Boolean);
+            const terms = rawTerms.map(t => t.replace(/[…\.]{2,}的?/g, '').trim()).filter(Boolean);
             if (!terms.length) return firstText.slice(0, 8);
             let res = terms[0];
-            if (terms.length > 1 && (res.length + terms[1].length <= 8)) {
+            if (terms.length > 1 && (res.length + terms[1].length <= 8) && terms[1] !== res) {
                 res += '、' + terms[1];
             }
             return res;
@@ -3892,8 +3894,9 @@
                 hintEl.innerText = '看英文 ➜ 選出中文';
             } else if (t === 'zh2en') {
                 const parsed = splitPosAndZh(w.zh, w.pos, w.exampleZh, w.example, w.en);
+                const conciseZh = getConciseZh(w.zh, w.pos, w.exampleZh, w.example, w.en) || parsed.pureZh || w.zh;
                 wordEl.className = mid; 
-                wordEl.innerText = parsed.pureZh; 
+                wordEl.innerText = conciseZh; 
                 const rf = document.getElementById('card-phonetic-row'); if (rf) rf.style.display = 'none';
                 hintEl.innerHTML = parsed.pos ? `<span class="inline-block bg-blue-50 text-[#0071E3] border border-blue-200 text-xs px-2 py-0.5 rounded-full font-mono lowercase mr-1.5">${parsed.pos}</span> 看中文 ➜ 選出英文` : '看中文 ➜ 選出英文';
                 audioBtn.classList.add('hidden');
@@ -3908,9 +3911,10 @@
                     }
                 }, 100);
             } else if (t === 'fill') {
-                const parsed = splitPosAndZh(w.zh, w.pos);
+                const parsed = splitPosAndZh(w.zh, w.pos, w.exampleZh, w.example, w.en);
+                const conciseZh = getConciseZh(w.zh, w.pos, w.exampleZh, w.example, w.en) || parsed.pureZh || w.zh;
                 wordEl.className = mid; 
-                wordEl.innerText = parsed.pureZh; 
+                wordEl.innerText = conciseZh; 
                 const rf = document.getElementById('card-phonetic-row'); if (rf) rf.style.display = 'none';
                 hintEl.innerHTML = parsed.pos ? `<span class="inline-block bg-blue-50 text-[#0071E3] border border-blue-200 text-xs px-2 py-0.5 rounded-full font-mono lowercase mr-1.5">${parsed.pos}</span> 看中文 ➜ 鍵盤輸入英文拼寫` : '看中文 ➜ 鍵盤輸入英文拼寫';
                 audioBtn.classList.add('hidden');
@@ -3999,6 +4003,15 @@
             const same = vocabularyDB.filter(w => w.unit === currentWord.unit && w.id !== currentWord.id);
             const pool = same.length >= 30 ? same : vocabularyDB;
 
+            // 輔助函式：取得題型選項在當前模式下的標準精簡高頻展示文字
+            const getQuizOptionText = (cand) => {
+                if (!cand) return '';
+                if (key === 'zh') {
+                    return getConciseZh(cand.zh, cand.pos, cand.exampleZh, cand.example, cand.en) || splitPosAndZh(cand.zh, cand.pos).pureZh || cand.zh || '';
+                }
+                return cand.en || '';
+            };
+
             // 同詞性干擾項匹配：優先挑選相同詞性（如同為動詞/名詞/形容詞）的單字作為選項，杜絕靠詞性猜答案
             const targetPosList = extractPos(currentWord.zh, currentWord.pos);
             let preferredPool = pool;
@@ -4010,28 +4023,29 @@
             }
 
             const isValidOption = (cand) => {
-                if (!cand || !cand[key]) return false;
+                if (!cand) return false;
+                const txt = getQuizOptionText(cand);
+                if (!txt) return false;
                 if (key === 'zh') {
-                    const parsed = splitPosAndZh(cand.zh, cand.pos);
-                    return /[\u4e00-\u9fa5]/.test(parsed.pureZh);
+                    return /[\u4e00-\u9fa5]/.test(txt);
                 }
                 return /^[a-zA-Z\s\-'.]+$/.test(cand.en);
             };
 
             const options = [currentWord];
             let attempts = 0;
-            // 優先從同詞性候選池抽取干擾項
+            // 優先從同詞性候選池抽取干擾項 (並確保展示文字不重複)
             while (options.length < 4 && attempts < 300) {
                 const r = preferredPool[Math.floor(Math.random() * preferredPool.length)];
                 attempts++;
-                if (isValidOption(r) && !options.find(o => norm(o[key]) === norm(r[key]))) options.push(r);
+                if (isValidOption(r) && !options.find(o => norm(getQuizOptionText(o)) === norm(getQuizOptionText(r)))) options.push(r);
             }
             // 若同詞性候選不足 4 個，退回一般候選池補齊
             attempts = 0;
             while (options.length < 4 && attempts < 300) {
                 const r = pool[Math.floor(Math.random() * pool.length)];
                 attempts++;
-                if (isValidOption(r) && !options.find(o => norm(o[key]) === norm(r[key]))) options.push(r);
+                if (isValidOption(r) && !options.find(o => norm(getQuizOptionText(o)) === norm(getQuizOptionText(r)))) options.push(r);
             }
             options.sort(() => Math.random() - 0.5);
 
@@ -4041,8 +4055,8 @@
                 btn.dataset.id = opt.id;
                 btn._opt = opt;
                 
-                // 選項文字：若為中文，一律提取純中文，去除詞性前綴，徹底消除自訂字無詞性被直接選出的破綻！
-                const optText = key === 'zh' ? splitPosAndZh(opt.zh, opt.pos).pureZh : opt.en;
+                // 選項文字：若為看英選中，一律比照翻牌只顯示核心高頻中文，杜絕整串長句與罕見義！
+                const optText = getQuizOptionText(opt);
                 btn.innerHTML = `<span class="bg-gray-100 text-gray-400 text-sm font-mono px-2 py-0.5 rounded mr-3 hidden sm:inline-block">${index + 1}</span> <span>${esc(optText)}</span>`;
                 btn.onclick = () => {
                     if (isShowingAnswer) return;
@@ -4055,7 +4069,11 @@
                     const hintEl = document.getElementById('card-front-hint');
                     const audioBtn = document.getElementById('btn-audio');
 
-                    const curCapsulesHtml = `<span class="text-slate-700 font-normal text-xs sm:text-sm">${esc(currentWord.zh)}</span>`;
+                    const curParsed = splitPosAndZh(currentWord.zh, currentWord.pos, currentWord.exampleZh, currentWord.example, currentWord.en);
+                    const curConcise = getConciseZh(currentWord.zh, currentWord.pos, currentWord.exampleZh, currentWord.example, currentWord.en) || curParsed.pureZh || currentWord.zh;
+                    const curPrimaryPos = curParsed.items?.[0]?.pos || curParsed.posBadgeText || '';
+                    const curPosBadge = curPrimaryPos ? `<span class="text-xs bg-blue-50 text-[#0071E3] border border-blue-200 px-1.5 py-0.5 rounded font-mono lowercase mr-1">${esc(curPrimaryPos.toLowerCase())}</span> ` : '';
+                    const curCapsulesHtml = `<span class="text-slate-800 font-bold text-sm sm:text-base">${curPosBadge}${esc(curConcise)}</span>`;
 
                     if (currentQuizType === 'listen') {
                         // 盲聽題：卡片正面由 🎧 🔊 瞬間揭曉為真實英文單字、KK 音標與中文釋義
@@ -4069,7 +4087,7 @@
                         hintEl.innerHTML = `<span class="${isCorrect ? 'text-green-600' : 'text-red-500'} font-semibold text-base"><span>${isCorrect ? '✅' : '❌'} 正確單字：</span><span class="text-[#0071E3] font-bold">${esc(currentWord.en)}</span> <span class="text-xs text-gray-500 font-normal">${esc(currentWord.kk || '')}</span></span>`;
                         if (audioBtn) audioBtn.classList.remove('hidden');
                     } else if (currentQuizType === 'en2zh') {
-                        // 看英選中：在下方提示列揭曉完整繁中釋義
+                        // 看英選中：在下方提示列揭曉高頻繁中釋義
                         hintEl.innerHTML = `<span class="${isCorrect ? 'text-green-600' : 'text-red-500'} font-semibold text-base inline-flex items-center gap-1.5 flex-wrap"><span>${isCorrect ? '✅' : '❌'} 正確釋義：</span>${curCapsulesHtml}</span>`;
                     }
 
@@ -4079,8 +4097,10 @@
                         const bOpt = b._opt;
                         const isThisCorrect = String(b.dataset.id) === String(currentWord.id);
                         const isThisClicked = b === btn;
-                        const bParsed = splitPosAndZh(bOpt.zh, bOpt.pos);
-                        const bPosBadge = bParsed.pos ? `<span class="text-xs bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded mr-1 font-mono lowercase">${bParsed.pos}</span>` : '';
+                        const bParsed = splitPosAndZh(bOpt.zh, bOpt.pos, bOpt.exampleZh, bOpt.example, bOpt.en);
+                        const bConcise = getConciseZh(bOpt.zh, bOpt.pos, bOpt.exampleZh, bOpt.example, bOpt.en) || bParsed.pureZh || bOpt.zh;
+                        const bPos = bParsed.items?.[0]?.pos || bParsed.posBadgeText || '';
+                        const bPosBadge = bPos ? `<span class="text-xs bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded mr-1 font-mono lowercase">${esc(bPos.toLowerCase())}</span>` : '';
 
                         if (isThisCorrect) {
                             b.classList.remove('bg-white', 'border-gray-200', 'border-slate-200/90', 'hover:bg-[#F5F5F7]', 'hover:bg-slate-50');
@@ -4090,12 +4110,12 @@
                                     <span class="bg-green-600 text-white text-xs font-bold w-5 h-5 rounded-full inline-flex items-center justify-center mr-3 shrink-0">✓</span>
                                     <div class="flex-1 min-w-0 flex items-baseline justify-between flex-wrap gap-1">
                                         <span class="font-bold text-green-900">${esc(bOpt.en)}</span>
-                                        <span class="text-sm font-medium text-green-700">${bPosBadge}${esc(bParsed.pureZh)}</span>
+                                        <span class="text-sm font-medium text-green-700">${bPosBadge}${esc(bConcise)}</span>
                                     </div>`;
                             } else {
                                 b.innerHTML = `
                                     <span class="bg-green-600 text-white text-xs font-bold w-5 h-5 rounded-full inline-flex items-center justify-center mr-3 shrink-0">✓</span>
-                                    <span class="font-bold text-green-900">${bPosBadge}${esc(bParsed.pureZh)}</span>`;
+                                    <span class="font-bold text-green-900">${bPosBadge}${esc(bConcise)}</span>`;
                             }
                         } else if (isThisClicked && !isCorrect) {
                             b.classList.remove('bg-white', 'border-gray-200', 'border-slate-200/90', 'hover:bg-[#F5F5F7]', 'hover:bg-slate-50');
@@ -4105,12 +4125,12 @@
                                     <span class="bg-red-500 text-white text-xs font-bold w-5 h-5 rounded-full inline-flex items-center justify-center mr-3 shrink-0">✕</span>
                                     <div class="flex-1 min-w-0 flex items-baseline justify-between flex-wrap gap-1">
                                         <span class="line-through font-bold opacity-80">${esc(bOpt.en)}</span>
-                                        <span class="text-sm text-red-600">${bPosBadge}${esc(bParsed.pureZh)}</span>
+                                        <span class="text-sm text-red-600">${bPosBadge}${esc(bConcise)}</span>
                                     </div>`;
                             } else {
                                 b.innerHTML = `
                                     <span class="bg-red-500 text-white text-xs font-bold w-5 h-5 rounded-full inline-flex items-center justify-center mr-3 shrink-0">✕</span>
-                                    <span class="line-through font-bold opacity-80">${bPosBadge}${esc(bParsed.pureZh)}</span>`;
+                                    <span class="line-through font-bold opacity-80">${bPosBadge}${esc(bConcise)}</span>`;
                             }
                         } else {
                             // 其他未選選項適度淡化

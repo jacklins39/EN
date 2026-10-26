@@ -729,7 +729,7 @@
         </div>
 
         <!-- 學習模式大廳已整併至 view-dashboard -->
-        <div id="view-study-lobby" class="hidden"></div>
+        
 
         <!-- 學習視圖 (Study Session) -->
         <div id="view-study" class="w-full hidden">
@@ -1382,14 +1382,14 @@
                 <!-- 底部操作按鈕 -->
                 <div class="space-y-2.5 relative z-10">
                     <button id="btn-return-dash" class="btn-action w-full bg-gradient-to-r from-[#0071E3] to-[#005BB5] hover:from-[#0077ED] hover:to-[#0062C4] text-white font-semibold py-3 px-4 rounded-xl shadow-sm text-sm sm:text-[15px] cursor-pointer">
-                        返回儀表板
+                        返回學習
                     </button>
                     <div class="grid grid-cols-2 gap-2.5">
-                        <button id="btn-return-lobby" class="btn-action w-full bg-slate-100 hover:bg-slate-200/80 text-slate-700 font-semibold py-2.5 px-3 rounded-xl text-xs sm:text-sm transition-colors cursor-pointer">
-                            前往學習中心
+                        <button id="btn-completed-replay" class="btn-action w-full bg-slate-100 hover:bg-slate-200/80 text-slate-700 font-semibold py-2.5 px-3 rounded-xl text-xs sm:text-sm transition-colors cursor-pointer">
+                            🔁 再次輪播
                         </button>
                         <button id="btn-completed-rapid" class="btn-action w-full bg-blue-50 hover:bg-blue-100/80 text-[#0071E3] border border-blue-200/60 font-semibold py-2.5 px-3 rounded-xl text-xs sm:text-sm transition-colors cursor-pointer">
-                            ⚡ 再來一輪快問快答
+                            ⚡ 快問快答測驗
                         </button>
                     </div>
                 </div>
@@ -2700,8 +2700,7 @@
 
         const ALL_VIEW_IDS = [
             'view-dashboard',
-            'view-study-lobby',
-            'view-analysis',
+                        'view-analysis',
             'view-weak',
             'view-study',
             'view-listening',
@@ -2731,7 +2730,7 @@
             // Reset nav button styles
             const navBtns = [
                 document.getElementById('tab-btn-dashboard'),
-                document.getElementById('tab-btn-study'),
+                document.getElementById('tab-btn-dashboard'),
                 document.getElementById('tab-btn-listening'),
                 document.getElementById('tab-btn-weak'),
                 document.getElementById('tab-btn-settings')
@@ -2763,7 +2762,7 @@
                 updateDashboard();
             } else if (viewId === 'view-study') {
                 if (sessionQueue.length === 0 && mistakeQueue.length === 0 && !currentWord) {
-                    switchTab('view-study-lobby', document.getElementById('tab-btn-study'));
+                    switchTab('view-dashboard', document.getElementById('tab-btn-dashboard'));
                     return;
                 }
             } else if (viewId === 'view-weak') {
@@ -2922,7 +2921,7 @@
             cardsCompleted = 0;
             resetSessionStats(sessionQueue);
             sessionTitle = title;
-            switchTab('view-study', document.getElementById('tab-btn-study'));
+            switchTab('view-study', document.getElementById('tab-btn-dashboard'));
             nextCard();
         }
 
@@ -2951,7 +2950,7 @@
             isMistakeMode = false;
             isAutoFlashcardMode = false;
             
-            switchTab('view-study', document.getElementById('tab-btn-study'));
+            switchTab('view-study', document.getElementById('tab-btn-dashboard'));
             nextCard();
         }
 
@@ -3042,7 +3041,7 @@
                     cardsCompleted = 0;
                     sessionTitle = title + " (自動輪播)";
                     
-                    switchTab('view-study', document.getElementById('tab-btn-study'));
+                    switchTab('view-study', document.getElementById('tab-btn-dashboard'));
                     nextCard();
                 });
             }
@@ -3097,7 +3096,7 @@
             cardsCompleted = 0;
             resetSessionStats(sessionQueue); isMistakeMode = false;
 
-            switchTab('view-study', document.getElementById('tab-btn-study'));
+            switchTab('view-study', document.getElementById('tab-btn-dashboard'));
             nextCard();
         });
 
@@ -3110,9 +3109,7 @@
             currentWord = null;
             sessionQueue = [];
             mistakeQueue = [];
-            const targetView = (lastActiveView === 'view-study-lobby') ? 'view-study-lobby' : 'view-dashboard';
-            const targetBtn = (lastActiveView === 'view-study-lobby') ? document.getElementById('tab-btn-study') : document.getElementById('tab-btn-dashboard');
-            switchTab(targetView, targetBtn);
+            switchTab('view-dashboard', document.getElementById('tab-btn-dashboard'));
             updateDashboard();
         }
 
@@ -4174,6 +4171,10 @@
                             </div>
                         </div>`).join('') || '<div class="text-xs text-slate-400 text-center py-4">本回無單字紀錄</div>';
                 }
+                const replayBtn = document.getElementById('btn-completed-replay');
+                if (replayBtn) replayBtn.innerText = '🔁 再次輪播';
+                const rapidBtn = document.getElementById('btn-completed-rapid');
+                if (rapidBtn) rapidBtn.innerText = '⚡ 立即測驗 (快問快答)';
                 return;
             }
 
@@ -4243,6 +4244,10 @@
                         </div>`;
                 }).join('');
             }
+            const replayBtn = document.getElementById('btn-completed-replay');
+            if (replayBtn) replayBtn.innerText = '🔄 再練一次本回';
+            const rapidBtn = document.getElementById('btn-completed-rapid');
+            if (rapidBtn) rapidBtn.innerText = '⚡ 來一輪快問快答';
         }
 
         function finishSession() {
@@ -4279,9 +4284,14 @@
             updateDashboard();
         });
 
-        document.getElementById('btn-return-lobby')?.addEventListener('click', () => {
-            switchTab('view-study-lobby', document.getElementById('tab-btn-study'));
-            updateDashboard();
+        document.getElementById('btn-completed-replay')?.addEventListener('click', () => {
+            unlockMobileAudio();
+            const words = (sessionStats.initialWords && sessionStats.initialWords.length) ? [...sessionStats.initialWords] : getUnitWords(currentUnit).slice(0, 10);
+            if (document.getElementById('btn-completed-replay').innerText.includes('輪播')) {
+                startAutoFlashcardSession(words, '自動輪播');
+            } else {
+                document.getElementById('btn-start-session')?.click();
+            }
         });
 
         document.getElementById('btn-completed-rapid')?.addEventListener('click', () => {
@@ -7973,7 +7983,7 @@
             sessionQueue = q; mistakeQueue = [];
             isMistakeMode = false; isAutoFlashcardMode = false;
             totalCardsInSession = q.length; cardsCompleted = 0; resetSessionStats(q);
-            switchTab('view-study', document.getElementById('tab-btn-study'));
+            switchTab('view-study', document.getElementById('tab-btn-dashboard'));
             nextCard();
         }
 
@@ -8018,7 +8028,7 @@
             resetSessionStats(sessionQueue); isMistakeMode = false;
             sessionTitle = `錯題特訓 (${sessionQueue.length} 字)`;
 
-            switchTab('view-study', document.getElementById('tab-btn-study'));
+            switchTab('view-study', document.getElementById('tab-btn-dashboard'));
             nextCard();
         }
 

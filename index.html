@@ -9,7 +9,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261026V11';
+        const APP_BUILD_VERSION = '20261026V12';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -30,18 +30,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261026V11"></script>
-    <script src="toeic_data.js?v=20261026V11"></script>
-    <script src="jh_data.js?v=20261026V11"></script>
-    <script src="listening_data.js?v=20261026V11"></script>
-    <script src="uk_phonetics_manifest.js?v=20261026V11"></script>
-    <script src="words_audio_manifest.js?v=20261026V11"></script>
-    <script src="examples_audio_manifest.js?v=20261026V11"></script>
-    <script src="zh_audio_manifest.js?v=20261026V11"></script>
-    <script src="collocations_audio_manifest.js?v=20261026V11"></script>
-    <script src="syn_ant_data.js?v=20261026V11"></script>
-    <script src="synonyms_unit8_data.js?v=20261026V11"></script>
-    <script src="examples_unit9_data.js?v=20261026V11"></script>
+    <script src="words_data.js?v=20261026V12"></script>
+    <script src="toeic_data.js?v=20261026V12"></script>
+    <script src="jh_data.js?v=20261026V12"></script>
+    <script src="listening_data.js?v=20261026V12"></script>
+    <script src="uk_phonetics_manifest.js?v=20261026V12"></script>
+    <script src="words_audio_manifest.js?v=20261026V12"></script>
+    <script src="examples_audio_manifest.js?v=20261026V12"></script>
+    <script src="zh_audio_manifest.js?v=20261026V12"></script>
+    <script src="collocations_audio_manifest.js?v=20261026V12"></script>
+    <script src="syn_ant_data.js?v=20261026V12"></script>
+    <script src="synonyms_unit8_data.js?v=20261026V12"></script>
+    <script src="examples_unit9_data.js?v=20261026V12"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -827,13 +827,16 @@
                                 <span id="card-uk-back">/ˈæpl/</span>
                             </span>
                         </div>
-                        <!-- 真人雙口音切換：美音女聲 / 英音男聲 -->
-                        <div class="flex items-center justify-center gap-2 mb-1.5 shrink-0">
+                        <!-- 真人雙口音切換：美音女聲 / 英音男聲 / 逐字拼讀 -->
+                        <div class="flex items-center justify-center gap-1.5 sm:gap-2 mb-1.5 shrink-0 flex-wrap">
                             <button type="button" id="btn-card-voice-us" class="px-2.5 py-0.5 rounded-full text-xs font-bold flex items-center gap-1 cursor-pointer transition-all active:scale-95 shadow-2xs border bg-blue-50 text-[#0071E3] border-blue-300 ring-2 ring-blue-400/30" title="真人美音 (女聲)">
                                 <span>🇺🇸 美音 👩</span>
                             </button>
                             <button type="button" id="btn-card-voice-uk" class="px-2.5 py-0.5 rounded-full text-xs font-bold flex items-center gap-1 cursor-pointer transition-all active:scale-95 shadow-2xs border bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200" title="真人英音 (男聲)">
                                 <span>🇬🇧 英音 👨</span>
+                            </button>
+                            <button type="button" id="btn-card-voice-spell" class="px-2.5 py-0.5 rounded-full text-xs font-bold flex items-center gap-1 cursor-pointer transition-all active:scale-95 shadow-2xs border bg-indigo-50 text-indigo-700 border-indigo-200 hover:bg-indigo-100/80" title="逐字母拼讀 (A-B-C)">
+                                <span>🔤 拼讀</span>
                             </button>
                         </div>
                         <div class="flex flex-col items-center justify-center mb-1.5 max-w-full px-1">
@@ -1319,6 +1322,22 @@
                         </label>
                     </div>
 
+                    <div class="w-full flex items-center justify-between p-4 bg-white border-0 border-gray-200 rounded-2xl hover:bg-[#F5F5F7] transition-colors mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="p-2 bg-indigo-50 text-indigo-600 rounded-xl font-bold font-mono text-xs flex items-center justify-center w-9 h-9">
+                                ABC
+                            </div>
+                            <div class="text-left">
+                                <h3 class="font-semibold text-[#1D1D1F]">翻牌逐字母拼讀 (A-B-C)</h3>
+                                <p class="text-xs text-[#86868B]">朗讀單字後，依序逐字念出英文字母強化拼寫</p>
+                            </div>
+                        </div>
+                        <label class="relative inline-flex items-center cursor-pointer">
+                            <input type="checkbox" id="setting-spell-letters" class="sr-only peer">
+                            <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#0071E3]"></div>
+                        </label>
+                    </div>
+
 
                     
                     <button id="btn-force-sync" class="w-full flex items-center justify-between p-4 bg-white border border-blue-100 rounded-2xl hover:bg-blue-50 transition-colors">
@@ -1351,9 +1370,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261026V11</span>
+                        <span id="app-version-display">版本 20261026V12</span>
                     </div>
-                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261026V11</p>
+                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261026V12</p>
                 </div>
             </div>
         </div>
@@ -3210,8 +3229,14 @@
             document.addEventListener(evtType, unlockMobileAudio, { passive: true, once: true });
         });
 
+        let currentSpellLettersController = null;
+
         function stopAllAudio() {
             clearAudioCallbacks();
+            if (currentSpellLettersController) {
+                try { currentSpellLettersController.cancel(); } catch(e) {}
+                currentSpellLettersController = null;
+            }
             if (backsideAudioTimerId) {
                 clearTimeout(backsideAudioTimerId);
                 backsideAudioTimerId = null;
@@ -3380,6 +3405,114 @@
             }
         }
 
+        // 逐字母拼讀核心函數 (使用本機 26 個超清 Edge-TTS 字母 MP3 依序流式朗讀)
+        function playSpellLetters(word, onEndedCallback) {
+            if (!word) {
+                if (typeof onEndedCallback === 'function') onEndedCallback();
+                return;
+            }
+            stopAllAudio();
+            unlockMobileAudio();
+
+            const raw = String(word).trim().toLowerCase();
+            const tokens = [];
+            for (let i = 0; i < raw.length; i++) {
+                const ch = raw[i];
+                if (/[a-z]/.test(ch)) {
+                    tokens.push({ type: 'letter', val: ch });
+                } else if (/\s|-/.test(ch)) {
+                    // 詞組空格或連字號間隔，插入微小停頓
+                    if (tokens.length > 0 && tokens[tokens.length - 1].type !== 'pause') {
+                        tokens.push({ type: 'pause', val: 260 });
+                    }
+                }
+            }
+
+            if (tokens.length === 0) {
+                if (typeof onEndedCallback === 'function') onEndedCallback();
+                return;
+            }
+
+            let index = 0;
+            let isCancelled = false;
+
+            const spellBtn = document.getElementById('btn-card-voice-spell');
+            if (spellBtn) {
+                spellBtn.classList.remove('bg-indigo-50', 'text-indigo-700', 'border-indigo-200');
+                spellBtn.classList.add('bg-indigo-600', 'text-white', 'ring-2', 'ring-indigo-400/40');
+            }
+
+            const cleanup = () => {
+                if (spellBtn) {
+                    spellBtn.classList.remove('bg-indigo-600', 'text-white', 'ring-2', 'ring-indigo-400/40');
+                    spellBtn.classList.add('bg-indigo-50', 'text-indigo-700', 'border-indigo-200');
+                }
+                currentSpellLettersController = null;
+            };
+
+            currentSpellLettersController = {
+                cancel: () => {
+                    isCancelled = true;
+                    cleanup();
+                }
+            };
+
+            function playNext() {
+                if (isCancelled) {
+                    cleanup();
+                    return;
+                }
+                if (index >= tokens.length) {
+                    cleanup();
+                    if (typeof onEndedCallback === 'function') onEndedCallback();
+                    return;
+                }
+
+                const token = tokens[index++];
+                if (token.type === 'pause') {
+                    backsideAudioTimerId = setTimeout(playNext, token.val);
+                    return;
+                }
+
+                const letter = token.val;
+                const letterSrc = `audio/letters/${letter}.mp3`;
+
+                try {
+                    wordAudioPlayer.pause();
+                    wordAudioPlayer.currentTime = 0;
+                } catch(e) {}
+
+                const attachCallback = (audioEl) => {
+                    clearAudioCallbacks();
+                    let called = false;
+                    const next = () => {
+                        if (called || isCancelled) return;
+                        called = true;
+                        clearAudioCallbacks();
+                        // 每個字母朗讀完畢間隔 100ms
+                        backsideAudioTimerId = setTimeout(playNext, 100);
+                    };
+                    currentAudioDoneHandler = next;
+                    audioEl.addEventListener('ended', next, { once: true });
+                    audioEl.addEventListener('error', next, { once: true });
+                    audioFallbackTimerId = setTimeout(next, 700);
+                };
+
+                wordAudioPlayer.src = letterSrc;
+                wordAudioPlayer.playbackRate = 1.0;
+                attachCallback(wordAudioPlayer);
+                const p = wordAudioPlayer.play();
+                if (p !== undefined) {
+                    p.catch(err => {
+                        if (err && (err.name === 'AbortError' || err.code === 20)) return;
+                        playNext();
+                    });
+                }
+            }
+
+            playNext();
+        }
+
         function playBacksideAudio(onEndedCallback) {
             stopAllAudio();
             if (!currentWord || !currentWord.en) {
@@ -3388,6 +3521,7 @@
             }
             const targetWord = currentWord;
             const isSpeakZh = localStorage.getItem('speak_zh_enabled') !== 'false'; // 預設開啟
+            const isSpellLetters = localStorage.getItem('spell_letters_enabled') === 'true'; // 逐字母拼讀開關
             const prefAccent = (typeof getPreferredVoiceAccent === 'function') ? getPreferredVoiceAccent() : 'both';
 
             // 例句朗讀步驟
@@ -3419,6 +3553,19 @@
                 }
             };
 
+            // 逐字母拼讀步驟 (若設定開啟，於單字發音結束後、中文釋義前，逐字念出英文字母 A-B-C)
+            const playSpellStep = () => {
+                if (!currentWord || currentWord.id !== targetWord.id) return;
+                if (isSpellLetters && targetWord.en) {
+                    backsideAudioTimerId = setTimeout(() => {
+                        if (!currentWord || currentWord.id !== targetWord.id) return;
+                        playSpellLetters(targetWord.en, playChineseStep);
+                    }, 250);
+                } else {
+                    playChineseStep();
+                }
+            };
+
             // 英文發音輪播 (依使用者口音設定：雙口音輪播 / 美音女聲 / 英音男聲)
             if (prefAccent === 'both') {
                 updateCardVoiceButtonsHighlight('us');
@@ -3430,7 +3577,7 @@
                         playWordAccent(targetWord.en, 'uk', () => {
                             if (!currentWord || currentWord.id !== targetWord.id) return;
                             updateCardVoiceButtonsHighlight('both');
-                            playChineseStep();
+                            playSpellStep();
                         });
                     }, 260);
                 });
@@ -3438,13 +3585,13 @@
                 updateCardVoiceButtonsHighlight('uk');
                 playWordAccent(targetWord.en, 'uk', () => {
                     if (!currentWord || currentWord.id !== targetWord.id) return;
-                    playChineseStep();
+                    playSpellStep();
                 });
             } else {
                 updateCardVoiceButtonsHighlight('us');
                 playWordAccent(targetWord.en, 'us', () => {
                     if (!currentWord || currentWord.id !== targetWord.id) return;
-                    playChineseStep();
+                    playSpellStep();
                 });
             }
         }
@@ -5336,6 +5483,14 @@
             }
         });
 
+        document.getElementById('btn-card-voice-spell')?.addEventListener('click', (e) => {
+            e.stopPropagation();
+            unlockMobileAudio();
+            if (currentWord && currentWord.en) {
+                playSpellLetters(currentWord.en);
+            }
+        });
+
         // ==========================================
         // 原生口說跟讀評測 (Web Speech Recognition)
         // ==========================================
@@ -5519,6 +5674,16 @@
             settingSpeakZhEl.checked = savedSpeakZh !== 'false';
             settingSpeakZhEl.addEventListener('change', (e) => {
                 localStorage.setItem('speak_zh_enabled', e.target.checked ? 'true' : 'false');
+            });
+        }
+
+        // 設定：翻牌逐字母拼讀開關 (預設關閉，由使用者自主啟用)
+        const settingSpellLettersEl = document.getElementById('setting-spell-letters');
+        if (settingSpellLettersEl) {
+            const savedSpell = localStorage.getItem('spell_letters_enabled');
+            settingSpellLettersEl.checked = savedSpell === 'true';
+            settingSpellLettersEl.addEventListener('change', (e) => {
+                localStorage.setItem('spell_letters_enabled', e.target.checked ? 'true' : 'false');
             });
         }
 

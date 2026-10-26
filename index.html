@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261026V33';
+        const APP_BUILD_VERSION = '20261026V34';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -31,19 +31,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261026V33"></script>
-    <script src="toeic_data.js?v=20261026V33"></script>
-    <script src="jh_data.js?v=20261026V33"></script>
-    <script src="listening_data.js?v=20261026V33"></script>
-    <script src="listening_words_data.js?v=20261026V33"></script>
-    <script src="uk_phonetics_manifest.js?v=20261026V33"></script>
-    <script src="words_audio_manifest.js?v=20261026V33"></script>
-    <script src="examples_audio_manifest.js?v=20261026V33"></script>
-    <script src="zh_audio_manifest.js?v=20261026V33"></script>
-    <script src="collocations_audio_manifest.js?v=20261026V33"></script>
-    <script src="syn_ant_data.js?v=20261026V33"></script>
-    <script src="synonyms_unit8_data.js?v=20261026V33"></script>
-    <script src="examples_unit9_data.js?v=20261026V33"></script>
+    <script src="words_data.js?v=20261026V34"></script>
+    <script src="toeic_data.js?v=20261026V34"></script>
+    <script src="jh_data.js?v=20261026V34"></script>
+    <script src="listening_data.js?v=20261026V34"></script>
+    <script src="listening_words_data.js?v=20261026V34"></script>
+    <script src="uk_phonetics_manifest.js?v=20261026V34"></script>
+    <script src="words_audio_manifest.js?v=20261026V34"></script>
+    <script src="examples_audio_manifest.js?v=20261026V34"></script>
+    <script src="zh_audio_manifest.js?v=20261026V34"></script>
+    <script src="collocations_audio_manifest.js?v=20261026V34"></script>
+    <script src="syn_ant_data.js?v=20261026V34"></script>
+    <script src="synonyms_unit8_data.js?v=20261026V34"></script>
+    <script src="examples_unit9_data.js?v=20261026V34"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -884,16 +884,16 @@
                                 <span id="card-uk-back">/ˈæpl/</span>
                             </span>
                         </div>
-                        <!-- 真人雙口音切換：美音女聲 / 英音男聲 / 逐字拼讀 -->
-                        <div class="flex items-center justify-center gap-1.5 sm:gap-2 mb-1.5 shrink-0 flex-wrap">
-                            <button type="button" id="btn-card-voice-us" class="px-2.5 py-0.5 rounded-full text-xs font-bold flex items-center gap-1 cursor-pointer transition-all active:scale-95 shadow-2xs border bg-blue-50 text-[#0071E3] border-blue-300 ring-2 ring-blue-400/30" title="真人美音 (女聲)">
-                                <span>🇺🇸 美音 👩</span>
+                        <!-- 真人雙口音切換：美音 / 英音 / 逐字拼讀 -->
+                        <div class="flex items-center justify-center gap-2 mb-2 shrink-0 flex-wrap">
+                            <button type="button" id="btn-card-voice-us" class="px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1 cursor-pointer transition-all active:scale-95 shadow-2xs border bg-blue-50 text-[#0071E3] border-blue-300 ring-2 ring-blue-400/30" title="真人美音 (女聲)">
+                                <span>🇺🇸 美音</span>
                             </button>
-                            <button type="button" id="btn-card-voice-uk" class="px-2.5 py-0.5 rounded-full text-xs font-bold flex items-center gap-1 cursor-pointer transition-all active:scale-95 shadow-2xs border bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200" title="真人英音 (男聲)">
-                                <span>🇬🇧 英音 👨</span>
+                            <button type="button" id="btn-card-voice-uk" class="px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1 cursor-pointer transition-all active:scale-95 shadow-2xs border bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200" title="真人英音 (男聲)">
+                                <span>🇬🇧 英音</span>
                             </button>
-                            <button type="button" id="btn-card-voice-spell" class="px-2.5 py-0.5 rounded-full text-xs font-bold flex items-center gap-1 cursor-pointer transition-all active:scale-95 shadow-2xs border bg-indigo-50 text-indigo-700 border-indigo-200 hover:bg-indigo-100/80" title="逐字母拼讀 (A-B-C)">
-                                <span>🔤 拼讀</span>
+                            <button type="button" id="btn-card-voice-spell" class="px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1 cursor-pointer transition-all active:scale-95 shadow-2xs border bg-indigo-50 text-indigo-700 border-indigo-200 hover:bg-indigo-100/80" title="逐字母拼讀 (A-B-C)">
+                                <span>拼讀</span>
                             </button>
                         </div>
                         <div class="flex flex-col items-center justify-center mb-1.5 max-w-full px-1">
@@ -5215,8 +5215,8 @@
             const btnUk = document.getElementById('btn-card-voice-uk');
             if (!btnUs || !btnUk) return;
 
-            const baseUs = 'px-2.5 py-0.5 rounded-full text-xs font-bold flex items-center gap-1 cursor-pointer transition-all shadow-2xs border ';
-            const baseUk = 'px-2.5 py-0.5 rounded-full text-xs font-bold flex items-center gap-1 cursor-pointer transition-all shadow-2xs border ';
+            const baseUs = 'px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1 cursor-pointer transition-all shadow-2xs border ';
+            const baseUk = 'px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1 cursor-pointer transition-all shadow-2xs border ';
 
             if (activePlayingAccent === 'us') {
                 btnUs.className = baseUs + 'bg-[#0071E3] text-white border-blue-600 ring-2 ring-blue-300 scale-105 font-extrabold';

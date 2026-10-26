@@ -5881,5 +5881,853 @@ const listeningArticlesDB = [
         "zh": "n. 發票、請款單"
       }
     ]
+  },
+  {
+    "id": "2026_11_toeic_01",
+    "month": "11月份",
+    "category": "toeic",
+    "title": "多益: 企業預算審查與成本撙節措施 (B2)",
+    "level": "B2",
+    "text": "Good morning, department heads. In light of rising operational costs, executive management has mandated a comprehensive budget review for the upcoming fiscal quarter. We must identify avenues to reduce discretionary expenditures without compromising product quality. Additionally, capital investments will be re-evaluated to account for asset depreciation. Please submit your revised budget proposals to the finance committee by Friday afternoon.",
+    "sentences": [
+      {
+        "en": "Good morning, department heads.",
+        "zh": "各位部門主管，早安。",
+        "start": 0.0,
+        "end": 2.8
+      },
+      {
+        "en": "In light of rising operational costs, executive management has mandated a comprehensive budget review for the upcoming fiscal quarter.",
+        "zh": "鑑於營運成本不斷攀升，高階管理團隊已要求針對下一財政季度進行全面預算審查。",
+        "start": 2.75,
+        "end": 10.99
+      },
+      {
+        "en": "We must identify avenues to reduce discretionary expenditures without compromising product quality.",
+        "zh": "我們必須在不損害產品品質的前提下，找出削減非必要自由支配開支的途徑。",
+        "start": 10.99,
+        "end": 17.32
+      },
+      {
+        "en": "Additionally, capital investments will be re-evaluated to account for asset depreciation.",
+        "zh": "此外，各項資本投資也將重新評估，以將資產折舊因素納入考量。",
+        "start": 17.32,
+        "end": 23.39
+      },
+      {
+        "en": "Please submit your revised budget proposals to the finance committee by Friday afternoon.",
+        "zh": "請各位於週五下午前將修訂後的預算提案提交給財務委員會。",
+        "start": 23.39,
+        "end": 28.69
+      }
+    ],
+    "grammar": [
+      {
+        "tag": "成語介系詞與高階動詞搭配",
+        "title": "商務政策緣由起手式：In light of... / mandate + a review",
+        "pattern": "In light of + 名詞 (表考量／鑑於) ／ 主詞 + mandate + 名詞 (強制命令／正式要求)",
+        "explanation": "商務公文中 In light of（鑑於…、考量到…）常置於句首作為政策調整的合理解釋，比 because of 正式許多。動詞 mandate 指主管機關或高層「下達強制命令或要求」，後接受詞 review 構成商務高頻搭配（mandate a comprehensive review）。",
+        "keyPoint": "注意 in light of 後面接名詞或動名詞；mandate 亦可作名詞（授權／指令）。",
+        "example": "<span class='font-bold text-[#0071E3] underline decoration-[#0071E3]/60 decoration-2 underline-offset-4'>In light of rising operational costs</span>, executive management <span class='font-bold text-[#0071E3] underline decoration-[#0071E3]/60 decoration-2 underline-offset-4'>has mandated a comprehensive budget review</span>.",
+        "exampleZh": "鑑於營運成本攀升，管理團隊已下令進行全面預算審核。"
+      },
+      {
+        "tag": "介系詞接動名詞與現在分詞修飾",
+        "title": "附帶條件表達法：without compromising product quality",
+        "pattern": "介系詞 without + 動名詞 (V-ing) + 受詞",
+        "explanation": "compromise 在一般英文常作「妥協」，但在商務製造與品質管理中，及物動詞用法專指「損害、損及、危及（品質／安全／信譽）」。without compromising 形成高頻成語，意指「在不犧牲…的前提下」。",
+        "keyPoint": "多益常考填空：without 後面必加動名詞形式（compromising），絕不可直接加原形動詞。",
+        "example": "We must identify avenues to reduce discretionary expenditures <span class='font-bold text-[#0071E3] underline decoration-[#0071E3]/60 decoration-2 underline-offset-4'>without compromising product quality</span>.",
+        "exampleZh": "我們必須在不犧牲產品品質的前提下找出削減支出的管道。"
+      },
+      {
+        "tag": "動詞片語語意與會計概念",
+        "title": "核算與說明動詞：re-evaluated to account for asset depreciation",
+        "pattern": "不定詞 (to + V) 表目的 ／ account for + 名詞 (解釋／將…納入計算)",
+        "explanation": "動詞片語 account for 有兩大核心商務語意：(1) 佔…比例（如 account for 30% of sales），以及 (2) 將…納入考量與核算（如 account for depreciation）。此處以不定詞 to account for 表明重新評估資產的目的。",
+        "keyPoint": "會計重要名詞：depreciation 指有形資產之「折舊」；無形資產攤銷則稱 amortization。",
+        "example": "Capital investments will be re-evaluated <span class='font-bold text-[#0071E3] underline decoration-[#0071E3]/60 decoration-2 underline-offset-4'>to account for asset depreciation</span>.",
+        "exampleZh": "資本投資將重新評估，以將資產折舊納入核算。"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "1. What is the primary purpose of the announcement?",
+        "options": [
+          "A. To announce immediate employee layoffs",
+          "B. To outline corporate budget review expectations",
+          "C. To celebrate quarterly revenue growth",
+          "D. To announce the purchase of new office equipment"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "2. What must department heads reduce without lowering quality?",
+        "options": [
+          "A. Employee salaries",
+          "B. Discretionary expenditures",
+          "C. Manufacturing working hours",
+          "D. Advertising campaigns"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "3. When must the revised proposals be submitted?",
+        "options": [
+          "A. By Friday afternoon",
+          "B. Early next month",
+          "C. By Wednesday morning",
+          "D. At the end of the year"
+        ],
+        "ans": 0
+      }
+    ],
+    "voice": "en-US-JennyNeural",
+    "voiceLabel": "美式女聲 (US)",
+    "audio": "audio/listening/2026_11_toeic_01.mp3",
+    "vocabulary": [
+      {
+        "en": "depreciation",
+        "zh": "n. 折舊、資產貶值"
+      },
+      {
+        "en": "turnaround",
+        "zh": "n. 轉虧為盈、週轉時間"
+      },
+      {
+        "en": "expenditure",
+        "zh": "n. 支出、開銷"
+      },
+      {
+        "en": "discretionary",
+        "zh": "adj. 自由裁量的、非必要的"
+      }
+    ]
+  },
+  {
+    "id": "2026_11_toeic_02",
+    "month": "11月份",
+    "category": "toeic",
+    "title": "多益: 跨國物流倉儲與分包商配送 (B2)",
+    "level": "B2",
+    "text": "Attention logistics personnel. Our regional distribution center is experiencing severe delays due to unexpected port congestion. To meet contractual deadlines, we have authorized our primary subcontractor to deploy additional freight vehicles immediately. All incoming shipments must be processed promptly upon arrival at the warehouse. Please ensure that every consignment is properly logged in the inventory management system.",
+    "sentences": [
+      {
+        "en": "Attention logistics personnel.",
+        "zh": "各位物流人員請注意。",
+        "start": 0.0,
+        "end": 2.8
+      },
+      {
+        "en": "Our regional distribution center is experiencing severe delays due to unexpected port congestion.",
+        "zh": "由於非預期的港口壅塞，本區域配送中心正遭遇嚴重的貨運延誤。",
+        "start": 2.75,
+        "end": 9.04
+      },
+      {
+        "en": "To meet contractual deadlines, we have authorized our primary subcontractor to deploy additional freight vehicles immediately.",
+        "zh": "為了履行合約期限，我們已授權主要分包商立即調派額外的貨運車輛。",
+        "start": 9.04,
+        "end": 16.38
+      },
+      {
+        "en": "All incoming shipments must be processed promptly upon arrival at the warehouse.",
+        "zh": "所有送達貨件在抵達倉庫時必須立即迅速處理。",
+        "start": 16.38,
+        "end": 21.32
+      },
+      {
+        "en": "Please ensure that every consignment is properly logged in the inventory management system.",
+        "zh": "請確保每筆託運貨物均已在庫存管理系統中妥善登記登錄。",
+        "start": 21.32,
+        "end": 26.32
+      }
+    ],
+    "grammar": [
+      {
+        "tag": "使役與授權受詞補語結構",
+        "title": "授權委託結構：authorize + 受詞 + to V",
+        "pattern": "主詞 + authorize + 受詞 (someone) + to + 原形動詞 (V)",
+        "explanation": "動詞 authorize（授權）後方接「受詞（subcontractor）+ 不定詞（to deploy）」作受詞補語，表示合法許可某人採取特定行動。subcontractor 為商務物流核心字，指承包部分合約的「分包商、協力廠商」。",
+        "keyPoint": "同義搭配：empower someone to V ／ permit someone to V（但在商業合約上 authorize 最嚴謹）。",
+        "example": "We <span class='font-bold text-[#0071E3] underline decoration-[#0071E3]/60 decoration-2 underline-offset-4'>have authorized our primary subcontractor to deploy</span> additional freight vehicles immediately.",
+        "exampleZh": "我們已授權主要分包商立即部署額外貨運車隊。"
+      },
+      {
+        "tag": "時間介系詞片語與動名詞縮略",
+        "title": "一…就…之商務時限表達：upon arrival at...",
+        "pattern": "upon / on + 名詞 (arrival) + 介系詞 (at/in) + 地點",
+        "explanation": "upon + 名詞為商用英文極高頻的倒裝或修飾結構，等同於 as soon as it arrives at...。搭配被動態 must be processed promptly，強烈要求業務的即時性與時效性。",
+        "keyPoint": "多益常見：upon receipt of payment（一收到款項就…）／ upon arrival at the port（一抵港就…）。",
+        "example": "All incoming shipments must be processed promptly <span class='font-bold text-[#0071E3] underline decoration-[#0071E3]/60 decoration-2 underline-offset-4'>upon arrival at the warehouse</span>.",
+        "exampleZh": "所有進港貨物抵達倉庫時均須立即完成驗收處理。"
+      },
+      {
+        "tag": "名詞子句與精確被動態",
+        "title": "確保動作完成：ensure that every consignment is properly logged",
+        "pattern": "Please ensure + that 名詞子句 (主詞 + be + 過去分詞 p.p.)",
+        "explanation": "consignment 專指「託運的一批貨物」或「寄售品」。名詞子句中的動詞 log 作及物動詞表示「記錄、登載在系統上」，被動態 is properly logged 表示必須在系統內留下完整追蹤審計軌跡。",
+        "keyPoint": "consignment 常考介系詞：on consignment（以寄售方式販售）。",
+        "example": "Please ensure that <span class='font-bold text-[#0071E3] underline decoration-[#0071E3]/60 decoration-2 underline-offset-4'>every consignment is properly logged</span> in the inventory management system.",
+        "exampleZh": "請確保每批託運貨件均已確實登錄於庫存系統。"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "1. What is the root cause of the delivery delay?",
+        "options": [
+          "A. Severe highway traffic accidents",
+          "B. Unexpected port congestion",
+          "C. A software malfunction at customs",
+          "D. A labor dispute at the central warehouse"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "2. What solution has been authorized by management?",
+        "options": [
+          "A. Delaying the shipments by another week",
+          "B. Closing the distribution center temporarily",
+          "C. Deploying additional vehicles through a subcontractor",
+          "D. Refunding all client orders"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "3. What action must be taken when consignments arrive?",
+        "options": [
+          "A. Log them properly in the inventory system",
+          "B. Return damaged boxes to the manufacturer",
+          "C. Contact the customs officer immediately",
+          "D. Send an email to the end customer"
+        ],
+        "ans": 0
+      }
+    ],
+    "voice": "en-GB-RyanNeural",
+    "voiceLabel": "英式男聲 (UK)",
+    "audio": "audio/listening/2026_11_toeic_02.mp3",
+    "vocabulary": [
+      {
+        "en": "subcontractor",
+        "zh": "n. 分包商、協力廠商"
+      },
+      {
+        "en": "consignment",
+        "zh": "n. 託運貨物、寄售品"
+      },
+      {
+        "en": "inventory",
+        "zh": "n. 庫存、存貨清單"
+      },
+      {
+        "en": "logistics",
+        "zh": "n. 物流、後勤運籌"
+      }
+    ]
+  },
+  {
+    "id": "2026_11_toeic_03",
+    "month": "11月份",
+    "category": "toeic",
+    "title": "多益: 企業雲端系統維護與停機公告 (B1)",
+    "level": "B1",
+    "text": "This is an important system announcement from the IT department. We will perform critical cloud infrastructure upgrades this Saturday from 10:00 PM to 4:00 AM. During this maintenance window, company servers and internal portals will experience scheduled downtime. Employees should save all ongoing work and log out of their workstations before leaving on Friday. If you encounter any technical issues after the upgrade, please contact the helpdesk for troubleshooting.",
+    "sentences": [
+      {
+        "en": "This is an important system announcement from the IT department.",
+        "zh": "這是來自資訊科技部門的重要系統公告。",
+        "start": 0.0,
+        "end": 4.46
+      },
+      {
+        "en": "We will perform critical cloud infrastructure upgrades this Saturday from 10:00 PM to 4:00 AM.",
+        "zh": "我們將於本週六晚間 10 點至凌晨 4 點進行關鍵雲端基礎架構升級。",
+        "start": 4.41,
+        "end": 10.53
+      },
+      {
+        "en": "During this maintenance window, company servers and internal portals will experience scheduled downtime.",
+        "zh": "在該維護期間內，公司伺服器與內部入口網站將會經歷預定的停機暫停服務。",
+        "start": 10.53,
+        "end": 16.66
+      },
+      {
+        "en": "Employees should save all ongoing work and log out of their workstations before leaving on Friday.",
+        "zh": "員工應在週五離開公司前儲存所有進行中的工作，並登出工作站電腦。",
+        "start": 16.66,
+        "end": 22.32
+      },
+      {
+        "en": "If you encounter any technical issues after the upgrade, please contact the helpdesk for troubleshooting.",
+        "zh": "若您在升級後遭遇任何技術問題，請聯繫客服中心進行疑難排解。",
+        "start": 22.32,
+        "end": 28.29
+      }
+    ],
+    "grammar": [
+      {
+        "tag": "專有名詞搭配與時間界定",
+        "title": "維護窗口與停機時間：maintenance window / scheduled downtime",
+        "pattern": "During this + 名詞片語 (maintenance window) ／ experience + 名詞 (scheduled downtime)",
+        "explanation": "IT 與多益高頻術語 maintenance window 指「預定維護時間區間」；downtime 則指系統因維修或故障而「無法運作的時間、停機時間」，常搭配動詞 experience 或 minimize。",
+        "keyPoint": "相反詞：uptime（系統正常運作時間、連線可用時間）。",
+        "example": "During this maintenance window, company servers <span class='font-bold text-[#0071E3] underline decoration-[#0071E3]/60 decoration-2 underline-offset-4'>will experience scheduled downtime</span>.",
+        "exampleZh": "在維護窗口期間，公司伺服器將經歷預排停機。"
+      },
+      {
+        "tag": "介系詞接現在分詞與時間片語",
+        "title": "離職與下班起手式：before leaving on Friday",
+        "pattern": "介系詞 before + 動名詞 (leaving) + 時間副詞片語",
+        "explanation": "before 後方省略了主詞 you are leaving，直接轉為動名詞 leaving，簡潔有力。log out of workstation 亦為辦公室標準動作（登出工作站）。",
+        "keyPoint": "多益常考介系詞後接 V-ing：before submitting（提交前）、prior to leaving（離開前）。",
+        "example": "Employees should save all ongoing work and log out of their workstations <span class='font-bold text-[#0071E3] underline decoration-[#0071E3]/60 decoration-2 underline-offset-4'>before leaving on Friday</span>.",
+        "exampleZh": "員工應於週五下班前存妥手邊工作並登出電腦。"
+      },
+      {
+        "tag": "條件句與客服疑難排解用語",
+        "title": "故障排除指示：contact the helpdesk for troubleshooting",
+        "pattern": "If + 主詞 + 現在式動詞 (encounter) ..., please + 原形動詞 (contact) + for + 名詞 (troubleshooting)",
+        "explanation": "troubleshooting 結合 trouble（問題）與 shooting（射擊），引申為「故障檢修、疑難排除」。for troubleshooting 為介系詞片語作目的補語，表示尋求協助的具體目的。",
+        "keyPoint": "troubleshoot 亦可作動詞：We need to troubleshoot the server error.",
+        "example": "If you encounter any technical issues, please <span class='font-bold text-[#0071E3] underline decoration-[#0071E3]/60 decoration-2 underline-offset-4'>contact the helpdesk for troubleshooting</span>.",
+        "exampleZh": "若您遇到任何技術問題，請聯繫服務台進行故障排除。"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "1. Who is the speaker in this announcement?",
+        "options": [
+          "A. The Human Resources director",
+          "B. A representative from the IT department",
+          "C. The facilities management coordinator",
+          "D. An external cybersecurity consultant"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "2. When will the scheduled server downtime occur?",
+        "options": [
+          "A. Friday afternoon during work hours",
+          "B. Saturday from 10:00 PM to 4:00 AM",
+          "C. Sunday morning before noon",
+          "D. All day Monday"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "3. What should employees do if they face technical problems on Monday?",
+        "options": [
+          "A. Restart the entire office electrical circuit",
+          "B. Purchase a new personal laptop",
+          "C. Contact the helpdesk for troubleshooting",
+          "D. Submit a formal written complaint"
+        ],
+        "ans": 2
+      }
+    ],
+    "voice": "en-US-GuyNeural",
+    "voiceLabel": "美式男聲 (US)",
+    "audio": "audio/listening/2026_11_toeic_03.mp3",
+    "vocabulary": [
+      {
+        "en": "downtime",
+        "zh": "n. 停機時間、系統暫停服務期"
+      },
+      {
+        "en": "troubleshooting",
+        "zh": "n. 疑難排解、故障排除"
+      },
+      {
+        "en": "maintenance",
+        "zh": "n. 維護、保養"
+      },
+      {
+        "en": "infrastructure",
+        "zh": "n. 基礎設施、底層架構"
+      }
+    ]
+  },
+  {
+    "id": "2026_11_toeic_04",
+    "month": "11月份",
+    "category": "toeic",
+    "title": "多益: 商業保險承保與損害理賠評估 (C1)",
+    "level": "C1",
+    "text": "Good afternoon, board members. Following the equipment damage incident at our overseas manufacturing facility, our risk management division has engaged with the insurance provider. The policy's commercial underwriting terms stipulate that the insurer must indemnify our company for verifiable property losses. However, the claims adjuster has requested comprehensive maintenance logs to rule out operator negligence. We anticipate a preliminary compensation determination by the end of next week.",
+    "sentences": [
+      {
+        "en": "Good afternoon, board members.",
+        "zh": "各位董事會成員，下午好。",
+        "start": 0.0,
+        "end": 2.9
+      },
+      {
+        "en": "Following the equipment damage incident at our overseas manufacturing facility, our risk management division has engaged with the insurance provider.",
+        "zh": "在海外生產基地發生設備損壞事件後，我們的風險管理部門已與保險公司展開接洽交涉。",
+        "start": 2.85,
+        "end": 11.38
+      },
+      {
+        "en": "The policy's commercial underwriting terms stipulate that the insurer must indemnify our company for verifiable property losses.",
+        "zh": "該保單的商業核保條款明確規定，保險人必須就可查證的財產損失對本公司予以賠償。",
+        "start": 11.38,
+        "end": 18.82
+      },
+      {
+        "en": "However, the claims adjuster has requested comprehensive maintenance logs to rule out operator negligence.",
+        "zh": "然而，理賠理算審查員已要求提供完整的設備維修紀錄，以排除操作人員疏失的可能。",
+        "start": 18.82,
+        "end": 25.34
+      },
+      {
+        "en": "We anticipate a preliminary compensation determination by the end of next week.",
+        "zh": "我們預期下週末前將取得初步的理賠賠償裁決結果。",
+        "start": 25.34,
+        "end": 30.51
+      }
+    ],
+    "grammar": [
+      {
+        "tag": "名詞子句與合約規定動詞",
+        "title": "條款規定句型：stipulate that + 主詞 + (must) 原形動詞",
+        "pattern": "合約主詞 + stipulate + that 名詞子句 (主詞 + must / should + 原形動詞)",
+        "explanation": "動詞 stipulate 意為「在合約條款中明文規定」。underwriting terms 指保險的「核保/承保條款」，indemnify 則是保險法規核心動詞，意指「賠償、使免於受損」（indemnify A for B：因 B 賠償 A）。",
+        "keyPoint": "多益高階同義替換：indemnify ＝ compensate ＝ reimburse。",
+        "example": "The policy's commercial underwriting terms <span class='font-bold text-[#0071E3] underline decoration-[#0071E3]/60 decoration-2 underline-offset-4'>stipulate that the insurer must indemnify our company</span> for property losses.",
+        "exampleZh": "保單承保條款明定保險人必須就財產損失向我方賠償。"
+      },
+      {
+        "tag": "動詞片語語意與目的不定詞",
+        "title": "排除人為疏失：to rule out operator negligence",
+        "pattern": "to + 原形動詞 (rule out) + 名詞 (negligence)",
+        "explanation": "rule out 為高頻動詞片語，指「排除…的可能性（eliminate as a possibility）」。negligence 為法律與保險核心字，指「疏忽、過失」，若被判定為 negligence 則保險可能拒賠。",
+        "keyPoint": "搭配詞：gross negligence（重大過失）／ comparative negligence（共同過失）。",
+        "example": "The claims adjuster has requested maintenance logs <span class='font-bold text-[#0071E3] underline decoration-[#0071E3]/60 decoration-2 underline-offset-4'>to rule out operator negligence</span>.",
+        "exampleZh": "理算員已索取維修紀錄以排除人為操作過失。"
+      },
+      {
+        "tag": "商務預測名詞搭配",
+        "title": "預估裁定結果：anticipate a preliminary determination",
+        "pattern": "主詞 + anticipate + 形容詞 (preliminary) + 名詞 (determination)",
+        "explanation": "determination 在一般英文是「決心」，但在保險審核與官方仲裁中，專指「正式裁定、理賠審定結果」。preliminary 意為「初步的」，與 final determination（最終裁定）相對應。",
+        "keyPoint": "多益常考：anticipate 期待/預期後面接名詞或 V-ing，不接 that 子句時更顯精煉。",
+        "example": "We <span class='font-bold text-[#0071E3] underline decoration-[#0071E3]/60 decoration-2 underline-offset-4'>anticipate a preliminary compensation determination</span> by the end of next week.",
+        "exampleZh": "我們預計下週末前將取得初步的理賠賠償裁決。"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "1. What incident led to the insurance claim?",
+        "options": [
+          "A. Equipment damage at an overseas factory",
+          "B. A fire at the corporate headquarters",
+          "C. A cyberattack on financial records",
+          "D. A vehicle accident during a business trip"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "2. Why did the claims adjuster request maintenance logs?",
+        "options": [
+          "A. To calculate the factory's electricity consumption",
+          "B. To verify the names of retired technicians",
+          "C. To rule out operator negligence",
+          "D. To order replacement spare parts"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "3. When does management expect an initial decision?",
+        "options": [
+          "A. Tomorrow morning",
+          "B. By the end of next week",
+          "C. Next fiscal quarter",
+          "D. In thirty days"
+        ],
+        "ans": 1
+      }
+    ],
+    "voice": "en-GB-RyanNeural",
+    "voiceLabel": "英式男聲 (UK)",
+    "audio": "audio/listening/2026_11_toeic_04.mp3",
+    "vocabulary": [
+      {
+        "en": "underwriting",
+        "zh": "n. 保險承保、核保業務"
+      },
+      {
+        "en": "indemnify",
+        "zh": "v. 賠償、補償損失"
+      },
+      {
+        "en": "negligence",
+        "zh": "n. 疏忽、過失"
+      },
+      {
+        "en": "adjuster",
+        "zh": "n. 理賠理算審查員"
+      }
+    ]
+  },
+  {
+    "id": "2026_11_toeic_05",
+    "month": "11月份",
+    "category": "toeic",
+    "title": "多益: 組織重組與高階管理層人事異動 (B2)",
+    "level": "B2",
+    "text": "Dear colleagues, as part of our strategic roadmap for global expansion, the company will initiate an organizational restructuring next month. This transformation aims to streamline decision-making processes and eliminate operational redundancies between departments. Furthermore, several senior leadership positions will transition to oversee our newly formed digital innovation division. We remain deeply committed to supporting all employees throughout this corporate reorganization.",
+    "sentences": [
+      {
+        "en": "Dear colleagues, as part of our strategic roadmap for global expansion, the company will initiate an organizational restructuring next month.",
+        "zh": "各位同仁：作為全球擴張策略藍圖的一環，公司將於下個月啟動組織架構重組。",
+        "start": 0.0,
+        "end": 8.7
+      },
+      {
+        "en": "This transformation aims to streamline decision-making processes and eliminate operational redundancies between departments.",
+        "zh": "此次轉型旨在簡化決策流程，並消除跨部門之間的營運冗餘與重複資源。",
+        "start": 8.65,
+        "end": 16.29
+      },
+      {
+        "en": "Furthermore, several senior leadership positions will transition to oversee our newly formed digital innovation division.",
+        "zh": "此外，數個高階領導職位將進行過渡轉型，直接督導我們新成立的數位創新部門。",
+        "start": 16.29,
+        "end": 23.73
+      },
+      {
+        "en": "We remain deeply committed to supporting all employees throughout this corporate reorganization.",
+        "zh": "在此企業重整過渡期，我們仍堅定承諾全力支持所有員工。",
+        "start": 23.73,
+        "end": 29.34
+      }
+    ],
+    "grammar": [
+      {
+        "tag": "介系詞引導策略背景",
+        "title": "企業戰略起手式：as part of our strategic roadmap for...",
+        "pattern": "as part of + 名詞 (表作為…的一部分) ／ roadmap for + 名詞/V-ing (指導藍圖)",
+        "explanation": "roadmap 在科技與商務界早已跳脫「公路地圖」原意，專指「中長期策略規劃、發展里程碑藍圖」。組織重組（restructuring）常以此句式作為宣佈改組的正面鋪墊。",
+        "keyPoint": "多益常考近義詞：strategic blueprint（策略藍圖）／ long-term masterplan（長期總體規劃）。",
+        "example": "<span class='font-bold text-[#0071E3] underline decoration-[#0071E3]/60 decoration-2 underline-offset-4'>As part of our strategic roadmap for global expansion</span>, the company will initiate an organizational restructuring.",
+        "exampleZh": "作為全球擴展策略藍圖的一環，本公司將於下月啟動組織改組。"
+      },
+      {
+        "tag": "動詞不定詞與精簡效率搭配",
+        "title": "流程優化雙動詞：aims to streamline... and eliminate...",
+        "pattern": "主詞 + aim to + 原形動詞 A (streamline) + and + 原形動詞 B (eliminate)",
+        "explanation": "streamline（將…流線化、簡化流程）與 eliminate redundancies（消除多餘贅餘）是多益組織管理最標準的考題對稱搭配。兩個動詞均承接前面的不定詞符號 to。",
+        "keyPoint": "redundancy 可指「職位被裁撤」或「資源/流程重複冗贅」。",
+        "example": "This transformation <span class='font-bold text-[#0071E3] underline decoration-[#0071E3]/60 decoration-2 underline-offset-4'>aims to streamline decision-making processes and eliminate operational redundancies</span>.",
+        "exampleZh": "此項變革旨在簡化決策體系，並剔除各部門間的重複冗餘。"
+      },
+      {
+        "tag": "承諾介系詞片語接動名詞",
+        "title": "堅定承諾句型：remain deeply committed to supporting...",
+        "pattern": "主詞 + remain committed to + 動名詞 (V-ing) / 名詞",
+        "explanation": "許多考生容易將 to 誤認為不定詞而接原形動詞！committed to 中的 to 為「介系詞」，後方必須接動名詞（supporting），意為「持續致力於支持…」。",
+        "keyPoint": "多益常考介系詞 to 陷阱：look forward to V-ing、be dedicated to V-ing、be committed to V-ing。",
+        "example": "We <span class='font-bold text-[#0071E3] underline decoration-[#0071E3]/60 decoration-2 underline-offset-4'>remain deeply committed to supporting all employees</span> throughout this transition.",
+        "exampleZh": "在此過渡階段中，我們始終堅定支持全體同仁。"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "1. What is scheduled to take place next month?",
+        "options": [
+          "A. An annual corporate picnic",
+          "B. An organizational restructuring",
+          "C. A major product recall",
+          "D. Relocation to a new headquarters building"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "2. What is one stated goal of the restructuring?",
+        "options": [
+          "A. To decrease digital advertising expenditure",
+          "B. To eliminate operational redundancies and streamline decisions",
+          "C. To reduce mandatory employee paid leave",
+          "D. To outsource all customer support overseas"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "3. What will senior leaders transition to oversee?",
+        "options": [
+          "A. The newly created digital innovation division",
+          "B. Regional retail franchise stores",
+          "C. Warehouse packaging operations",
+          "D. Legal patent disputes"
+        ],
+        "ans": 0
+      }
+    ],
+    "voice": "en-US-JennyNeural",
+    "voiceLabel": "美式女聲 (US)",
+    "audio": "audio/listening/2026_11_toeic_05.mp3",
+    "vocabulary": [
+      {
+        "en": "restructuring",
+        "zh": "n. 組織重組、架構調整"
+      },
+      {
+        "en": "streamline",
+        "zh": "v. 精簡、簡化使有效率"
+      },
+      {
+        "en": "redundancy",
+        "zh": "n. 冗餘、重複資源、人員多餘"
+      },
+      {
+        "en": "roadmap",
+        "zh": "n. 策略藍圖、指導計劃"
+      }
+    ]
+  },
+  {
+    "id": "2026_11_toeic_06",
+    "month": "11月份",
+    "category": "toeic",
+    "title": "多益: 跨國品牌社群影響力與數位行銷 (B2)",
+    "level": "B2",
+    "text": "Welcome to our fourth-quarter digital marketing review. Our recent collaboration with prominent industry influencers has significantly boosted brand awareness among younger consumers. Performance metrics indicate a forty percent increase in web traffic and record conversion rates across our online storefront. Moving forward, we plan to allocate a greater share of our advertising budget toward targeted video campaigns. Let us now examine the regional performance breakdown in greater detail.",
+    "sentences": [
+      {
+        "en": "Welcome to our fourth-quarter digital marketing review.",
+        "zh": "歡迎各位參加我們第四季度的數位行銷績效檢討會。",
+        "start": 0.0,
+        "end": 3.71
+      },
+      {
+        "en": "Our recent collaboration with prominent industry influencers has significantly boosted brand awareness among younger consumers.",
+        "zh": "我們近期與業界知名社群網紅的合作，顯著提升了年輕消費者群體中的品牌知名度。",
+        "start": 3.66,
+        "end": 11.2
+      },
+      {
+        "en": "Performance metrics indicate a forty percent increase in web traffic and record conversion rates across our online storefront.",
+        "zh": "成效評估數據顯示，網站流量激增了百分之四十，線上商城的轉換率更創下歷史新高。",
+        "start": 11.2,
+        "end": 18.46
+      },
+      {
+        "en": "Moving forward, we plan to allocate a greater share of our advertising budget toward targeted video campaigns.",
+        "zh": "展望未來，我們計劃將更高比例的廣告預算分配給精準定向的影音行銷專案。",
+        "start": 18.46,
+        "end": 25.06
+      },
+      {
+        "en": "Let us now examine the regional performance breakdown in greater detail.",
+        "zh": "現在讓我們更深入地檢視各地區市場的表現細部數據。",
+        "start": 25.06,
+        "end": 29.74
+      }
+    ],
+    "grammar": [
+      {
+        "tag": "完成式與程度副詞修飾",
+        "title": "行銷成果量化敘述：has significantly boosted brand awareness",
+        "pattern": "主詞 + has/have + 副詞 (significantly) + 過去分詞 (boosted) + 受詞",
+        "explanation": "boost（推升、激增）為商用英文最喜愛的動詞之一，常搭配副詞 significantly、substantially 或 dramatically。influencer 為當代行銷關鍵詞，指具備高社群影響力的意見領袖。",
+        "keyPoint": "搭配詞：boost revenue（帶動營收）／ boost customer loyalty（提升顧客忠誠度）。",
+        "example": "Our collaboration with influencers <span class='font-bold text-[#0071E3] underline decoration-[#0071E3]/60 decoration-2 underline-offset-4'>has significantly boosted brand awareness</span> among younger consumers.",
+        "exampleZh": "我們與意見領袖的合作顯著增強了品牌的市場知名度。"
+      },
+      {
+        "tag": "預算配置動詞與介系詞搭配",
+        "title": "資金調撥搭配法：allocate... toward / to...",
+        "pattern": "主詞 + allocate + 資源/預算 + toward / to + 標的物",
+        "explanation": "動詞 allocate（分配、撥款）後接 budget，後續搭配介系詞 toward 或 to 表示資金額度的流向。targeted 代表「經過受眾精確設定定向的」，是數位行銷必考形容詞。",
+        "keyPoint": "多益常考同義詞：earmark funds for...（指撥專款用於…）。",
+        "example": "We plan to <span class='font-bold text-[#0071E3] underline decoration-[#0071E3]/60 decoration-2 underline-offset-4'>allocate a greater share of our advertising budget toward targeted video campaigns</span>.",
+        "exampleZh": "我們打算將更高份額的廣告預算投入定向影音宣傳活動中。"
+      },
+      {
+        "tag": "分詞介系詞與深入探討",
+        "title": "開會推進語與數據檢視：Moving forward, let us examine... in greater detail",
+        "pattern": "Moving forward (分詞片語表「未來」) ..., let us + 原形動詞 + in greater detail (詳細地)",
+        "explanation": "Moving forward（展望未來、往下進行）在商務會議中是極佳的轉場過渡語。breakdown 指「細部明細分類」，搭配 in greater detail（更加詳盡地），帶出下一階段的深入數據討論。",
+        "keyPoint": "breakdown 在不同語境含意不同：成本分析稱 cost breakdown；機械故障亦可叫 breakdown。",
+        "example": "<span class='font-bold text-[#0071E3] underline decoration-[#0071E3]/60 decoration-2 underline-offset-4'>Moving forward, let us examine the regional performance breakdown in greater detail</span>.",
+        "exampleZh": "接下來，讓我們更詳盡地檢視區域績效明細。"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "1. What action helped boost brand awareness among young consumers?",
+        "options": [
+          "A. Sponsoring a televised sporting event",
+          "B. Collaborating with prominent industry influencers",
+          "C. Printing newspaper coupons",
+          "D. Slashing product prices by half"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "2. What did the recent performance metrics reveal?",
+        "options": [
+          "A. A forty percent increase in web traffic",
+          "B. A drop in online customer inquiries",
+          "C. A slight decrease in overseas shipping costs",
+          "D. A decline in mobile storefront conversions"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "3. What is the company planning to do with its future ad budget?",
+        "options": [
+          "A. Reduce it by twenty percent",
+          "B. Allocate more funds toward targeted video campaigns",
+          "C. Shift completely to radio broadcasts",
+          "D. Donate it to local non-profit groups"
+        ],
+        "ans": 1
+      }
+    ],
+    "voice": "en-US-GuyNeural",
+    "voiceLabel": "美式男聲 (US)",
+    "audio": "audio/listening/2026_11_toeic_06.mp3",
+    "vocabulary": [
+      {
+        "en": "influencer",
+        "zh": "n. 網紅、社群意見領袖"
+      },
+      {
+        "en": "metrics",
+        "zh": "n. 衡量指標、成效度量"
+      },
+      {
+        "en": "conversion",
+        "zh": "n. 轉換、線上顧客轉換率"
+      },
+      {
+        "en": "collaboration",
+        "zh": "n. 合作、共同協作"
+      }
+    ]
+  },
+  {
+    "id": "2026_11_toeic_07",
+    "month": "11月份",
+    "category": "toeic",
+    "title": "多益: 專案進度驗收與成果交付會議 (B2)",
+    "level": "B2",
+    "text": "Good morning, project team. Today's meeting is convened to evaluate our progress toward the final software release. We have successfully achieved every major development milestone ahead of the projected timeline. The engineering department has resolved the outstanding system bugs and validated all client specifications. Our primary focus now shifts to finalizing the user manual and delivering the key project deliverables to the client on Monday.",
+    "sentences": [
+      {
+        "en": "Good morning, project team.",
+        "zh": "專案團隊各位成員，大家早安。",
+        "start": 0.0,
+        "end": 2.71
+      },
+      {
+        "en": "Today's meeting is convened to evaluate our progress toward the final software release.",
+        "zh": "今天召開本次會議的目的，在於評估邁向最終軟體版本發佈的執行進度。",
+        "start": 2.66,
+        "end": 7.99
+      },
+      {
+        "en": "We have successfully achieved every major development milestone ahead of the projected timeline.",
+        "zh": "我們已成功超越預定時程，提前達成各項重大的開發里程碑。",
+        "start": 7.99,
+        "end": 13.54
+      },
+      {
+        "en": "The engineering department has resolved the outstanding system bugs and validated all client specifications.",
+        "zh": "工程部門已解決所有尚未結案的系統漏洞，並驗證了客戶所有的功能規格需求。",
+        "start": 13.54,
+        "end": 20.44
+      },
+      {
+        "en": "Our primary focus now shifts to finalizing the user manual and delivering the key project deliverables to the client on Monday.",
+        "zh": "我們當前的首要焦點將轉向定稿使用者操作手冊，並在週一向客戶正式移交關鍵專案交付成果。",
+        "start": 20.44,
+        "end": 28.06
+      }
+    ],
+    "grammar": [
+      {
+        "tag": "會議召集被動態與目的不定詞",
+        "title": "開會宣告句型：is convened to evaluate our progress",
+        "pattern": "會議主詞 + is convened + to + 原形動詞 (表召開會議之目的)",
+        "explanation": "動詞 convene 是高階多益會議字，表示「召集、召開（正式會議、法庭）」。以被動式 is convened to evaluate 出現，莊重正式。",
+        "keyPoint": "多益常考近義詞：call a meeting ／ assemble ／ gather。",
+        "example": "Today's meeting <span class='font-bold text-[#0071E3] underline decoration-[#0071E3]/60 decoration-2 underline-offset-4'>is convened to evaluate our progress</span> toward the software release.",
+        "exampleZh": "今日召集會議旨在評估軟體發佈進度。"
+      },
+      {
+        "tag": "時程超前介系詞片語",
+        "title": "進度超前句型：ahead of the projected timeline",
+        "pattern": "介系詞 ahead of + 名詞 (projected timeline / schedule)",
+        "explanation": "projected 為過去分詞作形容詞修飾 timeline，意為「預估的、規劃中的」。ahead of schedule / timeline 指「超前進度」；若落後進度則為 behind schedule。",
+        "keyPoint": "多益常考配對：ahead of schedule（超前）vs. behind schedule（落後）vs. on schedule（準時）。",
+        "example": "We have achieved every milestone <span class='font-bold text-[#0071E3] underline decoration-[#0071E3]/60 decoration-2 underline-offset-4'>ahead of the projected timeline</span>.",
+        "exampleZh": "我們已提前於預定期限達成了各項里程碑。"
+      },
+      {
+        "tag": "重心轉移與專案交付名詞",
+        "title": "工作轉移與交付成果：shifts to finalizing... and delivering deliverables",
+        "pattern": "focus shifts to + 動名詞 A + and + 動名詞 B + 受詞 (deliverables)",
+        "explanation": "動詞 shift to 中的 to 為「介系詞」，後面接並列動名詞 finalizing（定稿）與 delivering（交付）。deliverable 在商務專案管理中作可數名詞，專指「合約中應交付之成果品、驗收標的物」。",
+        "keyPoint": "多益高頻專案字：deliverable（交付物）／ milestone（里程碑）／ specifications（規格書）。",
+        "example": "Our primary focus <span class='font-bold text-[#0071E3] underline decoration-[#0071E3]/60 decoration-2 underline-offset-4'>shifts to finalizing the manual and delivering the key project deliverables</span>.",
+        "exampleZh": "我們的重心現轉向手冊定稿並向客戶移交專案交付物。"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "1. What is the purpose of today's meeting?",
+        "options": [
+          "A. To evaluate progress toward the final software release",
+          "B. To announce the cancellation of a client contract",
+          "C. To interview candidates for a lead programmer role",
+          "D. To negotiate lower software license renewal fees"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "2. How has the project progressed relative to the timeline?",
+        "options": [
+          "A. It is significantly behind schedule",
+          "B. It has encountered severe resource bottlenecks",
+          "C. It is ahead of the projected timeline",
+          "D. It was paused indefinitely by management"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "3. What is scheduled to take place on Monday?",
+        "options": [
+          "A. A new round of software development will kick off",
+          "B. Key project deliverables will be delivered to the client",
+          "C. Team members will start their annual vacation",
+          "D. Server maintenance will begin"
+        ],
+        "ans": 1
+      }
+    ],
+    "voice": "en-US-JennyNeural",
+    "voiceLabel": "美式女聲 (US)",
+    "audio": "audio/listening/2026_11_toeic_07.mp3",
+    "vocabulary": [
+      {
+        "en": "deliverable",
+        "zh": "n. 交付成果、應交付項目"
+      },
+      {
+        "en": "milestone",
+        "zh": "n. 里程碑、重大進展階段"
+      },
+      {
+        "en": "specification",
+        "zh": "n. 規格、詳細規格需求"
+      },
+      {
+        "en": "convene",
+        "zh": "v. 召開、召集正式會議"
+      }
+    ]
   }
 ];

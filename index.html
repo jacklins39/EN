@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261026V16';
+        const APP_BUILD_VERSION = '20261026V17';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -31,18 +31,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261026V16"></script>
-    <script src="toeic_data.js?v=20261026V16"></script>
-    <script src="jh_data.js?v=20261026V16"></script>
-    <script src="listening_data.js?v=20261026V16"></script>
-    <script src="uk_phonetics_manifest.js?v=20261026V16"></script>
-    <script src="words_audio_manifest.js?v=20261026V16"></script>
-    <script src="examples_audio_manifest.js?v=20261026V16"></script>
-    <script src="zh_audio_manifest.js?v=20261026V16"></script>
-    <script src="collocations_audio_manifest.js?v=20261026V16"></script>
-    <script src="syn_ant_data.js?v=20261026V16"></script>
-    <script src="synonyms_unit8_data.js?v=20261026V16"></script>
-    <script src="examples_unit9_data.js?v=20261026V16"></script>
+    <script src="words_data.js?v=20261026V17"></script>
+    <script src="toeic_data.js?v=20261026V17"></script>
+    <script src="jh_data.js?v=20261026V17"></script>
+    <script src="listening_data.js?v=20261026V17"></script>
+    <script src="uk_phonetics_manifest.js?v=20261026V17"></script>
+    <script src="words_audio_manifest.js?v=20261026V17"></script>
+    <script src="examples_audio_manifest.js?v=20261026V17"></script>
+    <script src="zh_audio_manifest.js?v=20261026V17"></script>
+    <script src="collocations_audio_manifest.js?v=20261026V17"></script>
+    <script src="syn_ant_data.js?v=20261026V17"></script>
+    <script src="synonyms_unit8_data.js?v=20261026V17"></script>
+    <script src="examples_unit9_data.js?v=20261026V17"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -1371,9 +1371,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261026V16</span>
+                        <span id="app-version-display">版本 20261026V17</span>
                     </div>
-                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261026V16</p>
+                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261026V17</p>
                 </div>
             </div>
         </div>
@@ -3178,23 +3178,6 @@
         let autoNextTimerId = null;
         let backsideAudioTimerId = null;
 
-        // ==========================================
-        // 全域 Web Audio API (音效引擎與拼讀核心)
-        // ==========================================
-        let audioCtx = null;
-        function initAudioContext() {
-            if (!audioCtx && typeof window !== 'undefined') {
-                const AudioCtxClass = window.AudioContext || window.webkitAudioContext;
-                if (AudioCtxClass) {
-                    audioCtx = new AudioCtxClass();
-                }
-            }
-            if (audioCtx && audioCtx.state === 'suspended') {
-                audioCtx.resume().catch(() => {});
-            }
-            return audioCtx;
-        }
-
         // 全域真人神經單字、例句與中文發音播放器
         const wordAudioPlayer = new Audio();
         wordAudioPlayer.preload = 'auto';
@@ -3228,9 +3211,8 @@
 
             // 2. 解鎖 AudioContext (音效引擎)
             try {
-                const ctx = initAudioContext();
-                if (ctx && ctx.state === 'suspended') {
-                    ctx.resume().catch(() => {});
+                if (typeof audioCtx !== 'undefined' && audioCtx && audioCtx.state === 'suspended') {
+                    audioCtx.resume();
                 }
             } catch(e) {}
 
@@ -3430,37 +3412,34 @@
             }
         }
 
-        // ==========================================
-        // 真人字母落地拼讀引擎 (使用裁除靜音之本地 Edge-TTS Jenny MP3，精準「頓一下」朗讀)
-        // ==========================================
+        // 逐字母拼讀核心函數 (首選 Google TTS 完整流暢整段 MP3 串流，備援 Web Speech API)
         function playSpellLetters(word, onEndedCallback) {
-            if (isSpeechEvalActive || !word) {
+            if (isSpeechEvalActive) {
+                if (typeof onEndedCallback === 'function') onEndedCallback();
+                return;
+            }
+            if (!word) {
                 if (typeof onEndedCallback === 'function') onEndedCallback();
                 return;
             }
             stopAllAudio();
             unlockMobileAudio();
 
-            const raw = String(word).trim().toLowerCase();
-            const tokens = [];
-            for (let i = 0; i < raw.length; i++) {
-                const ch = raw[i];
-                if (/[a-z]/.test(ch)) {
-                    tokens.push({ type: 'letter', val: ch });
-                } else if (/\s|-/.test(ch)) {
-                    // 片語或連字號較長停頓 (400ms)
-                    if (tokens.length > 0 && tokens[tokens.length - 1].type !== 'pause') {
-                        tokens.push({ type: 'pause', val: 400 });
-                    }
-                }
-            }
+            const raw = String(word).trim();
+            // 拆分單字/片語，將英文字母轉為大寫並用空格分隔（片語或連字號以逗號隔開），讓 TTS 進入自然流暢的逐字母拼讀模式
+            const parts = raw.split(/[\s\-]+/);
+            const formattedWords = parts.map(part => {
+                const letters = part.replace(/[^a-zA-Z]/g, '').toUpperCase().split('').join(' ');
+                return letters;
+            }).filter(Boolean);
 
-            if (tokens.length === 0) {
+            if (formattedWords.length === 0) {
                 if (typeof onEndedCallback === 'function') onEndedCallback();
                 return;
             }
 
-            let index = 0;
+            const spelledText = formattedWords.join(' , ');
+
             let isCancelled = false;
 
             const spellBtn = document.getElementById('btn-card-voice-spell');
@@ -3490,61 +3469,81 @@
                 }
             };
 
-            function playNext() {
-                if (isCancelled) {
-                    cleanup();
-                    return;
-                }
-                if (index >= tokens.length) {
+            // 備援方案：瀏覽器原生語音合成 (Web Speech API)，離線或無網路時 100% 正常播放
+            const fallbackSpeechSynthesis = () => {
+                if (isCancelled) return;
+                if (!('speechSynthesis' in window)) {
                     finish();
                     return;
                 }
-
-                const token = tokens[index++];
-                if (token.type === 'pause') {
-                    backsideAudioTimerId = setTimeout(playNext, token.val);
-                    return;
-                }
-
-                const letter = token.val;
-                const letterSrc = `audio/letters/${letter}.mp3?v=${APP_BUILD_VERSION}`;
-
                 try {
-                    wordAudioPlayer.pause();
-                    wordAudioPlayer.currentTime = 0;
-                } catch(e) {}
-
-                const attachCallback = (audioEl) => {
-                    clearAudioCallbacks();
-                    let called = false;
-                    const next = () => {
-                        if (called || isCancelled) return;
-                        called = true;
-                        clearAudioCallbacks();
-                        // 字母發音完畢後「頓一下」（停頓 190ms，節奏清晰自然）
-                        backsideAudioTimerId = setTimeout(playNext, 190);
+                    window.speechSynthesis.cancel();
+                    const utter = new SpeechSynthesisUtterance(spelledText);
+                    utter.lang = 'en-US';
+                    utter.rate = 0.9;
+                    utter.onend = () => {
+                        window._activeSpeechUtterance = null;
+                        finish();
                     };
-                    currentAudioDoneHandler = next;
-                    audioEl.addEventListener('ended', next, { once: true });
-                    audioEl.addEventListener('error', next, { once: true });
-                    // 安全逾時防呆：若音檔因任何原因未發送 ended，800ms 強制推進，絕不卡死
-                    audioFallbackTimerId = setTimeout(next, 800);
-                };
-
-                wordAudioPlayer.src = letterSrc;
-                wordAudioPlayer.playbackRate = 1.0;
-                attachCallback(wordAudioPlayer);
-
-                const p = wordAudioPlayer.play();
-                if (p !== undefined) {
-                    p.catch(err => {
-                        if (err && (err.name === 'AbortError' || err.code === 20)) return;
-                        playNext();
-                    });
+                    utter.onerror = () => {
+                        window._activeSpeechUtterance = null;
+                        finish();
+                    };
+                    window._activeSpeechUtterance = utter;
+                    window.speechSynthesis.speak(utter);
+                } catch(e) {
+                    finish();
                 }
-            }
+            };
 
-            playNext();
+            // 首選：Google TTS 完整流暢整段 MP3（以單一音訊流播放，節奏自然、零切換延遲）
+            const ttsUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=en&client=tw-ob&q=${encodeURIComponent(spelledText)}`;
+
+            try {
+                wordAudioPlayer.pause();
+                wordAudioPlayer.currentTime = 0;
+            } catch(e) {}
+
+            const attachCallback = (audioEl) => {
+                clearAudioCallbacks();
+                let called = false;
+                const next = () => {
+                    if (called || isCancelled) return;
+                    called = true;
+                    clearAudioCallbacks();
+                    finish();
+                };
+                currentAudioDoneHandler = next;
+                audioEl.addEventListener('ended', next, { once: true });
+                audioEl.addEventListener('error', () => {
+                    if (called || isCancelled) return;
+                    called = true;
+                    clearAudioCallbacks();
+                    fallbackSpeechSynthesis();
+                }, { once: true });
+                // 字母拼讀超時防呆保護
+                const safeTimeout = Math.max(3500, spelledText.length * 500);
+                audioFallbackTimerId = setTimeout(() => {
+                    if (called || isCancelled) return;
+                    called = true;
+                    clearAudioCallbacks();
+                    fallbackSpeechSynthesis();
+                }, safeTimeout);
+            };
+
+            wordAudioPlayer.src = ttsUrl;
+            wordAudioPlayer.playbackRate = 1.0;
+            attachCallback(wordAudioPlayer);
+
+            const p = wordAudioPlayer.play();
+            if (p !== undefined) {
+                p.catch(err => {
+                    if (err && (err.name === 'AbortError' || err.code === 20)) return;
+                    if (!isCancelled) {
+                        fallbackSpeechSynthesis();
+                    }
+                });
+            }
         }
 
         function playBacksideAudio(onEndedCallback) {
@@ -4883,7 +4882,7 @@
         // ==========================================
         // 5. 語音與字典功能 
         // ==========================================
-        if (!audioCtx) initAudioContext();
+        const audioCtx = typeof window !== 'undefined' ? new (window.AudioContext || window.webkitAudioContext)() : null;
         function playTone(freq, type, duration, vol=0.1) {
             try {
                 if (!audioCtx) return;

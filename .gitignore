@@ -1,12 +1,25 @@
+# Python 與快取暫存
 __pycache__/
 *.py[cod]
 *$py.class
+*.log
+
+# 作業系統與 IDE 個人設定
 .DS_Store
 Thumbs.db
+.vscode/
+.idea/
 
+# 爬蟲中繼檔、檢查點與離線巨量資料庫 (前端不需要，節省 >20MB)
 crawler_progress.log
 syn_ant_checkpoint.json
 missing_synonyms_list.json
 round2_missing_words.json
-
+clean_examples_data.json
+yahoo_dict_data.js
+*.tmp
+temp_*
 scratch/
+
+# 歷史過期腳本與備份歸檔
+archive/

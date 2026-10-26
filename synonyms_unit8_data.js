@@ -4771,8 +4771,8 @@ const synUnit8WordsDB = [
     "kk": "[ˈɡɪltinɪs]",
     "zh": "n. 有罪；自覺有罪；愧疚",
     "unit": 8,
-    "example": "Whether there was any guiltiness on your heading way…",
-    "exampleZh": "在你前進的道路上，你是不是有何遺憾？"
+    "example": "He confessed to relieve the heavy guiltiness weighing on his conscience.",
+    "exampleZh": "他坦白承認以減輕良心上沉重的內疚感。"
   },
   {
     "id": 7531,
@@ -8524,8 +8524,8 @@ const synUnit8WordsDB = [
     "kk": "[ˌdɪsəˈlaʊ]",
     "zh": "vt. 不准許，不允許，禁止；駁回，不接受，判為無效",
     "unit": 8,
-    "example": "Disallow: /ignoring/human/orders",
-    "exampleZh": "不允許：/忽略/人類/命令"
+    "example": "The referee had to disallow the goal after reviewing the video replay.",
+    "exampleZh": "觀看重播影像後，裁判不得不判定該進球無效。"
   },
   {
     "id": 7948,
@@ -9299,7 +9299,7 @@ const synUnit8WordsDB = [
     "zh": "v. 未充分利用；n. 使用不足，未充分利用",
     "unit": 8,
     "example": "I'm sure you underuse Betty's intelligence on a daily basis.",
-    "exampleZh": "我確信你只讓她做些日常基礎工作真是浪…"
+    "exampleZh": "我確信你只讓她做些日常基礎工作真是浪費她的才能。"
   },
   {
     "id": 8034,
@@ -9824,7 +9824,3 @@ const synUnit8WordsDB = [
     "exampleZh": "該團隊正試圖搜尋遺失的細節。"
   }
 ];
-
-if (typeof window !== 'undefined') {
-    window.synUnit8WordsDB = synUnit8WordsDB;
-}

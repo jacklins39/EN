@@ -1246,8 +1246,8 @@ const jhWordsDB = [
     "uk": "/beə(r)/",
     "zh": "v. 承受、手持、攜帶、運輸；n. 熊、粗暴無禮的人、沒教養的人、體格笨重的男人",
     "unit": 17,
-    "example": "'Bear' and 'bare' are homophonous.",
-    "exampleZh": "「熊」與「裸」同音。"
+    "example": "A huge brown bear was spotted near the mountain campsite.",
+    "exampleZh": "有人在山區營地附近發現了一隻巨大的棕熊。"
   },
   {
     "id": 30126,
@@ -4536,8 +4536,8 @@ const jhWordsDB = [
     "uk": "/ˈdaɪnəsɔː(r)/",
     "zh": "n. 恐龍、守舊落伍的人、過時落後的東西",
     "unit": 17,
-    "example": "'Dinosaur' combines CGI animation with live-action location shots.",
-    "exampleZh": "《恐龍》結合了電腦生成的動畫和外景地實地拍攝的畫面。"
+    "example": "The children were amazed by the giant dinosaur skeleton.",
+    "exampleZh": "孩子們對那具巨大的恐龍骨架感到驚嘆不已。"
   },
   {
     "id": 30455,
@@ -4636,7 +4636,7 @@ const jhWordsDB = [
     "uk": "/dɪsˈɒnɪst/",
     "zh": "adj. 不誠實的、不正直的、欺詐的、欺騙性的",
     "unit": 17,
-    "example": "he was a dishonest hypocrite prepared to exploit his family.",
+    "example": "He was a dishonest hypocrite prepared to exploit his family.",
     "exampleZh": "他是一個不誠實的偽君子，準備利用他的家人。"
   },
   {
@@ -4756,8 +4756,8 @@ const jhWordsDB = [
     "uk": "/dɒt/",
     "zh": "n. 小圓點、點、點狀物、頓音記號；vt. 點、加點、散佈於、遍佈",
     "unit": 17,
-    "example": "The weaker dot-coms have collapsed.",
-    "exampleZh": "實力較弱的網路公司倒閉了。"
+    "example": "Draw a clear black dot in the center of the circle.",
+    "exampleZh": "在圓圈的正中心畫一個清晰的黑點。"
   },
   {
     "id": 30477,
@@ -5084,7 +5084,7 @@ const jhWordsDB = [
     "en": "earn",
     "kk": "[ɝn]",
     "uk": "/ɜːn/",
-    "zh": "vt. 獲得、賺得、掙錢、盈",
+    "zh": "vt. 獲得、賺得、掙錢、贏得",
     "unit": 17,
     "example": "'How much (money) does she earn?",
     "exampleZh": "“她賺多少錢？”"
@@ -5366,8 +5366,8 @@ const jhWordsDB = [
     "uk": "/end/",
     "zh": "n. 結束、最後部分、末尾、結局；v. 末端、結束、終止",
     "unit": 17,
-    "example": "Waitressing was a dead-end job.",
-    "exampleZh": "服務生是一份沒有出路的工作。"
+    "example": "We stayed until the very end of the concert.",
+    "exampleZh": "我們一直待到了音樂會的最後尾聲。"
   },
   {
     "id": 30538,
@@ -6386,8 +6386,8 @@ const jhWordsDB = [
     "uk": "/fluːt/",
     "zh": "n. 長笛、細長酒杯、高腳玻璃酒杯、長笛音栓；v. 吹笛子、用長笛般優美的聲音說話、製作凹槽、給（衣服）加褶邊",
     "unit": 17,
-    "example": "I want a flute.",
-    "exampleZh": "大家好，我是石家莊的藍慧，很喜歡長笛，想在本地找一位老師教我一段時間。"
+    "example": "She plays the flute beautifully in the school band.",
+    "exampleZh": "她在學校樂隊裡長笛吹得很優美。"
   },
   {
     "id": 30640,
@@ -6604,7 +6604,7 @@ const jhWordsDB = [
     "en": "forty",
     "kk": "[ˋfɔrti]",
     "uk": "/ˈfɔːti/",
-    "zh": "n. 四十、複數形式forties指四十至四十九之間的數字、theforties指某個世紀的四十年代；adj. 四十的、四十個的",
+    "zh": "n. 四十；adj. 四十的、四十個的",
     "unit": 17,
     "example": "Fifty is the new forty.",
     "exampleZh": "五十歲是新的四十歲。"
@@ -6904,7 +6904,7 @@ const jhWordsDB = [
     "en": "gate",
     "kk": "[ɡet]",
     "uk": "/ɡeɪt/",
-    "zh": "n. 大門、登機口、閘門、閥門；comb. ……門事件（表示政治醜聞）",
+    "zh": "n. 大門、登機口、閘門、閥門",
     "unit": 17,
     "example": "He pushed open the garden gate.",
     "exampleZh": "他推開了花園的門。"
@@ -7386,8 +7386,8 @@ const jhWordsDB = [
     "uk": "/ɡes/",
     "zh": "vt. 猜測、估計、猜中、猜到；n. 推測、猜測",
     "unit": 17,
-    "example": "'Guess what?' she said archly.",
-    "exampleZh": "「你猜怎麼著？」她調皮地說。"
+    "example": "Can you guess the right answer to this riddle?",
+    "exampleZh": "你能猜出這個謎語的正確答案嗎？"
   },
   {
     "id": 30740,
@@ -7396,8 +7396,8 @@ const jhWordsDB = [
     "uk": "/ɡest/",
     "zh": "n. 客人、特邀嘉賓、客串演員、顧客；v. 做特邀嘉賓、客串",
     "unit": 17,
-    "example": "Our special guest tonight is...",
-    "exampleZh": "今晚我們的特別嘉賓是…"
+    "example": "We welcomed many special guests to the opening ceremony.",
+    "exampleZh": "我們在開幕典禮上迎來了許多特別嘉賓。"
   },
   {
     "id": 30741,
@@ -7627,7 +7627,7 @@ const jhWordsDB = [
     "zh": "adv. 幾乎不、幾乎沒有、剛剛、才",
     "unit": 17,
     "example": "I've got hardly any money.",
-    "exampleZh": "我幾乎沒有錢了"
+    "exampleZh": "我幾乎沒有錢了。"
   },
   {
     "id": 30764,
@@ -7806,8 +7806,8 @@ const jhWordsDB = [
     "uk": "/hɪə(r)/",
     "zh": "adv. 在這裡、此處、到這裡、朝這裡；int. 嘿、喂！；n. 這裡、此處",
     "unit": 17,
-    "example": "'Here?' said Kate, incredulous.",
-    "exampleZh": "'這裡？ '凱特難以置信地說。"
+    "example": "Please write your signature right here on the form.",
+    "exampleZh": "請直接在表格的這個位置簽名。"
   },
   {
     "id": 30782,
@@ -8116,8 +8116,8 @@ const jhWordsDB = [
     "uk": "/ˈhaʊswaɪf/",
     "zh": "n. 家庭主婦",
     "unit": 17,
-    "example": "I hated the label 'housewife'.",
-    "exampleZh": "我不喜歡“家庭主婦”這個稱謂。"
+    "example": "She is a dedicated housewife who takes great care of her family.",
+    "exampleZh": "她是一位把家庭照顧得非常周到的盡責家庭主婦。"
   },
   {
     "id": 30813,
@@ -9784,7 +9784,7 @@ const jhWordsDB = [
     "en": "loser",
     "kk": "[ˋluzɚ]",
     "uk": "/ˈluːzə(r)/",
-    "zh": "n. 失敗者、比賽、競爭或鬥爭中的失敗者、輸家（常構成goodloser（輸得起的人）、soreloser（輸不起的人）等搭配）",
+    "zh": "n. 失敗者、輸家",
     "unit": 17,
     "example": "If you talk like a loser, you'll end up losing.",
     "exampleZh": "如果你像個失敗者一樣說話，你最終將失敗。"
@@ -9866,8 +9866,8 @@ const jhWordsDB = [
     "uk": "/ˈlʌki/",
     "zh": "adj. 幸運的、走運的、吉祥的",
     "unit": 17,
-    "example": "The 'lucky' tag stuck for years.",
-    "exampleZh": "「幸運」的標籤貼了很多年。"
+    "example": "He felt very lucky to escape the storm without injury.",
+    "exampleZh": "他感到非常幸運能在暴風雨中毫髮無傷。"
   },
   {
     "id": 30988,
@@ -12246,8 +12246,8 @@ const jhWordsDB = [
     "uk": "/ˈpɜːsən(ə)l/",
     "zh": "adj. 個人的、私人的、私密的、隱私的；n. 私人資訊釋出、私人廣告、個人啟事欄、私人廣告欄",
     "unit": 18,
-    "example": "The letter was marked 'Personal'.",
-    "exampleZh": "這封信被標記為“個人”。"
+    "example": "You should keep your personal information completely private.",
+    "exampleZh": "你應該對你的個人資訊完全保密。"
   },
   {
     "id": 31228,
@@ -12276,8 +12276,8 @@ const jhWordsDB = [
     "uk": "/ˈfɪzɪks/",
     "zh": "n. 物理、物理學、物理特性、物理現象",
     "unit": 18,
-    "example": "Have you read this month's 'Physics World'?",
-    "exampleZh": "你看過這個月的《物理世界》嗎？"
+    "example": "Physics is his favourite science subject in junior high school.",
+    "exampleZh": "物理是他國中階段最喜歡的自然科學科目。"
   },
   {
     "id": 31231,
@@ -13956,7 +13956,7 @@ const jhWordsDB = [
     "uk": "/raɪt/",
     "zh": "vt. 糾正、矯正、補救、扭轉；adj. 正確的、符合道德的、正當的、真實的；n. 權利、正當、公正、正當的要求；adv. 正好、就在、直接地、徑直地；int. 好的、對、好、對嗎",
     "unit": 18,
-    "example": "if only I could have helped put matters right.",
+    "example": "If only I could have helped put matters right.",
     "exampleZh": "要是我當時能幫著把錯誤糾正過來就好了。"
   },
   {
@@ -14006,8 +14006,8 @@ const jhWordsDB = [
     "uk": "/rɒb/",
     "zh": "vt. 搶劫、盜取、使喪失、剝奪",
     "unit": 18,
-    "example": "She turned to Rob for solace.",
-    "exampleZh": "她到羅布那兒尋求慰藉。"
+    "example": "The masked men attempted to rob the local bank.",
+    "exampleZh": "蒙面男子企圖搶劫當地的銀行。"
   },
   {
     "id": 31404,
@@ -14286,8 +14286,8 @@ const jhWordsDB = [
     "uk": "/sɔːlt; sɒlt/",
     "zh": "n. 鹽、食鹽、鹽狀物（用於某種特殊目的的物質或藥品）、風趣；vt. 給加鹽調味、用鹽醃製、給（食物）加鹽調味、用鹽醃製（食物）；adj. 含鹽的、鹹的、用鹽醃製的、海生的；abbr. 限制戰略武器談判",
     "unit": 18,
-    "example": "He read a poem entitled 'Salt'.",
-    "exampleZh": "他朗誦一首題為《鹽》的詩。"
+    "example": "Could you please pass me the salt and pepper?",
+    "exampleZh": "你能把鹽和胡椒粉遞給我嗎？"
   },
   {
     "id": 31432,
@@ -14636,7 +14636,7 @@ const jhWordsDB = [
     "uk": "/sɪˈlekt/",
     "zh": "vt. 選擇、挑選、選定、決定（特徵，生物）是否繼續存在；adj. 精選的、優等的、高階的、奢華的",
     "unit": 18,
-    "example": "click Tools on the menu bar and select Settings.",
+    "example": "Click Tools on the menu bar and select Settings.",
     "exampleZh": "點擊選單列上的“工具”並選擇“設定”。"
   },
   {
@@ -15294,7 +15294,7 @@ const jhWordsDB = [
     "en": "sir",
     "kk": "[sɝ]",
     "uk": "/sɜː(r)/",
-    "zh": "n. 先生、長官、老師、閣下（正式或商業信函開頭的稱呼）",
+    "zh": "n. 先生、長官、老師、閣下",
     "unit": 18,
     "example": "Is everything in order, sir?",
     "exampleZh": "先生，一切都順利嗎？"
@@ -15316,8 +15316,8 @@ const jhWordsDB = [
     "uk": "/sɪt/",
     "zh": "v. 坐、坐下、就座、能容納；n. 坐的一段時間、合身",
     "unit": 18,
-    "example": "'Sit down!' Meekly, she obeyed.",
-    "exampleZh": "'坐下！ '她溫順地服從了。"
+    "example": "Please sit down and enjoy a warm cup of tea.",
+    "exampleZh": "請坐下來，喝杯熱茶放鬆一下。"
   },
   {
     "id": 31535,
@@ -15826,8 +15826,8 @@ const jhWordsDB = [
     "uk": "/ˈsɒri/",
     "zh": "adj. 感到抱歉的、抱歉的、慚愧的、歉疚的；int. 對不起、抱歉、沒聽清、請再講一遍",
     "unit": 18,
-    "example": "'Sorry,' she said humbly.",
-    "exampleZh": "「抱歉，」她謙虛地說。"
+    "example": "I am very sorry for any inconvenience this may have caused.",
+    "exampleZh": "對於可能由此造成的任何不便，我深感抱歉。"
   },
   {
     "id": 31586,
@@ -18866,8 +18866,8 @@ const jhWordsDB = [
     "uk": "/wɒt/",
     "zh": "det. 哪個、什麼、什麼樣的、所……的；pron. 什麼、多麼、無論什麼、……的事物；conj. 什麼、所……的事物、所……的、……那樣的；int. 什麼、真的嗎、什麼？；adv. 到什麼程度、在哪一方面、哦、呃",
     "unit": 18,
-    "example": "'What?' she asked snappily.",
-    "exampleZh": "'什麼？ '她沒好氣地問。"
+    "example": "What would you like to have for dinner tonight?",
+    "exampleZh": "你今晚想吃什麼晚餐？"
   },
   {
     "id": 31890,

@@ -271,8 +271,8 @@ const examplesUnit9WordsDB = [
     "kk": "[ɪˈmækjələt]",
     "zh": "adj. 完美的；潔淨的；無瑕疵的；（宗教或文學用語）純潔的，無罪的",
     "unit": 9,
-    "example": "Immaculate means \"without stain.\"",
-    "exampleZh": "Immaculate 一詞的意思是「無汙點」。"
+    "example": "She maintained an immaculate track record of safety in the factory.",
+    "exampleZh": "她在工廠裡保持著無懈可擊的零事故安全紀錄。"
   },
   {
     "id": 8131,
@@ -1919,7 +1919,7 @@ const examplesUnit9WordsDB = [
     "zh": "n. （常用複數）肥皂水；泡沫；<非正式>啤酒（尤指起泡的啤酒）；vt. 用肥皂水洗；vi. 形成泡沫，起泡沫",
     "unit": 9,
     "example": "He had soap suds in his ears.",
-    "exampleZh": "...他兩個耳朵裡有肥皂泡沫。"
+    "exampleZh": "他兩隻耳朵裡都沾了肥皂泡沫。"
   },
   {
     "id": 8314,
@@ -2773,8 +2773,8 @@ const examplesUnit9WordsDB = [
     "kk": "[ˈɡreɪəm]",
     "zh": "n. 全麥麵粉；（Graham）（英、美）格雷厄姆（人名）；adj. 全麥的",
     "unit": 9,
-    "example": "Graham began to cough violently.",
-    "exampleZh": "格雷厄姆開始劇烈地咳嗽。"
+    "example": "This delicious cheesecake is made with a sweet graham cracker crust.",
+    "exampleZh": "這款美味的乳酪蛋糕是用香甜的全麥餅乾底製成的。"
   },
   {
     "id": 8409,
@@ -8582,7 +8582,3 @@ const examplesUnit9WordsDB = [
     "exampleZh": "這管道將汙水排入大海。"
   }
 ];
-
-if (typeof window !== 'undefined') {
-    window.examplesUnit9WordsDB = examplesUnit9WordsDB;
-}

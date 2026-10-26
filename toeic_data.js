@@ -3306,8 +3306,8 @@ const toeicWordsDB = [
     "uk": "/beə(r)/",
     "zh": "adj. 裸的、光禿禿的、赤裸的、無遮蓋的；vt. 使赤裸、露出、使暴露、使露出；adv. 非常、許多",
     "unit": 11,
-    "example": "'Bear' and 'bare' are homophonous.",
-    "exampleZh": "bear和 bare是同音異形詞。"
+    "example": "The warehouse shelves were completely bare after the holiday rush.",
+    "exampleZh": "節日搶購潮過後，倉庫貨架上空空如也。"
   },
   {
     "id": 20332,
@@ -8796,8 +8796,8 @@ const toeicWordsDB = [
     "uk": "/diːˈkəʊd/",
     "zh": "vt. 譯解、破譯、破解轉換、理解；n. 密碼譯文",
     "unit": 11,
-    "example": "Can you decode it?",
-    "exampleZh": "文特爾說，水印包括一段密碼，你要是會解密的話，就能發現裡面含有一個網站的網址和三段引文。"
+    "example": "Our cybersecurity experts were able to decode the encrypted message.",
+    "exampleZh": "我們的網路安全專家成功解碼了該加密訊息。"
   },
   {
     "id": 20881,
@@ -12846,8 +12846,8 @@ const toeicWordsDB = [
     "uk": "/ˈfaɪbə(r)/",
     "zh": "n. 纖維、纖維製品、纖維材料、膳食纖維",
     "unit": 12,
-    "example": "Add fiber to your diet.",
-    "exampleZh": "並每天攝入一定量的五穀、全麥、粗糧製品以增加纖維素的吸收，促進排便。"
+    "example": "Consuming high-fiber foods helps maintain a healthy digestive system.",
+    "exampleZh": "食用高纖維食物有助於維持健康的消化系統。"
   },
   {
     "id": 21286,
@@ -13066,8 +13066,8 @@ const toeicWordsDB = [
     "uk": "/fɪkˈseɪʃn/",
     "zh": "n. 固定、注視、專注、迷戀",
     "unit": 12,
-    "example": "He's got a fixation.",
-    "exampleZh": "有一個固定儀器。，站在我這個位置，看不太清。"
+    "example": "He has a persistent fixation on meeting sales quarterly quotas.",
+    "exampleZh": "他對達到每季的銷售配額有種執著的堅持。"
   },
   {
     "id": 21308,
@@ -13714,7 +13714,7 @@ const toeicWordsDB = [
     "en": "gate",
     "kk": "[ɡet]",
     "uk": "/ɡeɪt/",
-    "zh": "n. 大門、柵欄門、登機口、閘門；comb. ……門事件（表示政治醜聞）",
+    "zh": "n. 大門、柵欄門、登機口、閘門",
     "unit": 12,
     "example": "He pushed open the garden gate.",
     "exampleZh": "他推開了花園的門。"
@@ -14366,8 +14366,8 @@ const toeicWordsDB = [
     "uk": "/ˈɡraʊndbreɪkɪŋ/",
     "zh": "adj. 開創性的、突破性的；n. 動工、破土動工、開工奠基儀式",
     "unit": 12,
-    "example": "This research is groundbreaking.",
-    "exampleZh": "這一突破性的研究是大資料理論首次以這種方式運用到該領域。"
+    "example": "The tech startup introduced a groundbreaking artificial intelligence tool.",
+    "exampleZh": "這家科技新創公司推出了一款開創性的人工智慧工具。"
   },
   {
     "id": 21438,
@@ -14436,8 +14436,8 @@ const toeicWordsDB = [
     "uk": "/ɡest/",
     "zh": "n. 賓客、客人、特邀嘉賓、客串演員；v. 做特邀嘉賓、客串",
     "unit": 12,
-    "example": "Our special guest tonight is...",
-    "exampleZh": "今晚我們的特別嘉賓是…"
+    "example": "The conference welcomed distinguished guest speakers from across Asia.",
+    "exampleZh": "該會議迎來了來自全亞洲的傑出特邀講者。"
   },
   {
     "id": 21445,
@@ -14737,7 +14737,7 @@ const toeicWordsDB = [
     "zh": "adv. 幾乎不、簡直不、幾乎沒有、剛剛",
     "unit": 12,
     "example": "I've got hardly any money.",
-    "exampleZh": "我幾乎沒有錢了"
+    "exampleZh": "我幾乎沒有錢了。"
   },
   {
     "id": 21475,
@@ -15746,8 +15746,8 @@ const toeicWordsDB = [
     "uk": "/ɪˈlɒdʒɪkl/",
     "zh": "adj. 不合邏輯的、不合常理的、不合理的",
     "unit": 12,
-    "example": "I find that illogical.",
-    "exampleZh": "我認為這些結論都很勉強，實際上都缺乏邏輯。只要一個人假設我們的祖先採用植物性食品亦能在過去的進化中生存下來的可能性，都能認識到這一點。"
+    "example": "His sudden business proposal was completely illogical and impractical.",
+    "exampleZh": "他突如其來的商業提案完全不合邏輯且不切實際。"
   },
   {
     "id": 21576,
@@ -16406,8 +16406,8 @@ const toeicWordsDB = [
     "uk": "/ˌɪnkənˈviːniənt/",
     "zh": "adj. 不方便的、不便的、打擾的",
     "unit": 12,
-    "example": "Old age is inconvenient.",
-    "exampleZh": "有關“熟年離婚”難以忽視的真相：阿爾·戈爾和妻子蒂珀在結婚40年後宣佈離婚，這反映出熟年離婚呈上升趨勢，但這事兒真有那麼糟糕嗎？"
+    "example": "The train delay caused an inconvenient disruption to our meeting schedule.",
+    "exampleZh": "火車延誤為我們的會議日程帶來了諸多不便。"
   },
   {
     "id": 21642,
@@ -19556,8 +19556,8 @@ const toeicWordsDB = [
     "uk": "/ˈmeʒərəbl/",
     "zh": "adj. 可測量的、顯著的、有明顯影響的",
     "unit": 12,
-    "example": "a small but measurable improvement in behavior.",
-    "exampleZh": "行為上的微小但可衡量的改善。"
+    "example": "A small but measurable improvement in customer satisfaction was recorded.",
+    "exampleZh": "客戶滿意度記錄到了小幅但顯著的提升。"
   },
   {
     "id": 21957,
@@ -19636,8 +19636,8 @@ const toeicWordsDB = [
     "uk": "/ˈmeməʊ/",
     "zh": "n. 備忘錄；v. 記入備忘錄",
     "unit": 12,
-    "example": "This is a memo.",
-    "exampleZh": "對於這種能力，我們在寫分析但丁的“地獄”的論文時，以及對撰寫工作專案備忘錄時，都將得到鍛鍊。"
+    "example": "The director circulated an urgent internal memo regarding the budget.",
+    "exampleZh": "主管傳閱了一份關於預算的緊急內部備忘錄。"
   },
   {
     "id": 21965,
@@ -23916,8 +23916,8 @@ const toeicWordsDB = [
     "uk": "/ˌriːˈbɪld/",
     "zh": "vt. 重建、改建、重造、使復原；n. 重新組裝、改裝的機器",
     "unit": 13,
-    "example": "I can rebuild it.",
-    "exampleZh": "我認為他們能夠重新建立一個有競爭力的球隊。"
+    "example": "The firm plans to rebuild its overseas distribution network next year.",
+    "exampleZh": "該公司計劃於明年重建其海外分銷網路。"
   },
   {
     "id": 22393,
@@ -24006,8 +24006,8 @@ const toeicWordsDB = [
     "uk": "/rɪˈsɪpiənt/",
     "zh": "n. 接受者、受領者、領受者、接收器；adj. 接受的、受領的、容納的",
     "unit": 13,
-    "example": "The recipient is unknown.",
-    "exampleZh": "圖13給出了名字驗證的提示，警告說要向一個未知的Notes接收者傳送便箋，詢問使用者是繼續還是取消這個操作。"
+    "example": "Please ensure the invoice is delivered directly to the designated recipient.",
+    "exampleZh": "請確保發票直接送達指定的收件人。"
   },
   {
     "id": 22402,
@@ -25746,7 +25746,7 @@ const toeicWordsDB = [
     "uk": "/sɪˈlekt/",
     "zh": "vt. 選擇、挑選、選定、決定（特徵，生物）是否繼續存在；adj. 上等的、優等的、精選的、高階的",
     "unit": 13,
-    "example": "click Tools on the menu bar and select Settings.",
+    "example": "Click Tools on the menu bar and select Settings.",
     "exampleZh": "點擊選單列上的“工具”並選擇“設定”。"
   },
   {
@@ -25787,7 +25787,7 @@ const toeicWordsDB = [
     "zh": "adj. 自由業的、自僱的、個體經營的、自由職業的；n. theself-employed：個體經營者、自僱者",
     "unit": 13,
     "example": "We want more support for the self-employed.",
-    "exampleZh": "我們需要更多給個體經營者的支援"
+    "exampleZh": "我們需要更多給個體經營者的支援。"
   },
   {
     "id": 22580,
@@ -28966,8 +28966,8 @@ const toeicWordsDB = [
     "uk": "/ˈjuːniən/",
     "zh": "n. 結合、合併、工會、聯邦",
     "unit": 13,
-    "example": "This is my union.",
-    "exampleZh": "“這就是我的‘侏羅紀公園’。”馬施在舊金山召開的美國地球物理學協會會議上發言說。"
+    "example": "The labor union negotiated vigorously for better employee medical benefits.",
+    "exampleZh": "工會為員工爭取更好的醫療福利進行了積極談判。"
   },
   {
     "id": 22898,

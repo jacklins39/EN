@@ -10,56 +10,56 @@ const listeningArticlesDB = [
       {
         "en": "Hello! I would like to order a cheeseburger and a large fries.",
         "zh": "你好！我想點一個起司漢堡和大份薯條。",
-        "start": 0,
-        "end": 5.04
+        "start": 0.0,
+        "end": 1.8
       },
       {
         "en": "Could I also get a diet cola?",
         "zh": "可以再來一杯健怡可樂嗎？",
-        "start": 5.04,
-        "end": 7.5
+        "start": 1.75,
+        "end": 5.93
       },
       {
         "en": "That will be all.",
         "zh": "這樣就可以了。",
-        "start": 7.5,
-        "end": 9.31
+        "start": 5.93,
+        "end": 8.82
       },
       {
         "en": "Is it for here or to go?",
         "zh": "內用還是外帶？",
-        "start": 9.31,
-        "end": 11.47
+        "start": 8.82,
+        "end": 10.96
       },
       {
         "en": "To go, please.",
         "zh": "外帶，謝謝。",
-        "start": 11.47,
-        "end": 13.69
+        "start": 10.96,
+        "end": 13.5
       },
       {
         "en": "Your total is eight dollars and fifty cents.",
         "zh": "總共是八塊五毛美元。",
-        "start": 13.69,
-        "end": 16.94
+        "start": 13.5,
+        "end": 16.1
       },
       {
         "en": "Here is a ten dollar bill.",
         "zh": "這是一張十元鈔票。",
-        "start": 16.94,
-        "end": 19.23
+        "start": 16.1,
+        "end": 19.93
       },
       {
         "en": "Keep the change.",
         "zh": "不用找零了。",
-        "start": 19.23,
-        "end": 21.1
+        "start": 19.93,
+        "end": 22.62
       },
       {
         "en": "Thank you very much! Have a nice day.",
         "zh": "非常感謝！祝你有美好的一天。",
-        "start": 21.1,
-        "end": 24.96
+        "start": 22.62,
+        "end": 24.82
       }
     ],
     "grammar": [
@@ -164,50 +164,50 @@ const listeningArticlesDB = [
       {
         "en": "Good afternoon.",
         "zh": "午安。",
-        "start": 0,
-        "end": 1.75
+        "start": 0.0,
+        "end": 2.11
       },
       {
         "en": "I have a reservation under the name of Smith.",
         "zh": "我有一個史密斯名下的訂房。",
-        "start": 1.75,
-        "end": 4.94
+        "start": 2.06,
+        "end": 5.81
       },
       {
         "en": "Yes, here is my passport and booking confirmation.",
         "zh": "好的，這是我的護照和訂房確認單。",
-        "start": 4.94,
-        "end": 8.72
+        "start": 5.81,
+        "end": 10.26
       },
       {
         "en": "Could I request a room with a nice view?",
         "zh": "我可以要求一間景觀好的房間嗎？",
-        "start": 8.72,
-        "end": 11.54
+        "start": 10.26,
+        "end": 13.57
       },
       {
         "en": "Oh, and what time is breakfast served?",
         "zh": "對了，請問早餐幾點供應？",
-        "start": 11.54,
-        "end": 14.56
+        "start": 13.57,
+        "end": 17.13
       },
       {
         "en": "Thank you.",
         "zh": "謝謝你。",
-        "start": 14.56,
-        "end": 16.06
+        "start": 17.13,
+        "end": 18.9
       },
       {
         "en": "I would also like a wake-up call at seven tomorrow morning.",
         "zh": "我還需要明天早上七點的晨喚服務。",
-        "start": 16.06,
-        "end": 19.84
+        "start": 18.9,
+        "end": 23.34
       },
       {
         "en": "Where is the elevator?",
         "zh": "請問電梯在哪裡？",
-        "start": 19.84,
-        "end": 21.85
+        "start": 23.34,
+        "end": 25.71
       }
     ],
     "grammar": [
@@ -308,44 +308,44 @@ const listeningArticlesDB = [
       {
         "en": "Attention all employees.",
         "zh": "請全體員工注意。",
-        "start": 0,
-        "end": 2.48
+        "start": 0.0,
+        "end": 2.96
       },
       {
         "en": "Our annual company picnic will be held next Saturday at the central park.",
         "zh": "我們一年一度的員工野餐將於下週六在中央公園舉行。",
-        "start": 2.48,
-        "end": 7.38
+        "start": 2.91,
+        "end": 8.68
       },
       {
         "en": "Family members are welcome to join.",
         "zh": "非常歡迎攜眷參加。",
-        "start": 7.38,
-        "end": 10.22
+        "start": 8.68,
+        "end": 12.03
       },
       {
         "en": "Please sign up at the front desk by Wednesday so we can order enough food.",
         "zh": "請在週三前到櫃檯登記，以便我們訂購足夠的餐點。",
-        "start": 10.22,
-        "end": 14.62
+        "start": 12.03,
+        "end": 17.21
       },
       {
         "en": "We will provide sandwiches, salads, and drinks.",
         "zh": "我們將提供三明治、沙拉和飲料。",
-        "start": 14.62,
-        "end": 18.48
+        "start": 17.21,
+        "end": 21.74
       },
       {
         "en": "If you have any dietary restrictions, let us know in advance.",
         "zh": "如果您有任何飲食限制，請提前告知我們。",
-        "start": 18.48,
-        "end": 22.71
+        "start": 21.74,
+        "end": 26.72
       },
       {
         "en": "We look forward to seeing everyone there for a day of fun and relaxation!",
         "zh": "期待在那裡見到大家，度過充滿歡樂與放鬆的一天！",
-        "start": 22.71,
-        "end": 27.45
+        "start": 26.72,
+        "end": 32.29
       }
     ],
     "grammar": [
@@ -454,38 +454,38 @@ const listeningArticlesDB = [
       {
         "en": "Dear Mr. Johnson, I am writing to inquire about the new software products listed on your company website.",
         "zh": "親愛的約翰遜先生：我寫此信是想詢問貴公司網站上列出的新軟體產品。",
-        "start": 0,
-        "end": 6.59
+        "start": 0.0,
+        "end": 7.8
       },
       {
         "en": "Our team is particularly interested in the cloud storage solutions.",
         "zh": "我們團隊對雲端儲存解決方案特別感興趣。",
-        "start": 6.59,
-        "end": 11.09
+        "start": 7.75,
+        "end": 13.04
       },
       {
         "en": "Could you please send us a detailed catalog and the current price list?",
         "zh": "能否請您寄給我們詳細的產品型錄和目前的價目表？",
-        "start": 11.09,
-        "end": 15.24
+        "start": 13.04,
+        "end": 17.93
       },
       {
         "en": "We would also like to know if you offer any discounts for bulk purchases.",
         "zh": "我們也想了解大宗採購是否有提供任何折扣優惠。",
-        "start": 15.24,
-        "end": 19.75
+        "start": 17.93,
+        "end": 23.24
       },
       {
         "en": "I look forward to hearing from you soon.",
         "zh": "期待盡快收到您的回信。",
-        "start": 19.75,
-        "end": 22.54
+        "start": 23.24,
+        "end": 26.51
       },
       {
         "en": "Sincerely, Jane Doe.",
         "zh": "簡·道 敬上。",
-        "start": 22.54,
-        "end": 24.98
+        "start": 26.51,
+        "end": 29.38
       }
     ],
     "grammar": [
@@ -594,32 +594,32 @@ const listeningArticlesDB = [
       {
         "en": "Climate change is one of the most pressing issues of our time.",
         "zh": "氣候變遷是我們這個時代最緊迫的議題之一。",
-        "start": 0,
-        "end": 3.81
+        "start": 0.0,
+        "end": 4.54
       },
       {
         "en": "Rising global temperatures are causing ice caps to melt and sea levels to rise.",
         "zh": "不斷上升的全球氣溫正導致極地冰冠融化及海平面上升。",
-        "start": 3.81,
-        "end": 9.19
+        "start": 4.49,
+        "end": 10.81
       },
       {
         "en": "This leads to more frequent extreme weather events, such as hurricanes and droughts.",
         "zh": "這引發了更頻繁的極端天氣事件，例如颶風和乾旱。",
-        "start": 9.19,
-        "end": 14.24
+        "start": 10.81,
+        "end": 16.75
       },
       {
         "en": "Governments around the world are working to reduce carbon emissions by investing in renewable energy sources like wind and solar power.",
         "zh": "全球各國政府正透過投資風能和太陽能等再生能源，致力於減少碳排放。",
-        "start": 14.24,
-        "end": 22.16
+        "start": 16.75,
+        "end": 26.07
       },
       {
         "en": "Everyone can help protect our environment by reducing waste and recycling.",
         "zh": "每個人都可以透過減少浪費和資源回收來協助保護我們的環境。",
-        "start": 22.16,
-        "end": 26.91
+        "start": 26.07,
+        "end": 31.66
       }
     ],
     "grammar": [
@@ -728,32 +728,32 @@ const listeningArticlesDB = [
       {
         "en": "Artificial intelligence is rapidly transforming the way we live and work.",
         "zh": "人工智慧正迅速改變我們的生活與工作方式。",
-        "start": 0,
-        "end": 4.72
+        "start": 0.0,
+        "end": 5.61
       },
       {
         "en": "Recently, engineers have developed new machine learning models that can process vast amounts of data in seconds.",
         "zh": "最近，工程師們開發了能在數秒內處理海量數據的新型機器學習模型。",
-        "start": 4.72,
-        "end": 11.66
+        "start": 5.56,
+        "end": 13.72
       },
       {
         "en": "This technology allows software to understand human language more naturally and accurately.",
         "zh": "這項技術使軟體能夠更自然、更準確地理解人類語言。",
-        "start": 11.66,
-        "end": 17.54
+        "start": 13.72,
+        "end": 20.63
       },
       {
         "en": "However, some experts express concerns about privacy and data security.",
         "zh": "然而，一些專家對隱私和數據安全表達了擔憂。",
-        "start": 17.54,
-        "end": 22.64
+        "start": 20.63,
+        "end": 26.63
       },
       {
         "en": "As innovation accelerates, it becomes increasingly important to establish ethical guidelines for artificial intelligence development.",
         "zh": "隨著創新加速推進，為人工智慧發展建立道德準則變得愈發重要。",
-        "start": 22.64,
-        "end": 30.94
+        "start": 26.63,
+        "end": 36.4
       }
     ],
     "grammar": [
@@ -862,38 +862,38 @@ const listeningArticlesDB = [
       {
         "en": "Have you ever wondered what truly makes people successful?",
         "zh": "你是否曾想過究竟是什麼讓人真正獲得成功？",
-        "start": 0,
-        "end": 3.75
+        "start": 0.0,
+        "end": 4.46
       },
       {
         "en": "It is not just about intelligence or talent.",
         "zh": "這不僅僅關乎智力或天賦。",
-        "start": 3.75,
-        "end": 6.95
+        "start": 4.41,
+        "end": 8.18
       },
       {
         "en": "Research shows that passion and perseverance are often more important.",
         "zh": "研究顯示，熱情與毅力往往更為關鍵。",
-        "start": 6.95,
-        "end": 11.25
+        "start": 8.18,
+        "end": 13.24
       },
       {
         "en": "When you are deeply passionate about what you do, you are more likely to overcome obstacles and keep pushing forward.",
         "zh": "當你對自己所做的事情深具熱情時，你更有可能克服障礙並持續前進。",
-        "start": 11.25,
-        "end": 18.12
+        "start": 13.24,
+        "end": 21.32
       },
       {
         "en": "Do not be afraid of failure, because every mistake is a valuable lesson.",
         "zh": "不要害怕失敗，因為每一次錯誤都是寶貴的一課。",
-        "start": 18.12,
-        "end": 22.93
+        "start": 21.32,
+        "end": 26.97
       },
       {
         "en": "Keep exploring your interests, stay curious, and eventually, you will find your unique path.",
         "zh": "持續探索你的興趣，保持好奇心，最終你將會找到屬於你獨一無二的道路。",
-        "start": 22.93,
-        "end": 29.08
+        "start": 26.97,
+        "end": 34.21
       }
     ],
     "grammar": [
@@ -1002,44 +1002,44 @@ const listeningArticlesDB = [
       {
         "en": "Excuse me, could you tell me where the dairy section is?",
         "zh": "不好意思，請問乳製品區在哪裡？",
-        "start": 0,
-        "end": 3.83
+        "start": 0.0,
+        "end": 4.55
       },
       {
         "en": "I am looking for milk and cheese.",
         "zh": "我正在找牛奶和起司。",
-        "start": 3.83,
-        "end": 6.45
+        "start": 4.5,
+        "end": 7.59
       },
       {
         "en": "Yes, go straight down this aisle and turn left.",
         "zh": "好的，沿著這條走道直走然後左轉。",
-        "start": 6.45,
-        "end": 10.16
+        "start": 7.59,
+        "end": 11.96
       },
       {
         "en": "Thank you.",
         "zh": "謝謝你。",
-        "start": 10.16,
-        "end": 11.66
+        "start": 11.96,
+        "end": 13.72
       },
       {
         "en": "Also, do you have any fresh strawberries?",
         "zh": "另外，請問你們有新鮮草莓嗎？",
-        "start": 11.66,
-        "end": 14.86
+        "start": 13.72,
+        "end": 17.49
       },
       {
         "en": "I am sorry, but they are completely sold out today.",
         "zh": "很抱歉，今天已經全部賣光了。",
-        "start": 14.86,
-        "end": 18.44
+        "start": 17.49,
+        "end": 21.69
       },
       {
         "en": "We will get a new shipment tomorrow morning.",
         "zh": "我們明天早上會有新的一批進貨。",
-        "start": 18.44,
-        "end": 21.3
+        "start": 21.69,
+        "end": 25.06
       }
     ],
     "grammar": [
@@ -1144,38 +1144,38 @@ const listeningArticlesDB = [
       {
         "en": "Attention all passengers.",
         "zh": "各位旅客請注意。",
-        "start": 0,
-        "end": 2.51
+        "start": 0.0,
+        "end": 3.0
       },
       {
         "en": "Flight 842 to New York is now ready for boarding at gate 15.",
         "zh": "前往紐約的第 842 號班機現在開始在 15 號登機門登機。",
-        "start": 2.51,
-        "end": 7.06
+        "start": 2.95,
+        "end": 8.3
       },
       {
         "en": "We would like to invite our first-class passengers and those needing special assistance to board first.",
         "zh": "我們想先邀請頭等艙旅客以及需要特別協助的旅客優先登機。",
-        "start": 7.06,
-        "end": 12.89
+        "start": 8.3,
+        "end": 15.15
       },
       {
         "en": "Please have your boarding pass and identification ready.",
         "zh": "請準備好您的登機證與身分證明文件。",
-        "start": 12.89,
-        "end": 16.44
+        "start": 15.15,
+        "end": 19.33
       },
       {
         "en": "All other passengers, please remain seated until your zone is called.",
         "zh": "其他所有旅客請在座位上等候，直到您的登機分區被叫到為止。",
-        "start": 16.44,
-        "end": 21.02
+        "start": 19.33,
+        "end": 24.73
       },
       {
         "en": "Thank you for choosing our airline.",
         "zh": "感謝您選擇我們的航空公司。",
-        "start": 21.02,
-        "end": 23.69
+        "start": 24.73,
+        "end": 27.86
       }
     ],
     "grammar": [
@@ -1280,38 +1280,38 @@ const listeningArticlesDB = [
       {
         "en": "To all sales staff: There will be a mandatory training session on the new customer relationship management software next Friday.",
         "zh": "全體業務同仁：下週五將舉辦新客戶關係管理軟體的強制培訓課程。",
-        "start": 0,
-        "end": 7.71
+        "start": 0.0,
+        "end": 9.12
       },
       {
         "en": "The workshop will start exactly at 9 AM in the main conference room.",
         "zh": "工作坊將於上午 9 點整在大會議室準時開始。",
-        "start": 7.71,
-        "end": 12.36
+        "start": 9.07,
+        "end": 14.54
       },
       {
         "en": "You will learn how to efficiently track client interactions and generate sales reports.",
         "zh": "您將學習如何有效追蹤客戶互動並產出銷售報告。",
-        "start": 12.36,
-        "end": 17.76
+        "start": 14.54,
+        "end": 20.9
       },
       {
         "en": "Please bring your laptops.",
         "zh": "請攜帶您的筆記型電腦。",
-        "start": 17.76,
-        "end": 20.04
+        "start": 20.9,
+        "end": 23.57
       },
       {
         "en": "Lunch will be provided at noon.",
         "zh": "中午將提供午餐。",
-        "start": 20.04,
-        "end": 22.54
+        "start": 23.57,
+        "end": 26.51
       },
       {
         "en": "If you have any scheduling conflicts, notify your manager immediately.",
         "zh": "若有任何行程衝突，請立即告知您的主管。",
-        "start": 22.54,
-        "end": 27.28
+        "start": 26.51,
+        "end": 32.09
       }
     ],
     "grammar": [
@@ -1420,32 +1420,32 @@ const listeningArticlesDB = [
       {
         "en": "Getting enough quality sleep is crucial for your physical and mental health.",
         "zh": "獲得足夠且優質的睡眠對你的身心健康至關重要。",
-        "start": 0,
-        "end": 4.51
+        "start": 0.0,
+        "end": 5.36
       },
       {
         "en": "Most adults need between seven and nine hours of sleep per night.",
         "zh": "大多數成年人每晚需要七到九小時的睡眠。",
-        "start": 4.51,
-        "end": 8.88
+        "start": 5.31,
+        "end": 10.44
       },
       {
         "en": "Lack of sleep can affect your memory, mood, and immune system.",
         "zh": "睡眠不足會影響你的記憶力、情緒和免疫系統。",
-        "start": 8.88,
-        "end": 13.38
+        "start": 10.44,
+        "end": 15.74
       },
       {
         "en": "To improve your sleep quality, try to go to bed at the same time every night and avoid looking at electronic screens before bedtime.",
         "zh": "為提高睡眠品質，盡量每晚在同一時間就寢，並避免在睡前看電子螢幕。",
-        "start": 13.38,
-        "end": 21.2
+        "start": 15.74,
+        "end": 24.94
       },
       {
         "en": "A dark, quiet, and cool room also helps you fall asleep faster.",
         "zh": "一個黑暗、安靜且涼爽的房間也有助於你更快入睡。",
-        "start": 21.2,
-        "end": 26.02
+        "start": 24.94,
+        "end": 30.62
       }
     ],
     "grammar": [
@@ -1550,26 +1550,26 @@ const listeningArticlesDB = [
       {
         "en": "Global financial markets showed signs of robust recovery this quarter, driven by strong consumer spending and stabilizing inflation rates.",
         "zh": "本季全球金融市場顯現強勁復甦跡象，主要受到強勁的消費支出及回穩的通膨率所帶動。",
-        "start": 0,
-        "end": 8.55
+        "start": 0.0,
+        "end": 10.11
       },
       {
         "en": "Major tech companies reported higher than expected earnings, boosting investor confidence.",
         "zh": "主要科技巨頭公佈了優於預期的獲利表現，提振了投資人信心。",
-        "start": 8.55,
-        "end": 14.3
+        "start": 10.06,
+        "end": 16.82
       },
       {
         "en": "However, analysts warn that supply chain disruptions and geopolitical tensions could still pose significant risks in the long term.",
         "zh": "然而，分析師警告供應鏈中斷及地緣政治緊張局勢長遠來看仍可能帶來重大風險。",
-        "start": 14.3,
-        "end": 22.46
+        "start": 16.82,
+        "end": 26.43
       },
       {
         "en": "Central banks are closely monitoring the situation and may adjust interest rates accordingly to maintain economic stability.",
         "zh": "各國央行正密切監控情勢，並可能相應調整利率以維持經濟穩定。",
-        "start": 22.46,
-        "end": 29.72
+        "start": 26.43,
+        "end": 34.97
       }
     ],
     "grammar": [
@@ -1678,32 +1678,32 @@ const listeningArticlesDB = [
       {
         "en": "Dear Customer Service, I am writing to express my dissatisfaction with my recent order, number 8943.",
         "zh": "親愛的客服團隊：我寫此信是想對最近編號 8943 的訂單表達我的不滿。",
-        "start": 0,
-        "end": 7.69
+        "start": 0.0,
+        "end": 9.09
       },
       {
         "en": "I ordered a wireless mouse, but I received a keyboard instead.",
         "zh": "我訂購的是無線滑鼠，收到的卻是一個鍵盤。",
-        "start": 7.69,
-        "end": 11.91
+        "start": 9.04,
+        "end": 14.01
       },
       {
         "en": "I need this mouse urgently for an upcoming presentation.",
         "zh": "我即將進行一場簡報，急需這個滑鼠。",
-        "start": 11.91,
-        "end": 15.71
+        "start": 14.01,
+        "end": 18.49
       },
       {
         "en": "Please arrange a replacement as soon as possible and let me know how to return the incorrect item.",
         "zh": "請盡快安排換貨，並告知我如何退回錯誤的品項。",
-        "start": 15.71,
-        "end": 21.07
+        "start": 18.49,
+        "end": 24.79
       },
       {
         "en": "Thank you.",
         "zh": "謝謝您。",
-        "start": 21.07,
-        "end": 22.57
+        "start": 24.79,
+        "end": 26.56
       }
     ],
     "grammar": [
@@ -1812,32 +1812,32 @@ const listeningArticlesDB = [
       {
         "en": "We are thrilled to invite you to the exclusive launch event of our newest smartphone, the Titan X.",
         "zh": "我們非常榮幸且興奮地邀請您參加我們最新款智慧型手機 Titan X 的獨家發表會。",
-        "start": 0,
-        "end": 6.1
+        "start": 0.0,
+        "end": 7.23
       },
       {
         "en": "The event will take place on October 15th at the Grand Hotel downtown.",
         "zh": "活動將於 10 月 15 日在市中心的格蘭大飯店舉行。",
-        "start": 6.1,
-        "end": 10.88
+        "start": 7.18,
+        "end": 12.79
       },
       {
         "en": "There will be a live demonstration, followed by a Q&A session with our lead engineers.",
         "zh": "現場將有實機展示，隨後由我們的首席工程師主持問答交流環節。",
-        "start": 10.88,
-        "end": 16.35
+        "start": 12.79,
+        "end": 19.24
       },
       {
         "en": "Refreshments will be served.",
         "zh": "現場將供應精緻茶點。",
-        "start": 16.35,
-        "end": 18.66
+        "start": 19.24,
+        "end": 21.96
       },
       {
         "en": "Please RSVP by October 10th to secure your spot.",
         "zh": "請於 10 月 10 日前確認出席，以保留您的席位。",
-        "start": 18.66,
-        "end": 22.76
+        "start": 21.96,
+        "end": 26.78
       }
     ],
     "grammar": [
@@ -1946,32 +1946,32 @@ const listeningArticlesDB = [
       {
         "en": "Attention all staff.",
         "zh": "全體員工請注意。",
-        "start": 0,
-        "end": 2.42
+        "start": 0.0,
+        "end": 2.9
       },
       {
         "en": "The main elevator in the west wing will be out of service for scheduled maintenance starting tomorrow at 8 AM.",
         "zh": "西棟大樓的主電梯將於明天上午 8 點開始進行定期維護，屆時暫停使用。",
-        "start": 2.42,
-        "end": 8.66
+        "start": 2.85,
+        "end": 10.19
       },
       {
         "en": "It is expected to be operational again by 5 PM on the same day.",
         "zh": "預計當天下午 5 點前恢復正常運作。",
-        "start": 8.66,
-        "end": 13.31
+        "start": 10.19,
+        "end": 15.66
       },
       {
         "en": "Please use the stairs or the service elevator in the east wing during this time.",
         "zh": "在此期間，請改走樓梯或搭乘東棟的公務電梯。",
-        "start": 13.31,
-        "end": 18.15
+        "start": 15.66,
+        "end": 21.35
       },
       {
         "en": "We apologize for any inconvenience this may cause.",
         "zh": "造成大家不便，敬請見諒。",
-        "start": 18.15,
-        "end": 21.97
+        "start": 21.35,
+        "end": 25.85
       }
     ],
     "grammar": [
@@ -2072,38 +2072,38 @@ const listeningArticlesDB = [
       {
         "en": "Good morning passengers.",
         "zh": "各位旅客早安。",
-        "start": 0,
-        "end": 2.31
+        "start": 0.0,
+        "end": 2.76
       },
       {
         "en": "This is an announcement for flight 302 to London.",
         "zh": "這是前往倫敦的第 302 號班機廣播通知。",
-        "start": 2.31,
-        "end": 6.25
+        "start": 2.71,
+        "end": 7.34
       },
       {
         "en": "Due to severe weather conditions in the destination city, our departure has been delayed by approximately two hours.",
         "zh": "因目的地城市遭遇惡劣天氣，我們的起飛時間大約延誤兩小時。",
-        "start": 6.25,
-        "end": 13.16
+        "start": 7.34,
+        "end": 15.48
       },
       {
         "en": "In addition, we have a gate change.",
         "zh": "此外，我們的登機門已更改。",
-        "start": 13.16,
-        "end": 16.16
+        "start": 15.48,
+        "end": 19.01
       },
       {
         "en": "We will now be departing from gate 24 instead of gate 12.",
         "zh": "本班機將改由 24 號登機門起飛，而非原先的 12 號門。",
-        "start": 16.16,
-        "end": 20.61
+        "start": 19.01,
+        "end": 24.24
       },
       {
         "en": "We will provide further updates as soon as we receive more information.",
         "zh": "一旦掌握更多資訊，我們將第一時間向大家更新最新狀況。",
-        "start": 20.61,
-        "end": 25.16
+        "start": 24.24,
+        "end": 29.59
       }
     ],
     "grammar": [
@@ -2212,26 +2212,26 @@ const listeningArticlesDB = [
       {
         "en": "I would like to start this meeting by reviewing our sales performance for the third quarter.",
         "zh": "我想先透過回顧第三季度的銷售表現來開始這場會議。",
-        "start": 0,
-        "end": 5.06
+        "start": 0.0,
+        "end": 6.01
       },
       {
         "en": "We have seen a 15% increase in revenue compared to the same period last year, which is fantastic.",
         "zh": "與去年同期相比，我們的營收成長了 15%，成績非常亮眼。",
-        "start": 5.06,
-        "end": 11.4
+        "start": 5.96,
+        "end": 13.41
       },
       {
         "en": "This growth was primarily driven by our new marketing campaign in Asia.",
         "zh": "這波成長主要是由我們在亞洲推行的新行銷活動所帶動的。",
-        "start": 11.4,
-        "end": 15.97
+        "start": 13.41,
+        "end": 18.79
       },
       {
         "en": "However, our operational costs have also risen slightly, so we need to focus on improving efficiency in the upcoming quarter.",
         "zh": "然而，我們的營運成本也微幅上升，因此在下一季度我們必須把重點放在提升效率上。",
-        "start": 15.97,
-        "end": 23.51
+        "start": 18.79,
+        "end": 27.66
       }
     ],
     "grammar": [
@@ -2340,32 +2340,32 @@ const listeningArticlesDB = [
       {
         "en": "Attention all personnel.",
         "zh": "全體同仁請注意。",
-        "start": 0,
-        "end": 2.38
+        "start": 0.0,
+        "end": 2.84
       },
       {
         "en": "Management has officially approved an updated hybrid work policy starting next month.",
         "zh": "管理層已正式批准自下個月起生效的最新混合辦公政策。",
-        "start": 2.38,
-        "end": 7.85
+        "start": 2.79,
+        "end": 9.24
       },
       {
         "en": "Full-time employees may now work remotely up to two days per week, subject to departmental supervisor approval.",
         "zh": "全職員工每週最多可遠距辦公兩天，惟須經部門主管核准。",
-        "start": 7.85,
-        "end": 14.72
+        "start": 9.24,
+        "end": 17.32
       },
       {
         "en": "All staff members must remain reachable on our internal messaging platform during core working hours from 10 AM to 4 PM.",
         "zh": "所有同仁在上午 10 點至下午 4 點的核心工作時段內，必須在內部通訊軟體上保持隨時可聯繫狀態。",
-        "start": 14.72,
-        "end": 22.5
+        "start": 17.32,
+        "end": 26.47
       },
       {
         "en": "We believe this initiative will boost workplace flexibility while maintaining collaborative excellence.",
         "zh": "我們相信這項新舉措將大幅提升職場彈性，同時維繫優異的團隊協作效能。",
-        "start": 22.5,
-        "end": 28.41
+        "start": 26.47,
+        "end": 33.43
       }
     ],
     "grammar": [
@@ -2474,26 +2474,26 @@ const listeningArticlesDB = [
       {
         "en": "To all traveling representatives: Our accounting division has implemented a streamlined travel expense reimbursement process.",
         "zh": "致全體出差同仁：我們的會計部門已實施了一套簡化的高效差旅費報銷流程。",
-        "start": 0,
-        "end": 7.61
+        "start": 0.0,
+        "end": 9.01
       },
       {
         "en": "Digital receipts must now be uploaded directly through the employee portal within fourteen days after returning from business trips.",
         "zh": "出差返程後十四天內，必須直接透過員工入口網站上傳電子收據。",
-        "start": 7.61,
-        "end": 15.18
+        "start": 8.96,
+        "end": 17.85
       },
       {
         "en": "Any single expenditure exceeding two hundred dollars requires prior written authorization from your regional director.",
         "zh": "任何單筆超過兩百美元的支出，均須事先取得區域總監的書面核准。",
-        "start": 15.18,
-        "end": 22.23
+        "start": 17.85,
+        "end": 26.15
       },
       {
         "en": "Failure to submit required documentation on time may cause substantial reimbursement delays.",
         "zh": "未能按時提交所需文件可能會導致報銷款項嚴重延誤。",
-        "start": 22.23,
-        "end": 28.2
+        "start": 26.15,
+        "end": 33.18
       }
     ],
     "grammar": [
@@ -2602,26 +2602,26 @@ const listeningArticlesDB = [
       {
         "en": "Dear Ms. Rivera, Thank you for applying for the Senior Graphic Designer position at Apex Media.",
         "zh": "親愛的里維拉女士：感謝您應徵頂點媒體（Apex Media）的資深平面設計師職缺。",
-        "start": 0,
-        "end": 5.97
+        "start": 0.0,
+        "end": 7.08
       },
       {
         "en": "After reviewing your impressive resume and design portfolio, our hiring committee would like to invite you for a second-round panel interview.",
         "zh": "在審閱過您令人印象深刻的履歷與作品集後，我們的招聘委員會誠摯邀請您參加第二輪小組面試。",
-        "start": 5.97,
-        "end": 14.12
+        "start": 7.03,
+        "end": 16.62
       },
       {
         "en": "The interview will be conducted via Zoom on Thursday, October 22nd at 2 PM.",
         "zh": "面試將於 10 月 22 日週四下午 2 點透過 Zoom 線上進行。",
-        "start": 14.12,
-        "end": 19.74
+        "start": 16.62,
+        "end": 23.22
       },
       {
         "en": "Please let us know if this time slot is convenient, or suggest alternative availability.",
         "zh": "請告知我們此時段是否方便，或提供其他您可以安排的時間。",
-        "start": 19.74,
-        "end": 25.29
+        "start": 23.22,
+        "end": 29.75
       }
     ],
     "grammar": [
@@ -2730,26 +2730,26 @@ const listeningArticlesDB = [
       {
         "en": "Dear Procurement Team, We regret to inform you that our freight shipment containing the custom microchips will encounter an unexpected five-day delay due to port congestion.",
         "zh": "致採購團隊：很遺憾地通知各位，由於港口壅塞，裝載客製晶片的貨運班次將面臨突如其來的五天延遲。",
-        "start": 0,
-        "end": 9.16
+        "start": 0.0,
+        "end": 10.83
       },
       {
         "en": "We sincerely apologize for this disruption to your manufacturing schedule.",
         "zh": "對於造成貴公司生產進度的中斷與困擾，我們致上最誠摯的歉意。",
-        "start": 9.16,
-        "end": 14.11
+        "start": 10.78,
+        "end": 16.6
       },
       {
         "en": "To compensate for any inconvenience, our logistics department has agreed to absorb all expedited air shipping costs for the remaining batch.",
         "zh": "為補償此不便，我們的物流部門已同意吸收剩餘批次的所有加急空運費用。",
-        "start": 14.11,
-        "end": 22.36
+        "start": 16.6,
+        "end": 26.31
       },
       {
         "en": "We appreciate your gracious understanding as we resolve this matter.",
         "zh": "在我們全力解決此事之際，非常感謝貴公司的諒解。",
-        "start": 22.36,
-        "end": 26.73
+        "start": 26.31,
+        "end": 31.44
       }
     ],
     "grammar": [
@@ -2858,20 +2858,20 @@ const listeningArticlesDB = [
       {
         "en": "Regarding our corporate commercial lease on the 12th floor: Our current contract expires at the end of December.",
         "zh": "關於本公司在 12 樓的商用租約：我們現有的合約將於 12 月底到期。",
-        "start": 0,
-        "end": 6.64
+        "start": 0.0,
+        "end": 7.86
       },
       {
         "en": "Our management is interested in renewing the lease agreement for another three-year term, provided that the building management commits to upgrading the central HVAC cooling system before next summer.",
         "zh": "若大樓物業管理方承諾在明年夏天前升級中央空調系統，本公司管理層有意願將租賃合約再續約三年。",
-        "start": 6.64,
-        "end": 17.09
+        "start": 7.81,
+        "end": 20.1
       },
       {
         "en": "We look forward to receiving a revised draft contract outlining the proposed rental rates and facility maintenance obligations.",
         "zh": "我們期待收到列明租金費率與設施維護義務的修訂版合約草案。",
-        "start": 17.09,
-        "end": 24.34
+        "start": 20.1,
+        "end": 28.63
       }
     ],
     "grammar": [
@@ -2980,38 +2980,38 @@ const listeningArticlesDB = [
       {
         "en": "Good morning.",
         "zh": "早安。",
-        "start": 0,
-        "end": 1.65
+        "start": 0.0,
+        "end": 1.99
       },
       {
         "en": "I would like to buy two round-trip tickets to Boston for this Friday.",
         "zh": "我想買兩張這週五前往波士頓的來回火車票。",
-        "start": 1.65,
-        "end": 5.79
+        "start": 1.94,
+        "end": 6.81
       },
       {
         "en": "Do you have any seats available on the 9:30 AM express train?",
         "zh": "請問上午 9 點 30 分的直達快車還有空位嗎？",
-        "start": 5.79,
-        "end": 10.03
+        "start": 6.81,
+        "end": 11.79
       },
       {
         "en": "We prefer window seats in the quiet car if possible.",
         "zh": "如果可以的話，我們偏好寧靜車廂的靠窗座位。",
-        "start": 10.03,
-        "end": 13.85
+        "start": 11.79,
+        "end": 16.29
       },
       {
         "en": "Also, do you offer any discounts for college students with valid student IDs?",
         "zh": "另外，憑有效的學生證有大學生優惠折扣嗎？",
-        "start": 13.85,
-        "end": 19.02
+        "start": 16.29,
+        "end": 22.38
       },
       {
         "en": "Thank you for checking the schedule for us.",
         "zh": "謝謝您幫我們查詢班次時刻表。",
-        "start": 19.02,
-        "end": 22.01
+        "start": 22.38,
+        "end": 25.9
       }
     ],
     "grammar": [
@@ -3116,32 +3116,32 @@ const listeningArticlesDB = [
       {
         "en": "Excuse me, I am looking for a book on modern architectural history.",
         "zh": "不好意思，我正在找一本關於現代建築歷史的書。",
-        "start": 0,
-        "end": 4.67
+        "start": 0.0,
+        "end": 5.55
       },
       {
         "en": "The online library catalog shows that it should be in aisle 4, but I could not find it on the shelf.",
         "zh": "線上圖書館目錄顯示它應該在 4 號走道，但我架上找不到。",
-        "start": 4.67,
-        "end": 10.9
+        "start": 5.5,
+        "end": 12.82
       },
       {
         "en": "Could someone have borrowed it already?",
         "zh": "會不會已經有人把它借走了？",
-        "start": 10.9,
-        "end": 13.36
+        "start": 12.82,
+        "end": 15.72
       },
       {
         "en": "If so, can I place a hold on it online?",
         "zh": "若是這樣，我可以在線上預約這本書嗎？",
-        "start": 13.36,
-        "end": 16.57
+        "start": 15.72,
+        "end": 19.5
       },
       {
         "en": "How will I be notified when the book becomes available for pickup?",
         "zh": "當這本書可以借閱領取時，系統會如何通知我呢？",
-        "start": 16.57,
-        "end": 20.62
+        "start": 19.5,
+        "end": 24.26
       }
     ],
     "grammar": [
@@ -3242,32 +3242,32 @@ const listeningArticlesDB = [
       {
         "en": "Hello, I made an online reservation for a mid-size SUV under the confirmation number T-904.",
         "zh": "你好，我有在網路上預約一輛中型休旅車，確認號碼是 T-904。",
-        "start": 0,
-        "end": 7.05
+        "start": 0.0,
+        "end": 8.34
       },
       {
         "en": "Here is my driver's license and credit card.",
         "zh": "這是我的駕照和信用卡。",
-        "start": 7.05,
-        "end": 10.41
+        "start": 8.29,
+        "end": 12.24
       },
       {
         "en": "Does this rental include unlimited mileage and roadside assistance?",
         "zh": "請問這個租約方案有包含不限里程以及道路救援服務嗎？",
-        "start": 10.41,
-        "end": 14.71
+        "start": 12.24,
+        "end": 17.3
       },
       {
         "en": "I would also like to purchase full comprehensive collision insurance for peace of mind.",
         "zh": "為了安心起見，我還想加購全額碰撞綜合保險。",
-        "start": 14.71,
-        "end": 19.94
+        "start": 17.3,
+        "end": 23.45
       },
       {
         "en": "Which parking stall is the vehicle located in?",
         "zh": "請問車輛停在幾號停車格呢？",
-        "start": 19.94,
-        "end": 23.23
+        "start": 23.45,
+        "end": 27.31
       }
     ],
     "grammar": [
@@ -3372,32 +3372,32 @@ const listeningArticlesDB = [
       {
         "en": "Good morning, doctor.",
         "zh": "早安，醫生。",
-        "start": 0,
-        "end": 2.3
+        "start": 0.0,
+        "end": 2.76
       },
       {
         "en": "I have been suffering from a severe sore throat and a persistent dry cough for the past three days.",
         "zh": "過去三天我一直飽受嚴重喉嚨痛與持續乾咳之苦。",
-        "start": 2.3,
-        "end": 7.81
+        "start": 2.71,
+        "end": 9.19
       },
       {
         "en": "I also had a mild fever yesterday evening, around thirty-eight degrees Celsius.",
         "zh": "昨天傍晚我還有點微燒，大概攝氏 38 度左右。",
-        "start": 7.81,
-        "end": 12.94
+        "start": 9.19,
+        "end": 15.22
       },
       {
         "en": "Over-the-counter cough syrup has not helped very much.",
         "zh": "在藥局買的成藥止咳糖漿效果不太顯著。",
-        "start": 12.94,
-        "end": 16.59
+        "start": 15.22,
+        "end": 19.51
       },
       {
         "en": "Are there any prescription antibiotics or anti-inflammatory medications that could relieve the discomfort quickly?",
         "zh": "請問有什麼處方抗生素或消炎藥能迅速緩解這種不適嗎？",
-        "start": 16.59,
-        "end": 23.31
+        "start": 19.51,
+        "end": 27.43
       }
     ],
     "grammar": [
@@ -3506,32 +3506,32 @@ const listeningArticlesDB = [
       {
         "en": "Before we head into the national park this weekend, let us double-check our camping checklist.",
         "zh": "在我們這週末啟程前往國家公園之前，讓我們先仔細檢查露營清單。",
-        "start": 0,
-        "end": 5.67
+        "start": 0.0,
+        "end": 6.73
       },
       {
         "en": "We need to ensure that everyone has packed thermal sleeping bags, waterproof tents, and portable water filtration systems.",
         "zh": "我們必須確保每個人都帶上了保暖睡袋、防水帳篷和便攜式濾水系統。",
-        "start": 5.67,
-        "end": 13.35
+        "start": 6.68,
+        "end": 15.71
       },
       {
         "en": "Temperatures in the valley can plummet dramatically after sunset.",
         "zh": "日落之後山谷的氣溫可能會急劇驟降。",
-        "start": 13.35,
-        "end": 17.66
+        "start": 15.71,
+        "end": 20.78
       },
       {
         "en": "Remember that building open campfires is strictly prohibited outside designated fire rings.",
         "zh": "切記在指定營火圈以外的地點嚴禁生明火。",
-        "start": 17.66,
-        "end": 23.71
+        "start": 20.78,
+        "end": 27.9
       },
       {
         "en": "Pack out all food scraps to adhere to leave-no-trace outdoor ethics.",
         "zh": "帶走所有廚餘垃圾，徹底恪守無痕山林戶外守則。",
-        "start": 23.71,
-        "end": 28.16
+        "start": 27.9,
+        "end": 33.13
       }
     ],
     "grammar": [
@@ -3640,26 +3640,26 @@ const listeningArticlesDB = [
       {
         "en": "Welcome to Metro Fitness!",
         "zh": "歡迎來到都會健身俱樂部！",
-        "start": 0,
-        "end": 2.41
+        "start": 0.0,
+        "end": 2.89
       },
       {
         "en": "As a beginner, your initial priority should be learning correct exercise biomechanics rather than lifting heavy dumbbells.",
         "zh": "身為初學者，你初期的首要任務應該是學習正確的動作力學姿勢，而非盲目舉起大重量啞鈴。",
-        "start": 2.41,
-        "end": 9.74
+        "start": 2.84,
+        "end": 11.46
       },
       {
         "en": "Our certified fitness instructors recommend starting with core stability training and compound movements like bodyweight squats.",
         "zh": "我們的專業認證健身教練建議從核心穩定性訓練以及徒手深蹲等複合動作開始入手。",
-        "start": 9.74,
-        "end": 17.02
+        "start": 11.46,
+        "end": 20.03
       },
       {
         "en": "Maintaining consistent hydration and allowing adequate rest between workout sets will prevent muscular soreness and reduce the chance of accidental tendon injuries.",
         "zh": "保持持續補水並在組間安排充足休息，能預防肌肉痠痛並降低意外肌腱受傷的機率。",
-        "start": 17.02,
-        "end": 26.76
+        "start": 20.03,
+        "end": 31.49
       }
     ],
     "grammar": [
@@ -3768,38 +3768,38 @@ const listeningArticlesDB = [
       {
         "en": "Good evening.",
         "zh": "晚安。",
-        "start": 0,
-        "end": 1.57
+        "start": 0.0,
+        "end": 1.9
       },
       {
         "en": "I would like to reserve a table for four people this Saturday night at seven thirty under the name of Davis.",
         "zh": "我想以戴維斯的名義，預約這週六晚上 7 點 30 分四個人的座位。",
-        "start": 1.57,
-        "end": 7.74
+        "start": 1.85,
+        "end": 9.1
       },
       {
         "en": "We are celebrating our wedding anniversary, so a cozy corner booth would be wonderful.",
         "zh": "我們當晚要慶祝結婚紀念日，所以如果能安排在舒適的角落卡座那就太棒了。",
-        "start": 7.74,
-        "end": 13.11
+        "start": 9.1,
+        "end": 15.43
       },
       {
         "en": "Crucially, one of our guests has a severe peanut allergy.",
         "zh": "最關鍵的是，我們的賓客中有一位對花生有嚴重的過敏反應。",
-        "start": 13.11,
-        "end": 17.21
+        "start": 15.43,
+        "end": 20.25
       },
       {
         "en": "Could you please notify your kitchen staff to prevent any cross-contamination?",
         "zh": "能否請您提醒廚房人員，務必防止任何交叉污染？",
-        "start": 17.21,
-        "end": 21.71
+        "start": 20.25,
+        "end": 25.54
       },
       {
         "en": "Thank you very much.",
         "zh": "非常感謝您。",
-        "start": 21.71,
-        "end": 23.74
+        "start": 25.54,
+        "end": 27.93
       }
     ],
     "grammar": [
@@ -3904,26 +3904,26 @@ const listeningArticlesDB = [
       {
         "en": "Hi there.",
         "zh": "你好。",
-        "start": 0,
-        "end": 1.55
+        "start": 0.0,
+        "end": 1.87
       },
       {
         "en": "My two-year mobile contract recently ended, and I am interested in exploring updated unlimited 5G data plans.",
         "zh": "我的兩年門號合約最近剛到期，我想了解一下最新的 5G 上網吃到飽方案。",
-        "start": 1.55,
-        "end": 9
+        "start": 1.82,
+        "end": 10.59
       },
       {
         "en": "Because I frequently travel abroad on vacations, I am specifically looking for a package that includes complimentary international data roaming in Asia.",
         "zh": "因為我休假時常出國旅行，我特別想找包含亞洲區免費國際漫遊上網的套裝資費。",
-        "start": 9,
-        "end": 17.88
+        "start": 10.59,
+        "end": 21.03
       },
       {
         "en": "Could you explain whether the monthly subscription fee includes all administrative taxes, and if early upgrade discounts apply to existing loyal customers?",
         "zh": "能否向我說明月租費是否已內含所有行政稅金，以及老客戶是否有提早升級的專屬優惠？",
-        "start": 17.88,
-        "end": 26.94
+        "start": 21.03,
+        "end": 31.69
       }
     ],
     "grammar": [
@@ -4028,32 +4028,32 @@ const listeningArticlesDB = [
       {
         "en": "Hi, could I please get an iced oat latte and an almond croissant?",
         "zh": "嗨，請給我一杯冰燕麥拿鐵和一個杏仁可頌好嗎？",
-        "start": 0,
-        "end": 4.51
+        "start": 0.0,
+        "end": 5.36
       },
       {
         "en": "Also, do you mind sharing the wireless network password?",
         "zh": "另外，您介意分享一下無線網路密碼嗎？",
-        "start": 4.51,
-        "end": 8.44
+        "start": 5.31,
+        "end": 9.93
       },
       {
         "en": "I plan to work on my laptop here for a couple of hours.",
         "zh": "我打算在這裡用筆電工作幾個小時。",
-        "start": 8.44,
-        "end": 12.26
+        "start": 9.93,
+        "end": 14.43
       },
       {
         "en": "Are there any wall power outlets available near the corner tables?",
         "zh": "角落的桌子附近有牆壁電源插座可以用嗎？",
-        "start": 12.26,
-        "end": 16.32
+        "start": 14.43,
+        "end": 19.21
       },
       {
         "en": "Thank you so much, your cafe has such a peaceful ambiance with lovely natural lighting.",
         "zh": "非常感謝，你們咖啡館的氛圍非常寧靜，自然採光也超棒。",
-        "start": 16.32,
-        "end": 21.88
+        "start": 19.21,
+        "end": 25.74
       }
     ],
     "grammar": [
@@ -4158,32 +4158,32 @@ const listeningArticlesDB = [
       {
         "en": "Attention residents!",
         "zh": "各位社區居民請注意！",
-        "start": 0,
-        "end": 2.16
+        "start": 0.0,
+        "end": 2.59
       },
       {
         "en": "Our neighborhood community center will host its seasonal charity flea market next Saturday morning.",
         "zh": "我們的社區活動中心將於下週六上午舉辦本季度的跳蚤慈善義賣市場。",
-        "start": 2.16,
-        "end": 7.97
+        "start": 2.54,
+        "end": 9.38
       },
       {
         "en": "If you have gently used electronics, vintage clothing, or children's books to donate, drop them off at the reception hall before Thursday.",
         "zh": "若您有保存良好的二手電器、復古服飾或童書欲捐贈，請在週四前送至接待大廳。",
-        "start": 7.97,
-        "end": 16.38
+        "start": 9.38,
+        "end": 19.26
       },
       {
         "en": "All proceeds from the flea market will be donated directly to our local animal rescue shelter.",
         "zh": "跳蚤市場的所有義賣收益將全數直接捐贈給我們在地的動物救援收容所。",
-        "start": 16.38,
-        "end": 22.01
+        "start": 19.26,
+        "end": 25.9
       },
       {
         "en": "Volunteers willing to assist with booth setup are warmly appreciated.",
         "zh": "非常歡迎熱心志工協助攤位佈置與搭建。",
-        "start": 22.01,
-        "end": 26.46
+        "start": 25.9,
+        "end": 31.13
       }
     ],
     "grammar": [
@@ -4295,38 +4295,38 @@ const listeningArticlesDB = [
       {
         "en": "Good morning, everyone.",
         "zh": "大家早安。",
-        "start": 0,
-        "end": 2.39
+        "start": 0.0,
+        "end": 2.86
       },
       {
         "en": "I am pleased to announce that our proposed merger with Apex Global has received formal regulatory approval from antitrust authorities.",
         "zh": "我很高興地宣布，我們與 Apex Global 的併購提案已獲得反壟斷監管機構的正式核准。",
-        "start": 2.39,
-        "end": 10.14
+        "start": 2.81,
+        "end": 11.93
       },
       {
         "en": "This strategic acquisition will significantly expand our international logistics footprint and unlock tremendous synergy across European markets.",
         "zh": "這項策略性收購將大幅擴展我們在國際物流的版圖，並在歐洲市場釋放出巨大的綜效。",
-        "start": 10.14,
-        "end": 18.94
+        "start": 11.93,
+        "end": 22.28
       },
       {
         "en": "We anticipate completing the integration process by the end of the next fiscal quarter without any major organizational redundancies.",
         "zh": "我們預計在下個財政季度結束前完成整合流程，且不會有大規模的組織人力重疊裁減。",
-        "start": 18.94,
-        "end": 26.84
+        "start": 22.28,
+        "end": 31.57
       },
       {
         "en": "A dedicated transition committee has been established to ensure uninterrupted service delivery and coordinate department alignments.",
         "zh": "我們已成立專門的交接過渡委員會，以確保服務不中斷並協調跨部門對接。",
-        "start": 26.84,
-        "end": 34.49
+        "start": 31.57,
+        "end": 40.57
       },
       {
         "en": "You will receive personalized emails later this afternoon regarding town hall meetings and team-specific integration schedules.",
         "zh": "今天下午晚些時候，各位將收到有關全員大會及團隊專屬整合時程的個別說明郵件。",
-        "start": 34.49,
-        "end": 42.02
+        "start": 40.57,
+        "end": 49.44
       }
     ],
     "grammar": [
@@ -4435,32 +4435,32 @@ const listeningArticlesDB = [
       {
         "en": "Thank you for dialing into our third-quarter financial earnings briefing.",
         "zh": "感謝各位撥通電話參加我們的第三季度財務財報電話會議。",
-        "start": 0,
-        "end": 4.34
+        "start": 0.0,
+        "end": 5.15
       },
       {
         "en": "Despite severe macroeconomic headwinds and lingering currency volatility, our core operating revenue increased by twelve percent year-over-year.",
         "zh": "儘管面臨嚴峻的總體經濟逆風及持續的匯率波動，我們核心營業收入仍同比成長了百分之十二。",
-        "start": 4.34,
-        "end": 12.72
+        "start": 5.1,
+        "end": 14.97
       },
       {
         "en": "Robust enterprise subscription growth and disciplined cost containment measures allowed our gross margins to surpass Wall Street consensus estimates.",
         "zh": "強勁的企業訂閱增長與嚴格的成本控管措施，使我們的毛利率超越了華爾街市場預估共識。",
-        "start": 12.72,
-        "end": 20.89
+        "start": 14.97,
+        "end": 24.57
       },
       {
         "en": "Looking ahead, we intend to reallocate surplus capital toward research and development in cloud-native intelligence platforms.",
         "zh": "展望未來，我們計劃將剩餘資金重新配置於雲原生智慧平台的研發。",
-        "start": 20.89,
-        "end": 28.25
+        "start": 24.57,
+        "end": 33.24
       },
       {
         "en": "A comprehensive breakdown of our revised fiscal projections is readily accessible in the investor relations section of our portal.",
         "zh": "我們修正後的詳細財務預測分析報告，已可於官方投資人關係專區直接查閱。",
-        "start": 28.25,
-        "end": 35.75
+        "start": 33.24,
+        "end": 42.06
       }
     ],
     "grammar": [
@@ -4569,38 +4569,38 @@ const listeningArticlesDB = [
       {
         "en": "Good afternoon, directors.",
         "zh": "各位董事午安。",
-        "start": 0,
-        "end": 2.84
+        "start": 0.0,
+        "end": 3.38
       },
       {
         "en": "I would like to draw your attention to our regional freight updates.",
         "zh": "我想請各位注意我們區域貨運的最新動態。",
-        "start": 2.84,
-        "end": 7.04
+        "start": 3.33,
+        "end": 8.27
       },
       {
         "en": "Prolonged congestion at major maritime ports has led to unprecedented turnaround delays for inbound raw materials.",
         "zh": "主要海運港口的長期壅塞，已導致進口原物料週轉出現前所未有的延誤。",
-        "start": 7.04,
-        "end": 13.97
+        "start": 8.27,
+        "end": 16.43
       },
       {
         "en": "To mitigate further inventory shortages, our procurement division recommends securing alternative supplier agreements across Southeast Asia.",
         "zh": "為了緩解庫存短缺加劇，我們的採購部門建議在東南亞敲定替代供應商合約。",
-        "start": 13.97,
-        "end": 22.12
+        "start": 16.43,
+        "end": 26.02
       },
       {
         "en": "Furthermore, maintaining a three-week safety buffer for critical components will shield our domestic assembly plants from sudden logistical bottlenecks.",
         "zh": "此外，針對關鍵零組件維持三週的安全緩衝庫存，將能保護我們的國內組裝廠免受突發物流瓶頸的衝擊。",
-        "start": 22.12,
-        "end": 30.74
+        "start": 26.02,
+        "end": 36.15
       },
       {
         "en": "The proposed expenditure adjustments will be submitted to the finance committee for prompt authorization early tomorrow morning.",
         "zh": "提議的支出調整將於明早提交財務委員會進行快速審核與授權。",
-        "start": 30.74,
-        "end": 37.55
+        "start": 36.15,
+        "end": 44.17
       }
     ],
     "grammar": [
@@ -4709,38 +4709,38 @@ const listeningArticlesDB = [
       {
         "en": "Attention, team leaders.",
         "zh": "各位團隊主管請注意。",
-        "start": 0,
-        "end": 2.58
+        "start": 0.0,
+        "end": 3.08
       },
       {
         "en": "Following an internal IT security audit, our organization is implementing enhanced authentication protocols across all networked workstations.",
         "zh": "在進行內部資訊安全稽核後，本公司正對所有聯網工作站實施強化身分驗證協定。",
-        "start": 2.58,
-        "end": 11.35
+        "start": 3.03,
+        "end": 13.35
       },
       {
         "en": "Beginning this Friday at midnight, multi-factor verification will become mandatory whenever accessing internal repositories and cloud databases remotely.",
         "zh": "自本週五午夜起，遠端存取內部資料庫與雲端資料時，必須強制進行多因素驗證。",
-        "start": 11.35,
-        "end": 20.84
+        "start": 13.35,
+        "end": 24.51
       },
       {
         "en": "Staff members who encounter synchronization errors are advised to submit an expedited ticket through the IT help desk portal.",
         "zh": "若員工遇到同步錯誤，建議立即透過 IT 服務台入口提交急件單。",
-        "start": 20.84,
-        "end": 28.43
+        "start": 24.51,
+        "end": 33.44
       },
       {
         "en": "Failure to configure your security credentials by the deadline may result in temporary suspension of administrative privileges.",
         "zh": "若未在期限前設定完成安全憑證，可能會導致管理權限被暫時停用。",
-        "start": 28.43,
-        "end": 35.96
+        "start": 33.44,
+        "end": 42.31
       },
       {
         "en": "We appreciate your cooperation in safeguarding our proprietary corporate assets against unauthorized intrusions.",
         "zh": "感謝大家的配合，共同保護公司的專有資產免受未經授權的入侵。",
-        "start": 35.96,
-        "end": 42.95
+        "start": 42.31,
+        "end": 50.53
       }
     ],
     "grammar": [
@@ -4849,32 +4849,32 @@ const listeningArticlesDB = [
       {
         "en": "Distinguished shareholders, sustainability has evolved from an optional compliance benchmark into a fundamental pillar of our corporate identity.",
         "zh": "尊敬的各位股東，永續發展已從一項可有可無的合規標準，演變成我們企業身分的核心支柱。",
-        "start": 0,
-        "end": 8.31
+        "start": 0.0,
+        "end": 9.82
       },
       {
         "en": "Over the past twelve months, we have successfully curtailed direct carbon emissions by eighteen percent through strategic investments in photovoltaic infrastructure.",
         "zh": "在過去十二個月裡，我們藉由對太陽能光電基礎設施的策略投資，成功將直接碳排放量減少了百分之十八。",
-        "start": 8.31,
-        "end": 17.61
+        "start": 9.77,
+        "end": 20.71
       },
       {
         "en": "Furthermore, our newly inaugurated circular packaging initiative has drastically reduced single-use plastics across our retail fulfillment network.",
         "zh": "此外，我們新推出的循環包裝倡議，已大幅削減零售配送網路中一次性塑料的使用。",
-        "start": 17.61,
-        "end": 26.61
+        "start": 20.71,
+        "end": 31.3
       },
       {
         "en": "Institutional investors have taken note of our transparent environmental disclosures, earning our firm top ratings on major global sustainability indexes.",
         "zh": "機構投資人已注意到我們透明的環境資訊揭露，這讓我們公司在主要全球永續指數上榮獲頂級評等。",
-        "start": 26.61,
-        "end": 35.95
+        "start": 31.3,
+        "end": 42.29
       },
       {
         "en": "We remain steadfastly committed to achieving net-zero operational status ahead of the scheduled industry benchmark in twenty-thirty-five.",
         "zh": "我們將堅定致力於在 2035 年業界表定基準之前，提前達成營運淨零排放。",
-        "start": 35.95,
-        "end": 43.84
+        "start": 42.29,
+        "end": 51.56
       }
     ],
     "grammar": [
@@ -4983,38 +4983,38 @@ const listeningArticlesDB = [
       {
         "en": "Good morning, plant supervisors.",
         "zh": "工廠主管們早安。",
-        "start": 0,
-        "end": 2.95
+        "start": 0.0,
+        "end": 3.52
       },
       {
         "en": "As highlighted in our latest operational review, manual packaging bottlenecks have consistently hindered our capacity to meet peak holiday delivery demands.",
         "zh": "正如最新營運檢討報告中所指出的，人工包裝的產能瓶頸一直阻礙我們滿足節慶高峰出貨需求的能力。",
-        "start": 2.95,
-        "end": 12.05
+        "start": 3.47,
+        "end": 14.18
       },
       {
         "en": "To resolve this bottleneck, we are proposing an immediate capital investment in autonomous robotic sorting systems.",
         "zh": "為了解決此瓶頸，我們提議立即對自主機器人分揀系統進行資本支出投資。",
-        "start": 12.05,
-        "end": 19.14
+        "start": 14.18,
+        "end": 22.51
       },
       {
         "en": "Preliminary simulation models estimate that automated sorting will enhance throughput by thirty-five percent while cutting defect rates significantly.",
         "zh": "初步模擬模型估算，自動分揀將能提升百分之三十五的吞吐產能，同時大幅降低缺陷瑕疵率。",
-        "start": 19.14,
-        "end": 27.73
+        "start": 22.51,
+        "end": 32.62
       },
       {
         "en": "In addition, existing floor technicians will transition into specialized supervisory roles following comprehensive machinery training.",
         "zh": "此外，現有的現場技術人員在完成全方位機台培訓後，將轉型為專業的督導角色。",
-        "start": 27.73,
-        "end": 35.52
+        "start": 32.62,
+        "end": 41.79
       },
       {
         "en": "The complete implementation timeline and vendor comparison chart are distributed in the folders before you.",
         "zh": "完整的導入時程表與供應商比較評估表已分發在各位面前的文件夾中。",
-        "start": 35.52,
-        "end": 41.75
+        "start": 41.79,
+        "end": 49.12
       }
     ],
     "grammar": [
@@ -5123,38 +5123,38 @@ const listeningArticlesDB = [
       {
         "en": "Welcome to today's strategic alignment workshop.",
         "zh": "歡迎參加今天的策略對齊研討會。",
-        "start": 0,
-        "end": 3.44
+        "start": 0.0,
+        "end": 4.09
       },
       {
         "en": "When penetrating saturated consumer markets across the Asia-Pacific territory, localized brand storytelling is paramount to establishing enduring brand equity.",
         "zh": "在開拓亞太地區飽和的消費市場時，在地化的品牌敘事對於建立持久的品牌資產至關重要。",
-        "start": 3.44,
-        "end": 13.29
+        "start": 4.04,
+        "end": 15.63
       },
       {
         "en": "Consumer analytics indicate that younger demographics prioritize authentic engagement over conventional broadcast advertising.",
         "zh": "消費者數據分析顯示，年輕族群更看重真實的互動體驗，而非傳統的大眾廣播廣告。",
-        "start": 13.29,
-        "end": 21.18
+        "start": 15.63,
+        "end": 24.91
       },
       {
         "en": "Consequently, we advocate shifting fifty percent of your promotional allocation toward hyper-targeted influencer partnerships and interactive experiential showcases.",
         "zh": "因此，我們建議將百分之五十的推廣預算預算重新導向精準的網紅合作與互動體驗展示。",
-        "start": 21.18,
-        "end": 31.29
+        "start": 24.91,
+        "end": 36.81
       },
       {
         "en": "By fostering organic community sentiment, your brand can bypass conventional ad-fatigue barriers and foster deep customer retention.",
         "zh": "透過培養真實的社群共鳴，您的品牌將能打破傳統廣告疲勞的壁壘，並培養深厚的客戶黏著度。",
-        "start": 31.29,
-        "end": 39.52
+        "start": 36.81,
+        "end": 46.5
       },
       {
         "en": "Let us now examine the benchmark conversion metrics generated from our pilot campaign in Seoul.",
         "zh": "現在就讓我們一起檢視首爾先導行銷專案所產生的基準轉換指標。",
-        "start": 39.52,
-        "end": 45.41
+        "start": 46.5,
+        "end": 53.43
       }
     ],
     "grammar": [
@@ -5263,38 +5263,38 @@ const listeningArticlesDB = [
       {
         "en": "Good morning, legal counsel and commercial partners.",
         "zh": "法務顧問與商業夥伴們早安。",
-        "start": 0,
-        "end": 4.05
+        "start": 0.0,
+        "end": 4.81
       },
       {
         "en": "We have finalized the preliminary draft of the bilateral intellectual property licensing covenant.",
         "zh": "我們已完成雙邊智慧財產權授權協議初步草案的最後定稿。",
-        "start": 4.05,
-        "end": 9.85
+        "start": 4.76,
+        "end": 11.58
       },
       {
         "en": "Article Four explicitly stipulates that our client shall retain exclusive worldwide patent ownership across all cryptographic algorithms.",
         "zh": "第四條明確載明，我方客戶將對所有密碼學演算法保留全球獨家專利所有權。",
-        "start": 9.85,
-        "end": 18.06
+        "start": 11.58,
+        "end": 21.24
       },
       {
         "en": "In return, the licensee is granted non-transferable commercialization privileges across designated North American medical markets for an initial tenure of seven years.",
         "zh": "作為回報，被授權人將在指定的北美醫療市場享有為期七年的不可轉讓商業化權利。",
-        "start": 18.06,
-        "end": 28
+        "start": 21.24,
+        "end": 32.93
       },
       {
         "en": "Furthermore, clause seven mandates quarterly royalty remittances accompanied by certified independent auditing statements.",
         "zh": "此外，第七條規定被授權人須每季匯出權利金，並附上經認證的獨立審計報告。",
-        "start": 28,
-        "end": 35.45
+        "start": 32.93,
+        "end": 41.7
       },
       {
         "en": "If both parties concur with these modified indemnification clauses, we shall proceed with executing the definitive agreement before Friday.",
         "zh": "如果雙方對這些修改後的賠償條款達成一致共識，我們將在週五前正式簽署具法律約束力的最終合約。",
-        "start": 35.45,
-        "end": 43.5
+        "start": 41.7,
+        "end": 51.17
       }
     ],
     "grammar": [
@@ -5403,38 +5403,38 @@ const listeningArticlesDB = [
       {
         "en": "Good morning, members of the press.",
         "zh": "各位媒體記者朋友們早安。",
-        "start": 0,
-        "end": 2.91
+        "start": 0.0,
+        "end": 3.48
       },
       {
         "en": "We have convened this urgent press conference to address the recent thermal malfunction reported in our model five smart home hubs.",
         "zh": "我們召開這次緊急記者會，是為了就我們第五代智慧家庭中樞最近傳出的過熱故障事件進行說明。",
-        "start": 2.91,
-        "end": 10.18
+        "start": 3.43,
+        "end": 11.97
       },
       {
         "en": "Although no casualties or structural property damages have occurred, consumer safety remains our most paramount operational imperative.",
         "zh": "雖然目前尚未造成人員傷亡或結構性財產損害，但消費者安全仍是我們最至高無上的營運準則。",
-        "start": 10.18,
-        "end": 18.21
+        "start": 11.97,
+        "end": 21.43
       },
       {
         "en": "As a precautionary measure, our executive board has initiated a voluntary worldwide recall of all units manufactured between May and August.",
         "zh": "作為預防性措施，我們的執行董事會已啟動對五月至八月期間生產之所有機型的全球主動召回。",
-        "start": 18.21,
-        "end": 27.23
+        "start": 21.43,
+        "end": 32.03
       },
       {
         "en": "Impacted customers are entitled to an expedited complimentary hardware replacement or a full refund upon verification.",
         "zh": "受影響的消費者在經核對後，有權獲得快速的免費硬體更換或全額退款。",
-        "start": 27.23,
-        "end": 34.69
+        "start": 32.03,
+        "end": 40.81
       },
       {
         "en": "A twenty-four-hour multilingual customer assistance helpline has been inaugurated to streamline retrieval procedures immediately.",
         "zh": "我們已立即啟用 24 小時多語言客戶協助專線，以簡化回收流程。",
-        "start": 34.69,
-        "end": 42.14
+        "start": 40.81,
+        "end": 49.57
       }
     ],
     "grammar": [
@@ -5543,38 +5543,38 @@ const listeningArticlesDB = [
       {
         "en": "Good afternoon, colleagues.",
         "zh": "各位同仁下午好。",
-        "start": 0,
-        "end": 2.6
+        "start": 0.0,
+        "end": 3.11
       },
       {
         "en": "After an illustrious fifteen-year tenure guiding our enterprise, Chief Executive Officer Arthur Vance has announced his intended retirement at the conclusion of this calendar year.",
         "zh": "在引領我們企業度過輝煌卓越的十五年任期後，執行長 Arthur Vance 宣布了他預定於今年年底退休的計畫。",
-        "start": 2.6,
-        "end": 12.56
+        "start": 3.06,
+        "end": 14.78
       },
       {
         "en": "Following a rigorous external and internal search, the board of directors has unanimously confirmed Margaret Chen as his successor.",
         "zh": "歷經嚴格的內外部遴選，董事會已全票通過確認 Margaret Chen 為他的繼任者。",
-        "start": 12.56,
-        "end": 20.21
+        "start": 14.78,
+        "end": 23.78
       },
       {
         "en": "Margaret previously spearheaded our international operations through unprecedented growth phases and possesses impeccable strategic acumen.",
         "zh": "Margaret 先前曾帶領我們的國際業務度過了前所未有的成長階段，並具備無可挑剔的策略敏銳度。",
-        "start": 20.21,
-        "end": 28.34
+        "start": 23.78,
+        "end": 33.34
       },
       {
         "en": "The transitional handover phase will commence on November first to facilitate seamless leadership continuity across all operating verticals.",
         "zh": "過渡交接期將於十一月一日正式展開，以促進所有業務部門領導力的無縫傳承。",
-        "start": 28.34,
-        "end": 36.4
+        "start": 33.34,
+        "end": 42.82
       },
       {
         "en": "Please join me in expressing our profound gratitude to Arthur and welcoming Margaret into her historic new appointment.",
         "zh": "請大家和我一起向 Arthur 致上最深摯的謝意，並熱烈歡迎 Margaret 接下這項歷史性的嶄新任命。",
-        "start": 36.4,
-        "end": 43
+        "start": 42.82,
+        "end": 50.59
       }
     ],
     "grammar": [
@@ -5704,8 +5704,8 @@ const listeningArticlesDB = [
         "avatar": "👨‍💼",
         "en": "Good morning, Sophia. I am calling regarding the purchase order we submitted yesterday for the five hundred enterprise hard drives.",
         "zh": "早安，Sophia。我致電是關於我們昨天送出五百組企業級硬碟的採購訂單。",
-        "start": 0,
-        "end": 8.69
+        "start": 0.0,
+        "end": 10.2
       },
       {
         "speaker": "Sophia",
@@ -5715,8 +5715,8 @@ const listeningArticlesDB = [
         "avatar": "👩‍💼",
         "en": "Good morning, Alex. Yes, I saw the order, but due to severe supply chain delays, our standard delivery timeframe would be three weeks instead of one.",
         "zh": "早安，Alex。是的，我有看到訂單，但由於供應鏈嚴重延誤，我們的標準交貨期需要三週而非一週。",
-        "start": 8.69,
-        "end": 18.53
+        "start": 10.55,
+        "end": 22.12
       },
       {
         "speaker": "Alex",
@@ -5726,8 +5726,8 @@ const listeningArticlesDB = [
         "avatar": "👨‍💼",
         "en": "Three weeks will be problematic because our data center deployment is scheduled for the end of this month. Is there any possibility of expedited air freight?",
         "zh": "三週會有問題，因為我們的資料中心部署排定在月底。有可能安排加急航空貨運嗎？",
-        "start": 18.53,
-        "end": 28.18
+        "start": 22.47,
+        "end": 33.82
       },
       {
         "speaker": "Sophia",
@@ -5737,8 +5737,8 @@ const listeningArticlesDB = [
         "avatar": "👩‍💼",
         "en": "We can arrange priority air freight for the first two hundred units by this Friday, provided that your company covers the additional shipping surcharge.",
         "zh": "只要貴公司願意負擔額外運費差額，我們可以在本週五前先安排前兩百組的優先航空貨運。",
-        "start": 28.18,
-        "end": 36.7
+        "start": 34.17,
+        "end": 44.18
       },
       {
         "speaker": "Alex",
@@ -5748,8 +5748,8 @@ const listeningArticlesDB = [
         "avatar": "👨‍💼",
         "en": "That sounds workable. However, considering the urgency and bulk volume, would you be able to extend a fifteen percent discount on the remaining batch?",
         "zh": "這聽起來可行。不過考量到緊迫性與批發數量，剩餘批次你們能否提供百分之十五的折扣？",
-        "start": 36.7,
-        "end": 46.37
+        "start": 44.53,
+        "end": 55.91
       },
       {
         "speaker": "Sophia",
@@ -5759,8 +5759,8 @@ const listeningArticlesDB = [
         "avatar": "👩‍💼",
         "en": "Fifteen percent is beyond my authorization limit, but I could approve a twelve percent discount if you commit to signing our annual maintenance contract.",
         "zh": "百分之十五超出了我的授權上限，但如果您願意簽署我們的年度維護合約，我可以核准百分之十二的折扣。",
-        "start": 46.37,
-        "end": 55.13
+        "start": 56.26,
+        "end": 66.56
       },
       {
         "speaker": "Alex",
@@ -5770,8 +5770,8 @@ const listeningArticlesDB = [
         "avatar": "👨‍💼",
         "en": "That is a fair compromise. Could you send over the revised agreement along with the updated invoice by two o'clock today?",
         "zh": "這是個合理的折衷方案。您能在今天下午兩點前將修改後的協議連同更新的發票寄過來嗎？",
-        "start": 55.13,
-        "end": 63.17
+        "start": 66.91,
+        "end": 76.37
       },
       {
         "speaker": "Sophia",
@@ -5781,8 +5781,8 @@ const listeningArticlesDB = [
         "avatar": "👩‍💼",
         "en": "Certainly, Alex. I will draft the paperwork right away and email it to your legal department for final signature.",
         "zh": "當然沒問題，Alex。我馬上起草文件，並寄給您的法務部門進行最終簽署。",
-        "start": 63.17,
-        "end": 70.99
+        "start": 76.72,
+        "end": 85.94
       }
     ],
     "grammar": [
@@ -5894,31 +5894,31 @@ const listeningArticlesDB = [
         "en": "Good morning, department heads.",
         "zh": "各位部門主管，早安。",
         "start": 0.0,
-        "end": 2.8
+        "end": 3.29
       },
       {
         "en": "In light of rising operational costs, executive management has mandated a comprehensive budget review for the upcoming fiscal quarter.",
         "zh": "鑑於營運成本不斷攀升，高階管理團隊已要求針對下一財政季度進行全面預算審查。",
-        "start": 2.75,
-        "end": 10.99
+        "start": 3.24,
+        "end": 12.93
       },
       {
         "en": "We must identify avenues to reduce discretionary expenditures without compromising product quality.",
         "zh": "我們必須在不損害產品品質的前提下，找出削減非必要自由支配開支的途徑。",
-        "start": 10.99,
-        "end": 17.32
+        "start": 12.93,
+        "end": 20.38
       },
       {
         "en": "Additionally, capital investments will be re-evaluated to account for asset depreciation.",
         "zh": "此外，各項資本投資也將重新評估，以將資產折舊因素納入考量。",
-        "start": 17.32,
-        "end": 23.39
+        "start": 20.38,
+        "end": 27.51
       },
       {
         "en": "Please submit your revised budget proposals to the finance committee by Friday afternoon.",
         "zh": "請各位於週五下午前將修訂後的預算提案提交給財務委員會。",
-        "start": 23.39,
-        "end": 28.69
+        "start": 27.51,
+        "end": 33.75
       }
     ],
     "grammar": [
@@ -6016,31 +6016,31 @@ const listeningArticlesDB = [
         "en": "Attention logistics personnel.",
         "zh": "各位物流人員請注意。",
         "start": 0.0,
-        "end": 2.8
+        "end": 3.28
       },
       {
         "en": "Our regional distribution center is experiencing severe delays due to unexpected port congestion.",
         "zh": "由於非預期的港口壅塞，本區域配送中心正遭遇嚴重的貨運延誤。",
-        "start": 2.75,
-        "end": 9.04
+        "start": 3.23,
+        "end": 10.62
       },
       {
         "en": "To meet contractual deadlines, we have authorized our primary subcontractor to deploy additional freight vehicles immediately.",
         "zh": "為了履行合約期限，我們已授權主要分包商立即調派額外的貨運車輛。",
-        "start": 9.04,
-        "end": 16.38
+        "start": 10.62,
+        "end": 19.26
       },
       {
         "en": "All incoming shipments must be processed promptly upon arrival at the warehouse.",
         "zh": "所有送達貨件在抵達倉庫時必須立即迅速處理。",
-        "start": 16.38,
-        "end": 21.32
+        "start": 19.26,
+        "end": 25.08
       },
       {
         "en": "Please ensure that every consignment is properly logged in the inventory management system.",
         "zh": "請確保每筆託運貨物均已在庫存管理系統中妥善登記登錄。",
-        "start": 21.32,
-        "end": 26.32
+        "start": 25.08,
+        "end": 30.96
       }
     ],
     "grammar": [
@@ -6138,31 +6138,31 @@ const listeningArticlesDB = [
         "en": "This is an important system announcement from the IT department.",
         "zh": "這是來自資訊科技部門的重要系統公告。",
         "start": 0.0,
-        "end": 4.46
+        "end": 5.24
       },
       {
         "en": "We will perform critical cloud infrastructure upgrades this Saturday from 10:00 PM to 4:00 AM.",
         "zh": "我們將於本週六晚間 10 點至凌晨 4 點進行關鍵雲端基礎架構升級。",
-        "start": 4.41,
-        "end": 10.53
+        "start": 5.19,
+        "end": 12.38
       },
       {
         "en": "During this maintenance window, company servers and internal portals will experience scheduled downtime.",
         "zh": "在該維護期間內，公司伺服器與內部入口網站將會經歷預定的停機暫停服務。",
-        "start": 10.53,
-        "end": 16.66
+        "start": 12.38,
+        "end": 19.6
       },
       {
         "en": "Employees should save all ongoing work and log out of their workstations before leaving on Friday.",
         "zh": "員工應在週五離開公司前儲存所有進行中的工作，並登出工作站電腦。",
-        "start": 16.66,
-        "end": 22.32
+        "start": 19.6,
+        "end": 26.26
       },
       {
         "en": "If you encounter any technical issues after the upgrade, please contact the helpdesk for troubleshooting.",
         "zh": "若您在升級後遭遇任何技術問題，請聯繫客服中心進行疑難排解。",
-        "start": 22.32,
-        "end": 28.29
+        "start": 26.26,
+        "end": 33.28
       }
     ],
     "grammar": [
@@ -6260,31 +6260,31 @@ const listeningArticlesDB = [
         "en": "Good afternoon, board members.",
         "zh": "各位董事會成員，下午好。",
         "start": 0.0,
-        "end": 2.9
+        "end": 3.39
       },
       {
         "en": "Following the equipment damage incident at our overseas manufacturing facility, our risk management division has engaged with the insurance provider.",
         "zh": "在海外生產基地發生設備損壞事件後，我們的風險管理部門已與保險公司展開接洽交涉。",
-        "start": 2.85,
-        "end": 11.38
+        "start": 3.34,
+        "end": 13.37
       },
       {
         "en": "The policy's commercial underwriting terms stipulate that the insurer must indemnify our company for verifiable property losses.",
         "zh": "該保單的商業核保條款明確規定，保險人必須就可查證的財產損失對本公司予以賠償。",
-        "start": 11.38,
-        "end": 18.82
+        "start": 13.37,
+        "end": 22.14
       },
       {
         "en": "However, the claims adjuster has requested comprehensive maintenance logs to rule out operator negligence.",
         "zh": "然而，理賠理算審查員已要求提供完整的設備維修紀錄，以排除操作人員疏失的可能。",
-        "start": 18.82,
-        "end": 25.34
+        "start": 22.14,
+        "end": 29.8
       },
       {
         "en": "We anticipate a preliminary compensation determination by the end of next week.",
         "zh": "我們預期下週末前將取得初步的理賠賠償裁決結果。",
-        "start": 25.34,
-        "end": 30.51
+        "start": 29.8,
+        "end": 35.89
       }
     ],
     "grammar": [
@@ -6382,25 +6382,25 @@ const listeningArticlesDB = [
         "en": "Dear colleagues, as part of our strategic roadmap for global expansion, the company will initiate an organizational restructuring next month.",
         "zh": "各位同仁：作為全球擴張策略藍圖的一環，公司將於下個月啟動組織架構重組。",
         "start": 0.0,
-        "end": 8.7
+        "end": 10.23
       },
       {
         "en": "This transformation aims to streamline decision-making processes and eliminate operational redundancies between departments.",
         "zh": "此次轉型旨在簡化決策流程，並消除跨部門之間的營運冗餘與重複資源。",
-        "start": 8.65,
-        "end": 16.29
+        "start": 10.18,
+        "end": 19.16
       },
       {
         "en": "Furthermore, several senior leadership positions will transition to oversee our newly formed digital innovation division.",
         "zh": "此外，數個高階領導職位將進行過渡轉型，直接督導我們新成立的數位創新部門。",
-        "start": 16.29,
-        "end": 23.73
+        "start": 19.16,
+        "end": 27.91
       },
       {
         "en": "We remain deeply committed to supporting all employees throughout this corporate reorganization.",
         "zh": "在此企業重整過渡期，我們仍堅定承諾全力支持所有員工。",
-        "start": 23.73,
-        "end": 29.34
+        "start": 27.91,
+        "end": 34.51
       }
     ],
     "grammar": [
@@ -6498,31 +6498,31 @@ const listeningArticlesDB = [
         "en": "Welcome to our fourth-quarter digital marketing review.",
         "zh": "歡迎各位參加我們第四季度的數位行銷績效檢討會。",
         "start": 0.0,
-        "end": 3.71
+        "end": 4.36
       },
       {
         "en": "Our recent collaboration with prominent industry influencers has significantly boosted brand awareness among younger consumers.",
         "zh": "我們近期與業界知名社群網紅的合作，顯著提升了年輕消費者群體中的品牌知名度。",
-        "start": 3.66,
-        "end": 11.2
+        "start": 4.31,
+        "end": 13.18
       },
       {
         "en": "Performance metrics indicate a forty percent increase in web traffic and record conversion rates across our online storefront.",
         "zh": "成效評估數據顯示，網站流量激增了百分之四十，線上商城的轉換率更創下歷史新高。",
-        "start": 11.2,
-        "end": 18.46
+        "start": 13.18,
+        "end": 21.72
       },
       {
         "en": "Moving forward, we plan to allocate a greater share of our advertising budget toward targeted video campaigns.",
         "zh": "展望未來，我們計劃將更高比例的廣告預算分配給精準定向的影音行銷專案。",
-        "start": 18.46,
-        "end": 25.06
+        "start": 21.72,
+        "end": 29.49
       },
       {
         "en": "Let us now examine the regional performance breakdown in greater detail.",
         "zh": "現在讓我們更深入地檢視各地區市場的表現細部數據。",
-        "start": 25.06,
-        "end": 29.74
+        "start": 29.49,
+        "end": 34.99
       }
     ],
     "grammar": [
@@ -6620,31 +6620,31 @@ const listeningArticlesDB = [
         "en": "Good morning, project team.",
         "zh": "專案團隊各位成員，大家早安。",
         "start": 0.0,
-        "end": 2.71
+        "end": 3.18
       },
       {
         "en": "Today's meeting is convened to evaluate our progress toward the final software release.",
         "zh": "今天召開本次會議的目的，在於評估邁向最終軟體版本發佈的執行進度。",
-        "start": 2.66,
-        "end": 7.99
+        "start": 3.13,
+        "end": 9.4
       },
       {
         "en": "We have successfully achieved every major development milestone ahead of the projected timeline.",
         "zh": "我們已成功超越預定時程，提前達成各項重大的開發里程碑。",
-        "start": 7.99,
-        "end": 13.54
+        "start": 9.4,
+        "end": 15.93
       },
       {
         "en": "The engineering department has resolved the outstanding system bugs and validated all client specifications.",
         "zh": "工程部門已解決所有尚未結案的系統漏洞，並驗證了客戶所有的功能規格需求。",
-        "start": 13.54,
-        "end": 20.44
+        "start": 15.93,
+        "end": 24.04
       },
       {
         "en": "Our primary focus now shifts to finalizing the user manual and delivering the key project deliverables to the client on Monday.",
         "zh": "我們當前的首要焦點將轉向定稿使用者操作手冊，並在週一向客戶正式移交關鍵專案交付成果。",
-        "start": 20.44,
-        "end": 28.06
+        "start": 24.04,
+        "end": 33.01
       }
     ],
     "grammar": [

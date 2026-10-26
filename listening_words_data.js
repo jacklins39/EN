@@ -1,4 +1,3 @@
-// 單元 19：聽力新單字庫 (隨聽力短文自動產出與維護)
 const listeningWordsDB = [
   {
     "id": 31947,
@@ -699,5 +698,55 @@ const listeningWordsDB = [
     "unit": 19,
     "example": "Regular security audits help the IT department identify and patch system vulnerabilities promptly.",
     "exampleZh": "定期的資安稽核有助於資訊部門及時識別並修補系統漏洞。"
+  },
+  {
+    "id": 32017,
+    "en": "teamwork",
+    "kk": "[ˈtiːmwɜːrk]",
+    "uk": "/ˈtiːmwɜːk/",
+    "zh": "n. 團隊合作，協力；聯合作業",
+    "unit": 19,
+    "example": "Success requires good teamwork and communication.",
+    "exampleZh": "成功需要良好的團隊合作與溝通。"
+  },
+  {
+    "id": 32018,
+    "en": "bunny",
+    "kk": "[ˈbʌni]",
+    "uk": "/ˈbʌni/",
+    "zh": "n. 小兔子",
+    "unit": 19,
+    "example": "The little girl holds a cute fluffy bunny.",
+    "exampleZh": "小女孩抱著一隻可愛毛茸茸的小兔子。"
+  },
+  {
+    "id": 32019,
+    "en": "storybook",
+    "kk": "[ˈstɔːribʊk]",
+    "uk": "/ˈstɔːribʊk/",
+    "zh": "n. 故事書",
+    "unit": 19,
+    "example": "Mom reads a bedtime storybook every single night.",
+    "exampleZh": "媽媽每天晚上都會讀一本睡前故事書。"
+  },
+  {
+    "id": 32020,
+    "en": "sweetie",
+    "kk": "[ˈswiːti]",
+    "uk": "/ˈswiːti/",
+    "zh": "n. 親愛的，寶貝；討人喜愛的人",
+    "unit": 19,
+    "example": "Time to wake up and brush your teeth, sweetie.",
+    "exampleZh": "該起床刷牙囉，寶貝。"
+  },
+  {
+    "id": 32021,
+    "en": "goodnight",
+    "kk": "[ˌɡʊdˈnaɪt]",
+    "uk": "/ˌɡʊdˈnaɪt/",
+    "zh": "int. 晚安；祝好夢",
+    "unit": 19,
+    "example": "She gives her daughter a warm goodnight kiss.",
+    "exampleZh": "她給了女兒一個溫暖的晚安吻。"
   }
 ];

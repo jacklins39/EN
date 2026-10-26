@@ -7409,5 +7409,11 @@ const UK_PHONETICS_MANIFEST = {
   "throughput": "/ˈθruːpʊt/",
   "trainer": "/ˈtreɪnə(r)/",
   "training": "/ˈtreɪnɪŋ/",
-  "vulnerability": "/ˌvʌlnərəˈbɪləti/"
+  "vulnerability": "/ˌvʌlnərəˈbɪləti/",
+  "teamwork": "/ˈtiːmwɜːk/",
+  "bunny": "/ˈbʌni/",
+  "storybook": "/ˈstɔːribʊk/",
+  "sweetie": "/ˈswiːti/",
+  "goodnight": "/ˌɡʊdˈnaɪt/"
 };
+if (typeof window !== 'undefined') window.UK_PHONETICS_MANIFEST = UK_PHONETICS_MANIFEST;

@@ -7351,5 +7351,10 @@ const UK_PHONETICS_MANIFEST = {
   "restructuring": "/riːˈstrʌktʃərɪŋ/",
   "influencer": "/ˈɪnfluənsə(r)/",
   "metrics": "/ˈmetrɪks/",
-  "deliverable": "/dɪˈlɪvərəbl/"
+  "deliverable": "/dɪˈlɪvərəbl/",
+  "discretionary": "/dɪˈskreʃənri/",
+  "adjuster": "/əˈdʒʌstə(r)/",
+  "redundancy": "/rɪˈdʌndənsi/",
+  "roadmap": "/ˈrəʊdmæp/",
+  "conversion": "/kənˈvɜːʃn/"
 };

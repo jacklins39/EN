@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261026V22';
+        const APP_BUILD_VERSION = '20261026V23';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -31,18 +31,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261026V22"></script>
-    <script src="toeic_data.js?v=20261026V22"></script>
-    <script src="jh_data.js?v=20261026V22"></script>
-    <script src="listening_data.js?v=20261026V22"></script>
-    <script src="uk_phonetics_manifest.js?v=20261026V22"></script>
-    <script src="words_audio_manifest.js?v=20261026V22"></script>
-    <script src="examples_audio_manifest.js?v=20261026V22"></script>
-    <script src="zh_audio_manifest.js?v=20261026V22"></script>
-    <script src="collocations_audio_manifest.js?v=20261026V22"></script>
-    <script src="syn_ant_data.js?v=20261026V22"></script>
-    <script src="synonyms_unit8_data.js?v=20261026V22"></script>
-    <script src="examples_unit9_data.js?v=20261026V22"></script>
+    <script src="words_data.js?v=20261026V23"></script>
+    <script src="toeic_data.js?v=20261026V23"></script>
+    <script src="jh_data.js?v=20261026V23"></script>
+    <script src="listening_data.js?v=20261026V23"></script>
+    <script src="uk_phonetics_manifest.js?v=20261026V23"></script>
+    <script src="words_audio_manifest.js?v=20261026V23"></script>
+    <script src="examples_audio_manifest.js?v=20261026V23"></script>
+    <script src="zh_audio_manifest.js?v=20261026V23"></script>
+    <script src="collocations_audio_manifest.js?v=20261026V23"></script>
+    <script src="syn_ant_data.js?v=20261026V23"></script>
+    <script src="synonyms_unit8_data.js?v=20261026V23"></script>
+    <script src="examples_unit9_data.js?v=20261026V23"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -1426,9 +1426,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261026V22</span>
+                        <span id="app-version-display">版本 20261026V23</span>
                     </div>
-                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261026V22</p>
+                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261026V23</p>
                 </div>
             </div>
         </div>
@@ -3079,7 +3079,12 @@
                     <div class="flex items-center gap-3 min-w-0">
                         <div class="min-w-0">
                             <div class="font-semibold text-[#1D1D1F] text-[15px] flex items-center gap-1.5 flex-wrap">${esc(w.en)} ${renderPhoneticsBadgesHtml(w, 'sm')}</div>
-                            <div class="text-[13px] text-[#86868B] truncate">${esc(w.zh)}</div>
+                            ${(() => {
+                        const pParsed = splitPosAndZh(w.zh, w.pos, w.exampleZh, w.example, w.en);
+                        const pConcise = getConciseZh(w.zh, w.pos, w.exampleZh, w.example, w.en) || pParsed.pureZh || w.zh;
+                        const pPos = pParsed.items?.[0]?.pos || pParsed.posBadgeText || w.pos || '';
+                        return `<div class="text-[13px] text-[#86868B] truncate" title="${esc(w.zh)}">${pPos ? esc(pPos) + ' ' : ''}${esc(pConcise)}</div>`;
+                    })()}
                         </div>
                     </div>
                     <div class="shrink-0 ml-2">
@@ -4697,7 +4702,12 @@
                         <div class="flex items-center justify-between py-2.5 px-2 hover:bg-white rounded-xl cursor-pointer transition-colors" onclick="showWordDetailModal('${esc(w.en)}')">
                             <div class="min-w-0 pr-2">
                                 <div class="font-bold text-slate-900 text-sm flex items-center gap-1.5 flex-wrap">${esc(w.en)} ${renderPhoneticsBadgesHtml(w, 'sm')}</div>
-                                <div class="text-xs text-slate-500 truncate">${esc(w.zh)}</div>
+                                ${(() => {
+                                const pParsed = splitPosAndZh(w.zh, w.pos, w.exampleZh, w.example, w.en);
+                                const pConcise = getConciseZh(w.zh, w.pos, w.exampleZh, w.example, w.en) || pParsed.pureZh || w.zh;
+                                const pPos = pParsed.items?.[0]?.pos || pParsed.posBadgeText || w.pos || '';
+                                return `<div class="text-xs text-slate-500 truncate" title="${esc(w.zh)}">${pPos ? esc(pPos) + ' ' : ''}${esc(pConcise)}</div>`;
+                            })()}
                             </div>
                             <div class="flex items-center gap-2 shrink-0">
                                 <span class="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-blue-50 text-[#0071E3] border border-blue-100">🎧 已聆聽</span>
@@ -4769,7 +4779,12 @@
                         <div class="flex items-center justify-between py-2.5 px-2 hover:bg-white rounded-xl cursor-pointer transition-colors" onclick="showWordDetailModal('${esc(w.en)}')">
                             <div class="min-w-0 pr-2">
                                 <div class="font-bold text-slate-900 text-sm flex items-center gap-1.5 flex-wrap">${esc(w.en)} ${renderPhoneticsBadgesHtml(w, 'sm')}</div>
-                                <div class="text-xs text-slate-500 truncate">${esc(w.zh)}</div>
+                                ${(() => {
+                                const pParsed = splitPosAndZh(w.zh, w.pos, w.exampleZh, w.example, w.en);
+                                const pConcise = getConciseZh(w.zh, w.pos, w.exampleZh, w.example, w.en) || pParsed.pureZh || w.zh;
+                                const pPos = pParsed.items?.[0]?.pos || pParsed.posBadgeText || w.pos || '';
+                                return `<div class="text-xs text-slate-500 truncate" title="${esc(w.zh)}">${pPos ? esc(pPos) + ' ' : ''}${esc(pConcise)}</div>`;
+                            })()}
                             </div>
                             <div class="flex items-center gap-1.5 shrink-0">
                                 ${badgeHtml}
@@ -9296,7 +9311,15 @@
                     const safeEn = esc(word).replace(/'/g, "\\'");
                     const info = findWordInDB(word);
                     const isAlreadyCustom = (typeof customWordsDB !== 'undefined' && customWordsDB.some(cw => cw.en.toLowerCase() === word.toLowerCase()));
-                    const displayZh = info ? (info.pos ? `[${esc(info.pos)}] ` : '') + esc(info.zh) : '';
+                    let displayZh = '';
+                    let rawZhTooltip = '';
+                    if (info) {
+                        const parsed = splitPosAndZh(info.zh, info.pos, '', '', word);
+                        const concise = getConciseZh(info.zh, info.pos, '', '', word) || parsed.pureZh || info.zh;
+                        const dPos = parsed.items?.[0]?.pos || parsed.posBadgeText || info.pos || '';
+                        displayZh = (dPos ? `[${esc(dPos)}] ` : '') + esc(concise);
+                        rawZhTooltip = (info.pos ? `[${info.pos}] ` : '') + (info.zh || '');
+                    }
 
                     html += `
                         <div class="bg-white border border-emerald-200/70 p-3 rounded-xl flex items-center justify-between shadow-xs hover:border-emerald-400 hover:bg-emerald-50/30 transition min-h-[54px] cursor-pointer group" onclick="showWordDetailModal('${safeEn}')" title="點擊查看「${esc(word)}」的三態變化與詳細說明">
@@ -9305,7 +9328,7 @@
                                     <div class="font-bold text-sm text-[#1D1D1F] leading-snug">${esc(word)}</div>
                                     ${info && info.kk ? `<span class="text-[11px] text-gray-400 font-mono">${esc(info.kk)}</span>` : ''}
                                 </div>
-                                <div id="annotated-card-zh-${esc(word)}" class="text-xs text-emerald-800 leading-snug mt-0.5 break-words font-medium" title="${displayZh}">
+                                <div id="annotated-card-zh-${esc(word)}" class="text-xs text-emerald-800 leading-snug mt-0.5 break-words font-medium" title="${esc(rawZhTooltip || displayZh)}">
                                     ${displayZh || '<span class="text-gray-400">查詢翻譯中...</span>'}
                                 </div>
                             </div>
@@ -9330,9 +9353,12 @@
                         fetchWordDetails(word).then(details => {
                             const zhEl = document.getElementById(`annotated-card-zh-${word}`);
                             if (zhEl) {
-                                const fullZh = (details.pos ? `[${details.pos}] ` : '') + (details.zh || '字庫未收錄');
+                                const parsed = splitPosAndZh(details.zh, details.pos, '', '', word);
+                                const concise = getConciseZh(details.zh, details.pos, '', '', word) || parsed.pureZh || details.zh || '字庫未收錄';
+                                const dPos = parsed.items?.[0]?.pos || parsed.posBadgeText || details.pos || '';
+                                const fullZh = (dPos ? `[${dPos}] ` : '') + concise;
                                 zhEl.textContent = fullZh;
-                                zhEl.title = fullZh;
+                                zhEl.title = (details.pos ? `[${details.pos}] ` : '') + (details.zh || '');
                             }
                         });
                     }
@@ -9358,16 +9384,23 @@
                 const safeEn = (w.en || '').replace(/'/g, "\\'");
                 const isMarked = currentArticleAnnotatedWords.has((w.en || '').toLowerCase());
                 const coreInfo = findWordInDB(w.en);
-                const coreKK = (coreInfo && coreInfo.kk) ? coreInfo.kk : '';
+                const coreKK = (coreInfo && coreInfo.kk) ? coreInfo.kk : (w.kk || '');
+                const rawZh = (coreInfo && coreInfo.zh) ? coreInfo.zh : (w.zh || '');
+                const rawPos = (coreInfo && coreInfo.pos) ? coreInfo.pos : (w.pos || '');
+                const parsed = splitPosAndZh(rawZh, rawPos, '', '', w.en);
+                const concise = getConciseZh(rawZh, rawPos, '', '', w.en) || parsed.pureZh || rawZh;
+                const dPos = parsed.items?.[0]?.pos || parsed.posBadgeText || rawPos || '';
+                const displayCoreZh = (dPos ? `${esc(dPos)} ` : '') + esc(concise);
+
                 html += `
-                <div class="bg-white border border-gray-100 p-3 rounded-xl flex items-center justify-between shadow-xs cursor-pointer hover:bg-blue-50/50 hover:border-blue-200 transition min-h-[54px]" onclick="showWordDetailModal('${safeEn}', { zh: '${esc(w.zh || '')}', pos: '${esc(w.pos || '')}' })" title="點擊查看「${esc(w.en || '')}」的三態變化與詳細說明">
+                <div class="bg-white border border-gray-100 p-3 rounded-xl flex items-center justify-between shadow-xs cursor-pointer hover:bg-blue-50/50 hover:border-blue-200 transition min-h-[54px]" onclick="showWordDetailModal('${safeEn}', { zh: '${esc(rawZh || '')}', pos: '${esc(rawPos || '')}' })" title="點擊查看「${esc(w.en || '')}」的三態變化與詳細說明">
                     <div class="min-w-0 pr-2 flex-1">
                         <div class="flex items-center gap-1.5 flex-wrap">
                             <span class="font-bold text-sm text-[#1D1D1F] leading-snug">${esc(w.en || '')}</span>
                             ${coreKK ? `<span class="text-[11px] text-gray-400 font-mono">${esc(coreKK)}</span>` : ''}
                             ${isMarked ? `<span class="text-[9px] bg-emerald-100 text-emerald-700 font-bold px-1.5 py-0.5 rounded-full">已劃線</span>` : ''}
                         </div>
-                        <div class="text-xs text-[#555] leading-snug mt-0.5 break-words" title="${esc(w.zh || '')}">${esc(w.zh || '')}</div>
+                        <div class="text-xs text-[#555] leading-snug mt-0.5 break-words font-medium" title="${esc(rawZh || '')}">${displayCoreZh}</div>
                     </div>
                     <div class="flex items-center gap-1 shrink-0" onclick="event.stopPropagation()">
                         <button onclick="event.stopPropagation(); playAudio('${safeEn}')" class="text-[#0071E3] hover:bg-[#E5E5EA] p-1.5 rounded-full transition" title="朗讀發音">

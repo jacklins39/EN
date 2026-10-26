@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261026V24';
+        const APP_BUILD_VERSION = '20261026V25';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -31,18 +31,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261026V24"></script>
-    <script src="toeic_data.js?v=20261026V24"></script>
-    <script src="jh_data.js?v=20261026V24"></script>
-    <script src="listening_data.js?v=20261026V24"></script>
-    <script src="uk_phonetics_manifest.js?v=20261026V24"></script>
-    <script src="words_audio_manifest.js?v=20261026V24"></script>
-    <script src="examples_audio_manifest.js?v=20261026V24"></script>
-    <script src="zh_audio_manifest.js?v=20261026V24"></script>
-    <script src="collocations_audio_manifest.js?v=20261026V24"></script>
-    <script src="syn_ant_data.js?v=20261026V24"></script>
-    <script src="synonyms_unit8_data.js?v=20261026V24"></script>
-    <script src="examples_unit9_data.js?v=20261026V24"></script>
+    <script src="words_data.js?v=20261026V25"></script>
+    <script src="toeic_data.js?v=20261026V25"></script>
+    <script src="jh_data.js?v=20261026V25"></script>
+    <script src="listening_data.js?v=20261026V25"></script>
+    <script src="uk_phonetics_manifest.js?v=20261026V25"></script>
+    <script src="words_audio_manifest.js?v=20261026V25"></script>
+    <script src="examples_audio_manifest.js?v=20261026V25"></script>
+    <script src="zh_audio_manifest.js?v=20261026V25"></script>
+    <script src="collocations_audio_manifest.js?v=20261026V25"></script>
+    <script src="syn_ant_data.js?v=20261026V25"></script>
+    <script src="synonyms_unit8_data.js?v=20261026V25"></script>
+    <script src="examples_unit9_data.js?v=20261026V25"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -1426,9 +1426,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261026V24</span>
+                        <span id="app-version-display">版本 20261026V25</span>
                     </div>
-                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261026V24</p>
+                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261026V25</p>
                 </div>
             </div>
         </div>
@@ -1612,12 +1612,18 @@
 
         vocabularyDB.forEach(sanitizeWord);
 
-        // 建立例句 -> 單字 ID 快速對照索引表，以支援即時真人神經語音播放
+        // 建立例句 -> 單字 ID 快速對照索引表，以支援即時真人神經語音播放 (雙向支援標點與正規化引號)
         const exampleSentenceToIdMap = new Map();
         vocabularyDB.forEach(w => {
             if (w && w.id && w.example) {
-                const c = cleanText(w.example).trim().toLowerCase();
-                if (c) exampleSentenceToIdMap.set(c, w.id);
+                const c = cleanText(w.example).trim().toLowerCase().replace(/[’‘]/g, "'").replace(/[“”]/g, '"');
+                if (c) {
+                    exampleSentenceToIdMap.set(c, w.id);
+                    const noPunc = c.replace(/[.!?]+$/, '').trim();
+                    if (noPunc && !exampleSentenceToIdMap.has(noPunc)) {
+                        exampleSentenceToIdMap.set(noPunc, w.id);
+                    }
+                }
             }
         });
 
@@ -5417,6 +5423,32 @@
             };
         }
 
+        // 專屬例句音訊播放器 (100% 直連 Edge-TTS Jenny 真人例句音檔，徹底免疫引號轉義問題)
+        function playWordExampleAudio(wordId, sentenceText) {
+            unlockMobileAudio();
+            const id = Number(wordId);
+            if (id && typeof window.EXAMPLES_AUDIO_MANIFEST !== 'undefined' && window.EXAMPLES_AUDIO_MANIFEST.has(id)) {
+                try {
+                    wordAudioPlayer.pause();
+                    wordAudioPlayer.currentTime = 0;
+                } catch(e) {}
+                wordAudioPlayer.src = `audio/examples/${id}.mp3`;
+                wordAudioPlayer.playbackRate = globalSpeechRate;
+                const p = wordAudioPlayer.play();
+                if (p && typeof p.catch === 'function') {
+                    p.catch(e => {
+                        if (e && (e.name === 'AbortError' || e.code === 20)) return;
+                        console.warn("Example audio play error, fallback to TTS:", e);
+                        if (sentenceText) speakViaSynthesisOrTTS(sentenceText);
+                    });
+                }
+                return;
+            }
+            if (sentenceText) {
+                playAudio(sentenceText, null, id);
+            }
+        }
+
         function playAudio(text, onEndedCallback, wordId) {
             if (isSpeechEvalActive) {
                 if (typeof onEndedCallback === 'function') onEndedCallback();
@@ -5488,14 +5520,17 @@
                 const isWordCall = currentWord && currentWord.en && (cleanLower === cleanText(currentWord.en).trim().toLowerCase());
                 
                 if (!isWordCall) {
-                    if (wordId && currentWord && currentWord.id === wordId && currentWord.example) {
+                    if (wordId) {
+                        exampleId = wordId;
+                    } else if (currentWord && currentWord.id && currentWord.example) {
                         const currentCleanEx = cleanText(currentWord.example).trim().toLowerCase();
                         if (currentCleanEx === cleanLower || cleanLower.includes(currentCleanEx) || currentCleanEx.includes(cleanLower)) {
-                            exampleId = wordId;
+                            exampleId = currentWord.id;
                         }
                     }
-                    if (!exampleId && typeof exampleSentenceToIdMap !== 'undefined' && exampleSentenceToIdMap.has(cleanLower)) {
-                        exampleId = exampleSentenceToIdMap.get(cleanLower);
+                    if (!exampleId && typeof exampleSentenceToIdMap !== 'undefined') {
+                        const normKey = cleanLower.replace(/[’‘]/g, "'").replace(/[“”]/g, '"').trim();
+                        exampleId = exampleSentenceToIdMap.get(normKey) || exampleSentenceToIdMap.get(normKey.replace(/[.!?]+$/, ''));
                     }
                 }
 
@@ -7411,7 +7446,7 @@
                         </div>
                         <div class="space-y-1.5">
                             ${collocations.map(col => `
-                                <div class="flex items-center justify-between text-xs py-1.5 px-2.5 bg-gray-50 rounded-xl hover:bg-blue-50/60 transition group cursor-pointer active:scale-98" onclick="playAudio('${esc(col.en)}')">
+                                <div class="flex items-center justify-between text-xs py-1.5 px-2.5 bg-gray-50 rounded-xl hover:bg-blue-50/60 transition group cursor-pointer active:scale-98" data-col="${esc(col.en)}" onclick="playAudio(this.getAttribute('data-col'))">
                                     <div class="flex items-center gap-2">
                                         <button type="button" class="text-blue-500 hover:text-[#0071E3] p-0.5" title="朗讀搭配片語">
                                             <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217z" clip-rule="evenodd" /></svg>
@@ -7457,7 +7492,7 @@
                         <div class="flex items-center gap-1.5">
                             <span>💬</span><span>實用生活例句</span>
                         </div>
-                        <button type="button" class="text-xs text-[#0071E3] hover:underline flex items-center gap-1 cursor-pointer font-medium" onclick="unlockMobileAudio(); playAudio('${esc(w.example)}')">
+                        <button id="btn-detail-example-audio" type="button" class="text-xs text-[#0071E3] hover:underline flex items-center gap-1 cursor-pointer font-medium" title="聆聽美式真人例句發音">
                             <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd" /></svg>
                             <span>聆聽整句發音</span>
                         </button>
@@ -7557,6 +7592,11 @@
                 } else {
                     playWordAccent(w.en, getPreferredVoiceAccent());
                 }
+            });
+            document.getElementById('btn-detail-example-audio')?.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                playWordExampleAudio(w.id, w.example);
             });
 
             // 事件綁定：例句點擊查單字

@@ -9,7 +9,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261026V9';
+        const APP_BUILD_VERSION = '20261026V10';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -30,18 +30,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261026V9"></script>
-    <script src="toeic_data.js?v=20261026V9"></script>
-    <script src="jh_data.js?v=20261026V9"></script>
-    <script src="listening_data.js?v=20261026V9"></script>
-    <script src="uk_phonetics_manifest.js?v=20261026V9"></script>
-    <script src="words_audio_manifest.js?v=20261026V9"></script>
-    <script src="examples_audio_manifest.js?v=20261026V9"></script>
-    <script src="zh_audio_manifest.js?v=20261026V9"></script>
-    <script src="collocations_audio_manifest.js?v=20261026V9"></script>
-    <script src="syn_ant_data.js?v=20261026V9"></script>
-    <script src="synonyms_unit8_data.js?v=20261026V9"></script>
-    <script src="examples_unit9_data.js?v=20261026V9"></script>
+    <script src="words_data.js?v=20261026V10"></script>
+    <script src="toeic_data.js?v=20261026V10"></script>
+    <script src="jh_data.js?v=20261026V10"></script>
+    <script src="listening_data.js?v=20261026V10"></script>
+    <script src="uk_phonetics_manifest.js?v=20261026V10"></script>
+    <script src="words_audio_manifest.js?v=20261026V10"></script>
+    <script src="examples_audio_manifest.js?v=20261026V10"></script>
+    <script src="zh_audio_manifest.js?v=20261026V10"></script>
+    <script src="collocations_audio_manifest.js?v=20261026V10"></script>
+    <script src="syn_ant_data.js?v=20261026V10"></script>
+    <script src="synonyms_unit8_data.js?v=20261026V10"></script>
+    <script src="examples_unit9_data.js?v=20261026V10"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -122,7 +122,16 @@
             justify-content: center;
             align-items: center;
             padding: 0.85rem 1rem;
-            overflow: hidden;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            -webkit-overflow-scrolling: touch;
+        }
+        .flip-card-front::-webkit-scrollbar {
+            width: 3px;
+        }
+        .flip-card-front::-webkit-scrollbar-thumb {
+            background-color: rgba(148, 163, 184, 0.5);
+            border-radius: 9999px;
         }
 
         /* 背面防溢出與平滑滾動：改用 flex-start 避免頂部內容被滾動截斷 */
@@ -791,6 +800,16 @@
                             </span>
                         </div>
                         <p id="card-front-hint" class="text-gray-400 text-[11px] sm:text-xs mt-1">點擊卡片翻面看解答</p>
+
+                        <!-- 拼寫填空專屬：例句語境填空與首末字母骨架提示 -->
+                        <div id="card-fill-cloze-container" class="hidden w-full max-w-md mt-2 text-left bg-blue-50/50 rounded-xl p-2.5 sm:p-3 border border-blue-100 shadow-2xs">
+                            <div class="flex items-center justify-between text-[10px] sm:text-[11px] text-[#0071E3] font-semibold mb-1">
+                                <span class="flex items-center gap-1"><span>💬</span><span>例句語境填空</span></span>
+                                <span id="card-fill-scaffold-badge" class="font-mono bg-blue-100/70 text-blue-700 px-2 py-0.5 rounded-full border border-blue-200/60 font-bold"></span>
+                            </div>
+                            <div id="card-fill-cloze-sentence" class="text-slate-800 text-xs sm:text-sm leading-relaxed font-medium"></div>
+                            <div id="card-fill-cloze-zh" class="text-slate-500 text-[11px] sm:text-xs mt-1"></div>
+                        </div>
                     </div>
                     <!-- 背面 (中文與例句 - 支援完整滾動防截斷) -->
                     <div class="flip-card-back">
@@ -1332,9 +1351,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261026V9</span>
+                        <span id="app-version-display">版本 20261026V10</span>
                     </div>
-                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261026V9</p>
+                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261026V10</p>
                 </div>
             </div>
         </div>
@@ -3877,9 +3896,88 @@
             }
         }
 
+        // 拼寫填空專用：計算首末字母骨架 (例如 low ➔ l _ w, apple ➔ a _ _ _ e)
+        function getLetterScaffold(word) {
+            if (!word) return { scaffold: '', first: '', last: '', len: 0 };
+            const clean = word.trim();
+            const parts = clean.split(/(\s+|-)/);
+            
+            const scaffoldParts = parts.map(part => {
+                if (/^(\s+|-)$/.test(part)) return part;
+                const chars = part.split('');
+                if (chars.length === 1) return (parts.length > 1) ? chars[0] : '_';
+                if (chars.length === 2) return chars[0] + ' _';
+                const first = chars[0];
+                const last = chars[chars.length - 1];
+                const mid = chars.slice(1, -1).map(c => /[a-zA-Z]/.test(c) ? '_' : c).join(' ');
+                return first + ' ' + mid + ' ' + last;
+            });
+
+            const firstChar = clean.match(/[a-zA-Z]/)?.[0] || '';
+            const lastChar = clean.match(/[a-zA-Z](?=[^a-zA-Z]*$)/)?.[0] || '';
+            const letterCount = (clean.match(/[a-zA-Z]/g) || []).length;
+
+            return {
+                scaffold: scaffoldParts.join(''),
+                first: firstChar,
+                last: lastChar,
+                len: letterCount
+            };
+        }
+
+        // 拼寫填空專用：將例句中的目標單字替換為挖空首末提示骨架
+        function renderFillSentenceCloze(sentence, targetEn, scaffoldText) {
+            if (!sentence) return '';
+            const clean = sentence.trim();
+            const variants = typeof getTargetWordVariants === 'function' ? getTargetWordVariants(targetEn) : new Set();
+            const sortedVars = Array.from(variants).sort((a, b) => b.length - a.length);
+
+            let text = clean;
+            let replaced = false;
+
+            // 1. 優先匹配複合詞與片語
+            for (const v of sortedVars) {
+                if (v.includes(' ') || v.includes('-')) {
+                    const patStr = '(?<![a-zA-Z0-9])(' + v.replace(/[- ]+/g, '[- ]+') + ')(?![a-zA-Z0-9])';
+                    try {
+                        const reg = new RegExp(patStr, 'i');
+                        if (reg.test(text)) {
+                            text = text.replace(reg, `<span id="fill-cloze-target" class="text-[#0071E3] font-mono font-bold bg-blue-100/90 px-2 py-0.5 rounded border-b-2 border-[#0071E3] tracking-widest">${esc(scaffoldText)}</span>`);
+                            replaced = true;
+                            break;
+                        }
+                    } catch(e) {}
+                }
+            }
+
+            // 2. 匹配單字與時態變體
+            if (!replaced) {
+                const wordRegex = /(?<![a-zA-Z0-9])([a-zA-Z]+(?:['’][a-zA-Z]+)?(?:\.[a-zA-Z]+)*\.?)(?![a-zA-Z0-9])/g;
+                text = text.replace(wordRegex, (match) => {
+                    if (replaced) return match;
+                    const norm = match.toLowerCase().replace(/['’.]/g, '');
+                    if (variants.has(norm) || variants.has(match.toLowerCase())) {
+                        replaced = true;
+                        return `<span id="fill-cloze-target" class="text-[#0071E3] font-mono font-bold bg-blue-100/90 px-2 py-0.5 rounded border-b-2 border-[#0071E3] tracking-widest">${esc(scaffoldText)}</span>`;
+                    }
+                    return match;
+                });
+            }
+
+            // 3. 備援直接比對
+            if (!replaced) {
+                const directRegex = new RegExp('\\b' + targetEn.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&') + '\\b', 'i');
+                text = text.replace(directRegex, `<span id="fill-cloze-target" class="text-[#0071E3] font-mono font-bold bg-blue-100/90 px-2 py-0.5 rounded border-b-2 border-[#0071E3] tracking-widest">${esc(scaffoldText)}</span>`);
+            }
+
+            return text;
+        }
+
         // 依題型改變卡片正面
         function applyFront() {
             const t = currentQuizType, w = currentWord;
+            const clozeContainer = document.getElementById('card-fill-cloze-container');
+            if (clozeContainer && t !== 'fill') clozeContainer.classList.add('hidden');
             const wordEl = document.getElementById('card-word');
             const kkEl = document.getElementById('card-kk');
             const hintEl = document.getElementById('card-front-hint');
@@ -3916,8 +4014,31 @@
                 wordEl.className = mid; 
                 wordEl.innerText = conciseZh; 
                 const rf = document.getElementById('card-phonetic-row'); if (rf) rf.style.display = 'none';
-                hintEl.innerHTML = parsed.pos ? `<span class="inline-block bg-blue-50 text-[#0071E3] border border-blue-200 text-xs px-2 py-0.5 rounded-full font-mono lowercase mr-1.5">${parsed.pos}</span> 看中文 ➜ 鍵盤輸入英文拼寫` : '看中文 ➜ 鍵盤輸入英文拼寫';
+                const p = parsed.items?.[0]?.pos || parsed.posBadgeText || '';
+                hintEl.innerHTML = p ? `<span class="inline-block bg-blue-50 text-[#0071E3] border border-blue-200 text-xs px-2 py-0.5 rounded-full font-mono lowercase mr-1.5">${esc(p.toLowerCase())}</span> 拼寫練習 ➜ 依語境填空` : '拼寫練習 ➜ 依語境填空';
                 audioBtn.classList.add('hidden');
+
+                // 例句語境與首末字母骨架渲染
+                const clozeContainer = document.getElementById('card-fill-cloze-container');
+                if (clozeContainer) {
+                    const sc = getLetterScaffold(w.en);
+                    const scaffoldBadge = document.getElementById('card-fill-scaffold-badge');
+                    const sentenceEl = document.getElementById('card-fill-cloze-sentence');
+                    const sentenceZhEl = document.getElementById('card-fill-cloze-zh');
+                    
+                    if (scaffoldBadge) {
+                        scaffoldBadge.innerText = `首末: ${sc.first}...${sc.last} (${sc.len} 字母)`;
+                    }
+                    if (sentenceEl && w.example) {
+                        sentenceEl.innerHTML = renderFillSentenceCloze(w.example, w.en, sc.scaffold);
+                    } else if (sentenceEl) {
+                        sentenceEl.innerHTML = `<span id="fill-cloze-target" class="text-[#0071E3] font-mono font-bold bg-blue-100/90 px-2.5 py-1 rounded-lg border border-blue-300 tracking-widest text-base">${esc(sc.scaffold)}</span>`;
+                    }
+                    if (sentenceZhEl) {
+                        sentenceZhEl.innerText = w.exampleZh ? cleanText(w.exampleZh) : '';
+                    }
+                    clozeContainer.classList.remove('hidden');
+                }
             } else if (t === 'card') {
                 hintEl.innerText = '翻牌記憶 ➜ 點擊卡片翻面看解答';
             }
@@ -4144,30 +4265,78 @@
         }
 
         function setupFillMode() {
+            if (!currentWord || !currentWord.en) return;
+            const sc = getLetterScaffold(currentWord.en);
+            
+            // 骨架槽位 HTML
+            const scaffoldHtml = sc.scaffold.split(' ').map(char => {
+                if (char === '_') {
+                    return `<span class="inline-block w-4 sm:w-5 border-b-2 border-slate-400 mx-0.5 text-center text-slate-400 font-mono select-none">_</span>`;
+                }
+                return `<span class="inline-block w-4 sm:w-5 text-center text-[#0071E3] font-bold font-mono mx-0.5 select-none">${esc(char)}</span>`;
+            }).join('');
+
             quizOptions.innerHTML = `
-                <input id="fill-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="輸入英文單字，按 Enter 送出" class="w-full border-2 border-gray-200 focus:border-[#0071E3] rounded-2xl px-4 py-3 text-xl outline-none text-center font-medium tracking-wide">
-                <div id="fill-msg" class="text-center text-base font-medium min-h-[1.5rem]"></div>
-                <div class="grid grid-cols-2 gap-3">
-                    <button id="btn-fill-skip" class="btn-action bg-gray-100 hover:bg-gray-200 text-gray-600 font-medium py-3 rounded-2xl border-0 border-gray-200">不知道 (看答案)</button>
-                    <button id="btn-fill-submit" class="btn-action bg-[#0071E3] hover:bg-[#0077ED] text-white font-medium py-3 rounded-2xl shadow">送出 ↵</button>
-                </div>`;
+                <div class="w-full space-y-2.5">
+                    <div class="flex items-center justify-between px-1">
+                        <span class="text-xs text-slate-500 font-medium">🔤 字母骨架提示：</span>
+                        <span class="text-[11px] sm:text-xs font-mono font-bold text-[#0071E3] bg-blue-50 px-2 py-0.5 rounded-full border border-blue-100">首 ${sc.first} / 尾 ${sc.last} (${sc.len} 字母)</span>
+                    </div>
+                    <div class="flex items-center justify-center py-2 px-3 bg-white border border-blue-100/90 rounded-xl shadow-2xs font-mono text-base sm:text-lg tracking-wider" id="fill-scaffold-row">
+                        ${scaffoldHtml}
+                    </div>
+                    <input id="fill-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="請輸入完整英文 (如 ${sc.first}...${sc.last})" class="w-full border-2 border-slate-200 focus:border-[#0071E3] focus:ring-2 focus:ring-blue-100 rounded-2xl px-4 py-2.5 sm:py-3 text-lg sm:text-xl outline-none text-center font-medium font-mono tracking-wide transition-all bg-white shadow-2xs">
+                    <div id="fill-msg" class="text-center text-xs sm:text-sm font-semibold min-h-[1.4rem]"></div>
+                    <div class="grid grid-cols-2 gap-2.5">
+                        <button id="btn-fill-skip" class="btn-action bg-slate-100 hover:bg-slate-200/80 text-slate-600 font-semibold py-2.5 sm:py-3 rounded-2xl border border-slate-200 text-xs sm:text-sm cursor-pointer active:scale-95 transition-all">不知道 (看解答)</button>
+                        <button id="btn-fill-submit" class="btn-action bg-gradient-to-r from-[#0071E3] to-[#005BB5] hover:opacity-95 text-white font-semibold py-2.5 sm:py-3 rounded-2xl shadow-sm text-xs sm:text-sm cursor-pointer active:scale-95 transition-all">送出 ↵</button>
+                    </div>
+                </div>
+            `;
+
             const input = document.getElementById('fill-input');
             const msg = document.getElementById('fill-msg');
-            const norm = s => s.toLowerCase().replace(/\s+/g, ' ').trim();
+            const clozeTarget = document.getElementById('fill-cloze-target');
+            const norm = s => String(s || '').toLowerCase().replace(/[^a-z0-9\-']/g, '').trim();
+
             const submit = (giveUp) => {
                 if (isShowingAnswer) return;
                 const val = norm(input.value);
                 if (!giveUp && !val) return;
                 isShowingAnswer = true;
-                const ok = !giveUp && val === norm(currentWord.en);
+
+                const targetNorm = norm(currentWord.en);
+                const variants = typeof getTargetWordVariants === 'function' ? getTargetWordVariants(currentWord.en) : new Set();
+                const ok = !giveUp && (val === targetNorm || variants.has(val));
+
                 input.disabled = true;
-                input.classList.add(ok ? 'border-green-500' : 'border-red-500', ok ? 'bg-green-50' : 'bg-red-50');
-                msg.innerHTML = ok ? '<span class="text-[#0071E3]">✅ 正確！</span>'
-                    : `<span class="text-[#FF3B30]">❌ 正確答案：</span><span class="text-[#0071E3]">${esc(currentWord.en)}</span>`;
+                if (ok) {
+                    input.classList.remove('border-slate-200');
+                    input.classList.add('border-emerald-500', 'bg-emerald-50', 'text-emerald-800');
+                    msg.innerHTML = `<span class="text-emerald-600 font-bold inline-flex items-center gap-1"><span>✅</span> 太棒了！拼寫正確：<span class="font-mono text-emerald-800 font-extrabold text-sm sm:text-base">${esc(currentWord.en)}</span></span>`;
+                    if (clozeTarget) {
+                        clozeTarget.className = 'text-emerald-700 font-mono font-bold bg-emerald-100/90 px-2 py-0.5 rounded border border-emerald-300';
+                        clozeTarget.innerText = currentWord.en;
+                    }
+                } else {
+                    input.classList.remove('border-slate-200');
+                    input.classList.add('border-rose-500', 'bg-rose-50', 'text-rose-800');
+                    msg.innerHTML = `<span class="text-rose-600 font-bold inline-flex items-center gap-1"><span>❌</span> 正確拼寫：<span class="text-[#0071E3] font-mono font-extrabold text-sm sm:text-base">${esc(currentWord.en)}</span></span>`;
+                    if (clozeTarget) {
+                        clozeTarget.className = 'text-rose-600 font-mono font-bold bg-rose-100/90 px-2 py-0.5 rounded border border-rose-300';
+                        clozeTarget.innerText = currentWord.en;
+                    }
+                }
+
+                // 揭曉答案時播放單字真人音訊，強化語音記憶
+                unlockMobileAudio();
+                playAudio(currentWord.en);
+
                 document.getElementById('btn-fill-skip').disabled = true;
                 document.getElementById('btn-fill-submit').disabled = true;
                 finishQuizAnswer(ok);
             };
+
             input.addEventListener('keydown', (e) => {
                 if (e.key === 'Enter') { e.preventDefault(); submit(false); }
             });

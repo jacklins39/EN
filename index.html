@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261026V29';
+        const APP_BUILD_VERSION = '20261026V30';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -31,19 +31,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261026V29"></script>
-    <script src="toeic_data.js?v=20261026V29"></script>
-    <script src="jh_data.js?v=20261026V29"></script>
-    <script src="listening_data.js?v=20261026V29"></script>
-    <script src="listening_words_data.js?v=20261026V29"></script>
-    <script src="uk_phonetics_manifest.js?v=20261026V29"></script>
-    <script src="words_audio_manifest.js?v=20261026V29"></script>
-    <script src="examples_audio_manifest.js?v=20261026V29"></script>
-    <script src="zh_audio_manifest.js?v=20261026V29"></script>
-    <script src="collocations_audio_manifest.js?v=20261026V29"></script>
-    <script src="syn_ant_data.js?v=20261026V29"></script>
-    <script src="synonyms_unit8_data.js?v=20261026V29"></script>
-    <script src="examples_unit9_data.js?v=20261026V29"></script>
+    <script src="words_data.js?v=20261026V30"></script>
+    <script src="toeic_data.js?v=20261026V30"></script>
+    <script src="jh_data.js?v=20261026V30"></script>
+    <script src="listening_data.js?v=20261026V30"></script>
+    <script src="listening_words_data.js?v=20261026V30"></script>
+    <script src="uk_phonetics_manifest.js?v=20261026V30"></script>
+    <script src="words_audio_manifest.js?v=20261026V30"></script>
+    <script src="examples_audio_manifest.js?v=20261026V30"></script>
+    <script src="zh_audio_manifest.js?v=20261026V30"></script>
+    <script src="collocations_audio_manifest.js?v=20261026V30"></script>
+    <script src="syn_ant_data.js?v=20261026V30"></script>
+    <script src="synonyms_unit8_data.js?v=20261026V30"></script>
+    <script src="examples_unit9_data.js?v=20261026V30"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -544,9 +544,7 @@
                             <option value="4">單元 4 (3001 - 4000)</option>
                             <option value="5">單元 5 (4001 - 5000)</option>
                             <option value="6">單元 6 (5001 - 6000)</option>
-                            <option value="7">單元 7 (6001 - 6571)</option>
-                            <option value="8">單元 8 (權威同反義詞特訓 1091 字)</option>
-                            <option value="9">單元 9 (例句核心實戰詞彙 953 字)</option>
+                            <option value="7">單元 7 (6001 - 9053 · 2611 字)</option>
                         </optgroup>
                         <optgroup label="💼 全新制多益 3000">
                             <option value="11">多益單元 1 (1 - 1000)</option>
@@ -1636,7 +1634,12 @@
         const SRS_INTERVALS = [0, 1, 3, 7, 14, 30]; 
         const MAX_LEVEL = 5;
         const VALID_NEW_WORDS_COUNTS = [5, 10, 15, 20, 30, 50];
-        const VALID_UNIT_IDS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 17, 18, 19];
+        const VALID_UNIT_IDS = [1, 2, 3, 4, 5, 6, 7, 10, 11, 12, 13, 17, 18, 19];
+        function normalizeCurrentUnit(u) {
+            const num = parseInt(u, 10);
+            if (num === 8 || num === 9) return 7; // 原單元 8、9 已合併移至單元 7
+            return VALID_UNIT_IDS.includes(num) ? num : 1;
+        }
         const VALID_SPEECH_RATES = ['0.75', '0.85', '1.0', '1.25', '1.5'];
 
         function normalizeNewWordsPerDay(val) {
@@ -1645,8 +1648,7 @@
         }
 
         function normalizeUnitId(val) {
-            const n = parseInt(val, 10);
-            return VALID_UNIT_IDS.includes(n) ? n : 1;
+            return normalizeCurrentUnit(val);
         }
 
         let NEW_WORDS_PER_DAY = normalizeNewWordsPerDay(localStorage.getItem('newWordsPerDay'));
@@ -2337,11 +2339,17 @@
                         });
                     
                     // 自動過濾已收錄於官方題庫 (unit 1~9) 的自訂單字，防止重複
+                    // 自動過濾已收錄於全庫任一官方字庫 (高中、多益、國中、聽力) 的自訂單字，確保自訂字庫前提不在其他字庫
                     const officialWordsSet = new Set(
-                        (typeof externalVocabularyDB !== 'undefined' ? externalVocabularyDB : [])
+                        (typeof vocabularyDB !== 'undefined' ? vocabularyDB : (typeof externalVocabularyDB !== 'undefined' ? externalVocabularyDB : []))
                             .filter(w => w && w.unit !== 10 && w.en)
                             .map(w => w.en.trim().toLowerCase())
                     );
+                    if (typeof listeningArticlesDB !== 'undefined') {
+                        listeningArticlesDB.forEach(a => (a.vocabulary || []).forEach(v => {
+                            if (v && v.en) officialWordsSet.add(v.en.trim().toLowerCase());
+                        }));
+                    }
                     const cloudInitialLen = customWordsDB.length;
                     customWordsDB = customWordsDB.filter(cw => !officialWordsSet.has((cw.en || '').trim().toLowerCase()));
 
@@ -2359,7 +2367,7 @@
                         const syncBanner = document.getElementById('sync-banner');
                         if (syncBanner) {
                             const userLabel = currentUser && currentUser.email ? currentUser.email.split('@')[0] : '已登入';
-                            syncBanner.innerText = `☁️ 雲端已同步 (${userLabel} · 單元 ${currentUnit} · 第 ${virtualCurrentDay} 天)`;
+                            syncBanner.innerText = `☁️ 雲端已同步 (${userLabel} · ${getUnitShortName(currentUnit)} · 第 ${virtualCurrentDay} 天)`;
                             syncBanner.className = "bg-green-100 text-green-800 text-xs text-center py-1 font-medium";
                             syncBanner.classList.remove('hidden');
                             setTimeout(() => syncBanner.classList.add('hidden'), 3500);
@@ -2572,11 +2580,17 @@
             try {
                 const savedCustom = JSON.parse(localStorage.getItem('vocab_custom_words') || '[]');
                 if (Array.isArray(savedCustom)) {
+                    // 自動過濾已收錄於全庫任一官方字庫 (高中、多益、國中、聽力) 的自訂單字，確保自訂字庫前提不在其他字庫
                     const officialWordsSet = new Set(
-                        (typeof externalVocabularyDB !== 'undefined' ? externalVocabularyDB : [])
+                        (typeof vocabularyDB !== 'undefined' ? vocabularyDB : (typeof externalVocabularyDB !== 'undefined' ? externalVocabularyDB : []))
                             .filter(w => w && w.unit !== 10 && w.en)
                             .map(w => w.en.trim().toLowerCase())
                     );
+                    if (typeof listeningArticlesDB !== 'undefined') {
+                        listeningArticlesDB.forEach(a => (a.vocabulary || []).forEach(v => {
+                            if (v && v.en) officialWordsSet.add(v.en.trim().toLowerCase());
+                        }));
+                    }
                     customWordsDB = savedCustom.filter(cw => !officialWordsSet.has((cw.en || '').trim().toLowerCase()));
                     for (let i = vocabularyDB.length - 1; i >= 0; i--) {
                         if (vocabularyDB[i].unit === 10) vocabularyDB.splice(i, 1);
@@ -2942,8 +2956,7 @@
             const unitBadge = document.getElementById('lobby-current-unit-badge');
             const unitSel = document.getElementById('unit-selector');
             if (unitBadge && unitSel) {
-                const optText = unitSel.options[unitSel.selectedIndex]?.text || `單元 ${currentUnit}`;
-                unitBadge.innerText = optText.split(' ')[0] || `單元 ${currentUnit}`;
+                unitBadge.innerText = getUnitShortName(currentUnit);
             }
 
             const plan = getDailyPlan(currentUnit);
@@ -7324,13 +7337,38 @@
             return result.slice(0, 4);
         }
 
+        // 全局統一單元命名映射配置 (單一真實來源 Single Source of Truth)
+        const UNIT_CONFIG = {
+            1:  { badge: '高中 7000 單 (單元 1)', short: '單元 1', color: 'bg-blue-50 text-[#0071E3] border-blue-200' },
+            2:  { badge: '高中 7000 單 (單元 2)', short: '單元 2', color: 'bg-blue-50 text-[#0071E3] border-blue-200' },
+            3:  { badge: '高中 7000 單 (單元 3)', short: '單元 3', color: 'bg-blue-50 text-[#0071E3] border-blue-200' },
+            4:  { badge: '高中 7000 單 (單元 4)', short: '單元 4', color: 'bg-blue-50 text-[#0071E3] border-blue-200' },
+            5:  { badge: '高中 7000 單 (單元 5)', short: '單元 5', color: 'bg-blue-50 text-[#0071E3] border-blue-200' },
+            6:  { badge: '高中 7000 單 (單元 6)', short: '單元 6', color: 'bg-blue-50 text-[#0071E3] border-blue-200' },
+            7:  { badge: '高中 7000 單 (單元 7)', short: '單元 7', color: 'bg-blue-50 text-[#0071E3] border-blue-200' },
+            11: { badge: '全新制多益 (單元 1)', short: '多益單元 1', color: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
+            12: { badge: '全新制多益 (單元 2)', short: '多益單元 2', color: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
+            13: { badge: '全新制多益 (單元 3)', short: '多益單元 3', color: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
+            17: { badge: '國中基礎 2000 (單元 1)', short: '國中單元 1', color: 'bg-amber-50 text-amber-700 border-amber-200' },
+            18: { badge: '國中基礎 2000 (單元 2)', short: '國中單元 2', color: 'bg-amber-50 text-amber-700 border-amber-200' },
+            19: { badge: '🎧 聽力新單字庫', short: '聽力新單字', color: 'bg-indigo-50 text-indigo-700 border-indigo-200' },
+            10: { badge: '✏️ 自訂生詞庫', short: '自訂生詞庫', color: 'bg-purple-50 text-purple-700 border-purple-200' }
+        };
+
         function getUnitBadgeInfo(unit) {
-            if (unit >= 1 && unit <= 9) return { name: `高中 7000 單字 (單元 ${unit})`, color: 'bg-blue-50 text-[#0071E3] border-blue-200' };
-            if (unit >= 11 && unit <= 13) return { name: `TOEIC 多益核心 (單元 ${unit})`, color: 'bg-emerald-50 text-emerald-700 border-emerald-200' };
-            if (unit >= 17 && unit <= 18) return { name: `國中基礎 1200 (單元 ${unit})`, color: 'bg-amber-50 text-amber-700 border-amber-200' };
-            if (unit === 19) return { name: `🎧 聽力新單字庫 (單元 19)`, color: 'bg-indigo-50 text-indigo-700 border-indigo-200' };
-            if (unit === 10) return { name: '自訂字庫', color: 'bg-purple-50 text-purple-700 border-purple-200' };
+            unit = Number(unit);
+            if (unit === 8 || unit === 9) unit = 7; // 原單元 8、9 歸屬至單元 7
+            const conf = UNIT_CONFIG[unit];
+            if (conf) return { name: conf.badge, color: conf.color };
             return { name: `單元 ${unit}`, color: 'bg-gray-100 text-gray-700 border-gray-200' };
+        }
+
+        function getUnitShortName(unit) {
+            unit = Number(unit);
+            if (unit === 8 || unit === 9) unit = 7;
+            const conf = UNIT_CONFIG[unit];
+            if (conf) return conf.short;
+            return `單元 ${unit}`;
         }
 
         async function showWordDetailModal(word, fallbackData = null) {
@@ -7526,7 +7564,7 @@
                     </div>
                     ${(detectedUnit || builtinUnitOf(w.en)) ? `<div class="text-center text-[#86868B] text-xs py-1">收錄於：${getUnitBadgeInfo(detectedUnit || builtinUnitOf(w.en)).name}</div>` : `
                     <button id="btn-detail-add-custom" class="w-full text-center bg-green-50 text-[#0071E3] hover:bg-green-100 font-medium py-2 rounded-xl text-xs border border-green-200 transition-colors shadow-2xs">
-                        ➕ 將此單字加入「自訂字庫 (單元 10)」
+                        ➕ 將此單字加入「自訂生詞庫」
                     </button>`}
                 </div>
             `;
@@ -7630,7 +7668,7 @@
                 btnAddCustom.addEventListener('click', () => {
                     const success = addCustomWord(w.en, w.kk || '', parsed.pureZh || w.zh, parsed.pos || '');
                     if (success) {
-                        btnAddCustom.innerText = '✅ 已加入自訂字庫 (單元 10)';
+                        btnAddCustom.innerText = '✅ 已加入自訂生詞庫';
                         btnAddCustom.disabled = true;
                         btnAddCustom.classList.add('opacity-50', 'cursor-not-allowed');
                     }
@@ -7659,7 +7697,7 @@
                 <div class="flex flex-col gap-2">
                     <a href="https://tw.dictionary.search.yahoo.com/search?p=${encodeURIComponent(word)}" target="_blank" rel="noopener noreferrer" class="text-center bg-purple-50 text-purple-700 hover:bg-purple-100 font-medium py-2 rounded-xl text-sm border-0 border-purple-200">在 Yahoo 字典查看</a>
                     <a href="https://translate.google.com/?sl=en&tl=zh-TW&text=${encodeURIComponent(word)}&op=translate" target="_blank" rel="noopener noreferrer" class="text-center bg-[#E5E5EA] text-[#0071E3] hover:bg-indigo-100 font-medium py-2 rounded-xl text-sm border-0 border-[#C3D0B0]">使用 Google 翻譯</a>
-                    ${builtinUnitOf(word) ? `<div class="text-center text-[#86868B] text-sm py-2">此字已在內建字庫 (單元 ${builtinUnitOf(word)})，不需加入自訂</div>` : `
+                    ${builtinUnitOf(word) ? `<div class="text-center text-[#86868B] text-sm py-2">此字已在內建字庫 (${getUnitBadgeInfo(builtinUnitOf(word)).name})，不需加入自訂</div>` : `
                     <input id="input-custom-zh" type="text" maxlength="100" value="${esc(def)}" placeholder="中文說明 (可自行修改)" class="border-0 border-green-200 rounded-xl px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-green-300">
                     <button id="btn-add-custom-word" class="text-center bg-green-50 text-[#0071E3] hover:bg-[#E5E5EA] font-medium py-2 rounded-xl text-sm border-0 border-green-200 transition-colors shadow-sm">
                         ➕ 將此單字加入「自訂字庫」
@@ -7673,7 +7711,7 @@
                     const zhInput = (document.getElementById('input-custom-zh').value || '').trim();
                     const success = addCustomWord(word, phonetic, zhInput || def);
                     if (success) {
-                        btnAdd.innerText = '✅ 已加入單元 10';
+                        btnAdd.innerText = '✅ 已加入自訂生詞庫';
                         btnAdd.disabled = true;
                         btnAdd.classList.add('opacity-50', 'cursor-not-allowed');
                     }
@@ -7719,7 +7757,7 @@
                     }
                     const success = addCustomWord(word, '', zhInput || '常用詞彙', detectedPos);
                     if (success) {
-                        btnAdd.innerText = '✅ 已加入單元 10';
+                        btnAdd.innerText = '✅ 已加入自訂生詞庫';
                         btnAdd.disabled = true;
                         btnAdd.classList.add('opacity-50', 'cursor-not-allowed');
                     }
@@ -7860,12 +7898,14 @@
         }
 
         function getUnitDisplayName(unit) {
+            unit = Number(unit);
+            if (unit === 8 || unit === 9) unit = 7;
             const unitSel = document.getElementById('unit-selector');
             if (unitSel) {
                 const opt = unitSel.querySelector(`option[value="${unit}"]`);
                 if (opt) return opt.textContent.trim();
             }
-            return `單元 ${unit}`;
+            return getUnitBadgeInfo(unit).name;
         }
 
         function switchAnalysisScope(scope) {
@@ -8299,7 +8339,16 @@
             if (!word) return 0;
             const lw = String(word).trim().toLowerCase();
             const hit = vocabularyDB.find(w => w.unit !== 10 && w.en && w.en.toLowerCase() === lw);
-            return hit ? (hit.unit || 1) : 0;
+            if (hit) return (hit.unit === 8 || hit.unit === 9) ? 7 : (hit.unit || 1);
+            if (typeof listeningWordsDB !== 'undefined') {
+                const lHit = listeningWordsDB.find(w => w.en && w.en.toLowerCase() === lw);
+                if (lHit) return 19;
+            }
+            if (typeof listeningArticlesDB !== 'undefined') {
+                const inListening = listeningArticlesDB.some(a => (a.vocabulary || []).some(v => v.en && v.en.toLowerCase() === lw));
+                if (inListening) return 19;
+            }
+            return 0;
         }
 
         // 加入自訂單字
@@ -8322,15 +8371,15 @@
                 alert(`自訂字庫最多 ${MAX_CUSTOM_WORDS} 字。`);
                 return false;
             }
-            // 只允許加入「非內建字庫 (單元 1-9)」的單字
+            // 只允許加入「不在任何其他官方字庫 (高中 1~7、多益、國中、聽力新單字)」的單字 (前提不在其他字庫)
             const bu = builtinUnitOf(en);
             if (bu) {
-                alert(`這個單字已在 ${getUnitBadgeInfo(bu).name}，請直接至該單元學習。`);
+                alert(`這個單字已收錄於「${getUnitBadgeInfo(bu).name}」，不可重複加入自訂字庫。請直接至該題庫學習！`);
                 return false;
             }
-            // 檢查是否已經在「自訂字庫 (單元 10)」裡面了
+            // 檢查是否已經在「自訂生詞庫」裡面了
             if (customWordsDB.find(w => w.en.toLowerCase() === en.toLowerCase())) {
-                alert('這個單字已經在你的自訂字庫裡囉！');
+                alert('這個單字已經在你的自訂生詞庫裡囉！');
                 return false;
             }
 

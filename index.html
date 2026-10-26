@@ -1633,8 +1633,8 @@
             return 20;
         }
 
-        // 解析詞性與純中文：將多詞性乾淨拆分，並嚴格依 (名詞 -> 動詞 -> 形容詞 -> 副詞 -> 其他) 權重排序
-        function splitPosAndZh(zhStr, explicitPos = '') {
+        // 解析詞性與純中文：高頻常用詞性優先在前，並智慧匹配例句語境 (將吻合例句的詞性置頂)
+        function splitPosAndZh(zhStr, explicitPos = '', exampleZh = '', exampleEn = '', targetEn = '') {
             let pos = (explicitPos || '').trim();
             let pureZh = (zhStr || '').trim();
             if (!pureZh) return { pos: '', posBadgeText: '', pureZh: '', formattedZh: '', items: [] };
@@ -1642,7 +1642,7 @@
             const posRegex = /(?:^|[；;]\s*)((?:adj|adv|prep|conj|pron|int|num|det|art|aux|modal\s*v|ph|vi|vt|[avnd])\.)\s*/gi;
             const matches = [...pureZh.matchAll(posRegex)];
             if (matches && matches.length > 0) {
-                const items = [];
+                let items = [];
                 for (let i = 0; i < matches.length; i++) {
                     const m = matches[i];
                     let p = m[1].toLowerCase().trim();
@@ -1658,7 +1658,70 @@
                     }
                 }
                 if (items.length > 0) {
-                    items.sort((a, b) => getPosRank(a.pos) - getPosRank(b.pos));
+                    // 若有提供例句，智慧判斷匹配之詞性並置頂
+                    if (items.length > 1 && (exampleZh || exampleEn)) {
+                        const exZhClean = String(exampleZh || '').replace(/[^\p{L}\p{N}]/gu, '');
+                        const exEnLower = ' ' + String(exampleEn || '').toLowerCase() + ' ';
+                        const tLower = String(targetEn || '').toLowerCase().trim();
+                        
+                        let bestIdx = 0;
+                        let maxScore = 15; // 預設第0項（高頻原序）基礎分
+                        
+                        items.forEach((it, idx) => {
+                            let score = (idx === 0) ? 15 : 0;
+                            const pLower = it.pos.toLowerCase();
+                            // 中文釋義比對
+                            const cleanedText = it.text.replace(/[\(（][^）\)]*[\)）]/g, '');
+                            const terms = cleanedText.split(/[,，、/；;\s…….]+/).filter(Boolean);
+                            for (const term of terms) {
+                                const t = term.trim();
+                                if (!t) continue;
+                                if (t.length >= 2 && exZhClean.includes(t)) {
+                                    score += t.length * 25;
+                                } else if (t.length === 1 && exZhClean.includes(t) && !['人','事','物','者','在','到','有','是','做','個','點','的','地','得'].includes(t)) {
+                                    score += 15;
+                                }
+                                const stem = t.replace(/[的地得]+$/, '');
+                                if (stem && stem !== t) {
+                                    if (stem.length >= 2 && exZhClean.includes(stem)) score += stem.length * 20;
+                                }
+                            }
+                            // 英文句法線索比對
+                            if (tLower && exEnLower.length > 2) {
+                                if (pLower.startsWith('v')) {
+                                    if (new RegExp("\\b(can|could|will|would|shall|should|may|might|must|did|does|do|didn't|doesn't|don't)\\s+(?:[a-z'\\-]+\\s+){0,3}" + tLower + "\\b", "i").test(exEnLower) ||
+                                        new RegExp("\\bto\\s+" + tLower + "\\b", "i").test(exEnLower) ||
+                                        new RegExp("\\b" + tLower + "(ed|ing)\\b", "i").test(exEnLower)) {
+                                        score += 20;
+                                    }
+                                }
+                                if (pLower.startsWith('n') && !pLower.startsWith('num')) {
+                                    if (new RegExp("\\b(a|an|the|my|your|his|her|its|our|their|this|that)\\s+" + tLower + "\\b", "i").test(exEnLower)) {
+                                        score += 20;
+                                    }
+                                }
+                                if (pLower.startsWith('adj') || pLower === 'a.') {
+                                    if (new RegExp("\\b(am|is|are|was|were|been|being|'s|'re|seem|look|feel)\\s+(?:very\\s+|quite\\s+|relatively\\s+|too\\s+|so\\s+)?" + tLower + "\\b", "i").test(exEnLower)) {
+                                        score += 20;
+                                    }
+                                }
+                                if (pLower.startsWith('adv') || pLower === 'ad.') {
+                                    if (new RegExp("\\b(?:drive|run|walk|work|speak|act)\\s+(?:so\\s+|very\\s+|too\\s+)?" + tLower + "\\b", "i").test(exEnLower)) {
+                                        score += 20;
+                                    }
+                                }
+                            }
+                            if (score > maxScore) {
+                                maxScore = score;
+                                bestIdx = idx;
+                            }
+                        });
+                        if (bestIdx > 0) {
+                            const matched = items[bestIdx];
+                            items = [matched, ...items.filter((_, i) => i !== bestIdx)];
+                        }
+                    }
+
                     const posSet = [...new Set(items.map(it => it.pos))];
                     const posBadgeText = posSet.map(p => p.toUpperCase().replace(/\.$/, '')).join(' / ');
                     const uniqueTexts = [...new Set(items.map(it => it.text))];
@@ -1686,9 +1749,9 @@
         }
 
         // 取得單字最核心、最常聽到的精簡中文釋義 (供卡片翻面朗讀與精簡展示)
-        function getConciseZh(zhStr, explicitPos = '') {
+        function getConciseZh(zhStr, explicitPos = '', exampleZh = '', exampleEn = '', targetEn = '') {
             if (!zhStr) return '';
-            const parsed = splitPosAndZh(zhStr, explicitPos);
+            const parsed = splitPosAndZh(zhStr, explicitPos, exampleZh, exampleEn, targetEn);
             let firstText = '';
             if (parsed.items && parsed.items.length > 0) {
                 firstText = parsed.items[0].text;
@@ -3316,7 +3379,7 @@
 
                         // 第 3 步：若開啟中文朗讀，接著讀中文釋義 (只讀最前面最常聽到的精簡常用義)
                         if (isSpeakZh && targetWord.zh) {
-                            const conciseZh = getConciseZh(targetWord.zh, targetWord.pos);
+                            const conciseZh = getConciseZh(targetWord.zh, targetWord.pos, targetWord.exampleZh, targetWord.example, targetWord.en);
                             backsideAudioTimerId = setTimeout(() => {
                                 if (!currentWord || currentWord.id !== targetWord.id) return;
                                 speakChinese(conciseZh, playExampleStep, targetWord, true);
@@ -3482,7 +3545,7 @@
             updateCardVoiceButtonsHighlight();
             
             // 解析詞性與純中文：卡片背面全單字（無論單詞性或多詞性）全面統一為精緻膠囊與一致字體
-            const parsed = splitPosAndZh(currentWord.zh, currentWord.pos);
+            const parsed = splitPosAndZh(currentWord.zh, currentWord.pos, currentWord.exampleZh, currentWord.example, currentWord.en);
             const posBadge = document.getElementById('card-pos-badge');
             const cardTransEl = document.getElementById('card-translation');
 
@@ -3767,7 +3830,7 @@
             if (t === 'en2zh') {
                 hintEl.innerText = '看英文 ➜ 選出中文';
             } else if (t === 'zh2en') {
-                const parsed = splitPosAndZh(w.zh, w.pos);
+                const parsed = splitPosAndZh(w.zh, w.pos, w.exampleZh, w.example, w.en);
                 wordEl.className = mid; 
                 wordEl.innerText = parsed.pureZh; 
                 const rf = document.getElementById('card-phonetic-row'); if (rf) rf.style.display = 'none';
@@ -5119,7 +5182,7 @@
                 btn.classList.add('text-[#0071E3]', 'scale-110');
                 setTimeout(() => btn.classList.remove('text-[#0071E3]', 'scale-110'), 400);
             }
-            const conciseZh = getConciseZh(currentWord.zh, currentWord.pos);
+            const conciseZh = getConciseZh(currentWord.zh, currentWord.pos, currentWord.exampleZh, currentWord.example, currentWord.en);
             speakChinese(conciseZh, null, currentWord, true);
         };
         document.getElementById('card-translation')?.addEventListener('click', handleSpeakZhClick);
@@ -5346,7 +5409,7 @@
             let markedTarget = false;
             for (const v of sortedVars) {
                 if (v.includes(' ') || v.includes('-')) {
-                    const patStr = '(?<![\\p{L}\\p{M}0-9])(' + v.replace(/[-\\s]/g, '[-—\\s]') + ')(?![\\p{L}\\p{M}0-9])';
+                    const patStr = '(?<![\\p{L}\\p{M}0-9])(' + v.replace(/[- ]+/g, '[-—\\s]+') + ')(?![\\p{L}\\p{M}0-9])';
                     try {
                         const pattern = new RegExp(patStr, 'iu');
                         if (pattern.test(text)) {

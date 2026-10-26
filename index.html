@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261026V27';
+        const APP_BUILD_VERSION = '20261026V28';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -31,19 +31,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261026V27"></script>
-    <script src="toeic_data.js?v=20261026V27"></script>
-    <script src="jh_data.js?v=20261026V27"></script>
-    <script src="listening_data.js?v=20261026V27"></script>
-    <script src="listening_words_data.js?v=20261026V27"></script>
-    <script src="uk_phonetics_manifest.js?v=20261026V27"></script>
-    <script src="words_audio_manifest.js?v=20261026V27"></script>
-    <script src="examples_audio_manifest.js?v=20261026V27"></script>
-    <script src="zh_audio_manifest.js?v=20261026V27"></script>
-    <script src="collocations_audio_manifest.js?v=20261026V27"></script>
-    <script src="syn_ant_data.js?v=20261026V27"></script>
-    <script src="synonyms_unit8_data.js?v=20261026V27"></script>
-    <script src="examples_unit9_data.js?v=20261026V27"></script>
+    <script src="words_data.js?v=20261026V28"></script>
+    <script src="toeic_data.js?v=20261026V28"></script>
+    <script src="jh_data.js?v=20261026V28"></script>
+    <script src="listening_data.js?v=20261026V28"></script>
+    <script src="listening_words_data.js?v=20261026V28"></script>
+    <script src="uk_phonetics_manifest.js?v=20261026V28"></script>
+    <script src="words_audio_manifest.js?v=20261026V28"></script>
+    <script src="examples_audio_manifest.js?v=20261026V28"></script>
+    <script src="zh_audio_manifest.js?v=20261026V28"></script>
+    <script src="collocations_audio_manifest.js?v=20261026V28"></script>
+    <script src="syn_ant_data.js?v=20261026V28"></script>
+    <script src="synonyms_unit8_data.js?v=20261026V28"></script>
+    <script src="examples_unit9_data.js?v=20261026V28"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -7328,6 +7328,7 @@
             if (unit >= 1 && unit <= 9) return { name: `高中 7000 單字 (單元 ${unit})`, color: 'bg-blue-50 text-[#0071E3] border-blue-200' };
             if (unit >= 11 && unit <= 13) return { name: `TOEIC 多益核心 (單元 ${unit})`, color: 'bg-emerald-50 text-emerald-700 border-emerald-200' };
             if (unit >= 17 && unit <= 18) return { name: `國中基礎 1200 (單元 ${unit})`, color: 'bg-amber-50 text-amber-700 border-amber-200' };
+            if (unit === 19) return { name: `🎧 聽力新單字庫 (單元 19)`, color: 'bg-indigo-50 text-indigo-700 border-indigo-200' };
             if (unit === 10) return { name: '自訂字庫', color: 'bg-purple-50 text-purple-700 border-purple-200' };
             return { name: `單元 ${unit}`, color: 'bg-gray-100 text-gray-700 border-gray-200' };
         }
@@ -8284,11 +8285,12 @@
             });
         }
 
-        // 查詢單字是否在內建字庫 (單元 1-9)，回傳單元編號或 0
+        // 查詢單字是否在內建字庫 (非自訂字庫單元 10)，回傳單元編號或 0
         function builtinUnitOf(word) {
-            const lw = String(word).toLowerCase();
-            const hit = vocabularyDB.find(w => w.unit >= 1 && w.unit <= 9 && w.en.toLowerCase() === lw);
-            return hit ? hit.unit : 0;
+            if (!word) return 0;
+            const lw = String(word).trim().toLowerCase();
+            const hit = vocabularyDB.find(w => w.unit !== 10 && w.en && w.en.toLowerCase() === lw);
+            return hit ? (hit.unit || 1) : 0;
         }
 
         // 加入自訂單字
@@ -8314,7 +8316,7 @@
             // 只允許加入「非內建字庫 (單元 1-9)」的單字
             const bu = builtinUnitOf(en);
             if (bu) {
-                alert(`這個單字已在內建字庫 單元 ${bu}，請直接去該單元學習。`);
+                alert(`這個單字已在 ${getUnitBadgeInfo(bu).name}，請直接至該單元學習。`);
                 return false;
             }
             // 檢查是否已經在「自訂字庫 (單元 10)」裡面了

@@ -9,7 +9,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261026V12';
+        const APP_BUILD_VERSION = '20261026V13';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -30,18 +30,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261026V12"></script>
-    <script src="toeic_data.js?v=20261026V12"></script>
-    <script src="jh_data.js?v=20261026V12"></script>
-    <script src="listening_data.js?v=20261026V12"></script>
-    <script src="uk_phonetics_manifest.js?v=20261026V12"></script>
-    <script src="words_audio_manifest.js?v=20261026V12"></script>
-    <script src="examples_audio_manifest.js?v=20261026V12"></script>
-    <script src="zh_audio_manifest.js?v=20261026V12"></script>
-    <script src="collocations_audio_manifest.js?v=20261026V12"></script>
-    <script src="syn_ant_data.js?v=20261026V12"></script>
-    <script src="synonyms_unit8_data.js?v=20261026V12"></script>
-    <script src="examples_unit9_data.js?v=20261026V12"></script>
+    <script src="words_data.js?v=20261026V13"></script>
+    <script src="toeic_data.js?v=20261026V13"></script>
+    <script src="jh_data.js?v=20261026V13"></script>
+    <script src="listening_data.js?v=20261026V13"></script>
+    <script src="uk_phonetics_manifest.js?v=20261026V13"></script>
+    <script src="words_audio_manifest.js?v=20261026V13"></script>
+    <script src="examples_audio_manifest.js?v=20261026V13"></script>
+    <script src="zh_audio_manifest.js?v=20261026V13"></script>
+    <script src="collocations_audio_manifest.js?v=20261026V13"></script>
+    <script src="syn_ant_data.js?v=20261026V13"></script>
+    <script src="synonyms_unit8_data.js?v=20261026V13"></script>
+    <script src="examples_unit9_data.js?v=20261026V13"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -1370,9 +1370,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261026V12</span>
+                        <span id="app-version-display">版本 20261026V13</span>
                     </div>
-                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261026V12</p>
+                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261026V13</p>
                 </div>
             </div>
         </div>
@@ -3230,6 +3230,7 @@
         });
 
         let currentSpellLettersController = null;
+        let isSpeechEvalActive = false;
 
         function stopAllAudio() {
             clearAudioCallbacks();
@@ -3275,6 +3276,10 @@
         }
 
         function speakChinese(text, onEndedCallback, wordObj = null) {
+            if (isSpeechEvalActive) {
+                if (typeof onEndedCallback === 'function') onEndedCallback();
+                return;
+            }
             if (!text && !wordObj) {
                 if (typeof onEndedCallback === 'function') onEndedCallback();
                 return;
@@ -3407,6 +3412,10 @@
 
         // 逐字母拼讀核心函數 (使用本機 26 個超清 Edge-TTS 字母 MP3 依序流式朗讀)
         function playSpellLetters(word, onEndedCallback) {
+            if (isSpeechEvalActive) {
+                if (typeof onEndedCallback === 'function') onEndedCallback();
+                return;
+            }
             if (!word) {
                 if (typeof onEndedCallback === 'function') onEndedCallback();
                 return;
@@ -3514,6 +3523,10 @@
         }
 
         function playBacksideAudio(onEndedCallback) {
+            if (isSpeechEvalActive) {
+                if (typeof onEndedCallback === 'function') onEndedCallback();
+                return;
+            }
             stopAllAudio();
             if (!currentWord || !currentWord.en) {
                 if (typeof onEndedCallback === 'function') onEndedCallback();
@@ -5089,6 +5102,10 @@
 
         // 真人雙口音單字發音 (1: 🇬🇧 英音男聲, 2: 🇺🇸 美音女聲, both: 雙音連續輪播)
         function playWordAccent(word, accent = null, onEndedCallback) {
+            if (isSpeechEvalActive) {
+                if (typeof onEndedCallback === 'function') onEndedCallback();
+                return;
+            }
             if (!word) {
                 if (typeof onEndedCallback === 'function') onEndedCallback();
                 return;
@@ -5296,6 +5313,10 @@
         }
 
         function playAudio(text, onEndedCallback, wordId) {
+            if (isSpeechEvalActive) {
+                if (typeof onEndedCallback === 'function') onEndedCallback();
+                return;
+            }
             if (!text) {
                 if (typeof onEndedCallback === 'function') onEndedCallback();
                 return;
@@ -5444,12 +5465,14 @@
 
         document.getElementById('btn-audio').addEventListener('click', (e) => {
             e.stopPropagation();
+            if (isSpeechEvalActive) resetSpeechEvalUI();
             unlockMobileAudio();
             if (currentWord && currentWord.en) playAudio(currentWord.en);
         });
 
         document.getElementById('btn-example-audio').addEventListener('click', (e) => {
             e.stopPropagation();
+            if (isSpeechEvalActive) resetSpeechEvalUI();
             unlockMobileAudio();
             if (currentWord && currentWord.example) {
                 const btn = e.currentTarget;
@@ -5461,12 +5484,14 @@
 
         document.getElementById('card-word-back')?.addEventListener('click', (e) => {
             e.stopPropagation();
+            if (isSpeechEvalActive) resetSpeechEvalUI();
             unlockMobileAudio();
             if (currentWord && currentWord.en) playBacksideAudio();
         });
 
         document.getElementById('btn-card-voice-us')?.addEventListener('click', (e) => {
             e.stopPropagation();
+            if (isSpeechEvalActive) resetSpeechEvalUI();
             unlockMobileAudio();
             if (currentWord && currentWord.en) {
                 updateCardVoiceButtonsHighlight('us');
@@ -5476,6 +5501,7 @@
 
         document.getElementById('btn-card-voice-uk')?.addEventListener('click', (e) => {
             e.stopPropagation();
+            if (isSpeechEvalActive) resetSpeechEvalUI();
             unlockMobileAudio();
             if (currentWord && currentWord.en) {
                 updateCardVoiceButtonsHighlight('uk');
@@ -5485,6 +5511,7 @@
 
         document.getElementById('btn-card-voice-spell')?.addEventListener('click', (e) => {
             e.stopPropagation();
+            if (isSpeechEvalActive) resetSpeechEvalUI();
             unlockMobileAudio();
             if (currentWord && currentWord.en) {
                 playSpellLetters(currentWord.en);
@@ -5497,23 +5524,24 @@
         let activeRecognition = null;
         let isRecognizing = false;
 
-        function resetSpeechEvalUI() {
+        function resetSpeechEvalUI(clearResult = true) {
             if (activeRecognition) {
                 try { activeRecognition.abort(); } catch(e) {}
                 activeRecognition = null;
             }
             isRecognizing = false;
+            isSpeechEvalActive = false;
             const btn = document.getElementById('btn-speech-eval');
             const icon = document.getElementById('speech-eval-icon');
             const txt = document.getElementById('speech-eval-text');
             const res = document.getElementById('speech-eval-result');
             if (btn) {
-                btn.classList.remove('bg-red-500', 'text-white', 'border-red-600', 'animate-pulse');
-                btn.classList.add('bg-blue-50', 'text-[#0071E3]', 'border-blue-200');
+                btn.classList.remove('bg-red-500', 'text-white', 'border-red-600', 'animate-pulse', 'shadow-sm');
+                btn.classList.add('bg-slate-100', 'text-slate-600', 'border-slate-200/80');
             }
             if (icon) icon.innerText = '🎤';
-            if (txt) txt.innerText = '口說跟讀評測';
-            if (res) {
+            if (txt) txt.innerText = '口說評測';
+            if (clearResult && res) {
                 res.className = 'hidden text-xs font-medium py-1 px-3 rounded-full mt-1.5 transition-all';
                 res.innerText = '';
             }
@@ -5532,15 +5560,28 @@
                 if (!SpeechRecognition) {
                     if (res) {
                         res.className = 'text-xs font-medium py-1 px-3 rounded-full mt-1.5 bg-yellow-100 text-yellow-800 border border-yellow-200';
-                        res.innerText = '⚠️ 您的瀏覽器不支援原生語音辨識（建議使用 Chrome / Edge）';
+                        res.innerText = '⚠️ 您的瀏覽器不支援原生語音辨識（建議使用 Chrome / Edge / Safari）';
                         res.classList.remove('hidden');
                     }
                     return;
                 }
 
-                if (isRecognizing) {
-                    resetSpeechEvalUI();
+                // 若已經在跟讀中，再次點擊即為「離開跟讀」並恢復普通狀態
+                if (isSpeechEvalActive || isRecognizing) {
+                    resetSpeechEvalUI(false);
                     return;
+                }
+
+                // 核心：口說跟讀按下擁有最高優先權！立即暫停並清空所有發音音訊、輪播鏈與自動跳題計時器
+                isSpeechEvalActive = true;
+                stopAllAudio();
+                if (autoFlashcardTimerId) {
+                    clearTimeout(autoFlashcardTimerId);
+                    autoFlashcardTimerId = null;
+                }
+                if (autoNextTimerId) {
+                    clearTimeout(autoNextTimerId);
+                    autoNextTimerId = null;
                 }
 
                 try {
@@ -5551,16 +5592,18 @@
 
                     recognition.onstart = () => {
                         isRecognizing = true;
-                        btn.classList.remove('bg-blue-50', 'text-[#0071E3]', 'border-blue-200');
-                        btn.classList.add('bg-red-500', 'text-white', 'border-red-600', 'animate-pulse');
+                        isSpeechEvalActive = true;
+                        btn.classList.remove('bg-blue-50', 'text-[#0071E3]', 'border-blue-200', 'bg-slate-100', 'text-slate-600', 'border-slate-200/80');
+                        btn.classList.add('bg-red-500', 'text-white', 'border-red-600', 'animate-pulse', 'shadow-sm');
                         if (icon) icon.innerText = '🔴';
-                        if (txt) txt.innerText = '聆聽中...請朗讀單字';
+                        if (txt) txt.innerText = '聆聽中... (點擊離開跟讀)';
                         if (res) res.classList.add('hidden');
                     };
 
                     recognition.onresult = (event) => {
                         isRecognizing = false;
-                        resetSpeechEvalUI();
+                        isSpeechEvalActive = false;
+                        resetSpeechEvalUI(false);
                         if (!currentWord || !currentWord.en) return;
 
                         const transcript = (event.results[0][0].transcript || '').trim().toLowerCase();
@@ -5573,13 +5616,13 @@
                         if (res) {
                             res.classList.remove('hidden');
                             if (isExact) {
-                                res.className = 'text-xs font-medium py-1 px-3 rounded-full mt-1.5 bg-green-100 text-green-800 border border-green-300 shadow-xs';
+                                res.className = 'text-xs font-medium py-1 px-3 rounded-full mt-1.5 bg-emerald-100 text-emerald-800 border border-emerald-300 shadow-xs inline-flex items-center gap-1';
                                 res.innerHTML = `🌟 <strong>太神了！發音 100% 精準！</strong> (辨識: ${esc(transcript)})`;
                             } else if (isClose) {
-                                res.className = 'text-xs font-medium py-1 px-3 rounded-full mt-1.5 bg-blue-100 text-blue-800 border border-blue-300 shadow-xs';
+                                res.className = 'text-xs font-medium py-1 px-3 rounded-full mt-1.5 bg-blue-100 text-blue-800 border border-blue-300 shadow-xs inline-flex items-center gap-1';
                                 res.innerHTML = `👍 <strong>非常棒！發音很標準！</strong> (辨識: ${esc(transcript)})`;
                             } else {
-                                res.className = 'text-xs font-medium py-1 px-3 rounded-full mt-1.5 bg-amber-100 text-amber-800 border border-amber-300 shadow-xs';
+                                res.className = 'text-xs font-medium py-1 px-3 rounded-full mt-1.5 bg-amber-100 text-amber-800 border border-amber-300 shadow-xs inline-flex items-center gap-1';
                                 res.innerHTML = `👂 <strong>再試一次！</strong> 辨識為「${esc(transcript)}」，標準為「${esc(target)}」`;
                             }
                         }
@@ -5587,18 +5630,20 @@
 
                     recognition.onerror = (event) => {
                         isRecognizing = false;
-                        resetSpeechEvalUI();
+                        isSpeechEvalActive = false;
+                        resetSpeechEvalUI(false);
                         if (res) {
                             res.classList.remove('hidden');
                             res.className = 'text-xs font-medium py-1 px-3 rounded-full mt-1.5 bg-gray-100 text-gray-700';
-                            res.innerText = event.error === 'no-speech' ? '未偵測到聲音，請點擊再試一次' : `辨識錯誤 (${event.error})，請再試一次`;
+                            res.innerText = event.error === 'no-speech' ? '未偵測到聲音，請點擊按鈕再試一次' : `辨識中斷 (${event.error})，請再試一次`;
                         }
                     };
 
                     recognition.onend = () => {
                         isRecognizing = false;
-                        if (btn && !btn.classList.contains('bg-blue-50')) {
-                            resetSpeechEvalUI();
+                        isSpeechEvalActive = false;
+                        if (btn && btn.classList.contains('bg-red-500')) {
+                            resetSpeechEvalUI(false);
                         }
                     };
 
@@ -5606,7 +5651,8 @@
                     recognition.start();
                 } catch(err) {
                     console.error('Speech recognition error:', err);
-                    resetSpeechEvalUI();
+                    isSpeechEvalActive = false;
+                    resetSpeechEvalUI(false);
                 }
             };
         }
@@ -5624,6 +5670,7 @@
         // 點擊中文釋義或小喇叭手動朗讀中文
         const handleSpeakZhClick = (e) => {
             e.stopPropagation();
+            if (isSpeechEvalActive) resetSpeechEvalUI();
             unlockMobileAudio();
             if (!currentWord || !currentWord.zh) return;
             const btn = document.getElementById('btn-speak-zh');

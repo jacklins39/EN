@@ -9,7 +9,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261026V7';
+        const APP_BUILD_VERSION = '20261026V8';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -30,18 +30,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261026V7"></script>
-    <script src="toeic_data.js?v=20261026V7"></script>
-    <script src="jh_data.js?v=20261026V7"></script>
-    <script src="listening_data.js?v=20261026V7"></script>
-    <script src="uk_phonetics_manifest.js?v=20261026V7"></script>
-    <script src="words_audio_manifest.js?v=20261026V7"></script>
-    <script src="examples_audio_manifest.js?v=20261026V7"></script>
-    <script src="zh_audio_manifest.js?v=20261026V7"></script>
-    <script src="collocations_audio_manifest.js?v=20261026V7"></script>
-    <script src="syn_ant_data.js?v=20261026V7"></script>
-    <script src="synonyms_unit8_data.js?v=20261026V7"></script>
-    <script src="examples_unit9_data.js?v=20261026V7"></script>
+    <script src="words_data.js?v=20261026V8"></script>
+    <script src="toeic_data.js?v=20261026V8"></script>
+    <script src="jh_data.js?v=20261026V8"></script>
+    <script src="listening_data.js?v=20261026V8"></script>
+    <script src="uk_phonetics_manifest.js?v=20261026V8"></script>
+    <script src="words_audio_manifest.js?v=20261026V8"></script>
+    <script src="examples_audio_manifest.js?v=20261026V8"></script>
+    <script src="zh_audio_manifest.js?v=20261026V8"></script>
+    <script src="collocations_audio_manifest.js?v=20261026V8"></script>
+    <script src="syn_ant_data.js?v=20261026V8"></script>
+    <script src="synonyms_unit8_data.js?v=20261026V8"></script>
+    <script src="examples_unit9_data.js?v=20261026V8"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -817,12 +817,20 @@
                                 <span>🇬🇧 英音 👨</span>
                             </button>
                         </div>
-                        <div class="flex items-center justify-center gap-1 mb-1.5 max-w-full px-1">
-                            <span id="card-pos-badge" class="hidden"></span>
-                            <div class="cursor-pointer text-center text-slate-700 font-normal text-xs sm:text-sm leading-relaxed" id="card-translation" title="點擊朗讀中文釋義">n. 蘋果</div>
-                            <button id="btn-speak-zh" class="p-0.5 text-slate-400 hover:text-[#0071E3] hover:bg-blue-50 rounded-full transition-colors cursor-pointer shrink-0" title="朗讀中文釋義" aria-label="朗讀中文釋義">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
-                            </button>
+                        <div class="flex flex-col items-center justify-center mb-1.5 max-w-full px-1">
+                            <div class="flex items-center justify-center gap-1.5 flex-wrap">
+                                <span id="card-pos-badge" class="hidden"></span>
+                                <div class="cursor-pointer text-center text-slate-800 font-bold text-sm sm:text-base leading-snug flex items-center gap-1.5 flex-wrap justify-center" id="card-translation" title="點擊朗讀中文釋義">n. 蘋果</div>
+                                <button id="btn-speak-zh" class="p-0.5 text-slate-400 hover:text-[#0071E3] hover:bg-blue-50 rounded-full transition-colors cursor-pointer shrink-0" title="朗讀中文釋義" aria-label="朗讀中文釋義">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
+                                </button>
+                                <button id="btn-expand-trans" type="button" class="hidden inline-flex items-center gap-1 text-[11px] font-medium text-slate-500 hover:text-[#0071E3] bg-slate-100 hover:bg-blue-50 px-2 py-0.5 rounded-full border border-slate-200/80 hover:border-blue-200 transition-all cursor-pointer select-none active:scale-95 shrink-0" title="點擊展開/收合完整多詞性字典釋義">
+                                    <span id="btn-expand-trans-text">+2 詞性</span>
+                                    <svg id="btn-expand-trans-icon" class="w-3 h-3 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                                </button>
+                            </div>
+                            <!-- 展開後的多詞性與完整釋義列表 (原地展開，乾淨排版) -->
+                            <div id="card-trans-expanded" class="hidden w-full max-w-sm mt-2 text-left bg-slate-50/95 p-2.5 rounded-xl border border-slate-200/80 text-xs text-slate-700 space-y-1.5 max-h-36 overflow-y-auto custom-scrollbar shadow-2xs"></div>
                         </div>
                         
                         <!-- 原生口說跟讀評測 & 單字三態詳解 -->
@@ -1324,9 +1332,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261026V7</span>
+                        <span id="app-version-display">版本 20261026V8</span>
                     </div>
-                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261026V7</p>
+                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261026V8</p>
                 </div>
             </div>
         </div>
@@ -3541,18 +3549,74 @@
             document.getElementById('card-word-back').innerText = currentWord.en;
             updateCardVoiceButtonsHighlight();
             
-            // 解析詞性與純中文：卡片背面全單字（無論單詞性或多詞性）全面統一為精緻膠囊與一致字體
+            // 解析詞性與純中文：卡片背面精準顯示匹配例句之最核心高頻義，其餘多詞性與完整釋義收納於微型膠囊中
             const parsed = splitPosAndZh(currentWord.zh, currentWord.pos, currentWord.exampleZh, currentWord.example, currentWord.en);
             const posBadge = document.getElementById('card-pos-badge');
             const cardTransEl = document.getElementById('card-translation');
+            const btnExpandTrans = document.getElementById('btn-expand-trans');
+            const btnExpandTransText = document.getElementById('btn-expand-trans-text');
+            const btnExpandTransIcon = document.getElementById('btn-expand-trans-icon');
+            const transExpandedEl = document.getElementById('card-trans-expanded');
 
-            // 詞性徽章已全面整合至膠囊內部，外層舊式獨立標籤永久隱藏
-            if (posBadge) {
-                posBadge.classList.add('hidden');
+            if (posBadge) posBadge.classList.add('hidden');
+
+            // 換卡時一律重置展開面板為收合狀態
+            if (transExpandedEl) {
+                transExpandedEl.classList.add('hidden');
+                transExpandedEl.innerHTML = '';
+            }
+            if (btnExpandTransIcon) {
+                btnExpandTransIcon.classList.remove('rotate-180');
             }
 
+            // 提取最核心、匹配例句的高頻簡潔中文釋義
+            const conciseText = getConciseZh(currentWord.zh, currentWord.pos, currentWord.exampleZh, currentWord.example, currentWord.en);
+            const primaryItem = (parsed.items && parsed.items.length > 0) ? parsed.items[0] : null;
+            const primaryPos = primaryItem ? primaryItem.pos : (parsed.posBadgeText || '');
+
             if (cardTransEl) {
-                cardTransEl.innerText = parsed.formattedZh || currentWord.zh || parsed.pureZh || '';
+                let primaryHtml = '';
+                if (primaryPos) {
+                    primaryHtml += `<span class="text-xs font-bold text-blue-600 bg-blue-50 px-1.5 py-0.5 rounded-md border border-blue-100 font-mono select-none lowercase">${esc(primaryPos.toLowerCase())}</span> `;
+                }
+                primaryHtml += `<span class="font-bold text-slate-800 text-sm sm:text-base">${esc(conciseText || (primaryItem ? primaryItem.text : currentWord.zh))}</span>`;
+                cardTransEl.innerHTML = primaryHtml;
+            }
+
+            // 判斷是否具備多詞性或額外擴充釋義，以呈現微型膠囊按鈕
+            const hasMultiplePos = parsed.items && parsed.items.length > 1;
+            const primaryFullText = primaryItem ? primaryItem.text : '';
+            const hasMoreMeanings = !hasMultiplePos && primaryFullText && (primaryFullText.length > (conciseText || '').length + 4);
+
+            if (btnExpandTrans) {
+                if (hasMultiplePos) {
+                    btnExpandTrans.classList.remove('hidden');
+                    if (btnExpandTransText) btnExpandTransText.innerText = `+${parsed.items.length - 1} 詞性`;
+                } else if (hasMoreMeanings) {
+                    btnExpandTrans.classList.remove('hidden');
+                    if (btnExpandTransText) btnExpandTransText.innerText = `更多釋義`;
+                } else {
+                    btnExpandTrans.classList.add('hidden');
+                }
+            }
+
+            // 預先建構展開內容 (支援原地展開查看所有詞性與完整釋義)
+            if (transExpandedEl && (hasMultiplePos || hasMoreMeanings)) {
+                let expHtml = '<div class="space-y-1.5">';
+                if (parsed.items && parsed.items.length > 0) {
+                    parsed.items.forEach((it, idx) => {
+                        const isPrimary = (idx === 0);
+                        expHtml += `
+                            <div class="flex items-start gap-1.5 py-0.5">
+                                ${it.pos ? `<span class="text-[11px] font-bold font-mono px-1.5 py-0.5 rounded border shrink-0 lowercase ${isPrimary ? 'bg-blue-100 text-blue-800 border-blue-200' : 'bg-slate-200/80 text-slate-700 border-slate-300/80'}">${esc(it.pos.toLowerCase())}</span>` : ''}
+                                <span class="text-xs ${isPrimary ? 'font-semibold text-slate-900' : 'text-slate-600'} leading-relaxed break-words">${esc(it.text)}</span>
+                                ${isPrimary && hasMultiplePos ? '<span class="text-[10px] text-blue-600 font-medium ml-auto shrink-0 bg-blue-50 px-1 rounded select-none">例句對應</span>' : ''}
+                            </div>
+                        `;
+                    });
+                }
+                expHtml += '</div>';
+                transExpandedEl.innerHTML = expHtml;
             }
             
             // 決定題型模式：依使用者選取題型（預設為 en2zh 看英選中）
@@ -4325,7 +4389,7 @@
 
         flashcard.addEventListener('click', (e) => {
             unlockMobileAudio();
-            if (e.target.closest('button') || e.target.closest('.dict-word') || e.target.closest('#example-container')) return;
+            if (e.target.closest('button') || e.target.closest('.dict-word') || e.target.closest('#example-container') || e.target.closest('#card-trans-expanded')) return;
             if (!isQuizMode && !isShowingAnswer) {
                 document.getElementById('btn-show-answer').click();
             } else if (isShowingAnswer && !actionNext.classList.contains('hidden')) {
@@ -5197,6 +5261,26 @@
         };
         document.getElementById('card-translation')?.addEventListener('click', handleSpeakZhClick);
         document.getElementById('btn-speak-zh')?.addEventListener('click', handleSpeakZhClick);
+
+        const btnExpandTrans = document.getElementById('btn-expand-trans');
+        const transExpandedEl = document.getElementById('card-trans-expanded');
+        const btnExpandTransIcon = document.getElementById('btn-expand-trans-icon');
+        if (btnExpandTrans && transExpandedEl) {
+            btnExpandTrans.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const isHidden = transExpandedEl.classList.contains('hidden');
+                if (isHidden) {
+                    transExpandedEl.classList.remove('hidden');
+                    if (btnExpandTransIcon) btnExpandTransIcon.classList.add('rotate-180');
+                } else {
+                    transExpandedEl.classList.add('hidden');
+                    if (btnExpandTransIcon) btnExpandTransIcon.classList.remove('rotate-180');
+                }
+            });
+            transExpandedEl.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+        }
 
         // 設定：單字預設發音口音
         updateVoiceAccentUI();

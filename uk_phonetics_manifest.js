@@ -7335,7 +7335,14 @@ const UK_PHONETICS_MANIFEST = {
   "tired": "/ˈtaɪəd/",
   "toothache": "/ˈtuːθeɪk/",
   "toothbrush": "/ˈtuːθbrʌʃ/",
-  "unhappy": "/ʌnˈhæpi/"
+  "unhappy": "/ʌnˈhæpi/",
+  "remained": "/rɪˈmeɪnd/",
+  "accusations": "/ˌækjuˈzeɪʃnz/",
+  "drove": "/drəʊv/",
+  "hilariously": "/hɪˈleəriəsli/",
+  "clamped": "/klæmpt/",
+  "offered": "/ˈɒfəd/",
+  "seats": "/siːts/"
 };
 
 if (typeof window !== 'undefined') {

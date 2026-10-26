@@ -6813,6 +6813,104 @@ const SYN_ANT_DB = {
       "calm",
       "constant"
     ]
+  },
+  "remained": {
+      "syn": [
+          "stayed",
+          "lingered",
+          "lasted",
+          "persisted",
+          "endured"
+      ],
+      "ant": [
+          "departed",
+          "left",
+          "vanished",
+          "disappeared"
+      ]
+  },
+  "accusations": {
+      "syn": [
+          "charges",
+          "allegations",
+          "indictments",
+          "complaints",
+          "claims"
+      ],
+      "ant": [
+          "defenses",
+          "acquittals",
+          "praises",
+          "exonerations"
+      ]
+  },
+  "drove": {
+      "syn": [
+          "steered",
+          "guided",
+          "propelled",
+          "compelled",
+          "forced"
+      ],
+      "ant": [
+          "halted",
+          "stopped",
+          "dissuaded"
+      ]
+  },
+  "hilariously": {
+      "syn": [
+          "comically",
+          "amusingly",
+          "humorously",
+          "funnily"
+      ],
+      "ant": [
+          "seriously",
+          "gravely",
+          "solemnly",
+          "grimly"
+      ]
+  },
+  "clamped": {
+      "syn": [
+          "fastened",
+          "secured",
+          "gripped",
+          "clutched",
+          "locked"
+      ],
+      "ant": [
+          "loosened",
+          "released",
+          "unfastened",
+          "unlocked"
+      ]
+  },
+  "offered": {
+      "syn": [
+          "provided",
+          "presented",
+          "tendered",
+          "volunteered",
+          "proffered"
+      ],
+      "ant": [
+          "refused",
+          "withheld",
+          "declined",
+          "withdrew"
+      ]
+  },
+  "seats": {
+      "syn": [
+          "chairs",
+          "benches",
+          "places",
+          "stools",
+          "spots"
+      ],
+      "ant": []
   }
 };
 if (typeof window !== 'undefined') { window.SYN_ANT_DB = SYN_ANT_DB; }

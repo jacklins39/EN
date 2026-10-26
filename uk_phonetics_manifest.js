@@ -1,7 +1,4 @@
-// UK Phonetics Manifest (Crawled from Yahoo / Oxford Dictionary)
-// Generated: 2026-10-25T13:53:14.354Z
-// Total entries: 7333
-
+// UK Phonetics Manifest
 const UK_PHONETICS_MANIFEST = {
   "able": "/ˈeɪb(ə)l/",
   "afraid": "/əˈfreɪd/",
@@ -7342,9 +7339,17 @@ const UK_PHONETICS_MANIFEST = {
   "hilariously": "/hɪˈleəriəsli/",
   "clamped": "/klæmpt/",
   "offered": "/ˈɒfəd/",
-  "seats": "/siːts/"
+  "seats": "/siːts/",
+  "depreciation": "/dɪˌpriːʃiˈeɪʃn/",
+  "turnaround": "/ˈtɜːnəraʊnd/ ",
+  "subcontractor": "/ˌsʌbkənˈtræktə(r)/",
+  "consignment": "/kənˈsaɪnmənt/",
+  "downtime": "/ˈdaʊntaɪm/",
+  "troubleshooting": "/ˈtrʌblʃuːtɪŋ/",
+  "underwriting": "/ˈʌndəraɪtɪŋ/",
+  "indemnify": "/ɪnˈdemnɪfaɪ/",
+  "restructuring": "/riːˈstrʌktʃərɪŋ/",
+  "influencer": "/ˈɪnfluənsə(r)/",
+  "metrics": "/ˈmetrɪks/",
+  "deliverable": "/dɪˈlɪvərəbl/"
 };
-
-if (typeof window !== 'undefined') {
-    window.UK_PHONETICS_MANIFEST = UK_PHONETICS_MANIFEST;
-}

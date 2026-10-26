@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261026V17';
+        const APP_BUILD_VERSION = '20261026V18';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -31,18 +31,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261026V17"></script>
-    <script src="toeic_data.js?v=20261026V17"></script>
-    <script src="jh_data.js?v=20261026V17"></script>
-    <script src="listening_data.js?v=20261026V17"></script>
-    <script src="uk_phonetics_manifest.js?v=20261026V17"></script>
-    <script src="words_audio_manifest.js?v=20261026V17"></script>
-    <script src="examples_audio_manifest.js?v=20261026V17"></script>
-    <script src="zh_audio_manifest.js?v=20261026V17"></script>
-    <script src="collocations_audio_manifest.js?v=20261026V17"></script>
-    <script src="syn_ant_data.js?v=20261026V17"></script>
-    <script src="synonyms_unit8_data.js?v=20261026V17"></script>
-    <script src="examples_unit9_data.js?v=20261026V17"></script>
+    <script src="words_data.js?v=20261026V18"></script>
+    <script src="toeic_data.js?v=20261026V18"></script>
+    <script src="jh_data.js?v=20261026V18"></script>
+    <script src="listening_data.js?v=20261026V18"></script>
+    <script src="uk_phonetics_manifest.js?v=20261026V18"></script>
+    <script src="words_audio_manifest.js?v=20261026V18"></script>
+    <script src="examples_audio_manifest.js?v=20261026V18"></script>
+    <script src="zh_audio_manifest.js?v=20261026V18"></script>
+    <script src="collocations_audio_manifest.js?v=20261026V18"></script>
+    <script src="syn_ant_data.js?v=20261026V18"></script>
+    <script src="synonyms_unit8_data.js?v=20261026V18"></script>
+    <script src="examples_unit9_data.js?v=20261026V18"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -1371,9 +1371,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261026V17</span>
+                        <span id="app-version-display">版本 20261026V18</span>
                     </div>
-                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261026V17</p>
+                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261026V18</p>
                 </div>
             </div>
         </div>
@@ -7320,116 +7320,6 @@
                 badgeEl.innerText = unitInfo.name;
             }
 
-            // 動詞變化區塊 HTML
-            let formsHtml = '';
-            if (forms) {
-                if (forms.verbForms) {
-                    formsHtml += `
-                        <div class="bg-gradient-to-br from-blue-50/70 to-indigo-50/50 p-3.5 rounded-2xl border border-blue-100/80">
-                            <div class="flex items-center gap-1.5 text-xs font-bold text-blue-900 mb-2">
-                                <span>⚡</span><span>動詞三態與詞形變化 (Verb Forms)</span>
-                            </div>
-                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs">
-                                <div class="bg-white/95 p-2 rounded-xl border border-blue-100/60 shadow-2xs cursor-pointer hover:border-blue-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.verbForms.base || w.en)}')" title="點擊聆聽原形發音">
-                                    <div class="flex items-center justify-between">
-                                        <span class="text-gray-400 block text-[10px] font-semibold">原形 (Base)</span>
-                                        <span class="text-blue-400 text-[10px]">🔊</span>
-                                    </div>
-                                    <span class="font-bold text-gray-800 font-mono text-sm">${esc(forms.verbForms.base || w.en)}</span>
-                                </div>
-                                <div class="bg-white/95 p-2 rounded-xl border border-blue-100/60 shadow-2xs cursor-pointer hover:border-blue-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.verbForms.past.split('/')[0].trim())}')" title="點擊聆聽過去式發音">
-                                    <div class="flex items-center justify-between">
-                                        <span class="text-blue-500 block text-[10px] font-semibold">過去式 (Past)</span>
-                                        <span class="text-blue-400 text-[10px]">🔊</span>
-                                    </div>
-                                    <span class="font-bold text-[#0071E3] font-mono text-sm">${esc(forms.verbForms.past)}</span>
-                                </div>
-                                <div class="bg-white/95 p-2 rounded-xl border border-blue-100/60 shadow-2xs cursor-pointer hover:border-blue-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.verbForms.pp.split('/')[0].trim())}')" title="點擊聆聽過去分詞發音">
-                                    <div class="flex items-center justify-between">
-                                        <span class="text-purple-500 block text-[10px] font-semibold">過去分詞 (P.P.)</span>
-                                        <span class="text-purple-400 text-[10px]">🔊</span>
-                                    </div>
-                                    <span class="font-bold text-purple-700 font-mono text-sm">${esc(forms.verbForms.pp)}</span>
-                                </div>
-                                <div class="bg-white/95 p-2 rounded-xl border border-blue-100/60 shadow-2xs cursor-pointer hover:border-blue-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.verbForms.ing.split('/')[0].trim())}')" title="點擊聆聽現在分詞發音">
-                                    <div class="flex items-center justify-between">
-                                        <span class="text-emerald-500 block text-[10px] font-semibold">現在分詞 (-ing)</span>
-                                        <span class="text-emerald-400 text-[10px]">🔊</span>
-                                    </div>
-                                    <span class="font-bold text-emerald-700 font-mono text-sm">${esc(forms.verbForms.ing)}</span>
-                                </div>
-                            </div>
-                            <div class="mt-2 text-[11px] text-gray-500 flex items-center justify-between px-1">
-                                <span>第三人稱單數現在式 (-s/-es)：<strong class="text-gray-800 font-mono cursor-pointer hover:text-[#0071E3]" onclick="playAudio('${esc(forms.verbForms.s.split('/')[0].trim())}')">${esc(forms.verbForms.s)} <span class="text-blue-400 text-[10px]">🔊</span></strong></span>
-                            </div>
-                        </div>
-                    `;
-                }
-                if (forms.nounForms) {
-                    formsHtml += `
-                        <div class="bg-amber-50/60 p-3 rounded-2xl border border-amber-200/70">
-                            <div class="flex items-center justify-between text-xs font-bold text-amber-900 mb-2">
-                                <div class="flex items-center gap-1.5">
-                                    <span>📦</span><span>名詞單複數變化 (Noun Plurals)</span>
-                                </div>
-                                <span class="text-[10px] text-amber-600 font-normal">點擊發音</span>
-                            </div>
-                            <div class="grid grid-cols-2 gap-2">
-                                <div class="bg-white/95 p-2.5 rounded-xl border border-amber-200/60 shadow-2xs cursor-pointer hover:border-amber-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.nounForms.singular)}')">
-                                    <div class="flex items-center justify-between mb-1">
-                                        <span class="text-amber-800 block text-[10px] font-semibold">單數 (Singular)</span>
-                                        <span class="text-amber-500 text-[10px]">🔊</span>
-                                    </div>
-                                    <span class="font-bold text-gray-800 font-mono text-xs sm:text-sm truncate" title="${esc(forms.nounForms.singular)}">${esc(forms.nounForms.singular)}</span>
-                                </div>
-                                <div class="bg-white/95 p-2.5 rounded-xl border border-amber-200/60 shadow-2xs cursor-pointer hover:border-amber-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.nounForms.plural)}')">
-                                    <div class="flex items-center justify-between mb-1">
-                                        <span class="text-amber-800 block text-[10px] font-semibold">複數 (Plural)</span>
-                                        <span class="text-amber-500 text-[10px]">🔊</span>
-                                    </div>
-                                    <span class="font-bold text-amber-700 font-mono text-xs sm:text-sm truncate" title="${esc(forms.nounForms.plural)}">${esc(forms.nounForms.plural)}</span>
-                                </div>
-                            </div>
-                        </div>
-                    `;
-                }
-                if (forms.adjForms) {
-                    formsHtml += `
-                        <div class="bg-emerald-50/60 p-3 rounded-2xl border border-emerald-200/70">
-                            <div class="flex items-center justify-between text-xs font-bold text-emerald-900 mb-2">
-                                <div class="flex items-center gap-1.5">
-                                    <span>📈</span><span>形容詞比較級與最高級 (Degrees of Comparison)</span>
-                                </div>
-                                <span class="text-[10px] text-emerald-600 font-normal">點擊發音</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-2">
-                                <div class="bg-white/95 p-2 rounded-xl border border-emerald-200/60 shadow-2xs cursor-pointer hover:border-emerald-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.adjForms.base)}')">
-                                    <div class="flex items-center justify-between mb-1">
-                                        <span class="text-emerald-700 block text-[10px] font-semibold">原級 (Base)</span>
-                                        <span class="text-emerald-500 text-[10px]">🔊</span>
-                                    </div>
-                                    <span class="font-bold text-gray-800 font-mono text-xs sm:text-sm truncate" title="${esc(forms.adjForms.base)}">${esc(forms.adjForms.base)}</span>
-                                </div>
-                                <div class="bg-white/95 p-2 rounded-xl border border-emerald-200/60 shadow-2xs cursor-pointer hover:border-emerald-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.adjForms.comp)}')">
-                                    <div class="flex items-center justify-between mb-1">
-                                        <span class="text-emerald-700 block text-[10px] font-semibold">比較級 (Comp)</span>
-                                        <span class="text-emerald-500 text-[10px]">🔊</span>
-                                    </div>
-                                    <span class="font-bold text-emerald-700 font-mono text-xs sm:text-sm truncate" title="${esc(forms.adjForms.comp)}">${esc(forms.adjForms.comp)}</span>
-                                </div>
-                                <div class="bg-white/95 p-2 rounded-xl border border-emerald-200/60 shadow-2xs cursor-pointer hover:border-emerald-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.adjForms.super)}')">
-                                    <div class="flex items-center justify-between mb-1">
-                                        <span class="text-emerald-800 block text-[10px] font-semibold">最高級 (Super)</span>
-                                        <span class="text-emerald-500 text-[10px]">🔊</span>
-                                    </div>
-                                    <span class="font-bold text-emerald-800 font-mono text-xs sm:text-sm truncate" title="${esc(forms.adjForms.super)}">${esc(forms.adjForms.super)}</span>
-                                </div>
-                            </div>
-                        </div>
-                    `;
-                }
-            }
-
             // 搭配詞區塊 HTML
             let collocationsHtml = '';
             if (collocations && collocations.length > 0) {
@@ -7549,9 +7439,6 @@
                         </div>
                     `}
                 </div>
-
-                <!-- 詞形變化 (動詞三態 / 複數 / 比較級) -->
-                ${formsHtml}
 
                 <!-- 常見用法與搭配詞 -->
                 ${collocationsHtml}

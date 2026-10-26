@@ -65598,5 +65598,75 @@ const externalVocabularyDB = [
     "unit": 7,
     "example": "Many stores offer special discounts to students and senior citizens.",
     "exampleZh": "許多商店為學生與年長者提供特別折扣。"
+  },
+  {
+    "id": 6572,
+    "en": "remained",
+    "kk": "[rɪˋmend]",
+    "uk": "/rɪˈmeɪnd/",
+    "zh": "vi. 留下、逗留、保持、remain的過去式與過去分詞形式：仍是、停留",
+    "unit": 7,
+    "example": "Only a few ruins remained after the ancient temple collapsed.",
+    "exampleZh": "這座古廟倒塌後，只留下了少數廢墟。"
+  },
+  {
+    "id": 6573,
+    "en": "accusations",
+    "kk": "[͵ækjəˋzeʃənz]",
+    "uk": "/ˌækjuˈzeɪʃnz/",
+    "zh": "n. 指控、指責、控告、accusation的複數形式：譴責、罪名",
+    "unit": 7,
+    "example": "He firmly denied all accusations of corruption made against him.",
+    "exampleZh": "他堅決否認所有針對他的貪腐指控。"
+  },
+  {
+    "id": 6574,
+    "en": "drove",
+    "kk": "[drov]",
+    "uk": "/drəʊv/",
+    "zh": "v. 開車、駕駛、驅使、drive的過去式形式：駕車送、迫使；n. 畜群、人群",
+    "unit": 7,
+    "example": "She drove her children to school early every morning.",
+    "exampleZh": "她每天早晨都開車載孩子們去學校。"
+  },
+  {
+    "id": 6575,
+    "en": "hilariously",
+    "kk": "[hɪˋlɛrɪəslɪ]",
+    "uk": "/hɪˈleəriəsli/",
+    "zh": "adv. 滑稽地、好笑地、令人捧腹地、引人發笑地",
+    "unit": 7,
+    "example": "The comedian acted hilariously on stage and made everyone burst into laughter.",
+    "exampleZh": "那位喜劇演員在舞台上表演得極為滑稽，把大家逗得捧腹大笑。"
+  },
+  {
+    "id": 6576,
+    "en": "clamped",
+    "kk": "[klæmpt]",
+    "uk": "/klæmpt/",
+    "zh": "vt. 夾緊、固定、clamp的過去式與過去分詞形式：鉗住、強行壓制；adj. 夾緊的、被固定的",
+    "unit": 7,
+    "example": "The mechanic clamped the metal pipe tightly to the workbench.",
+    "exampleZh": "技工把金屬管牢牢地夾緊在工作台上。"
+  },
+  {
+    "id": 6577,
+    "en": "offered",
+    "kk": "[ˋɔfɚd]",
+    "uk": "/ˈɒfəd/",
+    "zh": "vt. 提供、給予、offer的過去式與過去分詞形式：出價、表示願意",
+    "unit": 7,
+    "example": "The manager offered him a high-paying job with full benefits.",
+    "exampleZh": "經理提供給他一份高薪且福利齊全的工作。"
+  },
+  {
+    "id": 6578,
+    "en": "seats",
+    "kk": "[sits]",
+    "uk": "/siːts/",
+    "zh": "n. 座位、席位、seat的複數形式：席次、所在地；vt. 就座、容納、seat的第三人稱單數形式：使就座",
+    "unit": 7,
+    "example": "All the front seats in the concert hall were already taken.",
+    "exampleZh": "音樂廳前排的所有座位都已經被坐滿了。"
   }
 ];

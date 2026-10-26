@@ -9,7 +9,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261026V6';
+        const APP_BUILD_VERSION = '20261026V7';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -30,18 +30,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261026V6"></script>
-    <script src="toeic_data.js?v=20261026V6"></script>
-    <script src="jh_data.js?v=20261026V6"></script>
-    <script src="listening_data.js?v=20261026V6"></script>
-    <script src="uk_phonetics_manifest.js?v=20261026V6"></script>
-    <script src="words_audio_manifest.js?v=20261026V6"></script>
-    <script src="examples_audio_manifest.js?v=20261026V6"></script>
-    <script src="zh_audio_manifest.js?v=20261026V6"></script>
-    <script src="collocations_audio_manifest.js?v=20261026V6"></script>
-    <script src="syn_ant_data.js?v=20261026V6"></script>
-    <script src="synonyms_unit8_data.js?v=20261026V6"></script>
-    <script src="examples_unit9_data.js?v=20261026V6"></script>
+    <script src="words_data.js?v=20261026V7"></script>
+    <script src="toeic_data.js?v=20261026V7"></script>
+    <script src="jh_data.js?v=20261026V7"></script>
+    <script src="listening_data.js?v=20261026V7"></script>
+    <script src="uk_phonetics_manifest.js?v=20261026V7"></script>
+    <script src="words_audio_manifest.js?v=20261026V7"></script>
+    <script src="examples_audio_manifest.js?v=20261026V7"></script>
+    <script src="zh_audio_manifest.js?v=20261026V7"></script>
+    <script src="collocations_audio_manifest.js?v=20261026V7"></script>
+    <script src="syn_ant_data.js?v=20261026V7"></script>
+    <script src="synonyms_unit8_data.js?v=20261026V7"></script>
+    <script src="examples_unit9_data.js?v=20261026V7"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -1324,9 +1324,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261026V6</span>
+                        <span id="app-version-display">版本 20261026V7</span>
                     </div>
-                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261026V6</p>
+                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261026V7</p>
                 </div>
             </div>
         </div>
@@ -1722,8 +1722,8 @@
                         }
                     }
 
-                    const posSet = [...new Set(items.map(it => it.pos))];
-                    const posBadgeText = posSet.map(p => p.toUpperCase().replace(/\.$/, '')).join(' / ');
+                    const posSet = [...new Set(items.map(it => it.pos.toLowerCase()))];
+                    const posBadgeText = posSet.join(' / ');
                     const uniqueTexts = [...new Set(items.map(it => it.text))];
                     const cleanPureZh = uniqueTexts.join('；');
                     const formattedZh = items.map(it => `${it.pos} ${it.text}`).join('；');
@@ -1743,9 +1743,9 @@
             }
             
             pureZh = pureZh.replace(/^[:：、，,\s]+/, '').trim();
-            const badge = pos ? pos.toUpperCase().replace(/\.$/, '') : '';
-            const formatted = pos ? `${pos} ${pureZh}` : pureZh;
-            return { pos: badge, posBadgeText: badge, pureZh: pureZh || zhStr || '', formattedZh: formatted, items: pos ? [{ pos, text: pureZh }] : [{ pos: '', text: pureZh }] };
+            const badge = pos ? (pos.toLowerCase().endsWith('.') ? pos.toLowerCase() : pos.toLowerCase() + '.') : '';
+            const formatted = badge ? `${badge} ${pureZh}` : pureZh;
+            return { pos: badge, posBadgeText: badge, pureZh: pureZh || zhStr || '', formattedZh: formatted, items: badge ? [{ pos: badge, text: pureZh }] : [{ pos: '', text: pureZh }] };
         }
 
         // 取得單字最核心、最常聽到的精簡中文釋義 (供卡片翻面朗讀與精簡展示)
@@ -3831,7 +3831,7 @@
                 wordEl.className = mid; 
                 wordEl.innerText = parsed.pureZh; 
                 const rf = document.getElementById('card-phonetic-row'); if (rf) rf.style.display = 'none';
-                hintEl.innerHTML = parsed.pos ? `<span class="inline-block bg-blue-50 text-[#0071E3] border border-blue-200 text-xs px-2 py-0.5 rounded-full font-mono mr-1.5">${parsed.pos}</span> 看中文 ➜ 選出英文` : '看中文 ➜ 選出英文';
+                hintEl.innerHTML = parsed.pos ? `<span class="inline-block bg-blue-50 text-[#0071E3] border border-blue-200 text-xs px-2 py-0.5 rounded-full font-mono lowercase mr-1.5">${parsed.pos}</span> 看中文 ➜ 選出英文` : '看中文 ➜ 選出英文';
                 audioBtn.classList.add('hidden');
             } else if (t === 'listen') {
                 wordEl.className = 'text-5xl mb-2 font-mono';
@@ -3848,7 +3848,7 @@
                 wordEl.className = mid; 
                 wordEl.innerText = parsed.pureZh; 
                 const rf = document.getElementById('card-phonetic-row'); if (rf) rf.style.display = 'none';
-                hintEl.innerHTML = parsed.pos ? `<span class="inline-block bg-blue-50 text-[#0071E3] border border-blue-200 text-xs px-2 py-0.5 rounded-full font-mono mr-1.5">${parsed.pos}</span> 看中文 ➜ 鍵盤輸入英文拼寫` : '看中文 ➜ 鍵盤輸入英文拼寫';
+                hintEl.innerHTML = parsed.pos ? `<span class="inline-block bg-blue-50 text-[#0071E3] border border-blue-200 text-xs px-2 py-0.5 rounded-full font-mono lowercase mr-1.5">${parsed.pos}</span> 看中文 ➜ 鍵盤輸入英文拼寫` : '看中文 ➜ 鍵盤輸入英文拼寫';
                 audioBtn.classList.add('hidden');
             } else if (t === 'card') {
                 hintEl.innerText = '翻牌記憶 ➜ 點擊卡片翻面看解答';
@@ -4016,7 +4016,7 @@
                         const isThisCorrect = String(b.dataset.id) === String(currentWord.id);
                         const isThisClicked = b === btn;
                         const bParsed = splitPosAndZh(bOpt.zh, bOpt.pos);
-                        const bPosBadge = bParsed.pos ? `<span class="text-xs bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded mr-1 font-mono">${bParsed.pos}</span>` : '';
+                        const bPosBadge = bParsed.pos ? `<span class="text-xs bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded mr-1 font-mono lowercase">${bParsed.pos}</span>` : '';
 
                         if (isThisCorrect) {
                             b.classList.remove('bg-white', 'border-gray-200', 'border-slate-200/90', 'hover:bg-[#F5F5F7]', 'hover:bg-slate-50');

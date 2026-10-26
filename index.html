@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261026V21';
+        const APP_BUILD_VERSION = '20261026V22';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -31,18 +31,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261026V21"></script>
-    <script src="toeic_data.js?v=20261026V21"></script>
-    <script src="jh_data.js?v=20261026V21"></script>
-    <script src="listening_data.js?v=20261026V21"></script>
-    <script src="uk_phonetics_manifest.js?v=20261026V21"></script>
-    <script src="words_audio_manifest.js?v=20261026V21"></script>
-    <script src="examples_audio_manifest.js?v=20261026V21"></script>
-    <script src="zh_audio_manifest.js?v=20261026V21"></script>
-    <script src="collocations_audio_manifest.js?v=20261026V21"></script>
-    <script src="syn_ant_data.js?v=20261026V21"></script>
-    <script src="synonyms_unit8_data.js?v=20261026V21"></script>
-    <script src="examples_unit9_data.js?v=20261026V21"></script>
+    <script src="words_data.js?v=20261026V22"></script>
+    <script src="toeic_data.js?v=20261026V22"></script>
+    <script src="jh_data.js?v=20261026V22"></script>
+    <script src="listening_data.js?v=20261026V22"></script>
+    <script src="uk_phonetics_manifest.js?v=20261026V22"></script>
+    <script src="words_audio_manifest.js?v=20261026V22"></script>
+    <script src="examples_audio_manifest.js?v=20261026V22"></script>
+    <script src="zh_audio_manifest.js?v=20261026V22"></script>
+    <script src="collocations_audio_manifest.js?v=20261026V22"></script>
+    <script src="syn_ant_data.js?v=20261026V22"></script>
+    <script src="synonyms_unit8_data.js?v=20261026V22"></script>
+    <script src="examples_unit9_data.js?v=20261026V22"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -1220,7 +1220,7 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#0071E3]" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" /></svg>
                                 本文重點單字
                             </h4>
-                            <div id="listening-words-container" class="grid grid-cols-2 gap-2">
+                            <div id="listening-words-container" class="flex flex-col gap-2.5">
                                 <!-- 動態單字卡 -->
                             </div>
                         </div>
@@ -1426,9 +1426,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261026V21</span>
+                        <span id="app-version-display">版本 20261026V22</span>
                     </div>
-                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261026V21</p>
+                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261026V22</p>
                 </div>
             </div>
         </div>
@@ -9281,7 +9281,7 @@
             const annotatedList = Array.from(currentArticleAnnotatedWords);
             if (annotatedList.length > 0) {
                 html += `
-                <div class="col-span-2 mb-3 bg-emerald-50/50 border border-emerald-200/80 rounded-2xl p-3 shadow-xs">
+                <div class="w-full mb-3 bg-emerald-50/50 border border-emerald-200/80 rounded-2xl p-3 shadow-xs">
                     <div class="flex items-center justify-between mb-2">
                         <span class="text-xs font-bold text-emerald-800 flex items-center gap-1.5">
                             <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
@@ -9289,7 +9289,7 @@
                         </span>
                         <span class="text-[11px] text-emerald-600 font-medium">點卡片看三態詳解 · 點 🔊 發音 · 點 ✕ 取消</span>
                     </div>
-                    <div class="grid grid-cols-2 gap-2">
+                    <div class="flex flex-col gap-2">
                 `;
 
                 annotatedList.forEach(word => {
@@ -9299,13 +9299,13 @@
                     const displayZh = info ? (info.pos ? `[${esc(info.pos)}] ` : '') + esc(info.zh) : '';
 
                     html += `
-                        <div class="bg-white border border-emerald-200/70 p-2.5 rounded-xl flex items-center justify-between shadow-xs hover:border-emerald-400 hover:bg-emerald-50/30 transition min-h-[58px] cursor-pointer group" onclick="showWordDetailModal('${safeEn}')" title="點擊查看「${esc(word)}」的三態變化與詳細說明">
-                            <div class="min-w-0 pr-1.5 flex-1">
-                                <div class="flex items-center gap-1">
-                                    <div class="font-bold text-sm text-[#1D1D1F] leading-snug break-words">${esc(word)}</div>
-                                    ${info && info.kk ? `<span class="text-[10px] text-gray-400 font-mono hidden sm:inline">${esc(info.kk)}</span>` : ''}
+                        <div class="bg-white border border-emerald-200/70 p-3 rounded-xl flex items-center justify-between shadow-xs hover:border-emerald-400 hover:bg-emerald-50/30 transition min-h-[54px] cursor-pointer group" onclick="showWordDetailModal('${safeEn}')" title="點擊查看「${esc(word)}」的三態變化與詳細說明">
+                            <div class="min-w-0 pr-2 flex-1">
+                                <div class="flex items-center gap-1.5 flex-wrap">
+                                    <div class="font-bold text-sm text-[#1D1D1F] leading-snug">${esc(word)}</div>
+                                    ${info && info.kk ? `<span class="text-[11px] text-gray-400 font-mono">${esc(info.kk)}</span>` : ''}
                                 </div>
-                                <div id="annotated-card-zh-${esc(word)}" class="text-xs text-emerald-800 leading-snug line-clamp-2 mt-0.5 break-words font-medium" title="${displayZh}">
+                                <div id="annotated-card-zh-${esc(word)}" class="text-xs text-emerald-800 leading-snug mt-0.5 break-words font-medium" title="${displayZh}">
                                     ${displayZh || '<span class="text-gray-400">查詢翻譯中...</span>'}
                                 </div>
                             </div>
@@ -9341,7 +9341,7 @@
                 html += `
                     </div>
                 </div>
-                <div class="col-span-2 flex items-center gap-2 my-1 text-xs font-semibold text-gray-500">
+                <div class="w-full flex items-center gap-2 my-1 text-xs font-semibold text-gray-500">
                     <span>📚 本文核心單字</span>
                     <div class="flex-1 border-t border-gray-200"></div>
                 </div>
@@ -9350,21 +9350,24 @@
 
             // 2. 本文既有的核心重點單字
             if (articleCoreWords.length === 0 && annotatedList.length === 0) {
-                wc.innerHTML = '<div class="text-sm text-gray-500 col-span-2 text-center py-6">點擊文章中的單字即可隨時標註！</div>';
+                wc.innerHTML = '<div class="text-sm text-gray-500 w-full text-center py-6">點擊文章中的單字即可隨時標註！</div>';
                 return;
             }
 
             articleCoreWords.forEach(w => {
                 const safeEn = (w.en || '').replace(/'/g, "\\'");
                 const isMarked = currentArticleAnnotatedWords.has((w.en || '').toLowerCase());
+                const coreInfo = findWordInDB(w.en);
+                const coreKK = (coreInfo && coreInfo.kk) ? coreInfo.kk : '';
                 html += `
-                <div class="bg-white border border-gray-100 p-2.5 rounded-xl flex items-center justify-between shadow-xs cursor-pointer hover:bg-blue-50/50 hover:border-blue-200 transition min-h-[58px]" onclick="showWordDetailModal('${safeEn}', { zh: '${esc(w.zh || '')}', pos: '${esc(w.pos || '')}' })" title="點擊查看「${esc(w.en || '')}」的三態變化與詳細說明">
-                    <div class="min-w-0 pr-1.5 flex-1">
-                        <div class="flex items-center gap-1.5">
-                            <span class="font-semibold text-sm text-[#1D1D1F] leading-snug break-words">${esc(w.en || '')}</span>
-                            ${isMarked ? `<span class="text-[9px] bg-emerald-100 text-emerald-700 font-bold px-1.5 py-0.2 rounded-full">已劃線</span>` : ''}
+                <div class="bg-white border border-gray-100 p-3 rounded-xl flex items-center justify-between shadow-xs cursor-pointer hover:bg-blue-50/50 hover:border-blue-200 transition min-h-[54px]" onclick="showWordDetailModal('${safeEn}', { zh: '${esc(w.zh || '')}', pos: '${esc(w.pos || '')}' })" title="點擊查看「${esc(w.en || '')}」的三態變化與詳細說明">
+                    <div class="min-w-0 pr-2 flex-1">
+                        <div class="flex items-center gap-1.5 flex-wrap">
+                            <span class="font-bold text-sm text-[#1D1D1F] leading-snug">${esc(w.en || '')}</span>
+                            ${coreKK ? `<span class="text-[11px] text-gray-400 font-mono">${esc(coreKK)}</span>` : ''}
+                            ${isMarked ? `<span class="text-[9px] bg-emerald-100 text-emerald-700 font-bold px-1.5 py-0.5 rounded-full">已劃線</span>` : ''}
                         </div>
-                        <div class="text-xs text-[#86868B] leading-snug line-clamp-2 mt-0.5 break-words" title="${esc(w.zh || '')}">${esc(w.zh || '')}</div>
+                        <div class="text-xs text-[#555] leading-snug mt-0.5 break-words" title="${esc(w.zh || '')}">${esc(w.zh || '')}</div>
                     </div>
                     <div class="flex items-center gap-1 shrink-0" onclick="event.stopPropagation()">
                         <button onclick="event.stopPropagation(); playAudio('${safeEn}')" class="text-[#0071E3] hover:bg-[#E5E5EA] p-1.5 rounded-full transition" title="朗讀發音">

@@ -6729,5 +6729,341 @@ const listeningArticlesDB = [
         "zh": "v. 召開、召集正式會議"
       }
     ]
+  },
+  {
+    "id": "2026_kids_daily_01",
+    "month": "兒童專區",
+    "category": "kids",
+    "title": "兒童生活 (1): 刷牙與美味早餐 (Morning Routine & Breakfast)",
+    "level": "Pre-A1",
+    "isDialogue": true,
+    "text": "Good morning, Lily! Time to wake up and brush your teeth. Good morning, Mommy! Where is my pink toothbrush? It is right next to the sink. Don't forget to wash your face too. All clean! Mommy, I am hungry. What is for breakfast today? I made warm pancakes and fresh strawberries for you. Yummy! Can I have a cup of warm milk, please? Of course, sweetie. Sit down at the table and enjoy your breakfast. Thank you, Mommy! I love you so much.",
+    "sentences": [
+      {
+        "speaker": "Mom",
+        "role": "A",
+        "roleDesc": "媽媽 (Jenny)",
+        "avatar": "👩",
+        "en": "Good morning, Lily! Time to wake up and brush your teeth.",
+        "zh": "早安莉莉！該起床刷牙囉。",
+        "start": 0.0,
+        "end": 4.94
+      },
+      {
+        "speaker": "Lily",
+        "role": "B",
+        "roleDesc": "女兒 5歲 (Ana)",
+        "avatar": "👧",
+        "en": "Good morning, Mommy! Where is my pink toothbrush?",
+        "zh": "早安媽咪！我的粉紅色牙刷在哪裡？",
+        "start": 5.29,
+        "end": 10.43
+      },
+      {
+        "speaker": "Mom",
+        "role": "A",
+        "roleDesc": "媽媽 (Jenny)",
+        "avatar": "👩",
+        "en": "It is right next to the sink. Don't forget to wash your face too.",
+        "zh": "就在洗手台旁邊。別忘了也要洗臉喔。",
+        "start": 10.78,
+        "end": 16.04
+      },
+      {
+        "speaker": "Lily",
+        "role": "B",
+        "roleDesc": "女兒 5歲 (Ana)",
+        "avatar": "👧",
+        "en": "All clean! Mommy, I am hungry. What is for breakfast today?",
+        "zh": "都洗乾淨了！媽咪我好餓，今天早餐吃什麼？",
+        "start": 16.39,
+        "end": 23.3
+      },
+      {
+        "speaker": "Mom",
+        "role": "A",
+        "roleDesc": "媽媽 (Jenny)",
+        "avatar": "👩",
+        "en": "I made warm pancakes and fresh strawberries for you.",
+        "zh": "我為妳做了熱騰騰的鬆餅和新鮮草莓。",
+        "start": 23.65,
+        "end": 27.32
+      },
+      {
+        "speaker": "Lily",
+        "role": "B",
+        "roleDesc": "女兒 5歲 (Ana)",
+        "avatar": "👧",
+        "en": "Yummy! Can I have a cup of warm milk, please?",
+        "zh": "太棒了！請問我可以喝一杯溫牛奶嗎？",
+        "start": 27.67,
+        "end": 32.61
+      },
+      {
+        "speaker": "Mom",
+        "role": "A",
+        "roleDesc": "媽媽 (Jenny)",
+        "avatar": "👩",
+        "en": "Of course, sweetie. Sit down at the table and enjoy your breakfast.",
+        "zh": "當然可以，寶貝。到餐桌前坐好，享用妳的早餐吧。",
+        "start": 32.96,
+        "end": 38.55
+      },
+      {
+        "speaker": "Lily",
+        "role": "B",
+        "roleDesc": "女兒 5歲 (Ana)",
+        "avatar": "👧",
+        "en": "Thank you, Mommy! I love you so much.",
+        "zh": "謝謝媽咪！我好愛妳。",
+        "start": 38.9,
+        "end": 43.58
+      }
+    ],
+    "grammar": [
+      {
+        "tag": "時間不定詞片語",
+        "title": "該做某事的時間：Time to + V",
+        "pattern": "Time to + 原形動詞 (V)",
+        "explanation": "日常家庭中最常見的催促與作息用語，省略主詞與 be 動詞 (It is time to...)，語氣親切自然。",
+        "keyPoint": "後方接原形動詞，例如 Time to wake up (該起床了)、Time to brush (該刷牙了)。",
+        "example": "<span class='font-bold text-[#0071E3] underline decoration-[#0071E3]/60 decoration-2 underline-offset-4'>Time to wake up</span> and <span class='font-bold text-[#0071E3] underline decoration-[#0071E3]/60 decoration-2 underline-offset-4'>brush your teeth</span>.",
+        "exampleZh": "該起床刷牙囉。"
+      },
+      {
+        "tag": "禮貌請求句型",
+        "title": "請求允許：Can I have + 物品, please?",
+        "pattern": "Can I have + 名詞 + please?",
+        "explanation": "兒童表達需求與點心最禮貌的日常標準問句，句尾加 please 表現良好家教禮儀。",
+        "keyPoint": "have 此處作「喝/享用」，例如 have a cup of warm milk。",
+        "example": "<span class='font-bold text-[#0071E3] underline decoration-[#0071E3]/60 decoration-2 underline-offset-4'>Can I have a cup of warm milk, please?</span>",
+        "exampleZh": "請問我可以喝一杯溫牛奶嗎？"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "1. What does Mom ask Lily to do first in the morning?",
+        "options": [
+          "A. Go outside and play",
+          "B. Wake up and brush her teeth",
+          "C. Cook pancakes by herself",
+          "D. Wash the dishes"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "2. What did Mom prepare for breakfast?",
+        "options": [
+          "A. Warm pancakes and fresh strawberries",
+          "B. Hamburgers and French fries",
+          "C. Pizza and cola",
+          "D. Salad and noodles"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "3. What drink does Lily ask for?",
+        "options": [
+          "A. Cold apple juice",
+          "B. Hot tea",
+          "C. A cup of warm milk",
+          "D. Iced water"
+        ],
+        "ans": 2
+      }
+    ],
+    "voice": "en-US-JennyNeural & en-US-AnaNeural",
+    "voiceLabel": "雙角色 (媽媽 & 5歲女兒)",
+    "audio": "audio/listening/2026_kids_daily_01.mp3",
+    "vocabulary": [
+      {
+        "en": "toothbrush",
+        "zh": "n. 牙刷"
+      },
+      {
+        "en": "sink",
+        "zh": "n. 洗手台、水槽"
+      },
+      {
+        "en": "pancake",
+        "zh": "n. 鬆餅、薄煎餅"
+      },
+      {
+        "en": "strawberry",
+        "zh": "n. 草莓"
+      },
+      {
+        "en": "yummy",
+        "zh": "adj. 好吃的、美味的"
+      }
+    ]
+  },
+  {
+    "id": "2026_kids_daily_02",
+    "month": "兒童專區",
+    "category": "kids",
+    "title": "兒童生活 (2): 收拾玩具與睡前故事 (Tidying Up & Bedtime Story)",
+    "level": "Pre-A1",
+    "isDialogue": true,
+    "text": "Lily, look at the floor! Your teddy bear and toy blocks are everywhere. Oops, sorry Mommy! Can you help me put them into the toy box? Sure, let's clean up together. Teamwork makes the dream work! Look, Mommy! All the toys are sleeping in the big box now. Great job, Lily! You are such a helpful big girl. Yay! Now can we read my favorite bunny storybook in bed? Put on your warm pajamas first, then we will read together. Okay! Goodnight, Mommy. Sweet dreams!",
+    "sentences": [
+      {
+        "speaker": "Mom",
+        "role": "A",
+        "roleDesc": "媽媽 (Jenny)",
+        "avatar": "👩",
+        "en": "Lily, look at the floor! Your teddy bear and toy blocks are everywhere.",
+        "zh": "莉莉，看地板！妳的小熊玩偶和積木散落得到處都是。",
+        "start": 0.0,
+        "end": 5.76
+      },
+      {
+        "speaker": "Lily",
+        "role": "B",
+        "roleDesc": "女兒 5歲 (Ana)",
+        "avatar": "👧",
+        "en": "Oops, sorry Mommy! Can you help me put them into the toy box?",
+        "zh": "哎呀，對不起媽咪！妳可以幫我把它們放進玩具箱嗎？",
+        "start": 6.11,
+        "end": 11.92
+      },
+      {
+        "speaker": "Mom",
+        "role": "A",
+        "roleDesc": "媽媽 (Jenny)",
+        "avatar": "👩",
+        "en": "Sure, let's clean up together. Teamwork makes the dream work!",
+        "zh": "當然，我們一起收拾。大家同心協力最棒了！",
+        "start": 12.27,
+        "end": 17.6
+      },
+      {
+        "speaker": "Lily",
+        "role": "B",
+        "roleDesc": "女兒 5歲 (Ana)",
+        "avatar": "👧",
+        "en": "Look, Mommy! All the toys are sleeping in the big box now.",
+        "zh": "媽咪妳看！現在所有玩具都在大箱子裡睡覺了。",
+        "start": 17.95,
+        "end": 23.81
+      },
+      {
+        "speaker": "Mom",
+        "role": "A",
+        "roleDesc": "媽媽 (Jenny)",
+        "avatar": "👩",
+        "en": "Great job, Lily! You are such a helpful big girl.",
+        "zh": "做得很棒，莉莉！妳真是個體貼的小幫手。",
+        "start": 24.16,
+        "end": 28.94
+      },
+      {
+        "speaker": "Lily",
+        "role": "B",
+        "roleDesc": "女兒 5歲 (Ana)",
+        "avatar": "👧",
+        "en": "Yay! Now can we read my favorite bunny storybook in bed?",
+        "zh": "耶！那現在我們可以在床上讀我最喜歡的小兔子故事書了嗎？",
+        "start": 29.29,
+        "end": 34.69
+      },
+      {
+        "speaker": "Mom",
+        "role": "A",
+        "roleDesc": "媽媽 (Jenny)",
+        "avatar": "👩",
+        "en": "Put on your warm pajamas first, then we will read together.",
+        "zh": "先換上妳溫暖的睡衣，然後我們就一起讀。",
+        "start": 35.04,
+        "end": 39.24
+      },
+      {
+        "speaker": "Lily",
+        "role": "B",
+        "roleDesc": "女兒 5歲 (Ana)",
+        "avatar": "👧",
+        "en": "Okay! Goodnight, Mommy. Sweet dreams!",
+        "zh": "好的！晚安，媽咪。祝妳好夢！",
+        "start": 39.59,
+        "end": 45.3
+      }
+    ],
+    "grammar": [
+      {
+        "tag": "動詞片語：收拾整理",
+        "title": "一起清理乾淨：clean up",
+        "pattern": "clean up + (名詞)",
+        "explanation": "生活必備動詞片語，clean up 代表「把混亂的地方收拾整潔」。",
+        "keyPoint": "Let's clean up together 常用於引導孩子養成收拾習慣。",
+        "example": "Sure, <span class='font-bold text-[#0071E3] underline decoration-[#0071E3]/60 decoration-2 underline-offset-4'>let's clean up</span> together.",
+        "exampleZh": "當然，我們一起收拾。"
+      },
+      {
+        "tag": "穿上與換衣",
+        "title": "穿上衣服：Put on + 衣服",
+        "pattern": "Put on + 衣服配件",
+        "explanation": "表示「穿戴上」動作，區別於 wear（穿著狀態）。睡前常說 Put on your pajamas。",
+        "keyPoint": "pajamas 永遠為複數名詞，因睡衣有上下兩截或兩條褲管。",
+        "example": "<span class='font-bold text-[#0071E3] underline decoration-[#0071E3]/60 decoration-2 underline-offset-4'>Put on your warm pajamas</span> first.",
+        "exampleZh": "先換上妳溫暖的睡衣。"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "1. What was scattered on the floor?",
+        "options": [
+          "A. Books and pencils",
+          "B. A teddy bear and toy blocks",
+          "C. Shoes and socks",
+          "D. Dishes and cups"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "2. What do Mom and Lily do together?",
+        "options": [
+          "A. They go to the supermarket",
+          "B. They cook dinner",
+          "C. They clean up the toys together",
+          "D. They watch television"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "3. What must Lily do before reading the bunny storybook?",
+        "options": [
+          "A. Wash the car",
+          "B. Eat more candy",
+          "C. Put on her warm pajamas",
+          "D. Run around outside"
+        ],
+        "ans": 2
+      }
+    ],
+    "voice": "en-US-JennyNeural & en-US-AnaNeural",
+    "voiceLabel": "雙角色 (媽媽 & 5歲女兒)",
+    "audio": "audio/listening/2026_kids_daily_02.mp3",
+    "vocabulary": [
+      {
+        "en": "teddy bear",
+        "zh": "n. 泰迪熊、小熊玩偶"
+      },
+      {
+        "en": "block",
+        "zh": "n. 積木、塊"
+      },
+      {
+        "en": "teamwork",
+        "zh": "n. 團隊合作、協力"
+      },
+      {
+        "en": "bunny",
+        "zh": "n. 小兔子"
+      },
+      {
+        "en": "pajamas",
+        "zh": "n. 睡衣褲 (複數)"
+      }
+    ]
   }
 ];

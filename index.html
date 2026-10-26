@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261026V13';
+        const APP_BUILD_VERSION = '20261026V14';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -30,18 +31,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261026V13"></script>
-    <script src="toeic_data.js?v=20261026V13"></script>
-    <script src="jh_data.js?v=20261026V13"></script>
-    <script src="listening_data.js?v=20261026V13"></script>
-    <script src="uk_phonetics_manifest.js?v=20261026V13"></script>
-    <script src="words_audio_manifest.js?v=20261026V13"></script>
-    <script src="examples_audio_manifest.js?v=20261026V13"></script>
-    <script src="zh_audio_manifest.js?v=20261026V13"></script>
-    <script src="collocations_audio_manifest.js?v=20261026V13"></script>
-    <script src="syn_ant_data.js?v=20261026V13"></script>
-    <script src="synonyms_unit8_data.js?v=20261026V13"></script>
-    <script src="examples_unit9_data.js?v=20261026V13"></script>
+    <script src="words_data.js?v=20261026V14"></script>
+    <script src="toeic_data.js?v=20261026V14"></script>
+    <script src="jh_data.js?v=20261026V14"></script>
+    <script src="listening_data.js?v=20261026V14"></script>
+    <script src="uk_phonetics_manifest.js?v=20261026V14"></script>
+    <script src="words_audio_manifest.js?v=20261026V14"></script>
+    <script src="examples_audio_manifest.js?v=20261026V14"></script>
+    <script src="zh_audio_manifest.js?v=20261026V14"></script>
+    <script src="collocations_audio_manifest.js?v=20261026V14"></script>
+    <script src="syn_ant_data.js?v=20261026V14"></script>
+    <script src="synonyms_unit8_data.js?v=20261026V14"></script>
+    <script src="examples_unit9_data.js?v=20261026V14"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -1370,9 +1371,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261026V13</span>
+                        <span id="app-version-display">版本 20261026V14</span>
                     </div>
-                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261026V13</p>
+                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261026V14</p>
                 </div>
             </div>
         </div>
@@ -3181,6 +3182,7 @@
         const wordAudioPlayer = new Audio();
         wordAudioPlayer.preload = 'auto';
         try { wordAudioPlayer.playsInline = true; } catch(e) {}
+        try { wordAudioPlayer.referrerPolicy = 'no-referrer'; } catch(e) {}
 
         // ==========================================
         // 手機端 (iOS Safari / Android) 音訊自動解鎖
@@ -3410,7 +3412,7 @@
             }
         }
 
-        // 逐字母拼讀核心函數 (使用本機 26 個超清 Edge-TTS 字母 MP3 依序流式朗讀)
+        // 逐字母拼讀核心函數 (首選 Google TTS 完整流暢整段 MP3 串流，備援 Web Speech API)
         function playSpellLetters(word, onEndedCallback) {
             if (isSpeechEvalActive) {
                 if (typeof onEndedCallback === 'function') onEndedCallback();
@@ -3423,26 +3425,21 @@
             stopAllAudio();
             unlockMobileAudio();
 
-            const raw = String(word).trim().toLowerCase();
-            const tokens = [];
-            for (let i = 0; i < raw.length; i++) {
-                const ch = raw[i];
-                if (/[a-z]/.test(ch)) {
-                    tokens.push({ type: 'letter', val: ch });
-                } else if (/\s|-/.test(ch)) {
-                    // 詞組空格或連字號間隔，插入微小停頓
-                    if (tokens.length > 0 && tokens[tokens.length - 1].type !== 'pause') {
-                        tokens.push({ type: 'pause', val: 260 });
-                    }
-                }
-            }
+            const raw = String(word).trim();
+            // 拆分單字/片語，將英文字母轉為大寫並用空格分隔（片語或連字號以逗號隔開），讓 TTS 進入自然流暢的逐字母拼讀模式
+            const parts = raw.split(/[\s\-]+/);
+            const formattedWords = parts.map(part => {
+                const letters = part.replace(/[^a-zA-Z]/g, '').toUpperCase().split('').join(' ');
+                return letters;
+            }).filter(Boolean);
 
-            if (tokens.length === 0) {
+            if (formattedWords.length === 0) {
                 if (typeof onEndedCallback === 'function') onEndedCallback();
                 return;
             }
 
-            let index = 0;
+            const spelledText = formattedWords.join(' , ');
+
             let isCancelled = false;
 
             const spellBtn = document.getElementById('btn-card-voice-spell');
@@ -3459,6 +3456,12 @@
                 currentSpellLettersController = null;
             };
 
+            const finish = () => {
+                if (isCancelled) return;
+                cleanup();
+                if (typeof onEndedCallback === 'function') onEndedCallback();
+            };
+
             currentSpellLettersController = {
                 cancel: () => {
                     isCancelled = true;
@@ -3466,60 +3469,81 @@
                 }
             };
 
-            function playNext() {
-                if (isCancelled) {
-                    cleanup();
+            // 備援方案：瀏覽器原生語音合成 (Web Speech API)，離線或無網路時 100% 正常播放
+            const fallbackSpeechSynthesis = () => {
+                if (isCancelled) return;
+                if (!('speechSynthesis' in window)) {
+                    finish();
                     return;
                 }
-                if (index >= tokens.length) {
-                    cleanup();
-                    if (typeof onEndedCallback === 'function') onEndedCallback();
-                    return;
-                }
-
-                const token = tokens[index++];
-                if (token.type === 'pause') {
-                    backsideAudioTimerId = setTimeout(playNext, token.val);
-                    return;
-                }
-
-                const letter = token.val;
-                const letterSrc = `audio/letters/${letter}.mp3`;
-
                 try {
-                    wordAudioPlayer.pause();
-                    wordAudioPlayer.currentTime = 0;
-                } catch(e) {}
-
-                const attachCallback = (audioEl) => {
-                    clearAudioCallbacks();
-                    let called = false;
-                    const next = () => {
-                        if (called || isCancelled) return;
-                        called = true;
-                        clearAudioCallbacks();
-                        // 每個字母朗讀完畢間隔 100ms
-                        backsideAudioTimerId = setTimeout(playNext, 100);
+                    window.speechSynthesis.cancel();
+                    const utter = new SpeechSynthesisUtterance(spelledText);
+                    utter.lang = 'en-US';
+                    utter.rate = 0.9;
+                    utter.onend = () => {
+                        window._activeSpeechUtterance = null;
+                        finish();
                     };
-                    currentAudioDoneHandler = next;
-                    audioEl.addEventListener('ended', next, { once: true });
-                    audioEl.addEventListener('error', next, { once: true });
-                    audioFallbackTimerId = setTimeout(next, 700);
-                };
-
-                wordAudioPlayer.src = letterSrc;
-                wordAudioPlayer.playbackRate = 1.0;
-                attachCallback(wordAudioPlayer);
-                const p = wordAudioPlayer.play();
-                if (p !== undefined) {
-                    p.catch(err => {
-                        if (err && (err.name === 'AbortError' || err.code === 20)) return;
-                        playNext();
-                    });
+                    utter.onerror = () => {
+                        window._activeSpeechUtterance = null;
+                        finish();
+                    };
+                    window._activeSpeechUtterance = utter;
+                    window.speechSynthesis.speak(utter);
+                } catch(e) {
+                    finish();
                 }
-            }
+            };
 
-            playNext();
+            // 首選：Google TTS 完整流暢整段 MP3（以單一音訊流播放，節奏自然、零切換延遲）
+            const ttsUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=en&client=tw-ob&q=${encodeURIComponent(spelledText)}`;
+
+            try {
+                wordAudioPlayer.pause();
+                wordAudioPlayer.currentTime = 0;
+            } catch(e) {}
+
+            const attachCallback = (audioEl) => {
+                clearAudioCallbacks();
+                let called = false;
+                const next = () => {
+                    if (called || isCancelled) return;
+                    called = true;
+                    clearAudioCallbacks();
+                    finish();
+                };
+                currentAudioDoneHandler = next;
+                audioEl.addEventListener('ended', next, { once: true });
+                audioEl.addEventListener('error', () => {
+                    if (called || isCancelled) return;
+                    called = true;
+                    clearAudioCallbacks();
+                    fallbackSpeechSynthesis();
+                }, { once: true });
+                // 字母拼讀超時防呆保護
+                const safeTimeout = Math.max(3500, spelledText.length * 500);
+                audioFallbackTimerId = setTimeout(() => {
+                    if (called || isCancelled) return;
+                    called = true;
+                    clearAudioCallbacks();
+                    fallbackSpeechSynthesis();
+                }, safeTimeout);
+            };
+
+            wordAudioPlayer.src = ttsUrl;
+            wordAudioPlayer.playbackRate = 1.0;
+            attachCallback(wordAudioPlayer);
+
+            const p = wordAudioPlayer.play();
+            if (p !== undefined) {
+                p.catch(err => {
+                    if (err && (err.name === 'AbortError' || err.code === 20)) return;
+                    if (!isCancelled) {
+                        fallbackSpeechSynthesis();
+                    }
+                });
+            }
         }
 
         function playBacksideAudio(onEndedCallback) {

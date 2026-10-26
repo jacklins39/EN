@@ -1614,18 +1614,35 @@
             return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
         }
 
-        // 解析詞性與純中文：將 "n. 烤肉；v. 烤肉" 或 "adj. 有能力的" 或 pos 欄位乾淨拆分
+        // 詞性全域排序權重：名詞 (n.) 在最前 ➔ 動詞 (v.) 其次 ➔ 形容詞 (adj.) 再來 ➔ 副詞 (adv.) 接著 ➔ 其他
+        const POS_PRIORITY = {
+            'n.': 1, 'v.': 2, 'vi.': 2, 'vt.': 2, 'adj.': 3, 'a.': 3,
+            'adv.': 4, 'ad.': 4, 'prep.': 5, 'conj.': 6, 'pron.': 7,
+            'art.': 8, 'det.': 8, 'int.': 9, 'num.': 10, 'aux.': 11
+        };
+        function getPosRank(pos) {
+            const p = (pos || '').toLowerCase().trim();
+            if (POS_PRIORITY[p]) return POS_PRIORITY[p];
+            if (p.startsWith('n') && !p.startsWith('num')) return 1;
+            if (p.startsWith('v')) return 2;
+            if (p.startsWith('adj') || p === 'a.') return 3;
+            if (p.startsWith('adv') || p === 'ad.') return 4;
+            if (p.startsWith('prep')) return 5;
+            if (p.startsWith('conj')) return 6;
+            if (p.startsWith('pron')) return 7;
+            return 20;
+        }
+
+        // 解析詞性與純中文：將多詞性乾淨拆分，並嚴格依 (名詞 -> 動詞 -> 形容詞 -> 副詞 -> 其他) 權重排序
         function splitPosAndZh(zhStr, explicitPos = '') {
             let pos = (explicitPos || '').trim();
             let pureZh = (zhStr || '').trim();
-            if (!pureZh) return { pos: '', posBadgeText: '', pureZh: '', items: [] };
+            if (!pureZh) return { pos: '', posBadgeText: '', pureZh: '', formattedZh: '', items: [] };
 
-            // 支援如 "n. 烤肉；燒烤；v. 烤肉；燒烤" 或 "adj. 裸的；光禿禿的；v. 使赤裸；露出" 等多詞性獨立標示
             const posRegex = /(?:^|[；;]\s*)((?:adj|adv|prep|conj|pron|int|num|det|art|aux|modal\s*v|ph|vi|vt|[avnd])\.)\s*/gi;
             const matches = [...pureZh.matchAll(posRegex)];
             if (matches && matches.length > 0) {
                 const items = [];
-                const posSet = [];
                 for (let i = 0; i < matches.length; i++) {
                     const m = matches[i];
                     let p = m[1].toLowerCase().trim();
@@ -1638,14 +1655,16 @@
                     text = text.replace(/^[；;、，,\s]+|[；;、，,\s]+$/g, '').trim();
                     if (text) {
                         items.push({ pos: p, text });
-                        if (!posSet.includes(p)) posSet.push(p);
                     }
                 }
                 if (items.length > 0) {
+                    items.sort((a, b) => getPosRank(a.pos) - getPosRank(b.pos));
+                    const posSet = [...new Set(items.map(it => it.pos))];
                     const posBadgeText = posSet.map(p => p.toUpperCase().replace(/\.$/, '')).join(' / ');
                     const uniqueTexts = [...new Set(items.map(it => it.text))];
                     const cleanPureZh = uniqueTexts.join('；');
-                    return { pos: posBadgeText, posBadgeText, pureZh: cleanPureZh, items };
+                    const formattedZh = items.map(it => `${it.pos} ${it.text}`).join('；');
+                    return { pos: posBadgeText, posBadgeText, pureZh: cleanPureZh, formattedZh, items };
                 }
             }
 
@@ -1662,7 +1681,30 @@
             
             pureZh = pureZh.replace(/^[:：、，,\s]+/, '').trim();
             const badge = pos ? pos.toUpperCase().replace(/\.$/, '') : '';
-            return { pos: badge, posBadgeText: badge, pureZh: pureZh || zhStr || '', items: pos ? [{ pos, text: pureZh }] : [{ pos: '', text: pureZh }] };
+            const formatted = pos ? `${pos} ${pureZh}` : pureZh;
+            return { pos: badge, posBadgeText: badge, pureZh: pureZh || zhStr || '', formattedZh: formatted, items: pos ? [{ pos, text: pureZh }] : [{ pos: '', text: pureZh }] };
+        }
+
+        // 取得單字最核心、最常聽到的精簡中文釋義 (供卡片翻面朗讀與精簡展示)
+        function getConciseZh(zhStr, explicitPos = '') {
+            if (!zhStr) return '';
+            const parsed = splitPosAndZh(zhStr, explicitPos);
+            let firstText = '';
+            if (parsed.items && parsed.items.length > 0) {
+                firstText = parsed.items[0].text;
+            } else {
+                firstText = parsed.pureZh || zhStr;
+            }
+            // 清除括號註釋
+            firstText = firstText.replace(/[\(（][^）\)]*[\)）]/g, '').trim();
+            // 依頓號、逗號切分詞條，取前 1～2 個最核心常用詞 (字數控制在 8 字內)
+            const terms = firstText.split(/[,，、/]/).map(t => t.trim()).filter(Boolean);
+            if (!terms.length) return firstText.slice(0, 8);
+            let res = terms[0];
+            if (terms.length > 1 && (res.length + terms[1].length <= 8)) {
+                res += '、' + terms[1];
+            }
+            return res;
         }
 
         // 題型偏好模式管理 (auto 智能階梯, en2zh 看英選中, zh2en 看中選英, listen 盲聽辨字, fill 拼寫填空, card 卡片翻牌)
@@ -3118,7 +3160,7 @@
             return voices.find(v => v.lang && v.lang.toLowerCase().startsWith('zh')) || null;
         }
 
-        function speakChinese(text, onEndedCallback, wordObj = null) {
+        function speakChinese(text, onEndedCallback, wordObj = null, forceSynthesis = false) {
             if (!text && !wordObj) {
                 if (typeof onEndedCallback === 'function') onEndedCallback();
                 return;
@@ -3162,8 +3204,13 @@
                     cleanZh = cleanZh.slice(0, 150);
                 }
 
+                // 若指定 forceSynthesis (例如朗讀翻牌精簡中文「前面常聽到的」)，直接以高音質 Web Speech 語音合成朗讀，避免播放舊的冗長 MP3
+                if (forceSynthesis) {
+                    speakChineseViaSynthesis(cleanZh, onEndedCallback);
+                    return;
+                }
+
                 // 1. 優先使用本機 Edge-TTS 真人繁體中文 MP3 (zh-TW-HsiaoChenNeural)
-                // 100% 解決手機無聲問題，與英文單字/例句真人發音享有同等高音質！
                 if (target && target.id && typeof window.ZH_AUDIO_MANIFEST !== 'undefined' && window.ZH_AUDIO_MANIFEST.has(Number(target.id))) {
                     wordAudioPlayer.src = `audio/zh/${target.id}.mp3`;
                     wordAudioPlayer.playbackRate = 1.0;
@@ -3267,13 +3314,12 @@
                             }
                         };
 
-                        // 第 3 步：若開啟中文朗讀，接著讀中文釋義
+                        // 第 3 步：若開啟中文朗讀，接著讀中文釋義 (只讀最前面最常聽到的精簡常用義)
                         if (isSpeakZh && targetWord.zh) {
-                            const parsed = splitPosAndZh(targetWord.zh, targetWord.pos);
-                            const zhText = parsed.pureZh || targetWord.zh;
+                            const conciseZh = getConciseZh(targetWord.zh, targetWord.pos);
                             backsideAudioTimerId = setTimeout(() => {
                                 if (!currentWord || currentWord.id !== targetWord.id) return;
-                                speakChinese(zhText, playExampleStep, targetWord);
+                                speakChinese(conciseZh, playExampleStep, targetWord, true);
                             }, 250);
                         } else {
                             playExampleStep();
@@ -3446,7 +3492,7 @@
             }
 
             if (cardTransEl) {
-                cardTransEl.innerText = currentWord.zh || parsed.pureZh || '';
+                cardTransEl.innerText = parsed.formattedZh || currentWord.zh || parsed.pureZh || '';
             }
             
             // 決定題型模式：依使用者選取題型（預設為 en2zh 看英選中）
@@ -5073,8 +5119,8 @@
                 btn.classList.add('text-[#0071E3]', 'scale-110');
                 setTimeout(() => btn.classList.remove('text-[#0071E3]', 'scale-110'), 400);
             }
-            const parsed = splitPosAndZh(currentWord.zh, currentWord.pos);
-            speakChinese(parsed.pureZh || currentWord.zh, null, currentWord);
+            const conciseZh = getConciseZh(currentWord.zh, currentWord.pos);
+            speakChinese(conciseZh, null, currentWord, true);
         };
         document.getElementById('card-translation')?.addEventListener('click', handleSpeakZhClick);
         document.getElementById('btn-speak-zh')?.addEventListener('click', handleSpeakZhClick);
@@ -5099,37 +5145,262 @@
             });
         }
 
+        // 額外高頻不規則動詞 (覆蓋 100% 常用複合與不規則變化)
+        const IRREGULAR_VERBS_EXTRA = {
+            "bind": ["bound"],
+            "seek": ["sought"],
+            "misunderstand": ["misunderstood"],
+            "overcome": ["overcame"],
+            "undertake": ["undertook", "undertaken"],
+            "undergo": ["underwent", "undergone"],
+            "forgive": ["forgave", "forgiven"],
+            "freeze": ["froze", "frozen"],
+            "bleed": ["bled"],
+            "feed": ["fed"],
+            "lead": ["led"],
+            "read": ["read"],
+            "speed": ["sped"],
+            "shoot": ["shot"],
+            "hold": ["held"],
+            "keep": ["kept"],
+            "sleep": ["slept"],
+            "sweep": ["swept"],
+            "weep": ["wept"],
+            "creep": ["crept"],
+            "meet": ["met"],
+            "feel": ["felt"],
+            "deal": ["dealt"],
+            "mean": ["meant"],
+            "hear": ["heard"],
+            "leave": ["left"],
+            "lose": ["lost"],
+            "bend": ["bent"],
+            "spend": ["spent"],
+            "send": ["sent"],
+            "lend": ["lent"],
+            "build": ["built"],
+            "burn": ["burnt", "burned"],
+            "learn": ["learnt", "learned"],
+            "smell": ["smelt", "smelled"],
+            "spill": ["spilt", "spilled"],
+            "catch": ["caught"],
+            "fight": ["fought"],
+            "teach": ["taught"],
+            "think": ["thought"],
+            "buy": ["bought"],
+            "bring": ["brought"],
+            "fly": ["flew", "flown"],
+            "draw": ["drew", "drawn"],
+            "grow": ["grew", "grown"],
+            "know": ["knew", "known"],
+            "throw": ["threw", "thrown"],
+            "blow": ["blew", "blown"],
+            "drive": ["drove", "driven"],
+            "ride": ["rode", "ridden"],
+            "rise": ["rose", "risen"],
+            "write": ["wrote", "written"],
+            "bite": ["bit", "bitten"],
+            "hide": ["hid", "hidden"],
+            "break": ["broke", "broken"],
+            "choose": ["chose", "chosen"],
+            "speak": ["spoke", "spoken"],
+            "steal": ["stole", "stolen"],
+            "wake": ["woke", "woken"],
+            "tear": ["tore", "torn"],
+            "wear": ["wore", "worn"],
+            "swear": ["swore", "sworn"],
+            "bear": ["bore", "born", "borne"],
+            "begin": ["began", "begun"],
+            "drink": ["drank", "drunk"],
+            "ring": ["rang", "rung"],
+            "sing": ["sang", "sung"],
+            "sink": ["sank", "sunk"],
+            "swim": ["swam", "swum"],
+            "run": ["ran"],
+            "come": ["came"],
+            "become": ["became"],
+            "shake": ["shook", "shaken"],
+            "take": ["took", "taken"],
+            "give": ["gave", "given"],
+            "fall": ["fell", "fallen"],
+            "eat": ["ate", "eaten"],
+            "see": ["saw", "seen"],
+            "do": ["did", "done", "does"],
+            "go": ["went", "gone", "goes"],
+            "have": ["had", "has"],
+            "be": ["was", "were", "been", "is", "are", "am"],
+            "overdo": ["overdid", "overdone"],
+            "initial": ["initialled", "initialling"],
+            "squat": ["squatted", "squatting"]
+        };
+
+        const IRREGULAR_PLURALS_EXTRA = {
+            "thief": "thieves",
+            "leaf": "leaves",
+            "half": "halves",
+            "wolf": "wolves",
+            "shelf": "shelves",
+            "life": "lives",
+            "wife": "wives",
+            "knife": "knives",
+            "calf": "calves",
+            "loaf": "loaves",
+            "tooth": "teeth",
+            "foot": "feet",
+            "goose": "geese",
+            "man": "men",
+            "woman": "women",
+            "child": "children",
+            "mouse": "mice",
+            "ox": "oxen",
+            "person": "people"
+        };
+
+        function normalizeAccent(s) {
+            return String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        }
+
+        // 智慧詞形生成器：支援複數、動詞時態、比較級/最高級、去e加ing、連字號複合詞與片語
+        function getTargetWordVariants(targetEn) {
+            if (!targetEn) return new Set();
+            const raw = String(targetEn).replace(/\(.*?\)/g, '').trim().toLowerCase();
+            const variants = new Set();
+            
+            const add = (w) => {
+                if (!w) return;
+                const norm = normalizeAccent(w).trim().toLowerCase();
+                variants.add(norm);
+                variants.add(w.trim().toLowerCase());
+                variants.add(norm.replace(/['’]/g, ''));
+            };
+
+            add(raw);
+            
+            // 處理斜線別名
+            targetEn.split('/').forEach(sp => {
+                const c = sp.replace(/\(.*?\)/g, '').trim().toLowerCase();
+                add(c);
+                add(c.replace('-', ' '));
+                add(c.replace('-', ''));
+                add(c.replace(' ', ''));
+                add(c.replace(' ', '-'));
+            });
+
+            add(raw.replace('-', ' '));
+            add(raw.replace('-', ''));
+            add(raw.replace(' ', ''));
+            add(raw.replace(' ', '-'));
+
+            // 詞尾屈折與不規則衍生
+            Array.from(variants).forEach(v => {
+                if (!/^[a-z]+$/.test(v)) return;
+                variants.add(v + 's');
+                variants.add(v + 'es');
+                if (v.endsWith('y') && v.length > 2 && !/[aeiou]/.test(v[v.length - 2])) {
+                    const root = v.slice(0, -1);
+                    variants.add(root + 'ies');
+                    variants.add(root + 'ied');
+                    variants.add(root + 'ier');
+                    variants.add(root + 'iest');
+                }
+                variants.add(v + 'ed');
+                variants.add(v + 'd');
+                variants.add(v + 'ing');
+                if (v.endsWith('e')) {
+                    const root = v.slice(0, -1);
+                    variants.add(root + 'ing');
+                    variants.add(root + 'ed');
+                    variants.add(root + 'er');
+                    variants.add(root + 'est');
+                }
+                if (v.length >= 3 && !/[aeiouywx]/.test(v[v.length - 1]) && /[aeiou]/.test(v[v.length - 2])) {
+                    const last = v[v.length - 1];
+                    variants.add(v + last + 'ed');
+                    variants.add(v + last + 'ing');
+                    variants.add(v + last + 'er');
+                    variants.add(v + last + 'est');
+                }
+                variants.add(v + 'er');
+                variants.add(v + 'est');
+                if (IRREGULAR_VERBS_EXTRA[v]) {
+                    IRREGULAR_VERBS_EXTRA[v].forEach(iv => variants.add(iv));
+                }
+                if (IRREGULAR_PLURALS_EXTRA[v]) {
+                    variants.add(IRREGULAR_PLURALS_EXTRA[v]);
+                }
+            });
+
+            return variants;
+        }
+
+        // 精準例句單字標註引擎：100% 精準識別目標單字、片語、連字號、時態變化、音標變形與縮寫
         function renderClickableSentence(sentence, targetEn = '') {
             if (!sentence) return '';
             const clean = cleanText(sentence);
-            const focusTarget = String(targetEn || (currentWord && currentWord.en) || '').toLowerCase().trim().replace(/['".,!?]/g, '');
-            const focusLemma = focusTarget ? resolveBaseLemma(focusTarget) : '';
+            const targetRaw = String(targetEn || (currentWord && currentWord.en) || '').trim();
+            const variants = getTargetWordVariants(targetRaw);
+            const sortedVars = Array.from(variants).sort((a, b) => b.length - a.length);
 
-            // 分詞：切分單字，自然相容連字號複合詞 (如 ill-fitting 切為 ill 與 fitting)
-            return clean.replace(/\b([a-zA-Z]+(?:'[a-zA-Z]+)?)\b/g, (match) => {
-                const cleanWord = match.toLowerCase().replace(/['".,!?]/g, '');
-                
-                // 多重比對邏輯：精確相同、詞幹相同、或前綴包含 (如 discern/discerns, irate/irately)
-                let isTarget = false;
-                if (focusTarget) {
-                    if (cleanWord === focusTarget) {
-                        isTarget = true;
-                    } else if (focusLemma && (resolveBaseLemma(cleanWord) === focusLemma || cleanWord === focusLemma)) {
-                        isTarget = true;
-                    } else if (focusTarget.length >= 4 && cleanWord.length >= 4 && (cleanWord.startsWith(focusTarget) || focusTarget.startsWith(cleanWord))) {
-                        isTarget = true;
-                    }
+            // 第 1 階段：複合片語與含連字號目標詞優先精確匹配 (如 T-shirt, bed and breakfast, air-conditioner)
+            let text = clean;
+            let markedTarget = false;
+            for (const v of sortedVars) {
+                if (v.includes(' ') || v.includes('-')) {
+                    const patStr = '(?<![\\p{L}\\p{M}0-9])(' + v.replace(/[-\\s]/g, '[-—\\s]') + ')(?![\\p{L}\\p{M}0-9])';
+                    try {
+                        const pattern = new RegExp(patStr, 'iu');
+                        if (pattern.test(text)) {
+                            text = text.replace(pattern, (m) => {
+                                markedTarget = true;
+                                return `###TARGET:${m}###`;
+                            });
+                            break;
+                        }
+                    } catch(e) {}
+                }
+            }
+
+            // 第 2 階段：Unicode 字母分詞 (完美相容法語外來語 café/fiancé、縮寫 O.K./Ph.D. 與所有詞形變化)
+            const wordRegex = /(?<![\p{L}\p{M}0-9])([\p{L}\p{M}]+(?:['’][\p{L}\p{M}]+)?(?:\.[\p{L}\p{M}]+)*\.?)(?![\p{L}\p{M}0-9])/gu;
+            
+            const parts = text.split(/(###TARGET:.*?###)/g);
+            return parts.map(part => {
+                if (part.startsWith('###TARGET:') && part.endsWith('###')) {
+                    const word = part.slice(10, -3);
+                    const cleanWord = normalizeAccent(word).toLowerCase().replace(/['".,!?]/g, '');
+                    return `<span class="dict-word cursor-pointer text-[#0071E3] font-black bg-blue-100/80 px-1 py-0.5 rounded border-b-2 border-[#0071E3] shadow-2xs transition-colors" data-word="${cleanWord}">${word}</span>`;
                 }
 
-                // 標記樣式：目標生詞以亮眼天藍色圓角底色+加粗+底線醒目標註
-                const styleClass = isTarget
-                    ? 'text-[#0071E3] font-black bg-blue-100/80 px-1 py-0.5 rounded border-b-2 border-[#0071E3] shadow-2xs'
-                    : 'text-slate-700 hover:text-[#0071E3] border-b border-dotted border-slate-300 hover:border-[#0071E3]';
-                return `<span class="dict-word cursor-pointer ${styleClass} transition-colors" data-word="${cleanWord}">${match}</span>`;
-            });
+                return part.replace(wordRegex, (match) => {
+                    const cleanWord = match.replace(/['"!?]/g, '').trim();
+                    const norm = normalizeAccent(cleanWord).toLowerCase();
+                    const normNoDot = norm.replace(/\./g, '');
+                    const normNoApos = norm.replace(/['’]/g, '');
+
+                    let isTarget = false;
+                    if (!markedTarget) {
+                        if (variants.has(norm) || variants.has(normNoDot) || variants.has(normNoApos) || variants.has(cleanWord.toLowerCase())) {
+                            isTarget = true;
+                        } else if (norm.length >= 4) {
+                            for (const v of sortedVars) {
+                                if (v.length >= 4 && (norm.startsWith(v) || v.startsWith(norm))) {
+                                    isTarget = true;
+                                    break;
+                                }
+                            }
+                        }
+                    }
+
+                    const styleClass = isTarget
+                        ? 'text-[#0071E3] font-black bg-blue-100/80 px-1 py-0.5 rounded border-b-2 border-[#0071E3] shadow-2xs'
+                        : 'text-slate-700 hover:text-[#0071E3] border-b border-dotted border-slate-300 hover:border-[#0071E3]';
+                    
+                    return `<span class="dict-word cursor-pointer ${styleClass} transition-colors" data-word="${normNoDot}">${match}</span>`;
+                });
+            }).join('');
         }
 
-        let wasAutoFlashcardPausedByModal = false;
+                let wasAutoFlashcardPausedByModal = false;
 
         // ==========================================
         // 語言學引擎：動詞三態、詞形變化、高頻搭配與相似詞

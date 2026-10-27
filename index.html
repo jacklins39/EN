@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261027V41';
+        const APP_BUILD_VERSION = '20261027V43';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -31,19 +31,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261027V41"></script>
-    <script src="toeic_data.js?v=20261027V41"></script>
-    <script src="jh_data.js?v=20261027V41"></script>
-    <script src="listening_data.js?v=20261027V41"></script>
-    <script src="listening_words_data.js?v=20261027V41"></script>
-    <script src="uk_phonetics_manifest.js?v=20261027V41"></script>
-    <script src="words_audio_manifest.js?v=20261027V41"></script>
-    <script src="examples_audio_manifest.js?v=20261027V41"></script>
-    <script src="zh_audio_manifest.js?v=20261027V41"></script>
-    <script src="collocations_audio_manifest.js?v=20261027V41"></script>
-    <script src="syn_ant_data.js?v=20261027V41"></script>
-    <script src="synonyms_unit8_data.js?v=20261027V41"></script>
-    <script src="examples_unit9_data.js?v=20261027V41"></script>
+    <script src="words_data.js?v=20261027V43"></script>
+    <script src="toeic_data.js?v=20261027V43"></script>
+    <script src="jh_data.js?v=20261027V43"></script>
+    <script src="listening_data.js?v=20261027V43"></script>
+    <script src="listening_words_data.js?v=20261027V43"></script>
+    <script src="uk_phonetics_manifest.js?v=20261027V43"></script>
+    <script src="words_audio_manifest.js?v=20261027V43"></script>
+    <script src="examples_audio_manifest.js?v=20261027V43"></script>
+    <script src="zh_audio_manifest.js?v=20261027V43"></script>
+    <script src="collocations_audio_manifest.js?v=20261027V43"></script>
+    <script src="syn_ant_data.js?v=20261027V43"></script>
+    <script src="synonyms_unit8_data.js?v=20261027V43"></script>
+    <script src="examples_unit9_data.js?v=20261027V43"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -1430,9 +1430,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261027V41</span>
+                        <span id="app-version-display">版本 20261027V43</span>
                     </div>
-                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261027V41</p>
+                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261027V43</p>
                 </div>
             </div>
         </div>
@@ -1941,6 +1941,13 @@
         
         let previewReviewWords = [];
         let previewNewWords = [];
+        // 全域頂部 var 提升宣告 (徹底杜絕 ES6 TDZ 暫時死區)
+        var allListeningAnnotated = {};
+        var dailyPracticeStats = {};
+
+        // 全域聽力自選單字與每日刷題統計 (置於頂部宣告，徹底根除 TDZ 暫時死區錯誤)
+        // allListeningAnnotated 已於頂部全域宣告
+        // dailyPracticeStats 已於頂部全域宣告
 
         // DOM 元素
         const viewDashboard = document.getElementById('view-dashboard');
@@ -4080,7 +4087,7 @@
         }
 
 // 每日實時刷題/作答計數器 (支援本地持久化與雲端跨裝置同步)
-        let dailyPracticeStats = {};
+        dailyPracticeStats = (typeof dailyPracticeStats !== "undefined" && dailyPracticeStats) ? dailyPracticeStats : {};
 
         function initDailyPracticeStatsFromStorage() {
             try {
@@ -9344,7 +9351,7 @@
         // ==========================================
         let articleCoreWords = [];
         let currentArticleAnnotatedWords = new Set();
-        let allListeningAnnotated = {};
+        allListeningAnnotated = (typeof allListeningAnnotated !== "undefined" && allListeningAnnotated) ? allListeningAnnotated : {};
 
         function initListeningAnnotatedFromStorage() {
             allListeningAnnotated = {};

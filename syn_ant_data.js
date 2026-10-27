@@ -1,7 +1,7 @@
 /**
  * 權威牛津 / Yahoo 奇摩字典 同反義詞在地化離線庫 (落地存檔)
- * 總收錄詞條數: 560 筆
- * 產生時間: 2026-10-25 18:56:27
+ * 總收錄詞條數: 583 筆
+ * 產生時間: 2026-10-27 23:28:37
  */
 const SYN_ANT_DB = {
   "angry": {
@@ -6813,104 +6813,288 @@ const SYN_ANT_DB = {
       "calm",
       "constant"
     ]
-  },
+  },
   "remained": {
-      "syn": [
-          "stayed",
-          "lingered",
-          "lasted",
-          "persisted",
-          "endured"
-      ],
-      "ant": [
-          "departed",
-          "left",
-          "vanished",
-          "disappeared"
-      ]
-  },
-  "accusations": {
-      "syn": [
-          "charges",
-          "allegations",
-          "indictments",
-          "complaints",
-          "claims"
-      ],
-      "ant": [
-          "defenses",
-          "acquittals",
-          "praises",
-          "exonerations"
-      ]
-  },
-  "drove": {
-      "syn": [
-          "steered",
-          "guided",
-          "propelled",
-          "compelled",
-          "forced"
-      ],
-      "ant": [
-          "halted",
-          "stopped",
-          "dissuaded"
-      ]
-  },
-  "hilariously": {
-      "syn": [
-          "comically",
-          "amusingly",
-          "humorously",
-          "funnily"
-      ],
-      "ant": [
-          "seriously",
-          "gravely",
-          "solemnly",
-          "grimly"
-      ]
-  },
-  "clamped": {
-      "syn": [
-          "fastened",
-          "secured",
-          "gripped",
-          "clutched",
-          "locked"
-      ],
-      "ant": [
-          "loosened",
-          "released",
-          "unfastened",
-          "unlocked"
-      ]
-  },
-  "offered": {
-      "syn": [
-          "provided",
-          "presented",
-          "tendered",
-          "volunteered",
-          "proffered"
-      ],
-      "ant": [
-          "refused",
-          "withheld",
-          "declined",
-          "withdrew"
-      ]
+    "syn": [
+      "stay",
+      "continue",
+      "linger"
+    ],
+    "ant": [
+      "leave",
+      "depart",
+      "go"
+    ]
   },
   "seats": {
-      "syn": [
-          "chairs",
-          "benches",
-          "places",
-          "stools",
-          "spots"
-      ],
-      "ant": []
+    "syn": [
+      "chair",
+      "place",
+      "space",
+      "seating",
+      "seating accommodation",
+      "room"
+    ]
+  },
+  "drove": {
+    "syn": [
+      "herd",
+      "flock",
+      "pack",
+      "fold",
+      "crowd",
+      "swarm"
+    ]
+  },
+  "clamped": {
+    "syn": [
+      "brace",
+      "vice",
+      "press",
+      "clasp",
+      "fastener",
+      "bracket"
+    ]
+  },
+  "stuck": {
+    "syn": [
+      "jammed",
+      "fixed",
+      "immobilized"
+    ],
+    "ant": [
+      "free",
+      "loose",
+      "unblocked"
+    ]
+  },
+  "springy": {
+    "syn": [
+      "elastic",
+      "stretchy",
+      "whippy",
+      "stretchable",
+      "tensile",
+      "flexible"
+    ],
+    "ant": [
+      "hard",
+      "stiff",
+      "rigid",
+      "heavy"
+    ]
+  },
+  "favourite": {
+    "syn": [
+      "first choice",
+      "choice",
+      "pick",
+      "preference",
+      "pet",
+      "beloved"
+    ],
+    "ant": [
+      "bête noire",
+      "underdog"
+    ]
+  },
+  "fully": {
+    "syn": [
+      "completely",
+      "entirely",
+      "wholly",
+      "totally",
+      "thoroughly",
+      "quite"
+    ],
+    "ant": [
+      "partially",
+      "nearly"
+    ]
+  },
+  "immaculate": {
+    "syn": [
+      "clean",
+      "spotless",
+      "pristine",
+      "unsoiled",
+      "unstained",
+      "unsullied"
+    ],
+    "ant": [
+      "dirty",
+      "grubby",
+      "bad",
+      "damaged",
+      "blameworthy"
+    ]
+  },
+  "chimed": {
+    "syn": [
+      "ring",
+      "peal",
+      "toll",
+      "sound",
+      "ding",
+      "dong"
+    ]
+  },
+  "dallied": {
+    "syn": [
+      "dawdle",
+      "delay",
+      "loiter",
+      "linger",
+      "waste time",
+      "kill time"
+    ],
+    "ant": [
+      "hurry"
+    ]
+  },
+  "fibre": {
+    "syn": [
+      "thread",
+      "strand",
+      "tendril",
+      "filament",
+      "fibril",
+      "material"
+    ]
+  },
+  "irregular": {
+    "syn": [
+      "asymmetrical",
+      "non-uniform",
+      "uneven",
+      "crooked",
+      "misshapen",
+      "lopsided"
+    ],
+    "ant": [
+      "regular",
+      "straight",
+      "smooth",
+      "steady",
+      "above board"
+    ]
+  },
+  "easily": {
+    "syn": [
+      "effortlessly",
+      "comfortably",
+      "simply",
+      "straightforwardly",
+      "with ease",
+      "without effort"
+    ],
+    "ant": [
+      "laboriously"
+    ]
+  },
+  "hastily": {
+    "syn": [
+      "quickly",
+      "hurriedly",
+      "in a hurry",
+      "fast",
+      "swiftly",
+      "rapidly"
+    ],
+    "ant": [
+      "slowly",
+      "carefully",
+      "deliberately"
+    ]
+  },
+  "uninhabited": {
+    "syn": [
+      "unpopulated",
+      "unpeopled",
+      "unsettled",
+      "unfrequented",
+      "unoccupied",
+      "barren"
+    ]
+  },
+  "awash": {
+    "syn": [
+      "flooded",
+      "covered with water",
+      "under water",
+      "submerged",
+      "engulfed",
+      "submersed"
+    ]
+  },
+  "jangled": {
+    "syn": [
+      "clank",
+      "clink",
+      "jingle",
+      "tinkle",
+      "ding",
+      "ping"
+    ]
+  },
+  "costings": {
+    "syn": [
+      "be priced at",
+      "sell for",
+      "be valued at",
+      "fetch",
+      "come to",
+      "amount to"
+    ]
+  },
+  "usable": {
+    "syn": [
+      "available for use",
+      "utilizable",
+      "disposable",
+      "at someone's disposal",
+      "ready for use",
+      "fit for use"
+    ],
+    "ant": [
+      "unusable"
+    ]
+  },
+  "insular": {
+    "syn": [
+      "narrow-minded",
+      "limited",
+      "blinkered",
+      "restricted",
+      "inward-looking",
+      "conventional"
+    ],
+    "ant": [
+      "broad-minded",
+      "tolerant",
+      "accessible",
+      "cosmopolitan"
+    ]
+  },
+  "picketed": {
+    "syn": [
+      "striker",
+      "demonstrator",
+      "protester",
+      "objector",
+      "picketer",
+      "strike picket"
+    ]
+  },
+  "personified": {
+    "syn": [
+      "humanize",
+      "anthropomorphize",
+      "personalize",
+      "epitomize",
+      "embody",
+      "be the embodiment/incarnation of"
+    ]
   }
 };
 if (typeof window !== 'undefined') { window.SYN_ANT_DB = SYN_ANT_DB; }

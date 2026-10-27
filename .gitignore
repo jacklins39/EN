@@ -21,5 +21,8 @@ yahoo_dict_data.js
 temp_*
 scratch/
 
+# 暫存媒體與螢幕錄影
+*.mp4
+
 # 歷史過期腳本與備份歸檔
 archive/

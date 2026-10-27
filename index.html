@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261026V37';
+        const APP_BUILD_VERSION = '20261027V39';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -31,19 +31,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261026V37"></script>
-    <script src="toeic_data.js?v=20261026V37"></script>
-    <script src="jh_data.js?v=20261026V37"></script>
-    <script src="listening_data.js?v=20261026V37"></script>
-    <script src="listening_words_data.js?v=20261026V37"></script>
-    <script src="uk_phonetics_manifest.js?v=20261026V37"></script>
-    <script src="words_audio_manifest.js?v=20261026V37"></script>
-    <script src="examples_audio_manifest.js?v=20261026V37"></script>
-    <script src="zh_audio_manifest.js?v=20261026V37"></script>
-    <script src="collocations_audio_manifest.js?v=20261026V37"></script>
-    <script src="syn_ant_data.js?v=20261026V37"></script>
-    <script src="synonyms_unit8_data.js?v=20261026V37"></script>
-    <script src="examples_unit9_data.js?v=20261026V37"></script>
+    <script src="words_data.js?v=20261027V39"></script>
+    <script src="toeic_data.js?v=20261027V39"></script>
+    <script src="jh_data.js?v=20261027V39"></script>
+    <script src="listening_data.js?v=20261027V39"></script>
+    <script src="listening_words_data.js?v=20261027V39"></script>
+    <script src="uk_phonetics_manifest.js?v=20261027V39"></script>
+    <script src="words_audio_manifest.js?v=20261027V39"></script>
+    <script src="examples_audio_manifest.js?v=20261027V39"></script>
+    <script src="zh_audio_manifest.js?v=20261027V39"></script>
+    <script src="collocations_audio_manifest.js?v=20261027V39"></script>
+    <script src="syn_ant_data.js?v=20261027V39"></script>
+    <script src="synonyms_unit8_data.js?v=20261027V39"></script>
+    <script src="examples_unit9_data.js?v=20261027V39"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -1430,9 +1430,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261026V25</span>
+                        <span id="app-version-display">版本 20261027V39</span>
                     </div>
-                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261026V25</p>
+                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261027V39</p>
                 </div>
             </div>
         </div>
@@ -2364,6 +2364,36 @@
                     localStorage.setItem('vocab_custom_words', JSON.stringify(customWordsDB));
                     saveDailyPlansLocally();
 
+                    // 雲端聽力自選/劃線單字同步與智慧雙向合併 (聯集)
+                    if (data.listeningAnnotated && typeof data.listeningAnnotated === 'object') {
+                        Object.keys(data.listeningAnnotated).forEach(title => {
+                            const cloudWords = Array.isArray(data.listeningAnnotated[title]) ? data.listeningAnnotated[title] : [];
+                            const localWords = (typeof allListeningAnnotated !== 'undefined' && allListeningAnnotated[title]) ? allListeningAnnotated[title] : [];
+                            const merged = Array.from(new Set([...localWords, ...cloudWords]));
+                            if (typeof allListeningAnnotated !== 'undefined') allListeningAnnotated[title] = merged;
+                            localStorage.setItem(`listening_annotated_${encodeURIComponent(title)}`, JSON.stringify(merged));
+                        });
+                        if (typeof currentSelectedListeningArticle !== 'undefined' && currentSelectedListeningArticle) {
+                            if (typeof loadArticleAnnotatedWords === 'function') loadArticleAnnotatedWords(currentSelectedListeningArticle);
+                            if (typeof renderListeningSentences === 'function') renderListeningSentences();
+                            if (typeof renderListeningWordsTab === 'function') renderListeningWordsTab();
+                        }
+                    }
+
+                    // 每日實時刷題總量跨裝置雙向合併 (取本機與雲端較大值，絕不回縮)
+                    if (data.dailyPracticeStats && typeof data.dailyPracticeStats === 'object') {
+                        Object.keys(data.dailyPracticeStats).forEach(dayKey => {
+                            const cloudCount = Number(data.dailyPracticeStats[dayKey]) || 0;
+                            const localCount = (typeof dailyPracticeStats !== 'undefined' ? Number(dailyPracticeStats[dayKey]) : 0) || 0;
+                            if (typeof dailyPracticeStats !== 'undefined') {
+                                dailyPracticeStats[dayKey] = Math.max(localCount, cloudCount);
+                            }
+                        });
+                        if (typeof dailyPracticeStats !== 'undefined') {
+                            localStorage.setItem('en_daily_practice_stats', JSON.stringify(dailyPracticeStats));
+                        }
+                    }
+
                     if (!isSilent) {
                         const syncBanner = document.getElementById('sync-banner');
                         if (syncBanner) {
@@ -2415,6 +2445,8 @@
                 newWordsPerDay: NEW_WORDS_PER_DAY,
                 customWords: customWordsDB,
                 unit: currentUnit,
+                listeningAnnotated: (typeof allListeningAnnotated !== 'undefined' ? allListeningAnnotated : {}),
+                dailyPracticeStats: (typeof dailyPracticeStats !== 'undefined' ? dailyPracticeStats : {}),
                 lastDate: getLocalDateStr(),
                 lastUpdated: firebase.firestore.FieldValue.serverTimestamp()
             };
@@ -2426,10 +2458,13 @@
             ]).catch(async (AggErr) => {
                 const firstErr = (AggErr && Array.isArray(AggErr.errors) && AggErr.errors[0]) ? AggErr.errors[0] : AggErr;
                 // 1. 若因 Firebase Console 尚未發布最新 firestore.rules (例如缺 unit 白名單) 遭拒，自動向下相容重試
+// 1. 若因 Firebase Console 尚未發布最新 firestore.rules 遭拒，自動相容重試 (剔除新欄位保證基礎進度安全)
                 const isPerm = firstErr && (firstErr.code === 'permission-denied' || String(firstErr).includes('permission'));
                 if (isPerm) {
-                    console.warn("偵測到雲端規則尚未允許 unit 欄位，自動以相容格式重試寫入...");
+                    console.warn("偵測到雲端規則尚未允許最新欄位 (listeningAnnotated / dailyPracticeStats / unit)，自動以相容格式重試寫入...");
                     const compatPayload = { ...payload };
+                    delete compatPayload.listeningAnnotated;
+                    delete compatPayload.dailyPracticeStats;
                     delete compatPayload.unit;
                     return saveCloudDocViaRest(currentUser.uid, compatPayload);
                 }
@@ -2441,12 +2476,13 @@
                 } catch (restErr) {
                     if (restErr && restErr.code === 'permission-denied') {
                         const compatPayload = { ...payload };
+                        delete compatPayload.listeningAnnotated;
+                        delete compatPayload.dailyPracticeStats;
                         delete compatPayload.unit;
                         return await saveCloudDocViaRest(currentUser.uid, compatPayload);
                     }
                     throw restErr;
-                }
-            }).then(() => {
+                }).then(() => {
                 // 關鍵時機提示：只在明確傳入提示文字時（如整回結算、重要手動變更）才彈出提示，一般做題過程保持全靜默
                 if (bannerMessage) {
                     const banner = document.getElementById('sync-banner');
@@ -2605,6 +2641,8 @@
                 console.warn("讀取本地自訂字庫異常", e);
             }
 
+            if (typeof initListeningAnnotatedFromStorage === 'function') initListeningAnnotatedFromStorage();
+            if (typeof initDailyPracticeStatsFromStorage === 'function') initDailyPracticeStatsFromStorage();
             initAppLogic();
         }
 
@@ -4040,40 +4078,47 @@
             if (progress.mistakes.length > 30) progress.mistakes.shift();
         }
 
-        // 每日實時刷題/作答計數器 (持久化至 localStorage)
-        function getDailyPracticeCount(day = virtualCurrentDay) {
+// 每日實時刷題/作答計數器 (支援本地持久化與雲端跨裝置同步)
+        let dailyPracticeStats = {};
+
+        function initDailyPracticeStatsFromStorage() {
             try {
                 const raw = localStorage.getItem('en_daily_practice_stats');
-                const data = raw ? JSON.parse(raw) : {};
-                return Number(data[day]) || 0;
+                dailyPracticeStats = raw ? JSON.parse(raw) : {};
             } catch (e) {
-                return 0;
+                dailyPracticeStats = {};
             }
+        }
+
+        function getDailyPracticeCount(day = virtualCurrentDay) {
+            return Number(dailyPracticeStats[day]) || 0;
         }
 
         function ensureDailyPracticeBaseline(baseline, day = virtualCurrentDay) {
             try {
-                const raw = localStorage.getItem('en_daily_practice_stats');
-                const data = raw ? JSON.parse(raw) : {};
-                if ((!data[day] || Number(data[day]) < baseline) && baseline > 0) {
-                    data[day] = baseline;
-                    localStorage.setItem('en_daily_practice_stats', JSON.stringify(data));
+                if ((!dailyPracticeStats[day] || Number(dailyPracticeStats[day]) < baseline) && baseline > 0) {
+                    dailyPracticeStats[day] = baseline;
+                    localStorage.setItem('en_daily_practice_stats', JSON.stringify(dailyPracticeStats));
+                    if (typeof saveToCloud === 'function') saveToCloud();
                 }
             } catch (e) {}
         }
 
         function incrementDailyPracticeCount(day = virtualCurrentDay) {
             try {
-                const raw = localStorage.getItem('en_daily_practice_stats');
-                const data = raw ? JSON.parse(raw) : {};
-                const current = Number(data[day]) || 0;
-                data[day] = current + 1;
-                localStorage.setItem('en_daily_practice_stats', JSON.stringify(data));
+                const current = Number(dailyPracticeStats[day]) || 0;
+                dailyPracticeStats[day] = current + 1;
+                localStorage.setItem('en_daily_practice_stats', JSON.stringify(dailyPracticeStats));
                 
                 // 若分析視圖正呈現在畫面中，實時刷新卡片上的刷題數字
                 const elCount = document.getElementById('analysis-stat-practice-count');
-                if (elCount) elCount.innerText = `${data[day]} 題`;
-                return data[day];
+                if (elCount) elCount.innerText = `${dailyPracticeStats[day]} 題`;
+
+                // 觸發防抖雲端存檔 (作答時自動同步至 Firestore)
+                if (typeof saveToCloud === 'function') {
+                    saveToCloud();
+                }
+                return dailyPracticeStats[day];
             } catch (e) {
                 console.warn("incrementDailyPracticeCount error:", e);
                 return 0;
@@ -5300,27 +5345,46 @@
                 };
 
                 const playOnlineStream = () => {
+                    const fallbackToYoudaoOrSynthesis = () => {
+                        try {
+                            const youdaoUrl = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(cleanLower)}&type=${typeCode}`;
+                            wordAudioPlayer.src = youdaoUrl;
+                            wordAudioPlayer.playbackRate = globalSpeechRate;
+                            attachCallback(wordAudioPlayer, fallbackToSpeechSynthesis);
+                            const p = wordAudioPlayer.play();
+                            if (p && typeof p.catch === 'function') {
+                                p.catch(e => {
+                                    if (e && (e.name === 'AbortError' || e.code === 20)) return;
+                                    console.warn('Online voice fallback to synthesis:', e);
+                                    fallbackToSpeechSynthesis();
+                                });
+                            }
+                        } catch(err) {
+                            fallbackToSpeechSynthesis();
+                        }
+                    };
+
                     if (isUk) {
-                        // 英國男聲若無本地離線檔，直接呼叫瀏覽器原生英國男聲 (George / Oliver / Ryan) 確保絕對是男聲
-                        speakWordViaSynthesis(clean, 'uk', onEndedCallback);
+                        // 檢查瀏覽器是否支援高品質英國男聲
+                        let hasUkMaleVoice = false;
+                        try {
+                            const voices = window.speechSynthesis ? window.speechSynthesis.getVoices() || [] : [];
+                            hasUkMaleVoice = voices.some(v => {
+                                const l = v.lang.replace('_', '-').toLowerCase();
+                                return l.startsWith('en-gb') && /ryan|george|oliver|thomas|male|guy/i.test(v.name);
+                            });
+                        } catch(e) {}
+
+                        if (hasUkMaleVoice) {
+                            speakWordViaSynthesis(clean, 'uk', onEndedCallback);
+                            return;
+                        }
+                        // 若無英國男聲，走有道真人英音 (type=1)，確保永不失聲
+                        fallbackToYoudaoOrSynthesis();
                         return;
                     }
-                    try {
-                        const youdaoUrl = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(cleanLower)}&type=2`;
-                        wordAudioPlayer.src = youdaoUrl;
-                        wordAudioPlayer.playbackRate = globalSpeechRate;
-                        attachCallback(wordAudioPlayer, fallbackToSpeechSynthesis);
-                        const p = wordAudioPlayer.play();
-                        if (p && typeof p.catch === 'function') {
-                            p.catch(e => {
-                                if (e && (e.name === 'AbortError' || e.code === 20)) return;
-                                console.warn('Online voice fallback to synthesis:', e);
-                                fallbackToSpeechSynthesis();
-                            });
-                        }
-                    } catch(err) {
-                        fallbackToSpeechSynthesis();
-                    }
+
+                    fallbackToYoudaoOrSynthesis();
                 };
 
                 // 1. 優先檢查本地離線真人 MP3 檔案庫 (audio/words/us/ 或 audio/words/uk/)
@@ -9271,6 +9335,25 @@
         // ==========================================
         let articleCoreWords = [];
         let currentArticleAnnotatedWords = new Set();
+        let allListeningAnnotated = {};
+
+        function initListeningAnnotatedFromStorage() {
+            allListeningAnnotated = {};
+            try {
+                for (let i = 0; i < localStorage.length; i++) {
+                    const k = localStorage.key(i);
+                    if (k && k.startsWith('listening_annotated_')) {
+                        const title = decodeURIComponent(k.replace('listening_annotated_', ''));
+                        try {
+                            const words = JSON.parse(localStorage.getItem(k));
+                            if (Array.isArray(words) && words.length > 0) {
+                                allListeningAnnotated[title] = words;
+                            }
+                        } catch(e) {}
+                    }
+                }
+            } catch(err) {}
+        }
 
         function getArticleAnnotateKey(article) {
             const title = (article || currentSelectedListeningArticle)?.title || 'default';
@@ -9278,19 +9361,33 @@
         }
 
         function loadArticleAnnotatedWords(article) {
+            const title = (article || currentSelectedListeningArticle)?.title || 'default';
             try {
-                const raw = localStorage.getItem(getArticleAnnotateKey(article));
-                currentArticleAnnotatedWords = new Set(raw ? JSON.parse(raw) : []);
+                let words = allListeningAnnotated[title];
+                if (!words) {
+                    const raw = localStorage.getItem(getArticleAnnotateKey(article));
+                    words = raw ? JSON.parse(raw) : [];
+                    if (Array.isArray(words) && words.length > 0) {
+                        allListeningAnnotated[title] = words;
+                    }
+                }
+                currentArticleAnnotatedWords = new Set(Array.isArray(words) ? words : []);
             } catch(e) {
                 currentArticleAnnotatedWords = new Set();
             }
         }
 
         function saveArticleAnnotatedWords() {
+            const title = currentSelectedListeningArticle?.title || 'default';
+            const list = [...currentArticleAnnotatedWords];
             try {
-                localStorage.setItem(getArticleAnnotateKey(), JSON.stringify([...currentArticleAnnotatedWords]));
+                localStorage.setItem(getArticleAnnotateKey(), JSON.stringify(list));
+                allListeningAnnotated[title] = list;
             } catch(e) {
                 console.warn('saveArticleAnnotatedWords error', e);
+            }
+            if (typeof saveToCloud === 'function') {
+                saveToCloud();
             }
         }
 
@@ -9723,25 +9820,22 @@
             container.innerHTML = listeningSentences.map((sObj, i) => {
                 const s = sObj.en || '';
                 let html = '';
-                const regex = /\b[a-zA-Z']+\b/g;
-                let match;
-                let lastIndex = 0;
-                while ((match = regex.exec(s)) !== null) {
-                    html += esc(s.substring(lastIndex, match.index));
-                    const rawWord = match[0];
-                    const wordStr = rawWord.toLowerCase().replace(/'/g, "\\'");
-                    const isAnnotated = currentArticleAnnotatedWords.has(wordStr);
-                    const isCore = isArticleCoreWord(wordStr);
+                const tokens = s.trim().split(/\s+/);
+                html = tokens.map(token => {
+                    if (!token) return '';
+                    // 乾淨字根供字典查詞與核心單字比對 (去除頭尾標點符號)
+                    const cleanWord = token.replace(/^[^\w]+|[^\w]+$/g, '').toLowerCase().replace(/'/g, "\\'");
+                    if (!cleanWord) return esc(token);
+
+                    const isAnnotated = currentArticleAnnotatedWords.has(cleanWord);
+                    const isCore = isArticleCoreWord(cleanWord);
                     let wordClass = 'border-transparent';
-                    if (isAnnotated) {
-                        wordClass = 'is-annotated';
-                    } else if (isCore) {
-                        wordClass = 'is-core-word';
-                    }
-                    html += `<span class="listen-word cursor-pointer transition-colors duration-200 border-b-2 ${wordClass} hover:border-[#0071E3] rounded px-0.5 mx-px" data-word="${wordStr}" data-is-core="${isCore ? 'true' : 'false'}" onclick="event.stopPropagation(); showWordTranslation(event, '${wordStr}')">${esc(rawWord)}</span>`;
-                    lastIndex = regex.lastIndex;
-                }
-                html += esc(s.substring(lastIndex));
+                    if (isAnnotated) wordClass = 'is-annotated';
+                    else if (isCore) wordClass = 'is-core-word';
+
+                    // 標點符號與單字一體化，消除分離空隙；點擊查詞帶入 cleanWord
+                    return `<span class="listen-word cursor-pointer transition-colors duration-200 border-b-2 ${wordClass} hover:border-[#0071E3] rounded px-0.5" data-word="${cleanWord}" data-is-core="${isCore ? 'true' : 'false'}" onclick="event.stopPropagation(); showWordTranslation(event, '${cleanWord}')">${esc(token)}</span>`;
+                }).join(' ');
 
                 const role = sObj.role || (sObj.speaker === 'Sophia' ? 'B' : 'A');
                 const roleClass = isDialogue ? (role === 'B' ? 'dialogue-card-B' : 'dialogue-card-A') : '';
@@ -10383,24 +10477,30 @@
             const words = Array.from(sentenceDiv.querySelectorAll('.listen-word'));
             if (words.length === 0) return;
 
-            // 1. 扣除句末自然靜音空白 (音檔結尾通常有 0.4 ~ 0.8 秒停頓)
-            const tailSilence = Math.min(0.85, Math.max(0.3, totalDuration * 0.16));
+// 1. 扣除句末自然靜音空白 (音檔結尾通常有 0.2 ~ 0.45 秒停頓)
+            const tailSilence = Math.min(0.45, Math.max(0.18, totalDuration * 0.1));
             const effectiveSpeechDuration = Math.max(0.3, totalDuration - tailSilence);
 
-            // 2. 漸進式平滑提前量 (前 0.5 秒平滑緩入，徹底消除突變跳字，保證如 out 等短詞絕不被跳過)
+            // 2. 輕量平滑提前量 (降為 0.08s，補償 60fps 畫面刷新延遲與人眼反應，徹底根絕搶跑跳字)
             const speed = listeningAudioPlayer.playbackRate || 1.0;
-            const maxLead = 0.26 * speed;
-            const leadRamp = Math.min(1.0, Math.max(0, rawElapsed / 0.5));
+            const maxLead = 0.08 * speed;
+            const leadRamp = Math.min(1.0, Math.max(0, rawElapsed / 0.4));
             const leadOffset = maxLead * leadRamp;
             const adjustedElapsed = Math.min(effectiveSpeechDuration, Math.max(0, rawElapsed + leadOffset));
 
-            // 3. 提高短單字保底權重 (保底 2.6，確保 out、to、a 等短單字在視覺上有充足停留時間)
+            // 3. 詞長保底 + 標點停頓加權 (空格與換氣停頓完全內化至權重中，杜絕搶跑跳字)
             const weights = words.map(w => {
                 const text = w.textContent.trim();
-                let weight = Math.max(2.6, Math.pow(text.length, 0.85));
-                const nextNode = w.nextSibling;
-                const nextText = (nextNode && nextNode.nodeType === Node.TEXT_NODE) ? nextNode.textContent : '';
-                if (/[,;:]/.test(nextText)) weight += 2.0; // 逗號停頓加權
+                const cleanLen = text.replace(/[^\w]/g, '').length || text.length;
+                let weight = Math.max(2.6, Math.pow(cleanLen, 0.85));
+
+                // 標點符號停頓加權 (模擬自然語流停頓時間)
+                if (/[,;:—\-]/.test(text)) {
+                    weight += 2.8; // 逗號、分號、破折號：約 250~350ms 換氣停頓
+                }
+                if (/[.!?]/.test(text)) {
+                    weight += 4.6; // 句號、驚嘆號、問號：約 500~700ms 深度句末停頓 (如 Lily!)
+                }
                 return weight;
             });
 

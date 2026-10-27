@@ -2044,10 +2044,10 @@ const externalVocabularyDB = [
     "en": "super",
     "kk": "[ˋsupɚ]",
     "uk": "/ˈsuːpə(r)/",
-    "zh": "adj. 很、極好的、極優秀的、超級的；adv. 極、極其、非常；n. 警官、警長、管理人、主管",
+    "zh": "adj. 極好的、超級的、棒極了；adv. 極其、非常；n. (口語) 警長、大樓管理員",
     "unit": 1,
     "example": "We had a super time.",
-    "exampleZh": "我們度過了一段美好的時光。"
+    "exampleZh": "我們度過了一段極好的時光。"
   },
   {
     "id": 206,

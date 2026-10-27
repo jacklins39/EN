@@ -35,7 +35,10 @@ def load_all_words():
     files = [
         os.path.join(BASE_DIR, 'words_data.js'),
         os.path.join(BASE_DIR, 'toeic_data.js'),
-        os.path.join(BASE_DIR, 'jh_data.js')
+        os.path.join(BASE_DIR, 'jh_data.js'),
+        os.path.join(BASE_DIR, 'examples_unit9_data.js'),
+        os.path.join(BASE_DIR, 'synonyms_unit8_data.js'),
+        os.path.join(BASE_DIR, 'listening_words_data.js')
     ]
     seen = set()
     order = []
@@ -69,7 +72,6 @@ def parse_yahoo_syn_ant(html):
     out = {'syn': [], 'ant': []}
     mode = 'syn'
     
-    # regex match title headers and link groups
     pattern = re.compile(r'<h3 class="title"><span class="([^"]*)">(.*?)</span></h3>|<ul class="compDlink[^"]*">(.*?)</ul>', re.S)
     for m in pattern.finditer(seg):
         header_text = m.group(2)
@@ -83,7 +85,6 @@ def parse_yahoo_syn_ant(html):
         elif ul_content is not None:
             words = [H.unescape(re.sub(r'<[^>]+>', '', x)).strip().lower() for x in re.findall(r'<a[^>]*>(.*?)</a>', ul_content, re.S)]
             for w in words:
-                # filter clean single words / clean short phrases
                 w = re.sub(r'^[^\w]+|[^\w]+$', '', w)
                 if w and w not in out[mode]:
                     out[mode].append(w)
@@ -102,28 +103,26 @@ def fetch_word(word, retry=3):
                     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
                 }
             )
-            # random polite jitter
-            time.sleep(random.uniform(0.12, 0.28))
-            with urllib.request.urlopen(req, timeout=12) as resp:
+            time.sleep(random.uniform(0.08, 0.2))
+            with urllib.request.urlopen(req, timeout=10) as resp:
                 raw = resp.read()
                 html = raw.decode('utf-8', errors='ignore')
                 parsed = parse_yahoo_syn_ant(html)
                 return word, parsed, None
         except urllib.error.HTTPError as e:
             if e.code == 429:
-                sleep_time = (attempt + 1) * 6 + random.uniform(1, 3)
+                sleep_time = (attempt + 1) * 5 + random.uniform(1, 2)
                 log(f"[Rate-Limited] 429 on '{word}'. Backing off {sleep_time:.1f}s...")
                 time.sleep(sleep_time)
             elif e.code == 404:
                 return word, {'syn': [], 'ant': []}, None
             else:
-                time.sleep(1.5)
-        except Exception as e:
-            time.sleep(1.2)
+                time.sleep(1.0)
+        except Exception:
+            time.sleep(0.8)
     return word, {'syn': [], 'ant': []}, 'Failed after retries'
 
 def export_js(data):
-    # prune entries that have neither syn nor ant
     useful_db = {}
     for w, val in data.items():
         syns = val.get('syn', [])
@@ -137,7 +136,7 @@ def export_js(data):
             useful_db[w] = entry
 
     log(f"Exporting {len(useful_db)} words with valid synonyms/antonyms to {OUTPUT_JS_FILE}...")
-    with open(OUTPUT_JS_FILE, 'w', encoding='utf-8') as f:
+    with open(OUTPUT_JS_FILE, 'w', encoding='utf-8', newline='\n') as f:
         f.write("/**\n")
         f.write(" * 權威牛津 / Yahoo 奇摩字典 同反義詞在地化離線庫 (落地存檔)\n")
         f.write(f" * 總收錄詞條數: {len(useful_db)} 筆\n")
@@ -146,6 +145,7 @@ def export_js(data):
         f.write("const SYN_ANT_DB = ")
         json.dump(useful_db, f, ensure_ascii=False, indent=2)
         f.write(";\n")
+        f.write("if (typeof window !== 'undefined') { window.SYN_ANT_DB = SYN_ANT_DB; }\n")
     log("Export completed successfully!")
 
 def main():
@@ -171,8 +171,7 @@ def main():
         export_js(checkpoint)
         return
 
-    # Use 5 concurrent workers
-    MAX_WORKERS = 5
+    MAX_WORKERS = 8
     batch_counter = 0
 
     try:
@@ -190,26 +189,22 @@ def main():
                     done_count += 1
                     batch_counter += 1
 
-                if batch_counter >= 50:
-                    batch_counter = 0
-                    pct = (done_count / total) * 100
-                    log(f"Progress: {done_count}/{total} ({pct:.1f}%) | Last word: {w}")
+                if batch_counter % 50 == 0 or done_count == total:
+                    log(f"Progress: {done_count}/{total} ({done_count/total*100:.1f}%) | Syn/Ant found: {sum(1 for v in checkpoint.values() if v.get('syn') or v.get('ant'))}")
                     with open(CHECKPOINT_FILE, 'w', encoding='utf-8') as f:
                         json.dump(checkpoint, f, ensure_ascii=False)
-                    export_js(checkpoint)
-
-        # Final save
-        with open(CHECKPOINT_FILE, 'w', encoding='utf-8') as f:
-            json.dump(checkpoint, f, ensure_ascii=False)
-        export_js(checkpoint)
-        log("=== 全部 7,317 單字爬取完成並已成功落地存檔！ ===")
 
     except KeyboardInterrupt:
-        log("Crawler paused by user. Saving checkpoint...")
+        log("Interrupted by user. Saving checkpoint...")
         with open(CHECKPOINT_FILE, 'w', encoding='utf-8') as f:
             json.dump(checkpoint, f, ensure_ascii=False)
         export_js(checkpoint)
-        log("Checkpoint saved. Ready to resume next time.")
+        return
+
+    log("All target words crawled successfully! Finalizing export...")
+    with open(CHECKPOINT_FILE, 'w', encoding='utf-8') as f:
+        json.dump(checkpoint, f, ensure_ascii=False)
+    export_js(checkpoint)
 
 if __name__ == '__main__':
     main()

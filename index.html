@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261027V39';
+        const APP_BUILD_VERSION = '20261027V40';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -31,19 +31,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261027V39"></script>
-    <script src="toeic_data.js?v=20261027V39"></script>
-    <script src="jh_data.js?v=20261027V39"></script>
-    <script src="listening_data.js?v=20261027V39"></script>
-    <script src="listening_words_data.js?v=20261027V39"></script>
-    <script src="uk_phonetics_manifest.js?v=20261027V39"></script>
-    <script src="words_audio_manifest.js?v=20261027V39"></script>
-    <script src="examples_audio_manifest.js?v=20261027V39"></script>
-    <script src="zh_audio_manifest.js?v=20261027V39"></script>
-    <script src="collocations_audio_manifest.js?v=20261027V39"></script>
-    <script src="syn_ant_data.js?v=20261027V39"></script>
-    <script src="synonyms_unit8_data.js?v=20261027V39"></script>
-    <script src="examples_unit9_data.js?v=20261027V39"></script>
+    <script src="words_data.js?v=20261027V40"></script>
+    <script src="toeic_data.js?v=20261027V40"></script>
+    <script src="jh_data.js?v=20261027V40"></script>
+    <script src="listening_data.js?v=20261027V40"></script>
+    <script src="listening_words_data.js?v=20261027V40"></script>
+    <script src="uk_phonetics_manifest.js?v=20261027V40"></script>
+    <script src="words_audio_manifest.js?v=20261027V40"></script>
+    <script src="examples_audio_manifest.js?v=20261027V40"></script>
+    <script src="zh_audio_manifest.js?v=20261027V40"></script>
+    <script src="collocations_audio_manifest.js?v=20261027V40"></script>
+    <script src="syn_ant_data.js?v=20261027V40"></script>
+    <script src="synonyms_unit8_data.js?v=20261027V40"></script>
+    <script src="examples_unit9_data.js?v=20261027V40"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -1430,9 +1430,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261027V39</span>
+                        <span id="app-version-display">版本 20261027V40</span>
                     </div>
-                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261027V39</p>
+                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261027V40</p>
                 </div>
             </div>
         </div>
@@ -6600,7 +6600,12 @@
             "angry": ["furious", "mad", "irritated", "indignant", "annoyed"],
             "beautiful": ["gorgeous", "lovely", "attractive", "pretty", "stunning"],
             "rich": ["wealthy", "affluent", "prosperous", "loaded", "well-off"],
-            "poor": ["needy", "destitute", "penniless", "impoverished", "broke"]
+            "poor": ["needy", "destitute", "penniless", "impoverished", "broke"],
+            "super": ["excellent", "great", "wonderful", "terrific", "fantastic", "outstanding"],
+            "famous": ["well-known", "renowned", "celebrated", "noted", "famed", "prominent"],
+            "golden": ["gilded", "yellow", "blond", "shining", "precious"],
+            "great": ["excellent", "superb", "grand", "terrific", "magnificent", "wonderful"],
+            "excellent": ["outstanding", "superb", "exceptional", "first-rate", "splendid"]
         };
 
         function isVowel(c) {
@@ -6840,7 +6845,7 @@
         }
 
         // 語意停用詞：避免過於泛化或無實質語意之詞彙干擾交叉比對
-        const SEMANTIC_STOP_WORDS = new Set(['事物', '地方', '什麼', '某人', '某物', '自己', '表示', '產生', '進行', '一種', '成為', '可以', '能夠', '具有', '處於', '屬於']);
+        const SEMANTIC_STOP_WORDS = new Set(['事物', '地方', '什麼', '某人', '某物', '自己', '表示', '產生', '進行', '一種', '成為', '可以', '能夠', '具有', '處於', '屬於', '極好', '極佳', '優秀', '卓越', '出色', '很好', '非常', '十分', '相當', '特別', '完全', '極其', '一般', '通常', '主要', '著名', '金色', '黃金']);
         let semanticSynonymIndex = null;
 
         function parsePosAndTokensForCrosslink(zhStr) {
@@ -6901,7 +6906,8 @@
                     en: item.en,
                     zh: item.zh || '',
                     posSet,
-                    tokens
+                    tokens,
+                    primaryTokens: tokens.slice(0, 2)
                 });
 
                 for (const token of tokens) {
@@ -6967,6 +6973,8 @@
                         if (!info.posSet || info.posSet.size === 0 || !candInfo.posSet || candInfo.posSet.size === 0) continue;
                         // 片語、與原字同字根的變形不列入
                         if (candLower.includes(' ') || candLower.startsWith(baseW) || baseW.startsWith(candLower)) continue;
+                        // 候選詞核心首要中文釋義 (前 2 個 tokens) 必須包含目標 token，杜絕以生僻、修飾性弱相關義項湊數
+                        if (!candInfo.primaryTokens || !candInfo.primaryTokens.includes(token)) continue;
                         {
                             let hasCommonPos = false;
                             for (const p of info.posSet) {

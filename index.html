@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261028V50';
+        const APP_BUILD_VERSION = '20261028V52';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -50,19 +50,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261028V50"></script>
-    <script src="toeic_data.js?v=20261028V50"></script>
-    <script src="jh_data.js?v=20261028V50"></script>
-    <script src="listening_data.js?v=20261028V50"></script>
-    <script src="listening_words_data.js?v=20261028V50"></script>
-    <script src="uk_phonetics_manifest.js?v=20261028V50"></script>
-    <script src="words_audio_manifest.js?v=20261028V50"></script>
-    <script src="examples_audio_manifest.js?v=20261028V50"></script>
-    <script src="zh_audio_manifest.js?v=20261028V50"></script>
-    <script src="collocations_audio_manifest.js?v=20261028V50"></script>
-    <script src="syn_ant_data.js?v=20261028V50"></script>
-    <script src="synonyms_unit8_data.js?v=20261028V50"></script>
-    <script src="examples_unit9_data.js?v=20261028V50"></script>
+    <script src="words_data.js?v=20261028V52"></script>
+    <script src="toeic_data.js?v=20261028V52"></script>
+    <script src="jh_data.js?v=20261028V52"></script>
+    <script src="listening_data.js?v=20261028V52"></script>
+    <script src="listening_words_data.js?v=20261028V52"></script>
+    <script src="uk_phonetics_manifest.js?v=20261028V52"></script>
+    <script src="words_audio_manifest.js?v=20261028V52"></script>
+    <script src="examples_audio_manifest.js?v=20261028V52"></script>
+    <script src="zh_audio_manifest.js?v=20261028V52"></script>
+    <script src="collocations_audio_manifest.js?v=20261028V52"></script>
+    <script src="syn_ant_data.js?v=20261028V52"></script>
+    <script src="synonyms_unit8_data.js?v=20261028V52"></script>
+    <script src="examples_unit9_data.js?v=20261028V52"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -458,7 +458,7 @@
     </style>
 
     <!-- ==========================================================
-         Apple Ultra-Dark Design System (頂級沉浸暗黑模式 · 字典與色彩膠囊終極調校)
+         Apple Ultra-Dark Design System (頂級全域無死角暗黑模式 · 終極全站體檢版)
          ========================================================== -->
     <style>
         /* 全域平滑色彩過渡 (切換時如同 iOS 般流暢呼吸) */
@@ -519,7 +519,118 @@
             color: #F8FAFC !important;
         }
 
-        /* 4. 聽力特訓頁面專屬深度調優 (教材清單手風琴與右側佔位卡) */
+        /* ==========================================================
+           4. 聽力特訓頁面專屬深度調優 (徹底消滅死灰厚板、白斑破版與白卡片)
+           ========================================================== */
+        /* 對話卡片與句子卡片：徹底清除 rgba(240,247,255,0.45) 泛白反射底色！ */
+        html.dark .sentence-card {
+            background-color: #121927 !important;
+            border-color: rgba(255, 255, 255, 0.08) !important;
+        }
+        html.dark .sentence-card:hover {
+            background-color: #162033 !important;
+            border-color: rgba(56, 139, 253, 0.4) !important;
+        }
+        /* 角色 A 對話卡片：極致沉靜深邃藍光邊線 */
+        html.dark .dialogue-card-A {
+            border-left: 4px solid #0071E3 !important;
+            background-color: rgba(0, 113, 227, 0.05) !important;
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+        }
+        /* 角色 B 對話卡片：極致沉靜深邃紫光邊線 */
+        html.dark .dialogue-card-B {
+            border-left: 4px solid #8936FF !important;
+            background-color: rgba(137, 54, 255, 0.05) !important;
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+        }
+        /* 播放中高亮對話卡片 */
+        html.dark .sentence-card.sentence-active,
+        html.dark .sentence-card.dialogue-card-A.sentence-active {
+            background-color: rgba(0, 113, 227, 0.16) !important;
+            border-color: #0071E3 !important;
+            border-left-width: 4px !important;
+            box-shadow: 0 8px 28px -4px rgba(0, 113, 227, 0.35) !important;
+        }
+        html.dark .sentence-card.dialogue-card-B.sentence-active {
+            background-color: rgba(137, 54, 255, 0.16) !important;
+            border-color: #8936FF !important;
+            border-left-width: 4px !important;
+            box-shadow: 0 8px 28px -4px rgba(137, 54, 255, 0.35) !important;
+        }
+        /* 句子文字層次與字體規範：全面使用現代 Apple 無襯線字體 */
+        .sentence-card .en-text,
+        #listening-text-container .en-text {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+            letter-spacing: -0.01em;
+        }
+        html.dark .sentence-card .en-text {
+            color: #F8FAFC !important;
+        }
+        html.dark .sentence-card .zh-text {
+            color: #94A3B8 !important;
+        }
+        html.dark .sentence-card.sentence-active .en-text {
+            color: #58A6FF !important;
+        }
+        html.dark .sentence-card.dialogue-card-B.sentence-active .en-text {
+            color: #C084FC !important;
+        }
+        html.dark .sentence-card.sentence-active .zh-text {
+            color: #F8FAFC !important;
+        }
+        /* 對話角色膠囊 (Mom 媽媽 / Lily 女兒) 徹底消除泛白橢圓！ */
+        html.dark .dialogue-card-A [class*="bg-blue-100"] {
+            background-color: rgba(0, 113, 227, 0.22) !important;
+            color: #58A6FF !important;
+            border: 1px solid rgba(56, 139, 253, 0.4) !important;
+        }
+        html.dark .dialogue-card-B [class*="bg-purple-100"] {
+            background-color: rgba(137, 54, 255, 0.22) !important;
+            color: #C084FC !important;
+            border: 1px solid rgba(168, 85, 247, 0.4) !important;
+        }
+        /* 句子序號標籤 (#1, #2) */
+        html.dark .sentence-badge {
+            background-color: rgba(255, 255, 255, 0.08) !important;
+            color: #94A3B8 !important;
+        }
+        html.dark .sentence-card.sentence-active .sentence-badge {
+            background-color: #0071E3 !important;
+            color: #FFFFFF !important;
+        }
+        html.dark .sentence-card.dialogue-card-B.sentence-active .sentence-badge {
+            background-color: #8936FF !important;
+            color: #FFFFFF !important;
+        }
+        /* 單字劃線高亮：發光通透感 */
+        html.dark .listen-word.is-core-word {
+            background-color: rgba(56, 139, 253, 0.22) !important;
+            color: #58A6FF !important;
+            border-bottom: 2.5px solid #388BFD !important;
+        }
+        html.dark .listen-word.is-annotated {
+            background-color: rgba(16, 185, 129, 0.22) !important;
+            color: #34D399 !important;
+            border-bottom: 2.5px solid #10B981 !important;
+        }
+        html.dark .listen-word.word-speaking {
+            background-color: rgba(255, 59, 48, 0.22) !important;
+            color: #FF6961 !important;
+            outline: 2px solid #FF453A !important;
+        }
+        /* 角色扮演挖空盒 */
+        html.dark .roleplay-box {
+            background-color: rgba(0, 113, 227, 0.08) !important;
+            border-color: rgba(56, 139, 253, 0.35) !important;
+            color: #58A6FF !important;
+        }
+        html.dark .roleplay-box span:last-child {
+            background-color: #162033 !important;
+            color: #F8FAFC !important;
+            border-color: rgba(255, 255, 255, 0.1) !important;
+        }
+
+        /* 聽力教材左側手風琴與右側佔位引導卡 */
         html.dark #listening-placeholder-card {
             background: #121927 !important;
             border: 1px solid rgba(255, 255, 255, 0.08) !important;
@@ -557,11 +668,204 @@
             background-color: #162036 !important;
             border-color: rgba(255, 255, 255, 0.25) !important;
         }
-        /* 配音角色微光膠囊 */
         html.dark .voice-badge {
             background-color: rgba(56, 139, 253, 0.15) !important;
             color: #60A5FA !important;
             border: 1px solid rgba(56, 139, 253, 0.25) !important;
+        }
+        /* 手機版選取教材底部浮動列 (徹底消滅刺眼白橫條) */
+        html.dark #listening-mobile-bar {
+            background-color: rgba(12, 18, 30, 0.94) !important;
+            border: 1px solid rgba(255, 255, 255, 0.12) !important;
+            box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.6) !important;
+        }
+        html.dark #listening-mobile-bar span {
+            color: #F8FAFC !important;
+        }
+        html.dark #listening-mobile-bar #mobile-bar-article-title {
+            color: #58A6FF !important;
+        }
+        /* 短文內容摘要文字 */
+        html.dark #listening-card-snippet {
+            color: #94A3B8 !important;
+        }
+        /* 盲聽按鈕、字幕模式選單與沙盒計數徽章 */
+        html.dark #btn-toggle-blind-mode,
+        html.dark #trans-mode-select {
+            background-color: #172235 !important;
+            border-color: rgba(255, 255, 255, 0.12) !important;
+            color: #F8FAFC !important;
+        }
+        html.dark #sandbox-badge-count {
+            background-color: rgba(168, 85, 247, 0.25) !important;
+            color: #C084FC !important;
+            border: 1px solid rgba(168, 85, 247, 0.4) !important;
+        }
+        html.dark #listening-text-container + div,
+        html.dark .flex.flex-wrap.items-center.justify-between.gap-2.px-3\.5 {
+            background-color: #121927 !important;
+            border-color: rgba(255, 255, 255, 0.08) !important;
+        }
+
+        /* 聽力 4 大分頁容器 (聽力 / 文法 / 單字 / 測驗) */
+        html.dark .subtab-btn {
+            color: #94A3B8 !important;
+        }
+        html.dark .subtab-btn.text-\[\#0071E3\],
+        html.dark .subtab-btn[class*="text-[#0071E3]"] {
+            color: #388BFD !important;
+            border-bottom-color: #388BFD !important;
+        }
+        html.dark .subtab-content {
+            background-color: #0A0F1A !important;
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        }
+
+        /* 閱讀測驗分頁 (Quiz Tab) */
+        html.dark #listening-quiz-container > div {
+            background-color: #121927 !important;
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
+            color: #F8FAFC !important;
+        }
+        html.dark #listening-quiz-container h5 {
+            color: #F8FAFC !important;
+        }
+        html.dark #listening-quiz-container label {
+            background-color: #172235 !important;
+            border-color: rgba(255, 255, 255, 0.08) !important;
+            color: #E2E8F0 !important;
+        }
+        html.dark #listening-quiz-container label:hover {
+            background-color: #1E2D48 !important;
+            border-color: rgba(56, 139, 253, 0.4) !important;
+        }
+        html.dark #listening-quiz-container label:has(input:checked) {
+            background-color: rgba(0, 113, 227, 0.2) !important;
+            border-color: #0071E3 !important;
+            color: #58A6FF !important;
+        }
+        html.dark #listening-quiz-container label.bg-green-50,
+        html.dark #listening-quiz-container [id^="reading-feedback-"].bg-green-50 {
+            background-color: rgba(16, 185, 129, 0.18) !important;
+            border-color: rgba(16, 185, 129, 0.45) !important;
+            color: #34D399 !important;
+        }
+        html.dark #listening-quiz-container label.bg-red-50,
+        html.dark #listening-quiz-container [id^="reading-feedback-"].bg-red-50 {
+            background-color: rgba(244, 63, 94, 0.18) !important;
+            border-color: rgba(244, 63, 94, 0.45) !important;
+            color: #FB7185 !important;
+        }
+
+        /* 單字分頁 (Words Tab) */
+        html.dark #listening-words-container > .bg-gradient-to-r {
+            background: linear-gradient(135deg, rgba(137, 54, 255, 0.15) 0%, rgba(56, 139, 253, 0.15) 100%) !important;
+            border-color: rgba(168, 85, 247, 0.35) !important;
+        }
+        html.dark #listening-words-container .text-purple-950 {
+            color: #F8FAFC !important;
+        }
+        html.dark #listening-words-container .text-purple-700\/80 {
+            color: #C084FC !important;
+        }
+        html.dark #listening-words-container [class*="bg-emerald-50/50"] {
+            background-color: rgba(16, 185, 129, 0.06) !important;
+            border-color: rgba(16, 185, 129, 0.25) !important;
+        }
+        html.dark #listening-words-container .bg-white {
+            background-color: #151F31 !important;
+            border-color: rgba(255, 255, 255, 0.08) !important;
+            color: #F8FAFC !important;
+        }
+        html.dark #listening-words-container .bg-white:hover {
+            background-color: #1A263D !important;
+            border-color: rgba(56, 139, 253, 0.4) !important;
+        }
+        html.dark #listening-words-container [id^="annotated-card-zh-"] {
+            color: #34D399 !important;
+        }
+
+        /* ==========================================================
+           4.5 聽力短文單字沙盒 (徹底終結白板卡片與模式破版)
+           ========================================================== */
+        html.dark .sandbox-card-front,
+        html.dark .sandbox-card-back {
+            background: #151F31 !important;
+            border: 1px solid rgba(255, 255, 255, 0.12) !important;
+            box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.6) !important;
+            color: #F8FAFC !important;
+        }
+        html.dark .sandbox-card-front h3,
+        html.dark .sandbox-card-back h3 {
+            color: #F8FAFC !important;
+        }
+        html.dark .sandbox-card-front [class*="text-purple-700"],
+        html.dark .sandbox-card-back [class*="text-purple-700"] {
+            color: #C084FC !important;
+        }
+        html.dark .sandbox-card-front [class*="bg-purple-50"],
+        html.dark .sandbox-card-back [class*="bg-purple-50"] {
+            background-color: rgba(168, 85, 247, 0.15) !important;
+            border-color: rgba(168, 85, 247, 0.3) !important;
+        }
+        html.dark .sandbox-card-front [class*="text-slate-400"],
+        html.dark .sandbox-card-back [class*="text-slate-400"] {
+            color: #94A3B8 !important;
+        }
+        html.dark .sandbox-card-front [class*="text-slate-800"],
+        html.dark .sandbox-card-back [class*="text-slate-800"] {
+            color: #E2E8F0 !important;
+        }
+        /* 沙盒模式切換工具列與範圍按鈕 */
+        html.dark #sandbox-status-toolbar {
+            background-color: #162033 !important;
+            border-color: rgba(255, 255, 255, 0.08) !important;
+            color: #F8FAFC !important;
+        }
+        html.dark #sandbox-scope-btn-all,
+        html.dark #sandbox-scope-btn-annotated,
+        html.dark #sandbox-scope-btn-core {
+            color: #C084FC !important;
+        }
+        html.dark #sandbox-scope-btn-all.bg-white,
+        html.dark #sandbox-scope-btn-annotated.bg-white,
+        html.dark #sandbox-scope-btn-core.bg-white {
+            background-color: #8936FF !important;
+            color: #FFFFFF !important;
+            box-shadow: 0 2px 8px rgba(137, 54, 255, 0.4) !important;
+        }
+        html.dark [id^="sandbox-mode-btn-"] {
+            color: #C084FC !important;
+        }
+        html.dark [id^="sandbox-mode-btn-"].bg-purple-600 {
+            background-color: #8936FF !important;
+            color: #FFFFFF !important;
+        }
+        html.dark [id^="sandbox-mode-btn-"]:hover:not(.bg-purple-600) {
+            background-color: rgba(168, 85, 247, 0.18) !important;
+        }
+        /* 沙盒 4 選 1 與題目選項按鈕 */
+        html.dark #sandbox-card-container button[onclick*="chooseListeningSandboxOption"],
+        html.dark #sandbox-card-container [class*="sandbox-option-btn"] {
+            background-color: #172235 !important;
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            color: #F8FAFC !important;
+        }
+        html.dark #sandbox-card-container button[onclick*="chooseListeningSandboxOption"]:hover {
+            background-color: #202E46 !important;
+            border-color: rgba(56, 139, 253, 0.4) !important;
+        }
+        /* 沙盒結算畫面 */
+        html.dark #sandbox-card-container > div[class*="from-purple-50"] {
+            background: linear-gradient(135deg, rgba(20, 28, 46, 0.95) 0%, rgba(24, 34, 58, 0.9) 100%) !important;
+            border-color: rgba(168, 85, 247, 0.3) !important;
+            color: #F8FAFC !important;
+        }
+        html.dark #sandbox-card-container h4 {
+            color: #F8FAFC !important;
+        }
+        html.dark #sandbox-card-container p {
+            color: #94A3B8 !important;
         }
 
         /* ==========================================================
@@ -987,6 +1291,44 @@
             border-color: #388BFD !important;
             color: #FFFFFF !important;
         }
+    
+        /* 詞形變化卡片暗黑調優 (動詞三態 / 比較級 / 複數) */
+        html.dark #word-detail-modal [class*="bg-blue-50/60"],
+        html.dark #dict-modal [class*="bg-blue-50/60"],
+        html.dark #word-detail-modal [class*="bg-emerald-50/60"],
+        html.dark #dict-modal [class*="bg-emerald-50/60"],
+        html.dark #word-detail-modal [class*="bg-amber-50/60"],
+        html.dark #dict-modal [class*="bg-amber-50/60"] {
+            background-color: rgba(255, 255, 255, 0.035) !important;
+            border-color: rgba(255, 255, 255, 0.08) !important;
+        }
+        html.dark #word-detail-modal [class*="bg-white/95"],
+        html.dark #dict-modal [class*="bg-white/95"] {
+            background-color: #172235 !important;
+            border-color: rgba(255, 255, 255, 0.08) !important;
+            color: #F8FAFC !important;
+        }
+        html.dark #word-detail-modal [class*="bg-white/95"]:hover,
+        html.dark #dict-modal [class*="bg-white/95"]:hover {
+            background-color: #202E46 !important;
+            border-color: rgba(56, 139, 253, 0.4) !important;
+        }
+        html.dark #word-detail-modal [class*="bg-white/95"] span,
+        html.dark #dict-modal [class*="bg-white/95"] span {
+            color: #F8FAFC !important;
+        }
+        html.dark [class*="text-emerald-900"],
+        html.dark [class*="text-blue-900"],
+        html.dark [class*="text-amber-900"] {
+            color: #F8FAFC !important;
+        }
+        /* 訪客提示橫條夜間微光條 */
+        html.dark [onclick*="loginWithGoogle"]:not(button) {
+            background-color: rgba(245, 158, 11, 0.15) !important;
+            border-bottom: 1px solid rgba(245, 158, 11, 0.25) !important;
+            color: #FBBF24 !important;
+        }
+
     </style>
 
 <!-- ==========================================================
@@ -8311,6 +8653,97 @@
                 badgeEl.innerText = unitInfo.name;
             }
 
+            // 詞形變化區塊 HTML (動詞三態 / 形容詞比較級 / 名詞單複數)
+            let formsHtml = '';
+            if (forms) {
+                // 1. 動詞三態與變化
+                if (forms.verbForms) {
+                    formsHtml += `
+                        <div class="bg-gradient-to-br from-blue-50/70 to-indigo-50/50 p-3.5 rounded-2xl border border-blue-100/80 shadow-2xs">
+                            <div class="flex items-center justify-between text-xs font-bold text-blue-900 mb-2">
+                                <div class="flex items-center gap-1.5">
+                                    <span>⚡</span><span>動詞三態與詞形變化 (Verb Forms)</span>
+                                </div>
+                                <span class="text-[10px] text-blue-600 font-normal">點擊單字發音</span>
+                            </div>
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs">
+                                <div class="bg-white/95 p-2 rounded-xl border border-blue-100/60 shadow-2xs cursor-pointer hover:border-blue-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.verbForms.base || w.en)}')" title="點擊聆聽原形發音">
+                                    <span class="text-gray-400 block text-[10px] font-semibold mb-0.5">原形 (Base)</span>
+                                    <span class="font-bold text-gray-800 font-mono text-xs sm:text-sm truncate">${esc(forms.verbForms.base || w.en)}</span>
+                                </div>
+                                <div class="bg-white/95 p-2 rounded-xl border border-blue-100/60 shadow-2xs cursor-pointer hover:border-blue-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.verbForms.past)}')" title="點擊聆聽過去式發音">
+                                    <span class="text-blue-500 block text-[10px] font-semibold mb-0.5">過去式 (Past)</span>
+                                    <span class="font-bold text-[#0071E3] font-mono text-xs sm:text-sm truncate">${esc(forms.verbForms.past)}</span>
+                                </div>
+                                <div class="bg-white/95 p-2 rounded-xl border border-blue-100/60 shadow-2xs cursor-pointer hover:border-blue-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.verbForms.pp)}')" title="點擊聆聽過去分詞發音">
+                                    <span class="text-purple-500 block text-[10px] font-semibold mb-0.5">過去分詞 (P.P.)</span>
+                                    <span class="font-bold text-purple-700 font-mono text-xs sm:text-sm truncate">${esc(forms.verbForms.pp)}</span>
+                                </div>
+                                <div class="bg-white/95 p-2 rounded-xl border border-blue-100/60 shadow-2xs cursor-pointer hover:border-blue-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.verbForms.ing)}')" title="點擊聆聽現在分詞發音">
+                                    <span class="text-emerald-500 block text-[10px] font-semibold mb-0.5">現在分詞 (-ing)</span>
+                                    <span class="font-bold text-emerald-700 font-mono text-xs sm:text-sm truncate">${esc(forms.verbForms.ing)}</span>
+                                </div>
+                            </div>
+                            <div class="mt-2 text-[11px] text-gray-500 flex items-center justify-between px-1">
+                                <span>第三人稱單數現在式 (-s/-es)：<strong class="text-gray-800 font-mono cursor-pointer hover:underline hover:text-[#0071E3]" onclick="playAudio('${esc(forms.verbForms.s)}')">${esc(forms.verbForms.s)}</strong></span>
+                            </div>
+                        </div>
+                    `;
+                }
+
+                // 2. 形容詞比較級與最高級
+                if (forms.adjForms) {
+                    formsHtml += `
+                        <div class="bg-emerald-50/60 p-3 rounded-2xl border border-emerald-200/70 shadow-2xs">
+                            <div class="flex items-center justify-between text-xs font-bold text-emerald-900 mb-2">
+                                <div class="flex items-center gap-1.5">
+                                    <span>📈</span><span>形容詞比較級與最高級 (Degrees of Comparison)</span>
+                                </div>
+                                <span class="text-[10px] text-emerald-600 font-normal">點擊單字發音</span>
+                            </div>
+                            <div class="grid grid-cols-3 gap-2">
+                                <div class="bg-white/95 p-2 rounded-xl border border-emerald-200/60 shadow-2xs cursor-pointer hover:border-emerald-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.adjForms.base)}')">
+                                    <span class="text-emerald-700 block text-[10px] font-semibold mb-0.5">原級 (Base)</span>
+                                    <span class="font-bold text-gray-800 font-mono text-xs sm:text-sm truncate">${esc(forms.adjForms.base)}</span>
+                                </div>
+                                <div class="bg-white/95 p-2 rounded-xl border border-emerald-200/60 shadow-2xs cursor-pointer hover:border-emerald-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.adjForms.comp)}')">
+                                    <span class="text-emerald-700 block text-[10px] font-semibold mb-0.5">比較級 (Comp)</span>
+                                    <span class="font-bold text-emerald-700 font-mono text-xs sm:text-sm truncate">${esc(forms.adjForms.comp)}</span>
+                                </div>
+                                <div class="bg-white/95 p-2 rounded-xl border border-emerald-200/60 shadow-2xs cursor-pointer hover:border-emerald-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.adjForms.super)}')">
+                                    <span class="text-emerald-800 block text-[10px] font-semibold mb-0.5">最高級 (Super)</span>
+                                    <span class="font-bold text-emerald-800 font-mono text-xs sm:text-sm truncate">${esc(forms.adjForms.super)}</span>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }
+
+                // 3. 名詞單複數變化
+                if (forms.nounForms && (!forms.verbForms || forms.nounForms.plural !== forms.verbForms.s)) {
+                    formsHtml += `
+                        <div class="bg-amber-50/60 p-3 rounded-2xl border border-amber-200/70 shadow-2xs">
+                            <div class="flex items-center justify-between text-xs font-bold text-amber-900 mb-2">
+                                <div class="flex items-center gap-1.5">
+                                    <span>📦</span><span>名詞單複數變化 (Noun Plurals)</span>
+                                </div>
+                                <span class="text-[10px] text-amber-600 font-normal">點擊單字發音</span>
+                            </div>
+                            <div class="grid grid-cols-2 gap-2">
+                                <div class="bg-white/95 p-2.5 rounded-xl border border-amber-200/60 shadow-2xs cursor-pointer hover:border-amber-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.nounForms.singular)}')">
+                                    <span class="text-gray-600 block text-[10px] font-semibold mb-0.5">單數 (Singular)</span>
+                                    <span class="font-bold text-gray-900 font-mono text-xs sm:text-sm truncate">${esc(forms.nounForms.singular)}</span>
+                                </div>
+                                <div class="bg-white/95 p-2.5 rounded-xl border border-amber-200/60 shadow-2xs cursor-pointer hover:border-amber-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.nounForms.plural)}')">
+                                    <span class="text-amber-800 block text-[10px] font-semibold mb-0.5">複數 (Plural)</span>
+                                    <span class="font-bold text-amber-700 font-mono text-xs sm:text-sm truncate">${esc(forms.nounForms.plural)}</span>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }
+            }
+
             // 搭配詞區塊 HTML
             let collocationsHtml = '';
             if (collocations && collocations.length > 0) {
@@ -8432,6 +8865,9 @@
                         </div>
                     `}
                 </div>
+
+                <!-- 詞形變化 (動詞三態 / 形容詞比較級 / 名詞複數) -->
+                ${formsHtml}
 
                 <!-- 常見用法與搭配詞 -->
                 ${collocationsHtml}
@@ -10568,11 +11004,14 @@
                 mobileBar.classList.remove('flex');
             }
 
-            // 預載音訊與重設播放器狀態
+            // 預載音訊與重設播放器狀態 (直接設定 src 觸發預載，絕不呼叫 .load() 避免中斷與重設 readyState)
             if (article.audio) {
-                listeningAudioPlayer.src = article.audio;
+                const targetBase = article.audio.split('?')[0];
+                const curSrc = (listeningAudioPlayer.src || '').split('?')[0];
+                if (!curSrc.endsWith(targetBase)) {
+                    listeningAudioPlayer.src = article.audio + (article.audio.includes('?') ? '&' : '?') + 'v=' + APP_BUILD_VERSION;
+                }
                 listeningAudioPlayer.playbackRate = parseFloat(document.getElementById('listening-speed').value || '1');
-                listeningAudioPlayer.load();
             }
             currentListeningIndex = 0;
             isListeningPlaying = false;
@@ -10700,7 +11139,7 @@
                         <span class="text-[10px] bg-white px-2 py-0.5 rounded-md shadow-xs border border-gray-200 text-gray-700 font-semibold shrink-0">查看原句 👁️</span>
                     </div>
                 ` : `
-                    <div id="listen-s-${i}" class="text-base md:text-lg text-[#1D1D1F] leading-relaxed font-serif en-text transition-colors">${html}</div>
+                    <div id="listen-s-${i}" class="text-base md:text-lg text-[#1D1D1F] leading-relaxed font-sans en-text transition-colors">${html}</div>
                 `;
 
                 return `
@@ -11459,6 +11898,14 @@
             startWordTrackingLoop();
         });
 
+        // 監聽音訊載入錯誤
+        listeningAudioPlayer.addEventListener('error', (e) => {
+            console.warn('Listening audio playback error:', listeningAudioPlayer.error);
+            isListeningPlaying = false;
+            updateListeningPlayBtn();
+            stopWordTrackingLoop();
+        });
+
         // 語速切換連動
         document.getElementById('listening-speed').addEventListener('change', (e) => {
             const rate = parseFloat(e.target.value) || 1.0;
@@ -11498,47 +11945,57 @@
                 return;
             }
 
+            unlockMobileAudio();
             currentListeningIndex = index;
             highlightListeningSentence(index);
 
             const targetAudio = currentSelectedListeningArticle.audio;
+            // 帶版本號防止瀏覽器快取舊音檔或 Range 錯亂
+            const targetAudioUrl = targetAudio + (targetAudio.includes('?') ? '&' : '?') + 'v=' + APP_BUILD_VERSION;
             const startTime = (listeningSentences[index] && typeof listeningSentences[index].start === 'number') 
                 ? listeningSentences[index].start 
                 : 0;
 
             const speed = parseFloat(document.getElementById('listening-speed').value || '1');
 
-            const startPlayback = () => {
+            // 判斷是否需要切換 src (以不含參數的原始檔案路徑做比對)
+            const curSrc = (listeningAudioPlayer.src || '').split('?')[0];
+            const targetBase = targetAudio.split('?')[0];
+            const isDiff = !curSrc.endsWith(targetBase);
+
+            if (isDiff) {
+                listeningAudioPlayer.src = targetAudioUrl;
+            }
+
+            listeningAudioPlayer.playbackRate = speed;
+
+            // 時間跳轉：若 metadata 已就緒則立即 seek，否則掛載 once 事件在就緒後精準 seek
+            if (listeningAudioPlayer.readyState >= 1) {
                 try {
                     listeningAudioPlayer.currentTime = Math.max(0, startTime);
                 } catch(e) {}
-                listeningAudioPlayer.playbackRate = speed;
-                listeningAudioPlayer.play().then(() => {
+            } else {
+                const seekOnce = () => {
+                    try {
+                        listeningAudioPlayer.currentTime = Math.max(0, startTime);
+                    } catch(e) {}
+                };
+                listeningAudioPlayer.addEventListener('loadedmetadata', seekOnce, { once: true });
+            }
+
+            // 同步在使用者手勢呼叫鏈內直接調用 play()，持有 User Activation 權杖
+            const playPromise = listeningAudioPlayer.play();
+            if (playPromise !== undefined) {
+                playPromise.then(() => {
                     isListeningPlaying = true;
                     updateListeningPlayBtn();
                     highlightListeningSentence(index);
+                    startWordTrackingLoop();
                 }).catch(err => {
                     console.warn("Audio playback notice:", err);
+                    isListeningPlaying = false;
+                    updateListeningPlayBtn();
                 });
-            };
-
-            if (!listeningAudioPlayer.src.endsWith(targetAudio)) {
-                listeningAudioPlayer.src = targetAudio;
-                listeningAudioPlayer.load();
-                listeningAudioPlayer.onloadedmetadata = () => {
-                    startPlayback();
-                    listeningAudioPlayer.onloadedmetadata = null;
-                };
-            } else {
-                if (listeningAudioPlayer.readyState >= 1) {
-                    startPlayback();
-                } else {
-                    listeningAudioPlayer.onloadedmetadata = () => {
-                        startPlayback();
-                        listeningAudioPlayer.onloadedmetadata = null;
-                    };
-                    listeningAudioPlayer.load();
-                }
             }
         }
 
@@ -12781,7 +13238,7 @@
                                             </button>
                                             ` : ''}
                                         </div>
-                                        <p class="text-xs text-slate-800 font-medium leading-relaxed font-serif">
+                                        <p class="text-xs text-slate-800 font-medium leading-relaxed font-sans">
                                             ${cur.contextSentence ? esc(cur.contextSentence) : `<span class="text-slate-400 italic">${esc(cur.rawZh || '無情境例句')}</span>`}
                                         </p>
                                         ${cur.contextZh ? `<p class="text-[11px] text-slate-500 mt-1 pt-1 border-t border-slate-200/60">${esc(cur.contextZh)}</p>` : ''}

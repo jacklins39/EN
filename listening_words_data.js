@@ -748,5 +748,55 @@ const listeningWordsDB = [
     "unit": 19,
     "example": "She gives her daughter a warm goodnight kiss.",
     "exampleZh": "她給了女兒一個溫暖的晚安吻。"
+  },
+  {
+    "id": 32022,
+    "en": "sunhat",
+    "kk": "[ˋsʌn͵hæt]",
+    "uk": "/ˈsʌnhæt/",
+    "zh": "n. 遮陽帽，草帽",
+    "unit": 19,
+    "example": "Don't forget to wear your cute sunhat on a sunny day.",
+    "exampleZh": "大晴天出門別忘了戴上妳可愛的遮陽帽。"
+  },
+  {
+    "id": 32023,
+    "en": "breeze",
+    "kk": "[briz]",
+    "uk": "/briːz/",
+    "zh": "n. 微風，和風",
+    "unit": 19,
+    "example": "A gentle breeze was blowing across the green park.",
+    "exampleZh": "一陣溫和的微風吹拂過綠意盎然的公園。"
+  },
+  {
+    "id": 32024,
+    "en": "kite",
+    "kk": "[kaɪt]",
+    "uk": "/kaɪt/",
+    "zh": "n. 風箏",
+    "unit": 19,
+    "example": "The colorful kite flew high up into the blue sky.",
+    "exampleZh": "那隻五彩繽紛的風箏高高飛上了藍天。"
+  },
+  {
+    "id": 32025,
+    "en": "sneaker",
+    "kk": "[ˋsnikɚ]",
+    "uk": "/ˈsniːkə(r)/",
+    "zh": "n. 運動鞋，膠底運動鞋",
+    "unit": 19,
+    "example": "Put on your comfortable sneakers before we go running.",
+    "exampleZh": "在我們去跑步前，先穿上妳舒適的運動鞋。"
+  },
+  {
+    "id": 32026,
+    "en": "pilot",
+    "kk": "[ˋpaɪlət]",
+    "uk": "/ˈpaɪlət/",
+    "zh": "n. 飛行員，舵手",
+    "unit": 19,
+    "example": "You are the best little kite pilot in the park today.",
+    "exampleZh": "妳今天是公園裡最棒的風箏小飛行員。"
   }
 ];

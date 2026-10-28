@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261028V49';
+        const APP_BUILD_VERSION = '20261028V50';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -50,19 +50,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261028V49"></script>
-    <script src="toeic_data.js?v=20261028V49"></script>
-    <script src="jh_data.js?v=20261028V49"></script>
-    <script src="listening_data.js?v=20261028V49"></script>
-    <script src="listening_words_data.js?v=20261028V49"></script>
-    <script src="uk_phonetics_manifest.js?v=20261028V49"></script>
-    <script src="words_audio_manifest.js?v=20261028V49"></script>
-    <script src="examples_audio_manifest.js?v=20261028V49"></script>
-    <script src="zh_audio_manifest.js?v=20261028V49"></script>
-    <script src="collocations_audio_manifest.js?v=20261028V49"></script>
-    <script src="syn_ant_data.js?v=20261028V49"></script>
-    <script src="synonyms_unit8_data.js?v=20261028V49"></script>
-    <script src="examples_unit9_data.js?v=20261028V49"></script>
+    <script src="words_data.js?v=20261028V50"></script>
+    <script src="toeic_data.js?v=20261028V50"></script>
+    <script src="jh_data.js?v=20261028V50"></script>
+    <script src="listening_data.js?v=20261028V50"></script>
+    <script src="listening_words_data.js?v=20261028V50"></script>
+    <script src="uk_phonetics_manifest.js?v=20261028V50"></script>
+    <script src="words_audio_manifest.js?v=20261028V50"></script>
+    <script src="examples_audio_manifest.js?v=20261028V50"></script>
+    <script src="zh_audio_manifest.js?v=20261028V50"></script>
+    <script src="collocations_audio_manifest.js?v=20261028V50"></script>
+    <script src="syn_ant_data.js?v=20261028V50"></script>
+    <script src="synonyms_unit8_data.js?v=20261028V50"></script>
+    <script src="examples_unit9_data.js?v=20261028V50"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -458,7 +458,7 @@
     </style>
 
     <!-- ==========================================================
-         Apple Ultra-Dark Design System (頂級沉浸暗黑模式 · 全域無死角)
+         Apple Ultra-Dark Design System (頂級沉浸暗黑模式 · 字典與色彩膠囊終極調校)
          ========================================================== -->
     <style>
         /* 全域平滑色彩過渡 (切換時如同 iOS 般流暢呼吸) */
@@ -519,7 +519,7 @@
             color: #F8FAFC !important;
         }
 
-        /* 4. 聽力特訓頁面專屬深度調優 (圖 2 徹底修復) */
+        /* 4. 聽力特訓頁面專屬深度調優 (教材清單手風琴與右側佔位卡) */
         html.dark #listening-placeholder-card {
             background: #121927 !important;
             border: 1px solid rgba(255, 255, 255, 0.08) !important;
@@ -541,7 +541,7 @@
             color: #F8FAFC !important;
         }
         html.dark .listening-group > div:last-child {
-            background-color: #0A0F1A !important; /* 展開文章區域使用更深邃內凹背景 */
+            background-color: #0A0F1A !important;
             border-top-color: rgba(255, 255, 255, 0.06) !important;
         }
         html.dark .listening-item {
@@ -557,8 +557,172 @@
             background-color: #162036 !important;
             border-color: rgba(255, 255, 255, 0.25) !important;
         }
+        /* 配音角色微光膠囊 */
+        html.dark .voice-badge {
+            background-color: rgba(56, 139, 253, 0.15) !important;
+            color: #60A5FA !important;
+            border: 1px solid rgba(56, 139, 253, 0.25) !important;
+        }
 
-        /* 5. 漸層卡片全面暗黑重構 (待複習、今日新詞、單元進度條、隨機10題、弱點特訓) - 圖 1 徹底修復 */
+        /* ==========================================================
+           5. 彩色微光膠囊系統 (Apple Dark Vibrant Badges)
+           徹底消除兒童專區、生活短文、多益專區的白豆腐塊破版！
+           ========================================================== */
+        /* 琥珀金黃色系 (兒童專區、簡單生活用語篇、LV0未學等) */
+        html.dark [class*="bg-amber-50"],
+        html.dark [class*="bg-yellow-50"],
+        html.dark [class*="bg-orange-50"] {
+            background-color: rgba(245, 158, 11, 0.18) !important;
+            border: 1px solid rgba(245, 158, 11, 0.35) !important;
+            color: #FBBF24 !important;
+        }
+        html.dark [class*="bg-amber-50"] svg,
+        html.dark [class*="bg-yellow-50"] svg,
+        html.dark [class*="bg-orange-50"] svg {
+            color: #FBBF24 !important;
+        }
+
+        /* 翡翠薄荷綠色系 (生活短文、熟練掌握、正確等) */
+        html.dark [class*="bg-emerald-50"],
+        html.dark [class*="bg-green-50"] {
+            background-color: rgba(16, 185, 129, 0.18) !important;
+            border: 1px solid rgba(16, 185, 129, 0.35) !important;
+            color: #34D399 !important;
+        }
+        html.dark [class*="bg-emerald-50"] svg,
+        html.dark [class*="bg-green-50"] svg {
+            color: #34D399 !important;
+        }
+
+        /* Apple 電光藍色系 (多益專區、預覽按鈕、神經語音、已選取等) */
+        html.dark [class*="bg-blue-50"],
+        html.dark [class*="bg-sky-50"],
+        html.dark #btn-preview-all-mistakes,
+        html.dark #btn-view-analysis {
+            background-color: rgba(56, 139, 253, 0.18) !important;
+            border: 1px solid rgba(56, 139, 253, 0.4) !important;
+            color: #58A6FF !important;
+        }
+        html.dark [class*="bg-blue-50"] svg,
+        html.dark [class*="bg-sky-50"] svg {
+            color: #58A6FF !important;
+        }
+        html.dark #btn-preview-all-mistakes:hover,
+        html.dark #btn-view-analysis:hover,
+        html.dark .bg-blue-50:hover {
+            background-color: #0071E3 !important;
+            color: #FFFFFF !important;
+        }
+
+        /* 晶紫靛藍色系 (雙角色、文法重點、短文分類等) */
+        html.dark [class*="bg-purple-50"],
+        html.dark [class*="bg-indigo-50"],
+        html.dark [class*="bg-violet-50"] {
+            background-color: rgba(168, 85, 247, 0.18) !important;
+            border: 1px solid rgba(168, 85, 247, 0.35) !important;
+            color: #C084FC !important;
+        }
+        html.dark [class*="bg-purple-50"] svg,
+        html.dark [class*="bg-indigo-50"] svg,
+        html.dark [class*="bg-violet-50"] svg {
+            color: #C084FC !important;
+        }
+
+        /* 玫瑰緋紅色系 (生疏、錯誤、反義詞、警告等) */
+        html.dark [class*="bg-rose-50"],
+        html.dark [class*="bg-red-50"] {
+            background-color: rgba(244, 63, 94, 0.18) !important;
+            border: 1px solid rgba(244, 63, 94, 0.35) !important;
+            color: #FB7185 !important;
+        }
+        html.dark [class*="bg-rose-50"] svg,
+        html.dark [class*="bg-red-50"] svg {
+            color: #FB7185 !important;
+        }
+
+        /* ==========================================================
+           6. 單字詳情/字典彈窗深度調優 (徹底消滅白按鈕與白高光補丁)
+           ========================================================== */
+        /* Cambridge 外鏈按鈕 */
+        html.dark a[href*="dictionary.cambridge.org"] {
+            background-color: rgba(244, 63, 94, 0.16) !important;
+            border: 1px solid rgba(244, 63, 94, 0.35) !important;
+            color: #FB7185 !important;
+        }
+        html.dark a[href*="dictionary.cambridge.org"]:hover {
+            background-color: rgba(244, 63, 94, 0.28) !important;
+            color: #FFFFFF !important;
+        }
+
+        /* Yahoo 字典外鏈按鈕 */
+        html.dark a[href*="tw.dictionary.search.yahoo.com"] {
+            background-color: rgba(168, 85, 247, 0.16) !important;
+            border: 1px solid rgba(168, 85, 247, 0.35) !important;
+            color: #C084FC !important;
+        }
+        html.dark a[href*="tw.dictionary.search.yahoo.com"]:hover {
+            background-color: rgba(168, 85, 247, 0.28) !important;
+            color: #FFFFFF !important;
+        }
+
+        /* Google 翻譯外鏈按鈕 */
+        html.dark a[href*="translate.google.com"] {
+            background-color: rgba(56, 139, 253, 0.16) !important;
+            border: 1px solid rgba(56, 139, 253, 0.35) !important;
+            color: #58A6FF !important;
+        }
+        html.dark a[href*="translate.google.com"]:hover {
+            background-color: rgba(56, 139, 253, 0.28) !important;
+            color: #FFFFFF !important;
+        }
+
+        /* 例句中目標單字高亮 (徹底消除白色發光補丁) */
+        html.dark .dict-word.bg-blue-100\/80,
+        html.dark .dict-word[class*="bg-blue-100"],
+        html.dark .dict-word {
+            background-color: rgba(56, 139, 253, 0.22) !important;
+            color: #58A6FF !important;
+            border-bottom: 2px solid #388BFD !important;
+        }
+
+        /* 實用生活例句方塊底色 */
+        html.dark [class*="bg-blue-50/40"] {
+            background-color: rgba(255, 255, 255, 0.035) !important;
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        }
+        html.dark [class*="bg-blue-50/40"] .text-blue-900 {
+            color: #58A6FF !important;
+        }
+        html.dark #detail-card-example {
+            color: #E2E8F0 !important;
+        }
+
+        /* 彈窗頂部音標膠囊 (美式 & 英式) */
+        html.dark span[class*="bg-blue-50/80"],
+        html.dark span[id*="card-phonetic-"] {
+            background-color: rgba(56, 139, 253, 0.15) !important;
+            border: 1px solid rgba(56, 139, 253, 0.3) !important;
+            color: #93C5FD !important;
+        }
+        html.dark span[class*="bg-purple-50/80"] {
+            background-color: rgba(168, 85, 247, 0.15) !important;
+            border: 1px solid rgba(168, 85, 247, 0.3) !important;
+            color: #C084FC !important;
+        }
+
+        /* 同反義詞跳轉單字按鈕 */
+        html.dark [onclick*="showWordDetailModal"] {
+            background-color: #172235 !important;
+            border: 1px solid rgba(255, 255, 255, 0.12) !important;
+            color: #F8FAFC !important;
+        }
+        html.dark [onclick*="showWordDetailModal"]:hover {
+            background-color: #243552 !important;
+            border-color: #388BFD !important;
+            color: #58A6FF !important;
+        }
+
+        /* 7. 漸層卡片全面暗黑重構 (待複習、今日新詞、單元進度條、隨機10題、弱點特訓) */
         html.dark [class*="from-slate-50"],
         html.dark #box-stat-review,
         html.dark #box-stat-new,
@@ -584,7 +748,7 @@
             color: #F8FAFC;
         }
 
-        /* 6. 統計分析頁面專屬深度調優 (圖 4 徹底修復) */
+        /* 8. 統計分析頁面專屬深度調優 */
         html.dark #view-analysis .grid-cols-2 > div,
         html.dark #view-analysis .lg\:grid-cols-5 > div,
         html.dark [class*="from-blue-50/90"],
@@ -613,7 +777,7 @@
             color: #F8FAFC !important;
         }
 
-        /* 7. 次級容器 / 內嵌方塊 (消除所有灰白膏藥) */
+        /* 9. 次級容器 / 內嵌方塊 (消除所有灰白膏藥) */
         html.dark [class*="bg-slate-50"],
         html.dark [class*="bg-slate-100"],
         html.dark [class*="bg-gray-50"],
@@ -624,7 +788,7 @@
             border-color: rgba(255, 255, 255, 0.08) !important;
         }
 
-        /* 8. 軌道 / 進度條槽 (圖 1 進度條修復) */
+        /* 10. 軌道 / 進度條槽 */
         html.dark [class*="bg-slate-200"],
         html.dark [class*="bg-gray-200"],
         html.dark .w-full.bg-slate-200\/80 {
@@ -632,7 +796,7 @@
             border-color: rgba(255, 255, 255, 0.05) !important;
         }
 
-        /* 9. 測驗題型切換器 (Apple Segmented Control) */
+        /* 11. 測驗題型切換器 (Apple Segmented Control) */
         html.dark .quiz-mode-selector {
             background-color: rgba(0, 0, 0, 0.55) !important;
             padding: 3px !important;
@@ -655,7 +819,7 @@
             background-color: rgba(255, 255, 255, 0.08) !important;
         }
 
-        /* 10. 錯題集中複習三個按鈕 */
+        /* 12. 錯題集中複習三個按鈕 */
         html.dark #btn-review-week,
         html.dark #btn-review-month,
         html.dark #btn-review-all {
@@ -672,7 +836,7 @@
             color: #58A6FF !important;
         }
 
-        /* 11. 單字清單與音標膠囊調優 (圖 3 徹底修復) */
+        /* 13. 單字清單與音標膠囊調優 */
         html.dark .preview-word-row,
         html.dark .weak-row,
         html.dark [id^="preview-row-"] {
@@ -696,22 +860,7 @@
             border: 1px solid rgba(255, 255, 255, 0.08) !important;
         }
 
-        /* 12. 微膠囊按鈕 (預覽 ➔ / 成長曲線 ➔ / bg-blue-50) */
-        html.dark .bg-blue-50,
-        html.dark #btn-preview-all-mistakes,
-        html.dark #btn-view-analysis {
-            background-color: rgba(0, 113, 227, 0.22) !important;
-            border: 1px solid rgba(56, 139, 253, 0.45) !important;
-            color: #58A6FF !important;
-        }
-        html.dark .bg-blue-50:hover,
-        html.dark #btn-preview-all-mistakes:hover,
-        html.dark #btn-view-analysis:hover {
-            background-color: #0071E3 !important;
-            color: #FFFFFF !important;
-        }
-
-        /* 13. 翻牌卡片與彈窗 */
+        /* 14. 翻牌卡片與彈窗 */
         html.dark .flip-card-front {
             background-color: #121927 !important;
             border-color: rgba(255, 255, 255, 0.1) !important;
@@ -732,7 +881,7 @@
             color: #F8FAFC !important;
         }
 
-        /* 14. 導航列 (Mobile & Desktop) */
+        /* 15. 導航列 (Mobile & Desktop) */
         html.dark nav.fixed {
             background-color: rgba(10, 15, 26, 0.94) !important;
             border-color: rgba(255, 255, 255, 0.08) !important;
@@ -763,7 +912,7 @@
             }
         }
 
-        /* 15. 頂部毛玻璃導航列 */
+        /* 16. 頂部毛玻璃導航列 */
         html.dark header {
             background-color: rgba(8, 12, 20, 0.88) !important;
             border-bottom-color: rgba(255, 255, 255, 0.08) !important;
@@ -781,7 +930,7 @@
             background-color: rgba(255, 255, 255, 0.14) !important;
         }
 
-        /* 16. 文字層級與邊框覆蓋 */
+        /* 17. 文字層級與邊框覆蓋 */
         html.dark .text-slate-900,
         html.dark .text-\[\#1D1D1F\],
         html.dark .text-gray-900 {
@@ -812,7 +961,7 @@
             border-color: rgba(255, 255, 255, 0.08) !important;
         }
 
-        /* 17. 輸入框與下拉選單 */
+        /* 18. 輸入框與下拉選單 */
         html.dark select,
         html.dark input[type="text"],
         html.dark input[type="search"],
@@ -827,7 +976,7 @@
             color: #F8FAFC !important;
         }
 
-        /* 18. 自動輪播按鈕 */
+        /* 19. 自動輪播按鈕 */
         html.dark #lobby-btn-auto-daily {
             background-color: #172235 !important;
             border: 1px solid rgba(255, 255, 255, 0.12) !important;
@@ -11161,35 +11310,37 @@
                 return;
             }
 
-            // 取得當前藍色大框框內的英文單字 DOM 節點
+            // 取得當前大框內的英文單字 DOM 節點
             const sentenceDiv = document.getElementById(`listen-s-${currentHighlightedIndex}`);
             if (!sentenceDiv) return;
             const words = Array.from(sentenceDiv.querySelectorAll('.listen-word'));
             if (words.length === 0) return;
 
-// 1. 扣除句末自然靜音空白 (音檔結尾通常有 0.2 ~ 0.45 秒停頓)
-            const tailSilence = Math.min(0.45, Math.max(0.18, totalDuration * 0.1));
+            // 1. 扣除句末自然靜音空白 (通常有 0.18 ~ 0.35 秒停頓)
+            const tailSilence = Math.min(0.35, Math.max(0.15, totalDuration * 0.08));
             const effectiveSpeechDuration = Math.max(0.3, totalDuration - tailSilence);
 
-            // 2. 輕量平滑提前量 (降為 0.08s，補償 60fps 畫面刷新延遲與人眼反應，徹底根絕搶跑跳字)
+            // 2. 輕量平滑提前量 (補償 60fps 畫面刷新延遲與人眼感知)
             const speed = listeningAudioPlayer.playbackRate || 1.0;
-            const maxLead = 0.08 * speed;
-            const leadRamp = Math.min(1.0, Math.max(0, rawElapsed / 0.4));
+            const maxLead = 0.06 * speed;
+            const leadRamp = Math.min(1.0, Math.max(0, rawElapsed / 0.3));
             const leadOffset = maxLead * leadRamp;
             const adjustedElapsed = Math.min(effectiveSpeechDuration, Math.max(0, rawElapsed + leadOffset));
 
-            // 3. 詞長保底 + 標點停頓加權 (空格與換氣停頓完全內化至權重中，杜絕搶跑跳字)
-            const weights = words.map(w => {
+            // 3. 詞長保底 + 句中標點停頓加權 (僅對句中停頓加權，句末靜音已由 tailSilence 處理，杜絕前半句搶跑)
+            const weights = words.map((w, idx) => {
                 const text = w.textContent.trim();
                 const cleanLen = text.replace(/[^\w]/g, '').length || text.length;
                 let weight = Math.max(2.6, Math.pow(cleanLen, 0.85));
 
-                // 標點符號停頓加權 (模擬自然語流停頓時間)
-                if (/[,;:—\-]/.test(text)) {
-                    weight += 2.8; // 逗號、分號、破折號：約 250~350ms 換氣停頓
-                }
-                if (/[.!?]/.test(text)) {
-                    weight += 4.6; // 句號、驚嘆號、問號：約 500~700ms 深度句末停頓 (如 Lily!)
+                const isLastWord = (idx === words.length - 1);
+                if (!isLastWord) {
+                    if (/[,;:—\-]/.test(text)) {
+                        weight += 2.2; // 句中換氣短暫停頓
+                    }
+                    if (/[.!?]/.test(text)) {
+                        weight += 3.2; // 句中驚嘆/問句停頓 (如 Lily! Look...)
+                    }
                 }
                 return weight;
             });
@@ -11197,7 +11348,7 @@
             const totalWeight = weights.reduce((a, b) => a + b, 0);
             const currentWeightProgress = (adjustedElapsed / effectiveSpeechDuration) * totalWeight;
 
-            // 4. 連續時間軸命中判定 (保證每個單字依序被框住，無斷崖跳躍)
+            // 4. 連續時間軸精準鎖定單字
             let acc = 0;
             let targetWord = words[words.length - 1];
             for (let i = 0; i < words.length; i++) {
@@ -11215,11 +11366,49 @@
             }
         }
 
+        // 統一高頻（60fps）精準音訊與文字滾動同步引擎
+        function syncListeningPlayback() {
+            if (!listeningSentences || listeningSentences.length === 0) return;
+            const t = listeningAudioPlayer.currentTime;
+            
+            // 1. 單句循環模式：播到句尾時精確循環回開頭
+            if (listeningLoopMode === 'sentence' && currentListeningIndex >= 0 && currentListeningIndex < listeningSentences.length) {
+                const s = listeningSentences[currentListeningIndex];
+                const sStart = typeof s.start === 'number' ? s.start : 0;
+                const sEnd = typeof s.end === 'number' ? s.end : 999999;
+                if (t >= (sEnd - 0.08)) {
+                    listeningAudioPlayer.currentTime = Math.max(0, sStart);
+                    clearWordHighlight();
+                    return;
+                }
+            }
+
+            // 2. 正常推進計算當前句 (無死角跨句連續覆蓋)
+            let foundIdx = -1;
+            for (let i = 0; i < listeningSentences.length; i++) {
+                const s = listeningSentences[i];
+                const sStart = typeof s.start === 'number' ? s.start : 0;
+                const nextS = (i < listeningSentences.length - 1) ? listeningSentences[i + 1] : null;
+                const sThreshold = nextS ? (typeof nextS.start === 'number' ? nextS.start : s.end) : (typeof s.end === 'number' ? s.end : 999999);
+                if (t >= sStart && (i === listeningSentences.length - 1 || t < sThreshold)) {
+                    foundIdx = i;
+                    break;
+                }
+            }
+
+            if (foundIdx !== -1 && foundIdx !== currentHighlightedIndex) {
+                currentListeningIndex = foundIdx;
+                highlightListeningSentence(foundIdx);
+            }
+
+            updateWordHighlight();
+        }
+
         function startWordTrackingLoop() {
             if (wordTrackRafId) cancelAnimationFrame(wordTrackRafId);
             function loop() {
                 if (isListeningPlaying && !listeningAudioPlayer.paused) {
-                    updateWordHighlight();
+                    syncListeningPlayback();
                     wordTrackRafId = requestAnimationFrame(loop);
                 } else {
                     wordTrackRafId = null;
@@ -11236,42 +11425,9 @@
             clearWordHighlight();
         }
 
-        // 監聽播放進度，即時高亮對應句子並自動平滑滾動，支援單句循環
+        // 監聽播放進度備份觸發
         listeningAudioPlayer.addEventListener('timeupdate', () => {
-            if (!listeningSentences || listeningSentences.length === 0) return;
-            const t = listeningAudioPlayer.currentTime;
-            
-            // 1. 若處於「單句循環」模式：播到當前句結尾時立即循環回開頭
-            if (listeningLoopMode === 'sentence' && currentListeningIndex >= 0 && currentListeningIndex < listeningSentences.length) {
-                const s = listeningSentences[currentListeningIndex];
-                const sStart = typeof s.start === 'number' ? s.start : 0;
-                const sEnd = typeof s.end === 'number' ? s.end : 999999;
-                if (t >= (sEnd - 0.08)) {
-                    listeningAudioPlayer.currentTime = Math.max(0, sStart);
-                    clearWordHighlight();
-                    return;
-                }
-            }
-
-            // 2. 正常推進計算高亮句子 (完整保留藍色大框)
-            let foundIdx = -1;
-            for (let i = 0; i < listeningSentences.length; i++) {
-                const s = listeningSentences[i];
-                const sStart = typeof s.start === 'number' ? s.start : 0;
-                const sEnd = typeof s.end === 'number' ? s.end : 999999;
-                const isLast = (i === listeningSentences.length - 1);
-                if (t >= sStart && (isLast || t < sEnd)) {
-                    foundIdx = i;
-                    break;
-                }
-            }
-
-            if (foundIdx !== -1 && foundIdx !== currentHighlightedIndex) {
-                currentListeningIndex = foundIdx;
-                highlightListeningSentence(foundIdx);
-            }
-
-            updateWordHighlight();
+            syncListeningPlayback();
         });
 
         listeningAudioPlayer.addEventListener('ended', () => {
@@ -11309,7 +11465,7 @@
             listeningAudioPlayer.playbackRate = rate;
         });
 
-        // 完整保留藍色大框框高亮
+        // 句卡高亮與柔和內容器平滑滾動 (不干擾全域視窗)
         function highlightListeningSentence(index) {
             currentHighlightedIndex = index;
             clearWordHighlight();
@@ -11320,8 +11476,14 @@
                 if (i === index) {
                     block.classList.add('sentence-active');
                     const textTab = document.getElementById('subtab-content-listening-text');
-                    if (!textTab || !textTab.classList.contains('hidden')) {
-                        block.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    if (textTab && !textTab.classList.contains('hidden')) {
+                        const tabRect = textTab.getBoundingClientRect();
+                        const blockRect = block.getBoundingClientRect();
+                        const isVisible = (blockRect.top >= tabRect.top + 30 && blockRect.bottom <= tabRect.bottom - 30);
+                        if (!isVisible) {
+                            const targetTop = block.offsetTop - textTab.offsetTop - (textTab.clientHeight / 2) + (block.clientHeight / 2);
+                            textTab.scrollTo({ top: Math.max(0, targetTop), behavior: 'smooth' });
+                        }
                     }
                 } else {
                     block.classList.remove('sentence-active');

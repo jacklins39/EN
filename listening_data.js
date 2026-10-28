@@ -7065,5 +7065,183 @@ const listeningArticlesDB = [
         "zh": "n. 睡衣褲 (複數)"
       }
     ]
-  }
+  },
+  {
+  "id": "2026_kids_daily_03",
+  "month": "兒童專區",
+  "category": "kids",
+  "title": "兒童生活 (3): 公園探險與放風箏 (Park Adventure & Flying a Kite)",
+  "level": "Pre-A1",
+  "isDialogue": true,
+  "text": "Hey Lily, look outside! The sun is shining and the breeze is so nice. Do you want to go to the park with Daddy? Yay! Can we bring my colorful kite and the red soccer ball? Of course! Put on your sneakers, and don't forget your cute sun hat. I am all ready, Daddy! Look, the wind is blowing. Can we fly the kite now? Hold the string tight, sweetie. Now run with me! One, two, three, go! Whee! Look how high it flies! It looks like a giant rainbow bird in the sky! You are doing amazing, Lily! You are the best little kite pilot today. Thank you, Daddy! Holding your hand is the happiest thing in the world.",
+  "sentences": [
+    {
+      "speaker": "Dad",
+      "role": "A",
+      "roleDesc": "爸爸 (Guy)",
+      "avatar": "👨",
+      "en": "Hey Lily, look outside! The sun is shining and the breeze is so nice.",
+      "zh": "嘿莉莉，看窗外！陽光明媚，微風吹起來好舒服。",
+      "start": 0.0,
+      "end": 5.69
+    },
+    {
+      "speaker": "Dad",
+      "role": "A",
+      "roleDesc": "爸爸 (Guy)",
+      "avatar": "👨",
+      "en": "Do you want to go to the park with Daddy?",
+      "zh": "妳想和爸爸一起去公園玩嗎？",
+      "start": 6.04,
+      "end": 9.0
+    },
+    {
+      "speaker": "Lily",
+      "role": "B",
+      "roleDesc": "女兒 5歲 (Ana)",
+      "avatar": "👧",
+      "en": "Yay! Can we bring my colorful kite and the red soccer ball?",
+      "zh": "太棒了！我們可以帶上我的彩色風箏和紅色足球嗎？",
+      "start": 9.35,
+      "end": 14.76
+    },
+    {
+      "speaker": "Dad",
+      "role": "A",
+      "roleDesc": "爸爸 (Guy)",
+      "avatar": "👨",
+      "en": "Of course! Put on your sneakers, and don't forget your cute sun hat.",
+      "zh": "當然可以！穿上妳的運動鞋，別忘了戴上妳可愛的遮陽帽。",
+      "start": 15.11,
+      "end": 20.66
+    },
+    {
+      "speaker": "Lily",
+      "role": "B",
+      "roleDesc": "女兒 5歲 (Ana)",
+      "avatar": "👧",
+      "en": "I am all ready, Daddy! Look, the wind is blowing. Can we fly the kite now?",
+      "zh": "我準備好囉，爸爸！妳看，起風了。我們現在可以放風箏了嗎？",
+      "start": 21.01,
+      "end": 28.71
+    },
+    {
+      "speaker": "Dad",
+      "role": "A",
+      "roleDesc": "爸爸 (Guy)",
+      "avatar": "👨",
+      "en": "Hold the string tight, sweetie. Now run with me! One, two, three, go!",
+      "zh": "握緊風箏線，寶貝。現在跟我一起跑！一、二、三，衝啊！",
+      "start": 29.06,
+      "end": 36.57
+    },
+    {
+      "speaker": "Lily",
+      "role": "B",
+      "roleDesc": "女兒 5歲 (Ana)",
+      "avatar": "👧",
+      "en": "Whee! Look how high it flies! It looks like a giant rainbow bird in the sky!",
+      "zh": "哇！看它飛得多高！它看起來就像天空中的一隻巨大彩虹鳥！",
+      "start": 36.92,
+      "end": 44.53
+    },
+    {
+      "speaker": "Dad",
+      "role": "A",
+      "roleDesc": "爸爸 (Guy)",
+      "avatar": "👨",
+      "en": "You are doing amazing, Lily! You are the best little kite pilot today.",
+      "zh": "妳太厲害了，莉莉！妳今天是全場最棒的風箏小飛行員。",
+      "start": 44.88,
+      "end": 50.53
+    },
+    {
+      "speaker": "Lily",
+      "role": "B",
+      "roleDesc": "女兒 5歲 (Ana)",
+      "avatar": "👧",
+      "en": "Thank you, Daddy! Holding your hand is the happiest thing in the world.",
+      "zh": "謝謝爸爸！牽著你的手是世界上最幸福的事了。",
+      "start": 50.88,
+      "end": 57.02
+    }
+  ],
+  "grammar": [
+    {
+      "tag": "想不想邀請句型",
+      "title": "邀請做某事：Do you want to + V?",
+      "pattern": "Do you want to + 原形動詞 (V)...?",
+      "explanation": "父母向幼童提出提議或活動時最自然親切的問句，引導孩子表達意願。",
+      "keyPoint": "口語中常連讀為 Wanna + V，正式口說仍保持 Do you want to...",
+      "example": "<span class='font-bold text-[#0071E3] underline decoration-[#0071E3]/60 decoration-2 underline-offset-4'>Do you want to go to the park</span> with Daddy?",
+      "exampleZh": "妳想和爸爸一起去公園玩嗎？"
+    },
+    {
+      "tag": "感嘆句與比喻",
+      "title": "驚嘆多麼...：Look how + 形容詞/副詞 + 主詞 + 動詞！",
+      "pattern": "Look how + adj./adv. + S + V!",
+      "explanation": "兒童在觀察自然或興奮時表達驚喜的道地美式句型，相當於「看它...多麼厲害！」。",
+      "keyPoint": "後方接名詞主詞與動詞，如 Look how high it flies! (看它飛得多高！)",
+      "example": "<span class='font-bold text-[#0071E3] underline decoration-[#0071E3]/60 decoration-2 underline-offset-4'>Look how high it flies!</span>",
+      "exampleZh": "看它飛得多高！"
+    }
+  ],
+  "quiz": [
+    {
+      "q": "1. Where does Dad invite Lily to go?",
+      "options": [
+        "A. To the supermarket",
+        "B. To the park",
+        "C. To the library",
+        "D. To the swimming pool"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "2. What toy does Lily want to fly in the wind?",
+      "options": [
+        "A. A toy airplane",
+        "B. A colorful kite",
+        "C. A big balloon",
+        "D. A paper boat"
+      ],
+      "ans": 1
+    },
+    {
+      "q": "3. What does Lily compare the high-flying kite to?",
+      "options": [
+        "A. A fast rocket",
+        "B. A shiny star",
+        "C. A giant rainbow bird",
+        "D. A little cloud"
+      ],
+      "ans": 2
+    }
+  ],
+  "voice": "en-US-GuyNeural & en-US-AnaNeural",
+  "voiceLabel": "雙角色 (爸爸 & 5歲女兒)",
+  "audio": "audio/listening/2026_kids_daily_03.mp3",
+  "vocabulary": [
+    {
+      "en": "breeze",
+      "zh": "n. 微風、輕風"
+    },
+    {
+      "en": "sneaker",
+      "zh": "n. 運動鞋、布鞋"
+    },
+    {
+      "en": "kite",
+      "zh": "n. 風箏"
+    },
+    {
+      "en": "string",
+      "zh": "n. 線、細繩"
+    },
+    {
+      "en": "pilot",
+      "zh": "n. 飛行員、舵手"
+    }
+  ]
+}
 ];

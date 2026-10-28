@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261027V44';
+        const APP_BUILD_VERSION = '20261028V45';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -31,19 +31,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261027V44"></script>
-    <script src="toeic_data.js?v=20261027V44"></script>
-    <script src="jh_data.js?v=20261027V44"></script>
-    <script src="listening_data.js?v=20261027V44"></script>
-    <script src="listening_words_data.js?v=20261027V44"></script>
-    <script src="uk_phonetics_manifest.js?v=20261027V44"></script>
-    <script src="words_audio_manifest.js?v=20261027V44"></script>
-    <script src="examples_audio_manifest.js?v=20261027V44"></script>
-    <script src="zh_audio_manifest.js?v=20261027V44"></script>
-    <script src="collocations_audio_manifest.js?v=20261027V44"></script>
-    <script src="syn_ant_data.js?v=20261027V44"></script>
-    <script src="synonyms_unit8_data.js?v=20261027V44"></script>
-    <script src="examples_unit9_data.js?v=20261027V44"></script>
+    <script src="words_data.js?v=20261028V45"></script>
+    <script src="toeic_data.js?v=20261028V45"></script>
+    <script src="jh_data.js?v=20261028V45"></script>
+    <script src="listening_data.js?v=20261028V45"></script>
+    <script src="listening_words_data.js?v=20261028V45"></script>
+    <script src="uk_phonetics_manifest.js?v=20261028V45"></script>
+    <script src="words_audio_manifest.js?v=20261028V45"></script>
+    <script src="examples_audio_manifest.js?v=20261028V45"></script>
+    <script src="zh_audio_manifest.js?v=20261028V45"></script>
+    <script src="collocations_audio_manifest.js?v=20261028V45"></script>
+    <script src="syn_ant_data.js?v=20261028V45"></script>
+    <script src="synonyms_unit8_data.js?v=20261028V45"></script>
+    <script src="examples_unit9_data.js?v=20261028V45"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -118,6 +118,43 @@
             border: 1px solid rgba(226, 232, 240, 0.85);
             background-color: white;
             box-sizing: border-box;
+        }
+
+        /* 聽力劃線單字翻牌沙盒專用 3D 翻轉卡片 (獨立隔離) */
+        .sandbox-card {
+            perspective: 1000px;
+            width: 100%;
+            height: 290px;
+        }
+        .sandbox-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+            transform-style: preserve-3d;
+        }
+        .sandbox-card.flipped .sandbox-card-inner {
+            transform: rotateY(180deg);
+        }
+        .sandbox-card-front, .sandbox-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            border-radius: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 1.25rem;
+            background: white;
+            border: 1px solid rgba(226, 232, 240, 0.9);
+            box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.06);
+            box-sizing: border-box;
+        }
+        .sandbox-card-back {
+            transform: rotateY(180deg);
         }
 
         .flip-card-front {
@@ -635,34 +672,37 @@
                     </div>
                 </div>
 
-                <!-- 雙欄 Bento 特訓卡 (與上方待複習/新單字雙卡視覺對稱) -->
+                <!-- 雙欄 Bento 特訓卡 (與上方待複習/新單字雙卡視覺對稱，支援點擊預覽) -->
                 <div class="grid grid-cols-2 gap-2 sm:gap-3 mb-3">
-                    <!-- 隨機 10 題自測 -->
-                    <button id="lobby-btn-start-rapid" type="button" class="group bg-gradient-to-br from-slate-50/90 to-blue-50/30 rounded-2xl p-3 sm:p-3.5 border border-slate-200/70 cursor-pointer hover:border-blue-300 hover:shadow-sm transition-all active:scale-[0.98] text-left min-w-0">
+                    <!-- 隨機 10 題自測 (支援預覽) -->
+                    <button id="lobby-btn-start-rapid" type="button" class="group bg-gradient-to-br from-slate-50/90 to-blue-50/30 rounded-2xl p-3 sm:p-3.5 border border-slate-200/70 cursor-pointer hover:border-blue-300 hover:shadow-sm transition-all active:scale-[0.98] text-left min-w-0" title="點擊預覽抽考單字與發音">
                         <div class="flex items-center justify-between mb-1 gap-1">
                             <span class="text-slate-700 text-[11px] sm:text-xs font-bold truncate">⚡ 隨機 10 題</span>
-                            <span class="text-[10px] font-medium text-[#0071E3] bg-blue-50 px-1.5 py-0.5 rounded-md group-hover:bg-[#0071E3] group-hover:text-white transition-colors shrink-0">快測 ➔</span>
+                            <span class="text-[10px] font-medium text-[#0071E3] bg-blue-50 px-1.5 py-0.5 rounded-md group-hover:bg-[#0071E3] group-hover:text-white transition-colors shrink-0">預覽 ➔</span>
                         </div>
-                        <p class="text-[11px] text-slate-500 font-medium truncate">零碎時間快速抽考</p>
+                        <p class="text-[11px] text-slate-500 font-medium truncate">點擊預覽或抽考</p>
                     </button>
 
-                    <!-- 頑固弱點特訓 -->
-                    <button id="lobby-btn-weak-practice" type="button" class="group bg-gradient-to-br from-slate-50/90 to-indigo-50/30 rounded-2xl p-3 sm:p-3.5 border border-slate-200/70 cursor-pointer hover:border-blue-300 hover:shadow-sm transition-all active:scale-[0.98] text-left min-w-0">
+                    <!-- 頑固弱點特訓 (支援預覽) -->
+                    <button id="lobby-btn-weak-practice" type="button" class="group bg-gradient-to-br from-slate-50/90 to-indigo-50/30 rounded-2xl p-3 sm:p-3.5 border border-slate-200/70 cursor-pointer hover:border-blue-300 hover:shadow-sm transition-all active:scale-[0.98] text-left min-w-0" title="點擊預覽當前單元弱點單字與發音">
                         <div class="flex items-center justify-between mb-1 gap-1">
                             <span class="text-slate-700 text-[11px] sm:text-xs font-bold truncate">💡 弱點特訓</span>
-                            <span class="text-[10px] font-medium text-[#0071E3] bg-blue-50 px-1.5 py-0.5 rounded-md group-hover:bg-[#0071E3] group-hover:text-white transition-colors shrink-0">特訓 ➔</span>
+                            <span class="text-[10px] font-medium text-[#0071E3] bg-blue-50 px-1.5 py-0.5 rounded-md group-hover:bg-[#0071E3] group-hover:text-white transition-colors shrink-0">預覽 ➔</span>
                         </div>
                         <p class="text-[11px] text-slate-500 font-medium truncate" id="lobby-weak-count-badge">0 個弱點單字</p>
                     </button>
                 </div>
 
-                <!-- 歷史錯題集中複習 -->
+                <!-- 歷史錯題集中複習 (支援預覽) -->
                 <div class="bg-slate-50/70 p-2.5 sm:p-3 rounded-2xl border border-slate-200/60">
                     <div class="flex items-center justify-between mb-2 px-0.5">
                         <span class="text-[11px] sm:text-xs font-semibold text-slate-600 flex items-center gap-1">
                             <span>🎯</span> 歷史錯題集中複習
                         </span>
-                        <span id="lobby-mistake-count-badge" class="text-[11px] font-semibold text-[#0071E3] font-mono">0 字錯題</span>
+                        <button id="btn-preview-all-mistakes" type="button" class="group flex items-center gap-1 text-[11px] font-semibold text-[#0071E3] bg-blue-50 hover:bg-[#0071E3] hover:text-white px-2 py-0.5 rounded-md border border-blue-100 transition-colors cursor-pointer" title="點擊預覽全部歷史錯題清單與發音">
+                            <span id="lobby-mistake-count-badge">0 字錯題</span>
+                            <span class="text-[10px] opacity-75">預覽 ➔</span>
+                        </button>
                     </div>
                     <div class="grid grid-cols-3 gap-1.5">
                         <button id="btn-review-week" type="button" class="bg-white hover:bg-blue-50/60 text-slate-700 hover:text-[#0071E3] border border-slate-200/80 hover:border-blue-200 py-2 px-1 rounded-xl font-semibold active:scale-95 transition-all text-[11px] sm:text-xs truncate cursor-pointer text-center shadow-2xs">本週錯題</button>
@@ -1188,7 +1228,11 @@
                                         <span class="text-emerald-700 font-semibold">綠色</span> 劃線單字
                                     </span>
                                 </div>
-                                <div class="flex items-center gap-1.5">
+                                <div class="flex items-center gap-1.5 flex-wrap">
+                                    <button id="btn-listening-sandbox" onclick="openListeningFlashcardSandbox()" class="text-xs px-2.5 py-1 rounded-lg border border-purple-200 bg-purple-50 text-purple-700 hover:bg-purple-100 font-semibold transition-all flex items-center gap-1 cursor-pointer shadow-2xs" title="開啟本篇短文劃線單字翻牌練習沙盒 (完全獨立 · 不影響主單字進度)">
+                                        <span>🃏</span> <span>劃線翻牌沙盒</span>
+                                        <span id="sandbox-badge-count" class="text-[10px] bg-purple-200/80 text-purple-800 px-1.5 py-0.2 rounded-full font-mono">0</span>
+                                    </button>
                                     <button id="btn-toggle-blind-mode" class="text-xs px-2.5 py-1 rounded-lg border border-gray-200 bg-[#F5F5F7] text-gray-700 hover:bg-gray-200 font-medium transition-all flex items-center gap-1 cursor-pointer" title="開啟盲聽磨耳朵模式（毛玻璃遮罩，強迫聽覺解碼）">
                                         <span>🙈</span> <span id="blind-mode-text">盲聽: 關</span>
                                     </button>
@@ -1430,9 +1474,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261027V44</span>
+                        <span id="app-version-display">版本 20261028V45</span>
                     </div>
-                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261027V44</p>
+                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261028V45</p>
                 </div>
             </div>
         </div>
@@ -1527,6 +1571,62 @@
                 <!-- 滾動詳解內容區 -->
                 <div id="word-detail-content" class="overflow-y-auto pr-1 custom-scrollbar space-y-4">
                     <!-- 動態注入內容 -->
+                </div>
+            </div>
+        </div>
+
+        <!-- 聽力單篇短文劃線單字翻牌沙盒 (完全隔離 · 零進度負擔) -->
+        <div id="listening-sandbox-modal" class="fixed inset-0 bg-gray-900/60 z-[75] hidden flex items-center justify-center p-3 sm:p-4 backdrop-blur-md">
+            <div class="bg-white rounded-3xl shadow-2xl p-4 sm:p-6 max-w-md w-full relative dict-modal-anim flex flex-col border border-gray-100 max-h-[96vh] overflow-hidden">
+                <!-- 頂部資訊列與關閉按鈕 -->
+                <div class="flex items-center justify-between pb-3 border-b border-gray-100 shrink-0">
+                    <div class="flex items-center gap-2 min-w-0">
+                        <span class="w-8 h-8 rounded-xl bg-purple-50 text-purple-700 border border-purple-200/70 inline-flex items-center justify-center text-sm shrink-0 shadow-2xs">🃏</span>
+                        <div class="min-w-0">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-900 text-sm">單篇翻牌沙盒</span>
+                                <span id="sandbox-source-badge" class="text-[10px] font-semibold px-2 py-0.5 rounded-md bg-purple-50 text-purple-700 border border-purple-200 font-mono">本篇劃線</span>
+                            </div>
+                            <p class="text-[10px] text-slate-400 truncate max-w-[210px] mt-0.5" id="sandbox-article-title">短文名稱</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 shrink-0">
+                        <span id="sandbox-counter-badge" class="text-xs font-mono font-bold text-purple-700 bg-purple-50 border border-purple-200/80 px-2 py-0.5 rounded-full">1 / 5</span>
+                        <button onclick="closeListeningSandboxModal()" class="text-gray-400 hover:text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-full p-1.5 transition-colors cursor-pointer" title="關閉沙盒">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 輕量進度條 -->
+                <div class="w-full bg-slate-100 h-1.5 rounded-full overflow-hidden my-2.5 shrink-0">
+                    <div id="sandbox-progress-bar" class="h-full bg-gradient-to-r from-purple-500 to-indigo-600 rounded-full transition-all duration-300" style="width: 20%"></div>
+                </div>
+
+                <!-- 隔離聲明提示膠囊 -->
+                <div class="flex items-center justify-between text-[10px] text-slate-500 bg-slate-50 border border-slate-200/60 px-2.5 py-1 rounded-xl mb-2.5 shrink-0">
+                    <span class="flex items-center gap-1 text-slate-600 font-medium">
+                        <span>🛡️</span> 獨立練習模式，不更動主單字庫進度
+                    </span>
+                    <button onclick="shuffleListeningSandboxCards()" class="text-purple-600 hover:text-purple-800 font-semibold cursor-pointer" title="打亂卡片順序">🔀 洗牌</button>
+                </div>
+
+                <!-- 翻牌卡本體容器 (支援點擊 3D 翻轉) -->
+                <div id="sandbox-card-container" class="w-full my-1 shrink-0">
+                    <!-- 動態注入 .sandbox-card -->
+                </div>
+
+                <!-- 底部導航與翻轉控制列 -->
+                <div class="flex items-center justify-between gap-2 pt-3 border-t border-gray-100 mt-2 shrink-0">
+                    <button id="btn-sandbox-prev" onclick="prevListeningSandboxCard()" class="px-3 py-2 rounded-xl text-xs font-semibold text-slate-600 bg-slate-100 hover:bg-slate-200 transition disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer flex items-center gap-1">
+                        <span>◀</span> <span>上一詞</span>
+                    </button>
+                    <button id="btn-sandbox-flip" onclick="toggleListeningSandboxFlip()" class="flex-1 py-2 rounded-xl text-xs font-semibold text-purple-700 bg-purple-50 hover:bg-purple-100 border border-purple-200 transition cursor-pointer flex items-center justify-center gap-1 shadow-2xs">
+                        <span>🔄</span> <span>翻轉卡片</span>
+                    </button>
+                    <button id="btn-sandbox-next" onclick="nextListeningSandboxCard()" class="px-3 py-2 rounded-xl text-xs font-semibold text-white bg-purple-600 hover:bg-purple-700 transition cursor-pointer flex items-center gap-1 shadow-xs">
+                        <span id="sandbox-next-btn-text">下一詞</span> <span>▶</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -3151,7 +3251,7 @@
         // ==========================================
         // 單字預覽功能
         // ==========================================
-        function renderPreviewModal(words, title) {
+        function renderPreviewModal(words, title, onStartCallback = null, startBtnText = '🚀 開始練習') {
             const listHtml = words.map((w, i) => `
                 <div id="preview-row-${i}" class="preview-word-row flex items-center justify-between py-3 px-3 border-b border-gray-100 last:border-0 hover:bg-[#F5F5F7] rounded-2xl cursor-pointer transition-colors" onclick="showWordDetailModal('${esc(w.en)}')">
                     <div class="flex items-center gap-3 min-w-0">
@@ -3202,6 +3302,12 @@
                 <div class="flex-1 min-h-0 max-h-[52vh] overflow-y-auto pr-1 custom-scrollbar space-y-1" id="preview-list-container">
                     ${listHtml || '<p class="text-[#86868B] text-sm text-center py-6">目前沒有單字。</p>'}
                 </div>
+                ${onStartCallback && words && words.length > 0 ? `
+                <div class="pt-2.5 mt-2 border-t border-gray-100 shrink-0">
+                    <button id="btn-preview-start-action" type="button" class="w-full bg-gradient-to-r from-[#0071E3] to-[#005BB5] hover:from-[#0077ED] hover:to-[#0062C4] text-white font-semibold py-2.5 px-4 rounded-xl shadow-sm text-sm flex items-center justify-center gap-1.5 cursor-pointer transition-all active:scale-[0.99]">
+                        <span>${startBtnText} (${words.length} 題)</span>
+                    </button>
+                </div>` : ''}
             `;
             document.getElementById('dict-modal').classList.remove('hidden');
 
@@ -3217,6 +3323,15 @@
                 autoRateSelect.addEventListener('change', (e) => setSpeechRate(e.target.value));
             }
             
+            const btnStartAction = document.getElementById('btn-preview-start-action');
+            if (btnStartAction && onStartCallback) {
+                btnStartAction.addEventListener('click', () => {
+                    unlockMobileAudio();
+                    document.getElementById('dict-modal').classList.add('hidden');
+                    onStartCallback();
+                });
+            }
+
             if (btnPlay) {
                 btnPlay.addEventListener('click', () => {
                     unlockMobileAudio();
@@ -8995,9 +9110,31 @@
             nextCard();
         }
 
-        document.getElementById('btn-review-week').addEventListener('click', () => startMistakeReview(7));
-        document.getElementById('btn-review-month').addEventListener('click', () => startMistakeReview(30));
-        document.getElementById('btn-review-all').addEventListener('click', () => startMistakeReview(99999));
+        function getMistakeWords(daysRange) {
+            const list = [];
+            for (let id in userProgress) {
+                const progress = userProgress[id];
+                if (progress && progress.lastMistakeDay !== undefined && (virtualCurrentDay - progress.lastMistakeDay <= daysRange)) {
+                    const w = vocabularyDB.find(word => word.id == id);
+                    if (w && (w.unit || Math.ceil(w.id / 1000) || 1) === currentUnit) list.push(w);
+                }
+            }
+            return list;
+        }
+
+        function showMistakePreview(daysRange, titleText) {
+            const words = getMistakeWords(daysRange);
+            if (words.length === 0) {
+                showQuickToast('這段期間內沒有錯題紀錄 🎉');
+                return;
+            }
+            renderPreviewModal(words, titleText, () => startMistakeReview(daysRange), '🚀 開始錯題複習');
+        }
+
+        document.getElementById('btn-review-week')?.addEventListener('click', () => showMistakePreview(7, '🎯 本週錯題預覽 (近 7 天)'));
+        document.getElementById('btn-review-month')?.addEventListener('click', () => showMistakePreview(30, '🎯 本月錯題預覽 (近 30 天)'));
+        document.getElementById('btn-review-all')?.addEventListener('click', () => showMistakePreview(99999, '🎯 全部歷史錯題預覽'));
+        document.getElementById('btn-preview-all-mistakes')?.addEventListener('click', () => showMistakePreview(99999, '🎯 全部歷史錯題預覽'));
 
         // 學習中心 (Study Center) 事件綁定
         document.getElementById('lobby-btn-start-daily')?.addEventListener('click', () => {
@@ -9022,28 +9159,52 @@
         });
 
         document.getElementById('lobby-btn-start-rapid')?.addEventListener('click', () => {
-            startRapidQuiz(10);
+            const unitWords = getUnitWords(currentUnit);
+            if (!unitWords.length) {
+                showQuickToast('目前單元無單字可測驗！');
+                return;
+            }
+            const learnedWords = unitWords.filter(w => userProgress[w.id] && userProgress[w.id].level > 0);
+            let pool = learnedWords.length >= 5 ? learnedWords : unitWords;
+            const shuffled = [...pool];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            const selected = shuffled.slice(0, Math.min(10, shuffled.length));
+            renderPreviewModal(selected, '⚡ 隨機 10 題抽考預覽', () => {
+                sessionTitle = `快問快答 (${selected.length} 題)`;
+                sessionQueue = selected;
+                mistakeQueue = [];
+                totalCardsInSession = selected.length;
+                cardsCompleted = 0;
+                resetSessionStats(selected);
+                isMistakeMode = false;
+                isAutoFlashcardMode = false;
+                switchTab('view-study', document.getElementById('tab-btn-dashboard'));
+                nextCard();
+            }, '🚀 開始隨機快測');
         });
 
         document.getElementById('lobby-btn-review-week')?.addEventListener('click', () => {
-            startMistakeReview(7);
+            showMistakePreview(7, '🎯 本週錯題預覽 (近 7 天)');
         });
 
         document.getElementById('lobby-btn-review-month')?.addEventListener('click', () => {
-            startMistakeReview(30);
+            showMistakePreview(30, '🎯 本月錯題預覽 (近 30 天)');
         });
 
         document.getElementById('lobby-btn-review-all')?.addEventListener('click', () => {
-            startMistakeReview(99999);
+            showMistakePreview(99999, '🎯 全部歷史錯題預覽');
         });
 
         document.getElementById('lobby-btn-weak-practice')?.addEventListener('click', () => {
             const weakWords = getWeakList().filter(x => x.w && (x.w.unit || Math.ceil(x.w.id / 1000) || 1) === currentUnit).map(x => x.w);
             if (weakWords.length === 0) {
-                alert('太棒了！本單元目前沒有弱點單字。');
+                showQuickToast('太棒了！本單元目前沒有弱點單字 🎉');
                 return;
             }
-            startWeakPractice(weakWords);
+            renderPreviewModal(weakWords, '💡 弱點特訓單字預覽', () => startWeakPractice(weakWords), '🚀 開始弱點特訓');
         });
 
         // 手動同步雲端按鈕事件
@@ -9415,12 +9576,18 @@
 
         function updateListeningWordsBadge() {
             const btn = document.getElementById('subtab-btn-listening-words');
-            if (!btn) return;
-            const count = currentArticleAnnotatedWords.size;
-            if (count > 0) {
-                btn.innerHTML = `📝 單字 <span class="bg-emerald-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full ml-1 inline-flex items-center justify-center min-w-[18px] shadow-xs">${count}</span>`;
-            } else {
-                btn.innerHTML = `📝 單字`;
+            const count = currentArticleAnnotatedWords ? currentArticleAnnotatedWords.size : 0;
+            if (btn) {
+                if (count > 0) {
+                    btn.innerHTML = `📝 單字 <span class="bg-emerald-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full ml-1 inline-flex items-center justify-center min-w-[18px] shadow-xs">${count}</span>`;
+                } else {
+                    btn.innerHTML = `📝 單字`;
+                }
+            }
+            const sBadge = document.getElementById('sandbox-badge-count');
+            if (sBadge) {
+                const totalCount = count > 0 ? count : ((currentSelectedListeningArticle && currentSelectedListeningArticle.vocabulary) ? currentSelectedListeningArticle.vocabulary.length : 0);
+                sBadge.innerText = totalCount;
             }
         }
 
@@ -9530,7 +9697,24 @@
             const wc = document.getElementById('listening-words-container');
             if (!wc) return;
 
-            let html = '';
+            let html = `
+            <!-- 聽力單篇劃線生詞翻牌沙盒捷徑橫幅 -->
+            <div class="mb-3 flex items-center justify-between bg-gradient-to-r from-purple-50/90 to-indigo-50/90 border border-purple-200/80 rounded-2xl p-3 shadow-2xs">
+                <div class="flex items-center gap-2.5 min-w-0 pr-2">
+                    <span class="w-8 h-8 rounded-xl bg-purple-600 text-white flex items-center justify-center text-sm shadow-xs shrink-0">🃏</span>
+                    <div class="min-w-0">
+                        <div class="text-xs font-bold text-purple-950 flex items-center gap-1.5">
+                            <span>單篇短文翻牌沙盒</span>
+                            <span class="text-[9px] font-semibold px-1.5 py-0.2 rounded bg-purple-200/70 text-purple-800">零進度負擔</span>
+                        </div>
+                        <div class="text-[11px] text-purple-700/80 mt-0.5 truncate">聚焦本篇劃線與重點單字 · 翻卡強化短文語意與聽覺記憶</div>
+                    </div>
+                </div>
+                <button onclick="openListeningFlashcardSandbox()" class="px-3 py-1.5 rounded-xl text-xs font-semibold bg-purple-600 hover:bg-purple-700 text-white transition-all shadow-xs shrink-0 cursor-pointer flex items-center gap-1 active:scale-95">
+                    <span>開始翻牌</span> <span>▶</span>
+                </button>
+            </div>
+            `;
 
             // 1. 標註單字專區 (📌 我的劃線單字)
             const annotatedList = Array.from(currentArticleAnnotatedWords);
@@ -11345,6 +11529,308 @@
                 flushSaveToCloud();
             }
         });
+
+
+        // ========================================================
+        // 聽力單篇短文劃線單字翻牌沙盒 (完全隔離 · 零進度負擔)
+        // ========================================================
+        let listeningSandboxState = {
+            isOpen: false,
+            articleTitle: '',
+            sourceLabel: '',
+            words: [],
+            currentIndex: 0,
+            isFlipped: false,
+            isCompleted: false
+        };
+
+        function openListeningFlashcardSandbox() {
+            const article = currentSelectedListeningArticle;
+            if (!article) {
+                alert('請先在左側或清單中選擇一篇聽力短文！');
+                return;
+            }
+
+            // 優先抓取本篇「📌 劃線單字」；若尚未劃線，則自動載入本篇「📖 核心詞彙」
+            const annotated = Array.from(currentArticleAnnotatedWords || []);
+            const core = (article.vocabulary || []).map(v => (typeof v === 'string' ? v : (v.en || ''))).filter(Boolean);
+
+            let rawList = [];
+            let sourceLabel = '';
+
+            if (annotated.length > 0) {
+                rawList = annotated;
+                sourceLabel = `📌 劃線單字 (${annotated.length})`;
+            } else if (core.length > 0) {
+                rawList = core;
+                sourceLabel = `📖 本文核心 (${core.length})`;
+            } else {
+                alert('本篇短文尚無劃線單字或核心詞彙！\n請點擊文章中的任一單字即可隨時劃線標註。');
+                return;
+            }
+
+            // 結構化每張卡片：比對字典、並於聽力短文中精準查找含有該單字的情境原句與發音
+            const articleSentences = article.sentences || [];
+            const cards = rawList.map(rawWord => {
+                const clean = String(rawWord).trim();
+                const lower = clean.toLowerCase();
+                const info = findWordInDB(clean) || {};
+
+                // 搜尋短文中的情境句子
+                let contextSentence = '';
+                let contextZh = '';
+                let speakerTag = '';
+
+                for (const s of articleSentences) {
+                    const enText = s.en || '';
+                    const re = new RegExp(`\\b${lower}\\b`, 'i');
+                    if (re.test(enText)) {
+                        contextSentence = enText;
+                        contextZh = s.zh || '';
+                        if (s.speaker) {
+                            speakerTag = `${s.avatar || '💬'} ${s.speaker} ${s.roleDesc ? `(${s.roleDesc})` : ''}`;
+                        }
+                        break;
+                    }
+                }
+
+                // 繁中詞性與釋義精簡
+                const parsed = splitPosAndZh(info.zh || '', info.pos || '', '', '', clean);
+                const concise = getConciseZh(info.zh || '', info.pos || '', '', '', clean) || parsed.pureZh || info.zh || '情境生詞';
+                const pos = parsed.items?.[0]?.pos || parsed.posBadgeText || info.pos || '';
+
+                return {
+                    en: clean,
+                    kk: info.kk || '',
+                    uk: info.uk || (window.UK_PHONETICS_MANIFEST && window.UK_PHONETICS_MANIFEST[lower]) || '',
+                    pos: pos,
+                    zh: concise,
+                    rawZh: info.zh || '',
+                    contextSentence: contextSentence,
+                    contextZh: contextZh,
+                    speakerTag: speakerTag,
+                    isAnnotated: currentArticleAnnotatedWords.has(lower)
+                };
+            });
+
+            listeningSandboxState = {
+                isOpen: true,
+                articleTitle: article.title || '聽力短文',
+                sourceLabel: sourceLabel,
+                words: cards,
+                currentIndex: 0,
+                isFlipped: false,
+                isCompleted: false
+            };
+
+            renderListeningSandboxModal();
+            const modal = document.getElementById('listening-sandbox-modal');
+            if (modal) {
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeListeningSandboxModal() {
+            listeningSandboxState.isOpen = false;
+            const modal = document.getElementById('listening-sandbox-modal');
+            if (modal) {
+                modal.classList.add('hidden');
+            }
+            document.body.style.overflow = '';
+        }
+
+        function renderListeningSandboxModal() {
+            const state = listeningSandboxState;
+            const container = document.getElementById('sandbox-card-container');
+            const counterEl = document.getElementById('sandbox-counter-badge');
+            const progressEl = document.getElementById('sandbox-progress-bar');
+            const titleEl = document.getElementById('sandbox-article-title');
+            const badgeEl = document.getElementById('sandbox-source-badge');
+            const prevBtn = document.getElementById('btn-sandbox-prev');
+            const nextText = document.getElementById('sandbox-next-btn-text');
+
+            if (!container) return;
+
+            if (titleEl) titleEl.innerText = state.articleTitle;
+            if (badgeEl) badgeEl.innerText = state.sourceLabel;
+
+            const total = state.words.length;
+            const curIdx = state.currentIndex;
+
+            // 結算畫面 (完成練習)
+            if (state.isCompleted) {
+                if (counterEl) counterEl.innerText = `${total} / ${total}`;
+                if (progressEl) progressEl.style.width = '100%';
+                if (prevBtn) prevBtn.disabled = true;
+
+                container.innerHTML = `
+                    <div class="bg-gradient-to-b from-purple-50/80 to-white border border-purple-200/90 rounded-2xl p-6 text-center shadow-sm flex flex-col items-center justify-center min-h-[290px]">
+                        <div class="w-16 h-16 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center text-3xl mb-3 shadow-2xs animate-bounce">
+                            🎉
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-800 mb-1">翻牌練習完成！</h3>
+                        <p class="text-xs text-slate-500 mb-4 leading-relaxed">
+                            您已將本篇短文的 <span class="font-bold text-purple-700 font-mono">${total}</span> 個單字翻閱完畢。<br>
+                            本練習為純粹沙盒模式，主單字庫進度完全不受干擾。
+                        </p>
+                        <div class="flex items-center gap-2">
+                            <button onclick="restartListeningSandbox()" class="px-4 py-2 rounded-xl text-xs font-semibold bg-purple-600 text-white hover:bg-purple-700 transition shadow-xs cursor-pointer flex items-center gap-1 active:scale-95">
+                                <span>🔄 再練一次</span>
+                            </button>
+                            <button onclick="closeListeningSandboxModal()" class="px-4 py-2 rounded-xl text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition cursor-pointer">
+                                <span>🔙 返回短文</span>
+                            </button>
+                        </div>
+                    </div>
+                `;
+
+                // 施放滿分彩帶效果
+                if (typeof confetti === 'function') {
+                    try {
+                        confetti({ particleCount: 70, spread: 60, origin: { y: 0.6 } });
+                    } catch(e) {}
+                }
+                return;
+            }
+
+            const cur = state.words[curIdx];
+            if (!cur) return;
+
+            const curNum = curIdx + 1;
+            if (counterEl) counterEl.innerText = `${curNum} / ${total}`;
+            if (progressEl) progressEl.style.width = `${Math.round((curNum / total) * 100)}%`;
+
+            if (prevBtn) prevBtn.disabled = (curIdx === 0);
+            if (nextText) nextText.innerText = (curIdx === total - 1) ? '完成' : '下一詞';
+
+            const safeEn = esc(cur.en).replace(/'/g, "\\'");
+            const safeContext = cur.contextSentence ? esc(cur.contextSentence).replace(/'/g, "\\'") : '';
+
+            container.innerHTML = `
+                <div class="sandbox-card ${state.isFlipped ? 'flipped' : ''}" onclick="toggleListeningSandboxFlip()">
+                    <div class="sandbox-card-inner">
+                        <!-- 正面：英文單字、雙音標、發音按鈕 -->
+                        <div class="sandbox-card-front select-none">
+                            <div class="flex items-center justify-between w-full">
+                                <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full ${cur.isAnnotated ? 'bg-emerald-50 text-emerald-700 border border-emerald-200' : 'bg-blue-50 text-[#0071E3] border border-blue-200'}">
+                                    ${cur.isAnnotated ? '📌 劃線生詞' : '📖 本篇核心'}
+                                </span>
+                                <span class="text-[10px] font-mono text-slate-400">#${curNum}</span>
+                            </div>
+
+                            <div class="my-auto py-2">
+                                <h2 class="text-2xl sm:text-3xl font-extrabold text-[#1D1D1F] tracking-tight leading-tight">${esc(cur.en)}</h2>
+                                <div class="flex items-center justify-center gap-1.5 font-mono text-[11px] text-slate-500 mt-2 flex-wrap">
+                                    ${cur.kk ? `<span class="bg-blue-50/80 text-blue-700 border border-blue-200/50 px-2 py-0.5 rounded-lg">美 ${esc(cur.kk)}</span>` : ''}
+                                    ${cur.uk ? `<span class="bg-purple-50/80 text-purple-700 border border-purple-200/50 px-2 py-0.5 rounded-lg">英 ${esc(cur.uk)}</span>` : ''}
+                                </div>
+                                <div class="flex items-center justify-center gap-2 mt-3" onclick="event.stopPropagation()">
+                                    <button onclick="playWordAccent('${safeEn}', 'us')" class="w-18 h-6.5 rounded-full text-xs font-normal border bg-blue-50 text-[#0071E3] border-blue-200/90 hover:bg-blue-100 flex items-center justify-center gap-1 cursor-pointer transition shadow-2xs active:scale-95" title="朗讀美音">
+                                        美音 🔊
+                                    </button>
+                                    <button onclick="playWordAccent('${safeEn}', 'uk')" class="w-18 h-6.5 rounded-full text-xs font-normal border bg-purple-50 text-purple-700 border-purple-200/90 hover:bg-purple-100 flex items-center justify-center gap-1 cursor-pointer transition shadow-2xs active:scale-95" title="朗讀英音">
+                                        英音 🔊
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="text-[11px] text-slate-400 font-medium">
+                                👆 點擊卡片翻面，看短文原句語境
+                            </div>
+                        </div>
+
+                        <!-- 背面：詞性釋義、短文情境原句與翻譯 -->
+                        <div class="sandbox-card-back select-none text-left">
+                            <div class="flex items-center justify-between w-full shrink-0">
+                                <div class="flex items-center gap-1.5">
+                                    ${cur.pos ? `<span class="text-[10px] font-bold px-1.5 py-0.2 rounded bg-purple-100 text-purple-800 lowercase">${esc(cur.pos)}</span>` : ''}
+                                    <span class="font-bold text-slate-800 text-sm truncate max-w-[200px]">${esc(cur.zh)}</span>
+                                </div>
+                                <span class="text-[10px] font-mono text-slate-400">#${curNum}</span>
+                            </div>
+
+                            <div class="my-auto py-2 w-full">
+                                <div class="bg-slate-50 border border-slate-200/80 rounded-xl p-2.5 shadow-2xs">
+                                    <div class="flex items-center justify-between mb-1">
+                                        <span class="text-[10px] font-bold text-slate-500 flex items-center gap-1">
+                                            <span>🎙️ 短文語境原句</span>
+                                            ${cur.speakerTag ? `<span class="text-purple-700 bg-purple-50 px-1.5 py-0.2 rounded border border-purple-200/60 font-normal">${esc(cur.speakerTag)}</span>` : ''}
+                                        </span>
+                                        ${cur.contextSentence ? `
+                                        <button onclick="event.stopPropagation(); playAudio('${safeContext}')" class="text-purple-600 hover:text-purple-800 p-1 rounded-full hover:bg-purple-100 transition cursor-pointer" title="朗讀原句語音">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
+                                        </button>
+                                        ` : ''}
+                                    </div>
+                                    <p class="text-xs text-slate-800 font-medium leading-relaxed font-serif">
+                                        ${cur.contextSentence ? esc(cur.contextSentence) : `<span class="text-slate-400 italic font-sans">${esc(cur.rawZh || '無情境例句')}</span>`}
+                                    </p>
+                                    ${cur.contextZh ? `
+                                    <p class="text-[11px] text-slate-500 mt-1 pt-1 border-t border-slate-200/60 leading-relaxed font-sans">
+                                        ${esc(cur.contextZh)}
+                                    </p>
+                                    ` : ''}
+                                </div>
+                            </div>
+
+                            <div class="text-[11px] text-slate-400 font-medium text-center w-full shrink-0">
+                                👆 點擊卡片翻回正面
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function toggleListeningSandboxFlip() {
+            listeningSandboxState.isFlipped = !listeningSandboxState.isFlipped;
+            const card = document.querySelector('.sandbox-card');
+            if (card) {
+                if (listeningSandboxState.isFlipped) card.classList.add('flipped');
+                else card.classList.remove('flipped');
+            }
+        }
+
+        function nextListeningSandboxCard() {
+            if (listeningSandboxState.currentIndex < listeningSandboxState.words.length - 1) {
+                listeningSandboxState.currentIndex++;
+                listeningSandboxState.isFlipped = false;
+                renderListeningSandboxModal();
+            } else {
+                listeningSandboxState.isCompleted = true;
+                renderListeningSandboxModal();
+            }
+        }
+
+        function prevListeningSandboxCard() {
+            if (listeningSandboxState.currentIndex > 0) {
+                listeningSandboxState.currentIndex--;
+                listeningSandboxState.isFlipped = false;
+                listeningSandboxState.isCompleted = false;
+                renderListeningSandboxModal();
+            }
+        }
+
+        function shuffleListeningSandboxCards() {
+            const arr = [...listeningSandboxState.words];
+            for (let i = arr.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [arr[i], arr[j]] = [arr[j], arr[i]];
+            }
+            listeningSandboxState.words = arr;
+            listeningSandboxState.currentIndex = 0;
+            listeningSandboxState.isFlipped = false;
+            listeningSandboxState.isCompleted = false;
+            renderListeningSandboxModal();
+        }
+
+        function restartListeningSandbox() {
+            listeningSandboxState.currentIndex = 0;
+            listeningSandboxState.isFlipped = false;
+            listeningSandboxState.isCompleted = false;
+            renderListeningSandboxModal();
+        }
 
     </script>
 </body>

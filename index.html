@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261028V46';
+        const APP_BUILD_VERSION = '20261028V47';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -19,6 +19,25 @@
                 window.location.replace(window.location.pathname + window.location.search + sep + 'v=' + APP_BUILD_VERSION + '&t=' + Date.now());
             }
         }
+    </script>
+    <script>
+        // 立即防白光閃爍主題初始化 (Apple Dark/Light Theme Anti-FOUC)
+        (function() {
+            try {
+                const savedTheme = localStorage.getItem('app_theme');
+                const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+                    document.documentElement.classList.add('dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                }
+            } catch (e) {}
+        })();
+        // 配置 Tailwind CDN 啟用 class 驅動暗黑模式
+        window.tailwind = window.tailwind || {};
+        window.tailwind.config = {
+            darkMode: 'class'
+        };
     </script>
     <script>
         const _origWarn = console.warn;
@@ -31,19 +50,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261028V46"></script>
-    <script src="toeic_data.js?v=20261028V46"></script>
-    <script src="jh_data.js?v=20261028V46"></script>
-    <script src="listening_data.js?v=20261028V46"></script>
-    <script src="listening_words_data.js?v=20261028V46"></script>
-    <script src="uk_phonetics_manifest.js?v=20261028V46"></script>
-    <script src="words_audio_manifest.js?v=20261028V46"></script>
-    <script src="examples_audio_manifest.js?v=20261028V46"></script>
-    <script src="zh_audio_manifest.js?v=20261028V46"></script>
-    <script src="collocations_audio_manifest.js?v=20261028V46"></script>
-    <script src="syn_ant_data.js?v=20261028V46"></script>
-    <script src="synonyms_unit8_data.js?v=20261028V46"></script>
-    <script src="examples_unit9_data.js?v=20261028V46"></script>
+    <script src="words_data.js?v=20261028V47"></script>
+    <script src="toeic_data.js?v=20261028V47"></script>
+    <script src="jh_data.js?v=20261028V47"></script>
+    <script src="listening_data.js?v=20261028V47"></script>
+    <script src="listening_words_data.js?v=20261028V47"></script>
+    <script src="uk_phonetics_manifest.js?v=20261028V47"></script>
+    <script src="words_audio_manifest.js?v=20261028V47"></script>
+    <script src="examples_audio_manifest.js?v=20261028V47"></script>
+    <script src="zh_audio_manifest.js?v=20261028V47"></script>
+    <script src="collocations_audio_manifest.js?v=20261028V47"></script>
+    <script src="syn_ant_data.js?v=20261028V47"></script>
+    <script src="synonyms_unit8_data.js?v=20261028V47"></script>
+    <script src="examples_unit9_data.js?v=20261028V47"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -439,6 +458,291 @@
     </style>
 
     <!-- ==========================================================
+         Apple Dark Theme Design System (極致暗黑護眼模式)
+         ========================================================== -->
+    <style>
+        /* 全域平滑色彩過渡 (切換時如同 iOS 般流暢呼吸) */
+        html.dark, html.dark body,
+        html.dark header, html.dark nav,
+        html.dark .flip-card-front, html.dark .flip-card-back,
+        html.dark .bg-white, html.dark .bg-slate-50, html.dark .bg-slate-100 {
+            transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+                        border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+                        color 0.2s ease,
+                        box-shadow 0.25s ease;
+        }
+
+        /* 1. 頁面與核心底色 */
+        html.dark body {
+            background-color: #0B0F17 !important; /* Apple Midnight 深邃夜空黑 */
+            color: #F8FAFC !important;
+        }
+
+        /* 滾動條暗化 */
+        html.dark ::-webkit-scrollbar-thumb {
+            background: #334155 !important;
+        }
+        html.dark ::-webkit-scrollbar-thumb:hover {
+            background: #475569 !important;
+        }
+
+        /* 2. 頂部毛玻璃導航列與通知列 */
+        html.dark header {
+            background-color: rgba(11, 15, 23, 0.85) !important;
+            border-bottom-color: rgba(255, 255, 255, 0.08) !important;
+            color: #F8FAFC !important;
+        }
+        html.dark header h1 {
+            color: #F8FAFC !important;
+        }
+        html.dark #sync-banner {
+            background-color: #1E293B !important;
+            color: #FBBF24 !important;
+            border-bottom: 1px solid rgba(251, 191, 36, 0.2) !important;
+        }
+        html.dark #loading-banner {
+            background-color: #0F172A !important;
+            color: #94A3B8 !important;
+        }
+
+        /* 主題切換按鈕在 Dark 模式下的膠囊質感 */
+        html.dark #theme-toggle-btn {
+            background-color: rgba(255, 255, 255, 0.08) !important;
+            border-color: rgba(255, 255, 255, 0.15) !important;
+            color: #F8FAFC !important;
+        }
+        html.dark #theme-toggle-btn:hover {
+            background-color: rgba(255, 255, 255, 0.14) !important;
+        }
+
+        /* 3. 卡片 (Level 1 Surface) & 容器 */
+        html.dark .bg-white {
+            background-color: #131B2E !important; /* 高雅深藍黑卡片底色 */
+            border-color: rgba(255, 255, 255, 0.08) !important;
+            color: #F8FAFC;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35) !important;
+        }
+
+        /* 次級容器 / Well / 內嵌區塊 (Level 2 Surface) */
+        html.dark .bg-slate-50,
+        html.dark .bg-slate-50\/90,
+        html.dark .bg-slate-100,
+        html.dark .bg-slate-100\/80,
+        html.dark .bg-\[\#F5F5F7\] {
+            background-color: #1A243D !important;
+            border-color: rgba(255, 255, 255, 0.08) !important;
+        }
+
+        /* 漸層卡片在深色模式下的調和 */
+        html.dark .from-slate-50\/90 {
+            --tw-gradient-from: #1A243D var(--tw-gradient-from-position) !important;
+            --tw-gradient-to: #162036 var(--tw-gradient-to-position) !important;
+        }
+        html.dark .to-blue-50\/30,
+        html.dark .to-indigo-50\/30 {
+            --tw-gradient-to: #192744 var(--tw-gradient-to-position) !important;
+        }
+
+        /* 4. 文字層級系統 */
+        html.dark .text-slate-900,
+        html.dark .text-\[\#1D1D1F\],
+        html.dark .text-gray-900 {
+            color: #F8FAFC !important; /* 主標題與單字主體 */
+        }
+        html.dark .text-slate-800,
+        html.dark .text-slate-700,
+        html.dark .text-gray-800,
+        html.dark .text-gray-700 {
+            color: #E2E8F0 !important; /* 次級文字 */
+        }
+        html.dark .text-slate-600,
+        html.dark .text-gray-600 {
+            color: #CBD5E1 !important;
+        }
+        html.dark .text-slate-500,
+        html.dark .text-slate-400,
+        html.dark .text-gray-500,
+        html.dark .text-gray-400 {
+            color: #94A3B8 !important; /* 輔助說明文字與音標 */
+        }
+
+        /* 邊框通用覆蓋 */
+        html.dark .border-slate-100,
+        html.dark .border-slate-200,
+        html.dark .border-slate-200\/70,
+        html.dark .border-slate-200\/75,
+        html.dark .border-slate-200\/80,
+        html.dark .border-slate-200\/90,
+        html.dark .border-gray-100,
+        html.dark .border-gray-200 {
+            border-color: rgba(255, 255, 255, 0.08) !important;
+        }
+        html.dark .divide-slate-100 > * + *,
+        html.dark .divide-slate-200 > * + * {
+            border-color: rgba(255, 255, 255, 0.08) !important;
+        }
+
+        /* 5. 翻牌單字卡 (Study Flashcard) */
+        html.dark .flip-card-front {
+            background-color: #131B2E !important;
+            border-color: rgba(255, 255, 255, 0.1) !important;
+            box-shadow: 0 12px 32px -4px rgba(0, 0, 0, 0.45) !important;
+        }
+        html.dark .flip-card-back {
+            background-color: #162036 !important;
+            border-color: rgba(255, 255, 255, 0.1) !important;
+            box-shadow: 0 12px 32px -4px rgba(0, 0, 0, 0.45) !important;
+        }
+        html.dark .sandbox-card-front,
+        html.dark .sandbox-card-back {
+            background-color: #131B2E !important;
+            border-color: rgba(255, 255, 255, 0.1) !important;
+        }
+
+        /* 6. 輸入框與下拉選單 */
+        html.dark select,
+        html.dark input[type="text"],
+        html.dark input[type="search"],
+        html.dark input[type="number"],
+        html.dark textarea {
+            background-color: #1A243D !important;
+            border-color: rgba(255, 255, 255, 0.12) !important;
+            color: #F8FAFC !important;
+        }
+        html.dark select option {
+            background-color: #131B2E !important;
+            color: #F8FAFC !important;
+        }
+
+        /* 7. 彈窗 (Modals) */
+        html.dark #dict-modal > div,
+        html.dark #word-detail-modal > div,
+        html.dark #listening-sandbox-modal > div,
+        html.dark #custom-word-modal > div {
+            background-color: #131B2E !important;
+            border: 1px solid rgba(255, 255, 255, 0.14) !important;
+            box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.75) !important;
+            color: #F8FAFC !important;
+        }
+
+        /* 8. 導航列 (Mobile & Desktop) */
+        html.dark nav.fixed {
+            background-color: rgba(15, 23, 42, 0.92) !important;
+            border-color: rgba(255, 255, 255, 0.08) !important;
+            box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.4) !important;
+        }
+        html.dark nav.fixed button {
+            color: #94A3B8;
+        }
+        html.dark nav.fixed button:hover {
+            color: #F8FAFC;
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+        html.dark nav.fixed button.text-\[\#0071E3\] {
+            color: #388BFD !important;
+        }
+        @media (min-width: 1024px) {
+            html.dark nav.fixed {
+                background: rgba(15, 23, 42, 0.94) !important;
+                border-right-color: rgba(255, 255, 255, 0.08) !important;
+            }
+            html.dark nav.fixed::before {
+                color: #F8FAFC !important;
+                border-bottom-color: rgba(255, 255, 255, 0.08) !important;
+            }
+            html.dark nav.fixed button.text-\[\#0071E3\] {
+                background: linear-gradient(135deg, rgba(56, 139, 253, 0.2) 0%, rgba(30, 64, 175, 0.25) 100%) !important;
+                box-shadow: inset 3px 0 0 #388BFD !important;
+            }
+        }
+
+        /* 9. 聽力卡片與模式調優 */
+        html.dark .sentence-card {
+            background-color: transparent !important;
+        }
+        html.dark .sentence-card:hover {
+            background-color: #1A243D !important;
+            border-color: rgba(255, 255, 255, 0.12) !important;
+        }
+        html.dark .sentence-card.sentence-active {
+            background-color: #162544 !important;
+            border-color: #388BFD !important;
+            box-shadow: 0 8px 28px -4px rgba(56, 139, 253, 0.25) !important;
+        }
+        html.dark .sentence-card.sentence-active .en-text {
+            color: #58A6FF !important;
+        }
+        html.dark .sentence-card.sentence-active .zh-text {
+            color: #F8FAFC !important;
+        }
+        html.dark .dialogue-card-A {
+            background-color: rgba(56, 139, 253, 0.1) !important;
+        }
+        html.dark .dialogue-card-B {
+            background-color: rgba(168, 85, 247, 0.1) !important;
+        }
+        html.dark .dialogue-card-B.sentence-active {
+            background-color: #24143D !important;
+            border-color: #A855F7 !important;
+        }
+        html.dark .dialogue-card-B.sentence-active .en-text {
+            color: #C084FC !important;
+        }
+
+        /* 10. 測驗選項與輔助膠囊 */
+        html.dark .quiz-opt-btn {
+            background-color: #1A243D !important;
+            border-color: rgba(255, 255, 255, 0.1) !important;
+            color: #F8FAFC !important;
+        }
+        html.dark .quiz-opt-btn:hover {
+            background-color: #223050 !important;
+            border-color: #388BFD !important;
+        }
+        html.dark .quiz-pill.bg-white {
+            background-color: #1E293B !important;
+            border-color: rgba(56, 139, 253, 0.4) !important;
+            color: #58A6FF !important;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25) !important;
+        }
+        html.dark .quiz-pill:not(.bg-white) {
+            color: #94A3B8 !important;
+        }
+        html.dark .quiz-pill:not(.bg-white):hover {
+            color: #F8FAFC !important;
+        }
+        html.dark .preview-word-row,
+        html.dark .weak-row {
+            background-color: #1A243D !important;
+            border-color: rgba(255, 255, 255, 0.08) !important;
+        }
+        html.dark .preview-word-row:hover,
+        html.dark .weak-row:hover {
+            background-color: #223050 !important;
+        }
+        html.dark .bg-blue-50 {
+            background-color: rgba(56, 139, 253, 0.16) !important;
+            color: #58A6FF !important;
+        }
+        html.dark .bg-emerald-50 {
+            background-color: rgba(16, 185, 129, 0.16) !important;
+            color: #34D399 !important;
+        }
+        html.dark .bg-amber-50 {
+            background-color: rgba(245, 158, 11, 0.16) !important;
+            color: #FBBF24 !important;
+        }
+        html.dark .bg-rose-50 {
+            background-color: rgba(244, 63, 94, 0.16) !important;
+            color: #FB7185 !important;
+        }
+        html.dark .bg-purple-50 {
+            background-color: rgba(168, 85, 247, 0.16) !important;
+            color: #C084FC !important;
+        }
+    </style>
+
+    <!-- ==========================================================
          電腦版響應式層 (≥1024px)：手機版樣式完全不動，僅在寬螢幕覆蓋
          - 底部導航列 → 左側固定側邊欄 (沿用同一組按鈕，JS 邏輯不變)
          - 內容區加寬並置中；學習中心 / 測驗頁改為雙欄
@@ -548,7 +852,11 @@
             </div>
         </div>
         
-
+        <!-- Apple 風格深淺主題切換膠囊 (Dark / Light Mode Toggle) -->
+        <button id="theme-toggle-btn" onclick="toggleTheme()" type="button" aria-label="切換深淺外觀" title="切換深淺模式" class="relative inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1 rounded-full border border-slate-200/80 bg-slate-100/90 hover:bg-slate-200/90 active:scale-95 transition-all text-xs font-medium text-slate-700 shadow-2xs cursor-pointer select-none">
+            <span id="theme-toggle-icon" class="text-xs sm:text-sm">☀️</span>
+            <span id="theme-toggle-text" class="text-[11px] font-semibold tracking-wide">白天</span>
+        </button>
     </header>
 
     <!-- 雲端同步提示列 -->
@@ -1474,9 +1782,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261028V46</span>
+                        <span id="app-version-display">版本 20261028V47</span>
                     </div>
-                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261028V46</p>
+                    <p class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261028V47</p>
                 </div>
             </div>
         </div>
@@ -2041,6 +2349,55 @@
                 }
             });
         }
+        // ==========================================
+        // Apple 深淺模式 (Dark / Light Theme) 核心引擎
+        // ==========================================
+        function applyTheme(theme, save = true) {
+            const isDark = theme === 'dark';
+            if (isDark) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+            if (save) {
+                localStorage.setItem('app_theme', isDark ? 'dark' : 'light');
+            }
+            initThemeUI();
+            if (typeof renderStatsChart === 'function' && typeof chartInstance !== 'undefined' && chartInstance) {
+                const analysisView = document.getElementById('view-analysis');
+                if (analysisView && !analysisView.classList.contains('hidden')) {
+                    try { renderStatsChart(); } catch (e) {}
+                }
+            }
+        }
+
+        function toggleTheme() {
+            const isDark = document.documentElement.classList.contains('dark');
+            applyTheme(isDark ? 'light' : 'dark', true);
+        }
+
+        function initThemeUI() {
+            const isDark = document.documentElement.classList.contains('dark');
+            const iconEl = document.getElementById('theme-toggle-icon');
+            const textEl = document.getElementById('theme-toggle-text');
+            const btnEl = document.getElementById('theme-toggle-btn');
+            if (iconEl) iconEl.textContent = isDark ? '🌙' : '☀️';
+            if (textEl) textEl.textContent = isDark ? '暗黑' : '白天';
+            if (btnEl) {
+                btnEl.setAttribute('aria-label', isDark ? '切換為白天模式' : '切換為暗黑模式');
+                btnEl.setAttribute('title', isDark ? '當前為暗黑模式，點擊切換為白天模式' : '當前為白天模式，點擊切換為暗黑模式');
+            }
+        }
+
+        // 監聽作業系統外觀變更 (若使用者尚未手動覆蓋，隨系統自動流轉)
+        if (window.matchMedia) {
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+                if (!localStorage.getItem('app_theme')) {
+                    applyTheme(e.matches ? 'dark' : 'light', false);
+                }
+            });
+        }
+
         let currentUnit = normalizeUnitId(localStorage.getItem('vocab_current_unit'));
         let chartInstance = null;
         
@@ -8526,7 +8883,8 @@
                             labels: {
                                 usePointStyle: true,
                                 boxWidth: 8,
-                                font: { size: 11 }
+                                font: { size: 11 },
+                                color: document.documentElement.classList.contains('dark') ? '#CBD5E1' : '#64748B'
                             }
                         },
                         tooltip: {
@@ -8543,9 +8901,14 @@
                         }
                     },
                     scales: {
+                        x: {
+                            ticks: { color: document.documentElement.classList.contains('dark') ? '#94A3B8' : '#64748B' },
+                            grid: { color: document.documentElement.classList.contains('dark') ? 'rgba(255, 255, 255, 0.06)' : 'rgba(0, 0, 0, 0.05)' }
+                        },
                         y: {
                             beginAtZero: true,
-                            ticks: { precision: 0 }
+                            ticks: { precision: 0, color: document.documentElement.classList.contains('dark') ? '#94A3B8' : '#64748B' },
+                            grid: { color: document.documentElement.classList.contains('dark') ? 'rgba(255, 255, 255, 0.06)' : 'rgba(0, 0, 0, 0.05)' }
                         }
                     }
                 }
@@ -11511,6 +11874,8 @@
 
         // 支援 URL 參數直接跳轉分頁 (例如 ?tab=listening) 與題型選擇器初始化
         window.addEventListener('DOMContentLoaded', () => {
+            // 初始化主題切換按鈕狀態
+            initThemeUI();
             // 初始化題型偏好模式按鈕
             document.querySelectorAll('.quiz-pill').forEach(btn => {
                 btn.addEventListener('click', () => {
@@ -11557,29 +11922,47 @@
         // ========================================================
         // 聽力單篇短文劃線單字翻牌沙盒 (完全隔離 · 零進度負擔)
         // ========================================================
-        // 聽力單篇短文單字沙盒 (零進度負擔 · 4種練習+自動翻牌+劃線與內建整合)
+        // 聽力單篇短文單字沙盒 (零進度負擔 · 4種練習+自動翻牌+劃線與內建整合 · 題型順序鎖定與高質感反饋)
         // ========================================================
         let listeningSandboxState = {
             isOpen: false,
             articleTitle: '',
-            scope: 'all', // 'all' (全部: 劃線+內建), 'annotated' (僅劃線), 'core' (僅內建核心)
-            mode: 'card', // 'card' (卡片翻牌), 'en2zh' (看英選中), 'zh2en' (看中選英), 'listen' (聽力選字), 'fill' (拼寫填空)
-            allPool: [], // 完整詞彙池
-            words: [], // 當前 scope 篩選出的單字清單
+            scope: 'all', // 'all', 'annotated', 'core'
+            mode: 'card', // 'card', 'en2zh', 'zh2en', 'listen', 'fill'
+            allPool: [],
+            words: [],
             currentIndex: 0,
             isFlipped: false,
             isAnswered: false,
-            userChoice: null,
+            userChoiceIndex: null, // 點擊的選項 index (0~3)
+            isCorrect: false,
             score: 0,
             isCompleted: false,
+            // 選項快取鎖定 (保證作答後選項位置絕對不跳動)
+            currentQuestionKey: null,
+            cachedQuizOptions: null,
+            quizNextTimer: null,
             // 自動翻牌播放控制
             isAutoPlaying: false,
             autoPlayInterval: 4000,
             autoPlayTimer: null,
-            // 拼寫提示字母數
+            // 拼寫提示
             fillHintCount: 1,
-            fillFeedback: null // { correct: bool, text: '' }
+            fillFeedback: null
         };
+
+        // 清理題型與作答快取
+        function clearSandboxQuestionCache() {
+            listeningSandboxState.currentQuestionKey = null;
+            listeningSandboxState.cachedQuizOptions = null;
+            listeningSandboxState.isAnswered = false;
+            listeningSandboxState.userChoiceIndex = null;
+            listeningSandboxState.isCorrect = false;
+            if (listeningSandboxState.quizNextTimer) {
+                clearTimeout(listeningSandboxState.quizNextTimer);
+                listeningSandboxState.quizNextTimer = null;
+            }
+        }
 
         // 開啟沙盒入口
         function openListeningFlashcardSandbox() {
@@ -11669,10 +12052,10 @@
             listeningSandboxState.isCompleted = false;
             listeningSandboxState.currentIndex = 0;
             listeningSandboxState.isFlipped = false;
-            listeningSandboxState.isAnswered = false;
             listeningSandboxState.fillHintCount = 1;
             listeningSandboxState.fillFeedback = null;
             listeningSandboxState.isAutoPlaying = false;
+            clearSandboxQuestionCache();
 
             // 預設篩選：若有劃線與內建則選 all；若只有其中一種則自動匹配
             const hasAnnotated = pool.some(w => w.isAnnotated);
@@ -11698,6 +12081,7 @@
         // 關閉沙盒彈窗
         function closeListeningSandboxModal() {
             stopListeningSandboxAutoPlay();
+            clearSandboxQuestionCache();
             listeningSandboxState.isOpen = false;
             const modal = document.getElementById('listening-sandbox-modal');
             if (modal) modal.classList.add('hidden');
@@ -11726,12 +12110,11 @@
         // 切換詞彙來源 (全部 / 劃線 / 內建)
         function setListeningSandboxScope(scope) {
             stopListeningSandboxAutoPlay();
+            clearSandboxQuestionCache();
             listeningSandboxState.scope = scope;
             filterListeningSandboxWords();
             listeningSandboxState.currentIndex = 0;
             listeningSandboxState.isFlipped = false;
-            listeningSandboxState.isAnswered = false;
-            listeningSandboxState.userChoice = null;
             listeningSandboxState.score = 0;
             listeningSandboxState.isCompleted = false;
             listeningSandboxState.fillHintCount = 1;
@@ -11742,11 +12125,10 @@
         // 切換練習模式 (翻牌 / 英選中 / 中選英 / 聽力 / 拼寫)
         function setListeningSandboxMode(mode) {
             stopListeningSandboxAutoPlay();
+            clearSandboxQuestionCache();
             listeningSandboxState.mode = mode;
             listeningSandboxState.currentIndex = 0;
             listeningSandboxState.isFlipped = false;
-            listeningSandboxState.isAnswered = false;
-            listeningSandboxState.userChoice = null;
             listeningSandboxState.score = 0;
             listeningSandboxState.isCompleted = false;
             listeningSandboxState.fillHintCount = 1;
@@ -11872,7 +12254,7 @@
                     <div class="flex items-center gap-2">
                         <span class="text-xs font-bold text-slate-700 flex items-center gap-1">
                             <span>🎯 當前得分：</span>
-                            <span class="text-purple-700 font-mono font-extrabold">${score}</span>
+                            <span class="text-purple-700 font-mono font-extrabold text-sm">${score}</span>
                             <span class="text-slate-400 font-normal">/ ${total}</span>
                         </span>
                     </div>
@@ -11884,7 +12266,7 @@
             }
         }
 
-        // 產生 4 個選項 (針對 en2zh, zh2en, listen)
+        // 產生 4 個選項 (僅在換題時呼叫一次，確保位置鎖定)
         function getListeningSandboxQuizOptions(curWord, key) {
             const pool = listeningSandboxState.allPool;
             const same = pool.filter(w => w.en.toLowerCase() !== curWord.en.toLowerCase());
@@ -11921,6 +12303,7 @@
                 }
             }
 
+            // 隨機排列並回傳
             return options.sort(() => Math.random() - 0.5);
         }
 
@@ -12157,12 +12540,46 @@
                 if (flipBtn) flipBtn.classList.add('hidden');
 
                 const key = state.mode === 'en2zh' ? 'zh' : 'en';
-                const opts = getListeningSandboxQuizOptions(cur, key);
+
+                // ★ 精準快取機制：同題作答前後，選項絕對不重新洗牌，位置 100% 固定！
+                const questionKey = `${state.mode}_${curIdx}_${cur.en}`;
+                let opts = [];
+                if (state.currentQuestionKey === questionKey && Array.isArray(state.cachedQuizOptions) && state.cachedQuizOptions.length > 0) {
+                    opts = state.cachedQuizOptions;
+                } else {
+                    opts = getListeningSandboxQuizOptions(cur, key);
+                    state.currentQuestionKey = questionKey;
+                    state.cachedQuizOptions = opts;
+                }
+
+                // 題卡即時解答橫條
+                let answerRevealBanner = '';
+                if (state.isAnswered) {
+                    if (state.isCorrect) {
+                        answerRevealBanner = `
+                            <div class="mt-2.5 pt-2 border-t border-emerald-200 text-xs font-bold text-emerald-700 flex items-center justify-center gap-1.5 flex-wrap">
+                                <span>✅ 答對了！</span>
+                                <span class="text-slate-900 font-bold">${esc(cur.en)}</span>
+                                ${cur.pos ? `<span class="bg-emerald-100 text-emerald-800 text-[10px] px-1 py-0.2 rounded font-mono">${esc(cur.pos)}</span>` : ''}
+                                <span class="text-slate-700 font-medium">${esc(cur.zh)}</span>
+                            </div>
+                        `;
+                    } else {
+                        answerRevealBanner = `
+                            <div class="mt-2.5 pt-2 border-t border-rose-200 text-xs font-bold text-rose-600 flex items-center justify-center gap-1.5 flex-wrap">
+                                <span>❌ 正確解答：</span>
+                                <span class="text-slate-900 font-extrabold">${esc(cur.en)}</span>
+                                ${cur.pos ? `<span class="bg-rose-100 text-rose-800 text-[10px] px-1 py-0.2 rounded font-mono">${esc(cur.pos)}</span>` : ''}
+                                <span class="text-slate-700 font-medium">${esc(cur.zh)}</span>
+                            </div>
+                        `;
+                    }
+                }
 
                 let questionCardHtml = '';
                 if (state.mode === 'en2zh') {
                     questionCardHtml = `
-                        <div class="bg-gradient-to-b from-purple-50/60 to-white border border-purple-100 rounded-2xl p-4 text-center shrink-0 mb-3 shadow-2xs">
+                        <div class="bg-gradient-to-b from-purple-50/70 to-white border border-purple-100 rounded-2xl p-4 text-center shrink-0 mb-3 shadow-2xs">
                             <div class="flex items-center justify-between mb-1">
                                 <span class="text-[10px] font-bold px-2 py-0.5 rounded-full ${cur.isAnnotated ? 'bg-emerald-100 text-emerald-800' : 'bg-purple-100 text-purple-800'}">
                                     ${cur.isAnnotated ? '📌 劃線單字' : '📖 內建核心'}
@@ -12176,11 +12593,12 @@
                                 ${cur.pos ? `<span class="text-[10px] font-mono text-purple-700 bg-purple-50 px-1.5 py-0.2 rounded border border-purple-200/50">${esc(cur.pos)}</span>` : ''}
                                 ${cur.kk ? `<span class="text-xs font-mono text-slate-400">${esc(cur.kk)}</span>` : ''}
                             </div>
+                            ${answerRevealBanner}
                         </div>
                     `;
                 } else if (state.mode === 'zh2en') {
                     questionCardHtml = `
-                        <div class="bg-gradient-to-b from-indigo-50/60 to-white border border-indigo-100 rounded-2xl p-4 text-center shrink-0 mb-3 shadow-2xs">
+                        <div class="bg-gradient-to-b from-indigo-50/70 to-white border border-indigo-100 rounded-2xl p-4 text-center shrink-0 mb-3 shadow-2xs">
                             <div class="flex items-center justify-between mb-1">
                                 <span class="text-[10px] font-bold px-2 py-0.5 rounded-full ${cur.isAnnotated ? 'bg-emerald-100 text-emerald-800' : 'bg-purple-100 text-purple-800'}">
                                     ${cur.isAnnotated ? '📌 劃線單字' : '📖 內建核心'}
@@ -12189,11 +12607,12 @@
                             </div>
                             <h3 class="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">${esc(cur.zh)}</h3>
                             <div class="text-xs text-slate-400 mt-1 font-mono">${state.isAnswered ? `<span class="text-indigo-600 font-bold">${esc(cur.en)}</span>` : '選出正確英文單字'}</div>
+                            ${answerRevealBanner}
                         </div>
                     `;
                 } else if (state.mode === 'listen') {
                     questionCardHtml = `
-                        <div class="bg-gradient-to-b from-sky-50/60 to-white border border-sky-100 rounded-2xl p-4 text-center shrink-0 mb-3 shadow-2xs">
+                        <div class="bg-gradient-to-b from-sky-50/70 to-white border border-sky-100 rounded-2xl p-4 text-center shrink-0 mb-3 shadow-2xs">
                             <div class="flex items-center justify-between mb-1">
                                 <span class="text-[10px] font-bold px-2 py-0.5 rounded-full ${cur.isAnnotated ? 'bg-emerald-100 text-emerald-800' : 'bg-purple-100 text-purple-800'}">
                                     🎧 聽音辨字
@@ -12206,37 +12625,80 @@
                             <div class="text-xs text-slate-500 font-medium mt-1">
                                 ${state.isAnswered ? `<span class="text-sky-700 font-bold text-sm">${esc(cur.en)} · ${esc(cur.zh)}</span>` : '點擊喇叭重聽發音'}
                             </div>
+                            ${answerRevealBanner}
                         </div>
                     `;
                 }
 
-                // 選項列表
+                // 選項列表 (比照主單字庫質感回饋，原地變色、絕不跳動)
                 let optionsHtml = '<div class="grid grid-cols-1 gap-2">';
                 opts.forEach((opt, idx) => {
-                    const optVal = key === 'zh' ? opt.zh : opt.en;
                     const isTarget = opt.en.toLowerCase() === cur.en.toLowerCase();
-                    let btnClass = 'w-full text-left p-3 rounded-xl border text-xs sm:text-sm font-medium transition flex items-center justify-between cursor-pointer';
+                    const isThisClicked = (state.userChoiceIndex === idx);
+
+                    let btnClass = 'w-full text-left p-3 rounded-xl border text-xs sm:text-sm transition-all flex items-center justify-between cursor-pointer';
+                    let badgeHtml = '';
+                    let contentHtml = '';
 
                     if (state.isAnswered) {
                         if (isTarget) {
-                            btnClass += ' bg-emerald-500 text-white border-emerald-600 font-bold shadow-xs';
-                        } else if (state.userChoice === optVal) {
-                            btnClass += ' bg-rose-500 text-white border-rose-600 font-bold';
+                            // 正確解答 (無論是否選中，一律亮綠)
+                            btnClass += ' bg-emerald-50 border-emerald-500 text-emerald-950 font-bold shadow-xs';
+                            badgeHtml = '<span class="w-5 h-5 rounded-md bg-emerald-600 text-white text-[11px] font-bold flex items-center justify-center shrink-0">✓</span>';
+                            if (state.mode === 'en2zh') {
+                                contentHtml = `
+                                    <div class="flex-1 min-w-0 flex items-baseline justify-between flex-wrap gap-1 pr-1">
+                                        <span class="truncate text-emerald-950">${esc(opt.zh)}</span>
+                                        ${opt.pos ? `<span class="bg-emerald-100 text-emerald-800 text-[10px] px-1 py-0.2 rounded font-mono">${esc(opt.pos)}</span>` : ''}
+                                    </div>
+                                `;
+                            } else {
+                                contentHtml = `
+                                    <div class="flex-1 min-w-0 flex items-baseline justify-between flex-wrap gap-1 pr-1">
+                                        <span class="truncate text-emerald-950">${esc(opt.en)}</span>
+                                        <span class="text-xs text-emerald-700 font-medium truncate">${opt.pos ? `[${esc(opt.pos)}] ` : ''}${esc(opt.zh)}</span>
+                                    </div>
+                                `;
+                            }
+                        } else if (isThisClicked && !state.isCorrect) {
+                            // 點錯的選項：反紅、加刪除線、並揭曉真實中文
+                            btnClass += ' bg-rose-50 border-rose-500 text-rose-900 font-medium';
+                            badgeHtml = '<span class="w-5 h-5 rounded-md bg-rose-600 text-white text-[11px] font-bold flex items-center justify-center shrink-0">✕</span>';
+                            if (state.mode === 'en2zh') {
+                                contentHtml = `
+                                    <div class="flex-1 min-w-0 flex items-baseline justify-between flex-wrap gap-1 pr-1">
+                                        <span class="line-through opacity-80">${esc(opt.zh)}</span>
+                                    </div>
+                                `;
+                            } else {
+                                contentHtml = `
+                                    <div class="flex-1 min-w-0 flex items-baseline justify-between flex-wrap gap-1 pr-1">
+                                        <span class="line-through font-bold opacity-80">${esc(opt.en)}</span>
+                                        <span class="text-xs text-rose-600 font-medium truncate">${opt.pos ? `[${esc(opt.pos)}] ` : ''}${esc(opt.zh)}</span>
+                                    </div>
+                                `;
+                            }
                         } else {
-                            btnClass += ' bg-slate-50 text-slate-400 border-slate-200 opacity-60';
+                            // 未選的其他選項淡化
+                            btnClass += ' bg-slate-50 text-slate-400 border-slate-200 opacity-40';
+                            badgeHtml = `<span class="w-5 h-5 rounded-md bg-slate-100 text-slate-400 text-[10px] font-mono flex items-center justify-center shrink-0">${idx + 1}</span>`;
+                            const optText = (state.mode === 'en2zh') ? opt.zh : opt.en;
+                            contentHtml = `<span class="truncate flex-1 pr-1">${esc(optText)}</span>`;
                         }
                     } else {
-                        btnClass += ' bg-white hover:bg-purple-50 text-slate-800 border-slate-200 hover:border-purple-300 active:scale-[0.99]';
+                        // 尚未作答
+                        btnClass += ' bg-white hover:bg-purple-50/70 text-slate-800 border-slate-200 hover:border-purple-300 active:scale-[0.99] shadow-2xs font-medium';
+                        badgeHtml = `<span class="w-5 h-5 rounded-md bg-slate-100 text-slate-500 text-[10px] font-mono flex items-center justify-center shrink-0">${idx + 1}</span>`;
+                        const optText = (state.mode === 'en2zh') ? opt.zh : opt.en;
+                        contentHtml = `<span class="truncate flex-1 pr-1">${esc(optText)}</span>`;
                     }
 
-                    const safeOptVal = esc(optVal).replace(/'/g, "\'");
                     optionsHtml += `
-                        <button onclick="handleListeningSandboxQuizAnswer('${safeOptVal}', '${safeEn}', this)" class="${btnClass}" ${state.isAnswered ? 'disabled' : ''}>
-                            <div class="flex items-center gap-2 min-w-0 pr-1">
-                                <span class="w-5 h-5 rounded-md bg-slate-100 text-slate-500 text-[10px] font-mono flex items-center justify-center shrink-0">${idx + 1}</span>
-                                <span class="truncate">${esc(optVal)}</span>
+                        <button onclick="handleListeningSandboxQuizAnswer(${idx}, '${safeEn}')" class="${btnClass}" ${state.isAnswered ? 'disabled' : ''}>
+                            <div class="flex items-center gap-2 min-w-0 w-full">
+                                ${badgeHtml}
+                                ${contentHtml}
                             </div>
-                            ${state.isAnswered && isTarget ? '<span class="text-white text-xs shrink-0">✓</span>' : ''}
                         </button>
                     `;
                 });
@@ -12268,7 +12730,7 @@
 
                 container.innerHTML = `
                     <div class="flex flex-col justify-center h-full">
-                        <div class="bg-gradient-to-b from-amber-50/60 to-white border border-amber-100 rounded-2xl p-4 text-center shrink-0 mb-3 shadow-2xs">
+                        <div class="bg-gradient-to-b from-amber-50/70 to-white border border-amber-100 rounded-2xl p-4 text-center shrink-0 mb-3 shadow-2xs">
                             <div class="flex items-center justify-between mb-1">
                                 <span class="text-[10px] font-bold px-2 py-0.5 rounded-full ${cur.isAnnotated ? 'bg-emerald-100 text-emerald-800' : 'bg-purple-100 text-purple-800'}">
                                     ✍️ 拼寫填空
@@ -12326,11 +12788,10 @@
 
         // 下一題
         function nextListeningSandboxCard() {
+            clearSandboxQuestionCache();
             if (listeningSandboxState.currentIndex < listeningSandboxState.words.length - 1) {
                 listeningSandboxState.currentIndex++;
                 listeningSandboxState.isFlipped = false;
-                listeningSandboxState.isAnswered = false;
-                listeningSandboxState.userChoice = null;
                 listeningSandboxState.fillHintCount = 1;
                 listeningSandboxState.fillFeedback = null;
                 renderListeningSandboxModal();
@@ -12348,12 +12809,11 @@
 
         // 上一題
         function prevListeningSandboxCard() {
+            clearSandboxQuestionCache();
             if (listeningSandboxState.currentIndex > 0) {
                 stopListeningSandboxAutoPlay();
                 listeningSandboxState.currentIndex--;
                 listeningSandboxState.isFlipped = false;
-                listeningSandboxState.isAnswered = false;
-                listeningSandboxState.userChoice = null;
                 listeningSandboxState.isCompleted = false;
                 listeningSandboxState.fillHintCount = 1;
                 listeningSandboxState.fillFeedback = null;
@@ -12362,31 +12822,36 @@
         }
 
         // 處理測驗作答 (英選中 / 中選英 / 聽力)
-        function handleListeningSandboxQuizAnswer(selectedVal, targetEn, btnEl) {
+        function handleListeningSandboxQuizAnswer(selectedIdx, targetEn) {
             if (listeningSandboxState.isAnswered) return;
-            listeningSandboxState.isAnswered = true;
-            listeningSandboxState.userChoice = selectedVal;
-
             const cur = listeningSandboxState.words[listeningSandboxState.currentIndex];
-            const isCorrect = (listeningSandboxState.mode === 'en2zh')
-                ? (selectedVal === cur.zh)
-                : (selectedVal.toLowerCase() === targetEn.toLowerCase());
+            const opts = listeningSandboxState.cachedQuizOptions || [];
+            const chosen = opts[selectedIdx];
+            if (!chosen) return;
+
+            listeningSandboxState.isAnswered = true;
+            listeningSandboxState.userChoiceIndex = selectedIdx;
+
+            const isCorrect = (chosen.en.toLowerCase() === targetEn.toLowerCase());
+            listeningSandboxState.isCorrect = isCorrect;
 
             if (isCorrect) {
                 listeningSandboxState.score++;
-                playAudio(targetEn);
-            } else {
-                playAudio(targetEn);
             }
+            playAudio(targetEn);
 
+            // 重新渲染以原地呈現高質感綠/紅回饋與中英對照
             renderListeningSandboxModal();
 
-            // 1.3秒後自動進入下一題
-            setTimeout(() => {
+            // 1.4 秒後自動切換至下一題
+            if (listeningSandboxState.quizNextTimer) {
+                clearTimeout(listeningSandboxState.quizNextTimer);
+            }
+            listeningSandboxState.quizNextTimer = setTimeout(() => {
                 if (listeningSandboxState.isOpen && listeningSandboxState.isAnswered && !listeningSandboxState.isCompleted) {
                     nextListeningSandboxCard();
                 }
-            }, 1300);
+            }, 1400);
         }
 
         // 提交拼寫答案
@@ -12440,6 +12905,7 @@
         // 洗牌打亂順序
         function shuffleListeningSandboxCards() {
             stopListeningSandboxAutoPlay();
+            clearSandboxQuestionCache();
             const arr = [...listeningSandboxState.words];
             for (let i = arr.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
@@ -12448,8 +12914,6 @@
             listeningSandboxState.words = arr;
             listeningSandboxState.currentIndex = 0;
             listeningSandboxState.isFlipped = false;
-            listeningSandboxState.isAnswered = false;
-            listeningSandboxState.userChoice = null;
             listeningSandboxState.score = 0;
             listeningSandboxState.isCompleted = false;
             listeningSandboxState.fillHintCount = 1;
@@ -12460,10 +12924,9 @@
         // 重新開始當前模式
         function restartListeningSandbox() {
             stopListeningSandboxAutoPlay();
+            clearSandboxQuestionCache();
             listeningSandboxState.currentIndex = 0;
             listeningSandboxState.isFlipped = false;
-            listeningSandboxState.isAnswered = false;
-            listeningSandboxState.userChoice = null;
             listeningSandboxState.score = 0;
             listeningSandboxState.isCompleted = false;
             listeningSandboxState.fillHintCount = 1;

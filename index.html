@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261029V53';
+        const APP_BUILD_VERSION = '20261029V54';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -1169,12 +1169,14 @@
         /* 8. 統計分析頁面專屬深度調優 */
         html.dark #view-analysis .grid-cols-2 > div,
         html.dark #view-analysis .lg\:grid-cols-5 > div,
-        html.dark [class*="from-blue-50/90"],
-        html.dark [class*="from-indigo-50/90"],
-        html.dark [class*="from-sky-50/90"],
-        html.dark [class*="from-emerald-50/90"],
-        html.dark [class*="from-amber-50/90"] {
+        html.dark [class*="from-blue-50"],
+        html.dark [class*="from-indigo-50"],
+        html.dark [class*="from-sky-50"],
+        html.dark [class*="from-emerald-50"],
+        html.dark [class*="from-amber-50"],
+        html.dark [class*="from-purple-50"] {
             background: rgba(255, 255, 255, 0.035) !important;
+            background-image: none !important;
             border: 1px solid rgba(255, 255, 255, 0.08) !important;
             box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25) !important;
         }
@@ -1406,30 +1408,87 @@
             color: #FFFFFF !important;
         }
     
-        /* 詞形變化卡片暗黑調優 (動詞三態 / 比較級 / 複數) */
-        html.dark #word-detail-modal [class*="bg-blue-50/60"],
-        html.dark #dict-modal [class*="bg-blue-50/60"],
-        html.dark #word-detail-modal [class*="bg-emerald-50/60"],
-        html.dark #dict-modal [class*="bg-emerald-50/60"],
-        html.dark #word-detail-modal [class*="bg-amber-50/60"],
-        html.dark #dict-modal [class*="bg-amber-50/60"] {
-            background-color: rgba(255, 255, 255, 0.035) !important;
+        /* 詞形變化卡片暗黑調優 (動詞三態 / 比較級 / 複數) 徹底終結泛白與刺眼灰白底色 */
+        html.dark .word-forms-card,
+        html.dark .verb-forms-card,
+        html.dark .adj-forms-card,
+        html.dark .noun-forms-card,
+        html.dark #word-detail-modal [class*="from-blue-50"],
+        html.dark #dict-modal [class*="from-blue-50"],
+        html.dark #word-detail-modal [class*="bg-blue-50"],
+        html.dark #dict-modal [class*="bg-blue-50"],
+        html.dark #word-detail-modal [class*="bg-emerald-50"],
+        html.dark #dict-modal [class*="bg-emerald-50"],
+        html.dark #word-detail-modal [class*="bg-amber-50"],
+        html.dark #dict-modal [class*="bg-amber-50"] {
+            background-color: #0E1626 !important;
+            background-image: none !important;
             border-color: rgba(255, 255, 255, 0.08) !important;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3) !important;
         }
+        html.dark .verb-forms-card {
+            border-left: 3px solid #0071E3 !important;
+        }
+        html.dark .adj-forms-card {
+            border-left: 3px solid #10B981 !important;
+        }
+        html.dark .noun-forms-card {
+            border-left: 3px solid #F59E0B !important;
+        }
+        html.dark .word-forms-card h4,
+        html.dark .word-forms-card [class*="text-blue-900"],
+        html.dark .word-forms-card [class*="text-emerald-900"],
+        html.dark .word-forms-card [class*="text-amber-900"] {
+            color: #F8FAFC !important;
+        }
+        html.dark .verb-forms-card .forms-card-sub,
+        html.dark .verb-forms-card [class*="text-blue-600"] {
+            color: #58A6FF !important;
+        }
+        html.dark .adj-forms-card .forms-card-sub,
+        html.dark .adj-forms-card [class*="text-emerald-600"] {
+            color: #34D399 !important;
+        }
+        html.dark .noun-forms-card .forms-card-sub,
+        html.dark .noun-forms-card [class*="text-amber-600"] {
+            color: #FBBF24 !important;
+        }
+        /* 詞形子卡片 */
+        html.dark #word-detail-modal .word-form-item,
+        html.dark #dict-modal .word-form-item,
         html.dark #word-detail-modal [class*="bg-white/95"],
         html.dark #dict-modal [class*="bg-white/95"] {
             background-color: #172235 !important;
-            border-color: rgba(255, 255, 255, 0.08) !important;
-            color: #F8FAFC !important;
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
         }
+        html.dark #word-detail-modal .word-form-item:hover,
+        html.dark #dict-modal .word-form-item:hover,
         html.dark #word-detail-modal [class*="bg-white/95"]:hover,
         html.dark #dict-modal [class*="bg-white/95"]:hover {
-            background-color: #202E46 !important;
+            background-color: #1F2D45 !important;
             border-color: rgba(56, 139, 253, 0.4) !important;
         }
-        html.dark #word-detail-modal [class*="bg-white/95"] span,
-        html.dark #dict-modal [class*="bg-white/95"] span {
-            color: #F8FAFC !important;
+        /* 保持詞形各項專屬 Apple 階層色彩 */
+        html.dark .word-forms-card .text-gray-400 { color: #94A3B8 !important; }
+        html.dark .word-forms-card .text-blue-500,
+        html.dark .word-forms-card .text-\[\#0071E3\] { color: #58A6FF !important; }
+        html.dark .word-forms-card .text-purple-500,
+        html.dark .word-forms-card .text-purple-700 { color: #C084FC !important; }
+        html.dark .word-forms-card .text-emerald-500,
+        html.dark .word-forms-card .text-emerald-700,
+        html.dark .word-forms-card .text-emerald-800 { color: #34D399 !important; }
+        html.dark .word-forms-card .text-amber-700,
+        html.dark .word-forms-card .text-amber-800 { color: #FBBF24 !important; }
+        html.dark .word-forms-card .text-gray-800,
+        html.dark .word-forms-card .text-gray-900 { color: #F8FAFC !important; }
+        /* 底部第三人稱單數列 */
+        html.dark .forms-card-footer,
+        html.dark .word-forms-card div.text-gray-500 {
+            color: #94A3B8 !important;
+        }
+        html.dark .forms-card-footer strong,
+        html.dark .word-forms-card strong {
+            color: #58A6FF !important;
         }
         html.dark [class*="text-emerald-900"],
         html.dark [class*="text-blue-900"],
@@ -8787,32 +8846,32 @@
                 // 1. 動詞三態與變化
                 if (forms.verbForms) {
                     formsHtml += `
-                        <div class="bg-gradient-to-br from-blue-50/70 to-indigo-50/50 p-3.5 rounded-2xl border border-blue-100/80 shadow-2xs">
+                        <div class="word-forms-card verb-forms-card bg-gradient-to-br from-blue-50/70 to-indigo-50/50 p-3.5 rounded-2xl border border-blue-100/80 shadow-2xs">
                             <div class="flex items-center justify-between text-xs font-bold text-blue-900 mb-2">
                                 <div class="flex items-center gap-1.5">
                                     <span>⚡</span><span>動詞三態與詞形變化 (Verb Forms)</span>
                                 </div>
-                                <span class="text-[10px] text-blue-600 font-normal">點擊單字發音</span>
+                                <span class="forms-card-sub text-[10px] text-blue-600 font-normal">點擊單字發音</span>
                             </div>
                             <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs">
-                                <div class="bg-white/95 p-2 rounded-xl border border-blue-100/60 shadow-2xs cursor-pointer hover:border-blue-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.verbForms.base || w.en)}')" title="點擊聆聽原形發音">
+                                <div class="word-form-item bg-white/95 p-2 rounded-xl border border-blue-100/60 shadow-2xs cursor-pointer hover:border-blue-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.verbForms.base || w.en)}')" title="點擊聆聽原形發音">
                                     <span class="text-gray-400 block text-[10px] font-semibold mb-0.5">原形 (Base)</span>
                                     <span class="font-bold text-gray-800 font-mono text-xs sm:text-sm truncate">${esc(forms.verbForms.base || w.en)}</span>
                                 </div>
-                                <div class="bg-white/95 p-2 rounded-xl border border-blue-100/60 shadow-2xs cursor-pointer hover:border-blue-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.verbForms.past)}')" title="點擊聆聽過去式發音">
+                                <div class="word-form-item bg-white/95 p-2 rounded-xl border border-blue-100/60 shadow-2xs cursor-pointer hover:border-blue-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.verbForms.past)}')" title="點擊聆聽過去式發音">
                                     <span class="text-blue-500 block text-[10px] font-semibold mb-0.5">過去式 (Past)</span>
                                     <span class="font-bold text-[#0071E3] font-mono text-xs sm:text-sm truncate">${esc(forms.verbForms.past)}</span>
                                 </div>
-                                <div class="bg-white/95 p-2 rounded-xl border border-blue-100/60 shadow-2xs cursor-pointer hover:border-blue-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.verbForms.pp)}')" title="點擊聆聽過去分詞發音">
+                                <div class="word-form-item bg-white/95 p-2 rounded-xl border border-blue-100/60 shadow-2xs cursor-pointer hover:border-blue-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.verbForms.pp)}')" title="點擊聆聽過去分詞發音">
                                     <span class="text-purple-500 block text-[10px] font-semibold mb-0.5">過去分詞 (P.P.)</span>
                                     <span class="font-bold text-purple-700 font-mono text-xs sm:text-sm truncate">${esc(forms.verbForms.pp)}</span>
                                 </div>
-                                <div class="bg-white/95 p-2 rounded-xl border border-blue-100/60 shadow-2xs cursor-pointer hover:border-blue-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.verbForms.ing)}')" title="點擊聆聽現在分詞發音">
+                                <div class="word-form-item bg-white/95 p-2 rounded-xl border border-blue-100/60 shadow-2xs cursor-pointer hover:border-blue-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.verbForms.ing)}')" title="點擊聆聽現在分詞發音">
                                     <span class="text-emerald-500 block text-[10px] font-semibold mb-0.5">現在分詞 (-ing)</span>
                                     <span class="font-bold text-emerald-700 font-mono text-xs sm:text-sm truncate">${esc(forms.verbForms.ing)}</span>
                                 </div>
                             </div>
-                            <div class="mt-2 text-[11px] text-gray-500 flex items-center justify-between px-1">
+                            <div class="forms-card-footer mt-2 text-[11px] text-gray-500 flex items-center justify-between px-1">
                                 <span>第三人稱單數現在式 (-s/-es)：<strong class="text-gray-800 font-mono cursor-pointer hover:underline hover:text-[#0071E3]" onclick="playAudio('${esc(forms.verbForms.s)}')">${esc(forms.verbForms.s)}</strong></span>
                             </div>
                         </div>
@@ -8822,7 +8881,7 @@
                 // 2. 形容詞比較級與最高級
                 if (forms.adjForms) {
                     formsHtml += `
-                        <div class="bg-emerald-50/60 p-3 rounded-2xl border border-emerald-200/70 shadow-2xs">
+                        <div class="word-forms-card adj-forms-card bg-emerald-50/60 p-3 rounded-2xl border border-emerald-200/70 shadow-2xs">
                             <div class="flex items-center justify-between text-xs font-bold text-emerald-900 mb-2">
                                 <div class="flex items-center gap-1.5">
                                     <span>📈</span><span>形容詞比較級與最高級 (Degrees of Comparison)</span>
@@ -8850,7 +8909,7 @@
                 // 3. 名詞單複數變化
                 if (forms.nounForms && (!forms.verbForms || forms.nounForms.plural !== forms.verbForms.s)) {
                     formsHtml += `
-                        <div class="bg-amber-50/60 p-3 rounded-2xl border border-amber-200/70 shadow-2xs">
+                        <div class="word-forms-card noun-forms-card bg-amber-50/60 p-3 rounded-2xl border border-amber-200/70 shadow-2xs">
                             <div class="flex items-center justify-between text-xs font-bold text-amber-900 mb-2">
                                 <div class="flex items-center gap-1.5">
                                     <span>📦</span><span>名詞單複數變化 (Noun Plurals)</span>

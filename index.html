@@ -1322,7 +1322,21 @@
         html.dark [class*="text-amber-900"] {
             color: #F8FAFC !important;
         }
-        /* 訪客提示橫條夜間微光條 */
+        /* 訪客提示橫條與同步橫條夜間微光條 */
+        html.dark #sync-banner,
+        html.dark [class*="bg-amber-100"] {
+            background-color: rgba(245, 158, 11, 0.16) !important;
+            border-bottom: 1px solid rgba(245, 158, 11, 0.3) !important;
+            color: #FBBF24 !important;
+        }
+        html.dark #sync-banner:hover {
+            background-color: rgba(245, 158, 11, 0.28) !important;
+        }
+        html.dark #loading-banner {
+            background-color: #121927 !important;
+            color: #94A3B8 !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+        }
         html.dark [onclick*="loginWithGoogle"]:not(button) {
             background-color: rgba(245, 158, 11, 0.15) !important;
             border-bottom: 1px solid rgba(245, 158, 11, 0.25) !important;

@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261028V48';
+        const APP_BUILD_VERSION = '20261028V49';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -50,19 +50,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261028V48"></script>
-    <script src="toeic_data.js?v=20261028V48"></script>
-    <script src="jh_data.js?v=20261028V48"></script>
-    <script src="listening_data.js?v=20261028V48"></script>
-    <script src="listening_words_data.js?v=20261028V48"></script>
-    <script src="uk_phonetics_manifest.js?v=20261028V48"></script>
-    <script src="words_audio_manifest.js?v=20261028V48"></script>
-    <script src="examples_audio_manifest.js?v=20261028V48"></script>
-    <script src="zh_audio_manifest.js?v=20261028V48"></script>
-    <script src="collocations_audio_manifest.js?v=20261028V48"></script>
-    <script src="syn_ant_data.js?v=20261028V48"></script>
-    <script src="synonyms_unit8_data.js?v=20261028V48"></script>
-    <script src="examples_unit9_data.js?v=20261028V48"></script>
+    <script src="words_data.js?v=20261028V49"></script>
+    <script src="toeic_data.js?v=20261028V49"></script>
+    <script src="jh_data.js?v=20261028V49"></script>
+    <script src="listening_data.js?v=20261028V49"></script>
+    <script src="listening_words_data.js?v=20261028V49"></script>
+    <script src="uk_phonetics_manifest.js?v=20261028V49"></script>
+    <script src="words_audio_manifest.js?v=20261028V49"></script>
+    <script src="examples_audio_manifest.js?v=20261028V49"></script>
+    <script src="zh_audio_manifest.js?v=20261028V49"></script>
+    <script src="collocations_audio_manifest.js?v=20261028V49"></script>
+    <script src="syn_ant_data.js?v=20261028V49"></script>
+    <script src="synonyms_unit8_data.js?v=20261028V49"></script>
+    <script src="examples_unit9_data.js?v=20261028V49"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -458,105 +458,193 @@
     </style>
 
     <!-- ==========================================================
-         Apple Dark Theme Design System (極致暗黑護眼模式 · 高階調色)
+         Apple Ultra-Dark Design System (頂級沉浸暗黑模式 · 全域無死角)
          ========================================================== -->
     <style>
         /* 全域平滑色彩過渡 (切換時如同 iOS 般流暢呼吸) */
         html.dark, html.dark body,
         html.dark header, html.dark nav,
         html.dark .flip-card-front, html.dark .flip-card-back,
-        html.dark .bg-white, html.dark [class*="bg-slate-"], html.dark [class*="bg-gray-"] {
+        html.dark .bg-white, html.dark [class*="bg-slate-"], html.dark [class*="bg-gray-"],
+        html.dark [class*="bg-\[\#"] {
             transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
                         border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
                         color 0.2s ease,
                         box-shadow 0.25s ease;
         }
 
-        /* 1. 頁面與核心底色 (Apple Midnight 護眼夜空黑) */
+        /* 1. 頁面底色與極致純黑基底 (Apple Midnight) */
         html.dark body {
-            background-color: #0B0F17 !important;
+            background-color: #080C14 !important;
             color: #F8FAFC !important;
         }
 
         /* 滾動條暗化 */
         html.dark ::-webkit-scrollbar-thumb {
-            background: #334155 !important;
+            background: #243247 !important;
         }
         html.dark ::-webkit-scrollbar-thumb:hover {
-            background: #475569 !important;
+            background: #334563 !important;
         }
 
-        /* 2. 頂部毛玻璃導航列與通知列 */
-        html.dark header {
-            background-color: rgba(11, 15, 23, 0.85) !important;
-            border-bottom-color: rgba(255, 255, 255, 0.08) !important;
+        /* 2. 徹底消除所有假白底色毒瘤 (#FBFBFD, #F9FAFC, #F5F5F7, #F4F6F9, to-white, from-[#F9FAFC]) */
+        html.dark [class*="bg-\[\#FBFBFD\]"],
+        html.dark [class*="bg-\[\#F9FAFC\]"],
+        html.dark [class*="bg-\[\#F5F5F7\]"],
+        html.dark [class*="bg-\[\#F4F6F9\]"],
+        html.dark [class*="to-white"],
+        html.dark [class*="from-\[\#F9FAFC\]"],
+        html.dark .bg-\[\#FBFBFD\],
+        html.dark .bg-\[\#F9FAFC\],
+        html.dark .bg-\[\#F5F5F7\],
+        html.dark .bg-\[\#F4F6F9\] {
+            background-color: #121927 !important;
+            background-image: none !important;
+            border-color: rgba(255, 255, 255, 0.08) !important;
+        }
+
+        /* 3. Level 1 核心卡片 (純白與所有大容器統一轉換為深邃暗藍黑) */
+        html.dark .bg-white,
+        html.dark #view-dashboard > div,
+        html.dark #view-study-lobby > div,
+        html.dark #view-listening > div,
+        html.dark #view-analysis > div,
+        html.dark #view-favorites > div,
+        html.dark .listening-group,
+        html.dark #listening-placeholder-card {
+            background-color: #121927 !important;
+            background-image: none !important;
+            border-color: rgba(255, 255, 255, 0.08) !important;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45) !important;
             color: #F8FAFC !important;
         }
-        html.dark header h1 {
+
+        /* 4. 聽力特訓頁面專屬深度調優 (圖 2 徹底修復) */
+        html.dark #listening-placeholder-card {
+            background: #121927 !important;
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        }
+        html.dark #listening-placeholder-card h4 {
             color: #F8FAFC !important;
         }
-        html.dark #sync-banner {
-            background-color: #1E293B !important;
-            color: #FBBF24 !important;
-            border-bottom: 1px solid rgba(251, 191, 36, 0.2) !important;
-        }
-        html.dark #loading-banner {
-            background-color: #0F172A !important;
+        html.dark #listening-placeholder-card p {
             color: #94A3B8 !important;
         }
-
-        /* 主題切換按鈕在 Dark 模式下的膠囊質感 */
-        html.dark #theme-toggle-btn {
-            background-color: rgba(255, 255, 255, 0.08) !important;
-            border-color: rgba(255, 255, 255, 0.15) !important;
+        html.dark .listening-group {
+            background-color: #121927 !important;
+            border-color: rgba(255, 255, 255, 0.08) !important;
+        }
+        html.dark .listening-group button {
+            background-color: transparent !important;
+        }
+        html.dark .listening-group button span {
             color: #F8FAFC !important;
         }
-        html.dark #theme-toggle-btn:hover {
-            background-color: rgba(255, 255, 255, 0.14) !important;
+        html.dark .listening-group > div:last-child {
+            background-color: #0A0F1A !important; /* 展開文章區域使用更深邃內凹背景 */
+            border-top-color: rgba(255, 255, 255, 0.06) !important;
+        }
+        html.dark .listening-item {
+            background-color: transparent !important;
+        }
+        html.dark .listening-item:hover {
+            background-color: rgba(56, 139, 253, 0.15) !important;
+        }
+        html.dark .listening-item .item-title {
+            color: #E2E8F0 !important;
+        }
+        html.dark .listening-item .item-radio {
+            background-color: #162036 !important;
+            border-color: rgba(255, 255, 255, 0.25) !important;
         }
 
-        /* 3. 卡片 (Level 1 Surface) & 容器 */
-        html.dark .bg-white {
-            background-color: #131B2E !important; /* 高雅深藍黑卡片底色 */
-            border-color: rgba(255, 255, 255, 0.08) !important;
+        /* 5. 漸層卡片全面暗黑重構 (待複習、今日新詞、單元進度條、隨機10題、弱點特訓) - 圖 1 徹底修復 */
+        html.dark [class*="from-slate-50"],
+        html.dark #box-stat-review,
+        html.dark #box-stat-new,
+        html.dark #lobby-btn-start-rapid,
+        html.dark #lobby-btn-weak-practice,
+        html.dark [onclick*="openAnalysisView"] {
+            background: linear-gradient(135deg, rgba(20, 28, 46, 0.95) 0%, rgba(24, 34, 58, 0.9) 100%) !important;
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3) !important;
+        }
+        html.dark #box-stat-review:hover,
+        html.dark #box-stat-new:hover,
+        html.dark #lobby-btn-start-rapid:hover,
+        html.dark #lobby-btn-weak-practice:hover,
+        html.dark [onclick*="openAnalysisView"]:hover {
+            border-color: #388BFD !important;
+            box-shadow: 0 4px 20px rgba(0, 113, 227, 0.3) !important;
+        }
+        html.dark #box-stat-review span,
+        html.dark #box-stat-new span,
+        html.dark #lobby-btn-start-rapid span,
+        html.dark #lobby-btn-weak-practice span {
             color: #F8FAFC;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35) !important;
         }
 
-        /* 4. 次級容器 / Well / 內嵌方塊 (Level 2 Surface) - 徹底覆蓋所有帶透明度變體的淺灰白膏藥底色 */
+        /* 6. 統計分析頁面專屬深度調優 (圖 4 徹底修復) */
+        html.dark #view-analysis .grid-cols-2 > div,
+        html.dark #view-analysis .lg\:grid-cols-5 > div,
+        html.dark [class*="from-blue-50/90"],
+        html.dark [class*="from-indigo-50/90"],
+        html.dark [class*="from-sky-50/90"],
+        html.dark [class*="from-emerald-50/90"],
+        html.dark [class*="from-amber-50/90"] {
+            background: rgba(255, 255, 255, 0.035) !important;
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25) !important;
+        }
+        html.dark #analysis-category-breakdown-card,
+        html.dark #analysis-srs-distribution-card,
+        html.dark #view-analysis .bg-\[\#FBFBFD\],
+        html.dark #view-analysis [class*="bg-\[\#FB"] {
+            background-color: #121927 !important;
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        }
+        html.dark #analysis-category-list > div,
+        html.dark #analysis-srs-distribution-card .grid > div {
+            background-color: #172235 !important;
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        }
+        html.dark #analysis-category-list h4,
+        html.dark #analysis-srs-distribution-card h4 {
+            color: #F8FAFC !important;
+        }
+
+        /* 7. 次級容器 / 內嵌方塊 (消除所有灰白膏藥) */
         html.dark [class*="bg-slate-50"],
         html.dark [class*="bg-slate-100"],
         html.dark [class*="bg-gray-50"],
         html.dark [class*="bg-gray-100"],
-        html.dark .bg-\[\#F5F5F7\],
         html.dark #card-trans-expanded,
         html.dark #example-container {
             background-color: rgba(255, 255, 255, 0.035) !important;
             border-color: rgba(255, 255, 255, 0.08) !important;
         }
 
-        /* 5. 軌道 / 底槽 / Progress Bar Track (Level 3 Surface) - 進度條與題型控制器背景 */
+        /* 8. 軌道 / 進度條槽 (圖 1 進度條修復) */
         html.dark [class*="bg-slate-200"],
         html.dark [class*="bg-gray-200"],
-        html.dark .quiz-mode-selector {
-            background-color: rgba(0, 0, 0, 0.45) !important;
-            border-color: rgba(255, 255, 255, 0.06) !important;
+        html.dark .w-full.bg-slate-200\/80 {
+            background-color: rgba(0, 0, 0, 0.5) !important;
+            border-color: rgba(255, 255, 255, 0.05) !important;
         }
 
-        /* 題型選擇器外框與軌道精調 (Segmented Control) */
+        /* 9. 測驗題型切換器 (Apple Segmented Control) */
         html.dark .quiz-mode-selector {
+            background-color: rgba(0, 0, 0, 0.55) !important;
             padding: 3px !important;
-            border: 1px solid rgba(255, 255, 255, 0.06) !important;
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
         }
-        /* 選中的題型膠囊：高飽和明亮 Apple 藍，純白字體，光暈立體感 */
         html.dark .quiz-pill.bg-white {
             background-color: #0071E3 !important;
             color: #FFFFFF !important;
             font-weight: 700 !important;
-            border: 1px solid rgba(255, 255, 255, 0.2) !important;
+            border: 1px solid rgba(255, 255, 255, 0.25) !important;
             box-shadow: 0 2px 10px rgba(0, 113, 227, 0.5) !important;
         }
-        /* 未選中的題型膠囊：柔和銀灰，背景透明 */
         html.dark .quiz-pill:not(.bg-white) {
             background-color: transparent !important;
             color: #94A3B8 !important;
@@ -567,34 +655,11 @@
             background-color: rgba(255, 255, 255, 0.08) !important;
         }
 
-        /* 6. 雙欄 Bento 特訓卡 (待複習、今日新詞、隨機10題、弱點特訓) */
-        html.dark #box-stat-review,
-        html.dark #box-stat-new,
-        html.dark #lobby-btn-start-rapid,
-        html.dark #lobby-btn-weak-practice {
-            background: linear-gradient(135deg, rgba(22, 32, 54, 0.95) 0%, rgba(26, 40, 70, 0.85) 100%) !important;
-            border: 1px solid rgba(255, 255, 255, 0.1) !important;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25) !important;
-        }
-        html.dark #box-stat-review:hover,
-        html.dark #box-stat-new:hover,
-        html.dark #lobby-btn-start-rapid:hover,
-        html.dark #lobby-btn-weak-practice:hover {
-            border-color: #388BFD !important;
-            box-shadow: 0 4px 20px rgba(0, 113, 227, 0.25) !important;
-        }
-        html.dark #box-stat-review span,
-        html.dark #box-stat-new span,
-        html.dark #lobby-btn-start-rapid span,
-        html.dark #lobby-btn-weak-practice span {
-            color: #F8FAFC;
-        }
-
-        /* 7. 歷史錯題集中複習三個按鈕 */
+        /* 10. 錯題集中複習三個按鈕 */
         html.dark #btn-review-week,
         html.dark #btn-review-month,
         html.dark #btn-review-all {
-            background-color: #1A243D !important;
+            background-color: #172235 !important;
             border: 1px solid rgba(255, 255, 255, 0.12) !important;
             color: #F8FAFC !important;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3) !important;
@@ -602,44 +667,121 @@
         html.dark #btn-review-week:hover,
         html.dark #btn-review-month:hover,
         html.dark #btn-review-all:hover {
-            background-color: #243354 !important;
+            background-color: #243552 !important;
             border-color: #388BFD !important;
             color: #58A6FF !important;
         }
 
-        /* 錯題預覽與成長曲線藍色微膠囊按鈕 */
+        /* 11. 單字清單與音標膠囊調優 (圖 3 徹底修復) */
+        html.dark .preview-word-row,
+        html.dark .weak-row,
+        html.dark [id^="preview-row-"] {
+            background-color: #162033 !important;
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        }
+        html.dark .preview-word-row:hover,
+        html.dark .weak-row:hover {
+            background-color: #1E2D48 !important;
+            border-color: rgba(56, 139, 253, 0.4) !important;
+        }
+        html.dark span.font-mono.bg-slate-100,
+        html.dark span.font-mono.bg-slate-50,
+        html.dark span.font-mono.bg-gray-100,
+        html.dark .preview-word-row [class*="bg-slate-100"],
+        html.dark .preview-word-row [class*="bg-slate-50"],
+        html.dark #custom-words-table [class*="bg-slate-100"],
+        html.dark #custom-words-table [class*="bg-slate-50"] {
+            background-color: rgba(255, 255, 255, 0.06) !important;
+            color: #93C5FD !important;
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        }
+
+        /* 12. 微膠囊按鈕 (預覽 ➔ / 成長曲線 ➔ / bg-blue-50) */
+        html.dark .bg-blue-50,
         html.dark #btn-preview-all-mistakes,
         html.dark #btn-view-analysis {
-            background-color: rgba(0, 113, 227, 0.2) !important;
-            border: 1px solid rgba(56, 139, 253, 0.4) !important;
+            background-color: rgba(0, 113, 227, 0.22) !important;
+            border: 1px solid rgba(56, 139, 253, 0.45) !important;
             color: #58A6FF !important;
         }
+        html.dark .bg-blue-50:hover,
         html.dark #btn-preview-all-mistakes:hover,
         html.dark #btn-view-analysis:hover {
             background-color: #0071E3 !important;
             color: #FFFFFF !important;
         }
 
-        /* 自動輪播發音按鈕 */
-        html.dark #lobby-btn-auto-daily {
-            background-color: #1A243D !important;
-            border: 1px solid rgba(255, 255, 255, 0.12) !important;
-            color: #58A6FF !important;
+        /* 13. 翻牌卡片與彈窗 */
+        html.dark .flip-card-front {
+            background-color: #121927 !important;
+            border-color: rgba(255, 255, 255, 0.1) !important;
+            box-shadow: 0 12px 32px -4px rgba(0, 0, 0, 0.5) !important;
         }
-        html.dark #lobby-btn-auto-daily:hover {
-            background-color: #243354 !important;
-            border-color: #388BFD !important;
-            color: #FFFFFF !important;
+        html.dark .flip-card-back {
+            background-color: #151F31 !important;
+            border-color: rgba(255, 255, 255, 0.1) !important;
+            box-shadow: 0 12px 32px -4px rgba(0, 0, 0, 0.5) !important;
+        }
+        html.dark #dict-modal > div,
+        html.dark #word-detail-modal > div,
+        html.dark #listening-sandbox-modal > div,
+        html.dark #custom-word-modal > div {
+            background-color: #121927 !important;
+            border: 1px solid rgba(255, 255, 255, 0.14) !important;
+            box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.8) !important;
+            color: #F8FAFC !important;
         }
 
-        /* 今日日期徽章 */
-        html.dark #current-date-display {
+        /* 14. 導航列 (Mobile & Desktop) */
+        html.dark nav.fixed {
+            background-color: rgba(10, 15, 26, 0.94) !important;
+            border-color: rgba(255, 255, 255, 0.08) !important;
+            box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.5) !important;
+        }
+        html.dark nav.fixed button {
+            color: #94A3B8;
+        }
+        html.dark nav.fixed button:hover {
+            color: #F8FAFC;
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+        html.dark nav.fixed button.text-\[\#0071E3\] {
+            color: #388BFD !important;
+        }
+        @media (min-width: 1024px) {
+            html.dark nav.fixed {
+                background: rgba(10, 15, 26, 0.96) !important;
+                border-right-color: rgba(255, 255, 255, 0.08) !important;
+            }
+            html.dark nav.fixed::before {
+                color: #F8FAFC !important;
+                border-bottom-color: rgba(255, 255, 255, 0.08) !important;
+            }
+            html.dark nav.fixed button.text-\[\#0071E3\] {
+                background: linear-gradient(135deg, rgba(56, 139, 253, 0.2) 0%, rgba(30, 64, 175, 0.25) 100%) !important;
+                box-shadow: inset 3px 0 0 #388BFD !important;
+            }
+        }
+
+        /* 15. 頂部毛玻璃導航列 */
+        html.dark header {
+            background-color: rgba(8, 12, 20, 0.88) !important;
+            border-bottom-color: rgba(255, 255, 255, 0.08) !important;
+            color: #F8FAFC !important;
+        }
+        html.dark header h1 {
+            color: #F8FAFC !important;
+        }
+        html.dark #theme-toggle-btn {
             background-color: rgba(255, 255, 255, 0.08) !important;
-            color: #CBD5E1 !important;
-            border: 1px solid rgba(255, 255, 255, 0.08) !important;
+            border-color: rgba(255, 255, 255, 0.15) !important;
+            color: #F8FAFC !important;
+        }
+        html.dark #theme-toggle-btn:hover {
+            background-color: rgba(255, 255, 255, 0.14) !important;
         }
 
-        /* 8. 文字層級系統 */
+        /* 16. 文字層級與邊框覆蓋 */
         html.dark .text-slate-900,
         html.dark .text-\[\#1D1D1F\],
         html.dark .text-gray-900 {
@@ -661,8 +803,6 @@
         html.dark .text-gray-400 {
             color: #94A3B8 !important;
         }
-
-        /* 9. 邊框通用覆蓋 */
         html.dark [class*="border-slate-"],
         html.dark [class*="border-gray-"] {
             border-color: rgba(255, 255, 255, 0.08) !important;
@@ -672,156 +812,31 @@
             border-color: rgba(255, 255, 255, 0.08) !important;
         }
 
-        /* 10. 翻牌單字卡 (Study Flashcard) */
-        html.dark .flip-card-front {
-            background-color: #131B2E !important;
-            border-color: rgba(255, 255, 255, 0.1) !important;
-            box-shadow: 0 12px 32px -4px rgba(0, 0, 0, 0.45) !important;
-        }
-        html.dark .flip-card-back {
-            background-color: #162036 !important;
-            border-color: rgba(255, 255, 255, 0.1) !important;
-            box-shadow: 0 12px 32px -4px rgba(0, 0, 0, 0.45) !important;
-        }
-        html.dark .sandbox-card-front,
-        html.dark .sandbox-card-back {
-            background-color: #131B2E !important;
-            border-color: rgba(255, 255, 255, 0.1) !important;
-        }
-
-        /* 11. 輸入框與下拉選單 */
+        /* 17. 輸入框與下拉選單 */
         html.dark select,
         html.dark input[type="text"],
         html.dark input[type="search"],
         html.dark input[type="number"],
         html.dark textarea {
-            background-color: #1A243D !important;
+            background-color: #172235 !important;
             border-color: rgba(255, 255, 255, 0.12) !important;
             color: #F8FAFC !important;
         }
         html.dark select option {
-            background-color: #131B2E !important;
+            background-color: #121927 !important;
             color: #F8FAFC !important;
         }
 
-        /* 12. 彈窗 (Modals) */
-        html.dark #dict-modal > div,
-        html.dark #word-detail-modal > div,
-        html.dark #listening-sandbox-modal > div,
-        html.dark #custom-word-modal > div {
-            background-color: #131B2E !important;
-            border: 1px solid rgba(255, 255, 255, 0.14) !important;
-            box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.75) !important;
-            color: #F8FAFC !important;
-        }
-
-        /* 13. 導航列 (Mobile & Desktop) */
-        html.dark nav.fixed {
-            background-color: rgba(15, 23, 42, 0.92) !important;
-            border-color: rgba(255, 255, 255, 0.08) !important;
-            box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.4) !important;
-        }
-        html.dark nav.fixed button {
-            color: #94A3B8;
-        }
-        html.dark nav.fixed button:hover {
-            color: #F8FAFC;
-            background-color: rgba(255, 255, 255, 0.05);
-        }
-        html.dark nav.fixed button.text-\[\#0071E3\] {
-            color: #388BFD !important;
-        }
-        @media (min-width: 1024px) {
-            html.dark nav.fixed {
-                background: rgba(15, 23, 42, 0.94) !important;
-                border-right-color: rgba(255, 255, 255, 0.08) !important;
-            }
-            html.dark nav.fixed::before {
-                color: #F8FAFC !important;
-                border-bottom-color: rgba(255, 255, 255, 0.08) !important;
-            }
-            html.dark nav.fixed button.text-\[\#0071E3\] {
-                background: linear-gradient(135deg, rgba(56, 139, 253, 0.2) 0%, rgba(30, 64, 175, 0.25) 100%) !important;
-                box-shadow: inset 3px 0 0 #388BFD !important;
-            }
-        }
-
-        /* 14. 聽力卡片與模式調優 */
-        html.dark .sentence-card {
-            background-color: transparent !important;
-        }
-        html.dark .sentence-card:hover {
-            background-color: #1A243D !important;
-            border-color: rgba(255, 255, 255, 0.12) !important;
-        }
-        html.dark .sentence-card.sentence-active {
-            background-color: #162544 !important;
-            border-color: #388BFD !important;
-            box-shadow: 0 8px 28px -4px rgba(56, 139, 253, 0.25) !important;
-        }
-        html.dark .sentence-card.sentence-active .en-text {
+        /* 18. 自動輪播按鈕 */
+        html.dark #lobby-btn-auto-daily {
+            background-color: #172235 !important;
+            border: 1px solid rgba(255, 255, 255, 0.12) !important;
             color: #58A6FF !important;
         }
-        html.dark .sentence-card.sentence-active .zh-text {
-            color: #F8FAFC !important;
-        }
-        html.dark .dialogue-card-A {
-            background-color: rgba(56, 139, 253, 0.1) !important;
-        }
-        html.dark .dialogue-card-B {
-            background-color: rgba(168, 85, 247, 0.1) !important;
-        }
-        html.dark .dialogue-card-B.sentence-active {
-            background-color: #24143D !important;
-            border-color: #A855F7 !important;
-        }
-        html.dark .dialogue-card-B.sentence-active .en-text {
-            color: #C084FC !important;
-        }
-
-        /* 15. 測驗選項與輔助膠囊 */
-        html.dark .quiz-opt-btn {
-            background-color: #1A243D !important;
-            border-color: rgba(255, 255, 255, 0.1) !important;
-            color: #F8FAFC !important;
-        }
-        html.dark .quiz-opt-btn:hover {
-            background-color: #223050 !important;
+        html.dark #lobby-btn-auto-daily:hover {
+            background-color: #243552 !important;
             border-color: #388BFD !important;
-        }
-        html.dark .preview-word-row,
-        html.dark .weak-row {
-            background-color: #1A243D !important;
-            border-color: rgba(255, 255, 255, 0.08) !important;
-        }
-        html.dark .preview-word-row:hover,
-        html.dark .weak-row:hover {
-            background-color: #223050 !important;
-        }
-        html.dark .bg-blue-50 {
-            background-color: rgba(0, 113, 227, 0.2) !important;
-            border: 1px solid rgba(56, 139, 253, 0.35) !important;
-            color: #58A6FF !important;
-        }
-        html.dark .bg-emerald-50 {
-            background-color: rgba(16, 185, 129, 0.16) !important;
-            border: 1px solid rgba(16, 185, 129, 0.3) !important;
-            color: #34D399 !important;
-        }
-        html.dark .bg-amber-50 {
-            background-color: rgba(245, 158, 11, 0.16) !important;
-            border: 1px solid rgba(245, 158, 11, 0.3) !important;
-            color: #FBBF24 !important;
-        }
-        html.dark .bg-rose-50 {
-            background-color: rgba(244, 63, 94, 0.16) !important;
-            border: 1px solid rgba(244, 63, 94, 0.3) !important;
-            color: #FB7185 !important;
-        }
-        html.dark .bg-purple-50 {
-            background-color: rgba(168, 85, 247, 0.16) !important;
-            border: 1px solid rgba(168, 85, 247, 0.3) !important;
-            color: #C084FC !important;
+            color: #FFFFFF !important;
         }
     </style>
 

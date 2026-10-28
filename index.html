@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261028V52';
+        const APP_BUILD_VERSION = '20261029V53';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -490,12 +490,14 @@
         /* 2. 徹底消除所有假白底色毒瘤 (#FBFBFD, #F9FAFC, #F5F5F7, #F4F6F9, to-white, from-[#F9FAFC]) */
         html.dark [class*="bg-\[\#FBFBFD\]"],
         html.dark [class*="bg-\[\#F9FAFC\]"],
+        html.dark [class*="bg-\[\#F8FAFC\]"],
         html.dark [class*="bg-\[\#F5F5F7\]"],
         html.dark [class*="bg-\[\#F4F6F9\]"],
         html.dark [class*="to-white"],
         html.dark [class*="from-\[\#F9FAFC\]"],
         html.dark .bg-\[\#FBFBFD\],
         html.dark .bg-\[\#F9FAFC\],
+        html.dark .bg-\[\#F8FAFC\],
         html.dark .bg-\[\#F5F5F7\],
         html.dark .bg-\[\#F4F6F9\] {
             background-color: #121927 !important;
@@ -629,6 +631,36 @@
             color: #F8FAFC !important;
             border-color: rgba(255, 255, 255, 0.1) !important;
         }
+        /* 角色對話演練列與切換標籤 (徹底消除泛白破版) */
+        html.dark #dialogue-role-bar {
+            background: linear-gradient(135deg, rgba(0, 113, 227, 0.12) 0%, rgba(137, 54, 255, 0.12) 100%) !important;
+            border-color: rgba(56, 139, 253, 0.3) !important;
+        }
+        html.dark #dialogue-role-bar span {
+            color: #F8FAFC !important;
+        }
+        html.dark #dialogue-role-bar [class*="bg-white/90"],
+        html.dark #dialogue-role-bar .role-track {
+            background-color: #0E1626 !important;
+            border-color: rgba(255, 255, 255, 0.1) !important;
+        }
+        html.dark .role-mode-btn {
+            color: #94A3B8 !important;
+        }
+        html.dark .role-mode-btn:hover {
+            color: #F8FAFC !important;
+            background-color: rgba(255, 255, 255, 0.08) !important;
+        }
+        html.dark .role-mode-btn.bg-\[\#0071E3\] {
+            background-color: #0071E3 !important;
+            color: #FFFFFF !important;
+            box-shadow: 0 2px 8px rgba(0, 113, 227, 0.45) !important;
+        }
+        html.dark .role-mode-btn.bg-purple-600 {
+            background-color: #8936FF !important;
+            color: #FFFFFF !important;
+            box-shadow: 0 2px 8px rgba(137, 54, 255, 0.45) !important;
+        }
 
         /* 聽力教材左側手風琴與右側佔位引導卡 */
         html.dark #listening-placeholder-card {
@@ -719,6 +751,88 @@
         html.dark .subtab-content {
             background-color: #0A0F1A !important;
             border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        }
+
+        /* 文法解析分頁 (Grammar Tab · 徹底終結白板卡片與黑字死板) */
+        html.dark #subtab-content-listening-grammar {
+            background-color: #0A0F1A !important;
+        }
+        html.dark #subtab-content-listening-grammar h4 {
+            color: #F8FAFC !important;
+        }
+        html.dark #subtab-content-listening-grammar > div:first-child {
+            border-bottom-color: rgba(255, 255, 255, 0.08) !important;
+        }
+        html.dark .grammar-card,
+        html.dark #listening-grammar-container > div {
+            background-color: #121927 !important;
+            border-color: rgba(255, 255, 255, 0.08) !important;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4) !important;
+        }
+        html.dark .grammar-card:hover,
+        html.dark #listening-grammar-container > div:hover {
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.5) !important;
+            border-color: rgba(56, 139, 253, 0.3) !important;
+        }
+        html.dark .grammar-card h5 {
+            color: #F8FAFC !important;
+        }
+        html.dark .grammar-card > div:first-child {
+            border-bottom-color: rgba(255, 255, 255, 0.08) !important;
+        }
+        html.dark .grammar-card [class*="bg-slate-50"] {
+            background-color: #0E1626 !important;
+            border-color: rgba(255, 255, 255, 0.08) !important;
+        }
+        html.dark .grammar-card [class*="bg-slate-50"] code {
+            color: #58A6FF !important;
+        }
+        html.dark .grammar-explanation,
+        html.dark .grammar-card div.text-slate-700 {
+            color: #CBD5E1 !important;
+        }
+        html.dark .grammar-explanation span,
+        html.dark .grammar-card div.text-slate-700 span {
+            color: #F8FAFC !important;
+        }
+        html.dark .grammar-card [class*="bg-amber-50"] {
+            background-color: rgba(245, 158, 11, 0.12) !important;
+            border-color: rgba(245, 158, 11, 0.3) !important;
+            color: #FDE68A !important;
+        }
+        html.dark .grammar-card [class*="bg-amber-50"] span.text-amber-800,
+        html.dark .grammar-card [class*="bg-amber-50"] span.font-bold {
+            color: #FBBF24 !important;
+        }
+        html.dark .grammar-example-box,
+        html.dark #listening-grammar-container [class*="border-l-4"],
+        html.dark #listening-grammar-container [class*="bg-\[\#F8FAFC\]"] {
+            background-color: #0E1626 !important;
+            border-color: rgba(255, 255, 255, 0.08) !important;
+            border-left-color: #0071E3 !important;
+        }
+        html.dark .grammar-example-text,
+        html.dark .grammar-example-box div.text-slate-800,
+        html.dark #listening-grammar-container div.text-slate-800 {
+            color: #F8FAFC !important;
+        }
+        html.dark .grammar-example-box div.text-slate-500,
+        html.dark #listening-grammar-container div.text-slate-500 {
+            color: #94A3B8 !important;
+            border-top-color: rgba(255, 255, 255, 0.08) !important;
+        }
+        html.dark .grammar-example-box [class*="text-[#0071E3]"],
+        html.dark #listening-grammar-container [class*="text-[#0071E3]"] {
+            color: #58A6FF !important;
+        }
+        html.dark .grammar-example-box [class*="decoration-[#0071E3]"],
+        html.dark #listening-grammar-container [class*="decoration-[#0071E3]"] {
+            text-decoration-color: rgba(88, 166, 255, 0.6) !important;
+        }
+        html.dark #listening-grammar-container .bg-gray-50 {
+            background-color: #121927 !important;
+            border-color: rgba(255, 255, 255, 0.08) !important;
+            color: #94A3B8 !important;
         }
 
         /* 閱讀測驗分頁 (Quiz Tab) */
@@ -2061,7 +2175,7 @@
                                 <span>🎭</span>
                                 <span>互動角色演練</span>
                             </span>
-                            <div class="flex items-center gap-1 bg-white/90 p-1 rounded-xl shadow-xs border border-gray-200/60">
+                            <div class="role-track flex items-center gap-1 bg-white/90 p-1 rounded-xl shadow-xs border border-gray-200/60">
                                 <button id="btn-role-all" class="role-mode-btn px-2.5 py-1 text-xs font-semibold rounded-lg bg-[#0071E3] text-white transition-all shadow-xs" onclick="setRolePlayMode('all')">雙方正常</button>
                                 <button id="btn-role-A" class="role-mode-btn px-2.5 py-1 text-xs font-medium rounded-lg text-gray-600 hover:text-[#0071E3] transition-all" onclick="setRolePlayMode('A')">扮演 Alex 👨‍💼</button>
                                 <button id="btn-role-B" class="role-mode-btn px-2.5 py-1 text-xs font-medium rounded-lg text-gray-600 hover:text-purple-600 transition-all" onclick="setRolePlayMode('B')">扮演 Sophia 👩‍💼</button>
@@ -11037,6 +11151,19 @@
             if (roleBar) {
                 if (article.isDialogue) {
                     roleBar.classList.remove('hidden');
+                    // 動態設定演練角色按鈕名稱與頭像
+                    let speakerA = { name: 'Alex', avatar: '👨‍💼' };
+                    let speakerB = { name: 'Sophia', avatar: '👩‍💼' };
+                    if (Array.isArray(article.sentences) && article.sentences.length > 0) {
+                        const sA = article.sentences.find(s => s.role === 'A') || article.sentences[0];
+                        if (sA) speakerA = { name: sA.speaker || '角色 A', avatar: sA.avatar || '👨‍💼' };
+                        const sB = article.sentences.find(s => s.role === 'B' || (sA && s.speaker !== sA.speaker));
+                        if (sB) speakerB = { name: sB.speaker || '角色 B', avatar: sB.avatar || '👩‍💼' };
+                    }
+                    const btnA = document.getElementById('btn-role-A');
+                    const btnB = document.getElementById('btn-role-B');
+                    if (btnA) btnA.innerHTML = `扮演 ${esc(speakerA.name)} ${speakerA.avatar}`;
+                    if (btnB) btnB.innerHTML = `扮演 ${esc(speakerB.name)} ${speakerB.avatar}`;
                 } else {
                     roleBar.classList.add('hidden');
                 }
@@ -11926,7 +12053,7 @@
             listeningAudioPlayer.playbackRate = rate;
         });
 
-        // 句卡高亮與柔和內容器平滑滾動 (不干擾全域視窗)
+        // 句卡高亮與柔和平滑滾動 (音訊朗讀畫面自動跟隨往下)
         function highlightListeningSentence(index) {
             currentHighlightedIndex = index;
             clearWordHighlight();
@@ -11937,14 +12064,8 @@
                 if (i === index) {
                     block.classList.add('sentence-active');
                     const textTab = document.getElementById('subtab-content-listening-text');
-                    if (textTab && !textTab.classList.contains('hidden')) {
-                        const tabRect = textTab.getBoundingClientRect();
-                        const blockRect = block.getBoundingClientRect();
-                        const isVisible = (blockRect.top >= tabRect.top + 30 && blockRect.bottom <= tabRect.bottom - 30);
-                        if (!isVisible) {
-                            const targetTop = block.offsetTop - textTab.offsetTop - (textTab.clientHeight / 2) + (block.clientHeight / 2);
-                            textTab.scrollTo({ top: Math.max(0, targetTop), behavior: 'smooth' });
-                        }
+                    if (!textTab || !textTab.classList.contains('hidden')) {
+                        block.scrollIntoView({ behavior: 'smooth', block: 'center' });
                     }
                 } else {
                     block.classList.remove('sentence-active');
@@ -12346,7 +12467,7 @@
                     : '';
 
                 html += `
-                <div class="bg-white p-4 sm:p-5 rounded-2xl shadow-xs border border-slate-200/80 transition hover:shadow-md">
+                <div class="grammar-card bg-white p-4 sm:p-5 rounded-2xl shadow-xs border border-slate-200/80 transition hover:shadow-md">
                     <div class="flex items-start justify-between gap-2 mb-3 pb-2.5 border-b border-slate-100 flex-wrap">
                         <h5 class="font-bold text-slate-900 text-[15px] sm:text-base flex items-center gap-2 leading-snug">
                             <span class="bg-[#0071E3] text-white w-6 h-6 rounded-full inline-flex items-center justify-center text-xs font-bold shrink-0 shadow-2xs">${index + 1}</span>
@@ -12355,11 +12476,11 @@
                         ${tagHtml}
                     </div>
                     ${patternHtml}
-                    <div class="text-xs sm:text-sm text-slate-700 mb-3.5 leading-relaxed">
+                    <div class="grammar-explanation text-xs sm:text-sm text-slate-700 mb-3.5 leading-relaxed">
                         <span class="font-bold text-slate-900">語法結構解析：</span>${item.explanation}
                     </div>
                     ${keyPointHtml}
-                    <div class="bg-[#F8FAFC] p-3.5 rounded-xl text-sm text-slate-900 border border-slate-200/80 border-l-4 border-l-[#0071E3]">
+                    <div class="grammar-example-box bg-[#F8FAFC] p-3.5 rounded-xl text-sm text-slate-900 border border-slate-200/80 border-l-4 border-l-[#0071E3]">
                         <div class="flex items-center justify-between gap-2 mb-1.5">
                             <span class="text-[#0071E3] font-bold text-[11px] uppercase tracking-wider">Example 本文原句對照</span>
                             <button type="button" onclick="playGrammarExampleAudio('${safePlainExample}')" class="inline-flex items-center gap-1 text-xs font-semibold text-[#0071E3] bg-blue-50 hover:bg-blue-100/80 border border-blue-200/70 px-2.5 py-0.5 rounded-full transition cursor-pointer active:scale-95" title="朗讀此例句">
@@ -12367,7 +12488,7 @@
                                 <span>聽原句發音</span>
                             </button>
                         </div>
-                        <div class="text-sm sm:text-[15px] font-medium text-slate-800 leading-relaxed">${item.example}</div>
+                        <div class="grammar-example-text text-sm sm:text-[15px] font-medium text-slate-800 leading-relaxed">${item.example}</div>
                         ${exampleZhHtml}
                     </div>
                 </div>`;

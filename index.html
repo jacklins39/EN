@@ -47,6 +47,11 @@
         };
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        };
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
@@ -1530,6 +1535,58 @@
         }
         html.dark #dict-content .border-\[\#D4DEC4\] {
             border-color: rgba(255, 255, 255, 0.1) !important;
+        }
+
+        /* ==========================================================
+           18.5 白天模式 (Light Mode) 專屬保險覆蓋 - 確保白天模式下 100% 呈現極致純淨白底黑字
+           ========================================================== */
+        html:not(.dark) #dict-modal > div,
+        html:not(.dark) #word-detail-modal > div,
+        html:not(.dark) #listening-sandbox-modal > div,
+        html:not(.dark) #custom-word-modal > div {
+            background-color: #FFFFFF !important;
+            border: 1px solid #E2E8F0 !important;
+            color: #0F172A !important;
+            box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.15) !important;
+        }
+        html:not(.dark) #dict-modal .custom-row {
+            border-bottom-color: #F1F5F9 !important;
+        }
+        html:not(.dark) #dict-modal .custom-row input {
+            background-color: #FFFFFF !important;
+            border: 1px solid #CBD5E1 !important;
+            color: #0F172A !important;
+        }
+        html:not(.dark) #dict-modal .custom-row input:focus {
+            border-color: #0071E3 !important;
+            box-shadow: 0 0 0 2px rgba(0, 113, 227, 0.2) !important;
+        }
+        html:not(.dark) #dict-modal .custom-row input[data-f="pos"] {
+            background-color: #EFF6FF !important;
+            border-color: #BFDBFE !important;
+            color: #0071E3 !important;
+        }
+        html:not(.dark) #dict-modal .custom-row .btn-del-custom {
+            color: #EF4444 !important;
+            background-color: #FEF2F2 !important;
+            border: 1px solid #FECACA !important;
+        }
+        html:not(.dark) #dict-modal .custom-row .btn-del-custom:hover {
+            background-color: #FEE2E2 !important;
+            border-color: #FCA5A5 !important;
+        }
+        html:not(.dark) #btn-copy-custom-list {
+            background-color: #F8FAFC !important;
+            border-color: #CBD5E1 !important;
+            color: #334155 !important;
+        }
+        html:not(.dark) #btn-copy-custom-list:hover {
+            background-color: #F1F5F9 !important;
+            border-color: #0071E3 !important;
+            color: #0071E3 !important;
+        }
+        html:not(.dark) #dict-content .border-\[\#D4DEC4\] {
+            border-color: #E2E8F0 !important;
         }
 
         /* 19. 自動輪播按鈕 */
@@ -3296,6 +3353,12 @@
                 const analysisView = document.getElementById('view-analysis');
                 if (analysisView && !analysisView.classList.contains('hidden')) {
                     try { renderStatsChart(); } catch (e) {}
+                }
+            }
+            const dictModal = document.getElementById('dict-modal');
+            if (dictModal && !dictModal.classList.contains('hidden')) {
+                if (typeof renderCustomManager === 'function') {
+                    renderCustomManager();
                 }
             }
         }

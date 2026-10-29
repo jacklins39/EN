@@ -3399,6 +3399,7 @@
         let isShowingAnswer = false;
         let isMistakeMode = false;
         let isQuizMode = false;
+        let isManualCardMode = false;
         let sessionTitle = "一般課程";
         let totalCardsInSession = 0;
         let cardsCompleted = 0;
@@ -4485,7 +4486,7 @@
             const elNew = document.getElementById('lobby-stat-new');
             const elStatus = document.getElementById('lobby-stat-status');
             const elDailyBadge = document.getElementById('lobby-daily-badge');
-            const elDailyBtn = document.getElementById('lobby-btn-start-daily');
+            const elDailyBtn = document.getElementById('lobby-btn-start-daily') || document.getElementById('btn-start-session');
 
             const elReviewLabel = document.getElementById('lobby-stat-review-label');
             if (elReviewLabel) elReviewLabel.innerText = plan.completed ? '今日已學' : '待複習';
@@ -4570,6 +4571,8 @@
                 return;
             }
             isAutoFlashcardMode = true;
+            isMistakeMode = false;
+            isManualCardMode = false;
             autoFlashcardSpeed = 4000;
             sessionQueue = [...words];
             mistakeQueue = [];
@@ -4605,6 +4608,7 @@
             resetSessionStats(selected);
             isMistakeMode = false;
             isAutoFlashcardMode = false;
+            isManualCardMode = false;
             
             switchTab('view-study', document.getElementById('tab-btn-dashboard'));
             nextCard();
@@ -4704,6 +4708,8 @@
                     
                     // 設定參數進入「自動翻卡模式」
                     isAutoFlashcardMode = true;
+                    isMistakeMode = false;
+                    isManualCardMode = false;
                     autoFlashcardSpeed = parseInt(speedSelect.value);
                     if (autoRateSelect) setSpeechRate(autoRateSelect.value);
                     sessionQueue = [...words];
@@ -4770,7 +4776,10 @@
 
             totalCardsInSession = sessionQueue.length;
             cardsCompleted = 0;
-            resetSessionStats(sessionQueue); isMistakeMode = false;
+            resetSessionStats(sessionQueue);
+            isMistakeMode = false;
+            isAutoFlashcardMode = false;
+            isManualCardMode = false;
 
             switchTab('view-study', document.getElementById('tab-btn-dashboard'));
             nextCard();
@@ -5488,7 +5497,7 @@
                 isQuizMode = false;
                 currentQuizType = 'card';
                 if (studyViewEl) studyViewEl.classList.add('auto-play-layout');
-            } else if (isManualCardMode) {
+            } else if (typeof isManualCardMode !== 'undefined' && isManualCardMode) {
                 isQuizMode = false;
                 currentQuizType = 'card';
                 if (studyViewEl) studyViewEl.classList.remove('auto-play-layout');
@@ -10733,7 +10742,7 @@
             }
             sessionTitle = WEAK_TITLE;
             sessionQueue = q; mistakeQueue = [];
-            isMistakeMode = false; isAutoFlashcardMode = false;
+            isMistakeMode = false; isAutoFlashcardMode = false; isManualCardMode = false;
             totalCardsInSession = q.length; cardsCompleted = 0; resetSessionStats(q);
             switchTab('view-study', document.getElementById('tab-btn-dashboard'));
             nextCard();
@@ -10775,6 +10784,7 @@
             resetSessionStats(q);
             isMistakeMode = false;
             isAutoFlashcardMode = false;
+            isManualCardMode = false;
             const daysLabel = daysRange === 7 ? '本週' : daysRange === 30 ? '本月' : '全部';
             sessionTitle = `${daysLabel}錯題特訓 (${q.length} 字)`;
 
@@ -10869,6 +10879,7 @@
                 resetSessionStats(selected);
                 isMistakeMode = false;
                 isAutoFlashcardMode = false;
+                isManualCardMode = false;
                 switchTab('view-study', document.getElementById('tab-btn-dashboard'));
                 nextCard();
             }, '🚀 開始隨機快測');

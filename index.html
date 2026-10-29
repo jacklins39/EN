@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261029V55';
+        const APP_BUILD_VERSION = '20261029V56';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -1868,11 +1868,18 @@
 
                 <!-- SRS 記憶階層分佈 (Memory Retention Distribution) -->
                 <div id="analysis-srs-distribution-card" class="mb-5 bg-[#FBFBFD] border border-slate-200/80 rounded-2xl p-4 sm:p-5 shadow-2xs">
-                    <div class="flex items-center justify-between mb-3">
-                        <h3 class="text-sm sm:text-base font-bold text-slate-800 flex items-center gap-2">
-                            <span>🧠</span> SRS 記憶階層分佈
-                        </h3>
-                        <span class="text-xs text-slate-400 font-medium">艾賓浩斯間隔重複週期</span>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-3 gap-2">
+                        <div class="min-w-0">
+                            <h3 class="text-sm sm:text-base font-bold text-slate-800 flex items-center gap-2">
+                                <span>🧠</span> SRS 記憶階層分佈
+                            </h3>
+                            <p class="text-xs text-slate-400 font-medium mt-0.5">艾賓浩斯間隔重複週期 · 點擊任一階層直接特訓</p>
+                        </div>
+                        <button id="btn-srs-focus-bridge" type="button" class="group flex items-center justify-center gap-1.5 bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 hover:from-blue-500 hover:to-violet-500 text-white text-xs font-bold px-3 py-1.5 rounded-xl shadow-xs hover:shadow-md active:scale-95 transition-all cursor-pointer shrink-0" title="集中特訓 LV1~LV4 記憶過渡期全部單字">
+                            <span>🔥</span>
+                            <span>LV1~LV4 火力集中特訓</span>
+                            <span id="srs-focus-count-badge" class="bg-white/20 text-white text-[10px] px-1.5 py-0.5 rounded-md font-mono">0 字</span>
+                        </button>
                     </div>
                     <div id="analysis-srs-grid" class="grid grid-cols-3 sm:grid-cols-6 gap-2 sm:gap-3">
                     </div>
@@ -2631,6 +2638,16 @@
         </div>
 
         <!-- 字典查詢與單字預覽彈出視窗 -->
+        <!-- SRS 階層特訓操作彈窗 (4選項測驗 / 翻牌自測 / 單字預覽) -->
+        <div id="srs-action-modal" class="fixed inset-0 bg-gray-900/60 z-[65] hidden flex items-center justify-center p-3 sm:p-4 backdrop-blur-sm">
+            <div class="bg-white dark:bg-[#151D2A] rounded-3xl shadow-2xl p-5 sm:p-6 max-w-md w-full relative dict-modal-anim flex flex-col border border-gray-100 dark:border-slate-800">
+                <button id="btn-close-srs-action" type="button" class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 hover:bg-gray-200/70 bg-gray-100 dark:bg-slate-800 dark:text-slate-400 dark:hover:text-white rounded-full p-1.5 transition-colors z-10 cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                </button>
+                <div id="srs-action-content" class="mt-1 flex flex-col gap-3"></div>
+            </div>
+        </div>
+
         <div id="dict-modal" class="fixed inset-0 bg-gray-900/55 z-50 hidden flex items-center justify-center p-3 sm:p-4 backdrop-blur-sm">
             <div class="bg-white rounded-3xl shadow-2xl p-5 sm:p-6 max-w-md sm:max-w-lg w-full relative dict-modal-anim max-h-[88vh] flex flex-col border border-gray-100">
                 <button id="btn-close-dict" class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 hover:bg-gray-200/70 bg-gray-100 rounded-full p-1.5 transition-colors z-10">
@@ -5272,6 +5289,10 @@
                 isQuizMode = false;
                 currentQuizType = 'card';
                 if (studyViewEl) studyViewEl.classList.add('auto-play-layout');
+            } else if (isManualCardMode) {
+                isQuizMode = false;
+                currentQuizType = 'card';
+                if (studyViewEl) studyViewEl.classList.remove('auto-play-layout');
             } else {
                 isQuizMode = true;
                 currentQuizType = prefMode;
@@ -5284,6 +5305,7 @@
                 setupQuizMode();
             } else {
                 if (studyViewEl) studyViewEl.classList.remove('quiz-options-active');
+                quizOptions.classList.add('hidden');
                 if (!isAutoFlashcardMode) {
                     actionShowAnswer.classList.remove('hidden');
                 }
@@ -9461,6 +9483,182 @@
             }
         }
 
+        // 取得指定 SRS 階層的單字清單 (支援單一 level 或陣列如 [1,2,3,4])
+        function getWordsBySrsLevels(levels, scopeWords = null) {
+            const pool = scopeWords || (currentAnalysisScope === 'all' ? vocabularyDB : getUnitWords(currentAnalysisScope));
+            const lvlArray = Array.isArray(levels) ? levels : [levels];
+            const lvlSet = new Set(lvlArray);
+            return pool.filter(w => {
+                const p = userProgress[w.id];
+                const lvl = (p && typeof p.level === 'number' && p.level >= 1) ? Math.min(p.level, 5) : 0;
+                return lvlSet.has(lvl);
+            });
+        }
+
+        // 開啟 SRS 階層特訓操作選單 (4選項測驗 / 翻牌自測 / 單字預覽)
+        function openSrsLevelActionModal(levels, tag, name) {
+            const words = getWordsBySrsLevels(levels);
+            const count = words.length;
+            if (count === 0) {
+                showQuickToast(`${tag} (${name}) 目前沒有單字！`);
+                return;
+            }
+
+            const isMultiLevel = Array.isArray(levels) && levels.length > 1;
+            const modalEl = document.getElementById('srs-action-modal');
+            const contentEl = document.getElementById('srs-action-content');
+            if (!modalEl || !contentEl) return;
+
+            const title = isMultiLevel ? `🔥 ${tag} ${name}` : `🎯 ${tag} · ${name}`;
+            const subtitle = isMultiLevel 
+                ? '艾賓浩斯短期轉長期記憶的「黃金抗遺忘攻堅期」' 
+                : `艾賓浩斯記憶週期第 ${levels} 階層`;
+
+            contentEl.innerHTML = `
+                <div class="border-b border-gray-100 dark:border-slate-800 pb-3">
+                    <div class="flex items-center gap-2 mb-1 flex-wrap">
+                        <span class="text-xs font-bold px-2 py-0.5 rounded-md bg-blue-50 text-[#0071E3] dark:bg-blue-900/40 dark:text-blue-300 font-mono">${tag}</span>
+                        <h3 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white tracking-tight">${isMultiLevel ? name : name + ' 特訓'}</h3>
+                        <span class="ml-auto text-xs font-bold text-[#0071E3] bg-blue-50 dark:bg-blue-900/30 px-2 py-0.5 rounded-full font-mono">共 ${count} 字</span>
+                    </div>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">${subtitle}</p>
+                </div>
+
+                <div class="bg-blue-50/60 dark:bg-slate-800/60 p-2.5 rounded-xl border border-blue-100/60 dark:border-slate-700/60 text-[11px] text-slate-600 dark:text-slate-300 leading-relaxed flex items-start gap-1.5">
+                    <span class="text-blue-500 shrink-0 mt-0.5">💡</span>
+                    <span><strong>補教大師心法：</strong>${isMultiLevel ? 'LV1~LV4 是單字滑落率最高的區域。建議以「4 選項測驗」製造實戰高壓，或以「翻牌自測」落實 Active Recall 主動召回！' : '針對單一記憶階層精準施壓，及時在遺忘臨界點前強化神經突觸連接。'}</span>
+                </div>
+
+                <div class="flex flex-col gap-2 mt-1">
+                    <!-- 1. 4 個選項測驗 -->
+                    <button id="btn-srs-start-quiz" type="button" class="group bg-gradient-to-r from-[#0071E3] to-[#005BB5] hover:from-[#0077ED] hover:to-[#0062C4] text-white p-3 rounded-2xl text-left cursor-pointer transition-all active:scale-[0.98] shadow-sm flex items-center justify-between">
+                        <div class="min-w-0 pr-2">
+                            <div class="font-bold text-sm flex items-center gap-1.5">
+                                <span>🎯</span>
+                                <span>4 個選項測驗</span>
+                                <span class="text-[10px] bg-white/20 px-1.5 py-0.5 rounded font-normal">首選推薦</span>
+                            </div>
+                            <div class="text-[11px] text-blue-100 mt-0.5 truncate">隨機 4 選 1 · 模擬考場高壓辨析混淆選項</div>
+                        </div>
+                        <span class="text-xs font-bold text-blue-100 group-hover:translate-x-0.5 transition-transform shrink-0">開始 ➔</span>
+                    </button>
+
+                    <!-- 2. 手動翻牌自測 -->
+                    <button id="btn-srs-start-card" type="button" class="group bg-gradient-to-r from-amber-500/10 to-orange-500/10 hover:bg-amber-500/20 border border-amber-300/80 dark:border-amber-500/40 p-3 rounded-2xl text-left cursor-pointer transition-all active:scale-[0.98] flex items-center justify-between">
+                        <div class="min-w-0 pr-2">
+                            <div class="font-bold text-sm text-amber-900 dark:text-amber-200 flex items-center gap-1.5">
+                                <span>🎴</span>
+                                <span>翻牌自測 (主動召回)</span>
+                            </div>
+                            <div class="text-[11px] text-amber-700/80 dark:text-amber-300/80 mt-0.5 truncate">看英/發音在腦中回憶中文 · 翻面驗證自我評分</div>
+                        </div>
+                        <span class="text-xs font-bold text-amber-700 dark:text-amber-300 group-hover:translate-x-0.5 transition-transform shrink-0">開始 ➔</span>
+                    </button>
+
+                    <!-- 3. 單字清單預覽 -->
+                    <button id="btn-srs-start-preview" type="button" class="group bg-slate-50 hover:bg-blue-50/50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 p-3 rounded-2xl text-left cursor-pointer transition-all active:scale-[0.98] flex items-center justify-between">
+                        <div class="min-w-0 pr-2">
+                            <div class="font-bold text-sm text-slate-800 dark:text-slate-100 flex items-center gap-1.5">
+                                <span>👁️</span>
+                                <span>單字清單預覽</span>
+                            </div>
+                            <div class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 truncate">瀏覽全部 ${count} 字 · 音標例句詳解與自動輪播發音</div>
+                        </div>
+                        <span class="text-xs font-bold text-slate-600 dark:text-slate-300 group-hover:translate-x-0.5 transition-transform shrink-0">預覽 ➔</span>
+                    </button>
+                </div>
+            `;
+
+            modalEl.classList.remove('hidden');
+
+            document.getElementById('btn-srs-start-quiz')?.addEventListener('click', () => {
+                modalEl.classList.add('hidden');
+                startSrsQuizSession(words, title);
+            }, { once: true });
+
+            document.getElementById('btn-srs-start-card')?.addEventListener('click', () => {
+                modalEl.classList.add('hidden');
+                startSrsCardSession(words, title);
+            }, { once: true });
+
+            document.getElementById('btn-srs-start-preview')?.addEventListener('click', () => {
+                modalEl.classList.add('hidden');
+                previewSrsLevelWords(words, title);
+            }, { once: true });
+
+            document.getElementById('btn-close-srs-action')?.addEventListener('click', () => {
+                modalEl.classList.add('hidden');
+            }, { once: true });
+
+            modalEl.onclick = (e) => {
+                if (e.target === modalEl) modalEl.classList.add('hidden');
+            };
+        }
+
+        // 啟動 SRS 4 選項測驗
+        function startSrsQuizSession(words, title) {
+            if (!words || !words.length) {
+                showQuickToast('此階層目前沒有單字！');
+                return;
+            }
+            unlockMobileAudio();
+            const q = [...words];
+            for (let i = q.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [q[i], q[j]] = [q[j], q[i]];
+            }
+            sessionQueue = q;
+            mistakeQueue = [];
+            totalCardsInSession = q.length;
+            cardsCompleted = 0;
+            resetSessionStats(q);
+            isMistakeMode = false;
+            isAutoFlashcardMode = false;
+            isManualCardMode = false;
+            sessionTitle = `${title} (4選1測驗 · ${q.length}字)`;
+            switchTab('view-study', document.getElementById('tab-btn-dashboard'));
+            nextCard();
+        }
+
+        // 啟動 SRS 手動翻牌自測
+        function startSrsCardSession(words, title) {
+            if (!words || !words.length) {
+                showQuickToast('此階層目前沒有單字！');
+                return;
+            }
+            unlockMobileAudio();
+            const q = [...words];
+            for (let i = q.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [q[i], q[j]] = [q[j], q[i]];
+            }
+            sessionQueue = q;
+            mistakeQueue = [];
+            totalCardsInSession = q.length;
+            cardsCompleted = 0;
+            resetSessionStats(q);
+            isMistakeMode = false;
+            isAutoFlashcardMode = false;
+            isManualCardMode = true;
+            sessionTitle = `${title} (翻牌自測 · ${q.length}字)`;
+            switchTab('view-study', document.getElementById('tab-btn-dashboard'));
+            nextCard();
+        }
+
+        // 啟動 SRS 單字預覽
+        function previewSrsLevelWords(words, title) {
+            if (!words || !words.length) {
+                showQuickToast('此階層目前沒有單字！');
+                return;
+            }
+            renderPreviewModal(
+                words, 
+                `📋 ${title} 單字預覽`, 
+                () => startSrsQuizSession(words, title), 
+                '🎯 開始 4 選項測驗'
+            );
+        }
+
         // 渲染 SRS 記憶階層分佈 (LV0 ~ LV5)
         function renderSrsDistribution(targetWords) {
             const gridEl = document.getElementById('analysis-srs-grid');
@@ -9475,6 +9673,19 @@
                 counts[lvl]++;
             }
 
+            // 更新 LV1~LV4 火力集中總數徽章
+            const bridgeCount = counts[1] + counts[2] + counts[3] + counts[4];
+            const badgeEl = document.getElementById('srs-focus-count-badge');
+            if (badgeEl) badgeEl.innerText = `${bridgeCount.toLocaleString()} 字`;
+
+            // 綁定頂部 LV1~LV4 攻堅按鈕
+            const btnFocus = document.getElementById('btn-srs-focus-bridge');
+            if (btnFocus) {
+                btnFocus.onclick = () => {
+                    openSrsLevelActionModal([1, 2, 3, 4], 'LV1~LV4', '記憶黃金戰場');
+                };
+            }
+
             const tiers = [
                 { lvl: 0, name: '未學習', tag: 'LV0', color: 'text-slate-500 bg-slate-100 border-slate-200' },
                 { lvl: 1, name: '初學期', tag: 'LV1', color: 'text-blue-600 bg-blue-50 border-blue-200' },
@@ -9487,11 +9698,18 @@
             gridEl.innerHTML = tiers.map(t => {
                 const cnt = counts[t.lvl];
                 const pct = Math.round((cnt / total) * 100);
+                const hasWords = cnt > 0;
                 return `
-                    <div class="bg-white p-3 sm:p-3.5 rounded-2xl border border-slate-200/80 hover:border-slate-300 hover:shadow-xs transition-all text-center flex flex-col items-center justify-between shadow-2xs">
-                        <span class="text-[11px] font-bold px-2 py-0.5 rounded-md border ${t.color} mb-1.5">${t.tag}</span>
-                        <div class="text-base sm:text-xl font-black text-slate-800 font-mono tracking-tight my-0.5">${cnt.toLocaleString()}</div>
-                        <div class="text-[11px] text-slate-500 font-medium mt-0.5 whitespace-nowrap">${pct}% · ${t.name}</div>
+                    <div role="button" 
+                         onclick="openSrsLevelActionModal(${t.lvl}, '${t.tag}', '${t.name}')" 
+                         class="group bg-white dark:bg-[#1A2333] p-3 sm:p-3.5 rounded-2xl border border-slate-200/80 dark:border-slate-800 hover:border-blue-400 hover:shadow-md active:scale-95 transition-all text-center flex flex-col items-center justify-between shadow-2xs ${hasWords ? 'cursor-pointer hover:bg-blue-50/20' : 'opacity-60 cursor-not-allowed'}" 
+                         title="${hasWords ? `點擊直接特訓 ${t.tag} (${t.name})` : '該階層暫無單字'}">
+                        <div class="flex items-center justify-between w-full mb-1">
+                            <span class="text-[11px] font-bold px-2 py-0.5 rounded-md border ${t.color}">${t.tag}</span>
+                            <span class="text-[10px] text-[#0071E3] font-semibold opacity-0 group-hover:opacity-100 transition-opacity">特訓 ➔</span>
+                        </div>
+                        <div class="text-base sm:text-xl font-black text-slate-800 dark:text-white font-mono tracking-tight my-0.5 group-hover:text-[#0071E3] transition-colors">${cnt.toLocaleString()}</div>
+                        <div class="text-[11px] text-slate-500 dark:text-slate-400 font-medium mt-0.5 whitespace-nowrap">${pct}% · ${t.name}</div>
                     </div>
                 `;
             }).join('');

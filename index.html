@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261029V56';
+        const APP_BUILD_VERSION = '20261029V57';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -50,19 +50,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261029V56"></script>
-    <script src="toeic_data.js?v=20261029V56"></script>
-    <script src="jh_data.js?v=20261029V56"></script>
-    <script src="listening_data.js?v=20261029V56"></script>
-    <script src="listening_words_data.js?v=20261029V56"></script>
-    <script src="uk_phonetics_manifest.js?v=20261029V56"></script>
-    <script src="words_audio_manifest.js?v=20261029V56"></script>
-    <script src="examples_audio_manifest.js?v=20261029V56"></script>
-    <script src="zh_audio_manifest.js?v=20261029V56"></script>
-    <script src="collocations_audio_manifest.js?v=20261029V56"></script>
-    <script src="syn_ant_data.js?v=20261029V56"></script>
-    <script src="synonyms_unit8_data.js?v=20261029V56"></script>
-    <script src="examples_unit9_data.js?v=20261029V56"></script>
+    <script src="words_data.js?v=20261029V57"></script>
+    <script src="toeic_data.js?v=20261029V57"></script>
+    <script src="jh_data.js?v=20261029V57"></script>
+    <script src="listening_data.js?v=20261029V57"></script>
+    <script src="listening_words_data.js?v=20261029V57"></script>
+    <script src="uk_phonetics_manifest.js?v=20261029V57"></script>
+    <script src="words_audio_manifest.js?v=20261029V57"></script>
+    <script src="examples_audio_manifest.js?v=20261029V57"></script>
+    <script src="zh_audio_manifest.js?v=20261029V57"></script>
+    <script src="collocations_audio_manifest.js?v=20261029V57"></script>
+    <script src="syn_ant_data.js?v=20261029V57"></script>
+    <script src="synonyms_unit8_data.js?v=20261029V57"></script>
+    <script src="examples_unit9_data.js?v=20261029V57"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -900,74 +900,167 @@
         }
 
         /* ==========================================================
-           4.5 聽力短文單字沙盒 (徹底終結白板卡片與模式破版)
+           4.5 聽力短文單字沙盒 (頂級暗黑美學與高對比終極調校)
            ========================================================== */
         html.dark .sandbox-card-front,
         html.dark .sandbox-card-back {
             background: #151F31 !important;
-            border: 1px solid rgba(255, 255, 255, 0.12) !important;
+            border: 1px solid rgba(255, 255, 255, 0.14) !important;
             box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.6) !important;
             color: #F8FAFC !important;
         }
+        /* 卡片正面與背面主英文單字：高對比純白 */
         html.dark .sandbox-card-front h3,
-        html.dark .sandbox-card-back h3 {
+        html.dark .sandbox-card-front .text-slate-900,
+        html.dark .sandbox-card-back h3,
+        html.dark .sandbox-card-back .text-slate-900 {
+            color: #FFFFFF !important;
+        }
+        /* 中文簡明釋義標籤：高亮粉紫，徹底告別暗黑隱形字 */
+        html.dark .sandbox-card-back .text-purple-900,
+        html.dark .sandbox-card-back [class*="text-purple-900"],
+        html.dark [class*="text-purple-900"] {
+            color: #E9D5FF !important;
+        }
+        /* 中文簡明釋義外框區塊 */
+        html.dark .sandbox-card-back [class*="bg-purple-50"] {
+            background-color: rgba(168, 85, 247, 0.16) !important;
+            border-color: rgba(192, 132, 252, 0.35) !important;
+        }
+        /* 短文情境原句灰色外框區塊 */
+        html.dark .sandbox-card-back [class*="bg-slate-50"] {
+            background-color: rgba(15, 23, 42, 0.65) !important;
+            border-color: rgba(255, 255, 255, 0.1) !important;
+        }
+        /* 短文情境原句標題與角色膠囊 */
+        html.dark .sandbox-card-back [class*="text-slate-500"] {
+            color: #94A3B8 !important;
+        }
+        html.dark .sandbox-card-back [class*="text-purple-700"],
+        html.dark .sandbox-card-front [class*="text-purple-700"] {
+            color: #D8B4FE !important;
+        }
+        /* 短文情境英文原句本文：亮麗白色 */
+        html.dark .sandbox-card-back [class*="text-slate-800"],
+        html.dark .sandbox-card-back p.text-slate-900,
+        html.dark .sandbox-card-back p.text-slate-800 {
             color: #F8FAFC !important;
         }
-        html.dark .sandbox-card-front [class*="text-purple-700"],
-        html.dark .sandbox-card-back [class*="text-purple-700"] {
-            color: #C084FC !important;
+        /* 短文情境中文翻譯本文與分隔線 */
+        html.dark .sandbox-card-back p[class*="text-slate-500"],
+        html.dark .sandbox-card-back p[class*="border-t"] {
+            color: #CBD5E1 !important;
+            border-top-color: rgba(255, 255, 255, 0.1) !important;
         }
-        html.dark .sandbox-card-front [class*="bg-purple-50"],
-        html.dark .sandbox-card-back [class*="bg-purple-50"] {
-            background-color: rgba(168, 85, 247, 0.15) !important;
-            border-color: rgba(168, 85, 247, 0.3) !important;
-        }
+        /* 翻卡提示文字與輔助次要文字 */
         html.dark .sandbox-card-front [class*="text-slate-400"],
         html.dark .sandbox-card-back [class*="text-slate-400"] {
             color: #94A3B8 !important;
         }
-        html.dark .sandbox-card-front [class*="text-slate-800"],
-        html.dark .sandbox-card-back [class*="text-slate-800"] {
-            color: #E2E8F0 !important;
+        /* 發音喇叭小圖示 */
+        html.dark .sandbox-card-front [class*="text-purple-600"],
+        html.dark .sandbox-card-back [class*="text-purple-600"] {
+            color: #C084FC !important;
         }
-        /* 沙盒模式切換工具列與範圍按鈕 */
+        html.dark .sandbox-card-front [class*="text-purple-600"]:hover,
+        html.dark .sandbox-card-back [class*="text-purple-600"]:hover {
+            color: #FFFFFF !important;
+            background-color: rgba(168, 85, 247, 0.25) !important;
+        }
+
+        /* 沙盒狀態列、切換列與範圍按鈕 */
         html.dark #sandbox-status-toolbar {
             background-color: #162033 !important;
-            border-color: rgba(255, 255, 255, 0.08) !important;
+            border-color: rgba(255, 255, 255, 0.1) !important;
             color: #F8FAFC !important;
         }
         html.dark #sandbox-scope-btn-all,
         html.dark #sandbox-scope-btn-annotated,
         html.dark #sandbox-scope-btn-core {
-            color: #C084FC !important;
+            color: #CBD5E1 !important;
         }
         html.dark #sandbox-scope-btn-all.bg-white,
         html.dark #sandbox-scope-btn-annotated.bg-white,
         html.dark #sandbox-scope-btn-core.bg-white {
             background-color: #8936FF !important;
             color: #FFFFFF !important;
-            box-shadow: 0 2px 8px rgba(137, 54, 255, 0.4) !important;
+            box-shadow: 0 2px 10px rgba(137, 54, 255, 0.45) !important;
+        }
+        /* 5 大模式標籤列 */
+        html.dark #listening-sandbox-modal [class*="bg-purple-50\/70"] {
+            background-color: #121927 !important;
+            border-color: rgba(255, 255, 255, 0.1) !important;
         }
         html.dark [id^="sandbox-mode-btn-"] {
-            color: #C084FC !important;
+            color: #D8B4FE !important;
         }
         html.dark [id^="sandbox-mode-btn-"].bg-purple-600 {
             background-color: #8936FF !important;
             color: #FFFFFF !important;
+            box-shadow: 0 2px 10px rgba(137, 54, 255, 0.45) !important;
         }
         html.dark [id^="sandbox-mode-btn-"]:hover:not(.bg-purple-600) {
-            background-color: rgba(168, 85, 247, 0.18) !important;
+            background-color: rgba(168, 85, 247, 0.2) !important;
+            color: #FFFFFF !important;
         }
-        /* 沙盒 4 選 1 與題目選項按鈕 */
-        html.dark #sandbox-card-container button[onclick*="chooseListeningSandboxOption"],
-        html.dark #sandbox-card-container [class*="sandbox-option-btn"] {
-            background-color: #172235 !important;
-            border: 1px solid rgba(255, 255, 255, 0.1) !important;
-            color: #F8FAFC !important;
+
+        /* 底部導航按鈕 (上一題 / 翻卡 / 下一題) */
+        html.dark #btn-sandbox-prev {
+            background-color: #1E293B !important;
+            border-color: rgba(255, 255, 255, 0.12) !important;
+            color: #E2E8F0 !important;
         }
-        html.dark #sandbox-card-container button[onclick*="chooseListeningSandboxOption"]:hover {
-            background-color: #202E46 !important;
-            border-color: rgba(56, 139, 253, 0.4) !important;
+        html.dark #btn-sandbox-prev:hover:not(:disabled) {
+            background-color: #2C3B52 !important;
+            color: #FFFFFF !important;
+        }
+        html.dark #btn-sandbox-flip {
+            background-color: #8936FF !important;
+            border-color: transparent !important;
+            color: #FFFFFF !important;
+        }
+        html.dark #btn-sandbox-flip:hover {
+            background-color: #9B51FF !important;
+        }
+        html.dark #btn-sandbox-next {
+            background-color: #8936FF !important;
+            color: #FFFFFF !important;
+        }
+        html.dark #btn-sandbox-next:hover:not(:disabled) {
+            background-color: #9B51FF !important;
+        }
+
+        /* 測驗 4 選 1 題目與選項按鈕 */
+        html.dark #sandbox-card-container button {
+            background-color: #162033;
+            border-color: rgba(255, 255, 255, 0.12);
+            color: #F8FAFC;
+        }
+        html.dark #sandbox-card-container button:hover:not(:disabled) {
+            background-color: #1E2D47;
+            border-color: rgba(168, 85, 247, 0.5);
+            color: #FFFFFF;
+        }
+        html.dark #sandbox-card-container [class*="bg-emerald-50"] {
+            background-color: rgba(16, 185, 129, 0.18) !important;
+            border-color: #10B981 !important;
+            color: #A7F3D0 !important;
+        }
+        html.dark #sandbox-card-container [class*="bg-emerald-50"] * {
+            color: #ECFDF5 !important;
+        }
+        html.dark #sandbox-card-container [class*="bg-rose-50"] {
+            background-color: rgba(244, 63, 94, 0.18) !important;
+            border-color: #F43F5E !important;
+            color: #FECDD3 !important;
+        }
+        html.dark #sandbox-card-container [class*="bg-rose-50"] * {
+            color: #FFF1F2 !important;
+        }
+        html.dark #sandbox-card-container [class*="bg-slate-50"] {
+            background-color: rgba(15, 23, 42, 0.45) !important;
+            border-color: rgba(255, 255, 255, 0.06) !important;
+            color: #64748B !important;
         }
         /* 沙盒結算畫面 */
         html.dark #sandbox-card-container > div[class*="from-purple-50"] {
@@ -2691,9 +2784,9 @@
             </div>
         </div>
 
-        <div id="dict-modal" class="fixed inset-0 bg-gray-900/55 z-50 hidden flex items-center justify-center p-3 sm:p-4 backdrop-blur-sm">
-            <div class="bg-white rounded-3xl shadow-2xl p-5 sm:p-6 max-w-md sm:max-w-lg w-full relative dict-modal-anim max-h-[88vh] flex flex-col border border-gray-100">
-                <button id="btn-close-dict" class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 hover:bg-gray-200/70 bg-gray-100 rounded-full p-1.5 transition-colors z-10">
+        <div id="dict-modal" class="fixed inset-0 bg-gray-900/60 z-50 hidden flex items-center justify-center p-3 sm:p-4 backdrop-blur-md">
+            <div class="bg-white dark:bg-[#121927] rounded-3xl shadow-2xl p-5 sm:p-6 max-w-md sm:max-w-lg w-full relative dict-modal-anim max-h-[88vh] flex flex-col border border-gray-100 dark:border-white/12 text-left">
+                <button id="btn-close-dict" class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 hover:bg-gray-200/70 bg-gray-100 dark:bg-slate-800 dark:text-slate-400 dark:hover:text-white rounded-full p-1.5 transition-colors z-10 cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
                 </button>
                 <div id="dict-content" class="mt-1 min-h-0 flex-1 flex flex-col justify-start overflow-hidden"></div>
@@ -2774,14 +2867,14 @@
                 </div>
 
                 <!-- 底部導航與控制列 -->
-                <div id="sandbox-bottom-controls" class="flex items-center justify-between gap-2 pt-2.5 border-t border-gray-100 mt-2 shrink-0">
-                    <button id="btn-sandbox-prev" onclick="prevListeningSandboxCard()" class="px-3 py-2 rounded-xl text-xs font-semibold text-slate-600 bg-slate-100 hover:bg-slate-200 transition disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer flex items-center gap-1">
+                <div id="sandbox-bottom-controls" class="flex items-center justify-between gap-2.5 pt-3 border-t border-gray-100 dark:border-white/10 mt-2 shrink-0">
+                    <button id="btn-sandbox-prev" onclick="prevListeningSandboxCard()" class="px-4 py-2.5 rounded-xl text-xs font-bold text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-[#1E293B] hover:bg-slate-200 dark:hover:bg-[#2C3B52] border border-slate-200 dark:border-white/12 transition disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer flex items-center gap-1.5 shadow-2xs">
                         <span>◀</span> <span>上一題</span>
                     </button>
-                    <button id="btn-sandbox-flip" onclick="toggleListeningSandboxFlip()" class="flex-1 py-2 rounded-xl text-xs font-semibold text-purple-700 bg-purple-50 hover:bg-purple-100 border border-purple-200 transition cursor-pointer flex items-center justify-center gap-1 shadow-2xs">
+                    <button id="btn-sandbox-flip" onclick="toggleListeningSandboxFlip()" class="flex-1 py-2.5 rounded-xl text-xs font-bold text-purple-700 dark:text-white bg-purple-50 dark:bg-[#8936FF] hover:bg-purple-100 dark:hover:bg-[#9B51FF] border border-purple-200 dark:border-transparent transition cursor-pointer flex items-center justify-center gap-1.5 shadow-sm">
                         <span>🔄</span> <span id="sandbox-flip-btn-text">翻轉卡片</span>
                     </button>
-                    <button id="btn-sandbox-next" onclick="nextListeningSandboxCard()" class="px-3 py-2 rounded-xl text-xs font-semibold text-white bg-purple-600 hover:bg-purple-700 transition cursor-pointer flex items-center gap-1 shadow-xs">
+                    <button id="btn-sandbox-next" onclick="nextListeningSandboxCard()" class="px-4 py-2.5 rounded-xl text-xs font-bold text-white bg-purple-600 hover:bg-purple-700 dark:bg-[#8936FF] dark:hover:bg-[#9B51FF] transition cursor-pointer flex items-center gap-1.5 shadow-sm">
                         <span id="sandbox-next-btn-text">下一題</span> <span>▶</span>
                     </button>
                 </div>
@@ -10192,25 +10285,36 @@
 
         function renderCustomManager() {
             const content = document.getElementById('dict-content');
-            const inp = 'border border-gray-200 dark:border-white/10 rounded-lg px-2.5 py-1.5 text-sm outline-none focus:ring-2 focus:ring-[#0071E3] min-w-0 bg-white dark:bg-[#162033] text-gray-900 dark:text-[#F8FAFC] transition-all';
+            const inp = 'border border-gray-200 dark:border-white/12 rounded-lg px-2.5 py-1.5 text-sm outline-none focus:ring-2 focus:ring-[#0071E3] dark:focus:ring-[#388BFD] min-w-0 bg-white dark:bg-[#162033] text-gray-900 dark:text-white transition-all';
             const rows = customWordsDB.map(w => {
                 const parsed = splitPosAndZh(w.zh, w.pos);
                 return `
-                <div class="custom-row flex items-center gap-1.5 py-2 border-b border-gray-100 dark:border-white/5 last:border-0" data-id="${esc(String(w.id))}">
-                    <input type="text" data-f="en" maxlength="40" value="${esc(w.en)}" class="${inp} w-[36%] shrink-0 font-medium" placeholder="英文單字">
-                    <input type="text" data-f="pos" maxlength="15" value="${esc(parsed.pos || '')}" placeholder="詞性" class="${inp} w-[16%] shrink-0 text-xs font-mono text-[#0071E3] dark:text-[#58A6FF] bg-blue-50/50 dark:bg-blue-900/20" title="詞性 (例: n. 或 v. 或 adj.)">
+                <div class="custom-row flex items-center gap-2 py-2 border-b border-gray-100 dark:border-white/8 last:border-0" data-id="${esc(String(w.id))}">
+                    <input type="text" data-f="en" maxlength="40" value="${esc(w.en)}" class="${inp} w-[36%] shrink-0 font-bold" placeholder="英文單字">
+                    <input type="text" data-f="pos" maxlength="15" value="${esc(parsed.pos || '')}" placeholder="詞性" class="${inp} w-[16%] shrink-0 text-xs font-mono font-bold text-center text-[#0071E3] dark:text-[#58A6FF] bg-blue-50/60 dark:bg-blue-950/40 border-blue-200/80 dark:border-blue-500/40" title="詞性 (例: n. 或 v. 或 adj.)">
                     <input data-f="kk" type="hidden" value="${esc(w.kk || '')}">
-                    <input type="text" data-f="zh" maxlength="100" value="${esc(parsed.pureZh)}" placeholder="中文解釋 (不需加詞性)" class="${inp} flex-1">
-                    <button data-del="${esc(String(w.id))}" class="btn-del-custom text-[#FF3B30] hover:bg-red-50 dark:hover:bg-red-900/30 border border-transparent hover:border-red-200 dark:hover:border-red-800/40 rounded-xl px-2 py-1 text-xs shrink-0 transition" title="刪除單字">🗑️</button>
+                    <input type="text" data-f="zh" maxlength="100" value="${esc(parsed.pureZh)}" placeholder="中文解釋 (不需加詞性)" class="${inp} flex-1 font-medium">
+                    <button data-del="${esc(String(w.id))}" class="btn-del-custom text-[#FF3B30] dark:text-rose-400 hover:bg-red-50 dark:hover:bg-rose-950/40 border border-transparent hover:border-red-200 dark:hover:border-rose-800/40 rounded-xl px-2 py-1 text-xs shrink-0 transition" title="刪除單字">🗑️</button>
                 </div>`;
             }).join('');
             content.innerHTML = `
-                <div class="flex justify-between items-center mb-3 border-b border-[#D4DEC4] dark:border-white/10 pb-2">
-                    <h3 class="text-xl font-semibold text-[#0071E3]">管理自訂字庫 (${customWordsDB.length})</h3>
-                    ${customWordsDB.length ? '<div class="flex gap-2 items-center flex-wrap"><button id="btn-copy-custom-list" class="bg-gray-100 hover:bg-gray-200 text-gray-700 text-xs font-medium px-2.5 py-1.5 rounded-xl border border-gray-300 transition-colors" title="一鍵複製單字清單，方便直接貼給 AI 批次移入高中 7000 單">📋 複製轉移清單</button><button id="btn-autofill-custom" class="bg-green-600 hover:bg-green-700 text-white text-xs font-medium px-3 py-1.5 rounded-xl shadow-sm transition-colors" title="自動查詢單字繁體中文與詞性並儲存">✨ 自動翻譯並儲存</button><button id="btn-save-custom-all" class="bg-[#0071E3] text-white text-xs font-medium px-3 py-1.5 rounded-xl">💾 全部儲存</button><button id="btn-del-custom-all" class="text-xs text-[#FF3B30] underline ml-1">全部刪除</button></div>' : ''}
+                <div class="mb-3 border-b border-[#D4DEC4] dark:border-white/10 pb-2.5">
+                    <div class="flex items-center justify-between gap-2 mb-2 pr-6">
+                        <h3 class="text-lg font-bold text-[#0071E3] dark:text-[#58A6FF] flex items-center gap-1.5 whitespace-nowrap">
+                            <span>📚 管理自訂字庫</span>
+                            <span class="text-xs px-2 py-0.5 rounded-full bg-blue-50 dark:bg-blue-900/40 text-[#0071E3] dark:text-[#58A6FF] border border-blue-200/60 dark:border-blue-500/30 font-mono font-bold">${customWordsDB.length}</span>
+                        </h3>
+                        ${customWordsDB.length ? '<button id="btn-del-custom-all" class="text-xs text-rose-500 dark:text-rose-400 hover:text-rose-600 dark:hover:text-rose-300 font-medium hover:underline cursor-pointer">全部刪除</button>' : ''}
+                    </div>
+                    ${customWordsDB.length ? `
+                    <div class="flex gap-2 items-center">
+                        <button id="btn-copy-custom-list" class="flex-1 text-center bg-slate-100 dark:bg-[#1A2639] hover:bg-slate-200 dark:hover:bg-[#243552] text-slate-700 dark:text-slate-200 text-xs font-semibold py-1.5 px-2 rounded-xl border border-slate-300 dark:border-white/12 transition-colors cursor-pointer" title="一鍵複製單字清單，方便直接貼給 AI 批次移入高中 7000 單">📋 複製轉移清單</button>
+                        <button id="btn-autofill-custom" class="flex-1 text-center bg-emerald-600 hover:bg-emerald-700 dark:bg-emerald-600 dark:hover:bg-emerald-500 text-white text-xs font-semibold py-1.5 px-2 rounded-xl shadow-xs transition-colors cursor-pointer" title="自動查詢單字繁體中文與詞性並儲存">✨ 自動翻譯並儲存</button>
+                        <button id="btn-save-custom-all" class="flex-1 text-center bg-[#0071E3] hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-500 text-white text-xs font-semibold py-1.5 px-2 rounded-xl shadow-xs transition-colors cursor-pointer">💾 全部儲存</button>
+                    </div>` : ''}
                 </div>
                 <div class="max-h-72 overflow-y-auto pr-1 custom-scrollbar">
-                    ${rows || '<p class="text-[#86868B] text-sm text-center py-4">自訂字庫是空的。</p>'}
+                    ${rows || '<div class="py-8 text-center text-slate-400 dark:text-slate-400 text-sm">📭 目前自訂字庫是空的。</div>'}
                 </div>`;
             document.getElementById('dict-modal').classList.remove('hidden');
             const copyBtn = document.getElementById('btn-copy-custom-list');
@@ -13682,41 +13786,44 @@
                             <!-- 背面 -->
                             <div class="sandbox-card-back select-none text-left">
                                 <div class="flex items-center justify-between w-full shrink-0">
-                                    <div class="flex items-center gap-1.5">
-                                        <span class="text-sm font-bold text-slate-900">${esc(cur.en)}</span>
-                                        ${cur.pos ? `<span class="text-[10px] font-mono text-purple-700 bg-purple-50 px-1.5 py-0.5 rounded border border-purple-200/50">${esc(cur.pos)}</span>` : ''}
+                                    <div class="flex items-center gap-2">
+                                        <span class="text-base font-extrabold text-slate-900 dark:text-white tracking-wide">${esc(cur.en)}</span>
+                                        ${cur.pos ? `<span class="text-[11px] font-mono font-bold text-purple-700 dark:text-purple-300 bg-purple-50 dark:bg-purple-950/60 px-2 py-0.5 rounded-md border border-purple-200/70 dark:border-purple-500/40">${esc(cur.pos)}</span>` : ''}
                                     </div>
-                                    <button onclick="event.stopPropagation(); playAudio('${safeEn}')" class="text-purple-600 hover:text-purple-800 p-1 rounded-full hover:bg-purple-100 transition cursor-pointer" title="發音">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
+                                    <button onclick="event.stopPropagation(); playAudio('${safeEn}')" class="text-purple-600 dark:text-purple-300 hover:text-purple-800 dark:hover:text-white p-1 rounded-full hover:bg-purple-100 dark:hover:bg-purple-900/40 transition cursor-pointer" title="發音">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
                                     </button>
                                 </div>
 
-                                <div class="flex-1 my-2 flex flex-col justify-center gap-2 overflow-hidden">
-                                    <div class="bg-purple-50/70 border border-purple-200/60 rounded-xl p-2.5 shrink-0">
-                                        <div class="text-[10px] font-bold text-purple-900 tracking-wide uppercase mb-0.5">中文簡明釋義</div>
-                                        <div class="text-sm font-bold text-slate-900">${esc(cur.zh)}</div>
+                                <div class="flex-1 my-2 flex flex-col justify-center gap-2.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-purple-50/90 to-indigo-50/80 dark:from-purple-950/50 dark:to-indigo-950/40 border border-purple-200 dark:border-purple-500/50 rounded-xl p-3 shrink-0 shadow-xs">
+                                        <div class="text-[11px] font-bold text-purple-800 dark:text-[#E9D5FF] tracking-wider uppercase mb-1 flex items-center gap-1.5">
+                                            <span class="inline-block w-1.5 h-1.5 rounded-full bg-purple-600 dark:bg-purple-400"></span>
+                                            <span>中文簡明釋義</span>
+                                        </div>
+                                        <div class="text-base sm:text-lg font-extrabold text-slate-900 dark:text-white tracking-wide leading-snug">${esc(cur.zh)}</div>
                                     </div>
 
-                                    <div class="bg-slate-50 border border-slate-200/70 rounded-xl p-2.5 flex-1 min-h-0 flex flex-col justify-center">
+                                    <div class="bg-slate-50 dark:bg-[#0F172A]/85 border border-slate-200/80 dark:border-white/12 rounded-xl p-3 flex-1 min-h-0 flex flex-col justify-center shadow-xs">
                                         <div class="flex items-center justify-between mb-1">
-                                            <span class="text-[10px] font-bold text-slate-500 flex items-center gap-1">
+                                            <span class="text-[11px] font-bold text-slate-700 dark:text-slate-300 flex items-center gap-1.5">
                                                 <span>🎙️ 短文情境原句</span>
-                                                ${cur.speakerTag ? `<span class="text-purple-700 bg-purple-50 px-1 py-0.2 rounded font-normal">${esc(cur.speakerTag)}</span>` : ''}
+                                                ${cur.speakerTag ? `<span class="text-purple-700 dark:text-purple-300 bg-purple-50 dark:bg-purple-950/60 px-1.5 py-0.5 rounded border border-purple-200/60 dark:border-purple-500/40 font-normal text-[10px]">${esc(cur.speakerTag)}</span>` : ''}
                                             </span>
                                             ${cur.contextSentence ? `
-                                            <button onclick="event.stopPropagation(); playAudio('${safeContext}')" class="text-purple-600 hover:text-purple-800 p-0.5 rounded transition cursor-pointer" title="朗讀原句">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
+                                            <button onclick="event.stopPropagation(); playAudio('${safeContext}')" class="text-purple-600 dark:text-purple-300 hover:text-purple-800 dark:hover:text-white p-0.5 rounded transition cursor-pointer" title="朗讀原句">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
                                             </button>
                                             ` : ''}
                                         </div>
-                                        <p class="text-xs text-slate-800 font-medium leading-relaxed font-sans">
-                                            ${cur.contextSentence ? esc(cur.contextSentence) : `<span class="text-slate-400 italic">${esc(cur.rawZh || '無情境例句')}</span>`}
+                                        <p class="text-xs sm:text-sm text-slate-900 dark:text-[#F8FAFC] font-semibold leading-relaxed font-sans">
+                                            ${cur.contextSentence ? esc(cur.contextSentence) : `<span class="text-slate-400 dark:text-slate-500 italic">${esc(cur.rawZh || '無情境例句')}</span>`}
                                         </p>
-                                        ${cur.contextZh ? `<p class="text-[11px] text-slate-500 mt-1 pt-1 border-t border-slate-200/60">${esc(cur.contextZh)}</p>` : ''}
+                                        ${cur.contextZh ? `<p class="text-xs text-slate-600 dark:text-[#CBD5E1] mt-1.5 pt-1.5 border-t border-slate-200 dark:border-white/10 leading-normal">${esc(cur.contextZh)}</p>` : ''}
                                     </div>
                                 </div>
 
-                                <div class="text-[11px] text-slate-400 font-medium text-center w-full shrink-0">
+                                <div class="text-[11px] text-slate-500 dark:text-slate-400 font-medium text-center w-full shrink-0">
                                     👆 點擊卡片翻回正面
                                 </div>
                             </div>

@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261029V54';
+        const APP_BUILD_VERSION = '20261029V55';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -1756,28 +1756,28 @@
                     </div>
                 </div>
 
-                <!-- 雙欄 Bento 特訓卡 (與上方待複習/新單字雙卡視覺對稱，支援點擊預覽) -->
+                <!-- 雙欄 Bento 特訓卡 (支援直接測驗，右上角保留獨立預覽) -->
                 <div class="grid grid-cols-2 gap-2 sm:gap-3 mb-3">
-                    <!-- 隨機 10 題自測 (支援預覽) -->
-                    <button id="lobby-btn-start-rapid" type="button" class="group bg-gradient-to-br from-slate-50/90 to-blue-50/30 rounded-2xl p-3 sm:p-3.5 border border-slate-200/70 cursor-pointer hover:border-blue-300 hover:shadow-sm transition-all active:scale-[0.98] text-left min-w-0" title="點擊預覽抽考單字與發音">
+                    <!-- 隨機 10 題自測 (點擊直接測驗，點預覽按鈕彈出清單) -->
+                    <button id="lobby-btn-start-rapid" type="button" class="group bg-gradient-to-br from-slate-50/90 to-blue-50/30 rounded-2xl p-3 sm:p-3.5 border border-slate-200/70 cursor-pointer hover:border-blue-300 hover:shadow-sm transition-all active:scale-[0.98] text-left min-w-0" title="點擊直接開始隨機 10 題選擇題測驗">
                         <div class="flex items-center justify-between mb-1 gap-1">
                             <span class="text-slate-700 text-[11px] sm:text-xs font-bold truncate">⚡ 隨機 10 題</span>
-                            <span class="text-[10px] font-medium text-[#0071E3] bg-blue-50 px-1.5 py-0.5 rounded-md group-hover:bg-[#0071E3] group-hover:text-white transition-colors shrink-0">預覽 ➔</span>
+                            <span id="btn-preview-rapid" role="button" class="text-[10px] font-medium text-[#0071E3] bg-blue-50 hover:bg-[#0071E3] hover:text-white px-1.5 py-0.5 rounded-md transition-colors shrink-0 cursor-pointer" title="點擊預覽抽考單字與發音">預覽 ➔</span>
                         </div>
-                        <p class="text-[11px] text-slate-500 font-medium truncate">點擊預覽或抽考</p>
+                        <p class="text-[11px] text-slate-500 font-medium truncate">點擊直接測驗 · 10 題快測</p>
                     </button>
 
-                    <!-- 頑固弱點特訓 (支援預覽) -->
-                    <button id="lobby-btn-weak-practice" type="button" class="group bg-gradient-to-br from-slate-50/90 to-indigo-50/30 rounded-2xl p-3 sm:p-3.5 border border-slate-200/70 cursor-pointer hover:border-blue-300 hover:shadow-sm transition-all active:scale-[0.98] text-left min-w-0" title="點擊預覽當前單元弱點單字與發音">
+                    <!-- 頑固弱點特訓 (點擊直接特訓，點預覽按鈕彈出清單) -->
+                    <button id="lobby-btn-weak-practice" type="button" class="group bg-gradient-to-br from-slate-50/90 to-indigo-50/30 rounded-2xl p-3 sm:p-3.5 border border-slate-200/70 cursor-pointer hover:border-blue-300 hover:shadow-sm transition-all active:scale-[0.98] text-left min-w-0" title="點擊直接開始弱點單字選擇題特訓">
                         <div class="flex items-center justify-between mb-1 gap-1">
                             <span class="text-slate-700 text-[11px] sm:text-xs font-bold truncate">💡 弱點特訓</span>
-                            <span class="text-[10px] font-medium text-[#0071E3] bg-blue-50 px-1.5 py-0.5 rounded-md group-hover:bg-[#0071E3] group-hover:text-white transition-colors shrink-0">預覽 ➔</span>
+                            <span id="btn-preview-weak" role="button" class="text-[10px] font-medium text-[#0071E3] bg-blue-50 hover:bg-[#0071E3] hover:text-white px-1.5 py-0.5 rounded-md transition-colors shrink-0 cursor-pointer" title="點擊預覽弱點單字與發音">預覽 ➔</span>
                         </div>
                         <p class="text-[11px] text-slate-500 font-medium truncate" id="lobby-weak-count-badge">0 個弱點單字</p>
                     </button>
                 </div>
 
-                <!-- 歷史錯題集中複習 (支援預覽) -->
+                <!-- 歷史錯題集中複習 (點擊按鈕直接測驗，右上角保留獨立預覽) -->
                 <div class="bg-slate-50/70 p-2.5 sm:p-3 rounded-2xl border border-slate-200/60">
                     <div class="flex items-center justify-between mb-2 px-0.5">
                         <span class="text-[11px] sm:text-xs font-semibold text-slate-600 flex items-center gap-1">
@@ -1789,9 +1789,9 @@
                         </button>
                     </div>
                     <div class="grid grid-cols-3 gap-1.5">
-                        <button id="btn-review-week" type="button" class="bg-white hover:bg-blue-50/60 text-slate-700 hover:text-[#0071E3] border border-slate-200/80 hover:border-blue-200 py-2 px-1 rounded-xl font-semibold active:scale-95 transition-all text-[11px] sm:text-xs truncate cursor-pointer text-center shadow-2xs">本週錯題</button>
-                        <button id="btn-review-month" type="button" class="bg-white hover:bg-blue-50/60 text-slate-700 hover:text-[#0071E3] border border-slate-200/80 hover:border-blue-200 py-2 px-1 rounded-xl font-semibold active:scale-95 transition-all text-[11px] sm:text-xs truncate cursor-pointer text-center shadow-2xs">本月錯題</button>
-                        <button id="btn-review-all" type="button" class="bg-white hover:bg-[#0071E3] text-[#0071E3] hover:text-white border border-blue-200 hover:border-[#0071E3] py-2 px-1 rounded-xl font-bold active:scale-95 transition-all text-[11px] sm:text-xs truncate cursor-pointer text-center shadow-2xs">全部錯題</button>
+                        <button id="btn-review-week" type="button" class="bg-white hover:bg-blue-50/60 text-slate-700 hover:text-[#0071E3] border border-slate-200/80 hover:border-blue-200 py-2 px-1 rounded-xl font-semibold active:scale-95 transition-all text-[11px] sm:text-xs truncate cursor-pointer text-center shadow-2xs" title="立即開始近 7 天錯題選擇題複習">本週錯題</button>
+                        <button id="btn-review-month" type="button" class="bg-white hover:bg-blue-50/60 text-slate-700 hover:text-[#0071E3] border border-slate-200/80 hover:border-blue-200 py-2 px-1 rounded-xl font-semibold active:scale-95 transition-all text-[11px] sm:text-xs truncate cursor-pointer text-center shadow-2xs" title="立即開始近 30 天錯題選擇題複習">本月錯題</button>
+                        <button id="btn-review-all" type="button" class="bg-white hover:bg-[#0071E3] text-[#0071E3] hover:text-white border border-blue-200 hover:border-[#0071E3] py-2 px-1 rounded-xl font-bold active:scale-95 transition-all text-[11px] sm:text-xs truncate cursor-pointer text-center shadow-2xs" title="立即開始全部錯題選擇題複習">全部錯題</button>
                     </div>
                 </div>
             </div>
@@ -10325,32 +10325,30 @@
             }
         });
 
-        // 錯題加強複習
+        // 錯題加強複習 (直接開始選擇題測驗)
         function startMistakeReview(daysRange) {
-            sessionQueue = []; mistakeQueue = [];
-            for (let id in userProgress) {
-                const progress = userProgress[id];
-                if (progress.lastMistakeDay !== undefined && virtualCurrentDay - progress.lastMistakeDay <= daysRange) {
-                    const w = vocabularyDB.find(word => word.id == id);
-                    if (w && w.unit === currentUnit) sessionQueue.push(w); // 只複習該單元的錯字
-                }
-            }
-
-            if (sessionQueue.length === 0) {
-                alert('太棒了！這段期間內本單元沒有任何錯題紀錄。');
+            unlockMobileAudio();
+            const words = getMistakeWords(daysRange);
+            if (!words || words.length === 0) {
+                showQuickToast('太棒了！這段期間內沒有任何錯題紀錄 🎉');
                 return;
             }
 
-            // 打亂
-            for (let i = sessionQueue.length - 1; i > 0; i--) {
+            const q = [...words];
+            for (let i = q.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
-                [sessionQueue[i], sessionQueue[j]] = [sessionQueue[j], sessionQueue[i]];
+                [q[i], q[j]] = [q[j], q[i]];
             }
 
-            totalCardsInSession = sessionQueue.length;
+            sessionQueue = q;
+            mistakeQueue = [];
+            totalCardsInSession = q.length;
             cardsCompleted = 0;
-            resetSessionStats(sessionQueue); isMistakeMode = false;
-            sessionTitle = `錯題特訓 (${sessionQueue.length} 字)`;
+            resetSessionStats(q);
+            isMistakeMode = false;
+            isAutoFlashcardMode = false;
+            const daysLabel = daysRange === 7 ? '本週' : daysRange === 30 ? '本月' : '全部';
+            sessionTitle = `${daysLabel}錯題特訓 (${q.length} 字)`;
 
             switchTab('view-study', document.getElementById('tab-btn-dashboard'));
             nextCard();
@@ -10377,10 +10375,18 @@
             renderPreviewModal(words, titleText, () => startMistakeReview(daysRange), '🚀 開始錯題複習');
         }
 
-        document.getElementById('btn-review-week')?.addEventListener('click', () => showMistakePreview(7, '🎯 本週錯題預覽 (近 7 天)'));
-        document.getElementById('btn-review-month')?.addEventListener('click', () => showMistakePreview(30, '🎯 本月錯題預覽 (近 30 天)'));
-        document.getElementById('btn-review-all')?.addEventListener('click', () => showMistakePreview(99999, '🎯 全部歷史錯題預覽'));
-        document.getElementById('btn-preview-all-mistakes')?.addEventListener('click', () => showMistakePreview(99999, '🎯 全部歷史錯題預覽'));
+        // 歷史錯題直接複習 (選擇題測驗)
+        document.getElementById('btn-review-week')?.addEventListener('click', () => startMistakeReview(7));
+        document.getElementById('btn-review-month')?.addEventListener('click', () => startMistakeReview(30));
+        document.getElementById('btn-review-all')?.addEventListener('click', () => startMistakeReview(99999));
+        document.getElementById('lobby-btn-review-week')?.addEventListener('click', () => startMistakeReview(7));
+        document.getElementById('lobby-btn-review-month')?.addEventListener('click', () => startMistakeReview(30));
+        document.getElementById('lobby-btn-review-all')?.addEventListener('click', () => startMistakeReview(99999));
+
+        // 歷史錯題預覽按鈕 (僅點擊預覽標籤時彈出預覽)
+        document.getElementById('btn-preview-all-mistakes')?.addEventListener('click', () => {
+            showMistakePreview(99999, '🎯 全部歷史錯題預覽');
+        });
 
         // 學習中心 (Study Center) 事件綁定
         document.getElementById('lobby-btn-start-daily')?.addEventListener('click', () => {
@@ -10396,7 +10402,6 @@
                 alert('今日尚無單字可輪播！');
                 return;
             }
-            // 輪播前先隨機打散，提升多樣性
             for (let i = words.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
                 [words[i], words[j]] = [words[j], words[i]];
@@ -10404,7 +10409,16 @@
             startAutoFlashcardSession(words, '今日單字輪播');
         });
 
-        document.getElementById('lobby-btn-start-rapid')?.addEventListener('click', () => {
+        // 隨機 10 題卡片：點擊直接開始測驗
+        document.getElementById('lobby-btn-start-rapid')?.addEventListener('click', (e) => {
+            if (e.target.closest('#btn-preview-rapid')) return; // 點擊預覽標籤不觸發主測驗
+            unlockMobileAudio();
+            startRapidQuiz(10);
+        });
+
+        // 隨機 10 題：獨立預覽按鈕
+        document.getElementById('btn-preview-rapid')?.addEventListener('click', (e) => {
+            e.stopPropagation();
             const unitWords = getUnitWords(currentUnit);
             if (!unitWords.length) {
                 showQuickToast('目前單元無單字可測驗！');
@@ -10432,19 +10446,21 @@
             }, '🚀 開始隨機快測');
         });
 
-        document.getElementById('lobby-btn-review-week')?.addEventListener('click', () => {
-            showMistakePreview(7, '🎯 本週錯題預覽 (近 7 天)');
+        // 弱點特訓卡片：點擊直接開始特訓測驗
+        document.getElementById('lobby-btn-weak-practice')?.addEventListener('click', (e) => {
+            if (e.target.closest('#btn-preview-weak')) return; // 點擊預覽標籤不觸發主測驗
+            unlockMobileAudio();
+            const weakWords = getWeakList().filter(x => x.w && (x.w.unit || Math.ceil(x.w.id / 1000) || 1) === currentUnit).map(x => x.w);
+            if (weakWords.length === 0) {
+                showQuickToast('太棒了！本單元目前沒有弱點單字 🎉');
+                return;
+            }
+            startWeakPractice(weakWords);
         });
 
-        document.getElementById('lobby-btn-review-month')?.addEventListener('click', () => {
-            showMistakePreview(30, '🎯 本月錯題預覽 (近 30 天)');
-        });
-
-        document.getElementById('lobby-btn-review-all')?.addEventListener('click', () => {
-            showMistakePreview(99999, '🎯 全部歷史錯題預覽');
-        });
-
-        document.getElementById('lobby-btn-weak-practice')?.addEventListener('click', () => {
+        // 弱點特訓：獨立預覽按鈕
+        document.getElementById('btn-preview-weak')?.addEventListener('click', (e) => {
+            e.stopPropagation();
             const weakWords = getWeakList().filter(x => x.w && (x.w.unit || Math.ceil(x.w.id / 1000) || 1) === currentUnit).map(x => x.w);
             if (weakWords.length === 0) {
                 showQuickToast('太棒了！本單元目前沒有弱點單字 🎉');

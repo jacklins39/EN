@@ -7427,3 +7427,6 @@ const UK_PHONETICS_MANIFEST = {
   "zoom-in": "",
   "zoom-out": ""
 };
+if (typeof window !== 'undefined') {
+  window.UK_PHONETICS_MANIFEST = UK_PHONETICS_MANIFEST;
+}

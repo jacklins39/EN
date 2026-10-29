@@ -50,19 +50,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261028V52"></script>
-    <script src="toeic_data.js?v=20261028V52"></script>
-    <script src="jh_data.js?v=20261028V52"></script>
-    <script src="listening_data.js?v=20261028V52"></script>
-    <script src="listening_words_data.js?v=20261028V52"></script>
-    <script src="uk_phonetics_manifest.js?v=20261028V52"></script>
-    <script src="words_audio_manifest.js?v=20261028V52"></script>
-    <script src="examples_audio_manifest.js?v=20261028V52"></script>
-    <script src="zh_audio_manifest.js?v=20261028V52"></script>
-    <script src="collocations_audio_manifest.js?v=20261028V52"></script>
-    <script src="syn_ant_data.js?v=20261028V52"></script>
-    <script src="synonyms_unit8_data.js?v=20261028V52"></script>
-    <script src="examples_unit9_data.js?v=20261028V52"></script>
+    <script src="words_data.js?v=20261029V53"></script>
+    <script src="toeic_data.js?v=20261029V53"></script>
+    <script src="jh_data.js?v=20261029V53"></script>
+    <script src="listening_data.js?v=20261029V53"></script>
+    <script src="listening_words_data.js?v=20261029V53"></script>
+    <script src="uk_phonetics_manifest.js?v=20261029V53"></script>
+    <script src="words_audio_manifest.js?v=20261029V53"></script>
+    <script src="examples_audio_manifest.js?v=20261029V53"></script>
+    <script src="zh_audio_manifest.js?v=20261029V53"></script>
+    <script src="collocations_audio_manifest.js?v=20261029V53"></script>
+    <script src="syn_ant_data.js?v=20261029V53"></script>
+    <script src="synonyms_unit8_data.js?v=20261029V53"></script>
+    <script src="examples_unit9_data.js?v=20261029V53"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -1381,19 +1381,62 @@
             border-color: rgba(255, 255, 255, 0.08) !important;
         }
 
-        /* 18. 輸入框與下拉選單 */
+        /* 18. 輸入框與下拉選單 (全域無死角覆蓋所有文字輸入框，包含未指定 type 屬性之 input) */
         html.dark select,
-        html.dark input[type="text"],
-        html.dark input[type="search"],
-        html.dark input[type="number"],
+        html.dark input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]),
         html.dark textarea {
             background-color: #172235 !important;
             border-color: rgba(255, 255, 255, 0.12) !important;
             color: #F8FAFC !important;
         }
+        html.dark input::placeholder,
+        html.dark textarea::placeholder {
+            color: #64748B !important;
+        }
         html.dark select option {
             background-color: #121927 !important;
             color: #F8FAFC !important;
+        }
+
+        /* 自訂字庫管理 (Custom Word Manager Modal) 暗黑模式終極調校 */
+        html.dark #dict-modal .custom-row {
+            border-bottom-color: rgba(255, 255, 255, 0.08) !important;
+        }
+        html.dark #dict-modal .custom-row input {
+            background-color: #162033 !important;
+            border: 1px solid rgba(255, 255, 255, 0.12) !important;
+            color: #F8FAFC !important;
+        }
+        html.dark #dict-modal .custom-row input:focus {
+            border-color: #388BFD !important;
+            box-shadow: 0 0 0 2px rgba(56, 139, 253, 0.25) !important;
+        }
+        html.dark #dict-modal .custom-row input[data-f="pos"] {
+            background-color: rgba(0, 113, 227, 0.14) !important;
+            border-color: rgba(56, 139, 253, 0.35) !important;
+            color: #58A6FF !important;
+        }
+        html.dark #dict-modal .custom-row .btn-del-custom {
+            color: #FF6961 !important;
+            background-color: rgba(255, 59, 48, 0.08) !important;
+            border: 1px solid rgba(255, 59, 48, 0.2) !important;
+        }
+        html.dark #dict-modal .custom-row .btn-del-custom:hover {
+            background-color: rgba(255, 59, 48, 0.22) !important;
+            border-color: #FF453A !important;
+        }
+        html.dark #btn-copy-custom-list {
+            background-color: #1A2639 !important;
+            border-color: rgba(255, 255, 255, 0.15) !important;
+            color: #E2E8F0 !important;
+        }
+        html.dark #btn-copy-custom-list:hover {
+            background-color: #243552 !important;
+            border-color: #388BFD !important;
+            color: #FFFFFF !important;
+        }
+        html.dark #dict-content .border-\[\#D4DEC4\] {
+            border-color: rgba(255, 255, 255, 0.1) !important;
         }
 
         /* 19. 自動輪播按鈕 */
@@ -9166,7 +9209,7 @@
                     <a href="https://tw.dictionary.search.yahoo.com/search?p=${encodeURIComponent(word)}" target="_blank" rel="noopener noreferrer" class="text-center bg-purple-50 text-purple-700 hover:bg-purple-100 font-medium py-2 rounded-xl text-sm border-0 border-purple-200">在 Yahoo 字典查看</a>
                     <a href="https://translate.google.com/?sl=en&tl=zh-TW&text=${encodeURIComponent(word)}&op=translate" target="_blank" rel="noopener noreferrer" class="text-center bg-[#E5E5EA] text-[#0071E3] hover:bg-indigo-100 font-medium py-2 rounded-xl text-sm border-0 border-[#C3D0B0]">使用 Google 翻譯</a>
                     ${builtinUnitOf(word) ? `<div class="text-center text-[#86868B] text-sm py-2">此字已在內建字庫 (${getUnitBadgeInfo(builtinUnitOf(word)).name})，不需加入自訂</div>` : `
-                    <input id="input-custom-zh" type="text" maxlength="100" value="${esc(def)}" placeholder="中文說明 (可自行修改)" class="border-0 border-green-200 rounded-xl px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-green-300">
+                    <input id="input-custom-zh" type="text" maxlength="100" value="${esc(def)}" placeholder="中文說明 (可自行修改)" class="border border-green-200 dark:border-green-800/60 rounded-xl px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-green-300 bg-white dark:bg-[#162033] text-gray-900 dark:text-[#F8FAFC]">
                     <button id="btn-add-custom-word" class="text-center bg-green-50 text-[#0071E3] hover:bg-[#E5E5EA] font-medium py-2 rounded-xl text-sm border-0 border-green-200 transition-colors shadow-sm">
                         ➕ 將此單字加入「自訂字庫」
                     </button>`}
@@ -9200,7 +9243,7 @@
                 <div class="flex flex-col gap-2">
                     <a href="https://tw.dictionary.search.yahoo.com/search?p=${encodeURIComponent(word)}" target="_blank" rel="noopener noreferrer" class="text-center bg-purple-50 text-purple-700 hover:bg-purple-100 font-medium py-2 rounded-xl text-sm border-0 border-purple-200">在 Yahoo 字典查看</a>
                     <a href="https://translate.google.com/?sl=en&tl=zh-TW&text=${encodeURIComponent(word)}&op=translate" target="_blank" rel="noopener noreferrer" class="text-center bg-[#E5E5EA] text-[#0071E3] hover:bg-indigo-100 font-medium py-2 rounded-xl text-sm border-0 border-[#C3D0B0]">使用 Google 翻譯</a>
-                    <input id="input-custom-zh" type="text" maxlength="100" placeholder="手動輸入中文說明" class="border-0 border-green-200 rounded-xl px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-green-300">
+                    <input id="input-custom-zh" type="text" maxlength="100" placeholder="手動輸入中文說明" class="border border-green-200 dark:border-green-800/60 rounded-xl px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-green-300 bg-white dark:bg-[#162033] text-gray-900 dark:text-[#F8FAFC]">
                     <button id="btn-add-custom-error" class="text-center bg-green-50 text-[#0071E3] hover:bg-[#E5E5EA] font-medium py-2 rounded-xl text-sm border-0 border-green-200 transition-colors shadow-sm">
                         ➕ 將此單字加入「自訂字庫」
                     </button>
@@ -10149,20 +10192,20 @@
 
         function renderCustomManager() {
             const content = document.getElementById('dict-content');
-            const inp = 'border-0 border-gray-200 rounded px-2 py-1 text-sm outline-none focus:ring-1 focus:ring-indigo-400 min-w-0';
+            const inp = 'border border-gray-200 dark:border-white/10 rounded-lg px-2.5 py-1.5 text-sm outline-none focus:ring-2 focus:ring-[#0071E3] min-w-0 bg-white dark:bg-[#162033] text-gray-900 dark:text-[#F8FAFC] transition-all';
             const rows = customWordsDB.map(w => {
                 const parsed = splitPosAndZh(w.zh, w.pos);
                 return `
-                <div class="custom-row flex items-center gap-1.5 py-2 border-b border-gray-100 last:border-0" data-id="${esc(String(w.id))}">
-                    <input data-f="en" maxlength="40" value="${esc(w.en)}" class="${inp} w-[36%] shrink-0 font-medium" placeholder="英文單字">
-                    <input data-f="pos" maxlength="15" value="${esc(parsed.pos || '')}" placeholder="詞性" class="${inp} w-[16%] shrink-0 text-xs font-mono text-[#0071E3] bg-blue-50/50" title="詞性 (例: n. 或 v. 或 adj.)">
+                <div class="custom-row flex items-center gap-1.5 py-2 border-b border-gray-100 dark:border-white/5 last:border-0" data-id="${esc(String(w.id))}">
+                    <input type="text" data-f="en" maxlength="40" value="${esc(w.en)}" class="${inp} w-[36%] shrink-0 font-medium" placeholder="英文單字">
+                    <input type="text" data-f="pos" maxlength="15" value="${esc(parsed.pos || '')}" placeholder="詞性" class="${inp} w-[16%] shrink-0 text-xs font-mono text-[#0071E3] dark:text-[#58A6FF] bg-blue-50/50 dark:bg-blue-900/20" title="詞性 (例: n. 或 v. 或 adj.)">
                     <input data-f="kk" type="hidden" value="${esc(w.kk || '')}">
-                    <input data-f="zh" maxlength="100" value="${esc(parsed.pureZh)}" placeholder="中文解釋 (不需加詞性)" class="${inp} flex-1">
-                    <button data-del="${esc(String(w.id))}" class="btn-del-custom text-[#FF3B30] hover:bg-red-50 border-0 border-[#E6D1C9] rounded-xl px-2 py-1 text-xs shrink-0" title="刪除單字">🗑️</button>
+                    <input type="text" data-f="zh" maxlength="100" value="${esc(parsed.pureZh)}" placeholder="中文解釋 (不需加詞性)" class="${inp} flex-1">
+                    <button data-del="${esc(String(w.id))}" class="btn-del-custom text-[#FF3B30] hover:bg-red-50 dark:hover:bg-red-900/30 border border-transparent hover:border-red-200 dark:hover:border-red-800/40 rounded-xl px-2 py-1 text-xs shrink-0 transition" title="刪除單字">🗑️</button>
                 </div>`;
             }).join('');
             content.innerHTML = `
-                <div class="flex justify-between items-center mb-3 border-b border-[#D4DEC4] pb-2">
+                <div class="flex justify-between items-center mb-3 border-b border-[#D4DEC4] dark:border-white/10 pb-2">
                     <h3 class="text-xl font-semibold text-[#0071E3]">管理自訂字庫 (${customWordsDB.length})</h3>
                     ${customWordsDB.length ? '<div class="flex gap-2 items-center flex-wrap"><button id="btn-copy-custom-list" class="bg-gray-100 hover:bg-gray-200 text-gray-700 text-xs font-medium px-2.5 py-1.5 rounded-xl border border-gray-300 transition-colors" title="一鍵複製單字清單，方便直接貼給 AI 批次移入高中 7000 單">📋 複製轉移清單</button><button id="btn-autofill-custom" class="bg-green-600 hover:bg-green-700 text-white text-xs font-medium px-3 py-1.5 rounded-xl shadow-sm transition-colors" title="自動查詢單字繁體中文與詞性並儲存">✨ 自動翻譯並儲存</button><button id="btn-save-custom-all" class="bg-[#0071E3] text-white text-xs font-medium px-3 py-1.5 rounded-xl">💾 全部儲存</button><button id="btn-del-custom-all" class="text-xs text-[#FF3B30] underline ml-1">全部刪除</button></div>' : ''}
                 </div>
@@ -11991,13 +12034,13 @@
                 modal.id = 'custom-word-modal';
                 modal.className = 'fixed inset-0 bg-black/60 z-[9999] flex items-center justify-center p-4 backdrop-blur-xs transition-opacity duration-200';
                 modal.innerHTML = `
-                    <div class="bg-white rounded-2xl shadow-2xl p-6 max-w-sm w-full relative transform transition-all border border-gray-100 text-left">
-                        <h4 class="text-lg font-bold text-gray-900 mb-1">加入自訂字庫</h4>
-                        <p class="text-xs text-gray-500 mb-3">線上查無此單字翻譯，請輸入中文意思：</p>
-                        <div class="mb-3 px-3 py-1.5 bg-blue-50 text-[#0071E3] font-semibold rounded-lg text-sm inline-block" id="modal-word-badge"></div>
-                        <input id="modal-custom-zh-input" type="text" placeholder="例如：氛圍、情調" maxlength="60" class="w-full px-3 py-2.5 text-base border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#0071E3] focus:border-transparent text-gray-900 bg-white placeholder-gray-400">
+                    <div class="bg-white dark:bg-[#151D2A] rounded-2xl shadow-2xl p-6 max-w-sm w-full relative transform transition-all border border-gray-100 dark:border-slate-800 text-left">
+                        <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-1">加入自訂字庫</h4>
+                        <p class="text-xs text-gray-500 dark:text-slate-400 mb-3">線上查無此單字翻譯，請輸入中文意思：</p>
+                        <div class="mb-3 px-3 py-1.5 bg-blue-50 dark:bg-blue-900/30 text-[#0071E3] dark:text-[#58A6FF] font-semibold rounded-lg text-sm inline-block" id="modal-word-badge"></div>
+                        <input id="modal-custom-zh-input" type="text" placeholder="例如：氛圍、情調" maxlength="60" class="w-full px-3 py-2.5 text-base border border-gray-300 dark:border-white/10 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#0071E3] focus:border-transparent text-gray-900 dark:text-[#F8FAFC] bg-white dark:bg-[#162033] placeholder-gray-400 dark:placeholder-slate-500">
                         <div class="flex justify-end gap-2.5 mt-4">
-                            <button id="modal-custom-cancel" class="px-4 py-2 text-sm font-medium text-gray-600 bg-gray-100 hover:bg-gray-200 rounded-xl transition">取消</button>
+                            <button id="modal-custom-cancel" class="px-4 py-2 text-sm font-medium text-gray-600 dark:text-gray-300 bg-gray-100 dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-slate-700 rounded-xl transition">取消</button>
                             <button id="modal-custom-submit" class="px-4 py-2 text-sm font-medium text-white bg-[#0071E3] hover:bg-blue-600 rounded-xl shadow-xs transition">確定加入</button>
                         </div>
                     </div>

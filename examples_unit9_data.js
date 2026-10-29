@@ -8579,5 +8579,95 @@ const examplesUnit9WordsDB = [
     "unit": 9,
     "example": "The pipe disgorges sewage into the sea.",
     "exampleZh": "這管道將汙水排入大海。"
+  },
+  {
+    "id": 9054,
+    "en": "climbing",
+    "kk": "[ˋklaɪmɪŋ]",
+    "zh": "n. 登山運動，攀爬；adj. 攀緣的",
+    "unit": 9,
+    "example": "Rock climbing is an exciting and challenging outdoor sport.",
+    "exampleZh": "攀岩是一項刺激且具挑戰性的戶外運動。"
+  },
+  {
+    "id": 9055,
+    "en": "called",
+    "kk": "[kɔld]",
+    "zh": "adj. 被稱為…的，名叫…的；v. 稱呼，呼叫（call 的過去式及過去分詞）",
+    "unit": 9,
+    "example": "A friendly young doctor called David came to examine the patient.",
+    "exampleZh": "一位名叫戴維的和藹年輕醫生前來為病人進行檢查。"
+  },
+  {
+    "id": 9056,
+    "en": "words",
+    "kk": "[wɝdz]",
+    "zh": "n. 言語，話語；字詞（word 的複數）",
+    "unit": 9,
+    "example": "Her kind words gave me great comfort and encouragement.",
+    "exampleZh": "她親切的話語給了我極大的安慰與鼓勵。"
+  },
+  {
+    "id": 9057,
+    "en": "urgently",
+    "kk": "[ˋɝdʒəntlɪ]",
+    "zh": "adv. 緊急地，迫切地",
+    "unit": 9,
+    "example": "The local hospital is urgently in need of more blood donations.",
+    "exampleZh": "當地醫院急需更多民眾捐血援助。"
+  },
+  {
+    "id": 9058,
+    "en": "consumers",
+    "kk": "[kənˋsjumɚz]",
+    "zh": "n. 消費者，顧客（consumer 的複數）",
+    "unit": 9,
+    "example": "Many consumers prefer buying eco-friendly products nowadays.",
+    "exampleZh": "現今許多消費者更傾向於購買環保產品。"
+  },
+  {
+    "id": 9059,
+    "en": "buying",
+    "kk": "[ˋbaɪɪŋ]",
+    "zh": "n. 購買，採購；v. 買（buy 的現在分詞）",
+    "unit": 9,
+    "example": "Impulse buying often leads people to purchase things they do not need.",
+    "exampleZh": "衝動購物常導致人們買下自己並不需要的物品。"
+  },
+  {
+    "id": 9060,
+    "en": "cars",
+    "kk": "[kɑrz]",
+    "zh": "n. 汽車，轎車（car 的複數）",
+    "unit": 9,
+    "example": "Electric cars are becoming much more popular in modern cities.",
+    "exampleZh": "電動車在現代城市中變得愈來愈受歡迎。"
+  },
+  {
+    "id": 9061,
+    "en": "teeth",
+    "kk": "[tiθ]",
+    "zh": "n. 牙齒（tooth 的複數形式）",
+    "unit": 9,
+    "example": "You should brush your teeth at least twice a day to prevent cavities.",
+    "exampleZh": "你每天應該至少刷牙兩次以預防蛀牙。"
+  },
+  {
+    "id": 9062,
+    "en": "fluttered",
+    "kk": "[ˋflʌtɚd]",
+    "zh": "v. 飄動，振翅，心怦怦跳（flutter 的過去式及過去分詞）",
+    "unit": 9,
+    "example": "Colorful national flags fluttered gracefully in the afternoon breeze.",
+    "exampleZh": "五彩斑斕的國旗在午後的微風中優雅地飄揚。"
+  },
+  {
+    "id": 9063,
+    "en": "got",
+    "kk": "[gɑt]",
+    "zh": "v. 得到，獲得；到達（get 的過去式及過去分詞）",
+    "unit": 9,
+    "example": "She got a promotion after working hard on the major project.",
+    "exampleZh": "在為這個重大專案努力工作後，她獲得了升遷。"
   }
 ];

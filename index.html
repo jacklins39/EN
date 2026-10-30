@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261030V1';
+        const APP_BUILD_VERSION = '20261030V2';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -55,19 +55,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261030V1"></script>
-    <script src="toeic_data.js?v=20261030V1"></script>
-    <script src="jh_data.js?v=20261030V1"></script>
-    <script src="listening_data.js?v=20261030V1"></script>
-    <script src="listening_words_data.js?v=20261030V1"></script>
-    <script src="uk_phonetics_manifest.js?v=20261030V1"></script>
-    <script src="words_audio_manifest.js?v=20261030V1"></script>
-    <script src="examples_audio_manifest.js?v=20261030V1"></script>
-    <script src="zh_audio_manifest.js?v=20261030V1"></script>
-    <script src="collocations_audio_manifest.js?v=20261030V1"></script>
-    <script src="syn_ant_data.js?v=20261030V1"></script>
-    <script src="synonyms_unit8_data.js?v=20261030V1"></script>
-    <script src="examples_unit9_data.js?v=20261030V1"></script>
+    <script src="words_data.js?v=20261030V2"></script>
+    <script src="toeic_data.js?v=20261030V2"></script>
+    <script src="jh_data.js?v=20261030V2"></script>
+    <script src="listening_data.js?v=20261030V2"></script>
+    <script src="listening_words_data.js?v=20261030V2"></script>
+    <script src="uk_phonetics_manifest.js?v=20261030V2"></script>
+    <script src="words_audio_manifest.js?v=20261030V2"></script>
+    <script src="examples_audio_manifest.js?v=20261030V2"></script>
+    <script src="zh_audio_manifest.js?v=20261030V2"></script>
+    <script src="collocations_audio_manifest.js?v=20261030V2"></script>
+    <script src="syn_ant_data.js?v=20261030V2"></script>
+    <script src="synonyms_unit8_data.js?v=20261030V2"></script>
+    <script src="examples_unit9_data.js?v=20261030V2"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -2170,6 +2170,7 @@
                 <div class="flip-card-inner">
                     <!-- 正面 (英文) -->
                     <div class="flip-card-front">
+                        <button id="btn-card-mark" type="button" class="absolute top-2.5 left-2.5 p-1.5 text-2xl leading-none text-gray-300 hover:text-amber-400 dark:text-slate-500 dark:hover:text-amber-400 transition-all cursor-pointer select-none active:scale-90 z-20" title="標記單字 (⭐)" aria-label="標記單字">☆</button>
                         <button id="btn-audio" class="absolute top-2.5 right-2.5 p-1.5 text-gray-400 hover:text-[#0071E3] rounded-full hover:bg-slate-100 transition-colors cursor-pointer" title="播放發音">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-7 sm:w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
                         </button>
@@ -2199,6 +2200,7 @@
                     </div>
                     <!-- 背面 (中文與例句 - 支援完整滾動防截斷) -->
                     <div class="flip-card-back">
+                        <button id="btn-card-mark-back" type="button" class="absolute top-2.5 left-2.5 p-1.5 text-2xl leading-none text-gray-300 hover:text-amber-400 dark:text-slate-500 dark:hover:text-amber-400 transition-all cursor-pointer select-none active:scale-90 z-20" title="標記單字 (⭐)" aria-label="標記單字">☆</button>
                         <div class="flex items-baseline justify-center gap-1.5 mb-0.5">
                             <h2 class="text-xl sm:text-2xl font-bold text-[#1D1D1F] break-all" id="card-word-back">Apple</h2>
                         </div>
@@ -2763,9 +2765,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261030V1</span>
+                        <span id="app-version-display">版本 20261030V2</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261030V1</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261030V2</p>
                 </div>
             </div>
         </div>
@@ -5538,6 +5540,7 @@
             }
 
             updateCardPhonetics(currentWord);
+            updateStudyCardMarkBtn(currentWord);
 
             applyFront();
 
@@ -10647,6 +10650,20 @@
             btn.disabled = !n;
             btn.classList.toggle('opacity-50', !n);
         }
+                function updateStudyCardMarkBtn(w = currentWord) {
+            const btns = [document.getElementById('btn-card-mark'), document.getElementById('btn-card-mark-back')];
+            const hasId = w && w.id !== undefined && w.id !== null;
+            const on = hasId && isWordMarked(w.id);
+            btns.forEach(btn => {
+                if (!btn) return;
+                btn.classList.toggle('hidden', !hasId);
+                btn.textContent = on ? '⭐' : '☆';
+                btn.title = btn.ariaLabel = on ? '取消標記' : '標記單字 (⭐)';
+                btn.classList.toggle('text-amber-400', on);
+                btn.classList.toggle('text-gray-300', !on);
+                btn.classList.toggle('dark:text-slate-500', !on);
+            });
+        }
         function updateDetailMarkBtn(w) {
             const btn = document.getElementById('btn-detail-mark');
             if (!btn) return;
@@ -12886,6 +12903,16 @@
             unlockMobileAudio();
             startWeakPractice(words, '⭐ 標記單字練習');
         });
+                const handleStudyCardMark = (e) => {
+            e.stopPropagation();
+            if (!currentWord || currentWord.id === undefined || currentWord.id === null) return;
+            const on = toggleWordMark(currentWord.id);
+            updateStudyCardMarkBtn(currentWord);
+            showQuickToast(on ? '⭐ 已標記此單字' : '已取消標記');
+        };
+        document.getElementById('btn-card-mark')?.addEventListener('click', handleStudyCardMark);
+        document.getElementById('btn-card-mark-back')?.addEventListener('click', handleStudyCardMark);
+
         document.getElementById('btn-detail-mark').addEventListener('click', (e) => {
             const id = e.currentTarget.dataset.markId;
             if (!id) return;

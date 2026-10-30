@@ -1,25 +1,18 @@
 // ==========================================
 // VocabMaster 打地鼠單字競速賽 (Word Whack Challenge)
-// 模組化獨立設計：與主程式完全解耦，零干擾現有學習紀錄
+// 模組化獨立設計：高解析純向量 SVG 地鼠，秒數支援 5秒/10秒/自訂
 // ==========================================
 
 (function() {
     'use strict';
 
     // 遊戲狀態與設定
-    const GAME_CONFIG = {
-        SPEED_INITIAL: 1800,  // 初始停留毫秒 (1.8s)
-        SPEED_MIN: 950,       // 最快停留毫秒 (0.95s)
-        SPEED_DECAY: 35,      // 每答對一題加速毫秒
-        ROUND_TIME: 60,       // 極速賽 60 秒
-        LIVES_INITIAL: 3,     // 生存賽 3 顆心
-        TOTAL_HOLES: 9        // 3x3 九宮格
-    };
-
     let gameState = {
         isRunning: false,
-        mode: 'speed',        // 'speed' (60秒), 'survival' (3心), 'rush20' (20題)
-        scope: 'current',     // 'current' (當前單元), 'marked' (⭐標記字), 'weak' (弱點字), 'all' (全字庫)
+        mode: 'speed',        // 'speed' (倒數極速), 'survival' (3心生存)
+        scope: 'current',     // 'current' (單元), 'marked' (⭐標記), 'weak' (弱點), 'all' (全庫)
+        staySeconds: 5,       // 地鼠停留秒數 (預設 5 秒，可切換 10 秒或自訂)
+        gameDuration: 60,     // 總局長度 (60秒 / 120秒 / 不限時)
         score: 0,
         combo: 0,
         maxCombo: 0,
@@ -31,10 +24,10 @@
         activeTimer: null,
         moleTimers: [],
         questionPool: [],
-        roundWrongWords: []   // 本局敲錯/漏打字清單 (供結算覆盤)
+        roundWrongWords: []   // 本局敲錯/漏打字清單
     };
 
-    // 音效合成器 (Web Audio API 原生合成打擊音與得分鈴聲，零依賴零延遲)
+    // 音效合成器 (Web Audio API 原生合成打擊音與得分鈴聲)
     const SoundFx = {
         ctx: null,
         init() {
@@ -51,31 +44,31 @@
                 this.init();
                 if (!this.ctx) return;
                 const now = this.ctx.currentTime;
-                // 打擊低頻音 (Thud / Punch)
+                // 打擊低頻 (Thud)
                 const osc = this.ctx.createOscillator();
                 const gain = this.ctx.createGain();
                 osc.type = 'triangle';
-                osc.frequency.setValueAtTime(220, now);
-                osc.frequency.exponentialRampToValueAtTime(45, now + 0.12);
-                gain.gain.setValueAtTime(0.3, now);
+                osc.frequency.setValueAtTime(240, now);
+                osc.frequency.exponentialRampToValueAtTime(50, now + 0.12);
+                gain.gain.setValueAtTime(0.35, now);
                 gain.gain.exponentialRampToValueAtTime(0.001, now + 0.12);
                 osc.connect(gain);
                 gain.connect(this.ctx.destination);
                 osc.start(now);
                 osc.stop(now + 0.13);
 
-                // 得分清脆泛音 (Bell chime)
+                // 得分清脆音 (Bell Chime)
                 const chime = this.ctx.createOscillator();
                 const chimeGain = this.ctx.createGain();
                 chime.type = 'sine';
                 chime.frequency.setValueAtTime(880, now + 0.03);
-                chime.frequency.exponentialRampToValueAtTime(1320, now + 0.18);
-                chimeGain.gain.setValueAtTime(0.2, now + 0.03);
-                chimeGain.gain.exponentialRampToValueAtTime(0.001, now + 0.22);
+                chime.frequency.exponentialRampToValueAtTime(1320, now + 0.2);
+                chimeGain.gain.setValueAtTime(0.22, now + 0.03);
+                chimeGain.gain.exponentialRampToValueAtTime(0.001, now + 0.24);
                 chime.connect(chimeGain);
                 chimeGain.connect(this.ctx.destination);
                 chime.start(now + 0.03);
-                chime.stop(now + 0.23);
+                chime.stop(now + 0.25);
             } catch (e) {}
         },
         playMiss() {
@@ -87,8 +80,8 @@
                 const gain = this.ctx.createGain();
                 osc.type = 'sawtooth';
                 osc.frequency.setValueAtTime(140, now);
-                osc.frequency.setValueAtTime(90, now + 0.08);
-                gain.gain.setValueAtTime(0.2, now);
+                osc.frequency.setValueAtTime(90, now + 0.09);
+                gain.gain.setValueAtTime(0.25, now);
                 gain.gain.exponentialRampToValueAtTime(0.001, now + 0.2);
                 osc.connect(gain);
                 gain.connect(this.ctx.destination);
@@ -141,30 +134,30 @@
         return picked;
     }
 
-    // 產生 3x3 地鼠洞 HTML
+    // 產生 3x3 地鼠洞 HTML (使用純向量 SVG 地鼠，告別鋸齒白邊)
     function renderHolesGrid() {
         const grid = document.getElementById('whack-holes-grid');
         if (!grid) return;
         let html = '';
-        for (let i = 0; i < GAME_CONFIG.TOTAL_HOLES; i++) {
+        for (let i = 0; i < 9; i++) {
             html += `
-                <div class="whack-hole relative aspect-square bg-gradient-to-b from-amber-950/20 to-amber-900/40 dark:from-slate-800/80 dark:to-slate-900/90 rounded-3xl border-2 border-amber-900/30 dark:border-slate-700/60 overflow-hidden flex items-end justify-center shadow-inner cursor-pointer select-none group" data-hole-idx="${i}">
+                <div class="whack-hole relative aspect-square bg-gradient-to-b from-[#63391A]/25 to-[#42220A]/40 dark:from-slate-800/80 dark:to-slate-900/90 rounded-3xl border-2 border-amber-900/30 dark:border-slate-700/60 overflow-hidden flex items-end justify-center shadow-inner cursor-pointer select-none group" data-hole-idx="${i}">
                     <!-- 土堆草地地洞底飾 -->
                     <div class="absolute inset-x-2 bottom-1 h-3 rounded-full bg-amber-950/40 dark:bg-slate-950/70 blur-xs"></div>
-                    <div class="absolute inset-x-0 bottom-0 h-6 bg-gradient-to-t from-emerald-800/80 to-transparent dark:from-emerald-950/60 pointer-events-none rounded-b-3xl"></div>
+                    <div class="absolute inset-x-0 bottom-0 h-5 bg-gradient-to-t from-emerald-800/80 to-transparent dark:from-emerald-950/60 pointer-events-none rounded-b-3xl"></div>
                     
-                    <!-- 地鼠本體 (預設沉在洞下 translateY 110%) -->
-                    <div id="mole-${i}" class="mole-actor absolute inset-x-0 bottom-0 top-1 flex flex-col items-center justify-end transform translate-y-[115%] transition-transform duration-200 ease-out pointer-events-none" data-hole="${i}">
-                        <!-- 單字氣泡告示牌 (醒目易讀) -->
-                        <div class="mole-word-sign mb-1 px-2 py-0.5 max-w-[92%] bg-white dark:bg-slate-800 text-slate-900 dark:text-white font-extrabold text-xs sm:text-sm rounded-xl shadow-md border border-slate-200/90 dark:border-slate-600 truncate text-center select-none pointer-events-auto cursor-pointer active:scale-95 transition-transform">
+                    <!-- 地鼠本體 (純向量 SVG，零毛邊高畫質) -->
+                    <div id="mole-${i}" class="mole-actor absolute inset-x-0 bottom-0 top-0.5 flex flex-col items-center justify-end transform translate-y-[115%] transition-transform duration-250 ease-out pointer-events-none" data-hole="${i}">
+                        <!-- 單字告示牌 (清晰純色卡片) -->
+                        <div class="mole-word-sign mb-1 px-2.5 py-1 max-w-[94%] bg-white dark:bg-slate-800 text-slate-900 dark:text-white font-extrabold text-xs sm:text-[13.5px] rounded-xl shadow-md border border-slate-200/90 dark:border-slate-600 truncate text-center select-none pointer-events-auto cursor-pointer active:scale-95 transition-transform">
                             <span class="mole-word-text">word</span>
                         </div>
-                        <!-- 地鼠 3D 圖片 -->
-                        <img id="mole-img-${i}" src="images/mole_normal.png" alt="mole" class="w-16 h-16 sm:w-20 sm:h-20 object-contain drop-shadow-md select-none pointer-events-auto cursor-pointer active:scale-90 transition-transform">
+                        <!-- 向量地鼠 (svg) -->
+                        <img id="mole-img-${i}" src="images/mole_normal.svg" alt="mole" class="w-16 h-16 sm:w-20 sm:h-20 object-contain drop-shadow-sm select-none pointer-events-auto cursor-pointer active:scale-90 transition-transform">
                     </div>
 
                     <!-- 敲中浮動飄字特效 (+100) -->
-                    <div id="hit-float-${i}" class="hidden pointer-events-none absolute inset-0 flex items-center justify-center font-black text-amber-400 text-lg sm:text-2xl drop-shadow-md z-30 transition-all">
+                    <div id="hit-float-${i}" class="hidden pointer-events-none absolute inset-0 flex items-center justify-center font-black text-amber-400 text-xl sm:text-2xl drop-shadow-md z-30 transition-all">
                         +100
                     </div>
                 </div>
@@ -182,7 +175,7 @@
     }
 
     // 啟動單一地鼠冒出
-    function spawnMole(holeIdx, wordObj, isCorrect, stayDuration) {
+    function spawnMole(holeIdx, wordObj, isCorrect, stayDurationMs) {
         const actor = document.getElementById(`mole-${holeIdx}`);
         const img = document.getElementById(`mole-img-${holeIdx}`);
         if (!actor || !img) return;
@@ -191,20 +184,20 @@
         actor.dataset.wordId = wordObj.id;
         actor.dataset.isCorrect = isCorrect ? 'true' : 'false';
         actor.querySelector('.mole-word-text').textContent = wordObj.en;
-        img.src = 'images/mole_normal.png';
+        img.src = 'images/mole_normal.svg';
 
         // 探頭冒出
         actor.classList.remove('translate-y-[115%]');
-        actor.classList.add('translate-y-[8%]');
+        actor.classList.add('translate-y-[5%]');
 
-        // 倒數自動縮回
+        // 依自訂秒數自動縮回
         const timerId = setTimeout(() => {
             retractMole(holeIdx);
             if (isCorrect && gameState.isRunning) {
-                // 正確地鼠縮回且沒被敲中 = 漏打
+                // 正確地鼠縮回且未被敲中 = 漏打
                 onMoleMissed(wordObj);
             }
-        }, stayDuration);
+        }, stayDurationMs);
 
         gameState.moleTimers.push(timerId);
     }
@@ -213,15 +206,15 @@
     function retractMole(holeIdx) {
         const actor = document.getElementById(`mole-${holeIdx}`);
         if (!actor) return;
-        actor.classList.remove('translate-y-[8%]');
+        actor.classList.remove('translate-y-[5%]');
         actor.classList.add('translate-y-[115%]');
     }
 
-    // 清空所有正在冒頭的地鼠
+    // 清空所有冒頭地鼠
     function clearAllMoles() {
         gameState.moleTimers.forEach(t => clearTimeout(t));
         gameState.moleTimers = [];
-        for (let i = 0; i < GAME_CONFIG.TOTAL_HOLES; i++) {
+        for (let i = 0; i < 9; i++) {
             retractMole(i);
         }
     }
@@ -230,14 +223,15 @@
     function triggerHitAnim(holeIdx, scoreGained) {
         const floatEl = document.getElementById(`hit-float-${holeIdx}`);
         const img = document.getElementById(`mole-img-${holeIdx}`);
-        if (img) img.src = 'images/mole_dizzy.png';
+        // 切換為純向量暈眩地鼠 (眼睛旋轉、頭頂轉金星)
+        if (img) img.src = 'images/mole_dizzy.svg';
 
         if (floatEl) {
             floatEl.textContent = `+${scoreGained}`;
             floatEl.className = 'pointer-events-none absolute inset-0 flex items-center justify-center font-black text-amber-400 text-xl sm:text-2xl drop-shadow-md z-30 animate-bounce';
             setTimeout(() => {
                 floatEl.className = 'hidden';
-            }, 550);
+            }, 500);
         }
     }
 
@@ -258,7 +252,7 @@
             gameState.combo++;
             if (gameState.combo > gameState.maxCombo) gameState.maxCombo = gameState.combo;
 
-            // 計算分數 (連擊加乘：Combo >= 5 x1.5, >= 10 x2.0)
+            // 計算分數 (連擊加乘)
             const multiplier = gameState.combo >= 10 ? 2.0 : (gameState.combo >= 5 ? 1.5 : 1.0);
             const scoreGained = Math.round(100 * multiplier);
             gameState.score += scoreGained;
@@ -273,11 +267,11 @@
 
             updateScoreboardUI();
 
-            // 敲中後 250ms 縮回並立即出下一題
+            // 敲中後短暫暈眩 280ms 即進入下一題 (不用傻等自訂秒數跑完！)
             setTimeout(() => {
                 clearAllMoles();
                 if (gameState.isRunning) nextQuestion();
-            }, 260);
+            }, 300);
 
         } else {
             // 敲錯干擾地鼠！
@@ -327,7 +321,7 @@
         // 漏打後接續下一題
         setTimeout(() => {
             if (gameState.isRunning) nextQuestion();
-        }, 150);
+        }, 200);
     }
 
     // 開出下一題
@@ -340,7 +334,7 @@
         const targetWord = pool[Math.floor(Math.random() * pool.length)];
         gameState.currentWord = targetWord;
 
-        // 更新題目標題
+        // 更新題目標題 (中文與詞性)
         const parsed = (typeof splitPosAndZh === 'function') ? splitPosAndZh(targetWord.zh, targetWord.pos) : { pos: '', pureZh: targetWord.zh };
         const concise = (typeof getConciseZh === 'function') ? (getConciseZh(targetWord.zh, targetWord.pos) || parsed.pureZh || targetWord.zh) : targetWord.zh;
         const targetEl = document.getElementById('whack-target-zh');
@@ -362,14 +356,11 @@
         // 隨機選擇 2~3 個互不重複的洞口
         const holes = [0, 1, 2, 3, 4, 5, 6, 7, 8].sort(() => Math.random() - 0.5).slice(0, candidates.length);
 
-        // 動態計算停留速度 (每答對一題加速)
-        const curSpeed = Math.max(
-            GAME_CONFIG.SPEED_MIN,
-            GAME_CONFIG.SPEED_INITIAL - (gameState.hits * GAME_CONFIG.SPEED_DECAY)
-        );
+        // 使用者自訂秒數 (例如 5秒 = 5000ms, 10秒 = 10000ms)
+        const stayDurationMs = Math.max(1000, gameState.staySeconds * 1000);
 
         candidates.forEach((cand, idx) => {
-            spawnMole(holes[idx], cand.word, cand.isCorrect, curSpeed);
+            spawnMole(holes[idx], cand.word, cand.isCorrect, stayDurationMs);
         });
     }
 
@@ -401,8 +392,20 @@
 
         const scopeSel = document.getElementById('whack-scope-select');
         const modeSel = document.getElementById('whack-mode-select');
+        const staySel = document.getElementById('whack-speed-select');
+        const customInput = document.getElementById('whack-speed-custom');
+
         gameState.scope = scopeSel ? scopeSel.value : 'current';
         gameState.mode = modeSel ? modeSel.value : 'speed';
+
+        // 讀取自訂停留秒數 (5秒 / 10秒 / 自訂)
+        let staySec = 5;
+        if (staySel && staySel.value === 'custom') {
+            staySec = customInput ? Math.max(1, Math.min(30, parseInt(customInput.value, 10) || 5)) : 5;
+        } else if (staySel) {
+            staySec = parseInt(staySel.value, 10) || 5;
+        }
+        gameState.staySeconds = staySec;
 
         gameState.questionPool = getGamePool(gameState.scope);
         if (gameState.questionPool.length < 4) {
@@ -416,8 +419,8 @@
         gameState.maxCombo = 0;
         gameState.hits = 0;
         gameState.misses = 0;
-        gameState.timeLeft = GAME_CONFIG.ROUND_TIME;
-        gameState.lives = GAME_CONFIG.LIVES_INITIAL;
+        gameState.timeLeft = 60;
+        gameState.lives = 3;
         gameState.roundWrongWords = [];
 
         // UI 切換至進行中
@@ -467,7 +470,7 @@
         }
 
         // 灑花慶祝 (破紀錄或高分時)
-        if (gameState.score >= 500 && typeof confetti === 'function') {
+        if (gameState.score >= 400 && typeof confetti === 'function') {
             try { confetti({ particleCount: 70, spread: 60, origin: { y: 0.6 } }); } catch (e) {}
         }
 
@@ -504,7 +507,7 @@
             `;
         }
 
-        // 錯題覆盤清單 (可一鍵 ⭐ 加入標記)
+        // 錯題覆盤清單 (可發音、一鍵 ⭐ 標記)
         if (reviewListEl) {
             const wrongs = gameState.roundWrongWords;
             if (wrongs.length === 0) {
@@ -563,13 +566,22 @@
     function initWhackGameView() {
         renderHolesGrid();
 
-        // 綁定大廳按鈕
+        // 綁定大廳控制
         document.getElementById('btn-whack-start')?.addEventListener('click', startGame);
         document.getElementById('btn-whack-quit')?.addEventListener('click', quitToLobby);
         document.getElementById('btn-whack-restart')?.addEventListener('click', startGame);
         document.getElementById('btn-whack-close-result')?.addEventListener('click', quitToLobby);
 
-        // 音訊按鈕
+        // 自訂秒數切換顯示
+        const speedSel = document.getElementById('whack-speed-select');
+        const customWrapper = document.getElementById('whack-speed-custom-wrapper');
+        if (speedSel && customWrapper) {
+            speedSel.addEventListener('change', () => {
+                customWrapper.classList.toggle('hidden', speedSel.value !== 'custom');
+            });
+        }
+
+        // 音訊重播按鈕
         document.getElementById('btn-whack-target-audio')?.addEventListener('click', () => {
             if (gameState.currentWord && typeof playAudio === 'function') {
                 playAudio(gameState.currentWord.en);

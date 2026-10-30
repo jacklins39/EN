@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bodyGradDizzy" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#9C6638" />
+      <stop offset="100%" stop-color="#6E3F19" />
+    </radialGradient>
+    <radialGradient id="bellyGradDizzy" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FCE1C3" />
+      <stop offset="100%" stop-color="#E4B88E" />
+    </radialGradient>
+    <filter id="starGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#F59E0B" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- 頭頂旋轉暈眩光圈與三顆小金星 -->
+  <ellipse cx="80" cy="28" rx="42" ry="12" fill="none" stroke="#FBBF24" stroke-dasharray="6,4" stroke-width="2" opacity="0.85" />
+  
+  <!-- 星星 1 (左) -->
+  <path d="M 44 26 L 47 18 L 52 23 L 60 21 L 55 28 L 58 35 L 50 32 L 44 38 L 45 30 Z" fill="#FBBF24" stroke="#D97706" stroke-width="1" filter="url(#starGlow)" transform="scale(0.8) translate(8, -2)" />
+  <!-- 星星 2 (中，主星) -->
+  <path d="M 80 12 L 83 20 L 91 21 L 85 27 L 87 35 L 80 30 L 73 35 L 75 27 L 69 21 L 77 20 Z" fill="#FDE047" stroke="#F59E0B" stroke-width="1.2" filter="url(#starGlow)" />
+  <!-- 星星 3 (右) -->
+  <path d="M 112 28 L 115 22 L 122 25 L 118 31 L 123 37 L 115 35 L 111 41 L 110 33 L 104 31 L 110 26 Z" fill="#FBBF24" stroke="#D97706" stroke-width="1" filter="url(#starGlow)" transform="scale(0.8) translate(28, 4)" />
+
+  <!-- 左耳 (微垂歪) -->
+  <circle cx="42" cy="54" r="14" fill="#6E3F19" />
+  <circle cx="42" cy="54" r="8" fill="#FFAAA6" />
+
+  <!-- 右耳 -->
+  <circle cx="118" cy="50" r="14" fill="#6E3F19" />
+  <circle cx="118" cy="50" r="8" fill="#FFAAA6" />
+
+  <!-- 身體與大頭 -->
+  <ellipse cx="80" cy="98" rx="52" ry="56" fill="url(#bodyGradDizzy)" />
+
+  <!-- 淺色口鼻與肚子區 -->
+  <ellipse cx="80" cy="100" rx="36" ry="32" fill="url(#bellyGradDizzy)" />
+
+  <!-- 螺旋暈眩眼 (左眼 Spiral) -->
+  <g transform="translate(61, 76)">
+    <circle cx="0" cy="0" r="11" fill="#FFFFFF" stroke="#4A2508" stroke-width="2" />
+    <!-- 螺旋曲線 -->
+    <path d="M 0 0 A 2 2 0 0 1 2 -2 A 4 4 0 0 1 0 4 A 6 6 0 0 1 -6 0 A 8 8 0 0 1 0 -8" fill="none" stroke="#262626" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- 螺旋暈眩眼 (右眼 Spiral) -->
+  <g transform="translate(99, 76)">
+    <circle cx="0" cy="0" r="11" fill="#FFFFFF" stroke="#4A2508" stroke-width="2" />
+    <!-- 螺旋曲線 -->
+    <path d="M 0 0 A 2 2 0 0 0 -2 -2 A 4 4 0 0 0 0 4 A 6 6 0 0 0 6 0 A 8 8 0 0 0 0 -8" fill="none" stroke="#262626" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- 暈眩腮紅 -->
+  <ellipse cx="46" cy="91" rx="6" ry="3.5" fill="#FF8A8A" opacity="0.7" />
+  <ellipse cx="114" cy="91" rx="6" ry="3.5" fill="#FF8A8A" opacity="0.7" />
+
+  <!-- 鼻子 -->
+  <ellipse cx="80" cy="90" rx="9" ry="6.5" fill="#E86A78" />
+
+  <!-- 暈眩波浪嘴巴與吐小舌頭 -->
+  <path d="M 70 98 Q 75 103 80 98 Q 85 93 90 98" fill="none" stroke="#4A2508" stroke-width="2.5" stroke-linecap="round" />
+  <!-- 吐小粉舌 -->
+  <path d="M 77 100 Q 80 106 83 100 Z" fill="#FF6B8B" stroke="#4A2508" stroke-width="1.2" />
+
+  <!-- 歪歪小鬍鬚 -->
+  <line x1="42" y1="95" x2="28" y2="92" stroke="#4A2508" stroke-width="1.8" stroke-linecap="round" opacity="0.7" />
+  <line x1="41" y1="100" x2="29" y2="103" stroke="#4A2508" stroke-width="1.8" stroke-linecap="round" opacity="0.7" />
+  <line x1="118" y1="94" x2="132" y2="91" stroke="#4A2508" stroke-width="1.8" stroke-linecap="round" opacity="0.7" />
+  <line x1="119" y1="99" x2="131" y2="102" stroke="#4A2508" stroke-width="1.8" stroke-linecap="round" opacity="0.7" />
+
+  <!-- 癱軟小爪爪 -->
+  <ellipse cx="48" cy="136" rx="11" ry="8" fill="#E4B88E" stroke="#9C6638" stroke-width="1.5" />
+  <ellipse cx="112" cy="136" rx="11" ry="8" fill="#E4B88E" stroke="#9C6638" stroke-width="1.5" />
+</svg>

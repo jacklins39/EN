@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261030V3';
+        const APP_BUILD_VERSION = '20261030V4';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -55,20 +55,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261030V3"></script>
-    <script src="toeic_data.js?v=20261030V3"></script>
-    <script src="jh_data.js?v=20261030V3"></script>
-    <script src="listening_data.js?v=20261030V3"></script>
-    <script src="listening_words_data.js?v=20261030V3"></script>
-    <script src="uk_phonetics_manifest.js?v=20261030V3"></script>
-    <script src="words_audio_manifest.js?v=20261030V3"></script>
-    <script src="examples_audio_manifest.js?v=20261030V3"></script>
-    <script src="zh_audio_manifest.js?v=20261030V3"></script>
-    <script src="collocations_audio_manifest.js?v=20261030V3"></script>
-    <script src="syn_ant_data.js?v=20261030V3"></script>
-    <script src="synonyms_unit8_data.js?v=20261030V3"></script>
-    <script src="examples_unit9_data.js?v=20261030V3"></script>
-    <script src="game_whack.js?v=20261030V3"></script>
+    <script src="words_data.js?v=20261030V4"></script>
+    <script src="toeic_data.js?v=20261030V4"></script>
+    <script src="jh_data.js?v=20261030V4"></script>
+    <script src="listening_data.js?v=20261030V4"></script>
+    <script src="listening_words_data.js?v=20261030V4"></script>
+    <script src="uk_phonetics_manifest.js?v=20261030V4"></script>
+    <script src="words_audio_manifest.js?v=20261030V4"></script>
+    <script src="examples_audio_manifest.js?v=20261030V4"></script>
+    <script src="zh_audio_manifest.js?v=20261030V4"></script>
+    <script src="collocations_audio_manifest.js?v=20261030V4"></script>
+    <script src="syn_ant_data.js?v=20261030V4"></script>
+    <script src="synonyms_unit8_data.js?v=20261030V4"></script>
+    <script src="examples_unit9_data.js?v=20261030V4"></script>
+    <script src="game_whack.js?v=20261030V4"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -2775,9 +2775,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261030V3</span>
+                        <span id="app-version-display">版本 20261030V4</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261030V3</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261030V4</p>
                 </div>
             </div>
         </div>
@@ -2965,7 +2965,7 @@
                 <div class="pointer-events-none absolute -top-12 left-1/2 -translate-x-1/2 w-64 h-32 bg-gradient-to-b from-amber-400/20 via-orange-400/10 to-transparent blur-2xl rounded-full"></div>
 
                 <div class="relative z-10 flex flex-col items-center text-center">
-                    <img src="images/mole_normal.png" alt="Whack A Mole" class="w-24 h-24 sm:w-28 sm:h-28 object-contain mb-2 drop-shadow-lg select-none" style="animation: bounce 2.2s infinite;">
+                    <img src="images/mole_normal.svg" alt="Whack A Mole" class="w-24 h-24 sm:w-28 sm:h-28 object-contain mb-2 drop-shadow-lg select-none" style="animation: bounce 2.2s infinite;">
                     <h2 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white tracking-tight mb-1">
                         🎮 單字打地鼠競速賽
                     </h2>
@@ -2980,6 +2980,25 @@
                             <option value="speed">⏱️ 60 秒極速爭霸賽 (倒數計時・敲越多分越高)</option>
                             <option value="survival">💖 3 心極限生存賽 (打錯扣心・速度隨時間狂飆)</option>
                         </select>
+                    </div>
+
+                    
+                    <!-- 地鼠停留反應秒數選擇 (5秒 / 10秒 / 3秒 / 自訂) -->
+                    <div class="w-full max-w-sm mb-3.5 text-left">
+                        <div class="flex items-center justify-between mb-1.5 ml-1">
+                            <label class="text-xs font-bold text-slate-600 dark:text-slate-300">⏱️ 地鼠停留秒數 (反應時間)</label>
+                            <span class="text-[11px] text-[#0071E3] font-medium">看懂單字再敲</span>
+                        </div>
+                        <select id="whack-speed-select" class="w-full py-2.5 px-3 bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white font-bold rounded-2xl border border-slate-200/80 dark:border-slate-700 outline-none text-xs sm:text-sm cursor-pointer shadow-2xs">
+                            <option value="5" selected>⚡ 5 秒 (推薦・充裕辨識單字)</option>
+                            <option value="10">🐢 10 秒 (慢速・初學者從容挑選)</option>
+                            <option value="3">🔥 3 秒 (極速・高手反射神經)</option>
+                            <option value="custom">⚙️ 自訂秒數...</option>
+                        </select>
+                        <div id="whack-speed-custom-wrapper" class="hidden mt-2 flex items-center gap-2">
+                            <input type="number" id="whack-speed-custom" min="1" max="30" value="5" class="w-24 py-1.5 px-3 bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white font-bold rounded-xl border border-slate-200 dark:border-slate-700 text-sm outline-none">
+                            <span class="text-xs text-slate-500 font-medium">秒 (可輸入 1～30 秒)</span>
+                        </div>
                     </div>
 
                     <!-- 題庫來源選擇 (含 ⭐ 我的標記單字！) -->

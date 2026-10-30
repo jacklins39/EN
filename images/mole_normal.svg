@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bodyGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#9C6638" />
+      <stop offset="100%" stop-color="#6E3F19" />
+    </radialGradient>
+    <radialGradient id="bellyGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FCE1C3" />
+      <stop offset="100%" stop-color="#E4B88E" />
+    </radialGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="2" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- 左耳 -->
+  <circle cx="44" cy="48" r="15" fill="#6E3F19" />
+  <circle cx="44" cy="48" r="9" fill="#FFAAA6" />
+
+  <!-- 右耳 -->
+  <circle cx="116" cy="48" r="15" fill="#6E3F19" />
+  <circle cx="116" cy="48" r="9" fill="#FFAAA6" />
+
+  <!-- 身體與大頭 -->
+  <ellipse cx="80" cy="95" rx="52" ry="58" fill="url(#bodyGrad)" filter="url(#softShadow)" />
+
+  <!-- 淺色口鼻與肚子腮幫區 -->
+  <ellipse cx="80" cy="98" rx="36" ry="32" fill="url(#bellyGrad)" />
+
+  <!-- 眼睛 (水汪汪大眼) -->
+  <!-- 左眼 -->
+  <ellipse cx="61" cy="74" rx="7.5" ry="9.5" fill="#1E1E1E" />
+  <circle cx="58.5" cy="71" r="3" fill="#FFFFFF" />
+  <circle cx="63.5" cy="77" r="1.5" fill="#FFFFFF" />
+
+  <!-- 右眼 -->
+  <ellipse cx="99" cy="74" rx="7.5" ry="9.5" fill="#1E1E1E" />
+  <circle cx="96.5" cy="71" r="3" fill="#FFFFFF" />
+  <circle cx="101.5" cy="77" r="1.5" fill="#FFFFFF" />
+
+  <!-- 俏皮腮紅 -->
+  <ellipse cx="48" cy="88" rx="6" ry="3.5" fill="#FF8A8A" opacity="0.5" />
+  <ellipse cx="112" cy="88" rx="6" ry="3.5" fill="#FF8A8A" opacity="0.5" />
+
+  <!-- 大鼻子 (粉黑光澤) -->
+  <ellipse cx="80" cy="88" rx="10" ry="7" fill="#E86A78" />
+  <ellipse cx="78" cy="86" rx="4" ry="2" fill="#FFA5AF" />
+
+  <!-- 嘴巴與可愛大白兔牙 -->
+  <path d="M 73 95 Q 80 101 87 95" fill="none" stroke="#4A2508" stroke-width="2.5" stroke-linecap="round" />
+  <!-- 白牙齒 -->
+  <rect x="76.5" y="96" width="7" height="6.5" rx="1.5" fill="#FFFFFF" stroke="#4A2508" stroke-width="1.2" />
+
+  <!-- 可愛鬍鬚 -->
+  <line x1="42" y1="92" x2="28" y2="90" stroke="#4A2508" stroke-width="1.8" stroke-linecap="round" opacity="0.7" />
+  <line x1="43" y1="97" x2="30" y2="99" stroke="#4A2508" stroke-width="1.8" stroke-linecap="round" opacity="0.7" />
+  <line x1="118" y1="92" x2="132" y2="90" stroke="#4A2508" stroke-width="1.8" stroke-linecap="round" opacity="0.7" />
+  <line x1="117" y1="97" x2="130" y2="99" stroke="#4A2508" stroke-width="1.8" stroke-linecap="round" opacity="0.7" />
+
+  <!-- 雙手小爪爪 (搭在洞緣) -->
+  <ellipse cx="46" cy="132" rx="12" ry="9" fill="#E4B88E" stroke="#9C6638" stroke-width="1.5" />
+  <ellipse cx="114" cy="132" rx="12" ry="9" fill="#E4B88E" stroke="#9C6638" stroke-width="1.5" />
+</svg>

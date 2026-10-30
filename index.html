@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261029V1';
+        const APP_BUILD_VERSION = '20261030V1';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -2103,6 +2103,7 @@
                 <div class="flex bg-gray-100 p-1 rounded-2xl mb-4">
                     <button id="btn-dict-all" class="flex-1 py-2 text-sm font-medium rounded-xl bg-white shadow-sm text-[#0071E3] transition-all">全部單字</button>
                     <button id="btn-dict-weak" class="flex-1 py-2 text-sm font-medium rounded-xl text-[#86868B] hover:text-gray-700 transition-all">弱點單字</button>
+                    <button id="btn-dict-marked" class="flex-1 py-2 text-sm font-medium rounded-xl text-[#86868B] hover:text-gray-700 transition-all">⭐ 標記</button>
                 </div>
 
                 <div class="relative mb-4">
@@ -2113,6 +2114,10 @@
                 <div id="weak-list-header" class="hidden">
                     <p class="text-[#86868B] text-xs mb-3">🔴 錯 3 次以上　🟠 錯 2 次　🟡 錯 1 次　(點擊預覽/發音)</p>
                     <button id="btn-weak-practice" class="w-full bg-red-50 hover:bg-[#FF3B30] bg-opacity-10 text-[#FF3B30] font-medium py-2 rounded-2xl shadow-sm border-0 border-red-100 mb-4 transition-colors">加強練習錯題</button>
+                </div>
+                <div id="marked-list-header" class="hidden">
+                    <p class="text-[#86868B] text-xs mb-3">點單字右邊的 ⭐ 可取消標記，點單字看詳解</p>
+                    <button id="btn-marked-practice" class="w-full bg-amber-50 hover:bg-amber-100 text-amber-600 font-medium py-2 rounded-2xl shadow-sm border-0 mb-4 transition-colors">練習標記單字</button>
                 </div>
                 <div id="weak-list" class="max-h-[28rem] overflow-y-auto pr-1 custom-scrollbar space-y-1"></div>
             </div>
@@ -2856,6 +2861,7 @@
                 <!-- 頂部導航與關閉列 -->
                 <div class="flex justify-between items-center pb-3 border-b border-gray-100 mb-3 shrink-0">
                     <div class="flex items-center gap-2">
+                        <button id="btn-detail-mark" type="button" class="hidden text-xl leading-none p-1.5 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors cursor-pointer" title="標記 / 取消標記" aria-label="標記單字">☆</button>
                         <span id="detail-modal-source-badge" class="text-xs font-bold px-2.5 py-1 rounded-full bg-blue-50 text-[#0071E3] border border-blue-200 font-mono">單字深度詳解</span>
                     </div>
                     <button id="btn-close-word-detail" class="text-gray-400 hover:text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-full p-1.5 transition-colors cursor-pointer" title="關閉">
@@ -3740,6 +3746,8 @@
                                 mistakes: mergedMistakes
                             };
                             if (mergedStudyDays.length > 0) mergedItem.studyDays = mergedStudyDays;
+                            const pickedMarks = Array.isArray(primary.marks) ? primary.marks : (Array.isArray(lp.marks) ? lp.marks : cp.marks);
+                            if (Array.isArray(pickedMarks)) mergedItem.marks = [...pickedMarks];
                             const firstDay = Math.min(lp.firstLearnedDay || Infinity, cp.firstLearnedDay || Infinity);
                             if (Number.isFinite(firstDay)) mergedItem.firstLearnedDay = firstDay;
                             if (clearTime > 0) mergedItem.mistakesClearedAt = clearTime;
@@ -9064,6 +9072,7 @@
                 : (detectedUnit ? getUnitBadgeInfo(detectedUnit) : { name: '外部詞彙', color: 'bg-purple-50 text-purple-700 border-purple-200' });
 
             // 更新彈窗頂部來源徽章
+            updateDetailMarkBtn(w);
             const badgeEl = document.getElementById('detail-modal-source-badge');
             if (badgeEl) {
                 badgeEl.className = `text-xs font-bold px-2.5 py-1 rounded-full border ${unitInfo.color} font-mono`;
@@ -10579,7 +10588,72 @@
             return s;
         }
 
-        let currentDictMode = 'all'; // 'all' or 'weak'
+        // ==========================================
+        // ⭐ 單字標記：存於 userProgress[id].marks (隨學習進度一起同步，可隨時取消)
+        // 未學過的字只會建立 level:0 的空紀錄，統計與每日計畫都視為「尚未學習」
+        // ==========================================
+        function isWordMarked(id) {
+            const p = userProgress[id];
+            return !!(p && Array.isArray(p.marks) && p.marks.includes('fav'));
+        }
+        function toggleWordMark(id) {
+            if (id === undefined || id === null || id === '') return false;
+            let p = userProgress[id];
+            if (!p) p = userProgress[id] = { level: 0, nextReviewDay: 0, mistakes: [] };
+            const marks = Array.isArray(p.marks) ? p.marks.slice() : [];
+            const idx = marks.indexOf('fav');
+            if (idx >= 0) marks.splice(idx, 1); else marks.push('fav');
+            p.marks = marks;
+            p.updatedAt = Date.now();
+            try { saveDailyPlansLocally(); saveToCloud(); } catch (e) { console.warn(e); }
+            return idx < 0;
+        }
+        function getMarkedWords() {
+            const list = [];
+            for (const id in userProgress) {
+                if (!isWordMarked(id)) continue;
+                const w = vocabularyDB.find(x => String(x.id) === String(id));
+                if (w) list.push(w);
+            }
+            list.sort((a, b) => a.en.localeCompare(b.en));
+            return list;
+        }
+        function markStarBtnHtml(w) {
+            const on = isWordMarked(w.id);
+            return `<button type="button" class="mark-star-btn p-2 text-lg leading-none ${on ? 'text-amber-400' : 'text-gray-300 hover:text-amber-400'}" data-mark-id="${esc(String(w.id))}" title="${on ? '取消標記' : '標記單字'}" aria-label="${on ? '取消標記' : '標記單字'}">${on ? '⭐' : '☆'}</button>`;
+        }
+        function setStarBtnState(btn, on) {
+            btn.textContent = on ? '⭐' : '☆';
+            btn.title = btn.ariaLabel = on ? '取消標記' : '標記單字';
+            btn.classList.toggle('text-amber-400', on);
+            btn.classList.toggle('text-gray-300', !on);
+            btn.classList.toggle('hover:text-amber-400', !on);
+        }
+        function updateMarkedPracticeBtn() {
+            const btn = document.getElementById('btn-marked-practice');
+            if (!btn) return;
+            const n = getMarkedWords().length;
+            btn.innerText = n ? `⭐ 練習標記單字 (${n} 字)` : '還沒有標記單字';
+            btn.disabled = !n;
+            btn.classList.toggle('opacity-50', !n);
+        }
+        function updateDetailMarkBtn(w) {
+            const btn = document.getElementById('btn-detail-mark');
+            if (!btn) return;
+            const hasId = w && w.id !== undefined && w.id !== null;
+            btn.classList.toggle('hidden', !hasId);
+            if (!hasId) { delete btn.dataset.markId; return; }
+            btn.dataset.markId = String(w.id);
+            const on = isWordMarked(w.id);
+            btn.textContent = on ? '⭐' : '☆';
+            btn.title = on ? '取消標記' : '標記單字';
+        }
+        function dictSearchMatch(w, q) {
+            const uk = w.uk || (window.UK_PHONETICS_MANIFEST && window.UK_PHONETICS_MANIFEST[w.en.toLowerCase()]) || '';
+            return w.en.toLowerCase().includes(q) || (w.zh && w.zh.includes(q)) || (w.kk && w.kk.toLowerCase().includes(q)) || uk.toLowerCase().includes(q);
+        }
+
+        let currentDictMode = 'all'; // 'all' | 'weak' | 'marked'
         
         function renderDictView() {
             const listContainer = document.getElementById('weak-list');
@@ -10587,17 +10661,14 @@
             const weakHeader = document.getElementById('weak-list-header');
             
             // Toggle Tab Styles
-            const btnAll = document.getElementById('btn-dict-all');
-            const btnWeak = document.getElementById('btn-dict-weak');
-            if (currentDictMode === 'all') {
-                btnAll.className = 'flex-1 py-2 text-sm font-medium rounded-xl bg-white shadow-sm text-[#0071E3] transition-all';
-                btnWeak.className = 'flex-1 py-2 text-sm font-medium rounded-xl text-[#86868B] hover:text-gray-700 transition-all';
-                weakHeader.classList.add('hidden');
-            } else {
-                btnWeak.className = 'flex-1 py-2 text-sm font-medium rounded-xl bg-white shadow-sm text-[#0071E3] transition-all';
-                btnAll.className = 'flex-1 py-2 text-sm font-medium rounded-xl text-[#86868B] hover:text-gray-700 transition-all';
-                weakHeader.classList.remove('hidden');
-            }
+            const TAB_ON = 'flex-1 py-2 text-sm font-medium rounded-xl bg-white shadow-sm text-[#0071E3] transition-all';
+            const TAB_OFF = 'flex-1 py-2 text-sm font-medium rounded-xl text-[#86868B] hover:text-gray-700 transition-all';
+            document.getElementById('btn-dict-all').className = currentDictMode === 'all' ? TAB_ON : TAB_OFF;
+            document.getElementById('btn-dict-weak').className = currentDictMode === 'weak' ? TAB_ON : TAB_OFF;
+            document.getElementById('btn-dict-marked').className = currentDictMode === 'marked' ? TAB_ON : TAB_OFF;
+            weakHeader.classList.toggle('hidden', currentDictMode !== 'weak');
+            const markedHeader = document.getElementById('marked-list-header');
+            if (markedHeader) markedHeader.classList.toggle('hidden', currentDictMode !== 'marked');
 
             let html = '';
             
@@ -10625,9 +10696,30 @@
                                 <div class="text-[13px] text-[#86868B] truncate">${esc(w.zh)}</div>
                             </div>
                         </div>
-                        <div class="text-[11px] font-medium text-[#FF3B30] bg-red-50 px-2 py-1 rounded-md shrink-0 ml-2">${c} 次錯</div>
+                        <div class="flex items-center gap-1 shrink-0 ml-2">
+                            <div class="text-[11px] font-medium text-[#FF3B30] bg-red-50 px-2 py-1 rounded-md">${c} 次錯</div>
+                            ${markStarBtnHtml(w)}
+                        </div>
                     </div>`).join('')
                     : '<p class="text-[#86868B] text-sm text-center py-8">目前沒有符合條件的弱點單字 🎉</p>';
+            } else if (currentDictMode === 'marked') {
+                let markedList = getMarkedWords();
+                if (searchInput) markedList = markedList.filter(w => dictSearchMatch(w, searchInput));
+                updateMarkedPracticeBtn();
+                html = markedList.length ? markedList.map(w => `
+                    <div class="weak-row flex items-center justify-between py-3 px-3 border-b border-gray-100 last:border-0 hover:bg-[#F5F5F7] rounded-2xl cursor-pointer transition-colors" data-id="${esc(String(w.id))}" data-word="${esc(w.en)}">
+                        <div class="flex items-center gap-3 min-w-0">
+                            <div class="min-w-0">
+                                <div class="font-semibold text-[#1D1D1F] text-[15px] flex items-center gap-1.5 flex-wrap">${esc(w.en)} ${renderPhoneticsBadgesHtml(w, 'sm')}</div>
+                                <div class="text-[13px] text-[#86868B] truncate">${esc(w.zh)}</div>
+                            </div>
+                        </div>
+                        <div class="shrink-0 ml-2 flex items-center">
+                            ${markStarBtnHtml(w)}
+                            <button class="text-indigo-400 hover:text-[#0071E3] p-1" onclick="playAudio('${esc(w.en)}'); event.stopPropagation();">🔊</button>
+                        </div>
+                    </div>`).join('')
+                    : '<p class="text-[#86868B] text-sm text-center py-8">還沒有標記的單字<br>到「全部單字」點單字右邊的 ☆ 就能標記 ⭐</p>';
             } else {
                 // All Words Mode - 全域去重演算法 (依英文單字去重，保留詞性最完整、品質最高的項目)
                 const seenEn = new Map();
@@ -10670,7 +10762,8 @@
                                 <div class="text-[13px] text-[#86868B] truncate">${esc(w.zh)}</div>
                             </div>
                         </div>
-                        <div class="shrink-0 ml-2">
+                        <div class="shrink-0 ml-2 flex items-center">
+                            ${markStarBtnHtml(w)}
                             <button class="text-indigo-400 hover:text-[#0071E3] p-1" onclick="playAudio('${esc(w.en)}'); event.stopPropagation();">🔊</button>
                         </div>
                     </div>`).join('')
@@ -10733,14 +10826,14 @@
             });
         }
 
-        function startWeakPractice(words) {
+        function startWeakPractice(words, title = WEAK_TITLE) {
             if (!words.length) return;
             const q = [...words];
             for (let i = q.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
                 [q[i], q[j]] = [q[j], q[i]];
             }
-            sessionTitle = WEAK_TITLE;
+            sessionTitle = title;
             sessionQueue = q; mistakeQueue = [];
             isMistakeMode = false; isAutoFlashcardMode = false; isManualCardMode = false;
             totalCardsInSession = q.length; cardsCompleted = 0; resetSessionStats(q);
@@ -10751,6 +10844,14 @@
 
         document.getElementById('btn-weak-practice').addEventListener('click', () => startWeakPractice(getWeakList().map(x => x.w)));
         document.getElementById('weak-list').addEventListener('click', (e) => {
+            const starBtn = e.target.closest('.mark-star-btn');
+            if (starBtn) {
+                const on = toggleWordMark(starBtn.dataset.markId);
+                setStarBtnState(starBtn, on);
+                updateMarkedPracticeBtn();
+                showQuickToast(on ? '⭐ 已標記' : '已取消標記');
+                return;
+            }
             const row = e.target.closest('.weak-row');
             if (row) {
                 if (currentDictMode === 'weak') {
@@ -12764,6 +12865,31 @@
         document.getElementById('btn-dict-weak').addEventListener('click', () => {
             currentDictMode = 'weak';
             renderDictView();
+        });
+        document.getElementById('btn-dict-marked').addEventListener('click', () => {
+            currentDictMode = 'marked';
+            renderDictView();
+        });
+        document.getElementById('btn-marked-practice').addEventListener('click', () => {
+            const words = getMarkedWords();
+            if (!words.length) return;
+            unlockMobileAudio();
+            startWeakPractice(words, '⭐ 標記單字練習');
+        });
+        document.getElementById('btn-detail-mark').addEventListener('click', (e) => {
+            const id = e.currentTarget.dataset.markId;
+            if (!id) return;
+            const on = toggleWordMark(id);
+            const w = vocabularyDB.find(x => String(x.id) === String(id));
+            updateDetailMarkBtn(w);
+            showQuickToast(on ? '⭐ 已標記' : '已取消標記');
+            const dictView = document.getElementById('view-weak');
+            if (dictView && !dictView.classList.contains('hidden')) {
+                const list = document.getElementById('weak-list');
+                const top = list ? list.scrollTop : 0;
+                renderDictView();
+                if (list) list.scrollTop = top;
+            }
         });
         document.getElementById('dict-search').addEventListener('input', () => {
             renderDictView();

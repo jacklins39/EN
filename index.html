@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261030V2';
+        const APP_BUILD_VERSION = '20261030V3';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -55,19 +55,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261030V2"></script>
-    <script src="toeic_data.js?v=20261030V2"></script>
-    <script src="jh_data.js?v=20261030V2"></script>
-    <script src="listening_data.js?v=20261030V2"></script>
-    <script src="listening_words_data.js?v=20261030V2"></script>
-    <script src="uk_phonetics_manifest.js?v=20261030V2"></script>
-    <script src="words_audio_manifest.js?v=20261030V2"></script>
-    <script src="examples_audio_manifest.js?v=20261030V2"></script>
-    <script src="zh_audio_manifest.js?v=20261030V2"></script>
-    <script src="collocations_audio_manifest.js?v=20261030V2"></script>
-    <script src="syn_ant_data.js?v=20261030V2"></script>
-    <script src="synonyms_unit8_data.js?v=20261030V2"></script>
-    <script src="examples_unit9_data.js?v=20261030V2"></script>
+    <script src="words_data.js?v=20261030V3"></script>
+    <script src="toeic_data.js?v=20261030V3"></script>
+    <script src="jh_data.js?v=20261030V3"></script>
+    <script src="listening_data.js?v=20261030V3"></script>
+    <script src="listening_words_data.js?v=20261030V3"></script>
+    <script src="uk_phonetics_manifest.js?v=20261030V3"></script>
+    <script src="words_audio_manifest.js?v=20261030V3"></script>
+    <script src="examples_audio_manifest.js?v=20261030V3"></script>
+    <script src="zh_audio_manifest.js?v=20261030V3"></script>
+    <script src="collocations_audio_manifest.js?v=20261030V3"></script>
+    <script src="syn_ant_data.js?v=20261030V3"></script>
+    <script src="synonyms_unit8_data.js?v=20261030V3"></script>
+    <script src="examples_unit9_data.js?v=20261030V3"></script>
+    <script src="game_whack.js?v=20261030V3"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -446,6 +447,15 @@
             opacity: 1 !important;
             -webkit-user-select: text;
             user-select: text;
+        }
+    
+        @keyframes whackShake {
+            0%, 100% { transform: translateX(0); }
+            20%, 60% { transform: translateX(-6px); }
+            40%, 80% { transform: translateX(6px); }
+        }
+        .animate-shake {
+            animation: whackShake 0.35s ease-in-out;
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -2765,9 +2775,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261030V2</span>
+                        <span id="app-version-display">版本 20261030V3</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261030V2</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261030V3</p>
                 </div>
             </div>
         </div>
@@ -2946,10 +2956,144 @@
             </div>
         </div>
 
+        
+        <!-- 打地鼠單字競速賽視圖 (Word Whack Challenge) -->
+        <div id="view-game" class="w-full hidden pb-8">
+            <!-- 1. 遊戲大廳面板 (Lobby) -->
+            <div id="whack-lobby-panel" class="bg-white dark:bg-slate-900 rounded-3xl shadow-sm border border-slate-200/80 dark:border-slate-800 p-5 sm:p-7 relative overflow-hidden transition-all">
+                <!-- 裝飾光暈 -->
+                <div class="pointer-events-none absolute -top-12 left-1/2 -translate-x-1/2 w-64 h-32 bg-gradient-to-b from-amber-400/20 via-orange-400/10 to-transparent blur-2xl rounded-full"></div>
+
+                <div class="relative z-10 flex flex-col items-center text-center">
+                    <img src="images/mole_normal.png" alt="Whack A Mole" class="w-24 h-24 sm:w-28 sm:h-28 object-contain mb-2 drop-shadow-lg select-none" style="animation: bounce 2.2s infinite;">
+                    <h2 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white tracking-tight mb-1">
+                        🎮 單字打地鼠競速賽
+                    </h2>
+                    <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 max-w-xs mb-5 font-medium leading-relaxed">
+                        極速直覺反射特訓！看上方中文釋義，以最快速度敲中正確英文地鼠！
+                    </p>
+
+                    <!-- 遊戲模式選擇 -->
+                    <div class="w-full max-w-sm mb-3.5 text-left">
+                        <label class="block text-xs font-bold text-slate-600 dark:text-slate-300 mb-1.5 ml-1">🎯 競速模式</label>
+                        <select id="whack-mode-select" class="w-full py-2.5 px-3 bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white font-bold rounded-2xl border border-slate-200/80 dark:border-slate-700 outline-none text-xs sm:text-sm cursor-pointer shadow-2xs">
+                            <option value="speed">⏱️ 60 秒極速爭霸賽 (倒數計時・敲越多分越高)</option>
+                            <option value="survival">💖 3 心極限生存賽 (打錯扣心・速度隨時間狂飆)</option>
+                        </select>
+                    </div>
+
+                    <!-- 題庫來源選擇 (含 ⭐ 我的標記單字！) -->
+                    <div class="w-full max-w-sm mb-5 text-left">
+                        <label class="block text-xs font-bold text-slate-600 dark:text-slate-300 mb-1.5 ml-1">📚 出題字庫</label>
+                        <select id="whack-scope-select" class="w-full py-2.5 px-3 bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white font-bold rounded-2xl border border-slate-200/80 dark:border-slate-700 outline-none text-xs sm:text-sm cursor-pointer shadow-2xs">
+                            <option value="current">📖 當前單元單字</option>
+                            <option value="marked">⭐ 我的標記單字 (專打收藏標記字)</option>
+                            <option value="weak">🔴 弱點錯題單字 (強化記憶死角)</option>
+                            <option value="all">🌍 全字庫大亂鬥</option>
+                        </select>
+                    </div>
+
+                    <!-- 歷史最高分徽章 -->
+                    <div class="grid grid-cols-2 gap-2.5 w-full max-w-sm mb-5 text-xs">
+                        <div class="bg-amber-50/70 dark:bg-amber-950/30 p-2.5 rounded-2xl border border-amber-200/60 dark:border-amber-800/50">
+                            <span class="text-[11px] text-amber-700 dark:text-amber-400 block font-semibold mb-0.5">⏱️ 60秒最佳紀錄</span>
+                            <span id="whack-best-speed" class="font-black text-amber-900 dark:text-amber-200 text-base">0 分</span>
+                        </div>
+                        <div class="bg-rose-50/70 dark:bg-rose-950/30 p-2.5 rounded-2xl border border-rose-200/60 dark:border-rose-800/50">
+                            <span class="text-[11px] text-rose-700 dark:text-rose-400 block font-semibold mb-0.5">💖 生存最佳紀錄</span>
+                            <span id="whack-best-surv" class="font-black text-rose-900 dark:text-rose-200 text-base">0 分</span>
+                        </div>
+                    </div>
+
+                    <!-- 開始遊戲按鈕 -->
+                    <button id="btn-whack-start" type="button" class="w-full max-w-sm py-3.5 px-6 rounded-2xl font-black text-base text-white bg-gradient-to-r from-[#0071E3] via-blue-600 to-indigo-600 hover:opacity-95 shadow-lg shadow-blue-500/25 active:scale-95 transition-all cursor-pointer flex items-center justify-center gap-2">
+                        <span>🚀 立即開打</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 2. 遊戲進行面板 (Active Game) -->
+            <div id="whack-game-panel" class="hidden flex flex-col gap-3">
+                <!-- 頂部即時數據與退出列 -->
+                <div class="bg-white dark:bg-slate-900 rounded-2xl p-3 border border-slate-200/80 dark:border-slate-800 shadow-sm flex items-center justify-between">
+                    <!-- 分數與連擊 -->
+                    <div class="flex items-center gap-2">
+                        <div class="flex flex-col">
+                            <span class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Score</span>
+                            <span id="whack-score" class="text-xl sm:text-2xl font-black text-[#0071E3] leading-none">0</span>
+                        </div>
+                        <span id="whack-combo" class="opacity-0 px-2 py-0.5 bg-gradient-to-r from-amber-500 to-orange-500 text-white font-extrabold text-[11px] rounded-full shadow-2xs transition-opacity duration-200">
+                            Combo x0
+                        </span>
+                    </div>
+
+                    <!-- 倒數時間 或 生命值 -->
+                    <div class="flex items-center gap-2">
+                        <div id="whack-time-badge" class="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-xl border border-slate-200/80 dark:border-slate-700 font-mono font-black text-sm text-slate-700 dark:text-slate-200">
+                            ⏱️ <span id="whack-timer">60s</span>
+                        </div>
+                        <div id="whack-lives-badge" class="hidden px-2.5 py-1 bg-rose-50 dark:bg-rose-950/40 rounded-xl border border-rose-200/80 dark:border-rose-800/60 font-mono text-xs">
+                            <span id="whack-lives">❤️❤️❤️</span>
+                        </div>
+                        <button id="btn-whack-quit" type="button" class="text-xs text-rose-600 hover:text-rose-700 bg-rose-50 hover:bg-rose-100 px-2.5 py-1.5 rounded-xl font-bold transition-all cursor-pointer">
+                            🚪 退出
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 當前題目目標卡 (大字醒目繁體中文) -->
+                <div class="bg-gradient-to-br from-blue-50/90 to-indigo-50/70 dark:from-slate-800 dark:to-slate-900 rounded-3xl p-4 sm:p-5 border border-blue-200/80 dark:border-slate-700 text-center shadow-sm relative">
+                    <div class="text-[11px] font-bold text-blue-600 dark:text-blue-400 mb-1 flex items-center justify-center gap-1">
+                        <span>🎯 請敲中正確單字</span>
+                        <button id="btn-whack-target-audio" type="button" class="p-1 text-blue-500 hover:text-blue-700 rounded-full cursor-pointer ml-1" title="重播發音">🔊</button>
+                    </div>
+                    <div class="flex items-center justify-center gap-1.5 flex-wrap">
+                        <span id="whack-target-pos" class="hidden text-xs bg-white/90 dark:bg-slate-800 text-blue-600 dark:text-blue-400 border border-blue-200 dark:border-slate-600 px-1.5 py-0.5 rounded font-mono font-bold">v.</span>
+                        <h3 id="whack-target-zh" class="text-xl sm:text-2xl font-black text-slate-900 dark:text-white tracking-tight break-all">目標中文</h3>
+                    </div>
+                </div>
+
+                <!-- 3x3 九宮格打地鼠主戰場 -->
+                <div id="whack-holes-grid" class="grid grid-cols-3 gap-2.5 sm:gap-3.5 w-full max-w-sm mx-auto my-1">
+                    <!-- 由 game_whack.js 動態渲染 9 個洞口 -->
+                </div>
+            </div>
+
+            <!-- 3. 結算對話框 (Result Modal) -->
+            <div id="whack-result-modal" class="fixed inset-0 bg-gray-900/60 z-[80] hidden flex items-center justify-center p-3 sm:p-4 backdrop-blur-md">
+                <div class="bg-white dark:bg-slate-900 rounded-3xl shadow-2xl p-5 sm:p-6 max-w-sm w-full relative flex flex-col border border-slate-200 dark:border-slate-800 dict-modal-anim max-h-[90vh]">
+                    <div class="text-center mb-3">
+                        <span class="text-3xl mb-1 block">🏆</span>
+                        <h3 id="whack-result-title" class="text-xl font-black text-slate-900 dark:text-white">遊戲結束</h3>
+                        <div id="whack-result-score" class="my-2"></div>
+                    </div>
+
+                    <!-- 統計數據 (擊中、連擊、精準度) -->
+                    <div id="whack-result-stats" class="grid grid-cols-3 gap-2 mb-3"></div>
+
+                    <!-- 錯題檢視區 (可發音、一鍵 ⭐ 標記) -->
+                    <div class="text-left flex-1 min-h-0 flex flex-col mb-4">
+                        <span class="text-xs font-bold text-slate-500 mb-1.5">📝 錯題覆盤 (點 ⭐ 加入標記)：</span>
+                        <div id="whack-wrong-list" class="overflow-y-auto max-h-40 space-y-1.5 pr-1 custom-scrollbar"></div>
+                    </div>
+
+                    <!-- 操作按鈕 -->
+                    <div class="grid grid-cols-2 gap-2 shrink-0">
+                        <button id="btn-whack-close-result" type="button" class="py-2.5 rounded-xl font-bold text-xs text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 transition cursor-pointer">
+                            返回大廳
+                        </button>
+                        <button id="btn-whack-restart" type="button" class="py-2.5 rounded-xl font-bold text-xs text-white bg-[#0071E3] hover:bg-blue-600 transition shadow-sm cursor-pointer">
+                            再玩一局 🚀
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         </main>
 
     <nav class="fixed bottom-0 left-0 right-0 max-w-md mx-auto bg-white/95 backdrop-blur-md border-t border-slate-200/80 z-50 shadow-[0_-4px_20px_rgba(15,23,42,0.04)] pb-[env(safe-area-inset-bottom)]">
-        <div class="grid grid-cols-4 items-center h-16">
+        <div class="grid grid-cols-5 items-center h-16">
             <button id="tab-btn-dashboard" class="flex flex-col items-center justify-center w-full h-full text-[#0071E3] transition-colors" onclick="switchTab('view-dashboard', this)">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
                 <span class="text-[11px] font-semibold">學習</span>
@@ -2961,6 +3105,10 @@
             <button id="tab-btn-weak" class="flex flex-col items-center justify-center w-full h-full text-gray-400 hover:text-[#0071E3] transition-colors" onclick="switchTab('view-weak', this)">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
                 <span class="text-[11px] font-medium">字庫</span>
+            </button>
+            <button id="tab-btn-game" class="flex flex-col items-center justify-center w-full h-full text-gray-400 hover:text-[#0071E3] transition-colors" onclick="switchTab('view-game', this)">
+                <span class="text-lg leading-none mb-1 select-none">🎮</span>
+                <span class="text-[11px] font-medium">挑戰</span>
             </button>
             <button id="tab-btn-settings" class="flex flex-col items-center justify-center w-full h-full text-gray-400 hover:text-[#0071E3] transition-colors" onclick="switchTab('view-settings', this)">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
@@ -4376,7 +4524,8 @@
             'view-study',
             'view-listening',
             'view-settings',
-            'view-completed'
+            'view-completed',
+            'view-game'
         ];
 
         function hideAllViews() {
@@ -4404,7 +4553,8 @@
                 document.getElementById('tab-btn-dashboard'),
                 document.getElementById('tab-btn-listening'),
                 document.getElementById('tab-btn-weak'),
-                document.getElementById('tab-btn-settings')
+                document.getElementById('tab-btn-settings'),
+                document.getElementById('tab-btn-game')
             ];
             
             navBtns.forEach(btn => {
@@ -4420,6 +4570,13 @@
                 btnEl.classList.add('text-[#0071E3]');
             }
             
+            
+            if (viewId === 'view-game') {
+                if (typeof initWhackGameView === 'function') initWhackGameView();
+            } else {
+                if (typeof quitWhackGame === 'function') quitWhackGame();
+            }
+
             // Handle specific view init/cleanup
             if (viewId === 'view-study-lobby') {
                 viewId = 'view-dashboard';

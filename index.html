@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261030V6';
+        const APP_BUILD_VERSION = '20261031V1';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -4620,6 +4620,30 @@
             localStorage.setItem('vocab_last_date', todayStr);
         }
 
+        // ==========================================
+        // SRS 畢業機制：當單字等級達 Level 3 以上（掌握狀態），自動移出弱點與錯題
+        // ==========================================
+        function cleanupMasteredMistakes() {
+            let changed = false;
+            for (const id in userProgress) {
+                const p = userProgress[id];
+                if (p && p.level >= 3 && (p.lastMistakeDay !== undefined || (Array.isArray(p.mistakes) && p.mistakes.length > 0))) {
+                    const nowTs = Date.now();
+                    p.mistakes = [];
+                    p.mistakesClearedAt = nowTs;
+                    p.updatedAt = nowTs;
+                    delete p.lastMistakeDay;
+                    changed = true;
+                }
+            }
+            if (changed) {
+                try {
+                    localStorage.setItem('vocab_user_progress', JSON.stringify(userProgress));
+                    saveDailyPlansLocally();
+                } catch(e) {}
+            }
+        }
+
         function initLocalData() {
             try {
                 const saved = JSON.parse(localStorage.getItem('vocab_user_progress') || '{}');
@@ -4654,6 +4678,9 @@
                 console.warn("讀取本地計畫異常", e);
                 dailyPlans = {};
             }
+
+            // SRS 畢業校驗：自動將已達 Level 3 以上掌握狀態的單字移出弱點與歷史錯題
+            cleanupMasteredMistakes();
 
             currentUnit = normalizeUnitId(localStorage.getItem('vocab_current_unit'));
             const unitSel = document.getElementById('unit-selector');
@@ -5128,10 +5155,11 @@
                 }
             }
 
-            // 統計錯題數
+            // 統計錯題數 (排除已達 Level 3 以上掌握狀態之畢業單字)
             let mistakeCount = 0;
             for (let id in userProgress) {
                 const p = userProgress[id];
+                if (p && p.level >= 3) continue;
                 if (p.lastMistakeDay !== undefined) {
                     const w = vocabularyDB.find(x => x.id == id);
                     if (w && (w.unit || Math.ceil(w.id / 1000) || 1) === currentUnit) mistakeCount++;
@@ -5914,6 +5942,8 @@
                     let levelText = '';
                     if (wasMistakeMode) {
                         levelText = '✅ 錯題攻克 · 回歸 LV1';
+                    } else if (oldLevel < 3 && newLevel >= 3) {
+                        levelText = `🎉 晉升 LV${newLevel} 掌握 · 移出錯題！`;
                     } else if (newLevel >= MAX_LEVEL) {
                         levelText = `👑 晉升 LV${newLevel} 永久精通！`;
                     } else {
@@ -6271,6 +6301,15 @@
                     }
                     progress.nextReviewDay = virtualCurrentDay + (SRS_INTERVALS[progress.level] || 1);
                     if (!progress.studyDays.includes(virtualCurrentDay)) progress.studyDays.push(virtualCurrentDay);
+
+                    // SRS 畢業門檻：等級提升至 Level 3 以上（掌握狀態），自動移出弱點與歷史錯題清單
+                    if (progress.level >= 3 && (progress.lastMistakeDay !== undefined || (Array.isArray(progress.mistakes) && progress.mistakes.length > 0))) {
+                        const nowTs = Date.now();
+                        progress.mistakes = [];
+                        progress.mistakesClearedAt = nowTs;
+                        progress.updatedAt = nowTs;
+                        delete progress.lastMistakeDay;
+                    }
                 } else {
                     progress.level = Math.max(0, progress.level - 1); // 答錯只降一級，降低挫折感
                     if (progress.level < MAX_LEVEL) {
@@ -11152,6 +11191,8 @@
             const list = [];
             for (const id in userProgress) {
                 const p = userProgress[id];
+                // 等級已達 Level 3 以上（掌握狀態）者自動畢業，不列入弱點特訓
+                if (p && p.level >= 3) continue;
                 const c = mistakeCountOf(p);
                 if (!c) continue;
                 const w = vocabularyDB.find(x => x.id == id);
@@ -11495,6 +11536,8 @@
             const list = [];
             for (let id in userProgress) {
                 const progress = userProgress[id];
+                // 等級已達 Level 3 以上（掌握狀態）者自動畢業，不列入歷史錯題複習
+                if (progress && progress.level >= 3) continue;
                 if (progress && progress.lastMistakeDay !== undefined && (virtualCurrentDay - progress.lastMistakeDay <= daysRange)) {
                     const w = vocabularyDB.find(word => word.id == id);
                     if (w && (w.unit || Math.ceil(w.id / 1000) || 1) === currentUnit) list.push(w);

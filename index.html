@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261030V5';
+        const APP_BUILD_VERSION = '20261030V6';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -21,15 +21,23 @@
         }
     </script>
     <script>
-        // 立即防白光閃爍主題初始化 (Apple Dark/Light Theme Anti-FOUC)
+        // 立即防閃爍主題初始化 (Warm Paper / Modern Slate / Dark Anti-FOUC)
         (function() {
             try {
                 const savedTheme = localStorage.getItem('app_theme');
                 const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-                if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
-                    document.documentElement.classList.add('dark');
+                let theme = savedTheme;
+                if (!theme) {
+                    theme = systemPrefersDark ? 'dark' : 'paper';
+                }
+                const root = document.documentElement;
+                root.classList.remove('dark', 'theme-paper', 'theme-slate');
+                if (theme === 'dark') {
+                    root.classList.add('dark');
+                } else if (theme === 'slate' || theme === 'light') {
+                    root.classList.add('theme-slate');
                 } else {
-                    document.documentElement.classList.remove('dark');
+                    root.classList.add('theme-paper');
                 }
             } catch (e) {}
         })();
@@ -1501,9 +1509,40 @@
         html.dark textarea::placeholder {
             color: #64748B !important;
         }
+        html.dark {
+            color-scheme: dark !important;
+        }
+        .select-group-header {
+            font-weight: 700 !important;
+            font-size: 11px !important;
+            letter-spacing: 0.05em;
+            padding-top: 5px !important;
+            padding-bottom: 3px !important;
+            cursor: default !important;
+        }
+        html.dark .select-group-header,
+        html.dark select optgroup {
+            background-color: #1E293B !important;
+            color: #94A3B8 !important;
+            font-weight: 700 !important;
+        }
+        html.dark select,
         html.dark select option {
+            color-scheme: dark !important;
             background-color: #121927 !important;
             color: #F8FAFC !important;
+        }
+        html.theme-paper .select-group-header,
+        html.theme-paper select optgroup {
+            background-color: #EDE7DC !important;
+            color: #736B5E !important;
+            font-weight: 700 !important;
+        }
+        html.theme-slate .select-group-header,
+        html:not(.dark):not(.theme-paper) .select-group-header {
+            background-color: #E5E7EB !important;
+            color: #4B5563 !important;
+            font-weight: 700 !important;
         }
 
         /* 自訂字庫管理 (Custom Word Manager Modal) 暗黑模式終極調校 */
@@ -1721,6 +1760,234 @@
 
     </style>
 
+
+    <!-- ==========================================================
+         Multi-Theme System: Kindle 溫潤暖紙 (Warm Paper) & Apple 現代霧灰 (Modern Slate)
+         ========================================================== -->
+    <style>
+        /* --- Kindle 溫潤暖紙 護眼體系 (Warm Paper) --- */
+        html.theme-paper {
+            color-scheme: light;
+        }
+        html.theme-paper body {
+            background-color: #F7F5F0 !important;
+            color: #2C2925 !important;
+        }
+        html.theme-paper header {
+            background-color: rgba(247, 245, 240, 0.94) !important;
+            border-bottom-color: #E6E0D4 !important;
+            backdrop-filter: blur(14px) !important;
+        }
+        html.theme-paper nav.fixed {
+            background-color: rgba(247, 245, 240, 0.95) !important;
+            border-color: #E6E0D4 !important;
+        }
+        html.theme-paper #theme-toggle-btn {
+            background-color: #EFE9DC !important;
+            border-color: #DDD5C6 !important;
+            color: #4A4237 !important;
+        }
+
+        /* 暖紙 Level 1 核心卡片與主視圖 */
+        html.theme-paper .bg-white,
+        html.theme-paper #view-dashboard > div,
+        html.theme-paper #view-study-lobby > div,
+        html.theme-paper #view-listening > div,
+        html.theme-paper #view-analysis > div,
+        html.theme-paper #view-favorites > div,
+        html.theme-paper #view-settings > div,
+        html.theme-paper #view-completed > div,
+        html.theme-paper #view-game > div,
+        html.theme-paper .listening-group,
+        html.theme-paper #listening-placeholder-card {
+            background-color: #FCFBF7 !important;
+            border-color: #E7E1D4 !important;
+            box-shadow: 0 4px 20px rgba(60, 50, 40, 0.04) !important;
+        }
+
+        /* 暖紙 Level 2 內嵌層、次要區塊 */
+        html.theme-paper .bg-slate-50,
+        html.theme-paper .bg-slate-50\/90,
+        html.theme-paper .bg-slate-50\/80,
+        html.theme-paper .bg-gray-50,
+        html.theme-paper .bg-gray-100,
+        html.theme-paper .bg-slate-100,
+        html.theme-paper .bg-slate-100\/90,
+        html.theme-paper [class*="bg-\[\#F5F5F7\]"],
+        html.theme-paper [class*="bg-\[\#F9FAFC\]"],
+        html.theme-paper [class*="bg-\[\#FBFBFD\]"],
+        html.theme-paper [class*="bg-\[\#F4F6F9\]"],
+        html.theme-paper .stat-card-anim-1,
+        html.theme-paper #box-stat-review,
+        html.theme-paper #box-stat-new {
+            background-color: #F2EDE2 !important;
+            border-color: #E2DBD0 !important;
+            color: #2C2925 !important;
+        }
+
+        /* 暖紙文字層級微調 */
+        html.theme-paper h1,
+        html.theme-paper h2,
+        html.theme-paper h3,
+        html.theme-paper .text-slate-900,
+        html.theme-paper .text-gray-900,
+        html.theme-paper [class*="text-\[\#1D1D1F\]"] {
+            color: #2C2925 !important;
+        }
+        html.theme-paper .text-slate-700,
+        html.theme-paper .text-gray-700 {
+            color: #4A4237 !important;
+        }
+        html.theme-paper .text-slate-500,
+        html.theme-paper .text-gray-500,
+        html.theme-paper [class*="text-\[\#86868B\]"] {
+            color: #736B5E !important;
+        }
+        html.theme-paper .text-slate-400,
+        html.theme-paper .text-gray-400 {
+            color: #93897A !important;
+        }
+
+        /* 暖紙邊線 */
+        html.theme-paper .border-slate-200,
+        html.theme-paper .border-slate-200\/70,
+        html.theme-paper .border-slate-200\/75,
+        html.theme-paper .border-slate-200\/80,
+        html.theme-paper .border-slate-200\/90,
+        html.theme-paper .border-gray-100,
+        html.theme-paper .border-gray-200,
+        html.theme-paper .border-slate-100 {
+            border-color: #E6E0D4 !important;
+        }
+
+        /* 暖紙 翻轉學習卡片 (view-quiz) */
+        html.theme-paper .flip-card-front,
+        html.theme-paper .flip-card-back {
+            background-color: #FCFBF7 !important;
+            border: 2px solid #E4DDD0 !important;
+            box-shadow: 0 10px 28px rgba(60, 50, 40, 0.05) !important;
+            color: #2C2925 !important;
+        }
+        html.theme-paper .flip-card-front #card-word {
+            color: #201D19 !important;
+        }
+        html.theme-paper .flip-card-front #card-phonetic {
+            color: #736B5E !important;
+        }
+        html.theme-paper #quiz-sentence-box {
+            background-color: #F3EFE6 !important;
+            border-left: 3px solid #8C6A48 !important;
+            color: #38322A !important;
+        }
+
+        /* 暖紙 測驗選項按鈕 */
+        html.theme-paper .quiz-option-btn {
+            background-color: #FCFBF7 !important;
+            border: 1.5px solid #E2DBD0 !important;
+            color: #2C2925 !important;
+            box-shadow: 0 2px 6px rgba(60, 50, 40, 0.03) !important;
+        }
+        html.theme-paper .quiz-option-btn:hover {
+            background-color: #F2EDE2 !important;
+            border-color: #C8BEAE !important;
+        }
+
+        /* 暖紙 彈出視窗 (Modals) */
+        html.theme-paper #dict-modal > div > div,
+        html.theme-paper #word-detail-modal > div > div,
+        html.theme-paper #player-modal > div > div,
+        html.theme-paper #stats-detail-modal > div > div,
+        html.theme-paper #whack-game-panel {
+            background-color: #FAF7F1 !important;
+            border-color: #E4DDD0 !important;
+            box-shadow: 0 20px 48px rgba(50, 40, 30, 0.12) !important;
+            color: #2C2925 !important;
+        }
+        html.theme-paper #dict-modal .custom-row {
+            border-bottom-color: #E8E2D6 !important;
+            background-color: #FAF7F1 !important;
+        }
+        html.theme-paper #dict-modal .custom-row input {
+            background-color: #F1ECE1 !important;
+            border-color: #D8D0C2 !important;
+            color: #2C2925 !important;
+        }
+
+        /* 暖紙 表單輸入元件與下拉選單 */
+        html.theme-paper select,
+        html.theme-paper input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]),
+        html.theme-paper textarea {
+            background-color: #F3EFE6 !important;
+            border-color: #D8D0C2 !important;
+            color: #2C2925 !important;
+        }
+        html.theme-paper select option {
+            background-color: #F7F5F0 !important;
+            color: #2C2925 !important;
+        }
+        html.theme-paper input::placeholder,
+        html.theme-paper textarea::placeholder {
+            color: #93897A !important;
+        }
+
+        /* 暖紙 打地鼠遊戲板 */
+        html.theme-paper #whack-game-board {
+            background: linear-gradient(180deg, #F3ECE0 0%, #E9E1D2 100%) !important;
+            border: 2px solid #DCD4C4 !important;
+        }
+        html.theme-paper .mole-word-sign {
+            background-color: #FCFBF7 !important;
+            color: #2C2925 !important;
+            border-color: #DDD6C8 !important;
+        }
+        html.theme-paper #whack-result-modal > div {
+            background-color: #FAF7F1 !important;
+            border-color: #E4DDD0 !important;
+        }
+
+        /* 暖紙 捲動軸 */
+        html.theme-paper ::-webkit-scrollbar-thumb {
+            background: #D8D0C2 !important;
+        }
+        html.theme-paper ::-webkit-scrollbar-thumb:hover {
+            background: #BEB4A2 !important;
+        }
+
+        /* --- Apple 現代霧灰 極簡體系 (Modern Slate) --- */
+        html.theme-slate {
+            color-scheme: light;
+        }
+        html.theme-slate body {
+            background-color: #F5F5F7 !important;
+            color: #1D1D1F !important;
+        }
+        html.theme-slate header {
+            background-color: rgba(255, 255, 255, 0.88) !important;
+            border-bottom-color: rgba(0, 0, 0, 0.08) !important;
+            backdrop-filter: blur(14px) !important;
+        }
+        html.theme-slate nav.fixed {
+            background-color: rgba(255, 255, 255, 0.92) !important;
+            border-color: rgba(0, 0, 0, 0.08) !important;
+        }
+        html.theme-slate #theme-toggle-btn {
+            background-color: #EAEAEF !important;
+            border-color: #DCDCE2 !important;
+            color: #1D1D1F !important;
+        }
+        html.theme-slate select,
+        html.theme-slate input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]),
+        html.theme-slate textarea {
+            background-color: #FFFFFF !important;
+            border-color: #E5E7EB !important;
+            color: #1D1D1F !important;
+        }
+        html.theme-slate select option {
+            background-color: #FFFFFF !important;
+            color: #1D1D1F !important;
+        }
+    </style>
+
 <!-- ==========================================================
          電腦版響應式層 (≥1024px)：手機版樣式完全不動，僅在寬螢幕覆蓋
          - 底部導航列 → 左側固定側邊欄 (沿用同一組按鈕，JS 邏輯不變)
@@ -1861,32 +2128,31 @@
                         <p class="text-[11px] text-slate-400 mt-0.5 truncate">點擊下方數據卡可預覽單字與發音</p>
                     </div>
                     <select id="unit-selector" aria-label="選擇學習單元" title="選擇學習單元" class="w-full sm:w-auto bg-slate-50 hover:bg-slate-100/80 border border-slate-200/90 text-[#0071E3] text-xs sm:text-sm rounded-xl focus:ring-2 focus:ring-[#0071E3]/20 focus:border-[#0071E3] py-2 px-2.5 outline-none font-semibold cursor-pointer transition-colors shrink-0">
-                        <optgroup label="📚 高中 7000 單字">
-                            <option value="1">單元 1 (1 - 1000)</option>
-                            <option value="2">單元 2 (1001 - 2000)</option>
-                            <option value="3">單元 3 (2001 - 3000)</option>
-                            <option value="4">單元 4 (3001 - 4000)</option>
-                            <option value="5">單元 5 (4001 - 5000)</option>
-                            <option value="6">單元 6 (5001 - 6000)</option>
-                            <option value="7">單元 7 (6001 - 7000)</option>
-                            <option value="8">單元 8 (7001 - 8000)</option>
-                            <option value="9">單元 9 (8001 - 8611)</option>
-                        </optgroup>
-                        <optgroup label="💼 全新制多益 3000">
-                            <option value="11">多益單元 1 (1 - 1000)</option>
-                            <option value="12">多益單元 2 (1001 - 2000)</option>
-                            <option value="13">多益單元 3 (2001 - 3037)</option>
-                        </optgroup>
-                        <optgroup label="🏫 國中基礎 2000">
-                            <option value="17">國中單元 1 (1 - 1000)</option>
-                            <option value="18">國中單元 2 (1001 - 1946)</option>
-                        </optgroup>
-                        <optgroup label="🎧 聽力專屬字庫">
-                            <option value="19">聽力新單字庫</option>
-                        </optgroup>
-                        <optgroup label="✏️ 自訂字庫">
-                            <option value="10">自訂生詞庫</option>
-                        </optgroup>
+                        <option disabled class="select-group-header" value="">── 📚 高中 7000 單字 ──</option>
+                        <option value="1">&nbsp;&nbsp;單元 1 (1 - 1000)</option>
+                        <option value="2">&nbsp;&nbsp;單元 2 (1001 - 2000)</option>
+                        <option value="3">&nbsp;&nbsp;單元 3 (2001 - 3000)</option>
+                        <option value="4">&nbsp;&nbsp;單元 4 (3001 - 4000)</option>
+                        <option value="5">&nbsp;&nbsp;單元 5 (4001 - 5000)</option>
+                        <option value="6">&nbsp;&nbsp;單元 6 (5001 - 6000)</option>
+                        <option value="7">&nbsp;&nbsp;單元 7 (6001 - 7000)</option>
+                        <option value="8">&nbsp;&nbsp;單元 8 (7001 - 8000)</option>
+                        <option value="9">&nbsp;&nbsp;單元 9 (8001 - 8611)</option>
+
+                        <option disabled class="select-group-header" value="">── 💼 全新制多益 3000 ──</option>
+                        <option value="11">&nbsp;&nbsp;多益單元 1 (1 - 1000)</option>
+                        <option value="12">&nbsp;&nbsp;多益單元 2 (1001 - 2000)</option>
+                        <option value="13">&nbsp;&nbsp;多益單元 3 (2001 - 3037)</option>
+
+                        <option disabled class="select-group-header" value="">── 🏫 國中基礎 2000 ──</option>
+                        <option value="17">&nbsp;&nbsp;國中單元 1 (1 - 1000)</option>
+                        <option value="18">&nbsp;&nbsp;國中單元 2 (1001 - 1946)</option>
+
+                        <option disabled class="select-group-header" value="">── 🎧 聽力專屬字庫 ──</option>
+                        <option value="19">&nbsp;&nbsp;聽力新單字庫</option>
+
+                        <option disabled class="select-group-header" value="">── ✏️ 自訂字庫 ──</option>
+                        <option value="10">&nbsp;&nbsp;自訂生詞庫</option>
                     </select>
                 </div>
                 
@@ -2616,6 +2882,53 @@
                 
                 <hr class="border-gray-100 mb-6">
                 
+                <!-- 外觀視覺風格 (Aesthetics & Eye-Care Themes) -->
+                <div class="w-full p-4 bg-white border border-slate-200/80 rounded-2xl mb-4">
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="flex items-center gap-2.5 sm:gap-3 min-w-0">
+                            <div class="p-2 bg-amber-50 text-amber-700 rounded-xl shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                                </svg>
+                            </div>
+                            <div class="text-left min-w-0">
+                                <h3 class="font-semibold text-[#1D1D1F] text-sm sm:text-base">閱讀主題與外觀風格</h3>
+                                <p class="text-[11px] sm:text-xs text-[#86868B]">精調內層視覺層次，長時間背單字不疲勞</p>
+                            </div>
+                        </div>
+                        <span id="theme-active-pill" class="text-[11px] font-bold text-amber-800 bg-amber-100/70 px-2.5 py-0.5 rounded-full border border-amber-200/60 shrink-0">溫潤暖紙</span>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 select-none" id="theme-selector-cards">
+                        <!-- 1. 溫潤暖紙 -->
+                        <button type="button" onclick="applyTheme('paper')" data-theme="paper" class="theme-card-option flex sm:flex-col items-center sm:items-start justify-between sm:justify-start p-3 rounded-xl border-2 transition-all cursor-pointer text-left bg-[#F8F6F1] border-amber-600/70 shadow-xs ring-2 ring-amber-500/20">
+                            <div class="flex items-center sm:w-full sm:justify-between gap-2 mb-1">
+                                <span class="text-base sm:text-lg">📖</span>
+                                <span class="font-bold text-xs text-[#2C2925]">溫潤暖紙</span>
+                                <span class="theme-indicator ml-auto sm:ml-0 text-[10px] font-bold px-1.5 py-0.5 rounded-md bg-amber-200/70 text-amber-900">使用中</span>
+                            </div>
+                            <p class="text-[11px] text-[#736B5E] hidden sm:block leading-snug">Kindle 仿紙書墨韻，柔和米褐濾藍光，最耐看</p>
+                        </button>
+                        <!-- 2. 現代霧灰 -->
+                        <button type="button" onclick="applyTheme('slate')" data-theme="slate" class="theme-card-option flex sm:flex-col items-center sm:items-start justify-between sm:justify-start p-3 rounded-xl border-2 transition-all cursor-pointer text-left bg-[#F5F5F7] border-transparent hover:border-slate-300 opacity-80 hover:opacity-100">
+                            <div class="flex items-center sm:w-full sm:justify-between gap-2 mb-1">
+                                <span class="text-base sm:text-lg">🍏</span>
+                                <span class="font-bold text-xs text-[#1D1D1F]">現代霧灰</span>
+                                <span class="theme-indicator hidden ml-auto sm:ml-0 text-[10px] font-bold px-1.5 py-0.5 rounded-md bg-blue-100 text-blue-700">使用中</span>
+                            </div>
+                            <p class="text-[11px] text-[#6E6E73] hidden sm:block leading-snug">Apple 經典磨砂灰，通透洗鍊、層次分明</p>
+                        </button>
+                        <!-- 3. 深色模式 -->
+                        <button type="button" onclick="applyTheme('dark')" data-theme="dark" class="theme-card-option flex sm:flex-col items-center sm:items-start justify-between sm:justify-start p-3 rounded-xl border-2 transition-all cursor-pointer text-left bg-[#121927] border-transparent hover:border-slate-700 opacity-75 hover:opacity-100">
+                            <div class="flex items-center sm:w-full sm:justify-between gap-2 mb-1">
+                                <span class="text-base sm:text-lg">🌙</span>
+                                <span class="font-bold text-xs text-slate-200">深色模式</span>
+                                <span class="theme-indicator hidden ml-auto sm:ml-0 text-[10px] font-bold px-1.5 py-0.5 rounded-md bg-slate-800 text-slate-300">使用中</span>
+                            </div>
+                            <p class="text-[11px] text-slate-400 hidden sm:block leading-snug">沉浸低光源黑曜石，睡前或暗室專注練習</p>
+                        </button>
+                    </div>
+                </div>
+
                 <div class="space-y-4">
                     <button id="btn-show-analysis" class="w-full flex items-center justify-between p-4 bg-white border-0 border-gray-200 rounded-2xl hover:bg-[#F5F5F7] transition-colors mb-4">
                         <div class="flex items-center gap-3 min-w-0">
@@ -3513,17 +3826,36 @@
             });
         }
         // ==========================================
-        // Apple 深淺模式 (Dark / Light Theme) 核心引擎
         // ==========================================
+        // 多主題視覺引擎 (Multi-Theme System)
+        // 支援：'paper' (溫潤暖紙), 'slate' (現代霧灰), 'dark' (深色模式)
+        // ==========================================
+        function getActiveTheme() {
+            const root = document.documentElement;
+            if (root.classList.contains('dark')) return 'dark';
+            if (root.classList.contains('theme-slate')) return 'slate';
+            if (root.classList.contains('theme-paper')) return 'paper';
+            const saved = localStorage.getItem('app_theme');
+            if (saved === 'dark') return 'dark';
+            if (saved === 'slate' || saved === 'light') return 'slate';
+            return 'paper';
+        }
+
         function applyTheme(theme, save = true) {
-            const isDark = theme === 'dark';
-            if (isDark) {
-                document.documentElement.classList.add('dark');
+            if (!['paper', 'slate', 'dark'].includes(theme)) {
+                theme = (theme === 'light') ? 'slate' : 'paper';
+            }
+            const root = document.documentElement;
+            root.classList.remove('dark', 'theme-paper', 'theme-slate');
+            if (theme === 'dark') {
+                root.classList.add('dark');
+            } else if (theme === 'slate') {
+                root.classList.add('theme-slate');
             } else {
-                document.documentElement.classList.remove('dark');
+                root.classList.add('theme-paper');
             }
             if (save) {
-                localStorage.setItem('app_theme', isDark ? 'dark' : 'light');
+                localStorage.setItem('app_theme', theme);
             }
             initThemeUI();
             if (typeof renderStatsChart === 'function' && typeof chartInstance !== 'undefined' && chartInstance) {
@@ -3541,28 +3873,89 @@
         }
 
         function toggleTheme() {
-            const isDark = document.documentElement.classList.contains('dark');
-            applyTheme(isDark ? 'light' : 'dark', true);
+            const current = getActiveTheme();
+            // 點擊頂部膠囊依序循環：暖紙 -> 霧灰 -> 深色 -> 暖紙
+            const next = current === 'paper' ? 'slate' : (current === 'slate' ? 'dark' : 'paper');
+            applyTheme(next, true);
+        }
+
+        function updateThemeSelectorUI(theme) {
+            const pill = document.getElementById('theme-active-pill');
+            if (pill) {
+                if (theme === 'paper') {
+                    pill.textContent = '溫潤暖紙';
+                    pill.className = 'text-[11px] font-bold text-amber-800 bg-amber-100/70 px-2.5 py-0.5 rounded-full border border-amber-200/60 shrink-0';
+                } else if (theme === 'slate') {
+                    pill.textContent = '現代霧灰';
+                    pill.className = 'text-[11px] font-bold text-blue-800 bg-blue-100/70 px-2.5 py-0.5 rounded-full border border-blue-200/60 shrink-0';
+                } else {
+                    pill.textContent = '深色模式';
+                    pill.className = 'text-[11px] font-bold text-slate-300 bg-slate-800 px-2.5 py-0.5 rounded-full border border-slate-700 shrink-0';
+                }
+            }
+            const cards = document.querySelectorAll('.theme-card-option');
+            cards.forEach(card => {
+                const cTheme = card.getAttribute('data-theme');
+                const isActive = cTheme === theme;
+                const ind = card.querySelector('.theme-indicator');
+                if (ind) {
+                    ind.classList.toggle('hidden', !isActive);
+                }
+                if (isActive) {
+                    if (theme === 'paper') {
+                        card.className = 'theme-card-option flex sm:flex-col items-center sm:items-start justify-between sm:justify-start p-3 rounded-xl border-2 transition-all cursor-pointer text-left bg-[#F8F6F1] border-amber-600/70 shadow-xs ring-2 ring-amber-500/20';
+                    } else if (theme === 'slate') {
+                        card.className = 'theme-card-option flex sm:flex-col items-center sm:items-start justify-between sm:justify-start p-3 rounded-xl border-2 transition-all cursor-pointer text-left bg-[#FFFFFF] border-[#0071E3] shadow-xs ring-2 ring-blue-500/20';
+                    } else {
+                        card.className = 'theme-card-option flex sm:flex-col items-center sm:items-start justify-between sm:justify-start p-3 rounded-xl border-2 transition-all cursor-pointer text-left bg-[#121927] border-blue-500 shadow-xs ring-2 ring-blue-500/30';
+                    }
+                } else {
+                    if (cTheme === 'paper') {
+                        card.className = 'theme-card-option flex sm:flex-col items-center sm:items-start justify-between sm:justify-start p-3 rounded-xl border-2 transition-all cursor-pointer text-left bg-[#FAF8F5] border-transparent hover:border-amber-300/60 opacity-80 hover:opacity-100';
+                    } else if (cTheme === 'slate') {
+                        card.className = 'theme-card-option flex sm:flex-col items-center sm:items-start justify-between sm:justify-start p-3 rounded-xl border-2 transition-all cursor-pointer text-left bg-[#F5F5F7] border-transparent hover:border-slate-300 opacity-80 hover:opacity-100';
+                    } else {
+                        card.className = 'theme-card-option flex sm:flex-col items-center sm:items-start justify-between sm:justify-start p-3 rounded-xl border-2 transition-all cursor-pointer text-left bg-[#121927] border-transparent hover:border-slate-700 opacity-75 hover:opacity-100';
+                    }
+                }
+            });
         }
 
         function initThemeUI() {
-            const isDark = document.documentElement.classList.contains('dark');
+            const theme = getActiveTheme();
             const iconEl = document.getElementById('theme-toggle-icon');
             const textEl = document.getElementById('theme-toggle-text');
             const btnEl = document.getElementById('theme-toggle-btn');
-            if (iconEl) iconEl.textContent = isDark ? '🌙' : '☀️';
-            if (textEl) textEl.textContent = isDark ? '暗黑' : '白天';
-            if (btnEl) {
-                btnEl.setAttribute('aria-label', isDark ? '切換為白天模式' : '切換為暗黑模式');
-                btnEl.setAttribute('title', isDark ? '當前為暗黑模式，點擊切換為白天模式' : '當前為白天模式，點擊切換為暗黑模式');
+            if (theme === 'paper') {
+                if (iconEl) iconEl.textContent = '📖';
+                if (textEl) textEl.textContent = '暖紙';
+                if (btnEl) {
+                    btnEl.setAttribute('aria-label', '外觀風格：溫潤暖紙');
+                    btnEl.setAttribute('title', '目前：溫潤暖紙 (點擊切換為現代霧灰)');
+                }
+            } else if (theme === 'slate') {
+                if (iconEl) iconEl.textContent = '🍏';
+                if (textEl) textEl.textContent = '霧灰';
+                if (btnEl) {
+                    btnEl.setAttribute('aria-label', '外觀風格：現代霧灰');
+                    btnEl.setAttribute('title', '目前：現代霧灰 (點擊切換為深色模式)');
+                }
+            } else {
+                if (iconEl) iconEl.textContent = '🌙';
+                if (textEl) textEl.textContent = '深色';
+                if (btnEl) {
+                    btnEl.setAttribute('aria-label', '外觀風格：深色模式');
+                    btnEl.setAttribute('title', '目前：深色模式 (點擊切換為溫潤暖紙)');
+                }
             }
+            updateThemeSelectorUI(theme);
         }
 
         // 監聽作業系統外觀變更 (若使用者尚未手動覆蓋，隨系統自動流轉)
         if (window.matchMedia) {
             window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
                 if (!localStorage.getItem('app_theme')) {
-                    applyTheme(e.matches ? 'dark' : 'light', false);
+                    applyTheme(e.matches ? 'dark' : 'paper', false);
                 }
             });
         }

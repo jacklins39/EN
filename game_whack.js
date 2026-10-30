@@ -1,6 +1,6 @@
 // ==========================================
 // VocabMaster 打地鼠單字競速賽 (Word Whack Challenge)
-// 模組化獨立設計：高解析純向量 SVG 地鼠，秒數支援 5秒/10秒/自訂
+// 模組化獨立設計：高解析純向量 SVG 地鼠，出題 100% 精準匹配題庫，支援「慢變快」漸進加速
 // ==========================================
 
 (function() {
@@ -9,10 +9,10 @@
     // 遊戲狀態與設定
     let gameState = {
         isRunning: false,
-        mode: 'speed',        // 'speed' (倒數極速), 'survival' (3心生存)
-        scope: 'current',     // 'current' (單元), 'marked' (⭐標記), 'weak' (弱點), 'all' (全庫)
-        staySeconds: 5,       // 地鼠停留秒數 (預設 5 秒，可切換 10 秒或自訂)
-        gameDuration: 60,     // 總局長度 (60秒 / 120秒 / 不限時)
+        mode: 'speed',            // 'speed' (倒數極速), 'survival' (3心生存)
+        scope: 'current',         // 'current' (單元), 'marked' (⭐標記), 'weak' (弱點), 'all' (全庫)
+        speedMode: '5',           // '5', '10', '3', 'progressive' (慢變快), 'custom'
+        customStaySeconds: 5,     // 自訂秒數
         score: 0,
         combo: 0,
         maxCombo: 0,
@@ -23,8 +23,8 @@
         currentWord: null,
         activeTimer: null,
         moleTimers: [],
-        questionPool: [],
-        roundWrongWords: []   // 本局敲錯/漏打字清單
+        questionPool: [],         // 題目正解池 (100% 嚴格匹配選定範圍)
+        roundWrongWords: []       // 本局敲錯/漏打字清單
     };
 
     // 音效合成器 (Web Audio API 原生合成打擊音與得分鈴聲)
@@ -91,27 +91,36 @@
         }
     };
 
-    // 取得候選單字池
+    // 取得候選單字池 (100% 嚴格匹配使用者選定範圍，絕不擅自 fallback 覆蓋)
     function getGamePool(scope) {
         let pool = [];
         if (scope === 'marked') {
-            if (typeof getMarkedWords === 'function') pool = getMarkedWords();
+            if (typeof getMarkedWords === 'function') {
+                pool = getMarkedWords();
+            }
         } else if (scope === 'weak') {
-            if (typeof getWeakList === 'function') pool = getWeakList().map(x => x.w);
+            if (typeof getWeakList === 'function') {
+                pool = getWeakList().map(x => x.w);
+            }
         } else if (scope === 'current') {
             const curUnit = typeof currentUnit !== 'undefined' ? currentUnit : 1;
             if (typeof vocabularyDB !== 'undefined') {
                 pool = vocabularyDB.filter(w => (w.unit || Math.ceil(w.id / 1000) || 1) === curUnit);
             }
+        } else if (scope === 'all') {
+            if (typeof vocabularyDB !== 'undefined') {
+                pool = vocabularyDB;
+            }
         }
-        if (!pool || pool.length < 5) {
-            pool = typeof vocabularyDB !== 'undefined' ? vocabularyDB.slice(0, 1000) : [];
-        }
-        return pool.filter(w => w && w.en && w.zh);
+        return (pool || []).filter(w => w && w.en && w.zh);
     }
 
-    // 取得干擾選項 (同詞性優先)
-    function pickDistractors(targetWord, fullPool, count = 2) {
+    // 取得干擾選項 (以全字庫為基底挑選同詞性干擾項，避免題庫單字少時抽不到干擾)
+    function pickDistractors(targetWord, count = 2) {
+        const fullPool = (typeof vocabularyDB !== 'undefined' && Array.isArray(vocabularyDB) && vocabularyDB.length >= 10)
+            ? vocabularyDB
+            : (gameState.questionPool || []);
+
         const targetZh = targetWord.zh || '';
         const norm = s => String(s || '').toLowerCase().trim();
         const targetPos = (typeof extractPos === 'function') ? extractPos(targetZh, targetWord.pos) : [];
@@ -124,7 +133,7 @@
 
         const picked = [];
         const seen = new Set([norm(targetWord.en)]);
-        for (let i = 0; i < 100 && picked.length < count; i++) {
+        for (let i = 0; i < 150 && picked.length < count; i++) {
             const r = candidates[Math.floor(Math.random() * candidates.length)];
             if (r && !seen.has(norm(r.en))) {
                 seen.add(norm(r.en));
@@ -134,7 +143,21 @@
         return picked;
     }
 
-    // 產生 3x3 地鼠洞 HTML (使用純向量 SVG 地鼠，告別鋸齒白邊)
+    // 計算當前題目的地鼠停留秒數
+    function getCurrentStayDurationMs() {
+        if (gameState.speedMode === 'progressive') {
+            // 慢變快模式：從 8.0 秒起步，每敲中 1 題提速 0.35 秒，最快飆至 1.3 秒！
+            const duration = Math.max(1300, 8000 - (gameState.hits * 350));
+            return duration;
+        }
+        if (gameState.speedMode === 'custom') {
+            return Math.max(1000, gameState.customStaySeconds * 1000);
+        }
+        const sec = parseInt(gameState.speedMode, 10) || 5;
+        return Math.max(1000, sec * 1000);
+    }
+
+    // 產生 3x3 地鼠洞 HTML (純向量 SVG，零毛邊高畫質)
     function renderHolesGrid() {
         const grid = document.getElementById('whack-holes-grid');
         if (!grid) return;
@@ -146,9 +169,9 @@
                     <div class="absolute inset-x-2 bottom-1 h-3 rounded-full bg-amber-950/40 dark:bg-slate-950/70 blur-xs"></div>
                     <div class="absolute inset-x-0 bottom-0 h-5 bg-gradient-to-t from-emerald-800/80 to-transparent dark:from-emerald-950/60 pointer-events-none rounded-b-3xl"></div>
                     
-                    <!-- 地鼠本體 (純向量 SVG，零毛邊高畫質) -->
+                    <!-- 地鼠本體 (純向量 SVG，無鋸齒白邊) -->
                     <div id="mole-${i}" class="mole-actor absolute inset-x-0 bottom-0 top-0.5 flex flex-col items-center justify-end transform translate-y-[115%] transition-transform duration-250 ease-out pointer-events-none" data-hole="${i}">
-                        <!-- 單字告示牌 (清晰純色卡片) -->
+                        <!-- 單字告示牌 (清晰純白/深色卡片) -->
                         <div class="mole-word-sign mb-1 px-2.5 py-1 max-w-[94%] bg-white dark:bg-slate-800 text-slate-900 dark:text-white font-extrabold text-xs sm:text-[13.5px] rounded-xl shadow-md border border-slate-200/90 dark:border-slate-600 truncate text-center select-none pointer-events-auto cursor-pointer active:scale-95 transition-transform">
                             <span class="mole-word-text">word</span>
                         </div>
@@ -190,7 +213,7 @@
         actor.classList.remove('translate-y-[115%]');
         actor.classList.add('translate-y-[5%]');
 
-        // 依自訂秒數自動縮回
+        // 依設定秒數自動縮回
         const timerId = setTimeout(() => {
             retractMole(holeIdx);
             if (isCorrect && gameState.isRunning) {
@@ -223,7 +246,6 @@
     function triggerHitAnim(holeIdx, scoreGained) {
         const floatEl = document.getElementById(`hit-float-${holeIdx}`);
         const img = document.getElementById(`mole-img-${holeIdx}`);
-        // 切換為純向量暈眩地鼠 (眼睛旋轉、頭頂轉金星)
         if (img) img.src = 'images/mole_dizzy.svg';
 
         if (floatEl) {
@@ -267,7 +289,7 @@
 
             updateScoreboardUI();
 
-            // 敲中後短暫暈眩 280ms 即進入下一題 (不用傻等自訂秒數跑完！)
+            // 敲中後短暫暈眩 280ms 即進入下一題 (不用傻等秒數跑完！)
             setTimeout(() => {
                 clearAllMoles();
                 if (gameState.isRunning) nextQuestion();
@@ -324,13 +346,14 @@
         }, 200);
     }
 
-    // 開出下一題
+    // 開出下一題 (100% 嚴格從玩家指定的題庫抽取正解！)
     function nextQuestion() {
         if (!gameState.isRunning) return;
 
-        // 挑選目標單字
         const pool = gameState.questionPool;
         if (!pool || pool.length === 0) return;
+
+        // 100% 絕對從玩家選定的題庫出題 (如: ⭐ 標記單字)
         const targetWord = pool[Math.floor(Math.random() * pool.length)];
         gameState.currentWord = targetWord;
 
@@ -345,8 +368,8 @@
             posEl.classList.toggle('hidden', !parsed.pos);
         }
 
-        // 挑選 1~2 隻干擾地鼠
-        const distractors = pickDistractors(targetWord, pool, 2);
+        // 挑選 1~2 隻干擾地鼠 (從全字庫挑同詞性字干擾)
+        const distractors = pickDistractors(targetWord, 2);
         const candidates = [
             { word: targetWord, isCorrect: true },
             ...distractors.map(d => ({ word: d, isCorrect: false }))
@@ -356,8 +379,15 @@
         // 隨機選擇 2~3 個互不重複的洞口
         const holes = [0, 1, 2, 3, 4, 5, 6, 7, 8].sort(() => Math.random() - 0.5).slice(0, candidates.length);
 
-        // 使用者自訂秒數 (例如 5秒 = 5000ms, 10秒 = 10000ms)
-        const stayDurationMs = Math.max(1000, gameState.staySeconds * 1000);
+        // 動態計算此題停留秒數 (支援慢變快)
+        const stayDurationMs = getCurrentStayDurationMs();
+
+        // 即時顯示「慢變快」當前反應秒數提示
+        const speedHintEl = document.getElementById('whack-speed-indicator');
+        if (speedHintEl) {
+            const curSec = (stayDurationMs / 1000).toFixed(1);
+            speedHintEl.textContent = gameState.speedMode === 'progressive' ? `⚡ 慢變快: ${curSec}s` : `⏱️ ${curSec}s`;
+        }
 
         candidates.forEach((cand, idx) => {
             spawnMole(holes[idx], cand.word, cand.isCorrect, stayDurationMs);
@@ -392,24 +422,35 @@
 
         const scopeSel = document.getElementById('whack-scope-select');
         const modeSel = document.getElementById('whack-mode-select');
-        const staySel = document.getElementById('whack-speed-select');
+        const speedSel = document.getElementById('whack-speed-select');
         const customInput = document.getElementById('whack-speed-custom');
 
         gameState.scope = scopeSel ? scopeSel.value : 'current';
         gameState.mode = modeSel ? modeSel.value : 'speed';
+        gameState.speedMode = speedSel ? speedSel.value : '5';
 
-        // 讀取自訂停留秒數 (5秒 / 10秒 / 自訂)
-        let staySec = 5;
-        if (staySel && staySel.value === 'custom') {
-            staySec = customInput ? Math.max(1, Math.min(30, parseInt(customInput.value, 10) || 5)) : 5;
-        } else if (staySel) {
-            staySec = parseInt(staySel.value, 10) || 5;
+        if (gameState.speedMode === 'custom') {
+            gameState.customStaySeconds = customInput ? Math.max(1, Math.min(30, parseInt(customInput.value, 10) || 5)) : 5;
         }
-        gameState.staySeconds = staySec;
 
+        // 100% 嚴格取得指定題庫
         gameState.questionPool = getGamePool(gameState.scope);
-        if (gameState.questionPool.length < 4) {
-            if (typeof showQuickToast === 'function') showQuickToast('⚠️ 此題庫單字量不足，請換個題庫！');
+
+        // 如果玩家選「⭐ 我的標記單字」但目前 0 筆標記
+        if (!gameState.questionPool || gameState.questionPool.length === 0) {
+            if (gameState.scope === 'marked') {
+                if (typeof showQuickToast === 'function') {
+                    showQuickToast('⚠️ 目前尚未標記任何單字！請先至單字庫點 ☆ 標記單字再來玩喔！');
+                }
+            } else if (gameState.scope === 'weak') {
+                if (typeof showQuickToast === 'function') {
+                    showQuickToast('🎉 太棒了！目前沒有任何弱點錯題單字！');
+                }
+            } else {
+                if (typeof showQuickToast === 'function') {
+                    showQuickToast('⚠️ 此題庫目前無可用單字！');
+                }
+            }
             return;
         }
 
@@ -560,11 +601,35 @@
         document.getElementById('whack-game-panel')?.classList.add('hidden');
         document.getElementById('whack-result-modal')?.classList.add('hidden');
         document.getElementById('whack-lobby-panel')?.classList.remove('hidden');
+        updateLobbyScopeCounts();
+    }
+
+    // 更新大廳字庫選單的單字數量顯示 (一目了然)
+    function updateLobbyScopeCounts() {
+        const scopeSel = document.getElementById('whack-scope-select');
+        if (!scopeSel) return;
+
+        const curUnit = typeof currentUnit !== 'undefined' ? currentUnit : 1;
+        const curUnitWords = (typeof vocabularyDB !== 'undefined') ? vocabularyDB.filter(w => (w.unit || Math.ceil(w.id / 1000) || 1) === curUnit) : [];
+        const markedWords = typeof getMarkedWords === 'function' ? getMarkedWords() : [];
+        const weakWords = typeof getWeakList === 'function' ? getWeakList() : [];
+        const totalWords = typeof vocabularyDB !== 'undefined' ? vocabularyDB.length : 0;
+
+        const optCur = scopeSel.querySelector('option[value="current"]');
+        const optMarked = scopeSel.querySelector('option[value="marked"]');
+        const optWeak = scopeSel.querySelector('option[value="weak"]');
+        const optAll = scopeSel.querySelector('option[value="all"]');
+
+        if (optCur) optCur.textContent = `📖 當前單元單字 (${curUnitWords.length} 字)`;
+        if (optMarked) optMarked.textContent = `⭐ 我的標記單字 (${markedWords.length} 字・專打收藏字)`;
+        if (optWeak) optWeak.textContent = `🔴 弱點錯題單字 (${weakWords.length} 字)`;
+        if (optAll) optAll.textContent = `🌍 全字庫大亂鬥 (${totalWords} 字)`;
     }
 
     // 初始化視圖
     function initWhackGameView() {
         renderHolesGrid();
+        updateLobbyScopeCounts();
 
         // 綁定大廳控制
         document.getElementById('btn-whack-start')?.addEventListener('click', startGame);

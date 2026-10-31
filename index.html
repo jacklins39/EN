@@ -3316,13 +3316,26 @@
                     </div>
 
                     <!-- 題庫來源選擇 (含 ⭐ 我的標記單字！) -->
-                    <div class="w-full max-w-sm mb-5 text-left">
+                    <div class="w-full max-w-sm mb-3.5 text-left">
                         <label class="block text-xs font-bold text-slate-600 dark:text-slate-300 mb-1.5 ml-1">📚 出題字庫</label>
                         <select id="whack-scope-select" class="w-full py-2.5 px-3 bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white font-bold rounded-2xl border border-slate-200/80 dark:border-slate-700 outline-none text-xs sm:text-sm cursor-pointer shadow-2xs">
                             <option value="current">📖 當前單元單字</option>
                             <option value="marked">⭐ 我的標記單字 (專打收藏標記字)</option>
                             <option value="weak">🔴 弱點錯題單字 (強化記憶死角)</option>
                             <option value="all">🌍 全字庫大亂鬥</option>
+                        </select>
+                    </div>
+
+                    <!-- 語音朗讀模式選擇 -->
+                    <div class="w-full max-w-sm mb-5 text-left">
+                        <div class="flex items-center justify-between mb-1.5 ml-1">
+                            <label class="text-xs font-bold text-slate-600 dark:text-slate-300">🔊 語音朗讀模式</label>
+                            <span class="text-[11px] text-[#0071E3] font-medium">切題自動截斷舊音</span>
+                        </div>
+                        <select id="whack-audio-mode-select" class="w-full py-2.5 px-3 bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white font-bold rounded-2xl border border-slate-200/80 dark:border-slate-700 outline-none text-xs sm:text-sm cursor-pointer shadow-2xs">
+                            <option value="none">🔇 純打擊音效 (推薦競速・俐落不混淆)</option>
+                            <option value="prompt">🎧 出題即朗讀 (聽力模式・出題同步發音)</option>
+                            <option value="hit">🔊 敲中後朗讀 (答對確認・換題時切斷舊音)</option>
                         </select>
                     </div>
 

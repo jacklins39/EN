@@ -13,6 +13,7 @@
         scope: 'current',         // 'current' (單元), 'marked' (⭐標記), 'weak' (弱點), 'all' (全庫)
         speedMode: '5',           // '5', '10', '3', 'progressive' (慢變快), 'custom'
         customStaySeconds: 5,     // 自訂秒數
+        audioMode: 'none',        // 'none' (純打擊音效), 'prompt' (出題即朗讀), 'hit' (敲中後朗讀)
         score: 0,
         combo: 0,
         maxCombo: 0,
@@ -26,6 +27,27 @@
         questionPool: [],         // 題目正解池 (100% 嚴格匹配選定範圍)
         roundWrongWords: []       // 本局敲錯/漏打字清單
     };
+
+    // 切斷目前正在播放的任何語音，避免殘留混淆
+    function stopCurrentAudio() {
+        try {
+            if (typeof wordAudioPlayer !== 'undefined' && wordAudioPlayer) {
+                wordAudioPlayer.pause();
+                wordAudioPlayer.currentTime = 0;
+            }
+            if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+            }
+        } catch (e) {}
+    }
+
+    // 依單字長度動態調整字級，短字特大醒目、長字完整呈現不破版
+    function getWordFontClass(len) {
+        if (len <= 4) return 'text-[15px] sm:text-[16.5px] font-black tracking-normal';
+        if (len <= 7) return 'text-[13px] sm:text-[14.5px] font-extrabold tracking-tight';
+        if (len <= 10) return 'text-[11.5px] sm:text-[12.5px] font-bold tracking-tight';
+        return 'text-[10px] sm:text-[11px] font-bold leading-none tracking-tighter px-0.5';
+    }
 
     // 音效合成器 (Web Audio API 原生合成打擊音與得分鈴聲)
     const SoundFx = {
@@ -171,9 +193,9 @@
                     
                     <!-- 地鼠本體 (純向量 SVG，無鋸齒白邊) -->
                     <div id="mole-${i}" class="mole-actor absolute inset-x-0 bottom-0 top-0.5 flex flex-col items-center justify-end transform translate-y-[115%] transition-transform duration-250 ease-out pointer-events-none" data-hole="${i}">
-                        <!-- 單字告示牌 (清晰純白/深色卡片) -->
-                        <div class="mole-word-sign mb-1 px-2.5 py-1 max-w-[94%] bg-white dark:bg-slate-800 text-slate-900 dark:text-white font-extrabold text-xs sm:text-[13.5px] rounded-xl shadow-md border border-slate-200/90 dark:border-slate-600 truncate text-center select-none pointer-events-auto cursor-pointer active:scale-95 transition-transform">
-                            <span class="mole-word-text">word</span>
+                        <!-- 單字告示牌 (加大高對比度卡片，支援動態字級) -->
+                        <div class="mole-word-sign mb-1 px-1.5 py-1 w-[96%] max-w-[98%] bg-white dark:bg-slate-800 text-slate-900 dark:text-white rounded-xl shadow-md border-2 border-amber-900/20 dark:border-slate-600 text-center select-none pointer-events-auto cursor-pointer active:scale-95 transition-transform flex items-center justify-center min-h-[30px]">
+                            <span class="mole-word-text font-black tracking-tight break-all">word</span>
                         </div>
                         <!-- 向量地鼠 (svg) -->
                         <img id="mole-img-${i}" src="images/mole_normal.svg" alt="mole" class="w-16 h-16 sm:w-20 sm:h-20 object-contain drop-shadow-sm select-none pointer-events-auto cursor-pointer active:scale-90 transition-transform">
@@ -206,7 +228,12 @@
         actor.dataset.word = wordObj.en;
         actor.dataset.wordId = wordObj.id;
         actor.dataset.isCorrect = isCorrect ? 'true' : 'false';
-        actor.querySelector('.mole-word-text').textContent = wordObj.en;
+        
+        const textEl = actor.querySelector('.mole-word-text');
+        if (textEl) {
+            textEl.textContent = wordObj.en;
+            textEl.className = `mole-word-text break-all ${getWordFontClass(wordObj.en.length)}`;
+        }
         img.src = 'images/mole_normal.svg';
 
         // 探頭冒出
@@ -282,8 +309,8 @@
             SoundFx.playHit();
             triggerHitAnim(holeIdx, scoreGained);
 
-            // 朗讀該單字真人發音
-            if (typeof playAudio === 'function' && wordEn) {
+            // 朗讀該單字真人發音 (若設定為敲中後朗讀)
+            if (gameState.audioMode === 'hit' && typeof playAudio === 'function' && wordEn) {
                 playAudio(wordEn);
             }
 
@@ -350,12 +377,20 @@
     function nextQuestion() {
         if (!gameState.isRunning) return;
 
+        // 換題時立即切斷前一題殘留語音，絕不造成聽覺混淆！
+        stopCurrentAudio();
+
         const pool = gameState.questionPool;
         if (!pool || pool.length === 0) return;
 
         // 100% 絕對從玩家選定的題庫出題 (如: ⭐ 標記單字)
         const targetWord = pool[Math.floor(Math.random() * pool.length)];
         gameState.currentWord = targetWord;
+
+        // 若為「出題即朗讀」聽力模式，出題當下即朗讀目標單字，視覺聽覺完全同步
+        if (gameState.audioMode === 'prompt' && typeof playAudio === 'function' && targetWord.en) {
+            playAudio(targetWord.en);
+        }
 
         // 更新題目標題 (中文與詞性)
         const parsed = (typeof splitPosAndZh === 'function') ? splitPosAndZh(targetWord.zh, targetWord.pos) : { pos: '', pureZh: targetWord.zh };
@@ -424,10 +459,12 @@
         const modeSel = document.getElementById('whack-mode-select');
         const speedSel = document.getElementById('whack-speed-select');
         const customInput = document.getElementById('whack-speed-custom');
+        const audioSel = document.getElementById('whack-audio-mode-select');
 
         gameState.scope = scopeSel ? scopeSel.value : 'current';
         gameState.mode = modeSel ? modeSel.value : 'speed';
         gameState.speedMode = speedSel ? speedSel.value : '5';
+        gameState.audioMode = audioSel ? audioSel.value : (localStorage.getItem('whack_audio_mode') || 'none');
 
         if (gameState.speedMode === 'custom') {
             gameState.customStaySeconds = customInput ? Math.max(1, Math.min(30, parseInt(customInput.value, 10) || 5)) : 5;
@@ -496,6 +533,7 @@
     // 結束遊戲並彈出戰報
     function endGame(reasonText = '遊戲結束') {
         gameState.isRunning = false;
+        stopCurrentAudio();
         if (gameState.activeTimer) {
             clearInterval(gameState.activeTimer);
             gameState.activeTimer = null;
@@ -593,6 +631,7 @@
     // 退出遊戲回到大廳
     function quitToLobby() {
         gameState.isRunning = false;
+        stopCurrentAudio();
         if (gameState.activeTimer) {
             clearInterval(gameState.activeTimer);
             gameState.activeTimer = null;
@@ -643,6 +682,16 @@
         if (speedSel && customWrapper) {
             speedSel.addEventListener('change', () => {
                 customWrapper.classList.toggle('hidden', speedSel.value !== 'custom');
+            });
+        }
+
+        // 載入與記憶語音模式偏好
+        const audioSel = document.getElementById('whack-audio-mode-select');
+        if (audioSel) {
+            const savedAudioMode = localStorage.getItem('whack_audio_mode') || 'none';
+            audioSel.value = savedAudioMode;
+            audioSel.addEventListener('change', () => {
+                localStorage.setItem('whack_audio_mode', audioSel.value);
             });
         }
 

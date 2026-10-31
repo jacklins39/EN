@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261031V5';
+        const APP_BUILD_VERSION = '20261101V1';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -63,20 +63,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261031V5"></script>
-    <script src="toeic_data.js?v=20261031V5"></script>
-    <script src="jh_data.js?v=20261031V5"></script>
-    <script src="listening_data.js?v=20261031V5"></script>
-    <script src="listening_words_data.js?v=20261031V5"></script>
-    <script src="uk_phonetics_manifest.js?v=20261031V5"></script>
-    <script src="words_audio_manifest.js?v=20261031V5"></script>
-    <script src="examples_audio_manifest.js?v=20261031V5"></script>
-    <script src="zh_audio_manifest.js?v=20261031V5"></script>
-    <script src="collocations_audio_manifest.js?v=20261031V5"></script>
-    <script src="syn_ant_data.js?v=20261031V5"></script>
-    <script src="synonyms_unit8_data.js?v=20261031V5"></script>
-    <script src="examples_unit9_data.js?v=20261031V5"></script>
-    <script src="game_whack.js?v=20261031V5"></script>
+    <script src="words_data.js?v=20261101V1"></script>
+    <script src="toeic_data.js?v=20261101V1"></script>
+    <script src="jh_data.js?v=20261101V1"></script>
+    <script src="listening_data.js?v=20261101V1"></script>
+    <script src="listening_words_data.js?v=20261101V1"></script>
+    <script src="uk_phonetics_manifest.js?v=20261101V1"></script>
+    <script src="words_audio_manifest.js?v=20261101V1"></script>
+    <script src="examples_audio_manifest.js?v=20261101V1"></script>
+    <script src="zh_audio_manifest.js?v=20261101V1"></script>
+    <script src="collocations_audio_manifest.js?v=20261101V1"></script>
+    <script src="syn_ant_data.js?v=20261101V1"></script>
+    <script src="synonyms_unit8_data.js?v=20261101V1"></script>
+    <script src="examples_unit9_data.js?v=20261101V1"></script>
+    <script src="game_whack.js?v=20261101V1"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -1372,6 +1372,20 @@
             color: #58A6FF !important;
         }
 
+        /* 12-1. 錯題預覽分頁切換 */
+        html.dark #mistake-preview-tabs {
+            background-color: #162033 !important;
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        }
+        html.dark #mistake-preview-tabs button {
+            color: #94A3B8 !important;
+        }
+        html.dark #mistake-preview-tabs button.bg-white {
+            background-color: #243552 !important;
+            color: #F8FAFC !important;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) !important;
+        }
+
         /* 13. 單字清單與音標膠囊調優 */
         html.dark .preview-word-row,
         html.dark .weak-row,
@@ -2253,15 +2267,15 @@
                         <span class="text-[11px] sm:text-xs font-semibold text-slate-600 flex items-center gap-1">
                             <span>🎯</span> 歷史錯題集中複習
                         </span>
-                        <button id="btn-preview-all-mistakes" type="button" class="group flex items-center gap-1 text-[11px] font-semibold text-[#0071E3] bg-blue-50 hover:bg-[#0071E3] hover:text-white px-2 py-0.5 rounded-md border border-blue-100 transition-colors cursor-pointer" title="點擊預覽歷史錯題清單與發音">
-                            <span id="lobby-mistake-count-badge">0 字錯題</span>
+                        <button id="btn-preview-all-mistakes" type="button" class="group flex items-center gap-1 text-[11px] font-semibold text-[#0071E3] bg-blue-50 hover:bg-[#0071E3] hover:text-white px-2 py-0.5 rounded-md border border-blue-100 transition-colors cursor-pointer" title="點擊預覽歷史錯題清單（支援切換本日、本週、本月）">
+                            <span id="lobby-mistake-count-badge">目前無錯題</span>
                             <span class="text-[10px] opacity-75">預覽 ➔</span>
                         </button>
                     </div>
                     <div class="grid grid-cols-3 gap-1.5">
-                        <button id="btn-review-today" type="button" class="bg-white hover:bg-rose-50/70 text-slate-700 hover:text-rose-600 border border-slate-200/80 hover:border-rose-200 py-2 px-1 rounded-xl font-semibold active:scale-95 transition-all text-[11px] sm:text-xs truncate cursor-pointer text-center shadow-2xs" title="立即開始本日錯題選擇題複習">本日錯題</button>
-                        <button id="btn-review-week" type="button" class="bg-white hover:bg-blue-50/60 text-slate-700 hover:text-[#0071E3] border border-slate-200/80 hover:border-blue-200 py-2 px-1 rounded-xl font-semibold active:scale-95 transition-all text-[11px] sm:text-xs truncate cursor-pointer text-center shadow-2xs" title="立即開始近 7 天錯題選擇題複習">本週錯題</button>
-                        <button id="btn-review-month" type="button" class="bg-white hover:bg-indigo-50/60 text-slate-700 hover:text-indigo-600 border border-slate-200/80 hover:border-indigo-200 py-2 px-1 rounded-xl font-semibold active:scale-95 transition-all text-[11px] sm:text-xs truncate cursor-pointer text-center shadow-2xs" title="立即開始近 30 天錯題選擇題複習">本月錯題</button>
+                        <button id="btn-review-today" type="button" class="bg-white hover:bg-rose-50/70 text-slate-700 hover:text-rose-600 border border-slate-200/80 hover:border-rose-200 py-2 px-1 rounded-xl font-semibold active:scale-95 transition-all text-[11px] sm:text-xs truncate cursor-pointer text-center shadow-2xs" title="立即開始本日錯題選擇題複習">本日錯題 <span id="badge-today-count" class="font-mono text-[10px] ml-0.5 text-slate-400 font-normal">(0)</span></button>
+                        <button id="btn-review-week" type="button" class="bg-white hover:bg-blue-50/60 text-slate-700 hover:text-[#0071E3] border border-slate-200/80 hover:border-blue-200 py-2 px-1 rounded-xl font-semibold active:scale-95 transition-all text-[11px] sm:text-xs truncate cursor-pointer text-center shadow-2xs" title="立即開始近 7 天錯題選擇題複習">本週錯題 <span id="badge-week-count" class="font-mono text-[10px] ml-0.5 text-slate-400 font-normal">(0)</span></button>
+                        <button id="btn-review-month" type="button" class="bg-white hover:bg-indigo-50/60 text-slate-700 hover:text-indigo-600 border border-slate-200/80 hover:border-indigo-200 py-2 px-1 rounded-xl font-semibold active:scale-95 transition-all text-[11px] sm:text-xs truncate cursor-pointer text-center shadow-2xs" title="立即開始近 30 天錯題選擇題複習">本月錯題 <span id="badge-month-count" class="font-mono text-[10px] ml-0.5 text-slate-400 font-normal">(0)</span></button>
                     </div>
                 </div>
             </div>
@@ -3089,9 +3103,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261031V5</span>
+                        <span id="app-version-display">版本 20261101V1</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261031V5</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261101V1</p>
                 </div>
             </div>
         </div>
@@ -5185,25 +5199,41 @@
                 }
             }
 
-            // 統計錯題數 (依序反映 本日 > 本週 > 本月 之活躍未掌握錯題)
+            // 統計錯題數 (本日、本週、本月全面顯示)
             const todayMistakes = typeof getMistakeWords === 'function' ? getMistakeWords('today').length : 0;
             const weekMistakes = typeof getMistakeWords === 'function' ? getMistakeWords('week').length : 0;
             const monthMistakes = typeof getMistakeWords === 'function' ? getMistakeWords('month').length : 0;
 
+            const elTodayBtnBadge = document.getElementById('badge-today-count');
+            if (elTodayBtnBadge) {
+                elTodayBtnBadge.innerText = `(${todayMistakes})`;
+                elTodayBtnBadge.className = todayMistakes > 0
+                    ? "font-mono text-[10px] ml-0.5 text-rose-600 dark:text-rose-400 font-bold"
+                    : "font-mono text-[10px] ml-0.5 text-slate-400 dark:text-slate-500 font-normal";
+            }
+            const elWeekBtnBadge = document.getElementById('badge-week-count');
+            if (elWeekBtnBadge) {
+                elWeekBtnBadge.innerText = `(${weekMistakes})`;
+                elWeekBtnBadge.className = weekMistakes > 0
+                    ? "font-mono text-[10px] ml-0.5 text-[#0071E3] dark:text-[#58A6FF] font-bold"
+                    : "font-mono text-[10px] ml-0.5 text-slate-400 dark:text-slate-500 font-normal";
+            }
+            const elMonthBtnBadge = document.getElementById('badge-month-count');
+            if (elMonthBtnBadge) {
+                elMonthBtnBadge.innerText = `(${monthMistakes})`;
+                elMonthBtnBadge.className = monthMistakes > 0
+                    ? "font-mono text-[10px] ml-0.5 text-indigo-600 dark:text-indigo-400 font-bold"
+                    : "font-mono text-[10px] ml-0.5 text-slate-400 dark:text-slate-500 font-normal";
+            }
+
             const elMistakeBadge = document.getElementById('lobby-mistake-count-badge');
             if (elMistakeBadge) {
-                if (todayMistakes > 0) {
-                    elMistakeBadge.innerText = `本日 ${todayMistakes} 錯題`;
-                    elMistakeBadge.className = "text-[11px] font-semibold text-rose-600 font-mono";
-                } else if (weekMistakes > 0) {
-                    elMistakeBadge.innerText = `本週 ${weekMistakes} 錯題`;
-                    elMistakeBadge.className = "text-[11px] font-semibold text-[#0071E3] font-mono";
-                } else if (monthMistakes > 0) {
-                    elMistakeBadge.innerText = `本月 ${monthMistakes} 錯題`;
-                    elMistakeBadge.className = "text-[11px] font-semibold text-indigo-600 font-mono";
-                } else {
+                if (todayMistakes === 0 && weekMistakes === 0 && monthMistakes === 0) {
                     elMistakeBadge.innerText = '目前無錯題';
                     elMistakeBadge.className = "text-[11px] font-medium text-slate-400 font-mono";
+                } else {
+                    elMistakeBadge.innerHTML = `<span class="text-rose-600 dark:text-rose-400 font-semibold">日 ${todayMistakes}</span> <span class="text-slate-300 dark:text-slate-600">·</span> <span class="text-[#0071E3] dark:text-[#58A6FF] font-semibold">週 ${weekMistakes}</span> <span class="text-slate-300 dark:text-slate-600">·</span> <span class="text-indigo-600 dark:text-indigo-400 font-semibold">月 ${monthMistakes}</span>`;
+                    elMistakeBadge.className = "text-[11px] font-mono";
                 }
             }
 
@@ -11613,14 +11643,74 @@
             return list;
         }
 
-        function showMistakePreview(scope, titleText) {
-            const words = getMistakeWords(scope);
-            if (words.length === 0) {
-                const label = (scope === 'today' || scope === 0) ? '本日' : (scope === 'week' || scope === 7) ? '本週' : '本月';
-                showQuickToast(`${label}目前沒有錯題紀錄 🎉`);
+        function showMistakePreview(initialScope = 'today') {
+            let currentScope = initialScope;
+            const tCount = getMistakeWords('today').length;
+            const wCount = getMistakeWords('week').length;
+            const mCount = getMistakeWords('month').length;
+
+            if (tCount === 0 && wCount === 0 && mCount === 0) {
+                showQuickToast('太棒了！目前沒有未攻克的錯題紀錄 🎉');
                 return;
             }
-            renderPreviewModal(words, titleText, () => startMistakeReview(scope), '🚀 開始錯題複習');
+
+            // 若指定的範圍無單字，自動切換至有單字的範圍
+            if (currentScope === 'today' && tCount === 0) {
+                if (wCount > 0) currentScope = 'week';
+                else if (mCount > 0) currentScope = 'month';
+            } else if (currentScope === 'week' && wCount === 0) {
+                if (tCount > 0) currentScope = 'today';
+                else if (mCount > 0) currentScope = 'month';
+            }
+
+            function renderScope(scope) {
+                currentScope = scope;
+                const words = getMistakeWords(scope);
+                const scopeLabel = scope === 'today' ? '本日' : scope === 'week' ? '本週' : '本月';
+                renderPreviewModal(words, `🎯 歷史錯題集中預覽`, () => startMistakeReview(currentScope), `🚀 開始${scopeLabel}錯題複習`);
+
+                const content = document.getElementById('dict-content');
+                if (!content) return;
+
+                const headerEl = content.querySelector('.flex.items-center.justify-between.gap-2.pr-8');
+                if (headerEl) {
+                    const tabsContainer = document.createElement('div');
+                    tabsContainer.id = 'mistake-preview-tabs';
+                    tabsContainer.className = 'grid grid-cols-3 gap-1.5 p-1 bg-slate-100 rounded-xl mb-2.5';
+                    
+                    const curT = getMistakeWords('today').length;
+                    const curW = getMistakeWords('week').length;
+                    const curM = getMistakeWords('month').length;
+
+                    tabsContainer.innerHTML = `
+                        <button type="button" id="tab-mistake-today" class="py-1.5 px-1 text-xs font-bold rounded-lg transition-all text-center cursor-pointer ${currentScope === 'today' ? 'bg-white text-rose-600 shadow-xs' : 'text-slate-600 hover:text-slate-900'}">
+                            📅 本日 (${curT})
+                        </button>
+                        <button type="button" id="tab-mistake-week" class="py-1.5 px-1 text-xs font-bold rounded-lg transition-all text-center cursor-pointer ${currentScope === 'week' ? 'bg-white text-[#0071E3] shadow-xs' : 'text-slate-600 hover:text-slate-900'}">
+                            🗓️ 本週 (${curW})
+                        </button>
+                        <button type="button" id="tab-mistake-month" class="py-1.5 px-1 text-xs font-bold rounded-lg transition-all text-center cursor-pointer ${currentScope === 'month' ? 'bg-white text-indigo-600 shadow-xs' : 'text-slate-600 hover:text-slate-900'}">
+                            📊 本月 (${curM})
+                        </button>
+                    `;
+                    headerEl.insertAdjacentElement('afterend', tabsContainer);
+
+                    document.getElementById('tab-mistake-today')?.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        renderScope('today');
+                    });
+                    document.getElementById('tab-mistake-week')?.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        renderScope('week');
+                    });
+                    document.getElementById('tab-mistake-month')?.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        renderScope('month');
+                    });
+                }
+            }
+
+            renderScope(currentScope);
         }
 
         // 歷史錯題直接複習 (選擇題測驗)
@@ -11633,16 +11723,7 @@
 
         // 歷史錯題預覽按鈕
         document.getElementById('btn-preview-all-mistakes')?.addEventListener('click', () => {
-            const todayCount = getMistakeWords('today').length;
-            const weekCount = getMistakeWords('week').length;
-            if (todayCount > 0) {
-                showMistakePreview('today', `🎯 本日錯題預覽 (${todayCount} 字)`);
-            } else if (weekCount > 0) {
-                showMistakePreview('week', `🎯 本週錯題預覽 (${weekCount} 字)`);
-            } else {
-                const monthCount = getMistakeWords('month').length;
-                showMistakePreview('month', `🎯 本月錯題預覽 (${monthCount} 字)`);
-            }
+            showMistakePreview();
         });
 
         // 學習中心 (Study Center) 事件綁定

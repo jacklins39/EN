@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261101V2';
+        const APP_BUILD_VERSION = '20261101V3';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -63,20 +63,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261101V2"></script>
-    <script src="toeic_data.js?v=20261101V2"></script>
-    <script src="jh_data.js?v=20261101V2"></script>
-    <script src="listening_data.js?v=20261101V2"></script>
-    <script src="listening_words_data.js?v=20261101V2"></script>
-    <script src="uk_phonetics_manifest.js?v=20261101V2"></script>
-    <script src="words_audio_manifest.js?v=20261101V2"></script>
-    <script src="examples_audio_manifest.js?v=20261101V2"></script>
-    <script src="zh_audio_manifest.js?v=20261101V2"></script>
-    <script src="collocations_audio_manifest.js?v=20261101V2"></script>
-    <script src="syn_ant_data.js?v=20261101V2"></script>
-    <script src="synonyms_unit8_data.js?v=20261101V2"></script>
-    <script src="examples_unit9_data.js?v=20261101V2"></script>
-    <script src="game_whack.js?v=20261101V2"></script>
+    <script src="words_data.js?v=20261101V3"></script>
+    <script src="toeic_data.js?v=20261101V3"></script>
+    <script src="jh_data.js?v=20261101V3"></script>
+    <script src="listening_data.js?v=20261101V3"></script>
+    <script src="listening_words_data.js?v=20261101V3"></script>
+    <script src="uk_phonetics_manifest.js?v=20261101V3"></script>
+    <script src="words_audio_manifest.js?v=20261101V3"></script>
+    <script src="examples_audio_manifest.js?v=20261101V3"></script>
+    <script src="zh_audio_manifest.js?v=20261101V3"></script>
+    <script src="collocations_audio_manifest.js?v=20261101V3"></script>
+    <script src="syn_ant_data.js?v=20261101V3"></script>
+    <script src="synonyms_unit8_data.js?v=20261101V3"></script>
+    <script src="examples_unit9_data.js?v=20261101V3"></script>
+    <script src="game_whack.js?v=20261101V3"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -8618,7 +8618,78 @@
             "freeze": { past: "froze", pp: "frozen", ing: "freezing", s: "freezes" },
             "lend": { past: "lent", pp: "lent", ing: "lending", s: "lends" },
             "dig": { past: "dug", pp: "dug", ing: "digging", s: "digs" },
-            "sink": { past: "sank", pp: "sunk", ing: "sinking", s: "sinks" }
+            "sink": { past: "sank", pp: "sunk", ing: "sinking", s: "sinks" },
+"arise": { past: "arose", pp: "arisen", ing: "arising", s: "arises" },
+            "awake": { past: "awoke / awaked", pp: "awoken / awaked", ing: "awaking", s: "awakes" },
+            "bear": { past: "bore", pp: "borne / born", ing: "bearing", s: "bears" },
+            "beat": { past: "beat", pp: "beaten / beat", ing: "beating", s: "beats" },
+            "bend": { past: "bent", pp: "bent", ing: "bending", s: "bends" },
+            "bet": { past: "bet / betted", pp: "bet / betted", ing: "betting", s: "bets" },
+            "bind": { past: "bound", pp: "bound", ing: "binding", s: "binds" },
+            "bleed": { past: "bled", pp: "bled", ing: "bleeding", s: "bleeds" },
+            "breed": { past: "bred", pp: "bred", ing: "breeding", s: "breeds" },
+            "broadcast": { past: "broadcast / broadcasted", pp: "broadcast / broadcasted", ing: "broadcasting", s: "broadcasts" },
+            "burst": { past: "burst", pp: "burst", ing: "bursting", s: "bursts" },
+            "cast": { past: "cast", pp: "cast", ing: "casting", s: "casts" },
+            "cling": { past: "clung", pp: "clung", ing: "clinging", s: "clings" },
+            "cost": { past: "cost", pp: "cost", ing: "costing", s: "costs" },
+            "creep": { past: "crept", pp: "crept", ing: "creeping", s: "creeps" },
+            "deal": { past: "dealt", pp: "dealt", ing: "dealing", s: "deals" },
+            "dream": { past: "dreamed / dreamt", pp: "dreamed / dreamt", ing: "dreaming", s: "dreams" },
+            "flee": { past: "fled", pp: "fled", ing: "fleeing", s: "flees" },
+            "fling": { past: "flung", pp: "flung", ing: "flinging", s: "flings" },
+            "forbid": { past: "forbade / forbad", pp: "forbidden", ing: "forbidding", s: "forbids" },
+            "forgive": { past: "forgave", pp: "forgiven", ing: "forgiving", s: "forgives" },
+            "grind": { past: "ground", pp: "ground", ing: "grinding", s: "grinds" },
+            "hang": { past: "hung / hanged", pp: "hung / hanged", ing: "hanging", s: "hangs" },
+            "kneel": { past: "knelt / kneeled", pp: "knelt / kneeled", ing: "kneeling", s: "kneels" },
+            "knit": { past: "knit / knitted", pp: "knit / knitted", ing: "knitting", s: "knits" },
+            "lay": { past: "laid", pp: "laid", ing: "laying", s: "lays" },
+            "lean": { past: "leaned / leant", pp: "leaned / leant", ing: "leaning", s: "leans" },
+            "leap": { past: "leaped / leapt", pp: "leaped / leapt", ing: "leaping", s: "leaps" },
+            "lie": { past: "lay", pp: "lain", ing: "lying", s: "lies" },
+            "light": { past: "lit / lighted", pp: "lit / lighted", ing: "lighting", s: "lights" },
+            "misunderstand": { past: "misunderstood", pp: "misunderstood", ing: "misunderstanding", s: "misunderstands" },
+            "overcome": { past: "overcame", pp: "overcome", ing: "overcoming", s: "overcomes" },
+            "prove": { past: "proved", pp: "proven / proved", ing: "proving", s: "proves" },
+            "quit": { past: "quit / quitted", pp: "quit / quitted", ing: "quitting", s: "quits" },
+            "seek": { past: "sought", pp: "sought", ing: "seeking", s: "seeks" },
+            "sew": { past: "sewed", pp: "sewn / sewed", ing: "sewing", s: "sews" },
+            "shed": { past: "shed", pp: "shed", ing: "shedding", s: "sheds" },
+            "shrink": { past: "shrank / shrunk", pp: "shrunk", ing: "shrinking", s: "shrinks" },
+            "slide": { past: "slid", pp: "slid", ing: "sliding", s: "slides" },
+            "sling": { past: "slung", pp: "slung", ing: "slinging", s: "slings" },
+            "slit": { past: "slit", pp: "slit", ing: "slitting", s: "slits" },
+            "smell": { past: "smelled / smelt", pp: "smelled / smelt", ing: "smelling", s: "smells" },
+            "speed": { past: "sped / speeded", pp: "sped / speeded", ing: "speeding", s: "speeds" },
+            "spell": { past: "spelled / spelt", pp: "spelled / spelt", ing: "spelling", s: "spells" },
+            "spill": { past: "spilled / spilt", pp: "spilled / spilt", ing: "spilling", s: "spills" },
+            "spin": { past: "spun", pp: "spun", ing: "spinning", s: "spins" },
+            "spit": { past: "spat / spit", pp: "spat / spit", ing: "spitting", s: "spits" },
+            "split": { past: "split", pp: "split", ing: "splitting", s: "splits" },
+            "spoil": { past: "spoiled / spoilt", pp: "spoiled / spoilt", ing: "spoiling", s: "spoils" },
+            "spread": { past: "spread", pp: "spread", ing: "spreading", s: "spreads" },
+            "spring": { past: "sprang / sprung", pp: "sprung", ing: "springing", s: "springs" },
+            "stick": { past: "stuck", pp: "stuck", ing: "sticking", s: "sticks" },
+            "sting": { past: "stung", pp: "stung", ing: "stinging", s: "stings" },
+            "stink": { past: "stank / stunk", pp: "stunk", ing: "stinking", s: "stinks" },
+            "strike": { past: "struck", pp: "struck / stricken", ing: "striking", s: "strikes" },
+            "string": { past: "strung", pp: "strung", ing: "stringing", s: "strings" },
+            "strive": { past: "strove / strived", pp: "striven / strived", ing: "striving", s: "strives" },
+            "swear": { past: "swore", pp: "sworn", ing: "swearing", s: "swears" },
+            "sweep": { past: "swept", pp: "swept", ing: "sweeping", s: "sweeps" },
+            "swell": { past: "swelled", pp: "swollen / swelled", ing: "swelling", s: "swells" },
+            "swing": { past: "swung", pp: "swung", ing: "swinging", s: "swings" },
+            "thrust": { past: "thrust", pp: "thrust", ing: "thrusting", s: "thrusts" },
+            "undertake": { past: "undertook", pp: "undertaken", ing: "undertaking", s: "undertakes" },
+            "upset": { past: "upset", pp: "upset", ing: "upsetting", s: "upsets" },
+            "weave": { past: "wove / weaved", pp: "woven / weaved", ing: "weaving", s: "weaves" },
+            "weep": { past: "wept", pp: "wept", ing: "weeping", s: "weeps" },
+            "wind": { past: "wound", pp: "wound", ing: "winding", s: "winds" },
+            "withdraw": { past: "withdrew", pp: "withdrawn", ing: "withdrawing", s: "withdraws" },
+            "withhold": { past: "withheld", pp: "withheld", ing: "withholding", s: "withholds" },
+            "withstand": { past: "withstood", pp: "withstood", ing: "withstanding", s: "withstands" },
+            "wring": { past: "wrung", pp: "wrung", ing: "wringing", s: "wrings" },
         };
 
         const IRREGULAR_PLURALS = {
@@ -8931,6 +9002,92 @@
                 if (hasInDB(c)) return c;
             }
             return w;
+        }
+
+        // 屈折變化與時態反向辨識器：辨識單字是否為動詞變化形（過去式、過去分詞、現在分詞 -ing、第三人稱單數 -s/-es）並回傳原形動詞與時態資訊
+        function getVerbInflectionInfo(word) {
+            const w = (word || '').trim().toLowerCase();
+            if (!w || w.length < 2) return null;
+
+            // 1. 不規則動詞與專用三態表精確比對
+            for (const [base, vf] of Object.entries(IRREGULAR_VERBS)) {
+                if (!vf || base === w) continue;
+                const pastParts = String(vf.past || '').split('/').map(x => x.trim().toLowerCase());
+                const ppParts = String(vf.pp || '').split('/').map(x => x.trim().toLowerCase());
+                const ingParts = String(vf.ing || '').split('/').map(x => x.trim().toLowerCase());
+                const sParts = String(vf.s || '').split('/').map(x => x.trim().toLowerCase());
+
+                const isPast = pastParts.includes(w);
+                const isPp = ppParts.includes(w);
+                if (isPast && isPp) {
+                    return { base, type: 'past_pp', label: '過去式 / 過去分詞', originalWord: w };
+                }
+                if (isPast) {
+                    return { base, type: 'past', label: '過去式 (Past)', originalWord: w };
+                }
+                if (isPp) {
+                    return { base, type: 'pp', label: '過去分詞 (P.P.)', originalWord: w };
+                }
+                if (ingParts.includes(w)) {
+                    return { base, type: 'ing', label: '現在分詞 (-ing)', originalWord: w };
+                }
+                if (sParts.includes(w)) {
+                    return { base, type: 's', label: '第三人稱單數現在式 (-s/-es)', originalWord: w };
+                }
+            }
+
+            // 2. 規則動詞變化詞尾還原比對
+            const hasInDB = (cand) => {
+                if (!cand || cand.length < 2 || cand === w) return false;
+                if (IRREGULAR_VERBS[cand] || (typeof CORE_WORD_COLLOCATIONS !== 'undefined' && CORE_WORD_COLLOCATIONS[cand]) || (typeof CORE_WORD_SYNONYMS !== 'undefined' && CORE_WORD_SYNONYMS[cand])) return true;
+                return typeof vocabularyDB !== 'undefined' && vocabularyDB.some(it => it && it.en && it.en.toLowerCase() === cand);
+            };
+
+            // 2.1 過去式與過去分詞 (-ied, -ed)
+            if (w.endsWith('ied') && w.length > 4) {
+                const c = w.slice(0, -3) + 'y';
+                if (hasInDB(c)) return { base: c, type: 'past_pp', label: '過去式 / 過去分詞 (-ied)', originalWord: w };
+            }
+            if (w.endsWith('ed') && w.length > 3) {
+                if (w.length > 4 && w[w.length - 3] === w[w.length - 4]) {
+                    const c3 = w.slice(0, -3);
+                    if (hasInDB(c3)) return { base: c3, type: 'past_pp', label: '過去式 / 過去分詞 (雙寫尾音+ed)', originalWord: w };
+                }
+                const c2 = w.slice(0, -1);
+                if (hasInDB(c2)) return { base: c2, type: 'past_pp', label: '過去式 / 過去分詞 (-d)', originalWord: w };
+                const c1 = w.slice(0, -2);
+                if (hasInDB(c1)) return { base: c1, type: 'past_pp', label: '過去式 / 過去分詞 (-ed)', originalWord: w };
+            }
+
+            // 2.2 現在分詞 (-ing)
+            if (w.endsWith('ing') && w.length > 4) {
+                if (w.length > 5 && w[w.length - 4] === w[w.length - 5]) {
+                    const c3 = w.slice(0, -4);
+                    if (hasInDB(c3)) return { base: c3, type: 'ing', label: '現在分詞 (-ing / 雙寫尾音)', originalWord: w };
+                }
+                const c2 = w.slice(0, -3) + 'e';
+                if (hasInDB(c2)) return { base: c2, type: 'ing', label: '現在分詞 (-ing 去 e)', originalWord: w };
+                const c1 = w.slice(0, -3);
+                if (hasInDB(c1)) return { base: c1, type: 'ing', label: '現在分詞 (-ing)', originalWord: w };
+            }
+
+            // 2.3 第三人稱單數現在式 (-ies, -es, -s)
+            if (w.endsWith('ies') && w.length > 4) {
+                const c = w.slice(0, -3) + 'y';
+                if (hasInDB(c)) return { base: c, type: 's', label: '第三人稱單數現在式 (-ies)', originalWord: w };
+            }
+            if (w.endsWith('es') && w.length > 3) {
+                const c1 = w.slice(0, -2);
+                if (hasInDB(c1)) return { base: c1, type: 's', label: '第三人稱單數現在式 (-es)', originalWord: w };
+                const c2 = w.slice(0, -1);
+                if (hasInDB(c2)) return { base: c2, type: 's', label: '第三人稱單數現在式 (-s)', originalWord: w };
+            }
+            if (w.endsWith('s') && !w.endsWith('ss') && w.length > 3) {
+                const c = w.slice(0, -1);
+                if (hasInDB(c)) return { base: c, type: 's', label: '第三人稱單數現在式 (-s)', originalWord: w };
+            }
+
+            return null;
         }
 
         function computeWordForms(word, posStr = '') {
@@ -9777,6 +9934,22 @@
             if (!item && typeof customWordsDB !== 'undefined') {
                 item = customWordsDB.find(w => w.en.toLowerCase() === cleanWord);
             }
+
+            // 2. 若本地字庫無精確匹配，檢查是否為動詞變化形（三態：過去式/過去分詞/現在分詞/三單），自動精準對應至原形單字！
+            let activeInflection = null;
+            if (!item) {
+                const inflection = getVerbInflectionInfo(cleanWord);
+                if (inflection && inflection.base && inflection.base !== cleanWord) {
+                    const baseItem = vocabularyDB.find(w => w.en.toLowerCase() === inflection.base) ||
+                        (typeof customWordsDB !== 'undefined' && customWordsDB.find(w => w.en.toLowerCase() === inflection.base));
+                    if (baseItem) {
+                        item = baseItem;
+                        activeInflection = inflection;
+                        currentDetailWord = baseItem.en.toLowerCase();
+                    }
+                }
+            }
+
             if (!item && fallbackData && fallbackData.zh) {
                 item = {
                     en: cleanWord,
@@ -9790,7 +9963,7 @@
             }
 
             if (item) {
-                renderWordDetailCard(item);
+                renderWordDetailCard(item, false, activeInflection);
                 if (typeof savedScrollTop === 'number' && savedScrollTop > 0 && content) {
                     requestAnimationFrame(() => {
                         content.scrollTop = savedScrollTop;
@@ -9847,7 +10020,7 @@
             }
         }
 
-        function renderWordDetailCard(item, isExternal = false) {
+        function renderWordDetailCard(item, isExternal = false, inflectionMeta = null) {
             const content = document.getElementById('word-detail-content');
             if (!content) return;
 
@@ -9877,11 +10050,46 @@
                 badgeEl.innerText = unitInfo.name;
             }
 
+            // 若為三態變化形自動對應至原形，頂部展示明確導向提示列
+            let inflectionBannerHtml = '';
+            if (inflectionMeta && inflectionMeta.originalWord) {
+                inflectionBannerHtml = `
+                    <div class="mb-3 px-3.5 py-2.5 rounded-2xl bg-gradient-to-r from-blue-50/90 via-indigo-50/80 to-blue-50/90 border border-blue-200/90 flex items-center justify-between shadow-2xs">
+                        <div class="flex items-center gap-2 text-xs text-blue-950 font-medium">
+                            <span class="text-sm shrink-0">💡</span>
+                            <span>你點擊的「<strong class="font-mono text-blue-700 font-bold">${esc(inflectionMeta.originalWord)}</strong>」為動詞 ${esc(inflectionMeta.label)}，已直接對應至原形：</span>
+                        </div>
+                        <span class="text-xs font-bold text-blue-600 bg-white px-2.5 py-0.5 rounded-full border border-blue-200 font-mono shadow-2xs shrink-0">${esc(w.en)}</span>
+                    </div>
+                `;
+            }
+
+            // 若目前單字本身在字庫內，但亦為其他動詞變化形（例如 seated 為 seat 之過去分詞），提供直覺原形跳轉連結
+            const relatedInflection = (!inflectionMeta && !isExternal) ? getVerbInflectionInfo(w.en) : null;
+            const hasRelatedBaseInDB = relatedInflection && relatedInflection.base !== w.en.toLowerCase() && (
+                vocabularyDB.some(it => it && it.en && it.en.toLowerCase() === relatedInflection.base) ||
+                (typeof customWordsDB !== 'undefined' && customWordsDB.some(it => it && it.en && it.en.toLowerCase() === relatedInflection.base))
+            );
+            const relatedBaseHtml = hasRelatedBaseInDB ? `
+                <div class="mt-1.5">
+                    <button type="button" onclick="showWordDetailModal('${esc(relatedInflection.base)}')" class="inline-flex items-center gap-1.5 text-xs text-blue-700 bg-blue-50/90 hover:bg-blue-100/90 border border-blue-200/90 px-2.5 py-1 rounded-xl font-medium transition cursor-pointer shadow-2xs active:scale-95">
+                        <span>🔗</span>
+                        <span>此單字亦為動詞「<strong class="font-mono font-bold">${esc(relatedInflection.base)}</strong>」之${esc(relatedInflection.label)}</span>
+                        <span class="text-[#0071E3] font-bold ml-1">➔ 查看動詞原形</span>
+                    </button>
+                </div>
+            ` : '';
+
             // 詞形變化區塊 HTML (動詞三態 / 形容詞比較級 / 名詞單複數)
             let formsHtml = '';
             if (forms) {
                 // 1. 動詞三態與變化
                 if (forms.verbForms) {
+                    const isPastHit = inflectionMeta && (inflectionMeta.type === 'past' || inflectionMeta.type === 'past_pp');
+                    const isPpHit = inflectionMeta && (inflectionMeta.type === 'pp' || inflectionMeta.type === 'past_pp');
+                    const isIngHit = inflectionMeta && inflectionMeta.type === 'ing';
+                    const isSHit = inflectionMeta && inflectionMeta.type === 's';
+
                     formsHtml += `
                         <div class="word-forms-card verb-forms-card bg-gradient-to-br from-blue-50/70 to-indigo-50/50 p-3.5 rounded-2xl border border-blue-100/80 shadow-2xs">
                             <div class="flex items-center justify-between text-xs font-bold text-blue-900 mb-2">
@@ -9895,21 +10103,24 @@
                                     <span class="text-gray-400 block text-[10px] font-semibold mb-0.5">原形 (Base)</span>
                                     <span class="font-bold text-gray-800 font-mono text-xs sm:text-sm truncate">${esc(forms.verbForms.base || w.en)}</span>
                                 </div>
-                                <div class="word-form-item bg-white/95 p-2 rounded-xl border border-blue-100/60 shadow-2xs cursor-pointer hover:border-blue-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.verbForms.past)}')" title="點擊聆聽過去式發音">
+                                <div class="word-form-item ${isPastHit ? 'ring-2 ring-[#0071E3] bg-blue-100/90 border-[#0071E3]' : 'bg-white/95 border-blue-100/60'} p-2 rounded-xl border shadow-2xs cursor-pointer hover:border-blue-400 active:scale-95 transition-all flex flex-col justify-between relative" onclick="playAudio('${esc(forms.verbForms.past)}')" title="點擊聆聽過去式發音">
+                                    ${isPastHit ? '<span class="absolute -top-2 right-1 bg-[#0071E3] text-white text-[8px] font-bold px-1.5 py-0.2 rounded-full shadow-2xs">點擊時態</span>' : ''}
                                     <span class="text-blue-500 block text-[10px] font-semibold mb-0.5">過去式 (Past)</span>
                                     <span class="font-bold text-[#0071E3] font-mono text-xs sm:text-sm truncate">${esc(forms.verbForms.past)}</span>
                                 </div>
-                                <div class="word-form-item bg-white/95 p-2 rounded-xl border border-blue-100/60 shadow-2xs cursor-pointer hover:border-blue-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.verbForms.pp)}')" title="點擊聆聽過去分詞發音">
+                                <div class="word-form-item ${isPpHit ? 'ring-2 ring-purple-600 bg-purple-100/90 border-purple-600' : 'bg-white/95 border-blue-100/60'} p-2 rounded-xl border shadow-2xs cursor-pointer hover:border-blue-400 active:scale-95 transition-all flex flex-col justify-between relative" onclick="playAudio('${esc(forms.verbForms.pp)}')" title="點擊聆聽過去分詞發音">
+                                    ${isPpHit ? '<span class="absolute -top-2 right-1 bg-purple-600 text-white text-[8px] font-bold px-1.5 py-0.2 rounded-full shadow-2xs">點擊時態</span>' : ''}
                                     <span class="text-purple-500 block text-[10px] font-semibold mb-0.5">過去分詞 (P.P.)</span>
                                     <span class="font-bold text-purple-700 font-mono text-xs sm:text-sm truncate">${esc(forms.verbForms.pp)}</span>
                                 </div>
-                                <div class="word-form-item bg-white/95 p-2 rounded-xl border border-blue-100/60 shadow-2xs cursor-pointer hover:border-blue-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.verbForms.ing)}')" title="點擊聆聽現在分詞發音">
+                                <div class="word-form-item ${isIngHit ? 'ring-2 ring-emerald-600 bg-emerald-100/90 border-emerald-600' : 'bg-white/95 border-blue-100/60'} p-2 rounded-xl border shadow-2xs cursor-pointer hover:border-blue-400 active:scale-95 transition-all flex flex-col justify-between relative" onclick="playAudio('${esc(forms.verbForms.ing)}')" title="點擊聆聽現在分詞發音">
+                                    ${isIngHit ? '<span class="absolute -top-2 right-1 bg-emerald-600 text-white text-[8px] font-bold px-1.5 py-0.2 rounded-full shadow-2xs">點擊時態</span>' : ''}
                                     <span class="text-emerald-500 block text-[10px] font-semibold mb-0.5">現在分詞 (-ing)</span>
                                     <span class="font-bold text-emerald-700 font-mono text-xs sm:text-sm truncate">${esc(forms.verbForms.ing)}</span>
                                 </div>
                             </div>
                             <div class="forms-card-footer mt-2 text-[11px] text-gray-500 flex items-center justify-between px-1">
-                                <span>第三人稱單數現在式 (-s/-es)：<strong class="text-gray-800 font-mono cursor-pointer hover:underline hover:text-[#0071E3]" onclick="playAudio('${esc(forms.verbForms.s)}')">${esc(forms.verbForms.s)}</strong></span>
+                                <span>第三人稱單數現在式 (-s/-es)：<strong class="${isSHit ? 'text-[#0071E3] bg-blue-100 px-1.5 py-0.5 rounded ring-1 ring-blue-300' : 'text-gray-800'} font-mono cursor-pointer hover:underline hover:text-[#0071E3]" onclick="playAudio('${esc(forms.verbForms.s)}')">${esc(forms.verbForms.s)} ${isSHit ? '(點擊詞形)' : ''}</strong></span>
                             </div>
                         </div>
                     `;
@@ -10050,10 +10261,12 @@
             `;
 
             content.innerHTML = `
+                ${inflectionBannerHtml}
                 <!-- 單字標題與發音列 (全寬展示防英文切斷斷字，發音按鈕靈活兩端對齊) -->
                 <div class="space-y-2 mb-2">
                     <div class="w-full">
                         <h2 class="text-2xl sm:text-3xl font-extrabold text-[#1D1D1F] tracking-tight break-normal overflow-wrap-normal select-all">${esc(w.en)}</h2>
+                        ${relatedBaseHtml}
                     </div>
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                         <div class="flex items-center gap-1.5 flex-wrap">

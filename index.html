@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261031V3';
+        const APP_BUILD_VERSION = '20261031V4';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -63,20 +63,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261031V3"></script>
-    <script src="toeic_data.js?v=20261031V3"></script>
-    <script src="jh_data.js?v=20261031V3"></script>
-    <script src="listening_data.js?v=20261031V3"></script>
-    <script src="listening_words_data.js?v=20261031V3"></script>
-    <script src="uk_phonetics_manifest.js?v=20261031V3"></script>
-    <script src="words_audio_manifest.js?v=20261031V3"></script>
-    <script src="examples_audio_manifest.js?v=20261031V3"></script>
-    <script src="zh_audio_manifest.js?v=20261031V3"></script>
-    <script src="collocations_audio_manifest.js?v=20261031V3"></script>
-    <script src="syn_ant_data.js?v=20261031V3"></script>
-    <script src="synonyms_unit8_data.js?v=20261031V3"></script>
-    <script src="examples_unit9_data.js?v=20261031V3"></script>
-    <script src="game_whack.js?v=20261031V3"></script>
+    <script src="words_data.js?v=20261031V4"></script>
+    <script src="toeic_data.js?v=20261031V4"></script>
+    <script src="jh_data.js?v=20261031V4"></script>
+    <script src="listening_data.js?v=20261031V4"></script>
+    <script src="listening_words_data.js?v=20261031V4"></script>
+    <script src="uk_phonetics_manifest.js?v=20261031V4"></script>
+    <script src="words_audio_manifest.js?v=20261031V4"></script>
+    <script src="examples_audio_manifest.js?v=20261031V4"></script>
+    <script src="zh_audio_manifest.js?v=20261031V4"></script>
+    <script src="collocations_audio_manifest.js?v=20261031V4"></script>
+    <script src="syn_ant_data.js?v=20261031V4"></script>
+    <script src="synonyms_unit8_data.js?v=20261031V4"></script>
+    <script src="examples_unit9_data.js?v=20261031V4"></script>
+    <script src="game_whack.js?v=20261031V4"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -1356,17 +1356,17 @@
         }
 
         /* 12. 錯題集中複習三個按鈕 */
+        html.dark #btn-review-today,
         html.dark #btn-review-week,
-        html.dark #btn-review-month,
-        html.dark #btn-review-all {
+        html.dark #btn-review-month {
             background-color: #172235 !important;
             border: 1px solid rgba(255, 255, 255, 0.12) !important;
             color: #F8FAFC !important;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3) !important;
         }
+        html.dark #btn-review-today:hover,
         html.dark #btn-review-week:hover,
-        html.dark #btn-review-month:hover,
-        html.dark #btn-review-all:hover {
+        html.dark #btn-review-month:hover {
             background-color: #243552 !important;
             border-color: #388BFD !important;
             color: #58A6FF !important;
@@ -2253,15 +2253,15 @@
                         <span class="text-[11px] sm:text-xs font-semibold text-slate-600 flex items-center gap-1">
                             <span>🎯</span> 歷史錯題集中複習
                         </span>
-                        <button id="btn-preview-all-mistakes" type="button" class="group flex items-center gap-1 text-[11px] font-semibold text-[#0071E3] bg-blue-50 hover:bg-[#0071E3] hover:text-white px-2 py-0.5 rounded-md border border-blue-100 transition-colors cursor-pointer" title="點擊預覽全部歷史錯題清單與發音">
+                        <button id="btn-preview-all-mistakes" type="button" class="group flex items-center gap-1 text-[11px] font-semibold text-[#0071E3] bg-blue-50 hover:bg-[#0071E3] hover:text-white px-2 py-0.5 rounded-md border border-blue-100 transition-colors cursor-pointer" title="點擊預覽歷史錯題清單與發音">
                             <span id="lobby-mistake-count-badge">0 字錯題</span>
                             <span class="text-[10px] opacity-75">預覽 ➔</span>
                         </button>
                     </div>
                     <div class="grid grid-cols-3 gap-1.5">
+                        <button id="btn-review-today" type="button" class="bg-white hover:bg-rose-50/70 text-slate-700 hover:text-rose-600 border border-slate-200/80 hover:border-rose-200 py-2 px-1 rounded-xl font-semibold active:scale-95 transition-all text-[11px] sm:text-xs truncate cursor-pointer text-center shadow-2xs" title="立即開始本日錯題選擇題複習">本日錯題</button>
                         <button id="btn-review-week" type="button" class="bg-white hover:bg-blue-50/60 text-slate-700 hover:text-[#0071E3] border border-slate-200/80 hover:border-blue-200 py-2 px-1 rounded-xl font-semibold active:scale-95 transition-all text-[11px] sm:text-xs truncate cursor-pointer text-center shadow-2xs" title="立即開始近 7 天錯題選擇題複習">本週錯題</button>
-                        <button id="btn-review-month" type="button" class="bg-white hover:bg-blue-50/60 text-slate-700 hover:text-[#0071E3] border border-slate-200/80 hover:border-blue-200 py-2 px-1 rounded-xl font-semibold active:scale-95 transition-all text-[11px] sm:text-xs truncate cursor-pointer text-center shadow-2xs" title="立即開始近 30 天錯題選擇題複習">本月錯題</button>
-                        <button id="btn-review-all" type="button" class="bg-white hover:bg-[#0071E3] text-[#0071E3] hover:text-white border border-blue-200 hover:border-[#0071E3] py-2 px-1 rounded-xl font-bold active:scale-95 transition-all text-[11px] sm:text-xs truncate cursor-pointer text-center shadow-2xs" title="立即開始全部錯題選擇題複習">全部錯題</button>
+                        <button id="btn-review-month" type="button" class="bg-white hover:bg-indigo-50/60 text-slate-700 hover:text-indigo-600 border border-slate-200/80 hover:border-indigo-200 py-2 px-1 rounded-xl font-semibold active:scale-95 transition-all text-[11px] sm:text-xs truncate cursor-pointer text-center shadow-2xs" title="立即開始近 30 天錯題選擇題複習">本月錯題</button>
                     </div>
                 </div>
             </div>
@@ -3089,9 +3089,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261031V3</span>
+                        <span id="app-version-display">版本 20261031V4</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261031V3</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261031V4</p>
                 </div>
             </div>
         </div>
@@ -4335,6 +4335,8 @@
                             } else if (hasTimestamp) {
                                 if (primary.lastMistakeDay !== undefined) mergedItem.lastMistakeDay = primary.lastMistakeDay;
                                 else delete mergedItem.lastMistakeDay;
+                                if (primary.resolvedMistakeDay !== undefined) mergedItem.resolvedMistakeDay = primary.resolvedMistakeDay;
+                                else delete mergedItem.resolvedMistakeDay;
                             }
                             mergedProgress[wid] = mergedItem;
                         }
@@ -5178,22 +5180,26 @@
                 }
             }
 
-            // 統計錯題數 (排除已達 Level 3 以上掌握狀態之畢業單字)
-            let mistakeCount = 0;
-            for (let id in userProgress) {
-                const p = userProgress[id];
-                if (p && p.level >= 3) continue;
-                if (p.lastMistakeDay !== undefined) {
-                    const w = vocabularyDB.find(x => x.id == id);
-                    if (w && (w.unit || Math.ceil(w.id / 1000) || 1) === currentUnit) mistakeCount++;
-                }
-            }
+            // 統計錯題數 (依序反映 本日 > 本週 > 本月 之活躍未掌握錯題)
+            const todayMistakes = typeof getMistakeWords === 'function' ? getMistakeWords('today').length : 0;
+            const weekMistakes = typeof getMistakeWords === 'function' ? getMistakeWords('week').length : 0;
+            const monthMistakes = typeof getMistakeWords === 'function' ? getMistakeWords('month').length : 0;
+
             const elMistakeBadge = document.getElementById('lobby-mistake-count-badge');
             if (elMistakeBadge) {
-                elMistakeBadge.innerText = mistakeCount > 0 ? `共 ${mistakeCount} 字錯題` : '目前無錯題';
-                elMistakeBadge.className = mistakeCount > 0
-                    ? "text-[11px] font-semibold text-[#0071E3] font-mono"
-                    : "text-[11px] font-medium text-slate-400 font-mono";
+                if (todayMistakes > 0) {
+                    elMistakeBadge.innerText = `本日 ${todayMistakes} 錯題`;
+                    elMistakeBadge.className = "text-[11px] font-semibold text-rose-600 font-mono";
+                } else if (weekMistakes > 0) {
+                    elMistakeBadge.innerText = `本週 ${weekMistakes} 錯題`;
+                    elMistakeBadge.className = "text-[11px] font-semibold text-[#0071E3] font-mono";
+                } else if (monthMistakes > 0) {
+                    elMistakeBadge.innerText = `本月 ${monthMistakes} 錯題`;
+                    elMistakeBadge.className = "text-[11px] font-semibold text-indigo-600 font-mono";
+                } else {
+                    elMistakeBadge.innerText = '目前無錯題';
+                    elMistakeBadge.className = "text-[11px] font-medium text-slate-400 font-mono";
+                }
             }
 
             // 統計弱點數
@@ -6312,7 +6318,9 @@
                     progress.level = 1;
                     progress.nextReviewDay = virtualCurrentDay + (SRS_INTERVALS[progress.level] || 1);
                     if (!progress.studyDays.includes(virtualCurrentDay)) progress.studyDays.push(virtualCurrentDay);
+                    progress.resolvedMistakeDay = virtualCurrentDay;
                 } else {
+                    delete progress.resolvedMistakeDay;
                     mistakeQueue.push(currentWord);
                 }
             } else {
@@ -6325,13 +6333,18 @@
                     progress.nextReviewDay = virtualCurrentDay + (SRS_INTERVALS[progress.level] || 1);
                     if (!progress.studyDays.includes(virtualCurrentDay)) progress.studyDays.push(virtualCurrentDay);
 
-                    // SRS 畢業門檻：等級提升至 Level 3 以上（掌握狀態），自動移出弱點與歷史錯題清單
+                    // ★ 錯題消化消解邏輯：
+                    // 1. 本日攻克：當日答對，標記為今日已攻克，立即從「本日錯題」中移出，達成清空成就感！
+                    progress.resolvedMistakeDay = virtualCurrentDay;
+
+                    // 2. SRS 掌握畢業門檻：等級提升至 Level 3 以上（掌握狀態），徹底從本週、本月等所有歷史錯題中畢業！
                     if (progress.level >= 3 && (progress.lastMistakeDay !== undefined || (Array.isArray(progress.mistakes) && progress.mistakes.length > 0))) {
                         const nowTs = Date.now();
                         progress.mistakes = [];
                         progress.mistakesClearedAt = nowTs;
                         progress.updatedAt = nowTs;
                         delete progress.lastMistakeDay;
+                        delete progress.resolvedMistakeDay;
                     }
                 } else {
                     progress.level = Math.max(0, progress.level - 1); // 答錯只降一級，降低挫折感
@@ -6340,6 +6353,7 @@
                     }
                     progress.nextReviewDay = virtualCurrentDay;
                     progress.lastMistakeDay = virtualCurrentDay; // 記錄錯題發生日
+                    delete progress.resolvedMistakeDay; // 答錯時重新激活未消解狀態
                     mistakeQueue.push(currentWord);
                 }
             }
@@ -11527,11 +11541,12 @@
         });
 
         // 錯題加強複習 (直接開始選擇題測驗)
-        function startMistakeReview(daysRange) {
+        function startMistakeReview(scope) {
             unlockMobileAudio();
-            const words = getMistakeWords(daysRange);
+            const words = getMistakeWords(scope);
+            const daysLabel = (scope === 'today' || scope === 0) ? '本日' : (scope === 'week' || scope === 7) ? '本週' : '本月';
             if (!words || words.length === 0) {
-                showQuickToast('太棒了！這段期間內沒有任何錯題紀錄 🎉');
+                showQuickToast(`太棒了！${daysLabel}沒有未攻克的錯題紀錄 🎉`);
                 return;
             }
 
@@ -11549,47 +11564,80 @@
             isMistakeMode = false;
             isAutoFlashcardMode = false;
             isManualCardMode = false;
-            const daysLabel = daysRange === 7 ? '本週' : daysRange === 30 ? '本月' : '全部';
             sessionTitle = `${daysLabel}錯題特訓 (${q.length} 字)`;
 
             switchTab('view-study', document.getElementById('tab-btn-dashboard'));
             nextCard();
         }
 
-        function getMistakeWords(daysRange) {
+        // 核心計算與消失邏輯：
+        // 1. 本日 (today)：出錯於今日 (lastMistakeDay === virtualCurrentDay)，且今日尚未攻克 (resolvedMistakeDay !== virtualCurrentDay)
+        // 2. 本週 (week)：出錯於近 7 天內 (dayDiff < 7)，超過 7 天自然滑入本月
+        // 3. 本月 (month)：出錯於近 30 天內 (dayDiff < 30)，超過 30 天自動畢業封存 (徹底杜絕無限滾雪球變大)
+        // 4. SRS 畢業：等級達 Level 3 以上者自動從全部錯題永久移除
+        function getMistakeWords(scope) {
             const list = [];
             for (let id in userProgress) {
                 const progress = userProgress[id];
-                // 等級已達 Level 3 以上（掌握狀態）者自動畢業，不列入歷史錯題複習
-                if (progress && progress.level >= 3) continue;
-                if (progress && progress.lastMistakeDay !== undefined && (virtualCurrentDay - progress.lastMistakeDay <= daysRange)) {
-                    const w = vocabularyDB.find(word => word.id == id);
-                    if (w && (w.unit || Math.ceil(w.id / 1000) || 1) === currentUnit) list.push(w);
+                if (!progress) continue;
+                if (progress.level >= 3) continue; // Level 3+ 自動畢業
+                if (progress.lastMistakeDay === undefined) continue;
+
+                const dayDiff = virtualCurrentDay - progress.lastMistakeDay;
+
+                if (scope === 'today' || scope === 0) {
+                    // 本日錯的：今天剛錯，且今天尚未在特訓中攻克
+                    if (progress.lastMistakeDay === virtualCurrentDay && progress.resolvedMistakeDay !== virtualCurrentDay) {
+                        const w = vocabularyDB.find(word => word.id == id);
+                        if (w && (w.unit || Math.ceil(w.id / 1000) || 1) === currentUnit) list.push(w);
+                    }
+                } else if (scope === 'week' || scope === 7) {
+                    // 本週錯的：近 7 天內 (包含今日已攻克字，確保本週複習不遺漏)
+                    if (dayDiff >= 0 && dayDiff < 7) {
+                        const w = vocabularyDB.find(word => word.id == id);
+                        if (w && (w.unit || Math.ceil(w.id / 1000) || 1) === currentUnit) list.push(w);
+                    }
+                } else {
+                    // 本月錯的：近 30 天內 (超過 30 天自動封存消解，防止一直累積變大)
+                    if (dayDiff >= 0 && dayDiff < 30) {
+                        const w = vocabularyDB.find(word => word.id == id);
+                        if (w && (w.unit || Math.ceil(w.id / 1000) || 1) === currentUnit) list.push(w);
+                    }
                 }
             }
             return list;
         }
 
-        function showMistakePreview(daysRange, titleText) {
-            const words = getMistakeWords(daysRange);
+        function showMistakePreview(scope, titleText) {
+            const words = getMistakeWords(scope);
             if (words.length === 0) {
-                showQuickToast('這段期間內沒有錯題紀錄 🎉');
+                const label = (scope === 'today' || scope === 0) ? '本日' : (scope === 'week' || scope === 7) ? '本週' : '本月';
+                showQuickToast(`${label}目前沒有錯題紀錄 🎉`);
                 return;
             }
-            renderPreviewModal(words, titleText, () => startMistakeReview(daysRange), '🚀 開始錯題複習');
+            renderPreviewModal(words, titleText, () => startMistakeReview(scope), '🚀 開始錯題複習');
         }
 
         // 歷史錯題直接複習 (選擇題測驗)
-        document.getElementById('btn-review-week')?.addEventListener('click', () => startMistakeReview(7));
-        document.getElementById('btn-review-month')?.addEventListener('click', () => startMistakeReview(30));
-        document.getElementById('btn-review-all')?.addEventListener('click', () => startMistakeReview(99999));
-        document.getElementById('lobby-btn-review-week')?.addEventListener('click', () => startMistakeReview(7));
-        document.getElementById('lobby-btn-review-month')?.addEventListener('click', () => startMistakeReview(30));
-        document.getElementById('lobby-btn-review-all')?.addEventListener('click', () => startMistakeReview(99999));
+        document.getElementById('btn-review-today')?.addEventListener('click', () => startMistakeReview('today'));
+        document.getElementById('btn-review-week')?.addEventListener('click', () => startMistakeReview('week'));
+        document.getElementById('btn-review-month')?.addEventListener('click', () => startMistakeReview('month'));
+        document.getElementById('lobby-btn-review-today')?.addEventListener('click', () => startMistakeReview('today'));
+        document.getElementById('lobby-btn-review-week')?.addEventListener('click', () => startMistakeReview('week'));
+        document.getElementById('lobby-btn-review-month')?.addEventListener('click', () => startMistakeReview('month'));
 
-        // 歷史錯題預覽按鈕 (僅點擊預覽標籤時彈出預覽)
+        // 歷史錯題預覽按鈕
         document.getElementById('btn-preview-all-mistakes')?.addEventListener('click', () => {
-            showMistakePreview(99999, '🎯 全部歷史錯題預覽');
+            const todayCount = getMistakeWords('today').length;
+            const weekCount = getMistakeWords('week').length;
+            if (todayCount > 0) {
+                showMistakePreview('today', `🎯 本日錯題預覽 (${todayCount} 字)`);
+            } else if (weekCount > 0) {
+                showMistakePreview('week', `🎯 本週錯題預覽 (${weekCount} 字)`);
+            } else {
+                const monthCount = getMistakeWords('month').length;
+                showMistakePreview('month', `🎯 本月錯題預覽 (${monthCount} 字)`);
+            }
         });
 
         // 學習中心 (Study Center) 事件綁定

@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261101V5';
+        const APP_BUILD_VERSION = '20261101V6';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -63,20 +63,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261101V5"></script>
-    <script src="toeic_data.js?v=20261101V5"></script>
-    <script src="jh_data.js?v=20261101V5"></script>
-    <script src="listening_data.js?v=20261101V5"></script>
-    <script src="listening_words_data.js?v=20261101V5"></script>
-    <script src="uk_phonetics_manifest.js?v=20261101V5"></script>
-    <script src="words_audio_manifest.js?v=20261101V5"></script>
-    <script src="examples_audio_manifest.js?v=20261101V5"></script>
-    <script src="zh_audio_manifest.js?v=20261101V5"></script>
-    <script src="collocations_audio_manifest.js?v=20261101V5"></script>
-    <script src="syn_ant_data.js?v=20261101V5"></script>
-    <script src="synonyms_unit8_data.js?v=20261101V5"></script>
-    <script src="examples_unit9_data.js?v=20261101V5"></script>
-    <script src="game_whack.js?v=20261101V5"></script>
+    <script src="words_data.js?v=20261101V6"></script>
+    <script src="toeic_data.js?v=20261101V6"></script>
+    <script src="jh_data.js?v=20261101V6"></script>
+    <script src="listening_data.js?v=20261101V6"></script>
+    <script src="listening_words_data.js?v=20261101V6"></script>
+    <script src="uk_phonetics_manifest.js?v=20261101V6"></script>
+    <script src="words_audio_manifest.js?v=20261101V6"></script>
+    <script src="examples_audio_manifest.js?v=20261101V6"></script>
+    <script src="zh_audio_manifest.js?v=20261101V6"></script>
+    <script src="collocations_audio_manifest.js?v=20261101V6"></script>
+    <script src="syn_ant_data.js?v=20261101V6"></script>
+    <script src="synonyms_unit8_data.js?v=20261101V6"></script>
+    <script src="examples_unit9_data.js?v=20261101V6"></script>
+    <script src="game_whack.js?v=20261101V6"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -3724,76 +3724,6 @@
                     }
                 }
                 if (items.length > 0) {
-                    // 若有提供例句，智慧判斷匹配之詞性並置頂
-                    if (items.length > 1 && (exampleZh || exampleEn)) {
-                        const exZhClean = String(exampleZh || '').replace(/[^\p{L}\p{N}]/gu, '');
-                        const exEnLower = ' ' + String(exampleEn || '').toLowerCase() + ' ';
-                        const tLower = String(targetEn || '').toLowerCase().trim();
-                        
-                        let bestIdx = 0;
-                        let maxScore = 15; // 預設第0項（高頻原序）基礎分
-                        
-                        items.forEach((it, idx) => {
-                            let score = (idx === 0) ? 15 : 0;
-                            const pLower = it.pos.toLowerCase();
-                            // 中文釋義比對
-                            const cleanedText = it.text.replace(/[\(（][^）\)]*[\)）]/g, '');
-                            const terms = cleanedText.split(/[,，、/；;\s…….]+/).filter(Boolean);
-                            for (const term of terms) {
-                                const t = term.trim();
-                                if (!t) continue;
-                                if (t.length >= 2 && exZhClean.includes(t)) {
-                                    score += t.length * 25;
-                                } else if (t.length === 1 && exZhClean.includes(t) && !['人','事','物','者','在','到','有','是','做','個','點','的','地','得'].includes(t)) {
-                                    score += 15;
-                                }
-                                const stem = t.replace(/[的地得]+$/, '');
-                                if (stem && stem !== t) {
-                                    if (stem.length >= 2 && exZhClean.includes(stem)) score += stem.length * 20;
-                                }
-                            }
-                            // 英文句法線索比對
-                            if (tLower && exEnLower.length > 2) {
-                                if (pLower.startsWith('v')) {
-                                    if (new RegExp("\\b(can|could|will|would|shall|should|may|might|must|did|does|do|didn't|doesn't|don't)\\s+(?:[a-z'\\-]+\\s+){0,3}" + tLower + "\\b", "i").test(exEnLower) ||
-                                        new RegExp("\\bto\\s+" + tLower + "\\b", "i").test(exEnLower) ||
-                                        new RegExp("\\b" + tLower + "(ed|ing)\\b", "i").test(exEnLower)) {
-                                        score += 20;
-                                    }
-                                }
-                                if (pLower.startsWith('n') && !pLower.startsWith('num')) {
-                                    // 只有當冠詞/所有格接目標字且後面直接為標點/介系詞/動詞/句尾時，才判定為名詞 (杜絕 a [adj] [noun] 如 a super time 誤判為名詞)
-                                    if (new RegExp("\\b(a|an|the|my|your|his|her|its|our|their|this|that)\\s+" + tLower + "(?:\\s*[,.!?;:]|\\s+(?:in|on|at|with|by|for|of|to|is|was|are|were|has|have|had)\\b|\\s*$)", "i").test(exEnLower)) {
-                                        score += 20;
-                                    }
-                                }
-                                if (pLower.startsWith('adj') || pLower === 'a.') {
-                                    // 表語形容詞 (系動詞 + adj)
-                                    if (new RegExp("\\b(am|is|are|was|were|been|being|'s|'re|seem|look|feel)\\s+(?:very\\s+|quite\\s+|relatively\\s+|too\\s+|so\\s+)?" + tLower + "\\b", "i").test(exEnLower)) {
-                                        score += 25;
-                                    }
-                                    // 定語形容詞 (冠詞/所有格 + adj + 名詞，如 a super time)
-                                    if (new RegExp("\\b(a|an|the|my|your|his|her|its|our|their|this|that)\\s+" + tLower + "\\s+[a-zA-Z]+", "i").test(exEnLower)) {
-                                        score += 25;
-                                    }
-                                }
-                                if (pLower.startsWith('adv') || pLower === 'ad.') {
-                                    if (new RegExp("\\b(?:drive|run|walk|work|speak|act)\\s+(?:so\\s+|very\\s+|too\\s+)?" + tLower + "\\b", "i").test(exEnLower)) {
-                                        score += 20;
-                                    }
-                                }
-                            }
-                            if (score > maxScore) {
-                                maxScore = score;
-                                bestIdx = idx;
-                            }
-                        });
-                        if (bestIdx > 0) {
-                            const matched = items[bestIdx];
-                            items = [matched, ...items.filter((_, i) => i !== bestIdx)];
-                        }
-                    }
-
                     const posSet = [...new Set(items.map(it => it.pos.toLowerCase()))];
                     const posBadgeText = posSet.join(' / ');
                     const uniqueTexts = [...new Set(items.map(it => it.text))];

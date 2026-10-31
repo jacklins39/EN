@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261031V4';
+        const APP_BUILD_VERSION = '20261031V5';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -63,20 +63,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261031V4"></script>
-    <script src="toeic_data.js?v=20261031V4"></script>
-    <script src="jh_data.js?v=20261031V4"></script>
-    <script src="listening_data.js?v=20261031V4"></script>
-    <script src="listening_words_data.js?v=20261031V4"></script>
-    <script src="uk_phonetics_manifest.js?v=20261031V4"></script>
-    <script src="words_audio_manifest.js?v=20261031V4"></script>
-    <script src="examples_audio_manifest.js?v=20261031V4"></script>
-    <script src="zh_audio_manifest.js?v=20261031V4"></script>
-    <script src="collocations_audio_manifest.js?v=20261031V4"></script>
-    <script src="syn_ant_data.js?v=20261031V4"></script>
-    <script src="synonyms_unit8_data.js?v=20261031V4"></script>
-    <script src="examples_unit9_data.js?v=20261031V4"></script>
-    <script src="game_whack.js?v=20261031V4"></script>
+    <script src="words_data.js?v=20261031V5"></script>
+    <script src="toeic_data.js?v=20261031V5"></script>
+    <script src="jh_data.js?v=20261031V5"></script>
+    <script src="listening_data.js?v=20261031V5"></script>
+    <script src="listening_words_data.js?v=20261031V5"></script>
+    <script src="uk_phonetics_manifest.js?v=20261031V5"></script>
+    <script src="words_audio_manifest.js?v=20261031V5"></script>
+    <script src="examples_audio_manifest.js?v=20261031V5"></script>
+    <script src="zh_audio_manifest.js?v=20261031V5"></script>
+    <script src="collocations_audio_manifest.js?v=20261031V5"></script>
+    <script src="syn_ant_data.js?v=20261031V5"></script>
+    <script src="synonyms_unit8_data.js?v=20261031V5"></script>
+    <script src="examples_unit9_data.js?v=20261031V5"></script>
+    <script src="game_whack.js?v=20261031V5"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -2143,14 +2143,14 @@
                         <option value="11">&nbsp;&nbsp;多益單元 1 (1 - 1000)</option>
                         <option value="12">&nbsp;&nbsp;多益單元 2 (1001 - 2000)</option>
                         <option value="13">&nbsp;&nbsp;多益單元 3 (2001 - 3000)</option>
-                        <option value="14">&nbsp;&nbsp;多益單元 4 (3001 - 3106)</option>
+                        <option value="14">&nbsp;&nbsp;多益單元 4 (3001 - 3116)</option>
 
                         <option disabled class="select-group-header" value="">── 🏫 國中基礎 2000 ──</option>
                         <option value="17">&nbsp;&nbsp;國中單元 1 (1 - 1000)</option>
                         <option value="18">&nbsp;&nbsp;國中單元 2 (1001 - 1946)</option>
 
                         <option disabled class="select-group-header" value="">── 🎧 聽力專屬字庫 ──</option>
-                        <option value="19">&nbsp;&nbsp;聽力新單字庫</option>
+                        <option value="19">&nbsp;&nbsp;聽力新單字庫 (1 - 12)</option>
 
                         <option disabled class="select-group-header" value="">── ✏️ 自訂字庫 ──</option>
                         <option value="10">&nbsp;&nbsp;自訂生詞庫</option>
@@ -3089,9 +3089,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261031V4</span>
+                        <span id="app-version-display">版本 20261031V5</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261031V4</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261031V5</p>
                 </div>
             </div>
         </div>
@@ -4753,6 +4753,11 @@
             const u14Opt = document.querySelector('#unit-selector option[value="14"]');
             if (u14Opt && u14Words.length > 0) {
                 u14Opt.innerHTML = `&nbsp;&nbsp;多益單元 4 (3001 - ${3000 + u14Words.length})`;
+            }
+            const u19Words = getUnitWords(19);
+            const u19Opt = document.querySelector('#unit-selector option[value="19"]');
+            if (u19Opt && u19Words.length > 0) {
+                u19Opt.innerHTML = `&nbsp;&nbsp;聽力新單字庫 (1 - ${u19Words.length})`;
             }
         }
 

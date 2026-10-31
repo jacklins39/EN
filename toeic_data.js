@@ -31429,5 +31429,105 @@ const toeicWordsDB = [
     "unit": 14,
     "example": "The executive committee will convene tomorrow morning.",
     "exampleZh": "執行委員會將於明天上午召開會議。"
+  },
+  {
+    "id": 31966,
+    "en": "appetizer",
+    "kk": "[ˋæpə͵taɪzɚ]",
+    "uk": "/ˈæpɪtaɪzə(r)/",
+    "zh": "n. 前菜、開胃菜、開胃飲料",
+    "unit": 14,
+    "example": "We ordered a platter of fresh spring rolls as an appetizer before the main course.",
+    "exampleZh": "我們在主餐前點了一盤新鮮春捲作為開胃前菜。"
+  },
+  {
+    "id": 31970,
+    "en": "boarding",
+    "kk": "[ˋbordɪŋ]",
+    "uk": "/ˈbɔːdɪŋ/",
+    "zh": "n. 登機、登船、檢查、木板",
+    "unit": 14,
+    "example": "Flight 842 to New York is now ready for boarding at gate 15.",
+    "exampleZh": "前往紐約的第 842 號班機現在開始在 15 號登機門登機。"
+  },
+  {
+    "id": 31972,
+    "en": "campsite",
+    "kk": "[ˋkæmp͵saɪt]",
+    "uk": "/ˈkæmpsaɪt/",
+    "zh": "n. 露營營地、露營地[為遊客所設]",
+    "unit": 14,
+    "example": "We pitched our tents at a designated campsite overlooking the scenic valley.",
+    "exampleZh": "我們在俯瞰風景秀麗山谷的指定露營地搭建了帳篷。"
+  },
+  {
+    "id": 31973,
+    "en": "cardio",
+    "kk": "[ˋkɑrdɪ͵o]",
+    "uk": "/ˈkärdēō/",
+    "zh": "n. 有氧運動、cardiovascular exercise.",
+    "unit": 14,
+    "example": "Her daily fitness routine includes thirty minutes of intensive cardio exercise.",
+    "exampleZh": "她的日常健身計畫包括三十分鐘的高強度有氧運動。"
+  },
+  {
+    "id": 31979,
+    "en": "croissant",
+    "kk": "[krwɑˋsɑ̃]",
+    "uk": "/ˈkrwɑːsɒŋ/",
+    "zh": "n. 可頌麵包、羊角麵包",
+    "unit": 14,
+    "example": "Hi, could I please get an iced oat latte and an almond croissant?",
+    "exampleZh": "嗨，請給我一杯冰燕麥拿鐵和一個杏仁可頌好嗎？"
+  },
+  {
+    "id": 31988,
+    "en": "fries",
+    "kk": "[fraɪz]",
+    "uk": "/fraɪz/",
+    "zh": "n. 薯條、炸薯條",
+    "unit": 14,
+    "example": "Hello! I would like to order a cheeseburger and a large fries.",
+    "exampleZh": "你好！我想點一個起司漢堡和大份薯條。"
+  },
+  {
+    "id": 31989,
+    "en": "groceries",
+    "kk": "[ˋgrosərɪz]",
+    "uk": "/ˈgrəʊsərɪz/",
+    "zh": "n. 食品雜貨",
+    "unit": 14,
+    "example": "She stopped at the local supermarket on her way home to pick up fresh groceries.",
+    "exampleZh": "她在回家途中順道停在當地超市購買新鮮的食品雜貨。"
+  },
+  {
+    "id": 31994,
+    "en": "latte",
+    "kk": "[ˋlɑte]",
+    "uk": "/ˈlɑːteɪ/",
+    "zh": "n. 拿鐵、拿鐵咖啡",
+    "unit": 14,
+    "example": "Hi, could I please get an iced oat latte and an almond croissant?",
+    "exampleZh": "嗨，請給我一杯冰燕麥拿鐵和一個杏仁可頌好嗎？"
+  },
+  {
+    "id": 32005,
+    "en": "seated",
+    "kk": "[ˋsitɪd]",
+    "uk": "/ˈsiːtɪd/",
+    "zh": "adj. 就座的",
+    "unit": 14,
+    "example": "All other passengers, please remain seated until your zone is called.",
+    "exampleZh": "其他所有旅客請在座位上等候，直到您的登機分區被叫到為止。"
+  },
+  {
+    "id": 32026,
+    "en": "pilot",
+    "kk": "[ˋpaɪlət]",
+    "uk": "/ˈpaɪlət/",
+    "zh": "n. 飛行員，舵手",
+    "unit": 14,
+    "example": "You are the best little kite pilot in the park today.",
+    "exampleZh": "妳今天是公園裡最棒的風箏小飛行員。"
   }
 ];

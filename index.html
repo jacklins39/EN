@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261101V1';
+        const APP_BUILD_VERSION = '20261101V2';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -63,20 +63,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261101V1"></script>
-    <script src="toeic_data.js?v=20261101V1"></script>
-    <script src="jh_data.js?v=20261101V1"></script>
-    <script src="listening_data.js?v=20261101V1"></script>
-    <script src="listening_words_data.js?v=20261101V1"></script>
-    <script src="uk_phonetics_manifest.js?v=20261101V1"></script>
-    <script src="words_audio_manifest.js?v=20261101V1"></script>
-    <script src="examples_audio_manifest.js?v=20261101V1"></script>
-    <script src="zh_audio_manifest.js?v=20261101V1"></script>
-    <script src="collocations_audio_manifest.js?v=20261101V1"></script>
-    <script src="syn_ant_data.js?v=20261101V1"></script>
-    <script src="synonyms_unit8_data.js?v=20261101V1"></script>
-    <script src="examples_unit9_data.js?v=20261101V1"></script>
-    <script src="game_whack.js?v=20261101V1"></script>
+    <script src="words_data.js?v=20261101V2"></script>
+    <script src="toeic_data.js?v=20261101V2"></script>
+    <script src="jh_data.js?v=20261101V2"></script>
+    <script src="listening_data.js?v=20261101V2"></script>
+    <script src="listening_words_data.js?v=20261101V2"></script>
+    <script src="uk_phonetics_manifest.js?v=20261101V2"></script>
+    <script src="words_audio_manifest.js?v=20261101V2"></script>
+    <script src="examples_audio_manifest.js?v=20261101V2"></script>
+    <script src="zh_audio_manifest.js?v=20261101V2"></script>
+    <script src="collocations_audio_manifest.js?v=20261101V2"></script>
+    <script src="syn_ant_data.js?v=20261101V2"></script>
+    <script src="synonyms_unit8_data.js?v=20261101V2"></script>
+    <script src="examples_unit9_data.js?v=20261101V2"></script>
+    <script src="game_whack.js?v=20261101V2"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -3121,9 +3121,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261101V1</span>
+                        <span id="app-version-display">版本 20261101V2</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261101V1</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261101V2</p>
                 </div>
             </div>
         </div>
@@ -4020,6 +4020,7 @@
         let currentWord = null;
         let isShowingAnswer = false;
         let isMistakeMode = false;
+        let currentMistakeSessionScope = null; // 'today' | 'week' | 'month'
         let isQuizMode = false;
         let isManualCardMode = false;
         let sessionTitle = "一般課程";
@@ -4375,6 +4376,12 @@
                                 else delete mergedItem.lastMistakeDay;
                                 if (primary.resolvedMistakeDay !== undefined) mergedItem.resolvedMistakeDay = primary.resolvedMistakeDay;
                                 else delete mergedItem.resolvedMistakeDay;
+                                if (primary.resolvedTodayDay !== undefined) mergedItem.resolvedTodayDay = primary.resolvedTodayDay;
+                                else delete mergedItem.resolvedTodayDay;
+                                if (primary.resolvedWeekDay !== undefined) mergedItem.resolvedWeekDay = primary.resolvedWeekDay;
+                                else delete mergedItem.resolvedWeekDay;
+                                if (primary.resolvedMonthDay !== undefined) mergedItem.resolvedMonthDay = primary.resolvedMonthDay;
+                                else delete mergedItem.resolvedMonthDay;
                             }
                             mergedProgress[wid] = mergedItem;
                         }
@@ -4675,19 +4682,20 @@
         }
 
         // ==========================================
-        // SRS 畢業機制：當單字等級達 Level 3 以上（掌握狀態），自動移出弱點與錯題
+        // 錯題健康檢查與修復：確保 30 天內錯題完整留存，不自動刪除
         // ==========================================
         function cleanupMasteredMistakes() {
             let changed = false;
             for (const id in userProgress) {
                 const p = userProgress[id];
-                if (p && p.level >= 3 && (p.lastMistakeDay !== undefined || (Array.isArray(p.mistakes) && p.mistakes.length > 0))) {
-                    const nowTs = Date.now();
-                    p.mistakes = [];
-                    p.mistakesClearedAt = nowTs;
-                    p.updatedAt = nowTs;
-                    delete p.lastMistakeDay;
-                    changed = true;
+                if (!p) continue;
+                // 自動修復：若 mistakes 陣列有出錯紀錄但 lastMistakeDay 遺失，自動還原最近一次出錯天數
+                if (p.lastMistakeDay === undefined && Array.isArray(p.mistakes) && p.mistakes.length > 0) {
+                    const lastM = p.mistakes[p.mistakes.length - 1];
+                    if (lastM && typeof lastM.day === 'number') {
+                        p.lastMistakeDay = lastM.day;
+                        changed = true;
+                    }
                 }
             }
             if (changed) {
@@ -6377,8 +6385,20 @@
                     progress.level = 1;
                     progress.nextReviewDay = virtualCurrentDay + (SRS_INTERVALS[progress.level] || 1);
                     if (!progress.studyDays.includes(virtualCurrentDay)) progress.studyDays.push(virtualCurrentDay);
+                    if (currentMistakeSessionScope === 'today') {
+                        progress.resolvedTodayDay = virtualCurrentDay;
+                    } else if (currentMistakeSessionScope === 'week') {
+                        progress.resolvedWeekDay = virtualCurrentDay;
+                    } else if (currentMistakeSessionScope === 'month') {
+                        progress.resolvedMonthDay = virtualCurrentDay;
+                    } else {
+                        progress.resolvedTodayDay = virtualCurrentDay;
+                    }
                     progress.resolvedMistakeDay = virtualCurrentDay;
                 } else {
+                    delete progress.resolvedTodayDay;
+                    delete progress.resolvedWeekDay;
+                    delete progress.resolvedMonthDay;
                     delete progress.resolvedMistakeDay;
                     mistakeQueue.push(currentWord);
                 }
@@ -6392,19 +6412,20 @@
                     progress.nextReviewDay = virtualCurrentDay + (SRS_INTERVALS[progress.level] || 1);
                     if (!progress.studyDays.includes(virtualCurrentDay)) progress.studyDays.push(virtualCurrentDay);
 
-                    // ★ 錯題消化消解邏輯：
-                    // 1. 本日攻克：當日答對，標記為今日已攻克，立即從「本日錯題」中移出，達成清空成就感！
+                    // ★ 錯題三階獨立防線攻克邏輯 (不能自動刪除，強迫去練)：
+                    if (currentMistakeSessionScope === 'today') {
+                        progress.resolvedTodayDay = virtualCurrentDay;
+                    } else if (currentMistakeSessionScope === 'week') {
+                        progress.resolvedWeekDay = virtualCurrentDay;
+                    } else if (currentMistakeSessionScope === 'month') {
+                        progress.resolvedMonthDay = virtualCurrentDay;
+                    } else {
+                        progress.resolvedTodayDay = virtualCurrentDay;
+                    }
                     progress.resolvedMistakeDay = virtualCurrentDay;
 
-                    // 2. SRS 掌握畢業門檻：等級提升至 Level 3 以上（掌握狀態），徹底從本週、本月等所有歷史錯題中畢業！
-                    if (progress.level >= 3 && (progress.lastMistakeDay !== undefined || (Array.isArray(progress.mistakes) && progress.mistakes.length > 0))) {
-                        const nowTs = Date.now();
-                        progress.mistakes = [];
-                        progress.mistakesClearedAt = nowTs;
-                        progress.updatedAt = nowTs;
-                        delete progress.lastMistakeDay;
-                        delete progress.resolvedMistakeDay;
-                    }
+                    // ★【絕不自動刪除 lastMistakeDay】：
+                    // 30 天內錯題庫完整保留作為月度總驗收庫，絕不因 Level >= 3 自動抹除！
                 } else {
                     progress.level = Math.max(0, progress.level - 1); // 答錯只降一級，降低挫折感
                     if (progress.level < MAX_LEVEL) {
@@ -6412,6 +6433,9 @@
                     }
                     progress.nextReviewDay = virtualCurrentDay;
                     progress.lastMistakeDay = virtualCurrentDay; // 記錄錯題發生日
+                    delete progress.resolvedTodayDay;
+                    delete progress.resolvedWeekDay;
+                    delete progress.resolvedMonthDay;
                     delete progress.resolvedMistakeDay; // 答錯時重新激活未消解狀態
                     mistakeQueue.push(currentWord);
                 }
@@ -11675,6 +11699,7 @@
         // 錯題加強複習 (直接開始選擇題測驗)
         function startMistakeReview(scope) {
             unlockMobileAudio();
+            currentMistakeSessionScope = scope;
             const words = getMistakeWords(scope);
             const daysLabel = (scope === 'today' || scope === 0) ? '本日' : (scope === 'week' || scope === 7) ? '本週' : '本月';
             if (!words || words.length === 0) {
@@ -11702,38 +11727,40 @@
             nextCard();
         }
 
-        // 核心計算與消失邏輯：
-        // 1. 本日 (today)：出錯於今日 (lastMistakeDay === virtualCurrentDay)，且今日尚未攻克 (resolvedMistakeDay !== virtualCurrentDay)
-        // 2. 本週 (week)：出錯於近 7 天內 (dayDiff < 7)，超過 7 天自然滑入本月
-        // 3. 本月 (month)：出錯於近 30 天內 (dayDiff < 30)，超過 30 天自動畢業封存 (徹底杜絕無限滾雪球變大)
-        // 4. SRS 畢業：等級達 Level 3 以上者自動從全部錯題永久移除
+        // 核心計算與三階獨立防線邏輯：
+        // 1. 本日 (today)：出錯於今日 (lastMistakeDay === virtualCurrentDay)，且今日尚未在本日特訓中攻克 (resolvedTodayDay !== virtualCurrentDay)
+        // 2. 本週 (week)：出錯於近 7 天內 (dayDiff < 7)，且尚未在本週特訓中攻克 (resolvedWeekDay !== virtualCurrentDay)。練完本日，本週依然保留！
+        // 3. 本月 (month)：出錯於近 30 天內 (dayDiff < 30)！
+        //    ★【絕不自動刪除，強迫去練】：練完本日、本週，本月依然完整保留！
+        //    ★ 只有親自點「本月錯題」進行月度總驗收並答對攻克 (resolvedMonthDay === virtualCurrentDay) 才標記完成！
+        //    ★ 超過 30 天自然過期封存，防止無限滾雪球變大。
         function getMistakeWords(scope) {
             const list = [];
             for (let id in userProgress) {
                 const progress = userProgress[id];
                 if (!progress) continue;
-                if (progress.level >= 3) continue; // Level 3+ 自動畢業
                 if (progress.lastMistakeDay === undefined) continue;
 
                 const dayDiff = virtualCurrentDay - progress.lastMistakeDay;
+                if (dayDiff < 0 || dayDiff >= 30) continue; // 超過 30 天自然封存
+
+                const w = vocabularyDB.find(word => word.id == id);
+                if (!w || (w.unit || Math.ceil(w.id / 1000) || 1) !== currentUnit) continue;
 
                 if (scope === 'today' || scope === 0) {
-                    // 本日錯的：今天剛錯，且今天尚未在特訓中攻克
-                    if (progress.lastMistakeDay === virtualCurrentDay && progress.resolvedMistakeDay !== virtualCurrentDay) {
-                        const w = vocabularyDB.find(word => word.id == id);
-                        if (w && (w.unit || Math.ceil(w.id / 1000) || 1) === currentUnit) list.push(w);
+                    const isTodayResolved = progress.resolvedTodayDay === virtualCurrentDay || progress.resolvedMistakeDay === virtualCurrentDay;
+                    if (progress.lastMistakeDay === virtualCurrentDay && !isTodayResolved) {
+                        list.push(w);
                     }
                 } else if (scope === 'week' || scope === 7) {
-                    // 本週錯的：近 7 天內 (包含今日已攻克字，確保本週複習不遺漏)
-                    if (dayDiff >= 0 && dayDiff < 7) {
-                        const w = vocabularyDB.find(word => word.id == id);
-                        if (w && (w.unit || Math.ceil(w.id / 1000) || 1) === currentUnit) list.push(w);
+                    const isWeekResolved = progress.resolvedWeekDay === virtualCurrentDay;
+                    if (dayDiff >= 0 && dayDiff < 7 && !isWeekResolved) {
+                        list.push(w);
                     }
                 } else {
-                    // 本月錯的：近 30 天內 (超過 30 天自動封存消解，防止一直累積變大)
-                    if (dayDiff >= 0 && dayDiff < 30) {
-                        const w = vocabularyDB.find(word => word.id == id);
-                        if (w && (w.unit || Math.ceil(w.id / 1000) || 1) === currentUnit) list.push(w);
+                    const isMonthResolved = progress.resolvedMonthDay === virtualCurrentDay;
+                    if (dayDiff >= 0 && dayDiff < 30 && !isMonthResolved) {
+                        list.push(w);
                     }
                 }
             }

@@ -7425,7 +7425,10 @@ const UK_PHONETICS_MANIFEST = {
   "zoo": "/zuː/",
   "zoom": "/zuːm/",
   "zoom-in": "",
-  "zoom-out": ""
+  "zoom-out": "",
+  "checkmate": "/ˈtʃek.meɪt/",
+  "levels": "/ˈlev.əlz/",
+  "results": "/rɪˈzʌlts/"
 };
 if (typeof window !== 'undefined') {
   window.UK_PHONETICS_MANIFEST = UK_PHONETICS_MANIFEST;

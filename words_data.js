@@ -65668,5 +65668,35 @@ const externalVocabularyDB = [
     "unit": 7,
     "example": "All the front seats in the concert hall were already taken.",
     "exampleZh": "音樂廳前排的所有座位都已經被坐滿了。"
+  },
+  {
+    "id": 6579,
+    "en": "checkmate",
+    "kk": "[ˋtʃɛk͵met]",
+    "uk": "/ˈtʃek.meɪt/",
+    "zh": "vt. （西洋棋中）將死、徹底擊敗、制勝；n. （西洋棋中的）將死、絕境、徹底失敗",
+    "unit": 1,
+    "example": "His king had been checkmated.",
+    "exampleZh": "他的國王已被將死。"
+  },
+  {
+    "id": 6580,
+    "en": "levels",
+    "kk": "[ˋlɛvəlz]",
+    "uk": "/ˈlev.əlz/",
+    "zh": "n. 水平、數量、程度、標準（level的複數形式）；vt. 使平整、夷平（level的第三人稱單數形式）",
+    "unit": 1,
+    "example": "When water levels rise, flooding results.",
+    "exampleZh": "當水位上升時，就會發生洪水。"
+  },
+  {
+    "id": 6581,
+    "en": "results",
+    "kk": "[rɪˋzʌlts]",
+    "uk": "/rɪˈzʌlts/",
+    "zh": "n. 結果、後果、成效（result的複數形式）；vi. 導致、產生、造成（result的第三人稱單數形式）",
+    "unit": 1,
+    "example": "When water levels rise, flooding results.",
+    "exampleZh": "當水位上升時，就會發生洪水。"
   }
 ];

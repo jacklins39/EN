@@ -17284,7 +17284,7 @@ const jhWordsDB = [
     "en": "this",
     "kk": "[ðɪs]",
     "uk": "/ðɪs/",
-    "zh": "pron. 這、這個、這樣、今；adj. 這、這個；adv. 這樣地、這麼；det. 這、這個；n. （法、美、印、巴）蒂斯",
+    "zh": "pron. 這、這個；det. 這、這個；adv. 這麼、這樣地",
     "unit": 18,
     "example": "This carpet stains easily.",
     "exampleZh": "這塊地毯很容易弄髒。"

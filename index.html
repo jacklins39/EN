@@ -1386,6 +1386,24 @@
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) !important;
         }
 
+        /* 12-2. 單字詳解返回上一頁按鈕 */
+        html.dark #btn-detail-back {
+            background-color: #1E293B !important;
+            border-color: rgba(255, 255, 255, 0.12) !important;
+            color: #CBD5E1 !important;
+        }
+        html.dark #btn-detail-back:hover {
+            background-color: #243552 !important;
+            border-color: #388BFD !important;
+            color: #58A6FF !important;
+        }
+        html.dark #btn-detail-back svg {
+            color: #94A3B8 !important;
+        }
+        html.dark #btn-detail-back:hover svg {
+            color: #58A6FF !important;
+        }
+
         /* 13. 單字清單與音標膠囊調優 */
         html.dark .preview-word-row,
         html.dark .weak-row,
@@ -3200,11 +3218,17 @@
             <div class="bg-white rounded-3xl shadow-2xl p-5 sm:p-6 max-w-lg w-full relative dict-modal-anim max-h-[90vh] flex flex-col border border-gray-100">
                 <!-- 頂部導航與關閉列 -->
                 <div class="flex justify-between items-center pb-3 border-b border-gray-100 mb-3 shrink-0">
-                    <div class="flex items-center gap-2">
-                        <button id="btn-detail-mark" type="button" class="hidden text-xl leading-none p-1.5 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors cursor-pointer" title="標記 / 取消標記" aria-label="標記單字">☆</button>
-                        <span id="detail-modal-source-badge" class="text-xs font-bold px-2.5 py-1 rounded-full bg-blue-50 text-[#0071E3] border border-blue-200 font-mono">單字深度詳解</span>
+                    <div class="flex items-center gap-2 min-w-0">
+                        <button id="btn-detail-back" type="button" class="hidden flex items-center gap-1 text-xs font-semibold text-slate-700 hover:text-[#0071E3] bg-slate-100 hover:bg-blue-50 px-2.5 py-1 rounded-full border border-slate-200/80 transition-all cursor-pointer shadow-2xs group shrink-0" title="返回上一頁">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-slate-500 group-hover:text-[#0071E3] transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
+                            </svg>
+                            <span id="detail-back-word-label" class="font-mono truncate max-w-[90px]">上一頁</span>
+                        </button>
+                        <button id="btn-detail-mark" type="button" class="hidden text-xl leading-none p-1.5 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors cursor-pointer shrink-0" title="標記 / 取消標記" aria-label="標記單字">☆</button>
+                        <span id="detail-modal-source-badge" class="text-xs font-bold px-2.5 py-1 rounded-full bg-blue-50 text-[#0071E3] border border-blue-200 font-mono truncate">單字深度詳解</span>
                     </div>
-                    <button id="btn-close-word-detail" class="text-gray-400 hover:text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-full p-1.5 transition-colors cursor-pointer" title="關閉">
+                    <button id="btn-close-word-detail" class="text-gray-400 hover:text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-full p-1.5 transition-colors cursor-pointer shrink-0 ml-2" title="關閉">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
                     </button>
                 </div>
@@ -9657,7 +9681,31 @@
             return `單元 ${unit}`;
         }
 
-        async function showWordDetailModal(word, fallbackData = null) {
+        // 單字詳解歷史堆疊 (支援多層探索與無損返回上一頁)
+        let wordDetailHistory = [];
+        let currentDetailWord = '';
+
+        function updateDetailBackBtn() {
+            const btnBack = document.getElementById('btn-detail-back');
+            const lblBack = document.getElementById('detail-back-word-label');
+            if (!btnBack) return;
+            if (wordDetailHistory.length > 0) {
+                const prev = wordDetailHistory[wordDetailHistory.length - 1];
+                btnBack.classList.remove('hidden');
+                if (lblBack) lblBack.innerText = prev.word;
+                btnBack.title = `返回「${prev.word}」 (探索深度: ${wordDetailHistory.length})`;
+            } else {
+                btnBack.classList.add('hidden');
+            }
+        }
+
+        function handleWordDetailBack() {
+            if (wordDetailHistory.length === 0) return;
+            const prev = wordDetailHistory.pop();
+            showWordDetailModal(prev.word, null, true, prev.scrollTop);
+        }
+
+        async function showWordDetailModal(word, fallbackData = null, isBack = false, savedScrollTop = 0) {
             if (!word) return;
             const cleanWord = String(word).trim().toLowerCase().replace(/['".,!?]/g, '');
             if (!cleanWord) return;
@@ -9682,7 +9730,23 @@
             const content = document.getElementById('word-detail-content');
             if (!modal || !content) return;
 
+            const isModalAlreadyOpen = !modal.classList.contains('hidden');
+
+            if (isBack) {
+                currentDetailWord = cleanWord;
+            } else if (isModalAlreadyOpen && currentDetailWord && currentDetailWord !== cleanWord) {
+                wordDetailHistory.push({
+                    word: currentDetailWord,
+                    scrollTop: content.scrollTop || 0
+                });
+                currentDetailWord = cleanWord;
+            } else if (!isModalAlreadyOpen) {
+                wordDetailHistory = [];
+                currentDetailWord = cleanWord;
+            }
+
             modal.classList.remove('hidden');
+            updateDetailBackBtn();
 
             // 1. 本地字庫精準查找
             let item = vocabularyDB.find(w => w.en.toLowerCase() === cleanWord);
@@ -9703,6 +9767,13 @@
 
             if (item) {
                 renderWordDetailCard(item);
+                if (typeof savedScrollTop === 'number' && savedScrollTop > 0 && content) {
+                    requestAnimationFrame(() => {
+                        content.scrollTop = savedScrollTop;
+                    });
+                } else if (content && !isBack) {
+                    content.scrollTop = 0;
+                }
             } else {
                 content.innerHTML = `
                     <div class="flex flex-col items-center justify-center py-12 space-y-3">
@@ -9741,6 +9812,13 @@
                         example: '',
                         exampleZh: ''
                     }, true);
+                }
+                if (typeof savedScrollTop === 'number' && savedScrollTop > 0 && content) {
+                    requestAnimationFrame(() => {
+                        content.scrollTop = savedScrollTop;
+                    });
+                } else if (content && !isBack) {
+                    content.scrollTop = 0;
                 }
             }
         }
@@ -10175,6 +10253,11 @@
             modal.classList.add('hidden');
             stopAllAudio();
 
+            // 清空歷史導航堆疊
+            wordDetailHistory = [];
+            currentDetailWord = '';
+            updateDetailBackBtn();
+
             // 若原本是在自動輪播模式下點開單字且底層的預覽彈窗已關閉，關閉後給予充裕反應時間接續跳下一張
             const dictModal = document.getElementById('dict-modal');
             const isDictOpen = dictModal && !dictModal.classList.contains('hidden');
@@ -10189,14 +10272,28 @@
             }
         }
 
+        document.getElementById('btn-detail-back')?.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            handleWordDetailBack();
+        });
         document.getElementById('btn-close-word-detail')?.addEventListener('click', closeWordDetailModal);
         document.getElementById('word-detail-modal')?.addEventListener('click', (e) => {
             if (e.target === document.getElementById('word-detail-modal')) closeWordDetailModal();
         });
         document.addEventListener('keydown', (e) => {
+            const detailModal = document.getElementById('word-detail-modal');
+            const isDetailOpen = detailModal && !detailModal.classList.contains('hidden');
+            if (isDetailOpen && (e.key === 'Backspace' || (e.altKey && e.key === 'ArrowLeft'))) {
+                const tag = (document.activeElement?.tagName || '').toLowerCase();
+                if (tag !== 'input' && tag !== 'textarea' && wordDetailHistory.length > 0) {
+                    e.preventDefault();
+                    handleWordDetailBack();
+                    return;
+                }
+            }
             if (e.key === 'Escape') {
-                const detailModal = document.getElementById('word-detail-modal');
-                if (detailModal && !detailModal.classList.contains('hidden')) {
+                if (isDetailOpen) {
                     closeWordDetailModal();
                     return;
                 }

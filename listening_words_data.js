@@ -798,5 +798,115 @@ const listeningWordsDB = [
     "unit": 19,
     "example": "You are the best little kite pilot in the park today.",
     "exampleZh": "妳今天是公園裡最棒的風箏小飛行員。"
+  },
+  {
+    "id": 32027,
+    "en": "unexpected",
+    "kk": "[ˋʌnɪkˋspɛktɪd]",
+    "uk": "/ˌʌnɪkˈspektɪd/",
+    "zh": "adj. 出乎意料的",
+    "unit": 19,
+    "example": "unexpected guests/question",
+    "exampleZh": "不速之客／意外的問題"
+  },
+  {
+    "id": 32028,
+    "en": "congestion",
+    "kk": "[kənˋdʒɛstʃən]",
+    "uk": "/kənˈdʒestʃn/",
+    "zh": "n. 擁擠; 擁堵；充血; 黏液阻塞",
+    "unit": 19,
+    "example": "for nasal congestion , try this new spray",
+    "exampleZh": "試試這種新噴劑，可治療鼻塞"
+  },
+  {
+    "id": 32029,
+    "en": "contractual",
+    "kk": "[kənˋtræktʃʊəl]",
+    "uk": "/kənˈtræktʃʊəl/",
+    "zh": "adj. 合同的",
+    "unit": 19,
+    "example": "contractual agreement/obligations",
+    "exampleZh": "契約／合同規定的義務"
+  },
+  {
+    "id": 32030,
+    "en": "renewable",
+    "kk": "[rɪˋnjuəbl]",
+    "uk": "/rɪˈnjuːəbl/",
+    "zh": "adj. 可延期的；可再生的；npl. 可再生能源",
+    "unit": 19,
+    "example": "renewable technology",
+    "exampleZh": "可再生能源技術"
+  },
+  {
+    "id": 32031,
+    "en": "defective",
+    "kk": "[dɪˋfɛktɪv]",
+    "uk": "/dɪˈfektɪv/",
+    "zh": "adj. 有缺點的; 有缺陷的；不完全變化的",
+    "unit": 19,
+    "example": "defective workmanship",
+    "exampleZh": "工藝缺陷"
+  },
+  {
+    "id": 32032,
+    "en": "thrilled",
+    "kk": "[θrɪld]",
+    "uk": "/θrɪld/",
+    "zh": "adj. 非常興奮的",
+    "unit": 19,
+    "example": "to be thrilled to do sth.",
+    "exampleZh": "做某事非常興奮"
+  },
+  {
+    "id": 32033,
+    "en": "surcharge",
+    "kk": "[ˋsɝ͵tʃɑrdʒ]",
+    "uk": "/ˈsɜːtʃɑːdʒ/",
+    "zh": "n. 附加費; 附加稅; 附加罰款；改值加蓋；vt. 向…收附加費; 向…收附加稅",
+    "unit": 19,
+    "example": "a 10% surcharge on the basic cost of the holiday",
+    "exampleZh": "基本費用之外的10%假日附加費"
+  },
+  {
+    "id": 32034,
+    "en": "disruption",
+    "kk": "[dɪsˋrʌpʃən]",
+    "uk": "/dɪsˈrʌpʃn/",
+    "zh": "n. 中斷; 擾亂",
+    "unit": 19,
+    "example": "The strike caused severe disruption to the city's train schedule.",
+    "exampleZh": "罷工對該市的火車時刻造成了嚴重中斷。"
+  },
+  {
+    "id": 32035,
+    "en": "convene",
+    "kk": "[kənˋvin]",
+    "uk": "/kənˈviːn/",
+    "zh": "vt. 召開；vi. 開會",
+    "unit": 19,
+    "example": "The executive committee will convene tomorrow morning.",
+    "exampleZh": "執行委員會將於明天上午召開會議。"
+  },
+  {
+    "id": 32036,
+    "en": "toothbrush",
+    "kk": "[ˋtuθ͵brʌʃ]",
+    "uk": "/ˈtuːθbrʌʃ/",
+    "zh": "n. 牙刷",
+    "unit": 19,
+    "example": "Remember to pack your toothbrush and toothpaste before the trip.",
+    "exampleZh": "旅行前記得把牙刷和牙膏打包好。"
+  },
+  {
+    "id": 32037,
+    "en": "teddy bear",
+    "kk": "[ˋtɛdɪ͵bɛr]",
+    "uk": "/ˈtedi beə(r)/",
+    "zh": "n. 泰迪熊，絨毛玩具熊",
+    "unit": 19,
+    "example": "The little girl hugs her favorite teddy bear to fall asleep.",
+    "exampleZh": "小女孩抱著她最喜歡的泰迪熊入睡。"
   }
 ];

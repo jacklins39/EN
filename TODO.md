@@ -61,3 +61,13 @@
   1. **美式音標 (KK)**：維持台灣課綱標準美式 KK 音標，記錄於各單字物件之 `kk` 欄位。
   2. **英式音標 (Oxford IPA)**：爬取 Yahoo 奇摩字典（Oxford 牛津中文字典權威英式 IPA），全量建立 `uk_phonetics_manifest.js` 索引庫，並在資料庫寫入 `uk` 欄位。
   3. **前端視覺連動**：卡片正反面均呈現 `[美] [ˋwɔtɚ]  [英] /ˈwɔːtə(r)/` 雙膠囊徽章；當播放美音女聲時，美式徽章亮藍發光；當播放英音男聲時，英式徽章亮紫發光。
+
+## 聽力短文與單字收錄標準作業程序 (SOP - 每次新增短文務必執行)
+> **執行腳本**：`python scripts/ingest_listening_words_sop.py`
+- [x] **硬性鐵律**：凡新增或擴充任何聽力短文（`listening_data.js`），必須執行此 SOP 腳本自動驗收與補全，嚴禁殘留無中文或佔位符：
+  1. **自動檢索短文生詞**：萃取短文內建 `vocabulary` 及文章核心生詞，比對本地庫（`listening_words_data.js`）。
+  2. **Yahoo 奇摩字典爬蟲**：爬取 Oxford 權威繁中釋義（帶標準詞性如 `n.`/`v.`/`adj.`）、KK 音標、Oxford IPA（英標）與權威情境雙語例句。
+  3. **單元 19 入庫**：自動寫入 `listening_words_data.js`，按順序遞增分配唯一 ID。
+  4. **產製 4 軌真人 MP3**：產生 US 美音女聲、UK 英音男聲、Jenny 例句朗讀、HsiaoChen 繁中釋義共 4 軌音訊。
+  5. **同步四大 Manifest 索引**：同步寫入 `words_audio_manifest.js`、`uk_phonetics_manifest.js`、`examples_audio_manifest.js`、`zh_audio_manifest.js`。
+  6. **執行全域健檢**：跑 `python scripts/audit_database.py` 驗收品質。

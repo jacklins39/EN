@@ -14120,8 +14120,8 @@
             }
         }
 
-        // 開啟沙盒入口
-        function openListeningFlashcardSandbox() {
+        // 開啟沙盒入口 (支援線上動態補全劃線生詞釋義，徹底根除「情境詞彙」)
+        async function openListeningFlashcardSandbox() {
             const article = currentSelectedListeningArticle;
             if (!article) {
                 alert('請先在左側或清單中選擇一篇聽力短文！');
@@ -14133,15 +14133,22 @@
                 Array.from(currentArticleAnnotatedWords || []).map(w => String(w).trim().toLowerCase()).filter(Boolean)
             );
 
-            // 2. 抓取「📖 本文內建核心單字」
+            // 2. 抓取「📖 本文內建核心單字」及其中文釋義對照表
             const coreSet = new Set();
+            const coreMap = new Map();
             const rawCore = (typeof articleCoreWords !== 'undefined' && Array.isArray(articleCoreWords) && articleCoreWords.length > 0)
                 ? articleCoreWords
                 : (article.vocabulary || []);
 
             rawCore.forEach(w => {
                 const en = typeof w === 'string' ? w.trim() : (w.en || '').trim();
-                if (en) coreSet.add(en.toLowerCase());
+                if (en) {
+                    const lower = en.toLowerCase();
+                    coreSet.add(lower);
+                    if (typeof w === 'object' && (w.zh || w.pos)) {
+                        coreMap.set(lower, { zh: w.zh || '', pos: w.pos || '', kk: w.kk || '' });
+                    }
+                }
             });
 
             // 若皆為空，現場從短文內文萃取
@@ -14149,7 +14156,11 @@
             if (combinedSet.size === 0 && typeof extractListeningWords === 'function') {
                 extractListeningWords(article);
                 (articleCoreWords || []).forEach(w => {
-                    if (w.en) coreSet.add(w.en.toLowerCase());
+                    if (w.en) {
+                        const lower = w.en.toLowerCase();
+                        coreSet.add(lower);
+                        if (w.zh || w.pos) coreMap.set(lower, { zh: w.zh || '', pos: w.pos || '', kk: w.kk || '' });
+                    }
                 });
                 combinedSet = new Set([...annotatedSet, ...coreSet]);
             }
@@ -14162,8 +14173,14 @@
             // 比對字典釋義與短文語境原句
             const articleSentences = article.sentences || [];
             const pool = Array.from(combinedSet).map(lower => {
-                const info = findWordInDB(lower) || {};
-                const wordEn = info.en || lower;
+                // 多層來源依序比對：本地 DB -> 短文核心單字表 -> 點擊快查快取
+                const dbInfo = findWordInDB(lower);
+                const coreInfo = coreMap.get(lower);
+                const cached = (typeof wordDetailsCache !== 'undefined' && wordDetailsCache[lower])
+                    || ((typeof quickTranslateCache !== 'undefined' && quickTranslateCache[lower]) ? { zh: quickTranslateCache[lower], pos: '' } : null);
+
+                const info = dbInfo || coreInfo || cached || {};
+                const wordEn = (dbInfo && dbInfo.en) || (coreInfo && coreInfo.en) || lower;
 
                 let contextSentence = '';
                 let contextZh = '';
@@ -14183,7 +14200,7 @@
                 }
 
                 const parsed = splitPosAndZh(info.zh || '', info.pos || '', '', '', wordEn);
-                const concise = getConciseZh(info.zh || '', info.pos || '', '', '', wordEn) || parsed.pureZh || info.zh || '情境詞彙';
+                const concise = getConciseZh(info.zh || '', info.pos || '', '', '', wordEn) || parsed.pureZh || info.zh || '';
                 const pos = parsed.items?.[0]?.pos || parsed.posBadgeText || info.pos || '';
 
                 return {
@@ -14199,6 +14216,29 @@
                     isAnnotated: annotatedSet.has(lower),
                     isCore: coreSet.has(lower)
                 };
+            });
+
+            // 對於尚無翻譯的劃線生詞（不在本地庫），立即非同步並行查詢真實中文翻譯
+            const missingWords = pool.filter(w => !w.zh || w.zh === '情境詞彙');
+            if (missingWords.length > 0 && typeof fetchWordDetails === 'function') {
+                await Promise.allSettled(missingWords.map(async item => {
+                    try {
+                        const details = await fetchWordDetails(item.en);
+                        if (details && details.zh) {
+                            const parsed = splitPosAndZh(details.zh, details.pos, '', '', item.en);
+                            item.zh = getConciseZh(details.zh, details.pos, '', '', item.en) || parsed.pureZh || details.zh;
+                            item.rawZh = details.zh;
+                            if (details.pos && !item.pos) item.pos = details.pos;
+                        }
+                    } catch (e) {}
+                }));
+            }
+
+            // 最後防呆：若仍查無，依短文語境原句翻譯輔助或預設為生詞
+            pool.forEach(item => {
+                if (!item.zh || item.zh === '情境詞彙') {
+                    item.zh = '重點詞彙';
+                }
             });
 
             listeningSandboxState.allPool = pool;

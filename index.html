@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261102V1';
+        const APP_BUILD_VERSION = '20261102V2';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -63,20 +63,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261102V1"></script>
-    <script src="toeic_data.js?v=20261102V1"></script>
-    <script src="jh_data.js?v=20261102V1"></script>
-    <script src="listening_data.js?v=20261102V1"></script>
-    <script src="listening_words_data.js?v=20261102V1"></script>
-    <script src="uk_phonetics_manifest.js?v=20261102V1"></script>
-    <script src="words_audio_manifest.js?v=20261102V1"></script>
-    <script src="examples_audio_manifest.js?v=20261102V1"></script>
-    <script src="zh_audio_manifest.js?v=20261102V1"></script>
-    <script src="collocations_audio_manifest.js?v=20261102V1"></script>
-    <script src="syn_ant_data.js?v=20261102V1"></script>
-    <script src="synonyms_unit8_data.js?v=20261102V1"></script>
-    <script src="examples_unit9_data.js?v=20261102V1"></script>
-    <script src="game_whack.js?v=20261102V1"></script>
+    <script src="words_data.js?v=20261102V2"></script>
+    <script src="toeic_data.js?v=20261102V2"></script>
+    <script src="jh_data.js?v=20261102V2"></script>
+    <script src="listening_data.js?v=20261102V2"></script>
+    <script src="listening_words_data.js?v=20261102V2"></script>
+    <script src="uk_phonetics_manifest.js?v=20261102V2"></script>
+    <script src="words_audio_manifest.js?v=20261102V2"></script>
+    <script src="examples_audio_manifest.js?v=20261102V2"></script>
+    <script src="zh_audio_manifest.js?v=20261102V2"></script>
+    <script src="collocations_audio_manifest.js?v=20261102V2"></script>
+    <script src="syn_ant_data.js?v=20261102V2"></script>
+    <script src="synonyms_unit8_data.js?v=20261102V2"></script>
+    <script src="examples_unit9_data.js?v=20261102V2"></script>
+    <script src="game_whack.js?v=20261102V2"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -9904,8 +9904,9 @@
             modal.classList.remove('hidden');
             updateDetailBackBtn();
 
-            // 1. 本地字庫精準查找
-            let item = vocabularyDB.find(w => w.en.toLowerCase() === cleanWord);
+            // 1. 本地字庫精準查找 (優先匹配目前所在單元，避免國中練習時誤抓到高中單元)
+            let item = (typeof currentUnit !== 'undefined' && currentUnit ? vocabularyDB.find(w => w.unit === currentUnit && w.en.toLowerCase() === cleanWord) : null) ||
+                       vocabularyDB.find(w => w.en.toLowerCase() === cleanWord);
             if (!item && typeof customWordsDB !== 'undefined') {
                 item = customWordsDB.find(w => w.en.toLowerCase() === cleanWord);
             }
@@ -9915,7 +9916,8 @@
             if (!item) {
                 const inflection = getVerbInflectionInfo(cleanWord);
                 if (inflection && inflection.base && inflection.base !== cleanWord) {
-                    const baseItem = vocabularyDB.find(w => w.en.toLowerCase() === inflection.base) ||
+                    const baseItem = (typeof currentUnit !== 'undefined' && currentUnit ? vocabularyDB.find(w => w.unit === currentUnit && w.en.toLowerCase() === inflection.base) : null) ||
+                        vocabularyDB.find(w => w.en.toLowerCase() === inflection.base) ||
                         (typeof customWordsDB !== 'undefined' && customWordsDB.find(w => w.en.toLowerCase() === inflection.base));
                     if (baseItem) {
                         item = baseItem;
@@ -10008,7 +10010,18 @@
             const yahooSynList = (typeof SYN_ANT_DB !== 'undefined' && (SYN_ANT_DB[w.en.toLowerCase()]?.syn || SYN_ANT_DB[resolveBaseLemma(w.en.toLowerCase())]?.syn)) || [];
 
             const coreSynSet = new Set([...(CORE_WORD_SYNONYMS[w.en.toLowerCase()] || CORE_WORD_SYNONYMS[resolveBaseLemma(w.en.toLowerCase())] || []).map(s => s.toLowerCase()), ...yahooSynList.map(s => s.toLowerCase())]);
-            let detectedUnit = w.unit || builtinUnitOf(w.en);
+            // 查詢所有收錄此單字的單元 (例如同時收錄於國中基礎 2000 與高中 7000 單)
+            const allUnitsList = Array.from(new Set(vocabularyDB.filter(x => x.en && x.en.toLowerCase() === w.en.toLowerCase()).map(x => x.unit))).filter(Boolean);
+            if (w.unit && !allUnitsList.includes(w.unit)) allUnitsList.unshift(w.unit);
+            allUnitsList.sort((a, b) => {
+                if (typeof currentUnit !== 'undefined') {
+                    if (a === currentUnit) return -1;
+                    if (b === currentUnit) return 1;
+                }
+                return a - b;
+            });
+
+            let detectedUnit = (typeof currentUnit !== 'undefined' && allUnitsList.includes(currentUnit)) ? currentUnit : (w.unit || allUnitsList[0] || builtinUnitOf(w.en));
             if (!detectedUnit) {
                 const inListening = typeof listeningArticlesDB !== 'undefined' && listeningArticlesDB.some(a => (a.vocabulary || []).some(v => v.en && v.en.toLowerCase() === w.en.toLowerCase()));
                 if (inListening) detectedUnit = 19;
@@ -10228,10 +10241,21 @@
                         <a href="https://tw.dictionary.search.yahoo.com/search?p=${encodeURIComponent(w.en)}" target="_blank" rel="noopener noreferrer" class="py-2 px-1 bg-purple-50 text-purple-700 hover:bg-purple-100 rounded-xl border border-purple-200 transition">Yahoo 字典</a>
                         <a href="https://translate.google.com/?sl=en&tl=zh-TW&text=${encodeURIComponent(w.en)}&op=translate" target="_blank" rel="noopener noreferrer" class="py-2 px-1 bg-blue-50 text-[#0071E3] hover:bg-blue-100 rounded-xl border border-blue-200 transition">Google 翻譯</a>
                     </div>
-                    ${(detectedUnit || builtinUnitOf(w.en)) ? `<div class="text-center text-[#86868B] text-xs py-1">收錄於：${getUnitBadgeInfo(detectedUnit || builtinUnitOf(w.en)).name}</div>` : `
-                    <button id="btn-detail-add-custom" class="w-full text-center bg-green-50 text-[#0071E3] hover:bg-green-100 font-medium py-2 rounded-xl text-xs border border-green-200 transition-colors shadow-2xs">
-                        ➕ 將此單字加入「自訂生詞庫」
-                    </button>`}
+                    ${(() => {
+                        if (allUnitsList.length > 0) {
+                            const primaryUnit = detectedUnit || allUnitsList[0];
+                            const otherUnits = allUnitsList.filter(u => u !== primaryUnit);
+                            let text = `收錄於：${getUnitBadgeInfo(primaryUnit).name}`;
+                            if (otherUnits.length > 0) {
+                                text += `（亦收錄於：${otherUnits.map(u => getUnitShortName(u)).join('、')}）`;
+                            }
+                            return `<div class="text-center text-[#86868B] text-xs py-1">${esc(text)}</div>`;
+                        } else if (detectedUnit || builtinUnitOf(w.en)) {
+                            return `<div class="text-center text-[#86868B] text-xs py-1">收錄於：${getUnitBadgeInfo(detectedUnit || builtinUnitOf(w.en)).name}</div>`;
+                        } else {
+                            return `<button id="btn-detail-add-custom" class="w-full text-center bg-green-50 text-[#0071E3] hover:bg-green-100 font-medium py-2 rounded-xl text-xs border border-green-200 transition-colors shadow-2xs">➕ 將此單字加入「自訂生詞庫」</button>`;
+                        }
+                    })()}
                 </div>
             `;
 

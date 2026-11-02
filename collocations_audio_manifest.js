@@ -99,5 +99,9 @@ window.COLLOCATIONS_AUDIO_MANIFEST = new Map(Object.entries({
   "commend to": "audio/collocations/commend_to.mp3",
   "at a discount": "audio/collocations/at_a_discount.mp3",
   "offer a discount": "audio/collocations/offer_a_discount.mp3",
-  "bulk discount": "audio/collocations/bulk_discount.mp3"
+  "bulk discount": "audio/collocations/bulk_discount.mp3",
+  "born and raised": "audio/collocations/born_and_raised.mp3",
+  "a born leader": "audio/collocations/a_born_leader.mp3",
+  "born with...": "audio/collocations/born_with.mp3",
+  "be born in / on": "audio/collocations/be_born_in.mp3"
 }));

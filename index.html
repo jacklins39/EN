@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261102V6';
+        const APP_BUILD_VERSION = '20261102V7';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -63,20 +63,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261102V6"></script>
-    <script src="toeic_data.js?v=20261102V6"></script>
-    <script src="jh_data.js?v=20261102V6"></script>
-    <script src="listening_data.js?v=20261102V6"></script>
-    <script src="listening_words_data.js?v=20261102V6"></script>
-    <script src="uk_phonetics_manifest.js?v=20261102V6"></script>
-    <script src="words_audio_manifest.js?v=20261102V6"></script>
-    <script src="examples_audio_manifest.js?v=20261102V6"></script>
-    <script src="zh_audio_manifest.js?v=20261102V6"></script>
-    <script src="collocations_audio_manifest.js?v=20261102V6"></script>
-    <script src="syn_ant_data.js?v=20261102V6"></script>
-    <script src="synonyms_unit8_data.js?v=20261102V6"></script>
-    <script src="examples_unit9_data.js?v=20261102V6"></script>
-    <script src="game_whack.js?v=20261102V6"></script>
+    <script src="words_data.js?v=20261102V7"></script>
+    <script src="toeic_data.js?v=20261102V7"></script>
+    <script src="jh_data.js?v=20261102V7"></script>
+    <script src="listening_data.js?v=20261102V7"></script>
+    <script src="listening_words_data.js?v=20261102V7"></script>
+    <script src="uk_phonetics_manifest.js?v=20261102V7"></script>
+    <script src="words_audio_manifest.js?v=20261102V7"></script>
+    <script src="examples_audio_manifest.js?v=20261102V7"></script>
+    <script src="zh_audio_manifest.js?v=20261102V7"></script>
+    <script src="collocations_audio_manifest.js?v=20261102V7"></script>
+    <script src="syn_ant_data.js?v=20261102V7"></script>
+    <script src="synonyms_unit8_data.js?v=20261102V7"></script>
+    <script src="examples_unit9_data.js?v=20261102V7"></script>
+    <script src="game_whack.js?v=20261102V7"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -8713,6 +8713,12 @@
         };
 
         const CORE_WORD_COLLOCATIONS = {
+            "born": [
+                { en: "born and raised", zh: "土生土長的" },
+                { en: "a born leader", zh: "天生的領導者" },
+                { en: "born with...", zh: "生來就具有... / 伴隨...出生" },
+                { en: "be born in / on", zh: "出生於..." }
+            ],
             "star": [
                 { en: "star in a movie", zh: "主演電影" },
                 { en: "shooting star", zh: "流星" },
@@ -9261,12 +9267,9 @@
 
         function getWordCollocations(word, currentItem = null) {
             const rawW = (word || '').trim().toLowerCase();
-            const baseW = resolveBaseLemma(rawW);
             const list = [];
             if (CORE_WORD_COLLOCATIONS[rawW]) {
                 list.push(...CORE_WORD_COLLOCATIONS[rawW]);
-            } else if (CORE_WORD_COLLOCATIONS[baseW]) {
-                list.push(...CORE_WORD_COLLOCATIONS[baseW]);
             }
             if (list.length < 4 && typeof vocabularyDB !== 'undefined') {
                 for (const item of vocabularyDB) {
@@ -9274,7 +9277,8 @@
                     if (!item || !item.en) continue;
                     const enLower = item.en.toLowerCase();
                     const tokens = enLower.split(/\s+/);
-                    if (enLower.includes(' ') && (tokens.includes(rawW) || tokens.includes(baseW)) && !list.find(c => c.en.toLowerCase() === enLower)) {
+                    // 僅匹配包含當前單字的片語，嚴禁跨單字抓取其他原形動詞片語 (避免 born 誤抓 bear 之 teddy bear 等)
+                    if (enLower.includes(' ') && tokens.includes(rawW) && !list.find(c => c.en.toLowerCase() === enLower)) {
                         const parsed = splitPosAndZh(item.zh, item.pos);
                         list.push({ en: item.en, zh: parsed.pureZh || item.zh });
                     }
@@ -9361,13 +9365,15 @@
 
         function getWordSynonyms(word, currentItem = null) {
             const rawW = (word || '').trim().toLowerCase();
-            const baseW = resolveBaseLemma(rawW);
+            // 僅在當前單字非字典獨立收錄單字時，才允許退回原形（避免 saw 誤抓 see 之同義詞、building 誤抓 build、thought 誤抓 think）
+            const isDistinctEntry = typeof vocabularyDB !== 'undefined' && vocabularyDB.some(it => it && it.en && it.en.toLowerCase() === rawW);
+            const baseW = isDistinctEntry ? rawW : resolveBaseLemma(rawW);
             const result = [];
             const seen = new Set([rawW, baseW]);
 
             // 0. Yahoo / Oxford 權威落地字典庫優先
             if (typeof SYN_ANT_DB !== 'undefined') {
-                const dbEntry = SYN_ANT_DB[rawW] || SYN_ANT_DB[baseW];
+                const dbEntry = SYN_ANT_DB[rawW] || (baseW !== rawW ? SYN_ANT_DB[baseW] : null);
                 if (dbEntry && Array.isArray(dbEntry.syn)) {
                     for (const s of dbEntry.syn) {
                         const sLower = s.toLowerCase();
@@ -9380,7 +9386,7 @@
             }
 
             // 1. 核心精選同義詞庫優先
-            const coreList = CORE_WORD_SYNONYMS[rawW] || CORE_WORD_SYNONYMS[baseW];
+            const coreList = CORE_WORD_SYNONYMS[rawW] || (baseW !== rawW ? CORE_WORD_SYNONYMS[baseW] : null);
             if (coreList && Array.isArray(coreList)) {
                 for (const s of coreList) {
                     const sLower = s.toLowerCase();
@@ -9393,7 +9399,7 @@
 
             // 2. 內部 6,500+ 字庫中文語意倒排索引 (Semantic In-Memory Cross-Linker)
             const index = initSemanticSynonymIndex();
-            let info = index.wordInfo.get(rawW) || index.wordInfo.get(baseW);
+            let info = index.wordInfo.get(rawW) || (baseW !== rawW ? index.wordInfo.get(baseW) : null);
             if (!info && currentItem && currentItem.zh) {
                 const parsed = parsePosAndTokensForCrosslink(currentItem.zh);
                 info = { en: currentItem.en, zh: currentItem.zh, posSet: parsed.posSet, tokens: parsed.tokens };
@@ -9822,13 +9828,14 @@
 
         function getWordAntonyms(word) {
             const rawW = (word || '').trim().toLowerCase();
-            const baseW = resolveBaseLemma(rawW);
+            const isDistinctEntry = typeof vocabularyDB !== 'undefined' && vocabularyDB.some(it => it && it.en && it.en.toLowerCase() === rawW);
+            const baseW = isDistinctEntry ? rawW : resolveBaseLemma(rawW);
             const result = [];
             const seen = new Set([rawW, baseW]);
 
             // 0. Yahoo / Oxford 權威落地字典庫優先
             if (typeof SYN_ANT_DB !== 'undefined') {
-                const dbEntry = SYN_ANT_DB[rawW] || SYN_ANT_DB[baseW];
+                const dbEntry = SYN_ANT_DB[rawW] || (baseW !== rawW ? SYN_ANT_DB[baseW] : null);
                 if (dbEntry && Array.isArray(dbEntry.ant)) {
                     for (const a of dbEntry.ant) {
                         const aLower = a.toLowerCase();
@@ -9841,7 +9848,7 @@
             }
 
             // 1. 精選核心反義詞
-            const coreList = CORE_WORD_ANTONYMS[rawW] || CORE_WORD_ANTONYMS[baseW] || [];
+            const coreList = CORE_WORD_ANTONYMS[rawW] || (baseW !== rawW ? CORE_WORD_ANTONYMS[baseW] : null) || [];
             for (const a of coreList) {
                 const aLower = a.toLowerCase();
                 if (!seen.has(aLower)) {
@@ -10073,9 +10080,9 @@
             const collocations = getWordCollocations(w.en, w);
             const synonyms = getWordSynonyms(w.en, w);
             const antonyms = getWordAntonyms(w.en);
-            const yahooSynList = (typeof SYN_ANT_DB !== 'undefined' && (SYN_ANT_DB[w.en.toLowerCase()]?.syn || SYN_ANT_DB[resolveBaseLemma(w.en.toLowerCase())]?.syn)) || [];
+            const yahooSynList = (typeof SYN_ANT_DB !== 'undefined' && SYN_ANT_DB[w.en.toLowerCase()]?.syn) || [];
 
-            const coreSynSet = new Set([...(CORE_WORD_SYNONYMS[w.en.toLowerCase()] || CORE_WORD_SYNONYMS[resolveBaseLemma(w.en.toLowerCase())] || []).map(s => s.toLowerCase()), ...yahooSynList.map(s => s.toLowerCase())]);
+            const coreSynSet = new Set([...(CORE_WORD_SYNONYMS[w.en.toLowerCase()] || []).map(s => s.toLowerCase()), ...yahooSynList.map(s => s.toLowerCase())]);
             // 查詢所有收錄此單字的單元 (例如同時收錄於國中基礎 2000 與高中 7000 單)
             const allUnitsList = Array.from(new Set(vocabularyDB.filter(x => x.en && x.en.toLowerCase() === w.en.toLowerCase()).map(x => x.unit))).filter(Boolean);
             if (w.unit && !allUnitsList.includes(w.unit)) allUnitsList.unshift(w.unit);

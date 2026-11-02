@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261102V8';
+        const APP_BUILD_VERSION = '20261102V9';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -63,20 +63,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261102V8"></script>
-    <script src="toeic_data.js?v=20261102V8"></script>
-    <script src="jh_data.js?v=20261102V8"></script>
-    <script src="listening_data.js?v=20261102V8"></script>
-    <script src="listening_words_data.js?v=20261102V8"></script>
-    <script src="uk_phonetics_manifest.js?v=20261102V8"></script>
-    <script src="words_audio_manifest.js?v=20261102V8"></script>
-    <script src="examples_audio_manifest.js?v=20261102V8"></script>
-    <script src="zh_audio_manifest.js?v=20261102V8"></script>
-    <script src="collocations_audio_manifest.js?v=20261102V8"></script>
-    <script src="syn_ant_data.js?v=20261102V8"></script>
-    <script src="synonyms_unit8_data.js?v=20261102V8"></script>
-    <script src="examples_unit9_data.js?v=20261102V8"></script>
-    <script src="game_whack.js?v=20261102V8"></script>
+    <script src="words_data.js?v=20261102V9"></script>
+    <script src="toeic_data.js?v=20261102V9"></script>
+    <script src="jh_data.js?v=20261102V9"></script>
+    <script src="listening_data.js?v=20261102V9"></script>
+    <script src="listening_words_data.js?v=20261102V9"></script>
+    <script src="uk_phonetics_manifest.js?v=20261102V9"></script>
+    <script src="words_audio_manifest.js?v=20261102V9"></script>
+    <script src="examples_audio_manifest.js?v=20261102V9"></script>
+    <script src="zh_audio_manifest.js?v=20261102V9"></script>
+    <script src="collocations_audio_manifest.js?v=20261102V9"></script>
+    <script src="syn_ant_data.js?v=20261102V9"></script>
+    <script src="synonyms_unit8_data.js?v=20261102V9"></script>
+    <script src="examples_unit9_data.js?v=20261102V9"></script>
+    <script src="game_whack.js?v=20261102V9"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -8895,6 +8895,7 @@
         };
 
         const CORE_WORD_SYNONYMS = {
+            "curious": ["inquisitive", "inquiring", "unusual", "uncommon"],
             "rat": ["mouse", "rodent"],
             "mouse": ["rat"],
             "borrow": ["loan", "adopt", "take", "use", "rent"],
@@ -9370,50 +9371,62 @@
         const SEMANTIC_STOP_WORDS = new Set(['事物', '地方', '什麼', '某人', '某物', '自己', '表示', '產生', '進行', '一種', '成為', '可以', '能夠', '具有', '處於', '屬於', 'abbr', 'abbr.', '人名', '女子名', '男子名', '地名', '國名', '極好', '極好的', '極佳', '優秀', '優秀的', '卓越', '卓越的', '出色', '出色的', '很好', '很好的', '非常', '十分', '相當', '特別', '完全', '完全地', '極其', '一般', '通常', '主要', '著名的', '著名', '金色', '黃金', '大量', '少數']);
         let semanticSynonymIndex = null;
 
-        function parsePosAndTokensForCrosslink(zhStr) {
-            if (!zhStr) return { posSet: new Set(), tokens: [] };
-            const posRegex = /(?:^|[；;]\s*)((?:adj|adv|prep|conj|pron|int|num|det|art|aux|modal\s*v|ph|vi|vt|[avnd])\.)\s*/gi;
-            const matches = [...zhStr.matchAll(posRegex)];
-            const posSet = new Set();
-            if (matches && matches.length > 0) {
+        function normalizePosForCrosslink(rawPos) {
+            let p = String(rawPos || '').toLowerCase().replace(/\.$/, '').trim();
+            if (p === 'a') return 'adj';
+            if (p === 'ad') return 'adv';
+            if (p === 'vi' || p === 'vt') return 'v';
+            return p;
+        }
+
+        // 嚴格依「詞性分段 (POS Segment)」解析中文釋義：確保每個中文語意詞彙嚴格綁定在該詞性段落底下，杜絕跨詞性錯配 (如 wonder 的 vt. 好奇 + adj. 極好的 誤配給 curious adj. 好奇的)
+        function parsePosSegmentsForCrosslink(zhStr) {
+            if (!zhStr) return [];
+            const segRegex = /(?:^|[；;]\s*)((?:adj|adv|prep|conj|pron|int|num|det|art|aux|modal\s*v|ph|vi|vt|[avnd])\.)\s*([^；;]*)/gi;
+            const segments = [];
+            const matches = [...zhStr.matchAll(segRegex)];
+            if (matches.length > 0) {
                 for (const m of matches) {
-                    let p = m[1].toLowerCase().replace(/\.$/, '');
-                    if (p === 'a') p = 'adj';
-                    if (p === 'ad') p = 'adv';
-                    posSet.add(p);
+                    const pos = normalizePosForCrosslink(m[1]);
+                    let body = (m[2] || '').trim();
+                    // 略過僅作為屈折變化說明之段落（如「continue 的現在分詞」、「favour 的過去式」）
+                    if (!body || /(的過去式|的過去分詞|的現在分詞|的複數|的第三人稱單數|的比較級|的最高級|的變體|的動名詞|形式)/.test(body)) continue;
+                    body = body.replace(/[\(\[\（\【].*?[\)\]\）\】]/g, '');
+                    const tokens = [];
+                    for (let part of body.split(/[，,、/;\s]+/)) {
+                        part = part.trim();
+                        if (!part || part.length < 2 || SEMANTIC_STOP_WORDS.has(part)) continue;
+                        if (!tokens.includes(part)) tokens.push(part);
+                    }
+                    if (tokens.length > 0) {
+                        segments.push({
+                            pos,
+                            tokens,
+                            primaryTokens: tokens.slice(0, 2)
+                        });
+                    }
                 }
             } else {
                 const m = zhStr.trim().match(/^(\(?[a-zA-Z./]+\.?\)?)\s*[:：.]?\s*(.*)$/);
                 if (m) {
-                    let p = m[1].replace(/[()]/g, '').toLowerCase().replace(/\.$/, '');
-                    if (p === 'a') p = 'adj';
-                    if (p === 'ad') p = 'adv';
-                    posSet.add(p);
+                    const pos = normalizePosForCrosslink(m[1].replace(/[()]/g, ''));
+                    let body = (m[2] || '').trim();
+                    if (body && !/(的過去式|的過去分詞|的現在分詞|的複數|的第三人稱單數|的比較級|的最高級|的變體|的動名詞|形式)/.test(body)) {
+                        body = body.replace(/[\(\[\（\【].*?[\)\]\）\】]/g, '');
+                        const tokens = body.split(/[，,、/;\s]+/).map(s => s.trim()).filter(s => s.length >= 2 && !SEMANTIC_STOP_WORDS.has(s));
+                        if (tokens.length > 0) {
+                            segments.push({ pos, tokens: [...new Set(tokens)], primaryTokens: tokens.slice(0, 2) });
+                        }
+                    }
                 }
             }
-
-            let cleaned = zhStr.replace(posRegex, '；');
-            cleaned = cleaned.replace(/^(\(?[a-zA-Z./]+\.?\)?)\s*[:：.]?\s*/, '');
-            cleaned = cleaned.replace(/[\(\[\（\【].*?[\)\]\）\】]/g, '');
-
-            const parts = cleaned.split(/[；,，/、;\s]+/);
-            const tokens = [];
-            for (let p of parts) {
-                p = p.trim();
-                if (!p || SEMANTIC_STOP_WORDS.has(p)) continue;
-                if (p.length >= 2) tokens.push(p);
-                const base = p.replace(/[的地位]$/, '').trim();
-                if (base.length >= 2 && base !== p && !SEMANTIC_STOP_WORDS.has(base)) {
-                    tokens.push(base);
-                }
-            }
-            return { posSet, tokens: [...new Set(tokens)] };
+            return segments;
         }
 
         function initSemanticSynonymIndex() {
             if (semanticSynonymIndex) return semanticSynonymIndex;
             semanticSynonymIndex = {
-                tokenToWords: new Map(),
+                posTokenToWords: new Map(),
                 wordInfo: new Map()
             };
             if (typeof vocabularyDB === 'undefined' || !Array.isArray(vocabularyDB)) return semanticSynonymIndex;
@@ -9423,20 +9436,29 @@
                 const enLower = item.en.trim().toLowerCase();
                 if (semanticSynonymIndex.wordInfo.has(enLower)) continue;
 
-                const { posSet, tokens } = parsePosAndTokensForCrosslink(item.zh || '');
+                const segments = parsePosSegmentsForCrosslink(item.zh || '');
+                if (segments.length === 0) continue;
+
+                const primaryPos = segments[0].pos;
                 semanticSynonymIndex.wordInfo.set(enLower, {
                     en: item.en,
                     zh: item.zh || '',
-                    posSet,
-                    tokens,
-                    primaryTokens: tokens.slice(0, 2)
+                    primaryPos,
+                    segments
                 });
 
-                for (const token of tokens) {
-                    if (!semanticSynonymIndex.tokenToWords.has(token)) {
-                        semanticSynonymIndex.tokenToWords.set(token, []);
+                // 排除純屈折動詞或分詞作為動詞同義詞候選
+                if (primaryPos === 'v' && (PURE_INFLECTED_VERB_FORMS.has(enLower) || (enLower.endsWith('ing') && enLower.length > 4))) {
+                    continue;
+                }
+
+                // 僅將候選字之「首要詞性段落 (segments[0])」的前 2 個核心釋義編入索引，杜絕次要詞性或邊緣義項跨詞性污染 (如 wonder vt./n./adj. 或 die v./n. 誤配)
+                for (const token of segments[0].primaryTokens) {
+                    const compositeKey = primaryPos + ':' + token;
+                    if (!semanticSynonymIndex.posTokenToWords.has(compositeKey)) {
+                        semanticSynonymIndex.posTokenToWords.set(compositeKey, []);
                     }
-                    semanticSynonymIndex.tokenToWords.get(token).push(enLower);
+                    semanticSynonymIndex.posTokenToWords.get(compositeKey).push(enLower);
                 }
             }
             return semanticSynonymIndex;
@@ -9444,15 +9466,13 @@
 
         function getWordSynonyms(word, currentItem = null) {
             const rawW = (word || '').trim().toLowerCase();
-            // 僅在當前單字非字典獨立收錄單字時，才允許退回原形（避免 saw 誤抓 see 之同義詞、building 誤抓 build、thought 誤抓 think）
-            const isDistinctEntry = typeof vocabularyDB !== 'undefined' && vocabularyDB.some(it => it && it.en && it.en.toLowerCase() === rawW);
-            const baseW = isDistinctEntry ? rawW : resolveBaseLemma(rawW);
+            if (!rawW) return [];
             const result = [];
-            const seen = new Set([rawW, baseW]);
+            const seen = new Set([rawW]);
 
-            // 0. Yahoo / Oxford 權威落地字典庫優先
+            // 0. Yahoo / Oxford 權威落地字典庫優先 (僅取當前單字本身 rawW)
             if (typeof SYN_ANT_DB !== 'undefined') {
-                const dbEntry = SYN_ANT_DB[rawW] || (baseW !== rawW ? SYN_ANT_DB[baseW] : null);
+                const dbEntry = SYN_ANT_DB[rawW];
                 if (dbEntry && Array.isArray(dbEntry.syn)) {
                     for (const s of dbEntry.syn) {
                         const sLower = s.toLowerCase();
@@ -9464,8 +9484,8 @@
                 }
             }
 
-            // 1. 核心精選同義詞庫優先
-            const coreList = CORE_WORD_SYNONYMS[rawW] || (baseW !== rawW ? CORE_WORD_SYNONYMS[baseW] : null);
+            // 1. 核心精選同義詞庫優先 (僅取當前單字本身 rawW)
+            const coreList = CORE_WORD_SYNONYMS[rawW];
             if (coreList && Array.isArray(coreList)) {
                 for (const s of coreList) {
                     const sLower = s.toLowerCase();
@@ -9476,39 +9496,28 @@
                 }
             }
 
-            // 2. 內部 6,500+ 字庫中文語意倒排索引 (Semantic In-Memory Cross-Linker)
+            // 2. 內部字庫「詞性分段綁定」中文語意倒排索引 (POS-Scoped Semantic Cross-Linker)
             const index = initSemanticSynonymIndex();
-            let info = index.wordInfo.get(rawW) || (baseW !== rawW ? index.wordInfo.get(baseW) : null);
+            let info = index.wordInfo.get(rawW);
             if (!info && currentItem && currentItem.zh) {
-                const parsed = parsePosAndTokensForCrosslink(currentItem.zh);
-                info = { en: currentItem.en, zh: currentItem.zh, posSet: parsed.posSet, tokens: parsed.tokens };
+                const segments = parsePosSegmentsForCrosslink(currentItem.zh);
+                if (segments.length > 0) {
+                    info = { en: currentItem.en, zh: currentItem.zh, primaryPos: segments[0].pos, segments };
+                }
             }
 
-            if (info && info.tokens && info.tokens.length > 0) {
-                for (const token of info.tokens) {
+            if (info && info.segments && info.segments.length > 0) {
+                // 僅針對當前單字之首要詞性段落 (segments[0]) 檢索同詞性同義詞
+                const primSeg = info.segments[0];
+                for (const token of primSeg.tokens) {
                     if (result.length >= 4) break;
-                    const candidates = index.tokenToWords.get(token) || [];
+                    const compositeKey = primSeg.pos + ':' + token;
+                    const candidates = index.posTokenToWords.get(compositeKey) || [];
                     for (const candLower of candidates) {
                         if (seen.has(candLower)) continue;
                         const candInfo = index.wordInfo.get(candLower);
-                        if (!candInfo) continue;
-
-                        // 詞性必須明確且相容 (任一方缺詞性即略過，避免文不對題)
-                        if (!info.posSet || info.posSet.size === 0 || !candInfo.posSet || candInfo.posSet.size === 0) continue;
-                        // 片語、與原字同字根的變形不列入
-                        if (candLower.includes(' ') || candLower.startsWith(baseW) || baseW.startsWith(candLower)) continue;
-                        // 候選詞核心首要中文釋義 (前 2 個 tokens) 必須包含目標 token，杜絕以生僻、修飾性弱相關義項湊數
-                        if (!candInfo.primaryTokens || !candInfo.primaryTokens.includes(token)) continue;
-                        {
-                            let hasCommonPos = false;
-                            for (const p of info.posSet) {
-                                if (candInfo.posSet.has(p)) {
-                                    hasCommonPos = true;
-                                    break;
-                                }
-                            }
-                            if (!hasCommonPos) continue;
-                        }
+                        if (!candInfo || candInfo.primaryPos !== primSeg.pos) continue;
+                        if (candLower.includes(' ') || candLower.startsWith(rawW) || rawW.startsWith(candLower)) continue;
 
                         seen.add(candLower);
                         result.push(candInfo.en);

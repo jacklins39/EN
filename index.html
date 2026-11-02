@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261102V7';
+        const APP_BUILD_VERSION = '20261102V8';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -63,20 +63,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261102V7"></script>
-    <script src="toeic_data.js?v=20261102V7"></script>
-    <script src="jh_data.js?v=20261102V7"></script>
-    <script src="listening_data.js?v=20261102V7"></script>
-    <script src="listening_words_data.js?v=20261102V7"></script>
-    <script src="uk_phonetics_manifest.js?v=20261102V7"></script>
-    <script src="words_audio_manifest.js?v=20261102V7"></script>
-    <script src="examples_audio_manifest.js?v=20261102V7"></script>
-    <script src="zh_audio_manifest.js?v=20261102V7"></script>
-    <script src="collocations_audio_manifest.js?v=20261102V7"></script>
-    <script src="syn_ant_data.js?v=20261102V7"></script>
-    <script src="synonyms_unit8_data.js?v=20261102V7"></script>
-    <script src="examples_unit9_data.js?v=20261102V7"></script>
-    <script src="game_whack.js?v=20261102V7"></script>
+    <script src="words_data.js?v=20261102V8"></script>
+    <script src="toeic_data.js?v=20261102V8"></script>
+    <script src="jh_data.js?v=20261102V8"></script>
+    <script src="listening_data.js?v=20261102V8"></script>
+    <script src="listening_words_data.js?v=20261102V8"></script>
+    <script src="uk_phonetics_manifest.js?v=20261102V8"></script>
+    <script src="words_audio_manifest.js?v=20261102V8"></script>
+    <script src="examples_audio_manifest.js?v=20261102V8"></script>
+    <script src="zh_audio_manifest.js?v=20261102V8"></script>
+    <script src="collocations_audio_manifest.js?v=20261102V8"></script>
+    <script src="syn_ant_data.js?v=20261102V8"></script>
+    <script src="synonyms_unit8_data.js?v=20261102V8"></script>
+    <script src="examples_unit9_data.js?v=20261102V8"></script>
+    <script src="game_whack.js?v=20261102V8"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -8696,6 +8696,18 @@
             "crisis": "crises",
             "basis": "bases",
             "analysis": "analyses",
+            "oasis": "oases",
+            "diagnosis": "diagnoses",
+            "synthesis": "syntheses",
+            "thesis": "theses",
+            "hypothesis": "hypotheses",
+            "parenthesis": "parentheses",
+            "synopsis": "synopses",
+            "emphasis": "emphases",
+            "stimulus": "stimuli",
+            "nucleus": "nuclei",
+            "fungus": "fungi",
+            "cactus": "cacti",
             "phenomenon": "phenomena",
             "criterion": "criteria"
         };
@@ -9083,36 +9095,90 @@
             return null;
         }
 
-        // 不可分級形容詞與絕對形容詞黑名單：不具備比較級與最高級 (-er/-est 或 more/most)
+        // 不可分級形容詞、分類詞與絕對形容詞黑名單：不具備比較級與最高級 (-er/-est 或 more/most)
         const NON_GRADABLE_ADJS = new Set([
-            'born', 'dead', 'alive', 'pregnant', 'unique', 'perfect', 'main', 'chief', 'principal',
-            'final', 'last', 'first', 'single', 'double', 'triple', 'whole', 'entire', 'total',
-            'left', 'right', 'male', 'female', 'daily', 'weekly', 'monthly', 'yearly', 'annual',
-            'used', 'broke', 'drunk', 'blind', 'deaf', 'wooden', 'golden', 'woolen', 'medical', 'chemical',
-            'physical', 'economic', 'political', 'atomic', 'solar', 'nuclear', 'fatal', 'mortal',
-            'correct', 'wrong', 'false', 'true', 'impossible', 'infinite', 'eternal', 'extreme', 'absolute',
-            'vertical', 'horizontal', 'square', 'triangular', 'circular', 'oral', 'verbal',
-            'online', 'offline', 'outdoor', 'indoor', 'overseas', 'universal', 'automatic', 'electronic',
-            'digital', 'electric', 'electrical', 'historical', 'scientific', 'legal', 'illegal',
-            'national', 'international', 'domestic', 'foreign', 'public', 'private', 'social',
-            'official', 'formal', 'informal', 'primary', 'secondary', 'native', 'military',
-            'civilian', 'financial', 'commercial', 'industrial', 'agricultural', 'environmental',
-            'cultural', 'educational', 'academic', 'traditional', 'modern', 'contemporary',
-            'ancient', 'medieval', 'future', 'past', 'present', 'absent', 'done', 'bound', 'shot', 'bit', 'ground'
+            "born", "dead", "alive", "pregnant", "unique", "perfect", "main", "chief", "principal",
+            "final", "last", "first", "single", "double", "triple", "whole", "entire", "total",
+            "left", "right", "male", "female", "daily", "weekly", "monthly", "yearly", "annual",
+            "used", "broke", "drunk", "blind", "deaf", "wooden", "golden", "woolen", "medical", "chemical",
+            "physical", "economic", "political", "atomic", "solar", "nuclear", "fatal", "mortal",
+            "correct", "wrong", "false", "true", "impossible", "infinite", "eternal", "extreme", "absolute",
+            "vertical", "horizontal", "square", "triangular", "circular", "oral", "verbal",
+            "online", "offline", "outdoor", "indoor", "overseas", "universal", "automatic", "electronic",
+            "digital", "electric", "electrical", "historical", "scientific", "legal", "illegal",
+            "national", "international", "domestic", "foreign", "public", "private", "social",
+            "official", "formal", "informal", "primary", "secondary", "native", "military",
+            "civilian", "financial", "commercial", "industrial", "agricultural", "environmental",
+            "cultural", "educational", "academic", "traditional", "modern", "contemporary",
+            "ancient", "medieval", "future", "past", "present", "absent", "done", "bound", "shot", "bit", "ground",
+            "lay", "live", "own", "read", "shut", "both", "less", "off", "equal", "five",
+            "inside", "outside", "vegetable", "work", "teenage", "magic", "metal", "steam", "trial",
+            "found", "ideal", "moral", "panic", "representative", "adjective", "crack", "detective",
+            "landscape", "objective", "oval", "pedal", "relative", "civic", "coral", "ethic",
+            "executive", "locomotive", "motive", "olive", "rival", "sneak", "zip", "administrative",
+            "comparative", "dual", "exclusive", "inclusive", "legislative", "naval", "prospective",
+            "respective", "subjective", "successive", "alternative", "attic", "captive", "collective",
+            "disposable", "lyric", "mimic", "narrative", "perspective", "preventive", "staple",
+            "variable", "vocal", "eruptive", "expendable", "replaceable", "depictive", "illustrative",
+            "evaporative", "unsolvable", "matt", "usable", "perishable", "shoal", "divisible",
+            "instinctive", "immovable", "repeatable", "indestructible", "hung", "audible", "returnable",
+            "lit", "fugitive", "irreplaceable", "retractable", "renal", "interactive", "renewable",
+            "affirmative", "bent", "breakable", "collectible", "consecutive", "interchangeable",
+            "invisible", "negotiable", "payable", "radioactive", "retainable", "unable", "unacceptable",
+            "unbeatable", "unimaginable", "written", "stuck", "swollen", "laid", "swept", "woven",
+            "sought", "burnt", "awake", "asleep", "afraid", "alike", "alone", "aware", "ashamed",
+            "due", "exempt", "worth", "liable", "prone", "parallel", "supreme", "ultimate", "unanimous"
         ]);
 
-        // 動詞屈折型態黑名單（過去式/過去分詞/分詞名詞等）：不作為原形動詞推導規則變化 (避免產生 borned, broked, wroted, droved, meetinged 等畸形詞)
-        const PURE_INFLECTED_VERB_FORMS = new Set([
-            'born', 'was', 'were', 'been', 'had', 'did', 'done', 'wrote', 'drove', 'sank',
-            'beaten', 'hidden', 'drunk', 'broke', 'left', 'shot', 'bit', 'flown', 'frozen',
-            'chosen', 'spoken', 'stolen', 'broken', 'woken', 'eaten', 'fallen', 'given',
-            'taken', 'shaken', 'forsaken', 'forgotten', 'gotten', 'seen', 'gone', 'known',
-            'grown', 'blown', 'thrown', 'drawn', 'withdrawn', 'thought', 'used', 'learned',
-            'offered', 'bent', 'rose'
+        // 動詞屈折型態黑名單（過去式/過去分詞/第三人稱單數等）：不作為原形動詞推導規則變化 (避免產生 borned, broked, writtened, stucked, hassed 等畸形詞)
+        // 僅保留真正具備獨立規則動詞語意之同形異義詞 (saw 鋸 / found 創立 / ground 使停飛 / wound 使受傷 / bore 使厭煩 / bound 跳躍限制)
+        const HOMOGRAPH_REGULAR_VERBS = new Set(["saw", "found", "ground", "wound", "bore", "bound"]);
+        const PURE_INFLECTED_VERB_FORMS = (() => {
+            const set = new Set([
+                "born", "was", "were", "been", "had", "did", "done", "wrote", "drove", "sank",
+                "beaten", "hidden", "drunk", "broke", "left", "shot", "bit", "flown", "frozen",
+                "chosen", "spoken", "stolen", "broken", "woken", "eaten", "fallen", "given",
+                "taken", "shaken", "forsaken", "forgotten", "gotten", "seen", "gone", "known",
+                "grown", "blown", "thrown", "drawn", "withdrawn", "thought", "used", "learned",
+                "offered", "bent", "rose", "vied", "burnt", "got", "has", "does", "goes", "is", "are", "am"
+            ]);
+            for (const [base, vf] of Object.entries(IRREGULAR_VERBS)) {
+                for (const fld of ["past", "pp", "ing", "s"]) {
+                    const raw = String(vf[fld] || "").replace(/\[.*?\]/g, "");
+                    for (const part of raw.split("/")) {
+                        const tok = part.trim().toLowerCase();
+                        if (tok && tok !== base && !IRREGULAR_VERBS[tok] && !HOMOGRAPH_REGULAR_VERBS.has(tok)) {
+                            set.add(tok);
+                        }
+                    }
+                }
+            }
+            return set;
+        })();
+
+        // 字尾為單一 -s (非 -ss) 之可數單數名詞白名單：其餘字尾為 -s 之詞（如 news, physics, ethics, means, series, species, headphones, clothes 或已複數詞 cars）一律不加 -es
+        const SINGULAR_S_NOUNS = new Set([
+            "bus", "gas", "lens", "virus", "bonus", "campus", "census", "chorus", "circus",
+            "status", "focus", "radius", "genius", "fungus", "cactus", "octopus", "syllabus",
+            "plus", "bias", "atlas", "canvas", "iris", "lotus", "nucleus", "stimulus",
+            "surplus", "rhinoceros", "hippopotamus", "consensus", "fetus", "apparatus",
+            "prospectus", "sinus", "walrus", "albatross"
         ]);
 
-        function computeWordForms(word, posStr = '') {
-            const rawW = (word || '').trim().toLowerCase();
+        // 雙音節可加 -er / -est 之形容詞白名單
+        const TWO_SYLLABLE_ER_ADJS = new Set([
+            "simple", "humble", "gentle", "noble", "subtle", "quiet",
+            "clever", "narrow", "shallow", "yellow", "polite", "sincere",
+            "severe", "mature", "secure", "obscure", "cruel", "handsome", "common"
+        ]);
+
+        // 單音節但習慣使用 more / most 之形容詞
+        const MORE_MOST_SHORT_ADJS = new Set([
+            "real", "ill", "fun", "apt", "just", "keen", "fond", "like", "worth", "loath"
+        ]);
+
+        function computeWordForms(word, posStr = "") {
+            const rawW = (word || "").trim().toLowerCase();
             if (!rawW || !/^[a-z]+$/i.test(rawW)) return null;
             // 嚴禁將當前單字強制篡改為其他原形動詞（如 born 誤轉為 bear、rose 誤轉為 rise、saw 誤轉為 see），每個單字必須保有自己的詞形
             const w = rawW;
@@ -9127,7 +9193,7 @@
                 adjForms: null
             };
 
-            const p = (posStr || '').toLowerCase();
+            const p = (posStr || "").toLowerCase();
             // 以詞界判斷詞性，避免 pron./adv./conj. 內含 n./v./a. 造成誤判
             const hasV = /(^|[^a-z])(v|vi|vt)\./.test(p);
             const hasN = /(^|[^a-z])n\./.test(p);
@@ -9135,8 +9201,8 @@
 
             // 1. 動詞變化
             const isInflectedOrParticiple = PURE_INFLECTED_VERB_FORMS.has(w) ||
-                (w.endsWith('ing') && w.length > 4 && !IRREGULAR_VERBS[w]) ||
-                (w.endsWith('ed') && w.length > 4 && !w.endsWith('eed') && !IRREGULAR_VERBS[w]);
+                (w.endsWith("ing") && w.length > 4 && !IRREGULAR_VERBS[w]) ||
+                (w.endsWith("ed") && w.length > 4 && !w.endsWith("eed") && !IRREGULAR_VERBS[w]);
 
             if (IRREGULAR_VERBS[w]) {
                 forms.isVerb = true;
@@ -9149,33 +9215,33 @@
                 };
             } else if (hasV && !isInflectedOrParticiple) {
                 forms.isVerb = true;
-                let sForm = w + 's';
-                if (w.endsWith('s') || w.endsWith('sh') || w.endsWith('ch') || w.endsWith('x') || w.endsWith('z') || w.endsWith('o')) {
-                    sForm = w + 'es';
-                } else if (w.endsWith('y') && w.length > 1 && !isVowel(w[w.length - 2])) {
-                    sForm = w.slice(0, -1) + 'ies';
+                let sForm = w + "s";
+                if (w.endsWith("s") || w.endsWith("sh") || w.endsWith("ch") || w.endsWith("x") || w.endsWith("z") || w.endsWith("o")) {
+                    sForm = w + "es";
+                } else if (w.endsWith("y") && w.length > 1 && !isVowel(w[w.length - 2])) {
+                    sForm = w.slice(0, -1) + "ies";
                 }
 
-                let ingForm = w + 'ing';
-                let edForm = w + 'ed';
+                let ingForm = w + "ing";
+                let edForm = w + "ed";
 
-                if (w.endsWith('ie')) {
-                    ingForm = w.slice(0, -2) + 'ying';
-                    edForm = w + 'd';
-                } else if (w.endsWith('e') && !w.endsWith('ee')) {
-                    ingForm = w.slice(0, -1) + 'ing';
-                    edForm = w + 'd';
-                } else if (w.endsWith('y') && w.length > 1 && !isVowel(w[w.length - 2])) {
-                    edForm = w.slice(0, -1) + 'ied';
+                if (w.endsWith("ie")) {
+                    ingForm = w.slice(0, -2) + "ying";
+                    edForm = w + "d";
+                } else if (w.endsWith("e") && !w.endsWith("ee")) {
+                    ingForm = w.slice(0, -1) + "ing";
+                    edForm = w + "d";
+                } else if (w.endsWith("y") && w.length > 1 && !isVowel(w[w.length - 2])) {
+                    edForm = w.slice(0, -1) + "ied";
                 } else if (w.length >= 3) {
                     const c1 = w[w.length - 3];
                     const v = w[w.length - 2];
                     const c2 = w[w.length - 1];
                     // 僅單音節或重音在字尾之短字重複字尾 (排除 borrow, disappear, offer, open, visit, happen, listen, develop 等)
-                    const noDouble = ['borrow', 'disappear', 'offer', 'open', 'visit', 'happen', 'listen', 'develop', 'enter', 'order', 'answer', 'suffer', 'cover', 'deliver', 'consider', 'remember', 'discover', 'recover'];
-                    if (!noDouble.includes(w) && w.length <= 4 && !isVowel(c1) && isVowel(v) && !isVowel(c2) && !'wxy'.includes(c2)) {
-                        ingForm = w + c2 + 'ing';
-                        edForm = w + c2 + 'ed';
+                    const noDouble = ["borrow", "disappear", "offer", "open", "visit", "happen", "listen", "develop", "enter", "order", "answer", "suffer", "cover", "deliver", "consider", "remember", "discover", "recover"];
+                    if (!noDouble.includes(w) && w.length <= 4 && !isVowel(c1) && isVowel(v) && !isVowel(c2) && !"wxy".includes(c2)) {
+                        ingForm = w + c2 + "ing";
+                        edForm = w + c2 + "ed";
                     }
                 }
 
@@ -9190,20 +9256,25 @@
 
             // 2. 名詞複數變化
             if (hasN || (IRREGULAR_PLURALS[w] && !p)) {
-                forms.isNoun = true;
                 if (IRREGULAR_PLURALS[w]) {
+                    forms.isNoun = true;
                     forms.nounForms = {
                         singular: w,
                         plural: IRREGULAR_PLURALS[w]
                     };
+                } else if (w.endsWith("s") && !w.endsWith("ss") && !SINGULAR_S_NOUNS.has(w)) {
+                    // 已是複數名詞 (cars, words, headphones, clothes) 或單複同形/不可數 -s 名詞 (news, ethics, physics, series, species, means) 不顯示複數變化
+                    forms.isNoun = false;
+                    forms.nounForms = null;
                 } else {
-                    let plural = w + 's';
-                    if (w.endsWith('s') || w.endsWith('sh') || w.endsWith('ch') || w.endsWith('x') || w.endsWith('z')) {
-                        plural = w + 'es';
-                    } else if (w.endsWith('y') && w.length > 1 && !isVowel(w[w.length - 2])) {
-                        plural = w.slice(0, -1) + 'ies';
-                    } else if (['leaf', 'life', 'knife', 'half', 'thief', 'wolf', 'shelf', 'wife'].includes(w)) {
-                        plural = w.replace(/fe?$/, 'ves');
+                    forms.isNoun = true;
+                    let plural = w + "s";
+                    if (w.endsWith("s") || w.endsWith("sh") || w.endsWith("ch") || w.endsWith("x") || w.endsWith("z")) {
+                        plural = w + "es";
+                    } else if (w.endsWith("y") && w.length > 1 && !isVowel(w[w.length - 2])) {
+                        plural = w.slice(0, -1) + "ies";
+                    } else if (["leaf", "life", "knife", "half", "thief", "wolf", "shelf", "wife", "calf", "loaf"].includes(w)) {
+                        plural = w.replace(/fe?$/, "ves");
                     }
                     forms.nounForms = {
                         singular: w,
@@ -9220,44 +9291,52 @@
                 forms.adjForms = IRREGULAR_COMPS[w];
             } else if (hasAdj) {
                 forms.isAdj = true;
-                if (w.endsWith('ed') || w.endsWith('ing')) {
+                // 計算音節數（扣除字尾不發音 e 後之母音群數量）
+                const stemForSyllable = w.length > 3 ? w.replace(/(?<=[^aeiouy])e$/, "") : w;
+                const vowelGroups = stemForSyllable.match(/[aeiouy]+/g) || [];
+                const syllableCount = Math.max(1, vowelGroups.length);
+                const hasDerivedSuffix = /(ful|less|ous|ive|able|ible|al|ic|ish|ant|ent|ed|ing|ward|ern|ary|ory|ate|ite|ute|ese|ine|ile|une)$/.test(w) && !TWO_SYLLABLE_ER_ADJS.has(w) && !["cute", "rude", "wide", "late", "fine", "pale", "pure", "rare", "sure", "bare", "mere", "sore", "tame", "lame", "sane", "vague", "fierce", "scarce", "free", "wise", "safe", "large", "close", "nice", "huge", "brave", "strange", "early"].includes(w);
+
+                if (hasDerivedSuffix || MORE_MOST_SHORT_ADJS.has(w)) {
                     forms.adjForms = {
                         base: w,
-                        comp: 'more ' + w,
-                        super: 'most ' + w
+                        comp: "more " + w,
+                        super: "most " + w
                     };
-                } else if (w.endsWith('y') && w.length > 1 && !isVowel(w[w.length - 2])) {
+                } else if (w.endsWith("y") && w.length > 2 && !isVowel(w[w.length - 2]) && syllableCount <= 2) {
                     forms.adjForms = {
                         base: w,
-                        comp: w.slice(0, -1) + 'ier',
-                        super: w.slice(0, -1) + 'iest'
+                        comp: w.slice(0, -1) + "ier",
+                        super: w.slice(0, -1) + "iest"
                     };
-                } else if (w.endsWith('e')) {
-                    forms.adjForms = {
-                        base: w,
-                        comp: w + 'r',
-                        super: w + 'st'
-                    };
-                } else if (w.length <= 5) {
-                    let doubleC = '';
-                    if (w.length >= 3) {
-                        const c1 = w[w.length - 3];
-                        const v = w[w.length - 2];
-                        const c2 = w[w.length - 1];
-                        if (!isVowel(c1) && isVowel(v) && !isVowel(c2) && !'wxy'.includes(c2)) {
-                            doubleC = c2;
+                } else if (syllableCount === 1 || TWO_SYLLABLE_ER_ADJS.has(w)) {
+                    if (w.endsWith("e")) {
+                        forms.adjForms = {
+                            base: w,
+                            comp: w + "r",
+                            super: w + "st"
+                        };
+                    } else {
+                        let doubleC = "";
+                        if (w.length >= 3 && syllableCount === 1) {
+                            const c1 = w[w.length - 3];
+                            const v = w[w.length - 2];
+                            const c2 = w[w.length - 1];
+                            if (!isVowel(c1) && isVowel(v) && !isVowel(c2) && !"wxy".includes(c2)) {
+                                doubleC = c2;
+                            }
                         }
+                        forms.adjForms = {
+                            base: w,
+                            comp: w + doubleC + "er",
+                            super: w + doubleC + "est"
+                        };
                     }
-                    forms.adjForms = {
-                        base: w,
-                        comp: w + doubleC + 'er',
-                        super: w + doubleC + 'est'
-                    };
                 } else {
                     forms.adjForms = {
                         base: w,
-                        comp: 'more ' + w,
-                        super: 'most ' + w
+                        comp: "more " + w,
+                        super: "most " + w
                     };
                 }
             }

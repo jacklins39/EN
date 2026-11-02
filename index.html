@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261101V6';
+        const APP_BUILD_VERSION = '20261102V1';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -63,20 +63,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261101V6"></script>
-    <script src="toeic_data.js?v=20261101V6"></script>
-    <script src="jh_data.js?v=20261101V6"></script>
-    <script src="listening_data.js?v=20261101V6"></script>
-    <script src="listening_words_data.js?v=20261101V6"></script>
-    <script src="uk_phonetics_manifest.js?v=20261101V6"></script>
-    <script src="words_audio_manifest.js?v=20261101V6"></script>
-    <script src="examples_audio_manifest.js?v=20261101V6"></script>
-    <script src="zh_audio_manifest.js?v=20261101V6"></script>
-    <script src="collocations_audio_manifest.js?v=20261101V6"></script>
-    <script src="syn_ant_data.js?v=20261101V6"></script>
-    <script src="synonyms_unit8_data.js?v=20261101V6"></script>
-    <script src="examples_unit9_data.js?v=20261101V6"></script>
-    <script src="game_whack.js?v=20261101V6"></script>
+    <script src="words_data.js?v=20261102V1"></script>
+    <script src="toeic_data.js?v=20261102V1"></script>
+    <script src="jh_data.js?v=20261102V1"></script>
+    <script src="listening_data.js?v=20261102V1"></script>
+    <script src="listening_words_data.js?v=20261102V1"></script>
+    <script src="uk_phonetics_manifest.js?v=20261102V1"></script>
+    <script src="words_audio_manifest.js?v=20261102V1"></script>
+    <script src="examples_audio_manifest.js?v=20261102V1"></script>
+    <script src="zh_audio_manifest.js?v=20261102V1"></script>
+    <script src="collocations_audio_manifest.js?v=20261102V1"></script>
+    <script src="syn_ant_data.js?v=20261102V1"></script>
+    <script src="synonyms_unit8_data.js?v=20261102V1"></script>
+    <script src="examples_unit9_data.js?v=20261102V1"></script>
+    <script src="game_whack.js?v=20261102V1"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -106,6 +106,15 @@
         #view-study.quiz-options-active .flip-card:not(.flipped),
         #view-study:has(#quiz-options:not(.hidden)) .flip-card:not(.flipped) {
             height: 200px;
+        }
+        /* 手機版練習時精準鎖定視窗高度與頂部定位，隱藏訪客橫幅避免擠壓作答區 */
+        body:has(#view-study:not(.hidden)) #sync-banner {
+            display: none !important;
+        }
+        @media (max-width: 1023px) {
+            body:has(#view-study:not(.hidden)) {
+                min-height: 100dvh;
+            }
         }
         @media (min-width: 640px) {
             .flip-card {
@@ -5032,6 +5041,7 @@
                     hideAllViews();
                     const studyEl = document.getElementById('view-study');
                     if (studyEl) studyEl.classList.remove('hidden');
+                    if (typeof scrollToStudyTop === 'function') scrollToStudyTop();
                     return;
                 }
                 updateDashboard();
@@ -5040,6 +5050,7 @@
                     switchTab('view-dashboard', document.getElementById('tab-btn-dashboard'));
                     return;
                 }
+                if (typeof scrollToStudyTop === 'function') scrollToStudyTop();
             } else if (viewId === 'view-weak') {
                 renderDictView();
             } else if (viewId === 'view-listening') {
@@ -6017,6 +6028,36 @@
             }
         }
 
+        // 強制將練習視窗與卡片內部滾動條重新定位回最上方 (支援手機版下滑後換頁自動歸位)
+        function scrollToStudyTop() {
+            try {
+                if (document.activeElement && document.activeElement.tagName === 'INPUT') {
+                    document.activeElement.blur();
+                }
+            } catch (e) {}
+            const resetScroll = () => {
+                try {
+                    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+                } catch (e) {
+                    window.scrollTo(0, 0);
+                }
+                if (document.documentElement) document.documentElement.scrollTop = 0;
+                if (document.body) document.body.scrollTop = 0;
+                const mainEl = document.querySelector('main');
+                if (mainEl) mainEl.scrollTop = 0;
+                const studyEl = document.getElementById('view-study');
+                if (studyEl) studyEl.scrollTop = 0;
+                const cardBack = flashcard?.querySelector('.flip-card-back');
+                if (cardBack) cardBack.scrollTop = 0;
+                const cardFront = flashcard?.querySelector('.flip-card-front');
+                if (cardFront) cardFront.scrollTop = 0;
+            };
+            resetScroll();
+            requestAnimationFrame(() => {
+                resetScroll();
+            });
+        }
+
         function nextCard() {
             if (cardsCompleted === 0 && !isMistakeMode && mistakeQueue.length === 0 && sessionStats.totalAnswers === 0 && sessionStats.initialWords.length === 0 && sessionQueue.length > 0) {
                 resetSessionStats(sessionQueue);
@@ -6031,16 +6072,15 @@
             }
             stopAllAudio();
             
-            // 暫時取消動畫，讓卡片瞬間翻回正面，避免在翻回過程中看到新單字的背面答案
+            // 暫時取消動畫（含卡片高度與翻轉過渡），讓卡片瞬間切換回正面標準高度並重新定位至頁面頂端
             const inner = flashcard.querySelector('.flip-card-inner');
             if (inner) inner.style.transition = 'none';
+            if (flashcard) flashcard.style.transition = 'none';
             flashcard.classList.remove('flipped');
             const cardBack = flashcard?.querySelector('.flip-card-back');
             if (cardBack) cardBack.scrollTop = 0;
             const cardFront = flashcard?.querySelector('.flip-card-front');
             if (cardFront) cardFront.scrollTop = 0;
-            void flashcard.offsetWidth; // 強制重繪
-            if (inner) inner.style.transition = '';
             actionShowAnswer.classList.add('hidden');
             actionRate.classList.add('hidden');
             quizOptions.classList.add('hidden');
@@ -6187,6 +6227,10 @@
             }
 
             updateProgressBar();
+            void flashcard.offsetWidth; // 強制重繪，確保新題型高度立即生效
+            if (inner) inner.style.transition = '';
+            if (flashcard) flashcard.style.transition = '';
+            scrollToStudyTop();
             
             if (isAutoFlashcardMode) {
                 // 自動翻卡模式：第 1 面讀單字 -> 緩衝 -> 翻面 -> 第 2 面再讀單字 -> 讀例句 -> 緩衝 -> 跳下一張
@@ -6883,7 +6927,7 @@
             });
             document.getElementById('btn-fill-submit').addEventListener('click', () => submit(false));
             document.getElementById('btn-fill-skip').addEventListener('click', () => submit(true));
-            setTimeout(() => input.focus(), 80);
+            setTimeout(() => { try { input.focus({ preventScroll: true }); } catch (e) { input.focus(); } }, 80);
         }
 
         function updateProgressBar() {
@@ -7071,6 +7115,7 @@
             renderCompletedSessionUI(wasAutoPlay);
             hideAllViews();
             viewCompleted.classList.remove('hidden');
+            if (typeof scrollToStudyTop === 'function') scrollToStudyTop();
             playFinishSound();
             if (typeof confetti === 'function') {
                 confetti({ particleCount: 110, spread: 75, origin: { y: 0.6 } });
@@ -12916,6 +12961,7 @@
             const isDialogue = !!(article.isDialogue || (listeningSentences[0] && listeningSentences[0].speaker));
             const container = document.getElementById('listening-text-container');
             if (!container) return;
+            container.scrollTop = 0;
 
             container.innerHTML = listeningSentences.map((sObj, i) => {
                 const s = sObj.en || '';
@@ -14919,6 +14965,7 @@
         function renderListeningSandboxModal() {
             const state = listeningSandboxState;
             const container = document.getElementById('sandbox-card-container');
+            if (container) container.scrollTop = 0;
             const counterEl = document.getElementById('sandbox-counter-badge');
             const progressEl = document.getElementById('sandbox-progress-bar');
             const titleEl = document.getElementById('sandbox-article-title');

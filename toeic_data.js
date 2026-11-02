@@ -20635,7 +20635,7 @@ const toeicWordsDB = [
         "en": "objective",
         "kk": "[əbˋdʒɛktɪv]",
         "uk": "/əbˈdʒektɪv/",
-        "zh": "adj. 客觀的、如實的、不帶個人情感的、客觀存在的",
+        "zh": "adj. 客觀的、如實的、不帶個人情感的；n. 目標、目的",
         "unit": 13,
         "example": "What is the main objective of this project?",
         "exampleZh": "這個專案的主要目標是什麼？"

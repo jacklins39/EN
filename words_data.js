@@ -40584,7 +40584,7 @@ const externalVocabularyDB = [
         "en": "objective",
         "kk": "[əbˋdʒɛktɪv]",
         "uk": "/əbˈdʒektɪv/",
-        "zh": "adj. 客觀的、不帶個人情感的、客觀存在的、賓格的",
+        "zh": "adj. 客觀的、不帶個人情感的、客觀存在的；n. 目標、目的",
         "unit": 5,
         "example": "What is the main objective of this project?",
         "exampleZh": "這個專案的主要目標是什麼？"

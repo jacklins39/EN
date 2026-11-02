@@ -10,10 +10,10 @@ Spaced Repetition Vocab App (Cloud Version) - 全域資料庫健康檢查腳本
 3. 遺漏詞性標籤：是否缺少詞性標記 (n./v./adj./adv./prep./aux./ph. 等) (0 筆)
 4. 機械占位例句：是否存在 Can you use the word ... 等範本套皮例句 (0 筆)
 5. 格式或英文殘留：zh 中文釋義是否無中文字或純英文未翻譯殘留 (0 筆)
-6. 詞形變化與跨字污染防呆檢驗：實測 computeWordForms 與 getWordCollocations 全量單字，
+6. 詞形變化、搭配詞與同義詞跨詞性污染防呆檢驗：實測 computeWordForms、getWordCollocations 與 getWordSynonyms 全量單字，
    確保 0 詞根篡改 (如 born 誤轉 bear/bearer/bearest)、0 屈折動詞二次規則變化 (如 writtened)、
    0 多音節形容詞誤加 -er/-est (如 comfortabler)、0 複數/不可數 -s 名詞誤加 -es (如 newses)、
-   0 搭配詞跨單字污染 (如 born 誤抓 teddy bear)。
+   0 搭配詞跨單字污染 (如 born 誤抓 teddy bear)、0 同義詞跨詞性錯配 (如 curious adj. 誤抓 wonder vt./n.)。
 
 執行方式：
   python scripts/audit_database.py
@@ -174,8 +174,34 @@ for (const [en, item] of allWordsMap.entries()) {
             errors.push(`搭配詞跨字污染: [${en}] 混入 "${c.en}"`);
         }
     }
+    const syns = sandbox.getWordSynonyms(en, item);
+    const synIndex = sandbox.initSemanticSynonymIndex();
+    const wInfo = synIndex.wordInfo.get(en);
+    const explicitSet = new Set([
+        ...((typeof sandbox.SYN_ANT_DB !== 'undefined' && sandbox.SYN_ANT_DB[en] && sandbox.SYN_ANT_DB[en].syn) || []).map(s => s.toLowerCase()),
+        ...((sandbox.CORE_WORD_SYNONYMS[en] || []).map(s => s.toLowerCase()))
+    ]);
+    for (const s of syns) {
+        const sLower = s.toLowerCase();
+        if (explicitSet.has(sLower)) continue;
+        const cInfo = synIndex.wordInfo.get(sLower);
+        if (wInfo && cInfo && wInfo.primaryPos !== cInfo.primaryPos) {
+            errors.push(`同義詞跨詞性錯配: [${en} (${wInfo.primaryPos})] 誤配 "${s} (${cInfo.primaryPos})"`);
+        }
+    }
 }
-console.log(JSON.stringify({ totalUnique: allWordsMap.size, errors }));
+const curiousSyns = sandbox.getWordSynonyms('curious');
+if (curiousSyns.includes('wonder') || !curiousSyns.includes('inquisitive') || !curiousSyns.includes('inquiring')) {
+    errors.push(`curious 同義詞異常: ${JSON.stringify(curiousSyns)}`);
+}
+console.log(JSON.stringify({ totalUnique: allWordsMap.size, errors, sampleSyns: {
+    curious: curiousSyns,
+    inquisitive: sandbox.getWordSynonyms('inquisitive'),
+    inquiring: sandbox.getWordSynonyms('inquiring'),
+    death: sandbox.getWordSynonyms('death'),
+    area: sandbox.getWordSynonyms('area'),
+    write: sandbox.getWordSynonyms('write')
+} }));
 """
     res = subprocess.run(
         ['node', '-e', node_script],

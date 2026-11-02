@@ -76,8 +76,9 @@
 > **歷史案例紀錄（2026-11-02 全域清查修復）**：
 > - **問題一（詞根劫持與假比較級）**：早期 `computeWordForms(word, posStr)` 會呼叫 `resolveBaseLemma(word)` 將獨立單字強制還原為動詞原形（如 `born (adj. 天生的)` 被轉為 `bear`），再套用 `born` 的 `adj.` 詞性，衍生出不存在的 `bear / bearer / bearest`；另有部分多音節字尾 `-e` 形容詞（如 `comfortable`）誤套用單音節規則變成 `comfortabler`，或字尾 `-s` 名詞（如 `news`、`ethics`）誤加 `-es`。
 > - **問題二（搭配詞與同反義詞跨字污染）**：早期 `getWordCollocations`、`getWordSynonyms`、`getWordAntonyms` 亦會連帶查詢 `resolveBaseLemma(word)` 的原形動詞資料，導致 `born` 的詳解卡混入 `bear` 的名詞片語 `"teddy bear (泰迪熊)"`，或 `saw (鋸子)` 混入 `see` 的片語與同反義詞。
+> - **問題三（同義詞跨詞性混淆污染）**：早期 `parsePosAndTokensForCrosslink` 將多詞性單字的所有詞性標籤放入同一個扁平 `posSet`，且強行剝除中文字尾「的／地」（如將 `好奇的` 轉為 `好奇`），導致 `curious (adj. 好奇的)` 誤抓 `wonder (vt. 好奇；n. 奇觀；adj. 極好的)`，或 `death (n.)` 誤抓 `die (v.)`、`area (n.)` 誤抓 `regional (adj.)`。
 
-- [x] **未來新增單字與維護語言學引擎之 5 大硬性 SOP**：
+- [x] **未來新增單字與維護語言學引擎之 6 大硬性 SOP**：
   1. **嚴格詞根隔離原則 (Strict Lemma Isolation)**：
      - `computeWordForms`、`getWordCollocations`、`getWordSynonyms`、`getWordAntonyms` **一律只針對當前單字本身 (`rawW`) 運算與檢索**，嚴禁將 `w` 替換為 `resolveBaseLemma(w).base`。
      - `resolveBaseLemma(w)` **僅限用於詳解卡頂部提示橫幅**（顯示「動詞溯源：`born` 為 `bear` 之過去分詞」），絕不可介入下方詞形、搭配詞或同反義詞的資料抓取。
@@ -90,5 +91,8 @@
   4. **新增「常用搭配詞 (`CORE_WORD_COLLOCATIONS`)」時**：
      - 搭配詞片語必須真正包含該單字本身（或其自身的屈折變化），嚴禁將同形異義或不同詞性原形的片語混放。
      - 每次於 `CORE_WORD_COLLOCATIONS` 新增片語後，**必須使用 `edge-tts --voice en-US-JennyNeural` 產製對應 MP3 存入 `audio/collocations/{slug}.mp3`**，並將 `slug` 寫入 `collocations_audio_manifest.js`。
-  5. **入庫後強制執行六大健檢**：
+  5. **同義詞詞性分段嚴格綁定原則 (POS-Scoped Synonym Isolation)**：
+     - `parsePosSegmentsForCrosslink` 與 `initSemanticSynonymIndex` 一律以 **`${primaryPos}:${token}` 複合鍵**建立倒排索引，且嚴禁剝除中文字尾「的／地／位」混淆詞性。
+     - 若在 `CORE_WORD_SYNONYMS` 手動新增精選同義詞（如為 `curious` 新增 `inquisitive`, `inquiring`），必須確保詞性 100% 一致，且若該同義詞尚未收錄於本地詞庫，必須同步補入 `synonyms_unit8_data.js` 並產製 4 軌真人發音 MP3 更新四大音訊 Manifest。
+  6. **入庫後強制執行六大健檢**：
      - 每次新增單字或修改 `index.html` 語言學邏輯後，**必須執行 `python scripts/audit_database.py`**，確認第 6 項「🧠 語言學引擎與詞形/搭配詞隔離檢驗」顯示 `0 筆異常` 方可提交推送。

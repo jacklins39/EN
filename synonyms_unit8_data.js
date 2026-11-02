@@ -9821,5 +9821,25 @@ const synUnit8WordsDB = [
     "unit": 8,
     "example": "The team is trying to ferret out missing details.",
     "exampleZh": "該團隊正試圖搜尋遺失的細節。"
+    },
+  {
+    "id": 8092,
+    "en": "inquisitive",
+    "kk": "[ɪnˋkwɪzətɪv]",
+    "uk": "/ɪnˈkwɪzətɪv/",
+    "zh": "adj. 好奇的、好問的、愛探究的",
+    "unit": 8,
+    "example": "She has an inquisitive mind and always asks great questions.",
+    "exampleZh": "她有一顆好問的心，總是提出很棒的問題。"
+  },
+  {
+    "id": 8093,
+    "en": "inquiring",
+    "kk": "[ɪnˋkwaɪrɪŋ]",
+    "uk": "/ɪnˈkwaɪərɪŋ/",
+    "zh": "adj. 好問的、愛打聽的、探究的",
+    "unit": 8,
+    "example": "The child looked at the strange insect with an inquiring expression.",
+    "exampleZh": "那個孩子用充滿好奇探究的表情看著那隻奇特的昆蟲。"
   }
 ];

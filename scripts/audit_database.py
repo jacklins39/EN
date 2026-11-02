@@ -4,12 +4,16 @@
 =============================================================================
 Spaced Repetition Vocab App (Cloud Version) - 全域資料庫健康檢查腳本
 =============================================================================
-定期執行此腳本檢驗全域三大單字庫 (words_data.js / jh_data.js / toeic_data.js)：
+定期執行此腳本檢驗全域三大單字庫 (words_data.js / jh_data.js / toeic_data.js) 與語言學引擎：
 1. 內部重複：同一詞庫內是否有重複收錄之英文字詞 (0 筆)
 2. 空音標 / 異常音標：音標是否為空或缺少標準台灣 KK 括號格式 [ˋ...] (0 筆)
 3. 遺漏詞性標籤：是否缺少詞性標記 (n./v./adj./adv./prep./aux./ph. 等) (0 筆)
 4. 機械占位例句：是否存在 Can you use the word ... 等範本套皮例句 (0 筆)
 5. 格式或英文殘留：zh 中文釋義是否無中文字或純英文未翻譯殘留 (0 筆)
+6. 詞形變化與跨字污染防呆檢驗：實測 computeWordForms 與 getWordCollocations 全量單字，
+   確保 0 詞根篡改 (如 born 誤轉 bear/bearer/bearest)、0 屈折動詞二次規則變化 (如 writtened)、
+   0 多音節形容詞誤加 -er/-est (如 comfortabler)、0 複數/不可數 -s 名詞誤加 -es (如 newses)、
+   0 搭配詞跨單字污染 (如 born 誤抓 teddy bear)。
 
 執行方式：
   python scripts/audit_database.py
@@ -20,6 +24,7 @@ import sys
 import os
 import re
 import json
+import subprocess
 
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -55,6 +60,139 @@ if sys.platform == 'win32':
     except Exception:
         pass
 
+
+def run_linguistic_engine_audit():
+    """
+    透過 Node.js 載入 index.html 的語言學引擎，對全域所有單字實測：
+    - 詞形變化 (computeWordForms) 是否發生詞根篡改或畸形字尾
+    - 常用搭配詞 (getWordCollocations) 是否發生跨字根污染
+    """
+    node_script = r"""
+const fs = require('fs');
+const vm = require('vm');
+const sandbox = { window: {}, console: console };
+vm.createContext(sandbox);
+
+const dataFiles = [
+    'words_data.js', 'toeic_data.js', 'jh_data.js',
+    'listening_words_data.js', 'synonyms_unit8_data.js',
+    'examples_unit9_data.js', 'syn_ant_data.js'
+];
+for (const file of dataFiles) {
+    if (fs.existsSync(file)) {
+        const code = fs.readFileSync(file, 'utf8').replace(/^(const|let)\s+/gm, 'var ');
+        vm.runInContext(code, sandbox);
+    }
+}
+const html = fs.readFileSync('index.html', 'utf8');
+const startIdx = html.indexOf('const IRREGULAR_VERBS = {');
+const endIdx = html.indexOf('function renderFormTokensHtml');
+const splitStart = html.indexOf('function splitPosAndZh(');
+const splitEnd = html.indexOf('function ', splitStart + 25);
+const engineCode = `
+var vocabularyDB = [
+    ...(typeof externalVocabularyDB !== 'undefined' ? externalVocabularyDB : []),
+    ...(typeof synUnit8WordsDB !== 'undefined' ? synUnit8WordsDB : []),
+    ...(typeof examplesUnit9WordsDB !== 'undefined' ? examplesUnit9WordsDB : []),
+    ...(typeof toeicWordsDB !== 'undefined' ? toeicWordsDB : []),
+    ...(typeof jhWordsDB !== 'undefined' ? jhWordsDB : []),
+    ...(typeof listeningWordsDB !== 'undefined' ? listeningWordsDB : [])
+];
+var currentUnit = 1;
+${html.slice(splitStart, splitEnd)}
+${html.slice(startIdx, endIdx).replace(/^\s*(const|let)\s+/gm, 'var ')}
+`;
+vm.runInContext(engineCode, sandbox);
+
+const allWordsMap = new Map();
+for (const item of sandbox.vocabularyDB) {
+    if (!item || !item.en) continue;
+    const key = item.en.trim().toLowerCase();
+    if (!allWordsMap.has(key)) allWordsMap.set(key, item);
+}
+
+const HOMOGRAPH_REGULAR_VERBS = new Set(['saw', 'found', 'ground', 'wound', 'bore', 'bound']);
+const irregInflected = new Set();
+for (const [base, vf] of Object.entries(sandbox.IRREGULAR_VERBS)) {
+    for (const fld of ['past', 'pp', 'ing', 's']) {
+        const parts = String(vf[fld] || '').replace(/\[.*?\]/g, '').split('/').map(s => s.trim().toLowerCase());
+        for (const p of parts) {
+            if (p && p !== base && !sandbox.IRREGULAR_VERBS[p] && !HOMOGRAPH_REGULAR_VERBS.has(p)) {
+                irregInflected.add(p);
+            }
+        }
+    }
+}
+
+const ALLOWED_INFLECTED_COLLOCATIONS = new Set([
+    'lesson:take lessons in...',
+    'star:under the stars',
+    'borrow:live on borrowed time',
+    'sink:heart sank'
+]);
+
+const errors = [];
+for (const [en, item] of allWordsMap.entries()) {
+    if (!/^[a-z]+$/.test(en)) continue;
+    const posStr = (item.zh || '') + ' ' + (item.pos || '');
+    const forms = sandbox.computeWordForms(en, posStr);
+    if (!forms) continue;
+
+    if (forms.word !== en) {
+        errors.push(`詞根遭篡改: ${en} -> ${forms.word}`);
+    }
+    if (forms.verbForms) {
+        if (forms.verbForms.base !== en) {
+            errors.push(`動詞原形遭篡改: ${en} -> ${forms.verbForms.base}`);
+        }
+        if (irregInflected.has(en)) {
+            errors.push(`屈折動詞誤產生規則三態: ${en} -> ${forms.verbForms.past}`);
+        }
+    }
+    if (forms.adjForms) {
+        if (forms.adjForms.base !== en) {
+            errors.push(`形容詞原級遭篡改: ${en} -> ${forms.adjForms.base}`);
+        }
+        if (!forms.adjForms.comp.startsWith('more ') && /(ful|less|ous|ive|able|ible|al|ic|ish|ant|ent|ed|ing)$/.test(en) && !['early', 'simple', 'humble', 'gentle', 'noble', 'subtle'].includes(en)) {
+            errors.push(`派生字尾形容詞誤加 -er/-est: ${en} -> ${forms.adjForms.comp}`);
+        }
+    }
+    if (forms.nounForms) {
+        if (forms.nounForms.singular !== en) {
+            errors.push(`名詞單數遭篡改: ${en} -> ${forms.nounForms.singular}`);
+        }
+        if (en.endsWith('s') && !en.endsWith('ss') && !sandbox.SINGULAR_S_NOUNS.has(en) && !sandbox.IRREGULAR_PLURALS[en]) {
+            errors.push(`字尾 -s 名詞誤加 -es: ${en} -> ${forms.nounForms.plural}`);
+        }
+    }
+    const cols = sandbox.getWordCollocations(en, item);
+    for (const c of cols) {
+        const key = `${en}:${c.en.toLowerCase()}`;
+        if (ALLOWED_INFLECTED_COLLOCATIONS.has(key)) continue;
+        const tokens = c.en.toLowerCase().replace(/[^a-z\s]/g, ' ').split(/\s+/).filter(Boolean);
+        if (!tokens.includes(en)) {
+            errors.push(`搭配詞跨字污染: [${en}] 混入 "${c.en}"`);
+        }
+    }
+}
+console.log(JSON.stringify({ totalUnique: allWordsMap.size, errors }));
+"""
+    res = subprocess.run(
+        ['node', '-e', node_script],
+        cwd=ROOT_DIR,
+        capture_output=True,
+        text=True,
+        encoding='utf-8'
+    )
+    if res.returncode != 0:
+        return -1, [f"Node 語言學引擎檢測執行失敗: {res.stderr.strip()}"]
+    try:
+        payload = json.loads(res.stdout.strip().splitlines()[-1])
+        return payload.get('totalUnique', 0), payload.get('errors', [])
+    except Exception as e:
+        return -1, [f"解析 Node 輸出失敗: {e}"]
+
+
 def run_health_audit():
     print("=" * 66)
     print(" 🏥 Spaced Repetition Vocab App - 全域詞庫品質健康檢查")
@@ -65,7 +203,8 @@ def run_health_audit():
         'abnormal_kk': 0,
         'missing_pos': 0,
         'placeholder_examples': 0,
-        'english_residual_zh': 0
+        'english_residual_zh': 0,
+        'linguistic_contamination': 0
     }
 
     total_words_inspected = 0
@@ -155,23 +294,35 @@ def run_health_audit():
             else:
                 print(f"  ❌ {label:14}: {count} 筆")
                 any_issues = True
-                # 印出前 3 筆違規示範
                 samples = db_metrics[key][:3]
                 for s in samples:
                     print(f"     -> {s}")
 
+    # 6. 全域語言學引擎與跨字污染防呆檢驗
+    unique_count, ling_errors = run_linguistic_engine_audit()
+    overall_metrics['linguistic_contamination'] = len(ling_errors)
+    print(f"\n🧠 [index.html] 語言學引擎與詞形/搭配詞隔離檢驗 (共 {unique_count:,} 個不重複詞條):")
+    if len(ling_errors) == 0:
+        print("  ✅ 詞根隔離與詞形變化 : 0 筆異常 (無跨字根篡改、無畸形比較級/複數、無搭配詞污染)")
+    else:
+        print(f"  ❌ 詞根隔離與詞形變化 : {len(ling_errors)} 筆異常")
+        any_issues = True
+        for err in ling_errors[:5]:
+            print(f"     -> {err}")
+
     print("\n" + "=" * 66)
-    print(f" 📊 全域健檢總結報告 (總檢測單字: {total_words_inspected:,} 筆)")
+    print(f" 📊 全域健檢總結報告 (總檢測單字: {total_words_inspected:,} 筆 / 獨立詞條: {unique_count:,} 筆)")
     print("=" * 66)
-    print(f"  內部重複      : {overall_metrics['duplicates']} 筆")
-    print(f"  空音標/異常音標: {overall_metrics['abnormal_kk']} 筆")
-    print(f"  遺漏詞性標籤  : {overall_metrics['missing_pos']} 筆")
-    print(f"  機械占位例句  : {overall_metrics['placeholder_examples']} 筆")
-    print(f"  格式或英文殘留: {overall_metrics['english_residual_zh']} 筆")
+    print(f"  內部重複          : {overall_metrics['duplicates']} 筆")
+    print(f"  空音標/異常音標    : {overall_metrics['abnormal_kk']} 筆")
+    print(f"  遺漏詞性標籤      : {overall_metrics['missing_pos']} 筆")
+    print(f"  機械占位例句      : {overall_metrics['placeholder_examples']} 筆")
+    print(f"  格式或英文殘留    : {overall_metrics['english_residual_zh']} 筆")
+    print(f"  詞形與搭配詞污染  : {overall_metrics['linguistic_contamination']} 筆")
     print("=" * 66)
 
     if not any_issues and all(v == 0 for v in overall_metrics.values()):
-        print(" 🎉 全域資料庫 100% 通過品質健檢，零缺陷！")
+        print(" 🎉 全域資料庫與語言學引擎 100% 通過品質健檢，零缺陷！")
         return 0
     else:
         print(" ⚠️ 健檢發現異常資料，請依上方清單修正後再次執行！")

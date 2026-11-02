@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261102V5';
+        const APP_BUILD_VERSION = '20261102V6';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -63,20 +63,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261102V5"></script>
-    <script src="toeic_data.js?v=20261102V5"></script>
-    <script src="jh_data.js?v=20261102V5"></script>
-    <script src="listening_data.js?v=20261102V5"></script>
-    <script src="listening_words_data.js?v=20261102V5"></script>
-    <script src="uk_phonetics_manifest.js?v=20261102V5"></script>
-    <script src="words_audio_manifest.js?v=20261102V5"></script>
-    <script src="examples_audio_manifest.js?v=20261102V5"></script>
-    <script src="zh_audio_manifest.js?v=20261102V5"></script>
-    <script src="collocations_audio_manifest.js?v=20261102V5"></script>
-    <script src="syn_ant_data.js?v=20261102V5"></script>
-    <script src="synonyms_unit8_data.js?v=20261102V5"></script>
-    <script src="examples_unit9_data.js?v=20261102V5"></script>
-    <script src="game_whack.js?v=20261102V5"></script>
+    <script src="words_data.js?v=20261102V6"></script>
+    <script src="toeic_data.js?v=20261102V6"></script>
+    <script src="jh_data.js?v=20261102V6"></script>
+    <script src="listening_data.js?v=20261102V6"></script>
+    <script src="listening_words_data.js?v=20261102V6"></script>
+    <script src="uk_phonetics_manifest.js?v=20261102V6"></script>
+    <script src="words_audio_manifest.js?v=20261102V6"></script>
+    <script src="examples_audio_manifest.js?v=20261102V6"></script>
+    <script src="zh_audio_manifest.js?v=20261102V6"></script>
+    <script src="collocations_audio_manifest.js?v=20261102V6"></script>
+    <script src="syn_ant_data.js?v=20261102V6"></script>
+    <script src="synonyms_unit8_data.js?v=20261102V6"></script>
+    <script src="examples_unit9_data.js?v=20261102V6"></script>
+    <script src="game_whack.js?v=20261102V6"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -10048,6 +10048,21 @@
             }
         }
 
+        function renderFormTokensHtml(rawStr, defaultColorClass = 'text-gray-800') {
+            if (!rawStr) return '';
+            const parts = String(rawStr).split('/').map(x => x.trim()).filter(Boolean);
+            if (parts.length <= 1) {
+                return `<span class="font-bold ${defaultColorClass} font-mono text-sm sm:text-base leading-snug">${esc(rawStr)}</span>`;
+            }
+            return parts.map(p => `
+                <span class="font-bold ${defaultColorClass} font-mono text-sm sm:text-base hover:underline cursor-pointer bg-white/80 dark:bg-slate-800/80 px-2 py-0.5 rounded-md border border-gray-200/80 dark:border-slate-700/80 shadow-2xs transition-all hover:border-[#0071E3] active:scale-95 inline-block leading-snug" onclick="event.stopPropagation(); playAudio('${esc(p)}')" title="點擊聆聽「${esc(p)}」發音">${esc(p)}</span>
+            `).join('<span class="text-gray-400 dark:text-gray-500 font-normal mx-1">/</span>');
+        }
+
+        function getFirstFormToken(str) {
+            return String(str || '').split('/')[0].trim();
+        }
+
         function renderWordDetailCard(item, isExternal = false, inflectionMeta = null) {
             const content = document.getElementById('word-detail-content');
             if (!content) return;
@@ -10119,10 +10134,10 @@
                 </div>
             ` : '';
 
-            // 詞形變化區塊 HTML (動詞三態 / 形容詞比較級 / 名詞單複數)
+            // 詞形變化區塊 HTML (直列式列表排版，字元完全展開不截斷)
             let formsHtml = '';
             if (forms) {
-                // 1. 動詞三態與變化
+                // 1. 動詞三態與變化 (直列式清單)
                 if (forms.verbForms) {
                     const isPastHit = inflectionMeta && (inflectionMeta.type === 'past' || inflectionMeta.type === 'past_pp');
                     const isPpHit = inflectionMeta && (inflectionMeta.type === 'pp' || inflectionMeta.type === 'past_pp');
@@ -10131,93 +10146,181 @@
 
                     formsHtml += `
                         <div class="word-forms-card verb-forms-card bg-gradient-to-br from-blue-50/70 to-indigo-50/50 p-3.5 rounded-2xl border border-blue-100/80 shadow-2xs">
-                            <div class="flex items-center justify-between text-xs font-bold text-blue-900 mb-2">
+                            <div class="flex items-center justify-between text-xs font-bold text-blue-900 mb-2.5">
                                 <div class="flex items-center gap-1.5">
                                     <span>⚡</span><span>動詞三態與詞形變化 (Verb Forms)</span>
                                 </div>
                                 <span class="forms-card-sub text-[10px] text-blue-600 font-normal">點擊單字發音</span>
                             </div>
-                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs">
-                                <div class="word-form-item bg-white/95 p-2 rounded-xl border border-blue-100/60 shadow-2xs cursor-pointer hover:border-blue-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.verbForms.base || w.en)}')" title="點擊聆聽原形發音">
-                                    <span class="text-gray-400 block text-[10px] font-semibold mb-0.5">原形 (Base)</span>
-                                    <span class="font-bold text-gray-800 font-mono text-xs sm:text-sm truncate">${esc(forms.verbForms.base || w.en)}</span>
+                            <div class="space-y-1.5">
+                                <!-- 原形 -->
+                                <div class="word-form-item bg-white/95 py-2 px-3 rounded-xl border border-blue-100/70 shadow-2xs cursor-pointer hover:border-blue-400 active:scale-98 transition-all flex items-center justify-between group" onclick="playAudio('${esc(getFirstFormToken(forms.verbForms.base || w.en))}')" title="點擊聆聽原形發音">
+                                    <div class="flex items-center gap-2.5 min-w-0 flex-wrap">
+                                        <span class="text-gray-600 bg-gray-100/90 dark:bg-slate-800 dark:text-gray-300 px-2 py-0.5 rounded-md text-[10px] font-semibold shrink-0">原形 Base</span>
+                                        <div class="flex items-center gap-1.5 flex-wrap">
+                                            ${renderFormTokensHtml(forms.verbForms.base || w.en, 'text-gray-800')}
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-1 text-gray-400 group-hover:text-[#0071E3] shrink-0 ml-2">
+                                        <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217z" clip-rule="evenodd" /></svg>
+                                    </div>
                                 </div>
-                                <div class="word-form-item ${isPastHit ? 'ring-2 ring-[#0071E3] bg-blue-100/90 border-[#0071E3]' : 'bg-white/95 border-blue-100/60'} p-2 rounded-xl border shadow-2xs cursor-pointer hover:border-blue-400 active:scale-95 transition-all flex flex-col justify-between relative" onclick="playAudio('${esc(forms.verbForms.past)}')" title="點擊聆聽過去式發音">
-                                    ${isPastHit ? '<span class="absolute -top-2 right-1 bg-[#0071E3] text-white text-[8px] font-bold px-1.5 py-0.2 rounded-full shadow-2xs">點擊時態</span>' : ''}
-                                    <span class="text-blue-500 block text-[10px] font-semibold mb-0.5">過去式 (Past)</span>
-                                    <span class="font-bold text-[#0071E3] font-mono text-xs sm:text-sm truncate">${esc(forms.verbForms.past)}</span>
+
+                                <!-- 過去式 -->
+                                <div class="word-form-item ${isPastHit ? 'ring-2 ring-[#0071E3] bg-blue-100/90 border-[#0071E3]' : 'bg-white/95 border-blue-100/70'} py-2 px-3 rounded-xl border shadow-2xs cursor-pointer hover:border-blue-400 active:scale-98 transition-all flex items-center justify-between group" onclick="playAudio('${esc(getFirstFormToken(forms.verbForms.past))}')" title="點擊聆聽過去式發音">
+                                    <div class="flex items-center gap-2.5 min-w-0 flex-wrap">
+                                        <span class="text-blue-600 bg-blue-100/80 dark:bg-blue-950/70 dark:text-blue-400 px-2 py-0.5 rounded-md text-[10px] font-semibold shrink-0">過去式 Past</span>
+                                        <div class="flex items-center gap-1.5 flex-wrap">
+                                            ${renderFormTokensHtml(forms.verbForms.past, 'text-[#0071E3]')}
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-1.5 shrink-0 ml-2">
+                                        ${isPastHit ? '<span class="bg-[#0071E3] text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full shadow-2xs">點擊時態</span>' : ''}
+                                        <svg class="h-3.5 w-3.5 text-blue-400 group-hover:text-[#0071E3]" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217z" clip-rule="evenodd" /></svg>
+                                    </div>
                                 </div>
-                                <div class="word-form-item ${isPpHit ? 'ring-2 ring-purple-600 bg-purple-100/90 border-purple-600' : 'bg-white/95 border-blue-100/60'} p-2 rounded-xl border shadow-2xs cursor-pointer hover:border-blue-400 active:scale-95 transition-all flex flex-col justify-between relative" onclick="playAudio('${esc(forms.verbForms.pp)}')" title="點擊聆聽過去分詞發音">
-                                    ${isPpHit ? '<span class="absolute -top-2 right-1 bg-purple-600 text-white text-[8px] font-bold px-1.5 py-0.2 rounded-full shadow-2xs">點擊時態</span>' : ''}
-                                    <span class="text-purple-500 block text-[10px] font-semibold mb-0.5">過去分詞 (P.P.)</span>
-                                    <span class="font-bold text-purple-700 font-mono text-xs sm:text-sm truncate">${esc(forms.verbForms.pp)}</span>
+
+                                <!-- 過去分詞 -->
+                                <div class="word-form-item ${isPpHit ? 'ring-2 ring-purple-600 bg-purple-100/90 border-purple-600' : 'bg-white/95 border-purple-100/70'} py-2 px-3 rounded-xl border shadow-2xs cursor-pointer hover:border-purple-400 active:scale-98 transition-all flex items-center justify-between group" onclick="playAudio('${esc(getFirstFormToken(forms.verbForms.pp))}')" title="點擊聆聽過去分詞發音">
+                                    <div class="flex items-center gap-2.5 min-w-0 flex-wrap">
+                                        <span class="text-purple-600 bg-purple-100/80 dark:bg-purple-950/70 dark:text-purple-400 px-2 py-0.5 rounded-md text-[10px] font-semibold shrink-0">過去分詞 P.P.</span>
+                                        <div class="flex items-center gap-1.5 flex-wrap">
+                                            ${renderFormTokensHtml(forms.verbForms.pp, 'text-purple-700')}
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-1.5 shrink-0 ml-2">
+                                        ${isPpHit ? '<span class="bg-purple-600 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full shadow-2xs">點擊時態</span>' : ''}
+                                        <svg class="h-3.5 w-3.5 text-purple-400 group-hover:text-purple-600" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217z" clip-rule="evenodd" /></svg>
+                                    </div>
                                 </div>
-                                <div class="word-form-item ${isIngHit ? 'ring-2 ring-emerald-600 bg-emerald-100/90 border-emerald-600' : 'bg-white/95 border-blue-100/60'} p-2 rounded-xl border shadow-2xs cursor-pointer hover:border-blue-400 active:scale-95 transition-all flex flex-col justify-between relative" onclick="playAudio('${esc(forms.verbForms.ing)}')" title="點擊聆聽現在分詞發音">
-                                    ${isIngHit ? '<span class="absolute -top-2 right-1 bg-emerald-600 text-white text-[8px] font-bold px-1.5 py-0.2 rounded-full shadow-2xs">點擊時態</span>' : ''}
-                                    <span class="text-emerald-500 block text-[10px] font-semibold mb-0.5">現在分詞 (-ing)</span>
-                                    <span class="font-bold text-emerald-700 font-mono text-xs sm:text-sm truncate">${esc(forms.verbForms.ing)}</span>
+
+                                <!-- 現在分詞 -->
+                                <div class="word-form-item ${isIngHit ? 'ring-2 ring-emerald-600 bg-emerald-100/90 border-emerald-600' : 'bg-white/95 border-emerald-100/70'} py-2 px-3 rounded-xl border shadow-2xs cursor-pointer hover:border-emerald-400 active:scale-98 transition-all flex items-center justify-between group" onclick="playAudio('${esc(getFirstFormToken(forms.verbForms.ing))}')" title="點擊聆聽現在分詞發音">
+                                    <div class="flex items-center gap-2.5 min-w-0 flex-wrap">
+                                        <span class="text-emerald-600 bg-emerald-100/80 dark:bg-emerald-950/70 dark:text-emerald-400 px-2 py-0.5 rounded-md text-[10px] font-semibold shrink-0">現在分詞 -ing</span>
+                                        <div class="flex items-center gap-1.5 flex-wrap">
+                                            ${renderFormTokensHtml(forms.verbForms.ing, 'text-emerald-700')}
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-1.5 shrink-0 ml-2">
+                                        ${isIngHit ? '<span class="bg-emerald-600 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full shadow-2xs">點擊時態</span>' : ''}
+                                        <svg class="h-3.5 w-3.5 text-emerald-400 group-hover:text-emerald-600" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217z" clip-rule="evenodd" /></svg>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="forms-card-footer mt-2 text-[11px] text-gray-500 flex items-center justify-between px-1">
-                                <span>第三人稱單數現在式 (-s/-es)：<strong class="${isSHit ? 'text-[#0071E3] bg-blue-100 px-1.5 py-0.5 rounded ring-1 ring-blue-300' : 'text-gray-800'} font-mono cursor-pointer hover:underline hover:text-[#0071E3]" onclick="playAudio('${esc(forms.verbForms.s)}')">${esc(forms.verbForms.s)} ${isSHit ? '(點擊詞形)' : ''}</strong></span>
+
+                                <!-- 第三人稱單數現在式 -->
+                                <div class="word-form-item ${isSHit ? 'ring-2 ring-indigo-600 bg-indigo-100/90 border-indigo-600' : 'bg-white/95 border-indigo-100/70'} py-2 px-3 rounded-xl border shadow-2xs cursor-pointer hover:border-indigo-400 active:scale-98 transition-all flex items-center justify-between group" onclick="playAudio('${esc(getFirstFormToken(forms.verbForms.s))}')" title="點擊聆聽第三人稱單數現在式發音">
+                                    <div class="flex items-center gap-2.5 min-w-0 flex-wrap">
+                                        <span class="text-indigo-600 bg-indigo-100/80 dark:bg-indigo-950/70 dark:text-indigo-400 px-2 py-0.5 rounded-md text-[10px] font-semibold shrink-0">單數現在式 -s</span>
+                                        <div class="flex items-center gap-1.5 flex-wrap">
+                                            ${renderFormTokensHtml(forms.verbForms.s, 'text-indigo-700')}
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-1.5 shrink-0 ml-2">
+                                        ${isSHit ? '<span class="bg-indigo-600 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full shadow-2xs">點擊時態</span>' : ''}
+                                        <svg class="h-3.5 w-3.5 text-indigo-400 group-hover:text-indigo-600" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217z" clip-rule="evenodd" /></svg>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     `;
                 }
 
-                // 2. 形容詞比較級與最高級
+                // 2. 形容詞比較級與最高級 (直列式清單)
                 if (forms.adjForms) {
                     formsHtml += `
                         <div class="word-forms-card adj-forms-card bg-emerald-50/60 p-3 rounded-2xl border border-emerald-200/70 shadow-2xs">
-                            <div class="flex items-center justify-between text-xs font-bold text-emerald-900 mb-2">
+                            <div class="flex items-center justify-between text-xs font-bold text-emerald-900 mb-2.5">
                                 <div class="flex items-center gap-1.5">
                                     <span>📈</span><span>形容詞比較級與最高級 (Degrees of Comparison)</span>
                                 </div>
                                 <span class="text-[10px] text-emerald-600 font-normal">點擊單字發音</span>
                             </div>
-                            <div class="grid grid-cols-3 gap-2">
-                                <div class="bg-white/95 p-2 rounded-xl border border-emerald-200/60 shadow-2xs cursor-pointer hover:border-emerald-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.adjForms.base)}')">
-                                    <span class="text-emerald-700 block text-[10px] font-semibold mb-0.5">原級 (Base)</span>
-                                    <span class="font-bold text-gray-800 font-mono text-xs sm:text-sm truncate">${esc(forms.adjForms.base)}</span>
+                            <div class="space-y-1.5">
+                                <!-- 原級 -->
+                                <div class="word-form-item bg-white/95 py-2 px-3 rounded-xl border border-emerald-100/70 shadow-2xs cursor-pointer hover:border-emerald-400 active:scale-98 transition-all flex items-center justify-between group" onclick="playAudio('${esc(getFirstFormToken(forms.adjForms.base))}')" title="點擊聆聽原級發音">
+                                    <div class="flex items-center gap-2.5 min-w-0 flex-wrap">
+                                        <span class="text-emerald-700 bg-emerald-100/80 dark:bg-emerald-950/70 dark:text-emerald-400 px-2 py-0.5 rounded-md text-[10px] font-semibold shrink-0">原級 Base</span>
+                                        <div class="flex items-center gap-1.5 flex-wrap">
+                                            ${renderFormTokensHtml(forms.adjForms.base, 'text-gray-800')}
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-1 text-emerald-400 group-hover:text-emerald-600 shrink-0 ml-2">
+                                        <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217z" clip-rule="evenodd" /></svg>
+                                    </div>
                                 </div>
-                                <div class="bg-white/95 p-2 rounded-xl border border-emerald-200/60 shadow-2xs cursor-pointer hover:border-emerald-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.adjForms.comp)}')">
-                                    <span class="text-emerald-700 block text-[10px] font-semibold mb-0.5">比較級 (Comp)</span>
-                                    <span class="font-bold text-emerald-700 font-mono text-xs sm:text-sm truncate">${esc(forms.adjForms.comp)}</span>
+
+                                <!-- 比較級 -->
+                                <div class="word-form-item bg-white/95 py-2 px-3 rounded-xl border border-emerald-100/70 shadow-2xs cursor-pointer hover:border-emerald-400 active:scale-98 transition-all flex items-center justify-between group" onclick="playAudio('${esc(getFirstFormToken(forms.adjForms.comp))}')" title="點擊聆聽比較級發音">
+                                    <div class="flex items-center gap-2.5 min-w-0 flex-wrap">
+                                        <span class="text-emerald-700 bg-emerald-100/80 dark:bg-emerald-950/70 dark:text-emerald-400 px-2 py-0.5 rounded-md text-[10px] font-semibold shrink-0">比較級 Comp</span>
+                                        <div class="flex items-center gap-1.5 flex-wrap">
+                                            ${renderFormTokensHtml(forms.adjForms.comp, 'text-emerald-700')}
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-1 text-emerald-400 group-hover:text-emerald-600 shrink-0 ml-2">
+                                        <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217z" clip-rule="evenodd" /></svg>
+                                    </div>
                                 </div>
-                                <div class="bg-white/95 p-2 rounded-xl border border-emerald-200/60 shadow-2xs cursor-pointer hover:border-emerald-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.adjForms.super)}')">
-                                    <span class="text-emerald-800 block text-[10px] font-semibold mb-0.5">最高級 (Super)</span>
-                                    <span class="font-bold text-emerald-800 font-mono text-xs sm:text-sm truncate">${esc(forms.adjForms.super)}</span>
+
+                                <!-- 最高級 -->
+                                <div class="word-form-item bg-white/95 py-2 px-3 rounded-xl border border-emerald-100/70 shadow-2xs cursor-pointer hover:border-emerald-400 active:scale-98 transition-all flex items-center justify-between group" onclick="playAudio('${esc(getFirstFormToken(forms.adjForms.super))}')" title="點擊聆聽最高級發音">
+                                    <div class="flex items-center gap-2.5 min-w-0 flex-wrap">
+                                        <span class="text-emerald-800 bg-emerald-100/80 dark:bg-emerald-950/70 dark:text-emerald-400 px-2 py-0.5 rounded-md text-[10px] font-semibold shrink-0">最高級 Super</span>
+                                        <div class="flex items-center gap-1.5 flex-wrap">
+                                            ${renderFormTokensHtml(forms.adjForms.super, 'text-emerald-800')}
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-1 text-emerald-400 group-hover:text-emerald-600 shrink-0 ml-2">
+                                        <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217z" clip-rule="evenodd" /></svg>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     `;
                 }
 
-                // 3. 名詞單複數變化
+                // 3. 名詞單複數變化 (直列式清單)
                 if (forms.nounForms && (!forms.verbForms || forms.nounForms.plural !== forms.verbForms.s)) {
                     formsHtml += `
                         <div class="word-forms-card noun-forms-card bg-amber-50/60 p-3 rounded-2xl border border-amber-200/70 shadow-2xs">
-                            <div class="flex items-center justify-between text-xs font-bold text-amber-900 mb-2">
+                            <div class="flex items-center justify-between text-xs font-bold text-amber-900 mb-2.5">
                                 <div class="flex items-center gap-1.5">
                                     <span>📦</span><span>名詞單複數變化 (Noun Plurals)</span>
                                 </div>
                                 <span class="text-[10px] text-amber-600 font-normal">點擊單字發音</span>
                             </div>
-                            <div class="grid grid-cols-2 gap-2">
-                                <div class="bg-white/95 p-2.5 rounded-xl border border-amber-200/60 shadow-2xs cursor-pointer hover:border-amber-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.nounForms.singular)}')">
-                                    <span class="text-gray-600 block text-[10px] font-semibold mb-0.5">單數 (Singular)</span>
-                                    <span class="font-bold text-gray-900 font-mono text-xs sm:text-sm truncate">${esc(forms.nounForms.singular)}</span>
+                            <div class="space-y-1.5">
+                                <!-- 單數 -->
+                                <div class="word-form-item bg-white/95 py-2 px-3 rounded-xl border border-amber-100/70 shadow-2xs cursor-pointer hover:border-amber-400 active:scale-98 transition-all flex items-center justify-between group" onclick="playAudio('${esc(getFirstFormToken(forms.nounForms.singular))}')" title="點擊聆聽單數發音">
+                                    <div class="flex items-center gap-2.5 min-w-0 flex-wrap">
+                                        <span class="text-gray-600 bg-gray-100/90 dark:bg-slate-800 dark:text-gray-300 px-2 py-0.5 rounded-md text-[10px] font-semibold shrink-0">單數 Singular</span>
+                                        <div class="flex items-center gap-1.5 flex-wrap">
+                                            ${renderFormTokensHtml(forms.nounForms.singular, 'text-gray-900')}
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-1 text-amber-400 group-hover:text-amber-600 shrink-0 ml-2">
+                                        <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217z" clip-rule="evenodd" /></svg>
+                                    </div>
                                 </div>
-                                <div class="bg-white/95 p-2.5 rounded-xl border border-amber-200/60 shadow-2xs cursor-pointer hover:border-amber-400 active:scale-95 transition-all flex flex-col justify-between" onclick="playAudio('${esc(forms.nounForms.plural)}')">
-                                    <span class="text-amber-800 block text-[10px] font-semibold mb-0.5">複數 (Plural)</span>
-                                    <span class="font-bold text-amber-700 font-mono text-xs sm:text-sm truncate">${esc(forms.nounForms.plural)}</span>
+
+                                <!-- 複數 -->
+                                <div class="word-form-item bg-white/95 py-2 px-3 rounded-xl border border-amber-100/70 shadow-2xs cursor-pointer hover:border-amber-400 active:scale-98 transition-all flex items-center justify-between group" onclick="playAudio('${esc(getFirstFormToken(forms.nounForms.plural))}')" title="點擊聆聽複數發音">
+                                    <div class="flex items-center gap-2.5 min-w-0 flex-wrap">
+                                        <span class="text-amber-800 bg-amber-100/80 dark:bg-amber-950/70 dark:text-amber-400 px-2 py-0.5 rounded-md text-[10px] font-semibold shrink-0">複數 Plural</span>
+                                        <div class="flex items-center gap-1.5 flex-wrap">
+                                            ${renderFormTokensHtml(forms.nounForms.plural, 'text-amber-700')}
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-1 text-amber-400 group-hover:text-amber-600 shrink-0 ml-2">
+                                        <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217z" clip-rule="evenodd" /></svg>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     `;
                 }
             }
-
             // 搭配詞區塊 HTML
             let collocationsHtml = '';
             if (collocations && collocations.length > 0) {

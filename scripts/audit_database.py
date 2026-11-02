@@ -148,6 +148,15 @@ for (const [en, item] of allWordsMap.entries()) {
         if (irregInflected.has(en)) {
             errors.push(`屈折動詞誤產生規則三態: ${en} -> ${forms.verbForms.past}`);
         }
+        if (/eee/.test(forms.verbForms.past) || /eee/.test(forms.verbForms.ing)) {
+            errors.push(`-ee 動詞誤生三個 e: ${en} -> ${forms.verbForms.past} / ${forms.verbForms.ing}`);
+        }
+        if (['panic', 'picnic', 'traffic', 'mimic'].includes(en) && !forms.verbForms.past.endsWith('cked')) {
+            errors.push(`-ic 動詞漏加 k: ${en} -> ${forms.verbForms.past}`);
+        }
+        if (sandbox.FINAL_STRESS_DOUBLING_VERBS.has(en) && !forms.verbForms.past.endsWith(en[en.length - 1] + en[en.length - 1] + 'ed')) {
+            errors.push(`重音在後雙音節動詞漏重複字尾: ${en} -> ${forms.verbForms.past}`);
+        }
     }
     if (forms.adjForms) {
         if (forms.adjForms.base !== en) {
@@ -156,6 +165,9 @@ for (const [en, item] of allWordsMap.entries()) {
         if (!forms.adjForms.comp.startsWith('more ') && /(ful|less|ous|ive|able|ible|al|ic|ish|ant|ent|ed|ing)$/.test(en) && !['early', 'simple', 'humble', 'gentle', 'noble', 'subtle'].includes(en)) {
             errors.push(`派生字尾形容詞誤加 -er/-est: ${en} -> ${forms.adjForms.comp}`);
         }
+        if (sandbox.NON_GRADABLE_ADJS.has(en)) {
+            errors.push(`不可分級形容詞誤生比較級: ${en} -> ${forms.adjForms.comp}`);
+        }
     }
     if (forms.nounForms) {
         if (forms.nounForms.singular !== en) {
@@ -163,6 +175,9 @@ for (const [en, item] of allWordsMap.entries()) {
         }
         if (en.endsWith('s') && !en.endsWith('ss') && !sandbox.SINGULAR_S_NOUNS.has(en) && !sandbox.IRREGULAR_PLURALS[en]) {
             errors.push(`字尾 -s 名詞誤加 -es: ${en} -> ${forms.nounForms.plural}`);
+        }
+        if (sandbox.UNCOUNTABLE_AND_COLLECTIVE_NOUNS.has(en)) {
+            errors.push(`不可數/集合名詞誤生複數: ${en} -> ${forms.nounForms.plural}`);
         }
     }
     const cols = sandbox.getWordCollocations(en, item);
@@ -175,18 +190,44 @@ for (const [en, item] of allWordsMap.entries()) {
         }
     }
     const syns = sandbox.getWordSynonyms(en, item);
+    const ants = sandbox.getWordAntonyms(en);
     const synIndex = sandbox.initSemanticSynonymIndex();
     const wInfo = synIndex.wordInfo.get(en);
+    const wPosSet = wInfo ? new Set(wInfo.segments.map(seg => seg.pos)) : new Set();
     const explicitSet = new Set([
         ...((typeof sandbox.SYN_ANT_DB !== 'undefined' && sandbox.SYN_ANT_DB[en] && sandbox.SYN_ANT_DB[en].syn) || []).map(s => s.toLowerCase()),
         ...((sandbox.CORE_WORD_SYNONYMS[en] || []).map(s => s.toLowerCase()))
     ]);
     for (const s of syns) {
+        if (!/^[a-zA-Z\s'-]+$/.test(s)) {
+            errors.push(`同義詞含殘缺括號或異常符號: [${en}] -> "${s}"`);
+        }
         const sLower = s.toLowerCase();
-        if (explicitSet.has(sLower)) continue;
         const cInfo = synIndex.wordInfo.get(sLower);
-        if (wInfo && cInfo && wInfo.primaryPos !== cInfo.primaryPos) {
-            errors.push(`同義詞跨詞性錯配: [${en} (${wInfo.primaryPos})] 誤配 "${s} (${cInfo.primaryPos})"`);
+        if (!wInfo || !cInfo) continue;
+        if (!explicitSet.has(sLower) && wInfo.primaryPos !== cInfo.primaryPos) {
+            errors.push(`語意推論同義詞跨詞性錯配: [${en} (${wInfo.primaryPos})] 誤配 "${s} (${cInfo.primaryPos})"`);
+        } else if (explicitSet.has(sLower)) {
+            const cPosSet = new Set(cInfo.segments.map(seg => seg.pos));
+            let hasCommon = false;
+            for (const p of wPosSet) if (cPosSet.has(p)) hasCommon = true;
+            if (!hasCommon && wPosSet.size > 0 && cPosSet.size > 0) {
+                errors.push(`字典同義詞完全無共同詞性: [${en} (${[...wPosSet]})] 誤配 "${s} (${[...cPosSet]})"`);
+            }
+        }
+    }
+    for (const a of ants) {
+        if (!/^[a-zA-Z\s'-]+$/.test(a)) {
+            errors.push(`反義詞含殘缺括號或異常符號: [${en}] -> "${a}"`);
+        }
+        const aLower = a.toLowerCase();
+        const cInfo = synIndex.wordInfo.get(aLower);
+        if (!wInfo || !cInfo) continue;
+        const cPosSet = new Set(cInfo.segments.map(seg => seg.pos));
+        let hasCommon = false;
+        for (const p of wPosSet) if (cPosSet.has(p)) hasCommon = true;
+        if (!hasCommon && wPosSet.size > 0 && cPosSet.size > 0) {
+            errors.push(`反義詞完全無共同詞性: [${en} (${[...wPosSet]})] 誤配 "${a} (${[...cPosSet]})"`);
         }
     }
 }
@@ -194,14 +235,13 @@ const curiousSyns = sandbox.getWordSynonyms('curious');
 if (curiousSyns.includes('wonder') || !curiousSyns.includes('inquisitive') || !curiousSyns.includes('inquiring')) {
     errors.push(`curious 同義詞異常: ${JSON.stringify(curiousSyns)}`);
 }
-console.log(JSON.stringify({ totalUnique: allWordsMap.size, errors, sampleSyns: {
-    curious: curiousSyns,
-    inquisitive: sandbox.getWordSynonyms('inquisitive'),
-    inquiring: sandbox.getWordSynonyms('inquiring'),
-    death: sandbox.getWordSynonyms('death'),
-    area: sandbox.getWordSynonyms('area'),
-    write: sandbox.getWordSynonyms('write')
-} }));
+for (const nonAdj of ['school', 'house', 'desk', 'daughter', 'those', 'which', 'ten', 'put', 'think', 'best', 'more']) {
+    const item = allWordsMap.get(nonAdj);
+    if (item && sandbox.computeWordForms(nonAdj, item.zh).adjForms) {
+        errors.push(`非形容詞誤生比較級: ${nonAdj}`);
+    }
+}
+console.log(JSON.stringify({ totalUnique: allWordsMap.size, errors }));
 """
     res = subprocess.run(
         ['node', '-e', node_script],

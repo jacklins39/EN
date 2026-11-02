@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261102V9';
+        const APP_BUILD_VERSION = '20261102V10';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -63,20 +63,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261102V9"></script>
-    <script src="toeic_data.js?v=20261102V9"></script>
-    <script src="jh_data.js?v=20261102V9"></script>
-    <script src="listening_data.js?v=20261102V9"></script>
-    <script src="listening_words_data.js?v=20261102V9"></script>
-    <script src="uk_phonetics_manifest.js?v=20261102V9"></script>
-    <script src="words_audio_manifest.js?v=20261102V9"></script>
-    <script src="examples_audio_manifest.js?v=20261102V9"></script>
-    <script src="zh_audio_manifest.js?v=20261102V9"></script>
-    <script src="collocations_audio_manifest.js?v=20261102V9"></script>
-    <script src="syn_ant_data.js?v=20261102V9"></script>
-    <script src="synonyms_unit8_data.js?v=20261102V9"></script>
-    <script src="examples_unit9_data.js?v=20261102V9"></script>
-    <script src="game_whack.js?v=20261102V9"></script>
+    <script src="words_data.js?v=20261102V10"></script>
+    <script src="toeic_data.js?v=20261102V10"></script>
+    <script src="jh_data.js?v=20261102V10"></script>
+    <script src="listening_data.js?v=20261102V10"></script>
+    <script src="listening_words_data.js?v=20261102V10"></script>
+    <script src="uk_phonetics_manifest.js?v=20261102V10"></script>
+    <script src="words_audio_manifest.js?v=20261102V10"></script>
+    <script src="examples_audio_manifest.js?v=20261102V10"></script>
+    <script src="zh_audio_manifest.js?v=20261102V10"></script>
+    <script src="collocations_audio_manifest.js?v=20261102V10"></script>
+    <script src="syn_ant_data.js?v=20261102V10"></script>
+    <script src="synonyms_unit8_data.js?v=20261102V10"></script>
+    <script src="examples_unit9_data.js?v=20261102V10"></script>
+    <script src="game_whack.js?v=20261102V10"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -8677,6 +8677,49 @@
             "withhold": { past: "withheld", pp: "withheld", ing: "withholding", s: "withholds" },
             "withstand": { past: "withstood", pp: "withstood", ing: "withstanding", s: "withstands" },
             "wring": { past: "wrung", pp: "wrung", ing: "wringing", s: "wrings" },
+            "offset": { past: "offset", pp: "offset", ing: "offsetting", s: "offsets" },
+            "outrun": { past: "outran", pp: "outrun", ing: "outrunning", s: "outruns" },
+            "foresee": { past: "foresaw", pp: "foreseen", ing: "foreseeing", s: "foresees" },
+            "oversee": { past: "oversaw", pp: "overseen", ing: "overseeing", s: "oversees" },
+            "undergo": { past: "underwent", pp: "undergone", ing: "undergoing", s: "undergoes" },
+            "overtake": { past: "overtook", pp: "overtaken", ing: "overtaking", s: "overtakes" },
+            "overthrow": { past: "overthrew", pp: "overthrown", ing: "overthrowing", s: "overthrows" },
+            "uphold": { past: "upheld", pp: "upheld", ing: "upholding", s: "upholds" },
+            "mislead": { past: "misled", pp: "misled", ing: "misleading", s: "misleads" },
+            "mistake": { past: "mistook", pp: "mistaken", ing: "mistaking", s: "mistakes" },
+            "rebuild": { past: "rebuilt", pp: "rebuilt", ing: "rebuilding", s: "rebuilds" },
+            "rewrite": { past: "rewrote", pp: "rewritten", ing: "rewriting", s: "rewrites" },
+            "remake": { past: "remade", pp: "remade", ing: "remaking", s: "remakes" },
+            "retell": { past: "retold", pp: "retold", ing: "retelling", s: "retells" },
+            "rethink": { past: "rethought", pp: "rethought", ing: "rethinking", s: "rethinks" },
+            "redo": { past: "redid", pp: "redone", ing: "redoing", s: "redoes" },
+            "undo": { past: "undid", pp: "undone", ing: "undoing", s: "undoes" },
+            "outdo": { past: "outdid", pp: "outdone", ing: "outdoing", s: "outdoes" },
+            "overdo": { past: "overdid", pp: "overdone", ing: "overdoing", s: "overdoes" },
+            "outgrow": { past: "outgrew", pp: "outgrown", ing: "outgrowing", s: "outgrows" },
+            "outsell": { past: "outsold", pp: "outsold", ing: "outselling", s: "outsells" },
+            "outshine": { past: "outshone", pp: "outshone", ing: "outshining", s: "outshines" },
+            "oversleep": { past: "overslept", pp: "overslept", ing: "oversleeping", s: "oversleeps" },
+            "overspend": { past: "overspent", pp: "overspent", ing: "overspending", s: "overspends" },
+            "overeat": { past: "overate", pp: "overeaten", ing: "overeating", s: "overeats" },
+            "overhear": { past: "overheard", pp: "overheard", ing: "overhearing", s: "overhears" },
+            "repay": { past: "repaid", pp: "repaid", ing: "repaying", s: "repays" },
+            "unwind": { past: "unwound", pp: "unwound", ing: "unwinding", s: "unwinds" },
+            "input": { past: "input / inputted", pp: "input / inputted", ing: "inputting", s: "inputs" },
+            "output": { past: "output / outputted", pp: "output / outputted", ing: "outputting", s: "outputs" },
+            "forecast": { past: "forecast / forecasted", pp: "forecast / forecasted", ing: "forecasting", s: "forecasts" },
+            "rid": { past: "rid", pp: "rid", ing: "ridding", s: "rids" },
+            "bid": { past: "bid / bade", pp: "bid / bidden", ing: "bidding", s: "bids" },
+            "wed": { past: "wed / wedded", pp: "wed / wedded", ing: "wedding", s: "weds" },
+            "tread": { past: "trod", pp: "trodden / trod", ing: "treading", s: "treads" },
+            "stride": { past: "strode", pp: "stridden", ing: "striding", s: "strides" },
+            "forsake": { past: "forsook", pp: "forsaken", ing: "forsaking", s: "forsakes" },
+            "thrive": { past: "thrived / throve", pp: "thrived / thriven", ing: "thriving", s: "thrives" },
+            "plead": { past: "pleaded / pled", pp: "pleaded / pled", ing: "pleading", s: "pleads" },
+            "dwell": { past: "dwelt / dwelled", pp: "dwelt / dwelled", ing: "dwelling", s: "dwells" },
+            "saw": { past: "sawed", pp: "sawn / sawed", ing: "sawing", s: "saws" },
+            "sow": { past: "sowed", pp: "sown / sowed", ing: "sowing", s: "sows" },
+            "mow": { past: "mowed", pp: "mown / mowed", ing: "mowing", s: "mows" }
         };
 
         const IRREGULAR_PLURALS = {
@@ -8709,7 +8752,34 @@
             "fungus": "fungi",
             "cactus": "cacti",
             "phenomenon": "phenomena",
-            "criterion": "criteria"
+            "criterion": "criteria",
+            "potato": "potatoes",
+            "tomato": "tomatoes",
+            "hero": "heroes",
+            "echo": "echoes",
+            "veto": "vetoes",
+            "embargo": "embargoes",
+            "torpedo": "torpedoes",
+            "volcano": "volcanoes / volcanos",
+            "tornado": "tornadoes / tornados",
+            "mosquito": "mosquitoes / mosquitos",
+            "cargo": "cargoes / cargos",
+            "motto": "mottoes / mottos",
+            "mango": "mangoes / mangos",
+            "buffalo": "buffaloes / buffalos",
+            "zero": "zeros / zeroes",
+            "self": "selves",
+            "elf": "elves",
+            "scarf": "scarves / scarfs",
+            "hoof": "hooves / hoofs",
+            "wharf": "wharves / wharfs",
+            "dwarf": "dwarfs / dwarves",
+            "aircraft": "aircraft (單複同形)",
+            "spacecraft": "spacecraft (單複同形)",
+            "salmon": "salmon (單複同形)",
+            "trout": "trout (單複同形)",
+            "squid": "squid (單複同形)",
+            "offspring": "offspring (單複同形)"
         };
 
         const IRREGULAR_COMPS = {
@@ -9096,24 +9166,27 @@
             return null;
         }
 
-        // 不可分級形容詞、分類詞與絕對形容詞黑名單：不具備比較級與最高級 (-er/-est 或 more/most)
+        // 不可分級形容詞、分類詞、序數、國籍、方向與已比較級/最高級黑名單：不具備比較級與最高級 (-er/-est 或 more/most)
         const NON_GRADABLE_ADJS = new Set([
             "born", "dead", "alive", "pregnant", "unique", "perfect", "main", "chief", "principal",
-            "final", "last", "first", "single", "double", "triple", "whole", "entire", "total",
-            "left", "right", "male", "female", "daily", "weekly", "monthly", "yearly", "annual",
+            "final", "last", "first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth",
+            "single", "double", "triple", "multiple", "whole", "entire", "total",
+            "left", "right", "male", "female", "daily", "weekly", "monthly", "yearly", "annual", "hourly",
             "used", "broke", "drunk", "blind", "deaf", "wooden", "golden", "woolen", "medical", "chemical",
-            "physical", "economic", "political", "atomic", "solar", "nuclear", "fatal", "mortal",
+            "physical", "economic", "political", "atomic", "solar", "lunar", "nuclear", "fatal", "mortal",
             "correct", "wrong", "false", "true", "impossible", "infinite", "eternal", "extreme", "absolute",
-            "vertical", "horizontal", "square", "triangular", "circular", "oral", "verbal",
+            "vertical", "horizontal", "square", "triangular", "circular", "oral", "verbal", "mental",
             "online", "offline", "outdoor", "indoor", "overseas", "universal", "automatic", "electronic",
             "digital", "electric", "electrical", "historical", "scientific", "legal", "illegal",
-            "national", "international", "domestic", "foreign", "public", "private", "social",
-            "official", "formal", "informal", "primary", "secondary", "native", "military",
-            "civilian", "financial", "commercial", "industrial", "agricultural", "environmental",
+            "national", "international", "regional", "local", "global", "urban", "rural", "domestic", "foreign", "public", "private", "social",
+            "official", "formal", "informal", "primary", "secondary", "elementary", "native", "military",
+            "civil", "civilian", "criminal", "royal", "financial", "commercial", "industrial", "agricultural", "environmental",
             "cultural", "educational", "academic", "traditional", "modern", "contemporary",
-            "ancient", "medieval", "future", "past", "present", "absent", "done", "bound", "shot", "bit", "ground",
-            "lay", "live", "own", "read", "shut", "both", "less", "off", "equal", "five",
-            "inside", "outside", "vegetable", "work", "teenage", "magic", "metal", "steam", "trial",
+            "ancient", "medieval", "future", "past", "present", "current", "former", "latter", "previous", "prior", "subsequent", "initial",
+            "absent", "done", "bound", "shot", "bit", "ground",
+            "lay", "live", "own", "read", "shut", "both", "less", "least", "more", "most", "better", "best", "worse", "worst", "fewer", "fewest", "elder", "eldest", "farther", "farthest", "further", "furthest",
+            "upper", "inner", "outer", "superior", "inferior", "senior", "junior", "major", "minor",
+            "off", "equal", "five", "inside", "outside", "vegetable", "work", "teenage", "magic", "metal", "steam", "trial",
             "found", "ideal", "moral", "panic", "representative", "adjective", "crack", "detective",
             "landscape", "objective", "oval", "pedal", "relative", "civic", "coral", "ethic",
             "executive", "locomotive", "motive", "olive", "rival", "sneak", "zip", "administrative",
@@ -9128,7 +9201,35 @@
             "invisible", "negotiable", "payable", "radioactive", "retainable", "unable", "unacceptable",
             "unbeatable", "unimaginable", "written", "stuck", "swollen", "laid", "swept", "woven",
             "sought", "burnt", "awake", "asleep", "afraid", "alike", "alone", "aware", "ashamed",
-            "due", "exempt", "worth", "liable", "prone", "parallel", "supreme", "ultimate", "unanimous"
+            "due", "exempt", "worth", "liable", "prone", "parallel", "supreme", "ultimate", "unanimous",
+            "next", "same", "other", "another", "each", "every", "any", "some", "all", "either", "neither", "no", "none", "such",
+            "very", "mere", "sole", "only", "prime", "middle", "mid", "west", "east", "north", "south",
+            "eastern", "western", "northern", "southern", "nearby", "county", "joint", "pop", "dairy",
+            "spare", "stray", "neon", "swiss", "greek", "thai", "american", "british", "chinese", "japanese", "french", "german", "italian", "spanish", "korean", "russian", "indian", "canadian", "australian", "european", "asian", "african",
+            "null", "lone", "ok", "fraught", "gone", "blown", "flown", "sawn", "spun", "aged"
+        ]);
+
+        // 兼具其他首要詞性（如 adv./v./n./det.）但本身亦為高頻可分級形容詞之白名單（排除 school, house, desk, daughter, those, which, ten 等假形容詞）
+        const CORE_DUAL_POS_GRADABLE_ADJS = new Set([
+            "clean", "clear", "close", "cold", "cool", "dark", "deep", "dirty", "dry", "early", "empty",
+            "far", "fast", "fat", "few", "fine", "firm", "flat", "free", "fresh", "full", "grand", "great",
+            "green", "gray", "grey", "hard", "high", "hot", "kind", "late", "light", "little", "long",
+            "loose", "low", "many", "mean", "much", "narrow", "near", "neat", "new", "nice", "odd",
+            "old", "open", "pale", "plain", "poor", "pretty", "quiet", "quick", "rare", "raw", "ready",
+            "rich", "rough", "round", "safe", "scarce", "sharp", "short", "shy", "sick", "silly",
+            "simple", "slim", "slow", "small", "smart", "smooth", "soft", "sore", "sour", "steep",
+            "stiff", "still", "straight", "strange", "strict", "strong", "sweet", "tall", "tame",
+            "thick", "thin", "tight", "tiny", "tough", "vague", "warm", "weak", "wet", "wide",
+            "wild", "wise", "young", "calm", "cheap", "damp", "dear", "dull", "faint", "fair",
+            "fierce", "fond", "foul", "frank", "gentle", "glad", "gloomy", "grave", "grim", "gross",
+            "harsh", "hollow", "humble", "idle", "jolly", "keen", "lame", "large", "lazy", "lean",
+            "lively", "lonely", "lovely", "lush", "mad", "meek", "merry", "mild", "moist", "mute",
+            "nasty", "noble", "numb", "petty", "polite", "proud", "prompt", "quaint", "rash", "ripe",
+            "rude", "sad", "sane", "secure", "severe", "shallow", "sheer", "shrill", "shrewd",
+            "sincere", "slack", "slender", "slight", "sly", "sober", "solemn", "sound", "sparse",
+            "stable", "stale", "stark", "stout", "stern", "stubborn", "subtle", "sure", "swift",
+            "tan", "tart", "taut", "tender", "tense", "terse", "tidy", "timid", "trim", "ugly",
+            "upright", "vast", "vile", "vivid", "vulgar", "wary", "weary", "wicked", "witty", "worthy"
         ]);
 
         // 動詞屈折型態黑名單（過去式/過去分詞/第三人稱單數等）：不作為原形動詞推導規則變化 (避免產生 borned, broked, writtened, stucked, hassed 等畸形詞)
@@ -9141,7 +9242,7 @@
                 "chosen", "spoken", "stolen", "broken", "woken", "eaten", "fallen", "given",
                 "taken", "shaken", "forsaken", "forgotten", "gotten", "seen", "gone", "known",
                 "grown", "blown", "thrown", "drawn", "withdrawn", "thought", "used", "learned",
-                "offered", "bent", "rose", "vied", "burnt", "got", "has", "does", "goes", "is", "are", "am"
+                "offered", "bent", "rose", "vied", "burnt", "got", "has", "does", "goes", "is", "are", "am", "aged"
             ]);
             for (const [base, vf] of Object.entries(IRREGULAR_VERBS)) {
                 for (const fld of ["past", "pp", "ing", "s"]) {
@@ -9156,6 +9257,35 @@
             }
             return set;
         })();
+
+        // 情態助動詞與不作規則動詞變化之詞彙黑名單（杜絕 shalled, bigged, larged, gladded, othered, overred 等）
+        const NON_CONJUGATED_VERB_WORDS = new Set([
+            "can", "could", "may", "might", "must", "shall", "should", "will", "would", "ought",
+            "big", "large", "glad", "sad", "sick", "other", "over", "except", "till", "until", "near"
+        ]);
+
+        // 重音在最後音節、需重複字尾子音之多音節 C-V-C 動詞白名單（大考必考拼字：occurred, preferred, admitted, controlled, equipped 等）
+        const FINAL_STRESS_DOUBLING_VERBS = new Set([
+            "occur", "recur", "incur", "concur", "prefer", "refer", "infer", "confer", "defer", "deter", "transfer",
+            "admit", "commit", "permit", "submit", "transmit", "omit", "emit", "regret", "control", "patrol",
+            "compel", "expel", "impel", "propel", "repel", "rebel", "excel", "equip", "kidnap", "worship",
+            "format", "overlap", "unwrap", "unplug", "unzip", "outwit", "acquit", "allot", "embed"
+        ]);
+
+        // 大考必考「不可數名詞」與「集合名詞」黑名單（嚴禁誤加 -s / -es 產生 informations, furnitures, equipments, homeworks, advices, cattles, polices 等錯誤）
+        const UNCOUNTABLE_AND_COLLECTIVE_NOUNS = new Set([
+            "information", "furniture", "equipment", "homework", "housework", "teamwork", "advice",
+            "luggage", "baggage", "knowledge", "jewelry", "scenery", "machinery", "clothing", "poetry",
+            "laughter", "fun", "evidence", "research", "progress", "software", "hardware", "underwear",
+            "footwear", "tableware", "silverware", "mail", "postage", "garbage", "rubbish", "trash",
+            "litter", "foliage", "chaos", "courage", "anger", "greed", "pride", "shame", "grief",
+            "relief", "luck", "health", "wealth", "poverty", "honesty", "bravery", "safety", "privacy",
+            "gravity", "electricity", "oxygen", "hydrogen", "nitrogen", "carbon", "helium", "gold",
+            "silver", "copper", "dust", "dirt", "mud", "sand", "snow", "rain", "sunshine", "sunlight",
+            "moonlight", "daylight", "lightning", "thunder", "weather", "climate", "traffic", "pollution",
+            "inflation", "unemployment", "recreation", "leisure", "hospitality", "violence", "peace",
+            "welfare", "wildlife", "livestock", "cattle", "poultry", "clergy", "police", "staff"
+        ]);
 
         // 字尾為單一 -s (非 -ss) 之可數單數名詞白名單：其餘字尾為 -s 之詞（如 news, physics, ethics, means, series, species, headphones, clothes 或已複數詞 cars）一律不加 -es
         const SINGULAR_S_NOUNS = new Set([
@@ -9200,10 +9330,15 @@
             const hasN = /(^|[^a-z])n\./.test(p);
             const hasAdj = /(^|[^a-z])(adj|a)\./.test(p);
 
+            // 取得第一個首要詞性 (firstPos)，避免次要生僻詞性（如 school adj.、sad n.、big v.）誤生畸形詞形變化
+            const firstPosMatch = p.match(/(?:^|[；;]\s*)((?:adj|adv|prep|conj|pron|int|num|det|art|aux|modal\s*v|ph|vi|vt|[avnd])\.)/i);
+            const firstPos = firstPosMatch ? normalizePosForCrosslink(firstPosMatch[1]) : "";
+
             // 1. 動詞變化
             const isInflectedOrParticiple = PURE_INFLECTED_VERB_FORMS.has(w) ||
+                NON_CONJUGATED_VERB_WORDS.has(w) ||
                 (w.endsWith("ing") && w.length > 4 && !IRREGULAR_VERBS[w]) ||
-                (w.endsWith("ed") && w.length > 4 && !w.endsWith("eed") && !IRREGULAR_VERBS[w]);
+                (w.endsWith("ed") && w.length >= 4 && !w.endsWith("eed") && !w.endsWith("red") && !w.endsWith("bed") && !w.endsWith("wed") && !w.endsWith("fed") && !w.endsWith("led") && !w.endsWith("shed") && !w.endsWith("sled") && !IRREGULAR_VERBS[w]);
 
             if (IRREGULAR_VERBS[w]) {
                 forms.isVerb = true;
@@ -9229,18 +9364,30 @@
                 if (w.endsWith("ie")) {
                     ingForm = w.slice(0, -2) + "ying";
                     edForm = w + "d";
-                } else if (w.endsWith("e") && !w.endsWith("ee")) {
+                } else if (/(ee|ye|oe)$/.test(w)) {
+                    // 字尾為 -ee / -ye / -oe（如 free, agree, guarantee, dye, eye, tiptoe）：過去式加 d，現在分詞直接加 ing
+                    ingForm = w + "ing";
+                    edForm = w + "d";
+                } else if (w.endsWith("e")) {
                     ingForm = w.slice(0, -1) + "ing";
                     edForm = w + "d";
+                } else if (w.endsWith("ic") && ["panic", "picnic", "traffic", "mimic", "frolic"].includes(w)) {
+                    // 字尾為 -ic 之動詞（panic, picnic, traffic, mimic）：先加 k 再加 ed / ing
+                    ingForm = w + "king";
+                    edForm = w + "ked";
                 } else if (w.endsWith("y") && w.length > 1 && !isVowel(w[w.length - 2])) {
                     edForm = w.slice(0, -1) + "ied";
-                } else if (w.length >= 3) {
+                } else if (FINAL_STRESS_DOUBLING_VERBS.has(w)) {
+                    const c2 = w[w.length - 1];
+                    ingForm = w + c2 + "ing";
+                    edForm = w + c2 + "ed";
+                } else if (w.length >= 3 && w.length <= 4) {
                     const c1 = w[w.length - 3];
                     const v = w[w.length - 2];
                     const c2 = w[w.length - 1];
-                    // 僅單音節或重音在字尾之短字重複字尾 (排除 borrow, disappear, offer, open, visit, happen, listen, develop 等)
-                    const noDouble = ["borrow", "disappear", "offer", "open", "visit", "happen", "listen", "develop", "enter", "order", "answer", "suffer", "cover", "deliver", "consider", "remember", "discover", "recover"];
-                    if (!noDouble.includes(w) && w.length <= 4 && !isVowel(c1) && isVowel(v) && !isVowel(c2) && !"wxy".includes(c2)) {
+                    // 單音節 C-V-C 短字重複字尾（排除母音開頭之雙音節 V-C-V-C 字如 edit, exit, even, iron, item, open, omen, icon, idol, atom, acid, unit, oval, echo）
+                    const isTwoSyllableVCVC = w.length === 4 && isVowel(w[0]);
+                    if (!isTwoSyllableVCVC && !isVowel(c1) && isVowel(v) && !isVowel(c2) && !"wxy".includes(c2)) {
                         ingForm = w + c2 + "ing";
                         edForm = w + c2 + "ed";
                     }
@@ -9255,8 +9402,21 @@
                 };
             }
 
-            // 2. 名詞複數變化
-            if (hasN || (IRREGULAR_PLURALS[w] && !p)) {
+            // 2. 名詞複數變化（排除不可數名詞與集合名詞，以及僅有生僻次要名詞義之純形容詞/動詞如 sad, strong, weak, see, sit, listen, eat, tell）
+            const OBSCURE_SECONDARY_NOUN_BLOCKLIST = new Set([
+                "sad", "real", "strong", "weak", "poor", "rich", "old", "young", "new", "bad", "good",
+                "best", "worst", "better", "worse", "shy", "sick", "silly", "simple", "smart", "soft",
+                "stupid", "tiny", "yummy", "ready", "free", "pretty", "quiet", "safe", "small", "sour",
+                "warm", "wide", "calm", "damp", "faint", "flat", "loose", "odd", "pale", "queer", "raw",
+                "shallow", "stale", "steep", "sticky", "stiff", "bare", "dim", "empty", "tidy", "noble",
+                "rough", "sore", "steady", "mild", "tough", "vast", "slight", "spare", "cozy", "hardy",
+                "hearty", "nasty", "stout", "sturdy", "weird", "worthy", "blond", "blonde", "gay", "gross",
+                "nude", "prior", "sole", "stray", "bleak", "frail", "lush", "chaste", "scanty", "jerky",
+                "fifth", "fourth", "jake", "wily", "mid", "brittle", "null", "come", "die", "eat", "enter",
+                "follow", "give", "listen", "put", "read", "say", "see", "serve", "shut", "sing", "sit",
+                "spend", "take", "teach", "tell", "think", "weigh", "know"
+            ]);
+            if ((hasN || (IRREGULAR_PLURALS[w] && !p)) && !UNCOUNTABLE_AND_COLLECTIVE_NOUNS.has(w) && !(firstPos !== "n" && OBSCURE_SECONDARY_NOUN_BLOCKLIST.has(w))) {
                 if (IRREGULAR_PLURALS[w]) {
                     forms.isNoun = true;
                     forms.nounForms = {
@@ -9284,13 +9444,17 @@
                 }
             }
 
-            // 3. 形容詞比較級與最高級
-            if (NON_GRADABLE_ADJS.has(w)) {
+            // 3. 形容詞比較級與最高級（僅限首要詞性為 adj. 或明確列入可分級雙詞性形容詞白名單，徹底杜絕 school -> schooler、house -> houser、those -> thoser、daughter -> more daughter）
+            const isGradableAdjCandidate = !NON_GRADABLE_ADJS.has(w) &&
+                !PURE_INFLECTED_VERB_FORMS.has(w) &&
+                (IRREGULAR_COMPS[w] || (hasAdj && (firstPos === "adj" || firstPos === "" || CORE_DUAL_POS_GRADABLE_ADJS.has(w))));
+
+            if (!isGradableAdjCandidate) {
                 forms.adjForms = null;
             } else if (IRREGULAR_COMPS[w]) {
                 forms.isAdj = true;
                 forms.adjForms = IRREGULAR_COMPS[w];
-            } else if (hasAdj) {
+            } else {
                 forms.isAdj = true;
                 // 計算音節數（扣除字尾不發音 e 後之母音群數量）
                 const stemForSyllable = w.length > 3 ? w.replace(/(?<=[^aeiouy])e$/, "") : w;
@@ -9348,15 +9512,26 @@
         function getWordCollocations(word, currentItem = null) {
             const rawW = (word || '').trim().toLowerCase();
             const list = [];
-            if (CORE_WORD_COLLOCATIONS[rawW]) {
-                list.push(...CORE_WORD_COLLOCATIONS[rawW]);
-            }
-            if (list.length < 4 && typeof vocabularyDB !== 'undefined') {
+            const pushCollocations = (arr) => {
+                if (!Array.isArray(arr)) return;
+                for (const item of arr) {
+                    if (item && item.en && !list.find(c => c.en.toLowerCase() === item.en.toLowerCase())) {
+                        list.push({ en: item.en, zh: item.zh || '' });
+                    }
+                }
+            };
+
+            // 1. 優先放入精選搭配詞庫 (僅取當前單字本身，嚴禁將 born 強制還原為 bear 導致混入 teddy bear 等錯誤片語)
+            pushCollocations(CORE_WORD_COLLOCATIONS[rawW]);
+
+            // 2. 從字庫中搜尋包含此單字的片語 (如 unit 7 片語庫)
+            if (typeof vocabularyDB !== 'undefined' && Array.isArray(vocabularyDB) && list.length < 4) {
                 for (const item of vocabularyDB) {
                     if (list.length >= 4) break;
                     if (!item || !item.en) continue;
-                    const enLower = item.en.toLowerCase();
-                    const tokens = enLower.split(/\s+/);
+                    const enLower = item.en.toLowerCase().trim();
+                    if (enLower === rawW) continue;
+                    const tokens = enLower.split(/[\s\-,.;!?()]+/);
                     // 僅匹配包含當前單字的片語，嚴禁跨單字抓取其他原形動詞片語 (避免 born 誤抓 bear 之 teddy bear 等)
                     if (enLower.includes(' ') && tokens.includes(rawW) && !list.find(c => c.en.toLowerCase() === enLower)) {
                         const parsed = splitPosAndZh(item.zh, item.pos);
@@ -9398,13 +9573,12 @@
                         if (!part || part.length < 2 || SEMANTIC_STOP_WORDS.has(part)) continue;
                         if (!tokens.includes(part)) tokens.push(part);
                     }
-                    if (tokens.length > 0) {
-                        segments.push({
-                            pos,
-                            tokens,
-                            primaryTokens: tokens.slice(0, 2)
-                        });
-                    }
+                    // 即使 tokens 因單字元或停用詞被過濾（如 bunch 的「束、群」或 excellent 的「優秀的」），仍須保留該詞性段落以確保首要詞性正確
+                    segments.push({
+                        pos,
+                        tokens,
+                        primaryTokens: tokens.slice(0, 2)
+                    });
                 }
             } else {
                 const m = zhStr.trim().match(/^(\(?[a-zA-Z./]+\.?\)?)\s*[:：.]?\s*(.*)$/);
@@ -9414,9 +9588,7 @@
                     if (body && !/(的過去式|的過去分詞|的現在分詞|的複數|的第三人稱單數|的比較級|的最高級|的變體|的動名詞|形式)/.test(body)) {
                         body = body.replace(/[\(\[\（\【].*?[\)\]\）\】]/g, '');
                         const tokens = body.split(/[，,、/;\s]+/).map(s => s.trim()).filter(s => s.length >= 2 && !SEMANTIC_STOP_WORDS.has(s));
-                        if (tokens.length > 0) {
-                            segments.push({ pos, tokens: [...new Set(tokens)], primaryTokens: tokens.slice(0, 2) });
-                        }
+                        segments.push({ pos, tokens: [...new Set(tokens)], primaryTokens: tokens.slice(0, 2) });
                     }
                 }
             }
@@ -9447,7 +9619,8 @@
                     segments
                 });
 
-                // 排除純屈折動詞或分詞作為動詞同義詞候選
+                // 排除含括號/縮寫點號之詞條（如 forward(s), Mr., Inc.）以及純屈折動詞或分詞作為同義詞候選
+                if (!/^[a-z]+$/.test(enLower)) continue;
                 if (primaryPos === 'v' && (PURE_INFLECTED_VERB_FORMS.has(enLower) || (enLower.endsWith('ing') && enLower.length > 4))) {
                     continue;
                 }
@@ -9470,7 +9643,19 @@
             const result = [];
             const seen = new Set([rawW]);
 
-            // 0. Yahoo / Oxford 權威落地字典庫優先 (僅取當前單字本身 rawW)
+            // 0. 核心精選同義詞庫最高優先 (人工精校覆寫，僅取當前單字本身 rawW)
+            const coreList = CORE_WORD_SYNONYMS[rawW];
+            if (coreList && Array.isArray(coreList)) {
+                for (const s of coreList) {
+                    const sLower = s.toLowerCase();
+                    if (!seen.has(sLower)) {
+                        seen.add(sLower);
+                        result.push(s);
+                    }
+                }
+            }
+
+            // 1. Yahoo / Oxford 權威落地字典庫次之 (僅取當前單字本身 rawW)
             if (typeof SYN_ANT_DB !== 'undefined') {
                 const dbEntry = SYN_ANT_DB[rawW];
                 if (dbEntry && Array.isArray(dbEntry.syn)) {
@@ -9480,18 +9665,6 @@
                             seen.add(sLower);
                             result.push(s);
                         }
-                    }
-                }
-            }
-
-            // 1. 核心精選同義詞庫優先 (僅取當前單字本身 rawW)
-            const coreList = CORE_WORD_SYNONYMS[rawW];
-            if (coreList && Array.isArray(coreList)) {
-                for (const s of coreList) {
-                    const sLower = s.toLowerCase();
-                    if (!seen.has(sLower)) {
-                        seen.add(sLower);
-                        result.push(s);
                     }
                 }
             }

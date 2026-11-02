@@ -20,12 +20,10 @@ const SYN_ANT_DB = {
   },
   "acceptance": {
     "syn": [
-      "receipt",
-      "receiving",
-      "taking",
-      "obtaining",
-      "acquiring",
-      "undertaking"
+      "approval",
+      "adoption",
+      "consent",
+      "admission"
     ]
   },
   "access": {
@@ -72,16 +70,13 @@ const SYN_ANT_DB = {
   "ache": {
     "syn": [
       "pain",
-      "dull pain",
       "pang",
       "twinge",
-      "throb",
-      "gnawing"
+      "throb"
     ],
     "ant": [
-      "joy",
-      "disinclination",
-      "rejoice"
+      "comfort",
+      "relief"
     ]
   },
   "achievement": {
@@ -137,14 +132,13 @@ const SYN_ANT_DB = {
   "admiration": {
     "syn": [
       "commendation",
-      "acclaim",
       "applause",
-      "approbation",
       "approval",
       "appreciation"
     ],
     "ant": [
-      "disgust"
+      "disgust",
+      "contempt"
     ]
   },
   "admission": {
@@ -245,7 +239,7 @@ const SYN_ANT_DB = {
   },
   "ahead": {
     "syn": [
-      "forward(s",
+      "forwards",
       "towards the front",
       "frontwards",
       "onwards",
@@ -296,7 +290,6 @@ const SYN_ANT_DB = {
   },
   "allowance": {
     "syn": [
-      "permitted amount/quantity",
       "allocation",
       "allotment",
       "quota",
@@ -323,8 +316,6 @@ const SYN_ANT_DB = {
   },
   "already": {
     "syn": [
-      "by this/that time",
-      "by now/then",
       "thus far",
       "so far",
       "hitherto",
@@ -455,14 +446,11 @@ const SYN_ANT_DB = {
       "carelessly",
       "heedlessly",
       "negligently",
-      "in a muddle",
-      "in a disorganized manner"
+      "in a muddle"
     ]
   },
   "apart": {
     "syn": [
-      "away from each other",
-      "distant from each other",
       "separately",
       "not together",
       "independently",
@@ -475,7 +463,7 @@ const SYN_ANT_DB = {
       "penthouse",
       "home unit",
       "crib",
-      "suite (of rooms",
+      "suite",
       "set of rooms"
     ]
   },
@@ -535,11 +523,9 @@ const SYN_ANT_DB = {
   },
   "arrangement": {
     "syn": [
-      "positioning",
-      "disposition",
-      "marshalling",
-      "ranging",
-      "ordering",
+      "preparation",
+      "plan",
+      "layout",
       "order"
     ]
   },
@@ -617,11 +603,10 @@ const SYN_ANT_DB = {
   },
   "ask": {
     "syn": [
-      "enquire (of",
+      "enquire",
       "query",
       "want to know",
       "question",
-      "put a question to",
       "interrogate"
     ],
     "ant": [
@@ -755,19 +740,14 @@ const SYN_ANT_DB = {
   "awash": {
     "syn": [
       "flooded",
-      "covered with water",
-      "under water",
       "submerged",
-      "engulfed",
-      "submersed"
+      "inundated"
     ]
   },
   "backward": {
     "syn": [
       "reverse",
-      "to/towards the rear",
       "rearward",
-      "to/towards the back",
       "behind one",
       "retrograde"
     ],
@@ -866,8 +846,7 @@ const SYN_ANT_DB = {
       "base",
       "point of departure",
       "beginning",
-      "premise",
-      "fundamental point/principle"
+      "premise"
     ]
   },
   "bathe": {
@@ -912,7 +891,6 @@ const SYN_ANT_DB = {
     "syn": [
       "come to be",
       "get to be",
-      "turn out to be",
       "grow",
       "get",
       "turn"
@@ -958,7 +936,6 @@ const SYN_ANT_DB = {
     "syn": [
       "fit in",
       "be suited to",
-      "have a rightful place",
       "have a home",
       "be part of",
       "go"
@@ -1052,8 +1029,7 @@ const SYN_ANT_DB = {
       "bloom",
       "flower",
       "be in flower",
-      "come into flower/blossom",
-      "open (out",
+      "open out",
       "burgeon"
     ],
     "ant": [
@@ -1150,7 +1126,7 @@ const SYN_ANT_DB = {
     "syn": [
       "mammary gland",
       "mamma",
-      "bosom(s",
+      "bosom",
       "bust",
       "chest",
       "boobs"
@@ -1251,10 +1227,10 @@ const SYN_ANT_DB = {
   },
   "bundle": {
     "syn": [
-      "tie (up",
+      "tie up",
       "tie together",
       "do up",
-      "pack (up",
+      "pack up",
       "pack together",
       "package"
     ],
@@ -1294,7 +1270,7 @@ const SYN_ANT_DB = {
   },
   "busy": {
     "syn": [
-      "occupied (in",
+      "occupied",
       "engaged in",
       "involved in",
       "employed in",
@@ -1640,12 +1616,9 @@ const SYN_ANT_DB = {
   },
   "clamped": {
     "syn": [
-      "brace",
-      "vice",
-      "press",
-      "clasp",
-      "fastener",
-      "bracket"
+      "fastened",
+      "fixed",
+      "secured"
     ]
   },
   "clarity": {
@@ -1678,9 +1651,7 @@ const SYN_ANT_DB = {
   "classification": {
     "syn": [
       "categorization",
-      "categorizing",
-      "classifying",
-      "classing",
+      "category",
       "grouping",
       "grading"
     ]
@@ -1731,7 +1702,7 @@ const SYN_ANT_DB = {
       "attire",
       "outfit",
       "array",
-      "rig (out",
+      "rig out",
       "turn out"
     ],
     "ant": [
@@ -1755,7 +1726,6 @@ const SYN_ANT_DB = {
       "chance",
       "serendipity",
       "fate",
-      "a twist of fate",
       "destiny"
     ]
   },
@@ -1817,7 +1787,6 @@ const SYN_ANT_DB = {
       "funny man",
       "funny woman",
       "comedienne",
-      "comedy actor/actress",
       "humorist"
     ]
   },
@@ -1863,11 +1832,9 @@ const SYN_ANT_DB = {
   "communication": {
     "syn": [
       "transmission",
-      "imparting",
-      "conveying",
-      "reporting",
-      "presenting",
-      "passing on"
+      "contact",
+      "message",
+      "correspondence"
     ]
   },
   "community": {
@@ -2023,7 +1990,6 @@ const SYN_ANT_DB = {
       "social code",
       "canon",
       "body of law",
-      "system of laws/rules",
       "bill of rights"
     ]
   },
@@ -2082,12 +2048,10 @@ const SYN_ANT_DB = {
   },
   "contemplation": {
     "syn": [
-      "viewing",
-      "regarding",
-      "examination",
-      "inspection",
+      "reflection",
+      "meditation",
       "observation",
-      "survey"
+      "examination"
     ]
   },
   "contest": {
@@ -2143,7 +2107,6 @@ const SYN_ANT_DB = {
   },
   "conviction": {
     "syn": [
-      "declaration/pronouncement of guilt",
       "sentence",
       "judgement",
       "belief",
@@ -2226,12 +2189,10 @@ const SYN_ANT_DB = {
   },
   "costings": {
     "syn": [
-      "be priced at",
-      "sell for",
-      "be valued at",
-      "fetch",
-      "come to",
-      "amount to"
+      "estimates",
+      "expenses",
+      "costs",
+      "pricing"
     ]
   },
   "coupon": {
@@ -2247,8 +2208,6 @@ const SYN_ANT_DB = {
   "crawl": {
     "syn": [
       "creep",
-      "go on all fours",
-      "move on hands and knees",
       "inch",
       "drag oneself along",
       "pull oneself along"
@@ -2328,13 +2287,11 @@ const SYN_ANT_DB = {
       "fall down",
       "fall to pieces",
       "fall apart",
-      "collapse",
-      "break down/up"
+      "collapse"
     ]
   },
   "crust": {
     "syn": [
-      "outer layer/part",
       "outside",
       "exterior",
       "heel",
@@ -2392,9 +2349,7 @@ const SYN_ANT_DB = {
   },
   "darken": {
     "syn": [
-      "grow dark/darker",
       "blacken",
-      "grow black/blacker",
       "dim",
       "grow dim",
       "cloud over"
@@ -2531,12 +2486,10 @@ const SYN_ANT_DB = {
   },
   "delegation": {
     "syn": [
-      "deputation",
-      "delegacy",
-      "legation",
-      "diplomatic) mission",
       "commission",
-      "delegates"
+      "mission",
+      "deputation",
+      "legation"
     ]
   },
   "deliver": {
@@ -2615,9 +2568,9 @@ const SYN_ANT_DB = {
   },
   "despite": {
     "syn": [
-      "although",
-      "though",
-      "in spite of"
+      "in spite of",
+      "regardless of",
+      "notwithstanding"
     ]
   },
   "destiny": {
@@ -2747,8 +2700,8 @@ const SYN_ANT_DB = {
     "syn": [
       "statesmanship",
       "statecraft",
-      "negotiation(s",
-      "discussion(s",
+      "negotiation",
+      "discussion",
       "talks",
       "consultation"
     ],
@@ -2786,9 +2739,6 @@ const SYN_ANT_DB = {
   "disagree": {
     "syn": [
       "fail to agree",
-      "be in dispute/contention",
-      "be at variance/odds",
-      "not see eye to eye",
       "differ from",
       "dissent from"
     ],
@@ -2800,10 +2750,8 @@ const SYN_ANT_DB = {
     "syn": [
       "vanish",
       "pass from sight",
-      "cease to be visible",
       "vanish from sight",
-      "recede from view",
-      "be lost to view/sight"
+      "recede from view"
     ],
     "ant": [
       "appear",
@@ -3038,7 +2986,6 @@ const SYN_ANT_DB = {
     "syn": [
       "destruction",
       "downfall",
-      "grim/terrible fate",
       "ruin",
       "ruination",
       "rack and ruin"
@@ -3098,9 +3045,7 @@ const SYN_ANT_DB = {
   "earn": {
     "syn": [
       "be paid",
-      "receive a salary of",
       "take home",
-      "take home earnings of",
       "gross",
       "receive"
     ],
@@ -3182,10 +3127,8 @@ const SYN_ANT_DB = {
   "embrace": {
     "syn": [
       "hug",
-      "take/hold in one's arms",
       "hold",
       "cuddle",
-      "clasp to one's bosom",
       "clasp"
     ],
     "ant": [
@@ -3280,18 +3223,14 @@ const SYN_ANT_DB = {
       "plague",
       "scourge",
       "infestation",
-      "widespread illness/disease",
       "pandemic"
     ]
   },
   "equation": {
     "syn": [
-      "mathematical problem",
-      "sum",
+      "formula",
       "calculation",
-      "question",
-      "equality",
-      "equating"
+      "equality"
     ]
   },
   "especially": {
@@ -3300,7 +3239,6 @@ const SYN_ANT_DB = {
       "mostly",
       "chiefly",
       "principally",
-      "for the most part",
       "in the main"
     ]
   },
@@ -3318,10 +3256,10 @@ const SYN_ANT_DB = {
     "syn": [
       "property",
       "grounds",
-      "garden(s",
+      "garden",
       "park",
       "parkland",
-      "land(s"
+      "land"
     ]
   },
   "esteem": {
@@ -3329,9 +3267,7 @@ const SYN_ANT_DB = {
       "respect",
       "admire",
       "value",
-      "regard",
-      "hold in (high) regard",
-      "think (highly) of"
+      "regard"
     ],
     "ant": [
       "disparage"
@@ -3537,7 +3473,6 @@ const SYN_ANT_DB = {
       "beloved"
     ],
     "ant": [
-      "bête noire",
       "underdog"
     ]
   },
@@ -3569,7 +3504,6 @@ const SYN_ANT_DB = {
       "grow",
       "thrive",
       "prosper",
-      "grow/do well",
       "develop",
       "burgeon"
     ],
@@ -3582,7 +3516,6 @@ const SYN_ANT_DB = {
   "fluid": {
     "syn": [
       "flowing",
-      "able to flow easily",
       "liquid",
       "liquefied",
       "melted",
@@ -3816,8 +3749,7 @@ const SYN_ANT_DB = {
       "convene",
       "assemble",
       "meet",
-      "collect",
-      "come/get together"
+      "collect"
     ],
     "ant": [
       "scatter",
@@ -3872,7 +3804,6 @@ const SYN_ANT_DB = {
       "pleased",
       "happy",
       "delighted",
-      "as pleased as punch",
       "well pleased",
       "thrilled"
     ],
@@ -3909,8 +3840,6 @@ const SYN_ANT_DB = {
     "syn": [
       "christian teaching",
       "christ's teaching",
-      "the life of christ",
-      "the word of god",
       "the good news",
       "christian doctrine"
     ],
@@ -3937,7 +3866,6 @@ const SYN_ANT_DB = {
     "syn": [
       "rule",
       "preside over",
-      "be in power over",
       "reign over",
       "control",
       "exercise control over"
@@ -3996,10 +3924,7 @@ const SYN_ANT_DB = {
     "syn": [
       "fumble",
       "scrabble",
-      "fish",
-      "ferret (about/around",
-      "rummage (about/around/round",
-      "root about/around"
+      "fish"
     ]
   },
   "gross": {
@@ -4077,7 +4002,6 @@ const SYN_ANT_DB = {
   "harness": {
     "syn": [
       "hitch up",
-      "put something in harness",
       "saddle",
       "yoke",
       "couple",
@@ -4119,11 +4043,7 @@ const SYN_ANT_DB = {
   "have": {
     "syn": [
       "possess",
-      "own",
-      "be in possession of",
-      "be the owner of",
-      "be the (proud) possessor of",
-      "have in one's possession"
+      "own"
     ],
     "ant": [
       "be bereft of",
@@ -4318,9 +4238,7 @@ const SYN_ANT_DB = {
       "visualize",
       "envisage",
       "envision",
-      "picture",
-      "form a picture of",
-      "see in the mind's eye"
+      "picture"
     ],
     "ant": [
       "doubt"
@@ -4421,7 +4339,6 @@ const SYN_ANT_DB = {
       "be firm",
       "stand one's ground",
       "make a stand",
-      "stand up for oneself",
       "be resolute"
     ],
     "ant": [
@@ -4486,7 +4403,6 @@ const SYN_ANT_DB = {
     "syn": [
       "put money into",
       "sink money into",
-      "lay out money on",
       "plough money into",
       "provide capital for",
       "spend money on"
@@ -4496,10 +4412,7 @@ const SYN_ANT_DB = {
     "syn": [
       "ask",
       "bid",
-      "summon",
-      "request someone's company at",
-      "request someone's presence at",
-      "request someone's appearance at"
+      "summon"
     ],
     "ant": [
       "refuse"
@@ -4538,12 +4451,8 @@ const SYN_ANT_DB = {
   },
   "jangled": {
     "syn": [
-      "clank",
-      "clink",
-      "jingle",
-      "tinkle",
-      "ding",
-      "ping"
+      "rattled",
+      "clashed"
     ]
   },
   "know": {
@@ -4609,9 +4518,7 @@ const SYN_ANT_DB = {
   "lend": {
     "syn": [
       "loan",
-      "give someone the loan of",
       "let someone use",
-      "let someone have the use of",
       "advance",
       "sub"
     ],
@@ -4658,9 +4565,7 @@ const SYN_ANT_DB = {
       "fortunate",
       "in luck",
       "blessed",
-      "blessed with good luck",
-      "favoured",
-      "born under a lucky star"
+      "favoured"
     ],
     "ant": [
       "unlucky",
@@ -4733,9 +4638,7 @@ const SYN_ANT_DB = {
   "many": {
     "syn": [
       "numerous",
-      "a great/good deal of",
       "a lot of",
-      "a large/great number of",
       "great quantities of",
       "plenty of"
     ],
@@ -4833,8 +4736,7 @@ const SYN_ANT_DB = {
       "just",
       "barely",
       "scarcely",
-      "hardly",
-      "by a hair's breadth"
+      "hardly"
     ]
   },
   "negotiable": {
@@ -4863,7 +4765,6 @@ const SYN_ANT_DB = {
       "recently developed",
       "newly discovered",
       "brand new",
-      "up to the minute",
       "up to date",
       "latest"
     ],
@@ -4924,9 +4825,6 @@ const SYN_ANT_DB = {
   },
   "obey": {
     "syn": [
-      "do what someone says",
-      "take/accept orders from",
-      "carry out/follow the orders of",
       "be dutiful to",
       "heed",
       "submit to"
@@ -4965,17 +4863,15 @@ const SYN_ANT_DB = {
   "old": {
     "syn": [
       "elderly",
-      "mature",
       "aged",
-      "older",
-      "senior",
-      "advanced in years"
+      "ancient",
+      "mature",
+      "senior"
     ],
     "ant": [
       "young",
       "new",
       "modern",
-      "fashionable",
       "recent",
       "fresh"
     ]
@@ -5060,17 +4956,14 @@ const SYN_ANT_DB = {
       "be greater than",
       "exceed",
       "be superior to",
-      "take precedence/priority over",
       "prevail over"
     ]
   },
   "overcome": {
     "syn": [
-      "get the better of",
       "prevail over",
       "control",
       "get control of",
-      "get/bring under control",
       "bridle"
     ]
   },
@@ -5092,8 +4985,7 @@ const SYN_ANT_DB = {
       "get past",
       "go past",
       "go by",
-      "overhaul",
-      "get/pull ahead of"
+      "overhaul"
     ]
   },
   "own": {
@@ -5112,19 +5004,14 @@ const SYN_ANT_DB = {
       "peep",
       "have a peep",
       "have a peek",
-      "take a secret look",
-      "spy",
-      "take a sly/stealthy look"
+      "spy"
     ]
   },
   "penalize": {
     "syn": [
       "punish",
       "discipline",
-      "inflict a penalty on",
-      "exact a penalty from",
-      "deal with",
-      "mete out punishment to"
+      "deal with"
     ],
     "ant": [
       "reward",
@@ -5135,12 +5022,9 @@ const SYN_ANT_DB = {
   },
   "personified": {
     "syn": [
-      "humanize",
-      "anthropomorphize",
-      "personalize",
-      "epitomize",
-      "embody",
-      "be the embodiment/incarnation of"
+      "embodied",
+      "typified",
+      "symbolized"
     ]
   },
   "pertain": {
@@ -5219,20 +5103,14 @@ const SYN_ANT_DB = {
   "possess": {
     "syn": [
       "own",
-      "have",
-      "be the owner of",
-      "have in one's possession",
-      "be in possession of",
-      "be the possessor of"
+      "have"
     ]
   },
   "possible": {
     "syn": [
       "feasible",
-      "able to be done",
       "practicable",
       "viable",
-      "within the bounds/realms of possibility",
       "attainable"
     ],
     "ant": [
@@ -5255,7 +5133,6 @@ const SYN_ANT_DB = {
       "say one's prayers",
       "be at prayer",
       "make one's devotions",
-      "offer a prayer/prayers",
       "commune with",
       "invoke"
     ]
@@ -5267,7 +5144,7 @@ const SYN_ANT_DB = {
       "on the dot",
       "promptly",
       "prompt",
-      "dead (on"
+      "dead on"
     ]
   },
   "prefer": {
@@ -5408,7 +5285,7 @@ const SYN_ANT_DB = {
       "hope",
       "expectation",
       "anticipation",
-      "good/poor) chance",
+      "chance",
       "chances"
     ]
   },
@@ -5447,11 +5324,7 @@ const SYN_ANT_DB = {
   "punish": {
     "syn": [
       "penalize",
-      "discipline",
-      "mete out punishment to",
-      "bring someone to book",
-      "teach someone a lesson",
-      "make an example of"
+      "discipline"
     ],
     "ant": [
       "pardon",
@@ -5524,7 +5397,6 @@ const SYN_ANT_DB = {
       "all set",
       "set",
       "organized",
-      "in a fit state",
       "equipped"
     ],
     "ant": [
@@ -5690,19 +5562,18 @@ const SYN_ANT_DB = {
   },
   "relate": {
     "syn": [
-      "connect (with",
-      "associate (with",
-      "link (with",
-      "correlate (with",
-      "ally (with",
-      "couple (with"
+      "connect",
+      "associate",
+      "link",
+      "correlate",
+      "ally",
+      "couple"
     ]
   },
   "relax": {
     "syn": [
       "unwind",
       "loosen up",
-      "ease up/off",
       "let up",
       "slow down",
       "de-stress"
@@ -5857,8 +5728,6 @@ const SYN_ANT_DB = {
     "syn": [
       "leave",
       "go",
-      "hand in one's notice",
-      "give in one's notice",
       "give notice",
       "stand down"
     ],
@@ -5892,7 +5761,6 @@ const SYN_ANT_DB = {
     "syn": [
       "answer",
       "reply to",
-      "say something in response to",
       "acknowledge",
       "greet",
       "counter"
@@ -5918,7 +5786,6 @@ const SYN_ANT_DB = {
   "restrict": {
     "syn": [
       "limit",
-      "set/impose limits on",
       "keep within bounds",
       "keep under control",
       "regulate",
@@ -6045,9 +5912,7 @@ const SYN_ANT_DB = {
   "save": {
     "syn": [
       "rescue",
-      "come to someone's rescue",
       "save someone's life",
-      "come to someone's aid",
       "set free",
       "free"
     ],
@@ -6108,7 +5973,7 @@ const SYN_ANT_DB = {
     "syn": [
       "appear",
       "look",
-      "seemingly"
+      "sound"
     ]
   },
   "seize": {
@@ -6204,8 +6069,7 @@ const SYN_ANT_DB = {
       "a number of",
       "a few",
       "not very many",
-      "a handful of",
-      "a small group of"
+      "a handful of"
     ],
     "ant": [
       "a lot",
@@ -6340,7 +6204,7 @@ const SYN_ANT_DB = {
   },
   "slash": {
     "syn": [
-      "cut (open",
+      "cut open",
       "gash",
       "slit",
       "split open",
@@ -6391,17 +6255,13 @@ const SYN_ANT_DB = {
   "smoothly": {
     "syn": [
       "evenly",
-      "level",
-      "flat",
-      "flush",
-      "as flat as a pancake",
-      "horizontally"
+      "fluently",
+      "steadily",
+      "seamlessly"
     ],
     "ant": [
       "roughly",
-      "jerkily",
-      "disastrously",
-      "abrasively"
+      "jerkily"
     ]
   },
   "smother": {
@@ -6416,7 +6276,6 @@ const SYN_ANT_DB = {
   },
   "sneer": {
     "syn": [
-      "curl of the/one's lip",
       "disparaging smile",
       "contemptuous smile",
       "smug smile",
@@ -6457,8 +6316,6 @@ const SYN_ANT_DB = {
       "a little",
       "a bit",
       "a little bit",
-      "to a limited extent/degree",
-      "to a certain degree",
       "to some extent"
     ],
     "ant": [
@@ -6497,12 +6354,10 @@ const SYN_ANT_DB = {
   },
   "specification": {
     "syn": [
-      "statement",
-      "stating",
-      "naming",
-      "identification",
+      "requirement",
+      "standard",
       "definition",
-      "defining"
+      "statement"
     ]
   },
   "spoil": {
@@ -6614,7 +6469,6 @@ const SYN_ANT_DB = {
   },
   "strengthen": {
     "syn": [
-      "make strong/stronger",
       "build up",
       "give strength to",
       "make healthy",
@@ -6783,11 +6637,9 @@ const SYN_ANT_DB = {
   },
   "surely": {
     "syn": [
-      "it must be the case that",
       "i believe that",
       "assuredly",
       "without question",
-      "don't tell me that … not",
       "certainly"
     ]
   },
@@ -6950,10 +6802,8 @@ const SYN_ANT_DB = {
     "syn": [
       "neat",
       "neat and tidy",
-      "as neat as a new pin",
       "orderly",
-      "well ordered",
-      "in (good) order"
+      "well ordered"
     ],
     "ant": [
       "untidy",
@@ -6982,7 +6832,6 @@ const SYN_ANT_DB = {
       "make fast",
       "make more secure",
       "screw up",
-      "give an extra turn to",
       "strengthen"
     ],
     "ant": [
@@ -7043,7 +6892,7 @@ const SYN_ANT_DB = {
   },
   "turnover": {
     "syn": [
-      "gross) revenue",
+      "revenue",
       "income",
       "yield",
       "volume of business",
@@ -7192,9 +7041,6 @@ const SYN_ANT_DB = {
   "vanish": {
     "syn": [
       "disappear",
-      "vanish into thin air",
-      "be lost to sight/view",
-      "be/become invisible",
       "evaporate",
       "dissipate"
     ],
@@ -7208,19 +7054,19 @@ const SYN_ANT_DB = {
     "syn": [
       "change",
       "differ",
-      "fluctuate"
+      "fluctuate",
+      "alter"
     ],
     "ant": [
       "remain",
       "stay",
-      "constant"
+      "conform"
     ]
   },
   "violate": {
     "syn": [
       "contravene",
       "breach",
-      "commit a breach of",
       "infringe",
       "infract",
       "break"
@@ -7332,14 +7178,6 @@ const SYN_ANT_DB = {
     ]
   },
   "without": {
-    "syn": [
-      "unaccompanied by",
-      "unescorted by",
-      "in the absence of",
-      "lacking",
-      "in need of",
-      "wanting for"
-    ],
     "ant": [
       "with"
     ]

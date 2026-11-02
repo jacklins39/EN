@@ -6,8 +6,8 @@ const jhWordsDB = [
         "uk": "/ˈeɪb(ə)l/",
         "zh": "adj. 有能力的、能夠、聰明能幹的、精通（某事）的",
         "unit": 17,
-        "example": "She was barely able to stand.",
-        "exampleZh": "她幾乎無法站立。"
+        "example": "He is able to swim very fast.",
+        "exampleZh": "他能夠游得非常快。"
     },
     {
         "id": 30002,
@@ -16,8 +16,8 @@ const jhWordsDB = [
         "uk": "/əˈbaʊt/",
         "zh": "adv. 大約、幾乎、到處、各處；prep. 關於、對於、目的是、針對；adj. 現成的、能得到的、即將（做……）的、快要（發生……）的",
         "unit": 17,
-        "example": "I'm definite about this.",
-        "exampleZh": "我對此很確定。"
+        "example": "The book is about a brave dog.",
+        "exampleZh": "這本書是關於一隻勇敢的狗。"
     },
     {
         "id": 30003,
@@ -26,8 +26,8 @@ const jhWordsDB = [
         "uk": "/əˈbʌv/",
         "zh": "prep. 在……以上、超過、在（或向）……上面、高於；adv. 高於、在（或向）上面、在（或向）較高處；adj. 前文述及的、上述的；n. 上文提及之事、前文所提之事",
         "unit": 17,
-        "example": "The cliffs towered above them.",
-        "exampleZh": "懸崖高聳在他們上方。"
+        "example": "The white plane flew above the clouds.",
+        "exampleZh": "白色的飛機飛在雲層之上。"
     },
     {
         "id": 30004,
@@ -46,8 +46,8 @@ const jhWordsDB = [
         "uk": "/ˈæbsənt/",
         "zh": "adj. 缺勤的、缺席的、不存在的、缺乏的；prep. 缺乏、沒有；v. 缺席、離開",
         "unit": 17,
-        "example": "She was absent for nine consecutive days.",
-        "exampleZh": "她已經連續缺席九天了。"
+        "example": "Tom was absent from class this morning.",
+        "exampleZh": "湯姆今天早上上課缺席了。"
     },
     {
         "id": 30006,
@@ -56,8 +56,8 @@ const jhWordsDB = [
         "uk": "/əkˈsept/",
         "zh": "vt. 接受、收受、同意、贊成",
         "unit": 17,
-        "example": "You have to accept the inevitable.",
-        "exampleZh": "你必須接受不可避免的事情。"
+        "example": "I am glad to accept your kind help.",
+        "exampleZh": "我很高興接受你好心的幫忙。"
     },
     {
         "id": 30007,
@@ -66,8 +66,8 @@ const jhWordsDB = [
         "uk": "/ˈæksɪdənt/",
         "zh": "n. 意外、交通事故、車禍、意外遭遇",
         "unit": 17,
-        "example": "It was an unfortunate accident.",
-        "exampleZh": "那是一次不幸的事故。"
+        "example": "He had a small car accident.",
+        "exampleZh": "他發生了一起小車禍。"
     },
     {
         "id": 30008,
@@ -76,8 +76,8 @@ const jhWordsDB = [
         "uk": "/əˈkrɒs/",
         "zh": "prep. 橫越、穿過、在……對面；adv. 橫過、從一邊到另一邊、在對面",
         "unit": 17,
-        "example": "Clouds drifted across the sky.",
-        "exampleZh": "雲彩飄過天際。"
+        "example": "We walked across the small wooden bridge.",
+        "exampleZh": "我們走過了那座小木橋。"
     },
     {
         "id": 30009,
@@ -86,8 +86,8 @@ const jhWordsDB = [
         "uk": "/ækt/",
         "zh": "v. 行動、舉動、表現、假裝；n. 行為、行動、法案、裝模作樣",
         "unit": 17,
-        "example": "Can you act as interpreter?",
-        "exampleZh": "你能擔任翻譯嗎？"
+        "example": "You must act now to help him.",
+        "exampleZh": "你現在必須採取行動來幫助他。"
     },
     {
         "id": 30010,
@@ -96,8 +96,8 @@ const jhWordsDB = [
         "uk": "/ˈækʃ(ə)n/",
         "zh": "n. 活動、行動、行為、戰鬥；vt. 處理；adj. 動作（片）的、動作片中的",
         "unit": 17,
-        "example": "Take whatever action is needed.",
-        "exampleZh": "採取任何需要的行動。"
+        "example": "We need to take fast action now.",
+        "exampleZh": "我們現在需要立即採取行動。"
     },
     {
         "id": 30011,
@@ -106,8 +106,8 @@ const jhWordsDB = [
         "uk": "/ˈæktɪv/",
         "zh": "adj. 積極的、好動的、積極主動的、定期進行的；n. 主動語態",
         "unit": 17,
-        "example": "They were both politically active.",
-        "exampleZh": "他們都是政治活躍分子。"
+        "example": "My brother is very active in sports.",
+        "exampleZh": "我弟弟在體育運動方面非常活躍。"
     },
     {
         "id": 30012,
@@ -116,8 +116,8 @@ const jhWordsDB = [
         "uk": "/ækˈtɪvəti/",
         "zh": "n. 活動、活躍狀況、熱鬧、熱力活性",
         "unit": 17,
-        "example": "Parents encourage every activity imaginable.",
-        "exampleZh": "父母鼓勵一切可能的活動。"
+        "example": "We did a fun art activity.",
+        "exampleZh": "我們做了一項有趣的藝術活動。"
     },
     {
         "id": 30013,
@@ -136,8 +136,8 @@ const jhWordsDB = [
         "uk": "/ˈæktrəs/",
         "zh": "n. 女演員",
         "unit": 17,
-        "example": "She fancies herself (as) a serious actress.",
-        "exampleZh": "她幻想自己是一位嚴肅的演員。"
+        "example": "My aunt is a very famous actress.",
+        "exampleZh": "我姑姑是一位非常著名的女演員。"
     },
     {
         "id": 30015,
@@ -146,8 +146,8 @@ const jhWordsDB = [
         "uk": "/ˈæktʃuəli/",
         "zh": "adv. 確實、實際上、事實上、其實",
         "unit": 17,
-        "example": "It's not actually raining now.",
-        "exampleZh": "其實現在並沒有下雨。"
+        "example": "I actually like this green shirt.",
+        "exampleZh": "我其實很喜歡這件綠襯衫。"
     },
     {
         "id": 30016,
@@ -166,8 +166,8 @@ const jhWordsDB = [
         "uk": "/əˈdres/",
         "zh": "n. 地址、住址、網址、電子郵箱地址；vt. 向…致詞、處理、演說、演講",
         "unit": 17,
-        "example": "They had no permanent address.",
-        "exampleZh": "他們沒有永久地址。"
+        "example": "Please write your home address down here.",
+        "exampleZh": "請把你的住家地址寫在這裡。"
     },
     {
         "id": 30018,
@@ -176,8 +176,8 @@ const jhWordsDB = [
         "uk": "/ədˈmaɪə(r)/",
         "zh": "vt. 欽佩、仰慕、欣賞、觀賞",
         "unit": 17,
-        "example": "I really admire your enthusiasm.",
-        "exampleZh": "我確實欽佩你的熱情。"
+        "example": "Many people admire his hard work.",
+        "exampleZh": "許多人欽佩他的辛勤努力。"
     },
     {
         "id": 30019,
@@ -196,8 +196,8 @@ const jhWordsDB = [
         "uk": "/ədˈvɜːtɪsmənt/",
         "zh": "n. 廣告、活廣告、廣告活動、廣告宣傳",
         "unit": 17,
-        "example": "The advertisement is for a men's fragrance.",
-        "exampleZh": "這則廣告介紹一款男士香水。"
+        "example": "I saw an advertisement for shoes.",
+        "exampleZh": "我看見了一則鞋子廣告。"
     },
     {
         "id": 30021,
@@ -206,8 +206,8 @@ const jhWordsDB = [
         "uk": "/ədˈvaɪs/",
         "zh": "n. 勸告、忠告、建議、正式通知",
         "unit": 17,
-        "example": "He offered some useful advice.",
-        "exampleZh": "他提出了一些有益的建議。"
+        "example": "She gave me some good advice.",
+        "exampleZh": "她給了我一些好建議。"
     },
     {
         "id": 30022,
@@ -216,8 +216,8 @@ const jhWordsDB = [
         "uk": "/ədˈvaɪz/",
         "zh": "vt. 勸告、通知、告知、建議",
         "unit": 17,
-        "example": "I'd advise you against doing that.",
-        "exampleZh": "我勸你別做那事。"
+        "example": "I advise you to eat well.",
+        "exampleZh": "我建議你要吃得好。"
     },
     {
         "id": 30023,
@@ -226,8 +226,8 @@ const jhWordsDB = [
         "uk": "/əˈfekt/",
         "zh": "vt. 影響、侵襲、感染、深深打動；n. 情感、感情",
         "unit": 17,
-        "example": "Does television affect children's behaviour?",
-        "exampleZh": "電視對孩子的行為有影響嗎？"
+        "example": "Bad food will affect your body.",
+        "exampleZh": "不好的食物會影響你的身體。"
     },
     {
         "id": 30024,
@@ -246,8 +246,8 @@ const jhWordsDB = [
         "uk": "/ˈɑːftə(r)/",
         "zh": "prep. 在……之後、緊接著、一次接著一次、持續不斷地；conj. 在……以後；adv. 後來、以後；adj. 後來的、以後的、靠近船尾的",
         "unit": 17,
-        "example": "They arrived shortly after 5.",
-        "exampleZh": "5點多他們就到了。"
+        "example": "We went to sleep after the dinner.",
+        "exampleZh": "晚餐結束後我們就去睡覺了。"
     },
     {
         "id": 30026,
@@ -256,8 +256,8 @@ const jhWordsDB = [
         "uk": "/ˌɑːftəˈnuːn/",
         "zh": "n. 下午、午後；int. 下午好",
         "unit": 17,
-        "example": "He's arriving in the afternoon.",
-        "exampleZh": "他下午到。"
+        "example": "We will play soccer this afternoon together.",
+        "exampleZh": "我們今天下午要一起踢足球。"
     },
     {
         "id": 30027,
@@ -266,8 +266,8 @@ const jhWordsDB = [
         "uk": "/əˈgeɪn/",
         "zh": "adv. 再度、再一次、復原、請再說一遍",
         "unit": 17,
-        "example": "She smiled again, prettily.",
-        "exampleZh": "她又笑了，笑得很漂亮。"
+        "example": "Please say that to me once again.",
+        "exampleZh": "請把那句話再對我說一次。"
     },
     {
         "id": 30028,
@@ -286,8 +286,8 @@ const jhWordsDB = [
         "uk": "/eɪdʒ/",
         "zh": "n. 年齡、年紀、壽命、年代；vt. 變老、老化、顯老、蒼老",
         "unit": 17,
-        "example": "She's long past retirement age.",
-        "exampleZh": "她早已過了退休年齡。"
+        "example": "What is the age of this tree?",
+        "exampleZh": "這棵樹的樹齡是幾年？"
     },
     {
         "id": 30030,
@@ -306,8 +306,8 @@ const jhWordsDB = [
         "uk": "/əˈɡriː/",
         "zh": "v. 同意、贊成、答應、接受",
         "unit": 17,
-        "example": "I don't agree with spanking.",
-        "exampleZh": "我不同意打屁股。"
+        "example": "I do not agree with your idea.",
+        "exampleZh": "我不同意你的想法。"
     },
     {
         "id": 30032,
@@ -316,8 +316,8 @@ const jhWordsDB = [
         "uk": "/əˈhed/",
         "zh": "adv. 向前、在前面、朝前面、領先；adj. 在前的、提前的",
         "unit": 17,
-        "example": "Already, she is thinking ahead.",
-        "exampleZh": "她已經在提前思考了。"
+        "example": "The school is straight ahead of you.",
+        "exampleZh": "學校就在你的正前方。"
     },
     {
         "id": 30033,
@@ -326,8 +326,8 @@ const jhWordsDB = [
         "uk": "/eɪm/",
         "zh": "n. 目標、目的、瞄準、對準；vt. 瞄準、對準、旨在、致力於",
         "unit": 17,
-        "example": "His aim was to become president.",
-        "exampleZh": "他的目標是成為總統。"
+        "example": "His main aim is to pass tests.",
+        "exampleZh": "他的主要目標是通過考試。"
     },
     {
         "id": 30034,
@@ -336,8 +336,8 @@ const jhWordsDB = [
         "uk": "/eə(r)/",
         "zh": "n. 空氣、大氣、空中、天空；vt. 使公開、宣揚、通風、晾乾",
         "unit": 17,
-        "example": "His hands clawed the air.",
-        "exampleZh": "他的雙手在空中抓抓。"
+        "example": "Open the window for some fresh air.",
+        "exampleZh": "打開窗戶讓新鮮空氣進來。"
     },
     {
         "id": 30035,
@@ -346,8 +346,8 @@ const jhWordsDB = [
         "uk": "/ˈeəpleɪn/",
         "zh": "n. 飛機",
         "unit": 17,
-        "example": "The airplane had dual controls.",
-        "exampleZh": "這架飛機有雙重控制。"
+        "example": "The big airplane landed at the airport.",
+        "exampleZh": "這架大飛機降落在機場。"
     },
     {
         "id": 30036,
@@ -356,8 +356,8 @@ const jhWordsDB = [
         "uk": "/ˈeəpɔːt/",
         "zh": "n. 機場、航空站、空旅通俗讀物",
         "unit": 17,
-        "example": "He was fogbound at JFK airport.",
-        "exampleZh": "他在甘迺迪機場時渾身大霧。"
+        "example": "My father went to the airport early.",
+        "exampleZh": "我爸爸很早就去了機場。"
     },
     {
         "id": 30037,
@@ -376,8 +376,8 @@ const jhWordsDB = [
         "uk": "/ˈælbəm/",
         "zh": "n. 相簿、唱片、專輯、影集",
         "unit": 17,
-        "example": "Their new album is dynamite.",
-        "exampleZh": "他們的新專輯是炸藥。"
+        "example": "My mother showed me our family album.",
+        "exampleZh": "我媽媽給我看了我們的家庭相簿。"
     },
     {
         "id": 30039,
@@ -406,8 +406,8 @@ const jhWordsDB = [
         "uk": "/ɔːl/",
         "zh": "det. 全部、每一個、極度、儘量；adj. 全部的、每一個的、任何的、儘可能多的；adv. 完全地、各方、各選手、非常；pron. 所有、全部、唯一；n. 全部、所有",
         "unit": 17,
-        "example": "They're all good players, but she's the best of all.",
-        "exampleZh": "他們都是優秀的球員，但她是其中最好的。"
+        "example": "All the students are in the classroom.",
+        "exampleZh": "所有的學生都在教室裡。"
     },
     {
         "id": 30042,
@@ -426,8 +426,8 @@ const jhWordsDB = [
         "uk": "/ˈɔːlməʊst/",
         "zh": "adv. 幾乎、差不多",
         "unit": 17,
-        "example": "Almost overnight I was cured.",
-        "exampleZh": "幾乎一夜之間我就痊癒了。"
+        "example": "The school bus is almost here now.",
+        "exampleZh": "校車現在差不多快到了。"
     },
     {
         "id": 30044,
@@ -436,8 +436,8 @@ const jhWordsDB = [
         "uk": "/əˈləʊn/",
         "zh": "adj. 單獨的、獨自的、孤獨的；adv. 獨自地、單獨地、只有",
         "unit": 17,
-        "example": "Exercising alone can be boring.",
-        "exampleZh": "獨自運動可能會很無聊。"
+        "example": "He lives alone in the big city.",
+        "exampleZh": "他獨自一人住在大城市裡。"
     },
     {
         "id": 30045,
@@ -456,8 +456,8 @@ const jhWordsDB = [
         "uk": "/əˈlaʊd/",
         "zh": "adv. 大聲地、出聲地",
         "unit": 17,
-        "example": "She cried aloud in protest.",
-        "exampleZh": "她大聲哭泣以示抗議。"
+        "example": "Please read the short story aloud today.",
+        "exampleZh": "今天請大聲朗讀這篇短篇故事。"
     },
     {
         "id": 30047,
@@ -476,8 +476,8 @@ const jhWordsDB = [
         "uk": "/ˈɔːlsəʊ/",
         "zh": "adv. 也、同樣、此外、而且",
         "unit": 17,
-        "example": "The nation also exports beef.",
-        "exampleZh": "該國也出口牛肉。"
+        "example": "She also wants to join our team.",
+        "exampleZh": "她也想加入我們的隊伍。"
     },
     {
         "id": 30049,
@@ -496,8 +496,8 @@ const jhWordsDB = [
         "uk": "/ˈɔːlweɪz/",
         "zh": "adv. 總是、每次都是、一直、長久以來",
         "unit": 17,
-        "example": "She always looks immaculate.",
-        "exampleZh": "她看起來總是完美無缺。"
+        "example": "My brother always gets up very early.",
+        "exampleZh": "我弟弟總是很早起床。"
     },
     {
         "id": 30051,
@@ -506,8 +506,8 @@ const jhWordsDB = [
         "uk": "/ˈæmbjələns/",
         "zh": "n. 救護車、急救車；v. 用救護車送",
         "unit": 17,
-        "example": "When the ambulance had gone, the crowd dissolved.",
-        "exampleZh": "救護車離開後人群便散了。"
+        "example": "Call an ambulance for him now.",
+        "exampleZh": "現在替他叫救護車。"
     },
     {
         "id": 30052,
@@ -526,8 +526,8 @@ const jhWordsDB = [
         "uk": "/ˈeɪnʃənt/",
         "zh": "adj. 古代的、遠古的、古老的、年代久遠的；n. 古代人、老頭",
         "unit": 17,
-        "example": "Lettuce was grown by the ancient Romans.",
-        "exampleZh": "生菜是古羅馬人種植的。"
+        "example": "They found an ancient coin in the ground.",
+        "exampleZh": "他們在泥土中發現了一枚古老的硬幣。"
     },
     {
         "id": 30054,
@@ -536,8 +536,8 @@ const jhWordsDB = [
         "uk": "/ˈeɪndʒl/",
         "zh": "n. 天使、仁慈的人、善人、寶貝",
         "unit": 17,
-        "example": "The angel appeared unto him in a dream.",
-        "exampleZh": "在夢中天使出現在他面前。"
+        "example": "She is kind like an angel.",
+        "exampleZh": "她善良得像個天使。"
     },
     {
         "id": 30055,
@@ -546,8 +546,8 @@ const jhWordsDB = [
         "uk": "/ˈæŋɡə(r)/",
         "zh": "n. 憤怒、怒火；vt. 使生氣、激怒",
         "unit": 17,
-        "example": "His words ignited their anger.",
-        "exampleZh": "他的話激起了他們的憤怒。"
+        "example": "His face was full of deep anger.",
+        "exampleZh": "他的臉上充滿了憤怒。"
     },
     {
         "id": 30056,
@@ -556,8 +556,8 @@ const jhWordsDB = [
         "uk": "/ˈæŋɡri/",
         "zh": "adj. 生氣的、憤怒的、狂風暴雨的、波濤洶湧的",
         "unit": 17,
-        "example": "Roberta felt frustrated and angry.",
-        "exampleZh": "羅伯塔感到沮喪和憤怒。"
+        "example": "My father is very angry today.",
+        "exampleZh": "我爸爸今天非常生氣。"
     },
     {
         "id": 30057,
@@ -566,8 +566,8 @@ const jhWordsDB = [
         "uk": "/ˈæŋk(ə)l/",
         "zh": "n. 腳踝、踝關節；v. 走、離開、踝關節曲起用力",
         "unit": 17,
-        "example": "John twisted his ankle badly.",
-        "exampleZh": "約翰嚴重扭傷了腳踝。"
+        "example": "He hurt his left ankle while running.",
+        "exampleZh": "他在跑步時弄傷了左腳踝。"
     },
     {
         "id": 30058,
@@ -576,8 +576,8 @@ const jhWordsDB = [
         "uk": "/ˈænɪm(ə)l/",
         "zh": "n. 動物、獸類；adj. 動物的、肉體的",
         "unit": 17,
-        "example": "The animal retracted into its shell.",
-        "exampleZh": "動物縮回殼裡。"
+        "example": "The dog is a very friendly animal.",
+        "exampleZh": "狗是一種非常友善的動物。"
     },
     {
         "id": 30059,
@@ -586,8 +586,8 @@ const jhWordsDB = [
         "uk": "/əˈnʌðə(r)/",
         "zh": "det. 另一個、另一、又一、另外一個；pron. 又一個、再一個、另一個、另一種；adj. 再加一個的、另一的、不同的、另一類似的",
         "unit": 17,
-        "example": "She was expecting another baby.",
-        "exampleZh": "她正懷著另一個孩子。"
+        "example": "Can I have another cup of water?",
+        "exampleZh": "我可以再來一杯水嗎？"
     },
     {
         "id": 30060,
@@ -596,8 +596,8 @@ const jhWordsDB = [
         "uk": "/ˈɑːnsə(r)/",
         "zh": "vt. 回答、答覆、回覆、接電話；n. 答案、回答、答覆、解決辦法",
         "unit": 17,
-        "example": "Your answer is exactly right.",
-        "exampleZh": "你的答案是完全正確的。"
+        "example": "Please write your answer on the paper.",
+        "exampleZh": "請把你的答案寫在紙上。"
     },
     {
         "id": 30061,
@@ -606,8 +606,8 @@ const jhWordsDB = [
         "uk": "/ænt/",
         "zh": "n. 螞蟻、Ant",
         "unit": 17,
-        "example": "The ant is carrying a leaf.",
-        "exampleZh": "螞蟻拿著一片葉子。"
+        "example": "I saw an ant on the floor.",
+        "exampleZh": "我看到地板上有一隻螞蟻。"
     },
     {
         "id": 30062,
@@ -616,8 +616,8 @@ const jhWordsDB = [
         "uk": "/ˈeni/",
         "zh": "det. 任何的、任一的、一點、些許；pron. 一些、任何一個、任何數量、任一數額；adv. 一點、絲毫、壓根兒；adj. 任何的、任一的、一點、一些",
         "unit": 17,
-        "example": "I'd welcome any suggestions.",
-        "exampleZh": "我歡迎任何建議。"
+        "example": "Do you have any questions for me?",
+        "exampleZh": "你有任何問題要問我嗎？"
     },
     {
         "id": 30063,
@@ -626,8 +626,8 @@ const jhWordsDB = [
         "uk": "/ˈeniwʌn/",
         "zh": "pron. 任何人、無論誰、任何一個人、某個人",
         "unit": 17,
-        "example": "Anyone can appreciate our music.",
-        "exampleZh": "任何人都能欣賞我們的音樂。"
+        "example": "Does anyone want some cold water?",
+        "exampleZh": "有人想要喝冰水嗎？"
     },
     {
         "id": 30064,
@@ -646,8 +646,8 @@ const jhWordsDB = [
         "uk": "/ˈeniweə(r)/",
         "zh": "adv. 任何地方、在任何地方、無論何處；n. 任何地方",
         "unit": 17,
-        "example": "Did you go anywhere interesting?",
-        "exampleZh": "有沒有去什麼有趣的地方？"
+        "example": "I cannot find my car keys anywhere.",
+        "exampleZh": "我到處都找不到我的車鑰匙。"
     },
     {
         "id": 30066,
@@ -656,8 +656,8 @@ const jhWordsDB = [
         "uk": "/əˈpɑːtmənt/",
         "zh": "n. 公寓、公寓套房、房間、套間",
         "unit": 17,
-        "example": "We rented an unfurnished apartment.",
-        "exampleZh": "我們租了一間沒有家具的公寓。"
+        "example": "They rent an apartment near the station.",
+        "exampleZh": "他們在車站附近租了一間公寓。"
     },
     {
         "id": 30067,
@@ -676,8 +676,8 @@ const jhWordsDB = [
         "uk": "/əˈpɪə(r)/",
         "zh": "vi. 出現、呈現、首次使用、起源",
         "unit": 17,
-        "example": "She will appear in court tomorrow.",
-        "exampleZh": "她將於明天出庭。"
+        "example": "Dark clouds appear in the sky now.",
+        "exampleZh": "烏雲現在出現在天空中。"
     },
     {
         "id": 30069,
@@ -686,8 +686,8 @@ const jhWordsDB = [
         "uk": "/ˈæp(ə)l/",
         "zh": "n. 蘋果、蘋果樹、蘋果公司",
         "unit": 17,
-        "example": "She crunched her apple noisily.",
-        "exampleZh": "她大聲地嚼著蘋果。"
+        "example": "She ate a sweet red apple today.",
+        "exampleZh": "她今天吃了一顆又甜又紅的蘋果。"
     },
     {
         "id": 30070,
@@ -716,8 +716,8 @@ const jhWordsDB = [
         "uk": "/ˈeəriə/",
         "zh": "n. 地區、區域、場地、地方",
         "unit": 17,
-        "example": "The area is largely uninhabited.",
-        "exampleZh": "該地區大部分無人居住。"
+        "example": "This area has many tall green trees.",
+        "exampleZh": "這個地區有許多高大的綠樹。"
     },
     {
         "id": 30073,
@@ -726,8 +726,8 @@ const jhWordsDB = [
         "uk": "/ˈɑːɡjuː/",
         "zh": "v. 爭論、主張、認為、說服",
         "unit": 17,
-        "example": "I'm not disposed to argue.",
-        "exampleZh": "我不打算爭論。"
+        "example": "Do not argue with your parents about food.",
+        "exampleZh": "不要為了食物和你的父母爭吵。"
     },
     {
         "id": 30074,
@@ -736,8 +736,8 @@ const jhWordsDB = [
         "uk": "/ɑːm/",
         "zh": "n. 手臂、上肢、武器、軍備；vt. 武裝、備戰、提供、配備",
         "unit": 17,
-        "example": "He squeezed her arm reassuringly.",
-        "exampleZh": "他安慰地握住她的手臂。"
+        "example": "He broke his left arm during the game.",
+        "exampleZh": "他在比賽中弄斷了左手臂。"
     },
     {
         "id": 30075,
@@ -746,8 +746,8 @@ const jhWordsDB = [
         "uk": "/ˈɑːmtʃeə(r)/",
         "zh": "n. 扶手椅、單人沙發；adj. 空想的、無實際經驗的、誇誇其談的",
         "unit": 17,
-        "example": "I sank down into a voluminous armchair.",
-        "exampleZh": "我坐進一張寬大的扶手椅。"
+        "example": "Grandpa fell asleep in the soft armchair.",
+        "exampleZh": "爺爺在那張柔軟的扶手椅上睡著了。"
     },
     {
         "id": 30076,
@@ -756,8 +756,8 @@ const jhWordsDB = [
         "uk": "/ˈɑːmi/",
         "zh": "n. 軍隊、陸軍、大批、大群",
         "unit": 17,
-        "example": "They were old army comrades.",
-        "exampleZh": "他們是老軍隊戰友。"
+        "example": "His brother joined the army last year.",
+        "exampleZh": "他的哥哥去年參軍加入了陸軍。"
     },
     {
         "id": 30077,
@@ -766,8 +766,8 @@ const jhWordsDB = [
         "uk": "/əˈraʊnd/",
         "zh": "adv. 大約、圍繞、環繞、周圍；prep. 在……周圍、圍繞、環繞、到處",
         "unit": 17,
-        "example": "He arrived around five o'clock.",
-        "exampleZh": "他大約五點左右到達。"
+        "example": "We walked around the lake this morning.",
+        "exampleZh": "我們今天早上繞著湖邊散步。"
     },
     {
         "id": 30078,
@@ -776,8 +776,8 @@ const jhWordsDB = [
         "uk": "/əˈreɪndʒ/",
         "zh": "vt. 安排、籌備、整理、佈置",
         "unit": 17,
-        "example": "Can I arrange an appointment for Monday?",
-        "exampleZh": "我可以安排週一的預約嗎？"
+        "example": "Can you arrange a time to meet us?",
+        "exampleZh": "你能安排一個時間與我們會面嗎？"
     },
     {
         "id": 30079,
@@ -796,8 +796,8 @@ const jhWordsDB = [
         "uk": "/ɑːt/",
         "zh": "n. 藝術、美術、藝術品、技術；adj. 藝術性的；v. be的第二人稱單數現在式",
         "unit": 17,
-        "example": "Can we call television art?",
-        "exampleZh": "我們可以稱之為電視藝術嗎？"
+        "example": "We have an art class every Friday.",
+        "exampleZh": "我們每週五有一堂美術課。"
     },
     {
         "id": 30081,
@@ -816,8 +816,8 @@ const jhWordsDB = [
         "uk": "/æz; əz/",
         "zh": "prep. 作為、當作、如同；conj. 當……時、因為、像……一樣；adv. 同樣地、一樣",
         "unit": 17,
-        "example": "You're as tall as your father.",
-        "exampleZh": "你和你父親一樣高。"
+        "example": "She works as a teacher in Taipei.",
+        "exampleZh": "她在台北當一名老師。"
     },
     {
         "id": 30083,
@@ -866,8 +866,8 @@ const jhWordsDB = [
         "uk": "/əˈtæk/",
         "zh": "vt. 攻擊、批評、抨擊、侵蝕；n. 襲擊、突然發作、一陣突發、進攻",
         "unit": 17,
-        "example": "The attack on Charles was unjust.",
-        "exampleZh": "對查爾斯的攻擊是不公正的。"
+        "example": "The dog will attack if you run.",
+        "exampleZh": "如果你奔跑，這隻狗會發動攻擊。"
     },
     {
         "id": 30088,
@@ -886,8 +886,8 @@ const jhWordsDB = [
         "uk": "/ɔːˈɡʌst/",
         "zh": "n. 八月；adj. 威嚴的、令人敬畏的",
         "unit": 17,
-        "example": "Grouse shooting begins in August.",
-        "exampleZh": "松雞射擊從八月開始。"
+        "example": "We go to summer camp in August.",
+        "exampleZh": "我們在八月去參加夏令營。"
     },
     {
         "id": 30090,
@@ -906,8 +906,8 @@ const jhWordsDB = [
         "uk": "/ˈɔːtəm/",
         "zh": "n. 秋天、秋季、晚年、漸衰期；adj. 秋天的、秋季的",
         "unit": 17,
-        "example": "Autumn is my favourite season.",
-        "exampleZh": "秋天是我最喜歡的季節。"
+        "example": "Leaves fall from trees in autumn.",
+        "exampleZh": "樹葉在秋天從樹上落下。"
     },
     {
         "id": 30092,
@@ -916,8 +916,8 @@ const jhWordsDB = [
         "uk": "/əˈveɪləb(ə)l/",
         "zh": "adj. 可獲得的、可用的、有空的、有閒暇的",
         "unit": 17,
-        "example": "Ample free parking is available.",
-        "exampleZh": "有寬敞的免費停車場。"
+        "example": "The doctor is available this morning.",
+        "exampleZh": "醫生今天早上有空。"
     },
     {
         "id": 30093,
@@ -926,8 +926,8 @@ const jhWordsDB = [
         "uk": "/əˈvɔɪd/",
         "zh": "vt. 避免、防止、迴避、避開",
         "unit": 17,
-        "example": "We have tried to avoid any moralizing.",
-        "exampleZh": "我們盡力避免任何說教。"
+        "example": "Try to avoid eating too much sugar.",
+        "exampleZh": "盡量避免攝取過多的糖分。"
     },
     {
         "id": 30094,
@@ -936,8 +936,8 @@ const jhWordsDB = [
         "uk": "/əˈweɪ/",
         "zh": "adv. 離開、遠離、不在、距離……之遠；adj. 不在的、客場的",
         "unit": 17,
-        "example": "She walked quickly away.",
-        "exampleZh": "她快步走開。"
+        "example": "The cat ran away from the dog.",
+        "exampleZh": "貓咪從狗狗身邊跑開了。"
     },
     {
         "id": 30095,
@@ -946,8 +946,8 @@ const jhWordsDB = [
         "uk": "/ˈbeɪbi/",
         "zh": "n. 嬰兒、嬰孩、動物幼崽、最小的成員；v. 把……當嬰兒般對待、對……嬌生慣養、小心翼翼地操作、小心對待；adj. 幼嫩的、小的、小型的",
         "unit": 17,
-        "example": "She dreamed about her baby.",
-        "exampleZh": "她夢見了她的孩子。"
+        "example": "The little baby is sleeping right now.",
+        "exampleZh": "小嬰兒現在正在睡覺。"
     },
     {
         "id": 30096,
@@ -956,8 +956,8 @@ const jhWordsDB = [
         "uk": "/ˈbeɪbisɪtə(r)/",
         "zh": "n. 保母、臨時照顧幼兒者、臨時保姆",
         "unit": 17,
-        "example": "We need to find a reliable babysitter for tonight.",
-        "exampleZh": "我們今晚需要找一個可靠的保母。"
+        "example": "The kind babysitter is at home.",
+        "exampleZh": "那位親切的保母在家。"
     },
     {
         "id": 30097,
@@ -986,8 +986,8 @@ const jhWordsDB = [
         "uk": "/bæd/",
         "zh": "adj. 壞的、不好的、令人不悅的、難以接受的；n. 壞人、壞事；adv. 很、非常、厲害地",
         "unit": 17,
-        "example": "Divorce is bad for children.",
-        "exampleZh": "離婚對孩子不好。"
+        "example": "Eating too much sugar is bad.",
+        "exampleZh": "吃太多糖是不好的。"
     },
     {
         "id": 30100,
@@ -996,8 +996,8 @@ const jhWordsDB = [
         "uk": "/ˈbædmɪntən/",
         "zh": "n. 羽毛球",
         "unit": 17,
-        "example": "While playing badminton, I ruptured my Achilles tendon.",
-        "exampleZh": "打羽毛球的時候，我把跟腱撕裂了。"
+        "example": "We like to play badminton today.",
+        "exampleZh": "我們今天想打羽毛球。"
     },
     {
         "id": 30101,
@@ -1006,8 +1006,8 @@ const jhWordsDB = [
         "uk": "/bæɡ/",
         "zh": "n. 袋子、袋、包、一袋的量；v. 把……裝進袋子、搶佔、佔有、捕獲",
         "unit": 17,
-        "example": "Someone's left their bag behind.",
-        "exampleZh": "有人把包包落在後面了。"
+        "example": "Put the books into your school bag.",
+        "exampleZh": "把書本放進你的書包裡。"
     },
     {
         "id": 30102,
@@ -1056,8 +1056,8 @@ const jhWordsDB = [
         "uk": "/bəˈluːn/",
         "zh": "n. 氣球、熱氣球、氣球狀對話方塊、球形大酒杯；vi. 激增、突然長胖、膨脹、鼓起來；adj. 像氣球般鼓起的",
         "unit": 17,
-        "example": "A balloon suddenly went bang.",
-        "exampleZh": "一個氣球突然爆炸了。"
+        "example": "The red balloon flew into the sky.",
+        "exampleZh": "紅色氣球飛上了天空。"
     },
     {
         "id": 30107,
@@ -1066,8 +1066,8 @@ const jhWordsDB = [
         "uk": "/bəˈnɑːnə/",
         "zh": "adj. 愚蠢的、發狂的；n. 香蕉、香蕉樹、巴納納",
         "unit": 17,
-        "example": "He slipped on a banana skin.",
-        "exampleZh": "他踩到香蕉皮滑倒了。"
+        "example": "Monkeys like to eat sweet yellow bananas.",
+        "exampleZh": "猴子喜歡吃香甜的黃香蕉。"
     },
     {
         "id": 30108,
@@ -1116,8 +1116,8 @@ const jhWordsDB = [
         "uk": "/bɑːk/",
         "zh": "vi. 吠叫、大聲嚷、吼叫、吠；n. 樹皮、狗叫聲、吠聲、吼叫聲",
         "unit": 17,
-        "example": "Deer had stripped the tree of its bark.",
-        "exampleZh": "鹿把樹的樹皮剝掉了。"
+        "example": "Dogs bark when strangers walk near home.",
+        "exampleZh": "當陌生人走近家門時狗會吠叫。"
     },
     {
         "id": 30113,
@@ -1126,8 +1126,8 @@ const jhWordsDB = [
         "uk": "/beɪs/",
         "zh": "n. 基礎、基地、底部、根據地；vt. 以……為基礎、把基地設在；adj. 卑鄙的、低劣的",
         "unit": 17,
-        "example": "He acted from base motives.",
-        "exampleZh": "他的行為動機卑鄙。"
+        "example": "They sat at the base of the tree.",
+        "exampleZh": "他們坐在樹根底部。"
     },
     {
         "id": 30114,
@@ -1146,8 +1146,8 @@ const jhWordsDB = [
         "uk": "/ˈbeɪsmənt/",
         "zh": "n. 地下室、地庫",
         "unit": 17,
-        "example": "Kitchen goods are sold in the basement.",
-        "exampleZh": "廚房用品在地下室出售。"
+        "example": "We keep old boxes in the basement.",
+        "exampleZh": "我們把舊箱子存放在地下室。"
     },
     {
         "id": 30116,
@@ -1156,8 +1156,8 @@ const jhWordsDB = [
         "uk": "/ˈbeɪsɪk/",
         "zh": "adj. 基礎的、最重要的、基本的、最簡單的；n. 基本要素、基本原則",
         "unit": 17,
-        "example": "Basic foodstuffs were in short supply.",
-        "exampleZh": "基本食品供應短缺。"
+        "example": "This is a basic English book.",
+        "exampleZh": "這是一本基礎英文書。"
     },
     {
         "id": 30117,
@@ -1166,8 +1166,8 @@ const jhWordsDB = [
         "uk": "/ˈbɑːskɪt/",
         "zh": "n. 籃子、一籃的量、籃、投籃得分",
         "unit": 17,
-        "example": "There was a complimentary basket of fruit in our room.",
-        "exampleZh": "我們的房間裡有一籃免費水果。"
+        "example": "Put the apples into the wooden basket.",
+        "exampleZh": "把蘋果放進木籃子裡。"
     },
     {
         "id": 30118,
@@ -1176,8 +1176,8 @@ const jhWordsDB = [
         "uk": "/ˈbɑːskɪtbɔːl/",
         "zh": "n. 籃球、籃球運動",
         "unit": 17,
-        "example": "He coaches basketball and soccer.",
-        "exampleZh": "他擔任籃球和足球教練。"
+        "example": "We play basketball in the school yard.",
+        "exampleZh": "我們在校園球場上打籃球。"
     },
     {
         "id": 30119,
@@ -1186,8 +1186,8 @@ const jhWordsDB = [
         "uk": "/bæt/",
         "zh": "n. 蝙蝠、球棒、球拍；vi. 用球板（棒）擊球、揮打、擊走",
         "unit": 17,
-        "example": "I bolted the door the instant I saw the bat.",
-        "exampleZh": "我一看到蝙蝠就鎖上門了。"
+        "example": "He hits the ball with a bat.",
+        "exampleZh": "他用球棒擊球。"
     },
     {
         "id": 30120,
@@ -1206,8 +1206,8 @@ const jhWordsDB = [
         "uk": "/beɪð/",
         "zh": "v. 沐浴、洗澡、給（某人）洗澡、游泳；n. 游泳、洗浴",
         "unit": 17,
-        "example": "Slowly, people began to bathe more frequently.",
-        "exampleZh": "慢慢地，人們開始更頻繁地洗澡。"
+        "example": "I bathe my dog every Sunday afternoon.",
+        "exampleZh": "我每個星期天下午幫我的狗洗澡。"
     },
     {
         "id": 30122,
@@ -1226,8 +1226,8 @@ const jhWordsDB = [
         "uk": "/biːtʃ/",
         "zh": "n. 沙灘、海灘、海濱；vt. 把（船）拖上岸、擱淺、釣（魚）上岸、讓（某人）受損",
         "unit": 17,
-        "example": "We cantered along the beach.",
-        "exampleZh": "我們沿著海灘慢跑。"
+        "example": "The children played on the sandy beach.",
+        "exampleZh": "孩子們在沙灘上玩耍。"
     },
     {
         "id": 30124,
@@ -1236,8 +1236,8 @@ const jhWordsDB = [
         "uk": "/biːn/",
         "zh": "n. 豆子、豆、菜豆、豆科植物；v. 擊中（某人）頭部",
         "unit": 17,
-        "example": "This is my favourite bean, and they are long bean.",
-        "exampleZh": "這是我最喜歡的豆子，它們是長豆子。"
+        "example": "Eat your green beans for healthy growth.",
+        "exampleZh": "多吃四季豆有助於健康成長。"
     },
     {
         "id": 30125,
@@ -1246,8 +1246,8 @@ const jhWordsDB = [
         "uk": "/beə(r)/",
         "zh": "v. 承受、手持、攜帶、運輸；n. 熊、粗暴無禮的人、沒教養的人、體格笨重的男人",
         "unit": 17,
-        "example": "A huge brown bear was spotted near the mountain campsite.",
-        "exampleZh": "有人在山區營地附近發現了一隻巨大的棕熊。"
+        "example": "I cannot bear this hot summer weather.",
+        "exampleZh": "我受不了這個炎熱的夏天天氣。"
     },
     {
         "id": 30126,
@@ -1256,8 +1256,8 @@ const jhWordsDB = [
         "uk": "/bɪəd/",
         "zh": "n. 鬍鬚、絡腮鬍子、頷毛、須；v. 對抗、頂撞、抓……的鬍鬚、提供鬍鬚",
         "unit": 17,
-        "example": "He's had his beard shaved off.",
-        "exampleZh": "他的鬍子已經被剃掉了。"
+        "example": "My uncle has a long white beard.",
+        "exampleZh": "我的叔叔留著一把長長的白鬍子。"
     },
     {
         "id": 30127,
@@ -1266,8 +1266,8 @@ const jhWordsDB = [
         "uk": "/biːt/",
         "zh": "v. 打敗、敲、擊、打；n. 節拍、敲、擊、強音拍；adj. 筋疲力盡、疲憊不堪、垮掉的一代的",
         "unit": 17,
-        "example": "You can't beat Italian shoes.",
-        "exampleZh": "你無法打敗義大利鞋。"
+        "example": "Our team can beat them this afternoon.",
+        "exampleZh": "我們隊今天下午能打敗他們。"
     },
     {
         "id": 30128,
@@ -1276,8 +1276,8 @@ const jhWordsDB = [
         "uk": "/ˈbjuːtɪf(ə)l/",
         "zh": "adj. 美麗的、漂亮的、令人愉悅的、美妙的",
         "unit": 17,
-        "example": "It was a beautiful morning.",
-        "exampleZh": "這是一個美麗的早晨。"
+        "example": "The flowers in the park are beautiful.",
+        "exampleZh": "公園裡的花朵很美麗。"
     },
     {
         "id": 30129,
@@ -1286,8 +1286,8 @@ const jhWordsDB = [
         "uk": "/ˈbjuːti/",
         "zh": "n. 美貌、美麗、漂亮、美好的事物；adj. 美容的",
         "unit": 17,
-        "example": "Her beauty appeared ageless.",
-        "exampleZh": "她的美麗顯得永恆。"
+        "example": "We can see the beauty of flowers.",
+        "exampleZh": "我們能看見花朵的美麗。"
     },
     {
         "id": 30130,
@@ -1306,8 +1306,8 @@ const jhWordsDB = [
         "uk": "/bɪˈkʌm/",
         "zh": "vt. 成為、變得、變成、適合",
         "unit": 17,
-        "example": "Doctors become inured to death.",
-        "exampleZh": "醫生已經見怪不怪了。"
+        "example": "She wants to become a good doctor.",
+        "exampleZh": "她想成為一名好醫生。"
     },
     {
         "id": 30132,
@@ -1316,8 +1316,8 @@ const jhWordsDB = [
         "uk": "/bed/",
         "zh": "n. 床、床鋪、床位、底部；v. 把……固定、嵌入、與（某人）上床",
         "unit": 17,
-        "example": "It's such a comfortable bed.",
-        "exampleZh": "這是一張多麼舒服的床。"
+        "example": "The tired boy went to bed early.",
+        "exampleZh": "疲倦的男孩很早就上床睡覺了。"
     },
     {
         "id": 30133,
@@ -1326,8 +1326,8 @@ const jhWordsDB = [
         "uk": "/ˈbedruːm/",
         "zh": "n. 臥室；adj. 兩性關係的、城郊住宅區的",
         "unit": 17,
-        "example": "The main bedroom is enormous.",
-        "exampleZh": "主臥室很大。"
+        "example": "My bedroom has a big soft bed.",
+        "exampleZh": "我的臥室有一張又大又軟的床。"
     },
     {
         "id": 30134,
@@ -1346,8 +1346,8 @@ const jhWordsDB = [
         "uk": "/biːf/",
         "zh": "n. 牛肉、肌肉、力量、力氣；v. 抱怨、發牢騷",
         "unit": 17,
-        "example": "The nation also exports beef.",
-        "exampleZh": "該國也出口牛肉。"
+        "example": "We had fresh beef noodles for dinner.",
+        "exampleZh": "我們晚餐吃了新鮮的牛肉麵。"
     },
     {
         "id": 30136,
@@ -1356,8 +1356,8 @@ const jhWordsDB = [
         "uk": "/bɪə(r)/",
         "zh": "n. 啤酒、一杯（或一瓶，一罐）啤酒、根汁啤酒",
         "unit": 17,
-        "example": "Are you a beer drinker?",
-        "exampleZh": "你是啤酒愛好者嗎？"
+        "example": "My dad drank a cold beer yesterday.",
+        "exampleZh": "我爸爸昨天喝了一杯冰啤酒。"
     },
     {
         "id": 30137,
@@ -1376,8 +1376,8 @@ const jhWordsDB = [
         "uk": "/bɪˈɡɪn/",
         "zh": "v. 開始、著手、開始說、開始發生",
         "unit": 17,
-        "example": "Their trial will shortly begin.",
-        "exampleZh": "他們的審判即將開始。"
+        "example": "Classes begin at eight in the morning.",
+        "exampleZh": "課程在早上八點開始。"
     },
     {
         "id": 30139,
@@ -1386,8 +1386,8 @@ const jhWordsDB = [
         "uk": "/bɪˈɡɪnə(r)/",
         "zh": "n. 初學者、新手、生手、初級的",
         "unit": 17,
-        "example": "The white belt signifies that he's an absolute beginner.",
-        "exampleZh": "白帶錶示他是個絕對的初學者。"
+        "example": "This book is written for each beginner.",
+        "exampleZh": "這本書是為每位初學者撰寫的。"
     },
     {
         "id": 30140,
@@ -1426,8 +1426,8 @@ const jhWordsDB = [
         "uk": "/bɪˈliːv/",
         "zh": "v. 相信、認為、猜想、信教",
         "unit": 17,
-        "example": "They don't believe in marriage.",
-        "exampleZh": "他們不相信婚姻。"
+        "example": "I believe what you say to me.",
+        "exampleZh": "我相信你對我說的話。"
     },
     {
         "id": 30144,
@@ -1436,8 +1436,8 @@ const jhWordsDB = [
         "uk": "/bel/",
         "zh": "n. 鈴、鍾、鐘聲、鈴聲；v. 系鈴、裝鍾、發出響鈴（或敲鐘）般的聲音、給……打電話",
         "unit": 17,
-        "example": "The shop bell jangled loudly.",
-        "exampleZh": "商店的門鈴叮噹作響。"
+        "example": "The school bell rang at eight o'clock.",
+        "exampleZh": "學校的鐘聲在八點鐘響起。"
     },
     {
         "id": 30145,
@@ -1446,8 +1446,8 @@ const jhWordsDB = [
         "uk": "/bɪˈlɒŋ/",
         "zh": "vi. 屬於、歸……所有、適應、應在……地方",
         "unit": 17,
-        "example": "The islands belong to Spain.",
-        "exampleZh": "這些島嶼屬於西班牙。"
+        "example": "These books belong to my older sister.",
+        "exampleZh": "這些書是我姐姐的。"
     },
     {
         "id": 30146,
@@ -1456,8 +1456,8 @@ const jhWordsDB = [
         "uk": "/bɪˈləʊ/",
         "zh": "prep. 在……下面、在……以下、低於；adv. 以下、在下面、在……以下、在下文中",
         "unit": 17,
-        "example": "It's 15 degrees below freezing.",
-        "exampleZh": "氣溫低於冰點 15 度。"
+        "example": "Small fish swim below the blue water.",
+        "exampleZh": "小魚在藍色的水面下游泳。"
     },
     {
         "id": 30147,
@@ -1476,8 +1476,8 @@ const jhWordsDB = [
         "uk": "/bentʃ/",
         "zh": "n. 長凳、長椅、長方形工作臺、法官席；v. 把（場上隊員）換下、展覽、仰臥推舉、給……以席位",
         "unit": 17,
-        "example": "We sat primly at either end of a long bench.",
-        "exampleZh": "我們一本正經地坐在長凳的兩端。"
+        "example": "An old man sat on the bench.",
+        "exampleZh": "一位老人坐在長凳上。"
     },
     {
         "id": 30149,
@@ -1486,8 +1486,8 @@ const jhWordsDB = [
         "uk": "/bɪˈsaɪdz/",
         "zh": "prep. 除了、除……之外；adv. 此外、而且、再說、也",
         "unit": 17,
-        "example": "I've got no family besides my parents.",
-        "exampleZh": "除了父母之外我沒有家人。"
+        "example": "No one was there besides my sister.",
+        "exampleZh": "除了我妹妹之外，沒有人在那裡。"
     },
     {
         "id": 30150,
@@ -1496,8 +1496,8 @@ const jhWordsDB = [
         "uk": "/bɪˈtwiːn/",
         "zh": "prep. 在……之間、在……中間、介於……之間、分隔著；adv. 介於……之間",
         "unit": 17,
-        "example": "He toggled between the two windows.",
-        "exampleZh": "他在兩個視窗之間切換。"
+        "example": "The park is between the two houses.",
+        "exampleZh": "公園介於這兩棟房子之間。"
     },
     {
         "id": 30151,
@@ -1506,8 +1506,8 @@ const jhWordsDB = [
         "uk": "/bɪˈjɒnd/",
         "zh": "prep. 超過、在（或向）……較遠的一邊、晚於、遲於；adv. 在……之外、在另一邊、在（或向）更遠處、到……之後；n. 來生、再世、遠處的事物",
         "unit": 17,
-        "example": "Her honesty is beyond question.",
-        "exampleZh": "她的誠實是毋庸置疑的。"
+        "example": "The hills lie far beyond that river.",
+        "exampleZh": "山丘座落在遠遠超越那條河的地方。"
     },
     {
         "id": 30152,
@@ -1536,8 +1536,8 @@ const jhWordsDB = [
         "uk": "/bɪl/",
         "zh": "n. 帳單、鈔票、賬單、議案；vt. 開賬單、把……宣傳為、宣佈（某人）將參加演出",
         "unit": 17,
-        "example": "Your bill includes line rental.",
-        "exampleZh": "您的帳單包括線路租金。"
+        "example": "Ask the waiter for the dinner bill.",
+        "exampleZh": "請服務生拿晚餐的帳單過來。"
     },
     {
         "id": 30155,
@@ -1546,8 +1546,8 @@ const jhWordsDB = [
         "uk": "/baɪˈɒlədʒi/",
         "zh": "n. 生物學、生命機理、作用方式、生理習性",
         "unit": 17,
-        "example": "Biology is my favourite subject.",
-        "exampleZh": "生物是我最喜歡的學科。"
+        "example": "We learn biology in this room.",
+        "exampleZh": "我們在這間教室研讀生物學。"
     },
     {
         "id": 30156,
@@ -1556,8 +1556,8 @@ const jhWordsDB = [
         "uk": "/bɜːd/",
         "zh": "n. 鳥、年輕女子、姑娘、人",
         "unit": 17,
-        "example": "The bird continued to warble.",
-        "exampleZh": "鳥兒繼續鳴叫。"
+        "example": "A little blue bird is singing outside.",
+        "exampleZh": "一隻藍色小鳥正在外面唱歌。"
     },
     {
         "id": 30157,
@@ -1576,8 +1576,8 @@ const jhWordsDB = [
         "uk": "/baɪt/",
         "zh": "v. 咬、咬傷、叮、蜇；n. 叮、咬、一口的量、咬傷",
         "unit": 17,
-        "example": "Most European spiders don't bite.",
-        "exampleZh": "大多數歐洲蜘蛛不咬人。"
+        "example": "Be careful, the dog might bite you.",
+        "exampleZh": "小心點，那隻狗可能會咬你。"
     },
     {
         "id": 30159,
@@ -1596,8 +1596,8 @@ const jhWordsDB = [
         "uk": "/blæk/",
         "zh": "adj. 黑色的、黑的、黑色人種的、不加牛奶的；n. 黑色、黑、黑人、黑色衣服；v. 使變黑、弄黑、抵制、拒絕",
         "unit": 17,
-        "example": "The exhaust streamed black smoke.",
-        "exampleZh": "排氣管冒著黑煙。"
+        "example": "My father bought a black car yesterday.",
+        "exampleZh": "我爸爸昨天買了一輛黑色的車。"
     },
     {
         "id": 30161,
@@ -1616,8 +1616,8 @@ const jhWordsDB = [
         "uk": "/bleɪm/",
         "zh": "vt. 責備、責怪、歸咎於、怨；n. 責備、過錯、罪責",
         "unit": 17,
-        "example": "No blame attaches to you.",
-        "exampleZh": "你一點責任也沒有。"
+        "example": "Do not blame him for that.",
+        "exampleZh": "不要因為那件事責怪他。"
     },
     {
         "id": 30163,
@@ -1636,8 +1636,8 @@ const jhWordsDB = [
         "uk": "/ˈblæŋkɪt/",
         "zh": "n. 毯子、毛毯、厚層、覆蓋層；vt. 覆蓋、蓋住、籠罩、消除；adj. 總括的、全面的、通用的",
         "unit": 17,
-        "example": "I wrapped a blanket around the baby.",
-        "exampleZh": "我用毯子把嬰兒裹了起來。"
+        "example": "Keep warm with a thick blanket.",
+        "exampleZh": "用一條厚毛毯保暖。"
     },
     {
         "id": 30165,
@@ -1646,8 +1646,8 @@ const jhWordsDB = [
         "uk": "/blaɪnd/",
         "zh": "adj. 盲的、失明的、未察覺的、視而不見的；vt. 使失明、使變瞎、使眼花、使目眩；n. 窗簾、捲簾、埋伏處、伏擊處；adv. 看不清地、失去理智地、盲目地、無準備地",
         "unit": 17,
-        "example": "Doctors think he will go blind.",
-        "exampleZh": "醫生認為他會失明。"
+        "example": "The bright light can blind your eyes.",
+        "exampleZh": "強烈的光線會使你的雙眼眩目。"
     },
     {
         "id": 30166,
@@ -1656,8 +1656,8 @@ const jhWordsDB = [
         "uk": "/blɒk/",
         "zh": "n. 街區、大塊、一塊、街段；vt. 阻塞、堵塞、遮住",
         "unit": 17,
-        "example": "Block draughts around doors and windows.",
-        "exampleZh": "阻擋門窗周圍的氣流。"
+        "example": "They walked around the city block together.",
+        "exampleZh": "他們一起繞著市區街區散步。"
     },
     {
         "id": 30167,
@@ -1666,8 +1666,8 @@ const jhWordsDB = [
         "uk": "/blʌd/",
         "zh": "n. 血、血液、出身、血統；v. 使取得初次經驗、用獵物的血塗（新手的）臉、讓（獵狗）第一次嘗血",
         "unit": 17,
-        "example": "The wound was oozing blood.",
-        "exampleZh": "傷口正在滲血。"
+        "example": "Wash the red blood off your hand.",
+        "exampleZh": "把你手上的鮮血洗掉。"
     },
     {
         "id": 30168,
@@ -1676,8 +1676,8 @@ const jhWordsDB = [
         "uk": "/ˈblʌdi/",
         "zh": "adj. 血腥的、流血的、沾滿血的、殘酷的；adv. 非常、很、該死地、討厭地；vt. 使受傷、使流血、血染、使沾上鮮血",
         "unit": 17,
-        "example": "She did bloody well to win that race.",
-        "exampleZh": "她表現出色，贏得了那場比賽。"
+        "example": "He washed his bloody knee after the fall.",
+        "exampleZh": "他跌倒後把流血的膝蓋清洗乾淨。"
     },
     {
         "id": 30169,
@@ -1686,8 +1686,8 @@ const jhWordsDB = [
         "uk": "/bləʊ/",
         "zh": "v. 吹、刮、吹氣、吹響；n. 打擊、大風、強風、吹氣",
         "unit": 17,
-        "example": "Blow! I completely forgot it.",
-        "exampleZh": "吹！我完全忘記了。"
+        "example": "Cold winds blow from the north today.",
+        "exampleZh": "今天寒風從北方吹來。"
     },
     {
         "id": 30170,
@@ -1696,8 +1696,8 @@ const jhWordsDB = [
         "uk": "/bluː/",
         "zh": "adj. 藍色的、憂鬱的、沮喪的、保守的；n. 藍色、天藍色、天空、大海；v. 變成藍色、用藍色漂白劑洗、揮霍、亂花",
         "unit": 17,
-        "example": "His eyes were piercingly blue.",
-        "exampleZh": "他的眼睛是銳利的藍色。"
+        "example": "The clear sky is very blue today.",
+        "exampleZh": "今天晴朗的天空非常蔚藍。"
     },
     {
         "id": 30171,
@@ -1706,8 +1706,8 @@ const jhWordsDB = [
         "uk": "/bəʊt/",
         "zh": "n. 船、小船、輪船；vi. 划船",
         "unit": 17,
-        "example": "The boat chugged slowly along.",
-        "exampleZh": "小船緩緩前進。"
+        "example": "We took a small boat across the lake.",
+        "exampleZh": "我們搭乘一艘小船穿過了湖泊。"
     },
     {
         "id": 30172,
@@ -1716,8 +1716,8 @@ const jhWordsDB = [
         "uk": "/ˈbɒdi/",
         "zh": "n. 身體、軀體、軀幹、屍體；v. 賦予（抽象事物）以形體、使具體化、製造（汽車）的車身",
         "unit": 17,
-        "example": "Exercise tones up your body.",
-        "exampleZh": "運動可以強身健體。"
+        "example": "Exercise is good for your whole body.",
+        "exampleZh": "運動對你的全身都有好處。"
     },
     {
         "id": 30173,
@@ -1726,8 +1726,8 @@ const jhWordsDB = [
         "uk": "/bɔɪl/",
         "zh": "v. 煮沸、沸騰、燒開、用開水煮；n. 沸騰、煮沸、癤、皮下膿腫",
         "unit": 17,
-        "example": "She put some potatoes on to boil.",
-        "exampleZh": "她放了一些馬鈴薯來煮。"
+        "example": "Boil some clean water in the pot.",
+        "exampleZh": "在鍋子裡煮沸一些乾淨的水。"
     },
     {
         "id": 30174,
@@ -1736,8 +1736,8 @@ const jhWordsDB = [
         "uk": "/bɒm/",
         "zh": "n. 炸彈、爆炸裝置、失敗的東西、長傳；vt. 轟炸、炸燬、疾行、快速前進",
         "unit": 17,
-        "example": "The bomb has been safely disposed of.",
-        "exampleZh": "炸彈已被安全處置。"
+        "example": "The loud bomb exploded during the war.",
+        "exampleZh": "那枚巨大的炸彈在戰爭期間爆炸了。"
     },
     {
         "id": 30175,
@@ -1746,8 +1746,8 @@ const jhWordsDB = [
         "uk": "/bəʊn/",
         "zh": "n. 骨頭、骨、骨質、基本結構；vt. 挑刺、剔骨頭、施骨肥於、性交；adv. 非常、完全地",
         "unit": 17,
-        "example": "The dog was gnawing a bone.",
-        "exampleZh": "那隻狗正在啃骨頭。"
+        "example": "The hungry dog chewed on a bone.",
+        "exampleZh": "飢餓的狗啃咬著一根骨頭。"
     },
     {
         "id": 30176,
@@ -1756,8 +1756,8 @@ const jhWordsDB = [
         "uk": "/bʊk/",
         "zh": "n. 書、書籍、本子、簿冊；vt. 預訂、預約、將……記錄在案、記名警告",
         "unit": 17,
-        "example": "Shoot! I've forgotten my book!",
-        "exampleZh": "射擊！我忘了帶書！"
+        "example": "I like to read this story book.",
+        "exampleZh": "我喜歡讀這本故事書。"
     },
     {
         "id": 30177,
@@ -1766,8 +1766,8 @@ const jhWordsDB = [
         "uk": "/ˈbʊkkeɪs/",
         "zh": "n. 書櫥、書櫃、書架",
         "unit": 17,
-        "example": "The bookcase is screwed to the wall.",
-        "exampleZh": "書櫃是用螺絲固定在牆上的。"
+        "example": "Put the storybooks back into the bookcase.",
+        "exampleZh": "把故事書放回書櫃裡。"
     },
     {
         "id": 30178,
@@ -1776,8 +1776,8 @@ const jhWordsDB = [
         "uk": "/bɔːd/",
         "zh": "adj. 厭倦的、無聊的、有特定口徑的；v. 使厭煩、鑽、盯著看",
         "unit": 17,
-        "example": "The boys were getting bored.",
-        "exampleZh": "男孩子們漸漸變得厭煩起來。"
+        "example": "He was bored with the film.",
+        "exampleZh": "他對那部電影感到無聊。"
     },
     {
         "id": 30179,
@@ -1816,8 +1816,8 @@ const jhWordsDB = [
         "uk": "/bəʊθ/",
         "zh": "det. 雙方、兩者；pron. 雙方、兩者；conj. …和…都、……和……都；adj. 兩…、雙…",
         "unit": 17,
-        "example": "Both partners shared childcare.",
-        "exampleZh": "雙方共同照顧孩子。"
+        "example": "Both of my brothers like football.",
+        "exampleZh": "我的兩個哥哥都喜歡足球。"
     },
     {
         "id": 30183,
@@ -1856,8 +1856,8 @@ const jhWordsDB = [
         "uk": "/baʊ; bəʊ/",
         "zh": "v. 鞠躬、點頭、低下、停止對抗；n. 鞠躬、點頭、船頭、蝴蝶結",
         "unit": 17,
-        "example": "He was armed with a bow and arrow.",
-        "exampleZh": "他手持弓箭。"
+        "example": "Bow your head to show deep respect.",
+        "exampleZh": "低頭鞠躬以表示深切的敬意。"
     },
     {
         "id": 30187,
@@ -1886,8 +1886,8 @@ const jhWordsDB = [
         "uk": "/bɒks/",
         "zh": "n. 盒子、盒、箱、匣；vi. 拳擊、把……裝箱、鬥拳、參加拳擊比賽",
         "unit": 17,
-        "example": "She was holding a large box.",
-        "exampleZh": "她手裡拿著一個大盒子。"
+        "example": "He put the old toys in a box.",
+        "exampleZh": "他把舊玩具放進一個盒子裡。"
     },
     {
         "id": 30190,
@@ -1896,8 +1896,8 @@ const jhWordsDB = [
         "uk": "/bɔɪ/",
         "zh": "n. 男孩、兒子、男青年、小夥子；int. 好傢伙、好樣的",
         "unit": 17,
-        "example": "The boy has great potential.",
-        "exampleZh": "這個男孩有很大的潛力。"
+        "example": "The tall boy is my best friend.",
+        "exampleZh": "那個高個子男孩是我最好的朋友。"
     },
     {
         "id": 30191,
@@ -1906,8 +1906,8 @@ const jhWordsDB = [
         "uk": "/breɪn/",
         "zh": "n. 腦、智力、智慧、聰明的人；v. 猛擊……的頭部",
         "unit": 17,
-        "example": "Alcohol acts quickly on the brain.",
-        "exampleZh": "酒精對大腦的作用很快。"
+        "example": "Your brain needs food to think well.",
+        "exampleZh": "你的大腦需要營養才能良好思考。"
     },
     {
         "id": 30192,
@@ -1916,8 +1916,8 @@ const jhWordsDB = [
         "uk": "/brɑːntʃ/",
         "zh": "n. 分店、樹枝、分枝、分支機構；v. 分岔、岔開、出枝、發出新枝",
         "unit": 17,
-        "example": "He chopped a branch off the tree.",
-        "exampleZh": "他從樹上砍下一根樹枝。"
+        "example": "A bird sat on the tree branch.",
+        "exampleZh": "一隻小鳥停在樹枝上。"
     },
     {
         "id": 30193,
@@ -1926,8 +1926,8 @@ const jhWordsDB = [
         "uk": "/brænd/",
         "zh": "n. 品牌、商標、一種、一類；vt. 商標、打烙印於、給……冠以惡名、譴責",
         "unit": 17,
-        "example": "Choose whichever brand you prefer.",
-        "exampleZh": "選擇您喜歡的品牌。"
+        "example": "What brand of shoes do you wear?",
+        "exampleZh": "你平時穿什麼品牌的鞋子？"
     },
     {
         "id": 30194,
@@ -1936,8 +1936,8 @@ const jhWordsDB = [
         "uk": "/breɪv/",
         "zh": "adj. 勇敢的、無畏的、非常好的、華麗的；vt. 勇敢面對；n. 勇敢的人、印第安武士",
         "unit": 17,
-        "example": "Charles was brave and remarkably good-humoured.",
-        "exampleZh": "查爾斯很勇敢，而且非常幽默。"
+        "example": "The boy was very brave today.",
+        "exampleZh": "那個男孩今天非常勇敢。"
     },
     {
         "id": 30195,
@@ -1946,8 +1946,8 @@ const jhWordsDB = [
         "uk": "/bred/",
         "zh": "n. 麵包、錢財；v. 在……上撒麵包屑",
         "unit": 17,
-        "example": "The bread had a spongy texture.",
-        "exampleZh": "麵包質地鬆軟。"
+        "example": "We eat fresh bread for breakfast everyday.",
+        "exampleZh": "我們每天早餐都吃新鮮麵包。"
     },
     {
         "id": 30196,
@@ -1956,8 +1956,8 @@ const jhWordsDB = [
         "uk": "/breɪk/",
         "zh": "v. 打破、折斷、破裂、撕開；n. 休息、間歇、小憩、課間休息",
         "unit": 17,
-        "example": "You need a break from routine.",
-        "exampleZh": "你需要從日常生活中休息一下。"
+        "example": "Do not break the glass cup, please.",
+        "exampleZh": "請不要打破那個玻璃杯。"
     },
     {
         "id": 30197,
@@ -1986,8 +1986,8 @@ const jhWordsDB = [
         "uk": "/brɪdʒ/",
         "zh": "n. 橋梁、橋、橋樑、紐帶；vt. 連接、彌合、消除、兼具……的特點",
         "unit": 17,
-        "example": "When was the bridge constructed?",
-        "exampleZh": "這座橋是什麼時候蓋的？"
+        "example": "Cars drive over the big long bridge.",
+        "exampleZh": "汽車開過那座又大又長的橋樑。"
     },
     {
         "id": 30200,
@@ -1996,8 +1996,8 @@ const jhWordsDB = [
         "uk": "/briːf/",
         "zh": "adj. 簡短的、短暫的、很短的；vt. 給……指示、向……介紹情況、向（辯護律師）提供案情摘要；n. 概要、指示、任務簡介、摘要",
         "unit": 17,
-        "example": "He let out a brief cackle.",
-        "exampleZh": "他發出短促的咯咯笑聲。"
+        "example": "He gave a brief talk about safety.",
+        "exampleZh": "他針對安全問題發表了簡短的談話。"
     },
     {
         "id": 30201,
@@ -2006,8 +2006,8 @@ const jhWordsDB = [
         "uk": "/braɪt/",
         "zh": "adj. 明亮的、鮮豔的、聰明的、歡快的；n. 前大燈、頭燈、明亮醒目的顏色；adv. 光亮地、明亮地",
         "unit": 17,
-        "example": "Bright colours are his signature.",
-        "exampleZh": "明亮的色彩是他的標誌。"
+        "example": "The sun is very bright this morning.",
+        "exampleZh": "今天早上的太陽非常明亮。"
     },
     {
         "id": 30202,
@@ -2016,8 +2016,8 @@ const jhWordsDB = [
         "uk": "/brɪŋ/",
         "zh": "vt. 帶來、拿來、使……轉入、移動",
         "unit": 17,
-        "example": "All you need bring are sheets.",
-        "exampleZh": "您只需攜帶床單即可。"
+        "example": "Please bring your homework to school tomorrow.",
+        "exampleZh": "請明天把作業帶到學校。"
     },
     {
         "id": 30203,
@@ -2026,8 +2026,8 @@ const jhWordsDB = [
         "uk": "/brɔːd/",
         "zh": "adj. 寬闊的、寬廣的、……寬、咧開嘴的；n. 對女人的粗俗稱呼、寬闊部分；adv. 寬闊地",
         "unit": 17,
-        "example": "He is tall, broad and muscular.",
-        "exampleZh": "他身材高大、寬闊、肌肉發達。"
+        "example": "The river has a very broad bridge.",
+        "exampleZh": "這條河流上有一座非常寬闊的橋。"
     },
     {
         "id": 30204,
@@ -2036,8 +2036,8 @@ const jhWordsDB = [
         "uk": "/ˈbrɔːdkɑːst/",
         "zh": "vt. 廣播、散佈、傳播、播撒；n. 電視節目、廣播節目、廣播；adj. 廣播（或電視）節目的；adv. 四散地、撒播地",
         "unit": 17,
-        "example": "The programme was broadcast nationally.",
-        "exampleZh": "該節目在全國播出。"
+        "example": "They will broadcast the game on TV.",
+        "exampleZh": "他們將在電視上轉播這場比賽。"
     },
     {
         "id": 30205,
@@ -2046,8 +2046,8 @@ const jhWordsDB = [
         "uk": "/ˈbrʌðə(r)/",
         "zh": "n. 兄弟、哥哥、弟弟、同類人；int. 老兄",
         "unit": 17,
-        "example": "She's smarter than her brother.",
-        "exampleZh": "她比哥哥聰明。"
+        "example": "My brother plays with me every weekend.",
+        "exampleZh": "我哥哥每個週末都和我一起玩。"
     },
     {
         "id": 30206,
@@ -2056,8 +2056,8 @@ const jhWordsDB = [
         "uk": "/braʊn/",
         "zh": "adj. 棕色的、褐色的、膚色深的、曬黑的；n. 褐色、棕色、褐色的東西、眼蝶；vt. 變成棕色、成褐色",
         "unit": 17,
-        "example": "He removed his brown slip-ons.",
-        "exampleZh": "他脫下了棕色便鞋。"
+        "example": "The dog has nice brown fur today.",
+        "exampleZh": "這隻狗有好看的棕色毛皮。"
     },
     {
         "id": 30207,
@@ -2096,8 +2096,8 @@ const jhWordsDB = [
         "uk": "/ˈbʌfeɪ; ˈbʊfeɪ/",
         "zh": "n. 自助餐、快餐部、點心櫃、餐具架；vt. 連續猛擊、打擊、虐待、不公正地對待；adj. 自助的、自助餐的",
         "unit": 17,
-        "example": "Dinner will be a cold buffet, not a sit-down meal.",
-        "exampleZh": "主餐是自助冷食，不是坐著等服務員送來的那種。"
+        "example": "We had dinner at a buffet.",
+        "exampleZh": "我們在自助餐廳吃了晚餐。"
     },
     {
         "id": 30211,
@@ -2106,8 +2106,8 @@ const jhWordsDB = [
         "uk": "/bʌɡ/",
         "zh": "n. 昆蟲、蟲子、小病、輕微的傳染病；vt. 煩擾、使惱怒、裝竊聽器、張大眼睛",
         "unit": 17,
-        "example": "I only did it to bug my parents.",
-        "exampleZh": "我這樣做只是為了打擾我的父母。"
+        "example": "There is a small bug on the leaf.",
+        "exampleZh": "葉子上有一隻小蟲子。"
     },
     {
         "id": 30212,
@@ -2116,8 +2116,8 @@ const jhWordsDB = [
         "uk": "/bɪld/",
         "zh": "v. 建造、修建、發展、建立；n. 體形、體格、造型、構造",
         "unit": 17,
-        "example": "There are no plans to build new offices.",
-        "exampleZh": "目前沒有建造新辦事處的計劃。"
+        "example": "They want to build a new house.",
+        "exampleZh": "他們想建造一棟新房子。"
     },
     {
         "id": 30213,
@@ -2146,8 +2146,8 @@ const jhWordsDB = [
         "uk": "/ˈbʌnd(ə)l/",
         "zh": "n. 包、束、捆、非常；vt. 匆匆打發、亂塞、匆忙趕往、捆綁銷售",
         "unit": 17,
-        "example": "That car must have cost a bundle.",
-        "exampleZh": "那輛車肯定花了一大筆錢。"
+        "example": "He has a big bundle of wood.",
+        "exampleZh": "他有一大捆木柴。"
     },
     {
         "id": 30216,
@@ -2156,8 +2156,8 @@ const jhWordsDB = [
         "uk": "/bɜːn/",
         "zh": "v. 燃燒、消耗、燒壞、燒燬；n. 燒傷、灼傷、燒痕、肌肉痠痛感",
         "unit": 17,
-        "example": "Turn the heat down or it'll burn.",
-        "exampleZh": "把火關小，不然會燒焦的。"
+        "example": "Dry wood will burn very fast.",
+        "exampleZh": "乾木柴會燃燒得非常快。"
     },
     {
         "id": 30217,
@@ -2166,8 +2166,8 @@ const jhWordsDB = [
         "uk": "/bɜːst/",
         "zh": "v. 爆炸、爆裂、脹開；n. 破裂、突發、迸發、爆裂",
         "unit": 17,
-        "example": "The class burst out laughing.",
-        "exampleZh": "全班哄堂大笑。"
+        "example": "The big box burst open at once.",
+        "exampleZh": "那個大箱子突然爆開了。"
     },
     {
         "id": 30218,
@@ -2176,8 +2176,8 @@ const jhWordsDB = [
         "uk": "/bʌs/",
         "zh": "n. 公車、公共汽車、匯流排、母線；vt. 乘公共汽車、用公共汽車運送、收拾",
         "unit": 17,
-        "example": "The bus bounced down the hill.",
-        "exampleZh": "公共汽車彈著衝下山。"
+        "example": "I take the yellow bus to school.",
+        "exampleZh": "我搭乘黃色公車去上學。"
     },
     {
         "id": 30219,
@@ -2186,8 +2186,8 @@ const jhWordsDB = [
         "uk": "/ˈbɪznəs/",
         "zh": "n. 商業、買賣、生意、商務",
         "unit": 17,
-        "example": "They flew business class.",
-        "exampleZh": "他們搭乘的是商務艙。"
+        "example": "My uncle runs a small fruit business.",
+        "exampleZh": "我叔叔做一門小水果生意。"
     },
     {
         "id": 30220,
@@ -2196,8 +2196,8 @@ const jhWordsDB = [
         "uk": "/ˈbɪznəsmæn/",
         "zh": "n. 商人、生意人",
         "unit": 17,
-        "example": "Warren was an adventurous businessman.",
-        "exampleZh": "沃倫是一位有冒險精神的商人。"
+        "example": "My uncle is a rich businessman.",
+        "exampleZh": "我叔叔是一位富有的商人。"
     },
     {
         "id": 30221,
@@ -2206,8 +2206,8 @@ const jhWordsDB = [
         "uk": "/ˈbɪzi/",
         "zh": "adj. 忙碌的、繁忙的、熱鬧的、佔線的；vt. 使忙於",
         "unit": 17,
-        "example": "We're not always this busy!",
-        "exampleZh": "我們並不總是這麼忙！"
+        "example": "My mother is busy in the kitchen.",
+        "exampleZh": "我媽媽在廚房裡忙碌著。"
     },
     {
         "id": 30222,
@@ -2216,8 +2216,8 @@ const jhWordsDB = [
         "uk": "/bʌt; bət/",
         "zh": "conj. 但是、而、相反、可是；prep. 除了、除……外；adv. 僅僅、只是；n. 藉口、託詞",
         "unit": 17,
-        "example": "I'm married, but we're separated.",
-        "exampleZh": "我已婚，但我們分居了。"
+        "example": "He ran fast, but missed the train.",
+        "exampleZh": "他跑得很快，但錯過了火車。"
     },
     {
         "id": 30223,
@@ -2226,8 +2226,8 @@ const jhWordsDB = [
         "uk": "/ˈbʌtə(r)/",
         "zh": "n. 奶油、黃油、牛油、水果醬；vt. 塗黃油於",
         "unit": 17,
-        "example": "Butter is perishable and can go rancid.",
-        "exampleZh": "黃油很容易腐爛並且會變質。"
+        "example": "Please spread some butter on the bread.",
+        "exampleZh": "請在麵包上塗抹一些奶油。"
     },
     {
         "id": 30224,
@@ -2236,8 +2236,8 @@ const jhWordsDB = [
         "uk": "/ˈbʌtəflaɪ/",
         "zh": "n. 蝴蝶、見異思遷的人、輕浮易變的人、蝶泳；v. 切成蝴蝶展翅狀、使成蝶形；adj. 蝴蝶狀",
         "unit": 17,
-        "example": "The butterfly fluttered from flower to flower.",
-        "exampleZh": "蝴蝶從一朵花飛到另一朵花。"
+        "example": "A pretty butterfly is on the flower.",
+        "exampleZh": "一隻美麗的蝴蝶停在花朵上。"
     },
     {
         "id": 30225,
@@ -2246,8 +2246,8 @@ const jhWordsDB = [
         "uk": "/ˈbʌt(ə)n/",
         "zh": "n. 鈕扣、按鈕；v. 扣上鈕扣",
         "unit": 17,
-        "example": "This button is for adjusting the volume.",
-        "exampleZh": "這個按鈕是調節音量的。"
+        "example": "Press the blue button to start.",
+        "exampleZh": "按下藍色按鈕即可開始。"
     },
     {
         "id": 30226,
@@ -2256,8 +2256,8 @@ const jhWordsDB = [
         "uk": "/baɪ/",
         "zh": "vt. 買、購買、能買、相信；n. 合算的東西、便宜貨、購買",
         "unit": 17,
-        "example": "Money can't buy you happiness.",
-        "exampleZh": "金錢買不來幸福。"
+        "example": "I want to buy some fresh apples.",
+        "exampleZh": "我想買一些新鮮的蘋果。"
     },
     {
         "id": 30227,
@@ -2266,8 +2266,8 @@ const jhWordsDB = [
         "uk": "/baɪ/",
         "zh": "prep. 由、被、透過、憑藉……；adv. 經過",
         "unit": 17,
-        "example": "They sleep by day and hunt by night.",
-        "exampleZh": "他們白天睡覺，晚上狩獵。"
+        "example": "I go to school by bus everyday.",
+        "exampleZh": "我每天搭乘公車去上學。"
     },
     {
         "id": 30228,
@@ -2296,8 +2296,8 @@ const jhWordsDB = [
         "uk": "/ˌkæfəˈtɪəriə/",
         "zh": "n. 自助餐廳、自助食堂、自助餐館",
         "unit": 17,
-        "example": "Does the college cafeteria provide a healthful diet?",
-        "exampleZh": "此大學餐廳是否供應有益健康的膳食？"
+        "example": "We eat lunch in the cafeteria.",
+        "exampleZh": "我們在學生餐廳吃午餐。"
     },
     {
         "id": 30231,
@@ -2306,8 +2306,8 @@ const jhWordsDB = [
         "uk": "/keɪdʒ/",
         "zh": "n. 籠子、鳥籠、監獄、電梯梯廂；v. 把…關進籠中、把……關進籠中、把……囚禁起來",
         "unit": 17,
-        "example": "The cage smelled of excrement.",
-        "exampleZh": "籠子裡有排泄物的味道。"
+        "example": "The yellow bird is in a cage.",
+        "exampleZh": "那隻黃色的小鳥在籠子裡。"
     },
     {
         "id": 30232,
@@ -2316,8 +2316,8 @@ const jhWordsDB = [
         "uk": "/keɪk/",
         "zh": "n. 蛋糕、餅狀食物、餅、塊；v. 覆蓋、結成硬塊",
         "unit": 17,
-        "example": "That cake looks very tempting.",
-        "exampleZh": "那個蛋糕看起來很誘人。"
+        "example": "Mom baked a sweet birthday cake today.",
+        "exampleZh": "媽媽今天烤了一個甜甜的生日蛋糕。"
     },
     {
         "id": 30233,
@@ -2326,8 +2326,8 @@ const jhWordsDB = [
         "uk": "/ˈkælɪndə(r)/",
         "zh": "n. 日曆、日程表、記事錄、大事記；v. 把……排進日程表、把……記入記事錄",
         "unit": 17,
-        "example": "This is one of the biggest weeks in the racing calendar.",
-        "exampleZh": "這是全年賽馬日程表中最重要的幾個星期之一。"
+        "example": "Look at the calendar on the wall.",
+        "exampleZh": "看一下牆上的日曆。"
     },
     {
         "id": 30234,
@@ -2336,8 +2336,8 @@ const jhWordsDB = [
         "uk": "/kɔːl/",
         "zh": "v. 打電話、稱呼、叫喊、召集；n. 通話、電話、呼叫、號召",
         "unit": 17,
-        "example": "Can we call television art?",
-        "exampleZh": "我們可以稱之為電視藝術嗎？"
+        "example": "Please call me after you get home.",
+        "exampleZh": "你回到家後請打電話給我。"
     },
     {
         "id": 30235,
@@ -2346,8 +2346,8 @@ const jhWordsDB = [
         "uk": "/kɑːm/",
         "zh": "adj. 冷靜的、鎮靜的、沉著的、平靜的；n. 鎮靜、平和、寧靜、安靜；v. 平靜、使平靜、使鎮靜、冷靜下來",
         "unit": 17,
-        "example": "Her voice was surprisingly calm.",
-        "exampleZh": "她的聲音出人意料地平靜。"
+        "example": "Please stay calm and sit down.",
+        "exampleZh": "請保持冷靜並坐下。"
     },
     {
         "id": 30236,
@@ -2356,8 +2356,8 @@ const jhWordsDB = [
         "uk": "/ˈkæm(ə)rə/",
         "zh": "n. 照相機、攝影機",
         "unit": 17,
-        "example": "The camera whirred and clicked.",
-        "exampleZh": "相機嗡嗡作響並發出喀喀聲。"
+        "example": "He took photos with his new camera.",
+        "exampleZh": "他用他的新相機拍照。"
     },
     {
         "id": 30237,
@@ -2386,8 +2386,8 @@ const jhWordsDB = [
         "uk": "/kæn; kən/",
         "zh": "vt. 能、會、可以、應該；aux. 能夠；n. 罐、聽、金屬容器、塑膠容器",
         "unit": 17,
-        "example": "Can you last (out) until I can get help?",
-        "exampleZh": "你能堅持下去直到我得到幫助嗎？"
+        "example": "He opened a cold can of juice.",
+        "exampleZh": "他打開了一罐冰涼的果汁。"
     },
     {
         "id": 30240,
@@ -2396,8 +2396,8 @@ const jhWordsDB = [
         "uk": "/ˈkæns(ə)l/",
         "zh": "vt. 取消、終止、廢除、蓋銷；n. 取消、撤銷、郵票登出章、戳記",
         "unit": 17,
-        "example": "The customer called to cancel.",
-        "exampleZh": "客戶打電話要求取消。"
+        "example": "They had to cancel the outdoor party.",
+        "exampleZh": "他們不得不取消那場戶外派對。"
     },
     {
         "id": 30241,
@@ -2406,8 +2406,8 @@ const jhWordsDB = [
         "uk": "/ˈkænsə(r)/",
         "zh": "n. 癌症、痼疾、社會惡習、巨蟹宮",
         "unit": 17,
-        "example": "He has terminal lung cancer.",
-        "exampleZh": "他患有晚期肺癌。"
+        "example": "The doctor helped him treat cancer.",
+        "exampleZh": "醫生幫助他治療癌症。"
     },
     {
         "id": 30242,
@@ -2436,8 +2436,8 @@ const jhWordsDB = [
         "uk": "/kæp/",
         "zh": "n. 便帽、蓋子、帽子、罩；vt. 覆蓋、戴帽、設上限、限額收取",
         "unit": 17,
-        "example": "He often wore a baseball cap.",
-        "exampleZh": "他經常戴著棒球帽。"
+        "example": "He wears a blue baseball cap today.",
+        "exampleZh": "他今天戴著一頂藍色棒球帽。"
     },
     {
         "id": 30245,
@@ -2446,8 +2446,8 @@ const jhWordsDB = [
         "uk": "/ˈkæptɪn/",
         "zh": "n. 隊長、首領、上尉、上校；vt. 率隊、指揮",
         "unit": 17,
-        "example": "This is the captain speaking.",
-        "exampleZh": "我是船長。"
+        "example": "Tom is the captain of our team.",
+        "exampleZh": "湯姆是我們隊上的隊長。"
     },
     {
         "id": 30246,
@@ -2456,8 +2456,8 @@ const jhWordsDB = [
         "uk": "/kɑː(r)/",
         "zh": "n. 車子、汽車、轎車、車廂",
         "unit": 17,
-        "example": "Buddy totalled his car.",
-        "exampleZh": "巴迪把他的車報廢了。"
+        "example": "My dad drives a blue family car.",
+        "exampleZh": "我爸爸開一輛藍色的家庭房車。"
     },
     {
         "id": 30247,
@@ -2476,8 +2476,8 @@ const jhWordsDB = [
         "uk": "/keə(r)/",
         "zh": "n. 照料、護理、小心；v. 關心、照顧、照料、在意",
         "unit": 17,
-        "example": "Joe Sixpack doesn't care about that.",
-        "exampleZh": "喬·斯克斯帕克並不關心這些。"
+        "example": "Parents take good care of their children.",
+        "exampleZh": "父母好好照顧他們的孩子。"
     },
     {
         "id": 30249,
@@ -2486,8 +2486,8 @@ const jhWordsDB = [
         "uk": "/ˈkeəf(ə)l/",
         "zh": "adj. 小心的、仔細的、謹慎的、周密的",
         "unit": 17,
-        "example": "The trip needs careful planning.",
-        "exampleZh": "旅行需要仔細計劃。"
+        "example": "Please be careful with the hot water.",
+        "exampleZh": "請小心熱水。"
     },
     {
         "id": 30250,
@@ -2496,8 +2496,8 @@ const jhWordsDB = [
         "uk": "/ˈkeələs/",
         "zh": "adj. 粗心的、粗心大意的、疏忽的、自然的",
         "unit": 17,
-        "example": "She had been inexcusably careless.",
-        "exampleZh": "她曾粗心大意得不可原諒。"
+        "example": "Do not be careless with fire.",
+        "exampleZh": "用火時不要粗心大意。"
     },
     {
         "id": 30251,
@@ -2526,8 +2526,8 @@ const jhWordsDB = [
         "uk": "/ˈkæri/",
         "zh": "v. 拿、運送、提、扛；n. 搬運、帶球跑、擲（擊）球距離、射程",
         "unit": 17,
-        "example": "Only one carry-on is allowed.",
-        "exampleZh": "只允許攜帶一件隨身行李。"
+        "example": "Can you carry this bag for me?",
+        "exampleZh": "你能幫我提這個袋子嗎？"
     },
     {
         "id": 30254,
@@ -2536,8 +2536,8 @@ const jhWordsDB = [
         "uk": "/kɑːˈtuːn/",
         "zh": "n. 漫畫、諷刺畫、動畫片、卡通片；v. 給……畫漫畫、畫漫畫",
         "unit": 17,
-        "example": "They visited the Cartoon Museum.",
-        "exampleZh": "他們參觀了卡通博物館。"
+        "example": "The children love to watch this cartoon.",
+        "exampleZh": "小孩子喜歡看這部卡通。"
     },
     {
         "id": 30255,
@@ -2556,8 +2556,8 @@ const jhWordsDB = [
         "uk": "/kæʃ/",
         "zh": "n. 現金、現款、金錢、資金；vt. 兌現、支付現款",
         "unit": 17,
-        "example": "I'm short of cash right now.",
-        "exampleZh": "我眼下正缺錢。"
+        "example": "You can pay with cash or card.",
+        "exampleZh": "你可以用現金或卡片付款。"
     },
     {
         "id": 30257,
@@ -2566,8 +2566,8 @@ const jhWordsDB = [
         "uk": "/kəˈset/",
         "zh": "n. 卡帶、磁帶盒、盒式磁帶、膠片盒",
         "unit": 17,
-        "example": "I swapped him my CD for his cassette.",
-        "exampleZh": "我拿我的鐳射唱片換了他的盒式磁帶。"
+        "example": "My father kept an old music cassette.",
+        "exampleZh": "我父親留著一卷老音樂卡帶。"
     },
     {
         "id": 30258,
@@ -2576,8 +2576,8 @@ const jhWordsDB = [
         "uk": "/ˈkɑːs(ə)l/",
         "zh": "n. 城堡、堡壘、車、豪宅；v. 王車易位、置……於城堡中",
         "unit": 17,
-        "example": "The castle was bathed in moonlight.",
-        "exampleZh": "城堡沐浴在月光裡。"
+        "example": "The king lived in an old castle.",
+        "exampleZh": "國王住在一座古老的城堡裡。"
     },
     {
         "id": 30259,
@@ -2586,8 +2586,8 @@ const jhWordsDB = [
         "uk": "/kæt/",
         "zh": "n. 貓、貓科動物",
         "unit": 17,
-        "example": "Our cat hates being handled.",
-        "exampleZh": "我們的貓討厭被人撫摸。"
+        "example": "The cute cat sleeps on the sofa.",
+        "exampleZh": "那隻可愛的貓睡在沙發上。"
     },
     {
         "id": 30260,
@@ -2606,8 +2606,8 @@ const jhWordsDB = [
         "uk": "/kɔːz/",
         "zh": "n. 原因、動機、事業、理由；vt. 引起、導致",
         "unit": 17,
-        "example": "High temperatures can cause hallucination.",
-        "exampleZh": "高溫會引起幻覺。"
+        "example": "Bad food can cause a sick stomach.",
+        "exampleZh": "不好的食物會引起胃部不適。"
     },
     {
         "id": 30262,
@@ -2616,8 +2616,8 @@ const jhWordsDB = [
         "uk": "/ˈsiːlɪŋ/",
         "zh": "n. 天花板、吊頂、上限、最高限度",
         "unit": 17,
-        "example": "The ceiling was grey and cracked.",
-        "exampleZh": "該天花板是灰色並有裂縫的。"
+        "example": "A bright lamp hangs from the ceiling.",
+        "exampleZh": "一盞明亮的燈掛在天花板上。"
     },
     {
         "id": 30263,
@@ -2636,8 +2636,8 @@ const jhWordsDB = [
         "uk": "/sel/",
         "zh": "n. 細胞、小牢房、電解槽、電池",
         "unit": 17,
-        "example": "Each cell of our bodies contains 46 chromosomes.",
-        "exampleZh": "我們體內的每個細胞都有46條染色體。"
+        "example": "Every living thing has many cells.",
+        "exampleZh": "每個生物都有許多細胞。"
     },
     {
         "id": 30265,
@@ -2646,8 +2646,8 @@ const jhWordsDB = [
         "uk": "/sent/",
         "zh": "n. 分、小錢、分毫、音分",
         "unit": 17,
-        "example": "I'm not a hundred per cent sure.",
-        "exampleZh": "我不是百分百確定。"
+        "example": "This sweet candy costs only fifty cents.",
+        "exampleZh": "這顆甜糖果只要五十美分。"
     },
     {
         "id": 30266,
@@ -2656,8 +2656,8 @@ const jhWordsDB = [
         "uk": "/ˈsentə(r)/",
         "zh": "n. 中心、中間、中心點、活動中心；v. 集中、把……放在中央、以……為中心、注意力集中於",
         "unit": 17,
-        "example": "Any shopping center is fine.",
-        "exampleZh": "任何購物中心都可以。"
+        "example": "They live near the busy town center.",
+        "exampleZh": "他們住在熱鬧的市中心附近。"
     },
     {
         "id": 30267,
@@ -2666,8 +2666,8 @@ const jhWordsDB = [
         "uk": "/ˈsentɪmiːtə(r)/",
         "zh": "n. 公分、釐米",
         "unit": 17,
-        "example": "Who guesses one centimeter?",
-        "exampleZh": "誰猜的一釐米？"
+        "example": "The pencil is ten centimeters long.",
+        "exampleZh": "這支鉛筆有十公分長。"
     },
     {
         "id": 30268,
@@ -2676,8 +2676,8 @@ const jhWordsDB = [
         "uk": "/ˈsentrəl/",
         "zh": "adj. 中央的、中心的、起支配作用的、有控制力的；n. 活動中心",
         "unit": 17,
-        "example": "The house has gas-fired central heating.",
-        "exampleZh": "房子配有瓦斯中央暖氣系統。"
+        "example": "The bank is in the central city area.",
+        "exampleZh": "這家銀行位於中央市區。"
     },
     {
         "id": 30269,
@@ -2686,8 +2686,8 @@ const jhWordsDB = [
         "uk": "/ˈsentʃəri/",
         "zh": "n. 世紀、一百年、一百分",
         "unit": 17,
-        "example": "A new century was dawning.",
-        "exampleZh": "一個新的世紀開始了。"
+        "example": "This bridge was built a century ago.",
+        "exampleZh": "這座橋是一個世紀前建造的。"
     },
     {
         "id": 30270,
@@ -2696,8 +2696,8 @@ const jhWordsDB = [
         "uk": "/ˈsɪəriəl/",
         "zh": "n. 穀類食物、穀類植物、穀物；adj. 穀類的、穀類製成的",
         "unit": 17,
-        "example": "He ate a large bowlful of cereal.",
-        "exampleZh": "他吃了一大碗穀類早餐。"
+        "example": "I eat a bowl of cereal today.",
+        "exampleZh": "我今天吃了一碗麥片。"
     },
     {
         "id": 30271,
@@ -2706,8 +2706,8 @@ const jhWordsDB = [
         "uk": "/ˈsɜːt(ə)n/",
         "zh": "adj. 確實的、必然的、必定的、確定的；pron. 某些、某幾個",
         "unit": 17,
-        "example": "That's true, to a certain extent.",
-        "exampleZh": "在某種程度上，確實如此。"
+        "example": "I am certain about this answer.",
+        "exampleZh": "我對這個答案很確定。"
     },
     {
         "id": 30272,
@@ -2716,8 +2716,8 @@ const jhWordsDB = [
         "uk": "/tʃeə(r)/",
         "zh": "n. 椅子、主席、委員長、電椅；vt. 主席、主持、用椅子把某人高高抬起、使……入座",
         "unit": 17,
-        "example": "Emily edged her chair forward.",
-        "exampleZh": "埃米莉把椅子慢慢地向前挪動。"
+        "example": "Sit down on this wooden chair.",
+        "exampleZh": "坐在這張木椅上。"
     },
     {
         "id": 30273,
@@ -2736,8 +2736,8 @@ const jhWordsDB = [
         "uk": "/tʃɑːns/",
         "zh": "n. 機會、時機、可能性、危險；vt. 偶然、碰巧、冒險做；adj. 偶然的、碰巧的",
         "unit": 17,
-        "example": "Everyone has a chance to win.",
-        "exampleZh": "每個人都有機會獲勝。"
+        "example": "Give him a chance to try again.",
+        "exampleZh": "給他一個再試一次的機會。"
     },
     {
         "id": 30275,
@@ -2746,8 +2746,8 @@ const jhWordsDB = [
         "uk": "/tʃeɪndʒ/",
         "zh": "v. 改變、變化、更換、替換；n. 零錢、變化、變革、找回的錢",
         "unit": 17,
-        "example": "Needs change while policies fossilize.",
-        "exampleZh": "政策僵化，需求就產生變化。"
+        "example": "You can change your shirt now.",
+        "exampleZh": "你現在可以換襯衫了。"
     },
     {
         "id": 30276,
@@ -2756,8 +2756,8 @@ const jhWordsDB = [
         "uk": "/ˈtʃæn(ə)l/",
         "zh": "n. 頻道、電影片道、管道、通道；vt. 引導、把……用於、輸送",
         "unit": 17,
-        "example": "The programme's on Channel 4.",
-        "exampleZh": "這個節目在4頻道。"
+        "example": "Change the TV channel right now.",
+        "exampleZh": "現在立刻切換電視頻道。"
     },
     {
         "id": 30277,
@@ -2776,8 +2776,8 @@ const jhWordsDB = [
         "uk": "/tʃɑːdʒ/",
         "zh": "v. 收費、索價、控告、充電；n. 費用、掌管、控告、電荷",
         "unit": 17,
-        "example": "She left her assistant in charge.",
-        "exampleZh": "她委託助手來負責。"
+        "example": "I must charge my phone now.",
+        "exampleZh": "我現在必須給手機充電。"
     },
     {
         "id": 30279,
@@ -2796,8 +2796,8 @@ const jhWordsDB = [
         "uk": "/tʃeɪs/",
         "zh": "v. 追逐、追趕、匆忙趕往、急奔；n. 追趕、追逐、爭取、努力獲得",
         "unit": 17,
-        "example": "We gave chase along the footpath.",
-        "exampleZh": "我們沿著人行道追趕。"
+        "example": "Dogs like to chase the little cats.",
+        "exampleZh": "狗喜歡追逐小貓。"
     },
     {
         "id": 30281,
@@ -2806,8 +2806,8 @@ const jhWordsDB = [
         "uk": "/tʃiːp/",
         "zh": "adj. 便宜的、廉價的、價低質劣的、小氣的；adv. 低價地、便宜地",
         "unit": 17,
-        "example": "The meal was amazingly cheap.",
-        "exampleZh": "這頓飯出奇的便宜。"
+        "example": "This blue shirt was very cheap today.",
+        "exampleZh": "這件藍色襯衫今天非常便宜。"
     },
     {
         "id": 30282,
@@ -2826,8 +2826,8 @@ const jhWordsDB = [
         "uk": "/tʃek/",
         "zh": "v. 檢查、核對、查看、克制；n. 檢查、支票、帳單",
         "unit": 17,
-        "example": "Check whether a fuse has blown.",
-        "exampleZh": "檢查保險絲是否熔斷。"
+        "example": "Please check your answers before you leave.",
+        "exampleZh": "離開前請先檢查你的答案。"
     },
     {
         "id": 30284,
@@ -2856,8 +2856,8 @@ const jhWordsDB = [
         "uk": "/ˈkemɪk(ə)l/",
         "zh": "adj. 化學的、與化學有關的；n. 化學品、化學制品、成癮的藥物",
         "unit": 17,
-        "example": "Chemical weapons are banned internationally.",
-        "exampleZh": "國際上禁止使用化學武器。"
+        "example": "Do not touch this bad chemical.",
+        "exampleZh": "不要碰這種有害的化學品。"
     },
     {
         "id": 30287,
@@ -2876,8 +2876,8 @@ const jhWordsDB = [
         "uk": "/ˈtʃɪkɪn/",
         "zh": "n. 雞、雞肉、膽小鬼、懦夫；adj. 沒勇氣的、膽小的；v. 因害怕而放棄、膽怯",
         "unit": 17,
-        "example": "Luke munched the chicken sandwiches.",
-        "exampleZh": "盧克嚼著雞肉三明治。"
+        "example": "We ate roast chicken for our dinner.",
+        "exampleZh": "我們晚餐吃了烤雞肉。"
     },
     {
         "id": 30289,
@@ -2886,8 +2886,8 @@ const jhWordsDB = [
         "uk": "/tʃiːf/",
         "zh": "adj. 主要的、首要的、為首的、首席的；n. 首領、領袖、酋長、上段；adv. 主要地、首要地",
         "unit": 17,
-        "example": "Unemployment was the chief cause of poverty.",
-        "exampleZh": "失業是貧困的主要原因。"
+        "example": "Who is the chief of the village?",
+        "exampleZh": "誰是這個村莊的村長？"
     },
     {
         "id": 30290,
@@ -2896,8 +2896,8 @@ const jhWordsDB = [
         "uk": "/tʃaɪld/",
         "zh": "n. 小孩、兒童、子女、深受（某時期思想）影響的人",
         "unit": 17,
-        "example": "The child was born prematurely.",
-        "exampleZh": "孩子早產了。"
+        "example": "Every child likes to play in parks.",
+        "exampleZh": "每個小孩都喜歡在公園裡玩耍。"
     },
     {
         "id": 30291,
@@ -2906,8 +2906,8 @@ const jhWordsDB = [
         "uk": "/ˈtʃaɪldɪʃ/",
         "zh": "adj. 幼稚的、孩子的、孩子般的、孩子氣的",
         "unit": 17,
-        "example": "She's just being childish and immature.",
-        "exampleZh": "她只是幼稚、不成熟而已。"
+        "example": "Stop crying and do not be so childish.",
+        "exampleZh": "別哭了，不要這麼幼稚。"
     },
     {
         "id": 30292,
@@ -2916,8 +2916,8 @@ const jhWordsDB = [
         "uk": "/ˈtʃaɪldlaɪk/",
         "zh": "adj. 天真的、天真爛漫的、孩子似的",
         "unit": 17,
-        "example": "He retained a childlike sense of wonder.",
-        "exampleZh": "他保留著孩子般的好奇心。"
+        "example": "She smiled with pure and childlike joy.",
+        "exampleZh": "她帶著純真且孩子般的喜悅微笑著。"
     },
     {
         "id": 30293,
@@ -2926,8 +2926,8 @@ const jhWordsDB = [
         "uk": "/tʃɪn/",
         "zh": "n. 下巴、頦；v. 擊打下巴、引體向上",
         "unit": 17,
-        "example": "She rubbed her chin thoughtfully.",
-        "exampleZh": "她若有所思地撫摩著下巴。"
+        "example": "He put his hand on his chin.",
+        "exampleZh": "他把手放在下巴上。"
     },
     {
         "id": 30294,
@@ -2936,8 +2936,8 @@ const jhWordsDB = [
         "uk": "/ˈtʃɒklət/",
         "zh": "n. 巧克力、朱古力、巧克力糖、夾心巧克力糖；adj. 巧克力的、巧克力味的",
         "unit": 17,
-        "example": "It contains real chocolate chips.",
-        "exampleZh": "它裡面含有純正的巧克力顆粒。"
+        "example": "She gave me a box of chocolate.",
+        "exampleZh": "她給了我一盒巧克力。"
     },
     {
         "id": 30295,
@@ -2946,8 +2946,8 @@ const jhWordsDB = [
         "uk": "/tʃɔɪs/",
         "zh": "n. 選擇、抉擇、選擇的機會、選擇權；adj. 上等的、優質的、尖刻的、刻薄的",
         "unit": 17,
-        "example": "I wouldn't go there by choice.",
-        "exampleZh": "讓我選擇，我不會去那裡。"
+        "example": "You made a very good choice.",
+        "exampleZh": "你做了一個很好的選擇。"
     },
     {
         "id": 30296,
@@ -2956,8 +2956,8 @@ const jhWordsDB = [
         "uk": "/tʃuːz/",
         "zh": "vt. 選擇、挑選、情願、決定",
         "unit": 17,
-        "example": "Choose whichever brand you prefer.",
-        "exampleZh": "選擇您喜歡的品牌。"
+        "example": "You can choose between red and blue.",
+        "exampleZh": "你可以在紅色和藍色之間做選擇。"
     },
     {
         "id": 30297,
@@ -3006,8 +3006,8 @@ const jhWordsDB = [
         "uk": "/kleɪm/",
         "zh": "vt. 聲稱、斷言、索取、索要；n. 要求、聲稱、斷言、索要",
         "unit": 17,
-        "example": "The judge allowed my claim.",
-        "exampleZh": "法官同意我的要求。"
+        "example": "He claims that the bag is his.",
+        "exampleZh": "他聲稱這個包包是他的。"
     },
     {
         "id": 30302,
@@ -3016,8 +3016,8 @@ const jhWordsDB = [
         "uk": "/ˈsɜːk(ə)l/",
         "zh": "n. 圓圈、圓、圓形物、圈子；vt. 環繞、盤旋、環行、圍繞",
         "unit": 17,
-        "example": "The children stood in a circle.",
-        "exampleZh": "孩子們站成一圈。"
+        "example": "The children sat in a circle.",
+        "exampleZh": "孩子們圍成一圈坐下。"
     },
     {
         "id": 30303,
@@ -3026,8 +3026,8 @@ const jhWordsDB = [
         "uk": "/ˈsɪti/",
         "zh": "n. 城市、都市、市民、全市居民",
         "unit": 17,
-        "example": "The cathedral dominates the city.",
-        "exampleZh": "大教堂主宰著這座城市。"
+        "example": "Taipei is a very busy big city.",
+        "exampleZh": "台北是一座非常繁忙的大城市。"
     },
     {
         "id": 30304,
@@ -3036,8 +3036,8 @@ const jhWordsDB = [
         "uk": "/klæp/",
         "zh": "vt. 拍手、鼓掌、快速（或用力）放置、輕拍；n. 鼓掌、拍手、砰然巨響、霹靂聲",
         "unit": 17,
-        "example": "Let's clap our hands together!",
-        "exampleZh": "讓我們一起拍手吧！"
+        "example": "We clap our hands to the song.",
+        "exampleZh": "我們跟著這首歌拍手。"
     },
     {
         "id": 30305,
@@ -3046,8 +3046,8 @@ const jhWordsDB = [
         "uk": "/klɑːs/",
         "zh": "n. 班級、課、上課時間、課程；vt. 把……歸類、把……看作、把……編入某一班級、屬於……類；adj. 優秀的、出色的",
         "unit": 17,
-        "example": "I've joined an aerobics class.",
-        "exampleZh": "我參加了健美操班。"
+        "example": "We have an English class this morning.",
+        "exampleZh": "我們今天早上有一堂英文課。"
     },
     {
         "id": 30306,
@@ -3056,8 +3056,8 @@ const jhWordsDB = [
         "uk": "/ˈklæsɪk/",
         "zh": "adj. 經典的、典型的、有代表性的、一流的；n. 古典作品、經典作品、傑作、傑出的事物",
         "unit": 17,
-        "example": "The novel may become a modern classic.",
-        "exampleZh": "這部小說可能會成為現代名著。"
+        "example": "This is a classic story for children.",
+        "exampleZh": "這是一個給孩子看的經典故事。"
     },
     {
         "id": 30307,
@@ -3066,8 +3066,8 @@ const jhWordsDB = [
         "uk": "/ˈklɑːsmeɪt/",
         "zh": "n. 同學、同班同學",
         "unit": 17,
-        "example": "She felt like a fifth-grader who had snitched on a classmate.",
-        "exampleZh": "她覺得自己就像個打同學小報告的小學五年級學生。"
+        "example": "He is my good new classmate.",
+        "exampleZh": "他是我的優秀新同學。"
     },
     {
         "id": 30308,
@@ -3076,8 +3076,8 @@ const jhWordsDB = [
         "uk": "/ˈklɑːsruːm/",
         "zh": "n. 班級、教室、課堂",
         "unit": 17,
-        "example": "She'd sent him outside the classroom.",
-        "exampleZh": "她叫他到教室外面去。"
+        "example": "We sit in our clean classroom.",
+        "exampleZh": "我們坐在乾淨的教室裡。"
     },
     {
         "id": 30309,
@@ -3086,8 +3086,8 @@ const jhWordsDB = [
         "uk": "/kleɪ/",
         "zh": "n. 黏土、陶土、硬固泥地、紅土網球場；v. 用黏土處理",
         "unit": 17,
-        "example": "Clay is a plastic substance.",
-        "exampleZh": "黏土是可塑物質。"
+        "example": "The boy made a cup from clay.",
+        "exampleZh": "那個男孩用黏土做了一個杯子。"
     },
     {
         "id": 30310,
@@ -3096,8 +3096,8 @@ const jhWordsDB = [
         "uk": "/kliːn/",
         "zh": "adj. 乾淨的、清潔的、清白的；vt. 打掃、清理、弄乾淨；adv. 完全地、徹底地",
         "unit": 17,
-        "example": "Cats are very clean animals.",
-        "exampleZh": "貓是非常愛乾淨的動物。"
+        "example": "Please clean your bedroom before you sleep.",
+        "exampleZh": "睡覺前請把你的臥室打掃乾淨。"
     },
     {
         "id": 30311,
@@ -3106,8 +3106,8 @@ const jhWordsDB = [
         "uk": "/klɪə(r)/",
         "zh": "adj. 清楚的、清晰的、晴朗的、明顯的；v. 清除、清理、變清澈；adv. 完全地、清晰地",
         "unit": 17,
-        "example": "She made her objections clear.",
-        "exampleZh": "她明確表示了自己的反對意見。"
+        "example": "The blue sky is clear today.",
+        "exampleZh": "今天蔚藍的天空很晴朗。"
     },
     {
         "id": 30312,
@@ -3116,8 +3116,8 @@ const jhWordsDB = [
         "uk": "/klɑːk/",
         "zh": "n. 店員、辦事員、職員、售貨員；vi. 當職員",
         "unit": 17,
-        "example": "A sharp-eyed shop clerk spotted the fake.",
-        "exampleZh": "一名眼尖的售貨員發現了假貨。"
+        "example": "The clerk helped me find the book.",
+        "exampleZh": "店員幫我找到了那本書。"
     },
     {
         "id": 30313,
@@ -3136,8 +3136,8 @@ const jhWordsDB = [
         "uk": "/ˈklaɪmət/",
         "zh": "n. 氣候、氣候區、氛圍、局勢",
         "unit": 17,
-        "example": "The economic climate remains uncertain.",
-        "exampleZh": "經濟氣候依然是不確定。"
+        "example": "The island has a warm climate.",
+        "exampleZh": "這座島嶼氣候溫暖。"
     },
     {
         "id": 30315,
@@ -3166,8 +3166,8 @@ const jhWordsDB = [
         "uk": "/kləʊz/",
         "zh": "vt. 關、關閉、結束；adj. 近的、接近的、親密的；adv. 接近地、緊密地",
         "unit": 17,
-        "example": "Some smallish firms may close.",
-        "exampleZh": "一些小公司可能會關閉。"
+        "example": "Please close the front door right now.",
+        "exampleZh": "請現在把前門關上。"
     },
     {
         "id": 30318,
@@ -3196,8 +3196,8 @@ const jhWordsDB = [
         "uk": "/klaʊd/",
         "zh": "n. 雲、雲朵、雲狀物、一團；vt. 把……搞糊塗、使難以理解、破壞、給……蒙上陰影",
         "unit": 17,
-        "example": "The plane disappeared behind a cloud.",
-        "exampleZh": "飛機消失在雲層後面。"
+        "example": "A dark cloud covered the bright sun.",
+        "exampleZh": "一朵烏雲遮住了明亮的太陽。"
     },
     {
         "id": 30321,
@@ -3206,8 +3206,8 @@ const jhWordsDB = [
         "uk": "/klʌb/",
         "zh": "n. 俱樂部、社團、活動室、俱樂部大樓；vt. 棒打、泡夜總會、組成俱樂部、募集",
         "unit": 17,
-        "example": "He belongs to an exclusive club.",
-        "exampleZh": "他參加的是一個上層人士俱樂部。"
+        "example": "She joined the art club at school.",
+        "exampleZh": "她在學校加入了美術社。"
     },
     {
         "id": 30322,
@@ -3236,8 +3236,8 @@ const jhWordsDB = [
         "uk": "/kəʊt/",
         "zh": "n. 外套、大衣、短上衣、皮毛；vt. 給……塗上、用……覆蓋、給……穿外套",
         "unit": 17,
-        "example": "She was wearing a new coat.",
-        "exampleZh": "她穿著一件新外套。"
+        "example": "Put on your warm coat in winter.",
+        "exampleZh": "冬天時穿上你的保暖外套。"
     },
     {
         "id": 30325,
@@ -3256,8 +3256,8 @@ const jhWordsDB = [
         "uk": "/ˈkɒfi/",
         "zh": "n. 咖啡、一杯咖啡、咖啡豆或咖啡粉、咖啡色",
         "unit": 17,
-        "example": "Her coffee was now lukewarm.",
-        "exampleZh": "她的咖啡現在已經微溫了。"
+        "example": "My parents drink hot coffee every morning.",
+        "exampleZh": "我的父母每天早上喝熱咖啡。"
     },
     {
         "id": 30327,
@@ -3266,8 +3266,8 @@ const jhWordsDB = [
         "uk": "/kɔɪn/",
         "zh": "n. 硬幣、金屬貨幣、塔羅牌中的一種花色；vt. 創造新詞、首次使用、鑄幣、造幣",
         "unit": 17,
-        "example": "The coin rolled underneath the piano.",
-        "exampleZh": "硬幣滾到了鋼琴底下。"
+        "example": "I found a silver coin today.",
+        "exampleZh": "我今天發現了一枚銀幣。"
     },
     {
         "id": 30328,
@@ -3286,8 +3286,8 @@ const jhWordsDB = [
         "uk": "/kəʊld/",
         "zh": "adj. 冷的、寒冷的、涼的、冷淡的；n. 感冒、傷風、寒冷、低溫；adv. 突然地、完全地",
         "unit": 17,
-        "example": "It's flipping cold today!",
-        "exampleZh": "今天天氣突然變冷了！"
+        "example": "The winter water in the lake is cold.",
+        "exampleZh": "冬天湖裡的水很冰冷。"
     },
     {
         "id": 30330,
@@ -3306,8 +3306,8 @@ const jhWordsDB = [
         "uk": "/ˈkɒlɪdʒ/",
         "zh": "n. 大學、專科學校、學院、分院",
         "unit": 17,
-        "example": "He studied maths at college.",
-        "exampleZh": "他在大學裡學過數學。"
+        "example": "His sister goes to art college.",
+        "exampleZh": "他姐姐去讀藝術學院。"
     },
     {
         "id": 30332,
@@ -3346,8 +3346,8 @@ const jhWordsDB = [
         "uk": "/kʌm/",
         "zh": "v. 來、來到、到達、來做；int. 好了、得啦；n. 精液、精子",
         "unit": 17,
-        "example": "Have you come far?",
-        "exampleZh": "你已經走了很遠嗎？"
+        "example": "Please come to my house this evening.",
+        "exampleZh": "請今天傍晚來我家。"
     },
     {
         "id": 30336,
@@ -3356,8 +3356,8 @@ const jhWordsDB = [
         "uk": "/ˈkʌmftəb(ə)l/",
         "zh": "adj. 舒服的、令人舒適的、感到舒服的、安逸的；n. 溫暖的蓋被",
         "unit": 17,
-        "example": "You'll be quite comfortable here.",
-        "exampleZh": "你在這裡會很舒服。"
+        "example": "This soft bed is very comfortable.",
+        "exampleZh": "這張柔軟的床非常舒適。"
     },
     {
         "id": 30337,
@@ -3376,8 +3376,8 @@ const jhWordsDB = [
         "uk": "/ˈkɒment/",
         "zh": "n. 評論、意見、批評、指責；vt. 評論、發表意見、註解、把（部分程式）轉成註解",
         "unit": 17,
-        "example": "Buckingham Palace refused to comment.",
-        "exampleZh": "英國王室拒絕發表評論。"
+        "example": "He made a nice comment today.",
+        "exampleZh": "他今天發表了很好的評論。"
     },
     {
         "id": 30339,
@@ -3386,8 +3386,8 @@ const jhWordsDB = [
         "uk": "/ˈkɒmən/",
         "zh": "adj. 常見的、普通的、共同的、普遍的；n. 公共用地、公地、常識",
         "unit": 17,
-        "example": "Jackson is a common English name.",
-        "exampleZh": "傑克森是一個常見的英文名字。"
+        "example": "Dogs and cats are common family pets.",
+        "exampleZh": "狗和貓是常見的家庭寵物。"
     },
     {
         "id": 30340,
@@ -3396,8 +3396,8 @@ const jhWordsDB = [
         "uk": "/ˈkʌmpəni/",
         "zh": "n. 公司、陪伴、同伴、賓客；v. 結交、交往、陪伴",
         "unit": 17,
-        "example": "The company employs 18 workers.",
-        "exampleZh": "該公司僱用18位職工。"
+        "example": "My father works for a big company.",
+        "exampleZh": "我父親在一間大公司工作。"
     },
     {
         "id": 30341,
@@ -3406,8 +3406,8 @@ const jhWordsDB = [
         "uk": "/kəmˈpeə(r)/",
         "zh": "v. 比較、對比、把……比作、相比；n. 比較",
         "unit": 17,
-        "example": "The point of the lesson is to compare the two countries.",
-        "exampleZh": "本課的重點是比較這兩個國家。"
+        "example": "Do not compare yourself to other people.",
+        "exampleZh": "不要拿自己和別人做比較。"
     },
     {
         "id": 30342,
@@ -3416,8 +3416,8 @@ const jhWordsDB = [
         "uk": "/kəmˈpleɪn/",
         "zh": "v. 抱怨、訴說、悲嘆、悲鳴",
         "unit": 17,
-        "example": "I was too cowardly to complain.",
-        "exampleZh": "我太懦弱了，不敢抱怨。"
+        "example": "Customers will complain if the food is bad.",
+        "exampleZh": "如果食物不好吃，顧客會抱怨的。"
     },
     {
         "id": 30343,
@@ -3426,8 +3426,8 @@ const jhWordsDB = [
         "uk": "/kəmˈpleɪnt/",
         "zh": "n. 抱怨、投訴、不滿的緣由、抱怨的問題",
         "unit": 17,
-        "example": "You have no grounds for complaint.",
-        "exampleZh": "你沒有理由抱怨。"
+        "example": "She made a complaint about noise.",
+        "exampleZh": "她對噪音提出了抱怨。"
     },
     {
         "id": 30344,
@@ -3436,8 +3436,8 @@ const jhWordsDB = [
         "uk": "/kəmˈpliːt/",
         "zh": "adj. 完全的、徹底的、全部的、完整的；vt. 使完整、使完美、填寫、完成",
         "unit": 17,
-        "example": "We were in complete agreement.",
-        "exampleZh": "我們完全同意。"
+        "example": "Please complete your work before five o'clock.",
+        "exampleZh": "請在五點以前完成你的工作。"
     },
     {
         "id": 30345,
@@ -3476,8 +3476,8 @@ const jhWordsDB = [
         "uk": "/ˈkɒnflɪkt/",
         "zh": "n. 爭執、爭論、分歧、戰鬥；v. 衝突、牴觸",
         "unit": 17,
-        "example": "She was unafraid of conflict.",
-        "exampleZh": "她不怕發生衝突。"
+        "example": "They try to avoid conflict at school.",
+        "exampleZh": "他們在學校儘量避免衝突。"
     },
     {
         "id": 30349,
@@ -3496,8 +3496,8 @@ const jhWordsDB = [
         "uk": "/kənˌɡrætʃəˈleɪʃ(ə)n/",
         "zh": "n. 道賀、恭喜、祝賀、恭賀",
         "unit": 17,
-        "example": "We have received many letters of congratulation.",
-        "exampleZh": "我們收到了許多祝賀信。"
+        "example": "I sent him a card of congratulation.",
+        "exampleZh": "我寄了一張祝賀卡片給他。"
     },
     {
         "id": 30351,
@@ -3506,8 +3506,8 @@ const jhWordsDB = [
         "uk": "/kəˈnekt/",
         "zh": "v. 連接、連線、相通、使接通",
         "unit": 17,
-        "example": "Click 'Continue' to connect to the Internet.",
-        "exampleZh": "點選 Continue 連線到網際網路。"
+        "example": "Connect this blue wire to power.",
+        "exampleZh": "把這條藍色電線接上電源。"
     },
     {
         "id": 30352,
@@ -3516,8 +3516,8 @@ const jhWordsDB = [
         "uk": "/kənˈsɪdə(r)/",
         "zh": "vt. 考慮、斟酌、認為、視為",
         "unit": 17,
-        "example": "Let's consider this point further.",
-        "exampleZh": "讓我們進一步考慮這一點。"
+        "example": "Take your time to consider my offer.",
+        "exampleZh": "慢慢考慮我的提議吧。"
     },
     {
         "id": 30353,
@@ -3526,8 +3526,8 @@ const jhWordsDB = [
         "uk": "/kənˈsɪdərət/",
         "zh": "adj. 體貼的、考慮周到的、小心的、謹慎的",
         "unit": 17,
-        "example": "He was charming, considerate and impeccably mannered.",
-        "exampleZh": "他富有魅力，待人體貼，舉止無可挑剔。"
+        "example": "He is always kind and considerate.",
+        "exampleZh": "他總是既親切又體貼。"
     },
     {
         "id": 30354,
@@ -3536,8 +3536,8 @@ const jhWordsDB = [
         "uk": "/ˈkɒntækt/",
         "zh": "n. 隱形眼鏡、聯絡、接觸、觸控；vt. 接觸、聯絡；adj. 供聯絡的、接觸性的、透過接觸而起作用的",
         "unit": 17,
-        "example": "I will contact you by letter.",
-        "exampleZh": "我會給你寫信聯絡的。"
+        "example": "You can contact me by phone.",
+        "exampleZh": "你可以透過電話聯絡我。"
     },
     {
         "id": 30355,
@@ -3546,8 +3546,8 @@ const jhWordsDB = [
         "uk": "/kənˈtɪnjuː/",
         "zh": "v. 使繼續、繼續、延續、繼續說",
         "unit": 17,
-        "example": "They'll continue to fight injustice.",
-        "exampleZh": "他們將繼續與不公義作鬥爭。"
+        "example": "We will continue our lesson after lunch.",
+        "exampleZh": "我們將在午餐後繼續上課。"
     },
     {
         "id": 30356,
@@ -3566,8 +3566,8 @@ const jhWordsDB = [
         "uk": "/kənˈtrəʊl/",
         "zh": "n. 控制權、支配權、控制能力、操縱裝置；vt. 控制、掌管、限制、限定",
         "unit": 17,
-        "example": "The situation is under control.",
-        "exampleZh": "局面得到了控制。"
+        "example": "He can control the toy car easily.",
+        "exampleZh": "他能輕鬆控制這輛玩具車。"
     },
     {
         "id": 30358,
@@ -3576,8 +3576,8 @@ const jhWordsDB = [
         "uk": "/kənˈviːniənt/",
         "zh": "adj. 方便的、便利的、附近的、方便到達的",
         "unit": 17,
-        "example": "If it's convenient I can come tomorrow.",
-        "exampleZh": "如果方便的話我明天可以來。"
+        "example": "Living near a train station is very convenient.",
+        "exampleZh": "住在火車站附近非常便利。"
     },
     {
         "id": 30359,
@@ -3586,8 +3586,8 @@ const jhWordsDB = [
         "uk": "/ˌkɒnvəˈseɪʃ(ə)n/",
         "zh": "n. 對話、談話、交談、社交",
         "unit": 17,
-        "example": "She was engrossed in conversation.",
-        "exampleZh": "她聚精會神地談話。"
+        "example": "We had a long conversation last night.",
+        "exampleZh": "我們昨晚進行了一次長談。"
     },
     {
         "id": 30360,
@@ -3596,8 +3596,8 @@ const jhWordsDB = [
         "uk": "/kʊk/",
         "zh": "n. 廚師、炊事員；vt. 煮、燒、烹飪、烹調",
         "unit": 17,
-        "example": "She's an exceptionally good cook.",
-        "exampleZh": "她是一位非常出色的廚師。"
+        "example": "My father likes to cook for us.",
+        "exampleZh": "我爸爸喜歡為我們做飯。"
     },
     {
         "id": 30361,
@@ -3606,8 +3606,8 @@ const jhWordsDB = [
         "uk": "/ˈkʊki/",
         "zh": "n. 點心、曲奇餅、小甜餅、……樣的人",
         "unit": 17,
-        "example": "Heart-shaped cookie cutters come in many sizes.",
-        "exampleZh": "心形餅乾切刀有多種尺寸。"
+        "example": "She ate a sweet chocolate cookie today.",
+        "exampleZh": "她今天吃了一塊香甜的巧克力餅乾。"
     },
     {
         "id": 30362,
@@ -3616,8 +3616,8 @@ const jhWordsDB = [
         "uk": "/kuːl/",
         "zh": "adj. 涼的、涼爽的、使人涼爽的、冷靜的；vt. 冷卻、變涼、冷靜下來、冷淡下來；adv. 冷靜地、鎮定地；n. 涼快、涼爽、平靜、鎮靜",
         "unit": 17,
-        "example": "She seemed very cool and unemotional.",
-        "exampleZh": "她看起來非常冷靜，不帶任何情緒。"
+        "example": "The weather is very cool in autumn.",
+        "exampleZh": "秋天的天氣非常涼爽。"
     },
     {
         "id": 30363,
@@ -3636,8 +3636,8 @@ const jhWordsDB = [
         "uk": "/kɔːn/",
         "zh": "n. 玉米、穀物、穀粒、雞眼；v. 醃、使成粒狀",
         "unit": 17,
-        "example": "She pounded the corn kernels.",
-        "exampleZh": "她搗碎了玉米粒。"
+        "example": "We bought sweet yellow corn for dinner.",
+        "exampleZh": "我們買了香甜的黃玉米當晚餐。"
     },
     {
         "id": 30365,
@@ -3646,8 +3646,8 @@ const jhWordsDB = [
         "uk": "/ˈkɔːnə(r)/",
         "zh": "n. 角落、角、嘴角、眼角；v. 將……逼入死角、使走投無路、硬要與某人說話、壟斷",
         "unit": 17,
-        "example": "The referee awarded a corner.",
-        "exampleZh": "裁判員判給了一次角球。"
+        "example": "There is a chair in the corner.",
+        "exampleZh": "角落裡有一張椅子。"
     },
     {
         "id": 30366,
@@ -3656,8 +3656,8 @@ const jhWordsDB = [
         "uk": "/kəˈrekt/",
         "zh": "adj. 正確的、對的、無誤的、恰當的；vt. 改正、糾正、批改、矯正",
         "unit": 17,
-        "example": "Only one of the answers is correct.",
-        "exampleZh": "只有一個答案是正確的。"
+        "example": "All of your answers are correct.",
+        "exampleZh": "你所有的答案都是正確的。"
     },
     {
         "id": 30367,
@@ -3666,8 +3666,8 @@ const jhWordsDB = [
         "uk": "/kɒst/",
         "zh": "n. 費用、成本、價錢、代價；vt. 花費、價錢為、使喪失",
         "unit": 17,
-        "example": "Success has cost him dearly.",
-        "exampleZh": "成功讓他付出了慘痛的代價。"
+        "example": "How much does this new book cost?",
+        "exampleZh": "這本新書要花多少錢？"
     },
     {
         "id": 30368,
@@ -3686,8 +3686,8 @@ const jhWordsDB = [
         "uk": "/kaʊtʃ/",
         "zh": "n. 長沙發、長榻、診察臺；v. 表達、措辭、躺下、躺臥",
         "unit": 17,
-        "example": "Linda lay face down on a living room couch, nibbling popcorn.",
-        "exampleZh": "琳達趴在客廳的一張沙發上，小口吃著爆米花。"
+        "example": "The cat slept on the couch.",
+        "exampleZh": "貓咪在沙發上睡著了。"
     },
     {
         "id": 30370,
@@ -3696,8 +3696,8 @@ const jhWordsDB = [
         "uk": "/kɒf/",
         "zh": "v. 咳嗽、發出咳嗽般的聲音、透露情報、供認；n. 咳嗽、咳、咳嗽聲",
         "unit": 17,
-        "example": "Graham began to cough violently.",
-        "exampleZh": "格雷厄姆開始劇烈地咳嗽。"
+        "example": "He has a bad cough today.",
+        "exampleZh": "他今天咳嗽得很厲害。"
     },
     {
         "id": 30371,
@@ -3726,8 +3726,8 @@ const jhWordsDB = [
         "uk": "/ˈkʌp(ə)l/",
         "zh": "n. 一對、夫妻、情侶、幾個；v. 連接、結合",
         "unit": 17,
-        "example": "The couple have no children.",
-        "exampleZh": "這對夫婦沒有孩子。"
+        "example": "The young couple walked in the park.",
+        "exampleZh": "那對年輕夫妻在公園散步。"
     },
     {
         "id": 30374,
@@ -3736,8 +3736,8 @@ const jhWordsDB = [
         "uk": "/ˈkʌrɪdʒ/",
         "zh": "n. 勇氣、膽量",
         "unit": 17,
-        "example": "He showed courage in adversity.",
-        "exampleZh": "他在逆境中顯示出了勇氣。"
+        "example": "She had the courage to speak up.",
+        "exampleZh": "她有勇氣把話說出來。"
     },
     {
         "id": 30375,
@@ -3756,8 +3756,8 @@ const jhWordsDB = [
         "uk": "/kɔːt/",
         "zh": "n. 場地、法院、法庭、球場；vt. 奉承、討好、設法取得",
         "unit": 17,
-        "example": "The court adjourned for lunch.",
-        "exampleZh": "午餐時間法庭休庭。"
+        "example": "They play tennis on the court.",
+        "exampleZh": "他們在球場打網球。"
     },
     {
         "id": 30377,
@@ -3766,8 +3766,8 @@ const jhWordsDB = [
         "uk": "/ˈkʌzn/",
         "zh": "n. 表(堂)兄弟姊妹、堂（表）兄弟、堂（表）姐妹、遠房親戚",
         "unit": 17,
-        "example": "Eric was my cousin Edward's boy.",
-        "exampleZh": "埃裡克是我堂兄愛德華的兒子。"
+        "example": "My cousin will visit us next week.",
+        "exampleZh": "我的表哥下週會來拜訪我們。"
     },
     {
         "id": 30378,
@@ -3776,8 +3776,8 @@ const jhWordsDB = [
         "uk": "/ˈkʌvə(r)/",
         "zh": "v. 覆蓋、遮蓋、包括、涉及；n. 覆蓋物、遮蓋物、封面、封底",
         "unit": 17,
-        "example": "$100 should cover your expenses.",
-        "exampleZh": "100 美元應該可以支付你的開支。"
+        "example": "Snow will cover the ground in winter.",
+        "exampleZh": "冬天積雪會覆蓋地面。"
     },
     {
         "id": 30379,
@@ -3806,8 +3806,8 @@ const jhWordsDB = [
         "uk": "/kræb/",
         "zh": "n. 螃蟹、蟹肉、脾氣乖戾的人、易怒的人；v. 橫行、作蟹行、捕蟹、抓蟹",
         "unit": 17,
-        "example": "I can't remember when I last had crab.",
-        "exampleZh": "我不記得上次吃蟹是什麼時候了。"
+        "example": "We caught a small crab today.",
+        "exampleZh": "我們今天抓到了一隻小螃蟹。"
     },
     {
         "id": 30382,
@@ -3816,8 +3816,8 @@ const jhWordsDB = [
         "uk": "/ˈkreɪən; ˈkreɪɒn/",
         "zh": "n. 蠟筆、彩色粉筆、彩色粉筆（或炭筆、蠟筆）畫；v. 用彩色蠟筆畫",
         "unit": 17,
-        "example": "Someone had scribbled all over the table in crayon.",
-        "exampleZh": "不知誰用蠟筆胡寫亂畫，桌面上都塗滿了。"
+        "example": "The child drew a fish with crayon.",
+        "exampleZh": "那個孩子用蠟筆畫了一條魚。"
     },
     {
         "id": 30383,
@@ -3826,8 +3826,8 @@ const jhWordsDB = [
         "uk": "/ˈkreɪzi/",
         "zh": "adj. 瘋狂的、愚蠢的、古怪的、不理智的；n. 瘋子",
         "unit": 17,
-        "example": "We're crazy about each other.",
-        "exampleZh": "我們都為彼此瘋狂。"
+        "example": "The fans went crazy after the win.",
+        "exampleZh": "球隊獲勝後球迷們都瘋狂了。"
     },
     {
         "id": 30384,
@@ -3846,8 +3846,8 @@ const jhWordsDB = [
         "uk": "/kriˈeɪt/",
         "zh": "vt. 創造、建立、設計、創作",
         "unit": 17,
-        "example": "We set business free to create more jobs.",
-        "exampleZh": "我們放開商業自由，創造更多就業機會。"
+        "example": "Artists create beautiful pictures with color.",
+        "exampleZh": "藝術家用色彩創作出美麗的畫作。"
     },
     {
         "id": 30386,
@@ -3856,8 +3856,8 @@ const jhWordsDB = [
         "uk": "/kraɪm/",
         "zh": "n. 罪、罪行、犯罪、犯罪活動；v. 指控……有罪、判……有罪",
         "unit": 17,
-        "example": "Crime figures are rising rapidly.",
-        "exampleZh": "犯罪數字正在迅速上升。"
+        "example": "It is a big crime to steal.",
+        "exampleZh": "偷竊是一件嚴重的罪行。"
     },
     {
         "id": 30387,
@@ -3866,8 +3866,8 @@ const jhWordsDB = [
         "uk": "/krɒs/",
         "zh": "v. 穿越、橫越、越過、交叉；n. 十字形、十字架；adj. 生氣的、易怒的",
         "unit": 17,
-        "example": "I'm terribly cross with him.",
-        "exampleZh": "我對他非常生氣。"
+        "example": "Look both ways before you cross.",
+        "exampleZh": "過馬路前請看兩邊。"
     },
     {
         "id": 30388,
@@ -3876,8 +3876,8 @@ const jhWordsDB = [
         "uk": "/kraʊd/",
         "zh": "n. 人群、一夥人、百姓、凡夫俗子；v. 聚集、群集、靠近、盯著",
         "unit": 17,
-        "example": "The crowd began throwing stones.",
-        "exampleZh": "那群人開始扔石頭。"
+        "example": "A large crowd waited for the train.",
+        "exampleZh": "大批人群在等火車。"
     },
     {
         "id": 30389,
@@ -3896,8 +3896,8 @@ const jhWordsDB = [
         "uk": "/kraɪ/",
         "zh": "v. 哭、哭泣、喊叫、呼喊；n. 叫喊、叫聲、哭聲、大喊",
         "unit": 17,
-        "example": "She let out an anguished cry.",
-        "exampleZh": "她發出一聲痛苦的叫聲。"
+        "example": "The little baby began to cry loudly.",
+        "exampleZh": "小嬰兒開始大聲哭泣。"
     },
     {
         "id": 30391,
@@ -3906,8 +3906,8 @@ const jhWordsDB = [
         "uk": "/ˈkʌltʃə(r)/",
         "zh": "n. 文化、文明、態度、習俗；v. 培育、養殖",
         "unit": 17,
-        "example": "We are living in a consumer culture.",
-        "exampleZh": "我們生活在一種消費文化之中。"
+        "example": "Food is part of our local culture.",
+        "exampleZh": "食物是我們在地文化的一部分。"
     },
     {
         "id": 30392,
@@ -3916,8 +3916,8 @@ const jhWordsDB = [
         "uk": "/kʌp/",
         "zh": "n. 杯子、一杯、杯、量杯；vt. 做成杯狀、窩起手掌托住、為……拔火罐",
         "unit": 17,
-        "example": "She crumpled up her coffee cup.",
-        "exampleZh": "她把咖啡杯弄皺了。"
+        "example": "He drank a hot cup of tea.",
+        "exampleZh": "他喝了一杯熱茶。"
     },
     {
         "id": 30393,
@@ -3926,8 +3926,8 @@ const jhWordsDB = [
         "uk": "/kjʊə(r)/",
         "zh": "n. 藥物、療法、對策、措施；vt. 治癒、治好、解決、控制",
         "unit": 17,
-        "example": "The search for a cure goes on.",
-        "exampleZh": "人們還在繼續探尋治療方法。"
+        "example": "Good rest will cure your bad cold.",
+        "exampleZh": "好好休息會治好你的重感冒。"
     },
     {
         "id": 30394,
@@ -3936,8 +3936,8 @@ const jhWordsDB = [
         "uk": "/ˈkjʊəriəs/",
         "zh": "adj. 好奇的、求知慾強的、稀奇的、不尋常的",
         "unit": 17,
-        "example": "Steve was intensely curious about the world I came from.",
-        "exampleZh": "史蒂夫對我來自的世界非常好奇。"
+        "example": "Children are always curious about new things.",
+        "exampleZh": "小孩子總是對新事物感到好奇。"
     },
     {
         "id": 30395,
@@ -3946,8 +3946,8 @@ const jhWordsDB = [
         "uk": "/ˈkʌrənt/",
         "zh": "adj. 現行的、當前的、通用的；n. 電流、水流、氣流、思潮",
         "unit": 17,
-        "example": "We were rowing against the current.",
-        "exampleZh": "我們划船逆流而上。"
+        "example": "This is our current school plan.",
+        "exampleZh": "這是我們目前的學校計畫。"
     },
     {
         "id": 30396,
@@ -3966,8 +3966,8 @@ const jhWordsDB = [
         "uk": "/kɜːv/",
         "zh": "n. 曲線、弧線、轉彎、彎道；v. 彎曲、呈曲線形；adj. 彎曲的、曲線形的",
         "unit": 17,
-        "example": "The slope increases as you go up the curve.",
-        "exampleZh": "你順著那條彎路往上走，坡度越來越大。"
+        "example": "Slow down at this sharp curve.",
+        "exampleZh": "在這個急轉彎處減速。"
     },
     {
         "id": 30398,
@@ -3976,8 +3976,8 @@ const jhWordsDB = [
         "uk": "/ˈkʌstəm/",
         "zh": "n. 習慣、風俗、習俗、光顧；adj. 定做的、量身設計的",
         "unit": 17,
-        "example": "This quaint custom should be revived.",
-        "exampleZh": "應該恢復這一獨特的風俗。"
+        "example": "Giving gifts is a nice local custom.",
+        "exampleZh": "送禮是當地的一項美好習俗。"
     },
     {
         "id": 30399,
@@ -3996,8 +3996,8 @@ const jhWordsDB = [
         "uk": "/kʌt/",
         "zh": "v. 切、割、剪、削減；n. 切下的肉塊、份額、一份利潤、通道；adj. 縮減的、割下的、雕過的、閹割過的",
         "unit": 17,
-        "example": "You've had your hair cut!",
-        "exampleZh": "你已經剪頭髮了！"
+        "example": "Use this knife to cut the apple.",
+        "exampleZh": "用這把小刀來切蘋果。"
     },
     {
         "id": 30401,
@@ -4016,8 +4016,8 @@ const jhWordsDB = [
         "uk": "/ˈdæmɪdʒ/",
         "zh": "n. 損壞、損失、損害、傷害；vt. 損壞、損害、對……造成壞影響",
         "unit": 17,
-        "example": "The fire caused extensive damage.",
-        "exampleZh": "火災造成了巨大的損失。"
+        "example": "The strong storm caused much damage.",
+        "exampleZh": "強烈的暴風雨造成了嚴重的損害。"
     },
     {
         "id": 30403,
@@ -4036,8 +4036,8 @@ const jhWordsDB = [
         "uk": "/ˈdeɪndʒə(r)/",
         "zh": "n. 危險、風險、威脅、危險因素",
         "unit": 17,
-        "example": "The red triangle denotes danger.",
-        "exampleZh": "紅色三角形表示危險。"
+        "example": "There is no danger in this park.",
+        "exampleZh": "這座公園裡沒有危險。"
     },
     {
         "id": 30405,
@@ -4056,8 +4056,8 @@ const jhWordsDB = [
         "uk": "/dɑːk/",
         "zh": "adj. 黑暗的、昏暗的、深色的、暗色的；n. 黑暗、暗處、暗色、陰影",
         "unit": 17,
-        "example": "We should arrive before dark.",
-        "exampleZh": "我們應該在天黑之前到達。"
+        "example": "It gets very dark after seven o'clock.",
+        "exampleZh": "七點過後天色就變得非常黑。"
     },
     {
         "id": 30407,
@@ -4066,8 +4066,8 @@ const jhWordsDB = [
         "uk": "/ˈdeɪtə; ˈdɑːtə/",
         "zh": "n. 資料、資料資料",
         "unit": 17,
-        "example": "He copied the data into a notebook.",
-        "exampleZh": "他把資料抄在了筆記本上。"
+        "example": "He lost all of his test data.",
+        "exampleZh": "他弄丟了他所有的測試資料。"
     },
     {
         "id": 30408,
@@ -4076,8 +4076,8 @@ const jhWordsDB = [
         "uk": "/deɪt/",
         "zh": "n. 日期、日子、約會、幽會；v. 註明日期、確定年代、談戀愛、約會",
         "unit": 17,
-        "example": "I've got a hot date tonight.",
-        "exampleZh": "今晚我有一個熱烈的約會。"
+        "example": "What is the date of your birthday?",
+        "exampleZh": "你的生日是哪一個日期？"
     },
     {
         "id": 30409,
@@ -4086,8 +4086,8 @@ const jhWordsDB = [
         "uk": "/ˈdɔːtə(r)/",
         "zh": "n. 女兒、子代；adj. 女兒的、子代的",
         "unit": 17,
-        "example": "My daughter is at university.",
-        "exampleZh": "我女兒正在讀大學。"
+        "example": "Her daughter is eight years old now.",
+        "exampleZh": "她的女兒現在八歲了。"
     },
     {
         "id": 30410,
@@ -4106,8 +4106,8 @@ const jhWordsDB = [
         "uk": "/deɪ/",
         "zh": "n. 一天、白晝、白天、工作日；adj. 白晝的、日間的、日間工作的、上白班的",
         "unit": 17,
-        "example": "They're improving day by day.",
-        "exampleZh": "他們正在一天天進步。"
+        "example": "It was a sunny and warm day.",
+        "exampleZh": "那是一個陽光明媚又溫暖的一天。"
     },
     {
         "id": 30412,
@@ -4116,8 +4116,8 @@ const jhWordsDB = [
         "uk": "/ded/",
         "zh": "adj. 死的、去世的、不再使用的、用盡的；adv. 恰好、精確地、完全地、全然地；n. 死人、死者、死、深夜",
         "unit": 17,
-        "example": "Suddenly the phone went dead.",
-        "exampleZh": "突然電話沒電了。"
+        "example": "The old tree in the park is dead.",
+        "exampleZh": "公園裡的老樹已經枯死了。"
     },
     {
         "id": 30413,
@@ -4126,8 +4126,8 @@ const jhWordsDB = [
         "uk": "/def/",
         "zh": "adj. 聾的、置若罔聞的",
         "unit": 17,
-        "example": "The two deaf actors converse solely in signing.",
-        "exampleZh": "兩位聾啞演員僅透過手語交談。"
+        "example": "He speaks with signs because he is deaf.",
+        "exampleZh": "他因為耳聾所以用手語溝通。"
     },
     {
         "id": 30414,
@@ -4156,8 +4156,8 @@ const jhWordsDB = [
         "uk": "/deθ/",
         "zh": "n. 死亡、死、破滅、終止",
         "unit": 17,
-        "example": "Doctors become inured to death.",
-        "exampleZh": "醫生已經見怪不怪了。"
+        "example": "They were very sad at his death.",
+        "exampleZh": "他們對他的去世感到非常難過。"
     },
     {
         "id": 30417,
@@ -4166,8 +4166,8 @@ const jhWordsDB = [
         "uk": "/dɪˈbeɪt/",
         "zh": "n. 討論、辯論；vt. 反覆思考、斟酌、討論、辯論",
         "unit": 17,
-        "example": "Anti-war protesters disrupted the debate.",
-        "exampleZh": "反戰示威者們擾亂了辯論。"
+        "example": "They had a long debate in class.",
+        "exampleZh": "他們在課堂上進行了長時間的辯論。"
     },
     {
         "id": 30418,
@@ -4176,8 +4176,8 @@ const jhWordsDB = [
         "uk": "/dɪˈsembə(r)/",
         "zh": "n. 十二月、公曆（西方曆法）中的第十二個月、也是一年的最後一個月",
         "unit": 17,
-        "example": "I keep forgetting it's December.",
-        "exampleZh": "我總是忘記現在是十二月。"
+        "example": "Christmas comes in cold December every year.",
+        "exampleZh": "聖誕節每年在寒冷的十二月到來。"
     },
     {
         "id": 30419,
@@ -4196,8 +4196,8 @@ const jhWordsDB = [
         "uk": "/dɪˈsɪʒ(ə)n/",
         "zh": "n. 決定、抉擇、判決、裁定",
         "unit": 17,
-        "example": "It was a collective decision.",
-        "exampleZh": "這是集體的決定。"
+        "example": "You made a very wise decision.",
+        "exampleZh": "你做了一個非常明智的決定。"
     },
     {
         "id": 30421,
@@ -4206,8 +4206,8 @@ const jhWordsDB = [
         "uk": "/ˈdekəreɪt/",
         "zh": "vt. 裝飾、裝點、粉刷、裝修",
         "unit": 17,
-        "example": "The boys are planning to decorate when they get the time.",
-        "exampleZh": "男孩們計劃一有時間就裝飾一下。"
+        "example": "We will decorate the house for Christmas.",
+        "exampleZh": "我們將為聖誕節佈置屋子。"
     },
     {
         "id": 30422,
@@ -4226,8 +4226,8 @@ const jhWordsDB = [
         "uk": "/diːp/",
         "zh": "adj. 深的、深厚的、低沉的；adv. 深深地、至深處；n. 深處、海洋",
         "unit": 17,
-        "example": "He sank into deep melancholia.",
-        "exampleZh": "他陷入了深深的憂鬱之中。"
+        "example": "The cold water in the river is deep.",
+        "exampleZh": "河裡冰冷的水很深。"
     },
     {
         "id": 30424,
@@ -4236,8 +4236,8 @@ const jhWordsDB = [
         "uk": "/dɪə(r)/",
         "zh": "n. 鹿",
         "unit": 17,
-        "example": "He'd gone deer hunting with his cousins.",
-        "exampleZh": "他和他的表兄弟一起去獵鹿。"
+        "example": "A wild deer ran through the forest.",
+        "exampleZh": "一隻野生鹿奔跑穿過森林。"
     },
     {
         "id": 30425,
@@ -4246,8 +4246,8 @@ const jhWordsDB = [
         "uk": "/dɪˈɡriː/",
         "zh": "n. 程度、度、度數、學位課程",
         "unit": 17,
-        "example": "She's reading for a law degree.",
-        "exampleZh": "她在攻讀法學學位。"
+        "example": "He earned a new degree this year.",
+        "exampleZh": "他今年獲得了一個新學位。"
     },
     {
         "id": 30426,
@@ -4266,8 +4266,8 @@ const jhWordsDB = [
         "uk": "/dɪˈlɪvə(r)/",
         "zh": "vt. 投遞、運送、履行、兌現",
         "unit": 17,
-        "example": "We deliver the goods in batches.",
-        "exampleZh": "我們分批發貨。"
+        "example": "They deliver fresh milk every morning.",
+        "exampleZh": "他們每天早晨遞送新鮮牛奶。"
     },
     {
         "id": 30428,
@@ -4276,8 +4276,8 @@ const jhWordsDB = [
         "uk": "/ˈdentɪst/",
         "zh": "n. 牙醫、牙科醫生、牙醫診所",
         "unit": 17,
-        "example": "The dentist scaled and polished my teeth.",
-        "exampleZh": "牙醫為我刮除牙石，拋光了牙齒。"
+        "example": "I have to visit the dentist today.",
+        "exampleZh": "我今天必須去看牙醫。"
     },
     {
         "id": 30429,
@@ -4286,8 +4286,8 @@ const jhWordsDB = [
         "uk": "/dɪˈnaɪ/",
         "zh": "vt. 否認、拒絕承認、拒絕給予",
         "unit": 17,
-        "example": "My instinctive reaction was to deny everything.",
-        "exampleZh": "我的本能反應是否認一切。"
+        "example": "He did not deny breaking the glass.",
+        "exampleZh": "他沒有否認打破了玻璃杯。"
     },
     {
         "id": 30430,
@@ -4306,8 +4306,8 @@ const jhWordsDB = [
         "uk": "/dɪˈpend/",
         "zh": "vi. 依賴、取決於、依靠、相信",
         "unit": 17,
-        "example": "Wage rates depend on levels of productivity.",
-        "exampleZh": "工資率取決於生產力水準。"
+        "example": "You can depend on me for help.",
+        "exampleZh": "你可以依靠我來幫忙。"
     },
     {
         "id": 30432,
@@ -4326,8 +4326,8 @@ const jhWordsDB = [
         "uk": "/ˈdezət/",
         "zh": "n. 沙漠、荒漠、荒涼的地方、應得的賞罰；vt. 離棄、捨棄、拋棄、遺棄；adj. 無人居住的、荒涼的、像沙漠的",
         "unit": 17,
-        "example": "The heat in the desert was extreme.",
-        "exampleZh": "沙漠中極其炎熱。"
+        "example": "Camels can walk in the hot desert.",
+        "exampleZh": "駱駝可以在炎熱的沙漠中行走。"
     },
     {
         "id": 30434,
@@ -4346,8 +4346,8 @@ const jhWordsDB = [
         "uk": "/dɪˈzaɪə(r)/",
         "zh": "n. 願望、慾望、渴望、情慾；vt. 渴望、想望、要求、請求",
         "unit": 17,
-        "example": "We all desire health and happiness.",
-        "exampleZh": "我們都渴望健康和幸福。"
+        "example": "She has a strong desire to learn.",
+        "exampleZh": "她有強烈的求知慾望。"
     },
     {
         "id": 30436,
@@ -4356,8 +4356,8 @@ const jhWordsDB = [
         "uk": "/desk/",
         "zh": "n. 書桌、辦公桌、寫字檯、服務檯；adj. 書桌的、桌上適合用的",
         "unit": 17,
-        "example": "A phone trilled on the desk.",
-        "exampleZh": "桌上的電話響起。"
+        "example": "Put your new books on the desk.",
+        "exampleZh": "把你的新書放在書桌上。"
     },
     {
         "id": 30437,
@@ -4366,8 +4366,8 @@ const jhWordsDB = [
         "uk": "/dɪˈzɜːt/",
         "zh": "n. 甜點",
         "unit": 17,
-        "example": "I was tempted by the dessert menu.",
-        "exampleZh": "甜食選單饞得我垂涎欲滴。"
+        "example": "We ate sweet cake for dessert.",
+        "exampleZh": "我們吃了甜蛋糕當點心。"
     },
     {
         "id": 30438,
@@ -4376,8 +4376,8 @@ const jhWordsDB = [
         "uk": "/dɪˈtekt/",
         "zh": "vt. 查出、查明、察覺、測出",
         "unit": 17,
-        "example": "Arnold could detect a certain sadness in the old man's face.",
-        "exampleZh": "阿諾德可以從老人的臉上看出某種悲傷。"
+        "example": "Dogs can detect smells from far away.",
+        "exampleZh": "狗狗可以察覺到遠處的氣味。"
     },
     {
         "id": 30439,
@@ -4386,8 +4386,8 @@ const jhWordsDB = [
         "uk": "/dɪˈveləp/",
         "zh": "v. 發展、成長、發育、逐漸形成",
         "unit": 17,
-        "example": "How fast would the disease develop?",
-        "exampleZh": "這種疾病的發展速度有多快？"
+        "example": "Kids develop new skills by reading books.",
+        "exampleZh": "孩子們透過看書培養新技能。"
     },
     {
         "id": 30440,
@@ -4396,8 +4396,8 @@ const jhWordsDB = [
         "uk": "/ˈdaɪəl/",
         "zh": "vt. 撥號；n. 鐘面、儀表盤、調節器、撥號盤",
         "unit": 17,
-        "example": "Broadband is still more expensive than dial-up services.",
-        "exampleZh": "寬頻還是要比撥號服務費錢得多。"
+        "example": "Dial this number to call me.",
+        "exampleZh": "撥打這個號碼就可以打給我。"
     },
     {
         "id": 30441,
@@ -4406,8 +4406,8 @@ const jhWordsDB = [
         "uk": "/ˈdaɪmənd; ˈdaɪəmənd/",
         "zh": "n. 鑽石、菱形、方塊、內場",
         "unit": 17,
-        "example": "The diamond is mounted in gold.",
-        "exampleZh": "這顆鑽石鑲在金飾物上。"
+        "example": "She wore a shiny diamond ring.",
+        "exampleZh": "她戴著一枚閃亮的鑽石戒指。"
     },
     {
         "id": 30442,
@@ -4416,8 +4416,8 @@ const jhWordsDB = [
         "uk": "/ˈdaɪəri/",
         "zh": "n. 日記、日程簿、專欄",
         "unit": 17,
-        "example": "Eleanor began to keep a diary.",
-        "exampleZh": "埃莉諾開始記日記了。"
+        "example": "She writes in her diary every day.",
+        "exampleZh": "她每天都在日記裡寫下生活點滴。"
     },
     {
         "id": 30443,
@@ -4426,8 +4426,8 @@ const jhWordsDB = [
         "uk": "/ˈdɪkʃən(ə)ri/",
         "zh": "n. 字典、詞典、專業詞典、術語大全",
         "unit": 17,
-        "example": "Can you suggest a good dictionary?",
-        "exampleZh": "你能推薦一本好詞典嗎？"
+        "example": "Look up the word in the dictionary.",
+        "exampleZh": "在字典裡查這個單字。"
     },
     {
         "id": 30444,
@@ -4436,8 +4436,8 @@ const jhWordsDB = [
         "uk": "/daɪ/",
         "zh": "v. 死、死亡、消失、滅亡；n. 骰子、金屬模具、壓模",
         "unit": 17,
-        "example": "I thought I'd die laughing.",
-        "exampleZh": "我以為我會笑死。"
+        "example": "Plants will die without any water.",
+        "exampleZh": "植物沒有水就會死掉。"
     },
     {
         "id": 30445,
@@ -4446,8 +4446,8 @@ const jhWordsDB = [
         "uk": "/ˈdaɪət/",
         "zh": "n. 日常飲食、節食、規定飲食；vi. 節食",
         "unit": 17,
-        "example": "Sugar is ubiquitous in the diet.",
-        "exampleZh": "糖在飲食中到處可見。"
+        "example": "A good diet has fresh fruit.",
+        "exampleZh": "良好的飲食包含新鮮水果。"
     },
     {
         "id": 30446,
@@ -4456,8 +4456,8 @@ const jhWordsDB = [
         "uk": "/ˈdɪfrəns/",
         "zh": "n. 差異、不同之處、差額、分歧；v. 區分",
         "unit": 17,
-        "example": "Few people understand the difference.",
-        "exampleZh": "很少有人瞭解這個差別。"
+        "example": "Can you see the difference in them?",
+        "exampleZh": "你能看出他們之間的差異嗎？"
     },
     {
         "id": 30447,
@@ -4466,8 +4466,8 @@ const jhWordsDB = [
         "uk": "/ˈdɪfrənt/",
         "zh": "adj. 不同的、分別的、各別的、與眾不同的",
         "unit": 17,
-        "example": "Different countries specialized in different products.",
-        "exampleZh": "不同的國家專門生產不同的產品。"
+        "example": "The two brothers like different sports.",
+        "exampleZh": "這兩兄弟喜歡不同的運動。"
     },
     {
         "id": 30448,
@@ -4486,8 +4486,8 @@ const jhWordsDB = [
         "uk": "/ˈdɪfɪkəlti/",
         "zh": "n. 困難、難題",
         "unit": 17,
-        "example": "Do you have difficulty getting up?",
-        "exampleZh": "你起床有困難嗎？"
+        "example": "He had no difficulty with this job.",
+        "exampleZh": "他做這份工作毫無困難。"
     },
     {
         "id": 30450,
@@ -4496,8 +4496,8 @@ const jhWordsDB = [
         "uk": "/dɪɡ/",
         "zh": "v. 挖、掘、挖掘、搜尋；n. 挖掘、輕碰、挖苦",
         "unit": 17,
-        "example": "I'll dig some potatoes for lunch.",
-        "exampleZh": "我會挖一些馬鈴薯當午餐。"
+        "example": "The dogs like to dig holes outside.",
+        "exampleZh": "狗狗們喜歡在外面挖洞。"
     },
     {
         "id": 30451,
@@ -4506,8 +4506,8 @@ const jhWordsDB = [
         "uk": "/ˈdɪlɪdʒənt/",
         "zh": "adj. 勤勉的、勤奮的、細緻的、潛心的",
         "unit": 17,
-        "example": "Meyers is a diligent and prolific worker.",
-        "exampleZh": "邁耶斯是個勤奮而且出活多的工人。"
+        "example": "The diligent boy read all day.",
+        "exampleZh": "那個勤奮的男孩讀了一整天書。"
     },
     {
         "id": 30452,
@@ -4516,8 +4516,8 @@ const jhWordsDB = [
         "uk": "/ˈdɪpləmæt/",
         "zh": "n. 外交官、外交家、有手腕的人、善交際的人",
         "unit": 17,
-        "example": "Fearey had all the charm and urbanity of the trained diplomat.",
-        "exampleZh": "費爾裡有著受過訓練的外交家都有的所有魅力和社交禮節。"
+        "example": "Her father is an honest diplomat.",
+        "exampleZh": "她的父親是一位正直的外交官。"
     },
     {
         "id": 30453,
@@ -4526,8 +4526,8 @@ const jhWordsDB = [
         "uk": "/ˈdɪnə(r)/",
         "zh": "n. 晚餐、正餐、晚宴、宴會",
         "unit": 17,
-        "example": "Dinner was in two sittings.",
-        "exampleZh": "晚餐分兩次進行。"
+        "example": "We eat hot dinner together every evening.",
+        "exampleZh": "我們每天傍晚一起吃熱熱的晚餐。"
     },
     {
         "id": 30454,
@@ -4536,8 +4536,8 @@ const jhWordsDB = [
         "uk": "/ˈdaɪnəsɔː(r)/",
         "zh": "n. 恐龍、守舊落伍的人、過時落後的東西",
         "unit": 17,
-        "example": "The children were amazed by the giant dinosaur skeleton.",
-        "exampleZh": "孩子們對那具巨大的恐龍骨架感到驚嘆不已。"
+        "example": "The boy loves to draw a dinosaur.",
+        "exampleZh": "那個男孩很喜歡畫恐龍。"
     },
     {
         "id": 30455,
@@ -4576,8 +4576,8 @@ const jhWordsDB = [
         "uk": "/ˌdɪsəˈɡriː/",
         "zh": "vi. 不同意、有分歧、意見不合、不一致",
         "unit": 17,
-        "example": "'I disagree,' said Polly stoutly.",
-        "exampleZh": "「我不同意，」波莉堅決地說。"
+        "example": "I disagree with what he said today.",
+        "exampleZh": "我不同意他今天所說的話。"
     },
     {
         "id": 30459,
@@ -4586,8 +4586,8 @@ const jhWordsDB = [
         "uk": "/ˌdɪsəˈpɪə(r)/",
         "zh": "vi. 消失、不見、失蹤、丟失",
         "unit": 17,
-        "example": "They watched the bus disappear into the distance.",
-        "exampleZh": "他們看著公車消失在遠方。"
+        "example": "The stars disappear when the sun rises.",
+        "exampleZh": "當太陽升起時星星便消失了。"
     },
     {
         "id": 30460,
@@ -4596,8 +4596,8 @@ const jhWordsDB = [
         "uk": "/dɪˈskʌvə(r)/",
         "zh": "vt. 發現、找到、瞭解到、發覺",
         "unit": 17,
-        "example": "It's exciting to discover traces of earlier civilizations.",
-        "exampleZh": "發現早期文明的痕跡是令人興奮的。"
+        "example": "Children discover new things every day.",
+        "exampleZh": "孩子們每天都會發現新事物。"
     },
     {
         "id": 30461,
@@ -4606,8 +4606,8 @@ const jhWordsDB = [
         "uk": "/dɪˈskʌs/",
         "zh": "vt. 討論、辯論、詳述、論述",
         "unit": 17,
-        "example": "They had important matters to discuss.",
-        "exampleZh": "他們有重要的事情要討論。"
+        "example": "Let us discuss the plan after lunch.",
+        "exampleZh": "我們午餐後再來討論這個計畫吧。"
     },
     {
         "id": 30462,
@@ -4636,8 +4636,8 @@ const jhWordsDB = [
         "uk": "/dɪsˈɒnɪst/",
         "zh": "adj. 不誠實的、不正直的、欺詐的、欺騙性的",
         "unit": 17,
-        "example": "He was a dishonest hypocrite prepared to exploit his family.",
-        "exampleZh": "他是一個不誠實的偽君子，準備利用他的家人。"
+        "example": "Telling lies shows that you are dishonest.",
+        "exampleZh": "說謊表現出你是個不誠實的人。"
     },
     {
         "id": 30465,
@@ -4646,8 +4646,8 @@ const jhWordsDB = [
         "uk": "/ˈdɪstəns/",
         "zh": "n. 遠處、疏遠、隔閡、差別；vt. 疏遠、遠離；adj. 遠距離的",
         "unit": 17,
-        "example": "Mountains rose in the distance.",
-        "exampleZh": "遠處山巒疊起。"
+        "example": "We saw a light in the distance.",
+        "exampleZh": "我們看見遠處有一道光芒。"
     },
     {
         "id": 30466,
@@ -4666,8 +4666,8 @@ const jhWordsDB = [
         "uk": "/dɪˈvaɪd/",
         "zh": "vt. 分歧、不和、分開、分散；n. 分水嶺、差異、分歧、界限",
         "unit": 17,
-        "example": "The cells began to divide rapidly.",
-        "exampleZh": "細胞迅速分裂。"
+        "example": "Please divide the cake into four parts.",
+        "exampleZh": "請把蛋糕分成四等份。"
     },
     {
         "id": 30468,
@@ -4676,8 +4676,8 @@ const jhWordsDB = [
         "uk": "/ˈdɪzi/",
         "zh": "adj. 頭暈的、頭暈目眩的、使人眩暈的、使人感到變化太快的；v. 使眩暈、使暈頭轉向、使困惑、使思想混亂",
         "unit": 17,
-        "example": "She felt dizzy and nauseous.",
-        "exampleZh": "她感到頭暈、噁心。"
+        "example": "The fast ride made me feel dizzy.",
+        "exampleZh": "快速的遊樂設施讓我感到頭暈目眩。"
     },
     {
         "id": 30469,
@@ -4686,8 +4686,8 @@ const jhWordsDB = [
         "uk": "/ˈdɒktə(r)/",
         "zh": "n. 醫生、大夫、診所、博士；vt. 篡改、偽造、將有害物摻入（食物或飲料）中、閹割",
         "unit": 17,
-        "example": "The doctor tested her reflexes.",
-        "exampleZh": "醫生檢測了她的反射動作。"
+        "example": "You should see a doctor soon.",
+        "exampleZh": "你應該盡快去看醫生。"
     },
     {
         "id": 30470,
@@ -4696,8 +4696,8 @@ const jhWordsDB = [
         "uk": "/dɒɡ/",
         "zh": "n. 狗、犬、公狗、公狐；vt. 困擾、糾纏、跟蹤、尾隨",
         "unit": 17,
-        "example": "The dog refused to budge.",
-        "exampleZh": "狗狗拒絕讓步。"
+        "example": "My pet dog likes to run fast.",
+        "exampleZh": "我的寵物狗喜歡跑得很快。"
     },
     {
         "id": 30471,
@@ -4706,8 +4706,8 @@ const jhWordsDB = [
         "uk": "/dɒl/",
         "zh": "n. 洋娃娃、玩偶、美人兒、大方的人；v. 把……打扮得花枝招展、在（需跳躍的地方或跑道上其他不需跑的部分）前放置障礙物",
         "unit": 17,
-        "example": "The child was clutching a doll in her hand.",
-        "exampleZh": "孩子手裡拿著一個洋娃娃。"
+        "example": "The little girl hugged her new doll.",
+        "exampleZh": "小女孩抱著她的新洋娃娃。"
     },
     {
         "id": 30472,
@@ -4716,8 +4716,8 @@ const jhWordsDB = [
         "uk": "/ˈdɒlə(r)/",
         "zh": "n. 元、美元、一美元紙幣或硬幣、金錢",
         "unit": 17,
-        "example": "The dollar continued to slide.",
-        "exampleZh": "美元繼續下滑。"
+        "example": "This red pen costs only one dollar.",
+        "exampleZh": "這支紅筆只要一美元。"
     },
     {
         "id": 30473,
@@ -4726,8 +4726,8 @@ const jhWordsDB = [
         "uk": "/ˈdɒlfɪn/",
         "zh": "n. 海豚、鯕鰍、又稱鬼頭刀、系船柱",
         "unit": 17,
-        "example": "The dolphin is an intelligent animal.",
-        "exampleZh": "海豚是聰明的動物。"
+        "example": "A dolphin can swim very fast.",
+        "exampleZh": "海豚可以游得非常快。"
     },
     {
         "id": 30474,
@@ -4746,8 +4746,8 @@ const jhWordsDB = [
         "uk": "/dɔː(r)/",
         "zh": "n. 門、門口、門道、建築；v. 車門撞擊",
         "unit": 17,
-        "example": "The door opens outwards.",
-        "exampleZh": "門向外打開。"
+        "example": "Please do not lock the front door.",
+        "exampleZh": "請不要把前門鎖上。"
     },
     {
         "id": 30476,
@@ -4756,8 +4756,8 @@ const jhWordsDB = [
         "uk": "/dɒt/",
         "zh": "n. 小圓點、點、點狀物、頓音記號；vt. 點、加點、散佈於、遍佈",
         "unit": 17,
-        "example": "Draw a clear black dot in the center of the circle.",
-        "exampleZh": "在圓圈的正中心畫一個清晰的黑點。"
+        "example": "Draw a small black dot here.",
+        "exampleZh": "在這裡畫一個黑色小圓點。"
     },
     {
         "id": 30477,
@@ -4766,8 +4766,8 @@ const jhWordsDB = [
         "uk": "/ˈdʌb(ə)l/",
         "zh": "adj. 兩倍的、雙的、供兩人用的、雙重的；adv. 兩倍地；v. 加倍、對摺、擊出二壘安打、兼任；n. 兩倍、兩倍量、酷似的人、替身演員；det. 是……兩倍；pron. 雙倍數",
         "unit": 17,
-        "example": "He served 17 double faults.",
-        "exampleZh": "他有17次雙發失誤。"
+        "example": "He drank a double cup of milk.",
+        "exampleZh": "他喝了一杯雙倍份量的牛奶。"
     },
     {
         "id": 30478,
@@ -4776,8 +4776,8 @@ const jhWordsDB = [
         "uk": "/daʊt/",
         "zh": "vt. 懷疑、不確定、不信任；n. 懷疑、不確定",
         "unit": 17,
-        "example": "There was little doubt in my mind.",
-        "exampleZh": "我心裡幾乎沒有疑問。"
+        "example": "I have no doubt about your skill.",
+        "exampleZh": "我對你的技術毫無懷疑。"
     },
     {
         "id": 30479,
@@ -4806,8 +4806,8 @@ const jhWordsDB = [
         "uk": "/daʊn/",
         "zh": "adv. 朝下、向下、下、倒；adj. 在低處的、在下方的、向下的、便宜的；n. 羽絨、絨毛、軟毛、汗毛；prep. 向下、朝下、沿著、順；vt. 使掉落、喝下、吃下、擊敗",
         "unit": 17,
-        "example": "He crouched down beside her.",
-        "exampleZh": "他在她身邊蹲下。"
+        "example": "Sit down on the green grass, please.",
+        "exampleZh": "請在綠色的草地上坐下來。"
     },
     {
         "id": 30482,
@@ -4816,8 +4816,8 @@ const jhWordsDB = [
         "uk": "/ˌdaʊnˈsteəz/",
         "zh": "adv. 順樓梯而下、往樓下、在樓下；adj. 在樓下的、在底樓的；n. 樓下、下面的幾層樓",
         "unit": 17,
-        "example": "Denise went downstairs and made some tea.",
-        "exampleZh": "丹妮絲下樓泡了茶。"
+        "example": "She ran downstairs to open the door.",
+        "exampleZh": "她跑下樓去開門。"
     },
     {
         "id": 30483,
@@ -4826,8 +4826,8 @@ const jhWordsDB = [
         "uk": "/ˌdaʊnˈtaʊn/",
         "zh": "adj. 市中心的、商業區的；adv. 向（在）市中心、向（在）城鎮商業中心區；n. 城鎮的中心區、商業區、鬧市區",
         "unit": 17,
-        "example": "Parking can be tricky downtown.",
-        "exampleZh": "在市中心停車會很難。"
+        "example": "We took a bus to go downtown.",
+        "exampleZh": "我們搭公車去市中心。"
     },
     {
         "id": 30484,
@@ -4836,8 +4836,8 @@ const jhWordsDB = [
         "uk": "/ˈdʌz(ə)n/",
         "zh": "n. 打、一打、十二個、大量",
         "unit": 17,
-        "example": "Packages arrived by the dozen from America.",
-        "exampleZh": "幾十個包裹從美國運來。"
+        "example": "We bought a dozen fresh eggs today.",
+        "exampleZh": "我們今天買了一打新鮮雞蛋。"
     },
     {
         "id": 30485,
@@ -4846,8 +4846,8 @@ const jhWordsDB = [
         "uk": "/dræɡ/",
         "zh": "v. 拖、拽、生拉硬拽、強迫；n. 乏味無聊的事、累贅、拖累、吸一口",
         "unit": 17,
-        "example": "Walking's a drag—let's drive there.",
-        "exampleZh": "步行太累了—咱們開車去吧。"
+        "example": "Do not drag your bag on the floor.",
+        "exampleZh": "不要把你的包包拖在地板上。"
     },
     {
         "id": 30486,
@@ -4866,8 +4866,8 @@ const jhWordsDB = [
         "uk": "/ˈdrɑːmə/",
         "zh": "n. 戲劇、劇本、戲劇研究、戲劇藝術",
         "unit": 17,
-        "example": "He knew nothing of Greek drama.",
-        "exampleZh": "他對希臘戲劇一無所知。"
+        "example": "She likes to act in school drama.",
+        "exampleZh": "她喜歡在學校話劇中演出。"
     },
     {
         "id": 30488,
@@ -4876,8 +4876,8 @@ const jhWordsDB = [
         "uk": "/drɔː/",
         "zh": "v. 平局、畫、繪畫、草擬；n. 平手、平局、抽彩、抽籤",
         "unit": 17,
-        "example": "They managed an honourable 2–2 draw.",
-        "exampleZh": "他們打了一場光榮的2-2平手。"
+        "example": "I like to draw trees and flowers.",
+        "exampleZh": "我喜歡畫樹木和花朵。"
     },
     {
         "id": 30489,
@@ -4896,8 +4896,8 @@ const jhWordsDB = [
         "uk": "/driːm/",
         "zh": "n. 夢、夢想、恍惚、出神；v. 做夢、夢見、夢想、想象；adj. 理想的、完美的",
         "unit": 17,
-        "example": "He finally actualized his dream.",
-        "exampleZh": "他終於實現了他的夢想。"
+        "example": "I had a wonderful dream last night.",
+        "exampleZh": "我昨晚做了一個美妙的夢。"
     },
     {
         "id": 30491,
@@ -4906,8 +4906,8 @@ const jhWordsDB = [
         "uk": "/dres/",
         "zh": "n. 連衣裙、套裙、服裝、衣服；v. 穿衣、給……穿衣服、穿正式服裝、清洗包紮",
         "unit": 17,
-        "example": "For lunch, dress is informal.",
-        "exampleZh": "吃午餐可以穿著休閒裝。"
+        "example": "She bought a pretty blue dress.",
+        "exampleZh": "她買了一件漂亮的藍色洋裝。"
     },
     {
         "id": 30492,
@@ -4926,8 +4926,8 @@ const jhWordsDB = [
         "uk": "/draɪv/",
         "zh": "v. 駕車送、迫使、驅使、驅趕；n. 驅車出行、強烈慾望、本能需求、私人車道",
         "unit": 17,
-        "example": "You shouldn't drive so fast.",
-        "exampleZh": "你不應該開這麼快。"
+        "example": "Can you drive me to the station?",
+        "exampleZh": "你可以開車送我去車站嗎？"
     },
     {
         "id": 30494,
@@ -4936,8 +4936,8 @@ const jhWordsDB = [
         "uk": "/ˈdraɪvə(r)/",
         "zh": "n. 駕駛人、司機、駕駛員、驅動程式",
         "unit": 17,
-        "example": "The driver suffered head injuries.",
-        "exampleZh": "司機頭部受傷。"
+        "example": "The bus driver is very kind today.",
+        "exampleZh": "這位公車司機今天非常親切。"
     },
     {
         "id": 30495,
@@ -4946,8 +4946,8 @@ const jhWordsDB = [
         "uk": "/drɒp/",
         "zh": "v. 投、丟、躺倒、剔除；n. 滴、少量、下降、落差",
         "unit": 17,
-        "example": "Temperatures can drop to freezing at night.",
-        "exampleZh": "晚上氣溫能陡降到零度以下。"
+        "example": "Do not drop the glass on floor.",
+        "exampleZh": "不要把玻璃杯掉在地板上。"
     },
     {
         "id": 30496,
@@ -4956,8 +4956,8 @@ const jhWordsDB = [
         "uk": "/drʌɡ/",
         "zh": "n. 藥物、藥品、毒品；vt. 下藥、使服麻醉藥",
         "unit": 17,
-        "example": "The new drug was ineffective.",
-        "exampleZh": "新藥不起作用。"
+        "example": "The doctor gave me a safe drug.",
+        "exampleZh": "醫生給了我一種安全的藥物。"
     },
     {
         "id": 30497,
@@ -4976,8 +4976,8 @@ const jhWordsDB = [
         "uk": "/draɪ/",
         "zh": "adj. 乾的、乾燥的、乾旱的、口渴的；v. 弄乾、變乾、擦乾",
         "unit": 17,
-        "example": "My mouth felt completely dry.",
-        "exampleZh": "我感覺口乾舌燥。"
+        "example": "Please dry your wet hands now.",
+        "exampleZh": "請現在把濕的手擦乾。"
     },
     {
         "id": 30499,
@@ -4996,8 +4996,8 @@ const jhWordsDB = [
         "uk": "/dʌk/",
         "zh": "n. 鴨子、鴨肉、母鴨、零分；v. 逃避、迴避、躲避、把（人）按入水中",
         "unit": 17,
-        "example": "The main course was roast duck.",
-        "exampleZh": "主菜是烤鴨。"
+        "example": "A yellow duck swam in the pond.",
+        "exampleZh": "一隻黃色鴨子在池塘裡游泳。"
     },
     {
         "id": 30501,
@@ -5016,8 +5016,8 @@ const jhWordsDB = [
         "uk": "/ˈdʌmplɪŋ/",
         "zh": "n. 餃子、湯糰、水果布丁、水果餡點心",
         "unit": 17,
-        "example": "My favorite food is dumpling.",
-        "exampleZh": "我最喜歡的食物是餃子。"
+        "example": "I ate a hot pork dumpling.",
+        "exampleZh": "我吃了一個熱呼呼的豬肉水餃。"
     },
     {
         "id": 30503,
@@ -5026,8 +5026,8 @@ const jhWordsDB = [
         "uk": "/ˈdjʊərɪŋ/",
         "zh": "prep. 在……期間、在……期間的某個時候",
         "unit": 17,
-        "example": "Eggs were rationed during the war.",
-        "exampleZh": "戰爭期間雞蛋實施配給制。"
+        "example": "We stayed at home during the rain.",
+        "exampleZh": "下雨期間我們待在家裡。"
     },
     {
         "id": 30504,
@@ -5036,8 +5036,8 @@ const jhWordsDB = [
         "uk": "/ˈdjuːti/",
         "zh": "n. 義務、責任、上班、值班",
         "unit": 17,
-        "example": "He was recalled to military duty.",
-        "exampleZh": "他被召回執行軍事任務。"
+        "example": "It is my duty to help you.",
+        "exampleZh": "幫助你是我的職責。"
     },
     {
         "id": 30505,
@@ -5046,8 +5046,8 @@ const jhWordsDB = [
         "uk": "/iːtʃ/",
         "zh": "det. 每個、每、各、每一；pron. 各自、每個、各個；adj. 每個的、各自的；adv. 給每個、對各個",
         "unit": 17,
-        "example": "We're crazy about each other.",
-        "exampleZh": "我們都為彼此瘋狂。"
+        "example": "Each student has a new English book.",
+        "exampleZh": "每個學生都有一本新的英文書。"
     },
     {
         "id": 30506,
@@ -5056,8 +5056,8 @@ const jhWordsDB = [
         "uk": "/ˈiːɡ(ə)l/",
         "zh": "n. 鷹、雕、鷹擊；v. 在（某洞）上打出老鷹球",
         "unit": 17,
-        "example": "An eagle circled high overhead.",
-        "exampleZh": "一隻鷹在頭頂高空盤旋。"
+        "example": "A large eagle flew high above us.",
+        "exampleZh": "一隻大老鷹在我們上方高高飛翔。"
     },
     {
         "id": 30507,
@@ -5066,8 +5066,8 @@ const jhWordsDB = [
         "uk": "/ɪə(r)/",
         "zh": "n. 耳朵、靈敏的聽力、傾聽、穗",
         "unit": 17,
-        "example": "He tweaked Guy's ear roughly.",
-        "exampleZh": "他粗暴地扭動蓋伊的耳朵。"
+        "example": "The rabbit has two long soft ears.",
+        "exampleZh": "這隻兔子有兩隻長長又柔軟的耳朵。"
     },
     {
         "id": 30508,
@@ -5096,8 +5096,8 @@ const jhWordsDB = [
         "uk": "/ˈɪərɪŋ/",
         "zh": "n. 耳環、耳飾",
         "unit": 17,
-        "example": "I've lost an earring and it was an expensive one.",
-        "exampleZh": "我丟了一隻耳環，那是一隻很貴的耳環。"
+        "example": "She wore a shiny gold earring.",
+        "exampleZh": "她戴著一隻閃亮的金耳環。"
     },
     {
         "id": 30511,
@@ -5106,8 +5106,8 @@ const jhWordsDB = [
         "uk": "/ɜːθ/",
         "zh": "n. 地球、世界、陸地、地面；v. 把（電線）接地、用土掩蓋、追趕入洞穴",
         "unit": 17,
-        "example": "The Earth orbits in an ellipse.",
-        "exampleZh": "地球繞橢圓軌道運行。"
+        "example": "The earth goes around the sun every year.",
+        "exampleZh": "地球每年繞著太陽運轉。"
     },
     {
         "id": 30512,
@@ -5136,8 +5136,8 @@ const jhWordsDB = [
         "uk": "/ˈiːstən/",
         "zh": "adj. 東方的、向東的、朝東的",
         "unit": 17,
-        "example": "The wild card in the picture is eastern Europe.",
-        "exampleZh": "圖中的通配符是東歐。"
+        "example": "The sun rose over the eastern hills.",
+        "exampleZh": "太陽從東邊的山丘上升起。"
     },
     {
         "id": 30515,
@@ -5156,8 +5156,8 @@ const jhWordsDB = [
         "uk": "/iːt/",
         "zh": "v. 吃、吃飯、侵蝕、損耗；n. 少量食物、點心",
         "unit": 17,
-        "example": "She began to eat ravenously.",
-        "exampleZh": "她開始狼吞虎嚥地吃東西。"
+        "example": "We eat fresh fruit every single day.",
+        "exampleZh": "我們每一天都吃新鮮水果。"
     },
     {
         "id": 30517,
@@ -5166,8 +5166,8 @@ const jhWordsDB = [
         "uk": "/edʒ/",
         "zh": "n. 邊緣、邊、鋒、刃；vi. 緩慢地移動、給……加邊、險勝、用球拍邊擊球",
         "unit": 17,
-        "example": "Be careful—it has a sharp edge.",
-        "exampleZh": "小心——它有鋒利的邊緣。"
+        "example": "Do not sit near the water edge.",
+        "exampleZh": "不要坐在水邊緣附近。"
     },
     {
         "id": 30518,
@@ -5176,8 +5176,8 @@ const jhWordsDB = [
         "uk": "/ˌedʒuˈkeɪʃ(ə)n/",
         "zh": "n. 教育、培養、訓練、教育機構",
         "unit": 17,
-        "example": "Education is a top priority.",
-        "exampleZh": "教育是當務之急。"
+        "example": "Good education gives children a bright future.",
+        "exampleZh": "良好的教育給予孩子光明的未來。"
     },
     {
         "id": 30519,
@@ -5186,8 +5186,8 @@ const jhWordsDB = [
         "uk": "/ɪˈfekt/",
         "zh": "n. 影響、作用、效果、印象；vt. 實現、引起",
         "unit": 17,
-        "example": "The effect has proved hard to reproduce.",
-        "exampleZh": "這種效果經證實很難再造。"
+        "example": "The cold pill had a quick effect.",
+        "exampleZh": "這顆感冒藥見效很快。"
     },
     {
         "id": 30520,
@@ -5206,8 +5206,8 @@ const jhWordsDB = [
         "uk": "/eɡ/",
         "zh": "n. 蛋、卵、雞蛋、卵子；v. 煽動、慫恿",
         "unit": 17,
-        "example": "Brush beaten egg over the pastry.",
-        "exampleZh": "在糕點上刷上打好的蛋。"
+        "example": "I eat a boiled egg every morning.",
+        "exampleZh": "我每天早上吃一顆水煮蛋。"
     },
     {
         "id": 30522,
@@ -5216,8 +5216,8 @@ const jhWordsDB = [
         "uk": "/eɪt/",
         "zh": "num. 八、八個、第八、八歲；adj. 八的；n. 八、八人划船隊",
         "unit": 17,
-        "example": "The cut needed eight stitches.",
-        "exampleZh": "傷口需要縫八針。"
+        "example": "My younger sister is eight years old.",
+        "exampleZh": "我的妹妹今年八歲。"
     },
     {
         "id": 30523,
@@ -5236,8 +5236,8 @@ const jhWordsDB = [
         "uk": "/ˈeɪti/",
         "zh": "n. 八十、八十歲、八十年代；adj. 八十的、八十個的、八十歲的；num. 八十",
         "unit": 17,
-        "example": "He's getting on for eighty.",
-        "exampleZh": "他已經八十歲了。"
+        "example": "My grandfather is eighty years old now.",
+        "exampleZh": "我祖父現在已經八十歲了。"
     },
     {
         "id": 30525,
@@ -5256,8 +5256,8 @@ const jhWordsDB = [
         "uk": "/ˈeldə(r)/",
         "zh": "adj. 年齡較大的、資格老的；n. 長者、長輩、元老、長老",
         "unit": 17,
-        "example": "He is her elder by several years.",
-        "exampleZh": "他比她年長几歲。"
+        "example": "We should be polite to our elders.",
+        "exampleZh": "我們應該對長輩有禮貌。"
     },
     {
         "id": 30527,
@@ -5266,8 +5266,8 @@ const jhWordsDB = [
         "uk": "/ɪˈlekt/",
         "zh": "vt. 選舉、選擇、挑選（某人）；adj. 候任的、選中的、卓越的、蒙上帝挑選（而得救）的；n. 上帝的選民、特權階層",
         "unit": 17,
-        "example": "The committee voted to re-elect him (as) chairman.",
-        "exampleZh": "委員會投票選舉他再次擔任主席。"
+        "example": "The people will elect a new leader.",
+        "exampleZh": "人民將會選出一位新領袖。"
     },
     {
         "id": 30528,
@@ -5276,8 +5276,8 @@ const jhWordsDB = [
         "uk": "/ˈelɪfənt; ˈeləfənt/",
         "zh": "n. 大象、象、大號圖畫紙",
         "unit": 17,
-        "example": "The elephant flapped its ears.",
-        "exampleZh": "大象拍打著耳朵。"
+        "example": "The wild elephant is a large animal.",
+        "exampleZh": "野生大象是一種大型動物。"
     },
     {
         "id": 30529,
@@ -5286,8 +5286,8 @@ const jhWordsDB = [
         "uk": "/ɪˈlev(ə)n/",
         "zh": "num. 十一、十一個；n. 十一、十一個、由十一人組成的運動隊；adj. 十一的、十一個的",
         "unit": 17,
-        "example": "Charles I ruled for eleven years.",
-        "exampleZh": "查理一世統治十一年。"
+        "example": "He has eleven books at home.",
+        "exampleZh": "他在家裡有十一本書。"
     },
     {
         "id": 30530,
@@ -5296,8 +5296,8 @@ const jhWordsDB = [
         "uk": "/ɪˈlektrɪk/",
         "zh": "adj. 電的、令人激動的、電子擴音的；n. 電路系統、電氣交通工具",
         "unit": 17,
-        "example": "He invented the first electric clock.",
-        "exampleZh": "他發明了第一個電動鍾。"
+        "example": "My dad drives an electric car.",
+        "exampleZh": "我爸爸開電動車。"
     },
     {
         "id": 30531,
@@ -5306,8 +5306,8 @@ const jhWordsDB = [
         "uk": "/els/",
         "zh": "adv. 其他、此外、否則、要不然；adj. 其他的、另外的",
         "unit": 17,
-        "example": "Everyone else was getting sloshed.",
-        "exampleZh": "其他人都喝得酩酊大醉。"
+        "example": "What else do you want to buy?",
+        "exampleZh": "你還想買什麼別的東西？"
     },
     {
         "id": 30532,
@@ -5326,8 +5326,8 @@ const jhWordsDB = [
         "uk": "/ɪˈməʊʃ(ə)n/",
         "zh": "n. 情緒、情感、激情、強烈的情感",
         "unit": 17,
-        "example": "Jealousy is a primal emotion.",
-        "exampleZh": "嫉妒是一種原始情感。"
+        "example": "Love is a very strong human emotion.",
+        "exampleZh": "愛是一種非常強烈的人類情感。"
     },
     {
         "id": 30534,
@@ -5336,8 +5336,8 @@ const jhWordsDB = [
         "uk": "/ˈemfəsaɪz/",
         "zh": "vt. 強調、著重、重讀、使突出",
         "unit": 17,
-        "example": "He flourished the glass to emphasize the point.",
-        "exampleZh": "他揮舞著杯子來強調這一點。"
+        "example": "I emphasize this rule to you.",
+        "exampleZh": "我向你強調這項規則。"
     },
     {
         "id": 30535,
@@ -5346,8 +5346,8 @@ const jhWordsDB = [
         "uk": "/ɪmˈplɔɪ/",
         "zh": "vt. 雇用、僱用、使用、利用；n. 受僱",
         "unit": 17,
-        "example": "How many people does the company employ?",
-        "exampleZh": "這個公司僱用了多少人？"
+        "example": "They employ five men to work.",
+        "exampleZh": "他們僱用五名男子來工作。"
     },
     {
         "id": 30536,
@@ -5356,8 +5356,8 @@ const jhWordsDB = [
         "uk": "/ˈempti/",
         "zh": "adj. 空的、空洞的、無意義的、空虛的；v. 清空、變空、流入、使失去；n. 空容器",
         "unit": 17,
-        "example": "The nation's coffers are empty.",
-        "exampleZh": "國庫空虛。"
+        "example": "The glass cup is now empty.",
+        "exampleZh": "玻璃杯現在空了。"
     },
     {
         "id": 30537,
@@ -5366,8 +5366,8 @@ const jhWordsDB = [
         "uk": "/end/",
         "zh": "n. 結束、末端、終點、目的；v. 結束、終止",
         "unit": 17,
-        "example": "We stayed until the very end of the concert.",
-        "exampleZh": "我們一直待到了音樂會的最後尾聲。"
+        "example": "The movie will end very soon.",
+        "exampleZh": "這部電影很快就會結束。"
     },
     {
         "id": 30538,
@@ -5376,8 +5376,8 @@ const jhWordsDB = [
         "uk": "/ˈenəmi/",
         "zh": "n. 敵人、反對者、敵國、敵軍；adj. 敵人的、敵方的",
         "unit": 17,
-        "example": "They retreated before the enemy.",
-        "exampleZh": "面對敵人，他們撤退了。"
+        "example": "The brave dog chased away the enemy.",
+        "exampleZh": "那隻勇敢的狗趕走了敵人。"
     },
     {
         "id": 30539,
@@ -5386,8 +5386,8 @@ const jhWordsDB = [
         "uk": "/ˌenəˈdʒetɪk/",
         "zh": "adj. 精力充沛的、充滿活力的、積極的、劇烈的",
         "unit": 17,
-        "example": "He was hardworking and energetic.",
-        "exampleZh": "他很努力且精力充沛。"
+        "example": "The energetic boy plays all day.",
+        "exampleZh": "那個精力充沛的男孩玩了一整天。"
     },
     {
         "id": 30540,
@@ -5396,8 +5396,8 @@ const jhWordsDB = [
         "uk": "/ˈenədʒi/",
         "zh": "n. 精力、能力、力氣、活力",
         "unit": 17,
-        "example": "She's always full of energy.",
-        "exampleZh": "她總是充滿活力。"
+        "example": "Children have a lot of energy today.",
+        "exampleZh": "孩子們今天活力充沛。"
     },
     {
         "id": 30541,
@@ -5406,8 +5406,8 @@ const jhWordsDB = [
         "uk": "/ˈendʒɪn/",
         "zh": "n. 引擎、發動機、機車、火車頭",
         "unit": 17,
-        "example": "The engine spluttered and died.",
-        "exampleZh": "發動機劈劈啪啪響了一陣後便熄火了。"
+        "example": "The car engine is very hot.",
+        "exampleZh": "汽車引擎非常燙。"
     },
     {
         "id": 30542,
@@ -5446,8 +5446,8 @@ const jhWordsDB = [
         "uk": "/ˈentə(r)/",
         "zh": "vt. 進入、開始從事、開始做、參加；n. 回車鍵",
         "unit": 17,
-        "example": "The sentry would not let her enter.",
-        "exampleZh": "哨兵不讓她進去。"
+        "example": "Please knock before you enter the room.",
+        "exampleZh": "進入房間前請先敲門。"
     },
     {
         "id": 30546,
@@ -5456,8 +5456,8 @@ const jhWordsDB = [
         "uk": "/ˈentrəns/",
         "zh": "n. 入口、進口、進入、進門；vt. 使入迷、使狂喜",
         "unit": 17,
-        "example": "This entrance is in constant use.",
-        "exampleZh": "此入口經常使用。"
+        "example": "Wait for me at the front entrance.",
+        "exampleZh": "在正門入口處等我。"
     },
     {
         "id": 30547,
@@ -5466,8 +5466,8 @@ const jhWordsDB = [
         "uk": "/ˈenvələʊp/",
         "zh": "n. 信封、封皮、氣囊、包層",
         "unit": 17,
-        "example": "She opened the perfumed envelope.",
-        "exampleZh": "她開啟了帶有香味的信封。"
+        "example": "Put the card inside a white envelope.",
+        "exampleZh": "把卡片放進白色信封裡。"
     },
     {
         "id": 30548,
@@ -5476,8 +5476,8 @@ const jhWordsDB = [
         "uk": "/ɪnˈvaɪrənmənt/",
         "zh": "n. 自然環境、生態環境、周圍狀況、條件",
         "unit": 17,
-        "example": "Children need a caring environment.",
-        "exampleZh": "兒童需要一個充滿關懷的環境。"
+        "example": "We must keep our home environment clean.",
+        "exampleZh": "我們必須保持居家環境乾淨。"
     },
     {
         "id": 30549,
@@ -5516,8 +5516,8 @@ const jhWordsDB = [
         "uk": "/ˈerə(r)/",
         "zh": "n. 錯誤、差錯、失誤",
         "unit": 17,
-        "example": "Vicenzo failed to spot the error.",
-        "exampleZh": "維森佐沒能發現這個錯誤。"
+        "example": "I found an error on page five.",
+        "exampleZh": "我在第五頁發現了一個錯誤。"
     },
     {
         "id": 30553,
@@ -5536,8 +5536,8 @@ const jhWordsDB = [
         "uk": "/iːv/",
         "zh": "n. 前夕、前一天、傍晚、黃昏",
         "unit": 17,
-        "example": "Richard had turned up on Christmas Eve with Tony.",
-        "exampleZh": "理查德在聖誕前夜與託尼一起出現。"
+        "example": "They met on New Year Eve.",
+        "exampleZh": "他們在除夕夜相聚。"
     },
     {
         "id": 30555,
@@ -5546,8 +5546,8 @@ const jhWordsDB = [
         "uk": "/ˈiːv(ə)n/",
         "zh": "adj. 平坦的、水平的、平靜的、平和的；adv. 甚至、即使、更加、愈加；v. 使相等、使平均、變平坦、使變平；n. 傍晚、晚上",
         "unit": 17,
-        "example": "She can't even change a nappy.",
-        "exampleZh": "她連尿布都不會換。"
+        "example": "Even a small child can do this.",
+        "exampleZh": "連小孩子都能做這件事。"
     },
     {
         "id": 30556,
@@ -5556,8 +5556,8 @@ const jhWordsDB = [
         "uk": "/ˈiːvnɪŋ/",
         "zh": "n. 傍晚、晚上、晚會、晚間活動；int. 晚上好；adj. 在晚上的、為晚上的",
         "unit": 17,
-        "example": "I'll see you tomorrow evening.",
-        "exampleZh": "明天晚上見。"
+        "example": "They walk in the park this evening.",
+        "exampleZh": "他們今晚在公園散步。"
     },
     {
         "id": 30557,
@@ -5566,8 +5566,8 @@ const jhWordsDB = [
         "uk": "/ɪˈvent/",
         "zh": "n. 事件、大事、社交場合、既定活動",
         "unit": 17,
-        "example": "The event was voted a great success.",
-        "exampleZh": "大家認為這項活動很成功。"
+        "example": "The sports day was a big event.",
+        "exampleZh": "運動會是一場大型活動。"
     },
     {
         "id": 30558,
@@ -5576,8 +5576,8 @@ const jhWordsDB = [
         "uk": "/ˈevə(r)/",
         "zh": "adv. 從來、曾經、在任何時候、一直",
         "unit": 17,
-        "example": "It's raining worse than ever.",
-        "exampleZh": "雨比以前下得更大了。"
+        "example": "Have you ever seen a big elephant?",
+        "exampleZh": "你曾經見過大象嗎？"
     },
     {
         "id": 30559,
@@ -5586,8 +5586,8 @@ const jhWordsDB = [
         "uk": "/ˈevri/",
         "zh": "det. 每個、每一、每……之中的、每隔；adj. 每個",
         "unit": 17,
-        "example": "Elections take place every year.",
-        "exampleZh": "選舉每年舉行。"
+        "example": "He walks to school every day.",
+        "exampleZh": "他每天走路去上學。"
     },
     {
         "id": 30560,
@@ -5606,8 +5606,8 @@ const jhWordsDB = [
         "uk": "/ɪɡˈzækt/",
         "zh": "adj. 正確的、確切的、精確的、嚴謹的；vt. 強取、勒索、實施、造成重大苦難",
         "unit": 17,
-        "example": "I don't remember the exact words.",
-        "exampleZh": "我不記得確切的詞了。"
+        "example": "Tell me the exact time of the meeting.",
+        "exampleZh": "請告訴我會議的確切時間。"
     },
     {
         "id": 30562,
@@ -5636,8 +5636,8 @@ const jhWordsDB = [
         "uk": "/ˈeksələnt/",
         "zh": "adj. 優秀的、極好的、卓越的；int. 太好了",
         "unit": 17,
-        "example": "Her musicianship is excellent.",
-        "exampleZh": "她的音樂才華非常出色。"
+        "example": "She did an excellent job on her test.",
+        "exampleZh": "她在考試中表現得非常優秀。"
     },
     {
         "id": 30565,
@@ -5656,8 +5656,8 @@ const jhWordsDB = [
         "uk": "/ɪkˈsaɪt/",
         "zh": "vt. 使……興奮、使興奮、使激動、引起",
         "unit": 17,
-        "example": "Daniel's early exposure to motor racing did not excite his interest.",
-        "exampleZh": "丹尼爾早期接觸賽車運動並沒有激發他的興趣。"
+        "example": "Funny games always excite the little kids.",
+        "exampleZh": "有趣的遊戲總是能使小孩感到興奮。"
     },
     {
         "id": 30567,
@@ -5676,8 +5676,8 @@ const jhWordsDB = [
         "uk": "/ˈeksəsaɪz/",
         "zh": "n. 運動、鍛鍊、動作、體操；v. 練習、運動、鍛鍊、運用",
         "unit": 17,
-        "example": "Do you take regular exercise?",
-        "exampleZh": "你經常鍛鍊嗎？"
+        "example": "Daily exercise is very good for health.",
+        "exampleZh": "每天運動對健康非常有益。"
     },
     {
         "id": 30569,
@@ -5686,8 +5686,8 @@ const jhWordsDB = [
         "uk": "/ɪɡˈzɪst/",
         "zh": "vi. 存在、實際上有、持續存在、生存",
         "unit": 17,
-        "example": "Many possible orderings may exist.",
-        "exampleZh": "可能存在許多可能的排序。"
+        "example": "Do you believe that ghosts really exist?",
+        "exampleZh": "你相信鬼魂真的存在嗎？"
     },
     {
         "id": 30570,
@@ -5696,8 +5696,8 @@ const jhWordsDB = [
         "uk": "/ˈeksɪt/",
         "zh": "n. 出口、通道、太平門、出路；vt. 離開、退出、退場、去世",
         "unit": 17,
-        "example": "There was a stampede for the exit.",
-        "exampleZh": "出現了人群向出口的狂奔。"
+        "example": "Please walk to the near exit.",
+        "exampleZh": "請走向附近的出口。"
     },
     {
         "id": 30571,
@@ -5706,8 +5706,8 @@ const jhWordsDB = [
         "uk": "/ɪkˈspekt/",
         "zh": "vt. 期望、期待、預計、要求",
         "unit": 17,
-        "example": "Don't expect it to improve overnight.",
-        "exampleZh": "不要指望它會在一夜之間有所改善。"
+        "example": "We expect to see him tomorrow morning.",
+        "exampleZh": "我們預計明天早晨會見到他。"
     },
     {
         "id": 30572,
@@ -5726,8 +5726,8 @@ const jhWordsDB = [
         "uk": "/ɪkˈspɪəriəns/",
         "zh": "n. 經驗、經歷、往事、閱歷；vt. 體驗、經歷、遭遇、體會到",
         "unit": 17,
-        "example": "It was a cathartic experience.",
-        "exampleZh": "那是一次情感宣洩的體驗。"
+        "example": "This trip was a great experience.",
+        "exampleZh": "這次旅行是一次很棒的經歷。"
     },
     {
         "id": 30574,
@@ -5746,8 +5746,8 @@ const jhWordsDB = [
         "uk": "/ɪkˈspres/",
         "zh": "vt. 表達、表露、表現、體現；n. 快車、快遞、初速大的獵槍、專使；adj. 快速的、快遞的、特快的、明確的；adv. 用快遞寄送",
         "unit": 17,
-        "example": "Words cannot express how pleased I am.",
-        "exampleZh": "言語無法表達我的愉快心情。"
+        "example": "Words cannot express how happy I feel.",
+        "exampleZh": "言語無法表達我內心有多快樂。"
     },
     {
         "id": 30576,
@@ -5756,8 +5756,8 @@ const jhWordsDB = [
         "uk": "/ˈekstrə/",
         "zh": "adj. 額外的、另外收費的；n. 另收費的事物、臨時演員、附加分；adv. 額外、特別、格外",
         "unit": 17,
-        "example": "Running shoes have extra cushioning.",
-        "exampleZh": "跑鞋有額外的減震設計。"
+        "example": "Can I have an extra cup today?",
+        "exampleZh": "我今天可以多要一個杯子嗎？"
     },
     {
         "id": 30577,
@@ -5776,8 +5776,8 @@ const jhWordsDB = [
         "uk": "/ˈaɪbraʊ/",
         "zh": "n. 眉毛、眉",
         "unit": 17,
-        "example": "She raised a questioning eyebrow.",
-        "exampleZh": "她懷疑地挑起眉頭。"
+        "example": "He raised his left eyebrow at me.",
+        "exampleZh": "他朝我挑了挑左邊的眉毛。"
     },
     {
         "id": 30579,
@@ -5786,8 +5786,8 @@ const jhWordsDB = [
         "uk": "/feɪs/",
         "zh": "n. 臉、面部、面部表情、臉色；vt. 面對、面臨、遭遇、正視",
         "unit": 17,
-        "example": "Her eyes flicked from face to face.",
-        "exampleZh": "她的目光從一張臉掃到另一張臉。"
+        "example": "He washed his face with cold water.",
+        "exampleZh": "他用冷水洗了臉。"
     },
     {
         "id": 30580,
@@ -5796,8 +5796,8 @@ const jhWordsDB = [
         "uk": "/fækt/",
         "zh": "n. 事實、真相、現實",
         "unit": 17,
-        "example": "Her argument was grounded in fact.",
-        "exampleZh": "她的論點是有事實根據的。"
+        "example": "That is a simple, true fact.",
+        "exampleZh": "這是一個簡單而真實的事實。"
     },
     {
         "id": 30581,
@@ -5806,8 +5806,8 @@ const jhWordsDB = [
         "uk": "/ˈfæktri; ˈfæktəri/",
         "zh": "n. 工廠、製造廠、代理店",
         "unit": 17,
-        "example": "Striking workers picketed the factory.",
-        "exampleZh": "罷工的工人在工廠設置了糾察線。"
+        "example": "My uncle works in a car factory.",
+        "exampleZh": "我叔叔在一間汽車工廠上班。"
     },
     {
         "id": 30582,
@@ -5816,8 +5816,8 @@ const jhWordsDB = [
         "uk": "/feɪl/",
         "zh": "v. 失敗、未能做到、未能做、辜負；n. 不及格、過失、失敗",
         "unit": 17,
-        "example": "He won't allow himself to fail.",
-        "exampleZh": "他不容許自己失敗。"
+        "example": "Work hard so you will not fail.",
+        "exampleZh": "努力用功，這樣你就不會不及格。"
     },
     {
         "id": 30583,
@@ -5836,8 +5836,8 @@ const jhWordsDB = [
         "uk": "/fɔːl/",
         "zh": "vi. 跌倒、降落、落下、倒塌；n. 秋天、落下、跌倒、下降",
         "unit": 17,
-        "example": "Output will fall by 6%.",
-        "exampleZh": "產量將下降6%。"
+        "example": "Leaves fall down from the tree.",
+        "exampleZh": "樹葉從樹上掉落下來。"
     },
     {
         "id": 30585,
@@ -5846,8 +5846,8 @@ const jhWordsDB = [
         "uk": "/fɔːls/",
         "zh": "adj. 錯的、錯誤的、不真實的、偽造的；adv. 欺詐地",
         "unit": 17,
-        "example": "The thief used a false identity.",
-        "exampleZh": "小偷使用了虛假身分。"
+        "example": "Is this story true or false?",
+        "exampleZh": "這個故事是真的還是假的？"
     },
     {
         "id": 30586,
@@ -5856,8 +5856,8 @@ const jhWordsDB = [
         "uk": "/ˈfæməli/",
         "zh": "n. 家、家庭、家屬、親屬；adj. 家庭的、一家所有的、老少咸宜的、全家用的",
         "unit": 17,
-        "example": "They were an insular family.",
-        "exampleZh": "他們是一個與世隔絕的家庭。"
+        "example": "I love my family very much.",
+        "exampleZh": "我非常愛我的家人。"
     },
     {
         "id": 30587,
@@ -5876,8 +5876,8 @@ const jhWordsDB = [
         "uk": "/fæn/",
         "zh": "n. 風扇、扇子、粉絲、狂熱愛好者；vt. 扇、為……扇風、煽",
         "unit": 17,
-        "example": "She installed a wall-mounted electric fan.",
-        "exampleZh": "她裝了一臺牆壁式電扇。"
+        "example": "Turn on the fan for me.",
+        "exampleZh": "替我打開風扇。"
     },
     {
         "id": 30589,
@@ -5906,8 +5906,8 @@ const jhWordsDB = [
         "uk": "/fɑː(r)/",
         "zh": "adv. 遠地、遠、遙遠地、久遠地；adj. 遠的、遙遠的、久遠的、另一邊的",
         "unit": 17,
-        "example": "It's been quiet so far.",
-        "exampleZh": "到目前為止一直很安靜。"
+        "example": "My home is not far from school.",
+        "exampleZh": "我家離學校不遠。"
     },
     {
         "id": 30592,
@@ -5926,8 +5926,8 @@ const jhWordsDB = [
         "uk": "/ˈfɑːmə(r)/",
         "zh": "n. 農夫、農民、農場主、法默",
         "unit": 17,
-        "example": "There once was a poor farmer who had four sons.",
-        "exampleZh": "從前有一個貧窮的農民，他有四個兒子。"
+        "example": "The farmer works hard every day.",
+        "exampleZh": "這位農夫每天努力工作。"
     },
     {
         "id": 30594,
@@ -5936,8 +5936,8 @@ const jhWordsDB = [
         "uk": "/ˈfæʃ(ə)n/",
         "zh": "n. 流行、時髦打扮、流行裝扮、時尚；v. 製作、使成形、塑造",
         "unit": 17,
-        "example": "Carolyne is a fashion designer.",
-        "exampleZh": "卡羅琳是位時裝設計師。"
+        "example": "Long red coats are in fashion.",
+        "exampleZh": "紅色長大衣很流行。"
     },
     {
         "id": 30595,
@@ -5946,8 +5946,8 @@ const jhWordsDB = [
         "uk": "/fɑːst/",
         "zh": "adj. 快的、迅速的；adv. 快地、迅速地、牢固地；vi. 禁食、齋戒；n. 禁食期、齋戒",
         "unit": 17,
-        "example": "You shouldn't drive so fast.",
-        "exampleZh": "你不應該開這麼快。"
+        "example": "The yellow car runs very fast today.",
+        "exampleZh": "那輛黃色汽車今天開得非常快。"
     },
     {
         "id": 30596,
@@ -5976,8 +5976,8 @@ const jhWordsDB = [
         "uk": "/ˈfɔːsɪt/",
         "zh": "n. 水龍頭、旋塞",
         "unit": 17,
-        "example": "If God turns off one faucet, he can turn on another.",
-        "exampleZh": "如果上帝關上一個水龍頭，他能開啟另一個。"
+        "example": "Cold water came from the faucet.",
+        "exampleZh": "冷水從水龍頭流了出來。"
     },
     {
         "id": 30599,
@@ -5986,8 +5986,8 @@ const jhWordsDB = [
         "uk": "/fɔːlt/",
         "zh": "n. 缺點、錯誤、責任、過錯；vt. 挑剔、指責、發球失誤、產生斷層",
         "unit": 17,
-        "example": "His worst fault was his inconsistency.",
-        "exampleZh": "他的最大缺點就是反覆無常。"
+        "example": "It was not your fault at all.",
+        "exampleZh": "那完全不是你的過錯。"
     },
     {
         "id": 30600,
@@ -5996,8 +5996,8 @@ const jhWordsDB = [
         "uk": "/ˈfeɪvərɪt/",
         "zh": "adj. 最喜愛的、最喜歡的、特別受喜愛的；n. 特別喜愛的人（或物）",
         "unit": 17,
-        "example": "What's your favorite and less favorite Chinese food?",
-        "exampleZh": "你最喜歡和不太喜歡的中國菜是什麼？"
+        "example": "Apple is my favorite kind of fruit.",
+        "exampleZh": "蘋果是我最喜歡的水果種類。"
     },
     {
         "id": 30601,
@@ -6006,8 +6006,8 @@ const jhWordsDB = [
         "uk": "/fɪə(r)/",
         "zh": "v. 害怕、畏懼、擔心、憂慮；n. 恐懼、擔心、可能性、敬畏",
         "unit": 17,
-        "example": "Fear clutched at her heart.",
-        "exampleZh": "恐懼抓住了她的心。"
+        "example": "She has a fear of the dark.",
+        "exampleZh": "她對黑暗感到恐懼。"
     },
     {
         "id": 30602,
@@ -6016,8 +6016,8 @@ const jhWordsDB = [
         "uk": "/ˈfebruəri/",
         "zh": "n. 二月",
         "unit": 17,
-        "example": "His exhibition opens on February 5.",
-        "exampleZh": "他的展覽將於2月5日開幕。"
+        "example": "February is the second month of the year.",
+        "exampleZh": "二月是一年中的第二個月。"
     },
     {
         "id": 30603,
@@ -6026,8 +6026,8 @@ const jhWordsDB = [
         "uk": "/fiː/",
         "zh": "n. 費用、酬金、會費、入場費；v. 付給（某人）費用",
         "unit": 17,
-        "example": "The fee is pitifully low.",
-        "exampleZh": "酬金低得可憐。"
+        "example": "You have to pay an entry fee.",
+        "exampleZh": "你必須支付入場費用。"
     },
     {
         "id": 30604,
@@ -6036,8 +6036,8 @@ const jhWordsDB = [
         "uk": "/fiːd/",
         "zh": "v. 餵食、飼養、餵養、為……提供食物；n. 飼料、哺乳、餵養、動物的飼料",
         "unit": 17,
-        "example": "Can you feed the cat, please?",
-        "exampleZh": "請問可以餵貓嗎？"
+        "example": "Please feed the dog some food.",
+        "exampleZh": "請餵狗狗吃一些食物。"
     },
     {
         "id": 30605,
@@ -6046,8 +6046,8 @@ const jhWordsDB = [
         "uk": "/fiːl/",
         "zh": "v. 感覺、覺得、感受到、觸摸；n. 感覺、觸覺",
         "unit": 17,
-        "example": "'I feel...' There she stopped.",
-        "exampleZh": "「我感覺……」她停了下來。"
+        "example": "I feel happy to see you today.",
+        "exampleZh": "我今天見到你覺得很開心。"
     },
     {
         "id": 30606,
@@ -6056,8 +6056,8 @@ const jhWordsDB = [
         "uk": "/ˈfiːlɪŋ/",
         "zh": "n. 感覺、感觸、預感、看法；adj. 多愁善感的、多情的；v. 感受到、體會到、覺得、相信",
         "unit": 17,
-        "example": "She's feeling a little homesick.",
-        "exampleZh": "她有點想家了。"
+        "example": "I have a good feeling about this.",
+        "exampleZh": "我對這件事有好的感覺。"
     },
     {
         "id": 30607,
@@ -6066,8 +6066,8 @@ const jhWordsDB = [
         "uk": "/ˈfiːmeɪl/",
         "zh": "adj. 女性的、婦女的、女性特有的、由女性組成的；n. 雌性動物、雌性植物、女子",
         "unit": 17,
-        "example": "Oestrogen is a female sex hormone.",
-        "exampleZh": "雌激素是一種雌性荷爾蒙。"
+        "example": "This small cat is a female.",
+        "exampleZh": "這隻小貓是雌性的。"
     },
     {
         "id": 30608,
@@ -6076,8 +6076,8 @@ const jhWordsDB = [
         "uk": "/fens/",
         "zh": "n. 籬笆、柵欄、圍欄；v. 用柵欄圍住、擊劍",
         "unit": 17,
-        "example": "The fence snagged my sweater.",
-        "exampleZh": "柵欄把我的毛衣掛住了。"
+        "example": "The white cat jumped over the fence.",
+        "exampleZh": "那隻白貓跳過了柵欄。"
     },
     {
         "id": 30609,
@@ -6086,8 +6086,8 @@ const jhWordsDB = [
         "uk": "/ˈfestɪvl; ˈfestəvəl/",
         "zh": "n. 節慶、活動節期、紀念活動、節日；adj. 節日的、喜慶的",
         "unit": 17,
-        "example": "I declare this festival open.",
-        "exampleZh": "我宣佈慶祝活動開始。"
+        "example": "They dance at the summer music festival.",
+        "exampleZh": "他們在夏季音樂節上跳舞。"
     },
     {
         "id": 30610,
@@ -6106,8 +6106,8 @@ const jhWordsDB = [
         "uk": "/fjuː/",
         "zh": "det. 少數的、一些、幾個、很少；pron. 幾個、一些人、很少的人；adj. 少數的、很少、幾乎沒有；n. 少數派、少數、參加過不列顛之戰的少數幾個英國皇家空軍飛行員",
         "unit": 17,
-        "example": "Few soldiers were in evidence.",
-        "exampleZh": "幾乎沒有士兵在場。"
+        "example": "There are a few apples on the table.",
+        "exampleZh": "桌上有幾顆蘋果。"
     },
     {
         "id": 30612,
@@ -6116,8 +6116,8 @@ const jhWordsDB = [
         "uk": "/ˌfɪfˈtiːn/",
         "zh": "num. 十五；n. 十五、十五個、十五人組成的橄欖球隊；adj. 十五的",
         "unit": 17,
-        "example": "The talks began some fifteen minutes late.",
-        "exampleZh": "會談晚了大約十五分鐘才開始。"
+        "example": "There are fifteen boys in the room.",
+        "exampleZh": "房間裡有十五個男孩。"
     },
     {
         "id": 30613,
@@ -6136,8 +6136,8 @@ const jhWordsDB = [
         "uk": "/faɪt/",
         "zh": "v. 打架、戰鬥、對抗、作戰；n. 打架、戰鬥、爭吵、鬥志",
         "unit": 17,
-        "example": "Did you have a fight with him?",
-        "exampleZh": "你和他吵架了嗎？"
+        "example": "The two dogs fight for the food.",
+        "exampleZh": "這兩隻狗為了食物打架。"
     },
     {
         "id": 30615,
@@ -6146,8 +6146,8 @@ const jhWordsDB = [
         "uk": "/fɪl/",
         "zh": "vt. 裝滿、充滿、佔滿、堵塞；n. 總量、需求總量、填充物、填方",
         "unit": 17,
-        "example": "Dentists fill teeth and repair broken ones.",
-        "exampleZh": "牙醫補牙並修理壞牙。"
+        "example": "Please fill the cup with hot water.",
+        "exampleZh": "請把杯子裝滿熱水。"
     },
     {
         "id": 30616,
@@ -6156,8 +6156,8 @@ const jhWordsDB = [
         "uk": "/fɪlm/",
         "zh": "n. 電影、影片、電影藝術、電影業；vt. 拍攝、錄製、拍攝電影、被覆蓋上一薄層東西",
         "unit": 17,
-        "example": "Jenny's writing a film script.",
-        "exampleZh": "珍妮在寫一個電影指令碼。"
+        "example": "We saw a funny film last night.",
+        "exampleZh": "我們昨晚看了一部有趣的電影。"
     },
     {
         "id": 30617,
@@ -6166,8 +6166,8 @@ const jhWordsDB = [
         "uk": "/ˈfaɪn(ə)l/",
         "zh": "adj. 最終的、結束的、最後的、末尾的；n. 期末考、決賽、期末考試、課程終結考試",
         "unit": 17,
-        "example": "The judges' decision is final.",
-        "exampleZh": "評審的決定是最終決定。"
+        "example": "This is our final game of the year.",
+        "exampleZh": "這是我們今年最後一場比賽。"
     },
     {
         "id": 30618,
@@ -6176,8 +6176,8 @@ const jhWordsDB = [
         "uk": "/ˈfaɪnəli/",
         "zh": "adv. 最後、終於、總之、決定性地",
         "unit": 17,
-        "example": "Finally she drifted into sleep.",
-        "exampleZh": "最後她不知不覺地睡著了。"
+        "example": "The red bus finally came today.",
+        "exampleZh": "紅色公車今天終於來了。"
     },
     {
         "id": 30619,
@@ -6186,8 +6186,8 @@ const jhWordsDB = [
         "uk": "/faɪnd/",
         "zh": "vt. 找到、找回、發現、發覺；n. 被發現的人、發現物、發現狐狸",
         "unit": 17,
-        "example": "I find cooking very relaxing.",
-        "exampleZh": "我發現烹飪非常令人放鬆。"
+        "example": "Can you help me find my keys?",
+        "exampleZh": "你能幫我找到我的鑰匙嗎？"
     },
     {
         "id": 30620,
@@ -6196,8 +6196,8 @@ const jhWordsDB = [
         "uk": "/faɪn/",
         "zh": "adj. 好的、美好的、晴朗的、健康的；n. 罰款、罰金；vt. 處……以罰款",
         "unit": 17,
-        "example": "'That's fine,' he replied amiably.",
-        "exampleZh": "“那很好。”他親切友好地回答道。"
+        "example": "The day is fine and warm today.",
+        "exampleZh": "今天天氣晴朗又溫暖。"
     },
     {
         "id": 30621,
@@ -6206,8 +6206,8 @@ const jhWordsDB = [
         "uk": "/ˈfɪŋɡə(r)/",
         "zh": "n. 指頭、手指、手指部分、一指寬；vt. 用手指觸控、告發、告密、撥弄",
         "unit": 17,
-        "example": "He wagged a disapproving finger.",
-        "exampleZh": "他搖搖手指表示不贊成。"
+        "example": "He hurt his finger on the door.",
+        "exampleZh": "他的手指在門上弄傷了。"
     },
     {
         "id": 30622,
@@ -6216,8 +6216,8 @@ const jhWordsDB = [
         "uk": "/ˈfɪnɪʃ/",
         "zh": "v. 完成、做好、結束、消耗盡；n. 結束、結尾、結局、終點",
         "unit": 17,
-        "example": "Listen, I finish at one.",
-        "exampleZh": "聽著，我講完了。"
+        "example": "I will finish my work before dinner.",
+        "exampleZh": "我會在晚餐前完成我的工作。"
     },
     {
         "id": 30623,
@@ -6226,8 +6226,8 @@ const jhWordsDB = [
         "uk": "/ˈfaɪə(r)/",
         "zh": "n. 火、火災、爐火、熱情；v. 開火、射擊、解雇、激發",
         "unit": 17,
-        "example": "The wooden rafters caught fire.",
-        "exampleZh": "木椽著火了。"
+        "example": "The fire keeps the room very warm.",
+        "exampleZh": "爐火讓房間非常溫暖。"
     },
     {
         "id": 30624,
@@ -6236,8 +6236,8 @@ const jhWordsDB = [
         "uk": "/fɜːst/",
         "zh": "det. 第一位的、最先的、首（次）的、緊接著來到的；adj. 第一的；adv. 首先、第一、最初、起初；pron. 第一次；n. 第一個人、前所未有的事情、最低檔、最高成績",
         "unit": 17,
-        "example": "His first marriage broke up.",
-        "exampleZh": "他的第一次婚姻破裂了。"
+        "example": "He was the first boy in line.",
+        "exampleZh": "他是隊伍中的第一個人。"
     },
     {
         "id": 30625,
@@ -6246,8 +6246,8 @@ const jhWordsDB = [
         "uk": "/fɪʃ/",
         "zh": "n. 魚、魚肉、雙魚座、接合板；vi. 釣魚、捕魚、搜尋、在……中捕魚",
         "unit": 17,
-        "example": "These fish are very aggressive.",
-        "exampleZh": "這些魚非常具有攻擊性。"
+        "example": "Many small fish swim in the river.",
+        "exampleZh": "許多小魚在河裡游泳。"
     },
     {
         "id": 30626,
@@ -6276,8 +6276,8 @@ const jhWordsDB = [
         "uk": "/faɪv/",
         "zh": "num. 五、五個；adj. 五的、五個的",
         "unit": 17,
-        "example": "She brought up five children.",
-        "exampleZh": "她撫養了五個孩子。"
+        "example": "I have five red apples in my bag.",
+        "exampleZh": "我的袋子裡有五顆紅蘋果。"
     },
     {
         "id": 30629,
@@ -6286,8 +6286,8 @@ const jhWordsDB = [
         "uk": "/fɪks/",
         "zh": "v. 修理、維修、確定、安排；n. 解決方案、窘境、困境",
         "unit": 17,
-        "example": "He cannot fix the electricity.",
-        "exampleZh": "他不會修理電路。"
+        "example": "Can you help me fix this chair?",
+        "exampleZh": "你能幫我修理這張椅子嗎？"
     },
     {
         "id": 30630,
@@ -6296,8 +6296,8 @@ const jhWordsDB = [
         "uk": "/flæɡ/",
         "zh": "n. 旗幟、國旗、訊號旗、標誌旗；vi. 標記、給……做標記、示意……停下來、揮手示停",
         "unit": 17,
-        "example": "The American flag was flying.",
-        "exampleZh": "美國國旗飄揚。"
+        "example": "The red flag flew in the wind.",
+        "exampleZh": "紅旗在風中飄揚。"
     },
     {
         "id": 30631,
@@ -6316,8 +6316,8 @@ const jhWordsDB = [
         "uk": "/ˈflæʃlaɪt/",
         "zh": "n. 手電筒、閃光燈",
         "unit": 17,
-        "example": "Sam was flicking a flashlight on and off.",
-        "exampleZh": "薩姆正啪啪不停地開關著手電筒。"
+        "example": "Turn on the flashlight in the dark.",
+        "exampleZh": "在黑暗中打開手電筒。"
     },
     {
         "id": 30633,
@@ -6336,8 +6336,8 @@ const jhWordsDB = [
         "uk": "/flʌd/",
         "zh": "v. 淹沒、氾濫、大量湧來、大量湧去；n. 洪水、水災、大批、大量",
         "unit": 17,
-        "example": "The flood waters slowly retreated.",
-        "exampleZh": "洪水慢慢地消退。"
+        "example": "Heavy rain caused a big river flood.",
+        "exampleZh": "大雨導致河水嚴重氾濫成災。"
     },
     {
         "id": 30635,
@@ -6346,8 +6346,8 @@ const jhWordsDB = [
         "uk": "/flɔː(r)/",
         "zh": "n. 地板、地面、樓層、同樓層所有房間；vt. 擊倒、打倒、使驚訝得不知所措、給…鋪設地板",
         "unit": 17,
-        "example": "The bathroom floor was awash.",
-        "exampleZh": "浴室地板被水淹沒了。"
+        "example": "The baby plays on the clean floor.",
+        "exampleZh": "小寶寶在乾淨的地板上玩耍。"
     },
     {
         "id": 30636,
@@ -6356,8 +6356,8 @@ const jhWordsDB = [
         "uk": "/ˈflaʊə(r)/",
         "zh": "n. 麵粉、粉；v. 在……上撒麵粉、把（穀物）磨成粉",
         "unit": 17,
-        "example": "Flour is sold by the kilogram.",
-        "exampleZh": "麵粉按公斤出售。"
+        "example": "We need white flour to make bread.",
+        "exampleZh": "我們需要白麵粉來做麵包。"
     },
     {
         "id": 30637,
@@ -6366,8 +6366,8 @@ const jhWordsDB = [
         "uk": "/ˈflaʊə(r)/",
         "zh": "n. 花、開花植物、精華、最好的部分；vi. 開花、繁榮、興旺",
         "unit": 17,
-        "example": "I've been weeding the flower beds.",
-        "exampleZh": "我一直在為花壇除草。"
+        "example": "This red flower smells very sweet.",
+        "exampleZh": "這朵紅花聞起來很香甜。"
     },
     {
         "id": 30638,
@@ -6386,8 +6386,8 @@ const jhWordsDB = [
         "uk": "/fluːt/",
         "zh": "n. 長笛、細長酒杯、高腳玻璃酒杯、長笛音栓；v. 吹笛子、用長笛般優美的聲音說話、製作凹槽、給（衣服）加褶邊",
         "unit": 17,
-        "example": "She plays the flute beautifully in the school band.",
-        "exampleZh": "她在學校樂隊裡長笛吹得很優美。"
+        "example": "She plays the flute very well today.",
+        "exampleZh": "她今天長笛吹得非常好。"
     },
     {
         "id": 30640,
@@ -6396,8 +6396,8 @@ const jhWordsDB = [
         "uk": "/flaɪ/",
         "zh": "v. 飛、飛行、乘飛機、搭乘；n. 蒼蠅、假蠅、褲門襟、騰空球；adj. 時髦漂亮的、機靈的",
         "unit": 17,
-        "example": "She brushed the fly away.",
-        "exampleZh": "她把蒼蠅趕走了。"
+        "example": "Birds can fly high in the sky.",
+        "exampleZh": "鳥兒能在空中飛得很高。"
     },
     {
         "id": 30641,
@@ -6406,8 +6406,8 @@ const jhWordsDB = [
         "uk": "/ˈfəʊkəs/",
         "zh": "n. 焦點、重點、中心點、關注；vt. 集中、關注、聚焦",
         "unit": 17,
-        "example": "He prefers to focus on the positive.",
-        "exampleZh": "他更願意關注積極面。"
+        "example": "You must focus on your school work.",
+        "exampleZh": "你必須專注於你的課業。"
     },
     {
         "id": 30642,
@@ -6416,8 +6416,8 @@ const jhWordsDB = [
         "uk": "/fɒɡ/",
         "zh": "n. 霧、煙霧、塵霧、困惑；v. 使令人困惑、使費解、底片產生灰霧、起霧",
         "unit": 17,
-        "example": "The fog began to disperse.",
-        "exampleZh": "霧氣開始散去。"
+        "example": "The thick fog covers the whole city.",
+        "exampleZh": "濃霧籠罩了整座城市。"
     },
     {
         "id": 30643,
@@ -6426,8 +6426,8 @@ const jhWordsDB = [
         "uk": "/ˈfɒɡi/",
         "zh": "adj. 濃霧的、有霧的、霧氣茫茫的、迷糊的",
         "unit": 17,
-        "example": "Get away from the foggy morning.",
-        "exampleZh": "遠離大霧的早晨。"
+        "example": "Drive slowly on this cold, foggy morning.",
+        "exampleZh": "在這個寒冷且起霧的早晨請慢速行駛。"
     },
     {
         "id": 30644,
@@ -6436,8 +6436,8 @@ const jhWordsDB = [
         "uk": "/ˈfɒləʊ/",
         "zh": "vt. 跟隨、跟著、跟蹤、在……後；n. 跟隨、追隨",
         "unit": 17,
-        "example": "She signalled him to follow.",
-        "exampleZh": "她示意他跟上。"
+        "example": "Please follow me to the front door.",
+        "exampleZh": "請跟我走到前門。"
     },
     {
         "id": 30645,
@@ -6446,8 +6446,8 @@ const jhWordsDB = [
         "uk": "/fuːd/",
         "zh": "n. 食物、養料、食品",
         "unit": 17,
-        "example": "Food aid is urgently needed.",
-        "exampleZh": "迫切需要糧食援助。"
+        "example": "We need good food to live well.",
+        "exampleZh": "我們需要好的食物來好好生活。"
     },
     {
         "id": 30646,
@@ -6466,8 +6466,8 @@ const jhWordsDB = [
         "uk": "/ˈfuːlɪʃ/",
         "zh": "adj. 愚笨的、愚蠢的、傻的、困窘的",
         "unit": 17,
-        "example": "How foolish I am to entertain doubts.",
-        "exampleZh": "我是多麼愚蠢啊，居然還去懷疑。"
+        "example": "It was foolish to go out in rain.",
+        "exampleZh": "冒雨出門真是愚蠢的行為。"
     },
     {
         "id": 30648,
@@ -6476,8 +6476,8 @@ const jhWordsDB = [
         "uk": "/fʊt/",
         "zh": "n. 腳、足、英尺、基礎；comb. 有……只腳、用……腳（或足的）、……英尺高的人、……英尺長的東西；adj. 用腳操作的、腳踏的、步行的、步（兵）的；v. 支付",
         "unit": 17,
-        "example": "She stamped her foot again.",
-        "exampleZh": "她又跺了跺腳。"
+        "example": "He hurt his left foot on a rock.",
+        "exampleZh": "他的左腳在石頭上弄傷了。"
     },
     {
         "id": 30649,
@@ -6486,8 +6486,8 @@ const jhWordsDB = [
         "uk": "/ˈfʊtbɔːl/",
         "zh": "n. 足球、足球運動、橄欖球運動、橄欖球",
         "unit": 17,
-        "example": "Luckily, we both love football.",
-        "exampleZh": "幸好我們倆都熱愛足球。"
+        "example": "Boys love to play football after school.",
+        "exampleZh": "男孩子們喜歡放學後踢足球。"
     },
     {
         "id": 30650,
@@ -6506,8 +6506,8 @@ const jhWordsDB = [
         "uk": "/fɔːs/",
         "zh": "n. 力量、暴力、武力、力；vt. 強迫、用力推、使發生、勉強做出",
         "unit": 17,
-        "example": "Is religion always a force for good?",
-        "exampleZh": "宗教一向是誨人行善的力量嗎？"
+        "example": "Do not force him to eat it.",
+        "exampleZh": "不要強迫他吃那個。"
     },
     {
         "id": 30652,
@@ -6526,8 +6526,8 @@ const jhWordsDB = [
         "uk": "/ˈfɒrənə(r)/",
         "zh": "n. 外國人、外來人、外地人、私活",
         "unit": 17,
-        "example": "Being a foreigner was not a handicap.",
-        "exampleZh": "作一名外國人並不是一個不利條件。"
+        "example": "The kind foreigner asked for my help.",
+        "exampleZh": "那位熱心的外國人向我尋求協助。"
     },
     {
         "id": 30654,
@@ -6536,8 +6536,8 @@ const jhWordsDB = [
         "uk": "/ˈfɒrɪst/",
         "zh": "n. 森林、林區、一叢、一片；v. 被森林覆蓋、植林於",
         "unit": 17,
-        "example": "We need to preserve the forest.",
-        "exampleZh": "我們需要保護森林。"
+        "example": "Wild birds live in the deep forest.",
+        "exampleZh": "野鳥生活在茂密的森林裡。"
     },
     {
         "id": 30655,
@@ -6566,8 +6566,8 @@ const jhWordsDB = [
         "uk": "/fɔːk/",
         "zh": "n. 餐叉、叉子、耙、叉；v. 分岔、岔開、叉起、耙地",
         "unit": 17,
-        "example": "She stabbed the air with her fork.",
-        "exampleZh": "她用叉子刺向空氣。"
+        "example": "Eat your cake with a small fork.",
+        "exampleZh": "用一把小叉子吃你的蛋糕。"
     },
     {
         "id": 30658,
@@ -6576,8 +6576,8 @@ const jhWordsDB = [
         "uk": "/fɔːm/",
         "zh": "vt. 出現、（關係、習慣或想法）形成、構成；n. 形式、表、表格、類別",
         "unit": 17,
-        "example": "He hates violence in any form.",
-        "exampleZh": "他憎惡任何形式的暴力。"
+        "example": "Please fill out this simple health form.",
+        "exampleZh": "請填寫這份簡單的健康表格。"
     },
     {
         "id": 30659,
@@ -6586,8 +6586,8 @@ const jhWordsDB = [
         "uk": "/ˈfɔːm(ə)l/",
         "zh": "adj. 正式的、莊重的、合乎禮儀的、規範的；n. 正式的社交聚會、正式禮服",
         "unit": 17,
-        "example": "He wore formal evening dress.",
-        "exampleZh": "他穿著正式的晚禮服。"
+        "example": "You must wear formal clothes to dinner.",
+        "exampleZh": "你出席晚宴必須穿著正式服裝。"
     },
     {
         "id": 30660,
@@ -6596,8 +6596,8 @@ const jhWordsDB = [
         "uk": "/ˈfɔːmə(r)/",
         "zh": "adj. 前者的、舊時的、以前的、前……；n. 模子、模型、形成某事的人、線圈架；pron. 前者",
         "unit": 17,
-        "example": "The former option would be much more sensible.",
-        "exampleZh": "前一種選擇會更明智。"
+        "example": "He met his former teacher at the store.",
+        "exampleZh": "他在商店遇見了他以前的老師。"
     },
     {
         "id": 30661,
@@ -6616,8 +6616,8 @@ const jhWordsDB = [
         "uk": "/ˈfɔːwəd/",
         "zh": "adv. 向前、在船頭、朝飛機頭部、按順序地；adj. 向前的、前進的、在前部的、位於前面的；n. 前鋒、遠期協議、遠期交易；vt. 轉交、轉寄、寄、傳送",
         "unit": 17,
-        "example": "He took two bold steps forward and introduced himself to the teacher.",
-        "exampleZh": "他大膽地向前邁出兩步，向老師自我介紹。"
+        "example": "Take two steps forward with me.",
+        "exampleZh": "跟我一起向前邁出兩步。"
     },
     {
         "id": 30663,
@@ -6626,8 +6626,8 @@ const jhWordsDB = [
         "uk": "/fɔː(r)/",
         "zh": "num. 四、四個；adj. 四的、四個的",
         "unit": 17,
-        "example": "I took four Tylenol capsules.",
-        "exampleZh": "我吃了四顆泰諾膠囊。"
+        "example": "She has four cats in her house.",
+        "exampleZh": "她的房子裡有四隻貓。"
     },
     {
         "id": 30664,
@@ -6656,8 +6656,8 @@ const jhWordsDB = [
         "uk": "/fræŋk/",
         "zh": "adj. 直率的、坦率的、直言不諱的、明白無誤的；v. 蓋郵資已付印記、蓋免付郵資印記、免費郵寄；n. 法蘭克福燻腸、免費郵寄權",
         "unit": 17,
-        "example": "The talks had been brutally frank.",
-        "exampleZh": "會談非常坦率。"
+        "example": "Be frank and tell me what you think.",
+        "exampleZh": "坦白點，告訴我你的想法。"
     },
     {
         "id": 30667,
@@ -6666,8 +6666,8 @@ const jhWordsDB = [
         "uk": "/friː/",
         "zh": "adj. 免費的、自由的、空閒的；vt. 釋放、使自由、使免於；adv. 免費地、自由地",
         "unit": 17,
-        "example": "Sterling went into free fall.",
-        "exampleZh": "斯特林開始自由落體。"
+        "example": "The sweet food at the party is free.",
+        "exampleZh": "派對上的甜食是免費的。"
     },
     {
         "id": 30668,
@@ -6676,8 +6676,8 @@ const jhWordsDB = [
         "uk": "/ˈfriːdəm/",
         "zh": "n. 自由、自由權、自主權、自主",
         "unit": 17,
-        "example": "He burbles on about freedom.",
-        "exampleZh": "他滔滔不絕地談論著自由。"
+        "example": "Birds enjoy their freedom in the sky.",
+        "exampleZh": "鳥兒在天空中享受牠們的自由。"
     },
     {
         "id": 30669,
@@ -6686,8 +6686,8 @@ const jhWordsDB = [
         "uk": "/freʃ/",
         "zh": "adj. 新鮮的、新近的、剛經歷的、新的；adv. 剛剛、新近地",
         "unit": 17,
-        "example": "We sell only fresh local produce.",
-        "exampleZh": "我們只賣新鮮的當地農產品。"
+        "example": "We buy fresh milk every morning.",
+        "exampleZh": "我們每天早上買新鮮牛奶。"
     },
     {
         "id": 30670,
@@ -6696,8 +6696,8 @@ const jhWordsDB = [
         "uk": "/ˈfraɪdeɪ/",
         "zh": "n. 星期五、忠僕",
         "unit": 17,
-        "example": "Today is Friday, September 14th.",
-        "exampleZh": "今天是 9 月 14 日，星期五。"
+        "example": "We will meet him this Friday night.",
+        "exampleZh": "我們這個星期五晚上會和他碰面。"
     },
     {
         "id": 30671,
@@ -6706,8 +6706,8 @@ const jhWordsDB = [
         "uk": "/frend/",
         "zh": "n. 朋友、友人、好友、朋友關係；v. 把（某人）加為好友、與……為友、幫助",
         "unit": 17,
-        "example": "She's a very special friend.",
-        "exampleZh": "她是我特別要好的朋友。"
+        "example": "He is my best friend at school.",
+        "exampleZh": "他是我在學校最好的朋友。"
     },
     {
         "id": 30672,
@@ -6746,8 +6746,8 @@ const jhWordsDB = [
         "uk": "/frɒm; frəm/",
         "zh": "prep. 從……、從、從……起、從……開始",
         "unit": 17,
-        "example": "Cheap flights are available from budget travel agents from $240.",
-        "exampleZh": "廉價旅行社提供廉價航班，起價為 240 美元。"
+        "example": "This letter is from my good friend.",
+        "exampleZh": "這封信來自我的好朋友。"
     },
     {
         "id": 30676,
@@ -6766,8 +6766,8 @@ const jhWordsDB = [
         "uk": "/fruːt/",
         "zh": "n. 水果、果實、成果、結果；vi. 結果實",
         "unit": 17,
-        "example": "Sugar occurs naturally in fruit.",
-        "exampleZh": "糖天然存在於水果中。"
+        "example": "Eat fresh fruit every day for health.",
+        "exampleZh": "每天吃新鮮水果保持健康。"
     },
     {
         "id": 30678,
@@ -6776,8 +6776,8 @@ const jhWordsDB = [
         "uk": "/fraɪ/",
         "zh": "vt. 油煎、油炸、被曬傷、以電刑處死；n. 炸薯條、魚苗、魚秧、油煎食品",
         "unit": 17,
-        "example": "You'll fry on the beach if you're not careful.",
-        "exampleZh": "若在海灘上不小心會被太陽灼傷的。"
+        "example": "We can fry some fresh fish.",
+        "exampleZh": "我們可以煎一些新鮮的魚。"
     },
     {
         "id": 30679,
@@ -6796,8 +6796,8 @@ const jhWordsDB = [
         "uk": "/fʌn/",
         "zh": "n. 樂趣、享受、嬉戲、玩笑；adj. 有趣的、令人愉快的；v. 開玩笑、取笑",
         "unit": 17,
-        "example": "It was all innocent fun.",
-        "exampleZh": "這一切都是天真的樂趣。"
+        "example": "We had a lot of fun today.",
+        "exampleZh": "我們今天玩得非常開心。"
     },
     {
         "id": 30681,
@@ -6806,8 +6806,8 @@ const jhWordsDB = [
         "uk": "/ˈfʌŋkʃ(ə)n/",
         "zh": "n. 功能、職責、宴會、典禮；vi. 運作、工作、運轉、行使職責",
         "unit": 17,
-        "example": "Breathing is an automatic function of the body.",
-        "exampleZh": "呼吸是一種無意識的身體功能。"
+        "example": "What is the main function of this?",
+        "exampleZh": "這個東西的主要功能是什麼？"
     },
     {
         "id": 30682,
@@ -6816,8 +6816,8 @@ const jhWordsDB = [
         "uk": "/ˈfʌni/",
         "zh": "adj. 好笑的、滑稽的、有趣的、古怪的；n. 滑稽連環漫畫、笑話；adv. 古怪地、奇怪地",
         "unit": 17,
-        "example": "She found it hilariously funny.",
-        "exampleZh": "她覺得非常好笑。"
+        "example": "My friend told a very funny story.",
+        "exampleZh": "我朋友講了一個非常有趣的故事。"
     },
     {
         "id": 30683,
@@ -6826,8 +6826,8 @@ const jhWordsDB = [
         "uk": "/ˈfɜːnɪtʃə(r)/",
         "zh": "n. 傢俱、裝置、慣常的見解、貯藏物",
         "unit": 17,
-        "example": "We specialize in quality furniture.",
-        "exampleZh": "我們專營高檔傢俱。"
+        "example": "They bought new wooden furniture today.",
+        "exampleZh": "他們今天買了新的木製家具。"
     },
     {
         "id": 30684,
@@ -6836,8 +6836,8 @@ const jhWordsDB = [
         "uk": "/ˈfjuːtʃə(r)/",
         "zh": "n. 未來、將來、前途、前景；adj. 將來的、未來的、將來時態的",
         "unit": 17,
-        "example": "The future is not without hope.",
-        "exampleZh": "未來並非沒有希望。"
+        "example": "He has bright plans for the future.",
+        "exampleZh": "他對未來有美好的規劃。"
     },
     {
         "id": 30685,
@@ -6846,8 +6846,8 @@ const jhWordsDB = [
         "uk": "/ɡeɪn/",
         "zh": "vt. 獲得、贏得、受益、增加；n. 增加、好處、改進、收益",
         "unit": 17,
-        "example": "Regular exercise helps prevent weight gain.",
-        "exampleZh": "經常鍛鍊有助於防止體重增加。"
+        "example": "You will gain much from this book.",
+        "exampleZh": "你會從這本書中收穫很多。"
     },
     {
         "id": 30686,
@@ -6856,8 +6856,8 @@ const jhWordsDB = [
         "uk": "/ɡeɪm/",
         "zh": "n. 遊戲、比賽、一局、一場；adj. 願意嘗試的、有冒險精神的、殘疾的、瘸的；v. 操縱、玩影片（或電視、電腦）遊戲、賭博",
         "unit": 17,
-        "example": "He paced his game skilfully.",
-        "exampleZh": "他熟練地控制著比賽的節奏。"
+        "example": "Let us play a fun game now.",
+        "exampleZh": "我們現在來玩個有趣的遊戲吧。"
     },
     {
         "id": 30687,
@@ -6866,8 +6866,8 @@ const jhWordsDB = [
         "uk": "/ˈɡærɑːʒ/",
         "zh": "n. 車庫、加油站、汽車修理廠、車庫音樂；v. 把……送入車庫",
         "unit": 17,
-        "example": "Tim climbed on to the garage roof.",
-        "exampleZh": "蒂姆爬到車庫的房頂上。"
+        "example": "Dad parked the car in the garage.",
+        "exampleZh": "爸爸把車停在車庫裡。"
     },
     {
         "id": 30688,
@@ -6876,8 +6876,8 @@ const jhWordsDB = [
         "uk": "/ˈɡɑːd(ə)n/",
         "zh": "n. 花園、菜園、果園、庭園；vi. 做園藝工作、種植花木",
         "unit": 17,
-        "example": "The garden looked uncared for.",
-        "exampleZh": "花園看起來無人打理。"
+        "example": "She grows red roses in her garden.",
+        "exampleZh": "她在自己的花園裡種植紅玫瑰。"
     },
     {
         "id": 30689,
@@ -6886,8 +6886,8 @@ const jhWordsDB = [
         "uk": "/ˈɡɑːbɪdʒ/",
         "zh": "n. 垃圾、廢物、垃圾箱、廢話",
         "unit": 17,
-        "example": "They are especially fond of garbage.",
-        "exampleZh": "它們特別喜歡垃圾。"
+        "example": "Please throw the garbage into the bin.",
+        "exampleZh": "請把垃圾丟進垃圾桶裡。"
     },
     {
         "id": 30690,
@@ -6896,8 +6896,8 @@ const jhWordsDB = [
         "uk": "/ɡæs/",
         "zh": "n. 瓦斯、氣體、氣體燃料、麻醉氣；vt. 用毒氣殺死、閒聊、空談",
         "unit": 17,
-        "example": "This gas is highly poisonous.",
-        "exampleZh": "這種氣體有劇毒。"
+        "example": "Turn off the gas stove safely.",
+        "exampleZh": "安全地關掉瓦斯爐。"
     },
     {
         "id": 30691,
@@ -6906,8 +6906,8 @@ const jhWordsDB = [
         "uk": "/ɡeɪt/",
         "zh": "n. 大門、登機口、閘門、閥門",
         "unit": 17,
-        "example": "He pushed open the garden gate.",
-        "exampleZh": "他推開了花園的門。"
+        "example": "Please close the front gate after you.",
+        "exampleZh": "進來後請隨手關上前門。"
     },
     {
         "id": 30692,
@@ -6916,8 +6916,8 @@ const jhWordsDB = [
         "uk": "/ˈɡæðə(r)/",
         "zh": "vt. 集合、聚集、召集、收集",
         "unit": 17,
-        "example": "They gathered around the campfire to tell stories.",
-        "exampleZh": "他們聚集在營火旁講故事。"
+        "example": "Students gather in the hall every morning.",
+        "exampleZh": "學生們每天早晨在大廳集合。"
     },
     {
         "id": 30693,
@@ -6926,8 +6926,8 @@ const jhWordsDB = [
         "uk": "/ˈdʒen(ə)rəl/",
         "zh": "adj. 一般的、總體的、普遍的、常規的；n. 將軍、上將、半軍事化管理的宗教組織（如耶穌會修士、多明我會修士或救世軍）的領袖、大眾",
         "unit": 17,
-        "example": "My father venerated General Eisenhower.",
-        "exampleZh": "我父親十分敬仰艾森豪威爾將軍。"
+        "example": "She had a general idea of the plan.",
+        "exampleZh": "她對這個計畫有一個整體的概念。"
     },
     {
         "id": 30694,
@@ -6946,8 +6946,8 @@ const jhWordsDB = [
         "uk": "/ˈdʒiːniəs/",
         "zh": "n. 天才、天賦、天資、智商很高的人；adj. 天才的",
         "unit": 17,
-        "example": "She was extolled as a genius.",
-        "exampleZh": "她被譽為天才。"
+        "example": "My brother is a math genius.",
+        "exampleZh": "我哥哥是個數學天才。"
     },
     {
         "id": 30696,
@@ -6966,8 +6966,8 @@ const jhWordsDB = [
         "uk": "/ˈdʒentlmən/",
         "zh": "n. 紳士、先生、彬彬有禮的人、有教養的人",
         "unit": 17,
-        "example": "He behaved like a true gentleman.",
-        "exampleZh": "他的行為像個真正的紳士。"
+        "example": "He is a very polite old gentleman.",
+        "exampleZh": "他是一位非常有禮貌的老紳士。"
     },
     {
         "id": 30698,
@@ -6976,8 +6976,8 @@ const jhWordsDB = [
         "uk": "/dʒiˈɒɡrəfi/",
         "zh": "n. 地理、地理學、地形、地貌",
         "unit": 17,
-        "example": "Geography was my weak subject.",
-        "exampleZh": "地理課是我的弱項。"
+        "example": "We study world geography in this class.",
+        "exampleZh": "我們在這堂課學習世界地理。"
     },
     {
         "id": 30699,
@@ -6986,8 +6986,8 @@ const jhWordsDB = [
         "uk": "/ˈdʒestʃə(r)/",
         "zh": "n. 表示、手勢、姿勢、姿態；vi. 打手勢、用動作示意",
         "unit": 17,
-        "example": "They communicated entirely by gesture.",
-        "exampleZh": "他們完全用手勢交流。"
+        "example": "He made a warm hand gesture.",
+        "exampleZh": "他做了一個溫暖的手勢。"
     },
     {
         "id": 30700,
@@ -7006,8 +7006,8 @@ const jhWordsDB = [
         "uk": "/ɡəʊst/",
         "zh": "n. 鬼、幽靈、記憶、回憶；v. 代人寫作、為人代筆、滑行、作祟於",
         "unit": 17,
-        "example": "A ghost indeed! I've never heard anything so silly.",
-        "exampleZh": "確實是鬼啊！我從來沒有聽過這麼愚蠢的話。"
+        "example": "The little boy is afraid of ghosts.",
+        "exampleZh": "那個小男孩很害怕鬼魂。"
     },
     {
         "id": 30702,
@@ -7026,8 +7026,8 @@ const jhWordsDB = [
         "uk": "/ɡɪft/",
         "zh": "n. 禮物、贈品、恩賜、授予；v. 贈送、讓（對手）獲得",
         "unit": 17,
-        "example": "Would you like the chocolates gift-wrapped?",
-        "exampleZh": "您想要禮品包裝的巧克力嗎？"
+        "example": "I got a nice gift from my mom.",
+        "exampleZh": "我從媽媽那裡收到一份很棒的禮物。"
     },
     {
         "id": 30704,
@@ -7036,8 +7036,8 @@ const jhWordsDB = [
         "uk": "/ɡɜːl/",
         "zh": "n. 女孩、姑娘、年輕女子、未婚女子",
         "unit": 17,
-        "example": "An older girl befriended me.",
-        "exampleZh": "一個年長的女孩和我成了朋友。"
+        "example": "The little girl has a red bag.",
+        "exampleZh": "那個小女孩有一個紅色的袋子。"
     },
     {
         "id": 30705,
@@ -7046,8 +7046,8 @@ const jhWordsDB = [
         "uk": "/ɡɪv/",
         "zh": "v. 給予、給、交給、贈送；n. 伸展性、彈性、適應（或順應）能力、靈活性",
         "unit": 17,
-        "example": "I'll give you a ring.",
-        "exampleZh": "我會打電話給你。"
+        "example": "Please give this book to your father.",
+        "exampleZh": "請把這本書交給你爸爸。"
     },
     {
         "id": 30706,
@@ -7066,8 +7066,8 @@ const jhWordsDB = [
         "uk": "/ɡlɑːs/",
         "zh": "n. 玻璃、玻璃杯、一杯之量、玻璃器皿；v. 用玻璃覆蓋、給……裝玻璃、用望遠鏡觀察、用啤酒杯打",
         "unit": 17,
-        "example": "Glass contracts as it cools.",
-        "exampleZh": "玻璃冷卻時會收縮。"
+        "example": "He drank a glass of cold water.",
+        "exampleZh": "他喝了一杯冷水。"
     },
     {
         "id": 30708,
@@ -7076,8 +7076,8 @@ const jhWordsDB = [
         "uk": "/ˈɡlɑːsɪz/",
         "zh": "n. 眼鏡、玻璃杯、雙筒望遠鏡；v. 給……裝上玻璃、把……裝入玻璃容器內",
         "unit": 17,
-        "example": "I wear glasses for driving.",
-        "exampleZh": "我開車時戴眼鏡。"
+        "example": "My father wears glasses to read books.",
+        "exampleZh": "我父親戴眼鏡看書。"
     },
     {
         "id": 30709,
@@ -7106,8 +7106,8 @@ const jhWordsDB = [
         "uk": "/ɡəʊ/",
         "zh": "vi. 去、走、前往、進行；n. 輪到的機會、嘗試、精力",
         "unit": 17,
-        "example": "Very well, if you want to go, go you shall.",
-        "exampleZh": "很好，如果你想去，那就去吧。"
+        "example": "We can go to the park now.",
+        "exampleZh": "我們現在可以去公園了。"
     },
     {
         "id": 30712,
@@ -7116,8 +7116,8 @@ const jhWordsDB = [
         "uk": "/ɡəʊl/",
         "zh": "n. 目標、球門、進球得分、目的；v. 射門、射門得分",
         "unit": 17,
-        "example": "The second goal was disallowed.",
-        "exampleZh": "第二個進球被判無效。"
+        "example": "He scored a great goal in soccer.",
+        "exampleZh": "他在足球賽中踢進了精彩的一球。"
     },
     {
         "id": 30713,
@@ -7136,8 +7136,8 @@ const jhWordsDB = [
         "uk": "/ɡɒd/",
         "zh": "n. 上帝、神、天主、真主；v. 膜拜、崇拜；int. 天哪",
         "unit": 17,
-        "example": "Do you believe in God ?",
-        "exampleZh": "你相信上帝嗎？"
+        "example": "People pray to God for good luck.",
+        "exampleZh": "人們向神祈求好運。"
     },
     {
         "id": 30715,
@@ -7166,8 +7166,8 @@ const jhWordsDB = [
         "uk": "/ɡɒlf/",
         "zh": "n. 高爾夫球運動、字母G的程式碼；v. 打高爾夫球",
         "unit": 17,
-        "example": "His favourite pastime is golf.",
-        "exampleZh": "他最喜歡的消遣是打高爾夫。"
+        "example": "My father loves to play golf.",
+        "exampleZh": "我父親很喜歡打高爾夫球。"
     },
     {
         "id": 30718,
@@ -7176,8 +7176,8 @@ const jhWordsDB = [
         "uk": "/ɡʊd/",
         "zh": "adj. 好的、優良的、能幹的、擅長的；n. 善、正義、好事、商品；adv. 好地、徹底地、完全地",
         "unit": 17,
-        "example": "She speaks good English.",
-        "exampleZh": "她英語說得很好。"
+        "example": "This is a very good book.",
+        "exampleZh": "這是一本非常好的書。"
     },
     {
         "id": 30719,
@@ -7216,8 +7216,8 @@ const jhWordsDB = [
         "uk": "/ɡreɪd/",
         "zh": "n. 年級、等級、品級、級別；vt. 評分、按照級別安排或分配、分類、給……評分",
         "unit": 17,
-        "example": "I flunked math in second grade.",
-        "exampleZh": "我二年級時數學不及格。"
+        "example": "She got a good grade on math.",
+        "exampleZh": "她在數學科拿到了好成績。"
     },
     {
         "id": 30723,
@@ -7226,8 +7226,8 @@ const jhWordsDB = [
         "uk": "/ɡræm/",
         "zh": "n. 克、鷹嘴豆、奶奶、外婆",
         "unit": 17,
-        "example": "A few twentieths of a gram can be critical.",
-        "exampleZh": "二十分之幾克可能是關鍵的。"
+        "example": "Add fifty grams of white sugar.",
+        "exampleZh": "加入五十公克的白糖。"
     },
     {
         "id": 30724,
@@ -7236,8 +7236,8 @@ const jhWordsDB = [
         "uk": "/ˈɡrænfɑːðə(r)/",
         "zh": "n. 祖父、外祖父、始祖、鼻祖",
         "unit": 17,
-        "example": "His grandfather was a professor.",
-        "exampleZh": "他的祖父是一位教授。"
+        "example": "My grandfather goes for a walk daily.",
+        "exampleZh": "我的祖父每天都會去散步。"
     },
     {
         "id": 30725,
@@ -7296,8 +7296,8 @@ const jhWordsDB = [
         "uk": "/ɡreɪt/",
         "zh": "adj. 傑出的、偉大的、著名的、大型的；adv. 很好地、很棒地；n. 偉人、偉大的事物、金曲",
         "unit": 17,
-        "example": "We became great buddies.",
-        "exampleZh": "我們成了好朋友。"
+        "example": "We had a great time at school.",
+        "exampleZh": "我們在學校度過了一段美好的時光。"
     },
     {
         "id": 30731,
@@ -7326,8 +7326,8 @@ const jhWordsDB = [
         "uk": "/ɡriːt/",
         "zh": "vt. 問候、歡迎、迎接、對……作出反應",
         "unit": 17,
-        "example": "She floated down the steps to greet us.",
-        "exampleZh": "她飄下台階迎接我們。"
+        "example": "Always greet your guests with a smile.",
+        "exampleZh": "接待客人時總是要帶著微笑致意。"
     },
     {
         "id": 30734,
@@ -7346,8 +7346,8 @@ const jhWordsDB = [
         "uk": "/ɡruːp/",
         "zh": "n. 群體、集體、團體、組；vt. 分組、成組、聚集、將……分類",
         "unit": 17,
-        "example": "The group encompasses all ages.",
-        "exampleZh": "該群體涵蓋所有年齡層。"
+        "example": "A group of boys played in the park.",
+        "exampleZh": "一群男孩在公園裡玩耍。"
     },
     {
         "id": 30736,
@@ -7356,8 +7356,8 @@ const jhWordsDB = [
         "uk": "/ɡrəʊ/",
         "zh": "v. 生長、長大、成長、成活",
         "unit": 17,
-        "example": "The economy continues to grow.",
-        "exampleZh": "經濟持續成長。"
+        "example": "Green trees grow fast in our garden.",
+        "exampleZh": "綠樹在我們的花園裡長得很快。"
     },
     {
         "id": 30737,
@@ -7366,8 +7366,8 @@ const jhWordsDB = [
         "uk": "/ɡɑːd/",
         "zh": "n. 守衛、衛兵、警衛、看守；vt. 保護、守衛、保衛、看守",
         "unit": 17,
-        "example": "A guard was posted outside the building.",
-        "exampleZh": "建築物外設了一名警衛。"
+        "example": "A guard stands at the school door.",
+        "exampleZh": "一名警衛站在學校門口。"
     },
     {
         "id": 30738,
@@ -7386,8 +7386,8 @@ const jhWordsDB = [
         "uk": "/ɡes/",
         "zh": "vt. 猜測、估計、猜中、猜到；n. 推測、猜測",
         "unit": 17,
-        "example": "Can you guess the right answer to this riddle?",
-        "exampleZh": "你能猜出這個謎語的正確答案嗎？"
+        "example": "Can you guess the right answer?",
+        "exampleZh": "你能猜出正確答案嗎？"
     },
     {
         "id": 30740,
@@ -7396,8 +7396,8 @@ const jhWordsDB = [
         "uk": "/ɡest/",
         "zh": "n. 客人、特邀嘉賓、客串演員、顧客；v. 做特邀嘉賓、客串",
         "unit": 17,
-        "example": "We welcomed many special guests to the opening ceremony.",
-        "exampleZh": "我們在開幕典禮上迎來了許多特別嘉賓。"
+        "example": "We have a guest in our home.",
+        "exampleZh": "我們家裡來了一位客人。"
     },
     {
         "id": 30741,
@@ -7406,8 +7406,8 @@ const jhWordsDB = [
         "uk": "/ɡaɪd/",
         "zh": "vt. 指導、帶領、引導、任嚮導；n. 指南、手冊、導遊、嚮導",
         "unit": 17,
-        "example": "The guide flashed a light into the cave.",
-        "exampleZh": "嚮導向山洞裡照射了燈光。"
+        "example": "The guide showed us around the museum.",
+        "exampleZh": "導遊帶我們參觀了博物館。"
     },
     {
         "id": 30742,
@@ -7426,8 +7426,8 @@ const jhWordsDB = [
         "uk": "/ɡʌn/",
         "zh": "n. 槍、炮、起跑訊號、發令槍聲；vt. 加大……的油門、使加速、猛投、猛擲",
         "unit": 17,
-        "example": "He refused to yield up his gun.",
-        "exampleZh": "他拒絕交出槍。"
+        "example": "The police man had a small gun.",
+        "exampleZh": "這名警察帶了一把小槍。"
     },
     {
         "id": 30744,
@@ -7436,8 +7436,8 @@ const jhWordsDB = [
         "uk": "/ɡaɪ/",
         "zh": "n. 小伙子、男人、傢伙、夥計們；v. 嘲笑、戲弄、用支索穩定",
         "unit": 17,
-        "example": "He's a real meat-and-potatoes guy.",
-        "exampleZh": "他是個十分崇尚簡樸的人。"
+        "example": "That guy over there is my brother.",
+        "exampleZh": "那邊那個傢伙是我哥哥。"
     },
     {
         "id": 30745,
@@ -7446,8 +7446,8 @@ const jhWordsDB = [
         "uk": "/dʒɪm/",
         "zh": "n. 體育館、健身房、體育活動",
         "unit": 17,
-        "example": "The commons is next to the gym.",
-        "exampleZh": "學生公共食堂在體育館的旁邊。"
+        "example": "The boys run in the gym.",
+        "exampleZh": "男孩們在體育館裡跑步。"
     },
     {
         "id": 30746,
@@ -7476,8 +7476,8 @@ const jhWordsDB = [
         "uk": "/hɑːf/",
         "zh": "n. 一半、二分之一、半場、半局；pron. 一半、……點半、大量、許多；det. 一半；adj. 半個、一半的、不完整的、部分的；adv. 一半地、接近一半地、部分地、不完全地",
         "unit": 17,
-        "example": "Children travel (at) half fare.",
-        "exampleZh": "兒童乘車半價。"
+        "example": "He gave me half of his apple.",
+        "exampleZh": "他把他的蘋果分了一半給我。"
     },
     {
         "id": 30749,
@@ -7486,8 +7486,8 @@ const jhWordsDB = [
         "uk": "/hɔːl/",
         "zh": "n. 大廳、禮堂、門廳、走廊",
         "unit": 17,
-        "example": "Applause rang through the hall.",
-        "exampleZh": "掌聲響徹整個大廳。"
+        "example": "We all met in the school hall.",
+        "exampleZh": "我們都在學校大禮堂集合。"
     },
     {
         "id": 30750,
@@ -7496,8 +7496,8 @@ const jhWordsDB = [
         "uk": "/ˌhæləʊˈiːn/",
         "zh": "n. 萬聖節、萬聖節前夕",
         "unit": 17,
-        "example": "Halloween is a strange holiday.",
-        "exampleZh": "萬聖節是個奇怪的節日。"
+        "example": "We eat sweet candy on Halloween.",
+        "exampleZh": "我們在萬聖節吃甜糖果。"
     },
     {
         "id": 30751,
@@ -7516,8 +7516,8 @@ const jhWordsDB = [
         "uk": "/ˈhæmbɜːɡə(r)/",
         "zh": "n. 漢堡、漢堡包、碎牛肉",
         "unit": 17,
-        "example": "We stopped at a drive-in for a hamburger.",
-        "exampleZh": "我們在一家“免下車”餐館停下來吃漢堡包。"
+        "example": "I ate a big hamburger for lunch.",
+        "exampleZh": "我午餐吃了一個大漢堡。"
     },
     {
         "id": 30753,
@@ -7526,8 +7526,8 @@ const jhWordsDB = [
         "uk": "/ˈhæmə(r)/",
         "zh": "n. 錘子、榔頭、木槌、鏈球；v. 敲擊、用力敲打、猛踢、強行灌輸",
         "unit": 17,
-        "example": "He hit the nail squarely on the head with the hammer.",
-        "exampleZh": "他用錘子正對著釘子敲下去。"
+        "example": "He hit the nail with a hammer.",
+        "exampleZh": "他用鐵鎚敲釘子。"
     },
     {
         "id": 30754,
@@ -7536,8 +7536,8 @@ const jhWordsDB = [
         "uk": "/hænd/",
         "zh": "n. 手、指標、一局牌、一手牌；comb. 用……手的、手工；vt. 交、遞、支援、攙扶",
         "unit": 17,
-        "example": "He patted her hand patronizingly.",
-        "exampleZh": "他居高臨下地拍拍她的手。"
+        "example": "Please hold my hand when we cross.",
+        "exampleZh": "過馬路時請牽著我的手。"
     },
     {
         "id": 30755,
@@ -7576,8 +7576,8 @@ const jhWordsDB = [
         "uk": "/hæŋ/",
         "zh": "v. 掛、懸掛、吊、掛在牆上；n. 懸掛方式、下垂、低垂、陳列",
         "unit": 17,
-        "example": "Hang on—I'm not quite ready.",
-        "exampleZh": "等一下——我還沒準備好。"
+        "example": "Hang your coat on the door hook.",
+        "exampleZh": "把你的外套掛在門上的鉤子。"
     },
     {
         "id": 30759,
@@ -7606,8 +7606,8 @@ const jhWordsDB = [
         "uk": "/ˈhæpi/",
         "zh": "adj. 快樂的、幸福的、使人高興的、滿意的；comb. 濫用……的",
         "unit": 17,
-        "example": "She had a happy childhood.",
-        "exampleZh": "她有一個幸福的童年。"
+        "example": "The children look very happy today.",
+        "exampleZh": "孩子們今天看起來很高興。"
     },
     {
         "id": 30762,
@@ -7616,8 +7616,8 @@ const jhWordsDB = [
         "uk": "/hɑːd/",
         "zh": "adj. 困難的、硬的、堅硬的、艱苦的；adv. 努力地、猛烈地、費力地",
         "unit": 17,
-        "example": "It's pretty hard to explain.",
-        "exampleZh": "這很難解釋。"
+        "example": "He works very hard every single day.",
+        "exampleZh": "他每一天都非常努力工作。"
     },
     {
         "id": 30763,
@@ -7636,8 +7636,8 @@ const jhWordsDB = [
         "uk": "/hæt/",
         "zh": "n. 帽子、職位、角色；v. 給……戴上帽子、供應帽子、製造帽子",
         "unit": 17,
-        "example": "She pulled her hat straight.",
-        "exampleZh": "她把帽子拉直。"
+        "example": "He wears a warm hat in winter.",
+        "exampleZh": "他冬天戴著一頂保暖的帽子。"
     },
     {
         "id": 30765,
@@ -7646,8 +7646,8 @@ const jhWordsDB = [
         "uk": "/heɪt/",
         "zh": "vt. 恨、厭惡、不喜歡、仇恨；n. 討厭、憎惡、憎恨、所憎惡的人",
         "unit": 17,
-        "example": "The obverse of love is hate.",
-        "exampleZh": "愛的反面是恨。"
+        "example": "I hate to get up so early.",
+        "exampleZh": "我討厭這麼早起床。"
     },
     {
         "id": 30766,
@@ -7656,8 +7656,8 @@ const jhWordsDB = [
         "uk": "/hæv; həv/",
         "zh": "vt. 有、擁有、顯示出、帶有；n. 有錢人、詐騙",
         "unit": 17,
-        "example": "Times have changed and so have I.",
-        "exampleZh": "時代變了，我也變了。"
+        "example": "We have a big test this morning.",
+        "exampleZh": "我們今天早上有一場大考試。"
     },
     {
         "id": 30767,
@@ -7666,8 +7666,8 @@ const jhWordsDB = [
         "uk": "/hed/",
         "zh": "n. 頭、頭腦、智力、頂部；vt. 領導、朝（某方向）行進、主管、居……之首；adj. 領頭的、負責的、頭的、在頂端的；adv. 有頭像的一面朝上",
         "unit": 17,
-        "example": "He shook his head tiredly.",
-        "exampleZh": "他疲倦地搖搖頭。"
+        "example": "He nodded his head with a smile.",
+        "exampleZh": "他帶著微笑點了點頭。"
     },
     {
         "id": 30768,
@@ -7676,8 +7676,8 @@ const jhWordsDB = [
         "uk": "/ˈhedeɪk/",
         "zh": "n. 頭痛、使人頭痛的事、難題",
         "unit": 17,
-        "example": "He complained of a headache.",
-        "exampleZh": "他說他頭疼。"
+        "example": "I have a bad headache today.",
+        "exampleZh": "我今天頭痛得很厲害。"
     },
     {
         "id": 30769,
@@ -7686,8 +7686,8 @@ const jhWordsDB = [
         "uk": "/helθ/",
         "zh": "n. 健康、身體狀況、醫療、衛生",
         "unit": 17,
-        "example": "He's always enjoyed good health.",
-        "exampleZh": "他一直身體健康。"
+        "example": "Good food is very good for health.",
+        "exampleZh": "好的食物對健康非常好。"
     },
     {
         "id": 30770,
@@ -7696,8 +7696,8 @@ const jhWordsDB = [
         "uk": "/ˈhelθi/",
         "zh": "adj. 健康的、健壯的、有益身心的、明智的",
         "unit": 17,
-        "example": "He has a healthy appetite.",
-        "exampleZh": "他胃口健康。"
+        "example": "Eating green food keeps your body healthy.",
+        "exampleZh": "吃綠色蔬菜能保持身體健康。"
     },
     {
         "id": 30771,
@@ -7706,8 +7706,8 @@ const jhWordsDB = [
         "uk": "/hɪə(r)/",
         "zh": "v. 聽、聽到、聽見、聆聽",
         "unit": 17,
-        "example": "I can hear someone calling.",
-        "exampleZh": "我能聽到有人打電話。"
+        "example": "Can you hear the loud music outside?",
+        "exampleZh": "你能聽到外面大聲的音樂嗎？"
     },
     {
         "id": 30772,
@@ -7716,8 +7716,8 @@ const jhWordsDB = [
         "uk": "/hɑːt/",
         "zh": "n. 心臟、心、內心、感情；v. 喜愛、深愛",
         "unit": 17,
-        "example": "My heart was knocking wildly.",
-        "exampleZh": "我的心劇烈地跳動著。"
+        "example": "Her heart beats fast when she runs.",
+        "exampleZh": "她跑步時心跳得很快。"
     },
     {
         "id": 30773,
@@ -7726,8 +7726,8 @@ const jhWordsDB = [
         "uk": "/hiːt/",
         "zh": "n. 熱、熱能、熱量、炎熱；vt. 加熱、激起、使激動、使變暖",
         "unit": 17,
-        "example": "The heat was becoming unbearable.",
-        "exampleZh": "炎熱變得難以忍受。"
+        "example": "The summer heat makes me feel tired.",
+        "exampleZh": "夏天的酷熱讓我感到疲累。"
     },
     {
         "id": 30774,
@@ -7736,8 +7736,8 @@ const jhWordsDB = [
         "uk": "/ˈhiːtə(r)/",
         "zh": "n. 熱水器、加熱器、取暖器、加熱工",
         "unit": 17,
-        "example": "This type of heater uses a lot of electricity.",
-        "exampleZh": "這種加熱器耗電量很大。"
+        "example": "Turn on the heater to keep warm.",
+        "exampleZh": "打開電暖器來保暖。"
     },
     {
         "id": 30775,
@@ -7746,8 +7746,8 @@ const jhWordsDB = [
         "uk": "/ˈhevi/",
         "zh": "adj. 重的、沉的、大量的、嚴重的；n. 保鏢、打手、反派、重要人物；adv. 濃濃地、沉重地、使不安、使擔憂",
         "unit": 17,
-        "example": "These scissors are awfully heavy.",
-        "exampleZh": "這些剪刀非常重。"
+        "example": "This big box is too heavy for me.",
+        "exampleZh": "這個大箱子對我來說太重了。"
     },
     {
         "id": 30776,
@@ -7776,8 +7776,8 @@ const jhWordsDB = [
         "uk": "/help/",
         "zh": "vt. 幫助、援助、改善狀況、對……有益；n. 協助、幫助、有助益的東西、有用；int. 救命",
         "unit": 17,
-        "example": "You never help me.",
-        "exampleZh": "你從來不幫我。"
+        "example": "Can you help me with this box?",
+        "exampleZh": "你能幫我拿這個箱子嗎？"
     },
     {
         "id": 30779,
@@ -7796,8 +7796,8 @@ const jhWordsDB = [
         "uk": "/hen/",
         "zh": "n. 母雞、雌禽、姑娘、用於其他鳥的名稱",
         "unit": 17,
-        "example": "The hen may not be able to feed its young.",
-        "exampleZh": "這隻母雞也許不能餵它的幼雛。"
+        "example": "The brown hen laid a fresh egg.",
+        "exampleZh": "那隻棕色母雞下了一顆新鮮的蛋。"
     },
     {
         "id": 30781,
@@ -7806,8 +7806,8 @@ const jhWordsDB = [
         "uk": "/hɪə(r)/",
         "zh": "adv. 在這裡、此處、到這裡、朝這裡；int. 嘿、喂！；n. 這裡、此處",
         "unit": 17,
-        "example": "Please write your signature right here on the form.",
-        "exampleZh": "請直接在表格的這個位置簽名。"
+        "example": "Put your school bag right here.",
+        "exampleZh": "把你的書包放在這裡就好。"
     },
     {
         "id": 30782,
@@ -7816,8 +7816,8 @@ const jhWordsDB = [
         "uk": "/ˈhɪərəʊ/",
         "zh": "n. 英雄、勇士、男主角、男主人公",
         "unit": 17,
-        "example": "He was eulogized as a hero.",
-        "exampleZh": "他被讚譽為英雄。"
+        "example": "The brave dog became a local hero.",
+        "exampleZh": "那隻勇敢的狗成了當地的英雄。"
     },
     {
         "id": 30783,
@@ -7826,8 +7826,8 @@ const jhWordsDB = [
         "uk": "/haɪd/",
         "zh": "vt. 藏、把……藏起來、隱藏、躲藏；n. 隱匿處、埋伏處、獸皮、生命",
         "unit": 17,
-        "example": "He didn't hide his pacifism.",
-        "exampleZh": "他並沒有掩飾自己的和平主義。"
+        "example": "The cat likes to hide under beds.",
+        "exampleZh": "那隻貓喜歡躲在床底下。"
     },
     {
         "id": 30784,
@@ -7836,8 +7836,8 @@ const jhWordsDB = [
         "uk": "/haɪ/",
         "zh": "adj. 高的、高度的、高級的；adv. 高、向高處、高度地；n. 高處、最高水平",
         "unit": 17,
-        "example": "How high is Mount Aconcagua?",
-        "exampleZh": "阿空加瓜山有多高？"
+        "example": "The bird flies high above the trees.",
+        "exampleZh": "鳥兒在樹林上空高高飛翔。"
     },
     {
         "id": 30785,
@@ -7846,8 +7846,8 @@ const jhWordsDB = [
         "uk": "/ˈhaɪweɪ/",
         "zh": "n. 公路、幹道、公用通道",
         "unit": 17,
-        "example": "Anita drove north up Pacific Highway.",
-        "exampleZh": "安尼塔開車沿著太平洋公路向北行駛。"
+        "example": "Cars drive very fast on the highway.",
+        "exampleZh": "汽車在公路上開得非常快。"
     },
     {
         "id": 30786,
@@ -7856,8 +7856,8 @@ const jhWordsDB = [
         "uk": "/haɪk/",
         "zh": "n. 徒步旅行、遠足、大幅度提高、猛增；v. 遠足、徒步旅行、突然增加、突然提高",
         "unit": 17,
-        "example": "The site is reached by a 30-minute hike through dense forest.",
-        "exampleZh": "要花30分鐘徒步穿過密林才能到達那個地方。"
+        "example": "We like to hike in hills.",
+        "exampleZh": "我們喜歡在小山裡健行。"
     },
     {
         "id": 30787,
@@ -7906,8 +7906,8 @@ const jhWordsDB = [
         "uk": "/ˈhɪstri; ˈhɪstəri/",
         "zh": "n. 歷史、沿革、發展過程、歷史課",
         "unit": 17,
-        "example": "I'm very interested in history.",
-        "exampleZh": "我對歷史很有興趣。"
+        "example": "We learn about world history in class.",
+        "exampleZh": "我們在課堂上學習世界歷史。"
     },
     {
         "id": 30792,
@@ -7916,8 +7916,8 @@ const jhWordsDB = [
         "uk": "/hɪt/",
         "zh": "vt. 打、擊、撞擊、碰撞；n. 打擊、命中、擊中、很受歡迎的人",
         "unit": 17,
-        "example": "The ferry hit us amidships.",
-        "exampleZh": "渡輪撞到了我們的船中部。"
+        "example": "The boy can hit the ball far.",
+        "exampleZh": "這個男孩可以把球打得很遠。"
     },
     {
         "id": 30793,
@@ -7926,8 +7926,8 @@ const jhWordsDB = [
         "uk": "/ˈhɒbi/",
         "zh": "n. 嗜好、業餘愛好、小馬、馬駒",
         "unit": 17,
-        "example": "His hobby is freefall parachuting.",
-        "exampleZh": "他的業餘愛好是自由落體式跳傘。"
+        "example": "To cook good food is my hobby.",
+        "exampleZh": "做美味的食物是我的嗜好。"
     },
     {
         "id": 30794,
@@ -7966,8 +7966,8 @@ const jhWordsDB = [
         "uk": "/həʊm/",
         "zh": "n. 家、住宅、房子、寓所；adj. 家庭的、家用的、在家裡做（或進行）的、本國的；adv. 回家、在家、到正確的位置、朝著球門；v. 歸巢、對準、把（思想、注意力）集中於、把（動物）養作寵物",
         "unit": 17,
-        "example": "Burglars broke into their home.",
-        "exampleZh": "竊賊闖入了他們的家。"
+        "example": "I want to go home right now.",
+        "exampleZh": "我現在想要回家。"
     },
     {
         "id": 30798,
@@ -7986,8 +7986,8 @@ const jhWordsDB = [
         "uk": "/ˈɒnɪst/",
         "zh": "adj. 誠實的、正直的、坦誠的、直率的；adv. 真的、確實",
         "unit": 17,
-        "example": "I'm disappointed, to be honest.",
-        "exampleZh": "老實說，我很失望。"
+        "example": "An honest man will always tell the truth.",
+        "exampleZh": "一個誠實的人總是會說實話。"
     },
     {
         "id": 30800,
@@ -7996,8 +7996,8 @@ const jhWordsDB = [
         "uk": "/ˈɒnəsti/",
         "zh": "n. 誠實、正直、銀扇草、金錢花",
         "unit": 17,
-        "example": "Her honesty is beyond question.",
-        "exampleZh": "她的誠實是毋庸置疑的。"
+        "example": "His honesty won all our hearts.",
+        "exampleZh": "他的誠實贏得了我們所有人的心。"
     },
     {
         "id": 30801,
@@ -8046,8 +8046,8 @@ const jhWordsDB = [
         "uk": "/hɔːs/",
         "zh": "n. 馬、賽馬、跳馬、鞍馬；v. 給（人或車輛）提供馬、使騎馬",
         "unit": 17,
-        "example": "This horse needs firm handling.",
-        "exampleZh": "這匹馬需要堅定的駕馭。"
+        "example": "The brown horse runs very fast.",
+        "exampleZh": "那匹棕色的馬跑得非常快。"
     },
     {
         "id": 30806,
@@ -8056,8 +8056,8 @@ const jhWordsDB = [
         "uk": "/ˈhɒspɪt(ə)l/",
         "zh": "n. 醫院、青年教育慈善機構、慈善招待所",
         "unit": 17,
-        "example": "The VA hospital needs renovation.",
-        "exampleZh": "退伍軍人管理局的醫院需要進行整修。"
+        "example": "The sick boy is in the hospital.",
+        "exampleZh": "那個生病的男孩在醫院裡。"
     },
     {
         "id": 30807,
@@ -8106,8 +8106,8 @@ const jhWordsDB = [
         "uk": "/haʊs/",
         "zh": "n. 房子、住宅、一家人、同住一幢房子的人們；vt. 讓……居住、給……提供住房、給……提供場地、收藏存放；adj. 家養的、常在室內的、公司的、機構的",
         "unit": 17,
-        "example": "Their house is massive.",
-        "exampleZh": "他們的房子很大。"
+        "example": "They live in a big white house.",
+        "exampleZh": "他們住在一棟白色的大房子裡。"
     },
     {
         "id": 30812,
@@ -8116,8 +8116,8 @@ const jhWordsDB = [
         "uk": "/ˈhaʊswaɪf/",
         "zh": "n. 家庭主婦",
         "unit": 17,
-        "example": "She is a dedicated housewife who takes great care of her family.",
-        "exampleZh": "她是一位把家庭照顧得非常周到的盡責家庭主婦。"
+        "example": "My mother is a busy housewife.",
+        "exampleZh": "我的母親是一位忙碌的家庭主婦。"
     },
     {
         "id": 30813,
@@ -8146,8 +8146,8 @@ const jhWordsDB = [
         "uk": "/haʊˈevə(r)/",
         "zh": "adv. 然而、可是、不過、無論如何；conj. 不管怎樣、無論如何、然而、可是",
         "unit": 17,
-        "example": "On one issue, however, she was immovable.",
-        "exampleZh": "然而，在一個問題上，她卻無動於衷。"
+        "example": "She ran fast, however she arrived late.",
+        "exampleZh": "她跑得很快，然而她還是遲到了。"
     },
     {
         "id": 30816,
@@ -8166,8 +8166,8 @@ const jhWordsDB = [
         "uk": "/ˈhjuːmən/",
         "zh": "adj. 人的、人類的、顯示人的本性的、有人情味的；n. 人、人類",
         "unit": 17,
-        "example": "Human longevity runs in families.",
-        "exampleZh": "人類的長壽與家庭息息相關。"
+        "example": "Dogs are a human's best friend.",
+        "exampleZh": "狗狗是人類最好的朋友。"
     },
     {
         "id": 30818,
@@ -8176,8 +8176,8 @@ const jhWordsDB = [
         "uk": "/ˈhʌmb(ə)l/",
         "zh": "adj. 謙虛的、謙卑的、低下的；vt. 使謙卑、使感到自慚、擊敗",
         "unit": 17,
-        "example": "He always makes much of his humble origins.",
-        "exampleZh": "他總是看重自己卑微的出身。"
+        "example": "He remained humble despite his great success.",
+        "exampleZh": "儘管獲得巨大成功，他依然保持謙遜。"
     },
     {
         "id": 30819,
@@ -8186,8 +8186,8 @@ const jhWordsDB = [
         "uk": "/ˈhjuːmɪd/",
         "zh": "adj. 潮溼的、溼熱的",
         "unit": 17,
-        "example": "These plants love warm, humid atmospheres.",
-        "exampleZh": "這些植物喜歡溫暖、潮濕的氣氛。"
+        "example": "Summer days here are very hot and humid.",
+        "exampleZh": "這裡的夏天非常炎熱且潮濕。"
     },
     {
         "id": 30820,
@@ -8196,8 +8196,8 @@ const jhWordsDB = [
         "uk": "/ˈhjuːmə(r)/",
         "zh": "n. 幽默、詼諧、幽默感、心情；vt. 迎合、遷就、順應",
         "unit": 17,
-        "example": "The movie mixes broad humor with romance.",
-        "exampleZh": "那部電影把粗俗幽默和浪漫故事結合在一起。"
+        "example": "My father has a great sense of humor.",
+        "exampleZh": "我父親非常有幽默感。"
     },
     {
         "id": 30821,
@@ -8206,8 +8206,8 @@ const jhWordsDB = [
         "uk": "/ˈhjuːmərəs/",
         "zh": "adj. 幽默的、詼諧的",
         "unit": 17,
-        "example": "The writing is brutally tough and savagely humorous.",
-        "exampleZh": "該作品文筆痛快地犀利和極端地幽默。"
+        "example": "He told a humorous joke today.",
+        "exampleZh": "他今天講了一個幽默的笑話。"
     },
     {
         "id": 30822,
@@ -8246,8 +8246,8 @@ const jhWordsDB = [
         "uk": "/hʌnt/",
         "zh": "v. 打獵、獵取、搜尋、追蹤；n. 搜尋、尋找、打獵、狩獵",
         "unit": 17,
-        "example": "They sleep by day and hunt by night.",
-        "exampleZh": "他們白天睡覺，夜晚捕獵。"
+        "example": "Lions hunt for food in the grass.",
+        "exampleZh": "獅子在草叢中尋找獵物。"
     },
     {
         "id": 30826,
@@ -8256,8 +8256,8 @@ const jhWordsDB = [
         "uk": "/ˈhʌntə(r)/",
         "zh": "n. 獵人、捕獵者、搜尋者、尋找者",
         "unit": 17,
-        "example": "Hunter knew nearly all of this already.",
-        "exampleZh": "亨特幾乎知道這事的全部了。"
+        "example": "The old hunter walked into the woods.",
+        "exampleZh": "老獵人走進了樹林中。"
     },
     {
         "id": 30827,
@@ -8276,8 +8276,8 @@ const jhWordsDB = [
         "uk": "/hɜːt/",
         "zh": "v. 使受傷、使疼痛、感到受傷、感到疼痛；adj. 受傷的、痛苦的；n. 心靈創傷、委屈、傷、痛",
         "unit": 17,
-        "example": "Did you hurt yourself ?",
-        "exampleZh": "你傷到自己了嗎？"
+        "example": "Did you hurt your arm today?",
+        "exampleZh": "你今天手臂受傷了嗎？"
     },
     {
         "id": 30829,
@@ -8286,8 +8286,8 @@ const jhWordsDB = [
         "uk": "/ˈhʌzbənd/",
         "zh": "n. 丈夫；v. 節約使用",
         "unit": 17,
-        "example": "Her husband was a violent man.",
-        "exampleZh": "她的丈夫是一個暴力的人。"
+        "example": "Her husband cooks dinner every night.",
+        "exampleZh": "她的丈夫每晚都做晚餐。"
     },
     {
         "id": 30830,
@@ -8296,8 +8296,8 @@ const jhWordsDB = [
         "uk": "/aɪs/",
         "zh": "n. 冰、冰塊、冰凍甜食、刨冰；vt. 在（糕餅上）加糖霜、冷卻、冰鎮、確保；adj. 冰的",
         "unit": 17,
-        "example": "The ice started to crack.",
-        "exampleZh": "冰開始破裂。"
+        "example": "Please put some ice in my drink.",
+        "exampleZh": "請在我的飲料裡加一些冰塊。"
     },
     {
         "id": 30831,
@@ -8306,8 +8306,8 @@ const jhWordsDB = [
         "uk": "/aɪˈdɪə/",
         "zh": "n. 想法、主意、觀點、看法",
         "unit": 17,
-        "example": "He's dead against the idea.",
-        "exampleZh": "他堅決反對這個想法。"
+        "example": "That sounds like a very good idea.",
+        "exampleZh": "那聽起來是個很棒的主意。"
     },
     {
         "id": 30832,
@@ -8326,8 +8326,8 @@ const jhWordsDB = [
         "uk": "/ɪɡˈnɔː(r)/",
         "zh": "vt. 忽視、佯裝未見、不理睬、對……不予理會",
         "unit": 17,
-        "example": "We cannot afford to ignore this warning.",
-        "exampleZh": "我們不能忽視這項警告。"
+        "example": "Do not ignore the warning sign ahead.",
+        "exampleZh": "不要忽視前方的警告標誌。"
     },
     {
         "id": 30834,
@@ -8336,8 +8336,8 @@ const jhWordsDB = [
         "uk": "/ɪl/",
         "zh": "adj. 有病的、不舒服的、壞的、有害的；adv. 壞、惡劣地、艱難地、幾乎不；n. 問題、困難、傷害、厄運",
         "unit": 17,
-        "example": "The patient is terminally ill.",
-        "exampleZh": "這個病人病入膏肓。"
+        "example": "My brother is ill and stays home.",
+        "exampleZh": "我哥哥生病了，留在家裡。"
     },
     {
         "id": 30835,
@@ -8346,8 +8346,8 @@ const jhWordsDB = [
         "uk": "/ɪˈmædʒɪn/",
         "zh": "vt. 想像、想象、設想、料想",
         "unit": 17,
-        "example": "I can just imagine his reaction.",
-        "exampleZh": "我可以想像他的反應。"
+        "example": "Can you imagine life without cell phones?",
+        "exampleZh": "你能想像沒有手機的生活嗎？"
     },
     {
         "id": 30836,
@@ -8356,8 +8356,8 @@ const jhWordsDB = [
         "uk": "/ˌɪmpəˈlaɪt/",
         "zh": "adj. 不禮貌的、粗魯的",
         "unit": 17,
-        "example": "Some people think it is impolite to ask someone's age.",
-        "exampleZh": "有些人認為詢問別人的年齡是不禮貌的。"
+        "example": "It is impolite to shout loudly.",
+        "exampleZh": "大聲喊叫是不禮貌的。"
     },
     {
         "id": 30837,
@@ -8366,8 +8366,8 @@ const jhWordsDB = [
         "uk": "/ɪmˈpɔːt(ə)ns/",
         "zh": "n. 重要性、重要、傲慢、名望",
         "unit": 17,
-        "example": "This matter is of paramount importance.",
-        "exampleZh": "此事至關重要。"
+        "example": "She knows the importance of clean water.",
+        "exampleZh": "她知道乾淨水源的重要性。"
     },
     {
         "id": 30838,
@@ -8396,8 +8396,8 @@ const jhWordsDB = [
         "uk": "/ɪmˈpruːv/",
         "zh": "v. 改進、康復、健康好轉、超過",
         "unit": 17,
-        "example": "I need to improve my English.",
-        "exampleZh": "我需要提高我的英語能力。"
+        "example": "Practice every day to improve your English.",
+        "exampleZh": "每天練習以提升你的英文能力。"
     },
     {
         "id": 30841,
@@ -8406,8 +8406,8 @@ const jhWordsDB = [
         "uk": "/ɪn/",
         "zh": "prep. 在……內、在……裡、在、進……裡；adv. 進入、朝裡、向中間、在裡頭；adj. 在裡面的、內部的、時髦的、流行的；n. 執政者、門路、關係、接近……的機會",
         "unit": 17,
-        "example": "They lived in rooms in Kensington.",
-        "exampleZh": "他們住在肯辛頓的房間裡。"
+        "example": "The keys are in my small bag.",
+        "exampleZh": "鑰匙在我的小袋子裡。"
     },
     {
         "id": 30842,
@@ -8416,8 +8416,8 @@ const jhWordsDB = [
         "uk": "/ɪntʃ/",
         "zh": "n. 英寸、少許、身高、腰圍；vt. 逐漸增加、緩慢移動",
         "unit": 17,
-        "example": "There are 2.54 centimetres to an inch.",
-        "exampleZh": "一吋等於 2.54 公分。"
+        "example": "The plant grew one inch this week.",
+        "exampleZh": "這株植物這週長了一英吋。"
     },
     {
         "id": 30843,
@@ -8426,8 +8426,8 @@ const jhWordsDB = [
         "uk": "/ɪnˈkluːd/",
         "zh": "vt. 包括、包含、把……列為一部分、把……算入",
         "unit": 17,
-        "example": "Symptoms include a sore throat.",
-        "exampleZh": "症狀包括喉嚨痛。"
+        "example": "Does the total price include cold drinks?",
+        "exampleZh": "總價是否有包含冷飲？"
     },
     {
         "id": 30844,
@@ -8436,8 +8436,8 @@ const jhWordsDB = [
         "uk": "/ˈɪnkʌm/",
         "zh": "n. 收入、收益",
         "unit": 17,
-        "example": "All income must be declared.",
-        "exampleZh": "所有收益必須申報。"
+        "example": "He saved part of his small income.",
+        "exampleZh": "他把微薄收入的一部分存了起來。"
     },
     {
         "id": 30845,
@@ -8456,8 +8456,8 @@ const jhWordsDB = [
         "uk": "/ˌɪndɪˈpendənt/",
         "zh": "adj. 獨立的、自治的、自立的、自力更生的；n. 獨立自主者、獨立團體、無黨派政治家、公理會教友",
         "unit": 17,
-        "example": "Mozambique became independent in 1975.",
-        "exampleZh": "莫三比克於1975年獨立。"
+        "example": "She is an independent girl who works hard.",
+        "exampleZh": "她是個努力工作的獨立女孩。"
     },
     {
         "id": 30847,
@@ -8466,8 +8466,8 @@ const jhWordsDB = [
         "uk": "/ˈɪndɪkeɪt/",
         "zh": "vt. 指示、表明、標示、象徵",
         "unit": 17,
-        "example": "Road markings indicate where you can stop.",
-        "exampleZh": "道路標記指示您可以在哪裡停車。"
+        "example": "Dark clouds indicate that rain is coming.",
+        "exampleZh": "烏雲表示即將要下雨了。"
     },
     {
         "id": 30848,
@@ -8476,8 +8476,8 @@ const jhWordsDB = [
         "uk": "/ˈɪnfluəns/",
         "zh": "n. 影響、作用、勢力、影響力；vt. 影響、對……起作用",
         "unit": 17,
-        "example": "His influence has diminished with time.",
-        "exampleZh": "隨著時間的推移，他的影響已不如從前了。"
+        "example": "Movies have a big influence on us.",
+        "exampleZh": "電影對我們有很大的影響力。"
     },
     {
         "id": 30849,
@@ -8496,8 +8496,8 @@ const jhWordsDB = [
         "uk": "/ɪŋk/",
         "zh": "n. 墨水、油墨、文字宣傳、紙媒宣傳；v. 簽訂、簽署、塗墨水於",
         "unit": 17,
-        "example": "These ink stains won't wash out.",
-        "exampleZh": "這些墨漬洗不掉。"
+        "example": "The pen ran out of black ink.",
+        "exampleZh": "這支筆的黑墨水用完了。"
     },
     {
         "id": 30851,
@@ -8536,8 +8536,8 @@ const jhWordsDB = [
         "uk": "/ɪnˈspaɪə(r)/",
         "zh": "vt. 激勵、鼓舞、賦予靈感、激發",
         "unit": 17,
-        "example": "We must promote originality, inspire creativity and encourage innovation.",
-        "exampleZh": "我們必須提倡獨創性，激發創造力，鼓勵創新。"
+        "example": "Good words inspire us to try.",
+        "exampleZh": "良言激勵我們勇於嘗試。"
     },
     {
         "id": 30855,
@@ -8546,8 +8546,8 @@ const jhWordsDB = [
         "uk": "/ˈɪnstəns/",
         "zh": "n. 例子、例項；v. 舉……為例",
         "unit": 17,
-        "example": "Can you quote me an instance of when this happened?",
-        "exampleZh": "你能否給我舉例說明一下發生這事的情況？"
+        "example": "Can you give me an instance of that?",
+        "exampleZh": "你能給我舉一個那樣的例子嗎？"
     },
     {
         "id": 30856,
@@ -8556,8 +8556,8 @@ const jhWordsDB = [
         "uk": "/ˈɪnstənt/",
         "zh": "adj. 立刻的、馬上的、速食的、即食的；n. 瞬間、片刻、當時、那一刻",
         "unit": 17,
-        "example": "For an instant, Barney was tempted to flee.",
-        "exampleZh": "那一瞬間，巴尼很想逃走。"
+        "example": "She gave me an instant reply today.",
+        "exampleZh": "她今天立刻給了我答覆。"
     },
     {
         "id": 30857,
@@ -8566,8 +8566,8 @@ const jhWordsDB = [
         "uk": "/ˈɪnstrəmənt/",
         "zh": "n. 樂器、器械、儀器、促成某事的人；v. 給……裝備測量儀器",
         "unit": 17,
-        "example": "Is he learning an instrument?",
-        "exampleZh": "他在學習演奏樂器嗎？"
+        "example": "Can you play any music instrument?",
+        "exampleZh": "你會演奏任何樂器嗎？"
     },
     {
         "id": 30858,
@@ -8576,8 +8576,8 @@ const jhWordsDB = [
         "uk": "/ɪnˈtelɪdʒənt/",
         "zh": "adj. 聰明的、有智力的、智慧的",
         "unit": 17,
-        "example": "The dolphin is an intelligent animal.",
-        "exampleZh": "海豚是聰明的動物。"
+        "example": "She is a very intelligent girl.",
+        "exampleZh": "她是一個非常聰明的女孩。"
     },
     {
         "id": 30859,
@@ -8586,8 +8586,8 @@ const jhWordsDB = [
         "uk": "/ˈɪntrəst/",
         "zh": "n. 興趣、關注、吸引力、趣味；vt. 使感興趣、引起……的關注、勸說（某人）做",
         "unit": 17,
-        "example": "Interest rates should come down.",
-        "exampleZh": "利率應該會下降。"
+        "example": "She has great interest in art.",
+        "exampleZh": "她對藝術有很大的興趣。"
     },
     {
         "id": 30860,
@@ -8606,8 +8606,8 @@ const jhWordsDB = [
         "uk": "/ˈɪntrəstɪŋ/",
         "zh": "adj. 有趣的、有吸引力的、怪異的；v. 使感興趣、引起……的關注、勸說（某人）做（或參與）",
         "unit": 17,
-        "example": "Did you go anywhere interesting?",
-        "exampleZh": "你去過任何有趣的地方嗎？"
+        "example": "I saw an interesting film today.",
+        "exampleZh": "我今天看了一部有趣的電影。"
     },
     {
         "id": 30862,
@@ -8616,8 +8616,8 @@ const jhWordsDB = [
         "uk": "/ˌɪntəˈnæʃ(ə)nəl/",
         "zh": "adj. 國際的、國際上的；n. 國際比賽、國際比賽選手、外國人、共產國際",
         "unit": 17,
-        "example": "His speciality is international law.",
-        "exampleZh": "他的專業是國際法。"
+        "example": "This is an international school for many kids.",
+        "exampleZh": "這是一所供許多孩子就讀的國際學校。"
     },
     {
         "id": 30863,
@@ -8626,8 +8626,8 @@ const jhWordsDB = [
         "uk": "/ˈɪntənet/",
         "zh": "n. 網路、網際網路、因特網",
         "unit": 17,
-        "example": "I'm jacking into the Internet now.",
-        "exampleZh": "我正要接入網際網路。"
+        "example": "We use the Internet every day.",
+        "exampleZh": "我們每天都使用網際網路。"
     },
     {
         "id": 30864,
@@ -8636,8 +8636,8 @@ const jhWordsDB = [
         "uk": "/ˌɪntəˈrʌpt/",
         "zh": "vt. 打擾、打斷、使暫停、使中斷",
         "unit": 17,
-        "example": "Please continue—I didn't mean to interrupt.",
-        "exampleZh": "請繼續往下說，我並非有意打斷你的話。"
+        "example": "Please do not interrupt my speech.",
+        "exampleZh": "請不要打斷我的演講。"
     },
     {
         "id": 30865,
@@ -8646,8 +8646,8 @@ const jhWordsDB = [
         "uk": "/ˈɪntəvjuː/",
         "zh": "vt. 面談、面試、採訪、訪問；n. 採訪、面試、面談、訪談",
         "unit": 17,
-        "example": "She spruced up for the interview.",
-        "exampleZh": "她為參加面試打扮了一番。"
+        "example": "He had a job interview today.",
+        "exampleZh": "他今天參加了一場面試。"
     },
     {
         "id": 30866,
@@ -8676,8 +8676,8 @@ const jhWordsDB = [
         "uk": "/ɪnˈvent/",
         "zh": "vt. 發明、創造、編造、虛構",
         "unit": 17,
-        "example": "So they proceeded to invent the verge-and-foliot escapement.",
-        "exampleZh": "於是他們開始發明邊緣式擒縱機構。"
+        "example": "Scientists try to invent new green tools.",
+        "exampleZh": "科學家試圖發明新的環保工具。"
     },
     {
         "id": 30869,
@@ -8686,8 +8686,8 @@ const jhWordsDB = [
         "uk": "/ˌɪnvɪˈteɪʃ(ə)n/",
         "zh": "n. 邀請、引起、招致、徵求",
         "unit": 17,
-        "example": "Admission is by invitation only.",
-        "exampleZh": "憑請柬入場。"
+        "example": "I got an invitation to his party.",
+        "exampleZh": "我收到了去他派對的邀請函。"
     },
     {
         "id": 30870,
@@ -8716,8 +8716,8 @@ const jhWordsDB = [
         "uk": "/ˈaɪlənd/",
         "zh": "n. 島、島嶼、島狀物、孤立體；v. 使成島、使孤立",
         "unit": 17,
-        "example": "The island is thinly populated.",
-        "exampleZh": "這個島人口稀少。"
+        "example": "They took a boat to the island.",
+        "exampleZh": "他們搭船前往那座島嶼。"
     },
     {
         "id": 30873,
@@ -8736,8 +8736,8 @@ const jhWordsDB = [
         "uk": "/ˈdʒækɪt/",
         "zh": "n. 外套、夾克衫、短上衣、書皮；v. 給……裝護套、給……穿短上衣、打",
         "unit": 17,
-        "example": "Is your jacket real leather?",
-        "exampleZh": "你的夾克是真皮的嗎？"
+        "example": "Put on your jacket before going out.",
+        "exampleZh": "出門前穿上你的夾克。"
     },
     {
         "id": 30875,
@@ -8746,8 +8746,8 @@ const jhWordsDB = [
         "uk": "/dʒæm/",
         "zh": "n. 擁塞、果醬、堵塞、擁擠；vt. 塞滿、擠滿、卡住",
         "unit": 17,
-        "example": "We were stuck in a traffic jam.",
-        "exampleZh": "我們遇上了交通阻塞。"
+        "example": "I like sweet fruit jam on bread.",
+        "exampleZh": "我喜歡在麵包上抹甜甜的水果果醬。"
     },
     {
         "id": 30876,
@@ -8756,8 +8756,8 @@ const jhWordsDB = [
         "uk": "/ˈdʒænjuəri/",
         "zh": "n. 一月",
         "unit": 17,
-        "example": "January is my least favourite month.",
-        "exampleZh": "一月是我最不喜歡的月份。"
+        "example": "January is a very cold month here.",
+        "exampleZh": "一月在這裡是一個非常寒冷的月份。"
     },
     {
         "id": 30877,
@@ -8766,8 +8766,8 @@ const jhWordsDB = [
         "uk": "/dʒæz/",
         "zh": "n. 爵士樂、爵士樂舞蹈、毫無意義的話、諸如此類的事情；adj. 爵士樂的；v. 演奏爵士樂、跳爵士舞、使活潑、遊蕩",
         "unit": 17,
-        "example": "Jazz is mother's milk to me.",
-        "exampleZh": "爵士樂對於我來說是不可或缺的。"
+        "example": "My dad loves to listen to jazz.",
+        "exampleZh": "我爸爸很喜歡聽爵士樂。"
     },
     {
         "id": 30878,
@@ -8786,8 +8786,8 @@ const jhWordsDB = [
         "uk": "/dʒiːnz/",
         "zh": "n. 牛仔褲、工裝褲",
         "unit": 17,
-        "example": "His jeans were left in tatters.",
-        "exampleZh": "他的牛仔褲已破爛不堪。"
+        "example": "He wore blue jeans and white shoes.",
+        "exampleZh": "他穿著藍色牛仔褲和白色鞋子。"
     },
     {
         "id": 30880,
@@ -8806,8 +8806,8 @@ const jhWordsDB = [
         "uk": "/dʒɒb/",
         "zh": "n. 工作、職業、零工、任務；v. 刺、捅、買賣股票、欺騙",
         "unit": 17,
-        "example": "Her job is multifaceted.",
-        "exampleZh": "她的工作是多方面的。"
+        "example": "He found a new job last week.",
+        "exampleZh": "他上週找到了一份新工作。"
     },
     {
         "id": 30882,
@@ -8816,8 +8816,8 @@ const jhWordsDB = [
         "uk": "/dʒɒɡ/",
         "zh": "v. 慢跑、輕推、輕撞、顛簸著行進；n. 慢跑鍛鍊、輕推、平穩的慢速",
         "unit": 17,
-        "example": "I got up early the next morning to jog.",
-        "exampleZh": "我次日清晨早起去慢跑了。"
+        "example": "She likes to jog around the park.",
+        "exampleZh": "她喜歡在公園周圍慢跑。"
     },
     {
         "id": 30883,
@@ -8836,8 +8836,8 @@ const jhWordsDB = [
         "uk": "/dʒəʊk/",
         "zh": "n. 笑話、玩笑、荒唐可笑的人、笑料；vi. 說笑話、開玩笑、取笑、開……的玩笑",
         "unit": 17,
-        "example": "Whoever thought up that joke?",
-        "exampleZh": "這個笑話是誰想出來的？"
+        "example": "My father told a funny joke today.",
+        "exampleZh": "我父親今天講了一個好笑的笑話。"
     },
     {
         "id": 30885,
@@ -8846,8 +8846,8 @@ const jhWordsDB = [
         "uk": "/ˈdʒɜːnəlɪst/",
         "zh": "n. 新聞記者、新聞工作者、報人、報紙撰稿人",
         "unit": 17,
-        "example": "Michael Cross is a freelance journalist.",
-        "exampleZh": "邁克爾·克羅斯是一個自由新聞工作者。"
+        "example": "The young journalist wrote good news.",
+        "exampleZh": "那位年輕記者寫了很好的報導。"
     },
     {
         "id": 30886,
@@ -8856,8 +8856,8 @@ const jhWordsDB = [
         "uk": "/dʒɔɪ/",
         "zh": "n. 喜悅、歡欣、高興、使人高興的人；v. 感到高興、感到欣喜",
         "unit": 17,
-        "example": "To his great joy, she accepted.",
-        "exampleZh": "讓他非常高興的是，她接受了。"
+        "example": "The sweet baby brings us great joy.",
+        "exampleZh": "這個可愛的寶寶帶給我們極大的喜悅。"
     },
     {
         "id": 30887,
@@ -8866,8 +8866,8 @@ const jhWordsDB = [
         "uk": "/dʒʌdʒ/",
         "zh": "n. 法官、審判官、裁判員、評判員；vt. 判斷、認為、裁判、評判",
         "unit": 17,
-        "example": "The judge allowed my claim.",
-        "exampleZh": "法官同意我的要求。"
+        "example": "The judge spoke to the young man.",
+        "exampleZh": "法官對那位年輕人說話。"
     },
     {
         "id": 30888,
@@ -8876,8 +8876,8 @@ const jhWordsDB = [
         "uk": "/dʒuːs/",
         "zh": "n. 汁、水果（蔬菜）汁飲料、肉汁；v. 榨",
         "unit": 17,
-        "example": "The juice contains no added sugar.",
-        "exampleZh": "果汁不含添加糖。"
+        "example": "I like to drink orange juice daily.",
+        "exampleZh": "我喜歡每天喝柳橙汁。"
     },
     {
         "id": 30889,
@@ -8906,8 +8906,8 @@ const jhWordsDB = [
         "uk": "/dʒuːn/",
         "zh": "n. 六月、瓊",
         "unit": 17,
-        "example": "Ann's expecting a baby in June.",
-        "exampleZh": "安六月就要生孩子了。"
+        "example": "School will end in late June.",
+        "exampleZh": "學校將在六月下旬結業。"
     },
     {
         "id": 30892,
@@ -8916,8 +8916,8 @@ const jhWordsDB = [
         "uk": "/dʒʌst/",
         "zh": "adv. 剛才、正好、只是、僅僅；adj. 公正的、正義的、應得的",
         "unit": 17,
-        "example": "Accountancy just isn't sexy.",
-        "exampleZh": "會計並不性感。"
+        "example": "I just finished my homework right now.",
+        "exampleZh": "我剛好現在做完了功課。"
     },
     {
         "id": 30893,
@@ -8926,8 +8926,8 @@ const jhWordsDB = [
         "uk": "/kiːp/",
         "zh": "v. 保持、留在、繼續、重複；n. 生活必需品、生活費用、城堡主樓",
         "unit": 17,
-        "example": "Her grandchildren keep her young.",
-        "exampleZh": "她的孫子讓她保持年輕。"
+        "example": "Please keep your room clean and tidy.",
+        "exampleZh": "請保持你的房間乾淨整潔。"
     },
     {
         "id": 30894,
@@ -8946,8 +8946,8 @@ const jhWordsDB = [
         "uk": "/kiː/",
         "zh": "n. 鑰匙、鍵、關鍵、要訣；v. 鍵入、成為（獲勝）的關鍵、用鑰匙劃壞、用別針（或楔子、栓）固定；adj. 關鍵的、主要的",
         "unit": 17,
-        "example": "His contribution could be key.",
-        "exampleZh": "他的貢獻可能是關鍵。"
+        "example": "I lost the key to my room.",
+        "exampleZh": "我把房間的鑰匙弄丟了。"
     },
     {
         "id": 30896,
@@ -8966,8 +8966,8 @@ const jhWordsDB = [
         "uk": "/kɪd/",
         "zh": "n. 小孩、年輕人、小山羊、小山羊皮革；v. 戲弄、開玩笑、欺騙、哄騙；adj. 較年幼的、小山羊皮製的",
         "unit": 17,
-        "example": "'Oh, she's just a kid,' he said scathingly.",
-        "exampleZh": "「哦，她只是個孩子，」他嚴厲地說。"
+        "example": "Every kid likes to eat sweet candy.",
+        "exampleZh": "每個小孩都喜歡吃甜糖果。"
     },
     {
         "id": 30898,
@@ -8976,8 +8976,8 @@ const jhWordsDB = [
         "uk": "/kɪl/",
         "zh": "vt. 殺死、扼殺、終止、使痛苦；n. 殺死、捕殺、被捕殺的動物、獵物",
         "unit": 17,
-        "example": "Chlorine is added to kill bacteria.",
-        "exampleZh": "添加氯以殺死細菌。"
+        "example": "The bad cold can kill the small fish.",
+        "exampleZh": "嚴寒會殺死這些小魚。"
     },
     {
         "id": 30899,
@@ -9026,8 +9026,8 @@ const jhWordsDB = [
         "uk": "/kɪŋ/",
         "zh": "n. 國王、君主、某物之王、首屈一指者；v. 立……為王",
         "unit": 17,
-        "example": "His king had been checkmated.",
-        "exampleZh": "他的國王已被將死。"
+        "example": "The king lived in a big castle.",
+        "exampleZh": "國王住在一座巨大的城堡裡。"
     },
     {
         "id": 30904,
@@ -9036,8 +9036,8 @@ const jhWordsDB = [
         "uk": "/ˈkɪŋdəm/",
         "zh": "n. 王國、自然三界之一、天國、管轄範圍",
         "unit": 17,
-        "example": "Rome annexed the Nabatean kingdom in AD 106.",
-        "exampleZh": "羅馬帝國於公元106年併吞了納巴泰王國。"
+        "example": "The king ruled over a quiet kingdom.",
+        "exampleZh": "國王統治著一個平靜的王國。"
     },
     {
         "id": 30905,
@@ -9046,8 +9046,8 @@ const jhWordsDB = [
         "uk": "/kɪs/",
         "zh": "vt. 親吻、接吻、輕拂、輕觸；n. 吻、接吻、輕擦",
         "unit": 17,
-        "example": "The first kiss is dynamite.",
-        "exampleZh": "初吻是炸藥。"
+        "example": "She gave her baby a sweet kiss.",
+        "exampleZh": "她給了小寶寶一個甜蜜的吻。"
     },
     {
         "id": 30906,
@@ -9056,8 +9056,8 @@ const jhWordsDB = [
         "uk": "/ˈkɪtʃɪn/",
         "zh": "n. 廚房、一套廚具、管絃樂隊中的打擊樂器組、不標準的",
         "unit": 17,
-        "example": "Her kitchen was kept immaculate.",
-        "exampleZh": "她的廚房保持得一塵不染。"
+        "example": "Mother is in the kitchen right now.",
+        "exampleZh": "媽媽現在正在廚房裡。"
     },
     {
         "id": 30907,
@@ -9076,8 +9076,8 @@ const jhWordsDB = [
         "uk": "/ˈkɪt(ə)n/",
         "zh": "n. 小貓、幼崽、一種灰白色舟蛾；v. 產仔",
         "unit": 17,
-        "example": "From somewhere, the kitten mewed.",
-        "exampleZh": "不知道從什麼地方傳來了小貓的喵喵叫聲。"
+        "example": "The little kitten drinks warm milk.",
+        "exampleZh": "小貓咪喝著溫牛奶。"
     },
     {
         "id": 30909,
@@ -9126,8 +9126,8 @@ const jhWordsDB = [
         "uk": "/ˈnɒlɪdʒ/",
         "zh": "n. 知識、學問、知道、瞭解",
         "unit": 17,
-        "example": "His knowledge of music is extensive.",
-        "exampleZh": "他音樂知識很廣博。"
+        "example": "Good books give us useful knowledge.",
+        "exampleZh": "好書帶給我們有用的知識。"
     },
     {
         "id": 30914,
@@ -9176,8 +9176,8 @@ const jhWordsDB = [
         "uk": "/læmp/",
         "zh": "n. 燈、光源、發熱燈、照射器；v. 照明、照亮、發光、燈下捕獵",
         "unit": 17,
-        "example": "She switched on the bedside lamp.",
-        "exampleZh": "她打開了床頭燈。"
+        "example": "He turned on the desk lamp.",
+        "exampleZh": "他打開了桌上的檯燈。"
     },
     {
         "id": 30919,
@@ -9186,8 +9186,8 @@ const jhWordsDB = [
         "uk": "/lænd/",
         "zh": "n. 土地、陸地、地面、地產；v. 著陸、降落、使（飛機）平穩著陸、登陸",
         "unit": 17,
-        "example": "90% of the land is cultivated.",
-        "exampleZh": "90%的土地為耕地。"
+        "example": "The plane will land very soon.",
+        "exampleZh": "飛機很快就會降落。"
     },
     {
         "id": 30920,
@@ -9196,8 +9196,8 @@ const jhWordsDB = [
         "uk": "/ˈlæŋɡwɪdʒ/",
         "zh": "n. 語言、語言文字、言語、說話",
         "unit": 17,
-        "example": "Her language was not very ladylike.",
-        "exampleZh": "她的語言不怎麼文雅。"
+        "example": "She can speak more than one language.",
+        "exampleZh": "她會說不止一種語言。"
     },
     {
         "id": 30921,
@@ -9206,8 +9206,8 @@ const jhWordsDB = [
         "uk": "/ˈlæntən/",
         "zh": "n. 燈籠、提燈、燈室、天窗",
         "unit": 17,
-        "example": "The night lantern glowed softly in the darkness.",
-        "exampleZh": "夜燈在黑暗中發出微弱的光。"
+        "example": "We hold a bright lantern at night.",
+        "exampleZh": "我們在夜晚提著一盞明亮的燈籠。"
     },
     {
         "id": 30922,
@@ -9216,8 +9216,8 @@ const jhWordsDB = [
         "uk": "/lɑːdʒ/",
         "zh": "adj. 大的、廣泛的、重要的、身材高大的；n. 大號、同類中最大者；v. 作樂、狂歡；adv. 誇大地、大大地",
         "unit": 17,
-        "example": "He was smoking a large cigar.",
-        "exampleZh": "他抽著一支大雪茄。"
+        "example": "They have a large family at home.",
+        "exampleZh": "他們家裡有一個大家庭。"
     },
     {
         "id": 30923,
@@ -9226,8 +9226,8 @@ const jhWordsDB = [
         "uk": "/lɑːst/",
         "zh": "adj. 最後的、最近的、上一個的、最後剩下的；vt. 持續、持久、維持、夠用；n. 鞋楦、僅剩下的部分、最後來的人（或發生的事）、殘餘；pron. 最近發生的事情、最後的人或事物、最後的人、最後一次；adv. 最近、上次、最後、最後一點",
         "unit": 17,
-        "example": "The doctors operated last night.",
-        "exampleZh": "醫生昨晚進行了手術。"
+        "example": "This is the last piece of cake.",
+        "exampleZh": "這是最後一塊蛋糕。"
     },
     {
         "id": 30924,
@@ -9246,8 +9246,8 @@ const jhWordsDB = [
         "uk": "/ˈleɪtə(r)/",
         "zh": "adv. 後來、隨後、再見、回頭見；adj. 稍晚的、較晚的、以後的、較新式的",
         "unit": 17,
-        "example": "Two days later tragedy struck.",
-        "exampleZh": "兩天後悲劇發生了。"
+        "example": "I will call you back later.",
+        "exampleZh": "我待會兒再打電話給你。"
     },
     {
         "id": 30926,
@@ -9256,8 +9256,8 @@ const jhWordsDB = [
         "uk": "/ˈleɪtɪst/",
         "zh": "adj. 最新的、最近的、最遲的、最後的；n. 最新事物、最新訊息、最遲、最晚",
         "unit": 17,
-        "example": "The latest trend is gardening.",
-        "exampleZh": "最新的趨勢是園藝。"
+        "example": "Have you heard the latest news today?",
+        "exampleZh": "你今天聽到最新的消息了嗎？"
     },
     {
         "id": 30927,
@@ -9266,8 +9266,8 @@ const jhWordsDB = [
         "uk": "/lɑːf/",
         "zh": "v. 笑、發笑、嘲笑、不以為然；n. 笑、笑聲、令人開心的時刻",
         "unit": 17,
-        "example": "He uttered a snorting laugh.",
-        "exampleZh": "他發出一聲鼻息般的笑聲。"
+        "example": "The funny clown made us laugh.",
+        "exampleZh": "那個有趣的丑角逗得我們哈哈大笑。"
     },
     {
         "id": 30928,
@@ -9276,8 +9276,8 @@ const jhWordsDB = [
         "uk": "/lɔː/",
         "zh": "n. 法律、法令、法規、規律；v. 起訴、控告",
         "unit": 17,
-        "example": "Her specialty is taxation law.",
-        "exampleZh": "她的專業是稅法。"
+        "example": "We must all obey the law here.",
+        "exampleZh": "我們在這裡都必須遵守法律。"
     },
     {
         "id": 30929,
@@ -9296,8 +9296,8 @@ const jhWordsDB = [
         "uk": "/leɪ/",
         "zh": "vt. 放置、安放、鋪放、鋪設；n. 詩、民歌、位置、方向；adj. 外行的、非專業的、平信徒的、在俗的",
         "unit": 17,
-        "example": "She lay in bed, contemplating.",
-        "exampleZh": "她躺在床上，陷入沉思。"
+        "example": "Please lay the clean book on the desk.",
+        "exampleZh": "請把乾淨的書放在書桌上。"
     },
     {
         "id": 30931,
@@ -9346,8 +9346,8 @@ const jhWordsDB = [
         "uk": "/lɜːn/",
         "zh": "vt. 學習、學會、得知、獲悉",
         "unit": 17,
-        "example": "The kids were quick to learn.",
-        "exampleZh": "孩子們學得很快。"
+        "example": "Children learn new words at school.",
+        "exampleZh": "孩子們在學校學習新單字。"
     },
     {
         "id": 30936,
@@ -9356,8 +9356,8 @@ const jhWordsDB = [
         "uk": "/liːst/",
         "zh": "adj. 最少的、一點兒、最微不足道的、用於極小動植物的名稱；adv. 最低程度地、最少、至少；n. 最不重要的事物、最微小的事物、至少、起碼；pron. 最少量、起碼；det. 最少的、最小的",
         "unit": 17,
-        "example": "It'll cost at least 500 dollars.",
-        "exampleZh": "至少要花費500美元。"
+        "example": "We need at least two more hours.",
+        "exampleZh": "我們至少還需要兩個小時。"
     },
     {
         "id": 30937,
@@ -9376,8 +9376,8 @@ const jhWordsDB = [
         "uk": "/left/",
         "zh": "adj. 左邊的、左側的、剩餘的；adv. 向左、在左邊；n. 左邊、左側；v. 離開（leave的過去式與過去分詞）",
         "unit": 17,
-        "example": "He entered stage left.",
-        "exampleZh": "他進入舞台左側。"
+        "example": "Turn left at the next street.",
+        "exampleZh": "在下一條街向左轉。"
     },
     {
         "id": 30939,
@@ -9386,8 +9386,8 @@ const jhWordsDB = [
         "uk": "/leɡ/",
         "zh": "n. 腿、動物腿、腿肉、褲腿；comb. 有……腿的；v. 用腿蹬洞頂或洞壁使（船）透過運河隧洞",
         "unit": 17,
-        "example": "His leg was getting better.",
-        "exampleZh": "他的腿越來越好了。"
+        "example": "The poor dog hurt its leg.",
+        "exampleZh": "這隻可憐的狗傷了腿。"
     },
     {
         "id": 30940,
@@ -9396,8 +9396,8 @@ const jhWordsDB = [
         "uk": "/ˈliːɡ(ə)l/",
         "zh": "adj. 合法的、法律允許的、與法律有關的、法律的",
         "unit": 17,
-        "example": "Should euthanasia be made legal?",
-        "exampleZh": "安樂死應該合法化嗎？"
+        "example": "Is it legal to park your car here?",
+        "exampleZh": "在這裡停車是合法的嗎？"
     },
     {
         "id": 30941,
@@ -9406,8 +9406,8 @@ const jhWordsDB = [
         "uk": "/ˈlemən/",
         "zh": "n. 檸檬、檸檬汁、檸檬色、檸檬樹；adj. 檸檬色的",
         "unit": 17,
-        "example": "I plucked a lemon from the tree.",
-        "exampleZh": "我從樹上摘下一枚檸檬。"
+        "example": "The yellow lemon has a sour taste.",
+        "exampleZh": "這顆黃檸檬嚐起來味道很酸。"
     },
     {
         "id": 30942,
@@ -9426,8 +9426,8 @@ const jhWordsDB = [
         "uk": "/les/",
         "zh": "adv. 較少、更少地、程度較低地；det. 較少的、更少的；prep. 減去、扣除；pron. 更少、較小、更小（或更無關緊要）的事物；adj. 更少的、等級較低的、次要的",
         "unit": 17,
-        "example": "Her calls became less frequent.",
-        "exampleZh": "她的電話越來越少了。"
+        "example": "He has less free time this week.",
+        "exampleZh": "他這週的空閒時間比較少。"
     },
     {
         "id": 30944,
@@ -9436,8 +9436,8 @@ const jhWordsDB = [
         "uk": "/ˈles(ə)n/",
         "zh": "n. 課程、課、一節課、教訓",
         "unit": 17,
-        "example": "I've got a piano lesson later today.",
-        "exampleZh": "今天晚些時候我有鋼琴課。"
+        "example": "We have a music lesson today.",
+        "exampleZh": "我們今天有一堂音樂課。"
     },
     {
         "id": 30945,
@@ -9446,8 +9446,8 @@ const jhWordsDB = [
         "uk": "/let/",
         "zh": "vt. 讓、允許、准許、同意；n. 擦網球、觸網重發、出租、租借",
         "unit": 17,
-        "example": "Let your body relax.",
-        "exampleZh": "讓你的身體放鬆。"
+        "example": "Please let the children go out now.",
+        "exampleZh": "請讓孩子們現在出去。"
     },
     {
         "id": 30946,
@@ -9456,8 +9456,8 @@ const jhWordsDB = [
         "uk": "/ˈletə(r)/",
         "zh": "n. 信、信函、字母、校運動隊首字母標誌；vi. 用字母標註、把字母印刷（或縫製等）於、贏得學校運動隊的字母標誌",
         "unit": 17,
-        "example": "I returned the letter unopened.",
-        "exampleZh": "我把信原封不動地退回了。"
+        "example": "She wrote a letter to her friend.",
+        "exampleZh": "她寫了一封信給她的朋友。"
     },
     {
         "id": 30947,
@@ -9466,8 +9466,8 @@ const jhWordsDB = [
         "uk": "/ˈletɪs/",
         "zh": "n. 生菜、萵苣、錢、紙幣",
         "unit": 17,
-        "example": "Lettuce was grown by the ancient Romans.",
-        "exampleZh": "萵苣是由古羅馬人種植的。"
+        "example": "Add some fresh green lettuce to salad.",
+        "exampleZh": "在沙拉裡加一些新鮮的綠色萵苣。"
     },
     {
         "id": 30948,
@@ -9476,8 +9476,8 @@ const jhWordsDB = [
         "uk": "/ˈlev(ə)l/",
         "zh": "n. 水平、數量、程度、標準；adj. 平坦的、水平的、相同價值的；vt. 使平整、推倒、夷平、比分相同",
         "unit": 17,
-        "example": "He studied French to degree level.",
-        "exampleZh": "他學習了法語並達到了學位水平。"
+        "example": "The water level is very high today.",
+        "exampleZh": "今天的水位非常高。"
     },
     {
         "id": 30949,
@@ -9496,8 +9496,8 @@ const jhWordsDB = [
         "uk": "/lɪk/",
         "zh": "vt. 舔、舐、舔吃、成功地處理；n. 少量、舔、一點、一擊",
         "unit": 17,
-        "example": "Well, you didn't get a lick amiss, I reckon.",
-        "exampleZh": "嗯，我覺得你這一下捱得一點也不冤。"
+        "example": "The happy dog began to lick my hand.",
+        "exampleZh": "那隻快樂的狗開始舔我的手。"
     },
     {
         "id": 30951,
@@ -9526,8 +9526,8 @@ const jhWordsDB = [
         "uk": "/laɪf/",
         "zh": "n. 生命、人命、性命、生物；adj. 生命的、一生的、終身的",
         "unit": 17,
-        "example": "Are you enjoying married life?",
-        "exampleZh": "你的婚姻生活幸福嗎？"
+        "example": "He lives a happy, simple life.",
+        "exampleZh": "他過著快樂而簡單的生活。"
     },
     {
         "id": 30954,
@@ -9546,8 +9546,8 @@ const jhWordsDB = [
         "uk": "/laɪt/",
         "zh": "n. 光、光線、燈、電燈；adj. 輕的、淺色的、明亮的；v. 點燃、照亮",
         "unit": 17,
-        "example": "Suddenly a warning light blinked.",
-        "exampleZh": "突然，警告燈閃爍。"
+        "example": "Please turn off the room light.",
+        "exampleZh": "請把房間的燈關掉。"
     },
     {
         "id": 30956,
@@ -9566,8 +9566,8 @@ const jhWordsDB = [
         "uk": "/laɪk/",
         "zh": "vt. 喜歡、喜愛、想要；prep. 像、如同、像……一樣；conj. 像……一樣、如同；n. 愛好、相似的人或物",
         "unit": 17,
-        "example": "It tastes like chocolate.",
-        "exampleZh": "嘗起來像巧克力。"
+        "example": "I like to read books at home.",
+        "exampleZh": "我喜歡在家裡看書。"
     },
     {
         "id": 30958,
@@ -9606,8 +9606,8 @@ const jhWordsDB = [
         "uk": "/laɪn/",
         "zh": "n. 線、線條、場界、場地線；vt. 沿……形成行、給……安襯裡、鋪、墊",
         "unit": 17,
-        "example": "Your bill includes line rental.",
-        "exampleZh": "您的帳單包括線路租金。"
+        "example": "Please wait behind this yellow line.",
+        "exampleZh": "請在這條黃線後面等候。"
     },
     {
         "id": 30962,
@@ -9616,8 +9616,8 @@ const jhWordsDB = [
         "uk": "/lɪŋk/",
         "zh": "vt. 聯繫、連線、與……有關聯、挽住；n. 連結、聯絡、關係、環",
         "unit": 17,
-        "example": "Click the link and see what happens.",
-        "exampleZh": "點選那個連結，看看會發生什麼。"
+        "example": "Click on this link to see photos.",
+        "exampleZh": "點擊這個連結來看照片。"
     },
     {
         "id": 30963,
@@ -9626,8 +9626,8 @@ const jhWordsDB = [
         "uk": "/ˈlaɪən/",
         "zh": "n. 獅子、名人、社交場合的名流、勇猛的人",
         "unit": 17,
-        "example": "The lion was stalking a zebra.",
-        "exampleZh": "獅子正在跟蹤斑馬。"
+        "example": "The lion is a strong wild animal.",
+        "exampleZh": "獅子是一種強壯的野生動物。"
     },
     {
         "id": 30964,
@@ -9636,8 +9636,8 @@ const jhWordsDB = [
         "uk": "/lɪp/",
         "zh": "n. 嘴唇、邊緣、容器邊緣、開口；v. 拍打、擊球至（洞穴）的邊緣、用嘴唇觸及、吻；adj. 口頭上的",
         "unit": 17,
-        "example": "She bit her lip nervously.",
-        "exampleZh": "她緊張地咬著嘴唇。"
+        "example": "The boy hurt his upper lip.",
+        "exampleZh": "那個男孩弄傷了上唇。"
     },
     {
         "id": 30965,
@@ -9646,8 +9646,8 @@ const jhWordsDB = [
         "uk": "/ˈlɪkwɪd/",
         "zh": "n. 液體、液態物、流音；adj. 液態的、液化的、流動的、易變為現金的",
         "unit": 17,
-        "example": "The liquid is then diluted.",
-        "exampleZh": "然後液體就變稀了。"
+        "example": "Water is a clear and clean liquid.",
+        "exampleZh": "水是一種透明又乾淨的液體。"
     },
     {
         "id": 30966,
@@ -9656,8 +9656,8 @@ const jhWordsDB = [
         "uk": "/lɪst/",
         "zh": "n. 清單、列表、傾側、圍欄；vt. 列出、列清單、擬訂清單、把……列入名單",
         "unit": 17,
-        "example": "Princess Anne topped the guest list.",
-        "exampleZh": "安妮公主名列賓客名單之首。"
+        "example": "Write down the names on this list.",
+        "exampleZh": "把名字寫在這份清單上。"
     },
     {
         "id": 30967,
@@ -9666,8 +9666,8 @@ const jhWordsDB = [
         "uk": "/ˈlɪs(ə)n/",
         "zh": "vi. 聽、傾聽、聽從、聽信；n. 聽、傾聽",
         "unit": 17,
-        "example": "Why couldn't he listen to her?",
-        "exampleZh": "為什麼他就不能聽她的？"
+        "example": "Please listen carefully to your teacher.",
+        "exampleZh": "請仔細聽你的老師說話。"
     },
     {
         "id": 30968,
@@ -9676,8 +9676,8 @@ const jhWordsDB = [
         "uk": "/ˈliːtə(r)/",
         "zh": "n. 升、公升",
         "unit": 17,
-        "example": "This plastic container can hold up to one liter of orange juice.",
-        "exampleZh": "這個塑膠容器最多可以裝下一公升的柳橙汁。"
+        "example": "Drink one liter of water daily.",
+        "exampleZh": "每天喝一公升的水。"
     },
     {
         "id": 30969,
@@ -9686,8 +9686,8 @@ const jhWordsDB = [
         "uk": "/ˈlɪt(ə)l/",
         "zh": "adj. 小的、比較小的、用於強調對某人或某物的意見、年幼的；det. 一點兒、少得幾乎沒有、少量的、一些；adv. 極少、輕微、幾乎不；pron. 少許",
         "unit": 17,
-        "example": "I'm feeling a little tipsy.",
-        "exampleZh": "我覺得有點醉了。"
+        "example": "She has a little white dog.",
+        "exampleZh": "她有一隻白色的小狗。"
     },
     {
         "id": 30970,
@@ -9696,8 +9696,8 @@ const jhWordsDB = [
         "uk": "/lɪv; laɪv/",
         "zh": "v. 居住、生存、活著、生活在；adj. 活的、有生命的、含乳酸菌的、現場直播的；adv. 現場直播地、實況轉播地",
         "unit": 17,
-        "example": "They live in the suburbs.",
-        "exampleZh": "他們住在郊區。"
+        "example": "My grandparents live in a small town.",
+        "exampleZh": "我的祖父母住在一個小鎮上。"
     },
     {
         "id": 30971,
@@ -9706,8 +9706,8 @@ const jhWordsDB = [
         "uk": "/ləʊf/",
         "zh": "n. 一條、一塊、糕；vi. 遊蕩、閒逛",
         "unit": 17,
-        "example": "He was sawing energetically at a loaf of bread.",
-        "exampleZh": "他正用力切著一條麵包。"
+        "example": "He bought a fresh loaf of bread.",
+        "exampleZh": "他買了一整條新鮮的麵包。"
     },
     {
         "id": 30972,
@@ -9716,8 +9716,8 @@ const jhWordsDB = [
         "uk": "/ˈləʊk(ə)l/",
         "zh": "adj. 本地的、當地的、地方的、區域性的；n. 當地人、本地人、住處附近的酒吧、地方分會",
         "unit": 17,
-        "example": "He dabbles in local politics.",
-        "exampleZh": "他開始涉足地方政壇。"
+        "example": "We buy food at the local market.",
+        "exampleZh": "我們在當地的市場買食物。"
     },
     {
         "id": 30973,
@@ -9736,8 +9736,8 @@ const jhWordsDB = [
         "uk": "/ˈlɒkə(r)/",
         "zh": "n. 寄物櫃、鎖櫃、冷藏間、鎖具",
         "unit": 17,
-        "example": "In the locker room, Amanda changed quickly.",
-        "exampleZh": "在更衣室裡，阿曼達快速地換好了衣服。"
+        "example": "Put your coat in the locker.",
+        "exampleZh": "把你的外套放進置物櫃裡。"
     },
     {
         "id": 30975,
@@ -9756,8 +9756,8 @@ const jhWordsDB = [
         "uk": "/lɒŋ/",
         "zh": "adj. 長的、長久的、長期的；adv. 長久地、長期地、很久；vi. 渴望、極想",
         "unit": 17,
-        "example": "The bureaucrats dallied too long.",
-        "exampleZh": "官僚們耽擱太久了。"
+        "example": "We walked down a long dirt road.",
+        "exampleZh": "我們走在一條長長的泥土路上。"
     },
     {
         "id": 30977,
@@ -9766,8 +9766,8 @@ const jhWordsDB = [
         "uk": "/lʊk/",
         "zh": "v. 看、尋找、與……外表相似、看似；n. 看、尋找、搜尋、表情",
         "unit": 17,
-        "example": "Look at that beautiful rainbow in the sky.",
-        "exampleZh": "看天上那道美麗的彩虹。"
+        "example": "Look at the bright moon up there.",
+        "exampleZh": "看著上面明亮的月亮。"
     },
     {
         "id": 30978,
@@ -9786,8 +9786,8 @@ const jhWordsDB = [
         "uk": "/ˈluːzə(r)/",
         "zh": "n. 失敗者、輸家",
         "unit": 17,
-        "example": "If you talk like a loser, you'll end up losing.",
-        "exampleZh": "如果你像個失敗者一樣說話，你最終將失敗。"
+        "example": "He was polite to the game loser.",
+        "exampleZh": "他對比賽的輸家很有禮貌。"
     },
     {
         "id": 30980,
@@ -9796,8 +9796,8 @@ const jhWordsDB = [
         "uk": "/lɒt/",
         "zh": "n. 許多、大量、一群、籤；adv. 非常、很",
         "unit": 17,
-        "example": "She does a lot of quilting.",
-        "exampleZh": "她做了很多絎縫工作。"
+        "example": "We have a lot of work today.",
+        "exampleZh": "我們今天有很多工作要做。"
     },
     {
         "id": 30981,
@@ -9816,8 +9816,8 @@ const jhWordsDB = [
         "uk": "/lʌv/",
         "zh": "v. 愛、喜愛、熱愛；n. 愛、愛情、喜愛、關愛",
         "unit": 17,
-        "example": "I love my country as you love yours.",
-        "exampleZh": "我愛我的國家，就像你愛你的國家一樣。"
+        "example": "Young boys love to play in the park.",
+        "exampleZh": "小男孩們喜歡在公園裡玩耍。"
     },
     {
         "id": 30983,
@@ -9836,8 +9836,8 @@ const jhWordsDB = [
         "uk": "/ˈlʌvə(r)/",
         "zh": "n. 情人、愛好者",
         "unit": 17,
-        "example": "I'm a lover of the outdoors.",
-        "exampleZh": "我是個戶外活動愛好者。"
+        "example": "My brother is a great music lover.",
+        "exampleZh": "我哥哥是個超級音樂愛好者。"
     },
     {
         "id": 30985,
@@ -9846,8 +9846,8 @@ const jhWordsDB = [
         "uk": "/ləʊ/",
         "zh": "adj. 低的、矮的、在底部的、領口開得低的；adv. 在（或向）低位置、低於通常（或期望）的水平；n. 低點、低谷、低氣壓區；v. 哞哞叫",
         "unit": 17,
-        "example": "The humidity is relatively low.",
-        "exampleZh": "濕度相對較低。"
+        "example": "The sun is low in the sky.",
+        "exampleZh": "太陽在天空中很低的位置。"
     },
     {
         "id": 30986,
@@ -9856,8 +9856,8 @@ const jhWordsDB = [
         "uk": "/lʌk/",
         "zh": "n. 運氣、幸運、好運、機遇；v. 湊巧碰上、靠運氣成功",
         "unit": 17,
-        "example": "Our luck couldn't hold forever.",
-        "exampleZh": "我們的好運不可能永遠保持不變。"
+        "example": "I wish you the best of luck.",
+        "exampleZh": "我祝你好運連連。"
     },
     {
         "id": 30987,
@@ -9876,8 +9876,8 @@ const jhWordsDB = [
         "uk": "/lʌntʃ/",
         "zh": "n. 午餐、午飯；vi. 用午餐、請（人）吃午餐",
         "unit": 17,
-        "example": "We'll discuss it over lunch.",
-        "exampleZh": "我們將在午餐時討論這個問題。"
+        "example": "We eat our lunch at noon daily.",
+        "exampleZh": "我們每天中午吃午餐。"
     },
     {
         "id": 30989,
@@ -9886,8 +9886,8 @@ const jhWordsDB = [
         "uk": "/məˈʃiːn/",
         "zh": "n. 機器、機械、計算機、電腦；vt. 用機器製造、機器縫製、用縫紉機縫",
         "unit": 17,
-        "example": "This machine only accepts coins.",
-        "exampleZh": "這台機器只接受硬幣。"
+        "example": "This big machine makes paper boxes.",
+        "exampleZh": "這台大機器製作紙箱。"
     },
     {
         "id": 30990,
@@ -9896,8 +9896,8 @@ const jhWordsDB = [
         "uk": "/mæd/",
         "zh": "adj. 生氣的、氣憤的、極愚蠢的、很不明智的",
         "unit": 17,
-        "example": "He's mad keen on planes.",
-        "exampleZh": "他對飛機非常著迷。"
+        "example": "Mom was very mad at me yesterday.",
+        "exampleZh": "媽媽昨天對我非常生氣。"
     },
     {
         "id": 30991,
@@ -9906,8 +9906,8 @@ const jhWordsDB = [
         "uk": "/ˌmæɡəˈziːn/",
         "zh": "n. 雜誌、期刊、專題節目、彈匣",
         "unit": 17,
-        "example": "The magazine is still produced in-house.",
-        "exampleZh": "該雜誌仍然在機構內部出版。"
+        "example": "She reads a news magazine every week.",
+        "exampleZh": "她每週讀一本新聞雜誌。"
     },
     {
         "id": 30992,
@@ -9916,8 +9916,8 @@ const jhWordsDB = [
         "uk": "/ˈmædʒɪk/",
         "zh": "n. 魔法、法術、魔術、戲法；adj. 魔術的、戲法的、魔法的、魔力的；v. 用魔法變出",
         "unit": 17,
-        "example": "He suddenly appeared as if by magic.",
-        "exampleZh": "他突然神奇地出現了。"
+        "example": "The boy was amazed by the magic.",
+        "exampleZh": "那個男孩為這個魔術感到驚奇。"
     },
     {
         "id": 30993,
@@ -9926,8 +9926,8 @@ const jhWordsDB = [
         "uk": "/məˈdʒɪʃn/",
         "zh": "n. 魔術師、變戲法的人、巫師、術士",
         "unit": 17,
-        "example": "The magician vanished in a puff of smoke.",
-        "exampleZh": "魔術師在一股煙霧中突然不見了。"
+        "example": "The magician did a cool card trick.",
+        "exampleZh": "魔術師表演了一個很酷的紙牌魔術。"
     },
     {
         "id": 30994,
@@ -9946,8 +9946,8 @@ const jhWordsDB = [
         "uk": "/meɪn/",
         "zh": "adj. 主要的、最大的；n. 總管道、主線路、供應系統、電源插座",
         "unit": 17,
-        "example": "What's the main disadvantage ?",
-        "exampleZh": "主要的不利條件是什麼？"
+        "example": "This is the main street of town.",
+        "exampleZh": "這是小鎮的主要街道。"
     },
     {
         "id": 30996,
@@ -9956,8 +9956,8 @@ const jhWordsDB = [
         "uk": "/meɪnˈteɪn/",
         "zh": "vt. 維持、保持、維修、保養",
         "unit": 17,
-        "example": "It's hard to maintain competitive pricing.",
-        "exampleZh": "要保持有競爭力的價格是很困難的。"
+        "example": "You should maintain a clean room daily.",
+        "exampleZh": "你應該每天維持房間的整潔。"
     },
     {
         "id": 30997,
@@ -9966,8 +9966,8 @@ const jhWordsDB = [
         "uk": "/ˈmeɪdʒə(r)/",
         "zh": "n. 主修科目、專業、陸軍少校、空軍少校；vi. 主修、專攻；adj. 重大的、主要的、嚴重的、大調的",
         "unit": 17,
-        "example": "Rotterdam is a major port.",
-        "exampleZh": "鹿特丹是一個重要的港口城市。"
+        "example": "Water is a major city need.",
+        "exampleZh": "水是這座城市的主要需求。"
     },
     {
         "id": 30998,
@@ -9976,8 +9976,8 @@ const jhWordsDB = [
         "uk": "/meɪk/",
         "zh": "vt. 做、製造、制定、擬定；n. 品牌、型號、結構、構造",
         "unit": 17,
-        "example": "Four quarters make a whole.",
-        "exampleZh": "四分之四是一個整體。"
+        "example": "Mom will make a sweet cake today.",
+        "exampleZh": "媽媽今天會做一個甜甜的蛋糕。"
     },
     {
         "id": 30999,
@@ -9986,8 +9986,8 @@ const jhWordsDB = [
         "uk": "/meɪl/",
         "zh": "adj. 男性的、公的、雄性的、只有雄蕊的；n. 男子、男孩、雄性動物、雄性植物",
         "unit": 17,
-        "example": "I'm not a male chauvinist.",
-        "exampleZh": "我不是大男子主義者。"
+        "example": "The male bird can sing very well.",
+        "exampleZh": "雄鳥可以唱得非常好聽。"
     },
     {
         "id": 31000,
@@ -10006,8 +10006,8 @@ const jhWordsDB = [
         "uk": "/mæn/",
         "zh": "n. 男人、成年男子、人類、人；vt. 操作、配備人員",
         "unit": 18,
-        "example": "He's a highly intelligent man.",
-        "exampleZh": "他是一個非常聰明的人。"
+        "example": "That tall man is my old uncle.",
+        "exampleZh": "那位高個子男人是我的老叔叔。"
     },
     {
         "id": 31002,
@@ -10026,8 +10026,8 @@ const jhWordsDB = [
         "uk": "/ˈmæŋɡəʊ/",
         "zh": "n. 芒果、芒果樹、芒果蜂鳥",
         "unit": 18,
-        "example": "Mango and pineapple are yellow.",
-        "exampleZh": "芒果和菠蘿是黃色的。"
+        "example": "This sweet mango is yellow and soft.",
+        "exampleZh": "這顆甜芒果又黃又軟。"
     },
     {
         "id": 31004,
@@ -10036,8 +10036,8 @@ const jhWordsDB = [
         "uk": "/ˈmænə(r)/",
         "zh": "n. 態度、舉止、禮貌、方式",
         "unit": 18,
-        "example": "She responded in like manner.",
-        "exampleZh": "她以類似的方式作出了反應。"
+        "example": "He always speaks in a polite manner.",
+        "exampleZh": "他講話總是非常有禮貌。"
     },
     {
         "id": 31005,
@@ -10046,8 +10046,8 @@ const jhWordsDB = [
         "uk": "/ˈmeni/",
         "zh": "det. 許多、大量；pron. 許多、許多人；adj. 許多的；n. 大多數人；adv. 多",
         "unit": 18,
-        "example": "Many pesticides are highly toxic.",
-        "exampleZh": "許多農藥具有劇毒。"
+        "example": "There are many books on the desk.",
+        "exampleZh": "書桌上有許多書。"
     },
     {
         "id": 31006,
@@ -10066,8 +10066,8 @@ const jhWordsDB = [
         "uk": "/mɑːtʃ/",
         "zh": "v. 齊步走、行軍、快步走、強迫（某人）一起走；n. 三月、示威遊行、行進、行軍",
         "unit": 18,
-        "example": "The trial reopened on 6 March.",
-        "exampleZh": "審判在3月6日再次進行。"
+        "example": "School begins in early March here.",
+        "exampleZh": "這裡的學校在三月初開學。"
     },
     {
         "id": 31008,
@@ -10076,8 +10076,8 @@ const jhWordsDB = [
         "uk": "/mɑːk/",
         "zh": "n. 痕跡、汙點、標識、記號；vt. 做記號、做標記、留下痕跡、弄汙",
         "unit": 18,
-        "example": "He made a mark on the wall with a pencil.",
-        "exampleZh": "他用鉛筆在牆上做了一個記號。"
+        "example": "Make a small pencil mark right here.",
+        "exampleZh": "就在這裡用鉛筆做個小記號。"
     },
     {
         "id": 31009,
@@ -10086,8 +10086,8 @@ const jhWordsDB = [
         "uk": "/ˈmɑːkɪt/",
         "zh": "n. 集市、市場、交易、交易量；vt. 推銷、促銷、出售、做買賣；adj. 市場的、由市場決定的",
         "unit": 18,
-        "example": "The market collapsed last October.",
-        "exampleZh": "去年十月市場崩盤了。"
+        "example": "She buys fresh fruit at the market.",
+        "exampleZh": "她在市場購買新鮮水果。"
     },
     {
         "id": 31010,
@@ -10106,8 +10106,8 @@ const jhWordsDB = [
         "uk": "/ˈmærid/",
         "zh": "adj. 已婚的、結婚的、婚姻的、夫婦的；n. 已婚者；v. 結婚、嫁、娶、為……主持婚禮",
         "unit": 18,
-        "example": "They're not married, actually.",
-        "exampleZh": "他們實際上沒有結婚。"
+        "example": "They got married five years ago.",
+        "exampleZh": "他們五年前結婚了。"
     },
     {
         "id": 31012,
@@ -10126,8 +10126,8 @@ const jhWordsDB = [
         "uk": "/ˈmɑːvələs/",
         "zh": "adj. 非凡的、了不起的、極好的、令人驚異的",
         "unit": 18,
-        "example": "What a wonderful, beautiful, marvelous country!",
-        "exampleZh": "多麼奇妙、美麗、神奇的國家啊！"
+        "example": "We had a marvelous time today.",
+        "exampleZh": "我們今天度過了極好的時光。"
     },
     {
         "id": 31014,
@@ -10136,8 +10136,8 @@ const jhWordsDB = [
         "uk": "/mɑːsk/",
         "zh": "n. 面罩、口罩、防毒面具、呼吸面罩；vt. 掩飾、偽裝、隱瞞、蓋住",
         "unit": 18,
-        "example": "The gunman, whose mask had slipped, fled.",
-        "exampleZh": "面具滑落的持槍歹徒逃走了。"
+        "example": "You should wear a mask on the bus.",
+        "exampleZh": "你在公車上應該戴口罩。"
     },
     {
         "id": 31015,
@@ -10146,8 +10146,8 @@ const jhWordsDB = [
         "uk": "/mæs/",
         "zh": "n. 塊、團、大量、許多；adj. 民眾的、大量的；vt. 聚集、集結",
         "unit": 18,
-        "example": "The mass media tends to personalize politics.",
-        "exampleZh": "大眾傳媒往往把政治個人化。"
+        "example": "A huge mass of snow fell down.",
+        "exampleZh": "大塊積雪掉了下來。"
     },
     {
         "id": 31016,
@@ -10156,8 +10156,8 @@ const jhWordsDB = [
         "uk": "/ˈmɑːstə(r)/",
         "zh": "n. 主人、大師、碩士、僱主；vt. 精通、掌握、控制；adj. 主要的、精通的",
         "unit": 18,
-        "example": "Students are expected to master a second language.",
-        "exampleZh": "學生應該掌握第二語言。"
+        "example": "The dog ran to its master fast.",
+        "exampleZh": "小狗快速地跑向它的主人。"
     },
     {
         "id": 31017,
@@ -10166,8 +10166,8 @@ const jhWordsDB = [
         "uk": "/mæt/",
         "zh": "n. 墊子、地墊、團、簇",
         "unit": 18,
-        "example": "Wipe your feet on the mat before you come in, please.",
-        "exampleZh": "請在墊子上擦擦腳再進來。"
+        "example": "Please wipe your shoes on the mat.",
+        "exampleZh": "請在門墊上擦擦鞋子。"
     },
     {
         "id": 31018,
@@ -10176,8 +10176,8 @@ const jhWordsDB = [
         "uk": "/mætʃ/",
         "zh": "n. 比賽、競賽、火柴、敵手；vt. 比得上、敵得過、使成對、使相配",
         "unit": 18,
-        "example": "He was watching a football match.",
-        "exampleZh": "他正在看一場英式足球比賽。"
+        "example": "We won the big tennis match today.",
+        "exampleZh": "我們今天贏得了那場重要的網球比賽。"
     },
     {
         "id": 31019,
@@ -10186,8 +10186,8 @@ const jhWordsDB = [
         "uk": "/meɪt/",
         "zh": "n. 朋友、夥伴、同伴、同事；vt. 交配、連線、配備、將死",
         "unit": 18,
-        "example": "He has found his ideal mate.",
-        "exampleZh": "他已經找到了理想的配偶。"
+        "example": "He had lunch with his good mate.",
+        "exampleZh": "他和他的好夥伴一起吃午餐。"
     },
     {
         "id": 31020,
@@ -10206,8 +10206,8 @@ const jhWordsDB = [
         "uk": "/ˈmætə(r)/",
         "zh": "n. 事情、問題、事態、情況；vt. 要緊、有關係、化膿、流膿",
         "unit": 18,
-        "example": "This matter is their concern.",
-        "exampleZh": "這件事是他們關心的。"
+        "example": "What is the matter with your car?",
+        "exampleZh": "你的車子出了什麼事？"
     },
     {
         "id": 31022,
@@ -10216,8 +10216,8 @@ const jhWordsDB = [
         "uk": "/ˈmæksɪməm/",
         "zh": "adj. 最大限度的、極大的、極多的；n. 最大量、最大限度；adv. 最多、充其量",
         "unit": 18,
-        "example": "Both face maximum forfeitures of about $1.2 million.",
-        "exampleZh": "雙方都面臨最高可達一百二十萬美元的財產沒收。"
+        "example": "The maximum speed is fifty miles.",
+        "exampleZh": "最高速度限制是五十英里。"
     },
     {
         "id": 31023,
@@ -10236,8 +10236,8 @@ const jhWordsDB = [
         "uk": "/ˈmeɪbi/",
         "zh": "adv. 也許、大概、或許；n. 可能性、不確定性",
         "unit": 18,
-        "example": "Maybe you should socialize more.",
-        "exampleZh": "也許你應該多社交。"
+        "example": "Maybe we can go to the beach.",
+        "exampleZh": "也許我們可以去海灘。"
     },
     {
         "id": 31026,
@@ -10246,8 +10246,8 @@ const jhWordsDB = [
         "uk": "/miːl/",
         "zh": "n. 餐、一餐、進餐、一餐所吃的食物；v. 進餐",
         "unit": 18,
-        "example": "The meal was amazingly cheap.",
-        "exampleZh": "這餐飯便宜得出奇。"
+        "example": "Dinner is the main meal of the day.",
+        "exampleZh": "晚餐是一天當中的主餐。"
     },
     {
         "id": 31027,
@@ -10256,8 +10256,8 @@ const jhWordsDB = [
         "uk": "/miːn/",
         "zh": "vt. 意思是、意味著、打算；adj. 吝嗇的、小氣的、刻薄的；n. 平均數、中庸",
         "unit": 18,
-        "example": "What does this sentence mean?",
-        "exampleZh": "這句話是什麼意思呢？"
+        "example": "What does this new word mean?",
+        "exampleZh": "這個新單字是什麼意思？"
     },
     {
         "id": 31028,
@@ -10276,8 +10276,8 @@ const jhWordsDB = [
         "uk": "/ˈmeʒə(r)/",
         "zh": "n. 措施、辦法、適量、適度；vt. 測量、量度為、估量、判定",
         "unit": 18,
-        "example": "He irritated me beyond measure.",
-        "exampleZh": "他使我非常生氣。"
+        "example": "Use a ruler to measure length.",
+        "exampleZh": "用尺來測量長度。"
     },
     {
         "id": 31030,
@@ -10286,8 +10286,8 @@ const jhWordsDB = [
         "uk": "/miːt/",
         "zh": "n. 肉類、食用肉、重要的部分、有趣的部分",
         "unit": 18,
-        "example": "This meat is extremely tender.",
-        "exampleZh": "這肉特別嫩。"
+        "example": "He does not eat any red meat.",
+        "exampleZh": "他不吃任何紅肉。"
     },
     {
         "id": 31031,
@@ -10296,8 +10296,8 @@ const jhWordsDB = [
         "uk": "/məˈkænɪk; mɪˈkænɪk/",
         "zh": "n. 技工、機械工、機修工、勞工；adj. 手工的",
         "unit": 18,
-        "example": "The mechanic located the fault immediately.",
-        "exampleZh": "機修工立即找到了出故障的地方。"
+        "example": "The mechanic can fix my car.",
+        "exampleZh": "那位技工能修好我的車。"
     },
     {
         "id": 31032,
@@ -10316,8 +10316,8 @@ const jhWordsDB = [
         "uk": "/ˈmedsn; ˈmedɪsn/",
         "zh": "n. 藥、藥物、藥劑、醫療；v. 用藥物治療、給……用藥",
         "unit": 18,
-        "example": "Laughter is the best medicine.",
-        "exampleZh": "歡笑是一副良藥。"
+        "example": "Take your medicine on time every day.",
+        "exampleZh": "每天準時吃藥。"
     },
     {
         "id": 31034,
@@ -10336,8 +10336,8 @@ const jhWordsDB = [
         "uk": "/miːt/",
         "zh": "v. 結識、被引見、會面；n. 競賽大會、運動會、賽事、約會；adj. 合適的、恰當的",
         "unit": 18,
-        "example": "Let's meet on neutral territory.",
-        "exampleZh": "讓我們在中立地區見面。"
+        "example": "Let us meet at the school gate.",
+        "exampleZh": "我們在校門口碰面吧。"
     },
     {
         "id": 31036,
@@ -10356,8 +10356,8 @@ const jhWordsDB = [
         "uk": "/ˈmembə(r)/",
         "zh": "n. 會員、成員、一分子、議員",
         "unit": 18,
-        "example": "He's a member of several London clubs.",
-        "exampleZh": "他是倫敦幾個男性俱樂部的會員。"
+        "example": "He is a member of the swim team.",
+        "exampleZh": "他是游泳隊的一名成員。"
     },
     {
         "id": 31038,
@@ -10366,8 +10366,8 @@ const jhWordsDB = [
         "uk": "/ˈmeməri/",
         "zh": "n. 記憶、記憶力、記性、回憶",
         "unit": 18,
-        "example": "Memory is selective and fallible.",
-        "exampleZh": "記憶有選擇性而且會出錯。"
+        "example": "My father has a very good memory.",
+        "exampleZh": "我父親的記性非常好。"
     },
     {
         "id": 31039,
@@ -10376,8 +10376,8 @@ const jhWordsDB = [
         "uk": "/ˈmenjuː/",
         "zh": "n. 菜單、選單、飯菜、菜餚",
         "unit": 18,
-        "example": "The menu included roast grouse.",
-        "exampleZh": "選單裡有烤松雞肉。"
+        "example": "May I look at the lunch menu?",
+        "exampleZh": "我可以看一下午餐菜單嗎？"
     },
     {
         "id": 31040,
@@ -10386,8 +10386,8 @@ const jhWordsDB = [
         "uk": "/ˈmesɪdʒ/",
         "zh": "n. 信息、口信、訊息、要旨；vt. 傳送、通報",
         "unit": 18,
-        "example": "Message understood. Over and out.",
-        "exampleZh": "訊息聽懂了。通話完畢。"
+        "example": "Please leave a short message for me.",
+        "exampleZh": "請幫我留一則簡短的訊息。"
     },
     {
         "id": 31041,
@@ -10406,8 +10406,8 @@ const jhWordsDB = [
         "uk": "/ˈmiːtə(r)/",
         "zh": "n. 公尺、計量器、儀、表；vt. 用儀表計量、透過計量器計",
         "unit": 18,
-        "example": "A man came to read the gas meter.",
-        "exampleZh": "有位男子來查過煤氣表。"
+        "example": "The tall tree is ten meters high.",
+        "exampleZh": "那棵大樹有十公尺高。"
     },
     {
         "id": 31043,
@@ -10426,8 +10426,8 @@ const jhWordsDB = [
         "uk": "/ˈmaɪkrəweɪv/",
         "zh": "n. 微波爐、微波；vt. 用微波爐烹調",
         "unit": 18,
-        "example": "A microwave is a good investment.",
-        "exampleZh": "微波爐值得買。"
+        "example": "Heat your lunch in the microwave.",
+        "exampleZh": "在微波爐裡加熱你的午餐。"
     },
     {
         "id": 31045,
@@ -10456,8 +10456,8 @@ const jhWordsDB = [
         "uk": "/maɪl/",
         "zh": "n. 英里、一英里賽跑、很長的距離、很多",
         "unit": 18,
-        "example": "After a mile, the slope steepened.",
-        "exampleZh": "一英里後，斜坡變得陡峭。"
+        "example": "We walked one mile down the road.",
+        "exampleZh": "我們沿著這條路走了一英里。"
     },
     {
         "id": 31048,
@@ -10476,8 +10476,8 @@ const jhWordsDB = [
         "uk": "/ˈmɪljən/",
         "zh": "num. 一百萬、一百萬個；n. 百萬、百萬個、許多、無數；adj. 許多的、無數的",
         "unit": 18,
-        "example": "Unfilled positions number several million countrywide.",
-        "exampleZh": "全國的空缺職位數達到數百萬。"
+        "example": "More than a million people live here.",
+        "exampleZh": "有一百多萬人住在這座城市。"
     },
     {
         "id": 31050,
@@ -10486,8 +10486,8 @@ const jhWordsDB = [
         "uk": "/maɪnd/",
         "zh": "n. 心智、頭腦、心思、想法；v. 介意、注意、當心",
         "unit": 18,
-        "example": "She had a brilliant mind.",
-        "exampleZh": "她有一個聰穎的頭腦。"
+        "example": "Keep this good rule in your mind.",
+        "exampleZh": "把這條好規則記在你的心中。"
     },
     {
         "id": 31051,
@@ -10496,8 +10496,8 @@ const jhWordsDB = [
         "uk": "/maɪn/",
         "zh": "pron. 我的、我的家；n. 礦、礦井、地雷、水雷；vt. 採、佈雷、用雷炸燬、尋找（某事物中）蘊含的價值",
         "unit": 18,
-        "example": "He's a distant cousin of mine.",
-        "exampleZh": "他是我遠房的一個表親。"
+        "example": "They dig for gold in the mine.",
+        "exampleZh": "他們在礦坑裡採金礦。"
     },
     {
         "id": 31052,
@@ -10506,8 +10506,8 @@ const jhWordsDB = [
         "uk": "/ˈmaɪnə(r)/",
         "zh": "adj. 較小的、次要的、輕微的；n. 未成年人、輔修科目；vi. 輔修",
         "unit": 18,
-        "example": "Relatively minor modifications were required.",
-        "exampleZh": "需要相對較小的修改。"
+        "example": "It was only a minor cut.",
+        "exampleZh": "那只是一個輕微的小傷口。"
     },
     {
         "id": 31053,
@@ -10526,8 +10526,8 @@ const jhWordsDB = [
         "uk": "/ˈmɪnɪt/",
         "zh": "n. 分、分鐘、片刻、一會兒；adj. 極小的、微小的、詳細的、細緻入微的；vt. 將（某事）寫進會議記錄、傳送備忘錄",
         "unit": 18,
-        "example": "They arrived barely a minute later.",
-        "exampleZh": "不到一分鐘他們就到了。"
+        "example": "Please wait for just one minute.",
+        "exampleZh": "請等候短短一分鐘。"
     },
     {
         "id": 31055,
@@ -10536,8 +10536,8 @@ const jhWordsDB = [
         "uk": "/ˈmɪrə(r)/",
         "zh": "n. 鏡子、寫照、真實反映、映象網點；vt. 反射、映照、反映、與……十分相似",
         "unit": 18,
-        "example": "Steam had clouded the mirror.",
-        "exampleZh": "水蒸氣使鏡子變得模糊不清。"
+        "example": "She looked at her face in the mirror.",
+        "exampleZh": "她在鏡子裡看著自己的臉龐。"
     },
     {
         "id": 31057,
@@ -10556,8 +10556,8 @@ const jhWordsDB = [
         "uk": "/mɪˈsteɪk/",
         "zh": "n. 錯誤、過失、口誤、筆誤；vt. 誤解、誤會、錯誤判斷、把……誤認為",
         "unit": 18,
-        "example": "We've made a dreadful mistake.",
-        "exampleZh": "我們犯了一個可怕的錯誤。"
+        "example": "I made a mistake on my test.",
+        "exampleZh": "我在考試中犯了一個錯誤。"
     },
     {
         "id": 31059,
@@ -10566,8 +10566,8 @@ const jhWordsDB = [
         "uk": "/mɪks/",
         "zh": "vt. 混和、攪和、混合、調和；n. 混合體、混合原料、混合配料",
         "unit": 18,
-        "example": "You can't mix business with pleasure.",
-        "exampleZh": "你不能把工作和娛樂混在一起。"
+        "example": "Mix the eggs and milk in a bowl.",
+        "exampleZh": "把雞蛋和牛奶在碗裡攪拌均勻。"
     },
     {
         "id": 31060,
@@ -10576,8 +10576,8 @@ const jhWordsDB = [
         "uk": "/ˈmɒd(ə)l/",
         "zh": "n. 模特兒、模型、模式、型號；v. 模型、當模特兒、模特兒展示、做……的模型；adj. 模範的、榜樣的、模型的",
         "unit": 18,
-        "example": "I made a full-size cardboard model.",
-        "exampleZh": "我做了一個和原物一樣大小的硬紙板模型。"
+        "example": "The boy built a small model plane.",
+        "exampleZh": "那個男孩做了一架小飛機模型。"
     },
     {
         "id": 31061,
@@ -10586,8 +10586,8 @@ const jhWordsDB = [
         "uk": "/ˈmɒd(ə)n/",
         "zh": "adj. 現代的、近代的、當代風格的、現代派的；n. 現代人、現代派藝術家、主張現代風格的人、宣揚現代價值觀的人",
         "unit": 18,
-        "example": "She is very modern in outlook.",
-        "exampleZh": "她的觀點非常現代。"
+        "example": "They live in a modern apartment building.",
+        "exampleZh": "他們住在現代化的公寓大樓裡。"
     },
     {
         "id": 31062,
@@ -10616,8 +10616,8 @@ const jhWordsDB = [
         "uk": "/ˈmʌni/",
         "zh": "n. 錢、鈔票、貨幣、財產",
         "unit": 18,
-        "example": "Money can't buy you happiness.",
-        "exampleZh": "金錢買不來幸福。"
+        "example": "I do not have enough money today.",
+        "exampleZh": "我今天沒有足夠的錢。"
     },
     {
         "id": 31065,
@@ -10626,8 +10626,8 @@ const jhWordsDB = [
         "uk": "/ˈmʌŋki/",
         "zh": "n. 猴子、頑皮兒童、淘氣鬼、受支配的人；v. 胡鬧、搗蛋、模仿、學……的樣子",
         "unit": 18,
-        "example": "The woolly spider monkey is the largest primate in the Americas.",
-        "exampleZh": "毛蜘蛛猴是美洲最大的靈長類動物。"
+        "example": "The brown monkey sat on the tree.",
+        "exampleZh": "那隻棕色的猴子坐在樹上。"
     },
     {
         "id": 31066,
@@ -10636,8 +10636,8 @@ const jhWordsDB = [
         "uk": "/ˈmɒnstə(r)/",
         "zh": "n. 妖怪、怪獸、怪物、殘忍的人；adj. 很受歡迎的、龐大的、巨大的；v. 嚴厲批評、斥責",
         "unit": 18,
-        "example": "He drew a monster and coloured it green.",
-        "exampleZh": "他畫了一個怪物，把它塗成綠色。"
+        "example": "The scary monster hid in the dark.",
+        "exampleZh": "可怕的怪獸躲在黑暗中。"
     },
     {
         "id": 31067,
@@ -10656,8 +10656,8 @@ const jhWordsDB = [
         "uk": "/muːn/",
         "zh": "n. 月亮、月球、月光、衛星；v. 懶散度日、浪蕩、出神、呆視",
         "unit": 18,
-        "example": "The moon is a satellite of earth.",
-        "exampleZh": "月球是地球的衛星。"
+        "example": "The moon shines bright in the night.",
+        "exampleZh": "月亮在夜晚閃閃發光。"
     },
     {
         "id": 31069,
@@ -10666,8 +10666,8 @@ const jhWordsDB = [
         "uk": "/mɔː(r)/",
         "zh": "det. 更多的、更大的、另外的、附加的；pron. 更多的、更大的、多了的部分；adv. 更、更強、更多、繼續；adj. 更多的、更大的、額外的",
         "unit": 18,
-        "example": "More and more people are using the Internet.",
-        "exampleZh": "越來越多的人正在使用網路。"
+        "example": "Can I have some more water, please?",
+        "exampleZh": "請問我可以再喝點水嗎？"
     },
     {
         "id": 31070,
@@ -10676,8 +10676,8 @@ const jhWordsDB = [
         "uk": "/ˈmɔːnɪŋ/",
         "zh": "n. 早上、早晨、上午、黎明",
         "unit": 18,
-        "example": "I've been sneezing all morning.",
-        "exampleZh": "我整個早上都在打噴嚏。"
+        "example": "I drink warm milk every morning.",
+        "exampleZh": "我每天早晨喝溫牛奶。"
     },
     {
         "id": 31071,
@@ -10686,8 +10686,8 @@ const jhWordsDB = [
         "uk": "/mɒp/",
         "zh": "n. 拖把、蓬亂濃密的頭髮、清掃、洗碗刷；vt. 用拖把拖、擦掉、抹掉、結束",
         "unit": 18,
-        "example": "I mop the kitchen floor twice a week.",
-        "exampleZh": "我每週兩次拖廚房的地板。"
+        "example": "Use a clean mop on floor.",
+        "exampleZh": "在地板上使用乾淨的拖把。"
     },
     {
         "id": 31072,
@@ -10696,8 +10696,8 @@ const jhWordsDB = [
         "uk": "/məˈskiːtəʊ/",
         "zh": "n. 蚊子",
         "unit": 18,
-        "example": "A single mosquito can infect a large number of people.",
-        "exampleZh": "一隻蚊子就能傳染很多人。"
+        "example": "A hungry mosquito bit my left arm.",
+        "exampleZh": "一隻飢餓的蚊子叮了我的左手臂。"
     },
     {
         "id": 31073,
@@ -10706,8 +10706,8 @@ const jhWordsDB = [
         "uk": "/məʊst/",
         "zh": "det. 最多、最大、大多數；pron. 最多、最大、大多數；adv. 最、最大、極其、非常；adj. 大多數的、最大程度的、最大數量的",
         "unit": 18,
-        "example": "Most vegetables contain fibre.",
-        "exampleZh": "大多數蔬菜都含有纖維。"
+        "example": "Most children like to eat sweet apples.",
+        "exampleZh": "大多數小孩子喜歡吃甜蘋果。"
     },
     {
         "id": 31074,
@@ -10716,8 +10716,8 @@ const jhWordsDB = [
         "uk": "/ˈmʌðə(r)/",
         "zh": "n. 母親、大娘、女修道院院長；vt. 生下、養育、像母親般關懷或照管；adj. 母親的、出生地的",
         "unit": 18,
-        "example": "His mother is partially blind.",
-        "exampleZh": "他的母親是半盲的。"
+        "example": "My mother gives me a warm hug.",
+        "exampleZh": "我母親給了我一個溫暖的擁抱。"
     },
     {
         "id": 31075,
@@ -10726,8 +10726,8 @@ const jhWordsDB = [
         "uk": "/ˈməʊʃn/",
         "zh": "n. 運動、移動、手勢、動作；vt. 打手勢、示意",
         "unit": 18,
-        "example": "Some scenes were filmed in slow motion.",
-        "exampleZh": "幾組鏡頭被拍成了慢動作。"
+        "example": "He made a quick hand motion to me.",
+        "exampleZh": "他向我做了一個快速的手勢。"
     },
     {
         "id": 31076,
@@ -10736,8 +10736,8 @@ const jhWordsDB = [
         "uk": "/ˈməʊtəsaɪk(ə)l/",
         "zh": "n. 摩托車；v. 騎摩托車",
         "unit": 18,
-        "example": "They sell used and reconditioned motorcycle parts.",
-        "exampleZh": "他們出售二手及翻新的摩托車零部件。"
+        "example": "My uncle rides a black motorcycle.",
+        "exampleZh": "我叔叔騎一輛黑色機車。"
     },
     {
         "id": 31077,
@@ -10746,8 +10746,8 @@ const jhWordsDB = [
         "uk": "/ˈmaʊntən/",
         "zh": "n. 山、高山、許多、大量",
         "unit": 18,
-        "example": "He mimed climbing a mountain.",
-        "exampleZh": "他模仿著爬山的動作。"
+        "example": "Snow fell on the high mountain top.",
+        "exampleZh": "雪落在了高高的山頂上。"
     },
     {
         "id": 31078,
@@ -10766,8 +10766,8 @@ const jhWordsDB = [
         "uk": "/maʊθ/",
         "zh": "n. 嘴、口腔、需要供養的人、食客；vt. 不出聲地說、用口型默示、言不由衷地說、信口開河；comb. 有……嘴的、……口的、言談……的、口齒……的",
         "unit": 18,
-        "example": "My mouth felt completely dry.",
-        "exampleZh": "我感覺口乾舌燥。"
+        "example": "Open your mouth and say ah.",
+        "exampleZh": "張開嘴巴並說『啊』。"
     },
     {
         "id": 31080,
@@ -10776,8 +10776,8 @@ const jhWordsDB = [
         "uk": "/muːv/",
         "zh": "v. 移動、改變位置、搬家、搬遷；n. 措施、行動、移動、活動",
         "unit": 18,
-        "example": "I can't move my fingers.",
-        "exampleZh": "我的手指動不了。"
+        "example": "We will move to a new town.",
+        "exampleZh": "我們將搬到一個新城鎮。"
     },
     {
         "id": 31081,
@@ -10786,8 +10786,8 @@ const jhWordsDB = [
         "uk": "/ˈmuːvmənt/",
         "zh": "n. 動作、移動、轉移、運動",
         "unit": 18,
-        "example": "They were watching her every movement.",
-        "exampleZh": "他們注視著她的一舉一動。"
+        "example": "The quick movement caught my eye.",
+        "exampleZh": "那個迅速的動作引起了我的注意。"
     },
     {
         "id": 31082,
@@ -10806,8 +10806,8 @@ const jhWordsDB = [
         "uk": "/ˈmɪstə(r)/",
         "zh": "n. 先生",
         "unit": 18,
-        "example": "Mr. Ryan is confident of success.",
-        "exampleZh": "瑞安先生對成功有信心。"
+        "example": "Mr. Wang is a good man.",
+        "exampleZh": "王先生是一位好人。"
     },
     {
         "id": 31084,
@@ -10826,8 +10826,8 @@ const jhWordsDB = [
         "uk": "/mʌd/",
         "zh": "n. 泥濘、泥、淤泥、泥漿",
         "unit": 18,
-        "example": "Your boots are covered in mud.",
-        "exampleZh": "你的靴子沾滿了泥巴。"
+        "example": "His old boots had some wet mud.",
+        "exampleZh": "他的舊靴子沾了一些濕泥巴。"
     },
     {
         "id": 31086,
@@ -10836,8 +10836,8 @@ const jhWordsDB = [
         "uk": "/mʌɡ/",
         "zh": "n. 馬克杯、大杯、一大杯的容量、臉；vt. 行兇搶劫、打劫、扮鬼臉、扮怪相",
         "unit": 18,
-        "example": "The mug tipped over, spilling hot coffee everywhere.",
-        "exampleZh": "杯子翻倒了，熱咖啡灑得到處都是。"
+        "example": "He filled the mug with hot coffee.",
+        "exampleZh": "他把馬克杯裝滿了熱咖啡。"
     },
     {
         "id": 31087,
@@ -10866,8 +10866,8 @@ const jhWordsDB = [
         "uk": "/mjuˈzɪʃ(ə)n/",
         "zh": "n. 音樂家、樂師、作曲家",
         "unit": 18,
-        "example": "He was a brilliant musician.",
-        "exampleZh": "他曾是一位出色的音樂家。"
+        "example": "The musician played the piano very well.",
+        "exampleZh": "那位音樂家鋼琴彈得非常好。"
     },
     {
         "id": 31090,
@@ -10876,8 +10876,8 @@ const jhWordsDB = [
         "uk": "/mʌst; məst/",
         "zh": "aux. 必須、一定、諒必、應該；v. 必須做的事；n. 不可少的事物、必不可少的事物、葡萄汁、潮氣",
         "unit": 18,
-        "example": "We must set realistic goals.",
-        "exampleZh": "我們必須設定現實的目標。"
+        "example": "You must finish your work on time.",
+        "exampleZh": "你必須準時完成你的工作。"
     },
     {
         "id": 31091,
@@ -10896,8 +10896,8 @@ const jhWordsDB = [
         "uk": "/neɪm/",
         "zh": "n. 名字、名稱、名聲、名譽；vt. 命名、給……取名、說出……的名稱、叫出……的名字；adj. 有名的、出名的、姓名的、據以取名的",
         "unit": 18,
-        "example": "Is your name hyphenated?",
-        "exampleZh": "你的名字有連字符嗎？"
+        "example": "Please write your name on the paper.",
+        "exampleZh": "請把你的名字寫在紙上。"
     },
     {
         "id": 31093,
@@ -10906,8 +10906,8 @@ const jhWordsDB = [
         "uk": "/ˈnæpkɪn/",
         "zh": "n. 餐巾、餐巾紙、尿布、衛生巾",
         "unit": 18,
-        "example": "Her father cleaned his glasses with a paper napkin.",
-        "exampleZh": "她父親用一張餐巾紙擦他的眼鏡。"
+        "example": "Wipe your hands with a clean napkin.",
+        "exampleZh": "用乾淨的餐巾紙擦擦手。"
     },
     {
         "id": 31094,
@@ -10926,8 +10926,8 @@ const jhWordsDB = [
         "uk": "/ˈneɪʃ(ə)n/",
         "zh": "n. 國家、民族、國民、部落",
         "unit": 18,
-        "example": "The article captured the mood of the nation.",
-        "exampleZh": "這篇文章抓住了全國人民的情緒。"
+        "example": "People of our nation love peace.",
+        "exampleZh": "我們國家的國民熱愛和平。"
     },
     {
         "id": 31096,
@@ -10936,8 +10936,8 @@ const jhWordsDB = [
         "uk": "/ˈnæʃ(ə)nəl/",
         "zh": "adj. 國家的、全國的、國家所有的、國立的；n. 國民、僑民、全國性比賽、全國性報紙",
         "unit": 18,
-        "example": "The area has been declared a national park.",
-        "exampleZh": "該地區已被宣佈為國家公園。"
+        "example": "Football is our most popular national sport.",
+        "exampleZh": "足球是我們最受歡迎的全國性運動。"
     },
     {
         "id": 31097,
@@ -10946,8 +10946,8 @@ const jhWordsDB = [
         "uk": "/ˈnætʃ(ə)rəl/",
         "zh": "adj. 自然的、天然的、非人為的、合理的；n. 有天賦的人、適合人選、本位音、白鍵",
         "unit": 18,
-        "example": "She is a natural athlete.",
-        "exampleZh": "她是一位天生的運動員。"
+        "example": "This juice is made of natural fresh fruit.",
+        "exampleZh": "這杯果汁是由天然新鮮水果製成的。"
     },
     {
         "id": 31098,
@@ -10956,8 +10956,8 @@ const jhWordsDB = [
         "uk": "/ˈneɪtʃə(r)/",
         "zh": "n. 自然、大自然、自然界、性格",
         "unit": 18,
-        "example": "Violence is not in his nature.",
-        "exampleZh": "暴力不是他的本性。"
+        "example": "She loves to enjoy the beauty of nature.",
+        "exampleZh": "她熱愛欣賞大自然的美麗。"
     },
     {
         "id": 31099,
@@ -10996,8 +10996,8 @@ const jhWordsDB = [
         "uk": "/ˈnesəsəri/",
         "zh": "adj. 必要的、必需的、必然的、不可避免的；n. 必需品、必要的事、足夠的錢",
         "unit": 18,
-        "example": "Military action may become necessary.",
-        "exampleZh": "軍事行動可能變得必要。"
+        "example": "Water is necessary for all living things.",
+        "exampleZh": "水對所有生物來說都是必需的。"
     },
     {
         "id": 31103,
@@ -11026,8 +11026,8 @@ const jhWordsDB = [
         "uk": "/niːd/",
         "zh": "vt. 需要、有必要；aux. 必要；n. 需求、需要、必須、特別需要",
         "unit": 18,
-        "example": "We need more storage now.",
-        "exampleZh": "我們現在需要更多的儲存空間。"
+        "example": "I need a glass of cold water.",
+        "exampleZh": "我需要一杯冷水。"
     },
     {
         "id": 31106,
@@ -11036,8 +11036,8 @@ const jhWordsDB = [
         "uk": "/ˈniːd(ə)l/",
         "zh": "n. 縫衣針、編織針、注射針、刺針；v. 刺激、不斷地數落、用針穿刺、像針一樣地刺",
         "unit": 18,
-        "example": "A compass needle points north.",
-        "exampleZh": "羅盤指標指向北方。"
+        "example": "She lost a sharp needle on the floor.",
+        "exampleZh": "她把一根鋒利的針掉在地板上了。"
     },
     {
         "id": 31107,
@@ -11046,8 +11046,8 @@ const jhWordsDB = [
         "uk": "/ˈneɡətɪv/",
         "zh": "adj. 有害的、負面的、悲觀的、消極的；n. 底片、負片、否定詞、否定句；v. 拒絕、否定、推翻、證偽",
         "unit": 18,
-        "example": "They received a negative reply.",
-        "exampleZh": "他們得到一個否定的答覆。"
+        "example": "Try to avoid such negative ideas.",
+        "exampleZh": "盡量避免這種負面的想法。"
     },
     {
         "id": 31108,
@@ -11066,8 +11066,8 @@ const jhWordsDB = [
         "uk": "/ˈnaɪðə(r)/",
         "zh": "det. 兩者都不；pron. 無一個；conj. 也不、既不……；adv. 也不、既不……也不……；adj. 兩者都不的",
         "unit": 18,
-        "example": "She seemed neither surprised nor worried.",
-        "exampleZh": "她看起來既不驚訝也不擔心。"
+        "example": "Neither of my parents likes hot tea.",
+        "exampleZh": "我的父母雙方都不喜歡熱茶。"
     },
     {
         "id": 31110,
@@ -11076,8 +11076,8 @@ const jhWordsDB = [
         "uk": "/ˈnefjuː/",
         "zh": "n. 姪子、外甥、侄子",
         "unit": 18,
-        "example": "He entrusted the task to his nephew.",
-        "exampleZh": "他把這任務託付給了他的侄兒。"
+        "example": "My nephew likes to play with dogs.",
+        "exampleZh": "我的姪子喜歡和狗狗玩耍。"
     },
     {
         "id": 31111,
@@ -11096,8 +11096,8 @@ const jhWordsDB = [
         "uk": "/nest/",
         "zh": "n. 窩、巢、穴、舒適的居所；vi. 築巢、做窩、逐個套疊、巢狀",
         "unit": 18,
-        "example": "The owl seems to have deserted its nest.",
-        "exampleZh": "這隻貓頭鷹似乎不要這個窩了。"
+        "example": "The bird built a nest in the tree.",
+        "exampleZh": "鳥兒在樹上築了一個窩。"
     },
     {
         "id": 31113,
@@ -11106,8 +11106,8 @@ const jhWordsDB = [
         "uk": "/ˈnevə(r)/",
         "zh": "adv. 從未、決不、永不、不會",
         "unit": 18,
-        "example": "Her determination never wavered.",
-        "exampleZh": "她的決心從未動搖過。"
+        "example": "I never drink cold milk at night.",
+        "exampleZh": "我晚上從不喝冰牛奶。"
     },
     {
         "id": 31114,
@@ -11116,8 +11116,8 @@ const jhWordsDB = [
         "uk": "/njuː/",
         "zh": "adj. 新的、新出現的、新興的、新買的；adv. 新的、新近的；n. 新東西、新事物",
         "unit": 18,
-        "example": "New England is beautiful.",
-        "exampleZh": "新英格蘭很美麗。"
+        "example": "I got a new bike for my birthday.",
+        "exampleZh": "我生日時得到了一輛新腳踏車。"
     },
     {
         "id": 31115,
@@ -11126,8 +11126,8 @@ const jhWordsDB = [
         "uk": "/njuːz/",
         "zh": "n. 新聞、消息、訊息、新情況",
         "unit": 18,
-        "example": "The news lifted our spirits.",
-        "exampleZh": "這個消息讓我們精神振奮。"
+        "example": "We heard some good news today.",
+        "exampleZh": "我們今天聽到了一些好消息。"
     },
     {
         "id": 31116,
@@ -11146,8 +11146,8 @@ const jhWordsDB = [
         "uk": "/nekst/",
         "zh": "adj. 下一個、下一個的、接下來的、緊接著來到的；adv. 緊接著、隨後、僅次於；n. 下一個人或事件；det. 下一；pron. 下一個",
         "unit": 18,
-        "example": "When is your next appointment?",
-        "exampleZh": "您的下一次預約是什麼時候？"
+        "example": "Our next English class is on Monday.",
+        "exampleZh": "我們的下一堂英文課在星期一。"
     },
     {
         "id": 31118,
@@ -11166,8 +11166,8 @@ const jhWordsDB = [
         "uk": "/niːs/",
         "zh": "n. 姪女、甥女、外甥女、侄女",
         "unit": 18,
-        "example": "He looked affectionately at his niece.",
-        "exampleZh": "他慈愛地看著他的侄女。"
+        "example": "She bought a new doll for her niece.",
+        "exampleZh": "她為她的姪女買了一個新洋娃娃。"
     },
     {
         "id": 31120,
@@ -11186,8 +11186,8 @@ const jhWordsDB = [
         "uk": "/naɪn/",
         "zh": "n. 九、九個；num. 九、九個；adj. 九的、九個的",
         "unit": 18,
-        "example": "We still sighted nine yachts.",
-        "exampleZh": "我們仍然看到了九艘遊艇。"
+        "example": "She goes to bed at nine o'clock.",
+        "exampleZh": "她在九點上床睡覺。"
     },
     {
         "id": 31122,
@@ -11236,8 +11236,8 @@ const jhWordsDB = [
         "uk": "/nɔɪz/",
         "zh": "n. 噪音、嘈雜聲、聲音、響聲；v. 議論、傳開、喧鬧",
         "unit": 18,
-        "example": "The noise outside wakened her.",
-        "exampleZh": "外面的喧鬧聲吵醒了她。"
+        "example": "The loud noise woke the baby up.",
+        "exampleZh": "巨大的噪音吵醒了小寶寶。"
     },
     {
         "id": 31127,
@@ -11246,8 +11246,8 @@ const jhWordsDB = [
         "uk": "/ˈnɔɪzi/",
         "zh": "adj. 吵雜的、嗓門大的、聒噪的、嘈雜的",
         "unit": 18,
-        "example": "Our next-door neighbours are very noisy.",
-        "exampleZh": "我們的隔壁鄰居非常吵鬧。"
+        "example": "The street is very noisy at night.",
+        "exampleZh": "這條街晚上非常嘈雜。"
     },
     {
         "id": 31128,
@@ -11266,8 +11266,8 @@ const jhWordsDB = [
         "uk": "/ˈnuːd(ə)l/",
         "zh": "n. 麵條、笨蛋、蠢人、人頭；v. 撥弄樂器、思考、醞釀、搜尋",
         "unit": 18,
-        "example": "They have two restaurants that purvey dumplings and chicken noodle soup.",
-        "exampleZh": "有兩家供應餃子和雞肉湯麵的餐館。"
+        "example": "I like to eat hot beef noodle soup.",
+        "exampleZh": "我喜歡吃熱呼呼的牛肉麵湯。"
     },
     {
         "id": 31130,
@@ -11276,8 +11276,8 @@ const jhWordsDB = [
         "uk": "/nuːn/",
         "zh": "n. 中午、正午、全盛期",
         "unit": 18,
-        "example": "I'm leaving on the noon train.",
-        "exampleZh": "我要搭中午的火車出發。"
+        "example": "The sun is hot at high noon.",
+        "exampleZh": "正午時分的太陽很熱。"
     },
     {
         "id": 31131,
@@ -11286,8 +11286,8 @@ const jhWordsDB = [
         "uk": "/nɔː(r)/",
         "zh": "conj. 也不；adv. 也不；n. “或非”",
         "unit": 18,
-        "example": "She seemed neither surprised nor worried.",
-        "exampleZh": "她看起來既不驚訝也不擔心。"
+        "example": "He eats neither fish nor meat.",
+        "exampleZh": "他既不吃魚也不吃肉。"
     },
     {
         "id": 31132,
@@ -11296,8 +11296,8 @@ const jhWordsDB = [
         "uk": "/nɔːθ/",
         "zh": "n. 北方、北、北部、北方發達國家；adj. 北部的、北方的、朝北的、北方吹來的；adv. 向北、朝北、大於",
         "unit": 18,
-        "example": "A compass needle points north.",
-        "exampleZh": "指南針的指針指向北方。"
+        "example": "Cold winds blow from the north.",
+        "exampleZh": "寒風從北方吹來。"
     },
     {
         "id": 31133,
@@ -11306,8 +11306,8 @@ const jhWordsDB = [
         "uk": "/nəʊz/",
         "zh": "n. 鼻子、頭部、機首、嗅覺；vt. 緩慢地前行、拱、嗅、勉強領先",
         "unit": 18,
-        "example": "I wrinkled my nose in disgust.",
-        "exampleZh": "我厭惡地皺起了鼻子。"
+        "example": "She wiped her cold nose with paper.",
+        "exampleZh": "她用紙巾擦了擦冰冷的鼻子。"
     },
     {
         "id": 31134,
@@ -11326,8 +11326,8 @@ const jhWordsDB = [
         "uk": "/nəʊt/",
         "zh": "n. 筆記、便條、記錄、音符；vt. 注意、留意、記錄、指出",
         "unit": 18,
-        "example": "Someone left this note for you.",
-        "exampleZh": "有人留了這張紙條給你。"
+        "example": "He wrote a short note to me.",
+        "exampleZh": "他寫了一張簡短的便條給我。"
     },
     {
         "id": 31136,
@@ -11336,8 +11336,8 @@ const jhWordsDB = [
         "uk": "/ˈnəʊtbʊk/",
         "zh": "n. 筆記本、膝上型電腦",
         "unit": 18,
-        "example": "Bob whipped out his notebook.",
-        "exampleZh": "鮑勃猛地拿出他的筆記本。"
+        "example": "Write your name in the blue notebook.",
+        "exampleZh": "把你的名字寫在藍色筆記本上。"
     },
     {
         "id": 31137,
@@ -11346,8 +11346,8 @@ const jhWordsDB = [
         "uk": "/ˈnʌθɪŋ/",
         "zh": "pron. 沒有什麼、沒有一件東西、無關緊要的事、無足輕重的人；adv. 並不、毫不、用於強烈地表示相反看法根本不是；n. 無關緊要的事、無足輕重的人、空地、虛空；adj. 沒前途的、沒價值",
         "unit": 18,
-        "example": "Sam shrugged and said nothing.",
-        "exampleZh": "薩姆聳聳肩，什麼也沒說。"
+        "example": "There is nothing in the black box.",
+        "exampleZh": "黑色盒子裡什麼都沒有。"
     },
     {
         "id": 31138,
@@ -11356,8 +11356,8 @@ const jhWordsDB = [
         "uk": "/ˈnəʊtɪs/",
         "zh": "n. 通知、注意、察覺、通告；vt. 注意到、意識、注意、留意",
         "unit": 18,
-        "example": "He pretended not to notice.",
-        "exampleZh": "他假裝沒有註意到。"
+        "example": "Did you notice the new red car?",
+        "exampleZh": "你有注意到那輛新的紅車嗎？"
     },
     {
         "id": 31139,
@@ -11386,8 +11386,8 @@ const jhWordsDB = [
         "uk": "/naʊ/",
         "zh": "adv. 現在、此刻、馬上、立刻；adj. 現在的、流行的、時髦的；n. 現在、此刻；conj. 由於、既然",
         "unit": 18,
-        "example": "She's in kindergarten now.",
-        "exampleZh": "她現在上幼稚園了。"
+        "example": "We must leave for school right now.",
+        "exampleZh": "我們現在必須出發去學校了。"
     },
     {
         "id": 31142,
@@ -11406,8 +11406,8 @@ const jhWordsDB = [
         "uk": "/nɜːs/",
         "zh": "n. 護士、保姆、奶媽、保育蟲；vt. 看護、照料、細心打理、調養",
         "unit": 18,
-        "example": "The nurse cleaned the wound.",
-        "exampleZh": "護士清理了傷口。"
+        "example": "The kind nurse helped the sick boy.",
+        "exampleZh": "親切的護士幫助了生病的男孩。"
     },
     {
         "id": 31144,
@@ -11436,8 +11436,8 @@ const jhWordsDB = [
         "uk": "/ˈɒbdʒɪkt; ˈɒbdʒekt; əbˈdʒekt/",
         "zh": "n. 物體、實物、目的、目標；vt. 反對、反對說、反對的理由是",
         "unit": 18,
-        "example": "A rock is an inanimate object.",
-        "exampleZh": "岩石是無生命的物體。"
+        "example": "There is a small object on the desk.",
+        "exampleZh": "書桌上有一個小物件。"
     },
     {
         "id": 31147,
@@ -11446,8 +11446,8 @@ const jhWordsDB = [
         "uk": "/ˈəʊʃ(ə)n/",
         "zh": "n. 海洋、大海、洋、許多",
         "unit": 18,
-        "example": "The grey ocean seethed beneath them.",
-        "exampleZh": "灰色的海洋在他們腳下沸騰。"
+        "example": "Huge ships sail across the blue ocean.",
+        "exampleZh": "巨大的輪船航行在蔚藍的海洋上。"
     },
     {
         "id": 31148,
@@ -11466,8 +11466,8 @@ const jhWordsDB = [
         "uk": "/ɒkˈtəʊbə(r)/",
         "zh": "n. 十月、[天]十月",
         "unit": 18,
-        "example": "The film festival takes place in October.",
-        "exampleZh": "電影節於十月舉行。"
+        "example": "Leaves turn red and gold in October.",
+        "exampleZh": "樹葉在十月變成紅色和金色。"
     },
     {
         "id": 31150,
@@ -11476,8 +11476,8 @@ const jhWordsDB = [
         "uk": "/ɒv; əv/",
         "zh": "prep. ……的、屬於、……的一部分、表示計量",
         "unit": 18,
-        "example": "One of the penalties of fame is loss of privacy.",
-        "exampleZh": "名譽的懲罰之一就是失去隱私。"
+        "example": "This is a photo of my family.",
+        "exampleZh": "這是一張我全家人的照片。"
     },
     {
         "id": 31151,
@@ -11486,8 +11486,8 @@ const jhWordsDB = [
         "uk": "/ɒf/",
         "zh": "adv. 離開、關閉、中斷、休假；prep. 從……離開、脫離、下（車）；adj. 關閉的、不新鮮的、取消的",
         "unit": 18,
-        "example": "The wedding is off.",
-        "exampleZh": "婚禮取消了。"
+        "example": "Please turn off the light right now.",
+        "exampleZh": "請現在立刻把燈關掉。"
     },
     {
         "id": 31152,
@@ -11496,8 +11496,8 @@ const jhWordsDB = [
         "uk": "/ˈɒfə(r)/",
         "zh": "vt. 提供、給予、提議、表示願意；n. 提議、主動提議、提供、出價",
         "unit": 18,
-        "example": "We offer free technical support.",
-        "exampleZh": "我們免費提供技術支援。"
+        "example": "They offer free tea to all guests.",
+        "exampleZh": "他們向所有客人提供免費茶水。"
     },
     {
         "id": 31153,
@@ -11506,8 +11506,8 @@ const jhWordsDB = [
         "uk": "/ˈɒfɪs/",
         "zh": "n. 辦公室、辦公樓、辦事處、室",
         "unit": 18,
-        "example": "Moira bounced into the office.",
-        "exampleZh": "莫伊拉跳進辦公室。"
+        "example": "My father works in a busy office.",
+        "exampleZh": "我父親在一間繁忙的辦公室上班。"
     },
     {
         "id": 31154,
@@ -11516,8 +11516,8 @@ const jhWordsDB = [
         "uk": "/ˈɒfɪsə(r)/",
         "zh": "n. 警官、官員、軍官、高階職員；v. 配備軍官、指揮",
         "unit": 18,
-        "example": "The officer radioed for advice.",
-        "exampleZh": "該官員透過無線電尋求建議。"
+        "example": "The police officer saw the red car.",
+        "exampleZh": "警察看見了那輛紅色的車。"
     },
     {
         "id": 31155,
@@ -11526,8 +11526,8 @@ const jhWordsDB = [
         "uk": "/ˈɒf(ə)n/",
         "zh": "adv. 經常、常常、時常、在許多情況下",
         "unit": 18,
-        "example": "She often goes around barefoot.",
-        "exampleZh": "她經常赤腳到處走動。"
+        "example": "We often play football after school together.",
+        "exampleZh": "我們放學後經常一起踢足球。"
     },
     {
         "id": 31156,
@@ -11536,8 +11536,8 @@ const jhWordsDB = [
         "uk": "/ɔɪl/",
         "zh": "n. 石油、燃油、潤滑油、原油；vt. 加油於……、給……加潤滑油、給（皮膚）塗油、抹油",
         "unit": 18,
-        "example": "The price of oil increased.",
-        "exampleZh": "石油價格上漲。"
+        "example": "Put a little oil into the pan.",
+        "exampleZh": "往平底鍋裡倒入少許油。"
     },
     {
         "id": 31157,
@@ -11546,8 +11546,8 @@ const jhWordsDB = [
         "uk": "/əʊˈkeɪ/",
         "zh": "int. 好、行；adj. 可以、不錯的、對、安全的；adv. 可以、不錯、對、很好地；n. 同意、批准；vt. 批准、同意、認可",
         "unit": 18,
-        "example": "Okay, there is a slight difference.",
-        "exampleZh": "好吧，有一點不同。"
+        "example": "Are you okay after the fall?",
+        "exampleZh": "跌倒後你還好嗎？"
     },
     {
         "id": 31158,
@@ -11556,8 +11556,8 @@ const jhWordsDB = [
         "uk": "/əʊld/",
         "zh": "adj. 老的、舊的、……歲的、古老的",
         "unit": 18,
-        "example": "The old man spoke deferentially.",
-        "exampleZh": "老者恭敬的說道。"
+        "example": "My grandfather is eighty years old.",
+        "exampleZh": "我的祖父八十歲了。"
     },
     {
         "id": 31159,
@@ -11566,8 +11566,8 @@ const jhWordsDB = [
         "uk": "/əˈmɪt/",
         "zh": "vt. 省略、省去、遺漏、不做",
         "unit": 18,
-        "example": "If you are a student, you can omit questions 16–18.",
-        "exampleZh": "如果您是學生，則可以省略問題 16-18。"
+        "example": "You may omit this step if needed.",
+        "exampleZh": "如果有需要，你可以省略這個步驟。"
     },
     {
         "id": 31160,
@@ -11576,8 +11576,8 @@ const jhWordsDB = [
         "uk": "/ɒn/",
         "zh": "prep. 在……上面、關於、在（某一天）；adv. 在上面、繼續、開著、穿著",
         "unit": 18,
-        "example": "She went on and on about her trip.",
-        "exampleZh": "她滔滔不絕地講述她的旅行。"
+        "example": "The book is on the study desk.",
+        "exampleZh": "書本在書桌上面。"
     },
     {
         "id": 31161,
@@ -11586,8 +11586,8 @@ const jhWordsDB = [
         "uk": "/wʌns/",
         "zh": "adv. 一次、一回、曾經、一度；conj. 一.....就、一旦；n. 一次",
         "unit": 18,
-        "example": "I met Miquela once, briefly.",
-        "exampleZh": "我曾短暫見過米克拉一次。"
+        "example": "I see my uncle once a week.",
+        "exampleZh": "我每週見我叔叔一次。"
     },
     {
         "id": 31162,
@@ -11616,8 +11616,8 @@ const jhWordsDB = [
         "uk": "/ˈəʊnli/",
         "zh": "adv. 只有、只、僅在……情況下、只是；adj. 唯一的、僅有的、最好的、最適合的；conj. 不過、但是、要不是、若非",
         "unit": 18,
-        "example": "Only the yolk contains cholesterol.",
-        "exampleZh": "只有蛋黃含有膽固醇。"
+        "example": "I only have five dollars with me.",
+        "exampleZh": "我身上只有五塊錢。"
     },
     {
         "id": 31165,
@@ -11626,8 +11626,8 @@ const jhWordsDB = [
         "uk": "/ˈəʊpən/",
         "zh": "adj. 開著的、開放的、公開的；v. 打開、開啟、營業；n. 戶外、公開",
         "unit": 18,
-        "example": "The door squeaked open.",
-        "exampleZh": "門吱呀一聲打開了。"
+        "example": "Please open the window for fresh air.",
+        "exampleZh": "請打開窗戶通風換氣。"
     },
     {
         "id": 31166,
@@ -11636,8 +11636,8 @@ const jhWordsDB = [
         "uk": "/ˈɒpəreɪt/",
         "zh": "v. 操作、操縱、運轉、執行",
         "unit": 18,
-        "example": "They operate franchises in London and Paris.",
-        "exampleZh": "他們在倫敦和巴黎經營特許經營權。"
+        "example": "He learned how to operate the machine.",
+        "exampleZh": "他學會了如何操作那台機器。"
     },
     {
         "id": 31167,
@@ -11656,8 +11656,8 @@ const jhWordsDB = [
         "uk": "/ɔː(r)/",
         "zh": "conj. 或者、或、還是、也不；n. （邏輯電路的）或、金色、黃色；abbr. 俄勒岡州、手術室、運籌學、普通士兵",
         "unit": 18,
-        "example": "I don't drink whisky or brandy or any other spirits.",
-        "exampleZh": "我不喝威士忌、白蘭地或任何其他烈酒。"
+        "example": "Do you want hot tea or water?",
+        "exampleZh": "你想要喝熱茶還是水？"
     },
     {
         "id": 31169,
@@ -11666,8 +11666,8 @@ const jhWordsDB = [
         "uk": "/ˈɒrɪndʒ/",
         "zh": "n. 柳橙、橘子、橙色；adj. 橙色的、橘黃色的",
         "unit": 18,
-        "example": "I plucked an orange from the tree.",
-        "exampleZh": "我從樹上摘了一個橘子。"
+        "example": "She peeled an orange for her son.",
+        "exampleZh": "她為兒子剝了一顆柳橙。"
     },
     {
         "id": 31170,
@@ -11696,8 +11696,8 @@ const jhWordsDB = [
         "uk": "/ˈɔːɡən/",
         "zh": "n. 器官、陰莖、陽物、風琴",
         "unit": 18,
-        "example": "The largest organ in the body is the liver.",
-        "exampleZh": "體內最大的器官是肝臟。"
+        "example": "The heart is a vital body organ.",
+        "exampleZh": "心臟是維持生命的重要人體器官。"
     },
     {
         "id": 31173,
@@ -11706,8 +11706,8 @@ const jhWordsDB = [
         "uk": "/ˌɔːɡənaɪˈzeɪʃn/",
         "zh": "n. 機構、組織、組織工作、籌備工作",
         "unit": 18,
-        "example": "The organization is heavily overspent.",
-        "exampleZh": "這個機構嚴重超支。"
+        "example": "He set up a local youth organization.",
+        "exampleZh": "他創立了一個當地的青年組織。"
     },
     {
         "id": 31174,
@@ -11716,8 +11716,8 @@ const jhWordsDB = [
         "uk": "/ˈʌðə(r)/",
         "zh": "adj. 其他的、別的、另外的、另一的；pron. 另一個、另外、其餘的人（或事物）、其他；v. 將……看作異類、以異類對待",
         "unit": 18,
-        "example": "Are there any other questions?",
-        "exampleZh": "還有其他問題嗎？"
+        "example": "Do you have any other questions?",
+        "exampleZh": "你還有其他問題嗎？"
     },
     {
         "id": 31175,
@@ -11726,8 +11726,8 @@ const jhWordsDB = [
         "uk": "/aʊt/",
         "zh": "adv. 出現、向外、在室外；prep. 出去、從……裡面出去、離開；adj. 熄滅的、盛開的、面市的、出局的；vt. 擊倒、擊暈、揭露（某人）是同性戀、熄滅；n. 出路、脫身辦法、使球員出局的辦法、在野黨",
         "unit": 18,
-        "example": "The flame sputters out.",
-        "exampleZh": "火焰噴濺而出。"
+        "example": "The young boy ran out of the room.",
+        "exampleZh": "小男孩跑出了房間。"
     },
     {
         "id": 31176,
@@ -11736,8 +11736,8 @@ const jhWordsDB = [
         "uk": "/ˌaʊtˈsaɪd/",
         "zh": "n. 外表、外部、周圍、外圍；prep. 戶外、在……的外面、在戶外、超出……的範圍；adv. 外面、在外面、在戶外、在四周；adj. 外邊的、表面的、邊鋒的、外圍的",
         "unit": 18,
-        "example": "Outside it was bitterly cold.",
-        "exampleZh": "外面寒冷刺骨。"
+        "example": "It is very cold outside today.",
+        "exampleZh": "今天外面非常冷。"
     },
     {
         "id": 31177,
@@ -11746,8 +11746,8 @@ const jhWordsDB = [
         "uk": "/ˈʌv(ə)n/",
         "zh": "n. 烤箱、烤爐、小熔爐、小窯",
         "unit": 18,
-        "example": "Nobody relishes cleaning the oven.",
-        "exampleZh": "沒有人喜歡清理烤爐。"
+        "example": "Bake the fresh bread in the hot oven.",
+        "exampleZh": "把新鮮麵包放進熱烤箱裡烘烤。"
     },
     {
         "id": 31178,
@@ -11756,8 +11756,8 @@ const jhWordsDB = [
         "uk": "/ˈəʊvə(r)/",
         "zh": "adv. 結束、向下、倒下、翻過；prep. 在……上方、蓋在……上面、懸在……上面、從一邊到另一邊；n. 一輪投球；adj. 結束的、剩下的；v. 越過",
         "unit": 18,
-        "example": "He plays the same songs over and over.",
-        "exampleZh": "他一遍又一遍地播放相同的歌曲。"
+        "example": "The brown dog jumped over the gate.",
+        "exampleZh": "那隻棕色的狗跳過了柵門。"
     },
     {
         "id": 31179,
@@ -11766,8 +11766,8 @@ const jhWordsDB = [
         "uk": "/ˌəʊvəˈsiːz/",
         "zh": "adj. 外國的、海外的；adv. 在國外、在海外",
         "unit": 18,
-        "example": "Nearly half the students come from overseas.",
-        "exampleZh": "近一半的學生來自海外。"
+        "example": "My brother went overseas to study art.",
+        "exampleZh": "我哥哥去海外研讀藝術。"
     },
     {
         "id": 31180,
@@ -11776,8 +11776,8 @@ const jhWordsDB = [
         "uk": "/əʊn/",
         "zh": "adj. 自己的、屬於自己的；vt. 擁有、有、承認；pron. 自己的事物",
         "unit": 18,
-        "example": "She makes her own clothes.",
-        "exampleZh": "她自己做衣服。"
+        "example": "They own a small shop near school.",
+        "exampleZh": "他們在學校附近擁有一家小店。"
     },
     {
         "id": 31181,
@@ -11786,8 +11786,8 @@ const jhWordsDB = [
         "uk": "/ˈəʊnə(r)/",
         "zh": "n. 物主、所有人",
         "unit": 18,
-        "example": "The dog looked mournfully after its owner.",
-        "exampleZh": "狗悲傷地目送主人離去。"
+        "example": "The dog ran to its owner at once.",
+        "exampleZh": "那隻狗立刻跑向牠的主人。"
     },
     {
         "id": 31182,
@@ -11806,8 +11806,8 @@ const jhWordsDB = [
         "uk": "/pæk/",
         "zh": "vt. 打包、收拾、包裝、裝箱；n. 包裝、包、包裹、捆",
         "unit": 18,
-        "example": "All joiners will receive a welcome pack.",
-        "exampleZh": "每位入會者都會收到一個迎新包。"
+        "example": "Help me pack my bag for the trip.",
+        "exampleZh": "幫我打包旅行要用的包包。"
     },
     {
         "id": 31184,
@@ -11836,8 +11836,8 @@ const jhWordsDB = [
         "uk": "/peɪn/",
         "zh": "n. 痛苦、疼痛、傷痛、苦惱；vt. 使痛苦、使苦惱、使疼痛、感到疼痛",
         "unit": 18,
-        "example": "The pain was receding slightly.",
-        "exampleZh": "疼痛正在一點一點地減弱。"
+        "example": "He felt a sharp pain in his back.",
+        "exampleZh": "他感到背部有一陣劇烈的疼痛。"
     },
     {
         "id": 31187,
@@ -11846,8 +11846,8 @@ const jhWordsDB = [
         "uk": "/ˈpeɪnf(ə)l/",
         "zh": "adj. 痛苦的、疼痛的、引起疼痛的、令人痛苦（難受）的",
         "unit": 18,
-        "example": "Her glands were swollen and painful.",
-        "exampleZh": "她的腺體腫脹且疼痛。"
+        "example": "Walking on my broken foot was painful.",
+        "exampleZh": "用受傷的腳走路非常痛苦。"
     },
     {
         "id": 31188,
@@ -11856,8 +11856,8 @@ const jhWordsDB = [
         "uk": "/peɪnt/",
         "zh": "n. 油漆、塗料、繪畫顏料、油漆層；vt. 繪畫、上油漆、塗顏料、用油漆（或塗料）覆蓋",
         "unit": 18,
-        "example": "Why do people paint pictures?",
-        "exampleZh": "人們為什麼要畫畫？"
+        "example": "We will paint the door white today.",
+        "exampleZh": "我們今天要把門漆成白色。"
     },
     {
         "id": 31189,
@@ -11876,8 +11876,8 @@ const jhWordsDB = [
         "uk": "/peə(r)/",
         "zh": "n. 一對、一雙、一套、一副；vt. 配對、使成對、結成一對（戀人）、交配",
         "unit": 18,
-        "example": "Maximo put on a pair of glasses.",
-        "exampleZh": "馬克西莫戴上一副眼鏡。"
+        "example": "I bought a pair of new shoes.",
+        "exampleZh": "我買了一雙新鞋。"
     },
     {
         "id": 31191,
@@ -11916,8 +11916,8 @@ const jhWordsDB = [
         "uk": "/ˈpændə/",
         "zh": "n. 貓熊、熊貓、大熊貓、小熊貓",
         "unit": 18,
-        "example": "The panda is a shy creature.",
-        "exampleZh": "熊貓是一種膽小的動物。"
+        "example": "The baby panda was eating green bamboo.",
+        "exampleZh": "那隻貓熊寶寶正在吃綠竹子。"
     },
     {
         "id": 31195,
@@ -11946,8 +11946,8 @@ const jhWordsDB = [
         "uk": "/ˈpeɪpə(r)/",
         "zh": "n. 紙、報紙、資料、檔案；vt. 用牆紙裱糊、用牆紙覆蓋（洞，汙點）、掩蓋（尷尬問題）、發免費入場券使（劇院）滿座；adj. 紙做的、紙質的、書面的、印刷的",
         "unit": 18,
-        "example": "He folded the paper carefully.",
-        "exampleZh": "他小心翼翼地把紙折起來。"
+        "example": "Please give me a sheet of paper.",
+        "exampleZh": "請給我一張紙。"
     },
     {
         "id": 31198,
@@ -11966,8 +11966,8 @@ const jhWordsDB = [
         "uk": "/ˈpeərənt/",
         "zh": "n. 父親、親代、親本、母公司；v. 做……的父親、為人父母",
         "unit": 18,
-        "example": "I'm wearing two hats tonight—parent and teacher.",
-        "exampleZh": "今晚我身兼兩職──家長和老師。"
+        "example": "Every parent loves their own child.",
+        "exampleZh": "每位父母都愛自己的孩子。"
     },
     {
         "id": 31200,
@@ -11976,8 +11976,8 @@ const jhWordsDB = [
         "uk": "/pɑːk/",
         "zh": "n. 公園、自然保護區、庭園、園林；vt. 停車、泊車、存放、寄存",
         "unit": 18,
-        "example": "Families were strolling around the park.",
-        "exampleZh": "一家人在公園散步。"
+        "example": "We played ball in the city park.",
+        "exampleZh": "我們在城市公園裡打球。"
     },
     {
         "id": 31201,
@@ -11986,8 +11986,8 @@ const jhWordsDB = [
         "uk": "/ˈpærət/",
         "zh": "n. 鸚鵡、學舌者、機械模仿別人的人；vt. 機械地模仿、鸚鵡學舌般重複",
         "unit": 18,
-        "example": "Generations of students have learned to parrot the standard explanations.",
-        "exampleZh": "一屆又一屆的學生學會了鸚鵡學舌般地重複標準的解釋。"
+        "example": "The green parrot can repeat many words.",
+        "exampleZh": "那隻綠色鸚鵡能重複說許多單字。"
     },
     {
         "id": 31202,
@@ -11996,8 +11996,8 @@ const jhWordsDB = [
         "uk": "/pɑːt/",
         "zh": "n. 部分、某物的部分、部、篇；vt. 分開、分離、分別、分手；adv. 既有……又有……、不完全地、部分地；adj. 部分的、不完全的",
         "unit": 18,
-        "example": "Have you learned your part yet?",
-        "exampleZh": "你已經學會你的部分了嗎？"
+        "example": "This is the best part of today.",
+        "exampleZh": "這是今天最棒的部分。"
     },
     {
         "id": 31203,
@@ -12006,8 +12006,8 @@ const jhWordsDB = [
         "uk": "/pəˈtɪkjələ(r)/",
         "zh": "adj. 特別的、特定的、某一的、格外的；n. 一點、一個細節、詳細資料、詳情",
         "unit": 18,
-        "example": "He loves science fiction in particular.",
-        "exampleZh": "他特別喜歡科幻小說。"
+        "example": "I have no particular plan for this weekend.",
+        "exampleZh": "我這個週末沒有特別的計畫。"
     },
     {
         "id": 31204,
@@ -12016,8 +12016,8 @@ const jhWordsDB = [
         "uk": "/ˈpɑːtnə(r)/",
         "zh": "n. 夥伴、搭檔、同伴、合夥人；vt. 成為搭檔、合夥",
         "unit": 18,
-        "example": "Gerry offered to partner me at tennis.",
-        "exampleZh": "格里提出和我搭檔打網球。"
+        "example": "Tom is my dance partner today.",
+        "exampleZh": "湯姆是我今天的舞伴。"
     },
     {
         "id": 31205,
@@ -12026,8 +12026,8 @@ const jhWordsDB = [
         "uk": "/ˈpɑːti/",
         "zh": "n. 派對、聚會、政黨、黨派；vi. 盡情歡樂、歡宴；adj. 分割開的、分成不同顏色部分的",
         "unit": 18,
-        "example": "The party was arranged quickly.",
-        "exampleZh": "聚會很快就安排好了。"
+        "example": "We had a big dance party today.",
+        "exampleZh": "我們今天辦了一個盛大的舞會派對。"
     },
     {
         "id": 31206,
@@ -12036,8 +12036,8 @@ const jhWordsDB = [
         "uk": "/pɑːs/",
         "zh": "v. 通過、經過、穿過、傳遞；n. 及格、出入證、通行證、合格",
         "unit": 18,
-        "example": "She timed the pass perfectly.",
-        "exampleZh": "她傳球的時機掌握得恰到好處。"
+        "example": "Please pass the salt to me.",
+        "exampleZh": "請把鹽遞給我。"
     },
     {
         "id": 31207,
@@ -12056,8 +12056,8 @@ const jhWordsDB = [
         "uk": "/pɑːst/",
         "zh": "adj. 過去的、昔日的、剛過去的、剛結束的；n. 過去、昔日、往事、經歷；prep. 晚於、在…...之後、在…...的更遠處、經過；adv. 從一側到另一側、經過、過去、逝去",
         "unit": 18,
-        "example": "Three runners sprinted past.",
-        "exampleZh": "三名跑者疾馳而過。"
+        "example": "We walked past your house just now.",
+        "exampleZh": "我們剛才走過了你家門前。"
     },
     {
         "id": 31209,
@@ -12066,8 +12066,8 @@ const jhWordsDB = [
         "uk": "/peɪst/",
         "zh": "n. 麵糊、糊狀物、糨糊、肉（或魚等）醬；vt. 黏、貼、貼上、狠狠地打",
         "unit": 18,
-        "example": "It's quicker to cut and paste than to retype.",
-        "exampleZh": "剪下和貼上比重新打字要快。"
+        "example": "Use some glue to paste the photo here.",
+        "exampleZh": "用一些膠水把這張照片貼在這裡。"
     },
     {
         "id": 31210,
@@ -12076,8 +12076,8 @@ const jhWordsDB = [
         "uk": "/pɑːθ/",
         "zh": "n. 小徑、小道、通道、路線",
         "unit": 18,
-        "example": "The path climbed steeply upwards.",
-        "exampleZh": "上去的路很陡。"
+        "example": "Follow this stone path into the park.",
+        "exampleZh": "沿著這條石徑走進公園。"
     },
     {
         "id": 31211,
@@ -12086,8 +12086,8 @@ const jhWordsDB = [
         "uk": "/ˈpeɪʃ(ə)nt/",
         "zh": "adj. 耐心的、能忍耐的、有耐心的；n. 病人、患者、受動者、承受者",
         "unit": 18,
-        "example": "The patient is terminally ill.",
-        "exampleZh": "這個病人病入膏肓。"
+        "example": "The doctor talked to the young patient.",
+        "exampleZh": "醫生與那位年輕病人交談。"
     },
     {
         "id": 31212,
@@ -12096,8 +12096,8 @@ const jhWordsDB = [
         "uk": "/ˈpæt(ə)n/",
         "zh": "n. 模式、方式、圖案、花樣；v. 用圖案裝飾、給……加上花樣、仿照、模仿",
         "unit": 18,
-        "example": "All three attacks followed the same pattern.",
-        "exampleZh": "3次襲擊都依照同一模式。"
+        "example": "The dress has a pretty flower pattern.",
+        "exampleZh": "這件洋裝上有著漂亮的花朵圖案。"
     },
     {
         "id": 31213,
@@ -12106,8 +12106,8 @@ const jhWordsDB = [
         "uk": "/pɔːz/",
         "zh": "n. 躊躇、猶豫、暫停、停頓；vi. 暫停、停頓、躊躇",
         "unit": 18,
-        "example": "There was a longish pause.",
-        "exampleZh": "有一個略長的停頓。"
+        "example": "Let us pause for a minute.",
+        "exampleZh": "讓我們暫停一分鐘。"
     },
     {
         "id": 31214,
@@ -12116,8 +12116,8 @@ const jhWordsDB = [
         "uk": "/peɪ/",
         "zh": "v. 支付、付、償還、繳納；n. 薪水、工資、付款、回報；adj. 付費的、收費的",
         "unit": 18,
-        "example": "She stubbornly refused to pay.",
-        "exampleZh": "她怎麼都不肯付錢。"
+        "example": "I will pay for your lunch.",
+        "exampleZh": "我來替你付午餐費用。"
     },
     {
         "id": 31215,
@@ -12126,8 +12126,8 @@ const jhWordsDB = [
         "uk": "/piːs/",
         "zh": "n. 和平、太平、平靜、安寧；v. 安靜",
         "unit": 18,
-        "example": "The people yearned for peace.",
-        "exampleZh": "人民渴望和平。"
+        "example": "We all wish for peace in the world.",
+        "exampleZh": "我們都期盼世界和平。"
     },
     {
         "id": 31216,
@@ -12136,8 +12136,8 @@ const jhWordsDB = [
         "uk": "/ˈpiːsf(ə)l/",
         "zh": "adj. 和平的、寧靜的、安靜的、非暴力的",
         "unit": 18,
-        "example": "I was amazingly light-hearted and peaceful.",
-        "exampleZh": "我出奇地輕鬆、平靜。"
+        "example": "The small park is quiet and peaceful.",
+        "exampleZh": "那座小公園安靜且祥和。"
     },
     {
         "id": 31217,
@@ -12166,8 +12166,8 @@ const jhWordsDB = [
         "uk": "/ˈpiːnʌt/",
         "zh": "n. 花生、花生米、很少的錢、小片聚苯乙烯泡沫塑膠",
         "unit": 18,
-        "example": "James flicked a peanut at her.",
-        "exampleZh": "詹姆斯朝她輕輕彈一顆花生。"
+        "example": "I love to eat sweet peanut butter.",
+        "exampleZh": "我喜歡吃甜甜的花生醬。"
     },
     {
         "id": 31220,
@@ -12186,8 +12186,8 @@ const jhWordsDB = [
         "uk": "/ˈpens(ə)l/",
         "zh": "n. 鉛筆、石墨芯、類似石墨芯的東西、化妝筆；v. 用鉛筆寫；adj. 用鉛筆寫（或畫、描、記）的",
         "unit": 18,
-        "example": "I snapped the pencil in half.",
-        "exampleZh": "我把鉛筆折成兩半。"
+        "example": "I need a sharp pencil to write.",
+        "exampleZh": "我需要一支削好的鉛筆來寫字。"
     },
     {
         "id": 31222,
@@ -12206,8 +12206,8 @@ const jhWordsDB = [
         "uk": "/ˈpepə(r)/",
         "zh": "n. 辣椒、胡椒粉、甜椒、燈籠椒；vt. 胡椒、撒胡椒粉、連續射擊、在……上撒",
         "unit": 18,
-        "example": "She shook some pepper onto her sandwich.",
-        "exampleZh": "她在她的三明治上撒了些胡椒。"
+        "example": "Put a little black pepper in the soup.",
+        "exampleZh": "在湯裡加一點黑胡椒粉。"
     },
     {
         "id": 31224,
@@ -12226,8 +12226,8 @@ const jhWordsDB = [
         "uk": "/pəˈhæps/",
         "zh": "adv. 也許、可能、大概；n. 假定、猜想",
         "unit": 18,
-        "example": "Perhaps I spoke too hastily.",
-        "exampleZh": "也許我說得太倉促了。"
+        "example": "Perhaps we can visit our grandparents tomorrow.",
+        "exampleZh": "也許我們明天可以去拜訪祖父母。"
     },
     {
         "id": 31226,
@@ -12236,8 +12236,8 @@ const jhWordsDB = [
         "uk": "/ˈpɪəriəd/",
         "zh": "n. 一段時間、時期、階段、時代；adj. 具有某個時代特徵的；adv. 到此為止、不再說了",
         "unit": 18,
-        "example": "It was a period of intense activity.",
-        "exampleZh": "那是活動激烈的時期。"
+        "example": "We rest for a short period after lunch.",
+        "exampleZh": "午餐後我們會休息一小段時間。"
     },
     {
         "id": 31227,
@@ -12256,8 +12256,8 @@ const jhWordsDB = [
         "uk": "/pet/",
         "zh": "n. 寵物、寵兒、得寵的人、寶貝；vt. 撫摸、親吻、愛撫、寵愛；adj. 很喜歡的、鍾愛的",
         "unit": 18,
-        "example": "They had had their pet dog stuffed.",
-        "exampleZh": "他們給自己的寵物狗餵了毛絨玩具。"
+        "example": "Do you have a pet at home?",
+        "exampleZh": "你家裡有養寵物嗎？"
     },
     {
         "id": 31229,
@@ -12276,8 +12276,8 @@ const jhWordsDB = [
         "uk": "/ˈfɪzɪks/",
         "zh": "n. 物理、物理學、物理特性、物理現象",
         "unit": 18,
-        "example": "Physics is his favourite science subject in junior high school.",
-        "exampleZh": "物理是他國中階段最喜歡的自然科學科目。"
+        "example": "We will study physics this term.",
+        "exampleZh": "我們這學期將研讀物理學。"
     },
     {
         "id": 31231,
@@ -12286,8 +12286,8 @@ const jhWordsDB = [
         "uk": "/piˈænəʊ/",
         "zh": "adj. 柔和的；adv. 輕柔地；n. 鋼琴",
         "unit": 18,
-        "example": "The piano was in good condition.",
-        "exampleZh": "鋼琴狀況良好。"
+        "example": "She plays the piano very well.",
+        "exampleZh": "她的鋼琴彈得非常好。"
     },
     {
         "id": 31232,
@@ -12296,8 +12296,8 @@ const jhWordsDB = [
         "uk": "/pɪk/",
         "zh": "vt. 挑選、採、摘、弄掉；n. 選擇、精華、選擇權、被選中的人",
         "unit": 18,
-        "example": "I'll pick you up at five.",
-        "exampleZh": "我五點鐘來接你。"
+        "example": "You can pick any red apple now.",
+        "exampleZh": "你現在可以挑選任何一顆紅蘋果。"
     },
     {
         "id": 31233,
@@ -12306,8 +12306,8 @@ const jhWordsDB = [
         "uk": "/ˈpɪknɪk/",
         "zh": "n. 野餐、野餐活動、野餐食物、愉快事物；vi. 參加野餐活動",
         "unit": 18,
-        "example": "We're going on a picnic tomorrow.",
-        "exampleZh": "我們明天去野餐。"
+        "example": "We had a sunny picnic in the park.",
+        "exampleZh": "我們在公園裡享受了一場陽光野餐。"
     },
     {
         "id": 31234,
@@ -12316,8 +12316,8 @@ const jhWordsDB = [
         "uk": "/ˈpɪktʃə(r)/",
         "zh": "n. 照片、圖片、繪畫、肖像；vt. 想象、繪畫、拍攝、描繪",
         "unit": 18,
-        "example": "I saw her picture everywhere.",
-        "exampleZh": "我到處都看到她的照片。"
+        "example": "The girl drew a picture of a cat.",
+        "exampleZh": "那個女孩畫了一張貓咪的圖畫。"
     },
     {
         "id": 31235,
@@ -12326,8 +12326,8 @@ const jhWordsDB = [
         "uk": "/paɪ/",
         "zh": "n. 派、餡餅、果餡餅、肉餡餅",
         "unit": 18,
-        "example": "We all had a second helping of pie.",
-        "exampleZh": "我們都吃了第二份派。"
+        "example": "Mom baked a sweet apple pie today.",
+        "exampleZh": "媽媽今天烤了一個香甜的蘋果派。"
     },
     {
         "id": 31236,
@@ -12346,8 +12346,8 @@ const jhWordsDB = [
         "uk": "/pɪɡ/",
         "zh": "n. 豬、令人討厭的人、豬玀、警官；v. 狼吞虎嚥、像豬一樣擠在一起、生小豬、操作清管器",
         "unit": 18,
-        "example": "The pig rose squealing and bolted.",
-        "exampleZh": "豬尖叫著逃跑了。"
+        "example": "The pink pig played in the mud.",
+        "exampleZh": "粉紅色的豬在泥巴裡玩耍。"
     },
     {
         "id": 31238,
@@ -12376,8 +12376,8 @@ const jhWordsDB = [
         "uk": "/ˈpɪləʊ/",
         "zh": "n. 枕頭、蕾絲枕頭、坐墊、靠墊；v. 枕著、將（頭）枕在……上、為……當枕頭",
         "unit": 18,
-        "example": "He pummelled the pillow with his fists.",
-        "exampleZh": "他用雙拳不停地捶打枕頭。"
+        "example": "This soft pillow helps me sleep well.",
+        "exampleZh": "這顆柔軟的枕頭能幫我睡個好覺。"
     },
     {
         "id": 31241,
@@ -12406,8 +12406,8 @@ const jhWordsDB = [
         "uk": "/pɪŋk/",
         "zh": "adj. 粉紅色的、臉色發紅的、同性戀的、左傾的；n. 粉紅色、粉紅色衣服或衣料、粉紅色葡萄酒、石竹；v. 發響爆聲、爆震、變成粉紅色、剪",
         "unit": 18,
-        "example": "Judi's favourite colour is pink.",
-        "exampleZh": "朱迪最喜歡的顏色是粉紅色。"
+        "example": "She wore a cute pink dress today.",
+        "exampleZh": "她今天穿了一件可愛的粉紅色洋裝。"
     },
     {
         "id": 31244,
@@ -12416,8 +12416,8 @@ const jhWordsDB = [
         "uk": "/paɪp/",
         "zh": "n. 管子、管道、菸斗、管樂器；vt. 用管道運輸、傳送、播送、用管樂器吹奏",
         "unit": 18,
-        "example": "He puffed (away) on his pipe.",
-        "exampleZh": "他（一口一口地）吸著菸斗。"
+        "example": "Water leaked from the old metal pipe.",
+        "exampleZh": "水從老舊的金屬水管中漏了出來。"
     },
     {
         "id": 31245,
@@ -12436,8 +12436,8 @@ const jhWordsDB = [
         "uk": "/pleɪs/",
         "zh": "n. 地方、地點、場所、城鎮；vt. 放置、使處於某種境地、以某種態度對待、認出",
         "unit": 18,
-        "example": "That place is a madhouse.",
-        "exampleZh": "那個地方就是瘋人院。"
+        "example": "This is a nice place to live.",
+        "exampleZh": "這是一個適合居住的好地方。"
     },
     {
         "id": 31247,
@@ -12446,8 +12446,8 @@ const jhWordsDB = [
         "uk": "/pleɪn/",
         "zh": "adj. 無裝飾的、樸素的、單色的、無花紋的；adv. 完全地、簡直、明白地、不含糊地；n. 平原、平針、樸實無華的東西",
         "unit": 18,
-        "example": "It was the plain unvarnished truth.",
-        "exampleZh": "這是簡單確鑿的事實。"
+        "example": "She wore a plain white cotton shirt.",
+        "exampleZh": "她穿了一件純白棉質襯衫。"
     },
     {
         "id": 31248,
@@ -12466,8 +12466,8 @@ const jhWordsDB = [
         "uk": "/ˈplænɪt/",
         "zh": "n. 行星、地球、命運星辰",
         "unit": 18,
-        "example": "Saturn is the second biggest planet in the solar system.",
-        "exampleZh": "土星是太陽系的第二大的行星。"
+        "example": "The Earth is our green home planet.",
+        "exampleZh": "地球是我們綠色的家園行星。"
     },
     {
         "id": 31250,
@@ -12476,8 +12476,8 @@ const jhWordsDB = [
         "uk": "/plɑːnt/",
         "zh": "n. 植物、工廠、發電廠、房屋；vt. 種植、栽種、灌輸、栽贓",
         "unit": 18,
-        "example": "This plant is a vigorous grower.",
-        "exampleZh": "這種植物生長旺盛。"
+        "example": "Water the small green plant every day.",
+        "exampleZh": "每天給這株綠色小植物澆水。"
     },
     {
         "id": 31251,
@@ -12496,8 +12496,8 @@ const jhWordsDB = [
         "uk": "/ˈplætfɔːm/",
         "zh": "n. 月臺、平臺、講臺、舞臺",
         "unit": 18,
-        "example": "The platform began to produce oil in 1994.",
-        "exampleZh": "1994年，這個鑽井平臺開始產油。"
+        "example": "Wait for the train on platform two.",
+        "exampleZh": "在第二月台等火車。"
     },
     {
         "id": 31253,
@@ -12556,8 +12556,8 @@ const jhWordsDB = [
         "uk": "/plʌs/",
         "zh": "prep. 加上、加、外加、而且；adj. 多、餘、略高於標準的、零上的；n. 優勢、加號、正號、加法；conj. 而且、加上",
         "unit": 18,
-        "example": "Two plus five is seven.",
-        "exampleZh": "二加五等於七。"
+        "example": "Two plus two is four.",
+        "exampleZh": "二加二等於四。"
     },
     {
         "id": 31259,
@@ -12576,8 +12576,8 @@ const jhWordsDB = [
         "uk": "/ˈpəʊɪm/",
         "zh": "n. 詩、韻文",
         "unit": 18,
-        "example": "The poem uses simple language.",
-        "exampleZh": "這首詩用語簡單。"
+        "example": "He wrote a short poem today.",
+        "exampleZh": "他今天寫了一首短詩。"
     },
     {
         "id": 31261,
@@ -12586,8 +12586,8 @@ const jhWordsDB = [
         "uk": "/ˈpəʊɪt/",
         "zh": "n. 詩人",
         "unit": 18,
-        "example": "He is a very underrated poet.",
-        "exampleZh": "他是個嚴重被低估了的詩人。"
+        "example": "My uncle is a famous poet.",
+        "exampleZh": "我的叔叔是一位著名的詩人。"
     },
     {
         "id": 31262,
@@ -12596,8 +12596,8 @@ const jhWordsDB = [
         "uk": "/pɔɪnt/",
         "zh": "n. 點、觀點、論點、要點；v. 指出、指、指向、對準",
         "unit": 18,
-        "example": "This last point is crucial.",
-        "exampleZh": "最後一點至關重要。"
+        "example": "He used a stick to point north.",
+        "exampleZh": "他用木棍指向北方。"
     },
     {
         "id": 31263,
@@ -12606,8 +12606,8 @@ const jhWordsDB = [
         "uk": "/ˈpɔɪz(ə)n/",
         "zh": "n. 毒藥、有害的思想、惡毒的言辭、抑制劑；v. 毒殺、在……下毒、毒化、敗壞；adj. 有毒的",
         "unit": 18,
-        "example": "Some mushrooms contain a deadly poison.",
-        "exampleZh": "有些蘑菇含有致命毒素。"
+        "example": "That bottle has strong poison inside.",
+        "exampleZh": "那個瓶子裡面有劇毒。"
     },
     {
         "id": 31264,
@@ -12616,8 +12616,8 @@ const jhWordsDB = [
         "uk": "/pəˈliːs/",
         "zh": "n. 警察、警察部門；vt. 巡查、維護治安、監督、管制",
         "unit": 18,
-        "example": "Police work is mainly routine.",
-        "exampleZh": "警察的工作主要是日常工作。"
+        "example": "Call the police if you need help.",
+        "exampleZh": "如果你需要協助就報警。"
     },
     {
         "id": 31265,
@@ -12626,8 +12626,8 @@ const jhWordsDB = [
         "uk": "/pəˈlaɪt/",
         "zh": "adj. 有禮貌的、客氣的、禮節性的、客套的",
         "unit": 18,
-        "example": "We made polite, stilted conversation.",
-        "exampleZh": "我們進行了禮貌而生硬的交談。"
+        "example": "Always be polite when you talk to others.",
+        "exampleZh": "與他人交談時總是要有禮貌。"
     },
     {
         "id": 31266,
@@ -12656,8 +12656,8 @@ const jhWordsDB = [
         "uk": "/pɒnd/",
         "zh": "n. 池塘、大西洋；v. 攔截（或築壩堵塞）（流水或其他流動液體）以形成小湖、形成小湖",
         "unit": 18,
-        "example": "The evening breeze ruffled the pond.",
-        "exampleZh": "晚風吹動了池塘。"
+        "example": "Small frogs swim in the quiet pond.",
+        "exampleZh": "小青蛙在安靜的池塘裡游泳。"
     },
     {
         "id": 31269,
@@ -12666,8 +12666,8 @@ const jhWordsDB = [
         "uk": "/puːl/",
         "zh": "n. 水池、游泳池、池塘、水坑；vt. 集中（資源等）共用、湊集",
         "unit": 18,
-        "example": "Does the hotel have a pool?",
-        "exampleZh": "飯店有游泳池嗎？"
+        "example": "The kids swim in the pool daily.",
+        "exampleZh": "孩子們每天都在游泳池游泳。"
     },
     {
         "id": 31270,
@@ -12676,8 +12676,8 @@ const jhWordsDB = [
         "uk": "/pɔː(r); pʊə(r)/",
         "zh": "adj. 貧窮的、可憐的、不幸的、虛弱的",
         "unit": 18,
-        "example": "He passionately championed the poor.",
-        "exampleZh": "他熱情地支持窮人。"
+        "example": "The poor boy had no warm shoes.",
+        "exampleZh": "那個可憐的男孩沒有保暖的鞋子。"
     },
     {
         "id": 31271,
@@ -12686,8 +12686,8 @@ const jhWordsDB = [
         "uk": "/ˈpɒpkɔːn/",
         "zh": "n. 爆米花、爆玉米花、爆裂玉米",
         "unit": 18,
-        "example": "Linda lay face down on a living room couch, nibbling popcorn.",
-        "exampleZh": "琳達臉朝下躺在客廳的沙發上，啃著爆米花。"
+        "example": "We ate sweet popcorn at the movies.",
+        "exampleZh": "我們看電影時吃了甜爆米花。"
     },
     {
         "id": 31272,
@@ -12696,8 +12696,8 @@ const jhWordsDB = [
         "uk": "/ˈpɒpjələ(r)/",
         "zh": "adj. 受歡迎的、受大眾喜愛的、普遍的、通俗的",
         "unit": 18,
-        "example": "The restaurant is deservedly popular.",
-        "exampleZh": "這家餐廳當之無愧地很受歡迎。"
+        "example": "This song is very popular among young people.",
+        "exampleZh": "這首歌在年輕人之間非常受歡迎。"
     },
     {
         "id": 31273,
@@ -12706,8 +12706,8 @@ const jhWordsDB = [
         "uk": "/ˌpɒpjuˈleɪʃ(ə)n/",
         "zh": "n. 人口、人口數量、生物、族群",
         "unit": 18,
-        "example": "The population continues to increase.",
-        "exampleZh": "人口持續增長。"
+        "example": "The city has a large population.",
+        "exampleZh": "這座城市人口眾多。"
     },
     {
         "id": 31274,
@@ -12726,8 +12726,8 @@ const jhWordsDB = [
         "uk": "/pɔːt/",
         "zh": "n. 港口、避風港、口岸、港口城市；v. 轉移、移植、使（船，舵）向左轉、斜持槍",
         "unit": 18,
-        "example": "The ship steered into port.",
-        "exampleZh": "船駛進港口。"
+        "example": "The big ship came to port.",
+        "exampleZh": "大船開進了港口。"
     },
     {
         "id": 31276,
@@ -12736,8 +12736,8 @@ const jhWordsDB = [
         "uk": "/pəʊz/",
         "zh": "v. 姿勢、造成、引起、提出；n. 裝腔作勢、姿勢、故作姿態",
         "unit": 18,
-        "example": "She rearranged herself in another pose.",
-        "exampleZh": "她重新擺了個姿勢。"
+        "example": "She held a pose for photos.",
+        "exampleZh": "她擺了一個姿勢拍照。"
     },
     {
         "id": 31277,
@@ -12746,8 +12746,8 @@ const jhWordsDB = [
         "uk": "/pəˈzɪʃ(ə)n/",
         "zh": "n. 位置、職位、立場、姿勢；vt. 安置、定位",
         "unit": 18,
-        "example": "My position is quite different.",
-        "exampleZh": "我的立場則截然不同。"
+        "example": "He took his position on the team.",
+        "exampleZh": "他在隊伍中就定位了。"
     },
     {
         "id": 31278,
@@ -12756,8 +12756,8 @@ const jhWordsDB = [
         "uk": "/ˈpɒzətɪv/",
         "zh": "adj. 肯定的、樂觀的、有信心的、積極的；n. 優勢、優點、陽性結果、正片",
         "unit": 18,
-        "example": "The athlete tested positive for steroids.",
-        "exampleZh": "這個運動員類固醇檢測呈陽性。"
+        "example": "He always keeps a positive mind.",
+        "exampleZh": "他總是保持積極的心態。"
     },
     {
         "id": 31279,
@@ -12766,8 +12766,8 @@ const jhWordsDB = [
         "uk": "/ˈpɒsəb(ə)l/",
         "zh": "adj. 有可能的、可能的、可能做到的、可能發生的；n. 可能適合的人、可能性、能完成的事、最高分",
         "unit": 18,
-        "example": "Many possible orderings may exist.",
-        "exampleZh": "可能存在許多可能的排序。"
+        "example": "Is it possible to come here today?",
+        "exampleZh": "今天有可能來這裡嗎？"
     },
     {
         "id": 31280,
@@ -12806,8 +12806,8 @@ const jhWordsDB = [
         "uk": "/paʊnd/",
         "zh": "n. 磅、英鎊、一英鎊紙幣、一鎊紙幣；v. 連續重擊、猛打、劇烈地跳動、劇痛",
         "unit": 18,
-        "example": "They cost two dollars a pound.",
-        "exampleZh": "這些東西每磅兩元。"
+        "example": "I bought a pound of apples.",
+        "exampleZh": "我買了一磅蘋果。"
     },
     {
         "id": 31284,
@@ -12826,8 +12826,8 @@ const jhWordsDB = [
         "uk": "/ˈpaʊə(r)/",
         "zh": "n. 力量、權力、電力、動力；vt. 驅動、推動；adj. 電力的、強大的",
         "unit": 18,
-        "example": "They've switched off the power.",
-        "exampleZh": "他們已經關掉了電源。"
+        "example": "The storm cut the power last night.",
+        "exampleZh": "昨晚的暴風雨切斷了電力。"
     },
     {
         "id": 31286,
@@ -12836,8 +12836,8 @@ const jhWordsDB = [
         "uk": "/ˈpræktɪs/",
         "zh": "n. 練習、實踐、實際操作、通常的做法；v. 實踐、練習、經常做、養成……的習慣",
         "unit": 18,
-        "example": "She runs a general practice in Hull.",
-        "exampleZh": "她在赫爾開了個全科診所。"
+        "example": "You must practice tennis every single day.",
+        "exampleZh": "你必須每一天都練習網球。"
     },
     {
         "id": 31287,
@@ -12866,8 +12866,8 @@ const jhWordsDB = [
         "uk": "/ˈpreʃəs/",
         "zh": "adj. 珍貴的、寶貴的、珍視的、重要的；n. 寶貝、親愛的；adv. 非常、極其",
         "unit": 18,
-        "example": "Her family's support is particularly precious to Josie.",
-        "exampleZh": "家人的支援對喬茜尤為珍貴。"
+        "example": "Water is precious to all life.",
+        "exampleZh": "水對所有的生命都很寶貴。"
     },
     {
         "id": 31290,
@@ -12876,8 +12876,8 @@ const jhWordsDB = [
         "uk": "/prɪˈfɜː(r)/",
         "zh": "vt. 較喜歡、更喜愛、寧可、舉報",
         "unit": 18,
-        "example": "I prefer walking to climbing.",
-        "exampleZh": "比起爬山，我更喜歡步行。"
+        "example": "I prefer drinking green tea to coffee.",
+        "exampleZh": "比起咖啡，我更喜歡喝綠茶。"
     },
     {
         "id": 31291,
@@ -12896,8 +12896,8 @@ const jhWordsDB = [
         "uk": "/ˈprez(ə)ns/",
         "zh": "n. 存在、出席、所在地方、感覺中的存在物",
         "unit": 18,
-        "example": "His presence no longer signified.",
-        "exampleZh": "他在不在場已不重要。"
+        "example": "We were glad of his presence.",
+        "exampleZh": "我們很高興他在場。"
     },
     {
         "id": 31293,
@@ -12906,8 +12906,8 @@ const jhWordsDB = [
         "uk": "/ˈprez(ə)nt; prɪˈzent/",
         "zh": "adj. 現在的、在場的、出席的、存在的；n. 現在、目前、禮物、贈品；vt. 呈現、頒發、贈送、出示",
         "unit": 18,
-        "example": "Her letters conflate past and present.",
-        "exampleZh": "她的信把過去與現在結合在一起。"
+        "example": "I bought a nice present today.",
+        "exampleZh": "我今天買了一份很棒的禮物。"
     },
     {
         "id": 31294,
@@ -12916,8 +12916,8 @@ const jhWordsDB = [
         "uk": "/ˈprezɪdənt/",
         "zh": "n. 總統、校長、國家主席、負責人",
         "unit": 18,
-        "example": "Who succeeded Kennedy as President?",
-        "exampleZh": "接替肯尼迪任總統的是誰？"
+        "example": "He wants to be the president.",
+        "exampleZh": "他想成為總統。"
     },
     {
         "id": 31295,
@@ -12926,8 +12926,8 @@ const jhWordsDB = [
         "uk": "/ˈpreʃə(r)/",
         "zh": "n. 壓力、擠壓、壓強、心理壓力；vt. 對……施加壓力、強迫、使……增壓",
         "unit": 18,
-        "example": "The pressure now was relentless.",
-        "exampleZh": "壓力現在毫無減弱之意。"
+        "example": "He can work well under pressure.",
+        "exampleZh": "他在壓力下能把工作做好。"
     },
     {
         "id": 31296,
@@ -12936,8 +12936,8 @@ const jhWordsDB = [
         "uk": "/ˈprɪti/",
         "zh": "adj. 漂亮的、標緻的、悅目的、悅耳的；adv. 相當、頗、非常、很；n. 漂亮東西、漂亮的人、漂亮的孩子；v. 裝飾、使漂亮",
         "unit": 18,
-        "example": "The results were pretty good.",
-        "exampleZh": "結果非常好。"
+        "example": "She wears a very pretty red dress.",
+        "exampleZh": "她穿著一件非常漂亮的紅洋裝。"
     },
     {
         "id": 31297,
@@ -12946,8 +12946,8 @@ const jhWordsDB = [
         "uk": "/praɪs/",
         "zh": "n. 價格、代價、開價、價碼；vt. 定價、為……定價、給（商店中的產品）標價、比較……的價格",
         "unit": 18,
-        "example": "The price was not negotiable.",
-        "exampleZh": "價格沒商量。"
+        "example": "The price of food is very high.",
+        "exampleZh": "食物的價格非常高。"
     },
     {
         "id": 31298,
@@ -12956,8 +12956,8 @@ const jhWordsDB = [
         "uk": "/praɪd/",
         "zh": "n. 自豪、自尊、傲慢、自負；vt. 以……自豪",
         "unit": 18,
-        "example": "His words rang with pride.",
-        "exampleZh": "他的話充滿了驕傲。"
+        "example": "He took pride in his work.",
+        "exampleZh": "他為自己的工作感到自豪。"
     },
     {
         "id": 31299,
@@ -12966,8 +12966,8 @@ const jhWordsDB = [
         "uk": "/priːst/",
         "zh": "n. 神父、牧師、神職人員、木漁槌；v. 任命……為司鐸",
         "unit": 18,
-        "example": "The priest anointed her with oil.",
-        "exampleZh": "神父為她傅油。"
+        "example": "The kind priest prayed for us.",
+        "exampleZh": "那位善良的神父為我們祈禱。"
     },
     {
         "id": 31300,
@@ -12976,8 +12976,8 @@ const jhWordsDB = [
         "uk": "/ˈpraɪməri/",
         "zh": "adj. 主要的、首要的、小學教育的、初級教育的；n. 初選、原色、初級飛羽",
         "unit": 18,
-        "example": "We turn now to our primary question.",
-        "exampleZh": "我們現在轉到我們的主要問題上。"
+        "example": "My girl goes to primary school.",
+        "exampleZh": "我的女兒就讀小學。"
     },
     {
         "id": 31301,
@@ -12986,8 +12986,8 @@ const jhWordsDB = [
         "uk": "/prɪns/",
         "zh": "n. 王子、王孫、國君、親王",
         "unit": 18,
-        "example": "The prince should be plunged into work.",
-        "exampleZh": "應該趕緊讓王子投入工作。"
+        "example": "The young prince lives in peace.",
+        "exampleZh": "這位年輕的王子生活在和平中。"
     },
     {
         "id": 31302,
@@ -13026,8 +13026,8 @@ const jhWordsDB = [
         "uk": "/ˈprɪz(ə)n/",
         "zh": "n. 監獄、牢房、監禁、監獄制度；v. 禁錮、關押",
         "unit": 18,
-        "example": "The prison is infested with rats.",
-        "exampleZh": "那座監獄裡鼠滿為患。"
+        "example": "The bad man went to prison.",
+        "exampleZh": "那個壞人進了監獄。"
     },
     {
         "id": 31306,
@@ -13046,8 +13046,8 @@ const jhWordsDB = [
         "uk": "/praɪz/",
         "zh": "n. 獎品、獎項、非常珍貴的人、十分重要的人；adj. 可獲獎的、優等的、作為獎品的、獲獎的；vt. 珍視、高度重視、撬開、竭力打探",
         "unit": 18,
-        "example": "She stepped up to receive her prize.",
-        "exampleZh": "她走上前去領獎。"
+        "example": "She won first prize at school.",
+        "exampleZh": "她在學校獲得了頭獎。"
     },
     {
         "id": 31308,
@@ -13056,8 +13056,8 @@ const jhWordsDB = [
         "uk": "/ˈprɒbəbli/",
         "zh": "adv. 或許、大概",
         "unit": 18,
-        "example": "It was probably infested with cooties.",
-        "exampleZh": "它可能是染上蝨子了。"
+        "example": "He will probably arrive here soon.",
+        "exampleZh": "他大概很快就會到達這裡。"
     },
     {
         "id": 31309,
@@ -13066,8 +13066,8 @@ const jhWordsDB = [
         "uk": "/ˈprɒbləm/",
         "zh": "n. 問題、難題、困難、疾病；adj. 難對付的、成問題的",
         "unit": 18,
-        "example": "The problem is well documented.",
-        "exampleZh": "該問題有詳細記錄。"
+        "example": "I can solve this math problem easily.",
+        "exampleZh": "我可以輕易解出這道數學題。"
     },
     {
         "id": 31310,
@@ -13076,8 +13076,8 @@ const jhWordsDB = [
         "uk": "/prəˈdjuːs/",
         "zh": "vt. 製造、引起、造成、生產；n. 農產品、成果、結果",
         "unit": 18,
-        "example": "We sell only fresh local produce.",
-        "exampleZh": "我們只售當地的新鮮農產品。"
+        "example": "These trees produce sweet red fruit.",
+        "exampleZh": "這些樹結出甜甜的紅果實。"
     },
     {
         "id": 31311,
@@ -13096,8 +13096,8 @@ const jhWordsDB = [
         "uk": "/prəˈfesə(r)/",
         "zh": "n. 教授、講師、教員、信仰表示者",
         "unit": 18,
-        "example": "His grandfather was a professor.",
-        "exampleZh": "他爺爺曾是位教授。"
+        "example": "The old professor gave a talk.",
+        "exampleZh": "那位老教授發表演講。"
     },
     {
         "id": 31313,
@@ -13116,8 +13116,8 @@ const jhWordsDB = [
         "uk": "/ˈprəʊɡres/",
         "zh": "n. 進步、進展、前進、行進；v. 進步、進展、使（任務，事業）取得持續進展、推移",
         "unit": 18,
-        "example": "Progress is maddeningly slow.",
-        "exampleZh": "進展慢得令人心煩。"
+        "example": "She made good progress this week.",
+        "exampleZh": "她這週取得了很好的進步。"
     },
     {
         "id": 31315,
@@ -13126,8 +13126,8 @@ const jhWordsDB = [
         "uk": "/ˈprɒdʒekt; prəˈdʒekt/",
         "zh": "n. 項目、專案、計劃、課題；v. 投射、預計、推算、計劃",
         "unit": 18,
-        "example": "The whole project was badly managed.",
-        "exampleZh": "整個專案管理得差勁。"
+        "example": "We will work on this project.",
+        "exampleZh": "我們將會進行這個專案。"
     },
     {
         "id": 31316,
@@ -13136,8 +13136,8 @@ const jhWordsDB = [
         "uk": "/ˈprɒmɪs/",
         "zh": "vt. 承諾、保證、使很可能、預示；n. 承諾、諾言、前途",
         "unit": 18,
-        "example": "Their future was full of promise.",
-        "exampleZh": "他們的前途希望無窮。"
+        "example": "I promise to help you now.",
+        "exampleZh": "我答應現在幫你。"
     },
     {
         "id": 31317,
@@ -13146,8 +13146,8 @@ const jhWordsDB = [
         "uk": "/prəˈnaʊns/",
         "zh": "vt. 發音、發、讀、正式宣佈",
         "unit": 18,
-        "example": "The judge will pronounce sentence today.",
-        "exampleZh": "法官今天將宣判。"
+        "example": "How do you pronounce this long word?",
+        "exampleZh": "你怎麼發這個長單字的音？"
     },
     {
         "id": 31318,
@@ -13156,8 +13156,8 @@ const jhWordsDB = [
         "uk": "/prəˈtekt/",
         "zh": "vt. 保護、防護、投保、為……買保險",
         "unit": 18,
-        "example": "Women banded together to protect each other.",
-        "exampleZh": "婦女們團結起來互相保護。"
+        "example": "A warm hat will protect your head.",
+        "exampleZh": "一頂保暖的帽子能保護你的頭部。"
     },
     {
         "id": 31319,
@@ -13166,8 +13166,8 @@ const jhWordsDB = [
         "uk": "/praʊd/",
         "zh": "adj. 驕傲的、自豪的、得意的、令人自豪的",
         "unit": 18,
-        "example": "I'm proud of my Italian roots.",
-        "exampleZh": "我為我的義大利血統感到自豪。"
+        "example": "Her parents were proud of her good grades.",
+        "exampleZh": "她的父母為她的好成績感到自豪。"
     },
     {
         "id": 31320,
@@ -13176,8 +13176,8 @@ const jhWordsDB = [
         "uk": "/pruːv/",
         "zh": "vt. 證明、證實、證明是、結果是",
         "unit": 18,
-        "example": "This advice was to prove valuable.",
-        "exampleZh": "事實證明，這個建議很有價值。"
+        "example": "Can you prove that this is true?",
+        "exampleZh": "你能證明這是真的嗎？"
     },
     {
         "id": 31321,
@@ -13186,8 +13186,8 @@ const jhWordsDB = [
         "uk": "/prəˈvaɪd/",
         "zh": "vt. 提供、供給、配備、準備好",
         "unit": 18,
-        "example": "He refused to provide a specimen.",
-        "exampleZh": "他拒絕提供樣本。"
+        "example": "They provide warm meals to poor people.",
+        "exampleZh": "他們提供熱食給貧困的人們。"
     },
     {
         "id": 31322,
@@ -13196,8 +13196,8 @@ const jhWordsDB = [
         "uk": "/ˈpʌblɪk/",
         "zh": "adj. 公共的、公眾的、大眾的、公用的；n. 公眾、大眾、志趣相投（或從事同一類活動、具有共同特徵）的群體、讀者",
         "unit": 18,
-        "example": "She retreated from public life.",
-        "exampleZh": "她退出了公眾生活。"
+        "example": "Do not yell in public places, please.",
+        "exampleZh": "在公共場所請不要大聲喊叫。"
     },
     {
         "id": 31323,
@@ -13226,8 +13226,8 @@ const jhWordsDB = [
         "uk": "/ˈpʌmpkɪn/",
         "zh": "n. 南瓜、倭瓜、南瓜藤、小南瓜",
         "unit": 18,
-        "example": "Pumpkin pie is a traditional American dish served on Thanksgiving.",
-        "exampleZh": "南瓜餡餅是美國傳統的感恩節食物。"
+        "example": "We made soup with fresh pumpkin.",
+        "exampleZh": "我們用新鮮的南瓜煮了湯。"
     },
     {
         "id": 31326,
@@ -13236,8 +13236,8 @@ const jhWordsDB = [
         "uk": "/ˈpʌnɪʃ/",
         "zh": "vt. 處罰、懲罰、懲處、利用",
         "unit": 18,
-        "example": "I don't believe that George ever had to punish the children.",
-        "exampleZh": "我不認為喬治必須懲罰孩子。"
+        "example": "Teachers should not punish students without reason.",
+        "exampleZh": "老師不應該無故處罰學生。"
     },
     {
         "id": 31327,
@@ -13246,8 +13246,8 @@ const jhWordsDB = [
         "uk": "/ˈpʌpi/",
         "zh": "n. 小狗、幼犬、自負（或傲慢）的年輕人、玩意兒",
         "unit": 18,
-        "example": "A puppy stepped in the fresh cement.",
-        "exampleZh": "一隻小狗走到新鋪的水泥路面上。"
+        "example": "The cute puppy ran to me.",
+        "exampleZh": "那隻可愛的小狗向我跑來。"
     },
     {
         "id": 31328,
@@ -13256,8 +13256,8 @@ const jhWordsDB = [
         "uk": "/ˈpɜːp(ə)l/",
         "zh": "adj. 紫色的、紫紅色的、詞藻華麗的、華而不實的；n. 紫色、紫紅色、紫色衣服、深紅色染料；v. 成紫色、發紫",
         "unit": 18,
-        "example": "She was dressed in purple.",
-        "exampleZh": "她穿著紫色衣服。"
+        "example": "She wore a lovely purple dress today.",
+        "exampleZh": "她今天穿了一件可愛的紫色洋裝。"
     },
     {
         "id": 31329,
@@ -13266,8 +13266,8 @@ const jhWordsDB = [
         "uk": "/ˈpɜːpəs/",
         "zh": "n. 目的、意圖、目標、計劃；v. 有意、打算",
         "unit": 18,
-        "example": "The purpose of industry is to create wealth.",
-        "exampleZh": "工業的目的是創造財富。"
+        "example": "What is the purpose of your visit?",
+        "exampleZh": "你這次造訪的目的是什麼？"
     },
     {
         "id": 31330,
@@ -13306,8 +13306,8 @@ const jhWordsDB = [
         "uk": "/ˈpʌz(ə)l/",
         "zh": "v. 使困惑、使迷惑、苦思、冥思苦想；n. 拼圖遊戲、測驗智力（或知識）的遊戲、拼圖玩具",
         "unit": 18,
-        "example": "The rise in accidents remains a puzzle.",
-        "exampleZh": "事故的增多仍是個謎。"
+        "example": "This puzzle is fun to solve.",
+        "exampleZh": "這個拼圖玩起來很有趣。"
     },
     {
         "id": 31334,
@@ -13316,8 +13316,8 @@ const jhWordsDB = [
         "uk": "/ˈkwɒləti/",
         "zh": "n. 品質、質量、優質、上乘；adj. 優質的、高質量的、內容嚴肅的、高階的",
         "unit": 18,
-        "example": "The quality is uniformly high.",
-        "exampleZh": "質量一律很高。"
+        "example": "This shop sells good quality food.",
+        "exampleZh": "這家店販售品質優良的食物。"
     },
     {
         "id": 31335,
@@ -13326,8 +13326,8 @@ const jhWordsDB = [
         "uk": "/ˈkwɒntəti/",
         "zh": "n. 量、數目、大量、大批",
         "unit": 18,
-        "example": "Is it available in sufficient quantity?",
-        "exampleZh": "這東西能不能足量供應？"
+        "example": "We buy food in large quantity.",
+        "exampleZh": "我們大量購買食物。"
     },
     {
         "id": 31336,
@@ -13336,8 +13336,8 @@ const jhWordsDB = [
         "uk": "/ˈkwɔːtə(r)/",
         "zh": "n. 四分之一、一刻鐘、十五分鐘、季度；vt. 將……四等分、把……降至原先的四分之一、提供食宿、在（某處）來回走動；adj. 四分之一的",
         "unit": 18,
-        "example": "Nowitzki fouled Mitchell early in the third quarter.",
-        "exampleZh": "在第三節早些時候，諾維斯基就對米切爾犯了規。"
+        "example": "It is a quarter past five.",
+        "exampleZh": "現在是五點十五分。"
     },
     {
         "id": 31337,
@@ -13346,8 +13346,8 @@ const jhWordsDB = [
         "uk": "/kwiːn/",
         "zh": "n. 女王、女首領、王后、出眾的女子；v. 使（兵）變後、對……擺架子、對……專橫跋扈、使……成為女王或王后",
         "unit": 18,
-        "example": "She curtsied to the Queen.",
-        "exampleZh": "她向女王行屈膝禮。"
+        "example": "The queen wore a shiny gold crown.",
+        "exampleZh": "女王戴著一頂閃亮的金王冠。"
     },
     {
         "id": 31338,
@@ -13376,8 +13376,8 @@ const jhWordsDB = [
         "uk": "/ˈkwaɪət/",
         "zh": "adj. 安靜的、輕聲的、不出聲的、沉默寡言的；n. 寧靜、安靜、靜謐；v. 平靜、安靜、消除、減輕",
         "unit": 18,
-        "example": "'Be quiet,' said the teacher.",
-        "exampleZh": "“安靜點！”老師說道。"
+        "example": "Please be quiet in the study room.",
+        "exampleZh": "在書房裡請保持安靜。"
     },
     {
         "id": 31341,
@@ -13406,8 +13406,8 @@ const jhWordsDB = [
         "uk": "/kwɪz/",
         "zh": "n. 問答比賽、智力競賽、小測驗、詢問；vt. 詢問、審問、測驗、好奇地（或仔細地）打量",
         "unit": 18,
-        "example": "Have you entered your name for the quiz yet?",
-        "exampleZh": "你申請參加這次問答比賽了嗎？"
+        "example": "We took a short math quiz.",
+        "exampleZh": "我們做了一次簡短的數學小考。"
     },
     {
         "id": 31344,
@@ -13416,8 +13416,8 @@ const jhWordsDB = [
         "uk": "/ˈræbɪt/",
         "zh": "n. 兔子、兔、兔肉、兔毛；v. 獵兔、喋喋不休、嘮叨、快速移動",
         "unit": 18,
-        "example": "The dog scented a rabbit.",
-        "exampleZh": "狗嗅到了兔子的氣息。"
+        "example": "The white rabbit likes sweet grass.",
+        "exampleZh": "那隻白兔喜歡甜甜的草。"
     },
     {
         "id": 31345,
@@ -13426,8 +13426,8 @@ const jhWordsDB = [
         "uk": "/reɪs/",
         "zh": "n. 種族、賽跑、速度競賽、競爭；v. 賽跑、比賽、參加比賽、使（動物或車輛）參賽參賽",
         "unit": 18,
-        "example": "He finished fifth in the race.",
-        "exampleZh": "他在比賽中獲得第五名。"
+        "example": "He won the ten mile race today.",
+        "exampleZh": "他今天贏得了十英里的比賽。"
     },
     {
         "id": 31346,
@@ -13436,8 +13436,8 @@ const jhWordsDB = [
         "uk": "/ˈreɪdiəʊ/",
         "zh": "n. 收音機、無線電收發裝置、無線電通訊、無線電廣播節目；vt. 用無線電通訊",
         "unit": 18,
-        "example": "The radio crackled into life.",
-        "exampleZh": "收音機噼裡啪啦地響了起來。"
+        "example": "My father likes to hear the radio.",
+        "exampleZh": "我父親喜歡聽收音機廣播。"
     },
     {
         "id": 31347,
@@ -13446,8 +13446,8 @@ const jhWordsDB = [
         "uk": "/ˈreɪlrəʊd/",
         "zh": "n. 鐵路、鐵軌、鐵路公司、鐵路部門；vt. 迫使……倉促行事、強迫……做、迫使……草率透過、輕率判處",
         "unit": 18,
-        "example": "Court decisions always went against railroad workers.",
-        "exampleZh": "法院的判決總是對鐵路工人不利。"
+        "example": "Do not walk on the railroad tracks.",
+        "exampleZh": "不要走在鐵軌上面。"
     },
     {
         "id": 31348,
@@ -13456,8 +13456,8 @@ const jhWordsDB = [
         "uk": "/reɪn/",
         "zh": "n. 雨、雨水、雨季、一陣；v. 下雨、大量降落、雨點般落下、如雨般地猛擊",
         "unit": 18,
-        "example": "The rain continued unabated.",
-        "exampleZh": "雨一直下個不停。"
+        "example": "I like to walk in the rain.",
+        "exampleZh": "我喜歡在雨中漫步。"
     },
     {
         "id": 31349,
@@ -13466,8 +13466,8 @@ const jhWordsDB = [
         "uk": "/ˈreɪnbəʊ/",
         "zh": "n. 彩虹、眾多花色品種、五顏六色的組合、五花八門的聚合；adj. 不同種族（或文化等）人群的",
         "unit": 18,
-        "example": "Finally the rainbow disappeared.",
-        "exampleZh": "最後彩虹消失了。"
+        "example": "A bright rainbow rose in the sky.",
+        "exampleZh": "一道明亮的彩虹出現在天空中。"
     },
     {
         "id": 31350,
@@ -13476,8 +13476,8 @@ const jhWordsDB = [
         "uk": "/ˈreɪni/",
         "zh": "adj. 多雨的、下雨的",
         "unit": 18,
-        "example": "The rainy season in the Andes normally starts in December.",
-        "exampleZh": "安第斯山脈的雨季通常從十二月開始。"
+        "example": "Take an umbrella on a rainy day.",
+        "exampleZh": "在下雨天要帶一把傘。"
     },
     {
         "id": 31351,
@@ -13486,8 +13486,8 @@ const jhWordsDB = [
         "uk": "/reɪz/",
         "zh": "vt. 提高、提起、舉起、直立；n. 加薪、賭注加碼、（持槓鈴時的）提",
         "unit": 18,
-        "example": "How can we raise standards in schools?",
-        "exampleZh": "我們怎樣才能提高學校的標準？"
+        "example": "Please raise your hand to speak up.",
+        "exampleZh": "想要發言請先舉手。"
     },
     {
         "id": 31352,
@@ -13496,8 +13496,8 @@ const jhWordsDB = [
         "uk": "/reɪndʒ/",
         "zh": "n. 範圍、界限、視覺（或聽覺）範圍、射程；vi. 變化、變動、排列、排序；adj. 有秩序的、安定的",
         "unit": 18,
-        "example": "We stock a wide range of perfumes.",
-        "exampleZh": "我們備有各種各樣的香水。"
+        "example": "The shop has a wide range.",
+        "exampleZh": "這家商店的種類範圍很廣。"
     },
     {
         "id": 31353,
@@ -13506,8 +13506,8 @@ const jhWordsDB = [
         "uk": "/reə(r)/",
         "zh": "adj. 稀少的、少見的、不常發生的、稀罕的",
         "unit": 18,
-        "example": "This species is extremely rare.",
-        "exampleZh": "該品種極為罕見。"
+        "example": "It is rare to see snow here.",
+        "exampleZh": "在這裡看見下雪是很罕見的。"
     },
     {
         "id": 31354,
@@ -13516,8 +13516,8 @@ const jhWordsDB = [
         "uk": "/ræt/",
         "zh": "n. 老鼠、卑鄙小人、常客、常待在某處的人；vi. 捕（捉）老鼠、滅鼠、告發、告密；int. 胡說、去你的",
         "unit": 18,
-        "example": "He held his breath as a rat scuttled past.",
-        "exampleZh": "當一隻老鼠疾馳而過時，他屏住了呼吸。"
+        "example": "A brown rat ran across the room.",
+        "exampleZh": "一隻棕色的老鼠跑過了房間。"
     },
     {
         "id": 31355,
@@ -13526,8 +13526,8 @@ const jhWordsDB = [
         "uk": "/ˈrɑːðə(r)/",
         "zh": "adv. 稍微、頗、相當、寧願；int. 當然、的確",
         "unit": 18,
-        "example": "The leaves taste rather bitter.",
-        "exampleZh": "葉子的味道比較苦。"
+        "example": "I would rather stay home than go.",
+        "exampleZh": "我寧願待在家裡也不想出門。"
     },
     {
         "id": 31356,
@@ -13536,8 +13536,8 @@ const jhWordsDB = [
         "uk": "/riːtʃ/",
         "zh": "v. 到達、抵達、被看見、被聽到；n. 伸出、伸手可及的距離、可到達的距離、能及的範圍",
         "unit": 18,
-        "example": "I can't reach the top shelf.",
-        "exampleZh": "我搆不到最上面的架子。"
+        "example": "Can you reach that high book shelf?",
+        "exampleZh": "你碰得到那麼高的書架嗎？"
     },
     {
         "id": 31357,
@@ -13546,8 +13546,8 @@ const jhWordsDB = [
         "uk": "/riːd/",
         "zh": "v. 閱讀、讀懂、朗讀、讀到；n. 閱讀、閱讀時間、讀物、解釋；adj. 博學的、有學問的",
         "unit": 18,
-        "example": "What does the thermometer read?",
-        "exampleZh": "溫度計的讀數是什麼？"
+        "example": "I like to read books before bed.",
+        "exampleZh": "我喜歡在睡前看書。"
     },
     {
         "id": 31358,
@@ -13556,8 +13556,8 @@ const jhWordsDB = [
         "uk": "/ˈredi/",
         "zh": "adj. 準備好（做某事）的、預先備好的、可供使用的；n. 現款、預備好的狀態；adv. 已做完、已完成；vt. 做好……的準備",
         "unit": 18,
-        "example": "Everybody ready? It's showtime!",
-        "exampleZh": "大家準備好了嗎？演出時間到了！"
+        "example": "Dinner is ready on the table now.",
+        "exampleZh": "晚餐現在已經在桌上準備好了。"
     },
     {
         "id": 31359,
@@ -13576,8 +13576,8 @@ const jhWordsDB = [
         "uk": "/ˈriːəlaɪz/",
         "zh": "vt. 瞭解、意識到、發生、產生",
         "unit": 18,
-        "example": "Only later did she realize her mistake.",
-        "exampleZh": "直到後來她才意識到自己的錯誤。"
+        "example": "I did not realize you were here.",
+        "exampleZh": "我剛剛沒有意識到你在這裡。"
     },
     {
         "id": 31361,
@@ -13586,8 +13586,8 @@ const jhWordsDB = [
         "uk": "/ˈriːəli/",
         "zh": "adv. 真實地、真正地、事實上、確實的；int. 真的、真是的！、是啊！",
         "unit": 18,
-        "example": "This sweater really itches.",
-        "exampleZh": "這件毛衣真刺癢。"
+        "example": "I really love this sweet cake.",
+        "exampleZh": "我真的很喜歡這個甜蛋糕。"
     },
     {
         "id": 31362,
@@ -13596,8 +13596,8 @@ const jhWordsDB = [
         "uk": "/ˈriːz(ə)n/",
         "zh": "n. 原因、理由、充分理由、正當理由；vt. 推理、邏輯思考、推論出、推斷出",
         "unit": 18,
-        "example": "The reason is blindingly obvious.",
-        "exampleZh": "原因是顯而易見的。"
+        "example": "Give me one good reason to go.",
+        "exampleZh": "給我一個去的充分理由。"
     },
     {
         "id": 31363,
@@ -13606,8 +13606,8 @@ const jhWordsDB = [
         "uk": "/rɪˈsiːv/",
         "zh": "vt. 收到、得到、遭受、經受",
         "unit": 18,
-        "example": "He will receive $6,000 in back pay.",
-        "exampleZh": "他將收到 6,000 美元的欠薪。"
+        "example": "I receive a gift from my friend.",
+        "exampleZh": "我收到朋友送的一件禮物。"
     },
     {
         "id": 31364,
@@ -13616,8 +13616,8 @@ const jhWordsDB = [
         "uk": "/ˈrekɔːd; rɪˈkɔːd/",
         "zh": "n. 記錄、記載、經歷、最佳紀錄；vt. 錄音、記錄、記載、錄製；adj. 創紀錄的",
         "unit": 18,
-        "example": "Profits were at record levels.",
-        "exampleZh": "利潤水平是創紀錄的。"
+        "example": "He set a new world record.",
+        "exampleZh": "他創下了新的世界紀錄。"
     },
     {
         "id": 31365,
@@ -13626,8 +13626,8 @@ const jhWordsDB = [
         "uk": "/rɪˈkʌvə(r)/",
         "zh": "v. 康復、恢復、復原、好轉；n. 槍還原、收槍",
         "unit": 18,
-        "example": "The economy is at last beginning to recover.",
-        "exampleZh": "經濟終於開始復甦了。"
+        "example": "She will recover from the cold.",
+        "exampleZh": "她的感冒將會康復。"
     },
     {
         "id": 31366,
@@ -13636,8 +13636,8 @@ const jhWordsDB = [
         "uk": "/ˈrektæŋɡl/",
         "zh": "n. 長方形、矩形",
         "unit": 18,
-        "example": "This is a smaller rounded rectangle.",
-        "exampleZh": "這是一個較小的圓角矩形。"
+        "example": "Draw a big rectangle on paper.",
+        "exampleZh": "在紙上畫一個大長方形。"
     },
     {
         "id": 31367,
@@ -13646,8 +13646,8 @@ const jhWordsDB = [
         "uk": "/ˌriːˈsaɪkl/",
         "zh": "vt. 回收、回收利用、再利用、送入回收加工廠；n. 回收利用、迴圈使用",
         "unit": 18,
-        "example": "The objective would be to recycle 98 percent of domestic waste.",
-        "exampleZh": "該目標是迴圈使用98%的生活垃圾。"
+        "example": "We recycle old paper each week.",
+        "exampleZh": "我們每週都回收廢紙。"
     },
     {
         "id": 31368,
@@ -13656,8 +13656,8 @@ const jhWordsDB = [
         "uk": "/red/",
         "zh": "adj. 紅色的、紅的、紅褐色的、漲紅的；v. 整理；n. 紅色、紅顏料、紅衣、紅葡萄酒",
         "unit": 18,
-        "example": "She was wearing red lipstick.",
-        "exampleZh": "她塗著紅色口紅。"
+        "example": "She has a bright red school bag.",
+        "exampleZh": "她有一個鮮紅色的書包。"
     },
     {
         "id": 31369,
@@ -13666,8 +13666,8 @@ const jhWordsDB = [
         "uk": "/rɪˈfrɪdʒəreɪtə(r)/",
         "zh": "n. 冰箱、冷藏庫",
         "unit": 18,
-        "example": "His refrigerator frequently looked half empty.",
-        "exampleZh": "他的冰箱經常看上去有點兒空。"
+        "example": "Put the milk into the refrigerator.",
+        "exampleZh": "把牛奶放進冰箱裡。"
     },
     {
         "id": 31370,
@@ -13686,8 +13686,8 @@ const jhWordsDB = [
         "uk": "/rɪˈɡɑːd/",
         "zh": "vt. 事項、認為、把……看作、注視；n. 問候、尊重、敬佩、關心",
         "unit": 18,
-        "example": "I regard this as a serious matter.",
-        "exampleZh": "我認為這是一件重要的事情。"
+        "example": "I regard him as my brother.",
+        "exampleZh": "我把他當作我的兄弟。"
     },
     {
         "id": 31372,
@@ -13706,8 +13706,8 @@ const jhWordsDB = [
         "uk": "/ˈreɡjələ(r)/",
         "zh": "adj. 定期的、規律的、經常的、頻繁的；n. 常客、老主顧、主演、主力隊員",
         "unit": 18,
-        "example": "Do you take regular exercise?",
-        "exampleZh": "你經常鍛鍊嗎？"
+        "example": "She has regular meals every day.",
+        "exampleZh": "她每天定時用餐。"
     },
     {
         "id": 31374,
@@ -13716,8 +13716,8 @@ const jhWordsDB = [
         "uk": "/rɪˈdʒekt/",
         "zh": "vt. 拒絕、否決、擯棄、不接受；n. 次品、廢品、不合格者、被排斥者",
         "unit": 18,
-        "example": "Patients often reject transplanted organs.",
-        "exampleZh": "患者常常排斥移植的器官。"
+        "example": "They had to reject his job request.",
+        "exampleZh": "他們不得不拒絕他的求職申請。"
     },
     {
         "id": 31375,
@@ -13726,8 +13726,8 @@ const jhWordsDB = [
         "uk": "/rɪˈleɪʃ(ə)n/",
         "zh": "n. 聯絡、（正式）關係、性關係",
         "unit": 18,
-        "example": "It is a question of the relation of ethics to economics.",
-        "exampleZh": "這是個道德和經濟之間關係的問題。"
+        "example": "They have a good work relation.",
+        "exampleZh": "他們有良好的工作關係。"
     },
     {
         "id": 31376,
@@ -13736,8 +13736,8 @@ const jhWordsDB = [
         "uk": "/ˈrelətɪv/",
         "zh": "n. 親戚、親屬、同類事物、親緣動物；adj. 相比較而言的、比較的、相對的、相關聯的",
         "unit": 18,
-        "example": "He's a distant relative of the mayor.",
-        "exampleZh": "他是市長的遠房親戚。"
+        "example": "My relative came to visit us.",
+        "exampleZh": "我的親戚來拜訪我們了。"
     },
     {
         "id": 31377,
@@ -13746,8 +13746,8 @@ const jhWordsDB = [
         "uk": "/rɪˈmembə(r)/",
         "zh": "vt. 記得、回想起、記起、憶起",
         "unit": 18,
-        "example": "I'll sure remember this trip!",
-        "exampleZh": "我一定會記得這次旅行！"
+        "example": "Please remember to close the front door.",
+        "exampleZh": "請記得關上前門。"
     },
     {
         "id": 31378,
@@ -13766,8 +13766,8 @@ const jhWordsDB = [
         "uk": "/rent/",
         "zh": "n. 租金、租用費、破洞、裂口；vt. 租用、租借、出租、將……租給",
         "unit": 18,
-        "example": "His landlord doubled the rent.",
-        "exampleZh": "他的房東把房租提高了一倍。"
+        "example": "They rent a small house here.",
+        "exampleZh": "他們在這裡租了一間小房子。"
     },
     {
         "id": 31380,
@@ -13786,8 +13786,8 @@ const jhWordsDB = [
         "uk": "/rɪˈpiːt/",
         "zh": "vt. 重複、重說、複述、跟讀；n. 重演、重現、重播節目、再次運送",
         "unit": 18,
-        "example": "The claims are, I repeat, totally unfounded.",
-        "exampleZh": "我再說一遍，這些說法是毫無根據的。"
+        "example": "Please repeat that after me now.",
+        "exampleZh": "現在請跟我重複念一次。"
     },
     {
         "id": 31382,
@@ -13796,8 +13796,8 @@ const jhWordsDB = [
         "uk": "/rɪˈplaɪ/",
         "zh": "v. 回答、答覆、作出回應、回擊；n. 回答、答覆、回應、作出反應",
         "unit": 18,
-        "example": "His reply was not repeatable.",
-        "exampleZh": "他的回答不便重複。"
+        "example": "He did not reply to me.",
+        "exampleZh": "他沒有回答我。"
     },
     {
         "id": 31383,
@@ -13806,8 +13806,8 @@ const jhWordsDB = [
         "uk": "/rɪˈpɔːt/",
         "zh": "n. 報告、彙報、新聞報道、官方檔案；v. 報導、報道、據說、傳聞",
         "unit": 18,
-        "example": "She glanced through the report.",
-        "exampleZh": "她瀏覽了一下報告。"
+        "example": "He must write a book report today.",
+        "exampleZh": "他今天必須寫一份讀書報告。"
     },
     {
         "id": 31384,
@@ -13816,8 +13816,8 @@ const jhWordsDB = [
         "uk": "/rɪˈpɔːtə(r)/",
         "zh": "n. 記者、通訊員",
         "unit": 18,
-        "example": "He is a 24-year-old trainee reporter.",
-        "exampleZh": "他是一個24歲的實習記者。"
+        "example": "The reporter asked for my name.",
+        "exampleZh": "那名記者詢問了我的名字。"
     },
     {
         "id": 31385,
@@ -13826,8 +13826,8 @@ const jhWordsDB = [
         "uk": "/rɪˈkwaɪə(r)/",
         "zh": "vt. 需要、要求做、規定",
         "unit": 18,
-        "example": "All decisions would require unanimity.",
-        "exampleZh": "所有決定都需要一致同意。"
+        "example": "These plants require plenty of fresh water.",
+        "exampleZh": "這些植物需要充足的新鮮水分。"
     },
     {
         "id": 31386,
@@ -13846,8 +13846,8 @@ const jhWordsDB = [
         "uk": "/rɪˈspɒnsəb(ə)l/",
         "zh": "adj. 有責任的、負責的、負有責任的、應承擔責任的",
         "unit": 18,
-        "example": "He's directly responsible to the boss.",
-        "exampleZh": "他直接對老闆負責。"
+        "example": "He is a responsible boy who finishes tasks.",
+        "exampleZh": "他是個會完成任務的負責任男孩。"
     },
     {
         "id": 31388,
@@ -13866,8 +13866,8 @@ const jhWordsDB = [
         "uk": "/ˈrestrɒnt/",
         "zh": "n. 餐廳、餐館、飯店",
         "unit": 18,
-        "example": "The restaurant is deservedly popular.",
-        "exampleZh": "這餐館為大眾喜愛是理所當然的。"
+        "example": "We ate dinner at that restaurant.",
+        "exampleZh": "我們在那家餐廳吃了晚餐。"
     },
     {
         "id": 31390,
@@ -13896,8 +13896,8 @@ const jhWordsDB = [
         "uk": "/rɪˈtɜːn/",
         "zh": "v. 返回、回來、回去、歸還；n. 歸還、回來、返回、退回；adj. 雙程的、往返的、返回的、返程的",
         "unit": 18,
-        "example": "Regulars return year after year.",
-        "exampleZh": "常客年復一年地回歸。"
+        "example": "I will return home before six o'clock.",
+        "exampleZh": "我會在六點之前回到家。"
     },
     {
         "id": 31393,
@@ -13906,8 +13906,8 @@ const jhWordsDB = [
         "uk": "/rɪˈvjuː/",
         "zh": "n. 評論、審查、檢查、評論文章；vt. 複習、仔細研究、審視、給（書、戲劇、電影等）寫評論",
         "unit": 18,
-        "example": "The case is subject to judicial review.",
-        "exampleZh": "這個案子必須接受司法審查。"
+        "example": "I will review the lesson today.",
+        "exampleZh": "我今天會複習這堂課。"
     },
     {
         "id": 31394,
@@ -13916,8 +13916,8 @@ const jhWordsDB = [
         "uk": "/rɪˈvaɪz/",
         "zh": "v. 改變、修正、修改、修訂；n. 修訂、校訂、改樣",
         "unit": 18,
-        "example": "I can't come out tonight. I have to revise.",
-        "exampleZh": "我今晚不能出去。我得複習。"
+        "example": "Please revise your paper before class.",
+        "exampleZh": "請在上課前修改你的作業。"
     },
     {
         "id": 31395,
@@ -13956,8 +13956,8 @@ const jhWordsDB = [
         "uk": "/raɪt/",
         "zh": "adj. 正確的、對的、右邊的、適當的；adv. 正好、直接地、向右；n. 權利、右邊、正當",
         "unit": 18,
-        "example": "If only I could have helped put matters right.",
-        "exampleZh": "要是我當時能幫著把錯誤糾正過來就好了。"
+        "example": "Turn right at the next red light.",
+        "exampleZh": "在下個紅綠燈向右轉。"
     },
     {
         "id": 31399,
@@ -13976,8 +13976,8 @@ const jhWordsDB = [
         "uk": "/raɪz/",
         "zh": "vi. 上升、增加、升高、起身；n. 增加、改善、加薪",
         "unit": 18,
-        "example": "When water levels rise, flooding results.",
-        "exampleZh": "當水位上升時，就會發生洪水。"
+        "example": "The sun will rise in the east.",
+        "exampleZh": "太陽將從東方升起。"
     },
     {
         "id": 31401,
@@ -13986,8 +13986,8 @@ const jhWordsDB = [
         "uk": "/ˈrɪvə(r)/",
         "zh": "n. 河流、河、江",
         "unit": 18,
-        "example": "The river gurgled and burbled.",
-        "exampleZh": "河水潺潺，潺潺。"
+        "example": "We sat by the quiet river bank.",
+        "exampleZh": "我們坐在安靜的河岸邊。"
     },
     {
         "id": 31402,
@@ -13996,8 +13996,8 @@ const jhWordsDB = [
         "uk": "/rəʊd/",
         "zh": "n. 道路、路、公路、馬路",
         "unit": 18,
-        "example": "Claire hurried along the road.",
-        "exampleZh": "克萊爾快步沿著路走。"
+        "example": "Look both ways before you cross the road.",
+        "exampleZh": "過馬路前請看兩邊。"
     },
     {
         "id": 31403,
@@ -14006,8 +14006,8 @@ const jhWordsDB = [
         "uk": "/rɒb/",
         "zh": "vt. 搶劫、盜取、使喪失、剝奪",
         "unit": 18,
-        "example": "The masked men attempted to rob the local bank.",
-        "exampleZh": "蒙面男子企圖搶劫當地的銀行。"
+        "example": "They tried to rob the bank.",
+        "exampleZh": "他們試圖搶劫那家銀行。"
     },
     {
         "id": 31404,
@@ -14016,8 +14016,8 @@ const jhWordsDB = [
         "uk": "/ˈrəʊbɒt/",
         "zh": "n. 機器人、自動操作裝置、機器般的人、自動交通訊號機",
         "unit": 18,
-        "example": "This is the latest in robot technology.",
-        "exampleZh": "這是最新的機器人技術。"
+        "example": "The toy robot can walk and talk.",
+        "exampleZh": "這個玩具機器人會走又會說話。"
     },
     {
         "id": 31405,
@@ -14026,8 +14026,8 @@ const jhWordsDB = [
         "uk": "/rɒk/",
         "zh": "n. 岩石、礁石、巖塊、大石塊；vt. 搖擺、輕輕搖晃、緩緩擺動、劇烈搖擺",
         "unit": 18,
-        "example": "A rock is an inanimate object.",
-        "exampleZh": "岩石是無生命的物體。"
+        "example": "A big rock fell on the road.",
+        "exampleZh": "一塊大石頭掉落在路上。"
     },
     {
         "id": 31406,
@@ -14036,8 +14036,8 @@ const jhWordsDB = [
         "uk": "/rəʊl/",
         "zh": "n. 角色、作用、職責",
         "unit": 18,
-        "example": "He's a natural for the role.",
-        "exampleZh": "他是這個角色的最佳人選。"
+        "example": "She played a big role here.",
+        "exampleZh": "她在這裡扮演了重要的角色。"
     },
     {
         "id": 31407,
@@ -14056,8 +14056,8 @@ const jhWordsDB = [
         "uk": "/ruːf/",
         "zh": "n. 屋頂、車頂、頂部、口腔頂部；v. 給…………蓋上屋頂、覆遮、給......蓋上屋頂、遮蔽",
         "unit": 18,
-        "example": "The roof was declared unsafe.",
-        "exampleZh": "屋頂被宣布不安全。"
+        "example": "A white bird sat on the roof.",
+        "exampleZh": "一隻白鳥停在屋頂上。"
     },
     {
         "id": 31409,
@@ -14076,8 +14076,8 @@ const jhWordsDB = [
         "uk": "/ruːt/",
         "zh": "n. 根、根莖、根部、底部；v. 生根、紮根於、在……中根深蒂固、根源在於；adj. 塊根的、根莖可食用的",
         "unit": 18,
-        "example": "We got to the root of the problem.",
-        "exampleZh": "我們找到了問題的根源。"
+        "example": "The deep root helps the tree stand.",
+        "exampleZh": "深根幫助這棵樹屹立不倒。"
     },
     {
         "id": 31411,
@@ -14086,8 +14086,8 @@ const jhWordsDB = [
         "uk": "/rəʊp/",
         "zh": "n. 粗繩、繩索、（一）串、條；vt. 用繩子捆、用繩套捕捉、用繩（或帶子）圍起（或隔開）、借繩爬下/借繩登山",
         "unit": 18,
-        "example": "The rope suddenly went slack.",
-        "exampleZh": "繩子突然鬆弛了。"
+        "example": "He tied the box with strong rope.",
+        "exampleZh": "他用結實的粗繩把箱子綁緊。"
     },
     {
         "id": 31412,
@@ -14106,8 +14106,8 @@ const jhWordsDB = [
         "uk": "/raʊnd/",
         "zh": "adj. 圓形的、球形的、弧形的、微胖的；adv. 旋轉、環繞、周長、在周圍；prep. 環繞、圍繞、繞過、在另一側；n. 輪次、局、場、一系列常規活動；vt. 環繞、繞過、成圓形、變圓",
         "unit": 18,
-        "example": "We're leaving round about ten.",
-        "exampleZh": "我們十點左右出發。"
+        "example": "The earth is big and round.",
+        "exampleZh": "地球又大又圓。"
     },
     {
         "id": 31414,
@@ -14126,8 +14126,8 @@ const jhWordsDB = [
         "uk": "/ˈrɔɪəl/",
         "zh": "adj. 皇室的、國王的、女王的、王室的；n. 王室成員、敲奉十口鐘的變換響",
         "unit": 18,
-        "example": "We were given a royal welcome.",
-        "exampleZh": "我們受到了皇家般的歡迎。"
+        "example": "The royal family lives in a grand castle.",
+        "exampleZh": "王室一家人住在一座宏偉的城堡裡。"
     },
     {
         "id": 31416,
@@ -14146,8 +14146,8 @@ const jhWordsDB = [
         "uk": "/ˈrʌbə(r)/",
         "zh": "n. 橡膠、合成橡膠、橡皮擦、黑板擦；adj. 橡膠製成的；v. 扭轉脖子看、好奇地引頸而望",
         "unit": 18,
-        "example": "The boy was wearing rubber-soled shoes.",
-        "exampleZh": "這個男孩穿著膠底鞋。"
+        "example": "These rain boots are made of rubber.",
+        "exampleZh": "這些雨靴是由橡膠製成的。"
     },
     {
         "id": 31418,
@@ -14156,8 +14156,8 @@ const jhWordsDB = [
         "uk": "/ruːd/",
         "zh": "adj. 粗魯的、無禮的、粗俗的、下流的",
         "unit": 18,
-        "example": "The man was downright rude to us.",
-        "exampleZh": "那個人對我們非常粗魯。"
+        "example": "It is rude to yell at other people.",
+        "exampleZh": "對別人大吼大叫是很無禮的。"
     },
     {
         "id": 31419,
@@ -14166,8 +14166,8 @@ const jhWordsDB = [
         "uk": "/ˈruːɪn/",
         "zh": "n. 毀壞、毀滅、破產、身敗名裂；v. 毀壞、破壞、使（建築物，地方）破敗、使成為廢墟",
         "unit": 18,
-        "example": "The vineyards were falling into ruin.",
-        "exampleZh": "那些葡萄園當時正日漸沒落。"
+        "example": "Heavy rain will ruin our picnic.",
+        "exampleZh": "大雨會毀了我們的野餐。"
     },
     {
         "id": 31420,
@@ -14186,8 +14186,8 @@ const jhWordsDB = [
         "uk": "/ˈruːlə(r)/",
         "zh": "n. 統治者、尺、管理者、尺子",
         "unit": 18,
-        "example": "The ruler cracked and splintered into pieces.",
-        "exampleZh": "尺子裂了，碎成了片。"
+        "example": "Use a ruler to draw lines.",
+        "exampleZh": "用尺來畫線。"
     },
     {
         "id": 31422,
@@ -14196,8 +14196,8 @@ const jhWordsDB = [
         "uk": "/rʌn/",
         "zh": "v. 跑、奔跑、經營、運轉；n. 跑步、賽跑、旅程",
         "unit": 18,
-        "example": "Engines won't run without lubricants.",
-        "exampleZh": "沒有潤滑油，引擎就無法運轉。"
+        "example": "The dogs run fast in the park.",
+        "exampleZh": "狗狗們在公園裡跑得很快。"
     },
     {
         "id": 31423,
@@ -14206,8 +14206,8 @@ const jhWordsDB = [
         "uk": "/rʌʃ/",
         "zh": "v. 衝、奔、把（某人或某物）迅速送往、趕緊做；n. 衝、奔、湍流、匆忙",
         "unit": 18,
-        "example": "You can't rush a search.",
-        "exampleZh": "你不能匆忙做搜尋工作。"
+        "example": "Do not rush to leave now.",
+        "exampleZh": "現在不要急著離開。"
     },
     {
         "id": 31424,
@@ -14216,8 +14216,8 @@ const jhWordsDB = [
         "uk": "/sæd/",
         "zh": "adj. 悲傷的、傷心的、難過的、令人傷心的；n. 季節性情感障礙",
         "unit": 18,
-        "example": "I overreact to anything sad.",
-        "exampleZh": "我對任何悲傷的事情都反應過度。"
+        "example": "She feels sad about the bad news.",
+        "exampleZh": "她對這個壞消息感到難過。"
     },
     {
         "id": 31425,
@@ -14226,8 +14226,8 @@ const jhWordsDB = [
         "uk": "/seɪf/",
         "zh": "adj. 安全的、平安的、不損害（或危害）健康的、謹慎的；n. 保險箱、陰莖套、安全套、紗櫥；int. 嗨、喂；adv. 安全地、平安地",
         "unit": 18,
-        "example": "The children are quite safe here.",
-        "exampleZh": "孩子們在這裡很安全。"
+        "example": "It is safe to cross the street.",
+        "exampleZh": "過這條馬路是很安全的。"
     },
     {
         "id": 31426,
@@ -14236,8 +14236,8 @@ const jhWordsDB = [
         "uk": "/ˈseɪfti/",
         "zh": "n. 安全、安全性、安全場所、安全的地方；adj. 保障安全的",
         "unit": 18,
-        "example": "They are anxious for her safety.",
-        "exampleZh": "他們為她的安全擔心。"
+        "example": "Think of your safety at home.",
+        "exampleZh": "在家要注意你的安全。"
     },
     {
         "id": 31427,
@@ -14246,8 +14246,8 @@ const jhWordsDB = [
         "uk": "/seɪl/",
         "zh": "v. 航行、啟航、駕駛、飄過；n. 帆、乘船航行、帆船的使用、瞭望塔",
         "unit": 18,
-        "example": "We sail at 2 p.m. tomorrow.",
-        "exampleZh": "我們下午 2 點啟航。明天。"
+        "example": "Boats sail across the wide blue sea.",
+        "exampleZh": "小船航行在寬闊蔚藍的大海上。"
     },
     {
         "id": 31428,
@@ -14256,8 +14256,8 @@ const jhWordsDB = [
         "uk": "/ˈseɪlə(r)/",
         "zh": "n. 水手、船員、駕船人、帆船駕駛者",
         "unit": 18,
-        "example": "A sailor carrying a sawn-off shotgun was arrested in Los Angeles.",
-        "exampleZh": "一位攜帶著鋸短的散彈槍的水手在洛杉磯被捕。"
+        "example": "The old sailor loves the sea.",
+        "exampleZh": "那位老水手熱愛大海。"
     },
     {
         "id": 31429,
@@ -14266,8 +14266,8 @@ const jhWordsDB = [
         "uk": "/ˈsæləd/",
         "zh": "n. 沙拉、色拉、沙律、生菜",
         "unit": 18,
-        "example": "The salad had lost its crispness.",
-        "exampleZh": "這色拉已經不脆了。"
+        "example": "Mom made a fresh green salad.",
+        "exampleZh": "媽媽做了一道新鮮的生菜沙拉。"
     },
     {
         "id": 31430,
@@ -14276,8 +14276,8 @@ const jhWordsDB = [
         "uk": "/seɪl/",
         "zh": "n. 出售、銷售、銷售額、銷售活動",
         "unit": 18,
-        "example": "Tickets go on sale this week.",
-        "exampleZh": "門票本週開始販售。"
+        "example": "These winter coats are on sale today.",
+        "exampleZh": "這些冬天大衣今天特價銷售中。"
     },
     {
         "id": 31431,
@@ -14286,8 +14286,8 @@ const jhWordsDB = [
         "uk": "/sɔːlt; sɒlt/",
         "zh": "n. 鹽、食鹽、鹽狀物（用於某種特殊目的的物質或藥品）、風趣；vt. 給（食物）加鹽調味、用鹽醃製（食物）；adj. 含鹽的、鹹的、用鹽醃製的、海生的",
         "unit": 18,
-        "example": "Could you please pass me the salt and pepper?",
-        "exampleZh": "你能把鹽和胡椒粉遞給我嗎？"
+        "example": "Add a little salt to the soup.",
+        "exampleZh": "在湯裡加一點鹽巴。"
     },
     {
         "id": 31432,
@@ -14306,8 +14306,8 @@ const jhWordsDB = [
         "uk": "/ˈsɑːmp(ə)l/",
         "zh": "n. 樣本、樣品、試用產品、試樣；vt. 品嚐、嘗試、體驗、對……作抽樣調查；adj. 樣品的、例項的",
         "unit": 18,
-        "example": "A routine DNA sample was taken.",
-        "exampleZh": "採集了一份常規的脫氧核糖核酸樣本。"
+        "example": "Can I taste this free sample?",
+        "exampleZh": "我可以品嚐這個免費試吃品嗎？"
     },
     {
         "id": 31434,
@@ -14336,8 +14336,8 @@ const jhWordsDB = [
         "uk": "/ˈsætɪsfaɪ/",
         "zh": "vt. 滿意、使滿意、使滿足、滿足",
         "unit": 18,
-        "example": "We cannot satisfy demand for the product.",
-        "exampleZh": "我們無法滿足對該產品的需求。"
+        "example": "Good food will satisfy your hungry stomach.",
+        "exampleZh": "美食會滿足你飢餓的肚子。"
     },
     {
         "id": 31437,
@@ -14346,8 +14346,8 @@ const jhWordsDB = [
         "uk": "/ˈsætədeɪ/",
         "zh": "n. 星期六、週六",
         "unit": 18,
-        "example": "We're going sailing on Saturday.",
-        "exampleZh": "我們打算星期六乘帆船出遊。"
+        "example": "We play tennis every single Saturday.",
+        "exampleZh": "我們每個星期六都打網球。"
     },
     {
         "id": 31438,
@@ -14366,8 +14366,8 @@ const jhWordsDB = [
         "uk": "/seɪv/",
         "zh": "v. 拯救、挽救、節省、儲蓄",
         "unit": 18,
-        "example": "We should try to save water.",
-        "exampleZh": "我們應該努力節約用水。"
+        "example": "We try to save money every week.",
+        "exampleZh": "我們每週都努力存錢。"
     },
     {
         "id": 31440,
@@ -14386,8 +14386,8 @@ const jhWordsDB = [
         "uk": "/skeə(r)/",
         "zh": "vt. 驚恐、使驚恐、嚇唬、害怕；n. 驚嚇、驚恐、大恐慌",
         "unit": 18,
-        "example": "We've had quite a scare.",
-        "exampleZh": "我們嚇得不輕。"
+        "example": "Loud noises scare the little baby.",
+        "exampleZh": "大聲的噪音會嚇到小寶寶。"
     },
     {
         "id": 31442,
@@ -14396,8 +14396,8 @@ const jhWordsDB = [
         "uk": "/skɑːf/",
         "zh": "n. 圍巾、披巾、頭巾、斜面；v. 狼吞虎嚥地吃、嵌接、斜接、切割（鯨）脂",
         "unit": 18,
-        "example": "Her scarf streamed behind her.",
-        "exampleZh": "她的圍巾在身後飄動。"
+        "example": "She wore a warm red scarf.",
+        "exampleZh": "她圍了一條溫暖的紅圍巾。"
     },
     {
         "id": 31443,
@@ -14406,8 +14406,8 @@ const jhWordsDB = [
         "uk": "/siːn/",
         "zh": "n. 風景、事發地、現場、事件",
         "unit": 18,
-        "example": "It's a scene of complete devastation.",
-        "exampleZh": "那是一幅滿目瘡痍的景象。"
+        "example": "It was a very lovely night scene.",
+        "exampleZh": "那是一幅非常動人的夜間景象。"
     },
     {
         "id": 31444,
@@ -14416,8 +14416,8 @@ const jhWordsDB = [
         "uk": "/ˈsiːnəri/",
         "zh": "n. 景色、風景、舞臺佈景",
         "unit": 18,
-        "example": "The area is remarkable for its scenery.",
-        "exampleZh": "這一地區以其優美的景色而引人矚目。"
+        "example": "The sea scenery is so pretty.",
+        "exampleZh": "這片海景非常漂亮。"
     },
     {
         "id": 31445,
@@ -14436,8 +14436,8 @@ const jhWordsDB = [
         "uk": "/ˈsaɪəns/",
         "zh": "n. 科學、科學知識、專門科學、學科",
         "unit": 18,
-        "example": "Economics is an inexact science.",
-        "exampleZh": "經濟學是一門不精確的科學。"
+        "example": "We learn science at our school.",
+        "exampleZh": "我們在學校學習科學。"
     },
     {
         "id": 31447,
@@ -14446,8 +14446,8 @@ const jhWordsDB = [
         "uk": "/ˈsaɪəntɪst/",
         "zh": "n. 科學家",
         "unit": 18,
-        "example": "He's a brilliant young scientist.",
-        "exampleZh": "他是一個才華橫溢的青年科學家。"
+        "example": "The scientist found a new way.",
+        "exampleZh": "那位科學家發現了一種新方法。"
     },
     {
         "id": 31448,
@@ -14456,8 +14456,8 @@ const jhWordsDB = [
         "uk": "/ˈskuːtə(r)/",
         "zh": "n. 摩托車、滑板車、踏板車、小型摩托車；v. 騎小型摩托車、玩踏板車",
         "unit": 18,
-        "example": "A half-way house for many people is a scooter or motorbike.",
-        "exampleZh": "對很多人來說，踏板摩托車或普通摩托車是一個過渡性選擇。"
+        "example": "He rides his scooter to work.",
+        "exampleZh": "他騎機車去上班。"
     },
     {
         "id": 31449,
@@ -14476,8 +14476,8 @@ const jhWordsDB = [
         "uk": "/skriːn/",
         "zh": "n. 銀幕、螢幕、熒光屏、電影；v. 隱藏、遮蔽、庇護",
         "unit": 18,
-        "example": "Suddenly the screen went blank.",
-        "exampleZh": "螢幕突然變成一片空白。"
+        "example": "Look at the big TV screen.",
+        "exampleZh": "看那個大電視螢幕。"
     },
     {
         "id": 31451,
@@ -14486,8 +14486,8 @@ const jhWordsDB = [
         "uk": "/siː/",
         "zh": "n. 海、海洋、內海、海面情況",
         "unit": 18,
-        "example": "The sea rippled and sparkled.",
-        "exampleZh": "大海波光粼粼，波光粼粼。"
+        "example": "Many fish live in the deep sea.",
+        "exampleZh": "許多魚類生活在深海裡。"
     },
     {
         "id": 31452,
@@ -14496,8 +14496,8 @@ const jhWordsDB = [
         "uk": "/ˈsiːfuːd/",
         "zh": "n. 海鮮、海味、海產食品",
         "unit": 18,
-        "example": "Seafood is a speciality on the island.",
-        "exampleZh": "海味是島上的特產。"
+        "example": "We ate fresh seafood for dinner.",
+        "exampleZh": "我們晚餐吃了新鮮的海鮮。"
     },
     {
         "id": 31453,
@@ -14506,8 +14506,8 @@ const jhWordsDB = [
         "uk": "/sɜːtʃ/",
         "zh": "v. 搜查、搜尋、搜……的身、思索；n. 搜尋、搜查、探索、尋求",
         "unit": 18,
-        "example": "It was a fruitless search.",
-        "exampleZh": "那是一次毫無結果的搜尋。"
+        "example": "We will search for the cat.",
+        "exampleZh": "我們會去尋找那隻貓。"
     },
     {
         "id": 31454,
@@ -14516,8 +14516,8 @@ const jhWordsDB = [
         "uk": "/ˈsiːz(ə)n/",
         "zh": "n. 季節、季、時期、體育賽季；vt. 加調料、給……調味、給……增添趣味、使（木材）風乾",
         "unit": 18,
-        "example": "Autumn is my favourite season.",
-        "exampleZh": "秋天是我最喜歡的季節。"
+        "example": "Spring is the best season of all.",
+        "exampleZh": "春天是所有當中最棒的季節。"
     },
     {
         "id": 31455,
@@ -14526,8 +14526,8 @@ const jhWordsDB = [
         "uk": "/siːt/",
         "zh": "n. 座位、座部、基座、席位；vt. 就座、使坐下、使就座、容納",
         "unit": 18,
-        "example": "Stephen returned to his seat.",
-        "exampleZh": "史蒂芬回到座位上。"
+        "example": "Please take a seat in this room.",
+        "exampleZh": "請在這個房間就座。"
     },
     {
         "id": 31456,
@@ -14536,8 +14536,8 @@ const jhWordsDB = [
         "uk": "/ˈsekənd/",
         "zh": "num. 第二、第二個、居第二位的、另外的；n. 秒、片刻、瞬間、次品；vt. 支援、附議、臨時調派、短期調任；adv. 以第二位、第二、其次；adj. 秒",
         "unit": 18,
-        "example": "The second goal was disallowed.",
-        "exampleZh": "第二個進球被判無效。"
+        "example": "Wait for just one second, please.",
+        "exampleZh": "請等我一秒鐘。"
     },
     {
         "id": 31457,
@@ -14546,8 +14546,8 @@ const jhWordsDB = [
         "uk": "/ˈsiːkrət/",
         "zh": "adj. 秘密的、保密的、不公開的、暗自的；n. 秘密、內情、神秘、奧秘",
         "unit": 18,
-        "example": "The meeting was held in secret.",
-        "exampleZh": "會議是秘密召開的。"
+        "example": "Can you keep this secret safe?",
+        "exampleZh": "你能守住這個秘密嗎？"
     },
     {
         "id": 31458,
@@ -14566,8 +14566,8 @@ const jhWordsDB = [
         "uk": "/ˈsekʃ(ə)n/",
         "zh": "n. 部分、散件、部件、節；vt. 強制（精神病人）入院、將……製成切片、切開、切斷",
         "unit": 18,
-        "example": "The school has a special education section.",
-        "exampleZh": "該校有一個特殊教育部門。"
+        "example": "Read this section of the book.",
+        "exampleZh": "閱讀這本書的這個部分。"
     },
     {
         "id": 31460,
@@ -14576,8 +14576,8 @@ const jhWordsDB = [
         "uk": "/siː/",
         "zh": "vt. 看見、看到、有視力、看得見；n. 主教教區",
         "unit": 18,
-        "example": "Can I see your authorization?",
-        "exampleZh": "我可以看看你的授權嗎？"
+        "example": "I can see birds in the sky.",
+        "exampleZh": "我能看見天空中的鳥兒。"
     },
     {
         "id": 31461,
@@ -14586,8 +14586,8 @@ const jhWordsDB = [
         "uk": "/siːd/",
         "zh": "n. 種子、籽、果核、精液；vt. 給…………脫籽、給（蔬菜，水果）去籽、給......脫籽；adj. 用作種子的",
         "unit": 18,
-        "example": "The top seed won comfortably.",
-        "exampleZh": "頭號種子輕鬆獲勝。"
+        "example": "Plant the flower seed in the dirt.",
+        "exampleZh": "把花朵種子種在泥土裡。"
     },
     {
         "id": 31462,
@@ -14596,8 +14596,8 @@ const jhWordsDB = [
         "uk": "/siːk/",
         "zh": "vt. 尋找、尋求、謀求、請求",
         "unit": 18,
-        "example": "We were advised to seek legal advice.",
-        "exampleZh": "有人勸我們找律師諮詢。"
+        "example": "You can seek help from us.",
+        "exampleZh": "你可以向我們尋求幫助。"
     },
     {
         "id": 31463,
@@ -14606,8 +14606,8 @@ const jhWordsDB = [
         "uk": "/siːm/",
         "zh": "v. 似乎、看來、好像、可能",
         "unit": 18,
-        "example": "They seem an ill-assorted couple.",
-        "exampleZh": "他們看起來是一對不般配的夫妻。"
+        "example": "You seem very happy today at school.",
+        "exampleZh": "你今天在學校看起來很高興。"
     },
     {
         "id": 31464,
@@ -14636,8 +14636,8 @@ const jhWordsDB = [
         "uk": "/sɪˈlekt/",
         "zh": "vt. 選擇、挑選、選定、決定（特徵，生物）是否繼續存在；adj. 精選的、優等的、高階的、奢華的",
         "unit": 18,
-        "example": "Click Tools on the menu bar and select Settings.",
-        "exampleZh": "點擊選單列上的“工具”並選擇“設定”。"
+        "example": "You may select one gift from here.",
+        "exampleZh": "你可以從這裡挑選一份禮物。"
     },
     {
         "id": 31467,
@@ -14646,8 +14646,8 @@ const jhWordsDB = [
         "uk": "/self/",
         "zh": "n. 自我、自己、本人、私心；adj. 與其他部分同質同色的；v. 使自花授粉、使自體受精、（動物、植物）同系繁衍、同系受精；pron. 自己、本人",
         "unit": 18,
-        "example": "He gave a self-deprecating shrug.",
-        "exampleZh": "他自嘲地聳聳肩。"
+        "example": "He looked at his true self today.",
+        "exampleZh": "他今天認真審視了自己的內心自我。"
     },
     {
         "id": 31468,
@@ -14696,8 +14696,8 @@ const jhWordsDB = [
         "uk": "/sens/",
         "zh": "n. 感覺、感覺官能、道理、合理性；vt. 感覺到、覺察到、檢測出；adj. 有意義的",
         "unit": 18,
-        "example": "The sense of community is lost.",
-        "exampleZh": "社區意識消失了。"
+        "example": "Dogs have a good sense of smell.",
+        "exampleZh": "狗有很好的嗅覺感官。"
     },
     {
         "id": 31473,
@@ -14736,8 +14736,8 @@ const jhWordsDB = [
         "uk": "/ˈsɜːvənt/",
         "zh": "n. 僕人、傭人、僱員、職員",
         "unit": 18,
-        "example": "He was a loyal, distinguished and very competent civil servant.",
-        "exampleZh": "他是一個忠誠、出色、很有能力的公務員。"
+        "example": "The rich family has a servant.",
+        "exampleZh": "這個富裕的家庭有一名僕人。"
     },
     {
         "id": 31477,
@@ -14746,8 +14746,8 @@ const jhWordsDB = [
         "uk": "/sɜːv/",
         "zh": "v. 服務、為……工作、服役、端上；n. 發球、申斥",
         "unit": 18,
-        "example": "They serve good French cooking.",
-        "exampleZh": "他們提供美味的法式菜餚。"
+        "example": "They serve hot tea every morning.",
+        "exampleZh": "他們每天早上供應熱茶。"
     },
     {
         "id": 31478,
@@ -14756,8 +14756,8 @@ const jhWordsDB = [
         "uk": "/ˈsɜːvɪs/",
         "zh": "n. 服務、公共服務系統、公共事業、接待；vt. 維修、檢修、支付（債務）利息、為……提供服務；adj. 員工專用的、部隊的、提供服務的",
         "unit": 18,
-        "example": "The service is maddeningly slow.",
-        "exampleZh": "服務速度慢得令人發狂。"
+        "example": "The food and service were very good.",
+        "exampleZh": "這裡的食物與服務都非常好。"
     },
     {
         "id": 31479,
@@ -14766,8 +14766,8 @@ const jhWordsDB = [
         "uk": "/set/",
         "zh": "v. 設置、放、置、使開始；n. 一套、一組、一夥（或一幫、一群）人、電視機；adj. 位於（或處於）……的、安排好的、固定的、套",
         "unit": 18,
-        "example": "I've collected the complete set.",
-        "exampleZh": "我已經收集了全套。"
+        "example": "She bought a new set of bowls.",
+        "exampleZh": "她買了一套新的碗。"
     },
     {
         "id": 31480,
@@ -14776,8 +14776,8 @@ const jhWordsDB = [
         "uk": "/ˈset(ə)l/",
         "zh": "v. 解決、結束、確定、決定；n. 高背扶手木長椅",
         "unit": 18,
-        "example": "This should settle your stomach.",
-        "exampleZh": "這應該可以解決你的胃。"
+        "example": "They decided to settle in the city.",
+        "exampleZh": "他們決定在這座城市定居下來。"
     },
     {
         "id": 31481,
@@ -14786,8 +14786,8 @@ const jhWordsDB = [
         "uk": "/ˈsev(ə)n/",
         "zh": "num. 七、七個；adj. 七的、七個的",
         "unit": 18,
-        "example": "The performance starts at seven.",
-        "exampleZh": "表演七點開始。"
+        "example": "There are seven days in a week.",
+        "exampleZh": "一週有七天。"
     },
     {
         "id": 31482,
@@ -14826,8 +14826,8 @@ const jhWordsDB = [
         "uk": "/ʃeɪk/",
         "zh": "v. 搖動、抖動、削弱、動搖；n. 搖動、搖晃、奶昔",
         "unit": 18,
-        "example": "Her hands had started to shake.",
-        "exampleZh": "她的雙手開始顫抖。"
+        "example": "Shake the milk bottle before you drink.",
+        "exampleZh": "喝牛奶之前先搖一搖瓶子。"
     },
     {
         "id": 31486,
@@ -14836,8 +14836,8 @@ const jhWordsDB = [
         "uk": "/ʃæl; ʃəl/",
         "zh": "aux. 將要、將會、……好嗎？要不要……？、必須",
         "unit": 18,
-        "example": "Shall we order some coffee?",
-        "exampleZh": "我們要喝點咖啡嗎？"
+        "example": "Shall we go for a walk outside?",
+        "exampleZh": "我們要去外面散散步嗎？"
     },
     {
         "id": 31487,
@@ -14846,8 +14846,8 @@ const jhWordsDB = [
         "uk": "/ʃeɪp/",
         "zh": "n. 形狀、外形、形態、特徵；vt. 形成、影響、使成形、塑造",
         "unit": 18,
-        "example": "The knives were bent out of shape.",
-        "exampleZh": "刀子彎曲變形了。"
+        "example": "This cake has the shape of a heart.",
+        "exampleZh": "這個蛋糕有著愛心的形狀。"
     },
     {
         "id": 31488,
@@ -14866,8 +14866,8 @@ const jhWordsDB = [
         "uk": "/ʃɑːk/",
         "zh": "n. 鯊魚、坑蒙拐騙的人、詐騙者、鯊尾魚；v. 努力追逐性伴侶",
         "unit": 18,
-        "example": "The shark described a circle around the shoal of fish.",
-        "exampleZh": "鯊魚在魚群周圍畫了一圈。"
+        "example": "A big shark swam in the deep sea.",
+        "exampleZh": "一隻大鯊魚在深海裡游泳。"
     },
     {
         "id": 31490,
@@ -14886,8 +14886,8 @@ const jhWordsDB = [
         "uk": "/ʃiːp/",
         "zh": "n. 羊、綿羊、膽小鬼",
         "unit": 18,
-        "example": "Sheep were grazing in the fields.",
-        "exampleZh": "羊群在田裡吃草。"
+        "example": "White sheep eat grass on the hill.",
+        "exampleZh": "白色的綿羊在小山上吃草。"
     },
     {
         "id": 31492,
@@ -14916,8 +14916,8 @@ const jhWordsDB = [
         "uk": "/ʃel/",
         "zh": "n. 貝殼、殼、鞘翅、框架；vt. 殼、果殼、剝……殼、炮轟",
         "unit": 18,
-        "example": "The animal retracted into its shell.",
-        "exampleZh": "這隻動物縮回到自己的殼裡。"
+        "example": "She found a pretty sea shell.",
+        "exampleZh": "她發現了一個漂亮的貝殼。"
     },
     {
         "id": 31495,
@@ -14926,8 +14926,8 @@ const jhWordsDB = [
         "uk": "/ʃaɪn/",
         "zh": "v. 發光、照耀、照射、發亮；n. 光亮、光澤、擦亮",
         "unit": 18,
-        "example": "This gel gives a beautiful shine to the hair.",
-        "exampleZh": "這種凝膠賦予頭髮美麗的光澤。"
+        "example": "Bright stars shine in the night sky.",
+        "exampleZh": "明亮的星星在夜空中閃爍。"
     },
     {
         "id": 31496,
@@ -14936,8 +14936,8 @@ const jhWordsDB = [
         "uk": "/ʃɪp/",
         "zh": "n. 船、艦、三（或多）桅帆船、艇；vt. 運送、運輸、遣送、推出",
         "unit": 18,
-        "example": "The ship was carrying contraband.",
-        "exampleZh": "這艘船載有違禁品。"
+        "example": "A large ship came into the port.",
+        "exampleZh": "一艘大船開進了港口。"
     },
     {
         "id": 31497,
@@ -14966,8 +14966,8 @@ const jhWordsDB = [
         "uk": "/ʃuː/",
         "zh": "n. 鞋子、鞋、馬蹄鐵、剎車蹄片；vt. 給（馬）釘蹄鐵、穿鞋（或靴）、用金屬片包覆、為（輪子）裝輪胎",
         "unit": 18,
-        "example": "The back of my shoe is rubbing.",
-        "exampleZh": "我的鞋後跟在摩擦。"
+        "example": "He tied his left shoe very fast.",
+        "exampleZh": "他很快地繫好了左腳的鞋子。"
     },
     {
         "id": 31500,
@@ -14976,8 +14976,8 @@ const jhWordsDB = [
         "uk": "/ʃɒp/",
         "zh": "n. 商店、店鋪、作坊、工場；vi. 購物、舉報、告發、試圖說服",
         "unit": 18,
-        "example": "The shop bell jangled loudly.",
-        "exampleZh": "商店的門鈴叮噹作響。"
+        "example": "I shop for food at noon daily.",
+        "exampleZh": "我每天中午採買食物。"
     },
     {
         "id": 31501,
@@ -15006,8 +15006,8 @@ const jhWordsDB = [
         "uk": "/ʃɔːt/",
         "zh": "adj. 短的、短暫的、短期的、個子矮的；n. 少量烈酒、電影短片、短褲、男用短內褲；adv. 達不到標準（或預期）地、突然、短暫、使變短地；v. 短路、賣空",
         "unit": 18,
-        "example": "Short hair really becomes you.",
-        "exampleZh": "短髮真的很適合你。"
+        "example": "He is too short to reach the shelf.",
+        "exampleZh": "他太矮了，搆不到架子。"
     },
     {
         "id": 31504,
@@ -15016,8 +15016,8 @@ const jhWordsDB = [
         "uk": "/ʃɔːts/",
         "zh": "v. 短路；n. 短褲、男內褲、短片、細麩粉",
         "unit": 18,
-        "example": "My shorts were chafing my thighs.",
-        "exampleZh": "我的短褲蹭得我大腿疼。"
+        "example": "He wears blue shorts in summer.",
+        "exampleZh": "他夏天穿著藍色短褲。"
     },
     {
         "id": 31505,
@@ -15026,8 +15026,8 @@ const jhWordsDB = [
         "uk": "/ʃʊd; ʃəd/",
         "zh": "v. 應該、該、可以、應該會；aux. 應該",
         "unit": 18,
-        "example": "This should save you shedloads.",
-        "exampleZh": "這應該可以幫你省下許多錢。"
+        "example": "You should go to bed early.",
+        "exampleZh": "你應該早點去睡覺。"
     },
     {
         "id": 31506,
@@ -15036,8 +15036,8 @@ const jhWordsDB = [
         "uk": "/ˈʃəʊldə(r)/",
         "zh": "n. 肩、肩膀、雙肩、上背部；vt. 承擔、擔負、擠、闖",
         "unit": 18,
-        "example": "The arrow pierced his shoulder.",
-        "exampleZh": "箭射穿了他的肩膀。"
+        "example": "He had a bag on his shoulder.",
+        "exampleZh": "他肩膀上背著一個袋子。"
     },
     {
         "id": 31507,
@@ -15056,8 +15056,8 @@ const jhWordsDB = [
         "uk": "/ʃəʊ/",
         "zh": "v. 顯示、表明、給……看、出示；n. 表演、演出、歌舞表演、節目",
         "unit": 18,
-        "example": "The show was just awesome.",
-        "exampleZh": "這場演出太棒了。"
+        "example": "Please show me your new family photo.",
+        "exampleZh": "請給我看你的新全家福照片。"
     },
     {
         "id": 31509,
@@ -15076,8 +15076,8 @@ const jhWordsDB = [
         "uk": "/ʃrɪmp/",
         "zh": "n. 蝦子、蝦、小蝦、矮子；v. 捕蝦；adj. 與蝦有關的、有蝦的、蝦制的",
         "unit": 18,
-        "example": "Hines slowly masticated a shrimp.",
-        "exampleZh": "海恩斯慢慢地咀嚼著一隻蝦。"
+        "example": "We had sweet fried shrimp today.",
+        "exampleZh": "我們今天吃了甜美的炸蝦。"
     },
     {
         "id": 31511,
@@ -15086,8 +15086,8 @@ const jhWordsDB = [
         "uk": "/ʃʌt/",
         "zh": "vt. 關閉、合上、把……關在、停止運作；adj. 關閉的、關上的、打烊的、停止營業的；n. 關閉",
         "unit": 18,
-        "example": "She slammed the door shut.",
-        "exampleZh": "她砰地關上門。"
+        "example": "Please shut the window before you leave.",
+        "exampleZh": "離開前請把窗戶關上。"
     },
     {
         "id": 31512,
@@ -15096,8 +15096,8 @@ const jhWordsDB = [
         "uk": "/ʃaɪ/",
         "zh": "adj. 害羞的、靦腆的、顯得靦腆的、看著羞怯的；v. 驚退、驚逸、迴避、避開；n. 驚退、驚逸、投擲、扔",
         "unit": 18,
-        "example": "Their son was painfully shy.",
-        "exampleZh": "他們的兒子非常害羞。"
+        "example": "The little girl is shy with people.",
+        "exampleZh": "這個小女孩見到人很害羞。"
     },
     {
         "id": 31513,
@@ -15106,8 +15106,8 @@ const jhWordsDB = [
         "uk": "/sɪk/",
         "zh": "adj. 生病的、患病的、病人的、噁心的；n. 病人、嘔吐物；v. 嘔吐、放狗咬、派某人去追擊",
         "unit": 18,
-        "example": "The sick man's pupils were dilated.",
-        "exampleZh": "病人的瞳孔放大了。"
+        "example": "My brother is sick in bed today.",
+        "exampleZh": "我弟弟今天生病躺在床上。"
     },
     {
         "id": 31514,
@@ -15126,8 +15126,8 @@ const jhWordsDB = [
         "uk": "/ˈsaɪdwɔːk/",
         "zh": "n. 人行道",
         "unit": 18,
-        "example": "Glass from broken bottles litters the sidewalk.",
-        "exampleZh": "碎瓶子的玻璃渣散落在人行道上。"
+        "example": "Walk on the sidewalk for safety.",
+        "exampleZh": "為了安全請走在人行道上。"
     },
     {
         "id": 31516,
@@ -15136,8 +15136,8 @@ const jhWordsDB = [
         "uk": "/saɪt/",
         "zh": "n. 景象、視力、視覺、看見；vt. 看到、看見、把（槍）瞄準；adj. 見票即付的、即席的",
         "unit": 18,
-        "example": "Her sight is beginning to go.",
-        "exampleZh": "她的視力開始消失。"
+        "example": "The snow was a very lovely sight.",
+        "exampleZh": "那場雪是一幅非常美麗的景象。"
     },
     {
         "id": 31517,
@@ -15146,8 +15146,8 @@ const jhWordsDB = [
         "uk": "/saɪn/",
         "zh": "n. 標誌、指示牌、跡象、徵兆；vt. 簽名、署名、簽約、示意",
         "unit": 18,
-        "example": "The sign read 'No admittance'.",
-        "exampleZh": "告示牌上寫著“禁止入內”。"
+        "example": "Please sign your name on paper.",
+        "exampleZh": "請在紙上簽下你的名字。"
     },
     {
         "id": 31518,
@@ -15156,8 +15156,8 @@ const jhWordsDB = [
         "uk": "/ˈsaɪləns/",
         "zh": "n. 寂靜、無聲、沉默、默不作聲；vt. 使安靜、使不說話、壓制、使不再發表；int. 安靜、靜下來",
         "unit": 18,
-        "example": "There was a fraught silence.",
-        "exampleZh": "有一陣令人焦慮的沉默。"
+        "example": "They sat in deep silence here.",
+        "exampleZh": "他們在這裡坐在深深的寂靜中。"
     },
     {
         "id": 31519,
@@ -15196,8 +15196,8 @@ const jhWordsDB = [
         "uk": "/ˈsɪlvə(r)/",
         "zh": "n. 銀、銀器、銀幣、銀（白）色；adj. 銀製的、銀（白）色的、含銀的；v. 鍍（或包）銀於、使具有銀色光澤、使變成銀色、使（頭髮）變成銀灰色",
         "unit": 18,
-        "example": "He's an Olympic silver medallist.",
-        "exampleZh": "他是奧運銀牌得主。"
+        "example": "She wore a shiny silver ring today.",
+        "exampleZh": "她今天戴了一枚閃亮的銀戒指。"
     },
     {
         "id": 31523,
@@ -15206,8 +15206,8 @@ const jhWordsDB = [
         "uk": "/ˈsɪmələ(r)/",
         "zh": "adj. 相似的、相像的、類似的；n. 相似之人、順勢藥物",
         "unit": 18,
-        "example": "They have uncannily similar voices.",
-        "exampleZh": "他們的聲音驚人地相似。"
+        "example": "The two sisters have very similar faces.",
+        "exampleZh": "這對姊妹有著非常相似的面貌。"
     },
     {
         "id": 31524,
@@ -15216,8 +15216,8 @@ const jhWordsDB = [
         "uk": "/ˈsɪmp(ə)l/",
         "zh": "adj. 簡單的、簡明的、簡樸的、樸素的；n. 草藥、藥草、出身低微者、笨蛋",
         "unit": 18,
-        "example": "The poem uses simple language.",
-        "exampleZh": "這首詩使用了簡單的語言。"
+        "example": "This is a simple game for kids.",
+        "exampleZh": "這對小孩子來說是個簡單的遊戲。"
     },
     {
         "id": 31525,
@@ -15226,8 +15226,8 @@ const jhWordsDB = [
         "uk": "/ˈsɪmpli/",
         "zh": "adv. 簡單地、僅僅、只、不過",
         "unit": 18,
-        "example": "The house was simply furnished.",
-        "exampleZh": "房子陳設簡單。"
+        "example": "This math problem is simply too easy.",
+        "exampleZh": "這道數學題簡直是太容易了。"
     },
     {
         "id": 31526,
@@ -15246,8 +15246,8 @@ const jhWordsDB = [
         "uk": "/sɪnˈsɪə(r)/",
         "zh": "adj. 真誠的、衷心的、誠摯的、誠懇的",
         "unit": 18,
-        "example": "He seemed sincere enough when he said he wanted to help.",
-        "exampleZh": "他表示願意幫忙，樣子很真誠。"
+        "example": "He gave us a sincere smile.",
+        "exampleZh": "他給了我們一個真誠的微笑。"
     },
     {
         "id": 31528,
@@ -15286,8 +15286,8 @@ const jhWordsDB = [
         "uk": "/sɪŋk/",
         "zh": "v. 下沉、沉沒、使失敗、受挫；adj. 貧困的、貧民窟的；n. 水槽、水池、窪地、滲坑",
         "unit": 18,
-        "example": "He decided to scour the sink.",
-        "exampleZh": "他決定把水池擦洗乾淨。"
+        "example": "Wash your hands in the sink.",
+        "exampleZh": "在水槽裡洗手。"
     },
     {
         "id": 31532,
@@ -15296,8 +15296,8 @@ const jhWordsDB = [
         "uk": "/sɜː(r)/",
         "zh": "n. 先生、長官、老師、閣下",
         "unit": 18,
-        "example": "Is everything in order, sir?",
-        "exampleZh": "先生，一切都順利嗎？"
+        "example": "May I help you with that, sir?",
+        "exampleZh": "先生，需要我幫忙嗎？"
     },
     {
         "id": 31533,
@@ -15306,8 +15306,8 @@ const jhWordsDB = [
         "uk": "/ˈsɪstə(r)/",
         "zh": "n. 姊妹、姐姐、妹妹、姐妹；adj. 同類的、同質的、如同姐妹的",
         "unit": 18,
-        "example": "His sister Sarah helped him.",
-        "exampleZh": "他的妹妹莎拉幫助了他。"
+        "example": "My sister goes to school by bus.",
+        "exampleZh": "我妹妹搭公車去上學。"
     },
     {
         "id": 31534,
@@ -15326,8 +15326,8 @@ const jhWordsDB = [
         "uk": "/sɪks/",
         "zh": "num. 六、數字6、六個、六個人（或物）一組",
         "unit": 18,
-        "example": "Six bottles should be enough.",
-        "exampleZh": "六瓶應該夠了。"
+        "example": "We have six red apples on the table.",
+        "exampleZh": "我們桌上有六顆紅蘋果。"
     },
     {
         "id": 31536,
@@ -15366,8 +15366,8 @@ const jhWordsDB = [
         "uk": "/skeɪt/",
         "zh": "n. 溜冰鞋、滑冰鞋、四輪溜冰鞋、旱冰鞋；vi. 滑冰、溜冰、在滑板上滑行、溜出",
         "unit": 18,
-        "example": "We never learned to ice skate or ski.",
-        "exampleZh": "我們從沒學過溜冰或滑雪。"
+        "example": "Children love to skate on ice.",
+        "exampleZh": "孩子們喜歡在冰上溜冰。"
     },
     {
         "id": 31540,
@@ -15376,8 +15376,8 @@ const jhWordsDB = [
         "uk": "/skiː/",
         "zh": "n. 滑橇、滑雪（水）板、水橇；vi. 滑雪、滑水；adj. 滑雪的、滑水的",
         "unit": 18,
-        "example": "There are three ski lifts in operation.",
-        "exampleZh": "有3輛滑雪纜車在執行。"
+        "example": "We like to ski in winter.",
+        "exampleZh": "我們喜歡在冬天滑雪。"
     },
     {
         "id": 31541,
@@ -15386,8 +15386,8 @@ const jhWordsDB = [
         "uk": "/skɪl/",
         "zh": "n. 技巧、技藝、技術、技能；v. 培訓",
         "unit": 18,
-        "example": "It's time to showcase real skills.",
-        "exampleZh": "是時候展示真正的技能了。"
+        "example": "Art is a very useful life skill.",
+        "exampleZh": "藝術是一項非常有用的生活技能。"
     },
     {
         "id": 31542,
@@ -15396,8 +15396,8 @@ const jhWordsDB = [
         "uk": "/ˈskɪlf(ə)l/",
         "zh": "adj. 熟練的、有技巧的、靈巧的、巧妙的",
         "unit": 18,
-        "example": "Military tactics are skillful.",
-        "exampleZh": "軍事戰術是嫻熟的。"
+        "example": "The skillful cook made dinner very quickly.",
+        "exampleZh": "那位廚藝嫻熟的廚師很快做好了晚餐。"
     },
     {
         "id": 31543,
@@ -15436,8 +15436,8 @@ const jhWordsDB = [
         "uk": "/skaɪ/",
         "zh": "n. 天空、天、天堂、天國之力；v. 把（球）擊向空中、把（畫）高掛在牆上、踢或擊高空球、把槳葉翹得過高",
         "unit": 18,
-        "example": "Clouds drifted across the sky.",
-        "exampleZh": "雲彩飄過天際。"
+        "example": "The blue sky has no clouds today.",
+        "exampleZh": "今天藍藍的天空萬里無雲。"
     },
     {
         "id": 31547,
@@ -15446,8 +15446,8 @@ const jhWordsDB = [
         "uk": "/sliːp/",
         "zh": "v. 睡覺、睡、供……住宿、沉寂；n. 睡眠、睡覺、睡眠時間、眵",
         "unit": 18,
-        "example": "Finally she drifted into sleep.",
-        "exampleZh": "最後她迷迷糊糊地睡著了。"
+        "example": "Babies sleep for many hours each day.",
+        "exampleZh": "小寶寶每天睡很多個小時。"
     },
     {
         "id": 31548,
@@ -15466,8 +15466,8 @@ const jhWordsDB = [
         "uk": "/ˈslendə(r)/",
         "zh": "adj. 纖細的、苗條的、細長的、狹窄的",
         "unit": 18,
-        "example": "Sherry is black, tall, slender and soft-spoken.",
-        "exampleZh": "雪莉是黑人，身材高大，身材苗條，說話輕聲細語。"
+        "example": "She has slender arms and long legs.",
+        "exampleZh": "她有著纖細的手臂和修長的雙腿。"
     },
     {
         "id": 31550,
@@ -15476,8 +15476,8 @@ const jhWordsDB = [
         "uk": "/slaɪd/",
         "zh": "v. 滑動、滑行、悄悄移動；n. 滑梯、幻燈片、滑動、山崩",
         "unit": 18,
-        "example": "The dollar continued to slide.",
-        "exampleZh": "美元繼續下跌。"
+        "example": "The children played on the slide.",
+        "exampleZh": "孩子們在溜滑梯上玩耍。"
     },
     {
         "id": 31551,
@@ -15486,8 +15486,8 @@ const jhWordsDB = [
         "uk": "/slɪm/",
         "zh": "adj. 苗條的、纖細的、單薄的；vt. 減少、縮減、變苗條、減肥；n. 艾滋病、瘦身課程",
         "unit": 18,
-        "example": "She goes for tall slim men.",
-        "exampleZh": "她喜歡高個子苗條的男人。"
+        "example": "She has a slim and healthy body.",
+        "exampleZh": "她有著纖細而健康的體態。"
     },
     {
         "id": 31552,
@@ -15496,8 +15496,8 @@ const jhWordsDB = [
         "uk": "/ˈslɪpə(r)z/",
         "zh": "n. 拖鞋",
         "unit": 18,
-        "example": "She spent the morning padding about the house in her slippers.",
-        "exampleZh": "她一個早上都穿著拖鞋在房子裡輕輕地走來走去。"
+        "example": "Put on your soft slippers inside.",
+        "exampleZh": "在室內穿上你的軟拖鞋。"
     },
     {
         "id": 31553,
@@ -15506,8 +15506,8 @@ const jhWordsDB = [
         "uk": "/sləʊ/",
         "zh": "adj. 慢的、緩慢的、遲鈍的；v. 放慢、減速；adv. 慢地、緩慢地",
         "unit": 18,
-        "example": "The process was needlessly slow.",
-        "exampleZh": "這個過程不必要地緩慢。"
+        "example": "The old yellow bus is very slow.",
+        "exampleZh": "那輛老舊的黃色公車非常慢。"
     },
     {
         "id": 31554,
@@ -15516,8 +15516,8 @@ const jhWordsDB = [
         "uk": "/smɔːl/",
         "zh": "adj. 小的、小型的、少的、小規模的；n. 小件衣服（尤指內衣）、後腰、小費、小額禮金；adv. 成小塊地、小小地",
         "unit": 18,
-        "example": "The room was disappointingly small.",
-        "exampleZh": "房間小得令人失望。"
+        "example": "She lives in a small, quiet town.",
+        "exampleZh": "她住在一個安靜的小鎮裡。"
     },
     {
         "id": 31555,
@@ -15546,8 +15546,8 @@ const jhWordsDB = [
         "uk": "/smaɪl/",
         "zh": "vi. 微笑、微笑著說、以微笑表示、現出；n. 笑容、微笑、一臉笑意、喜滋滋的",
         "unit": 18,
-        "example": "A smile brightened her face.",
-        "exampleZh": "她的臉上露出笑容。"
+        "example": "A big warm smile was on his face.",
+        "exampleZh": "他的臉上帶著大大的溫暖微笑。"
     },
     {
         "id": 31558,
@@ -15556,8 +15556,8 @@ const jhWordsDB = [
         "uk": "/sməʊk/",
         "zh": "n. 煙、煙霧、吸菸、抽菸；v. 吸菸、吸毒品、抽菸、冒煙",
         "unit": 18,
-        "example": "Smoke had blackened the walls.",
-        "exampleZh": "煙霧使牆壁變黑。"
+        "example": "Black smoke rose into the cold air.",
+        "exampleZh": "黑煙升入了冰冷的空氣中。"
     },
     {
         "id": 31559,
@@ -15576,8 +15576,8 @@ const jhWordsDB = [
         "uk": "/sneɪl/",
         "zh": "n. 蝸牛、遲鈍的人；v. 緩慢移動",
         "unit": 18,
-        "example": "Is the snail really helpful?",
-        "exampleZh": "這隻蝸牛真的有用嗎？"
+        "example": "A small snail moves very slowly.",
+        "exampleZh": "一隻小蝸牛移動得非常慢。"
     },
     {
         "id": 31561,
@@ -15586,8 +15586,8 @@ const jhWordsDB = [
         "uk": "/sneɪk/",
         "zh": "n. 蛇、陰險狡詐的人、管道疏通器、蛇形浮動匯率制；vi. 蛇行、蜿蜒前進、拉",
         "unit": 18,
-        "example": "A snake was twisting around his arm.",
-        "exampleZh": "一條蛇在他的手臂上盤旋。"
+        "example": "A green snake hid under the rock.",
+        "exampleZh": "一條青蛇躲在岩石下面。"
     },
     {
         "id": 31562,
@@ -15606,8 +15606,8 @@ const jhWordsDB = [
         "uk": "/snəʊ/",
         "zh": "n. 雪、積雪、降雪、一場雪；vi. 下雪、飄雪、矇騙、使相信",
         "unit": 18,
-        "example": "It's hard work shovelling snow.",
-        "exampleZh": "鏟雪真是辛苦啊。"
+        "example": "Cold white snow falls from the sky.",
+        "exampleZh": "冰冷的白雪從天空飄落。"
     },
     {
         "id": 31564,
@@ -15626,8 +15626,8 @@ const jhWordsDB = [
         "uk": "/səʊ/",
         "zh": "adv. 如此、這麼、也一樣、那麼；conj. 所以、因此、以便、為了；pron. 這樣、如此",
         "unit": 18,
-        "example": "She is always so chic, so elegant.",
-        "exampleZh": "她總是那麼瀟灑，那麼優雅。"
+        "example": "It was cold, so I wore a coat.",
+        "exampleZh": "天氣很冷，所以我穿了一件外套。"
     },
     {
         "id": 31566,
@@ -15646,8 +15646,8 @@ const jhWordsDB = [
         "uk": "/ˈsɒkə(r)/",
         "zh": "n. 足球、英式足球",
         "unit": 18,
-        "example": "He coaches basketball and soccer.",
-        "exampleZh": "他執教籃球和足球。"
+        "example": "We play soccer after school daily.",
+        "exampleZh": "我們每天放學後都踢足球。"
     },
     {
         "id": 31568,
@@ -15656,8 +15656,8 @@ const jhWordsDB = [
         "uk": "/ˈsəʊʃ(ə)l/",
         "zh": "adj. 社會的、社會地位的、社會階層的、社交的；n. 社交聚會、聯歡會、社會保障",
         "unit": 18,
-        "example": "I have a fantastic social life.",
-        "exampleZh": "我有很棒的社交生活。"
+        "example": "School clubs help kids build social skills.",
+        "exampleZh": "學校社團幫助孩子建立社交技巧。"
     },
     {
         "id": 31569,
@@ -15666,8 +15666,8 @@ const jhWordsDB = [
         "uk": "/səˈsaɪəti/",
         "zh": "n. 社會、社群、社團、協會",
         "unit": 18,
-        "example": "Ours is a secular society.",
-        "exampleZh": "我們的社會是個世俗社會。"
+        "example": "Books play a role in society.",
+        "exampleZh": "書籍在社會中扮演著角色。"
     },
     {
         "id": 31570,
@@ -15676,8 +15676,8 @@ const jhWordsDB = [
         "uk": "/sɒk/",
         "zh": "n. 襪子、短襪、猛擊、重擊；vt. 猛擊、使遭損失、損害、狠打",
         "unit": 18,
-        "example": "He groped around in the dark for his other sock.",
-        "exampleZh": "他在黑暗中到處瞎摸找另一隻襪子。"
+        "example": "I lost my left white sock.",
+        "exampleZh": "我弄丟了我的左邊白襪子。"
     },
     {
         "id": 31571,
@@ -15686,8 +15686,8 @@ const jhWordsDB = [
         "uk": "/ˈsəʊdə/",
         "zh": "n. 汽水、蘇打、碳酸鈉、蘇打水",
         "unit": 18,
-        "example": "She quickly gulped her soda.",
-        "exampleZh": "她很快就喝了一口蘇打水。"
+        "example": "He drank a cold can of soda.",
+        "exampleZh": "他喝了一罐冰涼的汽水。"
     },
     {
         "id": 31572,
@@ -15696,8 +15696,8 @@ const jhWordsDB = [
         "uk": "/ˈsəʊfə/",
         "zh": "n. 沙發、長椅",
         "unit": 18,
-        "example": "They were snogging on the sofa.",
-        "exampleZh": "他們在沙發上接吻。"
+        "example": "My cat sleeps on the soft sofa.",
+        "exampleZh": "我的貓咪睡在柔軟的沙發上。"
     },
     {
         "id": 31573,
@@ -15706,8 +15706,8 @@ const jhWordsDB = [
         "uk": "/sɒft/",
         "zh": "adj. 軟的、易彎曲的、柔軟的、柔滑的；adv. 溫柔地、輕輕地、無力地、愚蠢地；n. 柔性、柔軟的東西、柔軟部分",
         "unit": 18,
-        "example": "The grass was soft and springy.",
-        "exampleZh": "草柔軟而有彈性。"
+        "example": "The cat has very soft white fur.",
+        "exampleZh": "這隻貓有非常柔軟的白毛。"
     },
     {
         "id": 31574,
@@ -15716,8 +15716,8 @@ const jhWordsDB = [
         "uk": "/ˈsəʊldʒə(r)/",
         "zh": "n. 士兵、軍人、兵蟻、垂直的磚；v. 當兵、堅持不懈、迎難而上、假稱害病",
         "unit": 18,
-        "example": "The soldier acted qua soldier, not as a human being.",
-        "exampleZh": "那名士兵當時以軍人的身份行事，而不是以一般人的身份。"
+        "example": "The brave soldier won the war.",
+        "exampleZh": "那位英勇的士兵贏得了戰爭。"
     },
     {
         "id": 31575,
@@ -15736,8 +15736,8 @@ const jhWordsDB = [
         "uk": "/sʌm; səm/",
         "zh": "det. 一些、若干、某個、某種；pron. 某些、有些、一部分；adv. 有些、稍微、大約",
         "unit": 18,
-        "example": "Robin opened some champagne.",
-        "exampleZh": "羅賓開了一些香檳。"
+        "example": "Can I have some cold water, please?",
+        "exampleZh": "請問我可以喝一些冷水嗎？"
     },
     {
         "id": 31577,
@@ -15786,8 +15786,8 @@ const jhWordsDB = [
         "uk": "/sʌn/",
         "zh": "n. 兒子、孩子、男性、子",
         "unit": 18,
-        "example": "Their son was painfully shy.",
-        "exampleZh": "他們的兒子非常害羞。"
+        "example": "Her son plays soccer after school daily.",
+        "exampleZh": "她的兒子每天放學後都踢足球。"
     },
     {
         "id": 31582,
@@ -15796,8 +15796,8 @@ const jhWordsDB = [
         "uk": "/sɒŋ/",
         "zh": "n. 歌、歌曲、歌唱、聲樂",
         "unit": 18,
-        "example": "The melancholy song died away.",
-        "exampleZh": "憂鬱的歌聲漸漸遠去。"
+        "example": "She sang a sweet love song today.",
+        "exampleZh": "她今天唱了一首甜美的戀歌。"
     },
     {
         "id": 31583,
@@ -15806,8 +15806,8 @@ const jhWordsDB = [
         "uk": "/suːn/",
         "zh": "adv. 不久、很快、馬上、早",
         "unit": 18,
-        "example": "Things soon returned to normal.",
-        "exampleZh": "事情很快就恢復正常。"
+        "example": "We will arrive at the station soon.",
+        "exampleZh": "我們很快就會到達車站。"
     },
     {
         "id": 31584,
@@ -15816,8 +15816,8 @@ const jhWordsDB = [
         "uk": "/sɔː(r)/",
         "zh": "adj. 疼痛的、痠痛的、惱火的、惱怒的；n. 傷處、痛處、瘡、傷心事",
         "unit": 18,
-        "example": "Symptoms include a sore throat.",
-        "exampleZh": "症狀包括嗓子疼。"
+        "example": "My red eyes are very sore.",
+        "exampleZh": "我的紅眼睛非常痠痛。"
     },
     {
         "id": 31585,
@@ -15836,8 +15836,8 @@ const jhWordsDB = [
         "uk": "/səʊl/",
         "zh": "n. 靈魂、心靈、某種人、一個人；adj. 激情黑人的、黑人文化的",
         "unit": 18,
-        "example": "We commend her soul to God.",
-        "exampleZh": "我們將她的靈魂交託給上帝。"
+        "example": "Music brings peace to my deep soul.",
+        "exampleZh": "音樂為我內心深處的靈魂帶來平靜。"
     },
     {
         "id": 31587,
@@ -15886,8 +15886,8 @@ const jhWordsDB = [
         "uk": "/saʊθ/",
         "zh": "n. 南方、南、南部、美國南部各州；adj. 南部的、位於南方的、朝南的、來自南方的；adv. 向南、朝南、去南方、在南方；v. 向南方、朝南、穿過子午線",
         "unit": 18,
-        "example": "Swallows migrate south in winter.",
-        "exampleZh": "冬季，燕子南遷。"
+        "example": "The birds fly south for the winter.",
+        "exampleZh": "鳥兒飛往南方過冬。"
     },
     {
         "id": 31592,
@@ -15896,8 +15896,8 @@ const jhWordsDB = [
         "uk": "/sɔɪ/",
         "zh": "n. 醬油、大豆、豆製品",
         "unit": 18,
-        "example": "Enormous acreages of soy beans are grown in the United States.",
-        "exampleZh": "在美國種植有大面積的大豆。"
+        "example": "Add some soy sauce to rice.",
+        "exampleZh": "在白飯裡加一些醬油。"
     },
     {
         "id": 31593,
@@ -15906,8 +15906,8 @@ const jhWordsDB = [
         "uk": "/speɪs/",
         "zh": "n. 空間、空地、空位、處所；vt. 把（某物）隔開、在（詞語等）之間加空格、變得昏昏沉沉、瞪著眼發呆",
         "unit": 18,
-        "example": "She needed space to be herself.",
-        "exampleZh": "她需要空間來做自己。"
+        "example": "There is no space in this car.",
+        "exampleZh": "這輛車裡已經沒有空間了。"
     },
     {
         "id": 31594,
@@ -15916,8 +15916,8 @@ const jhWordsDB = [
         "uk": "/spəˈɡeti/",
         "zh": "n. 義大利麵、義大利式細麵條",
         "unit": 18,
-        "example": "He's a dab hand at cooking spaghetti.",
-        "exampleZh": "他是煮義大利麵條的高手。"
+        "example": "We eat hot spaghetti for lunch.",
+        "exampleZh": "我們午餐吃熱騰騰的義大利麵。"
     },
     {
         "id": 31595,
@@ -15926,8 +15926,8 @@ const jhWordsDB = [
         "uk": "/spiːk/",
         "zh": "v. 說、講、說話、談話",
         "unit": 18,
-        "example": "I agreed to speak second.",
-        "exampleZh": "我同意第二個發言。"
+        "example": "She can speak English very well.",
+        "exampleZh": "她英語說得很好。"
     },
     {
         "id": 31596,
@@ -15936,8 +15936,8 @@ const jhWordsDB = [
         "uk": "/ˈspiːkə(r)/",
         "zh": "n. 演講者、發言者、說話者、講某種語言的人",
         "unit": 18,
-        "example": "She's a very capable speaker.",
-        "exampleZh": "她是一個非常有能力的演說者。"
+        "example": "The guest speaker gave a speech.",
+        "exampleZh": "特邀演講者發表了演講。"
     },
     {
         "id": 31597,
@@ -15946,8 +15946,8 @@ const jhWordsDB = [
         "uk": "/ˈspeʃ(ə)l/",
         "zh": "adj. 特別的、特殊的、格外看重的、特別要好的；n. 特色菜、特別節目、特價商品、折扣商品",
         "unit": 18,
-        "example": "Couldn't we call a special meeting?",
-        "exampleZh": "我們就不能召開一次特別會議嗎？"
+        "example": "Today is a very special day for us.",
+        "exampleZh": "今天對我們來說是非常特別的一天。"
     },
     {
         "id": 31598,
@@ -15956,8 +15956,8 @@ const jhWordsDB = [
         "uk": "/spiːtʃ/",
         "zh": "n. 演講、演說、發言、談話",
         "unit": 18,
-        "example": "He muffed his opening speech.",
-        "exampleZh": "他的開場白被壓低了。"
+        "example": "The leader gave a great short speech.",
+        "exampleZh": "領袖發表了一段精彩的簡短演說。"
     },
     {
         "id": 31599,
@@ -15966,8 +15966,8 @@ const jhWordsDB = [
         "uk": "/spiːd/",
         "zh": "n. 速度、快、迅速、排擋；vi. 快速移動、快速運送、超速駕駛、加速",
         "unit": 18,
-        "example": "The car was gathering speed.",
-        "exampleZh": "汽車逐漸加速。"
+        "example": "The car moved at high speed.",
+        "exampleZh": "那輛車高速行駛。"
     },
     {
         "id": 31600,
@@ -15986,8 +15986,8 @@ const jhWordsDB = [
         "uk": "/spend/",
         "zh": "vt. 花費、度過、花、消耗；n. 花費、開銷、預算",
         "unit": 18,
-        "example": "I spend too much time watching television.",
-        "exampleZh": "我花了太多時間看電視。"
+        "example": "I spend one hour on my homework.",
+        "exampleZh": "我花一個小時做作業。"
     },
     {
         "id": 31602,
@@ -15996,8 +15996,8 @@ const jhWordsDB = [
         "uk": "/ˈspaɪdə(r)/",
         "zh": "n. 蜘蛛、蜘蛛程式、爬蟲程式、狀似蜘蛛的物體；v. 急促爬動、設網、設圈套、快速搜尋",
         "unit": 18,
-        "example": "A spider had spun a perfect web outside the window.",
-        "exampleZh": "蜘蛛在窗外結了一張完整的網。"
+        "example": "A big spider made a web.",
+        "exampleZh": "一隻大蜘蛛結了一張網。"
     },
     {
         "id": 31603,
@@ -16006,8 +16006,8 @@ const jhWordsDB = [
         "uk": "/ˈspɪrɪt/",
         "zh": "n. 精神、心靈、情緒、心境；v. 偷偷帶走、秘密弄走、鼓勵、鼓舞",
         "unit": 18,
-        "example": "The human spirit is virtually indestructible.",
-        "exampleZh": "人的精神實際上是不可摧毀的。"
+        "example": "The team has great team spirit.",
+        "exampleZh": "這支隊伍有很棒的團隊精神。"
     },
     {
         "id": 31604,
@@ -16026,8 +16026,8 @@ const jhWordsDB = [
         "uk": "/spɔːt/",
         "zh": "n. 體育運動、運動會、野外運動、成就感；v. 穿戴、展示、嬉戲、玩耍；adj. 運動的",
         "unit": 18,
-        "example": "I'm not interested in sport.",
-        "exampleZh": "我對運動沒興趣。"
+        "example": "Tennis is a very fun field sport.",
+        "exampleZh": "網球是一項非常有趣的球場運動。"
     },
     {
         "id": 31606,
@@ -16046,8 +16046,8 @@ const jhWordsDB = [
         "uk": "/skweə(r)/",
         "zh": "n. 正方形、廣場、平方；adj. 正方形的、平方的、公正的",
         "unit": 18,
-        "example": "They live at 95 Russell Square.",
-        "exampleZh": "他們住在拉塞爾廣場95號。"
+        "example": "Draw a square on the paper.",
+        "exampleZh": "在紙上畫一個正方形。"
     },
     {
         "id": 31608,
@@ -16056,8 +16056,8 @@ const jhWordsDB = [
         "uk": "/steɪdʒ/",
         "zh": "n. 舞臺、階段、時期、旅程（或賽跑中）的一段；vt. 上演、演出、主辦、舉行",
         "unit": 18,
-        "example": "She pirouetted across the stage.",
-        "exampleZh": "她用單腳尖站立，從舞臺的一邊旋轉到另一邊。"
+        "example": "She sang a song on stage.",
+        "exampleZh": "她在舞台上唱了一首歌。"
     },
     {
         "id": 31609,
@@ -16066,8 +16066,8 @@ const jhWordsDB = [
         "uk": "/steə(r)/",
         "zh": "n. 樓梯、階梯、梯級",
         "unit": 18,
-        "example": "The house had a panelled hall and a fine oak stair.",
-        "exampleZh": "房子有一個鑲板大廳和一個精美的橡木樓梯。"
+        "example": "He sat on the bottom stair alone.",
+        "exampleZh": "他獨自坐在最下方的階梯上。"
     },
     {
         "id": 31610,
@@ -16076,8 +16076,8 @@ const jhWordsDB = [
         "uk": "/stæmp/",
         "zh": "n. 印章、郵票、印記、戳記；vt. 郵票、跺、重踩、重踏；v. 郵票",
         "unit": 18,
-        "example": "He stuck a stamp on the envelope.",
-        "exampleZh": "他把一張郵票貼到信封上。"
+        "example": "Put a stamp on this letter.",
+        "exampleZh": "在這封信上貼一張郵票。"
     },
     {
         "id": 31611,
@@ -16086,8 +16086,8 @@ const jhWordsDB = [
         "uk": "/stænd/",
         "zh": "v. 站、站立、起立、站起來；n. 架、座、臺、立場",
         "unit": 18,
-        "example": "I couldn't stand that yowling.",
-        "exampleZh": "我受不了那種嚎叫。"
+        "example": "Please stand up when your name is called.",
+        "exampleZh": "叫到你的名字時請起立。"
     },
     {
         "id": 31612,
@@ -16106,8 +16106,8 @@ const jhWordsDB = [
         "uk": "/stɑːt/",
         "zh": "v. 開始、著手、發生、發動；n. 開始、開端、啟程",
         "unit": 18,
-        "example": "They determined to start early.",
-        "exampleZh": "他們決定早點出發。"
+        "example": "The fun game will start very soon.",
+        "exampleZh": "這場有趣的遊戲很快就要開始了。"
     },
     {
         "id": 31614,
@@ -16116,8 +16116,8 @@ const jhWordsDB = [
         "uk": "/steɪt/",
         "zh": "n. 州、狀態、狀況、緊張；adj. 州的、國事的、國事禮儀的、國家提供（或控制）的；vt. 陳述、說明、規定、公佈",
         "unit": 18,
-        "example": "Music can induce a meditative state.",
-        "exampleZh": "音樂可以引發冥想狀態。"
+        "example": "They live in the state of Ohio.",
+        "exampleZh": "他們住在俄亥俄州。"
     },
     {
         "id": 31615,
@@ -16126,8 +16126,8 @@ const jhWordsDB = [
         "uk": "/ˈsteɪʃ(ə)n/",
         "zh": "n. 車站、電視臺、廣播電臺、站；vt. 駐紮、派駐、派往、安置在",
         "unit": 18,
-        "example": "The train pulled into a station.",
-        "exampleZh": "火車進站了。"
+        "example": "I will meet you at the train station.",
+        "exampleZh": "我會在火車站與你會合。"
     },
     {
         "id": 31616,
@@ -16136,8 +16136,8 @@ const jhWordsDB = [
         "uk": "/ˈsteɪʃənri/",
         "zh": "n. 文具、信紙、信箋",
         "unit": 18,
-        "example": "The stationery order has arrived.",
-        "exampleZh": "訂購的文具到貨了。"
+        "example": "I need new stationery for school.",
+        "exampleZh": "我需要上學用的新文具。"
     },
     {
         "id": 31617,
@@ -16176,8 +16176,8 @@ const jhWordsDB = [
         "uk": "/stiːm/",
         "zh": "n. 蒸汽、水蒸氣、水汽、霧氣；v. 散發蒸汽、冒熱氣、蒸、行駛；adj. 蒸汽的",
         "unit": 18,
-        "example": "Who invented the steam engine?",
-        "exampleZh": "誰發明了蒸汽機？"
+        "example": "Steam rose from the hot tea.",
+        "exampleZh": "熱茶冒出了蒸氣。"
     },
     {
         "id": 31621,
@@ -16216,8 +16216,8 @@ const jhWordsDB = [
         "uk": "/ˈstʌmək/",
         "zh": "n. 胃、腹部、類胃器官、四胃之一；vt. 忍受、承受、吃得下",
         "unit": 18,
-        "example": "He had violent stomach pains.",
-        "exampleZh": "他有過劇烈的胃痛。"
+        "example": "My stomach hurts after eating lunch.",
+        "exampleZh": "吃過午餐後我的肚子好痛。"
     },
     {
         "id": 31625,
@@ -16246,8 +16246,8 @@ const jhWordsDB = [
         "uk": "/stɒp/",
         "zh": "v. 停止、結束、中斷、停止運轉；n. 車站、停止、終止、停車路口",
         "unit": 18,
-        "example": "Why didn't he stop me?",
-        "exampleZh": "他為什麼不阻止我？"
+        "example": "Please stop making that loud noise now.",
+        "exampleZh": "請現在停止製造那種吵鬧的噪音。"
     },
     {
         "id": 31628,
@@ -16256,8 +16256,8 @@ const jhWordsDB = [
         "uk": "/stɔː(r)/",
         "zh": "n. 商店、倉庫、儲存處、儲存；vt. 儲存、貯存、儲藏",
         "unit": 18,
-        "example": "They run a small grocery store.",
-        "exampleZh": "他們經營一家小雜貨店。"
+        "example": "She went to the book store today.",
+        "exampleZh": "她今天去了書店。"
     },
     {
         "id": 31629,
@@ -16266,8 +16266,8 @@ const jhWordsDB = [
         "uk": "/stɔːm/",
         "zh": "n. 暴風雨、暴風雪、風暴、爆發；v. 猛烈攻擊、突然襲擊、氣沖沖地走、非常生氣地說",
         "unit": 18,
-        "example": "The storm clouds were gathering.",
-        "exampleZh": "暴風雨烏雲正在聚集。"
+        "example": "A dark storm came this morning.",
+        "exampleZh": "今天早上來了一場暴風雨。"
     },
     {
         "id": 31630,
@@ -16276,8 +16276,8 @@ const jhWordsDB = [
         "uk": "/ˈstɔːri/",
         "zh": "n. 故事、敘述、新聞報道、描述；v. 用歷史故事畫裝飾",
         "unit": 18,
-        "example": "Newspapers blew up the story.",
-        "exampleZh": "報紙報道了這個故事。"
+        "example": "Mom told us a funny fairy story.",
+        "exampleZh": "媽媽給我們講了一個有趣的童話故事。"
     },
     {
         "id": 31631,
@@ -16306,8 +16306,8 @@ const jhWordsDB = [
         "uk": "/streɪndʒ/",
         "zh": "adj. 奇怪的、不尋常的、陌生的、不熟悉的；adv. 奇怪地、不尋常地",
         "unit": 18,
-        "example": "Then a strange thing happened.",
-        "exampleZh": "然後奇怪的事情發生了。"
+        "example": "I heard a strange sound last night.",
+        "exampleZh": "我昨晚聽到一個奇怪的聲音。"
     },
     {
         "id": 31634,
@@ -16316,8 +16316,8 @@ const jhWordsDB = [
         "uk": "/ˈstreɪndʒə(r)/",
         "zh": "n. 陌生人、新來者、異鄉人、從未經歷某事的人",
         "unit": 18,
-        "example": "She married a practical stranger.",
-        "exampleZh": "她等於是嫁了個陌生人。"
+        "example": "Never take candy from a stranger.",
+        "exampleZh": "絕不要拿陌生人的糖果。"
     },
     {
         "id": 31635,
@@ -16326,8 +16326,8 @@ const jhWordsDB = [
         "uk": "/strɔː/",
         "zh": "n. 稻草、麥稈、吸管、稻草色；adj. 稻草的、無價值的",
         "unit": 18,
-        "example": "The floors are covered with woven straw mats.",
-        "exampleZh": "地板上鋪著用草編織的墊子。"
+        "example": "Drink your milk with a straw.",
+        "exampleZh": "用吸管喝你的牛奶。"
     },
     {
         "id": 31636,
@@ -16336,8 +16336,8 @@ const jhWordsDB = [
         "uk": "/ˈstrɔːbəri/",
         "zh": "n. 草莓、草莓色、紫紅色",
         "unit": 18,
-        "example": "I want a strawberry milkshake.",
-        "exampleZh": "我想要杯草莓奶昔。"
+        "example": "She ate a sweet red strawberry.",
+        "exampleZh": "她吃了一顆香甜的紅草莓。"
     },
     {
         "id": 31637,
@@ -16366,8 +16366,8 @@ const jhWordsDB = [
         "uk": "/straɪk/",
         "zh": "v. 擊、撞、打；n. 罷工、罷市、罷課、襲擊",
         "unit": 18,
-        "example": "A strike has shut the factory.",
-        "exampleZh": "罷工使工廠停業。"
+        "example": "The clock began to strike twelve.",
+        "exampleZh": "鐘聲開始敲響十二點。"
     },
     {
         "id": 31640,
@@ -16386,8 +16386,8 @@ const jhWordsDB = [
         "uk": "/ˈstjuːd(ə)nt/",
         "zh": "n. 學生、學者",
         "unit": 18,
-        "example": "Student numbers are expanding rapidly.",
-        "exampleZh": "學生人數正在迅速增加。"
+        "example": "Every student must read this good book.",
+        "exampleZh": "每位學生都必須讀這本好書。"
     },
     {
         "id": 31642,
@@ -16396,8 +16396,8 @@ const jhWordsDB = [
         "uk": "/ˈstʌdi/",
         "zh": "n. 研究、調查、學習、攻讀；vt. 學習、攻讀、認真閱讀、仔細看",
         "unit": 18,
-        "example": "She was accepted to study music.",
-        "exampleZh": "她被錄取學習音樂。"
+        "example": "We study hard for the math test.",
+        "exampleZh": "我們為了數學考試努力研讀。"
     },
     {
         "id": 31643,
@@ -16416,8 +16416,8 @@ const jhWordsDB = [
         "uk": "/staɪl/",
         "zh": "n. 風格、方式、作風、款式；vt. 設計、給……造型、稱呼、命名",
         "unit": 18,
-        "example": "He had a dense, ponderous style.",
-        "exampleZh": "他的風格是詞藻堆砌、冗長沉悶。"
+        "example": "I like this new hair style.",
+        "exampleZh": "我喜歡這個新髮型。"
     },
     {
         "id": 31645,
@@ -16426,8 +16426,8 @@ const jhWordsDB = [
         "uk": "/ˈsʌbdʒɪkt/",
         "zh": "n. 科目、主題、話題、學科；vt. 使臣服、征服、壓服、使經受；adj. 隸屬的、臣服的、可能受……影響的、易遭受……的",
         "unit": 18,
-        "example": "Biology is my favourite subject.",
-        "exampleZh": "生物是我最喜歡的學科。"
+        "example": "Art is my best school subject.",
+        "exampleZh": "美術是我最拿手的學校科目。"
     },
     {
         "id": 31646,
@@ -16436,8 +16436,8 @@ const jhWordsDB = [
         "uk": "/ˈsʌbweɪ/",
         "zh": "n. 地鐵、地下通道；v. 乘地鐵",
         "unit": 18,
-        "example": "The subway was covered in graffiti.",
-        "exampleZh": "過街地道里塗滿了亂七八糟的圖畫和文字。"
+        "example": "We take the subway to school.",
+        "exampleZh": "我們搭捷運去上學。"
     },
     {
         "id": 31647,
@@ -16446,8 +16446,8 @@ const jhWordsDB = [
         "uk": "/səkˈsiːd/",
         "zh": "v. 成功、達成、表現出色、有作為",
         "unit": 18,
-        "example": "The project seemed unlikely to succeed.",
-        "exampleZh": "該項目似乎不太可能成功。"
+        "example": "Work hard and you will surely succeed.",
+        "exampleZh": "努力工作，你就一定會成功的。"
     },
     {
         "id": 31648,
@@ -16456,8 +16456,8 @@ const jhWordsDB = [
         "uk": "/səkˈses/",
         "zh": "n. 成功、勝利、發財、成名",
         "unit": 18,
-        "example": "The book ensured his success.",
-        "exampleZh": "這本書保證了他的成功。"
+        "example": "Hard work will bring you success.",
+        "exampleZh": "辛勤工作會為你帶來成功。"
     },
     {
         "id": 31649,
@@ -16476,8 +16476,8 @@ const jhWordsDB = [
         "uk": "/sʌtʃ/",
         "zh": "det. 這樣的、如此的、這等的、如此；pron. 這種人、這類的、那樣的情況、那件事；adv. 如此、這麼、如此程度",
         "unit": 18,
-        "example": "Such a view is pleasing.",
-        "exampleZh": "這樣的景色令人賞心悅目。"
+        "example": "I have never seen such a big dog.",
+        "exampleZh": "我從沒見過這麼大的狗。"
     },
     {
         "id": 31651,
@@ -16486,8 +16486,8 @@ const jhWordsDB = [
         "uk": "/ˈsʌd(ə)n/",
         "zh": "adj. 突然的、意外的；n. 突然發生的事；adv. 突然地",
         "unit": 18,
-        "example": "A sudden noise startled her.",
-        "exampleZh": "突然發出的響聲嚇了她一跳。"
+        "example": "There was a sudden loud noise.",
+        "exampleZh": "突然傳來一陣巨大的聲響。"
     },
     {
         "id": 31652,
@@ -16496,8 +16496,8 @@ const jhWordsDB = [
         "uk": "/ˈʃʊɡə(r)/",
         "zh": "n. 食糖、一匙糖、一塊方糖、糖；v. 給……加糖、美化、提取楓蜜、在樹幹上塗撒糖；int. 糟糕、哎呀",
         "unit": 18,
-        "example": "Sugar occurs naturally in fruit.",
-        "exampleZh": "糖天然存在於水果中。"
+        "example": "Do you take sugar in your tea?",
+        "exampleZh": "你的茶裡面有加糖嗎？"
     },
     {
         "id": 31653,
@@ -16516,8 +16516,8 @@ const jhWordsDB = [
         "uk": "/suːt/",
         "zh": "n. 套裝、西裝、訴訟、成套服裝；vt. 適合、相配、使顯得漂亮、與……相配",
         "unit": 18,
-        "example": "Lighter shades suit you best.",
-        "exampleZh": "較淺色的衣服對你最合適。"
+        "example": "He wore a clean black suit.",
+        "exampleZh": "他穿著一套乾淨的黑西裝。"
     },
     {
         "id": 31655,
@@ -16526,8 +16526,8 @@ const jhWordsDB = [
         "uk": "/ˈsʌmə(r)/",
         "zh": "n. 夏天、夏季、年、歲；v. 避暑、過夏、夏天放牧",
         "unit": 18,
-        "example": "I really love summer evenings.",
-        "exampleZh": "我真的很喜歡夏天的夜晚。"
+        "example": "We swim in the river every summer.",
+        "exampleZh": "我們每年夏天都在河裡游泳。"
     },
     {
         "id": 31656,
@@ -16536,8 +16536,8 @@ const jhWordsDB = [
         "uk": "/sʌn/",
         "zh": "n. 太陽、日光、陽光、恆星；v. 曬太陽、日光浴",
         "unit": 18,
-        "example": "The sun disappeared from view.",
-        "exampleZh": "太陽從視野中消失了。"
+        "example": "The warm sun shines all day long.",
+        "exampleZh": "溫暖的太陽整天普照。"
     },
     {
         "id": 31657,
@@ -16556,8 +16556,8 @@ const jhWordsDB = [
         "uk": "/ˈsʌni/",
         "zh": "adj. 陽光充足的、暖和的、開朗的、陽光的",
         "unit": 18,
-        "example": "It's a brilliantly sunny morning.",
-        "exampleZh": "這是一個陽光明媚的早晨。"
+        "example": "We went for a walk on sunny days.",
+        "exampleZh": "我們在晴朗的日子裡去散步。"
     },
     {
         "id": 31659,
@@ -16596,8 +16596,8 @@ const jhWordsDB = [
         "uk": "/səˈplaɪ/",
         "zh": "v. 供應、提供、供給；n. 供應、補給品、存貨",
         "unit": 18,
-        "example": "The electricity supply here is quite erratic.",
-        "exampleZh": "這裡的電力供應相當不穩定。"
+        "example": "They supply fresh water to us.",
+        "exampleZh": "他們向我們提供新鮮的水。"
     },
     {
         "id": 31663,
@@ -16606,8 +16606,8 @@ const jhWordsDB = [
         "uk": "/səˈpɔːt/",
         "zh": "vt. 支持、支援、擁護、鼓勵；n. 支撐、支援、擁護、幫助",
         "unit": 18,
-        "example": "We offer free technical support.",
-        "exampleZh": "我們免費提供技術支援。"
+        "example": "My family will always support me.",
+        "exampleZh": "我的家人會永遠支持我。"
     },
     {
         "id": 31664,
@@ -16616,8 +16616,8 @@ const jhWordsDB = [
         "uk": "/ʃʊə(r); ʃɔː(r)/",
         "zh": "adj. 確信的、有把握的、肯定的、一定的；adv. 當然、確實、的確、誠然",
         "unit": 18,
-        "example": "'I'm not sure,' she responded.",
-        "exampleZh": "「我不確定，」她回答。"
+        "example": "Are you sure about your new plan?",
+        "exampleZh": "你對你的新計畫確定嗎？"
     },
     {
         "id": 31665,
@@ -16626,8 +16626,8 @@ const jhWordsDB = [
         "uk": "/sɜːf/",
         "zh": "v. 上網、衝浪、坐在高速行駛的車輛（尤指火車）頂部（或外面）享受刺激感、頻繁調換電影片道；n. 拍岸浪花、一次衝浪",
         "unit": 18,
-        "example": "I'm going to buy a surfboard and learn to surf.",
-        "exampleZh": "我要去買個衝浪板來學衝浪。"
+        "example": "Boys love to surf the waves.",
+        "exampleZh": "男孩們喜歡在浪花中衝浪。"
     },
     {
         "id": 31666,
@@ -16636,8 +16636,8 @@ const jhWordsDB = [
         "uk": "/ˈsɜːfɪs/",
         "zh": "n. 表面、水面、地面、桌面；vi. 浮出水面、顯露、暴露、公開；adj. 表面上的、外表上的、表面的、水陸運輸的",
         "unit": 18,
-        "example": "He staggered on the uneven surface.",
-        "exampleZh": "他搖搖晃晃地走在高低不平的表面上。"
+        "example": "The table has a smooth surface.",
+        "exampleZh": "這張桌子表面很光滑。"
     },
     {
         "id": 31667,
@@ -16646,8 +16646,8 @@ const jhWordsDB = [
         "uk": "/səˈpraɪz/",
         "zh": "n. 不尋常的事件、意外之事、驚奇、驚訝；vt. 意外發現、使（某人）吃驚、當場抓獲；int. 感到驚奇吧！；adj. 令人驚奇的、意外的",
         "unit": 18,
-        "example": "She looked up in surprise.",
-        "exampleZh": "她驚訝地抬起頭。"
+        "example": "Her gift was a very nice surprise.",
+        "exampleZh": "她的禮物是一個很棒的驚喜。"
     },
     {
         "id": 31668,
@@ -16666,8 +16666,8 @@ const jhWordsDB = [
         "uk": "/səˈvaɪv/",
         "zh": "v. 倖存、生還、活下來、比……活得長",
         "unit": 18,
-        "example": "Most women will survive their spouses.",
-        "exampleZh": "大多數女性都會在她們的配偶後存活下來。"
+        "example": "Animals need water to survive in winter.",
+        "exampleZh": "動物需要水才能在冬天存活下來。"
     },
     {
         "id": 31670,
@@ -16676,8 +16676,8 @@ const jhWordsDB = [
         "uk": "/ˈswɒləʊ/",
         "zh": "v. 吞嚥、吞下、嚥下、做吞嚥動作；n. 燕子、吞、一口",
         "unit": 18,
-        "example": "You are asked to swallow a capsule containing vitamin B.",
-        "exampleZh": "你被要求吞下一顆含維生素B的膠囊。"
+        "example": "Chew your food before you swallow.",
+        "exampleZh": "吞下前要先把食物嚼碎。"
     },
     {
         "id": 31671,
@@ -16686,8 +16686,8 @@ const jhWordsDB = [
         "uk": "/swɒn/",
         "zh": "n. 天鵝、天鵝星座；v. 無目的地漫遊、閒逛",
         "unit": 18,
-        "example": "The swan flapped its wings noisily.",
-        "exampleZh": "天鵝大聲地拍打著翅膀。"
+        "example": "A white swan swims in water.",
+        "exampleZh": "一隻白天鵝在水裡游泳。"
     },
     {
         "id": 31672,
@@ -16696,8 +16696,8 @@ const jhWordsDB = [
         "uk": "/ˈswetə(r)/",
         "zh": "n. 毛衣、針織套衫、毛線衫、大量出汗的人",
         "unit": 18,
-        "example": "The fence snagged my sweater.",
-        "exampleZh": "柵欄把我的毛衣掛住了。"
+        "example": "She wears a warm wool sweater.",
+        "exampleZh": "她穿著一件溫暖的毛衣。"
     },
     {
         "id": 31673,
@@ -16706,8 +16706,8 @@ const jhWordsDB = [
         "uk": "/swiːp/",
         "zh": "v. 打掃、清除、帶走、捲走；n. 打掃、清掃、揮動、巡行",
         "unit": 18,
-        "example": "Strong winds regularly sweep the islands.",
-        "exampleZh": "這些島嶼上經常颳大風。"
+        "example": "Please sweep the floor right now.",
+        "exampleZh": "請現在打掃地板。"
     },
     {
         "id": 31674,
@@ -16716,8 +16716,8 @@ const jhWordsDB = [
         "uk": "/swiːt/",
         "zh": "adj. 含糖的、甜的、未加鹽的；n. 親愛的、寶貝、糖果、甜食",
         "unit": 18,
-        "example": "I especially like sweet things.",
-        "exampleZh": "我特別喜歡甜的東西。"
+        "example": "These red apples taste very sweet today.",
+        "exampleZh": "這些紅蘋果今天嚐起來非常香甜。"
     },
     {
         "id": 31675,
@@ -16726,8 +16726,8 @@ const jhWordsDB = [
         "uk": "/swɪm/",
         "zh": "v. 游泳、橫渡、遊、遊過；n. 游泳、適合釣魚的靜止深水處、深潭、漂浮；adj. 游泳時穿戴的",
         "unit": 18,
-        "example": "I managed to swim to safety.",
-        "exampleZh": "我設法游到安全的地方。"
+        "example": "Kids love to swim in the pool.",
+        "exampleZh": "孩子們喜歡在游泳池裡游泳。"
     },
     {
         "id": 31676,
@@ -16736,8 +16736,8 @@ const jhWordsDB = [
         "uk": "/swɪŋ/",
         "zh": "v. 搖擺、擺動、揮動、轉向；n. 鞦韆、搖擺、擺動",
         "unit": 18,
-        "example": "I need to work on my swing.",
-        "exampleZh": "我需要改進我的揮杆動作。"
+        "example": "The kids like to swing high.",
+        "exampleZh": "孩子們喜歡盪得很高。"
     },
     {
         "id": 31677,
@@ -16746,8 +16746,8 @@ const jhWordsDB = [
         "uk": "/ˈsɪmb(ə)l/",
         "zh": "n. 象徵、標誌、符號、代表性的人",
         "unit": 18,
-        "example": "What's the chemical symbol for mercury?",
-        "exampleZh": "水銀的化學符號是什麼？"
+        "example": "The red rose is a symbol.",
+        "exampleZh": "紅玫瑰是一種象徵。"
     },
     {
         "id": 31678,
@@ -16756,8 +16756,8 @@ const jhWordsDB = [
         "uk": "/ˈsɪstəm/",
         "zh": "n. 系統、體制、制度、方式",
         "unit": 18,
-        "example": "Trust is implicit in the system.",
-        "exampleZh": "信任是這種體制裡內含的。"
+        "example": "Our school has a good system.",
+        "exampleZh": "我們學校有一套良好的制度。"
     },
     {
         "id": 31679,
@@ -16766,8 +16766,8 @@ const jhWordsDB = [
         "uk": "/ˈteɪb(ə)l/",
         "zh": "n. 桌子、臺子、一桌人、一桌酒席；vt. 正式提交討論、擱置、暫緩審議、用寬貼邊加固",
         "unit": 18,
-        "example": "He thumped the table angrily.",
-        "exampleZh": "他生氣地拍著桌子。"
+        "example": "Put the book on the round table.",
+        "exampleZh": "把書放在圓桌上面。"
     },
     {
         "id": 31680,
@@ -16776,8 +16776,8 @@ const jhWordsDB = [
         "uk": "/teɪl/",
         "zh": "n. 尾巴、尾部、狹翅須、尾狀物；vt. 尾隨、跟蹤、盯梢、曲線移動",
         "unit": 18,
-        "example": "The pony swished its tail.",
-        "exampleZh": "小馬搖著尾巴。"
+        "example": "The big dog wagged its long tail.",
+        "exampleZh": "大狗搖著牠長長的尾巴。"
     },
     {
         "id": 31681,
@@ -16796,8 +16796,8 @@ const jhWordsDB = [
         "uk": "/teɪl/",
         "zh": "n. 故事、傳說、描述、講述",
         "unit": 18,
-        "example": "She unfolded her tale to us.",
-        "exampleZh": "她向我們講述了她的故事。"
+        "example": "He told us an old fairy tale.",
+        "exampleZh": "他給我們講了一個古老的童話故事。"
     },
     {
         "id": 31683,
@@ -16816,8 +16816,8 @@ const jhWordsDB = [
         "uk": "/tɔːk/",
         "zh": "v. 談話、說話、交談、談判；n. 講話、交談、討論、正式會談",
         "unit": 18,
-        "example": "They talk about it endlessly.",
-        "exampleZh": "他們無休無止地談論它。"
+        "example": "Let us talk about your new school.",
+        "exampleZh": "我們來聊聊你的新學校吧。"
     },
     {
         "id": 31685,
@@ -16826,8 +16826,8 @@ const jhWordsDB = [
         "uk": "/ˈtɔːkətɪv/",
         "zh": "adj. 多話的、愛說話的、健談的",
         "unit": 18,
-        "example": "He is very talkative.",
-        "exampleZh": "他很健談。"
+        "example": "My little brother is very talkative at dinner.",
+        "exampleZh": "我的小弟弟在吃晚餐時非常健談多話。"
     },
     {
         "id": 31686,
@@ -16846,8 +16846,8 @@ const jhWordsDB = [
         "uk": "/ˌtændʒəˈriːn/",
         "zh": "n. 橘子、柑橘、柑橘樹、橘樹",
         "unit": 18,
-        "example": "Tangerine, raspberry, and kumquat have many small seeds.",
-        "exampleZh": "橘子，紅莓和金桔有許多的小種子。"
+        "example": "He ate a sweet orange tangerine.",
+        "exampleZh": "他吃了一顆甘甜的橘子。"
     },
     {
         "id": 31688,
@@ -16866,8 +16866,8 @@ const jhWordsDB = [
         "uk": "/teɪp/",
         "zh": "n. 磁帶、錄音帶、錄了音的盒式磁帶、錄了像的盒式磁帶；vt. 錄音、錄影、用膠帶貼上、用帶子繫緊",
         "unit": 18,
-        "example": "We've got her statement on tape.",
-        "exampleZh": "我們已經把她的陳述錄在磁帶上了。"
+        "example": "Fix the paper with clear tape.",
+        "exampleZh": "用透明膠帶把紙黏好。"
     },
     {
         "id": 31690,
@@ -16876,8 +16876,8 @@ const jhWordsDB = [
         "uk": "/tɑːsk/",
         "zh": "n. 任務、工作、活動；vt. 派給……任務、對（手段，能力）要求極高、考驗",
         "unit": 18,
-        "example": "The task was a formidable one.",
-        "exampleZh": "這任務非常艱鉅。"
+        "example": "He did the hard task well.",
+        "exampleZh": "他把那項艱鉅的任務做得很好。"
     },
     {
         "id": 31691,
@@ -16886,8 +16886,8 @@ const jhWordsDB = [
         "uk": "/teɪst/",
         "zh": "n. 味道、滋味、味覺、愛好；v. 嚐起來、嚐出……的味道、嘗、品嚐",
         "unit": 18,
-        "example": "The salads taste too vinegary.",
-        "exampleZh": "沙拉味道太醋了。"
+        "example": "This fresh soup has a sweet taste.",
+        "exampleZh": "這碗新鮮的湯有著清甜的滋味。"
     },
     {
         "id": 31692,
@@ -16896,8 +16896,8 @@ const jhWordsDB = [
         "uk": "/ˈtæksi/",
         "zh": "n. 計程車、小型不定時公交車、出租汽船；vt. 緩慢滑行、駕駛（飛機）緩慢滑行、乘計程車",
         "unit": 18,
-        "example": "I hailed a passing taxi.",
-        "exampleZh": "我招呼了一輛路過的計程車。"
+        "example": "We take a taxi to the station.",
+        "exampleZh": "我們搭計程車去車站。"
     },
     {
         "id": 31693,
@@ -16916,8 +16916,8 @@ const jhWordsDB = [
         "uk": "/tiːtʃ/",
         "zh": "vt. 教導、教授、講授、教會；n. 教師",
         "unit": 18,
-        "example": "Could you teach me to do that?",
-        "exampleZh": "你能教我這樣做嗎？"
+        "example": "My mother will teach me to cook.",
+        "exampleZh": "我媽媽會教我做飯。"
     },
     {
         "id": 31695,
@@ -16926,8 +16926,8 @@ const jhWordsDB = [
         "uk": "/ˈtiːtʃə(r)/",
         "zh": "n. 老師、教師、教員、給人教益的事物",
         "unit": 18,
-        "example": "She's a very capable teacher.",
-        "exampleZh": "她是一位非常有能力的老師。"
+        "example": "My teacher is kind to every student.",
+        "exampleZh": "我的老師對每位學生都很好。"
     },
     {
         "id": 31696,
@@ -16936,8 +16936,8 @@ const jhWordsDB = [
         "uk": "/tiːm/",
         "zh": "n. 隊伍、隊、小組、工作隊；v. 協作、合作、使（顏色、布料、衣服）相配、一組牲口",
         "unit": 18,
-        "example": "The team was soundly defeated.",
-        "exampleZh": "這支隊一敗塗地。"
+        "example": "Our ball team won the cup.",
+        "exampleZh": "我們的球隊贏得了獎盃。"
     },
     {
         "id": 31697,
@@ -16946,8 +16946,8 @@ const jhWordsDB = [
         "uk": "/ˈtiːpɒt/",
         "zh": "n. 茶壺、〈習語〉atempestinateapot",
         "unit": 18,
-        "example": "For some, it may seem silly, a tempest in a teapot.",
-        "exampleZh": "對有些人來說，這似乎很荒唐，是小題大做。"
+        "example": "Hot tea is in the teapot.",
+        "exampleZh": "茶壺裡有熱茶。"
     },
     {
         "id": 31698,
@@ -16966,8 +16966,8 @@ const jhWordsDB = [
         "uk": "/ˈtiːneɪdʒə(r)/",
         "zh": "n. 青少年、十幾歲的孩子",
         "unit": 18,
-        "example": "He was acting like a lovelorn teenager.",
-        "exampleZh": "他表現的像一個患有相思病的少年。"
+        "example": "The teenager plays with his dog.",
+        "exampleZh": "那名青少年正在和他的狗玩耍。"
     },
     {
         "id": 31700,
@@ -16976,8 +16976,8 @@ const jhWordsDB = [
         "uk": "/ˈtelɪfəʊn/",
         "zh": "n. 電話通訊系統、電話、話筒、受話器；vt. 打電話",
         "unit": 18,
-        "example": "He snatched up the telephone.",
-        "exampleZh": "他一把抓起了電話。"
+        "example": "The telephone rang three times loudly.",
+        "exampleZh": "電話大聲地響了三聲。"
     },
     {
         "id": 31701,
@@ -16996,8 +16996,8 @@ const jhWordsDB = [
         "uk": "/tel/",
         "zh": "v. 說、告訴、告知、講述；n. （洩露試圖作弊的）不經意動作、臺形（土墩）遺址",
         "unit": 18,
-        "example": "Tell me what really happened.",
-        "exampleZh": "告訴我到底發生了什麼事。"
+        "example": "Please tell me your new phone number.",
+        "exampleZh": "請告訴我你的新電話號碼。"
     },
     {
         "id": 31703,
@@ -17006,8 +17006,8 @@ const jhWordsDB = [
         "uk": "/ˈtemprətʃə(r)/",
         "zh": "n. 溫度、氣溫、體溫、發燒",
         "unit": 18,
-        "example": "The temperature has dropped considerably.",
-        "exampleZh": "溫度已大大降低。"
+        "example": "The room temperature is very warm.",
+        "exampleZh": "室內溫度非常溫暖。"
     },
     {
         "id": 31704,
@@ -17016,8 +17016,8 @@ const jhWordsDB = [
         "uk": "/ˈtemp(ə)l/",
         "zh": "n. 廟宇、寺院、太陽穴、鬢角",
         "unit": 18,
-        "example": "We go to temple on Saturdays.",
-        "exampleZh": "我們每個星期六去寺廟。"
+        "example": "We saw an old stone temple.",
+        "exampleZh": "我們看到了一座古老的石頭寺廟。"
     },
     {
         "id": 31705,
@@ -17026,8 +17026,8 @@ const jhWordsDB = [
         "uk": "/ten/",
         "zh": "num. 十個、十；adj. 十的；det. 十個",
         "unit": 18,
-        "example": "Tickets cost ten dollars each.",
-        "exampleZh": "門票每張十美元。"
+        "example": "I have ten books in my room.",
+        "exampleZh": "我的房間裡有十本書。"
     },
     {
         "id": 31706,
@@ -17066,8 +17066,8 @@ const jhWordsDB = [
         "uk": "/ˈterəb(ə)l/",
         "zh": "adj. 可怕的、糟糕的、令人極為不快的、極度的",
         "unit": 18,
-        "example": "I'm in a terrible predicament.",
-        "exampleZh": "我陷入了可怕的困境。"
+        "example": "I had a terrible headache this morning.",
+        "exampleZh": "我今天早上頭痛得非常厲害。"
     },
     {
         "id": 31710,
@@ -17086,8 +17086,8 @@ const jhWordsDB = [
         "uk": "/test/",
         "zh": "n. 測試、測驗、考試、檢查；vt. 試驗、測試、測驗",
         "unit": 18,
-        "example": "He failed his driving test.",
-        "exampleZh": "他駕駛執照考試不及格。"
+        "example": "We have a math test today.",
+        "exampleZh": "我們今天有一場數學測驗。"
     },
     {
         "id": 31712,
@@ -17106,8 +17106,8 @@ const jhWordsDB = [
         "uk": "/ðæn; ðən/",
         "zh": "prep. 比、多於、超過；conj. 比、多於",
         "unit": 18,
-        "example": "Faith is stronger than reason.",
-        "exampleZh": "信仰比理性更強大。"
+        "example": "My older brother is taller than me.",
+        "exampleZh": "我哥哥比我還要高。"
     },
     {
         "id": 31714,
@@ -17146,8 +17146,8 @@ const jhWordsDB = [
         "uk": "/ˈθɪətə(r)/",
         "zh": "n. 電影院、戲院、劇場、戲劇",
         "unit": 18,
-        "example": "It's the South Theater Company.",
-        "exampleZh": "這是南方戲劇公司。"
+        "example": "We went to the movie theater.",
+        "exampleZh": "我們去了電影院。"
     },
     {
         "id": 31718,
@@ -17156,8 +17156,8 @@ const jhWordsDB = [
         "uk": "/ðen/",
         "zh": "adv. 然後、當時、到那時、接下來；adj. 當時（任職等）的",
         "unit": 18,
-        "example": "The seagulls soared then dived.",
-        "exampleZh": "海鷗飛翔，然後潛入水中。"
+        "example": "We ate dinner and then went home.",
+        "exampleZh": "我們吃了晚餐，然後回家了。"
     },
     {
         "id": 31719,
@@ -17166,8 +17166,8 @@ const jhWordsDB = [
         "uk": "/ðeə(r)/",
         "zh": "adv. 那裡、在那裡、在那邊、在那點上；int. 你瞧；n. 那個地方",
         "unit": 18,
-        "example": "There were thousands of people there.",
-        "exampleZh": "那裡有數千人。"
+        "example": "Put your bag over there on the chair.",
+        "exampleZh": "把你的袋子放在那邊的椅子上。"
     },
     {
         "id": 31720,
@@ -17176,8 +17176,8 @@ const jhWordsDB = [
         "uk": "/ˈðeəfɔː(r)/",
         "zh": "adv. 因此、所以",
         "unit": 18,
-        "example": "He's only 17 and therefore not eligible to vote.",
-        "exampleZh": "他只有 17 歲，因此沒有資格投票。"
+        "example": "He was sick, therefore he stayed home.",
+        "exampleZh": "他生病了，因此他留在家中。"
     },
     {
         "id": 31721,
@@ -17186,8 +17186,8 @@ const jhWordsDB = [
         "uk": "/ðiːz/",
         "zh": "pron. 這些；det. 這些；adj. 這些的",
         "unit": 18,
-        "example": "These questions frustrated me.",
-        "exampleZh": "這些問題讓我很沮喪。"
+        "example": "Do you like these new red shoes?",
+        "exampleZh": "你喜歡這些新的紅鞋嗎？"
     },
     {
         "id": 31722,
@@ -17196,8 +17196,8 @@ const jhWordsDB = [
         "uk": "/θɪk/",
         "zh": "adj. 厚的、粗的、有……厚的、厚重的；n. 在……最激烈時、在……最緊張的時刻；adv. 厚地、濃密地、大量地",
         "unit": 18,
-        "example": "He had thick black hair.",
-        "exampleZh": "他有一頭濃密的黑髮。"
+        "example": "Put on a thick coat in winter.",
+        "exampleZh": "冬天穿上一件厚外套吧。"
     },
     {
         "id": 31723,
@@ -17206,8 +17206,8 @@ const jhWordsDB = [
         "uk": "/θiːf/",
         "zh": "n. 小偷、賊、偷竊犯",
         "unit": 18,
-        "example": "The thief used a false identity.",
-        "exampleZh": "竊賊使用的是假身份。"
+        "example": "The police caught the bad thief.",
+        "exampleZh": "警方抓住了那個壞小偷。"
     },
     {
         "id": 31724,
@@ -17216,8 +17216,8 @@ const jhWordsDB = [
         "uk": "/θɪn/",
         "zh": "adj. 薄的、細的、瘦的、稀疏的；vt. 使稀薄、使變淡、變稀疏、（擁擠的人群、植物、物品等）變稀少；adv. 薄薄地",
         "unit": 18,
-        "example": "The dog was painfully thin.",
-        "exampleZh": "那隻狗瘦得令人痛苦。"
+        "example": "The book has a thin paper cover.",
+        "exampleZh": "這本書有一個薄薄的紙封面。"
     },
     {
         "id": 31725,
@@ -17226,8 +17226,8 @@ const jhWordsDB = [
         "uk": "/θɪŋ/",
         "zh": "n. 事情、東西、物、物體",
         "unit": 18,
-        "example": "Then a strange thing happened.",
-        "exampleZh": "然後奇怪的事情發生了。"
+        "example": "This small thing is very useful to me.",
+        "exampleZh": "這個小東西對我很有用。"
     },
     {
         "id": 31726,
@@ -17246,8 +17246,8 @@ const jhWordsDB = [
         "uk": "/θɜːd/",
         "zh": "num. 第三；n. 三分之一、第三檔、三度音、三等學位；adj. 第三的、三分之一的；adv. 第三",
         "unit": 18,
-        "example": "He finished in third place.",
-        "exampleZh": "他獲得第三名。"
+        "example": "He won third place in the race.",
+        "exampleZh": "他在比賽中獲得了第三名。"
     },
     {
         "id": 31728,
@@ -17266,8 +17266,8 @@ const jhWordsDB = [
         "uk": "/ˌθɜːˈtiːn/",
         "zh": "num. 十三；n. 十三、十三歲、十三個；adj. 十三的、十三個的",
         "unit": 18,
-        "example": "Thirteen is often considered an unlucky number.",
-        "exampleZh": "十三常常被認為是一個不吉利的數字。"
+        "example": "My sister is thirteen years old now.",
+        "exampleZh": "我妹妹現在十三歲了。"
     },
     {
         "id": 31730,
@@ -17276,8 +17276,8 @@ const jhWordsDB = [
         "uk": "/ˈθɜːti/",
         "zh": "n. 二十世紀三十年代、三十、三十幾；num. 三十；adj. 三十個的、三十歲的",
         "unit": 18,
-        "example": "Some thirty people attended the funeral.",
-        "exampleZh": "約有三十人參加了葬禮。"
+        "example": "There are thirty students in our class.",
+        "exampleZh": "我們班上有三十位學生。"
     },
     {
         "id": 31731,
@@ -17296,8 +17296,8 @@ const jhWordsDB = [
         "uk": "/ðəʊz/",
         "zh": "pron. 那些；det. 那些；adj. 那些的",
         "unit": 18,
-        "example": "Those laws no longer pertain.",
-        "exampleZh": "這些法律不再適用。"
+        "example": "Who put those books on my chair?",
+        "exampleZh": "誰把那些書放在我的椅子上？"
     },
     {
         "id": 31733,
@@ -17306,8 +17306,8 @@ const jhWordsDB = [
         "uk": "/ðəʊ/",
         "zh": "conj. 雖然、儘管、可是、不過；adv. 不過、可是、然而",
         "unit": 18,
-        "example": "He did reply, though not immediately.",
-        "exampleZh": "他確實回復了，儘管不是立即。"
+        "example": "Though it rained, we still went out.",
+        "exampleZh": "雖然下雨了，我們還是出門了。"
     },
     {
         "id": 31734,
@@ -17316,8 +17316,8 @@ const jhWordsDB = [
         "uk": "/θɔːt/",
         "zh": "n. 想法、看法、主意、考慮；v. 認為、覺得、思考、考慮",
         "unit": 18,
-        "example": "I thought you'd never finish!",
-        "exampleZh": "我以為你永遠不會完成！"
+        "example": "I thought of a great new idea.",
+        "exampleZh": "我想出了一個很棒的新點子。"
     },
     {
         "id": 31735,
@@ -17346,8 +17346,8 @@ const jhWordsDB = [
         "uk": "/θrəʊt/",
         "zh": "n. 喉嚨、咽喉、喉部、頸前部；v. 用喉音說",
         "unit": 18,
-        "example": "Symptoms include a sore throat.",
-        "exampleZh": "症狀包括嗓子疼。"
+        "example": "I have a sore dry throat.",
+        "exampleZh": "我喉嚨又痛又乾。"
     },
     {
         "id": 31738,
@@ -17356,8 +17356,8 @@ const jhWordsDB = [
         "uk": "/θruː/",
         "zh": "prep. 穿過、從一端到另一端、透過、越過；adv. 從一端到另一端、完全地、徹底地、十足地；adj. 完成的、結束的、直達的、直通的",
         "unit": 18,
-        "example": "He breezed through the tests.",
-        "exampleZh": "他輕鬆地通過了測試。"
+        "example": "The train ran through the dark tunnel.",
+        "exampleZh": "火車穿過了昏暗的隧道。"
     },
     {
         "id": 31739,
@@ -17366,8 +17366,8 @@ const jhWordsDB = [
         "uk": "/θrəʊ/",
         "zh": "vt. 投、擲、拋、扔；n. 投、擲、投射距離、套",
         "unit": 18,
-        "example": "I never throw anything away.",
-        "exampleZh": "我從不丟掉任何東西。"
+        "example": "Do not throw the ball inside the house.",
+        "exampleZh": "不要在屋子裡丟球。"
     },
     {
         "id": 31740,
@@ -17386,8 +17386,8 @@ const jhWordsDB = [
         "uk": "/ˈθʌndə(r)/",
         "zh": "n. 雷、雷聲、雷鳴般的響聲、轟隆聲；vi. 打雷、發出雷鳴般的響聲、轟隆地響、轟隆隆地快速移動",
         "unit": 18,
-        "example": "Thunder cracked in the sky.",
-        "exampleZh": "空中雷聲炸響。"
+        "example": "We heard loud thunder last night.",
+        "exampleZh": "我們昨晚聽到了巨大的雷聲。"
     },
     {
         "id": 31742,
@@ -17396,8 +17396,8 @@ const jhWordsDB = [
         "uk": "/ˈθɜːzdeɪ/",
         "zh": "n. 星期四",
         "unit": 18,
-        "example": "We agreed to meet on Thursday.",
-        "exampleZh": "我們同意週四見面。"
+        "example": "We have an English test this Thursday.",
+        "exampleZh": "我們這星期四有一場英文考試。"
     },
     {
         "id": 31743,
@@ -17416,8 +17416,8 @@ const jhWordsDB = [
         "uk": "/ˈtaɪdi/",
         "zh": "adj. 整潔的、有條理的、愛整潔的、愛整齊的；vt. 使整潔、整理；n. 盛零碎物品的容器、整理、收拾、罩單",
         "unit": 18,
-        "example": "They sat in her neat and tidy kitchen.",
-        "exampleZh": "他們坐在她那乾淨整齊的廚房裡。"
+        "example": "Keep your small room very tidy.",
+        "exampleZh": "保持你的小房間非常整潔。"
     },
     {
         "id": 31745,
@@ -17426,8 +17426,8 @@ const jhWordsDB = [
         "uk": "/taɪ/",
         "zh": "vt. 系、扎、捆、將……系在……上；n. 領帶、領結、帶子、繩子",
         "unit": 18,
-        "example": "He carefully knotted his tie.",
-        "exampleZh": "他小心翼翼地打結領帶。"
+        "example": "He wore a blue tie to the party.",
+        "exampleZh": "他打了一條藍色領帶去參加派對。"
     },
     {
         "id": 31746,
@@ -17446,8 +17446,8 @@ const jhWordsDB = [
         "uk": "/tɪl/",
         "zh": "prep. 直到、到……為止、向、朝；conj. 直到、到……為止；n. 現金出納機、收銀機、交款處、收銀臺；v. 耕作、犁地",
         "unit": 18,
-        "example": "We're open till 6 o'clock.",
-        "exampleZh": "我們營業到六點。"
+        "example": "We played in the park till dark.",
+        "exampleZh": "我們在公園裡玩到天黑。"
     },
     {
         "id": 31748,
@@ -17466,8 +17466,8 @@ const jhWordsDB = [
         "uk": "/ˈtaɪni/",
         "zh": "adj. 極小的、微小的；n. 幼童",
         "unit": 18,
-        "example": "Each individual flower is tiny.",
-        "exampleZh": "每朵花都很小。"
+        "example": "An ant is a tiny little animal.",
+        "exampleZh": "螞蟻是一種微小的小動物。"
     },
     {
         "id": 31750,
@@ -17486,8 +17486,8 @@ const jhWordsDB = [
         "uk": "/ˈtaɪəd/",
         "zh": "adj. 疲倦的、累的、枯燥乏味的、陳腐的；v. 感到累、感到疲勞、厭倦、使厭倦",
         "unit": 18,
-        "example": "He looked tired and dishevelled.",
-        "exampleZh": "他衣冠不整，顯得很疲倦。"
+        "example": "I feel very tired after work.",
+        "exampleZh": "下班後我感到非常疲倦。"
     },
     {
         "id": 31752,
@@ -17496,8 +17496,8 @@ const jhWordsDB = [
         "uk": "/ˈtaɪt(ə)l/",
         "zh": "vt. 標題、加標題、定題目、賦予頭銜；adj. 與（電影、戲劇等）同名的、冠軍的；n. 頭銜、名稱、標題、一種",
         "unit": 18,
-        "example": "The title is printed in italics.",
-        "exampleZh": "標題被印成斜體。"
+        "example": "Write your title on this page.",
+        "exampleZh": "把你的標題寫在這一頁上。"
     },
     {
         "id": 31753,
@@ -17506,8 +17506,8 @@ const jhWordsDB = [
         "uk": "/tuː/",
         "zh": "prep. 向、朝、位於……、到某處；adv. 關上",
         "unit": 18,
-        "example": "I was trying to save money to go to college.",
-        "exampleZh": "我想存錢去上大學。"
+        "example": "We walk to school every morning together.",
+        "exampleZh": "我們每天早上一齊走路去學校。"
     },
     {
         "id": 31754,
@@ -17516,8 +17516,8 @@ const jhWordsDB = [
         "uk": "/təʊst/",
         "zh": "n. 烤麵包片、吐司、乾杯、祝酒；vt. 為……舉杯敬酒、為……乾杯、烤、烘",
         "unit": 18,
-        "example": "He was choking on a piece of toast.",
-        "exampleZh": "他被一塊烤麵包噎得透不過氣來。"
+        "example": "I eat warm toast every morning.",
+        "exampleZh": "我每天早上都吃溫熱的烤吐司。"
     },
     {
         "id": 31755,
@@ -17526,8 +17526,8 @@ const jhWordsDB = [
         "uk": "/təˈdeɪ/",
         "zh": "n. 今天、今日、現今；adv. 在今天、在今日、現今",
         "unit": 18,
-        "example": "I'm revising Geography today.",
-        "exampleZh": "我今天正在複習地理。"
+        "example": "The weather is very warm today.",
+        "exampleZh": "今天的天氣非常溫暖。"
     },
     {
         "id": 31756,
@@ -17546,8 +17546,8 @@ const jhWordsDB = [
         "uk": "/ˈtəʊfuː/",
         "zh": "n. 豆腐",
         "unit": 18,
-        "example": "Tofu is a kind of traditional Chinese food.",
-        "exampleZh": "豆腐是一種傳統的中國食物。"
+        "example": "We eat cold white tofu today.",
+        "exampleZh": "我們今天吃冰涼的白豆腐。"
     },
     {
         "id": 31758,
@@ -17576,8 +17576,8 @@ const jhWordsDB = [
         "uk": "/təˈmɑːtəʊ/",
         "zh": "n. 番茄、西紅柿、番茄紅、鮮紅色",
         "unit": 18,
-        "example": "It's similar in size to a tomato.",
-        "exampleZh": "大小和西紅柿差不多。"
+        "example": "She ate a sweet red tomato.",
+        "exampleZh": "她吃了一顆甘甜的紅番茄。"
     },
     {
         "id": 31761,
@@ -17586,8 +17586,8 @@ const jhWordsDB = [
         "uk": "/təˈmɒrəʊ/",
         "zh": "n. 明天、明日、未來；adv. 在明天、在明日",
         "unit": 18,
-        "example": "Snow is forecast for tomorrow.",
-        "exampleZh": "預計明天會下雪。"
+        "example": "I will visit my friend tomorrow morning.",
+        "exampleZh": "我明天早上會去拜訪朋友。"
     },
     {
         "id": 31762,
@@ -17596,8 +17596,8 @@ const jhWordsDB = [
         "uk": "/tʌŋ/",
         "zh": "n. 舌、舌頭、口條、語言；v. 用運舌法吹奏、用舌頭觸碰、舔、說話",
         "unit": 18,
-        "example": "The dog's tongue was hanging out.",
-        "exampleZh": "狗的舌頭耷拉在外面。"
+        "example": "The dog stuck out its tongue.",
+        "exampleZh": "那隻狗吐出了舌頭。"
     },
     {
         "id": 31763,
@@ -17606,8 +17606,8 @@ const jhWordsDB = [
         "uk": "/təˈnaɪt/",
         "zh": "n. 今晚、今夜；adv. 在今晚、在今夜",
         "unit": 18,
-        "example": "What's on television tonight?",
-        "exampleZh": "今晚電視有什麼節目？"
+        "example": "Let us watch a movie together tonight.",
+        "exampleZh": "我們今晚一起看部電影吧。"
     },
     {
         "id": 31764,
@@ -17616,8 +17616,8 @@ const jhWordsDB = [
         "uk": "/tuː/",
         "zh": "adv. 也、太、過於、過度",
         "unit": 18,
-        "example": "Critics derided the move as too little, too late.",
-        "exampleZh": "批評者嘲笑此舉太少、太晚。"
+        "example": "This cup of tea is too hot.",
+        "exampleZh": "這杯茶太燙了。"
     },
     {
         "id": 31765,
@@ -17636,8 +17636,8 @@ const jhWordsDB = [
         "uk": "/tuːθ/",
         "zh": "n. 牙齒、牙、齒、齒狀物；v. 給……裝齒、齧合",
         "unit": 18,
-        "example": "He's got a front tooth missing.",
-        "exampleZh": "他有一顆門牙掉了。"
+        "example": "He lost a baby tooth today.",
+        "exampleZh": "他今天掉了一顆乳牙。"
     },
     {
         "id": 31767,
@@ -17676,8 +17676,8 @@ const jhWordsDB = [
         "uk": "/ˈtɒpɪk/",
         "zh": "n. 主題、題目、一般規則、總論",
         "unit": 18,
-        "example": "He spoke with authority on the topic.",
-        "exampleZh": "他就這個課題發表權威意見。"
+        "example": "We pick a new topic today.",
+        "exampleZh": "我們今天選定了一個新主題。"
     },
     {
         "id": 31771,
@@ -17686,8 +17686,8 @@ const jhWordsDB = [
         "uk": "/ˈtəʊt(ə)l/",
         "zh": "adj. 總的、全部的、完全的、絕對的；v. 總數達、總計、把……加起來、徹底毀壞；n. 總數、合計",
         "unit": 18,
-        "example": "Total recycling is a fiction.",
-        "exampleZh": "完全回收是一個虛構的故事。"
+        "example": "The total cost was ten dollars.",
+        "exampleZh": "總金額是十塊錢。"
     },
     {
         "id": 31772,
@@ -17696,8 +17696,8 @@ const jhWordsDB = [
         "uk": "/tʌtʃ/",
         "zh": "v. 觸控、碰、接觸、觸及；n. 觸覺、觸感、觸控、碰",
         "unit": 18,
-        "example": "She recoiled from his touch.",
-        "exampleZh": "她從他的碰觸中退縮了。"
+        "example": "Do not touch the hot water cup.",
+        "exampleZh": "不要碰那個熱水杯。"
     },
     {
         "id": 31773,
@@ -17716,8 +17716,8 @@ const jhWordsDB = [
         "uk": "/ˈtaʊəl/",
         "zh": "n. 毛巾、抹布、紙巾、衛生巾；vt. 用毛巾擦、用毛巾擦乾、鞭打",
         "unit": 18,
-        "example": "He flicked me with a wet towel.",
-        "exampleZh": "他用溼毛巾輕打我。"
+        "example": "Dry your hands with this towel.",
+        "exampleZh": "用這條毛巾擦乾你的雙手。"
     },
     {
         "id": 31775,
@@ -17726,8 +17726,8 @@ const jhWordsDB = [
         "uk": "/ˈtaʊə(r)/",
         "zh": "n. 塔、塔樓、塔臺、塔狀堆積物；vi. 高出許多、屹立、勝過、超過",
         "unit": 18,
-        "example": "The tower is leaning dangerously.",
-        "exampleZh": "那座塔越來越斜，很危險。"
+        "example": "They ran up to the tower.",
+        "exampleZh": "他們跑上了塔樓。"
     },
     {
         "id": 31776,
@@ -17736,8 +17736,8 @@ const jhWordsDB = [
         "uk": "/taʊn/",
         "zh": "n. 城鎮、市鎮、商業區、中心區",
         "unit": 18,
-        "example": "The town was weirdly familiar.",
-        "exampleZh": "這個小鎮有一種奇怪的熟悉感。"
+        "example": "My family lives in a small town.",
+        "exampleZh": "我家住在一個小城鎮。"
     },
     {
         "id": 31777,
@@ -17746,8 +17746,8 @@ const jhWordsDB = [
         "uk": "/tɔɪ/",
         "zh": "n. 玩具、玩意兒、小擺設、受人控制（或利用）的人；adj. 玩具的、和玩具有關的、個頭很小的、小體型品種的；v. 漫不經心地考慮、調情、調戲、心不在焉地（或緊張地）擺弄",
         "unit": 18,
-        "example": "The toy industry is in a slump.",
-        "exampleZh": "玩具業正陷入低迷。"
+        "example": "The boy plays with his toy car.",
+        "exampleZh": "那個男孩玩著他的玩具車。"
     },
     {
         "id": 31778,
@@ -17766,8 +17766,8 @@ const jhWordsDB = [
         "uk": "/træk/",
         "zh": "n. 軌道、跑道、小徑、足跡；vt. 追蹤、跟蹤",
         "unit": 18,
-        "example": "The track snaked perilously upwards.",
-        "exampleZh": "這條小道絕險地蜿蜒而上。"
+        "example": "Run fast around the school track.",
+        "exampleZh": "繞著學校跑道快跑。"
     },
     {
         "id": 31780,
@@ -17786,8 +17786,8 @@ const jhWordsDB = [
         "uk": "/trəˈdɪʃ(ə)n/",
         "zh": "n. 傳統、慣例、傳統故事、傳說",
         "unit": 18,
-        "example": "This region is steeped in tradition.",
-        "exampleZh": "這個地區有著深厚的傳統。"
+        "example": "Eating fish is our family tradition.",
+        "exampleZh": "吃魚是我們的家庭傳統。"
     },
     {
         "id": 31782,
@@ -17796,8 +17796,8 @@ const jhWordsDB = [
         "uk": "/trəˈdɪʃən(ə)l/",
         "zh": "adj. 傳統的、根據傳統而製造（或使用）的、因襲的、守舊的",
         "unit": 18,
-        "example": "Traditional values have been reasserted.",
-        "exampleZh": "傳統價值觀得到了重申。"
+        "example": "We like to eat traditional food at home.",
+        "exampleZh": "我們喜歡在家吃傳統食物。"
     },
     {
         "id": 31783,
@@ -17846,8 +17846,8 @@ const jhWordsDB = [
         "uk": "/ˈtræv(ə)l/",
         "zh": "v. 旅行、走動、移動、行進；n. 旅行、旅遊、運動範圍、運動速度",
         "unit": 18,
-        "example": "It's cheaper to travel midweek.",
-        "exampleZh": "在星期中間旅行較便宜。"
+        "example": "They like to travel every summer.",
+        "exampleZh": "他們喜歡每年夏天去旅行。"
     },
     {
         "id": 31788,
@@ -17856,8 +17856,8 @@ const jhWordsDB = [
         "uk": "/ˈtreʒə(r)/",
         "zh": "n. 金銀財寶、珠寶、財富、珍品；vt. 珍愛、珍藏、珍惜、珍視",
         "unit": 18,
-        "example": "The treasure had lain undisturbed for centuries.",
-        "exampleZh": "那份珍寶安然無恙地存放了幾個世紀。"
+        "example": "They found hidden treasure in cave.",
+        "exampleZh": "他們在洞穴裡找到了隱藏的寶藏。"
     },
     {
         "id": 31789,
@@ -17866,8 +17866,8 @@ const jhWordsDB = [
         "uk": "/triːt/",
         "zh": "vt. 對待、看待、治療、醫治；n. 樂事、享受、款待、招待",
         "unit": 18,
-        "example": "Valium is usually prescribed to treat anxiety.",
-        "exampleZh": "安定劑通常用於治療焦躁。"
+        "example": "Treat him with care and love.",
+        "exampleZh": "帶著關懷與愛對待他。"
     },
     {
         "id": 31790,
@@ -17886,8 +17886,8 @@ const jhWordsDB = [
         "uk": "/ˈtraɪæŋɡ(ə)l/",
         "zh": "n. 三角形、三角形物體、三角鐵、三角板",
         "unit": 18,
-        "example": "The red triangle denotes danger.",
-        "exampleZh": "紅色三角形表示危險。"
+        "example": "Draw a yellow triangle on paper.",
+        "exampleZh": "在紙上畫一個黃色三角形。"
     },
     {
         "id": 31792,
@@ -17906,8 +17906,8 @@ const jhWordsDB = [
         "uk": "/trɪp/",
         "zh": "n. 旅行、旅遊、出門、出行；v. 絆、絆倒、腳步輕快地走、觸動",
         "unit": 18,
-        "example": "She videotaped the entire trip.",
-        "exampleZh": "她錄下了整趟旅程。"
+        "example": "We had a nice trip last week.",
+        "exampleZh": "我們上週有一趟美好的旅行。"
     },
     {
         "id": 31794,
@@ -17916,8 +17916,8 @@ const jhWordsDB = [
         "uk": "/ˈtrʌb(ə)l/",
         "zh": "n. 困難、難題、苦惱、險境；vt. 使憂慮、苦惱、費神、費力",
         "unit": 18,
-        "example": "Are you causing trouble again?",
-        "exampleZh": "你又惹麻煩了嗎？"
+        "example": "He got into trouble with his teacher.",
+        "exampleZh": "他給自己的老師惹上了麻煩。"
     },
     {
         "id": 31795,
@@ -17946,8 +17946,8 @@ const jhWordsDB = [
         "uk": "/truː/",
         "zh": "adj. 真實的、正確的；adv. 真實地、準確地；n. 真實、準確；vt. 裝準；v. 裝準",
         "unit": 18,
-        "example": "This is not strictly true.",
-        "exampleZh": "這並不完全正確。"
+        "example": "The story in the book is true.",
+        "exampleZh": "書裡的那個故事是真的。"
     },
     {
         "id": 31798,
@@ -17956,8 +17956,8 @@ const jhWordsDB = [
         "uk": "/ˈtrʌmpɪt/",
         "zh": "n. 小號、喇叭、喇叭形物、喇叭似的響聲；v. 鼓吹、大肆宣揚、吼叫、吹喇叭",
         "unit": 18,
-        "example": "I played the trumpet in the school orchestra.",
-        "exampleZh": "我在學校管絃樂隊吹小號。"
+        "example": "He can play the brass trumpet.",
+        "exampleZh": "他會吹銅管小號。"
     },
     {
         "id": 31799,
@@ -17966,8 +17966,8 @@ const jhWordsDB = [
         "uk": "/trʌst/",
         "zh": "n. 託管、信託、信任、信賴；v. 信任、信賴、相信、對……有把握",
         "unit": 18,
-        "example": "I couldn't trust him anymore.",
-        "exampleZh": "我再不能相信他了。"
+        "example": "You can trust your best friend.",
+        "exampleZh": "你可以信任你最好的朋友。"
     },
     {
         "id": 31800,
@@ -17986,8 +17986,8 @@ const jhWordsDB = [
         "uk": "/traɪ/",
         "zh": "v. 嘗試、試圖、努力、試用；n. 努力、試圖、試用、試驗",
         "unit": 18,
-        "example": "Let's try to plan further ahead.",
-        "exampleZh": "讓我們嘗試進一步計劃。"
+        "example": "You should try your best every day.",
+        "exampleZh": "你應該每天全力以赴去嘗試。"
     },
     {
         "id": 31802,
@@ -18006,8 +18006,8 @@ const jhWordsDB = [
         "uk": "/tjuːb/",
         "zh": "n. 管子、管、管狀物、軟管；v. 用管道運輸、乘地鐵、使成管狀、玩內胎漂流",
         "unit": 18,
-        "example": "I work in the extruded tube business.",
-        "exampleZh": "我在擠壓管行業工作。"
+        "example": "Get the red paint from tube.",
+        "exampleZh": "從管子裡擠出紅色顏料。"
     },
     {
         "id": 31804,
@@ -18066,8 +18066,8 @@ const jhWordsDB = [
         "uk": "/twelv/",
         "zh": "num. 十二、十二個；n. 十二、十二個、十二點；adj. 十二的、十二個的",
         "unit": 18,
-        "example": "He retired twelve batters in a row.",
-        "exampleZh": "他連續十二名擊球手退場。"
+        "example": "There are twelve months in one year.",
+        "exampleZh": "一年之中有十二個月。"
     },
     {
         "id": 31810,
@@ -18076,8 +18076,8 @@ const jhWordsDB = [
         "uk": "/ˈtwenti/",
         "zh": "num. 二十；n. 二十、二十幾、二十年代、二十美元紙幣；adj. 二十的、二十個的",
         "unit": 18,
-        "example": "Twenty-eight is divisible by seven.",
-        "exampleZh": "二十八可以被七整除。"
+        "example": "She has twenty pens in her bag.",
+        "exampleZh": "她的提袋裡有二十支筆。"
     },
     {
         "id": 31811,
@@ -18086,8 +18086,8 @@ const jhWordsDB = [
         "uk": "/twaɪs/",
         "zh": "adv. 兩次、兩倍、強（或好、難）的多",
         "unit": 18,
-        "example": "I visited once or twice.",
-        "exampleZh": "我去過一兩次。"
+        "example": "I brush my teeth twice a day.",
+        "exampleZh": "我一天刷兩次牙。"
     },
     {
         "id": 31812,
@@ -18096,8 +18096,8 @@ const jhWordsDB = [
         "uk": "/tuː/",
         "zh": "num. 二、兩個；adj. 兩個的；n. 兩個、數字二、兩個一組",
         "unit": 18,
-        "example": "Two prisoners have escaped.",
-        "exampleZh": "兩名囚犯越獄了。"
+        "example": "I bought two apples at the shop.",
+        "exampleZh": "我在商店買了兩顆蘋果。"
     },
     {
         "id": 31813,
@@ -18126,8 +18126,8 @@ const jhWordsDB = [
         "uk": "/ˈʌɡli/",
         "zh": "adj. 醜陋的、難看的、令人厭惡的、邪惡的",
         "unit": 18,
-        "example": "An ugly new building blocked the view from the window.",
-        "exampleZh": "一座醜陋的新建築擋住了窗外的視線。"
+        "example": "The old dirty wall looked very ugly.",
+        "exampleZh": "那堵又舊又髒的牆看起來非常難看。"
     },
     {
         "id": 31816,
@@ -18166,8 +18166,8 @@ const jhWordsDB = [
         "uk": "/ˌʌndəˈlaɪn/",
         "zh": "vt. 在……下面畫線、強調、突出；n. 下劃線、下體輪廓",
         "unit": 18,
-        "example": "Some readers would underline the page as they read.",
-        "exampleZh": "有些讀者在閱讀時會在頁面下劃線。"
+        "example": "Underline the key words with pencil.",
+        "exampleZh": "用鉛筆在關鍵字下面畫線。"
     },
     {
         "id": 31820,
@@ -18176,8 +18176,8 @@ const jhWordsDB = [
         "uk": "/ˌʌndəˈstænd/",
         "zh": "vt. 了解、理解、懂得、瞭解",
         "unit": 18,
-        "example": "I fully understand your motives.",
-        "exampleZh": "我完全理解你的動機。"
+        "example": "I do not understand this math question.",
+        "exampleZh": "我不理解這道數學題。"
     },
     {
         "id": 31821,
@@ -18206,8 +18206,8 @@ const jhWordsDB = [
         "uk": "/ˈjuːnɪfɔːm/",
         "zh": "n. 制服、校服、穿制服的警官、典型服裝；adj. 全部相同的、始終如一的、制服式的；v. 使一致、使穿制服",
         "unit": 18,
-        "example": "He was wearing a brown uniform.",
-        "exampleZh": "他穿著一件棕色制服。"
+        "example": "They wear a dark blue uniform.",
+        "exampleZh": "他們穿著深藍色制服。"
     },
     {
         "id": 31824,
@@ -18216,8 +18216,8 @@ const jhWordsDB = [
         "uk": "/juˈniːk/",
         "zh": "adj. 獨一無二的、獨特的、非常特別的、極不尋常的；n. 獨一無二的人",
         "unit": 18,
-        "example": "Each person's signature is unique.",
-        "exampleZh": "每個人的簽名是獨一無二的。"
+        "example": "Each bird has a unique song.",
+        "exampleZh": "每隻鳥都有獨特的鳴叫聲。"
     },
     {
         "id": 31825,
@@ -18226,8 +18226,8 @@ const jhWordsDB = [
         "uk": "/ˈjuːnɪvɜːs/",
         "zh": "n. 宇宙、天地萬物、領域、體系",
         "unit": 18,
-        "example": "The universe is slowly yielding up its secrets.",
-        "exampleZh": "宇宙慢慢地展現出它的秘密。"
+        "example": "The vast universe has many stars.",
+        "exampleZh": "廣大的宇宙有許多星星。"
     },
     {
         "id": 31826,
@@ -18236,8 +18236,8 @@ const jhWordsDB = [
         "uk": "/ˌjuːnɪˈvɜːsəti/",
         "zh": "n. 大學、綜合性大學、大學校舍",
         "unit": 18,
-        "example": "My daughter is at university.",
-        "exampleZh": "我女兒在上大學。"
+        "example": "He works at a big university.",
+        "exampleZh": "他在一所大型大學工作。"
     },
     {
         "id": 31827,
@@ -18246,8 +18246,8 @@ const jhWordsDB = [
         "uk": "/ənˈtɪl/",
         "zh": "prep. 直到……為止、在……以前；conj. 直到……為止、在……以前",
         "unit": 18,
-        "example": "She lay sleepless until dawn.",
-        "exampleZh": "她一直睡到天亮。"
+        "example": "Please wait here until I come back.",
+        "exampleZh": "請在這裡等直到我回來。"
     },
     {
         "id": 31828,
@@ -18256,8 +18256,8 @@ const jhWordsDB = [
         "uk": "/ʌp/",
         "zh": "adv. 向上、起來、完全地；prep. 向……上面、沿著；adj. 向上的、起床的",
         "unit": 18,
-        "example": "Interest rates went up.",
-        "exampleZh": "利率上升。"
+        "example": "The boy stood up from the floor.",
+        "exampleZh": "那個男孩從地板上站了起來。"
     },
     {
         "id": 31829,
@@ -18276,8 +18276,8 @@ const jhWordsDB = [
         "uk": "/ˌʌpˈsteəz/",
         "zh": "adv. 往樓上、在樓上、腦力上、精神上；n. 樓上；adj. 樓上的",
         "unit": 18,
-        "example": "I carried her bags upstairs.",
-        "exampleZh": "我把她的包包搬上樓。"
+        "example": "My sister is sleeping upstairs right now.",
+        "exampleZh": "我妹妹現在正在樓上睡覺。"
     },
     {
         "id": 31831,
@@ -18286,8 +18286,8 @@ const jhWordsDB = [
         "uk": "/juːz/",
         "zh": "vt. 使用、用、耗費、消費；n. 用途、使用、用法、詞義",
         "unit": 18,
-        "example": "That's a word I never use.",
-        "exampleZh": "這是我從來不用的詞。"
+        "example": "Can I use your pen for a minute?",
+        "exampleZh": "我能借用你的筆一下嗎？"
     },
     {
         "id": 31832,
@@ -18296,8 +18296,8 @@ const jhWordsDB = [
         "uk": "/ˈjuːzə(r)/",
         "zh": "n. 使用者",
         "unit": 18,
-        "example": "I am a Windows user.",
-        "exampleZh": "我是個n. 使用者。"
+        "example": "Each user gets a safe key.",
+        "exampleZh": "每位使用者都獲得一把安全鑰匙。"
     },
     {
         "id": 31833,
@@ -18306,8 +18306,8 @@ const jhWordsDB = [
         "uk": "/ˈjuːsf(ə)l/",
         "zh": "adj. 有用的、有益的、好的、熟練的",
         "unit": 18,
-        "example": "He offered some useful advice.",
-        "exampleZh": "他提供了一些有用的建議。"
+        "example": "This small tool is very useful at home.",
+        "exampleZh": "這件小工具在家裡非常實用。"
     },
     {
         "id": 31834,
@@ -18326,8 +18326,8 @@ const jhWordsDB = [
         "uk": "/ˈjuːʒuəli; ˈjuːʒəli/",
         "zh": "adv. 通常、通常地、經常地",
         "unit": 18,
-        "example": "Windows are usually sealed off.",
-        "exampleZh": "窗戶通常是封閉的。"
+        "example": "I usually walk to school alone.",
+        "exampleZh": "我通常獨自走路上學。"
     },
     {
         "id": 31836,
@@ -18346,8 +18346,8 @@ const jhWordsDB = [
         "uk": "/ˈvæli/",
         "zh": "n. 山谷、溪谷、谷地、流域",
         "unit": 18,
-        "example": "Mist ascended from the valley.",
-        "exampleZh": "薄霧從山谷升起。"
+        "example": "The river flows through the valley.",
+        "exampleZh": "河流穿過了山谷。"
     },
     {
         "id": 31838,
@@ -18356,8 +18356,8 @@ const jhWordsDB = [
         "uk": "/ˈvæljuəb(ə)l/",
         "zh": "adj. 有價值的、值錢的、貴重的、有益的；n. 貴重品",
         "unit": 18,
-        "example": "Luckily, nothing valuable was stolen.",
-        "exampleZh": "幸運的是，沒有貴重物品失竊。"
+        "example": "This old ring is very valuable.",
+        "exampleZh": "這枚舊戒指非常貴重。"
     },
     {
         "id": 31839,
@@ -18376,8 +18376,8 @@ const jhWordsDB = [
         "uk": "/ˈvedʒtəb(ə)l/",
         "zh": "n. 蔬菜、植物人、呆板懶散的人、植物；adj. 植物的",
         "unit": 18,
-        "example": "The vegetable harvest is disastrously behind schedule.",
-        "exampleZh": "蔬菜收成嚴重落後於計劃。"
+        "example": "Fresh vegetable soup is good for you.",
+        "exampleZh": "新鮮的蔬菜湯對你有益健康。"
     },
     {
         "id": 31841,
@@ -18396,8 +18396,8 @@ const jhWordsDB = [
         "uk": "/ˈveri/",
         "zh": "adv. 非常、很、極其、完全地；adj. 同一的、恰好的、正是的",
         "unit": 18,
-        "example": "He was very polite and very correct.",
-        "exampleZh": "他很有禮貌且舉止得體。"
+        "example": "The hot soup is very good.",
+        "exampleZh": "熱湯非常好喝。"
     },
     {
         "id": 31843,
@@ -18406,8 +18406,8 @@ const jhWordsDB = [
         "uk": "/vest/",
         "zh": "n. 背心、汗衫、馬甲、西裝背心；v. 授予、賦予、給予、交給",
         "unit": 18,
-        "example": "His life was saved by a quarter-inch-thick bullet-proof vest.",
-        "exampleZh": "他被0.25英寸厚的防彈背心救了一命。"
+        "example": "He wore a warm blue vest.",
+        "exampleZh": "他穿著一件溫暖的藍背心。"
     },
     {
         "id": 31844,
@@ -18436,8 +18436,8 @@ const jhWordsDB = [
         "uk": "/ˈvɪlɪdʒ/",
         "zh": "n. 村莊、鄉村、在鄉村的、鄉村的",
         "unit": 18,
-        "example": "The entire village was destroyed.",
-        "exampleZh": "整個村莊都給毀了。"
+        "example": "They live in a quiet village.",
+        "exampleZh": "他們住在一個寧靜的村莊裡。"
     },
     {
         "id": 31847,
@@ -18446,8 +18446,8 @@ const jhWordsDB = [
         "uk": "/ˈvɪnɪɡə(r)/",
         "zh": "n. 醋、尖酸、刻薄",
         "unit": 18,
-        "example": "Wine vinegar tenderizes meat.",
-        "exampleZh": "酒醋能讓肉變得軟嫩。"
+        "example": "Add a little vinegar to salad.",
+        "exampleZh": "在沙拉裡加一點醋。"
     },
     {
         "id": 31848,
@@ -18466,8 +18466,8 @@ const jhWordsDB = [
         "uk": "/ˈvɪzɪt/",
         "zh": "vt. 訪問、參觀、遊覽、拜訪；n. 參觀、遊覽、拜訪、作客",
         "unit": 18,
-        "example": "She will try and visit tomorrow.",
-        "exampleZh": "她明天會嘗試去拜訪。"
+        "example": "They visit their grandparents every Sunday.",
+        "exampleZh": "他們每週日都去探望祖父母。"
     },
     {
         "id": 31850,
@@ -18476,8 +18476,8 @@ const jhWordsDB = [
         "uk": "/ˈvɪzɪtə(r)/",
         "zh": "n. 訪客、訪問者、參觀者、瀏覽者",
         "unit": 18,
-        "example": "I wasn't expecting a visitor.",
-        "exampleZh": "我沒有預期會有訪客。"
+        "example": "A new visitor came to us.",
+        "exampleZh": "一位新訪客來找我們。"
     },
     {
         "id": 31851,
@@ -18486,8 +18486,8 @@ const jhWordsDB = [
         "uk": "/vəˈkæbjələri; vəʊˈkæbjələri/",
         "zh": "n. 字彙、全部詞彙、詞彙、專業詞彙",
         "unit": 18,
-        "example": "Reading will enlarge your vocabulary.",
-        "exampleZh": "閱讀能擴大詞彙量。"
+        "example": "We learn new vocabulary every day.",
+        "exampleZh": "我們每天學習新單字。"
     },
     {
         "id": 31852,
@@ -18496,8 +18496,8 @@ const jhWordsDB = [
         "uk": "/vɔɪs/",
         "zh": "n. 聲音、嗓音、說話聲、歌唱聲；vt. 表達、吐露、發濁音、給（管風琴）調音",
         "unit": 18,
-        "example": "Her voice was suddenly breathy.",
-        "exampleZh": "她的聲音突然帶著呼吸聲。"
+        "example": "Her voice sounds very sweet and clear.",
+        "exampleZh": "她的嗓音聽起來非常甜美清晰。"
     },
     {
         "id": 31853,
@@ -18506,8 +18506,8 @@ const jhWordsDB = [
         "uk": "/ˈvɒlibɔːl/",
         "zh": "n. 排球、排球運動",
         "unit": 18,
-        "example": "They had a volleyball court in the middle of the courtyard.",
-        "exampleZh": "他們在院子中央有一個排球場。"
+        "example": "Girls play volleyball on the beach.",
+        "exampleZh": "女孩們在沙灘上打排球。"
     },
     {
         "id": 31854,
@@ -18516,8 +18516,8 @@ const jhWordsDB = [
         "uk": "/vəʊt/",
         "zh": "vt. 投票、投票選舉、投票表決、投票評選；n. 選票、票、投票、表決",
         "unit": 18,
-        "example": "All affiliated members can vote.",
-        "exampleZh": "所有隸屬成員都有投票權。"
+        "example": "We will vote for team leader.",
+        "exampleZh": "我們將投票選出隊長。"
     },
     {
         "id": 31855,
@@ -18536,8 +18536,8 @@ const jhWordsDB = [
         "uk": "/weɪt/",
         "zh": "v. 等候、盼望、期待；n. 等候、等待、等候的時間、官方樂隊",
         "unit": 18,
-        "example": "I'll wait until they arrive.",
-        "exampleZh": "我會等到他們到來。"
+        "example": "Please wait here for a few minutes.",
+        "exampleZh": "請在這裡等候幾分鐘。"
     },
     {
         "id": 31857,
@@ -18546,8 +18546,8 @@ const jhWordsDB = [
         "uk": "/ˈweɪtə(r)/",
         "zh": "n. 服務生、服務員、侍者",
         "unit": 18,
-        "example": "He beckoned to the waiter.",
-        "exampleZh": "他朝服務員招了招手。"
+        "example": "The polite waiter gave us water.",
+        "exampleZh": "那位有禮貌的服務生給了我們水。"
     },
     {
         "id": 31858,
@@ -18576,8 +18576,8 @@ const jhWordsDB = [
         "uk": "/wɔːk/",
         "zh": "vt. 走、步行、徒步旅行、散步；n. 散步、步行、徒步旅行、散步的小路",
         "unit": 18,
-        "example": "They walk their dogs every day.",
-        "exampleZh": "他們每天都會遛狗。"
+        "example": "Let us walk to the park together.",
+        "exampleZh": "我們一起散步去公園吧。"
     },
     {
         "id": 31861,
@@ -18586,8 +18586,8 @@ const jhWordsDB = [
         "uk": "/wɔːl/",
         "zh": "n. 牆壁、城牆、圍牆、牆；v. 用牆圍住、砌牆封閉、砌牆堵住、把……關起來；adj. 牆壁的",
         "unit": 18,
-        "example": "She leaned against the wall.",
-        "exampleZh": "她靠在牆上。"
+        "example": "There is a big clock on the wall.",
+        "exampleZh": "牆上掛著一個大時鐘。"
     },
     {
         "id": 31862,
@@ -18596,8 +18596,8 @@ const jhWordsDB = [
         "uk": "/ˈwɒlɪt/",
         "zh": "n. 皮夾、錢包、塑膠夾、行囊",
         "unit": 18,
-        "example": "This wallet feels like leather.",
-        "exampleZh": "這個錢包摸上去像是皮的。"
+        "example": "I left my wallet at home.",
+        "exampleZh": "我把皮夾落在家裡了。"
     },
     {
         "id": 31863,
@@ -18606,8 +18606,8 @@ const jhWordsDB = [
         "uk": "/wɒnt/",
         "zh": "vt. 想要、希望、需要、應該；n. 需要、缺乏、缺少、貧窮",
         "unit": 18,
-        "example": "Do you want anything else?",
-        "exampleZh": "你還想要什麼嗎？"
+        "example": "I want to drink a cup of tea.",
+        "exampleZh": "我想要喝一杯茶。"
     },
     {
         "id": 31864,
@@ -18616,8 +18616,8 @@ const jhWordsDB = [
         "uk": "/wɔː(r)/",
         "zh": "n. 戰爭、戰爭狀態、競爭、鬥爭；v. 進行戰爭、鬥爭",
         "unit": 18,
-        "example": "Diplomacy is better than war.",
-        "exampleZh": "外交比戰​​爭好。"
+        "example": "The long war brought pain to people.",
+        "exampleZh": "那場漫長的戰爭給人們帶來了痛苦。"
     },
     {
         "id": 31865,
@@ -18626,8 +18626,8 @@ const jhWordsDB = [
         "uk": "/wɔːm/",
         "zh": "adj. 溫暖的、暖和的、保暖的、防寒的；v. 使溫暖、溫暖、變暖和、產生好感；n. 暖和的地方（或地區）、取暖、厚呢短大衣；adv. 溫暖地",
         "unit": 18,
-        "example": "This sleeping bag is very warm.",
-        "exampleZh": "這個睡袋很溫暖。"
+        "example": "Drink some warm milk before you sleep.",
+        "exampleZh": "睡覺前喝一些溫熱的牛奶吧。"
     },
     {
         "id": 31866,
@@ -18636,8 +18636,8 @@ const jhWordsDB = [
         "uk": "/wɒʃ/",
         "zh": "v. 洗、洗滌、清洗、洗澡；n. 要洗的(洗好的)衣服、洗滌、正在洗的衣物、將要洗的衣物",
         "unit": 18,
-        "example": "I must wash the car tomorrow.",
-        "exampleZh": "我明天必須洗車。"
+        "example": "Wash your hands before eating dinner.",
+        "exampleZh": "吃晚餐前要先把手洗乾淨。"
     },
     {
         "id": 31867,
@@ -18646,8 +18646,8 @@ const jhWordsDB = [
         "uk": "/weɪst/",
         "zh": "n. 浪費、濫用、廢物、廢棄物；vt. 浪費、濫用、未能充分利用、沒有物盡其用；adj. 荒蕪的、荒廢的、廢棄的、無用的",
         "unit": 18,
-        "example": "The waste was dumped in the sea.",
-        "exampleZh": "廢物被傾倒在海裡。"
+        "example": "Do not waste your time on silly games.",
+        "exampleZh": "不要把時間浪費在無聊的遊戲上。"
     },
     {
         "id": 31868,
@@ -18656,8 +18656,8 @@ const jhWordsDB = [
         "uk": "/wɒtʃ/",
         "zh": "vt. 觀看、看、注視、關注；n. 手錶、表、觀察、監視",
         "unit": 18,
-        "example": "She glanced at her watch.",
-        "exampleZh": "她看了一眼手錶。"
+        "example": "We like to watch the evening news.",
+        "exampleZh": "我們喜歡看晚間新聞。"
     },
     {
         "id": 31869,
@@ -18666,8 +18666,8 @@ const jhWordsDB = [
         "uk": "/ˈwɔːtə(r)/",
         "zh": "n. 水、雨水、水域、大片的水；v. 澆水、給……澆水、灌溉、給…...水喝",
         "unit": 18,
-        "example": "Glucose is soluble in water.",
-        "exampleZh": "葡萄糖可溶於水。"
+        "example": "Drink plenty of water every day.",
+        "exampleZh": "每天都要喝充足的水分。"
     },
     {
         "id": 31870,
@@ -18676,8 +18676,8 @@ const jhWordsDB = [
         "uk": "/ˈwɔːtəfɔːl/",
         "zh": "n. 瀑布、瀑布似的東西；adj. 瀑布式的",
         "unit": 18,
-        "example": "As you descend, suddenly you see at last the hidden waterfall.",
-        "exampleZh": "你往下走，最終會突然發現那個隱秘的瀑布。"
+        "example": "We saw a big, high waterfall.",
+        "exampleZh": "我們看見了一座巨大又高的瀑布。"
     },
     {
         "id": 31871,
@@ -18686,8 +18686,8 @@ const jhWordsDB = [
         "uk": "/ˈwɔːtəmelən/",
         "zh": "n. 西瓜、西瓜植株。",
         "unit": 18,
-        "example": "Watermelon contains vitamins and also potassium.",
-        "exampleZh": "西瓜含有維生素也有鉀。"
+        "example": "We ate cold sweet watermelon today.",
+        "exampleZh": "我們今天吃了冰涼甘甜的西瓜。"
     },
     {
         "id": 31872,
@@ -18696,8 +18696,8 @@ const jhWordsDB = [
         "uk": "/weɪv/",
         "zh": "n. 海浪、波浪、揮手、浪潮；v. 揮手、揮動、飄揚",
         "unit": 18,
-        "example": "He dismissed her with an airy wave.",
-        "exampleZh": "他隨意一揮手就把她打發走了。"
+        "example": "Big sea waves hit the beach.",
+        "exampleZh": "巨大的海浪拍打著海灘。"
     },
     {
         "id": 31873,
@@ -18706,8 +18706,8 @@ const jhWordsDB = [
         "uk": "/weɪ/",
         "zh": "n. 方式、方法、手段、習俗；adv. 大大地、遠遠地、非常、很；adj. 途中的",
         "unit": 18,
-        "example": "The doctor's on his way.",
-        "exampleZh": "醫生正在趕來的路上。"
+        "example": "This is the fastest way to get there.",
+        "exampleZh": "這是到達那裡最快的方法。"
     },
     {
         "id": 31874,
@@ -18716,8 +18716,8 @@ const jhWordsDB = [
         "uk": "/wiːk/",
         "zh": "adj. 虛弱的、無力的、不牢固的、懦弱的；n. 窮人、弱者、病人",
         "unit": 18,
-        "example": "Geography was my weak subject.",
-        "exampleZh": "地理是我的弱科。"
+        "example": "He feels weak after the long walk.",
+        "exampleZh": "長途步行後他覺得很虛弱。"
     },
     {
         "id": 31875,
@@ -18726,8 +18726,8 @@ const jhWordsDB = [
         "uk": "/ˈwepən/",
         "zh": "n. 武器、兵器、兇器、工具；v. 武裝、裝備",
         "unit": 18,
-        "example": "Discipline was the new coach's secret weapon.",
-        "exampleZh": "嚴格的訓練是這位新教練的秘密武器。"
+        "example": "The police took away his weapon.",
+        "exampleZh": "警方沒收了他的武器。"
     },
     {
         "id": 31876,
@@ -18746,8 +18746,8 @@ const jhWordsDB = [
         "uk": "/ˈweðə(r)/",
         "zh": "n. 天氣、氣象、惡劣天氣、自然力；vt. （使）褪色、風化、平安度過、航行到（海角）的上風；adj. 露天的、迎風的",
         "unit": 18,
-        "example": "Weather conditions were fair.",
-        "exampleZh": "天氣狀況良好。"
+        "example": "The weather is fine and sunny today.",
+        "exampleZh": "今天的天氣晴朗美好。"
     },
     {
         "id": 31878,
@@ -18756,8 +18756,8 @@ const jhWordsDB = [
         "uk": "/ˈwedɪŋ/",
         "zh": "n. 結婚儀式、婚禮、結婚慶典、婚禮的；v. 結婚、娶、嫁、結合",
         "unit": 18,
-        "example": "The wedding day finally arrived.",
-        "exampleZh": "結婚的日子終於到了。"
+        "example": "They had a simple wedding in church.",
+        "exampleZh": "他們在教堂舉行了簡單的婚禮。"
     },
     {
         "id": 31879,
@@ -18766,8 +18766,8 @@ const jhWordsDB = [
         "uk": "/ˈwenzdeɪ/",
         "zh": "n. 星期三",
         "unit": 18,
-        "example": "Let's move the meeting to Wednesday.",
-        "exampleZh": "我們把會議改到星期三吧。"
+        "example": "We play basketball after school on Wednesday.",
+        "exampleZh": "我們星期三放學後會打籃球。"
     },
     {
         "id": 31880,
@@ -18776,8 +18776,8 @@ const jhWordsDB = [
         "uk": "/wiːk/",
         "zh": "n. 週、星期、周、一個星期的時間",
         "unit": 18,
-        "example": "We commence building next week.",
-        "exampleZh": "我們下週開始建造。"
+        "example": "He works five days every week.",
+        "exampleZh": "他每個星期工作五天。"
     },
     {
         "id": 31881,
@@ -18786,8 +18786,8 @@ const jhWordsDB = [
         "uk": "/ˈwiːkdeɪ/",
         "zh": "n. 平日、普通日、工作日；adj. 平日的、工作日的",
         "unit": 18,
-        "example": "There are several free hours every weekday.",
-        "exampleZh": "每個工作日都有幾個小時的空閒時間。"
+        "example": "I go to school every weekday.",
+        "exampleZh": "我每個平日都去上學。"
     },
     {
         "id": 31882,
@@ -18796,8 +18796,8 @@ const jhWordsDB = [
         "uk": "/ˌwiːkˈend; ˈwiːkend/",
         "zh": "n. 週末、週末旅行、週末度假；adj. 週末的；v. 度週末",
         "unit": 18,
-        "example": "Let's go fishing this weekend.",
-        "exampleZh": "這個週末我們去釣魚吧。"
+        "example": "What will you do this weekend?",
+        "exampleZh": "你這個週末打算做什麼？"
     },
     {
         "id": 31883,
@@ -18806,8 +18806,8 @@ const jhWordsDB = [
         "uk": "/weɪt/",
         "zh": "n. 重量、分量、體重、重；vt. 加重量於、使變重、使傾向於……、重視",
         "unit": 18,
-        "example": "He's working at losing weight.",
-        "exampleZh": "他正在努力減肥。"
+        "example": "He wants to lose weight before summer.",
+        "exampleZh": "他想在夏天來臨前減輕體重。"
     },
     {
         "id": 31884,
@@ -18816,8 +18816,8 @@ const jhWordsDB = [
         "uk": "/ˈwelkəm/",
         "zh": "vt. 歡迎、迎接、迎新、樂意接納；adj. 受歡迎的、令人愉快的、可隨意、儘管……好了；n. 歡迎、迎接、接受；int. 歡迎",
         "unit": 18,
-        "example": "I warmly welcome this decision.",
-        "exampleZh": "我對這項決定表示熱烈歡迎。"
+        "example": "We welcome all visitors to our school.",
+        "exampleZh": "我們歡迎所有訪客來到我們學校。"
     },
     {
         "id": 31885,
@@ -18826,8 +18826,8 @@ const jhWordsDB = [
         "uk": "/wel/",
         "zh": "adv. 好、很好地、充分地；adj. 健康的、身體好的、良好的；int. 嗯、好吧；n. 井、水井",
         "unit": 18,
-        "example": "Well, well, well. How quickly things change.",
-        "exampleZh": "好吧，好吧，好吧。事情變化得有多快。"
+        "example": "She can speak English very well.",
+        "exampleZh": "她的英文說得非常好。"
     },
     {
         "id": 31886,
@@ -18836,8 +18836,8 @@ const jhWordsDB = [
         "uk": "/west/",
         "zh": "adj. 西部的、西方的、向西的、來自西方的；adv. 向西方、朝西方、……以西；n. 西方、西、西部、西方國家(指美國、加拿大以及西歐、北歐和南歐諸國)",
         "unit": 18,
-        "example": "The wind veered to the west.",
-        "exampleZh": "風轉向西了。"
+        "example": "The sun sets in the west each day.",
+        "exampleZh": "太陽每天從西方落下。"
     },
     {
         "id": 31887,
@@ -18846,8 +18846,8 @@ const jhWordsDB = [
         "uk": "/wet/",
         "zh": "adj. 濕的、潮濕的、多雨的；vt. 弄濕、打濕",
         "unit": 18,
-        "example": "Wet weather always depresses me.",
-        "exampleZh": "潮濕的天氣總是讓我感到沮喪。"
+        "example": "My shoes got wet in the rain.",
+        "exampleZh": "我的鞋子在雨中淋濕了。"
     },
     {
         "id": 31888,
@@ -18856,8 +18856,8 @@ const jhWordsDB = [
         "uk": "/weɪl/",
         "zh": "n. 鯨魚、鯨、巨大的東西；v. 毆打、猛擊、捕鯨、使慘敗",
         "unit": 18,
-        "example": "The whale dived as the harpoon struck it.",
-        "exampleZh": "鯨被魚叉射中後下潛。"
+        "example": "The big blue whale swims away.",
+        "exampleZh": "那隻巨大的藍鯨游走了。"
     },
     {
         "id": 31889,
@@ -18866,8 +18866,8 @@ const jhWordsDB = [
         "uk": "/wɒt/",
         "zh": "det. 哪個、什麼、什麼樣的、所……的；pron. 什麼、多麼、無論什麼、……的事物；conj. 什麼、所……的事物、所……的、……那樣的；int. 什麼、真的嗎、什麼？；adv. 到什麼程度、在哪一方面、哦、呃",
         "unit": 18,
-        "example": "What would you like to have for dinner tonight?",
-        "exampleZh": "你今晚想吃什麼晚餐？"
+        "example": "What do you want to eat today?",
+        "exampleZh": "你今天想吃什麼？"
     },
     {
         "id": 31890,
@@ -18876,8 +18876,8 @@ const jhWordsDB = [
         "uk": "/wiːl/",
         "zh": "n. 輪子、車輪、汽車、機輪；vt. 推、拉、用有輪之物推動（或拉動、移動）……、盤旋",
         "unit": 18,
-        "example": "The wheel is pulling to the left.",
-        "exampleZh": "方向盤正在向左打。"
+        "example": "The big wheel rolled away fast.",
+        "exampleZh": "大輪子迅速滾走了。"
     },
     {
         "id": 31891,
@@ -18916,8 +18916,8 @@ const jhWordsDB = [
         "uk": "/wɪtʃ/",
         "zh": "pron. 哪些、哪一個、哪一些、……的那個；det. 哪個、哪一個、哪一些、……的那個；adj. 哪一個、哪一些、無論哪個、那個",
         "unit": 18,
-        "example": "Which one's your favourite?",
-        "exampleZh": "你最喜歡哪一個？"
+        "example": "Which bus goes to the train station?",
+        "exampleZh": "哪一班公車會到火車站？"
     },
     {
         "id": 31895,
@@ -18926,8 +18926,8 @@ const jhWordsDB = [
         "uk": "/waɪl/",
         "zh": "conj. 當……時、當……的時候、與……同時、而；n. 一段時間、同時、在此期間；v. 消磨時間；prep. 直到；adv. 在……的時候",
         "unit": 18,
-        "example": "She fell while toddling around.",
-        "exampleZh": "她在蹣跚學步時摔倒了。"
+        "example": "Wait here for a little while, please.",
+        "exampleZh": "請在這裡稍等一會兒。"
     },
     {
         "id": 31896,
@@ -18936,8 +18936,8 @@ const jhWordsDB = [
         "uk": "/waɪt/",
         "zh": "adj. 白色的、白種人的、白膚色的、蒼白的；n. 白色、白顏料、白種人、白人；v. 把……漆成白色、使變白",
         "unit": 18,
-        "example": "His face was ghastly white.",
-        "exampleZh": "他的臉色慘白。"
+        "example": "The small cat has soft white fur.",
+        "exampleZh": "那隻小貓有著柔軟的白毛。"
     },
     {
         "id": 31897,
@@ -18946,8 +18946,8 @@ const jhWordsDB = [
         "uk": "/huː/",
         "zh": "pron. 誰、什麼人、……的人",
         "unit": 18,
-        "example": "Who did the timekeeping?",
-        "exampleZh": "誰做了計時工作？"
+        "example": "Who is at the front door?",
+        "exampleZh": "是誰在前門？"
     },
     {
         "id": 31898,
@@ -18956,8 +18956,8 @@ const jhWordsDB = [
         "uk": "/həʊl/",
         "zh": "n. 全部、整體；adv. 完全地、整個；adj. 整個的、全部的、完整的、完好無損的",
         "unit": 18,
-        "example": "The whole idea was preposterous.",
-        "exampleZh": "整個想法是荒謬的。"
+        "example": "He ate the whole cake by himself.",
+        "exampleZh": "他自己一個人吃掉了整個蛋糕。"
     },
     {
         "id": 31899,
@@ -18976,8 +18976,8 @@ const jhWordsDB = [
         "uk": "/waɪ/",
         "zh": "adv. 為何、為什麼、何必、……的原因；n. 理由、原因；int. 哎呀",
         "unit": 18,
-        "example": "'But why?' he interpolated.",
-        "exampleZh": "'但為什麼？ '他插嘴道。"
+        "example": "Tell me why you are late today.",
+        "exampleZh": "告訴我你今天為什麼遲到了。"
     },
     {
         "id": 31901,
@@ -18996,8 +18996,8 @@ const jhWordsDB = [
         "uk": "/waɪf/",
         "zh": "n. 妻子、已婚婦女、夫人",
         "unit": 18,
-        "example": "His wife is very religious.",
-        "exampleZh": "他的妻子非常虔誠。"
+        "example": "His wife is a doctor at the hospital.",
+        "exampleZh": "他的妻子是那家醫院的醫生。"
     },
     {
         "id": 31903,
@@ -19006,8 +19006,8 @@ const jhWordsDB = [
         "uk": "/waɪld/",
         "zh": "adj. 自然生長的、野生的、無人煙的、未開墾的；adv. 自然地、不受控制地；n. 偏遠地區、人煙稀少的地區、自然環境、野生狀態；v. 野蠻對待、殘酷對待",
         "unit": 18,
-        "example": "They went camping in the wild.",
-        "exampleZh": "他們在野外露營。"
+        "example": "Many wild birds live in nature.",
+        "exampleZh": "許多野鳥生活在大自然中。"
     },
     {
         "id": 31904,
@@ -19016,8 +19016,8 @@ const jhWordsDB = [
         "uk": "/wɪl/",
         "zh": "vt. 將、將要、請、總是；n. 意志、決心、毅力、意願",
         "unit": 18,
-        "example": "You will be remunerated and so will your staff.",
-        "exampleZh": "您將獲得報酬，您的員工也將獲得報酬。"
+        "example": "She will help you with your homework.",
+        "exampleZh": "她會協助你完成家庭作業。"
     },
     {
         "id": 31905,
@@ -19026,8 +19026,8 @@ const jhWordsDB = [
         "uk": "/wɪn/",
         "zh": "vt. 贏、獲勝、贏得、透過努力得到；n. 勝利",
         "unit": 18,
-        "example": "Everyone has a chance to win.",
-        "exampleZh": "每個人都有機會獲勝。"
+        "example": "Our team can win this big game.",
+        "exampleZh": "我們隊伍能夠贏得這場大賽。"
     },
     {
         "id": 31906,
@@ -19036,8 +19036,8 @@ const jhWordsDB = [
         "uk": "/wɪnd/",
         "zh": "n. 風、氣流、風向、逼近的形勢；vt. 纏繞、彎曲前進、蜿蜒而行、捲纏；adj. 管樂的",
         "unit": 18,
-        "example": "The wind will freshen tonight.",
-        "exampleZh": "今晚風將變得清新。"
+        "example": "A strong wind blew through the trees.",
+        "exampleZh": "一陣強風吹過了樹林。"
     },
     {
         "id": 31907,
@@ -19046,8 +19046,8 @@ const jhWordsDB = [
         "uk": "/ˈwɪndəʊ/",
         "zh": "n. 窗戶、窗、窗玻璃、視窗",
         "unit": 18,
-        "example": "I climbed through the window.",
-        "exampleZh": "我爬進窗戶。"
+        "example": "Please open the window to let air in.",
+        "exampleZh": "請打開窗戶讓空氣進來。"
     },
     {
         "id": 31908,
@@ -19066,8 +19066,8 @@ const jhWordsDB = [
         "uk": "/waɪn/",
         "zh": "n. 葡萄酒、果蔬酒、深紫紅色；v. 喝酒、設酒宴款待、跳擺臀舞",
         "unit": 18,
-        "example": "The wine had been doctored.",
-        "exampleZh": "這酒已經被竄改了。"
+        "example": "My father drinks a glass of red wine.",
+        "exampleZh": "我父親喝了一杯紅葡萄酒。"
     },
     {
         "id": 31910,
@@ -19076,8 +19076,8 @@ const jhWordsDB = [
         "uk": "/wɪŋ/",
         "zh": "n. 翅膀、翼、機翼、側翼；v. 飛、飛行、被迅速送往、擦傷",
         "unit": 18,
-        "example": "Who's playing on the wing?",
-        "exampleZh": "誰擔任邊鋒？"
+        "example": "The bird hurt its left wing.",
+        "exampleZh": "那隻鳥傷到了它的左翅膀。"
     },
     {
         "id": 31911,
@@ -19096,8 +19096,8 @@ const jhWordsDB = [
         "uk": "/ˈwɪntə(r)/",
         "zh": "n. 冬季、從冬至點到春分點的期間、年；adj. 冬天的、冬天出現的、用於冬天的、冬季才成熟的；v. 過冬、越冬、使度過冬季",
         "unit": 18,
-        "example": "Swallows migrate south in winter.",
-        "exampleZh": "冬季，燕子南遷。"
+        "example": "It snows a lot during the cold winter.",
+        "exampleZh": "寒冷的冬天經常下很多雪。"
     },
     {
         "id": 31913,
@@ -19106,8 +19106,8 @@ const jhWordsDB = [
         "uk": "/ˈwaɪə(r)/",
         "zh": "n. 金屬絲、金屬線、電線、導線；vt. 給……接上電線、接通、連線、電匯",
         "unit": 18,
-        "example": "The wire led to a speaker.",
-        "exampleZh": "這電線連線著揚聲器。"
+        "example": "Do not touch that broken wire.",
+        "exampleZh": "不要碰那條斷掉的電線。"
     },
     {
         "id": 31914,
@@ -19116,8 +19116,8 @@ const jhWordsDB = [
         "uk": "/waɪz/",
         "zh": "adj. 明智的、高明的、有學問的、精通的；v. 瞭解、知道",
         "unit": 18,
-        "example": "It's never wise to withhold evidence.",
-        "exampleZh": "隱瞞證據絕非明智之舉。"
+        "example": "The old man gave us wise advice.",
+        "exampleZh": "那位老人給了我們明智的建議。"
     },
     {
         "id": 31915,
@@ -19126,8 +19126,8 @@ const jhWordsDB = [
         "uk": "/wɪʃ/",
         "zh": "v. 希望、想要、祝、祝願；n. 願望、希望、心願、祝願",
         "unit": 18,
-        "example": "The prince's wish came true.",
-        "exampleZh": "王子的願望實現了。"
+        "example": "I wish you a very happy birthday.",
+        "exampleZh": "我祝你有個非常快樂的生日。"
     },
     {
         "id": 31916,
@@ -19156,8 +19156,8 @@ const jhWordsDB = [
         "uk": "/wʊlf/",
         "zh": "n. 狼、色狼、色鬼、殘忍兇狠的人；vt. 狼吞虎嚥地吃",
         "unit": 18,
-        "example": "The wolf clawed at the tree and howled the whole night.",
-        "exampleZh": "那隻狼在那顆樹上抓撓，還嗥叫了整整一個晚上。"
+        "example": "A gray wolf ran into woods.",
+        "exampleZh": "一隻灰狼跑進了樹林。"
     },
     {
         "id": 31919,
@@ -19166,8 +19166,8 @@ const jhWordsDB = [
         "uk": "/ˈwʊmən/",
         "zh": "n. 女人、成年女子、婦女、女性；v. 使女性化、配備女性員工、使（某人）與女性交往",
         "unit": 18,
-        "example": "She's a very attractive woman.",
-        "exampleZh": "她是一個非常有魅力的女人。"
+        "example": "That kind woman helps poor children.",
+        "exampleZh": "那位好心的女士幫助貧困的孩童。"
     },
     {
         "id": 31920,
@@ -19196,8 +19196,8 @@ const jhWordsDB = [
         "uk": "/wʊd/",
         "zh": "n. 木頭、木材、木料、樹林；adj. 木製的、用來切割或加工木材的、用木材做燃料的；v. 收集木材、植林於、給……新增木柴",
         "unit": 18,
-        "example": "The impact splintered the wood.",
-        "exampleZh": "撞擊使木頭碎裂。"
+        "example": "This small chair is made of wood.",
+        "exampleZh": "這把小椅子是由木頭製成的。"
     },
     {
         "id": 31923,
@@ -19216,8 +19216,8 @@ const jhWordsDB = [
         "uk": "/wɜːd/",
         "zh": "n. 字、詞、單詞、話；v. 措辭、用詞；int. 就是、說得對",
         "unit": 18,
-        "example": "The appropriate word eluded him.",
-        "exampleZh": "他想不出合適的字。"
+        "example": "I do not know this English word.",
+        "exampleZh": "我不認得這個英文單字。"
     },
     {
         "id": 31925,
@@ -19266,8 +19266,8 @@ const jhWordsDB = [
         "uk": "/ˈwʌri/",
         "zh": "vt. 擔心、發愁、使擔憂、使發愁；n. 憂慮、令人擔憂的事、令人發愁的問題、擔心",
         "unit": 18,
-        "example": "I worry about her constantly.",
-        "exampleZh": "我時常擔心她。"
+        "example": "Do not worry about the math test.",
+        "exampleZh": "不要為那場數學考試擔心。"
     },
     {
         "id": 31930,
@@ -19286,8 +19286,8 @@ const jhWordsDB = [
         "uk": "/wuːnd/",
         "zh": "n. 創傷、傷口、損害、痛苦；vt. 傷害、使受傷、使受創傷、蜿蜒",
         "unit": 18,
-        "example": "The nurse cleaned the wound.",
-        "exampleZh": "護士清洗了傷口。"
+        "example": "Wash the deep wound with water.",
+        "exampleZh": "用水清洗這個深傷口。"
     },
     {
         "id": 31932,
@@ -19296,8 +19296,8 @@ const jhWordsDB = [
         "uk": "/rɪst/",
         "zh": "n. 手腕、腕關節、膝關節、腕",
         "unit": 18,
-        "example": "Kay grasped him by the wrist.",
-        "exampleZh": "凱緊緊抓住他的手腕。"
+        "example": "She wears a watch on her wrist.",
+        "exampleZh": "她在手腕上戴了一只手錶。"
     },
     {
         "id": 31933,
@@ -19316,8 +19316,8 @@ const jhWordsDB = [
         "uk": "/ˈraɪtə(r)/",
         "zh": "n. 作者、作家、執筆者、撰寫人",
         "unit": 18,
-        "example": "'You? A writer?' she sneered.",
-        "exampleZh": "'你？作家？她冷笑道。"
+        "example": "The famous writer wrote many good books.",
+        "exampleZh": "那位知名作家寫了許多好書。"
     },
     {
         "id": 31935,
@@ -19326,8 +19326,8 @@ const jhWordsDB = [
         "uk": "/rɒŋ/",
         "zh": "adj. 錯誤的、不合乎事實的、有問題的、有毛病的；adv. 錯誤地、不符合事實地、不適當地、不適宜地；n. 壞事、不道德行為、錯誤的行為、冤枉；v. 不公正地對待、冤枉",
         "unit": 18,
-        "example": "'That is wrong,' he asserted.",
-        "exampleZh": "「這是錯誤的，」他斷言。"
+        "example": "Your answer to this question is wrong.",
+        "exampleZh": "你對這個問題的回答是錯誤的。"
     },
     {
         "id": 31936,
@@ -19346,8 +19346,8 @@ const jhWordsDB = [
         "uk": "/jɪə(r)/",
         "zh": "n. 年、日曆年、一年時間、與某事相關的一年",
         "unit": 18,
-        "example": "Spending has increased year on year.",
-        "exampleZh": "支出逐年增加。"
+        "example": "We had a great trip this year.",
+        "exampleZh": "我們今年去了一趟很棒的旅行。"
     },
     {
         "id": 31938,
@@ -19356,8 +19356,8 @@ const jhWordsDB = [
         "uk": "/ˈjeləʊ/",
         "zh": "adj. 黃色的、黃的、黃色人種的、黃皮膚的；n. 黃色、黃顏料、黃色衣服、黃色衣料；v. 變黃",
         "unit": 18,
-        "example": "The walls were painted yellow.",
-        "exampleZh": "牆壁被漆成黃色。"
+        "example": "The yellow bus stopped near our house.",
+        "exampleZh": "那輛黃色公車停在我們家附近。"
     },
     {
         "id": 31939,
@@ -19386,8 +19386,8 @@ const jhWordsDB = [
         "uk": "/jet/",
         "zh": "adv. 還、仍然、現在、此刻；conj. 然而、但是",
         "unit": 18,
-        "example": "They haven't finished yet.",
-        "exampleZh": "他們還沒有完成。"
+        "example": "The bus has not arrived here yet.",
+        "exampleZh": "公車還沒有到達這裡。"
     },
     {
         "id": 31942,
@@ -19396,8 +19396,8 @@ const jhWordsDB = [
         "uk": "/jʌŋ/",
         "zh": "adj. 年輕的、幼小的、存在不久的、新成立的；n. 年輕人、幼崽、雛鳥",
         "unit": 18,
-        "example": "He's a brilliant young scientist.",
-        "exampleZh": "他是一位才華洋溢的年輕科學家。"
+        "example": "The young girl likes to draw pictures.",
+        "exampleZh": "那個年輕女孩喜歡畫畫。"
     },
     {
         "id": 31943,
@@ -19406,8 +19406,8 @@ const jhWordsDB = [
         "uk": "/juːθ/",
         "zh": "n. 青春、青少年時期、早期、初期",
         "unit": 18,
-        "example": "The poem contrasts youth and age.",
-        "exampleZh": "這首詩對比了青春與老年。"
+        "example": "He lost his youth too soon.",
+        "exampleZh": "他太早失去了青春年華。"
     },
     {
         "id": 31944,
@@ -19436,7 +19436,7 @@ const jhWordsDB = [
         "uk": "/zuː/",
         "zh": "n. 動物園、混亂喧鬧的場所",
         "unit": 18,
-        "example": "He took his son Christopher to the zoo.",
-        "exampleZh": "他帶著兒子克里斯托弗去了動物園。"
+        "example": "We saw lions and monkeys at the zoo.",
+        "exampleZh": "我們在動物園看到了獅子和猴子。"
     }
 ];

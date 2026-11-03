@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261102V10';
+        const APP_BUILD_VERSION = '20261103V1';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -63,20 +63,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261102V10"></script>
-    <script src="toeic_data.js?v=20261102V10"></script>
-    <script src="jh_data.js?v=20261102V10"></script>
-    <script src="listening_data.js?v=20261102V10"></script>
-    <script src="listening_words_data.js?v=20261102V10"></script>
-    <script src="uk_phonetics_manifest.js?v=20261102V10"></script>
-    <script src="words_audio_manifest.js?v=20261102V10"></script>
-    <script src="examples_audio_manifest.js?v=20261102V10"></script>
-    <script src="zh_audio_manifest.js?v=20261102V10"></script>
-    <script src="collocations_audio_manifest.js?v=20261102V10"></script>
-    <script src="syn_ant_data.js?v=20261102V10"></script>
-    <script src="synonyms_unit8_data.js?v=20261102V10"></script>
-    <script src="examples_unit9_data.js?v=20261102V10"></script>
-    <script src="game_whack.js?v=20261102V10"></script>
+    <script src="words_data.js?v=20261103V1"></script>
+    <script src="toeic_data.js?v=20261103V1"></script>
+    <script src="jh_data.js?v=20261103V1"></script>
+    <script src="listening_data.js?v=20261103V1"></script>
+    <script src="listening_words_data.js?v=20261103V1"></script>
+    <script src="uk_phonetics_manifest.js?v=20261103V1"></script>
+    <script src="words_audio_manifest.js?v=20261103V1"></script>
+    <script src="examples_audio_manifest.js?v=20261103V1"></script>
+    <script src="zh_audio_manifest.js?v=20261103V1"></script>
+    <script src="collocations_audio_manifest.js?v=20261103V1"></script>
+    <script src="syn_ant_data.js?v=20261103V1"></script>
+    <script src="synonyms_unit8_data.js?v=20261103V1"></script>
+    <script src="examples_unit9_data.js?v=20261103V1"></script>
+    <script src="game_whack.js?v=20261103V1"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -1799,6 +1799,85 @@
             color: #FBBF24 !important;
         }
 
+        /* 20. 音節拆解與重音高亮徽章 (Syllable Breakdown & Stress Pill) */
+        .syllable-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1px;
+            background-color: rgba(241, 245, 249, 0.88);
+            border: 1px solid rgba(203, 213, 225, 0.75);
+            color: #64748B;
+            border-radius: 9999px;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            line-height: 1.25;
+            cursor: pointer;
+            user-select: none;
+            transition: all 0.15s ease;
+            max-width: 100%;
+        }
+        .syllable-badge:hover {
+            background-color: rgba(239, 246, 255, 0.95);
+            border-color: rgba(147, 197, 253, 0.85);
+            color: #334155;
+        }
+        .syllable-badge:active {
+            transform: scale(0.96);
+        }
+        .syllable-badge .syl-pri {
+            color: #0071E3;
+            font-weight: 800;
+            text-decoration: underline;
+            text-decoration-color: rgba(0, 113, 227, 0.45);
+            text-underline-offset: 2px;
+            text-decoration-thickness: 1.5px;
+        }
+        .syllable-badge .syl-sec {
+            color: #334155;
+            font-weight: 600;
+        }
+        .syllable-badge .syl-dot {
+            color: #CBD5E1;
+            margin: 0 2px;
+            font-weight: 700;
+        }
+        html.theme-paper .syllable-badge {
+            background-color: #EFECE4 !important;
+            border-color: #DFD8C8 !important;
+            color: #7A7265 !important;
+        }
+        html.theme-paper .syllable-badge .syl-pri {
+            color: #0066CC !important;
+            text-decoration-color: rgba(0, 102, 204, 0.45) !important;
+        }
+        html.theme-paper .syllable-badge .syl-sec {
+            color: #4A4237 !important;
+        }
+        html.theme-paper .syllable-badge .syl-dot {
+            color: #C4BBA8 !important;
+        }
+        html.dark .syllable-badge {
+            background-color: rgba(255, 255, 255, 0.055) !important;
+            border-color: rgba(255, 255, 255, 0.12) !important;
+            color: #94A3B8 !important;
+        }
+        html.dark .syllable-badge:hover {
+            background-color: rgba(56, 139, 253, 0.16) !important;
+            border-color: rgba(56, 139, 253, 0.4) !important;
+            color: #E2E8F0 !important;
+        }
+        html.dark .syllable-badge .syl-pri {
+            color: #58A6FF !important;
+            text-decoration-color: rgba(88, 166, 255, 0.55) !important;
+        }
+        html.dark .syllable-badge .syl-sec {
+            color: #E2E8F0 !important;
+        }
+        html.dark .syllable-badge .syl-dot {
+            color: #475569 !important;
+        }
+
     </style>
 
 
@@ -2493,8 +2572,10 @@
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-7 sm:w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
                         </button>
                         <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#1D1D1F] mb-0.5 tracking-tight break-all" id="card-word">Apple</h2>
+                        <!-- 音節拆解與重音高亮 (點擊可 0.72x 慢速清晰跟讀，單音節自動隱藏) -->
+                        <div id="card-syllables-front" class="hidden my-0.5 items-center justify-center max-w-full px-2"></div>
                         <!-- 雙音標展示 (🇺🇸 美式 KK / 🇬🇧 英式牛津 IPA - 雙標並列、連動發音高亮) -->
-                        <div class="flex items-center justify-center gap-2 font-mono text-xs sm:text-sm my-1 flex-wrap" id="card-phonetic-row">
+                        <div class="flex items-center justify-center gap-2 font-mono text-xs sm:text-sm my-0.5 sm:my-1 flex-wrap" id="card-phonetic-row">
                             <span id="card-phonetic-us" class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-blue-50/90 text-blue-700 border border-blue-200/60 font-medium transition-all" title="美式 KK 音標">
                                 <span class="text-[10px] font-sans font-bold text-blue-500">美</span>
                                 <span id="card-kk">/ˈæpəl/</span>
@@ -2516,14 +2597,15 @@
                             <div id="card-fill-cloze-zh" class="text-slate-500 text-[11px] sm:text-xs mt-1"></div>
                         </div>
                     </div>
-                    <!-- 背面 (中文與例句 - 支援完整滾動防截斷) -->
+                    <!-- 背面 (中文與例句 - 支援完整滾動防截斷，音節與標題同行零額外高度) -->
                     <div class="flip-card-back">
                         <button id="btn-card-mark-back" type="button" class="absolute top-2.5 left-2.5 p-1.5 text-2xl leading-none text-gray-300 hover:text-amber-400 dark:text-slate-500 dark:hover:text-amber-400 transition-all cursor-pointer select-none active:scale-90 z-20" title="標記單字 (⭐)" aria-label="標記單字">☆</button>
-                        <div class="flex items-baseline justify-center gap-1.5 mb-0.5">
+                        <div class="flex items-center justify-center gap-2 mb-0.5 flex-wrap px-7">
                             <h2 class="text-xl sm:text-2xl font-bold text-[#1D1D1F] break-all" id="card-word-back">Apple</h2>
+                            <div id="card-syllables-back" class="hidden items-center"></div>
                         </div>
                         <!-- 背面雙音標展示 (🇺🇸 美式 KK / 🇬🇧 英式牛津 IPA) -->
-                        <div class="flex items-center justify-center gap-2 font-mono text-[11px] sm:text-xs mb-1.5 flex-wrap" id="card-phonetic-row-back">
+                        <div class="flex items-center justify-center gap-2 font-mono text-[11px] sm:text-xs mb-1 sm:mb-1.5 flex-wrap" id="card-phonetic-row-back">
                             <span id="card-phonetic-us-back" class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-blue-50/90 text-blue-700 border border-blue-200/60 font-medium transition-all" title="美式 KK 音標">
                                 <span class="text-[9px] font-sans font-bold text-blue-500">美</span>
                                 <span id="card-kk-back">/ˈæpəl/</span>
@@ -2534,7 +2616,7 @@
                             </span>
                         </div>
                         <!-- 真人雙口音切換：美音 / 英音 / 逐字拼讀 (等寬等高細體極簡風格) -->
-                        <div class="flex items-center justify-center gap-2 mb-2 shrink-0 flex-wrap">
+                        <div class="flex items-center justify-center gap-2 mb-1 sm:mb-2 shrink-0 flex-wrap">
                             <button type="button" id="btn-card-voice-us" class="w-20 h-7 rounded-full text-xs font-normal flex items-center justify-center cursor-pointer transition-colors shadow-2xs border bg-blue-50 text-[#0071E3] border-blue-200/90 hover:bg-blue-100/70" title="真人美音 (女聲)">
                                 <span>美音</span>
                             </button>
@@ -2545,7 +2627,7 @@
                                 <span>拼讀</span>
                             </button>
                         </div>
-                        <div class="flex flex-col items-center justify-center mb-1.5 max-w-full px-1">
+                        <div class="flex flex-col items-center justify-center mb-1 sm:mb-1.5 max-w-full px-1">
                             <div class="flex items-center justify-center gap-1.5 flex-wrap">
                                 <span id="card-pos-badge" class="hidden"></span>
                                 <div class="cursor-pointer text-center text-slate-800 font-bold text-sm sm:text-base leading-snug flex items-center gap-1.5 flex-wrap justify-center" id="card-translation" title="點擊朗讀中文釋義">n. 蘋果</div>
@@ -2562,7 +2644,7 @@
                         </div>
                         
                         <!-- 原生口說跟讀評測 & 單字三態詳解 -->
-                        <div class="flex items-center justify-center gap-1.5 mb-1.5 flex-wrap shrink-0">
+                        <div class="flex items-center justify-center gap-1.5 mb-1 sm:mb-1.5 flex-wrap shrink-0">
                             <button id="btn-speech-eval" class="px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-slate-100 text-slate-600 hover:bg-slate-200/80 hover:text-slate-900 border border-slate-200/80 transition-all flex items-center gap-1 cursor-pointer active:scale-95" title="點擊開麥，朗讀英文單字評測發音">
                                 <span id="speech-eval-icon">🎤</span>
                                 <span id="speech-eval-text">口說評測</span>
@@ -2574,7 +2656,7 @@
                             <div id="speech-eval-result" class="hidden text-[11px] font-medium py-0.5 px-2 rounded-full mt-0.5 transition-all"></div>
                         </div>
                         
-                        <div id="example-container" class="bg-slate-50/90 rounded-xl p-2.5 sm:p-3 w-full text-left relative border border-slate-200/75 mt-1 hidden transition-all duration-300 hover:shadow-xs hover:bg-white">
+                        <div id="example-container" class="bg-slate-50/90 rounded-xl p-2 sm:p-3 w-full text-left relative border border-slate-200/75 mt-0.5 sm:mt-1 hidden transition-all duration-300 hover:shadow-xs hover:bg-white">
                             <button id="btn-example-audio" class="absolute top-2 right-2 p-1 text-slate-400 hover:text-[#0071E3] rounded-full hover:bg-blue-50 transition-colors z-10 cursor-pointer" title="朗讀例句">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
                             </button>
@@ -6579,10 +6661,12 @@
             const kkEl = document.getElementById('card-kk');
             const hintEl = document.getElementById('card-front-hint');
             const audioBtn = document.getElementById('btn-audio');
-            const big = 'text-3xl sm:text-4xl font-extrabold text-[#1D1D1F] mb-1 tracking-tight break-all';
+            const big = 'text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#1D1D1F] mb-0.5 tracking-tight break-all';
             const mid = 'text-xl sm:text-2xl font-bold text-[#1D1D1F] mb-1 break-all px-2';
+            const sf = document.getElementById('card-syllables-front');
+            if (sf) sf.style.display = sf.innerHTML ? 'flex' : 'none';
             wordEl.className = big;
-            hintEl.className = 'text-gray-400 text-sm mt-4';
+            hintEl.className = 'text-gray-400 text-xs sm:text-sm mt-1.5 sm:mt-3';
             hintEl.innerText = '點擊卡片翻面看解答';
             audioBtn.classList.remove('hidden');
             if (t === 'en2zh') {
@@ -6593,12 +6677,14 @@
                 wordEl.className = mid; 
                 wordEl.innerText = conciseZh; 
                 const rf = document.getElementById('card-phonetic-row'); if (rf) rf.style.display = 'none';
+                if (sf) sf.style.display = 'none';
                 hintEl.innerHTML = parsed.pos ? `<span class="inline-block bg-blue-50 text-[#0071E3] border border-blue-200 text-xs px-2 py-0.5 rounded-full font-mono lowercase mr-1.5">${parsed.pos}</span> 看中文 ➜ 選出英文` : '看中文 ➜ 選出英文';
                 audioBtn.classList.add('hidden');
             } else if (t === 'listen') {
                 wordEl.className = 'text-5xl mb-2 font-mono';
                 wordEl.innerText = '🎧 🔊';
                 const rf = document.getElementById('card-phonetic-row'); if (rf) rf.style.display = 'none';
+                if (sf) sf.style.display = 'none';
                 hintEl.innerText = '盲聽辨音 ➜ 選出正確單字 (可點音訊重播)';
                 setTimeout(() => {
                     if (currentQuizType === 'listen' && currentWord && currentWord.en) {
@@ -6611,6 +6697,7 @@
                 wordEl.className = mid; 
                 wordEl.innerText = conciseZh; 
                 const rf = document.getElementById('card-phonetic-row'); if (rf) rf.style.display = 'none';
+                if (sf) sf.style.display = 'none';
                 const p = parsed.items?.[0]?.pos || parsed.posBadgeText || '';
                 hintEl.innerHTML = p ? `<span class="inline-block bg-blue-50 text-[#0071E3] border border-blue-200 text-xs px-2 py-0.5 rounded-full font-mono lowercase mr-1.5">${esc(p.toLowerCase())}</span> 拼寫練習 ➜ 依語境填空` : '拼寫練習 ➜ 依語境填空';
                 audioBtn.classList.add('hidden');
@@ -7429,12 +7516,524 @@
             return out;
         }
 
-        // 雙音標動態渲染與顯示 (美式 KK / 英式 Oxford IPA)
+        // ==========================================================
+        // 智慧音節拆解與重音對齊引擎 (Syllable Breakdown + KK Stress Alignment)
+        // ==========================================================
+        function analyzeKkSyllables(kkStr, word = '') {
+            if (!kkStr) return { count: 0, primaryIdx: -1, secondaryIdx: -1 };
+            const m = kkStr.match(/\[([^\],;\/]+)/);
+            const raw = m ? m[1].trim() : kkStr.replace(/[\[\]]/g, '').trim();
+            if (!raw) return { count: 0, primaryIdx: -1, secondaryIdx: -1 };
+
+            const wLower = (word || '').trim().toLowerCase();
+            const isOneSylIreOur = /(ire|ired|ires|irement|our|ours|oir)$/.test(wLower);
+            const vowelRegex = isOneSylIreOur
+                ? /aɪɚ|aʊɚ|aɪ|aʊ|ɔɪ|i|ɪ|e|ɛ|æ|ɑ|ɔ|o|ʊ|u|ʌ|ə|ɝ|ɚ/g
+                : /aɪ|aʊ|ɔɪ|i|ɪ|e|ɛ|æ|ɑ|ɔ|o|ʊ|u|ʌ|ə|ɝ|ɚ/g;
+
+            const nuclei = [];
+            let match;
+            while ((match = vowelRegex.exec(raw)) !== null) {
+                nuclei.push({ index: match.index, vowel: match[0] });
+            }
+            if (nuclei.length === 0) return { count: 1, primaryIdx: 0, secondaryIdx: -1 };
+
+            let primaryIdx = -1;
+            let secondaryIdx = -1;
+            for (let i = 0; i < raw.length; i++) {
+                const ch = raw[i];
+                if (ch === 'ˋ' || ch === 'ˈ' || ch === "'") {
+                    const nIdx = nuclei.findIndex(n => n.index >= i);
+                    if (nIdx !== -1 && primaryIdx === -1) primaryIdx = nIdx;
+                    else if (nIdx !== -1 && primaryIdx !== -1 && secondaryIdx === -1) secondaryIdx = nIdx;
+                } else if (ch === '͵' || ch === 'ˌ') {
+                    const nIdx = nuclei.findIndex(n => n.index >= i);
+                    if (nIdx !== -1) secondaryIdx = nIdx;
+                }
+            }
+            if (primaryIdx === -1 && nuclei.length > 0) primaryIdx = 0;
+            return { count: nuclei.length, primaryIdx, secondaryIdx };
+        }
+
+        const SYLLABLE_OVERRIDES = {
+            'aisle': ['aisle'], 'isle': ['isle'], 'real': ['real'], 'charles': ['charles'],
+            'vague': ['vague'], 'vogue': ['vogue'], 'league': ['league'], 'plague': ['plague'],
+            'rogue': ['rogue'], 'tongue': ['tongue'], 'mosque': ['mosque'], 'cheque': ['cheque'],
+            'creak': ['creak'], 'realm': ['realm'], 'choir': ['choir'],
+            'fire': ['fire'], 'hire': ['hire'], 'wire': ['wire'], 'tire': ['tire'], 'tired': ['tired'],
+            'hour': ['hour'], 'our': ['our'], 'ours': ['ours'], 'sour': ['sour'], 'flour': ['flour'],
+            'maybe': ['may', 'be'], 'acre': ['a', 'cre'], 'acne': ['ac', 'ne'], 'naive': ['na', 'ive'],
+            'rhythm': ['rhythm'], 'ragged': ['rag', 'ged'], 'bazaar': ['ba', 'zaar'], 'oasis': ['o', 'a', 'sis'],
+            'koala': ['ko', 'a', 'la'], 'coincide': ['co', 'in', 'cide'], 'reinforce': ['re', 'in', 'force'],
+            'recreate': ['rec', 're', 'ate'], 'recreation': ['rec', 're', 'a', 'tion'], 'recreational': ['rec', 're', 'a', 'tion', 'al'],
+            'theatrical': ['the', 'at', 'ri', 'cal'], 'conscientious': ['con', 'sci', 'en', 'tious'],
+            'oriental': ['o', 'ri', 'en', 'tal'], 'continuity': ['con', 'ti', 'nu', 'i', 'ty'],
+            'agreeable': ['a', 'gree', 'a', 'ble'], 'gymnasium': ['gym', 'na', 'si', 'um'],
+            'obedient': ['o', 'be', 'di', 'ent'], 'obedience': ['o', 'be', 'di', 'ence'],
+            'ingredient': ['in', 'gre', 'di', 'ent'], 'millionaire': ['mil', 'lion', 'aire'],
+            'business': ['busi', 'ness'], 'wednesday': ['wednes', 'day'],
+            'comfortable': ['com', 'fort', 'a', 'ble'], 'uncomfortable': ['un', 'com', 'fort', 'a', 'ble'],
+            'vegetable': ['veg', 'e', 'ta', 'ble'], 'chocolate': ['choc', 'o', 'late'],
+            'temperature': ['tem', 'per', 'a', 'ture'], 'literature': ['lit', 'er', 'a', 'ture'],
+            'interest': ['in', 'ter', 'est'], 'interesting': ['in', 'ter', 'est', 'ing'], 'interested': ['in', 'ter', 'est', 'ed'],
+            'different': ['dif', 'fer', 'ent'], 'difference': ['dif', 'fer', 'ence'], 'indifferent': ['in', 'dif', 'fer', 'ent'],
+            'camera': ['cam', 'er', 'a'], 'average': ['av', 'er', 'age'], 'favorite': ['fa', 'vor', 'ite'],
+            'family': ['fam', 'i', 'ly'], 'general': ['gen', 'er', 'al'], 'generally': ['gen', 'er', 'al', 'ly'],
+            'several': ['sev', 'er', 'al'], 'natural': ['nat', 'u', 'ral'], 'naturally': ['nat', 'u', 'ral', 'ly'],
+            'history': ['his', 'to', 'ry'], 'factory': ['fac', 'to', 'ry'], 'victory': ['vic', 'to', 'ry'],
+            'memory': ['mem', 'o', 'ry'], 'theory': ['the', 'o', 'ry'], 'category': ['cat', 'e', 'go', 'ry'],
+            'territory': ['ter', 'ri', 'to', 'ry'], 'laboratory': ['lab', 'o', 'ra', 'to', 'ry'],
+            'dormitory': ['dor', 'mi', 'to', 'ry'], 'satisfactory': ['sat', 'is', 'fac', 'to', 'ry'],
+            'dictionary': ['dic', 'tion', 'ar', 'y'], 'vocabulary': ['vo', 'cab', 'u', 'lar', 'y'],
+            'secretary': ['sec', 're', 'tar', 'y'], 'necessary': ['nec', 'es', 'sar', 'y'], 'unnecessary': ['un', 'nec', 'es', 'sar', 'y'],
+            'ordinary': ['or', 'di', 'nar', 'y'], 'extraordinary': ['ex', 'traor', 'di', 'nar', 'y'],
+            'military': ['mil', 'i', 'tar', 'y'], 'temporary': ['tem', 'po', 'rar', 'y'], 'contemporary': ['con', 'tem', 'po', 'rar', 'y'],
+            'voluntary': ['vol', 'un', 'tar', 'y'], 'elementary': ['el', 'e', 'men', 'ta', 'ry'],
+            'documentary': ['doc', 'u', 'men', 'ta', 'ry'], 'anniversary': ['an', 'ni', 'ver', 'sa', 'ry'],
+            'library': ['li', 'brar', 'y'], 'january': ['jan', 'u', 'ar', 'y'], 'february': ['feb', 'ru', 'ar', 'y'],
+            'saturday': ['sat', 'ur', 'day'], 'yesterday': ['yes', 'ter', 'day'],
+            'everyday': ['ev', 'ery', 'day'], 'every': ['ev', 'er', 'y'], 'everyone': ['ev', 'ery', 'one'],
+            'everybody': ['ev', 'ery', 'bod', 'y'], 'everything': ['ev', 'ery', 'thing'], 'everywhere': ['ev', 'ery', 'where'],
+            'anybody': ['an', 'y', 'bod', 'y'], 'anyone': ['an', 'y', 'one'], 'anything': ['an', 'y', 'thing'], 'anywhere': ['an', 'y', 'where'],
+            'somebody': ['some', 'bod', 'y'], 'someone': ['some', 'one'], 'something': ['some', 'thing'], 'somewhere': ['some', 'where'],
+            'sometimes': ['some', 'times'], 'somewhat': ['some', 'what'],
+            'nobody': ['no', 'bod', 'y'], 'nothing': ['noth', 'ing'], 'nowhere': ['no', 'where'],
+            'evening': ['eve', 'ning'], 'knowledge': ['knowl', 'edge'], 'acknowledge': ['ac', 'knowl', 'edge'],
+            'acknowledgement': ['ac', 'knowl', 'edg', 'ment'],
+            'foreign': ['for', 'eign'], 'foreigner': ['for', 'eign', 'er'], 'sovereign': ['sov', 'er', 'eign'],
+            'campaign': ['cam', 'paign'], 'champagne': ['cham', 'pagne'], 'colleague': ['col', 'league'],
+            'technique': ['tech', 'nique'], 'unique': ['u', 'nique'], 'antique': ['an', 'tique'], 'fatigue': ['fa', 'tigue'],
+            'machine': ['ma', 'chine'], 'magazine': ['mag', 'a', 'zine'], 'routine': ['rou', 'tine'],
+            'marine': ['ma', 'rine'], 'submarine': ['sub', 'ma', 'rine'], 'vaccine': ['vac', 'cine'],
+            'medicine': ['med', 'i', 'cine'], 'discipline': ['dis', 'ci', 'pline'], 'examine': ['ex', 'am', 'ine'],
+            'imagine': ['i', 'mag', 'ine'], 'imagination': ['i', 'mag', 'i', 'na', 'tion'], 'determine': ['de', 'ter', 'mine'],
+            'engine': ['en', 'gine'], 'engineer': ['en', 'gi', 'neer'], 'engineering': ['en', 'gi', 'neer', 'ing'],
+            'pioneer': ['pi', 'o', 'neer'], 'volunteer': ['vol', 'un', 'teer'], 'career': ['ca', 'reer'],
+            'idea': ['i', 'de', 'a'], 'ideal': ['i', 'de', 'al'], 'really': ['re', 'al', 'ly'],
+            'reality': ['re', 'al', 'i', 'ty'], 'realize': ['re', 'al', 'ize'], 'realistic': ['re', 'al', 'is', 'tic'],
+            'create': ['cre', 'ate'], 'creative': ['cre', 'a', 'tive'], 'creativity': ['cre', 'a', 'tiv', 'i', 'ty'],
+            'creation': ['cre', 'a', 'tion'], 'creature': ['crea', 'ture'],
+            'theater': ['the', 'a', 'ter'], 'theatre': ['the', 'a', 'tre'], 'area': ['ar', 'e', 'a'],
+            'korea': ['ko', 're', 'a'], 'korean': ['ko', 're', 'an'], 'europe': ['eu', 'rope'], 'european': ['eu', 'ro', 'pe', 'an'],
+            'museum': ['mu', 'se', 'um'], 'ocean': ['o', 'cean'], 'ancient': ['an', 'cient'],
+            'patient': ['pa', 'tient'], 'patience': ['pa', 'tience'], 'impatient': ['im', 'pa', 'tient'],
+            'efficient': ['ef', 'fi', 'cient'], 'efficiency': ['ef', 'fi', 'cien', 'cy'],
+            'sufficient': ['suf', 'fi', 'cient'], 'deficient': ['de', 'fi', 'cient'],
+            'conscience': ['con', 'science'], 'conscious': ['con', 'scious'], 'unconscious': ['un', 'con', 'scious'],
+            'consciousness': ['con', 'scious', 'ness'], 'science': ['sci', 'ence'], 'scientific': ['sci', 'en', 'tif', 'ic'],
+            'scientist': ['sci', 'en', 'tist'], 'quiet': ['qui', 'et'], 'quieter': ['qui', 'et', 'er'], 'quietly': ['qui', 'et', 'ly'],
+            'diet': ['di', 'et'], 'client': ['cli', 'ent'], 'giant': ['gi', 'ant'], 'lion': ['li', 'on'], 'riot': ['ri', 'ot'],
+            'poem': ['po', 'em'], 'poet': ['po', 'et'], 'poetry': ['po', 'et', 'ry'],
+            'hero': ['he', 'ro'], 'heroes': ['he', 'roes'], 'heroic': ['he', 'ro', 'ic'], 'zero': ['ze', 'ro'], 'echo': ['ech', 'o'],
+            'radio': ['ra', 'di', 'o'], 'video': ['vid', 'e', 'o'], 'stereo': ['ster', 'e', 'o'], 'studio': ['stu', 'di', 'o'],
+            'audio': ['au', 'di', 'o'], 'stadium': ['sta', 'di', 'um'], 'medium': ['me', 'di', 'um'], 'media': ['me', 'di', 'a'],
+            'piano': ['pi', 'an', 'o'], 'violin': ['vi', 'o', 'lin'], 'violence': ['vi', 'o', 'lence'], 'violent': ['vi', 'o', 'lent'],
+            'violet': ['vi', 'o', 'let'], 'biology': ['bi', 'ol', 'o', 'gy'], 'biologist': ['bi', 'ol', 'o', 'gist'],
+            'biological': ['bi', 'o', 'log', 'i', 'cal'], 'geography': ['ge', 'og', 'ra', 'phy'], 'geometry': ['ge', 'om', 'e', 'try'],
+            'geology': ['ge', 'ol', 'o', 'gy'], 'apology': ['a', 'pol', 'o', 'gy'], 'apologize': ['a', 'pol', 'o', 'gize'],
+            'technology': ['tech', 'nol', 'o', 'gy'], 'psychology': ['psy', 'chol', 'o', 'gy'], 'sociology': ['so', 'ci', 'ol', 'o', 'gy'],
+            'ecology': ['e', 'col', 'o', 'gy'], 'ideology': ['i', 'de', 'ol', 'o', 'gy'], 'methodology': ['meth', 'od', 'ol', 'o', 'gy'],
+            'curious': ['cu', 'ri', 'ous'], 'curiosity': ['cu', 'ri', 'os', 'i', 'ty'],
+            'serious': ['se', 'ri', 'ous'], 'seriously': ['se', 'ri', 'ous', 'ly'],
+            'various': ['va', 'ri', 'ous'], 'variety': ['va', 'ri', 'e', 'ty'],
+            'previous': ['pre', 'vi', 'ous'], 'previously': ['pre', 'vi', 'ous', 'ly'],
+            'obvious': ['ob', 'vi', 'ous'], 'obviously': ['ob', 'vi', 'ous', 'ly'],
+            'envious': ['en', 'vi', 'ous'], 'mysterious': ['mys', 'te', 'ri', 'ous'], 'mystery': ['mys', 'ter', 'y'],
+            'furious': ['fu', 'ri', 'ous'], 'glorious': ['glo', 'ri', 'ous'], 'victorious': ['vic', 'to', 'ri', 'ous'],
+            'luxurious': ['lux', 'u', 'ri', 'ous'], 'luxury': ['lux', 'u', 'ry'],
+            'anxious': ['anx', 'ious'], 'anxiety': ['anx', 'i', 'e', 'ty'], 'society': ['so', 'ci', 'e', 'ty'],
+            'social': ['so', 'cial'], 'special': ['spe', 'cial'], 'especially': ['es', 'pe', 'cial', 'ly'],
+            'official': ['of', 'fi', 'cial'], 'artificial': ['ar', 'ti', 'fi', 'cial'], 'commercial': ['com', 'mer', 'cial'],
+            'financial': ['fi', 'nan', 'cial'], 'crucial': ['cru', 'cial'], 'racial': ['ra', 'cial'], 'facial': ['fa', 'cial'],
+            'essential': ['es', 'sen', 'tial'], 'potential': ['po', 'ten', 'tial'], 'initial': ['i', 'ni', 'tial'],
+            'partial': ['par', 'tial'], 'martial': ['mar', 'tial'], 'influential': ['in', 'flu', 'en', 'tial'],
+            'confidential': ['con', 'fi', 'den', 'tial'], 'residential': ['res', 'i', 'den', 'tial'], 'presidential': ['pres', 'i', 'den', 'tial'],
+            'experience': ['ex', 'pe', 'ri', 'ence'], 'experiment': ['ex', 'per', 'i', 'ment'], 'period': ['pe', 'ri', 'od'],
+            'material': ['ma', 'te', 'ri', 'al'], 'imperial': ['im', 'pe', 'ri', 'al'], 'memorial': ['me', 'mo', 'ri', 'al'],
+            'editorial': ['ed', 'i', 'to', 'ri', 'al'], 'tutorial': ['tu', 'to', 'ri', 'al'],
+            'industrial': ['in', 'dus', 'tri', 'al'], 'industry': ['in', 'dus', 'try'],
+            'trial': ['tri', 'al'], 'denial': ['de', 'ni', 'al'], 'dial': ['di', 'al'], 'diary': ['di', 'a', 'ry'],
+            'dialogue': ['di', 'a', 'logue'], 'dialog': ['di', 'a', 'log'], 'diamond': ['di', 'a', 'mond'],
+            'diagram': ['di', 'a', 'gram'], 'diameter': ['di', 'am', 'e', 'ter'], 'diagnose': ['di', 'ag', 'nose'],
+            'diagnosis': ['di', 'ag', 'no', 'sis'], 'triangle': ['tri', 'an', 'gle'], 'triumph': ['tri', 'umph'],
+            'priority': ['pri', 'or', 'i', 'ty'], 'prior': ['pri', 'or'], 'minor': ['mi', 'nor'], 'minority': ['mi', 'nor', 'i', 'ty'],
+            'major': ['ma', 'jor'], 'majority': ['ma', 'jor', 'i', 'ty'], 'authority': ['au', 'thor', 'i', 'ty'],
+            'security': ['se', 'cu', 'ri', 'ty'], 'maturity': ['ma', 'tu', 'ri', 'ty'],
+            'responsibility': ['re', 'spon', 'si', 'bil', 'i', 'ty'], 'responsible': ['re', 'spon', 'si', 'ble'],
+            'possibility': ['pos', 'si', 'bil', 'i', 'ty'], 'possible': ['pos', 'si', 'ble'], 'impossible': ['im', 'pos', 'si', 'ble'],
+            'ability': ['a', 'bil', 'i', 'ty'], 'disability': ['dis', 'a', 'bil', 'i', 'ty'], 'capability': ['ca', 'pa', 'bil', 'i', 'ty'],
+            'capable': ['ca', 'pa', 'ble'], 'stability': ['sta', 'bil', 'i', 'ty'], 'flexibility': ['flex', 'i', 'bil', 'i', 'ty'],
+            'flexible': ['flex', 'i', 'ble'], 'visibility': ['vis', 'i', 'bil', 'i', 'ty'], 'visible': ['vis', 'i', 'ble'],
+            'invisible': ['in', 'vis', 'i', 'ble'], 'availability': ['a', 'vail', 'a', 'bil', 'i', 'ty'], 'available': ['a', 'vail', 'a', 'ble'],
+            'reliability': ['re', 'li', 'a', 'bil', 'i', 'ty'], 'reliable': ['re', 'li', 'a', 'ble'],
+            'probability': ['prob', 'a', 'bil', 'i', 'ty'], 'probable': ['prob', 'a', 'ble'], 'probably': ['prob', 'a', 'bly'],
+            'activity': ['ac', 'tiv', 'i', 'ty'], 'active': ['ac', 'tive'], 'university': ['u', 'ni', 'ver', 'si', 'ty'],
+            'universal': ['u', 'ni', 'ver', 'sal'], 'universe': ['u', 'ni', 'verse'], 'diversity': ['di', 'ver', 'si', 'ty'],
+            'diverse': ['di', 'verse'], 'opportunity': ['op', 'por', 'tu', 'ni', 'ty'], 'community': ['com', 'mu', 'ni', 'ty'],
+            'communicate': ['com', 'mu', 'ni', 'cate'], 'communication': ['com', 'mu', 'ni', 'ca', 'tion'],
+            'organization': ['or', 'gan', 'i', 'za', 'tion'], 'organize': ['or', 'gan', 'ize'],
+            'information': ['in', 'for', 'ma', 'tion'], 'international': ['in', 'ter', 'na', 'tion', 'al'],
+            'national': ['na', 'tion', 'al'], 'nation': ['na', 'tion'], 'nationality': ['na', 'tion', 'al', 'i', 'ty'],
+            'education': ['ed', 'u', 'ca', 'tion'], 'educational': ['ed', 'u', 'ca', 'tion', 'al'], 'educate': ['ed', 'u', 'cate'],
+            'situation': ['sit', 'u', 'a', 'tion'], 'situate': ['sit', 'u', 'ate'], 'graduate': ['grad', 'u', 'ate'],
+            'graduation': ['grad', 'u', 'a', 'tion'], 'evaluate': ['e', 'val', 'u', 'ate'], 'evaluation': ['e', 'val', 'u', 'a', 'tion'],
+            'valuable': ['val', 'u', 'a', 'ble'], 'invaluable': ['in', 'val', 'u', 'a', 'ble'], 'value': ['val', 'ue'],
+            'individual': ['in', 'di', 'vid', 'u', 'al'], 'intellectual': ['in', 'tel', 'lec', 'tu', 'al'],
+            'spiritual': ['spir', 'it', 'u', 'al'], 'spirit': ['spir', 'it'], 'actual': ['ac', 'tu', 'al'], 'actually': ['ac', 'tu', 'al', 'ly'],
+            'usual': ['u', 'su', 'al'], 'usually': ['u', 'su', 'al', 'ly'], 'unusual': ['un', 'u', 'su', 'al'],
+            'casual': ['cas', 'u', 'al'], 'visual': ['vis', 'u', 'al'], 'mutual': ['mu', 'tu', 'al'],
+            'gradual': ['grad', 'u', 'al'], 'gradually': ['grad', 'u', 'al', 'ly'], 'annual': ['an', 'nu', 'al'], 'annually': ['an', 'nu', 'al', 'ly'],
+            'manual': ['man', 'u', 'al'], 'equal': ['e', 'qual'], 'equally': ['e', 'qual', 'ly'], 'equality': ['e', 'qual', 'i', 'ty'],
+            'quality': ['qual', 'i', 'ty'], 'quantity': ['quan', 'ti', 'ty'], 'identity': ['i', 'den', 'ti', 'ty'],
+            'identify': ['i', 'den', 'ti', 'fy'], 'identification': ['i', 'den', 'ti', 'fi', 'ca', 'tion'],
+            'environment': ['en', 'vi', 'ron', 'ment'], 'environmental': ['en', 'vi', 'ron', 'men', 'tal'],
+            'government': ['gov', 'ern', 'ment'], 'development': ['de', 'vel', 'op', 'ment'], 'develop': ['de', 'vel', 'op'],
+            'management': ['man', 'age', 'ment'], 'manage': ['man', 'age'], 'manager': ['man', 'a', 'ger'],
+            'performance': ['per', 'for', 'mance'], 'perform': ['per', 'form'], 'important': ['im', 'por', 'tant'],
+            'importance': ['im', 'por', 'tance'], 'restaurant': ['res', 'tau', 'rant'], 'umbrella': ['um', 'brel', 'la'],
+            'beautiful': ['beau', 'ti', 'ful'], 'beauty': ['beau', 'ty'], 'believe': ['be', 'lieve'], 'afraid': ['a', 'fraid'],
+            'able': ['a', 'ble'], 'unable': ['un', 'a', 'ble'], 'enable': ['en', 'a', 'ble'], 'apple': ['ap', 'ple'],
+            'people': ['peo', 'ple'], 'example': ['ex', 'am', 'ple'], 'simple': ['sim', 'ple'], 'simply': ['sim', 'ply'],
+            'policy': ['pol', 'i', 'cy'], 'police': ['po', 'lice'], 'policeman': ['po', 'lice', 'man'],
+            'company': ['com', 'pa', 'ny'], 'accompany': ['ac', 'com', 'pa', 'ny'], 'century': ['cen', 'tu', 'ry'],
+            'energy': ['en', 'er', 'gy'], 'energetic': ['en', 'er', 'get', 'ic'], 'strategy': ['strat', 'e', 'gy'],
+            'strategic': ['stra', 'te', 'gic'], 'agency': ['a', 'gen', 'cy'], 'agent': ['a', 'gent'],
+            'emergency': ['e', 'mer', 'gen', 'cy'], 'currency': ['cur', 'ren', 'cy'], 'current': ['cur', 'rent'],
+            'currently': ['cur', 'rent', 'ly'], 'frequency': ['fre', 'quen', 'cy'], 'frequent': ['fre', 'quent'],
+            'frequently': ['fre', 'quent', 'ly'], 'pregnancy': ['preg', 'nan', 'cy'], 'pregnant': ['preg', 'nant'],
+            'tendency': ['ten', 'den', 'cy'], 'accuracy': ['ac', 'cu', 'ra', 'cy'], 'accurate': ['ac', 'cu', 'rate'],
+            'democracy': ['de', 'moc', 'ra', 'cy'], 'democratic': ['dem', 'o', 'crat', 'ic'],
+            'privacy': ['pri', 'va', 'cy'], 'private': ['pri', 'vate'], 'legacy': ['leg', 'a', 'cy'],
+            'literacy': ['lit', 'er', 'a', 'cy'], 'pharmacy': ['phar', 'ma', 'cy'], 'embassy': ['em', 'bas', 'sy'],
+            'jealousy': ['jeal', 'ous', 'y'], 'jealous': ['jeal', 'ous'], 'courtesy': ['cour', 'te', 'sy'],
+            'fantasy': ['fan', 'ta', 'sy'], 'controversy': ['con', 'tro', 'ver', 'sy'], 'controversial': ['con', 'tro', 'ver', 'sial'],
+            'inquisitive': ['in', 'quis', 'i', 'tive'], 'inquiring': ['in', 'quir', 'ing'], 'inquiry': ['in', 'quir', 'y'],
+            'inquire': ['in', 'quire'], 'require': ['re', 'quire'], 'requirement': ['re', 'quire', 'ment'],
+            'acquire': ['ac', 'quire'], 'admire': ['ad', 'mire'], 'inspire': ['in', 'spire'], 'inspiration': ['in', 'spi', 'ra', 'tion'],
+            'desire': ['de', 'sire'], 'retire': ['re', 'tire'], 'retirement': ['re', 'tire', 'ment'],
+            'entire': ['en', 'tire'], 'entirely': ['en', 'tire', 'ly'], 'empire': ['em', 'pire'], 'devour': ['de', 'vour'],
+            'flower': ['flow', 'er'], 'power': ['pow', 'er'], 'powerful': ['pow', 'er', 'ful'],
+            'tower': ['tow', 'er'], 'shower': ['show', 'er'], 'towel': ['tow', 'el'], 'vowel': ['vow', 'el'],
+            'drawer': ['draw', 'er'], 'drawing': ['draw', 'ing'], 'prayer': ['pray', 'er'], 'dryer': ['dry', 'er'],
+            'being': ['be', 'ing'], 'seeing': ['see', 'ing'], 'sightseeing': ['sight', 'see', 'ing'],
+            'cruel': ['cru', 'el'], 'fuel': ['fu', 'el'], 'jewel': ['jew', 'el'], 'jewelry': ['jew', 'el', 'ry'],
+            'genuine': ['gen', 'u', 'ine'], 'continue': ['con', 'tin', 'ue'], 'continuous': ['con', 'tin', 'u', 'ous'],
+            'continual': ['con', 'tin', 'u', 'al'], 'influence': ['in', 'flu', 'ence'], 'fluent': ['flu', 'ent'],
+            'fluid': ['flu', 'id'], 'ruin': ['ru', 'in'], 'suicide': ['su', 'i', 'cide'],
+            'tuition': ['tu', 'i', 'tion'], 'intuition': ['in', 'tu', 'i', 'tion'],
+            'persuade': ['per', 'suade'], 'dissuade': ['dis', 'suade'], 'persuasive': ['per', 'sua', 'sive'], 'persuasion': ['per', 'sua', 'sion'],
+            'courageous': ['cour', 'a', 'geous'], 'outrageous': ['out', 'ra', 'geous'], 'gorgeous': ['gor', 'geous'],
+            'opinion': ['o', 'pin', 'ion'], 'companion': ['com', 'pan', 'ion'], 'onion': ['on', 'ion'], 'union': ['un', 'ion'], 'reunion': ['re', 'un', 'ion'],
+            'familiar': ['fa', 'mil', 'iar'], 'peculiar': ['pe', 'cu', 'liar'], 'behavior': ['be', 'hav', 'ior'], 'savior': ['sav', 'ior'],
+            'civilian': ['ci', 'vil', 'ian'], 'italian': ['i', 'tal', 'ian'], 'australian': ['aus', 'tra', 'lian'], 'musician': ['mu', 'si', 'cian'],
+            'physician': ['phy', 'si', 'cian'], 'politician': ['pol', 'i', 'ti', 'cian'], 'technician': ['tech', 'ni', 'cian'], 'magician': ['ma', 'gi', 'cian'],
+            'wherever': ['wher', 'ev', 'er'], 'whenever': ['when', 'ev', 'er'], 'whatever': ['what', 'ev', 'er'], 'whoever': ['who', 'ev', 'er'],
+            'however': ['how', 'ev', 'er'], 'forever': ['for', 'ev', 'er'],
+            'aborigine': ['ab', 'o', 'rig', 'i', 'ne'], 'catastrophe': ['ca', 'tas', 'tro', 'phe'], 'apostrophe': ['a', 'pos', 'tro', 'phe'],
+            'recipe': ['rec', 'i', 'pe'], 'diabetes': ['di', 'a', 'be', 'tes'], 'coincidence': ['co', 'in', 'ci', 'dence'],
+            'ambiguity': ['am', 'bi', 'gu', 'i', 'ty'], 'ingenuity': ['in', 'ge', 'nu', 'i', 'ty'],
+            'recipient': ['re', 'cip', 'i', 'ent'], 'petroleum': ['pe', 'tro', 'le', 'um'],
+            'veterinarian': ['vet', 'er', 'i', 'nar', 'i', 'an'], 'modernization': ['mod', 'ern', 'i', 'za', 'tion'],
+            'familiarity': ['fa', 'mil', 'i', 'ar', 'i', 'ty'], 'companionship': ['com', 'pan', 'ion', 'ship'],
+            'rebellion': ['re', 'bel', 'lion'], 'pneumonia': ['pneu', 'mo', 'nia'],
+            'ingenious': ['in', 'gen', 'ious'], 'enthusiasm': ['en', 'thu', 'si', 'asm'], 'materialism': ['ma', 'te', 'ri', 'al', 'ism'],
+            'recovery': ['re', 'cov', 'er', 'y'], 'discovery': ['dis', 'cov', 'er', 'y'], 'delivery': ['de', 'liv', 'er', 'y'],
+            'elaborate': ['e', 'lab', 'o', 'rate'], 'auxiliary': ['aux', 'il', 'ia', 'ry'], 'initiative': ['i', 'ni', 'tia', 'tive']
+        };
+
+        const SYLLABLE_STRESS_OVERRIDES = {
+            'extraordinary': { pri: 1, sec: 3 },
+            'familiarity': { pri: 3, sec: 1 },
+            'veterinarian': { pri: 3, sec: 0 }
+        };
+
+        function splitEnglishSyllables(word) {
+            const clean = (word || '').trim();
+            if (!/^[a-zA-Z]{3,}$/.test(clean)) return [clean];
+            if (/^[A-Z0-9]{2,}$/.test(clean) || clean === 'Xmas') return [clean];
+            const w = clean.toLowerCase();
+
+            if (SYLLABLE_OVERRIDES[w]) {
+                const parts = [...SYLLABLE_OVERRIDES[w]];
+                if (clean[0] !== w[0]) parts[0] = clean[0] + parts[0].slice(1);
+                return parts;
+            }
+
+            const isVowelAt = (str, i) => {
+                const ch = str[i];
+                if (!'aeiouy'.includes(ch)) return false;
+                if (ch === 'u' && i > 0 && str[i - 1] === 'q') return false;
+                if (ch === 'u' && i > 0 && str[i - 1] === 'g' && i + 1 < str.length && 'aeiouy'.includes(str[i + 1])) {
+                    if (i >= 2 && str[i - 2] === 'n') return false;
+                    if (str.startsWith('gu') || str.includes('disguis') || str.includes('guaran')) return false;
+                }
+                if (ch === 'e' && i >= 2 && !'aeiouy'.includes(str[i - 1])) {
+                    const afterE = str.slice(i + 1);
+                    const beforeIncE = str.slice(0, i + 1);
+                    if (!beforeIncE.endsWith('the') && !/^(be|he|me|we|re|pre|de|se|co|bi|tri)$/.test(beforeIncE)) {
+                        if (/^(ment|ments|ful|fully|less|lessly|ness|ly)$/.test(afterE)) {
+                            return false;
+                        }
+                        if ('aeiouy'.includes(str[i - 2]) && /^(ty|ties|teen|teens|man|men|way|ways|ware|work|works|time|times|what|where|while|one|body|thing|long|spread|hand|see|sight|side|line|stone|wood|room|mate|mates|land|lands|back|board|book|books|box|holder|keeper|maker|making|owner|payer|player|saver|saving)$/.test(afterE)) {
+                            return false;
+                        }
+                    }
+                    if ('aeiouy'.includes(str[i - 2]) && /^(some|base|case|care|fare|fire|fore|before|here|there|where|more|none|life|wide|side|line|time|name|home|house|horse|eye|guide|space|place|face|use|hope|love|lone|live|like|make|take|wake|give|save|wave|move|note|vote|code|mode|role|rule|sale|scale|share|spare|square|stage|state|store|style|taste|trade|value|voice|waste|white|whole|wine|wire|wise|write|zone|nine|five|fine|mine|pine|vine|bone|cone|tone|stone|phone|throne|smoke|stroke|joke|choke|broke|spoke|shake|snake|brake|cake|fake|lake|rake|sake|stake|bake|date|fate|gate|hate|late|mate|plate|rate|skate|slate)$/.test(beforeIncE) && afterE.length >= 2 && !/^(ss|d|r|s|st|n|ing|ed|er|est|en|ish|y|al|ic|ous|ive|able|ible)$/.test(afterE)) {
+                        return false;
+                    }
+                }
+                if (ch === 'y') {
+                    if (i === 0) return false;
+                    const prevV = 'aeiou'.includes(str[i - 1]);
+                    const nextV = i + 1 < str.length && 'aeiou'.includes(str[i + 1]);
+                    if (!prevV && nextV) return false;
+                    if (prevV && nextV && ['ay', 'ey', 'oy', 'uy'].includes(str.slice(i - 1, i + 1))) return true;
+                }
+                return true;
+            };
+
+            const nuclei = [];
+            let i = 0;
+            while (i < w.length) {
+                if (!isVowelAt(w, i)) {
+                    i++;
+                    continue;
+                }
+                let start = i;
+                let end = i + 1;
+                while (end < w.length && isVowelAt(w, end)) {
+                    const pair = w.slice(end - 1, end + 1);
+                    const prevCh = end - 2 >= 0 ? w[end - 2] : '';
+                    const after = w.slice(end);
+                    let isDigraph = false;
+
+                    if (after === 'ing' || after === 'ings') {
+                        isDigraph = false;
+                    } else if (['ai', 'ay', 'ee', 'ei', 'ey', 'oa', 'oo', 'oi', 'oy', 'au', 'aw', 'eu', 'ew', 'ou', 'ow', 'uy'].includes(pair)) {
+                        isDigraph = true;
+                        if (pair === 'oo' && (w.startsWith('coop') || w.startsWith('coord'))) isDigraph = false;
+                    } else if (pair === 'ea') {
+                        isDigraph = true;
+                        if (w.startsWith('rea') && (w.startsWith('react') || w.startsWith('real'))) isDigraph = false;
+                        if (w.startsWith('crea') && !w.startsWith('creatu') && !w.startsWith('cream')) isDigraph = false;
+                        if (w.endsWith('ea') && !['sea', 'tea', 'pea', 'flea', 'plea'].includes(w)) isDigraph = false;
+                    } else if (pair === 'ie') {
+                        isDigraph = true;
+                        if (/^(r|st|t|nce|nt|ty)/.test(after) && !['c', 's', 't', 'x'].includes(prevCh)) {
+                            if (w.endsWith('ier') || w.endsWith('iest') || w.endsWith('iety') || w.endsWith('ience') || w.endsWith('ient')) {
+                                isDigraph = false;
+                            }
+                        }
+                    } else if (pair === 'io' || pair === 'ia' || pair === 'iu') {
+                        if (['c', 's', 't', 'g', 'x'].includes(prevCh) && /^(on|ons|onal|onally|al|als|ally|an|ans|ous|ously|us|um)/.test(after)) {
+                            isDigraph = true;
+                        } else {
+                            isDigraph = false;
+                        }
+                    } else if (pair === 'ua' || pair === 'uo' || pair === 'ui' || pair === 'ue') {
+                        if (pair === 'ue' && (end + 1 === w.length || w.endsWith('ues') || w.endsWith('ued'))) {
+                            isDigraph = true;
+                        } else if (pair === 'ui' && !w.endsWith('uid') && !w.endsWith('uin') && !w.includes('tuit')) {
+                            isDigraph = true;
+                        } else {
+                            isDigraph = false;
+                        }
+                    } else if (w.slice(start, end + 1) === 'eau' || w.slice(start, end + 1) === 'iou' || w.slice(start, end + 1) === 'eou') {
+                        isDigraph = true;
+                    }
+
+                    if (isDigraph) {
+                        end++;
+                    } else {
+                        break;
+                    }
+                }
+                nuclei.push({ start, end });
+                i = end;
+            }
+
+            if (nuclei.length > 1) {
+                const last = nuclei[nuclei.length - 1];
+                const prev = nuclei[nuclei.length - 2];
+                const tail = w.slice(last.start);
+
+                if (tail === 'e') {
+                    const beforeE = w.slice(prev.end, last.start);
+                    const isSyllabicLe = beforeE.length >= 2 && beforeE.endsWith('l') && !beforeE.endsWith('ll');
+                    const isSyllabicRe = beforeE.length >= 1 && beforeE.endsWith('r') && ['acre', 'massacre', 'mediocre'].includes(w);
+                    if (!isSyllabicLe && !isSyllabicRe) {
+                        nuclei.pop();
+                    }
+                } else if (tail === 'es' && last.end - last.start === 1) {
+                    const beforeEs = w.slice(prev.end, last.start);
+                    const isSyllabicLes = beforeEs.length >= 2 && beforeEs.endsWith('l') && !beforeEs.endsWith('ll');
+                    const isSibilantBeforeEs = /(s|z|x|ch|sh|c|g|j)$/.test(beforeEs);
+                    if (!isSyllabicLes && !isSibilantBeforeEs) {
+                        nuclei.pop();
+                    }
+                } else if (tail === 'ed' && last.end - last.start === 1) {
+                    const beforeEd = w.slice(prev.end, last.start);
+                    const isTdBeforeEd = /(t|d)$/.test(beforeEd);
+                    const isSpecialEd = ['naked', 'wicked', 'sacred', 'hatred', 'hundred', 'wretched', 'rugged', 'crooked', 'ragged'].includes(w);
+                    if (!isTdBeforeEd && !isSpecialEd) {
+                        nuclei.pop();
+                    }
+                }
+            }
+
+            if (nuclei.length <= 1) return [clean];
+
+            const VALID_ONSETS_2 = new Set([
+                'bl', 'br', 'cl', 'cr', 'dr', 'fl', 'fr', 'gl', 'gr', 'pl', 'pr',
+                'sc', 'sk', 'sl', 'sm', 'sn', 'sp', 'st', 'sw', 'tr', 'tw',
+                'ch', 'sh', 'th', 'ph', 'wh', 'qu'
+            ]);
+            const VALID_ONSETS_3 = new Set(['str', 'spr', 'scr', 'spl', 'thr', 'chr', 'phr', 'shr', 'squ']);
+
+            const splits = [];
+            for (let k = 0; k < nuclei.length - 1; k++) {
+                const n1 = nuclei[k];
+                const n2 = nuclei[k + 1];
+                const cStart = n1.end;
+                const cEnd = n2.start;
+                const cons = w.slice(cStart, cEnd);
+                const len = cons.length;
+
+                let splitPos = cStart;
+                if (len === 0) {
+                    splitPos = cStart;
+                } else if (len === 1) {
+                    if (cons === 'x' || (cons === 'w' && 'aeo'.includes(w[n1.end - 1]))) {
+                        splitPos = cEnd;
+                    } else {
+                        splitPos = cStart;
+                    }
+                } else if (len === 2) {
+                    if (k === nuclei.length - 2 && w.slice(n2.start) === 'e' && cons[1] === 'l' && cons[0] !== 'l') {
+                        splitPos = cons[0] === cons[1] ? cStart + 1 : cStart;
+                    } else if (cons[0] === cons[1]) {
+                        splitPos = cStart + 1;
+                    } else if (['ck', 'dg'].includes(cons) || (cons[0] === 'w' && 'aeo'.includes(w[n1.end - 1]))) {
+                        splitPos = (cons === 'ck' || cons === 'dg') ? cEnd : cStart + 1;
+                    } else if (['ch', 'sh', 'ph', 'th', 'wh', 'qu'].includes(cons)) {
+                        splitPos = cStart;
+                    } else if (VALID_ONSETS_2.has(cons)) {
+                        const prefix1 = w.slice(0, cStart);
+                        if (['a', 'be', 'de', 're', 'pre', 'pro', 'se', 'mi', 'hy', 'co', 'bi', 'tri', 'di', 'du'].includes(prefix1) ||
+                            (['b', 'c', 'd', 'f', 'g', 'p', 't', 'v'].includes(cons[0]) && ['r', 'l'].includes(cons[1]) && prefix1 !== 'pub' && prefix1 !== 'prob' && prefix1 !== 'sub' && prefix1 !== 'ob')) {
+                            splitPos = cStart;
+                        } else {
+                            splitPos = cStart + 1;
+                        }
+                    } else {
+                        splitPos = cStart + 1;
+                    }
+                } else {
+                    const suffixMatch = w.slice(cStart).match(/^([bcdfghjklmnpqrstvwxz]+?)(ment|ments|ness|less|ful|ship|hood|ward|wards|wise|ly|tion|sion)$/);
+                    if (suffixMatch) {
+                        splitPos = cStart + suffixMatch[1].length;
+                    } else if (cons.startsWith('ck') || cons.startsWith('tch') || cons.startsWith('dge')) {
+                        splitPos = cStart + (cons.startsWith('ck') ? 2 : 3);
+                    } else if (VALID_ONSETS_3.has(cons.slice(-3))) {
+                        splitPos = cEnd - 3;
+                    } else if (VALID_ONSETS_2.has(cons.slice(-2))) {
+                        splitPos = cEnd - 2;
+                    } else {
+                        splitPos = cEnd - 1;
+                    }
+                }
+                splits.push(splitPos);
+            }
+
+            const parts = [];
+            let prevPos = 0;
+            for (const sp of splits) {
+                parts.push(clean.slice(prevPos, sp));
+                prevPos = sp;
+            }
+            parts.push(clean.slice(prevPos));
+            return parts.filter(Boolean);
+        }
+
+        function getWordSyllables(word, kkStr = '') {
+            const clean = (word || '').trim();
+            if (!/^[a-zA-Z]{3,}$/.test(clean)) return null;
+            const parts = splitEnglishSyllables(clean);
+            if (!parts || parts.length < 2) return null;
+
+            const wLower = clean.toLowerCase();
+            if (SYLLABLE_STRESS_OVERRIDES[wLower]) {
+                return {
+                    parts,
+                    primaryIdx: SYLLABLE_STRESS_OVERRIDES[wLower].pri,
+                    secondaryIdx: SYLLABLE_STRESS_OVERRIDES[wLower].sec
+                };
+            }
+
+            const kkInfo = analyzeKkSyllables(kkStr, clean);
+            let primaryIdx = kkInfo.primaryIdx >= 0 ? Math.min(kkInfo.primaryIdx, parts.length - 1) : 0;
+            let secondaryIdx = kkInfo.secondaryIdx >= 0 ? Math.min(kkInfo.secondaryIdx, parts.length - 1) : -1;
+            if (secondaryIdx === primaryIdx) secondaryIdx = -1;
+
+            return { parts, primaryIdx, secondaryIdx };
+        }
+
+        function playWordAudioSlow(word, badgeEl = null) {
+            if (!word) return;
+            unlockMobileAudio();
+            if (badgeEl && badgeEl.classList) {
+                badgeEl.classList.add('ring-2', 'ring-blue-400');
+                setTimeout(() => {
+                    try { badgeEl.classList.remove('ring-2', 'ring-blue-400'); } catch(e) {}
+                }, 850);
+            }
+            const prevRate = globalSpeechRate;
+            globalSpeechRate = 0.72;
+            let restored = false;
+            const restore = () => {
+                if (restored) return;
+                restored = true;
+                globalSpeechRate = prevRate;
+            };
+            setTimeout(restore, 3200);
+            playWordAccent(word, getPreferredVoiceAccent() === 'uk' ? 'uk' : 'us', restore);
+        }
+
+        function renderSyllablesBadgeHtml(word, kkStr = '', size = 'sm') {
+            const info = getWordSyllables(word, kkStr);
+            if (!info || !info.parts || info.parts.length < 2) return '';
+            const padClass = size === 'md'
+                ? 'px-2.5 py-0.5 text-xs sm:text-sm'
+                : (size === 'xs' ? 'px-2 py-0.5 text-[11px] sm:text-xs' : 'px-2.5 py-0.5 text-xs sm:text-[13px]');
+            const inner = info.parts.map((part, idx) => {
+                if (idx === info.primaryIdx) return `<span class="syl-pri" title="主重音音節">${esc(part)}</span>`;
+                if (idx === info.secondaryIdx) return `<span class="syl-sec" title="次重音音節">${esc(part)}</span>`;
+                return `<span>${esc(part)}</span>`;
+            }).join('<span class="syl-dot">·</span>');
+            const safeWord = esc(word).replace(/'/g, "\\'");
+            return `<span class="syllable-badge ${padClass}" title="音節拆解（藍底線為主重音 · 點擊以 0.72x 慢速清晰跟讀）" onclick="event.stopPropagation(); playWordAudioSlow('${safeWord}', this)">${inner}</span>`;
+        }
+
+        // 雙音標動態渲染與顯示 (美式 KK / 英式 Oxford IPA + 智慧音節拆解)
         function updateCardPhonetics(wordObj) {
             const w = wordObj || currentWord || {};
             const kk = w.kk || '';
             const cleanEn = (w.en || '').trim().toLowerCase();
             const uk = w.uk || (window.UK_PHONETICS_MANIFEST && window.UK_PHONETICS_MANIFEST[cleanEn]) || '';
+
+            // 音節拆解徽章 (單音節字與片語自動隱藏，背面與標題同行零額外高度)
+            const sylFrontEl = document.getElementById('card-syllables-front');
+            const sylBackEl = document.getElementById('card-syllables-back');
+            const sylFrontHtml = renderSyllablesBadgeHtml(w.en, kk, 'sm');
+            const sylBackHtml = renderSyllablesBadgeHtml(w.en, kk, 'xs');
+            if (sylFrontEl) {
+                sylFrontEl.innerHTML = sylFrontHtml;
+                sylFrontEl.style.display = sylFrontHtml ? 'flex' : 'none';
+            }
+            if (sylBackEl) {
+                sylBackEl.innerHTML = sylBackHtml;
+                sylBackEl.style.display = sylBackHtml ? 'inline-flex' : 'none';
+            }
 
             // Front elements
             const kkEl = document.getElementById('card-kk');
@@ -10686,7 +11285,10 @@
                 <!-- 單字標題與發音列 (全寬展示防英文切斷斷字，發音按鈕靈活兩端對齊) -->
                 <div class="space-y-2 mb-2">
                     <div class="w-full">
-                        <h2 class="text-2xl sm:text-3xl font-extrabold text-[#1D1D1F] tracking-tight break-normal overflow-wrap-normal select-all">${esc(w.en)}</h2>
+                        <div class="flex items-center gap-2.5 flex-wrap">
+                            <h2 class="text-2xl sm:text-3xl font-extrabold text-[#1D1D1F] tracking-tight break-normal overflow-wrap-normal select-all">${esc(w.en)}</h2>
+                            ${renderSyllablesBadgeHtml(w.en, w.kk, 'md')}
+                        </div>
                         ${relatedBaseHtml}
                     </div>
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
@@ -10753,16 +11355,8 @@
                 unlockMobileAudio();
                 playWordAccent(w.en, 'uk');
             });
-            document.getElementById('btn-detail-audio-slow')?.addEventListener('click', () => {
-                unlockMobileAudio();
-                if ('speechSynthesis' in window) {
-                    const u = new SpeechSynthesisUtterance(w.en);
-                    u.lang = getPreferredVoiceAccent() === 'uk' ? 'en-GB' : 'en-US';
-                    u.rate = 0.75;
-                    window.speechSynthesis.speak(u);
-                } else {
-                    playWordAccent(w.en, getPreferredVoiceAccent());
-                }
+            document.getElementById('btn-detail-audio-slow')?.addEventListener('click', (e) => {
+                playWordAudioSlow(w.en, e.currentTarget);
             });
             document.getElementById('btn-detail-example-audio')?.addEventListener('click', (e) => {
                 e.preventDefault();
@@ -15574,6 +16168,7 @@
                                     <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight mb-1">
                                         ${esc(cur.en)}
                                     </h3>
+                                    ${renderSyllablesBadgeHtml(cur.en, cur.kk, 'sm')}
                                     <div class="flex items-center gap-2 mt-1">
                                         ${cur.kk ? `<span class="text-xs font-mono text-slate-500 bg-slate-100 px-2 py-0.5 rounded">${esc(cur.kk)}</span>` : ''}
                                         ${cur.uk ? `<span class="text-[11px] font-mono text-slate-400 bg-slate-50 px-1.5 py-0.5 rounded">UK ${esc(cur.uk)}</span>` : ''}
@@ -15596,8 +16191,9 @@
                             <!-- 背面 -->
                             <div class="sandbox-card-back select-none text-left">
                                 <div class="flex items-center justify-between w-full shrink-0">
-                                    <div class="flex items-center gap-2">
+                                    <div class="flex items-center gap-2 flex-wrap">
                                         <span class="text-base font-extrabold text-slate-900 dark:text-white tracking-wide">${esc(cur.en)}</span>
+                                        ${renderSyllablesBadgeHtml(cur.en, cur.kk, 'xs')}
                                         ${cur.pos ? `<span class="text-[11px] font-mono font-bold text-purple-700 dark:text-purple-300 bg-purple-50 dark:bg-purple-950/60 px-2 py-0.5 rounded-md border border-purple-200/70 dark:border-purple-500/40">${esc(cur.pos)}</span>` : ''}
                                     </div>
                                     <button onclick="event.stopPropagation(); playAudio('${safeEn}')" class="text-purple-600 dark:text-purple-300 hover:text-purple-800 dark:hover:text-white p-1 rounded-full hover:bg-purple-100 dark:hover:bg-purple-900/40 transition cursor-pointer" title="發音">

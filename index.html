@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261103V1';
+        const APP_BUILD_VERSION = '20261103V2';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -63,20 +63,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261103V1"></script>
-    <script src="toeic_data.js?v=20261103V1"></script>
-    <script src="jh_data.js?v=20261103V1"></script>
-    <script src="listening_data.js?v=20261103V1"></script>
-    <script src="listening_words_data.js?v=20261103V1"></script>
-    <script src="uk_phonetics_manifest.js?v=20261103V1"></script>
-    <script src="words_audio_manifest.js?v=20261103V1"></script>
-    <script src="examples_audio_manifest.js?v=20261103V1"></script>
-    <script src="zh_audio_manifest.js?v=20261103V1"></script>
-    <script src="collocations_audio_manifest.js?v=20261103V1"></script>
-    <script src="syn_ant_data.js?v=20261103V1"></script>
-    <script src="synonyms_unit8_data.js?v=20261103V1"></script>
-    <script src="examples_unit9_data.js?v=20261103V1"></script>
-    <script src="game_whack.js?v=20261103V1"></script>
+    <script src="words_data.js?v=20261103V2"></script>
+    <script src="toeic_data.js?v=20261103V2"></script>
+    <script src="jh_data.js?v=20261103V2"></script>
+    <script src="listening_data.js?v=20261103V2"></script>
+    <script src="listening_words_data.js?v=20261103V2"></script>
+    <script src="uk_phonetics_manifest.js?v=20261103V2"></script>
+    <script src="words_audio_manifest.js?v=20261103V2"></script>
+    <script src="examples_audio_manifest.js?v=20261103V2"></script>
+    <script src="zh_audio_manifest.js?v=20261103V2"></script>
+    <script src="collocations_audio_manifest.js?v=20261103V2"></script>
+    <script src="syn_ant_data.js?v=20261103V2"></script>
+    <script src="synonyms_unit8_data.js?v=20261103V2"></script>
+    <script src="examples_unit9_data.js?v=20261103V2"></script>
+    <script src="game_whack.js?v=20261103V2"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -1856,6 +1856,14 @@
         }
         html.theme-paper .syllable-badge .syl-dot {
             color: #C4BBA8 !important;
+        }
+        html.theme-paper .syllable-phonics-card {
+            background: #EFECE4 !important;
+            border-color: #DFD8C8 !important;
+        }
+        html.theme-paper .syllable-phonics-item {
+            background-color: #F7F5F0 !important;
+            border-color: #DFD8C8 !important;
         }
         html.dark .syllable-badge {
             background-color: rgba(255, 255, 255, 0.055) !important;
@@ -8014,6 +8022,163 @@
             return `<span class="syllable-badge ${padClass}" title="音節拆解（藍底線為主重音 · 點擊以 0.72x 慢速清晰跟讀）" onclick="event.stopPropagation(); playWordAudioSlow('${safeWord}', this)">${inner}</span>`;
         }
 
+        // 切分美式 KK 音標至各音節對應片段
+        function splitKkIntoSyllables(kkStr, targetCount) {
+            if (!kkStr || targetCount <= 1) return null;
+            const m = kkStr.match(/\[([^\],;\/]+)/);
+            const raw = m ? m[1].trim() : kkStr.replace(/[\[\]]/g, '').trim();
+            if (!raw) return null;
+
+            const vowelRegex = /aɪɚ|aʊɚ|aɪ|aʊ|ɔɪ|i|ɪ|e|ɛ|æ|ɑ|ɔ|o|ʊ|u|ʌ|ə|ɝ|ɚ/g;
+            const matches = [];
+            let match;
+            while ((match = vowelRegex.exec(raw)) !== null) {
+                matches.push({ start: match.index, end: match.index + match[0].length, vowel: match[0] });
+            }
+
+            if (matches.length !== targetCount) return null;
+
+            const splits = [];
+            for (let k = 0; k < matches.length - 1; k++) {
+                const v1End = matches[k].end;
+                const v2Start = matches[k + 1].start;
+                const between = raw.slice(v1End, v2Start);
+                let splitIdx = v1End;
+                const stressIdx = between.search(/[ˋˈ'͵ˌ]/);
+                if (stressIdx !== -1) {
+                    splitIdx = v1End + stressIdx;
+                } else if (between.length <= 1) {
+                    splitIdx = v1End;
+                } else {
+                    if (between.length === 2 && /^(bl|br|cl|cr|dr|fl|fr|gl|gr|pl|pr|tr|tw|ch|sh|th|ph|wh)$/.test(between)) {
+                        splitIdx = v1End;
+                    } else {
+                        splitIdx = v1End + 1;
+                    }
+                }
+                splits.push(splitIdx);
+            }
+            const chunks = [];
+            let prev = 0;
+            for (const s of splits) {
+                chunks.push(raw.slice(prev, s).trim());
+                prev = s;
+            }
+            chunks.push(raw.slice(prev).trim());
+            return chunks;
+        }
+
+        // 切分英式 Oxford 音標至各音節對應片段
+        function splitUkIntoSyllables(ukStr, targetCount) {
+            if (!ukStr || targetCount <= 1) return null;
+            const clean = ukStr.replace(/^\/|\/$/g, '').trim();
+            if (!clean) return null;
+
+            const vowelRegex = /(?:eɪ|aɪ|ɔɪ|aʊ|əʊ|oʊ|ɪə|eə|ʊə|ɑː|ɔː|ɜː|iː|uː|æ|e|ɪ|ɒ|ʌ|ʊ|ə)/g;
+            const matches = [];
+            let match;
+            while ((match = vowelRegex.exec(clean)) !== null) {
+                matches.push({ start: match.index, end: match.index + match[0].length, vowel: match[0] });
+            }
+            if (matches.length !== targetCount) return null;
+
+            const splits = [];
+            for (let k = 0; k < matches.length - 1; k++) {
+                const v1End = matches[k].end;
+                const v2Start = matches[k + 1].start;
+                const between = clean.slice(v1End, v2Start);
+                let splitIdx = v1End;
+                const stressIdx = between.search(/[ˈ'ˌ]/);
+                if (stressIdx !== -1) {
+                    splitIdx = v1End + stressIdx;
+                } else if (between.length <= 1) {
+                    splitIdx = v1End;
+                } else {
+                    if (between.length === 2 && /^(bl|br|cl|cr|dr|fl|fr|gl|gr|pl|pr|tr|tw|ch|sh|th|ph|wh)$/.test(between)) {
+                        splitIdx = v1End;
+                    } else {
+                        splitIdx = v1End + 1;
+                    }
+                }
+                splits.push(splitIdx);
+            }
+            const chunks = [];
+            let prev = 0;
+            for (const s of splits) {
+                chunks.push(clean.slice(prev, s).trim());
+                prev = s;
+            }
+            chunks.push(clean.slice(prev).trim());
+            return chunks;
+        }
+
+        // 單字詳解卡專屬：音節與字音結構拆解對照模組 (方案 A)
+        function renderSyllablesPhoneticsCardHtml(w) {
+            if (!w || !w.en) return '';
+            const { kk, uk } = getWordPhonetics(w);
+            const sylInfo = getWordSyllables(w.en, kk);
+            if (!sylInfo || !sylInfo.parts || sylInfo.parts.length < 2) return '';
+
+            const parts = sylInfo.parts;
+            const count = parts.length;
+            const kkChunks = splitKkIntoSyllables(kk, count);
+            const ukChunks = splitUkIntoSyllables(uk, count);
+
+            const safeWord = esc(w.en).replace(/'/g, "\\'");
+
+            let out = `
+                <div class="syllable-phonics-card bg-gradient-to-br from-indigo-50/60 via-blue-50/40 to-slate-50/60 dark:from-[#131D31] dark:via-[#152238] dark:to-[#111A2B] p-3.5 rounded-2xl border border-indigo-100/80 dark:border-indigo-900/50 shadow-2xs">
+                    <div class="flex items-center justify-between text-xs font-bold text-indigo-950 dark:text-indigo-200 mb-2.5">
+                        <div class="flex items-center gap-1.5">
+                            <span>🔤</span><span>音節與字音結構拆解 (Syllable & Phonics Breakdown)</span>
+                        </div>
+                        <button type="button" class="text-[10px] text-indigo-600 dark:text-indigo-400 hover:underline cursor-pointer flex items-center gap-1" onclick="playWordAudioSlow('${safeWord}', this)">
+                            <span>🐢 慢速整字跟讀</span>
+                        </button>
+                    </div>
+                    <div class="space-y-1.5">
+            `;
+
+            parts.forEach((part, idx) => {
+                const isPri = idx === sylInfo.primaryIdx;
+                const isSec = idx === sylInfo.secondaryIdx;
+                const kkSub = kkChunks && kkChunks[idx] ? `[${kkChunks[idx]}]` : '';
+                const ukSub = ukChunks && ukChunks[idx] ? `/${ukChunks[idx]}/` : '';
+
+                const stressBadge = isPri
+                    ? '<span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-950/80 dark:text-blue-300 border border-blue-200/80 dark:border-blue-700/60 shadow-2xs">主重音所在</span>'
+                    : (isSec
+                        ? '<span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-indigo-100 text-indigo-700 dark:bg-indigo-950/80 dark:text-indigo-300 border border-indigo-200/80 dark:border-indigo-700/60 shadow-2xs">帶次重音</span>'
+                        : '<span class="text-[10px] text-slate-400 dark:text-slate-500 font-medium px-1.5">弱讀音節</span>');
+
+                const activeBorder = isPri
+                    ? 'border-blue-300/90 dark:border-blue-600/60 bg-white/95 dark:bg-[#18263E]'
+                    : (isSec
+                        ? 'border-indigo-200/80 dark:border-indigo-800/50 bg-white/90 dark:bg-[#162238]'
+                        : 'border-slate-200/70 dark:border-slate-700/50 bg-white/80 dark:bg-[#141F32]');
+
+                out += `
+                    <div class="syllable-phonics-item py-2 px-3 rounded-xl border ${activeBorder} shadow-2xs flex items-center justify-between gap-2 flex-wrap transition-all">
+                        <div class="flex items-center gap-2.5">
+                            <span class="text-[11px] font-mono font-bold text-slate-400 dark:text-slate-500 w-3 text-center">${idx + 1}</span>
+                            <span class="font-mono text-base font-extrabold tracking-wide ${isPri ? 'text-[#0071E3] dark:text-[#58A6FF]' : 'text-slate-800 dark:text-slate-100'}">${esc(part)}</span>
+                            ${stressBadge}
+                        </div>
+                        <div class="flex items-center gap-1.5 flex-wrap ml-auto">
+                            ${kkSub ? `<span class="inline-flex items-center gap-1 font-mono text-xs px-2 py-0.5 rounded-md bg-blue-50/90 text-blue-700 border border-blue-200/60 dark:bg-blue-950/50 dark:text-blue-300 dark:border-blue-800/50 font-normal"><span class="text-[9px] font-sans font-bold text-blue-500 dark:text-blue-400">美</span><span>${esc(kkSub)}</span></span>` : ''}
+                            ${ukSub ? `<span class="inline-flex items-center gap-1 font-mono text-xs px-2 py-0.5 rounded-md bg-purple-50/90 text-purple-700 border border-purple-200/60 dark:bg-purple-950/50 dark:text-purple-300 dark:border-purple-800/50 font-normal"><span class="text-[9px] font-sans font-bold text-purple-500 dark:text-purple-400">英</span><span>${esc(ukSub)}</span></span>` : ''}
+                        </div>
+                    </div>
+                `;
+            });
+
+            out += `
+                    </div>
+                </div>
+            `;
+            return out;
+        }
+
         // 雙音標動態渲染與顯示 (美式 KK / 英式 Oxford IPA + 智慧音節拆解)
         function updateCardPhonetics(wordObj) {
             const w = wordObj || currentWord || {};
@@ -11325,6 +11490,9 @@
                         </div>
                     `}
                 </div>
+
+                <!-- 音節與字音結構拆解 (方案 A：字音對應，掌握重音與發音音素) -->
+                ${renderSyllablesPhoneticsCardHtml(w)}
 
                 <!-- 詞形變化 (動詞三態 / 形容詞比較級 / 名詞複數) -->
                 ${formsHtml}

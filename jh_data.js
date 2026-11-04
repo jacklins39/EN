@@ -1664,7 +1664,7 @@ const jhWordsDB = [
         "en": "blood",
         "kk": "[blʌd]",
         "uk": "/blʌd/",
-        "zh": "n. 血、血液、出身、血統；v. 使取得初次經驗、用獵物的血塗（新手的）臉、讓（獵狗）第一次嘗血",
+        "zh": "n. 血、血液、出身、血統；v. 使初次體驗、抽血",
         "unit": 17,
         "example": "Wash the red blood off your hand.",
         "exampleZh": "把你手上的鮮血洗掉。"
@@ -5744,7 +5744,7 @@ const jhWordsDB = [
         "en": "express",
         "kk": "[ɪkˋsprɛs]",
         "uk": "/ɪkˈspres/",
-        "zh": "vt. 表達、表露、表現、體現；n. 快車、快遞、初速大的獵槍、專使；adj. 快速的、快遞的、特快的、明確的；adv. 用快遞寄送",
+        "zh": "vt. 表達、表露、表現、體現；n. 快車、快遞、專使；adj. 快速的、快遞的、特快的、明確的；adv. 用快遞寄送",
         "unit": 17,
         "example": "Words cannot express how happy I feel.",
         "exampleZh": "言語無法表達我內心有多快樂。"

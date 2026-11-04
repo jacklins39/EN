@@ -4395,7 +4395,7 @@ const toeicWordsDB = [
         "en": "blood",
         "kk": "[blʌd]",
         "uk": "/blʌd/",
-        "zh": "n. 血、血液、出身、血統；v. 使取得初次經驗、用獵物的血塗（新手的）臉、讓（獵狗）第一次嘗血",
+        "zh": "n. 血、血液、出身、血統；v. 使初次體驗、抽血",
         "unit": 11,
         "example": "The wound was oozing blood.",
         "exampleZh": "傷口正在滲血。"
@@ -12165,7 +12165,7 @@ const toeicWordsDB = [
         "en": "express",
         "kk": "[ɪkˋsprɛs]",
         "uk": "/ɪkˈspres/",
-        "zh": "vt. 表達、陳述、表露、表現；n. 快遞、快運、快車、初速大的獵槍；adj. 快遞的、特快的、明確的、特意的；adv. 用快遞寄送",
+        "zh": "vt. 表達、陳述、表露、表現；n. 快遞、快運、快車；adj. 快遞的、特快的、明確的、特意的；adv. 用快遞寄送",
         "unit": 12,
         "example": "Words cannot express how pleased I am.",
         "exampleZh": "言語無法表達我的愉快心情。"

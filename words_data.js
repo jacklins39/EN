@@ -3284,7 +3284,7 @@ const externalVocabularyDB = [
         "en": "blood",
         "kk": "[blʌd]",
         "uk": "/blʌd/",
-        "zh": "n. 血液、血統、血、出身；v. 使取得初次經驗、用獵物的血塗（新手的）臉、讓（獵狗）第一次嘗血",
+        "zh": "n. 血液、血統、血、出身；v. 使初次體驗、抽血",
         "unit": 1,
         "example": "Wash the red blood off your hand.",
         "exampleZh": "把你手上的鮮血洗掉。"
@@ -4124,7 +4124,7 @@ const externalVocabularyDB = [
         "en": "cub",
         "kk": "[kʌb]",
         "uk": "/kʌb/",
-        "zh": "n. 幼鯨、牛棚、幼獸、毛頭小夥子；v. 產仔、生幼獸、獵幼狐",
+        "zh": "n. 幼獸（熊、獅、虎等幼崽）、幼童軍、菜鳥；v. 產幼獸",
         "unit": 1,
         "example": "The little bear cub is very cute.",
         "exampleZh": "那隻小熊非常可愛。"
@@ -15424,7 +15424,7 @@ const externalVocabularyDB = [
         "en": "express",
         "kk": "[ɪkˋsprɛs]",
         "uk": "/ɪkˈspres/",
-        "zh": "vt. 表達、表露、表現、體現；n. 快車、快遞、初速大的獵槍、專使；adj. 快速的、快遞的、特快的、明確的；adv. 用快遞寄送",
+        "zh": "vt. 表達、表露、表現、體現；n. 快車、快遞、專使；adj. 快速的、快遞的、特快的、明確的；adv. 用快遞寄送",
         "unit": 2,
         "example": "Words cannot express how happy I feel.",
         "exampleZh": "言語無法表達我內心有多快樂。"
@@ -27814,7 +27814,7 @@ const externalVocabularyDB = [
         "en": "kangaroo",
         "kk": "[͵kæŋɡɚˋu]",
         "uk": "/ˌkæŋɡəˈruː/",
-        "zh": "n. 袋鼠、大袋鼠、袋鼠肉；v. 因離合控制不當而前移、使（汽車）突然猛地短距離前移、對嬰兒進行袋鼠式護理、捕獵袋鼠",
+        "zh": "n. 袋鼠、袋鼠肉；v. （車輛）突然顛簸前進",
         "unit": 3,
         "example": "The kangaroo is indigenous to Australia.",
         "exampleZh": "袋鼠原產於澳大利亞。"
@@ -49064,7 +49064,7 @@ const externalVocabularyDB = [
         "en": "hound",
         "kk": "[haʊnd]",
         "uk": "/haʊnd/",
-        "zh": "n. 卑劣的人、獵犬、卑鄙的人；vt. 獵犬、糾纏、煩擾、追獵",
+        "zh": "n. 獵犬、卑劣之徒；vt. 追獵、糾纏、追逼",
         "unit": 5,
         "example": "This hound was one of his beasts.",
         "exampleZh": "這隻獵犬是他養的牲畜之一。"
@@ -61654,7 +61654,7 @@ const externalVocabularyDB = [
         "en": "mute",
         "kk": "[mjut]",
         "uk": "/mjuːt/",
-        "zh": "adj. 緘默的、沉默的、啞的、不會說話的；n. 弱音器、啞巴、一群獵狗、啞奴；vt. 消音、減音、減弱、緩和",
+        "zh": "adj. 緘默的、沉默的、啞的、不會說話的；n. 弱音器、啞巴；vt. 消音、減音、減弱、緩和",
         "unit": 7,
         "example": "He was mute, distant, and indifferent.",
         "exampleZh": "他緘默無言，對人疏遠而且冷漠。"
@@ -62274,7 +62274,7 @@ const externalVocabularyDB = [
         "en": "poacher",
         "kk": "[ˋpotʃɚ]",
         "uk": "/ˈpəʊtʃə(r)/",
-        "zh": "n. 煮蛋用的鍋、蒸鍋、偷獵者、盜獵者",
+        "zh": "n. 偷獵者、盜獵者、荷包蛋鍋",
         "unit": 7,
         "example": "Tips may be phoned anonymously to1-800-POACHER.",
         "exampleZh": "舉報可以匿名打電話1-800-POACHER。"

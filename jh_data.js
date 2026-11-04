@@ -13924,7 +13924,7 @@ const jhWordsDB = [
         "en": "rice",
         "kk": "[raɪs]",
         "uk": "/raɪs/",
-        "zh": "vt. 把……搗成米糊狀、把（熟馬鈴薯等）壓（或擦）成米粒狀；n. 米、稻、水稻、大米",
+        "zh": "n. 米、稻、水稻、大米；vt. 把……搗成米糊狀、把（熟馬鈴薯等）壓（或擦）成米粒狀",
         "unit": 18,
         "example": "We eat rice every single day.",
         "exampleZh": "我們每天都吃米飯。"
@@ -15014,7 +15014,7 @@ const jhWordsDB = [
         "en": "shorts",
         "kk": "[ʃɔrts]",
         "uk": "/ʃɔːts/",
-        "zh": "v. 短路；n. 短褲、男內褲、短片、細麩粉",
+        "zh": "n. 短褲、男內褲、短片、細麩粉；v. 短路",
         "unit": 18,
         "example": "He wears blue shorts in summer.",
         "exampleZh": "他夏天穿著藍色短褲。"
@@ -15754,7 +15754,7 @@ const jhWordsDB = [
         "en": "something",
         "kk": "[ˋsʌmθɪŋ]",
         "uk": "/ˈsʌmθɪŋ/",
-        "zh": "adv. 稍微、有點、很、非常；pron. 某事、某物、……或諸如此類的東西、……什麼的",
+        "zh": "pron. 某事、某物、……或諸如此類的東西、……什麼的；adv. 稍微、有點、很、非常",
         "unit": 18,
         "example": "It tastes something like melon.",
         "exampleZh": "嘗起來有點像甜瓜。"
@@ -16594,7 +16594,7 @@ const jhWordsDB = [
         "en": "supply",
         "kk": "[səpˋlaɪ]",
         "uk": "/səˈplaɪ/",
-        "zh": "v. 供應、提供、供給；n. 供應、補給品、存貨",
+        "zh": "n. 供應、補給品、存貨；v. 供應、提供、供給",
         "unit": 18,
         "example": "They supply fresh water to us.",
         "exampleZh": "他們向我們提供新鮮的水。"
@@ -17404,7 +17404,7 @@ const jhWordsDB = [
         "en": "ticket",
         "kk": "[ˋtɪkət]",
         "uk": "/ˈtɪkɪt/",
-        "zh": "v. 票、售票、給（違章停車、超速行駛的人）開罰單、貼標籤於；n. 票、入場券、通知單",
+        "zh": "n. 票、入場券、通知單；v. 票、售票、給（違章停車、超速行駛的人）開罰單、貼標籤於",
         "unit": 18,
         "example": "You can have my ticket.",
         "exampleZh": "你可以拿走我的票。"
@@ -17494,7 +17494,7 @@ const jhWordsDB = [
         "en": "title",
         "kk": "[ˋtaɪtəl]",
         "uk": "/ˈtaɪt(ə)l/",
-        "zh": "vt. 標題、加標題、定題目、賦予頭銜；adj. 與（電影、戲劇等）同名的、冠軍的；n. 頭銜、名稱、標題、一種",
+        "zh": "n. 頭銜、名稱、標題、一種；vt. 標題、加標題、定題目、賦予頭銜；adj. 與（電影、戲劇等）同名的、冠軍的",
         "unit": 18,
         "example": "Write your title on this page.",
         "exampleZh": "把你的標題寫在這一頁上。"
@@ -17874,7 +17874,7 @@ const jhWordsDB = [
         "en": "tree",
         "kk": "[tri]",
         "uk": "/triː/",
-        "zh": "vt. 把（動物）趕上樹、使陷入困境；vi. 爬上樹、逃上樹；n. 樹、樹狀物、樹狀圖、樹形結構",
+        "zh": "n. 樹、樹狀物、樹狀圖、樹形結構；vt. 把（動物）趕上樹、使陷入困境；vi. 爬上樹、逃上樹",
         "unit": 18,
         "example": "Let's rest under yonder tree.",
         "exampleZh": "我們在那棵樹下休息吧。"

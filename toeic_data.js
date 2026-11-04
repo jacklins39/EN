@@ -19325,7 +19325,7 @@ const toeicWordsDB = [
         "en": "major",
         "kk": "[ˋmedʒɚ]",
         "uk": "/ˈmeɪdʒə(r)/",
-        "zh": "n. 主修科目、專業、陸軍少校、空軍少校；vi. 主修、專攻；adj. 主要的、一流的、重大的、嚴重的",
+        "zh": "adj. 主要的、一流的、重大的、嚴重的；n. 主修科目、專業、陸軍少校、空軍少校；vi. 主修、專攻",
         "unit": 12,
         "example": "Rotterdam is a major port.",
         "exampleZh": "鹿特丹是一個重要的港口城市。"
@@ -22595,7 +22595,7 @@ const toeicWordsDB = [
         "en": "prescription",
         "kk": "[prəˋskrɪpʃən]",
         "uk": "/prɪˈskrɪpʃn/",
-        "zh": "adj. 憑處方方可購買的；n. 命令、指示、處方、藥方",
+        "zh": "n. 命令、指示、處方、藥方；adj. 憑處方方可購買的",
         "unit": 13,
         "example": "Nicola got her prescription for strep.",
         "exampleZh": "妮古拉拿了治療鏈球菌性咽喉炎的處方藥。"
@@ -24175,7 +24175,7 @@ const toeicWordsDB = [
         "en": "reference",
         "kk": "[ˋrɛfɚəns]",
         "uk": "/ˈrefrəns/",
-        "zh": "adj. 參考的、用於查閱的、文獻索引的、參照的；v. 列出……的參考書目、提及、提到、引用；n. 參考文獻、談到、參考",
+        "zh": "n. 參考文獻、談到、參考；adj. 參考的、用於查閱的、文獻索引的、參照的；v. 列出……的參考書目、提及、提到、引用",
         "unit": 13,
         "example": "The grid reference is C8.",
         "exampleZh": "地圖上的座標方格數字為C8。"

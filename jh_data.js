@@ -1934,7 +1934,7 @@ const jhWordsDB = [
         "en": "brave",
         "kk": "[brev]",
         "uk": "/breɪv/",
-        "zh": "adj. 勇敢的、無畏的、非常好的、華麗的；vt. 勇敢面對；n. 勇敢的人、印第安武士",
+        "zh": "adj. 勇敢的、無畏的、非常好的、華麗的；vt. 勇敢面對；n. 勇敢的人",
         "unit": 17,
         "example": "The boy was very brave today.",
         "exampleZh": "那個男孩今天非常勇敢。"
@@ -7054,7 +7054,7 @@ const jhWordsDB = [
         "en": "glad",
         "kk": "[ɡlæd]",
         "uk": "/ɡlæd/",
-        "zh": "adj. 高興的、感激的、樂意的、非常願意的；v. 取悅、使高興；n. 唐菖蒲屬植物、唐菖蒲",
+        "zh": "adj. 高興的、感激的、樂意的、非常願意的；v. 取悅、使高興",
         "unit": 17,
         "example": "I'm glad you came along.",
         "exampleZh": "我很高興你能來。"
@@ -7744,7 +7744,7 @@ const jhWordsDB = [
         "en": "heavy",
         "kk": "[ˋhɛvi]",
         "uk": "/ˈhevi/",
-        "zh": "adj. 重的、沉的、大量的、嚴重的；n. 保鏢、打手、反派、重要人物；adv. 濃濃地、沉重地、使不安、使擔憂",
+        "zh": "adj. 重的、沉的、大量的、嚴重的；n. 反派、重要人物；adv. 濃濃地、沉重地、使不安、使擔憂",
         "unit": 17,
         "example": "This big box is too heavy for me.",
         "exampleZh": "這個大箱子對我來說太重了。"
@@ -11154,7 +11154,7 @@ const jhWordsDB = [
         "en": "nice",
         "kk": "[naɪs]",
         "uk": "/naɪs/",
-        "zh": "adj. 友善的、美好的、令人愉快的、好心的；n. 尼斯",
+        "zh": "adj. 友善的、美好的、令人愉快的、好心的",
         "unit": 18,
         "example": "It's been nice meeting you.",
         "exampleZh": "很高興見到你。"
@@ -13564,7 +13564,7 @@ const jhWordsDB = [
         "en": "real",
         "kk": "[ril]",
         "uk": "/ˈriːəl/",
-        "zh": "adj. 真的、實際存在的、非想象的、名副其實的；adv. 很、非常地；n. 雷阿爾",
+        "zh": "adj. 真的、實際存在的、非想象的、名副其實的；adv. 很、非常地",
         "unit": 18,
         "example": "She's a real cosmopolitan.",
         "exampleZh": "她是一位真正的國際主義者。"
@@ -14214,7 +14214,7 @@ const jhWordsDB = [
         "en": "sad",
         "kk": "[sæd]",
         "uk": "/sæd/",
-        "zh": "adj. 悲傷的、傷心的、難過的、令人傷心的；n. 季節性情感障礙",
+        "zh": "adj. 悲傷的、傷心的、難過的、令人傷心的",
         "unit": 18,
         "example": "She feels sad about the bad news.",
         "exampleZh": "她對這個壞消息感到難過。"
@@ -14874,7 +14874,7 @@ const jhWordsDB = [
         "en": "sharp",
         "kk": "[ʃɑrp]",
         "uk": "/ʃɑːp/",
-        "zh": "adj. 鋒利的、尖的、急轉彎的、急劇的；adv. 正點、準時、突然地、急劇地；n. 升半音、升半音號、銳利的東西、騙子；v. 升音演奏",
+        "zh": "adj. 鋒利的、尖的、急轉彎的、急劇的；adv. 正點、準時、突然地、急劇地；n. 升半音、銳利之物",
         "unit": 18,
         "example": "He has a sharp tongue.",
         "exampleZh": "他的舌頭很尖。"
@@ -15104,7 +15104,7 @@ const jhWordsDB = [
         "en": "sick",
         "kk": "[sɪk]",
         "uk": "/sɪk/",
-        "zh": "adj. 生病的、患病的、病人的、噁心的；n. 病人、嘔吐物；v. 嘔吐、放狗咬、派某人去追擊",
+        "zh": "adj. 生病的、患病的、病人的、噁心的；n. 病人、嘔吐物；v. 嘔吐",
         "unit": 18,
         "example": "My brother is sick in bed today.",
         "exampleZh": "我弟弟今天生病躺在床上。"
@@ -15974,7 +15974,7 @@ const jhWordsDB = [
         "en": "spell",
         "kk": "[spɛl]",
         "uk": "/spel/",
-        "zh": "n. 一段時間、一次發作、咒語、符咒；vt. 拼寫、拼綴出、拼作、拼成",
+        "zh": "vt. 拼寫、拼字、拼作；n. 一段時間、咒語、符咒",
         "unit": 18,
         "example": "I've never been able to spell.",
         "exampleZh": "我從來都不會拼字。"
@@ -17034,7 +17034,7 @@ const jhWordsDB = [
         "en": "tennis",
         "kk": "[ˋtɛnəs]",
         "uk": "/ˈtenɪs/",
-        "zh": "n. 網球、網球運動、坦尼斯",
+        "zh": "n. 網球、網球運動",
         "unit": 18,
         "example": "I'm not much good at tennis.",
         "exampleZh": "我不太擅長打網球。"

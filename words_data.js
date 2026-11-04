@@ -94,7 +94,7 @@ const externalVocabularyDB = [
         "en": "brave",
         "kk": "[brev]",
         "uk": "/breɪv/",
-        "zh": "adj. 勇敢的、英勇的、無畏的、非常好的；vt. 勇敢面對；n. 勇敢的人、印第安武士",
+        "zh": "adj. 勇敢的、英勇的、無畏的、非常好的；vt. 勇敢面對；n. 勇敢的人",
         "unit": 1,
         "example": "The boy was very brave today.",
         "exampleZh": "那個男孩今天非常勇敢。"
@@ -244,7 +244,7 @@ const externalVocabularyDB = [
         "en": "glad",
         "kk": "[ɡlæd]",
         "uk": "/ɡlæd/",
-        "zh": "adj. 高興的、感激的、樂意的、非常願意的；v. 取悅、使高興；n. 唐菖蒲屬植物、唐菖蒲",
+        "zh": "adj. 高興的、感激的、樂意的、非常願意的；v. 取悅、使高興",
         "unit": 1,
         "example": "I'm glad you came along.",
         "exampleZh": "我很高興你能來。"
@@ -254,7 +254,7 @@ const externalVocabularyDB = [
         "en": "grand",
         "kk": "[ɡrænd]",
         "uk": "/ɡrænd/",
-        "zh": "adj. 宏偉的、重大的、壯麗的、堂皇的；n. 一千美元、一千英鎊、大鋼琴、三角鋼琴",
+        "zh": "adj. 宏偉的、重大的、壯麗的、堂皇的；n. 一千美元、大鋼琴",
         "unit": 1,
         "example": "They live in a grand old house.",
         "exampleZh": "他們住在一棟宏偉的老房子裡。"
@@ -274,7 +274,7 @@ const externalVocabularyDB = [
         "en": "heavy",
         "kk": "[ˋhɛvi]",
         "uk": "/ˈhevi/",
-        "zh": "adj. 重的、嚴重的、沉的、大量的；n. 保鏢、打手、反派、重要人物；adv. 濃濃地、沉重地、使不安、使擔憂",
+        "zh": "adj. 重的、嚴重的、沉的、大量的；n. 反派、重要人物；adv. 濃濃地、沉重地、使不安、使擔憂",
         "unit": 1,
         "example": "This big box is too heavy for me.",
         "exampleZh": "這個大箱子對我來說太重了。"
@@ -384,7 +384,7 @@ const externalVocabularyDB = [
         "en": "nice",
         "kk": "[naɪs]",
         "uk": "/naɪs/",
-        "zh": "adj. 好的、令人愉快的、美好的、好心的；n. 尼斯",
+        "zh": "adj. 好的、令人愉快的、美好的、好心的",
         "unit": 1,
         "example": "I think silk ties can be quite nice.",
         "exampleZh": "我覺得真絲領帶會非常好看。"
@@ -444,7 +444,7 @@ const externalVocabularyDB = [
         "en": "real",
         "kk": "[ril]",
         "uk": "/ˈriːəl/",
-        "zh": "adj. 真實的、實際的、實際存在的、非想象的；adv. 很、非常地；n. 雷阿爾",
+        "zh": "adj. 真實的、實際的、實際存在的、非想象的；adv. 很、非常地",
         "unit": 1,
         "example": "No, it wasn't a dream. It was real.",
         "exampleZh": "不，那不是夢。它是真實的。"
@@ -464,7 +464,7 @@ const externalVocabularyDB = [
         "en": "sad",
         "kk": "[sæd]",
         "uk": "/sæd/",
-        "zh": "adj. 難過的、傷心的、令人傷心的、讓人難過的；n. 季節性情感障礙",
+        "zh": "adj. 難過的、傷心的、令人傷心的、讓人難過的",
         "unit": 1,
         "example": "She feels sad about the bad news.",
         "exampleZh": "她對這個壞消息感到難過。"
@@ -514,7 +514,7 @@ const externalVocabularyDB = [
         "en": "sick",
         "kk": "[sɪk]",
         "uk": "/sɪk/",
-        "zh": "adj. 生病的、患病的、病人的、噁心的；n. 病人、嘔吐物；v. 嘔吐、放狗咬、派某人去追擊",
+        "zh": "adj. 生病的、患病的、病人的、噁心的；n. 病人、嘔吐物；v. 嘔吐",
         "unit": 1,
         "example": "My brother is sick in bed today.",
         "exampleZh": "我弟弟今天生病躺在床上。"
@@ -1414,7 +1414,7 @@ const externalVocabularyDB = [
         "en": "spell",
         "kk": "[spɛl]",
         "uk": "/spel/",
-        "zh": "n. 一段時間、一次發作、咒語、符咒；vt. 拼字、拼寫、拼綴出、拼作",
+        "zh": "vt. 拼字、拼寫、拼作；n. 一段時間、咒語、符咒",
         "unit": 1,
         "example": "I've never been able to spell.",
         "exampleZh": "我從來都不會拼字。"
@@ -1994,7 +1994,7 @@ const externalVocabularyDB = [
         "en": "sharp",
         "kk": "[ʃɑrp]",
         "uk": "/ʃɑːp/",
-        "zh": "adj. 鋒利的、尖的、急轉彎的、急劇的；adv. 正點、準時、突然地、急劇地；n. 升半音、升半音號、銳利的東西、騙子；v. 升音演奏",
+        "zh": "adj. 鋒利的、尖的、急轉彎的、急劇的；adv. 正點、準時、突然地、急劇地；n. 升半音、銳利之物",
         "unit": 1,
         "example": "He has a sharp tongue.",
         "exampleZh": "他的舌頭很尖。"
@@ -4624,7 +4624,7 @@ const externalVocabularyDB = [
         "en": "English",
         "kk": "[ˋɪŋɡlɪʃ]",
         "uk": "/ˈɪŋɡlɪʃ/",
-        "zh": "adj. 英國的、英國人的、英語的、英文的；n. 英語、英文、英國人、英格蘭人；vt. 把……譯成英語、把……譯成英文",
+        "zh": "n. 英語、英文、英國人；adj. 英國的、英語的；vt. 把……譯成英語",
         "unit": 1,
         "example": "We learn English at school today.",
         "exampleZh": "我們今天在學校學英文。"
@@ -20124,7 +20124,7 @@ const externalVocabularyDB = [
         "en": "tennis",
         "kk": "[ˋtɛnəs]",
         "uk": "/ˈtenɪs/",
-        "zh": "n. 網球、網球運動、坦尼斯",
+        "zh": "n. 網球、網球運動",
         "unit": 3,
         "example": "I'm not much good at tennis.",
         "exampleZh": "我不太擅長打網球。"

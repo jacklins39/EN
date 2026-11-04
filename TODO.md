@@ -116,3 +116,7 @@
      - 釋義格式必須統一為標準縮寫加句點：`n.`、`v.`、`vt.`、`vi.`、`adj.`、`adv.`、`prep.`、`conj.`、`pron.`，詞性之間以全形分號 `；` 隔開。
   4. **全自動雙階語境匹配與防呆把關**：
      - 前端引擎已實裝一階多字詞組精確匹配與二階去停用詞字符交集匹配，入庫新字前必須先跑 `python scripts/audit_database.py` 驗收健康度。
+  5. **Yahoo 奇摩字典權威對齊原則 (Yahoo Dictionary Authority & Zero Archaic Junk)**：
+     - 嚴禁收錄百年老字典（韋氏 1913/CDICT）殘留之 19 世紀打獵/農場古方言雜訊（如 `cub` 誤收「幼鯨、牛棚、獵幼狐」；`blood` 誤收「用獵物的血塗新手的臉」；`express` 誤收「初速大的獵槍」；`poacher` 誤收「煮蛋用的鍋」）。
+     - 新增單字必須對齊 Yahoo 奇摩字典（牛津英漢雙解）之頻率順序與實用核心義（如 `cub` 必為 `n. 幼獸（熊、獅等幼崽）、幼童軍、菜鳥；v. 產幼獸`；`rice`、`tree`、`ticket`、`shorts` 必為名詞優先於動詞）。
+     - 資料庫已備妥 `yahoo_dict_data.js`（7,327 詞權威離線庫）並已深度整合至 `scripts/audit_database.py` 第 6 項健檢，入庫任何名詞被動詞倒置或古老打獵雜訊皆會被自動攔截。

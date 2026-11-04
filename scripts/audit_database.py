@@ -28,6 +28,19 @@ import subprocess
 
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+# 載入 Yahoo 權威字典離線快取 (7,327 詞)
+YAHOO_DICT_CACHE = {}
+yahoo_data_path = os.path.join(ROOT_DIR, 'yahoo_dict_data.js')
+if os.path.exists(yahoo_data_path):
+    try:
+        with open(yahoo_data_path, 'r', encoding='utf-8') as f:
+            ytxt = f.read()
+        yidx = ytxt.find('window.YAHOO_DICT_DB = ')
+        if yidx != -1:
+            YAHOO_DICT_CACHE = json.loads(ytxt[yidx + len('window.YAHOO_DICT_DB = '):].rstrip().rstrip(';'))
+    except Exception:
+        pass
+
 DATABASES = [
     {
         'file': 'words_data.js',
@@ -344,18 +357,42 @@ def run_health_audit():
             if not CHINESE_CHAR_REGEX.search(zh):
                 db_metrics['english_residual_zh'].append((item_id, item.get('en'), zh))
 
-            # 6. 詞性高頻順序與百科/縮寫雜訊檢測
-            junk_tokens = ['季節性情感障礙', '唐菖蒲', '雷阿爾', '坦尼斯', '巴納納', '放狗咬', '印第安武士']
+            # 6. 詞性高頻順序與百科/縮寫/古老打獵雜訊檢測 (對齊 Yahoo 權威辭典)
+            junk_tokens = [
+                '季節性情感障礙', '唐菖蒲', '雷阿爾', '坦尼斯', '巴納納', '放狗咬', '印第安武士',
+                '幼鯨', '牛棚', '獵幼狐', '用獵物的血塗', '初速大的獵槍', '一群獵狗', '啞奴'
+            ]
             if any(tk in zh for tk in junk_tokens):
-                db_metrics['junk_residual_or_inverted'].append((item_id, item.get('en'), zh, '含百科/縮寫/音譯雜訊'))
-            if word == 'banana' and zh.startswith('adj.'):
-                db_metrics['junk_residual_or_inverted'].append((item_id, item.get('en'), zh, 'banana 詞性倒置'))
-            elif word == 'piano' and zh.startswith('adj.'):
-                db_metrics['junk_residual_or_inverted'].append((item_id, item.get('en'), zh, 'piano 詞性倒置'))
-            elif word == 'spell' and zh.startswith('n.'):
-                db_metrics['junk_residual_or_inverted'].append((item_id, item.get('en'), zh, 'spell 詞性倒置'))
-            elif word == 'english' and zh.startswith('adj.'):
-                db_metrics['junk_residual_or_inverted'].append((item_id, item.get('en'), zh, 'English 詞性倒置'))
+                db_metrics['junk_residual_or_inverted'].append((item_id, item.get('en'), zh, '含百科/縮寫/古老打獵雜訊'))
+            
+            # 優先保護詞 (教學目標明確偏重某常用義)
+            PROTECTED_PRIORITIES = {'august', 'english', 'spell', 'be', 'love', 'like', 'own', 'these', 'those', 'that', 'this'}
+            if word in PROTECTED_PRIORITIES:
+                if word == 'banana' and zh.startswith('adj.'):
+                    db_metrics['junk_residual_or_inverted'].append((item_id, item.get('en'), zh, 'banana 詞性倒置'))
+                elif word == 'piano' and zh.startswith('adj.'):
+                    db_metrics['junk_residual_or_inverted'].append((item_id, item.get('en'), zh, 'piano 詞性倒置'))
+                elif word == 'spell' and zh.startswith('n.'):
+                    db_metrics['junk_residual_or_inverted'].append((item_id, item.get('en'), zh, 'spell 詞性倒置'))
+                elif word == 'english' and zh.startswith('adj.'):
+                    db_metrics['junk_residual_or_inverted'].append((item_id, item.get('en'), zh, 'English 詞性倒置'))
+            elif word in YAHOO_DICT_CACHE:
+                y_item = YAHOO_DICT_CACHE[word]
+                summaries = y_item.get('summaries', [])
+                if summaries:
+                    y_first_pos = summaries[0].get('pos', '').lower()
+                    parts = [p.strip() for p in zh.split('；') if p.strip()]
+                    if parts:
+                        m_pos = re.match(r'^([a-zA-Z]+(?:\.[a-zA-Z]+)?\.)', parts[0])
+                        if m_pos:
+                            db_first_pos = m_pos.group(1).lower()
+                            # 嚴重倒置 1: Yahoo 首要為名詞，DB 首要卻是動詞 (且名詞存在於其他分段)
+                            if db_first_pos in ['v.', 'vt.', 'vi.'] and y_first_pos in ['n.', 'n.[c]', 'n.[u]']:
+                                if any(p.startswith(('n.', 'n.[c]', 'n.[u]')) for p in parts):
+                                    db_metrics['junk_residual_or_inverted'].append((item_id, item.get('en'), zh, f'核心名詞被動詞倒置 (Yahoo 首要為 {y_first_pos})'))
+                            # 嚴重倒置 2: Yahoo 首要為代名詞/名詞，DB 首要卻是副詞/形容詞
+                            elif db_first_pos in ['adv.', 'ad.'] and y_first_pos in ['n.', 'pron.']:
+                                db_metrics['junk_residual_or_inverted'].append((item_id, item.get('en'), zh, f'核心代名詞/名詞被副詞倒置 (Yahoo 首要為 {y_first_pos})'))
 
         # 輸出此檔案健檢結果
         print(f"\n📂 [{db_info['file']}] {db_info['label']} (共 {db_count:,} 筆單字):")

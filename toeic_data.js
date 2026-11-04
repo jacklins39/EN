@@ -12235,7 +12235,7 @@ const toeicWordsDB = [
         "en": "extract",
         "kk": "[ˋɛk͵strækt]",
         "uk": "/ˈekstrækt; ɪkˈstrækt/",
-        "zh": "vt. 提取、提煉、取出、摘錄；n. 摘錄、選段、提取物",
+        "zh": "n. 摘錄、選段、提取物；vt. 提取、提煉、取出、摘錄",
         "unit": 12,
         "example": "The following extract is taken from her new novel.",
         "exampleZh": "下面一段摘自她的新小說。"
@@ -14725,7 +14725,7 @@ const toeicWordsDB = [
         "en": "harbor",
         "kk": "[ˋhɑrbɚ]",
         "uk": "/ˈhɑːbə(r)/",
-        "zh": "v. 庇護、藏匿、窩藏、懷有；n. 港灣、海港、港、避難所",
+        "zh": "n. 港灣、海港、港、避難所；v. 庇護、藏匿、窩藏、懷有",
         "unit": 12,
         "example": "Home is your alcazar and safe harbor.",
         "exampleZh": "家就是你的城堡和避風港。"
@@ -18275,7 +18275,7 @@ const toeicWordsDB = [
         "en": "labor",
         "kk": "[ˋlebɚ]",
         "uk": "/ˈleɪbə(r)/",
-        "zh": "vi. 勞動、艱苦地幹活、努力、苦幹；vt. 勞動、艱苦地幹活、詳細分析、使厭煩；v. 勞動、艱苦地幹活；n. 勞工、勞動、工作、勞作",
+        "zh": "n. 勞工、勞動、工作、勞作；vi. 勞動、艱苦地幹活、努力、苦幹；vt. 勞動、艱苦地幹活、詳細分析、使厭煩；v. 勞動、艱苦地幹活",
         "unit": 12,
         "example": "The fruit of labor is sweetest.",
         "exampleZh": "勞動的果實最甜美。"
@@ -18945,7 +18945,7 @@ const toeicWordsDB = [
         "en": "license",
         "kk": "[ˋlaɪsəns]",
         "uk": "/ˈlaɪs(ə)ns/",
-        "zh": "vt. 發許可證給、許可、特許；n. 證照、許可、執照、許可證",
+        "zh": "n. 證照、許可、執照、許可證；vt. 發許可證給、許可、特許",
         "unit": 12,
         "example": "Your license is no longer valid.",
         "exampleZh": "你的執照失效了。"
@@ -20155,7 +20155,7 @@ const toeicWordsDB = [
         "en": "nag",
         "kk": "[næɡ]",
         "uk": "/næɡ/",
-        "zh": "vt. 嘮叨、責罵不休、不斷地嘮叨、嘮叨催促；n. 好嘮叨的人、愛嘮叨的人、挑剔的人、老馬",
+        "zh": "n. 好嘮叨的人、愛嘮叨的人、挑剔的人、老馬；vt. 嘮叨、責罵不休、不斷地嘮叨、嘮叨催促",
         "unit": 13,
         "example": "We all hate to nag.",
         "exampleZh": "我們都討厭嘮叨。"
@@ -23935,7 +23935,7 @@ const toeicWordsDB = [
         "en": "receipt",
         "kk": "[rɪˋsit]",
         "uk": "/rɪˈsiːt/",
-        "zh": "v. 在（賬單）上註明收訖字樣；n. 收據、發票、收到、接收",
+        "zh": "n. 收據、發票、收到、接收；v. 在（賬單）上註明收訖字樣",
         "unit": 13,
         "example": "Can I have a receipt, please?",
         "exampleZh": "請給我開個收據，好嗎？"
@@ -27485,7 +27485,7 @@ const toeicWordsDB = [
         "en": "supply",
         "kk": "[səpˋlaɪ]",
         "uk": "/səˈplaɪ/",
-        "zh": "v. 供應、提供、供給；n. 供應、補給品、存貨",
+        "zh": "n. 供應、補給品、存貨；v. 供應、提供、供給",
         "unit": 13,
         "example": "The electricity supply here is quite erratic.",
         "exampleZh": "這裡的電力供應相當不穩定。"
@@ -28055,7 +28055,7 @@ const toeicWordsDB = [
         "en": "tenure",
         "kk": "[ˋtɛnjɚ]",
         "uk": "/ˈtenjə(r)/",
-        "zh": "v. 授予……終身職位；n. 佔有、佔有權、居住權、保有權",
+        "zh": "n. 佔有、佔有權、居住權、保有權；v. 授予……終身職位",
         "unit": 13,
         "example": "It's still extremely difficult to get tenure.",
         "exampleZh": "要取得終身職位仍然極其困難。"
@@ -28225,7 +28225,7 @@ const toeicWordsDB = [
         "en": "ticket",
         "kk": "[ˋtɪkət]",
         "uk": "/ˈtɪkɪt/",
-        "zh": "v. 售票、給（違章停車、超速行駛的人）開罰單、貼標籤於、給定目標；n. 票、券、入場券、通知單",
+        "zh": "n. 票、券、入場券、通知單；v. 售票、給（違章停車、超速行駛的人）開罰單、貼標籤於、給定目標",
         "unit": 13,
         "example": "You can have my ticket.",
         "exampleZh": "你可以拿走我的票。"
@@ -28275,7 +28275,7 @@ const toeicWordsDB = [
         "en": "title",
         "kk": "[ˋtaɪtəl]",
         "uk": "/ˈtaɪt(ə)l/",
-        "zh": "vt. 加標題於、加標題、定題目、賦予頭銜；adj. 與（電影、戲劇等）同名的、冠軍的；n. 標題、名稱、一種",
+        "zh": "n. 標題、名稱、一種；vt. 加標題於、加標題、定題目、賦予頭銜；adj. 與（電影、戲劇等）同名的、冠軍的",
         "unit": 13,
         "example": "Ziri read the titles.",
         "exampleZh": "齊日讀了標題。"

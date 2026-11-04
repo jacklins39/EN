@@ -7904,7 +7904,7 @@ const externalVocabularyDB = [
         "en": "rice",
         "kk": "[raɪs]",
         "uk": "/raɪs/",
-        "zh": "vt. 把……搗成米糊狀、把（熟馬鈴薯等）壓（或擦）成米粒狀；n. 稻米、飯、稻、水稻",
+        "zh": "n. 稻米、飯、稻、水稻；vt. 把……搗成米糊狀、把（熟馬鈴薯等）壓（或擦）成米粒狀",
         "unit": 1,
         "example": "We eat rice every single day.",
         "exampleZh": "我們每天都吃米飯。"
@@ -8744,7 +8744,7 @@ const externalVocabularyDB = [
         "en": "something",
         "kk": "[ˋsʌmθɪŋ]",
         "uk": "/ˈsʌmθɪŋ/",
-        "zh": "adv. 稍微、有點、很、非常；pron. 某事、某物、……或諸如此類的東西、……什麼的",
+        "zh": "pron. 某事、某物、……或諸如此類的東西、……什麼的；adv. 稍微、有點、很、非常",
         "unit": 1,
         "example": "It tastes something like melon.",
         "exampleZh": "嘗起來有點像甜瓜。"
@@ -9324,7 +9324,7 @@ const externalVocabularyDB = [
         "en": "ticket",
         "kk": "[ˋtɪkət]",
         "uk": "/ˈtɪkɪt/",
-        "zh": "v. 票、售票、給（違章停車、超速行駛的人）開罰單、貼標籤於；n. 票、入場券、通知單",
+        "zh": "n. 票、入場券、通知單；v. 票、售票、給（違章停車、超速行駛的人）開罰單、貼標籤於",
         "unit": 1,
         "example": "You can have my ticket.",
         "exampleZh": "你可以拿走我的票。"
@@ -9484,7 +9484,7 @@ const externalVocabularyDB = [
         "en": "tree",
         "kk": "[tri]",
         "uk": "/triː/",
-        "zh": "vt. 把（動物）趕上樹、使陷入困境；vi. 爬上樹、逃上樹；n. 樹木、樹、樹狀物、樹狀圖",
+        "zh": "n. 樹木、樹、樹狀物、樹狀圖；vt. 把（動物）趕上樹、使陷入困境；vi. 爬上樹、逃上樹",
         "unit": 1,
         "example": "Let's rest under yonder tree.",
         "exampleZh": "我們在那棵樹下休息吧。"
@@ -19284,7 +19284,7 @@ const externalVocabularyDB = [
         "en": "shorts",
         "kk": "[ʃɔrts]",
         "uk": "/ʃɔːts/",
-        "zh": "v. 短路；n. 短褲、男內褲、短片、細麩粉",
+        "zh": "n. 短褲、男內褲、短片、細麩粉；v. 短路",
         "unit": 2,
         "example": "He wears blue shorts in summer.",
         "exampleZh": "他夏天穿著藍色短褲。"
@@ -19894,7 +19894,7 @@ const externalVocabularyDB = [
         "en": "supply",
         "kk": "[səpˋlaɪ]",
         "uk": "/səˈplaɪ/",
-        "zh": "v. 供應、提供、供給；n. 供應、補給品、存貨",
+        "zh": "n. 供應、補給品、存貨；v. 供應、提供、供給",
         "unit": 2,
         "example": "They supply fresh water to us.",
         "exampleZh": "他們向我們提供新鮮的水。"
@@ -20234,7 +20234,7 @@ const externalVocabularyDB = [
         "en": "title",
         "kk": "[ˋtaɪtəl]",
         "uk": "/ˈtaɪt(ə)l/",
-        "zh": "vt. 標題、加標題、定題目、賦予頭銜；adj. 與（電影、戲劇等）同名的、冠軍的；n. 頭銜、名稱、標題、一種",
+        "zh": "n. 頭銜、名稱、標題、一種；vt. 標題、加標題、定題目、賦予頭銜；adj. 與（電影、戲劇等）同名的、冠軍的",
         "unit": 3,
         "example": "The title is printed in italics.",
         "exampleZh": "標題被印成斜體。"
@@ -26194,7 +26194,7 @@ const externalVocabularyDB = [
         "en": "dock",
         "kk": "[dɑk]",
         "uk": "/dɒk/",
-        "zh": "vt. 靠碼頭、進港、在太空對接、將電子裝置（如電腦、數碼相機）相接；n. 碼頭、船埠、船塢、港區",
+        "zh": "n. 碼頭、船埠、船塢、港區；vt. 靠碼頭、進港、在太空對接、將電子裝置（如電腦、數碼相機）相接",
         "unit": 3,
         "example": "She headed for the docks, thinking that Ricardo might be hiding in one of the boats.",
         "exampleZh": "她朝著碼頭走去，心想裡卡多可能藏在其中的一條船上。"
@@ -27264,7 +27264,7 @@ const externalVocabularyDB = [
         "en": "harbor",
         "kk": "[ˋhɑrbɚ]",
         "uk": "/ˈhɑːbə(r)/",
-        "zh": "v. 庇護、窩藏、懷有、心懷；n. 港、海港、港灣、避難所",
+        "zh": "n. 港、海港、港灣、避難所；v. 庇護、窩藏、懷有、心懷",
         "unit": 3,
         "example": "Home is your alcazar and safe harbor.",
         "exampleZh": "家就是你的城堡和避風港。"
@@ -29794,7 +29794,7 @@ const externalVocabularyDB = [
         "en": "receipt",
         "kk": "[rɪˋsit]",
         "uk": "/rɪˈsiːt/",
-        "zh": "v. 在（賬單）上註明收訖字樣；n. 收據、收條、發票、收到",
+        "zh": "n. 收據、收條、發票、收到；v. 在（賬單）上註明收訖字樣",
         "unit": 3,
         "example": "Can I have a receipt, please?",
         "exampleZh": "請給我開個收據，好嗎？"
@@ -30104,7 +30104,7 @@ const externalVocabularyDB = [
         "en": "rumor",
         "kk": "[ˋrumɚ]",
         "uk": "/ˈruːmə(r)/",
-        "zh": "vt. 謠傳、傳說；n. 謠言、傳聞、傳言、魯莫爾",
+        "zh": "n. 謠言、傳聞、傳言、魯莫爾；vt. 謠傳、傳說",
         "unit": 4,
         "example": "In fact, the rumor is without foundation.",
         "exampleZh": "事實上，這個謠傳沒有根據。"
@@ -36884,7 +36884,7 @@ const externalVocabularyDB = [
         "en": "chorus",
         "kk": "[ˋkɔrəs]",
         "uk": "/ˈkɔːrəs/",
-        "zh": "vt. 齊聲說、齊唱；n. 合唱隊、副歌、疊句、合唱團",
+        "zh": "n. 合唱隊、副歌、疊句、合唱團；vt. 齊聲說、齊唱",
         "unit": 4,
         "example": "The chorus was singing \"The Ode to Joy.\"",
         "exampleZh": "合唱團那時正在唱著《歡樂頌》。"
@@ -39194,7 +39194,7 @@ const externalVocabularyDB = [
         "en": "gull",
         "kk": "[ɡʌl]",
         "uk": "/ɡʌl/",
-        "zh": "vt. 騙、欺詐、愚弄；n. 鷗、海鷗、易受騙的人、笨人",
+        "zh": "n. 鷗、海鷗、易受騙的人、笨人；vt. 騙、欺詐、愚弄",
         "unit": 4,
         "example": "The gull held the fish in its beak.",
         "exampleZh": "海鷗嘴裡叼著魚。"
@@ -39934,7 +39934,7 @@ const externalVocabularyDB = [
         "en": "labor",
         "kk": "[ˋlebɚ]",
         "uk": "/ˈleɪbə(r)/",
-        "zh": "vi. 勞動、努力、苦幹、分娩；vt. 詳細分析、使厭煩；n. 勞動、工作、勞作、勞工",
+        "zh": "n. 勞動、工作、勞作、勞工；vi. 勞動、努力、苦幹、分娩；vt. 詳細分析、使厭煩",
         "unit": 4,
         "example": "The fruit of labor is sweetest.",
         "exampleZh": "勞動的果實最甜美。"
@@ -40054,7 +40054,7 @@ const externalVocabularyDB = [
         "en": "license",
         "kk": "[ˋlaɪsəns]",
         "uk": "/ˈlaɪs(ə)ns/",
-        "zh": "vt. 許可、特許、發許可證給；n. 執照、許可證、特許證、特許",
+        "zh": "n. 執照、許可證、特許證、特許；vt. 許可、特許、發許可證給",
         "unit": 5,
         "example": "Your license is no longer valid.",
         "exampleZh": "你的執照失效了。"
@@ -40364,7 +40364,7 @@ const externalVocabularyDB = [
         "en": "minister",
         "kk": "[ˋmɪnəstɚ]",
         "uk": "/ˈmɪnɪstə(r)/",
-        "zh": "v. 滿足、幫助、當牧師、執行（或主持）；n. 部長、大臣、牧師、公使",
+        "zh": "n. 部長、大臣、牧師、公使；v. 滿足、幫助、當牧師、執行（或主持）",
         "unit": 5,
         "example": "When the government came to power, he was named minister of culture.",
         "exampleZh": "這屆政府上臺時，他被任命為了文化部長。"
@@ -42124,7 +42124,7 @@ const externalVocabularyDB = [
         "en": "sledge",
         "kk": "[slɛdʒ]",
         "uk": "/sledʒ/",
-        "zh": "vi. 乘雪橇、用雪橇搬運、用大錘打、諷刺挖苦；n. 雪橇、大錘",
+        "zh": "n. 雪橇、大錘；vi. 乘雪橇、用雪橇搬運、用大錘打、諷刺挖苦",
         "unit": 5,
         "example": "The sledge ran smoothly over the frozen snow.",
         "exampleZh": "雪橇在冰凍的雪面上平穩地滑行。"
@@ -42134,7 +42134,7 @@ const externalVocabularyDB = [
         "en": "sleigh",
         "kk": "[sle]",
         "uk": "/sleɪ/",
-        "zh": "v. 乘雪橇、滑雪橇、駕雪橇、用雪橇運輸；n. 斯萊",
+        "zh": "n. 斯萊；v. 乘雪橇、滑雪橇、駕雪橇、用雪橇運輸",
         "unit": 5,
         "example": "This is my wife’s sleigh.",
         "exampleZh": "這是我妻子的雪橇。"
@@ -46234,7 +46234,7 @@ const externalVocabularyDB = [
         "en": "bog",
         "kk": "[bɑɡ]",
         "uk": "/bɒɡ/",
-        "zh": "vt. 使陷於泥沼、使動彈不得、使陷入困境；vi. 陷於泥沼、動彈不得、陷入困境；v. 走開、滾開；n. 沼澤、泥塘、泥炭沼、廁所",
+        "zh": "n. 沼澤、泥塘、泥炭沼、廁所；vt. 使陷於泥沼、使動彈不得、使陷入困境；vi. 陷於泥沼、動彈不得、陷入困境；v. 走開、滾開",
         "unit": 5,
         "example": "Tom bought 200 bog rolls online.",
         "exampleZh": "湯姆在網路上買了 200 個沼澤卷。"
@@ -48304,7 +48304,7 @@ const externalVocabularyDB = [
         "en": "flake",
         "kk": "[flek]",
         "uk": "/fleɪk/",
-        "zh": "vi. 剝落、將……剝落、使成薄片、把（繩子）鬆鬆挽好；n. 小薄片、碎片、雪花、古怪的人",
+        "zh": "n. 小薄片、碎片、雪花、古怪的人；vi. 剝落、將……剝落、使成薄片、把（繩子）鬆鬆挽好",
         "unit": 5,
         "example": "Oiled wood is water-resistant and won't flake.",
         "exampleZh": "上過油的木頭防水而且不會剝落。"
@@ -49014,7 +49014,7 @@ const externalVocabularyDB = [
         "en": "honk",
         "kk": "[hɑŋk]",
         "uk": "/hɒŋk/",
-        "zh": "vt. 發雁鳴、按汽車喇叭、鳴喇叭、嘔吐；n. 雁叫聲、汽車喇叭聲、鳴笛聲、洪",
+        "zh": "n. 雁叫聲、汽車喇叭聲、鳴笛聲、洪；vt. 發雁鳴、按汽車喇叭、鳴喇叭、嘔吐",
         "unit": 5,
         "example": "Why did he honk at me?",
         "exampleZh": "他為什麼對我按喇叭？"
@@ -49764,7 +49764,7 @@ const externalVocabularyDB = [
         "en": "marshal",
         "kk": "[ˋmɑrʃəl]",
         "uk": "/ˈmɑːʃ(ə)l/",
-        "zh": "vt. 結集、安排、控制、組織；n. 元帥、高級將官、典禮官、陸軍元帥",
+        "zh": "n. 元帥、高級將官、典禮官、陸軍元帥；vt. 結集、安排、控制、組織",
         "unit": 5,
         "example": "The grand prix is controlled by well-trained marshals.",
         "exampleZh": "大賽由訓練有素的典禮官們掌控。"
@@ -49794,7 +49794,7 @@ const externalVocabularyDB = [
         "en": "mash",
         "kk": "[mæʃ]",
         "uk": "/mæʃ/",
-        "zh": "vt. 搗碎、把…搗成糊狀、調情；n. 糊狀物、泥狀物、飼料、麥芽漿",
+        "zh": "n. 糊狀物、泥狀物、飼料、麥芽漿；vt. 搗碎、把…搗成糊狀、調情",
         "unit": 5,
         "example": "I mashed the medlars.",
         "exampleZh": "我把枸杞搗碎了。"
@@ -50124,7 +50124,7 @@ const externalVocabularyDB = [
         "en": "nag",
         "kk": "[næɡ]",
         "uk": "/næɡ/",
-        "zh": "vt. 不斷地嘮叨、嘮叨催促、不斷要求、煩擾；n. 愛嘮叨的人、挑剔的人、老馬、疲憊的馬",
+        "zh": "n. 愛嘮叨的人、挑剔的人、老馬、疲憊的馬；vt. 不斷地嘮叨、嘮叨催促、不斷要求、煩擾",
         "unit": 6,
         "example": "We all hate to nag.",
         "exampleZh": "我們都討厭嘮叨。"
@@ -53034,7 +53034,7 @@ const externalVocabularyDB = [
         "en": "torrent",
         "kk": "[ˋtɔrənt]",
         "uk": "/ˈtɒrənt/",
-        "zh": "v. 在急流中移動、透過位元流下載或上傳檔案；adj. 像急流的；n. 洪流、連發、狂潮、迸發",
+        "zh": "n. 洪流、連發、狂潮、迸發；v. 在急流中移動、透過位元流下載或上傳檔案；adj. 像急流的",
         "unit": 6,
         "example": "The stream had become a raging torrent.",
         "exampleZh": "小溪變成了一條洶湧的急流。"
@@ -58784,7 +58784,7 @@ const externalVocabularyDB = [
         "en": "chariot",
         "kk": "[ˋtʃɛriət]",
         "uk": "/ˈtʃæriət/",
-        "zh": "vt. 駕馭、用戰車運送；vi. 乘戰車、駕馭戰車；n. 古代由馬牽引的雙輪戰車、用於戰爭、競賽或儀式、輕便四輪禮賓馬車",
+        "zh": "n. 古代由馬牽引的雙輪戰車、用於戰爭、競賽或儀式、輕便四輪禮賓馬車；vt. 駕馭、用戰車運送；vi. 乘戰車、駕馭戰車",
         "unit": 6,
         "example": "My purple racing bike traveled like a winged chariot.",
         "exampleZh": "我紫色的跑車如插了翅膀的戰車一般飛奔。"
@@ -60274,7 +60274,7 @@ const externalVocabularyDB = [
         "en": "extract",
         "kk": "[ˋɛk͵strækt]",
         "uk": "/ˈekstrækt; ɪkˈstrækt/",
-        "zh": "vt. 提取、提煉、取出、摘錄；n. 摘錄、選段、提取物",
+        "zh": "n. 摘錄、選段、提取物；vt. 提取、提煉、取出、摘錄",
         "unit": 7,
         "example": "Citric acid can be extracted from the juice of oranges, lemons, limes or grapefruit.",
         "exampleZh": "檸檬酸可以從橙汁、檸檬汁、酸橙汁或柚子汁中提取。"
@@ -63524,7 +63524,7 @@ const externalVocabularyDB = [
         "en": "spire",
         "kk": "[spaɪr]",
         "uk": "/ˈspaɪə(r)/",
-        "zh": "vi. 像尖頂般向上聳立、向上漸尖；vt. 給……加塔尖、給……裝尖頂；n. 尖塔、尖頂、螺旋、螺旋形結構的一圈",
+        "zh": "n. 尖塔、尖頂、螺旋、螺旋形結構的一圈；vi. 像尖頂般向上聳立、向上漸尖；vt. 給……加塔尖、給……裝尖頂",
         "unit": 7,
         "example": "No one would dream of straightening out the church's knobbly spire.",
         "exampleZh": "沒人會夢想使教堂的圓形尖頂變直。"

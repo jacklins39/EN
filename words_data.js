@@ -9734,7 +9734,7 @@ const externalVocabularyDB = [
         "en": "warming",
         "kk": "[ˋwɔrmɪŋ]",
         "uk": "/ˈwɔːmɪŋ/",
-        "zh": "adj. 讓人感到溫暖的、給人溫暖感的；v. 變暖、加溫、升溫、變友好；n. 暖和、加溫、變暖、氣溫升高",
+        "zh": "n. 暖和、加溫、變暖、氣溫升高；adj. 讓人感到溫暖的、給人溫暖感的；v. 變暖、加溫、升溫、變友好",
         "unit": 1,
         "example": "Global warming is a serious problem today.",
         "exampleZh": "全球暖化在現今是一個嚴重的問題。"
@@ -9884,7 +9884,7 @@ const externalVocabularyDB = [
         "en": "west",
         "kk": "[wɛst]",
         "uk": "/west/",
-        "zh": "adj. 西部的、西方的、向西的、來自西方的；adv. 向西方、朝西方、……以西；n. 西方、西、西部、西方國家(指美國、加拿大以及西歐、北歐和南歐諸國)",
+        "zh": "n. 西方、西、西部、西方國家(指美國、加拿大以及西歐、北歐和南歐諸國)；adj. 西部的、西方的、向西的、來自西方的；adv. 向西方、朝西方、……以西",
         "unit": 1,
         "example": "The sun sets in the west each day.",
         "exampleZh": "太陽每天從西方落下。"
@@ -14454,7 +14454,7 @@ const externalVocabularyDB = [
         "en": "county",
         "kk": "[ˋkaʊnti]",
         "uk": "/ˈkaʊnti/",
-        "zh": "adj. 有世家地位（或特點）的；n. 郡、縣、郡運動隊、縣運動隊",
+        "zh": "n. 郡、縣、郡運動隊、縣運動隊；adj. 有世家地位（或特點）的",
         "unit": 2,
         "example": "They live in a quiet green county.",
         "exampleZh": "他們住在一個安靜綠意的小縣城。"
@@ -17574,7 +17574,7 @@ const externalVocabularyDB = [
         "en": "neighbor",
         "kk": "[ˋnebɚ]",
         "uk": "/ˈneɪbə(r)/",
-        "zh": "adj. 鄰近的、相鄰的；v. 鄰接、住在附近、毗鄰而居、與……友好相處；n. 鄰居、鄰人、鄰舍",
+        "zh": "n. 鄰居、鄰人、鄰舍；adj. 鄰近的、相鄰的；v. 鄰接、住在附近、毗鄰而居、與……友好相處",
         "unit": 2,
         "example": "My neighbor is a doctor.",
         "exampleZh": "我的鄰居是個醫生。"
@@ -28274,7 +28274,7 @@ const externalVocabularyDB = [
         "en": "major",
         "kk": "[ˋmedʒɚ]",
         "uk": "/ˈmeɪdʒə(r)/",
-        "zh": "n. 主修科目、專業、陸軍少校、空軍少校；vi. 主修、專攻；adj. 重大的、主要的、嚴重的、大調的",
+        "zh": "adj. 重大的、主要的、嚴重的、大調的；n. 主修科目、專業、陸軍少校、空軍少校；vi. 主修、專攻",
         "unit": 3,
         "example": "English majors would be asked to explore the roots of language.",
         "exampleZh": "英語專業的學生會被要求探究語言的根源。"
@@ -41474,7 +41474,7 @@ const externalVocabularyDB = [
         "en": "reference",
         "kk": "[ˋrɛfɚəns]",
         "uk": "/ˈrefrəns/",
-        "zh": "adj. 參考的、用於查閱的、文獻索引的、參照的；v. 列出……的參考書目、提及、提到、引用；n. 參考文獻、出處、提及、談到",
+        "zh": "n. 參考文獻、出處、提及、談到；adj. 參考的、用於查閱的、文獻索引的、參照的；v. 列出……的參考書目、提及、提到、引用",
         "unit": 5,
         "example": "The grid reference is C8.",
         "exampleZh": "地圖上的座標方格數字為C8。"
@@ -46924,7 +46924,7 @@ const externalVocabularyDB = [
         "en": "chestnut",
         "kk": "[ˋtʃɛ͵snʌt]",
         "uk": "/ˈtʃesnʌt/",
-        "zh": "adj. 栗色的；n. 栗子、慄樹、栗色、栗色馬",
+        "zh": "n. 栗子、慄樹、栗色、栗色馬；adj. 栗色的",
         "unit": 5,
         "example": "The cock's breast is tinged with chestnut.",
         "exampleZh": "這隻公雞的胸脯帶點栗色。"
@@ -61334,7 +61334,7 @@ const externalVocabularyDB = [
         "en": "lyric",
         "kk": "[ˋlɪrɪk]",
         "uk": "/ˈlɪrɪk/",
-        "zh": "adj. 抒情的、吟唱的；n. 歌詞、抒情詩",
+        "zh": "n. 歌詞、抒情詩；adj. 抒情的、吟唱的",
         "unit": 7,
         "example": "The songwriter wrote poetic and meaningful lyrics for the melody.",
         "exampleZh": "詞曲作者為旋律譜寫了富有詩意且意味深長的歌詞。"
@@ -61744,7 +61744,7 @@ const externalVocabularyDB = [
         "en": "neon",
         "kk": "[ˋniɑn]",
         "uk": "/ˈniːɒn/",
-        "zh": "adj. 霓虹（燈）的、用霓虹燈製作的、霓虹色的、熒光般鮮豔的；n. 氖、霓虹燈招牌",
+        "zh": "n. 氖、霓虹燈招牌；adj. 霓虹（燈）的、用霓虹燈製作的、霓虹色的、熒光般鮮豔的",
         "unit": 7,
         "example": "A neon sign flashed on and off above the door.",
         "exampleZh": "門上方霓虹燈忽明忽暗地閃爍著。"
@@ -62384,7 +62384,7 @@ const externalVocabularyDB = [
         "en": "prescription",
         "kk": "[prəˋskrɪpʃən]",
         "uk": "/prɪˈskrɪpʃn/",
-        "zh": "adj. 憑處方方可購買的；n. 指示、法規、處方、藥方",
+        "zh": "n. 指示、法規、處方、藥方；adj. 憑處方方可購買的",
         "unit": 7,
         "example": "Nicola got her prescription for strep.",
         "exampleZh": "妮古拉拿了治療鏈球菌性咽喉炎的處方藥。"

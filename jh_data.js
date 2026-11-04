@@ -9964,7 +9964,7 @@ const jhWordsDB = [
         "en": "major",
         "kk": "[ˋmedʒɚ]",
         "uk": "/ˈmeɪdʒə(r)/",
-        "zh": "n. 主修科目、專業、陸軍少校、空軍少校；vi. 主修、專攻；adj. 重大的、主要的、嚴重的、大調的",
+        "zh": "adj. 重大的、主要的、嚴重的、大調的；n. 主修科目、專業、陸軍少校、空軍少校；vi. 主修、專攻",
         "unit": 17,
         "example": "Water is a major city need.",
         "exampleZh": "水是這座城市的主要需求。"
@@ -11054,7 +11054,7 @@ const jhWordsDB = [
         "en": "neighbor",
         "kk": "[ˋnebɚ]",
         "uk": "/ˈneɪbə(r)/",
-        "zh": "adj. 鄰近的、相鄰的；v. 鄰接、住在附近、毗鄰而居、與……友好相處；n. 鄰居、鄰人、鄰舍、鄰國等鄰近的人或物",
+        "zh": "n. 鄰居、鄰人、鄰舍、鄰國等鄰近的人或物；adj. 鄰近的、相鄰的；v. 鄰接、住在附近、毗鄰而居、與……友好相處",
         "unit": 18,
         "example": "My neighbor is a doctor.",
         "exampleZh": "我的鄰居是個醫生。"
@@ -18834,7 +18834,7 @@ const jhWordsDB = [
         "en": "west",
         "kk": "[wɛst]",
         "uk": "/west/",
-        "zh": "adj. 西部的、西方的、向西的、來自西方的；adv. 向西方、朝西方、……以西；n. 西方、西、西部、西方國家(指美國、加拿大以及西歐、北歐和南歐諸國)",
+        "zh": "n. 西方、西、西部、西方國家(指美國、加拿大以及西歐、北歐和南歐諸國)；adj. 西部的、西方的、向西的、來自西方的；adv. 向西方、朝西方、……以西",
         "unit": 18,
         "example": "The sun sets in the west each day.",
         "exampleZh": "太陽每天從西方落下。"

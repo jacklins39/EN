@@ -3847,6 +3847,26 @@
                             it.matchScore = score;
                         });
 
+                        // 二階備援匹配：若第一階段多字比對皆未命中 (score 均為 0)，啟動核心字符意譯交集匹配 (排除虛詞)
+                        const allZero = items.every(it => it.matchScore === 0);
+                        if (allZero) {
+                            const STOP_CHARS = new Set(['一', '是', '有', '個', '在', '這', '那', '了', '得', '著', '地', '到', '不', '很', '為', '與', '和', '及', '所', '或', '之', '其', '上', '下', '中']);
+                            items.forEach(it => {
+                                const cleanText = it.text.replace(/[\(（][^）\)]*[\)）]/g, '');
+                                const rawTerms = cleanText.split(/[,，、/；;\s]+/).map(t => t.trim()).filter(Boolean);
+                                let charScore = 0;
+                                for (const rawTerm of rawTerms) {
+                                    const stripped = rawTerm.replace(/的$/g, '').trim();
+                                    for (const ch of stripped) {
+                                        if (!STOP_CHARS.has(ch) && cleanExZh.includes(ch)) {
+                                            charScore += 2;
+                                        }
+                                    }
+                                }
+                                it.matchScore = charScore;
+                            });
+                        }
+
                         let maxScore = 0;
                         let bestItem = null;
                         items.forEach(it => {

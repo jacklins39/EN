@@ -4915,7 +4915,7 @@ const toeicWordsDB = [
         "en": "brave",
         "kk": "[brev]",
         "uk": "/breɪv/",
-        "zh": "adj. 勇敢的、英勇的、無畏的、非常好的；vt. 勇敢面對；n. 勇敢的人、印第安武士",
+        "zh": "adj. 勇敢的、英勇的、無畏的、非常好的；vt. 勇敢面對；n. 勇敢的人",
         "unit": 11,
         "example": "Charles was brave and remarkably good-humoured.",
         "exampleZh": "查爾斯很勇敢，而且非常幽默。"
@@ -14195,7 +14195,7 @@ const toeicWordsDB = [
         "en": "grand",
         "kk": "[ɡrænd]",
         "uk": "/ɡrænd/",
-        "zh": "adj. 雄偉的、堂皇的、壯麗的、宏偉的；n. 一千美元、一千英鎊、大鋼琴、三角鋼琴",
+        "zh": "adj. 雄偉的、堂皇的、壯麗的、宏偉的；n. 一千美元、大鋼琴",
         "unit": 12,
         "example": "We stayed at the Grand Hotel.",
         "exampleZh": "我們住在格蘭德酒店。"
@@ -26025,7 +26025,7 @@ const toeicWordsDB = [
         "en": "sharp",
         "kk": "[ʃɑrp]",
         "uk": "/ʃɑːp/",
-        "zh": "adj. 尖銳的、苛刻的、鋒利的、尖的；adv. 幾點整、正點、準時、突然地；n. 升半音、升半音號、銳利的東西、騙子；v. 升音演奏",
+        "zh": "adj. 尖銳的、苛刻的、鋒利的、尖的；adv. 幾點整、正點、準時、突然地；n. 升半音、銳利之物",
         "unit": 13,
         "example": "He has a sharp tongue.",
         "exampleZh": "他的舌頭很尖。"

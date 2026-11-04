@@ -270,6 +270,7 @@ def run_health_audit():
         'missing_pos': 0,
         'placeholder_examples': 0,
         'english_residual_zh': 0,
+        'junk_residual_or_inverted': 0,
         'linguistic_contamination': 0
     }
 
@@ -307,7 +308,8 @@ def run_health_audit():
             'abnormal_kk': [],
             'missing_pos': [],
             'placeholder_examples': [],
-            'english_residual_zh': []
+            'english_residual_zh': [],
+            'junk_residual_or_inverted': []
         }
 
         seen_words = {}
@@ -342,6 +344,19 @@ def run_health_audit():
             if not CHINESE_CHAR_REGEX.search(zh):
                 db_metrics['english_residual_zh'].append((item_id, item.get('en'), zh))
 
+            # 6. 詞性高頻順序與百科/縮寫雜訊檢測
+            junk_tokens = ['季節性情感障礙', '唐菖蒲', '雷阿爾', '坦尼斯', '巴納納', '放狗咬', '印第安武士']
+            if any(tk in zh for tk in junk_tokens):
+                db_metrics['junk_residual_or_inverted'].append((item_id, item.get('en'), zh, '含百科/縮寫/音譯雜訊'))
+            if word == 'banana' and zh.startswith('adj.'):
+                db_metrics['junk_residual_or_inverted'].append((item_id, item.get('en'), zh, 'banana 詞性倒置'))
+            elif word == 'piano' and zh.startswith('adj.'):
+                db_metrics['junk_residual_or_inverted'].append((item_id, item.get('en'), zh, 'piano 詞性倒置'))
+            elif word == 'spell' and zh.startswith('n.'):
+                db_metrics['junk_residual_or_inverted'].append((item_id, item.get('en'), zh, 'spell 詞性倒置'))
+            elif word == 'english' and zh.startswith('adj.'):
+                db_metrics['junk_residual_or_inverted'].append((item_id, item.get('en'), zh, 'English 詞性倒置'))
+
         # 輸出此檔案健檢結果
         print(f"\n📂 [{db_info['file']}] {db_info['label']} (共 {db_count:,} 筆單字):")
         
@@ -350,7 +365,8 @@ def run_health_audit():
             ("空音標 / 異常音標", len(db_metrics['abnormal_kk']), 'abnormal_kk'),
             ("遺漏詞性標籤", len(db_metrics['missing_pos']), 'missing_pos'),
             ("機械占位例句", len(db_metrics['placeholder_examples']), 'placeholder_examples'),
-            ("格式或英文殘留", len(db_metrics['english_residual_zh']), 'english_residual_zh')
+            ("格式或英文殘留", len(db_metrics['english_residual_zh']), 'english_residual_zh'),
+            ("高頻倒置/雜訊釋義", len(db_metrics['junk_residual_or_inverted']), 'junk_residual_or_inverted')
         ]
 
         for label, count, key in checks:
@@ -384,6 +400,7 @@ def run_health_audit():
     print(f"  遺漏詞性標籤      : {overall_metrics['missing_pos']} 筆")
     print(f"  機械占位例句      : {overall_metrics['placeholder_examples']} 筆")
     print(f"  格式或英文殘留    : {overall_metrics['english_residual_zh']} 筆")
+    print(f"  高頻倒置/雜訊釋義 : {overall_metrics['junk_residual_or_inverted']} 筆")
     print(f"  詞形與搭配詞污染  : {overall_metrics['linguistic_contamination']} 筆")
     print("=" * 66)
 

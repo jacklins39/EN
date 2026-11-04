@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261103V2';
+        const APP_BUILD_VERSION = '20261104V1';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -63,20 +63,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261103V2"></script>
-    <script src="toeic_data.js?v=20261103V2"></script>
-    <script src="jh_data.js?v=20261103V2"></script>
-    <script src="listening_data.js?v=20261103V2"></script>
-    <script src="listening_words_data.js?v=20261103V2"></script>
-    <script src="uk_phonetics_manifest.js?v=20261103V2"></script>
-    <script src="words_audio_manifest.js?v=20261103V2"></script>
-    <script src="examples_audio_manifest.js?v=20261103V2"></script>
-    <script src="zh_audio_manifest.js?v=20261103V2"></script>
-    <script src="collocations_audio_manifest.js?v=20261103V2"></script>
-    <script src="syn_ant_data.js?v=20261103V2"></script>
-    <script src="synonyms_unit8_data.js?v=20261103V2"></script>
-    <script src="examples_unit9_data.js?v=20261103V2"></script>
-    <script src="game_whack.js?v=20261103V2"></script>
+    <script src="words_data.js?v=20261104V1"></script>
+    <script src="toeic_data.js?v=20261104V1"></script>
+    <script src="jh_data.js?v=20261104V1"></script>
+    <script src="listening_data.js?v=20261104V1"></script>
+    <script src="listening_words_data.js?v=20261104V1"></script>
+    <script src="uk_phonetics_manifest.js?v=20261104V1"></script>
+    <script src="words_audio_manifest.js?v=20261104V1"></script>
+    <script src="examples_audio_manifest.js?v=20261104V1"></script>
+    <script src="zh_audio_manifest.js?v=20261104V1"></script>
+    <script src="collocations_audio_manifest.js?v=20261104V1"></script>
+    <script src="syn_ant_data.js?v=20261104V1"></script>
+    <script src="synonyms_unit8_data.js?v=20261104V1"></script>
+    <script src="examples_unit9_data.js?v=20261104V1"></script>
+    <script src="game_whack.js?v=20261104V1"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -3220,9 +3220,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261101V2</span>
+                        <span id="app-version-display">版本 20261104V1</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261101V2</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261104V1</p>
                 </div>
             </div>
         </div>
@@ -3802,7 +3802,7 @@
         function splitPosAndZh(zhStr, explicitPos = '', exampleZh = '', exampleEn = '', targetEn = '') {
             let pos = (explicitPos || '').trim();
             let pureZh = (zhStr || '').trim();
-            if (!pureZh) return { pos: '', posBadgeText: '', pureZh: '', formattedZh: '', items: [] };
+            if (!pureZh) return { pos: '', posBadgeText: '', pureZh: '', formattedZh: '', items: [], hasExampleMatch: false };
 
             const posRegex = /(?:^|[；;]\s*)((?:adj|adv|prep|conj|pron|int|num|det|art|aux|modal\s*v|ph|vi|vt|[avnd])\.)\s*/gi;
             const matches = [...pureZh.matchAll(posRegex)];
@@ -3819,16 +3819,65 @@
                     let text = pureZh.slice(contentStart, contentEnd).trim();
                     text = text.replace(/^[；;、，,\s]+|[；;、，,\s]+$/g, '').trim();
                     if (text) {
-                        items.push({ pos: p, text });
+                        items.push({ pos: p, text, originalIdx: i, matchedExample: false, matchScore: 0 });
                     }
                 }
                 if (items.length > 0) {
+                    // 智慧例句語境匹配 (Contextual Matching)
+                    let hasExampleMatch = false;
+                    if (exampleZh) {
+                        const cleanExZh = exampleZh.replace(/[^\u4e00-\u9fa5a-zA-Z0-9]/g, '');
+                        items.forEach(it => {
+                            const cleanText = it.text.replace(/[\(（][^）\)]*[\)）]/g, '');
+                            const rawTerms = cleanText.split(/[,，、/；;\s]+/).map(t => t.trim()).filter(Boolean);
+                            let score = 0;
+                            for (const rawTerm of rawTerms) {
+                                const stripped = rawTerm.replace(/的$/g, '').trim();
+                                const candidates = [rawTerm];
+                                if (stripped && stripped !== rawTerm) candidates.push(stripped);
+                                for (const cand of candidates) {
+                                    if (cleanExZh.includes(cand)) {
+                                        let candScore = cand.length >= 2 ? cand.length * 3 : 1;
+                                        if (cand === rawTerm && cand.length >= 2) candScore += 2;
+                                        score += candScore;
+                                        break;
+                                    }
+                                }
+                            }
+                            it.matchScore = score;
+                        });
+
+                        let maxScore = 0;
+                        let bestItem = null;
+                        items.forEach(it => {
+                            if (it.matchScore > maxScore) {
+                                maxScore = it.matchScore;
+                                bestItem = it;
+                            }
+                        });
+
+                        // 門檻：最高分大於 0，且若為 1 分需 items[0] 未得分才晉升
+                        if (bestItem && (maxScore >= 2 || (maxScore === 1 && items[0].matchScore === 0))) {
+                            hasExampleMatch = true;
+                            bestItem.matchedExample = true;
+                        }
+                    }
+
+                    // 排序策略：
+                    // 1. 若例句命中某個詞性，將該匹配項置頂 (例句優先)
+                    // 2. 其餘項目保持原本資料庫的優先順序 (尊重常用度)
+                    items.sort((a, b) => {
+                        if (a.matchedExample && !b.matchedExample) return -1;
+                        if (!a.matchedExample && b.matchedExample) return 1;
+                        return a.originalIdx - b.originalIdx;
+                    });
+
                     const posSet = [...new Set(items.map(it => it.pos.toLowerCase()))];
                     const posBadgeText = posSet.join(' / ');
                     const uniqueTexts = [...new Set(items.map(it => it.text))];
                     const cleanPureZh = uniqueTexts.join('；');
                     const formattedZh = items.map(it => `${it.pos} ${it.text}`).join('；');
-                    return { pos: posBadgeText, posBadgeText, pureZh: cleanPureZh, formattedZh, items };
+                    return { pos: posBadgeText, posBadgeText, pureZh: cleanPureZh, formattedZh, items, hasExampleMatch };
                 }
             }
 
@@ -3846,7 +3895,7 @@
             pureZh = pureZh.replace(/^[:：、，,\s]+/, '').trim();
             const badge = pos ? (pos.toLowerCase().endsWith('.') ? pos.toLowerCase() : pos.toLowerCase() + '.') : '';
             const formatted = badge ? `${badge} ${pureZh}` : pureZh;
-            return { pos: badge, posBadgeText: badge, pureZh: pureZh || zhStr || '', formattedZh: formatted, items: badge ? [{ pos: badge, text: pureZh }] : [{ pos: '', text: pureZh }] };
+            return { pos: badge, posBadgeText: badge, pureZh: pureZh || zhStr || '', formattedZh: formatted, items: badge ? [{ pos: badge, text: pureZh, originalIdx: 0, matchedExample: false }] : [{ pos: '', text: pureZh, originalIdx: 0, matchedExample: false }], hasExampleMatch: false };
         }
 
         // 取得單字最核心、最常聽到的精簡中文釋義 (供卡片翻面、測驗選項與題目精簡展示)
@@ -6264,11 +6313,12 @@
                 if (parsed.items && parsed.items.length > 0) {
                     parsed.items.forEach((it, idx) => {
                         const isPrimary = (idx === 0);
+                        const isExampleMatch = it.matchedExample || (isPrimary && parsed.hasExampleMatch);
                         expHtml += `
                             <div class="flex items-start gap-1.5 py-0.5">
                                 ${it.pos ? `<span class="text-[11px] font-bold font-mono px-1.5 py-0.5 rounded border shrink-0 lowercase ${isPrimary ? 'bg-blue-100 text-blue-800 border-blue-200' : 'bg-slate-200/80 text-slate-700 border-slate-300/80'}">${esc(it.pos.toLowerCase())}</span>` : ''}
                                 <span class="text-xs ${isPrimary ? 'font-semibold text-slate-900' : 'text-slate-600'} leading-relaxed break-words">${esc(it.text)}</span>
-                                ${isPrimary && hasMultiplePos ? '<span class="text-[10px] text-blue-600 font-medium ml-auto shrink-0 bg-blue-50 px-1 rounded select-none">例句對應</span>' : ''}
+                                ${isExampleMatch && hasMultiplePos ? '<span class="text-[10px] text-blue-600 font-medium ml-auto shrink-0 bg-blue-50 px-1 rounded select-none">例句對應</span>' : ''}
                             </div>
                         `;
                     });

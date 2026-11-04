@@ -1064,7 +1064,7 @@ const jhWordsDB = [
         "en": "banana",
         "kk": "[bəˋnænə]",
         "uk": "/bəˈnɑːnə/",
-        "zh": "adj. 愚蠢的、發狂的；n. 香蕉、香蕉樹、巴納納",
+        "zh": "n. 香蕉、香蕉樹；adj. 愚蠢的、發狂的",
         "unit": 17,
         "example": "Monkeys like to eat sweet yellow bananas.",
         "exampleZh": "猴子喜歡吃香甜的黃香蕉。"
@@ -12284,7 +12284,7 @@ const jhWordsDB = [
         "en": "piano",
         "kk": "[piˋæno]",
         "uk": "/piˈænəʊ/",
-        "zh": "adj. 柔和的；adv. 輕柔地；n. 鋼琴",
+        "zh": "n. 鋼琴；adj. 柔和的；adv. 輕柔地",
         "unit": 18,
         "example": "She plays the piano very well.",
         "exampleZh": "她的鋼琴彈得非常好。"

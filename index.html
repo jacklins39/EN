@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261104V1';
+        const APP_BUILD_VERSION = '20261105V1';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -63,20 +63,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261104V1"></script>
-    <script src="toeic_data.js?v=20261104V1"></script>
-    <script src="jh_data.js?v=20261104V1"></script>
-    <script src="listening_data.js?v=20261104V1"></script>
-    <script src="listening_words_data.js?v=20261104V1"></script>
-    <script src="uk_phonetics_manifest.js?v=20261104V1"></script>
-    <script src="words_audio_manifest.js?v=20261104V1"></script>
-    <script src="examples_audio_manifest.js?v=20261104V1"></script>
-    <script src="zh_audio_manifest.js?v=20261104V1"></script>
-    <script src="collocations_audio_manifest.js?v=20261104V1"></script>
-    <script src="syn_ant_data.js?v=20261104V1"></script>
-    <script src="synonyms_unit8_data.js?v=20261104V1"></script>
-    <script src="examples_unit9_data.js?v=20261104V1"></script>
-    <script src="game_whack.js?v=20261104V1"></script>
+    <script src="words_data.js?v=20261105V1"></script>
+    <script src="toeic_data.js?v=20261105V1"></script>
+    <script src="jh_data.js?v=20261105V1"></script>
+    <script src="listening_data.js?v=20261105V1"></script>
+    <script src="listening_words_data.js?v=20261105V1"></script>
+    <script src="uk_phonetics_manifest.js?v=20261105V1"></script>
+    <script src="words_audio_manifest.js?v=20261105V1"></script>
+    <script src="examples_audio_manifest.js?v=20261105V1"></script>
+    <script src="zh_audio_manifest.js?v=20261105V1"></script>
+    <script src="collocations_audio_manifest.js?v=20261105V1"></script>
+    <script src="syn_ant_data.js?v=20261105V1"></script>
+    <script src="synonyms_unit8_data.js?v=20261105V1"></script>
+    <script src="examples_unit9_data.js?v=20261105V1"></script>
+    <script src="game_whack.js?v=20261105V1"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -3220,9 +3220,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261104V1</span>
+                        <span id="app-version-display">版本 20261105V1</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261104V1</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261105V1</p>
                 </div>
             </div>
         </div>
@@ -8961,7 +8961,16 @@
             const wordSpan = e.target.closest('.dict-word');
             if (wordSpan) {
                 e.stopPropagation();
-                lookupWord(wordSpan.getAttribute('data-word'));
+                handleWordLeave();
+                const word = wordSpan.getAttribute('data-word');
+                const isTouchOnly = window.matchMedia && window.matchMedia('(hover: none)').matches;
+                if (isTouchOnly) {
+                    if (typeof showWordTranslation === 'function') {
+                        showWordTranslation(e, word, false);
+                    }
+                } else {
+                    lookupWord(word);
+                }
             } else {
                 e.stopPropagation();
                 if (isSpeechEvalActive) resetSpeechEvalUI();
@@ -9227,6 +9236,66 @@
             return variants;
         }
 
+        // ==========================================
+        // 全域懸停浮出翻譯引擎 (Hover Word Tooltip Engine)
+        // 支援例句單字、同反義詞膠囊等游標懸停即時釋義浮動卡
+        // ==========================================
+        let globalHoverWordTimer = null;
+        let globalHoverLeaveTimer = null;
+
+        function handleWordHover(e, word) {
+            if (globalHoverLeaveTimer) {
+                clearTimeout(globalHoverLeaveTimer);
+                globalHoverLeaveTimer = null;
+            }
+            if (globalHoverWordTimer) clearTimeout(globalHoverWordTimer);
+            
+            const targetEl = (e && (e.currentTarget || e.target)) || null;
+            if (!targetEl) return;
+            const eventCopy = { target: targetEl, currentTarget: targetEl, stopPropagation: () => {} };
+            
+            globalHoverWordTimer = setTimeout(() => {
+                if (typeof showWordTranslation === 'function') {
+                    showWordTranslation(eventCopy, word, false);
+                }
+            }, 120);
+        }
+
+        function handleWordLeave() {
+            if (globalHoverWordTimer) {
+                clearTimeout(globalHoverWordTimer);
+                globalHoverWordTimer = null;
+            }
+            const tooltip = document.getElementById('word-tooltip');
+            if (tooltip) {
+                if (tooltip.timeoutId) clearTimeout(tooltip.timeoutId);
+                globalHoverLeaveTimer = setTimeout(() => {
+                    tooltip.classList.add('opacity-0');
+                    setTimeout(() => {
+                        if (tooltip.classList.contains('opacity-0')) {
+                            tooltip.style.display = 'none';
+                        }
+                    }, 200);
+                }, 280);
+            }
+        }
+
+        function handleWordPillClick(e, word) {
+            handleWordLeave();
+            const isTouchOnly = window.matchMedia && window.matchMedia('(hover: none)').matches;
+            if (isTouchOnly) {
+                if (e && typeof e.preventDefault === 'function') {
+                    e.preventDefault();
+                    e.stopPropagation();
+                }
+                if (typeof showWordTranslation === 'function') {
+                    showWordTranslation(e, word, false);
+                }
+            } else {
+                showWordDetailModal(word);
+            }
+        }
+
         // 精準例句單字標註引擎：100% 精準識別目標單字、片語、連字號、時態變化、音標變形與縮寫
         function renderClickableSentence(sentence, targetEn = '') {
             if (!sentence) return '';
@@ -9262,7 +9331,7 @@
                 if (part.startsWith('###TARGET:') && part.endsWith('###')) {
                     const word = part.slice(10, -3);
                     const cleanWord = normalizeAccent(word).toLowerCase().replace(/['".,!?]/g, '');
-                    return `<span class="dict-word cursor-pointer text-[#0071E3] font-black bg-blue-100/80 px-1 py-0.5 rounded border-b-2 border-[#0071E3] shadow-2xs transition-colors" data-word="${cleanWord}">${word}</span>`;
+                    return `<span class="dict-word cursor-pointer text-[#0071E3] font-black bg-blue-100/80 px-1 py-0.5 rounded border-b-2 border-[#0071E3] shadow-2xs transition-colors" data-word="${cleanWord}" onmouseenter="handleWordHover(event, '${cleanWord}')" onmouseleave="handleWordLeave()">${word}</span>`;
                 }
 
                 return part.replace(wordRegex, (match) => {
@@ -9289,7 +9358,7 @@
                         ? 'text-[#0071E3] font-black bg-blue-100/80 px-1 py-0.5 rounded border-b-2 border-[#0071E3] shadow-2xs'
                         : 'text-slate-700 hover:text-[#0071E3] border-b border-dotted border-slate-300 hover:border-[#0071E3]';
                     
-                    return `<span class="dict-word cursor-pointer ${styleClass} transition-colors" data-word="${normNoDot}">${match}</span>`;
+                    return `<span class="dict-word cursor-pointer ${styleClass} transition-colors" data-word="${normNoDot}" onmouseenter="handleWordHover(event, '${normNoDot}')" onmouseleave="handleWordLeave()">${match}</span>`;
                 });
             }).join('');
         }
@@ -11448,9 +11517,13 @@
                 `;
             }
 
-            // 同義 / 反義詞區塊 HTML (精選詞庫優先；語意推估僅作參考並明確標示)
+            // 同義 / 反義詞區塊 HTML (精選詞庫優先；語意推估僅作參考並明確標示；支援游標懸停即時釋義浮動卡)
             const relTag = (s, tone) => `
-                <button type="button" class="px-2.5 py-1 text-xs font-medium rounded-full bg-white ${tone} border shadow-2xs hover:bg-[#0071E3] hover:text-white hover:border-[#0071E3] active:scale-95 transition-all cursor-pointer" onclick="showWordDetailModal('${esc(s)}')">${esc(s)}</button>`;
+                <button type="button" class="px-2.5 py-1 text-xs font-medium rounded-full bg-white ${tone} border shadow-2xs hover:bg-[#0071E3] hover:text-white hover:border-[#0071E3] active:scale-95 transition-all cursor-pointer" 
+                        data-word="${esc(s)}" 
+                        onmouseenter="handleWordHover(event, '${esc(s)}')" 
+                        onmouseleave="handleWordLeave()" 
+                        onclick="handleWordPillClick(event, '${esc(s)}')">${esc(s)}</button>`;
             const hasInferred = synonyms.some(s => !coreSynSet.has(s.toLowerCase()));
             const synonymsHtml = (synonyms.length || antonyms.length) ? `
                 <div class="bg-slate-50/70 p-3.5 rounded-2xl border border-slate-200/70 space-y-2.5">
@@ -11607,7 +11680,16 @@
                 const wordSpan = e.target.closest('.dict-word');
                 if (wordSpan) {
                     e.stopPropagation();
-                    showWordDetailModal(wordSpan.getAttribute('data-word'));
+                    handleWordLeave();
+                    const word = wordSpan.getAttribute('data-word');
+                    const isTouchOnly = window.matchMedia && window.matchMedia('(hover: none)').matches;
+                    if (isTouchOnly) {
+                        if (typeof showWordTranslation === 'function') {
+                            showWordTranslation(e, word, false);
+                        }
+                    } else {
+                        showWordDetailModal(word);
+                    }
                 }
             });
 
@@ -11738,6 +11820,7 @@
         });
 
         function closeWordDetailModal() {
+            handleWordLeave();
             const modal = document.getElementById('word-detail-modal');
             if (!modal || modal.classList.contains('hidden')) return;
             modal.classList.add('hidden');
@@ -14258,8 +14341,8 @@
                     if (isAnnotated) wordClass = 'is-annotated';
                     else if (isCore) wordClass = 'is-core-word';
 
-                    // 標點符號與單字一體化，消除分離空隙；點擊查詞帶入 cleanWord
-                    return `<span class="listen-word cursor-pointer transition-colors duration-200 border-b-2 ${wordClass} hover:border-[#0071E3] rounded px-0.5" data-word="${cleanWord}" data-is-core="${isCore ? 'true' : 'false'}" onclick="event.stopPropagation(); showWordTranslation(event, '${cleanWord}')">${esc(token)}</span>`;
+                    // 標點符號與單字一體化，消除分離空隙；點擊查詞帶入 cleanWord；支援游標懸停即時釋義浮動卡
+                    return `<span class="listen-word cursor-pointer transition-colors duration-200 border-b-2 ${wordClass} hover:border-[#0071E3] rounded px-0.5" data-word="${cleanWord}" data-is-core="${isCore ? 'true' : 'false'}" onmouseenter="handleWordHover(event, '${cleanWord}')" onmouseleave="handleWordLeave()" onclick="event.stopPropagation(); showWordTranslation(event, '${cleanWord}')">${esc(token)}</span>`;
                 }).join(' ');
 
                 const role = sObj.role || (sObj.speaker === 'Sophia' ? 'B' : 'A');
@@ -14361,26 +14444,30 @@
         }
         updateBlindModeUI();
 
-        // 顯示單字翻譯的 tooltip 並直接發音
-        function showWordTranslation(e, wordText) {
-            e.stopPropagation(); // 避免觸發句子的 onclick
+        // 顯示單字翻譯的 tooltip 並直接發音 (支援 autoPlay=false 之懸停模式)
+        function showWordTranslation(e, wordText, autoPlay = true) {
+            if (e && typeof e.stopPropagation === 'function') {
+                e.stopPropagation(); // 避免觸發句子的 onclick
+            }
 
-            // 1. 若背景聽力正在朗讀，暫停背景音訊以確保單字發音清晰無干擾
-            if (typeof listeningAudioPlayer !== 'undefined' && listeningAudioPlayer && !listeningAudioPlayer.paused) {
+            // 1. 若背景聽力正在朗讀且啟動 autoPlay，暫停背景音訊以確保單字發音清晰無干擾
+            if (autoPlay && typeof listeningAudioPlayer !== 'undefined' && listeningAudioPlayer && !listeningAudioPlayer.paused) {
                 listeningAudioPlayer.pause();
                 if (typeof updateListeningPlayBtn === 'function') updateListeningPlayBtn();
             }
 
-            // 2. 點擊單字之視覺觸感回饋 (瞬間亮藍)
-            if (e && e.target) {
+            // 2. 點擊單字之視覺觸感回饋 (瞬間亮藍，僅在主動點擊朗讀時呈現)
+            if (autoPlay && e && e.target && e.target.classList) {
                 e.target.classList.add('bg-blue-100', 'text-[#0071E3]', 'font-bold');
                 setTimeout(() => {
                     e.target.classList.remove('bg-blue-100', 'text-[#0071E3]', 'font-bold');
                 }, 400);
             }
 
-            // 在字庫中尋找單字
-            let w = vocabularyDB.find(x => x.en.toLowerCase() === wordText);
+            // 在字庫中尋找單字 (正規化字串與常見詞尾還原)
+            let cleanWordText = String(wordText || '').toLowerCase().trim().replace(/^[^\w]+|[^\w]+$/g, '');
+            if (!cleanWordText) return;
+            let w = vocabularyDB.find(x => x.en.toLowerCase() === cleanWordText);
             
             // 如果找不到，嘗試簡單的字尾還原 (去複數、去過去式、去 ing 等)
             if (!w) {
@@ -14411,18 +14498,18 @@
                     'rang': 'ring', 'rung': 'ring', 'children': 'child', 'men': 'man',
                     'women': 'woman', 'teeth': 'tooth', 'feet': 'foot', 'mice': 'mouse'
                 };
-                if (irregulars[wordText]) stems.push(irregulars[wordText]);
+                if (irregulars[cleanWordText]) stems.push(irregulars[cleanWordText]);
 
-                if (wordText.endsWith('ies')) stems.push(wordText.slice(0, -3) + 'y');
-                if (wordText.endsWith('es')) stems.push(wordText.slice(0, -2));
-                if (wordText.endsWith('s')) stems.push(wordText.slice(0, -1));
-                if (wordText.endsWith('ied')) stems.push(wordText.slice(0, -3) + 'y');
-                if (wordText.endsWith('ed')) stems.push(wordText.slice(0, -2), wordText.slice(0, -1));
-                if (wordText.endsWith('ing')) stems.push(wordText.slice(0, -3), wordText.slice(0, -3) + 'e', wordText.slice(0, -4));
-                if (wordText.endsWith('ily')) stems.push(wordText.slice(0, -3) + 'y');
-                if (wordText.endsWith('ly')) stems.push(wordText.slice(0, -2));
-                if (wordText.endsWith('est')) stems.push(wordText.slice(0, -3), wordText.slice(0, -3) + 'e', wordText.slice(0, -4));
-                if (wordText.endsWith('er')) stems.push(wordText.slice(0, -2), wordText.slice(0, -2) + 'e', wordText.slice(0, -3));
+                if (cleanWordText.endsWith('ies')) stems.push(cleanWordText.slice(0, -3) + 'y');
+                if (cleanWordText.endsWith('es')) stems.push(cleanWordText.slice(0, -2));
+                if (cleanWordText.endsWith('s')) stems.push(cleanWordText.slice(0, -1));
+                if (cleanWordText.endsWith('ied')) stems.push(cleanWordText.slice(0, -3) + 'y');
+                if (cleanWordText.endsWith('ed')) stems.push(cleanWordText.slice(0, -2), cleanWordText.slice(0, -1));
+                if (cleanWordText.endsWith('ing')) stems.push(cleanWordText.slice(0, -3), cleanWordText.slice(0, -3) + 'e', cleanWordText.slice(0, -4));
+                if (cleanWordText.endsWith('ily')) stems.push(cleanWordText.slice(0, -3) + 'y');
+                if (cleanWordText.endsWith('ly')) stems.push(cleanWordText.slice(0, -2));
+                if (cleanWordText.endsWith('est')) stems.push(cleanWordText.slice(0, -3), cleanWordText.slice(0, -3) + 'e', cleanWordText.slice(0, -4));
+                if (cleanWordText.endsWith('er')) stems.push(cleanWordText.slice(0, -2), cleanWordText.slice(0, -2) + 'e', cleanWordText.slice(0, -3));
                 
                 for (const stem of stems) {
                     w = vocabularyDB.find(x => x.en.toLowerCase() === stem);
@@ -14430,17 +14517,9 @@
                 }
             }
 
-            // 3. 若聽力特訓短文正在播放，立即暫停背景播放，避免背景人聲與單字發音衝突且防止句子繼續跑
-            if (typeof isListeningPlaying !== 'undefined' && isListeningPlaying && typeof listeningAudioPlayer !== 'undefined') {
-                listeningAudioPlayer.pause();
-                isListeningPlaying = false;
-                if (typeof updateListeningPlayBtn === 'function') updateListeningPlayBtn();
-                if (typeof stopWordTrackingLoop === 'function') stopWordTrackingLoop();
-            }
-
-            // 4. 直接發音 (優先朗讀還原後的原形，若無則朗讀當前單字)
-            const speakWord = (w && w.en) ? w.en : wordText;
-            if (typeof playAudio === 'function') {
+            // 3. 直接發音 (僅在 autoPlay === true 時執行，避免懸停掠過時發出噪音)
+            const speakWord = (w && w.en) ? w.en : cleanWordText;
+            if (autoPlay && typeof playAudio === 'function') {
                 playAudio(speakWord);
             }
             
@@ -14448,23 +14527,22 @@
             if (!tooltip) {
                 tooltip = document.createElement('div');
                 tooltip.id = 'word-tooltip';
-                tooltip.className = 'absolute bg-gray-900 text-white text-sm px-3.5 py-2.5 rounded-xl shadow-xl z-50 pointer-events-none transition-opacity duration-200 opacity-0 max-w-xs border border-gray-700/60 backdrop-blur-md';
                 document.body.appendChild(tooltip);
             }
+            tooltip.className = 'fixed bg-gray-900/95 text-white text-sm px-3.5 py-2.5 rounded-xl shadow-2xl z-[9999] pointer-events-auto transition-opacity duration-200 opacity-0 max-w-xs border border-gray-700/80 backdrop-blur-md select-none';
             
             const safeSpeak = esc(speakWord).replace(/'/g, "\\'");
-            const cleanWordText = wordText.toLowerCase();
             const safeWord = esc(cleanWordText).replace(/'/g, "\\'");
-            const isMarked = currentArticleAnnotatedWords.has(cleanWordText);
-            const isCore = isArticleCoreWord(cleanWordText);
-            const annotateBtnHtml = `
+            const isMarked = (typeof currentArticleAnnotatedWords !== 'undefined' && currentArticleAnnotatedWords.has(cleanWordText));
+            const isCore = (typeof isArticleCoreWord === 'function') ? isArticleCoreWord(cleanWordText) : false;
+            const annotateBtnHtml = (typeof currentArticleAnnotatedWords !== 'undefined') ? `
                 <button id="btn-annotate-${cleanWordText}" onclick="event.stopPropagation(); toggleAnnotateWord('${safeWord}', event)" 
                         class="pointer-events-auto px-2 py-0.5 rounded text-[11px] font-medium transition-colors flex items-center gap-1 shrink-0 ${
                             isMarked ? 'bg-emerald-600 text-white shadow-xs' : 'bg-gray-800 text-emerald-400 hover:bg-gray-700 border border-emerald-500/30'
                         }" title="標註此單字，並同步加到單字頁">
                     ${isMarked ? '✓ 已標註' : '🏷️ 標註單字'}
                 </button>
-            `;
+            ` : '';
 
             if (w) {
                 const isAlreadyCustom = (typeof customWordsDB !== 'undefined' && customWordsDB.some(cw => cw.en.toLowerCase() === cleanWordText));
@@ -14475,7 +14553,7 @@
                             ${w.kk ? `<span class="font-normal text-gray-300 text-xs">${esc(w.kk)}</span>` : ''}
                             ${isCore ? `<span class="text-[10px] bg-blue-500/25 text-blue-300 border border-blue-400/30 px-1.5 py-0.2 rounded font-medium">核心單字</span>` : ''}
                         </div>
-                        <button onclick="event.stopPropagation(); playAudio('${safeSpeak}')" class="pointer-events-auto text-teal-300 hover:text-white p-1 rounded-full hover:bg-gray-800 transition shrink-0" title="重播單字發音">
+                        <button onclick="event.stopPropagation(); playAudio('${safeSpeak}')" class="pointer-events-auto text-teal-300 hover:text-white p-1 rounded-full hover:bg-gray-800 transition shrink-0 cursor-pointer" title="重播單字發音">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
                         </button>
                     </div>
@@ -14483,9 +14561,9 @@
                     <div class="mt-2 pt-1.5 border-t border-gray-700/60 flex items-center justify-between gap-1.5 flex-wrap">
                         <div class="flex items-center gap-1.5">
                             ${annotateBtnHtml}
-                            <button onclick="event.stopPropagation(); showWordDetailModal('${safeSpeak}')" class="text-blue-300 hover:text-white pointer-events-auto px-2 py-0.5 rounded bg-gray-800 hover:bg-blue-600 text-[11px] font-medium shadow-xs whitespace-nowrap transition-colors flex items-center gap-1" title="查看三態與詳細用法">📖 詳解</button>
+                            <button onclick="event.stopPropagation(); handleWordLeave(); showWordDetailModal('${safeSpeak}')" class="text-blue-300 hover:text-white pointer-events-auto px-2 py-0.5 rounded bg-gray-800 hover:bg-blue-600 text-[11px] font-medium shadow-xs whitespace-nowrap transition-colors flex items-center gap-1 cursor-pointer" title="查看三態與詳細用法">📖 詳解</button>
                         </div>
-                        ${!isAlreadyCustom ? `<button onclick="event.stopPropagation(); promptAddMissingWord('${safeWord}', this)" class="text-teal-300 hover:text-teal-200 pointer-events-auto px-2 py-0.5 rounded bg-gray-800 text-[11px] font-medium shadow-xs whitespace-nowrap transition-colors">➕ 加入自訂</button>` : `<span class="text-emerald-400 text-[11px] font-medium whitespace-nowrap">✅ 已在字庫</span>`}
+                        ${!isAlreadyCustom ? `<button onclick="event.stopPropagation(); promptAddMissingWord('${safeWord}', this)" class="text-teal-300 hover:text-teal-200 pointer-events-auto px-2 py-0.5 rounded bg-gray-800 text-[11px] font-medium shadow-xs whitespace-nowrap transition-colors cursor-pointer">➕ 加入自訂</button>` : `<span class="text-emerald-400 text-[11px] font-medium whitespace-nowrap">✅ 已在字庫</span>`}
                     </div>
                 `;
             } else {
@@ -14496,7 +14574,7 @@
                             <span class="font-semibold text-gray-200 text-sm">${esc(wordText)}</span>
                             ${isCore ? `<span class="text-[10px] bg-blue-500/25 text-blue-300 border border-blue-400/30 px-1.5 py-0.2 rounded font-medium">核心單字</span>` : ''}
                         </div>
-                        <button onclick="event.stopPropagation(); playAudio('${safeWord}')" class="pointer-events-auto text-teal-300 hover:text-white p-1 rounded-full hover:bg-gray-800 transition shrink-0" title="重播單字發音">
+                        <button onclick="event.stopPropagation(); playAudio('${safeWord}')" class="pointer-events-auto text-teal-300 hover:text-white p-1 rounded-full hover:bg-gray-800 transition shrink-0 cursor-pointer" title="重播單字發音">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
                         </button>
                     </div>
@@ -14506,51 +14584,65 @@
                     <div class="mt-2 pt-1.5 border-t border-gray-700/60 flex items-center justify-between gap-1.5 flex-wrap">
                         <div class="flex items-center gap-1.5">
                             ${annotateBtnHtml}
-                            <button onclick="event.stopPropagation(); showWordDetailModal('${safeWord}')" class="text-blue-300 hover:text-white pointer-events-auto px-2 py-0.5 rounded bg-gray-800 hover:bg-blue-600 text-[11px] font-medium shadow-xs whitespace-nowrap transition-colors flex items-center gap-1" title="查看三態與詳細用法">📖 詳解</button>
+                            <button onclick="event.stopPropagation(); handleWordLeave(); showWordDetailModal('${safeWord}')" class="text-blue-300 hover:text-white pointer-events-auto px-2 py-0.5 rounded bg-gray-800 hover:bg-blue-600 text-[11px] font-medium shadow-xs whitespace-nowrap transition-colors flex items-center gap-1 cursor-pointer" title="查看三態與詳細用法">📖 詳解</button>
                         </div>
-                        ${isAlreadyCustom ? `<span class="text-emerald-400 text-[11px] font-medium whitespace-nowrap">✅ 已在字庫</span>` : `<button onclick="event.stopPropagation(); promptAddMissingWord('${safeWord}', this)" class="text-teal-300 hover:text-teal-200 pointer-events-auto px-2 py-0.5 rounded bg-gray-800 text-[11px] font-medium shadow-xs whitespace-nowrap transition-colors">➕ 加入自訂</button>`}
+                        ${isAlreadyCustom ? `<span class="text-emerald-400 text-[11px] font-medium whitespace-nowrap">✅ 已在字庫</span>` : `<button onclick="event.stopPropagation(); promptAddMissingWord('${safeWord}', this)" class="text-teal-300 hover:text-teal-200 pointer-events-auto px-2 py-0.5 rounded bg-gray-800 text-[11px] font-medium shadow-xs whitespace-nowrap transition-colors cursor-pointer">➕ 加入自訂</button>`}
                     </div>
                 `;
-                fetchQuickTranslation(wordText).then(zh => {
+                fetchWordDetails(cleanWordText).then(details => {
                     const el = document.getElementById('tooltip-auto-zh');
                     if (el) {
                         el.className = 'text-xs text-gray-100 font-medium';
-                        el.textContent = zh || '字庫中未收錄';
+                        const display = details && details.zh ? (details.pos ? `${details.pos} ${details.zh}` : details.zh) : '字庫中未收錄';
+                        el.textContent = display;
                     }
                 });
             }
 
-            // 計算位置 (避免超出手機螢幕邊界)
-            const rect = e.target.getBoundingClientRect();
+            // 計算位置 (fixed 螢幕視窗定位，置中於單字上方/下方，避免超出邊界且相容彈窗與滾動)
+            tooltip.style.display = 'block';
             tooltip.classList.remove('opacity-0');
-            const tooltipWidth = tooltip.offsetWidth || 200;
-            const scrollLeft = window.scrollX || window.pageXOffset || 0;
-            const scrollY = window.scrollY || window.pageYOffset || 0;
-            let leftPos = rect.left + scrollLeft;
-            const maxLeft = scrollLeft + window.innerWidth - tooltipWidth - 12;
-            leftPos = Math.max(scrollLeft + 10, Math.min(leftPos, maxLeft));
+            const targetEl = (e && e.target && typeof e.target.getBoundingClientRect === 'function') 
+                ? e.target 
+                : (e && e.currentTarget && typeof e.currentTarget.getBoundingClientRect === 'function' ? e.currentTarget : null);
+            
+            if (targetEl) {
+                const rect = targetEl.getBoundingClientRect();
+                const tooltipWidth = tooltip.offsetWidth || 220;
+                let leftPos = rect.left + (rect.width / 2) - (tooltipWidth / 2);
+                const maxLeft = window.innerWidth - tooltipWidth - 12;
+                leftPos = Math.max(10, Math.min(leftPos, maxLeft));
+                tooltip.style.left = leftPos + 'px';
 
-            tooltip.style.left = leftPos + 'px';
-            let topPos = rect.top + scrollY - tooltip.offsetHeight - 6;
-            if (topPos < scrollY + 10) {
-                topPos = rect.bottom + scrollY + 8; // 上方空間不足時放下方
+                let topPos = rect.top - tooltip.offsetHeight - 8;
+                if (topPos < 10) {
+                    topPos = rect.bottom + 8; // 上方空間不足時放下方
+                }
+                tooltip.style.top = topPos + 'px';
             }
-            tooltip.style.top = topPos + 'px';
             
             // 如果游標移入 tooltip，暫停隱藏計時
-            tooltip.onmouseenter = () => { if (tooltip.timeoutId) clearTimeout(tooltip.timeoutId); };
+            tooltip.onmouseenter = () => { 
+                if (globalHoverLeaveTimer) clearTimeout(globalHoverLeaveTimer);
+                if (tooltip.timeoutId) clearTimeout(tooltip.timeoutId); 
+            };
             tooltip.onmouseleave = () => {
-                tooltip.timeoutId = setTimeout(() => {
-                    tooltip.classList.add('opacity-0');
-                }, 2000);
+                handleWordLeave();
             };
 
             // 預設 5 秒後隱藏
             if (tooltip.timeoutId) clearTimeout(tooltip.timeoutId);
             tooltip.timeoutId = setTimeout(() => {
-                tooltip.classList.add('opacity-0');
+                handleWordLeave();
             }, 5000);
         }
+
+        // 全域空白處點擊關閉浮動 tooltip
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('#word-tooltip') && !e.target.closest('.dict-word') && !e.target.closest('.listen-word') && !e.target.closest('[data-word]')) {
+                handleWordLeave();
+            }
+        });
 
         // 同時查詢單字繁體中文與詞性 (dt=t + dt=bd)
         const wordDetailsCache = {};

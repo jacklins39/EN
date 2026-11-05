@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261105V15';
+        const APP_BUILD_VERSION = '20261105V16';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -63,20 +63,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261105V15"></script>
-    <script src="toeic_data.js?v=20261105V15"></script>
-    <script src="jh_data.js?v=20261105V15"></script>
-    <script src="listening_data.js?v=20261105V15"></script>
-    <script src="listening_words_data.js?v=20261105V15"></script>
-    <script src="uk_phonetics_manifest.js?v=20261105V15"></script>
-    <script src="words_audio_manifest.js?v=20261105V15"></script>
-    <script src="examples_audio_manifest.js?v=20261105V15"></script>
-    <script src="zh_audio_manifest.js?v=20261105V15"></script>
-    <script src="collocations_audio_manifest.js?v=20261105V15"></script>
-    <script src="syn_ant_data.js?v=20261105V15"></script>
-    <script src="synonyms_unit8_data.js?v=20261105V15"></script>
-    <script src="examples_unit9_data.js?v=20261105V15"></script>
-    <script src="game_whack.js?v=20261105V15"></script>
+    <script src="words_data.js?v=20261105V16"></script>
+    <script src="toeic_data.js?v=20261105V16"></script>
+    <script src="jh_data.js?v=20261105V16"></script>
+    <script src="listening_data.js?v=20261105V16"></script>
+    <script src="listening_words_data.js?v=20261105V16"></script>
+    <script src="uk_phonetics_manifest.js?v=20261105V16"></script>
+    <script src="words_audio_manifest.js?v=20261105V16"></script>
+    <script src="examples_audio_manifest.js?v=20261105V16"></script>
+    <script src="zh_audio_manifest.js?v=20261105V16"></script>
+    <script src="collocations_audio_manifest.js?v=20261105V16"></script>
+    <script src="syn_ant_data.js?v=20261105V16"></script>
+    <script src="synonyms_unit8_data.js?v=20261105V16"></script>
+    <script src="examples_unit9_data.js?v=20261105V16"></script>
+    <script src="game_whack.js?v=20261105V16"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -2264,32 +2264,40 @@
            2. 全域字級微升：將全站所有分頁 (學習/聽力/字庫/挑戰/設定/分析) 與彈窗內的微字體同步適度放大，且嚴守單行安全邊界不跑位、不影響電腦版
            ========================================================= */
         @media (max-width: 639px) {
+            /* 1. 橫向減脂：兩側釋放寬度，容納放大字體 */
             main {
-                padding-left: 0.625rem !important;  /* 10px (原 14px) */
-                padding-right: 0.625rem !important;
+                padding-left: 0.5rem !important;
+                padding-right: 0.5rem !important;
             }
             #view-dashboard > div,
+            #view-study > div,
             #view-listening > div,
             #view-weak > div,
             #view-settings > div,
             #view-analysis > div,
             #view-completed > div,
             #whack-lobby-panel {
-                padding-left: 0.85rem !important;   /* 13.6px (原 p-6 24px，大幅釋放橫向可用空間) */
-                padding-right: 0.85rem !important;
+                padding-left: 0.75rem !important;
+                padding-right: 0.75rem !important;
             }
             #word-detail-modal > div,
             #dict-modal > div {
-                padding: 1rem !important;
+                padding: 0.85rem !important;
             }
-            /* 全站微字體底線提升 (10px -> 11px, 11px -> 12px)，搭配上方釋放的橫向寬度，不折行不截斷 */
+
+            /* 2. 微小字階層實打實提升 (10px -> 12.5px, 11px -> 13.5px) - 肉眼真正有感變大！ */
             .text-\[10px\] {
-                font-size: 11px !important;
+                font-size: 12.5px !important;
+                line-height: 1.35 !important;
             }
             .text-\[11px\] {
-                font-size: 12px !important;
+                font-size: 13.5px !important;
+                line-height: 1.4 !important;
             }
-            /* 各大分頁與彈窗內文與按鈕全域放大 */
+
+            /* 3. 全站各大分頁（首頁 Dashboard、單字卡 Study、聽力、字庫、設定、分析、彈窗）全面覆蓋放大 */
+            #view-dashboard .text-xs,
+            #view-study .text-xs,
             #view-listening .text-xs,
             #view-weak .text-xs,
             #view-settings .text-xs,
@@ -2297,8 +2305,12 @@
             #view-game .text-xs,
             #word-detail-modal .text-xs,
             #dict-modal .text-xs {
-                font-size: 13px !important;
+                font-size: 13.5px !important;
+                line-height: 1.4 !important;
             }
+
+            #view-dashboard .text-sm,
+            #view-study .text-sm,
             #view-listening .text-sm,
             #view-weak .text-sm,
             #view-settings .text-sm,
@@ -2306,7 +2318,46 @@
             #view-game .text-sm,
             #word-detail-modal .text-sm,
             #dict-modal .text-sm {
-                font-size: 14.5px !important;
+                font-size: 15px !important;
+                line-height: 1.45 !important;
+            }
+
+            /* 4. 底部導航欄文字加粗放大 */
+            nav span.text-xs {
+                font-size: 13px !important;
+                font-weight: 700 !important;
+            }
+
+            /* 5. 單字學習卡核心內容放大 */
+            #card-word,
+            #card-word-back {
+                font-size: 1.85rem !important;
+            }
+            #card-translation {
+                font-size: 1.15rem !important;
+            }
+            #card-example {
+                font-size: 15.5px !important;
+                line-height: 1.5 !important;
+            }
+            #card-example-zh {
+                font-size: 14px !important;
+                line-height: 1.5 !important;
+            }
+
+            /* 6. 單字預覽清單彈窗字體放大 */
+            #preview-list-container .dict-word .font-bold.text-slate-800 {
+                font-size: 15.5px !important;
+            }
+            #preview-list-container .dict-word .text-xs {
+                font-size: 13.5px !important;
+            }
+
+            /* 7. 題型選擇器膠囊按鈕微調 (確保 4 欄並排完美不折行) */
+            .quiz-mode-selector .quiz-pill {
+                font-size: 12px !important;
+                padding-left: 2px !important;
+                padding-right: 2px !important;
             }
         }
     </style>
@@ -3321,9 +3372,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261105V15</span>
+                        <span id="app-version-display">版本 20261105V16</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261105V15</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261105V16</p>
                 </div>
             </div>
         </div>

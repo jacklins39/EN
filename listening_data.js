@@ -10,56 +10,56 @@ const listeningArticlesDB = [
       {
         "en": "Hello! I would like to order a cheeseburger and a large fries.",
         "zh": "你好！我想點一個起司漢堡和大份薯條。",
-        "start": 0.0,
-        "end": 1.8
+        "start": 0.00,
+        "end": 5.09
       },
       {
         "en": "Could I also get a diet cola?",
         "zh": "可以再來一杯健怡可樂嗎？",
-        "start": 1.75,
-        "end": 5.93
+        "start": 5.51,
+        "end": 8.08
       },
       {
         "en": "That will be all.",
         "zh": "這樣就可以了。",
-        "start": 5.93,
-        "end": 8.82
+        "start": 8.50,
+        "end": 10.42
       },
       {
         "en": "Is it for here or to go?",
         "zh": "內用還是外帶？",
-        "start": 8.82,
-        "end": 10.96
+        "start": 10.84,
+        "end": 13.12
       },
       {
         "en": "To go, please.",
         "zh": "外帶，謝謝。",
-        "start": 10.96,
-        "end": 13.5
+        "start": 13.54,
+        "end": 15.86
       },
       {
         "en": "Your total is eight dollars and fifty cents.",
         "zh": "總共是八塊五毛美元。",
-        "start": 13.5,
-        "end": 16.1
+        "start": 16.28,
+        "end": 19.64
       },
       {
         "en": "Here is a ten dollar bill.",
         "zh": "這是一張十元鈔票。",
-        "start": 16.1,
-        "end": 19.93
+        "start": 20.06,
+        "end": 22.46
       },
       {
         "en": "Keep the change.",
         "zh": "不用找零了。",
-        "start": 19.93,
-        "end": 22.62
+        "start": 22.88,
+        "end": 24.88
       },
       {
         "en": "Thank you very much! Have a nice day.",
         "zh": "非常感謝！祝你有美好的一天。",
-        "start": 22.62,
-        "end": 24.82
+        "start": 25.30,
+        "end": 29.28
       }
     ],
     "grammar": [
@@ -6746,7 +6746,7 @@ const listeningArticlesDB = [
         "avatar": "👩",
         "en": "Good morning, Lily! Time to wake up and brush your teeth.",
         "zh": "早安莉莉！該起床刷牙囉。",
-        "start": 0.0,
+        "start": 0.00,
         "end": 4.94
       },
       {
@@ -6756,8 +6756,8 @@ const listeningArticlesDB = [
         "avatar": "👧",
         "en": "Good morning, Mommy! Where is my pink toothbrush?",
         "zh": "早安媽咪！我的粉紅色牙刷在哪裡？",
-        "start": 5.29,
-        "end": 10.43
+        "start": 5.38,
+        "end": 10.51
       },
       {
         "speaker": "Mom",
@@ -6766,8 +6766,8 @@ const listeningArticlesDB = [
         "avatar": "👩",
         "en": "It is right next to the sink. Don't forget to wash your face too.",
         "zh": "就在洗手台旁邊。別忘了也要洗臉喔。",
-        "start": 10.78,
-        "end": 16.04
+        "start": 10.94,
+        "end": 16.20
       },
       {
         "speaker": "Lily",
@@ -6776,8 +6776,8 @@ const listeningArticlesDB = [
         "avatar": "👧",
         "en": "All clean! Mommy, I am hungry. What is for breakfast today?",
         "zh": "都洗乾淨了！媽咪我好餓，今天早餐吃什麼？",
-        "start": 16.39,
-        "end": 23.3
+        "start": 16.63,
+        "end": 23.54
       },
       {
         "speaker": "Mom",
@@ -6786,8 +6786,8 @@ const listeningArticlesDB = [
         "avatar": "👩",
         "en": "I made warm pancakes and fresh strawberries for you.",
         "zh": "我為妳做了熱騰騰的鬆餅和新鮮草莓。",
-        "start": 23.65,
-        "end": 27.32
+        "start": 23.98,
+        "end": 27.65
       },
       {
         "speaker": "Lily",
@@ -6796,8 +6796,8 @@ const listeningArticlesDB = [
         "avatar": "👧",
         "en": "Yummy! Can I have a cup of warm milk, please?",
         "zh": "太棒了！請問我可以喝一杯溫牛奶嗎？",
-        "start": 27.67,
-        "end": 32.61
+        "start": 28.08,
+        "end": 33.02
       },
       {
         "speaker": "Mom",
@@ -6806,8 +6806,8 @@ const listeningArticlesDB = [
         "avatar": "👩",
         "en": "Of course, sweetie. Sit down at the table and enjoy your breakfast.",
         "zh": "當然可以，寶貝。到餐桌前坐好，享用妳的早餐吧。",
-        "start": 32.96,
-        "end": 38.55
+        "start": 33.46,
+        "end": 39.05
       },
       {
         "speaker": "Lily",
@@ -6816,8 +6816,8 @@ const listeningArticlesDB = [
         "avatar": "👧",
         "en": "Thank you, Mommy! I love you so much.",
         "zh": "謝謝媽咪！我好愛妳。",
-        "start": 38.9,
-        "end": 43.58
+        "start": 39.48,
+        "end": 44.16
       }
     ],
     "grammar": [
@@ -6914,7 +6914,7 @@ const listeningArticlesDB = [
         "avatar": "👩",
         "en": "Lily, look at the floor! Your teddy bear and toy blocks are everywhere.",
         "zh": "莉莉，看地板！妳的小熊玩偶和積木散落得到處都是。",
-        "start": 0.0,
+        "start": 0.00,
         "end": 5.76
       },
       {
@@ -6924,8 +6924,8 @@ const listeningArticlesDB = [
         "avatar": "👧",
         "en": "Oops, sorry Mommy! Can you help me put them into the toy box?",
         "zh": "哎呀，對不起媽咪！妳可以幫我把它們放進玩具箱嗎？",
-        "start": 6.11,
-        "end": 11.92
+        "start": 6.19,
+        "end": 12.00
       },
       {
         "speaker": "Mom",
@@ -6934,8 +6934,8 @@ const listeningArticlesDB = [
         "avatar": "👩",
         "en": "Sure, let's clean up together. Teamwork makes the dream work!",
         "zh": "當然，我們一起收拾。大家同心協力最棒了！",
-        "start": 12.27,
-        "end": 17.6
+        "start": 12.43,
+        "end": 17.76
       },
       {
         "speaker": "Lily",
@@ -6944,8 +6944,8 @@ const listeningArticlesDB = [
         "avatar": "👧",
         "en": "Look, Mommy! All the toys are sleeping in the big box now.",
         "zh": "媽咪妳看！現在所有玩具都在大箱子裡睡覺了。",
-        "start": 17.95,
-        "end": 23.81
+        "start": 18.19,
+        "end": 24.05
       },
       {
         "speaker": "Mom",
@@ -6954,8 +6954,8 @@ const listeningArticlesDB = [
         "avatar": "👩",
         "en": "Great job, Lily! You are such a helpful big girl.",
         "zh": "做得很棒，莉莉！妳真是個體貼的小幫手。",
-        "start": 24.16,
-        "end": 28.94
+        "start": 24.48,
+        "end": 29.26
       },
       {
         "speaker": "Lily",
@@ -6964,8 +6964,8 @@ const listeningArticlesDB = [
         "avatar": "👧",
         "en": "Yay! Now can we read my favorite bunny storybook in bed?",
         "zh": "耶！那現在我們可以在床上讀我最喜歡的小兔子故事書了嗎？",
-        "start": 29.29,
-        "end": 34.69
+        "start": 29.69,
+        "end": 35.09
       },
       {
         "speaker": "Mom",
@@ -6974,8 +6974,8 @@ const listeningArticlesDB = [
         "avatar": "👩",
         "en": "Put on your warm pajamas first, then we will read together.",
         "zh": "先換上妳溫暖的睡衣，然後我們就一起讀。",
-        "start": 35.04,
-        "end": 39.24
+        "start": 35.52,
+        "end": 39.72
       },
       {
         "speaker": "Lily",
@@ -6984,8 +6984,8 @@ const listeningArticlesDB = [
         "avatar": "👧",
         "en": "Okay! Goodnight, Mommy. Sweet dreams!",
         "zh": "好的！晚安，媽咪。祝妳好夢！",
-        "start": 39.59,
-        "end": 45.3
+        "start": 40.15,
+        "end": 45.86
       }
     ],
     "grammar": [
@@ -7082,7 +7082,7 @@ const listeningArticlesDB = [
         "avatar": "👨",
         "en": "Hey Lily, look outside! The sun is shining and the breeze is so nice.",
         "zh": "嘿莉莉，看窗外！陽光明媚，微風吹起來好舒服。",
-        "start": 0.0,
+        "start": 0.00,
         "end": 5.74
       },
       {
@@ -7093,7 +7093,7 @@ const listeningArticlesDB = [
         "en": "Do you want to go to the park with Daddy?",
         "zh": "妳想和爸爸一起去公園玩嗎？",
         "start": 6.09,
-        "end": 9.07
+        "end": 9.06
       },
       {
         "speaker": "Lily",
@@ -7102,8 +7102,8 @@ const listeningArticlesDB = [
         "avatar": "👧",
         "en": "Yay! Can we bring my colorful kite and the red soccer ball?",
         "zh": "太棒了！我們可以帶上我的彩色風箏和紅色足球嗎？",
-        "start": 9.42,
-        "end": 14.89
+        "start": 9.41,
+        "end": 14.88
       },
       {
         "speaker": "Dad",
@@ -7112,7 +7112,7 @@ const listeningArticlesDB = [
         "avatar": "👨",
         "en": "Of course! Put on your sneakers, and don't forget your cute sunhat.",
         "zh": "當然可以！穿上妳的運動鞋，別忘了戴上妳可愛的遮陽帽。",
-        "start": 15.24,
+        "start": 15.23,
         "end": 20.78
       },
       {
@@ -7153,7 +7153,7 @@ const listeningArticlesDB = [
         "en": "You are doing amazing, Lily! You are the best little kite pilot today.",
         "zh": "妳太厲害了，莉莉！妳今天是全場最棒的風箏小飛行員。",
         "start": 45.19,
-        "end": 50.9
+        "end": 50.91
       },
       {
         "speaker": "Lily",
@@ -7162,8 +7162,8 @@ const listeningArticlesDB = [
         "avatar": "👧",
         "en": "Thank you, Daddy! Holding your hand is the happiest thing in the world.",
         "zh": "謝謝爸爸！牽著你的手是世界上最幸福的事了。",
-        "start": 51.25,
-        "end": 57.44
+        "start": 51.26,
+        "end": 57.45
       }
     ],
     "grammar": [

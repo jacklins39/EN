@@ -16644,7 +16644,7 @@ const jhWordsDB = [
         "en": "surprise",
         "kk": "[sɚˋpraɪz]",
         "uk": "/səˈpraɪz/",
-        "zh": "n. 不尋常的事件、意外之事、驚奇、驚訝；vt. 意外發現、使（某人）吃驚、當場抓獲；int. 感到驚奇吧！；adj. 令人驚奇的、意外的",
+        "zh": "n. 驚喜、驚奇、驚訝、意外；vt. 使吃驚、使感到意外、給……驚喜；adj. 令人驚奇的、意外的",
         "unit": 18,
         "example": "Her gift was a very nice surprise.",
         "exampleZh": "她的禮物是一個很棒的驚喜。"
@@ -17274,7 +17274,7 @@ const jhWordsDB = [
         "en": "thirty",
         "kk": "[ˋθɝ͵di]",
         "uk": "/ˈθɜːti/",
-        "zh": "n. 二十世紀三十年代、三十、三十幾；num. 三十；adj. 三十個的、三十歲的",
+        "zh": "num. 三十；n. 三十、三十幾、三十年代；adj. 三十個的、三十歲的",
         "unit": 18,
         "example": "There are thirty students in our class.",
         "exampleZh": "我們班上有三十位學生。"
@@ -17804,7 +17804,7 @@ const jhWordsDB = [
         "en": "traffic",
         "kk": "[ˋtræfɪk]",
         "uk": "/ˈtræfɪk/",
-        "zh": "n. 路上行駛的車輛、交通、航行、行駛；vi. 進行……交易、做……買賣、在……通行",
+        "zh": "n. 交通、車流、交通量；vi. 通行、進行非法交易",
         "unit": 18,
         "example": "The traffic lights were on amber.",
         "exampleZh": "交通訊號黃燈亮了。"

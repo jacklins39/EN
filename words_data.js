@@ -9074,7 +9074,7 @@ const externalVocabularyDB = [
         "en": "surprise",
         "kk": "[sɚˋpraɪz]",
         "uk": "/səˈpraɪz/",
-        "zh": "n. 不尋常的事件、意外之事、驚奇、驚訝；vt. 意外發現、使（某人）吃驚、當場抓獲；int. 感到驚奇吧！；adj. 令人驚奇的、意外的",
+        "zh": "n. 驚喜、驚奇、驚訝、意外；vt. 使吃驚、使感到意外、給……驚喜；adj. 令人驚奇的、意外的",
         "unit": 1,
         "example": "Her gift was a very nice surprise.",
         "exampleZh": "她的禮物是一個很棒的驚喜。"
@@ -9264,7 +9264,7 @@ const externalVocabularyDB = [
         "en": "thirty",
         "kk": "[ˋθɝ͵di]",
         "uk": "/ˈθɜːti/",
-        "zh": "n. 二十世紀三十年代、三十、三十幾；num. 三十；adj. 三十個的、三十歲的",
+        "zh": "num. 三十；n. 三十、三十幾、三十年代；adj. 三十個的、三十歲的",
         "unit": 1,
         "example": "There are thirty students in our class.",
         "exampleZh": "我們班上有三十位學生。"
@@ -9524,7 +9524,7 @@ const externalVocabularyDB = [
         "en": "T-shirt",
         "kk": "[ti ʃɝt]",
         "uk": "/ˈtiː ʃɜːt/",
-        "zh": "n. 短袖圓領運動衫、T恤、短袖汗衫",
+        "zh": "n. T恤、短袖汗衫",
         "unit": 1,
         "example": "She wore an olive-green T-shirt.",
         "exampleZh": "她穿著一件橄欖綠的T卹。"
@@ -16894,7 +16894,7 @@ const externalVocabularyDB = [
         "en": "lettuce",
         "kk": "[ˋlɛtəs]",
         "uk": "/ˈletɪs/",
-        "zh": "n. 類似萵苣的生菜、生菜、萵苣、錢",
+        "zh": "n. 萵苣、生菜",
         "unit": 2,
         "example": "Add some fresh green lettuce to salad.",
         "exampleZh": "在沙拉裡加一些新鮮的綠色萵苣。"
@@ -20384,7 +20384,7 @@ const externalVocabularyDB = [
         "en": "traffic",
         "kk": "[ˋtræfɪk]",
         "uk": "/ˈtræfɪk/",
-        "zh": "n. 路上行駛的車輛、交通、航行、行駛；vi. 進行……交易、做……買賣、在……通行",
+        "zh": "n. 交通、車流、交通量；vi. 通行、進行非法交易",
         "unit": 3,
         "example": "The traffic lights were on amber.",
         "exampleZh": "交通訊號黃燈亮了。"
@@ -27054,7 +27054,7 @@ const externalVocabularyDB = [
         "en": "glow",
         "kk": "[ɡlo]",
         "uk": "/ɡləʊ/",
-        "zh": "vi. 發出微弱而穩定的光、發紅、發熱；n. 光輝、微弱穩定的光、紅潤光澤、興高采烈",
+        "zh": "vi. 發光、發熱、發紅；n. 光輝、紅光、喜悅感",
         "unit": 3,
         "example": "The fresh air had brought a healthy glow to her cheeks.",
         "exampleZh": "新鮮空氣使她兩頰紅潤、精神煥發。"
@@ -28294,7 +28294,7 @@ const externalVocabularyDB = [
         "en": "mall",
         "kk": "[mɔl]",
         "uk": "/mɔːl; mæl/",
-        "zh": "n. 大規模購物中心、購物中心、步行商業區、步行道",
+        "zh": "n. 購物中心、大型商場、步行商業街",
         "unit": 3,
         "example": "Let's go to the mall.",
         "exampleZh": "我們去商場吧。"
@@ -30644,7 +30644,7 @@ const externalVocabularyDB = [
         "en": "splash",
         "kk": "[splæʃ]",
         "uk": "/splæʃ/",
-        "zh": "v. 稀里嘩啦地濺落、飛濺、朝……潑灑、使……濺溼；n. 落水聲、濺潑聲、濺上的液體、濺灑後留下的汙漬",
+        "zh": "v. 潑濺、飛濺、濺濕；n. 水花、濺落聲、色塊",
         "unit": 4,
         "example": "We're going to splash out and buy a new car.",
         "exampleZh": "我們打算揮霍一下，買輛新車。"
@@ -39454,7 +39454,7 @@ const externalVocabularyDB = [
         "en": "iceberg",
         "kk": "[ˋaɪsbɚɡ]",
         "uk": "/ˈaɪsbɜːɡ/",
-        "zh": "n. 浮在海洋上的巨大冰塊、冰山、微露端倪的事物",
+        "zh": "n. 冰山、浮冰；微露端倪的事物",
         "unit": 4,
         "example": "The massive ship collided with a floating iceberg in the fog.",
         "exampleZh": "這艘巨輪在濃霧中撞上了一座漂浮的冰山。"

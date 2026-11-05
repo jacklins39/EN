@@ -8605,7 +8605,7 @@ const toeicWordsDB = [
         "en": "debit",
         "kk": "[ˋdɛbɪt]",
         "uk": "/ˈdebɪt/",
-        "zh": "n. 把……記入借方、借記、借方、借項；vt. 借方、記入（賬戶）的借方、借記、取款",
+        "zh": "n. 借記、借方、借項；vt. 記入借方、借記",
         "unit": 11,
         "example": "We pay all our bills by direct debit.",
         "exampleZh": "我們以直接借記方式支付所有賬單。"
@@ -8975,7 +8975,7 @@ const toeicWordsDB = [
         "en": "deflate",
         "kk": "[dɪfˋlet]",
         "uk": "/dɪˈfleɪt; ˌdiːˈfleɪt/",
-        "zh": "vt. 抽出……中的氣、放氣、使（輪胎、氣球等）癟下去或縮小、使洩氣；vi. 抽出……中的氣、漏氣、癟下去或縮小、緊縮；v. 抽出……中的氣",
+        "zh": "vt. 放氣、洩氣、緊縮（通貨）；vi. 漏氣、洩氣、緊縮",
         "unit": 11,
         "example": "One sharp remark is enough to deflate her.",
         "exampleZh": "一句尖銳的話足以使她洩氣。"
@@ -27045,7 +27045,7 @@ const toeicWordsDB = [
         "en": "streamline",
         "kk": "[ˋstrim͵laɪn]",
         "uk": "/ˈstriːmlaɪn/",
-        "zh": "vt. 精簡（工商企業、組織、流程等）使效率更高、使……成為流線型；n. 流線；adj. 流線型的、順暢的、暢流的",
+        "zh": "vt. 精簡、簡化、使成流線型；n. 流線；adj. 流線型的、精簡順暢的",
         "unit": 13,
         "example": "They're making efforts to streamline their normally cumbersome bureaucracy.",
         "exampleZh": "他們正努力提高其通常臃腫的官僚機構的效率。"
@@ -27565,7 +27565,7 @@ const toeicWordsDB = [
         "en": "surprise",
         "kk": "[sɚˋpraɪz]",
         "uk": "/səˈpraɪz/",
-        "zh": "n. 驚喜、意外、不尋常的事件、意外之事；vt. 驚喜、使（某人）吃驚、意外發現；int. 感到驚奇吧！；adj. 令人驚奇的、意外的",
+        "zh": "n. 驚喜、意外、驚奇、驚訝；vt. 使吃驚、使感到意外、給……驚喜；adj. 令人驚奇的、意外的",
         "unit": 13,
         "example": "She looked up in surprise.",
         "exampleZh": "她驚訝地抬起頭。"

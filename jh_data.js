@@ -604,7 +604,7 @@ const jhWordsDB = [
         "en": "ant",
         "kk": "[ænt]",
         "uk": "/ænt/",
-        "zh": "n. 螞蟻、Ant",
+        "zh": "n. 螞蟻",
         "unit": 17,
         "example": "I saw an ant on the floor.",
         "exampleZh": "我看到地板上有一隻螞蟻。"
@@ -15264,7 +15264,7 @@ const jhWordsDB = [
         "en": "singer",
         "kk": "[ˋsɪŋɚ]",
         "uk": "/ˈsɪŋə(r)/",
-        "zh": "n. 歌手、歌唱家、Singer",
+        "zh": "n. 歌手、歌唱家",
         "unit": 18,
         "example": "The singer re-formed his band.",
         "exampleZh": "這位歌手重組了他的樂隊。"

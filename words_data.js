@@ -2834,7 +2834,7 @@ const externalVocabularyDB = [
         "en": "ant",
         "kk": "[ænt]",
         "uk": "/ænt/",
-        "zh": "n. 螞蟻、Ant",
+        "zh": "n. 螞蟻",
         "unit": 1,
         "example": "I saw an ant on the floor.",
         "exampleZh": "我看到地板上有一隻螞蟻。"
@@ -8524,7 +8524,7 @@ const externalVocabularyDB = [
         "en": "singer",
         "kk": "[ˋsɪŋɚ]",
         "uk": "/ˈsɪŋə(r)/",
-        "zh": "n. 歌手、歌唱家、Singer",
+        "zh": "n. 歌手、歌唱家",
         "unit": 1,
         "example": "The singer re-formed his band.",
         "exampleZh": "這位歌手重組了他的樂隊。"
@@ -42494,7 +42494,7 @@ const externalVocabularyDB = [
         "en": "telegram",
         "kk": "[ˋtɛlə͵ɡræm]",
         "uk": "/ˈtelɪɡræm/",
-        "zh": "n. 電報、Telegram；vt. 用電報傳送；vi. 發電報",
+        "zh": "n. 電報；vt. 用電報傳送；vi. 發電報",
         "unit": 5,
         "example": "The president received a briefing by telegram.",
         "exampleZh": "總裁收到了一份電報簡報。"
@@ -63224,7 +63224,7 @@ const externalVocabularyDB = [
         "en": "shilling",
         "kk": "[ˋʃɪlɪŋ]",
         "uk": "/ˈʃɪlɪŋ/",
-        "zh": "n. 先令、Shilling",
+        "zh": "n. 先令",
         "unit": 7,
         "example": "His hands and jacket were completely covered in thick black soot.",
         "exampleZh": "他的雙手和夾克上滿是厚厚的黑煤灰。"

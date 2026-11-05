@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261105V16';
+        const APP_BUILD_VERSION = '20261105V17';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -63,20 +63,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261105V16"></script>
-    <script src="toeic_data.js?v=20261105V16"></script>
-    <script src="jh_data.js?v=20261105V16"></script>
-    <script src="listening_data.js?v=20261105V16"></script>
-    <script src="listening_words_data.js?v=20261105V16"></script>
-    <script src="uk_phonetics_manifest.js?v=20261105V16"></script>
-    <script src="words_audio_manifest.js?v=20261105V16"></script>
-    <script src="examples_audio_manifest.js?v=20261105V16"></script>
-    <script src="zh_audio_manifest.js?v=20261105V16"></script>
-    <script src="collocations_audio_manifest.js?v=20261105V16"></script>
-    <script src="syn_ant_data.js?v=20261105V16"></script>
-    <script src="synonyms_unit8_data.js?v=20261105V16"></script>
-    <script src="examples_unit9_data.js?v=20261105V16"></script>
-    <script src="game_whack.js?v=20261105V16"></script>
+    <script src="words_data.js?v=20261105V17"></script>
+    <script src="toeic_data.js?v=20261105V17"></script>
+    <script src="jh_data.js?v=20261105V17"></script>
+    <script src="listening_data.js?v=20261105V17"></script>
+    <script src="listening_words_data.js?v=20261105V17"></script>
+    <script src="uk_phonetics_manifest.js?v=20261105V17"></script>
+    <script src="words_audio_manifest.js?v=20261105V17"></script>
+    <script src="examples_audio_manifest.js?v=20261105V17"></script>
+    <script src="zh_audio_manifest.js?v=20261105V17"></script>
+    <script src="collocations_audio_manifest.js?v=20261105V17"></script>
+    <script src="syn_ant_data.js?v=20261105V17"></script>
+    <script src="synonyms_unit8_data.js?v=20261105V17"></script>
+    <script src="examples_unit9_data.js?v=20261105V17"></script>
+    <script src="game_whack.js?v=20261105V17"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -2285,50 +2285,7 @@
                 padding: 0.85rem !important;
             }
 
-            /* 2. 微小字階層實打實提升 (10px -> 12.5px, 11px -> 13.5px) - 肉眼真正有感變大！ */
-            .text-\[10px\] {
-                font-size: 12.5px !important;
-                line-height: 1.35 !important;
-            }
-            .text-\[11px\] {
-                font-size: 13.5px !important;
-                line-height: 1.4 !important;
-            }
-
-            /* 3. 全站各大分頁（首頁 Dashboard、單字卡 Study、聽力、字庫、設定、分析、彈窗）全面覆蓋放大 */
-            #view-dashboard .text-xs,
-            #view-study .text-xs,
-            #view-listening .text-xs,
-            #view-weak .text-xs,
-            #view-settings .text-xs,
-            #view-analysis .text-xs,
-            #view-game .text-xs,
-            #word-detail-modal .text-xs,
-            #dict-modal .text-xs {
-                font-size: 13.5px !important;
-                line-height: 1.4 !important;
-            }
-
-            #view-dashboard .text-sm,
-            #view-study .text-sm,
-            #view-listening .text-sm,
-            #view-weak .text-sm,
-            #view-settings .text-sm,
-            #view-analysis .text-sm,
-            #view-game .text-sm,
-            #word-detail-modal .text-sm,
-            #dict-modal .text-sm {
-                font-size: 15px !important;
-                line-height: 1.45 !important;
-            }
-
-            /* 4. 底部導航欄文字加粗放大 */
-            nav span.text-xs {
-                font-size: 13px !important;
-                font-weight: 700 !important;
-            }
-
-            /* 5. 單字學習卡核心內容放大 */
+            /* 2. 重點學習與閱讀文字精準放大，守護膠囊徽章與數據按鈕安全邊界不跑位 */
             #card-word,
             #card-word-back {
                 font-size: 1.85rem !important;
@@ -2343,6 +2300,27 @@
             #card-example-zh {
                 font-size: 14px !important;
                 line-height: 1.5 !important;
+            }
+
+            /* 3. 聽力與字典彈窗閱讀文字舒適放大 */
+            .listening-sentence-text {
+                font-size: 15.5px !important;
+                line-height: 1.5 !important;
+            }
+            .listening-sentence-zh {
+                font-size: 14px !important;
+                line-height: 1.45 !important;
+            }
+            #word-detail-modal .text-[13.5px],
+            #word-detail-modal .text-sm {
+                font-size: 14.5px !important;
+                line-height: 1.45 !important;
+            }
+
+            /* 4. 底部導航欄文字加粗清晰 */
+            nav span.text-xs {
+                font-size: 12.5px !important;
+                font-weight: 700 !important;
             }
 
             /* 6. 單字預覽清單彈窗字體放大 */
@@ -2486,13 +2464,13 @@
                     </div>
                 </div>
 
-                <!-- 主行動按鈕群：開始今日課程 + 自動輪播發音 (嚴格單行不折行) -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                    <button id="btn-start-session" class="btn-action w-full bg-gradient-to-r from-[#0071E3] to-[#005BB5] hover:from-[#0077ED] hover:to-[#0062C4] text-white font-semibold py-3 px-2.5 sm:px-3 rounded-xl shadow-sm text-sm flex items-center justify-center gap-1.5 cursor-pointer transition-all active:scale-[0.99] whitespace-nowrap">
-                        <span>▶ 開始今日課程</span>
+                <!-- 主行動按鈕群：開始今日課程 + 自動輪播發音 (垂直堆疊全寬展示，寬敞舒適防斷字跑位) -->
+                <div class="grid grid-cols-1 gap-2.5">
+                    <button id="btn-start-session" class="btn-action w-full bg-gradient-to-r from-[#0071E3] to-[#005BB5] hover:from-[#0077ED] hover:to-[#0062C4] text-white font-semibold py-3 px-3 rounded-xl shadow-sm text-sm flex items-center justify-center gap-1.5 cursor-pointer transition-all active:scale-[0.99] whitespace-nowrap">
+                        <span class="whitespace-nowrap font-semibold">▶ 開始今日課程</span>
                     </button>
-                    <button id="lobby-btn-auto-daily" class="w-full bg-slate-50 hover:bg-blue-50/70 text-[#0071E3] font-semibold py-2.5 sm:py-3 px-2.5 sm:px-3 rounded-xl border border-slate-200/90 hover:border-blue-200 flex items-center justify-center gap-1.5 cursor-pointer transition-all active:scale-[0.99] text-sm whitespace-nowrap">
-                        <span>🎧 自動輪播發音</span>
+                    <button id="lobby-btn-auto-daily" class="w-full bg-slate-50 hover:bg-blue-50/70 text-[#0071E3] font-semibold py-2.5 sm:py-3 px-3 rounded-xl border border-slate-200/90 hover:border-blue-200 flex items-center justify-center gap-1.5 cursor-pointer transition-all active:scale-[0.99] text-sm whitespace-nowrap">
+                        <span class="whitespace-nowrap font-semibold">🎧 自動輪播發音</span>
                     </button>
                 </div>
             </div>
@@ -2534,8 +2512,8 @@
                             <span>🎯</span> 歷史錯題集中複習
                         </span>
                         <button id="btn-preview-all-mistakes" type="button" class="group flex items-center gap-1 text-[10px] sm:text-[11px] font-semibold text-[#0071E3] bg-blue-50 hover:bg-[#0071E3] hover:text-white px-2 py-0.5 rounded-md border border-blue-100 transition-colors cursor-pointer whitespace-nowrap shrink-0" title="點擊預覽歷史錯題清單（支援切換本日、本週、本月）">
-                            <span id="lobby-mistake-count-badge" class="whitespace-nowrap">目前無錯題</span>
-                            <span class="text-[10px] opacity-75 whitespace-nowrap">預覽 ➔</span>
+                            <span id="lobby-mistake-count-badge" class="whitespace-nowrap hidden sm:inline">目前無錯題</span>
+                            <span class="text-[10px] sm:text-[11px] opacity-75 whitespace-nowrap">預覽 ➔</span>
                         </button>
                     </div>
                     <div class="grid grid-cols-3 gap-1.5">
@@ -3372,9 +3350,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261105V16</span>
+                        <span id="app-version-display">版本 20261105V17</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261105V16</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261105V17</p>
                 </div>
             </div>
         </div>
@@ -4046,10 +4024,15 @@
             // 清除括號註釋與冗長省略號
             firstText = firstText.replace(/[\(（][^）\)]*[\)）]/g, '').trim();
             firstText = firstText.replace(/[…\.]{2,}的?/g, '').trim();
-            // 依頓號、逗號、分號切分詞條，取前 1～2 個最核心常用詞 (字數控制在 8 字內)
+            // 依頓號、逗號、分號切分詞條，過濾純英文字詞 (嚴防英文答案外洩)，取前 1～2 個最核心常用詞 (字數控制在 8 字內)
             const rawTerms = firstText.split(/[,，、/；;\s]+/).map(t => t.trim()).filter(Boolean);
-            const terms = rawTerms.map(t => t.replace(/[…\.]{2,}的?/g, '').trim()).filter(Boolean);
-            if (!terms.length) return firstText.slice(0, 8);
+            const terms = rawTerms
+                .map(t => t.replace(/[…\.]{2,}的?/g, '').trim())
+                .filter(t => t && !/^[a-zA-Z\s\-]+$/.test(t));
+            if (!terms.length) {
+                const pureFallback = firstText.replace(/[a-zA-Z]+/g, '').replace(/^[、，,;；/\s]+|[、，,;；/\s]+$/g, '').trim();
+                return pureFallback.slice(0, 8) || firstText.slice(0, 8);
+            }
             let res = terms[0];
             if (terms.length > 1 && (res.length + terms[1].length <= 8) && terms[1] !== res) {
                 res += '、' + terms[1];
@@ -5463,7 +5446,7 @@
                     elStatus.className = "text-xs font-semibold text-green-600";
                 }
                 if (elDailyBtn) {
-                    elDailyBtn.innerHTML = `<span>🔄 再次溫習今日單字 (${totalDaily} 字)</span>`;
+                    elDailyBtn.innerHTML = `<span class="whitespace-nowrap font-semibold">🔄 再次溫習今日單字 (${totalDaily}字)</span>`;
                     elDailyBtn.disabled = false;
                     elDailyBtn.classList.remove('opacity-50', 'cursor-not-allowed');
                 }
@@ -5477,7 +5460,7 @@
                     elStatus.className = "text-xs font-semibold text-amber-600";
                 }
                 if (elDailyBtn) {
-                    elDailyBtn.innerHTML = `<span>▶ 開始今日課程 (${totalDaily} 字)</span>`;
+                    elDailyBtn.innerHTML = `<span class="whitespace-nowrap font-semibold">▶ 開始今日課程 (${totalDaily}字)</span>`;
                     elDailyBtn.disabled = false;
                     elDailyBtn.classList.remove('opacity-50', 'cursor-not-allowed');
                 }
@@ -5514,10 +5497,10 @@
             if (elMistakeBadge) {
                 if (todayMistakes === 0 && weekMistakes === 0 && monthMistakes === 0) {
                     elMistakeBadge.innerText = '目前無錯題';
-                    elMistakeBadge.className = "text-[10px] sm:text-[11px] font-medium text-slate-400 font-mono whitespace-nowrap";
+                    elMistakeBadge.className = "text-[10px] sm:text-[11px] font-medium text-slate-400 font-mono whitespace-nowrap hidden sm:inline";
                 } else {
                     elMistakeBadge.innerHTML = `<span class="text-rose-600 dark:text-rose-400 font-semibold">日${todayMistakes}</span><span class="text-slate-300 dark:text-slate-600 mx-0.5">·</span><span class="text-[#0071E3] dark:text-[#58A6FF] font-semibold">週${weekMistakes}</span><span class="text-slate-300 dark:text-slate-600 mx-0.5">·</span><span class="text-indigo-600 dark:text-indigo-400 font-semibold">月${monthMistakes}</span>`;
-                    elMistakeBadge.className = "text-[10px] sm:text-[11px] font-mono whitespace-nowrap";
+                    elMistakeBadge.className = "text-[10px] sm:text-[11px] font-mono whitespace-nowrap hidden sm:inline";
                 }
             }
 
@@ -6866,7 +6849,15 @@
                 hintEl.innerText = '看英文 ➜ 選出中文';
             } else if (t === 'zh2en') {
                 const parsed = splitPosAndZh(w.zh, w.pos, w.exampleZh, w.example, w.en);
-                const conciseZh = getConciseZh(w.zh, w.pos, w.exampleZh, w.example, w.en) || parsed.pureZh || w.zh;
+                let conciseZh = getConciseZh(w.zh, w.pos, w.exampleZh, w.example, w.en) || parsed.pureZh || w.zh;
+                if (w.en) {
+                    const escEn = w.en.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                    conciseZh = conciseZh.replace(new RegExp(`(?:^|[、，,;；/\\s])\\b${escEn}\\b`, 'gi'), '');
+                }
+                conciseZh = conciseZh.replace(/[a-zA-Z]+/g, '').replace(/^[、，,;；/\\s]+|[、，,;；/\\s]+$/g, '').trim();
+                if (!conciseZh) {
+                    conciseZh = (parsed.pureZh || '').replace(/[a-zA-Z]+/g, '').replace(/^[、，,;；/\\s]+|[、，,;；/\\s]+$/g, '').trim() || '釋義';
+                }
                 wordEl.className = mid; 
                 wordEl.innerText = conciseZh; 
                 const rf = document.getElementById('card-phonetic-row'); if (rf) rf.style.display = 'none';
@@ -6886,7 +6877,15 @@
                 }, 100);
             } else if (t === 'fill') {
                 const parsed = splitPosAndZh(w.zh, w.pos, w.exampleZh, w.example, w.en);
-                const conciseZh = getConciseZh(w.zh, w.pos, w.exampleZh, w.example, w.en) || parsed.pureZh || w.zh;
+                let conciseZh = getConciseZh(w.zh, w.pos, w.exampleZh, w.example, w.en) || parsed.pureZh || w.zh;
+                if (w.en) {
+                    const escEn = w.en.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                    conciseZh = conciseZh.replace(new RegExp(`(?:^|[、，,;；/\\s])\\b${escEn}\\b`, 'gi'), '');
+                }
+                conciseZh = conciseZh.replace(/[a-zA-Z]+/g, '').replace(/^[、，,;；/\\s]+|[、，,;；/\\s]+$/g, '').trim();
+                if (!conciseZh) {
+                    conciseZh = (parsed.pureZh || '').replace(/[a-zA-Z]+/g, '').replace(/^[、，,;；/\\s]+|[、，,;；/\\s]+$/g, '').trim() || '釋義';
+                }
                 wordEl.className = mid; 
                 wordEl.innerText = conciseZh; 
                 const rf = document.getElementById('card-phonetic-row'); if (rf) rf.style.display = 'none';

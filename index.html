@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261105V10';
+        const APP_BUILD_VERSION = '20261105V11';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -63,20 +63,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261105V10"></script>
-    <script src="toeic_data.js?v=20261105V10"></script>
-    <script src="jh_data.js?v=20261105V10"></script>
-    <script src="listening_data.js?v=20261105V10"></script>
-    <script src="listening_words_data.js?v=20261105V10"></script>
-    <script src="uk_phonetics_manifest.js?v=20261105V10"></script>
-    <script src="words_audio_manifest.js?v=20261105V10"></script>
-    <script src="examples_audio_manifest.js?v=20261105V10"></script>
-    <script src="zh_audio_manifest.js?v=20261105V10"></script>
-    <script src="collocations_audio_manifest.js?v=20261105V10"></script>
-    <script src="syn_ant_data.js?v=20261105V10"></script>
-    <script src="synonyms_unit8_data.js?v=20261105V10"></script>
-    <script src="examples_unit9_data.js?v=20261105V10"></script>
-    <script src="game_whack.js?v=20261105V10"></script>
+    <script src="words_data.js?v=20261105V11"></script>
+    <script src="toeic_data.js?v=20261105V11"></script>
+    <script src="jh_data.js?v=20261105V11"></script>
+    <script src="listening_data.js?v=20261105V11"></script>
+    <script src="listening_words_data.js?v=20261105V11"></script>
+    <script src="uk_phonetics_manifest.js?v=20261105V11"></script>
+    <script src="words_audio_manifest.js?v=20261105V11"></script>
+    <script src="examples_audio_manifest.js?v=20261105V11"></script>
+    <script src="zh_audio_manifest.js?v=20261105V11"></script>
+    <script src="collocations_audio_manifest.js?v=20261105V11"></script>
+    <script src="syn_ant_data.js?v=20261105V11"></script>
+    <script src="synonyms_unit8_data.js?v=20261105V11"></script>
+    <script src="examples_unit9_data.js?v=20261105V11"></script>
+    <script src="game_whack.js?v=20261105V11"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -1736,6 +1736,43 @@
         html.dark .noun-forms-card [class*="text-amber-600"] {
             color: #FBBF24 !important;
         }
+        /* 動詞三態對應原形導向提示列 (深色模式文字高對比適配) */
+        html.dark .inflection-banner,
+        html.dark #word-detail-modal .inflection-banner {
+            background-color: #0E1A2E !important;
+            background-image: none !important;
+            border-color: rgba(56, 139, 253, 0.35) !important;
+            border-left: 3px solid #388BFD !important;
+        }
+        html.dark .inflection-banner,
+        html.dark .inflection-banner span,
+        html.dark .inflection-banner div,
+        html.dark #word-detail-modal .inflection-banner,
+        html.dark #word-detail-modal .inflection-banner span,
+        html.dark #word-detail-modal .inflection-banner div {
+            color: #E2E8F0 !important;
+        }
+        html.dark .inflection-banner strong,
+        html.dark #word-detail-modal .inflection-banner strong {
+            color: #58A6FF !important;
+        }
+        html.dark .inflection-banner-badge,
+        html.dark #word-detail-modal .inflection-banner-badge {
+            background-color: #172235 !important;
+            color: #58A6FF !important;
+            border-color: rgba(56, 139, 253, 0.4) !important;
+        }
+        html.dark #word-detail-modal button[onclick*="showWordDetailModal"],
+        html.dark #dict-modal button[onclick*="showWordDetailModal"] {
+            background-color: #0E1A2E !important;
+            color: #93C5FD !important;
+            border-color: rgba(56, 139, 253, 0.3) !important;
+        }
+        html.dark #word-detail-modal button[onclick*="showWordDetailModal"] strong,
+        html.dark #dict-modal button[onclick*="showWordDetailModal"] strong {
+            color: #FFFFFF !important;
+        }
+
         /* 詞形子卡片 */
         html.dark #word-detail-modal .word-form-item,
         html.dark #dict-modal .word-form-item,
@@ -3232,9 +3269,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261105V10</span>
+                        <span id="app-version-display">版本 20261105V11</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261105V10</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261105V11</p>
                 </div>
             </div>
         </div>
@@ -11300,12 +11337,12 @@
             let inflectionBannerHtml = '';
             if (inflectionMeta && inflectionMeta.originalWord) {
                 inflectionBannerHtml = `
-                    <div class="mb-3 px-3.5 py-2.5 rounded-2xl bg-gradient-to-r from-blue-50/90 via-indigo-50/80 to-blue-50/90 border border-blue-200/90 flex items-center justify-between shadow-2xs">
-                        <div class="flex items-center gap-2 text-xs text-blue-950 font-medium">
+                    <div class="inflection-banner mb-3 px-3.5 py-2.5 rounded-2xl bg-gradient-to-r from-blue-50/90 via-indigo-50/80 to-blue-50/90 dark:from-blue-950/60 dark:via-indigo-950/50 dark:to-blue-950/60 border border-blue-200/90 dark:border-blue-400/30 flex items-center justify-between shadow-2xs">
+                        <div class="flex items-center gap-2 text-xs text-blue-950 dark:text-blue-100 font-medium leading-relaxed">
                             <span class="text-sm shrink-0">💡</span>
-                            <span>你點擊的「<strong class="font-mono text-blue-700 font-bold">${esc(inflectionMeta.originalWord)}</strong>」為動詞 ${esc(inflectionMeta.label)}，已直接對應至原形：</span>
+                            <span>你點擊的「<strong class="font-mono text-blue-700 dark:text-[#58A6FF] font-bold">${esc(inflectionMeta.originalWord)}</strong>」為動詞 ${esc(inflectionMeta.label)}，已直接對應至原形：</span>
                         </div>
-                        <span class="text-xs font-bold text-blue-600 bg-white px-2.5 py-0.5 rounded-full border border-blue-200 font-mono shadow-2xs shrink-0">${esc(w.en)}</span>
+                        <span class="inflection-banner-badge text-xs font-bold text-blue-600 dark:text-[#58A6FF] bg-white dark:bg-[#162033] px-2.5 py-0.5 rounded-full border border-blue-200 dark:border-blue-500/40 font-mono shadow-2xs shrink-0">${esc(w.en)}</span>
                     </div>
                 `;
             }
@@ -11318,10 +11355,10 @@
             );
             const relatedBaseHtml = hasRelatedBaseInDB ? `
                 <div class="mt-1.5">
-                    <button type="button" onclick="showWordDetailModal('${esc(relatedInflection.base)}')" class="inline-flex items-center gap-1.5 text-xs text-blue-700 bg-blue-50/90 hover:bg-blue-100/90 border border-blue-200/90 px-2.5 py-1 rounded-xl font-medium transition cursor-pointer shadow-2xs active:scale-95">
+                    <button type="button" onclick="showWordDetailModal('${esc(relatedInflection.base)}')" class="inline-flex items-center gap-1.5 text-xs text-blue-700 dark:text-blue-200 bg-blue-50/90 dark:bg-blue-950/50 hover:bg-blue-100/90 dark:hover:bg-blue-900/50 border border-blue-200/90 dark:border-blue-500/30 px-2.5 py-1 rounded-xl font-medium transition cursor-pointer shadow-2xs active:scale-95">
                         <span>🔗</span>
-                        <span>此單字亦為動詞「<strong class="font-mono font-bold">${esc(relatedInflection.base)}</strong>」之${esc(relatedInflection.label)}</span>
-                        <span class="text-[#0071E3] font-bold ml-1">➔ 查看動詞原形</span>
+                        <span>此單字亦為動詞「<strong class="font-mono font-bold text-blue-800 dark:text-blue-100">${esc(relatedInflection.base)}</strong>」之${esc(relatedInflection.label)}</span>
+                        <span class="text-[#0071E3] dark:text-[#58A6FF] font-bold ml-1">➔ 查看動詞原形</span>
                     </button>
                 </div>
             ` : '';

@@ -4066,8 +4066,8 @@ const externalVocabularyDB = [
         "uk": "/ˈkʌntri/",
         "zh": "n. 國家、鄉下、國、全國人民；adj. 鄉下的、農村的、鄉村音樂的、祖國的",
         "unit": 1,
-        "example": "I'm a simple country girl.",
-        "exampleZh": "我是一個簡單的鄉村女孩。"
+        "example": "He has traveled to many different countries.",
+        "exampleZh": "他曾到過許多不同的國家旅行。"
     },
     {
         "id": 408,

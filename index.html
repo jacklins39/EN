@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261105V13';
+        const APP_BUILD_VERSION = '20261105V14';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -63,20 +63,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261105V13"></script>
-    <script src="toeic_data.js?v=20261105V13"></script>
-    <script src="jh_data.js?v=20261105V13"></script>
-    <script src="listening_data.js?v=20261105V13"></script>
-    <script src="listening_words_data.js?v=20261105V13"></script>
-    <script src="uk_phonetics_manifest.js?v=20261105V13"></script>
-    <script src="words_audio_manifest.js?v=20261105V13"></script>
-    <script src="examples_audio_manifest.js?v=20261105V13"></script>
-    <script src="zh_audio_manifest.js?v=20261105V13"></script>
-    <script src="collocations_audio_manifest.js?v=20261105V13"></script>
-    <script src="syn_ant_data.js?v=20261105V13"></script>
-    <script src="synonyms_unit8_data.js?v=20261105V13"></script>
-    <script src="examples_unit9_data.js?v=20261105V13"></script>
-    <script src="game_whack.js?v=20261105V13"></script>
+    <script src="words_data.js?v=20261105V14"></script>
+    <script src="toeic_data.js?v=20261105V14"></script>
+    <script src="jh_data.js?v=20261105V14"></script>
+    <script src="listening_data.js?v=20261105V14"></script>
+    <script src="listening_words_data.js?v=20261105V14"></script>
+    <script src="uk_phonetics_manifest.js?v=20261105V14"></script>
+    <script src="words_audio_manifest.js?v=20261105V14"></script>
+    <script src="examples_audio_manifest.js?v=20261105V14"></script>
+    <script src="zh_audio_manifest.js?v=20261105V14"></script>
+    <script src="collocations_audio_manifest.js?v=20261105V14"></script>
+    <script src="syn_ant_data.js?v=20261105V14"></script>
+    <script src="synonyms_unit8_data.js?v=20261105V14"></script>
+    <script src="examples_unit9_data.js?v=20261105V14"></script>
+    <script src="game_whack.js?v=20261105V14"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -3321,9 +3321,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261105V13</span>
+                        <span id="app-version-display">版本 20261105V14</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261105V13</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261105V14</p>
                 </div>
             </div>
         </div>
@@ -5855,18 +5855,9 @@
                     cleanZh = cleanZh.slice(0, 150);
                 }
 
-                // 1. 優先使用本機 Edge-TTS 真人繁體中文 MP3 (zh-TW-HsiaoChenNeural)
-                // 檢驗音畫對齊：靜態 MP3 是依 target.zh 的第 1 詞性開始錄製；
-                // 若當前畫面展示的 cleanZh（例如因例句匹配而展示次要詞性，如「鄉下的」）與第 1 詞性不相符，
-                // 則絕不強播第 1 詞性 MP3，改由 Web Speech API 朗讀畫面顯示的中文，確保「所聽即所見」！
-                const firstZhSection = (target && target.zh) ? target.zh.split(/[；;]/)[0].replace(/^[a-zA-Z./]+\.?\s*/, '').trim() : '';
-                const firstSectionClean = firstZhSection.replace(/[\(（][^）\)]*[\)）]/g, '').trim();
-                const primaryLead = (firstSectionClean.split(/[,，、/；;\s]+/)[0] || '').replace(/的$/g, '');
-                const currentLead = (cleanZh.split(/[,，、/；;\s]+/)[0] || '').replace(/的$/g, '');
-
-                const isAudioMatched = !text || !primaryLead || !currentLead || primaryLead.includes(currentLead) || currentLead.includes(primaryLead);
-
-                if (isAudioMatched && target && target.id && typeof window.ZH_AUDIO_MANIFEST !== 'undefined' && window.ZH_AUDIO_MANIFEST.has(Number(target.id))) {
+                // 1. 100% 優先使用本機 Edge-TTS 台灣真人神經聲線 MP3 (zh-TW-HsiaoChenNeural)
+                // 畫面上卡片的主詞性已與音訊嚴格對齊第一詞性核心釋義，保證所見即所聽！
+                if (target && target.id && typeof window.ZH_AUDIO_MANIFEST !== 'undefined' && window.ZH_AUDIO_MANIFEST.has(Number(target.id))) {
                     const attachCallback = (audioEl) => {
                         clearAudioCallbacks();
                         let called = false;
@@ -15062,7 +15053,7 @@
 
             const t = listeningAudioPlayer.currentTime;
             const rawElapsed = t - sStart;
-            if (rawElapsed < -0.1 || rawElapsed > totalDuration + 0.1) {
+            if (rawElapsed < -0.05 || rawElapsed > totalDuration + 0.35) {
                 clearWordHighlight();
                 return;
             }

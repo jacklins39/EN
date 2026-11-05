@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261105V8';
+        const APP_BUILD_VERSION = '20261105V9';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -63,20 +63,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261105V8"></script>
-    <script src="toeic_data.js?v=20261105V8"></script>
-    <script src="jh_data.js?v=20261105V8"></script>
-    <script src="listening_data.js?v=20261105V8"></script>
-    <script src="listening_words_data.js?v=20261105V8"></script>
-    <script src="uk_phonetics_manifest.js?v=20261105V8"></script>
-    <script src="words_audio_manifest.js?v=20261105V8"></script>
-    <script src="examples_audio_manifest.js?v=20261105V8"></script>
-    <script src="zh_audio_manifest.js?v=20261105V8"></script>
-    <script src="collocations_audio_manifest.js?v=20261105V8"></script>
-    <script src="syn_ant_data.js?v=20261105V8"></script>
-    <script src="synonyms_unit8_data.js?v=20261105V8"></script>
-    <script src="examples_unit9_data.js?v=20261105V8"></script>
-    <script src="game_whack.js?v=20261105V8"></script>
+    <script src="words_data.js?v=20261105V9"></script>
+    <script src="toeic_data.js?v=20261105V9"></script>
+    <script src="jh_data.js?v=20261105V9"></script>
+    <script src="listening_data.js?v=20261105V9"></script>
+    <script src="listening_words_data.js?v=20261105V9"></script>
+    <script src="uk_phonetics_manifest.js?v=20261105V9"></script>
+    <script src="words_audio_manifest.js?v=20261105V9"></script>
+    <script src="examples_audio_manifest.js?v=20261105V9"></script>
+    <script src="zh_audio_manifest.js?v=20261105V9"></script>
+    <script src="collocations_audio_manifest.js?v=20261105V9"></script>
+    <script src="syn_ant_data.js?v=20261105V9"></script>
+    <script src="synonyms_unit8_data.js?v=20261105V9"></script>
+    <script src="examples_unit9_data.js?v=20261105V9"></script>
+    <script src="game_whack.js?v=20261105V9"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -2176,17 +2176,22 @@
                 padding-left: 2rem; padding-right: 2rem; padding-bottom: 3rem !important;
             }
 
-            /* 3. 各頁面加寬並置中 */
-            main > div[id^="view-"] { max-width: 38rem; margin-left: auto; margin-right: auto; }
-            #view-study-lobby, #view-study, #view-listening, #view-analysis { max-width: 68rem !important; width: 100% !important; }
-
-            /* 4. 學習中心：標題橫跨、4 張功能卡片 2x2 排列 */
-            #view-study-lobby:not(.hidden) {
-                display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
-                gap: 1rem; align-items: start;
+            /* 3. 電腦版所有分頁頁簽全面加寬至 68rem (1088px)，徹底消除切換頁簽時忽寬忽窄的跳動 */
+            main > div[id^="view-"] {
+                max-width: 68rem !important;
+                width: 100% !important;
+                margin-left: auto;
+                margin-right: auto;
             }
-            #view-study-lobby > * { margin-top: 0 !important; }
-            #view-study-lobby > :first-child { grid-column: 1 / -1; }
+
+            /* 4. 學習首頁 (Dashboard)：左側「今日學習計畫」、右側「自主加練與錯題複習」雙欄 Bento 佈局，整齊對齊 */
+            #view-dashboard:not(.hidden) {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 1.5rem;
+                align-items: start;
+            }
+            #view-dashboard > * { margin-bottom: 0 !important; }
 
             /* 5. 測驗頁：左側單字卡、右側作答區；自動輪播時則單欄置中對齊 */
             #view-study:not(.hidden):not(.auto-play-layout) {
@@ -2205,7 +2210,14 @@
                 margin-right: auto !important;
             }
 
-            /* 6. 字典彈窗遮罩需蓋過側邊欄 */
+            /* 6. 完訓戰報頁面保持居中沉浸卡片 */
+            #view-completed {
+                max-width: 42rem !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+
+            /* 7. 字典彈窗遮罩需蓋過側邊欄 */
             #dict-modal { z-index: 60; }
         }
     </style>
@@ -3220,9 +3232,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261105V8</span>
+                        <span id="app-version-display">版本 20261105V9</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261105V8</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261105V9</p>
                 </div>
             </div>
         </div>

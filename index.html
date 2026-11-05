@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261105V4';
+        const APP_BUILD_VERSION = '20261105V5';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -63,20 +63,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261105V4"></script>
-    <script src="toeic_data.js?v=20261105V4"></script>
-    <script src="jh_data.js?v=20261105V4"></script>
-    <script src="listening_data.js?v=20261105V4"></script>
-    <script src="listening_words_data.js?v=20261105V4"></script>
-    <script src="uk_phonetics_manifest.js?v=20261105V4"></script>
-    <script src="words_audio_manifest.js?v=20261105V4"></script>
-    <script src="examples_audio_manifest.js?v=20261105V4"></script>
-    <script src="zh_audio_manifest.js?v=20261105V4"></script>
-    <script src="collocations_audio_manifest.js?v=20261105V4"></script>
-    <script src="syn_ant_data.js?v=20261105V4"></script>
-    <script src="synonyms_unit8_data.js?v=20261105V4"></script>
-    <script src="examples_unit9_data.js?v=20261105V4"></script>
-    <script src="game_whack.js?v=20261105V4"></script>
+    <script src="words_data.js?v=20261105V5"></script>
+    <script src="toeic_data.js?v=20261105V5"></script>
+    <script src="jh_data.js?v=20261105V5"></script>
+    <script src="listening_data.js?v=20261105V5"></script>
+    <script src="listening_words_data.js?v=20261105V5"></script>
+    <script src="uk_phonetics_manifest.js?v=20261105V5"></script>
+    <script src="words_audio_manifest.js?v=20261105V5"></script>
+    <script src="examples_audio_manifest.js?v=20261105V5"></script>
+    <script src="zh_audio_manifest.js?v=20261105V5"></script>
+    <script src="collocations_audio_manifest.js?v=20261105V5"></script>
+    <script src="syn_ant_data.js?v=20261105V5"></script>
+    <script src="synonyms_unit8_data.js?v=20261105V5"></script>
+    <script src="examples_unit9_data.js?v=20261105V5"></script>
+    <script src="game_whack.js?v=20261105V5"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -99,7 +99,7 @@
             background-color: transparent;
             perspective: 1000px;
             width: 100%;
-            height: 315px; /* 手機版全卡片黃金高度：完整展示單字、雙音標、釋義與例句，零滾動防截斷 */
+            height: 332px; /* 手機版舒適大字卡片黃金高度：完整展示單字、雙音標、釋義與例句，零滾動防截斷 */
             transition: height 0.25s cubic-bezier(0.4, 0, 0.2, 1);
         }
         /* 當 4 選 1 作答模式且正面等待答題時，適度調降卡片高度以留出充裕空間展示作答選項 */
@@ -118,7 +118,7 @@
         }
         @media (min-width: 640px) {
             .flip-card {
-                height: 320px;
+                height: 338px;
             }
             #view-study.quiz-options-active .flip-card:not(.flipped),
             #view-study:has(#quiz-options:not(.hidden)) .flip-card:not(.flipped) {
@@ -127,7 +127,7 @@
         }
         @media (min-width: 1024px) {
             .flip-card {
-                height: 330px;
+                height: 345px;
             }
             #view-study.quiz-options-active .flip-card:not(.flipped),
             #view-study:has(#quiz-options:not(.hidden)) .flip-card:not(.flipped) {
@@ -2609,17 +2609,17 @@
                     <div class="flip-card-back">
                         <button id="btn-card-mark-back" type="button" class="absolute top-2.5 left-2.5 p-1.5 text-2xl leading-none text-gray-300 hover:text-amber-400 dark:text-slate-500 dark:hover:text-amber-400 transition-all cursor-pointer select-none active:scale-90 z-20" title="標記單字 (⭐)" aria-label="標記單字">☆</button>
                         <div class="flex items-center justify-center gap-2 mb-0.5 flex-wrap px-7">
-                            <h2 class="text-xl sm:text-2xl font-bold text-[#1D1D1F] break-all" id="card-word-back">Apple</h2>
+                            <h2 class="text-2xl sm:text-3xl font-extrabold text-[#1D1D1F] tracking-tight break-all" id="card-word-back">Apple</h2>
                             <div id="card-syllables-back" class="hidden items-center"></div>
                         </div>
                         <!-- 背面雙音標展示 (🇺🇸 美式 KK / 🇬🇧 英式牛津 IPA) -->
-                        <div class="flex items-center justify-center gap-2 font-mono text-[11px] sm:text-xs mb-1 sm:mb-1.5 flex-wrap" id="card-phonetic-row-back">
-                            <span id="card-phonetic-us-back" class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-blue-50/90 text-blue-700 border border-blue-200/60 font-medium transition-all" title="美式 KK 音標">
-                                <span class="text-[9px] font-sans font-bold text-blue-500">美</span>
+                        <div class="flex items-center justify-center gap-2 font-mono text-xs sm:text-sm mb-1 sm:mb-1.5 flex-wrap" id="card-phonetic-row-back">
+                            <span id="card-phonetic-us-back" class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-blue-50/90 text-blue-700 border border-blue-200/60 font-medium transition-all" title="美式 KK 音標">
+                                <span class="text-[10px] font-sans font-bold text-blue-500">美</span>
                                 <span id="card-kk-back">/ˈæpəl/</span>
                             </span>
-                            <span id="card-phonetic-uk-back" class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-purple-50/90 text-purple-700 border border-purple-200/60 font-medium transition-all" title="英式牛津音標 (Yahoo 字典)">
-                                <span class="text-[9px] font-sans font-bold text-purple-500">英</span>
+                            <span id="card-phonetic-uk-back" class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-purple-50/90 text-purple-700 border border-purple-200/60 font-medium transition-all" title="英式牛津音標 (Yahoo 字典)">
+                                <span class="text-[10px] font-sans font-bold text-purple-500">英</span>
                                 <span id="card-uk-back">/ˈæpl/</span>
                             </span>
                         </div>
@@ -2638,7 +2638,7 @@
                         <div class="flex flex-col items-center justify-center mb-1 sm:mb-1.5 max-w-full px-1">
                             <div class="flex items-center justify-center gap-1.5 flex-wrap">
                                 <span id="card-pos-badge" class="hidden"></span>
-                                <div class="cursor-pointer text-center text-slate-800 font-bold text-sm sm:text-base leading-snug flex items-center gap-1.5 flex-wrap justify-center" id="card-translation" title="點擊朗讀中文釋義">n. 蘋果</div>
+                                <div class="cursor-pointer text-center text-slate-800 font-bold text-base sm:text-lg leading-snug flex items-center gap-1.5 flex-wrap justify-center" id="card-translation" title="點擊朗讀中文釋義">n. 蘋果</div>
                                 <button id="btn-speak-zh" class="p-0.5 text-slate-400 hover:text-[#0071E3] hover:bg-blue-50 rounded-full transition-colors cursor-pointer shrink-0" title="朗讀中文釋義" aria-label="朗讀中文釋義">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
                                 </button>
@@ -2664,14 +2664,14 @@
                             <div id="speech-eval-result" class="hidden text-[11px] font-medium py-0.5 px-2 rounded-full mt-0.5 transition-all"></div>
                         </div>
                         
-                        <div id="example-container" class="bg-slate-50/90 rounded-xl p-2 sm:p-3 w-full text-left relative border border-slate-200/75 mt-0.5 sm:mt-1 hidden transition-all duration-300 hover:shadow-xs hover:bg-white">
+                        <div id="example-container" class="bg-slate-50/90 rounded-xl p-2.5 sm:p-3 w-full text-left relative border border-slate-200/75 mt-1 sm:mt-1.5 hidden transition-all duration-300 hover:shadow-xs hover:bg-white">
                             <button id="btn-example-audio" class="absolute top-2 right-2 p-1 text-slate-400 hover:text-[#0071E3] rounded-full hover:bg-blue-50 transition-colors z-10 cursor-pointer" title="朗讀例句">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
                             </button>
-                            <div class="text-[9px] sm:text-[10px] text-slate-400 mb-0.5 font-semibold tracking-wider uppercase">Example 例句 <span class="text-slate-400/80 normal-case ml-1 font-normal">(點單字可查字典)</span></div>
-                            <p class="text-slate-700 font-medium mb-0.5 pr-6 text-xs sm:text-[13px] leading-relaxed" id="card-example"></p>
+                            <div class="text-[10px] text-slate-400 mb-0.5 font-semibold tracking-wider uppercase">Example 例句 <span class="text-slate-400/80 normal-case ml-1 font-normal">(點單字可查字典)</span></div>
+                            <p class="text-slate-800 font-medium mb-0.5 pr-6 text-[14px] sm:text-[15px] leading-relaxed" id="card-example"></p>
                             <div class="mt-1 pt-1 border-t border-dashed border-slate-200">
-                                <p class="text-slate-500 text-[11px] sm:text-xs font-medium leading-relaxed" id="card-example-zh"></p>
+                                <p class="text-slate-500 text-[12.5px] sm:text-[13px] font-medium leading-relaxed" id="card-example-zh"></p>
                             </div>
                         </div>
                     </div>
@@ -2683,26 +2683,26 @@
                 <!-- 4選1按鈕 -->
             </div>
 
-            <div id="action-show-answer" class="w-full mt-6 sm:mt-8">
-                <button class="btn-action w-full bg-gray-800 hover:bg-gray-900 text-white font-medium py-4 rounded-2xl shadow-sm text-lg flex flex-col items-center justify-center gap-1" id="btn-show-answer">
+            <div id="action-show-answer" class="w-full mt-3 sm:mt-5">
+                <button class="btn-action w-full bg-gray-800 hover:bg-gray-900 text-white font-medium py-3.5 sm:py-4 rounded-2xl shadow-sm text-base sm:text-lg flex flex-col items-center justify-center gap-1" id="btn-show-answer">
                     <span>顯示解答</span>
                     <span class="text-[10px] font-mono opacity-60 bg-gray-700 px-2 rounded hidden sm:block">空白鍵 / Enter</span>
                 </button>
             </div>
             
-            <div id="action-next" class="w-full hidden mt-6 sm:mt-8">
-                <button class="btn-action w-full bg-[#0071E3] hover:bg-[#0077ED] text-white font-medium py-4 rounded-2xl shadow-sm shadow-indigo-200 text-lg flex flex-col items-center justify-center gap-1" id="btn-next-card">
+            <div id="action-next" class="w-full hidden mt-3 sm:mt-5">
+                <button class="btn-action w-full bg-[#0071E3] hover:bg-[#0077ED] text-white font-medium py-3.5 sm:py-4 rounded-2xl shadow-sm shadow-indigo-200 text-base sm:text-lg flex flex-col items-center justify-center gap-1" id="btn-next-card">
                     <span>下一題 ➔</span>
                     <span class="text-[10px] font-mono opacity-80 bg-indigo-800 px-2 rounded hidden sm:block">空白鍵 / Enter</span>
                 </button>
             </div>
 
-            <div id="action-rate" class="w-full grid grid-cols-2 gap-4 hidden mt-6 sm:mt-8">
-                <button class="btn-action bg-[#FF3B30] bg-opacity-10 hover:bg-red-200 text-[#FF3B30] border-0 border-[#E6D1C9] font-medium py-4 rounded-2xl shadow-sm text-lg flex flex-col items-center justify-center gap-1" id="btn-rate-wrong">
+            <div id="action-rate" class="w-full grid grid-cols-2 gap-3 sm:gap-4 hidden mt-3 sm:mt-5">
+                <button class="btn-action bg-[#FF3B30] bg-opacity-10 hover:bg-red-200 text-[#FF3B30] border-0 border-[#E6D1C9] font-medium py-3.5 sm:py-4 rounded-2xl shadow-sm text-base sm:text-lg flex flex-col items-center justify-center gap-1" id="btn-rate-wrong">
                     <span>忘記了 (重來)</span>
                     <span class="text-[10px] font-mono opacity-60 bg-red-200 px-2 rounded hidden sm:block">◀ 鍵盤左鍵</span>
                 </button>
-                <button class="btn-action bg-green-500 hover:bg-green-600 text-white font-medium py-4 rounded-2xl shadow-sm shadow-green-200 text-lg flex flex-col items-center justify-center gap-1" id="btn-rate-right">
+                <button class="btn-action bg-green-500 hover:bg-green-600 text-white font-medium py-3.5 sm:py-4 rounded-2xl shadow-sm shadow-green-200 text-base sm:text-lg flex flex-col items-center justify-center gap-1" id="btn-rate-right">
                     <span>記得了 (過關)</span>
                     <span class="text-[10px] font-mono opacity-80 bg-green-700 px-2 rounded hidden sm:block">鍵盤右鍵 ▶</span>
                 </button>
@@ -3220,9 +3220,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261105V4</span>
+                        <span id="app-version-display">版本 20261105V5</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261105V4</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261105V5</p>
                 </div>
             </div>
         </div>
@@ -6934,7 +6934,7 @@
 
             options.forEach((opt, index) => {
                 const btn = document.createElement('button');
-                btn.className = 'btn-action w-full bg-white hover:bg-slate-50 border border-slate-200/90 text-[#1D1D1F] font-medium py-2 sm:py-2.5 px-3 rounded-xl shadow-2xs text-left text-sm sm:text-[15px] transition-all flex items-center cursor-pointer min-h-[42px]';
+                btn.className = 'btn-action w-full bg-white hover:bg-slate-50 border border-slate-200/90 text-[#1D1D1F] font-medium py-2.5 sm:py-3 px-3.5 rounded-xl shadow-2xs text-left text-[14.5px] sm:text-[15.5px] transition-all flex items-center cursor-pointer min-h-[44px]';
                 btn.dataset.id = opt.id;
                 btn._opt = opt;
                 

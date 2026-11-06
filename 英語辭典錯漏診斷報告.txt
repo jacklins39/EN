@@ -1,0 +1,294 @@
+﻿英語辭典錯漏診斷報告
+https://gemini.google.com/app/0ebb9e1e9d533c57
+
+
+User prompt: 請扮演專業的英語教學與權威詞典編輯專家，針對這份資料進行全面檢核，並回傳錯漏診斷報告： 1. 【中文釋義 (zh)】：    - 檢查核心釋義是否精準、自然、符合台灣繁體中文教學習慣。    - 抓出並剔除：荒謬的機器翻譯錯字、極端冷僻的動植物學名、冷門學科術語（如紋章學、古老宗教口令等）、成人限制級或粗俗黑話。 2. 【例句與翻譯 (example / exampleZh)】：    - 檢查英文例句文法是否正確，有無拼字錯誤或語病。    - 檢查中文例句翻譯是否流暢通順，有無生硬機翻。 3. 【音標 (kk / uk)】：    - 檢查音標是否有亂碼、缺漏或明顯錯誤。 【輸出格式】： 請依下列條列格式清晰輸出需要修正的單字： - [ID] [單字 (中文)]：    * 問題說明：(指出是 zh 錯字、不當字義、或例句翻譯生硬)    * 建議修正：      - zh: "..."      - example: "..."      - exampleZh: "..."
+Response: 這是一份針對提供資料的錯漏診斷報告，已根據您的要求剔除冷僻術語、荒謬機翻、動植物學名及不當黑話：
+* [ID 27] [happy (快樂的)]：
+   * 問題說明：zh 釋義中出現「comb. 濫用……的」（如 trigger-happy），此為極端冷僻的構詞用法，不適合基礎教學。
+   * 建議修正：
+      * zh: "adj. 快樂的、高興的、幸福的、使人高興的"
+      * example: "The children look very happy today."
+      * exampleZh: "孩子們今天看起來很高興。"
+* [ID 73] [yummy (美味的)]：
+   * 問題說明：zh 釋義中出現「性感的」，此為非正式的粗俗/俚語用法，不適合常規教學。
+   * 建議修正：
+      * zh: "adj. 好吃的、美味的、可口的"
+      * example: "I'll bet they have yummy ice cream."
+      * exampleZh: "我敢打賭他們一定有美味的冰淇淋。"
+* [ID 153] [have (有)]：
+   * 問題說明：zh 釋義中出現「詐騙」，這源自俚語（have someone），屬於不當字義且容易造成學習混淆。
+   * 建議修正：
+      * zh: "vt. 有、擁有、顯示出、帶有"
+      * example: "We have a big test this morning."
+      * exampleZh: "我們今天早上有一場大考試。"
+* [ID 222] [at (在)]：
+   * 問題說明：zh 釋義中出現「阿特、砈；abbr. 密封的、大氣、原子的、氣溫」，這完全是荒謬的機器翻譯與極度冷僻的學術縮寫（如化學元素、寮國貨幣單位等）。
+   * 建議修正：
+      * zh: "prep. 在、在……歲時、在……遠、以"
+      * example: "I was good at sums at school."
+      * exampleZh: "我在學校擅長算術。"
+* [ID 345] [brown (棕色)]：
+   * 問題說明：zh 釋義中出現「眼蝶」，此為極端冷僻的動植物學名，應予剔除。
+   * 建議修正：
+      * zh: "adj. 棕色的、褐色的、膚色深的；n. 褐色、棕色；vt. 變成棕色"
+      * example: "The dog has nice brown fur today."
+      * exampleZh: "這隻狗有好看的棕色毛皮。"
+* [ID 379] [chief (主要的)]：
+   * 問題說明：zh 釋義中出現「上段」，這是極度冷門的紋章學（盾形紋章上部）術語。
+   * 建議修正：
+      * zh: "adj. 主要的、首要的、為首的、首席的；n. 首領、領袖、酋長"
+      * example: "Who is the chief of the village?"
+      * exampleZh: "誰是這個村莊的村長？"
+* [ID 403] [cop (警察)]：
+   * 問題說明：zh 釋義中出現「管紗、緯管」，這是極端冷門的紡織工業術語。
+   * 建議修正：
+      * zh: "n. 警察；vt. 抓獲、逮捕"
+      * example: "The cop stopped the speeding car."
+      * exampleZh: "警察攔下了超速的汽車。"
+* [ID 531] [goose (鵝)]：
+   * 問題說明：zh 釋義中出現「輕捏、觸摸」，這是指捏臀部的成人粗俗黑話，必須剔除。
+   * 建議修正：
+      * zh: "n. 鵝、雌鵝"
+      * example: "The big white goose became a black goose."
+      * exampleZh: "大白鵝變成了黑鵝。"
+* [ID 613] [lake (湖)]：
+   * 問題說明：zh 釋義中出現「血球溶解」，這是極度冷僻的醫學/生物學術語（Laking）。
+   * 建議修正：
+      * zh: "n. 湖、湖泊"
+      * example: "They walked around the lake."
+      * exampleZh: "他們繞著湖走了一圈。"
+* [ID 633] [lily (百合)]：
+   * 問題說明：zh 釋義中出現「鳶尾花形的紋章」，此為冷門的紋章學術語（fleur-de-lis），不適合基礎字彙。
+   * 建議修正：
+      * zh: "n. 百合花、百合、睡蓮；adj. 純潔的、潔白的"
+      * example: "The white lily is a symbol of purity."
+      * exampleZh: "白百合是純潔的象徵。"
+* [ID 708] [nurse (護士)]：
+   * 問題說明：zh 釋義中出現「保育蟲」，為極端冷僻的生物學名詞（nurse bee）。
+   * 建議修正：
+      * zh: "n. 護士、保姆、奶媽；vt. 看護、照料、細心打理"
+      * example: "The kind nurse helped the sick boy."
+      * exampleZh: "親切的護士幫助了生病的男孩。"
+* [ID 735] [party (派對)]：
+   * 問題說明：zh 釋義中出現「分割開的、分成不同顏色部分的」，這又是一個極度冷門的紋章學術語（party per pale）。
+   * 建議修正：
+      * zh: "n. 聚會、政黨、派對、黨派；vi. 盡情歡樂、歡宴"
+      * example: "We had a big dance party today."
+      * exampleZh: "我們今天辦了一個盛大的舞會派對。"
+* [ID 760] [policeman (警察)]：
+   * 問題說明：zh 釋義中出現「澱帚」，這是化學實驗室裡刮澱粉用的橡皮棒（rubber policeman），屬於冷門學科術語。
+   * 建議修正：
+      * zh: "n. 警察、警員"
+      * example: "The kind policeman helped the lost boy."
+      * exampleZh: "熱心的警察幫助了迷路的男孩。"
+________________
+
+
+User prompt: 其他的呢
+Response: 這是一份針對剩餘資料庫的進階錯漏診斷報告。在檢核後續的詞彙資料時，我發現了更多因「機器翻譯直譯」、「收錄極端冷僻專業術語（如建築、畜牧、獸醫、料理）」以及「爬蟲抓取殘留」所造成的荒謬錯誤，這些都會嚴重誤導一般英語學習者。
+以下是為您整理並剔除不當字義的修正清單：
+* [ID 1017] [yam (山藥/番薯)]：
+   * 問題說明：zh 釋義中出現「vi. 貓叫」，這是極端冷僻的蘇格蘭方言用法（同 yowl），不應出現在基礎單字庫中。
+   * 建議修正：
+      * zh: "n. 山藥、番薯"
+      * example: "She baked a sweet yam for lunch."
+      * exampleZh: "她烤了一顆甜番薯當午餐。"
+* [ID 1384] [carpet (地毯)]：
+   * 問題說明：zh 釋義中出現「地毯衣蛾」，這是將生物學俗名 (Carpet moth) 的直譯強行混入名詞解釋中，屬於冷門動植物學名。
+   * 建議修正：
+      * zh: "n. 地毯；vt. 給……鋪地毯"
+      * example: "We rolled up the carpet."
+      * exampleZh: "我們把地毯捲了起來。"
+* [ID 2290] [creep (爬行)]：
+   * 問題說明：zh 釋義中出現「給幼畜斷奶時吃的固體食物」，這是極度冷門的畜牧業術語 (creep feed)，嚴重偏離常用字義。
+   * 建議修正：
+      * zh: "vi. 躡手躡足地走、爬行、匍匐；n. 爬行、討厭的人"
+      * example: "Back I go to the hotel and creep up to my room."
+      * exampleZh: "我回到旅館，躡手躡腳地進了房間。"
+* [ID 2694] [fur (毛皮)]：
+   * 問題說明：zh 釋義中出現「透過插木條使（地板，牆面木料）齊平」，這是極度冷僻的建築裝潢工程術語 (furring)，完全不適合一般字典。
+   * 建議修正：
+      * zh: "n. 軟毛、毛皮製品、毛皮"
+      * example: "She had on a black coat with a fur collar."
+      * exampleZh: "她穿著一件有毛皮領子的黑色外套。"
+* [ID 2889] [nun (修女)]：
+   * 問題說明：zh 釋義中出現「希伯來字母表中的第十四個字母、錐形浮標」，這是荒謬的機翻錯誤，將同拼寫的希伯來字母 (Nun) 及航海術語 (nun buoy) 盲目混入。
+   * 建議修正：
+      * zh: "n. 修女、尼姑"
+      * example: "Were you a nun here eleven years ago?"
+      * exampleZh: "你是十一年前在這裡的修女嗎？"
+* [ID 2892] [herald (預示/使者)]：
+   * 問題說明：zh 釋義中出現「棘翅夜蛾」，這又是極端冷僻的動植物學名 (Herald moth)，必須剔除。
+   * 建議修正：
+      * zh: "vt. 預示……的來臨、宣佈；n. 預兆、使者、先驅"
+      * example: "This flower heralds spring."
+      * exampleZh: "這朵花預示著春天。"
+* [ID 2973] [rag (破布)]：
+   * 問題說明：zh 釋義中出現「檢索增強生成」，這是近期人工智慧領域的專業縮寫 (RAG - Retrieval-Augmented Generation)，被機器翻譯誤判為單字字義。
+   * 建議修正：
+      * zh: "n. 破布、抹布、破爛衣衫"
+      * example: "He plugged the hole in the pipe with an old rag."
+      * exampleZh: "他用一塊舊破布把管子上的那個洞塞住了。"
+* [ID 3203] [yolk (蛋黃)]：
+   * 問題說明：zh 釋義中出現「羊毛脂」，這是極端冷僻的畜牧與紡織業術語 (yolk of wool)。
+   * 建議修正：
+      * zh: "n. 蛋黃、卵黃"
+      * example: "Only the yolk contains cholesterol."
+      * exampleZh: "只有蛋黃含膽固醇。"
+* [ID 3385] [sturdy (結實的)]：
+   * 問題說明：zh 釋義中出現「暈倒病、蹣跚病」，這是極罕見的獸醫學術語（指羊的腦多頭蚴病），會嚴重誤導學生。
+   * 建議修正：
+      * zh: "adj. 結實的、健康的、堅固的、強壯的"
+      * example: "She was a short, sturdy woman in her early sixties."
+      * exampleZh: "她是一位六十出頭、矮小結實的女人。"
+* [ID 3389] [supreme (最高的)]：
+   * 問題說明：zh 釋義中出現「奶油沙司；v. 用工具處理水果（尤指柑橘類）以達到最佳效果」，這是極冷門的法式高級料理術語 (sauce suprême / suprêming citrus)。
+   * 建議修正：
+      * zh: "adj. 最高的、至上的、至高無上的"
+      * example: "The Supreme Court ruled in Fitzgerald's favour."
+      * exampleZh: "最高法院判定菲茨傑拉德勝訴。"
+* [ID 4054] [noun (名詞)]：
+   * 問題說明：zh 釋義中出現「努恩」，這是機器翻譯直接將 Noun 音譯成埃及神話人物或阿拉伯字母，屬於荒謬的機翻錯誤。
+   * 建議修正：
+      * zh: "n. 名詞"
+      * example: "It's a countable noun."
+      * exampleZh: "這是一個可數名詞。"
+* [ID 5017] [nightingale (夜鶯)]：
+   * 問題說明：zh 釋義中出現「奈廷格爾、南丁格爾」，這是將專有名詞（人名）的音譯混入普通名詞解釋中，屬於詞性與詞義未妥善分類的瑕疵。
+   * 建議修正：
+      * zh: "n. 夜鶯"
+      * example: "Poor Jorindel saw the nightingale was gone—but what could he do?"
+      * exampleZh: "可憐的約雷德爾看到夜鶯不見了——可他又能怎麼辦呢？"
+* [ID 6405] [thrift (節儉)]：
+   * 問題說明：zh 釋義中出現「繁茂」與「互助儲蓄銀行」，前者為冷僻植物學俗名 (sea thrift，海石竹)，後者為特定金融體系術語 (thrift bank)，偏離一般學習者的核心字義。
+   * 建議修正：
+      * zh: "n. 節儉、節約"
+      * example: "To practice thrift is a virtue."
+      * exampleZh: "節儉是美德。"
+* [ID 6571] [discounts (折扣)]：
+   * 問題說明：zh 釋義中出現「discount的複數形式... discount的第三人稱單數形式」，這是直接抓取網路字典排版說明的殘留文字，顯得生硬且不自然。
+   * 建議修正：
+      * zh: "n. 折扣、減價；vt. 打折、降價出售"
+      * example: "Many stores offer special discounts to students and senior citizens."
+      * exampleZh: "許多商店為學生與年長者提供特別折扣。"
+________________
+
+
+User prompt: 沒了
+Response: 以下是後續資料中發掘的錯漏診斷報告。這次不僅包含冷僻術語與機翻錯誤，還抓出了數個「釋義完全錯置」的嚴重瑕疵與爬蟲殘留字眼：
+* [ID 54] [simple (簡單的)]：
+   * 問題說明：zh 釋義中出現「草藥、藥草、出身低微者」，這些是極度古老或冷僻的用法，不適合基礎英語教學。
+   * 建議修正：
+      * zh: "adj. 簡單的、樸素的、簡明的、簡樸的；n. 笨蛋"
+      * example: "This is a simple game for kids."
+      * exampleZh: "這對小孩子來說是個簡單的遊戲。"
+* [ID 139] [sing (唱歌)]：
+   * 問題說明：zh 釋義中混入了「abbr. 單數」，這是 singular 的縮寫，並非 sing 單字本身的字義，屬於機翻誤判。
+   * 建議修正：
+      * zh: "vt. 唱歌、歌唱、唱、演唱；n. 唱歌、演唱"
+      * example: "I sing about love most of the time."
+      * exampleZh: "我大部分時間都在歌唱愛情。"
+* [ID 182] [least (最少的)]：
+   * 問題說明：zh 釋義中出現「用於極小動植物的名稱」，這是生物命名法中的規則描述（如 least weasel），非單字本身的釋義。
+   * 建議修正：
+      * zh: "adj. 最少的、最微不足道的；adv. 最低程度地、最少、至少；n. 最不重要的事物、最微小的事物；pron. 最少量、起碼"
+      * example: "We need at least two more hours."
+      * exampleZh: "我們至少還需要兩個小時。"
+* [ID 2004] [proper (適當的)]：
+   * 問題說明：zh 釋義中出現「特定季節（或節日）的禮儀」，這是極冷門的宗教儀式術語 (proper of the mass)。
+   * 建議修正：
+      * zh: "adj. 適合的、適當的、真正的、像樣的；adv. 完全地、徹底地、正確地、恰當地"
+      * example: "She's a proper little madam."
+      * exampleZh: "她真是個說一不二的小姑娘。"
+* [ID 2207] [queer (奇怪的)]：
+   * 問題說明：zh 釋義中出現「偽造的貨幣」，這是 19 世紀的古老黑話 (queer money)，容易造成學習干擾。
+   * 建議修正：
+      * zh: "adj. 古怪的、頭暈眼花的、奇怪的、異常的；n. 同性戀者；v. 毀壞、搞糟、使陷於不利地位"
+      * example: "His face was a queer pink colour."
+      * exampleZh: "他滿臉奇怪的粉紅色。"
+* [ID 2236] [stale (不新鮮的)]：
+   * 問題說明：zh 釋義中出現「撒尿；n. 尿」，這是指牛馬等牲畜排尿的極冷僻古字，極易造成學習者誤解。
+   * 建議修正：
+      * zh: "adj. 不新鮮的、污濁的、陳舊的、變味的；v. 走味、變舊"
+      * example: "Their daily diet consisted of a lump of stale bread, a bowl of rice, and stale water."
+      * exampleZh: "他們的日常飲食包括一塊不新鮮的麵包、一碗米飯，還有不新鮮的水。"
+* [ID 2402] [pop (流行)]：
+   * 問題說明：zh 釋義中出現「abbr. 郵局協議、人口」，這是 POP 作為縮寫 (Post Office Protocol / Population) 的機翻殘留。
+   * 建議修正：
+      * zh: "adj. 流行音樂的、通俗的、大眾的；n. 流行音樂、砰的響聲、汽水、爸爸；v. 砰地爆開、突然出現"
+      * example: "Pop stars are always news."
+      * exampleZh: "流行音樂明星總是新聞人物。"
+* [ID 3053] [pacific (太平洋的)]：
+   * 問題說明：zh 釋義中出現「車輪4-6-2排列的蒸汽機車、“太平洋”號機車」，為極端冷門的鐵道火車型號術語。
+   * 建議修正：
+      * zh: "n. 太平洋；adj. 太平洋的、愛和平的、息事寧人的、平靜的"
+      * example: "Anita drove north up Pacific Highway."
+      * exampleZh: "安尼塔開車沿著太平洋公路向北行駛。"
+* [ID 3086] [stool (凳子)]：
+   * 問題說明：zh 釋義中出現「從靠近地面處砍斷、從根株長出新苗、引誘、誘捕」，涵蓋了冷門的林業術語與狩獵術語 (stool pigeon)。
+   * 建議修正：
+      * zh: "n. 凳子、擱腳凳、大便；v. 解大便"
+      * example: "He hoisted himself onto a high stool."
+      * exampleZh: "他抬身坐上了一張高凳子。"
+* [ID 3233] [consequent (隨之發生的)]：
+   * 問題說明：zh 釋義中出現「答題、答句」，這是音樂賦格曲 (fugue) 中的極冷門對位法術語。
+   * 建議修正：
+      * zh: "adj. 隨之發生的、由此引起的、順向的；n. 後件、推斷"
+      * example: "The factory shutdown and the consequent job losses impacted the whole town."
+      * exampleZh: "工廠倒閉以及隨之而來的失業潮衝擊了整個小鎮。"
+* [ID 4192] [satisfaction (滿意)]：
+   * 問題說明：zh 釋義完全錯誤。被錯植成了 scratch (抓、搔、劃破) 的中文解釋。
+   * 建議修正：
+      * zh: "n. 滿意、滿足、令人滿意的事物"
+      * example: "It gave me a feeling of satisfaction."
+      * exampleZh: "它給了我一種滿足感。"
+* [ID 4280] [virtue (美德)]：
+   * 問題說明：zh 釋義完全錯誤。被錯植成了 visual (視覺的) 的中文解釋。
+   * 建議修正：
+      * zh: "n. 美德、德行、優點、長處"
+      * example: "The plan has the virtue of simplicity."
+      * exampleZh: "這項計劃的優點是簡單。"
+* [ID 5131] [tissue (面紙)]：
+   * 問題說明：zh 釋義中出現亂碼「組織[、面巾紙」，遺留了多餘的符號。
+   * 建議修正：
+      * zh: "n. 紙巾、面紙、面巾紙、組織"
+      * example: "As we age we lose muscle tissue."
+      * exampleZh: "隨著年紀的增大，我們會失去一些肌肉組織。"
+* [ID 5202] [shrub (灌木)]：
+   * 問題說明：zh 釋義中出現「果汁甜酒、果汁露酒；v. 因肯亞英語的影響而發錯音」，前者是冷僻調酒，後者是非常生僻的語言學現象描述，極不適合一般學習。
+   * 建議修正：
+      * zh: "n. 矮樹、灌木"
+      * example: "Once shrub covers everything, you lose the meadow habitat."
+      * exampleZh: "一旦灌木覆蓋了一切，你就失去了草地的棲息地。"
+* [ID 5210] [slap (拍打)]：
+   * 問題說明：zh 釋義中出現「adj. 精力不足的、效率不高的、鬆軟的、過於柔軟的」，這完全是 slack 的字義，屬於資料錯置。
+   * 建議修正：
+      * zh: "vt. 打、拍、拍打、拍擊；n. 拍、掌擊、掌擊聲；adv. 直接地、猛然、恰好"
+      * example: "The stinging slap almost caught his face."
+      * exampleZh: "這狠狠的一巴掌差點打在他的臉上。"
+* [ID 5268] [underpass (地下道)]：
+   * 問題說明：zh 釋義完全錯誤。被錯植成了 tumble / fall (跌倒、滾下、暴跌) 的中文解釋。
+   * 建議修正：
+      * zh: "n. 地下道、下穿通道、地下人行道"
+      * example: "The underpass was closed through flooding."
+      * exampleZh: "下穿通道在洪水期被封閉。"
+* [ID 6245] [progressive (進步的)]：
+   * 問題說明：zh 釋義中出現「分色打樣」，這是印刷工業的專門術語 (progressive proofs)。
+   * 建議修正：
+      * zh: "adj. 進步的、先進的、逐步發生的、進行時的；n. 進步分子、改革派人士"
+      * example: "Willan was able to point to the progressive changes he had already introduced."
+      * exampleZh: "威蘭能夠指出他已經帶來的有進步意義的變化。"
+* [ID 6321] [sewer (下水道)]：
+   * 問題說明：zh 釋義中包含「縫紉工」。雖然拼法相同，但發音完全不同 (/ˈsəʊ.ər/)，放在一般字彙表中極易造成發音與語意混淆。
+   * 建議修正：
+      * zh: "n. 污水管、下水道、陰溝；v. 為……鋪設汙水管道"
+      * example: "Where do sewers go?"
+      * exampleZh: "下水道通往哪裡？"
+* [ID 6571, 6573, 6574, 6576, 6577, 6578, 6580, 6581] [動詞過去式與名詞複數系列]：
+   * 問題說明：這一系列單字 (如 discounts, accusations, drove, clamped 等) 的 zh 釋義中，夾雜了網路字典爬蟲抓取時殘留的排版文字（如「discount的複數形式」、「offer的過去式與過去分詞形式」），語句生硬。
+   * 建議修正：統一刪除此類後設（meta）說明文字，僅保留該形態對應的純中文解釋。以 ID 6571 為例：
+      * zh: "n. 折扣、減價、優惠；vt. 打折、降價出售、不全信"
+      * example: "Many stores offer special discounts to students and senior citizens."
+      * exampleZh: "許多商店為學生與年長者提供特別折扣。"
+________________

@@ -264,7 +264,7 @@ const externalVocabularyDB = [
         "en": "happy",
         "kk": "[ˋhæpi]",
         "uk": "/ˈhæpi/",
-        "zh": "adj. 快樂的、高興的、幸福的、使人高興的；comb. 濫用……的",
+        "zh": "adj. 快樂的、高興的、幸福的、使人高興的",
         "unit": 1,
         "example": "The children look very happy today.",
         "exampleZh": "孩子們今天看起來很高興。"
@@ -534,7 +534,7 @@ const externalVocabularyDB = [
         "en": "simple",
         "kk": "[ˋsɪmpəl]",
         "uk": "/ˈsɪmp(ə)l/",
-        "zh": "adj. 簡單的、樸素的、簡明的、簡樸的；n. 草藥、藥草、出身低微者、笨蛋",
+        "zh": "adj. 簡單的、樸素的、簡明的、簡樸的；n. 笨蛋",
         "unit": 1,
         "example": "This is a simple game for kids.",
         "exampleZh": "這對小孩子來說是個簡單的遊戲。"
@@ -724,7 +724,7 @@ const externalVocabularyDB = [
         "en": "yummy",
         "kk": "[ˋjʌmi]",
         "uk": "/ˈjʌmi/",
-        "zh": "adj. 好吃的、美味的、可口的、性感的；n. 美味的食物",
+        "zh": "adj. 好吃的、美味的、可口的",
         "unit": 1,
         "example": "I'll bet they have yummy ice cream.",
         "exampleZh": "我敢打賭他們一定有美味的冰淇淋。"
@@ -1384,7 +1384,7 @@ const externalVocabularyDB = [
         "en": "sing",
         "kk": "[sɪŋ]",
         "uk": "/sɪŋ/",
-        "zh": "vt. 唱歌、歌唱、唱、演唱；n. 唱歌、演唱、業餘演唱會、鳴聲；abbr. 單數",
+        "zh": "vt. 唱歌、歌唱、唱、演唱；n. 唱歌、演唱",
         "unit": 1,
         "example": "I sing about love most of the time.",
         "exampleZh": "我大部分時間都在歌唱愛情。"
@@ -1524,7 +1524,7 @@ const externalVocabularyDB = [
         "en": "have",
         "kk": "[hæv]",
         "uk": "/hæv; həv/",
-        "zh": "vt. 有、擁有、顯示出、帶有；n. 有錢人、詐騙",
+        "zh": "vt. 有、擁有、顯示出、帶有",
         "unit": 1,
         "example": "We have a big test this morning.",
         "exampleZh": "我們今天早上有一場大考試。"
@@ -1814,7 +1814,7 @@ const externalVocabularyDB = [
         "en": "least",
         "kk": "[list]",
         "uk": "/liːst/",
-        "zh": "adj. 最少的、一點兒、最微不足道的、用於極小動植物的名稱；adv. 最低程度地、最少、至少；n. 最不重要的事物、最微小的事物、至少、起碼；pron. 最少量、起碼；det. 最少的、最小的",
+        "zh": "adj. 最少的、最微不足道的；adv. 最低程度地、最少、至少；n. 最不重要的事物、最微小的事物；pron. 最少量、起碼",
         "unit": 1,
         "example": "We need at least two more hours.",
         "exampleZh": "我們至少還需要兩個小時。"
@@ -2214,7 +2214,7 @@ const externalVocabularyDB = [
         "en": "at",
         "kk": "[æt]",
         "uk": "/æt; ət/",
-        "zh": "prep. 在、在……歲時、在……遠、以；n. 阿特、砈；abbr. 密封的、大氣、原子的、氣溫",
+        "zh": "prep. 在、在……歲時、在……遠、以",
         "unit": 1,
         "example": "I was good at sums at school.",
         "exampleZh": "我在學校擅長算術。"
@@ -3444,7 +3444,7 @@ const externalVocabularyDB = [
         "en": "brown",
         "kk": "[braʊn]",
         "uk": "/braʊn/",
-        "zh": "adj. 棕色的、褐色的、膚色深的、曬黑的；n. 褐色、棕色、褐色的東西、眼蝶；vt. 變成棕色、成褐色",
+        "zh": "adj. 棕色的、褐色的、膚色深的；n. 褐色、棕色；vt. 變成棕色",
         "unit": 1,
         "example": "The dog has nice brown fur today.",
         "exampleZh": "這隻狗有好看的棕色毛皮。"
@@ -3784,7 +3784,7 @@ const externalVocabularyDB = [
         "en": "chief",
         "kk": "[tʃif]",
         "uk": "/tʃiːf/",
-        "zh": "adj. 主要的、首要的、為首的、首席的；n. 首領、領袖、酋長、上段；adv. 主要地、首要地",
+        "zh": "adj. 主要的、首要的、為首的、首席的；n. 首領、領袖、酋長",
         "unit": 1,
         "example": "Who is the chief of the village?",
         "exampleZh": "誰是這個村莊的村長？"
@@ -4024,7 +4024,7 @@ const externalVocabularyDB = [
         "en": "cop",
         "kk": "[kɑp]",
         "uk": "/kɒp/",
-        "zh": "n. 警察、管紗、緯管、精明；vt. 抓獲、逮捕、遭受、蒙受",
+        "zh": "n. 警察；vt. 抓獲、逮捕",
         "unit": 1,
         "example": "The cop stopped the speeding car.",
         "exampleZh": "警察攔下了超速的汽車。"
@@ -5304,7 +5304,7 @@ const externalVocabularyDB = [
         "en": "goose",
         "kk": "[ɡus]",
         "uk": "/ɡuːs/",
-        "zh": "n. 鵝、雌鵝；v. 輕捏、觸摸",
+        "zh": "n. 鵝、雌鵝",
         "unit": 1,
         "example": "The big white goose became a black goose.",
         "exampleZh": "大白鵝變成了黑鵝。"
@@ -6124,7 +6124,7 @@ const externalVocabularyDB = [
         "en": "lake",
         "kk": "[lek]",
         "uk": "/leɪk/",
-        "zh": "n. 湖、湖泊、大量的液體、一灘；v. 血球溶解",
+        "zh": "n. 湖、湖泊",
         "unit": 1,
         "example": "They walked around the lake.",
         "exampleZh": "他們繞著湖走了一圈。"
@@ -6324,7 +6324,7 @@ const externalVocabularyDB = [
         "en": "lily",
         "kk": "[ˋlɪli]",
         "uk": "/ˈlɪli/",
-        "zh": "n. 百合花、百合、睡蓮、鳶尾花形的紋章；adj. 純潔的、潔白的",
+        "zh": "n. 百合花、百合、睡蓮；adj. 純潔的、潔白的",
         "unit": 1,
         "example": "The white lily is a symbol of purity.",
         "exampleZh": "白百合是純潔的象徵。"
@@ -7074,7 +7074,7 @@ const externalVocabularyDB = [
         "en": "nurse",
         "kk": "[nɝs]",
         "uk": "/nɜːs/",
-        "zh": "n. 護士、保姆、奶媽、保育蟲；vt. 看護、照料、細心打理、調養",
+        "zh": "n. 護士、保姆、奶媽；vt. 看護、照料、細心打理",
         "unit": 1,
         "example": "The kind nurse helped the sick boy.",
         "exampleZh": "親切的護士幫助了生病的男孩。"
@@ -7344,7 +7344,7 @@ const externalVocabularyDB = [
         "en": "party",
         "kk": "[ˋpɑrti]",
         "uk": "/ˈpɑːti/",
-        "zh": "n. 聚會、政黨、派對、黨派；vi. 盡情歡樂、歡宴；adj. 分割開的、分成不同顏色部分的",
+        "zh": "n. 聚會、政黨、派對、黨派；vi. 盡情歡樂、歡宴",
         "unit": 1,
         "example": "We had a big dance party today.",
         "exampleZh": "我們今天辦了一個盛大的舞會派對。"
@@ -7594,7 +7594,7 @@ const externalVocabularyDB = [
         "en": "policeman",
         "kk": "[pəˋlismən]",
         "uk": "/pəˈliːsmən/",
-        "zh": "n. 警察、警員、澱帚",
+        "zh": "n. 警察、警員",
         "unit": 1,
         "example": "The kind policeman helped the lost boy.",
         "exampleZh": "熱心的警察幫助了迷路的男孩。"
@@ -10164,10 +10164,10 @@ const externalVocabularyDB = [
         "en": "yam",
         "kk": "[jæm]",
         "uk": "/jæm/",
-        "zh": "n. 山芋類植物、薯蕷、山藥、〈北美〉番薯；vi. 貓叫",
+        "zh": "n. 山藥、番薯",
         "unit": 2,
         "example": "She baked a sweet yam for lunch.",
-        "exampleZh": "她烤了一顆甜地瓜當午餐。"
+        "exampleZh": "她烤了一顆甜番薯當午餐。"
     },
     {
         "id": 1018,
@@ -13834,7 +13834,7 @@ const externalVocabularyDB = [
         "en": "carpet",
         "kk": "[ˋkɑrpət]",
         "uk": "/ˈkɑːpɪt/",
-        "zh": "n. 地毯、覆蓋地面的一層厚東西、人工球場、地毯衣蛾；vt. 給……鋪地毯、厚厚地鋪上、訓斥、斥責",
+        "zh": "n. 地毯；vt. 給……鋪地毯",
         "unit": 2,
         "example": "We rolled up the carpet.",
         "exampleZh": "我們把地毯捲了起來。"
@@ -22034,10 +22034,10 @@ const externalVocabularyDB = [
         "en": "proper",
         "kk": "[ˋprɑpɚ]",
         "uk": "/ˈprɒpə(r)/",
-        "zh": "adj. 適合的、適當的、真正的、像樣的；adv. 完全地、徹底地、正確地、恰當地；n. 特定季節（或節日）的禮儀",
+        "zh": "adj. 適合的、適當的、真正的、像樣的；adv. 完全地、徹底地、正確地、恰當地",
         "unit": 3,
         "example": "She's a proper little madam.",
-        "exampleZh": "她真是個說一不二的小姑奶奶。"
+        "exampleZh": "她真是個說一不二的小姑娘。"
     },
     {
         "id": 2205,
@@ -22064,7 +22064,7 @@ const externalVocabularyDB = [
         "en": "queer",
         "kk": "[kwɪr]",
         "uk": "/kwɪə(r)/",
-        "zh": "adj. 古怪的、頭暈眼花的、奇怪的、異常的；n. 同性戀者、偽造的貨幣；v. 毀壞、搞糟、使陷於不利地位",
+        "zh": "adj. 古怪的、頭暈眼花的、奇怪的、異常的；n. 同性戀者；v. 毀壞、搞糟、使陷於不利地位",
         "unit": 3,
         "example": "His face was a queer pink colour.",
         "exampleZh": "他滿臉奇怪的粉紅色。"
@@ -22354,7 +22354,7 @@ const externalVocabularyDB = [
         "en": "stale",
         "kk": "[stel]",
         "uk": "/steɪl/",
-        "zh": "adj. 不新鮮的、污濁的、陳舊的、變味的；v. 不新鮮、走味、陳舊、撒尿；n. 尿",
+        "zh": "adj. 不新鮮的、污濁的、陳舊的、變味的；v. 走味、變舊",
         "unit": 3,
         "example": "Their daily diet consisted of a lump of stale bread, a bowl of rice, and stale water.",
         "exampleZh": "他們的日常飲食包括一塊不新鮮的麵包、一碗米飯，還有不新鮮的水。"
@@ -22894,7 +22894,7 @@ const externalVocabularyDB = [
         "en": "creep",
         "kk": "[krip]",
         "uk": "/kriːp/",
-        "zh": "vi. 躡手躡足地走、爬行、匍匐、躡手躡腳地移動；n. 討厭的人、獻媚者、牆洞、給幼畜斷奶時吃的固體食物",
+        "zh": "vi. 躡手躡足地走、爬行、匍匐；n. 爬行、討厭的人",
         "unit": 3,
         "example": "Back I go to the hotel and creep up to my room.",
         "exampleZh": "我回到旅館，躡手躡腳地進了房間。"
@@ -24014,7 +24014,7 @@ const externalVocabularyDB = [
         "en": "pop",
         "kk": "[pɑp]",
         "uk": "/pɒp/",
-        "zh": "adj. 流行音樂的、通俗的、大眾的；n. 流行音樂、砰的響聲、汽水、爸爸；v. 砰地爆開、砰地脫落、迅速去、短暫逗留；adv. 砰的響聲；abbr. 郵局協議、人口",
+        "zh": "adj. 流行音樂的、通俗的、大眾的；n. 流行音樂、砰的響聲、汽水、爸爸；v. 砰地爆開、突然出現",
         "unit": 3,
         "example": "Pop stars are always news.",
         "exampleZh": "流行音樂明星總是新聞人物。"
@@ -26934,7 +26934,7 @@ const externalVocabularyDB = [
         "en": "fur",
         "kk": "[fɝ]",
         "uk": "/fɜː(r)/",
-        "zh": "n. 軟毛、毛皮製品、柔毛、毛皮；v. 積垢、生苔、透過插木條使（地板，牆面木料）齊平、用某種毛皮覆蓋（或製成）的",
+        "zh": "n. 軟毛、毛皮製品、毛皮",
         "unit": 3,
         "example": "She had on a black coat with a fur collar.",
         "exampleZh": "她穿著一件有毛皮領子的黑色外套。"
@@ -28884,7 +28884,7 @@ const externalVocabularyDB = [
         "en": "nun",
         "kk": "[nʌn]",
         "uk": "/nʌn/",
-        "zh": "n. 修女、尼姑、希伯來字母表中的第十四個字母、錐形浮標",
+        "zh": "n. 修女、尼姑",
         "unit": 3,
         "example": "Were you a nun here eleven years ago?",
         "exampleZh": "你是十一年前在這裡的修女嗎？"
@@ -29724,7 +29724,7 @@ const externalVocabularyDB = [
         "en": "rag",
         "kk": "[ræɡ]",
         "uk": "/ræɡ/",
-        "zh": "n. 破布、抹布、破爛衣衫、破衣爛衫；vt. 嘲笑、戲弄、責罵、呵斥；abbr. 檢索增強生成",
+        "zh": "n. 破布、抹布、破爛衣衫",
         "unit": 3,
         "example": "He plugged the hole in the pipe with an old rag.",
         "exampleZh": "他用一塊舊破布把管子上的那個洞塞住了。"
@@ -30854,7 +30854,7 @@ const externalVocabularyDB = [
         "en": "stool",
         "kk": "[stul]",
         "uk": "/stuːl/",
-        "zh": "n. 凳子、擱腳凳、解大便、大便；v. 從靠近地面處砍斷、從根株長出新苗、引誘、誘捕",
+        "zh": "n. 凳子、擱腳凳、大便；v. 解大便",
         "unit": 4,
         "example": "He hoisted himself onto a high stool.",
         "exampleZh": "他抬身坐上了一張高凳子。"
@@ -31304,7 +31304,7 @@ const externalVocabularyDB = [
         "en": "tissue",
         "kk": "[ˋtɪ͵sju]",
         "uk": "/ˈtɪʃuː/",
-        "zh": "n. 紙巾、面紙、組織[、面巾紙；v. 用化妝紙揩去、飾以薄紗",
+        "zh": "n. 紙巾、面紙、面巾紙、組織",
         "unit": 4,
         "example": "As we age we lose muscle tissue.",
         "exampleZh": "隨著年紀的增大，我們會失去一些肌肉組織。"
@@ -32024,7 +32024,7 @@ const externalVocabularyDB = [
         "en": "yolk",
         "kk": "[jok]",
         "uk": "/jəʊk/",
-        "zh": "n. 蛋黃、卵黃、羊毛脂",
+        "zh": "n. 蛋黃、卵黃",
         "unit": 4,
         "example": "Only the yolk contains cholesterol.",
         "exampleZh": "只有蛋黃含膽固醇。"
@@ -32324,7 +32324,7 @@ const externalVocabularyDB = [
         "en": "consequent",
         "kk": "[ˋkɑnsəkwənt]",
         "uk": "/ˈkɒnsɪkwənt/",
-        "zh": "adj. 隨之發生的、由此引起的、順向的；n. 後件、推斷、答題、答句",
+        "zh": "adj. 隨之發生的、由此引起的、順向的；n. 後件、推斷",
         "unit": 4,
         "example": "The factory shutdown and the consequent job losses impacted the whole town.",
         "exampleZh": "工廠倒閉以及隨之而來的失業潮衝擊了整個小鎮。"
@@ -40534,7 +40534,7 @@ const externalVocabularyDB = [
         "en": "noun",
         "kk": "[naʊn]",
         "uk": "/naʊn/",
-        "zh": "n. 名詞、努恩",
+        "zh": "n. 名詞",
         "unit": 5,
         "example": "It's a countable noun.",
         "exampleZh": "這是一個可數名詞。"
@@ -41914,7 +41914,7 @@ const externalVocabularyDB = [
         "en": "satisfaction",
         "kk": "[͵sætəˋsfækʃən]",
         "uk": "/ˌsætɪsˈfækʃ(ə)n/",
-        "zh": "v. 抓、搔、劃破、抓癢；n. 刮痕、抓傷、從頭開始",
+        "zh": "n. 滿意、滿足、令人滿意的事物",
         "unit": 5,
         "example": "It gave me a feeling of satisfaction.",
         "exampleZh": "它給了我一種滿足感。"
@@ -42674,7 +42674,7 @@ const externalVocabularyDB = [
         "en": "underpass",
         "kk": "[ˋʌndɚ͵pæs]",
         "uk": "/ˈʌndəpɑːs/",
-        "zh": "v. 跌倒、滾下、暴跌；n. 摔倒、滾落",
+        "zh": "n. 地下道、下穿通道、地下人行道",
         "unit": 5,
         "example": "The underpass was closed through flooding.",
         "exampleZh": "下穿通道在洪水期被封閉。"
@@ -42794,7 +42794,7 @@ const externalVocabularyDB = [
         "en": "virtue",
         "kk": "[ˋvɝtʃu]",
         "uk": "/ˈvɜːtʃuː/",
-        "zh": "adj. 視覺的、視力的；n. 視覺資料、視覺效果",
+        "zh": "n. 美德、德行、優點、長處",
         "unit": 5,
         "example": "The plan has the virtue of simplicity.",
         "exampleZh": "這項計劃的優點是簡單。"
@@ -43844,7 +43844,7 @@ const externalVocabularyDB = [
         "en": "sturdy",
         "kk": "[ˋstɝdi]",
         "uk": "/ˈstɜːdi/",
-        "zh": "adj. 結實的、健康的、堅固的、強壯的；n. 暈倒病、蹣跚病",
+        "zh": "adj. 結實的、健康的、堅固的、強壯的",
         "unit": 5,
         "example": "She was a short, sturdy woman in her early sixties.",
         "exampleZh": "她是一位六十出頭、矮小結實的女人。"
@@ -43884,7 +43884,7 @@ const externalVocabularyDB = [
         "en": "supreme",
         "kk": "[səˋprim]",
         "uk": "/suːˈpriːm; sjuːˈpriːm/",
-        "zh": "adj. 最高的、至上的、至高無上的、擁有最高權力的；n. 奶油沙司；v. 用工具處理水果（尤指柑橘類）以達到最佳效果",
+        "zh": "adj. 最高的、至上的、至高無上的",
         "unit": 5,
         "example": "The Supreme Court ruled in Fitzgerald's favour.",
         "exampleZh": "最高法院判定菲茨傑拉德勝訴。"
@@ -48914,7 +48914,7 @@ const externalVocabularyDB = [
         "en": "herald",
         "kk": "[ˋhɛrəld]",
         "uk": "/ˈherəld/",
-        "zh": "vt. 預示……的來臨、宣佈、宣傳、熱烈歡迎；n. 預兆、使者、先驅、棘翅夜蛾",
+        "zh": "vt. 預示……的來臨、宣佈；n. 預兆、使者、先驅",
         "unit": 5,
         "example": "This flower heralds spring.",
         "exampleZh": "這朵花預示著春天。"
@@ -50164,7 +50164,7 @@ const externalVocabularyDB = [
         "en": "nightingale",
         "kk": "[ˋnaɪtɪŋɡel]",
         "uk": "/ˈnaɪtɪŋɡeɪl/",
-        "zh": "n. 夜鶯、奈廷格爾、南丁格爾",
+        "zh": "n. 夜鶯",
         "unit": 6,
         "example": "Poor Jorindel saw the nightingale was gone—but what could he do?",
         "exampleZh": "可憐的約雷德爾看到夜鶯不見了——可他又能怎麼辦呢？"
@@ -50524,7 +50524,7 @@ const externalVocabularyDB = [
         "en": "pacific",
         "kk": "[pəˋsɪfɪk]",
         "uk": "/pəˈsɪfɪk/",
-        "zh": "n. 太平洋、車輪4-6-2排列的蒸汽機車、“太平洋”號機車；adj. 太平洋的、愛和平的、息事寧人的、平靜的",
+        "zh": "n. 太平洋；adj. 太平洋的、愛和平的、息事寧人的、平靜的",
         "unit": 6,
         "example": "Anita drove north up Pacific Highway.",
         "exampleZh": "安尼塔開車沿著太平洋公路向北行駛。"
@@ -52014,7 +52014,7 @@ const externalVocabularyDB = [
         "en": "shrub",
         "kk": "[ʃrʌb]",
         "uk": "/ʃrʌb/",
-        "zh": "n. 矮樹、灌木、果汁甜酒、果汁露酒；v. 因肯亞英語的影響而發錯音",
+        "zh": "n. 矮樹、灌木",
         "unit": 6,
         "example": "Once shrub covers everything, you lose the meadow habitat.",
         "exampleZh": "一旦灌木覆蓋了一切，你就失去了草地的棲息地。"
@@ -52094,7 +52094,7 @@ const externalVocabularyDB = [
         "en": "slap",
         "kk": "[slæp]",
         "uk": "/slæp/",
-        "zh": "vt. 打、拍、拍打、拍擊；n. 拍、掌擊、掌擊聲、拍打聲；adv. 直接地、猛然、恰好、正好；adj. 精力不足的、效率不高的、鬆軟的、過於柔軟的",
+        "zh": "vt. 打、拍、拍打、拍擊；n. 拍、掌擊、掌擊聲；adv. 直接地、猛然、恰好",
         "unit": 6,
         "example": "The stinging slap almost caught his face.",
         "exampleZh": "這狠狠的一巴掌差點打在他的臉上。"
@@ -62444,7 +62444,7 @@ const externalVocabularyDB = [
         "en": "progressive",
         "kk": "[prəˋɡrɛsɪv]",
         "uk": "/prəˈɡresɪv/",
-        "zh": "adj. 進步的、先進的、逐步發生的、逐步發展的；n. 進步分子、改革派人士、進行時、分色打樣",
+        "zh": "adj. 進步的、先進的、逐步發生的、進行時的；n. 進步分子、改革派人士",
         "unit": 7,
         "example": "Willan was able to point to the progressive changes he had already introduced.",
         "exampleZh": "威蘭能夠指出他已經帶來的有進步意義的變化。"
@@ -63204,7 +63204,7 @@ const externalVocabularyDB = [
         "en": "sewer",
         "kk": "[ˋsuɚ]",
         "uk": "/ˈsuːə(r); ˈsjuːə(r)/",
-        "zh": "n. 污水管、下水道、陰溝、縫紉工；v. 為……鋪設汙水管道、用下水道排除……的汙水、清洗汙水管",
+        "zh": "n. 污水管、下水道、陰溝；v. 為……鋪設汙水管道",
         "unit": 7,
         "example": "Where do sewers go?",
         "exampleZh": "下水道通往哪裡？"
@@ -64044,7 +64044,7 @@ const externalVocabularyDB = [
         "en": "thrift",
         "kk": "[θrɪft]",
         "uk": "/θrɪft/",
-        "zh": "n. 節儉、繁茂、互助儲蓄銀行、節約",
+        "zh": "n. 節儉、節約",
         "unit": 7,
         "example": "To practice thrift is a virtue.",
         "exampleZh": "節儉是美德。"
@@ -65594,7 +65594,7 @@ const externalVocabularyDB = [
         "en": "discounts",
         "kk": "[ˋdɪskaʊnts]",
         "uk": "",
-        "zh": "n. 折扣、減價、discount的複數形式：折扣、優惠；vt. 打折、不全信、discount的第三人稱單數形式：打折扣、降價出售",
+        "zh": "n. 折扣、減價、優惠；vt. 打折、降價出售、不全信",
         "unit": 7,
         "example": "Many stores offer special discounts to students and senior citizens.",
         "exampleZh": "許多商店為學生與年長者提供特別折扣。"
@@ -65604,7 +65604,7 @@ const externalVocabularyDB = [
         "en": "remained",
         "kk": "[rɪˋmend]",
         "uk": "/rɪˈmeɪnd/",
-        "zh": "vi. 留下、逗留、保持、remain的過去式與過去分詞形式：仍是、停留",
+        "zh": "vi. 留下、逗留、保持、仍是、停留",
         "unit": 7,
         "example": "Only a few ruins remained after the ancient temple collapsed.",
         "exampleZh": "這座古廟倒塌後，只留下了少數廢墟。"
@@ -65614,7 +65614,7 @@ const externalVocabularyDB = [
         "en": "accusations",
         "kk": "[͵ækjəˋzeʃənz]",
         "uk": "/ˌækjuˈzeɪʃnz/",
-        "zh": "n. 指控、指責、控告、accusation的複數形式：譴責、罪名",
+        "zh": "n. 指控、指責、控告、譴責、罪名",
         "unit": 7,
         "example": "He firmly denied all accusations of corruption made against him.",
         "exampleZh": "他堅決否認所有針對他的貪腐指控。"
@@ -65624,7 +65624,7 @@ const externalVocabularyDB = [
         "en": "drove",
         "kk": "[drov]",
         "uk": "/drəʊv/",
-        "zh": "v. 開車、駕駛、驅使、drive的過去式形式：駕車送、迫使；n. 畜群、人群",
+        "zh": "v. 開車、駕駛、驅使、駕車送、迫使；n. 畜群、人群",
         "unit": 7,
         "example": "She drove her children to school early every morning.",
         "exampleZh": "她每天早晨都開車載孩子們去學校。"
@@ -65644,7 +65644,7 @@ const externalVocabularyDB = [
         "en": "clamped",
         "kk": "[klæmpt]",
         "uk": "/klæmpt/",
-        "zh": "vt. 夾緊、固定、clamp的過去式與過去分詞形式：鉗住、強行壓制；adj. 夾緊的、被固定的",
+        "zh": "vt. 夾緊、固定、鉗住、強行壓制；adj. 夾緊的、被固定的",
         "unit": 7,
         "example": "The mechanic clamped the metal pipe tightly to the workbench.",
         "exampleZh": "技工把金屬管牢牢地夾緊在工作台上。"
@@ -65654,7 +65654,7 @@ const externalVocabularyDB = [
         "en": "offered",
         "kk": "[ˋɔfɚd]",
         "uk": "/ˈɒfəd/",
-        "zh": "vt. 提供、給予、offer的過去式與過去分詞形式：出價、表示願意",
+        "zh": "vt. 提供、給予、出價、表示願意",
         "unit": 7,
         "example": "The manager offered him a high-paying job with full benefits.",
         "exampleZh": "經理提供給他一份高薪且福利齊全的工作。"
@@ -65664,7 +65664,7 @@ const externalVocabularyDB = [
         "en": "seats",
         "kk": "[sits]",
         "uk": "/siːts/",
-        "zh": "n. 座位、席位、seat的複數形式：席次、所在地；vt. 就座、容納、seat的第三人稱單數形式：使就座",
+        "zh": "n. 座位、席位、席次、所在地；vt. 就座、容納、使就座",
         "unit": 7,
         "example": "All the front seats in the concert hall were already taken.",
         "exampleZh": "音樂廳前排的所有座位都已經被坐滿了。"
@@ -65684,7 +65684,7 @@ const externalVocabularyDB = [
         "en": "levels",
         "kk": "[ˋlɛvəlz]",
         "uk": "/ˈlev.əlz/",
-        "zh": "n. 水平、數量、程度、標準（level的複數形式）；vt. 使平整、夷平（level的第三人稱單數形式）",
+        "zh": "n. 水平、數量、程度、標準；vt. 使平整、夷平",
         "unit": 1,
         "example": "Water levels are very low today.",
         "exampleZh": "今天的水位非常低。"
@@ -65694,7 +65694,7 @@ const externalVocabularyDB = [
         "en": "results",
         "kk": "[rɪˋzʌlts]",
         "uk": "/rɪˈzʌlts/",
-        "zh": "n. 結果、後果、成效（result的複數形式）；vi. 導致、產生、造成（result的第三人稱單數形式）",
+        "zh": "n. 結果、後果、成效；vi. 導致、產生、造成",
         "unit": 1,
         "example": "The test results were very good.",
         "exampleZh": "測驗結果非常良好。"

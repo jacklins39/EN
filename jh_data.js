@@ -2054,7 +2054,7 @@ const jhWordsDB = [
         "en": "brown",
         "kk": "[braʊn]",
         "uk": "/braʊn/",
-        "zh": "adj. 棕色的、褐色的、膚色深的、曬黑的；n. 褐色、棕色、褐色的東西、眼蝶；vt. 變成棕色、成褐色",
+        "zh": "adj. 棕色的、褐色的、膚色深的；n. 褐色、棕色；vt. 變成棕色",
         "unit": 17,
         "example": "The dog has nice brown fur today.",
         "exampleZh": "這隻狗有好看的棕色毛皮。"
@@ -2504,7 +2504,7 @@ const jhWordsDB = [
         "en": "carpet",
         "kk": "[ˋkɑrpət]",
         "uk": "/ˈkɑːpɪt/",
-        "zh": "n. 地毯、覆蓋地面的一層厚東西、人工球場、地毯衣蛾；vt. 給……鋪地毯、厚厚地鋪上、訓斥、斥責",
+        "zh": "n. 地毯；vt. 給……鋪地毯",
         "unit": 17,
         "example": "We rolled up the carpet.",
         "exampleZh": "我們把地毯捲了起來。"
@@ -2884,7 +2884,7 @@ const jhWordsDB = [
         "en": "chief",
         "kk": "[tʃif]",
         "uk": "/tʃiːf/",
-        "zh": "adj. 主要的、首要的、為首的、首席的；n. 首領、領袖、酋長、上段；adv. 主要地、首要地",
+        "zh": "adj. 主要的、首要的、為首的、首席的；n. 首領、領袖、酋長",
         "unit": 17,
         "example": "Who is the chief of the village?",
         "exampleZh": "誰是這個村莊的村長？"
@@ -7194,7 +7194,7 @@ const jhWordsDB = [
         "en": "goose",
         "kk": "[ɡus]",
         "uk": "/ɡuːs/",
-        "zh": "n. 鵝、雌鵝；v. 輕捏、觸摸",
+        "zh": "n. 鵝、雌鵝",
         "unit": 17,
         "example": "The big white goose became a black goose.",
         "exampleZh": "大白鵝變成了黑鵝。"
@@ -7604,7 +7604,7 @@ const jhWordsDB = [
         "en": "happy",
         "kk": "[ˋhæpi]",
         "uk": "/ˈhæpi/",
-        "zh": "adj. 快樂的、幸福的、使人高興的、滿意的；comb. 濫用……的",
+        "zh": "adj. 快樂的、高興的、幸福的、使人高興的",
         "unit": 17,
         "example": "The children look very happy today.",
         "exampleZh": "孩子們今天看起來很高興。"
@@ -7654,7 +7654,7 @@ const jhWordsDB = [
         "en": "have",
         "kk": "[hæv]",
         "uk": "/hæv; həv/",
-        "zh": "vt. 有、擁有、顯示出、帶有；n. 有錢人、詐騙",
+        "zh": "vt. 有、擁有、顯示出、帶有",
         "unit": 17,
         "example": "We have a big test this morning.",
         "exampleZh": "我們今天早上有一場大考試。"
@@ -9154,7 +9154,7 @@ const jhWordsDB = [
         "en": "lake",
         "kk": "[lek]",
         "uk": "/leɪk/",
-        "zh": "n. 湖泊、湖、大量的液體、一灘；v. 血球溶解",
+        "zh": "n. 湖、湖泊",
         "unit": 17,
         "example": "They walked around the lake.",
         "exampleZh": "他們繞著湖走了一圈。"
@@ -9354,7 +9354,7 @@ const jhWordsDB = [
         "en": "least",
         "kk": "[list]",
         "uk": "/liːst/",
-        "zh": "adj. 最少的、一點兒、最微不足道的、用於極小動植物的名稱；adv. 最低程度地、最少、至少；n. 最不重要的事物、最微小的事物、至少、起碼；pron. 最少量、起碼；det. 最少的、最小的",
+        "zh": "adj. 最少的、最微不足道的；adv. 最低程度地、最少、至少；n. 最不重要的事物、最微小的事物；pron. 最少量、起碼",
         "unit": 17,
         "example": "We need at least two more hours.",
         "exampleZh": "我們至少還需要兩個小時。"
@@ -9584,7 +9584,7 @@ const jhWordsDB = [
         "en": "lily",
         "kk": "[ˋlɪli]",
         "uk": "/ˈlɪli/",
-        "zh": "n. 百合花、百合、睡蓮、鳶尾花形的紋章；adj. 純潔的、潔白的",
+        "zh": "n. 百合花、百合、睡蓮；adj. 純潔的、潔白的",
         "unit": 17,
         "example": "The white lily is a symbol of purity.",
         "exampleZh": "白百合是純潔的象徵。"
@@ -11404,7 +11404,7 @@ const jhWordsDB = [
         "en": "nurse",
         "kk": "[nɝs]",
         "uk": "/nɜːs/",
-        "zh": "n. 護士、保姆、奶媽、保育蟲；vt. 看護、照料、細心打理、調養",
+        "zh": "n. 護士、保姆、奶媽；vt. 看護、照料、細心打理",
         "unit": 18,
         "example": "The kind nurse helped the sick boy.",
         "exampleZh": "親切的護士幫助了生病的男孩。"
@@ -12024,7 +12024,7 @@ const jhWordsDB = [
         "en": "party",
         "kk": "[ˋpɑrti]",
         "uk": "/ˈpɑːti/",
-        "zh": "n. 派對、聚會、政黨、黨派；vi. 盡情歡樂、歡宴；adj. 分割開的、分成不同顏色部分的",
+        "zh": "n. 聚會、政黨、派對、黨派；vi. 盡情歡樂、歡宴",
         "unit": 18,
         "example": "We had a big dance party today.",
         "exampleZh": "我們今天辦了一個盛大的舞會派對。"
@@ -15214,7 +15214,7 @@ const jhWordsDB = [
         "en": "simple",
         "kk": "[ˋsɪmpəl]",
         "uk": "/ˈsɪmp(ə)l/",
-        "zh": "adj. 簡單的、簡明的、簡樸的、樸素的；n. 草藥、藥草、出身低微者、笨蛋",
+        "zh": "adj. 簡單的、樸素的、簡明的、簡樸的；n. 笨蛋",
         "unit": 18,
         "example": "This is a simple game for kids.",
         "exampleZh": "這對小孩子來說是個簡單的遊戲。"
@@ -15254,7 +15254,7 @@ const jhWordsDB = [
         "en": "sing",
         "kk": "[sɪŋ]",
         "uk": "/sɪŋ/",
-        "zh": "vt. 唱歌、唱、演唱、鳴；n. 唱歌、演唱、業餘演唱會、鳴聲；abbr. 單數",
+        "zh": "vt. 唱歌、歌唱、唱、演唱；n. 唱歌、演唱",
         "unit": 18,
         "example": "Can white girls sing the blues?",
         "exampleZh": "白人女孩可以唱布魯斯嗎？"
@@ -19414,7 +19414,7 @@ const jhWordsDB = [
         "en": "yummy",
         "kk": "[ˋjʌmi]",
         "uk": "/ˈjʌmi/",
-        "zh": "adj. 好吃的、美味的、可口的、性感的；n. 美味的食物",
+        "zh": "adj. 好吃的、美味的、可口的",
         "unit": 18,
         "example": "I'll bet they have yummy ice cream.",
         "exampleZh": "我敢打賭他們一定有美味的冰淇淋。"

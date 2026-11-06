@@ -404,10 +404,10 @@ const toeicWordsDB = [
         "en": "accident-prone",
         "kk": "[ˋæksədənt pron]",
         "uk": "/ˈæksɪdənt prəʊn/",
-        "zh": "adj. 容易受傷的、容易出意外的、易出事故的、易惹事故的",
+        "zh": "adj. 容易出事故的、易發生意外的",
         "unit": 11,
-        "example": "The accident-prone EMI has done better.",
-        "exampleZh": "極容易出狀況的EMI而言已經做了更好。"
+        "example": "The accident-prone factory has improved its safety standards.",
+        "exampleZh": "這家容易發生事故的工廠已經提升了其安全標準。"
     },
     {
         "id": 20042,
@@ -1524,7 +1524,7 @@ const toeicWordsDB = [
         "en": "airport",
         "kk": "[ˋɛr͵pɔrt]",
         "uk": "/ˈeəpɔːt/",
-        "zh": "n. 機場、航空站、空旅通俗讀物",
+        "zh": "n. 機場、飛機場、航空站",
         "unit": 11,
         "example": "He was fogbound at JFK airport.",
         "exampleZh": "他在甘迺迪機場時渾身大霧。"
@@ -2814,7 +2814,7 @@ const toeicWordsDB = [
         "en": "bachelor",
         "kk": "[ˋbætʃəlɚ]",
         "uk": "/ˈbætʃələ(r)/",
-        "zh": "n. 單身漢、學士、未婚男子、尚未交配的雄鳥",
+        "zh": "n. 單身漢、學士",
         "unit": 11,
         "example": "He's the most eligible bachelor in Japan.",
         "exampleZh": "他是日本最令人中意的單身漢。"
@@ -3644,7 +3644,7 @@ const toeicWordsDB = [
         "en": "bed",
         "kk": "[bɛd]",
         "uk": "/bed/",
-        "zh": "n. 床、睡眠處、床鋪、床位；v. 睡、臥、把……固定、嵌入",
+        "zh": "n. 床、床鋪、河床、苗圃；v. 把……固定、嵌入、安置",
         "unit": 11,
         "example": "It's such a comfortable bed.",
         "exampleZh": "這是一張多麼舒服的床。"
@@ -4324,7 +4324,7 @@ const toeicWordsDB = [
         "en": "bleak",
         "kk": "[blik]",
         "uk": "/bliːk/",
-        "zh": "adj. 荒涼的、無遮蔽的、不樂觀的、無望的；n. 歐鮊",
+        "zh": "adj. 荒涼的、暗淡的、無希望的",
         "unit": 11,
         "example": "The outlook for jobs is bleak.",
         "exampleZh": "就業市場前景暗淡。"
@@ -4634,7 +4634,7 @@ const toeicWordsDB = [
         "en": "boot",
         "kk": "[but]",
         "uk": "/buːt/",
-        "zh": "n. 靴子、猛踢、行李箱、後備箱；vt. 猛踢、鎖住、啟動、在車輪上裝制動裝置",
+        "zh": "n. 靴子、後車廂、啟動；vt. 猛踢、啟動（電腦）",
         "unit": 11,
         "example": "He gave the ball a tremendous boot.",
         "exampleZh": "他抽起腳猛踢了一下球。"
@@ -4734,7 +4734,7 @@ const toeicWordsDB = [
         "en": "bottom",
         "kk": "[ˋbɑtəm]",
         "uk": "/ˈbɒtəm/",
-        "zh": "n. 底部、下端、底、盡頭；adj. 底部的、最後的、最不重要的、最差的；v. 到達海底、觸到海底、鑽探……直到礦物層、發現……範圍",
+        "zh": "n. 底部、底、盡頭；adj. 最低的、底部的",
         "unit": 11,
         "example": "The marriage had reached rock bottom.",
         "exampleZh": "婚姻已經跌入谷底。"
@@ -4934,7 +4934,7 @@ const toeicWordsDB = [
         "en": "bravo",
         "kk": "[ˋbrɑvo]",
         "uk": "/ˈbrɑːvəʊ/",
-        "zh": "n. 喝采聲、喝彩聲、字母B的程式碼、暴徒；v. 喝彩；int. 好哇、好",
+        "zh": "int. 太棒了、喝采；n. 喝采聲",
         "unit": 11,
         "example": "Bravo! What a great show!",
         "exampleZh": "太棒了！多麼精彩的表演啊！"
@@ -6524,7 +6524,7 @@ const toeicWordsDB = [
         "en": "collect",
         "kk": "[kəˋlɛkt]",
         "uk": "/kəˈlekt/",
-        "zh": "vt. 收集、採集、聚集、聚積；n. 短禱文、打贏的賭、贏錢的賭注；adj. 對方付通話費的；adv. 對方付通話費地",
+        "zh": "v. 收集、集合、收費",
         "unit": 11,
         "example": "I used to collect stamps.",
         "exampleZh": "我以前收集郵票。"
@@ -7234,7 +7234,7 @@ const toeicWordsDB = [
         "en": "confident",
         "kk": "[ˋkɑnfədənt]",
         "uk": "/ˈkɒnfɪdənt/",
-        "zh": "adj. 有自信的、確信的、自信的、充滿信心的；n. 密友、知己",
+        "zh": "adj. 有信心的、自信的、確信的",
         "unit": 11,
         "example": "Marina was a confident, happy child.",
         "exampleZh": "瑪麗娜是個自信、快樂的孩子。"
@@ -10004,7 +10004,7 @@ const toeicWordsDB = [
         "en": "doctor",
         "kk": "[ˋdɑktɚ]",
         "uk": "/ˈdɒktə(r)/",
-        "zh": "n. 醫生、大夫、診所、博士；vt. 篡改、偽造、將有害物摻入（食物或飲料）中、閹割",
+        "zh": "n. 醫生、博士；vt. 篡改、偽造、給……下藥",
         "unit": 12,
         "example": "The doctor tested her reflexes.",
         "exampleZh": "醫生檢測了她的反射動作。"
@@ -10494,7 +10494,7 @@ const toeicWordsDB = [
         "en": "effective",
         "kk": "[ɪˋfɛktɪv]",
         "uk": "/ɪˈfektɪv/",
-        "zh": "adj. 有效的、生效的、實際可作戰的士兵；n. 兵力",
+        "zh": "adj. 有效的、生效的、起作用的；n. 有效兵力",
         "unit": 12,
         "example": "This medicine is very effective for a cold.",
         "exampleZh": "這種藥對感冒非常有效。"
@@ -10574,7 +10574,7 @@ const toeicWordsDB = [
         "en": "elect",
         "kk": "[ɪˋlɛkt]",
         "uk": "/ɪˈlekt/",
-        "zh": "vt. 選舉、推選、選擇、挑選（某人）；adj. 候任的、選中的、卓越的、蒙上帝挑選（而得救）的；n. 上帝的選民、特權階層",
+        "zh": "v. 選舉、推選；adj. 當選的",
         "unit": 12,
         "example": "The committee voted to re-elect him (as) chairman.",
         "exampleZh": "委員會投票選舉他再次擔任主席。"
@@ -11224,7 +11224,7 @@ const toeicWordsDB = [
         "en": "entire",
         "kk": "[ɪnˋtaɪɚ]",
         "uk": "/ɪnˈtaɪə(r)/",
-        "zh": "adj. 全部的、整個的、完全的、絕對的；n. 全部、整體、未經閹割的公馬、種馬",
+        "zh": "adj. 全部的、整個的、完全的",
         "unit": 12,
         "example": "She videotaped the entire trip.",
         "exampleZh": "她錄下了整趟旅程。"
@@ -12364,7 +12364,7 @@ const toeicWordsDB = [
         "en": "fair",
         "kk": "[fɛr]",
         "uk": "/feə(r)/",
-        "zh": "adj. 公平的、合理的、公正的、相當好的；adv. 公平地、公正地、非常、正面地；n. 集市、展覽會、露天遊樂場、廟會；v. 變得晴朗、使（車輛，船舶，飛機）具有流線型",
+        "zh": "adj. 公平的、晴朗的；n. 市集、博覽會",
         "unit": 12,
         "example": "The punishment was very fair.",
         "exampleZh": "這個處罰很公正。"
@@ -13024,7 +13024,7 @@ const toeicWordsDB = [
         "en": "fiscal",
         "kk": "[ˋfɪskəl]",
         "uk": "/ˈfɪsk(ə)l/",
-        "zh": "adj. 財政的、金融的、財政年度的；n. 檢察官、財政官員、領伯勞",
+        "zh": "adj. 財政的、會計的、國庫的；n. 財政官員",
         "unit": 12,
         "example": "That approach also offers fiscal benefits.",
         "exampleZh": "這種方法也帶來了財政上的好處。"
@@ -13424,7 +13424,7 @@ const toeicWordsDB = [
         "en": "frank",
         "kk": "[fræŋk]",
         "uk": "/fræŋk/",
-        "zh": "adj. 坦白的、直率的、坦率的、直言不諱的；v. 蓋郵資已付印記、蓋免付郵資印記、免費郵寄；n. 法蘭克福燻腸、免費郵寄權",
+        "zh": "adj. 坦白的、坦率的、直言不諱的",
         "unit": 12,
         "example": "The talks had been brutally frank.",
         "exampleZh": "會談非常坦率。"
@@ -13704,7 +13704,7 @@ const toeicWordsDB = [
         "en": "gas",
         "kk": "[ɡæs]",
         "uk": "/ɡæs/",
-        "zh": "n. 氣體、瓦斯、氣體燃料、麻醉氣；vt. 用毒氣殺死、閒聊、空談",
+        "zh": "n. 氣體、瓦斯、汽油；v. 加油、閒聊",
         "unit": 12,
         "example": "This gas is highly poisonous.",
         "exampleZh": "這種氣體有劇毒。"
@@ -13774,7 +13774,7 @@ const toeicWordsDB = [
         "en": "general",
         "kk": "[ˋdʒɛnɚəl]",
         "uk": "/ˈdʒen(ə)rəl/",
-        "zh": "adj. 普通的、一般的、總體的、普遍的；n. 上將、將軍、半軍事化管理的宗教組織（如耶穌會修士、多明我會修士或救世軍）的領袖、大眾",
+        "zh": "adj. 一般的、整體的、普遍的；n. 將軍、上將",
         "unit": 12,
         "example": "My father venerated General Eisenhower.",
         "exampleZh": "我父親十分敬仰艾森豪威爾將軍。"
@@ -13844,7 +13844,7 @@ const toeicWordsDB = [
         "en": "gentle",
         "kk": "[ˋdʒɛntəl]",
         "uk": "/ˈdʒent(ə)l/",
-        "zh": "adj. 紳士的、文靜的、溫柔的、輕柔的；v. 使（或變）溫柔、平靜、使馴服；n. 蛆、餌",
+        "zh": "adj. 溫柔的、和緩的、平緩的",
         "unit": 12,
         "example": "These poems reveal her gentle side.",
         "exampleZh": "這些詩揭示了她溫柔的一面。"
@@ -14524,7 +14524,7 @@ const toeicWordsDB = [
         "en": "habit",
         "kk": "[ˋhæbət]",
         "uk": "/ˈhæbɪt/",
-        "zh": "n. 嗜好、興趣、習慣、癮；v. 給……穿衣",
+        "zh": "n. 習慣、習性、嗜好",
         "unit": 12,
         "example": "I only do it out of habit.",
         "exampleZh": "我這麼做只是出於習慣。"
@@ -14554,7 +14554,7 @@ const toeicWordsDB = [
         "en": "hack",
         "kk": "[hæk]",
         "uk": "/hæk/",
-        "zh": "v. 劈、砍、非法侵入、大幅刪改；n. 僱傭文人、寫手、二流政客、政治僕從",
+        "zh": "v. 劈、砍、駭入；n. 駭客、劈砍、竅門",
         "unit": 12,
         "example": "Did you get hacked?",
         "exampleZh": "你被黑了嗎？"
@@ -17504,7 +17504,7 @@ const toeicWordsDB = [
         "en": "interchangeable",
         "kk": "[͵ɪntɚˋtʃendʒəbəl]",
         "uk": "/ˌɪntəˈtʃeɪndʒəb(ə)l/",
-        "zh": "adj. 可交換的、可互換的、可交替的、指論元或角色可以互換而不影響真值或有效性",
+        "zh": "adj. 可互換的、通用的",
         "unit": 12,
         "example": "His greatest innovation was the use of interchangeable parts.",
         "exampleZh": "他最偉大的創新是使用了可互換部件。"
@@ -17604,7 +17604,7 @@ const toeicWordsDB = [
         "en": "interrupt",
         "kk": "[͵ɪntɚˋʌpt]",
         "uk": "/ˌɪntəˈrʌpt/",
-        "zh": "vt. 打擾、干擾、打斷、使暫停",
+        "zh": "vt. 打斷、打擾、使中斷；vi. 打斷",
         "unit": 12,
         "example": "Please continue—I didn't mean to interrupt.",
         "exampleZh": "請繼續往下說，我並非有意打斷你的話。"
@@ -17784,7 +17784,7 @@ const toeicWordsDB = [
         "en": "invitation",
         "kk": "[͵ɪnvɪˋteʃən]",
         "uk": "/ˌɪnvɪˈteɪʃ(ə)n/",
-        "zh": "n. 邀請、邀請函、引起、招致",
+        "zh": "n. 邀請、請柬",
         "unit": 12,
         "example": "Admission is by invitation only.",
         "exampleZh": "憑請柬入場。"
@@ -17854,7 +17854,7 @@ const toeicWordsDB = [
         "en": "item",
         "kk": "[ˋaɪtəm]",
         "uk": "/ˈaɪtəm/",
-        "zh": "n. 項目、條款、專案、一件商品；adv. 又、此外還有；v. 逐條列出、記下",
+        "zh": "n. 項目、條款、一件商品；v. 逐條列出",
         "unit": 12,
         "example": "This item should be hand washed.",
         "exampleZh": "這件物品要用手洗。"
@@ -18804,7 +18804,7 @@ const toeicWordsDB = [
         "en": "legal",
         "kk": "[ˋliɡəl]",
         "uk": "/ˈliːɡ(ə)l/",
-        "zh": "adj. 合法的、正當的、法律允許的、與法律有關的",
+        "zh": "adj. 合法的、法律的、正當的",
         "unit": 12,
         "example": "Should euthanasia be made legal?",
         "exampleZh": "安樂死應該合法化嗎？"
@@ -18864,7 +18864,7 @@ const toeicWordsDB = [
         "en": "letter",
         "kk": "[ˋlɛtɚ]",
         "uk": "/ˈletə(r)/",
-        "zh": "n. 信、書信、信函、字母；vi. 用字母標註、把字母印刷（或縫製等）於、贏得學校運動隊的字母標誌",
+        "zh": "n. 信、字母",
         "unit": 12,
         "example": "I returned the letter unopened.",
         "exampleZh": "我把信原封不動地退回了。"
@@ -20134,7 +20134,7 @@ const toeicWordsDB = [
         "en": "mull",
         "kk": "[mʌl]",
         "uk": "/mʌl/",
-        "zh": "vt. 深思熟慮、仔細考慮、斟酌、琢磨；n. 亂糟糟、混亂、軟薄布、麥爾紗",
+        "zh": "v. 深思熟慮、仔細考慮、研磨",
         "unit": 13,
         "example": "Executives need adequate time to mull over the risks before signing the contract.",
         "exampleZh": "主管們在簽署合約之前，需要充足的時間仔細權衡風險。"
@@ -21674,7 +21674,7 @@ const toeicWordsDB = [
         "en": "peculiar",
         "kk": "[pəˋkjuljɚ]",
         "uk": "/pɪˈkjuːliə(r)/",
-        "zh": "adj. 奇怪的、乖癖的、不尋常的、特別的；n. 特殊教區、特權、特有財產",
+        "zh": "adj. 奇怪的、特殊的、獨特的",
         "unit": 13,
         "example": "I had a peculiar feeling we'd met before.",
         "exampleZh": "我有一種奇怪的感覺，覺得我們以前見過面。"
@@ -21814,7 +21814,7 @@ const toeicWordsDB = [
         "en": "permit",
         "kk": "[pɚˋmɪt]",
         "uk": "/pəˈmɪt/",
-        "zh": "vt. 允許、許可、批准、成為可能；n. 執照、許可證、古氏鯧鰺",
+        "zh": "v. 允許、准許、使……可能；n. 許可證、執照",
         "unit": 13,
         "example": "Is your work permit in order?",
         "exampleZh": "你的工作許可證有效嗎？"
@@ -22854,7 +22854,7 @@ const toeicWordsDB = [
         "en": "private",
         "kk": "[ˋpraɪvət]",
         "uk": "/ˈpraɪvət/",
-        "zh": "adj. 私人的、私立的、秘密的；n. 列兵、二等兵",
+        "zh": "adj. 私人的、私密的、私立的；n. 二等兵",
         "unit": 13,
         "example": "He has a private income.",
         "exampleZh": "他有私人收入。"
@@ -23474,7 +23474,7 @@ const toeicWordsDB = [
         "en": "quarter",
         "kk": "[ˋkwɔrtɚ]",
         "uk": "/ˈkwɔːtə(r)/",
-        "zh": "n. 四分之一、季度、一刻鐘、十五分鐘；vt. 將……四等分、把……降至原先的四分之一、提供食宿、在（某處）來回走動；adj. 四分之一的",
+        "zh": "n. 四分之一、一刻鐘、季度、25美分硬幣；vt. 提供住宿、四等分",
         "unit": 13,
         "example": "Nowitzki fouled Mitchell early in the third quarter.",
         "exampleZh": "在第三節早些時候，諾維斯基就對米切爾犯了規。"
@@ -23484,7 +23484,7 @@ const toeicWordsDB = [
         "en": "quarterly",
         "kk": "[ˋkwɔrtɚli]",
         "uk": "/ˈkwɔːtəli/",
-        "zh": "adj. 季度的、每季的、縱橫劃成四（或更多）部分的；adv. 一季一次地、按季度、在盾的四分之一部分（或對角兩部分）上；n. 季刊",
+        "zh": "adj. 每季的；adv. 按季度；n. 季刊",
         "unit": 13,
         "example": "Their quarterly meetings were anodyne affairs.",
         "exampleZh": "他們的季度會議是平淡乏味的事情。"
@@ -24094,7 +24094,7 @@ const toeicWordsDB = [
         "en": "recover",
         "kk": "[rɪˋkʌvɚ]",
         "uk": "/rɪˈkʌvə(r)/",
-        "zh": "v. 復原、恢復、康復、好轉；n. 槍還原、收槍",
+        "zh": "v. 恢復、找回、康復、尋回",
         "unit": 13,
         "example": "The economy is at last beginning to recover.",
         "exampleZh": "經濟終於開始復甦了。"
@@ -24664,7 +24664,7 @@ const toeicWordsDB = [
         "en": "rent",
         "kk": "[rɛnt]",
         "uk": "/rent/",
-        "zh": "n. 租金、租費、租用費、破洞；vt. 出租、租用、租借、將……租給",
+        "zh": "n. 租金；vt. 租用、出租",
         "unit": 13,
         "example": "His landlord doubled the rent.",
         "exampleZh": "他的房東把房租提高了一倍。"
@@ -24924,7 +24924,7 @@ const toeicWordsDB = [
         "en": "residual",
         "kk": "[rɪˋzɪdʒuəl]",
         "uk": "/rɪˈzɪdjuəl/",
-        "zh": "adj. 殘留的、剩餘的、捨去的、殘餘的；n. 剩餘、殘差、復播追加酬金、殘丘",
+        "zh": "adj. 殘留的、剩餘的；n. 殘留物、餘數",
         "unit": 13,
         "example": "There are still a few residual problems with the computer program.",
         "exampleZh": "電腦程式還有一些殘留問題。"
@@ -25334,7 +25334,7 @@ const toeicWordsDB = [
         "en": "royal",
         "kk": "[ˋrɔɪəl]",
         "uk": "/ˈrɔɪəl/",
-        "zh": "adj. 皇家的、盛大的、國王的、女王的；n. 王室成員、敲奉十口鐘的變換響",
+        "zh": "adj. 皇家的、王室的、盛大的；n. 王室成員",
         "unit": 13,
         "example": "We were given a royal welcome.",
         "exampleZh": "我們受到了皇家般的歡迎。"
@@ -25774,7 +25774,7 @@ const toeicWordsDB = [
         "en": "self",
         "kk": "[sɛlf]",
         "uk": "/self/",
-        "zh": "n. 自身、自己、自我、本人；adj. 與其他部分同質同色的；v. 使自花授粉、使自體受精、（動物、植物）同系繁衍、同系受精；pron. 自己、本人",
+        "zh": "n. 自身、自己、自我；pron. 自己、本人",
         "unit": 13,
         "example": "He gave a self-deprecating shrug.",
         "exampleZh": "他自嘲地聳聳肩。"
@@ -26034,7 +26034,7 @@ const toeicWordsDB = [
         "en": "shelf",
         "kk": "[ʃɛlf]",
         "uk": "/ʃelf/",
-        "zh": "n. 架子、擱板、陸架、底巖；v. 告發",
+        "zh": "n. 架子、擱板、陸架",
         "unit": 13,
         "example": "I can't reach the top shelf.",
         "exampleZh": "我夠不著最上面的架子。"
@@ -28254,7 +28254,7 @@ const toeicWordsDB = [
         "en": "time",
         "kk": "[taɪm]",
         "uk": "/taɪm/",
-        "zh": "n. 時間、時光、次數、時代；vt. 為……安排時間、計時",
+        "zh": "n. 時間、次數、倍數；vt. 計時",
         "unit": 13,
         "example": "Time passed, and still Ma did not appear.",
         "exampleZh": "時間一點點過去，可是瑪還沒有出現。"
@@ -28674,7 +28674,7 @@ const toeicWordsDB = [
         "en": "typo",
         "kk": "[ˋtaɪpo]",
         "uk": "/ˈtaɪpəʊ/",
-        "zh": "n. 筆誤、排印錯誤；abbr. 排字工、印刷工",
+        "zh": "n. 排印錯誤、打字錯誤",
         "unit": 13,
         "example": "That is not a typo!",
         "exampleZh": "這不是打錯字了！"
@@ -29424,7 +29424,7 @@ const toeicWordsDB = [
         "en": "vegetable",
         "kk": "[ˋvɛdʒtəbəl]",
         "uk": "/ˈvedʒtəb(ə)l/",
-        "zh": "n. 蔬菜、植物人、呆板懶散的人、植物；adj. 植物的",
+        "zh": "n. 蔬菜；adj. 植物的、蔬菜的",
         "unit": 13,
         "example": "The vegetable harvest is disastrously behind schedule.",
         "exampleZh": "蔬菜收成嚴重落後於計劃。"
@@ -30111,13 +30111,13 @@ const toeicWordsDB = [
     },
     {
         "id": 23012,
-        "en": "wo",
+        "en": "woe",
         "kk": "[wo]",
         "uk": "/wəʊ/",
-        "zh": "int. 籲、慢些；n. 困難、悲傷",
+        "zh": "n. 困難、悲傷、痛苦、災禍",
         "unit": 14,
-        "example": "What shall wo do with the waste paper?",
-        "exampleZh": "咱們應該怎麼處理這些報廢紙？"
+        "example": "The company faced severe economic woes during the crisis.",
+        "exampleZh": "該公司在危機期間面臨嚴重的經濟困境。"
     },
     {
         "id": 23013,
@@ -30224,7 +30224,7 @@ const toeicWordsDB = [
         "en": "yard",
         "kk": "[jɑrd]",
         "uk": "/jɑːd/",
-        "zh": "n. 庭院、後院、碼、平方碼；v. 把（木材）堆放（或運至）場內、把（家畜）驅入圈欄、冬令集居",
+        "zh": "n. 院子、庭院、碼（長度單位）",
         "unit": 14,
         "example": "Which door leads to the yard?",
         "exampleZh": "哪扇門通向庭院？"
@@ -30844,7 +30844,7 @@ const toeicWordsDB = [
         "en": "metrics",
         "kk": "[ˋmɛtrɪks]",
         "uk": "/ˈmetrɪks/",
-        "zh": "n. 衡量指標、評估標準、度量數據、韻律學,作詩法",
+        "zh": "n. 指標、衡量標準、度量數據",
         "unit": 14,
         "example": "Customer retention and conversion rate are key performance metrics for our marketing team.",
         "exampleZh": "客戶留存率與轉換率是我們行銷團隊的關鍵績效衡量指標。"
@@ -31114,7 +31114,7 @@ const toeicWordsDB = [
         "en": "headwind",
         "kk": "[ˋhɛd͵wɪnd]",
         "uk": "/ˈhedˌwind/",
-        "zh": "n. （經濟）逆風、阻力、a wind blowing from directly in front, opposing forward motion、a circumstance or factor that inhibits progress",
+        "zh": "n. （經濟）逆風、阻力",
         "unit": 14,
         "example": "Rising raw material costs have created significant economic headwinds for the export sector.",
         "exampleZh": "原物料成本上漲為出口產業帶來了嚴峻的經濟逆風與阻力。"
@@ -31204,7 +31204,7 @@ const toeicWordsDB = [
         "en": "pressing",
         "kk": "[ˋprɛsɪŋ]",
         "uk": "/ˈpresɪŋ/",
-        "zh": "adj. 緊迫的、迫切的、壓榨、壓榨的橄欖油",
+        "zh": "adj. 緊迫的、迫切的",
         "unit": 14,
         "example": "Climate change is one of the most pressing issues of our time.",
         "exampleZh": "氣候變遷是我們這個時代最緊迫的議題之一。"

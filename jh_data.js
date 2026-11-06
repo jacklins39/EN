@@ -8744,7 +8744,7 @@ const jhWordsDB = [
         "en": "jam",
         "kk": "[dʒæm]",
         "uk": "/dʒæm/",
-        "zh": "n. 擁塞、果醬、堵塞、擁擠；vt. 塞滿、擠滿、卡住",
+        "zh": "n. 果醬、塞車、卡住；v. 卡住、塞滿、擠進",
         "unit": 17,
         "example": "I like sweet fruit jam on bread.",
         "exampleZh": "我喜歡在麵包上抹甜甜的水果果醬。"

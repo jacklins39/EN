@@ -2544,7 +2544,7 @@ const toeicWordsDB = [
         "en": "at",
         "kk": "[æt]",
         "uk": "/æt; ət/",
-        "zh": "prep. 在⋯地點、在⋯時刻、在、在……歲時；n. 阿特、砈；abbr. 密封的、大氣、原子的、氣溫",
+        "zh": "prep. 在、在……歲時、在……遠、以",
         "unit": 11,
         "example": "I was good at sums at school.",
         "exampleZh": "我在學校擅長算術。"
@@ -5814,7 +5814,7 @@ const toeicWordsDB = [
         "en": "carpet",
         "kk": "[ˋkɑrpət]",
         "uk": "/ˈkɑːpɪt/",
-        "zh": "n. 地毯、覆蓋地面的一層厚東西、人工球場、地毯衣蛾；vt. 給……鋪地毯、厚厚地鋪上、訓斥、斥責",
+        "zh": "n. 地毯；vt. 給……鋪地毯",
         "unit": 11,
         "example": "We rolled up the carpet.",
         "exampleZh": "我們把地毯捲了起來。"
@@ -18764,7 +18764,7 @@ const toeicWordsDB = [
         "en": "least",
         "kk": "[list]",
         "uk": "/liːst/",
-        "zh": "adj. 最小的、最少的、一點兒、最微不足道的；adv. 最低程度地、最少、至少；n. 最不重要的事物、最微小的事物、至少、起碼；pron. 最少量、起碼；det. 最少的、最小的",
+        "zh": "adj. 最少的、最微不足道的；adv. 最低程度地、最少、至少；n. 最不重要的事物、最微小的事物；pron. 最少量、起碼",
         "unit": 12,
         "example": "It'll cost at least 500 dollars.",
         "exampleZh": "至少要花費500美元。"
@@ -20564,7 +20564,7 @@ const toeicWordsDB = [
         "en": "nurse",
         "kk": "[nɝs]",
         "uk": "/nɜːs/",
-        "zh": "n. 護士、保姆、奶媽、保育蟲；vt. 看護、照料、細心打理、調養",
+        "zh": "n. 護士、保姆、奶媽；vt. 看護、照料、細心打理",
         "unit": 13,
         "example": "The nurse cleaned the wound.",
         "exampleZh": "護士清理了傷口。"
@@ -21514,7 +21514,7 @@ const toeicWordsDB = [
         "en": "party",
         "kk": "[ˋpɑrti]",
         "uk": "/ˈpɑːti/",
-        "zh": "n. 聚會、派對、黨派、政黨；vi. 盡情歡樂、歡宴；adj. 分割開的、分成不同顏色部分的",
+        "zh": "n. 聚會、政黨、派對、黨派；vi. 盡情歡樂、歡宴",
         "unit": 13,
         "example": "The party was arranged quickly.",
         "exampleZh": "聚會很快就安排好了。"
@@ -23174,10 +23174,10 @@ const toeicWordsDB = [
         "en": "proper",
         "kk": "[ˋprɑpɚ]",
         "uk": "/ˈprɒpə(r)/",
-        "zh": "adj. 適合的、適當的、真正的、像樣的；adv. 完全地、徹底地、正確地、恰當地；n. 特定季節（或節日）的禮儀",
+        "zh": "adj. 適合的、適當的、真正的、像樣的；adv. 完全地、徹底地、正確地、恰當地",
         "unit": 13,
         "example": "She's a proper little madam.",
-        "exampleZh": "她真是個說一不二的小姑奶奶。"
+        "exampleZh": "她真是個說一不二的小姑娘。"
     },
     {
         "id": 22319,
@@ -25504,7 +25504,7 @@ const toeicWordsDB = [
         "en": "satisfaction",
         "kk": "[͵sætəˋsfækʃən]",
         "uk": "/ˌsætɪsˈfækʃ(ə)n/",
-        "zh": "n. 滿意、滿足、稱心、妥善處理",
+        "zh": "n. 滿意、滿足、令人滿意的事物",
         "unit": 13,
         "example": "It gave me a feeling of satisfaction.",
         "exampleZh": "它給了我一種滿足感。"

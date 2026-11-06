@@ -1,0 +1,5702 @@
+[
+  {
+    "id": 6001,
+    "en": "eloquence",
+    "kk": "[ˋɛləkwəns]",
+    "uk": "/ˈeləkwəns/",
+    "zh": "n. 雄辯、口才、流利的口才、流暢的文筆",
+    "unit": 7,
+    "example": "She was struck by his simple, spellbinding eloquence.",
+    "exampleZh": "她被他簡潔、富有鼓動性的口才迷住了。"
+  },
+  {
+    "id": 6002,
+    "en": "emigrant",
+    "kk": "[ˋɛməɡrənt]",
+    "uk": "/ˈemɪɡrənt/",
+    "zh": "n. 移民、移出者、移居外國的人；adj. 移民的、移居的",
+    "unit": 7,
+    "example": "He is a British emigrant to Australia.",
+    "exampleZh": "他是個移居澳大利亞的英國人。"
+  },
+  {
+    "id": 6003,
+    "en": "emigration",
+    "kk": "[͵ɛməˋɡreʃən]",
+    "uk": "/ˌemɪˈɡreɪʃn/",
+    "zh": "n. 移居、移民、移居外國、遷移出境",
+    "unit": 7,
+    "example": "Emigration to the West reached a peak in the 1830's.",
+    "exampleZh": "向西部遷移的行為在19世紀30年代達到頂峰。"
+  },
+  {
+    "id": 6004,
+    "en": "enactment",
+    "kk": "[ɛˋnæktmənt]",
+    "uk": "/ɪˈnæktmənt/",
+    "zh": "n. 制定、法規、條例、透過",
+    "unit": 7,
+    "example": "Public health advocates celebrated the enactment of legislation banning public smoking.",
+    "exampleZh": "公共衛生倡導者慶祝禁止公共場所吸菸法規的正式頒布。"
+  },
+  {
+    "id": 6005,
+    "en": "enclosure",
+    "kk": "[ɛnˋkloʒɚ]",
+    "uk": "/ɪnˈkləʊʒə(r)/",
+    "zh": "n. 封入、圈地、圍牆、附件",
+    "unit": 7,
+    "example": "Within those precincts, within that enclosure, there's a large, open courtyard.",
+    "exampleZh": "在這些區域內，在圍牆內，有一個大的、開放的庭院。"
+  },
+  {
+    "id": 6006,
+    "en": "encyclopedia",
+    "kk": "[ɪn͵saɪkləˋpidiə]",
+    "uk": "/ɪnˌsaɪkləˈpiːdiə/",
+    "zh": "n. 百科全書、專科全書",
+    "unit": 7,
+    "example": "The encyclopedia is available on CD-ROM.",
+    "exampleZh": "百科全書光碟已上市。"
+  },
+  {
+    "id": 6007,
+    "en": "endurance",
+    "kk": "[ˋɛndɚəns]",
+    "uk": "/ɪnˈdjʊərəns/",
+    "zh": "n. 忍耐、耐久力、持久力、忍耐力",
+    "unit": 7,
+    "example": "He showed remarkable endurance throughout his illness.",
+    "exampleZh": "他在整個生病期間表現出非凡的忍耐力。"
+  },
+  {
+    "id": 6008,
+    "en": "enhancement",
+    "kk": "[ɛnˋhænsmənt]",
+    "uk": "/ɪnˈhɑːnsmənt/",
+    "zh": "n. 提高、增加、增強、改善",
+    "unit": 7,
+    "example": "Numerous other enhancements were added.",
+    "exampleZh": "增加了許多其他增強功能。"
+  },
+  {
+    "id": 6009,
+    "en": "enlightenment",
+    "kk": "[͵ɛnˋlaɪtənmənt]",
+    "uk": "/ɪnˈlaɪt(ə)nmənt/",
+    "zh": "n. 啟蒙、教化、開明、啟迪",
+    "unit": 7,
+    "example": "This will give some enlightenment.",
+    "exampleZh": "這會提供某種啟迪。"
+  },
+  {
+    "id": 6010,
+    "en": "enrichment",
+    "kk": "[ɛˋnrɪtʃmənt]",
+    "uk": "/ɪnˈrɪtʃmənt/",
+    "zh": "n. 致富、豐富、添加肥料、增強食品營養",
+    "unit": 7,
+    "example": "Interactive workshops offer practical skills and intellectual enrichment for adults.",
+    "exampleZh": "互動工作坊為成年人提供實用技能與心靈層面的充實。"
+  },
+  {
+    "id": 6011,
+    "en": "epidemic",
+    "kk": "[͵ɛpəˋdɛmɪk]",
+    "uk": "/ˌepɪˈdemɪk/",
+    "zh": "n. 流行病、傳染病、盛行、蔓延；adj. 盛行的、氾濫的",
+    "unit": 7,
+    "example": "Today, doctors are fearing a worldwide epidemic.",
+    "exampleZh": "如今，醫生們在擔心一次世界性的流行。"
+  },
+  {
+    "id": 6012,
+    "en": "episode",
+    "kk": "[ˋɛpə͵sod]",
+    "uk": "/ˈepɪsəʊd/",
+    "zh": "n. 一個事件、一節、一齣、一集",
+    "unit": 7,
+    "example": "The final episode will be shown next Sunday.",
+    "exampleZh": "最後一集將於下週日播放。"
+  },
+  {
+    "id": 6013,
+    "en": "equation",
+    "kk": "[ɪkˋweʒən]",
+    "uk": "/ɪˈkweɪʒ(ə)n/",
+    "zh": "n. 方程式、等式、相等、方程",
+    "unit": 7,
+    "example": "X and Y in the equation are both unknowns.",
+    "exampleZh": "等式中的X和Y都是未知數。"
+  },
+  {
+    "id": 6014,
+    "en": "equivalent",
+    "kk": "[ɪkˋwɪvələnt]",
+    "uk": "/ɪˈkwɪvələnt/",
+    "zh": "adj. 等同的、等效的；n. 等價物、對等的人、對應的人、當量",
+    "unit": 7,
+    "example": "Give me the equivalent in dollars.",
+    "exampleZh": "請給我等值的美元。"
+  },
+  {
+    "id": 6015,
+    "en": "eruption",
+    "kk": "[͵iˋrʌpʃən]",
+    "uk": "/ɪˈrʌpʃ(ə)n/",
+    "zh": "n. 爆發、噴出、噴發、發疹",
+    "unit": 7,
+    "example": "Volcanic ash showered down on the town after the eruption.",
+    "exampleZh": "火山噴發後，小城落了一層火山灰。"
+  },
+  {
+    "id": 6016,
+    "en": "essence",
+    "kk": "[ˋɛsəns]",
+    "uk": "/ˈes(ə)ns/",
+    "zh": "n. 本質、要素、精華、精油",
+    "unit": 7,
+    "example": "The essence of consultation is to listen to, and take account of, the views of those consulted.",
+    "exampleZh": "諮詢的本質是傾聽並把那些被諮詢者的觀點考慮進來。"
+  },
+  {
+    "id": 6017,
+    "en": "eternity",
+    "kk": "[ɪˋtɝnəti]",
+    "uk": "/ɪˈtɜːnəti/",
+    "zh": "n. 永遠、永恆、永世、無窮無盡的時間",
+    "unit": 7,
+    "example": "Eternity is not a distance but a determination.",
+    "exampleZh": "永恆不是一段距離，而是一種決心。"
+  },
+  {
+    "id": 6018,
+    "en": "ethnic",
+    "kk": "[ˋɛθnɪk]",
+    "uk": "/ˈeθnɪk/",
+    "zh": "adj. 種族的、民族的、少數民族的、具有民族特色的；n. 少數民族成員、某民族群體的人",
+    "unit": 7,
+    "example": "The police are trying to recruit more officers from ethnic minorities.",
+    "exampleZh": "警察機關正試圖從少數民族中徵募更多的新警員。"
+  },
+  {
+    "id": 6019,
+    "en": "evolution",
+    "kk": "[͵ɛvəˋluʃən]",
+    "uk": "/ˌiːvəˈluːʃ(ə)n/",
+    "zh": "n. 發展、進展、進化、演變",
+    "unit": 7,
+    "example": "Darwin eventually put forward a model of biological evolution.",
+    "exampleZh": "達爾文最終提出了一套生物進化的理論模式。"
+  },
+  {
+    "id": 6020,
+    "en": "excerpt",
+    "kk": "[ˋɛksɚpt]",
+    "uk": "/ˈeksɜːpt; ekˈsɜːpt/",
+    "zh": "n. 摘錄、節選；v. 摘錄、節選",
+    "unit": 7,
+    "example": "An excerpt of the interview is below.",
+    "exampleZh": "下面是訪談的一些摘錄。"
+  },
+  {
+    "id": 6021,
+    "en": "execution",
+    "kk": "[͵ɛksəˋkjuʃən]",
+    "uk": "/ˌeksɪˈkjuːʃ(ə)n/",
+    "zh": "n. 實行、執行、死刑、實施",
+    "unit": 7,
+    "example": "The idea was good, but the execution was poor.",
+    "exampleZh": "這個主意倒不錯，可實施情況不理想。"
+  },
+  {
+    "id": 6022,
+    "en": "exotic",
+    "kk": "[ɪɡˋzɑtɪk]",
+    "uk": "/ɪɡˈzɒtɪk/",
+    "zh": "adj. 奇異的、異國風情的；n. 外來植物、外來動物",
+    "unit": 7,
+    "example": "She has a partiality for exotic flowers.",
+    "exampleZh": "她特別喜愛異國花卉。"
+  },
+  {
+    "id": 6023,
+    "en": "expedition",
+    "kk": "[͵ɛkspəˋdɪʃən]",
+    "uk": "/ˌekspəˈdɪʃ(ə)n/",
+    "zh": "n. 遠征、探險、考察、探險隊",
+    "unit": 7,
+    "example": "The expedition was bedevilled by bad weather.",
+    "exampleZh": "探險隊深受惡劣天氣的困擾。"
+  },
+  {
+    "id": 6024,
+    "en": "expertise",
+    "kk": "[͵ɛkspɚˋtiz]",
+    "uk": "/ˌekspɜːˈtiːz/",
+    "zh": "n. 專門知識、專門技術、專長、專門技能",
+    "unit": 7,
+    "example": "She was not an accountant and didn't have the expertise to verify all of the financial details.",
+    "exampleZh": "她不是會計，不具有核查所有這些財政細目的專業知識。"
+  },
+  {
+    "id": 6025,
+    "en": "expiration",
+    "kk": "[͵ɛkspɚˋeʃən]",
+    "uk": "/ˌekspəˈreɪʃ(ə)n/",
+    "zh": "n. 失效、期滿、吐氣、到期",
+    "unit": 7,
+    "example": "The expiration date on this yogurt was November 20.",
+    "exampleZh": "這酸奶的有效期到11月20日。"
+  },
+  {
+    "id": 6026,
+    "en": "exploit",
+    "kk": "[ˋɛk͵splɔɪt]",
+    "uk": "/ɪkˈsplɔɪt/",
+    "zh": "vt. 開發、利用、剝削、壓榨；n. 英勇事蹟、功績",
+    "unit": 7,
+    "example": "His wartime exploits were later made into a film and a television series.",
+    "exampleZh": "他戰時的英勇事蹟後來被改編成了電影和電視劇。"
+  },
+  {
+    "id": 6027,
+    "en": "exploration",
+    "kk": "[͵ɛksplɚˋeʃən]",
+    "uk": "/ˌekspləˈreɪʃ(ə)n/",
+    "zh": "n. 勘查、探測、勘探、勘察",
+    "unit": 7,
+    "example": "The moon landing inaugurated a new era in space exploration.",
+    "exampleZh": "登陸月球開創了太空探索的新紀元。"
+  },
+  {
+    "id": 6028,
+    "en": "extract",
+    "kk": "[ˋɛk͵strækt]",
+    "uk": "/ˈekstrækt; ɪkˈstrækt/",
+    "zh": "n. 摘錄、選段、提取物；vt. 提取、提煉、取出、摘錄",
+    "unit": 7,
+    "example": "Citric acid can be extracted from the juice of oranges, lemons, limes or grapefruit.",
+    "exampleZh": "檸檬酸可以從橙汁、檸檬汁、酸橙汁或柚子汁中提取。"
+  },
+  {
+    "id": 6029,
+    "en": "eyesight",
+    "kk": "[ˋaɪ͵saɪt]",
+    "uk": "/ˈaɪsaɪt/",
+    "zh": "n. 視力、目力",
+    "unit": 7,
+    "example": "His eyesight is getting dim.",
+    "exampleZh": "他的視力越來越差。"
+  },
+  {
+    "id": 6030,
+    "en": "faction",
+    "kk": "[ˋfækʃən]",
+    "uk": "/ˈfækʃ(ə)n/",
+    "zh": "n. 派別、小集團、派系之爭、派系",
+    "unit": 7,
+    "example": "But the royal faction did not give up without a fight.",
+    "exampleZh": "但是王室派系並沒有不戰而降。"
+  },
+  {
+    "id": 6031,
+    "en": "faculty",
+    "kk": "[ˋfækəlti]",
+    "uk": "/ˈfæk(ə)lti/",
+    "zh": "n. 全體教員、官能、機能、天賦",
+    "unit": 7,
+    "example": "The faculty agreed on a change in the requirements.",
+    "exampleZh": "全體教員同意改變要求。"
+  },
+  {
+    "id": 6032,
+    "en": "familiarity",
+    "kk": "[fə͵mɪlˋjɛrəti]",
+    "uk": "/fəˌmɪliˈærəti/",
+    "zh": "n. 熟悉、通曉、精通、親切感",
+    "unit": 7,
+    "example": "Tony was unnerved by the uncanny familiarity of her face.",
+    "exampleZh": "託尼被她不尋常的熟悉面孔弄得心煩意亂。"
+  },
+  {
+    "id": 6033,
+    "en": "famine",
+    "kk": "[ˋfæmən]",
+    "uk": "/ˈfæmɪn/",
+    "zh": "n. 饑荒、饑饉、匱乏、短缺",
+    "unit": 7,
+    "example": "The famine threatened to depopulate the continent.",
+    "exampleZh": "饑荒威脅著該大陸人口數量。"
+  },
+  {
+    "id": 6034,
+    "en": "fascination",
+    "kk": "[͵fæsəˋneʃən]",
+    "uk": "/ˌfæsɪˈneɪʃ(ə)n/",
+    "zh": "n. 迷戀、陶醉、入迷、著迷",
+    "unit": 7,
+    "example": "The girls listened in fascination as the story unfolded.",
+    "exampleZh": "故事情節逐漸展開，小女孩都入迷地聽著。"
+  },
+  {
+    "id": 6035,
+    "en": "federation",
+    "kk": "[͵fɛdɚˋeʃən]",
+    "uk": "/ˌfedəˈreɪʃ(ə)n/",
+    "zh": "n. 聯邦政府、聯邦制度、聯盟、聯邦",
+    "unit": 7,
+    "example": "In the future we envision a federation of companies.",
+    "exampleZh": "我們設想將來會有公司聯盟。"
+  },
+  {
+    "id": 6036,
+    "en": "feedback",
+    "kk": "[ˋfid͵bæk]",
+    "uk": "/ˈfiːdbæk/",
+    "zh": "n. 反饋的信息、反饋意見、噪聲、返回資訊",
+    "unit": 7,
+    "example": "The teacher will give you feedback on the test.",
+    "exampleZh": "老師會對你的測驗提供反饋資訊。"
+  },
+  {
+    "id": 6037,
+    "en": "fertility",
+    "kk": "[fɚˋtɪləti]",
+    "uk": "/fəˈtɪləti/",
+    "zh": "n. 肥沃、繁殖力、富饒、可繁殖性",
+    "unit": 7,
+    "example": "The women were given fertility drugs to stimulate the ovaries.",
+    "exampleZh": "那些婦女得到了促進卵巢功能的生育藥。"
+  },
+  {
+    "id": 6038,
+    "en": "fidelity",
+    "kk": "[fəˋdɛləti]",
+    "uk": "/fɪˈdeləti/",
+    "zh": "n. 忠誠、忠貞、精確性、保真度",
+    "unit": 7,
+    "example": "People have failed to act in fidelity to their vows.",
+    "exampleZh": "人們沒能忠誠地履行自己的誓言。"
+  },
+  {
+    "id": 6039,
+    "en": "flare",
+    "kk": "[flɛr]",
+    "uk": "/fleə(r)/",
+    "zh": "vi. 突然燒旺、閃耀、突發、加劇；n. 閃耀的光、閃光裝置、訊號彈、突然發怒",
+    "unit": 7,
+    "example": "Camp fires flared like beacons in the dark.",
+    "exampleZh": "篝火突然熊熊燃燒起來，像黑暗中的燈塔。"
+  },
+  {
+    "id": 6040,
+    "en": "fleet",
+    "kk": "[flit]",
+    "uk": "/fliːt/",
+    "zh": "n. 艦隊、機群、車隊、船隊；adj. 快速的、淺的；adv. 淺、不深地；v. 疾馳、飛逝",
+    "unit": 7,
+    "example": "Russia and Ukraine have been disputing the ownership of the fleet.",
+    "exampleZh": "俄羅斯和烏克蘭一直在爭奪該艦隊的所有權。"
+  },
+  {
+    "id": 6041,
+    "en": "flicker",
+    "kk": "[ˋflɪkɚ]",
+    "uk": "/ˈflɪkə(r)/",
+    "zh": "vi. 閃爍、搖曳、閃現、一閃而過；n. 忽隱忽現、閃爍、搖曳、閃現",
+    "unit": 7,
+    "example": "Looking through the window I saw the flicker of flames.",
+    "exampleZh": "透過窗子望出去，我看到了閃爍的火光。"
+  },
+  {
+    "id": 6042,
+    "en": "fling",
+    "kk": "[flɪŋ]",
+    "uk": "/flɪŋ/",
+    "zh": "vt. 扔、擲、猛動、粗暴地（向某人）說；n. 短暫的風流韻事、一陣盡情的歡樂",
+    "unit": 7,
+    "example": "He tried to fling the heavy ball far away.",
+    "exampleZh": "他試圖將重球扔到遠處。"
+  },
+  {
+    "id": 6043,
+    "en": "fluid",
+    "kk": "[ˋfluəd]",
+    "uk": "/ˈfluːɪd/",
+    "zh": "n. 流體、液體；adj. 液體的、流體的、易變的、不穩定的",
+    "unit": 7,
+    "example": "The blood vessels may leak fluid, which distorts vision.",
+    "exampleZh": "血管可能滲漏出液體，擾亂視覺。"
+  },
+  {
+    "id": 6044,
+    "en": "flutter",
+    "kk": "[ˋflʌtɚ]",
+    "uk": "/ˈflʌtə(r)/",
+    "zh": "v. 飄動、顫動、振、拍打；n. 飄動、顫動、小賭注、激動",
+    "unit": 7,
+    "example": "Her chiffon skirt was fluttering in the night breeze.",
+    "exampleZh": "她的薄綢裙在晚風中飄動。"
+  },
+  {
+    "id": 6045,
+    "en": "fracture",
+    "kk": "[ˋfræktʃɚ]",
+    "uk": "/ˈfræktʃə(r)/",
+    "zh": "n. 破裂、斷裂、骨折、裂縫；vt. 破裂、折斷、瓦解、分裂",
+    "unit": 7,
+    "example": "One strut had fractured and been crudely repaired in several places.",
+    "exampleZh": "一根支柱斷裂了，好幾處已做了粗略修補。"
+  },
+  {
+    "id": 6046,
+    "en": "fragment",
+    "kk": "[ˋfræɡmənt]",
+    "uk": "/ˈfræɡmənt/",
+    "zh": "n. 斷片、碎片、片段、殘存部分；vt. 破碎、分裂",
+    "unit": 7,
+    "example": "The only reminder of the shooting is a few fragments of metal in my shoulder.",
+    "exampleZh": "惟一使我記起那次槍擊的，是我肩膀裡的一些金屬碎片。"
+  },
+  {
+    "id": 6047,
+    "en": "fraud",
+    "kk": "[frɔd]",
+    "uk": "/frɔːd/",
+    "zh": "n. 詭計、騙子、假貨、欺詐",
+    "unit": 7,
+    "example": "He's a fraud and a cheat.",
+    "exampleZh": "他是一個騙子。"
+  },
+  {
+    "id": 6048,
+    "en": "freak",
+    "kk": "[frik]",
+    "uk": "/friːk/",
+    "zh": "n. 怪人、怪胎、狂熱愛好者、畸形人；v. 吃驚、不安、惱怒；adj. 反常的、怪異的",
+    "unit": 7,
+    "example": "Snakes really freak me out.",
+    "exampleZh": "我一看見蛇便渾身發麻。"
+  },
+  {
+    "id": 6049,
+    "en": "friction",
+    "kk": "[ˋfrɪkʃən]",
+    "uk": "/ˈfrɪkʃ(ə)n/",
+    "zh": "n. 摩擦、不和、爭執、分歧",
+    "unit": 7,
+    "example": "The pistons are graphite-coated to reduce friction.",
+    "exampleZh": "活塞表面塗有石墨以減少摩擦。"
+  },
+  {
+    "id": 6050,
+    "en": "galaxy",
+    "kk": "[ˋɡæləksi]",
+    "uk": "/ˈɡæləksi/",
+    "zh": "n. 星系、銀河、銀河系、群英",
+    "unit": 7,
+    "example": "Astronomers have discovered a distant galaxy.",
+    "exampleZh": "天文學家們發現了一個遙遠的星系。"
+  },
+  {
+    "id": 6051,
+    "en": "generator",
+    "kk": "[ˋdʒɛnɚ͵etɚ]",
+    "uk": "/ˈdʒenəreɪtə(r)/",
+    "zh": "n. 發電機、產生器、產生者、電力公司",
+    "unit": 7,
+    "example": "Go to the generator.",
+    "exampleZh": "去發電機那兒。"
+  },
+  {
+    "id": 6052,
+    "en": "genetics",
+    "kk": "[dʒəˋnɛtɪks]",
+    "uk": "/dʒəˈnetɪks/",
+    "zh": "n. 遺傳學、遺傳性、遺傳特徵",
+    "unit": 7,
+    "example": "Genetics may not be the only explanation.",
+    "exampleZh": "遺傳學或許不是唯一的解釋。"
+  },
+  {
+    "id": 6053,
+    "en": "glamour",
+    "kk": "[ˋɡlæmɚ]",
+    "uk": "/ˈɡlæmə(r)/",
+    "zh": "n. 魅力、誘惑力、迷人的美、妖豔；v. 迷住、迷惑",
+    "unit": 7,
+    "example": "We need someone with youth, glamour and pizzazz.",
+    "exampleZh": "我們需要一位年富力強、魅力十足、風度翩翩的人。"
+  },
+  {
+    "id": 6054,
+    "en": "glassware",
+    "kk": "[ˋɡlæ͵swɛr]",
+    "uk": "/ˈɡlɑːsweə(r)/",
+    "zh": "n. 玻璃器皿、玻璃器具類、實驗室玻璃器皿",
+    "unit": 7,
+    "example": "The plates and glassware were rimmed with gold.",
+    "exampleZh": "這些盤子和玻璃器皿都鑲著金邊。"
+  },
+  {
+    "id": 6055,
+    "en": "glisten",
+    "kk": "[ˋɡlɪsən]",
+    "uk": "/ˈɡlɪs(ə)n/",
+    "zh": "vi. 閃光、閃亮、閃閃發光；n. 閃光、閃耀、光澤",
+    "unit": 7,
+    "example": "Why does my hair glisten a shiny silver?",
+    "exampleZh": "為什麼我滿頭銀髮？"
+  },
+  {
+    "id": 6056,
+    "en": "graph",
+    "kk": "[ɡræf]",
+    "uk": "/ɡrɑːf/",
+    "zh": "n. 圖表、曲線圖、座標圖、代表聲音單位（或其他言語特徵）的書寫符號；v. 圖、用圖表表示",
+    "unit": 7,
+    "example": "They made a bar graph to display the results.",
+    "exampleZh": "他們用條形圖來顯示結果。"
+  },
+  {
+    "id": 6057,
+    "en": "graphic",
+    "kk": "[ˋɡræfɪk]",
+    "uk": "/ˈɡræfɪk/",
+    "zh": "adj. 詳細的、生動的、繪畫的、圖形的；n. 圖表、圖形、繪畫、圖形設計",
+    "unit": 7,
+    "example": "The report included clear graphic illustrations.",
+    "exampleZh": "這份報告包含了清晰的圖形說明。"
+  },
+  {
+    "id": 6058,
+    "en": "grill",
+    "kk": "[ɡrɪl]",
+    "uk": "/ɡrɪl/",
+    "zh": "n. 燒烤的肉類食物、烤架、帶烤架的炊具、電焙盤；vt. 燒烤、烤制、盤問",
+    "unit": 7,
+    "example": "Jerry forced scrap wood through the vents in the grill to stoke the fire.",
+    "exampleZh": "傑裡從烤架的通風孔塞一些小木片來使火更旺一些。"
+  },
+  {
+    "id": 6059,
+    "en": "grocer",
+    "kk": "[ˋɡrosɚ]",
+    "uk": "/ˈɡrəʊsə(r)/",
+    "zh": "n. 食品雜貨商、食品雜貨店",
+    "unit": 7,
+    "example": "At the other end of the social scale was the grocer.",
+    "exampleZh": "處於社會階層另一端的是雜貨商。"
+  },
+  {
+    "id": 6060,
+    "en": "grope",
+    "kk": "[ɡrop]",
+    "uk": "/ɡrəʊp/",
+    "zh": "v. 觸摸、摸索、摸索著走、探索；n. 摸、猥褻",
+    "unit": 7,
+    "example": "I groped for a flashlight.",
+    "exampleZh": "我摸索著找手電筒。"
+  },
+  {
+    "id": 6061,
+    "en": "guerrilla",
+    "kk": "[ɡɚˋɪlə]",
+    "uk": "/ɡəˈrɪlə/",
+    "zh": "n. 游擊隊、游擊隊員、游擊戰；adj. 遊擊的、遊擊式的",
+    "unit": 7,
+    "example": "Guerrilla groups are active in the province.",
+    "exampleZh": "游擊隊組織在該省活動。"
+  },
+  {
+    "id": 6062,
+    "en": "habitat",
+    "kk": "[ˋhæbə͵tæt]",
+    "uk": "/ˈhæbɪtæt/",
+    "zh": "n. 棲地、生活環境、棲息地",
+    "unit": 7,
+    "example": "The panda's natural habitat is the bamboo forest.",
+    "exampleZh": "大熊貓的天然棲息地是竹林。"
+  },
+  {
+    "id": 6063,
+    "en": "hacker",
+    "kk": "[ˋhækɚ]",
+    "uk": "/ˈhækə(r)/",
+    "zh": "n. 駭客、不擅長某項運動的人、計算機迷、砍（或劈）的人",
+    "unit": 7,
+    "example": "Nothing is 100 percent hacker-proof.",
+    "exampleZh": "沒有什麼能百分之百地防止駭客入侵。"
+  },
+  {
+    "id": 6064,
+    "en": "hail",
+    "kk": "[hel]",
+    "uk": "/heɪl/",
+    "zh": "v. 讚揚、歡呼、呼喊、招呼；n. 冰雹、雹子般的一陣、招呼",
+    "unit": 7,
+    "example": "We drove through hail and snow.",
+    "exampleZh": "我們頂著冰雹和大雪開車。"
+  },
+  {
+    "id": 6065,
+    "en": "harassment",
+    "kk": "[hɚˋæsmənt]",
+    "uk": "/ˈhærəsmənt/",
+    "zh": "n. 騷擾",
+    "unit": 7,
+    "example": "The human resources department investigated complaints regarding workplace harassment.",
+    "exampleZh": "人力資源部對有關職場騷擾的投訴展開了調查。"
+  },
+  {
+    "id": 6066,
+    "en": "hazard",
+    "kk": "[ˋhæzɚd]",
+    "uk": "/ˈhæzəd/",
+    "zh": "n. 危險、危害物、風險；vt. 冒失地提出、使遭危險",
+    "unit": 7,
+    "example": "A new report suggests that chewing gum may be a health hazard.",
+    "exampleZh": "一份新的報告指出，嚼口香糖可能給健康帶來危害。"
+  },
+  {
+    "id": 6067,
+    "en": "hemisphere",
+    "kk": "[ˋhɛmɪ͵sfɪr]",
+    "uk": "/ˈhemɪsfɪə(r)/",
+    "zh": "n. 半球、半球體、腦半球、一半",
+    "unit": 7,
+    "example": "Which makes earth, and in particular, the northern hemisphere, warmer.",
+    "exampleZh": "這使得地球變暖了，尤其是北半球地區。"
+  },
+  {
+    "id": 6068,
+    "en": "hereafter",
+    "kk": "[hɪˋræftɚ]",
+    "uk": "/ˌhɪərˈɑːftə(r)/",
+    "zh": "adv. 未來、今後、此後、以下；n. 來世、死後生活、死後的靈魂存在、將來；adj. 今後的、此後的、死後的",
+    "unit": 7,
+    "example": "Do you believe in a life hereafter?",
+    "exampleZh": "你相信有來世嗎？"
+  },
+  {
+    "id": 6069,
+    "en": "heritage",
+    "kk": "[ˋhɛrətədʒ]",
+    "uk": "/ˈherɪtɪdʒ/",
+    "zh": "n. 遺產、繼承物、傳統、世襲財產",
+    "unit": 7,
+    "example": "They take great pride in their heritage.",
+    "exampleZh": "他們為自己的傳統感到十分自豪。"
+  },
+  {
+    "id": 6070,
+    "en": "heroin",
+    "kk": "[ˋhɛroən]",
+    "uk": "/ˈherəʊɪn/",
+    "zh": "n. 海洛因",
+    "unit": 7,
+    "example": "Tom relapsed on heroin.",
+    "exampleZh": "湯姆吸食海洛因舊病復發。"
+  },
+  {
+    "id": 6071,
+    "en": "highlight",
+    "kk": "[ˋhaɪ͵laɪt]",
+    "uk": "/ˈhaɪlaɪt/",
+    "zh": "vt. 突出、強調、用亮色突出；n. 最精彩的部分、精華",
+    "unit": 7,
+    "example": "The surveyor's report didn't highlight anything untoward.",
+    "exampleZh": "測量員的報告沒有強調有出乎意料的困難。"
+  },
+  {
+    "id": 6072,
+    "en": "hormone",
+    "kk": "[ˋhɔr͵mon]",
+    "uk": "/ˈhɔːməʊn/",
+    "zh": "n. 荷爾蒙、激素、人造激素、性激素",
+    "unit": 7,
+    "example": "Oestrogen is a female sex hormone.",
+    "exampleZh": "雌激素是一種雌性荷爾蒙。"
+  },
+  {
+    "id": 6073,
+    "en": "hospitality",
+    "kk": "[͵hɑspəˋtæləti]",
+    "uk": "/ˌhɒspɪˈtæləti/",
+    "zh": "n. 好客、殷勤招待、殷勤款待、食宿娛樂招待",
+    "unit": 7,
+    "example": "Every visitor to Georgia is overwhelmed by the kindness, charm, and hospitality of the people.",
+    "exampleZh": "來到佐治亞州的每一個人都為當地人的善良、魅力和好客感動不已。"
+  },
+  {
+    "id": 6074,
+    "en": "hostility",
+    "kk": "[hɑˋstɪləti]",
+    "uk": "/hɒˈstɪləti/",
+    "zh": "n. 敵意、敵視、戰爭行動、對抗",
+    "unit": 7,
+    "example": "Hostility glinted in his eyes.",
+    "exampleZh": "他眼睛裡流露出敵意。"
+  },
+  {
+    "id": 6075,
+    "en": "humanitarian",
+    "kk": "[͵hju͵mænəˋtɛriən]",
+    "uk": "/hjuːˌmænɪˈteəriən/",
+    "zh": "adj. 人道主義的、博愛的、基督凡人論的；n. 慈善家、人道主義者、博愛者、基督凡人論者",
+    "unit": 7,
+    "example": "Humanitarian work comes naturally to them.",
+    "exampleZh": "人道主義工作對他們而言輕而易舉。"
+  },
+  {
+    "id": 6076,
+    "en": "hunch",
+    "kk": "[hʌntʃ]",
+    "uk": "/hʌntʃ/",
+    "zh": "n. 直覺、預感、肉峰、厚片；v. 弓身、弓背",
+    "unit": 7,
+    "example": "I had a hunch (that) you'd be back.",
+    "exampleZh": "我有預感你會回來。"
+  },
+  {
+    "id": 6077,
+    "en": "hurdle",
+    "kk": "[ˋhɝdəl]",
+    "uk": "/ˈhɜːd(ə)l/",
+    "zh": "n. 障礙、難關、欄架、跨欄；vt. 跳越、參加跨欄賽跑、克服、渡過難關",
+    "unit": 7,
+    "example": "His horse fell at the final hurdle.",
+    "exampleZh": "他騎的馬在最後一個跨欄倒下了。"
+  },
+  {
+    "id": 6078,
+    "en": "hygiene",
+    "kk": "[ˋhaɪ͵dʒin]",
+    "uk": "/ˈhaɪdʒiːn/",
+    "zh": "n. 衛生、衛生學、保健法、保健學",
+    "unit": 7,
+    "example": "She wasn't very fastidious about personal hygiene.",
+    "exampleZh": "她不過分講究個人衛生。"
+  },
+  {
+    "id": 6079,
+    "en": "hypocrisy",
+    "kk": "[hɪˋpɑkrəsi]",
+    "uk": "/hɪˈpɒkrəsi/",
+    "zh": "n. 偽善、虛偽",
+    "unit": 7,
+    "example": "Her denials reeked of hypocrisy.",
+    "exampleZh": "她那樣否認顯然很虛偽。"
+  },
+  {
+    "id": 6080,
+    "en": "hypocrite",
+    "kk": "[ˋhɪpə͵krɪt]",
+    "uk": "/ˈhɪpəkrɪt/",
+    "zh": "n. 偽善者、偽君子",
+    "unit": 7,
+    "example": "The newspapers branded her a hypocrite.",
+    "exampleZh": "報章指她是偽君子。"
+  },
+  {
+    "id": 6081,
+    "en": "illusion",
+    "kk": "[͵ɪlˋuʒən]",
+    "uk": "/ɪˈluːʒ(ə)n/",
+    "zh": "n. 錯覺、假象、幻想、幻覺",
+    "unit": 7,
+    "example": "The idea of absolute personal freedom is an illusion.",
+    "exampleZh": "絕對個人自由的觀念是一種幻想。"
+  },
+  {
+    "id": 6082,
+    "en": "imperative",
+    "kk": "[͵ɪmˋpɛrətɪv]",
+    "uk": "/ɪmˈperətɪv/",
+    "zh": "adj. 極重要的、必要的、命令的、強制的；n. 重要緊急的事、必要的事、祈使語氣、祈使語氣動詞",
+    "unit": 7,
+    "example": "It was imperative that he act as naturally as possible.",
+    "exampleZh": "至關重要的是他要儘可能地自然行事。"
+  },
+  {
+    "id": 6083,
+    "en": "implement",
+    "kk": "[ˋɪmpləmənt]",
+    "uk": "/ˈɪmplɪment/",
+    "zh": "vt. 執行、貫徹、為……提供工具；n. 工具、器具、履行、手段",
+    "unit": 7,
+    "example": "The school board decided to implement new safety measures immediately.",
+    "exampleZh": "學校董事會決定立即實施新的安全措施。"
+  },
+  {
+    "id": 6084,
+    "en": "implication",
+    "kk": "[͵ɪmpləˋkeʃən]",
+    "uk": "/ˌɪmplɪˈkeɪʃn/",
+    "zh": "n. 含意、言外之意、暗示、可能的影響",
+    "unit": 7,
+    "example": "The implication was plain, if left unstated.",
+    "exampleZh": "即使不說出來，隱含義也很明顯。"
+  },
+  {
+    "id": 6085,
+    "en": "imprisonment",
+    "kk": "[͵ɪmˋprɪzənmənt]",
+    "uk": "/ɪmˈprɪznmənt/",
+    "zh": "n. 監禁、限止、關押",
+    "unit": 7,
+    "example": "He faced imprisonment for contempt of court.",
+    "exampleZh": "他因藐視法庭罪而面臨監禁。"
+  },
+  {
+    "id": 6086,
+    "en": "incentive",
+    "kk": "[͵ɪnˋsɛntɪv]",
+    "uk": "/ɪnˈsentɪv/",
+    "zh": "n. 動機、激勵、刺激",
+    "unit": 7,
+    "example": "They have an incentive to keep us hooked.",
+    "exampleZh": "他們有動機讓我們上鉤。"
+  },
+  {
+    "id": 6087,
+    "en": "incline",
+    "kk": "[͵ɪnˋklaɪn]",
+    "uk": "/ɪnˈklaɪn/",
+    "zh": "vt. 傾向於、點頭、傾斜、贊同；n. 斜坡、傾斜",
+    "unit": 7,
+    "example": "I'm inclined to agree.",
+    "exampleZh": "我傾向於同意你的觀點。"
+  },
+  {
+    "id": 6088,
+    "en": "indignation",
+    "kk": "[͵ɪndɪɡˋneʃən]",
+    "uk": "/ˌɪndɪɡˈneɪʃ(ə)n/",
+    "zh": "n. 憤怒、憤慨、義憤、憤憤不平",
+    "unit": 7,
+    "example": "He could scarcely keep in his indignation.",
+    "exampleZh": "他幾乎控制不住自己的憤怒。"
+  },
+  {
+    "id": 6089,
+    "en": "inference",
+    "kk": "[ˋɪnfɚəns]",
+    "uk": "/ˈɪnfərəns/",
+    "zh": "n. 推論、推斷、推理、推斷結果",
+    "unit": 7,
+    "example": "An evolutionary inference can then be drawn.",
+    "exampleZh": "這樣就可以得到一個關於進化的推論。"
+  },
+  {
+    "id": 6090,
+    "en": "ingenuity",
+    "kk": "[͵ɪndʒəˋnuə͵ti]",
+    "uk": "/ˌɪndʒəˈnjuːəti/",
+    "zh": "n. 心靈手巧、獨創性、足智多謀、聰明才智",
+    "unit": 7,
+    "example": "It's limited only by your ingenuity!",
+    "exampleZh": "它僅受限於你的創造力！"
+  },
+  {
+    "id": 6091,
+    "en": "inhabitant",
+    "kk": "[ɪnˋhæbətənt]",
+    "uk": "/ɪnˈhæbɪtənt/",
+    "zh": "n. 居民、居住者、棲息動物",
+    "unit": 7,
+    "example": "The Manchurian Tiger is the typical forest inhabitant.",
+    "exampleZh": "東北虎是典型的林棲動物。"
+  },
+  {
+    "id": 6092,
+    "en": "initiative",
+    "kk": "[͵ɪnˋɪʃətɪv]",
+    "uk": "/ɪˈnɪʃətɪv/",
+    "zh": "n. 主動權、措施、倡議、主動性",
+    "unit": 7,
+    "example": "She was disappointed by his lack of initiative.",
+    "exampleZh": "她對他缺乏主動性感到失望。"
+  },
+  {
+    "id": 6093,
+    "en": "injection",
+    "kk": "[͵ɪnˋdʒɛkʃən]",
+    "uk": "/ɪnˈdʒekʃ(ə)n/",
+    "zh": "n. 注射、大量資金的投入、注入、噴入",
+    "unit": 7,
+    "example": "An anaesthetic was administered by injection.",
+    "exampleZh": "麻醉劑已注射入體內。"
+  },
+  {
+    "id": 6094,
+    "en": "injustice",
+    "kk": "[͵ɪnˋdʒʌstɪs]",
+    "uk": "/ɪnˈdʒʌstɪs/",
+    "zh": "n. 非正義、不公正、無道義、非正義行為",
+    "unit": 7,
+    "example": "You cannot erase injustice from the world.",
+    "exampleZh": "任何人都不可能讓非正義從世界上消失。"
+  },
+  {
+    "id": 6095,
+    "en": "innovation",
+    "kk": "[͵ɪnəˋveʃən]",
+    "uk": "/ˌɪnəˈveɪʃ(ə)n/",
+    "zh": "n. 革新、創新、新事物、新方法",
+    "unit": 7,
+    "example": "Capitalism stresses innovation, competition and individualism.",
+    "exampleZh": "資本主義強調的是創新、競爭和個人至上。"
+  },
+  {
+    "id": 6096,
+    "en": "inquiry",
+    "kk": "[͵ɪnˋkwaɪ͵ri]",
+    "uk": "/ɪnˈkwaɪəri/",
+    "zh": "n. 詢問、打聽、質詢、疑問",
+    "unit": 7,
+    "example": "He made some inquiries and discovered she had gone to Connecticut.",
+    "exampleZh": "他詢問了一番，發現她已去了康涅狄格州。"
+  },
+  {
+    "id": 6097,
+    "en": "insight",
+    "kk": "[ˋɪn͵saɪt]",
+    "uk": "/ˈɪnsaɪt/",
+    "zh": "n. 洞察力、洞悉、瞭解",
+    "unit": 7,
+    "example": "Where do you get all of your insight from?",
+    "exampleZh": "你的所有洞察力從何而來？"
+  },
+  {
+    "id": 6098,
+    "en": "insistence",
+    "kk": "[͵ɪnˋsɪstəns]",
+    "uk": "/ɪnˈsɪstəns/",
+    "zh": "n. 堅持、堅決要求、堅持主張",
+    "unit": 7,
+    "example": "At her insistence , the matter was dropped.",
+    "exampleZh": "在她的堅持下，這件事被擱置了。"
+  },
+  {
+    "id": 6099,
+    "en": "installation",
+    "kk": "[͵ɪnstəˋleʃən]",
+    "uk": "/ˌɪnstəˈleɪʃ(ə)n/",
+    "zh": "n. 設施、安裝、設定、裝置",
+    "unit": 7,
+    "example": "Installation of the new system will take several days.",
+    "exampleZh": "新系統的安裝需要幾天時間。"
+  },
+  {
+    "id": 6100,
+    "en": "installment",
+    "kk": "[͵ɪnˋstɔlmənt]",
+    "uk": "/ɪnˈstɔːlmənt/",
+    "zh": "n. 分期付款、安置、每期應付款項、一期",
+    "unit": 7,
+    "example": "I will cover these transitions in the next installment.",
+    "exampleZh": "我將在下期連載中涵蓋這些變化。"
+  },
+  {
+    "id": 6101,
+    "en": "institution",
+    "kk": "[͵ɪnstɪˋtuʃən]",
+    "uk": "/ˌɪnstɪˈtjuːʃ(ə)n/",
+    "zh": "n. 機構、團體、社會收容機構、制度",
+    "unit": 7,
+    "example": "I believe in the institution of marriage.",
+    "exampleZh": "我相信婚姻制度。"
+  },
+  {
+    "id": 6102,
+    "en": "integration",
+    "kk": "[͵ɪntəˋɡreʃən]",
+    "uk": "/ˌɪntɪˈɡreɪʃ(ə)n/",
+    "zh": "n. 整合、積分、結合、融合",
+    "unit": 7,
+    "example": "The aim is to promote closer economic integration.",
+    "exampleZh": "目的是進一步促進經濟一體化。"
+  },
+  {
+    "id": 6103,
+    "en": "integrity",
+    "kk": "[͵ɪnˋtɛɡrəti]",
+    "uk": "/ɪnˈteɡrəti/",
+    "zh": "n. 正直、廉正、健全、誠實",
+    "unit": 7,
+    "example": "Mayhew is a man of rock-solid integrity.",
+    "exampleZh": "梅休是一個正直可靠的男人。"
+  },
+  {
+    "id": 6104,
+    "en": "intellect",
+    "kk": "[ˋɪntə͵lɛkt]",
+    "uk": "/ˈɪntəlekt/",
+    "zh": "n. 智力、理解力、有才智的人、思維能力",
+    "unit": 7,
+    "example": "She is famed for her intellect.",
+    "exampleZh": "她因才智而出名。"
+  },
+  {
+    "id": 6105,
+    "en": "intersection",
+    "kk": "[͵ɪntɚˋsɛkʃən]",
+    "uk": "/ˌɪntəˈsekʃn/",
+    "zh": "n. 交叉點、十字路口、交接、相交",
+    "unit": 7,
+    "example": "We crossed at a busy intersection.",
+    "exampleZh": "我們穿過了一個繁忙的道路交叉口。"
+  },
+  {
+    "id": 6106,
+    "en": "interval",
+    "kk": "[ˋɪntɚvəl]",
+    "uk": "/ˈɪntəv(ə)l/",
+    "zh": "n. 間隔、距離、間隙、幕間休息",
+    "unit": 7,
+    "example": "The interval between major earthquakes might be 200 years.",
+    "exampleZh": "大地震之間的間隔時間可能有200年。"
+  },
+  {
+    "id": 6107,
+    "en": "intervention",
+    "kk": "[͵ɪntɚˋvɛnʃən]",
+    "uk": "/ˌɪntəˈvenʃ(ə)n/",
+    "zh": "n. 介入、干預、調停、斡旋",
+    "unit": 7,
+    "example": "Military intervention will only aggravate the conflict even further.",
+    "exampleZh": "軍事介入只會使衝突加劇。"
+  },
+  {
+    "id": 6108,
+    "en": "intimacy",
+    "kk": "[ˋɪntəməsi]",
+    "uk": "/ˈɪntɪməsi/",
+    "zh": "n. 熟悉、親密、親近、性",
+    "unit": 7,
+    "example": "Haptics in communication often suggest the level of intimacy.",
+    "exampleZh": "在交流中，觸覺學通常暗示著親密程度。"
+  },
+  {
+    "id": 6109,
+    "en": "intruder",
+    "kk": "[͵ɪnˋtrudɚ]",
+    "uk": "/ɪnˈtruːdə(r)/",
+    "zh": "n. 侵入者、闖入者、不速之客",
+    "unit": 7,
+    "example": "Armed guards wrestled with the intruder.",
+    "exampleZh": "武裝警衛和闖入者扭打起來。"
+  },
+  {
+    "id": 6110,
+    "en": "inventory",
+    "kk": "[͵ɪnvənˋtɔri]",
+    "uk": "/ˈɪnvəntri/",
+    "zh": "n. 詳細目錄、清單、存貨、庫存；v. 開列清單",
+    "unit": 7,
+    "example": "Before starting, he made an inventory of everything that was to stay.",
+    "exampleZh": "出發前，他把要留下的所有東西列了一份詳細清單。"
+  },
+  {
+    "id": 6111,
+    "en": "investigator",
+    "kk": "[͵ɪnˋvɛstə͵ɡetɚ]",
+    "uk": "/ɪnˈvestɪɡeɪtə(r)/",
+    "zh": "n. 調查者、研究者、偵察員",
+    "unit": 7,
+    "example": "A senior investigator examined the financial ledger for signs of fraud.",
+    "exampleZh": "一名資深調查員審查了財務帳冊，以尋找舞弊的跡象。"
+  },
+  {
+    "id": 6112,
+    "en": "irony",
+    "kk": "[ˋaɪrəni]",
+    "uk": "/ˈaɪrəni/",
+    "zh": "n. 反語、諷刺、出乎意料的結果、奇異可笑之處；adj. 鐵的、含鐵的、似鐵的",
+    "unit": 7,
+    "example": "She spoke with heavy irony.",
+    "exampleZh": "她的話充滿了諷刺。"
+  },
+  {
+    "id": 6113,
+    "en": "irritation",
+    "kk": "[͵ɪrɪˋteʃən]",
+    "uk": "/ˌɪrɪˈteɪʃ(ə)n/",
+    "zh": "n. 激怒、惱怒、生氣、惱人事",
+    "unit": 7,
+    "example": "He tried not to let his irritation show as he blinked in the glare of the television lights.",
+    "exampleZh": "在對著耀眼的電視光線眨眼時，他竭力不把自己的惱怒表現出來。"
+  },
+  {
+    "id": 6114,
+    "en": "kernel",
+    "kk": "[ˋkɝnəl]",
+    "uk": "/ˈkɜːn(ə)l/",
+    "zh": "n. 仁、核心、要點、核",
+    "unit": 7,
+    "example": "TUN and TAP are virtual network kernel drivers.",
+    "exampleZh": "TUN 和 TAP 是虛擬的網路核心裝置。"
+  },
+  {
+    "id": 6115,
+    "en": "lament",
+    "kk": "[ləˋmɛnt]",
+    "uk": "/ləˈment/",
+    "zh": "n. 輓歌、悼文、表達哀傷（或痛惜）之情的言辭、抱怨；vt. 對……感到悲痛、對……表示失望、抱怨",
+    "unit": 7,
+    "example": "Ken began to lament the death of his only son.",
+    "exampleZh": "肯為他獨生子的去世開始感到悲痛。"
+  },
+  {
+    "id": 6116,
+    "en": "lava",
+    "kk": "[ˋlɑvə]",
+    "uk": "/ˈlɑːvə/",
+    "zh": "n. 熔岩、火山岩、岩漿",
+    "unit": 7,
+    "example": "Lava is extruded from the volcano.",
+    "exampleZh": "熔岩從火山中噴出。"
+  },
+  {
+    "id": 6117,
+    "en": "layman",
+    "kk": "[ˋlemən]",
+    "uk": "/ˈleɪmən/",
+    "zh": "n. 一般信徒、外行人、外行、門外漢",
+    "unit": 7,
+    "example": "The mere mention of the words \"heart failure\" can conjure up, to the layman, the prospect of imminent death.",
+    "exampleZh": "一提到“心力衰竭”幾個字，外行人就會想到立即死亡。"
+  },
+  {
+    "id": 6118,
+    "en": "layout",
+    "kk": "[ˋle͵aʊt]",
+    "uk": "/ˈleɪaʊt/",
+    "zh": "n. 設計、佈局、版面設計、版面編排",
+    "unit": 7,
+    "example": "The layout is hard to fault ergonomically.",
+    "exampleZh": "這一設計從工效學方面看幾乎無懈可擊。"
+  },
+  {
+    "id": 6119,
+    "en": "legislator",
+    "kk": "[ˋlɛdʒə͵sletɚ]",
+    "uk": "/ˈledʒɪsleɪtə(r)/",
+    "zh": "n. 立法委員、國會議員、立法者",
+    "unit": 7,
+    "example": "Which countries have the largest number of people per legislator?",
+    "exampleZh": "哪些國家的議員代表最多數的人？"
+  },
+  {
+    "id": 6120,
+    "en": "legislature",
+    "kk": "[ˋlɛdʒə͵sletʃɚ]",
+    "uk": "/ˈledʒɪslətʃə(r)/",
+    "zh": "n. 立法機關、州議會、立法機構、議會",
+    "unit": 7,
+    "example": "A roar of approval resounded through the legislature.",
+    "exampleZh": "一片贊成聲在議會中迴響。"
+  },
+  {
+    "id": 6121,
+    "en": "liberation",
+    "kk": "[͵lɪb͵ɝˋeʃən]",
+    "uk": "/ˌlɪbəˈreɪʃ(ə)n/",
+    "zh": "n. 解放、釋出、解放運動、解脫",
+    "unit": 7,
+    "example": "We call this data liberation.",
+    "exampleZh": "我們管這叫“資料解放”。"
+  },
+  {
+    "id": 6122,
+    "en": "limo",
+    "kk": "[ˋlɪmo]",
+    "uk": "/ˈlɪməʊ/",
+    "zh": "n. 豪華禮車、加長型轎車、豪華轎車",
+    "unit": 7,
+    "example": "He has a limo.",
+    "exampleZh": "他有一輛豪華轎車。"
+  },
+  {
+    "id": 6123,
+    "en": "limousine",
+    "kk": "[ˋlɪmə͵zin]",
+    "uk": "/ˈlɪməziːn/",
+    "zh": "n. 大轎車、豪華轎車、大型豪華轎車",
+    "unit": 7,
+    "example": "He prefers travelling on the subway to riding in a limousine.",
+    "exampleZh": "他寧願乘坐地鐵出行而不願乘坐豪華加長轎車。"
+  },
+  {
+    "id": 6124,
+    "en": "liner",
+    "kk": "[ˋlaɪnɚ]",
+    "uk": "/ˈlaɪnə(r)/",
+    "zh": "n. 班輪、眼線筆、郵輪、襯裡",
+    "unit": 7,
+    "example": "The liner went straight to Nanjing.",
+    "exampleZh": "班輪徑直開往南京。"
+  },
+  {
+    "id": 6125,
+    "en": "linguist",
+    "kk": "[ˋlɪŋɡwɪst]",
+    "uk": "/ˈlɪŋɡwɪst/",
+    "zh": "n. 語言學者、通曉數種外語的人、精通外國語言的人、語言學家",
+    "unit": 7,
+    "example": "Ziri became a linguist.",
+    "exampleZh": "齊裡成為語言學家。"
+  },
+  {
+    "id": 6126,
+    "en": "liquid crystal display",
+    "kk": "[ˋlɪkwəd ˋkrɪstəl dɪˋsple]",
+    "uk": "/ˌlɪkwɪd ˌkrɪstl dɪˈspleɪ/",
+    "zh": "n. 液晶顯示",
+    "unit": 7,
+    "example": "The modern instrument panel incorporates a glare-free liquid crystal display.",
+    "exampleZh": "現代化的儀表板配備了防眩光的液晶顯示螢幕。"
+  },
+  {
+    "id": 6127,
+    "en": "liter",
+    "kk": "[ˋlitɚ]",
+    "uk": "/ˈliːtə(r)/",
+    "zh": "n. 公升、升",
+    "unit": 7,
+    "example": "You should drink approximately two liters of pure water every day.",
+    "exampleZh": "你每天應該喝大約兩公升的純水。"
+  },
+  {
+    "id": 6128,
+    "en": "literacy",
+    "kk": "[ˋlɪtɚəsi]",
+    "uk": "/ˈlɪtərəsi/",
+    "zh": "n. 識字、讀寫能力、專業知識、精通文學",
+    "unit": 7,
+    "example": "Many adults have problems with literacy and numeracy.",
+    "exampleZh": "很多成年人有讀寫和計算的困難。"
+  },
+  {
+    "id": 6129,
+    "en": "literate",
+    "kk": "[ˋlɪtɚət]",
+    "uk": "/ˈlɪtərət/",
+    "zh": "adj. 有讀寫能力的、受過良好教育的、熟練的、通曉的；n. 有文化的人",
+    "unit": 7,
+    "example": "Only one literate adult in three read books.",
+    "exampleZh": "只有三分之一有文化的成年人讀書。"
+  },
+  {
+    "id": 6130,
+    "en": "longevity",
+    "kk": "[lɔnˋdʒɛvəti]",
+    "uk": "/lɒnˈdʒevəti/",
+    "zh": "n. 長壽、壽命、持久、持續時間",
+    "unit": 7,
+    "example": "Human longevity runs in families.",
+    "exampleZh": "人類長壽是有遺傳的。"
+  },
+  {
+    "id": 6131,
+    "en": "lounge",
+    "kk": "[laʊndʒ]",
+    "uk": "/laʊndʒ/",
+    "zh": "n. 休息室、貴賓室、客廳；vi. 閒逛、懶洋洋地坐（或躺）",
+    "unit": 7,
+    "example": "Alcoholic beverages are served in the hotel lounge.",
+    "exampleZh": "賓館的休息室供應酒類飲料。"
+  },
+  {
+    "id": 6132,
+    "en": "lunatic",
+    "kk": "[ˋlunə͵tɪk]",
+    "uk": "/ˈluːnətɪk/",
+    "zh": "adj. 瘋狂的、極其愚蠢的、混亂的；n. 瘋傻的人、瘋狂的人、愚笨的人、精神病患者",
+    "unit": 7,
+    "example": "I met a lunatic.",
+    "exampleZh": "我遇到了一個瘋子。"
+  },
+  {
+    "id": 6133,
+    "en": "lure",
+    "kk": "[lʊr]",
+    "uk": "/lʊə(r)/",
+    "zh": "vt. 引誘、誘惑；n. 誘惑、誘惑力、魚餌、誘餌",
+    "unit": 7,
+    "example": "Few can resist the lure of adventure.",
+    "exampleZh": "很少有人能抵禦歷險的誘惑力。"
+  },
+  {
+    "id": 6134,
+    "en": "lyric",
+    "kk": "[ˋlɪrɪk]",
+    "uk": "/ˈlɪrɪk/",
+    "zh": "n. 歌詞、抒情詩；adj. 抒情的、吟唱的",
+    "unit": 7,
+    "example": "The songwriter wrote poetic and meaningful lyrics for the melody.",
+    "exampleZh": "詞曲作者為旋律譜寫了富有詩意且意味深長的歌詞。"
+  },
+  {
+    "id": 6135,
+    "en": "magnitude",
+    "kk": "[ˋmæɡnə͵tud]",
+    "uk": "/ˈmæɡnɪtjuːd/",
+    "zh": "n. 巨大、重大、強度、重要性",
+    "unit": 7,
+    "example": "We did not realize the magnitude of the problem.",
+    "exampleZh": "我們沒有意識到這個問題的重要性。"
+  },
+  {
+    "id": 6136,
+    "en": "malaria",
+    "kk": "[məˋlɛriə]",
+    "uk": "/məˈleəriə/",
+    "zh": "n. 瘧疾",
+    "unit": 7,
+    "example": "Malaria is endemic in many hot countries.",
+    "exampleZh": "瘧疾是許多氣候炎熱國家的流行病。"
+  },
+  {
+    "id": 6137,
+    "en": "manuscript",
+    "kk": "[ˋmænjə͵skrɪpt]",
+    "uk": "/ˈmænjuskrɪpt/",
+    "zh": "n. 手稿、打字稿、原稿、手抄本；adj. 手寫的",
+    "unit": 7,
+    "example": "I read her poems in manuscript.",
+    "exampleZh": "我讀過她的詩作的手稿。"
+  },
+  {
+    "id": 6138,
+    "en": "massacre",
+    "kk": "[ˋmæsəkɚ]",
+    "uk": "/ˈmæsəkə(r)/",
+    "zh": "n. 慘敗、屠殺、殘殺；vt. 大屠殺、屠殺、殺戮、使慘敗",
+    "unit": 7,
+    "example": "It was a massacre.",
+    "exampleZh": "這是一場屠殺。"
+  },
+  {
+    "id": 6139,
+    "en": "mastery",
+    "kk": "[ˋmæstɚi]",
+    "uk": "/ˈmɑːstəri/",
+    "zh": "n. 支配、統治、精通、掌握",
+    "unit": 7,
+    "example": "She has mastery of several languages.",
+    "exampleZh": "她精通數門語言。"
+  },
+  {
+    "id": 6140,
+    "en": "material",
+    "kk": "[məˋtɪriəl]",
+    "uk": "/məˈtɪəriəl/",
+    "zh": "n. 材料、原料、衣料、布料；adj. 物質的、非精神上的、重要的、需予以考慮的",
+    "unit": 7,
+    "example": "This material is 45% nylon.",
+    "exampleZh": "這種材料含45%的尼龍。"
+  },
+  {
+    "id": 6141,
+    "en": "materialism",
+    "kk": "[məˋtɪriə͵lɪzəm]",
+    "uk": "/məˈtɪəriəlɪzəm/",
+    "zh": "n. 唯物論、唯物主義、物質主義",
+    "unit": 7,
+    "example": "Scientific materialism thus triumphed over ignorance and superstition.",
+    "exampleZh": "科學唯物主義就這樣戰勝了無知和迷信。"
+  },
+  {
+    "id": 6142,
+    "en": "mattress",
+    "kk": "[ˋmætrəs]",
+    "uk": "/ˈmætrəs/",
+    "zh": "n. 床墊、褥墊、墊層、沉排",
+    "unit": 7,
+    "example": "He crouched down and reached under the mattress.",
+    "exampleZh": "他蹲下來，把手伸到了床墊下面。"
+  },
+  {
+    "id": 6143,
+    "en": "mechanism",
+    "kk": "[ˋmɛkə͵nɪzəm]",
+    "uk": "/ˈmekənɪzəm/",
+    "zh": "n. 機械裝置、機械作用、結構、機件",
+    "unit": 7,
+    "example": "Pain acts as a natural defence mechanism.",
+    "exampleZh": "疼痛算是一種自然防護機制的作用。"
+  },
+  {
+    "id": 6144,
+    "en": "medication",
+    "kk": "[͵mɛdəˋkeʃən]",
+    "uk": "/ˌmedɪˈkeɪʃn/",
+    "zh": "n. 藥物治療、藥物、藥品",
+    "unit": 7,
+    "example": "He's very sick. He needs medication.",
+    "exampleZh": "他病得很重，需要藥物治療。"
+  },
+  {
+    "id": 6145,
+    "en": "meditation",
+    "kk": "[͵mɛdəˋteʃən]",
+    "uk": "/ˌmedɪˈteɪʃ(ə)n/",
+    "zh": "n. 沈思、默想、冥想、打坐",
+    "unit": 7,
+    "example": "She found peace through yoga and meditation.",
+    "exampleZh": "她透過瑜伽和冥想找到了寧靜。"
+  },
+  {
+    "id": 6146,
+    "en": "melancholy",
+    "kk": "[ˋmɛlən͵kɑli]",
+    "uk": "/ˈmelənkəli/",
+    "zh": "n. 愁思、抑鬱、憂鬱、精神病；adj. 憂鬱、悲哀的、沮喪的",
+    "unit": 7,
+    "example": "A feeling of melancholy runs through his prose.",
+    "exampleZh": "一種憂鬱情緒貫穿在他的散文中。"
+  },
+  {
+    "id": 6147,
+    "en": "mentality",
+    "kk": "[mɛnˋtæləti]",
+    "uk": "/menˈtæləti/",
+    "zh": "n. 智力、精神性、心理狀態、心態",
+    "unit": 7,
+    "example": "I cannot understand the mentality of football hooligans.",
+    "exampleZh": "我無法理解足球流氓的心態。"
+  },
+  {
+    "id": 6148,
+    "en": "merchandise",
+    "kk": "[ˋmɝtʃən͵daɪz]",
+    "uk": "/ˈmɜːtʃəndaɪs/",
+    "zh": "n. 商品、貨物；v. 推銷、促銷",
+    "unit": 7,
+    "example": "Retailers can return defective merchandise.",
+    "exampleZh": "零售商可以退回有瑕疵的商品。"
+  },
+  {
+    "id": 6149,
+    "en": "metaphor",
+    "kk": "[ˋmɛtəfɔr]",
+    "uk": "/ˈmetəfə(r)/",
+    "zh": "n. 隱喻、象徵、暗喻、標誌",
+    "unit": 7,
+    "example": "The divided family remains a powerful metaphor for a society that continued to tear itself apart.",
+    "exampleZh": "破裂的家庭仍然是一個持續分裂的社會的有力象徵。"
+  },
+  {
+    "id": 6150,
+    "en": "metropolitan",
+    "kk": "[͵mɛtrəˋpɑlətən]",
+    "uk": "/ˌmetrəˈpɒlɪtən/",
+    "zh": "adj. 大都市的、本土的、宗主國（有關）的；n. 大主教、大城市人、都會居民",
+    "unit": 7,
+    "example": "Knowsley Metropolitan Borough supplied all its school returns.",
+    "exampleZh": "諾斯利都會自治市提交了其所有學校的申報表。"
+  },
+  {
+    "id": 6151,
+    "en": "migration",
+    "kk": "[maɪˋɡreʃən]",
+    "uk": "/maɪˈɡreɪʃn/",
+    "zh": "n. 遷移、遷徙、移民群、移民",
+    "unit": 7,
+    "example": "During the last recession, migration to the sunbelt accelerated.",
+    "exampleZh": "前一個經濟蕭條期間，向美國南部陽光地帶移民的速度加快了。"
+  },
+  {
+    "id": 6152,
+    "en": "militant",
+    "kk": "[ˋmɪlətənt]",
+    "uk": "/ˈmɪlɪtənt/",
+    "zh": "adj. 好鬥的、激進的、交戰的；n. 激進分子、好鬥者",
+    "unit": 7,
+    "example": "He is now a militant atheist.",
+    "exampleZh": "現在他成了一個激進的無神論者。"
+  },
+  {
+    "id": 6153,
+    "en": "miller",
+    "kk": "[ˋmɪlɚ]",
+    "uk": "/ˈmɪlə(r)/",
+    "zh": "n. 磨坊主、碾磨工、經營或操作磨坊（尤指磨穀物磨坊）的人：磨坊主、磨粉工",
+    "unit": 7,
+    "example": "Miller professed himself dissatisfied with Broadway theatre.",
+    "exampleZh": "米勒表示他對百老匯劇院不滿。"
+  },
+  {
+    "id": 6154,
+    "en": "mimic",
+    "kk": "[ˋmɪmɪk]",
+    "uk": "/ˈmɪmɪk/",
+    "zh": "vt. 模仿、模擬、模擬（另一物質）的生理作用；n. 滑稽劇演員、善於模仿的人、會模擬的動物；adj. 模擬的、演習的",
+    "unit": 7,
+    "example": "At school I was a good mimic.",
+    "exampleZh": "上學時我是一個善於模仿的人。"
+  },
+  {
+    "id": 6155,
+    "en": "miniature",
+    "kk": "[ˋmɪniə͵tʃʊr]",
+    "uk": "/ˈmɪnɪtʃə(r)/",
+    "zh": "adj. 微型的、小型的、微縮的；n. 縮微模型、微型畫",
+    "unit": 7,
+    "example": "It looks like a miniature version of James Bond's car.",
+    "exampleZh": "它看上去像一輛小型的詹姆斯•邦德的汽車。"
+  },
+  {
+    "id": 6156,
+    "en": "missionary",
+    "kk": "[ˋmɪʃə͵nɛri]",
+    "uk": "/ˈmɪʃən(ə)ri/",
+    "zh": "n. 傳教士；adj. 傳教的、傳教士般的",
+    "unit": 7,
+    "example": "Tom is a missionary.",
+    "exampleZh": "湯姆是一名傳教士。"
+  },
+  {
+    "id": 6157,
+    "en": "modernization",
+    "kk": "[͵mɑdɚnəˋzeʃən]",
+    "uk": "/ˌmɒdənaɪˈzeɪʃ(ə)n/",
+    "zh": "n. 現代化、現代化的事物",
+    "unit": 7,
+    "example": "Modernization will bring a number of benefits to Chinese people.",
+    "exampleZh": "現代化將給中國人民帶來許多好處。"
+  },
+  {
+    "id": 6158,
+    "en": "mold",
+    "kk": "[mold]",
+    "uk": "/məʊld/",
+    "zh": "n. 模具、鑄模、模子、模製品；v. 澆鑄、塑造、用模子製作、影響",
+    "unit": 7,
+    "example": "He understood what the mold did.",
+    "exampleZh": "他明白了黴菌的作用。"
+  },
+  {
+    "id": 6159,
+    "en": "momentum",
+    "kk": "[moˋmɛntəm]",
+    "uk": "/məˈmentəm/",
+    "zh": "n. 動量、氣勢、動力、衝力",
+    "unit": 7,
+    "example": "The vehicle gained momentum as the road dipped.",
+    "exampleZh": "那輛車順著坡越跑衝力越大。"
+  },
+  {
+    "id": 6160,
+    "en": "monopoly",
+    "kk": "[məˋnɑpəli]",
+    "uk": "/məˈnɒpəli/",
+    "zh": "n. 獨佔、專賣、壟斷、壟斷權",
+    "unit": 7,
+    "example": "Had he succeeded, he would have acquired a monopoly.",
+    "exampleZh": "如果他那時成功了，他就會獲得壟斷地位。"
+  },
+  {
+    "id": 6161,
+    "en": "monotony",
+    "kk": "[məˋnɑtəni]",
+    "uk": "/məˈnɒtəni/",
+    "zh": "n. 單調、千篇一律、單調乏味",
+    "unit": 7,
+    "example": "Only Canary Wharf and a few towers elsewhere break the monotony.",
+    "exampleZh": "只有金絲雀碼頭和其他地方的一些高塔打破單調的局面。"
+  },
+  {
+    "id": 6162,
+    "en": "morale",
+    "kk": "[mɚˋæl]",
+    "uk": "/məˈrɑːl/",
+    "zh": "n. 士氣、鬥志、道德、精神面貌",
+    "unit": 7,
+    "example": "Many pilots are suffering from low morale.",
+    "exampleZh": "很多飛行員現在士氣低落。"
+  },
+  {
+    "id": 6163,
+    "en": "morality",
+    "kk": "[mɚˋæləti]",
+    "uk": "/məˈræləti/",
+    "zh": "n. 道德、倫理、寓意、品行",
+    "unit": 7,
+    "example": "Standards of morality seem to be dropping.",
+    "exampleZh": "道德標準似乎在下降。"
+  },
+  {
+    "id": 6164,
+    "en": "motto",
+    "kk": "[ˋmɑto]",
+    "uk": "/ˈmɒtəʊ/",
+    "zh": "n. 座右銘、格言、警句、格言主題",
+    "unit": 7,
+    "example": "'Live and let live.' That's my motto.",
+    "exampleZh": "“待人寬如待己。”這就是我的座右銘。"
+  },
+  {
+    "id": 6165,
+    "en": "mouthpiece",
+    "kk": "[ˋmaʊθ͵pis]",
+    "uk": "/ˈmaʊθpiːs/",
+    "zh": "n. 樂器的吹口、電話的送話口、代言人、喉舌",
+    "unit": 7,
+    "example": "He shouted into the mouthpiece.",
+    "exampleZh": "他衝著電話話筒大叫。"
+  },
+  {
+    "id": 6166,
+    "en": "mute",
+    "kk": "[mjut]",
+    "uk": "/mjuːt/",
+    "zh": "adj. 緘默的、沉默的、啞的、不會說話的；n. 弱音器、啞巴；vt. 消音、減音、減弱、緩和",
+    "unit": 7,
+    "example": "He was mute, distant, and indifferent.",
+    "exampleZh": "他緘默無言，對人疏遠而且冷漠。"
+  },
+  {
+    "id": 6167,
+    "en": "mythology",
+    "kk": "[məˋθɑlə͵dʒi]",
+    "uk": "/mɪˈθɒlədʒi/",
+    "zh": "n. 神話、神話故事、錯誤的信念、謬誤",
+    "unit": 7,
+    "example": "In Norse mythology the moon is personified as male.",
+    "exampleZh": "在斯堪的納維亞神話裡，月亮被賦予了男性身份。"
+  },
+  {
+    "id": 6168,
+    "en": "narrative",
+    "kk": "[ˋnærətɪv]",
+    "uk": "/ˈnærətɪv/",
+    "zh": "n. 記敘文、敘述、敘事技巧；adj. 敘述的、敘事體的",
+    "unit": 7,
+    "example": "The novel fails to achieve narrative continuity.",
+    "exampleZh": "這部小說敘述不連貫。"
+  },
+  {
+    "id": 6169,
+    "en": "narrator",
+    "kk": "[ˋnɛretɚ]",
+    "uk": "/nəˈreɪtə(r)/",
+    "zh": "n. 解說員、敘述者、敘事人、旁白員",
+    "unit": 7,
+    "example": "The novel has an omniscient narrator.",
+    "exampleZh": "這部小說有一個全知全能的敘述者。"
+  },
+  {
+    "id": 6170,
+    "en": "nationalism",
+    "kk": "[ˋnæʃənə͵lɪzəm]",
+    "uk": "/ˈnæʃ(ə)nəlɪzəm/",
+    "zh": "n. 民族主義、國家主義、民族自豪感、民族優越感",
+    "unit": 7,
+    "example": "I think we'd better leave the subject of nationalism.",
+    "exampleZh": "我想我們最好不要再談論民族主義這個話題了。"
+  },
+  {
+    "id": 6171,
+    "en": "naturalist",
+    "kk": "[ˋnætʃɚələst]",
+    "uk": "/ˈnætʃ(ə)rəlɪst/",
+    "zh": "n. 博物學家、博物學者、自然主義者、動物標本剝製者；adj. 自然主義的、自然的、博物學的、與博物學相關的",
+    "unit": 7,
+    "example": "He was a printer by trade and naturalist by avocation.",
+    "exampleZh": "他在印刷廠工作，同時是個博物學愛好者。"
+  },
+  {
+    "id": 6172,
+    "en": "navel",
+    "kk": "[ˋnevəl]",
+    "uk": "/ˈneɪvl/",
+    "zh": "n. 肚臍、中央、中心、[解剖]肚臍",
+    "unit": 7,
+    "example": "She dismisses the reform process as an exercise in collective navel-gazing.",
+    "exampleZh": "她對這場改革嗤之以鼻，認為只是場無實際行動的集體空想而已。"
+  },
+  {
+    "id": 6173,
+    "en": "navigation",
+    "kk": "[ˋnævəˋɡeʃən]",
+    "uk": "/ˌnævɪˈɡeɪʃ(ə)n/",
+    "zh": "n. 航海、航空、導航、航行",
+    "unit": 7,
+    "example": "Pack ice around Iceland was becoming a threat to navigation.",
+    "exampleZh": "冰島周圍的浮冰一度成為船舶航行的威脅。"
+  },
+  {
+    "id": 6174,
+    "en": "negotiation",
+    "kk": "[nɪ͵ɡoʃiˋeʃən]",
+    "uk": "/nɪˌɡəʊʃiˈeɪʃn/",
+    "zh": "n. 談判、協商、轉讓",
+    "unit": 7,
+    "example": "Prolonged negotiation was not desirable.",
+    "exampleZh": "拖得很長的談判是不受歡迎的。"
+  },
+  {
+    "id": 6175,
+    "en": "neon",
+    "kk": "[ˋniɑn]",
+    "uk": "/ˈniːɒn/",
+    "zh": "n. 氖、霓虹燈招牌；adj. 霓虹（燈）的、用霓虹燈製作的、霓虹色的、熒光般鮮豔的",
+    "unit": 7,
+    "example": "A neon sign flashed on and off above the door.",
+    "exampleZh": "門上方霓虹燈忽明忽暗地閃爍著。"
+  },
+  {
+    "id": 6176,
+    "en": "neutral",
+    "kk": "[ˋnutrəl]",
+    "uk": "/ˈnjuːtrəl/",
+    "zh": "adj. 中立的、中性的、不偏不倚的、不帶感情色彩的；n. 空擋、中立者、中立國、素淨色",
+    "unit": 7,
+    "example": "Let's meet on neutral territory.",
+    "exampleZh": "我們在中立地區會面吧。"
+  },
+  {
+    "id": 6177,
+    "en": "newlywed",
+    "kk": "[ˋnuli͵wɛd]",
+    "uk": "/ˈnjuːliwed/",
+    "zh": "adj. 新婚的、剛結婚的；n. 新結婚的人、新婚者、新婚夫婦",
+    "unit": 7,
+    "example": "My newlywed wife and I are deeply in love.",
+    "exampleZh": "我和我的新婚妻子彼此深愛著對方。"
+  },
+  {
+    "id": 6178,
+    "en": "newscaster",
+    "kk": "[ˋnuz͵kæstɚ]",
+    "uk": "/ˈnjuːzkɑːstə(r)/",
+    "zh": "n. 新聞廣播員、新聞播音員、新聞播報員",
+    "unit": 7,
+    "example": "Yes,I am,I'm a 38-year-old newscaster.",
+    "exampleZh": "不，我確實是。我是個三十八歲的新聞播音員。"
+  },
+  {
+    "id": 6179,
+    "en": "nomination",
+    "kk": "[͵nɑməˋneʃən]",
+    "uk": "/ˌnɒmɪˈneɪʃn/",
+    "zh": "n. 提名、任命、推薦、指定",
+    "unit": 7,
+    "example": "They opposed her nomination to the post of Deputy Director.",
+    "exampleZh": "他們反對任命她為副主任。"
+  },
+  {
+    "id": 6180,
+    "en": "nominee",
+    "kk": "[͵nɑməˋni]",
+    "uk": "/ˌnɒmɪˈniː/",
+    "zh": "n. 被提名人、被提名者、被任命者、名義持有人",
+    "unit": 7,
+    "example": "Tom is a nominee.",
+    "exampleZh": "湯姆是被提名者。"
+  },
+  {
+    "id": 6181,
+    "en": "norm",
+    "kk": "[nɔrm]",
+    "uk": "/nɔːm/",
+    "zh": "n. 基準、規範、定額、社會準則",
+    "unit": 7,
+    "example": "Non-smoking is now the norm in most workplaces.",
+    "exampleZh": "大多數工作場所現在都已禁止吸菸。"
+  },
+  {
+    "id": 6182,
+    "en": "nourishment",
+    "kk": "[ˋnɝɪʃmənt]",
+    "uk": "/ˈnʌrɪʃmənt/",
+    "zh": "n. 食物、營養品、養育、滋養",
+    "unit": 7,
+    "example": "Sugar gives quick relief to hunger but provides no lasting nourishment.",
+    "exampleZh": "糖能快速緩解飢餓感，但不提供持久的營養。"
+  },
+  {
+    "id": 6183,
+    "en": "nuisance",
+    "kk": "[ˋnusəns]",
+    "uk": "/ˈnjuːsns/",
+    "zh": "n. 討厭的人、騷擾行為、麻煩事、損害",
+    "unit": 7,
+    "example": "I'm a nuisance, I know.",
+    "exampleZh": "我是個討厭鬼，我知道。"
+  },
+  {
+    "id": 6184,
+    "en": "nurture",
+    "kk": "[ˋnɝtʃɚ]",
+    "uk": "/ˈnɜːtʃə(r)/",
+    "zh": "vt. 培養、促進、養育、培育；n. 養育、培育、教養、環境因素",
+    "unit": 7,
+    "example": "Parents should nurture kids' gifts and talents.",
+    "exampleZh": "家長要培養孩子的天賦和才能。"
+  },
+  {
+    "id": 6185,
+    "en": "nutrient",
+    "kk": "[ˋnutriənt]",
+    "uk": "/ˈnjuːtriənt/",
+    "zh": "n. 養分、營養物；adj. 營養的、滋養的",
+    "unit": 7,
+    "example": "The nutrient is quickly leached away.",
+    "exampleZh": "養分很快就被濾掉了。"
+  },
+  {
+    "id": 6186,
+    "en": "nutrition",
+    "kk": "[nuˋtrɪʃən]",
+    "uk": "/njuˈtrɪʃ(ə)n/",
+    "zh": "n. 營養、滋養、營養學、食物",
+    "unit": 7,
+    "example": "There are alternative sources of nutrition to animal meat.",
+    "exampleZh": "有能替代動物肉類的其他營養來源。"
+  },
+  {
+    "id": 6187,
+    "en": "obligation",
+    "kk": "[͵ɑbləˋɡeʃən]",
+    "uk": "/ˌɒblɪˈɡeɪʃ(ə)n/",
+    "zh": "n. 義務、責任、恩惠、人情債",
+    "unit": 7,
+    "example": "We have a moral obligation to protect the environment.",
+    "exampleZh": "我們有道義責任保護環境。"
+  },
+  {
+    "id": 6188,
+    "en": "offering",
+    "kk": "[ˋɔfɚɪŋ]",
+    "uk": "/ˈɒfərɪŋ/",
+    "zh": "n. 提供、供奉、捐獻物、供物；v. 提供、給予、提議、表示願意",
+    "unit": 7,
+    "example": "They wooed customers by offering low interest rates.",
+    "exampleZh": "他們透過提供低利率來爭取顧客。"
+  },
+  {
+    "id": 6189,
+    "en": "offspring",
+    "kk": "[ˋɔf͵sprɪŋ]",
+    "uk": "/ˈɒfsprɪŋ/",
+    "zh": "n. 子女、子孫、後代、幼崽",
+    "unit": 7,
+    "example": "Rabbits have many offspring.",
+    "exampleZh": "兔子有很多後代。"
+  },
+  {
+    "id": 6190,
+    "en": "opposition",
+    "kk": "[͵ɑpəˋzɪʃən]",
+    "uk": "/ˌɒpəˈzɪʃ(ə)n/",
+    "zh": "n. 反對、反抗、對手、競爭者",
+    "unit": 7,
+    "example": "There is bitter opposition from local business to the plan.",
+    "exampleZh": "有來自當地企業對此計劃的強烈反對。"
+  },
+  {
+    "id": 6191,
+    "en": "oppression",
+    "kk": "[əˋprɛʃən]",
+    "uk": "/əˈpreʃn/",
+    "zh": "n. 壓迫、壓制、壓迫手段、鬱悶",
+    "unit": 7,
+    "example": "Where there is oppression, there is resistance.",
+    "exampleZh": "哪裡有壓迫，哪裡就有反抗。"
+  },
+  {
+    "id": 6192,
+    "en": "option",
+    "kk": "[ˋɑpʃən]",
+    "uk": "/ˈɒpʃ(ə)n/",
+    "zh": "n. 選擇、選項、可選擇的事物、選擇權；v. 買賣（某物的）期權",
+    "unit": 7,
+    "example": "Personally, I prefer the second option.",
+    "exampleZh": "就我個人而言，我傾向第二種選擇。"
+  },
+  {
+    "id": 6193,
+    "en": "ordeal",
+    "kk": "[ɔrˋdil]",
+    "uk": "/ɔːˈdiːl/",
+    "zh": "n. 嚴峻考驗、折磨、磨難、神明裁判",
+    "unit": 7,
+    "example": "He spoke frankly about the ordeal.",
+    "exampleZh": "他直率地講出了苦難的經歷。"
+  },
+  {
+    "id": 6194,
+    "en": "orderly",
+    "kk": "[ˋɔrdɚli]",
+    "uk": "/ˈɔːdəli/",
+    "zh": "adj. 有條理的、整齊的、守秩序的、傳達命令的；n. 護理員、勤雜工、傳令兵、勤務兵；adv. 有秩序地",
+    "unit": 7,
+    "example": "It's a beautiful, clean and orderly city.",
+    "exampleZh": "這是一座美麗、乾淨、整齊的城市。"
+  },
+  {
+    "id": 6195,
+    "en": "organism",
+    "kk": "[ˋɔrɡə͵nɪzəm]",
+    "uk": "/ˈɔːɡənɪzəm/",
+    "zh": "n. 生物、有機體、微生物、有機組織",
+    "unit": 7,
+    "example": "Multiplication of cells leads to rapid growth of the organism.",
+    "exampleZh": "細胞的繁殖導致有機體的迅速生長。"
+  },
+  {
+    "id": 6196,
+    "en": "originality",
+    "kk": "[ɚ͵ɪdʒəˋnælɪti]",
+    "uk": "/əˌrɪdʒəˈnæləti/",
+    "zh": "n. 創造力、獨創性、創見、創舉",
+    "unit": 7,
+    "example": "The book is completely lacking in originality.",
+    "exampleZh": "這部書完全沒有創意。"
+  },
+  {
+    "id": 6197,
+    "en": "outbreak",
+    "kk": "[ˋaʊ͵tbrek]",
+    "uk": "/ˈaʊtbreɪk/",
+    "zh": "n. 爆發、暴動、突然發生",
+    "unit": 7,
+    "example": "The area was struck by an outbreak of cholera.",
+    "exampleZh": "那一地區爆發了霍亂。"
+  },
+  {
+    "id": 6198,
+    "en": "outfit",
+    "kk": "[ˋaʊt͵fɪt]",
+    "uk": "/ˈaʊtfɪt/",
+    "zh": "n. 全套服裝、全套裝備、機構；vt. 配備、供給服裝",
+    "unit": 7,
+    "example": "She was wearing an outfit she'd bought the previous day.",
+    "exampleZh": "她穿著前一天買的一套服裝。"
+  },
+  {
+    "id": 6199,
+    "en": "outing",
+    "kk": "[ˋaʊtɪŋ]",
+    "uk": "/ˈaʊtɪŋ/",
+    "zh": "n. 遠足、郊遊、短途旅遊、出門；v. 擊倒、擊昏、公開（知名人士）的同性戀身份、熄滅",
+    "unit": 7,
+    "example": "They are going for a spring outing.",
+    "exampleZh": "他們要去春遊。"
+  },
+  {
+    "id": 6200,
+    "en": "outlaw",
+    "kk": "[ˋaʊt͵lɔ]",
+    "uk": "/ˈaʊtlɔː/",
+    "zh": "n. 亡命之徒、不法之徒、逃犯、被剝奪法律權益和保護者；vt. 使非法、禁止、取締",
+    "unit": 7,
+    "example": "Jesse was an outlaw, a bandit, a criminal.",
+    "exampleZh": "傑西曾是個逃犯、土匪、罪犯。"
+  },
+  {
+    "id": 6201,
+    "en": "outlet",
+    "kk": "[ˋaʊt͵lɛt]",
+    "uk": "/ˈaʊtlet/",
+    "zh": "n. 出口、出路、商店、發洩方式",
+    "unit": 7,
+    "example": "Sport became the perfect outlet for his aggression.",
+    "exampleZh": "運動成為他攻擊性心理的最佳出路。"
+  },
+  {
+    "id": 6202,
+    "en": "outlook",
+    "kk": "[ˋaʊt͵lʊk]",
+    "uk": "/ˈaʊtlʊk/",
+    "zh": "n. 觀點、展望、風光、瞭望",
+    "unit": 7,
+    "example": "He had a practical outlook on life.",
+    "exampleZh": "他的人生觀很實際。"
+  },
+  {
+    "id": 6203,
+    "en": "outrage",
+    "kk": "[ˋaʊ͵tredʒ]",
+    "uk": "/ˈaʊtreɪdʒ/",
+    "zh": "n. 憤慨、憤怒、駭人聽聞的事、暴行；vt. 使憤怒、激怒、踐踏、凌辱",
+    "unit": 7,
+    "example": "Environmentalists have expressed outrage at the ruling.",
+    "exampleZh": "環境保護主義者對這一裁決表示憤慨。"
+  },
+  {
+    "id": 6204,
+    "en": "outset",
+    "kk": "[ˋaʊt͵sɛt]",
+    "uk": "/ˈaʊtset/",
+    "zh": "n. 最初、開始、開端",
+    "unit": 7,
+    "example": "We knew it from the outset.",
+    "exampleZh": "我們從一開始就知道這一點。"
+  },
+  {
+    "id": 6205,
+    "en": "overhead",
+    "kk": "[ˋovɚˋhɛd]",
+    "uk": "/ˌəʊvəˈhed/",
+    "zh": "adv. 在頭頂上方、在空中；adj. 頭頂上的、在空中的、高架的、頂置式的；n. 經常開支、營運費用、透明幻燈片、頂艙",
+    "unit": 7,
+    "example": "An eagle circled high overhead.",
+    "exampleZh": "一隻鷹在頭頂上空盤旋。"
+  },
+  {
+    "id": 6206,
+    "en": "overlap",
+    "kk": "[ˋovɚ͵læp]",
+    "uk": "/ˌəʊvəˈlæp/",
+    "zh": "v. 互搭、復疊、部分地重疊、部分相同；n. 重疊部分、重疊量、重疊時間、交接時期",
+    "unit": 7,
+    "example": "A fish's scales overlap each other.",
+    "exampleZh": "魚鱗一片片上下交疊。"
+  },
+  {
+    "id": 6207,
+    "en": "overturn",
+    "kk": "[ˋovɚ͵tɝn]",
+    "uk": "/ˌəʊvəˈtɜːn/",
+    "zh": "vt. 翻轉、傾覆、翻倒、推翻；n. 周轉、流通、顛覆、革命",
+    "unit": 7,
+    "example": "The dishes are overturned.",
+    "exampleZh": "盤子都打翻了。"
+  },
+  {
+    "id": 6208,
+    "en": "pact",
+    "kk": "[pækt]",
+    "uk": "/pækt/",
+    "zh": "n. 契約、協定、條約、協議",
+    "unit": 7,
+    "example": "Last month he signed a new non-aggression pact with Germany.",
+    "exampleZh": "上個月他與德國簽署了一份新的互不侵犯條約。"
+  },
+  {
+    "id": 6209,
+    "en": "pamphlet",
+    "kk": "[ˋpæmflət]",
+    "uk": "/ˈpæmflət/",
+    "zh": "n. 小冊子、活頁；v. 向……散發小冊子",
+    "unit": 7,
+    "example": "Ask a pamphlet from the Centre for European Reform (CER).",
+    "exampleZh": "向歐洲改革中心（CER）要一本小冊子。"
+  },
+  {
+    "id": 6210,
+    "en": "parliament",
+    "kk": "[ˋpɑrləmənt]",
+    "uk": "/ˈpɑːləmənt/",
+    "zh": "n. 議會、國會、英國議會（包括下議院和上議院）、一屆議會",
+    "unit": 7,
+    "example": "They bulldozed the tax through Parliament.",
+    "exampleZh": "他們使稅收提案在議會強行透過。"
+  },
+  {
+    "id": 6211,
+    "en": "pedestrian",
+    "kk": "[pəˋdɛstriən]",
+    "uk": "/pəˈdestriən/",
+    "zh": "n. 行人、步行者；adj. 平淡無奇的、乏味的、行人的",
+    "unit": 7,
+    "example": "Pedestrian accidents are down by 5%.",
+    "exampleZh": "行人受傷事故下降了5%。"
+  },
+  {
+    "id": 6212,
+    "en": "peninsula",
+    "kk": "[pəˋnɪnsələ]",
+    "uk": "/pəˈnɪnsjələ/",
+    "zh": "n. 半島",
+    "unit": 7,
+    "example": "The boat was anchored off the northern coast of the peninsula.",
+    "exampleZh": "那隻船停泊在了離半島北海岸不遠處。"
+  },
+  {
+    "id": 6213,
+    "en": "pension",
+    "kk": "[ˋpɛnʃən]",
+    "uk": "/ˈpenʃ(ə)n/",
+    "zh": "n. 退休金、養老金；vt. 向……發放養老金使其退休",
+    "unit": 7,
+    "example": "She's got nothing beyond her state pension.",
+    "exampleZh": "除了政府發的養老金外，她什麼都沒有。"
+  },
+  {
+    "id": 6214,
+    "en": "perception",
+    "kk": "[pɚˋsɛpʃən]",
+    "uk": "/pəˈsepʃ(ə)n/",
+    "zh": "n. 感知、察覺、認知、看法",
+    "unit": 7,
+    "example": "She showed great perception in her assessment of the family situation.",
+    "exampleZh": "她對家庭狀況的分析顯示出敏銳的洞察力。"
+  },
+  {
+    "id": 6215,
+    "en": "perseverance",
+    "kk": "[͵pɝsəˋvɪrəns]",
+    "uk": "/ˌpɜːsəˈvɪərəns/",
+    "zh": "n. 堅持不懈、堅忍不拔、毅力、不屈不撓的精神",
+    "unit": 7,
+    "example": "Undeniably, perseverance can help us succeed.",
+    "exampleZh": "不可否認，堅持不懈可以幫助我們成功。"
+  },
+  {
+    "id": 6216,
+    "en": "persistence",
+    "kk": "[pɚˋsɪstəns]",
+    "uk": "/pəˈsɪstəns/",
+    "zh": "n. 堅持、固執、持續、繼續存在",
+    "unit": 7,
+    "example": "Skill comes only with practice, patience, and persistence.",
+    "exampleZh": "只有透過練習、耐心和堅持不懈才能獲得技能。"
+  },
+  {
+    "id": 6217,
+    "en": "perspective",
+    "kk": "[pɚˋspɛktɪv]",
+    "uk": "/pəˈspektɪv/",
+    "zh": "n. 視角、觀點、透視（畫）法、透視關係；adj. 透視的",
+    "unit": 7,
+    "example": "I let things get out of perspective.",
+    "exampleZh": "我沒能正確地看待事物。"
+  },
+  {
+    "id": 6218,
+    "en": "pesticide",
+    "kk": "[ˋpɛstə͵saɪd]",
+    "uk": "/ˈpestɪsaɪd/",
+    "zh": "n. 殺蟲劑、農藥",
+    "unit": 7,
+    "example": "Samples of the water contained pesticide.",
+    "exampleZh": "水樣中含有殺蟲劑。"
+  },
+  {
+    "id": 6219,
+    "en": "petroleum",
+    "kk": "[pəˋtroliəm]",
+    "uk": "/pəˈtrəʊliəm/",
+    "zh": "n. 石油、原油",
+    "unit": 7,
+    "example": "We ought to and can produce more petroleum.",
+    "exampleZh": "我們應該並且能夠生產更多的石油。"
+  },
+  {
+    "id": 6220,
+    "en": "pharmacist",
+    "kk": "[ˋfɑrməsɪst]",
+    "uk": "/ˈfɑːməsɪst/",
+    "zh": "n. 配藥者、藥劑師、藥師",
+    "unit": 7,
+    "example": "The pharmacist will make up your prescription.",
+    "exampleZh": "藥劑師會給你依處方配藥。"
+  },
+  {
+    "id": 6221,
+    "en": "pharmacy",
+    "kk": "[ˋfɑrməsi]",
+    "uk": "/ˈfɑːməsi/",
+    "zh": "n. 製藥業、藥房、藥店、配藥室",
+    "unit": 7,
+    "example": "Pick up the medicine from the pharmacy.",
+    "exampleZh": "從藥房取藥。"
+  },
+  {
+    "id": 6222,
+    "en": "phase",
+    "kk": "[fez]",
+    "uk": "/feɪz/",
+    "zh": "n. 階段、時期；vt. 分階段進行",
+    "unit": 7,
+    "example": "The investigation has entered a new phase.",
+    "exampleZh": "調查已進入新階段。"
+  },
+  {
+    "id": 6223,
+    "en": "piety",
+    "kk": "[ˋpaɪəti]",
+    "uk": "/ˈpaɪəti/",
+    "zh": "n. 虔誠、孝順、虔敬、虔誠信念",
+    "unit": 7,
+    "example": "Is this what passes for piety?",
+    "exampleZh": "這就是所謂的虔誠嗎？"
+  },
+  {
+    "id": 6224,
+    "en": "pipeline",
+    "kk": "[ˋpaɪp͵laɪn]",
+    "uk": "/ˈpaɪplaɪn/",
+    "zh": "n. 導管、輸油管、輸送管道、渠道；v. 用管道輸送、運用流水線技術設計",
+    "unit": 7,
+    "example": "They made a pipeline blow up test.",
+    "exampleZh": "他們做了一個管線爆破試驗。"
+  },
+  {
+    "id": 6225,
+    "en": "pitcher",
+    "kk": "[ˋpɪtʃɚ]",
+    "uk": "/ˈpɪtʃə(r)/",
+    "zh": "n. 大水罐、一壺的量、投手、投手位置",
+    "unit": 7,
+    "example": "The Marlin pitcher struck out the first batter he faced.",
+    "exampleZh": "那位馬林投手使他面對的第一個擊球員三擊不中而出局。"
+  },
+  {
+    "id": 6226,
+    "en": "plight",
+    "kk": "[plaɪt]",
+    "uk": "/plaɪt/",
+    "zh": "n. 境況、困境、窘境、誓約；v. 宣誓、保證",
+    "unit": 7,
+    "example": "We were deeply moved by her plight.",
+    "exampleZh": "她的困境深深地打動了我們。"
+  },
+  {
+    "id": 6227,
+    "en": "pneumonia",
+    "kk": "[nuˋmonjə]",
+    "uk": "/njuːˈməʊniə/",
+    "zh": "n. 肺炎",
+    "unit": 7,
+    "example": "She nearly died of pneumonia.",
+    "exampleZh": "她差點死於肺炎。"
+  },
+  {
+    "id": 6228,
+    "en": "poacher",
+    "kk": "[ˋpotʃɚ]",
+    "uk": "/ˈpəʊtʃə(r)/",
+    "zh": "n. 偷獵者、盜獵者、荷包蛋鍋",
+    "unit": 7,
+    "example": "Tips may be phoned anonymously to1-800-POACHER.",
+    "exampleZh": "舉報可以匿名打電話1-800-POACHER。"
+  },
+  {
+    "id": 6229,
+    "en": "pollutant",
+    "kk": "[pəˋlutənt]",
+    "uk": "/pəˈluːtənt/",
+    "zh": "n. 污染源、汙染物",
+    "unit": 7,
+    "example": "Nitrogen dioxide is a pollutant emitted by automobiles.",
+    "exampleZh": "二氧化氮是汽車排放的一種汙染物。"
+  },
+  {
+    "id": 6230,
+    "en": "posture",
+    "kk": "[ˋpɑstʃɚ]",
+    "uk": "/ˈpɒstʃə(r)/",
+    "zh": "n. 姿勢、姿態、立場；vi. 擺出姿態、裝腔作勢",
+    "unit": 7,
+    "example": "Back pains can be the result of bad posture.",
+    "exampleZh": "腰背疼可能是不良姿勢造成的。"
+  },
+  {
+    "id": 6231,
+    "en": "precedent",
+    "kk": "[ˋprɛsɪdənt]",
+    "uk": "/ˈpresɪdənt/",
+    "zh": "n. 先例、慣例、前例、判例；adj. 在先的、前面的",
+    "unit": 7,
+    "example": "They were determined to break from precedent.",
+    "exampleZh": "他們決心打破先例。"
+  },
+  {
+    "id": 6232,
+    "en": "precision",
+    "kk": "[priˋsɪʒən]",
+    "uk": "/prɪˈsɪʒ(ə)n/",
+    "zh": "n. 精確、準確、清晰、嚴謹；adj. 精密的、精確的、要求技術精確的",
+    "unit": 7,
+    "example": "He lacked profundity and analytical precision.",
+    "exampleZh": "他缺乏深度和分析的精確性。"
+  },
+  {
+    "id": 6233,
+    "en": "predecessor",
+    "kk": "[ˋprɛdə͵sɛsɚ]",
+    "uk": "/ˈpriːdəsesə(r)/",
+    "zh": "n. 前任、祖先、前輩、原有事物",
+    "unit": 7,
+    "example": "The new governor is an improvement on his predecessor.",
+    "exampleZh": "新任總督勝過他的前任。"
+  },
+  {
+    "id": 6234,
+    "en": "prediction",
+    "kk": "[priˋdɪkʃən]",
+    "uk": "/prɪˈdɪkʃ(ə)n/",
+    "zh": "n. 預言、預報、預言之事、預報之事",
+    "unit": 7,
+    "example": "He was unwilling to make a prediction for the coming year.",
+    "exampleZh": "他不願對來年作出預言。"
+  },
+  {
+    "id": 6235,
+    "en": "preface",
+    "kk": "[ˋprɛfəs]",
+    "uk": "/ˈprefəs/",
+    "zh": "n. 序言、前言、開端；vt. 為（書）作序、以……開始",
+    "unit": 7,
+    "example": "This book has a preface written by the author.",
+    "exampleZh": "這本書有作者寫的序言。"
+  },
+  {
+    "id": 6236,
+    "en": "prejudice",
+    "kk": "[ˋprɛdʒədɪs]",
+    "uk": "/ˈpredʒədɪs/",
+    "zh": "n. 偏見、成見、損害；vt. 使有偏見、損害",
+    "unit": 7,
+    "example": "I try to rise above prejudice.",
+    "exampleZh": "我盡力擺脫偏見。"
+  },
+  {
+    "id": 6237,
+    "en": "preliminary",
+    "kk": "[prɪˋlɪmə͵nɛri]",
+    "uk": "/prɪˈlɪmɪnəri/",
+    "zh": "adj. 初步的、預備的；n. 初步行動、準備工作、預賽、預試",
+    "unit": 7,
+    "example": "The doctors have successfully concluded preliminary tests.",
+    "exampleZh": "醫生們已成功完成了初步化驗。"
+  },
+  {
+    "id": 6238,
+    "en": "premier",
+    "kk": "[prɛˋmɪr]",
+    "uk": "/ˈpremiə(r)/",
+    "zh": "adj. 首要的、最好的、最早的；n. 總理、首相、省總理、地方總理",
+    "unit": 7,
+    "example": "The film premieres on Monday.",
+    "exampleZh": "這部電影將於週一首映。"
+  },
+  {
+    "id": 6239,
+    "en": "prescription",
+    "kk": "[prəˋskrɪpʃən]",
+    "uk": "/prɪˈskrɪpʃn/",
+    "zh": "n. 指示、法規、處方、藥方；adj. 憑處方方可購買的",
+    "unit": 7,
+    "example": "Nicola got her prescription for strep.",
+    "exampleZh": "妮古拉拿了治療鏈球菌性咽喉炎的處方藥。"
+  },
+  {
+    "id": 6240,
+    "en": "presidency",
+    "kk": "[ˋprɛzədənsi]",
+    "uk": "/ˈprezɪdənsi/",
+    "zh": "n. 公司總裁(大學校長等)的職位、總統（主席，校長）的職位、（牧師或司鐸）聖餐主持、監督",
+    "unit": 7,
+    "example": "He is a candidate for the presidency of the organization.",
+    "exampleZh": "他是該組織最高職位候選人。"
+  },
+  {
+    "id": 6241,
+    "en": "prestige",
+    "kk": "[prɛˋstiʒ]",
+    "uk": "/preˈstiːʒ/",
+    "zh": "n. 名望、聲望、威信；adj. 受尊重的、令人敬仰的、貴重的、氣派的",
+    "unit": 7,
+    "example": "He is a scientist of high prestige.",
+    "exampleZh": "他是一位聲望很高的科學家。"
+  },
+  {
+    "id": 6242,
+    "en": "preventive",
+    "kk": "[prɪˋvɛntɪv]",
+    "uk": "/prɪˈventɪv/",
+    "zh": "adj. 防備的、預防（性）的；n. 預防藥、預防療法",
+    "unit": 7,
+    "example": "We must take preventive measures to reduce crime in the area.",
+    "exampleZh": "我們必須採取預防措施來減少這個地區的犯罪。"
+  },
+  {
+    "id": 6243,
+    "en": "productivity",
+    "kk": "[͵prodəkˋtɪvəti]",
+    "uk": "/ˌprɒdʌkˈtɪvəti/",
+    "zh": "n. 生產力、生產率",
+    "unit": 7,
+    "example": "We need to increase productivity.",
+    "exampleZh": "我們需要提高生產力。"
+  },
+  {
+    "id": 6244,
+    "en": "proficiency",
+    "kk": "[prəˋfɪʃənsi]",
+    "uk": "/prəˈfɪʃ(ə)nsi/",
+    "zh": "n. 精通、熟練",
+    "unit": 7,
+    "example": "He has a high proficiency in several languages.",
+    "exampleZh": "他精通多種語言。"
+  },
+  {
+    "id": 6245,
+    "en": "progressive",
+    "kk": "[prəˋɡrɛsɪv]",
+    "uk": "/prəˈɡresɪv/",
+    "zh": "adj. 進步的、先進的、逐步發生的、進行時的；n. 進步分子、改革派人士",
+    "unit": 7,
+    "example": "Willan was able to point to the progressive changes he had already introduced.",
+    "exampleZh": "威蘭能夠指出他已經帶來的有進步意義的變化。"
+  },
+  {
+    "id": 6246,
+    "en": "prohibition",
+    "kk": "[͵proəˋbɪʃən]",
+    "uk": "/ˌprəʊɪˈbɪʃ(ə)n/",
+    "zh": "n. 禁止、禁令、禁律、訴訟中止令",
+    "unit": 7,
+    "example": "The park has a prohibition against flower-picking.",
+    "exampleZh": "公園裡禁止摘花。"
+  },
+  {
+    "id": 6247,
+    "en": "projection",
+    "kk": "[prəˋdʒɛkʃən]",
+    "uk": "/prəˈdʒekʃ(ə)n/",
+    "zh": "n. 規劃、投影、投射、預測",
+    "unit": 7,
+    "example": "The quarterly projection estimates substantial increases in global export sales.",
+    "exampleZh": "季度預測估計全球出口銷售額將有大幅增長。"
+  },
+  {
+    "id": 6248,
+    "en": "propaganda",
+    "kk": "[͵prɑpəˋɡændə]",
+    "uk": "/ˌprɒpəˈɡændə/",
+    "zh": "n. 宣傳、鼓吹、傳信部",
+    "unit": 7,
+    "example": "The news reports were being discounted as propaganda.",
+    "exampleZh": "人們認為這些新聞報道不過是為了宣傳，不可全信。"
+  },
+  {
+    "id": 6249,
+    "en": "propeller",
+    "kk": "[prəˋpɛlɚ]",
+    "uk": "/prəˈpelə(r)/",
+    "zh": "n. 螺旋槳、推進器",
+    "unit": 7,
+    "example": "The rope fouled the propeller.",
+    "exampleZh": "繩索纏住了螺旋槳。"
+  },
+  {
+    "id": 6250,
+    "en": "prose",
+    "kk": "[proz]",
+    "uk": "/prəʊz/",
+    "zh": "n. 散文、白話文、一段散文；v. 冗長乏味地說、把……寫成散文、把……改寫成散文、寫散文；adj. 散文的、散文式的、平凡的、乏味的",
+    "unit": 7,
+    "example": "Shute's prose is stark and chillingly unsentimental.",
+    "exampleZh": "舒特的散文刻板而冷峻。"
+  },
+  {
+    "id": 6251,
+    "en": "prosecution",
+    "kk": "[͵prɑsəˋkjuʃən]",
+    "uk": "/ˌprɒsɪˈkjuːʃ(ə)n/",
+    "zh": "n. 起訴、告發、訴訟、原告",
+    "unit": 7,
+    "example": "Workers worked around the clock to re-lay the damaged railway track.",
+    "exampleZh": "工人們日以繼夜地重新鋪設受損的鐵軌。"
+  },
+  {
+    "id": 6252,
+    "en": "provincial",
+    "kk": "[prəˋvɪnʃəl]",
+    "uk": "/prəˈvɪnʃ(ə)l/",
+    "zh": "adj. 省的、地方的、偏狹的；n. 外省人、地方居民",
+    "unit": 7,
+    "example": "Power has been handed over to provincial and regional assemblies.",
+    "exampleZh": "權力已移交給省和地區議會。"
+  },
+  {
+    "id": 6253,
+    "en": "prowl",
+    "kk": "[praʊl]",
+    "uk": "/praʊl/",
+    "zh": "vi. 四處覓食、潛行、徘徊、搜尋；n. 徘徊、潛行、悄悄踱步、ontheprowl：正在潛行/徘徊",
+    "unit": 7,
+    "example": "There was a fox on the prowl near the chickens.",
+    "exampleZh": "有一隻狐狸在雞群附近徘徊。"
+  },
+  {
+    "id": 6254,
+    "en": "purity",
+    "kk": "[ˋpjʊrəti]",
+    "uk": "/ˈpjʊərəti/",
+    "zh": "n. 純淨、清潔、純潔、潔淨",
+    "unit": 7,
+    "example": "The water is regularly tested for purity.",
+    "exampleZh": "水的純度定期受到檢測。"
+  },
+  {
+    "id": 6255,
+    "en": "qualification",
+    "kk": "[͵kwɑləfəˋkeʃən]",
+    "uk": "/ˌkwɒlɪfɪˈkeɪʃ(ə)n/",
+    "zh": "n. 資格、能力、學歷、資歷",
+    "unit": 7,
+    "example": "She has met the minimum educational requirements for qualification.",
+    "exampleZh": "她已達到了資格取得所需的最低教育水準。"
+  },
+  {
+    "id": 6256,
+    "en": "query",
+    "kk": "[ˋkwiri]",
+    "uk": "/ˈkwɪəri/",
+    "zh": "n. 詢問、疑問、問號；vt. 質問、質疑、對……表示疑問、詢問",
+    "unit": 7,
+    "example": "Query plans will probably change.",
+    "exampleZh": "查詢計劃可能會更改。"
+  },
+  {
+    "id": 6257,
+    "en": "questionnaire",
+    "kk": "[͵kwɛstʃəˋnɛr]",
+    "uk": "/ˌkwestʃəˈneə(r)/",
+    "zh": "n. 問卷、意見調查表、調查表",
+    "unit": 7,
+    "example": "2 000 shoppers completed our questionnaire.",
+    "exampleZh": "2 000名顧客填寫了我們的調查表。"
+  },
+  {
+    "id": 6258,
+    "en": "racism",
+    "kk": "[ˋre͵sɪzəm]",
+    "uk": "/ˈreɪsɪzəm/",
+    "zh": "n. 種族主義、種族歧視、種族偏見、種族迫害",
+    "unit": 7,
+    "example": "Racism has been a scar on the game.",
+    "exampleZh": "種族主義行為給這項運動抹了黑。"
+  },
+  {
+    "id": 6259,
+    "en": "radiant",
+    "kk": "[ˋre͵diənt]",
+    "uk": "/ˈreɪdiənt/",
+    "zh": "adj. 容光煥發的、喜悅的、明亮的、燦爛的；n. 輻射源、輻射點",
+    "unit": 7,
+    "example": "She was radiant with health.",
+    "exampleZh": "她身體健康，容光煥發。"
+  },
+  {
+    "id": 6260,
+    "en": "radiation",
+    "kk": "[͵rediˋeʃən]",
+    "uk": "/ˌreɪdiˈeɪʃn/",
+    "zh": "n. 放射線、輻射、輻射的熱、放射療法",
+    "unit": 7,
+    "example": "The sun's radiation penetrates the skin.",
+    "exampleZh": "太陽的輻射能透進皮膚。"
+  },
+  {
+    "id": 6261,
+    "en": "radiator",
+    "kk": "[ˋredi͵etɚ]",
+    "uk": "/ˈreɪdieɪtə(r)/",
+    "zh": "n. 散熱器、暖氣片、燃油爐、電熱器",
+    "unit": 7,
+    "example": "Wade placed his chilled hands on the radiator and warmed them.",
+    "exampleZh": "韋德把他冰冷的雙手放到散熱器上取暖。"
+  },
+  {
+    "id": 6262,
+    "en": "radical",
+    "kk": "[ˋrædəkəl]",
+    "uk": "/ˈrædɪk(ə)l/",
+    "zh": "adj. 根本的、徹底的、激進的、極端的；n. 激進分子、遊離基、自由基、詞根",
+    "unit": 7,
+    "example": "It was a radical departure from tradition.",
+    "exampleZh": "這從根本上違背了傳統。"
+  },
+  {
+    "id": 6263,
+    "en": "raft",
+    "kk": "[ræft]",
+    "uk": "/rɑːft/",
+    "zh": "n. 木筏、橡皮艇；v. 乘坐木筏、用木筏運送",
+    "unit": 7,
+    "example": "Several logs had been lashed together to make a raft.",
+    "exampleZh": "幾根原木捆紮在一起做成了木筏。"
+  },
+  {
+    "id": 6264,
+    "en": "raid",
+    "kk": "[red]",
+    "uk": "/reɪd/",
+    "zh": "n. 突襲、襲擊、突擊檢查；vt. 突然襲擊、突襲、偷襲、突擊搜捕",
+    "unit": 7,
+    "example": "The rebels attempted a surprise raid on a military camp.",
+    "exampleZh": "反叛者們曾經試圖對兵營發動一場突然襲擊。"
+  },
+  {
+    "id": 6265,
+    "en": "ransom",
+    "kk": "[ˋrænsəm]",
+    "uk": "/ˈrænsəm/",
+    "zh": "n. 贖金、釋放；vt. 贖出、贖回、把持（俘虜，監禁者）索要贖金、擄（人）索贖",
+    "unit": 7,
+    "example": "Her kidnapper extorted a $175,000 ransom for her release.",
+    "exampleZh": "綁架者勒索175,000美元作為釋放她的贖金。"
+  },
+  {
+    "id": 6266,
+    "en": "rash",
+    "kk": "[ræʃ]",
+    "uk": "/ræʃ/",
+    "zh": "n. 皮疹、疹子、一連串；adj. 輕率的、魯莽的",
+    "unit": 7,
+    "example": "Has your rash cleared up yet?",
+    "exampleZh": "你的皮疹消失了嗎？"
+  },
+  {
+    "id": 6267,
+    "en": "ravage",
+    "kk": "[ˋrævɪdʒ]",
+    "uk": "/ˈrævɪdʒ/",
+    "zh": "vt. 毀壞、破壞、劫掠；n. 蹂躪、大破壞",
+    "unit": 7,
+    "example": "Every ravage is a kind of mature.",
+    "exampleZh": "每一種創傷，都是一種成熟。"
+  },
+  {
+    "id": 6268,
+    "en": "realism",
+    "kk": "[ˋriəlɪzəm]",
+    "uk": "/ˈriːəlɪzəm/",
+    "zh": "n. 現實性、現實主義、務實作風、實事求是",
+    "unit": 7,
+    "example": "Both realism and naturalism are mimetic systems or practices of representation.",
+    "exampleZh": "現實主義和自然主義都是模仿的做法或者表現的習慣而已。"
+  },
+  {
+    "id": 6269,
+    "en": "realization",
+    "kk": "[ˋriləˋzeʃən]",
+    "uk": "/ˌriːəlaɪˈzeɪʃn; ˌrɪəlaɪˈzeɪʃn/",
+    "zh": "n. 領悟、體現、認識、實現",
+    "unit": 7,
+    "example": "It was the realization of his greatest ambition.",
+    "exampleZh": "這就實現了他的宏偉抱負。"
+  },
+  {
+    "id": 6270,
+    "en": "rebellion",
+    "kk": "[rɪˋbɛljən]",
+    "uk": "/rɪˈbeljən/",
+    "zh": "n. 反叛、反抗、叛亂、不服從",
+    "unit": 7,
+    "example": "Women are waging a quiet rebellion against the traditional roles their mothers have played.",
+    "exampleZh": "婦女們正悄悄地發動一場反抗她們的母親們所扮演的傳統角色的運動。"
+  },
+  {
+    "id": 6271,
+    "en": "recession",
+    "kk": "[rɪˋsɛʃən]",
+    "uk": "/rɪˈseʃ(ə)n/",
+    "zh": "n. 衰退、退後、撤回、退行",
+    "unit": 7,
+    "example": "The economy is in recession.",
+    "exampleZh": "經濟處於衰退之中。"
+  },
+  {
+    "id": 6272,
+    "en": "recipient",
+    "kk": "[rəˋsɪpiənt]",
+    "uk": "/rɪˈsɪpiənt/",
+    "zh": "n. 接受者、領受者、接收器、容器；adj. 接受的、容納的",
+    "unit": 7,
+    "example": "Please confirm that the name and email of the recipient are correct.",
+    "exampleZh": "請確認收件人的姓名和電子郵件地址無誤。"
+  },
+  {
+    "id": 6273,
+    "en": "recommendation",
+    "kk": "[͵rɛkəmənˋdeʃən]",
+    "uk": "/ˌrekəmenˈdeɪʃn/",
+    "zh": "n. 推薦、推薦信、正式建議、提議",
+    "unit": 7,
+    "example": "I got the job on the strength of your recommendation.",
+    "exampleZh": "由於您的推薦，我得到了那份工作。"
+  },
+  {
+    "id": 6274,
+    "en": "recruit",
+    "kk": "[rəˋkrut]",
+    "uk": "/rɪˈkruːt/",
+    "zh": "vt. 招聘、招收、招募、說服；n. 新兵、新成員",
+    "unit": 7,
+    "example": "He is hoping to recruit a chairman from outside the company.",
+    "exampleZh": "他在希望從公司之外招聘一位董事長。"
+  },
+  {
+    "id": 6275,
+    "en": "refinement",
+    "kk": "[rəˋfaɪnmənt]",
+    "uk": "/rɪˈfaɪnmənt/",
+    "zh": "n. 優雅、高雅、提煉、精煉",
+    "unit": 7,
+    "example": "Her mother is a woman with great refinement.",
+    "exampleZh": "她母親是一個非常文雅的女人。"
+  },
+  {
+    "id": 6276,
+    "en": "refreshment",
+    "kk": "[rəˋfrɛʃmənt]",
+    "uk": "/rɪˈfreʃmənt/",
+    "zh": "n. 茶點、精力恢復、點心、食物和飲料",
+    "unit": 7,
+    "example": "Lunch and refreshments will be provided.",
+    "exampleZh": "將提供午餐和茶點。"
+  },
+  {
+    "id": 6277,
+    "en": "refund",
+    "kk": "[rɪˋfʌnd]",
+    "uk": "/ˈriːfʌnd/",
+    "zh": "n. 退款、償還金額；vt. 償還、退還、退款給、還錢給",
+    "unit": 7,
+    "example": "The store manager promptly agreed to issue a full refund for the item.",
+    "exampleZh": "店經理爽快地同意為該商品辦理全額退款。"
+  },
+  {
+    "id": 6278,
+    "en": "regime",
+    "kk": "[rəˋʒim]",
+    "uk": "/reɪˈʒiːm/",
+    "zh": "n. 政體、政權、政府、管理制度",
+    "unit": 7,
+    "example": "No regime is eternal.",
+    "exampleZh": "沒有哪個政權是永遠的。"
+  },
+  {
+    "id": 6279,
+    "en": "rehearsal",
+    "kk": "[rɪˋhɝsəl]",
+    "uk": "/rɪˈhɜːs(ə)l/",
+    "zh": "n. 排練、試演、練習、排演",
+    "unit": 7,
+    "example": "We only had six days of rehearsal.",
+    "exampleZh": "我們只有六天的排練時間。"
+  },
+  {
+    "id": 6280,
+    "en": "rein",
+    "kk": "[ren]",
+    "uk": "/reɪn/",
+    "zh": "n. 韁繩、安全繩套、控制、主宰；v. 勒、用韁繩勒（馬）使停步或放慢步子、控制住",
+    "unit": 7,
+    "example": "Cord held the reins while the stallion tugged and snorted.",
+    "exampleZh": "當那匹牡馬使勁掙扎，打著響鼻的時候，科德勒緊了韁繩。"
+  },
+  {
+    "id": 6281,
+    "en": "relay",
+    "kk": "[ˋri͵le]",
+    "uk": "/ˈriːleɪ/",
+    "zh": "vt. 傳遞、傳達、中繼轉發、轉播；n. 接力賽、接班的人、輪換者、傳遞",
+    "unit": 7,
+    "example": "They raced to a thrilling victory in the relay.",
+    "exampleZh": "他們在接力賽中取得了激動人心的勝利。"
+  },
+  {
+    "id": 6282,
+    "en": "reliance",
+    "kk": "[rɪˋlaɪəns]",
+    "uk": "/rɪˈlaɪəns/",
+    "zh": "n. 信任、依賴、依靠、被依賴的人",
+    "unit": 7,
+    "example": "People learned self-reliance because they had to.",
+    "exampleZh": "人們學會了自立因為他們不得不這樣做。"
+  },
+  {
+    "id": 6283,
+    "en": "relish",
+    "kk": "[ˋrɛlɪʃ]",
+    "uk": "/ˈrelɪʃ/",
+    "zh": "n. 享受、樂趣、喜歡、喜愛；vt. 享受、喜歡、憧憬、期盼",
+    "unit": 7,
+    "example": "I relish the challenge of doing jobs that others turn down.",
+    "exampleZh": "我喜歡接受挑戰做別人拒絕做的工作。"
+  },
+  {
+    "id": 6284,
+    "en": "remainder",
+    "kk": "[rɪˋmendɚ]",
+    "uk": "/rɪˈmeɪndə(r)/",
+    "zh": "n. 剩餘物、其餘的人、餘數、剩餘部分；v. 削價出售；adj. 剩餘的、殘餘的",
+    "unit": 7,
+    "example": "Only 5.9 percent of the area is now covered in trees. Most of the remainder is farmland.",
+    "exampleZh": "該地區現在的樹木覆蓋率僅為5.9％。剩餘部分大多是農田。"
+  },
+  {
+    "id": 6285,
+    "en": "removal",
+    "kk": "[rɪˋmuvəl]",
+    "uk": "/rɪˈmuːv(ə)l/",
+    "zh": "n. 除去、免職、移走、去掉",
+    "unit": 7,
+    "example": "They rejected a demand for the removal of all nuclear weapons.",
+    "exampleZh": "他們拒絕了清除所有核武器的要求。"
+  },
+  {
+    "id": 6286,
+    "en": "renaissance",
+    "kk": "[͵rɛnəˋsɑns]",
+    "uk": "/rɪˈneɪs(ə)ns/",
+    "zh": "n. 復興、再生、文藝復興（時期）",
+    "unit": 7,
+    "example": "Popular art is experiencing a renaissance.",
+    "exampleZh": "通俗藝術正在復興。"
+  },
+  {
+    "id": 6287,
+    "en": "rental",
+    "kk": "[ˋrɛntəl]",
+    "uk": "/ˈrent(ə)l/",
+    "zh": "n. 租金、租賃、出租、租費；adj. 租借（有關）的、可供租用的",
+    "unit": 7,
+    "example": "Your bill includes line rental.",
+    "exampleZh": "你的賬單包括電話線路的租用費。"
+  },
+  {
+    "id": 6288,
+    "en": "resemblance",
+    "kk": "[rɪˋzɛmbləns]",
+    "uk": "/rɪˈzembləns/",
+    "zh": "n. 相似、相像、相似點、相似之處",
+    "unit": 7,
+    "example": "She bears an uncanny resemblance to Dido.",
+    "exampleZh": "她跟迪多長得離奇的相似。"
+  },
+  {
+    "id": 6289,
+    "en": "reservoir",
+    "kk": "[ˋrɛzəv͵wɑr]",
+    "uk": "/ˈrezəvwɑː(r)/",
+    "zh": "n. 蓄水庫、貯水池、水庫、蓄水池",
+    "unit": 7,
+    "example": "Torrents of water gushed into the reservoir.",
+    "exampleZh": "急流湧進了水庫。"
+  },
+  {
+    "id": 6290,
+    "en": "restoration",
+    "kk": "[͵rɛstɚˋeʃən]",
+    "uk": "/ˌrestəˈreɪʃ(ə)n/",
+    "zh": "n. 恢復、復辟、修復、重建",
+    "unit": 7,
+    "example": "I specialized in the restoration of old houses.",
+    "exampleZh": "我擅長舊房的修復。"
+  },
+  {
+    "id": 6291,
+    "en": "restraint",
+    "kk": "[rɪˋstrent]",
+    "uk": "/rɪˈstreɪnt/",
+    "zh": "n. 克制、控制、管押、剋制",
+    "unit": 7,
+    "example": "They behaved with more restraint than I'd expected.",
+    "exampleZh": "他們表現了比我預想還多的剋制。"
+  },
+  {
+    "id": 6292,
+    "en": "retail",
+    "kk": "[ˋri͵tel]",
+    "uk": "/ˈriːteɪl/",
+    "zh": "n. 零售；vi. 零售、以……價格銷售、詳說、述說；adv. 以零售方式；adj. 零售的",
+    "unit": 7,
+    "example": "The retail division is BT's cash cow.",
+    "exampleZh": "零售部是英國電信公司的搖錢樹。"
+  },
+  {
+    "id": 6293,
+    "en": "revelation",
+    "kk": "[͵rɛvəˋleʃən]",
+    "uk": "/ˌrevəˈleɪʃ(ə)n/",
+    "zh": "n. 揭示、顯示、天啟、被揭示的真相",
+    "unit": 7,
+    "example": "The revelation of his past leads to his resignation.",
+    "exampleZh": "他的過去被揭露了，這導致了他的辭職。"
+  },
+  {
+    "id": 6294,
+    "en": "revenue",
+    "kk": "[ˋrɛvə͵nu]",
+    "uk": "/ˈrevənjuː/",
+    "zh": "n. 歲入、稅收、收入、收益",
+    "unit": 7,
+    "example": "If they overestimate, they lose revenue.",
+    "exampleZh": "如果他們過高地估算，就會損失收入。"
+  },
+  {
+    "id": 6295,
+    "en": "revival",
+    "kk": "[rɪˋvaɪvəl]",
+    "uk": "/rɪˈvaɪv(ə)l/",
+    "zh": "n. 甦醒、再生、復興、復甦",
+    "unit": 7,
+    "example": "There are encouraging signs of an artistic revival.",
+    "exampleZh": "有了鼓舞人心的藝術復興的跡象。"
+  },
+  {
+    "id": 6296,
+    "en": "rhetoric",
+    "kk": "[ˋrɛtɚɪk]",
+    "uk": "/ˈretərɪk/",
+    "zh": "n. 修辭、修辭學、辭令、花言巧語",
+    "unit": 7,
+    "example": "This argument is pure rhetoric.",
+    "exampleZh": "這種說法純粹是言辭。"
+  },
+  {
+    "id": 6297,
+    "en": "ridicule",
+    "kk": "[ˋrɪdə͵kjul]",
+    "uk": "/ˈrɪdɪkjuːl/",
+    "zh": "n. 嘲笑、奚落；vt. 嘲笑、奚落",
+    "unit": 7,
+    "example": "She doesn't ridicule my timidity.",
+    "exampleZh": "她不會嘲笑我的羞怯。"
+  },
+  {
+    "id": 6298,
+    "en": "riot",
+    "kk": "[ˋraɪət]",
+    "uk": "/ˈraɪət/",
+    "zh": "n. 暴亂、騷亂、紛呈、豐富多彩；vi. 發生騷亂、聚眾鬧事、放縱、恣意",
+    "unit": 7,
+    "example": "Twelve inmates have been killed during a riot at the prison.",
+    "exampleZh": "十二名囚犯在該監獄裡的一次暴亂中喪生。"
+  },
+  {
+    "id": 6299,
+    "en": "rite",
+    "kk": "[raɪt]",
+    "uk": "/raɪt/",
+    "zh": "n. 儀式、慣例、禮節",
+    "unit": 7,
+    "example": "Most traditional societies have transition rites at puberty.",
+    "exampleZh": "大多數傳統社會在青春期舉行過渡儀式。"
+  },
+  {
+    "id": 6300,
+    "en": "ritual",
+    "kk": "[ˋrɪtʃuəl]",
+    "uk": "/ˈrɪtʃuəl/",
+    "zh": "n. 儀式、典禮、習慣、例行公事；adj. 儀式上的、慶典上的、常規的、例行的",
+    "unit": 7,
+    "example": "It is a familiar, and quintessentially Japanese ritual.",
+    "exampleZh": "它是個熟悉而又典型的日式儀式。"
+  },
+  {
+    "id": 6301,
+    "en": "rivalry",
+    "kk": "[ˋraɪvəlri]",
+    "uk": "/ˈraɪv(ə)lri/",
+    "zh": "n. 行為、競爭、較量",
+    "unit": 7,
+    "example": "It was Allen who fired this rivalry with real passion.",
+    "exampleZh": "是艾倫滿懷激情地激發了這次對抗。"
+  },
+  {
+    "id": 6302,
+    "en": "rotation",
+    "kk": "[roˋteʃən]",
+    "uk": "/rəʊˈteɪʃ(ə)n/",
+    "zh": "n. 旋轉、自轉、輪流、轉動",
+    "unit": 7,
+    "example": "Wheat, maize and sugar beet are planted in rotation.",
+    "exampleZh": "小麥、玉米和甜菜是輪流種植的。"
+  },
+  {
+    "id": 6303,
+    "en": "royalty",
+    "kk": "[ˋrɔɪəlti]",
+    "uk": "/ˈrɔɪəlti/",
+    "zh": "n. 皇族或王族、王位、專利權稅、王族",
+    "unit": 7,
+    "example": "None of us are royalty.",
+    "exampleZh": "我們都不是皇室成員。"
+  },
+  {
+    "id": 6304,
+    "en": "ruby",
+    "kk": "[ˋrubi]",
+    "uk": "/ˈruːbi/",
+    "zh": "n. 紅寶石、深紅色；adj. 深紅色的",
+    "unit": 7,
+    "example": "Ruby was excited about her new school.",
+    "exampleZh": "魯比對她的新學校很興奮。"
+  },
+  {
+    "id": 6305,
+    "en": "safeguard",
+    "kk": "[ˋsef͵ɡɑrd]",
+    "uk": "/ˈseɪfɡɑːd/",
+    "zh": "n. 保障條款、保護措施；vt. 保護、護衛",
+    "unit": 7,
+    "example": "The new card will safeguard the company against fraud.",
+    "exampleZh": "新卡將保護公司免遭詐騙。"
+  },
+  {
+    "id": 6306,
+    "en": "saloon",
+    "kk": "[səˋlun]",
+    "uk": "/səˈluːn/",
+    "zh": "n. 大廳、酒館、酒吧、轎車",
+    "unit": 7,
+    "example": "In the saloon, he drank whisky and let his eyes become accustomed to the dimness.",
+    "exampleZh": "在酒館裡，他喝了威士忌，雙眼也變得適應昏暗。"
+  },
+  {
+    "id": 6307,
+    "en": "salvation",
+    "kk": "[sælˋveʃən]",
+    "uk": "/sælˈveɪʃ(ə)n/",
+    "zh": "n. 拯救、救星、救世、解救物",
+    "unit": 7,
+    "example": "The Salvation Army shops depend on regular supplies of saleable items.",
+    "exampleZh": "救世軍商店靠的是獲得容易賣物品的經常性的供應。"
+  },
+  {
+    "id": 6308,
+    "en": "sanction",
+    "kk": "[ˋsæŋkʃən]",
+    "uk": "/ˈsæŋkʃn/",
+    "zh": "n. 制裁、處罰、懲罰、許可；vt. 認可、准許、對……實施制裁、處罰",
+    "unit": 7,
+    "example": "The Security Council will consider taking future actions against sanction-busters.",
+    "exampleZh": "安理會將考慮未來採取措施打擊破壞制裁的人。"
+  },
+  {
+    "id": 6309,
+    "en": "sanctuary",
+    "kk": "[ˋsæŋktʃu͵ɛri]",
+    "uk": "/ˈsæŋktʃuəri/",
+    "zh": "n. 聖所、聖殿、庇護所、避難權",
+    "unit": 7,
+    "example": "The church became a sanctuary for the refugees.",
+    "exampleZh": "教堂成為這些難民的庇護所。"
+  },
+  {
+    "id": 6310,
+    "en": "sanitation",
+    "kk": "[͵sænəˋteʃən]",
+    "uk": "/ˌsænɪˈteɪʃ(ə)n/",
+    "zh": "n. 公共衛生、衛生設備、環境衛生、下水道設施",
+    "unit": 7,
+    "example": "We have programs for clean water and sanitation.",
+    "exampleZh": "我們有清潔飲用水和衛生裝置的專案。"
+  },
+  {
+    "id": 6311,
+    "en": "scope",
+    "kk": "[skop]",
+    "uk": "/skəʊp/",
+    "zh": "n. 範圍、領域、機會、施展餘地；v. 評估、調查、確定（規劃專案）的範圍、仔細看",
+    "unit": 7,
+    "example": "Mr. Dobson promised to widen the organization's scope of activity.",
+    "exampleZh": "多布森先生答應擴大該組織的活動範圍。"
+  },
+  {
+    "id": 6312,
+    "en": "script",
+    "kk": "[skrɪpt]",
+    "uk": "/skrɪpt/",
+    "zh": "n. 腳本、劇本、講稿、筆跡；vt. 寫劇本、寫講稿、事先準備",
+    "unit": 7,
+    "example": "Jenny's writing a film script.",
+    "exampleZh": "珍妮在寫一個電影指令碼。"
+  },
+  {
+    "id": 6313,
+    "en": "sector",
+    "kk": "[ˋsɛktɚ]",
+    "uk": "/ˈsektə(r)/",
+    "zh": "n. 扇形、扇形面部分、部門、區域；v. 把……分成扇形",
+    "unit": 7,
+    "example": "The retail sector has been a significant underperformer.",
+    "exampleZh": "零售部是明顯表現不佳的部門。"
+  },
+  {
+    "id": 6314,
+    "en": "seminar",
+    "kk": "[ˋsɛmə͵nɑr]",
+    "uk": "/ˈsemɪnɑː(r)/",
+    "zh": "n. 專題討論、研討會、培訓會、專題討論課",
+    "unit": 7,
+    "example": "The seminar was to discuss diversification of agriculture.",
+    "exampleZh": "該研討會討論的是農業多種經營。"
+  },
+  {
+    "id": 6315,
+    "en": "senator",
+    "kk": "[ˋsɛnətɚ]",
+    "uk": "/ˈsenətə(r)/",
+    "zh": "n. 參議員、元老院議員、理事、庭長",
+    "unit": 7,
+    "example": "The senator was invited but was unable to attend.",
+    "exampleZh": "參議員受到了邀請，但是未能出席。"
+  },
+  {
+    "id": 6316,
+    "en": "sequence",
+    "kk": "[ˋsikwəns]",
+    "uk": "/ˈsiːkwəns/",
+    "zh": "n. 順序、次序、連續事件、一組鏡頭；v. 按順序排列、測定（整套基因或分子成分的）序列、用音序器播放（或錄製）音樂",
+    "unit": 7,
+    "example": "These pages are out of sequence.",
+    "exampleZh": "這幾頁排錯了次序。"
+  },
+  {
+    "id": 6317,
+    "en": "serenity",
+    "kk": "[sɚˋɛnəti]",
+    "uk": "/səˈrenəti/",
+    "zh": "n. 晴朗、平靜、沈著、寧靜",
+    "unit": 7,
+    "example": "Islam gave me serenity.",
+    "exampleZh": "伊斯蘭教給了我平靜。"
+  },
+  {
+    "id": 6318,
+    "en": "serving",
+    "kk": "[ˋsɝvɪŋ]",
+    "uk": "/ˈsɜːvɪŋ/",
+    "zh": "n. 服務、侍候、一份、一人份；adj. 上菜用的、分菜餚用的、目前任職的、現役的；v. 為……服務、供應、上、服役",
+    "unit": 7,
+    "example": "She was serving behind the counter.",
+    "exampleZh": "她在櫃檯服務。"
+  },
+  {
+    "id": 6319,
+    "en": "session",
+    "kk": "[ˋsɛʃən]",
+    "uk": "/ˈseʃ(ə)n/",
+    "zh": "n. 開庭、會期、講習會、一段時間；adj. 伴奏的",
+    "unit": 7,
+    "example": "The court is now in session.",
+    "exampleZh": "法庭現在正在開庭。"
+  },
+  {
+    "id": 6320,
+    "en": "setback",
+    "kk": "[ˋsɛt͵bæk]",
+    "uk": "/ˈsetbæk/",
+    "zh": "n. 挫折、倒退、阻礙、壁階",
+    "unit": 7,
+    "example": "That would be a severe setback.",
+    "exampleZh": "那將會是一個嚴重的挫折。"
+  },
+  {
+    "id": 6321,
+    "en": "sewer",
+    "kk": "[ˋsuɚ]",
+    "uk": "/ˈsuːə(r); ˈsjuːə(r)/",
+    "zh": "n. 污水管、下水道、陰溝；v. 為……鋪設汙水管道",
+    "unit": 7,
+    "example": "Where do sewers go?",
+    "exampleZh": "下水道通往哪裡？"
+  },
+  {
+    "id": 6322,
+    "en": "shed",
+    "kk": "[ʃɛd]",
+    "uk": "/ʃed/",
+    "zh": "vt. 去除、擺脫、落、蛻；n. 棚屋、小屋、廠房、工棚",
+    "unit": 7,
+    "example": "Vegetarianism has shed its cranky image.",
+    "exampleZh": "素食主義已經擺脫了其古怪的形象。"
+  },
+  {
+    "id": 6323,
+    "en": "shilling",
+    "kk": "[ˋʃɪlɪŋ]",
+    "uk": "/ˈʃɪlɪŋ/",
+    "zh": "n. 先令",
+    "unit": 7,
+    "example": "His hands and jacket were completely covered in thick black soot.",
+    "exampleZh": "他的雙手和夾克上滿是厚厚的黑煤灰。"
+  },
+  {
+    "id": 6324,
+    "en": "siege",
+    "kk": "[sidʒ]",
+    "uk": "/siːdʒ/",
+    "zh": "n. 圍攻、包圍、圍城、圍困；v. 圍攻、包圍",
+    "unit": 7,
+    "example": "The siege has ended peacefully.",
+    "exampleZh": "圍城已經和平地結束了。"
+  },
+  {
+    "id": 6325,
+    "en": "signature",
+    "kk": "[ˋsɪɡnətʃɚ]",
+    "uk": "/ˈsɪɡnətʃə(r)/",
+    "zh": "n. 簽名、簽署、署名、簽字；adj. 標誌性的、慣有的",
+    "unit": 7,
+    "example": "I was writing my signature at the bottom of the page.",
+    "exampleZh": "我當時正把我的簽名寫在本頁的底部。"
+  },
+  {
+    "id": 6326,
+    "en": "silicon",
+    "kk": "[ˋsɪləkən]",
+    "uk": "/ˈsɪlɪkən/",
+    "zh": "n. 矽",
+    "unit": 7,
+    "example": "Stanford and Berkeley yielded Silicon Valley.",
+    "exampleZh": "斯坦福和伯克利造就了矽谷。"
+  },
+  {
+    "id": 6327,
+    "en": "simplicity",
+    "kk": "[sɪmˋplɪsəti]",
+    "uk": "/sɪmˈplɪsəti/",
+    "zh": "n. 簡單、單純、容易、簡樸",
+    "unit": 7,
+    "example": "The plan has the virtue of simplicity.",
+    "exampleZh": "這項計劃的優點是簡單。"
+  },
+  {
+    "id": 6328,
+    "en": "skim",
+    "kk": "[skɪm]",
+    "uk": "/skɪm/",
+    "zh": "v. 略讀、瀏覽、掠過、撈去；n. 略讀、脫脂物",
+    "unit": 7,
+    "example": "Skim the jam and let it cool.",
+    "exampleZh": "撇去果醬上的浮沫，讓它冷卻。"
+  },
+  {
+    "id": 6329,
+    "en": "slang",
+    "kk": "[slæŋ]",
+    "uk": "/slæŋ/",
+    "zh": "n. 俚語；v. 謾罵",
+    "unit": 7,
+    "example": "Archie liked to think he kept up with current slang.",
+    "exampleZh": "阿奇樂於自認為能跟得上時新俚語。"
+  },
+  {
+    "id": 6330,
+    "en": "slash",
+    "kk": "[slæʃ]",
+    "uk": "/slæʃ/",
+    "zh": "v. 砍、劈、大幅度削減、大大降低；n. 砍、劈、傷口、砍痕",
+    "unit": 7,
+    "example": "He slashed at her, aiming carefully.",
+    "exampleZh": "他瞄得準準的，朝她揮砍過去。"
+  },
+  {
+    "id": 6331,
+    "en": "slavery",
+    "kk": "[ˋslevɚi]",
+    "uk": "/ˈsleɪvəri/",
+    "zh": "n. 奴隸身分、奴役、奴隸制、蓄奴",
+    "unit": 7,
+    "example": "They thought slavery was morally wrong.",
+    "exampleZh": "他們當時認為奴隸制是不道義的。"
+  },
+  {
+    "id": 6332,
+    "en": "slot",
+    "kk": "[slɑt]",
+    "uk": "/slɒt/",
+    "zh": "n. 狹長孔、狹槽、時間、空檔；vt. 把……投入窄孔中、把……放到指定位置、為……安排時間、安置",
+    "unit": 7,
+    "example": "He dropped a coin into the slot and dialled.",
+    "exampleZh": "他把一枚硬幣投進了那個投幣口，然後撥了號。"
+  },
+  {
+    "id": 6333,
+    "en": "slum",
+    "kk": "[slʌm]",
+    "uk": "/slʌm/",
+    "zh": "n. 貧民窟、陋巷",
+    "unit": 7,
+    "example": "Several businessmen had to slum it in economy class.",
+    "exampleZh": "幾個商人只好將就著坐在經濟艙裡。"
+  },
+  {
+    "id": 6334,
+    "en": "smack",
+    "kk": "[smæk]",
+    "uk": "/smæk/",
+    "zh": "v. 用巴掌打、摑、猛擊、重撞；n. 掌摑、拍擊、猛擊一拳、砰的一聲；adv. 正好地、不偏不倚地、猛地、猛然作聲地",
+    "unit": 7,
+    "example": "Sometimes he just doesn't listen and I end up shouting at him or giving him a smack.",
+    "exampleZh": "有時他就是不聽，最後我朝他大喊大叫，或者給他一巴掌。"
+  },
+  {
+    "id": 6335,
+    "en": "smallpox",
+    "kk": "[ˋsmɔl͵pɑks]",
+    "uk": "/ˈsmɔːlpɒks/",
+    "zh": "n. 天花",
+    "unit": 7,
+    "example": "Ebola is not as easily spread as viruses such as smallpox.",
+    "exampleZh": "埃博拉病毒不像天花這類病毒那樣容易傳播。"
+  },
+  {
+    "id": 6336,
+    "en": "smother",
+    "kk": "[ˋsmʌðɚ]",
+    "uk": "/ˈsmʌðə(r)/",
+    "zh": "vt. 使窒息、悶死、悶熄、撲滅；vi. 窒息、悶死、被抑制；n. 窒息狀態、令人窒息的濃煙",
+    "unit": 7,
+    "example": "Too much mulches will smother plants.",
+    "exampleZh": "覆蓋物太多會使植物窒息。"
+  },
+  {
+    "id": 6337,
+    "en": "snare",
+    "kk": "[snɛr]",
+    "uk": "/sneə(r)/",
+    "zh": "n. 陷阱、羅網、圈套；vt. 誘捕、設陷阱捕捉、使上當",
+    "unit": 7,
+    "example": "I felt like an animal caught in a snare.",
+    "exampleZh": "我感到自己像是一頭陷入網羅的野獸。"
+  },
+  {
+    "id": 6338,
+    "en": "sneer",
+    "kk": "[snɪr]",
+    "uk": "/snɪə(r)/",
+    "zh": "vt. 冷笑、嘲笑、譏諷、鄙視；n. 嘲笑、譏諷",
+    "unit": 7,
+    "example": "Most critics have sneered at the movie, calling it dull and cheaply made.",
+    "exampleZh": "大多數批評家都嘲笑這部電影，稱其無聊、製作低劣。"
+  },
+  {
+    "id": 6339,
+    "en": "socialism",
+    "kk": "[ˋsoʃə͵lɪzəm]",
+    "uk": "/ˈsəʊʃəlɪz(ə)m/",
+    "zh": "n. 社會主義、社會主義制度、社會主義社會",
+    "unit": 7,
+    "example": "William Morris was one of the early prophets of socialism.",
+    "exampleZh": "威廉•莫里斯是社會主義的早期傳播者之一。"
+  },
+  {
+    "id": 6340,
+    "en": "socialist",
+    "kk": "[ˋsoʃələst]",
+    "uk": "/ˈsəʊʃəlɪst/",
+    "zh": "adj. 支援社會主義的、與社會主義有關的；n. 社會主義者",
+    "unit": 7,
+    "example": "He's still a socialist at heart.",
+    "exampleZh": "他本質上還是個社會主義者。"
+  },
+  {
+    "id": 6341,
+    "en": "sociology",
+    "kk": "[͵sosiˋɑlədʒi]",
+    "uk": "/ˌsəʊsiˈɒlədʒi/",
+    "zh": "n. 社會學、社會關係研究",
+    "unit": 7,
+    "example": "I'll be teaching history and sociology next term.",
+    "exampleZh": "下學期我教歷史和社會學。"
+  },
+  {
+    "id": 6342,
+    "en": "sodium",
+    "kk": "[ˋsodiəm]",
+    "uk": "/ˈsəʊdiəm/",
+    "zh": "n. 鈉；adj. 鈉光的",
+    "unit": 7,
+    "example": "Sodium and sulphur are highly corrosive.",
+    "exampleZh": "鈉和硫有高度的腐蝕性。"
+  },
+  {
+    "id": 6343,
+    "en": "solidarity",
+    "kk": "[͵sɑləˋdɛrəti]",
+    "uk": "/ˌsɒlɪˈdærəti/",
+    "zh": "n. 團結一致、團結工會",
+    "unit": 7,
+    "example": "There was a degree of solidarity and sisterhood among the women.",
+    "exampleZh": "這些女人之間具有一定程度的團結精神和姐妹情誼。"
+  },
+  {
+    "id": 6344,
+    "en": "solitude",
+    "kk": "[ˋsɑlə͵tud]",
+    "uk": "/ˈsɒlətjuːd/",
+    "zh": "n. 孤獨、隱居、獨居、獨處",
+    "unit": 7,
+    "example": "The boy's solitude is like the mower.",
+    "exampleZh": "這個男孩的孤獨就像割草者一樣。"
+  },
+  {
+    "id": 6345,
+    "en": "sovereignty",
+    "kk": "[ˋsɑvrənti]",
+    "uk": "/ˈsɒvrənti/",
+    "zh": "n. 統治權、主權、主權國家、最高統治權",
+    "unit": 7,
+    "example": "Chinese people cherish their independence and sovereignty.",
+    "exampleZh": "中國人民珍視他們的獨立和主權。"
+  },
+  {
+    "id": 6346,
+    "en": "span",
+    "kk": "[spæn]",
+    "uk": "/spæn/",
+    "zh": "n. 時間跨度、一段時間、墩距、跨距；vt. 持續、貫穿、包括、涵蓋；adj. 整潔乾淨的、照管得很好的",
+    "unit": 7,
+    "example": "His ability to absorb information was astonishing, but his concentration span was short.",
+    "exampleZh": "他吸收資訊的能力讓人驚訝，但他的注意力持續時間很短。"
+  },
+  {
+    "id": 6347,
+    "en": "specialty",
+    "kk": "[ˋspɛʃəlti]",
+    "uk": "/ˈspeʃəlti/",
+    "zh": "n. 專業、專長、特色食品、特產",
+    "unit": 7,
+    "example": "Her specialty is taxation law.",
+    "exampleZh": "她的專長是稅法。"
+  },
+  {
+    "id": 6348,
+    "en": "spectacular",
+    "kk": "[spɛkˋtækjəlɚ]",
+    "uk": "/spekˈtækjələ(r)/",
+    "zh": "adj. 壯觀的、令人驚歎的、驚人的；n. 壯觀、壯觀場面、盛大演出",
+    "unit": 7,
+    "example": "Vieira scored a spectacular goal.",
+    "exampleZh": "維埃拉攻進了一個精彩入球。"
+  },
+  {
+    "id": 6349,
+    "en": "spectrum",
+    "kk": "[ˋspɛktrəm]",
+    "uk": "/ˈspektrəm/",
+    "zh": "n. 光譜、頻譜、範圍、幅度",
+    "unit": 7,
+    "example": "Red and violet are at opposite ends of the spectrum.",
+    "exampleZh": "紅色和紫色位於光譜的兩端。"
+  },
+  {
+    "id": 6350,
+    "en": "sphere",
+    "kk": "[sfɪr]",
+    "uk": "/sfɪə(r)/",
+    "zh": "n. 球、球體、球形、範圍；vt. 使……成球形、包圍、放入球內",
+    "unit": 7,
+    "example": "Because the earth spins, it is not a perfect sphere.",
+    "exampleZh": "因為地球旋轉，所以它不是個完完全全的球體。"
+  },
+  {
+    "id": 6351,
+    "en": "spike",
+    "kk": "[spaɪk]",
+    "uk": "/spaɪk/",
+    "zh": "n. 猛增、急升、尖狀物、金屬釘；v. 在……中偷偷摻入、給……新增風味、給……增加趣味、迅速提升",
+    "unit": 7,
+    "example": "Even with some smoothing, there would still be a slight spike.",
+    "exampleZh": "即使是經過了一些平滑的處理，還是會有微小的尖峰。"
+  },
+  {
+    "id": 6352,
+    "en": "spiral",
+    "kk": "[ˋspaɪrəl]",
+    "uk": "/ˈspaɪrəl/",
+    "zh": "n. 螺旋形、螺旋式上升；v. 螺旋式上升、急劇惡化；adj. 螺旋形的",
+    "unit": 7,
+    "example": "Most spiral-shaped snail species are predominantly dextral.",
+    "exampleZh": "大多數螺旋形的蝸牛主要是右旋的。"
+  },
+  {
+    "id": 6353,
+    "en": "spire",
+    "kk": "[spaɪr]",
+    "uk": "/ˈspaɪə(r)/",
+    "zh": "n. 尖塔、尖頂、螺旋、螺旋形結構的一圈；vi. 像尖頂般向上聳立、向上漸尖；vt. 給……加塔尖、給……裝尖頂",
+    "unit": 7,
+    "example": "No one would dream of straightening out the church's knobbly spire.",
+    "exampleZh": "沒人會夢想使教堂的圓形尖頂變直。"
+  },
+  {
+    "id": 6354,
+    "en": "spokesman",
+    "kk": "[ˋspoksmən]",
+    "uk": "/ˈspəʊksmən/",
+    "zh": "n. 發言人、代言人",
+    "unit": 7,
+    "example": "A Defense Department spokesman briefed reporters.",
+    "exampleZh": "一位國防部發言人向記者們介紹了情況。"
+  },
+  {
+    "id": 6355,
+    "en": "spokesperson",
+    "kk": "[ˋspokspɚsən]",
+    "uk": "/ˈspəʊkspɜːsn/",
+    "zh": "n. 發言人、代言人",
+    "unit": 7,
+    "example": "He's the spokesperson for his local animal rights group.",
+    "exampleZh": "他是當地動物權益組織的發言人。"
+  },
+  {
+    "id": 6356,
+    "en": "spokeswoman",
+    "kk": "[ˋspok͵swʊmən]",
+    "uk": "/ˈspəʊkswʊmən/",
+    "zh": "n. 女發言人",
+    "unit": 7,
+    "example": "A spokeswoman for the government denied the rumours.",
+    "exampleZh": "一位政府女發言人否認了那些傳言。"
+  },
+  {
+    "id": 6357,
+    "en": "sponsor",
+    "kk": "[ˋspɑnsɚ]",
+    "uk": "/ˈspɒnsə(r)/",
+    "zh": "n. 主辦者、贊助者、贊助商、資助者；vt. 贊助、為慈善活動捐資、為義賽捐款",
+    "unit": 7,
+    "example": "Tom is my sponsor.",
+    "exampleZh": "湯姆是我的贊助商。"
+  },
+  {
+    "id": 6358,
+    "en": "spouse",
+    "kk": "[spaʊs]",
+    "uk": "/spaʊs/",
+    "zh": "n. 配偶；v. 和……結婚",
+    "unit": 7,
+    "example": "You, or your spouse, must be at least 60 to participate.",
+    "exampleZh": "你或你的配偶至少要有60歲才能加入。"
+  },
+  {
+    "id": 6359,
+    "en": "sprawl",
+    "kk": "[sprɔl]",
+    "uk": "/sprɔːl/",
+    "zh": "vi. 四肢攤開地坐（或躺）、蔓延；n. 蔓延、雜亂擴展的地區",
+    "unit": 7,
+    "example": "She sprawled on the bed as he had left her, not even moving to cover herself up.",
+    "exampleZh": "他離開她後，她攤開四肢躺在床上，甚至懶得動動把自己蓋上。"
+  },
+  {
+    "id": 6360,
+    "en": "squad",
+    "kk": "[skwɑd]",
+    "uk": "/skwɒd/",
+    "zh": "n. 班、小隊、小組、警察分隊；v. 把……編成班、把……編入班",
+    "unit": 7,
+    "example": "The building was evacuated and the bomb squad called.",
+    "exampleZh": "那座大樓進行了人員疏散，並通知了拆彈小組。"
+  },
+  {
+    "id": 6361,
+    "en": "squash",
+    "kk": "[skwɑʃ]",
+    "uk": "/skwɒʃ/",
+    "zh": "vt. 壓扁、壓碎、擠進、塞進；n. 牆網球、壁球、果汁飲料、南瓜屬植物",
+    "unit": 7,
+    "example": "He hurt his back playing squash.",
+    "exampleZh": "他打壁球時背部受傷了。"
+  },
+  {
+    "id": 6362,
+    "en": "stability",
+    "kk": "[stəˋbɪlɪti]",
+    "uk": "/stəˈbɪləti/",
+    "zh": "n. 穩定、穩定性、安定、穩固",
+    "unit": 7,
+    "example": "Political stability, meanwhile, will be a prime concern.",
+    "exampleZh": "與此同時，政治穩定將是頭等大事。"
+  },
+  {
+    "id": 6363,
+    "en": "stalk",
+    "kk": "[stɔk]",
+    "uk": "/stɔːk/",
+    "zh": "n. 莖、稈、肉柄、肉莖；vt. 偷偷接近、潛近、跟蹤、盯梢",
+    "unit": 7,
+    "example": "Look at the plant. Its stalk is long.",
+    "exampleZh": "看看這株植物。它的莖很長。"
+  },
+  {
+    "id": 6364,
+    "en": "stammer",
+    "kk": "[ˋstæmɚ]",
+    "uk": "/ˈstæmə(r)/",
+    "zh": "vt. 口吃、結結巴巴地說；n. 結巴、口吃",
+    "unit": 7,
+    "example": "A speech therapist cured his stammer.",
+    "exampleZh": "一位語言矯治專家治好了他的口吃。"
+  },
+  {
+    "id": 6365,
+    "en": "staple",
+    "kk": "[ˋstepəl]",
+    "uk": "/ˈsteɪp(ə)l/",
+    "zh": "n. 主要產品、支柱產品、主食、主要部份；adj. 主要生產的、大量生產的、主要的、常用的；vt. 用訂書釘訂住、把……分級",
+    "unit": 7,
+    "example": "Royal gossip is a staple of the tabloid press.",
+    "exampleZh": "圍繞王室成員的飛短流長是小報的主要內容。"
+  },
+  {
+    "id": 6366,
+    "en": "stapler",
+    "kk": "[ˋstepəlɚ]",
+    "uk": "/ˈsteɪplə(r)/",
+    "zh": "n. 釘書機、訂書機、主要商品批發商、把羊毛分級的人",
+    "unit": 7,
+    "example": "I can't find the stapler.",
+    "exampleZh": "我找不到訂書機。"
+  },
+  {
+    "id": 6367,
+    "en": "starch",
+    "kk": "[stɑrtʃ]",
+    "uk": "/stɑːtʃ/",
+    "zh": "n. 澱粉、含澱粉的食物、漿粉、澱粉漿；v. 給……上漿、擊倒對手",
+    "unit": 7,
+    "example": "There's too much starch in your diet.",
+    "exampleZh": "你的日常飲食中澱粉含量太高。"
+  },
+  {
+    "id": 6368,
+    "en": "starvation",
+    "kk": "[stɑrˋveʃən]",
+    "uk": "/stɑːˈveɪʃ(ə)n/",
+    "zh": "n. 飢餓、挨餓、捱餓、餓死",
+    "unit": 7,
+    "example": "Starvation brings biochemical changes in the body.",
+    "exampleZh": "飢餓引起體內的生化變化。"
+  },
+  {
+    "id": 6369,
+    "en": "stationery",
+    "kk": "[ˋsteʃə͵nɛri]",
+    "uk": "/ˈsteɪʃənri/",
+    "zh": "n. 文具、信紙、信箋",
+    "unit": 7,
+    "example": "The stationery order has arrived.",
+    "exampleZh": "訂購的文具到貨了。"
+  },
+  {
+    "id": 6370,
+    "en": "stature",
+    "kk": "[ˋstætʃɚ]",
+    "uk": "/ˈstætʃə(r)/",
+    "zh": "n. 身高、高度、名望、聲望",
+    "unit": 7,
+    "example": "It's more than his physical stature that makes him remarkable.",
+    "exampleZh": "不單單是他的身高使他氣宇非凡。"
+  },
+  {
+    "id": 6371,
+    "en": "steamer",
+    "kk": "[ˋstimɚ]",
+    "uk": "/ˈstiːmə(r)/",
+    "zh": "n. 汽船、蒸鍋、蒸籠、大輪船",
+    "unit": 7,
+    "example": "When does your steamer sail?",
+    "exampleZh": "你們的輪船什麼時候啟航？"
+  },
+  {
+    "id": 6372,
+    "en": "stimulation",
+    "kk": "[͵stɪmjəˋleʃən]",
+    "uk": "/ˌstɪmjuˈleɪʃ(ə)n/",
+    "zh": "n. 刺激、興奮、激勵、興奮作用",
+    "unit": 7,
+    "example": "The playgroup provides plenty of stimulation for the children.",
+    "exampleZh": "這個遊戲小組為孩子們提供了大量的刺激。"
+  },
+  {
+    "id": 6373,
+    "en": "stimulus",
+    "kk": "[ˋstɪmjələs]",
+    "uk": "/ˈstɪmjələs/",
+    "zh": "n. 刺激、刺激品、興奮劑、促進因素",
+    "unit": 7,
+    "example": "For many firms, they are a stimulus to revenue.",
+    "exampleZh": "對許多公司來說，它們是刺激收入的因素。"
+  },
+  {
+    "id": 6374,
+    "en": "stock",
+    "kk": "[stɑk]",
+    "uk": "/stɒk/",
+    "zh": "n. 股票、股份、庫存、股票存量；v. 儲備、進貨",
+    "unit": 7,
+    "example": "Stock prices took a dive.",
+    "exampleZh": "股票價格暴跌。"
+  },
+  {
+    "id": 6375,
+    "en": "stunt",
+    "kk": "[stʌnt]",
+    "uk": "/stʌnt/",
+    "zh": "n. 特技表演、噱頭、作秀、逞英雄；vt. 阻礙……的成長、妨礙發展、表演絕技",
+    "unit": 7,
+    "example": "The band dressed up as the Beatles as a publicity stunt.",
+    "exampleZh": "樂隊扮作披頭士樂隊作為宣傳噱頭。"
+  },
+  {
+    "id": 6376,
+    "en": "subordinate",
+    "kk": "[səˋbɔrdə͵net]",
+    "uk": "/səˈbɔːdɪnət/",
+    "zh": "adj. 從屬的、下級的、次要的；n. 部屬、下級、從屬、次要；vt. 使從屬於、使處於次要地位、使隸屬、使服從",
+    "unit": 7,
+    "example": "Sixty of his subordinate officers followed his example.",
+    "exampleZh": "他的60個下級官員都以他為榜樣。"
+  },
+  {
+    "id": 6377,
+    "en": "subscription",
+    "kk": "[səbˋskrɪpʃən]",
+    "uk": "/səbˈskrɪpʃ(ə)n/",
+    "zh": "n. 訂閱費、會費、捐款、署名；adj. 付費的、收費的",
+    "unit": 7,
+    "example": "Very few subscription libraries exist today.",
+    "exampleZh": "目前存在的訂閱庫非常少。"
+  },
+  {
+    "id": 6378,
+    "en": "substitution",
+    "kk": "[͵sʌbstɪˋtuʃən]",
+    "uk": "/ˌsʌbstɪˈtjuːʃ(ə)n/",
+    "zh": "n. 代替、代替物、替換、置換",
+    "unit": 7,
+    "example": "Substitution: Player No. 4 for No. 3.",
+    "exampleZh": "換人: 3號下, 4號上。"
+  },
+  {
+    "id": 6379,
+    "en": "succession",
+    "kk": "[səkˋsɛʃən]",
+    "uk": "/səkˈseʃ(ə)n/",
+    "zh": "n. 連續、一連串、繼承權、連續不斷的人",
+    "unit": 7,
+    "example": "Adams took a succession of jobs which have stood him in good stead.",
+    "exampleZh": "亞當斯做了一連串對他很有利的工作。"
+  },
+  {
+    "id": 6380,
+    "en": "successor",
+    "kk": "[səkˋsɛsɚ]",
+    "uk": "/səkˈsesə(r)/",
+    "zh": "n. 繼任者、繼承人、繼承者、接替的事物",
+    "unit": 7,
+    "example": "Mr. Olsen has always avoided anointing any successor.",
+    "exampleZh": "奧爾森先生總是避免指定任何繼任者。"
+  },
+  {
+    "id": 6381,
+    "en": "suite",
+    "kk": "[swit]",
+    "uk": "/swiːt/",
+    "zh": "n. 套房、系列、套間、一套傢俱",
+    "unit": 7,
+    "example": "They had a fabulous time during their week in a suite at the Paris Hilton.",
+    "exampleZh": "他們在巴黎希爾頓酒店的套房裡度過了非常愉快的一週。"
+  },
+  {
+    "id": 6382,
+    "en": "superiority",
+    "kk": "[͵supɪriˋɔrɪti]",
+    "uk": "/suːˌpɪəriˈɒrəti/",
+    "zh": "n. 優越、優勢、上級、優越感",
+    "unit": 7,
+    "example": "We have air superiority.",
+    "exampleZh": "我們有空中優勢。"
+  },
+  {
+    "id": 6383,
+    "en": "supervision",
+    "kk": "[͵supɚˋvɪʒən]",
+    "uk": "/ˌsuːpəˈvɪʒ(ə)n/",
+    "zh": "n. 管理、監督",
+    "unit": 7,
+    "example": "They require less supervision and training.",
+    "exampleZh": "它們需要更少的監督和訓練。"
+  },
+  {
+    "id": 6384,
+    "en": "supplement",
+    "kk": "[ˋsʌpləmənt]",
+    "uk": "/ˈsʌplɪmənt/",
+    "zh": "n. 補充物、增補物、營養片劑、補品；vt. 增加、增補",
+    "unit": 7,
+    "example": "Industrial sponsorship is a supplement to government funding.",
+    "exampleZh": "工業界的贊助是對政府撥款的補充。"
+  },
+  {
+    "id": 6385,
+    "en": "surplus",
+    "kk": "[ˋsɝpləs]",
+    "uk": "/ˈsɜːpləs/",
+    "zh": "n. 過剩、剩餘、過剩量、盈餘；adj. 過剩的、剩餘的、多餘的、出售剩餘（或過時的）軍用品的；v. 甩賣、變賣",
+    "unit": 7,
+    "example": "Wheat was in surplus that year.",
+    "exampleZh": "那一年小麥過剩。"
+  },
+  {
+    "id": 6386,
+    "en": "suspense",
+    "kk": "[səˋspɛns]",
+    "uk": "/səˈspens/",
+    "zh": "n. 掛慮、懸疑、暫時停止、焦慮",
+    "unit": 7,
+    "example": "The time of suspense is dreadful.",
+    "exampleZh": "懸念叢生的那段時光是十分難熬的。"
+  },
+  {
+    "id": 6387,
+    "en": "suspension",
+    "kk": "[səˋspɛnʃən]",
+    "uk": "/səˈspenʃ(ə)n/",
+    "zh": "n. 暫停、中止、停職、暫令停職",
+    "unit": 7,
+    "example": "There's been a temporary suspension of flights out of LA.",
+    "exampleZh": "從洛杉磯起飛的飛機已經暫停。"
+  },
+  {
+    "id": 6388,
+    "en": "swap",
+    "kk": "[swɑp]",
+    "uk": "/swɒp/",
+    "zh": "vt. 交換、交易、用……替換、把……換成；n. 交換的東西、交易、交換、交易物",
+    "unit": 7,
+    "example": "Over the long term, a swap of some kind is clearly in the public interest.",
+    "exampleZh": "從長遠看，有點交換顯然是為了公共利益。"
+  },
+  {
+    "id": 6389,
+    "en": "symmetry",
+    "kk": "[ˋsɪmətri]",
+    "uk": "/ˈsɪmətri/",
+    "zh": "n. 對稱、相似、相等",
+    "unit": 7,
+    "example": "Classical dance in its purest form requires symmetry and balance.",
+    "exampleZh": "真正的古典舞蹈要求對稱與平衡。"
+  },
+  {
+    "id": 6390,
+    "en": "symptom",
+    "kk": "[ˋsɪmptəm]",
+    "uk": "/ˈsɪmptəm/",
+    "zh": "n. 症狀、徵候、跡象、徵兆",
+    "unit": 7,
+    "example": "One prominent symptom of the disease is progressive loss of memory.",
+    "exampleZh": "這種病的一個突出症狀是記憶的逐步喪失。"
+  },
+  {
+    "id": 6391,
+    "en": "synonym",
+    "kk": "[ˋsɪnə͵nɪm]",
+    "uk": "/ˈsɪnənɪm/",
+    "zh": "n. 同義字、同物異名、同義詞、代名詞",
+    "unit": 7,
+    "example": "The teacher asked the class to name a common synonym for 'happy'.",
+    "exampleZh": "老師請全班同學說出「happy」常用的同義字。"
+  },
+  {
+    "id": 6392,
+    "en": "synthetic",
+    "kk": "[sɪnˋθɛtɪk]",
+    "uk": "/sɪnˈθetɪk/",
+    "zh": "adj. 合成的、人造的、不誠懇的；n. 合成纖維、合成物",
+    "unit": 7,
+    "example": "New synthetic foods will form a regular part of people's diets.",
+    "exampleZh": "新的合成食品將成為人們日常飲食的一部分。"
+  },
+  {
+    "id": 6393,
+    "en": "tact",
+    "kk": "[tækt]",
+    "uk": "/tækt/",
+    "zh": "n. 老練、機智、得體、乖巧",
+    "unit": 7,
+    "example": "Tact was never Mr. Moore's strength.",
+    "exampleZh": "老練從來不是穆爾先生的長處。"
+  },
+  {
+    "id": 6394,
+    "en": "tactic",
+    "kk": "[ˋtæktɪk]",
+    "uk": "/ˈtæktɪk/",
+    "zh": "n. 戰術、策略、手法、兵法；adj. 按順序的、依次排列的",
+    "unit": 7,
+    "example": "One tactic involves where to display the goods.",
+    "exampleZh": "其中一個策略涉及到在哪裡展示商品。"
+  },
+  {
+    "id": 6395,
+    "en": "tariff",
+    "kk": "[ˋtɛrəf]",
+    "uk": "/ˈtærɪf/",
+    "zh": "n. 關稅、關稅表、價目表；v. 按稅率定……的價格、徵收關稅",
+    "unit": 7,
+    "example": "The tariff scorecard is only part of the story.",
+    "exampleZh": "關稅方面的交鋒只是故事的一小部分。"
+  },
+  {
+    "id": 6396,
+    "en": "temperament",
+    "kk": "[ˋtɛmprəmənt]",
+    "uk": "/ˈtemprəmənt/",
+    "zh": "n. 氣質、性情、性格、暴躁",
+    "unit": 7,
+    "example": "His only weakness is his temperament.",
+    "exampleZh": "他惟一的弱點是他的脾氣。"
+  },
+  {
+    "id": 6397,
+    "en": "tempest",
+    "kk": "[ˋtɛmpəst]",
+    "uk": "/ˈtempɪst/",
+    "zh": "n. 暴風雨、暴風雪、騷動、動亂；vt. 使狂怒、擾亂、使激動；vi. 小題大作、起大風暴",
+    "unit": 7,
+    "example": "I hadn't foreseen the tempest my request would cause.",
+    "exampleZh": "我沒有想到我的請求會帶來這麼大一場風波。"
+  },
+  {
+    "id": 6398,
+    "en": "textile",
+    "kk": "[ˋtɛk͵staɪl]",
+    "uk": "/ˈtekstaɪl/",
+    "zh": "n. 紡織原料、紡織物、織物、紡織業；adj. 紡織的、非自然主義者的、限於著衣者的",
+    "unit": 7,
+    "example": "But the textile boom lasted only several decades.",
+    "exampleZh": "但是紡織業的繁榮只持續了幾十年。"
+  },
+  {
+    "id": 6399,
+    "en": "texture",
+    "kk": "[ˋtɛkstʃɚ]",
+    "uk": "/ˈtekstʃə(r)/",
+    "zh": "n. 質地、紋理、口感、諧和統一感；v. 使（織物、牆面等）具浮凸結構",
+    "unit": 7,
+    "example": "It has an orange flavour and smooth texture.",
+    "exampleZh": "它有一種桔子的味道，質地光滑。"
+  },
+  {
+    "id": 6400,
+    "en": "theft",
+    "kk": "[θɛft]",
+    "uk": "/θeft/",
+    "zh": "n. 偷竊、盜竊、盜竊罪",
+    "unit": 7,
+    "example": "Are we insured against theft?",
+    "exampleZh": "我們保了盜竊險沒有？"
+  },
+  {
+    "id": 6401,
+    "en": "therapist",
+    "kk": "[ˋθɛrəpəst]",
+    "uk": "/ˈθerəpɪst/",
+    "zh": "n. 治療技師或專家、治療專家、心理治療師",
+    "unit": 7,
+    "example": "My therapist helped me to deal with my anger.",
+    "exampleZh": "我的治療師幫我消除怒氣。"
+  },
+  {
+    "id": 6402,
+    "en": "therapy",
+    "kk": "[ˋθɛrəpi]",
+    "uk": "/ˈθerəpi/",
+    "zh": "n. 治療、療法、心理治療、有裨益的活動",
+    "unit": 7,
+    "example": "Group therapy classes have been his salvation.",
+    "exampleZh": "他一直靠參加集體療法班來調節心理。"
+  },
+  {
+    "id": 6403,
+    "en": "thermometer",
+    "kk": "[θɚˋmɑmətɚ]",
+    "uk": "/θəˈmɒmɪtə(r)/",
+    "zh": "n. 溫度計、寒暑錶、寒暑表、體溫計",
+    "unit": 7,
+    "example": "The thermometer read 105 degrees Fahrenheit.",
+    "exampleZh": "溫度計顯示為華氏105度。"
+  },
+  {
+    "id": 6404,
+    "en": "threshold",
+    "kk": "[ˋθrɛʃ͵old]",
+    "uk": "/ˈθreʃhəʊld/",
+    "zh": "n. 門檻、開端、起點、門口",
+    "unit": 7,
+    "example": "He stepped across the threshold.",
+    "exampleZh": "他邁過門檻。"
+  },
+  {
+    "id": 6405,
+    "en": "thrift",
+    "kk": "[θrɪft]",
+    "uk": "/θrɪft/",
+    "zh": "n. 節儉、節約",
+    "unit": 7,
+    "example": "To practice thrift is a virtue.",
+    "exampleZh": "節儉是美德。"
+  },
+  {
+    "id": 6406,
+    "en": "throb",
+    "kk": "[θrɑb]",
+    "uk": "/θrɒb/",
+    "zh": "vi. 抽痛、抽搐、陣痛、抽動；n. 跳動、悸動、搏動、抽痛",
+    "unit": 7,
+    "example": "His tooth had started to throb painfully again.",
+    "exampleZh": "他的牙又開始抽痛了。"
+  },
+  {
+    "id": 6407,
+    "en": "toll",
+    "kk": "[tol]",
+    "uk": "/təʊl/",
+    "zh": "n. 通行費、長途電話費、傷亡人數、嚴重的不良影響；vt. 敲、鳴、鳴鐘告知、收取（橋樑或道路的）通行費",
+    "unit": 7,
+    "example": "Church bells tolled and black flags fluttered.",
+    "exampleZh": "教堂喪鐘敲響了，黑旗飄動著。"
+  },
+  {
+    "id": 6408,
+    "en": "tornado",
+    "kk": "[tɔrˋne͵do]",
+    "uk": "/tɔːˈneɪdəʊ/",
+    "zh": "n. 龍捲風、大旋風、極具破壞力的人、情感火爆的人",
+    "unit": 7,
+    "example": "The Tornado was about thirty feet from Mace's right wingtip.",
+    "exampleZh": "“龍捲風”離“梅斯”的右機翼尖約三十英尺。"
+  },
+  {
+    "id": 6409,
+    "en": "trait",
+    "kk": "[tret]",
+    "uk": "/treɪt/",
+    "zh": "n. 特徵、特點、特性、少許",
+    "unit": 7,
+    "example": "The study found that some alcoholics had clear personality traits showing up early in childhood.",
+    "exampleZh": "這項研究發現一些酗酒者早在孩童時就表現出明顯的個性特徵。"
+  },
+  {
+    "id": 6410,
+    "en": "tranquilizer",
+    "kk": "[ˋtræŋkwə͵laɪzɚ]",
+    "uk": "/ˈtræŋkwəlaɪzə(r)/",
+    "zh": "n. 鎮定劑、精神安定劑、鎮靜劑、安定藥",
+    "unit": 7,
+    "example": "Laughter is a tranquilizer with no side effects.",
+    "exampleZh": "笑聲是一種沒有副作用的鎮靜劑。"
+  },
+  {
+    "id": 6411,
+    "en": "transaction",
+    "kk": "[trænˋzækʃən]",
+    "uk": "/trænˈzækʃ(ə)n/",
+    "zh": "n. 交易、買賣、辦理、業務",
+    "unit": 7,
+    "example": "Neither side would disclose details of the transaction.",
+    "exampleZh": "雙方都不會透露交易的細節。"
+  },
+  {
+    "id": 6412,
+    "en": "transcript",
+    "kk": "[ˋtræn͵skrɪpt]",
+    "uk": "/ˈtrænskrɪpt/",
+    "zh": "n. 抄本、謄本、成績報告單、文字記錄",
+    "unit": 7,
+    "example": "We don't know how the transcript leaked.",
+    "exampleZh": "我們不知道抄本是怎樣洩露的。"
+  },
+  {
+    "id": 6413,
+    "en": "transformation",
+    "kk": "[͵trænsfɚˋmeʃən]",
+    "uk": "/ˌtrænsfəˈmeɪʃ(ə)n/",
+    "zh": "n. 變化、轉變、變形、變質",
+    "unit": 7,
+    "example": "The transformation of American sea power began in 1940.",
+    "exampleZh": "美國海軍力量的改革開始於1940年。"
+  },
+  {
+    "id": 6414,
+    "en": "transistor",
+    "kk": "[trænˋzɪstɚ]",
+    "uk": "/trænˈzɪstə(r)/",
+    "zh": "n. 電晶體、電晶體收音機",
+    "unit": 7,
+    "example": "Every transistor has at least three electrodes.",
+    "exampleZh": "每個電晶體至少有三個電極。"
+  },
+  {
+    "id": 6415,
+    "en": "transit",
+    "kk": "[ˋtrænzɪt]",
+    "uk": "/ˈtrænzɪt/",
+    "zh": "n. 運輸、運送、交通運輸系統、透過；v. 穿過、（行星等天體）經過",
+    "unit": 7,
+    "example": "The contents of the package may have settled in transit.",
+    "exampleZh": "包裹裡的東西可能在運輸途中搖密實了。"
+  },
+  {
+    "id": 6416,
+    "en": "transition",
+    "kk": "[trænˋzɪʃən]",
+    "uk": "/trænˈzɪʃ(ə)n/",
+    "zh": "n. 過渡、過渡時期、轉變、轉換；vi. 轉變、過渡",
+    "unit": 7,
+    "example": "Inevitably the transition will yield some sticky moments.",
+    "exampleZh": "轉型過程中難免會有棘手的時候。"
+  },
+  {
+    "id": 6417,
+    "en": "transmission",
+    "kk": "[trænˋsmɪʃən]",
+    "uk": "/trænzˈmɪʃ(ə)n/",
+    "zh": "n. 傳送、傳染、傳播、變速器",
+    "unit": 7,
+    "example": "Heterosexual contact is responsible for the bulk of HIV transmission.",
+    "exampleZh": "異性間的性接觸是造成大多數艾滋病病毒傳播的原因。"
+  },
+  {
+    "id": 6418,
+    "en": "transplant",
+    "kk": "[trænˋsplænt]",
+    "uk": "/trænsˈplɑːnt/",
+    "zh": "vt. 移植、遷移、移居、移栽；n. 移植、移植的器官、移植物、移居者",
+    "unit": 7,
+    "example": "He was recovering from a heart transplant operation.",
+    "exampleZh": "他正從心臟移植手術中康復。"
+  },
+  {
+    "id": 6419,
+    "en": "trauma",
+    "kk": "[ˋtrɔmə]",
+    "uk": "/ˈtrɔːmə/",
+    "zh": "n. 外傷、傷口、創傷、痛苦經歷",
+    "unit": 7,
+    "example": "The patient suffered severe brain trauma.",
+    "exampleZh": "患者的大腦受到嚴重損傷。"
+  },
+  {
+    "id": 6420,
+    "en": "tread",
+    "kk": "[trɛd]",
+    "uk": "/tred/",
+    "zh": "vi. 踩、踏、踐踏、踩碎；n. 步態、腳步聲、梯面、踏步板",
+    "unit": 7,
+    "example": "I heard his heavy tread on the stairs.",
+    "exampleZh": "我聽到他在樓梯上的沉重腳步聲。"
+  },
+  {
+    "id": 6421,
+    "en": "treason",
+    "kk": "[ˋtrizən]",
+    "uk": "/ˈtriːz(ə)n/",
+    "zh": "n. 叛國罪、謀反罪、叛國、背叛",
+    "unit": 7,
+    "example": "They charged treason against him.",
+    "exampleZh": "他們控告他犯了叛國罪。"
+  },
+  {
+    "id": 6422,
+    "en": "trek",
+    "kk": "[trɛk]",
+    "uk": "/trek/",
+    "zh": "vi. 長途跋涉、遠足、徒步旅行、緩慢行走；n. 一段路程、長途艱苦旅行、大遷徙、一網魚",
+    "unit": 7,
+    "example": "How long did you trek for?",
+    "exampleZh": "你長途跋涉了多長時間？"
+  },
+  {
+    "id": 6423,
+    "en": "tremor",
+    "kk": "[ˋtrɛmɚ]",
+    "uk": "/ˈtremə(r)/",
+    "zh": "n. 顫抖、戰慄、興奮；v. 震顫、顫抖、戰慄",
+    "unit": 7,
+    "example": "There was a slight tremor in his voice.",
+    "exampleZh": "他的聲音略微有點兒顫抖。"
+  },
+  {
+    "id": 6424,
+    "en": "trespass",
+    "kk": "[ˋtrɛ͵spæs]",
+    "uk": "/ˈtrespəs/",
+    "zh": "vi. 擅自進入、侵入、傷害、冒犯；n. 非法侵入、擅闖私地、非法進入、罪過",
+    "unit": 7,
+    "example": "You could be prosecuted for trespass.",
+    "exampleZh": "你可能會因擅自闖入而被起訴。"
+  },
+  {
+    "id": 6425,
+    "en": "trigger",
+    "kk": "[ˋtrɪɡɚ]",
+    "uk": "/ˈtrɪɡə(r)/",
+    "zh": "n. 觸發器、扳機、起因、誘因；vt. 引發、激發、起動",
+    "unit": 7,
+    "example": "A man pointed a gun at them and pulled the trigger.",
+    "exampleZh": "一個男人用槍指著他們，扣動了扳機。"
+  },
+  {
+    "id": 6426,
+    "en": "trophy",
+    "kk": "[ˋtrofi]",
+    "uk": "/ˈtrəʊfi/",
+    "zh": "n. 戰利品、獎品、獎盃、獎；adj. 向他人炫耀的、抬高自己身價的",
+    "unit": 7,
+    "example": "His office was lined with animal heads, trophies of his hunting hobby.",
+    "exampleZh": "他的辦公室排列著動物的頭顱，都是他業餘狩獵的戰利品。"
+  },
+  {
+    "id": 6427,
+    "en": "tropic",
+    "kk": "[ˋtrɑpɪk]",
+    "uk": "/ˈtrɒpɪk/",
+    "zh": "n. 回歸線、熱帶地區；adj. 熱帶的",
+    "unit": 7,
+    "example": "We must protect tropic forests.",
+    "exampleZh": "我們必須保護熱帶雨林。"
+  },
+  {
+    "id": 6428,
+    "en": "truant",
+    "kk": "[ˋtruənt]",
+    "uk": "/ˈtruːənt/",
+    "zh": "n. 曠課者、逃學者、逃避責任者；adj. 曠課的、逃學的、懶惰的、閒散的；v. 曠課、逃學、偷懶、逃避責任",
+    "unit": 7,
+    "example": "She was getting into trouble over playing truant from school.",
+    "exampleZh": "她由於逃學而遇到了麻煩。"
+  },
+  {
+    "id": 6429,
+    "en": "truce",
+    "kk": "[trus]",
+    "uk": "/truːs/",
+    "zh": "n. 停戰、休戰協定、停戰協定、休戰；v. 停戰、以休戰結束",
+    "unit": 7,
+    "example": "The local government and the army negotiated a truce.",
+    "exampleZh": "該地方政府和軍方談判達成了休戰協定。"
+  },
+  {
+    "id": 6430,
+    "en": "tuberculosis",
+    "kk": "[tə͵bɝkjəˋlosɪs]",
+    "uk": "/tjuːˌbɜːkjuˈləʊsɪs/",
+    "zh": "n. 結核病",
+    "unit": 7,
+    "example": "People generally view tuberculosis as a disease of the past.",
+    "exampleZh": "人們普遍認為結核病是以前的一種疾病。"
+  },
+  {
+    "id": 6431,
+    "en": "tumor",
+    "kk": "[ˋtumɚ]",
+    "uk": "/ˈtjuːmə(r)/",
+    "zh": "n. 腫瘤、腫塊、贅生物",
+    "unit": 7,
+    "example": "A child was wrongly diagnosed as having a bone tumor.",
+    "exampleZh": "一個孩子被誤診為有骨瘤。"
+  },
+  {
+    "id": 6432,
+    "en": "turmoil",
+    "kk": "[ˋtɝ͵mɔɪl]",
+    "uk": "/ˈtɜːmɔɪl/",
+    "zh": "n. 騷動、混亂；v. 擾亂、使不安",
+    "unit": 7,
+    "example": "She lived through the turmoil of the French Revolution.",
+    "exampleZh": "她經歷過法國大革命的混亂之後仍舊活著。"
+  },
+  {
+    "id": 6433,
+    "en": "twilight",
+    "kk": "[ˋtwaɪ͵laɪt]",
+    "uk": "/ˈtwaɪlaɪt/",
+    "zh": "n. 薄暮、暮年、朦朧狀態；adj. 朦朧的、模糊的、虛幻的",
+    "unit": 7,
+    "example": "They returned at twilight.",
+    "exampleZh": "他們在黃昏時返回。"
+  },
+  {
+    "id": 6434,
+    "en": "tyranny",
+    "kk": "[ˋtɪrəni]",
+    "uk": "/ˈtɪrəni/",
+    "zh": "n. 暴政、專制、暴虐、專橫",
+    "unit": 7,
+    "example": "Justice will prevail over tyranny.",
+    "exampleZh": "正義必將戰勝暴虐。"
+  },
+  {
+    "id": 6435,
+    "en": "ulcer",
+    "kk": "[ˋʌlsɚ]",
+    "uk": "/ˈʌlsə(r)/",
+    "zh": "n. 潰瘍、腐蝕或敗壞的事物或現象、如腐爛物、道德敗壞",
+    "unit": 7,
+    "example": "The ulcer had been troubling her for several years.",
+    "exampleZh": "潰瘍已經摺磨她好幾年了。"
+  },
+  {
+    "id": 6436,
+    "en": "ultimate",
+    "kk": "[ˋʌltəmət]",
+    "uk": "/ˈʌltɪmət/",
+    "zh": "adj. 最終的、最後的、最根本的；n. 終極、最好的事物、最終的事物、最終（或最根本）的事實；v. 結束",
+    "unit": 7,
+    "example": "He said it is still not possible to predict the ultimate outcome.",
+    "exampleZh": "他說現在還不可能預測最終的結果。"
+  },
+  {
+    "id": 6437,
+    "en": "underestimate",
+    "kk": "[ˋʌndɚˋɛstə͵met]",
+    "uk": "/ˌʌndərˈestɪmeɪt/",
+    "zh": "vt. 低估、對……估計不足、輕視、小看；n. 估計不足、低估、對……估計不足",
+    "unit": 7,
+    "example": "We often underestimate our potentialities.",
+    "exampleZh": "我們常常低估自己的潛力。"
+  },
+  {
+    "id": 6438,
+    "en": "unemployment",
+    "kk": "[͵ʌnɪmˋplɔɪmənt]",
+    "uk": "/ˌʌnɪmˈplɔɪmənt/",
+    "zh": "n. 失業、失業狀態、失業人數、失業率",
+    "unit": 7,
+    "example": "Unemployment has soared to 18%.",
+    "exampleZh": "失業率猛升到了18%。"
+  },
+  {
+    "id": 6439,
+    "en": "upbringing",
+    "kk": "[ˋʌ͵pbrɪŋɪŋ]",
+    "uk": "/ˈʌpbrɪŋɪŋ/",
+    "zh": "n. 養育、教養",
+    "unit": 7,
+    "example": "Martin's upbringing shaped his whole life.",
+    "exampleZh": "馬丁的教養影響了他的一生。"
+  },
+  {
+    "id": 6440,
+    "en": "upgrade",
+    "kk": "[əpˋɡred]",
+    "uk": "/ˌʌpˈɡreɪd/",
+    "zh": "vt. （計算機、機器或軟體）升級、提高（設施、服務等的）檔次、改善；n. 升級、改善、提高檔次、上坡；adj. 往上的；adv. 往上",
+    "unit": 7,
+    "example": "Install the ML upgrade, then reboot.",
+    "exampleZh": "安裝 ML 升級，然後重新啟動。"
+  },
+  {
+    "id": 6441,
+    "en": "uranium",
+    "kk": "[jɚˋeniəm]",
+    "uk": "/juˈreɪniəm/",
+    "zh": "n. 鈾",
+    "unit": 7,
+    "example": "Uranium is soluble in sea water.",
+    "exampleZh": "鈾可在海水中溶解。"
+  },
+  {
+    "id": 6442,
+    "en": "urgency",
+    "kk": "[ˋɝdʒənsi]",
+    "uk": "/ˈɜːdʒənsi/",
+    "zh": "n. 緊急、迫切、急事、迫切需要",
+    "unit": 7,
+    "example": "This is a matter of some urgency.",
+    "exampleZh": "這件事相當緊迫。"
+  },
+  {
+    "id": 6443,
+    "en": "urine",
+    "kk": "[ˋjɝən]",
+    "uk": "/ˈjʊərɪn/",
+    "zh": "n. 尿、尿液、小便",
+    "unit": 7,
+    "example": "The doctor took a urine sample and a blood sample.",
+    "exampleZh": "醫生取了尿樣和血樣。"
+  },
+  {
+    "id": 6444,
+    "en": "usher",
+    "kk": "[ˋʌʃɚ]",
+    "uk": "/ˈʌʃə(r)/",
+    "zh": "n. 引座員、迎賓員、接待員；vt. 引導、引領、宣告……到來",
+    "unit": 7,
+    "example": "He did part-time work as an usher in a theatre.",
+    "exampleZh": "他曾在一家劇院做兼職引座員。"
+  },
+  {
+    "id": 6445,
+    "en": "utensil",
+    "kk": "[juˋtɛnsəl]",
+    "uk": "/juːˈtens(ə)l/",
+    "zh": "n. 器皿、用具、器具",
+    "unit": 7,
+    "example": "Objective To discuss the limitation of ultrasonic detection on prevenception utensil.",
+    "exampleZh": "目的探討超聲在宮內節育器觀察上的侷限性。"
+  },
+  {
+    "id": 6446,
+    "en": "utility",
+    "kk": "[juˋtɪləti]",
+    "uk": "/juːˈtɪləti/",
+    "zh": "n. 效用、實用、公用事業、公共服務；adj. 有用的、多功能的、多面手的、實用的",
+    "unit": 7,
+    "example": "The non-satiation of utility does not stand any longer.",
+    "exampleZh": "效用非飽和性不再成立。"
+  },
+  {
+    "id": 6447,
+    "en": "utmost",
+    "kk": "[ˋʌt͵most]",
+    "uk": "/ˈʌtməʊst/",
+    "zh": "adj. 極度的、最大的、最遠的；n. 極度、極限",
+    "unit": 7,
+    "example": "It is an undeniable fact that healthy habits lead to a longer life.",
+    "exampleZh": "健康的生活習慣有助於長壽是一項不可否認的事實。"
+  },
+  {
+    "id": 6448,
+    "en": "vaccine",
+    "kk": "[͵vækˋsin]",
+    "uk": "/ˈvæksiːn/",
+    "zh": "n. 疫苗、防毒軟體；adj. 疫苗的、菌苗的",
+    "unit": 7,
+    "example": "There is no vaccine against HIV infection.",
+    "exampleZh": "現在還沒有防艾滋病病毒傳染的疫苗。"
+  },
+  {
+    "id": 6449,
+    "en": "validity",
+    "kk": "[vəˋlɪdəti]",
+    "uk": "/vəˈlɪdəti/",
+    "zh": "n. 確實、有效性、有效、合法",
+    "unit": 7,
+    "example": "We had doubts about the validity of their argument.",
+    "exampleZh": "我們對他們的論點的正確性有過懷疑。"
+  },
+  {
+    "id": 6450,
+    "en": "vanilla",
+    "kk": "[vəˋnɪlə]",
+    "uk": "/vəˈnɪlə/",
+    "zh": "n. 香草精、香子蘭精、香草冰淇淋、香草冰淇淋色；adj. 香草味的、無特色的、普通的",
+    "unit": 7,
+    "example": "I added a dollop of vanilla ice cream to the pie.",
+    "exampleZh": "我在餡餅中加了一塊香草冰淇淋。"
+  },
+  {
+    "id": 6451,
+    "en": "variable",
+    "kk": "[ˋvɛriəbəl]",
+    "uk": "/ˈveəriəb(ə)l/",
+    "zh": "adj. 易變的、多變的、時好時壞的；n. 可變因素、可變性、變數、變元",
+    "unit": 7,
+    "example": "Mountain weather is highly variable and can change in minutes.",
+    "exampleZh": "山區的天氣極為多變，幾分鐘內就會改變。"
+  },
+  {
+    "id": 6452,
+    "en": "variation",
+    "kk": "[͵vɛriˋeʃən]",
+    "uk": "/ˌveəriˈeɪʃ(ə)n/",
+    "zh": "n. 變化、變異、變動、變奏曲",
+    "unit": 7,
+    "example": "This variation shows up in the trees growth rings.",
+    "exampleZh": "這種變化表現在樹木的年輪中。"
+  },
+  {
+    "id": 6453,
+    "en": "vendor",
+    "kk": "[ˋvɛndɚ]",
+    "uk": "/ˈvendə(r)/",
+    "zh": "n. 小販、攤販、賣主、賣方",
+    "unit": 7,
+    "example": "I think the vendor is still there.",
+    "exampleZh": "我想那個小販應該還在那裡。"
+  },
+  {
+    "id": 6454,
+    "en": "verge",
+    "kk": "[vɝdʒ]",
+    "uk": "/vɜːdʒ/",
+    "zh": "n. 邊緣、邊沿、界限；vi. 接近、瀕臨",
+    "unit": 7,
+    "example": "The mountain gorilla is on the verge of extinction.",
+    "exampleZh": "居住在山區的大猩猩已瀕臨滅絕。"
+  },
+  {
+    "id": 6455,
+    "en": "version",
+    "kk": "[ˋvɝʒən]",
+    "uk": "/ˈvɜːʃ(ə)n/",
+    "zh": "n. 版本、說法、樣式、型號；v. 創制……的新版本、更新……的版本",
+    "unit": 7,
+    "example": "Could you fax me the latest version?",
+    "exampleZh": "你可不可以把最新版本傳真給我？"
+  },
+  {
+    "id": 6456,
+    "en": "vet",
+    "kk": "[vɛt]",
+    "uk": "/vet/",
+    "zh": "n. 獸醫、老兵、獸醫診所；vt. 仔細檢查、徹底審查、診療、作獸醫",
+    "unit": 7,
+    "example": "The vet had improvised a harness.",
+    "exampleZh": "獸醫臨時湊成了一套馬具。"
+  },
+  {
+    "id": 6457,
+    "en": "veteran",
+    "kk": "[ˋvɛtɚən]",
+    "uk": "/ˈvetərən/",
+    "zh": "n. 富有經驗的人、退役軍人、老兵、退伍軍人；adj. 經驗豐富的、老練的、古老的",
+    "unit": 7,
+    "example": "1.1 billion package of pay increases for the veterans of the Persian Gulf War.",
+    "exampleZh": "他們批准了為參加過波斯灣戰爭的退伍軍人增付11億美元的一攬子計劃。"
+  },
+  {
+    "id": 6458,
+    "en": "veterinarian",
+    "kk": "[͵vɛtrəˋnɛriən]",
+    "uk": "/ˌvetərɪˈneəriən/",
+    "zh": "n. 獸醫",
+    "unit": 7,
+    "example": "In extreme cases, you may need the help of your veterinarian.",
+    "exampleZh": "在一些特殊情況下，你也許需要向你的獸醫求助。"
+  },
+  {
+    "id": 6459,
+    "en": "vibration",
+    "kk": "[vaɪˋbreʃən]",
+    "uk": "/vaɪˈbreɪʃ(ə)n/",
+    "zh": "n. 顫動、振動、震動、抖動",
+    "unit": 7,
+    "example": "These can cause vibration and damage the blades of the turbines.",
+    "exampleZh": "這些（氣泡）會引起振動並損壞渦輪機的葉片。"
+  },
+  {
+    "id": 6460,
+    "en": "vice",
+    "kk": "[vaɪs]",
+    "uk": "/vaɪs/",
+    "zh": "n. 惡、罪行、惡習、墮落；v. 握住、鉗緊；adj. 副的、代替的、代理的；prep. 代替",
+    "unit": 7,
+    "example": "Greed is a terrible vice.",
+    "exampleZh": "貪婪是一種惡習。"
+  },
+  {
+    "id": 6461,
+    "en": "victor",
+    "kk": "[ˋvɪktɚ]",
+    "uk": "/ˈvɪktə(r)/",
+    "zh": "n. 勝利者",
+    "unit": 7,
+    "example": "The crowd surrounded the victor.",
+    "exampleZh": "人群擠在勝利者周圍。"
+  },
+  {
+    "id": 6462,
+    "en": "villa",
+    "kk": "[ˋvɪlə]",
+    "uk": "/ˈvɪlə/",
+    "zh": "n. 別墅、住宅、度假別墅、豪宅",
+    "unit": 7,
+    "example": "We rented a holiday villa in Spain.",
+    "exampleZh": "我們在西班牙租了一座假日別墅。"
+  },
+  {
+    "id": 6463,
+    "en": "vineyard",
+    "kk": "[ˋvɪnjɚd]",
+    "uk": "/ˈvɪnjəd/",
+    "zh": "n. 葡萄園、葡萄酒廠、藤本植物園",
+    "unit": 7,
+    "example": "The Chablis vineyard is the northernmost in Burgundy.",
+    "exampleZh": "沙布利葡萄園在勃艮第的最北邊。"
+  },
+  {
+    "id": 6464,
+    "en": "vitality",
+    "kk": "[vaɪˋtæləti]",
+    "uk": "/vaɪˈtæləti/",
+    "zh": "n. 活力、生命力、熱情、生機",
+    "unit": 7,
+    "example": "It was a performance of verve and vitality.",
+    "exampleZh": "這是一場充滿激情與活力的演出。"
+  },
+  {
+    "id": 6465,
+    "en": "vocal",
+    "kk": "[ˋvokəl]",
+    "uk": "/ˈvəʊk(ə)l/",
+    "zh": "adj. 嗓音的、發聲的、歌唱的、直言不諱的；n. 歌唱部分、聲樂部分",
+    "unit": 7,
+    "example": "Orbison's vocal range spanned three octaves.",
+    "exampleZh": "奧畢森的音域跨越三個八度。"
+  },
+  {
+    "id": 6466,
+    "en": "vocation",
+    "kk": "[voˋkeʃən]",
+    "uk": "/vəʊˈkeɪʃ(ə)n/",
+    "zh": "n. 行業、天職、使命感、工作",
+    "unit": 7,
+    "example": "He has a vocation for teaching.",
+    "exampleZh": "他是教書的材料。"
+  },
+  {
+    "id": 6467,
+    "en": "vogue",
+    "kk": "[voɡ]",
+    "uk": "/vəʊɡ/",
+    "zh": "n. 風行、時髦事物、流行、時髦；adj. 時髦的、流行的；v. 隨音樂跳舞",
+    "unit": 7,
+    "example": "That Vogue is from two months ago.",
+    "exampleZh": "那本《時尚》是兩個月前的了。"
+  },
+  {
+    "id": 6468,
+    "en": "vomit",
+    "kk": "[ˋvɑmət]",
+    "uk": "/ˈvɒmɪt/",
+    "zh": "vt. 嘔吐、吐、噴出、吐出；n. 嘔吐物、嘔吐、催吐劑",
+    "unit": 7,
+    "example": "Any product made from cow's milk made him vomit.",
+    "exampleZh": "任何牛奶製品都會讓他嘔吐。"
+  },
+  {
+    "id": 6469,
+    "en": "wardrobe",
+    "kk": "[ˋwɔr͵drob]",
+    "uk": "/ˈwɔːdrəʊb/",
+    "zh": "n. 衣櫃、全部服裝、衣櫥、服裝部",
+    "unit": 7,
+    "example": "Jeans are a staple part of everyone's wardrobe.",
+    "exampleZh": "在每個人的衣櫥裡，牛仔褲是必不可少的。"
+  },
+  {
+    "id": 6470,
+    "en": "warfare",
+    "kk": "[ˋwɔr͵fɛr]",
+    "uk": "/ˈwɔːfeə(r)/",
+    "zh": "n. 戰爭、衝突、鬥爭、作戰",
+    "unit": 7,
+    "example": "These clashes could develop into open warfare.",
+    "exampleZh": "這些衝突可能會發展成公開的戰爭。"
+  },
+  {
+    "id": 6471,
+    "en": "warranty",
+    "kk": "[ˋwɔrənti]",
+    "uk": "/ˈwɒrənti/",
+    "zh": "n. 保證書、保單、保修單、保用卡",
+    "unit": 7,
+    "example": "Is the car still under warranty ?",
+    "exampleZh": "這輛汽車仍在保修期內嗎？"
+  },
+  {
+    "id": 6472,
+    "en": "windshield",
+    "kk": "[ˋwɪnd͵ʃild]",
+    "uk": "/ˈwɪndʃiːld/",
+    "zh": "n. 擋風玻璃、風擋",
+    "unit": 7,
+    "example": "The front windshield was misting over.",
+    "exampleZh": "前擋風玻璃蒙上了一層水汽。"
+  },
+  {
+    "id": 6473,
+    "en": "wrench",
+    "kk": "[rɛntʃ]",
+    "uk": "/rentʃ/",
+    "zh": "vt. 猛拉、猛扭、掙脫、扭傷；n. 扳手、扳鉗、痛苦、難受",
+    "unit": 7,
+    "example": "Leaving home was a terrible wrench for me.",
+    "exampleZh": "對我來說離開家是件十分痛苦的事。"
+  },
+  {
+    "id": 6474,
+    "en": "wrestle",
+    "kk": "[ˋrɛsəl]",
+    "uk": "/ˈres(ə)l/",
+    "zh": "v. 摔跤、扭打、使勁搬動、用力操作；n. 摔跤、角力、艱苦的鬥爭、搏鬥",
+    "unit": 7,
+    "example": "They taught me to wrestle.",
+    "exampleZh": "他們教我去摔跤。"
+  },
+  {
+    "id": 6475,
+    "en": "Xerox",
+    "kk": "[ˋzɪrɑks]",
+    "uk": "/ˈzɪərɒks/",
+    "zh": "n. 施樂、靜電影印機、影印機、影印件；vt. 用靜電覆印法影印",
+    "unit": 7,
+    "example": "Could you xerox this letter, please?",
+    "exampleZh": "請影印一下這封信好嗎？"
+  },
+  {
+    "id": 6476,
+    "en": "zeal",
+    "kk": "[zil]",
+    "uk": "/ziːl/",
+    "zh": "n. 熱心、熱誠、熱情、熱忱",
+    "unit": 7,
+    "example": "His reforming zeal was boundless.",
+    "exampleZh": "他的改革熱情是無窮盡的。"
+  },
+  {
+    "id": 6477,
+    "en": "I",
+    "kk": "[aɪ]",
+    "uk": "/aɪ/",
+    "zh": "pron. 我；n. 英語字母I",
+    "unit": 7,
+    "example": "I feel I should resign.",
+    "exampleZh": "我認為我應該辭職。"
+  },
+  {
+    "id": 6478,
+    "en": "me",
+    "kk": "[mi]",
+    "uk": "/miː; mi/",
+    "zh": "pron. 我；n. 自我、極端自私的人、自我的一部分",
+    "unit": 7,
+    "example": "She sailed past me, ignoring me completely.",
+    "exampleZh": "她從我身邊翩然走過，看都不看我一眼。"
+  },
+  {
+    "id": 6479,
+    "en": "my",
+    "kk": "[maɪ]",
+    "uk": "/maɪ/",
+    "zh": "pron. 我的；int. 哎呀、喔唷",
+    "unit": 7,
+    "example": "My children are my life.",
+    "exampleZh": "我這幾個孩子就是我的命根子。"
+  },
+  {
+    "id": 6480,
+    "en": "you",
+    "kk": "[ju]",
+    "uk": "/juː; jʊ/",
+    "zh": "pron. 你、你們、泛指任何人",
+    "unit": 7,
+    "example": "You two seem very different to me.",
+    "exampleZh": "你們倆在我看來似乎很不同。"
+  },
+  {
+    "id": 6481,
+    "en": "your",
+    "kk": "[jɔr]",
+    "uk": "/jɔː(r); jə(r)/",
+    "zh": "det. 你的、你們的、泛指任何人的、通常所說的",
+    "unit": 7,
+    "example": "This isn't your typical economics class.",
+    "exampleZh": "這不是人們所認為的典型的經濟學課。"
+  },
+  {
+    "id": 6482,
+    "en": "yours",
+    "kk": "[jʊrz]",
+    "uk": "/jɔːz/",
+    "zh": "pron. 你（們）的東西、你的責任[義務]、你的家屬；adj. 你（們）的、信末署名前用語",
+    "unit": 7,
+    "example": "The money's not yours, it's John's.",
+    "exampleZh": "這錢不是你的，是約翰的。"
+  },
+  {
+    "id": 6483,
+    "en": "he",
+    "kk": "[hi]",
+    "uk": "/hiː; hi/",
+    "zh": "pron. 他、人、上帝；n. 男性、男子、雄性動物、（中、美、丹）赫",
+    "unit": 7,
+    "example": "He feels he is blameless.",
+    "exampleZh": "他覺得自己是清白的。"
+  },
+  {
+    "id": 6484,
+    "en": "him",
+    "kk": "[hɪm]",
+    "uk": "/hɪm/",
+    "zh": "pron. 他、它、用於泛指不限定性別的人",
+    "unit": 7,
+    "example": "Go to him, tell him you're sorry.",
+    "exampleZh": "去找他，告訴他你很抱歉。"
+  },
+  {
+    "id": 6485,
+    "en": "his",
+    "kk": "[hɪz]",
+    "uk": "/hɪz; ɪz/",
+    "zh": "det. 他的、它的；pron. 他的",
+    "unit": 7,
+    "example": "His weight was harming his health.",
+    "exampleZh": "他沉重的體重正危害著他的健康。"
+  },
+  {
+    "id": 6486,
+    "en": "she",
+    "kk": "[ʃi]",
+    "uk": "/ʃiː; ʃi/",
+    "zh": "pron. 她、它",
+    "unit": 7,
+    "example": "She doesn't work here, does she?",
+    "exampleZh": "她不在此地工作，對吧？"
+  },
+  {
+    "id": 6487,
+    "en": "her",
+    "kk": "[hɝ]",
+    "uk": "/hɜː(r); hə(r)/",
+    "zh": "pron. 她的、她",
+    "unit": 7,
+    "example": "Her age is against her.",
+    "exampleZh": "她的年齡對她不利。"
+  },
+  {
+    "id": 6488,
+    "en": "hers",
+    "kk": "[hɚz]",
+    "uk": "/hɜːz/",
+    "zh": "pron. 她的東西、她的、屬於她的",
+    "unit": 7,
+    "example": "His income is double hers.",
+    "exampleZh": "他的收入是她的兩倍。"
+  },
+  {
+    "id": 6489,
+    "en": "it",
+    "kk": "[ɪt]",
+    "uk": "/ɪt/",
+    "zh": "pron. 它、這、那、用於指某人；n. 捉人者、找人者、義大利苦艾酒、味美思酒；abbr. 資訊科技",
+    "unit": 7,
+    "example": "It really isn't half bad, is it?",
+    "exampleZh": "這的確很不錯，對嗎？"
+  },
+  {
+    "id": 6490,
+    "en": "its",
+    "kk": "[ɪts]",
+    "uk": "/ɪts/",
+    "zh": "pron. 它的、其",
+    "unit": 7,
+    "example": "This made its mini-computers incompatible with its mainframes.",
+    "exampleZh": "這使得它的微型電腦與其主機不相容。"
+  },
+  {
+    "id": 6491,
+    "en": "we",
+    "kk": "[wi]",
+    "uk": "/wiː; wi/",
+    "zh": "pron. 我們、筆者、本人、朕",
+    "unit": 7,
+    "example": "We thought we had them licked.",
+    "exampleZh": "我們以為已經輕易地把他們對付過去了。"
+  },
+  {
+    "id": 6492,
+    "en": "us",
+    "kk": "[ʌs]",
+    "uk": "/ʌs; əs/",
+    "zh": "pron. 我們",
+    "unit": 7,
+    "example": "He regarded us suspiciously.",
+    "exampleZh": "他以懷疑的眼光看著我們。"
+  },
+  {
+    "id": 6493,
+    "en": "our",
+    "kk": "[ˋaʊɚ]",
+    "uk": "/ˈaʊə(r)/",
+    "zh": "pron. 我們的",
+    "unit": 7,
+    "example": "Our superior technology is our ace in the hole.",
+    "exampleZh": "我們的優越技術是我們手中的王牌。"
+  },
+  {
+    "id": 6494,
+    "en": "ours",
+    "kk": "[ˋaʊɚz]",
+    "uk": "/ˈaʊəz/",
+    "zh": "pron. 我們的東西、我們的、屬於我們的",
+    "unit": 7,
+    "example": "Ours is a secular society.",
+    "exampleZh": "我們的社會是個世俗社會。"
+  },
+  {
+    "id": 6495,
+    "en": "they",
+    "kk": "[ðe]",
+    "uk": "/ðeɪ/",
+    "zh": "pron. 他們、第三人稱複數主格代詞：他們、她們、它們",
+    "unit": 7,
+    "example": "They knew they had been rumbled.",
+    "exampleZh": "他們知道自己已經被識破了。"
+  },
+  {
+    "id": 6496,
+    "en": "them",
+    "kk": "[ðɛm]",
+    "uk": "/ðem; ðəm/",
+    "zh": "pron. 他們、她們、它們、他/她",
+    "unit": 7,
+    "example": "Wyman watched them critically.",
+    "exampleZh": "懷曼批判地注視著他們。"
+  },
+  {
+    "id": 6497,
+    "en": "their",
+    "kk": "[ðɛr]",
+    "uk": "/ðeə(r)/",
+    "zh": "det. 他們的、她們的、它們的",
+    "unit": 7,
+    "example": "Their glasses clinked, their eyes met.",
+    "exampleZh": "他們碰杯慶祝，四目相接。"
+  },
+  {
+    "id": 6498,
+    "en": "theirs",
+    "kk": "[ðɛrz]",
+    "uk": "/ðeəz/",
+    "zh": "pron. 他們的東西、他們的、她們的、它們的",
+    "unit": 7,
+    "example": "It's a favourite game of theirs.",
+    "exampleZh": "這是他們最喜愛的遊戲。"
+  },
+  {
+    "id": 6499,
+    "en": "a",
+    "kk": "[ə]",
+    "uk": "/ə; eɪ/",
+    "zh": "art. 一、一個、任一、每一",
+    "unit": 7,
+    "example": "They had a butler, a cook, and a maid.",
+    "exampleZh": "他們有一位管家、一位廚師和一位女僕。"
+  },
+  {
+    "id": 6500,
+    "en": "an",
+    "kk": "[æn]",
+    "uk": "/æn; ən/",
+    "zh": "det. 一個；art. 一、一個",
+    "unit": 7,
+    "example": "An iron bar stuck out at an angle.",
+    "exampleZh": "一根鐵條成一定角度地突出來。"
+  },
+  {
+    "id": 6501,
+    "en": "the",
+    "kk": "[ðə]",
+    "uk": "/ðə; ði/",
+    "zh": "art. 定冠詞、這、那；adv. 更加",
+    "unit": 7,
+    "example": "The sun rises in the east and sets in the west every single day.",
+    "exampleZh": "太陽每天都從東方升起，從西方落下。"
+  },
+  {
+    "id": 6502,
+    "en": "was",
+    "kk": "[wɑz]",
+    "uk": "/wɒz; wəz/",
+    "zh": "vt. 是、在",
+    "unit": 7,
+    "example": "She was widowed when she was 35.",
+    "exampleZh": "她35歲時就守了寡。"
+  },
+  {
+    "id": 6503,
+    "en": "were",
+    "kk": "[wɝ]",
+    "uk": "/wɜː(r); wə(r)/",
+    "zh": "v. 是、在",
+    "unit": 7,
+    "example": "The kids were happy, the crowds were stoked.",
+    "exampleZh": "孩子們很高興，周圍的人也興奮起來了。"
+  },
+  {
+    "id": 6504,
+    "en": "been",
+    "kk": "[bɪn]",
+    "uk": "/biːn/",
+    "zh": "vi. 是、有、用於havebeento結構、去過",
+    "unit": 7,
+    "example": "You've been very kind.",
+    "exampleZh": "你真是體貼入微。"
+  },
+  {
+    "id": 6505,
+    "en": "does",
+    "kk": "[dʌz]",
+    "uk": "/dʌz/",
+    "zh": "v. 做、工作、有用",
+    "unit": 7,
+    "example": "What does this sentence mean?",
+    "exampleZh": "這個句子是什麼意思？"
+  },
+  {
+    "id": 6506,
+    "en": "did",
+    "kk": "[dɪd]",
+    "uk": "/dɪd/",
+    "zh": "v. 做、用作助動詞、構成一般過去時的疑問句、否定句和強調結構",
+    "unit": 7,
+    "example": "Did anyone see you?",
+    "exampleZh": "有沒有人見到了你？"
+  },
+  {
+    "id": 6507,
+    "en": "done",
+    "kk": "[dʌn]",
+    "uk": "/dʌn/",
+    "zh": "adj. 完成的、煮熟的、不再發生的、為社會所接受的；int. 行、好；v. 做",
+    "unit": 7,
+    "example": "She'd never done Pilates before.",
+    "exampleZh": "她以前從未做過普拉提。"
+  },
+  {
+    "id": 6508,
+    "en": "has",
+    "kk": "[hæz]",
+    "uk": "/hæz; həz/",
+    "zh": "v. 有、吃、得到、從事",
+    "unit": 7,
+    "example": "Vegetarianism has been mainstreamed.",
+    "exampleZh": "素食主義已為大多數人所接受。"
+  },
+  {
+    "id": 6509,
+    "en": "had",
+    "kk": "[hæd]",
+    "uk": "/hæd; həd/",
+    "zh": "aux. 已經；v. 有、擁有、吃、喝",
+    "unit": 7,
+    "example": "They had used what money they had.",
+    "exampleZh": "他們用盡了所有的錢。"
+  },
+  {
+    "id": 6510,
+    "en": "who",
+    "kk": "[hu]",
+    "uk": "/huː/",
+    "zh": "pron. 誰、那個人、什麼人、……的人",
+    "unit": 7,
+    "example": "Who did the timekeeping?",
+    "exampleZh": "誰做了計時工作？"
+  },
+  {
+    "id": 6511,
+    "en": "whom",
+    "kk": "[hum]",
+    "uk": "/huːm/",
+    "zh": "pron. 誰、……的人",
+    "unit": 7,
+    "example": "Whom do the police suspect?",
+    "exampleZh": "警方懷疑誰？"
+  },
+  {
+    "id": 6512,
+    "en": "whose",
+    "kk": "[huz]",
+    "uk": "/huːz/",
+    "zh": "pron. 誰的、其、……的；det. 誰的、其、……的",
+    "unit": 7,
+    "example": "Whose is that farm over yonder?",
+    "exampleZh": "那邊的農場是誰的？"
+  },
+  {
+    "id": 6515,
+    "en": "analyse",
+    "kk": "[ˋænə͵laɪz]",
+    "uk": "/ˈænəlaɪz/",
+    "zh": "vt. 分析、解析、細察、分解",
+    "unit": 7,
+    "example": "He tried to analyse his feelings.",
+    "exampleZh": "他試圖分析自己的感情。"
+  },
+  {
+    "id": 6516,
+    "en": "anybody",
+    "kk": "[ˋɛnibədi]",
+    "uk": "/ˈenibɒdi/",
+    "zh": "pron. 任何人、隨便哪一個人、有人、別人；n. 重要人物、平常人",
+    "unit": 7,
+    "example": "Hello, is there anybody there?",
+    "exampleZh": "喂，那裡有人嗎？"
+  },
+  {
+    "id": 6517,
+    "en": "anyone",
+    "kk": "[ˋɛni͵wʌn]",
+    "uk": "/ˈeniwʌn/",
+    "zh": "pron. 任何人、無論誰、任何一個人、某個人",
+    "unit": 7,
+    "example": "Anyone can appreciate our music.",
+    "exampleZh": "任何人都能欣賞我們的音樂。"
+  },
+  {
+    "id": 6518,
+    "en": "anything",
+    "kk": "[ˋɛni͵θɪŋ]",
+    "uk": "/ˈeniθɪŋ/",
+    "zh": "pron. 任何事物、某事物、任一事物、任何……的事物",
+    "unit": 7,
+    "example": "More than anything else, he wanted to become a teacher.",
+    "exampleZh": "比起任何別的職業，他更想當老師。"
+  },
+  {
+    "id": 6519,
+    "en": "approximately",
+    "kk": "[əˋprɑksəmətli]",
+    "uk": "/əˈprɒksɪmətli/",
+    "zh": "adv. 大約、近似地、大概",
+    "unit": 7,
+    "example": "The journey took approximately seven hours.",
+    "exampleZh": "旅程大約花了七個小時。"
+  },
+  {
+    "id": 6520,
+    "en": "beginning",
+    "kk": "[bɪˋɡɪnɪŋ]",
+    "uk": "/bɪˈɡɪnɪŋ/",
+    "zh": "n. 開始、起初、開端、序曲；adj. 初級的、基本的；v. 開始、著手",
+    "unit": 7,
+    "example": "The snow was beginning to melt.",
+    "exampleZh": "積雪開始融化了。"
+  },
+  {
+    "id": 6521,
+    "en": "birthday",
+    "kk": "[ˋbɝθ͵de]",
+    "uk": "/ˈbɜːθdeɪ/",
+    "zh": "n. 生日、誕辰、出生日期、誕生的日子",
+    "unit": 7,
+    "example": "We threw a huge birthday party.",
+    "exampleZh": "我們舉辦了一次盛大的生日派對。"
+  },
+  {
+    "id": 6522,
+    "en": "certainly",
+    "kk": "[ˋsɝtənli]",
+    "uk": "/ˈsɜːt(ə)nli/",
+    "zh": "adv. 當然、確實、無疑、確定",
+    "unit": 7,
+    "example": "She certainly knows what's what.",
+    "exampleZh": "她當然知道輕重緩急。"
+  },
+  {
+    "id": 6523,
+    "en": "classroom",
+    "kk": "[ˋklæ͵srum]",
+    "uk": "/ˈklɑːsruːm/",
+    "zh": "n. 教室、課堂",
+    "unit": 7,
+    "example": "She'd sent him outside the classroom.",
+    "exampleZh": "她叫他到教室外面去。"
+  },
+  {
+    "id": 6527,
+    "en": "European",
+    "kk": "[͵jʊrəˋpiən]",
+    "uk": "/ˌjʊərəˈpiːən/",
+    "zh": "adj. 歐洲的、歐洲人的；n. 歐洲人",
+    "unit": 7,
+    "example": "Most European spiders don't bite.",
+    "exampleZh": "大多數歐洲蜘蛛不咬人。"
+  },
+  {
+    "id": 6528,
+    "en": "everybody",
+    "kk": "[ˋɛvri͵bɑdi]",
+    "uk": "/ˈevribɒdi/",
+    "zh": "pron. 每個人、人人",
+    "unit": 7,
+    "example": "I wanted everybody to share.",
+    "exampleZh": "我希望大家一起分享。"
+  },
+  {
+    "id": 6529,
+    "en": "everyone",
+    "kk": "[ˋɛvri͵wʌn]",
+    "uk": "/ˈevriwʌn/",
+    "zh": "pron. 每個人、所有人、人人、大家",
+    "unit": 7,
+    "example": "Everyone began talking at once.",
+    "exampleZh": "大家同時開始講話。"
+  },
+  {
+    "id": 6530,
+    "en": "everything",
+    "kk": "[ˋɛvri͵θɪŋ]",
+    "uk": "/ˈevriθɪŋ/",
+    "zh": "pron. 一切、所有事物、每件事物、萬事",
+    "unit": 7,
+    "example": "Relax! Everything will be OK.",
+    "exampleZh": "彆著急！一切都會好的。"
+  },
+  {
+    "id": 6531,
+    "en": "everywhere",
+    "kk": "[ˋɛvri͵wɛr]",
+    "uk": "/ˈevriweə(r)/",
+    "zh": "adv. 到處、各處、處處；n. 每個地方、所有地方",
+    "unit": 7,
+    "example": "I saw her picture everywhere.",
+    "exampleZh": "我到處看到她的照片。"
+  },
+  {
+    "id": 6532,
+    "en": "exciting",
+    "kk": "[ɪkˋsaɪtɪŋ]",
+    "uk": "/ɪkˈsaɪtɪŋ/",
+    "zh": "adj. 令人興奮的、刺激的、令人激動的、驚險刺激的；v. 使興奮、使激動、激發、引起",
+    "unit": 7,
+    "example": "Every day was exciting and adventuresome.",
+    "exampleZh": "過去的每一天都令人興奮充滿驚險和刺激。"
+  },
+  {
+    "id": 6533,
+    "en": "finally",
+    "kk": "[ˋfaɪnəli]",
+    "uk": "/ˈfaɪnəli/",
+    "zh": "adv. 最後、終於、總之、決定性地",
+    "unit": 7,
+    "example": "Finally she drifted into sleep.",
+    "exampleZh": "最後她不知不覺地睡著了。"
+  },
+  {
+    "id": 6537,
+    "en": "frequently",
+    "kk": "[ˋfrikwəntli]",
+    "uk": "/ˈfriːkwəntli/",
+    "zh": "adv. 經常地、頻繁地",
+    "unit": 7,
+    "example": "His refrigerator frequently looked half empty.",
+    "exampleZh": "他的冰箱經常看上去有點兒空。"
+  },
+  {
+    "id": 6539,
+    "en": "probably",
+    "kk": "[ˋprɑbəb͵li]",
+    "uk": "/ˈprɒbəbli/",
+    "zh": "adv. 可能地、大概、或許",
+    "unit": 7,
+    "example": "It was probably infested with cooties.",
+    "exampleZh": "它可能是染上蝨子了。"
+  },
+  {
+    "id": 6540,
+    "en": "really",
+    "kk": "[ˋrɪli]",
+    "uk": "/ˈriːəli/",
+    "zh": "adv. 真正地、確實、事實上、確實的；int. 真的、真是的！、是啊！",
+    "unit": 7,
+    "example": "This sweater really itches.",
+    "exampleZh": "這件毛衣真刺癢。"
+  },
+  {
+    "id": 6542,
+    "en": "should",
+    "kk": "[ʃʊd]",
+    "uk": "/ʃʊd; ʃəd/",
+    "zh": "v. 應該、該、可以、應該會；aux. 應該、應當",
+    "unit": 7,
+    "example": "This should save you shedloads.",
+    "exampleZh": "這應該可以幫你省下許多錢。"
+  },
+  {
+    "id": 6543,
+    "en": "suddenly",
+    "kk": "[ˋsʌdənli]",
+    "uk": "/ˈsʌd(ə)nli/",
+    "zh": "adv. 突然地、忽然、出乎意料地",
+    "unit": 7,
+    "example": "'Listen!' said Doyle suddenly.",
+    "exampleZh": "“你聽！”多伊爾突然說。"
+  },
+  {
+    "id": 6545,
+    "en": "usually",
+    "kk": "[ˋjuʒəwəli]",
+    "uk": "/ˈjuːʒuəli; ˈjuːʒəli/",
+    "zh": "adv. 通常、一般、通常地、經常地",
+    "unit": 7,
+    "example": "Windows are usually sealed off.",
+    "exampleZh": "窗戶通常是封閉的。"
+  },
+  {
+    "id": 6546,
+    "en": "yourself",
+    "kk": "[jɚˋsɛlf]",
+    "uk": "/jɔːˈself/",
+    "zh": "pron. 你自己",
+    "unit": 7,
+    "example": "You're driving yourself too hard.",
+    "exampleZh": "你把自己弄得太累了。"
+  },
+  {
+    "id": 6547,
+    "en": "cheeseburger",
+    "kk": "[ˋtʃizbɚɡɚ]",
+    "uk": "/ˈtʃiːzbɜːɡə(r)/",
+    "zh": "n. 起司漢堡、乳酪漢堡",
+    "unit": 7,
+    "example": "He ordered a cheeseburger and large fries for lunch.",
+    "exampleZh": "他午餐點了一個起司漢堡和大份薯條。"
+  },
+  {
+    "id": 6548,
+    "en": "Boston",
+    "kk": "[ˋbɑstən]",
+    "uk": "/ˈbɒstən/",
+    "zh": "n. 波士頓",
+    "unit": 7,
+    "example": "She moved to Boston to study medicine at Harvard.",
+    "exampleZh": "她搬到波士頓在哈佛大學攻讀醫學。"
+  },
+  {
+    "id": 6549,
+    "en": "becomes",
+    "kk": "[bɪˋkʌmz]",
+    "uk": "/bɪˈkʌmz/",
+    "zh": "vt. 變成、成為、變得、適合",
+    "unit": 7,
+    "example": "The weather becomes cooler as autumn approaches.",
+    "exampleZh": "隨著秋天臨近，天氣變得越來越涼爽。"
+  },
+  {
+    "id": 6550,
+    "en": "wrote",
+    "kk": "[rot]",
+    "uk": "/rəʊt/",
+    "zh": "v. 寫道、寫了、寫",
+    "unit": 7,
+    "example": "She wrote a heartfelt letter of appreciation to her mentor.",
+    "exampleZh": "她寫了一封真摯的感謝信給她的導師。"
+  },
+  {
+    "id": 6551,
+    "en": "poems",
+    "kk": "[ˋpoəmz]",
+    "uk": "",
+    "zh": "n. 詩、詩歌、詩作、詩集",
+    "unit": 7,
+    "example": "He enjoys reading classic poems in his spare time.",
+    "exampleZh": "他喜歡在閒暇時閱讀古典詩歌。"
+  },
+  {
+    "id": 6552,
+    "en": "orderings",
+    "kk": "[ˋɔrdɚɪŋz]",
+    "uk": "",
+    "zh": "n. 訂單、排序",
+    "unit": 7,
+    "example": "The online system handles hundreds of food orderings each minute.",
+    "exampleZh": "這個線上系統每分鐘處理數百筆餐飲訂單。"
+  },
+  {
+    "id": 6553,
+    "en": "neighbours",
+    "kk": "[ˋnebɚz]",
+    "uk": "/ˈneɪbɜ:rz/",
+    "zh": "n. 鄰居、同胞、仁慈的人；v. 鄰近、親近",
+    "unit": 7,
+    "example": "We are very fortunate to have friendly and helpful neighbours.",
+    "exampleZh": "我們非常幸運能擁有友善且樂於助人的鄰居。"
+  },
+  {
+    "id": 6554,
+    "en": "wireless",
+    "kk": "[ˋwaɪrlɪs]",
+    "uk": "/ˈwaɪələs/",
+    "zh": "adj. 無線的、使用無線電訊號的；n. 無線電發射和接收系統、無線電收音機；v. 用無線電報與…聯絡、打無線電話",
+    "unit": 7,
+    "example": "The office provides high-speed wireless Internet for all visitors.",
+    "exampleZh": "辦公室為所有訪客提供高速無線網路。"
+  },
+  {
+    "id": 6555,
+    "en": "inflammatory",
+    "kk": "[ɪnˋflæmə͵tɔri]",
+    "uk": "/ɪnˈflæmət(ə)ri/",
+    "zh": "adj. 發炎的、煽動性的、炎症性的、炎性的",
+    "unit": 7,
+    "example": "Eating fresh berries can help reduce inflammatory symptoms in the body.",
+    "exampleZh": "食用新鮮莓果有助於減輕體內的發炎症狀。"
+  },
+  {
+    "id": 6556,
+    "en": "continues",
+    "kk": "[kənˋtɪnjuz]",
+    "uk": "/kənˈtɪnjuːz/",
+    "zh": "v. 繼續、持續、連續、中斷後繼續",
+    "unit": 7,
+    "example": "The company continues to invest in renewable energy research.",
+    "exampleZh": "該公司持續投資於可再生能源的研究。"
+  },
+  {
+    "id": 6557,
+    "en": "relatively",
+    "kk": "[ˋrɛlətɪvli]",
+    "uk": "/ˈrelətɪvli/",
+    "zh": "adv. 相對地、比較而言、相當地",
+    "unit": 7,
+    "example": "The newly launched smartphone is relatively inexpensive compared to others.",
+    "exampleZh": "與其他手機相比，這款新推出的智慧型手機相對便宜。"
+  },
+  {
+    "id": 6558,
+    "en": "biomechanics",
+    "kk": "[͵baɪomɪˋkænɪks]",
+    "uk": "/ˌbaɪəʊməˈkænɪks/",
+    "zh": "n. 生物力學、也譯“生物機械學”、又指生物體、器官或動作的力學特徵與運動機制",
+    "unit": 7,
+    "example": "Sports scientists study biomechanics to improve athletes' performance.",
+    "exampleZh": "運動科學家研究生物力學以提升運動員的表現。"
+  },
+  {
+    "id": 6559,
+    "en": "devastation",
+    "kk": "[͵dɛvəˋsteʃən]",
+    "uk": "/ˌdevəˈsteɪʃn/",
+    "zh": "n. 破壞、毀滅、毀壞、荒廢",
+    "unit": 7,
+    "example": "The powerful earthquake caused massive devastation along the coast.",
+    "exampleZh": "強烈地震沿岸造成了巨大的破壞與毀滅。"
+  },
+  {
+    "id": 6560,
+    "en": "hurried",
+    "kk": "[ˋhɝid]",
+    "uk": "/ˈhʌrid/",
+    "zh": "adj. 慌忙的、匆忙的、倉促的、草率的；v. hurry的過去式和過去分詞：催促、匆忙進行、急派",
+    "unit": 7,
+    "example": "He ate a hurried breakfast before running to catch the train.",
+    "exampleZh": "他匆匆忙忙吃了早餐，然後跑去趕火車。"
+  },
+  {
+    "id": 6561,
+    "en": "ambiance",
+    "kk": "[ˋæmbiəns]",
+    "uk": "/ˈæmbiəns/",
+    "zh": "n. 氣氛、氛圍、情調、周圍環境",
+    "unit": 7,
+    "example": "The soft lighting and jazz music create a warm and cozy ambiance.",
+    "exampleZh": "柔和的燈光和爵士樂營造出溫暖舒適的氛圍。"
+  },
+  {
+    "id": 6562,
+    "en": "expecting",
+    "kk": "[ɪkˋspɛktɪŋ]",
+    "uk": "/ɪkˈspektɪŋ/",
+    "zh": "vt. 期待、預期、企盼；adj. 懷孕的、懷有身孕的",
+    "unit": 7,
+    "example": "We are expecting several international guests to arrive tomorrow.",
+    "exampleZh": "我們預計明天會有幾位國際貴賓到達。"
+  },
+  {
+    "id": 6563,
+    "en": "Charles",
+    "kk": "[tʃɑrlz]",
+    "uk": "/tʃɑːlz/",
+    "zh": "n. 查爾斯",
+    "unit": 7,
+    "example": "Charles Dickens is one of the most famous British novelists.",
+    "exampleZh": "查爾斯·狄更斯是英國最著名的名作家之一。"
+  },
+  {
+    "id": 6564,
+    "en": "draughts",
+    "kk": "[dræfts]",
+    "uk": "/drɑːfts/",
+    "zh": "n. 草稿、西洋跳棋、國際跳棋、穿堂風",
+    "unit": 7,
+    "example": "He enjoys playing draughts with his grandfather on weekends.",
+    "exampleZh": "他週末喜歡和爺爺一起下西洋跳棋。"
+  },
+  {
+    "id": 6565,
+    "en": "architectural",
+    "kk": "[͵ɑrkəˋtɛktʃɚəl]",
+    "uk": "/ˌɑːkɪˈtektʃərəl/",
+    "zh": "adj. 建築學的、建築風格的、建築方面的、與建築物相似的",
+    "unit": 7,
+    "example": "The ancient city is well known for its unique architectural design.",
+    "exampleZh": "這座古城以其獨特的建築設計風格而聞名。"
+  },
+  {
+    "id": 6566,
+    "en": "arrived",
+    "kk": "[ɚˋaɪvd]",
+    "uk": "/əˈraɪvd/",
+    "zh": "vi. 到達、抵達、抵港、arrivedat：到達；adj. 已到達的",
+    "unit": 7,
+    "example": "The delivery package finally arrived at our doorstep this morning.",
+    "exampleZh": "包裹今天早上終於送達了我們的家門口。"
+  },
+  {
+    "id": 6567,
+    "en": "borrowed",
+    "kk": "[ˋbɑrod]",
+    "uk": "/ˈbɒrəʊd/",
+    "zh": "adj. 借來的、抄襲的、借入的、借用的；vt. 借用、借入、borrow的過去式和過去分詞：借、採用；n. borrowedtime：本應結束卻仍在延續的時間、苟延殘喘的時光",
+    "unit": 7,
+    "example": "He returned the book he had borrowed from the public library.",
+    "exampleZh": "他歸還了從公共圖書館借來的那本書。"
+  },
+  {
+    "id": 6568,
+    "en": "sank",
+    "kk": "[sæŋk]",
+    "uk": "/sæŋk/",
+    "zh": "vt. sink的過去式（及物）：使下沉、使沉沒、擊沉、使陷入；vi. sink的過去式（不及物）：下沉、沉沒、墜落、陷入",
+    "unit": 7,
+    "example": "The old wooden ship sank to the bottom of the ocean during the storm.",
+    "exampleZh": "那艘老舊的木船在暴風雨中沉沒到大洋海底。"
+  },
+  {
+    "id": 6569,
+    "en": "disappeared",
+    "kk": "[͵dɪsəˋpɪrd]",
+    "uk": "/dɪsəˈpɪəd/",
+    "zh": "adj. 消失的、消失了的；vi. 消失、不見、失蹤、丟失；n. 被秘密逮捕（或處決）的人",
+    "unit": 7,
+    "example": "The sun quickly disappeared behind the thick dark clouds.",
+    "exampleZh": "太陽迅速消失在濃厚的烏雲後方。"
+  },
+  {
+    "id": 6570,
+    "en": "commend",
+    "kk": "[kəˋmɛnd]",
+    "uk": "/kəˈmend/",
+    "zh": "v. 稱讚、表揚、推薦、讚揚",
+    "unit": 7,
+    "example": "The mayor decided to commend the firefighters for their bravery.",
+    "exampleZh": "市長決定表揚消防員們的英勇表現。"
+  },
+  {
+    "id": 6571,
+    "en": "discounts",
+    "kk": "[ˋdɪskaʊnts]",
+    "uk": "",
+    "zh": "n. 折扣、減價、優惠；vt. 打折、降價出售、不全信",
+    "unit": 7,
+    "example": "Many stores offer special discounts to students and senior citizens.",
+    "exampleZh": "許多商店為學生與年長者提供特別折扣。"
+  },
+  {
+    "id": 6572,
+    "en": "remained",
+    "kk": "[rɪˋmend]",
+    "uk": "/rɪˈmeɪnd/",
+    "zh": "vi. 留下、逗留、保持、仍是、停留",
+    "unit": 7,
+    "example": "Only a few ruins remained after the ancient temple collapsed.",
+    "exampleZh": "這座古廟倒塌後，只留下了少數廢墟。"
+  },
+  {
+    "id": 6573,
+    "en": "accusations",
+    "kk": "[͵ækjəˋzeʃənz]",
+    "uk": "/ˌækjuˈzeɪʃnz/",
+    "zh": "n. 指控、指責、控告、譴責、罪名",
+    "unit": 7,
+    "example": "He firmly denied all accusations of corruption made against him.",
+    "exampleZh": "他堅決否認所有針對他的貪腐指控。"
+  },
+  {
+    "id": 6574,
+    "en": "drove",
+    "kk": "[drov]",
+    "uk": "/drəʊv/",
+    "zh": "v. 開車、駕駛、驅使、駕車送、迫使；n. 畜群、人群",
+    "unit": 7,
+    "example": "She drove her children to school early every morning.",
+    "exampleZh": "她每天早晨都開車載孩子們去學校。"
+  },
+  {
+    "id": 6575,
+    "en": "hilariously",
+    "kk": "[hɪˋlɛrɪəslɪ]",
+    "uk": "/hɪˈleəriəsli/",
+    "zh": "adv. 滑稽地、好笑地、令人捧腹地、引人發笑地",
+    "unit": 7,
+    "example": "The comedian acted hilariously on stage and made everyone burst into laughter.",
+    "exampleZh": "那位喜劇演員在舞台上表演得極為滑稽，把大家逗得捧腹大笑。"
+  },
+  {
+    "id": 6576,
+    "en": "clamped",
+    "kk": "[klæmpt]",
+    "uk": "/klæmpt/",
+    "zh": "vt. 夾緊、固定、鉗住、強行壓制；adj. 夾緊的、被固定的",
+    "unit": 7,
+    "example": "The mechanic clamped the metal pipe tightly to the workbench.",
+    "exampleZh": "技工把金屬管牢牢地夾緊在工作台上。"
+  },
+  {
+    "id": 6577,
+    "en": "offered",
+    "kk": "[ˋɔfɚd]",
+    "uk": "/ˈɒfəd/",
+    "zh": "vt. 提供、給予、出價、表示願意",
+    "unit": 7,
+    "example": "The manager offered him a high-paying job with full benefits.",
+    "exampleZh": "經理提供給他一份高薪且福利齊全的工作。"
+  },
+  {
+    "id": 6578,
+    "en": "seats",
+    "kk": "[sits]",
+    "uk": "/siːts/",
+    "zh": "n. 座位、席位、席次、所在地；vt. 就座、容納、使就座",
+    "unit": 7,
+    "example": "All the front seats in the concert hall were already taken.",
+    "exampleZh": "音樂廳前排的所有座位都已經被坐滿了。"
+  },
+  {
+    "id": 6579,
+    "en": "checkmate",
+    "kk": "[ˋtʃɛk͵met]",
+    "uk": "/ˈtʃek.meɪt/",
+    "zh": "vt. （西洋棋中）將死、徹底擊敗、制勝；n. （西洋棋中的）將死、絕境、徹底失敗",
+    "unit": 1,
+    "example": "His king had been checkmated.",
+    "exampleZh": "他的國王已被將死。"
+  },
+  {
+    "id": 6580,
+    "en": "levels",
+    "kk": "[ˋlɛvəlz]",
+    "uk": "/ˈlev.əlz/",
+    "zh": "n. 水平、數量、程度、標準；vt. 使平整、夷平",
+    "unit": 1,
+    "example": "Water levels are very low today.",
+    "exampleZh": "今天的水位非常低。"
+  },
+  {
+    "id": 6581,
+    "en": "results",
+    "kk": "[rɪˋzʌlts]",
+    "uk": "/rɪˈzʌlts/",
+    "zh": "n. 結果、後果、成效；vi. 導致、產生、造成",
+    "unit": 1,
+    "example": "The test results were very good.",
+    "exampleZh": "測驗結果非常良好。"
+  }
+]

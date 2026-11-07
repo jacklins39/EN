@@ -51714,10 +51714,10 @@ const externalVocabularyDB = [
         "en": "savage",
         "kk": "[ˋsævədʒ]",
         "uk": "/ˈsævɪdʒ/",
-        "zh": "adj. 兇猛的、殘暴的、猛烈的、惡狠狠的；n. 未開化的人、野蠻人、兇狠殘暴的人、長鬚半裸帶葉環男人形；vt. 兇猛攻擊、撕咬、激烈抨擊、猛烈批評",
+        "zh": "adj. 兇猛的、殘暴的、猛烈的；n. 未開化的人、野蠻人；vt. 兇猛攻擊",
         "unit": 6,
         "example": "This was a savage attack on a defenceless young girl.",
-        "exampleZh": "這是對一個無力自衛的小姑娘的野蠻襲擊。"
+        "exampleZh": "這是對一個無力自衛的小女孩的野蠻襲擊。"
     },
     {
         "id": 5173,
@@ -52684,10 +52684,10 @@ const externalVocabularyDB = [
         "en": "sulfur",
         "kk": "[ˋsʌlfɚ]",
         "uk": "/ˈsʌlfə(r)/",
-        "zh": "n. 硫、硫磺色、硫磺、美洲粉蝶；v. 用硫磺處理",
+        "zh": "n. 硫、硫磺；vt. 用硫磺處理",
         "unit": 6,
-        "example": "After the fragments' entry, these analyses revealed unprecedented traces of sulfur.",
-        "exampleZh": "在碎片進入之後，這些分析揭示了前所未有的硫磺痕跡。"
+        "example": "These analyses revealed unprecedented traces of sulfur.",
+        "exampleZh": "這些分析揭示了前所未有的硫磺痕跡。"
     },
     {
         "id": 5270,
@@ -52774,10 +52774,10 @@ const externalVocabularyDB = [
         "en": "tart",
         "kk": "[tɑrt]",
         "uk": "/tɑːt/",
-        "zh": "n. 水果餡餅、水果蛋糕、甜餡餅、妓女；adj. 酸的、尖酸的、刻薄的；v. 打扮以引人注目",
+        "zh": "n. 水果餡餅、甜餡餅；adj. 酸的、尖酸的、刻薄的",
         "unit": 6,
         "example": "The tart flavour of the cranberries adds piquancy.",
-        "exampleZh": "越橘的酸味很可口。"
+        "exampleZh": "蔓越莓的酸味增添了令人愉悅的風味。"
     },
     {
         "id": 5279,
@@ -53214,10 +53214,10 @@ const externalVocabularyDB = [
         "en": "tuna",
         "kk": "[ˋtunə]",
         "uk": "/ˈtjuːnə/",
-        "zh": "n. 鮪魚、金槍魚、金槍魚肉、金武仙人掌",
+        "zh": "n. 鮪魚、金槍魚、鮪魚肉",
         "unit": 6,
         "example": "She began opening a can of tuna.",
-        "exampleZh": "她開始開啟一罐金槍魚。"
+        "exampleZh": "她開始打開一罐鮪魚。"
     },
     {
         "id": 5323,
@@ -54854,10 +54854,10 @@ const externalVocabularyDB = [
         "en": "lush",
         "kk": "[lʌʃ]",
         "uk": "/lʌʃ/",
-        "zh": "adj. 蒼翠繁茂的、豐富的、茂盛的、鬱鬱蔥蔥的；n. 酒鬼、酒；v. 喝",
+        "zh": "adj. 蒼翠繁茂的、茂盛的、鬱鬱蔥蔥的",
         "unit": 6,
-        "example": "Tom is a lush.",
-        "exampleZh": "湯姆是個鬱鬱蔥蔥的人。"
+        "example": "The fields were lush with green grass.",
+        "exampleZh": "田野裡長滿了鬱鬱蔥蔥的綠草。"
     },
     {
         "id": 5487,
@@ -57674,10 +57674,10 @@ const externalVocabularyDB = [
         "en": "woo",
         "kk": "[wu]",
         "uk": "/wuː/",
-        "zh": "vt. 追求、招致、向……求愛、懇求；vi. 求愛、懇求",
+        "zh": "vt. 追求、向……求愛、爭取……的支援",
         "unit": 6,
-        "example": "He's a bit woo-woo.",
-        "exampleZh": "他有點嗚嗚。"
+        "example": "The politician tried to woo the voters with promises.",
+        "exampleZh": "這位政客試圖用承諾來爭取選民的支援。"
     },
     {
         "id": 5769,

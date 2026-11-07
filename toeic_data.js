@@ -4724,7 +4724,7 @@ const toeicWordsDB = [
         "en": "bottle",
         "kk": "[ˋbɑtəl]",
         "uk": "/ˈbɒt(ə)l/",
-        "zh": "n. 瓶子、一瓶、酒、奶瓶；vt. 裝瓶、用玻璃瓶砸、喪失勇氣、洩氣",
+        "zh": "n. 瓶子、一瓶；vt. 裝瓶",
         "unit": 11,
         "example": "Shall I open another bottle?",
         "exampleZh": "我要再開一瓶嗎？"
@@ -12754,7 +12754,7 @@ const toeicWordsDB = [
         "en": "female",
         "kk": "[ˋfi͵mel]",
         "uk": "/ˈfiːmeɪl/",
-        "zh": "adj. 女性的、婦女的、女性特有的、由女性組成的；n. 雌性動物、雌性植物、女子",
+        "zh": "adj. 女性的、婦女的、雌性的；n. 雌性動物、女子",
         "unit": 12,
         "example": "Oestrogen is a female sex hormone.",
         "exampleZh": "雌激素是一種雌性荷爾蒙。"
@@ -16524,7 +16524,7 @@ const toeicWordsDB = [
         "en": "independent",
         "kk": "[͵ɪndɪˋpɛndənt]",
         "uk": "/ˌɪndɪˈpendənt/",
-        "zh": "adj. 獨立的、自治的、自立的、自力更生的；n. 獨立自主者、獨立團體、無黨派政治家、公理會教友",
+        "zh": "adj. 獨立的、自治的、自立的；n. 獨立自主者、無黨派政治家",
         "unit": 12,
         "example": "Mozambique became independent in 1975.",
         "exampleZh": "莫三比克於1975年獨立。"
@@ -20984,7 +20984,7 @@ const toeicWordsDB = [
         "en": "ordinary",
         "kk": "[ˋɔrdə͵nɛri]",
         "uk": "/ˈɔːd(ə)n(ə)ri/",
-        "zh": "adj. 普通的、平常的、平淡無奇的、平庸的；n. 常見的人（或事物）、常任法官、管區長、教區長",
+        "zh": "adj. 普通的、平常的、平淡無奇的、平庸的",
         "unit": 13,
         "example": "The meal was very ordinary.",
         "exampleZh": "這頓飯很普通。"

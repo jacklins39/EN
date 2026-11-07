@@ -4724,7 +4724,7 @@
     "en": "bottle",
     "kk": "[ˋbɑtəl]",
     "uk": "/ˈbɒt(ə)l/",
-    "zh": "n. 瓶子、一瓶、酒、奶瓶；vt. 裝瓶、用玻璃瓶砸、喪失勇氣、洩氣",
+    "zh": "n. 瓶子、一瓶；vt. 裝瓶",
     "unit": 11,
     "example": "Shall I open another bottle?",
     "exampleZh": "我要再開一瓶嗎？"

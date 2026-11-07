@@ -3134,7 +3134,7 @@
     "en": "ball (party)",
     "kk": "[bɔl]",
     "uk": "/bɔːl/",
-    "zh": "n. 舞會、球、球狀物、球類運動；vt. 成球狀、和（女人）發生性關係",
+    "zh": "n. 舞會、球、球狀物、球類運動；vt. 成球狀",
     "unit": 11,
     "example": "Corporate executives dressed in formal attire to attend the charity ball.",
     "exampleZh": "企業高層身著正式禮服出席了這場慈善舞會。"
@@ -4577,7 +4577,7 @@
     "zh": "n. 書、書籍、本子、簿冊；vt. 預訂、預約、將……記錄在案、記名警告",
     "unit": 11,
     "example": "Shoot! I've forgotten my book!",
-    "exampleZh": "射擊！我忘了帶書！"
+    "exampleZh": "糟糕！我忘了帶書！"
   },
   {
     "id": 20459,
@@ -5334,7 +5334,7 @@
     "en": "budge",
     "kk": "[bʌdʒ]",
     "uk": "/bʌdʒ/",
-    "zh": "vt. 微微移動、讓步、稍微移動、給別人挪開一塊地方；n. 羔羊皮",
+    "zh": "v. 微微移動、讓步、改變態度",
     "unit": 11,
     "example": "The window refused to budge.",
     "exampleZh": "窗子怎麼也動不了。"
@@ -6944,7 +6944,7 @@
     "en": "completion",
     "kk": "[kəmˋpliʃən]",
     "uk": "/kəmˈpliːʃ(ə)n/",
-    "zh": "n. 完成、實現、結束、成功前傳",
+    "zh": "n. 完成、實現、結束、圓滿",
     "unit": 11,
     "example": "The project is nearing completion.",
     "exampleZh": "這項工程就要竣工了。"

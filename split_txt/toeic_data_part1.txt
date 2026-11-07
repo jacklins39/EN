@@ -84,10 +84,10 @@
     "en": "aborigine",
     "kk": "[͵æbɚˋɪdʒəni]",
     "uk": "/ˌæbəˈrɪdʒəni/",
-    "zh": "n. 土著居民、土著、原住民、澳大利亞原住民",
+    "zh": "n. 原住民、澳洲原住民",
     "unit": 11,
-    "example": "Said one aborigine suddenly in very orthodox English.",
-    "exampleZh": "一名土著人突然用相當標準的英語說道。"
+    "example": "The museum features an exhibition dedicated to the art and history of the local aborigine community.",
+    "exampleZh": "這座博物館設有專門展示當地原住民社群藝術與歷史的展覽。"
   },
   {
     "id": 20010,
@@ -134,10 +134,10 @@
     "en": "above-average",
     "kk": "[əˋbʌv ˋævɚɪdʒ]",
     "uk": "",
-    "zh": "adj. 在平均水平以上、超過平均水平、超出平均水平的、異於尋常的",
+    "zh": "adj. 高於平均水準的、在平均水準以上的、異於尋常的",
     "unit": 11,
-    "example": "Many dyslexics have above-average intelligence.",
-    "exampleZh": "很多誦讀困難者的智力都在平均水平以上。"
+    "example": "The company reported above-average earnings during the third quarter.",
+    "exampleZh": "該公司在第三季公佈了高於平均水準的獲利表現。"
   },
   {
     "id": 20015,
@@ -276,8 +276,8 @@
     "uk": "/ˌækəˈdemɪk/",
     "zh": "adj. 學術的、理論的、學業的、學校的；n. 大學教師、學者、課程、大學生",
     "unit": 11,
-    "example": "Their academic standards are high.",
-    "exampleZh": "他們的學術水平很高。"
+    "example": "She has published several articles in prestigious academic journals.",
+    "exampleZh": "她在頂尖學術期刊上發表了數篇論文。"
   },
   {
     "id": 20029,
@@ -376,8 +376,8 @@
     "uk": "/əkˈsesəri/",
     "zh": "n. 附件、配件、裝飾品、配飾；adj. 輔助的、副的、附屬的、同謀的",
     "unit": 11,
-    "example": "He was charged with being an accessory to murder.",
-    "exampleZh": "他被控為謀殺罪的從犯。"
+    "example": "A classic leather belt is an essential fashion accessory for any formal outfit.",
+    "exampleZh": "經典皮帶是任何正式服裝不可或缺的時尚配件。"
   },
   {
     "id": 20039,
@@ -436,18 +436,18 @@
     "uk": "/əˈkɒmədeɪt/",
     "zh": "vt. 能容納、能提供……膳宿、給……方便、為……提供住宿",
     "unit": 11,
-    "example": "The roads are built to accommodate gradual temperature changes.",
-    "exampleZh": "這些道路是為適應氣溫的逐漸變化而建的。"
+    "example": "The newly renovated conference hall can easily accommodate over five hundred guests.",
+    "exampleZh": "全新裝修的會議廳可輕鬆容納五百多位賓客。"
   },
   {
     "id": 20045,
     "en": "accommodation",
     "kk": "[ə͵kɑməˋdeʃən]",
     "uk": "/əˌkɒməˈdeɪʃ(ə)n/",
-    "zh": "n. 適應、方便設施、住處、住宿",
+    "zh": "n. 住宿、住處、膳宿；適應、調和",
     "unit": 11,
-    "example": "The accommodation is simple but spacious.",
-    "exampleZh": "住處簡樸但寬敞。"
+    "example": "The travel package includes round-trip airfare and luxury hotel accommodation.",
+    "exampleZh": "該套裝行程包含來回機票與豪華飯店住宿。"
   },
   {
     "id": 20046,
@@ -504,10 +504,10 @@
     "en": "account",
     "kk": "[əˋkaʊnt]",
     "uk": "/əˈkaʊnt/",
-    "zh": "n. 帳戶、賬戶、戶頭、客戶；v. 說明、把……視作、認為、解釋",
+    "zh": "n. 帳戶、戶頭、客戶、敘述；v. 說明、把…視作、認為、解釋",
     "unit": 11,
-    "example": "What's your account number please?",
-    "exampleZh": "請問你的賬戶號碼？"
+    "example": "Please transfer the payment to our official corporate bank account.",
+    "exampleZh": "請將款項匯入我們的官方公司銀行帳戶。"
   },
   {
     "id": 20052,
@@ -616,8 +616,8 @@
     "uk": "/eɪk/",
     "zh": "vi. 疼痛、渴望、哀痛、憐憫；n. 疼痛、苦痛、痛苦、渴望",
     "unit": 11,
-    "example": "Mummy, I've got a tummy ache.",
-    "exampleZh": "媽媽，我肚子疼。"
+    "example": "My legs began to ache after hiking up the mountain all morning.",
+    "exampleZh": "在山裡健行了一整個上午後，我的雙腿開始隱隱作痛。"
   },
   {
     "id": 20063,
@@ -734,10 +734,10 @@
     "en": "activate",
     "kk": "[ˋæktə͵vet]",
     "uk": "/ˈæktɪveɪt/",
-    "zh": "vt. 使活化、使活潑、啟用、使參戰",
+    "zh": "vt. 啟用、開通、啟動、使活化",
     "unit": 11,
-    "example": "How can I activate this account?",
-    "exampleZh": "我怎麼啟用這個賬號呢？"
+    "example": "Please click the link in the verification email to activate your new account.",
+    "exampleZh": "請點擊驗證郵件中的連結以開通您的新帳號。"
   },
   {
     "id": 20075,
@@ -754,10 +754,10 @@
     "en": "activity",
     "kk": "[ækˋtɪvəti]",
     "uk": "/ækˈtɪvəti/",
-    "zh": "n. 活動、活躍狀況、熱鬧、熱力活性",
+    "zh": "n. 活動、行動、活耀、運作",
     "unit": 11,
-    "example": "Parents encourage every activity imaginable.",
-    "exampleZh": "父母鼓勵一切可能的活動。"
+    "example": "Regular physical activity is essential for maintaining good cardiovascular health.",
+    "exampleZh": "規律的體能活動對維持良好的心血管健康至關重要。"
   },
   {
     "id": 20077,
@@ -824,10 +824,10 @@
     "en": "adapter",
     "kk": "[əˋdæptɚ]",
     "uk": "/əˈdæptə(r)/",
-    "zh": "n. 改編者、轉接器、介面卡、接合器",
+    "zh": "n. 轉接器、適配器、轉接頭；改編者",
     "unit": 11,
-    "example": "The resource adapter will install on the server.",
-    "exampleZh": "資源介面卡將安裝在伺服器上。"
+    "example": "You will need a travel power adapter when you travel to Europe.",
+    "exampleZh": "當你前往歐洲旅行時，將需要一個旅行用電源轉接器。"
   },
   {
     "id": 20084,
@@ -886,8 +886,8 @@
     "uk": "/əˈdɪʃənəli/",
     "zh": "adv. 附加地、同時、此外、另外",
     "unit": 11,
-    "example": "Additionally, the bus service will run on Sundays, every two hours.",
-    "exampleZh": "此外，公共汽車將於星期天執行，每兩小時一班。"
+    "example": "Additionally, the manager asked all team members to submit their project reports by noon.",
+    "exampleZh": "此外，主管要求所有團隊成員在中午前提交專案報告。"
   },
   {
     "id": 20090,
@@ -1216,8 +1216,8 @@
     "uk": "/ˈædvəkeɪt/",
     "zh": "vt. 擁護、提倡；n. 擁護者、提倡者、辯護律師、謀利益者",
     "unit": 11,
-    "example": "He is a strident advocate of nuclear power.",
-    "exampleZh": "他是發展核能的堅定擁護者。"
+    "example": "The health organization strongly advocates eating a balanced diet and exercising regularly.",
+    "exampleZh": "該衛生組織極力提倡均衡飲食並進行規律運動。"
   },
   {
     "id": 20123,
@@ -1436,8 +1436,8 @@
     "uk": "/əˈɡriː/",
     "zh": "v. 同意、贊成、答應、接受",
     "unit": 11,
-    "example": "I don't agree with spanking.",
-    "exampleZh": "我不同意打屁股。"
+    "example": "I completely agree with your proposal to optimize the project workflow.",
+    "exampleZh": "我完全同意你提出的優化專案工作流程的提案。"
   },
   {
     "id": 20145,
@@ -1526,18 +1526,18 @@
     "uk": "/ˈeəpɔːt/",
     "zh": "n. 機場、飛機場、航空站",
     "unit": 11,
-    "example": "He was fogbound at JFK airport.",
-    "exampleZh": "他在甘迺迪機場時渾身大霧。"
+    "example": "We arrived at the international airport three hours before departure to complete baggage drop.",
+    "exampleZh": "我們在起飛前三個小時到達國際機場以完成行李托運。"
   },
   {
     "id": 20154,
     "en": "aisle",
     "kk": "[aɪl]",
     "uk": "/aɪl/",
-    "zh": "n. 通道、走道、走廊、過道",
+    "zh": "n. 走道、通道、走廊",
     "unit": 11,
-    "example": "The aisle was floored with ancient bricks.",
-    "exampleZh": "過道由古舊的磚塊鋪就。"
+    "example": "Would you prefer a window seat or an aisle seat for this flight?",
+    "exampleZh": "這趟航班你想要靠窗還是靠走道的座位？"
   },
   {
     "id": 20155,
@@ -2376,8 +2376,8 @@
     "uk": "/ɑːˈtɪkjuleɪt/",
     "zh": "vt. 相互連貫、明確表達、清楚說明、口齒清楚地說；adj. 清晰地講話、善於表達的、口齒清楚的、發音清晰的",
     "unit": 11,
-    "example": "She is an articulate young woman.",
-    "exampleZh": "她是個善表達的年輕女子。"
+    "example": "The speaker was able to articulate complex economic theories in simple terms.",
+    "exampleZh": "演講者能夠用簡單明瞭的語言清楚說明複雜的經濟理論。"
   },
   {
     "id": 20239,
@@ -2586,8 +2586,8 @@
     "uk": "/əˈteɪn/",
     "zh": "vt. 達到、獲得、實現",
     "unit": 11,
-    "example": "Then how does one attain this level of organization?",
-    "exampleZh": "那麼，如何才能達到這種規劃水平？"
+    "example": "With continuous dedication and effort, she was able to attain all of her sales targets.",
+    "exampleZh": "憑藉著持續的專注與努力，她成功達成了所有的銷售目標。"
   },
   {
     "id": 20260,
@@ -2636,8 +2636,8 @@
     "uk": "/əˈtest/",
     "zh": "vt. 證實、證明、表明、宣誓服兵役",
     "unit": 11,
-    "example": "Contemporary accounts attest to his courage and determination.",
-    "exampleZh": "當時的報道證實了他的勇氣和決心。"
+    "example": "Several eyewitnesses came forward to attest to the truth of his statement.",
+    "exampleZh": "數名目擊證人挺身而出，證實了他陳述的真實性。"
   },
   {
     "id": 20265,
@@ -2694,10 +2694,10 @@
     "en": "audit",
     "kk": "[ˋɔdɪt]",
     "uk": "/ˈɔːdɪt/",
-    "zh": "n. 審計、查帳、查……的賬目、審查；vt. 審計、查賬、旁聽",
+    "zh": "n. 審計、查帳、稽核、審查；vt. 審計、查帳、旁聽",
     "unit": 11,
-    "example": "The audit process can query this key.",
-    "exampleZh": "審計過程可以查詢這個鍵。"
+    "example": "The multinational corporation undergoes an independent financial audit every year.",
+    "exampleZh": "這家跨國企業每年都會接受獨立的財務審計。"
   },
   {
     "id": 20271,
@@ -2754,10 +2754,10 @@
     "en": "average",
     "kk": "[ˋævɚɪdʒ]",
     "uk": "/ˈævərɪdʒ/",
-    "zh": "n. 平均、平均水平、一般標準、平均數；adj. 普通的、平常的、不好不壞的、平均（數）的；vt. 平均為、平均達到、計算平均值、將……平均分配",
+    "zh": "n. 平均、平均水準、一般標準、平均數；adj. 普通的、平常的、平均的；vt. 平均為、平均達到",
     "unit": 11,
-    "example": "Import duties still average 30%.",
-    "exampleZh": "進口關稅平均仍為30%。"
+    "example": "Her academic performance is well above the national average.",
+    "exampleZh": "她的學業成績遠高於全國平均水準。"
   },
   {
     "id": 20277,
@@ -2866,8 +2866,8 @@
     "uk": "/ˌbækˈfaɪə(r)/",
     "zh": "vi. 事與願違、產生事與願違的不良（或危險）後果、適得其反、回火；n. 引擎的逆火、回火、迎面火",
     "unit": 11,
-    "example": "Then, while those firefighters dig, others start a backfire.",
-    "exampleZh": "然後，當這些消防員開挖防火帶時，其他人開始點燒迎面火。"
+    "example": "Their aggressive price-cutting strategy backfired and resulted in huge financial losses.",
+    "exampleZh": "他們過於激進的削價策略適得其反，反而導致了巨大的財務虧損。"
   },
   {
     "id": 20288,
@@ -3054,10 +3054,10 @@
     "en": "bailout",
     "kk": "[ˋbe͵laʊt]",
     "uk": "/ˈbeɪlaʊt/",
-    "zh": "n. 跳傘、緊急(財政)援助、緊急救助、紓困",
+    "zh": "n. 紓困、緊急財政援助、緊急救助；跳傘",
     "unit": 11,
-    "example": "But the big bailout is coming.",
-    "exampleZh": "但是大規模的拯救行動還沒有到來。"
+    "example": "The government approved a massive financial bailout to prevent the banking collapse.",
+    "exampleZh": "政府批准了一項大規模的金融紓困方案，以防止銀行體系崩盤。"
   },
   {
     "id": 20307,
@@ -3204,10 +3204,10 @@
     "en": "bankcard",
     "kk": "[ˋbæŋ͵kɑrd]",
     "uk": "",
-    "zh": "n. 銀行信用卡、銀行卡",
+    "zh": "n. 金融卡、提款卡、銀行卡",
     "unit": 11,
-    "example": "Sorry - I always use my bankcard in the cafeteria.",
-    "exampleZh": "不好意思，我在自助餐廳都用銀行卡。"
+    "example": "You can withdraw cash and check your balance using your bankcard at any ATM.",
+    "exampleZh": "您可以使用金融卡在任何自動提款機領取現金並查詢餘額。"
   },
   {
     "id": 20322,
@@ -3326,8 +3326,8 @@
     "uk": "/ˈbeənəs/",
     "zh": "n. 赤裸、無遮蓋、裸露",
     "unit": 11,
-    "example": "Her dining - room had the decency of clean bareness.",
-    "exampleZh": "她的餐室有清潔溜溜的規矩。"
+    "example": "The sudden bareness of the living room after selling the furniture felt quite strange.",
+    "exampleZh": "賣掉家具後客廳突然變得空蕩蕩的，讓人感覺很不習慣。"
   },
   {
     "id": 20334,
@@ -3366,8 +3366,8 @@
     "uk": "/beɪs/",
     "zh": "n. 基礎、基地、底部、根據地；vt. 以……為基礎、把基地設在；adj. 卑鄙的、低劣的",
     "unit": 11,
-    "example": "The multinational firm decided to base its regional headquarters in Singapore.",
-    "exampleZh": "這家跨國企業決定將其區域總部設立在新加坡。"
+    "example": "A loyal customer base is the foundation of any successful business.",
+    "exampleZh": "忠實的客戶群體是任何成功企業的基石。"
   },
   {
     "id": 20338,
@@ -3446,8 +3446,8 @@
     "uk": "/bætʃ/",
     "zh": "n. 一批、一群、一爐、一團；v. 分批處理",
     "unit": 11,
-    "example": "I baked a batch of cookies.",
-    "exampleZh": "我烤了一批小甜餅。"
+    "example": "The bakery has just pulled a fresh batch of chocolate chip cookies out of the oven.",
+    "exampleZh": "麵包店剛剛從烤箱裡取出了一批新鮮出爐的巧克力碎片餅乾。"
   },
   {
     "id": 20346,
@@ -3794,10 +3794,10 @@
     "en": "belated",
     "kk": "[bɪˋletɪd]",
     "uk": "/bɪˈleɪtɪd/",
-    "zh": "adj. 誤期的、過時的、遲來的、遲到的",
+    "zh": "adj. 遲來的、延遲的、過期的",
     "unit": 11,
-    "example": "Thanks for your belated advice.",
-    "exampleZh": "謝謝你放的馬後炮。"
+    "example": "I sent her a belated birthday card and apologized for missing the celebration.",
+    "exampleZh": "我給她寄了一張遲來的生日卡片，並為錯過慶祝活動致歉。"
   },
   {
     "id": 20381,
@@ -4104,10 +4104,10 @@
     "en": "bicycle",
     "kk": "[ˋbaɪsɪkəl]",
     "uk": "/ˈbaɪsɪk(ə)l/",
-    "zh": "n. 自行車、腳踏車、單車；v. 騎腳踏車",
+    "zh": "n. 腳踏車、自行車；v. 騎腳踏車",
     "unit": 11,
-    "example": "Oscar had a new bicycle.",
-    "exampleZh": "奧斯卡有一輛新自行車。"
+    "example": "Many employees ride a bicycle to work to reduce traffic congestion and stay healthy.",
+    "exampleZh": "許多員工騎腳踏車上班，既能減輕交通壅塞又能保持健康。"
   },
   {
     "id": 20412,
@@ -4144,10 +4144,10 @@
     "en": "bill",
     "kk": "[bɪl]",
     "uk": "/bɪl/",
-    "zh": "n. 帳單、法案、賬單、議案；vt. 開賬單、把……宣傳為、宣佈（某人）將參加演出",
+    "zh": "n. 帳單、法案、議案、鈔票；vt. 寄發帳單、開帳單、宣傳",
     "unit": 11,
-    "example": "Your bill includes line rental.",
-    "exampleZh": "您的帳單包括線路租金。"
+    "example": "We received the monthly electricity bill in the mail this morning.",
+    "exampleZh": "我們今天早晨在信箱裡收到了這個月份的電費帳單。"
   },
   {
     "id": 20416,
@@ -4426,8 +4426,8 @@
     "uk": "/bləʊ/",
     "zh": "v. 吹、刮、吹氣、吹響；n. 打擊、大風、強風、吹氣",
     "unit": 11,
-    "example": "Blow! I completely forgot it.",
-    "exampleZh": "吹！我完全忘記了。"
+    "example": "A refreshing cool breeze began to blow across the beach at sunset.",
+    "exampleZh": "日落時分，一陣涼爽宜人的微風開始吹過海灘。"
   },
   {
     "id": 20444,
@@ -4534,10 +4534,10 @@
     "en": "bombard",
     "kk": "[bɑmˋbɑrd]",
     "uk": "/bɒmˈbɑːd/",
-    "zh": "vt. 砲擊、不斷攻擊、連續提出問題、轟炸；n. 射石炮",
+    "zh": "vt. 轟炸、砲擊、連續提出（問題）、不斷攻擊；n. 轟炸、砲擊",
     "unit": 11,
-    "example": "Your city is being bombarded.",
-    "exampleZh": "你的城市正在遭受轟炸。"
+    "example": "Reporters bombarded the spokesperson with questions regarding the merger.",
+    "exampleZh": "記者們不斷向發言人拋出關於這起合併案的種種問題。"
   },
   {
     "id": 20455,
@@ -4616,8 +4616,8 @@
     "uk": "/buːm/",
     "zh": "n. 繁榮、流行、風靡、隆隆聲；v. 轟鳴、迅速發展、繁榮、轟響",
     "unit": 11,
-    "example": "Living standards improved rapidly during the post-war boom.",
-    "exampleZh": "在戰後那段繁榮昌盛的時期裡，生活水平得到了迅速提高。"
+    "example": "The rapid development of artificial intelligence has created an unprecedented economic boom.",
+    "exampleZh": "人工智慧的迅猛發展帶來了前所未有的經濟繁榮。"
   },
   {
     "id": 20463,
@@ -4664,10 +4664,10 @@
     "en": "borderline",
     "kk": "[ˋbɔrdɚ͵laɪn]",
     "uk": "/ˈbɔːdəlaɪn/",
-    "zh": "adj. 臨界的、邊緣的、勉強合格的、所屬不清的；n. 邊界、界線、邊界線、分界線；adv. 幾乎、差不多",
+    "zh": "adj. 臨界的、邊緣的、勉強合格的；n. 邊界、界線、分界線",
     "unit": 11,
-    "example": "This biography sometimes crosses the borderline between fact and fiction.",
-    "exampleZh": "這部傳記有時混淆了事實和虛構。"
+    "example": "His test score was borderline, but the teacher decided to give him a passing grade.",
+    "exampleZh": "他的測驗成績在及格邊緣，但老師決定給他合格成績。"
   },
   {
     "id": 20468,
@@ -4756,18 +4756,18 @@
     "uk": "/baʊns/",
     "zh": "v. 彈起、反彈、跳動、蹦；n. 彈跳、跳動、彈性、彈力",
     "unit": 11,
-    "example": "There was a bounce to his step.",
-    "exampleZh": "他的步伐矯健有力。"
+    "example": "The children were excited to bounce the basketball on the newly paved court.",
+    "exampleZh": "孩子們興奮地在剛鋪好的球場上拍打彈跳籃球。"
   },
   {
     "id": 20477,
     "en": "bound",
     "kk": "[baʊnd]",
     "uk": "/baʊnd/",
-    "zh": "adj. 束縛的、必然的、肯定的、受約束的；v. 跳躍、蹦跳著走、形成……的邊界、劃界；n. 界限、限制、蹦跳、跳躍",
+    "zh": "adj. 必然的、注定的、前往…的、受約束的；v. 跳躍、跳著走；n. 界限、限制",
     "unit": 11,
-    "example": "They bound his hands together.",
-    "exampleZh": "他們把他的雙手綁在一起。"
+    "example": "If you continue to practice diligently, you are bound to pass the exam.",
+    "exampleZh": "只要你繼續勤奮練習，就一定會通過這場考試。"
   },
   {
     "id": 20478,
@@ -4784,10 +4784,10 @@
     "en": "bow",
     "kk": "[baʊ]",
     "uk": "/baʊ; bəʊ/",
-    "zh": "v. 鞠躬、點頭、低下、停止對抗；n. 鞠躬、點頭、船頭、蝴蝶結",
+    "zh": "v. 鞠躬、低頭、點頭；n. 鞠躬、點頭；弓、蝴蝶結",
     "unit": 11,
-    "example": "He was armed with a bow and arrow.",
-    "exampleZh": "他手持弓箭。"
+    "example": "The pianist stood up and bowed politely to the audience after the performance.",
+    "exampleZh": "演出結束後，鋼琴家站起身並禮貌地向觀眾鞠躬致意。"
   },
   {
     "id": 20480,
@@ -4836,8 +4836,8 @@
     "uk": "/breɪs/",
     "zh": "vt. 作好準備、支撐、加固、抵住；n. 支撐物、支架、牙箍、牙齒矯正器",
     "unit": 11,
-    "example": "The engineering team installed a steel brace to reinforce the weak ceiling beam.",
-    "exampleZh": "工程團隊安裝了鋼製支架，以加固脆弱的天花板樑柱。"
+    "example": "The city residents were advised to brace themselves for the severe typhoon.",
+    "exampleZh": "市政府建議全體市民做好防範強烈颱風的萬全準備。"
   },
   {
     "id": 20485,
@@ -4864,10 +4864,10 @@
     "en": "brainstorm",
     "kk": "[ˋbren͵stɔrm]",
     "uk": "/ˈbreɪnstɔːm/",
-    "zh": "n. 靈感、突然想到的妙計、一時糊塗、獻計獻策會；vt. 集體研討、集思廣益、集體討論",
+    "zh": "v. 腦力激盪、集思廣益；n. 腦力激盪、靈光乍現",
     "unit": 11,
-    "example": "Brainstorm ways to help these community members realize their potential.",
-    "exampleZh": "頭腦風暴得出方法來幫助這些社群成員瞭解到他們的潛力。"
+    "example": "The creative team gathered this morning to brainstorm new marketing ideas for the campaign.",
+    "exampleZh": "創意團隊今天早晨召開會議進行腦力激盪，為本次行銷活動構思新點子。"
   },
   {
     "id": 20488,
@@ -5306,8 +5306,8 @@
     "uk": "/ˈbʌb(ə)l/",
     "zh": "n. 氣泡、泡沫、經濟泡沫、一點感情；vi. 冒泡、沸騰、發出冒泡的聲音、忙碌",
     "unit": 11,
-    "example": "Add the white wine and let it bubble up.",
-    "exampleZh": "加入白葡萄酒，讓它產生泡沫。"
+    "example": "Children were happily chasing and blowing soap bubbles in the sunny park.",
+    "exampleZh": "孩子們在陽光明媚的公園裡開心地吹泡泡並追逐著肥皂泡。"
   },
   {
     "id": 20532,
@@ -5324,10 +5324,10 @@
     "en": "buckle",
     "kk": "[ˋbʌkəl]",
     "uk": "/ˈbʌk(ə)l/",
-    "zh": "v. 帶釦、發軟、屈服、讓步；n. 搭鉤、搭扣",
+    "zh": "n. 帶扣、扣環；v. 扣上、扣緊；彎曲",
     "unit": 11,
-    "example": "These shoes buckle at the side.",
-    "exampleZh": "這雙鞋從旁邊上扣。"
+    "example": "Please make sure to buckle your seatbelt securely before driving.",
+    "exampleZh": "開車前請務必將安全帶扣緊繫好。"
   },
   {
     "id": 20534,
@@ -5346,8 +5346,8 @@
     "uk": "/ˈbʌdʒɪt/",
     "zh": "n. 預算、政府預算案；vt. 編預算、制定預算、制定開支計劃、計劃；adj. 廉價的、經濟型的",
     "unit": 11,
-    "example": "I'm learning how to budget.",
-    "exampleZh": "我正在學習怎樣編制預算。"
+    "example": "The project was successfully completed on time and well within the allocated budget.",
+    "exampleZh": "該專案在規定期限內順利完成，且花費完全在核定預算之內。"
   },
   {
     "id": 20536,
@@ -5544,10 +5544,10 @@
     "en": "calculator",
     "kk": "[ˋkælkjə͵letɚ]",
     "uk": "/ˈkælkjuleɪtə(r)/",
-    "zh": "n. 計算機、計算器",
+    "zh": "n. 計算機",
     "unit": 11,
-    "example": "Can I borrow your calculator?",
-    "exampleZh": "我可以借用你的計算器嗎？"
+    "example": "Students are allowed to bring a scientific calculator to the physics exam.",
+    "exampleZh": "學生獲准攜帶工程計算機參加物理考試。"
   },
   {
     "id": 20556,
@@ -5854,10 +5854,10 @@
     "en": "cart",
     "kk": "[kɑrt]",
     "uk": "/kɑːt/",
-    "zh": "n. 大車、馬車、小型機動車、購物車；vt. 用車裝運、搬運、移動、挾持",
+    "zh": "n. 手推車、購物車；大車、雙輪馬車；vt. 用車裝運、搬運",
     "unit": 11,
-    "example": "The cart clattered over the cobbles.",
-    "exampleZh": "大車哐當哐當地行駛在卵石路上。"
+    "example": "She pushed the shopping cart through the supermarket aisles to pick up groceries.",
+    "exampleZh": "她推著手推車穿過超市走道採購生活用品。"
   },
   {
     "id": 20587,
@@ -6136,8 +6136,8 @@
     "uk": "/tʃɑːdʒ/",
     "zh": "v. 收費、索價、控告、充電；n. 費用、掌管、控告、電荷",
     "unit": 11,
-    "example": "She left her assistant in charge.",
-    "exampleZh": "她委託助手來負責。"
+    "example": "The hotel does not charge any additional fees for wireless internet access.",
+    "exampleZh": "這間飯店不針對無線網路連線收取任何額外費用。"
   },
   {
     "id": 20615,
@@ -6326,8 +6326,8 @@
     "uk": "/klɔːz/",
     "zh": "n. 條款、子句、從句、分句",
     "unit": 11,
-    "example": "The final clause in the contract will be left untouched.",
-    "exampleZh": "合同的最後一項條款將不作改動。"
+    "example": "The legal department reviewed every clause in the contract before signing.",
+    "exampleZh": "法務部門在簽約前仔細審查了合約中的每一項條款。"
   },
   {
     "id": 20634,
@@ -6646,8 +6646,8 @@
     "uk": "/kəˈmɑːnd/",
     "zh": "vt. 命令、下令、統率、指揮；n. 命令、指示、指令、控制",
     "unit": 11,
-    "example": "Begin when I give the command.",
-    "exampleZh": "我發出命令時開始。"
+    "example": "The captain commanded the crew to secure all cargo before the storm hit.",
+    "exampleZh": "船長命令船員在暴風雨來襲前固定好所有貨物。"
   },
   {
     "id": 20666,
@@ -6656,18 +6656,18 @@
     "uk": "/ˈkɒment/",
     "zh": "n. 評論、意見、批評；vt. 評論、發表意見",
     "unit": 11,
-    "example": "Buckingham Palace refused to comment.",
-    "exampleZh": "英國王室拒絕發表評論。"
+    "example": "The company spokesperson declined to make any comment on the ongoing investigation.",
+    "exampleZh": "公司發言人拒絕對正在進行的調查發表任何評論。"
   },
   {
     "id": 20667,
     "en": "commentary",
     "kk": "[ˋkɑmən͵tɛri]",
     "uk": "/ˈkɒmənt(ə)ri/",
-    "zh": "n. 評論、註釋、現場解說、實況報道",
+    "zh": "n. 評論、現場解說、實況報導、註釋",
     "unit": 11,
-    "example": "You can hear commentary on the game at halftime.",
-    "exampleZh": "你可在中場休息時聽到對比賽的評論。"
+    "example": "The television network provided live commentary throughout the championship game.",
+    "exampleZh": "電視台在整場冠軍賽期間提供了現場實況解說。"
   },
   {
     "id": 20668,
@@ -7086,8 +7086,8 @@
     "uk": "/ˈkɒmprəmaɪz/",
     "zh": "n. 折中、妥協、妥協方案、折中辦法；vt. 妥協、讓步、危及、損害",
     "unit": 11,
-    "example": "I refuse to compromise my principles.",
-    "exampleZh": "我拒絕在原則問題上妥協。"
+    "example": "After lengthy negotiations, both parties finally reached an acceptable compromise.",
+    "exampleZh": "經過漫長的協商，雙方終於達成了一個彼此都能接受的妥協方案。"
   },
   {
     "id": 20710,
@@ -7526,8 +7526,8 @@
     "uk": "/ˈkɒntækt/",
     "zh": "n. 聯絡、接觸、聯繫人；vt. 聯絡、接觸",
     "unit": 11,
-    "example": "You can contact me by phone.",
-    "exampleZh": "你可以透過電話聯絡我。"
+    "example": "Please feel free to get in touch if you need further contact details.",
+    "exampleZh": "如果您需要進一步的聯絡資訊，請隨時與我們聯繫。"
   },
   {
     "id": 20754,
@@ -7614,10 +7614,10 @@
     "en": "contract",
     "kk": "[ˋkɑn͵trækt]",
     "uk": "/ˈkɒntrækt; kənˈtrækt/",
-    "zh": "n. 合同、契約、暗殺協議、定約墩數；v. 收縮、縮小、籤合同、訂立契約",
+    "zh": "n. 合約、契約；v. 簽訂合約、訂立契約；收縮、縮小",
     "unit": 11,
-    "example": "He mailed me the contract.",
-    "exampleZh": "他把合同寄給了我。"
+    "example": "Both companies signed a three-year contract to collaborate on the research project.",
+    "exampleZh": "兩家公司簽署了一份為期三年的合約，共同合作進行該項研究專案。"
   },
   {
     "id": 20763,
@@ -7804,10 +7804,10 @@
     "en": "corporate",
     "kk": "[ˋkɔrpɚət]",
     "uk": "/ˈkɔːpərət/",
-    "zh": "adj. 法人(組織)的、團體的、共同的、公司的；n. 公司、集團",
+    "zh": "adj. 公司的、企業的、法人組織的、整體的；n. 公司、企業",
     "unit": 11,
-    "example": "The BBC is a corporate body.",
-    "exampleZh": "英國廣播公司為法人團體。"
+    "example": "The company announced a comprehensive update to its corporate branding strategy.",
+    "exampleZh": "該公司宣布了對其企業品牌策略的全面更新。"
   },
   {
     "id": 20782,
@@ -7846,8 +7846,8 @@
     "uk": "/kɒst/",
     "zh": "n. 費用、成本、價錢、代價；vt. 花費、價錢為、使喪失",
     "unit": 11,
-    "example": "Success has cost him dearly.",
-    "exampleZh": "成功讓他付出了慘痛的代價。"
+    "example": "The estimated total cost of the renovation project is thirty thousand dollars.",
+    "exampleZh": "這項翻修專案的預估總成本為三萬美元。"
   },
   {
     "id": 20786,
@@ -7894,10 +7894,10 @@
     "en": "coupon",
     "kk": "[ˋku͵pɔn]",
     "uk": "/ˈkuːpɒn/",
-    "zh": "n. 回數票、減價優待券、贈券、優惠券",
+    "zh": "n. 優惠券、折價券、兌換券",
     "unit": 11,
-    "example": "He paid with a two-for-one coupon.",
-    "exampleZh": "他用一張買二送一優惠券結賬。"
+    "example": "You can apply this discount coupon at checkout to save twenty percent on your order.",
+    "exampleZh": "您可以在結帳時使用此折價券，享受整筆訂單八折優惠。"
   },
   {
     "id": 20791,
@@ -7964,10 +7964,10 @@
     "en": "coverage",
     "kk": "[ˋkʌvɚədʒ]",
     "uk": "/ˈkʌvərɪdʒ/",
-    "zh": "n. 覆蓋範圍、保險項目、新聞報導、新聞報道",
+    "zh": "n. 新聞報導、涵蓋範圍、保險範圍、保險給付額",
     "unit": 11,
-    "example": "The incident has received wide coverage in the press.",
-    "exampleZh": "這個事件已被新聞界廣泛報道。"
+    "example": "The international summit received extensive live media coverage around the world.",
+    "exampleZh": "這場國際高峰會受到了全球媒體廣泛的現場實況報導。"
   },
   {
     "id": 20798,
@@ -8076,8 +8076,8 @@
     "uk": "/krəˈdenʃ(ə)l/",
     "zh": "n. 憑據、證書、資格、證明；v. 給……提供證書",
     "unit": 11,
-    "example": "What are your credentials?",
-    "exampleZh": "它不會問：“你是誰？你有哪些證書？”"
+    "example": "What are your professional credentials and qualifications for this role?",
+    "exampleZh": "您針對這個職位具備哪些專業資格與資歷證明？"
   },
   {
     "id": 20809,
@@ -8306,8 +8306,8 @@
     "uk": "/ˈkʌrənt/",
     "zh": "adj. 現行的、當前的、通用的；n. 電流、水流、氣流、思潮",
     "unit": 11,
-    "example": "We were rowing against the current.",
-    "exampleZh": "我們划船逆流而上。"
+    "example": "Under current company regulations, staff members are allowed to work remotely on Fridays.",
+    "exampleZh": "根據公司現行規定，員工獲准在每週五實施遠端辦公。"
   },
   {
     "id": 20832,
@@ -8374,10 +8374,10 @@
     "en": "cycle",
     "kk": "[ˋsaɪkəl]",
     "uk": "/ˈsaɪk(ə)l/",
-    "zh": "n. 循環、腳踏車、摩托車、迴圈；vi. 騎腳踏車、迴圈",
+    "zh": "n. 循環、週期、腳踏車；vi. 騎腳踏車、循環",
     "unit": 11,
-    "example": "This cycle repeats itself ad infinitum.",
-    "exampleZh": "這個週期一直迴圈往復。"
+    "example": "Economists study the regular boom and bust cycle of global financial markets.",
+    "exampleZh": "經濟學家深入研究全球金融市場規律的繁榮與蕭條週期。"
   },
   {
     "id": 20839,
@@ -8516,18 +8516,18 @@
     "uk": "/ˈdæz(ə)l/",
     "zh": "vt. 使眼花撩亂、使驚嘆、使目眩；n. 耀眼眩光",
     "unit": 11,
-    "example": "The dazzle of stardom and status attracts them.",
-    "exampleZh": "明星和身份的耀眼光環吸引著他們。"
+    "example": "The magician's impressive illusions continued to dazzle audiences of all ages.",
+    "exampleZh": "魔術師令人驚嘆的幻術持續令各年齡層的觀眾嘆為觀止。"
   },
   {
     "id": 20853,
     "en": "deadline",
     "kk": "[ˋdɛd͵laɪn]",
     "uk": "/ˈdedlaɪn/",
-    "zh": "n. 最後限期、最後期限、截止日期、死線",
+    "zh": "n. 截止日期、最後期限",
     "unit": 11,
-    "example": "I can't possibly meet that deadline.",
-    "exampleZh": "我不可能如期完成。"
+    "example": "We must finalize and submit the grant proposal before Friday's deadline.",
+    "exampleZh": "我們必須在週五截止日期前定案並提交補助企劃書。"
   },
   {
     "id": 20854,
@@ -8604,10 +8604,10 @@
     "en": "debit",
     "kk": "[ˋdɛbɪt]",
     "uk": "/ˈdebɪt/",
-    "zh": "n. 借記、借方、借項；vt. 記入借方、借記",
+    "zh": "n. 簽帳、扣款、借方；vt. 從帳戶扣款、記入借方",
     "unit": 11,
-    "example": "We pay all our bills by direct debit.",
-    "exampleZh": "我們以直接借記方式支付所有賬單。"
+    "example": "The monthly utility bills are automatically paid by direct debit from my checking account.",
+    "exampleZh": "每個月的水電雜費都會直接從我的支票帳戶中自動扣款繳納。"
   },
   {
     "id": 20862,
@@ -9054,10 +9054,10 @@
     "en": "delicacy",
     "kk": "[ˋdɛləkəsi]",
     "uk": "/ˈdelɪkəsi/",
-    "zh": "n. 精美、佳餚、美味、脆弱",
+    "zh": "n. 佳餚、美食、精緻、精美",
     "unit": 11,
-    "example": "Smoked salmon was considered an expensive delicacy.",
-    "exampleZh": "燻三文魚被認為是一道昂貴的佳餚。"
+    "example": "Smoked salmon is considered a gourmet delicacy in many parts of the world.",
+    "exampleZh": "燻鮭魚在世界許多地方都被視為一道精緻的佳餚。"
   },
   {
     "id": 20907,
@@ -9304,10 +9304,10 @@
     "en": "deposit",
     "kk": "[dəˋpɑzɪt]",
     "uk": "/dɪˈpɒzɪt/",
-    "zh": "vt. 放下、放置、儲蓄、存放；n. 沉積物、沉積層、訂金、押金",
+    "zh": "n. 押金、保證金、存款、訂金；vt. 存入（銀行）、支付押金、放置",
     "unit": 11,
-    "example": "Landlords can charge a returnable deposit.",
-    "exampleZh": "房東可以收取一筆可退還的押金。"
+    "example": "The landlord asked for a two-month security deposit before handing over the keys.",
+    "exampleZh": "房東在交付鑰匙之前，要求先支付兩個月的租屋押金。"
   },
   {
     "id": 20932,
@@ -9416,8 +9416,8 @@
     "uk": "/ˈdiːteɪld/",
     "zh": "adj. 詳細的、精細的、詳盡的、細緻的；v. 詳細說明、詳述、徹底清洗、派遣",
     "unit": 11,
-    "example": "A detailed news report will follow shortly.",
-    "exampleZh": "下面緊接著是詳細的新聞報道。"
+    "example": "A detailed news report on the election results will follow shortly.",
+    "exampleZh": "稍後將為您播報關於選舉結果的詳細新聞報導。"
   },
   {
     "id": 20943,
@@ -9784,10 +9784,10 @@
     "en": "disease",
     "kk": "[dɪˋziz]",
     "uk": "/dɪˈziːz/",
-    "zh": "n. 病、疾病、病害、弊病；v. 傳染、使……有病",
+    "zh": "n. 疾病、病症、弊病",
     "unit": 11,
-    "example": "Disease often goes with poverty.",
-    "exampleZh": "疾病與貧窮常常相伴而生。"
+    "example": "Maintaining a balanced diet and regular exercise routine helps prevent chronic disease.",
+    "exampleZh": "保持均衡飲食與規律運動有助於預防慢性疾病。"
   },
   {
     "id": 20980,

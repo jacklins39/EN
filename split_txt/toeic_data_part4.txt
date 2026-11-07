@@ -34,10 +34,10 @@
     "en": "wire",
     "kk": "[ˋwaɪɚ]",
     "uk": "/ˈwaɪə(r)/",
-    "zh": "n. 金屬絲、金屬線、電線、導線；vt. 給……接上電線、接通、連線、電匯",
+    "zh": "n. 電線、金屬絲、導線；vt. 電匯、接通電線",
     "unit": 14,
-    "example": "The wire led to a speaker.",
-    "exampleZh": "這電線連線著揚聲器。"
+    "example": "The accounting department will wire the payment to the supplier's bank account today.",
+    "exampleZh": "會計部門今天會將款項電匯至供應商的銀行帳戶。"
   },
   {
     "id": 23005,
@@ -144,10 +144,10 @@
     "en": "workshop",
     "kk": "[ˋwɝk͵ʃɑp]",
     "uk": "/ˈwɜːkʃɒp/",
-    "zh": "n. 作坊、研討會、車間、工場；v. 研討性演出",
+    "zh": "n. 工作坊、研習會、研討會；車間、工場",
     "unit": 14,
-    "example": "This workshop helps young unemployed people.",
-    "exampleZh": "這個講習班幫助失業的年輕人。"
+    "example": "The human resources division organized a leadership workshop for newly promoted managers.",
+    "exampleZh": "人力資源部門為新晉升的主管舉辦了一場領導力工作坊。"
   },
   {
     "id": 23016,
@@ -234,10 +234,10 @@
     "en": "yawn",
     "kk": "[jɔn]",
     "uk": "/jɔːn/",
-    "zh": "vi. 打哈欠、豁開、裂開；n. 哈欠、乏味的事物",
+    "zh": "vi. 打哈欠；n. 哈欠",
     "unit": 14,
-    "example": "He gave an ostentatious yawn.",
-    "exampleZh": "他張揚地打了個哈欠。"
+    "example": "After staying up late to finish the report, he could not stop yawning throughout the morning meeting.",
+    "exampleZh": "熬夜完成報告後，他在整個晨會期間忍不住頻頻打哈欠。"
   },
   {
     "id": 23025,
@@ -284,10 +284,10 @@
     "en": "yield",
     "kk": "[jild]",
     "uk": "/jiːld/",
-    "zh": "v. 產生、出產、屈服；n. 利潤、產量、收益、紅利（或股息）率",
+    "zh": "vt. 產生、產出、帶來（利潤/收益）；vi. 屈服、讓步；n. 產量、收益率",
     "unit": 14,
-    "example": "Higher-rate deposit accounts yield good returns.",
-    "exampleZh": "高利率的存款會產生豐厚的收益。"
+    "example": "Government treasury bonds typically yield steady and reliable returns for conservative investors.",
+    "exampleZh": "政府公債通常能為保守型投資人帶來穩定且可靠的投資收益。"
   },
   {
     "id": 23030,
@@ -324,20 +324,20 @@
     "en": "zip",
     "kk": "[zɪp]",
     "uk": "/zɪp/",
-    "zh": "n. 拉鍊、拉鎖、速度、活力；vt. 用拉鍊扣上、拉開拉鍊、迅速移動、壓縮；adj. 用拉鍊扣住的",
+    "zh": "n. 拉鍊；vt. 拉上拉鍊、壓縮（檔案）",
     "unit": 14,
-    "example": "He said zip all evening.",
-    "exampleZh": "整個晚上他一聲不吭。"
+    "example": "Please zip the presentation files into a single archive before sending them via email.",
+    "exampleZh": "在透過電子郵件發送之前，請先將簡報檔案壓縮成單一壓縮檔。"
   },
   {
     "id": 23034,
     "en": "zone",
     "kk": "[zon]",
     "uk": "/zəʊn/",
-    "zh": "n. 地區、區域、地帶、範圍；vt. 將……劃為某種用途的區域、將……分成區、用帶子圍繞、環繞",
+    "zh": "n. 區域、地帶、特區；vt. 劃分成區",
     "unit": 14,
-    "example": "The area has been declared a disaster zone.",
-    "exampleZh": "該地區已被宣佈為災難帶。"
+    "example": "The mayor declared the flooded downtown area an official disaster zone to mobilize emergency relief.",
+    "exampleZh": "市長宣布淹水的市中心區域為官方災區，以動員緊急救災資源。"
   },
   {
     "id": 23035,
@@ -604,10 +604,10 @@
     "en": "minutes",
     "kk": "[ˋmɪnəts]",
     "uk": "/ˈmɪnɪts/",
-    "zh": "n. 會議記錄、分鐘、備忘錄；vt. 把……記錄在案、為……測定時間",
+    "zh": "n. 會議記錄；分鐘（minute之複數）",
     "unit": 11,
-    "example": "The buses go every 10 minutes.",
-    "exampleZh": "公共汽車每隔10分鐘發一班車。"
+    "example": "The administrative assistant took detailed minutes during yesterday's board meeting.",
+    "exampleZh": "行政助理在昨天的董事會會議期間記錄了詳盡的會議記錄。"
   },
   {
     "id": 23062,
@@ -634,10 +634,10 @@
     "en": "overdue",
     "kk": "[ˋovɚˋdu]",
     "uk": "/ˌəʊvəˈdjuː/",
-    "zh": "adj. 逾期的、拖欠的、未付的、未還的",
+    "zh": "adj. 逾期的、過期的、未付的",
     "unit": 11,
-    "example": "\"Some skepticism about these models is overdue,\" he added.",
-    "exampleZh": "“對這些模型抱有一些懷疑早該如此，”他補充道。"
+    "example": "The finance department sent a reminder to the client regarding the overdue invoice payment.",
+    "exampleZh": "財務部門向該客戶發送了關於逾期未付發票款項的催繳提醒通知。"
   },
   {
     "id": 23065,
@@ -724,10 +724,10 @@
     "en": "utility",
     "kk": "[juˋtɪləti]",
     "uk": "/juːˈtɪləti/",
-    "zh": "n. 效用、實用、公用事業、公共服務；adj. 有用的、多功能的、多面手的、實用的",
+    "zh": "n. 公用事業（水電瓦斯）；實用、效用；adj. 多用途的、實用的",
     "unit": 11,
-    "example": "The non-satiation of utility does not stand any longer.",
-    "exampleZh": "效用非飽和性不再成立。"
+    "example": "Monthly rent for the apartment includes all basic utilities such as water, gas, and electricity.",
+    "exampleZh": "該公寓的每月租金包含所有基本公用事業水電瓦斯費用。"
   },
   {
     "id": 23074,
@@ -854,10 +854,10 @@
     "en": "deliverable",
     "kk": "[dɪˋlɪvərəb!]",
     "uk": "/dɪˈlɪvərəbl/",
-    "zh": "n. 交付成果、應交付項目、可交付的、可交付的產品",
+    "zh": "n. 交付成果、交付物、交付標的；adj. 可交付的",
     "unit": 14,
-    "example": "All software deliverables must be thoroughly tested before final handover to the client.",
-    "exampleZh": "所有軟體交付成果在最終移交給客戶前都必須經過徹底測試。"
+    "example": "The project manager reviewed all key deliverables before submitting the final milestone report.",
+    "exampleZh": "專案經理在提交最終里程碑報告之前，審查了所有關鍵的交付成果。"
   },
   {
     "id": 31959,
@@ -914,10 +914,10 @@
     "en": "activation",
     "kk": "[͵æktəˋveʃən]",
     "uk": "/ˌæktɪˈveɪʃn/",
-    "zh": "n. 啟用、開通、激活、啟動",
+    "zh": "n. 啟用、開通、啟動",
     "unit": 14,
-    "example": "Please follow the instructions in the email to complete the account activation process.",
-    "exampleZh": "請按照電子郵件中的說明完成帳戶啟用程序。"
+    "example": "Please click on the secure link in your verification email to complete your account activation.",
+    "exampleZh": "請點擊驗證電子郵件中的安全連結以完成您的帳戶啟用。"
   },
   {
     "id": 31965,
@@ -1344,70 +1344,70 @@
     "en": "unexpected",
     "kk": "[ˋʌnɪkˋspɛktɪd]",
     "uk": "/ˌʌnɪkˈspektɪd/",
-    "zh": "adj. 出乎意料的",
+    "zh": "adj. 出乎意料的、意外的",
     "unit": 14,
-    "example": "unexpected guests/question",
-    "exampleZh": "不速之客／意外的問題"
+    "example": "The sudden bad weather caused unexpected travel delays for many holiday passengers.",
+    "exampleZh": "突如其來的惡劣天氣為許多假期旅客帶來了出乎意料的行程延誤。"
   },
   {
     "id": 32028,
     "en": "congestion",
     "kk": "[kənˋdʒɛstʃən]",
     "uk": "/kənˈdʒestʃn/",
-    "zh": "n. 擁擠; 擁堵；充血; 黏液阻塞",
+    "zh": "n. 擁擠、壅塞；（交通）堵塞；（醫學）充血、鼻塞",
     "unit": 14,
-    "example": "for nasal congestion , try this new spray",
-    "exampleZh": "試試這種新噴劑，可治療鼻塞"
+    "example": "Heavy traffic congestion on the highway caused hundreds of morning commuters to arrive late for work.",
+    "exampleZh": "公路上嚴重的交通壅塞導致數百名早晨通勤者上班遲到。"
   },
   {
     "id": 32029,
     "en": "contractual",
     "kk": "[kənˋtræktʃʊəl]",
     "uk": "/kənˈtræktʃʊəl/",
-    "zh": "adj. 合同的",
+    "zh": "adj. 合約的、合約規範的、契約上的",
     "unit": 14,
-    "example": "contractual agreement/obligations",
-    "exampleZh": "契約／合同規定的義務"
+    "example": "Both commercial parties are legally bound to fulfill their contractual obligations on time.",
+    "exampleZh": "商業雙方均負有按時履行其合約義務的法律約束責任。"
   },
   {
     "id": 32030,
     "en": "renewable",
     "kk": "[rɪˋnjuəbl]",
     "uk": "/rɪˈnjuːəbl/",
-    "zh": "adj. 可延期的；可再生的；npl. 可再生能源",
+    "zh": "adj. 可再生的、可持續的；可續約的",
     "unit": 14,
-    "example": "renewable technology",
-    "exampleZh": "可再生能源技術"
+    "example": "The manufacturing plant transitioned to renewable energy sources like solar and wind power.",
+    "exampleZh": "該製造工廠已全面轉型採用太陽能與風力發電等再生能源。"
   },
   {
     "id": 32031,
     "en": "defective",
     "kk": "[dɪˋfɛktɪv]",
     "uk": "/dɪˈfektɪv/",
-    "zh": "adj. 有缺點的、有缺陷的",
+    "zh": "adj. 有瑕疵的、有缺陷的、故障的",
     "unit": 14,
-    "example": "defective workmanship",
-    "exampleZh": "工藝缺陷"
+    "example": "The electronics store promised to replace any defective appliances free of charge within thirty days.",
+    "exampleZh": "這家電器行承諾在三十天內免費更換任何有瑕疵的家電商品。"
   },
   {
     "id": 32032,
     "en": "thrilled",
     "kk": "[θrɪld]",
     "uk": "/θrɪld/",
-    "zh": "adj. 非常興奮的",
+    "zh": "adj. 非常興奮的、極為欣喜的",
     "unit": 14,
-    "example": "to be thrilled to do sth.",
-    "exampleZh": "做某事非常興奮"
+    "example": "The marketing director was thrilled to announce that the product launch exceeded all quarterly sales targets.",
+    "exampleZh": "行銷總監非常興奮地宣布，該產品上市發表會超越了所有的季度銷售目標。"
   },
   {
     "id": 32033,
     "en": "surcharge",
     "kk": "[ˋsɝ͵tʃɑrdʒ]",
     "uk": "/ˈsɜːtʃɑːdʒ/",
-    "zh": "n. 附加費、附加稅、額外費用；vt. 對…收取附加費",
+    "zh": "n. 附加費、額外費用；vt. 對…加收費用",
     "unit": 14,
-    "example": "a 10% surcharge on the basic cost of the holiday",
-    "exampleZh": "基本費用之外的10%假日附加費"
+    "example": "The delivery courier added a minor fuel surcharge due to recent increases in global oil prices.",
+    "exampleZh": "由於近期國際油價上漲，該貨運快遞公司加收了一筆微幅的燃油附加費。"
   },
   {
     "id": 32034,
@@ -1524,9 +1524,9 @@
     "en": "pilot",
     "kk": "[ˋpaɪlət]",
     "uk": "/ˈpaɪlət/",
-    "zh": "n. 飛行員、領航員、試播節目；adj. 試點的、試驗性的；vt. 駕駛、領航、試行",
+    "zh": "n. 飛行員、機師、領航員；adj. 試點的、試辦的、先導的；vt. 試行、駕駛",
     "unit": 14,
-    "example": "You are the best little kite pilot in the park today.",
-    "exampleZh": "妳今天是公園裡最棒的風箏小飛行員。"
+    "example": "The hospital launched a pilot project to evaluate the effectiveness of the new digital intake system.",
+    "exampleZh": "該醫院推出了一項先導試行計畫，以評估新數位掛號系統的成效。"
   }
 ]

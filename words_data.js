@@ -21004,10 +21004,10 @@ const externalVocabularyDB = [
         "en": "zebra",
         "kk": "[ˋzibrə]",
         "uk": "/ˈzebrə/",
-        "zh": "n. 斑馬、斑馬紋蝶、斑馬魚、重牙鯛",
+        "zh": "n. 斑馬",
         "unit": 3,
         "example": "The lion was stalking a zebra.",
-        "exampleZh": "獅子偷偷接近斑馬。"
+        "exampleZh": "獅子正悄悄地靠近斑馬。"
     },
     {
         "id": 2102,
@@ -21494,7 +21494,7 @@ const externalVocabularyDB = [
         "en": "familiar",
         "kk": "[fəˋmɪljɚ]",
         "uk": "/fəˈmɪliə(r)/",
-        "zh": "adj. 熟悉的、常見的、普通的、非正式的；n. 妖精、知交、密友、僕人",
+        "zh": "adj. 熟悉的、常見的、普通的；n. 知交、密友",
         "unit": 3,
         "example": "He was humming a familiar tune.",
         "exampleZh": "他低聲哼著一支熟悉的小曲。"
@@ -22254,10 +22254,10 @@ const externalVocabularyDB = [
         "en": "sexy",
         "kk": "[ˋsɛksi]",
         "uk": "/ˈseksi/",
-        "zh": "adj. 性感的、引起性慾的、性興奮的、性衝動的",
+        "zh": "adj. 性感的、迷人的",
         "unit": 3,
         "example": "She was one of the sexiest women I had seen.",
-        "exampleZh": "她是我所見過的最性感的女人之一。"
+        "exampleZh": "她是我見過最性感的女人之一。"
     },
     {
         "id": 2227,
@@ -26796,18 +26796,18 @@ const externalVocabularyDB = [
         "uk": "/fliː/",
         "zh": "n. 跳蚤",
         "unit": 3,
-        "example": "The Flea was the first to step forward.",
-        "exampleZh": "跳蚤是第一個站出來的。"
+        "example": "My dog has fleas and needs a bath.",
+        "exampleZh": "我的狗身上有跳蚤，需要洗個澡。"
     },
     {
         "id": 2681,
         "en": "flesh",
         "kk": "[flɛʃ]",
         "uk": "/fleʃ/",
-        "zh": "n. 肉、肌肉、皮膚、果肉；v. 使充實、使具體、激起……的殺性、使投入血戰",
+        "zh": "n. 肉、肌肉、皮膚、果肉；v. 使充實、使具體化",
         "unit": 3,
         "example": "I'm only flesh and blood, like anyone else.",
-        "exampleZh": "我只是血肉之軀，跟其他人一樣。"
+        "exampleZh": "我和其他人一樣，只是血肉之軀。"
     },
     {
         "id": 2682,
@@ -29674,10 +29674,10 @@ const externalVocabularyDB = [
         "en": "pub",
         "kk": "[pʌb]",
         "uk": "/pʌb/",
-        "zh": "n. 酒吧、酒館、酒店、旅館；abbr. 公眾的、公開的、出版、發行；v. 時常出入於酒吧、泡酒吧",
+        "zh": "n. 酒吧、酒館；v. 時常出入於酒吧、泡酒吧",
         "unit": 3,
         "example": "They serve good pub grub there.",
-        "exampleZh": "他們那兒供應上好的酒吧食物。"
+        "exampleZh": "他們那兒供應很棒的酒吧食物。"
     },
     {
         "id": 2969,

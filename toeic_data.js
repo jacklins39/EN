@@ -12414,7 +12414,7 @@ const toeicWordsDB = [
         "en": "familiar",
         "kk": "[fəˋmɪljɚ]",
         "uk": "/fəˈmɪliə(r)/",
-        "zh": "adj. 熟悉的、常見的、普通的、非正式的；n. 妖精、知交、密友、僕人",
+        "zh": "adj. 熟悉的、常見的、普通的；n. 知交、密友",
         "unit": 12,
         "example": "He was humming a familiar tune.",
         "exampleZh": "他低聲哼著一支熟悉的小曲。"

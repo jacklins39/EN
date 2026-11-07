@@ -60594,10 +60594,10 @@ const externalVocabularyDB = [
         "en": "grope",
         "kk": "[ɡrop]",
         "uk": "/ɡrəʊp/",
-        "zh": "v. 觸摸、摸索、摸索著走、探索；n. 摸、猥褻",
+        "zh": "v. 觸摸、摸索、摸索著走；n. 摸索",
         "unit": 7,
-        "example": "I groped for a flashlight.",
-        "exampleZh": "我摸索著找手電筒。"
+        "example": "I groped for a flashlight in the dark.",
+        "exampleZh": "我在黑暗中摸索著找手電筒。"
     },
     {
         "id": 6061,
@@ -60744,10 +60744,10 @@ const externalVocabularyDB = [
         "en": "humanitarian",
         "kk": "[͵hju͵mænəˋtɛriən]",
         "uk": "/hjuːˌmænɪˈteəriən/",
-        "zh": "adj. 人道主義的、博愛的、基督凡人論的；n. 慈善家、人道主義者、博愛者、基督凡人論者",
+        "zh": "adj. 人道主義的、博愛的；n. 慈善家、人道主義者",
         "unit": 7,
         "example": "Humanitarian work comes naturally to them.",
-        "exampleZh": "人道主義工作對他們而言輕而易舉。"
+        "exampleZh": "人道主義工作對他們而言是理所當然的事。"
     },
     {
         "id": 6076,
@@ -62664,10 +62664,10 @@ const externalVocabularyDB = [
         "en": "ravage",
         "kk": "[ˋrævɪdʒ]",
         "uk": "/ˈrævɪdʒ/",
-        "zh": "vt. 毀壞、破壞、劫掠；n. 蹂躪、大破壞",
+        "zh": "vt. 毀壞、破壞、劫掠；n. 嚴重破壞、蹂躪",
         "unit": 7,
-        "example": "Every ravage is a kind of mature.",
-        "exampleZh": "每一種創傷，都是一種成熟。"
+        "example": "The hurricane severely ravaged the coastal villages.",
+        "exampleZh": "颶風嚴重摧毀了沿海的村莊。"
     },
     {
         "id": 6268,
@@ -64824,7 +64824,7 @@ const externalVocabularyDB = [
         "en": "he",
         "kk": "[hi]",
         "uk": "/hiː; hi/",
-        "zh": "pron. 他、人、上帝；n. 男性、男子、雄性動物、（中、美、丹）赫",
+        "zh": "pron. 他；n. 男性、雄性動物",
         "unit": 7,
         "example": "He feels he is blameless.",
         "exampleZh": "他覺得自己是清白的。"
@@ -64884,10 +64884,10 @@ const externalVocabularyDB = [
         "en": "it",
         "kk": "[ɪt]",
         "uk": "/ɪt/",
-        "zh": "pron. 它、這、那、用於指某人；n. 捉人者、找人者、義大利苦艾酒、味美思酒；abbr. 資訊科技",
+        "zh": "pron. 它、這、那",
         "unit": 7,
         "example": "It really isn't half bad, is it?",
-        "exampleZh": "這的確很不錯，對嗎？"
+        "exampleZh": "這確實還不錯，對嗎？"
     },
     {
         "id": 6490,

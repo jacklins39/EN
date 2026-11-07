@@ -3786,8 +3786,8 @@
     "uk": "/tʃiːf/",
     "zh": "adj. 主要的、首要的、為首的、首席的；n. 首領、領袖、酋長",
     "unit": 1,
-    "example": "Who is the chief of the village?",
-    "exampleZh": "誰是這個村莊的村長？"
+    "example": "Safety is our chief concern.",
+    "exampleZh": "安全是我們最首要的考量。"
   },
   {
     "id": 380,

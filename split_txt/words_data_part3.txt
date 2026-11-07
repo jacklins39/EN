@@ -6664,7 +6664,7 @@
     "en": "fancy",
     "kk": "[ˋfænsi]",
     "uk": "/ˈfænsi/",
-    "zh": "vt. 喜歡、想要、愛戀、愛慕；n. 喜歡、想要、想象、想象力；adj. 時髦的、奢華的、華麗的、花哨的",
+    "zh": "vt. 喜歡、想要；n. 喜歡、想像；adj. 華麗的、精緻的",
     "unit": 3,
     "example": "I just fancied a drink.",
     "exampleZh": "我只是想要杯飲料。"

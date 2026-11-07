@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261107V27';
+        const APP_BUILD_VERSION = '20261108V1';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -63,20 +63,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261107V27"></script>
-    <script src="toeic_data.js?v=20261107V27"></script>
-    <script src="jh_data.js?v=20261107V27"></script>
-    <script src="listening_data.js?v=20261107V27"></script>
-    <script src="listening_words_data.js?v=20261107V27"></script>
-    <script src="uk_phonetics_manifest.js?v=20261107V27"></script>
-    <script src="words_audio_manifest.js?v=20261107V27"></script>
-    <script src="examples_audio_manifest.js?v=20261107V27"></script>
-    <script src="zh_audio_manifest.js?v=20261107V27"></script>
-    <script src="collocations_audio_manifest.js?v=20261107V27"></script>
-    <script src="syn_ant_data.js?v=20261107V27"></script>
-    <script src="synonyms_unit8_data.js?v=20261107V27"></script>
-    <script src="examples_unit9_data.js?v=20261107V27"></script>
-    <script src="game_whack.js?v=20261107V27"></script>
+    <script src="words_data.js?v=20261108V1"></script>
+    <script src="toeic_data.js?v=20261108V1"></script>
+    <script src="jh_data.js?v=20261108V1"></script>
+    <script src="listening_data.js?v=20261108V1"></script>
+    <script src="listening_words_data.js?v=20261108V1"></script>
+    <script src="uk_phonetics_manifest.js?v=20261108V1"></script>
+    <script src="words_audio_manifest.js?v=20261108V1"></script>
+    <script src="examples_audio_manifest.js?v=20261108V1"></script>
+    <script src="zh_audio_manifest.js?v=20261108V1"></script>
+    <script src="collocations_audio_manifest.js?v=20261108V1"></script>
+    <script src="syn_ant_data.js?v=20261108V1"></script>
+    <script src="synonyms_unit8_data.js?v=20261108V1"></script>
+    <script src="examples_unit9_data.js?v=20261108V1"></script>
+    <script src="game_whack.js?v=20261108V1"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -3515,9 +3515,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261107V27</span>
+                        <span id="app-version-display">版本 20261108V1</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261107V27</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261108V1</p>
                 </div>
             </div>
         </div>
@@ -5729,6 +5729,24 @@
             nextCard();
         }
 
+
+        // ==========================================
+        // 渲染單字記憶等級徽章 (LV0~LV5)
+        // ==========================================
+        function renderWordLevelBadgeHtml(lvl) {
+            const l = Math.max(0, Math.min(5, Number(lvl) || 0));
+            const configs = [
+                { label: '新單字', tip: '尚未開始記憶', cls: 'bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 border-slate-200/90 dark:border-slate-700' },
+                { label: 'LV1 初學', tip: '隔 1 天複習', cls: 'bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 border-blue-200/80 dark:border-blue-800/60' },
+                { label: 'LV2 複習', tip: '隔 3 天複習', cls: 'bg-cyan-50 dark:bg-cyan-950/60 text-cyan-700 dark:text-cyan-300 border-cyan-200/80 dark:border-cyan-800/60' },
+                { label: 'LV3 穩固', tip: '隔 7 天複習', cls: 'bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border-indigo-200/80 dark:border-indigo-800/60' },
+                { label: 'LV4 熟練', tip: '隔 14 天複習', cls: 'bg-violet-50 dark:bg-violet-950/60 text-violet-700 dark:text-violet-300 border-violet-200/80 dark:border-violet-800/60' },
+                { label: 'LV5 精通', tip: '永久熟練歸檔', cls: 'bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border-emerald-200/80 dark:border-emerald-800/60' }
+            ];
+            const c = configs[l];
+            return `<span class="inline-flex items-center gap-1 text-[11px] font-bold px-2 py-0.5 rounded-full border ${c.cls} shrink-0 select-none shadow-2xs" title="艾賓浩斯記憶等級：${c.label}（${c.tip}）">${c.label}</span>`;
+        }
+
         // ==========================================
         // 單字預覽功能
         // ==========================================
@@ -5737,7 +5755,16 @@
                 <div id="preview-row-${i}" class="preview-word-row flex items-center justify-between py-3 px-3 border-b border-gray-100 last:border-0 hover:bg-[#F5F5F7] rounded-2xl cursor-pointer transition-colors" onclick="showWordDetailModal('${esc(w.en)}')">
                     <div class="flex items-center gap-3 min-w-0">
                         <div class="min-w-0">
-                            <div class="font-semibold text-[#1D1D1F] text-[15px] flex items-center gap-1.5 flex-wrap">${esc(w.en)} ${renderPhoneticsBadgesHtml(w, 'sm')}</div>
+                            <div class="font-semibold text-[#1D1D1F] dark:text-slate-100 text-[15px] flex items-center gap-2 flex-wrap">
+                                <span>${esc(w.en)}</span>
+                                ${(() => {
+                                    const prog = (typeof userProgress !== 'undefined' && w.id && userProgress[w.id]) || 
+                                                 (typeof userProgress !== 'undefined' && typeof vocabularyDB !== 'undefined' ? (vocabularyDB.find(x => x && x.en && x.en.toLowerCase() === w.en.toLowerCase()) ? userProgress[vocabularyDB.find(x => x && x.en && x.en.toLowerCase() === w.en.toLowerCase()).id] : null) : null);
+                                    const lvl = prog ? (Number(prog.level) || 0) : 0;
+                                    return renderWordLevelBadgeHtml(lvl);
+                                })()}
+                                ${renderPhoneticsBadgesHtml(w, 'sm')}
+                            </div>
                             ${(() => {
                         const pParsed = splitPosAndZh(w.zh, w.pos, w.exampleZh, w.example, w.en);
                         const pConcise = getConciseZh(w.zh, w.pos, w.exampleZh, w.example, w.en) || pParsed.pureZh || w.zh;
@@ -12162,6 +12189,12 @@
                     <div class="w-full">
                         <div class="flex items-center gap-2.5 flex-wrap">
                             <h2 class="text-2xl sm:text-3xl font-extrabold text-[#1D1D1F] tracking-tight break-normal overflow-wrap-normal select-all">${esc(w.en)}</h2>
+                            ${(() => {
+                                const prog = (typeof userProgress !== 'undefined' && w.id && userProgress[w.id]) || 
+                                             (typeof userProgress !== 'undefined' && typeof vocabularyDB !== 'undefined' ? (vocabularyDB.find(x => x && x.en && x.en.toLowerCase() === w.en.toLowerCase()) ? userProgress[vocabularyDB.find(x => x && x.en && x.en.toLowerCase() === w.en.toLowerCase()).id] : null) : null);
+                                const lvl = prog ? (Number(prog.level) || 0) : 0;
+                                return renderWordLevelBadgeHtml(lvl);
+                            })()}
                             ${renderSyllablesBadgeHtml(w.en, w.kk, 'md')}
                         </div>
                         ${relatedBaseHtml}

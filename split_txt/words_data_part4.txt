@@ -3394,7 +3394,7 @@
     "en": "partial",
     "kk": "[ˋpɑrʃəl]",
     "uk": "/ˈpɑːʃ(ə)l/",
-    "zh": "adj. 部分的、局部的、不完全的、偏袒的；n. 分音、泛音",
+    "zh": "adj. 部分的、局部的、不完全的、偏袒的",
     "unit": 4,
     "example": "He managed to reach a partial agreement with both republics.",
     "exampleZh": "他設法跟兩個共和國達成了部分共識。"

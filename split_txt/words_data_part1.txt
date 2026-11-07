@@ -954,7 +954,7 @@
     "en": "die",
     "kk": "[daɪ]",
     "uk": "/daɪ/",
-    "zh": "v. 死、死亡、消失、滅亡；n. 骰子、金屬模具、壓模",
+    "zh": "v. 死、死亡、消失、滅亡；n. 骰子",
     "unit": 1,
     "example": "Plants will die without any water.",
     "exampleZh": "植物沒有水就會死掉。"
@@ -1784,7 +1784,7 @@
     "en": "how",
     "kk": "[haʊ]",
     "uk": "/haʊ/",
-    "zh": "adv. 如何、怎樣、好否、怎麼樣；conj. 怎樣、如何、以任何方式、無論用什麼方法；n. 方式、方法",
+    "zh": "adv. 如何、怎樣、多麼",
     "unit": 1,
     "example": "I don't want to know how he died.",
     "exampleZh": "我不想知道他是如何死的。"
@@ -2904,7 +2904,7 @@
     "en": "August",
     "kk": "[ˋɑɡəst]",
     "uk": "/ɔːˈɡʌst/",
-    "zh": "n. 八月；adj. 威嚴的、令人敬畏的",
+    "zh": "n. 八月",
     "unit": 1,
     "example": "We go to summer camp in August.",
     "exampleZh": "我們在八月去參加夏令營。"
@@ -3304,7 +3304,7 @@
     "en": "blue",
     "kk": "[blu]",
     "uk": "/bluː/",
-    "zh": "adj. 藍色的、憂鬱的、沮喪的、保守的；n. 藍色、天藍色、天空、大海；v. 變成藍色、用藍色漂白劑洗、揮霍、亂花",
+    "zh": "adj. 藍色的、憂鬱的、沮喪的；n. 藍色、天空、大海",
     "unit": 1,
     "example": "The clear sky is very blue today.",
     "exampleZh": "今天晴朗的天空非常蔚藍。"
@@ -4144,7 +4144,7 @@
     "en": "cut",
     "kk": "[kʌt]",
     "uk": "/kʌt/",
-    "zh": "v. 切、割、剪、削減；n. 切下的肉塊、份額、一份利潤、通道；adj. 縮減的、割下的、雕過的、閹割過的",
+    "zh": "v. 切、割、剪、削減；n. 傷口、切下的肉塊、削減",
     "unit": 1,
     "example": "Use this knife to cut the apple.",
     "exampleZh": "用這把小刀來切蘋果。"

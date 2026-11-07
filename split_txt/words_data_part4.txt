@@ -7054,7 +7054,7 @@
     "en": "comment",
     "kk": "[ˋkɑmɛnt]",
     "uk": "/ˈkɒment/",
-    "zh": "n. 評論、意見、批評、指責；vt. 評論、發表意見、註解、把（部分程式）轉成註解",
+    "zh": "n. 評論、意見、批評；vt. 評論、發表意見",
     "unit": 4,
     "example": "Buckingham Palace refused to comment.",
     "exampleZh": "英國王室拒絕發表評論。"

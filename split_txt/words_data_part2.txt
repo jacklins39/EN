@@ -3364,7 +3364,7 @@
     "en": "bedroom",
     "kk": "[ˋbɛ͵drum]",
     "uk": "/ˈbedruːm/",
-    "zh": "n. 臥室、睡房；adj. 兩性關係的、城郊住宅區的",
+    "zh": "n. 臥室、睡房",
     "unit": 2,
     "example": "My bedroom has a big soft bed.",
     "exampleZh": "我的臥室有一張又大又軟的床。"
@@ -3847,7 +3847,7 @@
     "zh": "n. 胡蘿蔔",
     "unit": 2,
     "example": "The rabbit is eating a carrot.",
-    "exampleZh": "兔子正津津有味地啃著胡蘿蔔。"
+    "exampleZh": "兔子正在吃胡蘿蔔。"
   },
   {
     "id": 1386,
@@ -4266,8 +4266,8 @@
     "uk": "/ˈkɒkrəʊtʃ/",
     "zh": "n. 蟑螂",
     "unit": 2,
-    "example": "FIRST, catch your cockroach.",
-    "exampleZh": "首先，你去抓住你的蟑螂。"
+    "example": "I saw a big cockroach in the kitchen.",
+    "exampleZh": "我在廚房裡看到了一隻大蟑螂。"
   },
   {
     "id": 1428,
@@ -4784,7 +4784,7 @@
     "en": "desire",
     "kk": "[dɪˋzaɪɚ]",
     "uk": "/dɪˈzaɪə(r)/",
-    "zh": "n. 願望、慾望、渴望、情慾；vt. 渴望、想望、要求、請求",
+    "zh": "n. 願望、慾望、渴望；vt. 渴望、想望、要求",
     "unit": 2,
     "example": "She has a strong desire to learn.",
     "exampleZh": "她有強烈的求知慾望。"

@@ -884,7 +884,7 @@ const jhWordsDB = [
         "en": "August",
         "kk": "[ˋɑɡəst]",
         "uk": "/ɔːˈɡʌst/",
-        "zh": "n. 八月；adj. 威嚴的、令人敬畏的",
+        "zh": "n. 八月",
         "unit": 17,
         "example": "We go to summer camp in August.",
         "exampleZh": "我們在八月去參加夏令營。"
@@ -1324,7 +1324,7 @@ const jhWordsDB = [
         "en": "bedroom",
         "kk": "[ˋbɛ͵drum]",
         "uk": "/ˈbedruːm/",
-        "zh": "n. 臥室、睡房；adj. 兩性關係的、城郊住宅區的",
+        "zh": "n. 臥室、睡房",
         "unit": 17,
         "example": "My bedroom has a big soft bed.",
         "exampleZh": "我的臥室有一張又大又軟的床。"
@@ -1694,7 +1694,7 @@ const jhWordsDB = [
         "en": "blue",
         "kk": "[blu]",
         "uk": "/bluː/",
-        "zh": "adj. 藍色的、憂鬱的、沮喪的、保守的；n. 藍色、天藍色、天空、大海；v. 變成藍色、用藍色漂白劑洗、揮霍、亂花",
+        "zh": "adj. 藍色的、憂鬱的、沮喪的；n. 藍色、天空、大海",
         "unit": 17,
         "example": "The clear sky is very blue today.",
         "exampleZh": "今天晴朗的天空非常蔚藍。"
@@ -1774,7 +1774,7 @@ const jhWordsDB = [
         "en": "bored",
         "kk": "[bɔrd]",
         "uk": "/bɔːd/",
-        "zh": "adj. 厭倦的、無聊的、有特定口徑的；v. 使厭煩、鑽、盯著看",
+        "zh": "adj. 厭倦的、無聊的、感到煩悶的",
         "unit": 17,
         "example": "He was bored with the film.",
         "exampleZh": "他對那部電影感到無聊。"
@@ -2517,7 +2517,7 @@ const jhWordsDB = [
         "zh": "n. 胡蘿蔔",
         "unit": 17,
         "example": "The rabbit is eating a carrot.",
-        "exampleZh": "兔子正津津有味地啃著胡蘿蔔。"
+        "exampleZh": "兔子正在吃胡蘿蔔。"
     },
     {
         "id": 30253,
@@ -3246,8 +3246,8 @@ const jhWordsDB = [
         "uk": "/ˈkɒkrəʊtʃ/",
         "zh": "n. 蟑螂",
         "unit": 17,
-        "example": "FIRST, catch your cockroach.",
-        "exampleZh": "首先，你去抓住你的蟑螂。"
+        "example": "I saw a big cockroach in the kitchen.",
+        "exampleZh": "我在廚房裡看到了一隻大蟑螂。"
     },
     {
         "id": 30326,
@@ -3374,7 +3374,7 @@ const jhWordsDB = [
         "en": "comment",
         "kk": "[ˋkɑmɛnt]",
         "uk": "/ˈkɒment/",
-        "zh": "n. 評論、意見、批評、指責；vt. 評論、發表意見、註解、把（部分程式）轉成註解",
+        "zh": "n. 評論、意見、批評；vt. 評論、發表意見",
         "unit": 17,
         "example": "He made a nice comment today.",
         "exampleZh": "他今天發表了很好的評論。"
@@ -3994,7 +3994,7 @@ const jhWordsDB = [
         "en": "cut",
         "kk": "[kʌt]",
         "uk": "/kʌt/",
-        "zh": "v. 切、割、剪、削減；n. 切下的肉塊、份額、一份利潤、通道；adj. 縮減的、割下的、雕過的、閹割過的",
+        "zh": "v. 切、割、剪、削減；n. 傷口、切下的肉塊、削減",
         "unit": 17,
         "example": "Use this knife to cut the apple.",
         "exampleZh": "用這把小刀來切蘋果。"
@@ -4344,7 +4344,7 @@ const jhWordsDB = [
         "en": "desire",
         "kk": "[dɪˋzaɪɚ]",
         "uk": "/dɪˈzaɪə(r)/",
-        "zh": "n. 願望、慾望、渴望、情慾；vt. 渴望、想望、要求、請求",
+        "zh": "n. 願望、慾望、渴望；vt. 渴望、想望、要求",
         "unit": 17,
         "example": "She has a strong desire to learn.",
         "exampleZh": "她有強烈的求知慾望。"
@@ -4434,7 +4434,7 @@ const jhWordsDB = [
         "en": "die",
         "kk": "[daɪ]",
         "uk": "/daɪ/",
-        "zh": "v. 死、死亡、消失、滅亡；n. 骰子、金屬模具、壓模",
+        "zh": "v. 死、死亡、消失、滅亡；n. 骰子",
         "unit": 17,
         "example": "Plants will die without any water.",
         "exampleZh": "植物沒有水就會死掉。"
@@ -5884,10 +5884,10 @@ const jhWordsDB = [
         "en": "fancy",
         "kk": "[ˋfænsi]",
         "uk": "/ˈfænsi/",
-        "zh": "vt. 喜歡、想要、愛戀、愛慕；n. 喜歡、想要、想象、想象力；adj. 時髦的、奢華的、華麗的、花哨的",
+        "zh": "vt. 喜歡、想要；n. 喜歡、想像；adj. 華麗的、精緻的",
         "unit": 17,
-        "example": "Do you fancy a jar after work?",
-        "exampleZh": "下班後去喝一杯怎麼樣？"
+        "example": "She wore a fancy dress to the party.",
+        "exampleZh": "她穿了一件華麗的洋裝去參加派對。"
     },
     {
         "id": 30590,
@@ -8134,10 +8134,10 @@ const jhWordsDB = [
         "en": "how",
         "kk": "[haʊ]",
         "uk": "/haʊ/",
-        "zh": "adv. 如何、怎樣、好否、怎麼樣；conj. 怎樣、如何、以任何方式、無論用什麼方法；n. 方式、方法",
+        "zh": "adv. 如何、怎樣、多麼",
         "unit": 17,
-        "example": "How much is haulage?",
-        "exampleZh": "運費是多少？"
+        "example": "How do you go to school every day?",
+        "exampleZh": "你每天怎麼去上學？"
     },
     {
         "id": 30815,

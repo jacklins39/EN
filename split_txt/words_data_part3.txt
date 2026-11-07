@@ -9314,7 +9314,7 @@
     "en": "pilot",
     "kk": "[ˋpaɪlət]",
     "uk": "/ˈpaɪlət/",
-    "zh": "n. 飛行員、領航員、試播節目、常燃小火；adj. 試點的、控制引導訊號；vt. 駕駛、領航、試驗、試行",
+    "zh": "n. 飛行員、領航員、試播節目；adj. 試點的、試驗性的；vt. 駕駛、領航、試行",
     "unit": 3,
     "example": "Someday I'll be a pilot.",
     "exampleZh": "將來有一天我將成為一名飛行員。"

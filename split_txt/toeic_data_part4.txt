@@ -247,7 +247,7 @@
     "zh": "adj. 年終的；n. 年終",
     "unit": 14,
     "example": "Surviving the year-end cash crunch is always tough.",
-    "exampleZh": "在年終剩餘現金往往是困難的。"
+    "exampleZh": "熬過年底的資金短缺總是很困難的。"
   },
   {
     "id": 23026,
@@ -364,10 +364,10 @@
     "en": "zoom-out",
     "kk": "[zum aʊt]",
     "uk": "",
-    "zh": "v. 用變焦距鏡頭使景物縮小、縮小、縮小顯示、拉遠鏡頭：（攝影、軟體介面）調整鏡頭或畫面",
+    "zh": "v. 縮小、縮小顯示、拉遠鏡頭",
     "unit": 14,
     "example": "Just zoom-out turn on the visibility of all layers and enjoy!",
-    "exampleZh": "放大影象，啟用所有圖層的可視狀態，然後欣賞吧！"
+    "exampleZh": "只要縮小畫面，開啟所有圖層的可視狀態，然後好好欣賞吧！"
   },
   {
     "id": 23038,
@@ -1384,7 +1384,7 @@
     "en": "defective",
     "kk": "[dɪˋfɛktɪv]",
     "uk": "/dɪˈfektɪv/",
-    "zh": "adj. 有缺點的; 有缺陷的；不完全變化的",
+    "zh": "adj. 有缺點的、有缺陷的",
     "unit": 14,
     "example": "defective workmanship",
     "exampleZh": "工藝缺陷"
@@ -1404,7 +1404,7 @@
     "en": "surcharge",
     "kk": "[ˋsɝ͵tʃɑrdʒ]",
     "uk": "/ˈsɜːtʃɑːdʒ/",
-    "zh": "n. 附加費; 附加稅; 附加罰款；改值加蓋；vt. 向…收附加費; 向…收附加稅",
+    "zh": "n. 附加費、附加稅、額外費用；vt. 對…收取附加費",
     "unit": 14,
     "example": "a 10% surcharge on the basic cost of the holiday",
     "exampleZh": "基本費用之外的10%假日附加費"
@@ -1464,7 +1464,7 @@
     "en": "cardio",
     "kk": "[ˋkɑrdɪ͵o]",
     "uk": "/ˈkärdēō/",
-    "zh": "n. 有氧運動、cardiovascular exercise.",
+    "zh": "n. 有氧運動",
     "unit": 14,
     "example": "Her daily fitness routine includes thirty minutes of intensive cardio exercise.",
     "exampleZh": "她的日常健身計畫包括三十分鐘的高強度有氧運動。"
@@ -1524,7 +1524,7 @@
     "en": "pilot",
     "kk": "[ˋpaɪlət]",
     "uk": "/ˈpaɪlət/",
-    "zh": "n. 飛行員、領航員、試播節目、常燃小火；adj. 試點的、控制引導訊號；vt. 駕駛、領航、試驗、試行",
+    "zh": "n. 飛行員、領航員、試播節目；adj. 試點的、試驗性的；vt. 駕駛、領航、試行",
     "unit": 14,
     "example": "You are the best little kite pilot in the park today.",
     "exampleZh": "妳今天是公園裡最棒的風箏小飛行員。"

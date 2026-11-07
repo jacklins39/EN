@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261107V23';
+        const APP_BUILD_VERSION = '20261107V24';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -63,20 +63,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261107V23"></script>
-    <script src="toeic_data.js?v=20261107V23"></script>
-    <script src="jh_data.js?v=20261107V23"></script>
-    <script src="listening_data.js?v=20261107V23"></script>
-    <script src="listening_words_data.js?v=20261107V23"></script>
-    <script src="uk_phonetics_manifest.js?v=20261107V23"></script>
-    <script src="words_audio_manifest.js?v=20261107V23"></script>
-    <script src="examples_audio_manifest.js?v=20261107V23"></script>
-    <script src="zh_audio_manifest.js?v=20261107V23"></script>
-    <script src="collocations_audio_manifest.js?v=20261107V23"></script>
-    <script src="syn_ant_data.js?v=20261107V23"></script>
-    <script src="synonyms_unit8_data.js?v=20261107V23"></script>
-    <script src="examples_unit9_data.js?v=20261107V23"></script>
-    <script src="game_whack.js?v=20261107V23"></script>
+    <script src="words_data.js?v=20261107V24"></script>
+    <script src="toeic_data.js?v=20261107V24"></script>
+    <script src="jh_data.js?v=20261107V24"></script>
+    <script src="listening_data.js?v=20261107V24"></script>
+    <script src="listening_words_data.js?v=20261107V24"></script>
+    <script src="uk_phonetics_manifest.js?v=20261107V24"></script>
+    <script src="words_audio_manifest.js?v=20261107V24"></script>
+    <script src="examples_audio_manifest.js?v=20261107V24"></script>
+    <script src="zh_audio_manifest.js?v=20261107V24"></script>
+    <script src="collocations_audio_manifest.js?v=20261107V24"></script>
+    <script src="syn_ant_data.js?v=20261107V24"></script>
+    <script src="synonyms_unit8_data.js?v=20261107V24"></script>
+    <script src="examples_unit9_data.js?v=20261107V24"></script>
+    <script src="game_whack.js?v=20261107V24"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -3483,9 +3483,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261107V23</span>
+                        <span id="app-version-display">版本 20261107V24</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261107V23</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261107V24</p>
                 </div>
             </div>
         </div>
@@ -6363,6 +6363,7 @@
         let toastAnimTimerId = null;
 
         function resetSessionStats(wordsList = []) {
+            learnedSessionQueue = []; // 每次新測驗/新輪播開始時，重置單字累積列車
             sessionStats = {
                 streak: 0,
                 maxStreak: 0,
@@ -6489,6 +6490,11 @@
             actionNext.classList.add('hidden');
             isShowingAnswer = false;
             resetSpeechEvalUI();
+
+            // ★ 單字累積列車：將念過的上一個單字永久留存於走馬燈中，一個接一個累積，絕不消失！
+            if (currentWord && !learnedSessionQueue.some(w => w.id === currentWord.id)) {
+                learnedSessionQueue.push(currentWord);
+            }
 
             if (sessionQueue.length > 0) {
                 currentWord = sessionQueue.shift();
@@ -6736,7 +6742,7 @@
         // ==========================================
         // 電腦版 UI 方案 A：多維擴充區 & 單字鏈走馬燈佇列
         // ==========================================
-        let recentSessionHistory = [];
+        let learnedSessionQueue = []; // 單字累積列車：一個接一個永久留存，絕不消失
         let isAutoFlashcardPaused = false;
 
         function updateDesktopCardExtensions(word) {
@@ -6820,35 +6826,33 @@
             const container = document.getElementById('study-queue-items');
             if (!container || !currentWord) return;
 
-            // 維護最近已播放歷史 (保留已念過單字，最多 4 筆)
-            const pastWords = recentSessionHistory.filter(w => w.id !== currentWord.id);
-
             let queueHtml = '';
 
-            // 1. 已經念過的單字 (已念過，展示英文與中文釋義，隨時可回溫)
-            pastWords.forEach((pw) => {
+            // 1. 已經念過的所有單字 (一個接一個永久留存，排在左側，標記題號與綠勾，點擊可秒回聽)
+            learnedSessionQueue.forEach((pw, idx) => {
+                const seq = idx + 1;
                 queueHtml += `
-                    <div onclick="jumpToQueueWord(${pw.id})" class="flex-shrink-0 px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700 text-slate-400 dark:text-slate-500 hover:text-slate-700 dark:hover:text-slate-200 cursor-pointer transition-all flex items-center gap-2 group" title="回跳溫習">
-                        <span class="text-[10px] font-bold text-emerald-500 group-hover:scale-110 transition-transform">✓</span>
+                    <div onclick="jumpToQueueWord(${pw.id})" class="flex-shrink-0 px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800/70 border border-slate-200/80 dark:border-slate-700 text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-100 hover:bg-slate-200/60 dark:hover:bg-slate-700/80 cursor-pointer transition-all flex items-center gap-2 group shadow-2xs" title="點擊回聽溫習">
+                        <span class="text-[10px] font-bold text-emerald-500 font-mono">✓ ${seq}</span>
                         <div class="text-left">
-                            <div class="text-xs font-semibold line-through opacity-80 group-hover:no-underline">${esc(pw.en)}</div>
-                            <div class="text-[10px] text-slate-400 truncate max-w-[85px]">${esc(getConciseZh(pw.zh) || pw.zh)}</div>
+                            <div class="text-xs font-semibold text-slate-700 dark:text-slate-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">${esc(pw.en)}</div>
+                            <div class="text-[10px] text-slate-400 dark:text-slate-500 truncate max-w-[85px]">${esc(getConciseZh(pw.zh) || pw.zh)}</div>
                         </div>
                     </div>
                 `;
             });
 
-            // 2. 當前正在念的單字 (若還在正面聽英文，中文絕不提前劇透出現；翻面念到中文時才揭曉！)
+            // 2. 當前正在念的單字 (接在最右邊，高亮藍框、脈衝光暈、音符圖示)
+            // 若卡片還在正面朗讀英文，中文絕不提前劇透；等翻面念到中文時才平滑揭曉！
             const showZhNow = isFlipped || (flashcard && flashcard.classList.contains('flipped'));
             const currentZhHtml = showZhNow 
-                ? `<div class="text-[11px] text-slate-600 dark:text-blue-200 font-medium truncate max-w-[120px] transition-all">${esc(getConciseZh(currentWord.zh) || currentWord.zh)}</div>`
-                : `<div class="text-[10px] text-blue-400/70 font-mono italic truncate max-w-[120px] transition-all">🎧 英文朗讀中...</div>`;
+                ? `<div class="text-[11px] text-slate-600 dark:text-blue-200 font-medium truncate max-w-[130px] transition-all">${esc(getConciseZh(currentWord.zh) || currentWord.zh)}</div>`
+                : `<div class="text-[10px] text-blue-400/80 font-mono italic truncate max-w-[130px] transition-all">🎧 英文朗讀中...</div>`;
 
-            // 當前單字序號與頂部進度精準同步
-            const currentSeq = Math.max(1, cardsCompleted || 1);
+            const currentSeq = learnedSessionQueue.length + 1;
 
             queueHtml += `
-                <div class="flex-shrink-0 px-3.5 py-2 rounded-xl bg-[#0071E3]/15 dark:bg-[#0071E3]/25 border-2 border-[#0071E3] text-white shadow-[0_0_15px_rgba(0,113,227,0.3)] flex items-center gap-2.5 scale-102 transition-all">
+                <div id="queue-item-current" class="flex-shrink-0 px-3.5 py-2 rounded-xl bg-[#0071E3]/15 dark:bg-[#0071E3]/25 border-2 border-[#0071E3] text-white shadow-[0_0_15px_rgba(0,113,227,0.3)] flex items-center gap-2.5 scale-102 transition-all">
                     <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
                     <div class="text-left">
                         <div class="text-xs sm:text-sm font-extrabold text-[#0071E3] dark:text-blue-300 flex items-center gap-1.5">
@@ -6860,29 +6864,29 @@
                 </div>
             `;
 
-            // 3. ★ 還沒念到的後續單字：徹底移除！完全不出現！(嚴格遵守「還沒念到的 不要出現」)
-
             container.innerHTML = queueHtml;
+
+            // 3. 自動平滑橫向滾動至最新冒出來的單字上
+            requestAnimationFrame(() => {
+                try {
+                    container.scrollTo({ left: container.scrollWidth, behavior: 'smooth' });
+                } catch(e) {
+                    container.scrollLeft = container.scrollWidth;
+                }
+            });
         }
 
         function jumpToQueueWord(wordId) {
             unlockMobileAudio();
-            // 在待播陣列中尋找
-            const nextIdx = sessionQueue.findIndex(w => w.id === wordId);
-            if (nextIdx !== -1) {
-                const target = sessionQueue.splice(nextIdx, 1)[0];
-                sessionQueue.unshift(target);
-                nextCard();
-                return;
-            }
-            // 在已播陣列中尋找
-            const pastTarget = recentSessionHistory.find(w => w.id === wordId);
+            const pastTarget = learnedSessionQueue.find(w => w.id === wordId);
             if (pastTarget) {
-                sessionQueue.unshift(currentWord);
+                // 將當前單字暫存回待播
+                if (currentWord && currentWord.id !== pastTarget.id) {
+                    sessionQueue.unshift(currentWord);
+                }
                 currentWord = pastTarget;
                 applyFront();
-                updateDesktopCardExtensions(currentWord);
-                updateStudyQueueStrip();
+                updateStudyQueueStrip(true);
                 playAudio(currentWord.en);
             }
         }
@@ -6893,10 +6897,9 @@
                 // 下一個
                 if (sessionQueue.length > 0) nextCard();
             } else if (direction === -1) {
-                // 上一個
-                const pastWords = recentSessionHistory.filter(w => w.id !== currentWord.id);
-                if (pastWords.length > 0) {
-                    const prevWord = pastWords[pastWords.length - 1];
+                // 上一個 (回退到已學列車的最後一個)
+                if (learnedSessionQueue.length > 0) {
+                    const prevWord = learnedSessionQueue[learnedSessionQueue.length - 1];
                     jumpToQueueWord(prevWord.id);
                 }
             }

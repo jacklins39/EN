@@ -7384,7 +7384,7 @@
     "en": "instrumental",
     "kk": "[͵ɪnstrəˋmɛntəl]",
     "uk": "/ˌɪnstrəˈment(ə)l/",
-    "zh": "adj. 用樂器演奏的、有幫助的、起作用的、與樂器有關的；n. 器樂曲、工具格名詞、工具格",
+    "zh": "adj. 有幫助的、起作用的、用樂器演奏的；n. 器樂曲",
     "unit": 12,
     "example": "What instrumental sound do you hear?",
     "exampleZh": "你聽到什麼樂器的聲音呢？"

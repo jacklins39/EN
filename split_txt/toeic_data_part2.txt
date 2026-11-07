@@ -2466,8 +2466,8 @@
     "uk": "/fɑːm/",
     "zh": "n. 農場、養殖場、農舍、生產企業；vt. 務農、耕種、養殖、將（稅收）包出",
     "unit": 12,
-    "example": "Whose is that farm over yonder?",
-    "exampleZh": "那邊的農場是誰的？"
+    "example": "My grandfather has a big farm.",
+    "exampleZh": "我祖父有一座大農場。"
   },
   {
     "id": 21248,
@@ -3216,8 +3216,8 @@
     "uk": "/ˈfɒrən/",
     "zh": "adj. 外國的、外來的、來自國外的、外交的",
     "unit": 12,
-    "example": "Foreign News is on page 16.",
-    "exampleZh": "《外國新聞》在第 16 頁。"
+    "example": "She can speak two foreign languages.",
+    "exampleZh": "她會說兩種外語。"
   },
   {
     "id": 21323,
@@ -5126,8 +5126,8 @@
     "uk": "/həʊl/",
     "zh": "n. 洞、坑、裂口、開口；v. 鑽洞、打洞、擊球入洞",
     "unit": 12,
-    "example": "There's a hole in the crotch.",
-    "exampleZh": "胯部有一個洞。"
+    "example": "There is a small hole in my sock.",
+    "exampleZh": "我的襪子上有一個小洞。"
   },
   {
     "id": 21514,
@@ -5136,8 +5136,8 @@
     "uk": "/ˈhɒlədeɪ/",
     "zh": "n. 假日、度假期、法定節假日、節日；vi. 度假",
     "unit": 12,
-    "example": "Today is a holiday in Wales.",
-    "exampleZh": "今天是威爾斯的假期。"
+    "example": "We are going to Japan for a holiday.",
+    "exampleZh": "我們打算去日本度假。"
   },
   {
     "id": 21515,
@@ -7156,8 +7156,8 @@
     "uk": "/ˌɪnˈsaɪd/",
     "zh": "n. 內部、裡面；adj. 內部的；prep./adv. 在……裡面",
     "unit": 12,
-    "example": "The tree trunk was hollow inside.",
-    "exampleZh": "樹幹內部是空心的。"
+    "example": "It is raining, so let's stay inside.",
+    "exampleZh": "下雨了，我們待在室內吧。"
   },
   {
     "id": 21717,
@@ -8056,8 +8056,8 @@
     "uk": "/ˈkiːpə(r)/",
     "zh": "n. 保管人、守衛、監護人、守護者",
     "unit": 12,
-    "example": "He won the soccer game with the goal keeper.",
-    "exampleZh": "他和守門員一起贏得了足球比賽。"
+    "example": "The zoo keeper feeds the animals every day.",
+    "exampleZh": "動物園飼養員每天餵食動物。"
   },
   {
     "id": 21807,
@@ -8176,8 +8176,8 @@
     "uk": "/kaɪnd/",
     "zh": "n. 種類、類別；adj. 親切的、仁慈的、善良的",
     "unit": 12,
-    "example": "I've caught some kind of lurgy.",
-    "exampleZh": "我得了某種胃病。"
+    "example": "What kind of movies do you like?",
+    "exampleZh": "你喜歡哪種類型的電影？"
   },
   {
     "id": 21819,

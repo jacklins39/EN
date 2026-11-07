@@ -766,8 +766,8 @@
     "uk": "/ˈæktə(r)/",
     "zh": "n. 男演員、演員、像在演戲的人、參與者",
     "unit": 11,
-    "example": "Grodin is a fine comic actor.",
-    "exampleZh": "格羅丁是一位優秀的喜劇演員。"
+    "example": "He is a famous actor in Taiwan.",
+    "exampleZh": "他是台灣一位有名的男演員。"
   },
   {
     "id": 20078,
@@ -1646,8 +1646,8 @@
     "uk": "/əˈlaʊ/",
     "zh": "vt. 允許、准許、使有可能、任憑",
     "unit": 11,
-    "example": "We must allow for human error.",
-    "exampleZh": "我們必須允許人為錯誤。"
+    "example": "My mother doesn't allow me to stay up late.",
+    "exampleZh": "我媽媽不允許我熬夜。"
   },
   {
     "id": 20166,
@@ -1696,8 +1696,8 @@
     "uk": "/ɔːlˈredi/",
     "zh": "adv. 已經、早已、馬上、夠了",
     "unit": 11,
-    "example": "Eight o'clock had already chimed.",
-    "exampleZh": "八點鐘的鐘聲已經敲響。"
+    "example": "I have already finished my homework.",
+    "exampleZh": "我已經做完功課了。"
   },
   {
     "id": 20171,
@@ -2546,8 +2546,8 @@
     "uk": "/æt; ət/",
     "zh": "prep. 在、在……歲時、在……遠、以",
     "unit": 11,
-    "example": "I was good at sums at school.",
-    "exampleZh": "我在學校擅長算術。"
+    "example": "I will meet you at the station.",
+    "exampleZh": "我會在車站跟你碰面。"
   },
   {
     "id": 20256,
@@ -3166,8 +3166,8 @@
     "uk": "/bænd/",
     "zh": "n. 樂隊、帶子、一夥、一群；v. 給……分級、把……分段、用帶綁紮、加彩條",
     "unit": 11,
-    "example": "The singer re-formed his band.",
-    "exampleZh": "這位歌手重組了他的樂隊。"
+    "example": "The band played a great song.",
+    "exampleZh": "這支樂團演奏了一首很棒的歌。"
   },
   {
     "id": 20318,
@@ -3186,8 +3186,8 @@
     "uk": "/bæŋk/",
     "zh": "n. 銀行、河岸、儲蓄罐、庫存；v. 把（錢）存入銀行、把……儲存入庫、與銀行有業務往來、傾斜飛行",
     "unit": 11,
-    "example": "The bank wired her the money.",
-    "exampleZh": "銀行匯了錢給她。"
+    "example": "I need to go to the bank to get some money.",
+    "exampleZh": "我需要去銀行領些錢。"
   },
   {
     "id": 20320,
@@ -3476,8 +3476,8 @@
     "uk": "/ˈbɑːθruːm; ˈbɑːθrʊm/",
     "zh": "n. 浴室、洗手間、盥洗室、衛生間",
     "unit": 11,
-    "example": "The bathroom floor was awash.",
-    "exampleZh": "浴室地板被水淹沒了。"
+    "example": "I need to go to the bathroom.",
+    "exampleZh": "我需要去洗手間。"
   },
   {
     "id": 20349,
@@ -4796,8 +4796,8 @@
     "uk": "/bəʊl/",
     "zh": "n. 碗、缽、盆、一碗之量；v. 滾、投球、擊中三柱門使（擊球手）出局、迅速移動",
     "unit": 11,
-    "example": "She served him a bowl of beef stew.",
-    "exampleZh": "她給他端了一碗燉牛肉。"
+    "example": "She ate a bowl of hot soup.",
+    "exampleZh": "她喝了一碗熱湯。"
   },
   {
     "id": 20481,
@@ -5366,8 +5366,8 @@
     "uk": "/ˈbɪldɪŋ/",
     "zh": "n. 建築物、大樓、房屋、樓房；v. 建造、發展、建立、逐漸增強",
     "unit": 11,
-    "example": "The building soared above us.",
-    "exampleZh": "這棟建築高聳在我們頭頂上。"
+    "example": "That is the tallest building in the city.",
+    "exampleZh": "那是這座城市裡最高的建築物。"
   },
   {
     "id": 20538,
@@ -5876,8 +5876,8 @@
     "uk": "/keɪs/",
     "zh": "n. 案例、箱子、具體情況、例項；v. 圍繞、包蓋、探察、踩點兒",
     "unit": 11,
-    "example": "He zipped his case shut.",
-    "exampleZh": "他拉上箱子的拉鍊。"
+    "example": "Please put the glasses in the case.",
+    "exampleZh": "請把眼鏡放進盒子裡。"
   },
   {
     "id": 20589,
@@ -6416,8 +6416,8 @@
     "uk": "/klɒk/",
     "zh": "n. 時鐘、鐘；vt. 記錄……的時間、打考勤鐘",
     "unit": 11,
-    "example": "The clock struck the hour.",
-    "exampleZh": "時鐘敲響了整點。"
+    "example": "The clock on the wall is broken.",
+    "exampleZh": "牆上的時鐘壞了。"
   },
   {
     "id": 20643,

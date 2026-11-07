@@ -766,8 +766,8 @@ const toeicWordsDB = [
         "uk": "/ˈæktə(r)/",
         "zh": "n. 男演員、演員、像在演戲的人、參與者",
         "unit": 11,
-        "example": "Grodin is a fine comic actor.",
-        "exampleZh": "格羅丁是一位優秀的喜劇演員。"
+        "example": "He is a famous actor in Taiwan.",
+        "exampleZh": "他是台灣一位有名的男演員。"
     },
     {
         "id": 20078,
@@ -1646,8 +1646,8 @@ const toeicWordsDB = [
         "uk": "/əˈlaʊ/",
         "zh": "vt. 允許、准許、使有可能、任憑",
         "unit": 11,
-        "example": "We must allow for human error.",
-        "exampleZh": "我們必須允許人為錯誤。"
+        "example": "My mother doesn't allow me to stay up late.",
+        "exampleZh": "我媽媽不允許我熬夜。"
     },
     {
         "id": 20166,
@@ -1696,8 +1696,8 @@ const toeicWordsDB = [
         "uk": "/ɔːlˈredi/",
         "zh": "adv. 已經、早已、馬上、夠了",
         "unit": 11,
-        "example": "Eight o'clock had already chimed.",
-        "exampleZh": "八點鐘的鐘聲已經敲響。"
+        "example": "I have already finished my homework.",
+        "exampleZh": "我已經做完功課了。"
     },
     {
         "id": 20171,
@@ -2546,8 +2546,8 @@ const toeicWordsDB = [
         "uk": "/æt; ət/",
         "zh": "prep. 在、在……歲時、在……遠、以",
         "unit": 11,
-        "example": "I was good at sums at school.",
-        "exampleZh": "我在學校擅長算術。"
+        "example": "I will meet you at the station.",
+        "exampleZh": "我會在車站跟你碰面。"
     },
     {
         "id": 20256,
@@ -3166,8 +3166,8 @@ const toeicWordsDB = [
         "uk": "/bænd/",
         "zh": "n. 樂隊、帶子、一夥、一群；v. 給……分級、把……分段、用帶綁紮、加彩條",
         "unit": 11,
-        "example": "The singer re-formed his band.",
-        "exampleZh": "這位歌手重組了他的樂隊。"
+        "example": "The band played a great song.",
+        "exampleZh": "這支樂團演奏了一首很棒的歌。"
     },
     {
         "id": 20318,
@@ -3186,8 +3186,8 @@ const toeicWordsDB = [
         "uk": "/bæŋk/",
         "zh": "n. 銀行、河岸、儲蓄罐、庫存；v. 把（錢）存入銀行、把……儲存入庫、與銀行有業務往來、傾斜飛行",
         "unit": 11,
-        "example": "The bank wired her the money.",
-        "exampleZh": "銀行匯了錢給她。"
+        "example": "I need to go to the bank to get some money.",
+        "exampleZh": "我需要去銀行領些錢。"
     },
     {
         "id": 20320,
@@ -3476,8 +3476,8 @@ const toeicWordsDB = [
         "uk": "/ˈbɑːθruːm; ˈbɑːθrʊm/",
         "zh": "n. 浴室、洗手間、盥洗室、衛生間",
         "unit": 11,
-        "example": "The bathroom floor was awash.",
-        "exampleZh": "浴室地板被水淹沒了。"
+        "example": "I need to go to the bathroom.",
+        "exampleZh": "我需要去洗手間。"
     },
     {
         "id": 20349,
@@ -4796,8 +4796,8 @@ const toeicWordsDB = [
         "uk": "/bəʊl/",
         "zh": "n. 碗、缽、盆、一碗之量；v. 滾、投球、擊中三柱門使（擊球手）出局、迅速移動",
         "unit": 11,
-        "example": "She served him a bowl of beef stew.",
-        "exampleZh": "她給他端了一碗燉牛肉。"
+        "example": "She ate a bowl of hot soup.",
+        "exampleZh": "她喝了一碗熱湯。"
     },
     {
         "id": 20481,
@@ -5366,8 +5366,8 @@ const toeicWordsDB = [
         "uk": "/ˈbɪldɪŋ/",
         "zh": "n. 建築物、大樓、房屋、樓房；v. 建造、發展、建立、逐漸增強",
         "unit": 11,
-        "example": "The building soared above us.",
-        "exampleZh": "這棟建築高聳在我們頭頂上。"
+        "example": "That is the tallest building in the city.",
+        "exampleZh": "那是這座城市裡最高的建築物。"
     },
     {
         "id": 20538,
@@ -5876,8 +5876,8 @@ const toeicWordsDB = [
         "uk": "/keɪs/",
         "zh": "n. 案例、箱子、具體情況、例項；v. 圍繞、包蓋、探察、踩點兒",
         "unit": 11,
-        "example": "He zipped his case shut.",
-        "exampleZh": "他拉上箱子的拉鍊。"
+        "example": "Please put the glasses in the case.",
+        "exampleZh": "請把眼鏡放進盒子裡。"
     },
     {
         "id": 20589,
@@ -6416,8 +6416,8 @@ const toeicWordsDB = [
         "uk": "/klɒk/",
         "zh": "n. 時鐘、鐘；vt. 記錄……的時間、打考勤鐘",
         "unit": 11,
-        "example": "The clock struck the hour.",
-        "exampleZh": "時鐘敲響了整點。"
+        "example": "The clock on the wall is broken.",
+        "exampleZh": "牆上的時鐘壞了。"
     },
     {
         "id": 20643,
@@ -12466,8 +12466,8 @@ const toeicWordsDB = [
         "uk": "/fɑːm/",
         "zh": "n. 農場、養殖場、農舍、生產企業；vt. 務農、耕種、養殖、將（稅收）包出",
         "unit": 12,
-        "example": "Whose is that farm over yonder?",
-        "exampleZh": "那邊的農場是誰的？"
+        "example": "My grandfather has a big farm.",
+        "exampleZh": "我祖父有一座大農場。"
     },
     {
         "id": 21248,
@@ -13216,8 +13216,8 @@ const toeicWordsDB = [
         "uk": "/ˈfɒrən/",
         "zh": "adj. 外國的、外來的、來自國外的、外交的",
         "unit": 12,
-        "example": "Foreign News is on page 16.",
-        "exampleZh": "《外國新聞》在第 16 頁。"
+        "example": "She can speak two foreign languages.",
+        "exampleZh": "她會說兩種外語。"
     },
     {
         "id": 21323,
@@ -15126,8 +15126,8 @@ const toeicWordsDB = [
         "uk": "/həʊl/",
         "zh": "n. 洞、坑、裂口、開口；v. 鑽洞、打洞、擊球入洞",
         "unit": 12,
-        "example": "There's a hole in the crotch.",
-        "exampleZh": "胯部有一個洞。"
+        "example": "There is a small hole in my sock.",
+        "exampleZh": "我的襪子上有一個小洞。"
     },
     {
         "id": 21514,
@@ -15136,8 +15136,8 @@ const toeicWordsDB = [
         "uk": "/ˈhɒlədeɪ/",
         "zh": "n. 假日、度假期、法定節假日、節日；vi. 度假",
         "unit": 12,
-        "example": "Today is a holiday in Wales.",
-        "exampleZh": "今天是威爾斯的假期。"
+        "example": "We are going to Japan for a holiday.",
+        "exampleZh": "我們打算去日本度假。"
     },
     {
         "id": 21515,
@@ -17156,8 +17156,8 @@ const toeicWordsDB = [
         "uk": "/ˌɪnˈsaɪd/",
         "zh": "n. 內部、裡面；adj. 內部的；prep./adv. 在……裡面",
         "unit": 12,
-        "example": "The tree trunk was hollow inside.",
-        "exampleZh": "樹幹內部是空心的。"
+        "example": "It is raining, so let's stay inside.",
+        "exampleZh": "下雨了，我們待在室內吧。"
     },
     {
         "id": 21717,
@@ -18056,8 +18056,8 @@ const toeicWordsDB = [
         "uk": "/ˈkiːpə(r)/",
         "zh": "n. 保管人、守衛、監護人、守護者",
         "unit": 12,
-        "example": "He won the soccer game with the goal keeper.",
-        "exampleZh": "他和守門員一起贏得了足球比賽。"
+        "example": "The zoo keeper feeds the animals every day.",
+        "exampleZh": "動物園飼養員每天餵食動物。"
     },
     {
         "id": 21807,
@@ -18176,8 +18176,8 @@ const toeicWordsDB = [
         "uk": "/kaɪnd/",
         "zh": "n. 種類、類別；adj. 親切的、仁慈的、善良的",
         "unit": 12,
-        "example": "I've caught some kind of lurgy.",
-        "exampleZh": "我得了某種胃病。"
+        "example": "What kind of movies do you like?",
+        "exampleZh": "你喜歡哪種類型的電影？"
     },
     {
         "id": 21819,
@@ -20964,10 +20964,10 @@ const toeicWordsDB = [
         "en": "order",
         "kk": "[ˋɔrdɚ]",
         "uk": "/ˈɔːdə(r)/",
-        "zh": "n. 順序、次序、條理、秩序；vt. 命令、指示、訂購、訂貨",
+        "zh": "v. 點餐、訂購、命令、指示；n. 訂單、順序、次序、秩序",
         "unit": 13,
-        "example": "She barked out an order.",
-        "exampleZh": "她大聲下達命令。"
+        "example": "Are you ready to order your meal?",
+        "exampleZh": "你準備好點餐了嗎？"
     },
     {
         "id": 22098,
@@ -22096,8 +22096,8 @@ const toeicWordsDB = [
         "uk": "/pliːz/",
         "zh": "int. 請、拜託；vt. 使高興、使滿意、取悅；vi. 喜歡、願意",
         "unit": 13,
-        "example": "Two pints of mild, please.",
-        "exampleZh": "請來兩品脫淡啤酒。"
+        "example": "Could you help me, please?",
+        "exampleZh": "請問你可以幫我嗎？"
     },
     {
         "id": 22211,
@@ -22146,8 +22146,8 @@ const toeicWordsDB = [
         "uk": "/ˈpɒkɪt/",
         "zh": "n. 衣袋、口袋、錢財、財力；vt. 把……放入口袋、把……裝進腰包、將……據為己有、賺取；adj. 袖珍的、袋裝的",
         "unit": 13,
-        "example": "I slid the wallet into his pocket.",
-        "exampleZh": "我把錢包塞進他的口袋。"
+        "example": "I put my keys in my pocket.",
+        "exampleZh": "我把鑰匙放進口袋裡。"
     },
     {
         "id": 22216,
@@ -23526,8 +23526,8 @@ const toeicWordsDB = [
         "uk": "/kwɪk/",
         "zh": "adj. 快速的、敏捷的、迅速的、快的；adv. 以很快的速度、迅速發生地、很快發生地；n. 活肉、要害、核心、活著的人們；int. 快、快點",
         "unit": 13,
-        "example": "He kept giving quick blinks.",
-        "exampleZh": "他不停地快速眨眼。"
+        "example": "I need a quick answer.",
+        "exampleZh": "我需要一個快速的答覆。"
     },
     {
         "id": 22354,
@@ -28256,8 +28256,8 @@ const toeicWordsDB = [
         "uk": "/taɪm/",
         "zh": "n. 時間、次數、倍數；vt. 計時",
         "unit": 13,
-        "example": "Time passed, and still Ma did not appear.",
-        "exampleZh": "時間一點點過去，可是瑪還沒有出現。"
+        "example": "Do you have time to chat this afternoon?",
+        "exampleZh": "你今天下午有時間聊天嗎？"
     },
     {
         "id": 22827,
@@ -28316,8 +28316,8 @@ const toeicWordsDB = [
         "uk": "/tɒp/",
         "zh": "n. 頂部、頂端、上端、上層表面；adj. 頂端的、頂部的、最上面的、最高的；vt. 高於、超過、高過、優於；adv. 最多、至多",
         "unit": 13,
-        "example": "She got the top job.",
-        "exampleZh": "她得到了最高職位。"
+        "example": "He climbed to the top of the mountain.",
+        "exampleZh": "他爬到了那座山的頂部。"
     },
     {
         "id": 22833,
@@ -29884,7 +29884,7 @@ const toeicWordsDB = [
         "en": "waste",
         "kk": "[west]",
         "uk": "/weɪst/",
-        "zh": "n. 浪費、濫用、廢物、廢棄物；vt. 浪費、濫用、未能充分利用、沒有物盡其用；adj. 荒蕪的、荒廢的、廢棄的、無用的",
+        "zh": "v. 浪費、未能充分利用；n. 廢棄物、浪費；adj. 荒蕪的、廢棄的",
         "unit": 13,
         "example": "The waste was dumped in the sea.",
         "exampleZh": "廢物被傾倒在海裡。"
@@ -29976,8 +29976,8 @@ const toeicWordsDB = [
         "uk": "/ˈweðə(r)/",
         "zh": "conj. 是否、無論、不管；pron. 兩個中的哪一個",
         "unit": 13,
-        "example": "Check whether a fuse has blown.",
-        "exampleZh": "檢查保險絲是否熔斷。"
+        "example": "I don't know whether he will come.",
+        "exampleZh": "我不知道他是否會來。"
     },
     {
         "id": 22999,

@@ -4304,7 +4304,7 @@
     "en": "completion",
     "kk": "[kəmˋpliʃən]",
     "uk": "/kəmˈpliːʃ(ə)n/",
-    "zh": "n. 完成、實現、結束、成功前傳",
+    "zh": "n. 完成、實現、結束、圓滿",
     "unit": 2,
     "example": "The new school is near completion.",
     "exampleZh": "新學校即將完工。"

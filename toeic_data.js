@@ -834,7 +834,7 @@ const toeicWordsDB = [
         "en": "add",
         "kk": "[æd]",
         "uk": "/æd/",
-        "zh": "v. 添加、新增、摻入、相加；abbr. 注意力缺陷障礙、多動症",
+        "zh": "v. 添加、新增、摻入、相加",
         "unit": 11,
         "example": "Add up all the money I owe you.",
         "exampleZh": "把我欠你的錢全部加起來。"
@@ -3564,7 +3564,7 @@ const toeicWordsDB = [
         "en": "beat",
         "kk": "[bit]",
         "uk": "/biːt/",
-        "zh": "v. 打敗、敲、擊、打；n. 節拍、敲、擊、強音拍；adj. 筋疲力盡、疲憊不堪、垮掉的一代的",
+        "zh": "v. 打敗、敲、擊、打；n. 節拍、敲、擊；adj. 筋疲力盡的",
         "unit": 11,
         "example": "You can't beat Italian shoes.",
         "exampleZh": "你無法打敗義大利鞋。"

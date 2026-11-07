@@ -154,7 +154,7 @@
     "en": "add",
     "kk": "[æd]",
     "uk": "/æd/",
-    "zh": "v. 添加、新增、摻入、相加；abbr. 注意力缺陷障礙、多動症",
+    "zh": "v. 添加、新增、摻入、相加",
     "unit": 17,
     "example": "Add up all the money I owe you.",
     "exampleZh": "把我欠你的錢全部加起來。"
@@ -1264,7 +1264,7 @@
     "en": "beat",
     "kk": "[bit]",
     "uk": "/biːt/",
-    "zh": "v. 打敗、敲、擊、打；n. 節拍、敲、擊、強音拍；adj. 筋疲力盡、疲憊不堪、垮掉的一代的",
+    "zh": "v. 打敗、敲、擊、打；n. 節拍、敲、擊；adj. 筋疲力盡的",
     "unit": 17,
     "example": "Our team can beat them this afternoon.",
     "exampleZh": "我們隊今天下午能打敗他們。"
@@ -3274,7 +3274,7 @@
     "en": "coke",
     "kk": "[kok]",
     "uk": "/kəʊk/",
-    "zh": "n. 可口可樂、一瓶（罐，杯）可口可樂、焦炭、焦煤；v. 把（煤）煉成焦炭、使……麻醉、吸食可卡因",
+    "zh": "n. 可口可樂、一瓶（罐，杯）可口可樂",
     "unit": 17,
     "example": "My sister likes Coke.",
     "exampleZh": "我姐姐喜歡可樂。"
@@ -4004,10 +4004,10 @@
     "en": "cute",
     "kk": "[kjut]",
     "uk": "/kjuːt/",
-    "zh": "adj. 可愛的、漂亮的、性感迷人的、精明的",
+    "zh": "adj. 可愛的、漂亮的、精明的",
     "unit": 17,
-    "example": "Shame, she's so cute!",
-    "exampleZh": "可惜了，她太可愛了！"
+    "example": "The little puppy is so cute!",
+    "exampleZh": "這隻小狗真可愛！"
   },
   {
     "id": 30402,
@@ -6494,10 +6494,10 @@
     "en": "for",
     "kk": "[fɔr]",
     "uk": "/fɔː(r); fə(r)/",
-    "zh": "prep. 為了、給、對、以幫助；conj. 因為、由於；abbr. 外國、林業；adv. 支援地",
+    "zh": "prep. 為了、給、對；conj. 因為、由於",
     "unit": 17,
-    "example": "He was jailed for life for murder.",
-    "exampleZh": "他因謀殺罪被判終身監禁。"
+    "example": "This gift is for you.",
+    "exampleZh": "這份禮物是給你的。"
   },
   {
     "id": 30651,
@@ -9074,7 +9074,7 @@
     "en": "kitten",
     "kk": "[ˋkɪtən]",
     "uk": "/ˈkɪt(ə)n/",
-    "zh": "n. 小貓、幼崽、一種灰白色舟蛾；v. 產仔",
+    "zh": "n. 小貓、幼崽",
     "unit": 17,
     "example": "The little kitten drinks warm milk.",
     "exampleZh": "小貓咪喝著溫牛奶。"

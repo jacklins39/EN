@@ -124,10 +124,10 @@ const externalVocabularyDB = [
         "en": "cute",
         "kk": "[kjut]",
         "uk": "/kjuːt/",
-        "zh": "adj. 可愛的、漂亮的、性感迷人的、精明的",
+        "zh": "adj. 可愛的、漂亮的、精明的",
         "unit": 1,
-        "example": "Shame, she's so cute!",
-        "exampleZh": "可惜了，她太可愛了！"
+        "example": "The little puppy is so cute!",
+        "exampleZh": "這隻小狗真可愛！"
     },
     {
         "id": 14,
@@ -494,7 +494,7 @@ const externalVocabularyDB = [
         "en": "short",
         "kk": "[ʃɔrt]",
         "uk": "/ʃɔːt/",
-        "zh": "adj. 短的、簡短的、短暫的、短期的；n. 少量烈酒、電影短片、短褲、男用短內褲；adv. 達不到標準（或預期）地、突然、短暫、使變短地；v. 短路、賣空",
+        "zh": "adj. 短的、矮的、簡短的、短暫的；n. 電影短片、短褲",
         "unit": 1,
         "example": "He is too short to reach the shelf.",
         "exampleZh": "他太矮了，搆不到架子。"
@@ -734,7 +734,7 @@ const externalVocabularyDB = [
         "en": "add",
         "kk": "[æd]",
         "uk": "/æd/",
-        "zh": "v. 添加、新增、摻入、相加；abbr. 注意力缺陷障礙、多動症",
+        "zh": "v. 添加、新增、摻入、相加",
         "unit": 1,
         "example": "Add up all the money I owe you.",
         "exampleZh": "把我欠你的錢全部加起來。"
@@ -764,7 +764,7 @@ const externalVocabularyDB = [
         "en": "am",
         "kk": "[æm]",
         "uk": "/æm; əm/",
-        "zh": "v. 是、在、be動詞第一人稱、單數；abbr. 上午、調幅、威爾士國民議會、美國人",
+        "zh": "v. 是、在（be動詞第一人稱單數）；abbr. (a.m.) 上午",
         "unit": 1,
         "example": "I am a student at this school.",
         "exampleZh": "我是這所學校的學生。"
@@ -1244,7 +1244,7 @@ const externalVocabularyDB = [
         "en": "put",
         "kk": "[pʊt]",
         "uk": "/pʊt/",
-        "zh": "vt. 放、置、擺、表達；n. 投放、看跌期權",
+        "zh": "vt. 放、置、擺、表達",
         "unit": 1,
         "example": "Danny put down his glass.",
         "exampleZh": "丹尼放下杯子。"
@@ -1924,10 +1924,10 @@ const externalVocabularyDB = [
         "en": "not",
         "kk": "[nɑt]",
         "uk": "/nɒt/",
-        "zh": "adv. 不、沒有、表示否定；n. “非”",
+        "zh": "adv. 不、沒有、表示否定",
         "unit": 1,
-        "example": "It's not over yet—not by a long chalk.",
-        "exampleZh": "事情還沒結束——還遠遠沒有結束。"
+        "example": "I am not a student at this school.",
+        "exampleZh": "我不是這所學校的學生。"
     },
     {
         "id": 194,
@@ -2153,7 +2153,7 @@ const externalVocabularyDB = [
         "id": 216,
         "en": "according to",
         "kk": "[əˋkɔrdɪŋ tu]",
-        "uk": "",
+        "uk": "/əˈkɔːdɪŋ tuː/",
         "zh": "prep. 根據、按照",
         "unit": 1,
         "example": "According to the map, we turn right.",
@@ -2514,10 +2514,10 @@ const externalVocabularyDB = [
         "en": "for",
         "kk": "[fɔr]",
         "uk": "/fɔː(r); fə(r)/",
-        "zh": "prep. 為了、給、對、以幫助；conj. 因為、由於；abbr. 外國、林業；adv. 支援地",
+        "zh": "prep. 為了、給、對；conj. 因為、由於",
         "unit": 1,
-        "example": "He was jailed for life for murder.",
-        "exampleZh": "他因謀殺罪被判終身監禁。"
+        "example": "This gift is for you.",
+        "exampleZh": "這份禮物是給你的。"
     },
     {
         "id": 253,
@@ -2534,7 +2534,7 @@ const externalVocabularyDB = [
         "en": "nor",
         "kk": "[nɔr]",
         "uk": "/nɔː(r)/",
-        "zh": "conj. 亦不、也不；adv. 也不；n. “或非”",
+        "zh": "conj. 亦不、也不；adv. 也不",
         "unit": 1,
         "example": "He eats neither fish nor meat.",
         "exampleZh": "他既不吃魚也不吃肉。"
@@ -2597,7 +2597,7 @@ const externalVocabularyDB = [
         "zh": "pron. 那、那個；det. 那、那個；conj. 引導名詞子句；adv. 那麼、那樣地",
         "unit": 1,
         "example": "Phew! That was close—that car nearly hit us.",
-        "exampleZh": "唷！很接近——那輛車差點撞到我們。"
+        "exampleZh": "呼！好險——那輛車差點撞到我們。"
     },
     {
         "id": 261,
@@ -3134,7 +3134,7 @@ const externalVocabularyDB = [
         "en": "beat",
         "kk": "[bit]",
         "uk": "/biːt/",
-        "zh": "v. 打敗、敲、擊、打；n. 節拍、敲、擊、強音拍；adj. 筋疲力盡、疲憊不堪、垮掉的一代的",
+        "zh": "v. 打敗、敲、擊、打；n. 節拍、敲、擊；adj. 筋疲力盡的",
         "unit": 1,
         "example": "Our team can beat them this afternoon.",
         "exampleZh": "我們隊今天下午能打敗他們。"
@@ -3764,7 +3764,7 @@ const externalVocabularyDB = [
         "en": "chick",
         "kk": "[tʃɪk]",
         "uk": "/tʃɪk/",
-        "zh": "n. 小雞、雛鳥、少女、小妞兒",
+        "zh": "n. 小雞、雛鳥",
         "unit": 1,
         "example": "A yellow chick walked behind the hen.",
         "exampleZh": "一隻黃色小雞走在母雞後面。"
@@ -3934,7 +3934,7 @@ const externalVocabularyDB = [
         "en": "Coke",
         "kk": "[kok]",
         "uk": "/kəʊk/",
-        "zh": "n. 可口可樂、一瓶（罐，杯）可口可樂、焦炭、焦煤；v. 把（煤）煉成焦炭、使……麻醉、吸食可卡因",
+        "zh": "n. 可口可樂、一瓶（罐，杯）可口可樂",
         "unit": 1,
         "example": "My sister likes Coke.",
         "exampleZh": "我姐姐喜歡可樂。"
@@ -6064,7 +6064,7 @@ const externalVocabularyDB = [
         "en": "kitten",
         "kk": "[ˋkɪtən]",
         "uk": "/ˈkɪt(ə)n/",
-        "zh": "n. 小貓、幼崽、一種灰白色舟蛾；v. 產仔",
+        "zh": "n. 小貓、幼崽",
         "unit": 1,
         "example": "The little kitten drinks warm milk.",
         "exampleZh": "小貓咪喝著溫牛奶。"
@@ -6796,8 +6796,8 @@ const externalVocabularyDB = [
         "uk": "/ˈmuːvi/",
         "zh": "n. 電影、影片",
         "unit": 1,
-        "example": "That movie was really wack.",
-        "exampleZh": "那部電影真的很古怪。"
+        "example": "That movie was really good.",
+        "exampleZh": "那部電影真的很棒。"
     },
     {
         "id": 681,
@@ -7284,10 +7284,10 @@ const externalVocabularyDB = [
         "en": "pants",
         "kk": "[pænts]",
         "uk": "/pænts/",
-        "zh": "n. 褲子、內褲、短褲、廢物；adj. 無價值的、低劣的、褲子的；v. 氣喘、喘息、喘著氣說、渴望",
+        "zh": "n. 褲子、長褲、內褲、短褲",
         "unit": 1,
-        "example": "Don't tell me you've split another pair of pants!",
-        "exampleZh": "別告訴我你又裂開了一條褲子！"
+        "example": "He bought a new pair of pants.",
+        "exampleZh": "他買了一件新褲子。"
     },
     {
         "id": 730,
@@ -7304,7 +7304,7 @@ const externalVocabularyDB = [
         "en": "paper",
         "kk": "[ˋpepɚ]",
         "uk": "/ˈpeɪpə(r)/",
-        "zh": "n. 紙張、論文、紙、報紙；vt. 用牆紙裱糊、用牆紙覆蓋（洞，汙點）、掩蓋（尷尬問題）、發免費入場券使（劇院）滿座；adj. 紙做的、紙質的、書面的、印刷的",
+        "zh": "n. 紙張、論文、報紙；adj. 紙做的、紙質的、書面的",
         "unit": 1,
         "example": "Please give me a sheet of paper.",
         "exampleZh": "請給我一張紙。"
@@ -7474,7 +7474,7 @@ const externalVocabularyDB = [
         "en": "pig",
         "kk": "[pɪɡ]",
         "uk": "/pɪɡ/",
-        "zh": "n. 豬、令人討厭的人、豬玀、警官；v. 狼吞虎嚥、像豬一樣擠在一起、生小豬、操作清管器",
+        "zh": "n. 豬；v. 狼吞虎嚥",
         "unit": 1,
         "example": "The pink pig played in the mud.",
         "exampleZh": "粉紅色的豬在泥巴裡玩耍。"
@@ -7834,7 +7834,7 @@ const externalVocabularyDB = [
         "en": "rat",
         "kk": "[ræt]",
         "uk": "/ræt/",
-        "zh": "n. 老鼠、卑鄙小人、常客、常待在某處的人；vi. 捕（捉）老鼠、滅鼠、告發、告密；int. 胡說、去你的",
+        "zh": "n. 老鼠",
         "unit": 1,
         "example": "A brown rat ran across the room.",
         "exampleZh": "一隻棕色的老鼠跑過了房間。"

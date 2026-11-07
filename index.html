@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261107V26';
+        const APP_BUILD_VERSION = '20261107V27';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -63,20 +63,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261107V26"></script>
-    <script src="toeic_data.js?v=20261107V26"></script>
-    <script src="jh_data.js?v=20261107V26"></script>
-    <script src="listening_data.js?v=20261107V26"></script>
-    <script src="listening_words_data.js?v=20261107V26"></script>
-    <script src="uk_phonetics_manifest.js?v=20261107V26"></script>
-    <script src="words_audio_manifest.js?v=20261107V26"></script>
-    <script src="examples_audio_manifest.js?v=20261107V26"></script>
-    <script src="zh_audio_manifest.js?v=20261107V26"></script>
-    <script src="collocations_audio_manifest.js?v=20261107V26"></script>
-    <script src="syn_ant_data.js?v=20261107V26"></script>
-    <script src="synonyms_unit8_data.js?v=20261107V26"></script>
-    <script src="examples_unit9_data.js?v=20261107V26"></script>
-    <script src="game_whack.js?v=20261107V26"></script>
+    <script src="words_data.js?v=20261107V27"></script>
+    <script src="toeic_data.js?v=20261107V27"></script>
+    <script src="jh_data.js?v=20261107V27"></script>
+    <script src="listening_data.js?v=20261107V27"></script>
+    <script src="listening_words_data.js?v=20261107V27"></script>
+    <script src="uk_phonetics_manifest.js?v=20261107V27"></script>
+    <script src="words_audio_manifest.js?v=20261107V27"></script>
+    <script src="examples_audio_manifest.js?v=20261107V27"></script>
+    <script src="zh_audio_manifest.js?v=20261107V27"></script>
+    <script src="collocations_audio_manifest.js?v=20261107V27"></script>
+    <script src="syn_ant_data.js?v=20261107V27"></script>
+    <script src="synonyms_unit8_data.js?v=20261107V27"></script>
+    <script src="examples_unit9_data.js?v=20261107V27"></script>
+    <script src="game_whack.js?v=20261107V27"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -190,8 +190,27 @@
             .mobile-tab-hidden {
                 display: block !important;
             }
-            .flip-card {
+            /* 1. 電腦版自動輪播模式：單欄置中 + 單字列車佇列，卡片緊湊 235px 消滅多餘留白 */
+            #view-study.auto-play-layout .flip-card {
                 height: 235px !important;
+            }
+            /* 2. 電腦版測驗/練習/複習模式（左右雙欄佈局）：左側卡片給予 340px 充裕黃金高度，與右側作答/下一題區等高對齊，徹底杜絕擠壓 */
+            #view-study:not(.auto-play-layout) #flashcard,
+            #view-study:not(.auto-play-layout) .flip-card {
+                height: 340px !important;
+            }
+            /* 在左右雙欄練習模式下，卡片寬度約 450px，背面內容採自然垂直流暢堆疊（避免卡內再硬拆雙欄導致按鈕折行擠扁） */
+            #view-study:not(.auto-play-layout) .flip-card-back > div.lg\:grid {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 0.35rem !important;
+            }
+            #view-study:not(.auto-play-layout) #example-container {
+                margin-top: 0.35rem !important;
+            }
+            /* 預設非特殊情況卡片高度 */
+            .flip-card {
+                height: 235px;
             }
             .flip-card-back {
                 overflow-y: auto !important;
@@ -229,12 +248,10 @@
             }
         }
         @media (min-width: 1024px) {
-            .flip-card {
-                height: 235px !important;
-            }
-            #view-study.quiz-options-active .flip-card:not(.flipped),
-            #view-study:has(#quiz-options:not(.hidden)) .flip-card:not(.flipped) {
-                height: 215px !important;
+            /* 電腦版練習模式下維持 340px 高度，不需如同手機版縮小至 215px（因為選項在右側並非下方） */
+            #view-study:not(.auto-play-layout).quiz-options-active .flip-card:not(.flipped),
+            #view-study:not(.auto-play-layout):has(#quiz-options:not(.hidden)) .flip-card:not(.flipped) {
+                height: 340px !important;
             }
         }
 
@@ -2339,7 +2356,7 @@
                 column-gap: 1.75rem; align-items: start;
             }
             #view-study:not(.auto-play-layout) > :first-child { grid-column: 1 / -1; }
-            #view-study:not(.auto-play-layout) > #flashcard { grid-column: 1; grid-row: 2; height: 320px; }
+            #view-study:not(.auto-play-layout) > #flashcard { grid-column: 1; grid-row: 2; height: 340px !important; }
             #view-study:not(.auto-play-layout) > #quiz-options,
             #view-study:not(.auto-play-layout) > #action-show-answer,
             #view-study:not(.auto-play-layout) > #action-next,
@@ -3498,9 +3515,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261107V26</span>
+                        <span id="app-version-display">版本 20261107V27</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261107V26</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261107V27</p>
                 </div>
             </div>
         </div>

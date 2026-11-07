@@ -964,10 +964,10 @@
     "en": "order",
     "kk": "[ˋɔrdɚ]",
     "uk": "/ˈɔːdə(r)/",
-    "zh": "n. 順序、次序、條理、秩序；vt. 命令、指示、訂購、訂貨",
+    "zh": "v. 點餐、訂購、命令、指示；n. 訂單、順序、次序、秩序",
     "unit": 13,
-    "example": "She barked out an order.",
-    "exampleZh": "她大聲下達命令。"
+    "example": "Are you ready to order your meal?",
+    "exampleZh": "你準備好點餐了嗎？"
   },
   {
     "id": 22098,
@@ -2096,8 +2096,8 @@
     "uk": "/pliːz/",
     "zh": "int. 請、拜託；vt. 使高興、使滿意、取悅；vi. 喜歡、願意",
     "unit": 13,
-    "example": "Two pints of mild, please.",
-    "exampleZh": "請來兩品脫淡啤酒。"
+    "example": "Could you help me, please?",
+    "exampleZh": "請問你可以幫我嗎？"
   },
   {
     "id": 22211,
@@ -2146,8 +2146,8 @@
     "uk": "/ˈpɒkɪt/",
     "zh": "n. 衣袋、口袋、錢財、財力；vt. 把……放入口袋、把……裝進腰包、將……據為己有、賺取；adj. 袖珍的、袋裝的",
     "unit": 13,
-    "example": "I slid the wallet into his pocket.",
-    "exampleZh": "我把錢包塞進他的口袋。"
+    "example": "I put my keys in my pocket.",
+    "exampleZh": "我把鑰匙放進口袋裡。"
   },
   {
     "id": 22216,
@@ -3526,8 +3526,8 @@
     "uk": "/kwɪk/",
     "zh": "adj. 快速的、敏捷的、迅速的、快的；adv. 以很快的速度、迅速發生地、很快發生地；n. 活肉、要害、核心、活著的人們；int. 快、快點",
     "unit": 13,
-    "example": "He kept giving quick blinks.",
-    "exampleZh": "他不停地快速眨眼。"
+    "example": "I need a quick answer.",
+    "exampleZh": "我需要一個快速的答覆。"
   },
   {
     "id": 22354,
@@ -8256,8 +8256,8 @@
     "uk": "/taɪm/",
     "zh": "n. 時間、次數、倍數；vt. 計時",
     "unit": 13,
-    "example": "Time passed, and still Ma did not appear.",
-    "exampleZh": "時間一點點過去，可是瑪還沒有出現。"
+    "example": "Do you have time to chat this afternoon?",
+    "exampleZh": "你今天下午有時間聊天嗎？"
   },
   {
     "id": 22827,
@@ -8316,8 +8316,8 @@
     "uk": "/tɒp/",
     "zh": "n. 頂部、頂端、上端、上層表面；adj. 頂端的、頂部的、最上面的、最高的；vt. 高於、超過、高過、優於；adv. 最多、至多",
     "unit": 13,
-    "example": "She got the top job.",
-    "exampleZh": "她得到了最高職位。"
+    "example": "He climbed to the top of the mountain.",
+    "exampleZh": "他爬到了那座山的頂部。"
   },
   {
     "id": 22833,
@@ -9884,7 +9884,7 @@
     "en": "waste",
     "kk": "[west]",
     "uk": "/weɪst/",
-    "zh": "n. 浪費、濫用、廢物、廢棄物；vt. 浪費、濫用、未能充分利用、沒有物盡其用；adj. 荒蕪的、荒廢的、廢棄的、無用的",
+    "zh": "v. 浪費、未能充分利用；n. 廢棄物、浪費；adj. 荒蕪的、廢棄的",
     "unit": 13,
     "example": "The waste was dumped in the sea.",
     "exampleZh": "廢物被傾倒在海裡。"
@@ -9976,8 +9976,8 @@
     "uk": "/ˈweðə(r)/",
     "zh": "conj. 是否、無論、不管；pron. 兩個中的哪一個",
     "unit": 13,
-    "example": "Check whether a fuse has blown.",
-    "exampleZh": "檢查保險絲是否熔斷。"
+    "example": "I don't know whether he will come.",
+    "exampleZh": "我不知道他是否會來。"
   },
   {
     "id": 22999,

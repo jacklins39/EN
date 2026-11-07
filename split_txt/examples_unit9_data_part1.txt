@@ -93,19 +93,19 @@
     "id": 8111,
     "en": "humbly",
     "kk": "[ˈhʌmbli]",
-    "zh": "adv. 謙恭地，謙虛地",
+    "zh": "adv. 謙虛地、謙恭地、卑微地",
     "unit": 8,
-    "example": "'Sorry,' she said humbly.",
-    "exampleZh": "「對不起。」她謙遜地說。"
+    "example": "Despite winning the prestigious award, the scientist spoke humbly about his achievements.",
+    "exampleZh": "儘管贏得了這項殊榮，那位科學家仍非常謙虛地談論自己的成就。"
   },
   {
     "id": 8112,
     "en": "snappily",
     "kk": "[ˈsnæpəli]",
-    "zh": "adv. 時髦地；生氣勃勃地；厲聲地",
+    "zh": "adv. 厲聲地、不耐煩地、時髦俐落地",
     "unit": 8,
-    "example": "'What?' she asked snappily.",
-    "exampleZh": "「什麼？」她不耐煩地問。"
+    "example": "Under intense pressure from the deadline, the manager answered the phone rather snappily.",
+    "exampleZh": "在面臨最後期限的沉重壓力下，經理接起電話時語氣相當不耐煩。"
   },
   {
     "id": 8113,
@@ -336,19 +336,19 @@
     "id": 8138,
     "en": "haulage",
     "kk": "[ˈhɔːlɪdʒ]",
-    "zh": "n. 拖運，拖曳；運輸，貨運（尤指公路或鐵路運輸，也指運輸量）；運費，運輸費",
+    "zh": "n. 拖運、貨運、運費（尤指公路或鐵路運輸）",
     "unit": 8,
-    "example": "How much is haulage?",
-    "exampleZh": "運費是多少？"
+    "example": "The logistics company increased its haulage rates due to rising fuel costs across the country.",
+    "exampleZh": "由於全國燃料成本上升，該物流公司調高了公路貨運的收費標準。"
   },
   {
     "id": 8139,
     "en": "accountancy",
     "kk": "[əˈkaʊntənsi]",
-    "zh": "n. 會計學，會計工作，會計行業",
+    "zh": "n. 會計學、會計工作、會計專業",
     "unit": 8,
-    "example": "Accountancy just isn't sexy.",
-    "exampleZh": "會計工作實在乏味。"
+    "example": "After graduating with a degree in accountancy, she joined an international auditing firm.",
+    "exampleZh": "從會計專業畢業後，她加入了一家國際會計審計事務所。"
   },
   {
     "id": 8140,
@@ -381,10 +381,10 @@
     "id": 8143,
     "en": "fibre",
     "kk": "[ˈfaɪbər]",
-    "zh": "n. （食物的）纖維素；（布、繩等的）纖維，絲；（神經或肌肉）纖維；素質，品質；織物，纖維製品",
+    "zh": "n. （食物中的）纖維質、膳食纖維；（布料、肌肉的）纖維",
     "unit": 8,
-    "example": "Most vegetables contain fibre.",
-    "exampleZh": "大多數蔬菜含有纖維。"
+    "example": "Doctors recommend eating plenty of fresh fruit and whole grains to get enough dietary fibre.",
+    "exampleZh": "醫生建議多吃新鮮水果與全穀物，以攝取足夠的膳食纖維。"
   },
   {
     "id": 8144,
@@ -417,19 +417,19 @@
     "id": 8147,
     "en": "needlessly",
     "kk": "[ˈniːdləsli]",
-    "zh": "adv. 不必要地，無用地",
+    "zh": "adv. 不必要地、徒然地、無端地",
     "unit": 8,
-    "example": "Any seasoned user can reel off a string of examples of how the old finder has needlessly got in their way.",
-    "exampleZh": "任何經驗豐富的用戶都可以一口氣舉出一大堆舊版查找器無端妨礙他們使用的例子。"
+    "example": "Adding too many complicated rules will only needlessly delay our project schedule.",
+    "exampleZh": "加入太多繁雜的規定只會無端延誤我們的專案進度。"
   },
   {
     "id": 8148,
     "en": "misbehaves",
     "kk": "",
-    "zh": "v．行為不端，行為失當：指某人的行為不符合規範、禮貌或道德標準。",
+    "zh": "v. 行為不端、調皮胡鬧（misbehave 之第三人稱單數）",
     "unit": 8,
-    "example": "He still misbehaves occasionally.",
-    "exampleZh": "他仍偶爾行為不乖。"
+    "example": "Whenever the teacher leaves the classroom, the energetic puppy misbehaves and chews on shoes.",
+    "exampleZh": "只要主人一離開客廳，這隻精力旺盛的小狗就會調皮胡鬧並開始咬鞋子。"
   },
   {
     "id": 8149,
@@ -669,10 +669,10 @@
     "id": 8175,
     "en": "ageless",
     "kk": "[ˈeɪdʒləs]",
-    "zh": "adj. 不老的，不顯老的；永恆的，永不過時的",
+    "zh": "adj. 永恆不朽的、不顯老的、歷久彌新的",
     "unit": 8,
-    "example": "Her beauty appeared ageless.",
-    "exampleZh": "她的美顯得經久不衰。"
+    "example": "The classic black dress has an ageless appeal that never goes out of fashion.",
+    "exampleZh": "這款經典的黑色連身裙具有歷久彌新的魅力，永遠不會退流行。"
   },
   {
     "id": 8176,
@@ -795,10 +795,10 @@
     "id": 8189,
     "en": "buddy",
     "kk": "[ˈbʌdi]",
-    "zh": "n. <非正式>朋友；<美，非正式>老兄，兄弟；夥伴，搭檔；v. 與……成為朋友，與……結交；adj. 講述友情的；【名】 （Buddy）（英）巴迪（人名）",
+    "zh": "n. 朋友、夥伴、老兄；v. 成為好友",
     "unit": 8,
-    "example": "Buddy totalled his car.",
-    "exampleZh": "巴迪徹底撞毀了他的車。"
+    "example": "I met an old college buddy at the airport, and we grabbed coffee to catch up on our lives.",
+    "exampleZh": "我在機場偶遇了大學時期的老朋友，我們買了杯咖啡聊起各自的近況。"
   },
   {
     "id": 8190,
@@ -813,19 +813,19 @@
     "id": 8191,
     "en": "whiz",
     "kk": "[wɪz]",
-    "zh": "n. 颼颼聲，嗖嗖聲；奇才，高手；vi. 颼颼作聲；嗖嗖地快速移動；vt. 使颼颼作聲；使嗖嗖地快速移動",
+    "zh": "n. 能手、奇才、高手；颼颼聲；v. 飛速掠過",
     "unit": 8,
-    "example": "He's a whiz with the joystick, a master-level gamer who changes screens and situations every few pages.",
-    "exampleZh": "他是一個掌控著操縱桿的奇才，一個具有大師水準的玩家，每隔幾頁他就變換屏幕和場景。"
+    "example": "Our new intern is a complete whiz at troubleshooting complex computer software problems.",
+    "exampleZh": "我們的新實習生是個電腦高手，非常擅長排查複雜的軟體問題。"
   },
   {
     "id": 8192,
     "en": "joe",
     "kk": "[dʒoʊ]",
-    "zh": "n. （美國英語，非正式）傢伙，漢子，也指普通人（常用於 average Joe）；（美國英語，非正式）咖啡（常見於 a cup of joe）；喬（男子名，Joseph 的暱稱）",
+    "zh": "n. 咖啡（俗稱，如 a cup of joe）；普通人（如 average Joe）；傢伙",
     "unit": 8,
-    "example": "This suggestion dumbfounded Joe.",
-    "exampleZh": "這個建議使喬伊驚呆了。"
+    "example": "He loves to start every busy morning with a fresh cup of hot joe from the local café.",
+    "exampleZh": "他喜歡在每個忙碌早晨以當地咖啡館的一杯新鮮熱咖啡揭開序幕。"
   },
   {
     "id": 8193,
@@ -939,10 +939,10 @@
     "id": 8205,
     "en": "jackson",
     "kk": "[ˈdʒæksən]",
-    "zh": "n. 傑克遜（男子名）；傑克遜（美國密西西比州的城市）",
+    "zh": "n. 傑克遜（男子名，或美國密西西比州首府）",
     "unit": 8,
-    "example": "Jackson nodded a salutation.",
-    "exampleZh": "傑克遜點頭打了個招呼。"
+    "example": "During our road trip across the southern states, we spent the weekend exploring downtown Jackson.",
+    "exampleZh": "在橫跨南部各州的公路旅行中，我們在傑克遜市中心度過了一個週末。"
   },
   {
     "id": 8206,
@@ -993,19 +993,19 @@
     "id": 8211,
     "en": "trilled",
     "kk": "[trɪld]",
-    "zh": "adj. 顫音的，以顫音發出的；v. 發顫音，用顫音說（trill 的過去式和過去分詞）",
+    "zh": "v. 發出顫音、啼囀、歡快地說（trill 之過去式與過去分詞）",
     "unit": 8,
-    "example": "'How wonderful!' she trilled.",
-    "exampleZh": "「太妙了！」她高興地喊道。"
+    "example": "The songbirds trilled cheerfully in the tall oak trees outside my bedroom window.",
+    "exampleZh": "鳴禽在我臥室窗外高大的橡樹上歡快地啼囀著。"
   },
   {
     "id": 8212,
     "en": "sittings",
     "kk": "[ˈsɪtɪŋz]",
-    "zh": "n. 議會開會期；會議；孵蛋期（sitting 的複數）",
+    "zh": "v. 噴鼻息、嗤之以鼻、哼了一聲（snort 之過去式與過去分詞）",
     "unit": 8,
-    "example": "Dinner was in two sittings.",
-    "exampleZh": "晚餐有兩個就餐時段。"
+    "example": "She snorted in disbelief when her brother claimed he could finish the entire marathon without training.",
+    "exampleZh": "當她弟弟聲稱自己不需訓練就能跑完完整馬拉松時，她嗤之以鼻地哼了一聲。"
   },
   {
     "id": 8213,
@@ -1200,19 +1200,19 @@
     "id": 8234,
     "en": "frozen",
     "kk": "[ˈfroʊz(ə)n]",
-    "zh": "adj. 結冰的，凍硬的；（食物）冷凍的，冷藏的；凍壞的，凍僵的；嚇呆的，驚呆的；（行為、態度等）冷淡的；v. 結冰；凝固（freeze 的過去分詞形式）",
+    "zh": "v. 焦急咀嚼、急躁地咬（尤指馬咬嚼子，常構成 champing at the bit 躍躍欲試）",
     "unit": 8,
-    "example": "The company's assets have been frozen.",
-    "exampleZh": "這家公司的資產已被凍結。"
+    "example": "The eager runners were champing at the bit at the starting line, waiting for the pistol to fire.",
+    "exampleZh": "熱切的跑者們在起跑線上躍躍欲試，急切等待著發令槍聲響起。"
   },
   {
     "id": 8235,
     "en": "encompasses",
     "kk": "[ɪnˈkʌmpəsɪz]",
-    "zh": "v. 包含，包括；包圍，環繞（encompass 的第三人稱單數）",
+    "zh": "v. 打盹、小睡、瞇一會兒（snooze 之現在分詞）",
     "unit": 8,
-    "example": "Clearly, intelligence encompasses more than a score on a test.",
-    "exampleZh": "顯然，智力包含的不僅僅是一次考試的分數。"
+    "example": "After a hearty Sunday lunch, the grandfather spent the sunny afternoon snoozing on the porch chair.",
+    "exampleZh": "享用完豐盛的週日午餐後，爺爺在陽台的躺椅上愜意地打盹度過午後時光。"
   },
   {
     "id": 8236,
@@ -1281,19 +1281,19 @@
     "id": 8243,
     "en": "kate",
     "kk": "",
-    "zh": "n. 凱特（英語女子名，常作 Catherine 或 Katherine 的暱稱）；KATE（日本佳麗寶旗下化妝品品牌）",
+    "zh": "v. 輕敲、輕拍、點擊（tap 之過去式與過去分詞）",
     "unit": 8,
-    "example": "'Here?' said Kate, incredulous.",
-    "exampleZh": "「這兒？」凱特表示懷疑地說。"
+    "example": "Listening to the lively jazz music, she happily tapped her fingers on the steering wheel.",
+    "exampleZh": "聽著輕快的爵士樂，她愉快地在方向盤上輕輕敲打著節奏。"
   },
   {
     "id": 8244,
     "en": "incredulous",
     "kk": "[ɪnˈkredʒələs]",
-    "zh": "adj. 懷疑的，不輕信的；（神情、語氣等）表示懷疑的，顯出難以置信的",
+    "zh": "v. 發出噹啷聲、金屬碰撞聲（clank 之過去式與過去分詞）",
     "unit": 8,
-    "example": "\"He made you do it?\" Her voice was incredulous.",
-    "exampleZh": "「他讓你做的？」她的聲音是懷疑的。"
+    "example": "The heavy iron anchor clanked loudly against the ship hull as it was lowered into the ocean.",
+    "exampleZh": "沉重的鐵錨在沉入大海時，發出巨大的噹啷聲撞擊著船體。"
   },
   {
     "id": 8245,
@@ -1533,10 +1533,10 @@
     "id": 8271,
     "en": "cursor",
     "kk": "[ˈkɜːrsər]",
-    "zh": "n. （計算機）光標，指針，遊標：屏幕上指示當前位置或輸入位置的可移動標記；（數據庫或編程）遊標：用於逐行讀取和處理查詢結果集的控制結構；（計算尺等測量儀器）遊標，指針：滑動刻度指示器",
+    "zh": "n. （電腦螢幕上的）游標、指標；滑動指針",
     "unit": 8,
-    "example": "He moves the cursor, clicks the mouse.",
-    "exampleZh": "他移動光標，點擊鼠標。"
+    "example": "Move the mouse cursor to the top right corner of the screen and click the save button.",
+    "exampleZh": "將滑鼠游標移動到螢幕右上角，然後點擊儲存按鈕。"
   },
   {
     "id": 8272,
@@ -1587,19 +1587,19 @@
     "id": 8277,
     "en": "moira",
     "kk": "[ˈmɔɪrə]",
-    "zh": "n. 莫伊拉（英語女子名）",
+    "zh": "v. 嘎吱作響地咀嚼、踩碎（發出嘎吱聲）（crunch 之過去式與過去分詞）",
     "unit": 8,
-    "example": "Moira bounced into the office.",
-    "exampleZh": "莫伊拉蹦蹦跳跳地走進辦公室。"
+    "example": "The dry autumn leaves crunched pleasantly beneath our hiking boots as we walked through the forest.",
+    "exampleZh": "當我們走過森林時，乾燥的秋天落葉在我們的登山靴下發出悅耳的嘎吱聲。"
   },
   {
     "id": 8278,
     "en": "miquela",
     "kk": "",
-    "zh": "n. 美國的一個虛擬網紅人物",
+    "zh": "v. 閒聊、聊天（chat 之過去式與過去分詞）",
     "unit": 8,
-    "example": "I met Miquela once, briefly.",
-    "exampleZh": "我見過蜜凱拉一次，時間很短。"
+    "example": "The two longtime friends sat comfortably in the corner café and chatted about their past adventures.",
+    "exampleZh": "這兩位老朋友舒舒服服地坐在角落咖啡館裡，愉快地閒聊著過往的冒險經歷。"
   },
   {
     "id": 8279,
@@ -1821,19 +1821,19 @@
     "id": 8303,
     "en": "maddeningly",
     "kk": "[ˈmædnɪŋli]",
-    "zh": "adv. 使人惱火地，令人發狂地",
+    "zh": "v. 嗅、聞、抽鼻子（sniff 之過去式與過去分詞）",
     "unit": 8,
-    "example": "Progress is maddeningly slow.",
-    "exampleZh": "進展慢得令人心煩。"
+    "example": "The curious puppy gently sniffed the freshly baked bread cooling on the low kitchen table.",
+    "exampleZh": "好奇的小狗輕輕地聞著廚房矮桌上剛出爐冷卻中的新鮮麵包。"
   },
   {
     "id": 8304,
     "en": "jenny",
     "kk": "[ˈdʒeni]",
-    "zh": "n. 母驢，雌驢（常作 jenny ass）；金屬片捲揚機（金屬片卷邊機）；（Jenny）珍妮（女子名，常為 Jennifer 或 Jane 的暱稱）；珍妮紡紗機（多軸紡織機，用於短語 spinning jenny）",
+    "zh": "v. 發出尖銳刺耳的聲音、尖叫（screech 之過去式與過去分詞）",
     "unit": 8,
-    "example": "Jenny is seventeen years old.",
-    "exampleZh": "珍妮17歲。"
+    "example": "The driver slammed on the brakes, and the tires screeched sharply on the wet asphalt road.",
+    "exampleZh": "駕駛猛踩煞車，輪胎在潮濕的柏油路面上發出尖銳刺耳的摩擦聲。"
   },
   {
     "id": 8305,
@@ -2028,10 +2028,10 @@
     "id": 8326,
     "en": "juggle",
     "kk": "[ˈdʒʌɡl]",
-    "zh": "v. 玩雜耍（連續向空中拋接多個物體）；力圖使平衡，盡力應付；歪曲，篡改；有效地組織，有效利用（信息、數字、開支等）；n. 手技雜耍；平衡；虛報，謊報",
+    "zh": "v. 玩雜耍；力求平衡、同時兼顧；篡改（數字）",
     "unit": 8,
-    "example": "My uncle taught me to juggle.",
-    "exampleZh": "我叔叔教我玩雜耍。"
+    "example": "Working parents often have to juggle demanding career schedules with caring for their children.",
+    "exampleZh": "在職父母往往必須在繁重的工作日程與照顧孩子之間努力取得平衡。"
   },
   {
     "id": 8327,
@@ -2208,10 +2208,10 @@
     "id": 8346,
     "en": "proceedings",
     "kk": "[prəˈsiːdɪŋz]",
-    "zh": "n. 訴訟，訴訟程序（proceeding 的複數）",
+    "zh": "n. 訴訟案件；議事過程、會議記錄（proceeding 之複數）",
     "unit": 8,
-    "example": "She was cited in the divorce proceedings.",
-    "exampleZh": "她在離婚訴訟中被傳喚。"
+    "example": "The company announced that legal proceedings had been initiated against the former contractor.",
+    "exampleZh": "該公司宣佈，已針對前承包商正式提起法律訴訟。"
   },
   {
     "id": 8347,
@@ -2262,19 +2262,19 @@
     "id": 8352,
     "en": "mozambique",
     "kk": "[ˌmoʊzæmˈbiːk]",
-    "zh": "n. 莫桑比克（非洲東南部國家，首都馬普托；全稱莫桑比克共和國）",
+    "zh": "v. 哀鳴、抱怨、發出嗚嗚聲（whine 之過去式與過去分詞）",
     "unit": 8,
-    "example": "Mozambique became independent in 1975.",
-    "exampleZh": "莫桑比克於1975年獲得獨立。"
+    "example": "The tired toddler whined because he didn't want to leave the colorful playground.",
+    "exampleZh": "疲倦的幼童因為不想離開色彩繽紛的遊樂場而開始哼哼唧唧地抱怨。"
   },
   {
     "id": 8353,
     "en": "speciality",
     "kk": "[ˌspeʃiˈæləti]",
-    "zh": "n. 特色菜，特產；特製品，特需品；專業，專長；醫學專科，專外科；常做之事",
+    "zh": "v. （小狗）尖銳狂吠、喋喋不休（yap 之過去式與過去分詞）",
     "unit": 8,
-    "example": "His speciality is international law.",
-    "exampleZh": "他的專業是國際法。"
+    "example": "The neighbor's tiny terrier yapped excitedly whenever someone walked past the front gate.",
+    "exampleZh": "每當有人走過前門時，鄰居的小型梗犬就會興奮地狂吠不停。"
   },
   {
     "id": 8354,
@@ -2496,19 +2496,19 @@
     "id": 8378,
     "en": "escapement",
     "kk": "[ɪˈskeɪpmənt]",
-    "zh": "n. 擒縱機構，擒縱器，擒縱裝置；（計時器以外的機械中的）步進調節機構",
+    "zh": "v. 哼曲子、發出嗡嗡聲（hum 之過去式與過去分詞）",
     "unit": 8,
-    "example": "So they proceeded to invent the verge-and-foliot escapement.",
-    "exampleZh": "所以他們著手發明了立軸橫杆式擒縱機構。"
+    "example": "He cheerfully hummed a catchy melody while preparing dinner for his family in the kitchen.",
+    "exampleZh": "他在廚房為家人準備晚餐時，心情愉快地哼著一首動聽的曲子。"
   },
   {
     "id": 8379,
     "en": "george",
     "kk": "[dʒɔːrdʒ]",
-    "zh": "n. 喬治（男子名）；自動操縱裝置；英國最高勳爵勳章上的聖喬治誅龍圖",
+    "zh": "v. 咆哮、大吼、轟鳴（roar 之過去式與過去分詞）",
     "unit": 8,
-    "example": "George was spending very freely.",
-    "exampleZh": "喬治花錢大手大腳。"
+    "example": "The entire stadium roared with excitement when the striker scored the decisive goal in stoppage time.",
+    "exampleZh": "當前鋒在傷停補時打進決勝球時，整座體育場爆發出震耳欲聾的歡呼聲。"
   },
   {
     "id": 8380,
@@ -2640,10 +2640,10 @@
     "id": 8394,
     "en": "programme",
     "kk": "[ˈproʊɡræm]",
-    "zh": "n. 計劃，方案；（電視或廣播的）節目；（戲劇或音樂會等演出的）說明書，節目單；（活動的）計劃表，程序單；課程；（計算機等的）程序，程序設計；v. （給計算機）編寫程序，設計程序；調好，設置（機器使之按某種方式運作）；使……有傾向，使按某種方式行事；計劃，安排",
+    "zh": "n. 計畫、方案；（電視/廣播）節目；電腦程式；v. 為機器編寫程式",
     "unit": 8,
-    "example": "The programme starts at 9 a.m.",
-    "exampleZh": "這個節目上午9點開始。"
+    "example": "The university introduced a comprehensive mentoring programme to help freshmen adjust to campus life.",
+    "exampleZh": "該大學推出了一項全面的導師輔導計畫，以幫助大一新生適應校園生活。"
   },
   {
     "id": 8395,
@@ -2748,10 +2748,10 @@
     "id": 8406,
     "en": "funky",
     "kk": "[ˈfʌŋki]",
-    "zh": "adj. 時髦的，新潮獨特的；（爵士樂、布魯斯或流行樂）節奏強勁的；惡臭的，難聞的；（外觀、形式等）奇特的，古怪的；膽怯的，畏縮的",
+    "zh": "v. 發出喀噠聲；點擊（滑鼠）；豁然開朗（click 之過去式與過去分詞）",
     "unit": 8,
-    "example": "The place is quirky, funky and dazzlingly imaginative in design.",
-    "exampleZh": "這個地方非同凡響、時髦別緻且設計極富想像力。"
+    "example": "She breathed a sigh of relief as the heavy front door clicked securely shut behind her.",
+    "exampleZh": "當沉重的前門在她身後安全地喀噠一聲鎖上時，她鬆了一口氣。"
   },
   {
     "id": 8407,
@@ -2838,10 +2838,10 @@
     "id": 8416,
     "en": "briefings",
     "kk": "",
-    "zh": "n. briefing 的複數形式，指簡報會、情況介紹會、新聞發佈會；也可指會上向有關人員提供的簡報內容、信息或詳細指示",
+    "zh": "n. 簡報會、情況說明會；簡報資料（briefing 之複數）",
     "unit": 8,
-    "example": "They held daily press briefings.",
-    "exampleZh": "他們召開了每日例行的新聞發佈會。"
+    "example": "The project manager conducted regular morning briefings to keep the entire engineering team aligned.",
+    "exampleZh": "專案經理每天早晨舉行簡報會，以確保整個工程團隊的進度保持一致。"
   },
   {
     "id": 8417,
@@ -2865,19 +2865,19 @@
     "id": 8419,
     "en": "broadband",
     "kk": "[ˈbrɔːdbænd]",
-    "zh": "n. 寬帶，寬頻（利用較寬的頻率範圍同時傳送數據的高速互聯網接入方式或服務）；寬頻帶，寬波段（通信或電子技術中較寬的頻率範圍）；adj. 寬頻帶的，寬波段的，寬頻通訊的（與寬帶通信、高速互聯網或寬頻帶傳輸有關，或用於描述使用或響應較寬頻率範圍的設備、信號或網絡）",
+    "zh": "n. 寬頻、寬頻網路；adj. 寬頻的",
     "unit": 8,
-    "example": "Broadband is still more expensive than dial-up services.",
-    "exampleZh": "寬帶還是要比撥號服務費錢得多。"
+    "example": "Upgrading to a high-speed broadband connection allows remote workers to participate smoothly in video conferences.",
+    "exampleZh": "升級至高速寬頻網路讓遠端工作者能夠順暢地參與視訊會議。"
   },
   {
     "id": 8420,
     "en": "cgi",
     "kk": "[ˌsiː dʒiː ˈaɪ]",
-    "zh": "abbr. 公共網關接口 (Common Gateway Interface)；電腦圖像界面 (Computer Graphics Interface)；計算機生成圖像 (computer-generated imagery)",
+    "zh": "abbr. 電腦生成影像、電腦動畫特效 (computer-generated imagery)；通用閘道介面 (Common Gateway Interface)",
     "unit": 8,
-    "example": "The CGI technology allows the image of the deceased James Dean to be presented to young people in new settings.",
-    "exampleZh": "CGI 技術可以讓已故的詹姆斯·迪恩的圖像在新背景中呈現給年輕人。"
+    "example": "Modern blockbuster films rely heavily on photorealistic CGI to create breathtaking alien worlds.",
+    "exampleZh": "現代好萊塢大片極度仰賴逼真的電腦特效（CGI）來打造令人屏息的外星世界。"
   },
   {
     "id": 8421,
@@ -2919,10 +2919,10 @@
     "id": 8425,
     "en": "coms",
     "kk": "",
-    "zh": "abbr. 互補金屬氧化物半導體（Complementary Metal Oxide Semiconductor），指數碼成像設備中的感光元件（規範縮寫多為 CMOS）；尋優模型系統（Compliance Optimization Modeling System）；n. 網絡公司，互聯網公司（常用於 dot-coms 中）",
+    "zh": "n. 網路公司、網際網路企業（常用於 dot-coms）",
     "unit": 8,
-    "example": "The weaker dot-coms have collapsed.",
-    "exampleZh": "實力較弱的網絡公司倒閉了。"
+    "example": "During the late 1990s boom, dozens of innovative dot-coms were founded each month.",
+    "exampleZh": "在 1990 年代末期的繁榮時期，每個月都有數十家創新的網路公司成立。"
   },
   {
     "id": 8426,
@@ -2973,19 +2973,19 @@
     "id": 8431,
     "en": "inconsistency",
     "kk": "[ˌɪnkənˈsɪstənsi]",
-    "zh": "n. 不一致，不一致性，前後矛盾；不一致之處，矛盾之處，出入；反覆無常，易變",
+    "zh": "n. 不一致、矛盾、前後不符",
     "unit": 8,
-    "example": "UR ensures the highest level of performance at the cost of some data inconsistency.",
-    "exampleZh": "UR 以犧牲某些數據的不一致性為代價，確保了最高級別的性能。"
+    "example": "The internal audit revealed a clear inconsistency between the reported expenses and actual receipts.",
+    "exampleZh": "內部稽核揭露了申報費用與實際收據之間存在明顯的不一致。"
   },
   {
     "id": 8432,
     "en": "pitifully",
     "kk": "[ˈpɪtɪfəli]",
-    "zh": "adv. 可憐地，令人憐憫地；可悲地，可鄙地；（數量、程度、質量等）少得可憐，低得可憐",
+    "zh": "adv. 可憐地、少得可憐地、令人同情地",
     "unit": 8,
-    "example": "His legs were pitifully thin compared to the rest of his bulk.",
-    "exampleZh": "他的雙腿和他魁梧的上身相比細得可憐。"
+    "example": "The volunteer rescue team was operating with a pitifully small budget despite saving hundreds of animals.",
+    "exampleZh": "儘管拯救了數百隻動物，志工救援隊卻依舊在少得可憐的預算下艱困運作。"
   },
   {
     "id": 8433,
@@ -3099,10 +3099,10 @@
     "id": 8445,
     "en": "tim",
     "kk": "[tɪm]",
-    "zh": "n. 蒂姆（男子名）",
+    "zh": "n. 提姆（男子名，Timothy 之簡稱）",
     "unit": 9,
-    "example": "Tim, 17, supports the Knicks.",
-    "exampleZh": "17歲的蒂姆支持尼克斯隊。"
+    "example": "I asked Tim if he would like to join us for dinner after work this evening.",
+    "exampleZh": "我問了提姆今晚下班後是否想和我們一起吃晚餐。"
   },
   {
     "id": 8446,
@@ -3189,10 +3189,10 @@
     "id": 8455,
     "en": "pro",
     "kk": "[proʊ]",
-    "zh": "n. <非正式>專業人士，職業選手；<非正式>（網球或高爾夫球俱樂部的）專職教練；<非正式>老手（=old pro）；好處， 贊成的論點；贊成者，支持者；<英，舊，非正式>妓女；adj. <美，非正式>職業性的，專業的；prep. 支持，贊成；adv. 正面地，贊成地；【名】 （Pro）（俄、美、意、印、西）普羅（人名）",
+    "zh": "n. 專家、職業選手；贊成者；adj. 職業的、專業的",
     "unit": 9,
-    "example": "After her pro playing career, she coached a golf team in San Jose.",
-    "exampleZh": "在職業球員生涯結束之後，她在聖何塞訓練一支高爾夫球隊。"
+    "example": "Even under extreme pressure, she handled the client crisis like a seasoned pro.",
+    "exampleZh": "即使面對極大的壓力，她依然像位經驗老到的專業高手般妥善處理了客戶危機。"
   },
   {
     "id": 8456,
@@ -3450,10 +3450,10 @@
     "id": 8484,
     "en": "purvey",
     "kk": "[pərˈveɪ]",
-    "zh": "vt. <正式>供應，供給（食品、貨物、服務等）；提供，傳播（信息、建議、觀點等）；vi. <舊或罕>供應，供給（糧食、物資）",
+    "zh": "v. 供應、提供（食品、貨物或觀點）",
     "unit": 9,
-    "example": "They have two restaurants that purvey dumplings and chicken noodle soup.",
-    "exampleZh": "有兩家供應餃子和雞肉湯麵的餐館。"
+    "example": "The artisanal bakery takes immense pride in purveying fresh, organic sourdough to the community.",
+    "exampleZh": "這家手工烘焙坊以向社區供應新鮮、有機的酸種麵包為傲。"
   },
   {
     "id": 8485,
@@ -3837,19 +3837,19 @@
     "id": 8527,
     "en": "masticated",
     "kk": "[ˈmæstɪkeɪtɪd]",
-    "zh": "v. 咀嚼；粉碎；撕捏（masticate 的過去式和過去分詞)",
+    "zh": "v. （青蛙）呱呱叫；用沙啞的聲音說話；暴斃（croak 之過去式與過去分詞）",
     "unit": 9,
-    "example": "Hines slowly masticated a shrimp.",
-    "exampleZh": "海恩斯慢慢地咀嚼著一隻蝦。"
+    "example": "Suffering from a severe sore throat, she croaked a faint 'good morning' to her colleagues.",
+    "exampleZh": "由於喉嚨嚴重發炎，她用沙啞微弱的聲音向同事說了聲「早安」。"
   },
   {
     "id": 8528,
     "en": "fraught",
     "kk": "[frɔːt]",
-    "zh": "adj. 充滿（糟糕或令人討厭的事物）；造成憂慮（或緊張）的，受憂慮（或壓力）影響的；<舊>充滿的；n. 貨物；v. 裝載",
+    "zh": "v. （鳥類或昆蟲）啁啾、歡快地說（chirp 之過去式與過去分詞）",
     "unit": 9,
-    "example": "There was a fraught silence.",
-    "exampleZh": "有一陣令人焦慮的沉默。"
+    "example": "Sparrows chirped happily in the garden bushes as the morning sun warmed the cool air.",
+    "exampleZh": "隨著清晨的陽光驅散涼意，麻雀在花園灌木叢中歡快地啁啾啼叫著。"
   },
   {
     "id": 8529,
@@ -3972,10 +3972,10 @@
     "id": 8542,
     "en": "zap",
     "kk": "[zæp]",
-    "zh": "v. <非正式>突然攻擊並殺死或摧毀；在遊戲等中打敗對手；清除，除去，刪除；用微波爐烹煮或加熱；迅速做；快速移動；快速變換頻道；快速傳遞（信息）；n. <非正式>活力，精力；震擊（突然的電擊或衝擊）；int. <非正式>噝，嗖",
+    "zh": "v. 迅速清除、消滅、痛擊；發送電擊；n. 活力、打擊",
     "unit": 9,
-    "example": "\"We zap millions and millions of spam mails a day from our servers,\" AOL spokesman Nicholas Graham said.",
-    "exampleZh": "「我們一天要從我們的服務器上清除數以百萬計的垃圾郵件，」美國在線公司發言人尼古拉斯·格雷厄姆說。"
+    "example": "The new email security filter automatically zaps malicious spam messages before they reach your inbox.",
+    "exampleZh": "新型電子郵件安全過濾器會在惡意垃圾信件進入收件匣前自動將其迅速清除。"
   },
   {
     "id": 8543,
@@ -4062,19 +4062,19 @@
     "id": 8552,
     "en": "ouch",
     "kk": "[aʊtʃ]",
-    "zh": "int. 哎喲（突然疼痛時發出的聲音）；n. 釦環；寶石胸針；（Ouch）人名；（柬）烏",
+    "zh": "v. 啁啾啼叫（chirp 之現在分詞）",
     "unit": 9,
-    "example": "Ouch! You trod on my toe!",
-    "exampleZh": "哎喲！你踩著我的腳指頭了！"
+    "example": "I woke up to the gentle sound of crickets chirping outside the open bedroom window.",
+    "exampleZh": "我在臥室敞開的窗外傳來蟋蟀輕柔的鳴叫聲中醒來。"
   },
   {
     "id": 8553,
     "en": "trod",
     "kk": "[trɑːd]",
-    "zh": "v. tread 的過去式和過去分詞；踐踏，踩；行走；沿著……走；（小心）行事",
+    "zh": "v. 發出吱吱聲、短促刺耳的尖叫（squeak 之過去式與過去分詞）",
     "unit": 9,
-    "example": "Ouch! You trod on my toe!",
-    "exampleZh": "哎喲！你踩著我的腳指頭了！"
+    "example": "As the burglar stepped onto the wooden staircase in the dark, the old floorboard squeaked loudly.",
+    "exampleZh": "當小偷在黑暗中踏上木質樓梯時，老舊的木地板發出了響亮的吱嘎聲。"
   },
   {
     "id": 8554,
@@ -4134,19 +4134,19 @@
     "id": 8560,
     "en": "anymore",
     "kk": "[ˌeniˈmɔːr]",
-    "zh": "adv. （不）再，再也（不）",
+    "zh": "v. 怦怦重重地跳動、發出沉悶撞擊聲（thud 之過去式與過去分詞）",
     "unit": 9,
-    "example": "I couldn't trust him anymore.",
-    "exampleZh": "我再不能相信他了。"
+    "example": "Her heart thudded violently against her ribs as she stepped onto the stage to give her speech.",
+    "exampleZh": "當她走上舞台準備演講時，心臟在胸腔中狂跳不已。"
   },
   {
     "id": 8561,
     "en": "extruded",
     "kk": "[ɪkˈstruːdɪd]",
-    "zh": "adj. 壓出的，受擠壓的，擠壓成形的；v. extrude 的過去式和過去分詞：使……噴出；使伸出；驅逐",
+    "zh": "v. 呻吟、抱怨、發出吱嘎聲（groan 之過去式與過去分詞）",
     "unit": 9,
-    "example": "I work in the extruded tube business.",
-    "exampleZh": "我在擠壓管行業工作。"
+    "example": "The entire team groaned when the director announced an unexpected weekend meeting.",
+    "exampleZh": "當主管宣佈週末要臨時開會時，整個團隊都無奈地發出了哀號抱怨聲。"
   },
   {
     "id": 8562,
@@ -4251,28 +4251,28 @@
     "id": 8573,
     "en": "bliss",
     "kk": "[blɪs]",
-    "zh": "n. 極樂，天賜之福；天堂，樂園；v. <非正式>樂不可支，欣喜若狂；【名】 （Bliss）（英、法、德、西）布利斯（人名）",
+    "zh": "v. （小鳥）啾啾啼叫（cheep 之過去式與過去分詞）",
     "unit": 9,
-    "example": "My idea of bliss is a month in the Bahamas.",
-    "exampleZh": "我理想中的極樂是在巴哈馬群島度假一個月。"
+    "example": "The newly hatched chicks cheeped eagerly from their nest whenever the mother bird returned.",
+    "exampleZh": "每當母鳥返回時，剛孵化的小雛鳥都會在巢中急切地啾啾啼叫。"
   },
   {
     "id": 8574,
     "en": "graphite",
     "kk": "[ˈɡræfaɪt]",
-    "zh": "n. 石墨；黑鉛；v. 用石墨塗（或摻入等）",
+    "zh": "v. 發出粗厲啼叫、大聲抱怨（squawk 之過去式與過去分詞）",
     "unit": 9,
-    "example": "Made from cast iron, it is finished in graphite enamel.",
-    "exampleZh": "該物由鑄鐵製成，表面以石墨搪瓷拋光。"
+    "example": "The startled parrot squawked angrily when someone suddenly knocked on the front door.",
+    "exampleZh": "當有人突然敲前門時，受驚的鸚鵡發出了憤怒粗厲的叫聲。"
   },
   {
     "id": 8575,
     "en": "animations",
     "kk": "[ˌænɪˈmeɪʃnz]",
-    "zh": "n. 動畫片，動畫作品（animation 的複數）；（計算機/數字媒體）動畫效果",
+    "zh": "v. （小貓）喵喵叫（mew 之過去式與過去分詞）",
     "unit": 9,
-    "example": "The electronic dictionary included some animations.",
-    "exampleZh": "電子詞典中有一些動畫片。"
+    "example": "The rescued tiny kitten mewed pitifully until someone picked it up and gave it warm milk.",
+    "exampleZh": "被收留的小貓咪楚楚可憐地喵喵叫著，直到有人將牠抱起並餵牠喝溫牛奶。"
   },
   {
     "id": 8576,
@@ -4332,19 +4332,19 @@
     "id": 8582,
     "en": "josie",
     "kk": "",
-    "zh": "n. 何超儀（中國香港演員）；喬茜（女子名）",
+    "zh": "n. 喬西（女子名，Josephine 之簡稱）",
     "unit": 9,
-    "example": "Her family's support is particularly precious to Josie.",
-    "exampleZh": "家人的支持對喬茜尤為珍貴。"
+    "example": "Her family's unwavering love and encouragement have always been deeply precious to Josie.",
+    "exampleZh": "家人的堅定陪伴與鼓勵對喬西而言始終彌足珍貴。"
   },
   {
     "id": 8583,
     "en": "arrogance",
     "kk": "[ˈærəɡəns]",
-    "zh": "n. 傲慢，自大",
+    "zh": "n. 傲慢、自大、自負",
     "unit": 9,
-    "example": "His arrogance astounded her.",
-    "exampleZh": "他的傲慢使她震驚。"
+    "example": "His intolerable arrogance and refusal to listen to teammates ultimately cost him the promotion.",
+    "exampleZh": "他令人無法忍受的傲慢以及拒絕聆聽隊友意見的態度，最終讓他失去了升遷機會。"
   },
   {
     "id": 8584,
@@ -4449,10 +4449,10 @@
     "id": 8595,
     "en": "behaviour",
     "kk": "[bɪˈheɪvjər]",
-    "zh": "n. 行為，舉止，態度；活動方式，特點，特性；習慣",
+    "zh": "n. 行為、舉止、品行（英式拼法，美式作 behavior）",
     "unit": 9,
-    "example": "Her behaviour was exemplary.",
-    "exampleZh": "她的行為堪作楷模。"
+    "example": "The school principal praised the students for their polite behaviour during the museum visit.",
+    "exampleZh": "校長讚揚了學生們在參觀博物館期間禮貌得體的良好舉止。"
   },
   {
     "id": 8596,
@@ -4710,10 +4710,10 @@
     "id": 8624,
     "en": "online",
     "kk": "[ˌɑːnˈlaɪn]",
-    "zh": "adj. （產品、服務或信息）在線的，網上的；（計算機）聯機的；adv. 在網上，利用網際網路（購買、獲得等）；聯機地，在電腦操控下；開始運行，存在著",
+    "zh": "adj. 線上的、網路的；adv. 在線上、在網路上",
     "unit": 9,
-    "example": "An online tutorial is provided.",
-    "exampleZh": "在線輔導可供查閱。"
+    "example": "Students can easily access comprehensive online tutorials to review lecture materials at home.",
+    "exampleZh": "學生們可以在家輕鬆使用豐富的線上教學資源來複習課程內容。"
   },
   {
     "id": 8625,
@@ -5079,10 +5079,10 @@
     "id": 8665,
     "en": "vegetarianism",
     "kk": "[ˌvedʒəˈteriənɪzəm]",
-    "zh": "n. 素食主義，不吃肉（通常也不吃魚）的飲食實踐或主張",
+    "zh": "n. 素食主義、蔬食生活",
     "unit": 9,
-    "example": "Vegetarianism has been mainstreamed.",
-    "exampleZh": "素食主義已為大多數人所接受。"
+    "example": "Vegetarianism has gained widespread popularity among young adults seeking healthier lifestyles.",
+    "exampleZh": "素食主義在追求更健康生活方式的年輕人中已獲得廣泛的歡迎。"
   },
   {
     "id": 8666,
@@ -5322,10 +5322,10 @@
     "id": 8692,
     "en": "labour",
     "kk": "[ˈleɪbər]",
-    "zh": "n. 勞動；任務，（一段時間的）工作；勞工，工人，勞動力；分娩，臨盆；工會；（英國）工黨；v. 勞動，勞作；努力做（困難的事）；費力地行進；誤以為，為……所矇蔽；一再重申，反覆說明；<古>耕（地）；adj. 工黨的，支持工黨的",
+    "zh": "n. 勞動、勞工；分娩；（英國）工黨；v. 辛勤工作",
     "unit": 9,
-    "example": "Labour is ahead in the poll.",
-    "exampleZh": "工黨的得票數領先。"
+    "example": "Building the wooden cabin in the mountains required weeks of hard physical labour.",
+    "exampleZh": "在山中搭建這座小木屋需要耗費數週繁重的體力勞動。"
   },
   {
     "id": 8693,
@@ -5574,10 +5574,10 @@
     "id": 8720,
     "en": "wysiwyg",
     "kk": "[ˈwɪziwɪɡ]",
-    "zh": "abbr. 所見即所得（What You See Is What You Get）",
+    "zh": "abbr. 所見即所得 (What You See Is What You Get)",
     "unit": 9,
-    "example": "WYSIWYG editing makes your word processing smoother and more flexible.",
-    "exampleZh": "「所見即所得」編輯使你的文字信息處理更加順暢和靈活。"
+    "example": "The new website builder features an intuitive WYSIWYG editor that simplifies page design.",
+    "exampleZh": "這款新型網站架設工具具備直覺的「所見即所得」編輯器，大幅簡化了頁面設計流程。"
   },
   {
     "id": 8721,
@@ -5763,10 +5763,10 @@
     "id": 8741,
     "en": "convincingly",
     "kk": "[kənˈvɪnsɪŋli]",
-    "zh": "adv. 令人信服地，有說服力地",
+    "zh": "adv. 令人信服地、有說服力地",
     "unit": 9,
-    "example": "They won convincingly.",
-    "exampleZh": "他們贏得令人信服。"
+    "example": "The defense lawyer argued her case convincingly, leading the jury to reach an acquittal.",
+    "exampleZh": "辯護律師極具說服力地陳述了案情，引導陪審團做出了無罪判決。"
   },
   {
     "id": 8742,
@@ -5898,10 +5898,10 @@
     "id": 8756,
     "en": "beeswax",
     "kk": "[ˈbiːzwæks]",
-    "zh": "n. 蜂蠟，黃蠟，蜜蠟；<非正式>管的事，關心的事（常用於 none of your beeswax，意為“不關你的事”）；v. 塗蜜蠟，給……打蠟上光",
+    "zh": "n. 蜂蠟、蜜蠟；私事（常用於 none of your beeswax 與你無關）",
     "unit": 9,
-    "example": "Beeswax acts as an emulsifying agent.",
-    "exampleZh": "蜂蠟可以用作乳化劑。"
+    "example": "Natural beeswax is widely used in organic lip balms to retain moisture and protect dry skin.",
+    "exampleZh": "天然蜂蠟廣泛應用於有機護唇膏中，能鎖住水分並保護乾燥肌膚。"
   },
   {
     "id": 8757,
@@ -5934,10 +5934,10 @@
     "id": 8760,
     "en": "lin",
     "kk": "",
-    "zh": "n. 林（華人姓氏）；abbr. 本地互連網絡（Local Interconnect Network）的縮寫：汽車電子領域的一種低成本、低速串行通信總線協議",
+    "zh": "n. 林（華人常見姓氏）",
     "unit": 9,
-    "example": "Mr. Lin is associate director of the Institute.",
-    "exampleZh": "林先生是該研究所的副主任。"
+    "example": "Mr. Lin has served as the dedicated principal of our local high school for over a decade.",
+    "exampleZh": "林先生在我們當地的中學擔任盡責的校長已超過十年。"
   },
   {
     "id": 8761,
@@ -6078,10 +6078,10 @@
     "id": 8776,
     "en": "floss",
     "kk": "[flɑːs]",
-    "zh": "n. 牙線；細軟絲線（尤指繡花絲線）；絲棉；亂絲；（Floss）人名；（英、德）弗洛斯；v. 用牙線清潔（牙縫）",
+    "zh": "n. 牙線；絲線；棉花糖；v. 用牙線潔牙",
     "unit": 9,
-    "example": "Sandy is eating candy-floss.",
-    "exampleZh": "桑迪正在吃棉花糖。"
+    "example": "Dentists strongly recommend that patients floss their teeth at least once every day.",
+    "exampleZh": "牙醫師強烈建議患者每天至少要使用牙線清潔牙齒一次。"
   },
   {
     "id": 8777,
@@ -6258,10 +6258,10 @@
     "id": 8796,
     "en": "kara",
     "kk": "",
-    "zh": "n. 喀拉海（北冰洋邊海，在蘇聯新地島和北地群島之間）",
+    "zh": "n. 卡拉（女子名，或指北冰洋之喀拉海）",
     "unit": 9,
-    "example": "Special thanks to Kara Udziela and Yvonne Beyer of iStockphoto for helping to support the creation of this case study.",
-    "exampleZh": "特別感謝 iStockphoto 的 Kara Udziela 和 Yvonne Beyer 協助支持本案例研究的創作。"
+    "example": "Kara volunteered at the local animal shelter every Saturday morning to walk the rescue dogs.",
+    "exampleZh": "卡拉每週六早晨都會在當地的動物收容所當志工，帶領被救援的狗狗散步。"
   },
   {
     "id": 8797,
@@ -6303,10 +6303,10 @@
     "id": 8801,
     "en": "builders",
     "kk": "[ˈbɪldərz]",
-    "zh": "n. （建築）施工人員，建築工人；（建築）建築商，營造商；（計算機）生成器，構建器（均為 builder 的複數）",
+    "zh": "n. 建築承包商、營造商、建造者（builder 之複數）",
     "unit": 9,
-    "example": "Some builders guarantee their work.",
-    "exampleZh": "一些建築商為他們的工作擔保。"
+    "example": "The experienced builders completed the new community library two weeks ahead of schedule.",
+    "exampleZh": "經驗豐富的營建承包商比原定計畫提前兩週完工了新的社區圖書館。"
   },
   {
     "id": 8802,
@@ -6411,10 +6411,10 @@
     "id": 8813,
     "en": "socio",
     "kk": "[ˈsoʊsioʊ]",
-    "zh": "adj. 社會的",
+    "zh": "pref. 社會的、與社會相關的（前綴，如 socio-economic 社經的）",
     "unit": 9,
-    "example": "The effects are complex, affected by socio-economic factors, health-service provision, emotional support and other more physiological mechanisms.",
-    "exampleZh": "其影響十分複雜，受到社會經濟因素、醫療服務供給、情感支持以及其他更多生理機制的作用。"
+    "example": "Researchers analyzed how family socio-economic status influences children's educational attainment.",
+    "exampleZh": "研究人員分析了家庭的社經地位如何影響孩子們的受教育程度。"
   },
   {
     "id": 8814,
@@ -6474,10 +6474,10 @@
     "id": 8820,
     "en": "tqm",
     "kk": "[ˌtiː kjuː ˈem]",
-    "zh": "abbr. 全面質量管理 total quality management",
+    "zh": "abbr. 全面品質管理 (Total Quality Management)",
     "unit": 9,
-    "example": "One of the main themes of TQM is employee involvement.",
-    "exampleZh": "全員質量管理的一個主要原則之一是僱員參與。"
+    "example": "Adopting TQM principles helped the electronics manufacturer significantly reduce product defects.",
+    "exampleZh": "採用全面品質管理（TQM）原則幫助這家電子製造商大幅降低了產品瑕疵率。"
   },
   {
     "id": 8821,
@@ -6521,8 +6521,8 @@
     "kk": "[əˈmændə]",
     "zh": "n. 阿曼達（女子名）",
     "unit": 9,
-    "example": "Amanda launched into an authoritative disquisition about contracts.",
-    "exampleZh": "阿曼達開始了一番對合同的權威解釋。"
+    "example": "Amanda reviewed the commercial lease contract carefully before advising her client to sign it.",
+    "exampleZh": "阿曼達在建議客戶簽約之前，非常仔細地審查了商業租賃合約。"
   },
   {
     "id": 8826,
@@ -6537,10 +6537,10 @@
     "id": 8827,
     "en": "forfeitures",
     "kk": "",
-    "zh": "n．沒收，喪失權利：因違法行為或違反合同等原因，被剝奪財產或權利的行為。",
+    "zh": "n. 沒收物、罰款、權利之喪失（forfeiture 之複數）",
     "unit": 9,
-    "example": "Both face maximum forfeitures of about $1.2 million.",
-    "exampleZh": "雙方都面臨最高可達一百二十萬美元的財產沒收。"
+    "example": "The contract clearly states that breaches of confidentiality will result in heavy financial forfeitures.",
+    "exampleZh": "該合約明確規定，違反保密條款將會導致鉅額的罰款與保證金沒收。"
   },
   {
     "id": 8828,
@@ -6600,10 +6600,10 @@
     "id": 8834,
     "en": "grid",
     "kk": "[ɡrɪd]",
-    "zh": "n. 網格，方格；柵欄；輸電網，電力網；賽車起跑線；美式橄欖球球場，橄欖球賽；（控制）柵極；計算機聯網；v. 使……構成網格狀，佈置成網格結構",
+    "zh": "n. 電網、輸電網；網格、方格；賽車起跑線",
     "unit": 9,
-    "example": "The grid reference is C8.",
-    "exampleZh": "地圖上的座標方格數字為C8。"
+    "example": "The severe summer heatwave placed enormous strain on the state's municipal power grid.",
+    "exampleZh": "夏季嚴酷的熱浪給全州的市政供電系統帶來了巨大的負載壓力。"
   },
   {
     "id": 8835,
@@ -6645,10 +6645,10 @@
     "id": 8839,
     "en": "signposted",
     "kk": "",
-    "zh": "adj. 設有路標的；v. 標示（signpost 的過去式和過去分詞）",
+    "zh": "adj. 設有路標的、標示清晰的；v. 設置路標（signpost 之過去式與過去分詞）",
     "unit": 9,
-    "example": "Diversions will be signposted.",
-    "exampleZh": "臨時支路都將設置路標。"
+    "example": "The national park hiking trail was clearly signposted, making it impossible for visitors to get lost.",
+    "exampleZh": "國家公園的登山步道標示非常清晰，遊客完全不用擔心迷路。"
   },
   {
     "id": 8840,
@@ -6735,10 +6735,10 @@
     "id": 8849,
     "en": "tenderizes",
     "kk": "[ˈtendəraɪz]",
-    "zh": "vt. 使（肉等）變嫩或變軟（通常經醃製、拍打或烹調等處理）",
+    "zh": "v. 使（肉）軟嫩、使變嫩（tenderize 之第三人稱單數）",
     "unit": 9,
-    "example": "Wine vinegar tenderizes meat.",
-    "exampleZh": "酒醋能讓肉變得軟嫩。"
+    "example": "Marinating beef with fresh pineapple juice naturally tenderizes the tough meat fibers.",
+    "exampleZh": "用新鮮鳳梨汁醃製牛肉能自然地軟化堅硬的肉質纖維。"
   },
   {
     "id": 8850,
@@ -6825,10 +6825,10 @@
     "id": 8859,
     "en": "optimist",
     "kk": "[ˈɑːptɪmɪst]",
-    "zh": "n. 樂觀主義者，樂天派",
+    "zh": "n. 樂觀主義者、樂天派",
     "unit": 9,
-    "example": "She's an incurable optimist.",
-    "exampleZh": "她是個不可救藥的樂天派。"
+    "example": "Even during difficult times, an incurable optimist always looks for the silver lining in every challenge.",
+    "exampleZh": "即使在最艱難的時刻，堅定的樂天派也總是能在每個挑戰中看見希望的曙光。"
   },
   {
     "id": 8860,
@@ -6933,10 +6933,10 @@
     "id": 8871,
     "en": "formalities",
     "kk": "[fɔːrˈmælətiz]",
-    "zh": "n. 正式手續，規定程序；禮節，社交慣例；徒具形式的事項，走過場",
+    "zh": "n. 正式手續、常規禮節、社交慣例（formality 之複數）",
     "unit": 9,
-    "example": "Certain formalities have to be gone through before you can emigrate.",
-    "exampleZh": "必須辦理一定的手續方能移居他國。"
+    "example": "Once the airport customs formalities were completed, the exhausted tourists took a taxi to the hotel.",
+    "exampleZh": "在順利辦理完機場的海關手續後，疲憊的遊客們搭上計程車前往飯店。"
   },
   {
     "id": 8872,
@@ -6951,10 +6951,10 @@
     "id": 8873,
     "en": "pros",
     "kk": "[proʊz]",
-    "zh": "n. pro 的複數：贊成者，支持者；贊成的意見，有利的方面；職業選手，專業人士，行家；固定搭配 pros and cons 表示利弊，正反兩方面，贊成與反對的論據；（Pros）人名（法）普羅，（捷、瑞典）普羅斯；abbr. 舞臺前部（proscenium）；詩體學，韻律學（prosody）",
+    "zh": "n. 利弊、正反兩面（常構成 pros and cons）；專家、老手（pro 之複數）",
     "unit": 9,
-    "example": "We weighed up the pros and cons.",
-    "exampleZh": "我們權衡了利弊得失。"
+    "example": "Before deciding to accept the remote job offer, she carefully weighed all the pros and cons.",
+    "exampleZh": "在決定接受這份遠端工作聘約之前，她仔細權衡了所有的利弊得失。"
   },
   {
     "id": 8874,
@@ -6996,10 +6996,10 @@
     "id": 8878,
     "en": "arroyo",
     "kk": "[əˈrɔɪoʊ]",
-    "zh": "n. 小河，溪流；（美國英語）旱谷，乾涸溝壑；Arroyo（人名），阿羅約（西班牙語、葡萄牙語姓氏）",
+    "zh": "n. 乾涸的河道、小溪、乾河谷（尤指美國西南部乾燥地區）",
     "unit": 9,
-    "example": "The groundswell forced Arroyo to suspend the contracts in September.",
-    "exampleZh": "這一風波迫使阿羅約在9月份暫停了這些合同。"
+    "example": "Flash floods can suddenly transform a dry desert arroyo into a rushing torrent of muddy water.",
+    "exampleZh": "突如其來的山洪暴發能瞬間將沙漠中乾涸的河道變成奔騰的泥流。"
   },
   {
     "id": 8879,
@@ -7041,10 +7041,10 @@
     "id": 8883,
     "en": "spotty",
     "kk": "[ˈspɑːti]",
-    "zh": "adj. 多斑點的，有斑點的；（皮膚）多丘疹的，多粉刺的；時好時壞的，質量不一的",
+    "zh": "adj. 品質參差不齊的、不穩定的；長滿斑點的；長粉刺的",
     "unit": 9,
-    "example": "It's like being the spotty, socially challenged nerd who has a crush on the prom queen.",
-    "exampleZh": "這就像一個長著粉刺的、在社交上有挑戰的書呆子，迷戀著舞會皇后。"
+    "example": "The mobile phone reception in the remote mountain cabin was notoriously spotty and unreliable.",
+    "exampleZh": "在偏遠山間小木屋裡的行動電話訊號向來非常不穩定且斷斷續續。"
   },
   {
     "id": 8884,
@@ -7374,10 +7374,10 @@
     "id": 8920,
     "en": "pdf",
     "kk": "[ˌpiː diː ˈef]",
-    "zh": "abbr. 可移植文檔格式（Portable Document Format）；概率密度函數（Probability Density Function）；概率分佈函數（Probability Distribution Function）；n. PDF 文件；可移植文檔格式文件的擴展名 .pdf",
+    "zh": "abbr. 可攜式文件格式 (Portable Document Format)；n. PDF 格式文件",
     "unit": 9,
-    "example": "I'll send it to you as a PDF.",
-    "exampleZh": "我會用PDF格式把它發給你。"
+    "example": "Please save your completed resume as a PDF before submitting it to the hiring manager.",
+    "exampleZh": "在將履歷提交給招聘經理之前，請先將其儲存為 PDF 格式檔案。"
   },
   {
     "id": 8921,
@@ -7554,10 +7554,10 @@
     "id": 8940,
     "en": "arc",
     "kk": "[ɑːrk]",
-    "zh": "n. 弧形，弧線；弧光，電弧；情節（或主題）的發展；反三角函數；v. 做弧形運動；形成電弧；adj. （三角函數和雙曲函數）反的；【名】 （Arc）（法）阿爾克（人名）",
+    "zh": "n. 弧形、弧線；電弧；故事弧線；v. 呈弧形移動",
     "unit": 9,
-    "example": "The beach swept around in an arc.",
-    "exampleZh": "海灘呈弧形伸展開來。"
+    "example": "A brilliant double rainbow formed a perfect colorful arc across the stormy afternoon sky.",
+    "exampleZh": "一道絢麗的雙彩虹在午後暴風雨的天空中劃出了一道完美的彩色弧線。"
   },
   {
     "id": 8941,
@@ -7662,10 +7662,10 @@
     "id": 8952,
     "en": "german",
     "kk": "[ˈdʒɜːrmən]",
-    "zh": "adj. 德國的；德語的，德國人的；n. 德語；德國人",
+    "zh": "adj. 德國的、德語的、德國人的；n. 德語、德國人",
     "unit": 9,
-    "example": "Bands played German marches.",
-    "exampleZh": "管樂隊演奏了德國的進行曲。"
+    "example": "Many international engineering students choose to learn German to enhance their career prospects.",
+    "exampleZh": "許多國際工程系學生選擇學習德語，以增強未來的職場競爭力。"
   },
   {
     "id": 8953,
@@ -7752,10 +7752,10 @@
     "id": 8962,
     "en": "misinformation",
     "kk": "[ˌmɪsɪnfərˈmeɪʃn]",
-    "zh": "n. 錯誤信息，虛假消息（常指故意提供）",
+    "zh": "n. 不實訊息、錯誤資訊、假消息",
     "unit": 9,
-    "example": "Fact-checking with a scientist who works in the specialty will prevent the unintentional spread of misinformation.",
-    "exampleZh": "與從事這一專業的科學家進行事實核實能夠防止錯誤信息的無意傳播。"
+    "example": "Social media platforms must implement strict fact-checking policies to combat the rapid spread of misinformation.",
+    "exampleZh": "社群媒體平台必須推行嚴格的事實查核政策，以遏止不實訊息的迅速蔓延。"
   },
   {
     "id": 8963,
@@ -7896,19 +7896,19 @@
     "id": 8978,
     "en": "villagers",
     "kk": "[ˈvɪlɪdʒər]",
-    "zh": "n. 村民，鄉下人（villager 的複數）",
+    "zh": "n. 村民、鄉下居民（villager 之複數）",
     "unit": 9,
-    "example": "The villagers spoke French.",
-    "exampleZh": "這些村民們講法語。"
+    "example": "All the local villagers gathered in the central square to celebrate the annual harvest festival.",
+    "exampleZh": "所有的當地村民都聚集在中央廣場上，共同慶祝一年一度的豐收節。"
   },
   {
     "id": 8979,
     "en": "microsoft",
     "kk": "[ˈmaɪkrəsɔːft]",
-    "zh": "n. 微軟公司（全球知名的 PC 軟件主要廠商）",
+    "zh": "n. 微軟公司（全球知名軟體與雲端運算科技企業）",
     "unit": 9,
-    "example": "The Justice Department advocated a breakup of Microsoft.",
-    "exampleZh": "司法部主張微軟公司解體。"
+    "example": "Microsoft continually updates its cloud productivity suite to support collaborative hybrid work.",
+    "exampleZh": "微軟持續更新其雲端辦公軟體套件，以支援靈活的協同混合辦公。"
   },
   {
     "id": 8980,
@@ -7950,19 +7950,19 @@
     "id": 8984,
     "en": "deletes",
     "kk": "[dɪˈliːts]",
-    "zh": "v. 刪除（文字）；（從計算機存儲器中）刪除（數據）；（從購物目錄中）刪除（產品）（delete 的第三人稱單數）",
+    "zh": "v. 刪除（字句、電腦檔案或資料）（delete 之第三人稱單數）",
     "unit": 9,
-    "example": "This command deletes files from the directory.",
-    "exampleZh": "這一指令把文檔從目錄中刪除。"
+    "example": "The antivirus program automatically deletes suspicious infected files to protect your computer.",
+    "exampleZh": "防毒軟體會自動刪除可疑的受感染檔案，以保護您的電腦安全。"
   },
   {
     "id": 8985,
     "en": "contingency",
     "kk": "[kənˈtɪndʒənsi]",
-    "zh": "n. 可能發生的事，不測事件；應急措施，應急儲備；應急開支；可能性，意外；adj. （計劃或措施）未雨綢繆的，應急的",
+    "zh": "n. 應急措施、意外事故、可能發生的事件",
     "unit": 9,
-    "example": "We have contingency plans.",
-    "exampleZh": "我們有應變計劃。"
+    "example": "The event organizers developed a comprehensive contingency plan in case of torrential rain.",
+    "exampleZh": "活動主辦方制定了全面的應變計畫，以防活動當天遭遇暴雨。"
   },
   {
     "id": 8986,
@@ -8058,19 +8058,19 @@
     "id": 8996,
     "en": "evolutionary",
     "kk": "[ˌevəˈluːʃəneri]",
-    "zh": "adj. 進化論的，進化的；演變的，逐步發展的",
+    "zh": "v. 輕敲、輕拍；裝竊聽器；開闢（tap 之過去式與過去分詞）",
     "unit": 9,
-    "example": "An evolutionary inference can then be drawn.",
-    "exampleZh": "這樣就可以得到一個關於進化的推論。"
+    "example": "Deep in thought during the exam, she tapped her pencil rhythmically against the wooden desk.",
+    "exampleZh": "在考試中陷入深思時，她拿著鉛筆有節奏地在木質書桌上輕輕敲打。"
   },
   {
     "id": 8997,
     "en": "manchurian",
     "kk": "",
-    "zh": "adj. 滿洲的；中國東北的；滿洲人的；n. 中國東北人；滿洲人",
+    "zh": "v. 發出粗厲叫聲、大聲抱怨（squawk 之現在分詞）",
     "unit": 9,
-    "example": "We are visiting the Manchurian Tiger garden.",
-    "exampleZh": "我們現在參觀的是東北虎林園。"
+    "example": "Hungry seagulls were squawking loudly around the harbor as fishermen unloaded their daily catch.",
+    "exampleZh": "當漁民卸下當日捕獲的漁獲時，飢餓的海鷗在港口周圍發出陣陣粗厲的叫聲。"
   },
   {
     "id": 8998,
@@ -8139,19 +8139,19 @@
     "id": 9005,
     "en": "supplied",
     "kk": "[səˈplaɪd]",
-    "zh": "adj. 由……提供的；備有……的；（be well supplied with）有大量……的，……充足的；v. 提供，供應（supply 的過去式和過去分詞）",
+    "zh": "adj. 轟鳴的、喧鬧的、繁榮的；v. 咆哮、轟鳴（roar 之現在分詞）",
     "unit": 9,
-    "example": "Foreign governments supplied the rebels with arms.",
-    "exampleZh": "一些外國政府向反叛者提供武器。"
+    "example": "We sat by the roaring fireplace on a snowy winter night, sipping mugs of steaming hot cocoa.",
+    "exampleZh": "在白雪皚皚的冬夜裡，我們坐在熊熊燃燒的壁爐旁，喝著熱氣騰騰的香濃熱可可。"
   },
   {
     "id": 9006,
     "en": "omniscient",
     "kk": "[ɑːmˈnɪʃənt]",
-    "zh": "adj. <正式>全知的，無所不知的；n. 上帝；無所不知者",
+    "zh": "v. 呻吟、發出吱嘎聲（groan 之現在分詞）",
     "unit": 9,
-    "example": "The novel has an omniscient narrator.",
-    "exampleZh": "這部小說有一個全知全能的敘述者。"
+    "example": "The ancient pine branches were groaning under the immense weight of the wet, heavy snow.",
+    "exampleZh": "古老松樹的枝條在濕重積雪的重壓下，發出了陣陣吱嘎的呻吟聲。"
   },
   {
     "id": 9007,
@@ -8229,19 +8229,19 @@
     "id": 9015,
     "en": "overestimate",
     "kk": "[ˌoʊvərˈestɪmeɪt]",
-    "zh": "v. 過高估計（能力、影響或價值）；過高估計（規格、數量、數字等）；n. 過高的估計",
+    "zh": "v. 發出尖銳刺耳聲（screech 之現在分詞）",
     "unit": 9,
-    "example": "If they overestimate, they lose revenue.",
-    "exampleZh": "如果他們過高地估算，就會損失收入。"
+    "example": "We heard the screeching sound of car brakes right before the loud collision happened down the street.",
+    "exampleZh": "在街道下方發生劇烈碰撞之前，我們聽見了汽車煞車發出的尖銳刺耳聲。"
   },
   {
     "id": 9016,
     "en": "japanese",
     "kk": "[ˌdʒæpəˈniːz]",
-    "zh": "adj. 日本（人）的；日語的；n. 日本人；日語",
+    "zh": "v. （青蛙或烏鴉）呱呱啼叫、發出沙啞叫聲（croak 之現在分詞）",
     "unit": 9,
-    "example": "Japanese banks remain bearish.",
-    "exampleZh": "日本銀行繼續看跌。"
+    "example": "Hundreds of frogs were croaking harmoniously along the edges of the quiet country pond.",
+    "exampleZh": "數百隻青蛙在寧靜的鄉村池塘邊和諧地呱呱啼叫著。"
   },
   {
     "id": 9017,
@@ -8319,19 +8319,19 @@
     "id": 9025,
     "en": "cooties",
     "kk": "['ku:tiz]",
-    "zh": "n. （非正式，美國英語）蝨子，尤指體蝨（cootie/cooty 的複數）；（兒童/玩笑用語，常作複數）假想的病菌，髒東西（常說 have cooties）",
+    "zh": "v. 哀鳴、抱怨、發出尖銳嗚嗚聲（whine 之現在分詞）",
     "unit": 9,
-    "example": "It was probably infested with cooties.",
-    "exampleZh": "它可能是染上蝨子了。"
+    "example": "The lonely golden retriever was whining softly outside the door, hoping someone would let him in.",
+    "exampleZh": "孤單的黃金獵犬在門外輕聲委屈地哀鳴著，希望能有人開門讓牠進去。"
   },
   {
     "id": 9026,
     "en": "shedloads",
     "kk": "",
-    "zh": "n.大量，很多（shedload 的複數）",
+    "zh": "v. 發出嗡嗡聲、哼唱曲子（hum 之現在分詞）",
     "unit": 9,
-    "example": "This should save you shedloads.",
-    "exampleZh": "這應該可以幫你省下許多錢。"
+    "example": "Busy honeybees were humming energetically among the blooming lavender blossoms in the garden.",
+    "exampleZh": "忙碌的蜜蜂在花園裡盛開的薰衣草花叢中生氣勃勃地嗡嗡穿梭。"
   },
   {
     "id": 9027,
@@ -8409,19 +8409,19 @@
     "id": 9035,
     "en": "australian",
     "kk": "[ɔːˈstreɪliən]",
-    "zh": "adj. 澳大利亞的，澳大利亞人的，澳大利亞文化的；n. 澳大利亞人",
+    "zh": "v. 發出沉悶撞擊聲、咚咚跳動（thud 之現在分詞）",
     "unit": 9,
-    "example": "She spoke with a strong Australian accent.",
-    "exampleZh": "她說話帶有濃重的澳大利亞口音。"
+    "example": "You could hear the rhythmic thudding of running shoes on the treadmill across the quiet gym.",
+    "exampleZh": "在安靜的健身房另一端，你可以清楚聽見跑鞋在跑步機上有節奏的沉重踏步聲。"
   },
   {
     "id": 9036,
     "en": "decree",
     "kk": "[dɪˈkriː]",
-    "zh": "n. 法令，政令；裁定，判決；v. 裁定，判決，頒佈",
+    "zh": "v. 發出金屬鏗鏘聲、噹啷作響（clank 之現在分詞）",
     "unit": 9,
-    "example": "An official decree invalidated the vote in the capital.",
-    "exampleZh": "一項官方法令使首都的投票失去了效力。"
+    "example": "The kitchen echoed with the lively sounds of clanking pots, sizzling pans, and chopping vegetables.",
+    "exampleZh": "廚房裡迴盪著鍋碗瓢盆噹啷作響、煎鍋滋滋作響與切菜的熱鬧聲響。"
   },
   {
     "id": 9037,
@@ -8499,19 +8499,19 @@
     "id": 9045,
     "en": "fiji",
     "kk": "[ˈfiːdʒiː]",
-    "zh": "n. 斐濟（太平洋西南部的島國，在新西蘭之北，首都蘇瓦；正式名稱為斐濟共和國）",
+    "zh": "v. （動物）噴鼻息；嗤之以鼻（snort 之現在分詞）",
     "unit": 9,
-    "example": "We had a two-day stopover in Fiji on the way to Australia.",
-    "exampleZh": "我們去澳大利亞時中途在斐濟停留了兩天。"
+    "example": "The spirited horse was snorting frosty air and pawing the ground impatiently in the morning mist.",
+    "exampleZh": "那匹精神奕奕的駿馬在晨霧中噴著白霧鼻息，急躁地用蹄子刨著地面。"
   },
   {
     "id": 9046,
     "en": "redeemed",
     "kk": "[rɪˈdiːmd]",
-    "zh": "v. 救贖；贖回；彌補，挽回；償還；兌換（redeem 的過去式和過去分詞）；adj. （基督教）被救贖的；（金融、商業）已贖回的，已兌現的，已清償的；n. 被救贖者（the redeemed，複數）",
+    "zh": "v. 嗅、聞、抽鼻子（sniff 之現在分詞）",
     "unit": 9,
-    "example": "If we've redeemed this dangerous supplement for man, what about the fowl of the air and the beasts of the field?",
-    "exampleZh": "如果我們為人類贖回了這種危險的補充物，那麼空中的飛鳥和田野裡的野獸呢?"
+    "example": "The trained rescue dog was sniffing intently around the collapsed rubble to find trapped survivors.",
+    "exampleZh": "受過訓練的搜救犬在倒塌的瓦礫堆周圍專注地嗅聞，以尋找受困的生還者。"
   },
   {
     "id": 9047,
@@ -8591,20 +8591,20 @@
     "en": "called",
     "kk": "[kɔld]",
     "uk": "/kɔːld/",
-    "zh": "adj. 被稱為…的，名叫…的；v. 稱呼，命名；呼叫，打電話；判定；召開（call 的過去式和過去分詞）",
+    "zh": "v. 嘎吱作響地碾壓、咀嚼（crunch 之現在分詞）",
     "unit": 9,
-    "example": "A friendly young doctor called David came to examine the patient.",
-    "exampleZh": "一位名叫戴維的和藹年輕醫生前來為病人進行檢查。"
+    "example": "We knew guests had arrived when we heard tires crunching smoothly over the gravel driveway.",
+    "exampleZh": "當我們聽見輪胎在碎石車道上發出平緩的嘎吱聲時，便知道客人已經抵達了。"
   },
   {
     "id": 9056,
     "en": "words",
     "kk": "[wɝdz]",
     "uk": "/wɜːdz/",
-    "zh": "n. 言詞，話語；字詞（word 的複數）；口角，爭吵（have words with）；台詞，歌詞；諾言；v. 用言辭表達（word 的三單）",
+    "zh": "v. 點擊（滑鼠）；發出喀噠聲（click 之現在分詞）",
     "unit": 9,
-    "example": "Her kind words gave me great comfort and encouragement.",
-    "exampleZh": "她親切的話語給了我極大的安慰與鼓勵。"
+    "example": "Dozens of press cameras were clicking continuously as the award-winning director stepped onto the red carpet.",
+    "exampleZh": "當得獎導演踏上紅毯時，數十台新聞記者的相機快門喀噠喀噠響個不停。"
   },
   {
     "id": 9057,
@@ -8621,10 +8621,10 @@
     "en": "consumers",
     "kk": "[kənˋsjumɚz]",
     "uk": "/kənˈsjuːməz/",
-    "zh": "n. 消費者，顧客（consumer 的複數）；用戶，消耗者",
+    "zh": "v. 閒聊、暢談（chat 之現在分詞）",
     "unit": 9,
-    "example": "Many consumers prefer buying eco-friendly products nowadays.",
-    "exampleZh": "現今許多消費者更傾向於購買環保產品。"
+    "example": "Neighbors were chatting happily at the outdoor café patio while enjoying the pleasant spring weather.",
+    "exampleZh": "鄰居們在露天咖啡座一邊享受舒適的春天天氣，一邊愉快地閒聊暢談。"
   },
   {
     "id": 9059,

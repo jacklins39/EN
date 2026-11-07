@@ -795,10 +795,10 @@
     "id": 7089,
     "en": "downcast",
     "kk": "[ˈdaʊnkæst]",
-    "zh": "adj. 沮喪的，氣餒的；低垂的，向下看的；n. 俯視的目光；倒臺；（採礦）進風井；（計算機編程）向下轉換",
+    "zh": "adj. 目光低垂的、沮喪的、氣餒的；n. 俯視的目光",
     "unit": 7,
-    "example": "She was silent, her eyes downcast.",
-    "exampleZh": "她不做聲，目光低垂。"
+    "example": "Feeling disappointed after failing the interview, he walked out of the office with a downcast expression.",
+    "exampleZh": "面試未通過感到失望的他，帶著沮喪低垂的神情走出了辦公室。"
   },
   {
     "id": 7090,
@@ -867,10 +867,10 @@
     "id": 7097,
     "en": "mindless",
     "kk": "[ˈmaɪndləs]",
-    "zh": "adj. 愚蠢的，沒頭腦的；盲目的，不自覺的；（指活動、任務）機械簡單的，不需動腦的；不合理的，無謂的；莽撞的，不顧後果的；不顧的，不注意的（後接 of）；沒有心智的，無思維能力的",
+    "zh": "adj. 盲目的、不動腦筋的、機械式的、無意識的",
     "unit": 7,
-    "example": "In this age of Internet chat, videogames and reality television, there is no shortage of mindless activities to keep a child occupied.",
-    "exampleZh": "在這個網絡聊天、電子遊戲和真人秀電視盛行的時代，不乏能讓孩子忙個不停的無需動腦的活動。"
+    "example": "Spending hours scrolling on social media is often a mindless habit that wastes valuable time.",
+    "exampleZh": "花好幾個小時滑社群媒體往往是一種不動腦筋的習慣，浪費寶貴的時間。"
   },
   {
     "id": 7098,
@@ -1389,10 +1389,10 @@
     "id": 7155,
     "en": "squawk",
     "kk": "[skwɔːk]",
-    "zh": "v. （鳥等）發出響而粗的叫聲；尖聲高叫；大聲抱怨，抗議（非正式，指人）；（航空）用應答機發送（指定編碼）；n. （鳥等發出的）粗糲或尖的叫聲；尖鳴；大聲抱怨，訴苦，抗議（非正式）；（航空）應答機編碼，應答機信號",
+    "zh": "vi. 大聲抱怨、抗議；（鳥類）發出刺耳叫聲；n. 粗厲叫聲、怨言",
     "unit": 7,
-    "example": "This file contains information that the Squawk VM will use to run the application.",
-    "exampleZh": "該文件包含 Squawk VM 用於運行應用程序的信息。"
+    "example": "Several disgruntled passengers began to squawk loudly when the airline announced a three-hour delay.",
+    "exampleZh": "當航空公司宣布航班延誤三小時後，幾位不滿的乘客開始大聲抱怨抗議。"
   },
   {
     "id": 7156,
@@ -1686,10 +1686,10 @@
     "id": 7188,
     "en": "pinpoint",
     "kk": "[ˈpɪnpɔɪnt]",
-    "zh": "v. 精準確定（位置或時間）；準確解釋，查明；adj. 準確的；極小的；n. 極小的範圍，光點；針尖",
+    "zh": "vt. 精確查明、準確指出、精準定位；adj. 精確的、極微小的；n. 針尖、微小光點",
     "unit": 7,
-    "example": "Data recorders also pinpoint mechanical faults rapidly, reducing repair times.",
-    "exampleZh": "數據記錄儀器也能很快查明機械故障，減少維修時間。"
+    "example": "The mechanic ran a diagnostic scan to pinpoint the exact location of the engine problem.",
+    "exampleZh": "技師進行了診斷掃描，以精確查明引擎故障的具體位置。"
   },
   {
     "id": 7189,
@@ -1731,10 +1731,10 @@
     "id": 7193,
     "en": "proliferate",
     "kk": "[prəˈlɪfəreɪt]",
-    "zh": "v. <正式>（在數或量上）激增，猛增；使（細胞、組織、結構等）增生，速生",
+    "zh": "vi. 激增、迅猛擴散、迅速繁殖；vt. 使激增",
     "unit": 7,
-    "example": "In the corporate environment, it's easy for worksheet files to proliferate rapidly.",
-    "exampleZh": "在公司環境中，工作表文件很容易迅速擴散。"
+    "example": "Smart mobile applications have continued to proliferate across global digital marketplaces.",
+    "exampleZh": "智慧行動應用程式在全球數位市場上持續激增與普及。"
   },
   {
     "id": 7194,
@@ -1767,10 +1767,10 @@
     "id": 7197,
     "en": "invoke",
     "kk": "[ɪnˈvoʊk]",
-    "zh": "v. 行使，實施（法權）；援用，援引（法律）；提及，援引（某人、某理論、實例等作為支持）；提及（某著名人物）；喚起，引起（感情或想象）；（尤指向神靈）祈禱，祈求；用法術召喚（魔鬼）；（計算機）調用，激活",
+    "zh": "vt. 援引、援用（法律、條款）；祈求、喚起",
     "unit": 7,
-    "example": "Should anyone be allowed to invoke any service?",
-    "exampleZh": "是否應該允許任何人調用任何服務？"
+    "example": "The shipping company had to invoke the emergency clause in the contract due to severe storms.",
+    "exampleZh": "由於遭遇強烈風暴，該貨運公司不得不援引合約中的緊急免責條款。"
   },
   {
     "id": 7198,
@@ -2190,10 +2190,10 @@
     "id": 7244,
     "en": "marshalling",
     "kk": "['mɑ:ʃəliŋ]",
-    "zh": "v. 結集，列隊，調集（人員、力量、資源等）；整理；引領；引導（飛機在機場地面移動）；控制人群，維持秩序；（車輛）編組；合併（盾徽）（marshal 的現在分詞）；n. （計算機）封送處理，列集（將對象的內存表示轉換為適合存儲或傳輸的數據格式）",
+    "zh": "vt. 調集、集結、整頓（人員、資源）；引導（飛機）",
     "unit": 7,
-    "example": "They have begun marshalling forces to send relief to the hurricane victims.",
-    "exampleZh": "他們已經開始結集隊伍將救濟物資送給遭受颶風侵害的災民。"
+    "example": "The project leader spent the afternoon marshalling resources for the upcoming launch.",
+    "exampleZh": "專案負責人整個下午都在為即將到來的產品發表會調集相關資源。"
   },
   {
     "id": 7245,
@@ -2244,10 +2244,10 @@
     "id": 7250,
     "en": "pointer",
     "kk": "[ˈpɔɪntər]",
-    "zh": "n. （儀表等的）指針，指示器；（計算機屏幕上的）光標，鼠標指針；教鞭，指示棒；暗示，提示，建議；（計算機）指針；指示犬，波音達獵犬",
+    "zh": "n. 建議、提示、實用指引；（儀表等的）指針、指針指示物",
     "unit": 7,
-    "example": "A series of levers joined to a pointer shows pressure on a dial.",
-    "exampleZh": "一系列控制桿連著一枚指針，在刻度盤上顯示出壓力數。"
+    "example": "The senior consultant gave us several useful pointers on how to prepare for the job interview.",
+    "exampleZh": "資深顧問給了我們幾項關於如何準備求職面試的實用建議與提示。"
   },
   {
     "id": 7251,
@@ -2397,10 +2397,10 @@
     "id": 7267,
     "en": "void",
     "kk": "[vɔɪd]",
-    "zh": "n. 空間，空白，空虛；空虛感，失落感；（牆、建築物上的）孔隙；（橋牌和惠斯特用語）缺門；adj. 不合法的，無效的；（話語，行動）無效的，無用的；毫無……的，缺乏……的；空的，空空如也的；<正式>（職位）空缺；（橋牌和惠斯特用語）缺門的；v. 使無效，使作廢；排洩，排放（大小便）；排放（水、氣體等）；倒空（容器），疏空（空間）",
+    "zh": "adj. 無效的、不合法的、空的；n. 空虛、空白；vt. 使無效",
     "unit": 7,
-    "example": "The contract was declared void.",
-    "exampleZh": "這份合同被宣佈無效。"
+    "example": "The employment contract was declared null and void after legal irregularities were uncovered.",
+    "exampleZh": "在發現法律違規之處後，這份聘僱合約被正式宣告無效。"
   },
   {
     "id": 7268,
@@ -2622,10 +2622,10 @@
     "id": 7292,
     "en": "disciplined",
     "kk": "[ˈdɪsəplɪnd]",
-    "zh": "adj. 訓練有素的，遵守紀律的；v. 懲罰，處分；訓練，管教（discipline 的過去式和過去分詞形式）",
+    "zh": "adj. 紀律嚴明的、有條不紊的、自律的",
     "unit": 7,
-    "example": "She's extraordinarily disciplined.",
-    "exampleZh": "她特別遵守紀律。"
+    "example": "Athletes need to maintain a disciplined daily training schedule to compete at the international level.",
+    "exampleZh": "運動員需要維持高度自律的每日訓練時程，才能在國際賽事中競爭。"
   },
   {
     "id": 7293,
@@ -2721,10 +2721,10 @@
     "id": 7303,
     "en": "incompetently",
     "kk": "[ɪnˈkɑːmpɪtəntli]",
-    "zh": "adv. 無能力地，不勝任地",
+    "zh": "adv. 不稱職地、無能地、笨拙地",
     "unit": 7,
-    "example": "Sometimes devices fail because a good design is constructed with low-quality materials incompetently applied.",
-    "exampleZh": "有時設備會發生故障，因為優秀的設計是用應用不當的低質量材料製作的。"
+    "example": "The project collapsed because financial accounts were managed incompetently by the former director.",
+    "exampleZh": "這項專案之所以失敗，是因為前任主管不稱職地管理財務帳目所致。"
   },
   {
     "id": 7304,
@@ -2838,10 +2838,10 @@
     "id": 7316,
     "en": "acquirement",
     "kk": "[əˈkwaɪrmənt]",
-    "zh": "n. 取得，獲得，學得；才能，成就（常作複數，指學識、造詣等）",
+    "zh": "n. 取得、獲得、學得；學識、造詣、才藝",
     "unit": 7,
-    "example": "The free right of information acquirement is a fundamental right that all countries approbate in the law.",
-    "exampleZh": "信息獲取的自由權利，是各國法律普遍認可的人的一項基本權利。"
+    "example": "The steady acquirement of language skills requires consistent daily practice and patience.",
+    "exampleZh": "持續穩健地獲取語言技能需要每天堅持不懈的練習與耐心。"
   },
   {
     "id": 7317,
@@ -3027,10 +3027,10 @@
     "id": 7337,
     "en": "clang",
     "kk": "[klæŋ]",
-    "zh": "n. 叮噹聲；鏗鏘聲；（Clang）LLVM 項目的 C 語言家族編譯器前端；（Clang）人名；（法）克朗；vi. 發鏗鏘聲；vt. 使發鏗鏘聲",
+    "zh": "n. 鏗鏘聲、叮噹聲；vi. 發出叮噹聲；vt. 使發出鏗鏘聲",
     "unit": 7,
-    "example": "Is Apple's work on LLVM and Clang part of a longer-term strategy for evolving its platform?",
-    "exampleZh": "蘋果在 LLVM 和 Clang 方面的工作是否是其平臺發展的長期戰略的一部分？"
+    "example": "The heavy metal gate slammed shut with a loud clang that echoed through the courtyard.",
+    "exampleZh": "厚重的鐵門轟然關上，發出一聲響亮的鏗鏘聲，在庭院中迴盪。"
   },
   {
     "id": 7338,
@@ -3477,10 +3477,10 @@
     "id": 7387,
     "en": "interchange",
     "kk": "[ˈɪntərtʃeɪndʒ]",
-    "zh": "n. （思想、信息等的）交換，互換，交流；交錯，交替，更替；（進出高速公路的）互通式立交，立體交叉道，交流道；（鐵路、汽車客運等）轉車站，樞紐站，換乘站；v. 交換，互換（思想、信息等）；將……互換，替換；（使）互換位置",
+    "zh": "n. 交流、互換；（高速公路）交流道；v. 交換、互換",
     "unit": 7,
-    "example": "They were telling each other, with a confidential interchange of ideas, where they had been during the day.",
-    "exampleZh": "他們以彼此交心的方式，互相告知白天各自去了哪裡。"
+    "example": "The annual youth forum promoted an inspiring interchange of cultural perspectives.",
+    "exampleZh": "這場年度青年論壇促進了跨文化觀點的熱烈啟發與交流。"
   },
   {
     "id": 7388,
@@ -3675,10 +3675,10 @@
     "id": 7409,
     "en": "thoroughly",
     "kk": "[ˈθɜːrəli]",
-    "zh": "adv. 完全地，極度地；仔細地，認真地，徹底地",
+    "zh": "adv. 徹底地、完全地、仔細地",
     "unit": 7,
-    "example": "I'm thoroughly confused.",
-    "exampleZh": "我完全給搞糊塗了。"
+    "example": "Please review the financial contract thoroughly before affixing your legal signature.",
+    "exampleZh": "在簽署具法律效力的簽名前，請務必徹底且仔細地審閱該財務合約。"
   },
   {
     "id": 7410,
@@ -3711,10 +3711,10 @@
     "id": 7413,
     "en": "receiving",
     "kk": "[rɪˈsiːvɪŋ]",
-    "zh": "v. 得到，收到；遭受，經受（傷害、批評、待遇等）；接待，迎接（客人、來訪者）；接收（信號、信息等）；對……作出反應（receive 的現在分詞）",
+    "zh": "v. 收到、接到、接待（receive之現在分詞）；n. 接收、接待",
     "unit": 7,
-    "example": "He is receiving treatment for shock.",
-    "exampleZh": "他正在接受休克治療。"
+    "example": "Upon receiving your official confirmation, our warehouse team will ship the order immediately.",
+    "exampleZh": "在收到您的正式確認函後，我們的倉儲團隊將立即發貨出貨。"
   },
   {
     "id": 7414,
@@ -4134,10 +4134,10 @@
     "id": 7460,
     "en": "commemoration",
     "kk": "[kəˌmeməˈreɪʃn]",
-    "zh": "n. 紀念，紀念活動",
+    "zh": "n. 紀念、紀念典禮、紀念活動",
     "unit": 8,
-    "example": "On the Internet, you will be impressed by the video show of a girl's special commemoration.",
-    "exampleZh": "在網上，一個女孩的特別紀念活動的視頻節目會給你留下深刻印象。"
+    "example": "A bronze statue was unveiled in commemoration of the brave firefighters who protected the city.",
+    "exampleZh": "為紀念保護這座城市的英勇消防員，當局揭幕了一座青銅紀念雕像。"
   },
   {
     "id": 7461,
@@ -4341,19 +4341,19 @@
     "id": 7483,
     "en": "imparting",
     "kk": "[ɪmˈpɑːrtɪŋ]",
-    "zh": "v. 告知，傳授；給予，賦予（均為 impart 的現在分詞）；n. 傳達信息",
+    "zh": "v. 傳授、給予、告知（impart之現在分詞）",
     "unit": 8,
-    "example": "My third brother was very keen on imparting to us a variety of knowledge.",
-    "exampleZh": "我的三哥非常熱衷於傳授我們各種各樣的知識。"
+    "example": "Experienced professors take great pride in imparting practical skills and ethics to their students.",
+    "exampleZh": "資深的教授們以向學生傳授實用技能與職業倫理為傲。"
   },
   {
     "id": 7484,
     "en": "conveying",
     "kk": "[kənˈveɪɪŋ]",
-    "zh": "v. 傳達（信息），表達（思想）；運輸，輸送；（法律）轉讓（財產、權利等）（convey 的現在分詞）；n. 輸送，傳輸；（法律）（財產等的）轉讓（convey 的動名詞）",
+    "zh": "v. 傳達、表達、運送（convey之現在分詞）",
     "unit": 8,
-    "example": "The meaning of children's books lies in conveying the profound connotation behind the story.",
-    "exampleZh": "兒童讀物的意義在於傳達故事背後的深刻內涵。"
+    "example": "The graphic designer excelled at conveying complex marketing data through intuitive visuals.",
+    "exampleZh": "該平面設計師擅長透過直覺的視覺圖像來清楚傳達複雜的行銷資訊。"
   },
   {
     "id": 7485,
@@ -4422,10 +4422,10 @@
     "id": 7492,
     "en": "disparity",
     "kk": "[dɪˈspærəti]",
-    "zh": "n. 明顯差異",
+    "zh": "n. 差距、明顯差異、不均等",
     "unit": 8,
-    "example": "Many organizations struggle with the disparity and distribution of information.",
-    "exampleZh": "許多組織都在與信息的不平等和分散作鬥爭。"
+    "example": "Government policies aim to reduce the widening economic disparity between urban and rural districts.",
+    "exampleZh": "政府各項政策旨在縮小城鄉區域之間日益擴大的經濟差距。"
   },
   {
     "id": 7493,
@@ -4962,10 +4962,10 @@
     "id": 7552,
     "en": "memorandum",
     "kk": "[ˌmeməˈrændəm]",
-    "zh": "n. 公務便條，備忘錄；協議備忘錄；建議書，報告；合同書，（法律文件細節的）摘要",
+    "zh": "n. 備忘錄、公務便條、協議書",
     "unit": 8,
-    "example": "The partnership was recently made official through a memorandum of understanding.",
-    "exampleZh": "這一夥伴關係最近通過一份諒解備忘錄正式確立。"
+    "example": "Both corporate entities signed a formal memorandum of understanding to pursue joint research.",
+    "exampleZh": "兩家企業實體簽署了正式的合作備忘錄，以共同開展聯合研究。"
   },
   {
     "id": 7553,
@@ -5763,10 +5763,10 @@
     "id": 7641,
     "en": "heartbeat",
     "kk": "[ˈhɑːrtbiːt]",
-    "zh": "n. 心跳，心搏；<喻>命脈，核心，活力所在；（計算機）心跳信號，心跳機制；瞬間，剎那（主要用於 in a heartbeat）",
+    "zh": "n. 心跳、心搏；瞬間、核心",
     "unit": 8,
-    "example": "Her heartbeat steadied.",
-    "exampleZh": "她的心跳平穩下來。"
+    "example": "The smartwatch accurately monitors your heartbeat during high-intensity cardiovascular exercise.",
+    "exampleZh": "這款智慧手錶能在高強度心肺運動期間精準監測您的心跳。"
   },
   {
     "id": 7642,
@@ -6384,10 +6384,10 @@
     "id": 7710,
     "en": "obstruction",
     "kk": "[əbˈstrʌkʃ(ə)n]",
-    "zh": "n. 阻撓，妨礙；堵塞；障礙物；阻塞，梗阻；（體育項目中的）阻擋犯規",
+    "zh": "n. 阻礙、障礙物、妨礙；堵塞",
     "unit": 8,
-    "example": "The boy was suffering from a bowel obstruction.",
-    "exampleZh": "那男孩當時在受腸梗阻之苦。"
+    "example": "The fallen tree created a hazardous obstruction on the highway during the storm.",
+    "exampleZh": "暴風雨中倒塌的樹木在高速公路上形成了危險的障礙物。"
   },
   {
     "id": 7711,
@@ -6483,19 +6483,19 @@
     "id": 7721,
     "en": "recede",
     "kk": "[rɪˈsiːd]",
-    "zh": "v. 逐漸遠離，漸漸退去；（質量）下降，（問題或疾病等）逐漸減弱；（前額的頭髮）脫落；（面部特徵）向後傾斜；（常指牙齦因為感染）萎縮",
+    "zh": "vi. 逐漸遠離、後退、退去；減弱、萎縮",
     "unit": 8,
-    "example": "The hills recede into the distance and now we are in vast grasslands dotted with termite mounds, skyscrapers of the insect world.",
-    "exampleZh": "山丘已經遠去，我們現在行進在寬廣的草原上。草地上有白蟻堆，那是昆蟲世界的摩天大樓。"
+    "example": "Floodwaters began to recede slowly as sunny weather returned to the coastal town.",
+    "exampleZh": "隨著陽光晴朗的天氣重返這座沿海城鎮，洪水開始逐漸消退。"
   },
   {
     "id": 7722,
     "en": "toleration",
     "kk": "[ˌtɑːləˈreɪʃn]",
-    "zh": "n. 寬容，容忍，忍受；默許（默認）；官方承認個人持異議的權利（尤指宗教信仰方面）；耐受性",
+    "zh": "n. 寬容、容忍、容許、耐受性",
     "unit": 8,
-    "example": "Should it trump all other goods or does toleration reach a point when it ceases to be toleration and becomes a kind of soft nihilism?",
-    "exampleZh": "它是否應當凌駕於所有其他善之上，還是說容忍會抵達一個臨界點，不再是容忍，轉而變成一種軟性虛無主義？"
+    "example": "Creating an inclusive corporate culture requires mutual toleration and appreciation of diverse backgrounds.",
+    "exampleZh": "營造包容的企業文化需要對多元背景抱持相互寬容與賞識的態度。"
   },
   {
     "id": 7723,
@@ -6924,10 +6924,10 @@
     "id": 7770,
     "en": "developing",
     "kk": "[dɪˈveləpɪŋ]",
-    "zh": "adj. （國家）發展中的；正在生長的，正在發展的；v. （使）成長，發展；研製，研發；形成（觀點）（develop 的現在分詞）",
+    "zh": "adj. 發展中的、正在成長的；v. 發展、研製（develop之現在分詞）",
     "unit": 8,
-    "example": "She is presently developing a number of projects.",
-    "exampleZh": "她目前在開發好幾個項目。"
+    "example": "Our tech firm is presently developing several innovative mobile applications for international clients.",
+    "exampleZh": "我們的科技公司目前正在為國際客戶開發多項創新的行動應用程式專案。"
   },
   {
     "id": 7771,
@@ -6987,10 +6987,10 @@
     "id": 7777,
     "en": "sustenance",
     "kk": "[ˈsʌstənəns]",
-    "zh": "n. （正式，不可數）食物，營養；生計；維持，支持",
+    "zh": "n. 食物、營養、生計、維持",
     "unit": 8,
-    "example": "All the components of Web 2.0 are built for the growth and sustenance of Social Networks.",
-    "exampleZh": "Web 2.0 的所有組件都是針對社交網絡的增長和維持而構建的。"
+    "example": "Hikers carried nutrient-rich dried fruit and nuts for essential sustenance during the trek.",
+    "exampleZh": "健行者攜帶了富含營養的果乾與堅果，作為長途跋涉期間不可或缺的能量補充。"
   },
   {
     "id": 7778,
@@ -7077,10 +7077,10 @@
     "id": 7787,
     "en": "concatenation",
     "kk": "[kənˌkætəˈneɪʃn]",
-    "zh": "n. <正式>一系列相互關聯的事物，一連串；<正式>連結，串聯；（計算機/通信）字符串、數據的連接，串接，拼接",
+    "zh": "n. 一連串關聯事物、連鎖事件、串聯",
     "unit": 8,
-    "example": "Avoid using concatenation strings in code.",
-    "exampleZh": "避免在代碼中使用連接字符串。"
+    "example": "An unfortunate concatenation of mechanical failures led to the sudden electrical blackout.",
+    "exampleZh": "一連串不幸的機件故障導致了突如其來的全面大停電。"
   },
   {
     "id": 7788,
@@ -7095,10 +7095,10 @@
     "id": 7789,
     "en": "simpleness",
     "kk": "['simplnis]",
-    "zh": "n. 簡單；單純",
+    "zh": "n. 純樸、簡單、質樸",
     "unit": 8,
-    "example": "STL is the criterion in the rapid prototyping field because of its simpleness and currency.",
-    "exampleZh": "STL文件因其簡單和通用，可作為快速成型領域的標準。"
+    "example": "She appreciated the peaceful simpleness of rural life away from bustling city traffic.",
+    "exampleZh": "她欣賞遠離繁囂都市交通的鄉村生活所帶來的寧靜與純樸。"
   },
   {
     "id": 7790,
@@ -7419,10 +7419,10 @@
     "id": 7825,
     "en": "exactly",
     "kk": "[ɪɡˈzæktli]",
-    "zh": "adv. 精確地，確切地；（用於強調）恰好，完全；（要求得到更多信息）究竟，到底；<非正式>正是如此，一點不錯",
+    "zh": "adv. 精確地、確切地、恰好、正是如此",
     "unit": 8,
-    "example": "Your answer is exactly right.",
-    "exampleZh": "你的回答完全正確。"
+    "example": "The accounting audit confirmed that the financial figures matched our records exactly.",
+    "exampleZh": "會計稽核確認該財務數字與我們的記錄完全精確相符。"
   },
   {
     "id": 7826,
@@ -7662,10 +7662,10 @@
     "id": 7852,
     "en": "horizontally",
     "kk": "[ˌhɔːrɪˈzɑːntəli]",
-    "zh": "adv. 水平地，橫向地，橫著",
+    "zh": "adv. 橫向地、水平地",
     "unit": 8,
-    "example": "The wind was cold and drove the snow at him almost horizontally.",
-    "exampleZh": "風很冷，裹著雪幾乎是橫著向他撲來。"
+    "example": "Please arrange the product images horizontally across the middle of the web page.",
+    "exampleZh": "請將產品圖片橫向平放排列於網頁中央。"
   },
   {
     "id": 7853,
@@ -8139,10 +8139,10 @@
     "id": 7905,
     "en": "processed",
     "kk": "[ˈprɑːsest]",
-    "zh": "adj. 經過特殊加工的，精製的；v. 加工（食品或其他物質）；處理（文件、要求等）；（計算機）處理（數據）（process 的過去式和過去分詞）",
+    "zh": "adj. 經過加工的、精製的；v. 處理、辦理（process之過去式）",
     "unit": 8,
-    "example": "Our sales information is processed by computer.",
-    "exampleZh": "我們的銷售信息是用計算機處理的。"
+    "example": "All monthly sales data is securely processed by our cloud computing platform.",
+    "exampleZh": "所有每月銷售資料均由我們的雲端運算平台進行安全處理。"
   },
   {
     "id": 7906,
@@ -8697,10 +8697,10 @@
     "id": 7967,
     "en": "disorganize",
     "kk": "[dɪsˈɔːrɡəˌnaɪz]",
-    "zh": "vt. 擾亂；瓦解；使……混亂；破壞組織",
+    "zh": "vt. 擾亂、使混亂、破壞秩序",
     "unit": 8,
-    "example": "Calamity use to discontinue the peace process of social life and disorganize the normal movement of social orderliness.",
-    "exampleZh": "災害中止社會生活的和平進程、瓦解社會秩序的正常運轉。"
+    "example": "The severe blizzard threatened to disorganize the entire nationwide rail transit system.",
+    "exampleZh": "這場暴風雪可能會擾亂整個全國鐵路運輸系統的正常運作。"
   },
   {
     "id": 7968,
@@ -8985,10 +8985,10 @@
     "id": 7999,
     "en": "lowercase",
     "kk": "[ˌloʊərˈkeɪs]",
-    "zh": "adj. 小寫的，小寫字體的；n. 小寫字母（總稱）；小寫字體；v. 用小寫字體書寫（或打印）；將（字母或文本）轉換為小寫",
+    "zh": "adj. 小寫的；n. 小寫字母；vt. 將…列印為小寫字母",
     "unit": 8,
-    "example": "It was printed in lowercase.",
-    "exampleZh": "這是用小寫體打印的。"
+    "example": "The system requires you to include at least one lowercase letter when creating your account password.",
+    "exampleZh": "建立帳戶密碼時，系統要求您必須至少包含一個小寫英文字母。"
   },
   {
     "id": 8000,

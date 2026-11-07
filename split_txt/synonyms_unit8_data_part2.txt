@@ -444,10 +444,10 @@
     "id": 8050,
     "en": "ascent",
     "kk": "[əˈsent]",
-    "zh": "n. 垂直上升；上坡路；攀登；（地位、職務的）提升，（水平的）提高；（某些宗教中的）昇天",
+    "zh": "n. 攀登、上升；（職位、地位的）提升、晉升",
     "unit": 8,
-    "example": "Burke pushed the button and the lift began its slow ascent.",
-    "exampleZh": "伯克按下按鈕，電梯開始了其緩慢的上升。"
+    "example": "The mountain climbers completed their final ascent to the summit just before sunrise.",
+    "exampleZh": "登山者趕在日出前完成了通往峰頂的最後一段攀登行程。"
   },
   {
     "id": 8051,

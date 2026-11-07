@@ -44,10 +44,10 @@
     "en": "monitor",
     "kk": "[ˋmɑnətɚ]",
     "uk": "/ˈmɒnɪtə(r)/",
-    "zh": "n. 顯示器、監控器、監視儀、監護儀；vt. 監視、監聽、監控",
+    "zh": "n. 顯示器、螢幕、監視器；vt. 監控、監測、監督",
     "unit": 13,
-    "example": "Your doctor will monitor your blood pressure.",
-    "exampleZh": "你的醫生會監測你的血壓。"
+    "example": "He connected his laptop to an external monitor to improve work productivity.",
+    "exampleZh": "他將筆記型電腦連接到外接螢幕，以提高工作效率。"
   },
   {
     "id": 22006,
@@ -154,10 +154,10 @@
     "en": "nag",
     "kk": "[næɡ]",
     "uk": "/næɡ/",
-    "zh": "n. 愛嘮叨的人、挑剔的人、老馬、疲憊的馬；vt. 不斷地嘮叨、嘮叨催促、不斷要求、煩擾",
+    "zh": "v. 嘮叨、不斷催促、煩擾；n. 愛嘮叨的人",
     "unit": 13,
-    "example": "We all hate to nag.",
-    "exampleZh": "我們都討厭嘮叨。"
+    "example": "My parents constantly nag me about keeping my bedroom clean and tidy.",
+    "exampleZh": "我父母總是對我碎碎唸，要我把臥室保持整潔。"
   },
   {
     "id": 22017,
@@ -306,8 +306,8 @@
     "uk": "/ˈnætʃ(ə)rəl/",
     "zh": "adj. 自然的、天然的、非人為的、合理的；n. 有天賦的人、適合人選、本位音、白鍵",
     "unit": 13,
-    "example": "She is a natural athlete.",
-    "exampleZh": "她是一位天生的運動員。"
+    "example": "This skincare brand uses only pure and natural ingredients without chemical additives.",
+    "exampleZh": "這個護膚品牌僅使用純天然成分，不含化學添加物。"
   },
   {
     "id": 22032,
@@ -524,10 +524,10 @@
     "en": "notice",
     "kk": "[ˋnotəs]",
     "uk": "/ˈnəʊtɪs/",
-    "zh": "n. 通知、注意、察覺、通告；vt. 注意到、意識、注意、留意",
+    "zh": "n. 通知、通告、事先告知；vt. 注意到、察覺",
     "unit": 13,
-    "example": "He pretended not to notice.",
-    "exampleZh": "他假裝沒有註意到。"
+    "example": "Employees are required to give two weeks' written notice before resigning.",
+    "exampleZh": "員工在離職前必須提出兩週的書面通知。"
   },
   {
     "id": 22054,
@@ -556,8 +556,8 @@
     "uk": "/nʌl/",
     "zh": "adj. 無效的、無價值的、無約束力的、零值的；n. 零、無意義暗碼、無訊號、無電磁輻射的方向；v. 使（訊號）與另一訊號結合產生無訊號狀態、抵消",
     "unit": 13,
-    "example": "The contract was declared null and void.",
-    "exampleZh": "合同被宣佈無效。"
+    "example": "The signed agreement was declared null and void after legal discrepancies were found.",
+    "exampleZh": "在發現法律瑕疵後，這份已簽署的合約被宣告完全無效。"
   },
   {
     "id": 22057,
@@ -894,10 +894,10 @@
     "en": "operational",
     "kk": "[͵ɑpɚˋeʃənəl]",
     "uk": "/ˌɒpəˈreɪʃən(ə)l/",
-    "zh": "adj. 操作上的、經營上的、正常運轉的、可使用的",
+    "zh": "adj. 營運上的、操作上的、運作中的、可使用的",
     "unit": 13,
-    "example": "The new airport is now fully operational.",
-    "exampleZh": "新機場現在可全面投入運營。"
+    "example": "The brand new international airport will become fully operational by the end of this year.",
+    "exampleZh": "這座全新的國際機場將在今年底前全面投入營運。"
   },
   {
     "id": 22091,
@@ -946,8 +946,8 @@
     "uk": "/ˈɒpəzɪt/",
     "zh": "adj. 相反的、完全相反的、截然不同的、另一邊的；n. 對立的人、對立面、反義詞；adv. 在對面、在對過；prep. 在……對面、與……相對、與……合演、與……聯袂演出",
     "unit": 13,
-    "example": "Exactly the opposite is true.",
-    "exampleZh": "事實恰恰相反。"
+    "example": "The two business partners held completely opposite opinions regarding the expansion plan.",
+    "exampleZh": "這兩位商業合夥人對擴張計畫抱持著截然相反的意見。"
   },
   {
     "id": 22096,
@@ -1486,8 +1486,8 @@
     "uk": "/ˈpɑːtnə(r)/",
     "zh": "n. 夥伴、搭檔、同伴、合夥人；vt. 成為搭檔、合夥",
     "unit": 13,
-    "example": "Gerry offered to partner me at tennis.",
-    "exampleZh": "格里提出和我搭檔打網球。"
+    "example": "Our tech firm formed a strategic alliance with a reliable overseas partner.",
+    "exampleZh": "我們的科技公司與一家可靠的海外合作夥伴建立了策略聯盟。"
   },
   {
     "id": 22150,
@@ -1564,10 +1564,10 @@
     "en": "patch",
     "kk": "[pætʃ]",
     "uk": "/pætʃ/",
-    "zh": "n. 補丁、補片、眼罩、徽章；vt. 修補、縫補、使出現斑塊、臨時連線",
+    "zh": "n. 修補程式、補丁、小塊土地；vt. 修補、縫補",
     "unit": 13,
-    "example": "We can patch up those holes.",
-    "exampleZh": "我們能補上那些漏洞。"
+    "example": "The software development team released an emergency security patch to fix the system vulnerability.",
+    "exampleZh": "軟體開發團隊發布了緊急安全性修補程式以修復系統漏洞。"
   },
   {
     "id": 22158,
@@ -1976,8 +1976,8 @@
     "uk": "/pɪn/",
     "zh": "n. 胸針、別針、大頭針、飾針；vt. 釘住、別住、按住",
     "unit": 13,
-    "example": "They're trying to pin it on us.",
-    "exampleZh": "他們正試圖把這件事歸罪於我們。"
+    "example": "She used a colorful push pin to attach the event schedule to the office bulletin board.",
+    "exampleZh": "她用一枚彩色圖釘將活動日程表固定在辦公室公佈欄上。"
   },
   {
     "id": 22199,
@@ -2056,18 +2056,18 @@
     "uk": "/plæn/",
     "zh": "n. 計劃、規劃、方案、打算；vt. 計劃、籌劃、打算",
     "unit": 13,
-    "example": "If Plan A fails, go to Plan B.",
-    "exampleZh": "如果 A 計劃失敗，則轉向 B 計劃。"
+    "example": "The marketing manager presented a comprehensive marketing plan to expand market share.",
+    "exampleZh": "行銷經理提出了一份全面的行銷計畫以擴大市場佔有率。"
   },
   {
     "id": 22207,
     "en": "plane",
     "kk": "[plen]",
     "uk": "/pleɪn/",
-    "zh": "n. 飛機、平面、虛構平面、水平；adj. 平的、平坦的、二維平面的、二維空間的；vt. 滑翔、擦著水面疾駛、刨平、刨除",
+    "zh": "n. 飛機、平面、程度；adj. 平的、平坦的；vi. 滑翔",
     "unit": 13,
-    "example": "A plane passed low overhead.",
-    "exampleZh": "一架飛機低空飛過頭頂。"
+    "example": "Our flight was delayed, so the plane took off two hours later than scheduled.",
+    "exampleZh": "我們的航班延誤了，因此飛機比預定時間晚了兩小時起飛。"
   },
   {
     "id": 22208,
@@ -2234,10 +2234,10 @@
     "en": "portfolio",
     "kk": "[pɔrtˋfoli͵o]",
     "uk": "/pɔːtˈfəʊliəʊ/",
-    "zh": "n. 文件夾、個人作品、公文包、畫夾；adj. 短期合同制的、兼職的",
+    "zh": "n. 投資組合、作品集、專案組合；公事包",
     "unit": 13,
-    "example": "Do I have any project and portfolio management processes today?",
-    "exampleZh": "我目前有哪些專案和專案組合的管理流程嗎？"
+    "example": "The financial advisor helped the client build a diversified investment portfolio to minimize risk.",
+    "exampleZh": "理財顧問協助客戶建立了多元化的投資組合以降低風險。"
   },
   {
     "id": 22225,
@@ -2856,8 +2856,8 @@
     "uk": "/ˈpraɪvət/",
     "zh": "adj. 私人的、私密的、私立的；n. 二等兵",
     "unit": 13,
-    "example": "He has a private income.",
-    "exampleZh": "他有私人收入。"
+    "example": "The CEO held a private meeting in her office to discuss the upcoming merger details.",
+    "exampleZh": "執行長在辦公室舉行了私人閉門會議，討論即將進行的合併細節。"
   },
   {
     "id": 22287,
@@ -2904,10 +2904,10 @@
     "en": "procedure",
     "kk": "[prəˋsidʒɚ]",
     "uk": "/prəˈsiːdʒə(r)/",
-    "zh": "n. 程序、手續、步驟、程式",
+    "zh": "n. 程序、流程、手續、步驟",
     "unit": 13,
-    "example": "Christina dimly recalled the procedure.",
-    "exampleZh": "克里斯蒂娜隱約地記起了那個步驟。"
+    "example": "All factory workers must strictly follow standard operating procedures to maintain workplace safety.",
+    "exampleZh": "所有工廠員工必須嚴格遵守標準作業程序以維護職場安全。"
   },
   {
     "id": 22292,
@@ -2924,10 +2924,10 @@
     "en": "process",
     "kk": "[ˋprɑs͵ɛs]",
     "uk": "/ˈprəʊses/",
-    "zh": "n. 過程、步驟、程式、變化過程；vt. 處理、加工、稽核、受理；adj. 三原色的、三色版的、經過特殊加工的、照相板的",
+    "zh": "n. 過程、流程、步驟；vt. 處理、辦理、加工",
     "unit": 13,
-    "example": "The process was needlessly slow.",
-    "exampleZh": "程序過於緩慢了。"
+    "example": "The loan application review process was unnecessarily slow and complicated.",
+    "exampleZh": "貸款申請審核流程過於緩慢且繁瑣。"
   },
   {
     "id": 22294,
@@ -3044,10 +3044,10 @@
     "en": "program",
     "kk": "[ˋpro͵ɡræm]",
     "uk": "/ˈprəʊɡræm/",
-    "zh": "n. 程序、項目、程式、計劃；vt. 編寫程式、設計程式、設定、預設",
+    "zh": "n. 計畫、方案、節目、程式；vt. 為…編寫程式、設定",
     "unit": 13,
-    "example": "The program aired last week.",
-    "exampleZh": "該節目已於上週播出。"
+    "example": "The human resources department designed a comprehensive mentorship program for new employees.",
+    "exampleZh": "人力資源部為新進員工設計了一套全面的導師培訓計畫。"
   },
   {
     "id": 22306,
@@ -3074,10 +3074,10 @@
     "en": "progression",
     "kk": "[prəˋɡrɛʃən]",
     "uk": "/prəˈɡreʃ(ə)n/",
-    "zh": "n. 前進、發展、一系列、進行",
+    "zh": "n. 進展、發展、逐步進行、進程",
     "unit": 13,
-    "example": "We're trying to slow down that progression to feebleness.",
-    "exampleZh": "我們正試圖延緩衰弱的程序。"
+    "example": "Clear career progression opportunities encourage skilled professionals to stay with the company.",
+    "exampleZh": "明確的職涯升遷發展機會能激勵專業人才留任於公司。"
   },
   {
     "id": 22309,
@@ -3094,10 +3094,10 @@
     "en": "project",
     "kk": "[ˋprɑdʒɛkt]",
     "uk": "/ˈprɒdʒekt; prəˈdʒekt/",
-    "zh": "n. 項目、專案、計劃、課題；v. 投射、預計、推算、計劃",
+    "zh": "n. 專案、計畫、方案；vt. 預計、推算、投射",
     "unit": 13,
-    "example": "The whole project was badly managed.",
-    "exampleZh": "整個專案管理得差勁。"
+    "example": "The engineering team worked tirelessly to ensure the software project was delivered on schedule.",
+    "exampleZh": "工程團隊不知疲倦地工作，以確保該軟體專案能如期交付。"
   },
   {
     "id": 22311,
@@ -3356,8 +3356,8 @@
     "uk": "/ˈpɜːtʃəs/",
     "zh": "n. 購買、採購、購買的東西、財產置得；vt. 購買、採購、獲得、得到",
     "unit": 13,
-    "example": "It was decided (that) the school should purchase new software.",
-    "exampleZh": "已經決定學校要購買新軟體。"
+    "example": "Please retain your sales receipt as valid proof of purchase for warranty coverage.",
+    "exampleZh": "請保留您的銷售收據作為保固服務的有效購買證明。"
   },
   {
     "id": 22337,
@@ -3444,10 +3444,10 @@
     "en": "quality",
     "kk": "[ˋkwɑləti]",
     "uk": "/ˈkwɒləti/",
-    "zh": "n. 質量、品質、優質、上乘；adj. 優質的、高質量的、內容嚴肅的、高階的",
+    "zh": "n. 品質、優質、特質；adj. 優質的、高品質的",
     "unit": 13,
-    "example": "The quality is uniformly high.",
-    "exampleZh": "質量一律很高。"
+    "example": "Our company strictly inspects all products to ensure they meet the highest quality standards.",
+    "exampleZh": "我們公司嚴格檢驗所有產品，以確保符合最高的品質標準。"
   },
   {
     "id": 22346,
@@ -3584,10 +3584,10 @@
     "en": "quote",
     "kk": "[kwot]",
     "uk": "/kwəʊt/",
-    "zh": "vt. 引用、引述、舉例說明；n. 報價、引文、引語、開價",
+    "zh": "vt. 報價、引用、引述；n. 報價、報價單、引言",
     "unit": 13,
-    "example": "We'll send you a quote without delay.",
-    "exampleZh": "我們會立即向你方報價。"
+    "example": "The supplier provided a competitive price quote for the bulk order of office chairs.",
+    "exampleZh": "供應商針對這筆大宗辦公椅訂單提供了極具競爭力的報價單。"
   },
   {
     "id": 22360,
@@ -3854,10 +3854,10 @@
     "en": "realize",
     "kk": "[ˋriə͵laɪz]",
     "uk": "/ˈriːəlaɪz/",
-    "zh": "vt. 認知、實現、瞭解、意識到",
+    "zh": "vt. 意識到、明白、了解；實現（夢想、目標）",
     "unit": 13,
-    "example": "Only later did she realize her mistake.",
-    "exampleZh": "直到後來她才意識到自己的錯誤。"
+    "example": "Through years of hard work, she finally realized her lifelong dream of opening her own bakery.",
+    "exampleZh": "經過多年的辛勤努力，她終於實現了開設個人烘焙坊的畢生夢想。"
   },
   {
     "id": 22387,
@@ -3934,10 +3934,10 @@
     "en": "receipt",
     "kk": "[rɪˋsit]",
     "uk": "/rɪˈsiːt/",
-    "zh": "n. 收據、收條、發票、收到；v. 在（賬單）上註明收訖字樣",
+    "zh": "n. 收據、發票、收到；vt. 開立收據",
     "unit": 13,
-    "example": "Can I have a receipt, please?",
-    "exampleZh": "請給我開個收據，好嗎？"
+    "example": "Please keep your official receipt if you wish to claim business travel expenses.",
+    "exampleZh": "若您想報銷商務差旅費用，請務必妥善保留正式收據。"
   },
   {
     "id": 22395,
@@ -4004,10 +4004,10 @@
     "en": "recipient",
     "kk": "[rəˋsɪpiənt]",
     "uk": "/rɪˈsɪpiənt/",
-    "zh": "n. 接受者、領受者、接收器、容器；adj. 接受的、容納的",
+    "zh": "n. 收件人、領受者、接受者；adj. 接受的",
     "unit": 13,
-    "example": "Please ensure the invoice is delivered directly to the designated recipient.",
-    "exampleZh": "請確保發票直接送達指定的收件人。"
+    "example": "Please verify the recipient's email address carefully before sending sensitive attachments.",
+    "exampleZh": "在寄送機密附件之前，請務必仔細核對收件人的電子郵件地址。"
   },
   {
     "id": 22402,
@@ -4084,10 +4084,10 @@
     "en": "record",
     "kk": "[ˋrɛkɚd]",
     "uk": "/ˈrekɔːd; rɪˈkɔːd/",
-    "zh": "n. 記錄、記載、經歷、最佳紀錄；vt. 錄音、記錄、記載、錄製；adj. 創紀錄的",
+    "zh": "n. 記錄、紀錄、成績、唱片；vt. 記錄、記載、錄製",
     "unit": 13,
-    "example": "He set a new world record.",
-    "exampleZh": "他創下了新的世界紀錄。"
+    "example": "The secretary kept an accurate written record of all decisions made during the annual meeting.",
+    "exampleZh": "秘書為年度會議中所作的所有決策保留了詳盡準確的書面記錄。"
   },
   {
     "id": 22410,
@@ -4204,10 +4204,10 @@
     "en": "refund",
     "kk": "[rɪˋfʌnd]",
     "uk": "/ˈriːfʌnd/",
-    "zh": "n. 退款、償還金額；vt. 償還、退還、退款給、還錢給",
+    "zh": "n. 退款、退費；vt. 退還、退款給",
     "unit": 13,
-    "example": "We will refund you your money in full.",
-    "exampleZh": "我們會退還你所有的錢。"
+    "example": "Customers can request a full refund within fourteen days of purchasing any defective item.",
+    "exampleZh": "顧客在購買任何有瑕疵的商品後十四天內均可申請全額退款。"
   },
   {
     "id": 22422,
@@ -4334,10 +4334,10 @@
     "en": "rehearsal",
     "kk": "[rɪˋhɝsəl]",
     "uk": "/rɪˈhɜːs(ə)l/",
-    "zh": "n. 排練、試演、練習、排演",
+    "zh": "n. 排練、彩排、演練、預演",
     "unit": 13,
-    "example": "We only had six days of rehearsal.",
-    "exampleZh": "我們只有六天的排練時間。"
+    "example": "The orchestra held a final rehearsal in the auditorium before the opening night concert.",
+    "exampleZh": "管弦樂團在首演之夜音樂會開始前，在禮堂舉行了最後一次彩排。"
   },
   {
     "id": 22435,
@@ -4634,10 +4634,10 @@
     "en": "renewal",
     "kk": "[rɪˋnuəl]",
     "uk": "/rɪˈnjuːəl/",
-    "zh": "n. 更新、復原、恢復、重新開始",
+    "zh": "n. 續約、更新、延期、續訂",
     "unit": 13,
-    "example": "They will discuss the possible renewal of diplomatic relations.",
-    "exampleZh": "他們將討論恢復外交關係的可能性。"
+    "example": "The tenant notified the landlord of her intention regarding the renewal of the lease agreement.",
+    "exampleZh": "房客通知了房東關於租賃合約續約的意向。"
   },
   {
     "id": 22465,
@@ -4744,20 +4744,20 @@
     "en": "replay",
     "kk": "[ripˋle]",
     "uk": "/ˈriːpleɪ/",
-    "zh": "vt. 重演、重播、重放、回放；n. 重演、重播、重放、回放",
+    "zh": "vt. 重播、重新播放、重新上演；n. 重播、重賽",
     "unit": 13,
-    "example": "We watched a replay of the wedding on video.",
-    "exampleZh": "我們觀看了重放的婚禮錄影。"
+    "example": "The sports broadcaster decided to replay the decisive goal from multiple camera angles.",
+    "exampleZh": "體育轉播員決定從多個攝影機角度重播那記關鍵進球。"
   },
   {
     "id": 22476,
     "en": "reply",
     "kk": "[rɪpˋlaɪ]",
     "uk": "/rɪˈplaɪ/",
-    "zh": "v. 回答、答覆、作出回應、回擊；n. 回答、答覆、回應、作出反應",
+    "zh": "v. 回覆、答覆、回答；n. 答覆、回信",
     "unit": 13,
-    "example": "His reply was not repeatable.",
-    "exampleZh": "他的回答不便重複。"
+    "example": "Please reply to this email confirmation by tomorrow afternoon so we can reserve your seat.",
+    "exampleZh": "請於明天下午前向此確認信回覆，以便我們為您保留席位。"
   },
   {
     "id": 22477,
@@ -4814,10 +4814,10 @@
     "en": "require",
     "kk": "[͵rikˋwaɪɚ]",
     "uk": "/rɪˈkwaɪə(r)/",
-    "zh": "vt. 需要、要求、要求做、規定",
+    "zh": "vt. 需要、要求、規定、命令",
     "unit": 13,
-    "example": "All decisions would require unanimity.",
-    "exampleZh": "所有決定都需要一致同意。"
+    "example": "This specialized engineering position requires at least three years of industry experience.",
+    "exampleZh": "這項專業工程職位要求至少具備三年的相關產業經驗。"
   },
   {
     "id": 22483,
@@ -4994,10 +4994,10 @@
     "en": "resolve",
     "kk": "[riˋzɑlv]",
     "uk": "/rɪˈzɒlv/",
-    "zh": "vt. 決心、決意、解決、決定；n. 堅決、剛毅、果斷、決心",
+    "zh": "vt. 解決、消除、決意；n. 決心、堅定信念",
     "unit": 13,
-    "example": "Nothing could weaken his resolve to continue.",
-    "exampleZh": "什麼也不能削弱他繼續下去的決心。"
+    "example": "The customer support team worked diligently to resolve the technical issue within an hour.",
+    "exampleZh": "客戶支援團隊辛勤努力，在一小時內解決了該技術問題。"
   },
   {
     "id": 22501,
@@ -5014,10 +5014,10 @@
     "en": "respect",
     "kk": "[rɪˋspɛkt]",
     "uk": "/rɪˈspekt/",
-    "zh": "n. 尊敬、敬重、重視、尊重；vt. 尊敬、敬佩、慎重對待、尊重；int. 真了不起",
+    "zh": "n. 尊敬、敬重、重視、方面；vt. 尊敬、重視、尊重",
     "unit": 13,
-    "example": "I respect him as a doctor.",
-    "exampleZh": "我尊敬他這個醫生。"
+    "example": "Mutual respect and clear communication are essential for building a successful team.",
+    "exampleZh": "相互尊敬與清晰的溝通是建立成功團隊不可或缺的要素。"
   },
   {
     "id": 22503,
@@ -5074,20 +5074,20 @@
     "en": "resume",
     "kk": "[rɪˋzum]",
     "uk": "/rɪˈzjuːm; ˈrezjuːmeɪ/",
-    "zh": "vt. 恢復、回到、繼續說、接著說；n. 梗概、摘要、簡歷、履歷",
+    "zh": "n. 履歷表、簡介；vt. 恢復、重新開始、繼續",
     "unit": 13,
-    "example": "After the war he resumed his duties at Wellesley College.",
-    "exampleZh": "那場戰爭之後，他恢復了在韋爾斯利學院的任職。"
+    "example": "Job applicants should tailor their resumes to highlight relevant technical qualifications.",
+    "exampleZh": "求職者應當調整客製化自己的履歷表，以突顯相關的專業技術資格。"
   },
   {
     "id": 22509,
     "en": "retail",
     "kk": "[ˋri͵tel]",
     "uk": "/ˈriːteɪl/",
-    "zh": "n. 零售；vi. 零售、以……價格銷售、詳說、述說；adv. 以零售方式；adj. 零售的",
+    "zh": "n. 零售、零售業；adj. 零售的；vt. 零售、以零售價販賣",
     "unit": 13,
-    "example": "The retail division is BT's cash cow.",
-    "exampleZh": "零售部是英國電信公司的搖錢樹。"
+    "example": "The nationwide retail chain announced substantial discounts for holiday shoppers.",
+    "exampleZh": "這家全國性的連鎖零售商店宣布為節慶購物顧客提供大幅折扣。"
   },
   {
     "id": 22510,
@@ -5124,10 +5124,10 @@
     "en": "retainer",
     "kk": "[rɪˋtenɚ]",
     "uk": "/rɪˈteɪnə(r)/",
-    "zh": "n. 保留者、家臣、預付聘金、預付費用",
+    "zh": "n. 聘用費、預付定金、律師顧問費；長期員工",
     "unit": 13,
-    "example": "I'll need a five-hundred-dollar retainer.",
-    "exampleZh": "我將需要一筆500美元的預付聘金。"
+    "example": "The corporate client agreed to pay a monthly retainer fee for ongoing legal services.",
+    "exampleZh": "該企業客戶同意每月支付一筆顧問聘用費，以享有持續的法律顧問服務。"
   },
   {
     "id": 22514,
@@ -5174,10 +5174,10 @@
     "en": "reveal",
     "kk": "[rɪˋvil]",
     "uk": "/rɪˈviːl/",
-    "zh": "vt. 揭示、顯示、透露、表明；n. 揭示、門側、窗側",
+    "zh": "vt. 揭露、透露、公布、展現",
     "unit": 13,
-    "example": "These poems reveal her gentle side.",
-    "exampleZh": "這些詩顯示出她溫柔的一面。"
+    "example": "The annual financial audit revealed that the branch company had cut operating costs significantly.",
+    "exampleZh": "年度財務稽核結果顯示，該分公司已顯著降低了營運成本。"
   },
   {
     "id": 22519,
@@ -5204,10 +5204,10 @@
     "en": "review",
     "kk": "[͵riˋvju]",
     "uk": "/rɪˈvjuː/",
-    "zh": "n. 複習、評論、審查；v. 複習、審查、評論",
+    "zh": "n. 審查、評價、績效考核、複習；vt. 審查、評估、複習",
     "unit": 13,
-    "example": "I will review the lesson today.",
-    "exampleZh": "我今天會複習這堂課。"
+    "example": "The manager scheduled a performance review meeting with every team member this Friday.",
+    "exampleZh": "經理安排在本週五與每位團隊成員舉行績效考核會議。"
   },
   {
     "id": 22522,
@@ -5584,10 +5584,10 @@
     "en": "schedule",
     "kk": "[ˋskɛdʒʊl]",
     "uk": "/ˈʃedjuːl/",
-    "zh": "n. 計劃、進度表、時間表、清單；vt. 安排、預定、列入、收進",
+    "zh": "n. 行程表、時程表、進度表；vt. 安排、預定",
     "unit": 13,
-    "example": "Everything went according to schedule.",
-    "exampleZh": "一切都是按計劃進行的。"
+    "example": "Please consult the conference schedule to see when the keynote speech begins.",
+    "exampleZh": "請參閱大會議程表以確認主題演講何時開始。"
   },
   {
     "id": 22560,
@@ -5744,10 +5744,10 @@
     "en": "select",
     "kk": "[səˋlɛkt]",
     "uk": "/sɪˈlekt/",
-    "zh": "vt. 選擇、挑選、選定、決定（特徵，生物）是否繼續存在；adj. 精選的、優等的、高階的、奢華的",
+    "zh": "vt. 選擇、挑選、選定；adj. 精選的、優等的",
     "unit": 13,
-    "example": "Click Tools on the menu bar and select Settings.",
-    "exampleZh": "點擊選單列上的“工具”並選擇“設定”。"
+    "example": "Customers can select their preferred delivery time slot during online checkout.",
+    "exampleZh": "顧客在線上結帳時可以選擇自己偏好的配送時段。"
   },
   {
     "id": 22576,
@@ -6374,20 +6374,20 @@
     "en": "smoothly",
     "kk": "[ˋsmuðli]",
     "uk": "/ˈsmuːðli/",
-    "zh": "adv. 平滑地、流暢地、平穩地、連續而流暢地",
+    "zh": "adv. 順利地、平穩地、流暢地",
     "unit": 13,
-    "example": "The software update rolled out smoothly without causing any server downtime.",
-    "exampleZh": "軟體更新順暢推出，未造成任何伺服器停機中斷。"
+    "example": "The software migration rolled out smoothly without causing any server downtime.",
+    "exampleZh": "軟體系統轉移順利完成，未造成任何伺服器停機中斷。"
   },
   {
     "id": 22639,
     "en": "soar",
     "kk": "[sɔr]",
     "uk": "/sɔː(r)/",
-    "zh": "n. 高飛、高漲；vi. 往上飛舞、翱翔、暴漲、急升",
+    "zh": "vi. 猛增、暴漲、急升、翱翔；n. 高飛、驟升",
     "unit": 13,
-    "example": "His market share continues to soar.",
-    "exampleZh": "他的市場份額不斷高漲。"
+    "example": "Global demand for electronic chips caused the manufacturer's export sales to soar.",
+    "exampleZh": "全球對電子晶片的需求使得該製造商的出口銷售額大幅暴漲。"
   },
   {
     "id": 22640,
@@ -6534,10 +6534,10 @@
     "en": "specialize",
     "kk": "[ˋspɛʃə͵laɪz]",
     "uk": "/ˈspeʃəlaɪz/",
-    "zh": "vi. 專門研究、專攻、專營、使（器官）專化",
+    "zh": "vi. 專攻、專營、專門研究、專業化",
     "unit": 13,
-    "example": "We specialize in quality furniture.",
-    "exampleZh": "我們專營高檔傢俱。"
+    "example": "Our boutique store specializes in handcrafted wooden furniture and home decor.",
+    "exampleZh": "我們的精品店專營手工木製家具與居家家飾。"
   },
   {
     "id": 22655,
@@ -6644,10 +6644,10 @@
     "en": "spray",
     "kk": "[spre]",
     "uk": "/spreɪ/",
-    "zh": "n. 噴霧、噴霧液體、噴劑、噴霧器；vt. 噴、噴灑、飛濺",
+    "zh": "n. 噴劑、噴霧、噴霧器；vt. 噴灑、噴射",
     "unit": 13,
-    "example": "He spray-painted his name on the wall.",
-    "exampleZh": "他把自己的名字用噴漆噴在了牆上。"
+    "example": "The nurse used an antiseptic spray to clean the minor scrape before applying a bandage.",
+    "exampleZh": "護理師在敷上繃帶前，使用消毒噴劑清潔了這處輕微擦傷。"
   },
   {
     "id": 22666,
@@ -6784,10 +6784,10 @@
     "en": "standard",
     "kk": "[ˋstændɚd]",
     "uk": "/ˈstændəd/",
-    "zh": "n. 標準、水平、規範、正常的水平；adj. 標準的、普通的、常規的、一般性的",
+    "zh": "n. 標準、水準、規範；adj. 標準的、常規的",
     "unit": 13,
-    "example": "The paper was of non-standard size.",
-    "exampleZh": "這種紙的大小不標準。"
+    "example": "The luxury hotel maintains exceptionally high standards of customer service.",
+    "exampleZh": "這家豪華飯店維持著極高水準的客戶服務標準。"
   },
   {
     "id": 22680,
@@ -7124,10 +7124,10 @@
     "en": "study",
     "kk": "[ˋstʌdi]",
     "uk": "/ˈstʌdi/",
-    "zh": "n. 研究、調查、學習、攻讀；vt. 學習、攻讀、認真閱讀、仔細看",
+    "zh": "n. 研究、調查報告、書房；v. 學習、研讀、審視",
     "unit": 13,
-    "example": "She was accepted to study music.",
-    "exampleZh": "她被錄取學習音樂。"
+    "example": "A recent market study reveals that consumer preferences are shifting toward eco-friendly products.",
+    "exampleZh": "最近一項市場調查研究顯示，消費者的偏好正轉向環保產品。"
   },
   {
     "id": 22714,
@@ -7294,10 +7294,10 @@
     "en": "succeed",
     "kk": "[səkˋsid]",
     "uk": "/səkˈsiːd/",
-    "zh": "v. 成功、達成、表現出色、有作為",
+    "zh": "v. 成功、達成目標；繼承、接替",
     "unit": 13,
-    "example": "The project seemed unlikely to succeed.",
-    "exampleZh": "該項目似乎不太可能成功。"
+    "example": "With careful planning and strong team collaboration, the innovative project is likely to succeed.",
+    "exampleZh": "在周密規劃與強大團隊協作下，這項創新專案很有可能會取得成功。"
   },
   {
     "id": 22731,
@@ -7614,10 +7614,10 @@
     "en": "suspend",
     "kk": "[səˋspɛnd]",
     "uk": "/səˈspend/",
-    "zh": "vt. 使中止、暫停、中止、使暫停使用",
+    "zh": "vt. 暫停、中止、暫緩；懸掛",
     "unit": 13,
-    "example": "The groundswell forced Arroyo to suspend the contracts in September.",
-    "exampleZh": "這一風波迫使阿羅約在9月份暫停了這些合同。"
+    "example": "The regulatory authority decided to suspend all business contracts with the supplier pending inspection.",
+    "exampleZh": "主管機關決定在檢驗期間，暫停與該供應商的所有商業合約。"
   },
   {
     "id": 22763,
@@ -8074,10 +8074,10 @@
     "en": "terminal",
     "kk": "[ˋtɝmənəl]",
     "uk": "/ˈtɜːmɪn(ə)l/",
-    "zh": "n. 接頭、終點站、航空終點站、航站樓；adj. 致命的、不治的、晚期的",
+    "zh": "n. （機場）航廈、終點站、客運總站；adj. 末期的、終點的",
     "unit": 13,
-    "example": "A second terminal was opened in 1998.",
-    "exampleZh": "第二個航空站是1998年開始運營的。"
+    "example": "Passengers departing for international flights should report to Terminal 2.",
+    "exampleZh": "搭乘國際航班出境的旅客應當前往第二航廈報到。"
   },
   {
     "id": 22809,
@@ -8164,10 +8164,10 @@
     "en": "thought",
     "kk": "[θɔt]",
     "uk": "/θɔːt/",
-    "zh": "n. 思想、想法、看法、主意；v. 認為、覺得、思考、考慮",
+    "zh": "n. 想法、思想、深思、心意",
     "unit": 13,
-    "example": "I thought you'd never finish!",
-    "exampleZh": "我以為你永遠不會完成！"
+    "example": "After careful thought and extensive consultation, she decided to accept the overseas job offer.",
+    "exampleZh": "經過深思熟慮與廣泛諮詢後，她決定接受這份海外工作邀約。"
   },
   {
     "id": 22818,
@@ -8224,10 +8224,10 @@
     "en": "ticket",
     "kk": "[ˋtɪkət]",
     "uk": "/ˈtɪkɪt/",
-    "zh": "n. 票、入場券、罰單；vt. 開罰單、發票給",
+    "zh": "n. 票、入場券、車票、罰單；vt. 開罰單給",
     "unit": 13,
-    "example": "You can have my ticket.",
-    "exampleZh": "你可以拿走我的票。"
+    "example": "You should purchase your train ticket in advance to secure a seat during peak holiday hours.",
+    "exampleZh": "您應當提前購買火車票，以確保在假期尖峰時段能有座位。"
   },
   {
     "id": 22824,
@@ -8606,8 +8606,8 @@
     "uk": "/trʌst/",
     "zh": "v. 信任、信賴、相信；n. 信任、信賴、信託",
     "unit": 13,
-    "example": "He destroyed me and my trust in men.",
-    "exampleZh": "他毀了我，也毀了我對男人的信任。"
+    "example": "The board members completely trust the new CEO to lead the company through the transition.",
+    "exampleZh": "董事會成員完全信任新任執行長能帶領公司度過這段轉型期。"
   },
   {
     "id": 22862,
@@ -9114,10 +9114,10 @@
     "en": "upgrade",
     "kk": "[əpˋɡred]",
     "uk": "/ˌʌpˈɡreɪd/",
-    "zh": "vt. （計算機、機器或軟體）升級、提高（設施、服務等的）檔次、改善；n. 升級、改善、提高檔次、上坡；adj. 往上的；adv. 往上",
+    "zh": "vt. 升級、提升、改善；n. 升級、改進",
     "unit": 13,
-    "example": "Install the ML upgrade, then reboot.",
-    "exampleZh": "安裝 ML 升級，然後重新啟動。"
+    "example": "The IT department will upgrade all office computers to the latest operating system this weekend.",
+    "exampleZh": "資訊部門將於本週末將所有辦公室電腦升級至最新的作業系統。"
   },
   {
     "id": 22913,
@@ -9454,10 +9454,10 @@
     "en": "veil",
     "kk": "[vel]",
     "uk": "/veɪl/",
-    "zh": "n. 面紗、面罩、頭巾、遮蓋物；v. 以面紗掩蓋、遮蓋、掩飾",
+    "zh": "n. 面紗、面罩、遮蓋物；vt. 遮蔽、掩蓋",
     "unit": 13,
-    "example": "A fine drizzle began to veil the hills.",
-    "exampleZh": "濛濛細雨漸漸籠罩了群山。"
+    "example": "The bride looked elegant wearing a delicate lace veil that flowed behind her gown.",
+    "exampleZh": "新娘戴著精緻的蕾絲面紗，飄垂在禮服後方，看起來優雅迷人。"
   },
   {
     "id": 22947,
@@ -9664,10 +9664,10 @@
     "en": "vita",
     "kk": "[ˋvaɪtə]",
     "uk": "/ˈviːtə/",
-    "zh": "n. 個人簡歷、履歷、生活、生命；adj. 生命的、充滿活力的",
+    "zh": "n. 履歷表、個人履歷（curriculum vitae 之略稱）",
     "unit": 13,
-    "example": "Vita was a trailblazer, a vigorous independent.",
-    "exampleZh": "維塔是一位開拓者，一個精力充沛的獨立派。"
+    "example": "Please submit your updated curriculum vita along with three academic reference letters.",
+    "exampleZh": "請將您更新後的個人履歷表連同三封學術推薦信一併送交。"
   },
   {
     "id": 22968,
@@ -9744,10 +9744,10 @@
     "en": "wage",
     "kk": "[wedʒ]",
     "uk": "/weɪdʒ/",
-    "zh": "n. 薪水、報酬、工資、工資總額；vt. 進行、發動",
+    "zh": "n. 薪資、工資、工錢；vt. 發動、進行（戰爭或運動）",
     "unit": 13,
-    "example": "Wage rates depend on levels of productivity.",
-    "exampleZh": "工資水平取決於生產量的多寡。"
+    "example": "The government announced a slight increase in the national minimum wage to support low-income families.",
+    "exampleZh": "政府宣布微調全國最低工資水準，以支援低收入家庭。"
   },
   {
     "id": 22976,
@@ -9884,10 +9884,10 @@
     "en": "waste",
     "kk": "[west]",
     "uk": "/weɪst/",
-    "zh": "v. 浪費、未能充分利用；n. 廢棄物、浪費；adj. 荒蕪的、廢棄的",
+    "zh": "vt. 浪費、濫用；n. 浪費、廢棄物；adj. 廢棄的",
     "unit": 13,
-    "example": "The waste was dumped in the sea.",
-    "exampleZh": "廢物被傾倒在海裡。"
+    "example": "You should not waste valuable study time browsing social media before exams.",
+    "exampleZh": "考試前你不應該把寶貴的讀書時間浪費在瀏覽社群媒體上。"
   },
   {
     "id": 22990,

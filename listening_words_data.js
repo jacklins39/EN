@@ -1,13 +1,17 @@
+/**
+ * 聽力專屬核心單字庫 (隨聽力情境短文自動產出與維護)
+ * 全庫 12 筆已於 2026/11/07 完成 100% 逐筆比對審查與品質校正
+ */
 const listeningWordsDB = [
     {
         "id": 32006,
         "en": "sleeping",
         "kk": "[ˋslipɪŋ]",
         "uk": "/ˈsliːpɪŋ/",
-        "zh": "adj. 睡眠的、睡著的、供住宿的",
+        "zh": "adj. 睡眠的、睡著的；n. 睡眠",
         "unit": 19,
         "example": "We need to ensure that everyone has packed thermal sleeping bags, waterproof tents, and portable water filtration systems.",
-        "exampleZh": "我們必須確保每個人都帶上了保暖睡袋、防水帳篷和便攜式濾水系統。"
+        "exampleZh": "我們必須確保每個人都帶上了保暖睡袋、防水帳篷與便攜濾水系統。"
     },
     {
         "id": 32010,
@@ -74,7 +78,7 @@ const listeningWordsDB = [
         "en": "breeze",
         "kk": "[briz]",
         "uk": "/briːz/",
-        "zh": "n. 微風、和風、輕而易舉的事、煤屑；vi. 輕盈而自信地走、輕鬆過關、輕易透過、吹微風",
+        "zh": "n. 微風、和風；輕而易舉的事；v. 輕盈自信地走、輕鬆過關",
         "unit": 19,
         "example": "A gentle breeze was blowing across the green park.",
         "exampleZh": "一陣溫和的微風吹拂過綠意盎然的公園。"
@@ -84,7 +88,7 @@ const listeningWordsDB = [
         "en": "kite",
         "kk": "[kaɪt]",
         "uk": "/kaɪt/",
-        "zh": "n. 風箏、鳶、空頭支票、非法支票；v. 增加、飛、飛奔、使用（非法支票）騙錢",
+        "zh": "n. 風箏；鳶（猛禽）；v. 像風箏般飛翔、使迅速上升",
         "unit": 19,
         "example": "The colorful kite flew high up into the blue sky.",
         "exampleZh": "那隻五彩繽紛的風箏高高飛上了藍天。"
@@ -94,7 +98,7 @@ const listeningWordsDB = [
         "en": "sneaker",
         "kk": "[ˋsnikɚ]",
         "uk": "/ˈsniːkə(r)/",
-        "zh": "n. 運動鞋、球鞋、卑鄙者、鬼鬼祟祟做事的人",
+        "zh": "n. 運動鞋、球鞋、休閒鞋",
         "unit": 19,
         "example": "Put on your comfortable sneakers before we go running.",
         "exampleZh": "在我們去跑步前，先穿上妳舒適的運動鞋。"

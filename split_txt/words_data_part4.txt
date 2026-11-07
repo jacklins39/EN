@@ -104,10 +104,10 @@
     "en": "rumor",
     "kk": "[ˋrumɚ]",
     "uk": "/ˈruːmə(r)/",
-    "zh": "n. 謠言、傳聞、傳言、魯莫爾；vt. 謠傳、傳說",
+    "zh": "n. 謠言、傳聞、傳言；vt. 謠傳、傳說",
     "unit": 4,
     "example": "In fact, the rumor is without foundation.",
-    "exampleZh": "事實上，這個謠傳沒有根據。"
+    "exampleZh": "事實上，這個謠言沒有根據。"
   },
   {
     "id": 3012,
@@ -434,7 +434,7 @@
     "en": "sin",
     "kk": "[sɪn]",
     "uk": "/sɪn/",
-    "zh": "n. 罪、罪惡、過錯、過失；vi. 犯戒律、犯過失、褻瀆、冒犯（上帝，人，原則）；abbr. 正弦",
+    "zh": "n. 罪、罪惡、過錯、過失；vi. 犯戒律、犯過失",
     "unit": 4,
     "example": "Treachery was the ultimate sin.",
     "exampleZh": "背叛曾是彌天大罪。"
@@ -884,10 +884,10 @@
     "en": "strip",
     "kk": "[strɪp]",
     "uk": "/strɪp/",
-    "zh": "v. 除去、撕掉；n. 脫衣舞、條、帶、帶狀地帶",
+    "zh": "v. 除去、撕掉、剝除；n. 條、帶、帶狀地帶",
     "unit": 4,
     "example": "The runway is simply a strip of grass.",
-    "exampleZh": "所謂跑道不過是一長條草地而已。"
+    "exampleZh": "所謂的跑道不過是一長條草地而已。"
   },
   {
     "id": 3090,
@@ -1144,7 +1144,7 @@
     "en": "tailor",
     "kk": "[ˋtelɚ]",
     "uk": "/ˈteɪlə(r)/",
-    "zh": "n. 裁縫、藍魚；vt. 定做、迎合、使適應",
+    "zh": "n. 裁縫、裁縫師；vt. 定做、迎合、使適應",
     "unit": 4,
     "example": "The tailor delicately plied his needle.",
     "exampleZh": "裁縫精巧地飛針走線。"
@@ -1454,10 +1454,10 @@
     "en": "tremble",
     "kk": "[ˋtrɛmbəl]",
     "uk": "/ˈtremb(ə)l/",
-    "zh": "vi. 顫抖、哆嗦、顫動、輕輕搖晃；n. 顫抖、戰慄、震顫病、乳毒病",
+    "zh": "vi. 顫抖、哆嗦、顫動、輕輕搖晃；n. 顫抖、戰慄",
     "unit": 4,
     "example": "Lisa was white and trembling with anger.",
-    "exampleZh": "莉薩氣得臉色發白，身體顫抖。"
+    "exampleZh": "莉薩氣得臉色發白，身體不住顫抖。"
   },
   {
     "id": 3147,
@@ -1784,10 +1784,10 @@
     "en": "wag",
     "kk": "[wæɡ]",
     "uk": "/wæɡ/",
-    "zh": "vt. 搖擺、逃學、議論紛紛；n. 愛說笑打趣的人、搖動、擺動、老開玩笑的人；abbr. 甘比亞",
+    "zh": "v. 搖擺、搖動；n. 搖動、擺動、愛開玩笑的人",
     "unit": 4,
     "example": "Dogs wag their tails when they are pleased.",
-    "exampleZh": "狗一高興就搖尾巴。"
+    "exampleZh": "狗一高興就會搖尾巴。"
   },
   {
     "id": 3180,
@@ -3564,7 +3564,7 @@
     "en": "prominent",
     "kk": "[ˋprɑmənənt]",
     "uk": "/ˈprɒmɪnənt/",
-    "zh": "adj. 卓越的、著名的、重要的、顯眼的；n. 舟蛾",
+    "zh": "adj. 卓越的、著名的、重要的、顯眼的",
     "unit": 4,
     "example": "He had an angular face with prominent cheekbones.",
     "exampleZh": "他有一張顴骨突出、稜角分明的臉。"
@@ -6564,10 +6564,10 @@
     "en": "bra",
     "kk": "[brɑ]",
     "uk": "/brɑː/",
-    "zh": "n. 奶罩、胸罩、文胸、左矢",
+    "zh": "n. 胸罩、內衣",
     "unit": 4,
     "example": "Get a casual weekend bra.",
-    "exampleZh": "擁有休閒的週末文胸。"
+    "exampleZh": "買一件休閒的週末內衣吧。"
   },
   {
     "id": 3658,

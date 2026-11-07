@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261107V20';
+        const APP_BUILD_VERSION = '20261107V21';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -63,20 +63,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261107V20"></script>
-    <script src="toeic_data.js?v=20261107V20"></script>
-    <script src="jh_data.js?v=20261107V20"></script>
-    <script src="listening_data.js?v=20261107V20"></script>
-    <script src="listening_words_data.js?v=20261107V20"></script>
-    <script src="uk_phonetics_manifest.js?v=20261107V20"></script>
-    <script src="words_audio_manifest.js?v=20261107V20"></script>
-    <script src="examples_audio_manifest.js?v=20261107V20"></script>
-    <script src="zh_audio_manifest.js?v=20261107V20"></script>
-    <script src="collocations_audio_manifest.js?v=20261107V20"></script>
-    <script src="syn_ant_data.js?v=20261107V20"></script>
-    <script src="synonyms_unit8_data.js?v=20261107V20"></script>
-    <script src="examples_unit9_data.js?v=20261107V20"></script>
-    <script src="game_whack.js?v=20261107V20"></script>
+    <script src="words_data.js?v=20261107V21"></script>
+    <script src="toeic_data.js?v=20261107V21"></script>
+    <script src="jh_data.js?v=20261107V21"></script>
+    <script src="listening_data.js?v=20261107V21"></script>
+    <script src="listening_words_data.js?v=20261107V21"></script>
+    <script src="uk_phonetics_manifest.js?v=20261107V21"></script>
+    <script src="words_audio_manifest.js?v=20261107V21"></script>
+    <script src="examples_audio_manifest.js?v=20261107V21"></script>
+    <script src="zh_audio_manifest.js?v=20261107V21"></script>
+    <script src="collocations_audio_manifest.js?v=20261107V21"></script>
+    <script src="syn_ant_data.js?v=20261107V21"></script>
+    <script src="synonyms_unit8_data.js?v=20261107V21"></script>
+    <script src="examples_unit9_data.js?v=20261107V21"></script>
+    <script src="game_whack.js?v=20261107V21"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -176,7 +176,7 @@
                 display: block !important;
             }
             .flip-card {
-                height: 380px !important;
+                height: 235px !important;
             }
             .flip-card-back {
                 overflow-y: auto !important;
@@ -187,7 +187,7 @@
             background-color: transparent;
             perspective: 1000px;
             width: 100%;
-            height: 332px; /* 手機版舒適大字卡片黃金高度：完整展示單字、雙音標、釋義與例句，零滾動防截斷 */
+            height: 285px; /* 緊湊黃金高度：消滅卡片多餘留白，讓下方佇列導航順勢上移 */
             transition: height 0.25s cubic-bezier(0.4, 0, 0.2, 1);
         }
         /* 當 4 選 1 作答模式且正面等待答題時，適度調降卡片高度以留出充裕空間展示作答選項 */
@@ -206,20 +206,20 @@
         }
         @media (min-width: 640px) {
             .flip-card {
-                height: 338px;
+                height: 250px !important;
             }
             #view-study.quiz-options-active .flip-card:not(.flipped),
             #view-study:has(#quiz-options:not(.hidden)) .flip-card:not(.flipped) {
-                height: 230px;
+                height: 210px !important;
             }
         }
         @media (min-width: 1024px) {
             .flip-card {
-                height: 345px;
+                height: 235px !important;
             }
             #view-study.quiz-options-active .flip-card:not(.flipped),
             #view-study:has(#quiz-options:not(.hidden)) .flip-card:not(.flipped) {
-                height: 330px;
+                height: 215px !important;
             }
         }
 
@@ -2916,30 +2916,7 @@
                         </div>
                         </div> <!-- close lg:grid -->
 
-                        <!-- 電腦版專屬：多維擴充區 (常用搭配詞 Collocations & 核心同義字 Synonyms) -->
-                        <div id="card-desktop-extensions" class="w-full hidden lg:grid lg:grid-cols-2 gap-3 pt-3 mt-3 border-t border-slate-200/80 dark:border-slate-700/80 text-left select-none">
-                            <div class="bg-slate-50/90 dark:bg-slate-800/60 p-2.5 rounded-xl border border-slate-200/70 dark:border-slate-700/60">
-                                <div class="text-[11px] font-bold text-amber-600 dark:text-amber-400 flex items-center gap-1.5 mb-1.5">
-                                    <span>🔗</span><span>常用搭配 (Collocations)</span>
-                                </div>
-                                <div id="card-collocations-list" class="flex flex-wrap gap-1.5 text-xs text-slate-700 dark:text-slate-200">
-                                    <span class="text-slate-400 text-[11px]">無特別搭配詞</span>
-                                </div>
-                            </div>
-                            <div class="bg-slate-50/90 dark:bg-slate-800/60 p-2.5 rounded-xl border border-slate-200/70 dark:border-slate-700/60">
-                                <div class="text-[11px] font-bold text-purple-600 dark:text-purple-400 flex items-center gap-1.5 mb-1.5">
-                                    <span>🌿</span><span>核心同義詞 (Synonyms)</span>
-                                </div>
-                                <div id="card-synonyms-list" class="flex flex-wrap gap-1.5 text-xs text-slate-700 dark:text-slate-200">
-                                    <span class="text-slate-400 text-[11px]">無同義字紀錄</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 輪播/溫習單字鏈走馬燈佇列 (Queue Strip) -->
+                        <!-- 輪播/溫習單字鏈走馬燈佇列 (Queue Strip) -->
             <div id="study-queue-strip" class="w-full hidden bg-white dark:bg-[#111827] border border-slate-200/90 dark:border-slate-800 rounded-2xl p-3.5 mb-3.5 shadow-sm space-y-2.5 select-none transition-all">
                 <div class="flex items-center justify-between text-xs px-0.5">
                     <span class="font-bold flex items-center gap-1.5 text-slate-700 dark:text-slate-300">
@@ -3503,9 +3480,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261107V20</span>
+                        <span id="app-version-display">版本 20261107V21</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261107V20</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261107V21</p>
                 </div>
             </div>
         </div>

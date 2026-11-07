@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261107V19';
+        const APP_BUILD_VERSION = '20261107V20';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -63,20 +63,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261107V19"></script>
-    <script src="toeic_data.js?v=20261107V19"></script>
-    <script src="jh_data.js?v=20261107V19"></script>
-    <script src="listening_data.js?v=20261107V19"></script>
-    <script src="listening_words_data.js?v=20261107V19"></script>
-    <script src="uk_phonetics_manifest.js?v=20261107V19"></script>
-    <script src="words_audio_manifest.js?v=20261107V19"></script>
-    <script src="examples_audio_manifest.js?v=20261107V19"></script>
-    <script src="zh_audio_manifest.js?v=20261107V19"></script>
-    <script src="collocations_audio_manifest.js?v=20261107V19"></script>
-    <script src="syn_ant_data.js?v=20261107V19"></script>
-    <script src="synonyms_unit8_data.js?v=20261107V19"></script>
-    <script src="examples_unit9_data.js?v=20261107V19"></script>
-    <script src="game_whack.js?v=20261107V19"></script>
+    <script src="words_data.js?v=20261107V20"></script>
+    <script src="toeic_data.js?v=20261107V20"></script>
+    <script src="jh_data.js?v=20261107V20"></script>
+    <script src="listening_data.js?v=20261107V20"></script>
+    <script src="listening_words_data.js?v=20261107V20"></script>
+    <script src="uk_phonetics_manifest.js?v=20261107V20"></script>
+    <script src="words_audio_manifest.js?v=20261107V20"></script>
+    <script src="examples_audio_manifest.js?v=20261107V20"></script>
+    <script src="zh_audio_manifest.js?v=20261107V20"></script>
+    <script src="collocations_audio_manifest.js?v=20261107V20"></script>
+    <script src="syn_ant_data.js?v=20261107V20"></script>
+    <script src="synonyms_unit8_data.js?v=20261107V20"></script>
+    <script src="examples_unit9_data.js?v=20261107V20"></script>
+    <script src="game_whack.js?v=20261107V20"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -2915,6 +2915,48 @@
                             </div>
                         </div>
                         </div> <!-- close lg:grid -->
+
+                        <!-- 電腦版專屬：多維擴充區 (常用搭配詞 Collocations & 核心同義字 Synonyms) -->
+                        <div id="card-desktop-extensions" class="w-full hidden lg:grid lg:grid-cols-2 gap-3 pt-3 mt-3 border-t border-slate-200/80 dark:border-slate-700/80 text-left select-none">
+                            <div class="bg-slate-50/90 dark:bg-slate-800/60 p-2.5 rounded-xl border border-slate-200/70 dark:border-slate-700/60">
+                                <div class="text-[11px] font-bold text-amber-600 dark:text-amber-400 flex items-center gap-1.5 mb-1.5">
+                                    <span>🔗</span><span>常用搭配 (Collocations)</span>
+                                </div>
+                                <div id="card-collocations-list" class="flex flex-wrap gap-1.5 text-xs text-slate-700 dark:text-slate-200">
+                                    <span class="text-slate-400 text-[11px]">無特別搭配詞</span>
+                                </div>
+                            </div>
+                            <div class="bg-slate-50/90 dark:bg-slate-800/60 p-2.5 rounded-xl border border-slate-200/70 dark:border-slate-700/60">
+                                <div class="text-[11px] font-bold text-purple-600 dark:text-purple-400 flex items-center gap-1.5 mb-1.5">
+                                    <span>🌿</span><span>核心同義詞 (Synonyms)</span>
+                                </div>
+                                <div id="card-synonyms-list" class="flex flex-wrap gap-1.5 text-xs text-slate-700 dark:text-slate-200">
+                                    <span class="text-slate-400 text-[11px]">無同義字紀錄</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 輪播/溫習單字鏈走馬燈佇列 (Queue Strip) -->
+            <div id="study-queue-strip" class="w-full hidden bg-white dark:bg-[#111827] border border-slate-200/90 dark:border-slate-800 rounded-2xl p-3.5 mb-3.5 shadow-sm space-y-2.5 select-none transition-all">
+                <div class="flex items-center justify-between text-xs px-0.5">
+                    <span class="font-bold flex items-center gap-1.5 text-slate-700 dark:text-slate-300">
+                        <span class="text-blue-500">🎧</span><span>輪播單字佇列 (點擊任意單字可立即切換)</span>
+                    </span>
+                    <span class="text-[11px] text-slate-400 font-mono hidden sm:inline">鍵盤快速鍵：[←] 上一個 ｜ [→] 下一個 ｜ [空白鍵] 暫停/繼續</span>
+                </div>
+                <div id="study-queue-items" class="flex items-center gap-2 overflow-x-auto pb-1 custom-scrollbar"></div>
+                <!-- 播放控制中控台 -->
+                <div class="flex items-center justify-between pt-2 border-t border-slate-100 dark:border-slate-800/80">
+                    <div class="flex items-center gap-2">
+                        <button type="button" id="btn-queue-prev" onclick="handleQueueNav(-1)" class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-xs font-semibold text-slate-700 dark:text-slate-300 transition-all cursor-pointer active:scale-95">⏮ 上一個 (←)</button>
+                        <button type="button" id="btn-queue-pause" onclick="toggleAutoFlashcardPause()" class="px-4 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-xs font-bold text-white shadow-xs transition-all cursor-pointer active:scale-95">⏸ 暫停 (Space)</button>
+                        <button type="button" id="btn-queue-next" onclick="handleQueueNav(1)" class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-xs font-semibold text-slate-700 dark:text-slate-300 transition-all cursor-pointer active:scale-95">⏭ 下一個 (→)</button>
+                    </div>
+                    <div id="queue-status-text" class="text-xs font-mono text-blue-600 dark:text-blue-400 font-semibold">
+                        自動輪播中 · 連續播放
                     </div>
                 </div>
             </div>
@@ -3461,9 +3503,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261107V19</span>
+                        <span id="app-version-display">版本 20261107V20</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261107V19</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261107V20</p>
                 </div>
             </div>
         </div>
@@ -6642,6 +6684,12 @@
                     playAudio(currentWord.en);
                 }
             }
+            try {
+                updateDesktopCardExtensions(currentWord);
+                updateStudyQueueStrip();
+            } catch(e) {
+                console.warn('Queue/Extension update error:', e);
+            }
         }
 
         // 記錄錯誤歷史 (弱點單字頁使用)
@@ -6700,6 +6748,213 @@
             } catch (e) {
                 console.warn("incrementDailyPracticeCount error:", e);
                 return 0;
+            }
+        }
+
+        
+        // ==========================================
+        // 電腦版 UI 方案 A：多維擴充區 & 單字鏈走馬燈佇列
+        // ==========================================
+        let recentSessionHistory = [];
+        let isAutoFlashcardPaused = false;
+
+        function updateDesktopCardExtensions(word) {
+            const extContainer = document.getElementById('card-desktop-extensions');
+            if (!extContainer || !word) return;
+            
+            const collocListEl = document.getElementById('card-collocations-list');
+            const synListEl = document.getElementById('card-synonyms-list');
+
+            // 1. 抓取搭配詞
+            let collocations = [];
+            try {
+                if (typeof getWordCollocations === 'function') {
+                    collocations = getWordCollocations(word.en, word) || [];
+                }
+            } catch(e) {}
+
+            if (collocListEl) {
+                if (collocations && collocations.length > 0) {
+                    collocListEl.innerHTML = collocations.slice(0, 4).map(c => {
+                        const phrase = typeof c === 'string' ? c : (c.phrase || c.en || '');
+                        const zh = typeof c === 'string' ? '' : (c.zh || '');
+                        return `<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-700/80 text-slate-800 dark:text-slate-100 hover:bg-amber-100/70 dark:hover:bg-amber-900/40 border border-slate-200/60 dark:border-slate-600 transition-colors cursor-pointer" onclick="event.stopPropagation(); playAudio('${phrase}');" title="點擊發音">
+                            <span class="font-bold text-amber-700 dark:text-amber-300">${phrase}</span>
+                            ${zh ? `<span class="text-[11px] text-slate-500 dark:text-slate-400">(${zh})</span>` : ''}
+                        </span>`;
+                    }).join('');
+                } else {
+                    // 若無直接搭配詞，智慧產生動詞三態或派生形式
+                    let forms = null;
+                    try { if (typeof computeWordForms === 'function') forms = computeWordForms(word.en, word.zh); } catch(e) {}
+                    if (forms && (forms.past || forms.plural || forms.comparative)) {
+                        let formsHtml = [];
+                        if (forms.past) formsHtml.push(`過去式: ${forms.past}`);
+                        if (forms.pastParticiple && forms.pastParticiple !== forms.past) formsHtml.push(`過去分詞: ${forms.pastParticiple}`);
+                        if (forms.presentParticiple) formsHtml.push(`進行式: ${forms.presentParticiple}`);
+                        if (forms.plural) formsHtml.push(`複數: ${forms.plural}`);
+                        collocListEl.innerHTML = formsHtml.map(f => `<span class="px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-700/60 text-slate-700 dark:text-slate-300">${f}</span>`).join('');
+                    } else {
+                        collocListEl.innerHTML = `<span class="text-slate-400 text-xs italic">高頻基礎核心單字 · 於各情境靈活運用</span>`;
+                    }
+                }
+            }
+
+            // 2. 抓取同義字
+            let synonyms = [];
+            try {
+                if (typeof getWordSynonyms === 'function') {
+                    synonyms = getWordSynonyms(word.en, word) || [];
+                }
+            } catch(e) {}
+
+            if (synListEl) {
+                if (synonyms && synonyms.length > 0) {
+                    synListEl.innerHTML = synonyms.slice(0, 5).map(s => {
+                        const sEn = typeof s === 'string' ? s : (s.en || '');
+                        const sZh = typeof s === 'string' ? '' : (s.zh || '');
+                        return `<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-700/80 text-slate-800 dark:text-slate-100 hover:bg-purple-100/70 dark:hover:bg-purple-900/40 border border-slate-200/60 dark:border-slate-600 transition-colors cursor-pointer" onclick="event.stopPropagation(); showWordDetailModal('${sEn}');" title="點擊查字典">
+                            <span class="font-bold text-purple-700 dark:text-purple-300">${sEn}</span>
+                            ${sZh ? `<span class="text-[11px] text-slate-500 dark:text-slate-400">(${sZh})</span>` : ''}
+                        </span>`;
+                    }).join('');
+                } else {
+                    synListEl.innerHTML = `<span class="text-slate-400 text-xs italic">獨特精確語意 · 詞義獨立鮮明</span>`;
+                }
+            }
+        }
+
+        function updateStudyQueueStrip() {
+            const strip = document.getElementById('study-queue-strip');
+            if (!strip) return;
+
+            // 僅在自動輪播或單字卡學習模式下展開走馬燈
+            const isQuizActive = !isAutoFlashcardMode && !isManualCardMode && currentQuizType !== 'card';
+            if (isQuizActive) {
+                strip.classList.add('hidden');
+                return;
+            }
+            strip.classList.remove('hidden');
+
+            const container = document.getElementById('study-queue-items');
+            if (!container || !currentWord) return;
+
+            // 維護最近已播放歷史 (最多保留 2 筆)
+            if (!recentSessionHistory.some(w => w.id === currentWord.id)) {
+                recentSessionHistory.push(currentWord);
+                if (recentSessionHistory.length > 3) recentSessionHistory.shift();
+            }
+
+            const pastWords = recentSessionHistory.filter(w => w.id !== currentWord.id);
+            const nextWords = sessionQueue.slice(0, 6);
+
+            let html = '';
+
+            // 1. 已播放前置單字 (灰色、劃線、勾選)
+            pastWords.forEach((pw, idx) => {
+                html += `
+                    <div onclick="jumpToQueueWord(${pw.id})" class="flex-shrink-0 px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700 text-slate-400 dark:text-slate-500 hover:text-slate-700 dark:hover:text-slate-200 cursor-pointer transition-all flex items-center gap-2 group" title="回跳溫習">
+                        <span class="text-[10px] font-bold text-emerald-500 group-hover:scale-110 transition-transform">✓</span>
+                        <div class="text-left">
+                            <div class="text-xs font-semibold line-through opacity-80 group-hover:no-underline">${esc(pw.en)}</div>
+                            <div class="text-[10px] text-slate-400 truncate max-w-[85px]">${esc(getConciseZh(pw.zh) || pw.zh)}</div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            // 2. 當前播放中 (發光高亮、波形圖示、大字)
+            html += `
+                <div class="flex-shrink-0 px-3.5 py-2 rounded-xl bg-[#0071E3]/15 dark:bg-[#0071E3]/25 border-2 border-[#0071E3] text-white shadow-[0_0_15px_rgba(0,113,227,0.3)] flex items-center gap-2.5 scale-102 transition-all">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    <div class="text-left">
+                        <div class="text-xs sm:text-sm font-extrabold text-[#0071E3] dark:text-blue-300 flex items-center gap-1.5">
+                            <span>${cardsCompleted + 1}. ${esc(currentWord.en)}</span>
+                            <span class="text-xs animate-pulse">🔊</span>
+                        </div>
+                        <div class="text-[11px] text-slate-600 dark:text-blue-200 font-medium truncate max-w-[120px]">
+                            ${esc(getConciseZh(currentWord.zh) || currentWord.zh)}
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            // 3. 待播放後續單字
+            nextWords.forEach((nw, idx) => {
+                const seq = cardsCompleted + 2 + idx;
+                html += `
+                    <div onclick="jumpToQueueWord(${nw.id})" class="flex-shrink-0 px-3 py-1.5 rounded-xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200/70 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 cursor-pointer transition-all flex items-center gap-2 group" title="點擊提前播放">
+                        <span class="text-[10px] font-mono text-slate-400 group-hover:text-[#0071E3]">${seq}</span>
+                        <div class="text-left">
+                            <div class="text-xs font-bold text-slate-800 dark:text-slate-100 group-hover:text-[#0071E3] transition-colors">${esc(nw.en)}</div>
+                            <div class="text-[10px] text-slate-400 dark:text-slate-400 truncate max-w-[90px]">${esc(getConciseZh(nw.zh) || nw.zh)}</div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            container.innerHTML = html;
+        }
+
+        function jumpToQueueWord(wordId) {
+            unlockMobileAudio();
+            // 在待播陣列中尋找
+            const nextIdx = sessionQueue.findIndex(w => w.id === wordId);
+            if (nextIdx !== -1) {
+                const target = sessionQueue.splice(nextIdx, 1)[0];
+                sessionQueue.unshift(target);
+                nextCard();
+                return;
+            }
+            // 在已播陣列中尋找
+            const pastTarget = recentSessionHistory.find(w => w.id === wordId);
+            if (pastTarget) {
+                sessionQueue.unshift(currentWord);
+                currentWord = pastTarget;
+                applyFront();
+                updateDesktopCardExtensions(currentWord);
+                updateStudyQueueStrip();
+                playAudio(currentWord.en);
+            }
+        }
+
+        function handleQueueNav(direction) {
+            unlockMobileAudio();
+            if (direction === 1) {
+                // 下一個
+                if (sessionQueue.length > 0) nextCard();
+            } else if (direction === -1) {
+                // 上一個
+                const pastWords = recentSessionHistory.filter(w => w.id !== currentWord.id);
+                if (pastWords.length > 0) {
+                    const prevWord = pastWords[pastWords.length - 1];
+                    jumpToQueueWord(prevWord.id);
+                }
+            }
+        }
+
+        function toggleAutoFlashcardPause() {
+            const btn = document.getElementById('btn-queue-pause');
+            const statusEl = document.getElementById('queue-status-text');
+            if (isAutoFlashcardPaused) {
+                // 恢復播放
+                isAutoFlashcardPaused = false;
+                if (btn) {
+                    btn.innerText = '⏸ 暫停 (Space)';
+                    btn.className = 'px-4 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-xs font-bold text-white shadow-xs transition-all cursor-pointer active:scale-95';
+                }
+                if (statusEl) statusEl.innerText = '自動輪播中 · 連續播放';
+                nextCard();
+            } else {
+                // 暫停
+                isAutoFlashcardPaused = true;
+                if (autoFlashcardTimerId) clearTimeout(autoFlashcardTimerId);
+                if (autoNextTimerId) clearTimeout(autoNextTimerId);
+                if (btn) {
+                    btn.innerText = '▶ 繼續 (Space)';
+                    btn.className = 'px-4 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-xs font-bold text-white shadow-xs transition-all cursor-pointer active:scale-95';
+                }
+                if (statusEl) statusEl.innerText = '已暫停輪播 · 待命';
             }
         }
 
@@ -7077,17 +7332,34 @@
             if (isCorrect) {
                 if (autoNextTimerId) clearTimeout(autoNextTimerId);
                 let advanced = false;
+
+                // ★ 浮誇節奏與多巴胺獎勵分級 (LV5完訓給予充裕慶祝時間，連勝次之)
+                const p = (currentWord && userProgress[currentWord.id]) || {};
+                const isMasteredLV5 = p.level >= MAX_LEVEL;
+                const isHighStreak = sessionStats && sessionStats.streak >= 3;
+                const answerDelay = isMasteredLV5 ? 1750 : (isHighStreak ? 1350 : 1150);
+
+                // ★ 浮誇特效：晉升 LV5 噴發全螢幕彩帶紙花雨！
+                if (isMasteredLV5 && typeof confetti === 'function') {
+                    confetti({
+                        particleCount: 85,
+                        spread: 75,
+                        origin: { y: 0.6 },
+                        colors: ['#10B981', '#F59E0B', '#3B82F6', '#EC4899', '#8B5CF6']
+                    });
+                }
+
                 const advance = () => {
                     if (advanced) return;
                     advanced = true;
                     if (autoNextTimerId) clearTimeout(autoNextTimerId);
                     autoNextTimerId = setTimeout(() => {
                         nextCard();
-                    }, 650);
+                    }, answerDelay);
                 };
                 playAudio(currentWord.en, advance);
-                // 備用防呆：最多等待 2000ms 必進下一題，防止發音異常卡死
-                autoNextTimerId = setTimeout(advance, 2000);
+                // 備用防呆：因延遲拉長，相應增加防呆秒數
+                autoNextTimerId = setTimeout(advance, answerDelay + 1000);
             } else {
                 // 答錯：先讓使用者看清揭曉的正確答案 900ms，接著翻面顯示例句與詳解，並換成「下一題 ➔」按鈕
                 if (autoNextTimerId) clearTimeout(autoNextTimerId);
@@ -7665,6 +7937,22 @@
 
         // 鍵盤快捷鍵
         document.addEventListener('keydown', (e) => {
+            // 輪播模式下支援 [←] 上一個、[→] 下一個、[空白鍵] 暫停/繼續
+            if (isAutoFlashcardMode || isManualCardMode) {
+                if (e.key === ' ' || e.code === 'Space') {
+                    e.preventDefault();
+                    toggleAutoFlashcardPause();
+                    return;
+                } else if (e.key === 'ArrowLeft') {
+                    e.preventDefault();
+                    handleQueueNav(-1);
+                    return;
+                } else if (e.key === 'ArrowRight') {
+                    e.preventDefault();
+                    handleQueueNav(1);
+                    return;
+                }
+            }
             if (viewStudy.classList.contains('hidden')) return; 
             if (!document.getElementById('dict-modal').classList.contains('hidden')) return;
             if (e.target && e.target.tagName === 'INPUT') return; // 填空題輸入中，不觸發快捷鍵

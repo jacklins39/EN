@@ -10004,7 +10004,7 @@ const externalVocabularyDB = [
         "en": "wine",
         "kk": "[waɪn]",
         "uk": "/waɪn/",
-        "zh": "n. 葡萄酒、果蔬酒、深紫紅色；v. 喝酒、設酒宴款待、跳擺臀舞",
+        "zh": "n. 葡萄酒、果蔬酒；v. 喝酒、設酒宴款待",
         "unit": 2,
         "example": "My father drinks a glass of red wine.",
         "exampleZh": "我父親喝了一杯紅葡萄酒。"
@@ -10304,7 +10304,7 @@ const externalVocabularyDB = [
         "en": "bloody",
         "kk": "[ˋblʌdi]",
         "uk": "/ˈblʌdi/",
-        "zh": "adj. 流血的、沾滿血的、血腥的、殘酷的；adv. 非常、很、該死地、討厭地；vt. 使受傷、使流血、血染、使沾上鮮血",
+        "zh": "adj. 流血的、沾滿血的、血腥的",
         "unit": 2,
         "example": "He washed his bloody knee after the fall.",
         "exampleZh": "他跌倒後把流血的膝蓋清洗乾淨。"
@@ -10784,7 +10784,7 @@ const externalVocabularyDB = [
         "en": "independent",
         "kk": "[͵ɪndɪˋpɛndənt]",
         "uk": "/ˌɪndɪˈpendənt/",
-        "zh": "adj. 獨立的、自治的、自立的、自力更生的；n. 獨立自主者、獨立團體、無黨派政治家、公理會教友",
+        "zh": "adj. 獨立的、自治的、自立的；n. 獨立自主者、無黨派政治家",
         "unit": 2,
         "example": "She is an independent girl who works hard.",
         "exampleZh": "她是個努力工作的獨立女孩。"
@@ -10964,7 +10964,7 @@ const externalVocabularyDB = [
         "en": "ordinary",
         "kk": "[ˋɔrdə͵nɛri]",
         "uk": "/ˈɔːd(ə)n(ə)ri/",
-        "zh": "adj. 普通的、平常的、平淡無奇的、平庸的；n. 常見的人（或事物）、常任法官、管區長、教區長",
+        "zh": "adj. 普通的、平常的、平淡無奇的、平庸的",
         "unit": 2,
         "example": "The meal was very ordinary.",
         "exampleZh": "這頓飯很普通。"
@@ -11794,7 +11794,7 @@ const externalVocabularyDB = [
         "en": "crow",
         "kk": "[kro]",
         "uk": "/krəʊ/",
-        "zh": "n. 烏鴉、啼叫聲、克勞人、婦人；vi. 歡叫、高興地說、自鳴得意",
+        "zh": "n. 烏鴉、啼叫聲；vi. 歡叫、得意洋洋",
         "unit": 2,
         "example": "A black crow sat on the tree.",
         "exampleZh": "一隻黑色的烏鴉停在樹上。"
@@ -13404,7 +13404,7 @@ const externalVocabularyDB = [
         "en": "beetle",
         "kk": "[ˋbitəl]",
         "uk": "/ˈbiːtl/",
-        "zh": "n. 甲蟲、畫甲蟲、拼甲蟲、大槌；v. 匆匆地走、突出、懸垂、用大槌捶；adj. 粗濃而突出",
+        "zh": "n. 甲蟲",
         "unit": 2,
         "example": "A small black beetle crawled on wood.",
         "exampleZh": "一隻黑色的小甲蟲在木頭上爬行。"
@@ -13564,7 +13564,7 @@ const externalVocabularyDB = [
         "en": "bottle",
         "kk": "[ˋbɑtəl]",
         "uk": "/ˈbɒt(ə)l/",
-        "zh": "n. 瓶子、一瓶、酒、奶瓶；vt. 裝瓶、用玻璃瓶砸、喪失勇氣、洩氣",
+        "zh": "n. 瓶子、一瓶；vt. 裝瓶",
         "unit": 2,
         "example": "Shall I open another bottle?",
         "exampleZh": "我要再開一瓶嗎？"
@@ -13657,7 +13657,7 @@ const externalVocabularyDB = [
         "zh": "n. 早午餐",
         "unit": 2,
         "example": "What time is brunch?",
-        "exampleZh": "brunch是幾點？"
+        "exampleZh": "早午餐是幾點？"
     },
     {
         "id": 1367,
@@ -13844,9 +13844,9 @@ const externalVocabularyDB = [
         "en": "carrot",
         "kk": "[ˋkærət]",
         "uk": "/ˈkærət/",
-        "zh": "n. 胡蘿蔔、誘人的承諾、紅髮人",
+        "zh": "n. 胡蘿蔔",
         "unit": 2,
-        "example": "Her carrot cake is divine.",
+        "example": "The rabbit is eating a carrot.",
         "exampleZh": "兔子正津津有味地啃著胡蘿蔔。"
     },
     {
@@ -14067,7 +14067,7 @@ const externalVocabularyDB = [
         "zh": "n. 筷子",
         "unit": 2,
         "example": "He can use chopsticks.",
-        "exampleZh": "傑位元會用筷子嗎？不，他不會。"
+        "exampleZh": "他會用筷子。"
     },
     {
         "id": 1408,
@@ -15137,7 +15137,7 @@ const externalVocabularyDB = [
         "zh": "n. 藥房、藥店、雜貨店",
         "unit": 2,
         "example": "Tom works at a drugstore.",
-        "exampleZh": "在一家n. (常兼售雜貨的)藥房工作。"
+        "exampleZh": "湯姆在一家藥房工作。"
     },
     {
         "id": 1515,
@@ -15534,7 +15534,7 @@ const externalVocabularyDB = [
         "en": "female",
         "kk": "[ˋfi͵mel]",
         "uk": "/ˈfiːmeɪl/",
-        "zh": "adj. 女性的、婦女的、女性特有的、由女性組成的；n. 雌性動物、雌性植物、女子",
+        "zh": "adj. 女性的、婦女的、雌性的；n. 雌性動物、女子",
         "unit": 2,
         "example": "This small cat is a female.",
         "exampleZh": "這隻小貓是雌性的。"
@@ -16104,10 +16104,10 @@ const externalVocabularyDB = [
         "en": "guava",
         "kk": "[ˋɡwɑvə]",
         "uk": "/ˈɡwɑːvə/",
-        "zh": "n. 番石榴、番石榴樹",
+        "zh": "n. 番石榴、芭樂",
         "unit": 2,
         "example": "I want to eat guava.",
-        "exampleZh": "這杯新鮮芭樂汁喝起來酸甜爽口。"
+        "exampleZh": "我想吃芭樂。"
     },
     {
         "id": 1612,
@@ -16784,7 +16784,7 @@ const externalVocabularyDB = [
         "en": "ladybug",
         "kk": "[ˋledi͵bʌɡ]",
         "uk": "/ˈleɪdɪbʌɡ/",
-        "zh": "n. 瓢蟲、瓢蟲科小型甲蟲的通稱、體半球形、常為紅",
+        "zh": "n. 瓢蟲",
         "unit": 2,
         "example": "We found the ladybug on a flower.",
         "exampleZh": "我們在一朵花上發現這隻瓢蟲。"
@@ -17494,7 +17494,7 @@ const externalVocabularyDB = [
         "en": "mule",
         "kk": "[mjul]",
         "uk": "/mjuːl/",
-        "zh": "n. 騾、固執的人、騾子、越境運毒者",
+        "zh": "n. 騾、騾子、固執的人",
         "unit": 2,
         "example": "The strong mule pulled the heavy cart.",
         "exampleZh": "那隻強壯的騾子拉著沉重的手推車。"
@@ -18034,7 +18034,7 @@ const externalVocabularyDB = [
         "en": "penguin",
         "kk": "[ˋpɛŋɡwən]",
         "uk": "/ˈpeŋɡwɪn/",
-        "zh": "n. 企鵝、空軍地勤人員、企鵝出版社",
+        "zh": "n. 企鵝",
         "unit": 2,
         "example": "This animal is a penguin.",
         "exampleZh": "這個動物是企鵝。"
@@ -18984,7 +18984,7 @@ const externalVocabularyDB = [
         "en": "roach",
         "kk": "[rotʃ]",
         "uk": "/rəʊtʃ/",
-        "zh": "n. 蟑螂、[魚]斜齒鯿",
+        "zh": "n. 蟑螂",
         "unit": 2,
         "example": "I saw a big black roach.",
         "exampleZh": "我看見了一隻大黑蟑螂。"
@@ -19984,10 +19984,10 @@ const externalVocabularyDB = [
         "en": "table tennis",
         "kk": "[ˋtebəl ˋtɛnəs]",
         "uk": "/ˈteɪb(ə)l tenɪs/",
-        "zh": "n. 乒乓球、乒乓球：一種類似網球的室內球類運動、由兩人或四人分站球檯兩端、用球拍將輕質空心小球擊過檯面中央的矮網。",
+        "zh": "n. 乒乓球、桌球",
         "unit": 2,
         "example": "Let's have a game of table tennis.",
-        "exampleZh": "咱們來打場乒乓球賽吧。"
+        "exampleZh": "咱們來打一場桌球賽吧。"
     },
     {
         "id": 2000,

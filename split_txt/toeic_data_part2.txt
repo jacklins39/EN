@@ -2754,7 +2754,7 @@
     "en": "female",
     "kk": "[ˋfi͵mel]",
     "uk": "/ˈfiːmeɪl/",
-    "zh": "adj. 女性的、婦女的、女性特有的、由女性組成的；n. 雌性動物、雌性植物、女子",
+    "zh": "adj. 女性的、婦女的、雌性的；n. 雌性動物、女子",
     "unit": 12,
     "example": "Oestrogen is a female sex hormone.",
     "exampleZh": "雌激素是一種雌性荷爾蒙。"
@@ -6524,7 +6524,7 @@
     "en": "independent",
     "kk": "[͵ɪndɪˋpɛndənt]",
     "uk": "/ˌɪndɪˈpendənt/",
-    "zh": "adj. 獨立的、自治的、自立的、自力更生的；n. 獨立自主者、獨立團體、無黨派政治家、公理會教友",
+    "zh": "adj. 獨立的、自治的、自立的；n. 獨立自主者、無黨派政治家",
     "unit": 12,
     "example": "Mozambique became independent in 1975.",
     "exampleZh": "莫三比克於1975年獨立。"

@@ -1684,7 +1684,7 @@
     "en": "ordinary",
     "kk": "[ˋɔrdə͵nɛri]",
     "uk": "/ˈɔːd(ə)n(ə)ri/",
-    "zh": "adj. 普通的、平常的、平淡無奇的、平庸的；n. 常見的人（或事物）、常任法官、管區長、教區長",
+    "zh": "adj. 普通的、平常的、平淡無奇的、平庸的",
     "unit": 18,
     "example": "The meal was very ordinary.",
     "exampleZh": "這頓飯很普通。"
@@ -9064,7 +9064,7 @@
     "en": "wine",
     "kk": "[waɪn]",
     "uk": "/waɪn/",
-    "zh": "n. 葡萄酒、果蔬酒、深紫紅色；v. 喝酒、設酒宴款待、跳擺臀舞",
+    "zh": "n. 葡萄酒、果蔬酒；v. 喝酒、設酒宴款待",
     "unit": 18,
     "example": "My father drinks a glass of red wine.",
     "exampleZh": "我父親喝了一杯紅葡萄酒。"

@@ -1674,7 +1674,7 @@
     "en": "bloody",
     "kk": "[ˋblʌdi]",
     "uk": "/ˈblʌdi/",
-    "zh": "adj. 流血的、沾滿血的、血腥的、殘酷的；adv. 非常、很、該死地、討厭地；vt. 使受傷、使流血、血染、使沾上鮮血",
+    "zh": "adj. 流血的、沾滿血的、血腥的",
     "unit": 17,
     "example": "He washed his bloody knee after the fall.",
     "exampleZh": "他跌倒後把流血的膝蓋清洗乾淨。"
@@ -1834,7 +1834,7 @@
     "en": "bottle",
     "kk": "[ˋbɑtəl]",
     "uk": "/ˈbɒt(ə)l/",
-    "zh": "n. 瓶子、一瓶、酒、奶瓶；vt. 裝瓶、用玻璃瓶砸、喪失勇氣、洩氣",
+    "zh": "n. 瓶子、一瓶；vt. 裝瓶",
     "unit": 17,
     "example": "Shall I open another bottle?",
     "exampleZh": "我要再開一瓶嗎？"
@@ -2067,7 +2067,7 @@
     "zh": "n. 早午餐",
     "unit": 17,
     "example": "What time is brunch?",
-    "exampleZh": "brunch是幾點？"
+    "exampleZh": "早午餐是幾點？"
   },
   {
     "id": 30208,
@@ -2514,10 +2514,10 @@
     "en": "carrot",
     "kk": "[ˋkærət]",
     "uk": "/ˈkærət/",
-    "zh": "n. 胡蘿蔔、誘人的承諾、紅髮人",
+    "zh": "n. 胡蘿蔔",
     "unit": 17,
-    "example": "Her carrot cake is divine.",
-    "exampleZh": "她的胡蘿蔔餅好吃極了。"
+    "example": "The rabbit is eating a carrot.",
+    "exampleZh": "兔子正津津有味地啃著胡蘿蔔。"
   },
   {
     "id": 30253,
@@ -2967,7 +2967,7 @@
     "zh": "n. 筷子",
     "unit": 17,
     "example": "He can use chopsticks.",
-    "exampleZh": "他會使用筷子。"
+    "exampleZh": "他會用筷子。"
   },
   {
     "id": 30298,
@@ -6064,7 +6064,7 @@
     "en": "female",
     "kk": "[ˋfi͵mel]",
     "uk": "/ˈfiːmeɪl/",
-    "zh": "adj. 女性的、婦女的、女性特有的、由女性組成的；n. 雌性動物、雌性植物、女子",
+    "zh": "adj. 女性的、婦女的、雌性的；n. 雌性動物、女子",
     "unit": 17,
     "example": "This small cat is a female.",
     "exampleZh": "這隻小貓是雌性的。"
@@ -7374,10 +7374,10 @@
     "en": "guava",
     "kk": "[ˋɡwɑvə]",
     "uk": "/ˈɡwɑːvə/",
-    "zh": "n. 番石榴、番石榴樹",
+    "zh": "n. 番石榴、芭樂",
     "unit": 17,
     "example": "I want to eat guava.",
-    "exampleZh": "我想吃n. 番石榴。"
+    "exampleZh": "我想吃芭樂。"
   },
   {
     "id": 30739,
@@ -8454,7 +8454,7 @@
     "en": "independent",
     "kk": "[͵ɪndɪˋpɛndənt]",
     "uk": "/ˌɪndɪˈpendənt/",
-    "zh": "adj. 獨立的、自治的、自立的、自力更生的；n. 獨立自主者、獨立團體、無黨派政治家、公理會教友",
+    "zh": "adj. 獨立的、自治的、自立的；n. 獨立自主者、無黨派政治家",
     "unit": 17,
     "example": "She is an independent girl who works hard.",
     "exampleZh": "她是個努力工作的獨立女孩。"

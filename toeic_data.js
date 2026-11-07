@@ -21434,7 +21434,7 @@ const toeicWordsDB = [
         "en": "partial",
         "kk": "[ˋpɑrʃəl]",
         "uk": "/ˈpɑːʃ(ə)l/",
-        "zh": "adj. 部分的、局部的、不完全的、偏袒的；n. 分音、泛音",
+        "zh": "adj. 部分的、局部的、不完全的、偏袒的",
         "unit": 13,
         "example": "I might be accused of being partial.",
         "exampleZh": "我可能會被人指責是偏袒的。"
@@ -21534,7 +21534,7 @@ const toeicWordsDB = [
         "en": "passage",
         "kk": "[ˋpæsədʒ]",
         "uk": "/ˈpæsɪdʒ/",
-        "zh": "n. 通行、走廊、過道、管道；v. 使（微生物）繼代移種",
+        "zh": "n. 通行、走廊、過道、段落（文章的）",
         "unit": 13,
         "example": "He read a passage from Emerson.",
         "exampleZh": "他讀了一段愛默生的作品。"
@@ -22334,10 +22334,10 @@ const toeicWordsDB = [
         "en": "postmaster",
         "kk": "[ˋpo͵stmæstɚ]",
         "uk": "/ˈpəʊstmɑːstə(r)/",
-        "zh": "n. 郵政局（所）長、郵件管理員、郵政總局局長",
+        "zh": "n. 郵局局長",
         "unit": 13,
-        "example": "An instance is started by executing the Postmaster process (pg_ctl).",
-        "exampleZh": "透過執行Postmaster程序(pg_ctl)啟動例項。"
+        "example": "The postmaster was responsible for managing the town's mail delivery system.",
+        "exampleZh": "這位郵局局長負責管理該鎮的郵件投遞系統。"
     },
     {
         "id": 22235,
@@ -23464,7 +23464,7 @@ const toeicWordsDB = [
         "en": "quarrel",
         "kk": "[ˋkwɔrəl]",
         "uk": "/ˈkwɒrəl/",
-        "zh": "n. 爭吵、拌嘴、抱怨（或不贊成）的理由、方鏃箭；v. 爭吵、吵架、不同意、反對",
+        "zh": "n. 爭吵、拌嘴、抱怨（或不贊成）的理由；v. 爭吵、吵架、不同意",
         "unit": 13,
         "example": "They had a quarrel about money.",
         "exampleZh": "他們為錢吵了一架。"
@@ -23614,7 +23614,7 @@ const toeicWordsDB = [
         "en": "radical",
         "kk": "[ˋrædəkəl]",
         "uk": "/ˈrædɪk(ə)l/",
-        "zh": "adj. 根本的、徹底的、激進的、極端的；n. 激進分子、遊離基、自由基、詞根",
+        "zh": "adj. 根本的、徹底的、激進的、極端的；n. 激進分子",
         "unit": 13,
         "example": "It was a radical departure from tradition.",
         "exampleZh": "這從根本上違背了傳統。"

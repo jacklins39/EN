@@ -29094,7 +29094,7 @@ const externalVocabularyDB = [
         "en": "passage",
         "kk": "[ˋpæsədʒ]",
         "uk": "/ˈpæsɪdʒ/",
-        "zh": "n. 通行、走廊、過道、管道；v. 使（微生物）繼代移種",
+        "zh": "n. 通行、走廊、過道、段落（文章的）",
         "unit": 3,
         "example": "Harry stepped into the passage and closed the door behind him.",
         "exampleZh": "哈里走進走廊，關上他身後的門。"
@@ -29694,7 +29694,7 @@ const externalVocabularyDB = [
         "en": "quarrel",
         "kk": "[ˋkwɔrəl]",
         "uk": "/ˈkwɒrəl/",
-        "zh": "n. 爭吵、拌嘴、抱怨（或不贊成）的理由、方鏃箭；v. 爭吵、吵架、不同意、反對",
+        "zh": "n. 爭吵、拌嘴、抱怨（或不贊成）的理由；v. 爭吵、吵架、不同意",
         "unit": 3,
         "example": "They had a quarrel about money.",
         "exampleZh": "他們為錢吵了一架。"
@@ -33394,7 +33394,7 @@ const externalVocabularyDB = [
         "en": "partial",
         "kk": "[ˋpɑrʃəl]",
         "uk": "/ˈpɑːʃ(ə)l/",
-        "zh": "adj. 部分的、局部的、不完全的、偏袒的；n. 分音、泛音",
+        "zh": "adj. 部分的、局部的、不完全的、偏袒的",
         "unit": 4,
         "example": "He managed to reach a partial agreement with both republics.",
         "exampleZh": "他設法跟兩個共和國達成了部分共識。"
@@ -62614,7 +62614,7 @@ const externalVocabularyDB = [
         "en": "radical",
         "kk": "[ˋrædəkəl]",
         "uk": "/ˈrædɪk(ə)l/",
-        "zh": "adj. 根本的、徹底的、激進的、極端的；n. 激進分子、遊離基、自由基、詞根",
+        "zh": "adj. 根本的、徹底的、激進的、極端的；n. 激進分子",
         "unit": 7,
         "example": "It was a radical departure from tradition.",
         "exampleZh": "這從根本上違背了傳統。"

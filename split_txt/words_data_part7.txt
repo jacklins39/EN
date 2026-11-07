@@ -2614,7 +2614,7 @@
     "en": "radical",
     "kk": "[ˋrædəkəl]",
     "uk": "/ˈrædɪk(ə)l/",
-    "zh": "adj. 根本的、徹底的、激進的、極端的；n. 激進分子、遊離基、自由基、詞根",
+    "zh": "adj. 根本的、徹底的、激進的、極端的；n. 激進分子",
     "unit": 7,
     "example": "It was a radical departure from tradition.",
     "exampleZh": "這從根本上違背了傳統。"

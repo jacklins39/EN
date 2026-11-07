@@ -7864,7 +7864,7 @@
     "en": "red",
     "kk": "[rɛd]",
     "uk": "/red/",
-    "zh": "adj. 紅色的、紅的、紅褐色的、漲紅的；v. 整理；n. 紅色、紅顏料、紅衣、紅葡萄酒",
+    "zh": "adj. 紅色的、紅的；n. 紅色、紅顏料",
     "unit": 1,
     "example": "She has a bright red school bag.",
     "exampleZh": "她有一個鮮紅色的書包。"
@@ -8184,7 +8184,7 @@
     "en": "school",
     "kk": "[skul]",
     "uk": "/skuːl/",
-    "zh": "n. 學校、學派、全校師生、上學時間；v. 教育、培養、訓練、馴馬；adj. 受過西化教育的、源自西方的",
+    "zh": "n. 學校、上學時間、全校師生；v. 教育、培養",
     "unit": 1,
     "example": "Which school do they attend?",
     "exampleZh": "他們上的是哪一所學校？"
@@ -9094,7 +9094,7 @@
     "en": "swim",
     "kk": "[swɪm]",
     "uk": "/swɪm/",
-    "zh": "v. 游泳、橫渡、遊、遊過；n. 游泳、適合釣魚的靜止深水處、深潭、漂浮；adj. 游泳時穿戴的",
+    "zh": "v. 游泳、遊過；n. 游泳",
     "unit": 1,
     "example": "Kids love to swim in the pool.",
     "exampleZh": "孩子們喜歡在游泳池裡游泳。"

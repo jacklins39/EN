@@ -7864,7 +7864,7 @@ const externalVocabularyDB = [
         "en": "red",
         "kk": "[rɛd]",
         "uk": "/red/",
-        "zh": "adj. 紅色的、紅的、紅褐色的、漲紅的；v. 整理；n. 紅色、紅顏料、紅衣、紅葡萄酒",
+        "zh": "adj. 紅色的、紅的；n. 紅色、紅顏料",
         "unit": 1,
         "example": "She has a bright red school bag.",
         "exampleZh": "她有一個鮮紅色的書包。"
@@ -8184,7 +8184,7 @@ const externalVocabularyDB = [
         "en": "school",
         "kk": "[skul]",
         "uk": "/skuːl/",
-        "zh": "n. 學校、學派、全校師生、上學時間；v. 教育、培養、訓練、馴馬；adj. 受過西化教育的、源自西方的",
+        "zh": "n. 學校、上學時間、全校師生；v. 教育、培養",
         "unit": 1,
         "example": "Which school do they attend?",
         "exampleZh": "他們上的是哪一所學校？"
@@ -9094,7 +9094,7 @@ const externalVocabularyDB = [
         "en": "swim",
         "kk": "[swɪm]",
         "uk": "/swɪm/",
-        "zh": "v. 游泳、橫渡、遊、遊過；n. 游泳、適合釣魚的靜止深水處、深潭、漂浮；adj. 游泳時穿戴的",
+        "zh": "v. 游泳、遊過；n. 游泳",
         "unit": 1,
         "example": "Kids love to swim in the pool.",
         "exampleZh": "孩子們喜歡在游泳池裡游泳。"
@@ -17124,7 +17124,7 @@ const externalVocabularyDB = [
         "en": "mango",
         "kk": "[ˋmæŋɡo]",
         "uk": "/ˈmæŋɡəʊ/",
-        "zh": "n. 芒果、芒果樹、芒果蜂鳥",
+        "zh": "n. 芒果、芒果樹",
         "unit": 2,
         "example": "This sweet mango is yellow and soft.",
         "exampleZh": "這顆甜芒果又黃又軟。"
@@ -18184,7 +18184,7 @@ const externalVocabularyDB = [
         "en": "pineapple",
         "kk": "[ˋpaɪ͵næpəl]",
         "uk": "/ˈpaɪnæp(ə)l/",
-        "zh": "n. 鳳梨、[園藝]菠蘿、[園藝]鳳梨；adj. 鳳梨科的",
+        "zh": "n. 鳳梨、菠蘿",
         "unit": 2,
         "example": "Mango and pineapple are yellow.",
         "exampleZh": "芒果和菠蘿是黃色的。"
@@ -18204,7 +18204,7 @@ const externalVocabularyDB = [
         "en": "pink",
         "kk": "[pɪŋk]",
         "uk": "/pɪŋk/",
-        "zh": "adj. 粉紅色的、臉色發紅的、同性戀的、左傾的；n. 粉紅色、粉紅色衣服或衣料、粉紅色葡萄酒、石竹；v. 發響爆聲、爆震、變成粉紅色、剪",
+        "zh": "adj. 粉紅色的；n. 粉紅色；v. 變成粉紅色",
         "unit": 2,
         "example": "She wore a cute pink dress today.",
         "exampleZh": "她今天穿了一件可愛的粉紅色洋裝。"
@@ -19284,7 +19284,7 @@ const externalVocabularyDB = [
         "en": "shorts",
         "kk": "[ʃɔrts]",
         "uk": "/ʃɔːts/",
-        "zh": "n. 短褲、男內褲、短片、細麩粉；v. 短路",
+        "zh": "n. 短褲、男內褲、短片",
         "unit": 2,
         "example": "He wears blue shorts in summer.",
         "exampleZh": "他夏天穿著藍色短褲。"
@@ -19454,7 +19454,7 @@ const externalVocabularyDB = [
         "en": "sock",
         "kk": "[sɑk]",
         "uk": "/sɒk/",
-        "zh": "n. 短襪、猛擊、重擊、白色標記；vt. 猛擊、使遭損失、損害、狠打",
+        "zh": "n. 短襪、猛擊、重擊；vt. 猛擊、狠打",
         "unit": 2,
         "example": "I lost my left white sock.",
         "exampleZh": "我弄丟了我的左邊白襪子。"
@@ -20254,7 +20254,7 @@ const externalVocabularyDB = [
         "en": "toe",
         "kk": "[to]",
         "uk": "/təʊ/",
-        "zh": "n. 腳趾、趾、足尖部、端部；v. 用腳尖推、足尖朝內（或外）行走、前束",
+        "zh": "n. 腳趾、趾、足尖部",
         "unit": 3,
         "example": "She wiggled her toes against the packed sand.",
         "exampleZh": "她用腳趾撥弄著板結的沙子。"
@@ -21964,7 +21964,7 @@ const externalVocabularyDB = [
         "en": "pale",
         "kk": "[pel]",
         "uk": "/peɪl/",
-        "zh": "adj. 蒼白的、黯淡的、淺的、淡的；vi. 變蒼白、變淡、變淺、使褪色；n. 板條、尖樁、界限、範圍",
+        "zh": "adj. 蒼白的、黯淡的、淺的、淡的；vi. 變蒼白、變淡",
         "unit": 3,
         "example": "Rachel looked pale and weary.",
         "exampleZh": "雷切爾看起來蒼白而疲憊。"
@@ -22014,7 +22014,7 @@ const externalVocabularyDB = [
         "en": "primary",
         "kk": "[ˋpraɪ͵mɛri]",
         "uk": "/ˈpraɪməri/",
-        "zh": "adj. 主要的、首要的、小學教育的、初級教育的；n. 初選、原色、初級飛羽",
+        "zh": "adj. 主要的、首要的、初級的；n. 初選",
         "unit": 3,
         "example": "We turn now to our primary question.",
         "exampleZh": "我們現在轉到我們的主要問題上。"
@@ -29584,7 +29584,7 @@ const externalVocabularyDB = [
         "en": "priest",
         "kk": "[prist]",
         "uk": "/priːst/",
-        "zh": "n. 牧師、神父、神職人員、木漁槌；v. 任命……為司鐸",
+        "zh": "n. 牧師、神父、神職人員",
         "unit": 3,
         "example": "The priest anointed her with oil.",
         "exampleZh": "神父為她傅油。"

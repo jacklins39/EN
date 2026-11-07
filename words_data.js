@@ -40184,7 +40184,7 @@ const externalVocabularyDB = [
         "en": "madam",
         "kk": "[ˋmædəm]",
         "uk": "/ˈmædəm/",
-        "zh": "n. 夫人、太太、女士、鴇母",
+        "zh": "n. 夫人、太太、女士",
         "unit": 5,
         "example": "Can I help you, madam?",
         "exampleZh": "要幫忙嗎，夫人？"
@@ -41254,10 +41254,10 @@ const externalVocabularyDB = [
         "en": "protein",
         "kk": "[ˋpro͵tin]",
         "uk": "/ˈprəʊtiːn/",
-        "zh": "n. 蛋白質、朊；adj. 蛋白質的",
+        "zh": "n. 蛋白質；adj. 蛋白質的",
         "unit": 5,
         "example": "Microscopic fibres of protein were visible.",
-        "exampleZh": "極為精密的蛋白質纖維是能被看見的。"
+        "exampleZh": "極微小的蛋白質纖維是清晰可見的。"
     },
     {
         "id": 4127,
@@ -41484,10 +41484,10 @@ const externalVocabularyDB = [
         "en": "reflection",
         "kk": "[rɪfˋlɛkʃən]",
         "uk": "/rɪˈflekʃ(ə)n/",
-        "zh": "n. 反射、回響、反射光、反射熱",
+        "zh": "n. 反射、回響、倒影、反思",
         "unit": 5,
-        "example": "The children had fun jumping into the water puddles along the sidewalk.",
-        "exampleZh": "孩子們開心地在人行道旁的水窪裡跳來跳去。"
+        "example": "He looked at his reflection in the water.",
+        "exampleZh": "他看著自己在水中的倒影。"
     },
     {
         "id": 4150,
@@ -42084,10 +42084,10 @@ const externalVocabularyDB = [
         "en": "singular",
         "kk": "[ˋsɪŋɡjəlɚ]",
         "uk": "/ˈsɪŋɡjələ(r)/",
-        "zh": "vi. 嘆氣、嘆息；n. 嘆氣、嘆息",
+        "zh": "adj. 單數的、非凡的、卓越的；n. 單數、單數形式",
         "unit": 5,
         "example": "The inhabitants of the Arctic are known as the Inuit. The singular is Inuk.",
-        "exampleZh": "北極居民被稱作，其單數形式是。"
+        "exampleZh": "北極的居民被稱為因紐特人 (Inuit)，其單數形式是 Inuk。"
     },
     {
         "id": 4210,
@@ -43044,10 +43044,10 @@ const externalVocabularyDB = [
         "en": "barren",
         "kk": "[ˋbærən]",
         "uk": "/ˈbærən/",
-        "zh": "adj. 貧瘠的、荒蕪的、不妊的、不毛的；n. 瘠地",
+        "zh": "adj. 貧瘠的、荒蕪的、不結果實的",
         "unit": 5,
-        "example": "The film crew traveled to the coast to scout for scenic locations.",
-        "exampleZh": "攝製組前往海岸尋找風景優美的拍攝地點。"
+        "example": "The landscape was barren, with not a single tree in sight.",
+        "exampleZh": "這片土地十分貧瘠，連一棵樹都看不見。"
     },
     {
         "id": 4306,
@@ -43394,10 +43394,10 @@ const externalVocabularyDB = [
         "en": "imperial",
         "kk": "[͵ɪmˋpɪriəl]",
         "uk": "/ɪmˈpɪəriəl/",
-        "zh": "adj. 帝國的、皇帝的、宏偉的、華麗的；n. 尖鬍鬚、紙張尺寸、特等品",
+        "zh": "adj. 帝國的、皇帝的、宏偉的",
         "unit": 5,
-        "example": "Imperial Nectar, a hundred-eighty a shot.",
-        "exampleZh": "宮廷玉液酒，一百八一杯~"
+        "example": "The museum was once an imperial palace.",
+        "exampleZh": "這座博物館曾經是一座宏偉的皇宮。"
     },
     {
         "id": 4341,
@@ -44796,8 +44796,8 @@ const externalVocabularyDB = [
         "uk": "/ˌəʊvərˈiːt/",
         "zh": "vi. 吃得過多、吃得過飽；vt. 過量食用",
         "unit": 5,
-        "example": "They can overeat and gainweight if they want to.",
-        "exampleZh": "如果願意，他們可以暴飲暴食，增加體重。"
+        "example": "They can overeat and gain weight if they want to.",
+        "exampleZh": "如果他們願意，他們可以暴飲暴食並增加體重。"
     },
     {
         "id": 4481,
@@ -45574,7 +45574,7 @@ const externalVocabularyDB = [
         "en": "admiral",
         "kk": "[ˋædmɚəl]",
         "uk": "/ˈædmərəl/",
-        "zh": "n. 艦隊司令、海軍上將、海軍將軍、海軍上將蛺蝶",
+        "zh": "n. 艦隊司令、海軍上將",
         "unit": 5,
         "example": "The admiral visited the ships under his command.",
         "exampleZh": "艦隊司令視察了他所統率的軍艦。"
@@ -46234,10 +46234,10 @@ const externalVocabularyDB = [
         "en": "bog",
         "kk": "[bɑɡ]",
         "uk": "/bɒɡ/",
-        "zh": "n. 沼澤、泥塘、泥炭沼、廁所；vt. 使陷於泥沼、使動彈不得、使陷入困境；vi. 陷於泥沼、動彈不得、陷入困境；v. 走開、滾開",
+        "zh": "n. 沼澤、泥塘；v. 使陷入泥沼、動彈不得",
         "unit": 5,
-        "example": "Tom bought 200 bog rolls online.",
-        "exampleZh": "湯姆在網路上買了 200 個沼澤卷。"
+        "example": "The heavy truck got bogged down in the mud.",
+        "exampleZh": "重型卡車陷入泥沼中動彈不得。"
     },
     {
         "id": 4625,
@@ -49984,7 +49984,7 @@ const externalVocabularyDB = [
         "en": "monarch",
         "kk": "[ˋmɑn͵ɑrk]",
         "uk": "/ˈmɒnək/",
-        "zh": "n. 君主、女王、黑脈金斑蝶、王鶲",
+        "zh": "n. 君主、女王、帝王",
         "unit": 5,
         "example": "He had the ear of the monarch.",
         "exampleZh": "他在君主那裡說得上話。"

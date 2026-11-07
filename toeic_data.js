@@ -3344,7 +3344,7 @@ const toeicWordsDB = [
         "en": "barren",
         "kk": "[ˋbærən]",
         "uk": "/ˈbærən/",
-        "zh": "adj. 貧瘠的、荒蕪的、不妊的、不毛的；n. 瘠地",
+        "zh": "adj. 貧瘠的、荒蕪的、不結果實的",
         "unit": 11,
         "example": "The land was barren and infertile.",
         "exampleZh": "這片土地荒蕪而貧瘠。"
@@ -24194,7 +24194,7 @@ const toeicWordsDB = [
         "en": "reflection",
         "kk": "[rɪfˋlɛkʃən]",
         "uk": "/rɪˈflekʃ(ə)n/",
-        "zh": "n. 反射、回響、反射光、反射熱",
+        "zh": "n. 反射、回響、倒影、反思",
         "unit": 13,
         "example": "He admired his reflection in the mirror.",
         "exampleZh": "他欣賞著自己在鏡中的影像。"

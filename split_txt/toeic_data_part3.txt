@@ -4194,7 +4194,7 @@
     "en": "reflection",
     "kk": "[rɪfˋlɛkʃən]",
     "uk": "/rɪˈflekʃ(ə)n/",
-    "zh": "n. 反射、回響、反射光、反射熱",
+    "zh": "n. 反射、回響、倒影、反思",
     "unit": 13,
     "example": "He admired his reflection in the mirror.",
     "exampleZh": "他欣賞著自己在鏡中的影像。"

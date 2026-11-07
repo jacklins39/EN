@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261107V18';
+        const APP_BUILD_VERSION = '20261107V19';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -63,20 +63,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261107V18"></script>
-    <script src="toeic_data.js?v=20261107V18"></script>
-    <script src="jh_data.js?v=20261107V18"></script>
-    <script src="listening_data.js?v=20261107V18"></script>
-    <script src="listening_words_data.js?v=20261107V18"></script>
-    <script src="uk_phonetics_manifest.js?v=20261107V18"></script>
-    <script src="words_audio_manifest.js?v=20261107V18"></script>
-    <script src="examples_audio_manifest.js?v=20261107V18"></script>
-    <script src="zh_audio_manifest.js?v=20261107V18"></script>
-    <script src="collocations_audio_manifest.js?v=20261107V18"></script>
-    <script src="syn_ant_data.js?v=20261107V18"></script>
-    <script src="synonyms_unit8_data.js?v=20261107V18"></script>
-    <script src="examples_unit9_data.js?v=20261107V18"></script>
-    <script src="game_whack.js?v=20261107V18"></script>
+    <script src="words_data.js?v=20261107V19"></script>
+    <script src="toeic_data.js?v=20261107V19"></script>
+    <script src="jh_data.js?v=20261107V19"></script>
+    <script src="listening_data.js?v=20261107V19"></script>
+    <script src="listening_words_data.js?v=20261107V19"></script>
+    <script src="uk_phonetics_manifest.js?v=20261107V19"></script>
+    <script src="words_audio_manifest.js?v=20261107V19"></script>
+    <script src="examples_audio_manifest.js?v=20261107V19"></script>
+    <script src="zh_audio_manifest.js?v=20261107V19"></script>
+    <script src="collocations_audio_manifest.js?v=20261107V19"></script>
+    <script src="syn_ant_data.js?v=20261107V19"></script>
+    <script src="synonyms_unit8_data.js?v=20261107V19"></script>
+    <script src="examples_unit9_data.js?v=20261107V19"></script>
+    <script src="game_whack.js?v=20261107V19"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -2692,9 +2692,9 @@
                             <p class="text-xs text-slate-400 font-medium mt-0.5">艾賓浩斯間隔重複週期 · 點擊任一階層直接特訓</p>
                         </div>
                         <div class="flex items-center gap-2 flex-wrap">
-                            <button id="btn-srs-relapse-bridge" type="button" class="group flex items-center justify-center gap-1.5 bg-gradient-to-r from-rose-500 to-amber-500 hover:from-rose-600 hover:to-amber-600 text-white text-xs font-bold px-3 py-1.5 rounded-xl shadow-xs hover:shadow-md active:scale-95 transition-all cursor-pointer shrink-0" title="特訓原本達到 5 星卻又答錯的單字">
+                            <button id="btn-srs-relapse-bridge" type="button" class="group flex items-center justify-center gap-1.5 bg-gradient-to-r from-rose-500 to-amber-500 hover:from-rose-600 hover:to-amber-600 text-white text-xs font-bold px-3 py-1.5 rounded-xl shadow-xs hover:shadow-md active:scale-95 transition-all cursor-pointer shrink-0" title="特訓原本達到 LV5 完訓卻又答錯的單字">
                                 <span>⚠️</span>
-                                <span>原本對(5星)又錯了</span>
+                                <span>原本對(LV5)又錯了</span>
                                 <span id="srs-relapse-count-badge" class="bg-white/20 text-white text-[10px] px-1.5 py-0.5 rounded-md font-mono">0 字</span>
                             </button>
                             <button id="btn-srs-focus-bridge" type="button" class="group flex items-center justify-center gap-1.5 bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 hover:from-blue-500 hover:to-violet-500 text-white text-xs font-bold px-3 py-1.5 rounded-xl shadow-xs hover:shadow-md active:scale-95 transition-all cursor-pointer shrink-0" title="集中特訓 LV1~LV4 記憶過渡期全部單字">
@@ -3461,9 +3461,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261107V18</span>
+                        <span id="app-version-display">版本 20261107V19</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261107V18</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261107V19</p>
                 </div>
             </div>
         </div>
@@ -6785,7 +6785,7 @@
                     // ★【絕不自動刪除 lastMistakeDay】：
                     // 30 天內錯題庫完整保留作為月度總驗收庫，絕不因 Level >= 3 自動抹除！
                 } else {
-                    // ★ 記錄「原本對 (5星) 又錯了」(Relapse / 遺忘反彈失誤)
+                    // ★ 記錄「原本對 (LV5) 又錯了」(Relapse / 遺忘反彈失誤)
                     const wasFiveStar = prevLevel >= MAX_LEVEL || progress.everMastered || (progress.masteredDay && progress.masteredDay <= virtualCurrentDay);
                     if (wasFiveStar) {
                         progress.everMastered = true;
@@ -12525,7 +12525,7 @@
             const badgeEl = document.getElementById('srs-focus-count-badge');
             if (badgeEl) badgeEl.innerText = `${bridgeCount.toLocaleString()} 字`;
 
-            // 計算「原本對 (5星) 又錯了」的單字總數
+            // 計算「原本對 (LV5) 又錯了」的單字總數
             const relapseWords = targetWords.filter(w => {
                 const p = userProgress[w.id];
                 if (!p || p.level >= MAX_LEVEL) return false;
@@ -12537,16 +12537,16 @@
             const relapseBadgeEl = document.getElementById('srs-relapse-count-badge');
             if (relapseBadgeEl) relapseBadgeEl.innerText = `${relapseWords.length.toLocaleString()} 字`;
 
-            // 綁定「原本對 (5星) 又錯了」特訓按鈕
+            // 綁定「原本對 (LV5) 又錯了」特訓按鈕
             const btnRelapse = document.getElementById('btn-srs-relapse-bridge');
             if (btnRelapse) {
                 btnRelapse.onclick = () => {
                     if (!relapseWords.length) {
-                        showQuickToast('太棒了！目前沒有 5 星跌落失誤的單字 🎉');
+                        showQuickToast('太棒了！目前沒有 LV5 跌落失誤的單字 🎉');
                         return;
                     }
                     unlockMobileAudio();
-                    startWeakPractice(relapseWords, '⚠️ 原本5星又錯了 · 特訓');
+                    startWeakPractice(relapseWords, '⚠️ 原本對(LV5)又錯了 · 特訓');
                 };
             }
 
@@ -12704,7 +12704,7 @@
                 masteredPerDay[mDay]++;
             }
 
-            // 5星失誤 (原本滿星 LV5，後來又答錯) 每日與累計分析
+            // LV5失誤 (原本達到 LV5 完訓，後來又答錯) 每日與累計分析
             const relapsePerDay = new Array(maxDay + 1).fill(0);
             for (const w of targetWords) {
                 const p = userProgress[w.id];
@@ -12858,7 +12858,7 @@
                         },
                         {
                             type: 'line',
-                            label: isGlobal ? '全庫原本對(5星)又錯了' : '原本對(5星)又錯了',
+                            label: isGlobal ? '全庫原本對(LV5)又錯了' : '原本對(LV5)又錯了',
                             data: viewRelapses,
                             borderColor: '#F43F5E',
                             backgroundColor: 'rgba(244, 63, 94, 0.15)',
@@ -12900,7 +12900,7 @@
                                     return [
                                         `  └ 新學: ${viewNew[idx]} 字 ／ 複習: ${viewRev[idx]} 字`,
                                         `  └ 累計已學: ${viewCumulative[idx]} 字 ／ 累計熟練: ${viewMastered[idx]} 字`,
-                                        `  └ ⚠️ 原本5星又錯: 累計 ${viewRelapses[idx]} 字 (當日 +${viewDailyRelapses[idx]} 字)`
+                                        `  └ ⚠️ 原本對(LV5)又錯: 累計 ${viewRelapses[idx]} 字 (當日 +${viewDailyRelapses[idx]} 字)`
                                     ];
                                 }
                             }

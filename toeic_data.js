@@ -27774,7 +27774,7 @@ const toeicWordsDB = [
         "en": "tailor",
         "kk": "[ˋtelɚ]",
         "uk": "/ˈteɪlə(r)/",
-        "zh": "n. 裁縫、藍魚；vt. 定做、迎合、使適應",
+        "zh": "n. 裁縫、裁縫師；vt. 定做、迎合、使適應",
         "unit": 13,
         "example": "The tailor delicately plied his needle.",
         "exampleZh": "裁縫精巧地飛針走線。"

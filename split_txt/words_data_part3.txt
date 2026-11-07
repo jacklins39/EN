@@ -254,7 +254,7 @@
     "en": "toe",
     "kk": "[to]",
     "uk": "/təʊ/",
-    "zh": "n. 腳趾、趾、足尖部、端部；v. 用腳尖推、足尖朝內（或外）行走、前束",
+    "zh": "n. 腳趾、趾、足尖部",
     "unit": 3,
     "example": "She wiggled her toes against the packed sand.",
     "exampleZh": "她用腳趾撥弄著板結的沙子。"
@@ -1964,7 +1964,7 @@
     "en": "pale",
     "kk": "[pel]",
     "uk": "/peɪl/",
-    "zh": "adj. 蒼白的、黯淡的、淺的、淡的；vi. 變蒼白、變淡、變淺、使褪色；n. 板條、尖樁、界限、範圍",
+    "zh": "adj. 蒼白的、黯淡的、淺的、淡的；vi. 變蒼白、變淡",
     "unit": 3,
     "example": "Rachel looked pale and weary.",
     "exampleZh": "雷切爾看起來蒼白而疲憊。"
@@ -2014,7 +2014,7 @@
     "en": "primary",
     "kk": "[ˋpraɪ͵mɛri]",
     "uk": "/ˈpraɪməri/",
-    "zh": "adj. 主要的、首要的、小學教育的、初級教育的；n. 初選、原色、初級飛羽",
+    "zh": "adj. 主要的、首要的、初級的；n. 初選",
     "unit": 3,
     "example": "We turn now to our primary question.",
     "exampleZh": "我們現在轉到我們的主要問題上。"
@@ -9584,7 +9584,7 @@
     "en": "priest",
     "kk": "[prist]",
     "uk": "/priːst/",
-    "zh": "n. 牧師、神父、神職人員、木漁槌；v. 任命……為司鐸",
+    "zh": "n. 牧師、神父、神職人員",
     "unit": 3,
     "example": "The priest anointed her with oil.",
     "exampleZh": "神父為她傅油。"

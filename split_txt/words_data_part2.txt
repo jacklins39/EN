@@ -7124,7 +7124,7 @@
     "en": "mango",
     "kk": "[ˋmæŋɡo]",
     "uk": "/ˈmæŋɡəʊ/",
-    "zh": "n. 芒果、芒果樹、芒果蜂鳥",
+    "zh": "n. 芒果、芒果樹",
     "unit": 2,
     "example": "This sweet mango is yellow and soft.",
     "exampleZh": "這顆甜芒果又黃又軟。"
@@ -8184,7 +8184,7 @@
     "en": "pineapple",
     "kk": "[ˋpaɪ͵næpəl]",
     "uk": "/ˈpaɪnæp(ə)l/",
-    "zh": "n. 鳳梨、[園藝]菠蘿、[園藝]鳳梨；adj. 鳳梨科的",
+    "zh": "n. 鳳梨、菠蘿",
     "unit": 2,
     "example": "Mango and pineapple are yellow.",
     "exampleZh": "芒果和菠蘿是黃色的。"
@@ -8204,7 +8204,7 @@
     "en": "pink",
     "kk": "[pɪŋk]",
     "uk": "/pɪŋk/",
-    "zh": "adj. 粉紅色的、臉色發紅的、同性戀的、左傾的；n. 粉紅色、粉紅色衣服或衣料、粉紅色葡萄酒、石竹；v. 發響爆聲、爆震、變成粉紅色、剪",
+    "zh": "adj. 粉紅色的；n. 粉紅色；v. 變成粉紅色",
     "unit": 2,
     "example": "She wore a cute pink dress today.",
     "exampleZh": "她今天穿了一件可愛的粉紅色洋裝。"
@@ -9284,7 +9284,7 @@
     "en": "shorts",
     "kk": "[ʃɔrts]",
     "uk": "/ʃɔːts/",
-    "zh": "n. 短褲、男內褲、短片、細麩粉；v. 短路",
+    "zh": "n. 短褲、男內褲、短片",
     "unit": 2,
     "example": "He wears blue shorts in summer.",
     "exampleZh": "他夏天穿著藍色短褲。"
@@ -9454,7 +9454,7 @@
     "en": "sock",
     "kk": "[sɑk]",
     "uk": "/sɒk/",
-    "zh": "n. 短襪、猛擊、重擊、白色標記；vt. 猛擊、使遭損失、損害、狠打",
+    "zh": "n. 短襪、猛擊、重擊；vt. 猛擊、狠打",
     "unit": 2,
     "example": "I lost my left white sock.",
     "exampleZh": "我弄丟了我的左邊白襪子。"

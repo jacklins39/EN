@@ -3344,7 +3344,7 @@
     "en": "barren",
     "kk": "[ˋbærən]",
     "uk": "/ˈbærən/",
-    "zh": "adj. 貧瘠的、荒蕪的、不妊的、不毛的；n. 瘠地",
+    "zh": "adj. 貧瘠的、荒蕪的、不結果實的",
     "unit": 11,
     "example": "The land was barren and infertile.",
     "exampleZh": "這片土地荒蕪而貧瘠。"

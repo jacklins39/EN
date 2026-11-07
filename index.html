@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261107V21';
+        const APP_BUILD_VERSION = '20261107V22';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -63,20 +63,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261107V21"></script>
-    <script src="toeic_data.js?v=20261107V21"></script>
-    <script src="jh_data.js?v=20261107V21"></script>
-    <script src="listening_data.js?v=20261107V21"></script>
-    <script src="listening_words_data.js?v=20261107V21"></script>
-    <script src="uk_phonetics_manifest.js?v=20261107V21"></script>
-    <script src="words_audio_manifest.js?v=20261107V21"></script>
-    <script src="examples_audio_manifest.js?v=20261107V21"></script>
-    <script src="zh_audio_manifest.js?v=20261107V21"></script>
-    <script src="collocations_audio_manifest.js?v=20261107V21"></script>
-    <script src="syn_ant_data.js?v=20261107V21"></script>
-    <script src="synonyms_unit8_data.js?v=20261107V21"></script>
-    <script src="examples_unit9_data.js?v=20261107V21"></script>
-    <script src="game_whack.js?v=20261107V21"></script>
+    <script src="words_data.js?v=20261107V22"></script>
+    <script src="toeic_data.js?v=20261107V22"></script>
+    <script src="jh_data.js?v=20261107V22"></script>
+    <script src="listening_data.js?v=20261107V22"></script>
+    <script src="listening_words_data.js?v=20261107V22"></script>
+    <script src="uk_phonetics_manifest.js?v=20261107V22"></script>
+    <script src="words_audio_manifest.js?v=20261107V22"></script>
+    <script src="examples_audio_manifest.js?v=20261107V22"></script>
+    <script src="zh_audio_manifest.js?v=20261107V22"></script>
+    <script src="collocations_audio_manifest.js?v=20261107V22"></script>
+    <script src="syn_ant_data.js?v=20261107V22"></script>
+    <script src="synonyms_unit8_data.js?v=20261107V22"></script>
+    <script src="examples_unit9_data.js?v=20261107V22"></script>
+    <script src="game_whack.js?v=20261107V22"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -3480,9 +3480,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261107V21</span>
+                        <span id="app-version-display">版本 20261107V22</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261107V21</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261107V22</p>
                 </div>
             </div>
         </div>
@@ -6642,6 +6642,7 @@
                     autoFlashcardTimerId = setTimeout(() => {
                         if (!isAutoFlashcardMode) return;
                         flashcard.classList.add('flipped');
+                        try { updateStudyQueueStrip(true); } catch(e){}
                         const cardBack = flashcard?.querySelector('.flip-card-back');
                         if (cardBack) cardBack.scrollTop = 0;
 
@@ -6801,7 +6802,7 @@
             }
         }
 
-        function updateStudyQueueStrip() {
+        function updateStudyQueueStrip(isFlipped = false) {
             const strip = document.getElementById('study-queue-strip');
             if (!strip) return;
 
@@ -6816,20 +6817,14 @@
             const container = document.getElementById('study-queue-items');
             if (!container || !currentWord) return;
 
-            // 維護最近已播放歷史 (最多保留 2 筆)
-            if (!recentSessionHistory.some(w => w.id === currentWord.id)) {
-                recentSessionHistory.push(currentWord);
-                if (recentSessionHistory.length > 3) recentSessionHistory.shift();
-            }
-
+            // 維護最近已播放歷史 (保留已念過單字，最多 4 筆)
             const pastWords = recentSessionHistory.filter(w => w.id !== currentWord.id);
-            const nextWords = sessionQueue.slice(0, 6);
 
-            let html = '';
+            let queueHtml = '';
 
-            // 1. 已播放前置單字 (灰色、劃線、勾選)
-            pastWords.forEach((pw, idx) => {
-                html += `
+            // 1. 已經念過的單字 (已念過，展示英文與中文釋義，隨時可回溫)
+            pastWords.forEach((pw) => {
+                queueHtml += `
                     <div onclick="jumpToQueueWord(${pw.id})" class="flex-shrink-0 px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700 text-slate-400 dark:text-slate-500 hover:text-slate-700 dark:hover:text-slate-200 cursor-pointer transition-all flex items-center gap-2 group" title="回跳溫習">
                         <span class="text-[10px] font-bold text-emerald-500 group-hover:scale-110 transition-transform">✓</span>
                         <div class="text-left">
@@ -6840,37 +6835,31 @@
                 `;
             });
 
-            // 2. 當前播放中 (發光高亮、波形圖示、大字)
-            html += `
+            // 2. 當前正在念的單字 (若還在正面聽英文，中文絕不提前劇透出現；翻面念到中文時才揭曉！)
+            const showZhNow = isFlipped || (flashcard && flashcard.classList.contains('flipped'));
+            const currentZhHtml = showZhNow 
+                ? `<div class="text-[11px] text-slate-600 dark:text-blue-200 font-medium truncate max-w-[120px] transition-all">${esc(getConciseZh(currentWord.zh) || currentWord.zh)}</div>`
+                : `<div class="text-[10px] text-blue-400/70 font-mono italic truncate max-w-[120px] transition-all">🎧 英文朗讀中...</div>`;
+
+            // 當前單字序號與頂部進度精準同步
+            const currentSeq = Math.max(1, cardsCompleted || 1);
+
+            queueHtml += `
                 <div class="flex-shrink-0 px-3.5 py-2 rounded-xl bg-[#0071E3]/15 dark:bg-[#0071E3]/25 border-2 border-[#0071E3] text-white shadow-[0_0_15px_rgba(0,113,227,0.3)] flex items-center gap-2.5 scale-102 transition-all">
                     <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
                     <div class="text-left">
                         <div class="text-xs sm:text-sm font-extrabold text-[#0071E3] dark:text-blue-300 flex items-center gap-1.5">
-                            <span>${cardsCompleted + 1}. ${esc(currentWord.en)}</span>
+                            <span>${currentSeq}. ${esc(currentWord.en)}</span>
                             <span class="text-xs animate-pulse">🔊</span>
                         </div>
-                        <div class="text-[11px] text-slate-600 dark:text-blue-200 font-medium truncate max-w-[120px]">
-                            ${esc(getConciseZh(currentWord.zh) || currentWord.zh)}
-                        </div>
+                        ${currentZhHtml}
                     </div>
                 </div>
             `;
 
-            // 3. 待播放後續單字
-            nextWords.forEach((nw, idx) => {
-                const seq = cardsCompleted + 2 + idx;
-                html += `
-                    <div onclick="jumpToQueueWord(${nw.id})" class="flex-shrink-0 px-3 py-1.5 rounded-xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200/70 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 cursor-pointer transition-all flex items-center gap-2 group" title="點擊提前播放">
-                        <span class="text-[10px] font-mono text-slate-400 group-hover:text-[#0071E3]">${seq}</span>
-                        <div class="text-left">
-                            <div class="text-xs font-bold text-slate-800 dark:text-slate-100 group-hover:text-[#0071E3] transition-colors">${esc(nw.en)}</div>
-                            <div class="text-[10px] text-slate-400 dark:text-slate-400 truncate max-w-[90px]">${esc(getConciseZh(nw.zh) || nw.zh)}</div>
-                        </div>
-                    </div>
-                `;
-            });
+            // 3. ★ 還沒念到的後續單字：徹底移除！完全不出現！(嚴格遵守「還沒念到的 不要出現」)
 
-            container.innerHTML = html;
+            container.innerHTML = queueHtml;
         }
 
         function jumpToQueueWord(wordId) {
@@ -7841,6 +7830,7 @@
             if (isShowingAnswer) return;
             isShowingAnswer = true;
             flashcard.classList.add('flipped');
+            try { updateStudyQueueStrip(true); } catch(e){}
             actionShowAnswer.classList.add('hidden');
             actionRate.classList.remove('hidden');
             const cardBack = flashcard?.querySelector('.flip-card-back');

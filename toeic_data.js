@@ -4,7 +4,7 @@ const toeicWordsDB = [
         "en": "abandon",
         "kk": "[əˋbændən]",
         "uk": "/əˈbændən/",
-        "zh": "vt. 拋棄、遺棄、離開、捨棄；n. 放任、放縱",
+        "zh": "vt. 放棄、拋棄、遺棄、離開；n. 放任、放縱",
         "unit": 11,
         "example": "The captain gave the order to abandon ship.",
         "exampleZh": "船長下令棄船。"
@@ -14,7 +14,7 @@ const toeicWordsDB = [
         "en": "abide",
         "kk": "[əˋbaɪd]",
         "uk": "/əˈbaɪd/",
-        "zh": "v. 忍受、容忍、遵守、居住",
+        "zh": "v. 忍受、等候、遵守、容忍",
         "unit": 11,
         "example": "They have got to abide by the rules.",
         "exampleZh": "他們必須要遵守規定。"
@@ -34,7 +34,7 @@ const toeicWordsDB = [
         "en": "able",
         "kk": "[ˋebəl]",
         "uk": "/ˈeɪb(ə)l/",
-        "zh": "adj. 能、可、會、能夠",
+        "zh": "adj. 能、有能力的、能夠、聰明能幹的",
         "unit": 11,
         "example": "She was barely able to stand.",
         "exampleZh": "她幾乎無法站立。"
@@ -64,7 +64,7 @@ const toeicWordsDB = [
         "en": "aboard",
         "kk": "[əˋbɔrd]",
         "uk": "/əˈbɔːd/",
-        "zh": "adv. 在(交通工具)上、上、在（船、飛機、火車等）上、騎在（馬）上；prep. 在(交通工具)上、在（船、飛機、火車等）上、上、騎在（馬）上",
+        "zh": "adv. 上、在（船、飛機、火車等）上、騎在（馬）上、跨上；prep. 在(船、飛機,車)上、在（船、飛機、火車等）上、上、騎在（馬）上",
         "unit": 11,
         "example": "She invited 750 people aboard the luxury yacht, the Savarona.",
         "exampleZh": "她邀請了750人登上這艘豪華遊艇，薩瓦羅納號。"
@@ -84,7 +84,7 @@ const toeicWordsDB = [
         "en": "aborigine",
         "kk": "[͵æbɚˋɪdʒəni]",
         "uk": "/ˌæbəˈrɪdʒəni/",
-        "zh": "n. 土著、原住民、土著居民、澳大利亞原住民",
+        "zh": "n. 土著居民、土著、原住民、澳大利亞原住民",
         "unit": 11,
         "example": "Said one aborigine suddenly in very orthodox English.",
         "exampleZh": "一名土著人突然用相當標準的英語說道。"
@@ -104,7 +104,7 @@ const toeicWordsDB = [
         "en": "abound",
         "kk": "[əˋbaʊnd]",
         "uk": "/əˈbaʊnd/",
-        "zh": "vi. 富足、充滿、大量存在、有許多",
+        "zh": "vi. 大量存在、富足、充滿、有許多",
         "unit": 11,
         "example": "Opportunities for misinterpretation, error, and self-deception abound.",
         "exampleZh": "誤解、犯錯和自我欺騙的機會比比皆是。"
@@ -124,7 +124,7 @@ const toeicWordsDB = [
         "en": "above",
         "kk": "[əˋbʌv]",
         "uk": "/əˈbʌv/",
-        "zh": "prep. 在……上面、優於、勝過、在……以上；adv. 向上面、高於、在（或向）上面；adj. 前文述及的、上述的；n. 上文提及之事、前文所提之事",
+        "zh": "prep. 在……以上、超過、在（或向）……上面、高於；adv. 高於、在（或向）上面、在（或向）較高處；adj. 前文述及的、上述的；n. 上文提及之事、前文所提之事",
         "unit": 11,
         "example": "The cliffs towered above them.",
         "exampleZh": "懸崖高聳在他們上方。"
@@ -144,7 +144,7 @@ const toeicWordsDB = [
         "en": "abrupt",
         "kk": "[əˋbrʌpt]",
         "uk": "/əˈbrʌpt/",
-        "zh": "adj. 突然的、唐突的、意外的、粗魯的",
+        "zh": "adj. 突然的、意外的、粗魯的、唐突的",
         "unit": 11,
         "example": "He was abrupt to the point of rudeness.",
         "exampleZh": "他唐突到了無禮的地步。"
@@ -164,7 +164,7 @@ const toeicWordsDB = [
         "en": "absence",
         "kk": "[ˋæbsəns]",
         "uk": "/ˈæbsəns/",
-        "zh": "n. 不在、缺席、缺勤、缺乏",
+        "zh": "n. 缺席、缺勤、不在、缺乏",
         "unit": 11,
         "example": "She did not mention her mother's absence.",
         "exampleZh": "她沒有提到她母親缺席的事。"
@@ -174,7 +174,7 @@ const toeicWordsDB = [
         "en": "absent",
         "kk": "[ˋæbsənt]",
         "uk": "/ˈæbsənt/",
-        "zh": "adj. 缺席的、不在場的、缺勤的、不存在的；prep. 缺乏、沒有；v. 缺席、離開",
+        "zh": "adj. 缺勤的、缺席的、不存在的、缺乏的；prep. 缺乏、沒有；v. 缺席、離開",
         "unit": 11,
         "example": "She was absent for nine consecutive days.",
         "exampleZh": "她已經連續缺席九天了。"
@@ -184,7 +184,7 @@ const toeicWordsDB = [
         "en": "absolute",
         "kk": "[ˋæbsə͵lut]",
         "uk": "/ˈæbsəluːt/",
-        "zh": "adj. 純粹的、完全的、絕對的、無疑的；n. 絕對真理、絕對原則",
+        "zh": "adj. 絕對的、完全的、純粹的、無疑的；n. 絕對真理、絕對原則",
         "unit": 11,
         "example": "There are no absolute rules.",
         "exampleZh": "沒有絕對的準則。"
@@ -214,7 +214,7 @@ const toeicWordsDB = [
         "en": "abstract",
         "kk": "[æbˋstrækt]",
         "uk": "/ˈæbstrækt/",
-        "zh": "adj. 抽象的、深奧的、純概念的、抽象派的；n. 摘要、抽象派藝術作品、梗概、抽象畫；v. 抽象化、從理論上（或孤立地）考慮、提取、使分離",
+        "zh": "adj. 抽象的、理論的、純概念的、抽象派的；n. 摘要、梗概、抽象畫、抽象派藝術作品；v. 抽象化、從理論上（或孤立地）考慮、提取、使分離",
         "unit": 11,
         "example": "Abstract art is an acquired taste.",
         "exampleZh": "要慢慢培養才會欣賞抽象藝術。"
@@ -224,7 +224,7 @@ const toeicWordsDB = [
         "en": "absurd",
         "kk": "[əbˋsɝd]",
         "uk": "/əbˈsɜːd/",
-        "zh": "adj. 不合理的、荒謬的、愚蠢的、滑稽可笑的；n. 荒誕、荒誕的事物",
+        "zh": "adj. 荒謬的、愚蠢的、滑稽可笑的、荒誕派的；n. 荒誕、荒誕的事物",
         "unit": 11,
         "example": "His high-flown style just sounds absurd today.",
         "exampleZh": "他的浮誇風格如今聽起來真是荒謬。"
@@ -244,7 +244,7 @@ const toeicWordsDB = [
         "en": "abundant",
         "kk": "[əˋbʌndənt]",
         "uk": "/əˈbʌndənt/",
-        "zh": "adj. 大量的、豐富的、充足的",
+        "zh": "adj. 大量的、充足的、豐富的",
         "unit": 11,
         "example": "There is an abundant supply of cheap labour.",
         "exampleZh": "有豐富的廉價勞動力供應。"
@@ -254,7 +254,7 @@ const toeicWordsDB = [
         "en": "abuse",
         "kk": "[əˋbjus]",
         "uk": "/əˈbjuːs/",
-        "zh": "vt. 虐待、濫用、辜負、辱罵；n. 濫用、虐待、凌辱、妄用",
+        "zh": "vt. 濫用、虐待、辜負、辱罵；n. 虐待、凌辱、濫用、妄用",
         "unit": 11,
         "example": "Rival fans hurled abuse at each other.",
         "exampleZh": "兩幫對立的球迷相互高聲辱罵。"
@@ -274,7 +274,7 @@ const toeicWordsDB = [
         "en": "academic",
         "kk": "[͵ækəˋdɛmɪk]",
         "uk": "/ˌækəˈdemɪk/",
-        "zh": "adj. 學校的、學術的、學業的、學院的；n. 學者、學究、大學教師、課程",
+        "zh": "adj. 學術的、理論的、學業的、學校的；n. 大學教師、學者、課程、大學生",
         "unit": 11,
         "example": "Their academic standards are high.",
         "exampleZh": "他們的學術水平很高。"
@@ -284,7 +284,7 @@ const toeicWordsDB = [
         "en": "academy",
         "kk": "[əˋkædəmi]",
         "uk": "/əˈkædəmi/",
-        "zh": "n. 學院、大學、專科院校、研究院",
+        "zh": "n. 學院、大學、研究院、專科院校",
         "unit": 11,
         "example": "The Academy Awards appear to validate his career.",
         "exampleZh": "這些奧斯卡金像獎看來證實了他的職業生涯的價值。"
@@ -304,7 +304,7 @@ const toeicWordsDB = [
         "en": "accent",
         "kk": "[əkˋsɛnt]",
         "uk": "/ˈæksent/",
-        "zh": "n. 口音、腔調、土音、著重點；v. 強調、突出、重讀",
+        "zh": "n. 重音、腔調、口音、土音；v. 強調、突出、重讀、以重音演奏",
         "unit": 11,
         "example": "He mimicked her southern accent.",
         "exampleZh": "他滑稽地模仿她的南方口音。"
@@ -314,7 +314,7 @@ const toeicWordsDB = [
         "en": "accept",
         "kk": "[ækˋsɛpt]",
         "uk": "/əkˈsept/",
-        "zh": "vt. 接受、答應、收受、同意",
+        "zh": "vt. 接受、承認、收受、同意",
         "unit": 11,
         "example": "You have to accept the inevitable.",
         "exampleZh": "你必須接受不可避免的事情。"
@@ -334,7 +334,7 @@ const toeicWordsDB = [
         "en": "acceptance",
         "kk": "[ækˋsɛptəns]",
         "uk": "/əkˈseptəns/",
-        "zh": "n. 接受、贊同、認可、容忍",
+        "zh": "n. 接受、領受、承兌、認付",
         "unit": 11,
         "example": "The new laws have gained widespread acceptance.",
         "exampleZh": "新法律獲得廣泛贊同。"
@@ -344,7 +344,7 @@ const toeicWordsDB = [
         "en": "access",
         "kk": "[ˋæk͵sɛs]",
         "uk": "/ˈækses/",
-        "zh": "n. 進入、入口、通道、獲得的機會；vt. 使用、接近、進入、獲取；adj. 對外公開的",
+        "zh": "n. 進入、入口、通道、獲得的機會；vt. 接近、進入、獲取、訪問；adj. 對外公開的",
         "unit": 11,
         "example": "There is no vehicular access.",
         "exampleZh": "不通車。"
@@ -364,7 +364,7 @@ const toeicWordsDB = [
         "en": "accessible",
         "kk": "[ækˋsɛsəbəl]",
         "uk": "/əkˈsesəb(ə)l/",
-        "zh": "adj. 可接近的、可進入的、可到達的、易得到的",
+        "zh": "adj. 可(或易)接近的、可(或易)得到的、可到達的、可進入的",
         "unit": 11,
         "example": "The museum is easily accessible by car.",
         "exampleZh": "開車可以方便地到達博物館。"
@@ -374,7 +374,7 @@ const toeicWordsDB = [
         "en": "accessory",
         "kk": "[ækˋsɛsɚi]",
         "uk": "/əkˈsesəri/",
-        "zh": "n. 附件、配件、裝飾品、配飾；adj. 附屬的、輔助的、副的、同謀的",
+        "zh": "n. 附件、配件、裝飾品、配飾；adj. 輔助的、副的、附屬的、同謀的",
         "unit": 11,
         "example": "He was charged with being an accessory to murder.",
         "exampleZh": "他被控為謀殺罪的從犯。"
@@ -434,7 +434,7 @@ const toeicWordsDB = [
         "en": "accommodate",
         "kk": "[əˋkɑmə͵det]",
         "uk": "/əˈkɒmədeɪt/",
-        "zh": "vt. 使適應、使相符、為……提供住宿、容納",
+        "zh": "vt. 能容納、能提供……膳宿、給……方便、為……提供住宿",
         "unit": 11,
         "example": "The roads are built to accommodate gradual temperature changes.",
         "exampleZh": "這些道路是為適應氣溫的逐漸變化而建的。"
@@ -444,7 +444,7 @@ const toeicWordsDB = [
         "en": "accommodation",
         "kk": "[ə͵kɑməˋdeʃən]",
         "uk": "/əˌkɒməˈdeɪʃ(ə)n/",
-        "zh": "n. 適應、調節、住宿、膳宿",
+        "zh": "n. 適應、方便設施、住處、住宿",
         "unit": 11,
         "example": "The accommodation is simple but spacious.",
         "exampleZh": "住處簡樸但寬敞。"
@@ -474,7 +474,7 @@ const toeicWordsDB = [
         "en": "accomplishment",
         "kk": "[əˋkɑmplɪʃmənt]",
         "uk": "/əˈkʌmplɪʃmənt/",
-        "zh": "n. 成就、成績、技能、才藝",
+        "zh": "n. 成就、成績、造詣、實現",
         "unit": 11,
         "example": "Judy's most famous accomplishment was learning how to fly.",
         "exampleZh": "朱迪最著名的成就是學會了如何飛行。"
@@ -484,7 +484,7 @@ const toeicWordsDB = [
         "en": "accord",
         "kk": "[əˋkɔrd]",
         "uk": "/əˈkɔːd/",
-        "zh": "n. 協議、條約、符合、一致；vt. 使一致、調解、使受到、給予",
+        "zh": "n. 符合、協議、條約、一致；vt. 一致、使受到、給予、符合",
         "unit": 11,
         "example": "These results accord closely with our predictions.",
         "exampleZh": "這些結果和我們的預測相當一致。"
@@ -504,7 +504,7 @@ const toeicWordsDB = [
         "en": "account",
         "kk": "[əˋkaʊnt]",
         "uk": "/əˈkaʊnt/",
-        "zh": "n. 帳目、帳單、賬戶、戶頭；v. 把……視為、把……視作、認為、解釋",
+        "zh": "n. 帳戶、賬戶、戶頭、客戶；v. 說明、把……視作、認為、解釋",
         "unit": 11,
         "example": "What's your account number please?",
         "exampleZh": "請問你的賬戶號碼？"
@@ -524,7 +524,7 @@ const toeicWordsDB = [
         "en": "accountant",
         "kk": "[əˋkaʊntənt]",
         "uk": "/əˈkaʊntənt/",
-        "zh": "n. 會計師、會計人員、會計",
+        "zh": "n. 會計師、會計",
         "unit": 11,
         "example": "She has an appointment with her accountant.",
         "exampleZh": "她和她的會計師有個約會。"
@@ -534,7 +534,7 @@ const toeicWordsDB = [
         "en": "accounting",
         "kk": "[əˋkaʊntɪŋ]",
         "uk": "/əˈkaʊntɪŋ/",
-        "zh": "n. 會計學、結帳、會計、會計工作；v. 解釋、說明、佔（一定數量或比例）",
+        "zh": "n. 會計、會計學、會計工作、會計職業；v. 解釋、說明、佔（一定數量或比例）",
         "unit": 11,
         "example": "The debate revolves around specific accounting techniques.",
         "exampleZh": "這場討論圍繞具體的會計技巧。"
@@ -564,7 +564,7 @@ const toeicWordsDB = [
         "en": "accumulation",
         "kk": "[ə͵kjumjəˋleʃən]",
         "uk": "/əˌkjuːmjəˈleɪʃn/",
-        "zh": "n. 積累、積聚、堆積、堆積物",
+        "zh": "n. 累積、積聚、積累、堆積",
         "unit": 11,
         "example": "The gradual accumulation of capital enabled the firm to expand into overseas markets.",
         "exampleZh": "資本的逐步積累使該公司得以拓展至海外市場。"
@@ -594,7 +594,7 @@ const toeicWordsDB = [
         "en": "accuse",
         "kk": "[əˋkjuz]",
         "uk": "/əˈkjuːz/",
-        "zh": "vt. 控告、譴責、指控、指責",
+        "zh": "vt. 指控、控告、指責、譴責",
         "unit": 11,
         "example": "He laughs loudly when I accuse him of fibbing.",
         "exampleZh": "我指控他撒謊時，他笑得很大聲。"
@@ -604,7 +604,7 @@ const toeicWordsDB = [
         "en": "accustom",
         "kk": "[əˋkʌstəm]",
         "uk": "/əˈkʌstəm/",
-        "zh": "vt. 習慣、使習慣於、使適應於",
+        "zh": "vt. 使習慣於、使適應於",
         "unit": 11,
         "example": "She tried to accustom herself to the tight bandages.",
         "exampleZh": "她嘗試著使自己習慣那些緊繃的繃帶。"
@@ -614,7 +614,7 @@ const toeicWordsDB = [
         "en": "ache",
         "kk": "[ek]",
         "uk": "/eɪk/",
-        "zh": "vi. 疼痛、感到痛苦、渴望、哀痛；n. 疼痛、苦痛、痛苦、渴望",
+        "zh": "vi. 疼痛、渴望、哀痛、憐憫；n. 疼痛、苦痛、痛苦、渴望",
         "unit": 11,
         "example": "Mummy, I've got a tummy ache.",
         "exampleZh": "媽媽，我肚子疼。"
@@ -624,7 +624,7 @@ const toeicWordsDB = [
         "en": "achieve",
         "kk": "[əˋtʃiv]",
         "uk": "/əˈtʃiːv/",
-        "zh": "vt. 完成、實現、達到、取得",
+        "zh": "vt. 達成、實現、達到、取得",
         "unit": 11,
         "example": "The medicine did not achieve the desired effect.",
         "exampleZh": "這種藥未達到預期效果。"
@@ -634,7 +634,7 @@ const toeicWordsDB = [
         "en": "achievement",
         "kk": "[əˋtʃivmənt]",
         "uk": "/əˈtʃiːvmənt/",
-        "zh": "n. 達成、完成、成績、成就",
+        "zh": "n. 成就、成績、完成、實現",
         "unit": 11,
         "example": "It is an impressive achievement.",
         "exampleZh": "這是一項令人敬佩的成就。"
@@ -654,7 +654,7 @@ const toeicWordsDB = [
         "en": "acknowledgement",
         "kk": "[ækˋnɑlɪdʒmənt]",
         "uk": "/əkˈnɒlɪdʒmənt/",
-        "zh": "n. 承認、確認、認可、感謝",
+        "zh": "n. 承認、確認、致謝、回音",
         "unit": 11,
         "example": "The flowers were a small acknowledgement of your kindness.",
         "exampleZh": "這些花聊表謝意，感謝你的好心幫助。"
@@ -664,7 +664,7 @@ const toeicWordsDB = [
         "en": "acquire",
         "kk": "[əkˋwaɪɚ]",
         "uk": "/əˈkwaɪə(r)/",
-        "zh": "vt. 取得、獲得、得到、學到",
+        "zh": "vt. 獲得、學會、得到、學到",
         "unit": 11,
         "example": "People must acquire this skill somewhere.",
         "exampleZh": "人們必須從某個地方獲得這種技能。"
@@ -684,7 +684,7 @@ const toeicWordsDB = [
         "en": "acquisition",
         "kk": "[͵ækwəˋzɪʃən]",
         "uk": "/ˌækwɪˈzɪʃ(ə)n/",
-        "zh": "n. 獲得、取得、學得、習得",
+        "zh": "n. 收購、取得、學得、習得",
         "unit": 11,
         "example": "What's the cost of customer acquisition?",
         "exampleZh": "獲得一個客戶的成本有多大？"
@@ -694,7 +694,7 @@ const toeicWordsDB = [
         "en": "acre",
         "kk": "[ˋekɚ]",
         "uk": "/ˈeɪkə(r)/",
-        "zh": "n. 英畝、地產、大片、大量",
+        "zh": "n. 英畝、大片、大量",
         "unit": 11,
         "example": "50 five-acre parcels have already been sold.",
         "exampleZh": "五英畝一塊的土地已經售出50塊。"
@@ -714,7 +714,7 @@ const toeicWordsDB = [
         "en": "act",
         "kk": "[ækt]",
         "uk": "/ækt/",
-        "zh": "v. 扮演、做事、見效、行動；n. 行為、行動、法案、裝模作樣",
+        "zh": "v. 行動、舉動、表現、假裝；n. 行為、行動、法案、裝模作樣",
         "unit": 11,
         "example": "Can you act as interpreter?",
         "exampleZh": "你能擔任翻譯嗎？"
@@ -724,7 +724,7 @@ const toeicWordsDB = [
         "en": "action",
         "kk": "[ˋækʃən]",
         "uk": "/ˈækʃ(ə)n/",
-        "zh": "n. 行動、行為、戰鬥、訴訟；vt. 處理；adj. 動作（片）的、動作片中的",
+        "zh": "n. 動作、行動、行為、戰鬥；vt. 處理；adj. 動作（片）的、動作片中的",
         "unit": 11,
         "example": "Take whatever action is needed.",
         "exampleZh": "採取任何需要的行動。"
@@ -744,7 +744,7 @@ const toeicWordsDB = [
         "en": "active",
         "kk": "[ˋæktɪv]",
         "uk": "/ˈæktɪv/",
-        "zh": "adj. 活躍的、活潑的、積極的、好動的；n. 主動語態",
+        "zh": "adj. 活躍的、好動的、積極主動的、定期進行的；n. 主動語態",
         "unit": 11,
         "example": "They were both politically active.",
         "exampleZh": "他們都是政治活躍分子。"
@@ -754,7 +754,7 @@ const toeicWordsDB = [
         "en": "activity",
         "kk": "[ækˋtɪvəti]",
         "uk": "/ækˈtɪvəti/",
-        "zh": "n. 活動、行動、活躍狀況、熱鬧",
+        "zh": "n. 活動、活躍狀況、熱鬧、熱力活性",
         "unit": 11,
         "example": "Parents encourage every activity imaginable.",
         "exampleZh": "父母鼓勵一切可能的活動。"
@@ -764,7 +764,7 @@ const toeicWordsDB = [
         "en": "actor",
         "kk": "[ˋæktɚ]",
         "uk": "/ˈæktə(r)/",
-        "zh": "n. 演員、行動者、像在演戲的人、參與者",
+        "zh": "n. 男演員、演員、像在演戲的人、參與者",
         "unit": 11,
         "example": "Grodin is a fine comic actor.",
         "exampleZh": "格羅丁是一位優秀的喜劇演員。"
@@ -784,7 +784,7 @@ const toeicWordsDB = [
         "en": "actual",
         "kk": "[ˋæktʃəwəl]",
         "uk": "/ˈæktʃuəl/",
-        "zh": "adj. 實際的、事實上的、真實的、現實的",
+        "zh": "adj. 實際的、真實的、現實的、真正的",
         "unit": 11,
         "example": "The actual cost was higher than we expected.",
         "exampleZh": "實際成本比我們預計的要高。"
@@ -804,7 +804,7 @@ const toeicWordsDB = [
         "en": "acute",
         "kk": "[əˋkjut]",
         "uk": "/əˈkjuːt/",
-        "zh": "adj. 嚴重的、敏銳的、危險的、急性的",
+        "zh": "adj. 尖銳的、敏銳的、劇烈的、嚴重的",
         "unit": 11,
         "example": "He collapsed from acute renal failure.",
         "exampleZh": "他的身體因嚴重的腎衰竭而垮掉了。"
@@ -814,7 +814,7 @@ const toeicWordsDB = [
         "en": "adapt",
         "kk": "[əˋdæpt]",
         "uk": "/əˈdæpt/",
-        "zh": "vt. 使適應、使適合、適應、調整",
+        "zh": "vt. 適應、改編、調整、使適合",
         "unit": 11,
         "example": "It's amazing how soon you adapt.",
         "exampleZh": "你這麼快就適應了，真是令人驚奇。"
@@ -834,7 +834,7 @@ const toeicWordsDB = [
         "en": "add",
         "kk": "[æd]",
         "uk": "/æd/",
-        "zh": "v. 添加、增加、新增、摻入；abbr. 注意力缺陷障礙、多動症",
+        "zh": "v. 添加、新增、摻入、相加；abbr. 注意力缺陷障礙、多動症",
         "unit": 11,
         "example": "Add up all the money I owe you.",
         "exampleZh": "把我欠你的錢全部加起來。"
@@ -844,7 +844,7 @@ const toeicWordsDB = [
         "en": "addict",
         "kk": "[əˋdɪkt]",
         "uk": "/ˈædɪkt/",
-        "zh": "n. 上癮者、癮君子、對……入迷的人；v. 使沉溺、使醉心、使上癮、使沉迷",
+        "zh": "n. 有癮的人、上癮者、癮君子、對……入迷的人；v. 使上癮、使沉迷",
         "unit": 11,
         "example": "What an Internet addict usually does?",
         "exampleZh": "一個網路成癮者通常會做些什麼？"
@@ -854,7 +854,7 @@ const toeicWordsDB = [
         "en": "addiction",
         "kk": "[əˋdɪkʃən]",
         "uk": "/əˈdɪkʃ(ə)n/",
-        "zh": "n. 沉溺、成癮、癮、入迷",
+        "zh": "n. 沈溺、上癮、癮、入迷",
         "unit": 11,
         "example": "She helped him fight his drug addiction.",
         "exampleZh": "她幫助了他對抗自己的毒癮。"
@@ -894,7 +894,7 @@ const toeicWordsDB = [
         "en": "address",
         "kk": "[ˋæ͵drɛs]",
         "uk": "/əˈdres/",
-        "zh": "n. 住址、地址、網址、電子郵箱地址；vt. 向……致詞、向……發表演說、演說、演講",
+        "zh": "n. 地址、住址、網址、電子郵箱地址；vt. 向…致詞、處理、演說、演講",
         "unit": 11,
         "example": "They had no permanent address.",
         "exampleZh": "他們沒有永久地址。"
@@ -934,7 +934,7 @@ const toeicWordsDB = [
         "en": "adjust",
         "kk": "[əˋdʒʌst]",
         "uk": "/əˈdʒʌst/",
-        "zh": "vt. 調整、校正、調節、整理",
+        "zh": "vt. 校準、調整、適應、調節",
         "unit": 11,
         "example": "How did you adjust to college life?",
         "exampleZh": "你是怎麼適應大學生活的？"
@@ -944,7 +944,7 @@ const toeicWordsDB = [
         "en": "adjustment",
         "kk": "[əˋdʒʌstmənt]",
         "uk": "/əˈdʒʌstmənt/",
-        "zh": "n. 調整、校正、調節、適應",
+        "zh": "n. 調節、調整、校正、適應",
         "unit": 11,
         "example": "Some adjustment of the lens may be necessary.",
         "exampleZh": "可能需要調整一下鏡頭。"
@@ -984,7 +984,7 @@ const toeicWordsDB = [
         "en": "admirable",
         "kk": "[ˋædmɚəbəl]",
         "uk": "/ˈædmərəb(ə)l/",
-        "zh": "adj. 值得讚揚的、令人欽佩的、極其出色的",
+        "zh": "adj. 值得讚揚的、絕妙的、令人欽佩的、極其出色的",
         "unit": 11,
         "example": "He was an admirable chairman.",
         "exampleZh": "他是位值得尊敬的主席。"
@@ -994,7 +994,7 @@ const toeicWordsDB = [
         "en": "admiration",
         "kk": "[͵ædmɚˋeʃən]",
         "uk": "/ˌædməˈreɪʃ(ə)n/",
-        "zh": "n. 欽佩、欣賞、讚美、讚美物件",
+        "zh": "n. 欽佩、羨慕、讚美、欣賞",
         "unit": 11,
         "example": "He professed his admiration for their work.",
         "exampleZh": "他表示欽佩他們的工作。"
@@ -1014,7 +1014,7 @@ const toeicWordsDB = [
         "en": "admit",
         "kk": "[ədˋmɪt]",
         "uk": "/ədˈmɪt/",
-        "zh": "vt. 承認、准許進入、招認、招供",
+        "zh": "vt. 承認、允許進入、招認、招供",
         "unit": 11,
         "example": "Admit it! You were terrified!",
         "exampleZh": "承認了吧！你嚇壞了！"
@@ -1034,7 +1034,7 @@ const toeicWordsDB = [
         "en": "adolescence",
         "kk": "[͵ædəˋlɛsəns]",
         "uk": "/ˌædəˈles(ə)ns/",
-        "zh": "n. 青春期、青少年時期、青春",
+        "zh": "n. 青春期、青春",
         "unit": 11,
         "example": "No one knows for sure why adolescence is unique to humans.",
         "exampleZh": "沒人確切知道為什麼青春期是人類獨有的。"
@@ -1044,7 +1044,7 @@ const toeicWordsDB = [
         "en": "adolescent",
         "kk": "[͵ædəˋlɛsənt]",
         "uk": "/ˌædəˈles(ə)nt/",
-        "zh": "n. 青少年；adj. 青少年的、幼稚的、青春期的、不成熟的",
+        "zh": "n. 青少年；adj. 青春期的、不成熟的",
         "unit": 11,
         "example": "Most adolescent problems are temporary.",
         "exampleZh": "多數青春期的問題都是暫時的。"
@@ -1054,7 +1054,7 @@ const toeicWordsDB = [
         "en": "adopt",
         "kk": "[əˋdɑpt]",
         "uk": "/əˈdɒpt/",
-        "zh": "vt. 採取、採納、收養、接受",
+        "zh": "vt. 採用、收養、採取、採納",
         "unit": 11,
         "example": "There is little or no incentive to adopt such measures.",
         "exampleZh": "幾乎或根本沒有鼓勵來採取這樣的措施。"
@@ -1084,7 +1084,7 @@ const toeicWordsDB = [
         "en": "adult",
         "kk": "[əˋdʌlt]",
         "uk": "/ˈædʌlt; əˈdʌlt/",
-        "zh": "n. 成年人、成年人或動物；adj. 成年的、成熟的、發育成熟的、成人的；v. 像成年人一樣表現、變成熟",
+        "zh": "n. 成人、成年人或動物；adj. 成年的、發育成熟的、成人的、理智的；v. 像成年人一樣表現、變成熟",
         "unit": 11,
         "example": "Each ticket admits one adult.",
         "exampleZh": "每張門票可容納一名成人。"
@@ -1094,7 +1094,7 @@ const toeicWordsDB = [
         "en": "advance",
         "kk": "[ədˋvæns]",
         "uk": "/ədˈvɑːns/",
-        "zh": "v. 前進、進展、向前移動、發展；n. 前進、進步、進展；adj. 先行的、預先的、事先的、先遣的",
+        "zh": "v. 前進、向前移動、發展、進步；n. 進步、前進、進展、改善；adj. 預先的、事先的、先行的、先遣的",
         "unit": 11,
         "example": "We will advance you the money.",
         "exampleZh": "我們將為您預支資金。"
@@ -1104,7 +1104,7 @@ const toeicWordsDB = [
         "en": "advanced",
         "kk": "[ədˋvænst]",
         "uk": "/ədˈvɑːnst/",
-        "zh": "adj. 在前面的、先進的、開明的、高階的；v. 行進、發展、進步、預付",
+        "zh": "adj. 先進的、高等的、高階的、晚期的；v. 行進、發展、進步、預付",
         "unit": 11,
         "example": "Oil shares advanced amid economic recovery hopes.",
         "exampleZh": "在一片經濟復甦的希望中石油股票價格上漲。"
@@ -1114,7 +1114,7 @@ const toeicWordsDB = [
         "en": "advantage",
         "kk": "[ædˋvæntɪdʒ]",
         "uk": "/ədˈvɑːntɪdʒ/",
-        "zh": "n. 優點、利益、有利條件、優勢；v. 有利於、使處於優勢、有助於",
+        "zh": "n. 優勢、好處、有利條件、優點；v. 有利於、有助於",
         "unit": 11,
         "example": "His height gives him a clear advantage.",
         "exampleZh": "他的身高使他具有明顯的優勢。"
@@ -1124,7 +1124,7 @@ const toeicWordsDB = [
         "en": "adventure",
         "kk": "[ædˋvɛntʃɚ]",
         "uk": "/ədˈventʃə(r)/",
-        "zh": "n. 冒險、冒險精神、奇遇、冒險的刺激；v. 冒險、大膽說出、去（某地）探險",
+        "zh": "n. 冒險、奇遇、冒險的刺激、冒險欲；v. 冒險、大膽說出、去（某地）探險",
         "unit": 11,
         "example": "He set off in quest of adventure.",
         "exampleZh": "他出行探險去了。"
@@ -1154,7 +1154,7 @@ const toeicWordsDB = [
         "en": "advertise",
         "kk": "[ˋædvɚ͵taɪz]",
         "uk": "/ˈædvətaɪz/",
-        "zh": "v. 廣告、公布、為……做廣告、登廣告",
+        "zh": "v. 做廣告、宣傳、為……做廣告、登廣告",
         "unit": 11,
         "example": "It's simply unethical to promote and advertise such a dangerous product.",
         "exampleZh": "給這樣一個危險的產品做宣傳廣告是極不道德的。"
@@ -1164,7 +1164,7 @@ const toeicWordsDB = [
         "en": "advertisement",
         "kk": "[ædˋvɝtəzmənt]",
         "uk": "/ədˈvɜːtɪsmənt/",
-        "zh": "n. 廣告、宣傳、活廣告、廣告活動",
+        "zh": "n. 廣告、活廣告、廣告活動、廣告宣傳",
         "unit": 11,
         "example": "The advertisement is for a men's fragrance.",
         "exampleZh": "這則廣告介紹一款男士香水。"
@@ -1174,7 +1174,7 @@ const toeicWordsDB = [
         "en": "advice",
         "kk": "[ædˋvaɪs]",
         "uk": "/ədˈvaɪs/",
-        "zh": "n. 勸告、忠告、建議、正式通知",
+        "zh": "n. 建議、忠告、勸告、正式通知",
         "unit": 11,
         "example": "He offered some useful advice.",
         "exampleZh": "他提出了一些有益的建議。"
@@ -1194,7 +1194,7 @@ const toeicWordsDB = [
         "en": "advise",
         "kk": "[ædˋvaɪz]",
         "uk": "/ədˈvaɪz/",
-        "zh": "vt. 勸告、忠告、通知、告知",
+        "zh": "vt. 勸告、通知、告知、建議",
         "unit": 11,
         "example": "I'd advise you against doing that.",
         "exampleZh": "我勸你別做那事。"
@@ -1204,7 +1204,7 @@ const toeicWordsDB = [
         "en": "adviser",
         "kk": "[ædˋvaɪzɚ]",
         "uk": "/ədˈvaɪzə(r)/",
-        "zh": "n. 顧問、勸告者、指導者",
+        "zh": "n. 顧問、指導教授、指導者",
         "unit": 11,
         "example": "He was their adviser, confidant and confessor.",
         "exampleZh": "他是他們的顧問、知己和傾訴物件。"
@@ -1214,7 +1214,7 @@ const toeicWordsDB = [
         "en": "advocate",
         "kk": "[ˋædvəkət]",
         "uk": "/ˈædvəkeɪt/",
-        "zh": "vt. 擁護、提倡；n. 提倡者、辯護者、律師、擁護者",
+        "zh": "vt. 擁護、提倡；n. 擁護者、提倡者、辯護律師、謀利益者",
         "unit": 11,
         "example": "He is a strident advocate of nuclear power.",
         "exampleZh": "他是發展核能的堅定擁護者。"
@@ -1224,7 +1224,7 @@ const toeicWordsDB = [
         "en": "affair",
         "kk": "[əˋfɛr]",
         "uk": "/əˈfeə(r)/",
-        "zh": "n. 事件、事務、公共事務、政治事務",
+        "zh": "n. 事件、風流韻事、喜慶活動、公共事務",
         "unit": 11,
         "example": "Lunch was a leisurely affair.",
         "exampleZh": "午餐吃得很悠閒。"
@@ -1234,7 +1234,7 @@ const toeicWordsDB = [
         "en": "affect",
         "kk": "[əˋfɛkt]",
         "uk": "/əˈfekt/",
-        "zh": "vt. 影響、對……發生作用、侵襲、感染；n. 情感、感情",
+        "zh": "vt. 影響、感動、侵襲、感染；n. 情感、感情",
         "unit": 11,
         "example": "Does television affect children's behaviour?",
         "exampleZh": "電視對孩子的行為有影響嗎？"
@@ -1244,7 +1244,7 @@ const toeicWordsDB = [
         "en": "affection",
         "kk": "[əˋfɛkʃən]",
         "uk": "/əˈfekʃn/",
-        "zh": "n. 愛、情愛、喜愛、關愛",
+        "zh": "n. 愛慕、鍾愛、喜愛、關愛",
         "unit": 11,
         "example": "She thought of him with affection.",
         "exampleZh": "她懷著喜愛想起了他。"
@@ -1254,7 +1254,7 @@ const toeicWordsDB = [
         "en": "affirm",
         "kk": "[əˋfɝm]",
         "uk": "/əˈfɜːm/",
-        "zh": "vt. 申明、堅稱、證實、斷言",
+        "zh": "vt. 斷言、申明、堅稱、證實",
         "unit": 11,
         "example": "I can affirm that no one will lose their job.",
         "exampleZh": "我可以肯定，誰都不會丟掉工作。"
@@ -1284,7 +1284,7 @@ const toeicWordsDB = [
         "en": "afraid",
         "kk": "[əˋfred]",
         "uk": "/əˈfreɪd/",
-        "zh": "adj. 害怕的、恐怕、遺憾、擔心的",
+        "zh": "adj. 害怕的、擔心的、不願意的、勉強的",
         "unit": 11,
         "example": "I'm afraid you guessed wrong.",
         "exampleZh": "恐怕你猜錯了。"
@@ -1294,7 +1294,7 @@ const toeicWordsDB = [
         "en": "after",
         "kk": "[ˋæftɚ]",
         "uk": "/ˈɑːftə(r)/",
-        "zh": "prep. 在⋯之後、在……之後、緊接著、一次接著一次；conj. 在⋯之後、在……以後；adv. 以後、後來；adj. 以後的、後部的、後來的、靠近船尾的",
+        "zh": "prep. 在……之後、緊接著、一次接著一次、持續不斷地；conj. 在……以後；adv. 後來、以後；adj. 後來的、以後的、靠近船尾的",
         "unit": 11,
         "example": "They arrived shortly after 5.",
         "exampleZh": "5點多他們就到了。"
@@ -1334,7 +1334,7 @@ const toeicWordsDB = [
         "en": "again",
         "kk": "[əˋɡɛn]",
         "uk": "/əˈgeɪn/",
-        "zh": "adv. 再、再一次、復原、請再說一遍",
+        "zh": "adv. 再一次、復原、請再說一遍、不過",
         "unit": 11,
         "example": "She smiled again, prettily.",
         "exampleZh": "她又笑了，笑得很漂亮。"
@@ -1344,7 +1344,7 @@ const toeicWordsDB = [
         "en": "against",
         "kk": "[əˋɡɛnst]",
         "uk": "/əˈɡenst/",
-        "zh": "prep. 反對、違反、違背……、禁止",
+        "zh": "prep. 反對、違反、靠著、對著",
         "unit": 11,
         "example": "Rain drove against the window.",
         "exampleZh": "雨打在窗戶上。"
@@ -1354,7 +1354,7 @@ const toeicWordsDB = [
         "en": "age",
         "kk": "[edʒ]",
         "uk": "/eɪdʒ/",
-        "zh": "n. 年齡、年紀、壽命、年代；vt. 變老、成熟、老化、顯老",
+        "zh": "n. 年齡、年紀、壽命、年代；vt. 變老、老化、顯老、蒼老",
         "unit": 11,
         "example": "She's long past retirement age.",
         "exampleZh": "她早已過了退休年齡。"
@@ -1364,7 +1364,7 @@ const toeicWordsDB = [
         "en": "agency",
         "kk": "[ˋedʒənsi]",
         "uk": "/ˈeɪdʒənsi/",
-        "zh": "n. 經銷處、代理機構、代理行、政府專門機構",
+        "zh": "n. 仲介、代理、代理行、經銷處",
         "unit": 11,
         "example": "I was headhunted by a marketing agency.",
         "exampleZh": "我被一家銷售代理公司物色上了。"
@@ -1374,7 +1374,7 @@ const toeicWordsDB = [
         "en": "agenda",
         "kk": "[əˋdʒɛndə]",
         "uk": "/əˈdʒendə/",
-        "zh": "n. 待議諸事項、議程、待議事項、議事日程",
+        "zh": "n. 議程、待議事項、議事日程、議題",
         "unit": 11,
         "example": "His agenda is discordant with ours.",
         "exampleZh": "他的日程與我們的有衝突。"
@@ -1384,7 +1384,7 @@ const toeicWordsDB = [
         "en": "agent",
         "kk": "[ˋedʒənt]",
         "uk": "/ˈeɪdʒənt/",
-        "zh": "n. 代理商、仲介人、智慧體、代理人",
+        "zh": "n. 代理人、特工、智慧體、代理商",
         "unit": 11,
         "example": "Beeswax acts as an emulsifying agent.",
         "exampleZh": "蜂蠟可以用作乳化劑。"
@@ -1394,7 +1394,7 @@ const toeicWordsDB = [
         "en": "aggression",
         "kk": "[əˋɡrɛʃən]",
         "uk": "/əˈɡreʃ(ə)n/",
-        "zh": "n. 侵略、好鬥性、攻擊性、侵犯",
+        "zh": "n. 侵略、侵犯行為、好鬥性、攻擊性",
         "unit": 11,
         "example": "Aggression is by no means a male-only trait.",
         "exampleZh": "攻擊性決不是男性獨有的特徵。"
@@ -1404,7 +1404,7 @@ const toeicWordsDB = [
         "en": "aggressive",
         "kk": "[əˋɡrɛsɪv]",
         "uk": "/əˈɡresɪv/",
-        "zh": "adj. 侵略的、好鬥的、挑釁的、積極進取的",
+        "zh": "adj. 好鬥的、挑釁的、有進取精神的、積極進取的",
         "unit": 11,
         "example": "These fish are very aggressive.",
         "exampleZh": "這些魚十分好鬥。"
@@ -1424,7 +1424,7 @@ const toeicWordsDB = [
         "en": "ago",
         "kk": "[əˋɡo]",
         "uk": "/əˈɡəʊ/",
-        "zh": "adv. 在……以前、以前、從前；adj. 以前的",
+        "zh": "adv. 以前、從前；adj. 以前的",
         "unit": 11,
         "example": "She was hired three years ago.",
         "exampleZh": "她三年前被錄用。"
@@ -1434,7 +1434,7 @@ const toeicWordsDB = [
         "en": "agree",
         "kk": "[əˋɡri]",
         "uk": "/əˈɡriː/",
-        "zh": "v. 同意、贊同、贊成、答應",
+        "zh": "v. 同意、贊成、答應、接受",
         "unit": 11,
         "example": "I don't agree with spanking.",
         "exampleZh": "我不同意打屁股。"
@@ -1444,7 +1444,7 @@ const toeicWordsDB = [
         "en": "agreement",
         "kk": "[əˋɡrimənt]",
         "uk": "/əˈɡriːmənt/",
-        "zh": "n. 同意、協定、協議、契約",
+        "zh": "n. 同意、協議、協定、契約",
         "unit": 11,
         "example": "Her head nodded in agreement.",
         "exampleZh": "她點頭同意。"
@@ -1454,7 +1454,7 @@ const toeicWordsDB = [
         "en": "agricultural",
         "kk": "[͵æɡrəˋkʌltʃɚəl]",
         "uk": "/ˌæɡrɪˈkʌltʃərəl/",
-        "zh": "adj. 農業的、務農的、與農業有關的、農用的",
+        "zh": "adj. 農業的、與農業有關的、務農的、農用的",
         "unit": 11,
         "example": "Rivers are a blessing for an agricultural country.",
         "exampleZh": "河流是農業國的福祉。"
@@ -1464,7 +1464,7 @@ const toeicWordsDB = [
         "en": "ahead",
         "kk": "[əˋhɛd]",
         "uk": "/əˈhed/",
-        "zh": "adv. 在前、向前、預先、在前面；adj. 在前的、提前的",
+        "zh": "adv. 在前面、提前、朝前面、領先；adj. 在前的、提前的",
         "unit": 11,
         "example": "Already, she is thinking ahead.",
         "exampleZh": "她已經在提前思考了。"
@@ -1474,7 +1474,7 @@ const toeicWordsDB = [
         "en": "aid",
         "kk": "[ed]",
         "uk": "/eɪd/",
-        "zh": "n. 幫助、救助、援助、輔助物；vt. 幫助、援助、促進",
+        "zh": "n. 援助、幫助、救助、輔助物；vt. 幫助、援助、促進、有助於",
         "unit": 11,
         "example": "Food aid is urgently needed.",
         "exampleZh": "迫切需要糧食援助。"
@@ -1484,7 +1484,7 @@ const toeicWordsDB = [
         "en": "aim",
         "kk": "[em]",
         "uk": "/eɪm/",
-        "zh": "n. 目標、目的、瞄準、對準；vt. 瞄準、對準、旨在",
+        "zh": "n. 目標、目的、瞄準、對準；vt. 瞄準、對準、旨在、致力於",
         "unit": 11,
         "example": "His aim was to become president.",
         "exampleZh": "他的目標是成為總統。"
@@ -1504,7 +1504,7 @@ const toeicWordsDB = [
         "en": "aircraft",
         "kk": "[ˋɛr͵kræft]",
         "uk": "/ˈeəkrɑːft/",
-        "zh": "n. 飛機、飛艇、航空器",
+        "zh": "n. 飛機、航空器",
         "unit": 11,
         "example": "The aircraft was gaining height.",
         "exampleZh": "飛機正在升高。"
@@ -1514,7 +1514,7 @@ const toeicWordsDB = [
         "en": "airline",
         "kk": "[ˋɛr͵laɪn]",
         "uk": "/ˈeəlaɪn/",
-        "zh": "n. 航線、航空公司、輸氣管；adj. 航線的",
+        "zh": "n. 航空公司、輸氣管、航線；adj. 航線的",
         "unit": 11,
         "example": "The airline regrets any inconvenience.",
         "exampleZh": "對於造成您的不便，航空公司深表歉意。"
@@ -1544,7 +1544,7 @@ const toeicWordsDB = [
         "en": "alarm",
         "kk": "[əˋlɑrm]",
         "uk": "/əˈlɑːm/",
-        "zh": "n. 警報、鬧鐘、警報器、驚恐；vt. 使驚慌不安、使恐懼、使不安、使恐慌",
+        "zh": "n. 警報、警報器、鬧鐘、驚恐；vt. 使驚慌、使不安、使恐慌、給（門等）安裝警報器",
         "unit": 11,
         "example": "An alarm bell went off.",
         "exampleZh": "警鐘響起。"
@@ -1554,7 +1554,7 @@ const toeicWordsDB = [
         "en": "alert",
         "kk": "[əˋlɝt]",
         "uk": "/əˈlɜːt/",
-        "zh": "adj. 警覺的、警惕的、機敏的、敏捷的；vt. 使警覺、使注意、向……報警、提示；n. 警戒、警報、警示、警惕",
+        "zh": "adj. 警覺的、警惕的、機敏的、敏捷的；vt. 警告、向……報警、使警覺、提示；n. 警報、警示、警戒、警惕",
         "unit": 11,
         "example": "Her whole bearing was alert.",
         "exampleZh": "她整個人保持著戒備狀態。"
@@ -1574,7 +1574,7 @@ const toeicWordsDB = [
         "en": "alike",
         "kk": "[əˋlaɪk]",
         "uk": "/əˈlaɪk/",
-        "zh": "adj. 相同的、相像的、相似的；adv. 一樣地、相似地、相同地、兩者都",
+        "zh": "adj. 相似的、相像的；adv. 同樣地、相似地、相同地、兩者都",
         "unit": 11,
         "example": "My sister and I do not look alike.",
         "exampleZh": "我和我姐姐長得不太像。"
@@ -1614,7 +1614,7 @@ const toeicWordsDB = [
         "en": "alley",
         "kk": "[ˋæli]",
         "uk": "/ˈæli/",
-        "zh": "n. 小巷、小徑、衚衕、球道",
+        "zh": "n. 小巷、後街、衚衕、小徑",
         "unit": 11,
         "example": "I dodged back into the alley and waited a minute.",
         "exampleZh": "我往後一閃，躲進衚衕裡等了一會兒。"
@@ -1654,7 +1654,7 @@ const toeicWordsDB = [
         "en": "allowance",
         "kk": "[əˋlaʊəns]",
         "uk": "/əˈlaʊəns/",
-        "zh": "n. 津貼、補貼、補助、限額；v. 為（某人）提供津貼、定量供應",
+        "zh": "n. 津貼、零用錢、補助、限額；v. 為（某人）提供津貼、定量供應",
         "unit": 11,
         "example": "The budget made allowance for inflation.",
         "exampleZh": "預算考慮到了通貨膨脹。"
@@ -1684,7 +1684,7 @@ const toeicWordsDB = [
         "en": "along",
         "kk": "[əˋlɔŋ]",
         "uk": "/əˈlɒŋ/",
-        "zh": "prep. 沿著、順著、靠著……邊、在某處；adv. 向前、一起、一道、進行",
+        "zh": "prep. 沿著、順著、靠著……邊、在某處；adv. 一起、向前、一道、進行",
         "unit": 11,
         "example": "Things are going along nicely.",
         "exampleZh": "事情進展順利。"
@@ -1694,7 +1694,7 @@ const toeicWordsDB = [
         "en": "already",
         "kk": "[ɔlˋrɛdi]",
         "uk": "/ɔːlˈredi/",
-        "zh": "adv. 已經、先前、早已、馬上",
+        "zh": "adv. 已經、早已、馬上、夠了",
         "unit": 11,
         "example": "Eight o'clock had already chimed.",
         "exampleZh": "八點鐘的鐘聲已經敲響。"
@@ -1714,7 +1714,7 @@ const toeicWordsDB = [
         "en": "alternate",
         "kk": "[ˋɔltɚnət]",
         "uk": "/ɔːlˈtɜːnət;ˈɔːltəneɪt/",
-        "zh": "adj. 交替的、輪流的、間隔的、供選擇的；v. 交替、輪流；n. 代理人、代替者、替補者、候補者",
+        "zh": "adj. 輪流的、交替的、間隔的、供選擇的；v. 交替、輪流；n. 替補者、候補者",
         "unit": 11,
         "example": "Dark stripes alternate with pale ones.",
         "exampleZh": "深淺條紋相間。"
@@ -1724,7 +1724,7 @@ const toeicWordsDB = [
         "en": "alternative",
         "kk": "[ɔlˋtɝnətɪv]",
         "uk": "/ɔːlˈtɜːnətɪv/",
-        "zh": "n. 選擇、二擇一、可供選擇的事物、替代物；adj. 替代的、供選擇的、可替代的、備選的",
+        "zh": "n. 替代方案、可供選擇的事物、替代物；adj. 另一選擇、可替代的、備選的、非傳統的",
         "unit": 11,
         "example": "There is no viable alternative.",
         "exampleZh": "沒有其他可行的措施。"
@@ -1734,7 +1734,7 @@ const toeicWordsDB = [
         "en": "altogether",
         "kk": "[͵ɔltəˋɡɛðɚ]",
         "uk": "/ˌɔːltəˈɡeðə(r)/",
-        "zh": "adv. 完全、全然、完全地、總共",
+        "zh": "adv. 完全地、總共、總之",
         "unit": 11,
         "example": "I don't altogether agree with you.",
         "exampleZh": "我不完全同意你的觀點。"
@@ -1744,7 +1744,7 @@ const toeicWordsDB = [
         "en": "amateur",
         "kk": "[ˋæmə͵tɝ]",
         "uk": "/ˈæmətə(r)/",
-        "zh": "n. 業餘、外行、業餘愛好者、生手；adj. 業餘的、外行的、非專業的、業餘愛好的",
+        "zh": "n. 業餘愛好者、生手、外行；adj. 業餘的、非專業的、業餘愛好的、不熟練的",
         "unit": 11,
         "example": "She was a keen amateur photographer.",
         "exampleZh": "她是一個痴迷的業餘攝影師。"
@@ -1754,7 +1754,7 @@ const toeicWordsDB = [
         "en": "amaze",
         "kk": "[əˋmez]",
         "uk": "/əˈmeɪz/",
-        "zh": "vt. 使驚奇、使驚愕",
+        "zh": "vt. 使驚奇、使驚嘆、使驚愕",
         "unit": 11,
         "example": "He never ceases to amaze me.",
         "exampleZh": "他總讓我驚喜不斷。"
@@ -1764,7 +1764,7 @@ const toeicWordsDB = [
         "en": "ambiguous",
         "kk": "[æmˋbɪɡjuəs]",
         "uk": "/æmˈbɪɡjuəs/",
-        "zh": "adj. 含糊不清的、引起歧義的、模稜兩可的、有歧義的",
+        "zh": "adj. 含糊不清的、模稜兩可的、有歧義的、不明朗的",
         "unit": 11,
         "example": "The wording was deliberately ambiguous.",
         "exampleZh": "這裡的措辭故意模稜兩可。"
@@ -1774,7 +1774,7 @@ const toeicWordsDB = [
         "en": "ambition",
         "kk": "[æmˋbɪʃən]",
         "uk": "/æmˈbɪʃ(ə)n/",
-        "zh": "n. 雄心、抱負、追求的目標、野心；v. 追求、有……野心",
+        "zh": "n. 野心、抱負、追求的目標、雄心；v. 追求、有……野心",
         "unit": 11,
         "example": "It had been her lifelong ambition.",
         "exampleZh": "這是她終身追求的目標。"
@@ -1804,7 +1804,7 @@ const toeicWordsDB = [
         "en": "amid",
         "kk": "[əˋmɪd]",
         "uk": "/əˈmɪd/",
-        "zh": "prep. 在⋯之間、被⋯包圍、在……過程中、在……中",
+        "zh": "prep. 在……之間、在……之中、在……過程中、在……中",
         "unit": 11,
         "example": "The firm collapsed amid allegations of fraud.",
         "exampleZh": "該公司在一片欺詐的指責聲中倒閉了。"
@@ -1814,7 +1814,7 @@ const toeicWordsDB = [
         "en": "among",
         "kk": "[əˋmʌŋ]",
         "uk": "/əˈmʌŋ/",
-        "zh": "prep. 在⋯之中、在⋯中間、在……當中、周圍是",
+        "zh": "prep. 在……之中、在……當中、周圍是、與……在一起",
         "unit": 11,
         "example": "Bees buzzed lazily among the flowers.",
         "exampleZh": "蜜蜂在花叢中慵懶地嗡嗡作響。"
@@ -1824,7 +1824,7 @@ const toeicWordsDB = [
         "en": "amount",
         "kk": "[əˋmaʊnt]",
         "uk": "/əˈmaʊnt/",
-        "zh": "n. 總數、總額、數量、量；vi. 共計、相當於、達到、總計",
+        "zh": "n. 數量、量、金額、錢數；vi. 總計、達到、等於、意味著",
         "unit": 11,
         "example": "Only a minute amount is needed.",
         "exampleZh": "只需要少量。"
@@ -1834,7 +1834,7 @@ const toeicWordsDB = [
         "en": "amplify",
         "kk": "[ˋæmplə͵faɪ]",
         "uk": "/ˈæmplɪfaɪ/",
-        "zh": "vt. 增強、擴大、放大、加強",
+        "zh": "vt. 放大、擴大、增強、加強",
         "unit": 11,
         "example": "This landscape seemed to trap and amplify sounds.",
         "exampleZh": "這種地形好像能聚攏和擴大聲音。"
@@ -1844,7 +1844,7 @@ const toeicWordsDB = [
         "en": "amuse",
         "kk": "[əˋmjuz]",
         "uk": "/əˈmjuːz/",
-        "zh": "vt. 使歡樂、使發笑、逗樂、逗笑",
+        "zh": "vt. 逗……高興、逗樂、逗笑、消遣",
         "unit": 11,
         "example": "This will amuse you.",
         "exampleZh": "這個會逗你笑的。"
@@ -1854,7 +1854,7 @@ const toeicWordsDB = [
         "en": "analyze",
         "kk": "[ˋænə͵laɪz]",
         "uk": "/ˈænəlaɪz/",
-        "zh": "vt. 分析、對……進行分析、剖析、研究；v. 分析",
+        "zh": "vt. 對……進行分析、剖析、研究、對……進行分解",
         "unit": 11,
         "example": "My main role was to analyze human excrement.",
         "exampleZh": "我的主要任務是分析人體排洩物。"
@@ -1864,7 +1864,7 @@ const toeicWordsDB = [
         "en": "angle",
         "kk": "[ˋæŋɡəl]",
         "uk": "/ˈæŋɡ(ə)l/",
-        "zh": "n. 角、角度、傾斜、斜角；v. 斜移、斜置、向（特定人群）提供資訊、定位於",
+        "zh": "n. 角度、觀點、角、傾斜；v. 斜移、斜置、向（特定人群）提供資訊、定位於",
         "unit": 11,
         "example": "Her leg was bent at an unnatural angle.",
         "exampleZh": "她的腿彎曲的角度反常。"
@@ -1874,7 +1874,7 @@ const toeicWordsDB = [
         "en": "animate",
         "kk": "[ˋænəmət]",
         "uk": "/ˈænɪmeɪt/",
-        "zh": "adj. 有生命的、有活力的；vt. 賦予生命、使有生命、使生動、使興奮",
+        "zh": "adj. 有生命的、有活力的；vt. 繪製、使生動、使興奮、把……製作成動畫",
         "unit": 11,
         "example": "There was precious little about the cricket to animate the crowd.",
         "exampleZh": "這場板球比賽極少有讓觀眾興奮的地方。"
@@ -1884,7 +1884,7 @@ const toeicWordsDB = [
         "en": "anniversary",
         "kk": "[͵ænəˋvɝsɚi]",
         "uk": "/ˌænɪˈvɜːsəri/",
-        "zh": "n. 週年紀念",
+        "zh": "n. 週年紀念日、週年紀念",
         "unit": 11,
         "example": "We celebrated our 25th wedding anniversary in Florence.",
         "exampleZh": "我們在佛羅倫薩慶祝結婚25週年。"
@@ -1894,7 +1894,7 @@ const toeicWordsDB = [
         "en": "announce",
         "kk": "[əˋnaʊns]",
         "uk": "/əˈnaʊns/",
-        "zh": "vt. 宣布、發布、宣佈、公佈",
+        "zh": "vt. 宣布、公布、宣佈、公佈",
         "unit": 11,
         "example": "They will announce the result of the vote tonight.",
         "exampleZh": "今晚他們將宣佈投票結果。"
@@ -1904,7 +1904,7 @@ const toeicWordsDB = [
         "en": "announcement",
         "kk": "[əˋnaʊnsmənt]",
         "uk": "/əˈnaʊnsmənt/",
-        "zh": "n. 通告、布告、公告、佈告",
+        "zh": "n. 宣佈、公告、佈告",
         "unit": 11,
         "example": "He was floored by the announcement.",
         "exampleZh": "他被這個通告震驚得不知所措。"
@@ -1914,7 +1914,7 @@ const toeicWordsDB = [
         "en": "annual",
         "kk": "[ˋænjuəl]",
         "uk": "/ˈænjuəl/",
-        "zh": "adj. 一年一次的、每年的、一年一度的、年度的；n. 一年生植物、年刊、年鑑",
+        "zh": "adj. 年度的、每年的、一年一度的、一年生的；n. 一年生植物、年刊、年鑑",
         "unit": 11,
         "example": "Annual boarding fees are $10,350.",
         "exampleZh": "每年的住校費是10,350美元。"
@@ -1934,7 +1934,7 @@ const toeicWordsDB = [
         "en": "anonymous",
         "kk": "[əˋnɑnəməs]",
         "uk": "/əˈnɒnɪməs/",
-        "zh": "adj. 匿名的、不知名的、不記名的",
+        "zh": "adj. 匿名的、不知名的、不記名的、不具名的",
         "unit": 11,
         "example": "The donor prefers to remain anonymous.",
         "exampleZh": "捐贈者希望不披露姓名。"
@@ -1944,7 +1944,7 @@ const toeicWordsDB = [
         "en": "another",
         "kk": "[əˋnʌðɚ]",
         "uk": "/əˈnʌðə(r)/",
-        "zh": "det. 另一、又一、另外一個、其他一個；pron. 又一個、再一個、另一個、另一種；adj. 又一、再一、再加一個的、另一的",
+        "zh": "det. 另一個、另一、又一、另外一個；pron. 又一個、再一個、另一個、另一種；adj. 再加一個的、另一的、不同的、另一類似的",
         "unit": 11,
         "example": "She was expecting another baby.",
         "exampleZh": "她正懷著另一個孩子。"
@@ -1954,7 +1954,7 @@ const toeicWordsDB = [
         "en": "answer",
         "kk": "[ˋænsɚ]",
         "uk": "/ˈɑːnsə(r)/",
-        "zh": "vt. 回答、答覆、回覆、接電話；n. 回答、答覆、答案、解決辦法",
+        "zh": "vt. 回答、答覆、回覆、接電話；n. 答案、回答、答覆、解決辦法",
         "unit": 11,
         "example": "Your answer is exactly right.",
         "exampleZh": "你的答案是完全正確的。"
@@ -1964,7 +1964,7 @@ const toeicWordsDB = [
         "en": "antibiotic",
         "kk": "[͵æntibaɪˋɑtɪk]",
         "uk": "/ˌæntibaɪˈɒtɪk/",
-        "zh": "n. 抗生素、抗菌素；adj. 抗生的、抗菌的、抗生素（有關）的、抗菌素（有關）的",
+        "zh": "n. 抗菌素、抗生素；adj. 抗生素、抗生素（有關）的、抗菌素（有關）的",
         "unit": 11,
         "example": "The antibiotic can kill very dangerous bacteria.",
         "exampleZh": "這種抗生素可以殺死非常危險的細菌。"
@@ -1974,7 +1974,7 @@ const toeicWordsDB = [
         "en": "anxiety",
         "kk": "[æŋˋzaɪəti]",
         "uk": "/æŋˈzaɪəti/",
-        "zh": "n. 焦慮、掛念、憂慮、令人焦慮的事",
+        "zh": "n. 焦慮、擔心、憂慮、令人焦慮的事",
         "unit": 11,
         "example": "Her voice was full of anxiety.",
         "exampleZh": "她的聲音飽含焦慮。"
@@ -1984,7 +1984,7 @@ const toeicWordsDB = [
         "en": "anxious",
         "kk": "[ˋæŋkʃəs]",
         "uk": "/ˈæŋkʃəs/",
-        "zh": "adj. 焦慮的、掛念的、擔心的、渴望的",
+        "zh": "adj. 焦慮的、急切的、擔心的、渴望的",
         "unit": 11,
         "example": "He appeared anxious to please.",
         "exampleZh": "他似乎急於討好。"
@@ -1994,7 +1994,7 @@ const toeicWordsDB = [
         "en": "any",
         "kk": "[ˋɛni]",
         "uk": "/ˈeni/",
-        "zh": "det. 任何的、任一的、一點、些許；pron. 任何一個、任何數量、任一數額；adv. 一點、絲毫、壓根兒；adj. 任一、每一、任何的、任一的",
+        "zh": "det. 任何的、任一的、一點、些許；pron. 一些、任何一個、任何數量、任一數額；adv. 一點、絲毫、壓根兒；adj. 任何的、任一的、一點、一些",
         "unit": 11,
         "example": "I'd welcome any suggestions.",
         "exampleZh": "我歡迎任何建議。"
@@ -2004,7 +2004,7 @@ const toeicWordsDB = [
         "en": "apart",
         "kk": "[əˋpɑrt]",
         "uk": "/əˈpɑːt/",
-        "zh": "adv. 分開地、有距離地、相隔、相距；adj. 意見不一致的、有分歧的、分開的、與眾不同的",
+        "zh": "adv. 分開地、分離地、相隔、相距；adj. 意見不一致的、有分歧的、分開的、與眾不同的",
         "unit": 11,
         "example": "They grew ever further apart.",
         "exampleZh": "他們愈發疏遠了。"
@@ -2024,7 +2024,7 @@ const toeicWordsDB = [
         "en": "apology",
         "kk": "[əˋpɑlə͵dʒi]",
         "uk": "/əˈpɒlədʒi/",
-        "zh": "n. 道歉、陪罪、道歉信、辯護",
+        "zh": "n. 道歉、道歉信、辯護、辯解",
         "unit": 11,
         "example": "I think we're owed an apology.",
         "exampleZh": "我認為得有人向我們道歉。"
@@ -2034,7 +2034,7 @@ const toeicWordsDB = [
         "en": "apparent",
         "kk": "[əˋpɛrənt]",
         "uk": "/əˈpærənt/",
-        "zh": "adj. 表面的、外觀的、顯而易見的、易懂的",
+        "zh": "adj. 明顯的、顯然的、顯而易見的、易懂的",
         "unit": 11,
         "example": "She received the news with apparent unconcern.",
         "exampleZh": "她接到這訊息時顯然無動於衷。"
@@ -2054,7 +2054,7 @@ const toeicWordsDB = [
         "en": "appeal",
         "kk": "[əˋpil]",
         "uk": "/əˈpiːl/",
-        "zh": "n. 呼籲、懇求、上訴、申訴；v. 呼籲、懇求、上訴、申訴",
+        "zh": "n. 吸引力、呼籲、懇求、上訴；v. 呼籲、懇求、上訴、申訴",
         "unit": 11,
         "example": "We must broaden our appeal.",
         "exampleZh": "我們必須擴大我們的吸引力。"
@@ -2064,7 +2064,7 @@ const toeicWordsDB = [
         "en": "appear",
         "kk": "[əˋpɪr]",
         "uk": "/əˈpɪə(r)/",
-        "zh": "vi. 出現、顯露、呈現、首次使用",
+        "zh": "vi. 出現、似乎、呈現、首次使用",
         "unit": 11,
         "example": "She will appear in court tomorrow.",
         "exampleZh": "她將於明天出庭。"
@@ -2074,7 +2074,7 @@ const toeicWordsDB = [
         "en": "appearance",
         "kk": "[əˋpɪrəns]",
         "uk": "/əˈpɪərəns/",
-        "zh": "n. 出現、顯露、露面、演出",
+        "zh": "n. 外表、出現、露面、演出",
         "unit": 11,
         "example": "Don't be fooled by his appearance.",
         "exampleZh": "不要被他的外表所迷惑。"
@@ -2094,7 +2094,7 @@ const toeicWordsDB = [
         "en": "applaud",
         "kk": "[əpˋlɔd]",
         "uk": "/əˈplɔːd/",
-        "zh": "vt. 鼓掌歡迎、喝采、鼓掌、稱讚",
+        "zh": "vt. 向……鼓掌、稱讚、鼓掌、讚許",
         "unit": 11,
         "example": "We applaud her decision.",
         "exampleZh": "我們稱讚她的決定。"
@@ -2104,7 +2104,7 @@ const toeicWordsDB = [
         "en": "appliance",
         "kk": "[əpˋlaɪəns]",
         "uk": "/əˈplaɪəns/",
-        "zh": "n. 用具、裝置、家用電器、應用",
+        "zh": "n. 用具、裝置、設備、家用電器",
         "unit": 11,
         "example": "The appliance acts as an STS for an SP.",
         "exampleZh": "這個裝置充當一個 SP 的 STS。"
@@ -2124,7 +2124,7 @@ const toeicWordsDB = [
         "en": "apply",
         "kk": "[əpˋlaɪ]",
         "uk": "/əˈplaɪ/",
-        "zh": "v. 申請、請求、塗、敷",
+        "zh": "v. 申請、應用、塗、敷",
         "unit": 11,
         "example": "I am continuing to apply for jobs.",
         "exampleZh": "我正在繼續申請工作。"
@@ -2134,7 +2134,7 @@ const toeicWordsDB = [
         "en": "appoint",
         "kk": "[əˋpɔɪnt]",
         "uk": "/əˈpɔɪnt/",
-        "zh": "vt. 任命、指派、約定、安排",
+        "zh": "vt. 任命、約定、指派、安排",
         "unit": 11,
         "example": "It made sense to appoint a banker to this job.",
         "exampleZh": "任命一位銀行家做這項工作是合理的。"
@@ -2184,7 +2184,7 @@ const toeicWordsDB = [
         "en": "appropriate",
         "kk": "[əˋpropriət]",
         "uk": "/əˈprəʊpriət/",
-        "zh": "adj. 適當的、恰當的、合適的、相稱的；v. 撥出、私佔、挪用",
+        "zh": "adj. 適當的、合適的、相稱的；v. 撥出、私佔、挪用",
         "unit": 11,
         "example": "The appropriate word eluded him.",
         "exampleZh": "他想不起來那個合適的詞。"
@@ -2204,7 +2204,7 @@ const toeicWordsDB = [
         "en": "approve",
         "kk": "[əˋpruv]",
         "uk": "/əˈpruːv/",
-        "zh": "v. 同意、贊許、贊成、批准",
+        "zh": "v. 批准、贊成、同意、透過",
         "unit": 11,
         "example": "She didn't approve of their choice of reading matter.",
         "exampleZh": "她不贊同他們選用的閱讀材料。"
@@ -2214,7 +2214,7 @@ const toeicWordsDB = [
         "en": "approximate",
         "kk": "[əˋprɑksəmət]",
         "uk": "/əˈprɒksɪmət/",
-        "zh": "adj. 接近的、大約的、大概的、近似的；vt. 接近、類似、模仿",
+        "zh": "adj. 大概的、近似的；vt. 類似、接近、模仿、模擬",
         "unit": 11,
         "example": "The approximate cost varies from around $150 to $250.",
         "exampleZh": "大致的費用在$150至$250之間不等。"
@@ -2224,7 +2224,7 @@ const toeicWordsDB = [
         "en": "apt",
         "kk": "[æpt]",
         "uk": "/æpt/",
-        "zh": "adj. 易於⋯的、有⋯傾向的、易於……的、有……傾向的",
+        "zh": "adj. 易於……的、恰當的、聰明的、有……傾向的",
         "unit": 11,
         "example": "It was an apt comment.",
         "exampleZh": "這是一個恰當的評論。"
@@ -2244,7 +2244,7 @@ const toeicWordsDB = [
         "en": "architecture",
         "kk": "[ˋɑrkə͵tɛktʃɚ]",
         "uk": "/ˈɑːkɪtektʃə(r)/",
-        "zh": "n. 建築物、建築學、結構、建築設計",
+        "zh": "n. 建築學、建築設計、建築風格、結構",
         "unit": 11,
         "example": "He began a new magazine on post-war architecture.",
         "exampleZh": "他創辦了一份專論戰後建築的新雜誌。"
@@ -2264,7 +2264,7 @@ const toeicWordsDB = [
         "en": "area",
         "kk": "[ˋɛriə]",
         "uk": "/ˈeəriə/",
-        "zh": "n. 地區、區域、場地、地方",
+        "zh": "n. 地區、面積、區域、場地",
         "unit": 11,
         "example": "The area is largely uninhabited.",
         "exampleZh": "該地區大部分無人居住。"
@@ -2274,7 +2274,7 @@ const toeicWordsDB = [
         "en": "arena",
         "kk": "[ɚˋinə]",
         "uk": "/əˈriːnə/",
-        "zh": "n. 圓形運動場、比賽場、競技場、圓形劇場",
+        "zh": "n. 體育場、競技場、圓形劇場、鬥爭場所",
         "unit": 11,
         "example": "A 20,000-seat arena with a retractable roof is planned.",
         "exampleZh": "一個可容納2萬名觀眾、帶伸縮頂棚的競技場正在規劃中。"
@@ -2294,7 +2294,7 @@ const toeicWordsDB = [
         "en": "argument",
         "kk": "[ˋɑrɡjəmənt]",
         "uk": "/ˈɑːɡjumənt/",
-        "zh": "n. 爭執、爭吵、爭論、論據",
+        "zh": "n. 爭論、論據、爭吵、理由",
         "unit": 11,
         "example": "Their main argument is fallacious.",
         "exampleZh": "他們的主要論點是錯誤的。"
@@ -2304,7 +2304,7 @@ const toeicWordsDB = [
         "en": "arise",
         "kk": "[ɚˋaɪz]",
         "uk": "/əˈraɪz/",
-        "zh": "vi. 升起、上升、產生、出現",
+        "zh": "vi. 出現、產生、起源、由……引出",
         "unit": 11,
         "example": "Only a finite number of situations can arise.",
         "exampleZh": "只有有限的幾種情況可能會出現。"
@@ -2314,7 +2314,7 @@ const toeicWordsDB = [
         "en": "around",
         "kk": "[ɚˋaʊnd]",
         "uk": "/əˈraʊnd/",
-        "zh": "adv. 到處、周圍、圍繞、環繞；prep. 圍繞、在……附近、環繞、到處",
+        "zh": "adv. 大約、圍繞、環繞、周圍；prep. 在……周圍、圍繞、環繞、到處",
         "unit": 11,
         "example": "He arrived around five o'clock.",
         "exampleZh": "他大約五點左右到達。"
@@ -2324,7 +2324,7 @@ const toeicWordsDB = [
         "en": "arouse",
         "kk": "[ɚˋaʊz]",
         "uk": "/əˈraʊz/",
-        "zh": "vt. 喚起、激動、使奮發、引起",
+        "zh": "vt. 喚起、激動、叫醒、引起",
         "unit": 11,
         "example": "They arouse the interest of all the readers.",
         "exampleZh": "它們引起了所有讀者的興趣。"
@@ -2334,7 +2334,7 @@ const toeicWordsDB = [
         "en": "arrange",
         "kk": "[ɚˋendʒ]",
         "uk": "/əˈreɪndʒ/",
-        "zh": "vt. 整理、安排、籌備、佈置",
+        "zh": "vt. 安排、整理、籌備、佈置",
         "unit": 11,
         "example": "Can I arrange an appointment for Monday?",
         "exampleZh": "我可以安排週一的預約嗎？"
@@ -2344,7 +2344,7 @@ const toeicWordsDB = [
         "en": "arrest",
         "kk": "[ɚˋɛst]",
         "uk": "/əˈrest/",
-        "zh": "vt. 逮捕、拘留、阻止、抑制；n. 逮捕、拘留、停止、終止",
+        "zh": "vt. 逮捕、拘留、阻止、抑制；n. 拘留、逮捕、停止、終止",
         "unit": 11,
         "example": "She was kept under close arrest.",
         "exampleZh": "她被嚴密逮捕。"
@@ -2364,7 +2364,7 @@ const toeicWordsDB = [
         "en": "arrive",
         "kk": "[ɚˋaɪv]",
         "uk": "/əˈraɪv/",
-        "zh": "vi. 到達、到來、抵達、送達",
+        "zh": "vi. 到達、抵達、送達、寄到",
         "unit": 11,
         "example": "We should arrive before dark.",
         "exampleZh": "我們應該在天黑之前到達。"
@@ -2374,7 +2374,7 @@ const toeicWordsDB = [
         "en": "articulate",
         "kk": "[ɑrˋtɪkjə͵let]",
         "uk": "/ɑːˈtɪkjuleɪt/",
-        "zh": "vt. 清楚地講話、清晰地發音、明確有力地表達、明確表達；adj. 善於表達的、口齒清楚的、發音清晰的、有關節的",
+        "zh": "vt. 相互連貫、明確表達、清楚說明、口齒清楚地說；adj. 清晰地講話、善於表達的、口齒清楚的、發音清晰的",
         "unit": 11,
         "example": "She is an articulate young woman.",
         "exampleZh": "她是個善表達的年輕女子。"
@@ -2414,7 +2414,7 @@ const toeicWordsDB = [
         "en": "assert",
         "kk": "[əˋsɝt]",
         "uk": "/əˈsɜːt/",
-        "zh": "vt. 斷言、聲稱、堅稱、維護",
+        "zh": "vt. 斷言、堅持、堅稱、維護",
         "unit": 11,
         "example": "She continued to assert her innocence.",
         "exampleZh": "她仍然堅稱自己無辜。"
@@ -2424,7 +2424,7 @@ const toeicWordsDB = [
         "en": "assess",
         "kk": "[əˋsɛs]",
         "uk": "/əˈses/",
-        "zh": "vt. 對……進行估價、評價、評定、估價",
+        "zh": "vt. 評估、評價、評定、估價",
         "unit": 11,
         "example": "It's difficult to assess the effects of these changes.",
         "exampleZh": "這些變化帶來的效果難以評估。"
@@ -2434,7 +2434,7 @@ const toeicWordsDB = [
         "en": "assign",
         "kk": "[əˋsaɪn]",
         "uk": "/əˈsaɪn/",
-        "zh": "vt. 分配、分派、佈置、指派",
+        "zh": "vt. 分配、指派、分派、佈置",
         "unit": 11,
         "example": "Later in the year, she'll assign them research papers.",
         "exampleZh": "今年晚些時候，她將給他們佈置論文。"
@@ -2464,7 +2464,7 @@ const toeicWordsDB = [
         "en": "assist",
         "kk": "[əˋsɪst]",
         "uk": "/əˈsɪst/",
-        "zh": "vt. 幫助、協助、參加、出席；n. 助攻、資助、幫助",
+        "zh": "vt. 協助、幫助、參加、出席；n. 助攻、資助、幫助",
         "unit": 11,
         "example": "Anyone willing to assist can contact this number.",
         "exampleZh": "凡願協助者可撥此號碼聯絡。"
@@ -2474,7 +2474,7 @@ const toeicWordsDB = [
         "en": "assistance",
         "kk": "[əˋsɪstəns]",
         "uk": "/əˈsɪstəns/",
-        "zh": "n. 援助、幫助",
+        "zh": "n. 幫助、協助、援助",
         "unit": 11,
         "example": "Can I be of any assistance?",
         "exampleZh": "我能有所幫助嗎？"
@@ -2484,7 +2484,7 @@ const toeicWordsDB = [
         "en": "associate",
         "kk": "[əˋsosiət]",
         "uk": "/əˈsəʊsieɪt; əˈsəʊʃieɪt/",
-        "zh": "v. 聯想、聯絡、支援、同意；n. 夥伴、同事、副學士、準學士；adj. 夥伴的、共事的、副的、準的",
+        "zh": "v. 聯想、聯絡、支援、同意；n. 合夥人、同事、夥伴、副學士；adj. 副的、準的、非正式的、聯合的",
         "unit": 11,
         "example": "Mr. Lin is associate director of the Institute.",
         "exampleZh": "林先生是該研究所的副主任。"
@@ -2494,7 +2494,7 @@ const toeicWordsDB = [
         "en": "association",
         "kk": "[ə͵sosiˋeʃən]",
         "uk": "/əˌsəʊsiˈeɪʃn; əˌsəʊʃiˈeɪʃn/",
-        "zh": "n. 協會、公會、聯盟、社團",
+        "zh": "n. 協會、聯想、社團、聯盟",
         "unit": 11,
         "example": "The trade association promotes ethical business practices.",
         "exampleZh": "這個貿易協會提倡合乎道德標準的商業行為。"
@@ -2504,7 +2504,7 @@ const toeicWordsDB = [
         "en": "assume",
         "kk": "[əˋsum]",
         "uk": "/əˈsjuːm/",
-        "zh": "v. 以為、假定為、假定、假設",
+        "zh": "v. 假設、承擔、假定、認為",
         "unit": 11,
         "example": "Assume A knows B is guilty.",
         "exampleZh": "假定甲知道乙應負罪責。"
@@ -2524,7 +2524,7 @@ const toeicWordsDB = [
         "en": "assure",
         "kk": "[əˋʃʊr]",
         "uk": "/əˈʃʊə(r)/",
-        "zh": "vt. 向……保證、擔保、使確信、確保",
+        "zh": "vt. 保證、使確信、向……保證、確保",
         "unit": 11,
         "example": "She's perfectly safe, I can assure you.",
         "exampleZh": "我可以向你保證，她絕對安全。"
@@ -2534,7 +2534,7 @@ const toeicWordsDB = [
         "en": "astonish",
         "kk": "[əˋstɑnɪʃ]",
         "uk": "/əˈstɒnɪʃ/",
-        "zh": "vt. 使吃驚、使驚訝",
+        "zh": "vt. 使驚訝、使震驚、使吃驚",
         "unit": 11,
         "example": "My news will astonish you.",
         "exampleZh": "我的訊息會令你十分驚訝。"
@@ -2564,7 +2564,7 @@ const toeicWordsDB = [
         "en": "attach",
         "kk": "[əˋtætʃ]",
         "uk": "/əˈtætʃ/",
-        "zh": "vt. 附屬、附加、繫上、貼上",
+        "zh": "vt. 附加、連接、繫上、貼上",
         "unit": 11,
         "example": "They attach great importance to the project.",
         "exampleZh": "他們高度重視這個專案。"
@@ -2574,7 +2574,7 @@ const toeicWordsDB = [
         "en": "attachment",
         "kk": "[əˋtætʃmənt]",
         "uk": "/əˈtætʃmənt/",
-        "zh": "n. 附屬物、附件、附加裝置、檔案附件",
+        "zh": "n. 連接、安裝、附著、附屬物",
         "unit": 11,
         "example": "And these attachment styles carry on into adulthood.",
         "exampleZh": "這些依戀型別會延續到成年。"
@@ -2594,7 +2594,7 @@ const toeicWordsDB = [
         "en": "attempt",
         "kk": "[əˋtɛmpt]",
         "uk": "/əˈtempt/",
-        "zh": "vt. 企圖、努力、嘗試；n. 企圖、嘗試、試圖、努力",
+        "zh": "vt. 嘗試、努力；n. 企圖、試圖、努力、企圖殺害",
         "unit": 11,
         "example": "They made no attempt to escape.",
         "exampleZh": "他們沒有企圖逃跑。"
@@ -2614,7 +2614,7 @@ const toeicWordsDB = [
         "en": "attendance",
         "kk": "[əˋtɛndəns]",
         "uk": "/əˈtendəns/",
-        "zh": "n. 到場、出席、出席人數、出勤",
+        "zh": "n. 出席、出席人數、侍候、出勤",
         "unit": 11,
         "example": "His attendance record was spotty.",
         "exampleZh": "他的出勤記錄時好時差。"
@@ -2624,7 +2624,7 @@ const toeicWordsDB = [
         "en": "attention",
         "kk": "[əˋtɛnʃən]",
         "uk": "/əˈtenʃ(ə)n/",
-        "zh": "n. 注意力、專心、注意、照料",
+        "zh": "n. 注意力、關注、注意、照料",
         "unit": 11,
         "example": "My shoes caught his attention.",
         "exampleZh": "我的鞋子引起了他的注意。"
@@ -2654,7 +2654,7 @@ const toeicWordsDB = [
         "en": "attract",
         "kk": "[əˋtrækt]",
         "uk": "/əˈtrækt/",
-        "zh": "vt. 吸引、引起、產生引力、有吸引力",
+        "zh": "vt. 吸引、招引、產生引力、引起",
         "unit": 11,
         "example": "She tried to attract the waiter's attention.",
         "exampleZh": "她試圖引起服務員的注意。"
@@ -2674,7 +2674,7 @@ const toeicWordsDB = [
         "en": "auction",
         "kk": "[ˋɑkʃən]",
         "uk": "/ˈɔːkʃ(ə)n/",
-        "zh": "n. 拍賣、叫牌階段；vt. 拍賣",
+        "zh": "n. 拍賣、叫牌階段；vt. 競賣、拍賣",
         "unit": 11,
         "example": "Gene clerked at the auction.",
         "exampleZh": "吉恩在拍賣行做文書工作。"
@@ -2684,7 +2684,7 @@ const toeicWordsDB = [
         "en": "audience",
         "kk": "[ˋɑdiəns]",
         "uk": "/ˈɔːdiəns/",
-        "zh": "n. 聽眾、觀眾、讀者、覲見",
+        "zh": "n. 觀眾、聽眾、讀者、覲見",
         "unit": 11,
         "example": "The audience cheered and clapped.",
         "exampleZh": "觀眾又是喝彩又是鼓掌。"
@@ -2724,7 +2724,7 @@ const toeicWordsDB = [
         "en": "automatic",
         "kk": "[͵ɔtəˋmætɪk]",
         "uk": "/ˌɔːtəˈmætɪk/",
-        "zh": "adj. 自動的、習慣性的、必然的、無意識的；n. 自動換擋汽車、自動武器",
+        "zh": "adj. 自動的、機械的、必然的、無意識的；n. 自動換擋汽車、自動武器",
         "unit": 11,
         "example": "The automatic doors slid open.",
         "exampleZh": "自動門慢慢開了。"
@@ -2734,7 +2734,7 @@ const toeicWordsDB = [
         "en": "available",
         "kk": "[əˋveləbəl]",
         "uk": "/əˈveɪləb(ə)l/",
-        "zh": "adj. 可用的、可利用的、可獲得的、有空的",
+        "zh": "adj. 可得到的、有空的、可用的、可獲得的",
         "unit": 11,
         "example": "Ample free parking is available.",
         "exampleZh": "有寬敞的免費停車場。"
@@ -2744,7 +2744,7 @@ const toeicWordsDB = [
         "en": "avenue",
         "kk": "[ˋævə͵nu]",
         "uk": "/ˈævənjuː/",
-        "zh": "n. 大街、大道、林蔭道、途徑",
+        "zh": "n. 大街、途徑、林蔭道、渠道",
         "unit": 11,
         "example": "He walked up Fifth Avenue to clear his head.",
         "exampleZh": "他在第五大街上走，讓頭腦清醒清醒。"
@@ -2754,7 +2754,7 @@ const toeicWordsDB = [
         "en": "average",
         "kk": "[ˋævɚɪdʒ]",
         "uk": "/ˈævərɪdʒ/",
-        "zh": "n. 平均、平均水平、一般標準；adj. 普通的、中等的、平常的、不好不壞的；vt. 平均分配、平均達到、平均為、計算平均值",
+        "zh": "n. 平均、平均水平、一般標準、平均數；adj. 普通的、平常的、不好不壞的、平均（數）的；vt. 平均為、平均達到、計算平均值、將……平均分配",
         "unit": 11,
         "example": "Import duties still average 30%.",
         "exampleZh": "進口關稅平均仍為30%。"
@@ -2774,7 +2774,7 @@ const toeicWordsDB = [
         "en": "avoid",
         "kk": "[əˋvɔɪd]",
         "uk": "/əˈvɔɪd/",
-        "zh": "vt. 避開、躲開、避免、防止",
+        "zh": "vt. 避免、迴避、防止、避開",
         "unit": 11,
         "example": "We have tried to avoid any moralizing.",
         "exampleZh": "我們盡力避免任何說教。"
@@ -2844,7 +2844,7 @@ const toeicWordsDB = [
         "en": "backbone",
         "kk": "[ˋbæk͵bon]",
         "uk": "/ˈbækbəʊn/",
-        "zh": "n. 脊骨、脊柱、支柱、骨幹",
+        "zh": "n. 脊柱、支柱、骨幹、脊骨",
         "unit": 11,
         "example": "They ain't got any backbone.",
         "exampleZh": "她們沒有骨氣。"
@@ -2874,7 +2874,7 @@ const toeicWordsDB = [
         "en": "background",
         "kk": "[ˋbæk͵ɡraʊnd]",
         "uk": "/ˈbækɡraʊnd/",
-        "zh": "n. 背景、遠因、出身背景、學歷；adj. 背景的、事先的；v. 作……的背景",
+        "zh": "n. 背景、出身、出身背景、學歷；adj. 背景的、事先的；v. 作……的背景",
         "unit": 11,
         "example": "Her background militates against her.",
         "exampleZh": "她的背景妨礙了她。"
@@ -2904,7 +2904,7 @@ const toeicWordsDB = [
         "en": "backpack",
         "kk": "[ˋbæk͵pæk]",
         "uk": "/ˈbækpæk/",
-        "zh": "n. 登山、遠足用的背包、揹包、行囊；v. 揹包旅行、挑運、把……放入揹包",
+        "zh": "n. 揹包、行囊、揹負裝置；v. 揹包旅行、挑運、把……放入揹包",
         "unit": 11,
         "example": "An unattended backpack was found in a rubbish pile.",
         "exampleZh": "在垃圾桶裡發現了一個無人看管的揹包。"
@@ -2934,7 +2934,7 @@ const toeicWordsDB = [
         "en": "backward",
         "kk": "[ˋbækwɚd]",
         "uk": "/ˈbækwəd/",
-        "zh": "adj. 向後的、反向的、朝後的、倒退的；adv. 向後、倒、朝後、反向地；n. 後面（或過去）的部分",
+        "zh": "adj. 向後的、朝後的、倒退的、落後的；adv. 向後、朝後、反向地；n. 後面（或過去）的部分",
         "unit": 11,
         "example": "The diver flipped over backward into the water.",
         "exampleZh": "潛水員向後翻身落入水中。"
@@ -2964,7 +2964,7 @@ const toeicWordsDB = [
         "en": "bad",
         "kk": "[bæd]",
         "uk": "/bæd/",
-        "zh": "adj. 壞的、不好的、令人不悅的、難以接受的；n. 壞人、壞事；adv. 很、非常、厲害地",
+        "zh": "adj. 壞的、糟糕的、不好的、令人不悅的；n. 壞人、壞事；adv. 很、非常、厲害地",
         "unit": 11,
         "example": "Divorce is bad for children.",
         "exampleZh": "離婚對孩子不好。"
@@ -2974,7 +2974,7 @@ const toeicWordsDB = [
         "en": "badge",
         "kk": "[bædʒ]",
         "uk": "/bædʒ/",
-        "zh": "n. 徽章、紀念章、獎章、標記；v. 給予……徽章",
+        "zh": "n. 徽章、證章、獎章、標記；v. 給予……徽章",
         "unit": 11,
         "example": "All delegates must wear a badge.",
         "exampleZh": "所有代表都要佩戴徽章。"
@@ -2984,7 +2984,7 @@ const toeicWordsDB = [
         "en": "badly",
         "kk": "[ˋbædli]",
         "uk": "/ˈbædli/",
-        "zh": "adv. 壞地、拙劣地、嚴重地、差",
+        "zh": "adv. 嚴重地、糟糕地、差、拙劣地",
         "unit": 11,
         "example": "John twisted his ankle badly.",
         "exampleZh": "約翰的腳踝嚴重扭傷。"
@@ -3024,7 +3024,7 @@ const toeicWordsDB = [
         "en": "bag",
         "kk": "[bæɡ]",
         "uk": "/bæɡ/",
-        "zh": "n. 袋、提袋、包、一袋的量；v. 把……裝進袋子、搶佔、佔有、捕獲",
+        "zh": "n. 袋子、包、袋、一袋的量；v. 把……裝進袋子、搶佔、佔有、捕獲",
         "unit": 11,
         "example": "Someone's left their bag behind.",
         "exampleZh": "有人把包包落在後面了。"
@@ -3064,7 +3064,7 @@ const toeicWordsDB = [
         "en": "bait",
         "kk": "[bet]",
         "uk": "/beɪt/",
-        "zh": "n. 餌、引誘物、用作誘餌的人、誘餌；vt. 引誘、誘惑、放誘餌、激怒",
+        "zh": "n. 用作誘餌的人、餌、誘餌；vt. 放誘餌、激怒、故意惹惱、縱犬襲擊",
         "unit": 11,
         "example": "The fish took the bait.",
         "exampleZh": "魚咬了釣餌。"
@@ -3094,7 +3094,7 @@ const toeicWordsDB = [
         "en": "bakery",
         "kk": "[ˋbekɚi]",
         "uk": "/ˈbeɪkəri/",
-        "zh": "n. 麵包店、糕點店、烘焙食品",
+        "zh": "n. 麵包店、烘焙食品",
         "unit": 11,
         "example": "Start her own bakery.",
         "exampleZh": "開辦自己的麵包店。"
@@ -3104,7 +3104,7 @@ const toeicWordsDB = [
         "en": "balance",
         "kk": "[ˋbæləns]",
         "uk": "/ˈbæləns/",
-        "zh": "n. 平衡、均衡、均勢、平衡能力；vt. 使平衡、保持平衡、權衡、斟酌",
+        "zh": "n. 平衡、均衡、均勢、平衡能力；vt. 保持平衡、權衡、斟酌",
         "unit": 11,
         "example": "She had trouble keeping her balance.",
         "exampleZh": "她保持平衡有困難。"
@@ -3124,7 +3124,7 @@ const toeicWordsDB = [
         "en": "bald",
         "kk": "[bɔld]",
         "uk": "/bɔːld/",
-        "zh": "adj. 禿頭的、赤裸裸的、光禿的、磨光的",
+        "zh": "adj. 禿頭的、光禿的、磨光的、掉光的",
         "unit": 11,
         "example": "The sun beat down on his bald pate.",
         "exampleZh": "灼熱的陽光直射到他那光光的禿頂上。"
@@ -3154,7 +3154,7 @@ const toeicWordsDB = [
         "en": "ban",
         "kk": "[bæn]",
         "uk": "/bæn/",
-        "zh": "n. 禁止、禁令、逐出令、褫奪公民權的判決；vt. 禁止、取締、把（某人）逐出某地",
+        "zh": "n. 禁令、禁止、逐出令、褫奪公民權的判決；vt. 禁止、取締、把（某人）逐出某地",
         "unit": 11,
         "example": "They wanted a total ban on handguns.",
         "exampleZh": "他們要求徹底禁止擁有手槍。"
@@ -3164,7 +3164,7 @@ const toeicWordsDB = [
         "en": "band",
         "kk": "[bænd]",
         "uk": "/bænd/",
-        "zh": "n. 帶、細繩、樂團、樂隊；v. 給……分級、把……分段、用帶綁紮、加彩條",
+        "zh": "n. 樂隊、帶子、一夥、一群；v. 給……分級、把……分段、用帶綁紮、加彩條",
         "unit": 11,
         "example": "The singer re-formed his band.",
         "exampleZh": "這位歌手重組了他的樂隊。"
@@ -3184,7 +3184,7 @@ const toeicWordsDB = [
         "en": "bank",
         "kk": "[bæŋk]",
         "uk": "/bæŋk/",
-        "zh": "n. 銀行、堤、岸、儲蓄罐；v. 把（錢）存入銀行、把……儲存入庫、與銀行有業務往來、傾斜飛行",
+        "zh": "n. 銀行、河岸、儲蓄罐、庫存；v. 把（錢）存入銀行、把……儲存入庫、與銀行有業務往來、傾斜飛行",
         "unit": 11,
         "example": "The bank wired her the money.",
         "exampleZh": "銀行匯了錢給她。"
@@ -3214,7 +3214,7 @@ const toeicWordsDB = [
         "en": "banker",
         "kk": "[ˋbæŋkɚ]",
         "uk": "/ˈbæŋkə(r)/",
-        "zh": "n. 銀行家、銀行要員、莊家、穩贏的賭注",
+        "zh": "n. 銀行家、莊家、銀行要員、穩贏的賭注",
         "unit": 11,
         "example": "It made sense to appoint a banker to this job.",
         "exampleZh": "任命一名銀行家擔任這項工作是有道理的。"
@@ -3254,7 +3254,7 @@ const toeicWordsDB = [
         "en": "banner",
         "kk": "[ˋbænɚ]",
         "uk": "/ˈbænə(r)/",
-        "zh": "n. 旗幟、橫幅、橫幅標語、橫幅廣告；adj. 極好的、出色的；v. 在（頭版的）通欄大字標題下刊登",
+        "zh": "n. 旗幟、橫幅、大標題、橫幅標語；adj. 極好的、出色的；v. 在（頭版的）通欄大字標題下刊登",
         "unit": 11,
         "example": "Our group was awarded a red banner.",
         "exampleZh": "我們小組被授予了一面紅旗。"
@@ -3274,7 +3274,7 @@ const toeicWordsDB = [
         "en": "bar",
         "kk": "[bɑr]",
         "uk": "/bɑː(r)/",
-        "zh": "n. 棒、條、酒吧、吧檯；vt. 封、堵、阻擋、攔住；prep. 除……外",
+        "zh": "n. 酒吧、條狀物、吧檯、小吃店；vt. 封、堵、阻擋、攔住；prep. 除……外",
         "unit": 11,
         "example": "She was sitting at the bar.",
         "exampleZh": "她坐在吧台邊。"
@@ -3294,7 +3294,7 @@ const toeicWordsDB = [
         "en": "barbecue",
         "kk": "[ˋbɑrbɪ͵kju]",
         "uk": "/ˈbɑːbɪkjuː/",
-        "zh": "n. 烤肉、燒烤、戶外燒烤、烤肉架；vt. 烤肉、燒烤",
+        "zh": "n. 戶外燒烤、烤肉架、燒烤食物；vt. 燒烤",
         "unit": 11,
         "example": "Let's have a barbecue!",
         "exampleZh": "我們去吃燒烤吧！"
@@ -3304,7 +3304,7 @@ const toeicWordsDB = [
         "en": "bare",
         "kk": "[bɛr]",
         "uk": "/beə(r)/",
-        "zh": "adj. 裸的、光禿禿的、赤裸的、無遮蓋的；vt. 使赤裸、露出、使暴露、使露出；adv. 非常、許多",
+        "zh": "adj. 裸露的、基本的、赤裸的、光禿禿的；vt. 使暴露、使露出；adv. 非常、許多",
         "unit": 11,
         "example": "The warehouse shelves were completely bare after the holiday rush.",
         "exampleZh": "節日搶購潮過後，倉庫貨架上空空如也。"
@@ -3314,7 +3314,7 @@ const toeicWordsDB = [
         "en": "barely",
         "kk": "[ˋbɛrli]",
         "uk": "/ˈbeəli/",
-        "zh": "adv. 僅僅、勉強、勉強才能、幾乎不",
+        "zh": "adv. 僅僅、幾乎不、勉強才能、幾乎沒有",
         "unit": 11,
         "example": "His words were barely audible.",
         "exampleZh": "他的話勉強聽得見。"
@@ -3334,7 +3334,7 @@ const toeicWordsDB = [
         "en": "bargain",
         "kk": "[ˋbɑrɡən]",
         "uk": "/ˈbɑːɡən/",
-        "zh": "n. 協議、買賣、便宜貨、減價品；vi. 討價還價、談判",
+        "zh": "n. 便宜貨、減價品、協議、交易；vi. 討價還價、談判",
         "unit": 11,
         "example": "He said he wasn't prepared to bargain.",
         "exampleZh": "他說他不願討價還價。"
@@ -3344,7 +3344,7 @@ const toeicWordsDB = [
         "en": "barren",
         "kk": "[ˋbærən]",
         "uk": "/ˈbærən/",
-        "zh": "adj. 不生育的、貧脊的、貧瘠的、不毛的；n. 瘠地、荒漠",
+        "zh": "adj. 貧瘠的、荒蕪的、不妊的、不毛的；n. 瘠地",
         "unit": 11,
         "example": "The land was barren and infertile.",
         "exampleZh": "這片土地荒蕪而貧瘠。"
@@ -3354,7 +3354,7 @@ const toeicWordsDB = [
         "en": "barrier",
         "kk": "[ˋbæriɚ]",
         "uk": "/ˈbæriə(r)/",
-        "zh": "n. 障礙物、路障、障礙、壁壘",
+        "zh": "n. 障礙、屏障、壁壘、障礙物",
         "unit": 11,
         "example": "Ozone is the earth's barrier against ultra-violet radiation.",
         "exampleZh": "臭氧是地球防止紫外線輻射的屏障。"
@@ -3384,7 +3384,7 @@ const toeicWordsDB = [
         "en": "basement",
         "kk": "[ˋbesmənt]",
         "uk": "/ˈbeɪsmənt/",
-        "zh": "n. 地下室、地下層、地庫",
+        "zh": "n. 地下室、地庫",
         "unit": 11,
         "example": "Kitchen goods are sold in the basement.",
         "exampleZh": "廚房用品在地下室出售。"
@@ -3394,7 +3394,7 @@ const toeicWordsDB = [
         "en": "basic",
         "kk": "[ˋbesɪk]",
         "uk": "/ˈbeɪsɪk/",
-        "zh": "adj. 最重要的、基本的、最簡單的、初級的；n. 基礎、基本原理、基本要素、基本原則",
+        "zh": "adj. 基本的、基礎的、最重要的、最簡單的；n. 基本要素、基本原則",
         "unit": 11,
         "example": "Basic foodstuffs were in short supply.",
         "exampleZh": "基本食品供應短缺。"
@@ -3414,7 +3414,7 @@ const toeicWordsDB = [
         "en": "basis",
         "kk": "[ˋbesəs]",
         "uk": "/ˈbeɪsɪs/",
-        "zh": "n. 基礎、根據、要素、基準",
+        "zh": "n. 基礎、要素、基準、方式",
         "unit": 11,
         "example": "The basis of a good marriage is trust.",
         "exampleZh": "美好婚姻的基礎是信任。"
@@ -3424,7 +3424,7 @@ const toeicWordsDB = [
         "en": "basket",
         "kk": "[ˋbæskət]",
         "uk": "/ˈbɑːskɪt/",
-        "zh": "n. 籃、簍、筐、籃子",
+        "zh": "n. 籃子、一籃的量、籃、投籃得分",
         "unit": 11,
         "example": "There was a complimentary basket of fruit in our room.",
         "exampleZh": "我們的房間裡有一籃免費水果。"
@@ -3434,7 +3434,7 @@ const toeicWordsDB = [
         "en": "bat",
         "kk": "[bæt]",
         "uk": "/bæt/",
-        "zh": "n. 球棒、球拍、蝙蝠；vi. 打、揮打、用球板（棒）擊球、擊走",
+        "zh": "n. 蝙蝠、球棒、球拍；vi. 用球板（棒）擊球、揮打、擊走",
         "unit": 11,
         "example": "I bolted the door the instant I saw the bat.",
         "exampleZh": "我一看到蝙蝠就鎖上門了。"
@@ -3444,7 +3444,7 @@ const toeicWordsDB = [
         "en": "batch",
         "kk": "[bætʃ]",
         "uk": "/bætʃ/",
-        "zh": "n. 一批生產量、一批；v. 分批處理",
+        "zh": "n. 一批、一群、一爐、一團；v. 分批處理",
         "unit": 11,
         "example": "I baked a batch of cookies.",
         "exampleZh": "我烤了一批小甜餅。"
@@ -3454,7 +3454,7 @@ const toeicWordsDB = [
         "en": "bath",
         "kk": "[bæθ]",
         "uk": "/bɑːθ/",
-        "zh": "n. 浴缸、洗澡、浴盆、沐浴；v. 給……洗澡、洗澡、沐浴",
+        "zh": "n. 洗澡、浴缸、浴盆、沐浴；v. 給……洗澡、洗澡、沐浴",
         "unit": 11,
         "example": "The baby loves bath time.",
         "exampleZh": "寶寶很喜歡洗澡。"
@@ -3464,7 +3464,7 @@ const toeicWordsDB = [
         "en": "bathe",
         "kk": "[beð]",
         "uk": "/beɪð/",
-        "zh": "v. 浸入、浸洗、洗澡、給（某人）洗澡；n. 游泳、洗浴",
+        "zh": "v. 洗澡、給（某人）洗澡、游泳、嬉水；n. 游泳、洗浴",
         "unit": 11,
         "example": "Slowly, people began to bathe more frequently.",
         "exampleZh": "慢慢地，人們開始更頻繁地洗澡。"
@@ -3474,7 +3474,7 @@ const toeicWordsDB = [
         "en": "bathroom",
         "kk": "[ˋbæ͵θrum]",
         "uk": "/ˈbɑːθruːm; ˈbɑːθrʊm/",
-        "zh": "n. 浴室、化妝室、盥洗室、衛生間",
+        "zh": "n. 浴室、洗手間、盥洗室、衛生間",
         "unit": 11,
         "example": "The bathroom floor was awash.",
         "exampleZh": "浴室地板被水淹沒了。"
@@ -3484,7 +3484,7 @@ const toeicWordsDB = [
         "en": "battery",
         "kk": "[ˋbætɚi]",
         "uk": "/ˈbætri/",
-        "zh": "n. 電池、蓄電池、一組、一系列；adj. 籠養的、層架式養殖的",
+        "zh": "n. 電池、電瓶、蓄電池、一組；adj. 籠養的、層架式養殖的",
         "unit": 11,
         "example": "Before use, the battery must be charged.",
         "exampleZh": "電池使用前必須充電。"
@@ -3494,7 +3494,7 @@ const toeicWordsDB = [
         "en": "battle",
         "kk": "[ˋbætəl]",
         "uk": "/ˈbæt(ə)l/",
-        "zh": "n. 戰役、戰爭、爭論；vt. 搏鬥、奮爭、與……作戰、和……鬥爭",
+        "zh": "n. 戰役、戰爭、爭論；vt. 鬥爭、與……作戰、和……鬥爭、搏鬥",
         "unit": 11,
         "example": "A plaque commemorates the battle.",
         "exampleZh": "一塊紀念這場戰鬥的牌匾。"
@@ -3504,7 +3504,7 @@ const toeicWordsDB = [
         "en": "bay",
         "kk": "[be]",
         "uk": "/beɪ/",
-        "zh": "n. 灣、山脈的低凹處、山間平地、房間突出部分；vi. 連續吠、連續嚎叫、大聲叫嚷；adj. 棗紅色的、深棕色的",
+        "zh": "n. 海灣、灣、山脈的低凹處、山間平地；vi. 連續吠、連續嚎叫、大聲叫嚷；adj. 棗紅色的、深棕色的",
         "unit": 11,
         "example": "Dallas will play Green Bay.",
         "exampleZh": "達拉斯隊將迎戰綠灣隊。"
@@ -3514,7 +3514,7 @@ const toeicWordsDB = [
         "en": "be",
         "kk": "[bi]",
         "uk": "/biː; bi/",
-        "zh": "v. 是、等於、有、存在；aux. 正在⋯、在⋯、被、正",
+        "zh": "v. 是、存在、有、做；aux. 被、正、正在",
         "unit": 11,
         "example": "I can be very persuasive when I want to be.",
         "exampleZh": "當我願意的時候，我可以很有說服力。"
@@ -3524,7 +3524,7 @@ const toeicWordsDB = [
         "en": "beach",
         "kk": "[bitʃ]",
         "uk": "/biːtʃ/",
-        "zh": "n. 海灘、海濱度假地、海濱；vt. 把（船）拖上岸、擱淺、釣（魚）上岸、讓（某人）受損",
+        "zh": "n. 海灘、沙灘、海濱；vt. 把（船）拖上岸、擱淺、釣（魚）上岸、讓（某人）受損",
         "unit": 11,
         "example": "We cantered along the beach.",
         "exampleZh": "我們沿著海灘慢跑。"
@@ -3564,7 +3564,7 @@ const toeicWordsDB = [
         "en": "beat",
         "kk": "[bit]",
         "uk": "/biːt/",
-        "zh": "v. 打、擊、敲、狠打；n. 敲打、敲擊聲、敲、擊；adj. 筋疲力盡的、垂頭喪氣的、筋疲力盡、疲憊不堪",
+        "zh": "v. 打敗、敲、擊、打；n. 節拍、敲、擊、強音拍；adj. 筋疲力盡、疲憊不堪、垮掉的一代的",
         "unit": 11,
         "example": "You can't beat Italian shoes.",
         "exampleZh": "你無法打敗義大利鞋。"
@@ -3584,7 +3584,7 @@ const toeicWordsDB = [
         "en": "beautiful",
         "kk": "[ˋbjutəfəl]",
         "uk": "/ˈbjuːtɪf(ə)l/",
-        "zh": "adj. 漂亮的、出色的、美麗的、令人愉悅的",
+        "zh": "adj. 美麗的、漂亮的、令人愉悅的、美妙的",
         "unit": 11,
         "example": "It was a beautiful morning.",
         "exampleZh": "這是一個美麗的早晨。"
@@ -3604,7 +3604,7 @@ const toeicWordsDB = [
         "en": "beauty",
         "kk": "[ˋbjuti]",
         "uk": "/ˈbjuːti/",
-        "zh": "n. 美麗、美的事物、漂亮、美好的事物；adj. 美容的",
+        "zh": "n. 美麗、美人、漂亮、美好的事物；adj. 美容的",
         "unit": 11,
         "example": "Her beauty appeared ageless.",
         "exampleZh": "她的美麗顯得永恆。"
@@ -3694,7 +3694,7 @@ const toeicWordsDB = [
         "en": "beginner",
         "kk": "[bɪˋɡɪnɚ]",
         "uk": "/bɪˈɡɪnə(r)/",
-        "zh": "n. 初學者、新手、生手、初級的",
+        "zh": "n. 新手、初學者、生手、初級的",
         "unit": 11,
         "example": "The white belt signifies that he's an absolute beginner.",
         "exampleZh": "白帶錶示他是個絕對的初學者。"
@@ -3704,7 +3704,7 @@ const toeicWordsDB = [
         "en": "beginning",
         "kk": "[bɪˋɡɪnɪŋ]",
         "uk": "/bɪˈɡɪnɪŋ/",
-        "zh": "n. 開始、起始、開端、序曲；adj. 初級的、基本的；v. 開始、著手",
+        "zh": "n. 開始、起初、開端、序曲；adj. 初級的、基本的；v. 開始、著手",
         "unit": 11,
         "example": "The snow was beginning to melt.",
         "exampleZh": "積雪開始融化了。"
@@ -3714,7 +3714,7 @@ const toeicWordsDB = [
         "en": "behalf",
         "kk": "[bɪˋhæf]",
         "uk": "/bɪˈhɑːf/",
-        "zh": "n. 代表、利益、因為、為了……的利益",
+        "zh": "n. 代表、因為、為了……的利益、就……而言",
         "unit": 11,
         "example": "She was nominated to speak on our behalf.",
         "exampleZh": "她被指派代表我們發言。"
@@ -3724,7 +3724,7 @@ const toeicWordsDB = [
         "en": "behave",
         "kk": "[bɪˋhev]",
         "uk": "/bɪˈheɪv/",
-        "zh": "v. 表現、行為舉止、行為、起反應",
+        "zh": "v. 表現、行為、起反應、起作用",
         "unit": 11,
         "example": "Will you kids just behave!",
         "exampleZh": "孩子們，規矩點！"
@@ -3754,7 +3754,7 @@ const toeicWordsDB = [
         "en": "behind",
         "kk": "[bɪˋhaɪnd]",
         "uk": "/bɪˈhaɪnd/",
-        "zh": "prep. 在（或向）……的後面、落後於、是……背後的原因；adv. 在背後、在後面、留在原地、落後；n. 屁股、射門得分",
+        "zh": "prep. 在……後面、在（或向）……的後面、落後於、是……背後的原因；adv. 落後、在後面、留在原地、拖欠；n. 屁股、射門得分",
         "unit": 11,
         "example": "She heard footsteps behind her.",
         "exampleZh": "她聽到身後有腳步聲。"
@@ -3784,7 +3784,7 @@ const toeicWordsDB = [
         "en": "being",
         "kk": "[ˋbiɪŋ]",
         "uk": "/ˈbiːɪŋ/",
-        "zh": "n. 存在、生物、本質；v. 因為、由於、存在、生存",
+        "zh": "n. 存在、生物、本質、本性；v. 因為、由於、存在、生存",
         "unit": 11,
         "example": "I hate being photographed.",
         "exampleZh": "我討厭被拍照。"
@@ -3804,7 +3804,7 @@ const toeicWordsDB = [
         "en": "belief",
         "kk": "[bɪˋlif]",
         "uk": "/bɪˈliːf/",
-        "zh": "n. 相信、信任、信心、看法",
+        "zh": "n. 信念、相信、信心、看法",
         "unit": 11,
         "example": "It is impossible to separate belief from emotion.",
         "exampleZh": "將信念與情感分開是不可能的。"
@@ -3814,7 +3814,7 @@ const toeicWordsDB = [
         "en": "believe",
         "kk": "[bɪˋliv]",
         "uk": "/bɪˈliːv/",
-        "zh": "v. 相信、信任、認為、猜想",
+        "zh": "v. 相信、認為、猜想、信教",
         "unit": 11,
         "example": "They don't believe in marriage.",
         "exampleZh": "他們不相信婚姻。"
@@ -3844,7 +3844,7 @@ const toeicWordsDB = [
         "en": "belly",
         "kk": "[ˋbɛli]",
         "uk": "/ˈbeli/",
-        "zh": "n. 腹、腹部、肚子、胃；v. 鼓起、脹滿、張滿",
+        "zh": "n. 腹部、肚子、胃、胃口；v. 鼓起、張滿",
         "unit": 11,
         "example": "She laid her hands on her swollen belly.",
         "exampleZh": "她把手放在隆起的肚子上。"
@@ -3874,7 +3874,7 @@ const toeicWordsDB = [
         "en": "beloved",
         "kk": "[bɪˋlʌvd]",
         "uk": "/bɪˈlʌvɪd/",
-        "zh": "adj. 心愛的、親愛的、鍾愛的、深受愛戴的；n. 心愛的人",
+        "zh": "adj. 鍾愛的、深受愛戴的；n. 心愛的人",
         "unit": 11,
         "example": "He dedicated the book to his beloved grandmother.",
         "exampleZh": "他把這本書獻給他心愛的祖母。"
@@ -3884,7 +3884,7 @@ const toeicWordsDB = [
         "en": "below",
         "kk": "[bɪˋlo]",
         "uk": "/bɪˈləʊ/",
-        "zh": "prep. 在⋯下面、在……下面、在……以下、低於；adv. 在下面、到下面、在……以下、在下文中",
+        "zh": "prep. 在……下面、在……以下、低於；adv. 以下、在下面、在……以下、在下文中",
         "unit": 11,
         "example": "It's 15 degrees below freezing.",
         "exampleZh": "氣溫低於冰點 15 度。"
@@ -3894,7 +3894,7 @@ const toeicWordsDB = [
         "en": "belt",
         "kk": "[bɛlt]",
         "uk": "/belt/",
-        "zh": "n. 腰帶、皮帶、傳送帶、地帶；v. 用皮帶抽打、用帶捆住、用腰帶繫緊、狠打",
+        "zh": "n. 皮帶、地帶、腰帶、傳送帶；v. 用腰帶繫緊、狠打、猛擊、抽打",
         "unit": 11,
         "example": "We live in the commuter belt.",
         "exampleZh": "我們生活在通勤帶。"
@@ -3904,7 +3904,7 @@ const toeicWordsDB = [
         "en": "bench",
         "kk": "[bɛntʃ]",
         "uk": "/bentʃ/",
-        "zh": "n. 長凳、長椅、長方形工作臺、法官席；v. 把（場上隊員）換下、展覽、仰臥推舉、給……以席位",
+        "zh": "n. 長椅、工作台、長凳、長方形工作臺；v. 把（場上隊員）換下、展覽、仰臥推舉、給……以席位",
         "unit": 11,
         "example": "We sat primly at either end of a long bench.",
         "exampleZh": "我們一本正經地坐在長凳的兩端。"
@@ -3924,7 +3924,7 @@ const toeicWordsDB = [
         "en": "bend",
         "kk": "[bɛnd]",
         "uk": "/bend/",
-        "zh": "v. 彎曲、轉彎、歪曲、篡改；n. 彎曲、轉彎處、拐彎、彎道",
+        "zh": "v. 彎曲、轉彎、歪曲、篡改；n. 拐彎、彎道、彎曲",
         "unit": 11,
         "example": "Black faded on the final bend.",
         "exampleZh": "黑色在最後一個彎道上褪色。"
@@ -3934,7 +3934,7 @@ const toeicWordsDB = [
         "en": "beneath",
         "kk": "[bɪˋniθ]",
         "uk": "/bɪˈniːθ/",
-        "zh": "prep. 在⋯之下、向⋯下面、在……下方、在……表面之下；adv. 在下、向下、在下面、在底下",
+        "zh": "prep. 在……之下、在……下方、在……表面之下、隱藏在……之下；adv. 在下面、在底下",
         "unit": 11,
         "example": "The boat heaved beneath them.",
         "exampleZh": "小船在他們腳下顛簸著。"
@@ -3964,7 +3964,7 @@ const toeicWordsDB = [
         "en": "benefit",
         "kk": "[ˋbɛnəfɪt]",
         "uk": "/ˈbenɪfɪt/",
-        "zh": "n. 利益、好處、益處、救濟金；vt. 得益、受惠、對（某人）有用、使受益",
+        "zh": "n. 利益、好處、益處、救濟金；vt. 受益、對（某人）有用、使受益、得益於",
         "unit": 11,
         "example": "He's not entitled to claim unemployment benefit.",
         "exampleZh": "他無權要求領取失業救濟金。"
@@ -3994,7 +3994,7 @@ const toeicWordsDB = [
         "en": "beside",
         "kk": "[bɪˋsaɪd]",
         "uk": "/bɪˈsaɪd/",
-        "zh": "prep. 在⋯旁、在旁邊、在……旁邊、在……附近；adv. 在附近、況且、此外",
+        "zh": "prep. 在……旁邊、除了、在……附近、與……相比；adv. 在附近、況且、此外",
         "unit": 11,
         "example": "She kneeled down beside him.",
         "exampleZh": "她跪在他身邊。"
@@ -4004,7 +4004,7 @@ const toeicWordsDB = [
         "en": "besides",
         "kk": "[bɪˋsaɪdz]",
         "uk": "/bɪˈsaɪdz/",
-        "zh": "prep. 在⋯之外、除……之外；adv. 此外、而且、再說、也",
+        "zh": "prep. 除了、除……之外；adv. 此外、而且、再說、也",
         "unit": 11,
         "example": "I've got no family besides my parents.",
         "exampleZh": "除了父母之外我沒有家人。"
@@ -4014,7 +4014,7 @@ const toeicWordsDB = [
         "en": "bet",
         "kk": "[bɛt]",
         "uk": "/bet/",
-        "zh": "vt. 打賭、賭博、敢肯定；n. 打賭、下注、賭金、預計；abbr. 在……之間",
+        "zh": "vt. 打賭、賭博、敢肯定；n. 賭注、下注、賭金、預計；abbr. 在……之間",
         "unit": 11,
         "example": "I'll bet they have yummy ice cream.",
         "exampleZh": "我敢打賭他們一定有美味的冰淇淋。"
@@ -4044,7 +4044,7 @@ const toeicWordsDB = [
         "en": "better",
         "kk": "[ˋbɛtɚ]",
         "uk": "/ˈbetə(r)/",
-        "zh": "adj. 較佳的、更好的、較好的、能力更強的；adv. 較好地、更好地、更、更大程度上；n. 更好的事物、較好者、更好的表現、更好的待遇；vt. 改善、改進、超過、勝過；pron. 更大成就、更好待遇、更好行為",
+        "zh": "adj. 更好的、較好的、能力更強的、更熟練的；adv. 更好地、較好地、更、更大程度上；n. 更好的事物、較好者、更好的表現、更好的待遇；vt. 超過、勝過、改善、改進；pron. 更大成就、更好待遇、更好行為",
         "unit": 11,
         "example": "You'd better do some costings.",
         "exampleZh": "你最好做一些成本核算。"
@@ -4054,7 +4054,7 @@ const toeicWordsDB = [
         "en": "between",
         "kk": "[bɪtˋwin]",
         "uk": "/bɪˈtwiːn/",
-        "zh": "prep. 在⋯之間、在……中間、在……之間、介於……之間；adv. 在中間、兩者之間、介於……之間",
+        "zh": "prep. 在……之間、在……中間、介於……之間、分隔著；adv. 介於……之間",
         "unit": 11,
         "example": "He toggled between the two windows.",
         "exampleZh": "他在兩個視窗之間切換。"
@@ -4074,7 +4074,7 @@ const toeicWordsDB = [
         "en": "beware",
         "kk": "[bɪˋwɛr]",
         "uk": "/bɪˈweə(r)/",
-        "zh": "vi. 注意、提防、當心",
+        "zh": "vi. 當心、提防",
         "unit": 11,
         "example": "Motorists were warned to beware of slippery conditions.",
         "exampleZh": "汽車駕駛者被提醒小心路滑。"
@@ -4084,7 +4084,7 @@ const toeicWordsDB = [
         "en": "beyond",
         "kk": "[bɪˋɑnd]",
         "uk": "/bɪˈjɒnd/",
-        "zh": "prep. 向⋯的那一邊、越過、在（或向）……較遠的一邊、晚於；adv. 往更遠處、在另一邊、在（或向）更遠處；n. 來生、再世、遠處的事物",
+        "zh": "prep. 超過、在（或向）……較遠的一邊、晚於、遲於；adv. 在……之外、在另一邊、在（或向）更遠處、到……之後；n. 來生、再世、遠處的事物",
         "unit": 11,
         "example": "Her honesty is beyond question.",
         "exampleZh": "她的誠實是毋庸置疑的。"
@@ -4094,7 +4094,7 @@ const toeicWordsDB = [
         "en": "bias",
         "kk": "[ˋbaɪəs]",
         "uk": "/ˈbaɪəs/",
-        "zh": "n. 成見、偏見、偏好；vt. 使有偏見、使偏心、加偏壓（或偏流）於；adj. 偏斜的；adv. 偏斜地",
+        "zh": "n. 偏見、成見、偏好、天賦；vt. 使有偏見、使偏心、加偏壓（或偏流）於；adj. 偏斜的；adv. 偏斜地",
         "unit": 11,
         "example": "The course has a strong practical bias.",
         "exampleZh": "這個課程偏重實用。"
@@ -4104,7 +4104,7 @@ const toeicWordsDB = [
         "en": "bicycle",
         "kk": "[ˋbaɪsɪkəl]",
         "uk": "/ˈbaɪsɪk(ə)l/",
-        "zh": "n. 腳踏車、自行車、單車；v. 騎腳踏車",
+        "zh": "n. 自行車、腳踏車、單車；v. 騎腳踏車",
         "unit": 11,
         "example": "Oscar had a new bicycle.",
         "exampleZh": "奧斯卡有一輛新自行車。"
@@ -4114,7 +4114,7 @@ const toeicWordsDB = [
         "en": "bid",
         "kk": "[bɪd]",
         "uk": "/bɪd/",
-        "zh": "v. 命令、吩咐、出價、投標；n. 出價、喊價、投標、努力",
+        "zh": "v. 出價、投標、競標、努力爭取；n. 投標、出價、喊價、努力",
         "unit": 11,
         "example": "The bank announced its intention to bid.",
         "exampleZh": "銀行宣佈了其投標意向。"
@@ -4144,7 +4144,7 @@ const toeicWordsDB = [
         "en": "bill",
         "kk": "[bɪl]",
         "uk": "/bɪl/",
-        "zh": "n. 帳單、票據、議案、賬單；vt. 開賬單、把……宣傳為、宣佈（某人）將參加演出",
+        "zh": "n. 帳單、法案、賬單、議案；vt. 開賬單、把……宣傳為、宣佈（某人）將參加演出",
         "unit": 11,
         "example": "Your bill includes line rental.",
         "exampleZh": "您的帳單包括線路租金。"
@@ -4184,7 +4184,7 @@ const toeicWordsDB = [
         "en": "bind",
         "kk": "[baɪnd]",
         "uk": "/baɪnd/",
-        "zh": "vt. 捆、綁、捆綁、系；n. 窘境、困境、令人不快的事情、法律約束",
+        "zh": "vt. 綁定、裝訂、捆綁、系；n. 窘境、困境、令人不快的事情、法律約束",
         "unit": 11,
         "example": "Take him home and bind his wounds.",
         "exampleZh": "帶他回家，包紮傷口。"
@@ -4244,7 +4244,7 @@ const toeicWordsDB = [
         "en": "bit",
         "kk": "[bɪt]",
         "uk": "/bɪt/",
-        "zh": "n. 小片、小塊、位元、小部分；adj. 很小的；v. 制約、限制、給（馬）上嚼子、咬",
+        "zh": "n. 一點、小片、小塊、小部分；adj. 很小的；v. 制約、限制、給（馬）上嚼子、咬",
         "unit": 11,
         "example": "We'll do it bit by bit.",
         "exampleZh": "我們會一點一點去做。"
@@ -4254,7 +4254,7 @@ const toeicWordsDB = [
         "en": "bite",
         "kk": "[baɪt]",
         "uk": "/baɪt/",
-        "zh": "v. 咬、啃、咬傷、叮；n. 咬、一口的量、咬傷、叮傷",
+        "zh": "v. 咬、咬傷、叮、蜇；n. 叮、咬、一口的量、咬傷",
         "unit": 11,
         "example": "Most European spiders don't bite.",
         "exampleZh": "大多數歐洲蜘蛛不咬人。"
@@ -4274,7 +4274,7 @@ const toeicWordsDB = [
         "en": "bizarre",
         "kk": "[bəˋzɑr]",
         "uk": "/bɪˈzɑː(r)/",
-        "zh": "adj. 奇異的、不尋常的、奇怪的、古怪的",
+        "zh": "adj. 奇異的、異乎尋常的、古怪的",
         "unit": 11,
         "example": "The building was of bizarre construction.",
         "exampleZh": "這建築構造奇異。"
@@ -4284,7 +4284,7 @@ const toeicWordsDB = [
         "en": "blame",
         "kk": "[blem]",
         "uk": "/bleɪm/",
-        "zh": "vt. 責備、指責、責怪、歸咎於；n. 責備、過錯、罪責",
+        "zh": "vt. 責備、責怪、歸咎於、怨；n. 責備、過錯、罪責",
         "unit": 11,
         "example": "No blame attaches to you.",
         "exampleZh": "你一點責任也沒有。"
@@ -4304,7 +4304,7 @@ const toeicWordsDB = [
         "en": "blank",
         "kk": "[blæŋk]",
         "uk": "/blæŋk/",
-        "zh": "adj. 空的、無內容的、空白的、茫然的；n. 空白、空白處、空格、一片空白；v. 使模糊、刪去、成為空白、不記得",
+        "zh": "adj. 空白的、空的、茫然的、毫無表情的；n. 空格、空白處、一片空白、空彈；v. 成為空白、不記得、冷落、不理睬",
         "unit": 11,
         "example": "Do we have a blank video ?",
         "exampleZh": "我們有空白影片嗎？"
@@ -4314,7 +4314,7 @@ const toeicWordsDB = [
         "en": "blanket",
         "kk": "[ˋblæŋkət]",
         "uk": "/ˈblæŋkɪt/",
-        "zh": "n. 毛毯、毯子、厚層、覆蓋層；vt. 覆蓋、蓋住、籠罩、消除；adj. 總括的、全面的、通用的",
+        "zh": "n. 毯子、覆蓋物、毛毯、厚層；vt. 覆蓋、蓋住、籠罩、消除；adj. 總括的、全面的、通用的",
         "unit": 11,
         "example": "I wrapped a blanket around the baby.",
         "exampleZh": "我用毯子把嬰兒裹了起來。"
@@ -4334,7 +4334,7 @@ const toeicWordsDB = [
         "en": "bleed",
         "kk": "[blid]",
         "uk": "/bliːd/",
-        "zh": "v. 出血、流血、給……放血、散開；n. 流血、出血、洩出、滲色",
+        "zh": "v. 流血、出血、給……放血、散開；n. 流血、出血、洩出、滲色",
         "unit": 11,
         "example": "Bleed photos off the edge of the page.",
         "exampleZh": "將照片設定為頁面出血效果，讓畫面延伸至頁邊之外。"
@@ -4344,7 +4344,7 @@ const toeicWordsDB = [
         "en": "blend",
         "kk": "[blɛnd]",
         "uk": "/blend/",
-        "zh": "vt. 使混雜、使交融、混合、調和；n. 混雜、交融、混合物、融合",
+        "zh": "vt. 混合、調和、協調、融合；n. 混合物、交融、融合、混合詞",
         "unit": 11,
         "example": "Oil does not blend with water.",
         "exampleZh": "油不融於水。"
@@ -4364,7 +4364,7 @@ const toeicWordsDB = [
         "en": "blind",
         "kk": "[blaɪnd]",
         "uk": "/blaɪnd/",
-        "zh": "adj. 盲的、視而不見的、不願承認的、失明的；vt. 使變瞎、使失明、使眼花、使目眩；n. 窗簾、捲簾、埋伏處、伏擊處；adv. 看不清地、失去理智地、盲目地、無準備地",
+        "zh": "adj. 盲的、失明的、未察覺的、視而不見的；vt. 使失明、使變瞎、使眼花、使目眩；n. 窗簾、捲簾、埋伏處、伏擊處；adv. 看不清地、失去理智地、盲目地、無準備地",
         "unit": 11,
         "example": "Doctors think he will go blind.",
         "exampleZh": "醫生認為他會失明。"
@@ -4374,7 +4374,7 @@ const toeicWordsDB = [
         "en": "block",
         "kk": "[blɑk]",
         "uk": "/blɒk/",
-        "zh": "n. 街區、障礙、大塊、一塊；vt. 阻塞、堵住、封鎖、堵塞",
+        "zh": "n. 街區、大塊、一塊、街段；vt. 阻塞、堵塞、遮住",
         "unit": 11,
         "example": "Block draughts around doors and windows.",
         "exampleZh": "阻擋門窗周圍的氣流。"
@@ -4394,7 +4394,7 @@ const toeicWordsDB = [
         "en": "blood",
         "kk": "[blʌd]",
         "uk": "/blʌd/",
-        "zh": "n. 血、血液、出身、血統；v. 使初次體驗、抽血",
+        "zh": "n. 血液、血統、血、出身；v. 使初次體驗、抽血",
         "unit": 11,
         "example": "The wound was oozing blood.",
         "exampleZh": "傷口正在滲血。"
@@ -4404,7 +4404,7 @@ const toeicWordsDB = [
         "en": "bloom",
         "kk": "[blum]",
         "uk": "/bluːm/",
-        "zh": "n. 開花、開花期、花、花朵；vi. 繁榮、興盛、開花、綻放",
+        "zh": "n. 花、花朵、花期、青春煥發；vi. 開花、綻放、繁榮、興旺",
         "unit": 11,
         "example": "The daffodils were in full bloom.",
         "exampleZh": "水仙花盛開了。"
@@ -4424,7 +4424,7 @@ const toeicWordsDB = [
         "en": "blow",
         "kk": "[blo]",
         "uk": "/bləʊ/",
-        "zh": "v. 吹、吹奏、刮、吹氣；n. 大風、強風、吹氣、擤鼻子",
+        "zh": "v. 吹、刮、吹氣、吹響；n. 打擊、大風、強風、吹氣",
         "unit": 11,
         "example": "Blow! I completely forgot it.",
         "exampleZh": "吹！我完全忘記了。"
@@ -4444,7 +4444,7 @@ const toeicWordsDB = [
         "en": "blur",
         "kk": "[blɝ]",
         "uk": "/blɜː(r)/",
-        "zh": "n. 模糊、模糊不清的事物、模糊的記憶、記不清的事情；vt. 使模糊不清、使朦朧、看不清楚、記不清",
+        "zh": "n. 模糊不清的事物、模糊的記憶、記不清的事情、汙跡；vt. 模糊、看不清楚、記不清、難以區分",
         "unit": 11,
         "example": "The events of that day were just a blur.",
         "exampleZh": "那天發生的事只剩一片模糊的記憶。"
@@ -4454,7 +4454,7 @@ const toeicWordsDB = [
         "en": "board",
         "kk": "[bɔrd]",
         "uk": "/bɔːd/",
-        "zh": "n. 木板、委員會、理事會、板；vt. 登上、讓乘客登機、寄宿、住校",
+        "zh": "n. 板、木板、黑板、告示牌；vt. 登上、讓乘客登機、寄宿、住校",
         "unit": 11,
         "example": "She jumped off the top board.",
         "exampleZh": "她從頂板上跳了下來。"
@@ -4474,7 +4474,7 @@ const toeicWordsDB = [
         "en": "boast",
         "kk": "[bost]",
         "uk": "/bəʊst/",
-        "zh": "vt. 誇耀、有、吹噓；n. 誇耀、自吹自擂、感到自豪的事",
+        "zh": "vt. 吹牛、有、吹噓、誇耀；n. 大話、誇耀、自吹自擂、感到自豪的事",
         "unit": 11,
         "example": "All three Internet agencies boast they've won major accounts.",
         "exampleZh": "所有的三家網路代理公司都誇口說他們已贏得了大客戶。"
@@ -4484,7 +4484,7 @@ const toeicWordsDB = [
         "en": "boat",
         "kk": "[bot]",
         "uk": "/bəʊt/",
-        "zh": "n. 小船、輪船；vi. 划船",
+        "zh": "n. 船、小艇、小船、輪船；vi. 划船",
         "unit": 11,
         "example": "The boat chugged slowly along.",
         "exampleZh": "小船緩緩前進。"
@@ -4494,7 +4494,7 @@ const toeicWordsDB = [
         "en": "body",
         "kk": "[ˋbɑdi]",
         "uk": "/ˈbɒdi/",
-        "zh": "n. 身體、肉體、軀體、軀幹；v. 賦予（抽象事物）以形體、使具體化、製造（汽車）的車身",
+        "zh": "n. 身體、主體、軀體、軀幹；v. 賦予（抽象事物）以形體、使具體化、製造（汽車）的車身",
         "unit": 11,
         "example": "Exercise tones up your body.",
         "exampleZh": "運動可以強身健體。"
@@ -4504,7 +4504,7 @@ const toeicWordsDB = [
         "en": "boil",
         "kk": "[bɔɪl]",
         "uk": "/bɔɪl/",
-        "zh": "v. 沸騰、烹煮、煮沸、燒開；n. 煮沸、沸騰、癤、皮下膿腫",
+        "zh": "v. 煮沸、沸騰、燒開、用開水煮；n. 沸騰、煮沸、癤、皮下膿腫",
         "unit": 11,
         "example": "She put some potatoes on to boil.",
         "exampleZh": "她放了一些馬鈴薯來煮。"
@@ -4524,7 +4524,7 @@ const toeicWordsDB = [
         "en": "bomb",
         "kk": "[bɑm]",
         "uk": "/bɒm/",
-        "zh": "n. 炸彈、失敗、爆炸裝置、失敗的東西；vt. 轟炸、轟擊、炸燬、疾行",
+        "zh": "n. 炸彈、爆炸裝置、失敗的東西、長傳；vt. 轟炸、炸燬、疾行、快速前進",
         "unit": 11,
         "example": "The bomb has been safely disposed of.",
         "exampleZh": "炸彈已被安全處置。"
@@ -4534,7 +4534,7 @@ const toeicWordsDB = [
         "en": "bombard",
         "kk": "[bɑmˋbɑrd]",
         "uk": "/bɒmˈbɑːd/",
-        "zh": "vt. 砲擊、轟炸、連環炮擊、攻擊；n. 射石炮",
+        "zh": "vt. 砲擊、不斷攻擊、連續提出問題、轟炸；n. 射石炮",
         "unit": 11,
         "example": "Your city is being bombarded.",
         "exampleZh": "你的城市正在遭受轟炸。"
@@ -4544,7 +4544,7 @@ const toeicWordsDB = [
         "en": "bond",
         "kk": "[bɑnd]",
         "uk": "/bɒnd/",
-        "zh": "n. 聯結、聯繫、紐帶、聯絡；v. 建立親密關係、與……黏合",
+        "zh": "n. 紐帶、聯絡、公債、債券；v. 建立親密關係、與……黏合",
         "unit": 11,
         "example": "She works for Bond & Green.",
         "exampleZh": "她在邦德—格林公司工作。"
@@ -4564,7 +4564,7 @@ const toeicWordsDB = [
         "en": "bonus",
         "kk": "[ˋbonəs]",
         "uk": "/ˈbəʊnəs/",
-        "zh": "n. 紅利、獎金、津貼、意外收穫",
+        "zh": "n. 獎金、額外津貼、分紅、津貼",
         "unit": 11,
         "example": "The committee backtracked by scrapping the controversial bonus system.",
         "exampleZh": "該委員會改變主意，廢除充滿爭議性的獎金系統。"
@@ -4614,7 +4614,7 @@ const toeicWordsDB = [
         "en": "boom",
         "kk": "[bum]",
         "uk": "/buːm/",
-        "zh": "n. 激增、繁榮、流行、風靡；v. 迅速發展、興旺、繁榮、轟鳴",
+        "zh": "n. 繁榮、流行、風靡、隆隆聲；v. 轟鳴、迅速發展、繁榮、轟響",
         "unit": 11,
         "example": "Living standards improved rapidly during the post-war boom.",
         "exampleZh": "在戰後那段繁榮昌盛的時期裡，生活水平得到了迅速提高。"
@@ -4624,7 +4624,7 @@ const toeicWordsDB = [
         "en": "boost",
         "kk": "[bust]",
         "uk": "/buːst/",
-        "zh": "vt. 推動、幫助、使增長、偷竊；n. 推動、促進、廣告、宣揚",
+        "zh": "vt. 使增長、推動、偷竊、宣揚；n. 推動、促進、廣告、宣揚",
         "unit": 11,
         "example": "We need a big win to boost our confidence.",
         "exampleZh": "我們需要一個大的勝利來增強我們的自信心。"
@@ -4644,7 +4644,7 @@ const toeicWordsDB = [
         "en": "booth",
         "kk": "[buθ]",
         "uk": "/buːð/",
-        "zh": "n. 攤販、小隔間、電話亭、投票間",
+        "zh": "n. 貨攤、崗亭、雅座、電話亭",
         "unit": 11,
         "example": "Sami sat in the booth.",
         "exampleZh": "薩米坐在包廂裡。"
@@ -4654,7 +4654,7 @@ const toeicWordsDB = [
         "en": "border",
         "kk": "[ˋbɔrdɚ]",
         "uk": "/ˈbɔːdə(r)/",
-        "zh": "n. 邊緣、邊境、國境、邊界；vt. 毗鄰、接界、接壤、環繞",
+        "zh": "n. 邊界、國境、鑲邊、包邊；vt. 邊緣、接壤、毗鄰、環繞",
         "unit": 11,
         "example": "They fled across the border.",
         "exampleZh": "他們越過邊界逃走了。"
@@ -4684,7 +4684,7 @@ const toeicWordsDB = [
         "en": "borrow",
         "kk": "[ˋbɑr͵o]",
         "uk": "/ˈbɒrəʊ/",
-        "zh": "vt. 借用、借、借入、借貸",
+        "zh": "vt. 借用、借入、借、借貸",
         "unit": 11,
         "example": "Can I borrow your calculator?",
         "exampleZh": "我可以藉你的計算機嗎？"
@@ -4704,7 +4704,7 @@ const toeicWordsDB = [
         "en": "bother",
         "kk": "[ˋbɑðɚ]",
         "uk": "/ˈbɒðə(r)/",
-        "zh": "vt. 煩擾、打攪、費心、煩惱；n. 麻煩、不便、討厭的人",
+        "zh": "vt. 煩擾、費心、煩惱、擔心；n. 麻煩、不便、討厭的人",
         "unit": 11,
         "example": "I hope I haven't been a bother.",
         "exampleZh": "我希望我沒有成為麻煩。"
@@ -4744,7 +4744,7 @@ const toeicWordsDB = [
         "en": "boulevard",
         "kk": "[ˋbʊlə͵vɑrd]",
         "uk": "/ˈbuːləvɑːd/",
-        "zh": "n. 大道、林蔭大道、城市中的寬闊大街、大馬路；adj. 娛樂性的；vt. 給…提供林蔭大道、把…建成林蔭大道",
+        "zh": "n. 林蔭大道、大馬路、城市中的寬闊大街；adj. 娛樂性的；vt. 給…提供林蔭大道、把…建成林蔭大道",
         "unit": 11,
         "example": "Why did the animal activists gather on Hollywood Boulevard?",
         "exampleZh": "為什麼動物保護者們聚集在好萊塢大道？"
@@ -4754,7 +4754,7 @@ const toeicWordsDB = [
         "en": "bounce",
         "kk": "[baʊns]",
         "uk": "/baʊns/",
-        "zh": "v. 彈起、彈回、反彈、跳動；n. 彈跳、跳動、彈性、彈力",
+        "zh": "v. 彈起、反彈、跳動、蹦；n. 彈跳、跳動、彈性、彈力",
         "unit": 11,
         "example": "There was a bounce to his step.",
         "exampleZh": "他的步伐矯健有力。"
@@ -4764,7 +4764,7 @@ const toeicWordsDB = [
         "en": "bound",
         "kk": "[baʊnd]",
         "uk": "/baʊnd/",
-        "zh": "adj. 必然的、肯定的、受約束的、有義務的；v. 跳躍、跳起、蹦跳著走、形成……的邊界；n. 界限、限制、蹦跳、跳躍",
+        "zh": "adj. 束縛的、必然的、肯定的、受約束的；v. 跳躍、蹦跳著走、形成……的邊界、劃界；n. 界限、限制、蹦跳、跳躍",
         "unit": 11,
         "example": "They bound his hands together.",
         "exampleZh": "他們把他的雙手綁在一起。"
@@ -4784,7 +4784,7 @@ const toeicWordsDB = [
         "en": "bow",
         "kk": "[baʊ]",
         "uk": "/baʊ; bəʊ/",
-        "zh": "v. 鞠躬、點頭、低下、停止對抗；n. 弓、鞠躬、點頭、船頭",
+        "zh": "v. 鞠躬、點頭、低下、停止對抗；n. 鞠躬、點頭、船頭、蝴蝶結",
         "unit": 11,
         "example": "He was armed with a bow and arrow.",
         "exampleZh": "他手持弓箭。"
@@ -4794,7 +4794,7 @@ const toeicWordsDB = [
         "en": "bowl",
         "kk": "[bol]",
         "uk": "/bəʊl/",
-        "zh": "n. 碗、盆、一碗之量；v. 投、滾、投球、擊中三柱門使（擊球手）出局",
+        "zh": "n. 碗、缽、盆、一碗之量；v. 滾、投球、擊中三柱門使（擊球手）出局、迅速移動",
         "unit": 11,
         "example": "She served him a bowl of beef stew.",
         "exampleZh": "她給他端了一碗燉牛肉。"
@@ -4804,7 +4804,7 @@ const toeicWordsDB = [
         "en": "box",
         "kk": "[bɑks]",
         "uk": "/bɒks/",
-        "zh": "n. 箱、盒、匣、包廂；vi. 把……裝箱、鬥拳、參加拳擊比賽、混雜",
+        "zh": "n. 盒子、盒、箱、匣；vi. 拳擊、把……裝箱、鬥拳、參加拳擊比賽",
         "unit": 11,
         "example": "She was holding a large box.",
         "exampleZh": "她手裡拿著一個大盒子。"
@@ -4824,7 +4824,7 @@ const toeicWordsDB = [
         "en": "boycott",
         "kk": "[ˋbɔɪ͵kɑt]",
         "uk": "/ˈbɔɪkɒt/",
-        "zh": "vt. 杯葛、聯合抵制、抵制、拒絕參加；n. 杯葛、聯合抵制、抵制行動",
+        "zh": "vt. 抵制、拒絕參加；n. 抵制行動",
         "unit": 11,
         "example": "Villagers warned that they would boycott the vote.",
         "exampleZh": "村民們警告說他們將抵制這次投票。"
@@ -4834,7 +4834,7 @@ const toeicWordsDB = [
         "en": "brace",
         "kk": "[bres]",
         "uk": "/breɪs/",
-        "zh": "vt. 支撐、加固、作好準備、抵住；n. 支柱、支撐物、支架、牙箍",
+        "zh": "vt. 作好準備、支撐、加固、抵住；n. 支撐物、支架、牙箍、牙齒矯正器",
         "unit": 11,
         "example": "The engineering team installed a steel brace to reinforce the weak ceiling beam.",
         "exampleZh": "工程團隊安裝了鋼製支架，以加固脆弱的天花板樑柱。"
@@ -4854,7 +4854,7 @@ const toeicWordsDB = [
         "en": "brain",
         "kk": "[bren]",
         "uk": "/breɪn/",
-        "zh": "n. 智力、頭腦、腦、智慧；v. 猛擊……的頭部",
+        "zh": "n. 大腦、頭腦、腦、智力；v. 猛擊……的頭部",
         "unit": 11,
         "example": "Alcohol acts quickly on the brain.",
         "exampleZh": "酒精對大腦的作用很快。"
@@ -4874,7 +4874,7 @@ const toeicWordsDB = [
         "en": "brake",
         "kk": "[brek]",
         "uk": "/breɪk/",
-        "zh": "n. 煞車、剎車、車閘、阻礙；vt. 煞車、剎車、用閘減速",
+        "zh": "n. 剎車、車閘、阻礙、抑制；vt. 剎車、用閘減速",
         "unit": 11,
         "example": "The brake pedal had just snapped off.",
         "exampleZh": "制動踏板剛才突然斷裂了。"
@@ -4884,7 +4884,7 @@ const toeicWordsDB = [
         "en": "branch",
         "kk": "[bræntʃ]",
         "uk": "/brɑːntʃ/",
-        "zh": "n. 樹枝、支流、分部、部門；v. 分岔、岔開、出枝、發出新枝",
+        "zh": "n. 樹枝、分支、分枝、分支機構；v. 分岔、岔開、出枝、發出新枝",
         "unit": 11,
         "example": "He chopped a branch off the tree.",
         "exampleZh": "他從樹上砍下一根樹枝。"
@@ -4964,7 +4964,7 @@ const toeicWordsDB = [
         "en": "breadth",
         "kk": "[brɛdθ]",
         "uk": "/bredθ/",
-        "zh": "n. 寬度、幅度、廣度、廣泛性",
+        "zh": "n. 寬度、幅度、寬宏、廣度",
         "unit": 11,
         "example": "We won by a hair's breadth.",
         "exampleZh": "我們以些微之差贏了對手。"
@@ -4974,7 +4974,7 @@ const toeicWordsDB = [
         "en": "break",
         "kk": "[brek]",
         "uk": "/breɪk/",
-        "zh": "v. 打破、折斷、破裂、撕開；n. 破損、休息、機會、間歇",
+        "zh": "v. 打破、折斷、破裂、撕開；n. 休息、間歇、小憩、課間休息",
         "unit": 11,
         "example": "You need a break from routine.",
         "exampleZh": "你需要從日常生活中休息一下。"
@@ -4994,7 +4994,7 @@ const toeicWordsDB = [
         "en": "breakdown",
         "kk": "[ˋbrek͵daʊn]",
         "uk": "/ˈbreɪkdaʊn/",
-        "zh": "n. 故障、損壞、破裂、癱瘓",
+        "zh": "n. 故障、損壞、崩潰、分析",
         "unit": 11,
         "example": "First, let's look at a breakdown of the costs.",
         "exampleZh": "我們首先看一下成本的詳細數字。"
@@ -5024,7 +5024,7 @@ const toeicWordsDB = [
         "en": "breakthrough",
         "kk": "[ˋbrek͵θru]",
         "uk": "/ˈbreɪkθruː/",
-        "zh": "n. 突破性進展、突破、重大進展",
+        "zh": "n. 突圍、突破、突破性進展、重大進展",
         "unit": 11,
         "example": "God willing, there will be a breakthrough.",
         "exampleZh": "天公作美的話，會有所突破。"
@@ -5034,7 +5034,7 @@ const toeicWordsDB = [
         "en": "breakup",
         "kk": "[ˋbre͵kʌp]",
         "uk": "/ˈbreɪkʌp/",
-        "zh": "n. 中斷、中止、分手、破裂",
+        "zh": "n. 分裂、關係破裂、解體、分手",
         "unit": 11,
         "example": "The Justice Department advocated a breakup of Microsoft.",
         "exampleZh": "司法部主張微軟公司解體。"
@@ -5044,7 +5044,7 @@ const toeicWordsDB = [
         "en": "breathe",
         "kk": "[brið]",
         "uk": "/briːð/",
-        "zh": "vt. 呼吸、呼氣、撥出、吐出",
+        "zh": "vt. 呼吸、撥出、吐出、吸入",
         "unit": 11,
         "example": "The air was so cold we could hardly breathe.",
         "exampleZh": "空氣非常寒冷，我們難以呼吸。"
@@ -5084,7 +5084,7 @@ const toeicWordsDB = [
         "en": "brick",
         "kk": "[brɪk]",
         "uk": "/brɪk/",
-        "zh": "n. 磚、磚塊、熱心人、可靠的人；adj. 似磚的、用磚做的；v. 用磚牆圍起、用磚堵住",
+        "zh": "n. 磚塊、磚、熱心人、可靠的人；adj. 似磚的、用磚做的；v. 用磚牆圍起、用磚堵住",
         "unit": 11,
         "example": "The school is built of brick.",
         "exampleZh": "學校是磚砌的。"
@@ -5104,7 +5104,7 @@ const toeicWordsDB = [
         "en": "bridge",
         "kk": "[brɪdʒ]",
         "uk": "/brɪdʒ/",
-        "zh": "n. 橋、橋墩、橋樑、紐帶；vt. 彌合、消除、兼具……的特點、在……上架橋",
+        "zh": "n. 橋梁、橋、橋樑、紐帶；vt. 連接、彌合、消除、兼具……的特點",
         "unit": 11,
         "example": "When was the bridge constructed?",
         "exampleZh": "這座橋是什麼時候蓋的？"
@@ -5114,7 +5114,7 @@ const toeicWordsDB = [
         "en": "brief",
         "kk": "[brif]",
         "uk": "/briːf/",
-        "zh": "adj. 簡短的、短暫的、很短的；vt. 給……指示、向……介紹情況、向（辯護律師）提供案情摘要；n. 指示、任務簡介、摘要、概要",
+        "zh": "adj. 簡短的、短暫的、很短的；vt. 給……指示、向……介紹情況、向（辯護律師）提供案情摘要；n. 概要、指示、任務簡介、摘要",
         "unit": 11,
         "example": "He let out a brief cackle.",
         "exampleZh": "他發出短促的咯咯笑聲。"
@@ -5144,7 +5144,7 @@ const toeicWordsDB = [
         "en": "bright",
         "kk": "[braɪt]",
         "uk": "/braɪt/",
-        "zh": "adj. 發亮的、晴朗的、明亮的、鮮豔的；n. 前大燈、頭燈、明亮醒目的顏色；adv. 光亮地、明亮地",
+        "zh": "adj. 明亮的、聰明的、鮮豔的、歡快的；n. 前大燈、頭燈、明亮醒目的顏色；adv. 光亮地、明亮地",
         "unit": 11,
         "example": "Bright colours are his signature.",
         "exampleZh": "明亮的色彩是他的標誌。"
@@ -5164,7 +5164,7 @@ const toeicWordsDB = [
         "en": "brilliant",
         "kk": "[ˋbrɪljənt]",
         "uk": "/ˈbrɪliənt/",
-        "zh": "adj. 光輝的、明亮的、巧妙的、使人印象深的",
+        "zh": "adj. 輝煌的、傑出的、巧妙的、使人印象深的",
         "unit": 11,
         "example": "He was a brilliant musician.",
         "exampleZh": "他曾是一位出色的音樂家。"
@@ -5174,7 +5174,7 @@ const toeicWordsDB = [
         "en": "brisk",
         "kk": "[brɪsk]",
         "uk": "/brɪsk/",
-        "zh": "adj. 活潑的、生氣勃勃的、輕快的、興隆的；v. 加快、使……活潑、使……興旺",
+        "zh": "adj. 輕快的、興旺的、寒冷而清新的、生氣勃勃的；v. 加快、使……活潑、使……興旺",
         "unit": 11,
         "example": "She adopted a brisk businesslike tone.",
         "exampleZh": "她用一種公務口吻，說話乾脆利落。"
@@ -5194,7 +5194,7 @@ const toeicWordsDB = [
         "en": "broadcast",
         "kk": "[ˋbrɔd͵kæst]",
         "uk": "/ˈbrɔːdkɑːst/",
-        "zh": "vt. 廣播、播送、散佈、傳播；n. 電視節目、廣播節目、廣播、播出；adj. 廣播（或電視）節目的；adv. 四散地、撒播地",
+        "zh": "vt. 廣播、散佈、傳播、播撒；n. 電視節目、廣播節目、廣播；adj. 廣播（或電視）節目的；adv. 四散地、撒播地",
         "unit": 11,
         "example": "The programme was broadcast nationally.",
         "exampleZh": "該節目在全國播出。"
@@ -5254,7 +5254,7 @@ const toeicWordsDB = [
         "en": "bruise",
         "kk": "[bruz]",
         "uk": "/bruːz/",
-        "zh": "n. 傷痕、青腫、青瘀、碰傷；vt. 使受瘀傷、使青腫、打擊、挫傷",
+        "zh": "n. 青瘀、傷痕、碰傷；vt. 打擊、挫傷、壓碎、碾碎",
         "unit": 11,
         "example": "How did you get that bruise on your cheek?",
         "exampleZh": "你臉頰上怎麼有一塊瘀傷？"
@@ -5264,7 +5264,7 @@ const toeicWordsDB = [
         "en": "brush",
         "kk": "[brʌʃ]",
         "uk": "/brʌʃ/",
-        "zh": "n. 刷子、畫筆、灌木叢、刷；vt. 刷、刷洗、拂拭、刷掉",
+        "zh": "n. 刷子、畫筆、灌木叢、刷；vt. 刷、拂拭、刷掉、拂去",
         "unit": 11,
         "example": "Brush beaten egg over the pastry.",
         "exampleZh": "用刷子把打勻的雞蛋抹在油酥麵糰上。"
@@ -5284,7 +5284,7 @@ const toeicWordsDB = [
         "en": "brutal",
         "kk": "[ˋbrutəl]",
         "uk": "/ˈbruːt(ə)l/",
-        "zh": "adj. 冷酷的、野蠻的、兇殘的、毫不掩飾的",
+        "zh": "adj. 野蠻的、粗暴的、兇殘的、毫不掩飾的",
         "unit": 11,
         "example": "Market analysts described the sudden stock drop as a brutal correction for investors.",
         "exampleZh": "市場分析師將股市的突然暴跌形容為對投資人的一次殘酷洗禮。"
@@ -5304,7 +5304,7 @@ const toeicWordsDB = [
         "en": "bubble",
         "kk": "[ˋbʌbəl]",
         "uk": "/ˈbʌb(ə)l/",
-        "zh": "n. 泡泡、氣泡、泡沫、經濟泡沫；vi. 沸騰、冒泡、發出冒泡的聲音、忙碌",
+        "zh": "n. 氣泡、泡沫、經濟泡沫、一點感情；vi. 冒泡、沸騰、發出冒泡的聲音、忙碌",
         "unit": 11,
         "example": "Add the white wine and let it bubble up.",
         "exampleZh": "加入白葡萄酒，讓它產生泡沫。"
@@ -5314,7 +5314,7 @@ const toeicWordsDB = [
         "en": "bucket",
         "kk": "[ˋbʌkət]",
         "uk": "/ˈbʌkɪt/",
-        "zh": "n. 水桶、提桶、桶、一桶之量；v. 快速顛簸著行駛",
+        "zh": "n. 水桶、桶、一桶之量、挖鬥；v. 快速顛簸著行駛",
         "unit": 11,
         "example": "She ran hot water into the bucket.",
         "exampleZh": "她把熱水注入桶裡。"
@@ -5324,7 +5324,7 @@ const toeicWordsDB = [
         "en": "buckle",
         "kk": "[ˋbʌkəl]",
         "uk": "/ˈbʌk(ə)l/",
-        "zh": "v. 扣住、扣緊、發軟、屈服；n. 釦子、搭鉤、搭扣",
+        "zh": "v. 帶釦、發軟、屈服、讓步；n. 搭鉤、搭扣",
         "unit": 11,
         "example": "These shoes buckle at the side.",
         "exampleZh": "這雙鞋從旁邊上扣。"
@@ -5344,7 +5344,7 @@ const toeicWordsDB = [
         "en": "budget",
         "kk": "[ˋbʌdʒɪt]",
         "uk": "/ˈbʌdʒɪt/",
-        "zh": "n. 預算、經費、政府預算案；vt. 制定預算、制定開支計劃、計劃、安排；adj. 廉價的、經濟型的",
+        "zh": "n. 預算、政府預算案；vt. 編預算、制定預算、制定開支計劃、計劃；adj. 廉價的、經濟型的",
         "unit": 11,
         "example": "I'm learning how to budget.",
         "exampleZh": "我正在學習怎樣編制預算。"
@@ -5354,7 +5354,7 @@ const toeicWordsDB = [
         "en": "build",
         "kk": "[bɪld]",
         "uk": "/bɪld/",
-        "zh": "v. 建造、建立、修建、發展；n. 體格、體型、體形、造型",
+        "zh": "v. 建造、建立、修建、發展；n. 體形、體格、造型、構造",
         "unit": 11,
         "example": "There are no plans to build new offices.",
         "exampleZh": "目前沒有建造新辦事處的計劃。"
@@ -5374,7 +5374,7 @@ const toeicWordsDB = [
         "en": "bulk",
         "kk": "[bʌlk]",
         "uk": "/bʌlk/",
-        "zh": "n. 體積、容積、主體、大部分；adj. 大量的、大批的、大宗的；v. 使（產品）數量顯得很大、結合",
+        "zh": "n. 體積、容積、大塊、大多數；adj. 大批的、大宗的；v. 使（產品）數量顯得很大、結合",
         "unit": 11,
         "example": "It's cheaper to buy in bulk.",
         "exampleZh": "大批購買便宜些。"
@@ -5384,7 +5384,7 @@ const toeicWordsDB = [
         "en": "business",
         "kk": "[ˋbɪznəs]",
         "uk": "/ˈbɪznəs/",
-        "zh": "n. 商業、職業、買賣、生意",
+        "zh": "n. 生意、商業、買賣、商務",
         "unit": 11,
         "example": "They flew business class.",
         "exampleZh": "他們搭乘的是商務艙。"
@@ -5424,7 +5424,7 @@ const toeicWordsDB = [
         "en": "buy",
         "kk": "[baɪ]",
         "uk": "/baɪ/",
-        "zh": "vt. 買、購買、能買、相信；n. 合算的東西、便宜貨、購買",
+        "zh": "vt. 購買、買、能買、相信；n. 合算的東西、便宜貨、購買",
         "unit": 11,
         "example": "Money can't buy you happiness.",
         "exampleZh": "金錢買不來幸福。"
@@ -5444,7 +5444,7 @@ const toeicWordsDB = [
         "en": "cab",
         "kk": "[kæb]",
         "uk": "/kæb/",
-        "zh": "n. 計程車、駕駛室、出租馬車、揚聲器箱；v. 乘計程車旅行",
+        "zh": "n. 計程車、出租馬車、駕駛室、揚聲器箱；v. 乘計程車旅行",
         "unit": 11,
         "example": "We'll take a cab to save time.",
         "exampleZh": "我們會坐計程車來節省時間。"
@@ -5454,7 +5454,7 @@ const toeicWordsDB = [
         "en": "cabin",
         "kk": "[ˋkæbən]",
         "uk": "/ˈkæbɪn/",
-        "zh": "n. 客艙、駕駛艙、小木屋、船艙；v. 使身居斗室",
+        "zh": "n. 客艙、小木屋、船艙、機艙；v. 使身居斗室",
         "unit": 11,
         "example": "My cabin is on deck C.",
         "exampleZh": "我的艙位在C層甲板。"
@@ -5474,7 +5474,7 @@ const toeicWordsDB = [
         "en": "cable",
         "kk": "[ˋkebəl]",
         "uk": "/ˈkeɪb(ə)l/",
-        "zh": "n. 纜、索、電纜、鋼纜；v. 給……安裝有線電視、給……發電報",
+        "zh": "n. 電纜、纜線、鋼纜、纜繩；v. 給……安裝有線電視、給……發電報",
         "unit": 11,
         "example": "Rats had gnawed through the cable.",
         "exampleZh": "老鼠把電纜咬斷了。"
@@ -5494,7 +5494,7 @@ const toeicWordsDB = [
         "en": "cafeteria",
         "kk": "[͵kæfəˋtɪriə]",
         "uk": "/ˌkæfəˈtɪəriə/",
-        "zh": "n. 自助餐廳、自助食堂、自助餐館",
+        "zh": "n. 自助餐館、自助食堂",
         "unit": 11,
         "example": "Does the college cafeteria provide a healthful diet?",
         "exampleZh": "此大學餐廳是否供應有益健康的膳食？"
@@ -5524,7 +5524,7 @@ const toeicWordsDB = [
         "en": "calculate",
         "kk": "[ˋkælkjə͵let]",
         "uk": "/ˈkælkjuleɪt/",
-        "zh": "vt. 計算、算、核算、預測",
+        "zh": "vt. 計算、估算、核算、預測",
         "unit": 11,
         "example": "This formula is used to calculate the area of a circle.",
         "exampleZh": "這個公式用於計算圓的面積。"
@@ -5534,7 +5534,7 @@ const toeicWordsDB = [
         "en": "calculation",
         "kk": "[͵kælkjəˋleʃən]",
         "uk": "/ˌkælkjuˈleɪʃ(ə)n/",
-        "zh": "n. 計算、估計、運算、估算",
+        "zh": "n. 計算、估計、推測、盤算",
         "unit": 11,
         "example": "Cathy did a rough calculation.",
         "exampleZh": "凱茜作了一個粗略的計算。"
@@ -5554,7 +5554,7 @@ const toeicWordsDB = [
         "en": "calendar",
         "kk": "[ˋkæləndɚ]",
         "uk": "/ˈkælɪndə(r)/",
-        "zh": "n. 日曆、日程表、記事錄、大事記；v. 把……排進日程表、把……記入記事錄",
+        "zh": "n. 日曆、月曆、行事曆、日程表；v. 把……排進日程表、把……記入記事錄",
         "unit": 11,
         "example": "This is one of the biggest weeks in the racing calendar.",
         "exampleZh": "這是全年賽馬日程表中最重要的幾個星期之一。"
@@ -5604,7 +5604,7 @@ const toeicWordsDB = [
         "en": "calm",
         "kk": "[kɑm]",
         "uk": "/kɑːm/",
-        "zh": "adj. 鎮靜的、沉著的、平靜的、穩定的；n. 鎮靜、平和、寧靜、安靜；v. 使鎮定、使平靜、使鎮靜、冷靜下來",
+        "zh": "adj. 冷靜的、鎮靜的、沉著的、平靜的；n. 鎮靜、平和、寧靜、安靜；v. 平靜、使平靜、使鎮靜、冷靜下來",
         "unit": 11,
         "example": "Her voice was surprisingly calm.",
         "exampleZh": "她的聲音出人意料地平靜。"
@@ -5624,7 +5624,7 @@ const toeicWordsDB = [
         "en": "camp",
         "kk": "[kæmp]",
         "uk": "/kæmp/",
-        "zh": "n. 營地、帳篷、兵營、軍營；vi. 紮營、宿營、野營、露營；adj. 忸怩作態的、滑稽可笑的、做作的",
+        "zh": "n. 營地、兵營、軍營、度假營；vi. 露營、野營、據守、堅守；adj. 忸怩作態的、滑稽可笑的、做作的",
         "unit": 11,
         "example": "He spent two weeks at camp this summer.",
         "exampleZh": "今年夏天他在營地度過了兩週。"
@@ -5634,7 +5634,7 @@ const toeicWordsDB = [
         "en": "campaign",
         "kk": "[kæmˋpen]",
         "uk": "/kæmˈpeɪn/",
-        "zh": "n. 競選、活動、運動、戰役；vi. 領導（參加）運動、從事競選活動",
+        "zh": "n. 活動、運動、戰役、戰鬥；vi. 競選、領導（參加）運動、從事競選活動",
         "unit": 11,
         "example": "His campaign was not going well.",
         "exampleZh": "他的競選活動進展得不順利。"
@@ -5644,7 +5644,7 @@ const toeicWordsDB = [
         "en": "campus",
         "kk": "[ˋkæmpəs]",
         "uk": "/ˈkæmpəs/",
-        "zh": "n. 校園、校區、大學生活、大學（學校、醫院等機構的）場地",
+        "zh": "n. 校園、大學生活、大學（學校、醫院等機構的）場地",
         "unit": 11,
         "example": "There are three dining halls on campus.",
         "exampleZh": "校園裡有三個餐廳。"
@@ -5654,7 +5654,7 @@ const toeicWordsDB = [
         "en": "cancel",
         "kk": "[ˋkænsəl]",
         "uk": "/ˈkæns(ə)l/",
-        "zh": "vt. 取消、廢除、中止、終止；n. 取消、撤銷、郵票登出章、戳記",
+        "zh": "vt. 取消、終止、廢除；n. 取消、撤銷、郵票登出章、戳記",
         "unit": 11,
         "example": "The customer called to cancel.",
         "exampleZh": "客戶打電話要求取消。"
@@ -5684,7 +5684,7 @@ const toeicWordsDB = [
         "en": "candidate",
         "kk": "[ˋkændədet]",
         "uk": "/ˈkændɪdət/",
-        "zh": "n. 候選人、候補者、申請者、有望體驗（得到）……的人",
+        "zh": "n. 候選人、應徵者、申請者、有望體驗（得到）……的人",
         "unit": 11,
         "example": "He's a prime candidate for promotion.",
         "exampleZh": "他是最有望獲得晉升的人選。"
@@ -5694,7 +5694,7 @@ const toeicWordsDB = [
         "en": "capability",
         "kk": "[͵kepəˋbɪləti]",
         "uk": "/ˌkeɪpəˈbɪləti/",
-        "zh": "n. 能力、才能、軍事力量、計算機效能",
+        "zh": "n. 能力、性能、才能、軍事力量",
         "unit": 11,
         "example": "No one ever questioned her capability.",
         "exampleZh": "從來沒有人質疑過她的能力。"
@@ -5714,7 +5714,7 @@ const toeicWordsDB = [
         "en": "capacity",
         "kk": "[kəˋpæsəti]",
         "uk": "/kəˈpæsəti/",
-        "zh": "n. 容量、容積、能力、才能；adj. 無虛席的、滿場的",
+        "zh": "n. 容量、能力、才能、容積；adj. 無虛席的、滿場的",
         "unit": 11,
         "example": "The school is filled to capacity.",
         "exampleZh": "這所學校已經滿員。"
@@ -5724,7 +5724,7 @@ const toeicWordsDB = [
         "en": "capital",
         "kk": "[ˋkæpətəl]",
         "uk": "/ˈkæpɪt(ə)l/",
-        "zh": "n. 首都、資本、資金、資本家；adj. 可處死刑的、大寫的、首府的、省會的",
+        "zh": "n. 首都、資本、資金、資本家；adj. 可處死刑的、大寫的、首府的",
         "unit": 11,
         "example": "Cairo is the capital of Egypt.",
         "exampleZh": "開羅是埃及的首都。"
@@ -5754,7 +5754,7 @@ const toeicWordsDB = [
         "en": "capture",
         "kk": "[ˋkæptʃɚ]",
         "uk": "/ˈkæptʃə(r)/",
-        "zh": "vt. 捕獲、俘虜、俘獲、奪取；n. 捕獲、俘虜、被捕獲、被捕獲的人",
+        "zh": "vt. 捕獲、俘獲、奪取、佔領；n. 抓住、捕獲、被捕獲、被捕獲的人",
         "unit": 11,
         "example": "He managed to evade capture.",
         "exampleZh": "他設法逃脫了抓捕。"
@@ -5764,7 +5764,7 @@ const toeicWordsDB = [
         "en": "care",
         "kk": "[kɛr]",
         "uk": "/keə(r)/",
-        "zh": "n. 照料、護理、小心、謹慎；v. 在乎、關心、照顧、照料",
+        "zh": "n. 照料、護理、小心；v. 關心、照顧、照料、在意",
         "unit": 11,
         "example": "Joe Sixpack doesn't care about that.",
         "exampleZh": "喬·斯克斯帕克並不關心這些。"
@@ -5774,7 +5774,7 @@ const toeicWordsDB = [
         "en": "career",
         "kk": "[kɚˋɪr]",
         "uk": "/kəˈrɪə(r)/",
-        "zh": "n. 職業、工作、事業、職業生涯；adj. 就業的、職業的、終身從事的；vi. 猛衝",
+        "zh": "n. 事業、職業生涯、職業、速度；adj. 就業的、職業的、終身從事的；vi. 猛衝",
         "unit": 11,
         "example": "That was a smart career move.",
         "exampleZh": "那是個人事業發展上的一著妙棋。"
@@ -5784,7 +5784,7 @@ const toeicWordsDB = [
         "en": "careful",
         "kk": "[ˋkɛrfəl]",
         "uk": "/ˈkeəf(ə)l/",
-        "zh": "adj. 小心翼翼的、仔細的、小心的、謹慎的",
+        "zh": "adj. 小心的、仔細的、謹慎的、周密的",
         "unit": 11,
         "example": "The trip needs careful planning.",
         "exampleZh": "旅行需要仔細計劃。"
@@ -5824,7 +5824,7 @@ const toeicWordsDB = [
         "en": "carrier",
         "kk": "[ˋkæriɚ]",
         "uk": "/ˈkæriə(r)/",
-        "zh": "n. 運送人、搬運人、運輸工具、航空公司",
+        "zh": "n. 運送人、從事運輸業公司、帶菌者、搬運人",
         "unit": 11,
         "example": "They brought baby Michael along in a carrier.",
         "exampleZh": "他們把小邁克爾放在嬰兒車上一起帶來了。"
@@ -5834,7 +5834,7 @@ const toeicWordsDB = [
         "en": "carry",
         "kk": "[ˋkæri]",
         "uk": "/ˈkæri/",
-        "zh": "v. 支撐、提；n. 搬運、帶球跑、擲（擊）球距離、射程",
+        "zh": "v. 攜帶、提、扛；n. 搬運、帶球跑、擲（擊）球距離、射程",
         "unit": 11,
         "example": "Only one carry-on is allowed.",
         "exampleZh": "只允許攜帶一件隨身行李。"
@@ -5854,7 +5854,7 @@ const toeicWordsDB = [
         "en": "cart",
         "kk": "[kɑrt]",
         "uk": "/kɑːt/",
-        "zh": "n. 小車、手推車、大車、馬車；vt. 用車裝運、搬運、移動、挾持",
+        "zh": "n. 大車、馬車、小型機動車、購物車；vt. 用車裝運、搬運、移動、挾持",
         "unit": 11,
         "example": "The cart clattered over the cobbles.",
         "exampleZh": "大車哐當哐當地行駛在卵石路上。"
@@ -5874,7 +5874,7 @@ const toeicWordsDB = [
         "en": "case",
         "kk": "[kes]",
         "uk": "/keɪs/",
-        "zh": "n. 盒、套、具體情況、例項；v. 圍繞、包蓋、探察、踩點兒",
+        "zh": "n. 案例、箱子、具體情況、例項；v. 圍繞、包蓋、探察、踩點兒",
         "unit": 11,
         "example": "He zipped his case shut.",
         "exampleZh": "他拉上箱子的拉鍊。"
@@ -5884,7 +5884,7 @@ const toeicWordsDB = [
         "en": "cash",
         "kk": "[kæʃ]",
         "uk": "/kæʃ/",
-        "zh": "n. 現金、現款、金錢、資金；vt. 把……兌現、兌現、支付現款",
+        "zh": "n. 現金、現款、金錢、資金；vt. 兌現、支付現款",
         "unit": 11,
         "example": "I'm short of cash right now.",
         "exampleZh": "我眼下正缺錢。"
@@ -5894,7 +5894,7 @@ const toeicWordsDB = [
         "en": "cast",
         "kk": "[kæst]",
         "uk": "/kɑːst/",
-        "zh": "vt. 投、擲、拋、投射；n. 投、班底、演員、演員陣容",
+        "zh": "vt. 投射、將（視線，目光）投向、澆鑄；n. 演員陣容、鑄型、模型、石膏",
         "unit": 11,
         "example": "They cast anchor at nightfall.",
         "exampleZh": "他們傍晚拋錨停泊。"
@@ -5924,7 +5924,7 @@ const toeicWordsDB = [
         "en": "category",
         "kk": "[ˋkætə͵ɡɔri]",
         "uk": "/ˈkætəɡəri/",
-        "zh": "n. 種類、部屬、類目、範疇",
+        "zh": "n. 類別、範疇、種類",
         "unit": 11,
         "example": "His pictures don't fit into any category.",
         "exampleZh": "他的畫哪一類也算不上。"
@@ -5934,7 +5934,7 @@ const toeicWordsDB = [
         "en": "cater",
         "kk": "[ˋketɚ]",
         "uk": "/ˈkeɪtə(r)/",
-        "zh": "v. 提供飲食、承辦宴席、提供餐飲服務、承辦酒席",
+        "zh": "v. 承辦宴席、迎合、提供餐飲服務、承辦酒席",
         "unit": 11,
         "example": "We cater to an exclusive clientele.",
         "exampleZh": "我們滿足一個特殊客戶群的需求。"
@@ -5954,7 +5954,7 @@ const toeicWordsDB = [
         "en": "cause",
         "kk": "[kɑz]",
         "uk": "/kɔːz/",
-        "zh": "n. 原因、起因、事業、理由；vt. 導致、使發生、引起",
+        "zh": "n. 原因、動機、事業、理由；vt. 引起、導致",
         "unit": 11,
         "example": "High temperatures can cause hallucination.",
         "exampleZh": "高溫會引起幻覺。"
@@ -5984,7 +5984,7 @@ const toeicWordsDB = [
         "en": "central",
         "kk": "[ˋsɛntrəl]",
         "uk": "/ˈsentrəl/",
-        "zh": "adj. 中心的、中央的、起支配作用的、有控制力的；n. 活動中心",
+        "zh": "adj. 中央的、主要的、中心的、起支配作用的；n. 活動中心",
         "unit": 11,
         "example": "The house has gas-fired central heating.",
         "exampleZh": "房子配有瓦斯中央暖氣系統。"
@@ -6014,7 +6014,7 @@ const toeicWordsDB = [
         "en": "certain",
         "kk": "[ˋsɝtən]",
         "uk": "/ˈsɜːt(ə)n/",
-        "zh": "adj. 確鑿的、無疑的、必然的、必定的；pron. 某些、某幾個",
+        "zh": "adj. 確定的、某些的、必然的、必定的；pron. 某些、某幾個",
         "unit": 11,
         "example": "That's true, to a certain extent.",
         "exampleZh": "在某種程度上，確實如此。"
@@ -6024,7 +6024,7 @@ const toeicWordsDB = [
         "en": "certainly",
         "kk": "[ˋsɝtənli]",
         "uk": "/ˈsɜːt(ə)nli/",
-        "zh": "adv. 無疑地、必定、無疑、確定",
+        "zh": "adv. 當然、確實、無疑、確定",
         "unit": 11,
         "example": "She certainly knows what's what.",
         "exampleZh": "她當然知道輕重緩急。"
@@ -6044,7 +6044,7 @@ const toeicWordsDB = [
         "en": "certify",
         "kk": "[ˋsɝtə͵faɪ]",
         "uk": "/ˈsɜːtɪfaɪ/",
-        "zh": "v. 證明、證實、給……頒發合格證書、證明（某人）患有精神病",
+        "zh": "v. 證明、保證、發證書、證實",
         "unit": 11,
         "example": "We can certify for his honesty.",
         "exampleZh": "我們可以保證他的誠實。"
@@ -6054,7 +6054,7 @@ const toeicWordsDB = [
         "en": "chain",
         "kk": "[tʃen]",
         "uk": "/tʃeɪn/",
-        "zh": "n. 鏈條、連鎖、連續、鏈；vt. 用鎖鏈拴住、拘禁、束縛",
+        "zh": "n. 鏈條、鏈、一連串、一系列；vt. 用鎖鏈拴住、拘禁、束縛",
         "unit": 11,
         "example": "The mayor wore his chain of office.",
         "exampleZh": "市長佩戴著標誌他職務的鏈徽。"
@@ -6064,7 +6064,7 @@ const toeicWordsDB = [
         "en": "challenge",
         "kk": "[ˋtʃæləndʒ]",
         "uk": "/ˈtʃælɪndʒ/",
-        "zh": "n. 挑戰、難題、挑戰書、比賽邀請；vt. 挑戰、提出異議、向……下戰書、質疑",
+        "zh": "n. 挑戰、難題、挑戰書、比賽邀請；vt. 質疑、挑戰、向……下戰書、拒絕接受",
         "unit": 11,
         "example": "Bill was stimulated by the challenge.",
         "exampleZh": "比爾受到該挑戰的激勵。"
@@ -6074,7 +6074,7 @@ const toeicWordsDB = [
         "en": "change",
         "kk": "[tʃendʒ]",
         "uk": "/tʃeɪndʒ/",
-        "zh": "v. 改變、更改、變化、更換；n. 變化、變更、零錢、變革",
+        "zh": "v. 改變、變化、更換、替換；n. 零錢、變化、變革、找回的錢",
         "unit": 11,
         "example": "Needs change while policies fossilize.",
         "exampleZh": "政策僵化，需求就產生變化。"
@@ -6094,7 +6094,7 @@ const toeicWordsDB = [
         "en": "chapter",
         "kk": "[ˋtʃæptɚ]",
         "uk": "/ˈtʃæptə(r)/",
-        "zh": "n. 篇章、篇、章、回；v. 把……分成章節",
+        "zh": "n. 章節、分會、章、回；v. 把……分成章節",
         "unit": 11,
         "example": "I've just finished Chapter 3.",
         "exampleZh": "我剛完成第3章。"
@@ -6104,7 +6104,7 @@ const toeicWordsDB = [
         "en": "character",
         "kk": "[ˋkɛrɪktɚ]",
         "uk": "/ˈkærəktə(r)/",
-        "zh": "n. 角色、性格、特性、品質；v. 刻、寫、描述、使具有特徵",
+        "zh": "n. 性格、角色、品質、特色；v. 刻、寫、描述、使具有特徵",
         "unit": 11,
         "example": "She's a good judge of character.",
         "exampleZh": "她很善於鑑定別人的性格。"
@@ -6114,7 +6114,7 @@ const toeicWordsDB = [
         "en": "characteristic",
         "kk": "[͵kɛrəktɚˋɪstɪk]",
         "uk": "/ˌkærəktəˈrɪstɪk/",
-        "zh": "n. 特徵、特點、特色；adj. 特有的、獨特的、典型的",
+        "zh": "n. 特徵、特點、特色；adj. 獨特的、典型的",
         "unit": 11,
         "example": "She spoke with characteristic enthusiasm.",
         "exampleZh": "她說話帶著特有的熱情。"
@@ -6124,7 +6124,7 @@ const toeicWordsDB = [
         "en": "characterize",
         "kk": "[ˋkɛrəktɚ͵aɪz]",
         "uk": "/ˈkærəktəraɪz/",
-        "zh": "vt. 具有……的特徵、以……為特徵、描述、刻畫",
+        "zh": "vt. 描繪……的特性、具有……的特徵、描述、刻畫",
         "unit": 11,
         "example": "I characterize it as monstrous.",
         "exampleZh": "我將其描述為駭人的。"
@@ -6144,7 +6144,7 @@ const toeicWordsDB = [
         "en": "chart",
         "kk": "[tʃɑrt]",
         "uk": "/tʃɑːt/",
-        "zh": "n. 圖表、曲線圖、海圖、星點陣圖；vt. 繪製、記錄、跟蹤、制定",
+        "zh": "n. 圖表、曲線圖、海圖、星點陣圖；vt. 繪製、記錄、跟蹤",
         "unit": 11,
         "example": "He copied the chart from a book.",
         "exampleZh": "他從一本書上複製了圖表。"
@@ -6164,7 +6164,7 @@ const toeicWordsDB = [
         "en": "chef",
         "kk": "[ʃɛf]",
         "uk": "/ʃef/",
-        "zh": "n. 廚師、主廚；v. 當廚師",
+        "zh": "n. 主廚、大師傅、廚師；v. 當廚師",
         "unit": 11,
         "example": "Michael is a professionally-trained chef.",
         "exampleZh": "邁克爾是受過職業培訓的廚師。"
@@ -6184,7 +6184,7 @@ const toeicWordsDB = [
         "en": "choice",
         "kk": "[tʃɔɪs]",
         "uk": "/tʃɔɪs/",
-        "zh": "n. 選擇、挑選、抉擇、選擇的機會；adj. 上等的、優質的、尖刻的、刻薄的",
+        "zh": "n. 選擇、選項、抉擇、選擇的機會；adj. 上等的、優質的、尖刻的、刻薄的",
         "unit": 11,
         "example": "I wouldn't go there by choice.",
         "exampleZh": "讓我選擇，我不會去那裡。"
@@ -6204,7 +6204,7 @@ const toeicWordsDB = [
         "en": "chore",
         "kk": "[tʃɔr]",
         "uk": "/tʃɔː(r)/",
-        "zh": "n. 例行工作、家務活、家庭雜務、雜活",
+        "zh": "n. 家庭雜務、雜活、累活、苦差事",
         "unit": 11,
         "example": "Shopping's a real chore for me.",
         "exampleZh": "對我來說，購物真是件苦差事。"
@@ -6214,7 +6214,7 @@ const toeicWordsDB = [
         "en": "circle",
         "kk": "[ˋsɝkəl]",
         "uk": "/ˈsɜːk(ə)l/",
-        "zh": "n. 圓形的東西、圈、圓、圓形物；vt. 畫圓圈、圈出、圍著、盤旋",
+        "zh": "n. 圓圈、圓、圓形物、圈子；vt. 環繞、盤旋、環行、圍繞",
         "unit": 11,
         "example": "The children stood in a circle.",
         "exampleZh": "孩子們站成一圈。"
@@ -6234,7 +6234,7 @@ const toeicWordsDB = [
         "en": "circumstance",
         "kk": "[ˋsɝkəm͵stæns]",
         "uk": "/ˈsɜːkəmstəns/",
-        "zh": "n. 情況、環境、情勢、條件；v. 處於某種情況",
+        "zh": "n. 情況、環境、條件、境況；v. 處於某種情況",
         "unit": 11,
         "example": "I know I can trust her in any circumstance.",
         "exampleZh": "我知道我在任何情況下都能信任她。"
@@ -6264,7 +6264,7 @@ const toeicWordsDB = [
         "en": "citizen",
         "kk": "[ˋsɪtəzən]",
         "uk": "/ˈsɪtɪz(ə)n/",
-        "zh": "n. 市民、居民、城鎮居民、公民",
+        "zh": "n. 公民、市民、城鎮居民、國民",
         "unit": 11,
         "example": "She became a US citizen.",
         "exampleZh": "她成了美國公民。"
@@ -6304,7 +6304,7 @@ const toeicWordsDB = [
         "en": "claim",
         "kk": "[klem]",
         "uk": "/kleɪm/",
-        "zh": "vt. 主張、斷言、聲稱、索取；n. 聲稱、斷言、索要、索賠",
+        "zh": "vt. 聲稱、斷言、索取、索要；n. 要求、聲稱、斷言、索要",
         "unit": 11,
         "example": "The judge allowed my claim.",
         "exampleZh": "法官同意我的要求。"
@@ -6324,7 +6324,7 @@ const toeicWordsDB = [
         "en": "clause",
         "kk": "[klɔz]",
         "uk": "/klɔːz/",
-        "zh": "n. 條款、款、從句、分句",
+        "zh": "n. 條款、子句、從句、分句",
         "unit": 11,
         "example": "The final clause in the contract will be left untouched.",
         "exampleZh": "合同的最後一項條款將不作改動。"
@@ -6344,7 +6344,7 @@ const toeicWordsDB = [
         "en": "clearance",
         "kk": "[ˋklɪrəns]",
         "uk": "/ˈklɪərəns/",
-        "zh": "n. 清除、清掃、稽核批准、許可",
+        "zh": "n. 清掃、出空、清倉大拍賣、稽核批准",
         "unit": 11,
         "example": "I'm waiting for clearance from headquarters.",
         "exampleZh": "我在等待總部的錄用審查許可。"
@@ -6364,7 +6364,7 @@ const toeicWordsDB = [
         "en": "clerk",
         "kk": "[klɝk]",
         "uk": "/klɑːk/",
-        "zh": "n. 辦事員、職員、售貨員、店員；vi. 當職員",
+        "zh": "n. 職員、店員、辦事員、售貨員；vi. 當職員",
         "unit": 11,
         "example": "A sharp-eyed shop clerk spotted the fake.",
         "exampleZh": "一名眼尖的售貨員發現了假貨。"
@@ -6374,7 +6374,7 @@ const toeicWordsDB = [
         "en": "client",
         "kk": "[ˋklaɪənt]",
         "uk": "/ˈklaɪənt/",
-        "zh": "n. 委託人、客戶、客戶機、使用者端",
+        "zh": "n. 顧客、客戶、委託人、客戶機",
         "unit": 11,
         "example": "Do you have a client named Peters?",
         "exampleZh": "你們有一位名叫彼得斯的客戶嗎？"
@@ -6394,7 +6394,7 @@ const toeicWordsDB = [
         "en": "climb",
         "kk": "[klaɪm]",
         "uk": "/klaɪm/",
-        "zh": "v. 爬、攀爬、攀登、爬升；n. 攀登、爬升、攀登的地方、攀登物",
+        "zh": "v. 攀登、攀爬、爬升、升高；n. 攀登、爬升、攀登的地方、攀登物",
         "unit": 11,
         "example": "Nancy began to climb the stairs.",
         "exampleZh": "南希開始爬樓梯。"
@@ -6404,7 +6404,7 @@ const toeicWordsDB = [
         "en": "clip",
         "kk": "[klɪp]",
         "uk": "/klɪp/",
-        "zh": "n. 剪、修剪、夾子、別針；vt. 剪、修剪、剪下、減少",
+        "zh": "n. 夾子、別針、片段、彈夾；vt. 修剪、剪下、減少、縮短",
         "unit": 11,
         "example": "He gave the hedge a clip.",
         "exampleZh": "他把樹籬修剪了一下。"
@@ -6444,7 +6444,7 @@ const toeicWordsDB = [
         "en": "coherent",
         "kk": "[koˋhɪrənt]",
         "uk": "/kəʊˈhɪərənt/",
-        "zh": "adj. 一致的、協調的、有條理的、連貫的",
+        "zh": "adj. 一致的、條理清楚的、連貫的、有條理的",
         "unit": 11,
         "example": "The subjects of the curriculum form a coherent whole.",
         "exampleZh": "課程中的科目構成了一個連貫的整體。"
@@ -6474,7 +6474,7 @@ const toeicWordsDB = [
         "en": "coincidence",
         "kk": "[koˋɪnsɪdəns]",
         "uk": "/kəʊˈɪnsɪdəns/",
-        "zh": "n. 巧合、符合、同時發生、相符",
+        "zh": "n. 巧合、同時發生、相符、一致",
         "unit": 11,
         "example": "It can scarcely be coincidence.",
         "exampleZh": "這決不可能是巧合。"
@@ -6544,7 +6544,7 @@ const toeicWordsDB = [
         "en": "collection",
         "kk": "[kəˋlɛkʃən]",
         "uk": "/kəˈlekʃ(ə)n/",
-        "zh": "n. 採集、收取、收藏品、收集物",
+        "zh": "n. 收集、收藏品、收集物、募捐",
         "unit": 11,
         "example": "The art collection was his life's work.",
         "exampleZh": "收集藝術品是他一生的工作。"
@@ -6554,7 +6554,7 @@ const toeicWordsDB = [
         "en": "college",
         "kk": "[ˋkɑlɪdʒ]",
         "uk": "/ˈkɒlɪdʒ/",
-        "zh": "n. 大學、學院、專科學校、分院",
+        "zh": "n. 學院、大學、專科學校、分院",
         "unit": 11,
         "example": "He studied maths at college.",
         "exampleZh": "他在大學裡學過數學。"
@@ -6564,7 +6564,7 @@ const toeicWordsDB = [
         "en": "collide",
         "kk": "[kəˋlaɪd]",
         "uk": "/kəˈlaɪd/",
-        "zh": "v. 碰撞、相撞、衝突、牴觸",
+        "zh": "v. 相撞、衝突、抵觸、牴觸",
         "unit": 11,
         "example": "They regularly collide over policy decisions.",
         "exampleZh": "他們經常在政策決策上發生衝突。"
@@ -6574,7 +6574,7 @@ const toeicWordsDB = [
         "en": "combination",
         "kk": "[͵kɑmbəˋneʃən]",
         "uk": "/ˌkɒmbɪˈneɪʃ(ə)n/",
-        "zh": "n. 結合、聯合、結合體、聯合體",
+        "zh": "n. 組合、結合體、聯合體、結合",
         "unit": 11,
         "example": "I can't remember the combination.",
         "exampleZh": "我不記得密碼鎖的數碼組合了。"
@@ -6584,7 +6584,7 @@ const toeicWordsDB = [
         "en": "combine",
         "kk": "[ˋkɑmbaɪn]",
         "uk": "/kəmˈbaɪn/",
-        "zh": "vt. 結合、聯合、組合、化合；n. 聯盟、聯合體、聯合收割機",
+        "zh": "vt. 使結合、結合、組合、化合；n. 聯盟、聯合體、聯合收割機",
         "unit": 11,
         "example": "The trip will combine business with pleasure.",
         "exampleZh": "此次旅行將把出差和娛樂結合起來。"
@@ -6614,7 +6614,7 @@ const toeicWordsDB = [
         "en": "comfort",
         "kk": "[ˋkʌmfɚt]",
         "uk": "/ˈkʌmfət/",
-        "zh": "n. 安逸、舒適、舒服、安慰；vt. 安慰、慰問、撫慰",
+        "zh": "n. 舒服、舒適、安慰、慰藉；vt. 安慰、撫慰",
         "unit": 11,
         "example": "It's a comfort talking to you.",
         "exampleZh": "與你談談是一種安慰。"
@@ -6624,7 +6624,7 @@ const toeicWordsDB = [
         "en": "comfortable",
         "kk": "[ˋkʌmfɚtəbəl]",
         "uk": "/ˈkʌmftəb(ə)l/",
-        "zh": "adj. 舒適的、舒服的、令人舒適的、感到舒服的；n. 溫暖的蓋被",
+        "zh": "adj. 舒適的、令人舒適的、感到舒服的、安逸的；n. 溫暖的蓋被",
         "unit": 11,
         "example": "You'll be quite comfortable here.",
         "exampleZh": "你在這裡會很舒服。"
@@ -6644,7 +6644,7 @@ const toeicWordsDB = [
         "en": "command",
         "kk": "[kəˋmænd]",
         "uk": "/kəˈmɑːnd/",
-        "zh": "vt. 指揮、控制、命令、下令；n. 命令、指示、指令、控制",
+        "zh": "vt. 命令、下令、統率、指揮；n. 命令、指示、指令、控制",
         "unit": 11,
         "example": "Begin when I give the command.",
         "exampleZh": "我發出命令時開始。"
@@ -6654,7 +6654,7 @@ const toeicWordsDB = [
         "en": "comment",
         "kk": "[ˋkɑmɛnt]",
         "uk": "/ˈkɒment/",
-        "zh": "n. 註釋、評論、意見、批評；vt. 下評論、評論、發表意見、註解",
+        "zh": "n. 評論、意見、批評、指責；vt. 評論、發表意見、註解、把（部分程式）轉成註解",
         "unit": 11,
         "example": "Buckingham Palace refused to comment.",
         "exampleZh": "英國王室拒絕發表評論。"
@@ -6664,7 +6664,7 @@ const toeicWordsDB = [
         "en": "commentary",
         "kk": "[ˋkɑmən͵tɛri]",
         "uk": "/ˈkɒmənt(ə)ri/",
-        "zh": "n. 評論、現場解說、實況報道、評註性著作",
+        "zh": "n. 評論、註釋、現場解說、實況報道",
         "unit": 11,
         "example": "You can hear commentary on the game at halftime.",
         "exampleZh": "你可在中場休息時聽到對比賽的評論。"
@@ -6674,7 +6674,7 @@ const toeicWordsDB = [
         "en": "commerce",
         "kk": "[ˋkɑmɚs]",
         "uk": "/ˈkɒmɜːs/",
-        "zh": "n. 商業、貿易、社交、交往",
+        "zh": "n. 商業、貿易、交易、社交",
         "unit": 11,
         "example": "The music business marries art and commerce.",
         "exampleZh": "音樂行當將藝術和商業結合在一起。"
@@ -6684,7 +6684,7 @@ const toeicWordsDB = [
         "en": "commercial",
         "kk": "[kəˋmɝʃəl]",
         "uk": "/kəˈmɜːʃ(ə)l/",
-        "zh": "adj. 商業的、商務的、商業化的、以獲利為目的的；n. 廣告、電視廣告、電臺廣告",
+        "zh": "adj. 商業的、商務的、商業化的、以獲利為目的的；n. 電視廣告、電臺廣告",
         "unit": 11,
         "example": "The proposal makes sound commercial sense.",
         "exampleZh": "這項建議從營利的角度看是完全合情合理的。"
@@ -6694,7 +6694,7 @@ const toeicWordsDB = [
         "en": "commission",
         "kk": "[kəˋmɪʃən]",
         "uk": "/kəˈmɪʃ(ə)n/",
-        "zh": "n. 佣金、委任、考察團、委員會；vt. 委任、委託、委託撰寫、委託製作",
+        "zh": "n. 考察團、委員會、佣金、回扣；vt. 委託撰寫、委託製作、委任、任命……為軍官",
         "unit": 11,
         "example": "The salespeople work on commission only.",
         "exampleZh": "推銷員只拿銷售佣金。"
@@ -6704,7 +6704,7 @@ const toeicWordsDB = [
         "en": "commit",
         "kk": "[kəˋmɪt]",
         "uk": "/kəˈmɪt/",
-        "zh": "vt. 犯、做、調撥、投入",
+        "zh": "vt. 使作出保證、犯、做、調撥",
         "unit": 11,
         "example": "You don't have to commit yourself now, just think about it.",
         "exampleZh": "你不必現在表態，只需考慮一下這件事。"
@@ -6714,7 +6714,7 @@ const toeicWordsDB = [
         "en": "commitment",
         "kk": "[kəˋmɪtmənt]",
         "uk": "/kəˈmɪtmənt/",
-        "zh": "n. 託付、交託、忠誠、獻身",
+        "zh": "n. 託付、交託、承諾、保證",
         "unit": 11,
         "example": "We made a commitment to keep working together.",
         "exampleZh": "我們作了承諾要繼續在一起工作。"
@@ -6754,7 +6754,7 @@ const toeicWordsDB = [
         "en": "communication",
         "kk": "[kə͵mjunəˋkeʃən]",
         "uk": "/kəˌmjuːnɪˈkeɪʃ(ə)n/",
-        "zh": "n. 溝通、交流、表達、交際",
+        "zh": "n. 交往、通信、表達、交流",
         "unit": 11,
         "example": "Good communication is key to our success.",
         "exampleZh": "良好的溝通是我們成功的關鍵。"
@@ -6784,7 +6784,7 @@ const toeicWordsDB = [
         "en": "company",
         "kk": "[ˋkʌmpə͵ni]",
         "uk": "/ˈkʌmpəni/",
-        "zh": "n. 陪伴、公司、同伴、賓客；v. 結交、交往、陪伴",
+        "zh": "n. 公司、陪伴、同伴、賓客；v. 結交、交往、陪伴",
         "unit": 11,
         "example": "The company employs 18 workers.",
         "exampleZh": "該公司僱用18位職工。"
@@ -6804,7 +6804,7 @@ const toeicWordsDB = [
         "en": "compare",
         "kk": "[kəmˋpɛr]",
         "uk": "/kəmˈpeə(r)/",
-        "zh": "v. 比較、對照、對比、把……比作；n. 比較",
+        "zh": "v. 比較、對比、把……比作、相比；n. 比較",
         "unit": 11,
         "example": "The point of the lesson is to compare the two countries.",
         "exampleZh": "本課的重點是比較這兩個國家。"
@@ -6844,7 +6844,7 @@ const toeicWordsDB = [
         "en": "compensate",
         "kk": "[ˋkɑmpən͵set]",
         "uk": "/ˈkɒmpenseɪt/",
-        "zh": "v. 補償、賠償、償付、彌補",
+        "zh": "v. 補償、賠償、酬報、償付",
         "unit": 11,
         "example": "Nothing can compensate for the loss of a loved one.",
         "exampleZh": "失去心愛的人是無法補償的。"
@@ -6854,7 +6854,7 @@ const toeicWordsDB = [
         "en": "compensation",
         "kk": "[͵kɑmpənˋseʃən]",
         "uk": "/ˌkɒmpenˈseɪʃ(ə)n/",
-        "zh": "n. 補償、賠償、賠償金、補償金",
+        "zh": "n. 補償、賠償、報酬、賠償金",
         "unit": 11,
         "example": "The injured party got some compensation.",
         "exampleZh": "受害方得到了一些補償。"
@@ -6864,7 +6864,7 @@ const toeicWordsDB = [
         "en": "compete",
         "kk": "[kəmˋpit]",
         "uk": "/kəmˈpiːt/",
-        "zh": "vi. 對抗、競爭、爭奪、參加比賽",
+        "zh": "vi. 競爭、對抗、爭奪、參加比賽",
         "unit": 11,
         "example": "We can't compete with them on price.",
         "exampleZh": "我們在價格上無法與他們競爭。"
@@ -6874,7 +6874,7 @@ const toeicWordsDB = [
         "en": "competent",
         "kk": "[ˋkɑmpətɪnt]",
         "uk": "/ˈkɒmpɪtənt/",
-        "zh": "adj. 有能力的、能勝任的、能幹的、合格的",
+        "zh": "adj. 有能力的、能幹的、能勝任的、合格的",
         "unit": 11,
         "example": "He's very competent in his work.",
         "exampleZh": "他非常勝任自己的工作。"
@@ -6884,7 +6884,7 @@ const toeicWordsDB = [
         "en": "competition",
         "kk": "[͵kɑmpəˋtɪʃən]",
         "uk": "/ˌkɒmpəˈtɪʃ(ə)n/",
-        "zh": "n. 比賽、競賽、競爭、競爭者",
+        "zh": "n. 競爭、角逐、比賽、競賽",
         "unit": 11,
         "example": "Competition for jobs is acute.",
         "exampleZh": "求職競爭非常激烈。"
@@ -6894,7 +6894,7 @@ const toeicWordsDB = [
         "en": "competitive",
         "kk": "[kəmˋpɛtətɪv]",
         "uk": "/kəmˈpetətɪv/",
-        "zh": "adj. 競爭性的、好競爭的、競爭的、好勝的",
+        "zh": "adj. 競爭的、好競爭的、好勝的、有競爭力的",
         "unit": 11,
         "example": "It's hard to maintain competitive pricing.",
         "exampleZh": "很難保持有競爭力的定價。"
@@ -6924,7 +6924,7 @@ const toeicWordsDB = [
         "en": "complaint",
         "kk": "[kəmˋplent]",
         "uk": "/kəmˈpleɪnt/",
-        "zh": "n. 抱怨、投訴、不滿的緣由、抱怨的問題",
+        "zh": "n. 抱怨、抗議、怨言、投訴",
         "unit": 11,
         "example": "You have no grounds for complaint.",
         "exampleZh": "你沒有理由抱怨。"
@@ -6934,7 +6934,7 @@ const toeicWordsDB = [
         "en": "complete",
         "kk": "[kəmˋplit]",
         "uk": "/kəmˈpliːt/",
-        "zh": "adj. 完全的、徹底的、全部的、完整的；vt. 競爭、比賽、使完整、使完美",
+        "zh": "adj. 完全的、徹底的、全部的、完整的；vt. 使完整、使完美、填寫、完成",
         "unit": 11,
         "example": "We were in complete agreement.",
         "exampleZh": "我們完全同意。"
@@ -6944,7 +6944,7 @@ const toeicWordsDB = [
         "en": "completion",
         "kk": "[kəmˋpliʃən]",
         "uk": "/kəmˈpliːʃ(ə)n/",
-        "zh": "n. 完成、結束、成功前傳、完成交易",
+        "zh": "n. 完成、實現、結束、成功前傳",
         "unit": 11,
         "example": "The project is nearing completion.",
         "exampleZh": "這項工程就要竣工了。"
@@ -6954,7 +6954,7 @@ const toeicWordsDB = [
         "en": "complex",
         "kk": "[ˋkɑmplɛks]",
         "uk": "/ˈkɒmpleks/",
-        "zh": "adj. 複雜的、錯綜複雜的、難懂的、組合的；n. 複合物、綜合體、綜合大樓、建築群",
+        "zh": "adj. 複雜的、難懂的、組合的、合成的；n. 綜合大樓、建築群、複合體、綜合體",
         "unit": 11,
         "example": "He was an unusually complex man.",
         "exampleZh": "他是個異常複雜的人。"
@@ -6974,7 +6974,7 @@ const toeicWordsDB = [
         "en": "complicate",
         "kk": "[ˋkɑmplə͵ket]",
         "uk": "/ˈkɒmplɪkeɪt/",
-        "zh": "vt. 使複雜化、使費解、使難以理解、引起併發症",
+        "zh": "vt. 使複雜化、使難以理解、引起併發症、使捲入",
         "unit": 11,
         "example": "I think that is because we unnecessarily complicate it.",
         "exampleZh": "我想這是因為我們不必要地將它複雜化了。"
@@ -6994,7 +6994,7 @@ const toeicWordsDB = [
         "en": "compliment",
         "kk": "[ˋkɑmpləmɛnt]",
         "uk": "/ˈkɒmplɪmənt/",
-        "zh": "n. 稱讚、讚揚、問候；vt. 稱讚、讚美、恭維",
+        "zh": "n. 讚揚、稱讚、問候、祝賀；vt. 讚美、恭維",
         "unit": 11,
         "example": "Saying she's improved comes over as a backhanded compliment.",
         "exampleZh": "說她進步了是一種挖苦的恭維話。"
@@ -7014,7 +7014,7 @@ const toeicWordsDB = [
         "en": "component",
         "kk": "[kəmˋponənt]",
         "uk": "/kəmˈpəʊnənt/",
-        "zh": "n. 構成要素、零件、組成部分、成分；adj. 組成的、構成的",
+        "zh": "n. 組成部分、成分、部件；adj. 組成的、構成的",
         "unit": 11,
         "example": "Attitudes have a behavioral component.",
         "exampleZh": "態度隱含著行為性的成分。"
@@ -7024,7 +7024,7 @@ const toeicWordsDB = [
         "en": "compose",
         "kk": "[kəmˋpoz]",
         "uk": "/kəmˈpəʊz/",
-        "zh": "vt. 作、使安定、組成、構成",
+        "zh": "vt. 作、構、組成、構成",
         "unit": 11,
         "example": "Ten men compose the committee.",
         "exampleZh": "委員會由十人組成。"
@@ -7034,7 +7034,7 @@ const toeicWordsDB = [
         "en": "composition",
         "kk": "[͵kɑmpəˋzɪʃən]",
         "uk": "/ˌkɒmpəˈzɪʃ(ə)n/",
-        "zh": "n. 寫作、作曲、成分構成、成分",
+        "zh": "n. 寫作、作曲、作品、作文",
         "unit": 11,
         "example": "I love writing compositions.",
         "exampleZh": "我喜歡寫作文。"
@@ -7054,7 +7054,7 @@ const toeicWordsDB = [
         "en": "comprehend",
         "kk": "[͵kɑmpriˋhɛnd]",
         "uk": "/ˌkɒmprɪˈhend/",
-        "zh": "vt. 理解、了解、領悟、包括",
+        "zh": "vt. 理解、領會、包含、領悟",
         "unit": 11,
         "example": "I just cannot comprehend your attitude.",
         "exampleZh": "我就是不能理解你的態度。"
@@ -7064,7 +7064,7 @@ const toeicWordsDB = [
         "en": "comprehensive",
         "kk": "[͵kɑmpriˋhɛnsɪv]",
         "uk": "/ˌkɒmprɪˈhensɪv/",
-        "zh": "adj. 廣泛的、無所不包的、綜合性的、全面的；n. 綜合中學、專業綜合測驗",
+        "zh": "adj. 廣泛的、綜合的、綜合性的、全面的；n. 綜合中學、專業綜合測驗",
         "unit": 11,
         "example": "Streaming within comprehensive schools is common practice.",
         "exampleZh": "綜合中學常把學生按能力分班。"
@@ -7074,7 +7074,7 @@ const toeicWordsDB = [
         "en": "comprise",
         "kk": "[kəmˋpraɪz]",
         "uk": "/kəmˈpraɪz/",
-        "zh": "vt. 包含、包括、構成、組成",
+        "zh": "vt. 包括、由……組成、包含、構成",
         "unit": 11,
         "example": "These objects comprise functions and data of the system.",
         "exampleZh": "這些物件包含系統的功能和資料。"
@@ -7084,7 +7084,7 @@ const toeicWordsDB = [
         "en": "compromise",
         "kk": "[ˋkɑmprə͵maɪz]",
         "uk": "/ˈkɒmprəmaɪz/",
-        "zh": "n. 妥協、和解、折中、妥協方案；vt. 妥協、讓步、危及",
+        "zh": "n. 折中、妥協、妥協方案、折中辦法；vt. 妥協、讓步、危及、損害",
         "unit": 11,
         "example": "I refuse to compromise my principles.",
         "exampleZh": "我拒絕在原則問題上妥協。"
@@ -7094,7 +7094,7 @@ const toeicWordsDB = [
         "en": "compute",
         "kk": "[kəmˋpjut]",
         "uk": "/kəmˈpjuːt/",
-        "zh": "vt. 計算、估算、不合情理、講不通；n. 計算、估計",
+        "zh": "vt. 計算、估算、推斷、不合情理；n. 計算、估計",
         "unit": 11,
         "example": "How do we compute this formula?",
         "exampleZh": "我們該怎樣計算這個式子呢？"
@@ -7104,7 +7104,7 @@ const toeicWordsDB = [
         "en": "conceal",
         "kk": "[kənˋsil]",
         "uk": "/kənˈsiːl/",
-        "zh": "vt. 隱藏、隱瞞、隱匿、遮蓋",
+        "zh": "vt. 隱蔽、隱藏、隱匿、隱瞞",
         "unit": 11,
         "example": "Tim could barely conceal his disappointment.",
         "exampleZh": "蒂姆幾乎掩飾不住自己的失望。"
@@ -7114,7 +7114,7 @@ const toeicWordsDB = [
         "en": "conceive",
         "kk": "[kənˋsiv]",
         "uk": "/kənˈsiːv/",
-        "zh": "vt. 想像、設想、構思、使受孕",
+        "zh": "vt. 構想出、設想、懷孕、構思",
         "unit": 11,
         "example": "She is unable to conceive.",
         "exampleZh": "她不能懷孕。"
@@ -7144,7 +7144,7 @@ const toeicWordsDB = [
         "en": "concern",
         "kk": "[kənˋsɝn]",
         "uk": "/kənˈsɜːn/",
-        "zh": "n. 關心的事、關係、擔心、憂慮；vt. 關於、涉及、有關、影響",
+        "zh": "n. 擔心、憂慮、使人擔憂的事物、關心；vt. 有關、關於、涉及、影響",
         "unit": 11,
         "example": "There is no cause for concern.",
         "exampleZh": "沒有理由擔憂。"
@@ -7164,7 +7164,7 @@ const toeicWordsDB = [
         "en": "conclude",
         "kk": "[kənˋklud]",
         "uk": "/kənˈkluːd/",
-        "zh": "vt. 結束、推斷出、斷定、終止",
+        "zh": "vt. 推斷出、斷定、結束、終止",
         "unit": 11,
         "example": "What do you conclude from that?",
         "exampleZh": "你從這件事中得出了什麼結論？"
@@ -7184,7 +7184,7 @@ const toeicWordsDB = [
         "en": "concrete",
         "kk": "[kənˋkrit]",
         "uk": "/ˈkɒŋkriːt/",
-        "zh": "adj. 有形的、實在的、確實的、具體的；n. 混凝土；vt. 凝結、固結、用混凝土覆蓋、凝固",
+        "zh": "adj. 確實的、具體的、實在的、有形的；n. 混凝土；vt. 用混凝土覆蓋、凝固、凝結、使真實",
         "unit": 11,
         "example": "The concrete was ready mixed.",
         "exampleZh": "混凝土是攪拌好的。"
@@ -7204,7 +7204,7 @@ const toeicWordsDB = [
         "en": "condition",
         "kk": "[kənˋdɪʃən]",
         "uk": "/kənˈdɪʃn/",
-        "zh": "n. 情況、狀況、狀態、條件；vt. 訓練、使習慣於、控制、制約",
+        "zh": "n. 條件、狀況、狀態、環境；vt. 訓練、使習慣於、控制",
         "unit": 11,
         "example": "This condition requires urgent treatment.",
         "exampleZh": "這種情況得緊急處理。"
@@ -7214,7 +7214,7 @@ const toeicWordsDB = [
         "en": "conduct",
         "kk": "[ˋkɑndəkt]",
         "uk": "/kənˈdʌkt/",
-        "zh": "vt. 帶領、實施、進行、指揮；n. 行為、舉止、經營方式、管理方法",
+        "zh": "vt. 實施、進行、指揮、帶領；n. 行為、舉止、經營方式、管理方法",
         "unit": 11,
         "example": "He was ejected for unsporting conduct.",
         "exampleZh": "他因為不符合運動員道德的行為被驅逐。"
@@ -7224,7 +7224,7 @@ const toeicWordsDB = [
         "en": "conference",
         "kk": "[ˋkɑnfɚəns]",
         "uk": "/ˈkɒnfərəns/",
-        "zh": "n. 會議、研討會、商討、討論",
+        "zh": "n. 會議、討論會、協商會、研討會",
         "unit": 11,
         "example": "It was a good-humoured conference.",
         "exampleZh": "會議的氣氛很愉快。"
@@ -7254,7 +7254,7 @@ const toeicWordsDB = [
         "en": "confirm",
         "kk": "[kənˋfɝm]",
         "uk": "/kənˈfɜːm/",
-        "zh": "vt. 證實、確定、確認、證明",
+        "zh": "vt. 確認、確定、證實、證明",
         "unit": 11,
         "example": "Can you confirm what happened?",
         "exampleZh": "你能確認發生了什麼事嗎？"
@@ -7274,7 +7274,7 @@ const toeicWordsDB = [
         "en": "confuse",
         "kk": "[kənˋfjuz]",
         "uk": "/kənˈfjuːz/",
-        "zh": "vt. 使困惑、混淆、使糊塗、使迷惑",
+        "zh": "vt. 使迷惑、使糊塗、混淆、弄錯",
         "unit": 11,
         "example": "I always confuse my left with my right.",
         "exampleZh": "我總是混淆左右。"
@@ -7284,7 +7284,7 @@ const toeicWordsDB = [
         "en": "confusion",
         "kk": "[kənˋfjuʒən]",
         "uk": "/kənˈfjuːʒn/",
-        "zh": "n. 混亂、騷動、困惑、不明確",
+        "zh": "n. 困惑、慌亂、不明確、混淆",
         "unit": 11,
         "example": "Mandy's predominant emotion was confusion.",
         "exampleZh": "曼迪的主導情緒是困惑。"
@@ -7344,7 +7344,7 @@ const toeicWordsDB = [
         "en": "conservative",
         "kk": "[kənˋsɝvətɪv]",
         "uk": "/kənˈsɜːvətɪv/",
-        "zh": "adj. 保守的、守舊的、保守派的、保守主義的；n. 保守者、守舊者、因循守舊者、保守黨黨員",
+        "zh": "adj. 保守的、保守派的、保守主義的、守舊的；n. 保守者、因循守舊者、保守黨黨員、保守黨支持者",
         "unit": 11,
         "example": "Her style of dress was never conservative.",
         "exampleZh": "她的服裝式樣一點兒也不保守。"
@@ -7364,7 +7364,7 @@ const toeicWordsDB = [
         "en": "consider",
         "kk": "[kənˋsɪdɚ]",
         "uk": "/kənˈsɪdə(r)/",
-        "zh": "vt. 考慮、細想、斟酌、認為",
+        "zh": "vt. 考慮、斟酌、認為、視為",
         "unit": 11,
         "example": "Let's consider this point further.",
         "exampleZh": "讓我們進一步考慮這一點。"
@@ -7374,7 +7374,7 @@ const toeicWordsDB = [
         "en": "consideration",
         "kk": "[kən͵sɪdɚˋeʃən]",
         "uk": "/kənˌsɪdəˈreɪʃ(ə)n/",
-        "zh": "n. 體貼、動機、原因、考慮",
+        "zh": "n. 考慮、斟酌、考慮因素、體貼",
         "unit": 11,
         "example": "This consideration was not unimportant.",
         "exampleZh": "這項考慮並非無關緊要。"
@@ -7484,7 +7484,7 @@ const toeicWordsDB = [
         "en": "consultant",
         "kk": "[kənˋsʌltənt]",
         "uk": "/kənˈsʌltənt/",
-        "zh": "n. 顧問、諮詢者、高階顧問醫師、會診醫師",
+        "zh": "n. 顧問、高階顧問醫師、會診醫師、諮詢者",
         "unit": 11,
         "example": "She is a consultant to the government.",
         "exampleZh": "她是政府顧問。"
@@ -7494,7 +7494,7 @@ const toeicWordsDB = [
         "en": "consume",
         "kk": "[kənˋsum]",
         "uk": "/kənˈsjuːm/",
-        "zh": "vt. 消耗、花費、消費、吃",
+        "zh": "vt. 消耗、花費、耗盡、消費",
         "unit": 11,
         "example": "They consume plenty of cereal for breakfast.",
         "exampleZh": "他們早餐吃大量麥片。"
@@ -7504,7 +7504,7 @@ const toeicWordsDB = [
         "en": "consumer",
         "kk": "[kənˋsumɚ]",
         "uk": "/kənˈsjuːmə(r)/",
-        "zh": "n. 消費者、顧客、使用者、食用者",
+        "zh": "n. 消費者、消耗者、顧客、使用者",
         "unit": 11,
         "example": "We are living in a consumer culture.",
         "exampleZh": "我們生活在一種消費文化之中。"
@@ -7514,7 +7514,7 @@ const toeicWordsDB = [
         "en": "consumption",
         "kk": "[kənˋsʌmpʃən]",
         "uk": "/kənˈsʌmpʃ(ə)n/",
-        "zh": "n. 消費、消耗、食用、引用",
+        "zh": "n. 消耗、用盡、消耗量、消費",
         "unit": 11,
         "example": "Energy consumption rises as countries industrialize.",
         "exampleZh": "能源消耗隨著各國工業化而增加。"
@@ -7544,7 +7544,7 @@ const toeicWordsDB = [
         "en": "contemporary",
         "kk": "[kənˋtɛmpɚ͵ɛri]",
         "uk": "/kənˈtemp(ə)rəri/",
-        "zh": "adj. 當代的、同時代的、現代的、同時期的；n. 同時代的人、同齡人、同輩",
+        "zh": "adj. 當代的、現代的、同時期的、同時代的；n. 同時代的人、同齡人、同輩",
         "unit": 11,
         "example": "She patronizes many contemporary British artists.",
         "exampleZh": "她贊助許多英國當代藝術家。"
@@ -7564,7 +7564,7 @@ const toeicWordsDB = [
         "en": "contest",
         "kk": "[ˋkɑntɛst]",
         "uk": "/ˈkɒntest/",
-        "zh": "n. 比賽、競賽、爭奪、競爭；vt. 競爭、角逐、爭辯、提出異議",
+        "zh": "n. 比賽、競賽、爭奪、競爭；vt. 爭辯、提出異議、爭取贏得、角逐",
         "unit": 11,
         "example": "The contest should be very keenly fought.",
         "exampleZh": "比賽應該爭奪很激烈。"
@@ -7574,7 +7574,7 @@ const toeicWordsDB = [
         "en": "context",
         "kk": "[ˋkɑntɛkst]",
         "uk": "/ˈkɒntekst/",
-        "zh": "n. 來龍去脈、背景、環境、上下文",
+        "zh": "n. 上下文、文章脈絡、背景、環境",
         "unit": 11,
         "example": "His decision can only be understood in context.",
         "exampleZh": "只有瞭解來龍去脈才能明白他的決定。"
@@ -7584,7 +7584,7 @@ const toeicWordsDB = [
         "en": "continue",
         "kk": "[kənˋtɪnju]",
         "uk": "/kənˈtɪnjuː/",
-        "zh": "v. 繼續、持續、延續、繼續說",
+        "zh": "v. 繼續、延續、繼續說、接著說",
         "unit": 11,
         "example": "They'll continue to fight injustice.",
         "exampleZh": "他們將繼續與不公義作鬥爭。"
@@ -7594,7 +7594,7 @@ const toeicWordsDB = [
         "en": "continuity",
         "kk": "[͵kɑntəˋnuəti]",
         "uk": "/ˌkɒntɪˈnjuːəti/",
-        "zh": "n. 連續性、持續性、連貫性、場景串聯",
+        "zh": "n. 連續性、一貫性、連貫性、場景串聯",
         "unit": 11,
         "example": "Modulus of continuity of the automated production has become a trend.",
         "exampleZh": "自動化生產的連續性模已成為一種趨勢。"
@@ -7614,7 +7614,7 @@ const toeicWordsDB = [
         "en": "contract",
         "kk": "[ˋkɑn͵trækt]",
         "uk": "/ˈkɒntrækt; kənˈtrækt/",
-        "zh": "n. 合約、合同、契約、暗殺協議；v. 締結、承包、收縮、縮小",
+        "zh": "n. 合同、契約、暗殺協議、定約墩數；v. 收縮、縮小、籤合同、訂立契約",
         "unit": 11,
         "example": "He mailed me the contract.",
         "exampleZh": "他把合同寄給了我。"
@@ -7624,7 +7624,7 @@ const toeicWordsDB = [
         "en": "contractor",
         "kk": "[ˋkɑn͵træktɚ]",
         "uk": "/kənˈtræktə(r); ˈkɒntræktə(r)/",
-        "zh": "n. 立契約者、承包人、承包商、立約人",
+        "zh": "n. 承包商、立契約者、立約人",
         "unit": 11,
         "example": "It criticizes the main contractor for seriously erring in its estimates.",
         "exampleZh": "它批評主承包商在估算中嚴重出錯。"
@@ -7634,7 +7634,7 @@ const toeicWordsDB = [
         "en": "contrary",
         "kk": "[ˋkɑntrɛri]",
         "uk": "/ˈkɒntrəri/",
-        "zh": "adj. 相反的、對立的、相對的、乖戾的；n. 相反的事實、對立命題、反對命題；adv. 相反地、反對地",
+        "zh": "adj. 相反的、相對的、乖戾的、好與人作對的；n. 相反的事實、對立命題、反對命題；adv. 相反地",
         "unit": 11,
         "example": "Contrary to popular belief , many cats dislike milk.",
         "exampleZh": "與普通的看法相反，許多貓不喜歡牛奶。"
@@ -7644,7 +7644,7 @@ const toeicWordsDB = [
         "en": "control",
         "kk": "[kənˋtrol]",
         "uk": "/kənˈtrəʊl/",
-        "zh": "n. 支配、控制、控制權、支配權；vt. 控制、掌管、限制",
+        "zh": "n. 控制權、支配權、控制能力、操縱裝置；vt. 控制、掌管、限制、限定",
         "unit": 11,
         "example": "The situation is under control.",
         "exampleZh": "局面得到了控制。"
@@ -7664,7 +7664,7 @@ const toeicWordsDB = [
         "en": "convenience",
         "kk": "[kənˋvinjəns]",
         "uk": "/kənˈviːniəns/",
-        "zh": "n. 便利、方便、便利的事物、便利設施",
+        "zh": "n. 方便、合宜、便利、便利的事物",
         "unit": 11,
         "example": "The hotel combines comfort with convenience.",
         "exampleZh": "這家旅館既舒適又方便。"
@@ -7674,7 +7674,7 @@ const toeicWordsDB = [
         "en": "convenient",
         "kk": "[kənˋvinjənt]",
         "uk": "/kənˈviːniənt/",
-        "zh": "adj. 便利的:方便的、方便的、便利的、附近的",
+        "zh": "adj. 方便的、便利的、附近的、方便到達的",
         "unit": 11,
         "example": "If it's convenient I can come tomorrow.",
         "exampleZh": "如果方便的話我明天可以來。"
@@ -7684,7 +7684,7 @@ const toeicWordsDB = [
         "en": "convention",
         "kk": "[kənˋvɛnʃən]",
         "uk": "/kənˈvenʃ(ə)n/",
-        "zh": "n. 會議、大會、集合、習俗",
+        "zh": "n. 會議、大會、習俗、慣例",
         "unit": 11,
         "example": "The convention does not apply to us.",
         "exampleZh": "該協定對我們不適用。"
@@ -7704,7 +7704,7 @@ const toeicWordsDB = [
         "en": "conversation",
         "kk": "[͵kɑnvɚˋseʃən]",
         "uk": "/ˌkɒnvəˈseɪʃ(ə)n/",
-        "zh": "n. 會話、對話、談話、交談",
+        "zh": "n. 會話、談話、交談、社交",
         "unit": 11,
         "example": "She was engrossed in conversation.",
         "exampleZh": "她聚精會神地談話。"
@@ -7714,7 +7714,7 @@ const toeicWordsDB = [
         "en": "convey",
         "kk": "[kənˋve]",
         "uk": "/kənˈveɪ/",
-        "zh": "vt. 告知、傳達、傳送、運輸",
+        "zh": "vt. 運送、傳達、傳送、運輸",
         "unit": 11,
         "example": "Euclid was trying to convey his idea of a geometrical point.",
         "exampleZh": "歐幾里德正試圖表達他的一個幾何學觀點。"
@@ -7724,7 +7724,7 @@ const toeicWordsDB = [
         "en": "conviction",
         "kk": "[kənˋvɪkʃən]",
         "uk": "/kənˈvɪkʃn/",
-        "zh": "n. 定罪、確信、判罪、堅定的信仰",
+        "zh": "n. 定罪、證明有罪、確信、判罪",
         "unit": 11,
         "example": "'Not true!' she said with conviction.",
         "exampleZh": "“不真實！”她肯定地說道。"
@@ -7734,7 +7734,7 @@ const toeicWordsDB = [
         "en": "convince",
         "kk": "[kənˋvɪns]",
         "uk": "/kənˈvɪns/",
-        "zh": "vt. 說服、使確信、使信服、勸服",
+        "zh": "vt. 使信服、說服、使確信、勸服",
         "unit": 11,
         "example": "She utterly failed to convince them.",
         "exampleZh": "她根本沒有說服他們。"
@@ -7754,7 +7754,7 @@ const toeicWordsDB = [
         "en": "coordinate",
         "kk": "[koˋɔrdənət]",
         "uk": "/kəʊˈɔːdɪneɪt/",
-        "zh": "vt. 協調、調節、配合、使身體協調；n. 座標、配套服裝、同等級（或類別）的人；adj. 地位相當的、同等重要的、並列的、配位的",
+        "zh": "vt. 協調、配合、使身體協調、搭配；n. 座標、配套服裝、同等級（或類別）的人；adj. 地位相當的、同等重要的、並列的、配位的",
         "unit": 11,
         "example": "She'll show you how to coordinate pattern and colours.",
         "exampleZh": "她會向你展示如何搭配款式和顏色。"
@@ -7774,7 +7774,7 @@ const toeicWordsDB = [
         "en": "copy",
         "kk": "[ˋkɑpi]",
         "uk": "/ˈkɒpi/",
-        "zh": "vt. 抄寫、複製、謄寫、模仿；n. 副本、一本、一冊",
+        "zh": "vt. 拷貝、抄寫、謄寫、模仿；n. 副本、一本、一冊、一份",
         "unit": 11,
         "example": "Can you copy me in on your report?",
         "exampleZh": "你的報告給我抄送一份好嗎？"
@@ -7804,7 +7804,7 @@ const toeicWordsDB = [
         "en": "corporate",
         "kk": "[ˋkɔrpɚət]",
         "uk": "/ˈkɔːpərət/",
-        "zh": "adj. 全體的、共同的、公司的、法人的；n. 企業、集團、公司",
+        "zh": "adj. 法人(組織)的、團體的、共同的、公司的；n. 公司、集團",
         "unit": 11,
         "example": "The BBC is a corporate body.",
         "exampleZh": "英國廣播公司為法人團體。"
@@ -7824,7 +7824,7 @@ const toeicWordsDB = [
         "en": "corrupt",
         "kk": "[kɚˋʌpt]",
         "uk": "/kəˈrʌpt/",
-        "zh": "adj. 腐敗的、貪汙的、不道德的、墮落的；vt. 墮落、腐化、使腐化、使墮落",
+        "zh": "adj. 腐敗的、貪汙的、不道德的、墮落的；vt. 使腐化、使墮落、腐蝕、汙染",
         "unit": 11,
         "example": "Power tends to corrupt.",
         "exampleZh": "權力容易造成腐化。"
@@ -7834,7 +7834,7 @@ const toeicWordsDB = [
         "en": "corruption",
         "kk": "[kɚˋʌpʃən]",
         "uk": "/kəˈrʌpʃ(ə)n/",
-        "zh": "n. 墮落、腐化、貪汙、腐敗",
+        "zh": "n. 墮落、腐化、貪污、賄賂",
         "unit": 11,
         "example": "She is awaiting trial on corruption charges.",
         "exampleZh": "她因被控貪汙正等候審判。"
@@ -7854,7 +7854,7 @@ const toeicWordsDB = [
         "en": "council",
         "kk": "[ˋkaʊnsəl]",
         "uk": "/ˈkaʊns(ə)l/",
-        "zh": "n. 會議、議事、委員會、理事會；adj. 地方政府廉租的",
+        "zh": "n. 會議、委員會、理事會、政務委員會；adj. 地方政府廉租的",
         "unit": 11,
         "example": "The members left the council chamber.",
         "exampleZh": "議員離開了會議廳。"
@@ -7864,7 +7864,7 @@ const toeicWordsDB = [
         "en": "counsel",
         "kk": "[ˋkaʊnsəl]",
         "uk": "/ˈkaʊnsl/",
-        "zh": "n. 商議、審議、忠告、建議；vt. 勸告、忠告、建議、為……提供諮詢",
+        "zh": "n. 忠告、建議、辯護律師、諮詢；vt. 建議、勸告、為……提供諮詢、給……提供建議",
         "unit": 11,
         "example": "The court then heard counsel for the dead woman's father.",
         "exampleZh": "法庭接著聽取了女死者的父親所請律師的陳述。"
@@ -7874,7 +7874,7 @@ const toeicWordsDB = [
         "en": "counter",
         "kk": "[ˋkaʊntɚ]",
         "uk": "/ˈkaʊntə(r)/",
-        "zh": "n. 櫃檯、對立面、計數器、計算器；vt. 反對、反擊、反駁、駁斥；adv. 反方向地、相反地、對立地、逆向地；adj. 相反的、反面的、對立的",
+        "zh": "n. 櫃檯、對立面、計數器、計算器；vt. 反駁、駁斥、抵制、抵消；adv. 相反地、對立地、逆向地；adj. 反面的、對立的",
         "unit": 11,
         "example": "She was serving behind the counter.",
         "exampleZh": "她在櫃檯服務。"
@@ -7894,7 +7894,7 @@ const toeicWordsDB = [
         "en": "coupon",
         "kk": "[ˋku͵pɔn]",
         "uk": "/ˈkuːpɒn/",
-        "zh": "n. 贈券、減價優待券、優惠券、參賽表",
+        "zh": "n. 回數票、減價優待券、贈券、優惠券",
         "unit": 11,
         "example": "He paid with a two-for-one coupon.",
         "exampleZh": "他用一張買二送一優惠券結賬。"
@@ -7924,7 +7924,7 @@ const toeicWordsDB = [
         "en": "court",
         "kk": "[kɔrt]",
         "uk": "/kɔːt/",
-        "zh": "n. 法庭、法院、球場、王宮；vt. 奉承、討好、設法取得、追求",
+        "zh": "n. 場地、法院、法庭、球場；vt. 奉承、討好、設法取得",
         "unit": 11,
         "example": "The court adjourned for lunch.",
         "exampleZh": "午餐時間法庭休庭。"
@@ -7944,7 +7944,7 @@ const toeicWordsDB = [
         "en": "courtesy",
         "kk": "[ˋkɝtəsi]",
         "uk": "/ˈkɜːtəsi/",
-        "zh": "n. 禮貌、殷勤、彬彬有禮、禮貌的行為；adj. 免費提供的、禮節性的",
+        "zh": "n. 禮貌、彬彬有禮、禮貌的行為、屈膝禮；adj. 免費提供的、禮節性的",
         "unit": 11,
         "example": "The president paid a courtesy call on Emperor Akihito.",
         "exampleZh": "總統禮節性地拜訪了明仁天皇。"
@@ -7954,7 +7954,7 @@ const toeicWordsDB = [
         "en": "cover",
         "kk": "[ˋkʌvɚ]",
         "uk": "/ˈkʌvə(r)/",
-        "zh": "v. 遮蓋、覆蓋、包括、涉及；n. 遮蓋物、封面、覆蓋物、封底",
+        "zh": "v. 覆蓋、遮蓋、包括、涉及；n. 覆蓋物、遮蓋物、封面、封底",
         "unit": 11,
         "example": "$100 should cover your expenses.",
         "exampleZh": "100 美元應該可以支付你的開支。"
@@ -7964,7 +7964,7 @@ const toeicWordsDB = [
         "en": "coverage",
         "kk": "[ˋkʌvɚədʒ]",
         "uk": "/ˈkʌvərɪdʒ/",
-        "zh": "n. 覆蓋、覆蓋範圍、新聞報道、保險範圍",
+        "zh": "n. 覆蓋範圍、保險項目、新聞報導、新聞報道",
         "unit": 11,
         "example": "The incident has received wide coverage in the press.",
         "exampleZh": "這個事件已被新聞界廣泛報道。"
@@ -7974,7 +7974,7 @@ const toeicWordsDB = [
         "en": "crack",
         "kk": "[kræk]",
         "uk": "/kræk/",
-        "zh": "v. 裂開、爆裂、破裂、崩潰；n. 裂縫、裂痕、裂紋、縫隙；adj. 優秀的、訓練有素的",
+        "zh": "v. 破裂、裂開、崩潰；n. 爆裂聲、裂縫、裂紋、縫隙；adj. 優秀的、訓練有素的",
         "unit": 11,
         "example": "The ice started to crack.",
         "exampleZh": "冰開始裂了。"
@@ -7984,7 +7984,7 @@ const toeicWordsDB = [
         "en": "craft",
         "kk": "[kræft]",
         "uk": "/krɑːft/",
-        "zh": "n. 工藝、手藝、船、艇；vt. 精巧地製作、精心製作",
+        "zh": "n. 工藝、手藝、船、艇；vt. 精心製作",
         "unit": 11,
         "example": "Craft Resources also sells yarn and embroidery floss.",
         "exampleZh": "“手工之家”也售賣紗線和繡花絲線。"
@@ -8004,7 +8004,7 @@ const toeicWordsDB = [
         "en": "crane",
         "kk": "[kren]",
         "uk": "/kreɪn/",
-        "zh": "n. 鶴、起重機、吊車、機動升降臺架；vt. 伸著脖子看、伸長（脖子）看、探頭看、吊運",
+        "zh": "n. 鶴、起重機、吊車、機動升降臺架；vt. 探頭看、伸長（脖子）看、吊運",
         "unit": 11,
         "example": "The cargo was hoisted aboard by crane.",
         "exampleZh": "貨物由起重機吊上了船。"
@@ -8014,7 +8014,7 @@ const toeicWordsDB = [
         "en": "crash",
         "kk": "[kræʃ]",
         "uk": "/kræʃ/",
-        "zh": "v. 倒下、撞車、墜毀；n. 迫降、撞車事故、失事；adj. 應急的、速成的；adv. 嘩啦一聲地",
+        "zh": "v. 撞車、墜毀、猛撞、發出巨響；n. 撞車事故、失事、巨響、碰撞聲；adj. 應急的、速成的；adv. 嘩啦一聲地",
         "unit": 11,
         "example": "We're going to crash, aren't we?",
         "exampleZh": "我們要墜毀了，是不是？"
@@ -8024,7 +8024,7 @@ const toeicWordsDB = [
         "en": "create",
         "kk": "[kriˋet]",
         "uk": "/kriˈeɪt/",
-        "zh": "vt. 創造、製作、建立、設計",
+        "zh": "vt. 創造、建立、設計、創作",
         "unit": 11,
         "example": "We set business free to create more jobs.",
         "exampleZh": "我們放開商業自由，創造更多就業機會。"
@@ -8034,7 +8034,7 @@ const toeicWordsDB = [
         "en": "creation",
         "kk": "[kriˋeʃən]",
         "uk": "/kriˈeɪʃ(ə)n/",
-        "zh": "n. 作品、製作物、創造、建立",
+        "zh": "n. 創造、創作、創立、建立",
         "unit": 11,
         "example": "The bathroom is entirely my own creation.",
         "exampleZh": "這個浴室完全是我個人的創作。"
@@ -8044,7 +8044,7 @@ const toeicWordsDB = [
         "en": "creative",
         "kk": "[kriˋetɪv]",
         "uk": "/kriˈeɪtɪv/",
-        "zh": "adj. 有創意的、創新的、創造（性）的、創作的；n. 創作者、創意、創作素材",
+        "zh": "adj. 有創造力(或想像力)的、創造（性）的、創作的；n. 創作者、創意、創作素材",
         "unit": 11,
         "example": "Let your imagination run wild and be creative.",
         "exampleZh": "讓你的想象力自由馳騁發揮創意吧。"
@@ -8054,7 +8054,7 @@ const toeicWordsDB = [
         "en": "creativity",
         "kk": "[͵krieˋtɪvəti]",
         "uk": "/ˌkriːeɪˈtɪvəti/",
-        "zh": "n. 創意、創造力、獨創性",
+        "zh": "n. 創造力、獨創性",
         "unit": 11,
         "example": "His illness had not stunted his creativity.",
         "exampleZh": "疾病沒有扼殺他的創造力。"
@@ -8114,7 +8114,7 @@ const toeicWordsDB = [
         "en": "crew",
         "kk": "[kru]",
         "uk": "/kruː/",
-        "zh": "n. 工作人員、船員、全體船員、全體機組人員；vt. 當船員、當空乘人員",
+        "zh": "n. 全體船員、全體機組人員、一組工作人員、一夥人；vt. 當船員、當空乘人員",
         "unit": 11,
         "example": "In the distance the crew sighted land.",
         "exampleZh": "船員發現在遠處有陸地。"
@@ -8124,7 +8124,7 @@ const toeicWordsDB = [
         "en": "crime",
         "kk": "[kraɪm]",
         "uk": "/kraɪm/",
-        "zh": "n. 犯罪、罪刑、罪、罪行；v. 指控……有罪、判……有罪",
+        "zh": "n. 犯罪、罪、罪行、犯罪活動；v. 指控……有罪、判……有罪",
         "unit": 11,
         "example": "Crime figures are rising rapidly.",
         "exampleZh": "犯罪數字正在迅速上升。"
@@ -8134,7 +8134,7 @@ const toeicWordsDB = [
         "en": "criminal",
         "kk": "[ˋkrɪmənəl]",
         "uk": "/ˈkrɪmɪn(ə)l/",
-        "zh": "n. 罪犯；adj. 犯罪的、犯法的、刑事的、應受責備的",
+        "zh": "n. 罪犯；adj. 犯法的、犯罪的、刑事的、應受責備的",
         "unit": 11,
         "example": "He specialized in criminal law.",
         "exampleZh": "他專攻刑法。"
@@ -8144,7 +8144,7 @@ const toeicWordsDB = [
         "en": "crisis",
         "kk": "[ˋkraɪsəs]",
         "uk": "/ˈkraɪsɪs/",
-        "zh": "n. 困難、危及、危機、緊要關頭；adj. 用於處理危機的",
+        "zh": "n. 危機、緊急關頭、緊要關頭、決定性時刻；adj. 用於處理危機的",
         "unit": 11,
         "example": "There was a crisis looming.",
         "exampleZh": "危機迫在眉睫。"
@@ -8154,7 +8154,7 @@ const toeicWordsDB = [
         "en": "criterion",
         "kk": "[kraɪˋtɪriən]",
         "uk": "/kraɪˈtɪəriən/",
-        "zh": "n. 標準、準則、尺度",
+        "zh": "n. 標準、尺度、準則",
         "unit": 11,
         "example": "The main criterion is value for money.",
         "exampleZh": "主要的標準是錢要用得划算。"
@@ -8164,7 +8164,7 @@ const toeicWordsDB = [
         "en": "critic",
         "kk": "[ˋkrɪtɪk]",
         "uk": "/ˈkrɪtɪk/",
-        "zh": "n. 評論家、批評家、評論員、批評者",
+        "zh": "n. 批評家、評論家、評論員、批評者",
         "unit": 11,
         "example": "Turner is a writer and critic.",
         "exampleZh": "特納是一位作家和評論家。"
@@ -8174,7 +8174,7 @@ const toeicWordsDB = [
         "en": "critical",
         "kk": "[ˋkrɪtɪkəl]",
         "uk": "/ˈkrɪtɪk(ə)l/",
-        "zh": "adj. 批判的、評論的、愛挑剔的、極其重要的",
+        "zh": "adj. 緊要的、關鍵性的、危急的、批判的",
         "unit": 11,
         "example": "We need to become critical text-readers.",
         "exampleZh": "我們需要成為批判性的文字閱讀者。"
@@ -8184,7 +8184,7 @@ const toeicWordsDB = [
         "en": "criticize",
         "kk": "[ˋkrɪtɪ͵saɪz]",
         "uk": "/ˈkrɪtɪsaɪz/",
-        "zh": "vt. 批判、評論、批評、指責",
+        "zh": "vt. 批評、批判、苛求、指責",
         "unit": 11,
         "example": "All you ever do is criticize!",
         "exampleZh": "你就知道批評！"
@@ -8194,7 +8194,7 @@ const toeicWordsDB = [
         "en": "crop",
         "kk": "[krɑp]",
         "uk": "/krɒp/",
-        "zh": "n. 作物、莊稼、收成、產量；v. 播種、剪短、剪裁、啃吃",
+        "zh": "n. 莊稼、收成、產量、一批；v. 剪短、剪裁、啃吃、種植",
         "unit": 11,
         "example": "The staple crop is rice.",
         "exampleZh": "主要農作物為水稻。"
@@ -8214,7 +8214,7 @@ const toeicWordsDB = [
         "en": "crowd",
         "kk": "[kraʊd]",
         "uk": "/kraʊd/",
-        "zh": "n. 群眾、觀眾、人群、一夥人；v. 聚集、群集、靠近、盯著",
+        "zh": "n. 人群、一夥人、百姓、凡夫俗子；v. 聚集、群集、靠近、盯著",
         "unit": 11,
         "example": "The crowd began throwing stones.",
         "exampleZh": "那群人開始扔石頭。"
@@ -8234,7 +8234,7 @@ const toeicWordsDB = [
         "en": "crucial",
         "kk": "[ˋkruʃəl]",
         "uk": "/ˈkruːʃ(ə)l/",
-        "zh": "adj. 重要的、嚴酷的、至關重要的、決定性的",
+        "zh": "adj. 決定性的、重要的、至關重要的、極好的",
         "unit": 11,
         "example": "This last point is crucial.",
         "exampleZh": "剛講的這一點是關鍵的。"
@@ -8244,7 +8244,7 @@ const toeicWordsDB = [
         "en": "cruise",
         "kk": "[kruz]",
         "uk": "/kruːz/",
-        "zh": "n. 巡航、航遊、巡遊、乘船遊覽；v. 巡航、航遊、乘船遊覽、以平穩的速度行駛",
+        "zh": "n. 巡遊、乘船遊覽；v. 乘船遊覽、以平穩的速度行駛、緩慢巡行、兜風",
         "unit": 11,
         "example": "They took a luxury cruise around the Mediterranean.",
         "exampleZh": "他們搭乘豪華遊輪環遊地中海。"
@@ -8254,7 +8254,7 @@ const toeicWordsDB = [
         "en": "cuisine",
         "kk": "[kwɪˋzin]",
         "uk": "/kwɪˈziːn/",
-        "zh": "n. 烹飪、烹調法、菜餚、風味",
+        "zh": "n. 烹飪、菜餚、風味、飯菜",
         "unit": 11,
         "example": "The Garden's menu is based on Hawaiian regional cuisine.",
         "exampleZh": "花園飯店的菜餚以夏威夷地區的烹飪風格為基礎。"
@@ -8274,7 +8274,7 @@ const toeicWordsDB = [
         "en": "cure",
         "kk": "[kjʊr]",
         "uk": "/kjʊə(r)/",
-        "zh": "n. 治療、痊癒、藥物、療法；vt. 治癒、治好、解決、控制",
+        "zh": "n. 藥物、療法、對策、措施；vt. 治癒、治好、解決、控制",
         "unit": 11,
         "example": "The search for a cure goes on.",
         "exampleZh": "人們還在繼續探尋治療方法。"
@@ -8304,7 +8304,7 @@ const toeicWordsDB = [
         "en": "current",
         "kk": "[ˋkɝənt]",
         "uk": "/ˈkʌrənt/",
-        "zh": "adj. 現時的、當前的、現行的、通用的；n. 流動、水流、氣流、電流",
+        "zh": "adj. 現行的、當前的、通用的；n. 電流、水流、氣流、思潮",
         "unit": 11,
         "example": "We were rowing against the current.",
         "exampleZh": "我們划船逆流而上。"
@@ -8324,7 +8324,7 @@ const toeicWordsDB = [
         "en": "custom",
         "kk": "[ˋkʌstəm]",
         "uk": "/ˈkʌstəm/",
-        "zh": "n. 習俗、慣例、風俗、習慣；adj. 訂做的、訂製的、定做的、量身設計的",
+        "zh": "n. 習俗、風俗、習慣、光顧；adj. 定做的、量身設計的",
         "unit": 11,
         "example": "This quaint custom should be revived.",
         "exampleZh": "應該恢復這一獨特的風俗。"
@@ -8334,7 +8334,7 @@ const toeicWordsDB = [
         "en": "customer",
         "kk": "[ˋkʌstəmɚ]",
         "uk": "/ˈkʌstəmə(r)/",
-        "zh": "n. 顧客、買主、傢伙",
+        "zh": "n. 顧客、傢伙",
         "unit": 11,
         "example": "The customer called to cancel.",
         "exampleZh": "顧客打電話來取消了。"
@@ -8354,7 +8354,7 @@ const toeicWordsDB = [
         "en": "customs",
         "kk": "[ˋkʌstəmz]",
         "uk": "/ˈkʌstəmz/",
-        "zh": "n. 關稅、海關",
+        "zh": "n. 關稅、報關手續、海關出入境口、海關",
         "unit": 11,
         "example": "The ship was boarded by customs officials.",
         "exampleZh": "海關官員登上了這艘船。"
@@ -8374,7 +8374,7 @@ const toeicWordsDB = [
         "en": "cycle",
         "kk": "[ˋsaɪkəl]",
         "uk": "/ˈsaɪk(ə)l/",
-        "zh": "n. 週期、循環、腳踏車、摩托車；vi. 循環、輪轉、騎腳踏車、迴圈",
+        "zh": "n. 循環、腳踏車、摩托車、迴圈；vi. 騎腳踏車、迴圈",
         "unit": 11,
         "example": "This cycle repeats itself ad infinitum.",
         "exampleZh": "這個週期一直迴圈往復。"
@@ -8394,7 +8394,7 @@ const toeicWordsDB = [
         "en": "damage",
         "kk": "[ˋdæmədʒ]",
         "uk": "/ˈdæmɪdʒ/",
-        "zh": "n. 損害、損失、損壞、傷害；vt. 損害、毀壞、損壞、對……造成壞影響",
+        "zh": "n. 損壞、損失、損害、傷害；vt. 損壞、損害、對……造成壞影響",
         "unit": 11,
         "example": "The fire caused extensive damage.",
         "exampleZh": "火災造成了巨大的損失。"
@@ -8404,7 +8404,7 @@ const toeicWordsDB = [
         "en": "danger",
         "kk": "[ˋdendʒɚ]",
         "uk": "/ˈdeɪndʒə(r)/",
-        "zh": "n. 危急、危險、風險、威脅",
+        "zh": "n. 危險、風險、威脅、危險因素",
         "unit": 11,
         "example": "The red triangle denotes danger.",
         "exampleZh": "紅色三角形表示危險。"
@@ -8424,7 +8424,7 @@ const toeicWordsDB = [
         "en": "dare",
         "kk": "[dɛr]",
         "uk": "/deə(r)/",
-        "zh": "vt. 敢、膽敢、激、激將；aux. 敢、竟敢；n. 果敢行為、挑戰、激將",
+        "zh": "vt. 敢、竟敢、激、激將；n. 挑戰、激將",
         "unit": 11,
         "example": "I didn't dare look at him.",
         "exampleZh": "我不敢看他。"
@@ -8474,7 +8474,7 @@ const toeicWordsDB = [
         "en": "day",
         "kk": "[de]",
         "uk": "/deɪ/",
-        "zh": "n. 一天、日、白天、白晝；adj. 白晝的、日間的、日間工作的、上白班的",
+        "zh": "n. 白天、日、一天、白晝；adj. 白晝的、日間的、日間工作的、上白班的",
         "unit": 11,
         "example": "They're improving day by day.",
         "exampleZh": "他們正在一天天進步。"
@@ -8494,7 +8494,7 @@ const toeicWordsDB = [
         "en": "date",
         "kk": "[det]",
         "uk": "/deɪt/",
-        "zh": "n. 日期、日子、約會、幽會；v. 註有日期、註明日期、確定年代、談戀愛",
+        "zh": "n. 日期、日子、約會、幽會；v. 註明日期、確定年代、談戀愛、約會",
         "unit": 11,
         "example": "I've got a hot date tonight.",
         "exampleZh": "今晚我有一個熱烈的約會。"
@@ -8524,7 +8524,7 @@ const toeicWordsDB = [
         "en": "deadline",
         "kk": "[ˋdɛd͵laɪn]",
         "uk": "/ˈdedlaɪn/",
-        "zh": "n. 截止期限、最後限期、最後期限、截止日期",
+        "zh": "n. 最後限期、最後期限、截止日期、死線",
         "unit": 11,
         "example": "I can't possibly meet that deadline.",
         "exampleZh": "我不可能如期完成。"
@@ -8544,7 +8544,7 @@ const toeicWordsDB = [
         "en": "dealer",
         "kk": "[ˋdilɚ]",
         "uk": "/ˈdiːlə(r)/",
-        "zh": "n. 業者、商人、交易商、毒品販子",
+        "zh": "n. 業者、商人、發牌者、交易商",
         "unit": 11,
         "example": "He is a successful car dealer.",
         "exampleZh": "他是一個成功的汽車經銷商。"
@@ -8574,7 +8574,7 @@ const toeicWordsDB = [
         "en": "dear",
         "kk": "[dɪr]",
         "uk": "/dɪə(r)/",
-        "zh": "adj. 親愛的、摯愛的、珍視的、昂貴的；n. 親愛的；int. 啊、天吶",
+        "zh": "adj. 珍視的、親愛的、昂貴的；n. 親愛的；int. 啊、天吶",
         "unit": 11,
         "example": "My dear girl, you're wrong.",
         "exampleZh": "我親愛的女孩，你錯了。"
@@ -8594,7 +8594,7 @@ const toeicWordsDB = [
         "en": "debate",
         "kk": "[dəˋbet]",
         "uk": "/dɪˈbeɪt/",
-        "zh": "n. 辯論、討論；vt. 辯論、爭論、反覆思考、斟酌",
+        "zh": "n. 討論、辯論；vt. 反覆思考、斟酌、討論、辯論",
         "unit": 11,
         "example": "Anti-war protesters disrupted the debate.",
         "exampleZh": "反戰示威者們擾亂了辯論。"
@@ -8614,7 +8614,7 @@ const toeicWordsDB = [
         "en": "debt",
         "kk": "[dɛt]",
         "uk": "/det/",
-        "zh": "n. 債務、借款、欠款、負債情況",
+        "zh": "n. 債、借款、欠款、債務",
         "unit": 11,
         "example": "We are finally clear of debt.",
         "exampleZh": "我們終於償清了債務。"
@@ -8704,7 +8704,7 @@ const toeicWordsDB = [
         "en": "decent",
         "kk": "[ˋdisənt]",
         "uk": "/ˈdiːsnt/",
-        "zh": "adj. 正派的、合乎禮儀的、像樣的、尚好的",
+        "zh": "adj. 正派的、體面的、像樣的、尚好的",
         "unit": 11,
         "example": "He did the decent thing and resigned.",
         "exampleZh": "他做得很體面，辭職了。"
@@ -8734,7 +8734,7 @@ const toeicWordsDB = [
         "en": "decision",
         "kk": "[dɪˋsɪʒən]",
         "uk": "/dɪˈsɪʒ(ə)n/",
-        "zh": "n. 決心、判斷、決定、抉擇",
+        "zh": "n. 決定、抉擇、判決、裁定",
         "unit": 11,
         "example": "It was a collective decision.",
         "exampleZh": "這是集體的決定。"
@@ -8744,7 +8744,7 @@ const toeicWordsDB = [
         "en": "decisive",
         "kk": "[dɪˋsaɪsɪv]",
         "uk": "/dɪˈsaɪsɪv/",
-        "zh": "adj. 決定性的、決定的、果斷的、決斷的",
+        "zh": "adj. 決定性的、確定的、果斷的、決斷的",
         "unit": 11,
         "example": "He is decisive and won't shrink from a fight.",
         "exampleZh": "他很果斷，而且不會逃避戰鬥。"
@@ -8754,7 +8754,7 @@ const toeicWordsDB = [
         "en": "deck",
         "kk": "[dɛk]",
         "uk": "/dek/",
-        "zh": "n. 艙面、甲板、層、一副牌；v. 裝飾、打扮、用力擊倒、裝甲板",
+        "zh": "n. 艙面、甲板、一副、層；v. 裝飾、打扮、用力擊倒、裝甲板",
         "unit": 11,
         "example": "My cabin is on deck C.",
         "exampleZh": "我的艙位在C層甲板。"
@@ -8764,7 +8764,7 @@ const toeicWordsDB = [
         "en": "declaration",
         "kk": "[͵dɛklɚˋeʃən]",
         "uk": "/ˌdekləˈreɪʃ(ə)n/",
-        "zh": "n. 宣告、宣言、表白、申報",
+        "zh": "n. 宣佈、宣告、宣言、聲明",
         "unit": 11,
         "example": "It was meant to sound like an epoch-making declaration.",
         "exampleZh": "有意讓它聽起來像是一個劃時代的宣言。"
@@ -8774,7 +8774,7 @@ const toeicWordsDB = [
         "en": "declare",
         "kk": "[dɪkˋlɛr]",
         "uk": "/dɪˈkleə(r)/",
-        "zh": "vt. 宣告、聲明、宣佈、斷言",
+        "zh": "vt. 宣佈、宣告、斷言、宣稱",
         "unit": 11,
         "example": "I declare this festival open.",
         "exampleZh": "我宣佈慶祝活動開始。"
@@ -8784,7 +8784,7 @@ const toeicWordsDB = [
         "en": "decline",
         "kk": "[dɪkˋlaɪn]",
         "uk": "/dɪˈklaɪn/",
-        "zh": "v. 下降、下跌、衰退、拒絕；n. 下降、減少、衰退",
+        "zh": "v. 下降、衰退、拒絕、謝絕；n. 減少、衰退",
         "unit": 11,
         "example": "The industry has slid into decline.",
         "exampleZh": "這個行業已成衰退之勢。"
@@ -8804,7 +8804,7 @@ const toeicWordsDB = [
         "en": "decrease",
         "kk": "[dɪˋkris]",
         "uk": "/dɪˈkriːs/",
-        "zh": "vt. 減、減少、降低；n. 減少、降低",
+        "zh": "vt. 減少、減小、降低；n. 減少額、減小量、減少、降低",
         "unit": 11,
         "example": "People should decrease the amount of fat they eat.",
         "exampleZh": "人們應減少脂肪的攝入量。"
@@ -8814,7 +8814,7 @@ const toeicWordsDB = [
         "en": "dedicate",
         "kk": "[ˋdɛdə͵ket]",
         "uk": "/ˈdedɪkeɪt/",
-        "zh": "vt. 奉獻、獻身、致力於、獻身於",
+        "zh": "vt. 奉獻、獻身於、舉行落成典禮、致力於",
         "unit": 11,
         "example": "To her I dedicate this book.",
         "exampleZh": "我把這本書獻給她。"
@@ -8824,7 +8824,7 @@ const toeicWordsDB = [
         "en": "dedication",
         "kk": "[͵dɛdəˋkeʃən]",
         "uk": "/ˌdedɪˈkeɪʃ(ə)n/",
-        "zh": "n. 奉獻、供奉、獻身、獻辭",
+        "zh": "n. 奉獻、揭幕儀式、獻身、獻辭",
         "unit": 11,
         "example": "Her dedication to her work was admirable.",
         "exampleZh": "她對工作的奉獻精神可欽可佩。"
@@ -8864,7 +8864,7 @@ const toeicWordsDB = [
         "en": "deem",
         "kk": "[dim]",
         "uk": "/diːm/",
-        "zh": "vt. 認為、以為、相信",
+        "zh": "vt. 認為、視作、相信",
         "unit": 11,
         "example": "They deem travel an important part of their life.",
         "exampleZh": "他們認為旅行是他們生活中重要的一部分。"
@@ -8884,7 +8884,7 @@ const toeicWordsDB = [
         "en": "deepen",
         "kk": "[ˋdipən]",
         "uk": "/ˈdiːpən/",
-        "zh": "vt. 使變深、使加深、使強烈、變深",
+        "zh": "vt. 使加深、使強烈、使變濃、變深",
         "unit": 11,
         "example": "There were plans to deepen a stretch of the river.",
         "exampleZh": "曾經有過加深一段河道的計劃。"
@@ -8904,7 +8904,7 @@ const toeicWordsDB = [
         "en": "defeat",
         "kk": "[dɪˋfit]",
         "uk": "/dɪˈfiːt/",
-        "zh": "vt. 戰勝、擊敗、困惑、難住；n. 戰敗、挫折、失敗、戰勝",
+        "zh": "vt. 擊敗、戰勝、困惑、難住；n. 失敗、戰敗、戰勝、擊敗",
         "unit": 11,
         "example": "He bamboozled Mercer into defeat.",
         "exampleZh": "他矇騙默瑟並擊敗了他。"
@@ -8914,7 +8914,7 @@ const toeicWordsDB = [
         "en": "defect",
         "kk": "[ˋdifɛkt]",
         "uk": "/ˈdiːfekt/",
-        "zh": "n. 缺點、缺陷、毛病；vi. 逃跑、脫離、背叛、叛變",
+        "zh": "n. 缺點、缺陷、毛病；vi. 背叛、叛變",
         "unit": 11,
         "example": "He was born with a hearing defect.",
         "exampleZh": "他天生聽力就有缺陷。"
@@ -8924,7 +8924,7 @@ const toeicWordsDB = [
         "en": "defend",
         "kk": "[dɪˋfɛnd]",
         "uk": "/dɪˈfend/",
-        "zh": "vt. 防衛、保護、保衛、防禦",
+        "zh": "vt. 防禦、保衛、保護、捍衛",
         "unit": 11,
         "example": "How can you defend such behaviour?",
         "exampleZh": "你怎能為這種行為辯解呢？"
@@ -8934,7 +8934,7 @@ const toeicWordsDB = [
         "en": "defense",
         "kk": "[dɪˋfɛns]",
         "uk": "/dɪˈfens/",
-        "zh": "n. 防衛、保護、防禦、保衛",
+        "zh": "n. 防禦、保衛、防護、防禦物",
         "unit": 11,
         "example": "A Defense Department spokesman briefed reporters.",
         "exampleZh": "一位國防部發言人向記者們介紹了情況。"
@@ -8944,7 +8944,7 @@ const toeicWordsDB = [
         "en": "defensive",
         "kk": "[dɪˋfɛnsɪv]",
         "uk": "/dɪˈfensɪv/",
-        "zh": "adj. 防衛的、保衛的、防禦的、戒備的；n. 防禦態勢、守勢、辯護、辯解",
+        "zh": "adj. 防禦的、戒備的、生氣的、發怒的；n. 防禦態勢、守勢、辯護、辯解",
         "unit": 11,
         "example": "Troops took up a defensive position around the town.",
         "exampleZh": "部隊在全城採取了守勢。"
@@ -8954,7 +8954,7 @@ const toeicWordsDB = [
         "en": "deficiency",
         "kk": "[dɪˋfɪʃənsi]",
         "uk": "/dɪˈfɪʃ(ə)nsi/",
-        "zh": "n. 不足、缺乏、缺陷、瑕疵",
+        "zh": "n. 不足、缺陷、缺點、缺乏",
         "unit": 11,
         "example": "Vitamin deficiency in the diet can cause illness.",
         "exampleZh": "飲食中缺乏維生素可能導致疾病。"
@@ -9004,7 +9004,7 @@ const toeicWordsDB = [
         "en": "degree",
         "kk": "[dɪˋɡri]",
         "uk": "/dɪˈɡriː/",
-        "zh": "n. 度、度數、程度、學位課程",
+        "zh": "n. 程度、度、度數、學位課程",
         "unit": 11,
         "example": "She's reading for a law degree.",
         "exampleZh": "她在攻讀法學學位。"
@@ -9014,7 +9014,7 @@ const toeicWordsDB = [
         "en": "delay",
         "kk": "[dɪˋle]",
         "uk": "/dɪˈleɪ/",
-        "zh": "v. 拖延、耽擱、推遲、延期；n. 延遲、耽擱、延期、推遲",
+        "zh": "v. 延遲、推遲、延期、延誤；n. 耽擱、延期、推遲、延誤",
         "unit": 11,
         "example": "Any delay would be fatal.",
         "exampleZh": "任何延誤都可能導致失敗。"
@@ -9024,7 +9024,7 @@ const toeicWordsDB = [
         "en": "delegate",
         "kk": "[ˋdɛlə͵ɡet]",
         "uk": "/ˈdelɪɡət/",
-        "zh": "n. 代表、委員會成員；vt. 委派……為代表、委派(某人)做、授權、把……委託給",
+        "zh": "n. 會議代表、代表、委員會成員；vt. 代表、授權、把……委託給、選派",
         "unit": 11,
         "example": "The Canadian delegate offered no reply.",
         "exampleZh": "那位加拿大代表沒給答覆。"
@@ -9034,7 +9034,7 @@ const toeicWordsDB = [
         "en": "deliberate",
         "kk": "[dɪˋlɪbɚət]",
         "uk": "/dɪˈlɪbərət/",
-        "zh": "adj. 深思熟慮的、慎重的、故意的、蓄意的；vt. 仔細考慮、思考、認真商討",
+        "zh": "adj. 故意的、蓄意的、從容的；vt. 商議、仔細考慮、認真商討",
         "unit": 11,
         "example": "This was a deliberate piece of misinformation.",
         "exampleZh": "這是一條故意提供的虛假訊息。"
@@ -9064,7 +9064,7 @@ const toeicWordsDB = [
         "en": "delicate",
         "kk": "[ˋdɛləkət]",
         "uk": "/ˈdelɪkət/",
-        "zh": "adj. 易碎的、嬌貴的、纖弱的、柔和的；n. 精美的衣物",
+        "zh": "adj. 易碎的、嬌貴的、柔和的、清淡的；n. 精美的衣物",
         "unit": 11,
         "example": "Babies have very delicate skin.",
         "exampleZh": "嬰兒的皮膚非常嬌嫩。"
@@ -9074,7 +9074,7 @@ const toeicWordsDB = [
         "en": "delicious",
         "kk": "[dɪˋlɪʃəs]",
         "uk": "/dɪˈlɪʃəs/",
-        "zh": "adj. 美味的、香噴噴的、芬芳的、令人愉快的",
+        "zh": "adj. 好吃的、美味的、芬芳的、令人愉快的",
         "unit": 11,
         "example": "He served up a delicious meal.",
         "exampleZh": "他為我們準備了一頓美味的飯菜。"
@@ -9084,7 +9084,7 @@ const toeicWordsDB = [
         "en": "delight",
         "kk": "[dɪˋlaɪt]",
         "uk": "/dɪˈlaɪt/",
-        "zh": "n. 欣喜、愉快、高興、令人高興的人或物；vt. 高興、喜愛、使高興、以……為樂",
+        "zh": "n. 高興、令人高興的人或物、樂事；vt. 使高興、以……為樂",
         "unit": 11,
         "example": "They all cackled with delight.",
         "exampleZh": "他們都高興得嘎嘎地笑。"
@@ -9094,7 +9094,7 @@ const toeicWordsDB = [
         "en": "deliver",
         "kk": "[dɪˋlɪvɚ]",
         "uk": "/dɪˈlɪvə(r)/",
-        "zh": "vt. 投遞、傳送、運送、履行",
+        "zh": "vt. 遞送、發表、講、給……接生",
         "unit": 11,
         "example": "We deliver the goods in batches.",
         "exampleZh": "我們分批發貨。"
@@ -9124,7 +9124,7 @@ const toeicWordsDB = [
         "en": "demand",
         "kk": "[dɪˋmænd]",
         "uk": "/dɪˈmɑːnd/",
-        "zh": "vt. 要求、請求、強烈要求、需要；n. 要求、請求、堅決的要求、需求",
+        "zh": "vt. 強烈要求、需要、需求；n. 堅決的要求、需求、需求量、要求",
         "unit": 11,
         "example": "I demand to see the manager.",
         "exampleZh": "我堅決要求見經理。"
@@ -9164,7 +9164,7 @@ const toeicWordsDB = [
         "en": "demonstrate",
         "kk": "[ˋdɛmən͵stret]",
         "uk": "/ˈdemənstreɪt/",
-        "zh": "v. 論證、證明、示威、示範",
+        "zh": "v. 示範操作、展示、證明、示範",
         "unit": 11,
         "example": "These results demonstrate convincingly that our campaign is working.",
         "exampleZh": "這些結果有力地證明，我們的運動正在發揮作用。"
@@ -9174,7 +9174,7 @@ const toeicWordsDB = [
         "en": "demonstration",
         "kk": "[͵dɛmənˋstreʃən]",
         "uk": "/ˌdemənˈstreɪʃ(ə)n/",
-        "zh": "n. 論證、證明、演示、展示",
+        "zh": "n. 實地示範、演示、展示、遊行",
         "unit": 11,
         "example": "The demonstration climaxed two weeks of strikes.",
         "exampleZh": "遊行示威達到了兩週罷工的高潮。"
@@ -9184,7 +9184,7 @@ const toeicWordsDB = [
         "en": "denial",
         "kk": "[dɪˋnaɪəl]",
         "uk": "/dɪˈnaɪəl/",
-        "zh": "n. 否認、否定、拒絕接受、拒不承認",
+        "zh": "n. 否認、拒絕、拒絕接受、拒不承認",
         "unit": 11,
         "example": "Joanna's denial rang true.",
         "exampleZh": "喬安娜的否認聽上去像是真的。"
@@ -9204,7 +9204,7 @@ const toeicWordsDB = [
         "en": "density",
         "kk": "[ˋdɛnsəti]",
         "uk": "/ˈdensəti/",
-        "zh": "n. 密集度、稠密度、稠密、密集",
+        "zh": "n. 密度、稠密、密集",
         "unit": 11,
         "example": "The region has a very high population density.",
         "exampleZh": "這一地區人口密度很高。"
@@ -9224,7 +9224,7 @@ const toeicWordsDB = [
         "en": "depart",
         "kk": "[dɪˋpɑrt]",
         "uk": "/dɪˈpɑːt/",
-        "zh": "v. 起程、出發、啟程、背離",
+        "zh": "v. 起程、出發、離開、離去",
         "unit": 11,
         "example": "All aboard! The ship is about to depart.",
         "exampleZh": "請各位上船！船就要離開了。"
@@ -9234,7 +9234,7 @@ const toeicWordsDB = [
         "en": "department",
         "kk": "[dɪˋpɑrtmənt]",
         "uk": "/dɪˈpɑːtmənt/",
-        "zh": "n. 部、司、局、處",
+        "zh": "n. 部門、部、司、系",
         "unit": 11,
         "example": "He moved to the sales department.",
         "exampleZh": "他調到了銷售部。"
@@ -9254,7 +9254,7 @@ const toeicWordsDB = [
         "en": "departure",
         "kk": "[dɪˋpɑrtʃɚ]",
         "uk": "/dɪˈpɑːtʃə(r)/",
-        "zh": "n. 離開、出發、背離、啟程",
+        "zh": "n. 離開、出發、起程、背離",
         "unit": 11,
         "example": "It was a radical departure from tradition.",
         "exampleZh": "這從根本上違背了傳統。"
@@ -9264,7 +9264,7 @@ const toeicWordsDB = [
         "en": "depend",
         "kk": "[dɪˋpɛnd]",
         "uk": "/dɪˈpend/",
-        "zh": "vi. 相信、信賴、取決於、依賴",
+        "zh": "vi. 依賴、取決於、依靠、相信",
         "unit": 11,
         "example": "Wage rates depend on levels of productivity.",
         "exampleZh": "工資率取決於生產力水準。"
@@ -9284,7 +9284,7 @@ const toeicWordsDB = [
         "en": "dependent",
         "kk": "[dɪˋpɛndənt]",
         "uk": "/dɪˈpendənt/",
-        "zh": "adj. 依靠的、依賴的、取決於、有癮的；n. 受供養者",
+        "zh": "adj. 依賴的、依靠的、取決於、有癮的；n. 受供養者",
         "unit": 11,
         "example": "The area is heavily dependent on tourism.",
         "exampleZh": "這個地區非常依賴旅遊業。"
@@ -9294,7 +9294,7 @@ const toeicWordsDB = [
         "en": "depict",
         "kk": "[dɪˋpɪkt]",
         "uk": "/dɪˈpɪkt/",
-        "zh": "vt. 描述、描寫、描繪",
+        "zh": "vt. 描畫、雕出、描述、描繪",
         "unit": 11,
         "example": "It proved hard to depict objectively.",
         "exampleZh": "事實證明很難客觀地描述它。"
@@ -9304,7 +9304,7 @@ const toeicWordsDB = [
         "en": "deposit",
         "kk": "[dəˋpɑzɪt]",
         "uk": "/dɪˈpɒzɪt/",
-        "zh": "vt. 放置、寄存、放下、儲蓄；n. 存款、沉積物、沉積層、訂金",
+        "zh": "vt. 放下、放置、儲蓄、存放；n. 沉積物、沉積層、訂金、押金",
         "unit": 11,
         "example": "Landlords can charge a returnable deposit.",
         "exampleZh": "房東可以收取一筆可退還的押金。"
@@ -9314,7 +9314,7 @@ const toeicWordsDB = [
         "en": "depression",
         "kk": "[dɪˋprɛʃən]",
         "uk": "/dɪˈpreʃn/",
-        "zh": "n. 沮喪、意氣消沉、抑鬱、蕭條",
+        "zh": "n. 沮喪、意氣消沈、抑鬱、蕭條",
         "unit": 11,
         "example": "She had slid into a depression.",
         "exampleZh": "她不知不覺地抑鬱寡歡起來。"
@@ -9324,7 +9324,7 @@ const toeicWordsDB = [
         "en": "describe",
         "kk": "[dɪˋskraɪb]",
         "uk": "/dɪˈskraɪb/",
-        "zh": "vt. 描繪、敘述、描述、形容",
+        "zh": "vt. 描述、形容、做……運動、形成……形狀",
         "unit": 11,
         "example": "Can you describe him to me?",
         "exampleZh": "你能給我描述一下他嗎？"
@@ -9354,7 +9354,7 @@ const toeicWordsDB = [
         "en": "design",
         "kk": "[dɪˋzaɪn]",
         "uk": "/dɪˈzaɪn/",
-        "zh": "n. 圖樣、圖紙、設計、佈局；vt. 設計構思、繪製、設計、製圖",
+        "zh": "n. 設計、佈局、安排、設計藝術；vt. 設計、製圖、構思",
         "unit": 11,
         "example": "She's good at art and design.",
         "exampleZh": "她擅長美術和設計。"
@@ -9364,7 +9364,7 @@ const toeicWordsDB = [
         "en": "despite",
         "kk": "[dɪˋspaɪt]",
         "uk": "/dɪˈspaɪt/",
-        "zh": "prep. 不管、儘管、即使、不由自主地；n. 惡意、怨恨、褻瀆、輕蔑；v. 蔑視、激怒",
+        "zh": "prep. 不管、儘管、任憑、即使；n. 褻瀆、輕蔑、鄙視；v. 蔑視、激怒",
         "unit": 11,
         "example": "Despite our worries everything turned out well.",
         "exampleZh": "儘管我們都很擔心，結果一切都順利。"
@@ -9394,7 +9394,7 @@ const toeicWordsDB = [
         "en": "destruction",
         "kk": "[dɪˋstrʌkʃən]",
         "uk": "/dɪˈstrʌkʃ(ə)n/",
-        "zh": "n. 破壞、摧毀",
+        "zh": "n. 破壞、毀滅、消滅、摧毀",
         "unit": 11,
         "example": "In the poem he laments the destruction of the countryside.",
         "exampleZh": "在那首詩裡他對鄉村遭到的破壞流露出悲哀。"
@@ -9404,7 +9404,7 @@ const toeicWordsDB = [
         "en": "detail",
         "kk": "[dɪˋtel]",
         "uk": "/ˈdiːteɪl/",
-        "zh": "n. 細節、詳情、細微之處、資料；vt. 詳述、詳細說明、徹底清洗、派遣",
+        "zh": "n. 詳情、細節、細微之處、資料；vt. 詳細說明、詳述、徹底清洗",
         "unit": 11,
         "example": "The proposals were short on detail.",
         "exampleZh": "這些提議缺少細節。"
@@ -9424,7 +9424,7 @@ const toeicWordsDB = [
         "en": "detect",
         "kk": "[dɪˋtɛkt]",
         "uk": "/dɪˈtekt/",
-        "zh": "vt. 探測、察覺、查明、測出",
+        "zh": "vt. 查出、查明、察覺、測出",
         "unit": 11,
         "example": "Arnold could detect a certain sadness in the old man's face.",
         "exampleZh": "阿諾德可以從老人的臉上看出某種悲傷。"
@@ -9434,7 +9434,7 @@ const toeicWordsDB = [
         "en": "determine",
         "kk": "[dəˋtɝmən]",
         "uk": "/dɪˈtɜːmɪn/",
-        "zh": "vt. 決定、下決心、控制、查明",
+        "zh": "vt. 決定、控制、查明、確定",
         "unit": 11,
         "example": "Genes determine the characteristics of every living thing.",
         "exampleZh": "基因決定每個生物的特徵。"
@@ -9444,7 +9444,7 @@ const toeicWordsDB = [
         "en": "develop",
         "kk": "[dɪˋvɛləp]",
         "uk": "/dɪˈveləp/",
-        "zh": "v. 開發、發展、成長、發育",
+        "zh": "v. 發展、成長、發育、逐漸形成",
         "unit": 11,
         "example": "How fast would the disease develop?",
         "exampleZh": "這種疾病的發展速度有多快？"
@@ -9464,7 +9464,7 @@ const toeicWordsDB = [
         "en": "development",
         "kk": "[dɪˋvɛləpmənt]",
         "uk": "/dɪˈveləpmənt/",
-        "zh": "n. 進化、發展、發育、成長",
+        "zh": "n. 生長、發展、發育、成長",
         "unit": 11,
         "example": "This land is ripe for development.",
         "exampleZh": "這片土地適宜開發。"
@@ -9474,7 +9474,7 @@ const toeicWordsDB = [
         "en": "device",
         "kk": "[dɪˋvaɪs]",
         "uk": "/dɪˈvaɪs/",
-        "zh": "n. 設備、機器、裝置、手段",
+        "zh": "n. 儀器、裝置、手段、方法",
         "unit": 11,
         "example": "The device was protected by patent.",
         "exampleZh": "這一裝置受專利保護。"
@@ -9484,7 +9484,7 @@ const toeicWordsDB = [
         "en": "devise",
         "kk": "[dɪˋvaɪz]",
         "uk": "/dɪˈvaɪz/",
-        "zh": "vt. 設計、發明、遺贈、圖謀；v. 設計、發明、遺贈不動產的條款",
+        "zh": "vt. 設計、發明、遺贈、圖謀；n. 遺贈不動產的條款",
         "unit": 11,
         "example": "We build intricate habitats and devise complex recipes for our food.",
         "exampleZh": "我們建造複雜精細的居所，設計複雜的食譜。"
@@ -9494,7 +9494,7 @@ const toeicWordsDB = [
         "en": "dial",
         "kk": "[ˋdaɪəl]",
         "uk": "/ˈdaɪəl/",
-        "zh": "vt. 撥打、撥、撥號；n. 鐘面、儀表盤、調節器、撥號盤",
+        "zh": "vt. 撥號；n. 鐘面、儀表盤、調節器、撥號盤",
         "unit": 11,
         "example": "Broadband is still more expensive than dial-up services.",
         "exampleZh": "寬頻還是要比撥號服務費錢得多。"
@@ -9504,7 +9504,7 @@ const toeicWordsDB = [
         "en": "diary",
         "kk": "[ˋdaɪɚi]",
         "uk": "/ˈdaɪəri/",
-        "zh": "n. 日記、日誌、日程簿、專欄",
+        "zh": "n. 日記、日程簿、專欄",
         "unit": 11,
         "example": "Eleanor began to keep a diary.",
         "exampleZh": "埃莉諾開始記日記了。"
@@ -9554,7 +9554,7 @@ const toeicWordsDB = [
         "en": "different",
         "kk": "[ˋdɪfɚənt]",
         "uk": "/ˈdɪfrənt/",
-        "zh": "adj. 不同的、有差異的、分別的、各別的",
+        "zh": "adj. 不同的、分別的、各別的、與眾不同的",
         "unit": 11,
         "example": "Different countries specialized in different products.",
         "exampleZh": "不同的國家專門生產不同的產品。"
@@ -9564,7 +9564,7 @@ const toeicWordsDB = [
         "en": "difficult",
         "kk": "[ˋdɪfəkəlt]",
         "uk": "/ˈdɪfɪkəlt/",
-        "zh": "adj. 困難的、艱難的、費力的、不友好的",
+        "zh": "adj. 困難的、費力的、不友好的、難對付的",
         "unit": 11,
         "example": "The exam was quite difficult.",
         "exampleZh": "考試相當難。"
@@ -9574,7 +9574,7 @@ const toeicWordsDB = [
         "en": "difficulty",
         "kk": "[ˋdɪfəkəlti]",
         "uk": "/ˈdɪfɪkəlti/",
-        "zh": "n. 困難、困境、難題",
+        "zh": "n. 困難、難題",
         "unit": 11,
         "example": "Do you have difficulty getting up?",
         "exampleZh": "你起床有困難嗎？"
@@ -9584,7 +9584,7 @@ const toeicWordsDB = [
         "en": "digital",
         "kk": "[ˋdɪdʒətəl]",
         "uk": "/ˈdɪdʒɪt(ə)l/",
-        "zh": "adj. 數位的、數字的、數碼的、數字顯示的；n. 數字電視、數位電視",
+        "zh": "adj. 數字的、數碼的、數字顯示的、指頭的；n. 數字電視、數位電視",
         "unit": 11,
         "example": "How long have you had digital?",
         "exampleZh": "你們有數字電視多長時間了？"
@@ -9634,7 +9634,7 @@ const toeicWordsDB = [
         "en": "director",
         "kk": "[dɚˋɛktɚ]",
         "uk": "/dəˈrektə(r); daɪˈrektə(r)/",
-        "zh": "n. 導演、主管、署長、管理者",
+        "zh": "n. 董事、局長、主任、導演",
         "unit": 11,
         "example": "The director has the most to lose.",
         "exampleZh": "主任可能會損失最大。"
@@ -9644,7 +9644,7 @@ const toeicWordsDB = [
         "en": "directory",
         "kk": "[dɚˋɛktɚi]",
         "uk": "/dəˈrektəri/",
-        "zh": "n. 工商名錄、號碼簿、名址錄、電話號碼簿；adj. 指導的、諮詢的",
+        "zh": "n. 姓名住址簿、使用手冊、名址錄、電話號碼簿；adj. 指導的、諮詢的",
         "unit": 11,
         "example": "This command deletes files from the directory.",
         "exampleZh": "這一指令把文件從目錄中刪除。"
@@ -9664,7 +9664,7 @@ const toeicWordsDB = [
         "en": "disappear",
         "kk": "[͵dɪsəˋpɪr]",
         "uk": "/ˌdɪsəˈpɪə(r)/",
-        "zh": "vi. 消失、離開、不見、失蹤",
+        "zh": "vi. 消失、不見、失蹤、丟失",
         "unit": 11,
         "example": "They watched the bus disappear into the distance.",
         "exampleZh": "他們看著公車消失在遠方。"
@@ -9674,7 +9674,7 @@ const toeicWordsDB = [
         "en": "discard",
         "kk": "[dɪˋskɑrd]",
         "uk": "/dɪˈskɑːd/",
-        "zh": "vt. 拋棄、摒棄、扔掉、棄置；n. 被拋棄物、墊出的牌",
+        "zh": "vt. 扔掉、棄置、打出、墊；n. 被拋棄物、墊出的牌",
         "unit": 11,
         "example": "Einstein had the chutzpah to discard long-established theory.",
         "exampleZh": "愛因斯坦擁有拋棄早已既定的理論之膽識。"
@@ -9694,7 +9694,7 @@ const toeicWordsDB = [
         "en": "discipline",
         "kk": "[ˋdɪsəplən]",
         "uk": "/ˈdɪsəplɪn/",
-        "zh": "n. 紀律、風紀、懲罰、處分；vt. 懲罰、處分、訓練、管教",
+        "zh": "n. 教養、紀律、風紀、懲罰；vt. 懲罰、處分",
         "unit": 11,
         "example": "Discipline was the new coach's secret weapon.",
         "exampleZh": "嚴格的訓練是這位新教練的秘密武器。"
@@ -9714,7 +9714,7 @@ const toeicWordsDB = [
         "en": "discount",
         "kk": "[dɪˋskaʊnt]",
         "uk": "/ˈdɪskaʊnt/",
-        "zh": "n. 折扣、減價、貼現率；adj. 打折的、減價出售的；vt. 打折扣、打折、減價、不重視",
+        "zh": "n. 減價、折扣、貼現率；adj. 打折的、減價出售的；vt. 打折、減價、不重視、忽視",
         "unit": 11,
         "example": "Do you give any discount?",
         "exampleZh": "你們打折嗎？"
@@ -9744,7 +9744,7 @@ const toeicWordsDB = [
         "en": "discouragement",
         "kk": "[dɪˋskɝɪdʒmənt]",
         "uk": "/dɪsˈkʌrɪdʒmənt/",
-        "zh": "n. 沮喪、氣餒、灰心、令人氣餒的事物",
+        "zh": "n. 沮喪、氣餒、洩氣、勸阻",
         "unit": 11,
         "example": "One discouragement to reading is that books are expensive.",
         "exampleZh": "讀書的一大障礙是書很貴。"
@@ -9754,7 +9754,7 @@ const toeicWordsDB = [
         "en": "discover",
         "kk": "[dɪˋskʌvɚ]",
         "uk": "/dɪˈskʌvə(r)/",
-        "zh": "vt. 發現、探索、找到、瞭解到",
+        "zh": "vt. 發現、找到、瞭解到、發覺",
         "unit": 11,
         "example": "It's exciting to discover traces of earlier civilizations.",
         "exampleZh": "發現早期文明的痕跡是令人興奮的。"
@@ -9764,7 +9764,7 @@ const toeicWordsDB = [
         "en": "discuss",
         "kk": "[dɪˋskʌs]",
         "uk": "/dɪˈskʌs/",
-        "zh": "vt. 討論、交流、辯論、詳述",
+        "zh": "vt. 討論、辯論、詳述、論述",
         "unit": 11,
         "example": "They had important matters to discuss.",
         "exampleZh": "他們有重要的事情要討論。"
@@ -9774,7 +9774,7 @@ const toeicWordsDB = [
         "en": "discussion",
         "kk": "[dɪˋskʌʃən]",
         "uk": "/dɪˈskʌʃ(ə)n/",
-        "zh": "n. 討論、交流、論述、詳述",
+        "zh": "n. 討論、論述、詳述、談話",
         "unit": 11,
         "example": "The time for discussion is past.",
         "exampleZh": "討論的時間已過。"
@@ -9784,7 +9784,7 @@ const toeicWordsDB = [
         "en": "disease",
         "kk": "[dɪˋziz]",
         "uk": "/dɪˈziːz/",
-        "zh": "n. 病、疾病、病害、弊病；v. 使生病、使不健全、傳染、使……有病",
+        "zh": "n. 病、疾病、病害、弊病；v. 傳染、使……有病",
         "unit": 11,
         "example": "Disease often goes with poverty.",
         "exampleZh": "疾病與貧窮常常相伴而生。"
@@ -9814,7 +9814,7 @@ const toeicWordsDB = [
         "en": "dismiss",
         "kk": "[dɪˋsmɪs]",
         "uk": "/dɪsˈmɪs/",
-        "zh": "vt. 讓⋯離開、把⋯打發走、開除、解僱",
+        "zh": "vt. 解散、遣散、解雇、開除",
         "unit": 11,
         "example": "I think we can safely dismiss their objections.",
         "exampleZh": "我認為我們對他們的異議完全可以不予理會。"
@@ -9824,7 +9824,7 @@ const toeicWordsDB = [
         "en": "dispense",
         "kk": "[dɪˋspɛns]",
         "uk": "/dɪˈspens/",
-        "zh": "vt. 免除、省掉、發放、分配",
+        "zh": "vt. 分配、執行、配、發放",
         "unit": 11,
         "example": "Can we dispense with the formalities?",
         "exampleZh": "我們可以免去這些客套嗎？"
@@ -9834,7 +9834,7 @@ const toeicWordsDB = [
         "en": "display",
         "kk": "[dɪˋsple]",
         "uk": "/dɪˈspleɪ/",
-        "zh": "vt. 陳列、展出、展示、顯露；n. 展覽、陳列、表演、顯示",
+        "zh": "vt. 展示、陳列、顯露、表現；n. 展覽、陳列、表演、顯示",
         "unit": 11,
         "example": "These statistics display a definite trend.",
         "exampleZh": "這些統計資料表現出一種明顯的趨勢。"
@@ -9844,7 +9844,7 @@ const toeicWordsDB = [
         "en": "disposal",
         "kk": "[dɪˋspozəl]",
         "uk": "/dɪˈspəʊz(ə)l/",
-        "zh": "n. 處理、處置、清除、變賣",
+        "zh": "n. 處理、處置權、清除、變賣",
         "unit": 11,
         "example": "Congress passed a law that regulates the disposal of waste.",
         "exampleZh": "國會透過了一條管理廢物處理的法律。"
@@ -9854,7 +9854,7 @@ const toeicWordsDB = [
         "en": "dispose",
         "kk": "[dɪˋspoz]",
         "uk": "/dɪˈspəʊz/",
-        "zh": "v. 處理、放置、安排、使易於",
+        "zh": "v. 配置、處置、處理、放置",
         "unit": 11,
         "example": "Obviously we ask all our customers to dispose of litter responsibly.",
         "exampleZh": "顯然，我們要求所有的顧客負責任地處理垃圾。"
@@ -9864,7 +9864,7 @@ const toeicWordsDB = [
         "en": "dispute",
         "kk": "[dɪˋspjut]",
         "uk": "/dɪˈspjuːt/",
-        "zh": "n. 爭論、爭執、辯論、糾紛；vt. 爭論、爭執、對……提出質疑、否認",
+        "zh": "n. 爭論、辯論、糾紛；vt. 對……提出質疑、否認、爭論、辯論",
         "unit": 11,
         "example": "They supported their sisters in the dispute.",
         "exampleZh": "在爭論中，她們支援自己的姐妹。"
@@ -9914,7 +9914,7 @@ const toeicWordsDB = [
         "en": "distract",
         "kk": "[dɪˋstrækt]",
         "uk": "/dɪˈstrækt/",
-        "zh": "vt. 轉移、分散、使分心、使轉移注意力",
+        "zh": "vt. 轉移、使分心、使轉移注意力、使困惑",
         "unit": 11,
         "example": "It was another attempt to distract attention from the truth.",
         "exampleZh": "這又是企圖分散人們對事實真相的注意力。"
@@ -9934,7 +9934,7 @@ const toeicWordsDB = [
         "en": "disturb",
         "kk": "[dɪˋstɝb]",
         "uk": "/dɪˈstɜːb/",
-        "zh": "vt. 打擾、妨礙、使焦慮、使煩惱",
+        "zh": "vt. 妨礙、打擾、使焦慮、使煩惱",
         "unit": 11,
         "example": "I didn't like to disturb you.",
         "exampleZh": "我本不願打攪你。"
@@ -9944,7 +9944,7 @@ const toeicWordsDB = [
         "en": "diverse",
         "kk": "[daɪˋvɝs]",
         "uk": "/daɪˈvɜːs/",
-        "zh": "adj. 不同的、多元的、各式各樣的",
+        "zh": "adj. 互異的、多變化的、不同的、各式各樣的",
         "unit": 11,
         "example": "Cuba is a composite of diverse traditions and people.",
         "exampleZh": "古巴是一個不同傳統和民族的融合體。"
@@ -9964,7 +9964,7 @@ const toeicWordsDB = [
         "en": "diversity",
         "kk": "[dɪˋvɝsɪti]",
         "uk": "/daɪˈvɜːsəti/",
-        "zh": "n. 差異、不同點、多樣性、多樣化",
+        "zh": "n. 差異、多樣性、多樣化、不同",
         "unit": 11,
         "example": "Two of our greatest strengths are diversity and community.",
         "exampleZh": "我們的兩個最大優點是多樣性和團體精神。"
@@ -9974,7 +9974,7 @@ const toeicWordsDB = [
         "en": "divert",
         "kk": "[daɪˋvɝt]",
         "uk": "/daɪˈvɜːt/",
-        "zh": "vt. 轉向、轉移、使轉向、使繞道",
+        "zh": "vt. 轉向、改道、使分心、使轉向",
         "unit": 11,
         "example": "Planes can be diverted.",
         "exampleZh": "飛機可以改道。"
@@ -10014,7 +10014,7 @@ const toeicWordsDB = [
         "en": "document",
         "kk": "[ˋdɑkjəmɛnt]",
         "uk": "/ˈdɒkjumənt/",
-        "zh": "n. 公文、文件、檔案、文獻；vt. 記錄、記載",
+        "zh": "n. 證件、檔案、公文、文獻；vt. 記錄、記載",
         "unit": 12,
         "example": "The document bore her signature.",
         "exampleZh": "檔案上有她的簽字。"
@@ -10034,7 +10034,7 @@ const toeicWordsDB = [
         "en": "domestic",
         "kk": "[dəˋmɛstɪk]",
         "uk": "/dəˈmestɪk/",
-        "zh": "adj. 家庭的、國內的、本國的、家用的；n. 家庭糾紛、家庭矛盾、傭人、家僕",
+        "zh": "adj. 國內的、本國的、家用的、家庭的；n. 家庭糾紛、家庭矛盾、傭人、家僕",
         "unit": 12,
         "example": "It was a scene of such domestic bliss.",
         "exampleZh": "這是一幕家庭美滿的場景。"
@@ -10044,7 +10044,7 @@ const toeicWordsDB = [
         "en": "dominate",
         "kk": "[ˋdɑmə͵net]",
         "uk": "/ˈdɒmɪneɪt/",
-        "zh": "vt. 支配、統治、在……中佔首要地位、俯視",
+        "zh": "vt. 支配、統治、控制、在……中佔首要地位",
         "unit": 12,
         "example": "The big companies dominate the lower price points.",
         "exampleZh": "大公司在低端價格領域占主導地位。"
@@ -10054,7 +10054,7 @@ const toeicWordsDB = [
         "en": "donate",
         "kk": "[ˋdo͵net]",
         "uk": "/dəʊˈneɪt/",
-        "zh": "vt. 捐獻、捐款、捐贈、贈送",
+        "zh": "vt. 捐獻、捐贈、贈送、獻",
         "unit": 12,
         "example": "They should donate at the registration point.",
         "exampleZh": "他們應該在註冊登記處捐款。"
@@ -10074,7 +10074,7 @@ const toeicWordsDB = [
         "en": "dot",
         "kk": "[dɑt]",
         "uk": "/dɒt/",
-        "zh": "n. 點、小圓點、點狀物、頓音記號；vt. 打點、加點、散佈於、遍佈",
+        "zh": "n. 小圓點、點、點狀物、頓音記號；vt. 點、加點、散佈於、遍佈",
         "unit": 12,
         "example": "The weaker dot-coms have collapsed.",
         "exampleZh": "實力較弱的網路公司倒閉了。"
@@ -10094,7 +10094,7 @@ const toeicWordsDB = [
         "en": "doubt",
         "kk": "[daʊt]",
         "uk": "/daʊt/",
-        "zh": "vt. 懷疑、揣測、不確定、不信任；n. 懷疑、不確定",
+        "zh": "vt. 懷疑、不確定、不信任；n. 懷疑、不確定",
         "unit": 12,
         "example": "There was little doubt in my mind.",
         "exampleZh": "我心裡幾乎沒有疑問。"
@@ -10134,7 +10134,7 @@ const toeicWordsDB = [
         "en": "downtown",
         "kk": "[ˋdaʊnˋtaʊn]",
         "uk": "/ˌdaʊnˈtaʊn/",
-        "zh": "adj. 市中心的、商業區的；adv. 向（在）市中心、向（在）城鎮商業中心區；n. 商業區、鬧區、城鎮的中心區、鬧市區",
+        "zh": "adj. 市中心的、商業區的；adv. 向（在）市中心、向（在）城鎮商業中心區；n. 城鎮的中心區、商業區、鬧市區",
         "unit": 12,
         "example": "Parking can be tricky downtown.",
         "exampleZh": "在市中心停車會很難。"
@@ -10144,7 +10144,7 @@ const toeicWordsDB = [
         "en": "downward",
         "kk": "[ˋdaʊnwɚd]",
         "uk": "/ˈdaʊnwəd/",
-        "zh": "adj. 向下的、下降的；adv. 向下、日趨沒落地、向下地、下降地",
+        "zh": "adj. 向下的、下降的；adv. 向下地、下降地",
         "unit": 12,
         "example": "Inflation is moving firmly downward.",
         "exampleZh": "通貨膨脹在穩步下降。"
@@ -10154,7 +10154,7 @@ const toeicWordsDB = [
         "en": "draft",
         "kk": "[dræft]",
         "uk": "/drɑːft/",
-        "zh": "n. 草稿、手稿、草案、匯票；vt. 起草、草擬、選派、派遣；adj. 馱重物的、負重的、散裝的、草擬的",
+        "zh": "n. 草稿、草案、匯票、通風氣流；vt. 起草、草擬、選派、派遣；adj. 馱重物的、負重的、散裝的、草擬的",
         "unit": 12,
         "example": "I've made a rough draft of the letter.",
         "exampleZh": "我已經寫好這封信的草稿。"
@@ -10174,7 +10174,7 @@ const toeicWordsDB = [
         "en": "drastic",
         "kk": "[ˋdræstɪk]",
         "uk": "/ˈdræstɪk/",
-        "zh": "adj. 激烈的、猛烈的、極端的",
+        "zh": "adj. 激烈的、極端的",
         "unit": 12,
         "example": "Talk to me before you do anything drastic.",
         "exampleZh": "你採取任何重大行動之前要跟我談談。"
@@ -10224,7 +10224,7 @@ const toeicWordsDB = [
         "en": "drift",
         "kk": "[drɪft]",
         "uk": "/drɪft/",
-        "zh": "vi. 漂流、漂、飄移、任其自然地（或不知不覺地）進入；n. 流動、趨勢、吹積物、雪堆",
+        "zh": "vi. 漂流、飄移、任其自然地（或不知不覺地）進入、流浪；n. 漂移、流動、趨勢、吹積物",
         "unit": 12,
         "example": "Do you catch my drift ?",
         "exampleZh": "你明白我的大意嗎？"
@@ -10254,7 +10254,7 @@ const toeicWordsDB = [
         "en": "due",
         "kk": "[du]",
         "uk": "/djuː/",
-        "zh": "adj. 應支付的、到期的、預期的、應有的；adv. 正對著；n. 應付款、稅金、應得、所得",
+        "zh": "adj. 到期的、預期的、應有的、應得的；adv. 正對著；n. 應得、所得、會費",
         "unit": 12,
         "example": "She's due for promotion soon.",
         "exampleZh": "她很快該晉升了。"
@@ -10284,7 +10284,7 @@ const toeicWordsDB = [
         "en": "duration",
         "kk": "[ˋdʊrˋeʃən]",
         "uk": "/djuˈreɪʃn/",
-        "zh": "n. 持久、持續期間、持續、持續時間",
+        "zh": "n. 持續、持久、持續時間",
         "unit": 12,
         "example": "The duration of previous geologic periods was difficult to determine.",
         "exampleZh": "以前很難確定地質期的持續時間。"
@@ -10294,7 +10294,7 @@ const toeicWordsDB = [
         "en": "during",
         "kk": "[ˋdʊrɪŋ]",
         "uk": "/ˈdjʊərɪŋ/",
-        "zh": "prep. 在⋯的整個期間、在……期間、在……期間的某個時候",
+        "zh": "prep. 在…期間、在……期間、在……期間的某個時候",
         "unit": 12,
         "example": "Eggs were rationed during the war.",
         "exampleZh": "戰爭期間雞蛋實施配給制。"
@@ -10304,7 +10304,7 @@ const toeicWordsDB = [
         "en": "duty",
         "kk": "[ˋduti]",
         "uk": "/ˈdjuːti/",
-        "zh": "n. 職務、勤務、責任、義務",
+        "zh": "n. 義務、關稅、責任、上班",
         "unit": 12,
         "example": "He was recalled to military duty.",
         "exampleZh": "他被召回執行軍事任務。"
@@ -10314,7 +10314,7 @@ const toeicWordsDB = [
         "en": "dynamic",
         "kk": "[daɪˋnæmɪk]",
         "uk": "/daɪˈnæmɪk/",
-        "zh": "adj. 動力的、充滿活力的、精力充沛的、動態的；n. 動力、活力、相互作用、動態",
+        "zh": "adj. 動態的、充滿活力的、精力充沛的、發展變化的；n. 動力、活力、相互作用、動態",
         "unit": 12,
         "example": "He seemed a dynamic and energetic leader.",
         "exampleZh": "他看來是個富有創新力與活力的領導。"
@@ -10324,7 +10324,7 @@ const toeicWordsDB = [
         "en": "each",
         "kk": "[itʃ]",
         "uk": "/iːtʃ/",
-        "zh": "det. 每、各、每一；pron. 各個、每個；adj. 各、每、每個的、各自的；adv. 給每個、對各個",
+        "zh": "det. 每個、每、各、每一；pron. 各自、每個、各個；adj. 每個的、各自的；adv. 給每個、對各個",
         "unit": 12,
         "example": "We're crazy about each other.",
         "exampleZh": "我們都為彼此瘋狂。"
@@ -10334,7 +10334,7 @@ const toeicWordsDB = [
         "en": "eager",
         "kk": "[ˋiɡɚ]",
         "uk": "/ˈiːɡə(r)/",
-        "zh": "adj. 熱心的、熱切的、渴望的、渴求的",
+        "zh": "adj. 渴望的、熱切的、渴求的",
         "unit": 12,
         "example": "He was eager to get into politics.",
         "exampleZh": "他渴望從政。"
@@ -10344,7 +10344,7 @@ const toeicWordsDB = [
         "en": "earn",
         "kk": "[ɝn]",
         "uk": "/ɜːn/",
-        "zh": "vt. 掙得、博得、賺得、掙錢",
+        "zh": "vt. 賺取、獲得、賺得、掙錢",
         "unit": 12,
         "example": "'How much (money) does she earn?",
         "exampleZh": "“她賺多少錢？”"
@@ -10354,7 +10354,7 @@ const toeicWordsDB = [
         "en": "earnings",
         "kk": "[ˋɝnɪŋz]",
         "uk": "/ˈɜːnɪŋz/",
-        "zh": "n. 收入、薪資、薪水、工資",
+        "zh": "n. 收入、工資、薪水、利潤",
         "unit": 12,
         "example": "He trebled his earnings in two years.",
         "exampleZh": "他在兩年間收入增加了兩倍。"
@@ -10364,7 +10364,7 @@ const toeicWordsDB = [
         "en": "ease",
         "kk": "[iz]",
         "uk": "/iːz/",
-        "zh": "n. 舒適、悠閒、容易、自在；vt. 減輕、緩和、放鬆、緩緩移動",
+        "zh": "n. 容易、舒適、自在；vt. 減輕、緩和、放鬆、緩緩移動",
         "unit": 12,
         "example": "This should help ease the pain.",
         "exampleZh": "這應該有助於減輕疼痛。"
@@ -10374,7 +10374,7 @@ const toeicWordsDB = [
         "en": "east",
         "kk": "[ist]",
         "uk": "/iːst/",
-        "zh": "n. 東、東部、東方（指亞洲南部和東部，包括印度、中國和日本）；adj. 近東的、面朝東的、東部的、東風的；adv. 向東、在東方",
+        "zh": "n. 東、東部、東方（指亞洲南部和東部，包括印度、中國和日本）；adj. 東邊的、近東的、面朝東的、東部的；adv. 向東、在東方",
         "unit": 12,
         "example": "They live on the east coast.",
         "exampleZh": "他們住在東海岸。"
@@ -10384,7 +10384,7 @@ const toeicWordsDB = [
         "en": "easy",
         "kk": "[ˋizi]",
         "uk": "/ˈiːzi/",
-        "zh": "adj. 簡單的、輕易的、容易的、不費力的；adv. 小心、容易地、悠閒地",
+        "zh": "adj. 容易的、簡單的、不費力的、舒適的；adv. 小心、容易地、悠閒地",
         "unit": 12,
         "example": "The problem is anything but easy.",
         "exampleZh": "問題絕非易事。"
@@ -10404,7 +10404,7 @@ const toeicWordsDB = [
         "en": "economical",
         "kk": "[͵ɛkəˋnɑmɪkəl]",
         "uk": "/ˌiːkəˈnɒmɪk(ə)l/",
-        "zh": "adj. 經濟的、節儉的、經濟實惠的、節約的",
+        "zh": "adj. 經濟的、節約的、經濟實惠的、簡練的",
         "unit": 12,
         "example": "Fans of electric cars say they are clean, quiet, and economical.",
         "exampleZh": "電動車愛好者說電動車無汙染，無噪音，而且經濟。"
@@ -10424,7 +10424,7 @@ const toeicWordsDB = [
         "en": "economy",
         "kk": "[ɪˋkɑnəmi]",
         "uk": "/ɪˈkɒnəmi/",
-        "zh": "n. 節約、經濟、節省、簡練；adj. 廉價的、經濟的、經濟實惠的",
+        "zh": "n. 經濟、經濟體、節省、簡練；adj. 經濟實惠的",
         "unit": 12,
         "example": "The economy continues to grow.",
         "exampleZh": "經濟持續增長。"
@@ -10434,7 +10434,7 @@ const toeicWordsDB = [
         "en": "edge",
         "kk": "[ɛdʒ]",
         "uk": "/edʒ/",
-        "zh": "n. 稜、邊緣、邊、鋒；vi. 使漸進、徐徐地移動、緩慢地移動、給……加邊",
+        "zh": "n. 邊緣、優勢、邊、鋒；vi. 緩慢地移動、給……加邊、險勝、用球拍邊擊球",
         "unit": 12,
         "example": "Be careful—it has a sharp edge.",
         "exampleZh": "小心——它有鋒利的邊緣。"
@@ -10454,7 +10454,7 @@ const toeicWordsDB = [
         "en": "editor",
         "kk": "[ˋɛdətɚ]",
         "uk": "/ˈedɪtə(r)/",
-        "zh": "n. 編輯、記者、剪輯師、編輯程式",
+        "zh": "n. 編者、校訂者、編輯、記者",
         "unit": 12,
         "example": "We're losing a first-rate editor in Jen.",
         "exampleZh": "我們即將失去珍這位一流的編輯。"
@@ -10474,7 +10474,7 @@ const toeicWordsDB = [
         "en": "education",
         "kk": "[͵ɛdʒəˋkeʃən]",
         "uk": "/ˌedʒuˈkeɪʃ(ə)n/",
-        "zh": "n. 教育、培養、訓練、教育機構",
+        "zh": "n. 教育、教養、培養、訓練",
         "unit": 12,
         "example": "Education is a top priority.",
         "exampleZh": "教育是當務之急。"
@@ -10484,7 +10484,7 @@ const toeicWordsDB = [
         "en": "effect",
         "kk": "[ɪˋfɛkt]",
         "uk": "/ɪˈfekt/",
-        "zh": "n. 效果、效力、作用、影響；vt. 造成、產生、實現、引起",
+        "zh": "n. 效果、影響、作用、印象；vt. 實現、引起",
         "unit": 12,
         "example": "The effect has proved hard to reproduce.",
         "exampleZh": "這種效果經證實很難再造。"
@@ -10504,7 +10504,7 @@ const toeicWordsDB = [
         "en": "efficiency",
         "kk": "[ɪˋfɪʃənsi]",
         "uk": "/ɪˈfɪʃ(ə)nsi/",
-        "zh": "n. 效率、效能、功效、功率",
+        "zh": "n. 效率、效能、功率",
         "unit": 12,
         "example": "Upgraded automation equipment significantly improved manufacturing efficiency.",
         "exampleZh": "升級後的自動化設備大幅提升了製造生產效率。"
@@ -10524,7 +10524,7 @@ const toeicWordsDB = [
         "en": "effort",
         "kk": "[ˋɛfɚt]",
         "uk": "/ˈefət/",
-        "zh": "n. 努力、盡力、艱難的嘗試、力氣",
+        "zh": "n. 努力、嘗試、艱難的嘗試、力氣",
         "unit": 12,
         "example": "You should put more effort into your work.",
         "exampleZh": "你應該更加努力地工作。"
@@ -10534,7 +10534,7 @@ const toeicWordsDB = [
         "en": "either",
         "kk": "[ˋiðɚ]",
         "uk": "/ˈaɪðə(r)/",
-        "zh": "conj. 或者、要麼、兩者都、既；pron. 任何一個、任意一個、兩者都；adv. 也、亦、而且、還；det. 每個、各方；adj. 任一的、每個的、各方的",
+        "zh": "conj. 或者、要麼、兩者都、既；pron. 任意一個、兩者都；adv. 也、亦、而且、還；det. 任一、每個、各方；adj. 每個的、各方的",
         "unit": 12,
         "example": "Pete can't go and I can't either.",
         "exampleZh": "皮特不能去，我也不能。"
@@ -10554,7 +10554,7 @@ const toeicWordsDB = [
         "en": "elaborate",
         "kk": "[ɪˋlæbrət]",
         "uk": "/ɪˈlæbərət/",
-        "zh": "adj. 複雜的、詳盡的、精心製作的；v. 精心製作、詳盡闡述、詳細說明",
+        "zh": "adj. 複雜的、詳盡的、精心製作的；v. 詳細說明、詳盡闡述、精心製作",
         "unit": 12,
         "example": "She went on to elaborate her argument.",
         "exampleZh": "她進而詳盡闡述了她的論點。"
@@ -10564,7 +10564,7 @@ const toeicWordsDB = [
         "en": "elder",
         "kk": "[ˋɛldɚ]",
         "uk": "/ˈeldə(r)/",
-        "zh": "adj. 年長的、年齡較大的、資格老的；n. 長者、長輩、元老、長老",
+        "zh": "adj. 年齡較大的、資格老的；n. 長者、長輩、元老、長老",
         "unit": 12,
         "example": "He is her elder by several years.",
         "exampleZh": "他比她年長几歲。"
@@ -10584,7 +10584,7 @@ const toeicWordsDB = [
         "en": "election",
         "kk": "[ɪˋlɛkʃən]",
         "uk": "/ɪˈlekʃ(ə)n/",
-        "zh": "n. 選舉、推選、當選、選舉權",
+        "zh": "n. 選舉、選擇、當選、選舉權",
         "unit": 12,
         "example": "They held a snap election.",
         "exampleZh": "他們臨時舉行了選舉。"
@@ -10594,7 +10594,7 @@ const toeicWordsDB = [
         "en": "electric",
         "kk": "[ɪˋlɛktrɪk]",
         "uk": "/ɪˈlektrɪk/",
-        "zh": "adj. 電的、導電的、令人激動的、電子擴音的；n. 電路系統、電氣交通工具",
+        "zh": "adj. 電的、電動的、令人激動的、電子擴音的；n. 電路系統、電氣交通工具",
         "unit": 12,
         "example": "He invented the first electric clock.",
         "exampleZh": "他發明了第一個電動鍾。"
@@ -10624,7 +10624,7 @@ const toeicWordsDB = [
         "en": "electronic",
         "kk": "[͵ɪl͵ɛkˋtrɑnɪk]",
         "uk": "/ɪˌlekˈtrɒnɪk/",
-        "zh": "adj. 電子的、電子操縱的、電子學的",
+        "zh": "adj. 電子的、電子學的",
         "unit": 12,
         "example": "The electronic dictionary included some animations.",
         "exampleZh": "電子詞典中有一些動畫片。"
@@ -10644,7 +10644,7 @@ const toeicWordsDB = [
         "en": "elegant",
         "kk": "[ˋɛləɡənt]",
         "uk": "/ˈelɪɡənt/",
-        "zh": "adj. 優雅的、高雅的、舉止優雅的、精美的",
+        "zh": "adj. 優美的、漂亮的、高雅的、舉止優雅的",
         "unit": 12,
         "example": "She was tall and elegant.",
         "exampleZh": "她身材修長，優雅大方。"
@@ -10654,7 +10654,7 @@ const toeicWordsDB = [
         "en": "element",
         "kk": "[ˋɛləmənt]",
         "uk": "/ˈelɪmənt/",
-        "zh": "n. 元素、構成、基本部分、要素",
+        "zh": "n. 元素、要素、基本部分、有點",
         "unit": 12,
         "example": "The kettle needs a new element.",
         "exampleZh": "這個電壺需要一根新電熱絲。"
@@ -10674,7 +10674,7 @@ const toeicWordsDB = [
         "en": "elementary",
         "kk": "[͵ɛləˋmɛntri]",
         "uk": "/ˌelɪˈmentri/",
-        "zh": "adj. 基本的、初級的、簡單的、基礎的",
+        "zh": "adj. 基本的、初級的、基礎的、簡單的",
         "unit": 12,
         "example": "Literacy now includes elementary computer skills.",
         "exampleZh": "有文化現在包括基本的計算機技能。"
@@ -10684,7 +10684,7 @@ const toeicWordsDB = [
         "en": "elevate",
         "kk": "[ˋɛlə͵vet]",
         "uk": "/ˈelɪveɪt/",
-        "zh": "vt. 舉起、抬起、提拔、提升",
+        "zh": "vt. 提高、振奮、升職、提拔",
         "unit": 12,
         "example": "I built a platform to elevate the bed.",
         "exampleZh": "我搭了一個臺子把床抬高了。"
@@ -10714,7 +10714,7 @@ const toeicWordsDB = [
         "en": "eligible",
         "kk": "[ˋɛlədʒəbəl]",
         "uk": "/ˈelɪdʒəb(ə)l/",
-        "zh": "adj. 有資格當選的、法律上合格的、符合條件的、合格的；n. 合格者、適任者",
+        "zh": "adj. 有資格當選的、合格的、符合條件的、合適的；n. 合格者、適任者",
         "unit": 12,
         "example": "They are not eligible for sick pay.",
         "exampleZh": "他們沒有資格領病假工資。"
@@ -10724,7 +10724,7 @@ const toeicWordsDB = [
         "en": "eliminate",
         "kk": "[ɪˋlɪmə͵net]",
         "uk": "/ɪˈlɪmɪneɪt/",
-        "zh": "vt. 排除、消滅、剔除、根除",
+        "zh": "vt. 排除、消除、剔除、根除",
         "unit": 12,
         "example": "This diet claims to eliminate toxins from the body.",
         "exampleZh": "這種飲食據稱具有排除體內毒素的作用。"
@@ -10744,7 +10744,7 @@ const toeicWordsDB = [
         "en": "elite",
         "kk": "[ɪˋlit]",
         "uk": "/eɪˈliːt; ɪˈliːt/",
-        "zh": "n. 精華、菁英、權力集團、上層人士；adj. 出類拔萃的、精銳的",
+        "zh": "n. 精英、權力集團、上層人士、尖子；adj. 出類拔萃的、精銳的",
         "unit": 12,
         "example": "Power is largely concentrated in the hands of a small elite.",
         "exampleZh": "權力主要集中在少數精英人物的手裡。"
@@ -10754,7 +10754,7 @@ const toeicWordsDB = [
         "en": "else",
         "kk": "[ɛls]",
         "uk": "/els/",
-        "zh": "adv. 其他、另外、此外、否則；adj. 其他的、另外的",
+        "zh": "adv. 其他、否則、此外、要不然；adj. 其他的、另外的",
         "unit": 12,
         "example": "Everyone else was getting sloshed.",
         "exampleZh": "其他人都喝得酩酊大醉。"
@@ -10774,7 +10774,7 @@ const toeicWordsDB = [
         "en": "embark",
         "kk": "[ɛmˋbɑrk]",
         "uk": "/ɪmˈbɑːk/",
-        "zh": "vi. 從事、著手、上船、上飛機",
+        "zh": "vi. 上船、從事、上飛機、著手",
         "unit": 12,
         "example": "Now it's time to embark.",
         "exampleZh": "現在是時候出發了。"
@@ -10784,7 +10784,7 @@ const toeicWordsDB = [
         "en": "embrace",
         "kk": "[ɛˋmbres]",
         "uk": "/ɪmˈbreɪs/",
-        "zh": "vt. 擁抱、包括、欣然接受、樂意採納；n. 擁抱、接受、信奉",
+        "zh": "vt. 擁抱、欣然接受、樂意採納、包括；n. 擁抱、接受、信奉",
         "unit": 12,
         "example": "She detached herself from his embrace.",
         "exampleZh": "她掙脫了他的擁抱。"
@@ -10804,7 +10804,7 @@ const toeicWordsDB = [
         "en": "emergency",
         "kk": "[ɪˋmɝdʒənsi]",
         "uk": "/ɪˈmɜːdʒənsi/",
-        "zh": "n. 緊急情況、突然事件、突發事件、急症病人；adj. 緊急情況下的、應急的",
+        "zh": "n. 緊急情況、急救、突發事件、急症病人；adj. 緊急情況下的、應急的",
         "unit": 12,
         "example": "The government had to take emergency action.",
         "exampleZh": "政府只得採取緊急措施。"
@@ -10844,7 +10844,7 @@ const toeicWordsDB = [
         "en": "emphasis",
         "kk": "[ˋɛmfəsəs]",
         "uk": "/ˈemfəsɪs/",
-        "zh": "n. 重要性、重點強調、重讀、強調",
+        "zh": "n. 強調、重視、重點、重要性",
         "unit": 12,
         "example": "The course has a vocational emphasis.",
         "exampleZh": "這門課程著重職業培訓。"
@@ -10854,7 +10854,7 @@ const toeicWordsDB = [
         "en": "emphasize",
         "kk": "[ˋɛmfə͵saɪz]",
         "uk": "/ˈemfəsaɪz/",
-        "zh": "vt. 強調、重視、著重、重讀",
+        "zh": "vt. 強調、著重、重讀、使突出",
         "unit": 12,
         "example": "He flourished the glass to emphasize the point.",
         "exampleZh": "他揮舞著杯子來強調這一點。"
@@ -10864,7 +10864,7 @@ const toeicWordsDB = [
         "en": "employ",
         "kk": "[ɛmˋplɔɪ]",
         "uk": "/ɪmˈplɔɪ/",
-        "zh": "vt. 僱用、使用、利用、忙於；n. 受僱",
+        "zh": "vt. 雇用、使用、僱用、利用；n. 受僱",
         "unit": 12,
         "example": "How many people does the company employ?",
         "exampleZh": "這個公司僱用了多少人？"
@@ -10874,7 +10874,7 @@ const toeicWordsDB = [
         "en": "employee",
         "kk": "[ɛmˋplɔɪi]",
         "uk": "/ɪmˈplɔɪiː/",
-        "zh": "n. 員工、僱員",
+        "zh": "n. 雇員、員工、僱員",
         "unit": 12,
         "example": "He is an employee of Fuji Bank.",
         "exampleZh": "他是富士銀行的一位僱員。"
@@ -10884,7 +10884,7 @@ const toeicWordsDB = [
         "en": "employer",
         "kk": "[ɛmˋplɔɪɚ]",
         "uk": "/ɪmˈplɔɪə(r)/",
-        "zh": "n. 雇主、僱主",
+        "zh": "n. 雇主、雇用者、僱主",
         "unit": 12,
         "example": "He had been sent to Rome by his employer.",
         "exampleZh": "他被僱主派到羅馬去了。"
@@ -10894,7 +10894,7 @@ const toeicWordsDB = [
         "en": "employment",
         "kk": "[ɛmˋplɔɪmənt]",
         "uk": "/ɪmˈplɔɪmənt/",
-        "zh": "n. 僱用、受僱、使用、利用",
+        "zh": "n. 就業、雇用、僱用、使用",
         "unit": 12,
         "example": "Employment is a very sensitive issue.",
         "exampleZh": "就業是一個非常敏感的問題。"
@@ -10914,7 +10914,7 @@ const toeicWordsDB = [
         "en": "enable",
         "kk": "[ɛˋnebəl]",
         "uk": "/ɪˈneɪb(ə)l/",
-        "zh": "vt. 使能夠、賦予⋯能力、使可能、啟用",
+        "zh": "vt. 使能夠、啟用、使可能、啟動",
         "unit": 12,
         "example": "The new test should enable doctors to detect the disease early.",
         "exampleZh": "新的檢驗使醫生能在早期發現該種疾病。"
@@ -10934,7 +10934,7 @@ const toeicWordsDB = [
         "en": "enclosure",
         "kk": "[ɛnˋkloʒɚ]",
         "uk": "/ɪnˈkləʊʒə(r)/",
-        "zh": "n. 圍住、封入、圍場、圍牆",
+        "zh": "n. 封入、圈地、圍牆、附件",
         "unit": 12,
         "example": "Within those precincts, within that enclosure, there's a large, open courtyard.",
         "exampleZh": "在這些區域內，在圍牆內，有一個大的、開放的庭院。"
@@ -10944,7 +10944,7 @@ const toeicWordsDB = [
         "en": "encounter",
         "kk": "[ɪnˋkaʊntɚ]",
         "uk": "/ɪnˈkaʊntə(r)/",
-        "zh": "vt. 遭遇、遇到、偶遇、邂逅；n. 遭遇、衝突、偶遇、邂逅",
+        "zh": "vt. 遭遇、偶遇、邂逅；n. 偶遇、邂逅、經歷、體驗",
         "unit": 12,
         "example": "Did you encounter anyone in the building?",
         "exampleZh": "你在那棟大樓裡偶然遇到什麼人了嗎？"
@@ -10954,7 +10954,7 @@ const toeicWordsDB = [
         "en": "encourage",
         "kk": "[ɛnˋkɝɪdʒ]",
         "uk": "/ɪnˈkʌrɪdʒ/",
-        "zh": "vt. 鼓勵、鼓舞、激勵、鼓動",
+        "zh": "vt. 鼓勵、促進、激勵、鼓動",
         "unit": 12,
         "example": "Parents encourage every activity imaginable.",
         "exampleZh": "父母鼓勵一切可以想像的活動。"
@@ -10964,7 +10964,7 @@ const toeicWordsDB = [
         "en": "encouragement",
         "kk": "[ɛnˋkɝɪdʒmənt]",
         "uk": "/ɪnˈkʌrɪdʒmənt/",
-        "zh": "n. 鼓勵、鼓舞",
+        "zh": "n. 鼓勵、獎勵、促進",
         "unit": 12,
         "example": "Her words were a great encouragement to them.",
         "exampleZh": "她的話對他們是極大的鼓舞。"
@@ -10984,7 +10984,7 @@ const toeicWordsDB = [
         "en": "endeavor",
         "kk": "[ɪnˋdɛvɚ]",
         "uk": "/ɪnˈdevə(r)/",
-        "zh": "n. 努力、盡力、嘗試、活動；v. 努力、力圖、盡力（通常後接不定式）",
+        "zh": "n. 盡力、努力、嘗試、活動；v. 努力、盡力（通常後接不定式）",
         "unit": 12,
         "example": "Photographing people is an artful endeavor.",
         "exampleZh": "人物攝影是一項富有藝術性的實踐。"
@@ -11014,7 +11014,7 @@ const toeicWordsDB = [
         "en": "energetic",
         "kk": "[͵ɛnɚˋdʒɛtɪk]",
         "uk": "/ˌenəˈdʒetɪk/",
-        "zh": "adj. 精力旺盛的、-精神飽滿的、精力充沛的、充滿活力的",
+        "zh": "adj. 精力充沛的、充滿活力的、積極的、劇烈的",
         "unit": 12,
         "example": "He was hardworking and energetic.",
         "exampleZh": "他很努力且精力充沛。"
@@ -11024,7 +11024,7 @@ const toeicWordsDB = [
         "en": "energy",
         "kk": "[ˋɛnɚdʒi]",
         "uk": "/ˈenədʒi/",
-        "zh": "n. 活力、幹勁、能力、力氣",
+        "zh": "n. 能量、精力、能力、力氣",
         "unit": 12,
         "example": "She's always full of energy.",
         "exampleZh": "她總是充滿活力。"
@@ -11054,7 +11054,7 @@ const toeicWordsDB = [
         "en": "engagement",
         "kk": "[ɛnˋɡedʒmənt]",
         "uk": "/ɪnˈɡeɪdʒmənt/",
-        "zh": "n. 訂婚、婚約、約會、約定",
+        "zh": "n. 訂婚、諾言、雇用、交戰",
         "unit": 12,
         "example": "They've broken off their engagement.",
         "exampleZh": "他們突然解除了婚約。"
@@ -11084,7 +11084,7 @@ const toeicWordsDB = [
         "en": "enhance",
         "kk": "[ɛnˋhæns]",
         "uk": "/ɪnˈhɑːns/",
-        "zh": "vt. 提高、升高、增強、改善",
+        "zh": "vt. 提高、增加、增強、改善",
         "unit": 12,
         "example": "Large paintings can enhance the feeling of space in small rooms.",
         "exampleZh": "大幅畫作能增加小房間的寬敞感。"
@@ -11104,7 +11104,7 @@ const toeicWordsDB = [
         "en": "enlargement",
         "kk": "[ɪnˋlɑrdʒmənt]",
         "uk": "/ɪnˈlɑːdʒmənt/",
-        "zh": "n. 擴大、擴展、增大、放大",
+        "zh": "n. 放大、擴大、增大、放大的照片",
         "unit": 12,
         "example": "There is insufficient space for enlargement of the buildings.",
         "exampleZh": "沒有足夠的空間擴建這些大樓。"
@@ -11124,7 +11124,7 @@ const toeicWordsDB = [
         "en": "enrich",
         "kk": "[ɛˋnrɪtʃ]",
         "uk": "/ɪnˈrɪtʃ/",
-        "zh": "vt. 使富裕、使豐富、使充實、使富有",
+        "zh": "vt. 使富裕、使豐富、使肥沃、使充實",
         "unit": 12,
         "example": "We work only to enrich others.",
         "exampleZh": "我們工作只是為了讓別人更富有。"
@@ -11134,7 +11134,7 @@ const toeicWordsDB = [
         "en": "enrichment",
         "kk": "[ɛˋnrɪtʃmənt]",
         "uk": "/ɪnˈrɪtʃmənt/",
-        "zh": "n. 致富、豐富、充實、改進",
+        "zh": "n. 致富、豐富、添加肥料、增強食品營養",
         "unit": 12,
         "example": "Professional development workshops foster intellectual enrichment for staff members.",
         "exampleZh": "專業進修工作坊促進了員工的心智成長與知識充實。"
@@ -11144,7 +11144,7 @@ const toeicWordsDB = [
         "en": "enroll",
         "kk": "[ɛˋnrol]",
         "uk": "/ɪnˈrəʊl/",
-        "zh": "vt. 記入名冊、被登記、登記、使加入；vi. 記入名冊、被登記、登記、註冊；v. 記入名冊、被登記",
+        "zh": "vt. 登記、使加入、把……記入名冊、招收；vi. 登記、註冊、報名、參加",
         "unit": 12,
         "example": "The school will enroll new students in August.",
         "exampleZh": "這所學校將於八月份招收新生。"
@@ -11174,7 +11174,7 @@ const toeicWordsDB = [
         "en": "entertain",
         "kk": "[͵ɛntɚˋten]",
         "uk": "/ˌentəˈteɪn/",
-        "zh": "vt. 娛樂、款待、使有興趣、使快樂",
+        "zh": "vt. 招待、款待、使有興趣、使快樂",
         "unit": 12,
         "example": "I don't like to entertain guests anymore.",
         "exampleZh": "我不再喜歡招待客人。"
@@ -11194,7 +11194,7 @@ const toeicWordsDB = [
         "en": "entertainment",
         "kk": "[͵ɛntɚˋtenmənt]",
         "uk": "/ˌentəˈteɪnmənt/",
-        "zh": "n. 演藝、餘興、娛樂、娛樂表演",
+        "zh": "n. 招待、款待、演藝界、娛樂",
         "unit": 12,
         "example": "It was typical family entertainment.",
         "exampleZh": "這是典型的家庭娛樂活動。"
@@ -11204,7 +11204,7 @@ const toeicWordsDB = [
         "en": "enthusiasm",
         "kk": "[ɪnˋθuzi͵æzəm]",
         "uk": "/ɪnˈθjuːziæzəm/",
-        "zh": "n. 熱忱、熱情、熱衷的活動、熱愛的事物",
+        "zh": "n. 熱心、熱情、熱忱、熱衷的活動",
         "unit": 12,
         "example": "I really admire your enthusiasm.",
         "exampleZh": "我確實欽佩你的熱情。"
@@ -11214,7 +11214,7 @@ const toeicWordsDB = [
         "en": "enthusiastic",
         "kk": "[ɪn͵θuziˋæstɪk]",
         "uk": "/ɪnˌθjuːziˈæstɪk/",
-        "zh": "adj. 熱忱的、熱血的、熱心的、熱情的",
+        "zh": "adj. 熱情的、熱烈的、熱心的",
         "unit": 12,
         "example": "He is an enthusiastic skier.",
         "exampleZh": "他是個熱情的滑雪愛好者。"
@@ -11244,7 +11244,7 @@ const toeicWordsDB = [
         "en": "entitle",
         "kk": "[ɛnˋtaɪtəl]",
         "uk": "/ɪnˈtaɪt(ə)l/",
-        "zh": "vt. 給⋯權力、給予（某人）權利、給（某人）資格、給......命名",
+        "zh": "vt. 給……權力、給予（某人）權利、給（某人）資格、給......命名",
         "unit": 12,
         "example": "This ticket does not entitle you to travel first class.",
         "exampleZh": "你拿這張票不能坐頭等艙。"
@@ -11264,7 +11264,7 @@ const toeicWordsDB = [
         "en": "entrance",
         "kk": "[ˋɛntrəns]",
         "uk": "/ˈentrəns/",
-        "zh": "n. 入口、門口、進口、進入；vt. 使入迷、使狂喜",
+        "zh": "n. 入口、進口、進入、進門；vt. 使入迷、使狂喜",
         "unit": 12,
         "example": "This entrance is in constant use.",
         "exampleZh": "此入口經常使用。"
@@ -11284,7 +11284,7 @@ const toeicWordsDB = [
         "en": "entry",
         "kk": "[ˋɛntri]",
         "uk": "/ˈentri/",
-        "zh": "n. 入場、參加、進入、加入",
+        "zh": "n. 進入、入場、入口、加入",
         "unit": 12,
         "example": "Entry to the museum is free.",
         "exampleZh": "這座博物館免費參觀。"
@@ -11294,7 +11294,7 @@ const toeicWordsDB = [
         "en": "environment",
         "kk": "[ɪnˋvaɪrənmənt]",
         "uk": "/ɪnˈvaɪrənmənt/",
-        "zh": "n. 環境、自然環境、生態環境、周圍狀況",
+        "zh": "n. 環境、周圍、自然環境、生態環境",
         "unit": 12,
         "example": "Children need a caring environment.",
         "exampleZh": "兒童需要一個充滿關懷的環境。"
@@ -11304,7 +11304,7 @@ const toeicWordsDB = [
         "en": "environmental",
         "kk": "[ɪn͵vaɪrənˋmɛntəl]",
         "uk": "/ɪnˌvaɪrənˈment(ə)l/",
-        "zh": "adj. 自然環境的、生態環境的、環保的、生態環境保護的",
+        "zh": "adj. 環境的、有關環境(保護)的、自然環境的、生態環境的",
         "unit": 12,
         "example": "She cares deeply about environmental issues.",
         "exampleZh": "她對環境問題深感擔憂。"
@@ -11324,7 +11324,7 @@ const toeicWordsDB = [
         "en": "equal",
         "kk": "[ˋikwəl]",
         "uk": "/ˈiːkwəl/",
-        "zh": "adj. 相等的、相同的、平等的、同等的；vt. 等於、比得上；n. 同等的人、相等物",
+        "zh": "adj. 相等的、相同的、平等的、同等的；vt. 等於、比得上、達到、導致；n. 同等的人、相等物",
         "unit": 12,
         "example": "We are equal in every way.",
         "exampleZh": "我們在各方面都是平等的。"
@@ -11334,7 +11334,7 @@ const toeicWordsDB = [
         "en": "equality",
         "kk": "[ɪkˋwɑləti]",
         "uk": "/iˈkwɒləti/",
-        "zh": "n. 平等、相等、均等、等式",
+        "zh": "n. 相等、平等、均等、等式",
         "unit": 12,
         "example": "Europe is not a gender-equality heaven.",
         "exampleZh": "歐洲不是性別平等的天堂。"
@@ -11354,7 +11354,7 @@ const toeicWordsDB = [
         "en": "equipment",
         "kk": "[ɪkˋwɪpmənt]",
         "uk": "/ɪˈkwɪpmənt/",
-        "zh": "n. 裝備、配備、裝置、用具",
+        "zh": "n. 設備、器材、裝置、用具",
         "unit": 12,
         "example": "New equipment is urgently needed.",
         "exampleZh": "亟需新裝置。"
@@ -11374,7 +11374,7 @@ const toeicWordsDB = [
         "en": "equivalent",
         "kk": "[ɪkˋwɪvələnt]",
         "uk": "/ɪˈkwɪvələnt/",
-        "zh": "adj. 相等的、相同的、等同的、等效的；n. 對等的人、對應的人、當量",
+        "zh": "adj. 等同的、等效的；n. 等價物、對等的人、對應的人、當量",
         "unit": 12,
         "example": "Give me the equivalent in dollars.",
         "exampleZh": "請給我等值的美元。"
@@ -11384,7 +11384,7 @@ const toeicWordsDB = [
         "en": "error",
         "kk": "[ˋɛrɚ]",
         "uk": "/ˈerə(r)/",
-        "zh": "n. 錯誤、失誤、差錯",
+        "zh": "n. 錯誤、過失、差錯、失誤",
         "unit": 12,
         "example": "Vicenzo failed to spot the error.",
         "exampleZh": "維森佐沒能發現這個錯誤。"
@@ -11394,7 +11394,7 @@ const toeicWordsDB = [
         "en": "escort",
         "kk": "[ɛˋskɔrt]",
         "uk": "/ˈeskɔːt/",
-        "zh": "n. 護衛隊、護航隊、護送者、護航艦；vt. 護送、陪同、押送、護衛",
+        "zh": "n. 護送者、護衛隊、護航艦、社交聚會陪伴者；vt. 押送、護送、護衛",
         "unit": 12,
         "example": "Police were called to escort her off the premises.",
         "exampleZh": "召來警察護送她離場。"
@@ -11404,7 +11404,7 @@ const toeicWordsDB = [
         "en": "especially",
         "kk": "[əˋspɛʃli]",
         "uk": "/ɪˈspeʃəli/",
-        "zh": "adv. 特別、尤其、專門、特地",
+        "zh": "adv. 特別地、尤其、特別、專門",
         "unit": 12,
         "example": "I especially like sweet things.",
         "exampleZh": "我特別喜歡甜的東西。"
@@ -11424,7 +11424,7 @@ const toeicWordsDB = [
         "en": "essence",
         "kk": "[ˋɛsəns]",
         "uk": "/ˈes(ə)ns/",
-        "zh": "n. 本質、實質、要素、香精",
+        "zh": "n. 本質、要素、精華、精油",
         "unit": 12,
         "example": "The essence of dialectical thought is division.",
         "exampleZh": "辯證思想的實質是二分法。"
@@ -11434,7 +11434,7 @@ const toeicWordsDB = [
         "en": "essential",
         "kk": "[ɛˋsɛnʃəl]",
         "uk": "/ɪˈsenʃ(ə)l/",
-        "zh": "adj. 必要的、不可缺的、必不可少的、非常重要的；n. 必不可少的東西、必需品、要素、本質",
+        "zh": "adj. 必要的、基本的、必不可少的、非常重要的；n. 必不可少的東西、必需品、要素、本質",
         "unit": 12,
         "example": "Money is not essential to happiness.",
         "exampleZh": "金錢對於幸福並非必不可少。"
@@ -11444,7 +11444,7 @@ const toeicWordsDB = [
         "en": "establish",
         "kk": "[ɪˋstæblɪʃ]",
         "uk": "/ɪˈstæblɪʃ/",
-        "zh": "vt. 建立、設立、證實、確定",
+        "zh": "vt. 建立、確立、設立、證實",
         "unit": 12,
         "example": "Police are trying to establish the cause of death.",
         "exampleZh": "警方在設法確定死因。"
@@ -11454,7 +11454,7 @@ const toeicWordsDB = [
         "en": "establishment",
         "kk": "[ɪˋstæblɪʃmənt]",
         "uk": "/ɪˈstæblɪʃmənt/",
-        "zh": "n. 建立、設立、權勢集團、現存體制",
+        "zh": "n. 建立、創立、建立的機構、設立",
         "unit": 12,
         "example": "The speaker announced the establishment of a new college.",
         "exampleZh": "發言人宣佈了新學院的成立。"
@@ -11464,7 +11464,7 @@ const toeicWordsDB = [
         "en": "estate",
         "kk": "[ɪˋstet]",
         "uk": "/ɪˈsteɪt/",
-        "zh": "n. 財產、資產、遺產、大片私有土地",
+        "zh": "n. 地產、財產、遺產、大片私有土地",
         "unit": 12,
         "example": "My father sold real estate.",
         "exampleZh": "我父親經營過房地產。"
@@ -11474,7 +11474,7 @@ const toeicWordsDB = [
         "en": "esteem",
         "kk": "[əˋstim]",
         "uk": "/ɪˈstiːm/",
-        "zh": "n. 尊重、尊敬、敬重；v. 尊重、尊敬、敬重、認為",
+        "zh": "n. 評價、尊重、敬重；v. 尊重、敬重、認為、把……看作",
         "unit": 12,
         "example": "You need to build your self-esteem.",
         "exampleZh": "你需要樹立自尊心。"
@@ -11484,7 +11484,7 @@ const toeicWordsDB = [
         "en": "estimate",
         "kk": "[ˋɛstəmət]",
         "uk": "/ˈestɪmət; ˈestɪmeɪt/",
-        "zh": "vt. 估算、估量、估計、判斷；n. 估計、估價、估價單、看法",
+        "zh": "vt. 估計、判斷、評價；n. 估算、估計、估價、估價單",
         "unit": 12,
         "example": "My estimate was bang on target.",
         "exampleZh": "我的估計完全準確。"
@@ -11494,7 +11494,7 @@ const toeicWordsDB = [
         "en": "eternal",
         "kk": "[ɪˋtɝnəl]",
         "uk": "/ɪˈtɜːn(ə)l/",
-        "zh": "adj. 永恆的、永久的、永存的、似乎無休無止的",
+        "zh": "adj. 永久的、永恆的、永存的、似乎無休無止的",
         "unit": 12,
         "example": "He has the upbeat manner of an eternal optimist.",
         "exampleZh": "他永遠都持樂觀主義者的那種快樂態度。"
@@ -11504,7 +11504,7 @@ const toeicWordsDB = [
         "en": "ethic",
         "kk": "[ˋɛθɪk]",
         "uk": "/ˈeθɪk/",
-        "zh": "n. 倫理、道德、行為準則、道德規範；adj. 道德規範（有關）的、倫理（有關）的",
+        "zh": "n. 倫理標準、行為準則、道德規範、信仰；adj. 道德規範（有關）的、倫理（有關）的",
         "unit": 12,
         "example": "Out of Puritanism came the intense work ethic.",
         "exampleZh": "從清教徒主義思想中衍生出的極強職業倫理。"
@@ -11544,7 +11544,7 @@ const toeicWordsDB = [
         "en": "evaluate",
         "kk": "[ɪˋvælju͵et]",
         "uk": "/ɪˈvæljueɪt/",
-        "zh": "vt. 估價、評價、評估、估值",
+        "zh": "vt. 對……評價、評價、評估、估值",
         "unit": 12,
         "example": "The market situation is difficult to evaluate.",
         "exampleZh": "市場形勢難以評估。"
@@ -11554,7 +11554,7 @@ const toeicWordsDB = [
         "en": "evaluation",
         "kk": "[ɪ͵væljuˋeʃən]",
         "uk": "/ɪˌvæljuˈeɪʃn/",
-        "zh": "n. 估價、評價、評估",
+        "zh": "n. 評估、估價、評價",
         "unit": 12,
         "example": "He got a good evaluation.",
         "exampleZh": "他得到了很好的評價。"
@@ -11584,7 +11584,7 @@ const toeicWordsDB = [
         "en": "event",
         "kk": "[ɪˋvɛnt]",
         "uk": "/ɪˈvent/",
-        "zh": "n. 事件、大事、社交場合、既定活動",
+        "zh": "n. 事件、活動、大事、社交場合",
         "unit": 12,
         "example": "The event was voted a great success.",
         "exampleZh": "大家認為這項活動很成功。"
@@ -11594,7 +11594,7 @@ const toeicWordsDB = [
         "en": "eventual",
         "kk": "[əˋvɛntʃuəl]",
         "uk": "/ɪˈventʃuəl/",
-        "zh": "adj. 最終的、最後的、結局的、有條件的",
+        "zh": "adj. 最後的、結果的、最終的、結局的",
         "unit": 12,
         "example": "The village school may face eventual closure.",
         "exampleZh": "這所鄉村學校可能最終會面臨關閉。"
@@ -11604,7 +11604,7 @@ const toeicWordsDB = [
         "en": "evidence",
         "kk": "[ˋɛvədəns]",
         "uk": "/ˈevɪdəns/",
-        "zh": "n. 證據、證詞、根據、證明；v. 證實、證明",
+        "zh": "n. 證據、證明、根據、證詞；v. 證實、證明",
         "unit": 12,
         "example": "The evidence is against him.",
         "exampleZh": "證據對他不利。"
@@ -11634,7 +11634,7 @@ const toeicWordsDB = [
         "en": "evolve",
         "kk": "[ɪˋvɑlv]",
         "uk": "/ɪˈvɒlv/",
-        "zh": "v. 逐步形成、發展、進化、演化",
+        "zh": "v. 使逐步形成、發展、進化、演化",
         "unit": 12,
         "example": "They grow and evolve with age.",
         "exampleZh": "它們隨著年齡增長而發展演變。"
@@ -11644,7 +11644,7 @@ const toeicWordsDB = [
         "en": "exact",
         "kk": "[ɪɡˋzækt]",
         "uk": "/ɪɡˈzækt/",
-        "zh": "adj. 正確的、精準的、確切的、精確的；vt. 強取、勒索、實施、造成重大苦難",
+        "zh": "adj. 確切的、精確的、嚴謹的、一絲不苟的；vt. 強取、勒索、實施、造成重大苦難",
         "unit": 12,
         "example": "I don't remember the exact words.",
         "exampleZh": "我不記得確切的詞了。"
@@ -11654,7 +11654,7 @@ const toeicWordsDB = [
         "en": "exaggerate",
         "kk": "[ɪɡˋzædʒɚ͵et]",
         "uk": "/ɪɡˈzædʒəreɪt/",
-        "zh": "vt. 誇大、誇張、言過其實、使擴大",
+        "zh": "vt. 張、誇大、對……言過其實、言過其實",
         "unit": 12,
         "example": "He tends to exaggerate the difficulties.",
         "exampleZh": "他往往誇大困難。"
@@ -11664,7 +11664,7 @@ const toeicWordsDB = [
         "en": "exaggeration",
         "kk": "[ɪɡ͵zædʒɚˋeʃən]",
         "uk": "/ɪɡˌzædʒəˈreɪʃ(ə)n/",
-        "zh": "n. 誇大:誇張、誇張、言過其實、誇張手法",
+        "zh": "n. 誇張、言過其實、誇張手法",
         "unit": 12,
         "example": "Like many stories about him, it smacks of exaggeration.",
         "exampleZh": "像很多有關他的故事一樣，這個也有點兒誇大的意味。"
@@ -11674,7 +11674,7 @@ const toeicWordsDB = [
         "en": "exam",
         "kk": "[ɪɡˋzæm]",
         "uk": "/ɪɡˈzæm/",
-        "zh": "n. 考試、測驗、試卷、醫學檢查",
+        "zh": "n. 考試、試卷、醫學檢查",
         "unit": 12,
         "example": "He passed the exam with ease.",
         "exampleZh": "他輕鬆地通過了考試。"
@@ -11694,7 +11694,7 @@ const toeicWordsDB = [
         "en": "examine",
         "kk": "[ɪɡˋzæmɪn]",
         "uk": "/ɪɡˈzæmɪn/",
-        "zh": "vt. 檢驗、測試、檢查、調查",
+        "zh": "vt. 檢查、審視、調查、考核",
         "unit": 12,
         "example": "The committee will examine the agreement and any problems arising therefrom.",
         "exampleZh": "委員會將審查該協議以及由此產生的任何問題。"
@@ -11704,7 +11704,7 @@ const toeicWordsDB = [
         "en": "examiner",
         "kk": "[ɪɡˋzæmənɚ]",
         "uk": "/ɪɡˈzæmɪnə(r)/",
-        "zh": "n. 主考人、檢查人、考官、審查人",
+        "zh": "n. 主考人、檢查人、審查員、考官",
         "unit": 12,
         "example": "A medical examiner has listed the deaths as homicides.",
         "exampleZh": "驗屍官已將這些死亡列為他殺案件。"
@@ -11714,7 +11714,7 @@ const toeicWordsDB = [
         "en": "example",
         "kk": "[ɪɡˋzæmpəl]",
         "uk": "/ɪɡˈzɑːmp(ə)l/",
-        "zh": "n. 範例、示範、例子、例證；v. 得到說明、可加以舉例說明",
+        "zh": "n. 例子、範例、例證、榜樣；v. 得到說明、可加以舉例說明",
         "unit": 12,
         "example": "Let me give you an example.",
         "exampleZh": "讓我舉個例子。"
@@ -11734,7 +11734,7 @@ const toeicWordsDB = [
         "en": "excel",
         "kk": "[ɪkˋsɛl]",
         "uk": "/ɪkˈsel/",
-        "zh": "vt. 勝過、優於、精通、擅長",
+        "zh": "vt. 勝過、突出、精通、擅長",
         "unit": 12,
         "example": "Women excel at certain tasks, men at others.",
         "exampleZh": "女性擅長某些任務，男性擅長其他任務。"
@@ -11744,7 +11744,7 @@ const toeicWordsDB = [
         "en": "excellent",
         "kk": "[ˋɛksələnt]",
         "uk": "/ˈeksələnt/",
-        "zh": "adj. 出色的、傑出的、極好的、卓越的；int. 太好了",
+        "zh": "adj. 優秀的、卓越的、極好的；int. 太好了",
         "unit": 12,
         "example": "Her musicianship is excellent.",
         "exampleZh": "她的音樂才華非常出色。"
@@ -11754,7 +11754,7 @@ const toeicWordsDB = [
         "en": "except",
         "kk": "[ɪkˋsɛpt]",
         "uk": "/ɪkˈsept/",
-        "zh": "prep. 除……之外、除……外、不包括；conj. 除了、只是、要不是；v. 把……除外、不包括、把……排除在外",
+        "zh": "prep. 除了、除……外、不包括；conj. 除……之外、除了、只是、要不是；v. 不包括、把……排除在外",
         "unit": 12,
         "example": "They all came except Matt.",
         "exampleZh": "除了馬特之外，他們都來了。"
@@ -11764,7 +11764,7 @@ const toeicWordsDB = [
         "en": "exception",
         "kk": "[ɪkˋsɛpʃən]",
         "uk": "/ɪkˈsepʃ(ə)n/",
-        "zh": "n. 例外、例外的人、除外",
+        "zh": "n. 例外、除外",
         "unit": 12,
         "example": "There is one exception to this general principle.",
         "exampleZh": "這個一般性原則有一例外。"
@@ -11774,7 +11774,7 @@ const toeicWordsDB = [
         "en": "excess",
         "kk": "[ˋɛk͵sɛs]",
         "uk": "/ɪkˈses/",
-        "zh": "n. 超越、超過、過量、越軌行為；adj. 過量的、額外的、過多的、超額的",
+        "zh": "n. 過量、超過、越軌行為、暴行；adj. 超越、過多的、超額的、額外的",
         "unit": 12,
         "example": "Excess food is stored as fat.",
         "exampleZh": "多餘的食物作為脂肪貯存起來。"
@@ -11784,7 +11784,7 @@ const toeicWordsDB = [
         "en": "exchange",
         "kk": "[ɪksˋtʃendʒ]",
         "uk": "/ɪksˈtʃeɪndʒ/",
-        "zh": "n. 交換、調換、互換、短暫的交談；vt. 交換、調換、更換、交流",
+        "zh": "n. 兌換、交換、互換、短暫的交談；vt. 交換、調換、更換、交流",
         "unit": 12,
         "example": "Shares soared on the New York stock exchange.",
         "exampleZh": "紐約證券交易所股票暴漲。"
@@ -11794,7 +11794,7 @@ const toeicWordsDB = [
         "en": "excite",
         "kk": "[ɪkˋsaɪt]",
         "uk": "/ɪkˈsaɪt/",
-        "zh": "vt. 刺激、使興奮、使激動、引起",
+        "zh": "vt. 使興奮、使激動、引起、激起",
         "unit": 12,
         "example": "Daniel's early exposure to motor racing did not excite his interest.",
         "exampleZh": "丹尼爾早期接觸賽車運動並沒有激發他的興趣。"
@@ -11804,7 +11804,7 @@ const toeicWordsDB = [
         "en": "exclude",
         "kk": "[ɪkˋsklud]",
         "uk": "/ɪkˈskluːd/",
-        "zh": "vt. 排除在外、不包括、把……排除在外、認為……不可能",
+        "zh": "vt. 不包括、把……排除在外、認為……不可能、排除……的可能",
         "unit": 12,
         "example": "We should not exclude the possibility of negotiation.",
         "exampleZh": "我們不應該排除談判的可能性。"
@@ -11824,7 +11824,7 @@ const toeicWordsDB = [
         "en": "exclusive",
         "kk": "[ɪkˋsklusɪv]",
         "uk": "/ɪkˈskluːsɪv/",
-        "zh": "adj. 排外的、除外的、獨有的、專用的；n. 獨家新聞、獨家報道",
+        "zh": "adj. 排外的、唯一的、獨家的、獨有的；n. 獨家新聞、獨家報道",
         "unit": 12,
         "example": "Some papers thought they had an exclusive.",
         "exampleZh": "一些報社以為他們有一條獨家報道。"
@@ -11844,7 +11844,7 @@ const toeicWordsDB = [
         "en": "execute",
         "kk": "[ˋɛksə͵kjut]",
         "uk": "/ˈeksɪkjuːt/",
-        "zh": "vt. 實施、處死、執行、處決",
+        "zh": "vt. 實施、執行、處死、處決",
         "unit": 12,
         "example": "We execute that instruction and we move to the next one.",
         "exampleZh": "我們執行完這條指令，然後就轉到下一條指令。"
@@ -11854,7 +11854,7 @@ const toeicWordsDB = [
         "en": "executive",
         "kk": "[ɪɡˋzɛkjətɪv]",
         "uk": "/ɪɡˈzekjətɪv/",
-        "zh": "adj. 執行的、實施的、行政的、有執行權的；n. 執行者、行政官、主管、經理",
+        "zh": "adj. 行政的、有執行權的、高檔的；n. 業務主管、主管、經理、行政部門",
         "unit": 12,
         "example": "The heroine is a senior TV executive.",
         "exampleZh": "女主人公是一位電視臺高階主管。"
@@ -11864,7 +11864,7 @@ const toeicWordsDB = [
         "en": "exert",
         "kk": "[ɪɡˋzɝt]",
         "uk": "/ɪɡˈzɜːt/",
-        "zh": "vt. 運用、行使、施加、努力",
+        "zh": "vt. 用、施加、運用、努力",
         "unit": 12,
         "example": "In order to be successful he would have to exert himself.",
         "exampleZh": "他必須努力才能成功。"
@@ -11884,7 +11884,7 @@ const toeicWordsDB = [
         "en": "exhibition",
         "kk": "[͵ɛksəˋbɪʃən]",
         "uk": "/ˌeksɪˈbɪʃ(ə)n/",
-        "zh": "n. 展覽、展示、展出、表現",
+        "zh": "n. 展覽、展覽會、展出、表現",
         "unit": 12,
         "example": "The exhibition is held annually.",
         "exampleZh": "這個展覽每年舉行一次。"
@@ -11914,7 +11914,7 @@ const toeicWordsDB = [
         "en": "exit",
         "kk": "[ˋɛɡzɪt]",
         "uk": "/ˈeksɪt/",
-        "zh": "n. 出口、通道、太平門、出路；vt. 出去、離去、退出、退場",
+        "zh": "n. 出口、通道、太平門、出路；vt. 離開、退出、退場、去世",
         "unit": 12,
         "example": "There was a stampede for the exit.",
         "exampleZh": "出現了人群向出口的狂奔。"
@@ -11924,7 +11924,7 @@ const toeicWordsDB = [
         "en": "expand",
         "kk": "[ɪkˋspænd]",
         "uk": "/ɪkˈspænd/",
-        "zh": "vt. 展開、張開、擴大、增加",
+        "zh": "vt. 擴展、膨脹、擴大、增加",
         "unit": 12,
         "example": "We have to expand the size of the image.",
         "exampleZh": "我們不得不擴大影象的尺寸。"
@@ -11974,7 +11974,7 @@ const toeicWordsDB = [
         "en": "expel",
         "kk": "[ɪkˋspɛl]",
         "uk": "/ɪkˈspel/",
-        "zh": "vt. 驅逐、趕走、把……開除、排出",
+        "zh": "vt. 驅逐、排出、開除、把……開除",
         "unit": 12,
         "example": "The heart muscles contract to expel the blood.",
         "exampleZh": "心臟肌肉收縮以擠壓出血液。"
@@ -11994,7 +11994,7 @@ const toeicWordsDB = [
         "en": "expense",
         "kk": "[ɪkˋspɛns]",
         "uk": "/ɪkˈspens/",
-        "zh": "n. 費用、價錢、代價、業務費用；v. 把……記入費用賬戶、向……收取費用、被花掉",
+        "zh": "n. 費用、支出、消耗、代價；v. 把……記入費用賬戶、向……收取費用、被花掉",
         "unit": 12,
         "example": "He can comfortably afford the extra expense.",
         "exampleZh": "他支付這些額外的費用毫無問題。"
@@ -12004,7 +12004,7 @@ const toeicWordsDB = [
         "en": "expensive",
         "kk": "[ɪkˋspɛnsɪv]",
         "uk": "/ɪkˈspensɪv/",
-        "zh": "adj. 高價的、昂貴的、花錢多的、代價高的",
+        "zh": "adj. 昂貴的、花費大的、花錢多的、代價高的",
         "unit": 12,
         "example": "Food was scarce and expensive.",
         "exampleZh": "食物稀缺且昂貴。"
@@ -12014,7 +12014,7 @@ const toeicWordsDB = [
         "en": "experience",
         "kk": "[ɪkˋspɪriəns]",
         "uk": "/ɪkˈspɪəriəns/",
-        "zh": "n. 經驗、經歷、往事、閱歷；vt. 經歷、遭遇、體會到、感受到",
+        "zh": "n. 經驗、經歷、往事、閱歷；vt. 體驗、經歷、遭遇、體會到",
         "unit": 12,
         "example": "It was a cathartic experience.",
         "exampleZh": "那是一次情感宣洩的體驗。"
@@ -12024,7 +12024,7 @@ const toeicWordsDB = [
         "en": "experiment",
         "kk": "[ɪkˋspɛrəmənt]",
         "uk": "/ɪkˈsperɪmənt/",
-        "zh": "n. 實驗、試驗、嘗試、實踐；vi. 進行實驗、試驗、做試驗、試",
+        "zh": "n. 實驗、試驗、嘗試、實踐；vi. 試驗、進行實驗、做試驗、試",
         "unit": 12,
         "example": "The experiment went horribly wrong.",
         "exampleZh": "實驗弄得一塌糊塗。"
@@ -12034,7 +12034,7 @@ const toeicWordsDB = [
         "en": "expert",
         "kk": "[ˋɛkspɚt]",
         "uk": "/ˈekspɜːt/",
-        "zh": "n. 專家、能手、權威；adj. 熟練的、老練的、專業的；v. 當專家",
+        "zh": "n. 專家、能手、權威；adj. 專業的、熟練的；v. 當專家",
         "unit": 12,
         "example": "He considers himself an expert.",
         "exampleZh": "他認為自己是專家。"
@@ -12044,7 +12044,7 @@ const toeicWordsDB = [
         "en": "expertise",
         "kk": "[͵ɛkspɚˋtiz]",
         "uk": "/ˌekspɜːˈtiːz/",
-        "zh": "n. 專門知識、專長、專門技能、專家的意見",
+        "zh": "n. 專門知識、專門技術、專長、專門技能",
         "unit": 12,
         "example": "Griffith's expertise is in writing legal briefs.",
         "exampleZh": "格里菲思的專長在於撰寫法律案情摘要。"
@@ -12054,7 +12054,7 @@ const toeicWordsDB = [
         "en": "expiration",
         "kk": "[͵ɛkspɚˋeʃən]",
         "uk": "/ˌekspəˈreɪʃ(ə)n/",
-        "zh": "n. 終結、期滿、到期、結束",
+        "zh": "n. 失效、期滿、吐氣、到期",
         "unit": 12,
         "example": "The expiration date on this yogurt was November 20.",
         "exampleZh": "這酸奶的有效期到11月20日。"
@@ -12064,7 +12064,7 @@ const toeicWordsDB = [
         "en": "expire",
         "kk": "[ɪkˋspaɪr]",
         "uk": "/ɪkˈspaɪə(r)/",
-        "zh": "vi. 屆期、終止、到期、失效",
+        "zh": "vi. 失效、滿期、吐氣、到期",
         "unit": 12,
         "example": "When does your driving licence expire?",
         "exampleZh": "你的駕照什麼時候到期？"
@@ -12084,7 +12084,7 @@ const toeicWordsDB = [
         "en": "explanation",
         "kk": "[͵ɛkspləˋneʃən]",
         "uk": "/ˌekspləˈneɪʃ(ə)n/",
-        "zh": "n. 解釋、說明、解釋性說法、說明性文字",
+        "zh": "n. 說明、解釋、解釋性說法、說明性文字",
         "unit": 12,
         "example": "There was a logical explanation.",
         "exampleZh": "存在一個合理的解釋。"
@@ -12094,7 +12094,7 @@ const toeicWordsDB = [
         "en": "explode",
         "kk": "[ɪkˋsplod]",
         "uk": "/ɪkˈspləʊd/",
-        "zh": "v. 爆發、爆炸、爆破、急劇擴大",
+        "zh": "v. 使爆炸、爆炸、爆破、急劇擴大",
         "unit": 12,
         "example": "Maybe the bully wants you to explode.",
         "exampleZh": "也許那個霸凌者想讓你情緒失控爆發。"
@@ -12104,7 +12104,7 @@ const toeicWordsDB = [
         "en": "explore",
         "kk": "[ɪkˋsplɔr]",
         "uk": "/ɪkˈsplɔː(r)/",
-        "zh": "v. 探險、挖掘、探討、探究",
+        "zh": "v. 探索、探險、探討、探究",
         "unit": 12,
         "example": "I just wanted to explore on my own.",
         "exampleZh": "我只是想獨自考察一下。"
@@ -12124,7 +12124,7 @@ const toeicWordsDB = [
         "en": "explosion",
         "kk": "[ɪkˋsploʒən]",
         "uk": "/ɪkˈspləʊʒ(ə)n/",
-        "zh": "n. 爆發、爆炸、爆破、激增",
+        "zh": "n. 爆炸、爆發、爆破、激增",
         "unit": 12,
         "example": "The explosion startled the horse.",
         "exampleZh": "爆炸聲使馬受了驚。"
@@ -12134,7 +12134,7 @@ const toeicWordsDB = [
         "en": "export",
         "kk": "[ˋɛkspɔrt]",
         "uk": "/ɪkˈspɔːt; ˈekspɔːt/",
-        "zh": "vt. 輸出、出口、傳播；n. 出口、輸出、出口物、輸出品；adj. 出口的",
+        "zh": "vt. 出口、傳播、輸出、匯出；n. 輸出、出口、出口物、輸出品；adj. 出口的",
         "unit": 12,
         "example": "Ghana's main export is cocoa.",
         "exampleZh": "迦納的主要出口產品是可可。"
@@ -12144,7 +12144,7 @@ const toeicWordsDB = [
         "en": "expose",
         "kk": "[ɪkˋspoz]",
         "uk": "/ɪkˈspəʊz/",
-        "zh": "vt. 使暴露於、使接觸到、暴露、使顯露；n. 揭露、曝光",
+        "zh": "vt. 使暴露於、暴露、使顯露、使面臨；n. 揭露、曝光",
         "unit": 12,
         "example": "My job as a journalist is to expose the truth.",
         "exampleZh": "我作為記者的職責就是展示事實。"
@@ -12154,7 +12154,7 @@ const toeicWordsDB = [
         "en": "exposure",
         "kk": "[ɪkˋspoʒɚ]",
         "uk": "/ɪkˈspəʊʒə(r)/",
-        "zh": "n. 暴露、揭露、接觸、曝光",
+        "zh": "n. 暴露、暴曬、接觸、曝光",
         "unit": 12,
         "example": "Exposure to the sun ages the skin.",
         "exampleZh": "太陽曝曬會使皮膚粗老。"
@@ -12164,7 +12164,7 @@ const toeicWordsDB = [
         "en": "express",
         "kk": "[ɪkˋsprɛs]",
         "uk": "/ɪkˈspres/",
-        "zh": "vt. 表達、陳述、表露、表現；n. 快遞、快運、快車；adj. 快遞的、特快的、明確的、特意的；adv. 用快遞寄送",
+        "zh": "vt. 表達、表露、表現、體現；n. 快車、快遞、專使；adj. 快速的、快遞的、特快的、明確的；adv. 用快遞寄送",
         "unit": 12,
         "example": "Words cannot express how pleased I am.",
         "exampleZh": "言語無法表達我的愉快心情。"
@@ -12174,7 +12174,7 @@ const toeicWordsDB = [
         "en": "expression",
         "kk": "[ɪkˋsprɛʃən]",
         "uk": "/ɪkˈspreʃ(ə)n/",
-        "zh": "n. 表達、表示、表情、神情",
+        "zh": "n. 表達、表情、表示、神情",
         "unit": 12,
         "example": "Her expression suddenly altered.",
         "exampleZh": "她的表情突然變了。"
@@ -12184,7 +12184,7 @@ const toeicWordsDB = [
         "en": "extend",
         "kk": "[ɪkˋstɛnd]",
         "uk": "/ɪkˈstend/",
-        "zh": "v. 延長、延伸、擴大、持續",
+        "zh": "v. 延伸、擴展、擴大、延長",
         "unit": 12,
         "example": "The caves extend for some 12 miles.",
         "exampleZh": "這些洞穴延伸約12英里。"
@@ -12194,7 +12194,7 @@ const toeicWordsDB = [
         "en": "extension",
         "kk": "[ɪkˋstɛnʃən]",
         "uk": "/ɪkˈstenʃ(ə)n/",
-        "zh": "n. 伸展、伸長、延伸、擴充套件",
+        "zh": "n. 伸長、擴大、延期、延伸",
         "unit": 12,
         "example": "They've built an extension on.",
         "exampleZh": "他們進行了一項擴建。"
@@ -12214,7 +12214,7 @@ const toeicWordsDB = [
         "en": "extent",
         "kk": "[ɪkˋstɛnt]",
         "uk": "/ɪkˈstent/",
-        "zh": "n. 廣度、程度、範圍、長度",
+        "zh": "n. 程度、限度、範圍、長度",
         "unit": 12,
         "example": "That's true, to a certain extent.",
         "exampleZh": "在一定程度上的確如此。"
@@ -12224,7 +12224,7 @@ const toeicWordsDB = [
         "en": "extra",
         "kk": "[ˋɛkstrə]",
         "uk": "/ˈekstrə/",
-        "zh": "adj. 額外的、另外收費的；n. 另收費的事物、臨時演員、附加分、號外；adv. 額外、特別、格外",
+        "zh": "adj. 額外的、另外收費的；n. 另收費的事物、臨時演員、附加分；adv. 額外、特別、格外",
         "unit": 12,
         "example": "Running shoes have extra cushioning.",
         "exampleZh": "跑鞋有額外的減震設計。"
@@ -12254,7 +12254,7 @@ const toeicWordsDB = [
         "en": "fabric",
         "kk": "[ˋfæbrɪk]",
         "uk": "/ˈfæbrɪk/",
-        "zh": "n. 布料、織布、織物、構造",
+        "zh": "n. 布料、織品、織物、構造",
         "unit": 12,
         "example": "The fabric moulds to the body.",
         "exampleZh": "這種織物很貼身。"
@@ -12274,7 +12274,7 @@ const toeicWordsDB = [
         "en": "face",
         "kk": "[fes]",
         "uk": "/feɪs/",
-        "zh": "n. 臉、面孔、面部、面部表情；vt. 面向、正對、面臨、遭遇",
+        "zh": "n. 臉、面部、面部表情、臉色；vt. 面對、面臨、遭遇、正視",
         "unit": 12,
         "example": "Her eyes flicked from face to face.",
         "exampleZh": "她的目光從一張臉掃到另一張臉。"
@@ -12294,7 +12294,7 @@ const toeicWordsDB = [
         "en": "facilitate",
         "kk": "[fəˋsɪlə͵tet]",
         "uk": "/fəˈsɪlɪteɪt/",
-        "zh": "vt. 促進、幫助、使更容易、使便利",
+        "zh": "vt. 使容易、促進、幫助、使更容易",
         "unit": 12,
         "example": "The new airport will facilitate the development of tourism.",
         "exampleZh": "新機場將促進旅遊業的發展。"
@@ -12344,7 +12344,7 @@ const toeicWordsDB = [
         "en": "fail",
         "kk": "[fel]",
         "uk": "/feɪl/",
-        "zh": "v. 失敗、不及格、未能做到、未能做；n. 失敗、不及格、過失",
+        "zh": "v. 失敗、不及格、未能做到、未能做；n. 不及格、過失、失敗",
         "unit": 12,
         "example": "He won't allow himself to fail.",
         "exampleZh": "他不容許自己失敗。"
@@ -12354,7 +12354,7 @@ const toeicWordsDB = [
         "en": "failure",
         "kk": "[ˋfeljɚ]",
         "uk": "/ˈfeɪljə(r)/",
-        "zh": "n. 失敗、挫敗、失敗的人、未做到",
+        "zh": "n. 失敗、故障、失敗的人、未做到",
         "unit": 12,
         "example": "The plan was doomed to failure.",
         "exampleZh": "這個計劃註定要失敗。"
@@ -12384,7 +12384,7 @@ const toeicWordsDB = [
         "en": "faith",
         "kk": "[feθ]",
         "uk": "/feɪθ/",
-        "zh": "n. 信念、信任、信心、宗教；int. 用以表示驚訝或強調千真萬確",
+        "zh": "n. 信仰、信心、信任、信念；int. 用以表示驚訝或強調千真萬確",
         "unit": 12,
         "example": "Faith is stronger than reason.",
         "exampleZh": "信仰比理智更有力。"
@@ -12404,7 +12404,7 @@ const toeicWordsDB = [
         "en": "falter",
         "kk": "[ˋfɔltɚ]",
         "uk": "/ˈfɔːltə(r)/",
-        "zh": "vi. 蹣跚、踉蹌、衰弱、衰退；n. 動搖、躊躇、支吾",
+        "zh": "vi. 踉蹌、搖晃、結巴地說話、衰弱；n. 躊躇、支吾、顫抖",
         "unit": 12,
         "example": "Will the economic miracle falter or even collapse?",
         "exampleZh": "這種經濟奇蹟會衰退甚至崩潰嗎？"
@@ -12414,7 +12414,7 @@ const toeicWordsDB = [
         "en": "familiar",
         "kk": "[fəˋmɪljɚ]",
         "uk": "/fəˈmɪliə(r)/",
-        "zh": "adj. 眾所周知的、熟悉的、常見的、普通的；n. 妖精、知交、密友、僕人",
+        "zh": "adj. 熟悉的、常見的、普通的、非正式的；n. 妖精、知交、密友、僕人",
         "unit": 12,
         "example": "He was humming a familiar tune.",
         "exampleZh": "他低聲哼著一支熟悉的小曲。"
@@ -12444,7 +12444,7 @@ const toeicWordsDB = [
         "en": "fare",
         "kk": "[fɛr]",
         "uk": "/feə(r)/",
-        "zh": "n. 票價、交通費用、乘客、飯菜；vi. 過活、遭遇、進展、表現",
+        "zh": "n. 票價、車(船)費、交通費用、乘客；vi. 進展、表現、發生、結果",
         "unit": 12,
         "example": "Children travel (at) half fare.",
         "exampleZh": "兒童交通費減半。"
@@ -12464,7 +12464,7 @@ const toeicWordsDB = [
         "en": "farm",
         "kk": "[fɑrm]",
         "uk": "/fɑːm/",
-        "zh": "n. 農場、養殖場、農舍、生產企業；vt. 耕種、養殖、將（稅收）包出、承包",
+        "zh": "n. 農場、養殖場、農舍、生產企業；vt. 務農、耕種、養殖、將（稅收）包出",
         "unit": 12,
         "example": "Whose is that farm over yonder?",
         "exampleZh": "那邊的農場是誰的？"
@@ -12484,7 +12484,7 @@ const toeicWordsDB = [
         "en": "fascination",
         "kk": "[͵fæsəˋneʃən]",
         "uk": "/ˌfæsɪˈneɪʃ(ə)n/",
-        "zh": "n. 魅力、陶醉、入迷、著迷",
+        "zh": "n. 迷戀、陶醉、入迷、著迷",
         "unit": 12,
         "example": "The girls listened in fascination as the story unfolded.",
         "exampleZh": "故事情節逐漸展開，小女孩都入迷地聽著。"
@@ -12494,7 +12494,7 @@ const toeicWordsDB = [
         "en": "fashion",
         "kk": "[ˋfæʃən]",
         "uk": "/ˈfæʃ(ə)n/",
-        "zh": "n. 時尚、時髦打扮、流行裝扮、時興；v. 製作、使成形、塑造",
+        "zh": "n. 時尚、方式、時髦打扮、流行裝扮；v. 製作、使成形、塑造",
         "unit": 12,
         "example": "Carolyne is a fashion designer.",
         "exampleZh": "卡羅琳是位時裝設計師。"
@@ -12504,7 +12504,7 @@ const toeicWordsDB = [
         "en": "fashionable",
         "kk": "[ˋfæʃənəbəl]",
         "uk": "/ˈfæʃ(ə)nəb(ə)l/",
-        "zh": "adj. 流行的、時尚的、時髦的、有錢人光顧的",
+        "zh": "adj. 時尚的、流行的、時髦的、有錢人光顧的",
         "unit": 12,
         "example": "Such thinking is fashionable among right-wing politicians.",
         "exampleZh": "在政界右翼人士中這種想法很流行。"
@@ -12534,7 +12534,7 @@ const toeicWordsDB = [
         "en": "fatal",
         "kk": "[ˋfetəl]",
         "uk": "/ˈfeɪt(ə)l/",
-        "zh": "adj. 命運的、決定命運的、致命的、導致失敗的",
+        "zh": "adj. 致命的、導致失敗的、災難性的",
         "unit": 12,
         "example": "There was a fatal flaw in the plan.",
         "exampleZh": "計劃中有一個致命的缺陷。"
@@ -12544,7 +12544,7 @@ const toeicWordsDB = [
         "en": "fate",
         "kk": "[fet]",
         "uk": "/feɪt/",
-        "zh": "n. 命運、天命；v. 命定、注定、註定",
+        "zh": "n. 命運；v. 註定",
         "unit": 12,
         "example": "Her fate intertwined with his.",
         "exampleZh": "她的命運與他的交織在一起。"
@@ -12564,7 +12564,7 @@ const toeicWordsDB = [
         "en": "fatigue",
         "kk": "[fəˋtiɡ]",
         "uk": "/fəˈtiːɡ/",
-        "zh": "n. 疲勞、疲乏、厭倦；v. 疲勞、使疲勞、使勞累；adj. 疲勞的",
+        "zh": "n. 疲乏、厭倦、疲勞；v. 疲勞、使疲勞、使勞累；adj. 疲勞的",
         "unit": 12,
         "example": "Driver fatigue was to blame for the accident.",
         "exampleZh": "這個事故是駕駛員疲勞所致。"
@@ -12574,7 +12574,7 @@ const toeicWordsDB = [
         "en": "fault",
         "kk": "[fɔlt]",
         "uk": "/fɔːlt/",
-        "zh": "n. 錯誤、失誤、責任、過錯；vt. 挑剔、指責、發球失誤、產生斷層",
+        "zh": "n. 過錯、故障、錯誤、責任；vt. 挑剔、指責、發球失誤、產生斷層",
         "unit": 12,
         "example": "His worst fault was his inconsistency.",
         "exampleZh": "他的最大缺點就是反覆無常。"
@@ -12604,7 +12604,7 @@ const toeicWordsDB = [
         "en": "favorable",
         "kk": "[ˋfevɚəbəl]",
         "uk": "/ˈfeɪvərəb(ə)l/",
-        "zh": "adj. 贊同的、稱讚的、有利的、順利的",
+        "zh": "adj. 適合的、有利的、順利的、適宜的",
         "unit": 12,
         "example": "Not all zoos and animal parks have the most favorable conditions.",
         "exampleZh": "並非所有動物園和動物公園都具備最理想的條件。"
@@ -12624,7 +12624,7 @@ const toeicWordsDB = [
         "en": "fax",
         "kk": "[fæks]",
         "uk": "/fæks/",
-        "zh": "n. 傳真、傳真機、傳真信件；vt. 傳真、用傳真與（某人）聯絡",
+        "zh": "n. 傳真機、傳真信件、傳真；vt. 傳真、用傳真與（某人）聯絡",
         "unit": 12,
         "example": "What is your fax number?",
         "exampleZh": "你的傳真號碼是多少？"
@@ -12634,7 +12634,7 @@ const toeicWordsDB = [
         "en": "fear",
         "kk": "[fɪr]",
         "uk": "/fɪə(r)/",
-        "zh": "v. 害怕、畏懼、擔心、憂慮；n. 恐懼、害怕、擔心、可能性",
+        "zh": "v. 害怕、畏懼、擔心、憂慮；n. 恐懼、擔心、可能性、敬畏",
         "unit": 12,
         "example": "Fear clutched at her heart.",
         "exampleZh": "恐懼抓住了她的心。"
@@ -12654,7 +12654,7 @@ const toeicWordsDB = [
         "en": "feasible",
         "kk": "[ˋfizəbəl]",
         "uk": "/ˈfiːzəb(ə)l/",
-        "zh": "adj. 可行的、可實行的、辦得到的、很可能會發生的",
+        "zh": "adj. 可行的、可能的、辦得到的、很可能會發生的",
         "unit": 12,
         "example": "How feasible is this vision?",
         "exampleZh": "這一設想的可行性如何？"
@@ -12664,7 +12664,7 @@ const toeicWordsDB = [
         "en": "feast",
         "kk": "[fist]",
         "uk": "/fiːst/",
-        "zh": "n. 盛宴、筵席、宴會、盛會；vi. 飽餐、盡情享用、宴請、設宴招待",
+        "zh": "n. 宴會、筵席、盛會、特別的享受；vi. 飽餐、盡情享用、宴請、設宴招待",
         "unit": 12,
         "example": "The Jewish feast of Passover began last night.",
         "exampleZh": "猶太人的宗教節日逾越節昨晚開始了。"
@@ -12684,7 +12684,7 @@ const toeicWordsDB = [
         "en": "feature",
         "kk": "[ˋfitʃɚ]",
         "uk": "/ˈfiːtʃə(r)/",
-        "zh": "n. 特徵、特色、特點、五官；v. 以……為特色、是……的特色、以……為主要組成、起重要作用",
+        "zh": "n. 特徵、特點、五官、面貌；v. 以……為特色、以……為主要組成、起重要作用、佔重要地位",
         "unit": 12,
         "example": "His eyes are his most notable feature.",
         "exampleZh": "他的雙眼是他最明顯的特徵。"
@@ -12694,7 +12694,7 @@ const toeicWordsDB = [
         "en": "federal",
         "kk": "[ˋfɛdɚəl]",
         "uk": "/ˈfedərəl/",
-        "zh": "adj. 國家的、聯邦（制）的、聯邦政府（有關）的；n. 聯邦探員、聯邦政府官員、北部聯邦政府支持者",
+        "zh": "adj. 聯邦（制）的、聯邦政府（有關）的；n. 聯邦探員、聯邦政府官員、北部聯邦政府支持者",
         "unit": 12,
         "example": "Today is Presidents' Day, a federal holiday.",
         "exampleZh": "今天是總統紀念日，一個聯邦假日。"
@@ -12704,7 +12704,7 @@ const toeicWordsDB = [
         "en": "fee",
         "kk": "[fi]",
         "uk": "/fiː/",
-        "zh": "n. 酬金、服務費、費用、會費；v. 付費、付給（某人）費用",
+        "zh": "n. 費用、報酬、酬金、會費；v. 付給（某人）費用",
         "unit": 12,
         "example": "The fee is pitifully low.",
         "exampleZh": "酬金低得可憐。"
@@ -12714,7 +12714,7 @@ const toeicWordsDB = [
         "en": "feed",
         "kk": "[fid]",
         "uk": "/fiːd/",
-        "zh": "v. 餵、飼養、餵養、為……提供食物；n. 飼料、牧草、哺乳、餵養",
+        "zh": "v. 餵食、飼養、餵養、為……提供食物；n. 飼料、哺乳、餵養、動物的飼料",
         "unit": 12,
         "example": "Can you feed the cat, please?",
         "exampleZh": "請問可以餵貓嗎？"
@@ -12724,7 +12724,7 @@ const toeicWordsDB = [
         "en": "feedback",
         "kk": "[ˋfid͵bæk]",
         "uk": "/ˈfiːdbæk/",
-        "zh": "n. 回饋、反饋意見、噪聲、返回資訊",
+        "zh": "n. 反饋的信息、反饋意見、噪聲、返回資訊",
         "unit": 12,
         "example": "The teacher will give you feedback on the test.",
         "exampleZh": "老師會對你的測驗提供反饋資訊。"
@@ -12734,7 +12734,7 @@ const toeicWordsDB = [
         "en": "fellow",
         "kk": "[ˋfɛlo]",
         "uk": "/ˈfeləʊ/",
-        "zh": "n. 傢伙、人、小夥子、同伴；adj. 同伴的、同事的、同類的",
+        "zh": "n. 同伴、小夥子、傢伙、同事；adj. 同事、同類的、同伴的",
         "unit": 12,
         "example": "He's a nice old fellow.",
         "exampleZh": "他這位老兄人不錯。"
@@ -12754,7 +12754,7 @@ const toeicWordsDB = [
         "en": "female",
         "kk": "[ˋfi͵mel]",
         "uk": "/ˈfiːmeɪl/",
-        "zh": "adj. 女性的、婦女的、女性特有的、由女性組成的；n. 女性、雌性動物、雌性植物、女子",
+        "zh": "adj. 女性的、婦女的、女性特有的、由女性組成的；n. 雌性動物、雌性植物、女子",
         "unit": 12,
         "example": "Oestrogen is a female sex hormone.",
         "exampleZh": "雌激素是一種雌性荷爾蒙。"
@@ -12764,7 +12764,7 @@ const toeicWordsDB = [
         "en": "feminine",
         "kk": "[ˋfɛmənən]",
         "uk": "/ˈfemənɪn/",
-        "zh": "adj. 女性的、婦女的、女性特有的、女子氣的；n. 陰性詞、陰性形式",
+        "zh": "adj. 女性特有的、女子氣的、女性的、婦女的；n. 陰性詞、陰性形式",
         "unit": 12,
         "example": "The French word for 'table' is feminine.",
         "exampleZh": "法語的table一詞是陰性。"
@@ -12774,7 +12774,7 @@ const toeicWordsDB = [
         "en": "ferry",
         "kk": "[ˋfɛri]",
         "uk": "/ˈferi/",
-        "zh": "n. 擺渡、渡輪、渡船、渡口；vt. 渡過、運送、擺渡、渡運",
+        "zh": "n. 渡船、擺渡、渡口；vt. 擺渡、渡運、空運",
         "unit": 12,
         "example": "The ferry hit us amidships.",
         "exampleZh": "渡輪攔腰撞了我們的船隻。"
@@ -12784,7 +12784,7 @@ const toeicWordsDB = [
         "en": "fertility",
         "kk": "[fɚˋtɪləti]",
         "uk": "/fəˈtɪləti/",
-        "zh": "n. 肥沃、豐富、富饒、可繁殖性",
+        "zh": "n. 肥沃、繁殖力、富饒、可繁殖性",
         "unit": 12,
         "example": "The women were given fertility drugs to stimulate the ovaries.",
         "exampleZh": "那些婦女得到了促進卵巢功能的生育藥。"
@@ -12834,7 +12834,7 @@ const toeicWordsDB = [
         "en": "fever",
         "kk": "[ˋfivɚ]",
         "uk": "/ˈfiːvə(r)/",
-        "zh": "n. 發燒、發熱、狂熱、高度興奮；v. 發燒、使發燒、使激動不已",
+        "zh": "n. 發燒、發熱、狂熱、高度興奮；v. 使發燒、使激動不已",
         "unit": 12,
         "example": "The fever has passed its crisis.",
         "exampleZh": "發燒已過危險期。"
@@ -12844,7 +12844,7 @@ const toeicWordsDB = [
         "en": "fiber",
         "kk": "[ˋfaɪbɚ]",
         "uk": "/ˈfaɪbə(r)/",
-        "zh": "n. 纖維、纖維製品、纖維材料、膳食纖維",
+        "zh": "n. 纖維、纖維材料、膳食纖維、粗纖維",
         "unit": 12,
         "example": "Consuming high-fiber foods helps maintain a healthy digestive system.",
         "exampleZh": "食用高纖維食物有助於維持健康的消化系統。"
@@ -12854,7 +12854,7 @@ const toeicWordsDB = [
         "en": "fiction",
         "kk": "[ˋfɪkʃən]",
         "uk": "/ˈfɪkʃ(ə)n/",
-        "zh": "n. 小說、虛構、虛構的事、謊言",
+        "zh": "n. 小說、虛構的事、謊言、杜撰",
         "unit": 12,
         "example": "The book intermingles fact and fiction.",
         "exampleZh": "這本書事實和虛構並存。"
@@ -12864,7 +12864,7 @@ const toeicWordsDB = [
         "en": "field",
         "kk": "[fild]",
         "uk": "/fiːld/",
-        "zh": "n. 原野、田地、田野、專業；v. 組建、派出、擔任守方、接；adj. 實地的、野外的、輕便機動的、戰役用的",
+        "zh": "n. 田野、領域、田地、專業；v. 組建、派出、擔任守方、接；adj. 實地的、野外的、輕便機動的、戰役用的",
         "unit": 12,
         "example": "He doubled to left field.",
         "exampleZh": "他將球擊向左外場而跑上了二壘。"
@@ -12874,7 +12874,7 @@ const toeicWordsDB = [
         "en": "fierce",
         "kk": "[fɪrs]",
         "uk": "/fɪəs/",
-        "zh": "adj. 兇猛的、殘酷的、好鬥的、強烈的；adv. 很、非常",
+        "zh": "adj. 兇猛的、殘酷的、強烈的、激烈的；adv. 很、非常",
         "unit": 12,
         "example": "She spoke in a fierce whisper.",
         "exampleZh": "她惡狠狠地低聲說話。"
@@ -12894,7 +12894,7 @@ const toeicWordsDB = [
         "en": "figure",
         "kk": "[ˋfɪɡjɚ]",
         "uk": "/ˈfɪɡə(r)/",
-        "zh": "n. 外形、體形、數字、數目；v. 計算、認為、出現、估計",
+        "zh": "n. 數字、數目、數值、數字符號；v. 出現、認為、估計、理解",
         "unit": 12,
         "example": "Gandhi was an inspirational figure.",
         "exampleZh": "甘地是一位有感召力的人物。"
@@ -12914,7 +12914,7 @@ const toeicWordsDB = [
         "en": "fill",
         "kk": "[fɪl]",
         "uk": "/fɪl/",
-        "zh": "vt. 裝滿、填滿、充滿、佔滿；n. 總量、需求總量、填充物、填方",
+        "zh": "vt. 裝滿、填充、充滿、佔滿；n. 總量、需求總量、填充物、填方",
         "unit": 12,
         "example": "Dentists fill teeth and repair broken ones.",
         "exampleZh": "牙醫補牙並修理壞牙。"
@@ -12924,7 +12924,7 @@ const toeicWordsDB = [
         "en": "film",
         "kk": "[fɪlm]",
         "uk": "/fɪlm/",
-        "zh": "n. 膠捲影片、影片、電影、電影藝術；vt. 錄製、拍攝電影、被覆蓋上一薄層東西、變得朦朧",
+        "zh": "n. 電影、影片、電影藝術、電影業；vt. 拍攝、錄製、拍攝電影、被覆蓋上一薄層東西",
         "unit": 12,
         "example": "Jenny's writing a film script.",
         "exampleZh": "珍妮在寫一個電影指令碼。"
@@ -12934,7 +12934,7 @@ const toeicWordsDB = [
         "en": "filter",
         "kk": "[ˋfɪltɚ]",
         "uk": "/ˈfɪltə(r)/",
-        "zh": "n. 濾器、過濾器、濾光器、濾聲器；v. 過濾、濾除、滲入、透過",
+        "zh": "n. 過濾器、濾光器、濾聲器、濾波器；v. 過濾、滲入、透過、慢慢傳開",
         "unit": 12,
         "example": "A new filter can save on energy bills.",
         "exampleZh": "一個新的過濾器能節省能源開支。"
@@ -12944,7 +12944,7 @@ const toeicWordsDB = [
         "en": "final",
         "kk": "[ˋfaɪnəl]",
         "uk": "/ˈfaɪn(ə)l/",
-        "zh": "adj. 最後的、最終的、結束的、末尾的；n. 決賽、期末考、期末考試、課程終結考試",
+        "zh": "adj. 最終的、結束的、最後的、末尾的；n. 期末考、決賽、期末考試、課程終結考試",
         "unit": 12,
         "example": "The judges' decision is final.",
         "exampleZh": "評審的決定是最終決定。"
@@ -12964,7 +12964,7 @@ const toeicWordsDB = [
         "en": "finance",
         "kk": "[fəˋnæns]",
         "uk": "/ˈfaɪnæns/",
-        "zh": "n. 財政、金融、資金、財源；vt. 提供資金、貸款購買、賒購",
+        "zh": "n. 金融、財政、資金、財源；vt. 提供資金、貸款購買、賒購",
         "unit": 12,
         "example": "There remains the problem of finance.",
         "exampleZh": "財政問題仍然存在。"
@@ -12974,7 +12974,7 @@ const toeicWordsDB = [
         "en": "financial",
         "kk": "[fəˋnænʃəl]",
         "uk": "/faɪˈnænʃ(ə)l/",
-        "zh": "adj. 財政的、金融的、有錢的、已繳費的；n. 財務狀況、金融公司股票",
+        "zh": "adj. 財務的、金融的、財政的、有錢的；n. 財務狀況、金融公司股票",
         "unit": 12,
         "example": "Financial support was not forthcoming.",
         "exampleZh": "財政支援尚未到手。"
@@ -12984,7 +12984,7 @@ const toeicWordsDB = [
         "en": "finish",
         "kk": "[ˋfɪnɪʃ]",
         "uk": "/ˈfɪnɪʃ/",
-        "zh": "v. 結束、完結、完成、做好；n. 結尾、結局、終點、最後精細加工",
+        "zh": "v. 完成、做好、結束、消耗盡；n. 結束、結尾、結局、終點",
         "unit": 12,
         "example": "Listen, I finish at one.",
         "exampleZh": "聽著，我講完了。"
@@ -13034,7 +13034,7 @@ const toeicWordsDB = [
         "en": "fit",
         "kk": "[fɪt]",
         "uk": "/fɪt/",
-        "zh": "v. 合身、適合、適應、合得來；adj. 適合的、健康的、健壯的、合適的；n. 適合、合身、匹配、相配",
+        "zh": "v. 適合、合身、適應、合得來；adj. 合適的、健康的、健壯的、適當的；n. 適合、合身、匹配、相配",
         "unit": 12,
         "example": "Where do I fit in?",
         "exampleZh": "哪裡有我適合的地方？"
@@ -13054,7 +13054,7 @@ const toeicWordsDB = [
         "en": "fix",
         "kk": "[fɪks]",
         "uk": "/fɪks/",
-        "zh": "v. 修理、修復、維修、確定；n. 解決方案、窘境、困境、一次用量",
+        "zh": "v. 修理、維修、確定、安排；n. 解決方案、窘境、困境",
         "unit": 12,
         "example": "He cannot fix the electricity.",
         "exampleZh": "他不會修理電路。"
@@ -13084,7 +13084,7 @@ const toeicWordsDB = [
         "en": "flaw",
         "kk": "[flɔ]",
         "uk": "/flɔː/",
-        "zh": "n. 裂縫、缺點、缺陷、裂痕；v. 使破裂、使有缺陷、削弱、使失效",
+        "zh": "n. 缺點、缺陷、裂痕、瑕疵；v. 削弱、使失效",
         "unit": 12,
         "example": "There was a fatal flaw in the plan.",
         "exampleZh": "計劃中有一個致命的缺陷。"
@@ -13124,7 +13124,7 @@ const toeicWordsDB = [
         "en": "flight",
         "kk": "[flaɪt]",
         "uk": "/flaɪt/",
-        "zh": "n. 班機、航班、飛行、逃走；v. 將（球）準確吊傳、給（箭，鏢）裝羽毛、射擊",
+        "zh": "n. 飛行、航班、班機、逃走；v. 將（球）準確吊傳、給（箭，鏢）裝羽毛、射擊",
         "unit": 12,
         "example": "The flight was heavily overbooked.",
         "exampleZh": "該班機售票大大超出機位數量。"
@@ -13154,7 +13154,7 @@ const toeicWordsDB = [
         "en": "fluency",
         "kk": "[ˋfluənsi]",
         "uk": "/ˈfluːənsi/",
-        "zh": "n. 流暢、流利、嫻熟",
+        "zh": "n. 流暢、流暢的說話、流利、嫻熟",
         "unit": 12,
         "example": "The team lacked fluency during the first half.",
         "exampleZh": "該隊在上半場打得不夠流暢。"
@@ -13164,7 +13164,7 @@ const toeicWordsDB = [
         "en": "fluent",
         "kk": "[ˋfluənt]",
         "uk": "/ˈfluːənt/",
-        "zh": "adj. 流暢的、順暢的、流利的、熟練的",
+        "zh": "adj. 流利的、流暢的、熟練的、嫻熟的",
         "unit": 12,
         "example": "She speaks fluent and idiomatic English.",
         "exampleZh": "她講一口流利地道的英語。"
@@ -13174,7 +13174,7 @@ const toeicWordsDB = [
         "en": "focus",
         "kk": "[ˋfokəs]",
         "uk": "/ˈfəʊkəs/",
-        "zh": "n. 焦點、焦距、重點、中心點；vt. 聚焦、集中、關注、調焦",
+        "zh": "n. 焦點、重點、中心點、關注；vt. 集中、關注、聚焦",
         "unit": 12,
         "example": "He prefers to focus on the positive.",
         "exampleZh": "他更願意關注積極面。"
@@ -13184,7 +13184,7 @@ const toeicWordsDB = [
         "en": "fold",
         "kk": "[fold]",
         "uk": "/fəʊld/",
-        "zh": "vt. 折疊、摺疊、對摺；n. 褶、褶皺、摺疊、志趣相同的人",
+        "zh": "vt. 摺疊、對摺、倒閉、垮掉；n. 褶、褶皺、摺疊、志趣相同的人",
         "unit": 12,
         "example": "You'd better fold it carefully.",
         "exampleZh": "你最好仔細地摺疊好它。"
@@ -13204,7 +13204,7 @@ const toeicWordsDB = [
         "en": "forecast",
         "kk": "[ˋfɔr͵kæst]",
         "uk": "/ˈfɔːkɑːst/",
-        "zh": "vt. 預報、預測；n. 預報、預測",
+        "zh": "vt. 預測、預報；n. 預測、預報",
         "unit": 12,
         "example": "Snow is forecast for tomorrow.",
         "exampleZh": "預報明天有雪。"
@@ -13214,7 +13214,7 @@ const toeicWordsDB = [
         "en": "foreign",
         "kk": "[ˋfɔrən]",
         "uk": "/ˈfɒrən/",
-        "zh": "adj. 外國的、陌生的、來自國外的、外交的",
+        "zh": "adj. 外國的、外來的、來自國外的、外交的",
         "unit": 12,
         "example": "Foreign News is on page 16.",
         "exampleZh": "《外國新聞》在第 16 頁。"
@@ -13254,7 +13254,7 @@ const toeicWordsDB = [
         "en": "formal",
         "kk": "[ˋfɔrməl]",
         "uk": "/ˈfɔːm(ə)l/",
-        "zh": "adj. 正式的、禮節上的、莊重的、合乎禮儀的；n. 正式的社交聚會、正式禮服",
+        "zh": "adj. 正式的、正規的、莊重的、合乎禮儀的；n. 正式的社交聚會、正式禮服",
         "unit": 12,
         "example": "He wore formal evening dress.",
         "exampleZh": "他穿著正式的晚禮服。"
@@ -13264,7 +13264,7 @@ const toeicWordsDB = [
         "en": "format",
         "kk": "[ˋfɔr͵mæt]",
         "uk": "/ˈfɔːmæt/",
-        "zh": "n. 格式、總體安排、計劃、設計；vt. 為……編排格式、格式化",
+        "zh": "n. 形式、總體安排、計劃、設計；vt. 為……編排格式、格式化",
         "unit": 12,
         "example": "The leaflet is in PDF format.",
         "exampleZh": "這個傳單用的是可移植文件格式。"
@@ -13294,7 +13294,7 @@ const toeicWordsDB = [
         "en": "formulate",
         "kk": "[ˋfɔrmjə͵let]",
         "uk": "/ˈfɔːmjuleɪt/",
-        "zh": "vt. 使公式化、用公式表示、制定、規劃",
+        "zh": "vt. 使公式化、規劃、配製、制定",
         "unit": 12,
         "example": "Rodrigo formulated a plan.",
         "exampleZh": "羅德里戈制定了一個計劃。"
@@ -13324,7 +13324,7 @@ const toeicWordsDB = [
         "en": "fortune",
         "kk": "[ˋfɔrtʃən]",
         "uk": "/ˈfɔːtʃuːn/",
-        "zh": "n. 財產、好運、時運、命運；v. 給予財富、偶然發生",
+        "zh": "n. 財富、運氣、時運、命運；v. 給予財富、偶然發生",
         "unit": 12,
         "example": "How had he amassed his fortune?",
         "exampleZh": "他是如何聚集起他的財富的？"
@@ -13344,7 +13344,7 @@ const toeicWordsDB = [
         "en": "forward",
         "kk": "[ˋfɔrwɚd]",
         "uk": "/ˈfɔːwəd/",
-        "zh": "adv. 向前、在船頭、朝飛機頭部、按順序地；adj. 前面的、向前的、前進的、在前部的；n. 前鋒、遠期協議、遠期交易；vt. 轉交、發送、轉寄、寄",
+        "zh": "adv. 向前、在船頭、朝飛機頭部、按順序地；adj. 前面的、向前的、前進的、在前部的；n. 前鋒、遠期協議、遠期交易；vt. 轉交、轉寄、寄、傳送",
         "unit": 12,
         "example": "Emily edged her chair forward.",
         "exampleZh": "埃米莉把椅子慢慢地向前挪動。"
@@ -13354,7 +13354,7 @@ const toeicWordsDB = [
         "en": "foundation",
         "kk": "[faʊnˋdeʃən]",
         "uk": "/faʊnˈdeɪʃ(ə)n/",
-        "zh": "n. 建立、創辦、基金會、地基",
+        "zh": "n. 建立、創辦、基礎、基金會",
         "unit": 12,
         "example": "The allegations were without foundation.",
         "exampleZh": "這些指控沒有根據。"
@@ -13364,7 +13364,7 @@ const toeicWordsDB = [
         "en": "founder",
         "kk": "[ˋfaʊndɚ]",
         "uk": "/ˈfaʊndə(r)/",
-        "zh": "n. 創辦人、鑄造工、鑄造廠業主、創立者；vi. 沉沒、失敗、垮掉、絆倒",
+        "zh": "n. 創立者、奠基者、鑄造工、鑄造廠業主；vi. 沉沒、失敗、垮掉、絆倒",
         "unit": 12,
         "example": "Its founder Rodolphe Julian was a canny businessman.",
         "exampleZh": "其創始人魯道夫·朱利安是一位精明的商人。"
@@ -13374,7 +13374,7 @@ const toeicWordsDB = [
         "en": "fraction",
         "kk": "[ˋfrækʃən]",
         "uk": "/ˈfrækʃn/",
-        "zh": "n. 片段、碎片、分數、小數",
+        "zh": "n. 小部分、片段、碎片、分數",
         "unit": 12,
         "example": "Their economy is still a fraction of ours.",
         "exampleZh": "他們的經濟仍然是我們的一部分。"
@@ -13384,7 +13384,7 @@ const toeicWordsDB = [
         "en": "frame",
         "kk": "[frem]",
         "uk": "/freɪm/",
-        "zh": "n. 架構、骨架、框架、邊框；vt. 建造、塑造、裝框架、勾勒出；adj. 有木架的",
+        "zh": "n. 框架、邊框、構架、支架；vt. 裝框架、勾勒出、圍繞；adj. 有木架的",
         "unit": 12,
         "example": "The frame is made of steel.",
         "exampleZh": "這個架子是鋼製的。"
@@ -13394,7 +13394,7 @@ const toeicWordsDB = [
         "en": "framework",
         "kk": "[ˋfrem͵wɝk]",
         "uk": "/ˈfreɪmwɜːk/",
-        "zh": "n. 構造、機構、構架、結構",
+        "zh": "n. 架構、組織、構架、結構",
         "unit": 12,
         "example": "She sets up a framework to deconstruct various categories of film.",
         "exampleZh": "她建立了一個框架來解析影視的各種分類。"
@@ -13444,7 +13444,7 @@ const toeicWordsDB = [
         "en": "fraud",
         "kk": "[frɔd]",
         "uk": "/frɔːd/",
-        "zh": "n. 欺騙、詭計、欺詐、騙局",
+        "zh": "n. 詭計、騙子、假貨、欺詐",
         "unit": 12,
         "example": "He was convicted of fraud.",
         "exampleZh": "他被判犯有詐騙罪。"
@@ -13474,7 +13474,7 @@ const toeicWordsDB = [
         "en": "freedom",
         "kk": "[ˋfridəm]",
         "uk": "/ˈfriːdəm/",
-        "zh": "n. 自由、自由權、自主權、自主",
+        "zh": "n. 自由、自主、自由權、自主權",
         "unit": 12,
         "example": "He burbles on about freedom.",
         "exampleZh": "他滔滔不絕地談論著自由。"
@@ -13494,7 +13494,7 @@ const toeicWordsDB = [
         "en": "frequency",
         "kk": "[ˋfrikwənsi]",
         "uk": "/ˈfriːkwənsi/",
-        "zh": "n. 頻率、出現次數、頻繁",
+        "zh": "n. 頻率、次數、出現次數、頻繁",
         "unit": 12,
         "example": "The frequency of Kara's phone calls increased rapidly.",
         "exampleZh": "卡拉打電話的頻率迅速增加。"
@@ -13514,7 +13514,7 @@ const toeicWordsDB = [
         "en": "frequently",
         "kk": "[ˋfrikwəntli]",
         "uk": "/ˈfriːkwəntli/",
-        "zh": "adv. 頻繁地、經常地",
+        "zh": "adv. 經常地、頻繁地",
         "unit": 12,
         "example": "His refrigerator frequently looked half empty.",
         "exampleZh": "他的冰箱經常看上去有點兒空。"
@@ -13534,7 +13534,7 @@ const toeicWordsDB = [
         "en": "fuel",
         "kk": "[ˋfjuəl]",
         "uk": "/ˈfjuːəl/",
-        "zh": "n. 燃料、燃燒劑、刺激因素、刺激性言行；vt. 加燃料、加油、提供燃料、刺激",
+        "zh": "n. 燃料、燃燒劑、刺激因素、刺激性言行；vt. 加燃料、提供燃料、加油、刺激",
         "unit": 12,
         "example": "The boiler uses solid fuel.",
         "exampleZh": "這個鍋爐燒固體燃料。"
@@ -13554,7 +13554,7 @@ const toeicWordsDB = [
         "en": "fulfill",
         "kk": "[fʊlˋfɪl]",
         "uk": "/fʊlˈfɪl/",
-        "zh": "vt. 執行、履行、實現、滿足；v. 執行、履行、fulfilloneself：充分發揮自己的才能、實現自己的抱負",
+        "zh": "vt. 履行、執行、實現、滿足；v. fulfilloneself：充分發揮自己的才能、實現自己的抱負",
         "unit": 12,
         "example": "We've so much love to fulfill.",
         "exampleZh": "我們有滿腔的愛意想要去傳遞與兌現。"
@@ -13564,7 +13564,7 @@ const toeicWordsDB = [
         "en": "fulfillment",
         "kk": "[fʊlˋfɪlmənt]",
         "uk": "/fʊlˈfɪlmənt/",
-        "zh": "n. 履行、實現、實行、完成",
+        "zh": "n. 完成、履行、實現、成就",
         "unit": 12,
         "example": "It was an outlet for their personal fulfillment.",
         "exampleZh": "它是他們實現個人價值的一個出口。"
@@ -13574,7 +13574,7 @@ const toeicWordsDB = [
         "en": "function",
         "kk": "[ˋfʌŋkʃən]",
         "uk": "/ˈfʌŋkʃ(ə)n/",
-        "zh": "n. 功能、作用、職責、宴會；vi. 工作、運行、運轉、行使職責",
+        "zh": "n. 功能、職責、宴會、典禮；vi. 運作、工作、運轉、行使職責",
         "unit": 12,
         "example": "Breathing is an automatic function of the body.",
         "exampleZh": "呼吸是一種無意識的身體功能。"
@@ -13604,7 +13604,7 @@ const toeicWordsDB = [
         "en": "fundamental",
         "kk": "[͵fʌndəˋmɛntəl]",
         "uk": "/ˌfʌndəˈment(ə)l/",
-        "zh": "adj. 基礎的、根本的、基本的、必需的；n. 基本原則、基本原理、基音、基頻",
+        "zh": "adj. 基本的、根本的、必需的、必不可少的；n. 基本原理、基音、基頻",
         "unit": 12,
         "example": "Hard work is fundamental to success.",
         "exampleZh": "勤奮工作是成功的基礎。"
@@ -13634,7 +13634,7 @@ const toeicWordsDB = [
         "en": "furniture",
         "kk": "[ˋfɝnɪtʃɚ]",
         "uk": "/ˈfɜːnɪtʃə(r)/",
-        "zh": "n. 傢俱、設備、裝置、慣常的見解",
+        "zh": "n. 家具、傢俱、裝置、慣常的見解",
         "unit": 12,
         "example": "We specialize in quality furniture.",
         "exampleZh": "我們專營高檔傢俱。"
@@ -13644,7 +13644,7 @@ const toeicWordsDB = [
         "en": "further",
         "kk": "[ˋfɝðɚ]",
         "uk": "/ˈfɜːðə(r)/",
-        "zh": "adv. 更遠地、再往前地、進一步、此外；adj. 更遠的、更多的、進一步的、較遠的；vt. 促進、助長、推進",
+        "zh": "adv. 更遠地、再往前地、進一步、此外；adj. 更多的、進一步的、更遠的、較遠的；vt. 促進、推進",
         "unit": 12,
         "example": "Further investigation is clearly warranted.",
         "exampleZh": "顯然有必要進行進一步調查。"
@@ -13654,7 +13654,7 @@ const toeicWordsDB = [
         "en": "gamble",
         "kk": "[ˋɡæmbəl]",
         "uk": "/ˈɡæmb(ə)l/",
-        "zh": "vt. 賭博、打賭、冒險假設、冒險；n. 賭博、打賭、冒險",
+        "zh": "vt. 賭博、冒險假設、冒險、投機；n. 打賭、冒險、賭博",
         "unit": 12,
         "example": "It was wrong to gamble with our children's future.",
         "exampleZh": "拿孩子們的未來冒險是錯誤的。"
@@ -13664,7 +13664,7 @@ const toeicWordsDB = [
         "en": "gap",
         "kk": "[ɡæp]",
         "uk": "/ɡæp/",
-        "zh": "n. 缺口、隔閡、縫隙、間隔；v. 裂開",
+        "zh": "n. 裂口、缺口、縫隙、間隔",
         "unit": 12,
         "example": "The product has filled a gap in the market.",
         "exampleZh": "這個產品填補了市場的空白。"
@@ -13714,7 +13714,7 @@ const toeicWordsDB = [
         "en": "gate",
         "kk": "[ɡet]",
         "uk": "/ɡeɪt/",
-        "zh": "n. 大門、柵欄門、登機口、閘門",
+        "zh": "n. 柵門、登機門、大門、登機口；comb. ……門事件（表示政治醜聞）",
         "unit": 12,
         "example": "He pushed open the garden gate.",
         "exampleZh": "他推開了花園的門。"
@@ -13734,7 +13734,7 @@ const toeicWordsDB = [
         "en": "gather",
         "kk": "[ˋɡæðɚ]",
         "uk": "/ˈɡæðə(r)/",
-        "zh": "vt. 收集、召集、聚集、採集；n. 聚集、收穫量",
+        "zh": "vt. 集合、聚集、召集、收集",
         "unit": 12,
         "example": "They gathered around the campfire to tell stories.",
         "exampleZh": "他們聚集在營火旁講故事。"
@@ -13754,7 +13754,7 @@ const toeicWordsDB = [
         "en": "gear",
         "kk": "[ɡɪr]",
         "uk": "/ɡɪə(r)/",
-        "zh": "n. 工具、設備、排擋、齒輪；vt. 使適應、使適合、使變速、使調擋",
+        "zh": "n. 排擋、齒輪、裝備、服裝；vt. 使變速、使調擋",
         "unit": 12,
         "example": "Skiing gear can be expensive.",
         "exampleZh": "滑雪用具有時會很昂貴。"
@@ -13794,7 +13794,7 @@ const toeicWordsDB = [
         "en": "generate",
         "kk": "[ˋdʒɛnɚ͵et]",
         "uk": "/ˈdʒenəreɪt/",
-        "zh": "vt. 產生、發生、引起",
+        "zh": "vt. 產生、生成、引起",
         "unit": 12,
         "example": "We need someone to generate new ideas.",
         "exampleZh": "我們需要有人出新主意。"
@@ -13804,7 +13804,7 @@ const toeicWordsDB = [
         "en": "generation",
         "kk": "[͵dʒɛnɚˋeʃən]",
         "uk": "/ˌdʒenəˈreɪʃ(ə)n/",
-        "zh": "n. 世代、一代、一代人的時間、代",
+        "zh": "n. 世代、產生、一代、一代人的時間",
         "unit": 12,
         "example": "He is arguably the best actor of his generation.",
         "exampleZh": "按理他是他那一代中最優秀的演員。"
@@ -13814,7 +13814,7 @@ const toeicWordsDB = [
         "en": "generosity",
         "kk": "[͵dʒɛnɚˋɑsəti]",
         "uk": "/ˌdʒenəˈrɒsəti/",
-        "zh": "n. 慷慨、大方",
+        "zh": "n. 寬宏大量、慷慨、大方",
         "unit": 12,
         "example": "We were amazed by his generosity.",
         "exampleZh": "他的慷慨令我們喜出望外。"
@@ -13834,7 +13834,7 @@ const toeicWordsDB = [
         "en": "genius",
         "kk": "[ˋdʒinjəs]",
         "uk": "/ˈdʒiːniəs/",
-        "zh": "n. 天才、天資、天賦、智商很高的人；adj. 天才的",
+        "zh": "n. 天才、天賦、天資、智商很高的人；adj. 天才的",
         "unit": 12,
         "example": "She was extolled as a genius.",
         "exampleZh": "她被譽為天才。"
@@ -13864,7 +13864,7 @@ const toeicWordsDB = [
         "en": "genuine",
         "kk": "[ˋdʒɛnjəwən]",
         "uk": "/ˈdʒenjuɪn/",
-        "zh": "adj. 真誠的、不造作的、真正的、非偽造的",
+        "zh": "adj. 真的、非偽造的、真正的、真誠的",
         "unit": 12,
         "example": "Only genuine refugees can apply for asylum.",
         "exampleZh": "只有真正的難民才能申請政治避難。"
@@ -13904,7 +13904,7 @@ const toeicWordsDB = [
         "en": "gesture",
         "kk": "[ˋdʒɛstʃɚ]",
         "uk": "/ˈdʒestʃə(r)/",
-        "zh": "n. 姿勢、手勢、姿態、表示；vi. 打手勢、用動作示意",
+        "zh": "n. 表示、手勢、姿勢、姿態；vi. 打手勢、用動作示意",
         "unit": 12,
         "example": "They communicated entirely by gesture.",
         "exampleZh": "他們完全用手勢交流。"
@@ -13924,7 +13924,7 @@ const toeicWordsDB = [
         "en": "giant",
         "kk": "[ˋdʒaɪənt]",
         "uk": "/ˈdʒaɪənt/",
-        "zh": "n. 巨人、高大健壯的人、巨獸、巨型植物；adj. 巨人般的、巨大的、偉大的",
+        "zh": "n. 巨人、高大健壯的人、巨獸、巨型植物；adj. 巨大的、偉大的",
         "unit": 12,
         "example": "He's a giant of a man.",
         "exampleZh": "他是個巨人。"
@@ -13974,7 +13974,7 @@ const toeicWordsDB = [
         "en": "glance",
         "kk": "[ɡlæns]",
         "uk": "/ɡlɑːns/",
-        "zh": "vi. 掃視、瞥見、一瞥、看一眼；n. 一瞥、很快的一看、閃爍、閃耀",
+        "zh": "vi. 一瞥、看一眼、瀏覽、擊中.......後彈開；n. 一瞥、很快的一看、閃爍",
         "unit": 12,
         "example": "She shot him an angry glance.",
         "exampleZh": "她很生氣，瞪了他一眼。"
@@ -13994,7 +13994,7 @@ const toeicWordsDB = [
         "en": "global",
         "kk": "[ˋɡlobəl]",
         "uk": "/ˈɡləʊbl/",
-        "zh": "adj. 球狀的、全世界的、全球的、全面的",
+        "zh": "adj. 全球的、全世界的、全面的、整體的",
         "unit": 12,
         "example": "Global warming is a real problem.",
         "exampleZh": "全球變暖是個確實存在的問題。"
@@ -14004,7 +14004,7 @@ const toeicWordsDB = [
         "en": "globe",
         "kk": "[ɡlob]",
         "uk": "/ɡləʊb/",
-        "zh": "n. 球狀物、地球、世界、地球儀；v. 成球狀",
+        "zh": "n. 地球儀、地球、世界、球體；v. 成球狀",
         "unit": 12,
         "example": "He still wheels and deals around the globe.",
         "exampleZh": "他仍在世界各地鑽營謀取。"
@@ -14014,7 +14014,7 @@ const toeicWordsDB = [
         "en": "gloom",
         "kk": "[ɡlum]",
         "uk": "/ɡluːm/",
-        "zh": "n. 陰暗、憂鬱、絕望；v. 使暗、使陰沉、外觀昏暗、顯得蕭條",
+        "zh": "n. 憂鬱、絕望、昏暗、幽暗；v. 外觀昏暗、顯得蕭條",
         "unit": 12,
         "example": "The flashlights barely penetrated the gloom.",
         "exampleZh": "手電筒勉強照見那幽暗處。"
@@ -14064,7 +14064,7 @@ const toeicWordsDB = [
         "en": "glow",
         "kk": "[ɡlo]",
         "uk": "/ɡləʊ/",
-        "zh": "vi. 發光、發熱、發出微弱而穩定的光、發紅；n. 微弱穩定的光、紅潤光澤、興高采烈、金色",
+        "zh": "vi. 發光、發熱、發紅；n. 光輝、紅光、喜悅感",
         "unit": 12,
         "example": "The fresh air had brought a healthy glow to her cheeks.",
         "exampleZh": "新鮮空氣使她兩頰紅潤、精神煥發。"
@@ -14084,7 +14084,7 @@ const toeicWordsDB = [
         "en": "gorgeous",
         "kk": "[ˋɡɔrdʒəs]",
         "uk": "/ˈɡɔːdʒəs/",
-        "zh": "adj. 燦爛的、華麗的、美麗動人的、令人愉快的",
+        "zh": "adj. 燦爛的、華麗的、極好的、美麗動人的",
         "unit": 12,
         "example": "It was absolutely gorgeous.",
         "exampleZh": "那真是美麗絕倫。"
@@ -14094,7 +14094,7 @@ const toeicWordsDB = [
         "en": "gossip",
         "kk": "[ˋɡɑsəp]",
         "uk": "/ˈɡɒsɪp/",
-        "zh": "n. 閒話、聊天、流言蜚語、小道訊息；v. 閒聊、說三道四",
+        "zh": "n. 流言蜚語、小道訊息、愛說三道四的人、閒聊；v. 閒話、聊天、閒聊、說三道四",
         "unit": 12,
         "example": "He loved gossip and scandal.",
         "exampleZh": "他喜歡閒話和流言蜚語。"
@@ -14124,7 +14124,7 @@ const toeicWordsDB = [
         "en": "grab",
         "kk": "[ɡræb]",
         "uk": "/ɡræb/",
-        "zh": "v. 抓取、拾取、攫取、抓住；n. 攫取、賺取、抓具、抓鬥",
+        "zh": "v. 攫取、抓住、取、吃；n. 攫取、賺取、抓具、抓鬥",
         "unit": 12,
         "example": "Don't grab—there's plenty for everyone.",
         "exampleZh": "別搶—多著呢，人人都有。"
@@ -14144,7 +14144,7 @@ const toeicWordsDB = [
         "en": "graceful",
         "kk": "[ˋɡresfəl]",
         "uk": "/ˈɡreɪsf(ə)l/",
-        "zh": "adj. 優雅的、優美的、得體的、有風度的",
+        "zh": "adj. 優美的、雅緻的、優雅的、得體的",
         "unit": 12,
         "example": "His walk was lithe and graceful.",
         "exampleZh": "他的步態柔韌而優雅。"
@@ -14154,7 +14154,7 @@ const toeicWordsDB = [
         "en": "grade",
         "kk": "[ɡred]",
         "uk": "/ɡreɪd/",
-        "zh": "n. 成績、等級、品級、級別；vt. 按照級別安排或分配、分類、給……評分、設定（路面）坡度",
+        "zh": "n. 年級、等級、品級、級別；vt. 評分、按照級別安排或分配、分類、給……評分",
         "unit": 12,
         "example": "I flunked math in second grade.",
         "exampleZh": "我二年級時數學不及格。"
@@ -14184,7 +14184,7 @@ const toeicWordsDB = [
         "en": "graduate",
         "kk": "[ˋɡrædʒəwət]",
         "uk": "/ˈɡrædʒuət; ˈɡrædʒuˌeɪt/",
-        "zh": "n. 大學畢業生、學士學位獲得者、畢業生；vi. 准予畢業、授與學位、獲得學位、大學畢業；adj. 研究生的",
+        "zh": "n. 大學畢業生、學士學位獲得者、畢業生；vi. 獲得學位、大學畢業、畢業、授予（某人）學位；adj. 研究生的",
         "unit": 12,
         "example": "Students who fulfill all rigorous academic credits will graduate this summer.",
         "exampleZh": "修滿所有嚴格學分的學生將於今年夏天順利畢業。"
@@ -14194,7 +14194,7 @@ const toeicWordsDB = [
         "en": "grand",
         "kk": "[ɡrænd]",
         "uk": "/ɡrænd/",
-        "zh": "adj. 雄偉的、堂皇的、壯麗的、宏偉的；n. 一千美元、大鋼琴",
+        "zh": "adj. 宏偉的、重大的、壯麗的、堂皇的；n. 一千美元、大鋼琴",
         "unit": 12,
         "example": "We stayed at the Grand Hotel.",
         "exampleZh": "我們住在格蘭德酒店。"
@@ -14204,7 +14204,7 @@ const toeicWordsDB = [
         "en": "grant",
         "kk": "[ɡrænt]",
         "uk": "/ɡrɑːnt/",
-        "zh": "vt. 同意、允許、授予、給予；n. 補助金、撥款、土地、給予",
+        "zh": "vt. 授予、給予、承認；n. 補助金、撥款、土地、給予",
         "unit": 12,
         "example": "The university received a research grant from the government.",
         "exampleZh": "該大學獲得了政府的科研補助金。"
@@ -14214,7 +14214,7 @@ const toeicWordsDB = [
         "en": "graph",
         "kk": "[ɡræf]",
         "uk": "/ɡrɑːf/",
-        "zh": "n. 圖表、圖解、曲線圖、座標圖；v. 用圖表表示",
+        "zh": "n. 圖表、曲線圖、座標圖、代表聲音單位（或其他言語特徵）的書寫符號；v. 圖、用圖表表示",
         "unit": 12,
         "example": "They made a bar graph to display the results.",
         "exampleZh": "他們用條形圖來顯示結果。"
@@ -14224,7 +14224,7 @@ const toeicWordsDB = [
         "en": "grasp",
         "kk": "[ɡræsp]",
         "uk": "/ɡrɑːsp/",
-        "zh": "vt. 抓牢、握緊、理解、領會；n. 抓、握、緊抓、緊握",
+        "zh": "vt. 抓、緊握、抓牢、握緊；n. 抱、緊抓、緊握、理解",
         "unit": 12,
         "example": "Success was within her grasp.",
         "exampleZh": "她有把握獲得成功。"
@@ -14234,7 +14234,7 @@ const toeicWordsDB = [
         "en": "grateful",
         "kk": "[ˋɡretfəl]",
         "uk": "/ˈɡreɪtf(ə)l/",
-        "zh": "adj. 感激的、感謝的、感激不盡、請",
+        "zh": "adj. 感謝的、感激的、感激不盡、請",
         "unit": 12,
         "example": "We're grateful for your business.",
         "exampleZh": "感謝您的光顧。"
@@ -14244,7 +14244,7 @@ const toeicWordsDB = [
         "en": "gratitude",
         "kk": "[ˋɡrætə͵tud]",
         "uk": "/ˈɡrætɪtjuːd/",
-        "zh": "n. 感恩、感謝、感激之情",
+        "zh": "n. 感激之情、感恩、感謝",
         "unit": 12,
         "example": "He smiled at them with gratitude.",
         "exampleZh": "他向他們笑了笑表示謝意。"
@@ -14264,7 +14264,7 @@ const toeicWordsDB = [
         "en": "gravity",
         "kk": "[ˋɡrævəti]",
         "uk": "/ˈɡrævəti/",
-        "zh": "n. 重力、引力、地心引力、嚴重性",
+        "zh": "n. 地心吸力、重力、地心引力、嚴重性",
         "unit": 12,
         "example": "I don't think you realise the gravity of the situation.",
         "exampleZh": "我認為你沒有意識到形勢的嚴重性。"
@@ -14294,7 +14294,7 @@ const toeicWordsDB = [
         "en": "grin",
         "kk": "[ɡrɪn]",
         "uk": "/ɡrɪn/",
-        "zh": "vi. 露齒而笑、齜牙咧嘴、咧著嘴笑；n. 露齒的笑、咧著嘴笑",
+        "zh": "vi. 露齒而笑、咧著嘴笑；n. 露齒的笑、咧著嘴笑",
         "unit": 12,
         "example": "Mary gave her a sheepish grin.",
         "exampleZh": "瑪麗難為情地衝她咧嘴一笑。"
@@ -14304,7 +14304,7 @@ const toeicWordsDB = [
         "en": "grip",
         "kk": "[ɡrɪp]",
         "uk": "/ɡrɪp/",
-        "zh": "n. 緊握、掌握、控制；vt. 握緊、夾住、牢牢地附著、緊貼",
+        "zh": "n. 緊握、掌握、控制、理解；vt. 握緊、夾住、牢牢地附著、緊貼",
         "unit": 12,
         "example": "She tightened her grip on his arm.",
         "exampleZh": "她抓他的手臂抓得更緊了。"
@@ -14324,7 +14324,7 @@ const toeicWordsDB = [
         "en": "grocery",
         "kk": "[ˋɡrosɚi]",
         "uk": "/ˈɡrəʊsəri/",
-        "zh": "n. 食品雜貨店、食品雜貨業、食品雜貨",
+        "zh": "n. 食品雜貨、食品雜貨店、食品雜貨業",
         "unit": 12,
         "example": "They run a small grocery store.",
         "exampleZh": "他們經營一家小食品雜貨店。"
@@ -14344,7 +14344,7 @@ const toeicWordsDB = [
         "en": "gross",
         "kk": "[ɡros]",
         "uk": "/ɡrəʊs/",
-        "zh": "adj. 總的、顯著的、毛的、嚴重的；adv. 總共、全部；vt. 總共賺得；n. 總額、總量、一羅、毛收入",
+        "zh": "adj. 總的、毛的、嚴重的、極端的；adv. 總共、全部；vt. 總共賺得；n. 一羅、毛收入、總收入",
         "unit": 12,
         "example": "They eat flies? What a gross-out!",
         "exampleZh": "他們吃蒼蠅？真噁心！"
@@ -14354,7 +14354,7 @@ const toeicWordsDB = [
         "en": "ground",
         "kk": "[ɡraʊnd]",
         "uk": "/ɡraʊnd/",
-        "zh": "n. 地面、土地、地、土壤；vt. 以……為根據、給……以紮實的基礎教育、使停飛、禁足；adj. 切碎的、磨碎的、地面的、地勤的",
+        "zh": "n. 地面、根據、地、土地；vt. 以……為根據、給……以紮實的基礎教育、使停飛、禁足；adj. 切碎的、磨碎的、地面的、地勤的",
         "unit": 12,
         "example": "The ground was frozen solid.",
         "exampleZh": "地面凍得嚴嚴實實。"
@@ -14374,7 +14374,7 @@ const toeicWordsDB = [
         "en": "grow",
         "kk": "[ɡro]",
         "uk": "/ɡrəʊ/",
-        "zh": "v. 成長、生長、長大、成活",
+        "zh": "v. 成長、種植、長大、成活",
         "unit": 12,
         "example": "The economy continues to grow.",
         "exampleZh": "經濟持續成長。"
@@ -14384,7 +14384,7 @@ const toeicWordsDB = [
         "en": "growth",
         "kk": "[ɡroθ]",
         "uk": "/ɡrəʊθ/",
-        "zh": "n. 成長、發育、生長、增長；adj. 發展的、增長的",
+        "zh": "n. 成長、發育、增大、生長；adj. 發展的、增長的",
         "unit": 12,
         "example": "Economic growth has slowed a little.",
         "exampleZh": "經濟增長稍有減緩。"
@@ -14394,7 +14394,7 @@ const toeicWordsDB = [
         "en": "guarantee",
         "kk": "[͵ɡɛrənˋti]",
         "uk": "/ˌɡærənˈtiː/",
-        "zh": "vt. 保證、保固、確保、擔保；n. 保證、保固、擔保、保修單",
+        "zh": "vt. 保證、確保、擔保、為……作保；n. 保證書、保證、擔保、保修單",
         "unit": 12,
         "example": "Some builders guarantee their work.",
         "exampleZh": "一些建築商為他們的工作擔保。"
@@ -14404,7 +14404,7 @@ const toeicWordsDB = [
         "en": "guard",
         "kk": "[ɡɑrd]",
         "uk": "/ɡɑːd/",
-        "zh": "n. 哨兵、衛兵、警衛、看守；vt. 防範、警惕、守衛、保衛",
+        "zh": "n. 守衛、衛兵、警衛、看守；vt. 保護、守衛、保衛、看守",
         "unit": 12,
         "example": "A guard was posted outside the building.",
         "exampleZh": "建築物外設了一名警衛。"
@@ -14414,7 +14414,7 @@ const toeicWordsDB = [
         "en": "guardian",
         "kk": "[ˋɡɑrdiən]",
         "uk": "/ˈɡɑːdiən/",
-        "zh": "n. 守護者、管理員、監護人、守衛者；adj. 守護的",
+        "zh": "n. 保護者、守護者、管理員、監護人；adj. 守護的",
         "unit": 12,
         "example": "Destiny's legal guardian was her grandmother.",
         "exampleZh": "德斯蒂妮的法定監護人是她的祖母。"
@@ -14424,7 +14424,7 @@ const toeicWordsDB = [
         "en": "guess",
         "kk": "[ɡɛs]",
         "uk": "/ɡes/",
-        "zh": "vt. 猜測、臆測、估計、猜中；n. 猜測、推測",
+        "zh": "vt. 猜測、估計、猜中、猜到；n. 推測、猜測",
         "unit": 12,
         "example": "'Guess what?' she said archly.",
         "exampleZh": "「你猜怎麼著？」她調皮地說。"
@@ -14434,7 +14434,7 @@ const toeicWordsDB = [
         "en": "guest",
         "kk": "[ɡɛst]",
         "uk": "/ɡest/",
-        "zh": "n. 賓客、客人、特邀嘉賓、客串演員；v. 做特邀嘉賓、客串",
+        "zh": "n. 客人、嘉賓、特邀嘉賓、客串演員；v. 做特邀嘉賓、客串",
         "unit": 12,
         "example": "The conference welcomed distinguished guest speakers from across Asia.",
         "exampleZh": "該會議迎來了來自全亞洲的傑出特邀講者。"
@@ -14444,7 +14444,7 @@ const toeicWordsDB = [
         "en": "guidance",
         "kk": "[ˋɡaɪdəns]",
         "uk": "/ˈɡaɪd(ə)ns/",
-        "zh": "n. 引領、帶領、指導、指引",
+        "zh": "n. 指導、引導、領導、指引",
         "unit": 12,
         "example": "Adam sought guidance from the Almighty.",
         "exampleZh": "亞當向上帝尋求指導。"
@@ -14454,7 +14454,7 @@ const toeicWordsDB = [
         "en": "guide",
         "kk": "[ɡaɪd]",
         "uk": "/ɡaɪd/",
-        "zh": "vt. 響導、指導、帶領、引導；n. 引領、指南、手冊",
+        "zh": "vt. 指導、帶領、引導、任嚮導；n. 指南、手冊、導遊、嚮導",
         "unit": 12,
         "example": "The guide flashed a light into the cave.",
         "exampleZh": "嚮導向山洞裡照射了燈光。"
@@ -14474,7 +14474,7 @@ const toeicWordsDB = [
         "en": "guideline",
         "kk": "[ˋɡaɪd͵laɪn]",
         "uk": "/ˈɡaɪdlaɪn/",
-        "zh": "n. 指導方針、準則、參考",
+        "zh": "n. 指南、指導方針、準則、參考",
         "unit": 12,
         "example": "A written IQ test is merely a guideline.",
         "exampleZh": "書面的智商測試只是個參考。"
@@ -14484,7 +14484,7 @@ const toeicWordsDB = [
         "en": "guilt",
         "kk": "[ɡɪlt]",
         "uk": "/ɡɪlt/",
-        "zh": "n. 罪惡、過失、內疚、罪行",
+        "zh": "n. 有罪、犯罪、過失、內疚",
         "unit": 12,
         "example": "Carolyn was consumed with guilt.",
         "exampleZh": "卡羅琳深感內疚。"
@@ -14494,7 +14494,7 @@ const toeicWordsDB = [
         "en": "guilty",
         "kk": "[ˋɡɪlti]",
         "uk": "/ˈɡɪlti/",
-        "zh": "adj. 內疚的、羞愧的、有罪的、有過失的",
+        "zh": "adj. 有罪的、內疚的、羞愧的、有過失的",
         "unit": 12,
         "example": "He pleaded guilty to murder.",
         "exampleZh": "他承認犯有謀殺罪。"
@@ -14504,7 +14504,7 @@ const toeicWordsDB = [
         "en": "gym",
         "kk": "[dʒɪm]",
         "uk": "/dʒɪm/",
-        "zh": "n. 體育館、體操、健身房、體育活動",
+        "zh": "n. 體育館、體育、體操、健身房",
         "unit": 12,
         "example": "The commons is next to the gym.",
         "exampleZh": "學生公共食堂在體育館的旁邊。"
@@ -14514,7 +14514,7 @@ const toeicWordsDB = [
         "en": "gymnasium",
         "kk": "[dʒɪmˋneziəm]",
         "uk": "/dʒɪmˈneɪziəm/",
-        "zh": "n. 體育館、體操、健身房",
+        "zh": "n. 體育館、健身房",
         "unit": 12,
         "example": "I have found a new gymnasium.",
         "exampleZh": "我找到了一個新的健身房。"
@@ -14534,7 +14534,7 @@ const toeicWordsDB = [
         "en": "habitat",
         "kk": "[ˋhæbə͵tæt]",
         "uk": "/ˈhæbɪtæt/",
-        "zh": "n. 棲息地、產地、生活環境",
+        "zh": "n. 棲地、生活環境、棲息地",
         "unit": 12,
         "example": "The panda's natural habitat is the bamboo forest.",
         "exampleZh": "大熊貓的天然棲息地是竹林。"
@@ -14544,7 +14544,7 @@ const toeicWordsDB = [
         "en": "habitual",
         "kk": "[həˋbɪtʃuəl]",
         "uk": "/həˈbɪtʃuəl/",
-        "zh": "adj. 習慣的、習慣性的、慣常的、上癮的",
+        "zh": "adj. 習以為常的、習慣性的、慣常的、上癮的",
         "unit": 12,
         "example": "If bad posture becomes habitual, you risk long-term effects.",
         "exampleZh": "如果不良姿勢成為習慣，你會有遭受長期影響的危險。"
@@ -14564,7 +14564,7 @@ const toeicWordsDB = [
         "en": "haircut",
         "kk": "[ˋhɛr͵kʌt]",
         "uk": "/ˈheəkʌt/",
-        "zh": "n. 髮型、理髮、估值折扣、扣減額",
+        "zh": "n. 理髮、髮型、估值折扣、扣減額",
         "unit": 12,
         "example": "Say, that's a nice haircut!",
         "exampleZh": "話說，這個髮型真好！"
@@ -14584,7 +14584,7 @@ const toeicWordsDB = [
         "en": "half",
         "kk": "[hæf]",
         "uk": "/hɑːf/",
-        "zh": "n. 一半、二分之一、半場、半局；pron. 一半、……點半、大量、許多；det. 一半；adj. 一半的、不完整的、部分的；adv. 一半地、接近一半地、部分地、不完全地",
+        "zh": "n. 一半、二分之一、半場、半局；pron. 一半、……點半、大量、許多；det. 一半；adj. 半個、一半的、不完整的、部分的；adv. 一半地、接近一半地、部分地、不完全地",
         "unit": 12,
         "example": "Children travel (at) half fare.",
         "exampleZh": "兒童乘車半價。"
@@ -14604,7 +14604,7 @@ const toeicWordsDB = [
         "en": "hall",
         "kk": "[hɔl]",
         "uk": "/hɔːl/",
-        "zh": "n. 會堂、大廳、禮堂、門廳",
+        "zh": "n. 大廳、走廊、禮堂、門廳",
         "unit": 12,
         "example": "Applause rang through the hall.",
         "exampleZh": "掌聲響徹整個大廳。"
@@ -14624,7 +14624,7 @@ const toeicWordsDB = [
         "en": "hallway",
         "kk": "[ˋhɔl͵we]",
         "uk": "/ˈhɔːlweɪ/",
-        "zh": "n. 玄關、門廳、走廊、過道",
+        "zh": "n. 玄關、門廳、走、走廊",
         "unit": 12,
         "example": "The door opened onto a well-lit hallway.",
         "exampleZh": "這扇門對著一個照明很好的門廳。"
@@ -14634,7 +14634,7 @@ const toeicWordsDB = [
         "en": "halt",
         "kk": "[hɔlt]",
         "uk": "/hɔːlt/",
-        "zh": "vt. 停止、終止、停止行進、阻止；n. 暫停、停止、中止、鄉間小火車站；adj. 跛的、瘸的",
+        "zh": "vt. 暫停、停止、停止行進、阻止；n. 終止、停止、中止、鄉間小火車站；adj. 跛的、瘸的",
         "unit": 12,
         "example": "The bus shuddered to a halt.",
         "exampleZh": "公共汽車劇烈地晃動著停了下來。"
@@ -14664,7 +14664,7 @@ const toeicWordsDB = [
         "en": "handful",
         "kk": "[ˋhænd͵fʊl]",
         "uk": "/ˈhændfʊl/",
-        "zh": "n. 一把、一握、少數、少量",
+        "zh": "n. 少數、少量、一把、難以控制的人",
         "unit": 12,
         "example": "Only a handful of people came.",
         "exampleZh": "只有少數幾個人來了。"
@@ -14674,7 +14674,7 @@ const toeicWordsDB = [
         "en": "handicap",
         "kk": "[ˋhændi͵kæp]",
         "uk": "/ˈhændikæp/",
-        "zh": "n. 障礙、殘障、殘疾、不利因素；vt. 妨礙、使不利、預測",
+        "zh": "n. 殘障、殘疾、障礙、不利因素；vt. 妨礙、使不利、預測",
         "unit": 12,
         "example": "Being a foreigner was not a handicap.",
         "exampleZh": "作一名外國人並不是一個不利條件。"
@@ -14684,7 +14684,7 @@ const toeicWordsDB = [
         "en": "handle",
         "kk": "[ˋhændəl]",
         "uk": "/ˈhænd(ə)l/",
-        "zh": "vt. 操作、操縱、拿、處理；n. 把手、拉手、柄、提手；comb. 有……個柄的、有……柄的",
+        "zh": "vt. 處理、拿、應付、操縱；n. 把手、拉手、柄、提手；comb. 有……個柄的、有……柄的",
         "unit": 12,
         "example": "I pumped the handle like crazy.",
         "exampleZh": "我拼命地來回搖動手柄。"
@@ -14724,7 +14724,7 @@ const toeicWordsDB = [
         "en": "harbor",
         "kk": "[ˋhɑrbɚ]",
         "uk": "/ˈhɑːbə(r)/",
-        "zh": "n. 港灣、海港、港、避難所；v. 庇護、藏匿、窩藏、懷有",
+        "zh": "n. 港、海港、港灣、避難所；v. 庇護、窩藏、懷有、心懷",
         "unit": 12,
         "example": "Home is your alcazar and safe harbor.",
         "exampleZh": "家就是你的城堡和避風港。"
@@ -14744,7 +14744,7 @@ const toeicWordsDB = [
         "en": "hardware",
         "kk": "[ˋhɑrd͵wɛr]",
         "uk": "/ˈhɑːdweə(r)/",
-        "zh": "n. 器件、器具、硬體、五金製品",
+        "zh": "n. 金屬器件、硬體、五金製品、裝備",
         "unit": 12,
         "example": "The components are readily available in hardware stores.",
         "exampleZh": "這些零件在五金商店容易買到。"
@@ -14754,7 +14754,7 @@ const toeicWordsDB = [
         "en": "harm",
         "kk": "[hɑrm]",
         "uk": "/hɑːm/",
-        "zh": "n. 傷害、損害；vt. 傷害、危害、損害",
+        "zh": "n. 傷害、損害；vt. 損傷、傷害、危害、損害",
         "unit": 12,
         "example": "He would never harm anyone.",
         "exampleZh": "他永遠不會傷害任何人。"
@@ -14764,7 +14764,7 @@ const toeicWordsDB = [
         "en": "harmful",
         "kk": "[ˋhɑrmfəl]",
         "uk": "/ˈhɑːmf(ə)l/",
-        "zh": "adj. 有害的、不良的、造成傷害的",
+        "zh": "adj. 有害的、造成傷害的",
         "unit": 12,
         "example": "Continuous exposure to sound above 80 decibels could be harmful.",
         "exampleZh": "持續曝露於超過80分貝的聲音可能有害。"
@@ -14774,7 +14774,7 @@ const toeicWordsDB = [
         "en": "harmony",
         "kk": "[ˋhɑrməni]",
         "uk": "/ˈhɑːməni/",
-        "zh": "n. 和睦、融洽、和聲、和絃",
+        "zh": "n. 和諧、協調、和聲、和絃",
         "unit": 12,
         "example": "Here, we live in harmony with nature.",
         "exampleZh": "在這裡，我們與自然和諧而居。"
@@ -14784,7 +14784,7 @@ const toeicWordsDB = [
         "en": "harvest",
         "kk": "[ˋhɑrvəst]",
         "uk": "/ˈhɑːvɪst/",
-        "zh": "n. 收成、產量、收穫、收穫量；vt. 收成、產量、收割、收穫",
+        "zh": "n. 收穫、收穫量、捕獲量、成果；vt. 收割、收穫、採集、蒐集",
         "unit": 12,
         "example": "The vegetable harvest is disastrously behind schedule.",
         "exampleZh": "蔬菜收割災難性地滯後於計劃。"
@@ -14794,7 +14794,7 @@ const toeicWordsDB = [
         "en": "hasty",
         "kk": "[ˋhesti]",
         "uk": "/ˈheɪsti/",
-        "zh": "adj. 匆忙的、急忙的、倉促的、草率的",
+        "zh": "adj. 倉促的、輕率的、匆忙的、草率的",
         "unit": 12,
         "example": "Let's not make any hasty decisions.",
         "exampleZh": "我們不要匆忙作決定。"
@@ -14824,7 +14824,7 @@ const toeicWordsDB = [
         "en": "headline",
         "kk": "[ˋhɛd͵laɪn]",
         "uk": "/ˈhedlaɪn/",
-        "zh": "n. 標題、大標題、大字標題、新聞提要；vt. 給（報道、文章）加標題、在（演出）中擔任主演、大肆宣傳",
+        "zh": "n. 標題、大字標題、新聞提要、頭條新聞；vt. 給（報道、文章）加標題、在（演出）中擔任主演",
         "unit": 12,
         "example": "They ran the story under the headline 'Home at last!'.",
         "exampleZh": "報紙刊登這個報道的大標題為“終於回家了！”。"
@@ -14854,7 +14854,7 @@ const toeicWordsDB = [
         "en": "health",
         "kk": "[hɛlθ]",
         "uk": "/helθ/",
-        "zh": "n. 身體狀況、健康、醫療、衛生",
+        "zh": "n. 健康、身體狀況、醫療、衛生",
         "unit": 12,
         "example": "He's always enjoyed good health.",
         "exampleZh": "他一直身體健康。"
@@ -14864,7 +14864,7 @@ const toeicWordsDB = [
         "en": "healthy",
         "kk": "[ˋhɛlθi]",
         "uk": "/ˈhelθi/",
-        "zh": "adj. 健康的、健全的、健壯的、有益身心的",
+        "zh": "adj. 健康的、健壯的、有益身心的、明智的",
         "unit": 12,
         "example": "He has a healthy appetite.",
         "exampleZh": "他胃口健康。"
@@ -14874,7 +14874,7 @@ const toeicWordsDB = [
         "en": "hear",
         "kk": "[hir]",
         "uk": "/hɪə(r)/",
-        "zh": "v. 聽見、聽、聽到、聆聽",
+        "zh": "v. 聽到、聽說、聽見、聆聽",
         "unit": 12,
         "example": "I can hear someone calling.",
         "exampleZh": "我能聽到有人打電話。"
@@ -14884,7 +14884,7 @@ const toeicWordsDB = [
         "en": "heat",
         "kk": "[hit]",
         "uk": "/hiːt/",
-        "zh": "n. 熱度、熱烈、熱能、熱量；vt. 變熱、發熱、激起、使激動",
+        "zh": "n. 熱、熱能、熱量、炎熱；vt. 加熱、激起、使激動、使變暖",
         "unit": 12,
         "example": "The heat was becoming unbearable.",
         "exampleZh": "炎熱變得難以忍受。"
@@ -14894,7 +14894,7 @@ const toeicWordsDB = [
         "en": "heater",
         "kk": "[ˋhitɚ]",
         "uk": "/ˈhiːtə(r)/",
-        "zh": "n. 加熱器、暖氣機、取暖器、加熱工",
+        "zh": "n. 暖氣機、加熱器、取暖器、加熱工",
         "unit": 12,
         "example": "This type of heater uses a lot of electricity.",
         "exampleZh": "這種加熱器耗電量很大。"
@@ -14904,7 +14904,7 @@ const toeicWordsDB = [
         "en": "heel",
         "kk": "[hil]",
         "uk": "/hiːl/",
-        "zh": "n. 腳後跟、鞋後跟、高跟鞋、手掌根；v. 傾斜、給（鞋等）修理後跟、用棒杆彎頭擊、並列爭球時用腳後跟往回傳；int. 跟著我",
+        "zh": "n. 腳後跟、鞋後跟、高跟鞋、手掌根；v. 傾斜、給（鞋等）修理後跟、用棒杆彎頭擊；int. 跟著我",
         "unit": 12,
         "example": "He had an operation on his heel last week.",
         "exampleZh": "他上星期腳後跟做了手術。"
@@ -14914,7 +14914,7 @@ const toeicWordsDB = [
         "en": "height",
         "kk": "[haɪt]",
         "uk": "/haɪt/",
-        "zh": "n. 高度、海拔、身高、高",
+        "zh": "n. 高度、身高、高、高處",
         "unit": 12,
         "example": "The aircraft was gaining height.",
         "exampleZh": "飛機在爬高。"
@@ -14924,7 +14924,7 @@ const toeicWordsDB = [
         "en": "helmet",
         "kk": "[ˋhɛlmət]",
         "uk": "/ˈhelmɪt/",
-        "zh": "n. 帽盔、安全帽、頭盔、花冠盔瓣",
+        "zh": "n. 盔、頭盔、鋼盔、帽盔",
         "unit": 12,
         "example": "He locked his helmet into position with a click.",
         "exampleZh": "他喀噠一聲把頭盔扣好。"
@@ -14934,7 +14934,7 @@ const toeicWordsDB = [
         "en": "help",
         "kk": "[hɛlp]",
         "uk": "/help/",
-        "zh": "vt. 治療、幫助、援助；n. 幫助、協助、有助益的東西、有用；int. 救命",
+        "zh": "vt. 幫助、援助、改善狀況、對……有益；n. 協助、幫助、有助益的東西、有用；int. 救命",
         "unit": 12,
         "example": "You never help me.",
         "exampleZh": "你從來不幫我。"
@@ -14944,7 +14944,7 @@ const toeicWordsDB = [
         "en": "helpful",
         "kk": "[ˋhɛlpfəl]",
         "uk": "/ˈhelpf(ə)l/",
-        "zh": "adj. 有幫助的、有益的、有用的、願意幫忙的",
+        "zh": "adj. 有益的、有幫助的、有用的、願意幫忙的",
         "unit": 12,
         "example": "Sorry I can't be more helpful.",
         "exampleZh": "抱歉，我無法提供更多協助。"
@@ -14974,7 +14974,7 @@ const toeicWordsDB = [
         "en": "herd",
         "kk": "[hɝd]",
         "uk": "/hɜːd/",
-        "zh": "n. 畜群、牧群、獸群、人群；vt. 放牧、驅趕、使（人）成群移動",
+        "zh": "n. 牧群、獸群、畜群、人群；vt. 驅趕、放牧、使（人）成群移動",
         "unit": 12,
         "example": "She pushed her way through a herd of lunchtime drinkers.",
         "exampleZh": "她從一群午餐時飲酒的人中間擠了過去。"
@@ -14984,7 +14984,7 @@ const toeicWordsDB = [
         "en": "heritage",
         "kk": "[ˋhɛrətədʒ]",
         "uk": "/ˈherɪtɪdʒ/",
-        "zh": "n. 遺產、命運、傳統、世襲財產",
+        "zh": "n. 遺產、繼承物、傳統、世襲財產",
         "unit": 12,
         "example": "They take great pride in their heritage.",
         "exampleZh": "他們為自己的傳統感到十分自豪。"
@@ -15024,7 +15024,7 @@ const toeicWordsDB = [
         "en": "hide",
         "kk": "[haɪd]",
         "uk": "/haɪd/",
-        "zh": "vt. 隱藏、把……藏起來、躲藏、躲避；n. 隱匿處、埋伏處、獸皮、生命",
+        "zh": "vt. 隱藏、躲藏、把……藏起來、躲避；n. 隱匿處、埋伏處、獸皮、生命",
         "unit": 12,
         "example": "He didn't hide his pacifism.",
         "exampleZh": "他並沒有掩飾自己的和平主義。"
@@ -15054,7 +15054,7 @@ const toeicWordsDB = [
         "en": "hike",
         "kk": "[haɪk]",
         "uk": "/haɪk/",
-        "zh": "n. 徒步旅行、遠足、大幅度提高、猛增；v. 健行、遠足、徒步旅行、突然增加",
+        "zh": "n. 徒步旅行、遠足、大幅度提高、猛增；v. 遠足、徒步旅行、突然增加、突然提高",
         "unit": 12,
         "example": "The site is reached by a 30-minute hike through dense forest.",
         "exampleZh": "要花30分鐘徒步穿過密林才能到達那個地方。"
@@ -15094,7 +15094,7 @@ const toeicWordsDB = [
         "en": "hire",
         "kk": "[ˋhaɪɚ]",
         "uk": "/ˈhaɪə(r)/",
-        "zh": "vt. 租用、租借、聘用；n. 租用、僱用、租借、租金",
+        "zh": "vt. 租用、租借、聘用、錄用；n. 租借、租金、被僱用的人",
         "unit": 12,
         "example": "Do you hire out bikes?",
         "exampleZh": "你們出租腳踏車嗎？"
@@ -15104,7 +15104,7 @@ const toeicWordsDB = [
         "en": "hobby",
         "kk": "[ˋhɑbi]",
         "uk": "/ˈhɒbi/",
-        "zh": "n. 興趣、癖好、業餘愛好、嗜好",
+        "zh": "n. 嗜好、業餘愛好、小馬、馬駒",
         "unit": 12,
         "example": "His hobby is freefall parachuting.",
         "exampleZh": "他的業餘愛好是自由落體式跳傘。"
@@ -15114,7 +15114,7 @@ const toeicWordsDB = [
         "en": "hold",
         "kk": "[hold]",
         "uk": "/həʊld/",
-        "zh": "v. 握著、抓住、托住、按住；n. 掌握、支配、握、抓",
+        "zh": "v. 抓住、托住、按住、捂住；n. 握、抓、擒拿法、影響",
         "unit": 12,
         "example": "Does your offer still hold?",
         "exampleZh": "你的報價還有效嗎？"
@@ -15124,7 +15124,7 @@ const toeicWordsDB = [
         "en": "hole",
         "kk": "[hol]",
         "uk": "/həʊl/",
-        "zh": "n. 洞、破洞、坑、裂口；v. 鑿洞於、穿孔於、鑽洞、打洞",
+        "zh": "n. 洞、坑、裂口、開口；v. 鑽洞、打洞、擊球入洞",
         "unit": 12,
         "example": "There's a hole in the crotch.",
         "exampleZh": "胯部有一個洞。"
@@ -15134,7 +15134,7 @@ const toeicWordsDB = [
         "en": "holiday",
         "kk": "[ˋhɑlə͵de]",
         "uk": "/ˈhɒlədeɪ/",
-        "zh": "n. 節日、假日、度假期、法定節假日；vi. 度假",
+        "zh": "n. 假日、度假期、法定節假日、節日；vi. 度假",
         "unit": 12,
         "example": "Today is a holiday in Wales.",
         "exampleZh": "今天是威爾斯的假期。"
@@ -15144,7 +15144,7 @@ const toeicWordsDB = [
         "en": "home",
         "kk": "[hom]",
         "uk": "/həʊm/",
-        "zh": "n. 家庭、家庭生活、家、住宅；adj. 家庭的、家用的、在家裡做（或進行）的、本國的；adv. 在家、回家、到正確的位置、朝著球門；v. 歸巢、對準、把（思想、注意力）集中於、把（動物）養作寵物",
+        "zh": "n. 家、住宅、房子、寓所；adj. 家庭的、家用的、在家裡做（或進行）的、本國的；adv. 回家、在家、到正確的位置、朝著球門；v. 歸巢、對準、把（思想、注意力）集中於、把（動物）養作寵物",
         "unit": 12,
         "example": "Burglars broke into their home.",
         "exampleZh": "竊賊闖入了他們的家。"
@@ -15194,7 +15194,7 @@ const toeicWordsDB = [
         "en": "honor",
         "kk": "[ˋɑnɚ]",
         "uk": "/ˈɒnə(r)/",
-        "zh": "n. 榮譽、名譽、光榮、信用；vt. 尊敬、尊重、向……致敬、給……以榮譽",
+        "zh": "n. 榮譽、光榮、名譽、信用；vt. 尊敬、尊重、向……致敬、給……以榮譽",
         "unit": 12,
         "example": "He won the Medal of Honor for his actions in 1943.",
         "exampleZh": "他因在1943年的勇敢行為獲得榮譽勳章。"
@@ -15204,7 +15204,7 @@ const toeicWordsDB = [
         "en": "honorary",
         "kk": "[ˋɑnɚ͵ɛri]",
         "uk": "/ˈɒnərəri/",
-        "zh": "adj. 榮譽的、名譽的、無報酬的、義務的",
+        "zh": "adj. 名譽上的、名譽職位的、榮譽的、無報酬的",
         "unit": 12,
         "example": "Harvard awarded him an honorary degree.",
         "exampleZh": "哈佛大學授予他榮譽學位。"
@@ -15214,7 +15214,7 @@ const toeicWordsDB = [
         "en": "hopeful",
         "kk": "[ˋhopfəl]",
         "uk": "/ˈhəʊpf(ə)l/",
-        "zh": "adj. 有希望的、有前途的、滿懷希望的、被寄予希望的；n. 希望成功的人、有前途的人",
+        "zh": "adj. 抱有希望的、滿懷希望的、有希望的、有前途的；n. 希望成功的人、有前途的人",
         "unit": 12,
         "example": "She is hopeful of returning to work soon.",
         "exampleZh": "她希望很快回去工作。"
@@ -15234,7 +15234,7 @@ const toeicWordsDB = [
         "en": "horizon",
         "kk": "[hɚˋaɪzən]",
         "uk": "/həˈraɪz(ə)n/",
-        "zh": "n. 地平線、眼界、視野、地平圈",
+        "zh": "n. 地平線、眼界、地平圈、地層",
         "unit": 12,
         "example": "Smoke appeared on the horizon.",
         "exampleZh": "地平線上升起了煙霧。"
@@ -15244,7 +15244,7 @@ const toeicWordsDB = [
         "en": "horizontal",
         "kk": "[͵hɔrəˋzɑntəl]",
         "uk": "/ˌhɒrɪˈzɒnt(ə)l/",
-        "zh": "adj. 水平的、橫的、同一層次的、統一的；n. 水平位置、水平線、水平面",
+        "zh": "adj. 水平的、同一層次的、統一的、一致的；n. 水平位置、水平線、水平面",
         "unit": 12,
         "example": "He shifted his position from the horizontal.",
         "exampleZh": "他從水平姿勢變換成其他姿勢。"
@@ -15254,7 +15254,7 @@ const toeicWordsDB = [
         "en": "horrible",
         "kk": "[ˋhɔrəbəl]",
         "uk": "/ˈhɒrəb(ə)l/",
-        "zh": "adj. 可怕的、令人毛骨悚然的、令人恐懼的、糟糕的",
+        "zh": "adj. 可怕的、令人恐懼的、糟糕的、討厭的",
         "unit": 12,
         "example": "Ugh – it was horrible.",
         "exampleZh": "啊 – 這真可怕。"
@@ -15294,7 +15294,7 @@ const toeicWordsDB = [
         "en": "host",
         "kk": "[host]",
         "uk": "/həʊst/",
-        "zh": "n. 主人、主辦、主持人、主辦者；vt. 主辦、做……的東道主、做節目主持人、作為主人組織",
+        "zh": "n. 主辦、主持、主人、主持人；vt. 以主人身分招待、主辦、做……的東道主、做節目主持人",
         "unit": 12,
         "example": "Shall I take my host family a gift?",
         "exampleZh": "我要不要給主人家帶件禮物呢？"
@@ -15304,7 +15304,7 @@ const toeicWordsDB = [
         "en": "hostile",
         "kk": "[ˋhɑstəl]",
         "uk": "/ˈhɒstaɪl/",
-        "zh": "adj. 敵人的、敵方的、敵對的、懷敵意的；n. 敵對分子",
+        "zh": "adj. 敵方的、懷敵意的、敵對的、強烈反對的；n. 敵對分子",
         "unit": 12,
         "example": "It depends what you mean by 'hostile'.",
         "exampleZh": "那得看你所說的hostile的含義。"
@@ -15314,7 +15314,7 @@ const toeicWordsDB = [
         "en": "hotel",
         "kk": "[hoˋtɛl]",
         "uk": "/həʊˈtel/",
-        "zh": "n. 旅館、飯店、酒店、字母H的程式碼",
+        "zh": "n. 旅館、酒店、飯店、字母H的程式碼",
         "unit": 12,
         "example": "They bugged her hotel room.",
         "exampleZh": "他們在她的旅館房間裡裝了竊聽器。"
@@ -15324,7 +15324,7 @@ const toeicWordsDB = [
         "en": "hour",
         "kk": "[ˋaʊɚ]",
         "uk": "/ˈaʊə(r)/",
-        "zh": "n. 小時、時刻、一小時的路程、固定時間",
+        "zh": "n. 小時、一小時的路程、固定時間、某個時間",
         "unit": 12,
         "example": "That clock's an hour fast.",
         "exampleZh": "那個時鐘快了一個小時。"
@@ -15334,7 +15334,7 @@ const toeicWordsDB = [
         "en": "hourly",
         "kk": "[ˋaʊrli]",
         "uk": "/ˈaʊəli/",
-        "zh": "adj. 每小時的、按小時計算的、頻繁的；adv. 每小時地、頻繁地、每小時、按小時",
+        "zh": "adj. 每小時的、按小時計算的、頻繁的；adv. 時時、每小時、按小時、頻繁地",
         "unit": 12,
         "example": "Trains leave at hourly intervals.",
         "exampleZh": "火車每隔一小時發出一列。"
@@ -15354,7 +15354,7 @@ const toeicWordsDB = [
         "en": "household",
         "kk": "[ˋhaʊ͵shold]",
         "uk": "/ˈhaʊshəʊld/",
-        "zh": "n. 家庭、一家人、家務；adj. 家的、家庭的、家用的、家務的",
+        "zh": "n. 一家人、家眷、家庭、戶；adj. 家用的、家務的、全家人的、家喻戶曉的",
         "unit": 12,
         "example": "Today, fashion designers are household names.",
         "exampleZh": "如今，服裝設計師們家喻戶曉。"
@@ -15364,7 +15364,7 @@ const toeicWordsDB = [
         "en": "housekeeper",
         "kk": "[ˋhaʊ͵skipɚ]",
         "uk": "/ˈhaʊskiːpə(r)/",
-        "zh": "n. 管家、佣人、女管家、主婦",
+        "zh": "n. 女管家、管家、主婦、持家者",
         "unit": 12,
         "example": "All my correspondences are handled by my housekeeper.",
         "exampleZh": "我所有的來往信件都由我的管家處理。"
@@ -15394,7 +15394,7 @@ const toeicWordsDB = [
         "en": "huge",
         "kk": "[hjudʒ]",
         "uk": "/hjuːdʒ/",
-        "zh": "adj. 龐大的、巨大的、極大的、很受歡迎的",
+        "zh": "adj. 巨大的、龐大的、極大的、很受歡迎的",
         "unit": 12,
         "example": "The huge, iron gate was locked.",
         "exampleZh": "巨大的鐵門緊鎖著。"
@@ -15434,7 +15434,7 @@ const toeicWordsDB = [
         "en": "humble",
         "kk": "[ˋhʌmbəl]",
         "uk": "/ˈhʌmb(ə)l/",
-        "zh": "adj. 謙遜的、謙恭的、謙虛的、謙卑的；vt. 使謙卑、使感到自慚、擊敗",
+        "zh": "adj. 謙虛的、謙卑的、低下的；vt. 使謙卑、使感到自慚、擊敗",
         "unit": 12,
         "example": "He always makes much of his humble origins.",
         "exampleZh": "他總是看重自己卑微的出身。"
@@ -15464,7 +15464,7 @@ const toeicWordsDB = [
         "en": "humor",
         "kk": "[ˋhjumɚ]",
         "uk": "/ˈhjuːmə(r)/",
-        "zh": "n. 幽默感、幽默、詼諧、心情；vt. 迎合、遷就、順應",
+        "zh": "n. 幽默、詼諧、幽默感、心情；vt. 迎合、遷就、順應",
         "unit": 12,
         "example": "The movie mixes broad humor with romance.",
         "exampleZh": "那部電影把粗俗幽默和浪漫故事結合在一起。"
@@ -15474,7 +15474,7 @@ const toeicWordsDB = [
         "en": "hurry",
         "kk": "[ˋhɝi]",
         "uk": "/ˈhʌri/",
-        "zh": "v. 使趕緊、催促、匆忙、急忙；n. 急忙、倉促、緊急、趕緊的理由",
+        "zh": "v. 匆忙、急忙、催促、迅速移動；n. 急忙、緊急、趕緊的理由",
         "unit": 12,
         "example": "Take your time—there's no hurry.",
         "exampleZh": "悠著點—不用急。"
@@ -15484,7 +15484,7 @@ const toeicWordsDB = [
         "en": "hurt",
         "kk": "[hɝt]",
         "uk": "/hɜːt/",
-        "zh": "v. 損害、危害、使受傷、使疼痛；adj. 受傷的、痛苦的；n. 心靈創傷、委屈",
+        "zh": "v. 使受傷、使疼痛、感到受傷、感到疼痛；adj. 受傷的、痛苦的；n. 心靈創傷、委屈、傷、痛",
         "unit": 12,
         "example": "Did you hurt yourself ?",
         "exampleZh": "你傷到自己了嗎？"
@@ -15494,7 +15494,7 @@ const toeicWordsDB = [
         "en": "hush",
         "kk": "[hʌʃ]",
         "uk": "/hʌʃ/",
-        "zh": "vt. 使沉默、使安靜、安靜下來、停止說話；n. 靜寂、沉默、寂靜、鴉雀無聲",
+        "zh": "vt. 安靜下來、停止說話、噓、用水清洗礦石；n. 寂靜、鴉雀無聲、噴水",
         "unit": 12,
         "example": "Hush, my love, it's all right.",
         "exampleZh": "噓，親愛的，沒事。"
@@ -15504,7 +15504,7 @@ const toeicWordsDB = [
         "en": "ice",
         "kk": "[aɪs]",
         "uk": "/aɪs/",
-        "zh": "n. 冰、冰塊、冰凍甜食、刨冰；vt. 結冰、在（糕餅上）加糖霜、冷卻、冰鎮；adj. 冰的",
+        "zh": "n. 冰、冰塊、冰凍甜食、刨冰；vt. 在（糕餅上）加糖霜、冷卻、冰鎮、確保；adj. 冰的",
         "unit": 12,
         "example": "The ice started to crack.",
         "exampleZh": "冰開始破裂。"
@@ -15534,7 +15534,7 @@ const toeicWordsDB = [
         "en": "icy",
         "kk": "[ˋaɪsi]",
         "uk": "/ˈaɪsi/",
-        "zh": "adj. 多冰的、冷冰冰的、冰冷的、結冰的",
+        "zh": "adj. 冰冷的、結冰的、不友好的、冷漠的",
         "unit": 12,
         "example": "My eyes met his icy gaze.",
         "exampleZh": "我的雙眼迎視他冰冷的目光。"
@@ -15544,7 +15544,7 @@ const toeicWordsDB = [
         "en": "idea",
         "kk": "[aɪˋdiə]",
         "uk": "/aɪˈdɪə/",
-        "zh": "n. 打算、計畫、想法、主意",
+        "zh": "n. 主意、想法、觀點、看法",
         "unit": 12,
         "example": "He's dead against the idea.",
         "exampleZh": "他堅決反對這個想法。"
@@ -15554,7 +15554,7 @@ const toeicWordsDB = [
         "en": "ideal",
         "kk": "[aɪˋdil]",
         "uk": "/aɪˈdiːəl/",
-        "zh": "adj. 理想的、完美的、最佳的、想象的；n. 理想、典範、完美典型",
+        "zh": "adj. 理想的、最佳的、想象的、不切實際的；n. 理想、典範、完美典型",
         "unit": 12,
         "example": "He has found his ideal mate.",
         "exampleZh": "他已經找到了理想的配偶。"
@@ -15574,7 +15574,7 @@ const toeicWordsDB = [
         "en": "identical",
         "kk": "[aɪˋdɛntɪkəl]",
         "uk": "/aɪˈdentɪk(ə)l/",
-        "zh": "adj. 相同的、完全相似的、完全相同的、同一的",
+        "zh": "adj. 完全相同的、同一的、同卵的、恆等的",
         "unit": 12,
         "example": "The two pictures are similar, although not identical.",
         "exampleZh": "這兩幅畫很相似，雖然不完全相同。"
@@ -15584,7 +15584,7 @@ const toeicWordsDB = [
         "en": "identification",
         "kk": "[aɪ͵dɛntəfəˋkeʃən]",
         "uk": "/aɪˌdentɪfɪˈkeɪʃ(ə)n/",
-        "zh": "n. 辨認、識別、確認、確定",
+        "zh": "n. 認出、識別、辨認、確認",
         "unit": 12,
         "example": "Can I see some identification, please?",
         "exampleZh": "請出示任何身份證件好嗎？"
@@ -15594,7 +15594,7 @@ const toeicWordsDB = [
         "en": "identify",
         "kk": "[aɪˋdɛntə͵faɪ]",
         "uk": "/aɪˈdentɪfaɪ/",
-        "zh": "v. 認出、識別、查明、確認",
+        "zh": "v. 確認、識別、認出、查明",
         "unit": 12,
         "example": "First of all we must identify the problem areas.",
         "exampleZh": "首先我們必須找出問題所在。"
@@ -15604,7 +15604,7 @@ const toeicWordsDB = [
         "en": "idle",
         "kk": "[ˋaɪdəl]",
         "uk": "/ˈaɪd(ə)l/",
-        "zh": "adj. 無事可做的、懶惰的、閒置的、空閒的；vi. 閒混、無所事事",
+        "zh": "adj. 無事可做的、懶惰的、閒置的、空閒的；vi. 閒混、無所事事、使……停止工作、使閒散",
         "unit": 12,
         "example": "Now the machine is lying idle.",
         "exampleZh": "現在這臺機器正處於閒置狀態。"
@@ -15674,7 +15674,7 @@ const toeicWordsDB = [
         "en": "ignore",
         "kk": "[͵ɪɡˋnɔr]",
         "uk": "/ɪɡˈnɔː(r)/",
-        "zh": "vt. 不理會、忽視、佯裝未見、不理睬",
+        "zh": "vt. 不理睬、佯裝未見、忽視、對……不予理會",
         "unit": 12,
         "example": "We cannot afford to ignore this warning.",
         "exampleZh": "我們不能忽視這項警告。"
@@ -15684,7 +15684,7 @@ const toeicWordsDB = [
         "en": "ill",
         "kk": "[ɪl]",
         "uk": "/ɪl/",
-        "zh": "adj. 生病的、壞的、有病的、不舒服的；adv. 壞、惡劣地、艱難地、幾乎不；n. 禍害、問題、困難",
+        "zh": "adj. 有病的、不舒服的、壞的、有害的；adv. 壞、惡劣地、艱難地、幾乎不；n. 問題、困難、傷害、厄運",
         "unit": 12,
         "example": "The patient is terminally ill.",
         "exampleZh": "這個病人病入膏肓。"
@@ -15754,7 +15754,7 @@ const toeicWordsDB = [
         "en": "illuminate",
         "kk": "[͵ɪlˋumɪnɪt]",
         "uk": "/ɪˈluːmɪneɪt/",
-        "zh": "vt. 照亮、照射、闡明、解釋",
+        "zh": "vt. 照亮、用燈裝飾、啟發、照射",
         "unit": 12,
         "example": "Second, data can illuminate patterns of behavior we haven't yet noticed.",
         "exampleZh": "其次，資料可以闡明一些我們尚未注意到的行為模式。"
@@ -15764,7 +15764,7 @@ const toeicWordsDB = [
         "en": "illusion",
         "kk": "[͵ɪlˋuʒən]",
         "uk": "/ɪˈluːʒ(ə)n/",
-        "zh": "n. 錯覺、幻覺、幻想、錯誤的觀念",
+        "zh": "n. 錯覺、假象、幻想、幻覺",
         "unit": 12,
         "example": "The idea of absolute personal freedom is an illusion.",
         "exampleZh": "絕對個人自由的觀念是一種幻想。"
@@ -15774,7 +15774,7 @@ const toeicWordsDB = [
         "en": "illustrate",
         "kk": "[ˋɪlə͵stret]",
         "uk": "/ˈɪləstreɪt/",
-        "zh": "vt. 說明、闡明、加插圖於、證明",
+        "zh": "vt. 說明、加插圖於、闡明、證明",
         "unit": 12,
         "example": "One example will suffice to illustrate the point.",
         "exampleZh": "舉一個例子就足以說明這一點。"
@@ -15794,7 +15794,7 @@ const toeicWordsDB = [
         "en": "image",
         "kk": "[ˋɪmədʒ]",
         "uk": "/ˈɪmɪdʒ/",
-        "zh": "n. 圖像、圖案、形象、印象；v. 作……的像、描繪……的形象、掃描出……的直觀圖、幻想",
+        "zh": "n. 肖像影像、形象、印象、影像；v. 作……的像、描繪……的形象、掃描出……的直觀圖、幻想",
         "unit": 12,
         "example": "Vegetarianism has shed its cranky image.",
         "exampleZh": "素食主義已經擺脫了其古怪的形象。"
@@ -15804,7 +15804,7 @@ const toeicWordsDB = [
         "en": "imaginary",
         "kk": "[͵ɪmˋædʒə͵nɛri]",
         "uk": "/ɪˈmædʒɪnəri/",
-        "zh": "adj. 想像的、幻想的、想象的、虛構的",
+        "zh": "adj. 虛構的、幻想的、想象的、虛數的",
         "unit": 12,
         "example": "Lots of children have imaginary friends.",
         "exampleZh": "許多孩子都有假想的朋友。"
@@ -15814,7 +15814,7 @@ const toeicWordsDB = [
         "en": "imagination",
         "kk": "[͵ɪm͵ædʒəˋneʃən]",
         "uk": "/ɪˌmædʒɪˈneɪʃ(ə)n/",
-        "zh": "n. 想像力、想象力、想象、幻覺",
+        "zh": "n. 想像力、創造力、想象力、想象",
         "unit": 12,
         "example": "That child has a very active imagination.",
         "exampleZh": "那個小孩想象力十分豐富。"
@@ -15854,7 +15854,7 @@ const toeicWordsDB = [
         "en": "immediate",
         "kk": "[͵ɪmˋi͵diət]",
         "uk": "/ɪˈmiːdiət/",
-        "zh": "adj. 立刻的、立即的、即時的、目前的",
+        "zh": "adj. 即刻的、立刻的、即時的、目前的",
         "unit": 12,
         "example": "She demanded an immediate explanation.",
         "exampleZh": "她要求立即作出解釋。"
@@ -15904,7 +15904,7 @@ const toeicWordsDB = [
         "en": "immune",
         "kk": "[͵ɪˋmjun]",
         "uk": "/ɪˈmjuːn/",
-        "zh": "adj. 免疫的、不受影響的、免除的、豁免的；n. 免疫者、免除者",
+        "zh": "adj. 免疫的、免於……的、不受影響的、免除的；n. 免疫者、免除者",
         "unit": 12,
         "example": "Adults are often immune to German measles.",
         "exampleZh": "成人往往對風疹有免疫力。"
@@ -15914,7 +15914,7 @@ const toeicWordsDB = [
         "en": "impact",
         "kk": "[͵ɪmˋpækt]",
         "uk": "/ˈɪmpækt/",
-        "zh": "n. 撞擊、衝擊力、巨大影響、強大作用；vt. 產生影響、衝擊、撞擊、擠入",
+        "zh": "n. 影響、撞擊、衝擊力、巨大影響；vt. 衝擊、撞擊、擠入、壓緊",
         "unit": 12,
         "example": "A violent impact hurtled her forward.",
         "exampleZh": "一股劇烈的衝擊力將她猛地向前拋了出去。"
@@ -15974,7 +15974,7 @@ const toeicWordsDB = [
         "en": "imperative",
         "kk": "[͵ɪmˋpɛrətɪv]",
         "uk": "/ɪmˈperətɪv/",
-        "zh": "adj. 必要的、極重要的、命令的；n. 重要緊急的事、必要的事、祈使語氣、祈使語氣動詞",
+        "zh": "adj. 極重要的、必要的、命令的、強制的；n. 重要緊急的事、必要的事、祈使語氣、祈使語氣動詞",
         "unit": 12,
         "example": "In 'Go away!' the verb is in the imperative.",
         "exampleZh": "Go away!中的動詞是祈使語氣動詞。"
@@ -15984,7 +15984,7 @@ const toeicWordsDB = [
         "en": "implement",
         "kk": "[ˋɪmpləmənt]",
         "uk": "/ˈɪmplɪment/",
-        "zh": "vt. 實施、執行、貫徹；n. 工具、器具、履行、手段",
+        "zh": "vt. 執行、貫徹、為……提供工具；n. 工具、器具、履行、手段",
         "unit": 12,
         "example": "Leadership is about the ability to implement change.",
         "exampleZh": "領導才能是一種實行變革的能力。"
@@ -16004,7 +16004,7 @@ const toeicWordsDB = [
         "en": "implication",
         "kk": "[͵ɪmpləˋkeʃən]",
         "uk": "/ˌɪmplɪˈkeɪʃn/",
-        "zh": "n. 牽連、涉及、可能的影響、含意",
+        "zh": "n. 含意、言外之意、暗示、可能的影響",
         "unit": 12,
         "example": "The implication was plain, if left unstated.",
         "exampleZh": "即使不說出來，隱含義也很明顯。"
@@ -16034,7 +16034,7 @@ const toeicWordsDB = [
         "en": "import",
         "kk": "[͵ɪmˋpɔrt]",
         "uk": "/ˈɪmpɔːt/",
-        "zh": "n. 進口、輸入、進口商品、引進；vt. 進口、輸入、引進、匯入",
+        "zh": "n. 進口、進口商品、輸入、引進；vt. 進口、輸入、引進、匯入",
         "unit": 12,
         "example": "Import duties still average 30%.",
         "exampleZh": "進口關稅平均仍為30%。"
@@ -16064,7 +16064,7 @@ const toeicWordsDB = [
         "en": "impose",
         "kk": "[͵ɪmˋpoz]",
         "uk": "/ɪmˈpəʊz/",
-        "zh": "v. 強加於、強制推行、強制實行、把（自己的觀點、信仰等）強加於",
+        "zh": "v. 徵、加(負擔等)於、強制推行、強制實行",
         "unit": 12,
         "example": "She didn't want to impose her values on her family.",
         "exampleZh": "她並不想勉強家人接受自己的價值觀。"
@@ -16094,7 +16094,7 @@ const toeicWordsDB = [
         "en": "impress",
         "kk": "[͵ɪmˋprɛs]",
         "uk": "/ɪmˈpres/",
-        "zh": "vt. 使感動、使銘記、使欽佩、使留下深刻印象；n. 壓印、印記",
+        "zh": "vt. 給……極深的印象、使欽佩、使留下深刻印象、使意識到；n. 壓印、印記",
         "unit": 12,
         "example": "It didn't impress me as a good place to live.",
         "exampleZh": "那地方沒有給我留下適合居住的印象。"
@@ -16114,7 +16114,7 @@ const toeicWordsDB = [
         "en": "impressive",
         "kk": "[͵ɪmˋprɛsɪv]",
         "uk": "/ɪmˈpresɪv/",
-        "zh": "adj. 印象深刻的、給人印象深刻的、令人欽佩的",
+        "zh": "adj. 予人深刻印象的、給人印象深刻的、令人欽佩的",
         "unit": 12,
         "example": "It is an impressive achievement.",
         "exampleZh": "這是一項令人敬佩的成就。"
@@ -16134,7 +16134,7 @@ const toeicWordsDB = [
         "en": "improve",
         "kk": "[͵ɪmˋpruv]",
         "uk": "/ɪmˈpruːv/",
-        "zh": "v. 增強、改善、康復、健康好轉",
+        "zh": "v. 改善、康復、健康好轉、超過",
         "unit": 12,
         "example": "I need to improve my English.",
         "exampleZh": "我需要提高我的英語能力。"
@@ -16144,7 +16144,7 @@ const toeicWordsDB = [
         "en": "improvement",
         "kk": "[͵ɪmˋpruvmənt]",
         "uk": "/ɪmˈpruːvmənt/",
-        "zh": "n. 增強、改善、改進之處",
+        "zh": "n. 改進、改善、改進之處",
         "unit": 12,
         "example": "This is a marginal improvement on October.",
         "exampleZh": "這是對10月份的一個小小的改進。"
@@ -16154,7 +16154,7 @@ const toeicWordsDB = [
         "en": "impulse",
         "kk": "[ˋɪmpəls]",
         "uk": "/ˈɪmpʌls/",
-        "zh": "n. 衝動、刺激、脈衝、推動力；adj. 一時興起的、隨興的；v. 推動",
+        "zh": "n. 衝動、推動力、脈衝；adj. 一時興起的、隨興的；v. 推動",
         "unit": 12,
         "example": "I resisted the impulse to laugh.",
         "exampleZh": "我強忍著沒有笑出來。"
@@ -16224,7 +16224,7 @@ const toeicWordsDB = [
         "en": "incentive",
         "kk": "[͵ɪnˋsɛntɪv]",
         "uk": "/ɪnˈsentɪv/",
-        "zh": "n. 鼓勵、動機、激勵、刺激",
+        "zh": "n. 動機、激勵、刺激",
         "unit": 12,
         "example": "They have an incentive to keep us hooked.",
         "exampleZh": "他們有動機讓我們上鉤。"
@@ -16234,7 +16234,7 @@ const toeicWordsDB = [
         "en": "inch",
         "kk": "[ɪntʃ]",
         "uk": "/ɪntʃ/",
-        "zh": "n. 英吋、少許、英寸、身高；vt. 緩慢地移動、逐漸增加、緩慢移動",
+        "zh": "n. 英寸、少許、身高、腰圍；vt. 逐漸增加、緩慢移動",
         "unit": 12,
         "example": "There are 2.54 centimetres to an inch.",
         "exampleZh": "一吋等於 2.54 公分。"
@@ -16254,7 +16254,7 @@ const toeicWordsDB = [
         "en": "incidental",
         "kk": "[͵ɪnsɪˋdɛntəl]",
         "uk": "/ˌɪnsɪˈdent(ə)l/",
-        "zh": "adj. 附帶的、次要的、伴隨而來的、免不了的；n. 雜費、附帶事件",
+        "zh": "adj. 易發生的、附帶的、次要的、伴隨而來的；n. 雜費、附帶事件",
         "unit": 12,
         "example": "The discovery was incidental to their main research.",
         "exampleZh": "這一發現是他們主要研究中的附帶收穫。"
@@ -16294,7 +16294,7 @@ const toeicWordsDB = [
         "en": "incline",
         "kk": "[͵ɪnˋklaɪn]",
         "uk": "/ɪnˈklaɪn/",
-        "zh": "vt. 傾斜、屈身、傾向於、點頭；n. 斜坡、傾斜",
+        "zh": "vt. 傾向於、點頭、傾斜、贊同；n. 斜坡、傾斜",
         "unit": 12,
         "example": "I'm inclined to agree.",
         "exampleZh": "我傾向於同意你的觀點。"
@@ -16304,7 +16304,7 @@ const toeicWordsDB = [
         "en": "include",
         "kk": "[͵ɪnˋklud]",
         "uk": "/ɪnˈkluːd/",
-        "zh": "vt. 包括、包含、把……列為一部分、把……算入",
+        "zh": "vt. 包含、把……列為一部分、把……算入",
         "unit": 12,
         "example": "Symptoms include a sore throat.",
         "exampleZh": "症狀包括喉嚨痛。"
@@ -16324,7 +16324,7 @@ const toeicWordsDB = [
         "en": "inclusive",
         "kk": "[͵ɪnˋklusɪv]",
         "uk": "/ɪnˈkluːsɪv/",
-        "zh": "adj. 包含的、包括的、包容廣闊的、包括一切費用在內的",
+        "zh": "adj. 包含的、包括在內的、包容廣闊的、包括一切費用在內的",
         "unit": 12,
         "example": "Answer questions 8 to 12 inclusive.",
         "exampleZh": "回答第8到第12題。"
@@ -16444,7 +16444,7 @@ const toeicWordsDB = [
         "en": "increase",
         "kk": "[͵ɪnˋkris]",
         "uk": "/ɪnˈkriːs/",
-        "zh": "vt. 增加、增多、增長、增強；n. 增加、增長、增長量",
+        "zh": "vt. 增加、增長、增強、增大；n. 增長、增長量",
         "unit": 12,
         "example": "Prices will increase pro rata.",
         "exampleZh": "價格將相應提高。"
@@ -16504,7 +16504,7 @@ const toeicWordsDB = [
         "en": "indeed",
         "kk": "[͵ɪnˋdid]",
         "uk": "/ɪnˈdiːd/",
-        "zh": "adv. 真正地、確實、的確、實際上",
+        "zh": "adv. 確實、實在、的確、實際上",
         "unit": 12,
         "example": "The 1980s were indeed boom years.",
         "exampleZh": "20世紀80年代確實是繁榮的時代。"
@@ -16524,7 +16524,7 @@ const toeicWordsDB = [
         "en": "independent",
         "kk": "[͵ɪndɪˋpɛndənt]",
         "uk": "/ˌɪndɪˈpendənt/",
-        "zh": "adj. 獨立的、自主的、自治的、自立的；n. 獨立自主者、獨立團體、無黨派政治家、公理會教友",
+        "zh": "adj. 獨立的、自治的、自立的、自力更生的；n. 獨立自主者、獨立團體、無黨派政治家、公理會教友",
         "unit": 12,
         "example": "Mozambique became independent in 1975.",
         "exampleZh": "莫三比克於1975年獨立。"
@@ -16544,7 +16544,7 @@ const toeicWordsDB = [
         "en": "index",
         "kk": "[ˋɪndɛks]",
         "uk": "/ˈɪndeks/",
-        "zh": "n. 索引、指數、指標、量度；vt. 表明、指示、為……編索引、將……編入索引",
+        "zh": "n. 索引、指數、指標、量度；vt. 為……編索引、將……編入索引、使指數化、將（工資）等與（物價水平等）掛鉤",
         "unit": 12,
         "example": "There's even a special subject index.",
         "exampleZh": "甚至有一個特別的主題索引。"
@@ -16554,7 +16554,7 @@ const toeicWordsDB = [
         "en": "indicate",
         "kk": "[ˋɪndə͵ket]",
         "uk": "/ˈɪndɪkeɪt/",
-        "zh": "vt. 指示、指出、表明、標示",
+        "zh": "vt. 指出、表明、標示、象徵",
         "unit": 12,
         "example": "Road markings indicate where you can stop.",
         "exampleZh": "道路標記指示您可以在哪裡停車。"
@@ -16584,7 +16584,7 @@ const toeicWordsDB = [
         "en": "indifference",
         "kk": "[͵ɪnˋdɪfɚəns]",
         "uk": "/ɪnˈdɪfrəns/",
-        "zh": "n. 漠不關心、冷淡、不感興趣、不重要",
+        "zh": "n. 漠不關心、無關緊要、不感興趣、不重要",
         "unit": 12,
         "example": "Their father treated them with indifference.",
         "exampleZh": "他們的父親對他們漠不關心。"
@@ -16594,7 +16594,7 @@ const toeicWordsDB = [
         "en": "indifferent",
         "kk": "[͵ɪnˋdɪfrənt]",
         "uk": "/ɪnˈdɪfrənt/",
-        "zh": "adj. 冷淡的、不關心的、中等的、平庸的",
+        "zh": "adj. 不感興趣的、中立的、無關緊要的、冷淡的",
         "unit": 12,
         "example": "He was mute, distant, and indifferent.",
         "exampleZh": "他緘默無言，對人疏遠而且冷漠。"
@@ -16604,7 +16604,7 @@ const toeicWordsDB = [
         "en": "indispensable",
         "kk": "[͵ɪndɪˋspɛnsəbəl]",
         "uk": "/ˌɪndɪˈspensəb(ə)l/",
-        "zh": "adj. 必需的、不可或缺的、不能撇開的、責無旁貸的；n. 不可缺少之物、必不可少的人",
+        "zh": "adj. 必需的、不可或缺的、不能撇開的；n. 不可缺少之物、必不可少的人",
         "unit": 12,
         "example": "She was becoming indispensable to him.",
         "exampleZh": "對他來說她正變得不可或缺。"
@@ -16614,7 +16614,7 @@ const toeicWordsDB = [
         "en": "individual",
         "kk": "[͵ɪndəˋvɪdʒəwəl]",
         "uk": "/ˌɪndɪˈvɪdʒuəl/",
-        "zh": "adj. 個體的、個人的、單獨的、個別的；n. 個人、個體、與眾不同的人、有個性的人",
+        "zh": "adj. 個人、單獨的、個別的、個人的；n. 個體、個人、與眾不同的人、有個性的人",
         "unit": 12,
         "example": "Some individual investors exulted at the record.",
         "exampleZh": "一些個人投資者為這一記錄歡欣鼓舞。"
@@ -16654,7 +16654,7 @@ const toeicWordsDB = [
         "en": "industrialize",
         "kk": "[͵ɪnˋdʌstriə͵laɪz]",
         "uk": "/ɪnˈdʌstriəlaɪz/",
-        "zh": "vt. 工業化",
+        "zh": "vt. 使工業化、工業化",
         "unit": 12,
         "example": "Energy consumption rises as countries industrialize.",
         "exampleZh": "能源消耗隨著各國工業化而增加。"
@@ -16674,7 +16674,7 @@ const toeicWordsDB = [
         "en": "inevitable",
         "kk": "[͵ɪnˋɛvətəbəl]",
         "uk": "/ɪnˈevɪtəb(ə)l/",
-        "zh": "adj. 無法避免的、必然發生的、不可避免的、總會發生的；n. 必然發生的事、不可避免的事",
+        "zh": "adj. 不可避免的、必然發生的、總會發生的、慣常的；n. 必然發生的事、不可避免的事",
         "unit": 12,
         "example": "You have to accept the inevitable.",
         "exampleZh": "你得接受必然發生的事。"
@@ -16714,7 +16714,7 @@ const toeicWordsDB = [
         "en": "infant",
         "kk": "[ˋɪnfənt]",
         "uk": "/ˈɪnfənt/",
-        "zh": "n. 嬰兒、幼兒、學童、未成年人；adj. 嬰兒的、初期的、供嬰幼兒用的、初創期的",
+        "zh": "n. 嬰兒、幼兒、學童、未成年人；adj. 供嬰幼兒用的、初期的、初創期的、四歲至七歲幼兒的",
         "unit": 12,
         "example": "Infant mortality is a reliable barometer of socio-economic conditions.",
         "exampleZh": "嬰兒死亡率是社會經濟狀況的可靠指標。"
@@ -16724,7 +16724,7 @@ const toeicWordsDB = [
         "en": "infect",
         "kk": "[͵ɪnˋfɛkt]",
         "uk": "/ɪnˈfekt/",
-        "zh": "vt. 使受影響、感染、傳染、浸染",
+        "zh": "vt. 傳染、侵染、感染、浸染",
         "unit": 12,
         "example": "A single mosquito can infect a large number of people.",
         "exampleZh": "一隻蚊子就能傳染很多人。"
@@ -16744,7 +16744,7 @@ const toeicWordsDB = [
         "en": "infer",
         "kk": "[͵ɪnˋfɝ]",
         "uk": "/ɪnˈfɜː(r)/",
-        "zh": "vt. 推論、推斷、暗示、暗指",
+        "zh": "vt. 推斷、推論、暗示、暗指",
         "unit": 12,
         "example": "What can we infer about the author?",
         "exampleZh": "我們可以推斷出關於作者的什麼？"
@@ -16874,7 +16874,7 @@ const toeicWordsDB = [
         "en": "informative",
         "kk": "[͵ɪnˋfɔrmətɪv]",
         "uk": "/ɪnˈfɔːmətɪv/",
-        "zh": "adj. 見聞廣博的、提供有用資訊的、增長見聞的",
+        "zh": "adj. 教育性的、有益的、提供有用資訊的、增長見聞的",
         "unit": 12,
         "example": "Burton's text is concise and informative.",
         "exampleZh": "伯頓的文章文字簡潔、內容豐富。"
@@ -16924,7 +16924,7 @@ const toeicWordsDB = [
         "en": "inherent",
         "kk": "[ɪnˋhɪrənt]",
         "uk": "/ɪnˈherənt/",
-        "zh": "adj. 內在的、固有的、固定屬於（某人）的、作定語和表語時意義相同的",
+        "zh": "adj. 固有的、與生俱來的、內在的、固定屬於（某人）的",
         "unit": 12,
         "example": "Individuality is a valued and inherent part of the British character.",
         "exampleZh": "個性是英國人重視並固有的特徵。"
@@ -16954,7 +16954,7 @@ const toeicWordsDB = [
         "en": "initiate",
         "kk": "[͵ɪnˋɪʃi͵et]",
         "uk": "/ɪˈnɪʃieɪt/",
-        "zh": "vt. 開始實施、發起、使瞭解、傳授；n. 新加入某組織的人、新入會的人；adj. 新加入的",
+        "zh": "vt. 開始實施、發起、使瞭解、傳授；n. 新加入某組織的人、新入會的人",
         "unit": 12,
         "example": "They wanted to initiate a discussion on economics.",
         "exampleZh": "他們想發起一次關於經濟學的討論。"
@@ -16974,7 +16974,7 @@ const toeicWordsDB = [
         "en": "initiative",
         "kk": "[͵ɪnˋɪʃətɪv]",
         "uk": "/ɪˈnɪʃətɪv/",
-        "zh": "n. 措施、倡議、主動性、積極性",
+        "zh": "n. 主動權、措施、倡議、主動性",
         "unit": 12,
         "example": "She was disappointed by his lack of initiative.",
         "exampleZh": "她對他缺乏主動性感到失望。"
@@ -17004,7 +17004,7 @@ const toeicWordsDB = [
         "en": "injure",
         "kk": "[ˋɪndʒɚ]",
         "uk": "/ˈɪndʒə(r)/",
-        "zh": "vt. 傷害、損害、使受傷、弄傷",
+        "zh": "vt. 傷害、損害、毀壞、使受傷",
         "unit": 12,
         "example": "This could seriously injure the company's reputation.",
         "exampleZh": "這會嚴重損害公司的聲譽。"
@@ -17024,7 +17024,7 @@ const toeicWordsDB = [
         "en": "injury",
         "kk": "[ˋɪndʒɚi]",
         "uk": "/ˈɪndʒəri/",
-        "zh": "n. 受傷、傷、損害、傷害",
+        "zh": "n. 傷害、傷、損害、挫傷",
         "unit": 12,
         "example": "He is recovering from a knee injury.",
         "exampleZh": "他的膝傷正在痊癒。"
@@ -17034,7 +17034,7 @@ const toeicWordsDB = [
         "en": "inner",
         "kk": "[ˋɪnɚ]",
         "uk": "/ˈɪnə(r)/",
-        "zh": "adj. 內部的、核心的、靠近中心的、內心的；n. 內部、內裡、靶子內圈、命中靶子內圈的一發",
+        "zh": "adj. 內部的、靠近中心的、內心的、未表達出來的；n. 內部、內裡、靶子內圈、命中靶子內圈的一發",
         "unit": 12,
         "example": "His bedroom's his inner sanctum.",
         "exampleZh": "臥房是他的內室。"
@@ -17044,7 +17044,7 @@ const toeicWordsDB = [
         "en": "innocent",
         "kk": "[ˋɪnəsənt]",
         "uk": "/ˈɪnəs(ə)nt/",
-        "zh": "adj. 單純的、天真的、幼稚的；n. 天真無邪的人、幼稚的人、無辜的受害者",
+        "zh": "adj. 無罪的、清白的、天真的、幼稚的；n. 天真無邪的人、幼稚的人、無辜的受害者",
         "unit": 12,
         "example": "The accused was found innocent.",
         "exampleZh": "被告被判定無罪。"
@@ -17064,7 +17064,7 @@ const toeicWordsDB = [
         "en": "innovation",
         "kk": "[͵ɪnəˋveʃən]",
         "uk": "/ˌɪnəˈveɪʃ(ə)n/",
-        "zh": "n. 創新、新事物、新方法、革新",
+        "zh": "n. 革新、創新、新事物、新方法",
         "unit": 12,
         "example": "Capitalism stresses innovation, competition and individualism.",
         "exampleZh": "資本主義強調的是創新、競爭和個人至上。"
@@ -17084,7 +17084,7 @@ const toeicWordsDB = [
         "en": "inquire",
         "kk": "[͵ɪnˋkwaɪr]",
         "uk": "/ɪnˈkwaɪə(r)/",
-        "zh": "v. 詢問、打聽、調查、查究",
+        "zh": "v. 訊問、查問、調查、查究",
         "unit": 12,
         "example": "He called them several times to inquire about job possibilities.",
         "exampleZh": "他給他們打了幾次電話打聽就業的可能性。"
@@ -17094,7 +17094,7 @@ const toeicWordsDB = [
         "en": "inquiry",
         "kk": "[͵ɪnˋkwaɪ͵ri]",
         "uk": "/ɪnˈkwaɪəri/",
-        "zh": "n. 詢問、打聽、疑問、調查",
+        "zh": "n. 詢問、打聽、質詢、疑問",
         "unit": 12,
         "example": "The board of inquiry is continuing its investigations.",
         "exampleZh": "調查委員會在繼續做調查。"
@@ -17144,7 +17144,7 @@ const toeicWordsDB = [
         "en": "insert",
         "kk": "[͵ɪnˋsɝt]",
         "uk": "/ɪnˈsɜːt/",
-        "zh": "vt. 插入、嵌入、新增、加插；n. 插入物、插頁、附加頁、插入鏡頭",
+        "zh": "vt. 插入、嵌入、新增；n. 夾在報刊中的散頁廣告、插入物、插頁、附加頁",
         "unit": 12,
         "example": "You need to insert a phrase.",
         "exampleZh": "你需要插入一個短語。"
@@ -17174,7 +17174,7 @@ const toeicWordsDB = [
         "en": "insight",
         "kk": "[ˋɪn͵saɪt]",
         "uk": "/ˈɪnsaɪt/",
-        "zh": "n. 見解、看法、洞悉、瞭解",
+        "zh": "n. 洞察力、洞悉、瞭解",
         "unit": 12,
         "example": "Where do you get all of your insight from?",
         "exampleZh": "你的所有洞察力從何而來？"
@@ -17214,7 +17214,7 @@ const toeicWordsDB = [
         "en": "inspection",
         "kk": "[͵ɪnˋspɛkʃən]",
         "uk": "/ɪnˈspekʃ(ə)n/",
-        "zh": "n. 檢查、審查、視察、審視",
+        "zh": "n. 檢查、檢閱、視察、審視",
         "unit": 12,
         "example": "Engineers carried out a thorough inspection of the track.",
         "exampleZh": "工程師對軌道進行了徹底檢查。"
@@ -17234,7 +17234,7 @@ const toeicWordsDB = [
         "en": "inspiration",
         "kk": "[͵ɪnspɚˋeʃən]",
         "uk": "/ˌɪnspəˈreɪʃ(ə)n/",
-        "zh": "n. 靈感、鼓舞、啟發靈感的人、鼓舞人心的人",
+        "zh": "n. 靈感、啟發靈感的人、鼓舞人心的人、好主意",
         "unit": 12,
         "example": "Both poets drew their inspiration from the countryside.",
         "exampleZh": "兩位詩人都是從鄉村得到他們的靈感。"
@@ -17274,7 +17274,7 @@ const toeicWordsDB = [
         "en": "installment",
         "kk": "[͵ɪnˋstɔlmənt]",
         "uk": "/ɪnˈstɔːlmənt/",
-        "zh": "n. 安裝、設置、分期付款、每期應付款項",
+        "zh": "n. 分期付款、安置、每期應付款項、一期",
         "unit": 12,
         "example": "I will cover these transitions in the next installment.",
         "exampleZh": "我將在下期連載中涵蓋這些變化。"
@@ -17284,7 +17284,7 @@ const toeicWordsDB = [
         "en": "instance",
         "kk": "[ˋɪnstəns]",
         "uk": "/ˈɪnstəns/",
-        "zh": "n. 例子、實例、例項；v. 引證、舉……為例",
+        "zh": "n. 例子、例項；v. 舉……為例",
         "unit": 12,
         "example": "Can you quote me an instance of when this happened?",
         "exampleZh": "你能否給我舉例說明一下發生這事的情況？"
@@ -17294,7 +17294,7 @@ const toeicWordsDB = [
         "en": "instant",
         "kk": "[ˋɪnstənt]",
         "uk": "/ˈɪnstənt/",
-        "zh": "adj. 立即的、即刻的、立刻的、馬上的；n. 瞬間、片刻、當時、那一刻",
+        "zh": "adj. 立刻的、馬上的、速食的、即食的；n. 瞬間、片刻、當時、那一刻",
         "unit": 12,
         "example": "For an instant, Barney was tempted to flee.",
         "exampleZh": "那一瞬間，巴尼很想逃走。"
@@ -17334,7 +17334,7 @@ const toeicWordsDB = [
         "en": "institution",
         "kk": "[͵ɪnstɪˋtuʃən]",
         "uk": "/ˌɪnstɪˈtjuːʃ(ə)n/",
-        "zh": "n. 制度、機構、團體、社會收容機構",
+        "zh": "n. 機構、團體、社會收容機構、制度",
         "unit": 12,
         "example": "I believe in the institution of marriage.",
         "exampleZh": "我相信婚姻制度。"
@@ -17354,7 +17354,7 @@ const toeicWordsDB = [
         "en": "instruction",
         "kk": "[͵ɪnˋstrʌkʃən]",
         "uk": "/ɪnˈstrʌkʃ(ə)n/",
-        "zh": "n. 命令、指示、用法說明、吩咐；adj. 說明用法的",
+        "zh": "n. 教學、講授、用法說明、指示；adj. 說明用法的",
         "unit": 12,
         "example": "Each candidate is given instruction in safety.",
         "exampleZh": "每位候選人都被給予了安全指導。"
@@ -17374,7 +17374,7 @@ const toeicWordsDB = [
         "en": "instrument",
         "kk": "[ˋɪnstrəmənt]",
         "uk": "/ˈɪnstrəmənt/",
-        "zh": "n. 樂器、儀器、器具、器械；v. 給……裝備測量儀器",
+        "zh": "n. 儀器、器械、樂器、促成某事的人；v. 給……裝備測量儀器",
         "unit": 12,
         "example": "Is he learning an instrument?",
         "exampleZh": "他在學習演奏樂器嗎？"
@@ -17394,7 +17394,7 @@ const toeicWordsDB = [
         "en": "insult",
         "kk": "[͵ɪnˋsʌlt]",
         "uk": "/ɪnˈsʌlt; ˈɪnsʌlt/",
-        "zh": "vt. 侮辱、羞辱、冒犯、損害；n. 侮辱、冒犯、（對組織、器官的）損傷",
+        "zh": "vt. 侮辱、冒犯、損害、危害；n. 侮辱、冒犯、（對組織、器官的）損傷",
         "unit": 12,
         "example": "Forgive me, I don't mean to insult you.",
         "exampleZh": "請原諒我，我不是有意侮辱你。"
@@ -17414,7 +17414,7 @@ const toeicWordsDB = [
         "en": "insure",
         "kk": "[͵ɪnˋʃʊr]",
         "uk": "/ɪnˈʃʊə(r)/",
-        "zh": "vt. 保證、確保、為……投保、為……提供保險",
+        "zh": "vt. 投保、確保、為……投保、為……提供保險",
         "unit": 12,
         "example": "We insure against all damage, accidental or otherwise.",
         "exampleZh": "我們的保險包括一切意外或其他損失。"
@@ -17424,7 +17424,7 @@ const toeicWordsDB = [
         "en": "integrity",
         "kk": "[͵ɪnˋtɛɡrəti]",
         "uk": "/ɪnˈteɡrəti/",
-        "zh": "n. 正直、誠實、完整、完全",
+        "zh": "n. 正直、廉正、健全、誠實",
         "unit": 12,
         "example": "Mayhew is a man of rock-solid integrity.",
         "exampleZh": "梅休是一個正直可靠的男人。"
@@ -17434,7 +17434,7 @@ const toeicWordsDB = [
         "en": "intelligence",
         "kk": "[͵ɪnˋtɛlədʒəns]",
         "uk": "/ɪnˈtelɪdʒəns/",
-        "zh": "n. 聰明才智、智力、才智、智慧",
+        "zh": "n. 智能、智慧、理解力、智力",
         "unit": 12,
         "example": "Many dyslexics have above-average intelligence.",
         "exampleZh": "很多誦讀困難者的智力都在平均水平以上。"
@@ -17484,7 +17484,7 @@ const toeicWordsDB = [
         "en": "intent",
         "kk": "[͵ɪnˋtɛnt]",
         "uk": "/ɪnˈtent/",
-        "zh": "adj. 專注的、專心致志的、堅決的、急切的；n. 目的、意圖、故意",
+        "zh": "adj. 專注的、專心致志的、堅決的；n. 目的、意圖、故意",
         "unit": 12,
         "example": "His intent is clearly not to placate his critics.",
         "exampleZh": "他的目的顯然不是要安撫批評他的人。"
@@ -17514,7 +17514,7 @@ const toeicWordsDB = [
         "en": "interest",
         "kk": "[ˋɪntrəst]",
         "uk": "/ˈɪntrəst/",
-        "zh": "n. 興趣、喜好、利息、關注；vt. 使感興趣、引起……的關注、勸說（某人）做",
+        "zh": "n. 興趣、關注、吸引力、趣味；vt. 使感興趣、引起……的關注、勸說（某人）做",
         "unit": 12,
         "example": "Interest rates should come down.",
         "exampleZh": "利率應該會下降。"
@@ -17524,7 +17524,7 @@ const toeicWordsDB = [
         "en": "interfere",
         "kk": "[͵ɪntɚˋfɪr]",
         "uk": "/ˌɪntəˈfɪə(r)/",
-        "zh": "vi. 妨礙、衝突、干涉、干擾",
+        "zh": "vi. 介入、干涉、干預、干擾",
         "unit": 12,
         "example": "We take the view that it would be wrong to interfere.",
         "exampleZh": "我們所持的態度是：干涉是錯誤的。"
@@ -17534,7 +17534,7 @@ const toeicWordsDB = [
         "en": "interior",
         "kk": "[͵ɪnˋtɪriɚ]",
         "uk": "/ɪnˈtɪəriə(r)/",
-        "zh": "adj. 內部的、內側的、裡面的、國內的；n. 內部、裡面、內陸、腹地",
+        "zh": "adj. 內部、內部的、裡面的、國內的；n. 內部、裡面、內陸",
         "unit": 12,
         "example": "The interior is starkly simple.",
         "exampleZh": "室內粗陋簡樸。"
@@ -17594,7 +17594,7 @@ const toeicWordsDB = [
         "en": "interpreter",
         "kk": "[͵ɪnˋtɝprətɚ]",
         "uk": "/ɪnˈtɜːprətə(r)/",
-        "zh": "n. 口譯者、譯員、演奏者、表演者",
+        "zh": "n. 通譯員、口譯者、譯員、演奏者",
         "unit": 12,
         "example": "They volunteered me for the job of interpreter.",
         "exampleZh": "他們擅自指定由我擔任口頭翻譯。"
@@ -17614,7 +17614,7 @@ const toeicWordsDB = [
         "en": "interruption",
         "kk": "[͵ɪntɚˋʌpʃən]",
         "uk": "/ˌɪntəˈrʌpʃ(ə)n/",
-        "zh": "n. 打擾、干擾、打斷、插嘴",
+        "zh": "n. 中止、干擾、打斷、插嘴",
         "unit": 12,
         "example": "The sudden interruption stopped Justin in mid-sentence.",
         "exampleZh": "賈斯廷話說到一半時被突然打斷了。"
@@ -17624,7 +17624,7 @@ const toeicWordsDB = [
         "en": "interview",
         "kk": "[ˋɪntɚ͵vju]",
         "uk": "/ˈɪntəvjuː/",
-        "zh": "vt. 面試、面談、採訪、訪問；n. 訪談、面試、面談、採訪",
+        "zh": "vt. 面談、面試、採訪、訪問；n. 採訪、面試、面談、訪談",
         "unit": 12,
         "example": "She spruced up for the interview.",
         "exampleZh": "她為參加面試打扮了一番。"
@@ -17674,7 +17674,7 @@ const toeicWordsDB = [
         "en": "introduction",
         "kk": "[͵ɪntrəˋdʌkʃən]",
         "uk": "/ˌɪntrəˈdʌkʃn/",
-        "zh": "n. 介紹、引見、初次投入使用、採用",
+        "zh": "n. 介紹、正式引見、初次投入使用、採用",
         "unit": 12,
         "example": "It's a useful introduction to an extremely complex subject.",
         "exampleZh": "這是對一門極為複雜的學科的有益入門教程。"
@@ -17724,7 +17724,7 @@ const toeicWordsDB = [
         "en": "inventor",
         "kk": "[͵ɪnˋvɛntɚ]",
         "uk": "/ɪnˈventə(r)/",
-        "zh": "n. 發明家、創作者、發明者",
+        "zh": "n. 發明家、發明者",
         "unit": 12,
         "example": "The royalties enabled the inventor to re-establish himself in business.",
         "exampleZh": "這些使用費使這名發明者能再次立足商界。"
@@ -17734,7 +17734,7 @@ const toeicWordsDB = [
         "en": "inventory",
         "kk": "[͵ɪnvənˋtɔri]",
         "uk": "/ˈɪnvəntri/",
-        "zh": "n. 存貨清單、目錄、詳細目錄、清單；v. 開列清單",
+        "zh": "n. 詳細目錄、清單、存貨、庫存；v. 開列清單",
         "unit": 12,
         "example": "They're likely to hold big fire sales to liquidate their inventory.",
         "exampleZh": "為了盤活庫存，他們很可能會進行大甩賣。"
@@ -17744,7 +17744,7 @@ const toeicWordsDB = [
         "en": "invest",
         "kk": "[͵ɪnˋvɛst]",
         "uk": "/ɪnˈvest/",
-        "zh": "vt. 投資、投入、賦予、授予",
+        "zh": "vt. 投、投資、投入、賦予",
         "unit": 12,
         "example": "It would be hazardous to invest so much.",
         "exampleZh": "投資這麼多會有風險。"
@@ -17754,7 +17754,7 @@ const toeicWordsDB = [
         "en": "investment",
         "kk": "[͵ɪnˋvɛstmənt]",
         "uk": "/ɪnˈvestmənt/",
-        "zh": "n. 投資、值得買的東西、投入、包圍",
+        "zh": "n. 投資、投資額、值得買的東西、投入",
         "unit": 12,
         "example": "Investment is all about running risks.",
         "exampleZh": "投資就是要冒風險。"
@@ -17814,7 +17814,7 @@ const toeicWordsDB = [
         "en": "involve",
         "kk": "[͵ɪnˋvɑlv]",
         "uk": "/ɪnˈvɒlv/",
-        "zh": "vt. 涉入、參與、牽涉、涉及",
+        "zh": "vt. 使捲入、連累、牽涉、涉及",
         "unit": 12,
         "example": "Most air rage incidents involve heavy drinking.",
         "exampleZh": "大多數空中憤怒事件都與酗酒有關。"
@@ -17824,7 +17824,7 @@ const toeicWordsDB = [
         "en": "involvement",
         "kk": "[͵ɪnˋvɑlvmənt]",
         "uk": "/ɪnˈvɒlvmənt/",
-        "zh": "n. 參與、介入、投入、沉迷",
+        "zh": "n. 介入、參與、投入、沉迷",
         "unit": 12,
         "example": "One of the main themes of TQM is employee involvement.",
         "exampleZh": "全員質量管理的一個主要原則之一是僱員參與。"
@@ -17844,7 +17844,7 @@ const toeicWordsDB = [
         "en": "issue",
         "kk": "[ˋɪʃu]",
         "uk": "/ˈɪʃuː/",
-        "zh": "n. 問題、爭論、議題、爭論點；vt. 發行、配給、發表、頒佈",
+        "zh": "n. 議題、爭論點、期、號；vt. 發表、頒佈、分發、分配",
         "unit": 12,
         "example": "You're just avoiding the issue.",
         "exampleZh": "你只不過是在迴避問題。"
@@ -17884,7 +17884,7 @@ const toeicWordsDB = [
         "en": "janitor",
         "kk": "[ˋdʒænətɚ]",
         "uk": "/ˈdʒænɪtə(r)/",
-        "zh": "n. 看門人的工友、清潔工、大樓管理員、看門人",
+        "zh": "n. 清潔工、管理員、看門人、大樓管理員",
         "unit": 12,
         "example": "Ed Roberts had been a school janitor for a long time.",
         "exampleZh": "埃德·羅伯茨做學校的看門人已很久了。"
@@ -17894,7 +17894,7 @@ const toeicWordsDB = [
         "en": "job",
         "kk": "[dʒɑb]",
         "uk": "/dʒɒb/",
-        "zh": "n. 工作、職業、零工、任務；v. 刺、捅、買賣股票、欺騙",
+        "zh": "n. 職業、工作、零工、任務；v. 刺、捅、買賣股票、欺騙",
         "unit": 12,
         "example": "Her job is multifaceted.",
         "exampleZh": "她的工作是多方面的。"
@@ -17914,7 +17914,7 @@ const toeicWordsDB = [
         "en": "jog",
         "kk": "[dʒɑɡ]",
         "uk": "/dʒɒɡ/",
-        "zh": "v. 慢跑、輕搖、輕推、輕撞；n. 慢跑、緩行、慢跑鍛鍊、輕推",
+        "zh": "v. 慢跑、輕推、輕撞、顛簸著行進；n. 慢跑鍛鍊、輕推、平穩的慢速",
         "unit": 12,
         "example": "I got up early the next morning to jog.",
         "exampleZh": "我次日清晨早起去慢跑了。"
@@ -17944,7 +17944,7 @@ const toeicWordsDB = [
         "en": "journal",
         "kk": "[ˋdʒɝnəl]",
         "uk": "/ˈdʒɜːn(ə)l/",
-        "zh": "n. 日報、雜誌、期刊、報紙",
+        "zh": "n. 日報、雜誌、期刊、日誌",
         "unit": 12,
         "example": "Sara confided to her journal.",
         "exampleZh": "薩拉在日記中傾吐心事。"
@@ -17974,7 +17974,7 @@ const toeicWordsDB = [
         "en": "judge",
         "kk": "[dʒʌdʒ]",
         "uk": "/dʒʌdʒ/",
-        "zh": "n. 法官、評判、審判官、裁判員；vt. 審判、判決、判斷、認為",
+        "zh": "n. 法官、審判官、裁判員、評判員；vt. 判斷、認為、裁判、評判",
         "unit": 12,
         "example": "The judge allowed my claim.",
         "exampleZh": "法官同意我的要求。"
@@ -18014,7 +18014,7 @@ const toeicWordsDB = [
         "en": "justify",
         "kk": "[ˋdʒʌstə͵faɪ]",
         "uk": "/ˈdʒʌstɪfaɪ/",
-        "zh": "vt. 證明無罪、開釋、是……的正當理由、對……作出解釋",
+        "zh": "vt. 辯解、是……的正當理由、對……作出解釋",
         "unit": 12,
         "example": "How can they justify paying such huge salaries?",
         "exampleZh": "他們怎能證明付這麼大筆薪金是正當的呢？"
@@ -18044,7 +18044,7 @@ const toeicWordsDB = [
         "en": "keep",
         "kk": "[kip]",
         "uk": "/kiːp/",
-        "zh": "v. 持有、保有、保持、留在；n. 生活必需品、生活費用、城堡主樓",
+        "zh": "v. 保持、維持、留在、繼續；n. 生活必需品、生活費用、城堡主樓",
         "unit": 12,
         "example": "Her grandchildren keep her young.",
         "exampleZh": "她的孫子讓她保持年輕。"
@@ -18054,7 +18054,7 @@ const toeicWordsDB = [
         "en": "keeper",
         "kk": "[ˋkipɚ]",
         "uk": "/ˈkiːpə(r)/",
-        "zh": "n. 飼養者、保管人、監護人、守護者",
+        "zh": "n. 保管人、守衛、監護人、守護者",
         "unit": 12,
         "example": "He won the soccer game with the goal keeper.",
         "exampleZh": "他和守門員一起贏得了足球比賽。"
@@ -18064,7 +18064,7 @@ const toeicWordsDB = [
         "en": "key",
         "kk": "[ki]",
         "uk": "/kiː/",
-        "zh": "n. 鑰匙、關鍵、鍵、要訣；v. 鍵入、成為（獲勝）的關鍵、用鑰匙劃壞、用別針（或楔子、栓）固定；adj. 關鍵的、主要的",
+        "zh": "n. 鑰匙、鍵、關鍵、要訣；v. 鍵入、成為（獲勝）的關鍵、用鑰匙劃壞、用別針（或楔子、栓）固定；adj. 關鍵的、主要的",
         "unit": 12,
         "example": "His contribution could be key.",
         "exampleZh": "他的貢獻可能是關鍵。"
@@ -18084,7 +18084,7 @@ const toeicWordsDB = [
         "en": "kick",
         "kk": "[kɪk]",
         "uk": "/kɪk/",
-        "zh": "vt. 踢、剔除、踢腿、對（自己）生氣；n. 踢、踢腿、極度興奮、極大的樂趣",
+        "zh": "vt. 踢、踢腿、對（自己）生氣、戒除；n. 踢腿、踢、極度興奮、極大的樂趣",
         "unit": 12,
         "example": "This drink has quite a kick.",
         "exampleZh": "這飲料很有勁兒。"
@@ -18104,7 +18104,7 @@ const toeicWordsDB = [
         "en": "kid",
         "kk": "[kɪd]",
         "uk": "/kɪd/",
-        "zh": "n. 小孩、兒童、年輕人、小山羊；v. 戲弄、開玩笑、欺騙、哄騙；adj. 較年幼的、小山羊皮製的",
+        "zh": "n. 小孩、孩子、年輕人、小山羊；v. 戲弄、開玩笑、欺騙、哄騙；adj. 較年幼的、小山羊皮製的",
         "unit": 12,
         "example": "'Oh, she's just a kid,' he said scathingly.",
         "exampleZh": "「哦，她只是個孩子，」他嚴厲地說。"
@@ -18164,7 +18164,7 @@ const toeicWordsDB = [
         "en": "kin",
         "kk": "[kɪn]",
         "uk": "/kɪn/",
-        "zh": "n. 家族、親戚、家屬；adj. 同類的、類似的、有親戚關係的",
+        "zh": "n. 家屬、親戚；adj. 有親戚關係的",
         "unit": 12,
         "example": "We have notified the next of kin.",
         "exampleZh": "我們已經通知了直系親屬。"
@@ -18204,7 +18204,7 @@ const toeicWordsDB = [
         "en": "kit",
         "kk": "[kɪt]",
         "uk": "/kɪt/",
-        "zh": "n. 成套工具、成套裝置、配套元件、全套衣服及裝備；v. 裝備、預備",
+        "zh": "n. 成套工具、配套元件、成套裝置、全套衣服及裝備；v. 裝備、預備",
         "unit": 12,
         "example": "My boyhood hero was Kit Carson.",
         "exampleZh": "我孩提時的偶像是基特·卡森。"
@@ -18254,7 +18254,7 @@ const toeicWordsDB = [
         "en": "lab",
         "kk": "[læb]",
         "uk": "/læb/",
-        "zh": "n. 實驗室、實驗課；abbr. 工黨、拉布拉多尋回犬",
+        "zh": "n. 實驗室、研究室、實驗課；abbr. 工黨、拉布拉多尋回犬",
         "unit": 12,
         "example": "The lab assistant was wearing a white overall.",
         "exampleZh": "實驗室助手穿著一件白罩衣。"
@@ -18264,7 +18264,7 @@ const toeicWordsDB = [
         "en": "label",
         "kk": "[ˋlebəl]",
         "uk": "/ˈleɪb(ə)l/",
-        "zh": "n. 貼紙、標籤、標牌、稱號；vt. 貼標籤於、貼標籤、把……不公正地稱為、用示蹤劑使（物質等）示蹤",
+        "zh": "n. 標籤、標牌、稱號、綽號；vt. 貼標籤、把……不公正地稱為、用示蹤劑使（物質等）示蹤",
         "unit": 12,
         "example": "She glued the label onto the box.",
         "exampleZh": "她把標籤貼在箱子上。"
@@ -18274,7 +18274,7 @@ const toeicWordsDB = [
         "en": "labor",
         "kk": "[ˋlebɚ]",
         "uk": "/ˈleɪbə(r)/",
-        "zh": "n. 勞工、勞動、工作、勞作；vi. 勞動、艱苦地幹活、努力、苦幹；vt. 勞動、艱苦地幹活、詳細分析、使厭煩；v. 勞動、艱苦地幹活",
+        "zh": "n. 勞動、工作、勞作、勞工；vi. 勞動、努力、苦幹、分娩；vt. 詳細分析、使厭煩",
         "unit": 12,
         "example": "The fruit of labor is sweetest.",
         "exampleZh": "勞動的果實最甜美。"
@@ -18284,7 +18284,7 @@ const toeicWordsDB = [
         "en": "laboratory",
         "kk": "[ˋlæbrə͵tɔri]",
         "uk": "/ləˈbɒrətri/",
-        "zh": "n. 實驗室、實驗大樓",
+        "zh": "n. 實驗室、研究室、實驗大樓",
         "unit": 12,
         "example": "Laboratory and field tests have been conducted.",
         "exampleZh": "已進行實驗室試驗和現場試驗。"
@@ -18294,7 +18294,7 @@ const toeicWordsDB = [
         "en": "lack",
         "kk": "[læk]",
         "uk": "/læk/",
-        "zh": "n. 欠缺、不足、缺乏；vt. 缺少、缺乏、不足、需要",
+        "zh": "n. 不足、缺乏；vt. 缺乏、不足、需要",
         "unit": 12,
         "example": "Her eyes ached from lack of sleep.",
         "exampleZh": "她的眼睛因缺乏睡眠而疼痛。"
@@ -18314,7 +18314,7 @@ const toeicWordsDB = [
         "en": "lag",
         "kk": "[læɡ]",
         "uk": "/læɡ/",
-        "zh": "vi. 落後、延遲、掉隊、落後於；n. 落後、延遲、時間間隔、囚犯；adj. 最後的",
+        "zh": "vi. 滯後、掉隊、落後於、給（管道等）加防凍保暖層；n. 衰退、時間間隔、囚犯、慣犯；adj. 最後的",
         "unit": 12,
         "example": "There's a time lag between infection with HIV and developing AIDS.",
         "exampleZh": "從感染艾滋病病毒到發展成為艾滋病病人有一定的時間間隔。"
@@ -18334,7 +18334,7 @@ const toeicWordsDB = [
         "en": "lament",
         "kk": "[ləˋmɛnt]",
         "uk": "/ləˈment/",
-        "zh": "n. 輓歌、悼文；vt. 哀悼、悲痛、對……感到悲痛、對……表示失望",
+        "zh": "n. 輓歌、悼文、表達哀傷（或痛惜）之情的言辭、抱怨；vt. 對……感到悲痛、對……表示失望、抱怨",
         "unit": 12,
         "example": "Citizens gathered outside city hall to lament the loss of historical heritage landmarks.",
         "exampleZh": "市民們聚集在市政廳外，哀悼歷史文化古蹟的消失。"
@@ -18344,7 +18344,7 @@ const toeicWordsDB = [
         "en": "lamp",
         "kk": "[læmp]",
         "uk": "/læmp/",
-        "zh": "n. 燈、油燈、光源、發熱燈；v. 照、照亮、照明、發光",
+        "zh": "n. 燈、光源、發熱燈、照射器；v. 照明、照亮、發光、燈下捕獵",
         "unit": 12,
         "example": "She switched on the bedside lamp.",
         "exampleZh": "她打開了床頭燈。"
@@ -18354,7 +18354,7 @@ const toeicWordsDB = [
         "en": "land",
         "kk": "[lænd]",
         "uk": "/lænd/",
-        "zh": "n. 陸地、田地、地產、地面；v. 登陸、降落、著陸、使（飛機）平穩著陸",
+        "zh": "n. 土地、陸地、地面、地產；v. 著陸、降落、使（飛機）平穩著陸、登陸",
         "unit": 12,
         "example": "90% of the land is cultivated.",
         "exampleZh": "90%的土地為耕地。"
@@ -18384,7 +18384,7 @@ const toeicWordsDB = [
         "en": "landlord",
         "kk": "[ˋlænd͵lɔrd]",
         "uk": "/ˈlændlɔːd/",
-        "zh": "n. 地主、房東、店主、老闆",
+        "zh": "n. 房東、地主、店主、老闆",
         "unit": 12,
         "example": "His landlord doubled the rent.",
         "exampleZh": "他的房東把房租提高了一倍。"
@@ -18394,7 +18394,7 @@ const toeicWordsDB = [
         "en": "landmark",
         "kk": "[ˋlænd͵mɑrk]",
         "uk": "/ˈlændmɑːk/",
-        "zh": "n. 地標、里程碑、陸標、轉折點；v. 賦予地標的地位",
+        "zh": "n. 地標、陸標、里程碑、轉折點；v. 賦予地標的地位",
         "unit": 12,
         "example": "Marble Arch is a famous London landmark.",
         "exampleZh": "大理石拱門是倫敦著名的標誌性建築。"
@@ -18444,7 +18444,7 @@ const toeicWordsDB = [
         "en": "large",
         "kk": "[lɑrdʒ]",
         "uk": "/lɑːdʒ/",
-        "zh": "adj. 大的、巨大的、廣泛的、重要的；n. 大號、同類中最大者；v. 作樂、狂歡；adv. 誇大地、大大地",
+        "zh": "adj. 大的、廣泛的、重要的、身材高大的；n. 大號、同類中最大者；v. 作樂、狂歡；adv. 誇大地、大大地",
         "unit": 12,
         "example": "He was smoking a large cigar.",
         "exampleZh": "他抽著一支大雪茄。"
@@ -18464,7 +18464,7 @@ const toeicWordsDB = [
         "en": "lash",
         "kk": "[læʃ]",
         "uk": "/læʃ/",
-        "zh": "vt. 鞭打、抽打、猛擊、狠打；n. 鞭打、睫毛、突然（猛烈）的一甩",
+        "zh": "vt. 猛擊、狠打、鞭打、抽打；n. 鞭打、猛烈打擊、斥責、睫毛",
         "unit": 12,
         "example": "They could lash out.",
         "exampleZh": "他們可以猛烈抨擊。"
@@ -18474,7 +18474,7 @@ const toeicWordsDB = [
         "en": "last",
         "kk": "[læst]",
         "uk": "/lɑːst/",
-        "zh": "adj. 最後的、最近的、上一個的、最後剩下的；vt. 持續、維持、持久、夠用；n. 鞋楦、僅剩下的部分、最後來的人（或發生的事）、殘餘；pron. 最近發生的事情、最後的人或事物、最後的人、最後一次；adv. 最近、上次、最後、最後一點",
+        "zh": "adj. 最後的、最近的、上一個的、最後剩下的；vt. 持續、持久、維持、夠用；n. 鞋楦、僅剩下的部分、最後來的人（或發生的事）、殘餘；pron. 最近發生的事情、最後的人或事物、最後的人、最後一次；adv. 最近、上次、最後、最後一點",
         "unit": 12,
         "example": "The doctors operated last night.",
         "exampleZh": "醫生昨晚進行了手術。"
@@ -18514,7 +18514,7 @@ const toeicWordsDB = [
         "en": "lately",
         "kk": "[ˋletli]",
         "uk": "/ˈleɪtli/",
-        "zh": "adv. 近來、最近、新近卸任、最近離任",
+        "zh": "adv. 近來、最近、不久前、新近卸任",
         "unit": 12,
         "example": "She's been very edgy lately.",
         "exampleZh": "她近來一直煩躁不安。"
@@ -18534,7 +18534,7 @@ const toeicWordsDB = [
         "en": "latter",
         "kk": "[ˋlætɚ]",
         "uk": "/ˈlætə(r)/",
-        "zh": "adj. 後者的、後面的、末期的、後期的；n. 後者",
+        "zh": "adj. 後者、後者的、末期的、後期的；n. 後者",
         "unit": 12,
         "example": "The latter point is the most important.",
         "exampleZh": "後面提及的那一點是最重要的。"
@@ -18574,7 +18574,7 @@ const toeicWordsDB = [
         "en": "law",
         "kk": "[lɔ]",
         "uk": "/lɔː/",
-        "zh": "n. 法律、規則、法令、法規；v. 起訴、控告",
+        "zh": "n. 法律、法則、法令、法規；v. 起訴、控告",
         "unit": 12,
         "example": "Her specialty is taxation law.",
         "exampleZh": "她的專業是稅法。"
@@ -18584,7 +18584,7 @@ const toeicWordsDB = [
         "en": "lawful",
         "kk": "[ˋlɔfəl]",
         "uk": "/ˈlɔːfl/",
-        "zh": "adj. 合法的、法定的、法律許可的",
+        "zh": "adj. 合法的、法律許可的、法定的",
         "unit": 12,
         "example": "The detention of the fugitive was lawful.",
         "exampleZh": "對逃亡者的拘留是合法的。"
@@ -18624,7 +18624,7 @@ const toeicWordsDB = [
         "en": "layer",
         "kk": "[ˋleɚ]",
         "uk": "/ˈleɪə(r)/",
-        "zh": "n. 層、階層、層次、等級；vt. 分層放置、把（頭髮）分層剪短、用壓條培育",
+        "zh": "n. 層、層次、等級、擺放者；vt. 分層放置、把（頭髮）分層剪短、用壓條培育",
         "unit": 12,
         "example": "A thin layer of dust covered everything.",
         "exampleZh": "所有的物品上都積了薄薄的一層灰塵。"
@@ -18644,7 +18644,7 @@ const toeicWordsDB = [
         "en": "layout",
         "kk": "[ˋle͵aʊt]",
         "uk": "/ˈleɪaʊt/",
-        "zh": "n. 安排、設計陳列、佈局、設計",
+        "zh": "n. 設計、佈局、版面設計、版面編排",
         "unit": 12,
         "example": "The layout is hard to fault ergonomically.",
         "exampleZh": "這一設計從工效學方面看幾乎無懈可擊。"
@@ -18664,7 +18664,7 @@ const toeicWordsDB = [
         "en": "leader",
         "kk": "[ˋlidɚ]",
         "uk": "/ˈliːdə(r)/",
-        "zh": "n. 領導、領導者、首領、領先者",
+        "zh": "n. 領導者、領袖、首領、領先者",
         "unit": 12,
         "example": "The party wants her as leader.",
         "exampleZh": "該黨希望她擔任領導人。"
@@ -18694,7 +18694,7 @@ const toeicWordsDB = [
         "en": "league",
         "kk": "[liɡ]",
         "uk": "/liːɡ/",
-        "zh": "n. 同盟、聯盟、聯合會、社團；v. 聯盟、組成聯盟、加入聯盟",
+        "zh": "n. 聯盟、同盟、聯合會、社團；v. 組成聯盟、加入聯盟",
         "unit": 12,
         "example": "They're top of the league.",
         "exampleZh": "他們是聯賽的領頭羊。"
@@ -18724,7 +18724,7 @@ const toeicWordsDB = [
         "en": "lean",
         "kk": "[lin]",
         "uk": "/liːn/",
-        "zh": "v. 傾身、屈身、傾斜、傾向於做；adj. 瘦且健康的、瘦的、脂肪少的、不景氣的；n. 傾斜、歪曲、瘦肉",
+        "zh": "v. 傾斜、傾向於做、倚靠、靠在；adj. 瘦且健康的、瘦的、脂肪少的、不景氣的；n. 傾斜、歪曲、瘦肉",
         "unit": 12,
         "example": "He was tall, lean and muscular.",
         "exampleZh": "他高挑瘦削，強壯有力。"
@@ -18744,7 +18744,7 @@ const toeicWordsDB = [
         "en": "learn",
         "kk": "[lɝn]",
         "uk": "/lɜːn/",
-        "zh": "vt. 學習、學會、得知、獲悉",
+        "zh": "vt. 學習、得知、學會、獲悉",
         "unit": 12,
         "example": "The kids were quick to learn.",
         "exampleZh": "孩子們學得很快。"
@@ -18774,7 +18774,7 @@ const toeicWordsDB = [
         "en": "leather",
         "kk": "[ˋlɛðɚ]",
         "uk": "/ˈleðə(r)/",
-        "zh": "n. 皮革、皮、皮衣、皮夾克；v. 抽打；adj. 皮的、皮革製的",
+        "zh": "n. 皮革、皮、皮衣、皮夾克；v. 抽打",
         "unit": 12,
         "example": "The luxury handbag is handcrafted from premium Italian genuine leather.",
         "exampleZh": "這款奢華手提包由義大利優質真皮手工製作而成。"
@@ -18784,7 +18784,7 @@ const toeicWordsDB = [
         "en": "leave",
         "kk": "[liv]",
         "uk": "/liːv/",
-        "zh": "vt. 離開、脫離、離開居住地點、與……脫離關係；n. 假期、休假、准許、許可",
+        "zh": "vt. 離開、留下、離開居住地點、與……脫離關係；n. 假期、休假、准許、許可",
         "unit": 12,
         "example": "We didn't leave early enough.",
         "exampleZh": "我們離開得不夠早。"
@@ -18824,7 +18824,7 @@ const toeicWordsDB = [
         "en": "legitimate",
         "kk": "[ləˋdʒɪtəmət]",
         "uk": "/lɪˈdʒɪtɪmət/",
-        "zh": "adj. 合法的、正統的、正當的、合理的；v. 使合法化、使正當化",
+        "zh": "adj. 正當的、合理的、合法的、依法的；v. 使合法化、使正當化",
         "unit": 12,
         "example": "Is his business strictly legitimate?",
         "exampleZh": "他的生意是否絕對合法？"
@@ -18844,7 +18844,7 @@ const toeicWordsDB = [
         "en": "lend",
         "kk": "[lɛnd]",
         "uk": "/lend/",
-        "zh": "vt. 借、提供、借給、借出",
+        "zh": "vt. 出借、借給、借出、貸出",
         "unit": 12,
         "example": "Here, I'll lend you my pen.",
         "exampleZh": "在這裡，我把筆借給你。"
@@ -18884,7 +18884,7 @@ const toeicWordsDB = [
         "en": "level",
         "kk": "[ˋlɛvəl]",
         "uk": "/ˈlev(ə)l/",
-        "zh": "n. 水平面、程度、數量、標準；adj. 同水平的、同程度的、平坦的、水平的；vt. 使平等、使平整、推倒、夷平",
+        "zh": "n. 水平、數量、程度、標準；adj. 平坦的、水平的、相同價值的；vt. 使平整、推倒、夷平、比分相同",
         "unit": 12,
         "example": "He studied French to degree level.",
         "exampleZh": "他學習了法語並達到了學位水平。"
@@ -18914,7 +18914,7 @@ const toeicWordsDB = [
         "en": "liable",
         "kk": "[ˋlaɪəbəl]",
         "uk": "/ˈlaɪəb(ə)l/",
-        "zh": "adj. 易……的、可能的、有責任的、有義務的",
+        "zh": "adj. 易……的、可能的、負有法律責任的、有責任的",
         "unit": 12,
         "example": "You will be liable for any damage caused.",
         "exampleZh": "你必須對造成的任何損失負賠償責任。"
@@ -18924,7 +18924,7 @@ const toeicWordsDB = [
         "en": "liberal",
         "kk": "[ˋlɪb͵ɝəl]",
         "uk": "/ˈlɪbərəl/",
-        "zh": "adj. 開明的、不守舊的、思想開明的、自由主義的；n. 思想開明的人、自由主義者、支援變革的人、自由黨黨員",
+        "zh": "adj. 自由主義的、思想開明的、支援變革的、自由黨的；n. 思想開明的人、自由主義者、支援變革的人、自由黨黨員",
         "unit": 12,
         "example": "I hadn't got him marked down as a liberal.",
         "exampleZh": "我當時還沒有把他看作自由主義者。"
@@ -18944,7 +18944,7 @@ const toeicWordsDB = [
         "en": "license",
         "kk": "[ˋlaɪsəns]",
         "uk": "/ˈlaɪs(ə)ns/",
-        "zh": "n. 證照、許可、執照、許可證；vt. 發許可證給、許可、特許",
+        "zh": "n. 執照、許可證、特許證、特許；vt. 許可、特許、發許可證給",
         "unit": 12,
         "example": "Your license is no longer valid.",
         "exampleZh": "你的執照失效了。"
@@ -18974,7 +18974,7 @@ const toeicWordsDB = [
         "en": "likely",
         "kk": "[ˋlaɪkli]",
         "uk": "/ˈlaɪkli/",
-        "zh": "adj. 適當的、可能的、可能發生的、似乎合適的；adv. 很可能、大概",
+        "zh": "adj. 可能發生的、似乎合適的、彷彿恰當的、似乎真實的；adv. 大概、很可能",
         "unit": 12,
         "example": "We will likely see him later.",
         "exampleZh": "我們可能稍後會見到他。"
@@ -19004,7 +19004,7 @@ const toeicWordsDB = [
         "en": "link",
         "kk": "[lɪŋk]",
         "uk": "/lɪŋk/",
-        "zh": "vt. 連接、結合、連線、與……有關聯；n. 連結、聯繫、聯絡、關係",
+        "zh": "vt. 聯繫、連線、與……有關聯、挽住；n. 連結、聯絡、關係、環",
         "unit": 12,
         "example": "Click the link and see what happens.",
         "exampleZh": "點選那個連結，看看會發生什麼。"
@@ -19014,7 +19014,7 @@ const toeicWordsDB = [
         "en": "list",
         "kk": "[lɪst]",
         "uk": "/lɪst/",
-        "zh": "n. 表、名冊、列表、清單；vt. 列清單、擬訂清單、把……列入名單、（公司）上市",
+        "zh": "n. 清單、列表、傾側、圍欄；vt. 列出、列清單、擬訂清單、把……列入名單",
         "unit": 12,
         "example": "Princess Anne topped the guest list.",
         "exampleZh": "安妮公主名列賓客名單之首。"
@@ -19024,7 +19024,7 @@ const toeicWordsDB = [
         "en": "litter",
         "kk": "[ˋlɪtɚ]",
         "uk": "/ˈlɪtə(r)/",
-        "zh": "n. 廢棄物、雜亂、垃圾、一堆雜亂的東西；vt. 弄得亂七八糟、使充滿、散亂覆蓋、亂扔",
+        "zh": "n. 垃圾、廢棄物、一堆雜亂的東西、一窩；vt. 散亂覆蓋、亂扔、使（某事物）充滿、產仔",
         "unit": 12,
         "example": "Animals reject the runt of the litter.",
         "exampleZh": "動物們排斥一窩中最弱小的幼仔。"
@@ -19034,7 +19034,7 @@ const toeicWordsDB = [
         "en": "load",
         "kk": "[lod]",
         "uk": "/ləʊd/",
-        "zh": "n. 負擔、重任、負載、重荷；vt. 裝、裝載、裝上、裝進",
+        "zh": "n. 負載、重荷、一批待洗的衣物、工作量；vt. 裝上、裝進、承載、裝載",
         "unit": 12,
         "example": "The load was too burdensome.",
         "exampleZh": "負擔太繁重了。"
@@ -19044,7 +19044,7 @@ const toeicWordsDB = [
         "en": "loan",
         "kk": "[lon]",
         "uk": "/ləʊn/",
-        "zh": "n. 貸款、借款、借用、借出；vt. 借出、貸與、借給",
+        "zh": "n. 貸款、借款、借用、借出；vt. 借出、借給",
         "unit": 12,
         "example": "The book is currently on loan.",
         "exampleZh": "該書已借出。"
@@ -19054,7 +19054,7 @@ const toeicWordsDB = [
         "en": "local",
         "kk": "[ˋlokəl]",
         "uk": "/ˈləʊk(ə)l/",
-        "zh": "adj. 當地的、本地的、地方的、區域性的；n. 本地人、當地人、住處附近的酒吧、地方分會",
+        "zh": "adj. 當地的、本地的、地方的、區域性的；n. 當地人、本地人、住處附近的酒吧、地方分會",
         "unit": 12,
         "example": "He dabbles in local politics.",
         "exampleZh": "他開始涉足地方政壇。"
@@ -19084,7 +19084,7 @@ const toeicWordsDB = [
         "en": "location",
         "kk": "[loˋkeʃən]",
         "uk": "/ləʊˈkeɪʃn/",
-        "zh": "n. 地點、定位、位置、外景拍攝地",
+        "zh": "n. 位置、場所、地點、外景拍攝地",
         "unit": 12,
         "example": "Its geographical location stimulated overseas mercantile enterprise.",
         "exampleZh": "它的地理位置激發了海外商業企業的興趣。"
@@ -19094,7 +19094,7 @@ const toeicWordsDB = [
         "en": "lock",
         "kk": "[lɑk]",
         "uk": "/lɒk/",
-        "zh": "vt. 鎖上、鎖住、把……鎖起來、固定；n. 鎖、一縷頭髮、頭髮、船閘",
+        "zh": "vt. 鎖住、把……鎖起來、固定、卡住；n. 鎖、一縷頭髮、頭髮、船閘",
         "unit": 12,
         "example": "The key doesn't fit the lock.",
         "exampleZh": "這把鑰匙打不開這把鎖。"
@@ -19124,7 +19124,7 @@ const toeicWordsDB = [
         "en": "logo",
         "kk": "[ˋloɡo]",
         "uk": "/ˈləʊɡəʊ/",
-        "zh": "n. 標識、徽標、洛戈",
+        "zh": "n. 商標、標識、徽標、洛戈",
         "unit": 12,
         "example": "The team's logo was emblazoned on the baseball caps.",
         "exampleZh": "球隊標識醒目地印在棒球帽上。"
@@ -19144,7 +19144,7 @@ const toeicWordsDB = [
         "en": "lose",
         "kk": "[luz]",
         "uk": "/luːz/",
-        "zh": "vt. 丟失、輸去、賠錢、遺失",
+        "zh": "vt. 輸、失去、遺失、丟失",
         "unit": 12,
         "example": "No one likes to lose.",
         "exampleZh": "沒有人喜歡失敗。"
@@ -19154,7 +19154,7 @@ const toeicWordsDB = [
         "en": "loss",
         "kk": "[lɔs]",
         "uk": "/lɒs/",
-        "zh": "n. 喪失、遺失、失去、虧損",
+        "zh": "n. 損失、失去、喪失、虧損",
         "unit": 12,
         "example": "We expressed our sympathy for her loss.",
         "exampleZh": "我們對她的損失表示了同情。"
@@ -19264,7 +19264,7 @@ const toeicWordsDB = [
         "en": "mail",
         "kk": "[mel]",
         "uk": "/meɪl/",
-        "zh": "n. 信件、郵件、郵政、郵遞系統；vt. 郵寄、用電子郵件傳送、給……披上鎧甲",
+        "zh": "n. 郵政、郵遞系統、郵件、信件；vt. 郵寄、用電子郵件傳送、給……披上鎧甲",
         "unit": 12,
         "example": "There isn't much mail today.",
         "exampleZh": "今天郵件不多。"
@@ -19284,7 +19284,7 @@ const toeicWordsDB = [
         "en": "main",
         "kk": "[men]",
         "uk": "/meɪn/",
-        "zh": "adj. 主要的、最重要的、最大的；n. 主要部分、要點、總管道、主線路",
+        "zh": "adj. 主要的、最大的；n. 總管道、主線路、供應系統、電源插座",
         "unit": 12,
         "example": "What's the main disadvantage ?",
         "exampleZh": "主要的不利條件是什麼？"
@@ -19304,7 +19304,7 @@ const toeicWordsDB = [
         "en": "maintain",
         "kk": "[menˋten]",
         "uk": "/meɪnˈteɪn/",
-        "zh": "vt. 維持、保持、維修、保養",
+        "zh": "vt. 維持、保養、保持、維修",
         "unit": 12,
         "example": "It's hard to maintain competitive pricing.",
         "exampleZh": "要保持有競爭力的價格是很困難的。"
@@ -19314,7 +19314,7 @@ const toeicWordsDB = [
         "en": "maintenance",
         "kk": "[ˋmentənəns]",
         "uk": "/ˈmeɪntənəns/",
-        "zh": "n. 維持、保持、維護、保養",
+        "zh": "n. 維持、維修、保養、維護",
         "unit": 12,
         "example": "Small gardens can be high maintenance.",
         "exampleZh": "小花園也會有很高的維護費。"
@@ -19324,7 +19324,7 @@ const toeicWordsDB = [
         "en": "major",
         "kk": "[ˋmedʒɚ]",
         "uk": "/ˈmeɪdʒə(r)/",
-        "zh": "adj. 主要的、一流的、重大的、嚴重的；n. 主修科目、專業、陸軍少校、空軍少校；vi. 主修、專攻",
+        "zh": "adj. 重大的、主要的、嚴重的、大調的；n. 主修科目、專業、陸軍少校、空軍少校；vi. 主修、專攻",
         "unit": 12,
         "example": "Rotterdam is a major port.",
         "exampleZh": "鹿特丹是一個重要的港口城市。"
@@ -19334,7 +19334,7 @@ const toeicWordsDB = [
         "en": "majority",
         "kk": "[məˋdʒɔrəti]",
         "uk": "/məˈdʒɒrəti/",
-        "zh": "n. 多數派、大多數、多數票、成年的法定年齡；adj. 多數人的",
+        "zh": "n. 過半數、大多數、多數票、成年的法定年齡；adj. 多數人的",
         "unit": 12,
         "example": "The vast majority live further inland.",
         "exampleZh": "大多數人居住在更遠的內陸。"
@@ -19344,7 +19344,7 @@ const toeicWordsDB = [
         "en": "mall",
         "kk": "[mɔl]",
         "uk": "/mɔːl; mæl/",
-        "zh": "n. 購物中心、步行商業區、步行道、散步場所",
+        "zh": "n. 購物中心、大型商場、步行商業街",
         "unit": 12,
         "example": "Let's go to the mall.",
         "exampleZh": "我們去商場吧。"
@@ -19364,7 +19364,7 @@ const toeicWordsDB = [
         "en": "management",
         "kk": "[ˋmænədʒmənt]",
         "uk": "/ˈmænɪdʒmənt/",
-        "zh": "n. 管理、經營、安排、管理人員",
+        "zh": "n. 管理、經營、處理、安排",
         "unit": 12,
         "example": "The report blames bad management.",
         "exampleZh": "報告歸咎於管理不善。"
@@ -19374,7 +19374,7 @@ const toeicWordsDB = [
         "en": "manager",
         "kk": "[ˋmænədʒɚ]",
         "uk": "/ˈmænɪdʒə(r)/",
-        "zh": "n. 經理、主任、經紀人、管理人",
+        "zh": "n. 經理、經紀人、管理人、主教練",
         "unit": 12,
         "example": "John is the London area manager.",
         "exampleZh": "約翰是倫敦地區經理。"
@@ -19414,7 +19414,7 @@ const toeicWordsDB = [
         "en": "manual",
         "kk": "[ˋmænjuəl]",
         "uk": "/ˈmænjuəl/",
-        "zh": "adj. 手的、手工的、體力的、手動的；n. 手冊、便覽、使用手冊、說明書",
+        "zh": "adj. 手工的、體力的、手動的、用手操作的；n. 使用手冊、說明書、手動換擋的車輛、風琴鍵盤",
         "unit": 12,
         "example": "He consulted the manual.",
         "exampleZh": "他查閱了使用說明書。"
@@ -19434,7 +19434,7 @@ const toeicWordsDB = [
         "en": "manufacture",
         "kk": "[͵mænjəˋfæktʃɚ]",
         "uk": "/ˌmænjuˈfæktʃə(r)/",
-        "zh": "vt. 製造、加工、生產、編造；n. 製造業、製品、大量製造、批次生產",
+        "zh": "vt. 生產、製造、編造、捏造；n. 大量製造、批次生產、工業品、製造業",
         "unit": 12,
         "example": "They manufacture the class of plastics known as thermoplastic materials.",
         "exampleZh": "他們生產被稱為熱塑材料的塑膠類製品。"
@@ -19454,7 +19454,7 @@ const toeicWordsDB = [
         "en": "margin",
         "kk": "[ˋmɑrdʒən]",
         "uk": "/ˈmɑːdʒɪn/",
-        "zh": "n. 邊、邊沿、頁邊空白、差額；v. 給……加上邊、預付定金、交押金、頁邊做註釋或總結",
+        "zh": "n. 邊緣、利潤、頁邊空白、差額；v. 給……加上邊、預付定金、交押金、頁邊做註釋或總結",
         "unit": 12,
         "example": "He won by a narrow margin.",
         "exampleZh": "他以微小的差額獲勝。"
@@ -19474,7 +19474,7 @@ const toeicWordsDB = [
         "en": "market",
         "kk": "[ˋmɑrkət]",
         "uk": "/ˈmɑːkɪt/",
-        "zh": "n. 市場、銷路、集市、交易；vt. 推銷、促銷、出售、做買賣；adj. 市場的、由市場決定的",
+        "zh": "n. 集市、市場、交易、交易量；vt. 推銷、促銷、出售、做買賣；adj. 市場的、由市場決定的",
         "unit": 12,
         "example": "The market collapsed last October.",
         "exampleZh": "去年十月市場崩盤了。"
@@ -19484,7 +19484,7 @@ const toeicWordsDB = [
         "en": "match",
         "kk": "[mætʃ]",
         "uk": "/mætʃ/",
-        "zh": "n. 比賽、競賽、火柴、敵手；vt. 相配、相適合、比得上、敵得過",
+        "zh": "n. 比賽、競賽、火柴、敵手；vt. 比得上、敵得過、使成對、使相配",
         "unit": 12,
         "example": "He was watching a football match.",
         "exampleZh": "他正在看一場英式足球比賽。"
@@ -19514,7 +19514,7 @@ const toeicWordsDB = [
         "en": "maximum",
         "kk": "[ˋmæksəməm]",
         "uk": "/ˈmæksɪməm/",
-        "zh": "adj. 最大的、最多的、最大限度的、極大的；n. 最大量、最大數、最大限度；adv. 最多、充其量",
+        "zh": "adj. 最大限度的、極大的、極多的；n. 最大量、最大限度；adv. 最多、充其量",
         "unit": 12,
         "example": "Both face maximum forfeitures of about $1.2 million.",
         "exampleZh": "雙方都面臨最高可達一百二十萬美元的財產沒收。"
@@ -19544,7 +19544,7 @@ const toeicWordsDB = [
         "en": "meaning",
         "kk": "[ˋminɪŋ]",
         "uk": "/ˈmiːnɪŋ/",
-        "zh": "n. 意思、含義、意義、真正重要性；adj. 意味深長的；v. 表示……的意思、作……的解釋、意味著、打算",
+        "zh": "n. 意義、意思、含義、真正重要性；adj. 意味深長的；v. 表示……的意思、作……的解釋、意味著、打算",
         "unit": 12,
         "example": "What's the meaning of this word?",
         "exampleZh": "這個單詞的意思是什麼？"
@@ -19554,7 +19554,7 @@ const toeicWordsDB = [
         "en": "measurable",
         "kk": "[ˋmɛʒɚəbəl]",
         "uk": "/ˈmeʒərəbl/",
-        "zh": "adj. 可測量的、顯著的、有明顯影響的",
+        "zh": "adj. 可測量的、可預見的、顯著的、有明顯影響的",
         "unit": 12,
         "example": "A small but measurable improvement in customer satisfaction was recorded.",
         "exampleZh": "客戶滿意度記錄到了小幅但顯著的提升。"
@@ -19564,7 +19564,7 @@ const toeicWordsDB = [
         "en": "measure",
         "kk": "[ˋmɛʒɚ]",
         "uk": "/ˈmeʒə(r)/",
-        "zh": "n. 措施、手段、辦法、適量；vt. 測量、量度為、估量",
+        "zh": "n. 措施、辦法、適量、適度；vt. 測量、量度為、估量、判定",
         "unit": 12,
         "example": "He irritated me beyond measure.",
         "exampleZh": "他使我非常生氣。"
@@ -19574,7 +19574,7 @@ const toeicWordsDB = [
         "en": "measurement",
         "kk": "[ˋmɛʒɚmənt]",
         "uk": "/ˈmeʒəmənt/",
-        "zh": "n. 測量、測定、測量結果、三圍",
+        "zh": "n. 測量法、測定、尺寸、測量結果",
         "unit": 12,
         "example": "Here is a rough-and-ready measurement.",
         "exampleZh": "這是一次馬馬虎虎的測量。"
@@ -19584,7 +19584,7 @@ const toeicWordsDB = [
         "en": "medicine",
         "kk": "[ˋmɛdəsən]",
         "uk": "/ˈmedsn; ˈmedɪsn/",
-        "zh": "n. 藥、良藥、藥物、藥劑；v. 用藥物治療、給……用藥",
+        "zh": "n. 藥、藥物、藥劑、醫療；v. 用藥物治療、給……用藥",
         "unit": 12,
         "example": "Laughter is the best medicine.",
         "exampleZh": "歡笑是一副良藥。"
@@ -19604,7 +19604,7 @@ const toeicWordsDB = [
         "en": "medium",
         "kk": "[ˋmidiəm]",
         "uk": "/ˈmiːdiəm/",
-        "zh": "n. 媒介物、手段、媒介、媒體；adj. 中等的、中間的、適中的、五分熟的",
+        "zh": "n. 中庸、媒體、工具；adj. 中等的、中間的、適中的、五分熟的",
         "unit": 12,
         "example": "There are three sizes—small, medium and large.",
         "exampleZh": "有三種尺寸—小號、中號和大號。"
@@ -19624,7 +19624,7 @@ const toeicWordsDB = [
         "en": "membership",
         "kk": "[ˋmɛmbɚ͵ʃɪp]",
         "uk": "/ˈmembəʃɪp/",
-        "zh": "n. 會員身分、全體會員、會員身份、會籍",
+        "zh": "n. 會員身分、會員身份、會籍、會員數",
         "unit": 12,
         "example": "Membership almost doubled in two years.",
         "exampleZh": "兩年內會員數目幾乎翻了一番。"
@@ -19644,7 +19644,7 @@ const toeicWordsDB = [
         "en": "mend",
         "kk": "[mɛnd]",
         "uk": "/mend/",
-        "zh": "vt. 修補、改善、縫補、修理；n. 好轉、復甦、修理過的地方",
+        "zh": "vt. 修理、修補、縫補、癒合；n. 好轉、復甦、修理過的地方、補丁",
         "unit": 12,
         "example": "Somebody helped me to mend the puncture.",
         "exampleZh": "有人幫我補了車胎上的洞。"
@@ -19664,7 +19664,7 @@ const toeicWordsDB = [
         "en": "mention",
         "kk": "[ˋmɛnʃən]",
         "uk": "/ˈmenʃ(ə)n/",
-        "zh": "vt. 提到、談到、提名；n. 提到、說起、提及、寫上一筆",
+        "zh": "vt. 提到、談到、提名、推薦；n. 提及、說起、寫上一筆、提名錶揚",
         "unit": 12,
         "example": "Sorry, I won't mention it again.",
         "exampleZh": "對不起，我再也不提它了。"
@@ -19684,7 +19684,7 @@ const toeicWordsDB = [
         "en": "menu",
         "kk": "[ˋmɛnju]",
         "uk": "/ˈmenjuː/",
-        "zh": "n. 菜單、功能選單、選單、飯菜",
+        "zh": "n. 菜單、選單、飯菜、菜餚",
         "unit": 12,
         "example": "The menu included roast grouse.",
         "exampleZh": "選單裡有烤松雞肉。"
@@ -19724,7 +19724,7 @@ const toeicWordsDB = [
         "en": "message",
         "kk": "[ˋmɛsədʒ]",
         "uk": "/ˈmesɪdʒ/",
-        "zh": "n. 信息、消息、口信、訊息；vt. 通知、聯繫、傳送、通報",
+        "zh": "n. 消息、音信、口信、訊息；vt. 傳送、通報",
         "unit": 12,
         "example": "Message understood. Over and out.",
         "exampleZh": "訊息聽懂了。通話完畢。"
@@ -19734,7 +19734,7 @@ const toeicWordsDB = [
         "en": "messenger",
         "kk": "[ˋmɛsəndʒɚ]",
         "uk": "/ˈmesɪndʒə(r)/",
-        "zh": "n. 送信人、使者、郵遞員、報信者；v. 送",
+        "zh": "n. 送信人、郵遞員、報信者、信使；v. 送",
         "unit": 12,
         "example": "He sent the order by messenger.",
         "exampleZh": "他透過郵遞員發出訂單。"
@@ -19744,7 +19744,7 @@ const toeicWordsDB = [
         "en": "method",
         "kk": "[ˋmɛθəd]",
         "uk": "/ˈmeθəd/",
-        "zh": "n. 方法、手段、辦法、條理",
+        "zh": "n. 方法、辦法、條理、體驗派表演方法",
         "unit": 12,
         "example": "There is just one method that might work.",
         "exampleZh": "只有一個方法可能起作用。"
@@ -19844,7 +19844,7 @@ const toeicWordsDB = [
         "en": "minority",
         "kk": "[maɪˋnɔrəti]",
         "uk": "/maɪˈnɒrəti/",
-        "zh": "n. 少數、少數派、少數民族、少數群體；adj. 少數的、少數民族的",
+        "zh": "n. 少數、少數民族、未成年、少數派；adj. 少數的、少數民族的",
         "unit": 12,
         "example": "Only a tiny minority hold such extreme views.",
         "exampleZh": "只有極少數人持這樣極端的觀點。"
@@ -19854,7 +19854,7 @@ const toeicWordsDB = [
         "en": "minute",
         "kk": "[ˋmɪnət]",
         "uk": "/ˈmɪnɪt/",
-        "zh": "n. 分鐘、一會兒、分、片刻；adj. 極小的、微小的、詳細的、細緻入微的；vt. 記錄下來、將（某事）寫進會議記錄、傳送備忘錄",
+        "zh": "n. 分鐘、分、片刻、一會兒；adj. 極小的、微小的、詳細的、細緻入微的；vt. 將（某事）寫進會議記錄、傳送備忘錄",
         "unit": 12,
         "example": "They arrived barely a minute later.",
         "exampleZh": "不到一分鐘他們就到了。"
@@ -19874,7 +19874,7 @@ const toeicWordsDB = [
         "en": "miserable",
         "kk": "[ˋmɪzɚəbəl]",
         "uk": "/ˈmɪzrəbl/",
-        "zh": "adj. 痛苦的、不幸的、使人難受的、乖戾的",
+        "zh": "adj. 悽慘的、悲哀的、痛苦的、使人難受的",
         "unit": 12,
         "example": "They ended by making themselves miserable.",
         "exampleZh": "他們到頭來把自己弄慘了。"
@@ -19894,7 +19894,7 @@ const toeicWordsDB = [
         "en": "mission",
         "kk": "[ˋmɪʃən]",
         "uk": "/ˈmɪʃ(ə)n/",
-        "zh": "n. 使命、任務、傳教團、重要任務；vi. 派遣、傳教、作艱苦的長途旅行、向……傳教；v. 派遣、傳教",
+        "zh": "n. 使節團、使命、任務、重要任務；vi. 作艱苦的長途旅行、派遣、向……傳教",
         "unit": 12,
         "example": "The mission was a washout.",
         "exampleZh": "這個任務徹底失敗了。"
@@ -19904,7 +19904,7 @@ const toeicWordsDB = [
         "en": "mistake",
         "kk": "[mɪˋstek]",
         "uk": "/mɪˈsteɪk/",
-        "zh": "n. 錯誤、過失、口誤、筆誤；vt. 弄錯、誤解、誤會、錯誤判斷",
+        "zh": "n. 錯誤、過失、口誤、筆誤；vt. 誤解、誤會、錯誤判斷、把……誤認為",
         "unit": 12,
         "example": "We've made a dreadful mistake.",
         "exampleZh": "我們犯了一個可怕的錯誤。"
@@ -20014,7 +20014,7 @@ const toeicWordsDB = [
         "en": "momentum",
         "kk": "[moˋmɛntəm]",
         "uk": "/məˈmentəm/",
-        "zh": "n. 氣勢、衝力、推力、動力",
+        "zh": "n. 動量、氣勢、動力、衝力",
         "unit": 13,
         "example": "The vehicle gained momentum as the road dipped.",
         "exampleZh": "那輛車順著坡越跑衝力越大。"
@@ -20034,7 +20034,7 @@ const toeicWordsDB = [
         "en": "money",
         "kk": "[ˋmʌni]",
         "uk": "/ˈmʌni/",
-        "zh": "n. 錢、貨幣、鈔票、財產",
+        "zh": "n. 錢、鈔票、貨幣、財產",
         "unit": 13,
         "example": "Money can't buy you happiness.",
         "exampleZh": "金錢買不來幸福。"
@@ -20044,7 +20044,7 @@ const toeicWordsDB = [
         "en": "monitor",
         "kk": "[ˋmɑnətɚ]",
         "uk": "/ˈmɒnɪtə(r)/",
-        "zh": "n. 顯示器、螢幕、監控器、監視儀；vt. 監控、監聽、監視",
+        "zh": "n. 顯示器、監控器、監視儀、監護儀；vt. 監視、監聽、監控",
         "unit": 13,
         "example": "Your doctor will monitor your blood pressure.",
         "exampleZh": "你的醫生會監測你的血壓。"
@@ -20054,7 +20054,7 @@ const toeicWordsDB = [
         "en": "mood",
         "kk": "[mud]",
         "uk": "/muːd/",
-        "zh": "n. 心境、情緒、氣氛、情感基調",
+        "zh": "n. 心情、心境、情緒、氣氛",
         "unit": 13,
         "example": "My sunny mood suddenly darkened.",
         "exampleZh": "我快樂的情緒突然黯淡下來。"
@@ -20064,7 +20064,7 @@ const toeicWordsDB = [
         "en": "moral",
         "kk": "[ˋmɔrəl]",
         "uk": "/ˈmɒrəl/",
-        "zh": "adj. 道德的、有關道德的、基於道德的、道義上的；n. 道德、品行、道德準則、寓意",
+        "zh": "adj. 道德、有關道德的、基於道德的、道義上的；n. 品行、道德準則、寓意、道德上的教訓",
         "unit": 13,
         "example": "I overcame my moral scruples.",
         "exampleZh": "我拋開了道德方面的顧慮。"
@@ -20084,7 +20084,7 @@ const toeicWordsDB = [
         "en": "motivate",
         "kk": "[ˋmotə͵vet]",
         "uk": "/ˈməʊtɪveɪt/",
-        "zh": "vt. 刺激、激發、成為……的動機、是……的原因",
+        "zh": "vt. 給……動機、刺激、成為……的動機、是……的原因",
         "unit": 13,
         "example": "How do you motivate people to work hard and efficiently?",
         "exampleZh": "你是如何激勵人們努力而高效地工作的？"
@@ -20104,7 +20104,7 @@ const toeicWordsDB = [
         "en": "motive",
         "kk": "[ˋmotɪv]",
         "uk": "/ˈməʊtɪv/",
-        "zh": "n. 動機、主旨、目的、原因；adj. 起動的、推動的、引起運動的、起推動作用的；v. 激起、使產生動機",
+        "zh": "n. 動機、主旨、目的、原因；adj. 引起運動的、起推動作用的；v. 使產生動機、激起",
         "unit": 13,
         "example": "The motive for the killing is unknown.",
         "exampleZh": "殺人的動機不明。"
@@ -20114,7 +20114,7 @@ const toeicWordsDB = [
         "en": "move",
         "kk": "[muv]",
         "uk": "/muːv/",
-        "zh": "v. 移動、推動、改變位置、搬家；n. 措施、行動、移動、活動",
+        "zh": "v. 移動、改變位置、搬家、搬遷；n. 措施、行動、移動、活動",
         "unit": 13,
         "example": "I can't move my fingers.",
         "exampleZh": "我的手指動不了。"
@@ -20124,7 +20124,7 @@ const toeicWordsDB = [
         "en": "movement",
         "kk": "[ˋmuvmənt]",
         "uk": "/ˈmuːvmənt/",
-        "zh": "n. 運動、活動、行動、移動",
+        "zh": "n. 動作、移動、轉移、運動",
         "unit": 13,
         "example": "They were watching her every movement.",
         "exampleZh": "他們注視著她的一舉一動。"
@@ -20154,7 +20154,7 @@ const toeicWordsDB = [
         "en": "nag",
         "kk": "[næɡ]",
         "uk": "/næɡ/",
-        "zh": "n. 好嘮叨的人、愛嘮叨的人、挑剔的人、老馬；vt. 嘮叨、責罵不休、不斷地嘮叨、嘮叨催促",
+        "zh": "n. 愛嘮叨的人、挑剔的人、老馬、疲憊的馬；vt. 不斷地嘮叨、嘮叨催促、不斷要求、煩擾",
         "unit": 13,
         "example": "We all hate to nag.",
         "exampleZh": "我們都討厭嘮叨。"
@@ -20174,7 +20174,7 @@ const toeicWordsDB = [
         "en": "naive",
         "kk": "[͵naɪˋiv]",
         "uk": "/naɪˈiːv/",
-        "zh": "adj. 天真的、幼稚的、樸素的、原始的",
+        "zh": "adj. 天真的、幼稚的、輕信的、樸素的",
         "unit": 13,
         "example": "Their approach to life is refreshingly naive.",
         "exampleZh": "他們對待生活的態度天真率直，令人耳目一新。"
@@ -20184,7 +20184,7 @@ const toeicWordsDB = [
         "en": "name",
         "kk": "[nem]",
         "uk": "/neɪm/",
-        "zh": "n. 名字、姓名、名稱、名聲；vt. 提名、任命、命名、給……取名；adj. 有名的、出名的、姓名的、據以取名的",
+        "zh": "n. 名字、名稱、名聲、名譽；vt. 命名、給……取名、說出……的名稱、叫出……的名字；adj. 有名的、出名的、姓名的、據以取名的",
         "unit": 13,
         "example": "Is your name hyphenated?",
         "exampleZh": "你的名字有連字符嗎？"
@@ -20204,7 +20204,7 @@ const toeicWordsDB = [
         "en": "narrate",
         "kk": "[ˋnɛr͵et]",
         "uk": "/nəˈreɪt/",
-        "zh": "vt. 敘述、作旁白、講、給（電影、廣播或音樂等）配解說詞",
+        "zh": "vt. 講、敘述、作旁白、給（電影、廣播或音樂等）配解說詞",
         "unit": 13,
         "example": "The three of them narrate the same events from three perspectives.",
         "exampleZh": "他們3個人從3個角度敘述同樣那些事件。"
@@ -20224,7 +20224,7 @@ const toeicWordsDB = [
         "en": "narrator",
         "kk": "[ˋnɛretɚ]",
         "uk": "/nəˈreɪtə(r)/",
-        "zh": "n. 敘述者、講述者、敘事人、解說員",
+        "zh": "n. 解說員、敘述者、敘事人、旁白員",
         "unit": 13,
         "example": "The novel has an omniscient narrator.",
         "exampleZh": "這部小說有一個全知全能的敘述者。"
@@ -20234,7 +20234,7 @@ const toeicWordsDB = [
         "en": "narrow",
         "kk": "[ˋnɛro]",
         "uk": "/ˈnærəʊ/",
-        "zh": "adj. 狹的、狹窄的、狹小的、狹隘的；v. 變窄、收縮、眯起來、使縮小；n. 海峽、狹窄部分",
+        "zh": "adj. 狹窄的、狹小的、狹隘的、勉強的；v. 眯起來、使縮小、壓縮、使變窄；n. 海峽、狹窄部分",
         "unit": 13,
         "example": "He turned into a narrow street.",
         "exampleZh": "他拐進一條狹窄的街道。"
@@ -20254,7 +20254,7 @@ const toeicWordsDB = [
         "en": "nation",
         "kk": "[ˋneʃən]",
         "uk": "/ˈneɪʃ(ə)n/",
-        "zh": "n. 國民、國家、民族、部落",
+        "zh": "n. 國家、民族、國民、部落",
         "unit": 13,
         "example": "The article captured the mood of the nation.",
         "exampleZh": "這篇文章抓住了全國人民的情緒。"
@@ -20264,7 +20264,7 @@ const toeicWordsDB = [
         "en": "national",
         "kk": "[ˋnæʃənəl]",
         "uk": "/ˈnæʃ(ə)nəl/",
-        "zh": "adj. 全國性的、國家的、全國的、國家所有的；n. 國民、國人、僑民、全國性比賽",
+        "zh": "adj. 國家的、全國的、國家所有的、國立的；n. 國民、僑民、全國性比賽、全國性報紙",
         "unit": 13,
         "example": "The area has been declared a national park.",
         "exampleZh": "該地區已被宣佈為國家公園。"
@@ -20304,7 +20304,7 @@ const toeicWordsDB = [
         "en": "natural",
         "kk": "[ˋnætʃɚəl]",
         "uk": "/ˈnætʃ(ə)rəl/",
-        "zh": "adj. 自然的、不做作、天然的、非人為的；n. 有天賦的人、適合人選、本位音、白鍵",
+        "zh": "adj. 自然的、天然的、非人為的、合理的；n. 有天賦的人、適合人選、本位音、白鍵",
         "unit": 13,
         "example": "She is a natural athlete.",
         "exampleZh": "她是一位天生的運動員。"
@@ -20354,7 +20354,7 @@ const toeicWordsDB = [
         "en": "necessity",
         "kk": "[nəˋsɛsəti]",
         "uk": "/nəˈsesəti/",
-        "zh": "n. 需要、必要性、必需品、必需的事物",
+        "zh": "n. 必需品、必需的事物、必要、需要",
         "unit": 13,
         "example": "Water is a basic necessity of life.",
         "exampleZh": "水是一種基本生活必需品。"
@@ -20364,7 +20364,7 @@ const toeicWordsDB = [
         "en": "need",
         "kk": "[nid]",
         "uk": "/niːd/",
-        "zh": "vt. 需要、有必要；aux. 必要；n. 需要、必須、特別需要",
+        "zh": "vt. 需要、有必要；aux. 必要；n. 需求、需要、必須、特別需要",
         "unit": 13,
         "example": "We need more storage now.",
         "exampleZh": "我們現在需要更多的儲存空間。"
@@ -20414,7 +20414,7 @@ const toeicWordsDB = [
         "en": "negotiate",
         "kk": "[nəˋɡoʃi͵et]",
         "uk": "/nɪˈɡəʊʃieɪt/",
-        "zh": "vt. 協商、交涉、談判、磋商",
+        "zh": "vt. 談判、協商、磋商、洽談",
         "unit": 13,
         "example": "Opposition grew and the government agreed to negotiate.",
         "exampleZh": "反對勢力日益強烈，政府同意進行談判。"
@@ -20434,7 +20434,7 @@ const toeicWordsDB = [
         "en": "nevertheless",
         "kk": "[͵nɛvɚðəˋlɛs]",
         "uk": "/ˌnevəðəˈles/",
-        "zh": "adv. 仍然、不過、然而",
+        "zh": "adv. 然而、不過",
         "unit": 13,
         "example": "Our defeat was expected but it is disappointing nevertheless.",
         "exampleZh": "我們的失敗是意料中的事，儘管如此，還是令人失望。"
@@ -20524,7 +20524,7 @@ const toeicWordsDB = [
         "en": "notice",
         "kk": "[ˋnotəs]",
         "uk": "/ˈnəʊtɪs/",
-        "zh": "n. 注意、察覺、通告、佈告；vt. 注意、留意、意識、正式通知",
+        "zh": "n. 通知、注意、察覺、通告；vt. 注意到、意識、注意、留意",
         "unit": 13,
         "example": "He pretended not to notice.",
         "exampleZh": "他假裝沒有註意到。"
@@ -20584,7 +20584,7 @@ const toeicWordsDB = [
         "en": "nurture",
         "kk": "[ˋnɝtʃɚ]",
         "uk": "/ˈnɜːtʃə(r)/",
-        "zh": "vt. 養育、培育、培養、促進；n. 養育、教養、培育、環境因素",
+        "zh": "vt. 培養、促進、養育、培育；n. 養育、培育、教養、環境因素",
         "unit": 13,
         "example": "Parents should nurture kids' gifts and talents.",
         "exampleZh": "家長要培養孩子的天賦和才能。"
@@ -20594,7 +20594,7 @@ const toeicWordsDB = [
         "en": "nutrient",
         "kk": "[ˋnutriənt]",
         "uk": "/ˈnjuːtriənt/",
-        "zh": "n. 營養物、養分；adj. 營養的、滋養的",
+        "zh": "n. 養分、營養物；adj. 營養的、滋養的",
         "unit": 13,
         "example": "The nutrient is quickly leached away.",
         "exampleZh": "養分很快就被濾掉了。"
@@ -20634,7 +20634,7 @@ const toeicWordsDB = [
         "en": "objective",
         "kk": "[əbˋdʒɛktɪv]",
         "uk": "/əbˈdʒektɪv/",
-        "zh": "adj. 客觀的、如實的、不帶個人情感的；n. 目標、目的",
+        "zh": "adj. 客觀的、不帶個人情感的、客觀存在的；n. 目標、目的",
         "unit": 13,
         "example": "What is the main objective of this project?",
         "exampleZh": "這個專案的主要目標是什麼？"
@@ -20664,7 +20664,7 @@ const toeicWordsDB = [
         "en": "observe",
         "kk": "[əbˋzɝv]",
         "uk": "/əbˈzɜːv/",
-        "zh": "vt. 觀察、注意、注意到、觀察到",
+        "zh": "vt. 觀察、遵守、注意到、觀察到",
         "unit": 13,
         "example": "Quality inspectors visit manufacturing facilities regularly to observe operations.",
         "exampleZh": "品質檢驗員定期造訪製造工廠，以監督觀察各項作業流程。"
@@ -20684,7 +20684,7 @@ const toeicWordsDB = [
         "en": "obtain",
         "kk": "[əbˋten]",
         "uk": "/əbˈteɪn/",
-        "zh": "vt. 得到、獲得、存在、通用",
+        "zh": "vt. 獲得、取得、得到、存在",
         "unit": 13,
         "example": "He admitted conspiring to obtain property by deception.",
         "exampleZh": "他承認曾密謀透過欺騙獲取財產。"
@@ -20694,7 +20694,7 @@ const toeicWordsDB = [
         "en": "obvious",
         "kk": "[ˋɑbviəs]",
         "uk": "/ˈɒbviəs/",
-        "zh": "adj. 明顯的、顯然的、明確表示的、毫不掩飾的",
+        "zh": "adj. 明顯的、顯而易見的、顯然的、明確表示的",
         "unit": 13,
         "example": "The reason is blindingly obvious.",
         "exampleZh": "原因十分明顯。"
@@ -20714,7 +20714,7 @@ const toeicWordsDB = [
         "en": "occasion",
         "kk": "[əˋkeʒən]",
         "uk": "/əˈkeɪʒ(ə)n/",
-        "zh": "n. 場合、狀況、時刻、時候；v. 引起、惹起",
+        "zh": "n. 場合、機會、時刻、時候；v. 引起、惹起",
         "unit": 13,
         "example": "The wedding was a great occasion.",
         "exampleZh": "這婚禮可是一大盛典。"
@@ -20734,7 +20734,7 @@ const toeicWordsDB = [
         "en": "occupation",
         "kk": "[͵ɑkjəˋpeʃən]",
         "uk": "/ˌɒkjuˈpeɪʃ(ə)n/",
-        "zh": "n. 工作、職業、消遣、業餘活動；adj. 僅供土地佔有者使用的",
+        "zh": "n. 工作、職業、佔領、佔用；adj. 僅供土地佔有者使用的",
         "unit": 13,
         "example": "Her main occupation seems to be shopping.",
         "exampleZh": "逛商店購物似乎是她的主要消遣。"
@@ -20764,7 +20764,7 @@ const toeicWordsDB = [
         "en": "occurrence",
         "kk": "[əˋkɝəns]",
         "uk": "/əˈkʌrəns/",
-        "zh": "n. 發生、出現、發生的事、事件",
+        "zh": "n. 發生、出現、事件、發生的事",
         "unit": 13,
         "example": "Complaints seemed to be an everyday occurrence.",
         "exampleZh": "投訴似乎成了天天發生的事。"
@@ -20794,7 +20794,7 @@ const toeicWordsDB = [
         "en": "offense",
         "kk": "[əˋfɛns]",
         "uk": "/əˈfens/",
-        "zh": "n. 罪過、犯法、違法、犯罪",
+        "zh": "n. 進攻、攻擊、冒犯、觸怒",
         "unit": 13,
         "example": "Determine how serious the offense was.",
         "exampleZh": "確定冒犯行為有多嚴重。"
@@ -20814,7 +20814,7 @@ const toeicWordsDB = [
         "en": "offer",
         "kk": "[ˋɔfɚ]",
         "uk": "/ˈɒfə(r)/",
-        "zh": "vt. 提供、給予、提議、表示願意；n. 主動提議、提供、出價、報價",
+        "zh": "vt. 提供、給予、提議、表示願意；n. 提議、主動提議、提供、出價",
         "unit": 13,
         "example": "We offer free technical support.",
         "exampleZh": "我們免費提供技術支援。"
@@ -20834,7 +20834,7 @@ const toeicWordsDB = [
         "en": "official",
         "kk": "[əˋfɪʃəl]",
         "uk": "/əˈfɪʃ(ə)l/",
-        "zh": "adj. 官方的、公務上的、正式的、官方授權的；n. 官員、高階職員、執法人、裁判員",
+        "zh": "adj. 正式的、官方的、官方授權的、公務的；n. 官員、高階職員、執法人、裁判員",
         "unit": 13,
         "example": "The news is not yet official.",
         "exampleZh": "這訊息尚未經官方證實。"
@@ -20864,7 +20864,7 @@ const toeicWordsDB = [
         "en": "omit",
         "kk": "[oˋmɪt]",
         "uk": "/əˈmɪt/",
-        "zh": "vt. 遺漏、省略、省去、不做",
+        "zh": "vt. 略過、省去、遺漏、不做",
         "unit": 13,
         "example": "If you are a student, you can omit questions 16–18.",
         "exampleZh": "如果您是學生，則可以省略問題 16-18。"
@@ -20874,7 +20874,7 @@ const toeicWordsDB = [
         "en": "operate",
         "kk": "[ˋɑpɚ͵et]",
         "uk": "/ˈɒpəreɪt/",
-        "zh": "v. 營業、運轉、操縱、操作",
+        "zh": "v. 操作、運行、操縱、運轉",
         "unit": 13,
         "example": "They operate franchises in London and Paris.",
         "exampleZh": "他們在倫敦和巴黎經營特許經營權。"
@@ -20884,7 +20884,7 @@ const toeicWordsDB = [
         "en": "operation",
         "kk": "[͵ɑpɚˋeʃən]",
         "uk": "/ˌɒpəˈreɪʃ(ə)n/",
-        "zh": "n. 運作、實施、運轉、操作",
+        "zh": "n. 手術、操作、運作、實施",
         "unit": 13,
         "example": "The operation saved her life.",
         "exampleZh": "手術挽救了她的生命。"
@@ -20914,7 +20914,7 @@ const toeicWordsDB = [
         "en": "opinion",
         "kk": "[əˋpɪnjən]",
         "uk": "/əˈpɪnjən/",
-        "zh": "n. 意見、評論、看法、觀點",
+        "zh": "n. 意見、觀點、看法、信仰",
         "unit": 13,
         "example": "We'll need an expert opinion.",
         "exampleZh": "我們將需要專家的意見。"
@@ -20944,7 +20944,7 @@ const toeicWordsDB = [
         "en": "opposite",
         "kk": "[ˋɑpəzət]",
         "uk": "/ˈɒpəzɪt/",
-        "zh": "adj. 相反的、完全相反的、截然不同的；n. 對立的人、對立面、反義詞；adv. 在對面、在對過；prep. 在……對面、與……相對、與……合演、與……聯袂演出",
+        "zh": "adj. 相反的、完全相反的、截然不同的、另一邊的；n. 對立的人、對立面、反義詞；adv. 在對面、在對過；prep. 在……對面、與……相對、與……合演、與……聯袂演出",
         "unit": 13,
         "example": "Exactly the opposite is true.",
         "exampleZh": "事實恰恰相反。"
@@ -20954,7 +20954,7 @@ const toeicWordsDB = [
         "en": "option",
         "kk": "[ˋɑpʃən]",
         "uk": "/ˈɒpʃ(ə)n/",
-        "zh": "n. 選項、選擇、可選擇的事物、選擇權；v. 買賣（某物的）期權",
+        "zh": "n. 選擇、選項、可選擇的事物、選擇權；v. 買賣（某物的）期權",
         "unit": 13,
         "example": "Personally, I prefer the second option.",
         "exampleZh": "就我個人而言，我傾向第二種選擇。"
@@ -20964,7 +20964,7 @@ const toeicWordsDB = [
         "en": "order",
         "kk": "[ˋɔrdɚ]",
         "uk": "/ˈɔːdə(r)/",
-        "zh": "n. 順序、狀況、命令、次序；vt. 命令、指揮、指示、訂購",
+        "zh": "n. 順序、次序、條理、秩序；vt. 命令、指示、訂購、訂貨",
         "unit": 13,
         "example": "She barked out an order.",
         "exampleZh": "她大聲下達命令。"
@@ -20984,7 +20984,7 @@ const toeicWordsDB = [
         "en": "ordinary",
         "kk": "[ˋɔrdə͵nɛri]",
         "uk": "/ˈɔːd(ə)n(ə)ri/",
-        "zh": "adj. 平凡的、通常的、普通的、平常的；n. 常見的人（或事物）、常任法官、管區長、教區長",
+        "zh": "adj. 普通的、平常的、平淡無奇的、平庸的；n. 常見的人（或事物）、常任法官、管區長、教區長",
         "unit": 13,
         "example": "The meal was very ordinary.",
         "exampleZh": "這頓飯很普通。"
@@ -21014,7 +21014,7 @@ const toeicWordsDB = [
         "en": "original",
         "kk": "[ɚˋɪdʒənəl]",
         "uk": "/əˈrɪdʒən(ə)l/",
-        "zh": "adj. 本來的、最初的、起初的、原先的；n. 原件、原稿、原型、原版書",
+        "zh": "adj. 原始的、起初的、原先的、原作的；n. 原件、原稿、原型",
         "unit": 13,
         "example": "The original station opened in 1954.",
         "exampleZh": "原來的車站是1954年啟用的。"
@@ -21024,7 +21024,7 @@ const toeicWordsDB = [
         "en": "originality",
         "kk": "[ɚ͵ɪdʒəˋnælɪti]",
         "uk": "/əˌrɪdʒəˈnæləti/",
-        "zh": "n. 創造力、獨創性、創意、獨創能力",
+        "zh": "n. 創造力、獨創性、創見、創舉",
         "unit": 13,
         "example": "The book is completely lacking in originality.",
         "exampleZh": "這部書完全沒有創意。"
@@ -21064,7 +21064,7 @@ const toeicWordsDB = [
         "en": "outdo",
         "kk": "[͵aʊtˋdu]",
         "uk": "/ˌaʊtˈduː/",
-        "zh": "vt. 勝過、超越、超過",
+        "zh": "vt. 超過、勝過",
         "unit": 13,
         "example": "But he needed to outdo himself.",
         "exampleZh": "但他需要超越自我。"
@@ -21074,7 +21074,7 @@ const toeicWordsDB = [
         "en": "outdoor",
         "kk": "[ˋaʊt͵dɔr]",
         "uk": "/ˈaʊtdɔː(r)/",
-        "zh": "adj. 戶外的、露天的、喜歡戶外活動的",
+        "zh": "adj. 戶外的、露天的、野外的、喜歡戶外活動的",
         "unit": 13,
         "example": "They both love outdoor pursuits.",
         "exampleZh": "他們倆都喜歡戶外活動。"
@@ -21114,7 +21114,7 @@ const toeicWordsDB = [
         "en": "outlaw",
         "kk": "[ˋaʊt͵lɔ]",
         "uk": "/ˈaʊtlɔː/",
-        "zh": "n. 歹徒、罪犯、不法之徒、逃犯；vt. 法律上失效、使非法、禁止、取締",
+        "zh": "n. 亡命之徒、不法之徒、逃犯、被剝奪法律權益和保護者；vt. 使非法、禁止、取締",
         "unit": 13,
         "example": "You want to outlaw double espressos.",
         "exampleZh": "你想禁止雙份濃縮咖啡。"
@@ -21124,7 +21124,7 @@ const toeicWordsDB = [
         "en": "outlet",
         "kk": "[ˋaʊt͵lɛt]",
         "uk": "/ˈaʊtlet/",
-        "zh": "n. 銷路、商店、發洩方式、發洩途徑",
+        "zh": "n. 出口、出路、商店、發洩方式",
         "unit": 13,
         "example": "Sport became the perfect outlet for his aggression.",
         "exampleZh": "運動成為他攻擊性心理的最佳出路。"
@@ -21134,7 +21134,7 @@ const toeicWordsDB = [
         "en": "outline",
         "kk": "[ˋaʊt͵laɪn]",
         "uk": "/ˈaʊtlaɪn/",
-        "zh": "n. 外形、輪廓、輪廓圖、草圖；vt. 概述、略述、勾勒、描畫……的輪廓",
+        "zh": "n. 輪廓、外形、輪廓圖、草圖；vt. 概述、略述、勾勒",
         "unit": 13,
         "example": "She drew the figures in outline.",
         "exampleZh": "她簡略地勾勒出人物的輪廓。"
@@ -21144,7 +21144,7 @@ const toeicWordsDB = [
         "en": "outlook",
         "kk": "[ˋaʊt͵lʊk]",
         "uk": "/ˈaʊtlʊk/",
-        "zh": "n. 觀點、看法、態度、前景",
+        "zh": "n. 觀點、展望、風光、瞭望",
         "unit": 13,
         "example": "He had a practical outlook on life.",
         "exampleZh": "他的人生觀很實際。"
@@ -21174,7 +21174,7 @@ const toeicWordsDB = [
         "en": "output",
         "kk": "[ˋaʊt͵pʊt]",
         "uk": "/ˈaʊtpʊt/",
-        "zh": "n. 出產、生產、產量、作品；v. 出產、輸出",
+        "zh": "n. 產量、作品、產生、生產過程；v. 輸出",
         "unit": 13,
         "example": "Output has been drastically reduced.",
         "exampleZh": "產量已急劇下降。"
@@ -21184,7 +21184,7 @@ const toeicWordsDB = [
         "en": "outrage",
         "kk": "[ˋaʊ͵tredʒ]",
         "uk": "/ˈaʊtreɪdʒ/",
-        "zh": "n. 惡行、暴行、憤慨、憤怒；vt. 傷害、違反、使憤怒、激怒",
+        "zh": "n. 憤慨、憤怒、駭人聽聞的事、暴行；vt. 使憤怒、激怒、踐踏、凌辱",
         "unit": 13,
         "example": "Environmentalists have expressed outrage at the ruling.",
         "exampleZh": "環境保護主義者對這一裁決表示憤慨。"
@@ -21194,7 +21194,7 @@ const toeicWordsDB = [
         "en": "outrageous",
         "kk": "[aʊˋtredʒəs]",
         "uk": "/aʊtˈreɪdʒəs/",
-        "zh": "adj. 可憎的、可恥的、駭人的、無法容忍的",
+        "zh": "adj. 可恥的、無法無天的、令人吃驚的、駭人的",
         "unit": 13,
         "example": "By diplomatic standards, this was outrageous behaviour.",
         "exampleZh": "按外交標準，這是不可接受的行為。"
@@ -21234,7 +21234,7 @@ const toeicWordsDB = [
         "en": "outstanding",
         "kk": "[͵aʊtˋstændɪŋ]",
         "uk": "/aʊtˈstændɪŋ/",
-        "zh": "adj. 顯著的、傑出的、優秀的、突出的",
+        "zh": "adj. 傑出的、未償付的、優秀的、顯著的",
         "unit": 13,
         "example": "He is unarguably an outstanding man.",
         "exampleZh": "毋庸置疑，他是一個出色的人。"
@@ -21284,7 +21284,7 @@ const toeicWordsDB = [
         "en": "overhead",
         "kk": "[ˋovɚˋhɛd]",
         "uk": "/ˌəʊvəˈhed/",
-        "zh": "adv. 在上頭、高高地、在頭頂上方、在空中；adj. 在頭頂上的、在上頭的、頭頂上的、在空中的；n. 經常開支、營運費用、透明幻燈片、頂艙",
+        "zh": "adv. 在頭頂上方、在空中；adj. 頭頂上的、在空中的、高架的、頂置式的；n. 經常開支、營運費用、透明幻燈片、頂艙",
         "unit": 13,
         "example": "An eagle circled high overhead.",
         "exampleZh": "一隻鷹在頭頂上空盤旋。"
@@ -21294,7 +21294,7 @@ const toeicWordsDB = [
         "en": "overlap",
         "kk": "[ˋovɚ͵læp]",
         "uk": "/ˌəʊvəˈlæp/",
-        "zh": "v. 部分重疊、互搭、復疊、部分地重疊；n. 重疊部分、重疊量、重疊時間、交接時期",
+        "zh": "v. 互搭、復疊、部分地重疊、部分相同；n. 重疊部分、重疊量、重疊時間、交接時期",
         "unit": 13,
         "example": "A fish's scales overlap each other.",
         "exampleZh": "魚鱗一片片上下交疊。"
@@ -21354,7 +21354,7 @@ const toeicWordsDB = [
         "en": "overwhelm",
         "kk": "[͵ovɚˋwɛlm]",
         "uk": "/ˌəʊvəˈwelm/",
-        "zh": "vt. 戰勝、征服、使受不了、使不知所措",
+        "zh": "vt. 壓倒、征服、使受不了、使不知所措",
         "unit": 13,
         "example": "The various pros and cons should not blindly overwhelm one another.",
         "exampleZh": "各種利弊不應盲目地相互壓倒。"
@@ -21394,7 +21394,7 @@ const toeicWordsDB = [
         "en": "package",
         "kk": "[ˋpækədʒ]",
         "uk": "/ˈpækɪdʒ/",
-        "zh": "n. 包裹、包、盒、一套；vt. 把……打包、把……裝箱、包裝、配套銷售",
+        "zh": "n. 包裹、盒、包、一套；vt. 把……打包、把……裝箱、包裝、配套銷售",
         "unit": 13,
         "example": "I tore the package open.",
         "exampleZh": "我把包裹撕開。"
@@ -21404,7 +21404,7 @@ const toeicWordsDB = [
         "en": "panel",
         "kk": "[ˋpænəl]",
         "uk": "/ˈpæn(ə)l/",
-        "zh": "n. 專家諮詢組、專題討論小組、鑲板、嵌板；v. 用（木板、金屬板等）覆蓋、鑲",
+        "zh": "n. 鑲板、壁板、專門小組、專家諮詢組；v. 用（木板、金屬板等）覆蓋、鑲",
         "unit": 13,
         "example": "He assembled a panel of scholars to advise him.",
         "exampleZh": "他集結了一個學者小組為他出謀劃策。"
@@ -21424,7 +21424,7 @@ const toeicWordsDB = [
         "en": "part",
         "kk": "[pɑrt]",
         "uk": "/pɑːt/",
-        "zh": "n. 部分、本分、某物的部分、部；vt. 分開、使分離、分離、分別；adv. 部分地、既有……又有……、不完全地；adj. 部分、部分的、不完全的",
+        "zh": "n. 部分、角色、某物的部分、部；vt. 分開、分離、分別、分手；adv. 既有……又有……、不完全地、部分地；adj. 部分的、不完全的",
         "unit": 13,
         "example": "Have you learned your part yet?",
         "exampleZh": "你已經學會你的部分了嗎？"
@@ -21444,7 +21444,7 @@ const toeicWordsDB = [
         "en": "participant",
         "kk": "[pɑrˋtɪsəpənt]",
         "uk": "/pɑːˈtɪsɪpənt/",
-        "zh": "n. 參與者、參加者；adj. 參與的",
+        "zh": "n. 關係者、參與者、參加者；adj. 參與的",
         "unit": 13,
         "example": "He has been an active participant in the discussion.",
         "exampleZh": "他一直積極參與這次討論。"
@@ -21464,7 +21464,7 @@ const toeicWordsDB = [
         "en": "particular",
         "kk": "[pɚˋtɪkjəlɚ]",
         "uk": "/pəˈtɪkjələ(r)/",
-        "zh": "adj. 特有的、獨特的、特定的、某一的；n. 一點、一個細節、詳細資料、詳情",
+        "zh": "adj. 特別的、特定的、某一的、格外的；n. 一點、一個細節、詳細資料、詳情",
         "unit": 13,
         "example": "He loves science fiction in particular.",
         "exampleZh": "他特別喜歡科幻小說。"
@@ -21484,7 +21484,7 @@ const toeicWordsDB = [
         "en": "partner",
         "kk": "[ˋpɑrtnɚ]",
         "uk": "/ˈpɑːtnə(r)/",
-        "zh": "n. 夥伴、同伴、搭檔、合夥人；vt. 成為搭檔、合夥",
+        "zh": "n. 夥伴、搭檔、同伴、合夥人；vt. 成為搭檔、合夥",
         "unit": 13,
         "example": "Gerry offered to partner me at tennis.",
         "exampleZh": "格里提出和我搭檔打網球。"
@@ -21494,7 +21494,7 @@ const toeicWordsDB = [
         "en": "partnership",
         "kk": "[ˋpɑrtnɚ͵ʃɪp]",
         "uk": "/ˈpɑːtnəʃɪp/",
-        "zh": "n. 合夥關係、合夥、合股、合夥企業",
+        "zh": "n. 合夥(或合作)關係、合夥、合股、合夥企業",
         "unit": 13,
         "example": "Marriage should be an equal partnership.",
         "exampleZh": "婚姻應當是平等的伴侶關係。"
@@ -21524,7 +21524,7 @@ const toeicWordsDB = [
         "en": "pass",
         "kk": "[pæs]",
         "uk": "/pɑːs/",
-        "zh": "v. 穿過、通過、經過、傳遞；n. 通行證、護照、入場證、出入證",
+        "zh": "v. 通過、經過、穿過、傳遞；n. 及格、出入證、通行證、合格",
         "unit": 13,
         "example": "She timed the pass perfectly.",
         "exampleZh": "她傳球的時機掌握得恰到好處。"
@@ -21554,7 +21554,7 @@ const toeicWordsDB = [
         "en": "passport",
         "kk": "[ˋpæ͵spɔrt]",
         "uk": "/ˈpɑːspɔːt/",
-        "zh": "n. 護照、途徑、手段",
+        "zh": "n. 護照、通行證、執照、途徑",
         "unit": 13,
         "example": "He's gone off with my passport.",
         "exampleZh": "他拿走了我的護照。"
@@ -21564,7 +21564,7 @@ const toeicWordsDB = [
         "en": "patch",
         "kk": "[pætʃ]",
         "uk": "/pætʃ/",
-        "zh": "n. 補釘、補片、補丁、眼罩；vt. 補綴、修補、縫補、使出現斑塊",
+        "zh": "n. 補丁、補片、眼罩、徽章；vt. 修補、縫補、使出現斑塊、臨時連線",
         "unit": 13,
         "example": "We can patch up those holes.",
         "exampleZh": "我們能補上那些漏洞。"
@@ -21574,7 +21574,7 @@ const toeicWordsDB = [
         "en": "path",
         "kk": "[pæθ]",
         "uk": "/pɑːθ/",
-        "zh": "n. 小徑、小道、通道、路線",
+        "zh": "n. 道路、路徑、小徑、小道",
         "unit": 13,
         "example": "The path climbed steeply upwards.",
         "exampleZh": "上去的路很陡。"
@@ -21584,7 +21584,7 @@ const toeicWordsDB = [
         "en": "patience",
         "kk": "[ˋpeʃəns]",
         "uk": "/ˈpeɪʃ(ə)ns/",
-        "zh": "n. 耐心、耐性、忍耐力、考驗某人的耐心",
+        "zh": "n. 耐心、忍耐、耐性、毅力",
         "unit": 13,
         "example": "'Patience' is my middle name!",
         "exampleZh": "我的最大特點就是有耐心！"
@@ -21594,7 +21594,7 @@ const toeicWordsDB = [
         "en": "patient",
         "kk": "[ˋpeʃənt]",
         "uk": "/ˈpeɪʃ(ə)nt/",
-        "zh": "adj. 有耐心的、能忍耐的；n. 病人、患者、受動者、承受者",
+        "zh": "adj. 耐心的、能忍耐的、有耐心的；n. 病人、患者、受動者、承受者",
         "unit": 13,
         "example": "The patient is terminally ill.",
         "exampleZh": "這個病人病入膏肓。"
@@ -21604,7 +21604,7 @@ const toeicWordsDB = [
         "en": "pattern",
         "kk": "[ˋpætɚn]",
         "uk": "/ˈpæt(ə)n/",
-        "zh": "n. 花樣、圖案、模式、方式；v. 用圖案裝飾、給……加上花樣、仿照、模仿",
+        "zh": "n. 模式、圖案、方式、花樣；v. 用圖案裝飾、給……加上花樣、仿照、模仿",
         "unit": 13,
         "example": "All three attacks followed the same pattern.",
         "exampleZh": "3次襲擊都依照同一模式。"
@@ -21614,7 +21614,7 @@ const toeicWordsDB = [
         "en": "pay",
         "kk": "[pe]",
         "uk": "/peɪ/",
-        "zh": "v. 付、支付、償還、繳納；n. 薪俸、工資、薪水；adj. 付費的、收費的",
+        "zh": "v. 支付、付、償還、繳納；n. 薪水、工資、付款、回報；adj. 付費的、收費的",
         "unit": 13,
         "example": "She stubbornly refused to pay.",
         "exampleZh": "她怎麼都不肯付錢。"
@@ -21664,7 +21664,7 @@ const toeicWordsDB = [
         "en": "peaceful",
         "kk": "[ˋpisfəl]",
         "uk": "/ˈpiːsf(ə)l/",
-        "zh": "adj. 和平的、安詳的、寧靜的、安靜的",
+        "zh": "adj. 寧靜的、和平的、安靜的、非暴力的",
         "unit": 13,
         "example": "I was amazingly light-hearted and peaceful.",
         "exampleZh": "我出奇地輕鬆、平靜。"
@@ -21694,7 +21694,7 @@ const toeicWordsDB = [
         "en": "penalty",
         "kk": "[ˋpɛnəlti]",
         "uk": "/ˈpenəlti/",
-        "zh": "n. 處罰、刑罰、不利後果、苦難",
+        "zh": "n. 處罰、刑罰、罰款、不利後果",
         "unit": 13,
         "example": "He was fouled inside the penalty area.",
         "exampleZh": "在罰球區內對方隊員對他犯規。"
@@ -21714,7 +21714,7 @@ const toeicWordsDB = [
         "en": "percent",
         "kk": "[pɚˋsɛnt]",
         "uk": "/pəˈsent/",
-        "zh": "n. 百分比、百分率、百分之……、部分；adj. 百分之……的；adv. 以百分之……地、每一百中有……地",
+        "zh": "n. 百分之一、百分之……、部分；adj. 百分之……的；adv. 以百分之……地、每一百中有……地",
         "unit": 13,
         "example": "Crime has gone down 70 percent.",
         "exampleZh": "犯罪率已下降了70%。"
@@ -21734,7 +21734,7 @@ const toeicWordsDB = [
         "en": "perception",
         "kk": "[pɚˋsɛpʃən]",
         "uk": "/pəˈsepʃ(ə)n/",
-        "zh": "n. 感知、感受、看法、認識",
+        "zh": "n. 感知、察覺、認知、看法",
         "unit": 13,
         "example": "She showed great perception in her assessment of the family situation.",
         "exampleZh": "她對家庭狀況的分析顯示出敏銳的洞察力。"
@@ -21754,7 +21754,7 @@ const toeicWordsDB = [
         "en": "perform",
         "kk": "[pɚˋfɔrm]",
         "uk": "/pəˈfɔːm/",
-        "zh": "v. 使完美、做完、演出、表演",
+        "zh": "v. 表演、執行、演出、履行",
         "unit": 13,
         "example": "I'm looking forward to seeing you perform.",
         "exampleZh": "我期待著看你演出。"
@@ -21764,7 +21764,7 @@ const toeicWordsDB = [
         "en": "performance",
         "kk": "[pɚˋfɔrməns]",
         "uk": "/pəˈfɔːməns/",
-        "zh": "n. 表演、成效、演出、工作情況；adj. 效能卓越的、高效能的",
+        "zh": "n. 演出、演奏、表演、工作情況；adj. 效能卓越的、高效能的",
         "unit": 13,
         "example": "Her performance displayed great art.",
         "exampleZh": "她的表演展現了精湛的技藝。"
@@ -21774,7 +21774,7 @@ const toeicWordsDB = [
         "en": "perhaps",
         "kk": "[pɚˋhæps]",
         "uk": "/pəˈhæps/",
-        "zh": "adv. 也許、大概、可能；n. 假定、猜想",
+        "zh": "adv. 也許、可能、大概；n. 假定、猜想",
         "unit": 13,
         "example": "Perhaps I spoke too hastily.",
         "exampleZh": "也許我說得太倉促了。"
@@ -21784,7 +21784,7 @@ const toeicWordsDB = [
         "en": "period",
         "kk": "[ˋpɪriəd]",
         "uk": "/ˈpɪəriəd/",
-        "zh": "n. 時期、期間、生理期、一段時間；adj. 具有某個時代特徵的；adv. 到此為止、不再說了",
+        "zh": "n. 時期、句號、一段時間、階段；adj. 具有某個時代特徵的；adv. 到此為止、不再說了",
         "unit": 13,
         "example": "It was a period of intense activity.",
         "exampleZh": "那是活動激烈的時期。"
@@ -21804,7 +21804,7 @@ const toeicWordsDB = [
         "en": "permanent",
         "kk": "[ˋpɝmənənt]",
         "uk": "/ˈpɜːmənənt/",
-        "zh": "adj. 永恆的、永遠的、永久的、不斷出現的；n. 燙髮",
+        "zh": "adj. 永久的、永恆的、永遠的、不斷出現的；n. 燙髮",
         "unit": 13,
         "example": "The accident has not done any permanent damage.",
         "exampleZh": "那場事故沒有造成什麼永久性損傷。"
@@ -21824,7 +21824,7 @@ const toeicWordsDB = [
         "en": "persistence",
         "kk": "[pɚˋsɪstəns]",
         "uk": "/pəˈsɪstəns/",
-        "zh": "n. 繼續存在、維持",
+        "zh": "n. 堅持、固執、持續、繼續存在",
         "unit": 13,
         "example": "Skill comes only with practice, patience, and persistence.",
         "exampleZh": "只有透過練習、耐心和堅持不懈才能獲得技能。"
@@ -21834,7 +21834,7 @@ const toeicWordsDB = [
         "en": "persistent",
         "kk": "[pɚˋsɪstənt]",
         "uk": "/pəˈsɪstənt/",
-        "zh": "adj. 持續的、持久的、執意的、堅持不懈的",
+        "zh": "adj. 堅持不懈的、固執的、持續的、執意的",
         "unit": 13,
         "example": "I had a persistent cough for over a month.",
         "exampleZh": "我持續咳嗽已經一個多月了。"
@@ -21844,7 +21844,7 @@ const toeicWordsDB = [
         "en": "personnel",
         "kk": "[͵pɝsəˋnɛl]",
         "uk": "/ˌpɜːsəˈnel/",
-        "zh": "n. 人員、員工、全體人員、人事部門；adj. 人員的、有關人事的",
+        "zh": "n. 人員、員工、人事部門、全體人員；adj. 人員的、有關人事的",
         "unit": 13,
         "example": "Her first job was in personnel.",
         "exampleZh": "她的第一份工作是在人事部。"
@@ -21854,7 +21854,7 @@ const toeicWordsDB = [
         "en": "perspective",
         "kk": "[pɚˋspɛktɪv]",
         "uk": "/pəˈspektɪv/",
-        "zh": "n. 看法、觀點、視角、透視（畫）法；adj. 透視的",
+        "zh": "n. 視角、觀點、透視（畫）法、透視關係；adj. 透視的",
         "unit": 13,
         "example": "I let things get out of perspective.",
         "exampleZh": "我沒能正確地看待事物。"
@@ -21874,7 +21874,7 @@ const toeicWordsDB = [
         "en": "persuasion",
         "kk": "[pɚˋsweʒən]",
         "uk": "/pəˈsweɪʒ(ə)n/",
-        "zh": "n. 說服、勸服、說服力、信仰",
+        "zh": "n. 說服、勸說、勸服、說服力",
         "unit": 13,
         "example": "He had to use all his powers of persuasion.",
         "exampleZh": "他只好使出說服人的全部本領。"
@@ -21924,7 +21924,7 @@ const toeicWordsDB = [
         "en": "pharmacy",
         "kk": "[ˋfɑrməsi]",
         "uk": "/ˈfɑːməsi/",
-        "zh": "n. 藥房、藥店、配藥室、藥劑學",
+        "zh": "n. 製藥業、藥房、藥店、配藥室",
         "unit": 13,
         "example": "He spent four years studying pharmacy.",
         "exampleZh": "他花了4年時間學習藥劑學。"
@@ -21944,7 +21944,7 @@ const toeicWordsDB = [
         "en": "photograph",
         "kk": "[ˋfotə͵ɡræf]",
         "uk": "/ˈfəʊtəɡrɑːf/",
-        "zh": "n. 攝影照、照片、相片；vt. 拍照、照相、在照片上顯出某種樣子",
+        "zh": "n. 照片、相片；vt. 拍照、照相、在照片上顯出某種樣子",
         "unit": 13,
         "example": "The photograph had been framed.",
         "exampleZh": "照片已鑲了框。"
@@ -21954,7 +21954,7 @@ const toeicWordsDB = [
         "en": "photographer",
         "kk": "[fəˋtɑɡrəfɚ]",
         "uk": "/fəˈtɒɡrəfə(r)/",
-        "zh": "n. 攝影師、拍照者",
+        "zh": "n. 攝影師、照相師、拍照者",
         "unit": 13,
         "example": "She was a keen amateur photographer.",
         "exampleZh": "她是一個痴迷的業餘攝影師。"
@@ -21964,7 +21964,7 @@ const toeicWordsDB = [
         "en": "pile",
         "kk": "[paɪl]",
         "uk": "/paɪl/",
-        "zh": "n. 堆、一堆、一疊、一大堆；v. 堆積、疊、堆放、堆滿",
+        "zh": "n. 一堆、一疊、一大堆、大量；v. 堆放、堆滿、聚集、將（女子頭髮）高高盤起",
         "unit": 13,
         "example": "He swept the leaves up into a pile.",
         "exampleZh": "他把樹葉掃成一堆。"
@@ -21974,7 +21974,7 @@ const toeicWordsDB = [
         "en": "pin",
         "kk": "[pɪn]",
         "uk": "/pɪn/",
-        "zh": "n. 大頭針、別針、胸針、飾針；vt. 別住、釘住、按住、使不能動彈",
+        "zh": "n. 胸針、別針、大頭針、飾針；vt. 釘住、別住、按住",
         "unit": 13,
         "example": "They're trying to pin it on us.",
         "exampleZh": "他們正試圖把這件事歸罪於我們。"
@@ -21984,7 +21984,7 @@ const toeicWordsDB = [
         "en": "pioneer",
         "kk": "[͵paɪəˋnɪr]",
         "uk": "/ˌpaɪəˈnɪə(r)/",
-        "zh": "n. 拓荒者、先鋒、少年先鋒隊隊員；adj. 先驅的、拓荒的；vt. 做先鋒、倡導、開闢",
+        "zh": "n. 拓荒者、先鋒、少年先鋒隊隊員、工兵；adj. 先驅的、拓荒的；vt. 做先鋒、倡導、開闢",
         "unit": 13,
         "example": "He is a Young Pioneer.",
         "exampleZh": "他是一名少先隊員。"
@@ -21994,7 +21994,7 @@ const toeicWordsDB = [
         "en": "pipeline",
         "kk": "[ˋpaɪp͵laɪn]",
         "uk": "/ˈpaɪplaɪn/",
-        "zh": "n. 渠道、路線、輸送管道、途徑；v. 用管道輸送、運用流水線技術設計",
+        "zh": "n. 導管、輸油管、輸送管道、渠道；v. 用管道輸送、運用流水線技術設計",
         "unit": 13,
         "example": "They made a pipeline blow up test.",
         "exampleZh": "他們做了一個管線爆破試驗。"
@@ -22014,7 +22014,7 @@ const toeicWordsDB = [
         "en": "place",
         "kk": "[ples]",
         "uk": "/pleɪs/",
-        "zh": "n. 地點、地區、身分、場所；vt. 放置、安置、使處於某種境地、以某種態度對待",
+        "zh": "n. 地方、地點、場所、城鎮；vt. 放置、使處於某種境地、以某種態度對待、認出",
         "unit": 13,
         "example": "That place is a madhouse.",
         "exampleZh": "那個地方就是瘋人院。"
@@ -22054,7 +22054,7 @@ const toeicWordsDB = [
         "en": "plan",
         "kk": "[plæn]",
         "uk": "/plæn/",
-        "zh": "n. 計畫、方案、規劃、計劃；vt. 計畫、打算、計劃、籌劃",
+        "zh": "n. 計劃、規劃、方案、打算；vt. 計劃、籌劃、打算",
         "unit": 13,
         "example": "If Plan A fails, go to Plan B.",
         "exampleZh": "如果 A 計劃失敗，則轉向 B 計劃。"
@@ -22084,7 +22084,7 @@ const toeicWordsDB = [
         "en": "plant",
         "kk": "[plænt]",
         "uk": "/plɑːnt/",
-        "zh": "n. 植物、工廠、發電廠、房屋；vt. 栽種、種植、灌輸、栽贓",
+        "zh": "n. 植物、工廠、發電廠、房屋；vt. 種植、栽種、灌輸、栽贓",
         "unit": 13,
         "example": "This plant is a vigorous grower.",
         "exampleZh": "這種植物生長旺盛。"
@@ -22114,7 +22114,7 @@ const toeicWordsDB = [
         "en": "pleasure",
         "kk": "[ˋplɛʒɚ]",
         "uk": "/ˈpleʒə(r)/",
-        "zh": "n. 愉悅、滿足、快樂、欣慰；adj. 遊樂的、非公務的；v. 從……中獲得樂趣、高興",
+        "zh": "n. 愉快、快樂、滿足、欣慰；adj. 遊樂的、非公務的；v. 從……中獲得樂趣、高興",
         "unit": 13,
         "example": "He agreed with obvious pleasure.",
         "exampleZh": "他同意了，顯然很高興。"
@@ -22124,7 +22124,7 @@ const toeicWordsDB = [
         "en": "plug",
         "kk": "[plʌɡ]",
         "uk": "/plʌɡ/",
-        "zh": "n. 塞子、栓、插頭、插座；vt. 塞住、接通電源、堵、塞",
+        "zh": "n. 堵塞物、插頭、插座、塞子；vt. 堵、塞",
         "unit": 13,
         "example": "The plug broke, exposing live wires.",
         "exampleZh": "插頭壞了，露出帶電的電線。"
@@ -22134,7 +22134,7 @@ const toeicWordsDB = [
         "en": "plumber",
         "kk": "[ˋplʌmɚ]",
         "uk": "/ˈplʌmə(r)/",
-        "zh": "n. 水管工、水管工人、水電工",
+        "zh": "n. 管子工、鉛管工、水管工人、水電工",
         "unit": 13,
         "example": "This past week, a plumber completed work at my residence.",
         "exampleZh": "上週，一位水管工在我的住所完成了工作。"
@@ -22144,7 +22144,7 @@ const toeicWordsDB = [
         "en": "pocket",
         "kk": "[ˋpɑkət]",
         "uk": "/ˈpɒkɪt/",
-        "zh": "n. 口袋、財力、衣袋、錢財；vt. 把……放入口袋、把……裝進腰包、將……據為己有、賺取；adj. 袖珍的、小型的、袋裝的",
+        "zh": "n. 衣袋、口袋、錢財、財力；vt. 把……放入口袋、把……裝進腰包、將……據為己有、賺取；adj. 袖珍的、袋裝的",
         "unit": 13,
         "example": "I slid the wallet into his pocket.",
         "exampleZh": "我把錢包塞進他的口袋。"
@@ -22184,7 +22184,7 @@ const toeicWordsDB = [
         "en": "pollute",
         "kk": "[pəˋlut]",
         "uk": "/pəˈluːt/",
-        "zh": "vt. 汙染、弄髒、玷汙、敗壞",
+        "zh": "vt. 污染、汙染、弄髒、玷汙",
         "unit": 13,
         "example": "Mining would pollute the lake and denude the forest.",
         "exampleZh": "採礦將會汙染湖水並伐光森林。"
@@ -22194,7 +22194,7 @@ const toeicWordsDB = [
         "en": "pollution",
         "kk": "[pəˋluʃən]",
         "uk": "/pəˈluːʃ(ə)n/",
-        "zh": "n. 汙染、汙染物、噪音汙染、強烈燈光",
+        "zh": "n. 污染、汙染、汙染物、噪音汙染",
         "unit": 13,
         "example": "Pollution can harm marine life.",
         "exampleZh": "汙染會危及海洋生物。"
@@ -22204,7 +22204,7 @@ const toeicWordsDB = [
         "en": "ponder",
         "kk": "[ˋpɑndɚ]",
         "uk": "/ˈpɒndə(r)/",
-        "zh": "vt. 仔細考慮、衡量、琢磨、沉思",
+        "zh": "vt. 仔細考慮、衡量、回想、琢磨",
         "unit": 13,
         "example": "Bob pondered the subject.",
         "exampleZh": "鮑伯沉思著這個話題。"
@@ -22214,7 +22214,7 @@ const toeicWordsDB = [
         "en": "population",
         "kk": "[͵pɑpjəˋleʃən]",
         "uk": "/ˌpɒpjuˈleɪʃ(ə)n/",
-        "zh": "n. 人口、人口數量、生物、族群",
+        "zh": "n. 人口、族群、人口數量、生物",
         "unit": 13,
         "example": "The population continues to increase.",
         "exampleZh": "人口持續增長。"
@@ -22264,7 +22264,7 @@ const toeicWordsDB = [
         "en": "possess",
         "kk": "[pəˋzɛs]",
         "uk": "/pəˈzes/",
-        "zh": "vt. 擁有、佔有、持有、具有",
+        "zh": "vt. 擁有、持有、具有、纏住",
         "unit": 13,
         "example": "What skills should he possess?",
         "exampleZh": "他應該具備什麼樣的技能？"
@@ -22274,7 +22274,7 @@ const toeicWordsDB = [
         "en": "possession",
         "kk": "[pəˋzɛʃən]",
         "uk": "/pəˈzeʃ(ə)n/",
-        "zh": "n. 擁有、所有物、財產、持有",
+        "zh": "n. 擁有、佔有、所有物、持有",
         "unit": 13,
         "example": "The car had been his proudest possession.",
         "exampleZh": "這輛汽車是他最引以自豪的財產。"
@@ -22294,7 +22294,7 @@ const toeicWordsDB = [
         "en": "possible",
         "kk": "[ˋpɑsəbəl]",
         "uk": "/ˈpɒsəb(ə)l/",
-        "zh": "adj. 可能的、可能做到的、可能發生的、可能存在的；n. 可能適合的人、可能性、能完成的事、最高分",
+        "zh": "adj. 可能的、潜在的、可能做到的、可能發生的；n. 可能適合的人、可能性、能完成的事、最高分",
         "unit": 13,
         "example": "Many possible orderings may exist.",
         "exampleZh": "可能存在許多可能的排序。"
@@ -22304,7 +22304,7 @@ const toeicWordsDB = [
         "en": "post",
         "kk": "[post]",
         "uk": "/pəʊst/",
-        "zh": "n. 崗位、哨所、郵政、郵遞；vt. 郵寄、把……放入、派駐、委派；prep. 在……之後",
+        "zh": "n. 郵件、郵政、郵遞、包裹；vt. 張貼、郵寄、把……放入、派駐；prep. 在……之後",
         "unit": 13,
         "example": "Have you opened your post yet?",
         "exampleZh": "你拆開郵件了沒有？"
@@ -22344,7 +22344,7 @@ const toeicWordsDB = [
         "en": "postpone",
         "kk": "[poˋstpon]",
         "uk": "/pəˈspəʊn/",
-        "zh": "vt. 延遲、推遲、延緩、把……放在次要地位",
+        "zh": "vt. 延遲、延緩、推遲、把……放在次要地位",
         "unit": 13,
         "example": "I, for one, would prefer to postpone the meeting.",
         "exampleZh": "主張推遲會期的，我就是一個。"
@@ -22374,7 +22374,7 @@ const toeicWordsDB = [
         "en": "potential",
         "kk": "[pəˋtɛnʃəl]",
         "uk": "/pəˈtenʃ(ə)l/",
-        "zh": "adj. 有潛力的、可能的、潛在的；n. 潛力、可能性、潛能、電勢",
+        "zh": "adj. 潛在的、可能的；n. 潛力、潛能、可能性、電勢",
         "unit": 13,
         "example": "The boy has great potential.",
         "exampleZh": "這個男孩有很大的潛力。"
@@ -22394,7 +22394,7 @@ const toeicWordsDB = [
         "en": "powerful",
         "kk": "[ˋpaʊɚfəl]",
         "uk": "/ˈpaʊəf(ə)l/",
-        "zh": "adj. 強大的、權力大的、有影響力的、大功率的；adv. 非常、很",
+        "zh": "adj. 強有力的、強大的、有影響力的、大功率的；adv. 非常、很",
         "unit": 13,
         "example": "He had become too powerful for their liking.",
         "exampleZh": "他已經變得太強大了，他們不喜歡他。"
@@ -22414,7 +22414,7 @@ const toeicWordsDB = [
         "en": "practical",
         "kk": "[ˋpræktəkəl]",
         "uk": "/ˈpræktɪkl/",
-        "zh": "adj. 有用的、實際的、真實的、切實有效的；n. 實踐課、實用知識考試",
+        "zh": "adj. 實用的、真實的、實際的、切實有效的；n. 實踐課、實用知識考試",
         "unit": 13,
         "example": "Simon is level-headed and practical.",
         "exampleZh": "西蒙頭腦冷靜，講求實際。"
@@ -22424,7 +22424,7 @@ const toeicWordsDB = [
         "en": "practice",
         "kk": "[ˋpræktəs]",
         "uk": "/ˈpræktɪs/",
-        "zh": "n. 實踐、實際操作、通常的做法、慣例；v. 練習、經常做、養成……的習慣、信奉",
+        "zh": "n. 練習、實踐、實際操作、通常的做法；v. 實踐、練習、經常做、養成……的習慣",
         "unit": 13,
         "example": "She runs a general practice in Hull.",
         "exampleZh": "她在赫爾開了個全科診所。"
@@ -22434,7 +22434,7 @@ const toeicWordsDB = [
         "en": "precise",
         "kk": "[prɪˋsaɪs]",
         "uk": "/prɪˈsaɪs/",
-        "zh": "adj. 精準的、精確的、準確的、恰好的",
+        "zh": "adj. 精確的、準確的、恰好的、確切的",
         "unit": 13,
         "example": "She gave me clear and precise directions.",
         "exampleZh": "她給了我清晰而準確的指示。"
@@ -22464,7 +22464,7 @@ const toeicWordsDB = [
         "en": "predict",
         "kk": "[prɪˋdɪkt]",
         "uk": "/prɪˈdɪkt/",
-        "zh": "vt. 預言、預知、預計、預卜",
+        "zh": "vt. 預言、預料、預計、預卜",
         "unit": 13,
         "example": "It is impossible to predict what will happen.",
         "exampleZh": "預知未來的事是不可能的。"
@@ -22524,7 +22524,7 @@ const toeicWordsDB = [
         "en": "prefer",
         "kk": "[prəˋfɝ]",
         "uk": "/prɪˈfɜː(r)/",
-        "zh": "vt. 偏好、更喜愛、寧可、舉報",
+        "zh": "vt. 更喜歡、更喜愛、寧可、舉報",
         "unit": 13,
         "example": "I prefer walking to climbing.",
         "exampleZh": "比起爬山，我更喜歡步行。"
@@ -22534,7 +22534,7 @@ const toeicWordsDB = [
         "en": "preference",
         "kk": "[ˋprɛfɚəns]",
         "uk": "/ˈprefrəns/",
-        "zh": "n. 偏好、喜愛、偏愛、更喜歡的人",
+        "zh": "n. 偏愛、優先、偏好、更喜歡的人",
         "unit": 13,
         "example": "I can't say that I have any particular preference.",
         "exampleZh": "我說不出自己有什麼特別偏好。"
@@ -22584,7 +22584,7 @@ const toeicWordsDB = [
         "en": "prepare",
         "kk": "[priˋpɛr]",
         "uk": "/prɪˈpeə(r)/",
-        "zh": "vt. 準備、使做好準備、把……預備好、做好準備",
+        "zh": "vt. 準備、預備、使做好準備、把……預備好",
         "unit": 13,
         "example": "I had no time to prepare.",
         "exampleZh": "我沒有時間準備。"
@@ -22594,7 +22594,7 @@ const toeicWordsDB = [
         "en": "prescription",
         "kk": "[prəˋskrɪpʃən]",
         "uk": "/prɪˈskrɪpʃn/",
-        "zh": "n. 命令、指示、處方、藥方；adj. 憑處方方可購買的",
+        "zh": "n. 指示、法規、處方、藥方；adj. 憑處方方可購買的",
         "unit": 13,
         "example": "Nicola got her prescription for strep.",
         "exampleZh": "妮古拉拿了治療鏈球菌性咽喉炎的處方藥。"
@@ -22604,7 +22604,7 @@ const toeicWordsDB = [
         "en": "present",
         "kk": "[ˋprɛzənt]",
         "uk": "/ˈprez(ə)nt; prɪˈzent/",
-        "zh": "adj. 現在的、當前的、出席的、在場的；n. 現在、目前、禮物、贈品；vt. 頒發、贈送、出示、正式提交",
+        "zh": "adj. 現在的、在場的、出席的、存在的；n. 現在、目前、禮物、贈品；vt. 呈現、頒發、贈送、出示",
         "unit": 13,
         "example": "Her letters conflate past and present.",
         "exampleZh": "她的信把過去與現在結合在一起。"
@@ -22614,7 +22614,7 @@ const toeicWordsDB = [
         "en": "preserve",
         "kk": "[prəˋzɝv]",
         "uk": "/prɪˈzɜːv/",
-        "zh": "vt. 保存、保藏、保護、維護；n. 果醬、醃菜、專屬領域、獨有活動",
+        "zh": "vt. 保存、保藏、防腐、保護；n. 果醬、醃菜、專屬領域、獨有活動",
         "unit": 13,
         "example": "We need to preserve the forest.",
         "exampleZh": "我們需要保護森林。"
@@ -22624,7 +22624,7 @@ const toeicWordsDB = [
         "en": "president",
         "kk": "[ˋprɛzə͵dɛnt]",
         "uk": "/ˈprezɪdənt/",
-        "zh": "n. 總統、會長、主席、國家主席",
+        "zh": "n. 總統、主席、國家主席、負責人",
         "unit": 13,
         "example": "Who succeeded Kennedy as President?",
         "exampleZh": "接替肯尼迪任總統的是誰？"
@@ -22654,7 +22654,7 @@ const toeicWordsDB = [
         "en": "presume",
         "kk": "[prɪˋzum]",
         "uk": "/prɪˈzjuːm/",
-        "zh": "vt. 設想、相假設、料想、認為",
+        "zh": "vt. 假定、認為、擅自、料想",
         "unit": 13,
         "example": "We must presume innocence until we have proof of guilt.",
         "exampleZh": "在證實一個人有罪之前，我們必須假定其無辜。"
@@ -22664,7 +22664,7 @@ const toeicWordsDB = [
         "en": "pretend",
         "kk": "[priˋtɛnd]",
         "uk": "/prɪˈtend/",
-        "zh": "vt. 假裝、佯裝、偽裝、假扮；adj. 假裝的、假想的",
+        "zh": "vt. 佯裝、假裝、偽裝、假扮；adj. 假裝的、假想的",
         "unit": 13,
         "example": "Let's pretend (that) we're astronauts.",
         "exampleZh": "咱們裝扮成太空人吧。"
@@ -22694,7 +22694,7 @@ const toeicWordsDB = [
         "en": "prevail",
         "kk": "[prɪˋvel]",
         "uk": "/prɪˈveɪl/",
-        "zh": "vi. 勝過、戰勝、流行、盛行",
+        "zh": "vi. 勝過、優勝、流行、盛行",
         "unit": 13,
         "example": "We hoped that common sense would prevail.",
         "exampleZh": "我們希望常識能佔上風。"
@@ -22714,7 +22714,7 @@ const toeicWordsDB = [
         "en": "prevent",
         "kk": "[prɪˋvɛnt]",
         "uk": "/prɪˈvent/",
-        "zh": "vt. 防止、預防、阻止、阻礙",
+        "zh": "vt. 預防、阻止、阻礙、防止",
         "unit": 13,
         "example": "Regular exercise helps prevent weight gain.",
         "exampleZh": "經常鍛鍊有助於防止體重增加。"
@@ -22724,7 +22724,7 @@ const toeicWordsDB = [
         "en": "preventive",
         "kk": "[prɪˋvɛntɪv]",
         "uk": "/prɪˈventɪv/",
-        "zh": "adj. 防止的、預防（性）的、防備的；n. 預防藥、預防療法",
+        "zh": "adj. 防備的、預防（性）的；n. 預防藥、預防療法",
         "unit": 13,
         "example": "We must take preventive measures to reduce crime in the area.",
         "exampleZh": "我們必須採取預防措施來減少這個地區的犯罪。"
@@ -22734,7 +22734,7 @@ const toeicWordsDB = [
         "en": "previous",
         "kk": "[ˋpriviəs]",
         "uk": "/ˈpriːviəs/",
-        "zh": "adj. 以前的、先前的、稍前的、過早的；n. 前科、犯罪記錄",
+        "zh": "adj. 先的、以前的、先前的、稍前的；n. 前科、犯罪記錄",
         "unit": 13,
         "example": "Her previous calm gave way to terror.",
         "exampleZh": "她先前的泰然自若已變為驚恐。"
@@ -22754,7 +22754,7 @@ const toeicWordsDB = [
         "en": "price",
         "kk": "[praɪs]",
         "uk": "/praɪs/",
-        "zh": "n. 費用、價錢、價格、代價；vt. 為……定價、給（商店中的產品）標價、比較……的價格、問……的價格",
+        "zh": "n. 價格、代價、開價、價碼；vt. 定價、為……定價、給（商店中的產品）標價、比較……的價格",
         "unit": 13,
         "example": "The price was not negotiable.",
         "exampleZh": "價格沒商量。"
@@ -22764,7 +22764,7 @@ const toeicWordsDB = [
         "en": "priceless",
         "kk": "[ˋpraɪsləs]",
         "uk": "/ˈpraɪsləs/",
-        "zh": "adj. 貴重的、無價的、非常有用的、十分有趣的",
+        "zh": "adj. 無價的、稀世之珍的、非常有用的、十分有趣的",
         "unit": 13,
         "example": "They are priceless, unique and irreplaceable.",
         "exampleZh": "它們是無價的、獨一無二的，不可替代的。"
@@ -22784,7 +22784,7 @@ const toeicWordsDB = [
         "en": "prime",
         "kk": "[praɪm]",
         "uk": "/praɪm/",
-        "zh": "adj. 最初的、原始的、主要的、首要的；vt. 事先指點、使（某人）做好準備、把（某事物）準備好、使備用；n. 盛年、壯年時期、質數、素數",
+        "zh": "adj. 主要的、首要的、優質的、第一流的；vt. 事先指點、使（某人）做好準備、把（某事物）準備好、使備用；n. 盛年、壯年時期、質數、素數",
         "unit": 13,
         "example": "The Prime Minister was in ebullient mood.",
         "exampleZh": "首相興致勃勃。"
@@ -22794,7 +22794,7 @@ const toeicWordsDB = [
         "en": "principal",
         "kk": "[ˋprɪnsəpəl]",
         "uk": "/ˈprɪnsəp(ə)l/",
-        "zh": "adj. 主要的、首要的、最重要的、本金的；n. 校長、大學校長、學院院長、負責人",
+        "zh": "adj. 最重要的、首要的、本金的、母金的；n. 校長、大學校長、學院院長、負責人",
         "unit": 13,
         "example": "The principal is a very busy woman.",
         "exampleZh": "校長是個大忙人。"
@@ -22814,7 +22814,7 @@ const toeicWordsDB = [
         "en": "prior",
         "kk": "[ˋpraɪɚ]",
         "uk": "/ˈpraɪə(r)/",
-        "zh": "adj. 在前的、居先的、先前的、事先的；n. 犯罪前科、小修道院院長、大修道院副院長、託缽會會長",
+        "zh": "adj. 先前的、事先的、優先的、更重要的；n. 犯罪前科、小修道院院長、大修道院副院長、託缽會會長",
         "unit": 13,
         "example": "Visits are by prior arrangement.",
         "exampleZh": "參觀需要事先安排。"
@@ -22834,7 +22834,7 @@ const toeicWordsDB = [
         "en": "priority",
         "kk": "[praɪˋɔrəti]",
         "uk": "/praɪˈɒrəti/",
-        "zh": "n. 優先、重點、優先事項、最重要的事；adj. 優先的",
+        "zh": "n. 在先、重點、優先權、優先事項；adj. 優先的",
         "unit": 13,
         "example": "Club members will be given priority.",
         "exampleZh": "俱樂部成員享有優先權。"
@@ -22844,7 +22844,7 @@ const toeicWordsDB = [
         "en": "privacy",
         "kk": "[ˋpraɪvəsi]",
         "uk": "/ˈprɪvəsi/",
-        "zh": "n. 隱私、秘密、清靜、獨處",
+        "zh": "n. 祕密、私下、隱私、秘密",
         "unit": 13,
         "example": "French privacy laws are very strict.",
         "exampleZh": "法國的隱私法非常嚴格。"
@@ -22884,7 +22884,7 @@ const toeicWordsDB = [
         "en": "prize",
         "kk": "[praɪz]",
         "uk": "/praɪz/",
-        "zh": "n. 獎品、獎賞、獎項、非常珍貴的人；adj. 可獲獎的、優等的、作為獎品的、獲獎的；vt. 珍視、高度重視、撬開、竭力打探",
+        "zh": "n. 獎品、獎項、非常珍貴的人、十分重要的人；adj. 可獲獎的、優等的、作為獎品的、獲獎的；vt. 珍視、高度重視、撬開、竭力打探",
         "unit": 13,
         "example": "She stepped up to receive her prize.",
         "exampleZh": "她走上前去領獎。"
@@ -22894,7 +22894,7 @@ const toeicWordsDB = [
         "en": "probably",
         "kk": "[ˋprɑbəb͵li]",
         "uk": "/ˈprɒbəbli/",
-        "zh": "adv. 大概、或許",
+        "zh": "adv. 可能地、大概、或許",
         "unit": 13,
         "example": "It was probably infested with cooties.",
         "exampleZh": "它可能是染上蝨子了。"
@@ -22924,7 +22924,7 @@ const toeicWordsDB = [
         "en": "process",
         "kk": "[ˋprɑs͵ɛs]",
         "uk": "/ˈprəʊses/",
-        "zh": "n. 過程、進程、步驟、程式；vt. 處理、辦理、加工、稽核；adj. 三原色的、三色版的、經過特殊加工的、照相板的",
+        "zh": "n. 過程、步驟、程式、變化過程；vt. 處理、加工、稽核、受理；adj. 三原色的、三色版的、經過特殊加工的、照相板的",
         "unit": 13,
         "example": "The process was needlessly slow.",
         "exampleZh": "程序過於緩慢了。"
@@ -22954,7 +22954,7 @@ const toeicWordsDB = [
         "en": "product",
         "kk": "[ˋprɑdəkt]",
         "uk": "/ˈprɒdʌkt/",
-        "zh": "n. 產品、成品、製品、生成物",
+        "zh": "n. 產品、結果、製品、生成物",
         "unit": 13,
         "example": "The product is at the design stage.",
         "exampleZh": "產品處於設計階段。"
@@ -22964,7 +22964,7 @@ const toeicWordsDB = [
         "en": "production",
         "kk": "[prəˋdʌkʃən]",
         "uk": "/prəˈdʌkʃ(ə)n/",
-        "zh": "n. 生產、製作、製造、加工",
+        "zh": "n. 製造、生產、加工、採集",
         "unit": 13,
         "example": "Production costs began to spiral.",
         "exampleZh": "生產成本開始加速上漲。"
@@ -22984,7 +22984,7 @@ const toeicWordsDB = [
         "en": "profession",
         "kk": "[prəˋfɛʃən]",
         "uk": "/prəˈfeʃn/",
-        "zh": "n. 職業、同業、職業界同行、公開表示",
+        "zh": "n. 職業同行、職業、職業界同行、同業",
         "unit": 13,
         "example": "They're both doctors by profession.",
         "exampleZh": "他們兩人的職業都是醫生。"
@@ -22994,7 +22994,7 @@ const toeicWordsDB = [
         "en": "professional",
         "kk": "[prəˋfɛʃənəl]",
         "uk": "/prəˈfeʃən(ə)l/",
-        "zh": "adj. 專業的、職業的、非常內行的、極為稱職的；n. 專業人員、專業人士、內行、專家",
+        "zh": "adj. 專業的、職業的、非常內行的、極為稱職的；n. 專業人士、專業人員、內行、專家",
         "unit": 13,
         "example": "He decided to turn professional.",
         "exampleZh": "他決定轉為職業人員。"
@@ -23014,7 +23014,7 @@ const toeicWordsDB = [
         "en": "profit",
         "kk": "[ˋprɑfət]",
         "uk": "/ˈprɒfɪt/",
-        "zh": "n. 利潤、盈利、利益、好處；v. 得益、獲益、贏利、獲利",
+        "zh": "n. 收益、利潤、盈利、利益；v. 獲益、得益",
         "unit": 13,
         "example": "Profit from exports rose 7.3%.",
         "exampleZh": "出口利潤增長了7.3%。"
@@ -23024,7 +23024,7 @@ const toeicWordsDB = [
         "en": "profitable",
         "kk": "[ˋprɑfətəbəl]",
         "uk": "/ˈprɒfɪtəb(ə)l/",
-        "zh": "adj. 有利的、贏利的、盈利的、有利可圖的",
+        "zh": "adj. 有利的、盈利的、有利可圖的、有益的",
         "unit": 13,
         "example": "It would take a miracle to make this business profitable.",
         "exampleZh": "讓這個公司贏利簡直是天方夜譚。"
@@ -23034,7 +23034,7 @@ const toeicWordsDB = [
         "en": "profound",
         "kk": "[proˋfaʊnd]",
         "uk": "/prəˈfaʊnd/",
-        "zh": "adj. 深刻的、深切的、極大的、強烈的",
+        "zh": "adj. 深刻的、深度的、極大的、強烈的",
         "unit": 13,
         "example": "Her speech made a profound impact on everyone.",
         "exampleZh": "她的講話對每個人都有深遠的影響。"
@@ -23044,7 +23044,7 @@ const toeicWordsDB = [
         "en": "program",
         "kk": "[ˋpro͵ɡræm]",
         "uk": "/ˈprəʊɡræm/",
-        "zh": "n. 計畫、方案、節目、程式；vt. 編寫程式、設計程式、設定、預設",
+        "zh": "n. 程序、項目、程式、計劃；vt. 編寫程式、設計程式、設定、預設",
         "unit": 13,
         "example": "The program aired last week.",
         "exampleZh": "該節目已於上週播出。"
@@ -23064,7 +23064,7 @@ const toeicWordsDB = [
         "en": "progress",
         "kk": "[ˋprɑ͵ɡrɛs]",
         "uk": "/ˈprəʊɡres/",
-        "zh": "n. 前進、進步、進展；v. 進行、進步、進展",
+        "zh": "n. 進步、進展、前進、行進；v. 進步、進展、使（任務，事業）取得持續進展、推移",
         "unit": 13,
         "example": "Progress is maddeningly slow.",
         "exampleZh": "進展慢得令人心煩。"
@@ -23084,7 +23084,7 @@ const toeicWordsDB = [
         "en": "prohibit",
         "kk": "[proˋhɪbət]",
         "uk": "/prəˈhɪbɪt/",
-        "zh": "vt. 禁止、妨礙、阻止、使不可能",
+        "zh": "vt. 禁止、阻止、使不可能",
         "unit": 13,
         "example": "What kind of plants do you prohibit?",
         "exampleZh": "你們禁止的是哪種植物？"
@@ -23094,7 +23094,7 @@ const toeicWordsDB = [
         "en": "project",
         "kk": "[ˋprɑdʒɛkt]",
         "uk": "/ˈprɒdʒekt; prəˈdʒekt/",
-        "zh": "n. 專案、計劃、課題、研究專案；v. 計畫、投射、預計、推算",
+        "zh": "n. 項目、專案、計劃、課題；v. 投射、預計、推算、計劃",
         "unit": 13,
         "example": "The whole project was badly managed.",
         "exampleZh": "整個專案管理得差勁。"
@@ -23104,7 +23104,7 @@ const toeicWordsDB = [
         "en": "projection",
         "kk": "[prəˋdʒɛkʃən]",
         "uk": "/prəˈdʒekʃ(ə)n/",
-        "zh": "n. 投擲、發射、投影、估算",
+        "zh": "n. 規劃、投影、投射、預測",
         "unit": 13,
         "example": "The conference room projector displayed a vibrant visual projection of sales data.",
         "exampleZh": "會議室投影機投射出銷售數據生動清晰的視覺投影。"
@@ -23124,7 +23124,7 @@ const toeicWordsDB = [
         "en": "prolong",
         "kk": "[prəˋlɔŋ]",
         "uk": "/prəˈlɒŋ/",
-        "zh": "vt. 延長、拖延、拉長、拖長",
+        "zh": "vt. 延長、拉長、拖延、拖長",
         "unit": 13,
         "example": "What factors shorten, prolong, or amplify the effect of deception?",
         "exampleZh": "什麼因素縮短、延長或放大了欺騙的效果？"
@@ -23134,7 +23134,7 @@ const toeicWordsDB = [
         "en": "promise",
         "kk": "[ˋprɑməs]",
         "uk": "/ˈprɒmɪs/",
-        "zh": "vt. 承諾、允諾、保證、使很可能；n. 承諾、諾言、前途",
+        "zh": "vt. 承諾、保證、使很可能、預示；n. 承諾、諾言、前途",
         "unit": 13,
         "example": "Their future was full of promise.",
         "exampleZh": "他們的前途希望無窮。"
@@ -23144,7 +23144,7 @@ const toeicWordsDB = [
         "en": "promote",
         "kk": "[prəˋmot]",
         "uk": "/prəˈməʊt/",
-        "zh": "vt. 晉升、促進、提倡、升職",
+        "zh": "vt. 推銷、促進、提倡、升職",
         "unit": 13,
         "example": "Is it ethical to promote cigarettes through advertising?",
         "exampleZh": "透過廣告推銷香菸合乎道德嗎？"
@@ -23164,7 +23164,7 @@ const toeicWordsDB = [
         "en": "proof",
         "kk": "[pruf]",
         "uk": "/pruːf/",
-        "zh": "n. 證據、物證、證明、檢驗；adj. 能抵擋的、防……的、耐……的、試印的；v. 保護……免受影響、印……的校樣、校對、加水使（酵母）活化",
+        "zh": "n. 證據、物證、證明、檢驗；adj. 防……的、耐……的、試印的；v. 保護……免受影響、印……的校樣、校對、加水使（酵母）活化",
         "unit": 13,
         "example": "We didn't have any definite proof.",
         "exampleZh": "我們沒有任何確鑿的證據。"
@@ -23184,7 +23184,7 @@ const toeicWordsDB = [
         "en": "property",
         "kk": "[ˋprɑpɚti]",
         "uk": "/ˈprɒpəti/",
-        "zh": "n. 資產、所有物、財產、地產",
+        "zh": "n. 財產、資產、所有物、地產",
         "unit": 13,
         "example": "The property was owned communally.",
         "exampleZh": "這財產屬集體所有。"
@@ -23194,7 +23194,7 @@ const toeicWordsDB = [
         "en": "proposal",
         "kk": "[prəˋpozəl]",
         "uk": "/prəˈpəʊz(ə)l/",
-        "zh": "n. 計畫、提案、求婚、提議",
+        "zh": "n. 提議、計劃、提案、建議",
         "unit": 13,
         "example": "The proposal was emphatically defeated.",
         "exampleZh": "這個建議已被斷然否決。"
@@ -23204,7 +23204,7 @@ const toeicWordsDB = [
         "en": "propose",
         "kk": "[prəˋpoz]",
         "uk": "/prəˈpəʊz/",
-        "zh": "vt. 計畫、建議、求婚、提議",
+        "zh": "vt. 提議、建議、提出、提名",
         "unit": 13,
         "example": "How do you propose getting home?",
         "exampleZh": "你建議怎麼回家？"
@@ -23214,7 +23214,7 @@ const toeicWordsDB = [
         "en": "prospect",
         "kk": "[ˋprɑspɛkt]",
         "uk": "/ˈprɒspekt/",
-        "zh": "n. 指望、預期、可能性、希望；vi. 勘探、勘察、尋找",
+        "zh": "n. 可能性、希望、預期、展望；vi. 勘探、勘察、尋找",
         "unit": 13,
         "example": "There is no immediate prospect of peace.",
         "exampleZh": "短期內沒有和平的可能。"
@@ -23244,7 +23244,7 @@ const toeicWordsDB = [
         "en": "proud",
         "kk": "[praʊd]",
         "uk": "/praʊd/",
-        "zh": "adj. 驕傲的、有自尊心的、自豪的、得意的",
+        "zh": "adj. 自豪的、驕傲的、得意的、令人自豪的",
         "unit": 13,
         "example": "I'm proud of my Italian roots.",
         "exampleZh": "我為我的義大利血統感到自豪。"
@@ -23264,7 +23264,7 @@ const toeicWordsDB = [
         "en": "provide",
         "kk": "[prəˋvaɪd]",
         "uk": "/prəˈvaɪd/",
-        "zh": "vt. 提供、供給、配備、準備好",
+        "zh": "vt. 提供、供應、供給、配備",
         "unit": 13,
         "example": "He refused to provide a specimen.",
         "exampleZh": "他拒絕提供樣本。"
@@ -23284,7 +23284,7 @@ const toeicWordsDB = [
         "en": "public",
         "kk": "[ˋpʌblɪk]",
         "uk": "/ˈpʌblɪk/",
-        "zh": "adj. 公眾的、大眾的、公共的、公用的；n. 公眾、大眾、志趣相投（或從事同一類活動、具有共同特徵）的群體、讀者",
+        "zh": "adj. 公共的、公眾的、大眾的、公用的；n. 公眾、大眾、志趣相投（或從事同一類活動、具有共同特徵）的群體、讀者",
         "unit": 13,
         "example": "She retreated from public life.",
         "exampleZh": "她退出了公眾生活。"
@@ -23294,7 +23294,7 @@ const toeicWordsDB = [
         "en": "publication",
         "kk": "[͵pʌblɪˋkeʃən]",
         "uk": "/ˌpʌblɪˈkeɪʃn/",
-        "zh": "n. 出版物、公布、出版、發行",
+        "zh": "n. 出版、發表、宣佈、發行",
         "unit": 13,
         "example": "All reports are vetted before publication.",
         "exampleZh": "所有報道都要經過仔細檢查後才能發表。"
@@ -23304,7 +23304,7 @@ const toeicWordsDB = [
         "en": "publicize",
         "kk": "[ˋpʌblɪ͵saɪz]",
         "uk": "/ˈpʌblɪsaɪz/",
-        "zh": "vt. 宣傳、公布、公佈",
+        "zh": "vt. 宣傳、公佈、廣告",
         "unit": 13,
         "example": "The author appeared on television to publicize her latest book.",
         "exampleZh": "作者出現在電視上宣傳她的新書。"
@@ -23314,7 +23314,7 @@ const toeicWordsDB = [
         "en": "publish",
         "kk": "[ˋpʌblɪʃ]",
         "uk": "/ˈpʌblɪʃ/",
-        "zh": "vt. 出版、發行、發表、使（作品）出版",
+        "zh": "vt. 出版、發行、刊載、發表",
         "unit": 13,
         "example": "The DOT is to publish the conference proceedings.",
         "exampleZh": "運輸部將公佈會議記錄。"
@@ -23324,7 +23324,7 @@ const toeicWordsDB = [
         "en": "publisher",
         "kk": "[ˋpʌblɪʃɚ]",
         "uk": "/ˈpʌblɪʃə(r)/",
-        "zh": "n. 出版社、出版者、出版商、發行人",
+        "zh": "n. 出版商、出版者、出版社、發行人",
         "unit": 13,
         "example": "The agreement assigns copyright to the publisher.",
         "exampleZh": "協議規定將版權轉讓給出版商。"
@@ -23344,7 +23344,7 @@ const toeicWordsDB = [
         "en": "punishment",
         "kk": "[ˋpʌnɪʃmənt]",
         "uk": "/ˈpʌnɪʃmənt/",
-        "zh": "n. 處罰、懲罰手段、粗暴對待、糟蹋",
+        "zh": "n. 處罰、懲罰、懲罰手段、粗暴對待",
         "unit": 13,
         "example": "The punishment was very fair.",
         "exampleZh": "這個處罰很公正。"
@@ -23354,7 +23354,7 @@ const toeicWordsDB = [
         "en": "purchase",
         "kk": "[ˋpɝtʃəs]",
         "uk": "/ˈpɜːtʃəs/",
-        "zh": "n. 購買、採購、購買的東西、財產置得；vt. 購買、獲得、採購、得到",
+        "zh": "n. 購買、採購、購買的東西、財產置得；vt. 購買、採購、獲得、得到",
         "unit": 13,
         "example": "It was decided (that) the school should purchase new software.",
         "exampleZh": "已經決定學校要購買新軟體。"
@@ -23364,7 +23364,7 @@ const toeicWordsDB = [
         "en": "pure",
         "kk": "[pjʊr]",
         "uk": "/pjʊə(r)/",
-        "zh": "adj. 純潔的、完全的、純的、不摻雜質的",
+        "zh": "adj. 純粹的、純的、不摻雜質的、血統純的",
         "unit": 13,
         "example": "The story is pure moonshine.",
         "exampleZh": "這個故事純屬瞎編。"
@@ -23394,7 +23394,7 @@ const toeicWordsDB = [
         "en": "purpose",
         "kk": "[ˋpɝpəs]",
         "uk": "/ˈpɜːpəs/",
-        "zh": "n. 目的、意圖、目標、計劃；v. 有意、打算",
+        "zh": "n. 目的、用途、意圖、目標；v. 有意、打算",
         "unit": 13,
         "example": "The purpose of industry is to create wealth.",
         "exampleZh": "工業的目的是創造財富。"
@@ -23404,7 +23404,7 @@ const toeicWordsDB = [
         "en": "pursue",
         "kk": "[pɚˋsu]",
         "uk": "/pəˈsjuː/",
-        "zh": "vt. 追求、求愛、追趕、致力於",
+        "zh": "vt. 追求、從事、致力於、執行",
         "unit": 13,
         "example": "She wishes to pursue a medical career.",
         "exampleZh": "她希望從事醫學工作。"
@@ -23414,7 +23414,7 @@ const toeicWordsDB = [
         "en": "pursuit",
         "kk": "[pɚˋsut]",
         "uk": "/pəˈsjuːt/",
-        "zh": "n. 追求、尋求、尋找、繼續",
+        "zh": "n. 追蹤、追擊、追求、尋找",
         "unit": 13,
         "example": "The pursuit of money ruled his life.",
         "exampleZh": "對金錢的追求支配著他的生活。"
@@ -23434,7 +23434,7 @@ const toeicWordsDB = [
         "en": "qualify",
         "kk": "[ˋkwɑlə͵faɪ]",
         "uk": "/ˈkwɒlɪfaɪ/",
-        "zh": "v. 使具有資格、使合格、有權去做、取得資格",
+        "zh": "v. 使具有資格、有權去做、取得資格、達到標準",
         "unit": 13,
         "example": "New businesses may qualify for tax remission.",
         "exampleZh": "新的企業可以有資格享受稅收減免。"
@@ -23444,7 +23444,7 @@ const toeicWordsDB = [
         "en": "quality",
         "kk": "[ˋkwɑləti]",
         "uk": "/ˈkwɒləti/",
-        "zh": "n. 品質、特性、質量、優質；adj. 優良的、優質的、高質量的、內容嚴肅的",
+        "zh": "n. 質量、品質、優質、上乘；adj. 優質的、高質量的、內容嚴肅的、高階的",
         "unit": 13,
         "example": "The quality is uniformly high.",
         "exampleZh": "質量一律很高。"
@@ -23454,7 +23454,7 @@ const toeicWordsDB = [
         "en": "quantity",
         "kk": "[ˋkwɑntəti]",
         "uk": "/ˈkwɒntəti/",
-        "zh": "n. 數量、分量、量、數目",
+        "zh": "n. 量、數目、大量、大批",
         "unit": 13,
         "example": "Is it available in sufficient quantity?",
         "exampleZh": "這東西能不能足量供應？"
@@ -23464,7 +23464,7 @@ const toeicWordsDB = [
         "en": "quarrel",
         "kk": "[ˋkwɔrəl]",
         "uk": "/ˈkwɒrəl/",
-        "zh": "n. 爭吵、不和、拌嘴、抱怨（或不贊成）的理由；v. 爭吵、不和、吵架、不同意",
+        "zh": "n. 爭吵、拌嘴、抱怨（或不贊成）的理由、方鏃箭；v. 爭吵、吵架、不同意、反對",
         "unit": 13,
         "example": "They had a quarrel about money.",
         "exampleZh": "他們為錢吵了一架。"
@@ -23494,7 +23494,7 @@ const toeicWordsDB = [
         "en": "question",
         "kk": "[ˋkwɛstʃən]",
         "uk": "/ˈkwestʃən/",
-        "zh": "n. 問題、詢問、疑問、試題；vt. 訊問、審問、向……提出問題、盤問",
+        "zh": "n. 問題、疑問、試題、題目；vt. 質疑、向……提出問題、盤問、對……提出質疑",
         "unit": 13,
         "example": "That's a very hard question.",
         "exampleZh": "這是一個非常難的問題。"
@@ -23524,7 +23524,7 @@ const toeicWordsDB = [
         "en": "quick",
         "kk": "[kwɪk]",
         "uk": "/kwɪk/",
-        "zh": "adj. 快速的、迅速的、快的、持續時間很短的；adv. 以很快的速度、迅速發生地、很快發生地；n. 活肉、要害、核心、活著的人們；int. 快、快點",
+        "zh": "adj. 快速的、敏捷的、迅速的、快的；adv. 以很快的速度、迅速發生地、很快發生地；n. 活肉、要害、核心、活著的人們；int. 快、快點",
         "unit": 13,
         "example": "He kept giving quick blinks.",
         "exampleZh": "他不停地快速眨眼。"
@@ -23544,7 +23544,7 @@ const toeicWordsDB = [
         "en": "quiet",
         "kk": "[ˋkwaɪət]",
         "uk": "/ˈkwaɪət/",
-        "zh": "adj. 寧靜的、安定的、輕聲的、安靜的；n. 安靜、靜謐；v. 平靜下來、平靜、安靜、消除",
+        "zh": "adj. 安靜的、輕聲的、不出聲的、沉默寡言的；n. 寧靜、安靜、靜謐；v. 平靜、安靜、消除、減輕",
         "unit": 13,
         "example": "'Be quiet,' said the teacher.",
         "exampleZh": "“安靜點！”老師說道。"
@@ -23554,7 +23554,7 @@ const toeicWordsDB = [
         "en": "quit",
         "kk": "[kwɪt]",
         "uk": "/kwɪt/",
-        "zh": "vt. 解除、退出、停止、戒掉；adj. 擺脫了……的、已經了結的；n. 辭職、離任",
+        "zh": "vt. 放棄、離職、停止、戒掉；adj. 擺脫了……的、已經了結的；n. 辭職、離任",
         "unit": 13,
         "example": "He quit his job as an office boy.",
         "exampleZh": "他辭去了辦公室勤雜工的工作。"
@@ -23564,7 +23564,7 @@ const toeicWordsDB = [
         "en": "quite",
         "kk": "[kwaɪt]",
         "uk": "/kwaɪt/",
-        "zh": "adv. 完全、徹底、相當、很",
+        "zh": "adv. 相當、完全、很、非常",
         "unit": 13,
         "example": "I worked quite irregular hours.",
         "exampleZh": "我的工作時間很不規律。"
@@ -23574,7 +23574,7 @@ const toeicWordsDB = [
         "en": "quotation",
         "kk": "[kwoˋteʃən]",
         "uk": "/kwəʊˈteɪʃ(ə)n/",
-        "zh": "n. 引用、引證、引語、引文",
+        "zh": "n. 引用、引證、引文、引語",
         "unit": 13,
         "example": "Each chapter begins with a quotation.",
         "exampleZh": "每一章的開頭都有一條引語。"
@@ -23584,7 +23584,7 @@ const toeicWordsDB = [
         "en": "quote",
         "kk": "[kwot]",
         "uk": "/kwəʊt/",
-        "zh": "vt. 引用、引述、舉例說明、將......描述為；n. 引號、引語、引文、報價",
+        "zh": "vt. 引用、引述、舉例說明；n. 報價、引文、引語、開價",
         "unit": 13,
         "example": "We'll send you a quote without delay.",
         "exampleZh": "我們會立即向你方報價。"
@@ -23604,7 +23604,7 @@ const toeicWordsDB = [
         "en": "racial",
         "kk": "[ˋreʃəl]",
         "uk": "/ˈreɪʃ(ə)l/",
-        "zh": "adj. 人種的、種族的、種族關係的、種族之間的",
+        "zh": "adj. 種族的、種族關係的、種族之間的、人種的",
         "unit": 13,
         "example": "Racial prejudice is (an) anathema to me.",
         "exampleZh": "對我來說，種族歧視非常可惡。"
@@ -23614,7 +23614,7 @@ const toeicWordsDB = [
         "en": "radical",
         "kk": "[ˋrædəkəl]",
         "uk": "/ˈrædɪk(ə)l/",
-        "zh": "adj. 根本的、基本的、徹底的、激進的；n. 根部、基礎、激進分子、遊離基",
+        "zh": "adj. 根本的、徹底的、激進的、極端的；n. 激進分子、遊離基、自由基、詞根",
         "unit": 13,
         "example": "It was a radical departure from tradition.",
         "exampleZh": "這從根本上違背了傳統。"
@@ -23624,7 +23624,7 @@ const toeicWordsDB = [
         "en": "radio",
         "kk": "[ˋredi͵o]",
         "uk": "/ˈreɪdiəʊ/",
-        "zh": "n. 無線電、收音機、無線電收發裝置、無線電通訊；vt. 用無線電通訊",
+        "zh": "n. 收音機、無線電、無線電收發裝置、無線電通訊；vt. 用無線電通訊",
         "unit": 13,
         "example": "The radio crackled into life.",
         "exampleZh": "收音機噼裡啪啦地響了起來。"
@@ -23644,7 +23644,7 @@ const toeicWordsDB = [
         "en": "radius",
         "kk": "[ˋrediəs]",
         "uk": "/ˈreɪdiəs/",
-        "zh": "n. 半徑、半徑距離、半徑範圍、周圍；v. 使（角，邊緣）成弧形",
+        "zh": "n. 半徑、半徑範圍、周圍、橈骨；v. 使（角，邊緣）成弧形",
         "unit": 13,
         "example": "He indicated a semicircle with a radius of about thirty miles.",
         "exampleZh": "他標示出一個半徑大約三十英里的半圓。"
@@ -23664,7 +23664,7 @@ const toeicWordsDB = [
         "en": "raise",
         "kk": "[rez]",
         "uk": "/reɪz/",
-        "zh": "vt. 舉起、抬起、提起、直立；n. 加薪、賭注加碼、（持槓鈴時的）提",
+        "zh": "vt. 提高、提起、舉起、直立；n. 加薪、賭注加碼、（持槓鈴時的）提",
         "unit": 13,
         "example": "How can we raise standards in schools?",
         "exampleZh": "我們怎樣才能提高學校的標準？"
@@ -23674,7 +23674,7 @@ const toeicWordsDB = [
         "en": "random",
         "kk": "[ˋrændəm]",
         "uk": "/ˈrændəm/",
-        "zh": "adj. 胡亂的、隨便的、任意的、隨機的；n. 隨意、隨機、不認識的人、陌生人；adv. 隨機地、胡亂地",
+        "zh": "adj. 胡亂的、隨機的、任意的、石頭大小不一的；n. 隨意、隨機、不認識的人、陌生人；adv. 隨機地、胡亂地",
         "unit": 13,
         "example": "Police will conduct random breath tests.",
         "exampleZh": "警察會隨機進行吹氣酒精測試。"
@@ -23694,7 +23694,7 @@ const toeicWordsDB = [
         "en": "range",
         "kk": "[rendʒ]",
         "uk": "/reɪndʒ/",
-        "zh": "n. 排、行、一系列、範圍；vi. 變化、變動、排列、排序；adj. 有秩序的、安定的",
+        "zh": "n. 範圍、界限、視覺（或聽覺）範圍、射程；vi. 變化、變動、排列、排序；adj. 有秩序的、安定的",
         "unit": 13,
         "example": "We stock a wide range of perfumes.",
         "exampleZh": "我們備有各種各樣的香水。"
@@ -23714,7 +23714,7 @@ const toeicWordsDB = [
         "en": "rapid",
         "kk": "[ˋræpəd]",
         "uk": "/ˈræpɪd/",
-        "zh": "adj. 快的、迅速的、快速的；n. 急流、湍灘、高速交通工具、高速交通網",
+        "zh": "adj. 迅速的、快的、快速的；n. 急流、湍灘、高速交通工具、高速交通網",
         "unit": 13,
         "example": "The disease is spreading at a rapid rate.",
         "exampleZh": "這種疾病正在迅速傳播。"
@@ -23734,7 +23734,7 @@ const toeicWordsDB = [
         "en": "rare",
         "kk": "[rɛr]",
         "uk": "/reə(r)/",
-        "zh": "adj. 稀有的、罕見的、少見的、不常發生的",
+        "zh": "adj. 罕見的、少見的、不常發生的、稀罕的",
         "unit": 13,
         "example": "This species is extremely rare.",
         "exampleZh": "該品種極為罕見。"
@@ -23754,7 +23754,7 @@ const toeicWordsDB = [
         "en": "rate",
         "kk": "[ret]",
         "uk": "/reɪt/",
-        "zh": "n. 速度、速率、比率、率；v. 比例、率、評價、評定",
+        "zh": "n. 比率、速度、速率、率；v. 評級、評價、評定、被認為",
         "unit": 13,
         "example": "His pulse rate dropped suddenly.",
         "exampleZh": "他的脈搏速率突然下降。"
@@ -23764,7 +23764,7 @@ const toeicWordsDB = [
         "en": "rather",
         "kk": "[ˋræðɚ]",
         "uk": "/ˈrɑːðə(r)/",
-        "zh": "adv. 相當、頗、寧願、最好；int. 當然、的確",
+        "zh": "adv. 相當、寧可、頗、寧願；int. 當然、的確",
         "unit": 13,
         "example": "The leaves taste rather bitter.",
         "exampleZh": "葉子的味道比較苦。"
@@ -23774,7 +23774,7 @@ const toeicWordsDB = [
         "en": "rational",
         "kk": "[ˋræʃənəl]",
         "uk": "/ˈræʃ(ə)nəl/",
-        "zh": "adj. 理性的、有理性的、合理的、基於理性的；n. 有理數",
+        "zh": "adj. 理性的、明事理的、合理的、基於理性的；n. 有理數",
         "unit": 13,
         "example": "There is no rational explanation for his actions.",
         "exampleZh": "對他的所作所為無法作出合理的解釋。"
@@ -23784,7 +23784,7 @@ const toeicWordsDB = [
         "en": "reach",
         "kk": "[ritʃ]",
         "uk": "/riːtʃ/",
-        "zh": "v. 抵達、達到、到達、被看見；n. 可及之範圍、伸出、伸手可及的距離、可到達的距離",
+        "zh": "v. 到達、達到、抵達、被看見；n. 伸出、伸手可及的距離、可到達的距離、能及的範圍",
         "unit": 13,
         "example": "Customer service representatives strive to reach mutual agreements with clients.",
         "exampleZh": "客服代表努力與客戶達成雙方滿意的共識。"
@@ -23844,7 +23844,7 @@ const toeicWordsDB = [
         "en": "realization",
         "kk": "[ˋriləˋzeʃən]",
         "uk": "/ˌriːəlaɪˈzeɪʃn; ˌrɪəlaɪˈzeɪʃn/",
-        "zh": "n. 領悟、認識、實現、變現",
+        "zh": "n. 領悟、體現、認識、實現",
         "unit": 13,
         "example": "It was the realization of his greatest ambition.",
         "exampleZh": "這就實現了他的宏偉抱負。"
@@ -23854,7 +23854,7 @@ const toeicWordsDB = [
         "en": "realize",
         "kk": "[ˋriə͵laɪz]",
         "uk": "/ˈriːəlaɪz/",
-        "zh": "vt. 領悟、實現、瞭解、意識到",
+        "zh": "vt. 認知、實現、瞭解、意識到",
         "unit": 13,
         "example": "Only later did she realize her mistake.",
         "exampleZh": "直到後來她才意識到自己的錯誤。"
@@ -23864,7 +23864,7 @@ const toeicWordsDB = [
         "en": "reason",
         "kk": "[ˋrizən]",
         "uk": "/ˈriːz(ə)n/",
-        "zh": "n. 理由、原因、充分理由、正當理由；vt. 推理、邏輯思考、推論出、推斷出",
+        "zh": "n. 原因、理由、充分理由、正當理由；vt. 推理、邏輯思考、推論出、推斷出",
         "unit": 13,
         "example": "The reason is blindingly obvious.",
         "exampleZh": "原因是顯而易見的。"
@@ -23884,7 +23884,7 @@ const toeicWordsDB = [
         "en": "rebel",
         "kk": "[ˋrɛbəl]",
         "uk": "/ˈreb(ə)l; rɪˈbel/",
-        "zh": "n. 反抗者、造反者、反抗權威者、叛逆者；vi. 反叛、造反、違抗、不服從；adj. 反叛的、造反的、反抗的",
+        "zh": "n. 反抗者、造反者、反抗權威者、叛逆者；vi. 反叛、造反、違抗；adj. 造反的、反抗的",
         "unit": 13,
         "example": "Amrita becomes a bold, daring rebel.",
         "exampleZh": "阿莫瑞塔成了一位英勇無畏的反叛者。"
@@ -23894,7 +23894,7 @@ const toeicWordsDB = [
         "en": "rebellion",
         "kk": "[rɪˋbɛljən]",
         "uk": "/rɪˈbeljən/",
-        "zh": "n. 反叛、造反、叛亂、反抗",
+        "zh": "n. 反叛、反抗、叛亂、不服從",
         "unit": 13,
         "example": "They hadn't reckoned on a rebellion.",
         "exampleZh": "他們沒有料到會發生叛亂。"
@@ -23924,7 +23924,7 @@ const toeicWordsDB = [
         "en": "recall",
         "kk": "[ˋri͵kɔl]",
         "uk": "/rɪˈkɔːl/",
-        "zh": "vt. 回想、回憶、記起、回想起；n. 記憶力、記性、召回、收回",
+        "zh": "vt. 回想、記起、回想起、使想起；n. 收回、記憶力、記性、召回",
         "unit": 13,
         "example": "Can you recall exactly what happened?",
         "exampleZh": "你能記起到底發生了什麼事嗎？"
@@ -23934,7 +23934,7 @@ const toeicWordsDB = [
         "en": "receipt",
         "kk": "[rɪˋsit]",
         "uk": "/rɪˈsiːt/",
-        "zh": "n. 收據、發票、收到、接收；v. 在（賬單）上註明收訖字樣",
+        "zh": "n. 收據、收條、發票、收到；v. 在（賬單）上註明收訖字樣",
         "unit": 13,
         "example": "Can I have a receipt, please?",
         "exampleZh": "請給我開個收據，好嗎？"
@@ -23944,7 +23944,7 @@ const toeicWordsDB = [
         "en": "receive",
         "kk": "[rəˋsiv]",
         "uk": "/rɪˈsiːv/",
-        "zh": "vt. 收到、接到、得到、遭受",
+        "zh": "vt. 接收、獲得、得到、收到",
         "unit": 13,
         "example": "He will receive $6,000 in back pay.",
         "exampleZh": "他將收到 6,000 美元的欠薪。"
@@ -23954,7 +23954,7 @@ const toeicWordsDB = [
         "en": "recent",
         "kk": "[ˋrisənt]",
         "uk": "/ˈriːs(ə)nt/",
-        "zh": "adj. 新近的、最近的、最新的、全新世的",
+        "zh": "adj. 最近的、近期的、最新的、全新世的",
         "unit": 13,
         "example": "These bushes are fairly recent plantings.",
         "exampleZh": "這些灌木叢是最近種植的。"
@@ -23974,7 +23974,7 @@ const toeicWordsDB = [
         "en": "reception",
         "kk": "[rɪˋsɛpʃən]",
         "uk": "/rɪˈsepʃ(ə)n/",
-        "zh": "n. 接待、歡迎、接待處、服務檯",
+        "zh": "n. 接待、接見、接待處、服務檯",
         "unit": 13,
         "example": "The reception was a subdued affair.",
         "exampleZh": "招待會開得冷冷清清的。"
@@ -24004,7 +24004,7 @@ const toeicWordsDB = [
         "en": "recipient",
         "kk": "[rəˋsɪpiənt]",
         "uk": "/rɪˈsɪpiənt/",
-        "zh": "n. 接受者、受領者、領受者、接收器；adj. 接受的、受領的、容納的",
+        "zh": "n. 接受者、領受者、接收器、容器；adj. 接受的、容納的",
         "unit": 13,
         "example": "Please ensure the invoice is delivered directly to the designated recipient.",
         "exampleZh": "請確保發票直接送達指定的收件人。"
@@ -24044,7 +24044,7 @@ const toeicWordsDB = [
         "en": "recognize",
         "kk": "[ˋrɛkəɡ͵naɪz]",
         "uk": "/ˈrekəɡnaɪz/",
-        "zh": "vt. 認出、識別、認識、辨別出",
+        "zh": "vt. 認出、承認、認識、辨別出",
         "unit": 13,
         "example": "I recognize my own shortcomings.",
         "exampleZh": "我承認我自己的那些缺點。"
@@ -24054,7 +24054,7 @@ const toeicWordsDB = [
         "en": "recommend",
         "kk": "[͵rɛkəˋmɛnd]",
         "uk": "/ˌrekəˈmend/",
-        "zh": "vt. 推薦、建議、勸告、介紹",
+        "zh": "vt. 推薦、介紹、建議、勸告",
         "unit": 13,
         "example": "I recommend (that) he see a lawyer.",
         "exampleZh": "我建議他去找個律師。"
@@ -24064,7 +24064,7 @@ const toeicWordsDB = [
         "en": "recommendation",
         "kk": "[͵rɛkəmənˋdeʃən]",
         "uk": "/ˌrekəmenˈdeɪʃn/",
-        "zh": "n. 推薦、正式建議、提議、介紹",
+        "zh": "n. 推薦、推薦信、正式建議、提議",
         "unit": 13,
         "example": "I got the job on the strength of your recommendation.",
         "exampleZh": "由於您的推薦，我得到了那份工作。"
@@ -24104,7 +24104,7 @@ const toeicWordsDB = [
         "en": "recovery",
         "kk": "[rɪˋkʌvri]",
         "uk": "/rɪˈkʌvəri/",
-        "zh": "n. 復原恢復、康復、痊癒、戒除",
+        "zh": "n. 恢復、復甦、復元、痊癒",
         "unit": 13,
         "example": "The patient made a rapid recovery.",
         "exampleZh": "病人很快恢復了健康。"
@@ -24114,7 +24114,7 @@ const toeicWordsDB = [
         "en": "recruit",
         "kk": "[rəˋkrut]",
         "uk": "/rɪˈkruːt/",
-        "zh": "vt. 徵募、僱用、招聘、招收；n. 新兵、新成員",
+        "zh": "vt. 招聘、招收、招募、說服；n. 新兵、新成員",
         "unit": 13,
         "example": "He is hoping to recruit a chairman from outside the company.",
         "exampleZh": "他在希望從公司之外招聘一位董事長。"
@@ -24134,7 +24134,7 @@ const toeicWordsDB = [
         "en": "rectangle",
         "kk": "[ˋrɛktæŋɡəl]",
         "uk": "/ˈrektæŋɡl/",
-        "zh": "n. 矩形、長方形",
+        "zh": "n. 長方形、矩形",
         "unit": 13,
         "example": "This is a smaller rounded rectangle.",
         "exampleZh": "這是一個較小的圓角矩形。"
@@ -24154,7 +24154,7 @@ const toeicWordsDB = [
         "en": "reduce",
         "kk": "[rəˋdus]",
         "uk": "/rɪˈdjuːs/",
-        "zh": "vt. 減少、縮小、降低、使變濃稠",
+        "zh": "vt. 減少、降低、使變濃稠、收汁",
         "unit": 13,
         "example": "The packets are measured to reduce waste.",
         "exampleZh": "測量包裹尺寸以減少浪費。"
@@ -24164,7 +24164,7 @@ const toeicWordsDB = [
         "en": "refer",
         "kk": "[rəˋfɝ]",
         "uk": "/rɪˈfɜː(r)/",
-        "zh": "v. 提到、談論、談及、描述",
+        "zh": "v. 提及、參考、提到、談及",
         "unit": 13,
         "example": "You may refer to your notes if you want.",
         "exampleZh": "如果需要，可以查閱筆記。"
@@ -24184,7 +24184,7 @@ const toeicWordsDB = [
         "en": "reflect",
         "kk": "[rɪfˋlɛkt]",
         "uk": "/rɪˈflekt/",
-        "zh": "v. 反射、照出、反映、顯示",
+        "zh": "v. 反映、反思、反射、照出",
         "unit": 13,
         "example": "We should all give ourselves time to reflect.",
         "exampleZh": "我們都應該給自己時間來深思。"
@@ -24194,7 +24194,7 @@ const toeicWordsDB = [
         "en": "reflection",
         "kk": "[rɪfˋlɛkʃən]",
         "uk": "/rɪˈflekʃ(ə)n/",
-        "zh": "n. 倒影、反省、反射、反射光",
+        "zh": "n. 反射、回響、反射光、反射熱",
         "unit": 13,
         "example": "He admired his reflection in the mirror.",
         "exampleZh": "他欣賞著自己在鏡中的影像。"
@@ -24204,7 +24204,7 @@ const toeicWordsDB = [
         "en": "refund",
         "kk": "[rɪˋfʌnd]",
         "uk": "/ˈriːfʌnd/",
-        "zh": "n. 償還、退款、償還金額；vt. 退還、退款給、還錢給",
+        "zh": "n. 退款、償還金額；vt. 償還、退還、退款給、還錢給",
         "unit": 13,
         "example": "We will refund you your money in full.",
         "exampleZh": "我們會退還你所有的錢。"
@@ -24264,7 +24264,7 @@ const toeicWordsDB = [
         "en": "regardless",
         "kk": "[rəˋɡɑrdləs]",
         "uk": "/rɪˈɡɑːdləs/",
-        "zh": "adv. 不顧一切地、不顧、不加理會、不管怎樣；adj. 不注意的、不留心的、不管的",
+        "zh": "adv. 不顧、不加理會、不管怎樣、無論如何；adj. 不管的、不注意的",
         "unit": 13,
         "example": "She always travels first-class regardless of expense.",
         "exampleZh": "無論費用多高她總是乘頭等艙。"
@@ -24274,7 +24274,7 @@ const toeicWordsDB = [
         "en": "region",
         "kk": "[ˋridʒən]",
         "uk": "/ˈriːdʒən/",
-        "zh": "n. 地區、地帶、區域、行政區",
+        "zh": "n. 地區、區域、行政區、地方",
         "unit": 13,
         "example": "Much of the region is lowland.",
         "exampleZh": "這地區大部分是低窪地。"
@@ -24294,7 +24294,7 @@ const toeicWordsDB = [
         "en": "regular",
         "kk": "[ˋrɛɡjəlɚ]",
         "uk": "/ˈreɡjələ(r)/",
-        "zh": "adj. 規則的、有規律的、定期的、規律的；n. 常客、老主顧、主演、主力隊員",
+        "zh": "adj. 定期的、規律的、經常的、頻繁的；n. 常客、老主顧、主演、主力隊員",
         "unit": 13,
         "example": "Do you take regular exercise?",
         "exampleZh": "你經常鍛鍊嗎？"
@@ -24314,7 +24314,7 @@ const toeicWordsDB = [
         "en": "regulate",
         "kk": "[ˋrɛɡjə͵let]",
         "uk": "/ˈreɡjuleɪt/",
-        "zh": "vt. 管理、控制、校準、調節",
+        "zh": "vt. 為……制訂規章、調節、控制、管理",
         "unit": 13,
         "example": "The FCC has no statutory authority to regulate the Internet.",
         "exampleZh": "美國聯邦通訊委員會沒有規範因特網的法定權力。"
@@ -24324,7 +24324,7 @@ const toeicWordsDB = [
         "en": "regulation",
         "kk": "[͵rɛɡjəˋleʃən]",
         "uk": "/ˌreɡjuˈleɪʃ(ə)n/",
-        "zh": "n. 規章、規則、規章制度、管理；adj. 標準的、正規的、符合規定的、公式化的",
+        "zh": "n. 規章、規則、規定、條例；adj. 符合規定的、正規的、公式化的、用俗套話堆砌而成的",
         "unit": 13,
         "example": "The regulation operates in favour of married couples.",
         "exampleZh": "這一規定的實施有利於已婚夫婦。"
@@ -24334,7 +24334,7 @@ const toeicWordsDB = [
         "en": "rehearsal",
         "kk": "[rɪˋhɝsəl]",
         "uk": "/rɪˈhɜːs(ə)l/",
-        "zh": "n. 排練、試演、排演、預演",
+        "zh": "n. 排練、試演、練習、排演",
         "unit": 13,
         "example": "We only had six days of rehearsal.",
         "exampleZh": "我們只有六天的排練時間。"
@@ -24374,7 +24374,7 @@ const toeicWordsDB = [
         "en": "reinforce",
         "kk": "[͵riɪnˋfɔrs]",
         "uk": "/ˌriːɪnˈfɔːs/",
-        "zh": "vt. 增援、加強、強化、加固；n. 加固物",
+        "zh": "vt. 增援、加強、加深、強化；n. 加固物",
         "unit": 13,
         "example": "I do expect some commitment to reinforce coordination.",
         "exampleZh": "我確實期待會有一些加強協作的承諾。"
@@ -24414,7 +24414,7 @@ const toeicWordsDB = [
         "en": "rejection",
         "kk": "[rɪˋdʒɛkʃən]",
         "uk": "/rɪˈdʒekʃ(ə)n/",
-        "zh": "n. 拒絕、反對、拒絕接受、拒聘函",
+        "zh": "n. 拒絕、退回、拒絕接受、拒聘函",
         "unit": 13,
         "example": "Jane still nurses the pain of rejection.",
         "exampleZh": "簡依然懷著被拒絕的痛苦。"
@@ -24424,7 +24424,7 @@ const toeicWordsDB = [
         "en": "relate",
         "kk": "[rɪˋlet]",
         "uk": "/rɪˈleɪt/",
-        "zh": "vi. 使有聯繫、有關、涉及、聯絡",
+        "zh": "vi. 相關、敘述、聯絡、使有聯絡",
         "unit": 13,
         "example": "Many adults can't relate to children.",
         "exampleZh": "許多成年人並不瞭解兒童的想法。"
@@ -24444,7 +24444,7 @@ const toeicWordsDB = [
         "en": "relationship",
         "kk": "[riˋleʃən͵ʃɪp]",
         "uk": "/rɪˈleɪʃ(ə)nʃɪp/",
-        "zh": "n. 人際關係、戀愛關係、關係、關聯",
+        "zh": "n. 關係、關聯、戀人關係、性愛關係",
         "unit": 13,
         "example": "Their relationship soon went sour.",
         "exampleZh": "他們的關係很快有了嫌隙。"
@@ -24454,7 +24454,7 @@ const toeicWordsDB = [
         "en": "release",
         "kk": "[riˋlis]",
         "uk": "/rɪˈliːs/",
-        "zh": "vt. 釋放、發行、放走、放開；n. 釋放、解放、獲釋、排放",
+        "zh": "vt. 發行、釋放、放走；n. 釋放、解放、獲釋、排放",
         "unit": 13,
         "example": "He refused to release her arm.",
         "exampleZh": "他不肯放開她的胳膊。"
@@ -24474,7 +24474,7 @@ const toeicWordsDB = [
         "en": "reliable",
         "kk": "[rɪˋlaɪəbəl]",
         "uk": "/rɪˈlaɪəb(ə)l/",
-        "zh": "adj. 可信賴的、可靠的、真實可信的、確鑿的；n. 可靠的人",
+        "zh": "adj. 可信賴的、可靠的、確實的、真實可信的；n. 可靠的人",
         "unit": 13,
         "example": "She was efficient and reliable.",
         "exampleZh": "她既能幹又可靠。"
@@ -24484,7 +24484,7 @@ const toeicWordsDB = [
         "en": "relief",
         "kk": "[rɪˋlif]",
         "uk": "/rɪˈliːf/",
-        "zh": "n. 緩和、減輕、寬慰、輕鬆",
+        "zh": "n. 緩和、減輕、解除、寬慰",
         "unit": 13,
         "example": "Relief supplies were rushed in.",
         "exampleZh": "救援物資很快就運來了。"
@@ -24504,7 +24504,7 @@ const toeicWordsDB = [
         "en": "rely",
         "kk": "[rɪˋlaɪ]",
         "uk": "/rɪˈlaɪ/",
-        "zh": "vi. 倚靠、依靠、相信、信賴",
+        "zh": "vi. 依靠、依賴、相信、信賴",
         "unit": 13,
         "example": "We rely entirely on voluntary contribution.",
         "exampleZh": "我們全靠自願捐贈。"
@@ -24514,7 +24514,7 @@ const toeicWordsDB = [
         "en": "remain",
         "kk": "[rɪˋmen]",
         "uk": "/rɪˈmeɪn/",
-        "zh": "vi. 剩下、餘留、逗留、留下；n. 剩餘、遺蹟、遺體、殘骸",
+        "zh": "vi. 保持、剩餘、逗留、留下；n. 剩餘、遺蹟、遺體、殘骸",
         "unit": 13,
         "example": "Their motives remain a mystery.",
         "exampleZh": "他們的動機仍然是個謎。"
@@ -24554,7 +24554,7 @@ const toeicWordsDB = [
         "en": "remember",
         "kk": "[rɪˋmɛmbɚ]",
         "uk": "/rɪˈmembə(r)/",
-        "zh": "vt. 記得、記住、回想起、記起",
+        "zh": "vt. 記住、回憶、回想起、記得",
         "unit": 13,
         "example": "I'll sure remember this trip!",
         "exampleZh": "我一定會記得這次旅行！"
@@ -24594,7 +24594,7 @@ const toeicWordsDB = [
         "en": "removal",
         "kk": "[rɪˋmuvəl]",
         "uk": "/rɪˈmuːv(ə)l/",
-        "zh": "n. 移動、調動、免職、移走",
+        "zh": "n. 除去、免職、移走、去掉",
         "unit": 13,
         "example": "They rejected a demand for the removal of all nuclear weapons.",
         "exampleZh": "他們拒絕了清除所有核武器的要求。"
@@ -24604,7 +24604,7 @@ const toeicWordsDB = [
         "en": "remove",
         "kk": "[riˋmuv]",
         "uk": "/rɪˈmuːv/",
-        "zh": "vt. 移動、調動、移開、拿開；n. 距離、間距、年級",
+        "zh": "vt. 移開、拿開、除去、廢除；n. 距離、間距、年級",
         "unit": 13,
         "example": "Scuff marks from shoes are difficult to remove.",
         "exampleZh": "鞋上的擦痕很難去除。"
@@ -24614,7 +24614,7 @@ const toeicWordsDB = [
         "en": "render",
         "kk": "[ˋrɛndɚ]",
         "uk": "/ˈrendə(r)/",
-        "zh": "vt. 使得、提出、使成為、使處於某種狀態；n. 底灰、底泥、交納",
+        "zh": "vt. 使得、使成為、提供、使處於某種狀態；n. 底灰、底泥、交納",
         "unit": 13,
         "example": "It's a concept that is difficult to render into English.",
         "exampleZh": "這個概念難以用英語來表達。"
@@ -24624,7 +24624,7 @@ const toeicWordsDB = [
         "en": "renew",
         "kk": "[rɪˋnu]",
         "uk": "/rɪˈnjuː/",
-        "zh": "vt. 使更新、使復原、重新開始、中止後繼續",
+        "zh": "vt. 換新、修補、重新開始、中止後繼續",
         "unit": 13,
         "example": "We have to renew our efforts to attract young players.",
         "exampleZh": "我們只好重新開始努力吸引年輕隊員。"
@@ -24674,7 +24674,7 @@ const toeicWordsDB = [
         "en": "rental",
         "kk": "[ˋrɛntəl]",
         "uk": "/ˈrent(ə)l/",
-        "zh": "n. 租金、出租、租費、租賃；adj. 租賃的、租借（有關）的、可供租用的",
+        "zh": "n. 租金、租賃、出租、租費；adj. 租借（有關）的、可供租用的",
         "unit": 13,
         "example": "Your bill includes line rental.",
         "exampleZh": "你的賬單包括電話線路的租用費。"
@@ -24684,7 +24684,7 @@ const toeicWordsDB = [
         "en": "repair",
         "kk": "[rɪˋpɛr]",
         "uk": "/rɪˈpeə(r)/",
-        "zh": "vt. 修理、修補、補救、挽救；n. 修理、修補、補救、修補過的地方",
+        "zh": "vt. 修理、修補、補救、挽救；n. 修理、補救、修補過的地方、維修狀態",
         "unit": 13,
         "example": "I took my bike in for repair.",
         "exampleZh": "我把腳踏車送去修了。"
@@ -24694,7 +24694,7 @@ const toeicWordsDB = [
         "en": "repeat",
         "kk": "[rɪˋpit]",
         "uk": "/rɪˈpiːt/",
-        "zh": "vt. 重複、重做、重說、複述；n. 重複、複寫、重演、重現",
+        "zh": "vt. 重複、重說、複述、跟讀；n. 重演、重現、重播節目、再次運送",
         "unit": 13,
         "example": "The claims are, I repeat, totally unfounded.",
         "exampleZh": "我再說一遍，這些說法是毫無根據的。"
@@ -24704,7 +24704,7 @@ const toeicWordsDB = [
         "en": "repetition",
         "kk": "[͵rɛpəˋtɪʃən]",
         "uk": "/ˌrepəˈtɪʃ(ə)n/",
-        "zh": "n. 反覆背誦、重複、重說、重做",
+        "zh": "n. 重複、反覆、重說、重做",
         "unit": 13,
         "example": "It is real prayer, and not mechanical repetition.",
         "exampleZh": "這是真正的祈禱，而不是機械式的重複。"
@@ -24724,7 +24724,7 @@ const toeicWordsDB = [
         "en": "replace",
         "kk": "[͵ripˋles]",
         "uk": "/rɪˈpleɪs/",
-        "zh": "vt. 放置、替代、取代、替換",
+        "zh": "vt. 替換、取代、接替、更換",
         "unit": 13,
         "example": "New laws will soon replace existing legislation.",
         "exampleZh": "新法律即將取代現行法規。"
@@ -24734,7 +24734,7 @@ const toeicWordsDB = [
         "en": "replacement",
         "kk": "[rɪpˋlesmənt]",
         "uk": "/rɪˈpleɪsmənt/",
-        "zh": "n. 取代、更換、代替、取代（或代替）的人",
+        "zh": "n. 取代、接替、代替、更換",
         "unit": 13,
         "example": "We need to find a replacement for Sue.",
         "exampleZh": "我們需要找一個替代休的人。"
@@ -24764,7 +24764,7 @@ const toeicWordsDB = [
         "en": "report",
         "kk": "[riˋpɔrt]",
         "uk": "/rɪˈpɔːt/",
-        "zh": "n. 報告、報導、彙報、新聞報道；v. 報導、記述、告發、報道",
+        "zh": "n. 報告、彙報、新聞報道、官方檔案；v. 報導、報道、據說、傳聞",
         "unit": 13,
         "example": "She glanced through the report.",
         "exampleZh": "她瀏覽了一下報告。"
@@ -24774,7 +24774,7 @@ const toeicWordsDB = [
         "en": "represent",
         "kk": "[͵rɛprɪˋzɛnt]",
         "uk": "/ˌreprɪˈzent/",
-        "zh": "vt. 描繪、代表、為……代言、代表（選區、政黨、群體）任國會議員",
+        "zh": "vt. 代表、象徵、為……代言、代表（選區、政黨、群體）任國會議員",
         "unit": 13,
         "example": "The carvings represent a hunting scene.",
         "exampleZh": "這些雕刻作品描繪了一幅狩獵的場面。"
@@ -24784,7 +24784,7 @@ const toeicWordsDB = [
         "en": "representative",
         "kk": "[͵rɛprəˋzɛntətɪv]",
         "uk": "/ˌreprɪˈzentətɪv/",
-        "zh": "adj. 代表性的、典型的、有代表性的、代表各類人（或事物）的；n. 典型、代表物、代表、代理人",
+        "zh": "adj. 典型的、有代表性的、代表各類人（或事物）的、由代表組成的；n. 代表、代理人、代表他人者、銷售代表",
         "unit": 13,
         "example": "He was the Queen's representative at the ceremony.",
         "exampleZh": "他代表女王出席了慶典。"
@@ -24804,7 +24804,7 @@ const toeicWordsDB = [
         "en": "request",
         "kk": "[rɪkˋwɛst]",
         "uk": "/rɪˈkwest/",
-        "zh": "n. 要求、請求、要求的事、點播的歌曲；vt. 要求、請求、要求（某人）做……、請求（某人）做……",
+        "zh": "n. 要求、請求、要求的事、點播的歌曲；vt. 請求、要求、要求（某人）做……、請求（某人）做……",
         "unit": 13,
         "example": "Your request will be actioned.",
         "exampleZh": "你的要求會處理的。"
@@ -24844,7 +24844,7 @@ const toeicWordsDB = [
         "en": "research",
         "kk": "[riˋsɝtʃ]",
         "uk": "/rɪˈsɜːtʃ/",
-        "zh": "n. 研究、探討、研究工作、調查工作；vt. 研究、調查、探索、為……收集資料",
+        "zh": "n. 研究、探討、研究工作、調查工作；vt. 調查、研究、探索、為……收集資料",
         "unit": 13,
         "example": "Embryo research is an emotive issue.",
         "exampleZh": "胚胎研究是個讓人情緒激動的問題。"
@@ -24854,7 +24854,7 @@ const toeicWordsDB = [
         "en": "resemblance",
         "kk": "[rɪˋzɛmbləns]",
         "uk": "/rɪˈzembləns/",
-        "zh": "n. 相似、相貌相似、相像、相似點",
+        "zh": "n. 相似、相像、相似點、相似之處",
         "unit": 13,
         "example": "She bears an uncanny resemblance to Dido.",
         "exampleZh": "她跟迪多長得離奇的相似。"
@@ -24874,7 +24874,7 @@ const toeicWordsDB = [
         "en": "reservation",
         "kk": "[͵rɛzɚˋveʃən]",
         "uk": "/ˌrezəˈveɪʃn/",
-        "zh": "n. 預定、保留、保護、預訂",
+        "zh": "n. 保留、預訂的房間、保護、預訂",
         "unit": 13,
         "example": "We can hold your reservation for three days.",
         "exampleZh": "您的預訂我們可以保留三天。"
@@ -24904,7 +24904,7 @@ const toeicWordsDB = [
         "en": "resident",
         "kk": "[ˋrɛzɪdənt]",
         "uk": "/ˈrezɪdənt/",
-        "zh": "n. 居民、住戶、住宿者、住院醫生；adj. 居住的、定居的、居留的、常駐的",
+        "zh": "n. 住院醫生、居民、住戶、住宿者；adj. 居住的、居留的、常駐的",
         "unit": 13,
         "example": "Local resident groups have united in opposition to the plan.",
         "exampleZh": "當地居民團體已聯合起來反對這項計劃。"
@@ -24964,7 +24964,7 @@ const toeicWordsDB = [
         "en": "resist",
         "kk": "[rɪˋzɪst]",
         "uk": "/rɪˈzɪst/",
-        "zh": "vt. 抵抗、反抗、阻擋、抵制；n. 保護塗層、防染材料",
+        "zh": "vt. 抵抗、反抗、抗拒、阻擋；n. 保護塗層、防染材料",
         "unit": 13,
         "example": "Few can resist the lure of adventure.",
         "exampleZh": "很少有人能抵禦歷險的誘惑力。"
@@ -24984,7 +24984,7 @@ const toeicWordsDB = [
         "en": "resolute",
         "kk": "[ˋrɛzə͵lut]",
         "uk": "/ˈrezəluːt/",
-        "zh": "adj. 堅決的、堅定的、果斷的",
+        "zh": "adj. 堅決的、不屈不撓的、果斷的",
         "unit": 13,
         "example": "Voters perceive him as a decisive and resolute international leader.",
         "exampleZh": "選民認識到他是一位果斷、堅定的國際領袖。"
@@ -24994,7 +24994,7 @@ const toeicWordsDB = [
         "en": "resolve",
         "kk": "[riˋzɑlv]",
         "uk": "/rɪˈzɒlv/",
-        "zh": "vt. 解決、決心、決定、下定決心；n. 決心、決意、堅定的信念、正式決定",
+        "zh": "vt. 決心、決意、解決、決定；n. 堅決、剛毅、果斷、決心",
         "unit": 13,
         "example": "Nothing could weaken his resolve to continue.",
         "exampleZh": "什麼也不能削弱他繼續下去的決心。"
@@ -25004,7 +25004,7 @@ const toeicWordsDB = [
         "en": "resource",
         "kk": "[ˋrisɔrs]",
         "uk": "/rɪˈsɔːs/",
-        "zh": "n. 資源、物力、自然資源、有助於實現目標的東西；v. 向……提供資金",
+        "zh": "n. 資源、財力、自然資源、有助於實現目標的東西；v. 向……提供資金",
         "unit": 13,
         "example": "A country's principal resource is its brainpower.",
         "exampleZh": "一個國家最重要的資源是其人才庫。"
@@ -25014,7 +25014,7 @@ const toeicWordsDB = [
         "en": "respect",
         "kk": "[rɪˋspɛkt]",
         "uk": "/rɪˈspekt/",
-        "zh": "n. 敬重、尊敬、重視、尊重；vt. 尊敬、敬佩、慎重對待、尊重；int. 真了不起",
+        "zh": "n. 尊敬、敬重、重視、尊重；vt. 尊敬、敬佩、慎重對待、尊重；int. 真了不起",
         "unit": 13,
         "example": "I respect him as a doctor.",
         "exampleZh": "我尊敬他這個醫生。"
@@ -25024,7 +25024,7 @@ const toeicWordsDB = [
         "en": "respond",
         "kk": "[rɪˋspɑnd]",
         "uk": "/rɪˈspɒnd/",
-        "zh": "v. 回答、回應、作出反應、有良好反應；n. 答覆、應答、唱和",
+        "zh": "v. 回應、反應、回答、作出反應；n. 應答、唱和、壁聯",
         "unit": 13,
         "example": "Some children respond more demonstratively than others.",
         "exampleZh": "一些孩子的反應比其他孩子的更感性。"
@@ -25034,7 +25034,7 @@ const toeicWordsDB = [
         "en": "response",
         "kk": "[rɪˋspɑns]",
         "uk": "/rɪˈspɒns/",
-        "zh": "n. 回答、答覆、反應、響應",
+        "zh": "n. 回應、反應、響應、回覆",
         "unit": 13,
         "example": "His response was well balanced.",
         "exampleZh": "他的反應很沉著。"
@@ -25044,7 +25044,7 @@ const toeicWordsDB = [
         "en": "responsible",
         "kk": "[riˋspɑnsəbəl]",
         "uk": "/rɪˈspɒnsəb(ə)l/",
-        "zh": "adj. 需負責任的、承擔責任的、負責的、負有責任的",
+        "zh": "adj. 負責任的、負責的、負有責任的、應承擔責任的",
         "unit": 13,
         "example": "He's directly responsible to the boss.",
         "exampleZh": "他直接對老闆負責。"
@@ -25064,7 +25064,7 @@ const toeicWordsDB = [
         "en": "restriction",
         "kk": "[riˋstrɪkʃən]",
         "uk": "/rɪˈstrɪkʃ(ə)n/",
-        "zh": "n. 限制、約束、限制規定、限制法規",
+        "zh": "n. 限制、約束、限定、限制規定",
         "unit": 13,
         "example": "The intent of this restriction was twofold.",
         "exampleZh": "這種限制的意圖是雙重的。"
@@ -25134,7 +25134,7 @@ const toeicWordsDB = [
         "en": "retire",
         "kk": "[rɪˋtaɪr]",
         "uk": "/rɪˈtaɪə(r)/",
-        "zh": "vi. 使退卻、使退休、退職、退休；n. 退休、退隱",
+        "zh": "vi. 退休、退役、退職、退出比賽；n. 退休、退隱",
         "unit": 13,
         "example": "He has announced his intention to retire.",
         "exampleZh": "他已經宣佈他打算退休。"
@@ -25154,7 +25154,7 @@ const toeicWordsDB = [
         "en": "retrieve",
         "kk": "[rɪˋtriv]",
         "uk": "/rɪˈtriːv/",
-        "zh": "vt. 重新得到、收回、找回、檢索；n. 找回、收繞釣魚線、恢復的可能性、檢索",
+        "zh": "vt. 收回、檢索、使恢復、找回；n. 找回、收繞釣魚線、恢復的可能性、檢索",
         "unit": 13,
         "example": "Retrieve the previous page of search results.",
         "exampleZh": "檢索搜尋結果的前一頁面。"
@@ -25164,7 +25164,7 @@ const toeicWordsDB = [
         "en": "return",
         "kk": "[rɪˋtɝn]",
         "uk": "/rɪˈtɜːn/",
-        "zh": "v. 返回、歸、回來、回去；n. 回來、返回、歸還、退回；adj. 雙程的、往返的、返回的、返程的",
+        "zh": "v. 返回、回來、回去、歸還；n. 歸還、回來、返回、退回；adj. 雙程的、往返的、返回的、返程的",
         "unit": 13,
         "example": "Regulars return year after year.",
         "exampleZh": "常客年復一年地回歸。"
@@ -25174,7 +25174,7 @@ const toeicWordsDB = [
         "en": "reveal",
         "kk": "[rɪˋvil]",
         "uk": "/rɪˈviːl/",
-        "zh": "vt. 展現、顯露出、揭示、透露；n. 揭示、門側、窗側",
+        "zh": "vt. 揭示、顯示、透露、表明；n. 揭示、門側、窗側",
         "unit": 13,
         "example": "These poems reveal her gentle side.",
         "exampleZh": "這些詩顯示出她溫柔的一面。"
@@ -25184,7 +25184,7 @@ const toeicWordsDB = [
         "en": "revenue",
         "kk": "[ˋrɛvə͵nu]",
         "uk": "/ˈrevənjuː/",
-        "zh": "n. 收入、稅收、收益、稅務局",
+        "zh": "n. 歲入、稅收、收入、收益",
         "unit": 13,
         "example": "If they overestimate, they lose revenue.",
         "exampleZh": "如果他們過高地估算，就會損失收入。"
@@ -25194,7 +25194,7 @@ const toeicWordsDB = [
         "en": "reverse",
         "kk": "[rɪˋvɝs]",
         "uk": "/rɪˈvɜːs/",
-        "zh": "vt. 顛倒、翻轉、逆轉、徹底改變；n. 相反、相對、逆向、逆轉；adj. 相反的、反向的、背面的、反面的",
+        "zh": "vt. 逆轉、徹底改變、撤銷；n. 反向、相對、相反、逆向；adj. 相反、相反的、反向的、背面的",
         "unit": 13,
         "example": "In the south, the reverse applies.",
         "exampleZh": "在南方，情況相反。"
@@ -25214,7 +25214,7 @@ const toeicWordsDB = [
         "en": "revise",
         "kk": "[rɪˋvaɪz]",
         "uk": "/rɪˈvaɪz/",
-        "zh": "v. 修訂、校訂、改變、修正；n. 修訂、校訂、改樣",
+        "zh": "v. 校訂、更改、改變、修正；n. 修訂、校訂、改樣",
         "unit": 13,
         "example": "I can't come out tonight. I have to revise.",
         "exampleZh": "我今晚不能出去。我得複習。"
@@ -25234,7 +25234,7 @@ const toeicWordsDB = [
         "en": "revive",
         "kk": "[rɪˋvaɪv]",
         "uk": "/rɪˈvaɪv/",
-        "zh": "vt. 甦醒、復甦、復原、重新喚起",
+        "zh": "vt. 復甦、恢復生機、使甦醒、復原",
         "unit": 13,
         "example": "The paramedics couldn't revive her.",
         "exampleZh": "護理人員無法使她甦醒。"
@@ -25244,7 +25244,7 @@ const toeicWordsDB = [
         "en": "revolve",
         "kk": "[riˋvɑlv]",
         "uk": "/rɪˈvɒlv/",
-        "zh": "v. 旋轉、自轉、圍繞……旋轉、以……為最重要內容；n. 旋轉舞臺",
+        "zh": "v. 旋轉、自轉、以……為中心、圍繞……旋轉；n. 旋轉舞臺",
         "unit": 13,
         "example": "Girls' groups more frequently revolve around cooperative enterprises.",
         "exampleZh": "女孩們的小群體更多時候圍繞各類協作活動展開。"
@@ -25254,7 +25254,7 @@ const toeicWordsDB = [
         "en": "reward",
         "kk": "[rɪˋwɔrd]",
         "uk": "/rɪˈwɔːd/",
-        "zh": "n. 報答、報償、獎勵、回報；vt. 報答、酬謝、獎賞",
+        "zh": "n. 獎勵、回報、賞格、懸賞金；vt. 酬謝、獎賞、獎勵、獲得",
         "unit": 13,
         "example": "You deserve a reward for being so helpful.",
         "exampleZh": "你幫了這麼大的忙，理應受到獎勵。"
@@ -25274,7 +25274,7 @@ const toeicWordsDB = [
         "en": "rise",
         "kk": "[raɪz]",
         "uk": "/raɪz/",
-        "zh": "vi. 上升、升起、增加、升高；n. 上升、興盛、增加、改善",
+        "zh": "vi. 上升、增加、升高、起身；n. 增加、改善、加薪",
         "unit": 13,
         "example": "When water levels rise, flooding results.",
         "exampleZh": "當水位上升時，就會發生洪水。"
@@ -25284,7 +25284,7 @@ const toeicWordsDB = [
         "en": "rival",
         "kk": "[ˋraɪvəl]",
         "uk": "/ˈraɪv(ə)l/",
-        "zh": "n. 競爭者、對手、競爭對手、敵手；vt. 與......相匹敵、比得上；adj. 競爭的、對抗的",
+        "zh": "n. 競爭對手、敵手、可與之匹敵者、可與之相比的人；vt. 與…………相匹敵、比得上、與......相匹敵；adj. 競爭的、對抗的",
         "unit": 13,
         "example": "Rival fans hurled abuse at each other.",
         "exampleZh": "兩幫對立的球迷相互高聲辱罵。"
@@ -25294,7 +25294,7 @@ const toeicWordsDB = [
         "en": "rivalry",
         "kk": "[ˋraɪvəlri]",
         "uk": "/ˈraɪv(ə)lri/",
-        "zh": "n. 競爭、對抗、較量",
+        "zh": "n. 行為、競爭、較量",
         "unit": 13,
         "example": "It was Allen who fired this rivalry with real passion.",
         "exampleZh": "是艾倫滿懷激情地激發了這次對抗。"
@@ -25304,7 +25304,7 @@ const toeicWordsDB = [
         "en": "robust",
         "kk": "[roˋbʌst]",
         "uk": "/rəʊˈbʌst/",
-        "zh": "adj. 強健的、強壯的、穩固的、健全的",
+        "zh": "adj. 強健的、健全的、結實的、強壯的",
         "unit": 13,
         "example": "She was almost 90, but still very robust.",
         "exampleZh": "她將近90歲了，但身體仍然十分強健。"
@@ -25314,7 +25314,7 @@ const toeicWordsDB = [
         "en": "route",
         "kk": "[rut]",
         "uk": "/ruːt/",
-        "zh": "n. 路線、路程、航線、道路；vt. 按特定路線傳送、以......線路傳送",
+        "zh": "n. 路線、航線、道路、路途；vt. 按特定路線傳送、以…………線路傳送、以......線路傳送",
         "unit": 13,
         "example": "The route is well signposted.",
         "exampleZh": "這條路線路標設定完善。"
@@ -25324,7 +25324,7 @@ const toeicWordsDB = [
         "en": "routine",
         "kk": "[ruˋtin]",
         "uk": "/ruːˈtiːn/",
-        "zh": "n. 例行公事、常規、慣例、生活乏味；adj. 例行的、常規的、平常的、毫不特別的；v. 按慣例安排",
+        "zh": "n. 常規、慣例、生活乏味、無聊；adj. 常規的、例行的、平常的、毫不特別的；v. 按慣例安排",
         "unit": 13,
         "example": "Police work is mainly routine.",
         "exampleZh": "警察的工作主要都是按常規的。"
@@ -25344,7 +25344,7 @@ const toeicWordsDB = [
         "en": "royalty",
         "kk": "[ˋrɔɪəlti]",
         "uk": "/ˈrɔɪəlti/",
-        "zh": "n. 皇族、王位、王權、王族",
+        "zh": "n. 皇族或王族、王位、專利權稅、王族",
         "unit": 13,
         "example": "None of us are royalty.",
         "exampleZh": "我們都不是皇室成員。"
@@ -25354,7 +25354,7 @@ const toeicWordsDB = [
         "en": "rule",
         "kk": "[rul]",
         "uk": "/ruːl/",
-        "zh": "n. 規則、規章、條例；vt. 統治、管轄、支配、控制",
+        "zh": "n. 規則、規章、條例、法則；vt. 統治、管轄、支配、控制",
         "unit": 13,
         "example": "That's a good rule to go by.",
         "exampleZh": "這是一個值得遵守的好規則。"
@@ -25374,7 +25374,7 @@ const toeicWordsDB = [
         "en": "rush",
         "kk": "[rʌʃ]",
         "uk": "/rʌʃ/",
-        "zh": "v. 衝、奔、催促、把（某人或某物）迅速送往；n. 匆忙、衝、奔",
+        "zh": "v. 衝、奔、把（某人或某物）迅速送往、趕緊做；n. 衝、奔、湍流、匆忙",
         "unit": 13,
         "example": "You can't rush a search.",
         "exampleZh": "你不能匆忙做搜尋工作。"
@@ -25384,7 +25384,7 @@ const toeicWordsDB = [
         "en": "sacrifice",
         "kk": "[ˋsækrə͵faɪs]",
         "uk": "/ˈsækrɪfaɪs/",
-        "zh": "n. 牲禮、祭品、犧牲、獻出；vt. 犧牲、獻出、獻祭、以……為祭品",
+        "zh": "n. 犧牲、獻出、獻祭、供奉；vt. 犧牲、獻出、獻祭、以……為祭品",
         "unit": 13,
         "example": "Should motherhood necessarily mean sacrifice and self-denial?",
         "exampleZh": "做母親必須要自我犧牲和忘我嗎？"
@@ -25434,7 +25434,7 @@ const toeicWordsDB = [
         "en": "safeguard",
         "kk": "[ˋsef͵ɡɑrd]",
         "uk": "/ˈseɪfɡɑːd/",
-        "zh": "n. 保護、防衛、保障條款、保護措施；vt. 保護、防衛、護衛",
+        "zh": "n. 保障條款、保護措施；vt. 保護、護衛",
         "unit": 13,
         "example": "The new card will safeguard the company against fraud.",
         "exampleZh": "新卡將保護公司免遭詐騙。"
@@ -25444,7 +25444,7 @@ const toeicWordsDB = [
         "en": "safety",
         "kk": "[ˋsefti]",
         "uk": "/ˈseɪfti/",
-        "zh": "n. 安全、平安、安全性、安全場所；adj. 保障安全的",
+        "zh": "n. 安全、安全性、安全場所、安全的地方；adj. 保障安全的",
         "unit": 13,
         "example": "They are anxious for her safety.",
         "exampleZh": "他們為她的安全擔心。"
@@ -25454,7 +25454,7 @@ const toeicWordsDB = [
         "en": "salary",
         "kk": "[ˋsælɚi]",
         "uk": "/ˈsæləri/",
-        "zh": "n. 薪資、薪水、薪金；v. 給……薪金",
+        "zh": "n. 薪金、薪水；v. 給……薪金",
         "unit": 13,
         "example": "His salary is now in six figures.",
         "exampleZh": "他的薪水現在是六位數。"
@@ -25464,7 +25464,7 @@ const toeicWordsDB = [
         "en": "sale",
         "kk": "[sel]",
         "uk": "/seɪl/",
-        "zh": "n. 賣、出售、拍賣、銷售",
+        "zh": "n. 售賣、賤賣、出售、銷售",
         "unit": 13,
         "example": "Tickets go on sale this week.",
         "exampleZh": "門票本週開始販售。"
@@ -25484,7 +25484,7 @@ const toeicWordsDB = [
         "en": "sample",
         "kk": "[ˋsæmpəl]",
         "uk": "/ˈsɑːmp(ə)l/",
-        "zh": "n. 樣品、樣本、試用產品、試樣；vt. 品嚐、體驗、嘗試、對……作抽樣調查；adj. 樣品的、例項的",
+        "zh": "n. 樣本、樣品、試用產品、試樣；vt. 品嚐、嘗試、體驗、對……作抽樣調查；adj. 樣品的、例項的",
         "unit": 13,
         "example": "A routine DNA sample was taken.",
         "exampleZh": "採集了一份常規的脫氧核糖核酸樣本。"
@@ -25514,7 +25514,7 @@ const toeicWordsDB = [
         "en": "satisfy",
         "kk": "[ˋsætə͵sfaɪ]",
         "uk": "/ˈsætɪsfaɪ/",
-        "zh": "vt. 使滿意、使高興、使滿足、滿足",
+        "zh": "vt. 使滿意、使滿足、滿足、符合",
         "unit": 13,
         "example": "We cannot satisfy demand for the product.",
         "exampleZh": "我們無法滿足對該產品的需求。"
@@ -25534,7 +25534,7 @@ const toeicWordsDB = [
         "en": "scale",
         "kk": "[skel]",
         "uk": "/skeɪl/",
-        "zh": "n. 大小、規模、範圍、等級；vt. 攀登、增加、翻越、刮鱗；adj. 按比例縮小的",
+        "zh": "n. 規模、範圍、等級、級別；vt. 稱重、攀登、翻越、刮鱗；adj. 按比例縮小的",
         "unit": 13,
         "example": "Large-scale inflation is a recipe for disaster.",
         "exampleZh": "大規模的通貨膨脹有可能導致災難。"
@@ -25544,7 +25544,7 @@ const toeicWordsDB = [
         "en": "scan",
         "kk": "[skæn]",
         "uk": "/skæn/",
-        "zh": "vt. 細看、審視、粗略看、瀏覽；n. 掃描、快速查閱、瀏覽",
+        "zh": "vt. 細看、審視、粗略看、瀏覽；n. 快速查閱、瀏覽、掃描檢查、掃描圖",
         "unit": 13,
         "example": "A brain scan revealed the blood clot.",
         "exampleZh": "腦部掃描檢查發現了那個血塊。"
@@ -25564,7 +25564,7 @@ const toeicWordsDB = [
         "en": "scene",
         "kk": "[sin]",
         "uk": "/siːn/",
-        "zh": "n. 布景、景色、背景、事發地",
+        "zh": "n. 場景、景象、事發地、現場",
         "unit": 13,
         "example": "It's a scene of complete devastation.",
         "exampleZh": "那是一幅滿目瘡痍的景象。"
@@ -25574,7 +25574,7 @@ const toeicWordsDB = [
         "en": "scenery",
         "kk": "[ˋsinɚi]",
         "uk": "/ˈsiːnəri/",
-        "zh": "n. 景色、風景、舞臺佈景",
+        "zh": "n. 風景、景色、舞臺佈景",
         "unit": 13,
         "example": "The area is remarkable for its scenery.",
         "exampleZh": "這一地區以其優美的景色而引人矚目。"
@@ -25584,7 +25584,7 @@ const toeicWordsDB = [
         "en": "schedule",
         "kk": "[ˋskɛdʒʊl]",
         "uk": "/ˈʃedjuːl/",
-        "zh": "n. 時間表、計劃、進度表、清單；vt. 安排、預定、列入、收進",
+        "zh": "n. 計劃、進度表、時間表、清單；vt. 安排、預定、列入、收進",
         "unit": 13,
         "example": "Everything went according to schedule.",
         "exampleZh": "一切都是按計劃進行的。"
@@ -25594,7 +25594,7 @@ const toeicWordsDB = [
         "en": "scope",
         "kk": "[skop]",
         "uk": "/skəʊp/",
-        "zh": "n. 顯微鏡、望遠鏡、範圍、領域；v. 評估、調查、確定（規劃專案）的範圍、仔細看",
+        "zh": "n. 範圍、領域、機會、施展餘地；v. 評估、調查、確定（規劃專案）的範圍、仔細看",
         "unit": 13,
         "example": "There's still plenty of scope for improvement.",
         "exampleZh": "還有很大的改進餘地。"
@@ -25604,7 +25604,7 @@ const toeicWordsDB = [
         "en": "scratch",
         "kk": "[skrætʃ]",
         "uk": "/skrætʃ/",
-        "zh": "vt. 抓、搔劃出、撓、輕抓；n. 刮痕、抓痕、劃痕、劃傷；adj. 湊合的、倉促拼湊的、匆匆組成的、無讓杆的",
+        "zh": "vt. 撓、輕抓、抓破；n. 擦傷、劃痕、劃傷、刮痕；adj. 倉促拼湊的、匆匆組成的、無讓杆的、無讓步優待的",
         "unit": 13,
         "example": "His work simply isn't up to scratch.",
         "exampleZh": "他的工作根本達不到要求。"
@@ -25614,7 +25614,7 @@ const toeicWordsDB = [
         "en": "screen",
         "kk": "[skrin]",
         "uk": "/skriːn/",
-        "zh": "n. 螢幕、掩蔽物、熒光屏、銀幕；v. 隱藏、遮蔽、庇護、包庇",
+        "zh": "n. 銀幕、螢幕、熒光屏、電影；v. 隱藏、遮蔽、庇護",
         "unit": 13,
         "example": "Suddenly the screen went blank.",
         "exampleZh": "螢幕突然變成一片空白。"
@@ -25654,7 +25654,7 @@ const toeicWordsDB = [
         "en": "search",
         "kk": "[sɝtʃ]",
         "uk": "/sɜːtʃ/",
-        "zh": "v. 搜查、探究、搜尋、搜……的身；n. 搜查、搜尋、探索、尋求",
+        "zh": "v. 搜查、搜尋、搜……的身、思索；n. 搜尋、搜查、探索、尋求",
         "unit": 13,
         "example": "It was a fruitless search.",
         "exampleZh": "那是一次毫無結果的搜尋。"
@@ -25664,7 +25664,7 @@ const toeicWordsDB = [
         "en": "season",
         "kk": "[ˋsizən]",
         "uk": "/ˈsiːz(ə)n/",
-        "zh": "n. 季節、季、時期、體育賽季；vt. 加調料、給……調味、給……增添趣味、使（木材）風乾",
+        "zh": "n. 季節、賽季、季、時期；vt. 加調料、給……調味、給……增添趣味、使（木材）風乾",
         "unit": 13,
         "example": "Autumn is my favourite season.",
         "exampleZh": "秋天是我最喜歡的季節。"
@@ -25684,7 +25684,7 @@ const toeicWordsDB = [
         "en": "section",
         "kk": "[ˋsɛkʃən]",
         "uk": "/ˈsekʃ(ə)n/",
-        "zh": "n. 部分、區域、散件、部件；vt. 強制（精神病人）入院、將……製成切片、切開、切斷",
+        "zh": "n. 部分、章節、散件、部件；vt. 強制（精神病人）入院、將……製成切片、切開、切斷",
         "unit": 13,
         "example": "The school has a special education section.",
         "exampleZh": "該校有一個特殊教育部門。"
@@ -25704,7 +25704,7 @@ const toeicWordsDB = [
         "en": "security",
         "kk": "[sɪˋkjʊrəti]",
         "uk": "/sɪˈkjʊərəti/",
-        "zh": "n. 安全感、防備、保安、保護措施",
+        "zh": "n. 安全、保安、保障、證券",
         "unit": 13,
         "example": "He was upgraded to security guard.",
         "exampleZh": "他被提升為保安。"
@@ -25714,7 +25714,7 @@ const toeicWordsDB = [
         "en": "seek",
         "kk": "[sik]",
         "uk": "/siːk/",
-        "zh": "vt. 尋找、探索、尋求、謀求",
+        "zh": "vt. 尋求、追求、尋找、謀求",
         "unit": 13,
         "example": "We were advised to seek legal advice.",
         "exampleZh": "有人勸我們找律師諮詢。"
@@ -25724,7 +25724,7 @@ const toeicWordsDB = [
         "en": "segment",
         "kk": "[ˋsɛɡmənt]",
         "uk": "/ˈseɡmənt/",
-        "zh": "n. 部分、部門、片段、細分的部分；v. 分割、切割、劃分、分裂",
+        "zh": "n. 部分、片段、細分的部分、瓣；v. 分割、劃分、分裂",
         "unit": 13,
         "example": "She cleaned a small segment of the painting.",
         "exampleZh": "她擦乾淨了這幅畫的一小部分。"
@@ -25734,7 +25734,7 @@ const toeicWordsDB = [
         "en": "seldom",
         "kk": "[ˋsɛldəm]",
         "uk": "/ˈseldəm/",
-        "zh": "adv. 不常、很少",
+        "zh": "adv. 很少地、不常、很少",
         "unit": 13,
         "example": "I've seldom felt so happy.",
         "exampleZh": "我很少感到過這麼快樂了。"
@@ -25744,7 +25744,7 @@ const toeicWordsDB = [
         "en": "select",
         "kk": "[səˋlɛkt]",
         "uk": "/sɪˈlekt/",
-        "zh": "vt. 選擇、挑選、選定、決定（特徵，生物）是否繼續存在；adj. 上等的、優等的、精選的、高階的",
+        "zh": "vt. 選擇、挑選、選定、決定（特徵，生物）是否繼續存在；adj. 精選的、優等的、高階的、奢華的",
         "unit": 13,
         "example": "Click Tools on the menu bar and select Settings.",
         "exampleZh": "點擊選單列上的“工具”並選擇“設定”。"
@@ -25754,7 +25754,7 @@ const toeicWordsDB = [
         "en": "selection",
         "kk": "[səˋlɛkʃən]",
         "uk": "/sɪˈlekʃ(ə)n/",
-        "zh": "n. 選擇、選拔、挑選、被挑選的人",
+        "zh": "n. 選擇、選拔、選集、文選",
         "unit": 13,
         "example": "Selection is based solely on merit.",
         "exampleZh": "選拔唯賢。"
@@ -25794,7 +25794,7 @@ const toeicWordsDB = [
         "en": "semester",
         "kk": "[səˋmɛstɚ]",
         "uk": "/sɪˈmestə(r)/",
-        "zh": "n. 半學年、一學期、學期",
+        "zh": "n. 學期、半學年",
         "unit": 13,
         "example": "Do you think you'll pledge this semester?",
         "exampleZh": "這學期你想加入大學生聯誼會嗎？"
@@ -25804,7 +25804,7 @@ const toeicWordsDB = [
         "en": "seminar",
         "kk": "[ˋsɛmə͵nɑr]",
         "uk": "/ˈsemɪnɑː(r)/",
-        "zh": "n. 專題討論會、研討會、培訓會、專題討論課",
+        "zh": "n. 專題討論、研討會、培訓會、專題討論課",
         "unit": 13,
         "example": "The seminar was to discuss diversification of agriculture.",
         "exampleZh": "該研討會討論的是農業多種經營。"
@@ -25824,7 +25824,7 @@ const toeicWordsDB = [
         "en": "sense",
         "kk": "[sɛns]",
         "uk": "/sens/",
-        "zh": "n. 感官、官能、見識、感覺官能；vt. 了解、領會、感覺到、覺察到；adj. 有意義的",
+        "zh": "n. 感覺、感覺官能、道理、合理性；vt. 感覺到、覺察到、檢測出；adj. 有意義的",
         "unit": 13,
         "example": "The sense of community is lost.",
         "exampleZh": "社區意識消失了。"
@@ -25844,7 +25844,7 @@ const toeicWordsDB = [
         "en": "sensitive",
         "kk": "[ˋsɛnsətɪv]",
         "uk": "/ˈsensətɪv/",
-        "zh": "adj. 敏感的、靈敏的、過敏的、易受影響的；n. 具有超自然通靈能力的人",
+        "zh": "adj. 敏感的、易受傷害的、過敏的、易受影響的；n. 具有超自然通靈能力的人",
         "unit": 13,
         "example": "She is very sensitive by nature.",
         "exampleZh": "她生性很敏感。"
@@ -25854,7 +25854,7 @@ const toeicWordsDB = [
         "en": "separate",
         "kk": "[ˋsɛpɚ͵et]",
         "uk": "/ˈseprət/",
-        "zh": "adj. 單獨的、分開的、不同的、不相關的；vt. 分割、分離、分成不同部分；n. 可搭配穿著的單件衣服、獨立音響裝置、土壤劃分",
+        "zh": "adj. 單獨的、分開的、不同的、不相關的；vt. 分離、分成不同部分、隔開、阻隔；n. 可搭配穿著的單件衣服、獨立音響裝置、土壤劃分",
         "unit": 13,
         "example": "It happened on three separate occasions.",
         "exampleZh": "這件事發生在三個不同的場合。"
@@ -25864,7 +25864,7 @@ const toeicWordsDB = [
         "en": "separation",
         "kk": "[͵sɛpɚˋeʃən]",
         "uk": "/ˌsepəˈreɪʃn/",
-        "zh": "n. 分開、分居、分隔、分離",
+        "zh": "n. 分開、分離、分隔、離別",
         "unit": 13,
         "example": "They agreed to a trial separation.",
         "exampleZh": "他們同意嘗試一次分居。"
@@ -25874,7 +25874,7 @@ const toeicWordsDB = [
         "en": "sequence",
         "kk": "[ˋsikwəns]",
         "uk": "/ˈsiːkwəns/",
-        "zh": "n. 連續、接續、順序、次序；v. 按順序排列、測定（整套基因或分子成分的）序列、用音序器播放（或錄製）音樂",
+        "zh": "n. 順序、次序、連續事件、一組鏡頭；v. 按順序排列、測定（整套基因或分子成分的）序列、用音序器播放（或錄製）音樂",
         "unit": 13,
         "example": "These pages are out of sequence.",
         "exampleZh": "這幾頁排錯了次序。"
@@ -25894,7 +25894,7 @@ const toeicWordsDB = [
         "en": "serious",
         "kk": "[ˋsɪriəs]",
         "uk": "/ˈsɪəriəs/",
-        "zh": "adj. 嚴重的、危急的、認真的、嚴肅的",
+        "zh": "adj. 嚴重的、認真的、危急的、嚴肅的",
         "unit": 13,
         "example": "You're joking. Are you serious?",
         "exampleZh": "你在開玩笑。你是認真的？"
@@ -25904,7 +25904,7 @@ const toeicWordsDB = [
         "en": "serve",
         "kk": "[sɝv]",
         "uk": "/sɜːv/",
-        "zh": "v. 服務、為……工作、服役、端上；n. 發球、申斥",
+        "zh": "v. 服務、供應、為……工作、服役；n. 發球、申斥",
         "unit": 13,
         "example": "They serve good French cooking.",
         "exampleZh": "他們提供美味的法式菜餚。"
@@ -25914,7 +25914,7 @@ const toeicWordsDB = [
         "en": "service",
         "kk": "[ˋsɝvəs]",
         "uk": "/ˈsɜːvɪs/",
-        "zh": "n. 服務、效勞、公共服務系統、公共事業；vt. 服務、維修、檢修；adj. 員工專用的、部隊的、提供服務的",
+        "zh": "n. 服務、服務業、公共服務系統、公共事業；vt. 維修、檢修、支付（債務）利息、為……提供服務；adj. 員工專用的、部隊的、提供服務的",
         "unit": 13,
         "example": "The service is maddeningly slow.",
         "exampleZh": "服務速度慢得令人發狂。"
@@ -25924,7 +25924,7 @@ const toeicWordsDB = [
         "en": "session",
         "kk": "[ˋsɛʃən]",
         "uk": "/ˈseʃ(ə)n/",
-        "zh": "n. 會議、集會、一段時間、一場；adj. 伴奏的",
+        "zh": "n. 開庭、會期、講習會、一段時間；adj. 伴奏的",
         "unit": 13,
         "example": "The court is now in session.",
         "exampleZh": "法庭現在正在開庭。"
@@ -25934,7 +25934,7 @@ const toeicWordsDB = [
         "en": "set",
         "kk": "[sɛt]",
         "uk": "/set/",
-        "zh": "v. 放、置、開始、使開始；n. 一套、一部、一組、一夥（或一幫、一群）人；adj. 固定的、不變的、位於（或處於）……的、安排好的",
+        "zh": "v. 設置、放、置、使開始；n. 一套、一組、一夥（或一幫、一群）人、電視機；adj. 位於（或處於）……的、安排好的、固定的、套",
         "unit": 13,
         "example": "I've collected the complete set.",
         "exampleZh": "我已經收集了全套。"
@@ -25944,7 +25944,7 @@ const toeicWordsDB = [
         "en": "setback",
         "kk": "[ˋsɛt͵bæk]",
         "uk": "/ˈsetbæk/",
-        "zh": "n. 挫折、失敗、阻礙、壁階",
+        "zh": "n. 挫折、倒退、阻礙、壁階",
         "unit": 13,
         "example": "That would be a severe setback.",
         "exampleZh": "那將會是一個嚴重的挫折。"
@@ -25994,7 +25994,7 @@ const toeicWordsDB = [
         "en": "shape",
         "kk": "[ʃep]",
         "uk": "/ʃeɪp/",
-        "zh": "n. 形狀、樣子、外形、形態；vt. 使成形、塑造、形成、影響",
+        "zh": "n. 形狀、外形、形態、特徵；vt. 形成、影響、使成形、塑造",
         "unit": 13,
         "example": "The knives were bent out of shape.",
         "exampleZh": "刀子彎曲變形了。"
@@ -26044,7 +26044,7 @@ const toeicWordsDB = [
         "en": "ship",
         "kk": "[ʃɪp]",
         "uk": "/ʃɪp/",
-        "zh": "n. 船、艦、三（或多）桅帆船、艇；vt. 運送、裝運、運輸、遣送",
+        "zh": "n. 船、艦、三（或多）桅帆船、艇；vt. 運送、運輸、遣送、推出",
         "unit": 13,
         "example": "The ship was carrying contraband.",
         "exampleZh": "這艘船載有違禁品。"
@@ -26074,7 +26074,7 @@ const toeicWordsDB = [
         "en": "shortage",
         "kk": "[ˋʃɔrtədʒ]",
         "uk": "/ˈʃɔːtɪdʒ/",
-        "zh": "n. 缺少、不足、短缺",
+        "zh": "n. 缺少、不足、匱乏、短缺",
         "unit": 13,
         "example": "There is an acute shortage of water.",
         "exampleZh": "水嚴重短缺。"
@@ -26084,7 +26084,7 @@ const toeicWordsDB = [
         "en": "should",
         "kk": "[ʃʊd]",
         "uk": "/ʃʊd; ʃəd/",
-        "zh": "v. 應該、該、可以、應該會；aux. 可能、該",
+        "zh": "v. 應該、該、可以、應該會；aux. 應該、應當",
         "unit": 13,
         "example": "This should save you shedloads.",
         "exampleZh": "這應該可以幫你省下許多錢。"
@@ -26104,7 +26104,7 @@ const toeicWordsDB = [
         "en": "sight",
         "kk": "[saɪt]",
         "uk": "/saɪt/",
-        "zh": "n. 視覺、景象、觀光地、視力；vt. 看見、發現、看到、把（槍）瞄準；adj. 見票即付的、即席的",
+        "zh": "n. 景象、視力、視覺、看見；vt. 看到、看見、把（槍）瞄準；adj. 見票即付的、即席的",
         "unit": 13,
         "example": "Her sight is beginning to go.",
         "exampleZh": "她的視力開始消失。"
@@ -26114,7 +26114,7 @@ const toeicWordsDB = [
         "en": "sign",
         "kk": "[saɪn]",
         "uk": "/saɪn/",
-        "zh": "n. 徵象、前兆、指示牌、標誌；vt. 簽名於、簽署、簽名、署名",
+        "zh": "n. 標誌、指示牌、跡象、徵兆；vt. 簽名、署名、簽約、示意",
         "unit": 13,
         "example": "The sign read 'No admittance'.",
         "exampleZh": "告示牌上寫著“禁止入內”。"
@@ -26134,7 +26134,7 @@ const toeicWordsDB = [
         "en": "significant",
         "kk": "[səɡˋnɪfɪkənt]",
         "uk": "/sɪɡˈnɪfɪkənt/",
-        "zh": "adj. 重要的、顯著的、相當數量的；n. 象徵、有意義的事物",
+        "zh": "adj. 重要的、顯著的、相當數量的、意義重大的；n. 象徵、有意義的事物",
         "unit": 13,
         "example": "There remained one significant problem.",
         "exampleZh": "還有一個非常重要的問題。"
@@ -26144,7 +26144,7 @@ const toeicWordsDB = [
         "en": "signify",
         "kk": "[ˋsɪɡnə͵faɪ]",
         "uk": "/ˈsɪɡnɪfaɪ/",
-        "zh": "vt. 表示、預示、意味著、象徵",
+        "zh": "vt. 表示……的意思、意味著、象徵、表達",
         "unit": 13,
         "example": "He nodded to signify that he agreed.",
         "exampleZh": "他點頭表示同意。"
@@ -26154,7 +26154,7 @@ const toeicWordsDB = [
         "en": "similar",
         "kk": "[ˋsɪməlɚ]",
         "uk": "/ˈsɪmələ(r)/",
-        "zh": "adj. 相像的、相仿、類似的、相似的；n. 相似之人、順勢藥物",
+        "zh": "adj. 相似的、類似的、相像的；n. 相似之人、順勢藥物",
         "unit": 13,
         "example": "They have uncannily similar voices.",
         "exampleZh": "他們的聲音驚人地相似。"
@@ -26184,7 +26184,7 @@ const toeicWordsDB = [
         "en": "sincere",
         "kk": "[sɪnˋsɪr]",
         "uk": "/sɪnˈsɪə(r)/",
-        "zh": "adj. 衷心的、真誠的、誠摯的、誠懇的",
+        "zh": "adj. 誠懇的、衷心的、誠摯的、真誠的",
         "unit": 13,
         "example": "He seemed sincere enough when he said he wanted to help.",
         "exampleZh": "他表示願意幫忙，樣子很真誠。"
@@ -26214,7 +26214,7 @@ const toeicWordsDB = [
         "en": "sink",
         "kk": "[sɪŋk]",
         "uk": "/sɪŋk/",
-        "zh": "v. 下沉、下陷、沉沒、使失敗；adj. 貧困的、貧民窟的；n. 水槽、水池、窪地、滲坑",
+        "zh": "v. 下沉、沉沒、使失敗、受挫；adj. 貧困的、貧民窟的；n. 水槽、水池、窪地、滲坑",
         "unit": 13,
         "example": "He decided to scour the sink.",
         "exampleZh": "他決定把水池擦洗乾淨。"
@@ -26224,7 +26224,7 @@ const toeicWordsDB = [
         "en": "site",
         "kk": "[saɪt]",
         "uk": "/saɪt/",
-        "zh": "n. 地點、場所、工地、用地；vt. 使坐落在、為......選址",
+        "zh": "n. 工地、用地、地點、現場；vt. 使坐落在、為…………選址、為......選址",
         "unit": 13,
         "example": "This site is definitely worth bookmarking.",
         "exampleZh": "這個網站絕對值得設電子書籤。"
@@ -26234,7 +26234,7 @@ const toeicWordsDB = [
         "en": "situation",
         "kk": "[͵sɪtʃuˋeʃən]",
         "uk": "/ˌsɪtʃuˈeɪʃ(ə)n/",
-        "zh": "n. 狀況、處境、情況、形勢",
+        "zh": "n. 情況、處境、形勢、重要問題",
         "unit": 13,
         "example": "The situation is under control.",
         "exampleZh": "局面得到了控制。"
@@ -26244,7 +26244,7 @@ const toeicWordsDB = [
         "en": "size",
         "kk": "[saɪz]",
         "uk": "/saɪz/",
-        "zh": "n. 尺寸、大小、龐大、巨大；v. 依大小分類、按一定大小製作、改變......的大小、給（衣服、紙張等）上漿；adj. 一定大小（或尺碼）的",
+        "zh": "n. 大小、尺寸、龐大、巨大；v. 依大小分類、按一定大小製作、改變......的大小、給（衣服、紙張等）上漿；adj. 一定大小（或尺碼）的",
         "unit": 13,
         "example": "The jacket was the wrong size.",
         "exampleZh": "這件夾克的尺寸不對。"
@@ -26254,7 +26254,7 @@ const toeicWordsDB = [
         "en": "skill",
         "kk": "[skɪl]",
         "uk": "/skɪl/",
-        "zh": "n. 技巧、技術、技藝、技能；v. 培訓",
+        "zh": "n. 技能、技巧、技藝、技術；v. 培訓",
         "unit": 13,
         "example": "It's time to showcase real skills.",
         "exampleZh": "是時候展示真正的技能了。"
@@ -26264,7 +26264,7 @@ const toeicWordsDB = [
         "en": "skillful",
         "kk": "[ˋskɪlfəl]",
         "uk": "/ˈskɪlf(ə)l/",
-        "zh": "adj. 有技巧的、熟練的、靈巧的、巧妙的",
+        "zh": "adj. 有技術的、熟練的、有技巧的、靈巧的",
         "unit": 13,
         "example": "Military tactics are skillful.",
         "exampleZh": "軍事戰術是嫻熟的。"
@@ -26284,7 +26284,7 @@ const toeicWordsDB = [
         "en": "slash",
         "kk": "[slæʃ]",
         "uk": "/slæʃ/",
-        "zh": "v. 減低、砍傷、抨擊、砍；n. 砍傷、砍痕、砍、劈",
+        "zh": "v. 砍、劈、大幅度削減、大大降低；n. 砍、劈、傷口、砍痕",
         "unit": 13,
         "example": "The mayor will have to slash the city's already bare-bones budget.",
         "exampleZh": "市長將不得不削減該市已經降到最低限度的預算。"
@@ -26294,7 +26294,7 @@ const toeicWordsDB = [
         "en": "slice",
         "kk": "[slaɪs]",
         "uk": "/slaɪs/",
-        "zh": "n. 薄片、切片、片、小塊；vt. 切下、割去、把……切成薄片、切",
+        "zh": "n. 薄片、片、小塊、水果切塊；vt. 把……切成薄片、切、割、劃",
         "unit": 13,
         "example": "Bess stabbed a slice of cucumber.",
         "exampleZh": "貝斯戳起一片黃瓜。"
@@ -26304,7 +26304,7 @@ const toeicWordsDB = [
         "en": "slip",
         "kk": "[slɪp]",
         "uk": "/slɪp/",
-        "zh": "v. 滑動、滑跤、滑倒、失足；n. 疏忽、錯誤、疏漏",
+        "zh": "v. 滑倒、失足、滑落、脫落；n. 疏漏、差錯、小紙條、滑",
         "unit": 13,
         "example": "He removed his brown slip-ons.",
         "exampleZh": "他脫掉了他的棕色無帶鞋。"
@@ -26314,7 +26314,7 @@ const toeicWordsDB = [
         "en": "slippery",
         "kk": "[ˋslɪpɚi]",
         "uk": "/ˈslɪpəri/",
-        "zh": "adj. 滑的、油滑的、溼滑的、容易打滑的",
+        "zh": "adj. 容易滑的、不明確的、溼滑的、容易打滑的",
         "unit": 13,
         "example": "Don't believe what he says—he's a slippery customer.",
         "exampleZh": "他說什麼你可別信—他是個滑頭。"
@@ -26344,7 +26344,7 @@ const toeicWordsDB = [
         "en": "sloppy",
         "kk": "[ˋslɑpi]",
         "uk": "/ˈslɒpi/",
-        "zh": "adj. 稀薄的、邋遢的、馬虎的、草率的",
+        "zh": "adj. 懶散的、草率的、馬虎的、寬鬆的",
         "unit": 13,
         "example": "He has little patience for sloppy work from colleagues.",
         "exampleZh": "他無法忍耐同事們馬虎的工作。"
@@ -26354,7 +26354,7 @@ const toeicWordsDB = [
         "en": "slot",
         "kk": "[slɑt]",
         "uk": "/slɒt/",
-        "zh": "n. 投幣口、自動販賣機、狹長孔、狹槽；vt. 把……投入窄孔中、把……放到指定位置、為……安排時間、安置",
+        "zh": "n. 狹長孔、狹槽、時間、空檔；vt. 把……投入窄孔中、把……放到指定位置、為……安排時間、安置",
         "unit": 13,
         "example": "He dropped a coin into the slot and dialled.",
         "exampleZh": "他把一枚硬幣投進了那個投幣口，然後撥了號。"
@@ -26364,7 +26364,7 @@ const toeicWordsDB = [
         "en": "slump",
         "kk": "[slʌmp]",
         "uk": "/slʌmp/",
-        "zh": "v. 倒下、陷落、驟降、猛跌；n. 下降、不景氣、突然下跌、蕭條",
+        "zh": "v. 驟降、猛跌、慘敗、倒下；n. 突然下跌、不景氣、蕭條、低迷期",
         "unit": 13,
         "example": "The toy industry is in a slump.",
         "exampleZh": "玩具業現在不景氣。"
@@ -26384,7 +26384,7 @@ const toeicWordsDB = [
         "en": "soar",
         "kk": "[sɔr]",
         "uk": "/sɔː(r)/",
-        "zh": "n. 高飛、高漲；vi. 往上飛舞、升、急升、猛漲",
+        "zh": "n. 高飛、高漲；vi. 往上飛舞、翱翔、暴漲、急升",
         "unit": 13,
         "example": "His market share continues to soar.",
         "exampleZh": "他的市場份額不斷高漲。"
@@ -26394,7 +26394,7 @@ const toeicWordsDB = [
         "en": "society",
         "kk": "[səˋsaɪəti]",
         "uk": "/səˈsaɪəti/",
-        "zh": "n. 社會、交際、社群、社團",
+        "zh": "n. 社會、社團、社群、協會",
         "unit": 13,
         "example": "Ours is a secular society.",
         "exampleZh": "我們的社會是個世俗社會。"
@@ -26464,7 +26464,7 @@ const toeicWordsDB = [
         "en": "sophisticated",
         "kk": "[səˋfɪstə͵ketɪd]",
         "uk": "/səˈfɪstɪkeɪtɪd/",
-        "zh": "adj. 世故的、精緻的、見多識廣的、老練的；v. 使老於世故、使（裝置、技術等）更復雜先進、講話（或推理）",
+        "zh": "adj. 老於世故的、精通的、精密的、見多識廣的；v. 使老於世故、使（裝置、技術等）更復雜先進、講話（或推理）",
         "unit": 13,
         "example": "Claude was a charming, sophisticated companion.",
         "exampleZh": "克勞德是個有魅力、見多識廣的夥伴。"
@@ -26484,7 +26484,7 @@ const toeicWordsDB = [
         "en": "sound",
         "kk": "[saʊnd]",
         "uk": "/saʊnd/",
-        "zh": "n. 聲音、響聲、聲響、聽力範圍；vt. 聽起來、發聲、作響、發出；adj. 無損傷的、健康的、堅實的、合理的；adv. 酣暢地",
+        "zh": "n. 聲音、聲響、聽力範圍、聽距；vt. 聽起來、發聲、作響、發出；adj. 無損傷的、健康的、堅實的、合理的；adv. 酣暢地",
         "unit": 13,
         "example": "You don't sound very sure.",
         "exampleZh": "你聽起來不太確定。"
@@ -26494,7 +26494,7 @@ const toeicWordsDB = [
         "en": "source",
         "kk": "[sɔrs]",
         "uk": "/sɔːs/",
-        "zh": "n. 根源、來源、出處、原因；vt. 隔開、獲得、找出……的來源",
+        "zh": "n. 源頭、來源、出處、原因；vt. 獲得、找出……的來源",
         "unit": 13,
         "example": "What is their main source of income?",
         "exampleZh": "他們的主要收入來源是什麼？"
@@ -26504,7 +26504,7 @@ const toeicWordsDB = [
         "en": "space",
         "kk": "[spes]",
         "uk": "/speɪs/",
-        "zh": "n. 空間、宇宙、空地、空位；vt. 把（某物）隔開、在（詞語等）之間加空格、變得昏昏沉沉、瞪著眼發呆",
+        "zh": "n. 空間、太空、空地、空位；vt. 把（某物）隔開、在（詞語等）之間加空格、變得昏昏沉沉、瞪著眼發呆",
         "unit": 13,
         "example": "She needed space to be herself.",
         "exampleZh": "她需要空間來做自己。"
@@ -26514,7 +26514,7 @@ const toeicWordsDB = [
         "en": "span",
         "kk": "[spæn]",
         "uk": "/spæn/",
-        "zh": "n. 礅距、跨度、時間跨度、一段時間；vt. 橫跨、跨越、持續、貫穿；adj. 整潔乾淨的、照管得很好的",
+        "zh": "n. 時間跨度、一段時間、墩距、跨距；vt. 持續、貫穿、包括、涵蓋；adj. 整潔乾淨的、照管得很好的",
         "unit": 13,
         "example": "Managers have a wide span of control.",
         "exampleZh": "經理的職權範圍很大。"
@@ -26524,7 +26524,7 @@ const toeicWordsDB = [
         "en": "special",
         "kk": "[ˋspɛʃəl]",
         "uk": "/ˈspeʃ(ə)l/",
-        "zh": "adj. 特別的、特殊的、格外看重的、特別要好的；n. 特色菜、特別節目、特價商品、折扣商品",
+        "zh": "adj. 特殊的、專門的、特別的、格外看重的；n. 特色菜、特別節目、特價商品、折扣商品",
         "unit": 13,
         "example": "Couldn't we call a special meeting?",
         "exampleZh": "我們就不能召開一次特別會議嗎？"
@@ -26534,7 +26534,7 @@ const toeicWordsDB = [
         "en": "specialize",
         "kk": "[ˋspɛʃə͵laɪz]",
         "uk": "/ˈspeʃəlaɪz/",
-        "zh": "vi. 專精於、專門研究、專攻、專營",
+        "zh": "vi. 專門研究、專攻、專營、使（器官）專化",
         "unit": 13,
         "example": "We specialize in quality furniture.",
         "exampleZh": "我們專營高檔傢俱。"
@@ -26574,7 +26574,7 @@ const toeicWordsDB = [
         "en": "speech",
         "kk": "[spitʃ]",
         "uk": "/spiːtʃ/",
-        "zh": "n. 演說、言論、發言、談話",
+        "zh": "n. 言論、演講、演說、發言",
         "unit": 13,
         "example": "He muffed his opening speech.",
         "exampleZh": "他的開場白被壓低了。"
@@ -26584,7 +26584,7 @@ const toeicWordsDB = [
         "en": "speed",
         "kk": "[spid]",
         "uk": "/spiːd/",
-        "zh": "n. 迅速、速度、快；vi. 促進、加快、快速移動、快速運送",
+        "zh": "n. 速度、快、迅速、排擋；vi. 快速移動、快速運送、超速駕駛、加速",
         "unit": 13,
         "example": "The car was gathering speed.",
         "exampleZh": "汽車逐漸加速。"
@@ -26594,7 +26594,7 @@ const toeicWordsDB = [
         "en": "spend",
         "kk": "[spɛnd]",
         "uk": "/spend/",
-        "zh": "vt. 花費、浪費、度過、花；n. 花費、開銷、預算",
+        "zh": "vt. 花費、度過、花、消耗；n. 花費、開銷、預算",
         "unit": 13,
         "example": "I spend too much time watching television.",
         "exampleZh": "我花了太多時間看電視。"
@@ -26604,7 +26604,7 @@ const toeicWordsDB = [
         "en": "splendid",
         "kk": "[ˋsplɛndɪd]",
         "uk": "/ˈsplendɪd/",
-        "zh": "adj. 壯麗的、輝煌的、極佳的、非常好的；int. 好極了、痛快",
+        "zh": "adj. 燦爛的、傑出的、極佳的、非常好的；int. 好極了、痛快",
         "unit": 13,
         "example": "The book includes a wealth of splendid photographs.",
         "exampleZh": "這本書有大量非常好的照片。"
@@ -26614,7 +26614,7 @@ const toeicWordsDB = [
         "en": "sponsor",
         "kk": "[ˋspɑnsɚ]",
         "uk": "/ˈspɒnsə(r)/",
-        "zh": "n. 贊助商、贊助者、資助者、捐款者；vt. 贊助、為慈善活動捐資、為義賽捐款、倡議",
+        "zh": "n. 主辦者、贊助者、贊助商、資助者；vt. 贊助、為慈善活動捐資、為義賽捐款",
         "unit": 13,
         "example": "Tom is my sponsor.",
         "exampleZh": "湯姆是我的贊助商。"
@@ -26644,7 +26644,7 @@ const toeicWordsDB = [
         "en": "spray",
         "kk": "[spre]",
         "uk": "/spreɪ/",
-        "zh": "n. 噴霧、浪花、噴霧液體、噴劑；vt. 噴灑、噴、飛濺、飛散",
+        "zh": "n. 噴霧、噴霧液體、噴劑、噴霧器；vt. 噴、噴灑、飛濺",
         "unit": 13,
         "example": "He spray-painted his name on the wall.",
         "exampleZh": "他把自己的名字用噴漆噴在了牆上。"
@@ -26654,7 +26654,7 @@ const toeicWordsDB = [
         "en": "spread",
         "kk": "[sprɛd]",
         "uk": "/spred/",
-        "zh": "vt. 伸展、傳播、展開、開啟；n. 蔓延、流行、擴散、範圍；adj. 伸展的",
+        "zh": "vt. 展開、開啟、張開、伸開；n. 擴散、蔓延、範圍、幅度；adj. 伸展的",
         "unit": 13,
         "example": "The bird spread its wings.",
         "exampleZh": "鳥展開翅膀。"
@@ -26674,7 +26674,7 @@ const toeicWordsDB = [
         "en": "sprinkle",
         "kk": "[ˋsprɪŋkəl]",
         "uk": "/ˈsprɪŋk(ə)l/",
-        "zh": "vt. 灑、噴、淋、撒；n. 稀疏小雨、少量、一點、彩糖",
+        "zh": "vt. 撒、灑、用……點綴、在……中隨意穿插；n. 少量、一點、稀疏小雨、彩糖",
         "unit": 13,
         "example": "Sprinkle onion and cheese in the pie plate.",
         "exampleZh": "把洋蔥和乾酪撒在餅盤中。"
@@ -26684,7 +26684,7 @@ const toeicWordsDB = [
         "en": "spy",
         "kk": "[spaɪ]",
         "uk": "/spaɪ/",
-        "zh": "n. 間諜、密探、暗中監視者；vi. 監視、偵察、從事間諜活動、突然看見；adj. 執行間諜任務的",
+        "zh": "n. 間諜、密探、暗中監視者；vi. 從事間諜活動、突然看見、認出、秘密監視；adj. 執行間諜任務的",
         "unit": 13,
         "example": "He was denounced as a foreign spy.",
         "exampleZh": "有人告發他是外國間諜。"
@@ -26704,7 +26704,7 @@ const toeicWordsDB = [
         "en": "stability",
         "kk": "[stəˋbɪlɪti]",
         "uk": "/stəˈbɪləti/",
-        "zh": "n. 穩定、穩定性、穩固、堅定",
+        "zh": "n. 穩定、穩定性、安定、穩固",
         "unit": 13,
         "example": "Political stability, meanwhile, will be a prime concern.",
         "exampleZh": "與此同時，政治穩定將是頭等大事。"
@@ -26714,7 +26714,7 @@ const toeicWordsDB = [
         "en": "stable",
         "kk": "[ˋstebəl]",
         "uk": "/ˈsteɪb(ə)l/",
-        "zh": "adj. 穩定的、牢固的、穩重的、沉穩的；n. 馬、馬棚、畜舍、馬廄；v. 使（馬）入廄、把（馬）拴在馬廄",
+        "zh": "adj. 穩定的、牢固的、穩重的、沉穩的；n. 馬廄、一群賽馬、一批人、系列產品；v. 使（馬）入廄、把（馬）拴在馬廄",
         "unit": 13,
         "example": "Mentally, she is not very stable.",
         "exampleZh": "她的心理狀態不十分穩定。"
@@ -26724,7 +26724,7 @@ const toeicWordsDB = [
         "en": "stack",
         "kk": "[stæk]",
         "uk": "/stæk/",
-        "zh": "n. 一堆、一疊、乾草堆、垛；vt. 堆放、使成整齊的一堆、使成疊（或成摞、成堆）地放在…...、指令（待著陸飛機）作定高分層盤旋",
+        "zh": "n. 一堆、垛、堆、大量；vt. 使成整齊的一堆、使成疊地放在………、使成疊（或成摞、成堆）地放在…...、指令（待著陸飛機）作定高分層盤旋",
         "unit": 13,
         "example": "A stack of files awaited me on my desk.",
         "exampleZh": "我桌上有一堆檔案正待我去處理。"
@@ -26734,7 +26734,7 @@ const toeicWordsDB = [
         "en": "staff",
         "kk": "[stæf]",
         "uk": "/stɑːf/",
-        "zh": "n. 工作人員、全體員工、全體僱員；adj. 職員的；vt. 為……配備員工、是……的職員",
+        "zh": "n. 員工、全體員工、全體僱員；adj. 職員的；vt. 為……配備員工、是……的職員",
         "unit": 13,
         "example": "The staff are very friendly.",
         "exampleZh": "這些工作人員非常友好。"
@@ -26744,7 +26744,7 @@ const toeicWordsDB = [
         "en": "stage",
         "kk": "[stedʒ]",
         "uk": "/steɪdʒ/",
-        "zh": "n. 舞臺、階段、時期、旅程（或賽跑中）的一段；vt. 籌劃、舉行、上演、演出",
+        "zh": "n. 舞台、階段、時期、旅程（或賽跑中）的一段；vt. 上演、演出、主辦、舉行",
         "unit": 13,
         "example": "She pirouetted across the stage.",
         "exampleZh": "她用單腳尖站立，從舞臺的一邊旋轉到另一邊。"
@@ -26754,7 +26754,7 @@ const toeicWordsDB = [
         "en": "stake",
         "kk": "[stek]",
         "uk": "/steɪk/",
-        "zh": "n. 危險、股本、股份、樁；vt. 資助、押下、拿…...冒險、以…...打賭",
+        "zh": "n. 股本、股份、樁、標樁；vt. 拿………冒險、以………打賭、拿…...冒險、以…...打賭",
         "unit": 13,
         "example": "Joan of Arc was burnt at the stake.",
         "exampleZh": "聖女貞德被處以火刑。"
@@ -26774,7 +26774,7 @@ const toeicWordsDB = [
         "en": "stand",
         "kk": "[stænd]",
         "uk": "/stænd/",
-        "zh": "v. 站立、站著、站、起立；n. 立場、架、座",
+        "zh": "v. 站、站立、起立、站起來；n. 架、座、臺、立場",
         "unit": 13,
         "example": "I couldn't stand that yowling.",
         "exampleZh": "我受不了那種嚎叫。"
@@ -26784,7 +26784,7 @@ const toeicWordsDB = [
         "en": "standard",
         "kk": "[ˋstændɚd]",
         "uk": "/ˈstændəd/",
-        "zh": "n. 標準、水準、水平、規範；adj. 標準的、一流的、普通的、常規的",
+        "zh": "n. 標準、水平、規範、正常的水平；adj. 標準的、普通的、常規的、一般性的",
         "unit": 13,
         "example": "The paper was of non-standard size.",
         "exampleZh": "這種紙的大小不標準。"
@@ -26804,7 +26804,7 @@ const toeicWordsDB = [
         "en": "staple",
         "kk": "[ˋstepəl]",
         "uk": "/ˈsteɪp(ə)l/",
-        "zh": "n. 主要產品、支柱產品、主食、主要部份；adj. 主要的、主要生產的、大量生產的、常用的；vt. 用訂書釘訂住、把……分級",
+        "zh": "n. 主要產品、支柱產品、主食、主要部份；adj. 主要生產的、大量生產的、主要的、常用的；vt. 用訂書釘訂住、把……分級",
         "unit": 13,
         "example": "Royal gossip is a staple of the tabloid press.",
         "exampleZh": "圍繞王室成員的飛短流長是小報的主要內容。"
@@ -26814,7 +26814,7 @@ const toeicWordsDB = [
         "en": "state",
         "kk": "[stet]",
         "uk": "/steɪt/",
-        "zh": "n. 狀況、形態、國家、州；adj. 州的、國事的、國事禮儀的、國家提供（或控制）的；vt. 陳述、聲明、說明、規定",
+        "zh": "n. 州、狀態、狀況、緊張；adj. 州的、國事的、國事禮儀的、國家提供（或控制）的；vt. 陳述、說明、規定、公佈",
         "unit": 13,
         "example": "Music can induce a meditative state.",
         "exampleZh": "音樂可以引發冥想狀態。"
@@ -26824,7 +26824,7 @@ const toeicWordsDB = [
         "en": "statement",
         "kk": "[ˋstetmənt]",
         "uk": "/ˈsteɪtmənt/",
-        "zh": "n. 陳述、說明、宣告、報告；vt. 對兒童進行特殊教育評估認定",
+        "zh": "n. 陳述、說明、結單、宣告；vt. 對兒童進行特殊教育評估認定",
         "unit": 13,
         "example": "The statement is really confusing.",
         "exampleZh": "聲明確實令人困惑。"
@@ -26834,7 +26834,7 @@ const toeicWordsDB = [
         "en": "station",
         "kk": "[ˋsteʃən]",
         "uk": "/ˈsteɪʃ(ə)n/",
-        "zh": "n. 車站、駐地、身分、電視臺；vt. 駐紮、派駐、派往、安置在",
+        "zh": "n. 車站、電台、電視臺、廣播電臺；vt. 駐紮、派駐、派往、安置在",
         "unit": 13,
         "example": "The train pulled into a station.",
         "exampleZh": "火車進站了。"
@@ -26844,7 +26844,7 @@ const toeicWordsDB = [
         "en": "stationary",
         "kk": "[ˋsteʃə͵nɛri]",
         "uk": "/ˈsteɪʃənri/",
-        "zh": "adj. 固定的、停滯的、不動的、靜止的；n. 不動的人或物",
+        "zh": "adj. 不動的、定居的、靜止的、不變的；n. 不動的人或物",
         "unit": 13,
         "example": "In short, the shinbashira was acting like an enormous stationary pendulum.",
         "exampleZh": "簡而言之，這個中心支柱就像一個巨大而靜止的鐘擺。"
@@ -26854,7 +26854,7 @@ const toeicWordsDB = [
         "en": "stationery",
         "kk": "[ˋsteʃə͵nɛri]",
         "uk": "/ˈsteɪʃənri/",
-        "zh": "n. 文具、信、信紙、信箋",
+        "zh": "n. 文具、信紙、信箋",
         "unit": 13,
         "example": "The stationery order has arrived.",
         "exampleZh": "訂購的文具到貨了。"
@@ -26874,7 +26874,7 @@ const toeicWordsDB = [
         "en": "status",
         "kk": "[ˋstætəs]",
         "uk": "/ˈsteɪtəs/",
-        "zh": "n. 地位、身分、法律地位、身份",
+        "zh": "n. 狀況、狀態、法律地位、地位",
         "unit": 13,
         "example": "Exotic pets are the latest status symbol.",
         "exampleZh": "養珍禽異獸是表現社會地位的最時髦方式。"
@@ -26894,7 +26894,7 @@ const toeicWordsDB = [
         "en": "steady",
         "kk": "[ˋstɛdi]",
         "uk": "/ˈstedi/",
-        "zh": "adj. 穩固的、平穩的、穩步的、持續的；vt. 使穩固、使穩定、使平穩、穩住；n. 關係確定的情侶、支架、撐竿；int. 當心、冷靜點；adv. 穩定地、持續地、穩固地",
+        "zh": "adj. 平穩的、穩步的、持續的、穩定的；vt. 使平穩、穩住、穩定、固定；n. 關係確定的情侶、支架、撐竿；int. 當心、冷靜點；adv. 穩定地、持續地、穩固地",
         "unit": 13,
         "example": "She slowed to a steady walk.",
         "exampleZh": "她慢下來，穩步行走。"
@@ -26904,7 +26904,7 @@ const toeicWordsDB = [
         "en": "steam",
         "kk": "[stim]",
         "uk": "/stiːm/",
-        "zh": "n. 蒸汽、水蒸汽、水蒸氣、水汽；v. 蒸發、冒熱氣、散發蒸汽、蒸；adj. 蒸汽的",
+        "zh": "n. 蒸汽、水蒸氣、水汽、霧氣；v. 散發蒸汽、冒熱氣、蒸、行駛；adj. 蒸汽的",
         "unit": 13,
         "example": "Who invented the steam engine?",
         "exampleZh": "誰發明了蒸汽機？"
@@ -26914,7 +26914,7 @@ const toeicWordsDB = [
         "en": "stem",
         "kk": "[stɛm]",
         "uk": "/stem/",
-        "zh": "n. 莖、樹幹、幹、柄腳；v. 起源於、攔住、阻擋、阻止；abbr. 理工科的統稱",
+        "zh": "n. 莖、幹、柄；v. 源自、遏止、阻止",
         "unit": 13,
         "example": "Stem cell research is supported by many doctors.",
         "exampleZh": "幹細胞研究得到很多醫生的支援。"
@@ -26944,7 +26944,7 @@ const toeicWordsDB = [
         "en": "storage",
         "kk": "[ˋstɔrədʒ]",
         "uk": "/ˈstɔːrɪdʒ/",
-        "zh": "n. 貯藏、保管、儲存、儲存空間；adj. 儲存的",
+        "zh": "n. 貯藏、貯藏庫、儲存、儲存空間；adj. 儲存的",
         "unit": 13,
         "example": "We need more storage now.",
         "exampleZh": "現在我們需要更多的貯存場所。"
@@ -26954,7 +26954,7 @@ const toeicWordsDB = [
         "en": "store",
         "kk": "[stɔr]",
         "uk": "/stɔː(r)/",
-        "zh": "n. 店舖、商店、倉庫；vt. 貯存、儲藏、儲存",
+        "zh": "n. 商店、倉庫、儲存處、儲存；vt. 儲存、貯存、儲藏",
         "unit": 13,
         "example": "They run a small grocery store.",
         "exampleZh": "他們經營一家小雜貨店。"
@@ -26964,7 +26964,7 @@ const toeicWordsDB = [
         "en": "storm",
         "kk": "[stɔrm]",
         "uk": "/stɔːm/",
-        "zh": "n. 暴風雨、爆發、激動、暴風雪；v. 猛烈攻擊、突然襲擊、氣沖沖地走、非常生氣地說",
+        "zh": "n. 暴風雨、暴風雪、風暴、爆發；v. 猛烈攻擊、突然襲擊、氣沖沖地走、非常生氣地說",
         "unit": 13,
         "example": "The storm clouds were gathering.",
         "exampleZh": "暴風雨烏雲正在聚集。"
@@ -26974,7 +26974,7 @@ const toeicWordsDB = [
         "en": "stormy",
         "kk": "[ˋstɔrmi]",
         "uk": "/ˈstɔːmi/",
-        "zh": "adj. 暴風雨的、暴躁的、有暴風雨的、風暴的",
+        "zh": "adj. 暴風雨的、有暴風雨的、風暴的、激烈的",
         "unit": 13,
         "example": "The letter was read at a stormy meeting.",
         "exampleZh": "這封信是在一次群情激憤的會上讀的。"
@@ -26994,7 +26994,7 @@ const toeicWordsDB = [
         "en": "stout",
         "kk": "[staʊt]",
         "uk": "/staʊt/",
-        "zh": "adj. 頑強的、牢固的、粗壯的、肥胖的；n. 烈性黑啤酒、特大號衣服、胖子",
+        "zh": "adj. 矮胖的、結實的、牢固的、肥胖的；n. 烈性黑啤酒、特大號衣服、胖子",
         "unit": 13,
         "example": "Jacobs was a stout, florid man.",
         "exampleZh": "雅各布斯是個身材結實，臉色紅潤的男人。"
@@ -27004,7 +27004,7 @@ const toeicWordsDB = [
         "en": "straight",
         "kk": "[stret]",
         "uk": "/streɪt/",
-        "zh": "adj. 筆直的、正直的、直的、端正的；adv. 立刻、馬上、直線地、徑直地；n. 異性戀者、直線跑道、順子、750毫升瓶裝酒；v. 使變直",
+        "zh": "adj. 直的、筆直的、端正的、豎直的；adv. 直線地、徑直地、豎直地、直立地；n. 異性戀者、直線跑道、順子、750毫升瓶裝酒；v. 使變直",
         "unit": 13,
         "example": "His teeth were perfectly straight.",
         "exampleZh": "他的牙齒非常整齊。"
@@ -27014,7 +27014,7 @@ const toeicWordsDB = [
         "en": "straightforward",
         "kk": "[ˋstretˋfɔrwɚd]",
         "uk": "/ˌstreɪtˈfɔːwəd/",
-        "zh": "adj. 徑直的、簡單的、易懂的、誠實的；adv. 坦率地、直截了當地",
+        "zh": "adj. 一直向前的、正直的、簡單易懂的、簡單的；adv. 直截了當地、坦率地",
         "unit": 13,
         "example": "The instructions are reasonably straightforward.",
         "exampleZh": "用法說明還算簡單易懂。"
@@ -27024,7 +27024,7 @@ const toeicWordsDB = [
         "en": "strategy",
         "kk": "[ˋstrætədʒi]",
         "uk": "/ˈstrætədʒi/",
-        "zh": "n. 策略、計謀、行動計劃、戰略",
+        "zh": "n. 策略、戰略、行動計劃、戰略學",
         "unit": 13,
         "example": "This strategy looks increasingly moth-eaten.",
         "exampleZh": "這種策略顯得越來越老套。"
@@ -27034,7 +27034,7 @@ const toeicWordsDB = [
         "en": "stream",
         "kk": "[strim]",
         "uk": "/striːm/",
-        "zh": "n. 小河、溪流、小溪、一連串；vi. 流、流動、湧動、不斷地流出",
+        "zh": "n. 小河、小溪、一連串、源源不斷；vi. 流動、湧動、不斷地流出、不斷地排出",
         "unit": 13,
         "example": "They jumped over the stream.",
         "exampleZh": "他們跳過了小溪。"
@@ -27054,7 +27054,7 @@ const toeicWordsDB = [
         "en": "strength",
         "kk": "[strɛŋkθ]",
         "uk": "/streŋθ/",
-        "zh": "n. 力氣、實力強度、體力、力量",
+        "zh": "n. 力量、力氣、體力、實力",
         "unit": 13,
         "example": "Tact was never Mr. Moore's strength.",
         "exampleZh": "老練從來不是穆爾先生的長處。"
@@ -27064,7 +27064,7 @@ const toeicWordsDB = [
         "en": "strengthen",
         "kk": "[ˋstrɛŋθən]",
         "uk": "/ˈstreŋ(k)θn/",
-        "zh": "vt. 增強、鞏固、使（情感、決心等）更強烈、使（關係）更加緊密",
+        "zh": "vt. 加強、增強、使（情感、決心等）更強烈、使（關係）更加緊密",
         "unit": 13,
         "example": "The exercises are designed to strengthen your stomach muscles.",
         "exampleZh": "這些活動目的在於增強你的腹部肌肉。"
@@ -27074,7 +27074,7 @@ const toeicWordsDB = [
         "en": "stress",
         "kk": "[strɛs]",
         "uk": "/stres/",
-        "zh": "n. 壓力、緊張、著重、精神壓力；vt. 強調、著重、重讀、焦慮",
+        "zh": "n. 精神壓力、緊張、壓力、應力；vt. 強調、著重、重讀、焦慮",
         "unit": 13,
         "example": "It's vital to zap stress fast.",
         "exampleZh": "快速消除壓力非常重要。"
@@ -27094,7 +27094,7 @@ const toeicWordsDB = [
         "en": "strike",
         "kk": "[straɪk]",
         "uk": "/straɪk/",
-        "zh": "v. 打擊、擊、撞；n. 罷工、打擊、罷市、罷課",
+        "zh": "v. 擊、撞、打；n. 罷工、罷市、罷課、襲擊",
         "unit": 13,
         "example": "A strike has shut the factory.",
         "exampleZh": "罷工使工廠停業。"
@@ -27104,7 +27104,7 @@ const toeicWordsDB = [
         "en": "strive",
         "kk": "[straɪv]",
         "uk": "/straɪv/",
-        "zh": "vt. 力爭、苦幹、努力、鬥爭",
+        "zh": "vt. 努力、苦幹、奮鬥、反抗",
         "unit": 13,
         "example": "Newspaper editors all strive to be first with a story.",
         "exampleZh": "報紙編輯都力爭率先報道。"
@@ -27114,7 +27114,7 @@ const toeicWordsDB = [
         "en": "structure",
         "kk": "[ˋstrʌktʃɚ]",
         "uk": "/ˈstrʌktʃə(r)/",
-        "zh": "n. 結構、構造、結構體、大型建築物；vt. 計劃、組織、安排",
+        "zh": "n. 結構、構造、結構體、大型建築物；vt. 組織、計劃、安排",
         "unit": 13,
         "example": "Your essay needs (a) structure.",
         "exampleZh": "你這篇文章組織不好。"
@@ -27124,7 +27124,7 @@ const toeicWordsDB = [
         "en": "study",
         "kk": "[ˋstʌdi]",
         "uk": "/ˈstʌdi/",
-        "zh": "n. 學習、研究、調查、攻讀；vt. 學習、研究、攻讀、認真閱讀",
+        "zh": "n. 研究、調查、學習、攻讀；vt. 學習、攻讀、認真閱讀、仔細看",
         "unit": 13,
         "example": "She was accepted to study music.",
         "exampleZh": "她被錄取學習音樂。"
@@ -27134,7 +27134,7 @@ const toeicWordsDB = [
         "en": "style",
         "kk": "[staɪl]",
         "uk": "/staɪl/",
-        "zh": "n. 風格、作風、方式、款式；vt. 設計、給……造型、稱呼、命名",
+        "zh": "n. 風格、樣式、方式、作風；vt. 設計、給……造型、稱呼、命名",
         "unit": 13,
         "example": "He had a dense, ponderous style.",
         "exampleZh": "他的風格是詞藻堆砌、冗長沉悶。"
@@ -27164,7 +27164,7 @@ const toeicWordsDB = [
         "en": "submit",
         "kk": "[səbˋmɪt]",
         "uk": "/səbˈmɪt/",
-        "zh": "v. 屈從、忍受、提交、呈遞",
+        "zh": "v. 提交、呈遞、使服從、屈服",
         "unit": 13,
         "example": "Job applicants have to submit a specimen of handwriting.",
         "exampleZh": "求職者必須提交一份筆跡樣本。"
@@ -27174,7 +27174,7 @@ const toeicWordsDB = [
         "en": "subordinate",
         "kk": "[səˋbɔrdə͵net]",
         "uk": "/səˈbɔːdɪnət/",
-        "zh": "adj. 次要的、隸屬的、從屬的、下級的；n. 部下、部屬、下級、從屬；vt. 使從屬於、使處於次要地位、使隸屬、使服從",
+        "zh": "adj. 從屬的、下級的、次要的；n. 部屬、下級、從屬、次要；vt. 使從屬於、使處於次要地位、使隸屬、使服從",
         "unit": 13,
         "example": "Sixty of his subordinate officers followed his example.",
         "exampleZh": "他的60個下級官員都以他為榜樣。"
@@ -27184,7 +27184,7 @@ const toeicWordsDB = [
         "en": "subscribe",
         "kk": "[səbˋskraɪb]",
         "uk": "/səbˈskraɪb/",
-        "zh": "vi. 訂閱、同意、訂購、定期繳納會員費",
+        "zh": "vi. 訂閱、認捐、簽名、訂購",
         "unit": 13,
         "example": "Which journals does the library subscribe to?",
         "exampleZh": "圖書館訂有哪些報刊？"
@@ -27194,7 +27194,7 @@ const toeicWordsDB = [
         "en": "subscription",
         "kk": "[səbˋskrɪpʃən]",
         "uk": "/səbˈskrɪpʃ(ə)n/",
-        "zh": "n. 訂閱、同意、訂閱費、使用者費；adj. 付費的、收費的",
+        "zh": "n. 訂閱費、會費、捐款、署名；adj. 付費的、收費的",
         "unit": 13,
         "example": "Very few subscription libraries exist today.",
         "exampleZh": "目前存在的訂閱庫非常少。"
@@ -27244,7 +27244,7 @@ const toeicWordsDB = [
         "en": "substantial",
         "kk": "[səbˋstænʃəl]",
         "uk": "/səbˈstænʃ(ə)l/",
-        "zh": "adj. 真實的、堅固的、大量的、價值巨大的；n. 重要材料",
+        "zh": "adj. 大量的、實在的、價值巨大的、牢固的；n. 重要材料",
         "unit": 13,
         "example": "He ate a substantial breakfast.",
         "exampleZh": "他吃了一頓豐盛的早餐。"
@@ -27264,7 +27264,7 @@ const toeicWordsDB = [
         "en": "substitute",
         "kk": "[ˋsʌbstə͵tut]",
         "uk": "/ˈsʌbstɪtjuːt/",
-        "zh": "n. 代替人、代替物、替代品、替補隊員；vt. 代替、用……代替、替換、取代；adj. 代替的、替代性的",
+        "zh": "n. 代用品、替代品、代替物、替補隊員；vt. 用……代替、替換、代替；adj. 替代性的",
         "unit": 13,
         "example": "He was brought on as (a) substitute after half-time.",
         "exampleZh": "他作為替補隊員在下半場上場。"
@@ -27274,7 +27274,7 @@ const toeicWordsDB = [
         "en": "subtract",
         "kk": "[səbˋtrækt]",
         "uk": "/səbˈtrækt/",
-        "zh": "vt. 減去、去掉、刪減、扣除",
+        "zh": "vt. 減去、刪減、扣除",
         "unit": 13,
         "example": "The pupil could add and subtract but hadn't learned to divide.",
         "exampleZh": "學生會加減法，但還沒學會除法。"
@@ -27284,7 +27284,7 @@ const toeicWordsDB = [
         "en": "subway",
         "kk": "[ˋsʌb͵we]",
         "uk": "/ˈsʌbweɪ/",
-        "zh": "n. 地下鐵、地鐵、地下通道；v. 乘地鐵",
+        "zh": "n. 地鐵、地下通道；v. 乘地鐵",
         "unit": 13,
         "example": "The subway was covered in graffiti.",
         "exampleZh": "過街地道里塗滿了亂七八糟的圖畫和文字。"
@@ -27294,7 +27294,7 @@ const toeicWordsDB = [
         "en": "succeed",
         "kk": "[səkˋsid]",
         "uk": "/səkˈsiːd/",
-        "zh": "v. 成功、繼任、達成、表現出色",
+        "zh": "v. 成功、達成、表現出色、有作為",
         "unit": 13,
         "example": "The project seemed unlikely to succeed.",
         "exampleZh": "該項目似乎不太可能成功。"
@@ -27324,7 +27324,7 @@ const toeicWordsDB = [
         "en": "suggest",
         "kk": "[səˋdʒɛst]",
         "uk": "/səˈdʒest/",
-        "zh": "vt. 建議、提議、推薦、舉薦",
+        "zh": "vt. 建議、暗示、提議、推薦",
         "unit": 13,
         "example": "I suggest we let the matter drop.",
         "exampleZh": "我建議咱們別再提及此事。"
@@ -27334,7 +27334,7 @@ const toeicWordsDB = [
         "en": "suggestion",
         "kk": "[səˋdʒɛstʃən]",
         "uk": "/səˈdʒestʃən/",
-        "zh": "n. 建議、意見、提議、微量",
+        "zh": "n. 建議、提議、意見、微量",
         "unit": 13,
         "example": "He received my suggestion coolly.",
         "exampleZh": "他對我的建議反應冷淡。"
@@ -27344,7 +27344,7 @@ const toeicWordsDB = [
         "en": "suit",
         "kk": "[sut]",
         "uk": "/suːt/",
-        "zh": "n. 西裝、套、副、套裝；vt. 相稱、彼此協調、使顯得漂亮、與……相配",
+        "zh": "n. 套裝、西裝、訴訟、成套服裝；vt. 適合、相配、使顯得漂亮、與……相配",
         "unit": 13,
         "example": "Lighter shades suit you best.",
         "exampleZh": "較淺色的衣服對你最合適。"
@@ -27374,7 +27374,7 @@ const toeicWordsDB = [
         "en": "suite",
         "kk": "[swit]",
         "uk": "/swiːt/",
-        "zh": "n. 套房、隨從、套間、一套傢俱",
+        "zh": "n. 套房、系列、套間、一套傢俱",
         "unit": 13,
         "example": "We were entertained in the company's hospitality suite.",
         "exampleZh": "公司款待我們住進他們的迎賓套間。"
@@ -27394,7 +27394,7 @@ const toeicWordsDB = [
         "en": "summarize",
         "kk": "[ˋsʌmɚ͵aɪz]",
         "uk": "/ˈsʌməraɪz/",
-        "zh": "vt. 作總結、作概括、總結、概述",
+        "zh": "vt. 總結、概述、概括",
         "unit": 13,
         "example": "Can we summarize the problem from my point of view?",
         "exampleZh": "可以從我的角度來總結一下這個問題嗎？"
@@ -27404,7 +27404,7 @@ const toeicWordsDB = [
         "en": "superb",
         "kk": "[sʊˋpɝb]",
         "uk": "/suːˈpɜːb/",
-        "zh": "adj. 堂皇的、宏偉的、極佳的、質量極高的",
+        "zh": "adj. 宏偉的、華麗的、上乘的、一流的",
         "unit": 13,
         "example": "The car's in superb condition.",
         "exampleZh": "這輛車車況極好。"
@@ -27424,7 +27424,7 @@ const toeicWordsDB = [
         "en": "supervise",
         "kk": "[ˋsupɚ͵vaɪz]",
         "uk": "/ˈsuːpəvaɪz/",
-        "zh": "vt. 監督、管理、指導（某人）的工作",
+        "zh": "vt. 監督、管理、指導、指導（某人）的工作",
         "unit": 13,
         "example": "I supervise the packing of all mail orders.",
         "exampleZh": "我監督所有郵購商品的包裝。"
@@ -27454,7 +27454,7 @@ const toeicWordsDB = [
         "en": "supplement",
         "kk": "[ˋsʌpləmənt]",
         "uk": "/ˈsʌplɪmənt/",
-        "zh": "n. 增補、補充、副刊、補充物；vt. 增加、增補",
+        "zh": "n. 補充物、增補物、營養片劑、補品；vt. 增加、增補",
         "unit": 13,
         "example": "Industrial sponsorship is a supplement to government funding.",
         "exampleZh": "工業界的贊助是對政府撥款的補充。"
@@ -27494,7 +27494,7 @@ const toeicWordsDB = [
         "en": "support",
         "kk": "[səˋpɔrt]",
         "uk": "/səˈpɔːt/",
-        "zh": "vt. 支持、擁護、支援、鼓勵；n. 支持、擁護、支援、幫助",
+        "zh": "vt. 支持、支援、擁護、鼓勵；n. 支撐、支援、擁護、幫助",
         "unit": 13,
         "example": "We offer free technical support.",
         "exampleZh": "我們免費提供技術支援。"
@@ -27514,7 +27514,7 @@ const toeicWordsDB = [
         "en": "suppose",
         "kk": "[səˋpoz]",
         "uk": "/səˈpəʊz/",
-        "zh": "vt. 猜想、以為、推斷、料想",
+        "zh": "vt. 猜想、以為、假定、推斷",
         "unit": 13,
         "example": "I suppose you think you're funny.",
         "exampleZh": "我想你認為自己很有趣。"
@@ -27534,7 +27534,7 @@ const toeicWordsDB = [
         "en": "surface",
         "kk": "[ˋsɝfəs]",
         "uk": "/ˈsɜːfɪs/",
-        "zh": "n. 面、表面、水面、地面；vi. 顯露、呈現、浮出水面、暴露；adj. 表面的、外觀的、表面上的、外表上的",
+        "zh": "n. 表面、水面、地面；vi. 浮出水面、顯露、暴露、公開；adj. 表面上的、外表上的、表面的、水陸運輸的",
         "unit": 13,
         "example": "He staggered on the uneven surface.",
         "exampleZh": "他搖搖晃晃地走在高低不平的表面上。"
@@ -27554,7 +27554,7 @@ const toeicWordsDB = [
         "en": "surplus",
         "kk": "[ˋsɝpləs]",
         "uk": "/ˈsɜːpləs/",
-        "zh": "n. 剩餘物、順差、過剩、剩餘；adj. 過剩的、剩餘的、多餘的、出售剩餘（或過時的）軍用品的；v. 甩賣、變賣",
+        "zh": "n. 過剩、剩餘、過剩量、盈餘；adj. 過剩的、剩餘的、多餘的、出售剩餘（或過時的）軍用品的；v. 甩賣、變賣",
         "unit": 13,
         "example": "Wheat was in surplus that year.",
         "exampleZh": "那一年小麥過剩。"
@@ -27564,7 +27564,7 @@ const toeicWordsDB = [
         "en": "surprise",
         "kk": "[sɚˋpraɪz]",
         "uk": "/səˈpraɪz/",
-        "zh": "n. 驚喜、意外、驚奇、驚訝；vt. 使吃驚、使感到意外、給……驚喜；adj. 令人驚奇的、意外的",
+        "zh": "n. 驚喜、驚奇、驚訝、意外；vt. 使吃驚、使感到意外、給……驚喜；adj. 令人驚奇的、意外的",
         "unit": 13,
         "example": "She looked up in surprise.",
         "exampleZh": "她驚訝地抬起頭。"
@@ -27574,7 +27574,7 @@ const toeicWordsDB = [
         "en": "survey",
         "kk": "[sɚˋve]",
         "uk": "/ˈsɜːveɪ/",
-        "zh": "n. 問卷、民意調查、民意測驗、考察；vt. 調查、做問卷、做民意測驗、做民意調查",
+        "zh": "n. 調查報告、民意調查、民意測驗、考察；vt. 調查、做民意測驗、做民意調查、審視",
         "unit": 13,
         "example": "This very thorough survey goes back to 1784.",
         "exampleZh": "這項非常徹底的調查可追溯到1784年。"
@@ -27614,7 +27614,7 @@ const toeicWordsDB = [
         "en": "suspend",
         "kk": "[səˋspɛnd]",
         "uk": "/səˈspend/",
-        "zh": "vt. 懸掛、使飄浮、暫停、中止",
+        "zh": "vt. 使中止、暫停、中止、使暫停使用",
         "unit": 13,
         "example": "The groundswell forced Arroyo to suspend the contracts in September.",
         "exampleZh": "這一風波迫使阿羅約在9月份暫停了這些合同。"
@@ -27634,7 +27634,7 @@ const toeicWordsDB = [
         "en": "sweater",
         "kk": "[ˋswɛtɚ]",
         "uk": "/ˈswetə(r)/",
-        "zh": "n. 毛線衣、針織套衫、毛線衫、大量出汗的人",
+        "zh": "n. 毛衣、針織套衫、毛線衫、大量出汗的人",
         "unit": 13,
         "example": "The fence snagged my sweater.",
         "exampleZh": "柵欄把我的毛衣掛住了。"
@@ -27654,7 +27654,7 @@ const toeicWordsDB = [
         "en": "switch",
         "kk": "[swɪtʃ]",
         "uk": "/swɪtʃ/",
-        "zh": "n. 開關、轉換、電閘、驟變；vt. 改變、轉移、開啟、關閉",
+        "zh": "n. 開關、電閘、驟變、突變；vt. 開啟、關閉、改變、轉變",
         "unit": 13,
         "example": "When did you switch jobs?",
         "exampleZh": "你們什麼時候調動工作的？"
@@ -27684,7 +27684,7 @@ const toeicWordsDB = [
         "en": "sympathy",
         "kk": "[ˋsɪmpəθi]",
         "uk": "/ˈsɪmpəθi/",
-        "zh": "n. 同情、同情心、理解、贊同",
+        "zh": "n. 同情、同情心、弔唁、理解",
         "unit": 13,
         "example": "She was angling for sympathy.",
         "exampleZh": "她有意博取同情。"
@@ -27714,7 +27714,7 @@ const toeicWordsDB = [
         "en": "system",
         "kk": "[ˋsɪstəm]",
         "uk": "/ˈsɪstəm/",
-        "zh": "n. 制度、體制、系統、方式",
+        "zh": "n. 系統、制度、體制、方式",
         "unit": 13,
         "example": "Trust is implicit in the system.",
         "exampleZh": "信任是這種體制裡內含的。"
@@ -27734,7 +27734,7 @@ const toeicWordsDB = [
         "en": "tackle",
         "kk": "[ˋtækəl]",
         "uk": "/ˈtæk(ə)l/",
-        "zh": "vt. 著手、交涉、應付、解決；n. 搶斷球、擒抱摔倒、阻截隊員、體育器械",
+        "zh": "vt. 著手對付、擒抱並摔倒、應付、解決；n. 搶斷球、擒抱摔倒、阻截隊員、體育器械",
         "unit": 13,
         "example": "We were awarded a penalty after a late tackle.",
         "exampleZh": "對方剷球犯規後，我們得到了一個點球。"
@@ -27764,7 +27764,7 @@ const toeicWordsDB = [
         "en": "tag",
         "kk": "[tæɡ]",
         "uk": "/tæɡ/",
-        "zh": "n. 牌子、標籤、標牌、稱呼；vt. 添加、給……加上標籤、把……稱作",
+        "zh": "n. 標籤、標牌、稱呼、諢名；vt. 給……加上標籤、把……稱作、塗鴉、給（計算機程式或檔案）加標記",
         "unit": 13,
         "example": "We choose to keep the tag.",
         "exampleZh": "我們選擇保留這個標籤。"
@@ -27774,7 +27774,7 @@ const toeicWordsDB = [
         "en": "tailor",
         "kk": "[ˋtelɚ]",
         "uk": "/ˈteɪlə(r)/",
-        "zh": "n. 裁縫師、裁縫、藍魚；vt. 定做、迎合、使適應",
+        "zh": "n. 裁縫、藍魚；vt. 定做、迎合、使適應",
         "unit": 13,
         "example": "The tailor delicately plied his needle.",
         "exampleZh": "裁縫精巧地飛針走線。"
@@ -27784,7 +27784,7 @@ const toeicWordsDB = [
         "en": "take",
         "kk": "[tek]",
         "uk": "/teɪk/",
-        "zh": "vt. 拿、取、獲得、攜帶；n. 鏡頭、場景、收入量、看法",
+        "zh": "vt. 拿、服用、攜帶、拿走；n. 鏡頭、場景、收入量、看法",
         "unit": 13,
         "example": "Take whatever action is needed.",
         "exampleZh": "採取任何需要的行動。"
@@ -27814,7 +27814,7 @@ const toeicWordsDB = [
         "en": "talk",
         "kk": "[tɔk]",
         "uk": "/tɔːk/",
-        "zh": "v. 講話、談話、說話、交談；n. 講話、談話、交談、討論",
+        "zh": "v. 談話、說話、交談、談判；n. 講話、交談、討論、正式會談",
         "unit": 13,
         "example": "They talk about it endlessly.",
         "exampleZh": "他們無休無止地談論它。"
@@ -27824,7 +27824,7 @@ const toeicWordsDB = [
         "en": "talkative",
         "kk": "[ˋtɔkətɪv]",
         "uk": "/ˈtɔːkətɪv/",
-        "zh": "adj. 多嘴的、健談的、愛說話的",
+        "zh": "adj. 好說話的、愛說話的、健談的",
         "unit": 13,
         "example": "He is very talkative.",
         "exampleZh": "他很健談。"
@@ -27844,7 +27844,7 @@ const toeicWordsDB = [
         "en": "tank",
         "kk": "[tæŋk]",
         "uk": "/tæŋk/",
-        "zh": "n. 貯水池、坦克、箱、罐；vi. 徹底失敗、破產、故意輸掉比賽、給車輛加油",
+        "zh": "n. 槽、坦克、箱、罐；vi. 徹底失敗、破產、故意輸掉比賽、給車輛加油",
         "unit": 13,
         "example": "The tank became bogged down in mud.",
         "exampleZh": "坦克陷入了爛泥中。"
@@ -27864,7 +27864,7 @@ const toeicWordsDB = [
         "en": "tape",
         "kk": "[tep]",
         "uk": "/teɪp/",
-        "zh": "n. 膠布、錄音帶、磁帶、錄了音的盒式磁帶；vt. 錄音、錄影、用膠帶貼上、用帶子繫緊",
+        "zh": "n. 磁帶、錄音帶、錄了音的盒式磁帶、錄了像的盒式磁帶；vt. 錄音、錄影、用膠帶貼上、用帶子繫緊",
         "unit": 13,
         "example": "We've got her statement on tape.",
         "exampleZh": "我們已經把她的陳述錄在磁帶上了。"
@@ -27874,7 +27874,7 @@ const toeicWordsDB = [
         "en": "target",
         "kk": "[ˋtɑrɡət]",
         "uk": "/ˈtɑːɡɪt/",
-        "zh": "n. 靶子、目標、指標、物件；vt. 對準、把……作為攻擊目標、把……作為批評的物件、面向",
+        "zh": "n. 目標、指標、物件、靶子；vt. 把……作為攻擊目標、把……作為批評的物件、面向、把……對準",
         "unit": 13,
         "example": "She fired an arrow at the target.",
         "exampleZh": "她瞄準靶子射箭。"
@@ -27894,7 +27894,7 @@ const toeicWordsDB = [
         "en": "taste",
         "kk": "[test]",
         "uk": "/teɪst/",
-        "zh": "n. 味覺、味道、滋味、愛好；v. 吃起來、嚐起來、嚐出……的味道、嘗",
+        "zh": "n. 味道、滋味、味覺、愛好；v. 嚐起來、嚐出……的味道、嘗、品嚐",
         "unit": 13,
         "example": "The salads taste too vinegary.",
         "exampleZh": "沙拉味道太醋了。"
@@ -27904,7 +27904,7 @@ const toeicWordsDB = [
         "en": "tax",
         "kk": "[tæks]",
         "uk": "/tæks/",
-        "zh": "n. 稅金、稅款、負擔、重負；vt. 課稅、對……徵稅、繳納車輛牌照稅、使負重擔",
+        "zh": "n. 稅、稅款、負擔、重負；vt. 徵稅、對……徵稅、繳納車輛牌照稅、使負重擔",
         "unit": 13,
         "example": "This tax should be abolished.",
         "exampleZh": "這種稅應該取消。"
@@ -27914,7 +27914,7 @@ const toeicWordsDB = [
         "en": "tear",
         "kk": "[tɛr]",
         "uk": "/teə(r); tɪə/",
-        "zh": "v. 撕開、撕裂、撕碎、撕破；n. 眼淚、淚珠、淚水、哭泣",
+        "zh": "v. 撕碎、撕裂、撕破、劃破；n. 淚水、哭泣、裂口、破洞",
         "unit": 13,
         "example": "Ann wiped a tear from her eye.",
         "exampleZh": "安擦去眼裡的淚水。"
@@ -27954,7 +27954,7 @@ const toeicWordsDB = [
         "en": "technique",
         "kk": "[tɛkˋnik]",
         "uk": "/tekˈniːk/",
-        "zh": "n. 技巧、技術、技法、工藝",
+        "zh": "n. 技巧、技術、工藝",
         "unit": 13,
         "example": "She showed her students the technique.",
         "exampleZh": "她向學生演示了那個技巧。"
@@ -27964,7 +27964,7 @@ const toeicWordsDB = [
         "en": "technological",
         "kk": "[͵tɛknəˋlɑdʒɪkəl]",
         "uk": "/ˌteknəˈlɒdʒɪk(ə)l/",
-        "zh": "adj. 技術(學)的、科技的、工藝的",
+        "zh": "adj. 技術(學)的、工藝(學)的、科技的",
         "unit": 13,
         "example": "A new technological age had dawned.",
         "exampleZh": "新技術時代已經開始。"
@@ -27984,7 +27984,7 @@ const toeicWordsDB = [
         "en": "temper",
         "kk": "[ˋtɛmpɚ]",
         "uk": "/ˈtempə(r)/",
-        "zh": "n. 情緒、性情、脾氣、壞脾氣；v. 調和、緩和、使緩和、使溫和",
+        "zh": "n. 情緒、脾氣、暴躁、壞脾氣；v. 使緩和、使溫和、使（金屬）回火、鍛造",
         "unit": 13,
         "example": "She has a vicious temper.",
         "exampleZh": "她性情暴虐。"
@@ -28004,7 +28004,7 @@ const toeicWordsDB = [
         "en": "tenant",
         "kk": "[ˋtɛnənt]",
         "uk": "/ˈtenənt/",
-        "zh": "n. 房客、承租人、租戶、業主；v. 居住、工作",
+        "zh": "n. 房客、租戶、業主；v. 居住、工作",
         "unit": 13,
         "example": "The decorating was done by a previous tenant.",
         "exampleZh": "裝修是一位前房客搞的。"
@@ -28014,7 +28014,7 @@ const toeicWordsDB = [
         "en": "tender",
         "kk": "[ˋtɛndɚ]",
         "uk": "/ˈtendə(r)/",
-        "zh": "adj. 嫩的、柔軟的、溫柔的、親切的；vi. 提出、提供、投標、付錢；n. 投標、投標書、交割意向通知書、煤水車",
+        "zh": "adj. 溫柔的、親切的、嫩的、軟的；vi. 提出、提供、投標、付錢；n. 投標、投標書、交割意向通知書、煤水車",
         "unit": 13,
         "example": "This meat is extremely tender.",
         "exampleZh": "這肉嫩得很。"
@@ -28024,7 +28024,7 @@ const toeicWordsDB = [
         "en": "tense",
         "kk": "[tɛns]",
         "uk": "/tens/",
-        "zh": "adj. 緊張的、拉緊的、焦慮的、令人緊張的；vt. 使繃緊、使緊張、（身體或肌肉）繃緊、變得僵直；n. 時態",
+        "zh": "adj. 緊張的、焦慮的、令人緊張的、引發恐慌的；vt. 變得僵直、（身體或肌肉）繃緊、變得神經緊張；n. 時態",
         "unit": 13,
         "example": "A bath can relax tense muscles.",
         "exampleZh": "泡個澡能放鬆緊繃的肌肉。"
@@ -28034,7 +28034,7 @@ const toeicWordsDB = [
         "en": "tension",
         "kk": "[ˋtɛnʃən]",
         "uk": "/ˈtenʃ(ə)n/",
-        "zh": "n. 拉緊、繃緊、緊張、焦慮；v. 拉緊、使拉緊、使緊張",
+        "zh": "n. 緊張、張力、焦慮、緊張關係；v. 使拉緊、使緊張",
         "unit": 13,
         "example": "For several hours, tension mounted.",
         "exampleZh": "幾個小時中，緊張局勢加劇了。"
@@ -28044,7 +28044,7 @@ const toeicWordsDB = [
         "en": "tentative",
         "kk": "[ˋtɛntətɪv]",
         "uk": "/ˈtentətɪv/",
-        "zh": "adj. 試驗性的、嘗試的、試探性的、暫定的；n. 不確定的事物",
+        "zh": "adj. 試驗性的、暫時性的、猶豫的、試探性的；n. 不確定的事物",
         "unit": 13,
         "example": "I'm taking the first tentative steps towards fitness.",
         "exampleZh": "我試探性地開始實施健身計劃。"
@@ -28064,7 +28064,7 @@ const toeicWordsDB = [
         "en": "term",
         "kk": "[tɝm]",
         "uk": "/tɜːm/",
-        "zh": "n. 期、期限、任期、詞語；vt. 把……稱為",
+        "zh": "n. 學期、術語、詞語、措辭；vt. 把……稱為",
         "unit": 13,
         "example": "It's nearly the end of term.",
         "exampleZh": "學期快要結束了。"
@@ -28074,7 +28074,7 @@ const toeicWordsDB = [
         "en": "terminal",
         "kk": "[ˋtɝmənəl]",
         "uk": "/ˈtɜːmɪn(ə)l/",
-        "zh": "n. 終點、末站、航廈、終點站；adj. 末端的、終點的、致命的、不治的",
+        "zh": "n. 接頭、終點站、航空終點站、航站樓；adj. 致命的、不治的、晚期的",
         "unit": 13,
         "example": "A second terminal was opened in 1998.",
         "exampleZh": "第二個航空站是1998年開始運營的。"
@@ -28094,7 +28094,7 @@ const toeicWordsDB = [
         "en": "terrible",
         "kk": "[ˋtɛrəbəl]",
         "uk": "/ˈterəb(ə)l/",
-        "zh": "adj. 可怕的、嚇人的、糟糕的、令人極為不快的",
+        "zh": "adj. 可怕的、糟糕的、令人極為不快的、極度的",
         "unit": 13,
         "example": "I'm in a terrible predicament.",
         "exampleZh": "我陷入了可怕的困境。"
@@ -28154,7 +28154,7 @@ const toeicWordsDB = [
         "en": "though",
         "kk": "[ðo]",
         "uk": "/ðəʊ/",
-        "zh": "conj. 雖然、儘管、可是、不過；adv. 然而、還是、不過、可是",
+        "zh": "conj. 雖然、儘管、可是、不過；adv. 不過、可是、然而",
         "unit": 13,
         "example": "He did reply, though not immediately.",
         "exampleZh": "他確實回復了，儘管不是立即。"
@@ -28164,7 +28164,7 @@ const toeicWordsDB = [
         "en": "thought",
         "kk": "[θɔt]",
         "uk": "/θɔːt/",
-        "zh": "n. 思維、思考、想法、看法；v. 認為、覺得、思考、考慮",
+        "zh": "n. 思想、想法、看法、主意；v. 認為、覺得、思考、考慮",
         "unit": 13,
         "example": "I thought you'd never finish!",
         "exampleZh": "我以為你永遠不會完成！"
@@ -28174,7 +28174,7 @@ const toeicWordsDB = [
         "en": "thread",
         "kk": "[θrɛd]",
         "uk": "/θred/",
-        "zh": "n. 線狀物、頭緒、線、細線；vt. 通過、穿過、穿線於、使穿過",
+        "zh": "n. 線、細線、線狀物、思路；vt. 穿線於、使穿過、將（珠子等）穿起來、裝好",
         "unit": 13,
         "example": "A common thread runs through these discussions.",
         "exampleZh": "這些討論都貫穿著一條共同的主線。"
@@ -28194,7 +28194,7 @@ const toeicWordsDB = [
         "en": "thrive",
         "kk": "[θraɪv]",
         "uk": "/θraɪv/",
-        "zh": "vi. 興旺、繁榮、茁壯成長、以……為樂",
+        "zh": "vi. 興旺、繁榮、茂盛生長、茁壯成長",
         "unit": 13,
         "example": "New businesses thrive in this area.",
         "exampleZh": "新商家在這一地區蓬勃興起。"
@@ -28204,7 +28204,7 @@ const toeicWordsDB = [
         "en": "throughout",
         "kk": "[θruˋaʊt]",
         "uk": "/θruːˈaʊt/",
-        "zh": "prep. 遍及、遍布、到處、自始至終；adv. 處處、始終、遍及、到處",
+        "zh": "prep. 遍及、到處、自始至終、貫穿整個時期；adv. 遍及、到處、自始至終、貫穿整個時期",
         "unit": 13,
         "example": "The match was finely balanced throughout.",
         "exampleZh": "整場比賽雙方打得很平衡。"
@@ -28244,7 +28244,7 @@ const toeicWordsDB = [
         "en": "tight",
         "kk": "[taɪt]",
         "uk": "/taɪt/",
-        "zh": "adj. 牢固的、緊身的、不鬆動的、拉緊的；adv. 緊緊地、牢固地",
+        "zh": "adj. 牢固的、不鬆動的、緊身的、拉緊的；adv. 緊緊地、牢固地",
         "unit": 13,
         "example": "The rope was stretched tight.",
         "exampleZh": "這繩子拉得很緊。"
@@ -28284,7 +28284,7 @@ const toeicWordsDB = [
         "en": "token",
         "kk": "[ˋtokən]",
         "uk": "/ˈtəʊkən/",
-        "zh": "n. 標記、標誌、象徵、詞元；adj. 象徵性的、裝點門面的、裝樣子的、作為標誌的",
+        "zh": "n. 標誌、象徵、代價券、籌碼；adj. 裝點門面的、裝樣子的、象徵性的、作為標誌的",
         "unit": 13,
         "example": "We charge only a token fee for use of the facilities.",
         "exampleZh": "我們對使用這些設施只收取象徵性的費用。"
@@ -28294,7 +28294,7 @@ const toeicWordsDB = [
         "en": "toll",
         "kk": "[tol]",
         "uk": "/təʊl/",
-        "zh": "n. 使用費、通行費、長途電話費、傷亡人數；vt. 敲、鳴、鳴鐘告知、收取（橋樑或道路的）通行費",
+        "zh": "n. 通行費、長途電話費、傷亡人數、嚴重的不良影響；vt. 敲、鳴、鳴鐘告知、收取（橋樑或道路的）通行費",
         "unit": 13,
         "example": "The official death toll has now reached 7 000.",
         "exampleZh": "官方公佈的死亡人數現已達7 000人。"
@@ -28314,7 +28314,7 @@ const toeicWordsDB = [
         "en": "top",
         "kk": "[tɑp]",
         "uk": "/tɒp/",
-        "zh": "n. 頂部、最高程度、頂端；adj. 最高的、最優良的、頂端的、頂部的；vt. 加蓋、勝過、高於、超過；adv. 最多、至多",
+        "zh": "n. 頂部、頂端、上端、上層表面；adj. 頂端的、頂部的、最上面的、最高的；vt. 高於、超過、高過、優於；adv. 最多、至多",
         "unit": 13,
         "example": "She got the top job.",
         "exampleZh": "她得到了最高職位。"
@@ -28324,7 +28324,7 @@ const toeicWordsDB = [
         "en": "topic",
         "kk": "[ˋtɑpɪk]",
         "uk": "/ˈtɒpɪk/",
-        "zh": "n. 主題、要旨、題目、一般規則",
+        "zh": "n. 論題、話題、題目、主題",
         "unit": 13,
         "example": "He spoke with authority on the topic.",
         "exampleZh": "他就這個課題發表權威意見。"
@@ -28334,7 +28334,7 @@ const toeicWordsDB = [
         "en": "total",
         "kk": "[ˋtotəl]",
         "uk": "/ˈtəʊt(ə)l/",
-        "zh": "adj. 總計的、總括的、總的、全部的；v. 合計為、總數達、總計、把……加起來；n. 總數、合計",
+        "zh": "adj. 總的、全部的、完全的、絕對的；v. 總數達、總計、把……加起來、徹底毀壞；n. 總數、合計",
         "unit": 13,
         "example": "Total recycling is a fiction.",
         "exampleZh": "完全回收是一個虛構的故事。"
@@ -28344,7 +28344,7 @@ const toeicWordsDB = [
         "en": "tour",
         "kk": "[tʊr]",
         "uk": "/tʊə(r)/",
-        "zh": "n. 旅遊、遊覽、旅行、參觀；vt. 旅遊、觀光、參觀",
+        "zh": "n. 旅行、旅遊、遊覽、參觀；vt. 旅遊、觀光、參觀、進行巡迴演出",
         "unit": 13,
         "example": "The band will be going on tour.",
         "exampleZh": "這個樂隊將要進行巡迴演出。"
@@ -28354,7 +28354,7 @@ const toeicWordsDB = [
         "en": "tow",
         "kk": "[to]",
         "uk": "/təʊ/",
-        "zh": "vt. 拖、拉、牽引、拖帶；n. 拖、牽引、牽引繩",
+        "zh": "vt. 拖、牽引、拖帶；n. 牽引、拖、牽引繩、拖鏈",
         "unit": 13,
         "example": "They threatened to tow away my car.",
         "exampleZh": "他們威脅說要拖走我的車。"
@@ -28384,7 +28384,7 @@ const toeicWordsDB = [
         "en": "trade",
         "kk": "[tred]",
         "uk": "/treɪd/",
-        "zh": "n. 貿易、交易、買賣、行業；vi. 交換、做買賣、做生意、營運",
+        "zh": "n. 貿易、買賣、行業、同行業者；vi. 做買賣、做生意、營運、營業",
         "unit": 13,
         "example": "Trade was very good last month.",
         "exampleZh": "上月的交易量很大。"
@@ -28394,7 +28394,7 @@ const toeicWordsDB = [
         "en": "tradition",
         "kk": "[trəˋdɪʃən]",
         "uk": "/trəˈdɪʃ(ə)n/",
-        "zh": "n. 傳統習俗、傳統、慣例、傳統故事",
+        "zh": "n. 傳統、慣例、傳統故事、傳說",
         "unit": 13,
         "example": "This region is steeped in tradition.",
         "exampleZh": "這個地區有著深厚的傳統。"
@@ -28414,7 +28414,7 @@ const toeicWordsDB = [
         "en": "traffic",
         "kk": "[ˋtræfɪk]",
         "uk": "/ˈtræfɪk/",
-        "zh": "n. 交通、路上行駛的車輛、航行、行駛；vi. 進行……交易、做……買賣、在……通行",
+        "zh": "n. 交通、車流、交通量；vi. 通行、進行非法交易",
         "unit": 13,
         "example": "The traffic lights were on amber.",
         "exampleZh": "交通訊號黃燈亮了。"
@@ -28424,7 +28424,7 @@ const toeicWordsDB = [
         "en": "trail",
         "kk": "[trel]",
         "uk": "/treɪl/",
-        "zh": "n. 小道、痕跡、蹤跡、足跡；vt. 拖、曳、跟蹤、拉",
+        "zh": "n. 痕跡、蹤跡、足跡、嗅跡；vt. 拖、拉、沒精打采地走、拖沓地走",
         "unit": 13,
         "example": "The trail starts just outside the town.",
         "exampleZh": "足跡從剛出城的地方開始。"
@@ -28454,7 +28454,7 @@ const toeicWordsDB = [
         "en": "transfer",
         "kk": "[trænˋsfɝ]",
         "uk": "/trænsˈfɜː(r)/",
-        "zh": "vt. 調動、轉移、搬遷；n. 轉移、轉讓、調動、轉會",
+        "zh": "vt. 移交、轉移、搬遷、傳染；n. 轉讓、轉移、調動、轉會",
         "unit": 13,
         "example": "The novel does not transfer well to the movies.",
         "exampleZh": "這部小說不太適宜改編成電影。"
@@ -28464,7 +28464,7 @@ const toeicWordsDB = [
         "en": "trash",
         "kk": "[træʃ]",
         "uk": "/træʃ/",
-        "zh": "n. 廢物、垃圾、垃圾桶、劣質的東西；v. 損壞、毀壞、抨擊、譴責",
+        "zh": "n. 垃圾、廢物、垃圾桶、劣質的東西；v. 損壞、毀壞、抨擊、譴責",
         "unit": 13,
         "example": "Would you take out the trash?",
         "exampleZh": "你可以把垃圾帶出去嗎？"
@@ -28474,7 +28474,7 @@ const toeicWordsDB = [
         "en": "travel",
         "kk": "[ˋtrævəl]",
         "uk": "/ˈtræv(ə)l/",
-        "zh": "v. 移動、旅行、走動；n. 旅行、旅遊、運動範圍、運動速度",
+        "zh": "v. 旅行、走動、移動、行進；n. 旅行、旅遊、運動範圍、運動速度",
         "unit": 13,
         "example": "It's cheaper to travel midweek.",
         "exampleZh": "在星期中間旅行較便宜。"
@@ -28484,7 +28484,7 @@ const toeicWordsDB = [
         "en": "traveler",
         "kk": "[ˋtrævəlɚ]",
         "uk": "/ˈtrævələ/",
-        "zh": "n. 旅行者、旅客、遊客、旅行推銷員",
+        "zh": "n. 旅客、遊客、旅行者、旅行推銷員",
         "unit": 13,
         "example": "Are you a good traveler?",
         "exampleZh": "你是個很棒的旅行家嗎？"
@@ -28494,7 +28494,7 @@ const toeicWordsDB = [
         "en": "treasure",
         "kk": "[ˋtrɛʒɚ]",
         "uk": "/ˈtreʒə(r)/",
-        "zh": "n. 金銀財寶、財富、珠寶、珍品；vt. 珍愛、珍視、珍藏、珍惜",
+        "zh": "n. 金銀財寶、珠寶、財富、珍品；vt. 珍愛、珍藏、珍惜、珍視",
         "unit": 13,
         "example": "The treasure had lain undisturbed for centuries.",
         "exampleZh": "那份珍寶安然無恙地存放了幾個世紀。"
@@ -28504,7 +28504,7 @@ const toeicWordsDB = [
         "en": "treat",
         "kk": "[trit]",
         "uk": "/triːt/",
-        "zh": "vt. 對待、處理、看待、治療；n. 請客、樂事、享受、款待",
+        "zh": "vt. 對待、看待、治療、醫治；n. 樂事、享受、款待、招待",
         "unit": 13,
         "example": "Valium is usually prescribed to treat anxiety.",
         "exampleZh": "安定劑通常用於治療焦躁。"
@@ -28514,7 +28514,7 @@ const toeicWordsDB = [
         "en": "treatment",
         "kk": "[ˋtritmənt]",
         "uk": "/ˈtriːtmənt/",
-        "zh": "n. 對待、治療、待遇、處理",
+        "zh": "n. 對待、待遇、治療法、處理",
         "unit": 13,
         "example": "She is responding well to treatment.",
         "exampleZh": "她經過治療大有起色。"
@@ -28534,7 +28534,7 @@ const toeicWordsDB = [
         "en": "tremendous",
         "kk": "[trəˋmɛndəs]",
         "uk": "/trəˈmendəs/",
-        "zh": "adj. 巨大的、極大的、極好的、精彩的",
+        "zh": "adj. 巨大的、極度的、驚人的、極大的",
         "unit": 13,
         "example": "It was a tremendous experience.",
         "exampleZh": "這是個了不起的經歷。"
@@ -28544,7 +28544,7 @@ const toeicWordsDB = [
         "en": "trial",
         "kk": "[ˋtraɪəl]",
         "uk": "/ˈtraɪəl/",
-        "zh": "n. 試驗、審問、審判、審理；v. 測試、試驗、參加比賽；adj. 試驗的、審訊的、試驗性的",
+        "zh": "n. 審判、審理、試驗、試用；v. 測試、試驗、參加比賽；adj. 試驗性的",
         "unit": 13,
         "example": "Their trial will shortly begin.",
         "exampleZh": "他們的審訊很快就要開始。"
@@ -28584,7 +28584,7 @@ const toeicWordsDB = [
         "en": "trivial",
         "kk": "[ˋtrɪviəl]",
         "uk": "/ˈtrɪviəl/",
-        "zh": "adj. 瑣細的、不重要的、瑣碎的、容易解決的",
+        "zh": "adj. 瑣細的、平凡的、瑣碎的、不重要的",
         "unit": 13,
         "example": "It's a trivial matter and not worth fighting about.",
         "exampleZh": "這是一樁小事，不值得為之爭辯。"
@@ -28634,7 +28634,7 @@ const toeicWordsDB = [
         "en": "twice",
         "kk": "[twaɪs]",
         "uk": "/twaɪs/",
-        "zh": "adv. 兩次、兩回、兩倍、強（或好、難）的多",
+        "zh": "adv. 兩次、兩倍、強（或好、難）的多",
         "unit": 13,
         "example": "I visited once or twice.",
         "exampleZh": "我去過一兩次。"
@@ -28654,7 +28654,7 @@ const toeicWordsDB = [
         "en": "type",
         "kk": "[taɪp]",
         "uk": "/taɪp/",
-        "zh": "n. 類型、型式、型別、種類；vt. 作為⋯的典型、打字、測定……的型別、分型",
+        "zh": "n. 型別、種類、具有某種特徵的人、典型；vt. 打字、測定……的型別、分型",
         "unit": 13,
         "example": "What blood type do you have?",
         "exampleZh": "你是什麼血型？"
@@ -28684,7 +28684,7 @@ const toeicWordsDB = [
         "en": "ultimate",
         "kk": "[ˋʌltəmət]",
         "uk": "/ˈʌltɪmət/",
-        "zh": "adj. 最後的、最終的、最根本的、最基礎的；n. 終極、結局、最好的事物、最終的事物；v. 結束",
+        "zh": "adj. 最終的、最後的、最根本的；n. 終極、最好的事物、最終的事物、最終（或最根本）的事實；v. 結束",
         "unit": 13,
         "example": "Treachery was the ultimate sin.",
         "exampleZh": "背叛曾是彌天大罪。"
@@ -28834,7 +28834,7 @@ const toeicWordsDB = [
         "en": "underestimate",
         "kk": "[ˋʌndɚˋɛstə͵met]",
         "uk": "/ˌʌndərˈestɪmeɪt/",
-        "zh": "vt. 低估、對……估計不足、輕視、小看；n. 低估、對……估計不足",
+        "zh": "vt. 低估、對……估計不足、輕視、小看；n. 估計不足、低估、對……估計不足",
         "unit": 13,
         "example": "We often underestimate our potentialities.",
         "exampleZh": "我們常常低估自己的潛力。"
@@ -28844,7 +28844,7 @@ const toeicWordsDB = [
         "en": "underground",
         "kk": "[ˋʌndɚ͵ɡraʊnd]",
         "uk": "/ˌʌndəˈɡraʊnd/",
-        "zh": "adv. 在地（面）下、隱蔽地、隱匿地；adj. 不公開的、地（面）下的、秘密的；v. 鋪（電纜）於地下；n. 地鐵、地下組織、先鋒派團體",
+        "zh": "adv. 在地（面）下、隱蔽地、隱匿地；adj. 地（面）下的、秘密的、標新立異的；v. 鋪（電纜）於地下；n. 地面下層、地下組織、地鐵、先鋒派團體",
         "unit": 13,
         "example": "I always travel by underground.",
         "exampleZh": "我總是乘地鐵。"
@@ -28854,7 +28854,7 @@ const toeicWordsDB = [
         "en": "underline",
         "kk": "[ˋʌndɚ͵laɪn]",
         "uk": "/ˌʌndəˈlaɪn/",
-        "zh": "vt. 強調、使突出、在……下面畫線、突出；n. 下劃線、下體輪廓",
+        "zh": "vt. 在……下面畫線、強調、突出；n. 下劃線、下體輪廓",
         "unit": 13,
         "example": "Some readers would underline the page as they read.",
         "exampleZh": "有些讀者在閱讀時會在頁面下劃線。"
@@ -28864,7 +28864,7 @@ const toeicWordsDB = [
         "en": "understand",
         "kk": "[͵ʌndɚˋstænd]",
         "uk": "/ˌʌndəˈstænd/",
-        "zh": "vt. 了解、理解、懂得、瞭解",
+        "zh": "vt. 理解、明白、懂得、瞭解",
         "unit": 13,
         "example": "I fully understand your motives.",
         "exampleZh": "我完全理解你的動機。"
@@ -28934,7 +28934,7 @@ const toeicWordsDB = [
         "en": "uniform",
         "kk": "[ˋjunə͵fɔrm]",
         "uk": "/ˈjuːnɪfɔːm/",
-        "zh": "n. 制服、校服、穿制服的警官、典型服裝；adj. 相同的、一致的、全部相同的、始終如一的；v. 使一致、使穿制服",
+        "zh": "n. 制服、校服、穿制服的警官、典型服裝；adj. 全部相同的、始終如一的、制服式的；v. 使一致、使穿制服",
         "unit": 13,
         "example": "He was wearing a brown uniform.",
         "exampleZh": "他穿著一件棕色制服。"
@@ -28944,7 +28944,7 @@ const toeicWordsDB = [
         "en": "unify",
         "kk": "[ˋjunə͵faɪ]",
         "uk": "/ˈjuːnɪfaɪ/",
-        "zh": "vt. 統一、聯合、使協調",
+        "zh": "vt. 統一、聯合、使一致、使協調",
         "unit": 13,
         "example": "The tramcars unify the city.",
         "exampleZh": "有軌電車將城市統一起來。"
@@ -28964,7 +28964,7 @@ const toeicWordsDB = [
         "en": "union",
         "kk": "[ˋjunjən]",
         "uk": "/ˈjuːniən/",
-        "zh": "n. 結合、合併、工會、聯邦",
+        "zh": "n. 聯盟、工會、聯邦、協會",
         "unit": 13,
         "example": "The labor union negotiated vigorously for better employee medical benefits.",
         "exampleZh": "工會為員工爭取更好的醫療福利進行了積極談判。"
@@ -28974,7 +28974,7 @@ const toeicWordsDB = [
         "en": "unique",
         "kk": "[juˋnik]",
         "uk": "/juˈniːk/",
-        "zh": "adj. 獨特的、獨一無二的、非常特別的、極不尋常的；n. 獨一無二的人",
+        "zh": "adj. 獨一無二的、獨特的、非常特別的、極不尋常的；n. 獨一無二的人",
         "unit": 13,
         "example": "Each person's signature is unique.",
         "exampleZh": "每個人的簽名是獨一無二的。"
@@ -29014,7 +29014,7 @@ const toeicWordsDB = [
         "en": "unite",
         "kk": "[ˋju͵naɪt]",
         "uk": "/juˈnaɪt/",
-        "zh": "vt. 使聯合、統一、聯合、團結",
+        "zh": "vt. 聯合、團結、統一、使統一",
         "unit": 13,
         "example": "His aim was to unite Italy.",
         "exampleZh": "他的目標是統一義大利。"
@@ -29034,7 +29034,7 @@ const toeicWordsDB = [
         "en": "unless",
         "kk": "[ənˋlɛs]",
         "uk": "/ənˈles/",
-        "zh": "conj. 如果不、除非、除非在……情況下、若非；prep. 除……外、除……之外",
+        "zh": "conj. 除非、如果不、除非在……情況下、若非；prep. 除……之外",
         "unit": 13,
         "example": "That's the plan—unless anything untoward happens.",
         "exampleZh": "計劃就這麼定了—除非出現異常情況。"
@@ -29054,7 +29054,7 @@ const toeicWordsDB = [
         "en": "unlock",
         "kk": "[ənˋlɑk]",
         "uk": "/ˌʌnˈlɒk/",
-        "zh": "vt. 開啟、揭開、開……的鎖、釋放",
+        "zh": "vt. 開鎖、開啟、開……的鎖、釋放",
         "unit": 13,
         "example": "You will find the bike can unlock itself.",
         "exampleZh": "你會發現腳踏車可以自行解鎖。"
@@ -29104,7 +29104,7 @@ const toeicWordsDB = [
         "en": "update",
         "kk": "[əpˋdet]",
         "uk": "/ˌʌpˈdeɪt/",
-        "zh": "vt. 使現代化、更新、為……增加最新資訊、向……提供最新資訊；n. 最新報道、最新訊息、更新、新型",
+        "zh": "vt. 為……增加最新資訊、更新、使現代化；n. 更新、最新報道、最新訊息、新型",
         "unit": 13,
         "example": "You'll need to update your card details directly on our website.",
         "exampleZh": "您需要直接在我們的網站上更新您的銀行卡資訊。"
@@ -29114,7 +29114,7 @@ const toeicWordsDB = [
         "en": "upgrade",
         "kk": "[əpˋɡred]",
         "uk": "/ˌʌpˈɡreɪd/",
-        "zh": "vt. 提高、提升、（計算機、機器或軟體）升級、提高（設施、服務等的）檔次；n. 升級、上坡、改善、提高檔次；adj. 往上的；adv. 往上",
+        "zh": "vt. （計算機、機器或軟體）升級、提高（設施、服務等的）檔次、改善；n. 升級、改善、提高檔次、上坡；adj. 往上的；adv. 往上",
         "unit": 13,
         "example": "Install the ML upgrade, then reboot.",
         "exampleZh": "安裝 ML 升級，然後重新啟動。"
@@ -29124,7 +29124,7 @@ const toeicWordsDB = [
         "en": "upon",
         "kk": "[əˋpɑn]",
         "uk": "/əˈpɒn/",
-        "zh": "prep. 在⋯之上、在⋯上面、在……上、用在一些動詞後；adv. 在上面地、此後",
+        "zh": "prep. 在……上、基於、用在一些動詞後、與on同義；adv. 在上面地、此後",
         "unit": 13,
         "example": "The wedding season is upon us.",
         "exampleZh": "婚禮季節即將來臨。"
@@ -29144,7 +29144,7 @@ const toeicWordsDB = [
         "en": "urban",
         "kk": "[ˋɝbən]",
         "uk": "/ˈɜːbən/",
-        "zh": "adj. 城市的、城鎮的、黑人音樂的、住在都市的",
+        "zh": "adj. 城市的、都市的、城鎮的、黑人音樂的",
         "unit": 13,
         "example": "Public order is primarily an urban problem.",
         "exampleZh": "公共秩序主要是一種城市問題。"
@@ -29164,7 +29164,7 @@ const toeicWordsDB = [
         "en": "urgent",
         "kk": "[ˋɝdʒənt]",
         "uk": "/ˈɜːdʒənt/",
-        "zh": "adj. 急促的、急的、緊急的、急迫的",
+        "zh": "adj. 緊急的、急迫的、急切的、催促的",
         "unit": 13,
         "example": "This condition requires urgent treatment.",
         "exampleZh": "這種情況得緊急處理。"
@@ -29174,7 +29174,7 @@ const toeicWordsDB = [
         "en": "use",
         "kk": "[jus]",
         "uk": "/juːz/",
-        "zh": "vt. 使用、用、耗費、消費；n. 使用、用途、用法、詞義",
+        "zh": "vt. 使用、用、耗費、消費；n. 用途、使用、用法、詞義",
         "unit": 13,
         "example": "That's a word I never use.",
         "exampleZh": "這是我從來不用的詞。"
@@ -29184,7 +29184,7 @@ const toeicWordsDB = [
         "en": "useful",
         "kk": "[ˋjusfəl]",
         "uk": "/ˈjuːsf(ə)l/",
-        "zh": "adj. 有用的、有價值的、有益的、好的",
+        "zh": "adj. 有用的、實用的、有益的、好的",
         "unit": 13,
         "example": "He offered some useful advice.",
         "exampleZh": "他提供了一些有用的建議。"
@@ -29214,7 +29214,7 @@ const toeicWordsDB = [
         "en": "usually",
         "kk": "[ˋjuʒəwəli]",
         "uk": "/ˈjuːʒuəli; ˈjuːʒəli/",
-        "zh": "adv. 通常地、慣常地、經常地",
+        "zh": "adv. 通常、一般、通常地、經常地",
         "unit": 13,
         "example": "Windows are usually sealed off.",
         "exampleZh": "窗戶通常是封閉的。"
@@ -29244,7 +29244,7 @@ const toeicWordsDB = [
         "en": "vacancy",
         "kk": "[ˋvekənsi]",
         "uk": "/ˈveɪkənsi/",
-        "zh": "n. 空白、空缺、空職、空房",
+        "zh": "n. 空、空白、空房、空缺",
         "unit": 13,
         "example": "The vacancy has already been filled.",
         "exampleZh": "該空缺已有人接任。"
@@ -29254,7 +29254,7 @@ const toeicWordsDB = [
         "en": "vacant",
         "kk": "[ˋvekənt]",
         "uk": "/ˈveɪkənt/",
-        "zh": "adj. 空的、空著的、無人用的、空缺的",
+        "zh": "adj. 空白的、空缺的、空著的、無人用的",
         "unit": 13,
         "example": "The seat next to him was vacant.",
         "exampleZh": "他旁邊的座位空著。"
@@ -29264,7 +29264,7 @@ const toeicWordsDB = [
         "en": "vacation",
         "kk": "[veˋkeʃən]",
         "uk": "/veɪˈkeɪʃ(ə)n/",
-        "zh": "n. 假期、休假、休庭期、騰出；vi. 度假",
+        "zh": "n. 假期、休庭期、休假、騰出；vi. 度假",
         "unit": 13,
         "example": "We're going to the beach for vacation.",
         "exampleZh": "我們要去海濱度假。"
@@ -29294,7 +29294,7 @@ const toeicWordsDB = [
         "en": "vain",
         "kk": "[ven]",
         "uk": "/veɪn/",
-        "zh": "adj. 愛虛榮的、自負的、虛榮的、徒勞的",
+        "zh": "adj. 愛虛榮的、徒然的、虛榮的、自負的",
         "unit": 13,
         "example": "He was vain and bombastic.",
         "exampleZh": "他既虛榮又浮誇。"
@@ -29304,7 +29304,7 @@ const toeicWordsDB = [
         "en": "valid",
         "kk": "[ˋvælɪd]",
         "uk": "/ˈvælɪd/",
-        "zh": "adj. 有根據的、確鑿的、有效的、正當的",
+        "zh": "adj. 有根據的、有效的、正當的、合理的",
         "unit": 13,
         "example": "All tickets are valid for two months.",
         "exampleZh": "所有的票在兩個月內有效。"
@@ -29334,7 +29334,7 @@ const toeicWordsDB = [
         "en": "value",
         "kk": "[ˋvælju]",
         "uk": "/ˈvæljuː/",
-        "zh": "n. 價值、等值、等價、物有所值；vt. 尊重、重視、給……估價、給……定價",
+        "zh": "n. 價值、等值、等價、物有所值；vt. 重視、尊重、給……估價、給……定價",
         "unit": 13,
         "example": "Let y have the value 33.",
         "exampleZh": "假設y的值為33。"
@@ -29344,7 +29344,7 @@ const toeicWordsDB = [
         "en": "van",
         "kk": "[væn]",
         "uk": "/væn/",
-        "zh": "n. 廂型車、小貨車、小型貨車、麵包車；v. 用車搬運",
+        "zh": "n. 有蓋小貨車、小型貨車、麵包車、車廂；v. 用車搬運",
         "unit": 13,
         "example": "He inched the van forward.",
         "exampleZh": "他駕著廂式貨車緩緩前行。"
@@ -29364,7 +29364,7 @@ const toeicWordsDB = [
         "en": "variable",
         "kk": "[ˋvɛriəbəl]",
         "uk": "/ˈveəriəb(ə)l/",
-        "zh": "adj. 易變的、多變的、時好時壞的、可變的；n. 可變性、可變因素、變數、變元",
+        "zh": "adj. 易變的、多變的、時好時壞的；n. 可變因素、可變性、變數、變元",
         "unit": 13,
         "example": "The drill has variable speed control.",
         "exampleZh": "這鑽機有變速控制。"
@@ -29374,7 +29374,7 @@ const toeicWordsDB = [
         "en": "variation",
         "kk": "[͵vɛriˋeʃən]",
         "uk": "/ˌveəriˈeɪʃ(ə)n/",
-        "zh": "n. 變動、差異、變化、變奏曲",
+        "zh": "n. 變化、變異、變動、變奏曲",
         "unit": 13,
         "example": "This variation shows up in the trees growth rings.",
         "exampleZh": "這種變化表現在樹木的年輪中。"
@@ -29384,7 +29384,7 @@ const toeicWordsDB = [
         "en": "variety",
         "kk": "[vɚˋaɪəti]",
         "uk": "/vəˈraɪəti/",
-        "zh": "n. 多樣化、變化、種類、品種",
+        "zh": "n. 多樣性、品種、多樣化、變化",
         "unit": 13,
         "example": "We all need variety in our diet.",
         "exampleZh": "我們都需要飲食多樣化。"
@@ -29394,7 +29394,7 @@ const toeicWordsDB = [
         "en": "various",
         "kk": "[ˋvɛriəs]",
         "uk": "/ˈveəriəs/",
-        "zh": "adj. 不同的、各種各樣的、迥異的、千差萬別的；det. 不止一個的、各別的；pron. 不止一個的、各別的",
+        "zh": "adj. 各種各樣的、不同的、迥異的、千差萬別的；det. 不止一個的、各別的；pron. 不止一個的、各別的",
         "unit": 13,
         "example": "He directed various TV shows.",
         "exampleZh": "他導演過各種電視節目。"
@@ -29404,7 +29404,7 @@ const toeicWordsDB = [
         "en": "vary",
         "kk": "[ˋvɛri]",
         "uk": "/ˈveəri/",
-        "zh": "v. 使不同、變更、不同、呈現差異",
+        "zh": "v. 使不同、變更、呈多樣化、不同",
         "unit": 13,
         "example": "Her novels vary in length.",
         "exampleZh": "她的小說篇幅長短不一。"
@@ -29414,7 +29414,7 @@ const toeicWordsDB = [
         "en": "vast",
         "kk": "[væst]",
         "uk": "/vɑːst/",
-        "zh": "adj. 廣闊的、浩瀚的、巨大的、廣大的；n. 廣闊空間",
+        "zh": "adj. 廣闊的、浩瀚的、非常的、巨大的；n. 廣闊空間",
         "unit": 13,
         "example": "E-commerce platforms offer a vast selection of goods to global consumers.",
         "exampleZh": "電商平台為全球消費者提供了極其豐富多樣的商品選擇。"
@@ -29434,7 +29434,7 @@ const toeicWordsDB = [
         "en": "vegetarian",
         "kk": "[͵vɛdʒəˋtɛr͵iən]",
         "uk": "/ˌvedʒəˈteəriən/",
-        "zh": "n. 素食主義者、素食者、食草動物；adj. 素食的、素的",
+        "zh": "n. 素食者、素食主義者、食草動物；adj. 素食的、素的",
         "unit": 13,
         "example": "She is an avowed vegetarian.",
         "exampleZh": "她公開宣告自己是素食者。"
@@ -29444,7 +29444,7 @@ const toeicWordsDB = [
         "en": "vehicle",
         "kk": "[ˋvihɪkəl]",
         "uk": "/ˈviːəkl/",
-        "zh": "n. 交通工具、車輛、工具、媒介",
+        "zh": "n. 車輛、工具、交通工具、媒介",
         "unit": 13,
         "example": "The vehicle was engulfed in flames.",
         "exampleZh": "汽車被大火吞沒。"
@@ -29454,7 +29454,7 @@ const toeicWordsDB = [
         "en": "veil",
         "kk": "[vel]",
         "uk": "/veɪl/",
-        "zh": "n. 面紗、面罩、頭巾、遮蓋物；v. 掩飾、遮蓋、以面紗掩蓋",
+        "zh": "n. 面紗、面罩、頭巾、遮蓋物；v. 以面紗掩蓋、遮蓋、掩飾",
         "unit": 13,
         "example": "A fine drizzle began to veil the hills.",
         "exampleZh": "濛濛細雨漸漸籠罩了群山。"
@@ -29484,7 +29484,7 @@ const toeicWordsDB = [
         "en": "venture",
         "kk": "[ˋvɛntʃɚ]",
         "uk": "/ˈventʃə(r)/",
-        "zh": "n. 冒險事業、投機活動、風險專案、冒險旅行；v. 冒險、敢於去、小心地說、謹慎地做",
+        "zh": "n. 企業、風險專案、冒險事業、冒險旅行；v. 冒險、敢於去、小心地說、謹慎地做",
         "unit": 13,
         "example": "Grace was flushed with the success of the venture.",
         "exampleZh": "格雷斯為這次成功冒險感到興奮。"
@@ -29524,7 +29524,7 @@ const toeicWordsDB = [
         "en": "vessel",
         "kk": "[ˋvɛsəl]",
         "uk": "/ˈves(ə)l/",
-        "zh": "n. 船、艦、血管、導管",
+        "zh": "n. 船、艦、器皿、血管",
         "unit": 13,
         "example": "The vessel yesterday reached anchorage off Dubai.",
         "exampleZh": "該船昨日抵達迪拜附近的錨地。"
@@ -29534,7 +29534,7 @@ const toeicWordsDB = [
         "en": "via",
         "kk": "[ˋvaɪə]",
         "uk": "/ˈvaɪə/",
-        "zh": "prep. 透過、憑藉、經由、經過",
+        "zh": "prep. 經由、取道、憑藉、經過",
         "unit": 13,
         "example": "We flew home via Dubai.",
         "exampleZh": "我們乘飛機經迪拜回國。"
@@ -29554,7 +29554,7 @@ const toeicWordsDB = [
         "en": "vice",
         "kk": "[vaɪs]",
         "uk": "/vaɪs/",
-        "zh": "n. 墮落、邪惡、小毛病、壞習慣；v. 緊緊夾住、握住、鉗緊；adj. 副的、代替的、代理的；prep. 代替",
+        "zh": "n. 惡、罪行、惡習、墮落；v. 握住、鉗緊；adj. 副的、代替的、代理的；prep. 代替",
         "unit": 13,
         "example": "Greed is a terrible vice.",
         "exampleZh": "貪婪是一種惡習。"
@@ -29574,7 +29574,7 @@ const toeicWordsDB = [
         "en": "victim",
         "kk": "[ˋvɪktəm]",
         "uk": "/ˈvɪktɪm/",
-        "zh": "n. 受害者、犧牲者、罹難者、無助者",
+        "zh": "n. 受害者、罹難者、無助者、患病者",
         "unit": 13,
         "example": "He was the victim of calumny.",
         "exampleZh": "他曾是誹謗的受害者。"
@@ -29604,7 +29604,7 @@ const toeicWordsDB = [
         "en": "virtual",
         "kk": "[ˋvɝtʃuəl]",
         "uk": "/ˈvɜːtʃuəl/",
-        "zh": "adj. 虛擬的、幾乎……的、實質上的、模擬的",
+        "zh": "adj. 實質上的、虛擬的、幾乎……的、模擬的",
         "unit": 13,
         "example": "One day virtual reality will revolutionize the entertainment industry.",
         "exampleZh": "有朝一日虛擬現實將給娛樂業帶來一場革命。"
@@ -29624,7 +29624,7 @@ const toeicWordsDB = [
         "en": "visible",
         "kk": "[ˋvɪzəbəl]",
         "uk": "/ˈvɪzəb(ə)l/",
-        "zh": "adj. 可看見的、清晰的、看得見的、明顯的；n. 有形進出口貨物",
+        "zh": "adj. 可看見的、看得見的、明顯的、引人注目的；n. 有形進出口貨物",
         "unit": 13,
         "example": "The warning lights were clearly visible.",
         "exampleZh": "警示燈清晰可見。"
@@ -29634,7 +29634,7 @@ const toeicWordsDB = [
         "en": "visit",
         "kk": "[ˋvɪzɪt]",
         "uk": "/ˈvɪzɪt/",
-        "zh": "vt. 參觀、訪視、遊覽、拜訪；n. 參觀、遊覽、拜訪、作客",
+        "zh": "vt. 訪問、參觀、遊覽、拜訪；n. 參觀、遊覽、拜訪、作客",
         "unit": 13,
         "example": "She will try and visit tomorrow.",
         "exampleZh": "她明天會嘗試去拜訪。"
@@ -29644,7 +29644,7 @@ const toeicWordsDB = [
         "en": "visitor",
         "kk": "[ˋvɪzɪtɚ]",
         "uk": "/ˈvɪzɪtə(r)/",
-        "zh": "n. 參觀者、訪視者、訪問者、瀏覽者",
+        "zh": "n. 訪客、訪問者、參觀者、瀏覽者",
         "unit": 13,
         "example": "I wasn't expecting a visitor.",
         "exampleZh": "我沒有預期會有訪客。"
@@ -29654,7 +29654,7 @@ const toeicWordsDB = [
         "en": "visual",
         "kk": "[ˋvɪʒəwəl]",
         "uk": "/ˈvɪʒuəl/",
-        "zh": "adj. 可被看見的、視覺的、視力的、栩栩如生的；n. 視覺資料",
+        "zh": "adj. 視力的、光學的、視覺的、栩栩如生的；n. 視覺資料",
         "unit": 13,
         "example": "We work on improving visual acuity.",
         "exampleZh": "我們致力於提高視覺敏銳度。"
@@ -29674,7 +29674,7 @@ const toeicWordsDB = [
         "en": "vivid",
         "kk": "[ˋvɪvəd]",
         "uk": "/ˈvɪvɪd/",
-        "zh": "adj. 生動的、活潑的、逼真的、鮮豔的",
+        "zh": "adj. 鮮豔的、生動的、逼真的、明亮的",
         "unit": 13,
         "example": "His eyes were a vivid green.",
         "exampleZh": "他的眼睛碧綠。"
@@ -29684,7 +29684,7 @@ const toeicWordsDB = [
         "en": "vocabulary",
         "kk": "[voˋkæbjə͵lɛri]",
         "uk": "/vəˈkæbjələri; vəʊˈkæbjələri/",
-        "zh": "n. 單字、字彙、全部詞彙、詞彙",
+        "zh": "n. 字彙、全部詞彙、詞彙、專業詞彙",
         "unit": 13,
         "example": "Reading will enlarge your vocabulary.",
         "exampleZh": "閱讀能擴大詞彙量。"
@@ -29694,7 +29694,7 @@ const toeicWordsDB = [
         "en": "voice",
         "kk": "[vɔɪs]",
         "uk": "/vɔɪs/",
-        "zh": "n. 聲音、嗓音、說話聲、歌唱聲；vt. 表達、吐露、發濁音、給（管風琴）調音",
+        "zh": "n. 聲音、發言權、嗓音、說話聲；vt. 表達、吐露、發濁音、給（管風琴）調音",
         "unit": 13,
         "example": "Her voice was suddenly breathy.",
         "exampleZh": "她的聲音突然帶著呼吸聲。"
@@ -29714,7 +29714,7 @@ const toeicWordsDB = [
         "en": "volunteer",
         "kk": "[͵vɑlənˋtɪr]",
         "uk": "/ˌvɒlənˈtɪə(r)/",
-        "zh": "n. 志願者、義工、義務工作者、自告奮勇者；v. 自願、自願做、義務做、無償做；adj. 志願（者）的",
+        "zh": "n. 志願者、義務工作者、自告奮勇者、主動做某事的人；v. 自願做、義務做、無償做、志願服役；adj. 志願（者）的",
         "unit": 13,
         "example": "Volunteer work gives her life (a sense of) purpose.",
         "exampleZh": "做志願工作使她的生活有了意義。"
@@ -29744,7 +29744,7 @@ const toeicWordsDB = [
         "en": "wage",
         "kk": "[wedʒ]",
         "uk": "/weɪdʒ/",
-        "zh": "n. 工資、報酬、工資總額、報應；vt. 進行、從事、發動",
+        "zh": "n. 薪水、報酬、工資、工資總額；vt. 進行、發動",
         "unit": 13,
         "example": "Wage rates depend on levels of productivity.",
         "exampleZh": "工資水平取決於生產量的多寡。"
@@ -29764,7 +29764,7 @@ const toeicWordsDB = [
         "en": "waist",
         "kk": "[west]",
         "uk": "/weɪst/",
-        "zh": "n. 腰、腰部、腰圍、腰身",
+        "zh": "n. 腰、腰圍、腰部、腰身",
         "unit": 13,
         "example": "The grass had grown waist-high.",
         "exampleZh": "草長得齊腰高了。"
@@ -29774,7 +29774,7 @@ const toeicWordsDB = [
         "en": "wait",
         "kk": "[wet]",
         "uk": "/weɪt/",
-        "zh": "v. 等、等候、盼望；n. 等待、等候的時間、官方樂隊",
+        "zh": "v. 等候、盼望、期待；n. 等候、等待、等候的時間、官方樂隊",
         "unit": 13,
         "example": "I'll wait until they arrive.",
         "exampleZh": "我會等到他們到來。"
@@ -29784,7 +29784,7 @@ const toeicWordsDB = [
         "en": "waiter",
         "kk": "[ˋwetɚ]",
         "uk": "/ˈweɪtə(r)/",
-        "zh": "n. 服務生、服務員、侍者",
+        "zh": "n. 男服務生、服務員、侍者",
         "unit": 13,
         "example": "He beckoned to the waiter.",
         "exampleZh": "他朝服務員招了招手。"
@@ -29844,7 +29844,7 @@ const toeicWordsDB = [
         "en": "warm",
         "kk": "[wɔrm]",
         "uk": "/wɔːm/",
-        "zh": "adj. 溫暖的、暖和的、保暖的、防寒的；v. 變暖和、溫暖、產生好感、開始感興趣；n. 暖和的地方（或地區）、取暖、厚呢短大衣；adv. 溫暖地",
+        "zh": "adj. 溫暖的、暖和的、保暖的、防寒的；v. 使溫暖、溫暖、變暖和、產生好感；n. 暖和的地方（或地區）、取暖、厚呢短大衣；adv. 溫暖地",
         "unit": 13,
         "example": "This sleeping bag is very warm.",
         "exampleZh": "這個睡袋很溫暖。"
@@ -29854,7 +29854,7 @@ const toeicWordsDB = [
         "en": "warn",
         "kk": "[wɔrn]",
         "uk": "/wɔːn/",
-        "zh": "vt. 警告、告誡、提醒、使警惕",
+        "zh": "vt. 警告、提醒、使警惕、告誡",
         "unit": 13,
         "example": "I'll run ahead and warn them.",
         "exampleZh": "我要跑在前頭，警告他們。"
@@ -29874,7 +29874,7 @@ const toeicWordsDB = [
         "en": "warranty",
         "kk": "[ˋwɔrənti]",
         "uk": "/ˈwɒrənti/",
-        "zh": "n. 保證、擔保、保修單、保用卡",
+        "zh": "n. 保證書、保單、保修單、保用卡",
         "unit": 13,
         "example": "Is the car still under warranty ?",
         "exampleZh": "這輛汽車仍在保修期內嗎？"
@@ -29884,7 +29884,7 @@ const toeicWordsDB = [
         "en": "waste",
         "kk": "[west]",
         "uk": "/weɪst/",
-        "zh": "n. 浪費、荒原、濫用、廢物；vt. 浪費、濫用、未能充分利用、沒有物盡其用；adj. 荒蕪的、荒廢的、廢棄的、無用的",
+        "zh": "n. 浪費、濫用、廢物、廢棄物；vt. 浪費、濫用、未能充分利用、沒有物盡其用；adj. 荒蕪的、荒廢的、廢棄的、無用的",
         "unit": 13,
         "example": "The waste was dumped in the sea.",
         "exampleZh": "廢物被傾倒在海裡。"
@@ -29894,7 +29894,7 @@ const toeicWordsDB = [
         "en": "watch",
         "kk": "[wɑtʃ]",
         "uk": "/wɒtʃ/",
-        "zh": "vt. 觀看、注視、看、關注；n. 看守、監視、手錶、表",
+        "zh": "vt. 觀看、看、注視、關注；n. 手錶、表、觀察、監視",
         "unit": 13,
         "example": "She glanced at her watch.",
         "exampleZh": "她看了一眼手錶。"
@@ -29944,7 +29944,7 @@ const toeicWordsDB = [
         "en": "wealth",
         "kk": "[wɛlθ]",
         "uk": "/welθ/",
-        "zh": "n. 財產、資源、財富、富有",
+        "zh": "n. 財富、大量、富有",
         "unit": 13,
         "example": "She was jealous of his wealth.",
         "exampleZh": "她嫉妒他的富有。"
@@ -29954,7 +29954,7 @@ const toeicWordsDB = [
         "en": "weight",
         "kk": "[wet]",
         "uk": "/weɪt/",
-        "zh": "n. 重量、體重、分量、重；vt. 加重量於、使變重、使傾向於……、重視",
+        "zh": "n. 重量、重要性、分量、體重；vt. 加重量於、使變重、使傾向於……、重視",
         "unit": 13,
         "example": "He's working at losing weight.",
         "exampleZh": "他正在努力減肥。"
@@ -29964,7 +29964,7 @@ const toeicWordsDB = [
         "en": "whereas",
         "kk": "[wɛˋræz]",
         "uk": "/ˌweərˈæz/",
-        "zh": "conj. 然而、反之、但是、鑑於；n. 序言、開場白、條件語句",
+        "zh": "conj. 反之、而、但是、然而；n. 序言、開場白、條件語句",
         "unit": 13,
         "example": "Some of the studies show positive results, whereas others do not.",
         "exampleZh": "有一些研究結果令人滿意，然而其他的則不然。"
@@ -29974,7 +29974,7 @@ const toeicWordsDB = [
         "en": "whether",
         "kk": "[ˋwɛðɚ]",
         "uk": "/ˈweðə(r)/",
-        "zh": "conj. 是否、不管是……、不管、無論；pron. 兩個中的哪一個",
+        "zh": "conj. 是否、無論、不管；pron. 兩個中的哪一個",
         "unit": 13,
         "example": "Check whether a fuse has blown.",
         "exampleZh": "檢查保險絲是否熔斷。"
@@ -29984,7 +29984,7 @@ const toeicWordsDB = [
         "en": "whole",
         "kk": "[hol]",
         "uk": "/həʊl/",
-        "zh": "n. 整體、全部；adv. 完全地、整個；adj. 整體的、全部的、整個的、完整的",
+        "zh": "n. 全部、整體；adv. 完全地、整個；adj. 整個的、全部的、完整的、完好無損的",
         "unit": 13,
         "example": "The whole idea was preposterous.",
         "exampleZh": "整個想法是荒謬的。"
@@ -29994,7 +29994,7 @@ const toeicWordsDB = [
         "en": "widespread",
         "kk": "[ˋwaɪdˋsprɛd]",
         "uk": "/ˈwaɪdspred/",
-        "zh": "adj. 普遍的、廣泛的",
+        "zh": "adj. 分佈(或散佈)廣的、普遍的、廣泛的",
         "unit": 13,
         "example": "The new laws have gained widespread acceptance.",
         "exampleZh": "新法律獲得廣泛贊同。"
@@ -30004,7 +30004,7 @@ const toeicWordsDB = [
         "en": "width",
         "kk": "[wɪdθ]",
         "uk": "/wɪdθ; wɪtθ/",
-        "zh": "n. 寬度、闊度、廣度、按尺寸剪裁的材料",
+        "zh": "n. 寬度、廣度、按尺寸剪裁的材料、池寬",
         "unit": 14,
         "example": "It's about 10 metres in width.",
         "exampleZh": "它寬約10米。"
@@ -30014,7 +30014,7 @@ const toeicWordsDB = [
         "en": "will",
         "kk": "[wɪl]",
         "uk": "/wɪl/",
-        "zh": "vt. 將、將要、請、總是；aux. 將、將要；n. 意志、心願、目的、決心",
+        "zh": "vt. 將、將要、請、總是；n. 意志、決心、毅力、意願",
         "unit": 14,
         "example": "You will be remunerated and so will your staff.",
         "exampleZh": "您將獲得報酬，您的員工也將獲得報酬。"
@@ -30034,7 +30034,7 @@ const toeicWordsDB = [
         "en": "wire",
         "kk": "[ˋwaɪɚ]",
         "uk": "/ˈwaɪə(r)/",
-        "zh": "n. 電纜、電線、金屬絲、金屬線；vt. 發電報、裝電線、給……接上電線、接通",
+        "zh": "n. 金屬絲、金屬線、電線、導線；vt. 給……接上電線、接通、連線、電匯",
         "unit": 14,
         "example": "The wire led to a speaker.",
         "exampleZh": "這電線連線著揚聲器。"
@@ -30044,7 +30044,7 @@ const toeicWordsDB = [
         "en": "withdraw",
         "kk": "[wɪˋðdrɔ]",
         "uk": "/wɪðˈdrɔː/",
-        "zh": "v. 抽回、拉開、移開、提",
+        "zh": "v. 提取、撤離、提、取",
         "unit": 14,
         "example": "A back injury forced her to withdraw from Wimbledon.",
         "exampleZh": "一處背傷迫使她退出了溫布林登網球賽。"
@@ -30064,7 +30064,7 @@ const toeicWordsDB = [
         "en": "within",
         "kk": "[wɪˋðɪn]",
         "uk": "/wɪˈðɪn/",
-        "zh": "prep. 不超過、在（某段時間）之內、在……限度內；adv. 在裡面、在內部、在內心深處、在思想上；n. 裡面、內部",
+        "zh": "prep. 在……內、在（某段時間）之內、在……限度內、在（某段距離）內；adv. 內部、在裡面、在內部、在內心深處；n. 裡面、內部",
         "unit": 14,
         "example": "The rift within the party deepened.",
         "exampleZh": "黨內的裂痕進一步加深。"
@@ -30074,7 +30074,7 @@ const toeicWordsDB = [
         "en": "withstand",
         "kk": "[wɪθˋstænd]",
         "uk": "/wɪðˈstænd/",
-        "zh": "vt. 抵擋、反抗、頂住、抵住",
+        "zh": "vt. 抵擋、反抗、禁得起、頂住",
         "unit": 14,
         "example": "The aircraft is designed to withstand turbulent conditions.",
         "exampleZh": "這架飛機是為經受猛烈的氣流而設計的。"
@@ -30084,7 +30084,7 @@ const toeicWordsDB = [
         "en": "witness",
         "kk": "[ˋwɪtnəs]",
         "uk": "/ˈwɪtnəs/",
-        "zh": "n. 目擊者、見證人、證人、連署人；vt. 目擊、目睹、見證、經歷",
+        "zh": "n. 目擊者、證人、見證人、連署人；vt. 目擊、目睹、見證、經歷",
         "unit": 14,
         "example": "He took the stand as the first witness.",
         "exampleZh": "他第一個出庭作證。"
@@ -30104,7 +30104,7 @@ const toeicWordsDB = [
         "en": "wonder",
         "kk": "[ˋwʌndɚ]",
         "uk": "/ˈwʌndə(r)/",
-        "zh": "vt. 納悶、想知道、好奇、琢磨；n. 驚奇、驚異、驚訝、驚歎；adj. 極好的、靈驗的",
+        "zh": "vt. 想知道、好奇、琢磨、不知是否；n. 奇蹟、驚訝、驚歎、奇觀；adj. 極好的、靈驗的",
         "unit": 14,
         "example": "I wonder if you can help me.",
         "exampleZh": "不知您是否能幫我的忙？"
@@ -30124,7 +30124,7 @@ const toeicWordsDB = [
         "en": "work",
         "kk": "[wɝk]",
         "uk": "/wɜːk/",
-        "zh": "n. 成果、產品、工作、職業；v. 工作、勞動、幹活兒、從事體力（或腦力）勞動；adj. 工作的、與工作有關的、適合工作時穿戴的、用於工作的",
+        "zh": "n. 工作、職業、勞動；v. 工作、幹活兒、從事體力（或腦力）勞動、從事……工作；adj. 工作的、與工作有關的、適合工作時穿戴的、用於工作的",
         "unit": 14,
         "example": "He's still unfit for work.",
         "exampleZh": "他仍然不適合工作。"
@@ -30144,7 +30144,7 @@ const toeicWordsDB = [
         "en": "workshop",
         "kk": "[ˋwɝk͵ʃɑp]",
         "uk": "/ˈwɜːkʃɒp/",
-        "zh": "n. 工作坊、車間、工場、作坊；v. 研討性演出",
+        "zh": "n. 作坊、研討會、車間、工場；v. 研討性演出",
         "unit": 14,
         "example": "This workshop helps young unemployed people.",
         "exampleZh": "這個講習班幫助失業的年輕人。"
@@ -30154,7 +30154,7 @@ const toeicWordsDB = [
         "en": "world",
         "kk": "[wɝld]",
         "uk": "/wɜːld/",
-        "zh": "n. 世界、地球、天下、星球；adj. 世界上最重要的、世界聞名的、世界（性）的、環球的",
+        "zh": "n. 世界、領域、地球、天下；adj. 世界上最重要的、世界聞名的、世界（性）的、環球的",
         "unit": 14,
         "example": "She has three world titles.",
         "exampleZh": "她擁有三個世界冠軍。"
@@ -30174,7 +30174,7 @@ const toeicWordsDB = [
         "en": "worry",
         "kk": "[ˋwɝi]",
         "uk": "/ˈwʌri/",
-        "zh": "vt. 擔心、擔憂、發愁、使擔憂；n. 令人擔憂的事、令人發愁的問題、擔心、憂慮",
+        "zh": "vt. 擔心、發愁、使擔憂、使發愁；n. 憂慮、令人擔憂的事、令人發愁的問題、擔心",
         "unit": 14,
         "example": "I worry about her constantly.",
         "exampleZh": "我時常擔心她。"
@@ -30194,7 +30194,7 @@ const toeicWordsDB = [
         "en": "wrist",
         "kk": "[rɪst]",
         "uk": "/rɪst/",
-        "zh": "n. 腕、腕關節、手腕、膝關節",
+        "zh": "n. 手腕、腕關節、膝關節、腕",
         "unit": 14,
         "example": "Kay grasped him by the wrist.",
         "exampleZh": "凱緊緊抓住他的手腕。"
@@ -30204,7 +30204,7 @@ const toeicWordsDB = [
         "en": "X-ray",
         "kk": "[ɛks re]",
         "uk": "/ˈeks reɪ/",
-        "zh": "n. X光、X光照片；vt. 用X光線檢查、用X光檢查、使用X光、給…拍X光片；adj. X光的、與X射線有關的",
+        "zh": "n. X光照片、X光檢查；vt. 用X光檢查、使用X光、給…拍X光片；adj. X光的、與X射線有關的",
         "unit": 14,
         "example": "I had to go for an X-ray.",
         "exampleZh": "我得去做X光檢查。"
@@ -30214,7 +30214,7 @@ const toeicWordsDB = [
         "en": "yacht",
         "kk": "[jɑt]",
         "uk": "/jɒt/",
-        "zh": "n. 快艇、遊艇、帆船；v. 駕帆船比賽、駕駛帆船、乘遊艇",
+        "zh": "n. 遊艇、帆船、快艇；v. 駕帆船比賽、駕駛帆船、乘遊艇",
         "unit": 14,
         "example": "She sails her own yacht.",
         "exampleZh": "她駕駛自己的遊艇。"
@@ -30234,7 +30234,7 @@ const toeicWordsDB = [
         "en": "yawn",
         "kk": "[jɔn]",
         "uk": "/jɔːn/",
-        "zh": "vi. 打呵欠、打哈欠、豁開、裂開；n. 呵欠、哈欠、乏味的事物",
+        "zh": "vi. 打哈欠、豁開、裂開；n. 哈欠、乏味的事物",
         "unit": 14,
         "example": "He gave an ostentatious yawn.",
         "exampleZh": "他張揚地打了個哈欠。"
@@ -30254,7 +30254,7 @@ const toeicWordsDB = [
         "en": "yearly",
         "kk": "[ˋjɪrli]",
         "uk": "/ˈjɪəli/",
-        "zh": "adj. 每年的、一年一次的、年度的、一年的；adv. 每年、一年一次地、每年地；n. 年刊、年鑑",
+        "zh": "adj. 一年一次的、每年的、年度的、一年的；adv. 一年一次地、每年地；n. 年刊、年鑑",
         "unit": 14,
         "example": "Pay is reviewed on a yearly basis.",
         "exampleZh": "工資每年審查一次。"
@@ -30264,7 +30264,7 @@ const toeicWordsDB = [
         "en": "yearn",
         "kk": "[jɝn]",
         "uk": "/jɜːn/",
-        "zh": "vt. 思念、渴望、懷念",
+        "zh": "vt. 思念、渴望、嚮往、懷念",
         "unit": 14,
         "example": "As humans, we yearn for social connection.",
         "exampleZh": "作為人類，我們渴望有社會聯絡。"
@@ -30284,7 +30284,7 @@ const toeicWordsDB = [
         "en": "yield",
         "kk": "[jild]",
         "uk": "/jiːld/",
-        "zh": "v. 出產、產生、屈服、讓步；n. 產量、收穫量、收益、利潤",
+        "zh": "v. 產生、出產、屈服；n. 利潤、產量、收益、紅利（或股息）率",
         "unit": 14,
         "example": "Higher-rate deposit accounts yield good returns.",
         "exampleZh": "高利率的存款會產生豐厚的收益。"
@@ -30294,7 +30294,7 @@ const toeicWordsDB = [
         "en": "youngster",
         "kk": "[ˋjʌŋstɚ]",
         "uk": "/ˈjʌŋstə(r)/",
-        "zh": "n. 小孩、年輕人、少年",
+        "zh": "n. 年輕人、少年",
         "unit": 14,
         "example": "Tom is a typical youngster.",
         "exampleZh": "湯姆是個典型的年輕人。"
@@ -30304,7 +30304,7 @@ const toeicWordsDB = [
         "en": "youth",
         "kk": "[juθ]",
         "uk": "/juːθ/",
-        "zh": "n. 青少年時期、青年、小伙子、早期",
+        "zh": "n. 青少年、青少年時代、青少年時期、早期",
         "unit": 14,
         "example": "The poem contrasts youth and age.",
         "exampleZh": "這首詩對比了青春與老年。"
@@ -30314,7 +30314,7 @@ const toeicWordsDB = [
         "en": "youthful",
         "kk": "[ˋjuθfəl]",
         "uk": "/ˈjuːθfl/",
-        "zh": "adj. 年輕的、青年的、年輕人的、青春的",
+        "zh": "adj. 年輕的、富青春活力的、年輕人的、青春的",
         "unit": 14,
         "example": "She's a very youthful 65.",
         "exampleZh": "她65歲了，但顯得非常年輕。"
@@ -30324,7 +30324,7 @@ const toeicWordsDB = [
         "en": "zip",
         "kk": "[zɪp]",
         "uk": "/zɪp/",
-        "zh": "n. 拉鍊、拉鎖、速度、活力；vt. 給以速度、使增加興趣、用拉鍊扣上、拉開拉鍊；adj. 用拉鍊扣住的",
+        "zh": "n. 拉鍊、拉鎖、速度、活力；vt. 用拉鍊扣上、拉開拉鍊、迅速移動、壓縮；adj. 用拉鍊扣住的",
         "unit": 14,
         "example": "He said zip all evening.",
         "exampleZh": "整個晚上他一聲不吭。"
@@ -30334,7 +30334,7 @@ const toeicWordsDB = [
         "en": "zone",
         "kk": "[zon]",
         "uk": "/zəʊn/",
-        "zh": "n. 地帶、地區、範圍、區域；vt. 將……劃為某種用途的區域、將……分成區、用帶子圍繞、環繞",
+        "zh": "n. 地區、區域、地帶、範圍；vt. 將……劃為某種用途的區域、將……分成區、用帶子圍繞、環繞",
         "unit": 14,
         "example": "The area has been declared a disaster zone.",
         "exampleZh": "該地區已被宣佈為災難帶。"
@@ -30344,7 +30344,7 @@ const toeicWordsDB = [
         "en": "zoom",
         "kk": "[zum]",
         "uk": "/zuːm/",
-        "zh": "vi. 發出嗡嗡聲、使急遽上升、快速移動、迅速前往；n. 疾馳的聲音、變焦鏡頭、進行變焦攝影；int. 用於表示突然的快速移動嗖、嗖地、霍地",
+        "zh": "vi. 快速移動、迅速前往、陡升；n. 變焦攝影、疾馳的聲音、變焦鏡頭、進行變焦攝影；int. 用於表示突然的快速移動嗖、嗖地、霍地",
         "unit": 14,
         "example": "The camera zoomed in.",
         "exampleZh": "攝影機將演員的臉拉近了。"
@@ -30384,7 +30384,7 @@ const toeicWordsDB = [
         "en": "appointment",
         "kk": "[əˋpɔɪntmənt]",
         "uk": "/əˈpɔɪntmənt/",
-        "zh": "n. 約定、任命、約會、委派",
+        "zh": "n. 約會、約定、任命、委派",
         "unit": 11,
         "example": "When is your next appointment?",
         "exampleZh": "你下一次預約時間是什麼時候？"
@@ -30404,7 +30404,7 @@ const toeicWordsDB = [
         "en": "asset",
         "kk": "[ˋæs͵ɛt]",
         "uk": "/ˈæset/",
-        "zh": "n. 資產、優勢、有利條件、有價值的人或物",
+        "zh": "n. 資產、有價值的東西、有利條件、有價值的人或物",
         "unit": 11,
         "example": "The value of any financial asset can change swiftly.",
         "exampleZh": "任何金融資產的價值都會迅速發生變化。"
@@ -30424,7 +30424,7 @@ const toeicWordsDB = [
         "en": "authorize",
         "kk": "[ˋɔθɚ͵aɪz]",
         "uk": "/ˈɔːθəraɪz/",
-        "zh": "vt. 授權、批准、許可",
+        "zh": "vt. 授權給、批准、許可、授權",
         "unit": 11,
         "example": "Only the president could authorize the use of the atomic bomb.",
         "exampleZh": "只有總統能授權原子彈的使用。"
@@ -30444,7 +30444,7 @@ const toeicWordsDB = [
         "en": "bulletin",
         "kk": "[ˋbʊlɪtən]",
         "uk": "/ˈbʊlətɪn/",
-        "zh": "n. 公告、快報、新聞簡報、佈告；v. 透過公告公佈或告知",
+        "zh": "n. 公報、公告、新聞簡報、佈告；v. 透過公告公佈或告知",
         "unit": 11,
         "example": "Tom put the list on the bulletin board.",
         "exampleZh": "湯姆把名單貼在佈告欄上。"
@@ -30464,7 +30464,7 @@ const toeicWordsDB = [
         "en": "commence",
         "kk": "[kəˋmɛns]",
         "uk": "/kəˈmens/",
-        "zh": "vt. 開始、著手",
+        "zh": "vt. 開始、著手、得學位",
         "unit": 11,
         "example": "We commence building next week.",
         "exampleZh": "我們下週破土動工。"
@@ -30484,7 +30484,7 @@ const toeicWordsDB = [
         "en": "corporation",
         "kk": "[͵kɔrpɚˋeʃən]",
         "uk": "/ˌkɔːpəˈreɪʃ(ə)n/",
-        "zh": "n. 公司、企業法人、社團、法人",
+        "zh": "n. 股份(有限)公司、社團、公司、法人",
         "unit": 11,
         "example": "He was a stockholder in a hotel corporation.",
         "exampleZh": "他是一家酒店公司的股東。"
@@ -30494,7 +30494,7 @@ const toeicWordsDB = [
         "en": "correspondence",
         "kk": "[͵kɔrəˋspɑndəns]",
         "uk": "/ˌkɒrəˈspɒndəns/",
-        "zh": "n. 通信、商務信件、信件、信函",
+        "zh": "n. 一致、相對應、通信、信件",
         "unit": 11,
         "example": "We have been in correspondence for months.",
         "exampleZh": "我們通訊幾個月了。"
@@ -30504,7 +30504,7 @@ const toeicWordsDB = [
         "en": "designate",
         "kk": "[ˋdɛzəɡ͵net]",
         "uk": "/ˈdezɪɡneɪt/",
-        "zh": "vt. 指定、指派、把……定名為、把……描述為；adj. 已當選而尚未上任的",
+        "zh": "vt. 把……定名為、把……描述為、任命、指定；adj. 已當選而尚未上任的",
         "unit": 11,
         "example": "Japan's prime minister-designate is completing his cabinet today.",
         "exampleZh": "日本即將上任的首相今天將完成他的內閣組建。"
@@ -30514,7 +30514,7 @@ const toeicWordsDB = [
         "en": "dispatch",
         "kk": "[dɪˋspætʃ]",
         "uk": "/dɪˈspætʃ/",
-        "zh": "vt. 派遣、發送、傳送、迅速處理；n. 派遣、傳送、公文、急件",
+        "zh": "vt. 派遣、傳送、迅速處理、迅速辦妥；n. 發送、派遣、傳送、公文",
         "unit": 11,
         "example": "The dispatch of the task force is purely a contingency measure.",
         "exampleZh": "派遣特遣隊純粹是應急措施。"
@@ -30524,7 +30524,7 @@ const toeicWordsDB = [
         "en": "distribute",
         "kk": "[dɪˋstrɪbjut]",
         "uk": "/dɪˈstrɪbjuːt/",
-        "zh": "vt. 分發、分銷、分配、配送",
+        "zh": "vt. 分發、分配、配送、分銷",
         "unit": 11,
         "example": "Aid workers helped distribute corn, milk and other staples.",
         "exampleZh": "救助人員協助分發穀物、牛奶及其他必需的食物。"
@@ -30554,7 +30554,7 @@ const toeicWordsDB = [
         "en": "flexible",
         "kk": "[ˋflɛksəbəl]",
         "uk": "/ˈfleksəb(ə)l/",
-        "zh": "adj. 彈性的、靈活的、柔韌的、易彎曲的",
+        "zh": "adj. 可彎曲的、可變通的、靈活的、柔韌的",
         "unit": 11,
         "example": "WYSIWYG editing makes your word processing smoother and more flexible.",
         "exampleZh": "“所見即所得”編輯使你的文字資訊處理更加順暢和靈活。"
@@ -30564,7 +30564,7 @@ const toeicWordsDB = [
         "en": "furnish",
         "kk": "[ˋfɝnɪʃ]",
         "uk": "/ˈfɜːnɪʃ/",
-        "zh": "vt. 提供、配備家具、為（房間或房屋）配備傢俱、供應",
+        "zh": "vt. 給(房間)配置、供應、提供、為（房間或房屋）配備傢俱",
         "unit": 11,
         "example": "You must furnish the house.",
         "exampleZh": "你必須佈置房子。"
@@ -30574,7 +30574,7 @@ const toeicWordsDB = [
         "en": "headquarters",
         "kk": "[ˋhɛd͵kwɔrtɚz]",
         "uk": "/ˌhedˈkwɔːtəz/",
-        "zh": "n. 總部、總公司、司令部、指揮部",
+        "zh": "n. 總部、總公司、總局、司令部",
         "unit": 11,
         "example": "The warning was radioed to headquarters.",
         "exampleZh": "透過無線電向總部發出了警報。"
@@ -30584,7 +30584,7 @@ const toeicWordsDB = [
         "en": "installation",
         "kk": "[͵ɪnstəˋleʃən]",
         "uk": "/ˌɪnstəˈleɪʃ(ə)n/",
-        "zh": "n. 安裝、設施、設定、裝置",
+        "zh": "n. 設施、安裝、設定、裝置",
         "unit": 11,
         "example": "Installation of the new system will take several days.",
         "exampleZh": "新系統的安裝需要幾天時間。"
@@ -30614,7 +30614,7 @@ const toeicWordsDB = [
         "en": "notify",
         "kk": "[ˋnotə͵faɪ]",
         "uk": "/ˈnəʊtɪfaɪ/",
-        "zh": "vt. 通知、告知、通報、申報",
+        "zh": "vt. 通知、公佈、通報、告知",
         "unit": 11,
         "example": "Please notify us if the above is not correct.",
         "exampleZh": "如果上面所說的不正確，請通知我們。"
@@ -30624,7 +30624,7 @@ const toeicWordsDB = [
         "en": "occupy",
         "kk": "[ˋɑkjə͵paɪ]",
         "uk": "/ˈɒkjupaɪ/",
-        "zh": "vt. 佔用、佔據、使用、居住",
+        "zh": "vt. 佔領、佔據、使用、居住",
         "unit": 11,
         "example": "How much memory does the program occupy?",
         "exampleZh": "這個程式佔用多少記憶體？"
@@ -30644,7 +30644,7 @@ const toeicWordsDB = [
         "en": "patron",
         "kk": "[ˋpetrən]",
         "uk": "/ˈpeɪtrən/",
-        "zh": "n. 老主顧、贊助人、資助者、代言人",
+        "zh": "n. 贊助者、主顧、贊助人、資助者",
         "unit": 11,
         "example": "Frederick the Great was the patron of many artists.",
         "exampleZh": "腓特烈大帝是許多藝術家的贊助人。"
@@ -30654,7 +30654,7 @@ const toeicWordsDB = [
         "en": "precaution",
         "kk": "[priˋkɔʃən]",
         "uk": "/prɪˈkɔːʃ(ə)n/",
-        "zh": "n. 預防措施、防備、避孕措施",
+        "zh": "n. 謹慎、預防措施、防備、避孕措施",
         "unit": 11,
         "example": "Take every precaution to prevent the flag from becoming soiled.",
         "exampleZh": "要採取一切預防措施，以防旗幟被弄髒。"
@@ -30664,7 +30664,7 @@ const toeicWordsDB = [
         "en": "presentation",
         "kk": "[͵prɛzənˋteʃən]",
         "uk": "/ˌprez(ə)nˈteɪʃ(ə)n/",
-        "zh": "n. 簡報、發表會、儀式、典禮",
+        "zh": "n. 簡報、演講、呈現、頒發",
         "unit": 11,
         "example": "A computer software glitch fouled up their presentation.",
         "exampleZh": "一個電腦軟體故障弄砸了他們的展示會。"
@@ -30704,7 +30704,7 @@ const toeicWordsDB = [
         "en": "terminate",
         "kk": "[ˋtɝmə͵net]",
         "uk": "/ˈtɜːmɪneɪt/",
-        "zh": "v. 終止、結束、到達終點站、終止妊娠；adj. 結束的",
+        "zh": "v. 使結束、使終止、解雇、結束；adj. 結束的",
         "unit": 11,
         "example": "This train will terminate at Lamy.",
         "exampleZh": "這列火車的終點站是拉米。"
@@ -30714,7 +30714,7 @@ const toeicWordsDB = [
         "en": "transit",
         "kk": "[ˋtrænzɪt]",
         "uk": "/ˈtrænzɪt/",
-        "zh": "n. 運輸、轉運、運送、交通運輸系統；v. 穿過、（行星等天體）經過",
+        "zh": "n. 運輸、運送、交通運輸系統、透過；v. 穿過、（行星等天體）經過",
         "unit": 11,
         "example": "The contents of the package may have settled in transit.",
         "exampleZh": "包裹裡的東西可能在運輸途中搖密實了。"
@@ -30724,7 +30724,7 @@ const toeicWordsDB = [
         "en": "utility",
         "kk": "[juˋtɪləti]",
         "uk": "/juːˈtɪləti/",
-        "zh": "n. 公共事業、效用、公共服務、公用事業；adj. 有用的、多功能的、多面手的、實用的",
+        "zh": "n. 效用、實用、公用事業、公共服務；adj. 有用的、多功能的、多面手的、實用的",
         "unit": 11,
         "example": "The non-satiation of utility does not stand any longer.",
         "exampleZh": "效用非飽和性不再成立。"
@@ -31524,7 +31524,7 @@ const toeicWordsDB = [
         "en": "pilot",
         "kk": "[ˋpaɪlət]",
         "uk": "/ˈpaɪlət/",
-        "zh": "n. 飛行員，舵手",
+        "zh": "n. 飛行員、領航員、試播節目、常燃小火；adj. 試點的、控制引導訊號；vt. 駕駛、領航、試驗、試行",
         "unit": 14,
         "example": "You are the best little kite pilot in the park today.",
         "exampleZh": "妳今天是公園裡最棒的風箏小飛行員。"

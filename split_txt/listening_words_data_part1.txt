@@ -74,7 +74,7 @@
     "en": "breeze",
     "kk": "[briz]",
     "uk": "/briːz/",
-    "zh": "n. 微風，和風",
+    "zh": "n. 微風、和風、輕而易舉的事、煤屑；vi. 輕盈而自信地走、輕鬆過關、輕易透過、吹微風",
     "unit": 19,
     "example": "A gentle breeze was blowing across the green park.",
     "exampleZh": "一陣溫和的微風吹拂過綠意盎然的公園。"
@@ -84,7 +84,7 @@
     "en": "kite",
     "kk": "[kaɪt]",
     "uk": "/kaɪt/",
-    "zh": "n. 風箏",
+    "zh": "n. 風箏、鳶、空頭支票、非法支票；v. 增加、飛、飛奔、使用（非法支票）騙錢",
     "unit": 19,
     "example": "The colorful kite flew high up into the blue sky.",
     "exampleZh": "那隻五彩繽紛的風箏高高飛上了藍天。"
@@ -94,7 +94,7 @@
     "en": "sneaker",
     "kk": "[ˋsnikɚ]",
     "uk": "/ˈsniːkə(r)/",
-    "zh": "n. 運動鞋，膠底運動鞋",
+    "zh": "n. 運動鞋、球鞋、卑鄙者、鬼鬼祟祟做事的人",
     "unit": 19,
     "example": "Put on your comfortable sneakers before we go running.",
     "exampleZh": "在我們去跑步前，先穿上妳舒適的運動鞋。"

@@ -4,7 +4,7 @@
     "en": "width",
     "kk": "[wɪdθ]",
     "uk": "/wɪdθ; wɪtθ/",
-    "zh": "n. 寬度、闊度、廣度、按尺寸剪裁的材料",
+    "zh": "n. 寬度、廣度、按尺寸剪裁的材料、池寬",
     "unit": 14,
     "example": "It's about 10 metres in width.",
     "exampleZh": "它寬約10米。"
@@ -14,7 +14,7 @@
     "en": "will",
     "kk": "[wɪl]",
     "uk": "/wɪl/",
-    "zh": "vt. 將、將要、請、總是；aux. 將、將要；n. 意志、心願、目的、決心",
+    "zh": "vt. 將、將要、請、總是；n. 意志、決心、毅力、意願",
     "unit": 14,
     "example": "You will be remunerated and so will your staff.",
     "exampleZh": "您將獲得報酬，您的員工也將獲得報酬。"
@@ -34,7 +34,7 @@
     "en": "wire",
     "kk": "[ˋwaɪɚ]",
     "uk": "/ˈwaɪə(r)/",
-    "zh": "n. 電纜、電線、金屬絲、金屬線；vt. 發電報、裝電線、給……接上電線、接通",
+    "zh": "n. 金屬絲、金屬線、電線、導線；vt. 給……接上電線、接通、連線、電匯",
     "unit": 14,
     "example": "The wire led to a speaker.",
     "exampleZh": "這電線連線著揚聲器。"
@@ -44,7 +44,7 @@
     "en": "withdraw",
     "kk": "[wɪˋðdrɔ]",
     "uk": "/wɪðˈdrɔː/",
-    "zh": "v. 抽回、拉開、移開、提",
+    "zh": "v. 提取、撤離、提、取",
     "unit": 14,
     "example": "A back injury forced her to withdraw from Wimbledon.",
     "exampleZh": "一處背傷迫使她退出了溫布林登網球賽。"
@@ -64,7 +64,7 @@
     "en": "within",
     "kk": "[wɪˋðɪn]",
     "uk": "/wɪˈðɪn/",
-    "zh": "prep. 不超過、在（某段時間）之內、在……限度內；adv. 在裡面、在內部、在內心深處、在思想上；n. 裡面、內部",
+    "zh": "prep. 在……內、在（某段時間）之內、在……限度內、在（某段距離）內；adv. 內部、在裡面、在內部、在內心深處；n. 裡面、內部",
     "unit": 14,
     "example": "The rift within the party deepened.",
     "exampleZh": "黨內的裂痕進一步加深。"
@@ -74,7 +74,7 @@
     "en": "withstand",
     "kk": "[wɪθˋstænd]",
     "uk": "/wɪðˈstænd/",
-    "zh": "vt. 抵擋、反抗、頂住、抵住",
+    "zh": "vt. 抵擋、反抗、禁得起、頂住",
     "unit": 14,
     "example": "The aircraft is designed to withstand turbulent conditions.",
     "exampleZh": "這架飛機是為經受猛烈的氣流而設計的。"
@@ -84,7 +84,7 @@
     "en": "witness",
     "kk": "[ˋwɪtnəs]",
     "uk": "/ˈwɪtnəs/",
-    "zh": "n. 目擊者、見證人、證人、連署人；vt. 目擊、目睹、見證、經歷",
+    "zh": "n. 目擊者、證人、見證人、連署人；vt. 目擊、目睹、見證、經歷",
     "unit": 14,
     "example": "He took the stand as the first witness.",
     "exampleZh": "他第一個出庭作證。"
@@ -104,7 +104,7 @@
     "en": "wonder",
     "kk": "[ˋwʌndɚ]",
     "uk": "/ˈwʌndə(r)/",
-    "zh": "vt. 納悶、想知道、好奇、琢磨；n. 驚奇、驚異、驚訝、驚歎；adj. 極好的、靈驗的",
+    "zh": "vt. 想知道、好奇、琢磨、不知是否；n. 奇蹟、驚訝、驚歎、奇觀；adj. 極好的、靈驗的",
     "unit": 14,
     "example": "I wonder if you can help me.",
     "exampleZh": "不知您是否能幫我的忙？"
@@ -124,7 +124,7 @@
     "en": "work",
     "kk": "[wɝk]",
     "uk": "/wɜːk/",
-    "zh": "n. 成果、產品、工作、職業；v. 工作、勞動、幹活兒、從事體力（或腦力）勞動；adj. 工作的、與工作有關的、適合工作時穿戴的、用於工作的",
+    "zh": "n. 工作、職業、勞動；v. 工作、幹活兒、從事體力（或腦力）勞動、從事……工作；adj. 工作的、與工作有關的、適合工作時穿戴的、用於工作的",
     "unit": 14,
     "example": "He's still unfit for work.",
     "exampleZh": "他仍然不適合工作。"
@@ -144,7 +144,7 @@
     "en": "workshop",
     "kk": "[ˋwɝk͵ʃɑp]",
     "uk": "/ˈwɜːkʃɒp/",
-    "zh": "n. 工作坊、車間、工場、作坊；v. 研討性演出",
+    "zh": "n. 作坊、研討會、車間、工場；v. 研討性演出",
     "unit": 14,
     "example": "This workshop helps young unemployed people.",
     "exampleZh": "這個講習班幫助失業的年輕人。"
@@ -154,7 +154,7 @@
     "en": "world",
     "kk": "[wɝld]",
     "uk": "/wɜːld/",
-    "zh": "n. 世界、地球、天下、星球；adj. 世界上最重要的、世界聞名的、世界（性）的、環球的",
+    "zh": "n. 世界、領域、地球、天下；adj. 世界上最重要的、世界聞名的、世界（性）的、環球的",
     "unit": 14,
     "example": "She has three world titles.",
     "exampleZh": "她擁有三個世界冠軍。"
@@ -174,7 +174,7 @@
     "en": "worry",
     "kk": "[ˋwɝi]",
     "uk": "/ˈwʌri/",
-    "zh": "vt. 擔心、擔憂、發愁、使擔憂；n. 令人擔憂的事、令人發愁的問題、擔心、憂慮",
+    "zh": "vt. 擔心、發愁、使擔憂、使發愁；n. 憂慮、令人擔憂的事、令人發愁的問題、擔心",
     "unit": 14,
     "example": "I worry about her constantly.",
     "exampleZh": "我時常擔心她。"
@@ -194,7 +194,7 @@
     "en": "wrist",
     "kk": "[rɪst]",
     "uk": "/rɪst/",
-    "zh": "n. 腕、腕關節、手腕、膝關節",
+    "zh": "n. 手腕、腕關節、膝關節、腕",
     "unit": 14,
     "example": "Kay grasped him by the wrist.",
     "exampleZh": "凱緊緊抓住他的手腕。"
@@ -204,7 +204,7 @@
     "en": "X-ray",
     "kk": "[ɛks re]",
     "uk": "/ˈeks reɪ/",
-    "zh": "n. X光、X光照片；vt. 用X光線檢查、用X光檢查、使用X光、給…拍X光片；adj. X光的、與X射線有關的",
+    "zh": "n. X光照片、X光檢查；vt. 用X光檢查、使用X光、給…拍X光片；adj. X光的、與X射線有關的",
     "unit": 14,
     "example": "I had to go for an X-ray.",
     "exampleZh": "我得去做X光檢查。"
@@ -214,7 +214,7 @@
     "en": "yacht",
     "kk": "[jɑt]",
     "uk": "/jɒt/",
-    "zh": "n. 快艇、遊艇、帆船；v. 駕帆船比賽、駕駛帆船、乘遊艇",
+    "zh": "n. 遊艇、帆船、快艇；v. 駕帆船比賽、駕駛帆船、乘遊艇",
     "unit": 14,
     "example": "She sails her own yacht.",
     "exampleZh": "她駕駛自己的遊艇。"
@@ -234,7 +234,7 @@
     "en": "yawn",
     "kk": "[jɔn]",
     "uk": "/jɔːn/",
-    "zh": "vi. 打呵欠、打哈欠、豁開、裂開；n. 呵欠、哈欠、乏味的事物",
+    "zh": "vi. 打哈欠、豁開、裂開；n. 哈欠、乏味的事物",
     "unit": 14,
     "example": "He gave an ostentatious yawn.",
     "exampleZh": "他張揚地打了個哈欠。"
@@ -254,7 +254,7 @@
     "en": "yearly",
     "kk": "[ˋjɪrli]",
     "uk": "/ˈjɪəli/",
-    "zh": "adj. 每年的、一年一次的、年度的、一年的；adv. 每年、一年一次地、每年地；n. 年刊、年鑑",
+    "zh": "adj. 一年一次的、每年的、年度的、一年的；adv. 一年一次地、每年地；n. 年刊、年鑑",
     "unit": 14,
     "example": "Pay is reviewed on a yearly basis.",
     "exampleZh": "工資每年審查一次。"
@@ -264,7 +264,7 @@
     "en": "yearn",
     "kk": "[jɝn]",
     "uk": "/jɜːn/",
-    "zh": "vt. 思念、渴望、懷念",
+    "zh": "vt. 思念、渴望、嚮往、懷念",
     "unit": 14,
     "example": "As humans, we yearn for social connection.",
     "exampleZh": "作為人類，我們渴望有社會聯絡。"
@@ -284,7 +284,7 @@
     "en": "yield",
     "kk": "[jild]",
     "uk": "/jiːld/",
-    "zh": "v. 出產、產生、屈服、讓步；n. 產量、收穫量、收益、利潤",
+    "zh": "v. 產生、出產、屈服；n. 利潤、產量、收益、紅利（或股息）率",
     "unit": 14,
     "example": "Higher-rate deposit accounts yield good returns.",
     "exampleZh": "高利率的存款會產生豐厚的收益。"
@@ -294,7 +294,7 @@
     "en": "youngster",
     "kk": "[ˋjʌŋstɚ]",
     "uk": "/ˈjʌŋstə(r)/",
-    "zh": "n. 小孩、年輕人、少年",
+    "zh": "n. 年輕人、少年",
     "unit": 14,
     "example": "Tom is a typical youngster.",
     "exampleZh": "湯姆是個典型的年輕人。"
@@ -304,7 +304,7 @@
     "en": "youth",
     "kk": "[juθ]",
     "uk": "/juːθ/",
-    "zh": "n. 青少年時期、青年、小伙子、早期",
+    "zh": "n. 青少年、青少年時代、青少年時期、早期",
     "unit": 14,
     "example": "The poem contrasts youth and age.",
     "exampleZh": "這首詩對比了青春與老年。"
@@ -314,7 +314,7 @@
     "en": "youthful",
     "kk": "[ˋjuθfəl]",
     "uk": "/ˈjuːθfl/",
-    "zh": "adj. 年輕的、青年的、年輕人的、青春的",
+    "zh": "adj. 年輕的、富青春活力的、年輕人的、青春的",
     "unit": 14,
     "example": "She's a very youthful 65.",
     "exampleZh": "她65歲了，但顯得非常年輕。"
@@ -324,7 +324,7 @@
     "en": "zip",
     "kk": "[zɪp]",
     "uk": "/zɪp/",
-    "zh": "n. 拉鍊、拉鎖、速度、活力；vt. 給以速度、使增加興趣、用拉鍊扣上、拉開拉鍊；adj. 用拉鍊扣住的",
+    "zh": "n. 拉鍊、拉鎖、速度、活力；vt. 用拉鍊扣上、拉開拉鍊、迅速移動、壓縮；adj. 用拉鍊扣住的",
     "unit": 14,
     "example": "He said zip all evening.",
     "exampleZh": "整個晚上他一聲不吭。"
@@ -334,7 +334,7 @@
     "en": "zone",
     "kk": "[zon]",
     "uk": "/zəʊn/",
-    "zh": "n. 地帶、地區、範圍、區域；vt. 將……劃為某種用途的區域、將……分成區、用帶子圍繞、環繞",
+    "zh": "n. 地區、區域、地帶、範圍；vt. 將……劃為某種用途的區域、將……分成區、用帶子圍繞、環繞",
     "unit": 14,
     "example": "The area has been declared a disaster zone.",
     "exampleZh": "該地區已被宣佈為災難帶。"
@@ -344,7 +344,7 @@
     "en": "zoom",
     "kk": "[zum]",
     "uk": "/zuːm/",
-    "zh": "vi. 發出嗡嗡聲、使急遽上升、快速移動、迅速前往；n. 疾馳的聲音、變焦鏡頭、進行變焦攝影；int. 用於表示突然的快速移動嗖、嗖地、霍地",
+    "zh": "vi. 快速移動、迅速前往、陡升；n. 變焦攝影、疾馳的聲音、變焦鏡頭、進行變焦攝影；int. 用於表示突然的快速移動嗖、嗖地、霍地",
     "unit": 14,
     "example": "The camera zoomed in.",
     "exampleZh": "攝影機將演員的臉拉近了。"
@@ -384,7 +384,7 @@
     "en": "appointment",
     "kk": "[əˋpɔɪntmənt]",
     "uk": "/əˈpɔɪntmənt/",
-    "zh": "n. 約定、任命、約會、委派",
+    "zh": "n. 約會、約定、任命、委派",
     "unit": 11,
     "example": "When is your next appointment?",
     "exampleZh": "你下一次預約時間是什麼時候？"
@@ -404,7 +404,7 @@
     "en": "asset",
     "kk": "[ˋæs͵ɛt]",
     "uk": "/ˈæset/",
-    "zh": "n. 資產、優勢、有利條件、有價值的人或物",
+    "zh": "n. 資產、有價值的東西、有利條件、有價值的人或物",
     "unit": 11,
     "example": "The value of any financial asset can change swiftly.",
     "exampleZh": "任何金融資產的價值都會迅速發生變化。"
@@ -424,7 +424,7 @@
     "en": "authorize",
     "kk": "[ˋɔθɚ͵aɪz]",
     "uk": "/ˈɔːθəraɪz/",
-    "zh": "vt. 授權、批准、許可",
+    "zh": "vt. 授權給、批准、許可、授權",
     "unit": 11,
     "example": "Only the president could authorize the use of the atomic bomb.",
     "exampleZh": "只有總統能授權原子彈的使用。"
@@ -444,7 +444,7 @@
     "en": "bulletin",
     "kk": "[ˋbʊlɪtən]",
     "uk": "/ˈbʊlətɪn/",
-    "zh": "n. 公告、快報、新聞簡報、佈告；v. 透過公告公佈或告知",
+    "zh": "n. 公報、公告、新聞簡報、佈告；v. 透過公告公佈或告知",
     "unit": 11,
     "example": "Tom put the list on the bulletin board.",
     "exampleZh": "湯姆把名單貼在佈告欄上。"
@@ -464,7 +464,7 @@
     "en": "commence",
     "kk": "[kəˋmɛns]",
     "uk": "/kəˈmens/",
-    "zh": "vt. 開始、著手",
+    "zh": "vt. 開始、著手、得學位",
     "unit": 11,
     "example": "We commence building next week.",
     "exampleZh": "我們下週破土動工。"
@@ -484,7 +484,7 @@
     "en": "corporation",
     "kk": "[͵kɔrpɚˋeʃən]",
     "uk": "/ˌkɔːpəˈreɪʃ(ə)n/",
-    "zh": "n. 公司、企業法人、社團、法人",
+    "zh": "n. 股份(有限)公司、社團、公司、法人",
     "unit": 11,
     "example": "He was a stockholder in a hotel corporation.",
     "exampleZh": "他是一家酒店公司的股東。"
@@ -494,7 +494,7 @@
     "en": "correspondence",
     "kk": "[͵kɔrəˋspɑndəns]",
     "uk": "/ˌkɒrəˈspɒndəns/",
-    "zh": "n. 通信、商務信件、信件、信函",
+    "zh": "n. 一致、相對應、通信、信件",
     "unit": 11,
     "example": "We have been in correspondence for months.",
     "exampleZh": "我們通訊幾個月了。"
@@ -504,7 +504,7 @@
     "en": "designate",
     "kk": "[ˋdɛzəɡ͵net]",
     "uk": "/ˈdezɪɡneɪt/",
-    "zh": "vt. 指定、指派、把……定名為、把……描述為；adj. 已當選而尚未上任的",
+    "zh": "vt. 把……定名為、把……描述為、任命、指定；adj. 已當選而尚未上任的",
     "unit": 11,
     "example": "Japan's prime minister-designate is completing his cabinet today.",
     "exampleZh": "日本即將上任的首相今天將完成他的內閣組建。"
@@ -514,7 +514,7 @@
     "en": "dispatch",
     "kk": "[dɪˋspætʃ]",
     "uk": "/dɪˈspætʃ/",
-    "zh": "vt. 派遣、發送、傳送、迅速處理；n. 派遣、傳送、公文、急件",
+    "zh": "vt. 派遣、傳送、迅速處理、迅速辦妥；n. 發送、派遣、傳送、公文",
     "unit": 11,
     "example": "The dispatch of the task force is purely a contingency measure.",
     "exampleZh": "派遣特遣隊純粹是應急措施。"
@@ -524,7 +524,7 @@
     "en": "distribute",
     "kk": "[dɪˋstrɪbjut]",
     "uk": "/dɪˈstrɪbjuːt/",
-    "zh": "vt. 分發、分銷、分配、配送",
+    "zh": "vt. 分發、分配、配送、分銷",
     "unit": 11,
     "example": "Aid workers helped distribute corn, milk and other staples.",
     "exampleZh": "救助人員協助分發穀物、牛奶及其他必需的食物。"
@@ -554,7 +554,7 @@
     "en": "flexible",
     "kk": "[ˋflɛksəbəl]",
     "uk": "/ˈfleksəb(ə)l/",
-    "zh": "adj. 彈性的、靈活的、柔韌的、易彎曲的",
+    "zh": "adj. 可彎曲的、可變通的、靈活的、柔韌的",
     "unit": 11,
     "example": "WYSIWYG editing makes your word processing smoother and more flexible.",
     "exampleZh": "“所見即所得”編輯使你的文字資訊處理更加順暢和靈活。"
@@ -564,7 +564,7 @@
     "en": "furnish",
     "kk": "[ˋfɝnɪʃ]",
     "uk": "/ˈfɜːnɪʃ/",
-    "zh": "vt. 提供、配備家具、為（房間或房屋）配備傢俱、供應",
+    "zh": "vt. 給(房間)配置、供應、提供、為（房間或房屋）配備傢俱",
     "unit": 11,
     "example": "You must furnish the house.",
     "exampleZh": "你必須佈置房子。"
@@ -574,7 +574,7 @@
     "en": "headquarters",
     "kk": "[ˋhɛd͵kwɔrtɚz]",
     "uk": "/ˌhedˈkwɔːtəz/",
-    "zh": "n. 總部、總公司、司令部、指揮部",
+    "zh": "n. 總部、總公司、總局、司令部",
     "unit": 11,
     "example": "The warning was radioed to headquarters.",
     "exampleZh": "透過無線電向總部發出了警報。"
@@ -584,7 +584,7 @@
     "en": "installation",
     "kk": "[͵ɪnstəˋleʃən]",
     "uk": "/ˌɪnstəˈleɪʃ(ə)n/",
-    "zh": "n. 安裝、設施、設定、裝置",
+    "zh": "n. 設施、安裝、設定、裝置",
     "unit": 11,
     "example": "Installation of the new system will take several days.",
     "exampleZh": "新系統的安裝需要幾天時間。"
@@ -614,7 +614,7 @@
     "en": "notify",
     "kk": "[ˋnotə͵faɪ]",
     "uk": "/ˈnəʊtɪfaɪ/",
-    "zh": "vt. 通知、告知、通報、申報",
+    "zh": "vt. 通知、公佈、通報、告知",
     "unit": 11,
     "example": "Please notify us if the above is not correct.",
     "exampleZh": "如果上面所說的不正確，請通知我們。"
@@ -624,7 +624,7 @@
     "en": "occupy",
     "kk": "[ˋɑkjə͵paɪ]",
     "uk": "/ˈɒkjupaɪ/",
-    "zh": "vt. 佔用、佔據、使用、居住",
+    "zh": "vt. 佔領、佔據、使用、居住",
     "unit": 11,
     "example": "How much memory does the program occupy?",
     "exampleZh": "這個程式佔用多少記憶體？"
@@ -644,7 +644,7 @@
     "en": "patron",
     "kk": "[ˋpetrən]",
     "uk": "/ˈpeɪtrən/",
-    "zh": "n. 老主顧、贊助人、資助者、代言人",
+    "zh": "n. 贊助者、主顧、贊助人、資助者",
     "unit": 11,
     "example": "Frederick the Great was the patron of many artists.",
     "exampleZh": "腓特烈大帝是許多藝術家的贊助人。"
@@ -654,7 +654,7 @@
     "en": "precaution",
     "kk": "[priˋkɔʃən]",
     "uk": "/prɪˈkɔːʃ(ə)n/",
-    "zh": "n. 預防措施、防備、避孕措施",
+    "zh": "n. 謹慎、預防措施、防備、避孕措施",
     "unit": 11,
     "example": "Take every precaution to prevent the flag from becoming soiled.",
     "exampleZh": "要採取一切預防措施，以防旗幟被弄髒。"
@@ -664,7 +664,7 @@
     "en": "presentation",
     "kk": "[͵prɛzənˋteʃən]",
     "uk": "/ˌprez(ə)nˈteɪʃ(ə)n/",
-    "zh": "n. 簡報、發表會、儀式、典禮",
+    "zh": "n. 簡報、演講、呈現、頒發",
     "unit": 11,
     "example": "A computer software glitch fouled up their presentation.",
     "exampleZh": "一個電腦軟體故障弄砸了他們的展示會。"
@@ -704,7 +704,7 @@
     "en": "terminate",
     "kk": "[ˋtɝmə͵net]",
     "uk": "/ˈtɜːmɪneɪt/",
-    "zh": "v. 終止、結束、到達終點站、終止妊娠；adj. 結束的",
+    "zh": "v. 使結束、使終止、解雇、結束；adj. 結束的",
     "unit": 11,
     "example": "This train will terminate at Lamy.",
     "exampleZh": "這列火車的終點站是拉米。"
@@ -714,7 +714,7 @@
     "en": "transit",
     "kk": "[ˋtrænzɪt]",
     "uk": "/ˈtrænzɪt/",
-    "zh": "n. 運輸、轉運、運送、交通運輸系統；v. 穿過、（行星等天體）經過",
+    "zh": "n. 運輸、運送、交通運輸系統、透過；v. 穿過、（行星等天體）經過",
     "unit": 11,
     "example": "The contents of the package may have settled in transit.",
     "exampleZh": "包裹裡的東西可能在運輸途中搖密實了。"
@@ -724,7 +724,7 @@
     "en": "utility",
     "kk": "[juˋtɪləti]",
     "uk": "/juːˈtɪləti/",
-    "zh": "n. 公共事業、效用、公共服務、公用事業；adj. 有用的、多功能的、多面手的、實用的",
+    "zh": "n. 效用、實用、公用事業、公共服務；adj. 有用的、多功能的、多面手的、實用的",
     "unit": 11,
     "example": "The non-satiation of utility does not stand any longer.",
     "exampleZh": "效用非飽和性不再成立。"
@@ -1524,7 +1524,7 @@
     "en": "pilot",
     "kk": "[ˋpaɪlət]",
     "uk": "/ˈpaɪlət/",
-    "zh": "n. 飛行員，舵手",
+    "zh": "n. 飛行員、領航員、試播節目、常燃小火；adj. 試點的、控制引導訊號；vt. 駕駛、領航、試驗、試行",
     "unit": 14,
     "example": "You are the best little kite pilot in the park today.",
     "exampleZh": "妳今天是公園裡最棒的風箏小飛行員。"

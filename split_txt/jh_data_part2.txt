@@ -44,7 +44,7 @@
     "en": "many",
     "kk": "[ˋmɛni]",
     "uk": "/ˈmeni/",
-    "zh": "det. 許多、大量；pron. 許多、許多人；adj. 許多的；n. 大多數人；adv. 多",
+    "zh": "det. 許多、大量；pron. 許多、許多人；adj. 很多的、許多的；n. 大多數人；adv. 多",
     "unit": 18,
     "example": "There are many books on the desk.",
     "exampleZh": "書桌上有許多書。"
@@ -124,7 +124,7 @@
     "en": "marvelous",
     "kk": "[ˋmɑrvələs]",
     "uk": "/ˈmɑːvələs/",
-    "zh": "adj. 非凡的、了不起的、極好的、令人驚異的",
+    "zh": "adj. 了不起的、極好的、非凡的、令人驚異的",
     "unit": 18,
     "example": "We had a marvelous time today.",
     "exampleZh": "我們今天度過了極好的時光。"
@@ -144,7 +144,7 @@
     "en": "mass",
     "kk": "[mæs]",
     "uk": "/mæs/",
-    "zh": "n. 塊、團、大量、許多；adj. 民眾的、大量的；vt. 聚集、集結",
+    "zh": "n. 團、塊、大量、許多；adj. 民眾的、大量的；vt. 聚集、集結",
     "unit": 18,
     "example": "A huge mass of snow fell down.",
     "exampleZh": "大塊積雪掉了下來。"
@@ -164,7 +164,7 @@
     "en": "mat",
     "kk": "[mæt]",
     "uk": "/mæt/",
-    "zh": "n. 墊子、地墊、團、簇",
+    "zh": "n. 蓆子、墊子、地墊、團",
     "unit": 18,
     "example": "Please wipe your shoes on the mat.",
     "exampleZh": "請在門墊上擦擦鞋子。"
@@ -194,7 +194,7 @@
     "en": "material",
     "kk": "[məˋtɪriəl]",
     "uk": "/məˈtɪəriəl/",
-    "zh": "n. 材料、衣料、布料、原料；adj. 物質的、非精神上的、重要的、需予以考慮的",
+    "zh": "n. 材料、原料、衣料、布料；adj. 物質的、非精神上的、重要的、需予以考慮的",
     "unit": 18,
     "example": "This material is 45% nylon.",
     "exampleZh": "這種材料含45%的尼龍。"
@@ -264,7 +264,7 @@
     "en": "meaning",
     "kk": "[ˋminɪŋ]",
     "uk": "/ˈmiːnɪŋ/",
-    "zh": "n. 意思、意義、含義、真正重要性；adj. 意味深長的；v. 表示……的意思、作……的解釋、意味著、打算",
+    "zh": "n. 意義、意思、含義、真正重要性；adj. 意味深長的；v. 表示……的意思、作……的解釋、意味著、打算",
     "unit": 18,
     "example": "What's the meaning of this word?",
     "exampleZh": "這個單詞的意思是什麼？"
@@ -304,7 +304,7 @@
     "en": "media",
     "kk": "[ˋmidiə]",
     "uk": "/ˈmiːdiə/",
-    "zh": "n. 大眾傳媒、新聞媒體、傳媒、媒體工作者",
+    "zh": "n. 媒介物、新聞媒介、新聞媒體、傳媒",
     "unit": 18,
     "example": "Her car was mobbed by the media.",
     "exampleZh": "她的汽車被媒體團團圍住。"
@@ -324,7 +324,7 @@
     "en": "medium",
     "kk": "[ˋmidiəm]",
     "uk": "/ˈmiːdiəm/",
-    "zh": "n. 媒介、媒體、方法、手段；adj. 中等的、中間的、適中的、五分熟的",
+    "zh": "n. 中庸、媒體、工具；adj. 中等的、中間的、適中的、五分熟的",
     "unit": 18,
     "example": "There are three sizes—small, medium and large.",
     "exampleZh": "有三種尺寸—小號、中號和大號。"
@@ -344,7 +344,7 @@
     "en": "meeting",
     "kk": "[ˋmitɪŋ]",
     "uk": "/ˈmiːtɪŋ/",
-    "zh": "n. 會議、集會、偶遇、會面；v. 會面、會合",
+    "zh": "n. 集會、會議、偶遇、會面；v. 會面、會合",
     "unit": 18,
     "example": "The meeting went off well.",
     "exampleZh": "會議進行得很好。"
@@ -384,7 +384,7 @@
     "en": "message",
     "kk": "[ˋmɛsədʒ]",
     "uk": "/ˈmesɪdʒ/",
-    "zh": "n. 信息、口信、訊息、要旨；vt. 傳送、通報",
+    "zh": "n. 消息、音信、口信、訊息；vt. 傳送、通報",
     "unit": 18,
     "example": "Please leave a short message for me.",
     "exampleZh": "請幫我留一則簡短的訊息。"
@@ -454,7 +454,7 @@
     "en": "mile",
     "kk": "[maɪl]",
     "uk": "/maɪl/",
-    "zh": "n. 英里、一英里賽跑、很長的距離、很多",
+    "zh": "n. 英哩、英里、一英里賽跑、很長的距離",
     "unit": 18,
     "example": "We walked one mile down the road.",
     "exampleZh": "我們沿著這條路走了一英里。"
@@ -524,7 +524,7 @@
     "en": "minute",
     "kk": "[ˋmɪnət]",
     "uk": "/ˈmɪnɪt/",
-    "zh": "n. 分、分鐘、片刻、一會兒；adj. 極小的、微小的、詳細的、細緻入微的；vt. 將（某事）寫進會議記錄、傳送備忘錄",
+    "zh": "n. 分鐘、分、片刻、一會兒；adj. 極小的、微小的、詳細的、細緻入微的；vt. 將（某事）寫進會議記錄、傳送備忘錄",
     "unit": 18,
     "example": "Please wait for just one minute.",
     "exampleZh": "請等候短短一分鐘。"
@@ -634,7 +634,7 @@
     "en": "monster",
     "kk": "[ˋmɑnstɚ]",
     "uk": "/ˈmɒnstə(r)/",
-    "zh": "n. 妖怪、怪獸、怪物、殘忍的人；adj. 很受歡迎的、龐大的、巨大的；v. 嚴厲批評、斥責",
+    "zh": "n. 怪物、怪獸、殘忍的人、惡魔；adj. 很受歡迎的、龐大的、巨大的；v. 嚴厲批評、斥責",
     "unit": 18,
     "example": "The scary monster hid in the dark.",
     "exampleZh": "可怕的怪獸躲在黑暗中。"
@@ -674,7 +674,7 @@
     "en": "morning",
     "kk": "[ˋmɔrnɪŋ]",
     "uk": "/ˈmɔːnɪŋ/",
-    "zh": "n. 早上、早晨、上午、黎明",
+    "zh": "n. 早晨、上午、早上、黎明",
     "unit": 18,
     "example": "I drink warm milk every morning.",
     "exampleZh": "我每天早晨喝溫牛奶。"
@@ -734,7 +734,7 @@
     "en": "motorcycle",
     "kk": "[ˋmotɚ͵saɪkəl]",
     "uk": "/ˈməʊtəsaɪk(ə)l/",
-    "zh": "n. 摩托車；v. 騎摩托車",
+    "zh": "n. 機車、摩托車；v. 騎摩托車",
     "unit": 18,
     "example": "My uncle rides a black motorcycle.",
     "exampleZh": "我叔叔騎一輛黑色機車。"
@@ -824,7 +824,7 @@
     "en": "mud",
     "kk": "[mʌd]",
     "uk": "/mʌd/",
-    "zh": "n. 泥濘、泥、淤泥、泥漿",
+    "zh": "n. 泥巴、泥、淤泥、泥漿",
     "unit": 18,
     "example": "His old boots had some wet mud.",
     "exampleZh": "他的舊靴子沾了一些濕泥巴。"
@@ -834,7 +834,7 @@
     "en": "mug",
     "kk": "[mʌɡ]",
     "uk": "/mʌɡ/",
-    "zh": "n. 馬克杯、大杯、一大杯的容量、臉；vt. 行兇搶劫、打劫、扮鬼臉、扮怪相",
+    "zh": "n. 大杯子、大杯、馬克杯、一大杯的容量；vt. 行兇搶劫、打劫、扮鬼臉、扮怪相",
     "unit": 18,
     "example": "He filled the mug with hot coffee.",
     "exampleZh": "他把馬克杯裝滿了熱咖啡。"
@@ -954,7 +954,7 @@
     "en": "nature",
     "kk": "[ˋnetʃɚ]",
     "uk": "/ˈneɪtʃə(r)/",
-    "zh": "n. 自然、大自然、自然界、性格",
+    "zh": "n. 自然、本性、大自然、自然界",
     "unit": 18,
     "example": "She loves to enjoy the beauty of nature.",
     "exampleZh": "她熱愛欣賞大自然的美麗。"
@@ -1004,7 +1004,7 @@
     "en": "neck",
     "kk": "[nɛk]",
     "uk": "/nek/",
-    "zh": "n. 脖子、頸項、衣領、領口；v. 摟著脖子親吻、相擁互吻、一口喝下、變狹",
+    "zh": "n. 脖子、頸部、頸項、衣領；v. 摟著脖子親吻、相擁互吻、一口喝下、變狹",
     "unit": 18,
     "example": "Her arms crept around his neck.",
     "exampleZh": "她的手臂爬上他的脖子。"
@@ -1054,7 +1054,7 @@
     "en": "neighbor",
     "kk": "[ˋnebɚ]",
     "uk": "/ˈneɪbə(r)/",
-    "zh": "n. 鄰居、鄰人、鄰舍、鄰國等鄰近的人或物；adj. 鄰近的、相鄰的；v. 鄰接、住在附近、毗鄰而居、與……友好相處",
+    "zh": "n. 鄰居、鄰人、鄰舍；adj. 鄰近的、相鄰的；v. 鄰接、住在附近、毗鄰而居、與……友好相處",
     "unit": 18,
     "example": "My neighbor is a doctor.",
     "exampleZh": "我的鄰居是個醫生。"
@@ -1074,7 +1074,7 @@
     "en": "nephew",
     "kk": "[ˋnɛfju]",
     "uk": "/ˈnefjuː/",
-    "zh": "n. 姪子、外甥、侄子",
+    "zh": "n. 侄子、外甥",
     "unit": 18,
     "example": "My nephew likes to play with dogs.",
     "exampleZh": "我的姪子喜歡和狗狗玩耍。"
@@ -1104,7 +1104,7 @@
     "en": "never",
     "kk": "[ˋnɛvɚ]",
     "uk": "/ˈnevə(r)/",
-    "zh": "adv. 從未、決不、永不、不會",
+    "zh": "adv. 從不、絕不、決不、永不",
     "unit": 18,
     "example": "I never drink cold milk at night.",
     "exampleZh": "我晚上從不喝冰牛奶。"
@@ -1114,7 +1114,7 @@
     "en": "new",
     "kk": "[nu]",
     "uk": "/njuː/",
-    "zh": "adj. 新的、新出現的、新興的、新買的；adv. 新的、新近的；n. 新東西、新事物",
+    "zh": "adj. 新的、新鮮的、新出現的、新興的；adv. 新的、新近的；n. 新東西、新事物",
     "unit": 18,
     "example": "I got a new bike for my birthday.",
     "exampleZh": "我生日時得到了一輛新腳踏車。"
@@ -1154,7 +1154,7 @@
     "en": "nice",
     "kk": "[naɪs]",
     "uk": "/naɪs/",
-    "zh": "adj. 友善的、美好的、令人愉快的、好心的",
+    "zh": "adj. 好的、令人愉快的、美好的、好心的",
     "unit": 18,
     "example": "It's been nice meeting you.",
     "exampleZh": "很高興見到你。"
@@ -1164,7 +1164,7 @@
     "en": "niece",
     "kk": "[nis]",
     "uk": "/niːs/",
-    "zh": "n. 姪女、甥女、外甥女、侄女",
+    "zh": "n. 侄女、外甥女",
     "unit": 18,
     "example": "She bought a new doll for her niece.",
     "exampleZh": "她為她的姪女買了一個新洋娃娃。"
@@ -1174,7 +1174,7 @@
     "en": "night",
     "kk": "[naɪt]",
     "uk": "/naɪt/",
-    "zh": "n. 夜晚、夜間、晚上、傍晚；adj. 夜晚的、夜晚使用的、夜間進行的、夜晚活動的；int. 晚安",
+    "zh": "n. 夜晚、晚上、夜間、傍晚；adj. 夜晚的、夜晚使用的、夜間進行的、夜晚活動的；int. 晚安",
     "unit": 18,
     "example": "I couldn't sleep last night.",
     "exampleZh": "我昨晚無法入睡。"
@@ -1194,7 +1194,7 @@
     "en": "nineteen",
     "kk": "[ˋnaɪnˋtin]",
     "uk": "/ˌnaɪnˈtiːn/",
-    "zh": "num. 十九；n. 十九、十九個、十九歲、十九號",
+    "zh": "num. 十九；n. 十九個、十九歲、十九號；adj. 十九",
     "unit": 18,
     "example": "They have nineteen days to make up their minds.",
     "exampleZh": "他們有十九天的時間來做決定。"
@@ -1234,7 +1234,7 @@
     "en": "noise",
     "kk": "[nɔɪz]",
     "uk": "/nɔɪz/",
-    "zh": "n. 噪音、嘈雜聲、聲音、響聲；v. 議論、傳開、喧鬧",
+    "zh": "n. 噪音、雜音、嘈雜聲、聲音；v. 議論、傳開、喧鬧",
     "unit": 18,
     "example": "The loud noise woke the baby up.",
     "exampleZh": "巨大的噪音吵醒了小寶寶。"
@@ -1244,7 +1244,7 @@
     "en": "noisy",
     "kk": "[ˋnɔɪzi]",
     "uk": "/ˈnɔɪzi/",
-    "zh": "adj. 吵雜的、嗓門大的、聒噪的、嘈雜的",
+    "zh": "adj. 喧鬧的、嗓門大的、聒噪的、嘈雜的",
     "unit": 18,
     "example": "The street is very noisy at night.",
     "exampleZh": "這條街晚上非常嘈雜。"
@@ -1264,7 +1264,7 @@
     "en": "noodle",
     "kk": "[ˋnudəl]",
     "uk": "/ˈnuːd(ə)l/",
-    "zh": "n. 麵條、笨蛋、蠢人、人頭；v. 撥弄樂器、思考、醞釀、搜尋",
+    "zh": "n. 麵、麵條、笨蛋、蠢人；v. 撥弄樂器、思考、醞釀、搜尋",
     "unit": 18,
     "example": "I like to eat hot beef noodle soup.",
     "exampleZh": "我喜歡吃熱呼呼的牛肉麵湯。"
@@ -1284,7 +1284,7 @@
     "en": "nor",
     "kk": "[nɔr]",
     "uk": "/nɔː(r)/",
-    "zh": "conj. 也不；adv. 也不；n. “或非”",
+    "zh": "conj. 亦不、也不；adv. 也不；n. “或非”",
     "unit": 18,
     "example": "He eats neither fish nor meat.",
     "exampleZh": "他既不吃魚也不吃肉。"
@@ -1314,7 +1314,7 @@
     "en": "not",
     "kk": "[nɑt]",
     "uk": "/nɒt/",
-    "zh": "adv. 不是、表示否定、不；n. “非”",
+    "zh": "adv. 不、沒有、表示否定；n. “非”",
     "unit": 18,
     "example": "It's not over yet—not by a long chalk.",
     "exampleZh": "事情還沒結束——還遠遠沒有結束。"
@@ -1344,7 +1344,7 @@
     "en": "nothing",
     "kk": "[ˋnʌθɪŋ]",
     "uk": "/ˈnʌθɪŋ/",
-    "zh": "pron. 沒有什麼、沒有一件東西、無關緊要的事、無足輕重的人；adv. 並不、毫不、用於強烈地表示相反看法根本不是；n. 無關緊要的事、無足輕重的人、空地、虛空；adj. 沒前途的、沒價值",
+    "zh": "pron. 沒有什麼、無事、沒有一件東西、無關緊要的事；adv. 並不、毫不、用於強烈地表示相反看法根本不是；n. 無關緊要的事、無足輕重的人、空地、虛空；adj. 沒前途的、沒價值",
     "unit": 18,
     "example": "There is nothing in the black box.",
     "exampleZh": "黑色盒子裡什麼都沒有。"
@@ -1384,7 +1384,7 @@
     "en": "now",
     "kk": "[naʊ]",
     "uk": "/naʊ/",
-    "zh": "adv. 現在、此刻、馬上、立刻；adj. 現在的、流行的、時髦的；n. 現在、此刻；conj. 由於、既然",
+    "zh": "adv. 現在、目前、此刻、馬上；adj. 現在的、流行的、時髦的；n. 現在、此刻；conj. 由於、既然",
     "unit": 18,
     "example": "We must leave for school right now.",
     "exampleZh": "我們現在必須出發去學校了。"
@@ -1394,7 +1394,7 @@
     "en": "number",
     "kk": "[ˋnʌmbɚ]",
     "uk": "/ˈnʌmbə(r)/",
-    "zh": "n. 數字、編號、序數、電話號碼；vt. 標號、編號、總計、包括",
+    "zh": "n. 數字、號碼、編號、序數；vt. 標號、編號、總計、包括",
     "unit": 18,
     "example": "My phone number is 266998.",
     "exampleZh": "我的電話號碼是266998。"
@@ -1414,7 +1414,7 @@
     "en": "nut",
     "kk": "[nʌt]",
     "uk": "/nʌt/",
-    "zh": "n. 堅果、螺母、螺帽、瘋子；v. 用頭撞、採堅果、採乾果",
+    "zh": "n. 核果、堅果、螺母、螺帽；v. 用頭撞、採堅果、採乾果",
     "unit": 18,
     "example": "Plant fruit and nut trees.",
     "exampleZh": "種植水果和堅果樹木。"
@@ -1424,7 +1424,7 @@
     "en": "obey",
     "kk": "[oˋbe]",
     "uk": "/əˈbeɪ/",
-    "zh": "vt. 聽從、遵守、服從、順……的意",
+    "zh": "vt. 服從、遵守、聽從、順……的意",
     "unit": 18,
     "example": "It was his duty to obey.",
     "exampleZh": "服從是他的職責。"
@@ -1454,7 +1454,7 @@
     "en": "o'clock",
     "kk": "[əkˋlɑk]",
     "uk": "/əˈklɒk/",
-    "zh": "adv. ……點鐘、整點、……點鐘方向",
+    "zh": "adv. ……點鐘、整點、……點鐘方向；n. 點鐘",
     "unit": 18,
     "example": "The clock said three o'clock.",
     "exampleZh": "時鐘指向三點鐘。"
@@ -1474,7 +1474,7 @@
     "en": "of",
     "kk": "[ʌv]",
     "uk": "/ɒv; əv/",
-    "zh": "prep. ……的、屬於、……的一部分、表示計量",
+    "zh": "prep. 的、屬於、……的、……的一部分",
     "unit": 18,
     "example": "This is a photo of my family.",
     "exampleZh": "這是一張我全家人的照片。"
@@ -1504,7 +1504,7 @@
     "en": "office",
     "kk": "[ˋɔfɪs]",
     "uk": "/ˈɒfɪs/",
-    "zh": "n. 辦公室、辦公樓、辦事處、室",
+    "zh": "n. 辦公室、職務、辦公樓、辦事處",
     "unit": 18,
     "example": "My father works in a busy office.",
     "exampleZh": "我父親在一間繁忙的辦公室上班。"
@@ -1514,7 +1514,7 @@
     "en": "officer",
     "kk": "[ˋɔfəsɚ]",
     "uk": "/ˈɒfɪsə(r)/",
-    "zh": "n. 警官、官員、軍官、高階職員；v. 配備軍官、指揮",
+    "zh": "n. 軍官、官員、高階職員、警察；v. 配備軍官、指揮",
     "unit": 18,
     "example": "The police officer saw the red car.",
     "exampleZh": "警察看見了那輛紅色的車。"
@@ -1534,7 +1534,7 @@
     "en": "oil",
     "kk": "[ɔɪl]",
     "uk": "/ɔɪl/",
-    "zh": "n. 石油、燃油、潤滑油、原油；vt. 加油於……、給……加潤滑油、給（皮膚）塗油、抹油",
+    "zh": "n. 油、石油、燃油、潤滑油；vt. 加油於……、給……加潤滑油、給（皮膚）塗油、抹油",
     "unit": 18,
     "example": "Put a little oil into the pan.",
     "exampleZh": "往平底鍋裡倒入少許油。"
@@ -1564,7 +1564,7 @@
     "en": "omit",
     "kk": "[oˋmɪt]",
     "uk": "/əˈmɪt/",
-    "zh": "vt. 省略、省去、遺漏、不做",
+    "zh": "vt. 略過、省去、遺漏、不做",
     "unit": 18,
     "example": "You may omit this step if needed.",
     "exampleZh": "如果有需要，你可以省略這個步驟。"
@@ -1584,7 +1584,7 @@
     "en": "once",
     "kk": "[wʌns]",
     "uk": "/wʌns/",
-    "zh": "adv. 一次、一回、曾經、一度；conj. 一.....就、一旦；n. 一次",
+    "zh": "adv. 一次、曾經、一回、一度；conj. 一.....就、一旦；n. 一次",
     "unit": 18,
     "example": "I see my uncle once a week.",
     "exampleZh": "我每週見我叔叔一次。"
@@ -1634,7 +1634,7 @@
     "en": "operate",
     "kk": "[ˋɑpɚ͵et]",
     "uk": "/ˈɒpəreɪt/",
-    "zh": "v. 操作、操縱、運轉、執行",
+    "zh": "v. 操作、運行、操縱、運轉",
     "unit": 18,
     "example": "He learned how to operate the machine.",
     "exampleZh": "他學會了如何操作那台機器。"
@@ -1644,7 +1644,7 @@
     "en": "opinion",
     "kk": "[əˋpɪnjən]",
     "uk": "/əˈpɪnjən/",
-    "zh": "n. 意見、看法、觀點、信仰",
+    "zh": "n. 意見、觀點、看法、信仰",
     "unit": 18,
     "example": "We'll need an expert opinion.",
     "exampleZh": "我們將需要專家的意見。"
@@ -1704,7 +1704,7 @@
     "en": "organization",
     "kk": "[͵ɔrɡənəˋzeʃən]",
     "uk": "/ˌɔːɡənaɪˈzeɪʃn/",
-    "zh": "n. 機構、組織、組織工作、籌備工作",
+    "zh": "n. 組織、機構、組織工作、籌備工作",
     "unit": 18,
     "example": "He set up a local youth organization.",
     "exampleZh": "他創立了一個當地的青年組織。"
@@ -1824,7 +1824,7 @@
     "en": "page",
     "kk": "[pedʒ]",
     "uk": "/peɪdʒ/",
-    "zh": "n. 頁、面、網頁、歷史重要事件；vt. 用擴音器呼叫、用尋呼機呼叫、隨意翻閱、瀏覽",
+    "zh": "n. 頁面、頁、面；vt. 用擴音器呼叫、用尋呼機呼叫、隨意翻閱、瀏覽",
     "unit": 18,
     "example": "I ran my eyes over the page.",
     "exampleZh": "我的目光掃過這一頁。"
@@ -1834,7 +1834,7 @@
     "en": "pain",
     "kk": "[pen]",
     "uk": "/peɪn/",
-    "zh": "n. 痛苦、疼痛、傷痛、苦惱；vt. 使痛苦、使苦惱、使疼痛、感到疼痛",
+    "zh": "n. 疼痛、痛苦、傷痛、苦惱；vt. 使痛苦、使苦惱、使疼痛、感到疼痛",
     "unit": 18,
     "example": "He felt a sharp pain in his back.",
     "exampleZh": "他感到背部有一陣劇烈的疼痛。"
@@ -1844,7 +1844,7 @@
     "en": "painful",
     "kk": "[ˋpenfəl]",
     "uk": "/ˈpeɪnf(ə)l/",
-    "zh": "adj. 痛苦的、疼痛的、引起疼痛的、令人痛苦（難受）的",
+    "zh": "adj. 痛的、疼痛的、引起疼痛的、令人痛苦（難受）的",
     "unit": 18,
     "example": "Walking on my broken foot was painful.",
     "exampleZh": "用受傷的腳走路非常痛苦。"
@@ -1864,7 +1864,7 @@
     "en": "painter",
     "kk": "[ˋpentɚ]",
     "uk": "/ˈpeɪntə(r)/",
-    "zh": "n. 畫家、油漆匠、系船索、纜索",
+    "zh": "n. 油漆匠、畫家、系船索、纜索",
     "unit": 18,
     "example": "His father was a painter.",
     "exampleZh": "他父親是一位畫家。"
@@ -1894,7 +1894,7 @@
     "en": "pale",
     "kk": "[pel]",
     "uk": "/peɪl/",
-    "zh": "adj. 蒼白的、淺的、淡的、暗淡的；vi. 變蒼白、變淡、變淺、使褪色；n. 板條、尖樁、界限、範圍",
+    "zh": "adj. 蒼白的、黯淡的、淺的、淡的；vi. 變蒼白、變淡、變淺、使褪色；n. 板條、尖樁、界限、範圍",
     "unit": 18,
     "example": "Rachel looked pale and weary.",
     "exampleZh": "雷切爾看起來蒼白而疲憊。"
@@ -1904,7 +1904,7 @@
     "en": "pan",
     "kk": "[pæn]",
     "uk": "/pæn/",
-    "zh": "n. 平底鍋、一鍋的量、烤盤、盤狀器皿；vt. 移動拍攝、搖攝、用淘金盤淘洗、淘金",
+    "zh": "n. 平鍋、平底鍋、一鍋的量、烤盤；vt. 移動拍攝、搖攝、用淘金盤淘洗、淘金",
     "unit": 18,
     "example": "Oh hell, I've burned the pan.",
     "exampleZh": "真該死，我把鍋燒煳了。"
@@ -1944,7 +1944,7 @@
     "en": "paper",
     "kk": "[ˋpepɚ]",
     "uk": "/ˈpeɪpə(r)/",
-    "zh": "n. 紙、報紙、資料、檔案；vt. 用牆紙裱糊、用牆紙覆蓋（洞，汙點）、掩蓋（尷尬問題）、發免費入場券使（劇院）滿座；adj. 紙做的、紙質的、書面的、印刷的",
+    "zh": "n. 紙張、論文、紙、報紙；vt. 用牆紙裱糊、用牆紙覆蓋（洞，汙點）、掩蓋（尷尬問題）、發免費入場券使（劇院）滿座；adj. 紙做的、紙質的、書面的、印刷的",
     "unit": 18,
     "example": "Please give me a sheet of paper.",
     "exampleZh": "請給我一張紙。"
@@ -1964,7 +1964,7 @@
     "en": "parent",
     "kk": "[ˋpɛrənt]",
     "uk": "/ˈpeərənt/",
-    "zh": "n. 父親、親代、親本、母公司；v. 做……的父親、為人父母",
+    "zh": "n. 父母、親代、父親、親本；v. 做……的父親、為人父母",
     "unit": 18,
     "example": "Every parent loves their own child.",
     "exampleZh": "每位父母都愛自己的孩子。"
@@ -1994,7 +1994,7 @@
     "en": "part",
     "kk": "[pɑrt]",
     "uk": "/pɑːt/",
-    "zh": "n. 部分、某物的部分、部、篇；vt. 分開、分離、分別、分手；adv. 既有……又有……、不完全地、部分地；adj. 部分的、不完全的",
+    "zh": "n. 部分、角色、某物的部分、部；vt. 分開、分離、分別、分手；adv. 既有……又有……、不完全地、部分地；adj. 部分的、不完全的",
     "unit": 18,
     "example": "This is the best part of today.",
     "exampleZh": "這是今天最棒的部分。"
@@ -2074,7 +2074,7 @@
     "en": "path",
     "kk": "[pæθ]",
     "uk": "/pɑːθ/",
-    "zh": "n. 小徑、小道、通道、路線",
+    "zh": "n. 道路、路徑、小徑、小道",
     "unit": 18,
     "example": "Follow this stone path into the park.",
     "exampleZh": "沿著這條石徑走進公園。"
@@ -2094,7 +2094,7 @@
     "en": "pattern",
     "kk": "[ˋpætɚn]",
     "uk": "/ˈpæt(ə)n/",
-    "zh": "n. 模式、方式、圖案、花樣；v. 用圖案裝飾、給……加上花樣、仿照、模仿",
+    "zh": "n. 模式、圖案、方式、花樣；v. 用圖案裝飾、給……加上花樣、仿照、模仿",
     "unit": 18,
     "example": "The dress has a pretty flower pattern.",
     "exampleZh": "這件洋裝上有著漂亮的花朵圖案。"
@@ -2124,7 +2124,7 @@
     "en": "peace",
     "kk": "[pis]",
     "uk": "/piːs/",
-    "zh": "n. 和平、太平、平靜、安寧；v. 安靜",
+    "zh": "n. 和平、平靜、太平、安寧；v. 安靜",
     "unit": 18,
     "example": "We all wish for peace in the world.",
     "exampleZh": "我們都期盼世界和平。"
@@ -2134,7 +2134,7 @@
     "en": "peaceful",
     "kk": "[ˋpisfəl]",
     "uk": "/ˈpiːsf(ə)l/",
-    "zh": "adj. 和平的、寧靜的、安靜的、非暴力的",
+    "zh": "adj. 寧靜的、和平的、安靜的、非暴力的",
     "unit": 18,
     "example": "The small park is quiet and peaceful.",
     "exampleZh": "那座小公園安靜且祥和。"
@@ -2164,7 +2164,7 @@
     "en": "peanut",
     "kk": "[ˋpinət]",
     "uk": "/ˈpiːnʌt/",
-    "zh": "n. 花生、花生米、很少的錢、小片聚苯乙烯泡沫塑膠",
+    "zh": "n. 花生、花生果、花生米、很少的錢",
     "unit": 18,
     "example": "I love to eat sweet peanut butter.",
     "exampleZh": "我喜歡吃甜甜的花生醬。"
@@ -2194,7 +2194,7 @@
     "en": "people",
     "kk": "[ˋpipəl]",
     "uk": "/ˈpiːp(ə)l/",
-    "zh": "n. 人、人類、人們、大家；vt. 居住在、定居於、充滿、充斥著",
+    "zh": "n. 人們、民族、人、人類；vt. 居住在、定居於、充滿、充斥著",
     "unit": 18,
     "example": "She tends to annoy people.",
     "exampleZh": "她很容易惹惱別人。"
@@ -2214,7 +2214,7 @@
     "en": "perfect",
     "kk": "[pɚˋfɛkt]",
     "uk": "/ˈpɜːfɪkt/",
-    "zh": "adj. 完美的、無瑕的、完好的、完全正確的；vt. 完善、使完美、雙面印完、使（禮物、頭銜等）合法轉移；n. 完成時、完成體",
+    "zh": "adj. 完美的、理想的、無瑕的、完好的；vt. 完善、使完美、雙面印完、使（禮物、頭銜等）合法轉移；n. 完成時、完成體",
     "unit": 18,
     "example": "He always plays in perfect time.",
     "exampleZh": "他演奏的節奏總是準確無誤。"
@@ -2234,7 +2234,7 @@
     "en": "period",
     "kk": "[ˋpɪriəd]",
     "uk": "/ˈpɪəriəd/",
-    "zh": "n. 一段時間、時期、階段、時代；adj. 具有某個時代特徵的；adv. 到此為止、不再說了",
+    "zh": "n. 時期、句號、一段時間、階段；adj. 具有某個時代特徵的；adv. 到此為止、不再說了",
     "unit": 18,
     "example": "We rest for a short period after lunch.",
     "exampleZh": "午餐後我們會休息一小段時間。"
@@ -2314,7 +2314,7 @@
     "en": "picture",
     "kk": "[ˋpɪktʃɚ]",
     "uk": "/ˈpɪktʃə(r)/",
-    "zh": "n. 照片、圖片、繪畫、肖像；vt. 想象、繪畫、拍攝、描繪",
+    "zh": "n. 圖片、畫面、繪畫、照片；vt. 想象、繪畫、拍攝、描繪",
     "unit": 18,
     "example": "The girl drew a picture of a cat.",
     "exampleZh": "那個女孩畫了一張貓咪的圖畫。"
@@ -2334,7 +2334,7 @@
     "en": "piece",
     "kk": "[pis]",
     "uk": "/piːs/",
-    "zh": "n. 一張、塊、張、片；v. 拼合、拼裝、慢慢理解",
+    "zh": "n. 片、件、塊、張；v. 拼合、拼裝、慢慢理解",
     "unit": 18,
     "example": "I never found the missing piece.",
     "exampleZh": "我一直沒有找到缺少的部分。"
@@ -2494,7 +2494,7 @@
     "en": "platform",
     "kk": "[ˋplæt͵fɔrm]",
     "uk": "/ˈplætfɔːm/",
-    "zh": "n. 月臺、平臺、講臺、舞臺",
+    "zh": "n. 月台、平台、平臺、講臺",
     "unit": 18,
     "example": "Wait for the train on platform two.",
     "exampleZh": "在第二月台等火車。"
@@ -2514,7 +2514,7 @@
     "en": "player",
     "kk": "[ˋpleɚ]",
     "uk": "/ˈpleɪə(r)/",
-    "zh": "n. 運動員、選手、演奏者、演員",
+    "zh": "n. 遊戲者、運動者、表演者、運動員",
     "unit": 18,
     "example": "She's a good all-round player.",
     "exampleZh": "她是一位出色的全能球員。"
@@ -2524,7 +2524,7 @@
     "en": "playground",
     "kk": "[ˋple͵ɡraʊnd]",
     "uk": "/ˈpleɪɡraʊnd/",
-    "zh": "n. 操場、遊樂場、遊憩勝地、度假場所",
+    "zh": "n. 遊樂場、運動場、操場、遊憩勝地",
     "unit": 18,
     "example": "Sam pushed me over in the playground.",
     "exampleZh": "山姆在操場上把我推倒了。"
@@ -2534,7 +2534,7 @@
     "en": "pleasant",
     "kk": "[ˋplɛzənt]",
     "uk": "/ˈplez(ə)nt/",
-    "zh": "adj. 舒適的、令人愉快的、愜意的、禮貌而友善的",
+    "zh": "adj. 愉快的、美好的、令人愉快的、愜意的",
     "unit": 18,
     "example": "The woman had a pleasant face.",
     "exampleZh": "女人面容愉快。"
@@ -2634,7 +2634,7 @@
     "en": "pollute",
     "kk": "[pəˋlut]",
     "uk": "/pəˈluːt/",
-    "zh": "vt. 汙染、弄髒、玷汙、敗壞",
+    "zh": "vt. 污染、汙染、弄髒、玷汙",
     "unit": 18,
     "example": "Mining would pollute the lake and denude the forest.",
     "exampleZh": "採礦將會汙染湖水並伐光森林。"
@@ -2644,7 +2644,7 @@
     "en": "pollution",
     "kk": "[pəˋluʃən]",
     "uk": "/pəˈluːʃ(ə)n/",
-    "zh": "n. 汙染、汙染物、噪音汙染、強烈燈光",
+    "zh": "n. 污染、汙染、汙染物、噪音汙染",
     "unit": 18,
     "example": "Pollution can harm marine life.",
     "exampleZh": "汙染會危及海洋生物。"
@@ -2674,7 +2674,7 @@
     "en": "poor",
     "kk": "[pur]",
     "uk": "/pɔː(r); pʊə(r)/",
-    "zh": "adj. 貧窮的、可憐的、不幸的、虛弱的",
+    "zh": "adj. 貧窮的、糟糕的、可憐的、不幸的",
     "unit": 18,
     "example": "The poor boy had no warm shoes.",
     "exampleZh": "那個可憐的男孩沒有保暖的鞋子。"
@@ -2694,7 +2694,7 @@
     "en": "popular",
     "kk": "[ˋpɑpjəlɚ]",
     "uk": "/ˈpɒpjələ(r)/",
-    "zh": "adj. 受歡迎的、受大眾喜愛的、普遍的、通俗的",
+    "zh": "adj. 受歡迎的、流行的、受大眾喜愛的、普遍的",
     "unit": 18,
     "example": "This song is very popular among young people.",
     "exampleZh": "這首歌在年輕人之間非常受歡迎。"
@@ -2704,7 +2704,7 @@
     "en": "population",
     "kk": "[͵pɑpjəˋleʃən]",
     "uk": "/ˌpɒpjuˈleɪʃ(ə)n/",
-    "zh": "n. 人口、人口數量、生物、族群",
+    "zh": "n. 人口、族群、人口數量、生物",
     "unit": 18,
     "example": "The city has a large population.",
     "exampleZh": "這座城市人口眾多。"
@@ -2724,7 +2724,7 @@
     "en": "port",
     "kk": "[pɔrt]",
     "uk": "/pɔːt/",
-    "zh": "n. 港口、避風港、口岸、港口城市；v. 轉移、移植、使（船，舵）向左轉、斜持槍",
+    "zh": "n. 港、港口、避風港、口岸；v. 轉移、移植、使（船，舵）向左轉、斜持槍",
     "unit": 18,
     "example": "The big ship came to port.",
     "exampleZh": "大船開進了港口。"
@@ -2754,7 +2754,7 @@
     "en": "positive",
     "kk": "[ˋpɑzətɪv]",
     "uk": "/ˈpɒzətɪv/",
-    "zh": "adj. 肯定的、樂觀的、有信心的、積極的；n. 優勢、優點、陽性結果、正片",
+    "zh": "adj. 積極的、正面的、樂觀的、有信心的；n. 優勢、優點、陽性結果、正片",
     "unit": 18,
     "example": "He always keeps a positive mind.",
     "exampleZh": "他總是保持積極的心態。"
@@ -2764,7 +2764,7 @@
     "en": "possible",
     "kk": "[ˋpɑsəbəl]",
     "uk": "/ˈpɒsəb(ə)l/",
-    "zh": "adj. 有可能的、可能的、可能做到的、可能發生的；n. 可能適合的人、可能性、能完成的事、最高分",
+    "zh": "adj. 可能的、潜在的、可能做到的、可能發生的；n. 可能適合的人、可能性、能完成的事、最高分",
     "unit": 18,
     "example": "Is it possible to come here today?",
     "exampleZh": "今天有可能來這裡嗎？"
@@ -2864,7 +2864,7 @@
     "en": "precious",
     "kk": "[ˋprɛʃəs]",
     "uk": "/ˈpreʃəs/",
-    "zh": "adj. 珍貴的、寶貴的、珍視的、重要的；n. 寶貝、親愛的；adv. 非常、極其",
+    "zh": "adj. 寶貴的、珍貴的、珍視的、重要的；n. 寶貝、親愛的；adv. 非常、極其",
     "unit": 18,
     "example": "Water is precious to all life.",
     "exampleZh": "水對所有的生命都很寶貴。"
@@ -2874,7 +2874,7 @@
     "en": "prefer",
     "kk": "[prəˋfɝ]",
     "uk": "/prɪˈfɜː(r)/",
-    "zh": "vt. 較喜歡、更喜愛、寧可、舉報",
+    "zh": "vt. 更喜歡、更喜愛、寧可、舉報",
     "unit": 18,
     "example": "I prefer drinking green tea to coffee.",
     "exampleZh": "比起咖啡，我更喜歡喝綠茶。"
@@ -2884,7 +2884,7 @@
     "en": "prepare",
     "kk": "[priˋpɛr]",
     "uk": "/prɪˈpeə(r)/",
-    "zh": "vt. 準備、使做好準備、把……預備好、做好準備",
+    "zh": "vt. 準備、預備、使做好準備、把……預備好",
     "unit": 18,
     "example": "I had no time to prepare.",
     "exampleZh": "我沒有時間準備。"
@@ -2894,7 +2894,7 @@
     "en": "presence",
     "kk": "[ˋprɛzəns]",
     "uk": "/ˈprez(ə)ns/",
-    "zh": "n. 存在、出席、所在地方、感覺中的存在物",
+    "zh": "n. 出席、在場、存在、所在地方",
     "unit": 18,
     "example": "We were glad of his presence.",
     "exampleZh": "我們很高興他在場。"
@@ -2914,7 +2914,7 @@
     "en": "president",
     "kk": "[ˋprɛzə͵dɛnt]",
     "uk": "/ˈprezɪdənt/",
-    "zh": "n. 總統、校長、國家主席、負責人",
+    "zh": "n. 總統、主席、國家主席、負責人",
     "unit": 18,
     "example": "He wants to be the president.",
     "exampleZh": "他想成為總統。"
@@ -2964,7 +2964,7 @@
     "en": "priest",
     "kk": "[prist]",
     "uk": "/priːst/",
-    "zh": "n. 神父、牧師、神職人員、木漁槌；v. 任命……為司鐸",
+    "zh": "n. 牧師、神父、神職人員、木漁槌；v. 任命……為司鐸",
     "unit": 18,
     "example": "The kind priest prayed for us.",
     "exampleZh": "那位善良的神父為我們祈禱。"
@@ -3054,7 +3054,7 @@
     "en": "probably",
     "kk": "[ˋprɑbəb͵li]",
     "uk": "/ˈprɒbəbli/",
-    "zh": "adv. 或許、大概",
+    "zh": "adv. 可能地、大概、或許",
     "unit": 18,
     "example": "He will probably arrive here soon.",
     "exampleZh": "他大概很快就會到達這裡。"
@@ -3074,7 +3074,7 @@
     "en": "produce",
     "kk": "[prəˋdus]",
     "uk": "/prəˈdjuːs/",
-    "zh": "vt. 製造、引起、造成、生產；n. 農產品、成果、結果",
+    "zh": "vt. 生產、產生、引起、造成；n. 農產品、成果、結果",
     "unit": 18,
     "example": "These trees produce sweet red fruit.",
     "exampleZh": "這些樹結出甜甜的紅果實。"
@@ -3104,7 +3104,7 @@
     "en": "program",
     "kk": "[ˋpro͵ɡræm]",
     "uk": "/ˈprəʊɡræm/",
-    "zh": "n. 節目、程式、計劃、規劃；vt. 編寫程式、設計程式、設定、預設",
+    "zh": "n. 程序、項目、程式、計劃；vt. 編寫程式、設計程式、設定、預設",
     "unit": 18,
     "example": "The program aired last week.",
     "exampleZh": "該節目已於上週播出。"
@@ -3144,7 +3144,7 @@
     "en": "pronounce",
     "kk": "[prəˋnaʊns]",
     "uk": "/prəˈnaʊns/",
-    "zh": "vt. 發音、發、讀、正式宣佈",
+    "zh": "vt. 發……音、發、讀、正式宣佈",
     "unit": 18,
     "example": "How do you pronounce this long word?",
     "exampleZh": "你怎麼發這個長單字的音？"
@@ -3164,7 +3164,7 @@
     "en": "proud",
     "kk": "[praʊd]",
     "uk": "/praʊd/",
-    "zh": "adj. 驕傲的、自豪的、得意的、令人自豪的",
+    "zh": "adj. 自豪的、驕傲的、得意的、令人自豪的",
     "unit": 18,
     "example": "Her parents were proud of her good grades.",
     "exampleZh": "她的父母為她的好成績感到自豪。"
@@ -3184,7 +3184,7 @@
     "en": "provide",
     "kk": "[prəˋvaɪd]",
     "uk": "/prəˈvaɪd/",
-    "zh": "vt. 提供、供給、配備、準備好",
+    "zh": "vt. 提供、供應、供給、配備",
     "unit": 18,
     "example": "They provide warm meals to poor people.",
     "exampleZh": "他們提供熱食給貧困的人們。"
@@ -3264,7 +3264,7 @@
     "en": "purpose",
     "kk": "[ˋpɝpəs]",
     "uk": "/ˈpɜːpəs/",
-    "zh": "n. 目的、意圖、目標、計劃；v. 有意、打算",
+    "zh": "n. 目的、用途、意圖、目標；v. 有意、打算",
     "unit": 18,
     "example": "What is the purpose of your visit?",
     "exampleZh": "你這次造訪的目的是什麼？"
@@ -3314,7 +3314,7 @@
     "en": "quality",
     "kk": "[ˋkwɑləti]",
     "uk": "/ˈkwɒləti/",
-    "zh": "n. 品質、質量、優質、上乘；adj. 優質的、高質量的、內容嚴肅的、高階的",
+    "zh": "n. 質量、品質、優質、上乘；adj. 優質的、高質量的、內容嚴肅的、高階的",
     "unit": 18,
     "example": "This shop sells good quality food.",
     "exampleZh": "這家店販售品質優良的食物。"
@@ -3344,7 +3344,7 @@
     "en": "queen",
     "kk": "[kwin]",
     "uk": "/kwiːn/",
-    "zh": "n. 女王、女首領、王后、出眾的女子；v. 使（兵）變後、對……擺架子、對……專橫跋扈、使……成為女王或王后",
+    "zh": "n. 皇后、女王、女首領、王后；v. 使（兵）變後、對……擺架子、對……專橫跋扈、使……成為女王或王后",
     "unit": 18,
     "example": "The queen wore a shiny gold crown.",
     "exampleZh": "女王戴著一頂閃亮的金王冠。"
@@ -3364,7 +3364,7 @@
     "en": "quick",
     "kk": "[kwɪk]",
     "uk": "/kwɪk/",
-    "zh": "adj. 迅速的、快的、持續時間很短的、短暫的；adv. 以很快的速度、迅速發生地、很快發生地；n. 活肉、要害、核心、活著的人們；int. 快、快點",
+    "zh": "adj. 快速的、敏捷的、迅速的、快的；adv. 以很快的速度、迅速發生地、很快發生地；n. 活肉、要害、核心、活著的人們；int. 快、快點",
     "unit": 18,
     "example": "He kept giving quick blinks.",
     "exampleZh": "他不停地快速眨眼。"
@@ -3384,7 +3384,7 @@
     "en": "quit",
     "kk": "[kwɪt]",
     "uk": "/kwɪt/",
-    "zh": "vt. 停止、戒掉、離開、離任；adj. 擺脫了……的、已經了結的；n. 辭職、離任",
+    "zh": "vt. 放棄、離職、停止、戒掉；adj. 擺脫了……的、已經了結的；n. 辭職、離任",
     "unit": 18,
     "example": "He quit his job as an office boy.",
     "exampleZh": "他辭去了辦公室勤雜工的工作。"
@@ -3394,7 +3394,7 @@
     "en": "quite",
     "kk": "[kwaɪt]",
     "uk": "/kwaɪt/",
-    "zh": "adv. 相當地、相當、很、非常",
+    "zh": "adv. 相當、完全、很、非常",
     "unit": 18,
     "example": "I worked quite irregular hours.",
     "exampleZh": "我的工作時間很不規律。"
@@ -3434,7 +3434,7 @@
     "en": "radio",
     "kk": "[ˋredi͵o]",
     "uk": "/ˈreɪdiəʊ/",
-    "zh": "n. 收音機、無線電收發裝置、無線電通訊、無線電廣播節目；vt. 用無線電通訊",
+    "zh": "n. 收音機、無線電、無線電收發裝置、無線電通訊；vt. 用無線電通訊",
     "unit": 18,
     "example": "My father likes to hear the radio.",
     "exampleZh": "我父親喜歡聽收音機廣播。"
@@ -3474,7 +3474,7 @@
     "en": "rainy",
     "kk": "[ˋreni]",
     "uk": "/ˈreɪni/",
-    "zh": "adj. 多雨的、下雨的",
+    "zh": "adj. 下雨的、多雨的",
     "unit": 18,
     "example": "Take an umbrella on a rainy day.",
     "exampleZh": "在下雨天要帶一把傘。"
@@ -3504,7 +3504,7 @@
     "en": "rare",
     "kk": "[rɛr]",
     "uk": "/reə(r)/",
-    "zh": "adj. 稀少的、少見的、不常發生的、稀罕的",
+    "zh": "adj. 罕見的、少見的、不常發生的、稀罕的",
     "unit": 18,
     "example": "It is rare to see snow here.",
     "exampleZh": "在這裡看見下雪是很罕見的。"
@@ -3524,7 +3524,7 @@
     "en": "rather",
     "kk": "[ˋræðɚ]",
     "uk": "/ˈrɑːðə(r)/",
-    "zh": "adv. 稍微、頗、相當、寧願；int. 當然、的確",
+    "zh": "adv. 相當、寧可、頗、寧願；int. 當然、的確",
     "unit": 18,
     "example": "I would rather stay home than go.",
     "exampleZh": "我寧願待在家裡也不想出門。"
@@ -3534,7 +3534,7 @@
     "en": "reach",
     "kk": "[ritʃ]",
     "uk": "/riːtʃ/",
-    "zh": "v. 到達、抵達、被看見、被聽到；n. 伸出、伸手可及的距離、可到達的距離、能及的範圍",
+    "zh": "v. 到達、達到、抵達、被看見；n. 伸出、伸手可及的距離、可到達的距離、能及的範圍",
     "unit": 18,
     "example": "Can you reach that high book shelf?",
     "exampleZh": "你碰得到那麼高的書架嗎？"
@@ -3564,7 +3564,7 @@
     "en": "real",
     "kk": "[ril]",
     "uk": "/ˈriːəl/",
-    "zh": "adj. 真的、實際存在的、非想象的、名副其實的；adv. 很、非常地",
+    "zh": "adj. 真實的、實際的、實際存在的、非想象的；adv. 很、非常地",
     "unit": 18,
     "example": "She's a real cosmopolitan.",
     "exampleZh": "她是一位真正的國際主義者。"
@@ -3574,7 +3574,7 @@
     "en": "realize",
     "kk": "[ˋriə͵laɪz]",
     "uk": "/ˈriːəlaɪz/",
-    "zh": "vt. 瞭解、意識到、發生、產生",
+    "zh": "vt. 認知、實現、瞭解、意識到",
     "unit": 18,
     "example": "I did not realize you were here.",
     "exampleZh": "我剛剛沒有意識到你在這裡。"
@@ -3584,7 +3584,7 @@
     "en": "really",
     "kk": "[ˋrɪli]",
     "uk": "/ˈriːəli/",
-    "zh": "adv. 真實地、真正地、事實上、確實的；int. 真的、真是的！、是啊！",
+    "zh": "adv. 真正地、確實、事實上、確實的；int. 真的、真是的！、是啊！",
     "unit": 18,
     "example": "I really love this sweet cake.",
     "exampleZh": "我真的很喜歡這個甜蛋糕。"
@@ -3604,7 +3604,7 @@
     "en": "receive",
     "kk": "[rəˋsiv]",
     "uk": "/rɪˈsiːv/",
-    "zh": "vt. 收到、得到、遭受、經受",
+    "zh": "vt. 接收、獲得、得到、收到",
     "unit": 18,
     "example": "I receive a gift from my friend.",
     "exampleZh": "我收到朋友送的一件禮物。"
@@ -3664,7 +3664,7 @@
     "en": "refrigerator",
     "kk": "[rəˋfrɪdʒɚ͵etɚ]",
     "uk": "/rɪˈfrɪdʒəreɪtə(r)/",
-    "zh": "n. 冰箱、冷藏庫",
+    "zh": "n. 電冰箱、冰箱、冷藏庫",
     "unit": 18,
     "example": "Put the milk into the refrigerator.",
     "exampleZh": "把牛奶放進冰箱裡。"
@@ -3724,7 +3724,7 @@
     "en": "relation",
     "kk": "[riˋleʃən]",
     "uk": "/rɪˈleɪʃ(ə)n/",
-    "zh": "n. 聯絡、（正式）關係、性關係",
+    "zh": "n. 關聯、聯絡、（正式）關係",
     "unit": 18,
     "example": "They have a good work relation.",
     "exampleZh": "他們有良好的工作關係。"
@@ -3744,7 +3744,7 @@
     "en": "remember",
     "kk": "[rɪˋmɛmbɚ]",
     "uk": "/rɪˈmembə(r)/",
-    "zh": "vt. 記得、回想起、記起、憶起",
+    "zh": "vt. 記住、回憶、回想起、記得",
     "unit": 18,
     "example": "Please remember to close the front door.",
     "exampleZh": "請記得關上前門。"
@@ -3824,7 +3824,7 @@
     "en": "require",
     "kk": "[͵rikˋwaɪɚ]",
     "uk": "/rɪˈkwaɪə(r)/",
-    "zh": "vt. 需要、要求做、規定",
+    "zh": "vt. 需要、要求、要求做、規定",
     "unit": 18,
     "example": "These plants require plenty of fresh water.",
     "exampleZh": "這些植物需要充足的新鮮水分。"
@@ -3844,7 +3844,7 @@
     "en": "responsible",
     "kk": "[riˋspɑnsəbəl]",
     "uk": "/rɪˈspɒnsəb(ə)l/",
-    "zh": "adj. 有責任的、負責的、負有責任的、應承擔責任的",
+    "zh": "adj. 負責任的、負責的、負有責任的、應承擔責任的",
     "unit": 18,
     "example": "He is a responsible boy who finishes tasks.",
     "exampleZh": "他是個會完成任務的負責任男孩。"
@@ -3874,7 +3874,7 @@
     "en": "restroom",
     "kk": "[ˋrɛ͵strum]",
     "uk": "/ˈrestruːm; ˈrestrʊm/",
-    "zh": "n. 洗手間、盥洗室、休息室",
+    "zh": "n. 廁所、盥洗室、洗手間、休息室",
     "unit": 18,
     "example": "The girl went into the restroom with a blush.",
     "exampleZh": "女孩紅著臉走入了洗手間。"
@@ -3914,7 +3914,7 @@
     "en": "revise",
     "kk": "[rɪˋvaɪz]",
     "uk": "/rɪˈvaɪz/",
-    "zh": "v. 改變、修正、修改、修訂；n. 修訂、校訂、改樣",
+    "zh": "v. 校訂、更改、改變、修正；n. 修訂、校訂、改樣",
     "unit": 18,
     "example": "Please revise your paper before class.",
     "exampleZh": "請在上課前修改你的作業。"
@@ -3924,7 +3924,7 @@
     "en": "rice",
     "kk": "[raɪs]",
     "uk": "/raɪs/",
-    "zh": "n. 米、稻、水稻、大米；vt. 把……搗成米糊狀、把（熟馬鈴薯等）壓（或擦）成米粒狀",
+    "zh": "n. 稻米、飯、稻、水稻；vt. 把……搗成米糊狀、把（熟馬鈴薯等）壓（或擦）成米粒狀",
     "unit": 18,
     "example": "We eat rice every single day.",
     "exampleZh": "我們每天都吃米飯。"
@@ -3934,7 +3934,7 @@
     "en": "rich",
     "kk": "[rɪtʃ]",
     "uk": "/rɪtʃ/",
-    "zh": "adj. 有錢的、富有的、富含……的、豐富的",
+    "zh": "adj. 富有的、豐富的、有錢的、富含……的",
     "unit": 18,
     "example": "They must be stinking rich.",
     "exampleZh": "他們一定很有錢。"
@@ -4064,7 +4064,7 @@
     "en": "room",
     "kk": "[rum]",
     "uk": "/ruːm/",
-    "zh": "n. 房間、室、客房、住所；vi. 租房、合住、讓……同住",
+    "zh": "n. 房間、空間、室、客房；vi. 租房、合住、讓……同住",
     "unit": 18,
     "example": "This room faces west.",
     "exampleZh": "這個房間朝西。"
@@ -4154,7 +4154,7 @@
     "en": "rude",
     "kk": "[rud]",
     "uk": "/ruːd/",
-    "zh": "adj. 粗魯的、無禮的、粗俗的、下流的",
+    "zh": "adj. 無禮的、粗魯的、粗俗的、下流的",
     "unit": 18,
     "example": "It is rude to yell at other people.",
     "exampleZh": "對別人大吼大叫是很無禮的。"
@@ -4184,7 +4184,7 @@
     "en": "ruler",
     "kk": "[ˋrulɚ]",
     "uk": "/ˈruːlə(r)/",
-    "zh": "n. 統治者、尺、管理者、尺子",
+    "zh": "n. 尺、統治者、管理者、尺子",
     "unit": 18,
     "example": "Use a ruler to draw lines.",
     "exampleZh": "用尺來畫線。"
@@ -4214,7 +4214,7 @@
     "en": "sad",
     "kk": "[sæd]",
     "uk": "/sæd/",
-    "zh": "adj. 悲傷的、傷心的、難過的、令人傷心的",
+    "zh": "adj. 難過的、傷心的、令人傷心的、讓人難過的",
     "unit": 18,
     "example": "She feels sad about the bad news.",
     "exampleZh": "她對這個壞消息感到難過。"
@@ -4274,7 +4274,7 @@
     "en": "sale",
     "kk": "[sel]",
     "uk": "/seɪl/",
-    "zh": "n. 出售、銷售、銷售額、銷售活動",
+    "zh": "n. 售賣、賤賣、出售、銷售",
     "unit": 18,
     "example": "These winter coats are on sale today.",
     "exampleZh": "這些冬天大衣今天特價銷售中。"
@@ -4334,7 +4334,7 @@
     "en": "satisfy",
     "kk": "[ˋsætə͵sfaɪ]",
     "uk": "/ˈsætɪsfaɪ/",
-    "zh": "vt. 滿意、使滿意、使滿足、滿足",
+    "zh": "vt. 使滿意、使滿足、滿足、符合",
     "unit": 18,
     "example": "Good food will satisfy your hungry stomach.",
     "exampleZh": "美食會滿足你飢餓的肚子。"
@@ -4404,7 +4404,7 @@
     "en": "scene",
     "kk": "[sin]",
     "uk": "/siːn/",
-    "zh": "n. 風景、事發地、現場、事件",
+    "zh": "n. 場景、景象、事發地、現場",
     "unit": 18,
     "example": "It was a very lovely night scene.",
     "exampleZh": "那是一幅非常動人的夜間景象。"
@@ -4414,7 +4414,7 @@
     "en": "scenery",
     "kk": "[ˋsinɚi]",
     "uk": "/ˈsiːnəri/",
-    "zh": "n. 景色、風景、舞臺佈景",
+    "zh": "n. 風景、景色、舞臺佈景",
     "unit": 18,
     "example": "The sea scenery is so pretty.",
     "exampleZh": "這片海景非常漂亮。"
@@ -4424,7 +4424,7 @@
     "en": "school",
     "kk": "[skul]",
     "uk": "/skuːl/",
-    "zh": "n. 學校、全校師生、上學時間、上學期間；v. 教育、培養、訓練、馴馬；adj. 受過西化教育的、源自西方的",
+    "zh": "n. 學校、學派、全校師生、上學時間；v. 教育、培養、訓練、馴馬；adj. 受過西化教育的、源自西方的",
     "unit": 18,
     "example": "Which school do they attend?",
     "exampleZh": "他們上的是哪一所學校？"
@@ -4434,7 +4434,7 @@
     "en": "science",
     "kk": "[ˋsaɪəns]",
     "uk": "/ˈsaɪəns/",
-    "zh": "n. 科學、科學知識、專門科學、學科",
+    "zh": "n. 科學、學科、科學知識、專門科學",
     "unit": 18,
     "example": "We learn science at our school.",
     "exampleZh": "我們在學校學習科學。"
@@ -4514,7 +4514,7 @@
     "en": "season",
     "kk": "[ˋsizən]",
     "uk": "/ˈsiːz(ə)n/",
-    "zh": "n. 季節、季、時期、體育賽季；vt. 加調料、給……調味、給……增添趣味、使（木材）風乾",
+    "zh": "n. 季節、賽季、季、時期；vt. 加調料、給……調味、給……增添趣味、使（木材）風乾",
     "unit": 18,
     "example": "Spring is the best season of all.",
     "exampleZh": "春天是所有當中最棒的季節。"
@@ -4554,7 +4554,7 @@
     "en": "secretary",
     "kk": "[ˋsɛkrə͵tɛri]",
     "uk": "/ˈsekrət(ə)ri/",
-    "zh": "n. 祕書、秘書、書記員、幹事",
+    "zh": "n. 秘書、書記員、幹事、部長",
     "unit": 18,
     "example": "We hired a new secretary.",
     "exampleZh": "我們僱了一名新秘書。"
@@ -4564,7 +4564,7 @@
     "en": "section",
     "kk": "[ˋsɛkʃən]",
     "uk": "/ˈsekʃ(ə)n/",
-    "zh": "n. 部分、散件、部件、節；vt. 強制（精神病人）入院、將……製成切片、切開、切斷",
+    "zh": "n. 部分、章節、散件、部件；vt. 強制（精神病人）入院、將……製成切片、切開、切斷",
     "unit": 18,
     "example": "Read this section of the book.",
     "exampleZh": "閱讀這本書的這個部分。"
@@ -4574,7 +4574,7 @@
     "en": "see",
     "kk": "[si]",
     "uk": "/siː/",
-    "zh": "vt. 看見、看到、有視力、看得見；n. 主教教區",
+    "zh": "vt. 看見、理解、看到、有視力；n. 主教教區",
     "unit": 18,
     "example": "I can see birds in the sky.",
     "exampleZh": "我能看見天空中的鳥兒。"
@@ -4594,7 +4594,7 @@
     "en": "seek",
     "kk": "[sik]",
     "uk": "/siːk/",
-    "zh": "vt. 尋找、尋求、謀求、請求",
+    "zh": "vt. 尋求、追求、尋找、謀求",
     "unit": 18,
     "example": "You can seek help from us.",
     "exampleZh": "你可以向我們尋求幫助。"
@@ -4604,7 +4604,7 @@
     "en": "seem",
     "kk": "[sim]",
     "uk": "/siːm/",
-    "zh": "v. 似乎、看來、好像、可能",
+    "zh": "v. 似乎、看起來、看來、好像",
     "unit": 18,
     "example": "You seem very happy today at school.",
     "exampleZh": "你今天在學校看起來很高興。"
@@ -4624,7 +4624,7 @@
     "en": "seldom",
     "kk": "[ˋsɛldəm]",
     "uk": "/ˈseldəm/",
-    "zh": "adv. 不常、很少",
+    "zh": "adv. 很少地、不常、很少",
     "unit": 18,
     "example": "I've seldom felt so happy.",
     "exampleZh": "我很少感到過這麼快樂了。"
@@ -4724,7 +4724,7 @@
     "en": "serious",
     "kk": "[ˋsɪriəs]",
     "uk": "/ˈsɪəriəs/",
-    "zh": "adj. 嚴重的、危急的、認真的、嚴肅的",
+    "zh": "adj. 嚴重的、認真的、危急的、嚴肅的",
     "unit": 18,
     "example": "You're joking. Are you serious?",
     "exampleZh": "你在開玩笑。你是認真的？"
@@ -4734,7 +4734,7 @@
     "en": "servant",
     "kk": "[ˋsɝvənt]",
     "uk": "/ˈsɜːvənt/",
-    "zh": "n. 僕人、傭人、僱員、職員",
+    "zh": "n. 雇工、僕人、傭人、僱員",
     "unit": 18,
     "example": "The rich family has a servant.",
     "exampleZh": "這個富裕的家庭有一名僕人。"
@@ -4744,7 +4744,7 @@
     "en": "serve",
     "kk": "[sɝv]",
     "uk": "/sɜːv/",
-    "zh": "v. 服務、為……工作、服役、端上；n. 發球、申斥",
+    "zh": "v. 服務、供應、為……工作、服役；n. 發球、申斥",
     "unit": 18,
     "example": "They serve hot tea every morning.",
     "exampleZh": "他們每天早上供應熱茶。"
@@ -4754,7 +4754,7 @@
     "en": "service",
     "kk": "[ˋsɝvəs]",
     "uk": "/ˈsɜːvɪs/",
-    "zh": "n. 服務、公共服務系統、公共事業、接待；vt. 維修、檢修、支付（債務）利息、為……提供服務；adj. 員工專用的、部隊的、提供服務的",
+    "zh": "n. 服務、服務業、公共服務系統、公共事業；vt. 維修、檢修、支付（債務）利息、為……提供服務；adj. 員工專用的、部隊的、提供服務的",
     "unit": 18,
     "example": "The food and service were very good.",
     "exampleZh": "這裡的食物與服務都非常好。"
@@ -4774,7 +4774,7 @@
     "en": "settle",
     "kk": "[ˋsɛtəl]",
     "uk": "/ˈset(ə)l/",
-    "zh": "v. 解決、結束、確定、決定；n. 高背扶手木長椅",
+    "zh": "v. 安放、安頓、解決、結束；n. 高背扶手木長椅",
     "unit": 18,
     "example": "They decided to settle in the city.",
     "exampleZh": "他們決定在這座城市定居下來。"
@@ -4834,7 +4834,7 @@
     "en": "shall",
     "kk": "[ʃæl]",
     "uk": "/ʃæl; ʃəl/",
-    "zh": "aux. 將要、將會、……好嗎？要不要……？、必須",
+    "zh": "aux. 將要、將會、……好嗎？要不要……？、必須；v. 將、應該",
     "unit": 18,
     "example": "Shall we go for a walk outside?",
     "exampleZh": "我們要去外面散散步嗎？"
@@ -4884,7 +4884,7 @@
     "en": "sheep",
     "kk": "[ʃip]",
     "uk": "/ʃiːp/",
-    "zh": "n. 羊、綿羊、膽小鬼",
+    "zh": "n. 綿羊、羊、膽小鬼",
     "unit": 18,
     "example": "White sheep eat grass on the hill.",
     "exampleZh": "白色的綿羊在小山上吃草。"
@@ -4994,7 +4994,7 @@
     "en": "shore",
     "kk": "[ʃɔr]",
     "uk": "/ʃɔː(r)/",
-    "zh": "n. 岸、濱、沿海國家（或地區）、漲潮線與落潮線之間的地帶；v. 用支撐物（或梁）支撐、支援、幫助",
+    "zh": "n. 岸邊、濱、岸、沿海國家（或地區）；v. 用支撐物（或梁）支撐、支援、幫助",
     "unit": 18,
     "example": "Huge waves lashed the shore.",
     "exampleZh": "巨大的海浪拍打著海岸。"
@@ -5004,7 +5004,7 @@
     "en": "short",
     "kk": "[ʃɔrt]",
     "uk": "/ʃɔːt/",
-    "zh": "adj. 短的、短暫的、短期的、個子矮的；n. 少量烈酒、電影短片、短褲、男用短內褲；adv. 達不到標準（或預期）地、突然、短暫、使變短地；v. 短路、賣空",
+    "zh": "adj. 短的、簡短的、短暫的、短期的；n. 少量烈酒、電影短片、短褲、男用短內褲；adv. 達不到標準（或預期）地、突然、短暫、使變短地；v. 短路、賣空",
     "unit": 18,
     "example": "He is too short to reach the shelf.",
     "exampleZh": "他太矮了，搆不到架子。"
@@ -5024,7 +5024,7 @@
     "en": "should",
     "kk": "[ʃʊd]",
     "uk": "/ʃʊd; ʃəd/",
-    "zh": "v. 應該、該、可以、應該會；aux. 應該",
+    "zh": "v. 應該、該、可以、應該會；aux. 應該、應當",
     "unit": 18,
     "example": "You should go to bed early.",
     "exampleZh": "你應該早點去睡覺。"
@@ -5044,7 +5044,7 @@
     "en": "shout",
     "kk": "[ʃaʊt]",
     "uk": "/ʃaʊt/",
-    "zh": "vi. 呼喊、叫嚷、大聲說、呼叫；vt. 呼喊；n. 喊叫聲、呼喊、請客的酒、輪到買酒請客",
+    "zh": "vi. 叫嚷、大聲說、呼叫、喊叫；n. 呼喊、喊叫聲、請客的酒、輪到買酒請客",
     "unit": 18,
     "example": "It's wrong to swear and shout.",
     "exampleZh": "罵人、喊叫都是錯的。"
@@ -5114,7 +5114,7 @@
     "en": "side",
     "kk": "[saɪd]",
     "uk": "/saɪd/",
-    "zh": "n. 面、一旁、側邊、邊；adj. 旁邊的、側面的、次要的、附帶的；vi. 支援、站在……一邊、給......鋪外牆板、給......裝上側面",
+    "zh": "n. 邊、側面、一旁、側邊；adj. 旁邊的、側面的、次要的、附帶的；vi. 支援、站在……一邊、給......鋪外牆板、給......裝上側面",
     "unit": 18,
     "example": "The ship rolled from side to side.",
     "exampleZh": "船從一邊搖到另一邊。"
@@ -5124,7 +5124,7 @@
     "en": "sidewalk",
     "kk": "[ˋsaɪd͵wɔk]",
     "uk": "/ˈsaɪdwɔːk/",
-    "zh": "n. 人行道",
+    "zh": "n. 路邊行人道、人行道",
     "unit": 18,
     "example": "Walk on the sidewalk for safety.",
     "exampleZh": "為了安全請走在人行道上。"
@@ -5164,7 +5164,7 @@
     "en": "silent",
     "kk": "[ˋsaɪlənt]",
     "uk": "/ˈsaɪlənt/",
-    "zh": "adj. 沉默的、安靜的、沉默寡言的、不愛說話的",
+    "zh": "adj. 寂靜的、安靜的、沉默的、沉默寡言的",
     "unit": 18,
     "example": "The three men remained silent.",
     "exampleZh": "三人保持沉默。"
@@ -5174,7 +5174,7 @@
     "en": "silk",
     "kk": "[sɪlk]",
     "uk": "/sɪlk/",
-    "zh": "n. 絲、絲綢、絲線、彩色絲綢賽馬服；adj. 絲的、絲制的；vi. 處於長鬚的階段中",
+    "zh": "n. 蠶絲、絲、絲織物、綢布；adj. 絲的、絲制的；vi. 處於長鬚的階段中",
     "unit": 18,
     "example": "She wore purple and green silk.",
     "exampleZh": "她穿著紫色和綠色的絲綢。"
@@ -5204,7 +5204,7 @@
     "en": "similar",
     "kk": "[ˋsɪməlɚ]",
     "uk": "/ˈsɪmələ(r)/",
-    "zh": "adj. 相似的、相像的、類似的；n. 相似之人、順勢藥物",
+    "zh": "adj. 相似的、類似的、相像的；n. 相似之人、順勢藥物",
     "unit": 18,
     "example": "The two sisters have very similar faces.",
     "exampleZh": "這對姊妹有著非常相似的面貌。"
@@ -5224,7 +5224,7 @@
     "en": "simply",
     "kk": "[ˋsɪmpli]",
     "uk": "/ˈsɪmpli/",
-    "zh": "adv. 簡單地、僅僅、只、不過",
+    "zh": "adv. 簡單地、簡易地、簡明地、只不過",
     "unit": 18,
     "example": "This math problem is simply too easy.",
     "exampleZh": "這道數學題簡直是太容易了。"
@@ -5244,7 +5244,7 @@
     "en": "sincere",
     "kk": "[sɪnˋsɪr]",
     "uk": "/sɪnˈsɪə(r)/",
-    "zh": "adj. 真誠的、衷心的、誠摯的、誠懇的",
+    "zh": "adj. 誠懇的、衷心的、誠摯的、真誠的",
     "unit": 18,
     "example": "He gave us a sincere smile.",
     "exampleZh": "他給了我們一個真誠的微笑。"
@@ -5294,7 +5294,7 @@
     "en": "sir",
     "kk": "[sɝ]",
     "uk": "/sɜː(r)/",
-    "zh": "n. 先生、長官、老師、閣下",
+    "zh": "n. 先生、長官、老師、閣下（正式或商業信函開頭的稱呼）",
     "unit": 18,
     "example": "May I help you with that, sir?",
     "exampleZh": "先生，需要我幫忙嗎？"
@@ -5304,7 +5304,7 @@
     "en": "sister",
     "kk": "[ˋsɪstɚ]",
     "uk": "/ˈsɪstə(r)/",
-    "zh": "n. 姊妹、姐姐、妹妹、姐妹；adj. 同類的、同質的、如同姐妹的",
+    "zh": "n. 姐妹、修女、姐姐、妹妹；adj. 同類的、同質的、如同姐妹的",
     "unit": 18,
     "example": "My sister goes to school by bus.",
     "exampleZh": "我妹妹搭公車去上學。"
@@ -5314,7 +5314,7 @@
     "en": "sit",
     "kk": "[sɪt]",
     "uk": "/sɪt/",
-    "zh": "v. 坐、坐下、就座、能容納；n. 坐的一段時間、合身",
+    "zh": "v. 坐、就座、坐下、能容納；n. 坐的一段時間、合身",
     "unit": 18,
     "example": "Please sit down and enjoy a warm cup of tea.",
     "exampleZh": "請坐下來，喝杯熱茶放鬆一下。"
@@ -5324,7 +5324,7 @@
     "en": "six",
     "kk": "[sɪks]",
     "uk": "/sɪks/",
-    "zh": "num. 六、數字6、六個、六個人（或物）一組",
+    "zh": "num. 六、六個、數字6、六個人（或物）一組",
     "unit": 18,
     "example": "We have six red apples on the table.",
     "exampleZh": "我們桌上有六顆紅蘋果。"
@@ -5334,7 +5334,7 @@
     "en": "sixteen",
     "kk": "[sɪkˋstin]",
     "uk": "/ˌsɪksˈtiːn/",
-    "zh": "num. 十六、十六個；adj. 十六的、十六個的",
+    "zh": "num. 十六、十六個；adj. 十六、十六的、十六個的",
     "unit": 18,
     "example": "He worked sixteen hours a day.",
     "exampleZh": "他每天工作十六個小時。"
@@ -5344,7 +5344,7 @@
     "en": "sixty",
     "kk": "[ˋsɪksti]",
     "uk": "/ˈsɪksti/",
-    "zh": "num. 六十、六十個、六十歲；n. 六十、六十幾、六十多歲、thesixties指二十世紀六十年代",
+    "zh": "num. 六十、六十個、六十歲；n. 六十幾、六十多歲、thesixties指二十世紀六十年代；adj. 六十",
     "unit": 18,
     "example": "She is close on sixty.",
     "exampleZh": "她已經快六十歲了。"
@@ -5354,7 +5354,7 @@
     "en": "size",
     "kk": "[saɪz]",
     "uk": "/saɪz/",
-    "zh": "n. 尺碼、大小、尺寸、龐大；v. 依大小分類、按一定大小製作、改變......的大小、給（衣服、紙張等）上漿；adj. 一定大小（或尺碼）的",
+    "zh": "n. 大小、尺寸、龐大、巨大；v. 依大小分類、按一定大小製作、改變......的大小、給（衣服、紙張等）上漿；adj. 一定大小（或尺碼）的",
     "unit": 18,
     "example": "The jacket was the wrong size.",
     "exampleZh": "這件夾克的尺寸不對。"
@@ -5384,7 +5384,7 @@
     "en": "skill",
     "kk": "[skɪl]",
     "uk": "/skɪl/",
-    "zh": "n. 技巧、技藝、技術、技能；v. 培訓",
+    "zh": "n. 技能、技巧、技藝、技術；v. 培訓",
     "unit": 18,
     "example": "Art is a very useful life skill.",
     "exampleZh": "藝術是一項非常有用的生活技能。"
@@ -5394,7 +5394,7 @@
     "en": "skillful",
     "kk": "[ˋskɪlfəl]",
     "uk": "/ˈskɪlf(ə)l/",
-    "zh": "adj. 熟練的、有技巧的、靈巧的、巧妙的",
+    "zh": "adj. 有技術的、熟練的、有技巧的、靈巧的",
     "unit": 18,
     "example": "The skillful cook made dinner very quickly.",
     "exampleZh": "那位廚藝嫻熟的廚師很快做好了晚餐。"
@@ -5404,7 +5404,7 @@
     "en": "skin",
     "kk": "[skɪn]",
     "uk": "/skɪn/",
-    "zh": "n. 皮膚、皮、獸皮、皮毛；vt. 剝皮、削皮、擦破、長出新皮",
+    "zh": "n. 皮膚、表皮、皮、獸皮；vt. 剝皮、削皮、擦破、長出新皮",
     "unit": 18,
     "example": "I can skin up.",
     "exampleZh": "我可以剝皮。"
@@ -5414,7 +5414,7 @@
     "en": "skinny",
     "kk": "[ˋskɪni]",
     "uk": "/ˈskɪni/",
-    "zh": "adj. 皮包骨的、極瘦的、緊身的、低脂肪的；n. 骨瘦如柴的人、瘦骨嶙峋的人、內部訊息、機密情報",
+    "zh": "adj. 很瘦的、極瘦的、皮包骨的、緊身的；n. 骨瘦如柴的人、瘦骨嶙峋的人、內部訊息、機密情報",
     "unit": 18,
     "example": "He was quite a skinny little boy.",
     "exampleZh": "他是個骨瘦如柴的小男孩。"
@@ -5514,7 +5514,7 @@
     "en": "small",
     "kk": "[smɔl]",
     "uk": "/smɔːl/",
-    "zh": "adj. 小的、小型的、少的、小規模的；n. 小件衣服（尤指內衣）、後腰、小費、小額禮金；adv. 成小塊地、小小地",
+    "zh": "adj. 小的、少量的、小型的、少的；n. 小件衣服（尤指內衣）、後腰、小費、小額禮金；adv. 成小塊地、小小地",
     "unit": 18,
     "example": "She lives in a small, quiet town.",
     "exampleZh": "她住在一個安靜的小鎮裡。"
@@ -5614,7 +5614,7 @@
     "en": "snowy",
     "kk": "[ˋsnoi]",
     "uk": "/ˈsnəʊi/",
-    "zh": "adj. 下雪多的、多雪的、下雪的、雪白的",
+    "zh": "adj. 似雪的、多雪的、下雪的、雪白的",
     "unit": 18,
     "example": "We strode across the snowy fields.",
     "exampleZh": "我們大步穿過雪原。"
@@ -5654,7 +5654,7 @@
     "en": "social",
     "kk": "[ˋsoʃəl]",
     "uk": "/ˈsəʊʃ(ə)l/",
-    "zh": "adj. 社會的、社會地位的、社會階層的、社交的；n. 社交聚會、聯歡會、社會保障",
+    "zh": "adj. 社會的、社交的、社會地位的、社會階層的；n. 社交聚會、聯歡會、社會保障",
     "unit": 18,
     "example": "School clubs help kids build social skills.",
     "exampleZh": "學校社團幫助孩子建立社交技巧。"
@@ -5664,7 +5664,7 @@
     "en": "society",
     "kk": "[səˋsaɪəti]",
     "uk": "/səˈsaɪəti/",
-    "zh": "n. 社會、社群、社團、協會",
+    "zh": "n. 社會、社團、社群、協會",
     "unit": 18,
     "example": "Books play a role in society.",
     "exampleZh": "書籍在社會中扮演著角色。"
@@ -5674,7 +5674,7 @@
     "en": "sock",
     "kk": "[sɑk]",
     "uk": "/sɒk/",
-    "zh": "n. 襪子、短襪、猛擊、重擊；vt. 猛擊、使遭損失、損害、狠打",
+    "zh": "n. 短襪、猛擊、重擊、白色標記；vt. 猛擊、使遭損失、損害、狠打",
     "unit": 18,
     "example": "I lost my left white sock.",
     "exampleZh": "我弄丟了我的左邊白襪子。"
@@ -5684,7 +5684,7 @@
     "en": "soda",
     "kk": "[ˋsodə]",
     "uk": "/ˈsəʊdə/",
-    "zh": "n. 汽水、蘇打、碳酸鈉、蘇打水",
+    "zh": "n. 蘇打、汽水、碳酸鈉、蘇打水",
     "unit": 18,
     "example": "He drank a cold can of soda.",
     "exampleZh": "他喝了一罐冰涼的汽水。"
@@ -5704,7 +5704,7 @@
     "en": "soft",
     "kk": "[sɑft]",
     "uk": "/sɒft/",
-    "zh": "adj. 軟的、易彎曲的、柔軟的、柔滑的；adv. 溫柔地、輕輕地、無力地、愚蠢地；n. 柔性、柔軟的東西、柔軟部分",
+    "zh": "adj. 軟的、溫柔的、易彎曲的、柔軟的；adv. 溫柔地、輕輕地、無力地、愚蠢地；n. 柔性、柔軟的東西、柔軟部分",
     "unit": 18,
     "example": "The cat has very soft white fur.",
     "exampleZh": "這隻貓有非常柔軟的白毛。"
@@ -5724,7 +5724,7 @@
     "en": "solve",
     "kk": "[sɑlv]",
     "uk": "/sɒlv/",
-    "zh": "vt. 解決、處理、解釋、解答",
+    "zh": "vt. 解決、解答、處理、解釋",
     "unit": 18,
     "example": "It isn't going to solve a single thing.",
     "exampleZh": "它不會解決任何一件事。"
@@ -5764,7 +5764,7 @@
     "en": "sometimes",
     "kk": "[səmˋtaɪmz]",
     "uk": "/ˈsʌmtaɪmz/",
-    "zh": "adv. 有時候、有時、間或",
+    "zh": "adv. 有時、偶爾、間或",
     "unit": 18,
     "example": "Life seems so unfair sometimes.",
     "exampleZh": "生活有時顯得如此不公平。"
@@ -5794,7 +5794,7 @@
     "en": "song",
     "kk": "[sɔŋ]",
     "uk": "/sɒŋ/",
-    "zh": "n. 歌、歌曲、歌唱、聲樂",
+    "zh": "n. 歌曲、歌、歌唱、聲樂",
     "unit": 18,
     "example": "She sang a sweet love song today.",
     "exampleZh": "她今天唱了一首甜美的戀歌。"
@@ -5804,7 +5804,7 @@
     "en": "soon",
     "kk": "[sun]",
     "uk": "/suːn/",
-    "zh": "adv. 不久、很快、馬上、早",
+    "zh": "adv. 很快、不久、馬上、早",
     "unit": 18,
     "example": "We will arrive at the station soon.",
     "exampleZh": "我們很快就會到達車站。"
@@ -5824,7 +5824,7 @@
     "en": "sorry",
     "kk": "[ˋsɑri]",
     "uk": "/ˈsɒri/",
-    "zh": "adj. 感到抱歉的、抱歉的、慚愧的、歉疚的；int. 對不起、抱歉、沒聽清、請再講一遍",
+    "zh": "adj. 抱歉、遺憾的、抱歉的、慚愧的；int. 對不起、抱歉、沒聽清、請再講一遍",
     "unit": 18,
     "example": "I am very sorry for any inconvenience this may have caused.",
     "exampleZh": "對於可能由此造成的任何不便，我深感抱歉。"
@@ -5874,7 +5874,7 @@
     "en": "source",
     "kk": "[sɔrs]",
     "uk": "/sɔːs/",
-    "zh": "n. 出處、來源、原因、根源；vt. 獲得、找出……的來源",
+    "zh": "n. 源頭、來源、出處、原因；vt. 獲得、找出……的來源",
     "unit": 18,
     "example": "What is their main source of income?",
     "exampleZh": "他們的主要收入來源是什麼？"
@@ -5904,7 +5904,7 @@
     "en": "space",
     "kk": "[spes]",
     "uk": "/speɪs/",
-    "zh": "n. 空間、空地、空位、處所；vt. 把（某物）隔開、在（詞語等）之間加空格、變得昏昏沉沉、瞪著眼發呆",
+    "zh": "n. 空間、太空、空地、空位；vt. 把（某物）隔開、在（詞語等）之間加空格、變得昏昏沉沉、瞪著眼發呆",
     "unit": 18,
     "example": "There is no space in this car.",
     "exampleZh": "這輛車裡已經沒有空間了。"
@@ -5914,7 +5914,7 @@
     "en": "spaghetti",
     "kk": "[spəˋɡɛti]",
     "uk": "/spəˈɡeti/",
-    "zh": "n. 義大利麵、義大利式細麵條",
+    "zh": "n. 義大利麵條、義大利式細麵條",
     "unit": 18,
     "example": "We eat hot spaghetti for lunch.",
     "exampleZh": "我們午餐吃熱騰騰的義大利麵。"
@@ -5934,7 +5934,7 @@
     "en": "speaker",
     "kk": "[ˋspikɚ]",
     "uk": "/ˈspiːkə(r)/",
-    "zh": "n. 演講者、發言者、說話者、講某種語言的人",
+    "zh": "n. 演講者、揚聲器、發言者、說話者",
     "unit": 18,
     "example": "The guest speaker gave a speech.",
     "exampleZh": "特邀演講者發表了演講。"
@@ -5944,7 +5944,7 @@
     "en": "special",
     "kk": "[ˋspɛʃəl]",
     "uk": "/ˈspeʃ(ə)l/",
-    "zh": "adj. 特別的、特殊的、格外看重的、特別要好的；n. 特色菜、特別節目、特價商品、折扣商品",
+    "zh": "adj. 特殊的、專門的、特別的、格外看重的；n. 特色菜、特別節目、特價商品、折扣商品",
     "unit": 18,
     "example": "Today is a very special day for us.",
     "exampleZh": "今天對我們來說是非常特別的一天。"
@@ -5954,7 +5954,7 @@
     "en": "speech",
     "kk": "[spitʃ]",
     "uk": "/spiːtʃ/",
-    "zh": "n. 演講、演說、發言、談話",
+    "zh": "n. 言論、演講、演說、發言",
     "unit": 18,
     "example": "The leader gave a great short speech.",
     "exampleZh": "領袖發表了一段精彩的簡短演說。"
@@ -5974,7 +5974,7 @@
     "en": "spell",
     "kk": "[spɛl]",
     "uk": "/spel/",
-    "zh": "vt. 拼寫、拼字、拼作；n. 一段時間、咒語、符咒",
+    "zh": "vt. 拼字、拼寫、拼作；n. 一段時間、咒語、符咒",
     "unit": 18,
     "example": "I've never been able to spell.",
     "exampleZh": "我從來都不會拼字。"
@@ -6054,7 +6054,7 @@
     "en": "stage",
     "kk": "[stedʒ]",
     "uk": "/steɪdʒ/",
-    "zh": "n. 舞臺、階段、時期、旅程（或賽跑中）的一段；vt. 上演、演出、主辦、舉行",
+    "zh": "n. 舞台、階段、時期、旅程（或賽跑中）的一段；vt. 上演、演出、主辦、舉行",
     "unit": 18,
     "example": "She sang a song on stage.",
     "exampleZh": "她在舞台上唱了一首歌。"
@@ -6064,7 +6064,7 @@
     "en": "stair",
     "kk": "[stɛr]",
     "uk": "/steə(r)/",
-    "zh": "n. 樓梯、階梯、梯級",
+    "zh": "n. 梯級、樓梯、階梯",
     "unit": 18,
     "example": "He sat on the bottom stair alone.",
     "exampleZh": "他獨自坐在最下方的階梯上。"
@@ -6094,7 +6094,7 @@
     "en": "star",
     "kk": "[stɑr]",
     "uk": "/stɑː(r)/",
-    "zh": "n. 星星、星、恆星、演藝界明星；v. 主演、使主演、給……加上星號、表現傑出；adj. 最好的、最出色的",
+    "zh": "n. 星星、明星、星、恆星；v. 主演、使主演、給……加上星號、表現傑出；adj. 最好的、最出色的",
     "unit": 18,
     "example": "She's a US soap star.",
     "exampleZh": "她是美國肥皂劇明星。"
@@ -6124,7 +6124,7 @@
     "en": "station",
     "kk": "[ˋsteʃən]",
     "uk": "/ˈsteɪʃ(ə)n/",
-    "zh": "n. 車站、電視臺、廣播電臺、站；vt. 駐紮、派駐、派往、安置在",
+    "zh": "n. 車站、電台、電視臺、廣播電臺；vt. 駐紮、派駐、派往、安置在",
     "unit": 18,
     "example": "I will meet you at the train station.",
     "exampleZh": "我會在火車站與你會合。"
@@ -6274,7 +6274,7 @@
     "en": "story",
     "kk": "[ˋstɔri]",
     "uk": "/ˈstɔːri/",
-    "zh": "n. 故事、敘述、新聞報道、描述；v. 用歷史故事畫裝飾",
+    "zh": "n. 故事、樓層、敘述、新聞報道；v. 用歷史故事畫裝飾",
     "unit": 18,
     "example": "Mom told us a funny fairy story.",
     "exampleZh": "媽媽給我們講了一個有趣的童話故事。"
@@ -6284,7 +6284,7 @@
     "en": "stove",
     "kk": "[stov]",
     "uk": "/stəʊv/",
-    "zh": "n. 火爐、爐子、廚灶、爐頭；v. 在爐中對（物體）進行熱處理、煙燻、消毒、在溫室中加速（植物）生長",
+    "zh": "n. 爐灶、爐子、火爐、廚灶；v. 在爐中對（物體）進行熱處理、煙燻、消毒、在溫室中加速（植物）生長",
     "unit": 18,
     "example": "I burned myself on the stove.",
     "exampleZh": "我被爐子燙了。"
@@ -6324,7 +6324,7 @@
     "en": "straw",
     "kk": "[strɔ]",
     "uk": "/strɔː/",
-    "zh": "n. 稻草、麥稈、吸管、稻草色；adj. 稻草的、無價值的",
+    "zh": "n. 稻草、吸管、麥稈、稻草色；adj. 稻草的、無價值的",
     "unit": 18,
     "example": "Drink your milk with a straw.",
     "exampleZh": "用吸管喝你的牛奶。"
@@ -6374,7 +6374,7 @@
     "en": "strong",
     "kk": "[strɔŋ]",
     "uk": "/strɒŋ/",
-    "zh": "adj. 強壯的、健壯的、堅固的、結實的；adv. 強勁地、猛烈地；n. 強勢群體",
+    "zh": "adj. 強壯的、強烈的、健壯的、堅固的；adv. 強勁地、猛烈地；n. 強勢群體",
     "unit": 18,
     "example": "He's the strong silent type.",
     "exampleZh": "他是那種沉默寡言的強者。"
@@ -6414,7 +6414,7 @@
     "en": "style",
     "kk": "[staɪl]",
     "uk": "/staɪl/",
-    "zh": "n. 風格、方式、作風、款式；vt. 設計、給……造型、稱呼、命名",
+    "zh": "n. 風格、樣式、方式、作風；vt. 設計、給……造型、稱呼、命名",
     "unit": 18,
     "example": "I like this new hair style.",
     "exampleZh": "我喜歡這個新髮型。"
@@ -6454,7 +6454,7 @@
     "en": "success",
     "kk": "[səkˋsɛs]",
     "uk": "/səkˈses/",
-    "zh": "n. 成功、勝利、發財、成名",
+    "zh": "n. 成功、成就、勝利、發財",
     "unit": 18,
     "example": "Hard work will bring you success.",
     "exampleZh": "辛勤工作會為你帶來成功。"
@@ -6504,7 +6504,7 @@
     "en": "suggest",
     "kk": "[səˋdʒɛst]",
     "uk": "/səˈdʒest/",
-    "zh": "vt. 建議、提議、推薦、舉薦",
+    "zh": "vt. 建議、暗示、提議、推薦",
     "unit": 18,
     "example": "I suggest we let the matter drop.",
     "exampleZh": "我建議咱們別再提及此事。"
@@ -6544,7 +6544,7 @@
     "en": "Sunday",
     "kk": "[ˋsʌn͵de]",
     "uk": "/ˈsʌndeɪ/",
-    "zh": "n. 星期天、星期日、禮拜日",
+    "zh": "n. 星期日、禮拜日",
     "unit": 18,
     "example": "We work every day except Sunday.",
     "exampleZh": "除了星期日，我們每天都會工作。"
@@ -6554,7 +6554,7 @@
     "en": "sunny",
     "kk": "[ˋsʌni]",
     "uk": "/ˈsʌni/",
-    "zh": "adj. 陽光充足的、暖和的、開朗的、陽光的",
+    "zh": "adj. 晴朗的、陽光充足的、暖和的、開朗的",
     "unit": 18,
     "example": "We went for a walk on sunny days.",
     "exampleZh": "我們在晴朗的日子裡去散步。"
@@ -6564,7 +6564,7 @@
     "en": "super",
     "kk": "[ˋsupɚ]",
     "uk": "/ˈsuːpə(r)/",
-    "zh": "adj. 很、極好的、極優秀的、超級的；adv. 極、極其、非常；n. 警官、警長、管理人、主管",
+    "zh": "adj. 極好的、超級的、棒極了；adv. 極其、非常；n. (口語) 警長、大樓管理員",
     "unit": 18,
     "example": "We had a super time.",
     "exampleZh": "我們度過了一段美好的時光。"
@@ -6574,7 +6574,7 @@
     "en": "supermarket",
     "kk": "[ˋsupɚ͵mɑrkɪt]",
     "uk": "/ˈsuːpəmɑːkɪt/",
-    "zh": "n. 超市、超級市場",
+    "zh": "n. 超級市場、超市",
     "unit": 18,
     "example": "I do a weekly shop at the supermarket.",
     "exampleZh": "我一週上超市一次。"
@@ -6634,7 +6634,7 @@
     "en": "surface",
     "kk": "[ˋsɝfəs]",
     "uk": "/ˈsɜːfɪs/",
-    "zh": "n. 表面、水面、地面、桌面；vi. 浮出水面、顯露、暴露、公開；adj. 表面上的、外表上的、表面的、水陸運輸的",
+    "zh": "n. 表面、水面、地面；vi. 浮出水面、顯露、暴露、公開；adj. 表面上的、外表上的、表面的、水陸運輸的",
     "unit": 18,
     "example": "The table has a smooth surface.",
     "exampleZh": "這張桌子表面很光滑。"
@@ -6744,7 +6744,7 @@
     "en": "symbol",
     "kk": "[ˋsɪmbəl]",
     "uk": "/ˈsɪmb(ə)l/",
-    "zh": "n. 象徵、標誌、符號、代表性的人",
+    "zh": "n. 符號、象徵、標誌、代表性的人",
     "unit": 18,
     "example": "The red rose is a symbol.",
     "exampleZh": "紅玫瑰是一種象徵。"
@@ -6754,7 +6754,7 @@
     "en": "system",
     "kk": "[ˋsɪstəm]",
     "uk": "/ˈsɪstəm/",
-    "zh": "n. 系統、體制、制度、方式",
+    "zh": "n. 系統、制度、體制、方式",
     "unit": 18,
     "example": "Our school has a good system.",
     "exampleZh": "我們學校有一套良好的制度。"
@@ -6764,7 +6764,7 @@
     "en": "table",
     "kk": "[ˋtebəl]",
     "uk": "/ˈteɪb(ə)l/",
-    "zh": "n. 桌子、臺子、一桌人、一桌酒席；vt. 正式提交討論、擱置、暫緩審議、用寬貼邊加固",
+    "zh": "n. 桌子、表格、臺子、一桌人；vt. 正式提交討論、擱置、暫緩審議、用寬貼邊加固",
     "unit": 18,
     "example": "Put the book on the round table.",
     "exampleZh": "把書放在圓桌上面。"
@@ -6784,7 +6784,7 @@
     "en": "take",
     "kk": "[tek]",
     "uk": "/teɪk/",
-    "zh": "vt. 拿、攜帶、拿走、帶去；n. 鏡頭、場景、收入量、看法",
+    "zh": "vt. 拿、服用、攜帶、拿走；n. 鏡頭、場景、收入量、看法",
     "unit": 18,
     "example": "Take whatever action is needed.",
     "exampleZh": "採取任何需要的行動。"
@@ -6794,7 +6794,7 @@
     "en": "tale",
     "kk": "[tel]",
     "uk": "/teɪl/",
-    "zh": "n. 故事、傳說、描述、講述",
+    "zh": "n. 故事、傳說、謊話、描述",
     "unit": 18,
     "example": "He told us an old fairy tale.",
     "exampleZh": "他給我們講了一個古老的童話故事。"
@@ -6804,7 +6804,7 @@
     "en": "talent",
     "kk": "[ˋtælənt]",
     "uk": "/ˈtælənt/",
-    "zh": "n. 才能、天賦、天才、人才",
+    "zh": "n. 天才、天賦、才能、人才",
     "unit": 18,
     "example": "He's got lots of talent.",
     "exampleZh": "他有許多天賦。"
@@ -6824,7 +6824,7 @@
     "en": "talkative",
     "kk": "[ˋtɔkətɪv]",
     "uk": "/ˈtɔːkətɪv/",
-    "zh": "adj. 多話的、愛說話的、健談的",
+    "zh": "adj. 好說話的、愛說話的、健談的",
     "unit": 18,
     "example": "My little brother is very talkative at dinner.",
     "exampleZh": "我的小弟弟在吃晚餐時非常健談多話。"
@@ -6854,7 +6854,7 @@
     "en": "tank",
     "kk": "[tæŋk]",
     "uk": "/tæŋk/",
-    "zh": "n. 坦克、箱、罐、缸；vi. 徹底失敗、破產、故意輸掉比賽、給車輛加油",
+    "zh": "n. 槽、坦克、箱、罐；vi. 徹底失敗、破產、故意輸掉比賽、給車輛加油",
     "unit": 18,
     "example": "The tank became bogged down in mud.",
     "exampleZh": "坦克陷入了爛泥中。"
@@ -6914,7 +6914,7 @@
     "en": "teach",
     "kk": "[titʃ]",
     "uk": "/tiːtʃ/",
-    "zh": "vt. 教導、教授、講授、教會；n. 教師",
+    "zh": "vt. 教授、教導、講授、教會；n. 教師",
     "unit": 18,
     "example": "My mother will teach me to cook.",
     "exampleZh": "我媽媽會教我做飯。"
@@ -6924,7 +6924,7 @@
     "en": "teacher",
     "kk": "[ˋtitʃɚ]",
     "uk": "/ˈtiːtʃə(r)/",
-    "zh": "n. 老師、教師、教員、給人教益的事物",
+    "zh": "n. 教師、老師、教員、給人教益的事物",
     "unit": 18,
     "example": "My teacher is kind to every student.",
     "exampleZh": "我的老師對每位學生都很好。"
@@ -6934,7 +6934,7 @@
     "en": "team",
     "kk": "[tim]",
     "uk": "/tiːm/",
-    "zh": "n. 隊伍、隊、小組、工作隊；v. 協作、合作、使（顏色、布料、衣服）相配、一組牲口",
+    "zh": "n. 團隊、小組、隊、工作隊；v. 協作、合作、使（顏色、布料、衣服）相配、一組牲口",
     "unit": 18,
     "example": "Our ball team won the cup.",
     "exampleZh": "我們的球隊贏得了獎盃。"
@@ -6964,7 +6964,7 @@
     "en": "teenager",
     "kk": "[ˋti͵nedʒɚ]",
     "uk": "/ˈtiːneɪdʒə(r)/",
-    "zh": "n. 青少年、十幾歲的孩子",
+    "zh": "n. 十幾歲孩子、青少年、十幾歲的孩子",
     "unit": 18,
     "example": "The teenager plays with his dog.",
     "exampleZh": "那名青少年正在和他的狗玩耍。"
@@ -7014,7 +7014,7 @@
     "en": "temple",
     "kk": "[ˋtɛmpəl]",
     "uk": "/ˈtemp(ə)l/",
-    "zh": "n. 廟宇、寺院、太陽穴、鬢角",
+    "zh": "n. 廟宇、神殿、寺院、太陽穴",
     "unit": 18,
     "example": "We saw an old stone temple.",
     "exampleZh": "我們看到了一座古老的石頭寺廟。"
@@ -7024,7 +7024,7 @@
     "en": "ten",
     "kk": "[tɛn]",
     "uk": "/ten/",
-    "zh": "num. 十個、十；adj. 十的；det. 十個",
+    "zh": "num. 十、十個；adj. 十的；det. 十個",
     "unit": 18,
     "example": "I have ten books in my room.",
     "exampleZh": "我的房間裡有十本書。"
@@ -7054,7 +7054,7 @@
     "en": "term",
     "kk": "[tɝm]",
     "uk": "/tɜːm/",
-    "zh": "n. 任期、詞語、術語、措辭；vt. 把……稱為",
+    "zh": "n. 學期、術語、詞語、措辭；vt. 把……稱為",
     "unit": 18,
     "example": "It's nearly the end of term.",
     "exampleZh": "學期快要結束了。"
@@ -7074,7 +7074,7 @@
     "en": "terrific",
     "kk": "[tɚˋɪfɪk]",
     "uk": "/təˈrɪfɪk/",
-    "zh": "adj. 很棒的、極好的、了不起的、極大的",
+    "zh": "adj. 非常好的、可怕的、極好的、了不起的",
     "unit": 18,
     "example": "She's doing a terrific job.",
     "exampleZh": "她做得很好。"
@@ -7104,7 +7104,7 @@
     "en": "than",
     "kk": "[ðæn]",
     "uk": "/ðæn; ðən/",
-    "zh": "n. 山羊",
+    "zh": "prep. 比、多於、超過；conj. 比、多於",
     "unit": 18,
     "example": "My older brother is taller than me.",
     "exampleZh": "我哥哥比我還要高。"
@@ -7144,7 +7144,7 @@
     "en": "theater",
     "kk": "[ˋθiətɚ]",
     "uk": "/ˈθɪətə(r)/",
-    "zh": "n. 電影院、戲院、劇場、戲劇",
+    "zh": "n. 戲院、劇院、電影院、劇場",
     "unit": 18,
     "example": "We went to the movie theater.",
     "exampleZh": "我們去了電影院。"
@@ -7154,7 +7154,7 @@
     "en": "then",
     "kk": "[ðɛn]",
     "uk": "/ðen/",
-    "zh": "adv. 然後、當時、到那時、接下來；adj. 當時（任職等）的",
+    "zh": "adv. 然後、那時、當時、到那時；adj. 當時（任職等）的",
     "unit": 18,
     "example": "We ate dinner and then went home.",
     "exampleZh": "我們吃了晚餐，然後回家了。"
@@ -7194,7 +7194,7 @@
     "en": "thick",
     "kk": "[θɪk]",
     "uk": "/θɪk/",
-    "zh": "adj. 厚的、粗的、有……厚的、厚重的；n. 在……最激烈時、在……最緊張的時刻；adv. 厚地、濃密地、大量地",
+    "zh": "adj. 粗的、厚的、有……厚的、厚重的；n. 在……最激烈時、在……最緊張的時刻；adv. 厚地、濃密地、大量地",
     "unit": 18,
     "example": "Put on a thick coat in winter.",
     "exampleZh": "冬天穿上一件厚外套吧。"
@@ -7214,7 +7214,7 @@
     "en": "thin",
     "kk": "[θɪn]",
     "uk": "/θɪn/",
-    "zh": "adj. 薄的、細的、瘦的、稀疏的；vt. 使稀薄、使變淡、變稀疏、（擁擠的人群、植物、物品等）變稀少；adv. 薄薄地",
+    "zh": "adj. 瘦的、薄的、細的、稀疏的；vt. 使稀薄、使變淡、變稀疏、（擁擠的人群、植物、物品等）變稀少；adv. 薄薄地",
     "unit": 18,
     "example": "The book has a thin paper cover.",
     "exampleZh": "這本書有一個薄薄的紙封面。"
@@ -7224,7 +7224,7 @@
     "en": "thing",
     "kk": "[θɪŋ]",
     "uk": "/θɪŋ/",
-    "zh": "n. 事情、東西、物、物體",
+    "zh": "n. 事物、東西、物、物體",
     "unit": 18,
     "example": "This small thing is very useful to me.",
     "exampleZh": "這個小東西對我很有用。"
@@ -7314,7 +7314,7 @@
     "en": "thought",
     "kk": "[θɔt]",
     "uk": "/θɔːt/",
-    "zh": "n. 想法、看法、主意、考慮；v. 認為、覺得、思考、考慮",
+    "zh": "n. 思想、想法、看法、主意；v. 認為、覺得、思考、考慮",
     "unit": 18,
     "example": "I thought of a great new idea.",
     "exampleZh": "我想出了一個很棒的新點子。"
@@ -7464,7 +7464,7 @@
     "en": "tiny",
     "kk": "[ˋtaɪni]",
     "uk": "/ˈtaɪni/",
-    "zh": "adj. 極小的、微小的；n. 幼童",
+    "zh": "adj. 微小的、極小的；n. 幼童",
     "unit": 18,
     "example": "An ant is a tiny little animal.",
     "exampleZh": "螞蟻是一種微小的小動物。"
@@ -7504,7 +7504,7 @@
     "en": "to",
     "kk": "[tu]",
     "uk": "/tuː/",
-    "zh": "prep. 向、朝、位於……、到某處；adv. 關上",
+    "zh": "prep. 到、向、朝、位於……；adv. 關上",
     "unit": 18,
     "example": "We walk to school every morning together.",
     "exampleZh": "我們每天早上一齊走路去學校。"
@@ -7554,7 +7554,7 @@
     "en": "together",
     "kk": "[təˋɡɛðɚ]",
     "uk": "/təˈɡeðə(r)/",
-    "zh": "adv. 一起、在一起、共同、以使接觸；adj. 自信而有條理的、沉穩的、結婚的、有性關係（或戀愛關係）的",
+    "zh": "adv. 一同、在一起、共同、以使接觸；adj. 自信而有條理的、沉穩的、結婚的、有性關係（或戀愛關係）的",
     "unit": 18,
     "example": "Fate had thrown them together.",
     "exampleZh": "命運讓他們走到了一起。"
@@ -7614,7 +7614,7 @@
     "en": "too",
     "kk": "[tu]",
     "uk": "/tuː/",
-    "zh": "adv. 也、太、過於、過度",
+    "zh": "adv. 也是、過於、太、過度",
     "unit": 18,
     "example": "This cup of tea is too hot.",
     "exampleZh": "這杯茶太燙了。"
@@ -7674,7 +7674,7 @@
     "en": "topic",
     "kk": "[ˋtɑpɪk]",
     "uk": "/ˈtɒpɪk/",
-    "zh": "n. 主題、題目、一般規則、總論",
+    "zh": "n. 論題、話題、題目、主題",
     "unit": 18,
     "example": "We pick a new topic today.",
     "exampleZh": "我們今天選定了一個新主題。"
@@ -7704,7 +7704,7 @@
     "en": "toward",
     "kk": "[təˋwɔrd]",
     "uk": "/təˈwɔːd/",
-    "zh": "prep. 朝、向、往、趨向；adj. 即將來到的、進行中的",
+    "zh": "prep. 向、對、朝、往；adj. 即將來到的、進行中的",
     "unit": 18,
     "example": "She turned back toward home.",
     "exampleZh": "她轉身朝家的方向走去。"
@@ -7874,7 +7874,7 @@
     "en": "tree",
     "kk": "[tri]",
     "uk": "/triː/",
-    "zh": "n. 樹、樹狀物、樹狀圖、樹形結構；vt. 把（動物）趕上樹、使陷入困境；vi. 爬上樹、逃上樹",
+    "zh": "n. 樹木、樹、樹狀物、樹狀圖；vt. 把（動物）趕上樹、使陷入困境；vi. 爬上樹、逃上樹",
     "unit": 18,
     "example": "Let's rest under yonder tree.",
     "exampleZh": "我們在那棵樹下休息吧。"
@@ -7924,7 +7924,7 @@
     "en": "trousers",
     "kk": "[ˋtraʊzɚz]",
     "uk": "/ˈtraʊzəz/",
-    "zh": "n. 褲子、長褲",
+    "zh": "n. 長褲、褲子",
     "unit": 18,
     "example": "These trousers are a bit tight.",
     "exampleZh": "這條褲子有點緊。"
@@ -7944,7 +7944,7 @@
     "en": "true",
     "kk": "[tru]",
     "uk": "/truː/",
-    "zh": "adj. 真實的、正確的；adv. 真實地、準確地；n. 真實、準確；vt. 裝準；v. 裝準",
+    "zh": "adj. 真實的、正確的；adv. 真實地、準確地；n. 真實、準確；vt. 裝準",
     "unit": 18,
     "example": "The story in the book is true.",
     "exampleZh": "書裡的那個故事是真的。"
@@ -8124,7 +8124,7 @@
     "en": "ugly",
     "kk": "[ˋʌɡli]",
     "uk": "/ˈʌɡli/",
-    "zh": "adj. 醜陋的、難看的、令人厭惡的、邪惡的",
+    "zh": "adj. 醜的、醜陋的、難看的、令人厭惡的",
     "unit": 18,
     "example": "The old dirty wall looked very ugly.",
     "exampleZh": "那堵又舊又髒的牆看起來非常難看。"
@@ -8144,7 +8144,7 @@
     "en": "uncle",
     "kk": "[ˋʌŋkəl]",
     "uk": "/ˈʌŋk(ə)l/",
-    "zh": "n. 叔伯、叔叔、伯父、伯伯",
+    "zh": "n. 叔叔、伯父、伯伯、舅父",
     "unit": 18,
     "example": "My uncle taught me to juggle.",
     "exampleZh": "我叔叔教我雜耍。"
@@ -8174,7 +8174,7 @@
     "en": "understand",
     "kk": "[͵ʌndɚˋstænd]",
     "uk": "/ˌʌndəˈstænd/",
-    "zh": "vt. 了解、理解、懂得、瞭解",
+    "zh": "vt. 理解、明白、懂得、瞭解",
     "unit": 18,
     "example": "I do not understand this math question.",
     "exampleZh": "我不理解這道數學題。"
@@ -8184,7 +8184,7 @@
     "en": "underwear",
     "kk": "[ˋʌndɚ͵wɛr]",
     "uk": "/ˈʌndəweə(r)/",
-    "zh": "n. 內衣褲、內衣、襯衣",
+    "zh": "n. 內衣、襯衣",
     "unit": 18,
     "example": "She packed one change of underwear.",
     "exampleZh": "她打行李時帶了一套換洗的內衣。"
@@ -8304,7 +8304,7 @@
     "en": "useful",
     "kk": "[ˋjusfəl]",
     "uk": "/ˈjuːsf(ə)l/",
-    "zh": "adj. 有用的、有益的、好的、熟練的",
+    "zh": "adj. 有用的、實用的、有益的、好的",
     "unit": 18,
     "example": "This small tool is very useful at home.",
     "exampleZh": "這件小工具在家裡非常實用。"
@@ -8314,7 +8314,7 @@
     "en": "usual",
     "kk": "[ˋjuʒəwəl]",
     "uk": "/ˈjuːʒuəl/",
-    "zh": "adj. 通常的、慣常的；n. 常事、常喝的飲料（尤指酒）",
+    "zh": "adj. 通常的、平常的、慣常的；n. 常事、常喝的飲料（尤指酒）",
     "unit": 18,
     "example": "He came home later than usual.",
     "exampleZh": "他比平常回家晚了。"
@@ -8324,7 +8324,7 @@
     "en": "usually",
     "kk": "[ˋjuʒəwəli]",
     "uk": "/ˈjuːʒuəli; ˈjuːʒəli/",
-    "zh": "adv. 通常、通常地、經常地",
+    "zh": "adv. 通常、一般、通常地、經常地",
     "unit": 18,
     "example": "I usually walk to school alone.",
     "exampleZh": "我通常獨自走路上學。"
@@ -8384,7 +8384,7 @@
     "en": "vendor",
     "kk": "[ˋvɛndɚ]",
     "uk": "/ˈvendə(r)/",
-    "zh": "n. 攤販、小販、賣主、賣方",
+    "zh": "n. 小販、攤販、賣主、賣方",
     "unit": 18,
     "example": "I think the vendor is still there.",
     "exampleZh": "我想那個小販應該還在那裡。"
@@ -8424,7 +8424,7 @@
     "en": "video",
     "kk": "[ˋvɪdio]",
     "uk": "/ˈvɪdiəʊ/",
-    "zh": "n. 錄影帶、錄影、音樂錄影、錄影機；adj. 電視的、影片的、影象的、畫面的；vt. 錄下、拍攝",
+    "zh": "n. 視頻、錄像、錄影、錄影帶；adj. 電視的、影片的、影象的、畫面的；vt. 錄下、拍攝",
     "unit": 18,
     "example": "Do we have a blank video ?",
     "exampleZh": "我們有空白錄影帶嗎？"
@@ -8434,7 +8434,7 @@
     "en": "village",
     "kk": "[ˋvɪlədʒ]",
     "uk": "/ˈvɪlɪdʒ/",
-    "zh": "n. 村莊、鄉村、在鄉村的、鄉村的",
+    "zh": "n. 村莊、村子、鄉村、在鄉村的",
     "unit": 18,
     "example": "They live in a quiet village.",
     "exampleZh": "他們住在一個寧靜的村莊裡。"
@@ -8494,7 +8494,7 @@
     "en": "voice",
     "kk": "[vɔɪs]",
     "uk": "/vɔɪs/",
-    "zh": "n. 聲音、嗓音、說話聲、歌唱聲；vt. 表達、吐露、發濁音、給（管風琴）調音",
+    "zh": "n. 聲音、發言權、嗓音、說話聲；vt. 表達、吐露、發濁音、給（管風琴）調音",
     "unit": 18,
     "example": "Her voice sounds very sweet and clear.",
     "exampleZh": "她的嗓音聽起來非常甜美清晰。"
@@ -8544,7 +8544,7 @@
     "en": "waiter",
     "kk": "[ˋwetɚ]",
     "uk": "/ˈweɪtə(r)/",
-    "zh": "n. 服務生、服務員、侍者",
+    "zh": "n. 男服務生、服務員、侍者",
     "unit": 18,
     "example": "The polite waiter gave us water.",
     "exampleZh": "那位有禮貌的服務生給了我們水。"
@@ -8584,7 +8584,7 @@
     "en": "wall",
     "kk": "[wɔl]",
     "uk": "/wɔːl/",
-    "zh": "n. 牆壁、城牆、圍牆、牆；v. 用牆圍住、砌牆封閉、砌牆堵住、把……關起來；adj. 牆壁的",
+    "zh": "n. 牆、圍牆、城牆、壁；v. 用牆圍住、砌牆封閉、砌牆堵住、把……關起來；adj. 牆壁的",
     "unit": 18,
     "example": "There is a big clock on the wall.",
     "exampleZh": "牆上掛著一個大時鐘。"
@@ -8704,7 +8704,7 @@
     "en": "way",
     "kk": "[we]",
     "uk": "/weɪ/",
-    "zh": "n. 方式、方法、手段、習俗；adv. 大大地、遠遠地、非常、很；adj. 途中的",
+    "zh": "n. 方法、道路、手段、習俗；adv. 大大地、遠遠地、非常、很；adj. 途中的",
     "unit": 18,
     "example": "This is the fastest way to get there.",
     "exampleZh": "這是到達那裡最快的方法。"
@@ -8714,7 +8714,7 @@
     "en": "weak",
     "kk": "[wik]",
     "uk": "/wiːk/",
-    "zh": "adj. 虛弱的、無力的、不牢固的、懦弱的；n. 窮人、弱者、病人",
+    "zh": "adj. 弱的、虛弱的、無力的、不牢固的；n. 窮人、弱者、病人",
     "unit": 18,
     "example": "He feels weak after the long walk.",
     "exampleZh": "長途步行後他覺得很虛弱。"
@@ -8734,7 +8734,7 @@
     "en": "wear",
     "kk": "[wɛr]",
     "uk": "/weə(r)/",
-    "zh": "v. 穿戴著、穿、戴、蓄；n. 服裝、穿、戴、磨損",
+    "zh": "v. 穿、戴、蓄、留；n. 服裝、穿、戴、磨損",
     "unit": 18,
     "example": "She doesn't often wear heels.",
     "exampleZh": "她不常穿高跟鞋。"
@@ -8754,7 +8754,7 @@
     "en": "wedding",
     "kk": "[ˋwɛdɪŋ]",
     "uk": "/ˈwedɪŋ/",
-    "zh": "n. 結婚儀式、婚禮、結婚慶典、婚禮的；v. 結婚、娶、嫁、結合",
+    "zh": "n. 婚禮、結婚慶典、婚禮的、結婚紀念；v. 結婚、娶、嫁、結合",
     "unit": 18,
     "example": "They had a simple wedding in church.",
     "exampleZh": "他們在教堂舉行了簡單的婚禮。"
@@ -8784,7 +8784,7 @@
     "en": "weekday",
     "kk": "[ˋwik͵de]",
     "uk": "/ˈwiːkdeɪ/",
-    "zh": "n. 平日、普通日、工作日；adj. 平日的、工作日的",
+    "zh": "n. 工作日、平日、普通日；adj. 平日的、工作日的",
     "unit": 18,
     "example": "I go to school every weekday.",
     "exampleZh": "我每個平日都去上學。"
@@ -8804,7 +8804,7 @@
     "en": "weight",
     "kk": "[wet]",
     "uk": "/weɪt/",
-    "zh": "n. 重量、分量、體重、重；vt. 加重量於、使變重、使傾向於……、重視",
+    "zh": "n. 重量、重要性、分量、體重；vt. 加重量於、使變重、使傾向於……、重視",
     "unit": 18,
     "example": "He wants to lose weight before summer.",
     "exampleZh": "他想在夏天來臨前減輕體重。"
@@ -8904,7 +8904,7 @@
     "en": "whether",
     "kk": "[ˋwɛðɚ]",
     "uk": "/ˈweðə(r)/",
-    "zh": "conj. 是否、不管、無論；pron. 兩個中的哪一個",
+    "zh": "conj. 是否、無論、不管；pron. 兩個中的哪一個",
     "unit": 18,
     "example": "Check whether a fuse has blown.",
     "exampleZh": "檢查保險絲是否熔斷。"
@@ -8944,7 +8944,7 @@
     "en": "who",
     "kk": "[hu]",
     "uk": "/huː/",
-    "zh": "pron. 誰、什麼人、……的人",
+    "zh": "pron. 誰、那個人、什麼人、……的人",
     "unit": 18,
     "example": "Who is at the front door?",
     "exampleZh": "是誰在前門？"
@@ -8974,7 +8974,7 @@
     "en": "why",
     "kk": "[waɪ]",
     "uk": "/waɪ/",
-    "zh": "adv. 為何、為什麼、何必、……的原因；n. 理由、原因；int. 哎呀",
+    "zh": "adv. 為什麼、為何、何必、……的原因；n. 理由、原因；int. 哎呀",
     "unit": 18,
     "example": "Tell me why you are late today.",
     "exampleZh": "告訴我你今天為什麼遲到了。"
@@ -8994,7 +8994,7 @@
     "en": "wife",
     "kk": "[waɪf]",
     "uk": "/waɪf/",
-    "zh": "n. 妻子、已婚婦女、夫人",
+    "zh": "n. 妻子、太太、已婚婦女、夫人",
     "unit": 18,
     "example": "His wife is a doctor at the hospital.",
     "exampleZh": "他的妻子是那家醫院的醫生。"
@@ -9044,7 +9044,7 @@
     "en": "window",
     "kk": "[ˋwɪndo]",
     "uk": "/ˈwɪndəʊ/",
-    "zh": "n. 窗戶、窗、窗玻璃、視窗",
+    "zh": "n. 窗戶、視窗、窗、窗玻璃",
     "unit": 18,
     "example": "Please open the window to let air in.",
     "exampleZh": "請打開窗戶讓空氣進來。"
@@ -9054,7 +9054,7 @@
     "en": "windy",
     "kk": "[ˋwɪndi]",
     "uk": "/ˈwɪndi/",
-    "zh": "adj. 風大的、多風的、誇誇其談的、空話連篇的",
+    "zh": "adj. 多風的、風大的、誇誇其談的、空話連篇的",
     "unit": 18,
     "example": "It was windy and Jake felt cold.",
     "exampleZh": "風很大，傑克感到很冷。"
@@ -9084,7 +9084,7 @@
     "en": "winner",
     "kk": "[ˋwɪnɚ]",
     "uk": "/ˈwɪnə(r)/",
-    "zh": "n. 優勝者、獲勝的人、致勝的一分、制勝的進球",
+    "zh": "n. 贏家、獲勝的人、優勝者、致勝的一分",
     "unit": 18,
     "example": "The winner scored 10 pts.",
     "exampleZh": "獲勝者得了10分。"
@@ -9114,7 +9114,7 @@
     "en": "wise",
     "kk": "[waɪz]",
     "uk": "/waɪz/",
-    "zh": "adj. 明智的、高明的、有學問的、精通的；v. 瞭解、知道",
+    "zh": "adj. 有智慧的、明智的、高明的、有學問的；v. 瞭解、知道",
     "unit": 18,
     "example": "The old man gave us wise advice.",
     "exampleZh": "那位老人給了我們明智的建議。"
@@ -9134,7 +9134,7 @@
     "en": "with",
     "kk": "[wɪð]",
     "uk": "/wɪð/",
-    "zh": "prep. 有、用、和……在一起、與……一同",
+    "zh": "prep. 和、用、和……在一起、與……一同",
     "unit": 18,
     "example": "He's more comfortable with computers than with people.",
     "exampleZh": "與人相處相比，他更喜歡與電腦相處。"
@@ -9164,7 +9164,7 @@
     "en": "woman",
     "kk": "[ˋwʊmən]",
     "uk": "/ˈwʊmən/",
-    "zh": "n. 女人、成年女子、婦女、女性；v. 使女性化、配備女性員工、使（某人）與女性交往",
+    "zh": "n. 女人、婦女、成年女子、女性；v. 使女性化、配備女性員工、使（某人）與女性交往",
     "unit": 18,
     "example": "That kind woman helps poor children.",
     "exampleZh": "那位好心的女士幫助貧困的孩童。"
@@ -9184,7 +9184,7 @@
     "en": "wonderful",
     "kk": "[ˋwʌndɚfəl]",
     "uk": "/ˈwʌndəf(ə)l/",
-    "zh": "adj. 極好的、絕妙的、令人驚歎的",
+    "zh": "adj. 很棒的、奇妙的、絕妙的、令人驚歎的",
     "unit": 18,
     "example": "They've got a wonderful house.",
     "exampleZh": "他們有一棟很棒的房子。"
@@ -9194,7 +9194,7 @@
     "en": "wood",
     "kk": "[wʊd]",
     "uk": "/wʊd/",
-    "zh": "n. 木頭、木材、木料、樹林；adj. 木製的、用來切割或加工木材的、用木材做燃料的；v. 收集木材、植林於、給……新增木柴",
+    "zh": "n. 木頭、森林、木材、木料；adj. 木製的、用來切割或加工木材的、用木材做燃料的；v. 收集木材、植林於、給……新增木柴",
     "unit": 18,
     "example": "This small chair is made of wood.",
     "exampleZh": "這把小椅子是由木頭製成的。"
@@ -9204,7 +9204,7 @@
     "en": "wool",
     "kk": "[wʊl]",
     "uk": "/wʊl/",
-    "zh": "n. 羊毛、動物毛、毛線、絨線",
+    "zh": "n. 羊毛、毛織品、動物毛、毛線",
     "unit": 18,
     "example": "This scarf is 100% wool.",
     "exampleZh": "這條披肩是純毛的。"
@@ -9214,7 +9214,7 @@
     "en": "word",
     "kk": "[wɝd]",
     "uk": "/wɜːd/",
-    "zh": "n. 字、詞、單詞、話；v. 措辭、用詞；int. 就是、說得對",
+    "zh": "n. 單字、話語、字、詞；v. 措辭、用詞；int. 就是、說得對",
     "unit": 18,
     "example": "I do not know this English word.",
     "exampleZh": "我不認得這個英文單字。"
@@ -9234,7 +9234,7 @@
     "en": "worker",
     "kk": "[ˋwɝkɚ]",
     "uk": "/ˈwɜːkə(r)/",
-    "zh": "n. 工人、工作者、工作人員、勞工",
+    "zh": "n. 工人、員工、工作者、工作人員",
     "unit": 18,
     "example": "She was a zealous worker for charity.",
     "exampleZh": "她是一位熱心慈善事業的工作者。"
@@ -9244,7 +9244,7 @@
     "en": "world",
     "kk": "[wɝld]",
     "uk": "/wɜːld/",
-    "zh": "n. 世界、地球、天下、星球；adj. 世界上最重要的、世界聞名的、世界（性）的、環球的",
+    "zh": "n. 世界、領域、地球、天下；adj. 世界上最重要的、世界聞名的、世界（性）的、環球的",
     "unit": 18,
     "example": "She has three world titles.",
     "exampleZh": "她擁有三個世界冠軍。"
@@ -9304,7 +9304,7 @@
     "en": "write",
     "kk": "[raɪt]",
     "uk": "/raɪt/",
-    "zh": "v. 寫、寫作、編寫、寫道",
+    "zh": "v. 寫、書寫、寫作、編寫",
     "unit": 18,
     "example": "Write me while you're away.",
     "exampleZh": "你不在的時候寫信給我。"
@@ -9314,7 +9314,7 @@
     "en": "writer",
     "kk": "[ˋraɪtɚ]",
     "uk": "/ˈraɪtə(r)/",
-    "zh": "n. 作者、作家、執筆者、撰寫人",
+    "zh": "n. 作家、作者、執筆者、撰寫人",
     "unit": 18,
     "example": "The famous writer wrote many good books.",
     "exampleZh": "那位知名作家寫了許多好書。"
@@ -9344,7 +9344,7 @@
     "en": "year",
     "kk": "[jɪr]",
     "uk": "/jɪə(r)/",
-    "zh": "n. 年、日曆年、一年時間、與某事相關的一年",
+    "zh": "n. 年、年度、日曆年、一年時間",
     "unit": 18,
     "example": "We had a great trip this year.",
     "exampleZh": "我們今年去了一趟很棒的旅行。"
@@ -9364,7 +9364,7 @@
     "en": "yes",
     "kk": "[jɛs]",
     "uk": "/jes/",
-    "zh": "adv. 是的、是、對、是嗎？；n. 是、肯定答覆、贊成票",
+    "zh": "adv. 是的、是、對；n. 是、肯定答覆、贊成票",
     "unit": 18,
     "example": "Yes, there's plenty of room.",
     "exampleZh": "是的，有足夠的空間。"
@@ -9404,7 +9404,7 @@
     "en": "youth",
     "kk": "[juθ]",
     "uk": "/juːθ/",
-    "zh": "n. 青春、青少年時期、早期、初期",
+    "zh": "n. 青少年、青少年時代、青少年時期、早期",
     "unit": 18,
     "example": "He lost his youth too soon.",
     "exampleZh": "他太早失去了青春年華。"

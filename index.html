@@ -13326,13 +13326,13 @@ function cleanupMasteredMistakes() {
             if (elLevel3) elLevel3.innerText = `${totalLevel3} 字`;
             if (elLevel3Sub) {
                 const pct = totalCumulative > 0 ? Math.round((totalLevel3 / totalCumulative) * 100) : 0;
-                elLevel3Sub.innerText = totalCumulative > 0 ? `穩固率 ${pct}%` : `LV3 穩固期`;
+                elLevel3Sub.innerText = `穩固率 ${pct}%`;
             }
 
             if (elMastered) elMastered.innerText = `${totalMastered} 字`;
             if (elMasteredSub) {
                 const pct = totalCumulative > 0 ? Math.round((totalMastered / totalCumulative) * 100) : 0;
-                elMasteredSub.innerText = totalCumulative > 0 ? `掌握率 ${pct}%` : `LV5 熟練掌握`;
+                elMasteredSub.innerText = `掌握率 ${pct}%`;
             }
 
             if (elAvg) elAvg.innerText = `${avgDaily} 字`;

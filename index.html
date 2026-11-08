@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261108V15';
+        const APP_BUILD_VERSION = '20261108V16';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -78,20 +78,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261108V15"></script>
-    <script src="toeic_data.js?v=20261108V15"></script>
-    <script src="jh_data.js?v=20261108V15"></script>
-    <script src="listening_data.js?v=20261108V15"></script>
-    <script src="listening_words_data.js?v=20261108V15"></script>
-    <script src="uk_phonetics_manifest.js?v=20261108V15"></script>
-    <script src="words_audio_manifest.js?v=20261108V15"></script>
-    <script src="examples_audio_manifest.js?v=20261108V15"></script>
-    <script src="zh_audio_manifest.js?v=20261108V15"></script>
-    <script src="collocations_audio_manifest.js?v=20261108V15"></script>
-    <script src="syn_ant_data.js?v=20261108V15"></script>
-    <script src="synonyms_unit8_data.js?v=20261108V15"></script>
-    <script src="examples_unit9_data.js?v=20261108V15"></script>
-    <script src="game_whack.js?v=20261108V15"></script>
+    <script src="words_data.js?v=20261108V16"></script>
+    <script src="toeic_data.js?v=20261108V16"></script>
+    <script src="jh_data.js?v=20261108V16"></script>
+    <script src="listening_data.js?v=20261108V16"></script>
+    <script src="listening_words_data.js?v=20261108V16"></script>
+    <script src="uk_phonetics_manifest.js?v=20261108V16"></script>
+    <script src="words_audio_manifest.js?v=20261108V16"></script>
+    <script src="examples_audio_manifest.js?v=20261108V16"></script>
+    <script src="zh_audio_manifest.js?v=20261108V16"></script>
+    <script src="collocations_audio_manifest.js?v=20261108V16"></script>
+    <script src="syn_ant_data.js?v=20261108V16"></script>
+    <script src="synonyms_unit8_data.js?v=20261108V16"></script>
+    <script src="examples_unit9_data.js?v=20261108V16"></script>
+    <script src="game_whack.js?v=20261108V16"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -3538,9 +3538,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261108V15</span>
+                        <span id="app-version-display">版本 20261108V16</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261108V15</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261108V16</p>
                 </div>
             </div>
         </div>
@@ -5095,6 +5095,14 @@
                     p.updatedAt = Date.now();
                     changed = true;
                     clampedCount++;
+                } else if (p && !p.lv45Earned && (p.everMastered || p.masteredDay || p.lastRelapseDay || (Array.isArray(p.relapses) && p.relapses.length > 0))) {
+                    // 清除舊體系遺留的「LV5 完訓 / 原本對又錯」殘留標記，避免降級後被誤判為 LV5 失誤
+                    delete p.everMastered;
+                    delete p.masteredDay;
+                    delete p.lastRelapseDay;
+                    delete p.relapses;
+                    p.updatedAt = Date.now();
+                    changed = true;
                 }
             }
 
@@ -13034,8 +13042,7 @@ function cleanupMasteredMistakes() {
                 if (!p || p.level >= MAX_LEVEL) return false;
                 return (Array.isArray(p.relapses) && p.relapses.length > 0) || 
                        p.everMastered || 
-                       (p.masteredDay && p.lastMistakeDay && p.lastMistakeDay >= p.masteredDay) ||
-                       (Array.isArray(p.studyDays) && p.studyDays.length >= 5 && p.lastMistakeDay);
+                       (p.masteredDay && p.lastMistakeDay && p.lastMistakeDay >= p.masteredDay);
             });
             const relapseBadgeEl = document.getElementById('srs-relapse-count-badge');
             if (relapseBadgeEl) relapseBadgeEl.innerText = `${relapseWords.length.toLocaleString()} 字`;
@@ -13247,7 +13254,7 @@ function cleanupMasteredMistakes() {
                 const p = userProgress[w.id];
                 if (!p) continue;
                 const hasRelapsesList = Array.isArray(p.relapses) && p.relapses.length > 0;
-                const wasMastered = p.everMastered || (p.masteredDay && p.masteredDay <= maxDay) || (Array.isArray(p.studyDays) && p.studyDays.length >= 5);
+                const wasMastered = p.everMastered || (p.masteredDay && p.masteredDay <= maxDay);
                 const hasMistakeAfterMastered = wasMastered && (
                     (p.lastMistakeDay && p.masteredDay && p.lastMistakeDay >= p.masteredDay) ||
                     (p.level < MAX_LEVEL && p.lastMistakeDay && p.lastMistakeDay >= 1)

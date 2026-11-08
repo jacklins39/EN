@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261108V4';
+        const APP_BUILD_VERSION = '20261108V5';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -78,20 +78,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261108V4"></script>
-    <script src="toeic_data.js?v=20261108V4"></script>
-    <script src="jh_data.js?v=20261108V4"></script>
-    <script src="listening_data.js?v=20261108V4"></script>
-    <script src="listening_words_data.js?v=20261108V4"></script>
-    <script src="uk_phonetics_manifest.js?v=20261108V4"></script>
-    <script src="words_audio_manifest.js?v=20261108V4"></script>
-    <script src="examples_audio_manifest.js?v=20261108V4"></script>
-    <script src="zh_audio_manifest.js?v=20261108V4"></script>
-    <script src="collocations_audio_manifest.js?v=20261108V4"></script>
-    <script src="syn_ant_data.js?v=20261108V4"></script>
-    <script src="synonyms_unit8_data.js?v=20261108V4"></script>
-    <script src="examples_unit9_data.js?v=20261108V4"></script>
-    <script src="game_whack.js?v=20261108V4"></script>
+    <script src="words_data.js?v=20261108V5"></script>
+    <script src="toeic_data.js?v=20261108V5"></script>
+    <script src="jh_data.js?v=20261108V5"></script>
+    <script src="listening_data.js?v=20261108V5"></script>
+    <script src="listening_words_data.js?v=20261108V5"></script>
+    <script src="uk_phonetics_manifest.js?v=20261108V5"></script>
+    <script src="words_audio_manifest.js?v=20261108V5"></script>
+    <script src="examples_audio_manifest.js?v=20261108V5"></script>
+    <script src="zh_audio_manifest.js?v=20261108V5"></script>
+    <script src="collocations_audio_manifest.js?v=20261108V5"></script>
+    <script src="syn_ant_data.js?v=20261108V5"></script>
+    <script src="synonyms_unit8_data.js?v=20261108V5"></script>
+    <script src="examples_unit9_data.js?v=20261108V5"></script>
+    <script src="game_whack.js?v=20261108V5"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -2598,11 +2598,12 @@
                         </span>
                         <span id="quiz-mode-desc-dash" class="text-[11px] font-semibold text-[#0071E3] whitespace-nowrap">🔤 英選中</span>
                     </div>
-                    <div class="grid grid-cols-4 gap-1 bg-slate-200/60 p-1 rounded-lg quiz-mode-selector">
+                    <div class="grid grid-cols-5 gap-1 bg-slate-200/60 p-1 rounded-lg quiz-mode-selector">
                         <button type="button" data-mode="en2zh" class="quiz-pill py-1.5 px-0.5 text-[10px] sm:text-xs rounded-md font-medium transition-all text-center cursor-pointer whitespace-nowrap truncate">🔤 英選中</button>
                         <button type="button" data-mode="zh2en" class="quiz-pill py-1.5 px-0.5 text-[10px] sm:text-xs rounded-md font-medium transition-all text-center cursor-pointer whitespace-nowrap truncate">📝 中選英</button>
                         <button type="button" data-mode="listen" class="quiz-pill py-1.5 px-0.5 text-[10px] sm:text-xs rounded-md font-medium transition-all text-center cursor-pointer whitespace-nowrap truncate">🎧 聽音</button>
                         <button type="button" data-mode="fill" class="quiz-pill py-1.5 px-0.5 text-[10px] sm:text-xs rounded-md font-medium transition-all text-center cursor-pointer whitespace-nowrap truncate">⌨️ 拼寫</button>
+                        <button type="button" data-mode="recall" class="quiz-pill py-1.5 px-0.5 text-[10px] sm:text-xs rounded-md font-medium transition-all text-center cursor-pointer whitespace-nowrap truncate">💡 回想</button>
                     </div>
                 </div>
 
@@ -3537,9 +3538,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261108V4</span>
+                        <span id="app-version-display">版本 20261108V5</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261108V4</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261108V5</p>
                 </div>
             </div>
         </div>
@@ -4230,21 +4231,22 @@
         // 題型偏好模式管理 (auto 智能階梯, en2zh 看英選中, zh2en 看中選英, listen 盲聽辨字, fill 拼寫填空, card 卡片翻牌)
         // 題型偏好模式管理 (en2zh 看英選中, zh2en 看中選英, listen 盲聽辨字, fill 拼寫填空)
         const QUIZ_MODE_NAMES = {
-            'en2zh': '🔤 看英選中',
-            'zh2en': '📝 看中選英',
-            'listen': '🎧 盲聽辨字',
-            'fill': '⌨️ 拼寫填空'
+            'en2zh': '🔤 看英選中 (4選1 · 上限LV3)',
+            'zh2en': '📝 看中選英 (4選1 · 上限LV3)',
+            'listen': '🎧 盲聽辨字 (4選1 · 上限LV3)',
+            'fill': '⌨️ 拼寫填空 (可封頂LV5)',
+            'recall': '💡 無提示回想 (可封頂LV5)'
         };
 
         function setPreferredQuizType(mode) {
-            const valid = ['en2zh', 'zh2en', 'listen', 'fill'].includes(mode) ? mode : 'en2zh';
+            const valid = ['en2zh', 'zh2en', 'listen', 'fill', 'recall'].includes(mode) ? mode : 'en2zh';
             localStorage.setItem('preferred_quiz_type', valid);
             updateQuizModeUI(valid);
         }
 
         function updateQuizModeUI(mode) {
             let m = mode || localStorage.getItem('preferred_quiz_type') || 'en2zh';
-            if (!['en2zh', 'zh2en', 'listen', 'fill'].includes(m)) m = 'en2zh';
+            if (!['en2zh', 'zh2en', 'listen', 'fill', 'recall'].includes(m)) m = 'en2zh';
             const descText = QUIZ_MODE_NAMES[m] || QUIZ_MODE_NAMES['en2zh'];
             const dashDesc = document.getElementById('quiz-mode-desc-dash');
             const lobbyDesc = document.getElementById('quiz-mode-desc-lobby');
@@ -6490,7 +6492,11 @@
                     if (wasMistakeMode) {
                         levelText = '✅ 錯題攻克 · 回歸 LV1';
                     } else if (oldLevel < 3 && newLevel >= 3) {
-                        levelText = `🎉 晉升 LV${newLevel} 掌握 · 移出錯題！`;
+                        levelText = `🎉 晉升 LV${newLevel} 穩固 · 移出錯題！`;
+                    } else if (oldLevel === newLevel && newLevel === 3) {
+                        levelText = '🔒 4選1已達 LV3 上限！換「回想」解鎖 LV4/LV5';
+                    } else if (oldLevel === newLevel && newLevel >= 4) {
+                        levelText = `✨ 維持 LV${newLevel} · 4選1不晉級（請用「回想」升級）`;
                     } else if (newLevel >= MAX_LEVEL) {
                         levelText = `👑 晉升 LV${newLevel} 永久精通！`;
                     } else {
@@ -6668,7 +6674,7 @@
             
             // 決定題型模式：依使用者選取題型（預設為 en2zh 看英選中）
             let prefMode = localStorage.getItem('preferred_quiz_type') || 'en2zh';
-            if (!['en2zh', 'zh2en', 'listen', 'fill'].includes(prefMode)) prefMode = 'en2zh';
+            if (!['en2zh', 'zh2en', 'listen', 'fill', 'recall'].includes(prefMode)) prefMode = 'en2zh';
             
             const studyViewEl = document.getElementById('view-study');
             if (isAutoFlashcardMode) {
@@ -6678,6 +6684,10 @@
             } else if (typeof isManualCardMode !== 'undefined' && isManualCardMode) {
                 isQuizMode = false;
                 currentQuizType = 'card';
+                if (studyViewEl) studyViewEl.classList.remove('auto-play-layout');
+            } else if (prefMode === 'recall') {
+                isQuizMode = false;
+                currentQuizType = 'recall';
                 if (studyViewEl) studyViewEl.classList.remove('auto-play-layout');
             } else {
                 isQuizMode = true;
@@ -6749,7 +6759,7 @@
                     }, pauseAfterWord);
                 });
             } else {
-                if (currentQuizType !== 'zh2en' && currentQuizType !== 'fill') {
+                if (currentQuizType !== 'zh2en' && currentQuizType !== 'fill' && currentQuizType !== 'recall') {
                     playAudio(currentWord.en);
                 }
             }
@@ -7113,7 +7123,14 @@
             } else {
                 cardsCompleted++;
                 if (isCorrect) {
-                    progress.level = Math.min(progress.level + 1, MAX_LEVEL);
+                    // ★ 方案 B 天花板：4選1（英選中/中選英/聽音）最高僅升至 LV3（辨識熟悉）
+                    // 必須透過主動提取（recall 無提示回想、fill 拼寫填空、card 翻牌）才能晉級 LV4 與 LV5！
+                    const isPassiveChoice = ['en2zh', 'zh2en', 'listen'].includes(currentQuizType);
+                    const maxAllowedLevel = isPassiveChoice ? 3 : MAX_LEVEL;
+
+                    if (progress.level < maxAllowedLevel) {
+                        progress.level += 1;
+                    }
                     if (progress.level >= MAX_LEVEL) {
                         progress.everMastered = true;
                         if (!progress.masteredDay) {
@@ -7354,6 +7371,24 @@
             audioBtn.classList.remove('hidden');
             if (t === 'en2zh') {
                 hintEl.innerText = '看英文 ➜ 選出中文';
+            } else if (t === 'recall') {
+                const parsed = splitPosAndZh(w.zh, w.pos, w.exampleZh, w.example, w.en);
+                let conciseZh = getConciseZh(w.zh, w.pos, w.exampleZh, w.example, w.en) || parsed.pureZh || w.zh;
+                if (w.en) {
+                    const escEn = w.en.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                    conciseZh = conciseZh.replace(new RegExp('(?:^|[、，,;；/\\s])\\b' + escEn + '\\b', 'gi'), '');
+                }
+                conciseZh = conciseZh.replace(/[a-zA-Z]+/g, '').replace(/^[、，,;；/\\s]+|[、，,;；/\\s]+$/g, '').trim();
+                if (!conciseZh) {
+                    conciseZh = (parsed.pureZh || '').replace(/[a-zA-Z]+/g, '').replace(/^[、，,;；/\\s]+|[、，,;；/\\s]+$/g, '').trim() || '釋義';
+                }
+                wordEl.className = mid;
+                wordEl.innerText = conciseZh;
+                const rf = document.getElementById('card-phonetic-row'); if (rf) rf.style.display = 'none';
+                if (sf) sf.style.display = 'none';
+                const p = parsed.items?.[0]?.pos || parsed.posBadgeText || '';
+                hintEl.innerHTML = p ? '<span class="inline-block bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300 border border-amber-200/80 dark:border-amber-800/60 text-xs px-2 py-0.5 rounded-full font-mono mr-1.5">' + esc(p) + '</span> 💡 無提示回想：請在大腦提取或說出英文 ➜ 點擊卡片看解答' : '💡 無提示回想：請在大腦提取或說出英文 ➜ 點擊卡片看解答';
+                audioBtn.classList.add('hidden');
             } else if (t === 'zh2en') {
                 const parsed = splitPosAndZh(w.zh, w.pos, w.exampleZh, w.example, w.en);
                 let conciseZh = getConciseZh(w.zh, w.pos, w.exampleZh, w.example, w.en) || parsed.pureZh || w.zh;
@@ -13661,7 +13696,7 @@
         // ==========================================
         // 弱點單字頁
         // ==========================================
-        const QTYPE_LABEL = { en2zh: '看英文選中文', zh2en: '看中文選英文', listen: '聽發音選單字', fill: '填空', card: '翻卡', legacy: '舊紀錄' };
+        const QTYPE_LABEL = { en2zh: '看英文選中文', zh2en: '看中文選英文', listen: '聽發音選單字', fill: '填空', recall: '無提示回想', card: '翻卡', legacy: '舊紀錄' };
 
         function mistakeCountOf(p) {
             if (Array.isArray(p.mistakes)) return p.mistakes.length;

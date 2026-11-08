@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261108V10';
+        const APP_BUILD_VERSION = '20261108V11';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -78,20 +78,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261108V10"></script>
-    <script src="toeic_data.js?v=20261108V10"></script>
-    <script src="jh_data.js?v=20261108V10"></script>
-    <script src="listening_data.js?v=20261108V10"></script>
-    <script src="listening_words_data.js?v=20261108V10"></script>
-    <script src="uk_phonetics_manifest.js?v=20261108V10"></script>
-    <script src="words_audio_manifest.js?v=20261108V10"></script>
-    <script src="examples_audio_manifest.js?v=20261108V10"></script>
-    <script src="zh_audio_manifest.js?v=20261108V10"></script>
-    <script src="collocations_audio_manifest.js?v=20261108V10"></script>
-    <script src="syn_ant_data.js?v=20261108V10"></script>
-    <script src="synonyms_unit8_data.js?v=20261108V10"></script>
-    <script src="examples_unit9_data.js?v=20261108V10"></script>
-    <script src="game_whack.js?v=20261108V10"></script>
+    <script src="words_data.js?v=20261108V11"></script>
+    <script src="toeic_data.js?v=20261108V11"></script>
+    <script src="jh_data.js?v=20261108V11"></script>
+    <script src="listening_data.js?v=20261108V11"></script>
+    <script src="listening_words_data.js?v=20261108V11"></script>
+    <script src="uk_phonetics_manifest.js?v=20261108V11"></script>
+    <script src="words_audio_manifest.js?v=20261108V11"></script>
+    <script src="examples_audio_manifest.js?v=20261108V11"></script>
+    <script src="zh_audio_manifest.js?v=20261108V11"></script>
+    <script src="collocations_audio_manifest.js?v=20261108V11"></script>
+    <script src="syn_ant_data.js?v=20261108V11"></script>
+    <script src="synonyms_unit8_data.js?v=20261108V11"></script>
+    <script src="examples_unit9_data.js?v=20261108V11"></script>
+    <script src="game_whack.js?v=20261108V11"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -2696,22 +2696,22 @@
                     </div>
                 </div>
 
-                <!-- 五大核心指標卡 -->
+                <!-- 五大核心指標卡 (今日 -> 已學 -> 穩固 -> 精熟 -> 日均) -->
                 <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-3.5 mb-5">
                     <div class="bg-gradient-to-br from-blue-50/90 to-blue-50/30 border border-blue-100/80 hover:border-blue-200 rounded-2xl p-3.5 sm:p-4 text-center hover:shadow-xs transition-all flex flex-col justify-between">
                         <div class="text-[11px] sm:text-xs font-bold text-blue-600 mb-1">今日消化單字</div>
                         <div id="analysis-stat-today" class="text-2xl sm:text-3xl font-black text-[#0071E3] tracking-tight whitespace-nowrap">0</div>
                         <div id="analysis-stat-today-sub" class="text-[10px] sm:text-[11px] text-slate-500 mt-1 whitespace-nowrap font-medium">新學 0 · 複習 0</div>
                     </div>
-                    <div class="bg-gradient-to-br from-indigo-50/90 to-indigo-50/30 border border-indigo-100/80 hover:border-indigo-200 rounded-2xl p-3.5 sm:p-4 text-center hover:shadow-xs transition-all flex flex-col justify-between">
-                        <div class="text-[11px] sm:text-xs font-bold text-indigo-600 mb-1">今日刷題總量</div>
-                        <div id="analysis-stat-practice-count" class="text-2xl sm:text-3xl font-black text-indigo-600 tracking-tight whitespace-nowrap">0</div>
-                        <div id="analysis-stat-practice-sub" class="text-[10px] sm:text-[11px] text-slate-500 mt-1 whitespace-nowrap font-medium">自測/特訓即時累計</div>
-                    </div>
                     <div class="bg-gradient-to-br from-sky-50/90 to-sky-50/30 border border-sky-100/80 hover:border-sky-200 rounded-2xl p-3.5 sm:p-4 text-center hover:shadow-xs transition-all flex flex-col justify-between">
                         <div class="text-[11px] sm:text-xs font-bold text-sky-700 mb-1">累計已學詞彙</div>
                         <div id="analysis-stat-cumulative" class="text-2xl sm:text-3xl font-black text-sky-600 tracking-tight whitespace-nowrap">0</div>
                         <div id="analysis-stat-cumulative-sub" class="text-[10px] sm:text-[11px] text-slate-500 mt-1 whitespace-nowrap font-medium">全庫已解鎖</div>
+                    </div>
+                    <div class="bg-gradient-to-br from-purple-50/90 to-purple-50/30 border border-purple-100/80 hover:border-purple-200 rounded-2xl p-3.5 sm:p-4 text-center hover:shadow-xs transition-all flex flex-col justify-between">
+                        <div class="text-[11px] sm:text-xs font-bold text-purple-700 mb-1">累計穩固單字</div>
+                        <div id="analysis-stat-level3" class="text-2xl sm:text-3xl font-black text-purple-600 tracking-tight whitespace-nowrap">0</div>
+                        <div id="analysis-stat-level3-sub" class="text-[10px] sm:text-[11px] text-slate-500 mt-1 whitespace-nowrap font-medium">LV3 穩固掌握</div>
                     </div>
                     <div class="bg-gradient-to-br from-emerald-50/90 to-emerald-50/30 border border-emerald-100/80 hover:border-emerald-200 rounded-2xl p-3.5 sm:p-4 text-center hover:shadow-xs transition-all flex flex-col justify-between">
                         <div class="text-[11px] sm:text-xs font-bold text-emerald-700 mb-1">累計熟練單字</div>
@@ -3538,9 +3538,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261108V10</span>
+                        <span id="app-version-display">版本 20261108V11</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261108V10</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261108V11</p>
                 </div>
             </div>
         </div>
@@ -13276,21 +13276,22 @@ function cleanupMasteredMistakes() {
                 cumulativeRelapses.push(runningRelapse);
             }
 
-            // 更新上方 5 張統計小卡
+            // 更新上方 5 張統計小卡 (今日 -> 已學 -> 穩固 -> 精熟 -> 日均)
             const todayTotal = dailyTotals[maxDay - 1] || 0;
             const todayNew = dailyNewArr[maxDay - 1] || 0;
             const todayRev = dailyRevArr[maxDay - 1] || 0;
             const totalCumulative = cumulativeTotals[maxDay - 1] || 0;
+            const totalLevel3 = cumulativeLevel3[maxDay - 1] || 0;
             const totalMastered = cumulativeMastered[maxDay - 1] || 0;
             const sumAllDays = dailyTotals.reduce((a, b) => a + b, 0);
             const avgDaily = maxDay > 0 ? Math.round((sumAllDays / maxDay) * 10) / 10 : 0;
 
             const elToday = document.getElementById('analysis-stat-today');
             const elTodaySub = document.getElementById('analysis-stat-today-sub');
-            const elPracticeCount = document.getElementById('analysis-stat-practice-count');
-            const elPracticeSub = document.getElementById('analysis-stat-practice-sub');
             const elCum = document.getElementById('analysis-stat-cumulative');
             const elCumSub = document.getElementById('analysis-stat-cumulative-sub');
+            const elLevel3 = document.getElementById('analysis-stat-level3');
+            const elLevel3Sub = document.getElementById('analysis-stat-level3-sub');
             const elMastered = document.getElementById('analysis-stat-mastered');
             const elMasteredSub = document.getElementById('analysis-stat-mastered-sub');
             const elAvg = document.getElementById('analysis-stat-avg');
@@ -13299,16 +13300,11 @@ function cleanupMasteredMistakes() {
             if (elToday) elToday.innerText = `${todayTotal} 字`;
             if (elTodaySub) elTodaySub.innerText = `新學 ${todayNew} · 複習 ${todayRev}`;
 
-            // 刷題總量計算與保底同步
+            // 刷題總量背景保底維護
             const storedPractice = getDailyPracticeCount(virtualCurrentDay);
             const actualPractice = Math.max(storedPractice, todayTotal);
             if (storedPractice < actualPractice) {
                 ensureDailyPracticeBaseline(actualPractice, virtualCurrentDay);
-            }
-            if (elPracticeCount) elPracticeCount.innerText = `${actualPractice} 題`;
-            if (elPracticeSub) {
-                const diff = actualPractice - todayTotal;
-                elPracticeSub.innerText = diff > 0 ? `加練 ${diff} 題 · 即時累計` : `自測/特訓即時累計`;
             }
 
             if (elCum) elCum.innerText = `${totalCumulative} 字`;
@@ -13316,11 +13312,19 @@ function cleanupMasteredMistakes() {
                 const pct = targetWords.length > 0 ? Math.round((totalCumulative / targetWords.length) * 100) : 0;
                 elCumSub.innerText = isGlobal ? `全庫已解鎖 (${pct}%)` : `本單元已解鎖 (${pct}%)`;
             }
+
+            if (elLevel3) elLevel3.innerText = `${totalLevel3} 字`;
+            if (elLevel3Sub) {
+                const pct = totalCumulative > 0 ? Math.round((totalLevel3 / totalCumulative) * 100) : 0;
+                elLevel3Sub.innerText = totalCumulative > 0 ? `穩固率 ${pct}%` : `LV3 穩固期`;
+            }
+
             if (elMastered) elMastered.innerText = `${totalMastered} 字`;
             if (elMasteredSub) {
                 const pct = totalCumulative > 0 ? Math.round((totalMastered / totalCumulative) * 100) : 0;
                 elMasteredSub.innerText = totalCumulative > 0 ? `掌握率 ${pct}%` : `LV5 熟練掌握`;
             }
+
             if (elAvg) elAvg.innerText = `${avgDaily} 字`;
             if (elDays) elDays.innerText = `共 ${maxDay} 天紀錄`;
 

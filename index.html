@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261108V16';
+        const APP_BUILD_VERSION = '20261108V17';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -78,20 +78,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261108V16"></script>
-    <script src="toeic_data.js?v=20261108V16"></script>
-    <script src="jh_data.js?v=20261108V16"></script>
-    <script src="listening_data.js?v=20261108V16"></script>
-    <script src="listening_words_data.js?v=20261108V16"></script>
-    <script src="uk_phonetics_manifest.js?v=20261108V16"></script>
-    <script src="words_audio_manifest.js?v=20261108V16"></script>
-    <script src="examples_audio_manifest.js?v=20261108V16"></script>
-    <script src="zh_audio_manifest.js?v=20261108V16"></script>
-    <script src="collocations_audio_manifest.js?v=20261108V16"></script>
-    <script src="syn_ant_data.js?v=20261108V16"></script>
-    <script src="synonyms_unit8_data.js?v=20261108V16"></script>
-    <script src="examples_unit9_data.js?v=20261108V16"></script>
-    <script src="game_whack.js?v=20261108V16"></script>
+    <script src="words_data.js?v=20261108V17"></script>
+    <script src="toeic_data.js?v=20261108V17"></script>
+    <script src="jh_data.js?v=20261108V17"></script>
+    <script src="listening_data.js?v=20261108V17"></script>
+    <script src="listening_words_data.js?v=20261108V17"></script>
+    <script src="uk_phonetics_manifest.js?v=20261108V17"></script>
+    <script src="words_audio_manifest.js?v=20261108V17"></script>
+    <script src="examples_audio_manifest.js?v=20261108V17"></script>
+    <script src="zh_audio_manifest.js?v=20261108V17"></script>
+    <script src="collocations_audio_manifest.js?v=20261108V17"></script>
+    <script src="syn_ant_data.js?v=20261108V17"></script>
+    <script src="synonyms_unit8_data.js?v=20261108V17"></script>
+    <script src="examples_unit9_data.js?v=20261108V17"></script>
+    <script src="game_whack.js?v=20261108V17"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -3538,9 +3538,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261108V16</span>
+                        <span id="app-version-display">版本 20261108V17</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261108V16</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261108V17</p>
                 </div>
             </div>
         </div>
@@ -4089,6 +4089,8 @@
 
         let virtualCurrentDay = 0;
         let userProgress = {};
+        // 目前 virtualCurrentDay 所對應的日曆日期 (YYYY-MM-DD)；換日判斷與存檔一律以它為準，不再被「存檔當下的今天」覆蓋
+        let dayAnchorDate = localStorage.getItem('vocab_last_date') || null;
         let dailyPlans = {}; // 每天固定單字清單：{ [unit]: { day, date, newWordIds: [], reviewWordIds: [], completed: false } }
         let customWordsDB = [];
         const MAX_CUSTOM_WORDS = 500;
@@ -4689,7 +4691,11 @@
                     const cloudDailyPlans = data.dailyPlans || {};
                     let cloudDay = typeof data.day === 'number' ? data.day : 0;
                     const todayStr = getLocalDateStr();
-                    const cloudLastDate = data.lastDate || todayStr;
+                    let cloudLastDate = data.lastDate || todayStr;
+                    {
+                        const planAnchors = [getPlanAnchorDate(cloudDailyPlans, cloudDay), getPlanAnchorDate(dailyPlans, cloudDay)].filter(Boolean).sort();
+                        if (planAnchors.length && planAnchors[0] < cloudLastDate) cloudLastDate = planAnchors[0];
+                    }
                     
                     // 跨日檢查：以雲端紀錄的日期為唯一基準，防止多裝置重複增加虛擬天數
                     let isDayRolled = false;
@@ -4778,6 +4784,7 @@
                     virtualCurrentDay = cloudDay;
                     localStorage.setItem('vocab_virtual_day', String(virtualCurrentDay));
                     localStorage.setItem('vocab_last_date', todayStr);
+                    dayAnchorDate = todayStr;
 
                     if (isDayRolled) {
                         dailyPlans = {};
@@ -4943,7 +4950,7 @@
                 unit: currentUnit,
                 listeningAnnotated: (typeof allListeningAnnotated !== 'undefined' ? allListeningAnnotated : {}),
                 dailyPracticeStats: (typeof dailyPracticeStats !== 'undefined' ? dailyPracticeStats : {}),
-                lastDate: getLocalDateStr(),
+                lastDate: dayAnchorDate || getLocalDateStr(),
                 lastUpdated: firebase.firestore.FieldValue.serverTimestamp()
             };
 
@@ -5030,7 +5037,7 @@
             try {
                 localStorage.setItem('vocab_daily_plans', JSON.stringify(dailyPlans));
                 localStorage.setItem('vocab_virtual_day', String(virtualCurrentDay));
-                localStorage.setItem('vocab_last_date', getLocalDateStr());
+                localStorage.setItem('vocab_last_date', dayAnchorDate || getLocalDateStr());
                 localStorage.setItem('vocab_user_progress', JSON.stringify(userProgress));
                 localStorage.setItem('vocab_current_unit', String(currentUnit));
 
@@ -5047,24 +5054,42 @@
             } catch(e) {}
         }
 
+        // 由當日計畫 (plan.date) 反推「目前這一天」真正開始的日期，可修復 last_date 被誤蓋成今天導致沒換日的狀況
+        function getPlanAnchorDate(plans, day) {
+            let earliest = null;
+            try {
+                for (const p of Object.values(plans || {})) {
+                    if (p && p.day === day && typeof p.date === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(p.date)) {
+                        if (!earliest || p.date < earliest) earliest = p.date;
+                    }
+                }
+            } catch (e) {}
+            return earliest;
+        }
+
         function checkCalendarDayRollover() {
             // 已登入狀態下，天數與換日統一由 loadDataFromCloud 依據雲端時間計算，防止多裝置重複計算
             if (currentUser) return;
 
             const todayStr = getLocalDateStr();
-            const lastDate = localStorage.getItem('vocab_last_date');
+            let lastDate = dayAnchorDate || localStorage.getItem('vocab_last_date');
+            const planAnchor = getPlanAnchorDate(dailyPlans, virtualCurrentDay);
+            if (planAnchor && (!lastDate || planAnchor < lastDate)) lastDate = planAnchor;
+
             if (lastDate && lastDate !== todayStr) {
                 const d1 = new Date(lastDate);
                 const d2 = new Date(todayStr);
                 const diffTime = d2.getTime() - d1.getTime();
                 if (diffTime > 0) {
                     const diffDays = Math.max(1, Math.round(diffTime / (1000 * 60 * 60 * 24)));
+                    dayAnchorDate = todayStr; // 先更新基準日期，確保後續存檔寫入的是新的一天
                     virtualCurrentDay += diffDays;
                     dailyPlans = {}; // 隔天自動更新每日單字排程
                     saveDailyPlansLocally();
                     saveToCloud();
                 }
             }
+            dayAnchorDate = todayStr;
             localStorage.setItem('vocab_last_date', todayStr);
         }
 
@@ -5375,7 +5400,7 @@ function cleanupMasteredMistakes() {
 
             dailyPlans[unit] = {
                 day: virtualCurrentDay,
-                date: getLocalDateStr(),
+                date: dayAnchorDate || getLocalDateStr(),
                 newWordIds: finalNewWordIds,
                 reviewWordIds: reviewWords.map(w => w.id),
                 completed: isAlreadyDone
@@ -8102,8 +8127,29 @@ function cleanupMasteredMistakes() {
             switchTab('view-dashboard', document.getElementById('tab-btn-dashboard'));
         });
 
+        // 午夜換日偵測：頁面開著跨過 00:00 時自動換日 (登入狀態重讀雲端，訪客直接本機換日)
+        let lastMidnightTry = 0;
+        function checkMidnightRollover() {
+            const today = getLocalDateStr();
+            let eff = dayAnchorDate || localStorage.getItem('vocab_last_date');
+            const planAnchor = getPlanAnchorDate(dailyPlans, virtualCurrentDay);
+            if (planAnchor && (!eff || planAnchor < eff)) eff = planAnchor;
+            if (!eff || eff === today) return;
+            if (isCloudLoading || Date.now() - lastMidnightTry < 60000) return;
+            lastMidnightTry = Date.now();
+            if (currentUser) {
+                loadDataFromCloud(true).catch(console.warn);
+            } else {
+                checkCalendarDayRollover();
+                updateDashboard();
+            }
+        }
+        setInterval(checkMidnightRollover, 30000);
+        document.addEventListener('visibilitychange', () => { if (!document.hidden) checkMidnightRollover(); });
+
         window.addEventListener('focus', () => {
             checkCalendarDayRollover();
+            checkMidnightRollover();
             updateDashboard();
         });
 

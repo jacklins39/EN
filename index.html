@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261108V9';
+        const APP_BUILD_VERSION = '20261108V10';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -78,20 +78,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261108V9"></script>
-    <script src="toeic_data.js?v=20261108V9"></script>
-    <script src="jh_data.js?v=20261108V9"></script>
-    <script src="listening_data.js?v=20261108V9"></script>
-    <script src="listening_words_data.js?v=20261108V9"></script>
-    <script src="uk_phonetics_manifest.js?v=20261108V9"></script>
-    <script src="words_audio_manifest.js?v=20261108V9"></script>
-    <script src="examples_audio_manifest.js?v=20261108V9"></script>
-    <script src="zh_audio_manifest.js?v=20261108V9"></script>
-    <script src="collocations_audio_manifest.js?v=20261108V9"></script>
-    <script src="syn_ant_data.js?v=20261108V9"></script>
-    <script src="synonyms_unit8_data.js?v=20261108V9"></script>
-    <script src="examples_unit9_data.js?v=20261108V9"></script>
-    <script src="game_whack.js?v=20261108V9"></script>
+    <script src="words_data.js?v=20261108V10"></script>
+    <script src="toeic_data.js?v=20261108V10"></script>
+    <script src="jh_data.js?v=20261108V10"></script>
+    <script src="listening_data.js?v=20261108V10"></script>
+    <script src="listening_words_data.js?v=20261108V10"></script>
+    <script src="uk_phonetics_manifest.js?v=20261108V10"></script>
+    <script src="words_audio_manifest.js?v=20261108V10"></script>
+    <script src="examples_audio_manifest.js?v=20261108V10"></script>
+    <script src="zh_audio_manifest.js?v=20261108V10"></script>
+    <script src="collocations_audio_manifest.js?v=20261108V10"></script>
+    <script src="syn_ant_data.js?v=20261108V10"></script>
+    <script src="synonyms_unit8_data.js?v=20261108V10"></script>
+    <script src="examples_unit9_data.js?v=20261108V10"></script>
+    <script src="game_whack.js?v=20261108V10"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -3538,9 +3538,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261108V9</span>
+                        <span id="app-version-display">版本 20261108V10</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261108V9</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261108V10</p>
                 </div>
             </div>
         </div>
@@ -12861,10 +12861,10 @@ function cleanupMasteredMistakes() {
 
                 <div class="bg-blue-50/60 dark:bg-slate-800/60 p-2.5 rounded-xl border border-blue-100/60 dark:border-slate-700/60 text-[11px] text-slate-600 dark:text-slate-300 leading-relaxed flex items-start gap-1.5">
                     <span class="text-blue-500 shrink-0 mt-0.5">💡</span>
-                    <span><strong>補教大師心法：</strong>${isMultiLevel ? 'LV1~LV4 是單字滑落率最高的區域。建議以「4 選項測驗」製造實戰高壓，或以「翻牌自測」落實 Active Recall 主動召回！' : '針對單一記憶階層精準施壓，及時在遺忘臨界點前強化神經突觸連接。'}</span>
+                    <span><strong>補教大師心法：</strong>${isMultiLevel ? 'LV1~LV4 是單字滑落率最高的區域。建議以「4 選項測驗」製造實戰高壓，及時在遺忘臨界點前強化神經突觸連接！' : '針對單一記憶階層精準施壓，及時在遺忘臨界點前強化神經突觸連接。'}</span>
                 </div>
 
-                <div class="flex flex-col gap-2 mt-1">
+                <div class="flex flex-col gap-2.5 mt-1">
                     <!-- 1. 4 個選項測驗 -->
                     <button id="btn-srs-start-quiz" type="button" class="group bg-gradient-to-r from-[#0071E3] to-[#005BB5] hover:from-[#0077ED] hover:to-[#0062C4] text-white p-3 rounded-2xl text-left cursor-pointer transition-all active:scale-[0.98] shadow-sm flex items-center justify-between">
                         <div class="min-w-0 pr-2">
@@ -12878,32 +12878,7 @@ function cleanupMasteredMistakes() {
                         <span class="text-xs font-bold text-blue-100 group-hover:translate-x-0.5 transition-transform shrink-0">開始 ➔</span>
                     </button>
 
-                    <!-- 2. 無提示回想特訓 (主動召回，可解鎖 LV4/LV5) -->
-                    <button id="btn-srs-start-recall" type="button" class="group bg-gradient-to-r from-amber-500/15 to-orange-500/15 hover:bg-amber-500/25 border border-amber-300 dark:border-amber-500/40 p-3 rounded-2xl text-left cursor-pointer transition-all active:scale-[0.98] flex items-center justify-between">
-                        <div class="min-w-0 pr-2">
-                            <div class="font-bold text-sm text-amber-900 dark:text-amber-200 flex items-center gap-1.5">
-                                <span>💡</span>
-                                <span>無提示回想 (看中想英)</span>
-                                <span class="text-[10px] bg-amber-200 dark:bg-amber-900/60 text-amber-800 dark:text-amber-200 px-1.5 py-0.5 rounded font-bold">解鎖 LV4/LV5</span>
-                            </div>
-                            <div class="text-[11px] text-amber-700/80 dark:text-amber-300/80 mt-0.5 truncate">看中文直接在腦中回想英文 · 翻面驗證自我評分</div>
-                        </div>
-                        <span class="text-xs font-bold text-amber-700 dark:text-amber-300 group-hover:translate-x-0.5 transition-transform shrink-0">開始 ➔</span>
-                    </button>
-
-                    <!-- 3. 手動翻牌自測 -->
-                    <button id="btn-srs-start-card" type="button" class="group bg-gradient-to-r from-amber-500/10 to-orange-500/10 hover:bg-amber-500/20 border border-amber-300/80 dark:border-amber-500/40 p-3 rounded-2xl text-left cursor-pointer transition-all active:scale-[0.98] flex items-center justify-between">
-                        <div class="min-w-0 pr-2">
-                            <div class="font-bold text-sm text-amber-900 dark:text-amber-200 flex items-center gap-1.5">
-                                <span>🎴</span>
-                                <span>翻牌自測 (主動召回)</span>
-                            </div>
-                            <div class="text-[11px] text-amber-700/80 dark:text-amber-300/80 mt-0.5 truncate">看英/發音在腦中回憶中文 · 翻面驗證自我評分</div>
-                        </div>
-                        <span class="text-xs font-bold text-amber-700 dark:text-amber-300 group-hover:translate-x-0.5 transition-transform shrink-0">開始 ➔</span>
-                    </button>
-
-                    <!-- 3. 單字清單預覽 -->
+                    <!-- 2. 單字清單預覽 -->
                     <button id="btn-srs-start-preview" type="button" class="group bg-slate-50 hover:bg-blue-50/50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 p-3 rounded-2xl text-left cursor-pointer transition-all active:scale-[0.98] flex items-center justify-between">
                         <div class="min-w-0 pr-2">
                             <div class="font-bold text-sm text-slate-800 dark:text-slate-100 flex items-center gap-1.5">
@@ -12922,16 +12897,6 @@ function cleanupMasteredMistakes() {
             document.getElementById('btn-srs-start-quiz')?.addEventListener('click', () => {
                 modalEl.classList.add('hidden');
                 startSrsQuizSession(words, title);
-            }, { once: true });
-
-            document.getElementById('btn-srs-start-recall')?.addEventListener('click', () => {
-                modalEl.classList.add('hidden');
-                startSrsRecallSession(words, title);
-            }, { once: true });
-
-            document.getElementById('btn-srs-start-card')?.addEventListener('click', () => {
-                modalEl.classList.add('hidden');
-                startSrsCardSession(words, title);
             }, { once: true });
 
             document.getElementById('btn-srs-start-preview')?.addEventListener('click', () => {

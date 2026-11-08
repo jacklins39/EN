@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261108V11';
+        const APP_BUILD_VERSION = '20261108V12';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -78,20 +78,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261108V11"></script>
-    <script src="toeic_data.js?v=20261108V11"></script>
-    <script src="jh_data.js?v=20261108V11"></script>
-    <script src="listening_data.js?v=20261108V11"></script>
-    <script src="listening_words_data.js?v=20261108V11"></script>
-    <script src="uk_phonetics_manifest.js?v=20261108V11"></script>
-    <script src="words_audio_manifest.js?v=20261108V11"></script>
-    <script src="examples_audio_manifest.js?v=20261108V11"></script>
-    <script src="zh_audio_manifest.js?v=20261108V11"></script>
-    <script src="collocations_audio_manifest.js?v=20261108V11"></script>
-    <script src="syn_ant_data.js?v=20261108V11"></script>
-    <script src="synonyms_unit8_data.js?v=20261108V11"></script>
-    <script src="examples_unit9_data.js?v=20261108V11"></script>
-    <script src="game_whack.js?v=20261108V11"></script>
+    <script src="words_data.js?v=20261108V12"></script>
+    <script src="toeic_data.js?v=20261108V12"></script>
+    <script src="jh_data.js?v=20261108V12"></script>
+    <script src="listening_data.js?v=20261108V12"></script>
+    <script src="listening_words_data.js?v=20261108V12"></script>
+    <script src="uk_phonetics_manifest.js?v=20261108V12"></script>
+    <script src="words_audio_manifest.js?v=20261108V12"></script>
+    <script src="examples_audio_manifest.js?v=20261108V12"></script>
+    <script src="zh_audio_manifest.js?v=20261108V12"></script>
+    <script src="collocations_audio_manifest.js?v=20261108V12"></script>
+    <script src="syn_ant_data.js?v=20261108V12"></script>
+    <script src="synonyms_unit8_data.js?v=20261108V12"></script>
+    <script src="examples_unit9_data.js?v=20261108V12"></script>
+    <script src="game_whack.js?v=20261108V12"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -3538,9 +3538,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261108V11</span>
+                        <span id="app-version-display">版本 20261108V12</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261108V11</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261108V12</p>
                 </div>
             </div>
         </div>
@@ -13101,6 +13101,16 @@ function cleanupMasteredMistakes() {
             badge.innerText = `全庫精熟 ${mastered} 字 · 掌握率 ${pct}%`;
         }
 
+        // 取得圖表 dataset 是否被使用者自訂隱藏 (持久化記錄，防背景刷新或切換單元時取消線自動恢復)
+        function getChartSeriesHidden(key) {
+            try {
+                const pref = JSON.parse(localStorage.getItem('vocab_chart_hidden_series') || '{}');
+                return Boolean(pref[key]);
+            } catch(e) {
+                return false;
+            }
+        }
+
         // 繪製每日完成單字與累計詞彙成長圖 (Chart.js)
         function renderChart(unitOrScope = currentAnalysisScope) {
             const ctx = document.getElementById('masteryChart');
@@ -13359,6 +13369,7 @@ function cleanupMasteredMistakes() {
                             type: 'bar',
                             label: isGlobal ? '全庫當日完成 (新學+複習)' : '當日完成單字 (新學+複習)',
                             data: viewTotals,
+                            hidden: getChartSeriesHidden('today'),
                             backgroundColor: 'rgba(0, 113, 227, 0.18)',
                             borderColor: '#0071E3',
                             borderWidth: 2,
@@ -13370,6 +13381,7 @@ function cleanupMasteredMistakes() {
                             type: 'line',
                             label: isGlobal ? '全庫累計已學單字成長' : '累計已學單字成長',
                             data: viewCumulative,
+                            hidden: getChartSeriesHidden('learned'),
                             borderColor: '#0284C7',
                             backgroundColor: 'rgba(2, 132, 199, 0.12)',
                             borderWidth: 2.5,
@@ -13385,6 +13397,7 @@ function cleanupMasteredMistakes() {
                             type: 'line',
                             label: isGlobal ? '全庫累計穩固 (LV3 掌握)' : '累計穩固掌握 (LV3 掌握)',
                             data: viewLevel3,
+                            hidden: getChartSeriesHidden('level3'),
                             borderColor: '#A855F7',
                             backgroundColor: 'rgba(168, 85, 247, 0.14)',
                             borderWidth: 2.5,
@@ -13400,6 +13413,7 @@ function cleanupMasteredMistakes() {
                             type: 'line',
                             label: isGlobal ? '全庫累計精熟 (LV5 完訓)' : '累計熟練掌握 (LV5 完訓)',
                             data: viewMastered,
+                            hidden: getChartSeriesHidden('mastered'),
                             borderColor: '#10B981',
                             backgroundColor: 'rgba(16, 185, 129, 0.15)',
                             borderWidth: 3,
@@ -13415,6 +13429,7 @@ function cleanupMasteredMistakes() {
                             type: 'line',
                             label: isGlobal ? '全庫原本對(LV5)又錯了' : '原本對(LV5)又錯了',
                             data: viewRelapses,
+                            hidden: getChartSeriesHidden('relapse'),
                             borderColor: '#F43F5E',
                             backgroundColor: 'rgba(244, 63, 94, 0.15)',
                             borderWidth: 2.5,
@@ -13441,6 +13456,28 @@ function cleanupMasteredMistakes() {
                         legend: {
                             display: true,
                             position: 'top',
+                            onClick: (e, legendItem, legend) => {
+                                const index = legendItem.datasetIndex;
+                                const ci = legend.chart;
+                                if (ci.isDatasetVisible(index)) {
+                                    ci.hide(index);
+                                    legendItem.hidden = true;
+                                } else {
+                                    ci.show(index);
+                                    legendItem.hidden = false;
+                                }
+                                // 持久化記住用戶的圖例取消線 (隱藏) 偏好，絕不再自動恢復
+                                try {
+                                    const keys = ['today', 'learned', 'level3', 'mastered', 'relapse'];
+                                    const pref = JSON.parse(localStorage.getItem('vocab_chart_hidden_series') || '{}');
+                                    ci.data.datasets.forEach((ds, idx) => {
+                                        if (keys[idx]) {
+                                            pref[keys[idx]] = !ci.isDatasetVisible(idx);
+                                        }
+                                    });
+                                    localStorage.setItem('vocab_chart_hidden_series', JSON.stringify(pref));
+                                } catch(err) {}
+                            },
                             labels: {
                                 usePointStyle: true,
                                 boxWidth: 8,

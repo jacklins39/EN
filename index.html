@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261108V5';
+        const APP_BUILD_VERSION = '20261108V6';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -78,20 +78,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261108V5"></script>
-    <script src="toeic_data.js?v=20261108V5"></script>
-    <script src="jh_data.js?v=20261108V5"></script>
-    <script src="listening_data.js?v=20261108V5"></script>
-    <script src="listening_words_data.js?v=20261108V5"></script>
-    <script src="uk_phonetics_manifest.js?v=20261108V5"></script>
-    <script src="words_audio_manifest.js?v=20261108V5"></script>
-    <script src="examples_audio_manifest.js?v=20261108V5"></script>
-    <script src="zh_audio_manifest.js?v=20261108V5"></script>
-    <script src="collocations_audio_manifest.js?v=20261108V5"></script>
-    <script src="syn_ant_data.js?v=20261108V5"></script>
-    <script src="synonyms_unit8_data.js?v=20261108V5"></script>
-    <script src="examples_unit9_data.js?v=20261108V5"></script>
-    <script src="game_whack.js?v=20261108V5"></script>
+    <script src="words_data.js?v=20261108V6"></script>
+    <script src="toeic_data.js?v=20261108V6"></script>
+    <script src="jh_data.js?v=20261108V6"></script>
+    <script src="listening_data.js?v=20261108V6"></script>
+    <script src="listening_words_data.js?v=20261108V6"></script>
+    <script src="uk_phonetics_manifest.js?v=20261108V6"></script>
+    <script src="words_audio_manifest.js?v=20261108V6"></script>
+    <script src="examples_audio_manifest.js?v=20261108V6"></script>
+    <script src="zh_audio_manifest.js?v=20261108V6"></script>
+    <script src="collocations_audio_manifest.js?v=20261108V6"></script>
+    <script src="syn_ant_data.js?v=20261108V6"></script>
+    <script src="synonyms_unit8_data.js?v=20261108V6"></script>
+    <script src="examples_unit9_data.js?v=20261108V6"></script>
+    <script src="game_whack.js?v=20261108V6"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -3538,9 +3538,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261108V5</span>
+                        <span id="app-version-display">版本 20261108V6</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261108V5</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261108V6</p>
                 </div>
             </div>
         </div>
@@ -13127,6 +13127,27 @@
             const dailyRevArr = [];
             const cumulativeTotals = [];
 
+            // 穩固單字 (Level 3 / 穩固掌握) 每日累計成長曲線
+            const level3PerDay = new Array(maxDay + 1).fill(0);
+            for (const w of targetWords) {
+                const p = userProgress[w.id];
+                if (!p || !p.level || p.level < 3) continue;
+
+                let l3Day = maxDay;
+                if (Array.isArray(p.studyDays) && p.studyDays.length >= 3) {
+                    l3Day = Math.max(1, Math.min(maxDay, Number(p.studyDays[2]) || p.studyDays[p.studyDays.length - 1]));
+                } else if (p.masteredDay && p.masteredDay <= maxDay) {
+                    l3Day = Math.max(1, Math.min(maxDay, p.masteredDay - 7));
+                } else if (Array.isArray(p.studyDays) && p.studyDays.length > 0) {
+                    l3Day = Math.max(1, Math.min(maxDay, p.studyDays[p.studyDays.length - 1]));
+                } else {
+                    const curLevel = Math.min(p.level, MAX_LEVEL);
+                    const interval = SRS_INTERVALS[curLevel] || 1;
+                    l3Day = Math.max(1, Math.min(maxDay, (p.nextReviewDay || (maxDay + interval)) - interval));
+                }
+                level3PerDay[l3Day]++;
+            }
+
             // 熟練單字 (Level 5 / 完全掌握) 每日累計成長曲線
             const masteredPerDay = new Array(maxDay + 1).fill(0);
             for (const w of targetWords) {
@@ -13169,13 +13190,16 @@
             }
 
             let runningCumulative = 0;
+            let runningLevel3 = 0;
             let runningMastered = 0;
             let runningRelapse = 0;
+            const cumulativeLevel3 = [];
             const cumulativeMastered = [];
             const cumulativeRelapses = [];
 
             for (let d = 1; d <= maxDay; d++) {
                 runningCumulative += newPerDay[d];
+                runningLevel3 += level3PerDay[d];
                 runningMastered += masteredPerDay[d];
                 runningRelapse += relapsePerDay[d];
                 const tot = newPerDay[d] + reviewPerDay[d];
@@ -13184,6 +13208,7 @@
                 dailyRevArr.push(reviewPerDay[d]);
                 dailyTotals.push(tot);
                 cumulativeTotals.push(runningCumulative);
+                cumulativeLevel3.push(runningLevel3);
                 cumulativeMastered.push(runningMastered);
                 cumulativeRelapses.push(runningRelapse);
             }
@@ -13243,6 +13268,7 @@
             const viewNew = dailyNewArr.slice(sliceStart);
             const viewRev = dailyRevArr.slice(sliceStart);
             const viewCumulative = cumulativeTotals.slice(sliceStart);
+            const viewLevel3 = cumulativeLevel3.slice(sliceStart);
             const viewMastered = cumulativeMastered.slice(sliceStart);
             const viewRelapses = cumulativeRelapses.slice(sliceStart);
             const viewDailyRelapses = relapsePerDay.slice(sliceStart);
@@ -13279,6 +13305,21 @@
                             pointBorderWidth: 2,
                             pointRadius: 4,
                             tension: 0.3,
+                            fill: false,
+                            order: 2
+                        },
+                        {
+                            type: 'line',
+                            label: isGlobal ? '全庫累計穩固 (LV3 掌握)' : '累計穩固掌握 (LV3 掌握)',
+                            data: viewLevel3,
+                            borderColor: '#A855F7',
+                            backgroundColor: 'rgba(168, 85, 247, 0.14)',
+                            borderWidth: 2.5,
+                            pointBackgroundColor: '#A855F7',
+                            pointBorderColor: '#ffffff',
+                            pointBorderWidth: 2,
+                            pointRadius: 4,
+                            tension: 0.35,
                             fill: false,
                             order: 2
                         },
@@ -13340,7 +13381,7 @@
                                     if (idx === undefined) return '';
                                     return [
                                         `  └ 新學: ${viewNew[idx]} 字 ／ 複習: ${viewRev[idx]} 字`,
-                                        `  └ 累計已學: ${viewCumulative[idx]} 字 ／ 累計熟練: ${viewMastered[idx]} 字`,
+                                        `  └ 累計已學: ${viewCumulative[idx]} 字 ／ 穩固掌握(LV3): ${viewLevel3[idx]} 字 ／ 精熟完訓(LV5): ${viewMastered[idx]} 字`,
                                         `  └ ⚠️ 原本對(LV5)又錯: 累計 ${viewRelapses[idx]} 字 (當日 +${viewDailyRelapses[idx]} 字)`
                                     ];
                                 }

@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261108V17';
+        const APP_BUILD_VERSION = '20261108V18';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -78,20 +78,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261108V17"></script>
-    <script src="toeic_data.js?v=20261108V17"></script>
-    <script src="jh_data.js?v=20261108V17"></script>
-    <script src="listening_data.js?v=20261108V17"></script>
-    <script src="listening_words_data.js?v=20261108V17"></script>
-    <script src="uk_phonetics_manifest.js?v=20261108V17"></script>
-    <script src="words_audio_manifest.js?v=20261108V17"></script>
-    <script src="examples_audio_manifest.js?v=20261108V17"></script>
-    <script src="zh_audio_manifest.js?v=20261108V17"></script>
-    <script src="collocations_audio_manifest.js?v=20261108V17"></script>
-    <script src="syn_ant_data.js?v=20261108V17"></script>
-    <script src="synonyms_unit8_data.js?v=20261108V17"></script>
-    <script src="examples_unit9_data.js?v=20261108V17"></script>
-    <script src="game_whack.js?v=20261108V17"></script>
+    <script src="words_data.js?v=20261108V18"></script>
+    <script src="toeic_data.js?v=20261108V18"></script>
+    <script src="jh_data.js?v=20261108V18"></script>
+    <script src="listening_data.js?v=20261108V18"></script>
+    <script src="listening_words_data.js?v=20261108V18"></script>
+    <script src="uk_phonetics_manifest.js?v=20261108V18"></script>
+    <script src="words_audio_manifest.js?v=20261108V18"></script>
+    <script src="examples_audio_manifest.js?v=20261108V18"></script>
+    <script src="zh_audio_manifest.js?v=20261108V18"></script>
+    <script src="collocations_audio_manifest.js?v=20261108V18"></script>
+    <script src="syn_ant_data.js?v=20261108V18"></script>
+    <script src="synonyms_unit8_data.js?v=20261108V18"></script>
+    <script src="examples_unit9_data.js?v=20261108V18"></script>
+    <script src="game_whack.js?v=20261108V18"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -2754,7 +2754,7 @@
                             </button>
                             <button id="btn-srs-focus-bridge" type="button" class="group flex items-center justify-center gap-1.5 bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 hover:from-blue-500 hover:to-violet-500 text-white text-xs font-bold px-3 py-1.5 rounded-xl shadow-xs hover:shadow-md active:scale-95 transition-all cursor-pointer shrink-0" title="集中特訓 LV1~LV4 記憶過渡期全部單字">
                                 <span>🔥</span>
-                                <span>LV1~LV4 火力集中特訓</span>
+                                <span>LV1~LV3 火力集中特訓</span>
                                 <span id="srs-focus-count-badge" class="bg-white/20 text-white text-[10px] px-1.5 py-0.5 rounded-md font-mono">0 字</span>
                             </button>
                         </div>
@@ -3538,9 +3538,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261108V17</span>
+                        <span id="app-version-display">版本 20261108V18</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261108V17</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261108V18</p>
                 </div>
             </div>
         </div>
@@ -12920,7 +12920,7 @@ function cleanupMasteredMistakes() {
 
                 <div class="bg-blue-50/60 dark:bg-slate-800/60 p-2.5 rounded-xl border border-blue-100/60 dark:border-slate-700/60 text-[11px] text-slate-600 dark:text-slate-300 leading-relaxed flex items-start gap-1.5">
                     <span class="text-blue-500 shrink-0 mt-0.5">💡</span>
-                    <span><strong>補教大師心法：</strong>${isMultiLevel ? 'LV1~LV4 是單字滑落率最高的區域。建議以「4 選項測驗」製造實戰高壓，及時在遺忘臨界點前強化神經突觸連接！' : '針對單一記憶階層精準施壓，及時在遺忘臨界點前強化神經突觸連接。'}</span>
+                    <span><strong>補教大師心法：</strong>${isMultiLevel ? 'LV1~LV3 是 4 選 1 可晉級的區域，也是單字滑落率最高的區域。建議以「4 選項測驗」製造實戰高壓，及時在遺忘臨界點前強化神經突觸連接！' : '針對單一記憶階層精準施壓，及時在遺忘臨界點前強化神經突觸連接。'}</span>
                 </div>
 
                 <div class="flex flex-col gap-2.5 mt-1">
@@ -13077,8 +13077,8 @@ function cleanupMasteredMistakes() {
                 counts[lvl]++;
             }
 
-            // 更新 LV1~LV4 火力集中總數徽章
-            const bridgeCount = counts[1] + counts[2] + counts[3] + counts[4];
+            // 更新 LV1~LV3 火力集中總數徽章
+            const bridgeCount = counts[1] + counts[2] + counts[3];
             const badgeEl = document.getElementById('srs-focus-count-badge');
             if (badgeEl) badgeEl.innerText = `${bridgeCount.toLocaleString()} 字`;
 
@@ -13106,11 +13106,11 @@ function cleanupMasteredMistakes() {
                 };
             }
 
-            // 綁定頂部 LV1~LV4 攻堅按鈕
+            // 綁定頂部 LV1~LV3 攻堅按鈕
             const btnFocus = document.getElementById('btn-srs-focus-bridge');
             if (btnFocus) {
                 btnFocus.onclick = () => {
-                    openSrsLevelActionModal([1, 2, 3, 4], 'LV1~LV4', '記憶黃金戰場');
+                    openSrsLevelActionModal([1, 2, 3], 'LV1~LV3', '記憶黃金戰場');
                 };
             }
 

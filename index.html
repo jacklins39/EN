@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261108V8';
+        const APP_BUILD_VERSION = '20261108V9';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -78,20 +78,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261108V8"></script>
-    <script src="toeic_data.js?v=20261108V8"></script>
-    <script src="jh_data.js?v=20261108V8"></script>
-    <script src="listening_data.js?v=20261108V8"></script>
-    <script src="listening_words_data.js?v=20261108V8"></script>
-    <script src="uk_phonetics_manifest.js?v=20261108V8"></script>
-    <script src="words_audio_manifest.js?v=20261108V8"></script>
-    <script src="examples_audio_manifest.js?v=20261108V8"></script>
-    <script src="zh_audio_manifest.js?v=20261108V8"></script>
-    <script src="collocations_audio_manifest.js?v=20261108V8"></script>
-    <script src="syn_ant_data.js?v=20261108V8"></script>
-    <script src="synonyms_unit8_data.js?v=20261108V8"></script>
-    <script src="examples_unit9_data.js?v=20261108V8"></script>
-    <script src="game_whack.js?v=20261108V8"></script>
+    <script src="words_data.js?v=20261108V9"></script>
+    <script src="toeic_data.js?v=20261108V9"></script>
+    <script src="jh_data.js?v=20261108V9"></script>
+    <script src="listening_data.js?v=20261108V9"></script>
+    <script src="listening_words_data.js?v=20261108V9"></script>
+    <script src="uk_phonetics_manifest.js?v=20261108V9"></script>
+    <script src="words_audio_manifest.js?v=20261108V9"></script>
+    <script src="examples_audio_manifest.js?v=20261108V9"></script>
+    <script src="zh_audio_manifest.js?v=20261108V9"></script>
+    <script src="collocations_audio_manifest.js?v=20261108V9"></script>
+    <script src="syn_ant_data.js?v=20261108V9"></script>
+    <script src="synonyms_unit8_data.js?v=20261108V9"></script>
+    <script src="examples_unit9_data.js?v=20261108V9"></script>
+    <script src="game_whack.js?v=20261108V9"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -3538,9 +3538,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261108V8</span>
+                        <span id="app-version-display">版本 20261108V9</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261108V8</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261108V9</p>
                 </div>
             </div>
         </div>
@@ -4774,6 +4774,7 @@
                     }
 
                     userProgress = mergedProgress;
+                    clampAllLevelsToMax3();
                     virtualCurrentDay = cloudDay;
                     localStorage.setItem('vocab_virtual_day', String(virtualCurrentDay));
                     localStorage.setItem('vocab_last_date', todayStr);
@@ -5070,7 +5071,49 @@
         // ==========================================
         // 錯題健康檢查與修復：確保 30 天內錯題完整留存，不自動刪除
         // ==========================================
-        function cleanupMasteredMistakes() {
+                // 全面降級校驗：依據「方案 B」規則，將舊體系所有已晉升至 LV4 與 LV5 的單字降至 LV3，
+        // 確保 LV4 與 LV5 必須完全透過主動召回 (💡回想 / ⌨️拼寫) 重新考驗晉級
+        function clampAllLevelsToMax3() {
+            if (!userProgress || typeof userProgress !== 'object') return false;
+            let changed = false;
+            let clampedCount = 0;
+            const lv3Interval = (typeof SRS_INTERVALS !== 'undefined' && SRS_INTERVALS[3]) ? SRS_INTERVALS[3] : 7;
+            const curDay = Number(virtualCurrentDay) || 0;
+
+            for (const wid in userProgress) {
+                const p = userProgress[wid];
+                if (p && typeof p.level === 'number' && p.level >= 4) {
+                    p.level = 3;
+                    delete p.masteredDay;
+                    delete p.everMastered;
+                    // 若原本的排程複習天數比 (當前天數 + 7) 還遠，降回 (當前天數 + 7) 天
+                    const targetReview = curDay + lv3Interval;
+                    if (typeof p.nextReviewDay !== 'number' || p.nextReviewDay > targetReview) {
+                        p.nextReviewDay = targetReview;
+                    }
+                    p.updatedAt = Date.now();
+                    changed = true;
+                    clampedCount++;
+                }
+            }
+
+            if (changed) {
+                try {
+                    localStorage.setItem('vocab_user_progress', JSON.stringify(userProgress));
+                    const backup = { progress: userProgress, day: virtualCurrentDay, unit: currentUnit, time: Date.now() };
+                    localStorage.setItem('vocab_user_progress_backup', JSON.stringify(backup));
+                } catch(e) {}
+                try {
+                    if (typeof saveToCloud === 'function') {
+                        saveToCloud(true);
+                    }
+                } catch(e) {}
+                console.log(`🛡️ [SRS Migration] 已將全庫共 ${clampedCount} 個 LV4/LV5 單字全面降級至 LV3，並同步至本機與雲端！`);
+            }
+            return changed;
+        }
+
+function cleanupMasteredMistakes() {
             let changed = false;
             for (const id in userProgress) {
                 const p = userProgress[id];
@@ -5127,6 +5170,8 @@
                 dailyPlans = {};
             }
 
+            // 全面將舊版 LV4/LV5 單字平滑降至 LV3
+            clampAllLevelsToMax3();
             // SRS 畢業校驗：自動將已達 Level 3 以上掌握狀態的單字移出弱點與歷史錯題
             cleanupMasteredMistakes();
 
@@ -5194,6 +5239,7 @@
         }
 
         function initAppLogic() {
+            clampAllLevelsToMax3();
             syncUnitOptionLabels();
             const unitSel = document.getElementById('unit-selector');
             if (unitSel && String(unitSel.value) !== String(currentUnit)) {
@@ -12832,7 +12878,20 @@
                         <span class="text-xs font-bold text-blue-100 group-hover:translate-x-0.5 transition-transform shrink-0">開始 ➔</span>
                     </button>
 
-                    <!-- 2. 手動翻牌自測 -->
+                    <!-- 2. 無提示回想特訓 (主動召回，可解鎖 LV4/LV5) -->
+                    <button id="btn-srs-start-recall" type="button" class="group bg-gradient-to-r from-amber-500/15 to-orange-500/15 hover:bg-amber-500/25 border border-amber-300 dark:border-amber-500/40 p-3 rounded-2xl text-left cursor-pointer transition-all active:scale-[0.98] flex items-center justify-between">
+                        <div class="min-w-0 pr-2">
+                            <div class="font-bold text-sm text-amber-900 dark:text-amber-200 flex items-center gap-1.5">
+                                <span>💡</span>
+                                <span>無提示回想 (看中想英)</span>
+                                <span class="text-[10px] bg-amber-200 dark:bg-amber-900/60 text-amber-800 dark:text-amber-200 px-1.5 py-0.5 rounded font-bold">解鎖 LV4/LV5</span>
+                            </div>
+                            <div class="text-[11px] text-amber-700/80 dark:text-amber-300/80 mt-0.5 truncate">看中文直接在腦中回想英文 · 翻面驗證自我評分</div>
+                        </div>
+                        <span class="text-xs font-bold text-amber-700 dark:text-amber-300 group-hover:translate-x-0.5 transition-transform shrink-0">開始 ➔</span>
+                    </button>
+
+                    <!-- 3. 手動翻牌自測 -->
                     <button id="btn-srs-start-card" type="button" class="group bg-gradient-to-r from-amber-500/10 to-orange-500/10 hover:bg-amber-500/20 border border-amber-300/80 dark:border-amber-500/40 p-3 rounded-2xl text-left cursor-pointer transition-all active:scale-[0.98] flex items-center justify-between">
                         <div class="min-w-0 pr-2">
                             <div class="font-bold text-sm text-amber-900 dark:text-amber-200 flex items-center gap-1.5">
@@ -12865,6 +12924,11 @@
                 startSrsQuizSession(words, title);
             }, { once: true });
 
+            document.getElementById('btn-srs-start-recall')?.addEventListener('click', () => {
+                modalEl.classList.add('hidden');
+                startSrsRecallSession(words, title);
+            }, { once: true });
+
             document.getElementById('btn-srs-start-card')?.addEventListener('click', () => {
                 modalEl.classList.add('hidden');
                 startSrsCardSession(words, title);
@@ -12882,6 +12946,33 @@
             modalEl.onclick = (e) => {
                 if (e.target === modalEl) modalEl.classList.add('hidden');
             };
+        }
+
+        // 啟動 SRS 無提示回想特訓 (解鎖 LV4/LV5)
+        function startSrsRecallSession(words, title) {
+            if (!words || !words.length) {
+                showQuickToast('此階層目前沒有單字！');
+                return;
+            }
+            quizMode = 'recall';
+            if (typeof updateQuizPills === 'function') updateQuizPills();
+            unlockMobileAudio();
+            const q = [...words];
+            for (let i = q.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [q[i], q[j]] = [q[j], q[i]];
+            }
+            sessionQueue = q;
+            mistakeQueue = [];
+            totalCardsInSession = q.length;
+            cardsCompleted = 0;
+            resetSessionStats(q);
+            isMistakeMode = false;
+            isAutoFlashcardMode = false;
+            isManualCardMode = false;
+            sessionTitle = `${title} (無提示回想 · ${q.length}字)`;
+            switchTab('view-study', document.getElementById('tab-btn-dashboard'));
+            nextCard();
         }
 
         // 啟動 SRS 4 選項測驗

@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261108V26';
+        const APP_BUILD_VERSION = '20261108V27';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -78,20 +78,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261108V26"></script>
-    <script src="toeic_data.js?v=20261108V26"></script>
-    <script src="jh_data.js?v=20261108V26"></script>
-    <script src="listening_data.js?v=20261108V26"></script>
-    <script src="listening_words_data.js?v=20261108V26"></script>
-    <script src="uk_phonetics_manifest.js?v=20261108V26"></script>
-    <script src="words_audio_manifest.js?v=20261108V26"></script>
-    <script src="examples_audio_manifest.js?v=20261108V26"></script>
-    <script src="zh_audio_manifest.js?v=20261108V26"></script>
-    <script src="collocations_audio_manifest.js?v=20261108V26"></script>
-    <script src="syn_ant_data.js?v=20261108V26"></script>
-    <script src="synonyms_unit8_data.js?v=20261108V26"></script>
-    <script src="examples_unit9_data.js?v=20261108V26"></script>
-    <script src="game_whack.js?v=20261108V26"></script>
+    <script src="words_data.js?v=20261108V27"></script>
+    <script src="toeic_data.js?v=20261108V27"></script>
+    <script src="jh_data.js?v=20261108V27"></script>
+    <script src="listening_data.js?v=20261108V27"></script>
+    <script src="listening_words_data.js?v=20261108V27"></script>
+    <script src="uk_phonetics_manifest.js?v=20261108V27"></script>
+    <script src="words_audio_manifest.js?v=20261108V27"></script>
+    <script src="examples_audio_manifest.js?v=20261108V27"></script>
+    <script src="zh_audio_manifest.js?v=20261108V27"></script>
+    <script src="collocations_audio_manifest.js?v=20261108V27"></script>
+    <script src="syn_ant_data.js?v=20261108V27"></script>
+    <script src="synonyms_unit8_data.js?v=20261108V27"></script>
+    <script src="examples_unit9_data.js?v=20261108V27"></script>
+    <script src="game_whack.js?v=20261108V27"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -2400,6 +2400,11 @@
             #dict-modal { z-index: 60; }
         }
 
+        /* 手機彈窗高度改用動態視窗高度 (避開網址列伸縮造成的卡頓) */
+        @supports (height: 100dvh) {
+            #dict-modal > div { max-height: 88dvh; }
+        }
+
         /* =========================================================
            全域手機端 (Mobile < 640px) 閱讀舒適度與防爆框空間優化引擎
            1. 橫向減脂：縮減外層與全站 5 大分頁卡片過寬的 p-6 (24px) 內距，釋放 +24~32px 實質內容寬度
@@ -3058,7 +3063,7 @@
                                 <option value="">-- 請選擇學習教材 --</option>
                             </select>
                             <!-- 年份月號折疊分類手風琴 (限制最大高度與滾動條) -->
-                            <div id="listening-accordion-list" class="space-y-2.5 max-h-[580px] overflow-y-auto pr-1.5 custom-scrollbar"></div>
+                            <div id="listening-accordion-list" class="space-y-2.5 sm:max-h-[580px] sm:overflow-y-auto sm:pr-1.5 custom-scrollbar">></div>
                         </div>
 
                         <!-- 右欄：釘選預覽與開始面板 (寬度占 5/12，桌面端釘選) -->
@@ -3538,9 +3543,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261108V26</span>
+                        <span id="app-version-display">版本 20261108V27</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261108V26</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261108V27</p>
                 </div>
             </div>
         </div>
@@ -5885,7 +5890,8 @@ function cleanupMasteredMistakes() {
 
             const content = document.getElementById('dict-content');
             content.innerHTML = `
-                <div class="flex items-center justify-between gap-2 pr-8 mb-2.5 pb-2.5 border-b border-gray-100 shrink-0">
+                <div id="preview-scroll-wrap" class="flex-1 min-h-0 overflow-y-auto overscroll-contain custom-scrollbar" style="-webkit-overflow-scrolling:touch; touch-action:pan-y;">
+                <div class="flex items-center justify-between gap-2 pr-8 mb-2.5 pb-2.5 border-b border-gray-100">
                     <h3 class="text-lg sm:text-xl font-bold text-[#1D1D1F] tracking-tight truncate">${title}</h3>
                     <span class="shrink-0 text-xs font-bold px-2.5 py-1 rounded-full bg-blue-50 text-[#0071E3] border border-blue-100">共 ${words.length} 字</span>
                 </div>
@@ -5912,8 +5918,9 @@ function cleanupMasteredMistakes() {
                         <span>▶</span><span>自動輪播發音</span>
                     </button>
                 </div>
-                <div class="flex-1 min-h-0 max-h-[52vh] overflow-y-auto pr-1 custom-scrollbar space-y-1" id="preview-list-container">
+                <div class="space-y-1" id="preview-list-container">
                     ${listHtml || '<p class="text-[#86868B] text-sm text-center py-6">目前沒有單字。</p>'}
+                </div>
                 </div>
                 ${onStartCallback && words && words.length > 0 ? `
                 <div class="pt-2.5 mt-2 border-t border-gray-100 shrink-0">

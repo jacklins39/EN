@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261108V20';
+        const APP_BUILD_VERSION = '20261108V21';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -78,20 +78,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261108V20"></script>
-    <script src="toeic_data.js?v=20261108V20"></script>
-    <script src="jh_data.js?v=20261108V20"></script>
-    <script src="listening_data.js?v=20261108V20"></script>
-    <script src="listening_words_data.js?v=20261108V20"></script>
-    <script src="uk_phonetics_manifest.js?v=20261108V20"></script>
-    <script src="words_audio_manifest.js?v=20261108V20"></script>
-    <script src="examples_audio_manifest.js?v=20261108V20"></script>
-    <script src="zh_audio_manifest.js?v=20261108V20"></script>
-    <script src="collocations_audio_manifest.js?v=20261108V20"></script>
-    <script src="syn_ant_data.js?v=20261108V20"></script>
-    <script src="synonyms_unit8_data.js?v=20261108V20"></script>
-    <script src="examples_unit9_data.js?v=20261108V20"></script>
-    <script src="game_whack.js?v=20261108V20"></script>
+    <script src="words_data.js?v=20261108V21"></script>
+    <script src="toeic_data.js?v=20261108V21"></script>
+    <script src="jh_data.js?v=20261108V21"></script>
+    <script src="listening_data.js?v=20261108V21"></script>
+    <script src="listening_words_data.js?v=20261108V21"></script>
+    <script src="uk_phonetics_manifest.js?v=20261108V21"></script>
+    <script src="words_audio_manifest.js?v=20261108V21"></script>
+    <script src="examples_audio_manifest.js?v=20261108V21"></script>
+    <script src="zh_audio_manifest.js?v=20261108V21"></script>
+    <script src="collocations_audio_manifest.js?v=20261108V21"></script>
+    <script src="syn_ant_data.js?v=20261108V21"></script>
+    <script src="synonyms_unit8_data.js?v=20261108V21"></script>
+    <script src="examples_unit9_data.js?v=20261108V21"></script>
+    <script src="game_whack.js?v=20261108V21"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -3538,9 +3538,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261108V20</span>
+                        <span id="app-version-display">版本 20261108V21</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261108V20</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261108V21</p>
                 </div>
             </div>
         </div>
@@ -8978,12 +8978,147 @@ function cleanupMasteredMistakes() {
             return chunks;
         }
 
+        // 單音節自然拼讀與字母-音素結構分析 (特別支援 R-controlled 捲舌母音與母音群)
+        function renderSingleSyllablePhonicsHtml(w, kk, uk) {
+            if (!w || !w.en) return '';
+            const rawWord = w.en.trim().toLowerCase();
+            if (!rawWord || !/^[a-z]+$/.test(rawWord) || rawWord.length < 2) return '';
+
+            const rControlledPatterns = [
+                { pattern: 'ear', letters: 'E、A（2 個母音字母）+ R（子音字母）', name: 'EAR 捲舌母音', isR: true },
+                { pattern: 'air', letters: 'A、I（2 個母音字母）+ R（子音字母）', name: 'AIR 捲舌母音', isR: true },
+                { pattern: 'are', letters: 'A（母音字母）+ RE（子音組合）', name: 'ARE 捲舌母音', isR: true },
+                { pattern: 'eer', letters: 'E、E（2 個母音字母）+ R（子音字母）', name: 'EER 捲舌雙母音', isR: true },
+                { pattern: 'ere', letters: 'E（母音字母）+ RE（子音組合）', name: 'ERE 捲舌母音', isR: true },
+                { pattern: 'oor', letters: 'O、O（2 個母音字母）+ R（子音字母）', name: 'OOR 捲舌母音', isR: true },
+                { pattern: 'our', letters: 'O、U（2 個母音字母）+ R（子音字母）', name: 'OUR 捲舌母音', isR: true },
+                { pattern: 'ure', letters: 'U（母音字母）+ RE（子音組合）', name: 'URE 捲舌母音', isR: true },
+                { pattern: 'er', letters: 'E（母音字母）+ R（子音字母）', name: 'ER 捲舌母音', isR: true },
+                { pattern: 'ir', letters: 'I（母音字母）+ R（子音字母）', name: 'IR 捲舌母音', isR: true },
+                { pattern: 'ur', letters: 'U（母音字母）+ R（子音字母）', name: 'UR 捲舌母音', isR: true },
+                { pattern: 'ar', letters: 'A（母音字母）+ R（子音字母）', name: 'AR 捲舌母音', isR: true },
+                { pattern: 'or', letters: 'O（母音字母）+ R（子音字母）', name: 'OR 捲舌母音', isR: true }
+            ];
+
+            let matchedR = null;
+            let matchIdx = -1;
+            for (const item of rControlledPatterns) {
+                const idx = rawWord.indexOf(item.pattern);
+                if (idx !== -1) {
+                    matchedR = item;
+                    matchIdx = idx;
+                    break;
+                }
+            }
+
+            let onset = '';
+            let nucleus = '';
+            let coda = '';
+            let patternName = '';
+            let lettersDesc = '';
+            let isR = false;
+
+            if (matchedR) {
+                onset = rawWord.slice(0, matchIdx);
+                nucleus = matchedR.pattern;
+                coda = rawWord.slice(matchIdx + nucleus.length);
+                patternName = matchedR.name;
+                lettersDesc = matchedR.letters;
+                isR = true;
+            } else {
+                const vRegex = /[aeiouy]+/g;
+                const m = vRegex.exec(rawWord);
+                if (!m) return '';
+                nucleus = m[0];
+                onset = rawWord.slice(0, m.index);
+                coda = rawWord.slice(m.index + nucleus.length);
+                if (nucleus.length > 1) {
+                    patternName = '母音字母組合 (Vowel Digraph)';
+                    lettersDesc = '2 個母音字母組合發單一母音音素';
+                } else if (coda.endsWith('e') && coda.length > 1) {
+                    patternName = '魔術 E 相對開音節 (Magic E)';
+                    lettersDesc = '字尾不發音 e 促使前母音發長音';
+                } else if (coda) {
+                    patternName = '閉音節短母音 (Closed Syllable)';
+                    lettersDesc = '子音結尾之短母音';
+                } else {
+                    patternName = '開音節長母音 (Open Syllable)';
+                    lettersDesc = '母音結尾之長母音';
+                }
+            }
+
+            const safeWord = esc(w.en).replace(/'/g, "\\'");
+            const phonemeCount = (onset ? 1 : 0) + 1 + (coda ? 1 : 0);
+
+            return `
+                <div class="syllable-phonics-card bg-gradient-to-br from-indigo-50/60 via-blue-50/40 to-slate-50/60 dark:from-[#131D31] dark:via-[#152238] dark:to-[#111A2B] p-3.5 rounded-2xl border border-indigo-100/80 dark:border-indigo-900/50 shadow-2xs">
+                    <div class="flex items-center justify-between text-xs font-bold text-indigo-950 dark:text-indigo-200 mb-2.5">
+                        <div class="flex items-center gap-1.5">
+                            <span>🔤</span><span>字音與拼讀結構拆解 (Phonics & Vowel Pattern)</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-indigo-100/90 text-indigo-700 dark:bg-indigo-950/80 dark:text-indigo-300 font-semibold">單音節 · ${phonemeCount} 個音素</span>
+                            <button type="button" class="text-[10px] text-indigo-600 dark:text-indigo-400 hover:underline cursor-pointer flex items-center gap-1" onclick="playWordAudioSlow('${safeWord}', this)">
+                                <span>🐢 慢速跟讀</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 字母與音素對應卡 -->
+                    <div class="grid ${coda ? (onset ? 'grid-cols-3' : 'grid-cols-2') : (onset ? 'grid-cols-2' : 'grid-cols-1')} gap-2 text-center mb-2.5">
+                        ${onset ? `
+                            <div class="p-2 rounded-xl bg-white/90 dark:bg-[#18263E] border border-slate-200/80 dark:border-slate-700/60 shadow-2xs">
+                                <div class="text-[10px] text-slate-400 dark:text-slate-400 font-semibold mb-0.5">首音 (子音)</div>
+                                <div class="text-base font-extrabold font-mono text-slate-800 dark:text-slate-100">${esc(onset)}</div>
+                                <div class="text-[11px] font-mono text-slate-500 dark:text-slate-400 mt-0.5">/${esc(onset)}/</div>
+                            </div>
+                        ` : ''}
+
+                        <div class="p-2 rounded-xl bg-amber-50/90 dark:bg-amber-950/40 border border-amber-300 dark:border-amber-700/80 shadow-2xs ring-2 ring-amber-200/50 dark:ring-amber-900/40">
+                            <div class="text-[10px] text-amber-700 dark:text-amber-300 font-bold mb-0.5">${esc(patternName)}</div>
+                            <div class="text-base font-extrabold font-mono text-amber-900 dark:text-amber-100 tracking-wider">${esc(nucleus)}</div>
+                            <div class="flex items-center justify-center gap-1.5 text-[10.5px] font-mono mt-0.5 flex-wrap">
+                                ${kk ? `<span class="text-blue-700 dark:text-blue-300 font-semibold">美 ${esc(kk)}</span>` : ''}
+                                ${uk ? `<span class="text-slate-300 dark:text-slate-600">|</span><span class="text-purple-700 dark:text-purple-300 font-semibold">英 ${esc(uk)}</span>` : ''}
+                            </div>
+                        </div>
+
+                        ${coda ? `
+                            <div class="p-2 rounded-xl bg-white/90 dark:bg-[#18263E] border border-slate-200/80 dark:border-slate-700/60 shadow-2xs">
+                                <div class="text-[10px] text-slate-400 dark:text-slate-400 font-semibold mb-0.5">尾音 (子音)</div>
+                                <div class="text-base font-extrabold font-mono text-slate-800 dark:text-slate-100">${esc(coda)}</div>
+                                <div class="text-[11px] font-mono text-slate-500 dark:text-slate-400 mt-0.5">/${esc(coda)}/</div>
+                            </div>
+                        ` : ''}
+                    </div>
+
+                    <!-- 拼讀與音素規則重點提示 -->
+                    <div class="p-2.5 rounded-xl bg-white/80 dark:bg-[#162238] border border-indigo-100/90 dark:border-indigo-900/60 text-xs">
+                        <div class="flex items-center gap-1.5 font-bold text-indigo-950 dark:text-indigo-200 mb-1">
+                            <span>💡</span><span>字母結構與音素分析：</span>
+                        </div>
+                        <ul class="text-[11px] sm:text-[11.5px] text-slate-600 dark:text-slate-300 list-disc list-inside space-y-0.5 pl-0.5 leading-relaxed">
+                            <li><strong>拼字結構</strong>：${esc(lettersDesc)}。</li>
+                            ${isR ? `
+                                <li><strong>單一音素</strong>：屬於 <strong>R-controlled vowel pattern (受 R 影響母音)</strong>，整體融合成<strong>單一母音音素</strong>。</li>
+                                <li><strong>口音特色</strong>：<strong>美式 KK 保留明顯捲舌 R 音</strong>（如 [ɝ] / [ɚ] / [ɔr]）；<strong>英式 Oxford 標為非捲舌母音</strong>（如 /ɜː/ / /ɔː/）。</li>
+                            ` : `
+                                <li><strong>音素特性</strong>：母音字母核心發出一個單一主要的母音音素。</li>
+                            `}
+                        </ul>
+                    </div>
+                </div>
+            `;
+        }
+
         // 單字詳解卡專屬：音節與字音結構拆解對照模組 (方案 A)
         function renderSyllablesPhoneticsCardHtml(w) {
             if (!w || !w.en) return '';
             const { kk, uk } = getWordPhonetics(w);
             const sylInfo = getWordSyllables(w.en, kk);
-            if (!sylInfo || !sylInfo.parts || sylInfo.parts.length < 2) return '';
+            if (!sylInfo || !sylInfo.parts || sylInfo.parts.length < 2) {
+                return renderSingleSyllablePhonicsHtml(w, kk, uk);
+            }
 
             const parts = sylInfo.parts;
             const count = parts.length;

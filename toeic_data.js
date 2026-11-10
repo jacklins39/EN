@@ -31332,7 +31332,7 @@ const toeicWordsDB = [
     {
         "id": 32017,
         "en": "teamwork",
-        "kk": "[ˈtiːmwɜːrk]",
+        "kk": "[ˋtim͵wɝk]",
         "uk": "/ˈtiːmwɜːk/",
         "zh": "n. 團隊合作，協力；聯合作業",
         "unit": 14,

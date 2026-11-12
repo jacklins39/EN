@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261112V31';
+        const APP_BUILD_VERSION = '20261112V32';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -78,20 +78,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261112V31"></script>
-    <script src="toeic_data.js?v=20261112V31"></script>
-    <script src="jh_data.js?v=20261112V31"></script>
-    <script src="listening_data.js?v=20261112V31"></script>
-    <script src="listening_words_data.js?v=20261112V31"></script>
-    <script src="uk_phonetics_manifest.js?v=20261112V31"></script>
-    <script src="words_audio_manifest.js?v=20261112V31"></script>
-    <script src="examples_audio_manifest.js?v=20261112V31"></script>
-    <script src="zh_audio_manifest.js?v=20261112V31"></script>
-    <script src="collocations_audio_manifest.js?v=20261112V31"></script>
-    <script src="syn_ant_data.js?v=20261112V31"></script>
-    <script src="synonyms_unit8_data.js?v=20261112V31"></script>
-    <script src="examples_unit9_data.js?v=20261112V31"></script>
-    <script src="game_whack.js?v=20261112V31"></script>
+    <script src="words_data.js?v=20261112V32"></script>
+    <script src="toeic_data.js?v=20261112V32"></script>
+    <script src="jh_data.js?v=20261112V32"></script>
+    <script src="listening_data.js?v=20261112V32"></script>
+    <script src="listening_words_data.js?v=20261112V32"></script>
+    <script src="uk_phonetics_manifest.js?v=20261112V32"></script>
+    <script src="words_audio_manifest.js?v=20261112V32"></script>
+    <script src="examples_audio_manifest.js?v=20261112V32"></script>
+    <script src="zh_audio_manifest.js?v=20261112V32"></script>
+    <script src="collocations_audio_manifest.js?v=20261112V32"></script>
+    <script src="syn_ant_data.js?v=20261112V32"></script>
+    <script src="synonyms_unit8_data.js?v=20261112V32"></script>
+    <script src="examples_unit9_data.js?v=20261112V32"></script>
+    <script src="game_whack.js?v=20261112V32"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -3613,9 +3613,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261112V31</span>
+                        <span id="app-version-display">版本 20261112V32</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261112V31</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261112V32</p>
                 </div>
             </div>
         </div>
@@ -5498,6 +5498,22 @@ function cleanupMasteredMistakes() {
             }
         } catch (e) {}
 
+        // 智慧去除 Markdown 格式符號（自動清除 AI 產生的 ** 粗體、`code`、### 標題與 * 清單，轉為乾淨閱讀文字）
+        function cleanMarkdownText(str) {
+            if (!str || typeof str !== 'string') return '';
+            return str
+                .replace(/(\*\*\*|___)(.*?)\1/g, '$2')
+                .replace(/(\*\*|__)(.*?)\1/g, '$2')
+                .replace(/`([^`]+)`/g, '$1')
+                .replace(/(^|[\s\(\[\{「『（【])\*([^\*\n]+)\*($|[\s\)\]\}」』）】，。！？])/g, '$1$2$3')
+                .replace(/^[\t ]*#{1,6}[\t ]+/gm, '')
+                .replace(/^[\t ]*[\*\-][\t ]+/gm, '• ')
+                .replace(/\*\*/g, '')
+                .replace(/`/g, '')
+                .replace(/\n{3,}/g, '\n\n')
+                .trim();
+        }
+
         function syncNotesFromUserProgress() {
             if (!userProgress || typeof userProgress !== 'object') return;
             let notesChanged = false;
@@ -5518,7 +5534,7 @@ function cleanupMasteredMistakes() {
                 const lTime = localEntry ? (Number(localEntry.updatedAt) || 0) : 0;
                 if (pTime > lTime || (!localEntry && pText)) {
                     if (pText) {
-                        userWordNotes[enKey] = { text: pText.slice(0, 500), updatedAt: pTime || Date.now() };
+                        userWordNotes[enKey] = { text: pText.slice(0, 1000), updatedAt: pTime || Date.now() };
                     } else {
                         delete userWordNotes[enKey];
                     }
@@ -5553,7 +5569,7 @@ function cleanupMasteredMistakes() {
             if (!boxEl || !textEl) return;
             const note = getWordNote(w);
             if (note) {
-                textEl.textContent = note;
+                textEl.textContent = cleanMarkdownText(note);
                 boxEl.classList.remove('hidden');
             } else {
                 textEl.textContent = '';
@@ -5565,7 +5581,7 @@ function cleanupMasteredMistakes() {
             if (!wordOrEn) return '';
             const enKey = (typeof wordOrEn === 'string' ? wordOrEn : (wordOrEn.en || '')).trim().toLowerCase();
             if (!enKey) return '';
-            const cleanNote = String(rawText || '').trim().slice(0, 500);
+            const cleanNote = String(rawText || '').trim().slice(0, 1000);
             const now = Date.now();
 
             if (cleanNote) {
@@ -13163,11 +13179,12 @@ function cleanupMasteredMistakes() {
                                     <button type="button" data-note-tag="【易混淆】" class="user-note-chip text-[10px] px-2 py-0.5 rounded-full bg-white text-amber-800 border border-amber-200 hover:bg-amber-100/80 transition cursor-pointer">+ 易混淆</button>
                                     <button type="button" data-note-tag="【搭配】" class="user-note-chip text-[10px] px-2 py-0.5 rounded-full bg-white text-amber-800 border border-amber-200 hover:bg-amber-100/80 transition cursor-pointer">+ 搭配</button>
                                     <button type="button" data-note-tag="【考點】" class="user-note-chip text-[10px] px-2 py-0.5 rounded-full bg-white text-amber-800 border border-amber-200 hover:bg-amber-100/80 transition cursor-pointer">+ 考點</button>
+                                    <button type="button" id="btn-detail-note-clean-md" class="text-[10px] px-2 py-0.5 rounded-full bg-amber-100/90 text-amber-900 border border-amber-300 hover:bg-amber-200/90 font-semibold transition cursor-pointer" title="一鍵清除 AI 複製來的 ** 粗體與 Markdown 符號">✨ 去除 **</button>
                                 </div>
                             </div>
-                            <textarea id="detail-word-note-input" rows="2" maxlength="500" placeholder="輸入你的專屬筆記（諧音聯想、易混淆字、常考片語或文法考點，打字即自動儲存並跨裝置雲端同步）..." class="w-full text-xs sm:text-sm bg-white/95 text-gray-800 rounded-xl px-3 py-2 border border-amber-200/90 focus:border-amber-500 focus:ring-2 focus:ring-amber-200/70 outline-none resize-y leading-relaxed transition-all">${esc(existingNote)}</textarea>
+                            <textarea id="detail-word-note-input" rows="3" maxlength="1000" placeholder="輸入你的專屬筆記（可直接貼上 AI 聯想法，系統會自動淨化 ** 符號；打字即自動儲存並跨裝置雲端同步）..." class="w-full text-xs sm:text-sm bg-white/95 text-gray-800 rounded-xl px-3 py-2 border border-amber-200/90 focus:border-amber-500 focus:ring-2 focus:ring-amber-200/70 outline-none resize-y leading-relaxed transition-all">${esc(existingNote)}</textarea>
                             <div class="flex items-center justify-between text-[11px] text-gray-400">
-                                <span id="detail-word-note-count">${existingNote.length} / 500 字</span>
+                                <span id="detail-word-note-count">${existingNote.length} / 1000 字</span>
                                 <div class="flex items-center gap-2">
                                     <button type="button" id="btn-detail-note-clear" class="${existingNote ? '' : 'hidden '}text-rose-500 hover:text-rose-600 font-medium px-2 py-0.5 rounded-lg hover:bg-rose-50 dark:hover:bg-rose-950/40 transition cursor-pointer">清除</button>
                                     <button type="button" id="btn-detail-note-save" class="bg-amber-500 hover:bg-amber-600 text-white font-semibold px-2.5 py-1 rounded-lg shadow-2xs active:scale-95 transition cursor-pointer">💾 儲存備註</button>
@@ -13232,10 +13249,46 @@ function cleanupMasteredMistakes() {
                     }
                 };
 
+                // 貼上時自動攔截並淨化 Markdown 符號 (** 粗體、`code`、### 標題、* 清單)
+                noteInputEl.addEventListener('paste', (e) => {
+                    const pasteText = (e.clipboardData || window.clipboardData)?.getData('text');
+                    if (pasteText && (/[\*`#_]/.test(pasteText))) {
+                        e.preventDefault();
+                        const cleaned = cleanMarkdownText(pasteText);
+                        const start = noteInputEl.selectionStart || 0;
+                        const end = noteInputEl.selectionEnd || 0;
+                        const val = noteInputEl.value;
+                        const nextVal = (val.substring(0, start) + cleaned + val.substring(end)).slice(0, 1000);
+                        noteInputEl.value = nextVal;
+                        noteInputEl.selectionStart = noteInputEl.selectionEnd = Math.min(nextVal.length, start + cleaned.length);
+                        autoResizeNote();
+                        const len = noteInputEl.value.length;
+                        if (noteCountEl) noteCountEl.textContent = `${len} / 1000 字`;
+                        commitNoteSave(false);
+                        if (typeof showQuickToast === 'function') showQuickToast('已自動淨化清除 ** 與 Markdown 標籤 ✨');
+                    }
+                });
+
+                // 一鍵去除既有文字中的 ** 符號
+                document.getElementById('btn-detail-note-clean-md')?.addEventListener('click', () => {
+                    const raw = noteInputEl.value;
+                    const cleaned = cleanMarkdownText(raw);
+                    if (raw !== cleaned) {
+                        noteInputEl.value = cleaned.slice(0, 1000);
+                        autoResizeNote();
+                        const len = noteInputEl.value.length;
+                        if (noteCountEl) noteCountEl.textContent = `${len} / 1000 字`;
+                        commitNoteSave(true);
+                        if (typeof showQuickToast === 'function') showQuickToast('已清除所有 ** 與格式符號 ✨');
+                    } else {
+                        if (typeof showQuickToast === 'function') showQuickToast('目前筆記無格式符號');
+                    }
+                });
+
                 noteInputEl.addEventListener('input', () => {
                     autoResizeNote();
                     const len = noteInputEl.value.length;
-                    if (noteCountEl) noteCountEl.textContent = `${len} / 500 字`;
+                    if (noteCountEl) noteCountEl.textContent = `${len} / 1000 字`;
                     if (noteStatusEl) {
                         noteStatusEl.textContent = '編輯中...';
                         noteStatusEl.className = 'text-[10px] font-medium px-1.5 py-0.5 rounded-full bg-amber-100 text-amber-800 dark:bg-amber-950/70 dark:text-amber-300';
@@ -13258,7 +13311,7 @@ function cleanupMasteredMistakes() {
                 btnNoteClear?.addEventListener('click', () => {
                     noteInputEl.value = '';
                     autoResizeNote();
-                    if (noteCountEl) noteCountEl.textContent = '0 / 500 字';
+                    if (noteCountEl) noteCountEl.textContent = '0 / 1000 字';
                     commitNoteSave(true);
                 });
 
@@ -13267,10 +13320,10 @@ function cleanupMasteredMistakes() {
                         const tag = btn.getAttribute('data-note-tag') || '';
                         const cur = noteInputEl.value;
                         const prefix = (cur && !cur.endsWith('\n')) ? '\n' : '';
-                        noteInputEl.value = (cur + prefix + tag + ' ').slice(0, 500);
+                        noteInputEl.value = (cur + prefix + tag + ' ').slice(0, 1000);
                         noteInputEl.focus();
                         autoResizeNote();
-                        if (noteCountEl) noteCountEl.textContent = `${noteInputEl.value.length} / 500 字`;
+                        if (noteCountEl) noteCountEl.textContent = `${noteInputEl.value.length} / 1000 字`;
                         commitNoteSave(false);
                     });
                 });

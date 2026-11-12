@@ -8715,5 +8715,385 @@ const examplesUnit9WordsDB = [
     "unit": 9,
     "example": "[v.] She got a promotion after working hard on the major project.",
     "exampleZh": "在為這個重大專案努力工作後，她獲得了升遷。"
+  },
+  {
+    "en": "sittings",
+    "kk": "[ˋsɪtɪŋz]",
+    "uk": "/ˈsɪtɪŋz/",
+    "zh": "n. 議會開會期、就餐時段、會議、孵蛋期（sitting 之複數）",
+    "unit": 9,
+    "example": "[n.] The popular restaurant served dinner in two separate sittings.",
+    "exampleZh": "這家熱門餐廳將晚餐分為兩個用餐時段進行。",
+    "id": 9064
+  },
+  {
+    "en": "frozen",
+    "kk": "[ˋfroʊz(ə)n]",
+    "uk": "/ˈfrəʊzn/",
+    "zh": "adj. 結冰的、冷凍的、嚇呆的；v. 結冰、凍結（freeze 之過去分詞）",
+    "unit": 9,
+    "example": "[adj.] We carefully walked across the frozen surface of the lake.",
+    "exampleZh": "我們小心翼翼地走在結冰的湖面上。",
+    "id": 9065
+  },
+  {
+    "en": "encompasses",
+    "kk": "[ɪnˋkʌmpəsɪz]",
+    "uk": "/ɪnˈkʌmpəsɪz/",
+    "zh": "v. 包含、包括、圍繞（encompass 之第三人稱單數）",
+    "unit": 9,
+    "example": "[v.] A thorough education encompasses far more than just taking exams.",
+    "exampleZh": "全面的教育所包含的遠遠不只是參加考試而已。",
+    "id": 9066
+  },
+  {
+    "en": "kate",
+    "kk": "[ket]",
+    "uk": "/keɪt/",
+    "zh": "n. 凱特（女子名，Catherine 之暱稱）",
+    "unit": 9,
+    "example": "[n.] Kate smiled warmly as she welcomed the new students to class.",
+    "exampleZh": "凱特熱情地微笑著歡迎新同學來到班上。",
+    "id": 9067
+  },
+  {
+    "en": "incredulous",
+    "kk": "[ɪnˋkredʒələs]",
+    "uk": "/ɪnˈkredjələs/",
+    "zh": "adj. 難以置信的、表示懷疑的、不輕信的",
+    "unit": 9,
+    "example": "[adj.] Her face showed an incredulous expression when she heard the unexpected news.",
+    "exampleZh": "當她聽到這個出乎意料的消息時，臉上露出了難以置信的表情。",
+    "id": 9068
+  },
+  {
+    "en": "moira",
+    "kk": "[ˋmɔɪrə]",
+    "uk": "/ˈmɔɪrə/",
+    "zh": "n. 莫伊拉（女子名）",
+    "unit": 9,
+    "example": "[n.] Moira joined the research team to lead the new project.",
+    "exampleZh": "莫伊拉加入了研究團隊以領導這項新專案。",
+    "id": 9069
+  },
+  {
+    "en": "miquela",
+    "kk": "[mɪˋkɛlə]",
+    "uk": "/mɪˈkɛlə/",
+    "zh": "n. 蜜凱拉（女子名、虛擬網紅）",
+    "unit": 9,
+    "example": "[n.] Many young followers enjoy tracking Miquela on social media.",
+    "exampleZh": "許多年輕的追隨者喜歡在社群媒體上關注蜜凱拉。",
+    "id": 9070
+  },
+  {
+    "en": "maddeningly",
+    "kk": "[ˋmædnɪŋli]",
+    "uk": "/ˈmædnɪŋli/",
+    "zh": "adv. 令人發狂地、使人惱火地、極端慢地",
+    "unit": 9,
+    "example": "[adv.] Traffic was moving maddeningly slow during the evening rush hour.",
+    "exampleZh": "在傍晚尖峰時段，交通進展緩慢得令人抓狂。",
+    "id": 9071
+  },
+  {
+    "en": "jenny",
+    "kk": "[ˋdʒeni]",
+    "uk": "/ˈdʒeni/",
+    "zh": "n. 珍妮（女子名）；雌驢（jenny ass）",
+    "unit": 9,
+    "example": "[n.] Jenny completed her medical degree with highest honors.",
+    "exampleZh": "珍妮以最高榮譽完成了她的醫學學位。",
+    "id": 9072
+  },
+  {
+    "en": "mozambique",
+    "kk": "[͵moʊzæmˋbik]",
+    "uk": "/ˌməʊzæmˈbiːk/",
+    "zh": "n. 莫三比克（非洲東南部國家，首都馬普托）",
+    "unit": 9,
+    "example": "[n.] Mozambique is famous for its beautiful coastal wildlife reserves.",
+    "exampleZh": "莫三比克以其美麗的沿海野生動物保護區而聞名。",
+    "id": 9073
+  },
+  {
+    "en": "speciality",
+    "kk": "[͵speʃiˋæləti]",
+    "uk": "/ˌspeʃiˈæləti/",
+    "zh": "n. 特色菜、特產、專業、專長（美作 specialty）",
+    "unit": 9,
+    "example": "[n.] The chef introduced his signature speciality to the dinner guests.",
+    "exampleZh": "主廚向晚餐賓客介紹了他的招牌特色菜。",
+    "id": 9074
+  },
+  {
+    "en": "escapement",
+    "kk": "[ɪˋskeɪpmənt]",
+    "uk": "/ɪˈskeɪpmənt/",
+    "zh": "n. 擒縱機構、擒縱器（鐘錶的核心節拍控制裝置）",
+    "unit": 9,
+    "example": "[n.] The antique clock stopped ticking because its delicate escapement was worn out.",
+    "exampleZh": "那座古董鐘停止了滴答聲，因為它精密的擒縱機構已經磨損了。",
+    "id": 9075
+  },
+  {
+    "en": "george",
+    "kk": "[dʒɔrdʒ]",
+    "uk": "/dʒɔːdʒ/",
+    "zh": "n. 喬治（男子名）",
+    "unit": 9,
+    "example": "[n.] George decided to pursue a new career in software engineering.",
+    "exampleZh": "喬治決定在軟體工程領域開創新的職業生涯。",
+    "id": 9076
+  },
+  {
+    "en": "funky",
+    "kk": "[ˋfʌŋki]",
+    "uk": "/ˈfʌŋki/",
+    "zh": "adj. 時髦別緻的、有強烈節奏感的、奇特的",
+    "unit": 9,
+    "example": "[adj.] The designer created a funky jacket decorated with colorful patterns.",
+    "exampleZh": "設計師打造了一件裝飾有鮮豔圖案的時髦別緻外套。",
+    "id": 9077
+  },
+  {
+    "en": "masticated",
+    "kk": "[ˋmæstɪkeɪtɪd]",
+    "uk": "/ˈmæstɪkeɪtɪd/",
+    "zh": "v. 咀嚼、細嚼慢嚥（masticate 之過去式與過去分詞）",
+    "unit": 9,
+    "example": "[v.] The patient slowly masticated his food to aid healthy digestion.",
+    "exampleZh": "病人慢慢咀嚼食物以幫助健康消化。",
+    "id": 9078
+  },
+  {
+    "en": "fraught",
+    "kk": "[frɔt]",
+    "uk": "/frɔːt/",
+    "zh": "adj. 充滿（危險或憂慮）的、令人焦慮不安的",
+    "unit": 9,
+    "example": "[adj.] The peace negotiations were fraught with difficulties from the start.",
+    "exampleZh": "和平談判從一開始就充滿了重重困難。",
+    "id": 9079
+  },
+  {
+    "en": "ouch",
+    "kk": "[aʊtʃ]",
+    "uk": "/aʊtʃ/",
+    "zh": "int. 哎喲（突然疼痛時發出的叫聲）",
+    "unit": 9,
+    "example": "[int.] Ouch! I accidentally bumped my knee against the coffee table.",
+    "exampleZh": "哎喲！我的膝蓋不小心撞到了咖啡桌。",
+    "id": 9080
+  },
+  {
+    "en": "trod",
+    "kk": "[trɑd]",
+    "uk": "/trɒd/",
+    "zh": "v. 踩、踐踏、行走（tread 之過去式與過去分詞）",
+    "unit": 9,
+    "example": "[v.] The weary travelers trod silently along the snowy mountain path.",
+    "exampleZh": "疲憊的旅人沿著白雪皚皚的山徑默默前行。",
+    "id": 9081
+  },
+  {
+    "en": "anymore",
+    "kk": "[͵eniˋmɔr]",
+    "uk": "/ˌeniˈmɔː/",
+    "zh": "adv. （不）再、再也（不）",
+    "unit": 9,
+    "example": "[adv.] He does not work for the advertising company anymore.",
+    "exampleZh": "他已經不再為那家廣告公司工作了。",
+    "id": 9082
+  },
+  {
+    "en": "extruded",
+    "kk": "[ɪkˋstrudɪd]",
+    "uk": "/ɪkˈstruːdɪd/",
+    "zh": "adj. 擠壓成型的；v. 擠出、壓出（extrude 之過去式與過去分詞）",
+    "unit": 9,
+    "example": "[adj.] The factory specializes in manufacturing extruded aluminum frames.",
+    "exampleZh": "該工廠專門製造擠壓成型的鋁合金框架。",
+    "id": 9083
+  },
+  {
+    "en": "bliss",
+    "kk": "[blɪs]",
+    "uk": "/blɪs/",
+    "zh": "n. 極樂、無上的幸福、福氣",
+    "unit": 9,
+    "example": "[n.] Sitting on the quiet beach at sunset was pure bliss.",
+    "exampleZh": "在日落時分坐在寧靜的海灘上是純粹的幸福。",
+    "id": 9084
+  },
+  {
+    "en": "graphite",
+    "kk": "[ˋɡræfaɪt]",
+    "uk": "/ˈɡræfaɪt/",
+    "zh": "n. 石墨、黑鉛",
+    "unit": 9,
+    "example": "[n.] Modern tennis rackets are often reinforced with strong graphite fibers.",
+    "exampleZh": "現代網球拍通常以高強度的石墨纖維進行加固。",
+    "id": 9085
+  },
+  {
+    "en": "animations",
+    "kk": "[͵ænɪˋmeɪʃnz]",
+    "uk": "/ˌænɪˈmeɪʃnz/",
+    "zh": "n. 動畫片、動畫效果（animation 之複數）",
+    "unit": 9,
+    "example": "[n.] The graphic studio produced colorful animations for the mobile game.",
+    "exampleZh": "這家圖像工作室為該手機遊戲製作了生動鮮豔的動畫。",
+    "id": 9086
+  },
+  {
+    "en": "evolutionary",
+    "kk": "[͵evəˋluʃəneri]",
+    "uk": "/ˌiːvəˈluːʃnri/",
+    "zh": "adj. 進化的、演變的、漸進發展的",
+    "unit": 9,
+    "example": "[adj.] The fossil discovery provided crucial evolutionary evidence of early bird species.",
+    "exampleZh": "這塊化石的發現為早期鳥類物種提供了關鍵的演化證據。",
+    "id": 9087
+  },
+  {
+    "en": "manchurian",
+    "kk": "[mænˋtʃʊriən]",
+    "uk": "/mænˈtʃʊəriən/",
+    "zh": "adj. 中國東北的、滿洲的；n. 東北人、滿洲人",
+    "unit": 9,
+    "example": "[adj.] Visitors can observe the rare Manchurian tiger in the protected reserve.",
+    "exampleZh": "遊客可以在保護區內觀察珍稀的東北虎。",
+    "id": 9088
+  },
+  {
+    "en": "supplied",
+    "kk": "[səˋplaɪd]",
+    "uk": "/səˈplaɪd/",
+    "zh": "adj. 配備充足的；v. 提供、供應（supply 之過去式與過去分詞）",
+    "unit": 9,
+    "example": "[v.] The medical center supplied clean drinking water and bandages to refugees.",
+    "exampleZh": "醫療中心向難民提供了乾淨的飲用水和繃帶。",
+    "id": 9089
+  },
+  {
+    "en": "omniscient",
+    "kk": "[ɑmˋnɪʃənt]",
+    "uk": "/ɒmˈnɪsiənt/",
+    "zh": "adj. 全知的、無所不知的；n. 無所不知者、上帝",
+    "unit": 9,
+    "example": "[adj.] The classic novel is narrated from the perspective of an omniscient storyteller.",
+    "exampleZh": "這部經典小說是從一位全知敘述者的視角展開講述的。",
+    "id": 9090
+  },
+  {
+    "en": "overestimate",
+    "kk": "[͵oʊvərˋestɪmeɪt]",
+    "uk": "/ˌəʊvərˈestɪmeɪt/",
+    "zh": "v. 高估、過高估計；n. 過高的估計",
+    "unit": 9,
+    "example": "[v.] Do not overestimate your stamina when hiking steep mountain trails.",
+    "exampleZh": "在攀登陡峭山路時，不要高估自己的體力。",
+    "id": 9091
+  },
+  {
+    "en": "japanese",
+    "kk": "[͵dʒæpəˋniz]",
+    "uk": "/ˌdʒæpəˈniːz/",
+    "zh": "adj. 日本的、日語的；n. 日本人、日語",
+    "unit": 9,
+    "example": "[adj.] She enjoys traditional Japanese green tea and handmade pottery.",
+    "exampleZh": "她喜歡傳統的日本綠茶和手工陶器。",
+    "id": 9092
+  },
+  {
+    "en": "cooties",
+    "kk": "[ˋkutiz]",
+    "uk": "/ˈkuːtiz/",
+    "zh": "n. （兒童玩笑用語）假想病菌、髒東西；蝨子",
+    "unit": 9,
+    "example": "[n.] The playful school children teased that the old playground bench had cooties.",
+    "exampleZh": "愛玩鬧的小學生開玩笑說操場的老舊長凳上有髒細菌。",
+    "id": 9093
+  },
+  {
+    "en": "shedloads",
+    "kk": "[ˋʃɛdˌlodz]",
+    "uk": "/ˈʃedləʊdz/",
+    "zh": "n. 大量、成堆、許多（shedload 之複數）",
+    "unit": 9,
+    "example": "[n.] The successful viral campaign generated shedloads of positive customer feedback.",
+    "exampleZh": "這場成功的網路宣傳活動引來了成堆的顧客正面反饋。",
+    "id": 9094
+  },
+  {
+    "en": "australian",
+    "kk": "[ɔˋstreɪliən]",
+    "uk": "/ɒˈstreɪliən/",
+    "zh": "adj. 澳洲的、澳洲人的；n. 澳洲人",
+    "unit": 9,
+    "example": "[adj.] The kangaroo is an iconic Australian animal found across the country.",
+    "exampleZh": "袋鼠是遍布全澳洲的代表性動物。",
+    "id": 9095
+  },
+  {
+    "en": "decree",
+    "kk": "[dɪˋkri]",
+    "uk": "/dɪˈkriː/",
+    "zh": "n. 法令、政令、裁定；v. 頒布、判決",
+    "unit": 9,
+    "example": "[n.] The government issued an official decree to protect coastal marine habitats.",
+    "exampleZh": "政府頒布了一項官方法令以保護沿海海洋棲息地。",
+    "id": 9096
+  },
+  {
+    "en": "fiji",
+    "kk": "[ˋfidʒi]",
+    "uk": "/ˈfiːdʒiː/",
+    "zh": "n. 斐濟（南太平洋島國，首都蘇瓦）",
+    "unit": 9,
+    "example": "[n.] Fiji is world-famous for its crystal-clear waters and coral reefs.",
+    "exampleZh": "斐濟以其清澈見底的海水和珊瑚礁聞名於世。",
+    "id": 9097
+  },
+  {
+    "en": "redeemed",
+    "kk": "[rɪˋdimd]",
+    "uk": "/rɪˈdiːmd/",
+    "zh": "adj. 已兌現的、被救贖的；v. 贖回、兌現、挽回（redeem 之過去式與過去分詞）",
+    "unit": 9,
+    "example": "[v.] He redeemed his shopping reward vouchers at the supermarket checkout.",
+    "exampleZh": "他在超市結帳時兌換了購物獎勵禮券。",
+    "id": 9098
+  },
+  {
+    "en": "called",
+    "kk": "[kɔld]",
+    "uk": "/kɔːld/",
+    "zh": "adj. 被稱為…的、名叫…的；v. 打電話、稱呼、呼叫（call 之過去式與過去分詞）",
+    "unit": 9,
+    "example": "[adj.] A friendly software engineer called David helped us solve the technical issue.",
+    "exampleZh": "一位名叫戴維的和藹軟體工程師幫助我們解決了技術問題。",
+    "id": 9099
+  },
+  {
+    "en": "words",
+    "kk": "[wɝdz]",
+    "uk": "/wɜːdz/",
+    "zh": "n. 言詞、話語；台詞、歌詞、爭吵（word 之複數）",
+    "unit": 9,
+    "example": "[n.] Her encouraging words inspired the entire team to keep moving forward.",
+    "exampleZh": "她鼓舞人心的話語激勵了整個團隊繼續前進。",
+    "id": 9100
+  },
+  {
+    "en": "consumers",
+    "kk": "[kənˋsjumɚz]",
+    "uk": "/kənˈsjuːməz/",
+    "zh": "n. 消費者、顧客、用戶（consumer 之複數）",
+    "unit": 9,
+    "example": "[n.] Modern consumers demand higher transparency regarding food ingredients.",
+    "exampleZh": "現代消費者對食品成分的要求具有更高的透明度。",
+    "id": 9101
   }
 ];

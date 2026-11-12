@@ -8722,8 +8722,8 @@ const examplesUnit9WordsDB = [
     "uk": "/ˈsɪtɪŋz/",
     "zh": "n. 議會開會期、就餐時段、會議、孵蛋期（sitting 之複數）",
     "unit": 9,
-    "example": "[n.] The popular restaurant served dinner in two separate sittings.",
-    "exampleZh": "這家熱門餐廳將晚餐分為兩個用餐時段進行。",
+    "example": "[n.] We have two dinner sittings at 6 and 8 p.m.",
+    "exampleZh": "我們的晚餐分成下午 6 點和 8 點兩個時段。",
     "id": 9064
   },
   {
@@ -8732,8 +8732,8 @@ const examplesUnit9WordsDB = [
     "uk": "/ˈfrəʊzn/",
     "zh": "adj. 結冰的、冷凍的、嚇呆的；v. 結冰、凍結（freeze 之過去分詞）",
     "unit": 9,
-    "example": "[adj.] We carefully walked across the frozen surface of the lake.",
-    "exampleZh": "我們小心翼翼地走在結冰的湖面上。",
+    "example": "[adj.] I bought some frozen vegetables at the supermarket.",
+    "exampleZh": "我在超市買了一些冷凍蔬菜。",
     "id": 9065
   },
   {
@@ -8742,8 +8742,8 @@ const examplesUnit9WordsDB = [
     "uk": "/ɪnˈkʌmpəsɪz/",
     "zh": "v. 包含、包括、圍繞（encompass 之第三人稱單數）",
     "unit": 9,
-    "example": "[v.] A thorough education encompasses far more than just taking exams.",
-    "exampleZh": "全面的教育所包含的遠遠不只是參加考試而已。",
+    "example": "[v.] My job encompasses IT support and system maintenance.",
+    "exampleZh": "我的工作包含 IT 支援和系統維護。",
     "id": 9066
   },
   {
@@ -8752,8 +8752,8 @@ const examplesUnit9WordsDB = [
     "uk": "/keɪt/",
     "zh": "n. 凱特（女子名，Catherine 之暱稱）",
     "unit": 9,
-    "example": "[n.] Kate smiled warmly as she welcomed the new students to class.",
-    "exampleZh": "凱特熱情地微笑著歡迎新同學來到班上。",
+    "example": "[n.] Kate is my new English teacher.",
+    "exampleZh": "Kate 是我的新英文老師。",
     "id": 9067
   },
   {
@@ -8762,8 +8762,8 @@ const examplesUnit9WordsDB = [
     "uk": "/ɪnˈkredjələs/",
     "zh": "adj. 難以置信的、表示懷疑的、不輕信的",
     "unit": 9,
-    "example": "[adj.] Her face showed an incredulous expression when she heard the unexpected news.",
-    "exampleZh": "當她聽到這個出乎意料的消息時，臉上露出了難以置信的表情。",
+    "example": "[adj.] He looked incredulous when I told him the price.",
+    "exampleZh": "當我告訴他價格時，他露出難以置信的表情。",
     "id": 9068
   },
   {
@@ -8772,8 +8772,8 @@ const examplesUnit9WordsDB = [
     "uk": "/ˈmɔɪrə/",
     "zh": "n. 莫伊拉（女子名）",
     "unit": 9,
-    "example": "[n.] Moira joined the research team to lead the new project.",
-    "exampleZh": "莫伊拉加入了研究團隊以領導這項新專案。",
+    "example": "[n.] Moira works in the same office as me.",
+    "exampleZh": "Moira 和我在同一間辦公室工作。",
     "id": 9069
   },
   {
@@ -8782,8 +8782,8 @@ const examplesUnit9WordsDB = [
     "uk": "/mɪˈkɛlə/",
     "zh": "n. 蜜凱拉（女子名、虛擬網紅）",
     "unit": 9,
-    "example": "[n.] Many young followers enjoy tracking Miquela on social media.",
-    "exampleZh": "許多年輕的追隨者喜歡在社群媒體上關注蜜凱拉。",
+    "example": "[n.] I saw Miquela in a social media post.",
+    "exampleZh": "我在一則社群媒體貼文中看到 Miquela。",
     "id": 9070
   },
   {
@@ -8792,8 +8792,8 @@ const examplesUnit9WordsDB = [
     "uk": "/ˈmædnɪŋli/",
     "zh": "adv. 令人發狂地、使人惱火地、極端慢地",
     "unit": 9,
-    "example": "[adv.] Traffic was moving maddeningly slow during the evening rush hour.",
-    "exampleZh": "在傍晚尖峰時段，交通進展緩慢得令人抓狂。",
+    "example": "[adv.] The internet is maddeningly slow today.",
+    "exampleZh": "今天的網路慢得令人抓狂。",
     "id": 9071
   },
   {
@@ -8802,8 +8802,8 @@ const examplesUnit9WordsDB = [
     "uk": "/ˈdʒeni/",
     "zh": "n. 珍妮（女子名）；雌驢（jenny ass）",
     "unit": 9,
-    "example": "[n.] Jenny completed her medical degree with highest honors.",
-    "exampleZh": "珍妮以最高榮譽完成了她的醫學學位。",
+    "example": "[n.] Jenny usually takes the bus to work.",
+    "exampleZh": "Jenny 通常搭公車上班。",
     "id": 9072
   },
   {
@@ -8812,8 +8812,8 @@ const examplesUnit9WordsDB = [
     "uk": "/ˌməʊzæmˈbiːk/",
     "zh": "n. 莫三比克（非洲東南部國家，首都馬普托）",
     "unit": 9,
-    "example": "[n.] Mozambique is famous for its beautiful coastal wildlife reserves.",
-    "exampleZh": "莫三比克以其美麗的沿海野生動物保護區而聞名。",
+    "example": "[n.] My friend traveled to Mozambique last year.",
+    "exampleZh": "我的朋友去年去了莫三比克。",
     "id": 9073
   },
   {
@@ -8822,8 +8822,8 @@ const examplesUnit9WordsDB = [
     "uk": "/ˌspeʃiˈæləti/",
     "zh": "n. 特色菜、特產、專業、專長（美作 specialty）",
     "unit": 9,
-    "example": "[n.] The chef introduced his signature speciality to the dinner guests.",
-    "exampleZh": "主廚向晚餐賓客介紹了他的招牌特色菜。",
+    "example": "[n.] Seafood is the restaurant's speciality.",
+    "exampleZh": "海鮮是這家餐廳的招牌菜。",
     "id": 9074
   },
   {
@@ -8832,8 +8832,8 @@ const examplesUnit9WordsDB = [
     "uk": "/ɪˈskeɪpmənt/",
     "zh": "n. 擒縱機構、擒縱器（鐘錶的核心節拍控制裝置）",
     "unit": 9,
-    "example": "[n.] The antique clock stopped ticking because its delicate escapement was worn out.",
-    "exampleZh": "那座古董鐘停止了滴答聲，因為它精密的擒縱機構已經磨損了。",
+    "example": "[n.] The watchmaker repaired the clock's escapement.",
+    "exampleZh": "鐘錶師修理了時鐘的擒縱機構。",
     "id": 9075
   },
   {
@@ -8842,8 +8842,8 @@ const examplesUnit9WordsDB = [
     "uk": "/dʒɔːdʒ/",
     "zh": "n. 喬治（男子名）",
     "unit": 9,
-    "example": "[n.] George decided to pursue a new career in software engineering.",
-    "exampleZh": "喬治決定在軟體工程領域開創新的職業生涯。",
+    "example": "[n.] George is responsible for the IT department.",
+    "exampleZh": "George 負責資訊部門。",
     "id": 9076
   },
   {
@@ -8852,8 +8852,8 @@ const examplesUnit9WordsDB = [
     "uk": "/ˈfʌŋki/",
     "zh": "adj. 時髦別緻的、有強烈節奏感的、奇特的",
     "unit": 9,
-    "example": "[adj.] The designer created a funky jacket decorated with colorful patterns.",
-    "exampleZh": "設計師打造了一件裝飾有鮮豔圖案的時髦別緻外套。",
+    "example": "[adj.] She bought a funky pair of colorful shoes.",
+    "exampleZh": "她買了一雙色彩鮮豔、很有特色的鞋子。",
     "id": 9077
   },
   {
@@ -8862,8 +8862,8 @@ const examplesUnit9WordsDB = [
     "uk": "/ˈmæstɪkeɪtɪd/",
     "zh": "v. 咀嚼、細嚼慢嚥（masticate 之過去式與過去分詞）",
     "unit": 9,
-    "example": "[v.] The patient slowly masticated his food to aid healthy digestion.",
-    "exampleZh": "病人慢慢咀嚼食物以幫助健康消化。",
+    "example": "[v.] He masticated the food slowly before swallowing.",
+    "exampleZh": "他慢慢咀嚼食物後才吞下去。",
     "id": 9078
   },
   {
@@ -8872,8 +8872,8 @@ const examplesUnit9WordsDB = [
     "uk": "/frɔːt/",
     "zh": "adj. 充滿（危險或憂慮）的、令人焦慮不安的",
     "unit": 9,
-    "example": "[adj.] The peace negotiations were fraught with difficulties from the start.",
-    "exampleZh": "和平談判從一開始就充滿了重重困難。",
+    "example": "[adj.] The project was fraught with unexpected problems.",
+    "exampleZh": "這個專案充滿了意想不到的問題。",
     "id": 9079
   },
   {
@@ -8882,8 +8882,8 @@ const examplesUnit9WordsDB = [
     "uk": "/aʊtʃ/",
     "zh": "int. 哎喲（突然疼痛時發出的叫聲）",
     "unit": 9,
-    "example": "[int.] Ouch! I accidentally bumped my knee against the coffee table.",
-    "exampleZh": "哎喲！我的膝蓋不小心撞到了咖啡桌。",
+    "example": "[int.] Ouch! I burned my finger on the hot pan.",
+    "exampleZh": "哎喲！我的手指被熱鍋燙到了。",
     "id": 9080
   },
   {
@@ -8892,8 +8892,8 @@ const examplesUnit9WordsDB = [
     "uk": "/trɒd/",
     "zh": "v. 踩、踐踏、行走（tread 之過去式與過去分詞）",
     "unit": 9,
-    "example": "[v.] The weary travelers trod silently along the snowy mountain path.",
-    "exampleZh": "疲憊的旅人沿著白雪皚皚的山徑默默前行。",
+    "example": "[v.] I accidentally trod on my glasses.",
+    "exampleZh": "我不小心踩到了我的眼鏡。",
     "id": 9081
   },
   {
@@ -8902,8 +8902,8 @@ const examplesUnit9WordsDB = [
     "uk": "/ˌeniˈmɔː/",
     "zh": "adv. （不）再、再也（不）",
     "unit": 9,
-    "example": "[adv.] He does not work for the advertising company anymore.",
-    "exampleZh": "他已經不再為那家廣告公司工作了。",
+    "example": "[adv.] I don't use that old computer anymore.",
+    "exampleZh": "我不再使用那台舊電腦了。",
     "id": 9082
   },
   {
@@ -8912,8 +8912,8 @@ const examplesUnit9WordsDB = [
     "uk": "/ɪkˈstruːdɪd/",
     "zh": "adj. 擠壓成型的；v. 擠出、壓出（extrude 之過去式與過去分詞）",
     "unit": 9,
-    "example": "[adj.] The factory specializes in manufacturing extruded aluminum frames.",
-    "exampleZh": "該工廠專門製造擠壓成型的鋁合金框架。",
+    "example": "[adj.] The factory uses extruded aluminum parts.",
+    "exampleZh": "這家工廠使用擠壓成型的鋁製零件。",
     "id": 9083
   },
   {
@@ -8922,8 +8922,8 @@ const examplesUnit9WordsDB = [
     "uk": "/blɪs/",
     "zh": "n. 極樂、無上的幸福、福氣",
     "unit": 9,
-    "example": "[n.] Sitting on the quiet beach at sunset was pure bliss.",
-    "exampleZh": "在日落時分坐在寧靜的海灘上是純粹的幸福。",
+    "example": "[n.] Having a day off after a busy week is pure bliss.",
+    "exampleZh": "忙碌一週後能休假一天，真是一大享受。",
     "id": 9084
   },
   {
@@ -8932,8 +8932,8 @@ const examplesUnit9WordsDB = [
     "uk": "/ˈɡræfaɪt/",
     "zh": "n. 石墨、黑鉛",
     "unit": 9,
-    "example": "[n.] Modern tennis rackets are often reinforced with strong graphite fibers.",
-    "exampleZh": "現代網球拍通常以高強度的石墨纖維進行加固。",
+    "example": "[n.] This pencil contains graphite.",
+    "exampleZh": "這支鉛筆含有石墨。",
     "id": 9085
   },
   {
@@ -8942,8 +8942,8 @@ const examplesUnit9WordsDB = [
     "uk": "/ˌænɪˈmeɪʃnz/",
     "zh": "n. 動畫片、動畫效果（animation 之複數）",
     "unit": 9,
-    "example": "[n.] The graphic studio produced colorful animations for the mobile game.",
-    "exampleZh": "這家圖像工作室為該手機遊戲製作了生動鮮豔的動畫。",
+    "example": "[n.] The children love watching cartoon animations.",
+    "exampleZh": "孩子們喜歡看卡通動畫。",
     "id": 9086
   },
   {
@@ -8952,8 +8952,8 @@ const examplesUnit9WordsDB = [
     "uk": "/ˌiːvəˈluːʃnri/",
     "zh": "adj. 進化的、演變的、漸進發展的",
     "unit": 9,
-    "example": "[adj.] The fossil discovery provided crucial evolutionary evidence of early bird species.",
-    "exampleZh": "這塊化石的發現為早期鳥類物種提供了關鍵的演化證據。",
+    "example": "[adj.] Scientists study evolutionary changes in animals.",
+    "exampleZh": "科學家研究動物的演化變化。",
     "id": 9087
   },
   {
@@ -8962,8 +8962,8 @@ const examplesUnit9WordsDB = [
     "uk": "/mænˈtʃʊəriən/",
     "zh": "adj. 中國東北的、滿洲的；n. 東北人、滿洲人",
     "unit": 9,
-    "example": "[adj.] Visitors can observe the rare Manchurian tiger in the protected reserve.",
-    "exampleZh": "遊客可以在保護區內觀察珍稀的東北虎。",
+    "example": "[adj.] The museum displays Manchurian historical artifacts.",
+    "exampleZh": "這間博物館展示滿洲歷史文物。",
     "id": 9088
   },
   {
@@ -8972,8 +8972,8 @@ const examplesUnit9WordsDB = [
     "uk": "/səˈplaɪd/",
     "zh": "adj. 配備充足的；v. 提供、供應（supply 之過去式與過去分詞）",
     "unit": 9,
-    "example": "[v.] The medical center supplied clean drinking water and bandages to refugees.",
-    "exampleZh": "醫療中心向難民提供了乾淨的飲用水和繃帶。",
+    "example": "[v.] The company supplied us with new computers.",
+    "exampleZh": "公司提供了我們新的電腦。",
     "id": 9089
   },
   {
@@ -8982,8 +8982,8 @@ const examplesUnit9WordsDB = [
     "uk": "/ɒmˈnɪsiənt/",
     "zh": "adj. 全知的、無所不知的；n. 無所不知者、上帝",
     "unit": 9,
-    "example": "[adj.] The classic novel is narrated from the perspective of an omniscient storyteller.",
-    "exampleZh": "這部經典小說是從一位全知敘述者的視角展開講述的。",
+    "example": "[adj.] In the story, the narrator seems omniscient.",
+    "exampleZh": "在這個故事中，敘述者似乎無所不知。",
     "id": 9090
   },
   {
@@ -8992,8 +8992,8 @@ const examplesUnit9WordsDB = [
     "uk": "/ˌəʊvərˈestɪmeɪt/",
     "zh": "v. 高估、過高估計；n. 過高的估計",
     "unit": 9,
-    "example": "[v.] Do not overestimate your stamina when hiking steep mountain trails.",
-    "exampleZh": "在攀登陡峭山路時，不要高估自己的體力。",
+    "example": "[v.] Don't overestimate how much time you have.",
+    "exampleZh": "不要高估自己有多少時間。",
     "id": 9091
   },
   {
@@ -9002,8 +9002,8 @@ const examplesUnit9WordsDB = [
     "uk": "/ˌdʒæpəˈniːz/",
     "zh": "adj. 日本的、日語的；n. 日本人、日語",
     "unit": 9,
-    "example": "[adj.] She enjoys traditional Japanese green tea and handmade pottery.",
-    "exampleZh": "她喜歡傳統的日本綠茶和手工陶器。",
+    "example": "[adj.] I enjoy eating Japanese food.",
+    "exampleZh": "我喜歡吃日本料理。",
     "id": 9092
   },
   {
@@ -9012,8 +9012,8 @@ const examplesUnit9WordsDB = [
     "uk": "/ˈkuːtiz/",
     "zh": "n. （兒童玩笑用語）假想病菌、髒東西；蝨子",
     "unit": 9,
-    "example": "[n.] The playful school children teased that the old playground bench had cooties.",
-    "exampleZh": "愛玩鬧的小學生開玩笑說操場的老舊長凳上有髒細菌。",
+    "example": "[n.] The kids joked that my old toy had cooties.",
+    "exampleZh": "孩子們開玩笑說我的舊玩具有假想病菌。",
     "id": 9093
   },
   {
@@ -9022,8 +9022,8 @@ const examplesUnit9WordsDB = [
     "uk": "/ˈʃedləʊdz/",
     "zh": "n. 大量、成堆、許多（shedload 之複數）",
     "unit": 9,
-    "example": "[n.] The successful viral campaign generated shedloads of positive customer feedback.",
-    "exampleZh": "這場成功的網路宣傳活動引來了成堆的顧客正面反饋。",
+    "example": "[n.] We have shedloads of work to do today.",
+    "exampleZh": "我們今天有一大堆工作要做。",
     "id": 9094
   },
   {
@@ -9032,8 +9032,8 @@ const examplesUnit9WordsDB = [
     "uk": "/ɒˈstreɪliən/",
     "zh": "adj. 澳洲的、澳洲人的；n. 澳洲人",
     "unit": 9,
-    "example": "[adj.] The kangaroo is an iconic Australian animal found across the country.",
-    "exampleZh": "袋鼠是遍布全澳洲的代表性動物。",
+    "example": "[adj.] My colleague bought an Australian coffee machine.",
+    "exampleZh": "我的同事買了一台澳洲製的咖啡機。",
     "id": 9095
   },
   {
@@ -9042,8 +9042,8 @@ const examplesUnit9WordsDB = [
     "uk": "/dɪˈkriː/",
     "zh": "n. 法令、政令、裁定；v. 頒布、判決",
     "unit": 9,
-    "example": "[n.] The government issued an official decree to protect coastal marine habitats.",
-    "exampleZh": "政府頒布了一項官方法令以保護沿海海洋棲息地。",
+    "example": "[n.] The government announced a new decree.",
+    "exampleZh": "政府公布了一項新法令。",
     "id": 9096
   },
   {
@@ -9052,8 +9052,8 @@ const examplesUnit9WordsDB = [
     "uk": "/ˈfiːdʒiː/",
     "zh": "n. 斐濟（南太平洋島國，首都蘇瓦）",
     "unit": 9,
-    "example": "[n.] Fiji is world-famous for its crystal-clear waters and coral reefs.",
-    "exampleZh": "斐濟以其清澈見底的海水和珊瑚礁聞名於世。",
+    "example": "[n.] We plan to visit Fiji during our vacation.",
+    "exampleZh": "我們計畫假期期間去斐濟。",
     "id": 9097
   },
   {
@@ -9062,18 +9062,18 @@ const examplesUnit9WordsDB = [
     "uk": "/rɪˈdiːmd/",
     "zh": "adj. 已兌現的、被救贖的；v. 贖回、兌現、挽回（redeem 之過去式與過去分詞）",
     "unit": 9,
-    "example": "[v.] He redeemed his shopping reward vouchers at the supermarket checkout.",
-    "exampleZh": "他在超市結帳時兌換了購物獎勵禮券。",
+    "example": "[v.] I redeemed my points for a free coffee.",
+    "exampleZh": "我用點數兌換了一杯免費咖啡。",
     "id": 9098
   },
   {
     "en": "called",
     "kk": "[kɔld]",
     "uk": "/kɔːld/",
-    "zh": "adj. 被稱為…的、名叫…的；v. 打電話、稱呼、呼叫（call 之過去式與過去分詞）",
+    "zh": "v. 打電話、稱呼、呼叫（call 之過去式與過去分詞）；adj. 被稱為…的、名叫…的",
     "unit": 9,
-    "example": "[adj.] A friendly software engineer called David helped us solve the technical issue.",
-    "exampleZh": "一位名叫戴維的和藹軟體工程師幫助我們解決了技術問題。",
+    "example": "[v.] My manager called me this morning.",
+    "exampleZh": "我的主管今天早上打電話給我。",
     "id": 9099
   },
   {
@@ -9082,8 +9082,8 @@ const examplesUnit9WordsDB = [
     "uk": "/wɜːdz/",
     "zh": "n. 言詞、話語；台詞、歌詞、爭吵（word 之複數）",
     "unit": 9,
-    "example": "[n.] Her encouraging words inspired the entire team to keep moving forward.",
-    "exampleZh": "她鼓舞人心的話語激勵了整個團隊繼續前進。",
+    "example": "[n.] Please read these words aloud.",
+    "exampleZh": "請把這些單字大聲唸出來。",
     "id": 9100
   },
   {
@@ -9092,8 +9092,8 @@ const examplesUnit9WordsDB = [
     "uk": "/kənˈsjuːməz/",
     "zh": "n. 消費者、顧客、用戶（consumer 之複數）",
     "unit": 9,
-    "example": "[n.] Modern consumers demand higher transparency regarding food ingredients.",
-    "exampleZh": "現代消費者對食品成分的要求具有更高的透明度。",
+    "example": "[n.] Consumers often compare prices before buying products.",
+    "exampleZh": "消費者購買商品前通常會比較價格。",
     "id": 9101
   }
 ];

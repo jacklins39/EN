@@ -4603,6 +4603,17 @@
             const emailDisplay = document.getElementById('user-email-display');
             
             if (user) {
+                // 帳號切換安全保護：若偵測到與前次登入不同帳號，立即清除本地快取，防止備註與進度交叉洩漏
+                const lastUid = localStorage.getItem('vocab_active_uid');
+                if (lastUid && lastUid !== user.uid) {
+                    userWordNotes = {};
+                    try {
+                        localStorage.removeItem('vocab_user_notes');
+                        localStorage.removeItem('vocab_user_progress');
+                    } catch (e) {}
+                }
+                localStorage.setItem('vocab_active_uid', user.uid);
+
                 currentUser = user;
                 loginBtn.classList.add('hidden');
                 logoutBtn.classList.remove('hidden');
@@ -4632,6 +4643,12 @@
                     unsubscribeCloudListener = null;
                 }
                 currentUser = null;
+                try {
+                    localStorage.removeItem('vocab_active_uid');
+                    localStorage.removeItem('vocab_user_notes');
+                } catch (e) {}
+                userWordNotes = {};
+
                 loginBtn.classList.remove('hidden');
                 logoutBtn.classList.add('hidden');
                 syncBanner.classList.remove('hidden');

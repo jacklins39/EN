@@ -10,7 +10,7 @@ const listeningWordsDB = [
         "uk": "/ˈsliːpɪŋ/",
         "zh": "adj. 睡眠的、睡著的；n. 睡眠",
         "unit": 19,
-        "example": "We need to ensure that everyone has packed thermal sleeping bags, waterproof tents, and portable water filtration systems.",
+        "example": "[adj.] We need to ensure that everyone has packed thermal sleeping bags, waterproof tents, and portable water filtration systems.",
         "exampleZh": "我們必須確保每個人都帶上了保暖睡袋、防水帳篷與便攜濾水系統。"
     },
     {
@@ -20,7 +20,7 @@ const listeningWordsDB = [
         "uk": "/ˈstrɔːbəri/",
         "zh": "n. 草莓",
         "unit": 19,
-        "example": "Also, do you have any fresh strawberries?",
+        "example": "[n.] Also, do you have any fresh strawberries?",
         "exampleZh": "另外，請問你們有新鮮草莓嗎？"
     },
     {
@@ -30,7 +30,7 @@ const listeningWordsDB = [
         "uk": "/ˈbʌni/",
         "zh": "n. 小兔子",
         "unit": 19,
-        "example": "The little girl holds a cute fluffy bunny.",
+        "example": "[n.] The little girl holds a cute fluffy bunny.",
         "exampleZh": "小女孩抱著一隻可愛毛茸茸的小兔子。"
     },
     {
@@ -40,7 +40,7 @@ const listeningWordsDB = [
         "uk": "/ˈstɔːribʊk/",
         "zh": "n. 故事書",
         "unit": 19,
-        "example": "Mom reads a bedtime storybook every single night.",
+        "example": "[n.] Mom reads a bedtime storybook every single night.",
         "exampleZh": "媽媽每天晚上都會讀一本睡前故事書。"
     },
     {
@@ -50,7 +50,7 @@ const listeningWordsDB = [
         "uk": "/ˈswiːti/",
         "zh": "n. 親愛的，寶貝；討人喜愛的人",
         "unit": 19,
-        "example": "Time to wake up and brush your teeth, sweetie.",
+        "example": "[n.] Time to wake up and brush your teeth, sweetie.",
         "exampleZh": "該起床刷牙囉，寶貝。"
     },
     {
@@ -60,7 +60,7 @@ const listeningWordsDB = [
         "uk": "/ˌɡʊdˈnaɪt/",
         "zh": "int. 晚安；祝好夢",
         "unit": 19,
-        "example": "She gives her daughter a warm goodnight kiss.",
+        "example": "[int.] She gives her daughter a warm goodnight kiss.",
         "exampleZh": "她給了女兒一個溫暖的晚安吻。"
     },
     {
@@ -70,7 +70,7 @@ const listeningWordsDB = [
         "uk": "/ˈsʌnhæt/",
         "zh": "n. 遮陽帽，草帽",
         "unit": 19,
-        "example": "Don't forget to wear your cute sunhat on a sunny day.",
+        "example": "[n.] Don't forget to wear your cute sunhat on a sunny day.",
         "exampleZh": "大晴天出門別忘了戴上妳可愛的遮陽帽。"
     },
     {
@@ -80,7 +80,7 @@ const listeningWordsDB = [
         "uk": "/briːz/",
         "zh": "n. 微風、和風；輕而易舉的事；v. 輕盈自信地走、輕鬆過關",
         "unit": 19,
-        "example": "A gentle breeze was blowing across the green park.",
+        "example": "[n.] A gentle breeze was blowing across the green park.",
         "exampleZh": "一陣溫和的微風吹拂過綠意盎然的公園。"
     },
     {
@@ -90,7 +90,7 @@ const listeningWordsDB = [
         "uk": "/kaɪt/",
         "zh": "n. 風箏；鳶（猛禽）；v. 像風箏般飛翔、使迅速上升",
         "unit": 19,
-        "example": "The colorful kite flew high up into the blue sky.",
+        "example": "[n.] The colorful kite flew high up into the blue sky.",
         "exampleZh": "那隻五彩繽紛的風箏高高飛上了藍天。"
     },
     {
@@ -100,7 +100,7 @@ const listeningWordsDB = [
         "uk": "/ˈsniːkə(r)/",
         "zh": "n. 運動鞋、球鞋、休閒鞋",
         "unit": 19,
-        "example": "Put on your comfortable sneakers before we go running.",
+        "example": "[n.] Put on your comfortable sneakers before we go running.",
         "exampleZh": "在我們去跑步前，先穿上妳舒適的運動鞋。"
     },
     {
@@ -110,7 +110,7 @@ const listeningWordsDB = [
         "uk": "/ˈtuːθbrʌʃ/",
         "zh": "n. 牙刷",
         "unit": 19,
-        "example": "Remember to pack your toothbrush and toothpaste before the trip.",
+        "example": "[n.] Remember to pack your toothbrush and toothpaste before the trip.",
         "exampleZh": "旅行前記得把牙刷和牙膏打包好。"
     },
     {
@@ -120,7 +120,7 @@ const listeningWordsDB = [
         "uk": "/ˈtedi beə(r)/",
         "zh": "n. 泰迪熊，絨毛玩具熊",
         "unit": 19,
-        "example": "The little girl hugs her favorite teddy bear to fall asleep.",
+        "example": "[n.] The little girl hugs her favorite teddy bear to fall asleep.",
         "exampleZh": "小女孩抱著她最喜歡的泰迪熊入睡。"
     }
 ];

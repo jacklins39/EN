@@ -468,22 +468,18 @@ async def main():
 
     print("\n=== Step 4: Updating Audio Manifests ===")
     # 4A: Words Audio Manifest
+    us_dir = os.path.join("audio", "words", "us")
+    uk_dir = os.path.join("audio", "words", "uk")
+    us_files = sorted(list(set(f[:-4].lower() for f in os.listdir(us_dir) if f.endswith(".mp3"))))
+    uk_files = sorted(list(set(f[:-4].lower() for f in os.listdir(uk_dir) if f.endswith(".mp3"))))
+    
     words_manifest_path = "words_audio_manifest.js"
-    with open(words_manifest_path, "r", encoding="utf-8") as f:
-        wm_code = f.read()
-    
-    wm_set = set(re.findall(r"'([^']+)'", wm_code))
-    for it in assigned_items:
-        wm_set.add(it["en"].lower())
-    
-    sorted_words = sorted(list(wm_set))
     with open(words_manifest_path, "w", encoding="utf-8") as f:
-        f.write("// Auto-generated offline words audio manifest\nwindow.WORDS_AUDIO_MANIFEST = new Set([\n")
-        for i in range(0, len(sorted_words), 20):
-            chunk = sorted_words[i:i+20]
-            f.write("  " + ", ".join(f"'{w}'" for w in chunk) + ",\n")
-        f.write("]);\n")
-    print(f"words_audio_manifest.js updated ({len(sorted_words)} words total).")
+        f.write("// Auto-generated real human voice audio manifest (US Female & UK Male)\n")
+        f.write("window.WORDS_AUDIO_MANIFEST_US = new Set(" + json.dumps(us_files, ensure_ascii=False) + ");\n")
+        f.write("window.WORDS_AUDIO_MANIFEST_UK = new Set(" + json.dumps(uk_files, ensure_ascii=False) + ");\n")
+        f.write("window.WORDS_AUDIO_MANIFEST = window.WORDS_AUDIO_MANIFEST_US;\n")
+    print(f"words_audio_manifest.js updated (US: {len(us_files)}, UK: {len(uk_files)} words).")
 
     # 4B: Examples Audio Manifest
     ex_manifest_path = "examples_audio_manifest.js"

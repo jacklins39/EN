@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261108V27';
+        const APP_BUILD_VERSION = '20261112V28';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -78,20 +78,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
     
     <!-- 引入外部單字庫與聽力短文庫 -->
-    <script src="words_data.js?v=20261108V27"></script>
-    <script src="toeic_data.js?v=20261108V27"></script>
-    <script src="jh_data.js?v=20261108V27"></script>
-    <script src="listening_data.js?v=20261108V27"></script>
-    <script src="listening_words_data.js?v=20261108V27"></script>
-    <script src="uk_phonetics_manifest.js?v=20261108V27"></script>
-    <script src="words_audio_manifest.js?v=20261108V27"></script>
-    <script src="examples_audio_manifest.js?v=20261108V27"></script>
-    <script src="zh_audio_manifest.js?v=20261108V27"></script>
-    <script src="collocations_audio_manifest.js?v=20261108V27"></script>
-    <script src="syn_ant_data.js?v=20261108V27"></script>
-    <script src="synonyms_unit8_data.js?v=20261108V27"></script>
-    <script src="examples_unit9_data.js?v=20261108V27"></script>
-    <script src="game_whack.js?v=20261108V27"></script>
+    <script src="words_data.js?v=20261112V28"></script>
+    <script src="toeic_data.js?v=20261112V28"></script>
+    <script src="jh_data.js?v=20261112V28"></script>
+    <script src="listening_data.js?v=20261112V28"></script>
+    <script src="listening_words_data.js?v=20261112V28"></script>
+    <script src="uk_phonetics_manifest.js?v=20261112V28"></script>
+    <script src="words_audio_manifest.js?v=20261112V28"></script>
+    <script src="examples_audio_manifest.js?v=20261112V28"></script>
+    <script src="zh_audio_manifest.js?v=20261112V28"></script>
+    <script src="collocations_audio_manifest.js?v=20261112V28"></script>
+    <script src="syn_ant_data.js?v=20261112V28"></script>
+    <script src="synonyms_unit8_data.js?v=20261112V28"></script>
+    <script src="examples_unit9_data.js?v=20261112V28"></script>
+    <script src="game_whack.js?v=20261112V28"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <!-- 引入 Firebase 官方套件 (Compat 版，最適合單一 HTML 檔案) -->
@@ -2044,6 +2044,37 @@
             background-color: #F7F5F0 !important;
             border-color: #DFD8C8 !important;
         }
+        html.dark #word-detail-modal .user-note-card {
+            background-color: #0E1626 !important;
+            border-color: rgba(245, 158, 11, 0.28) !important;
+            border-left: 3px solid #F59E0B !important;
+        }
+        html.dark #word-detail-modal #detail-word-note-input {
+            background-color: #162033 !important;
+            color: #F8FAFC !important;
+            border-color: rgba(255, 255, 255, 0.14) !important;
+        }
+        html.dark #word-detail-modal #detail-word-note-input::placeholder {
+            color: #64748B !important;
+        }
+        html.dark #word-detail-modal #detail-word-note-input:focus {
+            border-color: #F59E0B !important;
+            box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.22) !important;
+        }
+        html.dark #word-detail-modal .user-note-chip {
+            background-color: #172235 !important;
+            color: #FCD34D !important;
+            border-color: rgba(245, 158, 11, 0.3) !important;
+        }
+        html.dark #word-detail-modal .user-note-chip:hover {
+            background-color: #243552 !important;
+            color: #FFFFFF !important;
+        }
+        html.theme-paper #word-detail-modal #detail-word-note-input {
+            background-color: #FAF8F3 !important;
+            border-color: #D8D0C0 !important;
+            color: #2C261E !important;
+        }
         html.dark .syllable-badge {
             background-color: rgba(255, 255, 255, 0.055) !important;
             border-color: rgba(255, 255, 255, 0.12) !important;
@@ -2973,6 +3004,10 @@
                             <div class="mt-1 pt-1 border-t border-dashed border-slate-200">
                                 <p class="text-slate-500 text-[12.5px] sm:text-[13px] font-medium leading-relaxed" id="card-example-zh"></p>
                             </div>
+                            <div id="card-user-note-box" onclick="event.stopPropagation(); if (currentWord && currentWord.en) showWordDetailModal(currentWord.en);" class="hidden mt-2 pt-1.5 border-t border-amber-200/70 dark:border-amber-700/40 text-xs text-amber-800 dark:text-amber-300 flex items-start gap-1.5 cursor-pointer hover:opacity-85 transition-opacity" title="點擊編輯個人學習備註">
+                                <span class="shrink-0 font-bold">📝 備註：</span>
+                                <span id="card-user-note-text" class="whitespace-pre-wrap break-words font-medium"></span>
+                            </div>
                         </div>
                         </div> <!-- close lg:grid -->
                     </div>
@@ -3543,9 +3578,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261108V27</span>
+                        <span id="app-version-display">版本 20261112V28</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261108V27</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261112V28</p>
                 </div>
             </div>
         </div>
@@ -3964,10 +3999,42 @@
             return str.replace(/\\+(['"])/g, '$1').replace(/\\+/g, '');
         }
 
+        const EXAMPLE_POS_PREFIX_RE = /^\[\s*((?:adj|adv|prep|conj|pron|int|interj|num|det|art|aux|modal\s*v|phr?|vi|vt|[avnd])\.?)\s*\]\s*([\s\S]*)$/i;
+
+        function normalizePosToken(raw) {
+            if (!raw || typeof raw !== 'string') return '';
+            let p = raw.replace(/^[\[\(\s]+|[\]\)\s]+$/g, '').toLowerCase();
+            if (!p) return '';
+            if (p === 'a' || p === 'a.') return 'adj.';
+            if (p === 'ad' || p === 'ad.') return 'adv.';
+            if (p === 'phr' || p === 'phr.' || p === 'ph') return 'ph.';
+            if (p === 'interj' || p === 'interj.') return 'int.';
+            if (!p.endsWith('.')) p += '.';
+            return p;
+        }
+
+        function stripExamplePosPrefix(str) {
+            if (!str || typeof str !== 'string') return '';
+            const m = str.match(EXAMPLE_POS_PREFIX_RE);
+            return m ? m[2].trim() : str;
+        }
+
         function sanitizeWord(w) {
             if (!w) return w;
-            if (typeof w.example === 'string') w.example = cleanText(w.example);
-            if (typeof w.exampleZh === 'string') w.exampleZh = cleanText(w.exampleZh);
+            if (typeof w.example === 'string') {
+                w.example = cleanText(w.example).trim();
+                const m = w.example.match(EXAMPLE_POS_PREFIX_RE);
+                if (m) {
+                    w.examplePos = normalizePosToken(m[1]);
+                    w.example = m[2].trim();
+                }
+            }
+            if (typeof w.examplePos === 'string' && w.examplePos) {
+                w.examplePos = normalizePosToken(w.examplePos);
+            }
+            if (typeof w.exampleZh === 'string') {
+                w.exampleZh = cleanText(w.exampleZh).replace(/^中文[:：]\s*/, '').trim();
+            }
             if (typeof w.en === 'string') w.en = cleanText(w.en);
             if (typeof w.zh === 'string') w.zh = cleanText(w.zh);
             return w;
@@ -4124,21 +4191,34 @@
         }
 
         // 解析詞性與純中文：高頻常用詞性優先在前，並智慧匹配例句語境 (將吻合例句的詞性置頂)
-        function splitPosAndZh(zhStr, explicitPos = '', exampleZh = '', exampleEn = '', targetEn = '') {
+        function splitPosAndZh(zhStr, explicitPos = '', exampleZh = '', exampleEn = '', targetEn = '', examplePos = '') {
             let pos = (explicitPos || '').trim();
             let pureZh = (zhStr || '').trim();
             if (!pureZh) return { pos: '', posBadgeText: '', pureZh: '', formattedZh: '', items: [], hasExampleMatch: false };
 
-            const posRegex = /(?:^|[；;]\s*)((?:adj|adv|prep|conj|pron|int|num|det|art|aux|modal\s*v|ph|vi|vt|[avnd])\.)\s*/gi;
+            const normExPos = normalizePosToken(
+                examplePos || (typeof exampleEn === 'string' && exampleEn.match(EXAMPLE_POS_PREFIX_RE)?.[1]) || ''
+            );
+
+            // 支援單一詞性、斜線複合詞性 (如 adv./prep., adj./adv., vt./vi.)、重複詞性 (如 n. n.) 以及全形句點 (v．)
+            const posUnit = '(?:adj|adv|prep|conj|pron|int|interj|num|det|art|aux|modal\\s*v|pref|suff|phr?|vi|vt|abbr|pl|[avnd])[.．]';
+            const posRegex = new RegExp('(?:^|[；;]\\s*)((?:' + posUnit + '\\s*(?:[/／]\\s*' + posUnit + ')*)(?:\\s+' + posUnit + ')*)\\s*(?:[；;]\\s*)?', 'gi');
             const matches = [...pureZh.matchAll(posRegex)];
             if (matches && matches.length > 0) {
                 let items = [];
                 for (let i = 0; i < matches.length; i++) {
                     const m = matches[i];
-                    let p = m[1].toLowerCase().trim();
-                    if (p === 'a.') p = 'adj.';
-                    if (p === 'ad.') p = 'adv.';
-                    if (!p.endsWith('.')) p += '.';
+                    let rawPosStr = m[1].toLowerCase().replace(/．/g, '.').replace(/／/g, '/').trim();
+                    const posParts = [...new Set(
+                        rawPosStr.split(/\s*(?:\/|\s+)\s*/).filter(Boolean).map(tok => {
+                            let t = tok.trim();
+                            if (t === 'a.' || t === 'a') t = 'adj.';
+                            if (t === 'ad.' || t === 'ad') t = 'adv.';
+                            if (!t.endsWith('.')) t += '.';
+                            return t;
+                        })
+                    )];
+                    let p = posParts.join('/');
                     const contentStart = m.index + m[0].length;
                     const contentEnd = (i + 1 < matches.length) ? matches[i + 1].index : pureZh.length;
                     let text = pureZh.slice(contentStart, contentEnd).trim();
@@ -4148,9 +4228,22 @@
                     }
                 }
                 if (items.length > 0) {
-                    // 智慧例句語境標記 (僅標記 matchedExample 供展開面板顯示「例句對應」徽章，絕不篡改資料庫 Yahoo 字典原本的主詞性優先順序！)
+                    // 智慧例句語境標記 (僅標記 matchedExample 供展開面板與懸浮窗顯示，絕不篡改資料庫原本的主詞性優先順序！)
                     let hasExampleMatch = false;
-                    if (exampleZh) {
+                    if (normExPos) {
+                        const posMatchesItem = (itPos, targetPos) => {
+                            const subList = String(itPos || '').split('/').map(s => s.trim());
+                            return subList.includes(targetPos);
+                        };
+                        const exactMatch = items.find(it => posMatchesItem(it.pos, normExPos)) ||
+                            (normExPos === 'v.' ? items.find(it => posMatchesItem(it.pos, 'vt.') || posMatchesItem(it.pos, 'vi.')) : null) ||
+                            ((normExPos === 'vt.' || normExPos === 'vi.') ? items.find(it => posMatchesItem(it.pos, 'v.')) : null);
+                        if (exactMatch) {
+                            hasExampleMatch = true;
+                            exactMatch.matchedExample = true;
+                        }
+                    }
+                    if (!hasExampleMatch && exampleZh) {
                         const cleanExZh = exampleZh.replace(/[^\u4e00-\u9fa5a-zA-Z0-9]/g, '');
                         items.forEach(it => {
                             const cleanText = it.text.replace(/[\(（][^）\)]*[\)）]/g, '');
@@ -4206,6 +4299,28 @@
             return { pos: badge, posBadgeText: badge, pureZh: pureZh || zhStr || '', formattedZh: formatted, items: badge ? [{ pos: badge, text: pureZh, originalIdx: 0, matchedExample: false }] : [{ pos: '', text: pureZh, originalIdx: 0, matchedExample: false }], hasExampleMatch: false };
         }
 
+        function getWordExamplePos(w, parsedOpt = null) {
+            if (!w) return '';
+            if (w.examplePos) return normalizePosToken(w.examplePos);
+            if (typeof w.example === 'string') {
+                const m = w.example.match(EXAMPLE_POS_PREFIX_RE);
+                if (m) return normalizePosToken(m[1]);
+            }
+            const parsed = parsedOpt || splitPosAndZh(w.zh, w.pos, w.exampleZh, w.example, w.en, w.examplePos);
+            if (parsed && parsed.items && parsed.items.length > 0) {
+                const matched = parsed.items.find(it => it.matchedExample && it.pos);
+                if (matched) return normalizePosToken(matched.pos);
+                if (parsed.items[0].pos) return normalizePosToken(parsed.items[0].pos);
+            }
+            return normalizePosToken(w.pos || (parsed && parsed.pos) || '');
+        }
+
+        function renderExamplePosBadgeHtml(pos) {
+            const p = normalizePosToken(pos);
+            if (!p) return '';
+            return `<span class="example-pos-badge inline-block text-[11px] font-bold font-mono lowercase text-[#0071E3] dark:text-[#58A6FF] bg-blue-50 dark:bg-blue-950/60 px-1.5 py-0.5 rounded border border-blue-200/80 dark:border-blue-500/30 mr-1.5 select-none align-baseline">${esc(p)}</span>`;
+        }
+
         // 取得單字最核心、最常聽到的精簡中文釋義 (供卡片翻面、測驗選項與題目精簡展示)
         function getConciseZh(zhStr, explicitPos = '', exampleZh = '', exampleEn = '', targetEn = '') {
             if (!zhStr) return '';
@@ -4216,21 +4331,51 @@
             } else {
                 firstText = parsed.pureZh || zhStr;
             }
-            // 清除括號註釋與冗長省略號
-            firstText = firstText.replace(/[\(（][^）\)]*[\)）]/g, '').trim();
-            firstText = firstText.replace(/[…\.]{2,}的?/g, '').trim();
-            // 依頓號、逗號、分號切分詞條，過濾純英文字詞 (嚴防英文答案外洩)，取前 1～2 個最核心常用詞 (字數控制在 8 字內)
+            // 1. 清除括號註釋 ()、（）、領域方括號 []、語體尖括號 <> 與【名】後綴
+            firstText = firstText
+                .replace(/【[^】]*】.*$/g, '')
+                .replace(/[\(（][^）\)]*[\)）]/g, '')
+                .replace(/\[[^\]]*\]/g, '')
+                .replace(/<[^>]*>/g, '')
+                .trim();
+            // 2. 清除編號如 "1. "、"2. " 以及詞形變化前綴如 "sink的過去式："
+            firstText = firstText
+                .replace(/(?:^|[；;]\s*)\d+\s*[.．、]\s*/g, '；')
+                .replace(/^[a-zA-Z\s'\-]+的(?:過去式|過去分詞|現在分詞|動名詞|複數|第三人稱單數)[^：:；;]*[：:]\s*/i, '')
+                .replace(/^[：:；;、，,\s]+/, '')
+                .trim();
+            // 3. 若子句中含有「詞條：冗長解釋說明」，僅保留冒號前的核心詞條
+            firstText = firstText.split(/[；;]+/).map(seg => {
+                const s = seg.replace(/^[：:、，,\s]+/, '').trim();
+                if (!s) return '';
+                const colonIdx = s.search(/[：:]/);
+                return colonIdx > 0 ? s.slice(0, colonIdx).trim() : s;
+            }).filter(Boolean).join('；');
+
+            // 4. 依頓號、逗號、分號切分詞條，過濾純英文字詞/殘留詞性標籤與編號，取前 1～2 個最核心常用詞
             const rawTerms = firstText.split(/[,，、/；;\s]+/).map(t => t.trim()).filter(Boolean);
-            const terms = rawTerms
-                .map(t => t.replace(/[…\.]{2,}的?/g, '').trim())
-                .filter(t => t && !/^[a-zA-Z\s\-]+$/.test(t));
+            const posTokenRe = /^(?:adj|adv|prep|conj|pron|int|interj|num|det|art|aux|pref|suff|phr?|vi|vt|abbr|pl|[avnd])[.．]?$/i;
+            const seen = new Set();
+            const terms = [];
+            for (const raw of rawTerms) {
+                const t = raw.replace(/^[…\.：:]+|[…\.：:]+$/g, '').trim();
+                if (!t) continue;
+                if (posTokenRe.test(t) || /^[a-zA-Z0-9.\s\-/]+$/.test(t)) continue;
+                if (!seen.has(t)) {
+                    seen.add(t);
+                    terms.push(t);
+                }
+            }
             if (!terms.length) {
-                const pureFallback = firstText.replace(/[a-zA-Z]+/g, '').replace(/^[、，,;；/\s]+|[、，,;；/\s]+$/g, '').trim();
+                const pureFallback = firstText.replace(/[a-zA-Z0-9.]+/g, '').replace(/^[、，,;；/：:\s]+|[、，,;；/：:\s]+$/g, '').trim();
                 return pureFallback.slice(0, 8) || firstText.slice(0, 8);
             }
-            let res = terms[0];
-            if (terms.length > 1 && (res.length + terms[1].length <= 8) && terms[1] !== res) {
-                res += '、' + terms[1];
+            // 優先挑選不含中間省略號「……」的精煉詞條作為首選；若全含省略號則保留原樣（避免「擅長……的人」被誤刪成「擅長人」）
+            const cleanTerms = terms.filter(t => !t.includes('…'));
+            const pool = cleanTerms.length > 0 ? cleanTerms : terms;
+            let res = pool[0];
+            if (pool.length > 1 && (res.length + pool[1].length <= 8) && pool[1] !== res) {
+                res += '、' + pool[1];
             }
             return res;
         }
@@ -4766,6 +4911,17 @@
                             if (Number.isFinite(firstDay)) mergedItem.firstLearnedDay = firstDay;
                             if (clearTime > 0) mergedItem.mistakesClearedAt = clearTime;
                             if (Math.max(lTime, cTime) > 0) mergedItem.updatedAt = Math.max(lTime, cTime);
+                            const lNoteTime = lp.noteUpdatedAt || 0;
+                            const cNoteTime = cp.noteUpdatedAt || 0;
+                            if (lNoteTime > 0 || cNoteTime > 0) {
+                                const noteSide = lNoteTime >= cNoteTime ? lp : cp;
+                                mergedItem.noteUpdatedAt = Math.max(lNoteTime, cNoteTime);
+                                if (noteSide.note && String(noteSide.note).trim()) {
+                                    mergedItem.note = String(noteSide.note).trim().slice(0, 500);
+                                } else {
+                                    delete mergedItem.note;
+                                }
+                            }
                             if (mergedMistakes.length === 0 && clearTime > 0) {
                                 delete mergedItem.lastMistakeDay;
                             } else if (hasTimestamp) {
@@ -5277,7 +5433,132 @@ function cleanupMasteredMistakes() {
             }
         }
 
+        // ==========================================
+        // 個人學習備註 / 專屬記憶筆記引擎 (Personal Word Notes)
+        // 支援跨單元同名單字共享、LocalStorage 即時儲存與 Firestore progress 零配置雲端同步
+        // ==========================================
+        let userWordNotes = {};
+        try {
+            const rawNotes = localStorage.getItem('vocab_user_notes');
+            if (rawNotes) {
+                const parsedNotes = JSON.parse(rawNotes);
+                if (parsedNotes && typeof parsedNotes === 'object') userWordNotes = parsedNotes;
+            }
+        } catch (e) {}
+
+        function syncNotesFromUserProgress() {
+            if (!userProgress || typeof userProgress !== 'object') return;
+            let notesChanged = false;
+            const idToEn = new Map();
+            if (typeof vocabularyDB !== 'undefined' && Array.isArray(vocabularyDB)) {
+                vocabularyDB.forEach(w => {
+                    if (w && w.id && w.en) idToEn.set(String(w.id), w.en.trim().toLowerCase());
+                });
+            }
+            for (const [wid, prog] of Object.entries(userProgress)) {
+                if (!prog || typeof prog !== 'object') continue;
+                const pTime = Number(prog.noteUpdatedAt) || 0;
+                const pText = typeof prog.note === 'string' ? prog.note.trim() : '';
+                if (!pTime && !pText) continue;
+                const enKey = idToEn.get(String(wid));
+                if (!enKey) continue;
+                const localEntry = userWordNotes[enKey];
+                const lTime = localEntry ? (Number(localEntry.updatedAt) || 0) : 0;
+                if (pTime > lTime || (!localEntry && pText)) {
+                    if (pText) {
+                        userWordNotes[enKey] = { text: pText.slice(0, 500), updatedAt: pTime || Date.now() };
+                    } else {
+                        delete userWordNotes[enKey];
+                    }
+                    notesChanged = true;
+                }
+            }
+            if (notesChanged) {
+                try { localStorage.setItem('vocab_user_notes', JSON.stringify(userWordNotes)); } catch (e) {}
+            }
+        }
+
+        function getWordNote(wordOrEn) {
+            if (!wordOrEn) return '';
+            const enKey = (typeof wordOrEn === 'string' ? wordOrEn : (wordOrEn.en || '')).trim().toLowerCase();
+            if (!enKey) return '';
+            if (userWordNotes[enKey] && typeof userWordNotes[enKey].text === 'string' && userWordNotes[enKey].text.trim()) {
+                return userWordNotes[enKey].text.trim();
+            }
+            if (typeof wordOrEn === 'object' && wordOrEn.id && userProgress && userProgress[wordOrEn.id] && typeof userProgress[wordOrEn.id].note === 'string') {
+                return userProgress[wordOrEn.id].note.trim();
+            }
+            if (typeof vocabularyDB !== 'undefined' && Array.isArray(vocabularyDB) && userProgress) {
+                const matched = vocabularyDB.find(w => w && w.en && w.en.trim().toLowerCase() === enKey && userProgress[w.id] && userProgress[w.id].note);
+                if (matched) return String(userProgress[matched.id].note).trim();
+            }
+            return '';
+        }
+
+        function updateCardUserNoteUI(w) {
+            const boxEl = document.getElementById('card-user-note-box');
+            const textEl = document.getElementById('card-user-note-text');
+            if (!boxEl || !textEl) return;
+            const note = getWordNote(w);
+            if (note) {
+                textEl.textContent = note;
+                boxEl.classList.remove('hidden');
+            } else {
+                textEl.textContent = '';
+                boxEl.classList.add('hidden');
+            }
+        }
+
+        function saveWordNote(wordOrEn, rawText, immediateCloud = false) {
+            if (!wordOrEn) return '';
+            const enKey = (typeof wordOrEn === 'string' ? wordOrEn : (wordOrEn.en || '')).trim().toLowerCase();
+            if (!enKey) return '';
+            const cleanNote = String(rawText || '').trim().slice(0, 500);
+            const now = Date.now();
+
+            if (cleanNote) {
+                userWordNotes[enKey] = { text: cleanNote, updatedAt: now };
+            } else {
+                delete userWordNotes[enKey];
+            }
+            try {
+                localStorage.setItem('vocab_user_notes', JSON.stringify(userWordNotes));
+            } catch (e) {}
+
+            // 同步寫入所有同名單字 ID 的 userProgress，確保透過既有 progress 欄位無縫雲端同步
+            const targetIds = new Set();
+            if (typeof wordOrEn === 'object' && wordOrEn.id) targetIds.add(wordOrEn.id);
+            if (typeof vocabularyDB !== 'undefined' && Array.isArray(vocabularyDB)) {
+                vocabularyDB.forEach(w => {
+                    if (w && w.id && w.en && w.en.trim().toLowerCase() === enKey) {
+                        targetIds.add(w.id);
+                    }
+                });
+            }
+            targetIds.forEach(id => {
+                if (!userProgress[id]) {
+                    userProgress[id] = { level: 0, nextReviewDay: 0, isLearning: false };
+                }
+                userProgress[id].noteUpdatedAt = now;
+                userProgress[id].updatedAt = Math.max(userProgress[id].updatedAt || 0, now);
+                if (cleanNote) {
+                    userProgress[id].note = cleanNote;
+                } else {
+                    delete userProgress[id].note;
+                }
+            });
+
+            saveDailyPlansLocally();
+            saveToCloud(immediateCloud);
+
+            if (typeof currentWord !== 'undefined' && currentWord && currentWord.en && currentWord.en.trim().toLowerCase() === enKey) {
+                updateCardUserNoteUI(currentWord);
+            }
+            return cleanNote;
+        }
+
         function initAppLogic() {
+            syncNotesFromUserProgress();
             clampAllLevelsToMax3();
             syncUnitOptionLabels();
             const unitSel = document.getElementById('unit-selector');
@@ -6690,7 +6971,8 @@ function cleanupMasteredMistakes() {
             updateCardVoiceButtonsHighlight();
             
             // 解析詞性與純中文：卡片背面精準顯示匹配例句之最核心高頻義，其餘多詞性與完整釋義收納於微型膠囊中
-            const parsed = splitPosAndZh(currentWord.zh, currentWord.pos, currentWord.exampleZh, currentWord.example, currentWord.en);
+            sanitizeWord(currentWord);
+            const parsed = splitPosAndZh(currentWord.zh, currentWord.pos, currentWord.exampleZh, currentWord.example, currentWord.en, currentWord.examplePos);
             const posBadge = document.getElementById('card-pos-badge');
             const cardTransEl = document.getElementById('card-translation');
             const btnExpandTrans = document.getElementById('btn-expand-trans');
@@ -6807,13 +7089,15 @@ function cleanupMasteredMistakes() {
             
             if (currentWord.example && currentWord.example.trim()) {
                 exampleContainer.classList.remove('hidden');
-                cardExample.innerHTML = renderClickableSentence(cleanText(currentWord.example), currentWord.en);
+                const exPos = getWordExamplePos(currentWord, parsed);
+                cardExample.innerHTML = renderExamplePosBadgeHtml(exPos) + renderClickableSentence(cleanText(currentWord.example), currentWord.en);
                 cardExampleZh.innerText = cleanText(currentWord.exampleZh) || '';
             } else {
                 exampleContainer.classList.add('hidden');
                 cardExample.innerHTML = '';
                 cardExampleZh.innerText = '';
             }
+            updateCardUserNoteUI(currentWord);
 
             updateProgressBar();
             void flashcard.offsetWidth; // 強制重繪，確保新題型高度立即生效
@@ -7368,7 +7652,7 @@ function cleanupMasteredMistakes() {
         // 拼寫填空專用：將例句中的目標單字替換為挖空首末提示骨架
         function renderFillSentenceCloze(sentence, targetEn, scaffoldText) {
             if (!sentence) return '';
-            const clean = sentence.trim();
+            const clean = stripExamplePosPrefix(cleanText(sentence)).trim();
             const variants = typeof getTargetWordVariants === 'function' ? getTargetWordVariants(targetEn) : new Set();
             const sortedVars = Array.from(variants).sort((a, b) => b.length - a.length);
 
@@ -7510,7 +7794,7 @@ function cleanupMasteredMistakes() {
                     }
                 }, 100);
             } else if (t === 'fill') {
-                const parsed = splitPosAndZh(w.zh, w.pos, w.exampleZh, w.example, w.en);
+                const parsed = splitPosAndZh(w.zh, w.pos, w.exampleZh, w.example, w.en, w.examplePos);
                 let conciseZh = getConciseZh(w.zh, w.pos, w.exampleZh, w.example, w.en) || parsed.pureZh || w.zh;
                 if (w.en) {
                     const escEn = w.en.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -7524,7 +7808,7 @@ function cleanupMasteredMistakes() {
                 wordEl.innerText = conciseZh; 
                 const rf = document.getElementById('card-phonetic-row'); if (rf) rf.style.display = 'none';
                 if (sf) sf.style.display = 'none';
-                const p = parsed.items?.[0]?.pos || parsed.posBadgeText || '';
+                const p = getWordExamplePos(w, parsed) || parsed.items?.[0]?.pos || parsed.posBadgeText || '';
                 hintEl.innerHTML = p ? `<span class="inline-block bg-blue-50 text-[#0071E3] border border-blue-200 text-xs px-2 py-0.5 rounded-full font-mono lowercase mr-1.5">${esc(p.toLowerCase())}</span> 拼寫練習 ➜ 依語境填空` : '拼寫練習 ➜ 依語境填空';
                 audioBtn.classList.add('hidden');
 
@@ -7540,7 +7824,7 @@ function cleanupMasteredMistakes() {
                         scaffoldBadge.innerText = `首末: ${sc.first}...${sc.last} (${sc.len} 字母)`;
                     }
                     if (sentenceEl && w.example) {
-                        sentenceEl.innerHTML = renderFillSentenceCloze(w.example, w.en, sc.scaffold);
+                        sentenceEl.innerHTML = renderExamplePosBadgeHtml(p) + renderFillSentenceCloze(w.example, w.en, sc.scaffold);
                     } else if (sentenceEl) {
                         sentenceEl.innerHTML = `<span id="fill-cloze-target" class="text-[#0071E3] font-mono font-bold bg-blue-100/90 px-2.5 py-1 rounded-lg border border-blue-300 tracking-widest text-base">${esc(sc.scaffold)}</span>`;
                     }
@@ -8615,6 +8899,7 @@ function cleanupMasteredMistakes() {
             'ambiguity': ['am', 'bi', 'gu', 'i', 'ty'], 'ingenuity': ['in', 'ge', 'nu', 'i', 'ty'],
             'recipient': ['re', 'cip', 'i', 'ent'], 'petroleum': ['pe', 'tro', 'le', 'um'],
             'veterinarian': ['vet', 'er', 'i', 'nar', 'i', 'an'], 'modernization': ['mod', 'ern', 'i', 'za', 'tion'],
+            'modern': ['mod', 'ern'], 'rhythm': ['rhyth', 'm'], 'tuesday': ['tues', 'day'],
             'familiarity': ['fa', 'mil', 'i', 'ar', 'i', 'ty'], 'companionship': ['com', 'pan', 'ion', 'ship'],
             'rebellion': ['re', 'bel', 'lion'], 'pneumonia': ['pneu', 'mo', 'nia'],
             'ingenious': ['in', 'gen', 'ious'], 'enthusiasm': ['en', 'thu', 'si', 'asm'], 'materialism': ['ma', 'te', 'ri', 'al', 'ism'],
@@ -8899,14 +9184,24 @@ function cleanupMasteredMistakes() {
         function splitKkIntoSyllables(kkStr, targetCount) {
             if (!kkStr || targetCount <= 1) return null;
             const m = kkStr.match(/\[([^\],;\/]+)/);
-            const raw = m ? m[1].trim() : kkStr.replace(/[\[\]]/g, '').trim();
+            const raw = (m ? m[1].trim() : kkStr.replace(/[\[\]]/g, '').trim()).replace(/\(([^)]+)\)/g, '$1');
             if (!raw) return null;
 
-            const vowelRegex = /aɪɚ|aʊɚ|aɪ|aʊ|ɔɪ|i|ɪ|e|ɛ|æ|ɑ|ɔ|o|ʊ|u|ʌ|ə|ɝ|ɚ/g;
-            const matches = [];
+            const regexKeep = /aɪɚ|aʊɚ|aɪ|aʊ|ɔɪ|i|ɪ|e|ɛ|æ|ɑ|ɔ|o|ʊ|u|ʌ|ə|ɝ|ɚ/g;
+            const regexSplit = /aɪ|aʊ|ɔɪ|i|ɪ|e|ɛ|æ|ɑ|ɔ|o|ʊ|u|ʌ|ə|ɝ|ɚ/g;
+            let matches = [];
             let match;
-            while ((match = vowelRegex.exec(raw)) !== null) {
+            while ((match = regexKeep.exec(raw)) !== null) {
                 matches.push({ start: match.index, end: match.index + match[0].length, vowel: match[0] });
+            }
+            if (matches.length !== targetCount) {
+                matches = [];
+                while ((match = regexSplit.exec(raw)) !== null) {
+                    matches.push({ start: match.index, end: match.index + match[0].length, vowel: match[0] });
+                }
+            }
+            if (matches.length === targetCount - 1 && /[tdpbkgfvszʃʒθð][lnm]$/.test(raw)) {
+                matches.push({ start: raw.length - 1, end: raw.length, vowel: raw.slice(-1) });
             }
 
             if (matches.length !== targetCount) return null;
@@ -8922,12 +9217,12 @@ function cleanupMasteredMistakes() {
                     splitIdx = v1End + stressIdx;
                 } else if (between.length <= 1) {
                     splitIdx = v1End;
+                } else if (/^(tʃ|dʒ|bl|br|kl|kr|ɡl|ɡr|gl|gr|dr|fl|fr|pl|pr|tr|tw|kw|hw|sp|st|sk)$/.test(between)) {
+                    splitIdx = v1End;
+                } else if (between.startsWith('tʃ') || between.startsWith('dʒ')) {
+                    splitIdx = v1End + 2;
                 } else {
-                    if (between.length === 2 && /^(bl|br|cl|cr|dr|fl|fr|gl|gr|pl|pr|tr|tw|ch|sh|th|ph|wh)$/.test(between)) {
-                        splitIdx = v1End;
-                    } else {
-                        splitIdx = v1End + 1;
-                    }
+                    splitIdx = v1End + 1;
                 }
                 splits.push(splitIdx);
             }
@@ -8944,14 +9239,24 @@ function cleanupMasteredMistakes() {
         // 切分英式 Oxford 音標至各音節對應片段
         function splitUkIntoSyllables(ukStr, targetCount) {
             if (!ukStr || targetCount <= 1) return null;
-            const clean = ukStr.replace(/^\/|\/$/g, '').trim();
+            const clean = ukStr.replace(/^\/|\/$/g, '').split(/[;,\/]/)[0].replace(/\(r\)/g, '').replace(/\(([^)]+)\)/g, '$1').trim();
             if (!clean) return null;
 
-            const vowelRegex = /(?:eɪ|aɪ|ɔɪ|aʊ|əʊ|oʊ|ɪə|eə|ʊə|ɑː|ɔː|ɜː|iː|uː|æ|e|ɪ|ɒ|ʌ|ʊ|ə)/g;
-            const matches = [];
+            const regexKeep = /(?:aɪə|aʊə|eɪ|aɪ|ɔɪ|aʊ|əʊ|oʊ|ɪə|eə|ʊə|ɑː|ɔː|ɜː|iː|uː|æ|e|ɛ|ɪ|i|ɒ|ʌ|ʊ|u|ə)/g;
+            const regexSplit = /(?:eɪ|aɪ|ɔɪ|aʊ|əʊ|oʊ|ɪə|eə|ʊə|ɑː|ɔː|ɜː|iː|uː|æ|e|ɛ|ɪ|i|ɒ|ʌ|ʊ|u|ə)/g;
+            let matches = [];
             let match;
-            while ((match = vowelRegex.exec(clean)) !== null) {
+            while ((match = regexKeep.exec(clean)) !== null) {
                 matches.push({ start: match.index, end: match.index + match[0].length, vowel: match[0] });
+            }
+            if (matches.length !== targetCount) {
+                matches = [];
+                while ((match = regexSplit.exec(clean)) !== null) {
+                    matches.push({ start: match.index, end: match.index + match[0].length, vowel: match[0] });
+                }
+            }
+            if (matches.length === targetCount - 1 && /[tdpbkgɡfvszʃʒθð][lnm]$/.test(clean)) {
+                matches.push({ start: clean.length - 1, end: clean.length, vowel: clean.slice(-1) });
             }
             if (matches.length !== targetCount) return null;
 
@@ -8966,12 +9271,12 @@ function cleanupMasteredMistakes() {
                     splitIdx = v1End + stressIdx;
                 } else if (between.length <= 1) {
                     splitIdx = v1End;
+                } else if (/^(tʃ|dʒ|bl|br|kl|kr|ɡl|ɡr|gl|gr|dr|fl|fr|pl|pr|tr|tw|kw|sp|st|sk)$/.test(between)) {
+                    splitIdx = v1End;
+                } else if (between.startsWith('tʃ') || between.startsWith('dʒ')) {
+                    splitIdx = v1End + 2;
                 } else {
-                    if (between.length === 2 && /^(bl|br|cl|cr|dr|fl|fr|gl|gr|pl|pr|tr|tw|ch|sh|th|ph|wh)$/.test(between)) {
-                        splitIdx = v1End;
-                    } else {
-                        splitIdx = v1End + 1;
-                    }
+                    splitIdx = v1End + 1;
                 }
                 splits.push(splitIdx);
             }
@@ -8990,30 +9295,43 @@ function cleanupMasteredMistakes() {
             if (!w || !w.en) return '';
             const rawWord = w.en.trim().toLowerCase();
             if (!rawWord || !/^[a-z]+$/.test(rawWord) || rawWord.length < 2) return '';
+            if (/^[A-Z0-9]{2,}$/.test(w.en.trim())) return '';
+
+            const kkClean = (kk || '').replace(/^\[|\]$/g, '').split(/[;,\/]/)[0].replace(/[ˋˈ'͵ˌ\s]/g, '').trim();
+            const ukClean = (uk || '').replace(/^\/|\/$/g, '').split(/[;,]/)[0].replace(/[ˈ'ˌ\s]/g, '').trim();
 
             const rControlledPatterns = [
-                { pattern: 'ear', letters: 'E、A（2 個母音字母）+ R（子音字母）', name: 'EAR 捲舌母音', isR: true },
-                { pattern: 'air', letters: 'A、I（2 個母音字母）+ R（子音字母）', name: 'AIR 捲舌母音', isR: true },
-                { pattern: 'are', letters: 'A（母音字母）+ RE（子音組合）', name: 'ARE 捲舌母音', isR: true },
-                { pattern: 'eer', letters: 'E、E（2 個母音字母）+ R（子音字母）', name: 'EER 捲舌雙母音', isR: true },
-                { pattern: 'ere', letters: 'E（母音字母）+ RE（子音組合）', name: 'ERE 捲舌母音', isR: true },
-                { pattern: 'oor', letters: 'O、O（2 個母音字母）+ R（子音字母）', name: 'OOR 捲舌母音', isR: true },
-                { pattern: 'our', letters: 'O、U（2 個母音字母）+ R（子音字母）', name: 'OUR 捲舌母音', isR: true },
-                { pattern: 'ure', letters: 'U（母音字母）+ RE（子音組合）', name: 'URE 捲舌母音', isR: true },
-                { pattern: 'er', letters: 'E（母音字母）+ R（子音字母）', name: 'ER 捲舌母音', isR: true },
-                { pattern: 'ir', letters: 'I（母音字母）+ R（子音字母）', name: 'IR 捲舌母音', isR: true },
-                { pattern: 'ur', letters: 'U（母音字母）+ R（子音字母）', name: 'UR 捲舌母音', isR: true },
-                { pattern: 'ar', letters: 'A（母音字母）+ R（子音字母）', name: 'AR 捲舌母音', isR: true },
-                { pattern: 'or', letters: 'O（母音字母）+ R（子音字母）', name: 'OR 捲舌母音', isR: true }
+                { pattern: 'ear', letters: 'e + a（2 個母音字母）+ r（子音字母）', name: 'ear 捲舌母音', isR: true },
+                { pattern: 'air', letters: 'a + i（2 個母音字母）+ r（子音字母）', name: 'air 捲舌母音', isR: true },
+                { pattern: 'oar', letters: 'o + a（2 個母音字母）+ r（子音字母）', name: 'oar 捲舌母音', isR: true },
+                { pattern: 'are', letters: 'a（母音字母）+ r（子音字母）+ 字尾不發音 e', name: 'are 捲舌母音', isR: true },
+                { pattern: 'eer', letters: 'e + e（2 個母音字母）+ r（子音字母）', name: 'eer 捲舌雙母音', isR: true },
+                { pattern: 'ere', letters: 'e（母音字母）+ r（子音字母）+ 字尾不發音 e', name: 'ere 捲舌母音', isR: true },
+                { pattern: 'eir', letters: 'e + i（2 個母音字母）+ r（子音字母）', name: 'eir 捲舌母音', isR: true },
+                { pattern: 'ire', letters: 'i（母音字母）+ r（子音字母）+ 字尾不發音 e', name: 'ire 捲舌雙母音', isR: true },
+                { pattern: 'ore', letters: 'o（母音字母）+ r（子音字母）+ 字尾不發音 e', name: 'ore 捲舌母音', isR: true },
+                { pattern: 'oor', letters: 'o + o（2 個母音字母）+ r（子音字母）', name: 'oor 捲舌母音', isR: true },
+                { pattern: 'our', letters: 'o + u（2 個母音字母）+ r（子音字母）', name: 'our 捲舌母音', isR: true },
+                { pattern: 'ure', letters: 'u（母音字母）+ r（子音字母）+ 字尾不發音 e', name: 'ure 捲舌母音', isR: true },
+                { pattern: 'er', letters: 'e（母音字母）+ r（子音字母）', name: 'er 捲舌母音', isR: true },
+                { pattern: 'ir', letters: 'i（母音字母）+ r（子音字母）', name: 'ir 捲舌母音', isR: true },
+                { pattern: 'ur', letters: 'u（母音字母）+ r（子音字母）', name: 'ur 捲舌母音', isR: true },
+                { pattern: 'ar', letters: 'a（母音字母）+ r（子音字母）', name: 'ar 捲舌母音', isR: true },
+                { pattern: 'or', letters: 'o（母音字母）+ r（子音字母）', name: 'or 捲舌母音', isR: true }
             ];
+
+            let prefixLen = 0;
+            const prefixMatch = rawWord.match(/^(squ|qu|y)/);
+            if (prefixMatch) prefixLen = prefixMatch[0].length;
+            const searchPart = rawWord.slice(prefixLen);
 
             let matchedR = null;
             let matchIdx = -1;
             for (const item of rControlledPatterns) {
-                const idx = rawWord.indexOf(item.pattern);
+                const idx = searchPart.indexOf(item.pattern);
                 if (idx !== -1) {
                     matchedR = item;
-                    matchIdx = idx;
+                    matchIdx = prefixLen + idx;
                     break;
                 }
             }
@@ -9033,40 +9351,91 @@ function cleanupMasteredMistakes() {
                 lettersDesc = matchedR.letters;
                 isR = true;
             } else {
-                const vRegex = /[aeiouy]+/g;
-                const m = vRegex.exec(rawWord);
+                const ghEndsWithF = kkClean.endsWith('f');
+                const specialVowelRe = ghEndsWithF
+                    ? /(?:eigh|igh|iew|aw|ew|ow|[aeiouy]+)/
+                    : /(?:eigh|igh|ough|augh|iew|owe|awe|eye|bye|dye|aw|ew|ow|[aeiouy]+)/;
+                const m = specialVowelRe.exec(searchPart);
                 if (!m) return '';
+                const vIdx = prefixLen + m.index;
                 nucleus = m[0];
-                onset = rawWord.slice(0, m.index);
-                coda = rawWord.slice(m.index + nucleus.length);
+                onset = rawWord.slice(0, vIdx);
+                coda = rawWord.slice(vIdx + nucleus.length);
+                const letterJoin = nucleus.split('').join(' + ');
                 if (nucleus.length > 1) {
-                    patternName = '母音字母組合 (Vowel Digraph)';
-                    lettersDesc = '2 個母音字母組合發單一母音音素';
+                    patternName = `${nucleus} 母音組合 (Vowel Pattern)`;
+                    lettersDesc = `${letterJoin}（母音字母組合，整體發單一母音音素）`;
                 } else if (coda.endsWith('e') && coda.length > 1) {
-                    patternName = '魔術 E 相對開音節 (Magic E)';
-                    lettersDesc = '字尾不發音 e 促使前母音發長音';
+                    patternName = `${nucleus}_e 魔術 E (Magic E)`;
+                    lettersDesc = `${nucleus}（母音字母）+ ${coda.slice(0, -1)}（尾音子音）+ 字尾不發音 e`;
                 } else if (coda) {
-                    patternName = '閉音節短母音 (Closed Syllable)';
-                    lettersDesc = '子音結尾之短母音';
+                    patternName = `${nucleus} 閉音節母音 (Closed Syllable)`;
+                    lettersDesc = `${nucleus}（母音字母）+ ${coda}（子音結尾）`;
                 } else {
-                    patternName = '開音節長母音 (Open Syllable)';
-                    lettersDesc = '母音結尾之長母音';
+                    patternName = `${nucleus} 開音節長母音 (Open Syllable)`;
+                    lettersDesc = `${nucleus}（母音字母結尾之開音節）`;
                 }
             }
 
+            const onsetHasY = onset.endsWith('y');
+            const kkVowelRe = isR
+                ? (onsetHasY
+                    ? /(?:aɪɚ|aʊɚ|aɪr|aʊr|ʊr|ɝ|ɚ|[ɑɔɛɪiʊuʌeæo]r|[ɑɔɛɪiʊuʌeæo]ɚ|aɪ|aʊ|ɔɪ|i|ɪ|e|ɛ|æ|ɑ|ɔ|o|ʊ|u|ʌ|ə)/
+                    : /(?:aɪɚ|aʊɚ|aɪr|aʊr|jʊr|jɝ|ʊr|ɝ|ɚ|[ɑɔɛɪiʊuʌeæo]r|[ɑɔɛɪiʊuʌeæo]ɚ|ju|jʊ|aɪ|aʊ|ɔɪ|i|ɪ|e|ɛ|æ|ɑ|ɔ|o|ʊ|u|ʌ|ə)/)
+                : (onsetHasY
+                    ? /(?:aɪ|aʊ|ɔɪ|i|ɪ|e|ɛ|æ|ɑ|ɔ|o|ʊ|u|ʌ|ə|ɝ|ɚ)/
+                    : /(?:ju|jʊ|aɪ|aʊ|ɔɪ|i|ɪ|e|ɛ|æ|ɑ|ɔ|o|ʊ|u|ʌ|ə|ɝ|ɚ)/);
+
+            let onsetPhoneme = '';
+            let kkVowel = '';
+            let codaPhoneme = '';
+
+            const km = kkClean.match(kkVowelRe);
+            if (km) {
+                onsetPhoneme = kkClean.slice(0, km.index);
+                kkVowel = km[0];
+                codaPhoneme = kkClean.slice(km.index + km[0].length);
+            }
+
+            const ukVowelRe = isR
+                ? (onsetHasY
+                    ? /(?:aɪə(?:\(r\)|r)?|aʊə(?:\(r\)|r)?|ɪə(?:\(r\)|r)?|eə(?:\(r\)|r)?|ʊə(?:\(r\)|r)?|(?:ɑː|ɔː|ɜː|iː|uː|eɪ|aɪ|ɔɪ|aʊ|əʊ|oʊ|æ|e|ɪ|ɒ|ʌ|ʊ|ə)(?:\(r\)|r)?)/
+                    : /(?:aɪə(?:\(r\)|r)?|aʊə(?:\(r\)|r)?|jʊə(?:\(r\)|r)?|ɪə(?:\(r\)|r)?|eə(?:\(r\)|r)?|ʊə(?:\(r\)|r)?|(?:juː|jʊ|ɑː|ɔː|ɜː|iː|uː|eɪ|aɪ|ɔɪ|aʊ|əʊ|oʊ|æ|e|ɪ|ɒ|ʌ|ʊ|ə)(?:\(r\)|r)?)/)
+                : (onsetHasY
+                    ? /(?:eɪ|aɪ|ɔɪ|aʊ|əʊ|oʊ|ɪə|eə|ʊə|ɑː|ɔː|ɜː|iː|uː|æ|e|ɪ|ɒ|ʌ|ʊ|ə)/
+                    : /(?:juː|jʊ|eɪ|aɪ|ɔɪ|aʊ|əʊ|oʊ|ɪə|eə|ʊə|ɑː|ɔː|ɜː|iː|uː|æ|e|ɪ|ɒ|ʌ|ʊ|ə)/);
+
+            let ukVowel = '';
+            const um = ukClean.match(ukVowelRe);
+            if (um) {
+                ukVowel = um[0];
+                if (!onsetPhoneme) onsetPhoneme = ukClean.slice(0, um.index);
+                if (!codaPhoneme) codaPhoneme = ukClean.slice(um.index + um[0].length);
+            }
+
+            const onsetDisplay = onsetPhoneme ? `/${esc(onsetPhoneme)}/` : '不發音';
+            const codaDisplay = codaPhoneme ? `/${esc(codaPhoneme)}/` : '不發音';
+            const displayKkVowel = kkVowel ? `[${kkVowel}]` : kk;
+            const displayUkVowel = ukVowel ? `/${ukVowel}/` : uk;
+
             const safeWord = esc(w.en).replace(/'/g, "\\'");
-            const phonemeCount = (onset ? 1 : 0) + 1 + (coda ? 1 : 0);
+            const phonemeCount = (onset ? (onsetPhoneme ? 1 : 0) : 0) + 1 + (coda ? (codaPhoneme ? 1 : 0) : 0);
+            const phonemeFormula = [
+                onsetPhoneme ? `/${onsetPhoneme}/` : null,
+                kkVowel ? `[${kkVowel}]` : null,
+                codaPhoneme ? `/${codaPhoneme}/` : null
+            ].filter(Boolean).join(' + ');
 
             return `
                 <div class="syllable-phonics-card bg-gradient-to-br from-indigo-50/60 via-blue-50/40 to-slate-50/60 dark:from-[#131D31] dark:via-[#152238] dark:to-[#111A2B] p-3.5 rounded-2xl border border-indigo-100/80 dark:border-indigo-900/50 shadow-2xs">
-                    <div class="flex items-center justify-between text-xs font-bold text-indigo-950 dark:text-indigo-200 mb-2.5">
-                        <div class="flex items-center gap-1.5">
-                            <span>🔤</span><span>字音與拼讀結構拆解 (Phonics & Vowel Pattern)</span>
+                    <div class="flex items-center justify-between gap-1.5 text-xs font-bold text-indigo-950 dark:text-indigo-200 mb-2.5 whitespace-nowrap overflow-hidden">
+                        <div class="flex items-center gap-1 min-w-0 truncate">
+                            <span>🔤</span><span class="truncate">字音拼讀結構拆解</span><span class="hidden sm:inline font-normal text-[11px] text-indigo-600/80 dark:text-indigo-400/70">(Phonics)</span>
                         </div>
-                        <div class="flex items-center gap-2">
-                            <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-indigo-100/90 text-indigo-700 dark:bg-indigo-950/80 dark:text-indigo-300 font-semibold">單音節 · ${phonemeCount} 個音素</span>
-                            <button type="button" class="text-[10px] text-indigo-600 dark:text-indigo-400 hover:underline cursor-pointer flex items-center gap-1" onclick="playWordAudioSlow('${safeWord}', this)">
-                                <span>🐢 慢速跟讀</span>
+                        <div class="flex items-center gap-1.5 shrink-0">
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-indigo-100/90 text-indigo-700 dark:bg-indigo-950/80 dark:text-indigo-300 font-semibold whitespace-nowrap">單音節 · ${phonemeCount}音素</span>
+                            <button type="button" class="text-[10px] text-indigo-600 dark:text-indigo-400 hover:underline cursor-pointer flex items-center gap-0.5 whitespace-nowrap" onclick="playWordAudioSlow('${safeWord}', this)" title="慢速跟讀發音">
+                                <span>🐢</span><span class="hidden xs:inline">慢速跟讀</span><span class="xs:hidden">慢速</span>
                             </button>
                         </div>
                     </div>
@@ -9077,7 +9446,7 @@ function cleanupMasteredMistakes() {
                             <div class="p-2 rounded-xl bg-white/90 dark:bg-[#18263E] border border-slate-200/80 dark:border-slate-700/60 shadow-2xs">
                                 <div class="text-[10px] text-slate-400 dark:text-slate-400 font-semibold mb-0.5">首音 (子音)</div>
                                 <div class="text-base font-extrabold font-mono text-slate-800 dark:text-slate-100">${esc(onset)}</div>
-                                <div class="text-[11px] font-mono text-slate-500 dark:text-slate-400 mt-0.5">/${esc(onset)}/</div>
+                                <div class="text-[11px] font-mono text-slate-500 dark:text-slate-400 mt-0.5">${onsetDisplay}</div>
                             </div>
                         ` : ''}
 
@@ -9085,8 +9454,8 @@ function cleanupMasteredMistakes() {
                             <div class="text-[10px] text-amber-700 dark:text-amber-300 font-bold mb-0.5">${esc(patternName)}</div>
                             <div class="text-base font-extrabold font-mono text-amber-900 dark:text-amber-100 tracking-wider">${esc(nucleus)}</div>
                             <div class="flex items-center justify-center gap-1.5 text-[10.5px] font-mono mt-0.5 flex-wrap">
-                                ${kk ? `<span class="text-blue-700 dark:text-blue-300 font-semibold">美 ${esc(kk)}</span>` : ''}
-                                ${uk ? `<span class="text-slate-300 dark:text-slate-600">|</span><span class="text-purple-700 dark:text-purple-300 font-semibold">英 ${esc(uk)}</span>` : ''}
+                                ${displayKkVowel ? `<span class="text-blue-700 dark:text-blue-300 font-semibold">美 ${esc(displayKkVowel)}</span>` : ''}
+                                ${displayUkVowel ? `<span class="text-slate-300 dark:text-slate-600">|</span><span class="text-purple-700 dark:text-purple-300 font-semibold">英 ${esc(displayUkVowel)}</span>` : ''}
                             </div>
                         </div>
 
@@ -9094,7 +9463,7 @@ function cleanupMasteredMistakes() {
                             <div class="p-2 rounded-xl bg-white/90 dark:bg-[#18263E] border border-slate-200/80 dark:border-slate-700/60 shadow-2xs">
                                 <div class="text-[10px] text-slate-400 dark:text-slate-400 font-semibold mb-0.5">尾音 (子音)</div>
                                 <div class="text-base font-extrabold font-mono text-slate-800 dark:text-slate-100">${esc(coda)}</div>
-                                <div class="text-[11px] font-mono text-slate-500 dark:text-slate-400 mt-0.5">/${esc(coda)}/</div>
+                                <div class="text-[11px] font-mono text-slate-500 dark:text-slate-400 mt-0.5">${codaDisplay}</div>
                             </div>
                         ` : ''}
                     </div>
@@ -9107,18 +9476,86 @@ function cleanupMasteredMistakes() {
                         <ul class="text-[11px] sm:text-[11.5px] text-slate-600 dark:text-slate-300 list-disc list-inside space-y-0.5 pl-0.5 leading-relaxed">
                             <li><strong>拼字結構</strong>：${esc(lettersDesc)}。</li>
                             ${isR ? `
-                                <li><strong>單一音素</strong>：屬於 <strong>R-controlled vowel pattern (受 R 影響母音)</strong>，整體融合成<strong>單一母音音素</strong>。</li>
-                                <li><strong>口音特色</strong>：<strong>美式 KK 保留明顯捲舌 R 音</strong>（如 [ɝ] / [ɚ] / [ɔr]）；<strong>英式 Oxford 標為非捲舌母音</strong>（如 /ɜː/ / /ɔː/）。</li>
+                                <li><strong>單一音素</strong>：屬於 <strong>R-controlled vowel pattern (受 r 影響母音)</strong>，「<strong>${esc(nucleus)}</strong>」整體融合成<strong>單一母音音素</strong>。</li>
+                                <li><strong>口音特色</strong>：此字中的「<strong>${esc(nucleus)}</strong>」在<strong>美式 KK 發捲舌音 ${esc(displayKkVowel)}</strong>${displayUkVowel ? `；<strong>英式 Oxford 則標為非捲舌母音 ${esc(displayUkVowel)}</strong>` : ''}。</li>
                             ` : `
-                                <li><strong>音素特性</strong>：母音字母核心發出一個單一主要的母音音素。</li>
+                                <li><strong>音素特性</strong>：母音核心「<strong>${esc(nucleus)}</strong>」發出單一母音音素 <strong>${esc(displayKkVowel)}</strong>${displayUkVowel ? `（英式 <strong>${esc(displayUkVowel)}</strong>）` : ''}。</li>
                             `}
+                            ${phonemeFormula && kk ? `<li><strong>音素拼讀</strong>：<strong>${esc(phonemeFormula)}</strong> ➔ 完整音標 <strong>${esc(kk)}</strong>。</li>` : ''}
                         </ul>
                     </div>
                 </div>
             `;
         }
 
-        // 單字詳解卡專屬：音節與字音結構拆解對照模組 (方案 A)
+        // 解析單一音節內部之「首音子音 + 母音核心 + 尾音子音」結構描述
+        function analyzeSyllableInternalStructure(sylText, kkSylChunk) {
+            const rawSyl = (sylText || '').toLowerCase().trim();
+            const cleanKk = (kkSylChunk || '').replace(/[ˋˈ'͵ˌ\[\]\/]/g, '').trim();
+            if (!rawSyl) return { desc: '', phonemeParts: [], hasSchwa: false, vowelLetters: '', kkVowel: '' };
+
+            const prefixLen = rawSyl.startsWith('qu') ? 2 : (/^y[aeiou]/.test(rawSyl) ? 1 : 0);
+            const searchPart = rawSyl.slice(prefixLen);
+            const vMatch = /(?:ear|air|oar|are|eer|ere|eir|our|ure|ir|ur|er|ar|or|eigh|igh|ough|augh|aw|ew|ow|[aeiouy]+)/.exec(searchPart);
+            if (!vMatch) {
+                return {
+                    desc: `${rawSyl}${cleanKk ? ` [${cleanKk}]` : ''}`,
+                    phonemeParts: cleanKk ? [`/${cleanKk}/`] : [],
+                    hasSchwa: /[əɚ]/.test(cleanKk),
+                    vowelLetters: '',
+                    kkVowel: ''
+                };
+            }
+
+            const vIdx = prefixLen + vMatch.index;
+            const onset = rawSyl.slice(0, vIdx);
+            let nucleus = vMatch[0];
+            let coda = rawSyl.slice(vIdx + nucleus.length);
+
+            const kkVowelRe = /(?:aɪɚ|aʊɚ|aɪr|aʊr|jʊr|jɝ|ʊr|ɝ|ɚ|[ɑɔɛɪiʊuʌeæo]r|[ɑɔɛɪiʊuʌeæo]ɚ|ju|jʊ|aɪ|aʊ|ɔɪ|i|ɪ|e|ɛ|æ|ɑ|ɔ|o|ʊ|u|ʌ|ə)/;
+            const km = cleanKk.match(kkVowelRe);
+            const onsetPh = km ? cleanKk.slice(0, km.index) : '';
+            const kkVowel = km ? km[0] : '';
+            const codaPh = km ? cleanKk.slice(km.index + km[0].length) : '';
+
+            const segs = [];
+            if (onset) {
+                segs.push(`子音 ${onset}${onsetPh ? ` /${onsetPh}/` : ''}`);
+            }
+            if (nucleus) {
+                if (coda === 'e' && nucleus.length === 1) {
+                    segs.push(`母音 ${nucleus} 發 ${kkVowel ? `[${kkVowel}]` : ''} + 不發音 e`);
+                    coda = '';
+                } else if (coda.endsWith('e') && coda.length > 1 && nucleus.length === 1 && !/[əɚ]/.test(kkVowel)) {
+                    const realCoda = coda.slice(0, -1);
+                    segs.push(`母音 ${nucleus} 發 ${kkVowel ? `[${kkVowel}]` : ''}`);
+                    segs.push(`尾音 ${realCoda}${codaPh ? ` /${codaPh}/` : ''} + 不發音 e`);
+                    coda = '';
+                } else {
+                    const vLabel = (nucleus === 'y' && !coda) ? '字尾母音 y' : `母音 ${nucleus}`;
+                    segs.push(`${vLabel}${kkVowel ? ` 發 [${kkVowel}]` : ''}`);
+                }
+            }
+            if (coda) {
+                segs.push(`尾音 ${coda}${codaPh ? ` /${codaPh}/` : ''}`);
+            }
+
+            const phonemeParts = [
+                onsetPh ? `/${onsetPh}/` : null,
+                kkVowel ? `[${kkVowel}]` : (cleanKk ? `[${cleanKk}]` : null),
+                codaPh ? `/${codaPh}/` : null
+            ].filter(Boolean);
+
+            return {
+                desc: `${rawSyl}（${segs.join(' + ')}）`,
+                phonemeParts,
+                hasSchwa: /[əɚ]/.test(kkVowel || cleanKk),
+                vowelLetters: nucleus,
+                kkVowel
+            };
+        }
+
+        // 單字詳解卡專屬：音節與字音結構拆解對照模組 (多音節與單音節統一採用橫向音素/音節卡 + 底部結構分析框)
         function renderSyllablesPhoneticsCardHtml(w) {
             if (!w || !w.en) return '';
             const { kk, uk } = getWordPhonetics(w);
@@ -9133,58 +9570,108 @@ function cleanupMasteredMistakes() {
             const ukChunks = splitUkIntoSyllables(uk, count);
 
             const safeWord = esc(w.en).replace(/'/g, "\\'");
+            const gridColsClass = count === 2
+                ? 'grid-cols-2'
+                : (count === 3 ? 'grid-cols-3' : 'grid-cols-2 sm:grid-cols-4');
 
-            let out = `
-                <div class="syllable-phonics-card bg-gradient-to-br from-indigo-50/60 via-blue-50/40 to-slate-50/60 dark:from-[#131D31] dark:via-[#152238] dark:to-[#111A2B] p-3.5 rounded-2xl border border-indigo-100/80 dark:border-indigo-900/50 shadow-2xs">
-                    <div class="flex items-center justify-between text-xs font-bold text-indigo-950 dark:text-indigo-200 mb-2.5">
-                        <div class="flex items-center gap-1.5">
-                            <span>🔤</span><span>音節與字音結構拆解 (Syllable & Phonics Breakdown)</span>
-                        </div>
-                        <button type="button" class="text-[10px] text-indigo-600 dark:text-indigo-400 hover:underline cursor-pointer flex items-center gap-1" onclick="playWordAudioSlow('${safeWord}', this)">
-                            <span>🐢 慢速整字跟讀</span>
-                        </button>
-                    </div>
-                    <div class="space-y-1.5">
-            `;
+            const priIdx = typeof sylInfo.primaryIdx === 'number' && sylInfo.primaryIdx >= 0 ? sylInfo.primaryIdx : 0;
+            const sylAnalyses = parts.map((part, idx) =>
+                analyzeSyllableInternalStructure(part, kkChunks && kkChunks[idx] ? kkChunks[idx] : '')
+            );
 
-            parts.forEach((part, idx) => {
-                const isPri = idx === sylInfo.primaryIdx;
+            const structureSummary = sylAnalyses.map(a => a.desc).filter(Boolean).join(' + ');
+            const schwaSyllables = parts.filter((_, idx) => idx !== priIdx && sylAnalyses[idx] && sylAnalyses[idx].hasSchwa);
+            const priPart = parts[priIdx] || parts[0];
+            const priKk = kkChunks && kkChunks[priIdx] ? `[${kkChunks[priIdx]}]` : '';
+            const priUk = ukChunks && ukChunks[priIdx] ? `/${ukChunks[priIdx]}/` : '';
+
+            let stressFeatureHtml = `主重音落在第 <strong>${priIdx + 1}</strong> 音節「<strong>${esc(priPart)}</strong>」${priKk ? ` <strong>${esc(priKk)}</strong>` : ''}${priUk ? `（英式 <strong>${esc(priUk)}</strong>）` : ''}`;
+            if (schwaSyllables.length > 0) {
+                stressFeatureHtml += `；非重讀音節「<strong>${esc(schwaSyllables.join('、'))}</strong>」母音弱化為輕讀央母音 <strong>[ə] / [ɚ]</strong>。`;
+            } else {
+                const weakIdx = parts.findIndex((_, idx) => idx !== priIdx);
+                if (weakIdx !== -1) {
+                    const wPart = parts[weakIdx];
+                    const wKk = kkChunks && kkChunks[weakIdx] ? `[${kkChunks[weakIdx]}]` : '';
+                    stressFeatureHtml += `；弱讀音節「<strong>${esc(wPart)}</strong>」讀作 <strong>${esc(wKk || wPart)}</strong>，語調自然輕降。`;
+                } else {
+                    stressFeatureHtml += '。';
+                }
+            }
+
+            const allPhonemes = sylAnalyses.flatMap(a => a.phonemeParts);
+            const sylFormula = kkChunks && kkChunks.length === count
+                ? kkChunks.map(c => `[${c}]`).join(' + ')
+                : parts.join(' + ');
+            const fullFormulaStr = allPhonemes.length > 0 && kkChunks
+                ? `${allPhonemes.join(' + ')} ➔ ${sylFormula} ➔ 完整音標 ${kk}`
+                : `${sylFormula} ➔ 完整音標 ${kk}`;
+
+            const cardsHtml = parts.map((part, idx) => {
+                const isPri = idx === priIdx;
                 const isSec = idx === sylInfo.secondaryIdx;
                 const kkSub = kkChunks && kkChunks[idx] ? `[${kkChunks[idx]}]` : '';
                 const ukSub = ukChunks && ukChunks[idx] ? `/${ukChunks[idx]}/` : '';
+                const topLabel = isPri
+                    ? `第 ${idx + 1} 音節 · 主重音`
+                    : (isSec ? `第 ${idx + 1} 音節 · 次重音` : `第 ${idx + 1} 音節 · 弱讀音節`);
 
-                const stressBadge = isPri
-                    ? '<span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-950/80 dark:text-blue-300 border border-blue-200/80 dark:border-blue-700/60 shadow-2xs">主重音所在</span>'
-                    : (isSec
-                        ? '<span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-indigo-100 text-indigo-700 dark:bg-indigo-950/80 dark:text-indigo-300 border border-indigo-200/80 dark:border-indigo-700/60 shadow-2xs">帶次重音</span>'
-                        : '<span class="text-[10px] text-slate-400 dark:text-slate-500 font-medium px-1.5">弱讀音節</span>');
-
-                const activeBorder = isPri
-                    ? 'border-blue-300/90 dark:border-blue-600/60 bg-white/95 dark:bg-[#18263E]'
-                    : (isSec
-                        ? 'border-indigo-200/80 dark:border-indigo-800/50 bg-white/90 dark:bg-[#162238]'
-                        : 'border-slate-200/70 dark:border-slate-700/50 bg-white/80 dark:bg-[#141F32]');
-
-                out += `
-                    <div class="syllable-phonics-item py-2 px-3 rounded-xl border ${activeBorder} shadow-2xs flex items-center justify-between gap-2 flex-wrap transition-all">
-                        <div class="flex items-center gap-2.5">
-                            <span class="text-[11px] font-mono font-bold text-slate-400 dark:text-slate-500 w-3 text-center">${idx + 1}</span>
-                            <span class="font-mono text-base font-extrabold tracking-wide ${isPri ? 'text-[#0071E3] dark:text-[#58A6FF]' : 'text-slate-800 dark:text-slate-100'}">${esc(part)}</span>
-                            ${stressBadge}
+                if (isPri) {
+                    return `
+                        <div class="p-2 rounded-xl bg-amber-50/90 dark:bg-amber-950/40 border border-amber-300 dark:border-amber-700/80 shadow-2xs ring-2 ring-amber-200/50 dark:ring-amber-900/40">
+                            <div class="text-[10px] text-amber-700 dark:text-amber-300 font-bold mb-0.5">${esc(topLabel)}</div>
+                            <div class="text-base font-extrabold font-mono text-amber-900 dark:text-amber-100 tracking-wider">${esc(part)}</div>
+                            <div class="flex items-center justify-center gap-1.5 text-[10.5px] font-mono mt-0.5 flex-wrap">
+                                ${kkSub ? `<span class="text-blue-700 dark:text-blue-300 font-semibold">美 ${esc(kkSub)}</span>` : ''}
+                                ${ukSub ? `<span class="text-slate-300 dark:text-slate-600">|</span><span class="text-purple-700 dark:text-purple-300 font-semibold">英 ${esc(ukSub)}</span>` : ''}
+                            </div>
                         </div>
-                        <div class="flex items-center gap-1.5 flex-wrap ml-auto">
-                            ${kkSub ? `<span class="inline-flex items-center gap-1 font-mono text-xs px-2 py-0.5 rounded-md bg-blue-50/90 text-blue-700 border border-blue-200/60 dark:bg-blue-950/50 dark:text-blue-300 dark:border-blue-800/50 font-normal"><span class="text-[9px] font-sans font-bold text-blue-500 dark:text-blue-400">美</span><span>${esc(kkSub)}</span></span>` : ''}
-                            ${ukSub ? `<span class="inline-flex items-center gap-1 font-mono text-xs px-2 py-0.5 rounded-md bg-purple-50/90 text-purple-700 border border-purple-200/60 dark:bg-purple-950/50 dark:text-purple-300 dark:border-purple-800/50 font-normal"><span class="text-[9px] font-sans font-bold text-purple-500 dark:text-purple-400">英</span><span>${esc(ukSub)}</span></span>` : ''}
+                    `;
+                }
+                return `
+                    <div class="p-2 rounded-xl bg-white/90 dark:bg-[#18263E] border border-slate-200/80 dark:border-slate-700/60 shadow-2xs">
+                        <div class="text-[10px] text-slate-400 dark:text-slate-400 font-semibold mb-0.5">${esc(topLabel)}</div>
+                        <div class="text-base font-extrabold font-mono text-slate-800 dark:text-slate-100 tracking-wider">${esc(part)}</div>
+                        <div class="flex items-center justify-center gap-1.5 text-[10.5px] font-mono mt-0.5 flex-wrap">
+                            ${kkSub ? `<span class="text-blue-700 dark:text-blue-300 font-medium">美 ${esc(kkSub)}</span>` : ''}
+                            ${ukSub ? `<span class="text-slate-300 dark:text-slate-600">|</span><span class="text-purple-700 dark:text-purple-300 font-medium">英 ${esc(ukSub)}</span>` : ''}
                         </div>
                     </div>
                 `;
-            });
+            }).join('');
 
-            out += `
+            return `
+                <div class="syllable-phonics-card bg-gradient-to-br from-indigo-50/60 via-blue-50/40 to-slate-50/60 dark:from-[#131D31] dark:via-[#152238] dark:to-[#111A2B] p-3.5 rounded-2xl border border-indigo-100/80 dark:border-indigo-900/50 shadow-2xs">
+                    <div class="flex items-center justify-between gap-1.5 text-xs font-bold text-indigo-950 dark:text-indigo-200 mb-2.5 whitespace-nowrap overflow-hidden">
+                        <div class="flex items-center gap-1 min-w-0 truncate">
+                            <span>🔤</span><span class="truncate">字音拼讀結構拆解</span><span class="hidden sm:inline font-normal text-[11px] text-indigo-600/80 dark:text-indigo-400/70">(Phonics)</span>
+                        </div>
+                        <div class="flex items-center gap-1.5 shrink-0">
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-indigo-100/90 text-indigo-700 dark:bg-indigo-950/80 dark:text-indigo-300 font-semibold whitespace-nowrap">${count}音節 · 第${priIdx + 1}重音</span>
+                            <button type="button" class="text-[10px] text-indigo-600 dark:text-indigo-400 hover:underline cursor-pointer flex items-center gap-0.5 whitespace-nowrap" onclick="playWordAudioSlow('${safeWord}', this)" title="慢速跟讀發音">
+                                <span>🐢</span><span class="hidden xs:inline">慢速跟讀</span><span class="xs:hidden">慢速</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 橫向音節與音素對應卡 (與單音節一致的卡片視覺) -->
+                    <div class="grid ${gridColsClass} gap-2 text-center mb-2.5">
+                        ${cardsHtml}
+                    </div>
+
+                    <!-- 字母結構與音素分析提示框 -->
+                    <div class="p-2.5 rounded-xl bg-white/80 dark:bg-[#162238] border border-indigo-100/90 dark:border-indigo-900/60 text-xs">
+                        <div class="flex items-center gap-1.5 font-bold text-indigo-950 dark:text-indigo-200 mb-1">
+                            <span>💡</span><span>字母結構與音素分析：</span>
+                        </div>
+                        <ul class="text-[11px] sm:text-[11.5px] text-slate-600 dark:text-slate-300 list-disc list-inside space-y-0.5 pl-0.5 leading-relaxed">
+                            <li><strong>拼字結構</strong>：${esc(structureSummary)}。</li>
+                            <li><strong>重音與音素特性</strong>：${stressFeatureHtml}</li>
+                            ${kk ? `<li><strong>音素拼讀</strong>：<strong>${esc(fullFormulaStr)}</strong>。</li>` : ''}
+                        </ul>
                     </div>
                 </div>
             `;
-            return out;
         }
 
         // 雙音標動態渲染與顯示 (美式 KK / 英式 Oxford IPA + 智慧音節拆解)
@@ -9556,7 +10043,7 @@ function cleanupMasteredMistakes() {
             }
             try {
                 unlockMobileAudio();
-                const clean = cleanText(text).trim();
+                const clean = stripExamplePosPrefix(cleanText(text)).trim();
                 const cleanLower = clean.toLowerCase();
 
                 // 立即重置播放器狀態，防止前次播放殘留
@@ -9664,7 +10151,7 @@ function cleanupMasteredMistakes() {
                 if ('speechSynthesis' in window && text) {
                     clearAudioCallbacks();
                     try { window.speechSynthesis.cancel(); } catch(e) {}
-                    const clean = cleanText(text);
+                    const clean = stripExamplePosPrefix(cleanText(text));
                     const utterance = new SpeechSynthesisUtterance(clean);
                     utterance.lang = 'en-US';
                     utterance.rate = globalSpeechRate;
@@ -10246,7 +10733,7 @@ function cleanupMasteredMistakes() {
         // 精準例句單字標註引擎：100% 精準識別目標單字、片語、連字號、時態變化、音標變形與縮寫
         function renderClickableSentence(sentence, targetEn = '') {
             if (!sentence) return '';
-            const clean = cleanText(sentence);
+            const clean = stripExamplePosPrefix(cleanText(sentence));
             const targetRaw = String(targetEn || (currentWord && currentWord.en) || '').trim();
             const variants = getTargetWordVariants(targetRaw);
             const sortedVars = Array.from(variants).sort((a, b) => b.length - a.length);
@@ -10278,7 +10765,7 @@ function cleanupMasteredMistakes() {
                 if (part.startsWith('###TARGET:') && part.endsWith('###')) {
                     const word = part.slice(10, -3);
                     const cleanWord = normalizeAccent(word).toLowerCase().replace(/['".,!?]/g, '');
-                    return `<span class="dict-word cursor-pointer text-[#0071E3] font-black bg-blue-100/80 px-1 py-0.5 rounded border-b-2 border-[#0071E3] shadow-2xs transition-colors" data-word="${cleanWord}" onmouseenter="handleWordHover(event, '${cleanWord}')" onmouseleave="handleWordLeave()">${word}</span>`;
+                    return `<span class="dict-word cursor-pointer text-[#0071E3] font-black bg-blue-100/80 px-1 py-0.5 rounded border-b-2 border-[#0071E3] shadow-2xs transition-colors" data-word="${cleanWord}" data-target-word="1" onmouseenter="handleWordHover(event, '${cleanWord}')" onmouseleave="handleWordLeave()">${word}</span>`;
                 }
 
                 return part.replace(wordRegex, (match) => {
@@ -10291,10 +10778,12 @@ function cleanupMasteredMistakes() {
                     if (!markedTarget) {
                         if (variants.has(norm) || variants.has(normNoDot) || variants.has(normNoApos) || variants.has(cleanWord.toLowerCase())) {
                             isTarget = true;
+                            markedTarget = true;
                         } else if (norm.length >= 4) {
                             for (const v of sortedVars) {
                                 if (v.length >= 4 && (norm.startsWith(v) || v.startsWith(norm))) {
                                     isTarget = true;
+                                    markedTarget = true;
                                     break;
                                 }
                             }
@@ -10305,7 +10794,7 @@ function cleanupMasteredMistakes() {
                         ? 'text-[#0071E3] font-black bg-blue-100/80 px-1 py-0.5 rounded border-b-2 border-[#0071E3] shadow-2xs'
                         : 'text-slate-700 hover:text-[#0071E3] border-b border-dotted border-slate-300 hover:border-[#0071E3]';
                     
-                    return `<span class="dict-word cursor-pointer ${styleClass} transition-colors" data-word="${normNoDot}" onmouseenter="handleWordHover(event, '${normNoDot}')" onmouseleave="handleWordLeave()">${match}</span>`;
+                    return `<span class="dict-word cursor-pointer ${styleClass} transition-colors" data-word="${normNoDot}"${isTarget ? ' data-target-word="1"' : ''} onmouseenter="handleWordHover(event, '${normNoDot}')" onmouseleave="handleWordLeave()">${match}</span>`;
                 });
             }).join('');
         }
@@ -12186,8 +12675,9 @@ function cleanupMasteredMistakes() {
             const content = document.getElementById('word-detail-content');
             if (!content) return;
 
-            const w = item;
-            const parsed = splitPosAndZh(w.zh, w.pos);
+            const w = sanitizeWord(item);
+            window.currentDetailWordObj = w;
+            const parsed = splitPosAndZh(w.zh, w.pos, w.exampleZh, w.example, w.en, w.examplePos);
             const forms = computeWordForms(w.en, w.zh);
             const collocations = getWordCollocations(w.en, w);
             const synonyms = getWordSynonyms(w.en, w);
@@ -12466,9 +12956,10 @@ function cleanupMasteredMistakes() {
             }
 
             // 同義 / 反義詞區塊 HTML (精選詞庫優先；語意推估僅作參考並明確標示；支援游標懸停即時釋義浮動卡)
-            const relTag = (s, tone) => `
+            const relTag = (s, tone, relType = 'syn') => `
                 <button type="button" class="px-2.5 py-1 text-xs font-medium rounded-full bg-white ${tone} border shadow-2xs hover:bg-[#0071E3] hover:text-white hover:border-[#0071E3] active:scale-95 transition-all cursor-pointer" 
                         data-word="${esc(s)}" 
+                        data-rel-type="${relType}" 
                         onmouseenter="handleWordHover(event, '${esc(s)}')" 
                         onmouseleave="handleWordLeave()" 
                         onclick="handleWordPillClick(event, '${esc(s)}')">${esc(s)}</button>`;
@@ -12482,18 +12973,19 @@ function cleanupMasteredMistakes() {
                     ${synonyms.length ? `
                     <div class="flex items-start gap-2">
                         <span class="shrink-0 mt-1 text-[10px] font-bold px-1.5 py-0.5 rounded-md bg-blue-50 text-[#0071E3]">同義</span>
-                        <div class="flex flex-wrap gap-1.5">${synonyms.map(s => relTag(s, 'text-slate-700 border-slate-200')).join('')}</div>
+                        <div class="flex flex-wrap gap-1.5">${synonyms.map(s => relTag(s, 'text-slate-700 border-slate-200', 'syn')).join('')}</div>
                     </div>` : ''}
                     ${antonyms.length ? `
                     <div class="flex items-start gap-2">
                         <span class="shrink-0 mt-1 text-[10px] font-bold px-1.5 py-0.5 rounded-md bg-rose-50 text-rose-600">反義</span>
-                        <div class="flex flex-wrap gap-1.5">${antonyms.map(s => relTag(s, 'text-slate-700 border-slate-200')).join('')}</div>
+                        <div class="flex flex-wrap gap-1.5">${antonyms.map(s => relTag(s, 'text-slate-700 border-slate-200', 'ant')).join('')}</div>
                     </div>` : ''}
                     ${hasInferred ? `<p class="text-[10px] text-slate-400">＊部分同義詞依中文釋義比對推估，語境不同時可能無法直接替換</p>` : ''}
                 </div>
             ` : '';
 
             // 例句區塊 HTML
+            const detailExPos = getWordExamplePos(w, parsed);
             const exampleHtml = w.example ? `
                 <div class="bg-blue-50/40 p-3.5 rounded-2xl border border-blue-100">
                     <div class="flex items-center justify-between text-xs font-bold text-blue-900 mb-2">
@@ -12505,7 +12997,7 @@ function cleanupMasteredMistakes() {
                             <span>聆聽整句發音</span>
                         </button>
                     </div>
-                    <p class="text-gray-800 text-sm leading-relaxed mb-1 font-medium" id="detail-card-example">${renderClickableSentence(w.example, w.en)}</p>
+                    <p class="text-gray-800 text-sm leading-relaxed mb-1 font-medium" id="detail-card-example">${renderExamplePosBadgeHtml(detailExPos)}${renderClickableSentence(w.example, w.en)}</p>
                     <p class="text-gray-500 text-xs">${esc(w.exampleZh || '')}</p>
                 </div>
             ` : '';
@@ -12603,6 +13095,36 @@ function cleanupMasteredMistakes() {
                 <!-- 生活實用例句 -->
                 ${exampleHtml}
 
+                <!-- 個人學習備註 / 專屬記憶筆記 -->
+                ${(() => {
+                    const existingNote = getWordNote(w);
+                    return `
+                        <div class="user-note-card bg-amber-50/55 p-3.5 rounded-2xl border border-amber-200/80 space-y-2">
+                            <div class="flex items-center justify-between gap-2 flex-wrap">
+                                <div class="flex items-center gap-1.5 text-xs font-bold text-amber-900">
+                                    <span>📝</span>
+                                    <span>個人學習備註</span>
+                                    <span id="detail-word-note-status" class="text-[10px] font-medium px-1.5 py-0.5 rounded-full ${existingNote ? 'bg-emerald-100/90 text-emerald-700 dark:bg-emerald-950/70 dark:text-emerald-300' : 'text-amber-700/70 dark:text-slate-400'}">${existingNote ? '✓ 已儲存' : '自動儲存並同步'}</span>
+                                </div>
+                                <div class="flex items-center gap-1 flex-wrap">
+                                    <button type="button" data-note-tag="【諧音】" class="user-note-chip text-[10px] px-2 py-0.5 rounded-full bg-white text-amber-800 border border-amber-200 hover:bg-amber-100/80 transition cursor-pointer">+ 諧音</button>
+                                    <button type="button" data-note-tag="【易混淆】" class="user-note-chip text-[10px] px-2 py-0.5 rounded-full bg-white text-amber-800 border border-amber-200 hover:bg-amber-100/80 transition cursor-pointer">+ 易混淆</button>
+                                    <button type="button" data-note-tag="【搭配】" class="user-note-chip text-[10px] px-2 py-0.5 rounded-full bg-white text-amber-800 border border-amber-200 hover:bg-amber-100/80 transition cursor-pointer">+ 搭配</button>
+                                    <button type="button" data-note-tag="【考點】" class="user-note-chip text-[10px] px-2 py-0.5 rounded-full bg-white text-amber-800 border border-amber-200 hover:bg-amber-100/80 transition cursor-pointer">+ 考點</button>
+                                </div>
+                            </div>
+                            <textarea id="detail-word-note-input" rows="2" maxlength="500" placeholder="輸入你的專屬筆記（諧音聯想、易混淆字、常考片語或文法考點，打字即自動儲存並跨裝置雲端同步）..." class="w-full text-xs sm:text-sm bg-white/95 text-gray-800 rounded-xl px-3 py-2 border border-amber-200/90 focus:border-amber-500 focus:ring-2 focus:ring-amber-200/70 outline-none resize-y leading-relaxed transition-all">${esc(existingNote)}</textarea>
+                            <div class="flex items-center justify-between text-[11px] text-gray-400">
+                                <span id="detail-word-note-count">${existingNote.length} / 500 字</span>
+                                <div class="flex items-center gap-2">
+                                    <button type="button" id="btn-detail-note-clear" class="${existingNote ? '' : 'hidden '}text-rose-500 hover:text-rose-600 font-medium px-2 py-0.5 rounded-lg hover:bg-rose-50 dark:hover:bg-rose-950/40 transition cursor-pointer">清除</button>
+                                    <button type="button" id="btn-detail-note-save" class="bg-amber-500 hover:bg-amber-600 text-white font-semibold px-2.5 py-1 rounded-lg shadow-2xs active:scale-95 transition cursor-pointer">💾 儲存備註</button>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                })()}
+
                 <!-- 外部權威辭典與字庫操作 -->
                 ${externalDictHtml}
             `;
@@ -12628,6 +13150,79 @@ function cleanupMasteredMistakes() {
                 e.stopPropagation();
                 playWordExampleAudio(w.id, w.example);
             });
+
+            // 事件綁定：個人學習備註 (自動高度、400ms 防抖自動存檔、快捷標籤插入與手動儲存)
+            const noteInputEl = document.getElementById('detail-word-note-input');
+            const noteStatusEl = document.getElementById('detail-word-note-status');
+            const noteCountEl = document.getElementById('detail-word-note-count');
+            const btnNoteSave = document.getElementById('btn-detail-note-save');
+            const btnNoteClear = document.getElementById('btn-detail-note-clear');
+            if (noteInputEl) {
+                let noteDebounceTimer = null;
+                const autoResizeNote = () => {
+                    noteInputEl.style.height = 'auto';
+                    noteInputEl.style.height = Math.max(58, Math.min(200, noteInputEl.scrollHeight)) + 'px';
+                };
+                requestAnimationFrame(autoResizeNote);
+
+                const commitNoteSave = (immediate = false) => {
+                    if (noteDebounceTimer) {
+                        clearTimeout(noteDebounceTimer);
+                        noteDebounceTimer = null;
+                    }
+                    const saved = saveWordNote(w, noteInputEl.value, immediate);
+                    if (noteStatusEl) {
+                        noteStatusEl.textContent = saved ? '✓ 已儲存並同步' : '已清空備註';
+                        noteStatusEl.className = 'text-[10px] font-medium px-1.5 py-0.5 rounded-full bg-emerald-100/90 text-emerald-700 dark:bg-emerald-950/70 dark:text-emerald-300';
+                    }
+                    if (btnNoteClear) {
+                        btnNoteClear.classList.toggle('hidden', !saved);
+                    }
+                };
+
+                noteInputEl.addEventListener('input', () => {
+                    autoResizeNote();
+                    const len = noteInputEl.value.length;
+                    if (noteCountEl) noteCountEl.textContent = `${len} / 500 字`;
+                    if (noteStatusEl) {
+                        noteStatusEl.textContent = '編輯中...';
+                        noteStatusEl.className = 'text-[10px] font-medium px-1.5 py-0.5 rounded-full bg-amber-100 text-amber-800 dark:bg-amber-950/70 dark:text-amber-300';
+                    }
+                    if (noteDebounceTimer) clearTimeout(noteDebounceTimer);
+                    noteDebounceTimer = setTimeout(() => commitNoteSave(false), 450);
+                });
+
+                noteInputEl.addEventListener('blur', () => commitNoteSave(false));
+                noteInputEl.addEventListener('keydown', (e) => {
+                    e.stopPropagation();
+                    if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+                        e.preventDefault();
+                        commitNoteSave(true);
+                        noteInputEl.blur();
+                    }
+                });
+
+                btnNoteSave?.addEventListener('click', () => commitNoteSave(true));
+                btnNoteClear?.addEventListener('click', () => {
+                    noteInputEl.value = '';
+                    autoResizeNote();
+                    if (noteCountEl) noteCountEl.textContent = '0 / 500 字';
+                    commitNoteSave(true);
+                });
+
+                content.querySelectorAll('[data-note-tag]').forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        const tag = btn.getAttribute('data-note-tag') || '';
+                        const cur = noteInputEl.value;
+                        const prefix = (cur && !cur.endsWith('\n')) ? '\n' : '';
+                        noteInputEl.value = (cur + prefix + tag + ' ').slice(0, 500);
+                        noteInputEl.focus();
+                        autoResizeNote();
+                        if (noteCountEl) noteCountEl.textContent = `${noteInputEl.value.length} / 500 字`;
+                        commitNoteSave(false);
+                    });
+                });
+            }
 
             // 事件綁定：例句點擊查單字
             document.getElementById('detail-card-example')?.addEventListener('click', (e) => {
@@ -15617,6 +16212,480 @@ function cleanupMasteredMistakes() {
         }
         updateBlindModeUI();
 
+        // ==========================================
+        // 懸浮翻譯卡 (Tooltip) 語境詞性鎖定與保守精準釋義框選 (做法 3)
+        // 1. 優先鎖定當前例句的詞性整行加亮框 (結合句法結構與中文語意雙重評分，確保例句中每個單字皆能鎖定對應詞性列)
+        // 2. 僅在該詞性內有明確對應字詞 (完全匹配、詞幹匹配、單字元精確釋義或明確同素詞如「走過」↔「經過」) 時額外框出中文詞條；意譯對不上字時只框整行詞性，絕不亂框
+        // ==========================================
+        const TOOLTIP_ZH_STOP_CHARS = new Set('的地得著了過在不有是為與和或及之於以從到對向把被讓給使由比更最很太都也還又再就才只可要會能好大中小上下前後裡外內男女老少人我你他她它們個件種次位名兒篇座台輛張顆隻條份家門心手頭面方邊處國天年日時分秒點氣水火土金木風雨電光聲色事物語話文字書學工生發成作行動定開關出入來去見看聽說問答知想感覺愛喜怒哀樂快慢高低長短新舊多少全半正反真假同異難易明暗冷熱乾濕輕重深淺遠近早晚古今');
+
+        function extractTooltipContext(el, w) {
+            let contextPos = '';
+            let contextEn = '';
+            let contextZh = '';
+
+            if (el && typeof el.closest === 'function') {
+                const detailExEl = el.closest('#detail-card-example');
+                const cardExEl = !detailExEl ? el.closest('#card-example') : null;
+                const listenCardEl = (!detailExEl && !cardExEl) ? el.closest('.sentence-card') : null;
+
+                if (detailExEl) {
+                    const clone = detailExEl.cloneNode(true);
+                    clone.querySelectorAll('.example-pos-badge').forEach(b => b.remove());
+                    contextEn = (clone.textContent || '').trim();
+                    const zhSibling = detailExEl.nextElementSibling;
+                    if (zhSibling) contextZh = (zhSibling.textContent || '').trim();
+                    if (el.getAttribute('data-target-word') === '1') {
+                        const badgeEl = detailExEl.querySelector('.example-pos-badge');
+                        contextPos = badgeEl ? normalizePosToken(badgeEl.textContent) : (w ? getWordExamplePos(w) : '');
+                    }
+                } else if (cardExEl) {
+                    const clone = cardExEl.cloneNode(true);
+                    clone.querySelectorAll('.example-pos-badge').forEach(b => b.remove());
+                    contextEn = (clone.textContent || '').trim();
+                    const zhEl = document.getElementById('card-example-zh');
+                    if (zhEl) contextZh = (zhEl.textContent || '').trim();
+                    if (el.getAttribute('data-target-word') === '1') {
+                        const badgeEl = cardExEl.querySelector('.example-pos-badge');
+                        contextPos = badgeEl ? normalizePosToken(badgeEl.textContent) : (w ? getWordExamplePos(w) : '');
+                    }
+                } else if (listenCardEl) {
+                    const enEl = listenCardEl.querySelector('.en-text');
+                    const zhEl = listenCardEl.querySelector('.zh-text');
+                    if (enEl) contextEn = (enEl.textContent || '').trim();
+                    if (zhEl) contextZh = (zhEl.textContent || '').trim();
+                } else {
+                    // 若在單字詳解彈窗中懸停同義/反義詞膠囊，取當前詳解主單字之例句詞性與中文釋義作為比對語境
+                    const detailModal = el.closest('#word-detail-content') || el.closest('#word-detail-modal');
+                    if (detailModal && typeof window !== 'undefined' && window.currentDetailWordObj) {
+                        const parentW = window.currentDetailWordObj;
+                        contextPos = getWordExamplePos(parentW) || '';
+                        const relType = el.getAttribute && el.getAttribute('data-rel-type');
+                        if (relType !== 'ant') {
+                            contextZh = cleanText(parentW.zh || '');
+                        }
+                    }
+                }
+            }
+
+            if (!contextPos && w && w.example && contextEn) {
+                const wCleanEx = stripExamplePosPrefix(cleanText(w.example)).trim().toLowerCase();
+                if (wCleanEx && wCleanEx === contextEn.toLowerCase()) {
+                    contextPos = getWordExamplePos(w);
+                    if (!contextZh && w.exampleZh) contextZh = cleanText(w.exampleZh);
+                }
+            }
+
+            return { contextPos, contextEn, contextZh };
+        }
+
+        function getGrammarPosScores(surfaceWord, baseWord, posCandidates, sentence) {
+            const scores = {};
+            if (!posCandidates || !posCandidates.length) return scores;
+            posCandidates.forEach((p, i) => { scores[p] = (posCandidates.length - i) * 0.05; });
+            if (!sentence) return scores;
+
+            const cleanBase = String(baseWord || '').toLowerCase().trim();
+            const cleanSurf = String(surfaceWord || cleanBase).toLowerCase().trim().replace(/^[^\w']+|[^\w']+$/g, '');
+            const rawTokens = sentence.trim().split(/\s+/);
+            const tokens = rawTokens.map(raw => ({
+                raw,
+                clean: raw.replace(/^[^a-zA-Z0-9']+|[^a-zA-Z0-9']+$/g, '').toLowerCase(),
+                hasPunct: /[,.;:!?'"”’)\]]$/.test(raw)
+            })).filter(t => t.clean);
+
+            let idx = tokens.findIndex(t => t.clean === cleanSurf);
+            if (idx === -1) idx = tokens.findIndex(t => t.clean === cleanBase);
+            if (idx === -1 && cleanBase.length >= 3) {
+                idx = tokens.findIndex(t => t.clean.startsWith(cleanBase.slice(0, -1)));
+            }
+            if (idx === -1) return scores;
+
+            const tok = tokens[idx].clean;
+            const prev1 = idx > 0 ? tokens[idx - 1].clean : '';
+            const prev2 = idx > 1 ? tokens[idx - 2].clean : '';
+            const next1 = idx + 1 < tokens.length ? tokens[idx + 1].clean : '';
+            const prevHasPunct = idx > 0 ? tokens[idx - 1].hasPunct : true;
+            const prev2HasPunct = idx > 1 ? tokens[idx - 2].hasPunct : true;
+            const currHasPunct = tokens[idx].hasPunct;
+
+            const dets = new Set(['a', 'an', 'the', 'this', 'that', 'these', 'those', 'my', 'your', 'his', 'her', 'its', 'our', 'their', 'some', 'any', 'no', 'every', 'each', 'many', 'much', 'few', 'several', 'another']);
+            const pureModals = new Set(['can', 'could', 'will', 'would', 'shall', 'should', 'may', 'might', 'must', 'do', 'does', 'did', "don't", "doesn't", "didn't", "won't", "can't", 'cannot', "shouldn't", "wouldn't", "couldn't", "mustn't", 'please']);
+            const auxVerbs = new Set([...pureModals, 'have', 'has', 'had', "haven't", "hasn't", "hadn't", 'am', 'is', 'are', 'was', 'were', 'be', 'been', 'being', "isn't", "aren't", "wasn't", "weren't"]);
+            const subjPron = new Set(['i', 'you', 'he', 'she', 'it', 'we', 'they', 'who', 'there']);
+            const objPron = new Set(['me', 'you', 'him', 'her', 'it', 'us', 'them', 'whom']);
+            const allPersonalPron = new Set(['i', 'you', 'he', 'she', 'it', 'we', 'they', 'me', 'him', 'us', 'them', 'myself', 'yourself', 'himself', 'herself', 'itself', 'ourselves', 'themselves', 'someone', 'anyone', 'everyone', 'nobody', 'somebody', 'anybody', 'everybody', 'something', 'anything', 'everything', 'nothing', 'who', 'whom', 'mine', 'yours', 'hers', 'ours', 'theirs']);
+            const possDets = new Set(['my', 'your', 'our', 'their', 'its', 'whose']);
+            const beLinking = new Set(['am', 'is', 'are', 'was', 'were', 'be', 'been', 'being', 'feel', 'feels', 'felt', 'look', 'looks', 'looked', 'seem', 'seems', 'seemed', 'become', 'becomes', 'became', 'get', 'gets', 'got', 'sound', 'sounds', 'stay', 'stays', 'keep', 'keeps']);
+            const preps = new Set(['in', 'on', 'at', 'of', 'for', 'with', 'about', 'into', 'through', 'before', 'after', 'above', 'below', 'from', 'up', 'down', 'out', 'off', 'over', 'under', 'by', 'without', 'along', 'across', 'behind', 'around', 'near', 'among', 'towards', 'toward', 'upon', 'beside', 'despite', 'except', 'inside', 'outside', 'past', 'since', 'until', 'as', 'like', 'than', 'between', 'against', 'during', 'within', 'beyond']);
+            const pureConjs = new Set(['and', 'or', 'but', 'nor', 'yet', 'because', 'although', 'though', 'unless', 'while', 'whereas', 'whether', 'if']);
+            const commonAdverbs = new Set(['just', 'now', 'here', 'there', 'today', 'yesterday', 'tomorrow', 'again', 'too', 'also', 'very', 'so', 'only', 'even', 'still', 'already', 'always', 'never', 'often', 'sometimes', 'usually', 'seldom', 'ever', 'soon', 'early', 'late', 'fast', 'hard', 'well', 'much', 'more', 'most', 'quite', 'rather', 'almost', 'nearly', 'enough', 'together', 'alone', 'away', 'back', 'ago', 'ahead', 'abroad', 'home']);
+            const clauseIntroVerbsOrAdjs = new Set(['prove', 'proved', 'proven', 'proves', 'know', 'knew', 'known', 'knows', 'think', 'thought', 'thinks', 'say', 'said', 'says', 'believe', 'believed', 'believes', 'hope', 'hoped', 'hopes', 'see', 'saw', 'seen', 'sees', 'show', 'showed', 'shown', 'shows', 'find', 'found', 'finds', 'mean', 'meant', 'means', 'suggest', 'suggested', 'realize', 'realized', 'notice', 'noticed', 'hear', 'heard', 'feared', 'fear', 'wish', 'wished', 'ensure', 'imagine', 'suppose', 'assume', 'doubt', 'remember', 'forget', 'forgot', 'learn', 'learned', 'discover', 'discovered', 'explain', 'explained', 'promise', 'promised', 'warn', 'warned', 'tell', 'told', 'convince', 'convinced', 'inform', 'informed', 'sure', 'certain', 'glad', 'happy', 'afraid', 'sorry', 'aware', 'confident', 'proud', 'surprised', 'worried', 'clear', 'obvious', 'true', 'important', 'necessary', 'possible', 'likely']);
+
+            const isNextClauseBoundary = currHasPunct || !next1 || preps.has(next1) || pureConjs.has(next1) || auxVerbs.has(next1) || beLinking.has(next1) || subjPron.has(next1) || commonAdverbs.has(next1) || next1.endsWith('ly');
+
+            const add = (grp, d) => {
+                posCandidates.forEach(p => {
+                    const subParts = String(p || '').split('/').map(s => s.trim());
+                    let matched = false;
+                    for (const sp of subParts) {
+                        if (grp === 'AUX' && sp === 'aux.') matched = true;
+                        else if (grp === 'V' && (sp === 'v.' || sp === 'vt.' || sp === 'vi.' || sp === 'aux.')) matched = true;
+                        else if (grp === 'MAIN_V' && (sp === 'v.' || sp === 'vt.' || sp === 'vi.')) matched = true;
+                        else if (grp === 'N' && (sp === 'n.' || sp === 'pl.')) matched = true;
+                        else if (grp === 'PRON' && sp === 'pron.') matched = true;
+                        else if (grp === 'DET' && sp === 'det.') matched = true;
+                        else if (grp === 'ADJ' && (sp === 'adj.' || sp === 'det.' || sp === 'num.')) matched = true;
+                        else if (grp === 'PURE_ADJ' && sp === 'adj.') matched = true;
+                        else if (grp === 'ADV' && sp === 'adv.') matched = true;
+                        else if (grp === 'PREP' && sp === 'prep.') matched = true;
+                        else if (grp === 'CONJ' && sp === 'conj.') matched = true;
+                    }
+                    if (matched) scores[p] += d;
+                });
+            };
+
+            // 1. 詞彙本身屬性規則 (代名詞、助動詞、指示詞、連接詞、介系詞)
+            if (allPersonalPron.has(tok) || allPersonalPron.has(cleanBase)) {
+                add('PRON', 8);
+            }
+            if (possDets.has(tok) || possDets.has(cleanBase)) {
+                add('DET', 7.5);
+                add('ADJ', 5.5);
+                add('PRON', 4);
+            }
+            if (tok === 'her') {
+                if (isNextClauseBoundary) add('PRON', 7);
+                else { add('DET', 6.5); add('ADJ', 5); }
+            }
+
+            // 連接詞 / 指示代名詞 / 指示限定詞 that / this / these / those
+            if (tok === 'that') {
+                const prevIsNounClauseTrigger = clauseIntroVerbsOrAdjs.has(prev1) || (idx >= 2 && objPron.has(prev1) && clauseIntroVerbsOrAdjs.has(prev2)) || prev1 === 'so' || prev1 === 'such' || prev1 === 'now' || prev1 === 'in' || prev1 === 'except';
+                const nextStartsClause = subjPron.has(next1) || dets.has(next1) || allPersonalPron.has(next1) || (idx + 2 < tokens.length && (auxVerbs.has(tokens[idx + 2].clean) || beLinking.has(tokens[idx + 2].clean)));
+                if (!prevHasPunct && (prevIsNounClauseTrigger || nextStartsClause)) {
+                    add('CONJ', 8.5);
+                } else if (auxVerbs.has(next1) || beLinking.has(next1) || currHasPunct || !next1 || preps.has(next1) || pureConjs.has(next1)) {
+                    add('PRON', 7);
+                } else {
+                    add('DET', 6.5);
+                    add('ADJ', 5.5);
+                }
+            } else if (tok === 'this' || tok === 'these' || tok === 'those') {
+                if (auxVerbs.has(next1) || beLinking.has(next1) || currHasPunct || !next1 || preps.has(next1) || pureConjs.has(next1) || (next1 && next1.endsWith('s') && !dets.has(prev1))) {
+                    add('PRON', 7.5);
+                } else {
+                    add('DET', 6.5);
+                    add('ADJ', 5.5);
+                }
+            }
+
+            // 助動詞與情態動詞 (如 Can you..., You can..., This is...)
+            if (auxVerbs.has(tok) || auxVerbs.has(cleanBase)) {
+                const precededByDetOrAdj = !prevHasPunct && (dets.has(prev1) || (idx >= 2 && dets.has(prev2) && !prev2HasPunct));
+                if (precededByDetOrAdj) {
+                    add('N', 7.5);
+                } else {
+                    add('AUX', 6.5);
+                    add('MAIN_V', 6.0);
+                    add('N', -5.0);
+                }
+            }
+
+            if (pureConjs.has(tok)) {
+                add('CONJ', 7.5);
+            }
+
+            if (preps.has(tok)) {
+                if (!prevHasPunct && dets.has(prev1) && isNextClauseBoundary) {
+                    add('N', 6.5);
+                } else if (!currHasPunct && next1 && (dets.has(next1) || objPron.has(next1) || allPersonalPron.has(next1) || !isNextClauseBoundary || next1.endsWith('ing'))) {
+                    add('PREP', 6.5);
+                } else if (currHasPunct || !next1) {
+                    add('ADV', 5.5);
+                }
+            }
+
+            // 2. 句法位置與詞形變化規則
+            if (tok !== cleanBase) {
+                if (tok.endsWith('ed') || tok.endsWith('ing')) {
+                    if (dets.has(prev1) && !prevHasPunct && !isNextClauseBoundary) {
+                        add('PURE_ADJ', 5);
+                    } else if (beLinking.has(prev1) && !prevHasPunct && tok.endsWith('ed') && (currHasPunct || !next1 || (preps.has(next1) && next1 !== 'by'))) {
+                        add('PURE_ADJ', 5);
+                        add('MAIN_V', 4);
+                    } else {
+                        add('MAIN_V', 5.5);
+                    }
+                } else if (tok.endsWith('s') || tok.endsWith('es')) {
+                    if ((dets.has(prev1) || preps.has(prev1)) && !prevHasPunct) add('N', 5.5);
+                    else if (subjPron.has(prev1) && !prevHasPunct) add('MAIN_V', 6);
+                }
+            }
+
+            if ((pureModals.has(prev1) || prev1 === 'to' || subjPron.has(prev1)) && !prevHasPunct) {
+                if (!(prev1 === 'to' && (dets.has(tok) || allPersonalPron.has(tok)))) {
+                    add('MAIN_V', 6.5);
+                }
+            }
+
+            if (dets.has(prev1) && !prevHasPunct && prev1 !== 'that') {
+                if (isNextClauseBoundary) {
+                    add('N', 6.5);
+                } else {
+                    add('PURE_ADJ', 4.5);
+                    add('N', 2.5);
+                }
+            } else if (prev1 === 'that' && !prevHasPunct && !clauseIntroVerbsOrAdjs.has(prev2)) {
+                if (isNextClauseBoundary && !auxVerbs.has(tok) && !beLinking.has(tok)) {
+                    add('N', 5.5);
+                }
+            }
+
+            // det + adj + NOUN 結構 (如 a cold can of juice)
+            if (idx >= 2 && dets.has(prev2) && !prev2HasPunct && !prevHasPunct && !auxVerbs.has(prev1) && !preps.has(prev1) && isNextClauseBoundary) {
+                add('N', 6.0);
+            }
+
+            if (preps.has(prev1) && prev1 !== 'to' && !prevHasPunct) {
+                if (isNextClauseBoundary) add('N', 5.5);
+            }
+
+            if (beLinking.has(prev1) && !prevHasPunct) {
+                if (commonAdverbs.has(tok) || tok.endsWith('ly') || tok === 'not') {
+                    add('ADV', 6);
+                } else if (isNextClauseBoundary && !dets.has(tok) && !allPersonalPron.has(tok)) {
+                    add('PURE_ADJ', 6);
+                }
+            }
+            if (idx >= 2 && beLinking.has(prev2) && !prev2HasPunct && !prevHasPunct && (commonAdverbs.has(prev1) || prev1.endsWith('ly') || prev1 === 'not') && isNextClauseBoundary) {
+                add('PURE_ADJ', 6);
+            }
+
+            if (commonAdverbs.has(tok) || (tok.endsWith('ly') && !dets.has(prev1))) {
+                add('ADV', 5.0);
+            } else if ((currHasPunct || !next1) && !dets.has(prev1) && !preps.has(prev1) && !beLinking.has(prev1) && !subjPron.has(prev1) && !auxVerbs.has(prev1) && prev1 !== 'to') {
+                add('ADV', 4.0);
+            }
+
+            return scores;
+        }
+
+        function inferContextualPosForTooltip(surfaceWord, baseWord, posCandidates, sentence) {
+            if (!posCandidates || posCandidates.length === 0) return '';
+            if (posCandidates.length === 1) return posCandidates[0];
+            const scores = getGrammarPosScores(surfaceWord, baseWord, posCandidates, sentence);
+            let best = posCandidates[0], max = -Infinity;
+            for (const p of posCandidates) {
+                if ((scores[p] ?? -Infinity) > max) {
+                    max = scores[p];
+                    best = p;
+                }
+            }
+            return best;
+        }
+
+        function scoreTermsInPosText(posText, contextZh) {
+            const parts = String(posText || '').split(/([、，,；;／/]+)/);
+            const cleanExZh = String(contextZh || '').replace(/[^\u4e00-\u9fa5a-zA-Z0-9]/g, '');
+            const termInfos = [];
+
+            for (let i = 0; i < parts.length; i += 2) {
+                const rawTerm = parts[i];
+                const core = rawTerm
+                    .replace(/[\(（][^）\)]*[\)）]/g, '')
+                    .replace(/[…\.]+/g, '')
+                    .trim();
+                let score = 0;
+
+                if (core && cleanExZh) {
+                    // Level 1A：>= 2 字完全字面匹配
+                    if (core.length >= 2 && cleanExZh.includes(core)) {
+                        score = 100 + core.length * 10;
+                    } else if (core.length >= 3 && /[的地得]$/.test(core)) {
+                        // Level 1B：去除詞尾「的/地/得」後 >= 2 字完全匹配，或 3 字形容詞「XY的」對應例句「X的」（如「真實的」↔「真的」）
+                        const stem = core.slice(0, -1);
+                        if (stem.length >= 2 && cleanExZh.includes(stem)) {
+                            score = 92 + stem.length * 10;
+                        } else if (core.length === 3 && (cleanExZh.includes(core[0] + core[2]) || cleanExZh.includes(core[1] + core[2]))) {
+                            score = 86;
+                        }
+                    } else if (core.length >= 3 && /^(?:使|令|讓|感到|覺得|保持|變得|成為)/.test(core)) {
+                        // Level 1C：去除使動/感受前綴後 >= 2 字完全匹配
+                        const stem = core.replace(/^(?:使|令|讓|感到|覺得|保持|變得|成為)/, '');
+                        if (stem.length >= 2 && cleanExZh.includes(stem)) {
+                            score = 88 + stem.length * 10;
+                        }
+                    } else if (core.length >= 3 && /(?:出|開|下|上|起|來|去|於|之)$/.test(core)) {
+                        const stem2 = core.slice(0, -1);
+                        if (stem2.length >= 2 && cleanExZh.includes(stem2)) {
+                            score = 85;
+                        }
+                    } else if (core.length === 1 && /[\u4e00-\u9fa5]/.test(core)) {
+                        // Level 1E：字典中獨立列出之單字元釋義（如「能」、「你」、「這」、「是」、「走」）直接命中例句
+                        if (cleanExZh.includes(core)) {
+                            score = 78;
+                        }
+                    } else if (core.length === 2) {
+                        // Level 2：保守雙字詞同素/詞幹匹配
+                        const c1 = core[0];
+                        const c2 = core[1];
+                        if (c2 === '的' && cleanExZh.includes(c1)) {
+                            // 所有格/指示詞省略「的」（如「你的」↔「你家」）
+                            score = 68;
+                        } else if ((core === '經過' || core === '穿過' || core === '越過' || core === '跨過' || core === '繞過' || core === '透過' || core === '超過' || core === '度過') &&
+                            /[走跑路行通穿跨越繞飛游開騎度擦掠超透]過/.test(cleanExZh)) {
+                            score = 64;
+                        } else if (
+                            (core === '能夠' && cleanExZh.includes('能')) ||
+                            (core === '這個' && cleanExZh.includes('這')) ||
+                            (core === '那個' && cleanExZh.includes('那')) ||
+                            ((core === '應該' || core === '應當') && cleanExZh.includes('該')) ||
+                            (core === '可以' && cleanExZh.includes('可')) ||
+                            (core === '必須' && (cleanExZh.includes('必') || cleanExZh.includes('須'))) ||
+                            ((core === '將要' || core === '將會') && cleanExZh.includes('將')) ||
+                            (core === '正在' && cleanExZh.includes('正')) ||
+                            (core === '已經' && cleanExZh.includes('已'))
+                        ) {
+                            score = 62;
+                        } else if (!TOOLTIP_ZH_STOP_CHARS.has(c1) && cleanExZh.includes(c1)) {
+                            score = 54;
+                        } else if (!TOOLTIP_ZH_STOP_CHARS.has(c2) && cleanExZh.includes(c2)) {
+                            score = 52;
+                        }
+                    }
+                }
+                termInfos.push({ partIdx: i, rawTerm, core, score });
+            }
+
+            const maxScore = termInfos.reduce((m, t) => Math.max(m, t.score), 0);
+            return { parts, termInfos, maxScore };
+        }
+
+        function highlightMatchedTermsInPosText(posText, contextZh) {
+            if (!posText) return '';
+            if (!contextZh || !contextZh.trim()) return esc(posText);
+
+            const { parts, termInfos, maxScore } = scoreTermsInPosText(posText, contextZh);
+            if (maxScore <= 0) return esc(posText);
+
+            const highlightedPartIndices = new Set();
+
+            if (maxScore >= 85) {
+                // 具備明確完全匹配或詞幹匹配字詞：框出 >=85 分且非冗餘子字串之詞條
+                const topTerms = termInfos.filter(t => t.score >= 85).sort((a, b) => b.score - a.score);
+                const acceptedCores = [];
+                for (const t of topTerms) {
+                    if (!acceptedCores.some(ac => ac.includes(t.core) || t.core.includes(ac))) {
+                        highlightedPartIndices.add(t.partIdx);
+                        acceptedCores.push(t.core);
+                    }
+                }
+            } else if (maxScore >= 75) {
+                // 獨立單字元釋義命中（如「能」、「你」、「這」、「是」、「走」）：框出該詞性列中順位第一之單字元釋義
+                const exact1CharHits = termInfos.filter(t => t.score >= 75);
+                if (exact1CharHits.length > 0) {
+                    highlightedPartIndices.add(exact1CharHits[0].partIdx);
+                }
+            } else if (maxScore >= 60) {
+                // 明確同素結構匹配（如「走過」↔「經過」、「你家」↔「你的」、「能」↔「能夠」）
+                const highLevel2Hits = termInfos.filter(t => t.score === maxScore);
+                if (highLevel2Hits.length > 0) {
+                    highlightedPartIndices.add(highLevel2Hits[0].partIdx);
+                }
+            } else if (maxScore >= 50) {
+                // 保守一般同素匹配：僅在該詞性列中「唯一 1 個詞條」命中時才框出，若有多個詞條模糊命中則不框單字（寧可少框絕不框錯）
+                const level2Hits = termInfos.filter(t => t.score >= 50);
+                if (level2Hits.length === 1) {
+                    highlightedPartIndices.add(level2Hits[0].partIdx);
+                }
+            }
+
+            if (highlightedPartIndices.size === 0) {
+                return esc(posText);
+            }
+
+            return parts.map((part, idx) => {
+                if (idx % 2 === 0 && highlightedPartIndices.has(idx)) {
+                    return `<span class="bg-amber-400/25 text-amber-200 border border-amber-300/75 px-1 py-0.2 rounded font-bold shadow-2xs">${esc(part)}</span>`;
+                }
+                return esc(part);
+            }).join('');
+        }
+
+        function renderTooltipZhHtml(w, el, surfaceWord) {
+            if (!w || !w.zh) return '';
+            sanitizeWord(w);
+            const { contextPos, contextEn, contextZh } = extractTooltipContext(el, w);
+            // 僅將確定之目標詞性 contextPos 傳入 splitPosAndZh；非目標詞改由下方「句法＋中文語意聯合評分」鎖定，避免純文字比對誤判詞性
+            const parsed = splitPosAndZh(w.zh, w.pos, '', contextEn, w.en, contextPos);
+            const items = (parsed && parsed.items && parsed.items.length > 0) ? parsed.items : [{ pos: '', text: w.zh, matchedExample: false }];
+
+            let hasLockedPos = Boolean(parsed && parsed.hasExampleMatch);
+
+            if (!hasLockedPos && items.length > 1 && (contextEn || contextZh)) {
+                const posList = items.map(it => it.pos || '');
+                const gramScores = getGrammarPosScores(surfaceWord, w.en, posList, contextEn);
+
+                let bestItem = items[0];
+                let bestTotal = -Infinity;
+
+                items.forEach((it, idx) => {
+                    const gScore = gramScores[it.pos || ''] ?? ((items.length - idx) * 0.05);
+                    const { maxScore: termMax } = scoreTermsInPosText(it.text, contextZh);
+                    let zhBonus = 0;
+                    if (termMax >= 120) zhBonus = 8.0 + (termMax - 100) * 0.05;
+                    else if (termMax >= 85) zhBonus = 6.5;
+                    else if (termMax >= 75) zhBonus = 5.0;
+                    else if (termMax >= 60) zhBonus = 3.5;
+                    else if (termMax >= 50) zhBonus = 1.2;
+
+                    const total = gScore + zhBonus;
+                    if (total > bestTotal) {
+                        bestTotal = total;
+                        bestItem = it;
+                    }
+                });
+
+                if (bestItem) {
+                    bestItem.matchedExample = true;
+                    hasLockedPos = true;
+                }
+            }
+
+            if (!hasLockedPos && items.length === 1 && (contextPos || contextEn || contextZh)) {
+                items[0].matchedExample = true;
+                hasLockedPos = true;
+            }
+
+            return `<div class="mt-1.5 space-y-1">${items.map(it => {
+                const posLabel = it.pos ? esc(it.pos.toLowerCase()) : '';
+                if (hasLockedPos && it.matchedExample) {
+                    const innerZhHtml = highlightMatchedTermsInPosText(it.text, contextZh);
+                    return `
+                        <div class="flex items-baseline gap-1.5 text-xs leading-relaxed bg-teal-500/15 border border-teal-400/60 rounded-lg px-2 py-1 text-white font-medium shadow-2xs">
+                            ${posLabel ? `<span class="font-mono text-[11px] font-bold px-1.5 py-0.2 rounded bg-teal-400 text-gray-950 lowercase shrink-0 select-none">${posLabel}</span>` : ''}
+                            <span class="break-words">${innerZhHtml}</span>
+                        </div>
+                    `;
+                } else if (hasLockedPos) {
+                    return `
+                        <div class="flex items-baseline gap-1.5 text-xs leading-relaxed px-2 py-0.5 text-gray-300/80 font-normal">
+                            ${posLabel ? `<span class="font-mono text-[11px] font-semibold text-teal-300/75 lowercase shrink-0 select-none">${posLabel}</span>` : ''}
+                            <span class="break-words">${esc(it.text)}</span>
+                        </div>
+                    `;
+                } else {
+                    return `
+                        <div class="flex items-baseline gap-1.5 text-xs leading-relaxed px-1 py-0.5 text-gray-100 font-medium">
+                            ${posLabel ? `<span class="font-mono text-[11px] font-semibold text-teal-300 lowercase shrink-0 select-none">${posLabel}</span>` : ''}
+                            <span class="break-words">${esc(it.text)}</span>
+                        </div>
+                    `;
+                }
+            }).join('')}</div>`;
+        }
+
         // 顯示單字翻譯的 tooltip 並直接發音 (支援 autoPlay=false 之懸停模式)
         function showWordTranslation(e, wordText, autoPlay = true) {
             if (e && typeof e.stopPropagation === 'function') {
@@ -15648,7 +16717,8 @@ function cleanupMasteredMistakes() {
             // 在字庫中尋找單字 (正規化字串與常見詞尾還原)
             let cleanWordText = String(wordText || '').toLowerCase().trim().replace(/^[^\w]+|[^\w]+$/g, '');
             if (!cleanWordText) return;
-            let w = vocabularyDB.find(x => x.en.toLowerCase() === cleanWordText);
+            let w = (typeof currentUnit !== 'undefined' && currentUnit ? vocabularyDB.find(x => x.unit === currentUnit && x.en.toLowerCase() === cleanWordText) : null) ||
+                    vocabularyDB.find(x => x.en.toLowerCase() === cleanWordText);
             
             // 如果找不到，嘗試簡單的字尾還原 (去複數、去過去式、去 ing 等)
             if (!w) {
@@ -15693,7 +16763,8 @@ function cleanupMasteredMistakes() {
                 if (cleanWordText.endsWith('er')) stems.push(cleanWordText.slice(0, -2), cleanWordText.slice(0, -2) + 'e', cleanWordText.slice(0, -3));
                 
                 for (const stem of stems) {
-                    w = vocabularyDB.find(x => x.en.toLowerCase() === stem);
+                    w = (typeof currentUnit !== 'undefined' && currentUnit ? vocabularyDB.find(x => x.unit === currentUnit && x.en.toLowerCase() === stem) : null) ||
+                        vocabularyDB.find(x => x.en.toLowerCase() === stem);
                     if (w) break;
                 }
             }
@@ -15710,7 +16781,7 @@ function cleanupMasteredMistakes() {
                 tooltip.id = 'word-tooltip';
                 document.body.appendChild(tooltip);
             }
-            tooltip.className = 'fixed bg-gray-900/95 text-white text-sm px-3.5 py-2.5 rounded-xl shadow-2xl z-[9999] pointer-events-auto transition-opacity duration-200 opacity-0 max-w-xs border border-gray-700/80 backdrop-blur-md select-none';
+            tooltip.className = 'fixed bg-gray-900/95 text-white text-sm px-3.5 py-2.5 rounded-xl shadow-2xl z-[9999] pointer-events-auto transition-opacity duration-200 opacity-0 max-w-xs sm:max-w-sm border border-gray-700/80 backdrop-blur-md select-none';
             
             const safeSpeak = esc(speakWord).replace(/'/g, "\\'");
             const safeWord = esc(cleanWordText).replace(/'/g, "\\'");
@@ -15733,6 +16804,7 @@ function cleanupMasteredMistakes() {
 
             if (w) {
                 const isAlreadyCustom = (typeof customWordsDB !== 'undefined' && customWordsDB.some(cw => cw.en.toLowerCase() === cleanWordText));
+                const surfaceWord = (el && el.textContent) ? el.textContent.trim() : cleanWordText;
                 tooltip.innerHTML = `
                     <div class="flex items-center justify-between gap-3">
                         <div class="flex items-center gap-1.5 flex-wrap">
@@ -15744,7 +16816,7 @@ function cleanupMasteredMistakes() {
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
                         </button>
                     </div>
-                    <div class="mt-1 text-xs text-gray-100 font-medium">${esc(w.zh)}</div>
+                    ${renderTooltipZhHtml(w, el, surfaceWord)}
                     <div class="mt-2 pt-1.5 border-t border-gray-700/60 flex items-center justify-between gap-1.5 flex-wrap">
                         <div class="flex items-center gap-1.5">
                             ${annotateBtnHtml}

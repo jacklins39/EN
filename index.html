@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261113V2';
+        const APP_BUILD_VERSION = '20261113V3';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -204,34 +204,39 @@
             #study-queue-strip {
                 display: none !important;
             }
-            /* 手機版卡片一體全覽高度：核心釋義與情境例句垂直並列同框，零手動切換 */
+            /* 手機版與窄平板 (< 1024px) 動態自適應基準高度，實際高度由 syncFlashcardHeight() 依內容動態撐開 */
             .flip-card {
-                height: 310px !important;
+                height: 245px;
+                min-height: 185px;
+            }
+            .flip-card.flipped {
+                min-height: 360px;
             }
             #view-study.quiz-options-active .flip-card:not(.flipped),
             #view-study:has(#quiz-options:not(.hidden)) .flip-card:not(.flipped) {
-                height: 185px !important;
+                height: 185px;
             }
         }
         @media (min-width: 1024px) {
             .mobile-tab-hidden {
                 display: block !important;
             }
-            /* 1. 電腦版自動輪播模式：單欄置中 + 單字列車佇列，卡片緊湊 235px 消滅多餘留白 */
+            /* 1. 電腦版自動輪播模式：單欄置中 + 單字列車佇列，基準 235px 並支援翻面動態撐開 */
             #view-study.auto-play-layout .flip-card {
-                height: 235px !important;
+                height: 235px;
+                min-height: 235px;
             }
-            /* 2. 電腦版測驗/練習/複習模式：卡片給予充裕自適應高度，徹底杜絕擠壓 */
+            /* 2. 電腦版測驗/練習/複習模式：卡片給予充裕基準高度並隨背面內容動態延伸 */
             #view-study:not(.auto-play-layout) #flashcard,
             #view-study:not(.auto-play-layout) .flip-card {
-                min-height: 350px !important;
-                height: auto !important;
+                min-height: 350px;
+                height: 350px;
             }
             #view-study:not(.auto-play-layout) .flip-card-inner,
             #view-study:not(.auto-play-layout) .flip-card-front,
             #view-study:not(.auto-play-layout) .flip-card-back {
-                min-height: 350px !important;
-                height: auto !important;
+                min-height: 350px;
+                height: 100%;
             }
             /* 在左右雙欄練習模式下，卡片寬度約 450px，背面內容採自然垂直流暢堆疊（避免卡內再硬拆雙欄導致按鈕折行擠扁） */
             #view-study:not(.auto-play-layout) .flip-card-back > div.lg\:grid {
@@ -242,10 +247,6 @@
             #view-study:not(.auto-play-layout) #example-container {
                 margin-top: 0.35rem !important;
             }
-            /* 預設非特殊情況卡片高度 */
-            .flip-card {
-                height: 235px;
-            }
             .flip-card-back {
                 overflow-y: auto !important;
             }
@@ -255,13 +256,13 @@
             background-color: transparent;
             perspective: 1000px;
             width: 100%;
-            height: 285px; /* 緊湊黃金高度：消滅卡片多餘留白，讓下方佇列導航順勢上移 */
+            height: 245px;
             transition: height 0.25s cubic-bezier(0.4, 0, 0.2, 1);
         }
         /* 當 4 選 1 作答模式且正面等待答題時，適度調降卡片高度以留出充裕空間展示作答選項 */
         #view-study.quiz-options-active .flip-card:not(.flipped),
         #view-study:has(#quiz-options:not(.hidden)) .flip-card:not(.flipped) {
-            height: 200px;
+            height: 185px;
         }
         /* 手機版練習時精準鎖定視窗高度與頂部定位，隱藏訪客橫幅避免擠壓作答區 */
         body:has(#view-study:not(.hidden)) #sync-banner {
@@ -272,20 +273,20 @@
                 min-height: 100dvh;
             }
         }
-        @media (min-width: 640px) {
+        @media (min-width: 640px) and (max-width: 1023px) {
             .flip-card {
-                height: 250px !important;
+                height: 255px;
             }
             #view-study.quiz-options-active .flip-card:not(.flipped),
             #view-study:has(#quiz-options:not(.hidden)) .flip-card:not(.flipped) {
-                height: 210px !important;
+                height: 205px;
             }
         }
         @media (min-width: 1024px) {
-            /* 電腦版練習模式下維持 340px 高度，不需如同手機版縮小至 215px（因為選項在右側並非下方） */
+            /* 電腦版練習模式下維持 350px 以上動態高度 */
             #view-study:not(.auto-play-layout).quiz-options-active .flip-card:not(.flipped),
             #view-study:not(.auto-play-layout):has(#quiz-options:not(.hidden)) .flip-card:not(.flipped) {
-                height: 340px !important;
+                min-height: 350px;
             }
         }
 
@@ -2430,7 +2431,7 @@
                 column-gap: 2rem; align-items: start;
             }
             #view-study:not(.auto-play-layout) > :first-child { grid-column: 1 / -1; }
-            #view-study:not(.auto-play-layout) > #flashcard { grid-column: 1; grid-row: 2; min-height: 350px !important; height: auto !important; }
+            #view-study:not(.auto-play-layout) > #flashcard { grid-column: 1; grid-row: 2; min-height: 350px !important; }
             #view-study:not(.auto-play-layout) > #quiz-options,
             #view-study:not(.auto-play-layout) > #action-show-answer,
             #view-study:not(.auto-play-layout) > #action-next,
@@ -2977,7 +2978,7 @@
                         </div>
 
                         <!-- 雙態佈局容器：手機端由 Tab 切換，電腦端自動展開為左右雙欄 (lg:grid lg:grid-cols-2) -->
-                        <div class="w-full lg:grid lg:grid-cols-2 lg:gap-6 lg:items-start">
+                        <div id="card-back-content" class="w-full lg:grid lg:grid-cols-2 lg:gap-6 lg:items-start">
                             
                             <!-- 核心釋義區塊 (手機 Tab 1 / 電腦左欄) -->
                             <div id="card-panel-def" class="w-full">
@@ -6995,6 +6996,79 @@ function cleanupMasteredMistakes() {
             scrollToPageTop('view-study');
         }
 
+        // 動態量測單字卡正/反面實際內容高度並平滑撐開卡片 (徹底告別截斷與內部滾動條)
+        let _flashcardResizeObserver = null;
+        let _flashcardSyncRaf = 0;
+        function scheduleSyncFlashcardHeight() {
+            if (_flashcardSyncRaf) cancelAnimationFrame(_flashcardSyncRaf);
+            _flashcardSyncRaf = requestAnimationFrame(() => {
+                _flashcardSyncRaf = 0;
+                syncFlashcardHeight();
+            });
+        }
+        function syncFlashcardHeight() {
+            const card = document.getElementById('flashcard');
+            if (!card || card.offsetParent === null) return;
+            const studyViewEl = document.getElementById('view-study');
+            const isFlipped = card.classList.contains('flipped');
+            const isAutoPlay = !!(studyViewEl && studyViewEl.classList.contains('auto-play-layout'));
+            const qOptsEl = document.getElementById('quiz-options');
+            const isQuizFront = !isFlipped && !!(studyViewEl && (studyViewEl.classList.contains('quiz-options-active') || (qOptsEl && !qOptsEl.classList.contains('hidden'))));
+            const vw = window.innerWidth;
+            const isDesktop = vw >= 1024;
+            const isSm = vw >= 640;
+
+            if (isFlipped) {
+                const cardBack = card.querySelector('.flip-card-back');
+                const backContent = document.getElementById('card-back-content');
+                if (!cardBack) return;
+                const cs = getComputedStyle(cardBack);
+                const padV = (parseFloat(cs.paddingTop) || 12) + (parseFloat(cs.paddingBottom) || 12);
+                const borderV = (parseFloat(cs.borderTopWidth) || 2) + (parseFloat(cs.borderBottomWidth) || 2);
+                const contentH = backContent ? backContent.offsetHeight : cardBack.scrollHeight;
+                const minBackH = (isDesktop && !isAutoPlay) ? 350 : (isDesktop && isAutoPlay ? 250 : 320);
+                // 允許動態延伸至 84% 視窗高，僅在極長個人備註時限制上限以保底部按鈕可達
+                const maxBackH = Math.max(580, Math.floor(window.innerHeight * 0.84));
+                const targetH = Math.min(maxBackH, Math.max(minBackH, Math.ceil(contentH + padV + borderV + 8)));
+                if (card.style.height !== targetH + 'px') card.style.height = targetH + 'px';
+            } else {
+                const cardFront = card.querySelector('.flip-card-front');
+                if (!cardFront) return;
+                const cs = getComputedStyle(cardFront);
+                const padV = (parseFloat(cs.paddingTop) || 14) + (parseFloat(cs.paddingBottom) || 14);
+                const borderV = (parseFloat(cs.borderTopWidth) || 2) + (parseFloat(cs.borderBottomWidth) || 2);
+                let frontContentH = 0;
+                Array.from(cardFront.children).forEach(ch => {
+                    const st = getComputedStyle(ch);
+                    if (st.display === 'none' || st.position === 'absolute') return;
+                    frontContentH += ch.offsetHeight + (parseFloat(st.marginTop) || 0) + (parseFloat(st.marginBottom) || 0);
+                });
+                let minFrontH;
+                if (isDesktop && !isAutoPlay) {
+                    minFrontH = 350;
+                } else if (isDesktop && isAutoPlay) {
+                    minFrontH = 235;
+                } else if (isQuizFront) {
+                    minFrontH = isSm ? 205 : 185;
+                } else {
+                    minFrontH = isSm ? 250 : 240;
+                }
+                const targetH = Math.max(minFrontH, Math.ceil(frontContentH + padV + borderV + 10));
+                if (card.style.height !== targetH + 'px') card.style.height = targetH + 'px';
+            }
+        }
+        (function initFlashcardDynamicResize() {
+            if (typeof ResizeObserver === 'function') {
+                _flashcardResizeObserver = new ResizeObserver(() => scheduleSyncFlashcardHeight());
+                const targets = ['card-back-content', 'card-fill-cloze-container', 'view-study'];
+                targets.forEach(id => {
+                    const el = document.getElementById(id);
+                    if (el) _flashcardResizeObserver.observe(el);
+                });
+            }
+            window.addEventListener('resize', scheduleSyncFlashcardHeight);
+        })();
+
         function nextCard() {
             if (cardsCompleted === 0 && !isMistakeMode && mistakeQueue.length === 0 && sessionStats.totalAnswers === 0 && sessionStats.initialWords.length === 0 && sessionQueue.length > 0) {
                 resetSessionStats(sessionQueue);
@@ -7177,6 +7251,7 @@ function cleanupMasteredMistakes() {
             updateCardUserNoteUI(currentWord);
 
             updateProgressBar();
+            syncFlashcardHeight();
             void flashcard.offsetWidth; // 強制重繪，確保新題型高度立即生效
             if (inner) inner.style.transition = '';
             if (flashcard) flashcard.style.transition = '';
@@ -7192,6 +7267,7 @@ function cleanupMasteredMistakes() {
                     autoFlashcardTimerId = setTimeout(() => {
                         if (!isAutoFlashcardMode) return;
                         flashcard.classList.add('flipped');
+                        syncFlashcardHeight();
                         try { updateStudyQueueStrip(true); } catch(e){}
                         const cardBack = flashcard?.querySelector('.flip-card-back');
                         if (cardBack) cardBack.scrollTop = 0;
@@ -7961,6 +8037,7 @@ function cleanupMasteredMistakes() {
                     const studyViewEl = document.getElementById('view-study');
                     if (studyViewEl) studyViewEl.classList.remove('quiz-options-active');
                     flashcard.classList.add('flipped');
+                    syncFlashcardHeight();
                     quizOptions.classList.add('hidden');
                     actionNext.classList.remove('hidden');
                     const cardBack = flashcard?.querySelector('.flip-card-back');
@@ -8456,6 +8533,7 @@ function cleanupMasteredMistakes() {
             if (isShowingAnswer) return;
             isShowingAnswer = true;
             flashcard.classList.add('flipped');
+            syncFlashcardHeight();
             try { updateStudyQueueStrip(true); } catch(e){}
             actionShowAnswer.classList.add('hidden');
             actionRate.classList.remove('hidden');
@@ -10525,6 +10603,7 @@ function cleanupMasteredMistakes() {
                     transExpandedEl.classList.add('hidden');
                     if (btnExpandTransIcon) btnExpandTransIcon.classList.remove('rotate-180');
                 }
+                syncFlashcardHeight();
             });
             transExpandedEl.addEventListener('click', (e) => {
                 e.stopPropagation();

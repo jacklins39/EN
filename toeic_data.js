@@ -1296,7 +1296,7 @@ const toeicWordsDB = [
         "uk": "/ˈɑːftə(r)/",
         "zh": "prep. 在……之後、緊接著、一次接著一次、持續不斷地；conj. 在……以後；adv. 後來、以後；adj. 後來的、以後的、靠近船尾的",
         "unit": 11,
-        "example": "[adj.] They arrived shortly after 5.",
+        "example": "[prep.] They arrived shortly after 5.",
         "exampleZh": "5點多他們就到了。"
     },
     {
@@ -2826,7 +2826,7 @@ const toeicWordsDB = [
         "uk": "/bæk/",
         "zh": "n. 背、背部、後面；adv. 向後、回原處、返回；adj. 後面的、背部的；v. 支持、後退",
         "unit": 11,
-        "example": "[n.] Let's head back home.",
+        "example": "[adv.] Let's head back home.",
         "exampleZh": "我們回家吧。"
     },
     {
@@ -3786,7 +3786,7 @@ const toeicWordsDB = [
         "uk": "/ˈbiːɪŋ/",
         "zh": "n. 存在、生物、本質、本性；v. 因為、由於、存在、生存",
         "unit": 11,
-        "example": "[n.] I hate being photographed.",
+        "example": "[v.] I hate being photographed.",
         "exampleZh": "我討厭被拍照。"
     },
     {
@@ -4136,7 +4136,7 @@ const toeicWordsDB = [
         "uk": "/ˌbaɪˈlɪŋɡwəl/",
         "zh": "adj. 雙語的、熟悉兩種語言的、能說兩種語言的、涉及兩種語言的；n. 熟諳兩種語言的人",
         "unit": 11,
-        "example": "[n.] Some people were bilingual. So, what did they speak?",
+        "example": "[adj.] Some people were bilingual. So, what did they speak?",
         "exampleZh": "有的人說兩種語言，那麼他們都說什麼語言？"
     },
     {
@@ -10266,7 +10266,7 @@ const toeicWordsDB = [
         "uk": "/ˈdjuːplɪkeɪt/",
         "zh": "vt. 複製、影印、重複、使成倍增加；adj. 完全一樣的、複製的、二重的；n. 複製品、副本、完全一樣的東西",
         "unit": 12,
-        "example": "[adj.] Is this a duplicate or the original?",
+        "example": "[n.] Is this a duplicate or the original?",
         "exampleZh": "這是副本還是正本？"
     },
     {
@@ -11576,7 +11576,7 @@ const toeicWordsDB = [
         "uk": "/ˈiːv(ə)n/",
         "zh": "adv. 甚至、即使、更加；adj. 平坦的、均勻的、偶數的；v. 使平坦、使均勻",
         "unit": 12,
-        "example": "[v.] Even a small child can do this.",
+        "example": "[adv.] Even a small child can do this.",
         "exampleZh": "連小孩子都能做這件事。"
     },
     {
@@ -18976,7 +18976,7 @@ const toeicWordsDB = [
         "uk": "/ˈlaɪkli/",
         "zh": "adj. 可能發生的、似乎合適的、彷彿恰當的、似乎真實的；adv. 大概、很可能",
         "unit": 12,
-        "example": "[adj.] We will likely see him later.",
+        "example": "[adv.] We will likely see him later.",
         "exampleZh": "我們可能稍後會見到他。"
     },
     {
@@ -18996,7 +18996,7 @@ const toeicWordsDB = [
         "uk": "/ˈlɪmɪtɪd/",
         "zh": "adj. 有限的、不多的、受限的、受憲法限制的；n. 高階快車；v. 限制",
         "unit": 12,
-        "example": "[n.] Unfortunately, my time is limited.",
+        "example": "[adj.] Unfortunately, my time is limited.",
         "exampleZh": "遺憾的是，我的時間有限。"
     },
     {
@@ -21426,7 +21426,7 @@ const toeicWordsDB = [
         "uk": "/pɑːt/",
         "zh": "n. 部分、角色、某物的部分、部；vt. 分開、分離、分別、分手；adv. 既有……又有……、不完全地、部分地；adj. 部分的、不完全的",
         "unit": 13,
-        "example": "[adj.] Have you learned your part yet?",
+        "example": "[n.] Have you learned your part yet?",
         "exampleZh": "你已經學會你的部分了嗎？"
     },
     {
@@ -28626,7 +28626,7 @@ const toeicWordsDB = [
         "uk": "/ˈtɜːnəʊvə(r)/",
         "zh": "n. 翻倒、翻轉、營業額、成交量；adj. 翻過來的、可翻轉的",
         "unit": 13,
-        "example": "[adj.] Our turnover actually increased last year.",
+        "example": "[n.] Our turnover actually increased last year.",
         "exampleZh": "去年我們的營業額竟然增加了。"
     },
     {
@@ -28706,7 +28706,7 @@ const toeicWordsDB = [
         "uk": "/ˈʌltrə/",
         "zh": "n. 過激分子、極端主義者、超級馬拉松；adj. 偏激的、過分的、極端的；adv. 很、非常",
         "unit": 13,
-        "example": "[n.] Not all the glass technology that touches our lives is ultra-modern.",
+        "example": "[adj.] Not all the glass technology that touches our lives is ultra-modern.",
         "exampleZh": "並非所有影響我們生活的玻璃技術都是超現代的。"
     },
     {

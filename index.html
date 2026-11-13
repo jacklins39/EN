@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261113V5';
+        const APP_BUILD_VERSION = '20261113V6';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -10633,6 +10633,48 @@ function cleanupMasteredMistakes() {
 
         // 額外高頻不規則動詞 (覆蓋 100% 常用複合與不規則變化)
         const IRREGULAR_VERBS_EXTRA = {
+            "get": ["got", "gotten"],
+            "forget": ["forgot", "forgotten"],
+            "forbid": ["forbade", "forbidden"],
+            "make": ["made"],
+            "say": ["said"],
+            "pay": ["paid"],
+            "lay": ["laid"],
+            "tell": ["told"],
+            "sell": ["sold"],
+            "find": ["found"],
+            "stand": ["stood"],
+            "understand": ["understood"],
+            "win": ["won"],
+            "sit": ["sat"],
+            "shine": ["shone"],
+            "show": ["showed", "shown"],
+            "strike": ["struck", "stricken"],
+            "stick": ["stuck"],
+            "sting": ["stung"],
+            "swing": ["swung"],
+            "dig": ["dug"],
+            "hang": ["hung", "hanged"],
+            "slide": ["slid"],
+            "spin": ["spun"],
+            "flee": ["fled"],
+            "light": ["lit", "lighted"],
+            "withdraw": ["withdrew", "withdrawn"],
+            "stink": ["stank", "stunk"],
+            "spell": ["spelt", "spelled"],
+            "kneel": ["knelt", "kneeled"],
+            "lean": ["leant", "leaned"],
+            "leap": ["leapt", "leaped"],
+            "spit": ["spat"],
+            "swell": ["swelled", "swollen"],
+            "sew": ["sewed", "sewn"],
+            "sow": ["sowed", "sown"],
+            "weave": ["wove", "woven"],
+            "wind": ["wound"],
+            "grind": ["ground"],
+            "awake": ["awoke", "awoken"],
+            "arise": ["arose", "arisen"],
+            "shoe": ["shod"],
             "bind": ["bound"],
             "seek": ["sought"],
             "misunderstand": ["misunderstood"],
@@ -10758,6 +10800,7 @@ function cleanupMasteredMistakes() {
                 variants.add(norm);
                 variants.add(w.trim().toLowerCase());
                 variants.add(norm.replace(/['’]/g, ''));
+                variants.add(norm.replace(/\./g, ''));
             };
 
             add(raw);
@@ -10910,32 +10953,28 @@ function cleanupMasteredMistakes() {
             const wordRegex = /(?<![\p{L}\p{M}0-9])([\p{L}\p{M}]+(?:['’][\p{L}\p{M}]+)?(?:\.[\p{L}\p{M}]+)*\.?)(?![\p{L}\p{M}0-9])/gu;
             
             const parts = text.split(/(###TARGET:.*?###)/g);
+
             return parts.map(part => {
                 if (part.startsWith('###TARGET:') && part.endsWith('###')) {
                     const word = part.slice(10, -3);
-                    const cleanWord = normalizeAccent(word).toLowerCase().replace(/['".,!?]/g, '');
-                    return `<span class="dict-word cursor-pointer text-[#0071E3] font-black bg-blue-100/80 px-1 py-0.5 rounded border-b-2 border-[#0071E3] shadow-2xs transition-colors" data-word="${cleanWord}" data-target-word="1" onmouseenter="handleWordHover(event, '${cleanWord}')" onmouseleave="handleWordLeave()">${word}</span>`;
+                    const cleanWord = normalizeAccent(word).toLowerCase().replace(/[’‘]/g, "'").replace(/^['".,!?]+|['".,!?]+$/g, '');
+                    const safeAttr = cleanWord.replace(/"/g, '&quot;');
+                    const safeJsArg = cleanWord.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+                    return `<span class="dict-word cursor-pointer text-[#0071E3] font-black bg-blue-100/80 px-1 py-0.5 rounded border-b-2 border-[#0071E3] shadow-2xs transition-colors" data-word="${safeAttr}" data-target-word="1" onmouseenter="handleWordHover(event, '${safeJsArg}')" onmouseleave="handleWordLeave()">${word}</span>`;
                 }
 
                 return part.replace(wordRegex, (match) => {
-                    const cleanWord = match.replace(/['"!?]/g, '').trim();
+                    const cleanWord = match.replace(/[’‘]/g, "'").replace(/^['".,!?]+|['".,!?]+$/g, '').trim();
                     const norm = normalizeAccent(cleanWord).toLowerCase();
                     const normNoDot = norm.replace(/\./g, '');
-                    const normNoApos = norm.replace(/['’]/g, '');
+                    const normNoApos = norm.replace(/'/g, '');
+                    const normNoPoss = normNoDot.endsWith("'s") && normNoDot.length > 4 ? normNoDot.slice(0, -2) : normNoDot;
 
                     let isTarget = false;
                     if (!markedTarget) {
-                        if (variants.has(norm) || variants.has(normNoDot) || variants.has(normNoApos) || variants.has(cleanWord.toLowerCase())) {
+                        if (variants.has(norm) || variants.has(normNoDot) || variants.has(normNoApos) || variants.has(normNoPoss) || variants.has(cleanWord.toLowerCase())) {
                             isTarget = true;
                             markedTarget = true;
-                        } else if (norm.length >= 4) {
-                            for (const v of sortedVars) {
-                                if (v.length >= 4 && (norm.startsWith(v) || v.startsWith(norm))) {
-                                    isTarget = true;
-                                    markedTarget = true;
-                                    break;
-                                }
-                            }
                         }
                     }
 
@@ -10943,7 +10982,9 @@ function cleanupMasteredMistakes() {
                         ? 'text-[#0071E3] font-black bg-blue-100/80 px-1 py-0.5 rounded border-b-2 border-[#0071E3] shadow-2xs'
                         : 'text-slate-700 hover:text-[#0071E3] border-b border-dotted border-slate-300 hover:border-[#0071E3]';
                     
-                    return `<span class="dict-word cursor-pointer ${styleClass} transition-colors" data-word="${normNoDot}"${isTarget ? ' data-target-word="1"' : ''} onmouseenter="handleWordHover(event, '${normNoDot}')" onmouseleave="handleWordLeave()">${match}</span>`;
+                    const safeAttr = normNoDot.replace(/"/g, '&quot;');
+                    const safeJsArg = normNoDot.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+                    return `<span class="dict-word cursor-pointer ${styleClass} transition-colors" data-word="${safeAttr}"${isTarget ? ' data-target-word="1"' : ''} onmouseenter="handleWordHover(event, '${safeJsArg}')" onmouseleave="handleWordLeave()">${match}</span>`;
                 });
             }).join('');
         }
@@ -12045,22 +12086,29 @@ function cleanupMasteredMistakes() {
         // 嚴格依「詞性分段 (POS Segment)」解析中文釋義：確保每個中文語意詞彙嚴格綁定在該詞性段落底下，杜絕跨詞性錯配 (如 wonder 的 vt. 好奇 + adj. 極好的 誤配給 curious adj. 好奇的)
         function parsePosSegmentsForCrosslink(zhStr) {
             if (!zhStr) return [];
+            const inflectionNoteRe = /([的之]\s*(?:過去式|過去分詞|現在分詞|複數|第三人稱(?:單數)?|比較級|最高級|變體|動名詞)|形式$)/;
+            const extractCleanCjkTokens = (rawBody) => {
+                const cleaned = (rawBody || '')
+                    .replace(/[\(\[\（\【].*?[\)\]\）\】]/g, '')
+                    .replace(/(?:^|\s)\d+\.\s*/g, ' ');
+                const tokens = [];
+                for (let part of cleaned.split(/[，,、/;\s]+/)) {
+                    part = part.trim();
+                    if (!part || part.length < 2 || part.length > 8 || !/^[\u4e00-\u9fff]+$/.test(part) || SEMANTIC_STOP_WORDS.has(part)) continue;
+                    if (!tokens.includes(part)) tokens.push(part);
+                }
+                return tokens;
+            };
             const segRegex = /(?:^|[；;]\s*)((?:adj|adv|prep|conj|pron|int|num|det|art|aux|modal\s*v|ph|vi|vt|[avnd])\.)\s*([^；;]*)/gi;
             const segments = [];
             const matches = [...zhStr.matchAll(segRegex)];
             if (matches.length > 0) {
                 for (const m of matches) {
                     const pos = normalizePosForCrosslink(m[1]);
-                    let body = (m[2] || '').trim();
+                    const rawBody = (m[2] || '').trim();
                     // 略過僅作為屈折變化說明之段落（如「continue 的現在分詞」、「favour 的過去式」）
-                    if (!body || /(的過去式|的過去分詞|的現在分詞|的複數|的第三人稱單數|的比較級|的最高級|的變體|的動名詞|形式)/.test(body)) continue;
-                    body = body.replace(/[\(\[\（\【].*?[\)\]\）\】]/g, '');
-                    const tokens = [];
-                    for (let part of body.split(/[，,、/;\s]+/)) {
-                        part = part.trim();
-                        if (!part || part.length < 2 || SEMANTIC_STOP_WORDS.has(part)) continue;
-                        if (!tokens.includes(part)) tokens.push(part);
-                    }
+                    if (!rawBody || inflectionNoteRe.test(rawBody)) continue;
+                    const tokens = extractCleanCjkTokens(rawBody);
                     // 即使 tokens 因單字元或停用詞被過濾（如 bunch 的「束、群」或 excellent 的「優秀的」），仍須保留該詞性段落以確保首要詞性正確
                     segments.push({
                         pos,
@@ -12072,11 +12120,10 @@ function cleanupMasteredMistakes() {
                 const m = zhStr.trim().match(/^(\(?[a-zA-Z./]+\.?\)?)\s*[:：.]?\s*(.*)$/);
                 if (m) {
                     const pos = normalizePosForCrosslink(m[1].replace(/[()]/g, ''));
-                    let body = (m[2] || '').trim();
-                    if (body && !/(的過去式|的過去分詞|的現在分詞|的複數|的第三人稱單數|的比較級|的最高級|的變體|的動名詞|形式)/.test(body)) {
-                        body = body.replace(/[\(\[\（\【].*?[\)\]\）\】]/g, '');
-                        const tokens = body.split(/[，,、/;\s]+/).map(s => s.trim()).filter(s => s.length >= 2 && !SEMANTIC_STOP_WORDS.has(s));
-                        segments.push({ pos, tokens: [...new Set(tokens)], primaryTokens: tokens.slice(0, 2) });
+                    const rawBody = (m[2] || '').trim();
+                    if (rawBody && !inflectionNoteRe.test(rawBody)) {
+                        const tokens = extractCleanCjkTokens(rawBody);
+                        segments.push({ pos, tokens, primaryTokens: tokens.slice(0, 2) });
                     }
                 }
             }
@@ -12091,27 +12138,47 @@ function cleanupMasteredMistakes() {
             };
             if (typeof vocabularyDB === 'undefined' || !Array.isArray(vocabularyDB)) return semanticSynonymIndex;
 
+            const vocabEnSet = new Set();
+            for (const item of vocabularyDB) {
+                if (item && item.en) vocabEnSet.add(item.en.trim().toLowerCase());
+            }
+
+            const isInflectedSubEntry = (enLower, primaryPos, zhText) => {
+                if (/(?:的|之)\s*(?:過去式|過去分詞|現在分詞|複數|第三人稱)/.test(zhText || '')) return true;
+                if (primaryPos === 'v' && (PURE_INFLECTED_VERB_FORMS.has(enLower) || (enLower.endsWith('ing') && enLower.length > 4))) {
+                    return true;
+                }
+                if ((primaryPos === 'v' || primaryPos === 'n') && enLower.length > 4) {
+                    if (enLower.endsWith('ied') && vocabEnSet.has(enLower.slice(0, -3) + 'y')) return true;
+                    if (enLower.endsWith('ed') && (vocabEnSet.has(enLower.slice(0, -2)) || vocabEnSet.has(enLower.slice(0, -1)))) return true;
+                    if (enLower.endsWith('ing') && (vocabEnSet.has(enLower.slice(0, -3)) || vocabEnSet.has(enLower.slice(0, -3) + 'e'))) return true;
+                    if (enLower.endsWith('ies') && vocabEnSet.has(enLower.slice(0, -3) + 'y')) return true;
+                    if (enLower.endsWith('es') && !enLower.endsWith('ses') && vocabEnSet.has(enLower.slice(0, -2))) return true;
+                    if (enLower.endsWith('s') && !enLower.endsWith('ss') && !enLower.endsWith('us') && !enLower.endsWith('is') && vocabEnSet.has(enLower.slice(0, -1))) return true;
+                }
+                return false;
+            };
+
             for (const item of vocabularyDB) {
                 if (!item || !item.en) continue;
                 const enLower = item.en.trim().toLowerCase();
                 if (semanticSynonymIndex.wordInfo.has(enLower)) continue;
 
-                const segments = parsePosSegmentsForCrosslink(item.zh || '');
+                const zhText = item.zh || '';
+                const segments = parsePosSegmentsForCrosslink(zhText);
                 if (segments.length === 0) continue;
 
                 const primaryPos = segments[0].pos;
                 semanticSynonymIndex.wordInfo.set(enLower, {
                     en: item.en,
-                    zh: item.zh || '',
+                    zh: zhText,
                     primaryPos,
                     segments
                 });
 
-                // 排除含括號/縮寫點號之詞條（如 forward(s), Mr., Inc.）以及純屈折動詞或分詞作為同義詞候選
+                // 排除含括號/縮寫點號之詞條（如 forward(s), Mr., Inc.）以及純屈折動詞、分詞或複數名詞作為同義詞候選
                 if (!/^[a-z]+$/.test(enLower)) continue;
-                if (primaryPos === 'v' && (PURE_INFLECTED_VERB_FORMS.has(enLower) || (enLower.endsWith('ing') && enLower.length > 4))) {
-                    continue;
-                }
+                if (isInflectedSubEntry(enLower, primaryPos, zhText)) continue;
 
                 // 僅將候選字之「首要詞性段落 (segments[0])」的前 2 個核心釋義編入索引，杜絕次要詞性或邊緣義項跨詞性污染 (如 wonder vt./n./adj. 或 die v./n. 誤配)
                 for (const token of segments[0].primaryTokens) {
@@ -12130,13 +12197,18 @@ function cleanupMasteredMistakes() {
             if (!rawW) return [];
             const result = [];
             const seen = new Set([rawW]);
+            const antSet = new Set(
+                (typeof getWordAntonyms === 'function' ? getWordAntonyms(rawW, currentItem) : [])
+                    .map(a => String(typeof a === 'string' ? a : (a && a.word) || '').toLowerCase().trim())
+                    .filter(Boolean)
+            );
 
             // 0. 核心精選同義詞庫最高優先 (人工精校覆寫，僅取當前單字本身 rawW)
             const coreList = CORE_WORD_SYNONYMS[rawW];
             if (coreList && Array.isArray(coreList)) {
                 for (const s of coreList) {
                     const sLower = s.toLowerCase();
-                    if (!seen.has(sLower)) {
+                    if (!seen.has(sLower) && !antSet.has(sLower)) {
                         seen.add(sLower);
                         result.push(s);
                     }
@@ -12149,7 +12221,7 @@ function cleanupMasteredMistakes() {
                 if (dbEntry && Array.isArray(dbEntry.syn)) {
                     for (const s of dbEntry.syn) {
                         const sLower = s.toLowerCase();
-                        if (!seen.has(sLower)) {
+                        if (!seen.has(sLower) && !antSet.has(sLower)) {
                             seen.add(sLower);
                             result.push(s);
                         }
@@ -12175,7 +12247,7 @@ function cleanupMasteredMistakes() {
                     const compositeKey = primSeg.pos + ':' + token;
                     const candidates = index.posTokenToWords.get(compositeKey) || [];
                     for (const candLower of candidates) {
-                        if (seen.has(candLower)) continue;
+                        if (seen.has(candLower) || antSet.has(candLower)) continue;
                         const candInfo = index.wordInfo.get(candLower);
                         if (!candInfo || candInfo.primaryPos !== primSeg.pos) continue;
                         if (candLower.includes(' ') || candLower.startsWith(rawW) || rawW.startsWith(candLower)) continue;
@@ -12688,6 +12760,16 @@ function cleanupMasteredMistakes() {
                 backsideAudioTimerId = null;
             }
             stopAllAudio();
+            if (typeof globalHoverWordTimer !== 'undefined' && globalHoverWordTimer) {
+                clearTimeout(globalHoverWordTimer);
+                globalHoverWordTimer = null;
+            }
+            if (typeof globalHoverLeaveTimer !== 'undefined' && globalHoverLeaveTimer) {
+                clearTimeout(globalHoverLeaveTimer);
+                globalHoverLeaveTimer = null;
+            }
+            const staleTooltip = document.getElementById('word-tooltip');
+            if (staleTooltip) staleTooltip.remove();
 
             const modal = document.getElementById('word-detail-modal');
             const content = document.getElementById('word-detail-content');
@@ -15935,8 +16017,202 @@ function cleanupMasteredMistakes() {
         }
 
         // 單字庫檢索輔助函式 (包含單字庫、自訂字庫與詞根還原)
+        // 共用縮寫還原與詞幹萃取表（供自訂查詞 findWordInDB 與語境消解 resolveWordInContext 共用）
+        const CONTRACTION_BASE_MAP = {
+            "i'm": ['am'],
+            "i'll": ['will'], "you'll": ['will'], "he'll": ['will'], "she'll": ['will'], "it'll": ['will'],
+            "we'll": ['will'], "they'll": ['will'], "that'll": ['will'], "there'll": ['will'], "who'll": ['will'],
+            "you're": ['are'], "we're": ['are'], "they're": ['are'], "what're": ['are'], "who're": ['are'],
+            "i've": ['have'], "you've": ['have'], "we've": ['have'], "they've": ['have'],
+            "should've": ['have'], "could've": ['have'], "would've": ['have'],
+            "i'd": ['would', 'had'], "you'd": ['would', 'had'], "he'd": ['would', 'had'], "she'd": ['would', 'had'],
+            "it'd": ['would', 'had'], "we'd": ['would', 'had'], "they'd": ['would', 'had'], "there'd": ['would', 'had'],
+            "it's": ['is', 'it', 'has'], "he's": ['is', 'he', 'has'], "she's": ['is', 'she', 'has'],
+            "that's": ['is', 'that', 'has'], "there's": ['is', 'there', 'has'], "here's": ['is', 'here'],
+            "what's": ['is', 'what', 'has'], "who's": ['is', 'who', 'has'], "where's": ['is', 'where'],
+            "when's": ['is', 'when'], "why's": ['is', 'why'], "how's": ['is', 'how'],
+            "let's": ['let'],
+            "can't": ['cannot', 'can'], "won't": ['will'], "shan't": ['shall'],
+            "don't": ['do'], "doesn't": ['does', 'do'], "didn't": ['did', 'do'],
+            "isn't": ['is', 'be'], "aren't": ['are', 'be'], "wasn't": ['was', 'be'], "weren't": ['were', 'be'],
+            "haven't": ['have'], "hasn't": ['has', 'have'], "hadn't": ['had', 'have'],
+            "couldn't": ['can'], "wouldn't": ['would'], "shouldn't": ['should'],
+            "mustn't": ['must'], "mightn't": ['might'], "needn't": ['need'], "ain't": ['be']
+        };
+
+        const IRREGULAR_VES_TO_F = {
+            leaves: 'leaf', lives: 'life', knives: 'knife', wives: 'wife', wolves: 'wolf',
+            shelves: 'shelf', thieves: 'thief', halves: 'half', calves: 'calf', loaves: 'loaf',
+            elves: 'elf', selves: 'self', sheaves: 'sheaf', scarves: 'scarf', wharves: 'wharf',
+            hooves: 'hoof', dwarves: 'dwarf', beeves: 'beef'
+        };
+
+        const IRREGULAR_NOUN_PLURALS_MAP = {
+            children: 'child', teeth: 'tooth', feet: 'foot', mice: 'mouse',
+            men: 'man', women: 'woman', geese: 'goose', oxen: 'ox', people: 'person',
+            crises: 'crisis', bases: 'basis', analyses: 'analysis', oases: 'oasis',
+            diagnoses: 'diagnosis', theses: 'thesis', hypotheses: 'hypothesis',
+            criteria: 'criterion', phenomena: 'phenomenon', curricula: 'curriculum'
+        };
+
+        const IRREGULAR_MORPH_MAP = {
+            was: 'be', were: 'be', is: 'be', are: 'be', am: 'be', been: 'be', being: 'be',
+            has: 'have', had: 'have', having: 'have',
+            did: 'do', done: 'do', does: 'do',
+            went: 'go', gone: 'go', goes: 'go',
+            saw: 'see', seen: 'see', sees: 'see',
+            drove: 'drive', driven: 'drive', rose: 'rise', risen: 'rise',
+            took: 'take', taken: 'take', gave: 'give', given: 'give',
+            came: 'come', made: 'make', found: 'find', knew: 'know', known: 'know',
+            thought: 'think', brought: 'bring', bought: 'buy', caught: 'catch',
+            fought: 'fight', taught: 'teach', told: 'tell', sold: 'sell',
+            left: 'leave', felt: 'feel', kept: 'keep', slept: 'sleep',
+            meant: 'mean', met: 'meet', led: 'lead', said: 'say', paid: 'pay',
+            laid: 'lay', lain: 'lie', ran: 'run', sat: 'sit',
+            spoke: 'speak', spoken: 'speak', broke: 'break', broken: 'break',
+            woke: 'wake', woken: 'wake', awoke: 'awake', awoken: 'awake',
+            wrote: 'write', written: 'write', ate: 'eat', eaten: 'eat',
+            fell: 'fall', fallen: 'fall', drank: 'drink', drunk: 'drink',
+            sang: 'sing', sung: 'sing', swam: 'swim', swum: 'swim',
+            began: 'begin', begun: 'begin', rang: 'ring', rung: 'ring',
+            flew: 'fly', flown: 'fly', grew: 'grow', grown: 'grow',
+            threw: 'throw', thrown: 'throw', blew: 'blow', blown: 'blow',
+            drew: 'draw', drawn: 'draw', hid: 'hide', hidden: 'hide',
+            rode: 'ride', ridden: 'ride', shook: 'shake', shaken: 'shake',
+            shone: 'shine', shot: 'shoot', shut: 'shut',
+            sank: 'sink', sunk: 'sink', slid: 'slide', spent: 'spend',
+            spun: 'spin', split: 'split', spread: 'spread',
+            stood: 'stand', stole: 'steal', stolen: 'steal',
+            stuck: 'stick', stung: 'sting', struck: 'strike', stricken: 'strike',
+            swept: 'sweep', swung: 'swing', tore: 'tear', torn: 'tear',
+            wore: 'wear', worn: 'wear', wept: 'weep', won: 'win',
+            wound: 'wind', bound: 'bind', bore: 'bear', borne: 'bear',
+            ground: 'grind', froze: 'freeze', frozen: 'freeze',
+            could: 'can', lost: 'lose', became: 'become', held: 'hold',
+            heard: 'hear', sent: 'send', built: 'build', shown: 'show',
+            understood: 'understand', misunderstood: 'misunderstand',
+            overcame: 'overcome', undertook: 'undertake', undertaken: 'undertake',
+            underwent: 'undergo', undergone: 'undergo', sought: 'seek',
+            fled: 'flee', got: 'get', gotten: 'get',
+            chose: 'choose', chosen: 'choose', bit: 'bite', bitten: 'bite',
+            lent: 'lend', bent: 'bend', hung: 'hang', dug: 'dig',
+            fed: 'feed', dealt: 'deal', forgot: 'forget', forgotten: 'forget',
+            forgave: 'forgive', forgiven: 'forgive', lit: 'light',
+            smelt: 'smell', spelt: 'spell', spilt: 'spill', burnt: 'burn', learnt: 'learn',
+            stank: 'stink', stunk: 'stink', swore: 'swear', sworn: 'swear',
+            trod: 'tread', trodden: 'tread', withdrew: 'withdraw', withdrawn: 'withdraw',
+            arose: 'arise', arisen: 'arise', knelt: 'kneel', leapt: 'leap',
+            forbade: 'forbid', forbidden: 'forbid', wove: 'weave', woven: 'weave',
+            sewn: 'sew', sown: 'sow', shod: 'shoe',
+            worse: 'bad', worst: 'bad', better: 'good', best: 'good',
+            further: 'far', furthest: 'far', farther: 'far', farthest: 'far',
+            elder: 'old', eldest: 'old'
+        };
+
+        function getSafeMorphologicalStems(rawWordText, includeSelf = true) {
+            const clean = String(rawWordText || '').toLowerCase().trim().replace(/[’‘]/g, "'").replace(/^[^\w]+|[^\w]+$/g, '');
+            const stems = [];
+            const add = (s) => { if (s && !stems.includes(s)) stems.push(s); };
+            if (!clean) return stems;
+            if (includeSelf) add(clean);
+
+            // 1. 英文縮寫對照表（如 i'll -> will, can't -> cannot, didn't -> did）
+            if (CONTRACTION_BASE_MAP[clean]) {
+                CONTRACTION_BASE_MAP[clean].forEach(add);
+                return stems;
+            }
+
+            // 2. 所有格還原（如 human's -> human, James' -> James）
+            if (clean.endsWith("'s") && clean.length > 3) {
+                add(clean.slice(0, -2));
+                return stems;
+            }
+            if (clean.endsWith("'") && clean.length > 2) {
+                add(clean.slice(0, -1));
+                return stems;
+            }
+
+            // 3. 白名單 -ves -> f/fe 與不規則名詞/動詞
+            if (IRREGULAR_VES_TO_F[clean]) add(IRREGULAR_VES_TO_F[clean]);
+            if (IRREGULAR_NOUN_PLURALS_MAP[clean]) add(IRREGULAR_NOUN_PLURALS_MAP[clean]);
+            if (IRREGULAR_MORPH_MAP[clean]) add(IRREGULAR_MORPH_MAP[clean]);
+
+            // 4. 名詞複數 / 動詞第三人稱單數（先處理 ies，再試 silent-e + s，再於合規字尾時試 -es）
+            if (clean.endsWith('ies') && clean.length > 4) {
+                add(clean.slice(0, -3) + 'y');
+            }
+            if (clean.endsWith('s') && !clean.endsWith('ss') && !clean.endsWith('us') && !clean.endsWith('is') && clean.length > 3) {
+                add(clean.slice(0, -1));
+            }
+            if (clean.endsWith('es') && clean.length > 4) {
+                const esBase = clean.slice(0, -2);
+                const sBase = clean.slice(0, -1);
+                if (/(ss|x|z|ch|sh|o)$/.test(esBase) || ((clean.endsWith('ses') || clean.endsWith('ees')) && esBase.length >= 3 && sBase !== 'use' && sBase !== 'lose' && sBase !== 'choose' && sBase !== 'bee' && sBase !== 'refugee')) {
+                    add(esBase);
+                }
+            }
+
+            // 輔助判斷：單母音 + 單子音接綴詞 (hated/taped/rated/hoped/using/riding/ripest) 應優先還原 silent-e
+            const prefersSilentE = (bare) => bare.length >= 2 && /(?:^|[^aeiou])[aeiou][bcdfgkmnprtvz]$/.test(bare) && !/[aeiou]{2}[bcdfgkmnprtvz]$/.test(bare);
+            const pushDoubleAndSilentE = (bare, withE) => {
+                if (bare.length >= 4 && bare[bare.length - 1] === bare[bare.length - 2] && !/[aeiouyls]/.test(bare[bare.length - 1])) {
+                    add(bare.slice(0, -1)); // stopped -> stop, running -> run, bigger -> big
+                    add(bare);
+                    return;
+                }
+                if (prefersSilentE(bare)) {
+                    add(withE);
+                    if (bare.length >= 3) add(bare);
+                } else {
+                    if (bare.length >= 3) add(bare);
+                    add(withE);
+                }
+            };
+
+            // 5. -ied / -ed
+            if (clean.endsWith('ied') && clean.length > 4) add(clean.slice(0, -3) + 'y');
+            if (clean.endsWith('ed') && clean.length === 4) {
+                add(clean.slice(0, -1)); // owed -> owe, used -> use, aged -> age, tied -> tie
+            } else if (clean.endsWith('ed') && clean.length > 4) {
+                pushDoubleAndSilentE(clean.slice(0, -2), clean.slice(0, -1));
+            }
+
+            // 6. -ying / -ing
+            if (clean.endsWith('ying') && clean.length === 5) {
+                add(clean.slice(0, -4) + 'ie'); // dying -> die, lying -> lie, tying -> tie
+            }
+            if (clean.endsWith('ing') && clean.length > 5) {
+                const bare = clean.slice(0, -3);
+                pushDoubleAndSilentE(bare, bare + 'e');
+                if (clean.endsWith('ying')) add(clean.slice(0, -4) + 'ie');
+            } else if (clean.endsWith('ing') && clean.length === 5) {
+                const bare = clean.slice(0, -3); // doing, going, using
+                if (bare === 'do' || bare === 'go') add(bare);
+                else add(bare + 'e'); // using -> use
+            }
+
+            // 7. -ily / -ly
+            if (clean.endsWith('ily') && clean.length > 5) add(clean.slice(0, -3) + 'y');
+            if (clean.endsWith('ly') && clean.length > 4) {
+                add(clean.slice(0, -2));
+                if (clean.endsWith('bly')) add(clean.slice(0, -1) + 'e'); // possibly -> possible
+            }
+
+            // 8. 比較級與最高級 -ier / -er / -iest / -est
+            if (clean.endsWith('iest') && clean.length > 5) add(clean.slice(0, -4) + 'y');
+            if (clean.endsWith('est') && clean.length > 5) {
+                pushDoubleAndSilentE(clean.slice(0, -3), clean.slice(0, -3) + 'e');
+            }
+            if (clean.endsWith('ier') && clean.length > 4) add(clean.slice(0, -3) + 'y');
+            if (clean.endsWith('er') && clean.length > 4) {
+                pushDoubleAndSilentE(clean.slice(0, -2), clean.slice(0, -2) + 'e');
+            }
+
+            return stems;
+        }
+
         function findWordInDB(wordText) {
-            const lower = String(wordText || '').toLowerCase().trim();
+            const lower = String(wordText || '').toLowerCase().trim().replace(/[’‘]/g, "'").replace(/^[^\w]+|[^\w]+$/g, '');
             if (!lower) return null;
             
             // 1. 自訂字庫
@@ -15947,40 +16223,8 @@ function cleanupMasteredMistakes() {
             let w = (typeof vocabularyDB !== 'undefined' ? vocabularyDB : []).find(x => (x.en || '').toLowerCase() === lower);
             if (w) return { en: w.en, zh: w.zh || '', pos: w.pos || '', kk: w.kk || '', isCustom: false };
 
-            // 3. 詞根還原
-            const stems = [];
-            const irregulars = {
-                'was': 'be', 'were': 'be', 'is': 'be', 'are': 'be', 'am': 'be',
-                'has': 'have', 'had': 'have', 'did': 'do', 'done': 'do',
-                'went': 'go', 'gone': 'go', 'saw': 'see', 'seen': 'see',
-                'drove': 'drive', 'driven': 'drive', 'rose': 'rise', 'risen': 'rise',
-                'took': 'take', 'taken': 'take', 'gave': 'give', 'given': 'give',
-                'came': 'come', 'made': 'make', 'found': 'find', 'knew': 'know', 'known': 'know',
-                'thought': 'think', 'brought': 'bring', 'bought': 'buy', 'caught': 'catch',
-                'fought': 'fight', 'taught': 'teach', 'told': 'tell', 'sold': 'sell',
-                'left': 'leave', 'felt': 'feel', 'kept': 'keep', 'slept': 'sleep',
-                'meant': 'mean', 'met': 'meet', 'led': 'lead', 'read': 'read',
-                'said': 'say', 'paid': 'pay', 'laid': 'lay', 'ran': 'run',
-                'sat': 'sit', 'spoke': 'speak', 'spoken': 'speak', 'broke': 'break',
-                'broken': 'break', 'woke': 'wake', 'woken': 'wake', 'wrote': 'write',
-                'written': 'write', 'ate': 'eat', 'eaten': 'eat', 'fell': 'fall',
-                'fallen': 'fall', 'drank': 'drink', 'drunk': 'drink', 'sang': 'sing',
-                'sung': 'sing', 'swam': 'swim', 'swum': 'swim', 'began': 'begin',
-                'begun': 'begin', 'rang': 'ring', 'rung': 'ring', 'children': 'child',
-                'men': 'man', 'women': 'woman', 'teeth': 'tooth', 'feet': 'foot', 'mice': 'mouse'
-            };
-            if (irregulars[lower]) stems.push(irregulars[lower]);
-            if (lower.endsWith('ies')) stems.push(lower.slice(0, -3) + 'y');
-            if (lower.endsWith('es')) stems.push(lower.slice(0, -2));
-            if (lower.endsWith('s')) stems.push(lower.slice(0, -1));
-            if (lower.endsWith('ied')) stems.push(lower.slice(0, -3) + 'y');
-            if (lower.endsWith('ed')) stems.push(lower.slice(0, -2), lower.slice(0, -1));
-            if (lower.endsWith('ing')) stems.push(lower.slice(0, -3), lower.slice(0, -3) + 'e', lower.slice(0, -4));
-            if (lower.endsWith('ily')) stems.push(lower.slice(0, -3) + 'y');
-            if (lower.endsWith('ly')) stems.push(lower.slice(0, -2));
-            if (lower.endsWith('est')) stems.push(lower.slice(0, -3), lower.slice(0, -3) + 'e', lower.slice(0, -4));
-            if (lower.endsWith('er')) stems.push(lower.slice(0, -2), lower.slice(0, -2) + 'e', lower.slice(0, -3));
-
+            // 3. 安全詞根還原 (含縮寫對照表、所有格、CVC 重複子音與 silent-e 精準順序)
+            const stems = getSafeMorphologicalStems(lower, false);
             for (const stem of stems) {
                 w = (typeof vocabularyDB !== 'undefined' ? vocabularyDB : []).find(x => (x.en || '').toLowerCase() === stem);
                 if (w) return { en: w.en, zh: w.zh || '', pos: w.pos || '', kk: w.kk || '', isCustom: false, stemFrom: lower };
@@ -16389,18 +16633,20 @@ function cleanupMasteredMistakes() {
                 const tokens = s.trim().split(/\s+/);
                 html = tokens.map(token => {
                     if (!token) return '';
-                    // 乾淨字根供字典查詞與核心單字比對 (去除頭尾標點符號)
-                    const cleanWord = token.replace(/^[^\w]+|[^\w]+$/g, '').toLowerCase().replace(/'/g, "\\'");
-                    if (!cleanWord) return esc(token);
+                    // 乾淨字根供字典查詞與核心單字比對 (保留縮寫內單引號、去除頭尾標點符號)
+                    const cleanWordRaw = token.replace(/[’‘]/g, "'").replace(/^[^\w]+|[^\w]+$/g, '').toLowerCase();
+                    if (!cleanWordRaw) return esc(token);
 
-                    const isAnnotated = currentArticleAnnotatedWords.has(cleanWord);
-                    const isCore = isArticleCoreWord(cleanWord);
+                    const cleanWordAttr = esc(cleanWordRaw);
+                    const cleanWordJs = cleanWordRaw.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+                    const isAnnotated = currentArticleAnnotatedWords.has(cleanWordRaw);
+                    const isCore = isArticleCoreWord(cleanWordRaw);
                     let wordClass = 'border-transparent';
                     if (isAnnotated) wordClass = 'is-annotated';
                     else if (isCore) wordClass = 'is-core-word';
 
-                    // 標點符號與單字一體化，消除分離空隙；點擊查詞帶入 cleanWord；支援游標懸停即時釋義浮動卡
-                    return `<span class="listen-word cursor-pointer transition-colors duration-200 border-b-2 ${wordClass} hover:border-[#0071E3] rounded px-0.5" data-word="${cleanWord}" data-is-core="${isCore ? 'true' : 'false'}" onmouseenter="handleWordHover(event, '${cleanWord}')" onmouseleave="handleWordLeave()" onclick="event.stopPropagation(); showWordTranslation(event, '${cleanWord}')">${esc(token)}</span>`;
+                    // 標點符號與單字一體化，消除分離空隙；點擊查詞帶入 cleanWordRaw；支援游標懸停即時釋義浮動卡
+                    return `<span class="listen-word cursor-pointer transition-colors duration-200 border-b-2 ${wordClass} hover:border-[#0071E3] rounded px-0.5" data-word="${cleanWordAttr}" data-is-core="${isCore ? 'true' : 'false'}" onmouseenter="handleWordHover(event, '${cleanWordJs}')" onmouseleave="handleWordLeave()" onclick="event.stopPropagation(); showWordTranslation(event, '${cleanWordJs}')">${esc(token)}</span>`;
                 }).join(' ');
 
                 const role = sObj.role || (sObj.speaker === 'Sophia' ? 'B' : 'A');
@@ -16610,9 +16856,13 @@ function cleanupMasteredMistakes() {
             const preps = new Set(['in', 'on', 'at', 'of', 'for', 'with', 'about', 'into', 'through', 'before', 'after', 'above', 'below', 'from', 'up', 'down', 'out', 'off', 'over', 'under', 'by', 'without', 'along', 'across', 'behind', 'around', 'near', 'among', 'towards', 'toward', 'upon', 'beside', 'despite', 'except', 'inside', 'outside', 'past', 'since', 'until', 'as', 'like', 'than', 'between', 'against', 'during', 'within', 'beyond']);
             const pureConjs = new Set(['and', 'or', 'but', 'nor', 'yet', 'because', 'although', 'though', 'unless', 'while', 'whereas', 'whether', 'if']);
             const commonAdverbs = new Set(['just', 'now', 'here', 'there', 'today', 'yesterday', 'tomorrow', 'again', 'too', 'also', 'very', 'so', 'only', 'even', 'still', 'already', 'always', 'never', 'often', 'sometimes', 'usually', 'seldom', 'ever', 'soon', 'early', 'late', 'fast', 'hard', 'well', 'much', 'more', 'most', 'quite', 'rather', 'almost', 'nearly', 'enough', 'together', 'alone', 'away', 'back', 'ago', 'ahead', 'abroad', 'home']);
+            const nonAdvLyWords = new Set(['family', 'reply', 'supply', 'apply', 'fly', 'rely', 'ally', 'july', 'belly', 'jelly', 'bully', 'rally', 'silly', 'holy', 'ugly', 'early', 'only', 'friendly', 'lonely', 'lovely', 'lively', 'cowardly', 'orderly', 'heavenly', 'hourly', 'daily', 'weekly', 'monthly', 'yearly', 'elderly', 'deadly', 'likely', 'unlikely']);
+            const adjOnlyLyWords = new Set(['friendly', 'lonely', 'lovely', 'lively', 'cowardly', 'orderly', 'heavenly', 'hourly', 'daily', 'weekly', 'monthly', 'yearly', 'elderly', 'deadly', 'silly', 'ugly', 'holy']);
             const clauseIntroVerbsOrAdjs = new Set(['prove', 'proved', 'proven', 'proves', 'know', 'knew', 'known', 'knows', 'think', 'thought', 'thinks', 'say', 'said', 'says', 'believe', 'believed', 'believes', 'hope', 'hoped', 'hopes', 'see', 'saw', 'seen', 'sees', 'show', 'showed', 'shown', 'shows', 'find', 'found', 'finds', 'mean', 'meant', 'means', 'suggest', 'suggested', 'realize', 'realized', 'notice', 'noticed', 'hear', 'heard', 'feared', 'fear', 'wish', 'wished', 'ensure', 'imagine', 'suppose', 'assume', 'doubt', 'remember', 'forget', 'forgot', 'learn', 'learned', 'discover', 'discovered', 'explain', 'explained', 'promise', 'promised', 'warn', 'warned', 'tell', 'told', 'convince', 'convinced', 'inform', 'informed', 'sure', 'certain', 'glad', 'happy', 'afraid', 'sorry', 'aware', 'confident', 'proud', 'surprised', 'worried', 'clear', 'obvious', 'true', 'important', 'necessary', 'possible', 'likely']);
 
-            const isNextClauseBoundary = currHasPunct || !next1 || preps.has(next1) || pureConjs.has(next1) || auxVerbs.has(next1) || beLinking.has(next1) || subjPron.has(next1) || commonAdverbs.has(next1) || next1.endsWith('ly');
+            const nextIsCoordBeforeWord = (next1 === 'and' || next1 === 'or') && idx + 2 < tokens.length && !preps.has(tokens[idx + 2].clean) && !auxVerbs.has(tokens[idx + 2].clean);
+            const nextIsLyAdv = next1.endsWith('ly') && next1.length >= 5 && !nonAdvLyWords.has(next1);
+            const isNextClauseBoundary = currHasPunct || !next1 || preps.has(next1) || (pureConjs.has(next1) && !nextIsCoordBeforeWord) || auxVerbs.has(next1) || beLinking.has(next1) || subjPron.has(next1) || commonAdverbs.has(next1) || nextIsLyAdv;
 
             const add = (grp, d) => {
                 posCandidates.forEach(p => {
@@ -16670,9 +16920,10 @@ function cleanupMasteredMistakes() {
                 }
             }
 
-            // 助動詞與情態動詞 (如 Can you..., You can..., This is...)
+            // 助動詞與情態動詞 (如 Can you..., You can..., That may or may not...)
             if (auxVerbs.has(tok) || auxVerbs.has(cleanBase)) {
-                const precededByDetOrAdj = !prevHasPunct && (dets.has(prev1) || (idx >= 2 && dets.has(prev2) && !prev2HasPunct));
+                const isDemPronSubject = prev1 === 'that' || prev1 === 'this' || prev1 === 'these' || prev1 === 'those';
+                const precededByDetOrAdj = !prevHasPunct && (dets.has(prev1) || (idx >= 2 && dets.has(prev2) && !prev2HasPunct)) && (!isDemPronSubject || preps.has(next1) || currHasPunct || !next1);
                 if (precededByDetOrAdj) {
                     add('N', 7.5);
                 } else {
@@ -16713,9 +16964,29 @@ function cleanupMasteredMistakes() {
                 }
             }
 
-            if ((pureModals.has(prev1) || prev1 === 'to' || subjPron.has(prev1)) && !prevHasPunct) {
+            if ((pureModals.has(prev1) || prev1 === 'to' || (subjPron.has(prev1) && !beLinking.has(prev2))) && !prevHasPunct) {
                 if (!(prev1 === 'to' && (dets.has(tok) || allPersonalPron.has(tok)))) {
                     add('MAIN_V', 6.5);
+                }
+            }
+
+            // 疑問句倒裝結構 Is it OK ... / Was it fair ...
+            if (beLinking.has(prev2) && prev1 === 'it' && !prevHasPunct) {
+                add('PURE_ADJ', 5.5);
+            }
+
+            // 後面接限定詞/受格代名詞作為直接受詞，前無限定詞或介系詞 -> 主動動詞 (如 The officer saw the car / kids found a puppy)
+            if (!dets.has(prev1) && !preps.has(prev1) && !possDets.has(prev1) && !beLinking.has(prev1) && !currHasPunct && (dets.has(next1) || objPron.has(next1) || possDets.has(next1))) {
+                add('MAIN_V', 6.0);
+            } else if (tok !== cleanBase && idx >= 1 && !dets.has(prev1) && !preps.has(prev1) && !possDets.has(prev1) && !beLinking.has(prev1) && !prevHasPunct && !dets.has(prev2)) {
+                // 不規則過去式 (rose/saw/found/left/ground/wound/bore) 在名詞主詞後 (如 The sun rose / A bright rainbow rose)
+                const prevEntry = typeof vocabularyDB !== 'undefined' && Array.isArray(vocabularyDB)
+                    ? vocabularyDB.find(w => w && w.en && w.en.toLowerCase() === prev1)
+                    : null;
+                const prevZh = prevEntry ? (prevEntry.zh || '') : '';
+                const prevLooksNounSubject = /^(n\.|pl\.|pron\.)/.test(prevZh.trim()) && !/\badj\./.test(prevZh);
+                if (prevLooksNounSubject || preps.has(next1) || commonAdverbs.has(next1) || nextIsLyAdv) {
+                    add('MAIN_V', 5.2);
                 }
             }
 
@@ -16742,7 +17013,7 @@ function cleanupMasteredMistakes() {
             }
 
             if (beLinking.has(prev1) && !prevHasPunct) {
-                if (commonAdverbs.has(tok) || tok.endsWith('ly') || tok === 'not') {
+                if (commonAdverbs.has(tok) || (tok.endsWith('ly') && !adjOnlyLyWords.has(tok) && !(tok === 'likely' && !auxVerbs.has(prev1))) || tok === 'not') {
                     add('ADV', 6);
                 } else if (isNextClauseBoundary && !dets.has(tok) && !allPersonalPron.has(tok)) {
                     add('PURE_ADJ', 6);
@@ -16752,7 +17023,7 @@ function cleanupMasteredMistakes() {
                 add('PURE_ADJ', 6);
             }
 
-            if (commonAdverbs.has(tok) || (tok.endsWith('ly') && !dets.has(prev1))) {
+            if (commonAdverbs.has(tok) || (tok.endsWith('ly') && !dets.has(prev1) && !adjOnlyLyWords.has(tok) && isNextClauseBoundary && !beLinking.has(prev1))) {
                 add('ADV', 5.0);
             } else if ((currHasPunct || !next1) && !dets.has(prev1) && !preps.has(prev1) && !beLinking.has(prev1) && !subjPron.has(prev1) && !auxVerbs.has(prev1) && prev1 !== 'to') {
                 add('ADV', 4.0);
@@ -16982,7 +17253,7 @@ function cleanupMasteredMistakes() {
         // 動詞過去式與異字同形歧義 (如 saw 誤判為鋸子、found 誤判為創立、rose 誤判為玫瑰、fell 誤判為砍伐)
         // ==========================================
         function resolveWordInContext(wordText, el) {
-            const cleanWordText = String(wordText || '').toLowerCase().trim().replace(/^[^\w]+|[^\w]+$/g, '');
+            const cleanWordText = String(wordText || '').toLowerCase().trim().replace(/[’‘]/g, "'").replace(/^[^\w]+|[^\w]+$/g, '');
             if (!cleanWordText) return null;
 
             const { contextPos, contextEn, contextZh } = (typeof extractTooltipContext === 'function')
@@ -16991,107 +17262,41 @@ function cleanupMasteredMistakes() {
 
             const isTargetWordEl = el ? (el.getAttribute('data-target-word') === '1' || Boolean(el.closest && el.closest('.example-pos-badge, [data-target-word="1"]'))) : false;
 
-            // 1. 若此點擊單字為當前閃卡或詳解卡之主目標詞 (Target Word)
-            const targetObj = (typeof currentWord !== 'undefined' && currentWord && currentWord.en) ? currentWord :
-                              (typeof window !== 'undefined' && window.currentDetailWordObj ? window.currentDetailWordObj : null);
-            
-            if (targetObj && targetObj.en) {
-                const targetEnLower = targetObj.en.toLowerCase().trim();
+            // 1. 嚴格限定 DOM 容器作用域選取目標詞，絕不讓背景閃卡 currentWord 劫持詳解彈窗或聽力文章！
+            let scopedTargetObj = null;
+            if (el && el.closest) {
+                const inRelPill = el.closest('[data-rel-type]');
+                const inListening = el.closest('#view-listening, .listen-word');
+                const inDetailModal = el.closest('#word-detail-modal, #detail-card-example');
+                const inCardExample = !inDetailModal ? el.closest('#card-example') : null;
+                if (!inRelPill && !inListening) {
+                    if (inDetailModal) {
+                        scopedTargetObj = (typeof window !== 'undefined' && window.currentDetailWordObj && window.currentDetailWordObj.en) ? window.currentDetailWordObj : null;
+                    } else if (inCardExample) {
+                        scopedTargetObj = (typeof currentWord !== 'undefined' && currentWord && currentWord.en) ? currentWord : null;
+                    }
+                }
+            }
+
+            if (scopedTargetObj && isTargetWordEl) {
+                const targetEnLower = scopedTargetObj.en.toLowerCase().trim();
                 const targetVars = (typeof getTargetWordVariants === 'function') ? getTargetWordVariants(targetEnLower) : new Set([targetEnLower]);
-                if (isTargetWordEl || targetVars.has(cleanWordText)) {
-                    return targetObj;
+                const cleanNoDot = cleanWordText.replace(/\./g, '');
+                const cleanNoApos = cleanWordText.replace(/'/g, '');
+                const cleanNoPoss = cleanNoDot.endsWith("'s") && cleanNoDot.length > 4 ? cleanNoDot.slice(0, -2) : cleanNoDot;
+                const matchesTarget = targetVars.has(cleanWordText) || targetVars.has(cleanNoDot) || targetVars.has(cleanNoApos) || targetVars.has(cleanNoPoss) ||
+                    (cleanNoDot.length >= 4 && (cleanNoDot.startsWith(targetEnLower.slice(0, Math.min(4, targetEnLower.length))) || targetEnLower.startsWith(cleanNoDot.slice(0, 4))));
+                if (matchesTarget) {
+                    return scopedTargetObj;
                 }
             }
 
-            // 2. 收集所有可能的詞幹候選字
-            const stems = new Set();
-            stems.add(cleanWordText);
+            // 2. 收集所有安全還原的詞幹候選字 (縮寫、所有格、-ves 白名單、不規則與 CVC/silent-e 屈折)
+            const stemList = getSafeMorphologicalStems(cleanWordText, true);
 
-            // 2.1 -ves 不規則名詞複數 (leaves -> leaf, lives -> life, knives -> knife, wolves -> wolf, shelves -> shelf, etc.)
-            if (cleanWordText.endsWith('ves')) {
-                stems.add(cleanWordText.slice(0, -3) + 'f');
-                stems.add(cleanWordText.slice(0, -3) + 'fe');
-                stems.add(cleanWordText.slice(0, -1)); // leave, shelve
-            }
-
-            // 2.2 不規則複數名詞表
-            const irregularNouns = {
-                'children': 'child', 'teeth': 'tooth', 'feet': 'foot', 'mice': 'mouse',
-                'men': 'man', 'women': 'woman', 'geese': 'goose', 'oxen': 'ox', 'people': 'person',
-                'crises': 'crisis', 'bases': 'basis', 'analyses': 'analysis', 'oases': 'oasis',
-                'diagnoses': 'diagnosis', 'theses': 'thesis', 'hypotheses': 'hypothesis'
-            };
-            if (irregularNouns[cleanWordText]) stems.add(irregularNouns[cleanWordText]);
-
-            // 2.3 不規則動詞變化表 (past, pp, ing, s)
-            const irregularVerbsMap = {
-                'was': 'be', 'were': 'be', 'is': 'be', 'are': 'be', 'am': 'be', 'been': 'be', 'being': 'be',
-                'has': 'have', 'had': 'have', 'having': 'have',
-                'did': 'do', 'done': 'do', 'does': 'do',
-                'went': 'go', 'gone': 'go', 'goes': 'go',
-                'saw': 'see', 'seen': 'see', 'sees': 'see',
-                'drove': 'drive', 'driven': 'drive',
-                'rose': 'rise', 'risen': 'rise',
-                'took': 'take', 'taken': 'take',
-                'gave': 'give', 'given': 'give',
-                'came': 'come', 'made': 'make', 'found': 'find',
-                'knew': 'know', 'known': 'know',
-                'thought': 'think', 'brought': 'bring', 'bought': 'buy',
-                'caught': 'catch', 'fought': 'fight', 'taught': 'teach',
-                'told': 'tell', 'sold': 'sell', 'left': 'leave', 'felt': 'feel',
-                'kept': 'keep', 'slept': 'sleep', 'meant': 'mean', 'met': 'meet',
-                'led': 'lead', 'said': 'say', 'paid': 'pay',
-                'laid': 'lay', 'ran': 'run', 'sat': 'sit', 'spoke': 'speak',
-                'spoken': 'speak', 'broke': 'break', 'broken': 'break',
-                'woke': 'wake', 'woken': 'wake', 'wrote': 'write', 'written': 'write',
-                'ate': 'eat', 'eaten': 'eat', 'fell': 'fall', 'fallen': 'fall',
-                'drank': 'drink', 'drunk': 'drink', 'sang': 'sing', 'sung': 'sing',
-                'swam': 'swim', 'swum': 'swim', 'began': 'begin', 'begun': 'begin',
-                'rang': 'ring', 'rung': 'ring', 'flew': 'fly', 'flown': 'fly',
-                'grew': 'grow', 'grown': 'grow', 'threw': 'throw', 'thrown': 'throw',
-                'blew': 'blow', 'blown': 'blow', 'drew': 'draw', 'drawn': 'draw',
-                'hid': 'hide', 'hidden': 'hide', 'rode': 'ride', 'ridden': 'ride',
-                'shook': 'shake', 'shaken': 'shake', 'shone': 'shine', 'shot': 'shoot',
-                'shut': 'shut', 'sank': 'sink', 'sunk': 'sink', 'slid': 'slide',
-                'spent': 'spend', 'spun': 'spin', 'split': 'split', 'spread': 'spread',
-                'stood': 'stand', 'stole': 'steal', 'stolen': 'steal', 'stuck': 'stick',
-                'stung': 'sting', 'struck': 'strike', 'swept': 'sweep', 'swung': 'swing',
-                'tore': 'tear', 'torn': 'tear', 'wore': 'wear', 'worn': 'wear',
-                'wept': 'weep', 'won': 'win', 'wound': 'wind', 'bound': 'bind',
-                'bore': 'bear', 'ground': 'grind', 'froze': 'freeze', 'frozen': 'freeze'
-            };
-            if (irregularVerbsMap[cleanWordText]) stems.add(irregularVerbsMap[cleanWordText]);
-
-            // 2.4 常規詞形後綴還原
-            if (cleanWordText.endsWith('ies')) stems.add(cleanWordText.slice(0, -3) + 'y');
-            if (cleanWordText.endsWith('es')) stems.add(cleanWordText.slice(0, -2));
-            if (cleanWordText.endsWith('s')) stems.add(cleanWordText.slice(0, -1));
-            if (cleanWordText.endsWith('ied')) stems.add(cleanWordText.slice(0, -3) + 'y');
-            if (cleanWordText.endsWith('ed')) {
-                stems.add(cleanWordText.slice(0, -2));
-                stems.add(cleanWordText.slice(0, -1));
-            }
-            if (cleanWordText.endsWith('ing')) {
-                stems.add(cleanWordText.slice(0, -3));
-                stems.add(cleanWordText.slice(0, -3) + 'e');
-                if (cleanWordText.length > 4 && cleanWordText[cleanWordText.length - 4] === cleanWordText[cleanWordText.length - 5]) {
-                    stems.add(cleanWordText.slice(0, -4)); // running -> run
-                }
-            }
-            if (cleanWordText.endsWith('ily')) stems.add(cleanWordText.slice(0, -3) + 'y');
-            if (cleanWordText.endsWith('ly')) stems.add(cleanWordText.slice(0, -2));
-            if (cleanWordText.endsWith('est')) {
-                stems.add(cleanWordText.slice(0, -3));
-                stems.add(cleanWordText.slice(0, -3) + 'e');
-            }
-            if (cleanWordText.endsWith('er')) {
-                stems.add(cleanWordText.slice(0, -2));
-                stems.add(cleanWordText.slice(0, -2) + 'e');
-            }
-
-            // 3. 在所有字庫中查找所有候選單字
+            // 3. 在所有字庫中依序查找所有候選單字
             const candidateMap = new Map();
-            for (const stem of stems) {
+            for (const stem of stemList) {
                 if (!stem) continue;
                 let list = vocabularyDB.filter(x => x.en.toLowerCase() === stem);
                 if (typeof customWordsDB !== 'undefined' && customWordsDB) {
@@ -17109,39 +17314,143 @@ function cleanupMasteredMistakes() {
             if (candidates.length === 0) return null;
             if (candidates.length === 1) return candidates[0];
 
-            // 4. 多候選詞歧義消解 (根據例句中文語境 contextZh 評分，最高分者勝出)
-            if (contextZh && typeof scoreTermsInPosText === 'function') {
-                let bestCandidate = candidates[0];
-                let bestScore = -1;
-
-                candidates.forEach(cand => {
-                    const cleanZhText = String(cand.zh || '').replace(/\b[a-zA-Z]+\.\s*/g, ' ').trim();
-                    const { maxScore } = scoreTermsInPosText(cleanZhText, contextZh);
-                    let score = maxScore;
-                    // 若為目前單元，略給予優先權
-                    if (typeof currentUnit !== 'undefined' && currentUnit && cand.unit === currentUnit) {
-                        score += 5;
-                    }
-                    // 若拼寫完全一致且有一定語意匹配
-                    if (cand.en.toLowerCase() === cleanWordText) {
-                        score += 2;
-                    }
-                    if (score > bestScore) {
-                        bestScore = score;
-                        bestCandidate = cand;
-                    }
-                });
-
-                if (bestScore > 0) {
-                    return bestCandidate;
+            // 3.1 縮寫精準直連優先 (如 didn't -> did, i'll -> will, can't -> cannot)
+            if (CONTRACTION_BASE_MAP[cleanWordText]) {
+                for (const base of CONTRACTION_BASE_MAP[cleanWordText]) {
+                    const hit = candidates.find(c => c.en.toLowerCase() === base);
+                    if (hit) return hit;
                 }
             }
 
-            // 5. 若無中文語境或評分均為 0，優先回傳完全符合拼寫的詞，次之目前單元，最後首筆
-            const exact = candidates.find(c => c.en.toLowerCase() === cleanWordText);
-            if (exact) return exact;
-            const sameUnit = typeof currentUnit !== 'undefined' && currentUnit ? candidates.find(c => c.unit === currentUnit) : null;
-            return sameUnit || candidates[0];
+            // 4. 多候選詞歧義消解：結合「語境中文語意」+「英文句法詞性 (getGrammarPosScores)」+「屈折詞性過濾」綜合裁決
+            const extractPosCands = (zhStr) => {
+                const posCands = [];
+                for (const seg of String(zhStr || '').split(/[；;\n]+/)) {
+                    const pm = seg.trim().match(/^([a-zA-Z]+(?:\.\s*\/\s*[a-zA-Z]+)?\.)\s*(.+)$/);
+                    if (pm && !/(?:的|之)\s*(?:過去式|過去分詞|現在分詞|複數)/.test(pm[2])) {
+                        const p = pm[1].replace(/\s+/g, '');
+                        if (!posCands.includes(p)) posCands.push(p);
+                    }
+                }
+                return posCands;
+            };
+
+            const verbHomographBase = {
+                saw: 'see', rose: 'rise', found: 'find', bound: 'bind',
+                ground: 'grind', wound: 'wind', bore: 'bear', lay: 'lie'
+            }[cleanWordText] || '';
+
+            const irregularAdjAdvSet = new Set(['better', 'best', 'worse', 'worst', 'more', 'most', 'less', 'least', 'further', 'furthest', 'farther', 'farthest', 'elder', 'eldest']);
+            let isInfinitiveOrModalCtx = false;
+            if (contextEn) {
+                const enToks = contextEn.trim().split(/\s+/).map(t => t.replace(/^[^a-zA-Z0-9']+|[^a-zA-Z0-9']+$/g, '').toLowerCase()).filter(Boolean);
+                const tIdx = enToks.indexOf(cleanWordText);
+                const p1 = tIdx > 0 ? enToks[tIdx - 1] : '';
+                if (['to', 'can', 'could', 'will', 'would', 'shall', 'should', 'may', 'might', 'must', 'do', 'does', 'did', "don't", "doesn't", "didn't", "won't", "can't", 'cannot', "shouldn't", "wouldn't", "couldn't", "mustn't", "let's"].includes(p1)) {
+                    isInfinitiveOrModalCtx = true;
+                }
+            }
+
+            const filterPosForInflection = (posList, candEnLower) => {
+                if (candEnLower === cleanWordText || posList.length === 0) return posList;
+                const isNounPlural = IRREGULAR_NOUN_PLURALS_MAP[cleanWordText] === candEnLower || IRREGULAR_VES_TO_F[cleanWordText] === candEnLower;
+                if (isNounPlural) {
+                    return posList.filter(p => /^(?:n\.|pl\.)/.test(p));
+                }
+                if (irregularAdjAdvSet.has(cleanWordText)) {
+                    return posList.filter(p => /^(?:adj\.|adv\.|det\.)/.test(p));
+                }
+                const isIrregVerb = IRREGULAR_MORPH_MAP[cleanWordText] === candEnLower ||
+                    (typeof IRREGULAR_VERBS_EXTRA !== 'undefined' && Array.isArray(IRREGULAR_VERBS_EXTRA[candEnLower]) && IRREGULAR_VERBS_EXTRA[candEnLower].includes(cleanWordText));
+                if (isIrregVerb) {
+                    return posList.filter(p => /^(?:v\.|vt\.|vi\.|aux\.)/.test(p));
+                }
+                if (cleanWordText.endsWith('s')) {
+                    return posList.filter(p => /^(?:n\.|pl\.|v\.|vt\.|vi\.)/.test(p));
+                }
+                if (cleanWordText.endsWith('ed')) {
+                    return posList.filter(p => /^(?:v\.|vt\.|vi\.|adj\.)/.test(p));
+                }
+                if (cleanWordText.endsWith('ing')) {
+                    return posList.filter(p => /^(?:v\.|vt\.|vi\.|adj\.|n\.)/.test(p));
+                }
+                return posList;
+            };
+
+            let bestCandidate = candidates[0];
+            let bestScore = -999;
+
+            candidates.forEach(cand => {
+                const candEnLower = cand.en.toLowerCase();
+                // 濾除純「某某的過去式/過去分詞」括號註記，避免 saw 憑藉 "（see的過去式）" 假贏或擾亂純詞條比對
+                const cleanZhText = String(cand.zh || '')
+                    .replace(/[\(（][^）\)]*(?:過去式|過去分詞|現在分詞|複數)[^）\)]*[\)）]/g, '')
+                    .replace(/\b[a-zA-Z]+\.\s*/g, ' ')
+                    .trim();
+
+                let zhScore = 0;
+                if (contextZh && typeof scoreTermsInPosText === 'function') {
+                    const { maxScore } = scoreTermsInPosText(cleanZhText, contextZh);
+                    zhScore = maxScore;
+                }
+
+                let grammarScore = 0;
+                let verbGrammarScore = 0;
+                const rawPosCands = extractPosCands(cand.zh);
+                const candPosCands = filterPosForInflection(rawPosCands, candEnLower);
+                const impossibleInflectionPenalty = (candEnLower !== cleanWordText && rawPosCands.length > 0 && candPosCands.length === 0) ? -8.0 : 0;
+
+                if (contextEn && candPosCands.length > 0 && typeof getGrammarPosScores === 'function') {
+                    const gScores = getGrammarPosScores(cleanWordText, candEnLower, candPosCands, contextEn);
+                    grammarScore = Math.max(0, ...Object.values(gScores));
+                    for (const [pKey, pVal] of Object.entries(gScores)) {
+                        if (/^(?:v\.|vt\.|vi\.)/.test(pKey) && pVal > verbGrammarScore) {
+                            verbGrammarScore = pVal;
+                        }
+                    }
+                }
+
+                // 若同形詞明確是動詞過去式 homograph (saw/rose/found/ground/wound/bore) 且語法高機率為主動詞，僅在「動詞詞性分數 >= 4」且非不定詞/助動詞後適度加權
+                let homographPastBoost = 0;
+                if (verbHomographBase && candEnLower === verbHomographBase) {
+                    if (isInfinitiveOrModalCtx) {
+                        homographPastBoost = -8.0;
+                    } else if (verbGrammarScore >= 4.0) {
+                        homographPastBoost = 2.0;
+                    }
+                } else if (!isInfinitiveOrModalCtx && verbHomographBase && candEnLower === cleanWordText && cleanWordText === 'found' && !(contextZh && /(創立|創辦|建立|興建|設立)/.test(contextZh)) && verbGrammarScore >= 3.5) {
+                    // found 在主動動詞句型絕大多數為 find 的過去式，除非位於 to/助動詞後或語境明講「創立/建立」
+                    homographPastBoost = -2.5;
+                } else if (!isInfinitiveOrModalCtx && verbHomographBase && candEnLower === cleanWordText && cleanWordText === 'saw' && !(contextZh && /鋸/.test(contextZh)) && verbGrammarScore >= 3.5) {
+                    homographPastBoost = -2.5;
+                }
+
+                // 幹詞序位微弱加分：讓 uses -> use 優先於 us、caves -> cave 優先於 cafe
+                const stemIdx = stemList.indexOf(candEnLower);
+                const stemOrderBonus = stemIdx >= 0 ? Math.max(0, 0.8 - stemIdx * 0.25) : 0;
+                const exactMatchBonus = (candEnLower === cleanWordText && zhScore > 0) ? 1.0 : 0;
+                const sameUnitBonus = (typeof currentUnit !== 'undefined' && currentUnit && cand.unit === currentUnit) ? 0.3 : 0;
+
+                const totalScore = zhScore * 2.0 + grammarScore * 1.1 + homographPastBoost + impossibleInflectionPenalty + stemOrderBonus + exactMatchBonus + sameUnitBonus;
+                if (totalScore > bestScore) {
+                    bestScore = totalScore;
+                    bestCandidate = cand;
+                }
+            });
+
+            if (bestScore > 0) {
+                return bestCandidate;
+            }
+
+            // 5. 若均無語境分數，依詞幹還原優先順序 / 目前單元回傳
+            for (const stem of stemList) {
+                const matchList = candidates.filter(c => c.en.toLowerCase() === stem);
+                if (matchList.length > 0) {
+                    const sameUnit = (typeof currentUnit !== 'undefined' && currentUnit) ? matchList.find(c => c.unit === currentUnit) : null;
+                    return sameUnit || matchList[0];
+                }
+            }
+            return candidates[0];
         }
 
         // 顯示單字翻譯的 tooltip 並直接發音 (支援 autoPlay=false 之懸停模式)
@@ -17176,7 +17485,7 @@ function cleanupMasteredMistakes() {
             const el = (triggerEl && triggerEl.nodeType === 1) ? triggerEl : (triggerEl && triggerEl.parentElement ? triggerEl.parentElement : null);
 
             // 在字庫中尋找單字 (透過智慧語境消解引擎精準定位原形單字，杜絕 leaves -> leave、saw -> 鋸子等語意歧義)
-            let cleanWordText = String(wordText || '').toLowerCase().trim().replace(/^[^\w]+|[^\w]+$/g, '');
+            let cleanWordText = String(wordText || '').toLowerCase().trim().replace(/[’‘]/g, "'").replace(/^[^\w]+|[^\w]+$/g, '');
             if (!cleanWordText) return;
             
             let w = resolveWordInContext(cleanWordText, el);

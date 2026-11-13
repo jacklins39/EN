@@ -646,7 +646,7 @@ const jhWordsDB = [
         "uk": "/ˈeniweə(r)/",
         "zh": "adv. 任何地方、在任何地方、無論何處；n. 任何地方",
         "unit": 17,
-        "example": "[n.] I cannot find my car keys anywhere.",
+        "example": "[adv.] I cannot find my car keys anywhere.",
         "exampleZh": "我到處都找不到我的車鑰匙。"
     },
     {
@@ -966,7 +966,7 @@ const jhWordsDB = [
         "uk": "/bæk/",
         "zh": "n. 背、背部、後面；adv. 向後、回原處、返回；adj. 後面的、背部的；v. 支持、後退",
         "unit": 17,
-        "example": "[n.] Let's head back home.",
+        "example": "[adv.] Let's head back home.",
         "exampleZh": "我們回家吧。"
     },
     {
@@ -976,7 +976,7 @@ const jhWordsDB = [
         "uk": "/ˈbækwəd/",
         "zh": "adj. 向後的、朝後的、倒退的、落後的；adv. 向後地、向後、朝後、反向地；n. 後面（或過去）的部分",
         "unit": 17,
-        "example": "[adj.] You have put your hat backward(s).",
+        "example": "[adv.] You have put your hat backward(s).",
         "exampleZh": "你把帽子戴倒了。"
     },
     {
@@ -986,7 +986,7 @@ const jhWordsDB = [
         "uk": "/bæd/",
         "zh": "adj. 壞的、糟糕的、不好的、令人不悅的；n. 壞人、壞事；adv. 很、非常、厲害地",
         "unit": 17,
-        "example": "[n.] Eating too much sugar is bad.",
+        "example": "[adj.] Eating too much sugar is bad.",
         "exampleZh": "吃太多糖是不好的。"
     },
     {
@@ -2696,7 +2696,7 @@ const jhWordsDB = [
         "uk": "/ˈsɪəriəl/",
         "zh": "n. 麥片、穀類食物、穀類植物、穀物；adj. 穀類的、穀類製成的",
         "unit": 17,
-        "example": "[adj.] I eat a bowl of cereal today.",
+        "example": "[n.] I eat a bowl of cereal today.",
         "exampleZh": "我今天吃了一碗麥片。"
     },
     {
@@ -3286,7 +3286,7 @@ const jhWordsDB = [
         "uk": "/kəʊld/",
         "zh": "adj. 冷的、寒冷的、涼的、冷淡的；n. 感冒、傷風、寒冷、低溫；adv. 突然地、完全地",
         "unit": 17,
-        "example": "[n.] The winter water in the lake is cold.",
+        "example": "[adj.] The winter water in the lake is cold.",
         "exampleZh": "冬天湖裡的水很冰冷。"
     },
     {
@@ -3696,7 +3696,7 @@ const jhWordsDB = [
         "uk": "/kɒf/",
         "zh": "v. 咳嗽、發出咳嗽般的聲音、透露情報、供認；n. 咳嗽、咳、咳嗽聲",
         "unit": 17,
-        "example": "[v.] He has a bad cough today.",
+        "example": "[n.] He has a bad cough today.",
         "exampleZh": "他今天咳嗽得很厲害。"
     },
     {
@@ -4116,7 +4116,7 @@ const jhWordsDB = [
         "uk": "/ded/",
         "zh": "adj. 死的、去世的、不再使用的、用盡的；adv. 恰好、精確地、完全地、全然地；n. 死人、死者、死、深夜",
         "unit": 17,
-        "example": "[n.] The old tree in the park is dead.",
+        "example": "[adj.] The old tree in the park is dead.",
         "exampleZh": "公園裡的老樹已經枯死了。"
     },
     {
@@ -4226,7 +4226,7 @@ const jhWordsDB = [
         "uk": "/diːp/",
         "zh": "adj. 深的、深厚的、低沉的；adv. 深深地、至深處；n. 深處、海洋",
         "unit": 17,
-        "example": "[n.] The cold water in the river is deep.",
+        "example": "[adj.] The cold water in the river is deep.",
         "exampleZh": "河裡冰冷的水很深。"
     },
     {
@@ -5076,7 +5076,7 @@ const jhWordsDB = [
         "uk": "/ˈɜːli/",
         "zh": "adj. 早的、早期的、提早的；adv. 早、提早、在初期",
         "unit": 17,
-        "example": "[adj.] We didn't leave early enough.",
+        "example": "[adv.] We didn't leave early enough.",
         "exampleZh": "我們離開得不夠早。"
     },
     {
@@ -5546,7 +5546,7 @@ const jhWordsDB = [
         "uk": "/ˈiːv(ə)n/",
         "zh": "adv. 甚至、即使、更加；adj. 平坦的、均勻的、偶數的；v. 使平坦、使均勻",
         "unit": 17,
-        "example": "[v.] Even a small child can do this.",
+        "example": "[adv.] Even a small child can do this.",
         "exampleZh": "連小孩子都能做這件事。"
     },
     {
@@ -5856,7 +5856,7 @@ const jhWordsDB = [
         "uk": "/ˈfæməli/",
         "zh": "n. 家庭、家族、家、家屬；adj. 家庭的、一家所有的、老少咸宜的、全家用的",
         "unit": 17,
-        "example": "[adj.] I love my family very much.",
+        "example": "[n.] I love my family very much.",
         "exampleZh": "我非常愛我的家人。"
     },
     {
@@ -5906,7 +5906,7 @@ const jhWordsDB = [
         "uk": "/fɑː(r)/",
         "zh": "adv. 遠地、遠、遙遠地、久遠地；adj. 遠的、遙遠的、久遠的、另一邊的",
         "unit": 17,
-        "example": "[adv.] My home is not far from school.",
+        "example": "[adj.] My home is not far from school.",
         "exampleZh": "我家離學校不遠。"
     },
     {
@@ -5946,7 +5946,7 @@ const jhWordsDB = [
         "uk": "/fɑːst/",
         "zh": "adj. 快的、迅速的；adv. 快地、迅速地、牢固地；vi. 禁食、齋戒；n. 禁食期、齋戒",
         "unit": 17,
-        "example": "[adj.] The yellow car runs very fast today.",
+        "example": "[adv.] The yellow car runs very fast today.",
         "exampleZh": "那輛黃色汽車今天開得非常快。"
     },
     {
@@ -6796,7 +6796,7 @@ const jhWordsDB = [
         "uk": "/fʌn/",
         "zh": "n. 樂趣、享受、嬉戲、玩笑；adj. 有趣的、令人愉快的；v. 開玩笑、取笑",
         "unit": 17,
-        "example": "[adj.] We had a lot of fun today.",
+        "example": "[n.] We had a lot of fun today.",
         "exampleZh": "我們今天玩得非常開心。"
     },
     {
@@ -7616,7 +7616,7 @@ const jhWordsDB = [
         "uk": "/hɑːd/",
         "zh": "adj. 努力的、硬的、堅硬的、困難的；adv. 努力地、辛勤地、猛烈地",
         "unit": 17,
-        "example": "[adj.] He works very hard every single day.",
+        "example": "[adv.] He works very hard every single day.",
         "exampleZh": "他每一天都非常努力工作。"
     },
     {
@@ -7966,7 +7966,7 @@ const jhWordsDB = [
         "uk": "/həʊm/",
         "zh": "n. 家、住宅、房子、寓所；adj. 家庭的、家用的、在家裡做（或進行）的、本國的；adv. 回家、在家、到正確的位置、朝著球門；v. 歸巢、對準、把（思想、注意力）集中於、把（動物）養作寵物",
         "unit": 17,
-        "example": "[n.] I want to go home right now.",
+        "example": "[adv.] I want to go home right now.",
         "exampleZh": "我現在想要回家。"
     },
     {
@@ -8646,7 +8646,7 @@ const jhWordsDB = [
         "uk": "/ˈɪntəvjuː/",
         "zh": "vt. 面談、面試、採訪、訪問；n. 採訪、面試、面談、訪談",
         "unit": 17,
-        "example": "[vt.] He had a job interview today.",
+        "example": "[n.] He had a job interview today.",
         "exampleZh": "他今天參加了一場面試。"
     },
     {
@@ -9576,7 +9576,7 @@ const jhWordsDB = [
         "uk": "/ˈlaɪkli/",
         "zh": "adj. 可能發生的、似乎合適的、彷彿恰當的、似乎真實的；adv. 大概、很可能",
         "unit": 17,
-        "example": "[adj.] We will likely see him later.",
+        "example": "[adv.] We will likely see him later.",
         "exampleZh": "我們可能稍後會見到他。"
     },
     {
@@ -9846,7 +9846,7 @@ const jhWordsDB = [
         "uk": "/ləʊ/",
         "zh": "adj. 低的、矮的、在底部的、領口開得低的；adv. 在（或向）低位置、低於通常（或期望）的水平；n. 低點、低谷、低氣壓區；v. 哞哞叫",
         "unit": 17,
-        "example": "[n.] The sun is low in the sky.",
+        "example": "[adj.] The sun is low in the sky.",
         "exampleZh": "太陽在天空中很低的位置。"
     },
     {
@@ -10156,7 +10156,7 @@ const jhWordsDB = [
         "uk": "/ˈmɑːstə(r)/",
         "zh": "n. 主人、大師、碩士、僱主；vt. 精通、掌握、控制；adj. 主要的、精通的",
         "unit": 18,
-        "example": "[adj.] The dog ran to its master fast.",
+        "example": "[n.] The dog ran to its master fast.",
         "exampleZh": "小狗快速地跑向它的主人。"
     },
     {
@@ -10226,7 +10226,7 @@ const jhWordsDB = [
         "uk": "/meɪ/",
         "zh": "n. 五月；aux. 可以、也許、可能",
         "unit": 18,
-        "example": "[n.] That may or may not be true.",
+        "example": "[aux.] That may or may not be true.",
         "exampleZh": "這可能是真的，也可能不是。"
     },
     {
@@ -10976,7 +10976,7 @@ const jhWordsDB = [
         "uk": "/nɪə(r)/",
         "zh": "adv. 距離不遠、在附近、不久、很快；prep. 靠近、在......附近、接近、與......相似；adj. 接近的、近、在附近、差不多的；v. 接近、靠近",
         "unit": 18,
-        "example": "[adv.] His stables are near Oxford.",
+        "example": "[prep.] His stables are near Oxford.",
         "exampleZh": "他的馬厩在牛津附近。"
     },
     {
@@ -11346,7 +11346,7 @@ const jhWordsDB = [
         "uk": "/ˈnʌθɪŋ/",
         "zh": "pron. 沒有什麼、無事、沒有一件東西、無關緊要的事；adv. 並不、毫不、用於強烈地表示相反看法根本不是；n. 無關緊要的事、無足輕重的人、空地、虛空；adj. 沒前途的、沒價值",
         "unit": 18,
-        "example": "[adj.] There is nothing in the black box.",
+        "example": "[pron.] There is nothing in the black box.",
         "exampleZh": "黑色盒子裡什麼都沒有。"
     },
     {
@@ -11456,7 +11456,7 @@ const jhWordsDB = [
         "uk": "/əˈklɒk/",
         "zh": "adv. ……點鐘、整點、……點鐘方向；n. 點鐘",
         "unit": 18,
-        "example": "[n.] The clock said three o'clock.",
+        "example": "[adv.] The clock said three o'clock.",
         "exampleZh": "時鐘指向三點鐘。"
     },
     {
@@ -12286,7 +12286,7 @@ const jhWordsDB = [
         "uk": "/piˈænəʊ/",
         "zh": "n. 鋼琴；adj. 柔和的；adv. 輕柔地",
         "unit": 18,
-        "example": "[adj.] She plays the piano very well.",
+        "example": "[n.] She plays the piano very well.",
         "exampleZh": "她的鋼琴彈得非常好。"
     },
     {
@@ -12906,7 +12906,7 @@ const jhWordsDB = [
         "uk": "/ˈprez(ə)nt; prɪˈzent/",
         "zh": "adj. 現在的、在場的、出席的、存在的；n. 現在、目前、禮物、贈品；vt. 呈現、頒發、贈送、出示",
         "unit": 18,
-        "example": "[adj.] I bought a nice present today.",
+        "example": "[n.] I bought a nice present today.",
         "exampleZh": "我今天買了一份很棒的禮物。"
     },
     {
@@ -15096,7 +15096,7 @@ const jhWordsDB = [
         "uk": "/ʃaɪ/",
         "zh": "adj. 害羞的、靦腆的、顯得靦腆的、看著羞怯的；v. 驚退、驚逸、迴避、避開；n. 驚退、驚逸、投擲、扔",
         "unit": 18,
-        "example": "[n.] The little girl is shy with people.",
+        "example": "[adj.] The little girl is shy with people.",
         "exampleZh": "這個小女孩見到人很害羞。"
     },
     {
@@ -15106,7 +15106,7 @@ const jhWordsDB = [
         "uk": "/sɪk/",
         "zh": "adj. 生病的、患病的、病人的、噁心的；n. 病人、嘔吐物；v. 嘔吐",
         "unit": 18,
-        "example": "[n.] My brother is sick in bed today.",
+        "example": "[adj.] My brother is sick in bed today.",
         "exampleZh": "我弟弟今天生病躺在床上。"
     },
     {
@@ -17096,7 +17096,7 @@ const jhWordsDB = [
         "uk": "/ˈtekstbʊk/",
         "zh": "n. 教科書、課本；adj. 規範的、典型的",
         "unit": 18,
-        "example": "[adj.] I gave the textbook back to him.",
+        "example": "[n.] I gave the textbook back to him.",
         "exampleZh": "我把課本還給他了。"
     },
     {
@@ -17586,7 +17586,7 @@ const jhWordsDB = [
         "uk": "/təˈmɒrəʊ/",
         "zh": "n. 明天、明日、未來；adv. 在明天、在明日",
         "unit": 18,
-        "example": "[n.] I will visit my friend tomorrow morning.",
+        "example": "[adv.] I will visit my friend tomorrow morning.",
         "exampleZh": "我明天早上會去拜訪朋友。"
     },
     {
@@ -17606,7 +17606,7 @@ const jhWordsDB = [
         "uk": "/təˈnaɪt/",
         "zh": "n. 今晚、今夜；adv. 在今晚、在今夜",
         "unit": 18,
-        "example": "[n.] Let us watch a movie together tonight.",
+        "example": "[adv.] Let us watch a movie together tonight.",
         "exampleZh": "我們今晚一起看部電影吧。"
     },
     {
@@ -17946,7 +17946,7 @@ const jhWordsDB = [
         "uk": "/truː/",
         "zh": "adj. 真實的、正確的；adv. 真實地、準確地；n. 真實、準確；vt. 裝準",
         "unit": 18,
-        "example": "[n.] The story in the book is true.",
+        "example": "[adj.] The story in the book is true.",
         "exampleZh": "書裡的那個故事是真的。"
     },
     {
@@ -19326,7 +19326,7 @@ const jhWordsDB = [
         "uk": "/rɒŋ/",
         "zh": "adj. 錯誤的、不合乎事實的、有問題的、有毛病的；adv. 錯誤地、不符合事實地、不適當地、不適宜地；n. 壞事、不道德行為、錯誤的行為、冤枉；v. 不公正地對待、冤枉",
         "unit": 18,
-        "example": "[n.] Your answer to this question is wrong.",
+        "example": "[adj.] Your answer to this question is wrong.",
         "exampleZh": "你對這個問題的回答是錯誤的。"
     },
     {

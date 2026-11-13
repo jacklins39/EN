@@ -541,7 +541,7 @@ const examplesUnit9WordsDB = [
     "kk": "[ˋwɝɪd]",
     "zh": "adj. 擔心的，發愁的；v. 擔心，發愁；使擔憂，使發愁，使焦慮；煩擾，使不安寧（worry 的過去式和過去分詞）",
     "unit": 8,
-    "example": "[v.] I was worried you wouldn't come.",
+    "example": "[adj.] I was worried you wouldn't come.",
     "exampleZh": "我還擔心你不來呢。"
   },
   {
@@ -4956,7 +4956,7 @@ const examplesUnit9WordsDB = [
     "kk": "[mʌnˋdeɪn]",
     "zh": "adj. 單調的，平凡的，平淡的；世俗的，塵世的；n. 平凡的事物（the mundane）",
     "unit": 9,
-    "example": "[n.] The level is mundane, and even the voiceovers are banal.",
+    "example": "[adj.] The level is mundane, and even the voiceovers are banal.",
     "exampleZh": "水平很一般，甚至連畫外音都很乏味。"
   },
   {
@@ -5082,7 +5082,7 @@ const examplesUnit9WordsDB = [
     "kk": "[lɪt]",
     "zh": "v. 點亮，照亮；點燃，點火；偶然發現，偶然碰見，偶然獲得（light 的過去式和過去分詞；light on/upon 的過去式）；adj. 被照亮的，亮著的；點燃的，燒著的（light 的過去分詞）；<俚語>極好的，令人興奮的；n. 文學，文學作品（literature 的縮略）；（Lit）（美、荷、俄）李（人名）",
     "unit": 9,
-    "example": "[n.] The room was lit by spotlights.",
+    "example": "[adj.] The room was lit by spotlights.",
     "exampleZh": "房間被聚光燈照亮。"
   },
   {
@@ -6441,7 +6441,7 @@ const examplesUnit9WordsDB = [
     "kk": "[ˋsoʊsioʊ]",
     "zh": "pref. 社會的、與社會相關的（前綴，如 socio-economic 社經的）",
     "unit": 9,
-    "example": "[n.] Researchers analyzed how family socio-economic status influences children's educational attainment.",
+    "example": "[pref.] Researchers analyzed how family socio-economic status influences children's educational attainment.",
     "exampleZh": "研究人員分析了家庭的社經地位如何影響孩子們的受教育程度。"
   },
   {
@@ -6576,7 +6576,7 @@ const examplesUnit9WordsDB = [
     "kk": "[ˋkoʊzi]",
     "zh": "adj. 溫暖舒適的；愉快的，友好的；密切的，相互勾結的；輕易得到的；避免困難的，自滿的；n. 保暖罩；v. 獻殷勤，取悅",
     "unit": 9,
-    "example": "[n.] The overall ambience of the room is cosy.",
+    "example": "[adj.] The overall ambience of the room is cosy.",
     "exampleZh": "這個房間的整體氛圍是舒適的。"
   },
   {

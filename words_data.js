@@ -46324,7 +46324,7 @@ const externalVocabularyDB = [
         "en": "bound",
         "kk": "[baʊnd]",
         "uk": "/baʊnd/",
-        "zh": "adj. 束縛的、必然的、肯定的、受約束的；v. 跳躍、蹦跳著走、形成……的邊界、劃界；n. 界限、限制、蹦跳、跳躍",
+        "zh": "adj. 束縛的、必然的、肯定的、受約束的；v. 綁、捆綁（bind 的過去式與過去分詞）；跳躍、劃界；n. 界限、限制",
         "unit": 5,
         "example": "[v.] They bound his hands together.",
         "exampleZh": "他們把他的雙手綁在一起。"

@@ -2,7 +2,7 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <meta name="referrer" content="no-referrer">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261113V1';
+        const APP_BUILD_VERSION = '20261113V2';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -174,8 +174,20 @@
                 color: #CBD5E1 !important;
             }
 
-            /* 5. 搜尋框字體防 iOS 自動 Zoom (≥16px) */
-            #dict-search {
+            /* 5. 表單輸入框與筆記區字體全面防 iOS 自動 Zoom (強制 ≥16px 徹底杜絕 Safari 聚焦時強制放大畫面) */
+            input[type="text"],
+            input[type="search"],
+            input[type="number"],
+            input[type="email"],
+            input[type="password"],
+            textarea,
+            select,
+            #dict-search,
+            #detail-word-note-input,
+            #input-custom-zh,
+            #modal-custom-zh-input,
+            #fill-input,
+            #sandbox-fill-input {
                 font-size: 16px !important;
             }
         }
@@ -13187,7 +13199,7 @@ function cleanupMasteredMistakes() {
                                     <button type="button" id="btn-detail-note-clean-md" class="text-[10px] px-2 py-0.5 rounded-full bg-amber-100/90 text-amber-900 border border-amber-300 hover:bg-amber-200/90 font-semibold transition cursor-pointer" title="一鍵清除 AI 複製來的 ** 粗體與 Markdown 符號">✨ 去除 **</button>
                                 </div>
                             </div>
-                            <textarea id="detail-word-note-input" rows="3" maxlength="1000" placeholder="輸入你的專屬筆記（可直接貼上 AI 聯想法，系統會自動淨化 ** 符號；打字即自動儲存並跨裝置雲端同步）..." class="w-full text-xs sm:text-sm bg-white/95 text-gray-800 rounded-xl px-3 py-2 border border-amber-200/90 focus:border-amber-500 focus:ring-2 focus:ring-amber-200/70 outline-none resize-y leading-relaxed transition-all">${esc(existingNote)}</textarea>
+                            <textarea id="detail-word-note-input" rows="3" maxlength="1000" placeholder="輸入你的專屬筆記（可直接貼上 AI 聯想法，系統會自動淨化 ** 符號；打字即自動儲存並跨裝置雲端同步）..." class="w-full text-base sm:text-sm bg-white/95 text-gray-800 rounded-xl px-3 py-2 border border-amber-200/90 focus:border-amber-500 focus:ring-2 focus:ring-amber-200/70 outline-none resize-y leading-relaxed transition-all">${esc(existingNote)}</textarea>
                             <div class="flex items-center justify-between text-[11px] text-gray-400">
                                 <span id="detail-word-note-count">${existingNote.length} / 1000 字</span>
                                 <div class="flex items-center gap-2">
@@ -13302,7 +13314,10 @@ function cleanupMasteredMistakes() {
                     noteDebounceTimer = setTimeout(() => commitNoteSave(false), 450);
                 });
 
-                noteInputEl.addEventListener('blur', () => commitNoteSave(false));
+                noteInputEl.addEventListener('blur', () => {
+                    commitNoteSave(false);
+                    try { window.scrollTo({ top: window.scrollY, behavior: 'instant' }); } catch (e) {}
+                });
                 noteInputEl.addEventListener('keydown', (e) => {
                     e.stopPropagation();
                     if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
@@ -13312,7 +13327,10 @@ function cleanupMasteredMistakes() {
                     }
                 });
 
-                btnNoteSave?.addEventListener('click', () => commitNoteSave(true));
+                btnNoteSave?.addEventListener('click', () => {
+                    commitNoteSave(true);
+                    if (noteInputEl) noteInputEl.blur();
+                });
                 btnNoteClear?.addEventListener('click', () => {
                     noteInputEl.value = '';
                     autoResizeNote();
@@ -13390,7 +13408,7 @@ function cleanupMasteredMistakes() {
                     <a href="https://tw.dictionary.search.yahoo.com/search?p=${encodeURIComponent(word)}" target="_blank" rel="noopener noreferrer" class="text-center bg-purple-50 text-purple-700 hover:bg-purple-100 font-medium py-2 rounded-xl text-sm border-0 border-purple-200">在 Yahoo 字典查看</a>
                     <a href="https://translate.google.com/?sl=en&tl=zh-TW&text=${encodeURIComponent(word)}&op=translate" target="_blank" rel="noopener noreferrer" class="text-center bg-[#E5E5EA] text-[#0071E3] hover:bg-indigo-100 font-medium py-2 rounded-xl text-sm border-0 border-[#C3D0B0]">使用 Google 翻譯</a>
                     ${builtinUnitOf(word) ? `<div class="text-center text-[#86868B] text-sm py-2">此字已在內建字庫 (${getUnitBadgeInfo(builtinUnitOf(word)).name})，不需加入自訂</div>` : `
-                    <input id="input-custom-zh" type="text" maxlength="100" value="${esc(def)}" placeholder="中文說明 (可自行修改)" class="border border-green-200 dark:border-green-800/60 rounded-xl px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-green-300 bg-white dark:bg-[#162033] text-gray-900 dark:text-[#F8FAFC]">
+                    <input id="input-custom-zh" type="text" maxlength="100" value="${esc(def)}" placeholder="中文說明 (可自行修改)" class="border border-green-200 dark:border-green-800/60 rounded-xl px-3 py-2 text-base sm:text-sm outline-none focus:ring-2 focus:ring-green-300 bg-white dark:bg-[#162033] text-gray-900 dark:text-[#F8FAFC]">
                     <button id="btn-add-custom-word" class="text-center bg-green-50 text-[#0071E3] hover:bg-[#E5E5EA] font-medium py-2 rounded-xl text-sm border-0 border-green-200 transition-colors shadow-sm">
                         ➕ 將此單字加入「自訂字庫」
                     </button>`}
@@ -13424,7 +13442,7 @@ function cleanupMasteredMistakes() {
                 <div class="flex flex-col gap-2">
                     <a href="https://tw.dictionary.search.yahoo.com/search?p=${encodeURIComponent(word)}" target="_blank" rel="noopener noreferrer" class="text-center bg-purple-50 text-purple-700 hover:bg-purple-100 font-medium py-2 rounded-xl text-sm border-0 border-purple-200">在 Yahoo 字典查看</a>
                     <a href="https://translate.google.com/?sl=en&tl=zh-TW&text=${encodeURIComponent(word)}&op=translate" target="_blank" rel="noopener noreferrer" class="text-center bg-[#E5E5EA] text-[#0071E3] hover:bg-indigo-100 font-medium py-2 rounded-xl text-sm border-0 border-[#C3D0B0]">使用 Google 翻譯</a>
-                    <input id="input-custom-zh" type="text" maxlength="100" placeholder="手動輸入中文說明" class="border border-green-200 dark:border-green-800/60 rounded-xl px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-green-300 bg-white dark:bg-[#162033] text-gray-900 dark:text-[#F8FAFC]">
+                    <input id="input-custom-zh" type="text" maxlength="100" placeholder="手動輸入中文說明" class="border border-green-200 dark:border-green-800/60 rounded-xl px-3 py-2 text-base sm:text-sm outline-none focus:ring-2 focus:ring-green-300 bg-white dark:bg-[#162033] text-gray-900 dark:text-[#F8FAFC]">
                     <button id="btn-add-custom-error" class="text-center bg-green-50 text-[#0071E3] hover:bg-[#E5E5EA] font-medium py-2 rounded-xl text-sm border-0 border-green-200 transition-colors shadow-sm">
                         ➕ 將此單字加入「自訂字庫」
                     </button>
@@ -13458,6 +13476,9 @@ function cleanupMasteredMistakes() {
         }
 
         function closeDictModal() {
+            if (document.activeElement && typeof document.activeElement.blur === 'function') {
+                document.activeElement.blur();
+            }
             const modal = document.getElementById('dict-modal');
             if (!modal || modal.classList.contains('hidden')) return;
             modal.classList.add('hidden');
@@ -13481,6 +13502,9 @@ function cleanupMasteredMistakes() {
         });
 
         function closeWordDetailModal() {
+            if (document.activeElement && typeof document.activeElement.blur === 'function') {
+                document.activeElement.blur();
+            }
             handleWordLeave();
             const modal = document.getElementById('word-detail-modal');
             if (!modal || modal.classList.contains('hidden')) return;

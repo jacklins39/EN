@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261113V4';
+        const APP_BUILD_VERSION = '20261113V5';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -2042,7 +2042,8 @@
             border-color: rgba(245, 158, 11, 0.28) !important;
             border-left: 3px solid #F59E0B !important;
         }
-        html.dark #word-detail-modal #detail-word-note-input {
+        html.dark #word-detail-modal #detail-word-note-input,
+        html.dark #word-detail-modal #detail-word-note-display {
             background-color: #162033 !important;
             color: #F8FAFC !important;
             border-color: rgba(255, 255, 255, 0.14) !important;
@@ -2054,6 +2055,16 @@
             border-color: #F59E0B !important;
             box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.22) !important;
         }
+        html.dark #word-detail-modal #btn-detail-note-edit {
+            background-color: rgba(245, 158, 11, 0.18) !important;
+            color: #FCD34D !important;
+            border-color: rgba(245, 158, 11, 0.45) !important;
+        }
+        html.dark #word-detail-modal #btn-detail-note-cancel {
+            background-color: #1E293B !important;
+            color: #CBD5E1 !important;
+            border-color: rgba(255, 255, 255, 0.16) !important;
+        }
         html.dark #word-detail-modal .user-note-chip {
             background-color: #172235 !important;
             color: #FCD34D !important;
@@ -2063,7 +2074,8 @@
             background-color: #243552 !important;
             color: #FFFFFF !important;
         }
-        html.theme-paper #word-detail-modal #detail-word-note-input {
+        html.theme-paper #word-detail-modal #detail-word-note-input,
+        html.theme-paper #word-detail-modal #detail-word-note-display {
             background-color: #FAF8F3 !important;
             border-color: #D8D0C0 !important;
             color: #2C261E !important;
@@ -2434,6 +2446,7 @@
         /* 手機彈窗高度改用動態視窗高度 (避開網址列伸縮造成的卡頓) */
         @supports (height: 100dvh) {
             #dict-modal > div { max-height: 88dvh; }
+            #word-detail-modal > div { max-height: 90dvh; }
         }
 
         /* =========================================================
@@ -3713,7 +3726,7 @@
                     </button>
                 </div>
                 <!-- 滾動詳解內容區 -->
-                <div id="word-detail-content" class="overflow-y-auto pr-1 custom-scrollbar space-y-4">
+                <div id="word-detail-content" class="overflow-y-auto overscroll-contain pr-1 custom-scrollbar space-y-4">
                     <!-- 動態注入內容 -->
                 </div>
             </div>
@@ -5555,14 +5568,9 @@ function cleanupMasteredMistakes() {
             const boxEl = document.getElementById('card-user-note-box');
             const textEl = document.getElementById('card-user-note-text');
             if (!boxEl || !textEl) return;
-            const note = getWordNote(w);
-            if (note) {
-                textEl.textContent = cleanMarkdownText(note);
-                boxEl.classList.remove('hidden');
-            } else {
-                textEl.textContent = '';
-                boxEl.classList.add('hidden');
-            }
+            // 翻牌練習/輪播背面不顯示個人備註文字（個人備註統一於單字詳解視窗閱讀與編輯）
+            textEl.textContent = '';
+            boxEl.classList.add('hidden');
         }
 
         function saveWordNote(wordOrEn, rawText, immediateCloud = false) {
@@ -13242,31 +13250,47 @@ function cleanupMasteredMistakes() {
                 <!-- 生活實用例句 -->
                 ${exampleHtml}
 
-                <!-- 個人學習備註 / 專屬記憶筆記 -->
+                <!-- 個人學習備註 / 專屬記憶筆記 (鎖定全覽模式 ↔ 手動編輯模式，按存檔才算存) -->
                 ${(() => {
                     const existingNote = getWordNote(w);
+                    const hasSavedNote = Boolean(existingNote && existingNote.trim());
                     return `
-                        <div class="user-note-card bg-amber-50/55 p-3.5 rounded-2xl border border-amber-200/80 space-y-2">
+                        <div id="detail-word-note-card" class="user-note-card bg-amber-50/55 p-3.5 rounded-2xl border border-amber-200/80 space-y-2.5">
                             <div class="flex items-center justify-between gap-2 flex-wrap">
                                 <div class="flex items-center gap-1.5 text-xs font-bold text-amber-900">
                                     <span>📝</span>
                                     <span>個人學習備註</span>
-                                    <span id="detail-word-note-status" class="text-[10px] font-medium px-1.5 py-0.5 rounded-full ${existingNote ? 'bg-emerald-100/90 text-emerald-700 dark:bg-emerald-950/70 dark:text-emerald-300' : 'text-amber-700/70 dark:text-slate-400'}">${existingNote ? '✓ 已儲存' : '自動儲存並同步'}</span>
+                                    <span id="detail-word-note-status" class="text-[10px] font-medium px-2 py-0.5 rounded-full ${hasSavedNote ? 'bg-emerald-100/90 text-emerald-700 dark:bg-emerald-950/70 dark:text-emerald-300' : 'bg-amber-100/80 text-amber-800 dark:bg-amber-950/70 dark:text-amber-300'}">${hasSavedNote ? '🔒 已儲存鎖定' : '按儲存才算存檔'}</span>
                                 </div>
-                                <div class="flex items-center gap-1 flex-wrap">
-                                    <button type="button" data-note-tag="【諧音】" class="user-note-chip text-[10px] px-2 py-0.5 rounded-full bg-white text-amber-800 border border-amber-200 hover:bg-amber-100/80 transition cursor-pointer">+ 諧音</button>
-                                    <button type="button" data-note-tag="【易混淆】" class="user-note-chip text-[10px] px-2 py-0.5 rounded-full bg-white text-amber-800 border border-amber-200 hover:bg-amber-100/80 transition cursor-pointer">+ 易混淆</button>
-                                    <button type="button" data-note-tag="【搭配】" class="user-note-chip text-[10px] px-2 py-0.5 rounded-full bg-white text-amber-800 border border-amber-200 hover:bg-amber-100/80 transition cursor-pointer">+ 搭配</button>
-                                    <button type="button" data-note-tag="【考點】" class="user-note-chip text-[10px] px-2 py-0.5 rounded-full bg-white text-amber-800 border border-amber-200 hover:bg-amber-100/80 transition cursor-pointer">+ 考點</button>
-                                    <button type="button" id="btn-detail-note-clean-md" class="text-[10px] px-2 py-0.5 rounded-full bg-amber-100/90 text-amber-900 border border-amber-300 hover:bg-amber-200/90 font-semibold transition cursor-pointer" title="一鍵清除 AI 複製來的 ** 粗體與 Markdown 符號">✨ 去除 **</button>
-                                </div>
+                                <button type="button" id="btn-detail-note-edit" class="${hasSavedNote ? '' : 'hidden '}inline-flex items-center gap-1 text-xs font-bold px-3 py-1.5 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 text-amber-900 border border-amber-400/60 active:scale-95 transition cursor-pointer select-none">
+                                    <span>✏️</span><span>編輯</span>
+                                </button>
                             </div>
-                            <textarea id="detail-word-note-input" rows="3" maxlength="1000" placeholder="輸入你的專屬筆記（可直接貼上 AI 聯想法，系統會自動淨化 ** 符號；打字即自動儲存並跨裝置雲端同步）..." class="w-full text-base sm:text-sm bg-white/95 text-gray-800 rounded-xl px-3 py-2 border border-amber-200/90 focus:border-amber-500 focus:ring-2 focus:ring-amber-200/70 outline-none resize-y leading-relaxed transition-all">${esc(existingNote)}</textarea>
-                            <div class="flex items-center justify-between text-[11px] text-gray-400">
-                                <span id="detail-word-note-count">${existingNote.length} / 1000 字</span>
-                                <div class="flex items-center gap-2">
-                                    <button type="button" id="btn-detail-note-clear" class="${existingNote ? '' : 'hidden '}text-rose-500 hover:text-rose-600 font-medium px-2 py-0.5 rounded-lg hover:bg-rose-50 dark:hover:bg-rose-950/40 transition cursor-pointer">清除</button>
-                                    <button type="button" id="btn-detail-note-save" class="bg-amber-500 hover:bg-amber-600 text-white font-semibold px-2.5 py-1 rounded-lg shadow-2xs active:scale-95 transition cursor-pointer">💾 儲存備註</button>
+
+                            <!-- 鎖定唯讀全覽區：存檔後完整展開顯示全部內容，不限高度且手機滑動不會誤開鍵盤 -->
+                            <div id="detail-word-note-view-wrap" class="${hasSavedNote ? '' : 'hidden '}">
+                                <div id="detail-word-note-display" class="w-full text-[15px] sm:text-sm bg-white/95 text-gray-800 rounded-xl px-3.5 py-2.5 border border-amber-200/80 leading-relaxed whitespace-pre-wrap break-words select-text">${esc(existingNote)}</div>
+                            </div>
+
+                            <!-- 手動編輯區：輸入/貼上皆為草稿，點擊「💾 儲存備註」才正式存檔同步並鎖定 -->
+                            <div id="detail-word-note-edit-wrap" class="${hasSavedNote ? 'hidden ' : ''}space-y-2">
+                                <div class="flex items-center gap-1.5 flex-wrap">
+                                    <button type="button" data-note-tag="【諧音】" class="user-note-chip text-[11px] sm:text-[10px] px-2.5 py-1 sm:py-0.5 rounded-full bg-white text-amber-800 border border-amber-200 hover:bg-amber-100/80 transition cursor-pointer active:scale-95">+ 諧音</button>
+                                    <button type="button" data-note-tag="【易混淆】" class="user-note-chip text-[11px] sm:text-[10px] px-2.5 py-1 sm:py-0.5 rounded-full bg-white text-amber-800 border border-amber-200 hover:bg-amber-100/80 transition cursor-pointer active:scale-95">+ 易混淆</button>
+                                    <button type="button" data-note-tag="【搭配】" class="user-note-chip text-[11px] sm:text-[10px] px-2.5 py-1 sm:py-0.5 rounded-full bg-white text-amber-800 border border-amber-200 hover:bg-amber-100/80 transition cursor-pointer active:scale-95">+ 搭配</button>
+                                    <button type="button" data-note-tag="【考點】" class="user-note-chip text-[11px] sm:text-[10px] px-2.5 py-1 sm:py-0.5 rounded-full bg-white text-amber-800 border border-amber-200 hover:bg-amber-100/80 transition cursor-pointer active:scale-95">+ 考點</button>
+                                    <button type="button" id="btn-detail-note-clean-md" class="text-[11px] sm:text-[10px] px-2.5 py-1 sm:py-0.5 rounded-full bg-amber-100/90 text-amber-900 border border-amber-300 hover:bg-amber-200/90 font-semibold transition cursor-pointer active:scale-95" title="一鍵清除 AI 複製來的 ** 粗體與 Markdown 符號">✨ 去除 **</button>
+                                </div>
+                                <textarea id="detail-word-note-input" rows="4" maxlength="1000" placeholder="輸入你的專屬筆記（可直接貼上 AI 聯想法，系統會自動淨化 ** 符號；輸入完成後請點擊「儲存備註」）..." class="w-full text-base sm:text-sm bg-white/95 text-gray-800 rounded-xl px-3 py-2.5 border border-amber-300/90 focus:border-amber-500 focus:ring-2 focus:ring-amber-200/70 outline-none resize-y leading-relaxed transition-all">${esc(existingNote)}</textarea>
+                                <div class="flex items-center justify-between gap-2 flex-wrap pt-0.5">
+                                    <div class="flex items-center gap-2 text-[11px] text-gray-400">
+                                        <span id="detail-word-note-count">${existingNote.length} / 1000 字</span>
+                                        <button type="button" id="btn-detail-note-clear" class="${existingNote ? '' : 'hidden '}text-rose-500 hover:text-rose-600 font-medium px-2 py-1 rounded-lg hover:bg-rose-50 dark:hover:bg-rose-950/40 transition cursor-pointer active:scale-95">清空</button>
+                                    </div>
+                                    <div class="flex items-center gap-2 ml-auto">
+                                        <button type="button" id="btn-detail-note-cancel" class="${hasSavedNote ? '' : 'hidden '}px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold border border-slate-200 active:scale-95 transition cursor-pointer">取消</button>
+                                        <button type="button" id="btn-detail-note-save" class="bg-amber-500 hover:bg-amber-600 text-white text-xs font-bold px-3.5 py-1.5 rounded-xl shadow-xs active:scale-95 transition cursor-pointer">💾 儲存備註</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -13299,36 +13323,119 @@ function cleanupMasteredMistakes() {
                 playWordExampleAudio(w.id, w.example);
             });
 
-            // 事件綁定：個人學習備註 (自動高度、400ms 防抖自動存檔、快捷標籤插入與手動儲存)
+            // 事件綁定：個人學習備註 (手動儲存機制 + 鎖定全覽模式 ↔ 編輯模式)
+            const noteCardEl = document.getElementById('detail-word-note-card');
+            const noteViewWrap = document.getElementById('detail-word-note-view-wrap');
+            const noteEditWrap = document.getElementById('detail-word-note-edit-wrap');
+            const noteDisplayEl = document.getElementById('detail-word-note-display');
             const noteInputEl = document.getElementById('detail-word-note-input');
             const noteStatusEl = document.getElementById('detail-word-note-status');
             const noteCountEl = document.getElementById('detail-word-note-count');
+            const btnNoteEdit = document.getElementById('btn-detail-note-edit');
             const btnNoteSave = document.getElementById('btn-detail-note-save');
+            const btnNoteCancel = document.getElementById('btn-detail-note-cancel');
             const btnNoteClear = document.getElementById('btn-detail-note-clear');
+
             if (noteInputEl) {
-                let noteDebounceTimer = null;
+                let savedNoteCache = getWordNote(w);
                 const autoResizeNote = () => {
                     noteInputEl.style.height = 'auto';
-                    noteInputEl.style.height = Math.max(58, Math.min(200, noteInputEl.scrollHeight)) + 'px';
+                    noteInputEl.style.height = Math.max(96, Math.min(240, noteInputEl.scrollHeight)) + 'px';
                 };
-                requestAnimationFrame(autoResizeNote);
+                if (!noteEditWrap?.classList.contains('hidden')) {
+                    requestAnimationFrame(autoResizeNote);
+                }
 
-                const commitNoteSave = (immediate = false) => {
-                    if (noteDebounceTimer) {
-                        clearTimeout(noteDebounceTimer);
-                        noteDebounceTimer = null;
-                    }
-                    const saved = saveWordNote(w, noteInputEl.value, immediate);
+                const updateDraftMeta = () => {
+                    const val = noteInputEl.value;
+                    if (noteCountEl) noteCountEl.textContent = `${val.length} / 1000 字`;
+                    if (btnNoteClear) btnNoteClear.classList.toggle('hidden', !val);
+                    const isDirty = val.trim() !== savedNoteCache.trim();
                     if (noteStatusEl) {
-                        noteStatusEl.textContent = saved ? '✓ 已儲存並同步' : '已清空備註';
-                        noteStatusEl.className = 'text-[10px] font-medium px-1.5 py-0.5 rounded-full bg-emerald-100/90 text-emerald-700 dark:bg-emerald-950/70 dark:text-emerald-300';
-                    }
-                    if (btnNoteClear) {
-                        btnNoteClear.classList.toggle('hidden', !saved);
+                        if (isDirty) {
+                            noteStatusEl.textContent = '● 尚未儲存 (請按儲存)';
+                            noteStatusEl.className = 'text-[10px] font-semibold px-2 py-0.5 rounded-full bg-amber-200/90 text-amber-900 dark:bg-amber-900/70 dark:text-amber-200';
+                        } else {
+                            noteStatusEl.textContent = savedNoteCache ? '編輯中 (按儲存才算存)' : '按儲存才算存檔';
+                            noteStatusEl.className = 'text-[10px] font-medium px-2 py-0.5 rounded-full bg-amber-100/80 text-amber-800 dark:bg-amber-950/70 dark:text-amber-300';
+                        }
                     }
                 };
 
-                // 貼上時自動攔截並淨化 Markdown 符號 (** 粗體、`code`、### 標題、* 清單)
+                const enterNoteViewMode = (text) => {
+                    if (noteDisplayEl) noteDisplayEl.textContent = text;
+                    if (noteEditWrap) noteEditWrap.classList.add('hidden');
+                    if (noteViewWrap) noteViewWrap.classList.remove('hidden');
+                    if (btnNoteEdit) btnNoteEdit.classList.remove('hidden');
+                    if (noteStatusEl) {
+                        noteStatusEl.textContent = '🔒 已儲存鎖定';
+                        noteStatusEl.className = 'text-[10px] font-medium px-2 py-0.5 rounded-full bg-emerald-100/90 text-emerald-700 dark:bg-emerald-950/70 dark:text-emerald-300';
+                    }
+                    noteInputEl.blur();
+                    try { window.scrollTo({ top: window.scrollY, behavior: 'instant' }); } catch (e) {}
+                    requestAnimationFrame(() => {
+                        noteCardEl?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+                    });
+                };
+
+                const enterNoteEditMode = (focusInput = true) => {
+                    noteInputEl.value = savedNoteCache;
+                    if (noteViewWrap) noteViewWrap.classList.add('hidden');
+                    if (noteEditWrap) noteEditWrap.classList.remove('hidden');
+                    if (btnNoteEdit) btnNoteEdit.classList.add('hidden');
+                    if (btnNoteCancel) btnNoteCancel.classList.toggle('hidden', !savedNoteCache);
+                    updateDraftMeta();
+                    requestAnimationFrame(() => {
+                        autoResizeNote();
+                        if (focusInput) {
+                            noteInputEl.focus();
+                            try {
+                                const len = noteInputEl.value.length;
+                                noteInputEl.setSelectionRange(len, len);
+                            } catch (e) {}
+                            setTimeout(() => {
+                                noteEditWrap?.scrollIntoView({ block: 'center', behavior: 'smooth' });
+                            }, 180);
+                        }
+                    });
+                };
+
+                const commitNoteSave = () => {
+                    const saved = saveWordNote(w, noteInputEl.value, true);
+                    savedNoteCache = saved;
+                    noteInputEl.value = saved;
+                    noteInputEl.blur();
+                    try { window.scrollTo({ top: window.scrollY, behavior: 'instant' }); } catch (e) {}
+                    if (saved) {
+                        enterNoteViewMode(saved);
+                        if (typeof showQuickToast === 'function') showQuickToast('✓ 備註已儲存並鎖定畫面');
+                    } else {
+                        if (noteViewWrap) noteViewWrap.classList.add('hidden');
+                        if (noteEditWrap) noteEditWrap.classList.remove('hidden');
+                        if (btnNoteEdit) btnNoteEdit.classList.add('hidden');
+                        if (btnNoteCancel) btnNoteCancel.classList.add('hidden');
+                        if (btnNoteClear) btnNoteClear.classList.add('hidden');
+                        if (noteCountEl) noteCountEl.textContent = '0 / 1000 字';
+                        if (noteStatusEl) {
+                            noteStatusEl.textContent = '✓ 已清空備註';
+                            noteStatusEl.className = 'text-[10px] font-medium px-2 py-0.5 rounded-full bg-emerald-100/90 text-emerald-700 dark:bg-emerald-950/70 dark:text-emerald-300';
+                        }
+                        autoResizeNote();
+                        if (typeof showQuickToast === 'function') showQuickToast('已清空此單字備註');
+                    }
+                };
+
+                btnNoteEdit?.addEventListener('click', () => enterNoteEditMode(true));
+
+                btnNoteCancel?.addEventListener('click', () => {
+                    noteInputEl.blur();
+                    noteInputEl.value = savedNoteCache;
+                    if (savedNoteCache) {
+                        enterNoteViewMode(savedNoteCache);
+                    }
+                });
+
+                // 貼上時自動攔截並淨化 Markdown 符號（不自動存檔，仍須按儲存才算存）
                 noteInputEl.addEventListener('paste', (e) => {
                     const pasteText = (e.clipboardData || window.clipboardData)?.getData('text');
                     if (pasteText && (/[\*`#_]/.test(pasteText))) {
@@ -13341,24 +13448,20 @@ function cleanupMasteredMistakes() {
                         noteInputEl.value = nextVal;
                         noteInputEl.selectionStart = noteInputEl.selectionEnd = Math.min(nextVal.length, start + cleaned.length);
                         autoResizeNote();
-                        const len = noteInputEl.value.length;
-                        if (noteCountEl) noteCountEl.textContent = `${len} / 1000 字`;
-                        commitNoteSave(false);
-                        if (typeof showQuickToast === 'function') showQuickToast('已自動淨化清除 ** 與 Markdown 標籤 ✨');
+                        updateDraftMeta();
+                        if (typeof showQuickToast === 'function') showQuickToast('已淨化 ** 符號，確認後請點「儲存備註」✨');
                     }
                 });
 
-                // 一鍵去除既有文字中的 ** 符號
+                // 一鍵去除既有草稿中的 ** 符號（僅調整草稿，仍須按儲存才算存）
                 document.getElementById('btn-detail-note-clean-md')?.addEventListener('click', () => {
                     const raw = noteInputEl.value;
                     const cleaned = cleanMarkdownText(raw);
                     if (raw !== cleaned) {
                         noteInputEl.value = cleaned.slice(0, 1000);
                         autoResizeNote();
-                        const len = noteInputEl.value.length;
-                        if (noteCountEl) noteCountEl.textContent = `${len} / 1000 字`;
-                        commitNoteSave(true);
-                        if (typeof showQuickToast === 'function') showQuickToast('已清除所有 ** 與格式符號 ✨');
+                        updateDraftMeta();
+                        if (typeof showQuickToast === 'function') showQuickToast('已清除 ** 格式，請點「儲存備註」完成存檔 ✨');
                     } else {
                         if (typeof showQuickToast === 'function') showQuickToast('目前筆記無格式符號');
                     }
@@ -13366,38 +13469,28 @@ function cleanupMasteredMistakes() {
 
                 noteInputEl.addEventListener('input', () => {
                     autoResizeNote();
-                    const len = noteInputEl.value.length;
-                    if (noteCountEl) noteCountEl.textContent = `${len} / 1000 字`;
-                    if (noteStatusEl) {
-                        noteStatusEl.textContent = '編輯中...';
-                        noteStatusEl.className = 'text-[10px] font-medium px-1.5 py-0.5 rounded-full bg-amber-100 text-amber-800 dark:bg-amber-950/70 dark:text-amber-300';
-                    }
-                    if (noteDebounceTimer) clearTimeout(noteDebounceTimer);
-                    noteDebounceTimer = setTimeout(() => commitNoteSave(false), 450);
+                    updateDraftMeta();
                 });
 
                 noteInputEl.addEventListener('blur', () => {
-                    commitNoteSave(false);
+                    // 僅修正手機鍵盤收回後的視野偏移，絕不自動存檔
                     try { window.scrollTo({ top: window.scrollY, behavior: 'instant' }); } catch (e) {}
                 });
                 noteInputEl.addEventListener('keydown', (e) => {
                     e.stopPropagation();
                     if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
                         e.preventDefault();
-                        commitNoteSave(true);
-                        noteInputEl.blur();
+                        commitNoteSave();
                     }
                 });
 
-                btnNoteSave?.addEventListener('click', () => {
-                    commitNoteSave(true);
-                    if (noteInputEl) noteInputEl.blur();
-                });
+                btnNoteSave?.addEventListener('click', commitNoteSave);
                 btnNoteClear?.addEventListener('click', () => {
                     noteInputEl.value = '';
                     autoResizeNote();
-                    if (noteCountEl) noteCountEl.textContent = '0 / 1000 字';
-                    commitNoteSave(true);
+                    updateDraftMeta();
+                    noteInputEl.focus();
+                    if (typeof showQuickToast === 'function') showQuickToast('草稿已清空，點擊「儲存備註」即確定刪除');
                 });
 
                 content.querySelectorAll('[data-note-tag]').forEach(btn => {
@@ -13408,8 +13501,7 @@ function cleanupMasteredMistakes() {
                         noteInputEl.value = (cur + prefix + tag + ' ').slice(0, 1000);
                         noteInputEl.focus();
                         autoResizeNote();
-                        if (noteCountEl) noteCountEl.textContent = `${noteInputEl.value.length} / 1000 字`;
-                        commitNoteSave(false);
+                        updateDraftMeta();
                     });
                 });
             }

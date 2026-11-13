@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261113V3';
+        const APP_BUILD_VERSION = '20261113V4';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -247,9 +247,6 @@
             #view-study:not(.auto-play-layout) #example-container {
                 margin-top: 0.35rem !important;
             }
-            .flip-card-back {
-                overflow-y: auto !important;
-            }
         }
 
         .flip-card {
@@ -358,37 +355,18 @@
             justify-content: center;
             align-items: center;
             padding: 0.85rem 1rem;
-            overflow-y: auto !important;
-            overflow-x: hidden !important;
-            -webkit-overflow-scrolling: touch;
-        }
-        .flip-card-front::-webkit-scrollbar {
-            width: 3px;
-        }
-        .flip-card-front::-webkit-scrollbar-thumb {
-            background-color: rgba(148, 163, 184, 0.5);
-            border-radius: 9999px;
+            overflow: hidden !important;
         }
 
-        /* 背面防溢出與平滑滾動：改用 flex-start 避免頂部內容被滾動截斷 */
+        /* 背面完全跟隨動態高度展開，徹底移除內部滾動容器與 overscroll 鎖死陷阱，讓長筆記可順暢跟隨整個頁面原生捲動 */
         .flip-card-back {
             transform: rotateY(180deg);
             background-color: #f8fafc;
             border: 1.5px solid #e2e8f0;
             justify-content: flex-start !important;
             align-items: stretch !important;
-            overflow-y: auto !important;
-            overflow-x: hidden !important;
-            -webkit-overflow-scrolling: touch;
-            overscroll-behavior: contain;
+            overflow: hidden !important;
             padding: 0.75rem 0.85rem !important;
-        }
-        .flip-card-back::-webkit-scrollbar {
-            width: 3px;
-        }
-        .flip-card-back::-webkit-scrollbar-thumb {
-            background-color: rgba(148, 163, 184, 0.5);
-            border-radius: 9999px;
         }
 
         .btn-action { transition: all 0.2s; }
@@ -7027,9 +7005,8 @@ function cleanupMasteredMistakes() {
                 const borderV = (parseFloat(cs.borderTopWidth) || 2) + (parseFloat(cs.borderBottomWidth) || 2);
                 const contentH = backContent ? backContent.offsetHeight : cardBack.scrollHeight;
                 const minBackH = (isDesktop && !isAutoPlay) ? 350 : (isDesktop && isAutoPlay ? 250 : 320);
-                // 允許動態延伸至 84% 視窗高，僅在極長個人備註時限制上限以保底部按鈕可達
-                const maxBackH = Math.max(580, Math.floor(window.innerHeight * 0.84));
-                const targetH = Math.min(maxBackH, Math.max(minBackH, Math.ceil(contentH + padV + borderV + 8)));
+                // 完整動態撐開至內容實際所需高度，徹底消除卡內滾動條與 iOS 捲動鎖死陷阱
+                const targetH = Math.max(minBackH, Math.ceil(contentH + padV + borderV + 12));
                 if (card.style.height !== targetH + 'px') card.style.height = targetH + 'px';
             } else {
                 const cardFront = card.querySelector('.flip-card-front');
@@ -7060,13 +7037,19 @@ function cleanupMasteredMistakes() {
         (function initFlashcardDynamicResize() {
             if (typeof ResizeObserver === 'function') {
                 _flashcardResizeObserver = new ResizeObserver(() => scheduleSyncFlashcardHeight());
-                const targets = ['card-back-content', 'card-fill-cloze-container', 'view-study'];
+                const targets = ['card-back-content', 'card-fill-cloze-container'];
                 targets.forEach(id => {
                     const el = document.getElementById(id);
                     if (el) _flashcardResizeObserver.observe(el);
                 });
             }
-            window.addEventListener('resize', scheduleSyncFlashcardHeight);
+            let _lastFlashcardViewportW = window.innerWidth;
+            window.addEventListener('resize', () => {
+                if (window.innerWidth !== _lastFlashcardViewportW) {
+                    _lastFlashcardViewportW = window.innerWidth;
+                    scheduleSyncFlashcardHeight();
+                }
+            });
         })();
 
         function nextCard() {

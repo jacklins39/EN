@@ -13964,7 +13964,7 @@ const jhWordsDB = [
         "en": "ring",
         "kk": "[rɪŋ]",
         "uk": "/rɪŋ/",
-        "zh": "n. 戒指、指環、環狀物、圈形物；v. 響、包圍、繞……畫圓、把……圈起來",
+        "zh": "n. 戒指、指環；打電話、鈴聲；v. 按鈴、鳴響、包圍",
         "unit": 18,
         "example": "[n.] I'll give you a ring tomorrow.",
         "exampleZh": "明天我會打電話給你。"
@@ -14096,8 +14096,8 @@ const jhWordsDB = [
         "uk": "/rəʊz/",
         "zh": "n. 玫瑰、玫瑰花、粉紅色；adj. 玫瑰色的",
         "unit": 18,
-        "example": "[n.] The price of gas rose.",
-        "exampleZh": "天然氣價格上漲。"
+        "example": "[n.] He gave her a beautiful red rose on Valentine's Day.",
+        "exampleZh": "他在情人節送給她一朵美麗的紅玫瑰。"
     },
     {
         "id": 31413,

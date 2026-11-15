@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261115V1';
+        const APP_BUILD_VERSION = '20261115V2';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -183,7 +183,6 @@
             textarea,
             select,
             #dict-search,
-            #detail-word-note-input,
             #input-custom-zh,
             #modal-custom-zh-input,
             #fill-input,
@@ -2042,39 +2041,11 @@
             border-color: rgba(245, 158, 11, 0.28) !important;
             border-left: 3px solid #F59E0B !important;
         }
-        html.dark #word-detail-modal #detail-word-note-input,
         html.dark #word-detail-modal #detail-word-note-display {
             background-color: #162033 !important;
             color: #F8FAFC !important;
             border-color: rgba(255, 255, 255, 0.14) !important;
         }
-        html.dark #word-detail-modal #detail-word-note-input::placeholder {
-            color: #64748B !important;
-        }
-        html.dark #word-detail-modal #detail-word-note-input:focus {
-            border-color: #F59E0B !important;
-            box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.22) !important;
-        }
-        html.dark #word-detail-modal #btn-detail-note-edit {
-            background-color: rgba(245, 158, 11, 0.18) !important;
-            color: #FCD34D !important;
-            border-color: rgba(245, 158, 11, 0.45) !important;
-        }
-        html.dark #word-detail-modal #btn-detail-note-cancel {
-            background-color: #1E293B !important;
-            color: #CBD5E1 !important;
-            border-color: rgba(255, 255, 255, 0.16) !important;
-        }
-        html.dark #word-detail-modal .user-note-chip {
-            background-color: #172235 !important;
-            color: #FCD34D !important;
-            border-color: rgba(245, 158, 11, 0.3) !important;
-        }
-        html.dark #word-detail-modal .user-note-chip:hover {
-            background-color: #243552 !important;
-            color: #FFFFFF !important;
-        }
-        html.theme-paper #word-detail-modal #detail-word-note-input,
         html.theme-paper #word-detail-modal #detail-word-note-display {
             background-color: #FAF8F3 !important;
             border-color: #D8D0C0 !important;
@@ -3043,8 +3014,8 @@
                             <div class="mt-1 pt-1 border-t border-dashed border-slate-200">
                                 <p class="text-slate-500 text-[12.5px] sm:text-[13px] font-medium leading-relaxed" id="card-example-zh"></p>
                             </div>
-                            <div id="card-user-note-box" onclick="event.stopPropagation(); if (currentWord && currentWord.en) showWordDetailModal(currentWord.en);" class="hidden mt-2 pt-1.5 border-t border-amber-200/70 dark:border-amber-700/40 text-xs text-amber-800 dark:text-amber-300 flex items-start gap-1.5 cursor-pointer hover:opacity-85 transition-opacity" title="點擊編輯個人學習備註">
-                                <span class="shrink-0 font-bold">📝 備註：</span>
+                            <div id="card-user-note-box" onclick="event.stopPropagation(); if (currentWord && currentWord.en) showWordDetailModal(currentWord.en);" class="hidden mt-2 pt-1.5 border-t border-amber-200/70 dark:border-amber-700/40 text-xs text-amber-800 dark:text-amber-300 flex items-start gap-1.5 cursor-pointer hover:opacity-85 transition-opacity" title="點擊查看詳解與記憶技巧">
+                                <span class="shrink-0 font-bold">💡 記憶技巧：</span>
                                 <span id="card-user-note-text" class="whitespace-pre-wrap break-words font-medium"></span>
                             </div>
                         </div>
@@ -5542,8 +5513,59 @@ function cleanupMasteredMistakes() {
         }
 
         // ==========================================
-        // 個人學習備註 / 專屬記憶筆記引擎 (Personal Word Notes)
-        // 支援跨單元同名單字共享、LocalStorage 即時儲存與 Firestore progress 零配置雲端同步
+        // 唯讀單字記憶技巧分片引擎 (A-Z + other 延遲按需載入)
+        // ==========================================
+        window.WORD_MNEMONICS_DB = window.WORD_MNEMONICS_DB || {};
+        const _loadedMnemonicShards = new Set();
+        const _loadingMnemonicShards = new Map();
+
+        function getMnemonicShardName(wordOrEn) {
+            const enKey = (typeof wordOrEn === 'string' ? wordOrEn : (wordOrEn && wordOrEn.en ? wordOrEn.en : '')).trim().toLowerCase();
+            if (!enKey) return '';
+            const ch = enKey[0];
+            return (ch >= 'a' && ch <= 'z') ? ch : 'other';
+        }
+
+        function loadMnemonicShard(shard) {
+            if (!shard) return Promise.resolve();
+            if (_loadedMnemonicShards.has(shard)) return Promise.resolve();
+            if (_loadingMnemonicShards.has(shard)) return _loadingMnemonicShards.get(shard);
+            const p = new Promise(resolve => {
+                if (typeof document === 'undefined') {
+                    _loadedMnemonicShards.add(shard);
+                    resolve();
+                    return;
+                }
+                const s = document.createElement('script');
+                const ver = (typeof APP_BUILD_VERSION !== 'undefined' && APP_BUILD_VERSION) ? APP_BUILD_VERSION : '1';
+                s.src = `mnemonics/${shard}.js?v=${encodeURIComponent(ver)}`;
+                s.async = true;
+                s.onload = () => {
+                    _loadedMnemonicShards.add(shard);
+                    resolve();
+                };
+                s.onerror = () => {
+                    _loadedMnemonicShards.add(shard);
+                    resolve();
+                };
+                (document.head || document.body || document.documentElement).appendChild(s);
+            });
+            _loadingMnemonicShards.set(shard, p);
+            return p;
+        }
+
+        function getWordMnemonicText(wordOrEn) {
+            if (!wordOrEn) return '';
+            const enKey = (typeof wordOrEn === 'string' ? wordOrEn : (wordOrEn.en || '')).trim().toLowerCase();
+            if (!enKey) return '';
+            if (window.WORD_MNEMONICS_DB && typeof window.WORD_MNEMONICS_DB[enKey] === 'string' && window.WORD_MNEMONICS_DB[enKey].trim()) {
+                return window.WORD_MNEMONICS_DB[enKey].trim();
+            }
+            return getWordNote(wordOrEn);
+        }
+
+        // ==========================================
+        // 既有學習筆記唯讀相容層 (Legacy Personal Notes Fallback)
         // ==========================================
         let userWordNotes = {};
         try {
@@ -13462,48 +13484,27 @@ function cleanupMasteredMistakes() {
                 <!-- 生活實用例句 -->
                 ${exampleHtml}
 
-                <!-- 個人學習備註 / 專屬記憶筆記 (鎖定全覽模式 ↔ 手動編輯模式，按存檔才算存) -->
+                <!-- 💡 記憶技巧 (純唯讀全覽卡片) -->
                 ${(() => {
-                    const existingNote = getWordNote(w);
-                    const hasSavedNote = Boolean(existingNote && existingNote.trim());
+                    const enKey = String(w.en || '').trim().toLowerCase();
+                    const shardName = typeof getMnemonicShardName === 'function' ? getMnemonicShardName(enKey) : '';
+                    const isShardLoaded = shardName ? _loadedMnemonicShards.has(shardName) : true;
+                    const mnemonicText = typeof getWordMnemonicText === 'function' ? getWordMnemonicText(w) : getWordNote(w);
+                    const hasContent = Boolean(mnemonicText);
+                    const displayContent = hasContent
+                        ? esc(mnemonicText)
+                        : (!isShardLoaded ? '正在載入記憶技巧...' : '此單字尚未收錄記憶技巧。');
+                    const textToneClass = hasContent ? 'text-gray-800' : 'text-slate-400 italic';
                     return `
                         <div id="detail-word-note-card" class="user-note-card bg-amber-50/55 p-3.5 rounded-2xl border border-amber-200/80 space-y-2.5">
                             <div class="flex items-center justify-between gap-2 flex-wrap">
                                 <div class="flex items-center gap-1.5 text-xs font-bold text-amber-900">
-                                    <span>📝</span>
-                                    <span>個人學習備註</span>
-                                    <span id="detail-word-note-status" class="text-[10px] font-medium px-2 py-0.5 rounded-full ${hasSavedNote ? 'bg-emerald-100/90 text-emerald-700 dark:bg-emerald-950/70 dark:text-emerald-300' : 'bg-amber-100/80 text-amber-800 dark:bg-amber-950/70 dark:text-amber-300'}">${hasSavedNote ? '🔒 已儲存鎖定' : '按儲存才算存檔'}</span>
+                                    <span>💡</span>
+                                    <span>記憶技巧</span>
                                 </div>
-                                <button type="button" id="btn-detail-note-edit" class="${hasSavedNote ? '' : 'hidden '}inline-flex items-center gap-1 text-xs font-bold px-3 py-1.5 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 text-amber-900 border border-amber-400/60 active:scale-95 transition cursor-pointer select-none">
-                                    <span>✏️</span><span>編輯</span>
-                                </button>
                             </div>
-
-                            <!-- 鎖定唯讀全覽區：存檔後完整展開顯示全部內容，不限高度且手機滑動不會誤開鍵盤 -->
-                            <div id="detail-word-note-view-wrap" class="${hasSavedNote ? '' : 'hidden '}">
-                                <div id="detail-word-note-display" class="w-full text-[15px] sm:text-sm bg-white/95 text-gray-800 rounded-xl px-3.5 py-2.5 border border-amber-200/80 leading-relaxed whitespace-pre-wrap break-words select-text">${esc(existingNote)}</div>
-                            </div>
-
-                            <!-- 手動編輯區：輸入/貼上皆為草稿，點擊「💾 儲存備註」才正式存檔同步並鎖定 -->
-                            <div id="detail-word-note-edit-wrap" class="${hasSavedNote ? 'hidden ' : ''}space-y-2">
-                                <div class="flex items-center gap-1.5 flex-wrap">
-                                    <button type="button" data-note-tag="【諧音】" class="user-note-chip text-[11px] sm:text-[10px] px-2.5 py-1 sm:py-0.5 rounded-full bg-white text-amber-800 border border-amber-200 hover:bg-amber-100/80 transition cursor-pointer active:scale-95">+ 諧音</button>
-                                    <button type="button" data-note-tag="【易混淆】" class="user-note-chip text-[11px] sm:text-[10px] px-2.5 py-1 sm:py-0.5 rounded-full bg-white text-amber-800 border border-amber-200 hover:bg-amber-100/80 transition cursor-pointer active:scale-95">+ 易混淆</button>
-                                    <button type="button" data-note-tag="【搭配】" class="user-note-chip text-[11px] sm:text-[10px] px-2.5 py-1 sm:py-0.5 rounded-full bg-white text-amber-800 border border-amber-200 hover:bg-amber-100/80 transition cursor-pointer active:scale-95">+ 搭配</button>
-                                    <button type="button" data-note-tag="【考點】" class="user-note-chip text-[11px] sm:text-[10px] px-2.5 py-1 sm:py-0.5 rounded-full bg-white text-amber-800 border border-amber-200 hover:bg-amber-100/80 transition cursor-pointer active:scale-95">+ 考點</button>
-                                    <button type="button" id="btn-detail-note-clean-md" class="text-[11px] sm:text-[10px] px-2.5 py-1 sm:py-0.5 rounded-full bg-amber-100/90 text-amber-900 border border-amber-300 hover:bg-amber-200/90 font-semibold transition cursor-pointer active:scale-95" title="一鍵清除 AI 複製來的 ** 粗體與 Markdown 符號">✨ 去除 **</button>
-                                </div>
-                                <textarea id="detail-word-note-input" rows="4" maxlength="${MAX_WORD_NOTE_LENGTH}" placeholder="輸入你的專屬筆記（可直接貼上 AI 聯想法，系統會自動淨化 ** 符號；輸入完成後請點擊「儲存備註」）..." class="w-full text-base sm:text-sm bg-white/95 text-gray-800 rounded-xl px-3 py-2.5 border border-amber-300/90 focus:border-amber-500 focus:ring-2 focus:ring-amber-200/70 outline-none resize-y leading-relaxed transition-all">${esc(existingNote)}</textarea>
-                                <div class="flex items-center justify-between gap-2 flex-wrap pt-0.5">
-                                    <div class="flex items-center gap-2 text-[11px] text-gray-400">
-                                        <span id="detail-word-note-count">${existingNote.length} / ${MAX_WORD_NOTE_LENGTH} 字</span>
-                                        <button type="button" id="btn-detail-note-clear" class="${existingNote ? '' : 'hidden '}text-rose-500 hover:text-rose-600 font-medium px-2 py-1 rounded-lg hover:bg-rose-50 dark:hover:bg-rose-950/40 transition cursor-pointer active:scale-95">清空</button>
-                                    </div>
-                                    <div class="flex items-center gap-2 ml-auto">
-                                        <button type="button" id="btn-detail-note-cancel" class="${hasSavedNote ? '' : 'hidden '}px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold border border-slate-200 active:scale-95 transition cursor-pointer">取消</button>
-                                        <button type="button" id="btn-detail-note-save" class="bg-amber-500 hover:bg-amber-600 text-white text-xs font-bold px-3.5 py-1.5 rounded-xl shadow-xs active:scale-95 transition cursor-pointer">💾 儲存備註</button>
-                                    </div>
-                                </div>
+                            <div id="detail-word-note-view-wrap">
+                                <div id="detail-word-note-display" class="w-full text-[15px] sm:text-sm bg-white/95 ${textToneClass} rounded-xl px-3.5 py-2.5 border border-amber-200/80 leading-relaxed whitespace-pre-wrap break-words select-text">${displayContent}</div>
                             </div>
                         </div>
                     `;
@@ -13535,194 +13536,24 @@ function cleanupMasteredMistakes() {
                 playWordExampleAudio(w.id, w.example);
             });
 
-            // 事件綁定：個人學習備註 (手動儲存機制 + 鎖定全覽模式 ↔ 編輯模式)
-            const noteCardEl = document.getElementById('detail-word-note-card');
-            const noteViewWrap = document.getElementById('detail-word-note-view-wrap');
-            const noteEditWrap = document.getElementById('detail-word-note-edit-wrap');
-            const noteDisplayEl = document.getElementById('detail-word-note-display');
-            const noteInputEl = document.getElementById('detail-word-note-input');
-            const noteStatusEl = document.getElementById('detail-word-note-status');
-            const noteCountEl = document.getElementById('detail-word-note-count');
-            const btnNoteEdit = document.getElementById('btn-detail-note-edit');
-            const btnNoteSave = document.getElementById('btn-detail-note-save');
-            const btnNoteCancel = document.getElementById('btn-detail-note-cancel');
-            const btnNoteClear = document.getElementById('btn-detail-note-clear');
-
-            if (noteInputEl) {
-                let savedNoteCache = getWordNote(w);
-                const autoResizeNote = () => {
-                    const maxNoteH = window.innerWidth >= 640 ? 340 : 240;
-                    noteInputEl.style.height = 'auto';
-                    noteInputEl.style.height = Math.max(96, Math.min(maxNoteH, noteInputEl.scrollHeight)) + 'px';
-                };
-                if (!noteEditWrap?.classList.contains('hidden')) {
-                    requestAnimationFrame(autoResizeNote);
-                }
-
-                const updateDraftMeta = () => {
-                    const val = noteInputEl.value;
-                    if (noteCountEl) {
-                        noteCountEl.textContent = `${val.length} / ${MAX_WORD_NOTE_LENGTH} 字`;
-                        noteCountEl.classList.toggle('text-amber-600', val.length >= MAX_WORD_NOTE_LENGTH);
-                        noteCountEl.classList.toggle('font-semibold', val.length >= MAX_WORD_NOTE_LENGTH);
-                    }
-                    if (btnNoteClear) btnNoteClear.classList.toggle('hidden', !val);
-                    const isDirty = val.trim() !== savedNoteCache.trim();
-                    if (noteStatusEl) {
-                        if (isDirty) {
-                            noteStatusEl.textContent = '● 尚未儲存 (請按儲存)';
-                            noteStatusEl.className = 'text-[10px] font-semibold px-2 py-0.5 rounded-full bg-amber-200/90 text-amber-900 dark:bg-amber-900/70 dark:text-amber-200';
-                        } else {
-                            noteStatusEl.textContent = savedNoteCache ? '編輯中 (按儲存才算存)' : '按儲存才算存檔';
-                            noteStatusEl.className = 'text-[10px] font-medium px-2 py-0.5 rounded-full bg-amber-100/80 text-amber-800 dark:bg-amber-950/70 dark:text-amber-300';
-                        }
-                    }
-                };
-
-                const enterNoteViewMode = (text) => {
-                    if (noteDisplayEl) noteDisplayEl.textContent = text;
-                    if (noteEditWrap) noteEditWrap.classList.add('hidden');
-                    if (noteViewWrap) noteViewWrap.classList.remove('hidden');
-                    if (btnNoteEdit) btnNoteEdit.classList.remove('hidden');
-                    if (noteStatusEl) {
-                        noteStatusEl.textContent = '🔒 已儲存鎖定';
-                        noteStatusEl.className = 'text-[10px] font-medium px-2 py-0.5 rounded-full bg-emerald-100/90 text-emerald-700 dark:bg-emerald-950/70 dark:text-emerald-300';
-                    }
-                    noteInputEl.blur();
-                    try { window.scrollTo({ top: window.scrollY, behavior: 'instant' }); } catch (e) {}
-                    requestAnimationFrame(() => {
-                        noteCardEl?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
-                    });
-                };
-
-                const enterNoteEditMode = (focusInput = true) => {
-                    noteInputEl.value = savedNoteCache;
-                    if (noteViewWrap) noteViewWrap.classList.add('hidden');
-                    if (noteEditWrap) noteEditWrap.classList.remove('hidden');
-                    if (btnNoteEdit) btnNoteEdit.classList.add('hidden');
-                    if (btnNoteCancel) btnNoteCancel.classList.toggle('hidden', !savedNoteCache);
-                    updateDraftMeta();
-                    requestAnimationFrame(() => {
-                        autoResizeNote();
-                        if (focusInput) {
-                            noteInputEl.focus();
-                            try {
-                                const len = noteInputEl.value.length;
-                                noteInputEl.setSelectionRange(len, len);
-                            } catch (e) {}
-                            setTimeout(() => {
-                                noteEditWrap?.scrollIntoView({ block: 'center', behavior: 'smooth' });
-                            }, 180);
-                        }
-                    });
-                };
-
-                const commitNoteSave = () => {
-                    const saved = saveWordNote(w, noteInputEl.value, true);
-                    savedNoteCache = saved;
-                    noteInputEl.value = saved;
-                    noteInputEl.blur();
-                    try { window.scrollTo({ top: window.scrollY, behavior: 'instant' }); } catch (e) {}
-                    if (saved) {
-                        enterNoteViewMode(saved);
-                        if (typeof showQuickToast === 'function') showQuickToast('✓ 備註已儲存並鎖定畫面');
+            // 按需載入對應字母的記憶技巧分片，並在載入完成後更新唯讀全覽卡片
+            const detailEnKey = String(w.en || '').trim().toLowerCase();
+            const mnemonicShard = (typeof getMnemonicShardName === 'function') ? getMnemonicShardName(detailEnKey) : '';
+            if (mnemonicShard && typeof loadMnemonicShard === 'function' && !_loadedMnemonicShards.has(mnemonicShard)) {
+                loadMnemonicShard(mnemonicShard).then(() => {
+                    if (typeof currentDetailWord !== 'undefined' && currentDetailWord !== detailEnKey) return;
+                    const el = document.getElementById('detail-word-note-display');
+                    if (!el) return;
+                    const loadedText = typeof getWordMnemonicText === 'function' ? getWordMnemonicText(w) : getWordNote(w);
+                    if (loadedText) {
+                        el.textContent = loadedText;
+                        el.classList.remove('text-slate-400', 'italic');
+                        el.classList.add('text-gray-800');
                     } else {
-                        if (noteViewWrap) noteViewWrap.classList.add('hidden');
-                        if (noteEditWrap) noteEditWrap.classList.remove('hidden');
-                        if (btnNoteEdit) btnNoteEdit.classList.add('hidden');
-                        if (btnNoteCancel) btnNoteCancel.classList.add('hidden');
-                        if (btnNoteClear) btnNoteClear.classList.add('hidden');
-                        if (noteCountEl) {
-                            noteCountEl.textContent = `0 / ${MAX_WORD_NOTE_LENGTH} 字`;
-                            noteCountEl.classList.remove('text-amber-600', 'font-semibold');
-                        }
-                        if (noteStatusEl) {
-                            noteStatusEl.textContent = '✓ 已清空備註';
-                            noteStatusEl.className = 'text-[10px] font-medium px-2 py-0.5 rounded-full bg-emerald-100/90 text-emerald-700 dark:bg-emerald-950/70 dark:text-emerald-300';
-                        }
-                        autoResizeNote();
-                        if (typeof showQuickToast === 'function') showQuickToast('已清空此單字備註');
+                        el.textContent = '此單字尚未收錄記憶技巧。';
+                        el.classList.remove('text-gray-800');
+                        el.classList.add('text-slate-400', 'italic');
                     }
-                };
-
-                btnNoteEdit?.addEventListener('click', () => enterNoteEditMode(true));
-
-                btnNoteCancel?.addEventListener('click', () => {
-                    noteInputEl.blur();
-                    noteInputEl.value = savedNoteCache;
-                    if (savedNoteCache) {
-                        enterNoteViewMode(savedNoteCache);
-                    }
-                });
-
-                // 貼上時自動攔截並淨化 Markdown 符號（不自動存檔，仍須按儲存才算存）
-                noteInputEl.addEventListener('paste', (e) => {
-                    const pasteText = (e.clipboardData || window.clipboardData)?.getData('text');
-                    if (pasteText && (/[\*`#_]/.test(pasteText))) {
-                        e.preventDefault();
-                        const cleaned = cleanMarkdownText(pasteText);
-                        const start = noteInputEl.selectionStart || 0;
-                        const end = noteInputEl.selectionEnd || 0;
-                        const val = noteInputEl.value;
-                        const nextVal = (val.substring(0, start) + cleaned + val.substring(end)).slice(0, MAX_WORD_NOTE_LENGTH);
-                        noteInputEl.value = nextVal;
-                        noteInputEl.selectionStart = noteInputEl.selectionEnd = Math.min(nextVal.length, start + cleaned.length);
-                        autoResizeNote();
-                        updateDraftMeta();
-                        if (typeof showQuickToast === 'function') showQuickToast('已淨化 ** 符號，確認後請點「儲存備註」✨');
-                    }
-                });
-
-                // 一鍵去除既有草稿中的 ** 符號（僅調整草稿，仍須按儲存才算存）
-                document.getElementById('btn-detail-note-clean-md')?.addEventListener('click', () => {
-                    const raw = noteInputEl.value;
-                    const cleaned = cleanMarkdownText(raw);
-                    if (raw !== cleaned) {
-                        noteInputEl.value = cleaned.slice(0, MAX_WORD_NOTE_LENGTH);
-                        autoResizeNote();
-                        updateDraftMeta();
-                        if (typeof showQuickToast === 'function') showQuickToast('已清除 ** 格式，請點「儲存備註」完成存檔 ✨');
-                    } else {
-                        if (typeof showQuickToast === 'function') showQuickToast('目前筆記無格式符號');
-                    }
-                });
-
-                noteInputEl.addEventListener('input', () => {
-                    autoResizeNote();
-                    updateDraftMeta();
-                });
-
-                noteInputEl.addEventListener('blur', () => {
-                    // 僅修正手機鍵盤收回後的視野偏移，絕不自動存檔
-                    try { window.scrollTo({ top: window.scrollY, behavior: 'instant' }); } catch (e) {}
-                });
-                noteInputEl.addEventListener('keydown', (e) => {
-                    e.stopPropagation();
-                    if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
-                        e.preventDefault();
-                        commitNoteSave();
-                    }
-                });
-
-                btnNoteSave?.addEventListener('click', commitNoteSave);
-                btnNoteClear?.addEventListener('click', () => {
-                    noteInputEl.value = '';
-                    autoResizeNote();
-                    updateDraftMeta();
-                    noteInputEl.focus();
-                    if (typeof showQuickToast === 'function') showQuickToast('草稿已清空，點擊「儲存備註」即確定刪除');
-                });
-
-                content.querySelectorAll('[data-note-tag]').forEach(btn => {
-                    btn.addEventListener('click', () => {
-                        const tag = btn.getAttribute('data-note-tag') || '';
-                        const cur = noteInputEl.value;
-                        const prefix = (cur && !cur.endsWith('\n')) ? '\n' : '';
-                        noteInputEl.value = (cur + prefix + tag + ' ').slice(0, MAX_WORD_NOTE_LENGTH);
-                        noteInputEl.focus();
-                        autoResizeNote();
-                        updateDraftMeta();
-                    });
                 });
             }
 

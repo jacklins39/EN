@@ -513,6 +513,54 @@ async def main():
         f.write("]);\n")
     print(f"zh_audio_manifest.js updated ({len(sorted_zh_ids)} IDs total).")
 
+    print("\n=== Step 5: Generating Memory Mnemonics (mnemonics/*.js) ===")
+    scripts_dir = os.path.dirname(os.path.abspath(__file__))
+    if scripts_dir not in sys.path:
+        sys.path.insert(0, scripts_dir)
+    from generate_mnemonics import (
+        MNEMONICS_DIR,
+        generate_for_entries,
+        load_local_env,
+        load_vocab_metadata,
+        normalize_word_key,
+    )
+
+    load_local_env()
+    gemini_key = (os.environ.get("GEMINI_API_KEY") or "").strip()
+    if gemini_key:
+        catalog = load_vocab_metadata()
+        mnemonic_inputs = []
+        for it in assigned_items:
+            key = normalize_word_key(it.get("en") or "")
+            base = catalog.get(key, {})
+            mnemonic_inputs.append({
+                "en": it["en"],
+                "kk": it.get("kk") or base.get("kk") or "",
+                "zh": it.get("zh") or base.get("zh") or "",
+                "syn": base.get("syn") or [],
+                "ant": base.get("ant") or [],
+            })
+
+        mnem_res = await generate_for_entries(
+            mnemonic_inputs,
+            api_key=gemini_key,
+            mnemonics_dir=MNEMONICS_DIR,
+            batch_size=10,
+            concurrency=3,
+            rpm=14.0,
+            verbose=True,
+        )
+        print(
+            f"Mnemonics updated: {mnem_res['generated']}/{mnem_res['requested']} generated "
+            f"(failed={len(mnem_res['failed'])})."
+        )
+    else:
+        target_words = " ".join(it["en"] for it in assigned_items)
+        print(
+            "[skip] GEMINI_API_KEY 未設定於環境變數或 .env，略過 Step 5 記憶技巧自動生成。\n"
+            f"       補產指令：python scripts/generate_mnemonics.py --words {target_words}"
+        )
+
     print("\n=== SOP Process Completed! ===")
 
 if __name__ == "__main__":

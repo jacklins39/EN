@@ -32,3 +32,8 @@ backup/
 # split_all_data.js 產生的 AI 校正用拆分檔 (可隨時重跑)
 split_txt/
 tmp/
+
+# 本機機密金鑰環境檔（絕不上傳 GitHub）
+.env
+.env.local
+.env.*.local

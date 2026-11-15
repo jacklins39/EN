@@ -59,69 +59,73 @@ DB_FILES = [
     "listening_words_data.js",
 ]
 
-DEFAULT_MODEL = "gemini-3.5-flash-lite"
+DEFAULT_MODEL = "gemini-3.6-flash"
 MODEL_FALLBACK_ORDER = (
-    "gemini-3.5-flash-lite",
-    "gemini-3.1-flash-lite",
     "gemini-3.6-flash",
     "gemini-3.8-flash",
     "gemini-2.5-flash",
+    "gemini-3.1-flash-lite",
+    "gemini-3.5-flash-lite",
 )
 DEFAULT_THINKING_LEVEL = "low"
-DEFAULT_TEMPERATURE = 0.6
-DEFAULT_BATCH_SIZE = 8
-MAX_MNEMONIC_LENGTH = 1500
-MIN_MNEMONIC_LENGTH = 40
+DEFAULT_TEMPERATURE = 0.8
+DEFAULT_BATCH_SIZE = 6
+MAX_MNEMONIC_LENGTH = 800
+MIN_MNEMONIC_LENGTH = 35
 
-SYSTEM_INSTRUCTION = """你是一位專精台灣英文教學的記憶大師，擅長幫學習者建立「一聽一拆就能秒反應字義」的真實記憶橋樑（字根字首拆解、雙關台灣諧音、或拼字詞中詞聯想 ＋ 因果緊扣的雙聯想畫面 ＋ 擴充／KK 音標 ＋ 高頻同義字）。
+SYSTEM_INSTRUCTION = """你是一位深受台灣學生喜愛的英文諧音鬼才老師，擅長把英文單字變成「看一次就笑出來、一秒秒記字義」的超精簡 3 行幽默記憶卡！
 
-請嚴格遵守以下品質鐵則，違規將直接退回重寫：
+請嚴格遵守以下風格、範例與鐵律：
 
-【規則一：挑選最自然的記憶掛鉤（禁止為諧音而硬湊無意義音譯）】
-1. 多音節、拉丁／希臘字根字首字（例如 protect, polite, decide, accelerate, important）→ 優先用「字根／字首／熟詞拆解」，直接講清字根如何推出字義；唯有當字根太冷門時，才輔以自然諧音。
-2. 短字或發音剛好能「一秒變成有意義的台灣中文詞句」→ 才用「雙關諧音法」（如 stubborn → 「死不認」，撞到人還死不認錯＝固執；ponder → 「胖的」，變胖後天天坐在樹下沉思；happy → 「黑皮」，去黑皮開趴很快樂）。
-3. 拼字剛好藏著熟詞（如 believe → be + lie 謊言 + ve；island → is + land）→ 用「拼字拆解」。
+【精簡 3 行黃金格式（純文字繁體中文，段落間保留一個空行，嚴禁 Markdown）】
+第一行（記憶法與核心鉤子）：
+幽默諧音法：「...」（首選！用 2～4 個聽起來接近發音、且本身能拆解成台灣口語梗或好笑動作的漢字）
+或 字根幽默拆解法：...（僅限多音節長字／音太難諧音、且字根超直覺好記時使用）
 
-【規則二：五大絕對禁令（發現任一條直接判死退件）】
-❌ 禁令 1（無意義音譯）：嚴禁硬湊唸起來毫無中文意義的音譯字，如「破來得」「怕趴啦」「普洛特客」「科瑞特」「阿客色咧去勒巡」「低賽的」「硬撲滑」。
-❌ 禁令 2（引號偷塞字義）：掛鉤「...」內絕對不能偷加頓號或括號貼中文意思（❌ 嚴禁「破來得、有禮貌的」「怕趴啦、受歡迎的」「發音端（朋友）」）。
-❌ 禁令 3（假人名敷衍梗）：嚴禁編造「特務普洛特客」「發明家科瑞特」「阿伯叫吉擬」這類用音譯硬套人名或地名的偷懶故事。
-❌ 禁令 4（畫面與掛鉤脫節）：「聯想畫面 1」**必須直接出現並演出**上方「拆解 / 諧音」的核心關鍵詞，讓掛鉤因果導向英文原義；嚴禁寫一句跟掛鉤毫無關聯的普通例句！（❌ 反例：掛鉤寫「破來得」，畫面 1 卻只寫「他對長輩很有禮貌，開口閉口都是謝謝」→ 毫無記憶效果，退件！）
-❌ 禁令 5（混雜英文與錯字簡體）：中文敘述內不可直接夾帶目標英文單字（❌ 反例：「你必須 decide 要往左走」），嚴禁錯字（聯型畫面）與簡體字（画面、计划），嚴禁任何 Markdown 符號（**、`、#、- / * 項目符號）。
+第二行（一句話連音或拆解）：
+發音聯想：...（指出英文或關鍵音節唸起來像什麼，簡潔一句話）
+或 構造聯想：...（用有趣白話講清字根怎麼湊出這個意思）
 
-【好壞範本對照（請比照好範例的水準）】
-❌ 劣質：「拆解 / 諧音：『破來得、有禮貌的』... 聯想畫面 1：他對長輩總是很有禮貌。」
-✅ 優質（polite [pəˋlaɪt] 有禮貌的）：
-諧音聯想：
-拆解 / 諧音：pol（同 polish 磨光、磨圓滑）+ 諧音「怕賴」
+第三行（一秒爆笑或鮮明的記憶畫面）：
+記憶畫面：...（把諧音裡的「每個關鍵漢字」用「」分開嵌入劇情，並在關鍵中文意思旁加上括號 (目標英文單字)，讓發音、字形與中文意思一槍鎖死！）
 
-聯想畫面 1：把自己的脾氣磨光（pol-）磨圓滑，深怕別人嫌你賴（-lite）皮粗魯，對長輩待人接物自然變得客氣有禮貌。
+【四個神級標準範本（字數與節奏請完全比照以下水準，總長約 65～140 字）】
+範例 1（thought -> 想法）：
+幽默諧音法：「瘦特」
 
-聯想畫面 2：餐廳服務生說話像被拋光過一樣圓潤得體，完全展現職場社交禮節與禮貌。
+發音聯想：thought 唸起來有點接近「瘦特」。
 
-高效擴充：polite 與 polish（拋光、使優雅）同源，加上字尾 -ness 成名詞 politeness（禮貌），反義字為 impolite / rude。
-KK 音標：[pəˋlaɪt] -> 主重音在第二音節 lite，字尾不發音的 e 讓 i 發長雙母音 [aɪ]。
+記憶畫面：每個人腦海裡每天浮現的第一個想法 (thought)，就是希望自己能「瘦」得「特」別快！
 
-【輸出格式要求（繁體中文純文字，每字約 180～340 字，段落間保留一個空行）】
-諧音聯想：
-拆解 / 諧音：...（或 諧音：「...」——說明如何連到核心意義）
+範例 2（polite -> 有禮貌的）：
+幽默諧音法：「怕賴他」
 
-聯想畫面 1：...（必含上方掛鉤關鍵詞，因果緊扣第一字義）
+發音聯想：polite [pəˋlaɪt] 連讀起來有點接近「怕賴他」。
 
-聯想畫面 2：...（另一生活情境或延伸字義，補強記憶）
+記憶畫面：因為「怕」別人「賴」「他」沒家教，所以每次見面都裝得客氣又有禮貌 (polite)！
 
-高效擴充：...（真實字根／衍生字／拼寫陷阱提醒）
-KK 音標：<完全照抄輸入 KK> -> <重音位置與嘴型／母音子音發音提醒>
+範例 3（stubborn -> 固執的）：
+幽默諧音法：「死不認」
 
-常見同義字：
+發音聯想：stubborn 聽起來就像台味十足的「死不認」。
 
-word1（簡短中文詞義與用法／語氣差異）
+記憶畫面：明明證據都擺在眼前還「死」「不認」錯，這種脾氣真的有夠固執 (stubborn)！
 
-word2（簡短中文詞義與用法／語氣差異）
+範例 4（protect -> 保護，長字字根型）：
+字根幽默拆解法：pro（往前）＋ tect（大蓋子）
 
-word3（簡短中文詞義與用法／語氣差異）
+構造聯想：protect 就是往「前」撐起一個「大蓋子」。
 
-忠於輸入提供的 word、kk 與 zh；禁止篡改 kk 音標，描述重音務必與 kk 中的「ˋ」位置一致；JSON items 須精確涵蓋輸入批次中的每個 word。"""
+記憶畫面：為了保護 (protect) 身後隊友，他衝到最「前」面舉起「大蓋子」替大家擋風擋雨！
+
+【五大絕對禁令（違規將被程式直接退件）】
+❌ 禁令 1（無意義音譯）：嚴禁硬湊讀不通的音譯字（如「破來得」「怕趴啦」「搜特」「普洛特客」「科瑞特」）；諧音引號「...」裡的漢字必須全部都是後面「記憶畫面」能拿來演出笑點的真實詞彙！
+❌ 禁令 2（引號偷貼釋義）：嚴禁在「...」內用頓號或括號偷塞中文詞義（如「瘦特、想法」「破來得、有禮貌的」）。
+❌ 禁令 3（冗長廢話）：絕對不要寫「KK 音標：」「常見同義字：」「聯想畫面 2：」「高效擴充：」（介面卡片上方已經有顯示了，請把版面留給最精簡的 3 行梗！）。
+❌ 禁令 4（脫節造句或假人名）：嚴禁編造「特務XXX」「發明家XXX」，「記憶畫面」必須真正拆用「...」裡的核心字眼（像「瘦」得「特」別快），禁止寫無關例句。
+❌ 禁令 5（格式乾淨）：英文原字請放在中文釋義後方的括號內（如「想法 (thought)」），不可拿英文直接當中文動詞使用（❌「你必須 decide 要走」）；嚴禁簡體字、錯字或任何 Markdown 符號（**、`、#、-）。
+
+忠於輸入提供的 word、kk 與 zh；JSON items 須精確涵蓋輸入批次中的每個 word。"""
 
 RESPONSE_SCHEMA: dict[str, Any] = {
     "type": "object",
@@ -153,7 +157,7 @@ def normalize_word_key(word: str) -> str:
     return str(word or "").strip().lower()
 
 
-_HEADER_SYN_RE = re.compile(r"(?<!\n)[ \t]*(?=(?:聯想畫面\s*[12]|高效擴充|常見同義字)[：:])")
+_HEADER_SYN_RE = re.compile(r"(?<!\n)[ \t]*(?=(?:聯想畫面\s*[12]|高效擴充|常見同義字|發音聯想|構造聯想|記憶畫面)[：:])")
 _KK_INLINE_RE = re.compile(r"(?<!\n)[ \t]*(?=KK\s*音標[：:])")
 
 
@@ -179,6 +183,9 @@ def clean_mnemonic_text(text: str) -> str:
         ("聯想画面", "聯想畫面"),
         ("联型畫面", "聯想畫面"),
         ("联想画面", "聯想畫面"),
+        ("记忆画面", "記憶畫面"),
+        ("发音联想", "發音聯想"),
+        ("构造联想", "構造聯想"),
         ("联想", "聯想"),
         ("谐音", "諧音"),
         ("扩充", "擴充"),
@@ -191,7 +198,7 @@ def clean_mnemonic_text(text: str) -> str:
     ):
         s = s.replace(wrong, right)
 
-    # Restore paragraph breaks for old single-blob entries
+    # Restore paragraph breaks for single-blob entries (both compact 3-line and legacy 6-part)
     s = _HEADER_SYN_RE.sub("\n\n", s)
     s = _KK_INLINE_RE.sub("\n", s)
     syn_idx = s.find("常見同義字")
@@ -201,11 +208,13 @@ def clean_mnemonic_text(text: str) -> str:
         syn_part = re.sub(r"(?<=[）\)])[，,、][ \t]*(?=[a-zA-Z])", "\n\n", syn_part)
         s = head_part + syn_part
 
-    # Normalize top hook header ("諧音：X\n\n諧音：「X」...", "諧音：\n拆解 / 諧音：...", single-line "諧音聯想：諧音：...")
+    # Normalize top hook header for legacy format without touching compact "幽默諧音法：/ 字根幽默拆解法："
     lines = s.split("\n")
     if lines:
         first = lines[0].strip()
-        if re.match(r"^諧音聯想[：:]\s*\S+", first):
+        if re.match(r"^(?:幽默諧音法|字根幽默拆解法|字根拆解法|拼字聯想法|幽默拆解法)[：:]", first):
+            pass
+        elif re.match(r"^諧音聯想[：:]\s*\S+", first):
             rest_first = re.sub(r"^諧音聯想[：:]\s*", "", first, count=1).strip()
             lines = ["諧音聯想：", rest_first] + lines[1:]
         elif re.match(r"^(?:諧音|諧音聯想)[：:]\s*$", first):
@@ -241,7 +250,7 @@ def clean_mnemonic_text(text: str) -> str:
 
 
 _HOOK_STOPWORDS = frozenset({
-    "拆解", "諧音", "拼字", "聯想", "字首", "字根", "字尾", "前綴", "後綴",
+    "拆解", "諧音", "拼字", "聯想", "字首", "字根", "字尾", "前綴", "後綴", "幽默",
     "加上", "代表", "意思", "音似", "念作", "唸作", "來自", "同源", "源自", "中文", "台灣",
 })
 _FAKE_PERSON_EXPLICIT_RE = re.compile(
@@ -253,11 +262,13 @@ _ROLE_CANDIDATE_RE = re.compile(
 )
 
 
-def _has_fake_person_trope(hook_block: str, scene1: str) -> bool:
-    combined = f"{hook_block}\n{scene1}"
+def _has_fake_person_trope(hook_block: str, scene: str) -> bool:
+    combined = f"{hook_block}\n{scene}"
     if _FAKE_PERSON_EXPLICIT_RE.search(combined):
         return True
-    hook_cjk = _cjk_only(re.sub(r"^(?:諧音聯想|諧音|拆解\s*/\s*諧音)[：:]", "", hook_block, flags=re.M))
+    hook_cjk = _cjk_only(
+        re.sub(r"^(?:幽默諧音法|字根幽默拆解法|字根拆解法|拼字聯想法|幽默拆解法|諧音聯想|諧音|拆解\s*/\s*諧音)[：:]", "", hook_block, flags=re.M)
+    )
     for m in _ROLE_CANDIDATE_RE.finditer(combined):
         name_cand = m.group(1)
         if hook_cjk and any(name_cand[i : i + 2] in hook_cjk for i in range(max(0, len(name_cand) - 1))):
@@ -266,40 +277,89 @@ def _has_fake_person_trope(hook_block: str, scene1: str) -> bool:
     return False
 
 
+def _scene_connects_hook(hook_text: str, scene: str) -> bool:
+    hook_clean = re.sub(r"[、，,]\s*[\u4e00-\u9fff]{2,8}(?=」)", "", hook_text)
+    quoted = re.findall(r"「([^」]{2,20})」", hook_clean)
+    if quoted:
+        q_cjk = _cjk_only(quoted[0])
+        if len(q_cjk) >= 2:
+            matched_chars = sum(1 for ch in set(q_cjk) if ch in scene)
+            needed = len(set(q_cjk)) if len(set(q_cjk)) <= 2 else max(2, len(set(q_cjk)) - 1)
+            if matched_chars >= needed:
+                return True
+            for i in range(len(q_cjk) - 1):
+                if q_cjk[i : i + 2] in scene:
+                    return True
+            return False
+
+    cjk_chunks = re.findall(r"[\u4e00-\u9fff]{2,}", hook_clean)
+    grams: set[str] = set()
+    for ch in cjk_chunks:
+        if ch in _HOOK_STOPWORDS:
+            continue
+        for sw in _HOOK_STOPWORDS:
+            ch = ch.replace(sw, "")
+        if len(ch) >= 2:
+            for i in range(len(ch) - 1):
+                grams.add(ch[i : i + 2])
+    roots = {r.lower() for r in re.findall(r"[a-zA-Z]{3,}", hook_clean)}
+    scene_lower = scene.lower()
+    has_cjk = any(g in scene for g in grams) if grams else True
+    has_root = any(r in scene_lower for r in roots) if roots else False
+    return has_cjk or has_root
+
+
 def audit_mnemonic(word: str, text: str) -> dict[str, Any]:
-    """Return programmatic quality score (0..100) and concrete issue codes for one mnemonic."""
+    """Return programmatic quality score (0..100), format type, and issue codes for one mnemonic."""
     issues: list[str] = []
     score = 100
     s = (text or "").replace("\r\n", "\n")
 
     if len(s.strip()) < MIN_MNEMONIC_LENGTH:
-        return {"score": 0, "issues": ["too_short"]}
+        return {"score": 0, "format": "invalid", "issues": ["too_short"]}
 
-    if re.search(r"聯型畫面|聯行畫面|联|画面|谐音|联想|扩充|同义|音标", s):
+    if re.search(r"聯型畫面|聯行畫面|联|画面|谐音|联想|扩充|同义|音标|记忆|发音|构造", s):
         issues.append("format_typo")
         score -= 20
-    if re.match(r"^諧音[：:]", s):
-        issues.append("bad_header")
-        score -= 10
 
-    s1_m = re.search(r"聯想畫面\s*1[：:]\s*([^\n]+)", s)
-    s2_m = re.search(r"聯想畫面\s*2[：:]\s*([^\n]+)", s)
-    kk_m = re.search(r"KK\s*音標[：:]\s*([^\n]+)", s)
-    if not s1_m:
-        issues.append("missing_scene1")
-        score -= 30
-    if not s2_m:
-        issues.append("missing_scene2")
-        score -= 20
-    if not kk_m:
-        issues.append("missing_kk")
-        score -= 15
+    is_compact = bool(
+        re.match(r"^(?:幽默諧音法|字根幽默拆解法|字根拆解法|拼字聯想法|幽默拆解法)[：:]", s)
+        and re.search(r"記憶畫面[：:]", s)
+    )
 
-    hook_block = s[: s1_m.start()] if s1_m else s.split("\n\n", 1)[0]
-    scene1 = s1_m.group(1).strip() if s1_m else ""
-    scene2 = s2_m.group(1).strip() if s2_m else ""
+    if is_compact:
+        bridge_m = re.search(r"(?:發音聯想|構造聯想)[：:]\s*([^\n]+)", s)
+        scene_m = re.search(r"記憶畫面[：:]\s*([^\n]+)", s)
+        if not bridge_m:
+            issues.append("missing_bridge")
+            score -= 20
+        if re.search(r"(?:KK\s*音標|常見同義字|聯想畫面\s*2)[：:]", s):
+            issues.append("bloated_sections")
+            score -= 30
+        hook_block = s.split("\n", 1)[0].strip()
+        scene1 = scene_m.group(1).strip() if scene_m else ""
+        scene2 = ""
+    else:
+        if re.match(r"^諧音[：:]", s):
+            issues.append("bad_header")
+            score -= 10
+        s1_m = re.search(r"聯想畫面\s*1[：:]\s*([^\n]+)", s)
+        s2_m = re.search(r"聯想畫面\s*2[：:]\s*([^\n]+)", s)
+        kk_m = re.search(r"KK\s*音標[：:]\s*([^\n]+)", s)
+        if not s1_m:
+            issues.append("missing_scene1")
+            score -= 30
+        if not s2_m:
+            issues.append("missing_scene2")
+            score -= 20
+        if not kk_m:
+            issues.append("missing_kk")
+            score -= 15
+        hook_block = s[: s1_m.start()] if s1_m else s.split("\n\n", 1)[0]
+        scene1 = s1_m.group(1).strip() if s1_m else ""
+        scene2 = s2_m.group(1).strip() if s2_m else ""
 
-    # 1. Definition stuffed inside hook quotes: 「破來得、有禮貌的」 / 「發音端（朋友）」
+    # 1. Definition stuffed inside hook quotes: 「破來得、有禮貌的」 / 「瘦特、想法」
     for q in re.findall(r"「([^」]{2,40})」", hook_block):
         if re.search(r"[、，,]\s*[\u4e00-\u9fff]{2,8}$", q) or (
             "+" not in hook_block
@@ -315,38 +375,24 @@ def audit_mnemonic(word: str, text: str) -> dict[str, Any]:
         issues.append("name_person_trope")
         score -= 40
 
-    # 3. Target English word lazily dropped raw inside Chinese scene sentence
+    # 3. Target English word lazily dropped raw (allow parenthetical gloss like "想法 (thought)")
     clean_w = re.sub(r"[^a-zA-Z]", "", word or "").lower()
     if len(clean_w) >= 4:
         s1_low, s2_low = scene1.lower(), scene2.lower()
         if clean_w in s1_low or clean_w in s2_low:
+            s1_noparen = re.sub(r"[（(][^()（）]{1,30}[）)]", "", scene1)
+            s2_noparen = re.sub(r"[（(][^()（）]{1,30}[）)]", "", scene2)
             raw_en_re = re.compile(rf"[\u4e00-\u9fff]\s*\b{re.escape(clean_w)}\b\s*[\u4e00-\u9fff]", re.I)
-            if raw_en_re.search(scene1) or raw_en_re.search(scene2):
+            if raw_en_re.search(s1_noparen) or raw_en_re.search(s2_noparen):
                 issues.append("raw_english_in_scene")
                 score -= 25
 
-    # 4. Disconnected scene 1: scene 1 must reuse >=1 keyword/2-gram/root from the hook block
-    if s1_m:
-        hook_for_match = re.sub(r"[、，,]\s*[\u4e00-\u9fff]{2,8}(?=」)", "", hook_block)
-        cjk_chunks = re.findall(r"[\u4e00-\u9fff]{2,}", hook_for_match)
-        grams: set[str] = set()
-        for ch in cjk_chunks:
-            if ch in _HOOK_STOPWORDS:
-                continue
-            for sw in _HOOK_STOPWORDS:
-                ch = ch.replace(sw, "")
-            if len(ch) >= 2:
-                for i in range(len(ch) - 1):
-                    grams.add(ch[i : i + 2])
-        roots = {r.lower() for r in re.findall(r"[a-zA-Z]{3,}", hook_for_match)}
-        scene_lower = scene1.lower()
-        has_cjk_bridge = any(g in scene1 for g in grams) if grams else True
-        has_root_bridge = any(r in scene_lower for r in roots) if roots else False
-        if not has_cjk_bridge and not has_root_bridge:
-            issues.append("scene1_disconnected")
-            score -= 35
+    # 4. Disconnected scene: scene must genuinely unpack/connect to hook
+    if scene1 and not _scene_connects_hook(hook_block, scene1):
+        issues.append("scene1_disconnected")
+        score -= 35
 
-    return {"score": max(0, score), "issues": issues}
+    return {"score": max(0, score), "format": "compact" if is_compact else "legacy", "issues": issues}
 
 
 def _decode_js_json(path: Path, open_char: str) -> Any:
@@ -538,11 +584,18 @@ def _parse_batch_response(
             continue
         if strict_quality:
             rep = audit_mnemonic(key, cleaned)
-            critical = {"def_in_hook", "name_person_trope", "scene1_disconnected", "raw_english_in_scene"}
-            if rep["score"] < 75 or critical.intersection(rep["issues"]):
+            critical = {
+                "def_in_hook",
+                "name_person_trope",
+                "scene1_disconnected",
+                "raw_english_in_scene",
+                "bloated_sections",
+                "missing_bridge",
+            }
+            if rep["format"] != "compact" or rep["score"] < 80 or critical.intersection(rep["issues"]):
                 if verbose:
                     print(
-                        f"[quality-reject] {key} (score={rep['score']}, issues={rep['issues']})",
+                        f"[quality-reject] {key} (fmt={rep['format']}, score={rep['score']}, issues={rep['issues']})",
                         file=sys.stderr,
                         flush=True,
                     )
@@ -1050,16 +1103,22 @@ def audit_all_shards(
     mnemonics_dir: Path = MNEMONICS_DIR,
     max_score: int = 79,
 ) -> dict[str, Any]:
-    """Audit all loaded shard entries and return issue summary + weak keys sorted worst-first."""
+    """Audit all loaded shard entries and return issue summary + weak/legacy keys."""
     shard_map = load_all_shards(mnemonics_dir)
     issue_counts: dict[str, int] = {}
     weak: list[tuple[int, str, list[str]]] = []
+    legacy_keys: list[str] = []
     total = 0
+    compact_count = 0
     score_ge80 = 0
     for shard_entries in shard_map.values():
         for key, val in shard_entries.items():
             total += 1
             rep = audit_mnemonic(key, val)
+            if rep.get("format") == "compact":
+                compact_count += 1
+            else:
+                legacy_keys.append(key)
             for iss in rep["issues"]:
                 issue_counts[iss] = issue_counts.get(iss, 0) + 1
             if rep["score"] >= 80:
@@ -1067,12 +1126,16 @@ def audit_all_shards(
             if rep["score"] <= max_score:
                 weak.append((rep["score"], key, rep["issues"]))
     weak.sort(key=lambda t: (t[0], -len(t[2]), t[1]))
+    legacy_keys.sort()
     return {
         "total": total,
+        "compact_count": compact_count,
+        "legacy_count": len(legacy_keys),
         "score_ge80": score_ge80,
         "weak_count": len(weak),
         "issue_counts": dict(sorted(issue_counts.items(), key=lambda kv: -kv[1])),
         "weak_items": weak,
+        "legacy_keys": legacy_keys,
     }
 
 
@@ -1100,6 +1163,11 @@ def _select_target_entries(
                 selected.append(catalog[key])
         return selected
 
+    if args.regen_legacy:
+        report = audit_all_shards(MNEMONICS_DIR, max_score=100)
+        weak_order = [k for _s, k, _iss in report["weak_items"] if k in set(report["legacy_keys"])]
+        return [catalog[k] for k in weak_order if k in catalog]
+
     if args.units:
         unit_set = set(args.units)
         return [
@@ -1123,6 +1191,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--fix-format", action="store_true", help="Clean format typos, doubled headers & missing blank lines (0 API calls)")
     parser.add_argument("--audit", action="store_true", help="Audit mnemonic quality across all shards (0 API calls)")
     parser.add_argument("--regen-weak", action="store_true", help="Regenerate low-scoring mnemonics flagged by --audit (implies --overwrite)")
+    parser.add_argument("--regen-legacy", action="store_true", help="Convert all legacy verbose entries to compact 3-line humor style (implies --overwrite)")
     parser.add_argument("--max-score", type=int, default=79, help="Quality score ceiling for --audit/--regen-weak (default: 79)")
     parser.add_argument("--units", type=int, nargs="+", help="Target one or more vocabulary units (e.g. --units 1 2)")
     parser.add_argument("--words", nargs="+", help="Target specific words (e.g. --words also abandon)")
@@ -1143,7 +1212,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.init_shards:
         created = init_empty_shards(MNEMONICS_DIR)
         print(f"[mnemonics] Initialized {created} new shard files in {MNEMONICS_DIR} (27 total).")
-        if not (args.stats or args.fix_format or args.audit or args.regen_weak or args.units or args.words or args.all):
+        if not (args.stats or args.fix_format or args.audit or args.regen_weak or args.regen_legacy or args.units or args.words or args.all):
             return 0
 
     if args.fix_format:
@@ -1151,20 +1220,20 @@ def main(argv: list[str] | None = None) -> int:
         print(
             f"[fix-format] updated={fx['updated']}/{fx['total']} entries across {fx['shards_written']} shards."
         )
-        if not (args.stats or args.audit or args.regen_weak or args.units or args.words or args.all):
+        if not (args.stats or args.audit or args.regen_weak or args.regen_legacy or args.units or args.words or args.all):
             return 0
 
     if args.audit:
         rep = audit_all_shards(MNEMONICS_DIR, max_score=args.max_score)
         print(
-            f"[audit] total={rep['total']} | score>=80: {rep['score_ge80']} | "
-            f"weak (score<={args.max_score}): {rep['weak_count']}"
+            f"[audit] total={rep['total']} | compact_3line={rep['compact_count']} | legacy_6part={rep['legacy_count']} | "
+            f"score>=80: {rep['score_ge80']} | weak (score<={args.max_score}): {rep['weak_count']}"
         )
         print(f"  issues: {rep['issue_counts']}")
         print("  worst samples:")
         for sc, k, iss in rep["weak_items"][:15]:
             print(f"    {k:<18} score={sc:<3} issues={iss}")
-        if not (args.stats or args.regen_weak or args.units or args.words or args.all):
+        if not (args.stats or args.regen_weak or args.regen_legacy or args.units or args.words or args.all):
             return 0
 
     catalog = load_vocab_metadata(BASE_DIR)
@@ -1182,7 +1251,7 @@ def main(argv: list[str] | None = None) -> int:
         for u in sorted(unit_counts):
             cov, tot = unit_counts[u]
             print(f"  Unit {u:>2}: {cov:>4} / {tot:<4} ({(cov / tot * 100):.1f}%)")
-        if not (args.regen_weak or args.units or args.words or args.all):
+        if not (args.regen_weak or args.regen_legacy or args.units or args.words or args.all):
             return 0
 
     targets = _select_target_entries(args, catalog)
@@ -1208,7 +1277,7 @@ def main(argv: list[str] | None = None) -> int:
         rpm=args.rpm,
         temperature=args.temperature,
         strict_quality=not args.no_strict_quality,
-        overwrite=bool(args.overwrite or args.regen_weak),
+        overwrite=bool(args.overwrite or args.regen_weak or args.regen_legacy),
         mnemonics_dir=MNEMONICS_DIR,
         verbose=True,
     )

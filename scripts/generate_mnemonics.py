@@ -383,6 +383,8 @@ def _get_thread_client(api_key: str) -> Any:
 def _is_daily_or_permanent_model_error(err_str: str) -> bool:
     if "404" in err_str or "NOT_FOUND" in err_str:
         return True
+    if "limit: 0" in err_str or "'quotaValue': '0'" in err_str or '"quotaValue": "0"' in err_str:
+        return True
     if "GenerateRequestsPerDay" in err_str or "generate_content_free_tier_requests" in err_str:
         if "PerDay" in err_str or "PerProjectPerModel-FreeTier" in err_str or "retryDelay" in err_str:
             m = re.search(r"retryDelay['\"]?\s*[:=]\s*['\"]?(\d+)", err_str)
@@ -411,8 +413,11 @@ def _call_gemini_batch_sync(
 
     prompt = _build_batch_prompt(batch)
     last_err: Exception | None = None
+    attempt = 0
+    switches = 0
+    max_switches = len(MODEL_FALLBACK_ORDER) + 2
 
-    for attempt in range(max_retries):
+    while attempt < max_retries and switches < max_switches:
         candidates = _pick_candidate_models(model)
         if not candidates:
             return {}
@@ -443,6 +448,7 @@ def _call_gemini_batch_sync(
             err_msg = str(exc)
             _thread_local.client = None
             if _is_daily_or_permanent_model_error(err_msg):
+                switches += 1
                 with _exhausted_lock:
                     if active_model not in _exhausted_models:
                         _exhausted_models.add(active_model)
@@ -452,11 +458,12 @@ def _call_gemini_batch_sync(
                             flush=True,
                         )
                 continue
+            attempt += 1
             delay_match = re.search(r"retryDelay['\"]?\s*[:=]\s*['\"]?(\d+)", err_msg)
             hinted_delay = int(delay_match.group(1)) + 1.5 if delay_match else 0.0
-            backoff = min(65.0, max(hinted_delay, (2.2 ** attempt) + 1.5))
+            backoff = min(65.0, max(hinted_delay, (2.2 ** (attempt - 1)) + 1.5))
             print(
-                f"[retry {attempt + 1}/{max_retries}] ({active_model}) {[w['en'] for w in batch][:4]} "
+                f"[retry {attempt}/{max_retries}] ({active_model}) {[w['en'] for w in batch][:4]} "
                 f"(sleep {backoff:.1f}s): {type(exc).__name__}: {err_msg[:180]}",
                 file=sys.stderr,
                 flush=True,
@@ -609,6 +616,15 @@ def _generate_for_entries_sync(
                         f"generated {generated_count}/{total_words} ({elapsed:.1f}s, {rate:.1f} words/s)",
                         flush=True,
                     )
+                if pending and not _pick_candidate_models(model):
+                    print(
+                        "[ERROR] All fallback Gemini models hit daily quota/exhausted; saving completed words and stopping.",
+                        file=sys.stderr,
+                        flush=True,
+                    )
+                    for f in pending:
+                        f.cancel()
+                    break
         finally:
             for s in sorted(dirty_shards):
                 write_shard(s, shard_map[s], mnemonics_dir)

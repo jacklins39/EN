@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261114V1';
+        const APP_BUILD_VERSION = '20261115V1';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -4253,6 +4253,7 @@
         let dailyPlans = {}; // 每天固定單字清單：{ [unit]: { day, date, newWordIds: [], reviewWordIds: [], completed: false } }
         let customWordsDB = [];
         const MAX_CUSTOM_WORDS = 500;
+        const MAX_WORD_NOTE_LENGTH = 2000;
         // HTML 轉義，避免 XSS
         function esc(s) {
             return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -5021,7 +5022,7 @@
                                 const noteSide = lNoteTime >= cNoteTime ? lp : cp;
                                 mergedItem.noteUpdatedAt = Math.max(lNoteTime, cNoteTime);
                                 if (noteSide.note && String(noteSide.note).trim()) {
-                                    mergedItem.note = String(noteSide.note).trim().slice(0, 500);
+                                    mergedItem.note = String(noteSide.note).trim().slice(0, MAX_WORD_NOTE_LENGTH);
                                 } else {
                                     delete mergedItem.note;
                                 }
@@ -5589,7 +5590,7 @@ function cleanupMasteredMistakes() {
                 const lTime = localEntry ? (Number(localEntry.updatedAt) || 0) : 0;
                 if (pTime > lTime || (!localEntry && pText)) {
                     if (pText) {
-                        userWordNotes[enKey] = { text: pText.slice(0, 1000), updatedAt: pTime || Date.now() };
+                        userWordNotes[enKey] = { text: pText.slice(0, MAX_WORD_NOTE_LENGTH), updatedAt: pTime || Date.now() };
                     } else {
                         delete userWordNotes[enKey];
                     }
@@ -5631,7 +5632,7 @@ function cleanupMasteredMistakes() {
             if (!wordOrEn) return '';
             const enKey = (typeof wordOrEn === 'string' ? wordOrEn : (wordOrEn.en || '')).trim().toLowerCase();
             if (!enKey) return '';
-            const cleanNote = String(rawText || '').trim().slice(0, 1000);
+            const cleanNote = String(rawText || '').trim().slice(0, MAX_WORD_NOTE_LENGTH);
             const now = Date.now();
 
             if (cleanNote) {
@@ -13492,10 +13493,10 @@ function cleanupMasteredMistakes() {
                                     <button type="button" data-note-tag="【考點】" class="user-note-chip text-[11px] sm:text-[10px] px-2.5 py-1 sm:py-0.5 rounded-full bg-white text-amber-800 border border-amber-200 hover:bg-amber-100/80 transition cursor-pointer active:scale-95">+ 考點</button>
                                     <button type="button" id="btn-detail-note-clean-md" class="text-[11px] sm:text-[10px] px-2.5 py-1 sm:py-0.5 rounded-full bg-amber-100/90 text-amber-900 border border-amber-300 hover:bg-amber-200/90 font-semibold transition cursor-pointer active:scale-95" title="一鍵清除 AI 複製來的 ** 粗體與 Markdown 符號">✨ 去除 **</button>
                                 </div>
-                                <textarea id="detail-word-note-input" rows="4" maxlength="1000" placeholder="輸入你的專屬筆記（可直接貼上 AI 聯想法，系統會自動淨化 ** 符號；輸入完成後請點擊「儲存備註」）..." class="w-full text-base sm:text-sm bg-white/95 text-gray-800 rounded-xl px-3 py-2.5 border border-amber-300/90 focus:border-amber-500 focus:ring-2 focus:ring-amber-200/70 outline-none resize-y leading-relaxed transition-all">${esc(existingNote)}</textarea>
+                                <textarea id="detail-word-note-input" rows="4" maxlength="${MAX_WORD_NOTE_LENGTH}" placeholder="輸入你的專屬筆記（可直接貼上 AI 聯想法，系統會自動淨化 ** 符號；輸入完成後請點擊「儲存備註」）..." class="w-full text-base sm:text-sm bg-white/95 text-gray-800 rounded-xl px-3 py-2.5 border border-amber-300/90 focus:border-amber-500 focus:ring-2 focus:ring-amber-200/70 outline-none resize-y leading-relaxed transition-all">${esc(existingNote)}</textarea>
                                 <div class="flex items-center justify-between gap-2 flex-wrap pt-0.5">
                                     <div class="flex items-center gap-2 text-[11px] text-gray-400">
-                                        <span id="detail-word-note-count">${existingNote.length} / 1000 字</span>
+                                        <span id="detail-word-note-count">${existingNote.length} / ${MAX_WORD_NOTE_LENGTH} 字</span>
                                         <button type="button" id="btn-detail-note-clear" class="${existingNote ? '' : 'hidden '}text-rose-500 hover:text-rose-600 font-medium px-2 py-1 rounded-lg hover:bg-rose-50 dark:hover:bg-rose-950/40 transition cursor-pointer active:scale-95">清空</button>
                                     </div>
                                     <div class="flex items-center gap-2 ml-auto">
@@ -13550,8 +13551,9 @@ function cleanupMasteredMistakes() {
             if (noteInputEl) {
                 let savedNoteCache = getWordNote(w);
                 const autoResizeNote = () => {
+                    const maxNoteH = window.innerWidth >= 640 ? 340 : 240;
                     noteInputEl.style.height = 'auto';
-                    noteInputEl.style.height = Math.max(96, Math.min(240, noteInputEl.scrollHeight)) + 'px';
+                    noteInputEl.style.height = Math.max(96, Math.min(maxNoteH, noteInputEl.scrollHeight)) + 'px';
                 };
                 if (!noteEditWrap?.classList.contains('hidden')) {
                     requestAnimationFrame(autoResizeNote);
@@ -13559,7 +13561,11 @@ function cleanupMasteredMistakes() {
 
                 const updateDraftMeta = () => {
                     const val = noteInputEl.value;
-                    if (noteCountEl) noteCountEl.textContent = `${val.length} / 1000 字`;
+                    if (noteCountEl) {
+                        noteCountEl.textContent = `${val.length} / ${MAX_WORD_NOTE_LENGTH} 字`;
+                        noteCountEl.classList.toggle('text-amber-600', val.length >= MAX_WORD_NOTE_LENGTH);
+                        noteCountEl.classList.toggle('font-semibold', val.length >= MAX_WORD_NOTE_LENGTH);
+                    }
                     if (btnNoteClear) btnNoteClear.classList.toggle('hidden', !val);
                     const isDirty = val.trim() !== savedNoteCache.trim();
                     if (noteStatusEl) {
@@ -13626,7 +13632,10 @@ function cleanupMasteredMistakes() {
                         if (btnNoteEdit) btnNoteEdit.classList.add('hidden');
                         if (btnNoteCancel) btnNoteCancel.classList.add('hidden');
                         if (btnNoteClear) btnNoteClear.classList.add('hidden');
-                        if (noteCountEl) noteCountEl.textContent = '0 / 1000 字';
+                        if (noteCountEl) {
+                            noteCountEl.textContent = `0 / ${MAX_WORD_NOTE_LENGTH} 字`;
+                            noteCountEl.classList.remove('text-amber-600', 'font-semibold');
+                        }
                         if (noteStatusEl) {
                             noteStatusEl.textContent = '✓ 已清空備註';
                             noteStatusEl.className = 'text-[10px] font-medium px-2 py-0.5 rounded-full bg-emerald-100/90 text-emerald-700 dark:bg-emerald-950/70 dark:text-emerald-300';
@@ -13655,7 +13664,7 @@ function cleanupMasteredMistakes() {
                         const start = noteInputEl.selectionStart || 0;
                         const end = noteInputEl.selectionEnd || 0;
                         const val = noteInputEl.value;
-                        const nextVal = (val.substring(0, start) + cleaned + val.substring(end)).slice(0, 1000);
+                        const nextVal = (val.substring(0, start) + cleaned + val.substring(end)).slice(0, MAX_WORD_NOTE_LENGTH);
                         noteInputEl.value = nextVal;
                         noteInputEl.selectionStart = noteInputEl.selectionEnd = Math.min(nextVal.length, start + cleaned.length);
                         autoResizeNote();
@@ -13669,7 +13678,7 @@ function cleanupMasteredMistakes() {
                     const raw = noteInputEl.value;
                     const cleaned = cleanMarkdownText(raw);
                     if (raw !== cleaned) {
-                        noteInputEl.value = cleaned.slice(0, 1000);
+                        noteInputEl.value = cleaned.slice(0, MAX_WORD_NOTE_LENGTH);
                         autoResizeNote();
                         updateDraftMeta();
                         if (typeof showQuickToast === 'function') showQuickToast('已清除 ** 格式，請點「儲存備註」完成存檔 ✨');
@@ -13709,7 +13718,7 @@ function cleanupMasteredMistakes() {
                         const tag = btn.getAttribute('data-note-tag') || '';
                         const cur = noteInputEl.value;
                         const prefix = (cur && !cur.endsWith('\n')) ? '\n' : '';
-                        noteInputEl.value = (cur + prefix + tag + ' ').slice(0, 1000);
+                        noteInputEl.value = (cur + prefix + tag + ' ').slice(0, MAX_WORD_NOTE_LENGTH);
                         noteInputEl.focus();
                         autoResizeNote();
                         updateDraftMeta();

@@ -1297,6 +1297,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--batch-size", type=int, default=DEFAULT_BATCH_SIZE, help=f"Words per Gemini API call (default: {DEFAULT_BATCH_SIZE})")
     parser.add_argument("--concurrency", type=int, default=3, help="Concurrent API worker threads (default: 3)")
     parser.add_argument("--rpm", type=float, default=14.0, help="Max API requests per minute (default: 14, 0=unlimited)")
+    parser.add_argument("--allow-api", action="store_true", help="Explicitly permit external Gemini API calls (disabled by default; prefer --export-targets + --apply-json)")
     args = parser.parse_args(argv)
 
     load_local_env()
@@ -1383,6 +1384,14 @@ def main(argv: list[str] | None = None) -> int:
             }
             print(json.dumps(rec, ensure_ascii=False))
         return 0
+
+    if not args.allow_api:
+        print(
+            "Error: External Gemini API calls are disabled by policy (0 API calls mode). "
+            "Use --export-targets and --apply-json for local authoring.",
+            file=sys.stderr,
+        )
+        return 2
 
     api_key = (os.environ.get("GEMINI_API_KEY") or "").strip()
     if not api_key:

@@ -1,18 +1,115 @@
 rules_version = '2';
+
+// ===============================================================
+// Assumed Data Model
+// ===============================================================
+//
+// This security rules file assumes the following data structures:
+//
+// Collection: users
+// Document ID: {uid} (matches Firebase Auth request.auth.uid)
+// Fields:
+//   - progress: map (optional, size <= 15000) - per-word SRS learning state & mistake history
+//   - day: number (optional, 0..100000) - virtual study day counter
+//   - customWords: list (optional, size <= 500) - user-defined custom vocabulary items
+//   - lastUpdated: timestamp (optional) - server/REST sync timestamp
+//   - dailyPlans: map (optional, size <= 50) - per-unit daily word schedules
+//   - newWordsPerDay: number (optional, 1..500) - daily new words quota setting
+//   - lastDate: string (optional, len 8..30) - anchor calendar date string (YYYY-MM-DD)
+//   - unit: number (optional, 1..100) - currently selected vocabulary unit ID
+//   - listeningAnnotated: map (optional, size <= 500) - per-article annotated word lists
+//   - dailyPracticeStats: map (optional, size <= 5000) - per-day practice question counts
+//
+// ===============================================================
+
 service cloud.firestore {
   match /databases/{database}/documents {
-    // 每個人只能讀寫自己的文件，且限制欄位與大小
+
+    // ===============================================================
+    // Helper Functions
+    // ===============================================================
+
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    function hasOnlyAllowedFields(fields) {
+      return request.resource.data.keys().hasOnly(fields);
+    }
+
+    function isValidOptionalMap(field, maxSize) {
+      return !(field in request.resource.data)
+        || (request.resource.data[field] is map
+            && request.resource.data[field].size() <= maxSize);
+    }
+
+    function isValidOptionalList(field, maxSize) {
+      return !(field in request.resource.data)
+        || (request.resource.data[field] is list
+            && request.resource.data[field].size() <= maxSize);
+    }
+
+    function isValidOptionalNumber(field, minVal, maxVal) {
+      return !(field in request.resource.data)
+        || (request.resource.data[field] is number
+            && request.resource.data[field] >= minVal
+            && request.resource.data[field] <= maxVal);
+    }
+
+    function isValidOptionalString(field, minLen, maxLen) {
+      return !(field in request.resource.data)
+        || (request.resource.data[field] is string
+            && request.resource.data[field].size() >= minLen
+            && request.resource.data[field].size() <= maxLen);
+    }
+
+    function isValidOptionalTimestamp(field) {
+      return !(field in request.resource.data)
+        || (request.resource.data[field] is timestamp);
+    }
+
+    // ===============================================================
+    // Domain Validators (Used in BOTH create and update)
+    // ===============================================================
+
+    function isValidUserDoc() {
+      return hasOnlyAllowedFields([
+          'progress',
+          'day',
+          'customWords',
+          'lastUpdated',
+          'dailyPlans',
+          'newWordsPerDay',
+          'lastDate',
+          'unit',
+          'listeningAnnotated',
+          'dailyPracticeStats'
+        ])
+        && isValidOptionalMap('progress', 15000)
+        && isValidOptionalNumber('day', 0, 100000)
+        && isValidOptionalList('customWords', 500)
+        && isValidOptionalTimestamp('lastUpdated')
+        && isValidOptionalMap('dailyPlans', 50)
+        && isValidOptionalNumber('newWordsPerDay', 1, 500)
+        && isValidOptionalString('lastDate', 8, 30)
+        && isValidOptionalNumber('unit', 1, 100)
+        && isValidOptionalMap('listeningAnnotated', 500)
+        && isValidOptionalMap('dailyPracticeStats', 5000);
+    }
+
+    // 每個人只能讀寫自己的文件，且於 create 與 update 強制驗證所有欄位型別與大小上限
     match /users/{uid} {
-      allow read: if request.auth != null && request.auth.uid == uid;
-      allow create, update: if request.auth != null
-        && request.auth.uid == uid
-        && request.resource.data.keys().hasOnly(['progress', 'day', 'customWords', 'lastUpdated', 'dailyPlans', 'newWordsPerDay', 'lastDate', 'unit', 'listeningAnnotated', 'dailyPracticeStats'])
-        && (!('customWords' in request.resource.data)
-            || (request.resource.data.customWords is list
-                && request.resource.data.customWords.size() <= 500));
+      allow read: if isOwner(uid);
+      allow create: if isOwner(uid) && isValidUserDoc();
+      allow update: if isOwner(uid) && isValidUserDoc();
       allow delete: if false;
     }
-    // 其他一律拒絕
+
+    // 其他一律拒絕 (Default Deny)
     match /{document=**} {
       allow read, write: if false;
     }

@@ -6541,10 +6541,10 @@ const externalVocabularyDB = [
     },
     {
         "id": 655,
-        "en": "May",
+        "en": "may",
         "kk": "[me]",
         "uk": "/meɪ/",
-        "zh": "n. 五月；aux. 可以、也許、可能",
+        "zh": "aux. 可以、也許、可能；n. 五月",
         "unit": 1,
         "example": "[aux.] That may or may not be true.",
         "exampleZh": "這可能是真的，也可能不是。"

@@ -104,12 +104,12 @@ SYSTEM_INSTRUCTION = """你是一位深受台灣學生喜愛的英文諧音鬼�
 
 記憶畫面：因為「怕」別人「賴」「他」沒家教，所以每次見面都裝得客氣又有禮貌 (polite)！
 
-範例 3（stubborn -> 固執的）：
-幽默諧音法：「死不認」
+範例 3（collapse -> 倒塌）：
+幽默諧音法：「垮來拍謝」
 
-發音聯想：stubborn 聽起來就像台味十足的「死不認」。
+發音聯想：collapse 唸起來有點接近「垮來拍謝」。
 
-記憶畫面：明明證據都擺在眼前還「死」「不認」錯，這種脾氣真的有夠固執 (stubborn)！
+記憶畫面：把疊高高的積木抽出最底下那塊，整座塔當場「垮」「來」又「拍」「謝」地倒塌 (collapse) 散滿桌！
 
 範例 4（protect -> 保護，長字字根型）：
 字根幽默拆解法：pro（往前）＋ tect（大蓋子）
@@ -118,12 +118,13 @@ SYSTEM_INSTRUCTION = """你是一位深受台灣學生喜愛的英文諧音鬼�
 
 記憶畫面：為了保護 (protect) 身後隊友，他衝到最「前」面舉起「大蓋子」替大家擋風擋雨！
 
-【五大絕對禁令（違規將被程式直接退件）】
+【六大絕對禁令（違規將被程式直接退件）】
 ❌ 禁令 1（無意義音譯）：嚴禁硬湊讀不通的音譯字（如「破來得」「怕趴啦」「搜特」「普洛特客」「科瑞特」）；諧音引號「...」裡的漢字必須全部都是後面「記憶畫面」能拿來演出笑點的真實詞彙！
 ❌ 禁令 2（引號偷貼釋義）：嚴禁在「...」內用頓號或括號偷塞中文詞義（如「瘦特、想法」「破來得、有禮貌的」）。
 ❌ 禁令 3（冗長廢話）：絕對不要寫「KK 音標：」「常見同義字：」「聯想畫面 2：」「高效擴充：」（介面卡片上方已經有顯示了，請把版面留給最精簡的 3 行梗！）。
 ❌ 禁令 4（脫節造句或假人名）：嚴禁編造「特務XXX」「發明家XXX」，「記憶畫面」必須真正拆用「...」裡的核心字眼（像「瘦」得「特」別快），禁止寫無關例句。
 ❌ 禁令 5（格式乾淨）：英文原字請放在中文釋義後方的括號內（如「想法 (thought)」），不可拿英文直接當中文動詞使用（❌「你必須 decide 要走」）；嚴禁簡體字、錯字或任何 Markdown 符號（**、`、#、-）。
+❌ 禁令 6（清新吉利）：嚴禁出現不雅、低俗、血腥或不吉利字眼（如死、殺、亡、鬼、屍、棺、墳、咒、瘟、屁、屎、尿、粗話、髒話等），一律用輕鬆幽默或生活化卡通情境取代。
 
 忠於輸入提供的 word、kk 與 zh；JSON items 須精確涵蓋輸入批次中的每個 word。"""
 
@@ -254,8 +255,14 @@ _HOOK_STOPWORDS = frozenset({
     "加上", "代表", "意思", "音似", "念作", "唸作", "來自", "同源", "源自", "中文", "台灣",
 })
 _FAKE_PERSON_EXPLICIT_RE = re.compile(
-    r"(?:名叫|叫做|名為|稱為)[\u4e00-\u9fff「」]{2,6}"
+    r"名叫[\u4e00-\u9fff「」]{2,6}"
+    r"|(?:叫做|名為|稱為)「[\u4e00-\u9fff]{2,6}」"
+    r"|(?:有位|一位|有個)(?:叫做|名為|稱為)[\u4e00-\u9fff]{2,5}"
     r"|(?:特務|發明家|魔法師|探險家|科學家|考古學家|偵探|騎士|大師|專家|將軍|國王)「[\u4e00-\u9fff]{2,5}」"
+)
+_VULGAR_OR_UNLUCKY_RE = re.compile(
+    r"[死殺亡屍棺墳冥咒瘟屁屎尿蠢賤妓娼婊鬼]"
+    r"|他媽|媽的|靠北|靠杯|白癡|白痴|智障|低能|王八|暴斃|暴卒|血腥|慘劇|地獄|閻羅"
 )
 _ROLE_CANDIDATE_RE = re.compile(
     r"(?:特務|發明家|魔法師|探險家|科學家|考古學家|偵探|騎士|大師|專家|將軍|國王)([\u4e00-\u9fff]{2,5})"
@@ -321,6 +328,10 @@ def audit_mnemonic(word: str, text: str) -> dict[str, Any]:
     if re.search(r"聯型畫面|聯行畫面|联|画面|谐音|联想|扩充|同义|音标|记忆|发音|构造", s):
         issues.append("format_typo")
         score -= 20
+
+    if _VULGAR_OR_UNLUCKY_RE.search(s):
+        issues.append("vulgar_or_unlucky")
+        score -= 40
 
     is_compact = bool(
         re.match(r"^(?:幽默諧音法|字根幽默拆解法|字根拆解法|拼字聯想法|幽默拆解法)[：:]", s)
@@ -551,9 +562,47 @@ def _build_batch_prompt(batch: list[dict[str, Any]]) -> str:
             rec["ref_antonyms"] = item["ant"]
         payload.append(rec)
     return (
-        "請為以下單字清單逐一產生繁體中文記憶技巧（嚴禁 Markdown 符號）：\n"
+        "請為以下單字清單逐一產生繁體中文記憶技巧（嚴禁 Markdown 符號；諧音與內文絕對禁止出現「死、殺、亡、鬼、屍、棺、墳、咒、瘟、屁、屎、尿、蠢、賤」等字眼，連「冷死、笑死、氣死、死守、死板、鬼祟」也一律禁用）：\n"
         + json.dumps(payload, ensure_ascii=False)
     )
+
+
+CRITICAL_QUALITY_ISSUES = frozenset({
+    "def_in_hook",
+    "name_person_trope",
+    "scene1_disconnected",
+    "raw_english_in_scene",
+    "bloated_sections",
+    "missing_bridge",
+    "vulgar_or_unlucky",
+})
+
+
+def _validate_mnemonic_entry(
+    raw_word: str,
+    raw_mnemonic: str,
+    *,
+    strict_quality: bool = True,
+    verbose: bool = True,
+) -> tuple[str, str | None, str | None]:
+    """Normalize and validate one entry against compact 3-line quality rules.
+
+    Returns (normalized_key, cleaned_mnemonic_or_None, reject_reason_or_None).
+    """
+    key = normalize_word_key(raw_word or "")
+    cleaned = clean_mnemonic_text(raw_mnemonic or "")
+    if not key:
+        return "", None, "empty_key"
+    if len(cleaned) < MIN_MNEMONIC_LENGTH:
+        return key, None, f"too_short({len(cleaned)})"
+    if strict_quality:
+        rep = audit_mnemonic(key, cleaned)
+        if rep["format"] != "compact" or rep["score"] < 80 or CRITICAL_QUALITY_ISSUES.intersection(rep["issues"]):
+            reason = f"fmt={rep['format']}, score={rep['score']}, issues={rep['issues']}"
+            if verbose:
+                print(f"[quality-reject] {key} ({reason})", file=sys.stderr, flush=True)
+            return key, None, reason
+    return key, cleaned, None
 
 
 def _parse_batch_response(
@@ -578,29 +627,14 @@ def _parse_batch_response(
     for entry in items:
         if not isinstance(entry, dict):
             continue
-        key = normalize_word_key(entry.get("word") or "")
-        cleaned = clean_mnemonic_text(entry.get("mnemonic") or "")
-        if not key or len(cleaned) < MIN_MNEMONIC_LENGTH:
-            continue
-        if strict_quality:
-            rep = audit_mnemonic(key, cleaned)
-            critical = {
-                "def_in_hook",
-                "name_person_trope",
-                "scene1_disconnected",
-                "raw_english_in_scene",
-                "bloated_sections",
-                "missing_bridge",
-            }
-            if rep["format"] != "compact" or rep["score"] < 80 or critical.intersection(rep["issues"]):
-                if verbose:
-                    print(
-                        f"[quality-reject] {key} (fmt={rep['format']}, score={rep['score']}, issues={rep['issues']})",
-                        file=sys.stderr,
-                        flush=True,
-                    )
-                continue
-        results[key] = cleaned
+        key, cleaned, _reason = _validate_mnemonic_entry(
+            str(entry.get("word") or ""),
+            str(entry.get("mnemonic") or ""),
+            strict_quality=strict_quality,
+            verbose=verbose,
+        )
+        if key and cleaned:
+            results[key] = cleaned
     return results
 
 
@@ -1139,6 +1173,68 @@ def audit_all_shards(
     }
 
 
+def apply_mnemonics_json(
+    json_path: Path,
+    mnemonics_dir: Path = MNEMONICS_DIR,
+    *,
+    strict_quality: bool = True,
+    verbose: bool = True,
+) -> dict[str, Any]:
+    """Validate and merge locally authored mnemonics JSON directly into shards (0 API calls)."""
+    raw_obj = json.loads(json_path.read_text(encoding="utf-8"))
+    pairs: list[tuple[str, str]] = []
+    if isinstance(raw_obj, dict):
+        if isinstance(raw_obj.get("items"), list):
+            for entry in raw_obj["items"]:
+                if isinstance(entry, dict):
+                    pairs.append((str(entry.get("word") or ""), str(entry.get("mnemonic") or "")))
+        else:
+            for k, v in raw_obj.items():
+                pairs.append((str(k), str(v or "")))
+    elif isinstance(raw_obj, list):
+        for entry in raw_obj:
+            if isinstance(entry, dict):
+                pairs.append((str(entry.get("word") or ""), str(entry.get("mnemonic") or "")))
+    else:
+        raise ValueError("JSON root must be an object map, {items: [...]}, or list")
+
+    shard_map = load_all_shards(mnemonics_dir)
+    dirty_shards: set[str] = set()
+    applied: list[str] = []
+    rejected: list[tuple[str, str]] = []
+
+    for raw_word, raw_mnemonic in pairs:
+        key, cleaned, reason = _validate_mnemonic_entry(
+            raw_word,
+            raw_mnemonic,
+            strict_quality=strict_quality,
+            verbose=verbose,
+        )
+        if not key or not cleaned:
+            rejected.append((raw_word, reason or "invalid"))
+            continue
+        shard = shard_for_word(key)
+        shard_map[shard][key] = cleaned
+        dirty_shards.add(shard)
+        applied.append(key)
+
+    for shard in sorted(dirty_shards):
+        write_shard(shard, shard_map[shard], mnemonics_dir)
+
+    return {
+        "applied": len(applied),
+        "rejected": rejected,
+        "shards_written": len(dirty_shards),
+    }
+
+
+def _filter_by_units(entries: list[dict[str, Any]], units: list[int] | None) -> list[dict[str, Any]]:
+    if not units:
+        return entries
+    unit_set = set(units)
+    return [e for e in entries if any(u in unit_set for u in e.get("units", []))]
+
+
 def _select_target_entries(
     args: argparse.Namespace,
     catalog: dict[str, dict[str, Any]],
@@ -1157,24 +1253,17 @@ def _select_target_entries(
 
     if args.regen_weak:
         report = audit_all_shards(MNEMONICS_DIR, max_score=args.max_score)
-        selected = []
-        for _score, key, _issues in report["weak_items"]:
-            if key in catalog:
-                selected.append(catalog[key])
-        return selected
+        selected = [catalog[k] for _score, k, _issues in report["weak_items"] if k in catalog]
+        return _filter_by_units(selected, args.units)
 
     if args.regen_legacy:
         report = audit_all_shards(MNEMONICS_DIR, max_score=100)
-        weak_order = [k for _s, k, _iss in report["weak_items"] if k in set(report["legacy_keys"])]
-        return [catalog[k] for k in weak_order if k in catalog]
+        legacy_set = set(report["legacy_keys"])
+        weak_order = [k for _s, k, _iss in report["weak_items"] if k in legacy_set]
+        return _filter_by_units([catalog[k] for k in weak_order if k in catalog], args.units)
 
     if args.units:
-        unit_set = set(args.units)
-        return [
-            entry
-            for entry in catalog.values()
-            if any(u in unit_set for u in entry.get("units", []))
-        ]
+        return _filter_by_units(list(catalog.values()), args.units)
 
     if args.all:
         return list(catalog.values())
@@ -1190,6 +1279,9 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--stats", action="store_true", help="Print current coverage stats across units and shards")
     parser.add_argument("--fix-format", action="store_true", help="Clean format typos, doubled headers & missing blank lines (0 API calls)")
     parser.add_argument("--audit", action="store_true", help="Audit mnemonic quality across all shards (0 API calls)")
+    parser.add_argument("--apply-json", metavar="PATH", help="Validate & merge a local JSON file of mnemonics into shards (0 API calls)")
+    parser.add_argument("--export-targets", action="store_true", help="Print selected target word metadata as compact JSON lines (0 API calls)")
+    parser.add_argument("--offset", type=int, default=0, help="Skip the first N selected targets (useful with --limit / --export-targets)")
     parser.add_argument("--regen-weak", action="store_true", help="Regenerate low-scoring mnemonics flagged by --audit (implies --overwrite)")
     parser.add_argument("--regen-legacy", action="store_true", help="Convert all legacy verbose entries to compact 3-line humor style (implies --overwrite)")
     parser.add_argument("--max-score", type=int, default=79, help="Quality score ceiling for --audit/--regen-weak (default: 79)")
@@ -1212,15 +1304,31 @@ def main(argv: list[str] | None = None) -> int:
     if args.init_shards:
         created = init_empty_shards(MNEMONICS_DIR)
         print(f"[mnemonics] Initialized {created} new shard files in {MNEMONICS_DIR} (27 total).")
-        if not (args.stats or args.fix_format or args.audit or args.regen_weak or args.regen_legacy or args.units or args.words or args.all):
+        if not (args.stats or args.fix_format or args.audit or args.apply_json or args.export_targets or args.regen_weak or args.regen_legacy or args.units or args.words or args.all):
             return 0
+
+    if args.apply_json:
+        res = apply_mnemonics_json(
+            Path(args.apply_json),
+            MNEMONICS_DIR,
+            strict_quality=not args.no_strict_quality,
+            verbose=True,
+        )
+        print(
+            f"[apply-json] applied={res['applied']} rejected={len(res['rejected'])} shards_written={res['shards_written']}"
+        )
+        if res["rejected"]:
+            for w, reason in res["rejected"][:20]:
+                print(f"  rejected: {w} -> {reason}")
+        if not (args.stats or args.fix_format or args.audit or args.export_targets or args.regen_weak or args.regen_legacy or args.units or args.words or args.all):
+            return 0 if not res["rejected"] else 1
 
     if args.fix_format:
         fx = fix_all_shards_format(MNEMONICS_DIR)
         print(
             f"[fix-format] updated={fx['updated']}/{fx['total']} entries across {fx['shards_written']} shards."
         )
-        if not (args.stats or args.audit or args.regen_weak or args.regen_legacy or args.units or args.words or args.all):
+        if not (args.stats or args.audit or args.export_targets or args.regen_weak or args.regen_legacy or args.units or args.words or args.all):
             return 0
 
     if args.audit:
@@ -1233,7 +1341,7 @@ def main(argv: list[str] | None = None) -> int:
         print("  worst samples:")
         for sc, k, iss in rep["weak_items"][:15]:
             print(f"    {k:<18} score={sc:<3} issues={iss}")
-        if not (args.stats or args.regen_weak or args.regen_legacy or args.units or args.words or args.all):
+        if not (args.stats or args.export_targets or args.regen_weak or args.regen_legacy or args.units or args.words or args.all):
             return 0
 
     catalog = load_vocab_metadata(BASE_DIR)
@@ -1251,7 +1359,7 @@ def main(argv: list[str] | None = None) -> int:
         for u in sorted(unit_counts):
             cov, tot = unit_counts[u]
             print(f"  Unit {u:>2}: {cov:>4} / {tot:<4} ({(cov / tot * 100):.1f}%)")
-        if not (args.regen_weak or args.regen_legacy or args.units or args.words or args.all):
+        if not (args.export_targets or args.regen_weak or args.regen_legacy or args.units or args.words or args.all):
             return 0
 
     targets = _select_target_entries(args, catalog)
@@ -1259,8 +1367,22 @@ def main(argv: list[str] | None = None) -> int:
         parser.print_help()
         return 1
 
+    if args.offset and args.offset > 0:
+        targets = targets[args.offset :]
     if args.limit and args.limit > 0:
         targets = targets[: args.limit]
+
+    if args.export_targets:
+        if hasattr(sys.stdout, "reconfigure"):
+            sys.stdout.reconfigure(encoding="utf-8")
+        for item in targets:
+            rec = {
+                "en": item["en"],
+                "kk": item.get("kk") or "",
+                "zh": item.get("zh") or "",
+            }
+            print(json.dumps(rec, ensure_ascii=False))
+        return 0
 
     api_key = (os.environ.get("GEMINI_API_KEY") or "").strip()
     if not api_key:

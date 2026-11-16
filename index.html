@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261115V5';
+        const APP_BUILD_VERSION = '20261116V1';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -3619,9 +3619,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261113V1</span>
+                        <span id="app-version-display">版本 20261116V1</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261113V1</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261116V1</p>
                 </div>
             </div>
         </div>
@@ -4401,8 +4401,10 @@
                 firstText = parsed.pureZh || zhStr;
             }
             // 1. 清除括號註釋 ()、（）、領域方括號 []、語體尖括號 <> 與【名】後綴
+            // 若括號為夾在中文詞語中間的受詞佔位符（如「在（某段時間）之內」），先還原為「……」避免刪成「在之內」
             firstText = firstText
                 .replace(/【[^】]*】.*$/g, '')
+                .replace(/([\u4e00-\u9fa5])[\(（](?:某[^）\)]*|……[^）\)]*)[\)）](?=[\u4e00-\u9fa5])/g, '$1……')
                 .replace(/[\(（][^）\)]*[\)）]/g, '')
                 .replace(/\[[^\]]*\]/g, '')
                 .replace(/<[^>]*>/g, '')
@@ -4427,7 +4429,7 @@
             const seen = new Set();
             const terms = [];
             for (const raw of rawTerms) {
-                const t = raw.replace(/^[…\.：:]+|[…\.：:]+$/g, '').trim();
+                const t = raw.replace(/^[\.：:]+|[…\.：:]+$/g, '').replace(/^…+(?![…]*[的之點])/, '').trim();
                 if (!t) continue;
                 if (posTokenRe.test(t) || /^[a-zA-Z0-9.\s\-/]+$/.test(t)) continue;
                 if (!seen.has(t)) {
@@ -4439,12 +4441,22 @@
                 const pureFallback = firstText.replace(/[a-zA-Z0-9.]+/g, '').replace(/^[、，,;；/：:\s]+|[、，,;；/：:\s]+$/g, '').trim();
                 return pureFallback.slice(0, 8) || firstText.slice(0, 8);
             }
-            // 優先挑選不含中間省略號「……」的精煉詞條作為首選；若全含省略號則保留原樣（避免「擅長……的人」被誤刪成「擅長人」）
-            const cleanTerms = terms.filter(t => !t.includes('…'));
-            const pool = cleanTerms.length > 0 ? cleanTerms : terms;
-            let res = pool[0];
-            if (pool.length > 1 && (res.length + pool[1].length <= 8) && pool[1] !== res) {
-                res += '、' + pool[1];
+            // 一律保留資料庫首位高頻核心釋義 terms[0]（避免 between「在……之間」等含省略號首義被過濾後誤顯示冷僻尾項「分隔著」）
+            let res = terms[0];
+            const rCore = res.replace(/…/g, '');
+            for (let i = 1; i < terms.length; i++) {
+                const cand = terms[i];
+                if (cand === res) continue;
+                const cCore = cand.replace(/…/g, '');
+                if (!cCore) continue;
+                // 若其中一個只是另一個加上「……」受詞佔位符（如「洗澡」與「給……洗澡」、「稱……的重量」與「稱」），跳過重複項
+                if (res.includes('…') !== cand.includes('…') && (rCore.includes(cCore) || cCore.includes(rCore))) {
+                    continue;
+                }
+                if (rCore.length + cCore.length <= 8) {
+                    res += '、' + cand;
+                }
+                break;
             }
             return res;
         }

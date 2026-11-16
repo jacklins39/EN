@@ -186,7 +186,7 @@ const externalVocabularyDB = [
         "uk": "/fɔːls/",
         "zh": "adj. 假的、錯誤的、不真實的、偽造的；adv. 欺詐地",
         "unit": 1,
-        "example": "[adv.] Is this story true or false?",
+        "example": "[adj.] Is this story true or false?",
         "exampleZh": "這個故事是真的還是假的？"
     },
     {
@@ -226,7 +226,7 @@ const externalVocabularyDB = [
         "uk": "/fʊl/",
         "zh": "adj. 滿的、充滿的、飽的、完整的；adv. 完全地、充分地",
         "unit": 1,
-        "example": "[adv.] She's always full of energy.",
+        "example": "[adj.] She's always full of energy.",
         "exampleZh": "她總是充滿活力。"
     },
     {
@@ -626,7 +626,7 @@ const externalVocabularyDB = [
         "uk": "/sʌtʃ/",
         "zh": "det. 這樣的、如此的、這等的、如此；pron. 這種人、這類的、那樣的情況、那件事；adv. 如此、這麼、如此程度",
         "unit": 1,
-        "example": "[det.] I have never seen such a big dog.",
+        "example": "[adv.] I have never seen such a big dog.",
         "exampleZh": "我從沒見過這麼大的狗。"
     },
     {
@@ -666,7 +666,7 @@ const externalVocabularyDB = [
         "uk": "/ˈtaɪni/",
         "zh": "adj. 微小的、極小的；n. 幼童",
         "unit": 1,
-        "example": "[n.] An ant is a tiny little animal.",
+        "example": "[adj.] An ant is a tiny little animal.",
         "exampleZh": "螞蟻是一種微小的小動物。"
     },
     {
@@ -1186,7 +1186,7 @@ const externalVocabularyDB = [
         "uk": "/miːn/",
         "zh": "vt. 意思是、意味著、打算；adj. 吝嗇的、小氣的、刻薄的；n. 平均數、中庸",
         "unit": 1,
-        "example": "[n.] What does this new word mean?",
+        "example": "[vt.] What does this new word mean?",
         "exampleZh": "這個新單字是什麼意思？"
     },
     {
@@ -1816,7 +1816,7 @@ const externalVocabularyDB = [
         "uk": "/liːst/",
         "zh": "adj. 最少的、最微不足道的；adv. 最低程度地、最少、至少；n. 最不重要的事物、最微小的事物；pron. 最少量、起碼",
         "unit": 1,
-        "example": "[n.] We need at least two more hours.",
+        "example": "[adv.] We need at least two more hours.",
         "exampleZh": "我們至少還需要兩個小時。"
     },
     {
@@ -1986,7 +1986,7 @@ const externalVocabularyDB = [
         "uk": "/seɪm/",
         "zh": "adj. 相同的、同一的、一模一樣的、沒有變化的；pron. 同樣的、同樣的人、同樣的事物、相同；adv. 同樣",
         "unit": 1,
-        "example": "[adj.] Mario said the very same thing.",
+        "example": "[pron.] Mario said the very same thing.",
         "exampleZh": "馬裡奧也說過同樣的話。"
     },
     {
@@ -2796,7 +2796,7 @@ const externalVocabularyDB = [
         "uk": "/ɔːl/",
         "zh": "det. 全部、每一個、極度、儘量；adj. 全部的、每一個的、任何的、儘可能多的；adv. 完全地、各方、各選手、非常；pron. 所有、全部、唯一；n. 全部、所有",
         "unit": 1,
-        "example": "[det.] All the students are in the classroom.",
+        "example": "[pron.] All the students are in the classroom.",
         "exampleZh": "所有的學生都在教室裡。"
     },
     {
@@ -3656,7 +3656,7 @@ const externalVocabularyDB = [
         "uk": "/keə(r)/",
         "zh": "n. 照料、護理、小心；v. 關心、照顧、照料、在意",
         "unit": 1,
-        "example": "[n.] Parents take good care of their children.",
+        "example": "[v.] Parents take good care of their children.",
         "exampleZh": "父母好好照顧他們的孩子。"
     },
     {
@@ -4956,7 +4956,7 @@ const externalVocabularyDB = [
         "uk": "/fɜːst/",
         "zh": "det. 第一位的、最先的、首（次）的、緊接著來到的；adj. 第一的；adv. 首先、第一、最初、起初；pron. 第一次；n. 第一個人、前所未有的事情、最低檔、最高成績",
         "unit": 1,
-        "example": "[det.] He was the first boy in line.",
+        "example": "[adj.] He was the first boy in line.",
         "exampleZh": "他是隊伍中的第一個人。"
     },
     {
@@ -5296,7 +5296,7 @@ const externalVocabularyDB = [
         "uk": "/ˌɡʊd ˈbaɪ/",
         "zh": "n. 告別、告辭；int. 再見",
         "unit": 1,
-        "example": "[n.] Say good-bye to your friends.",
+        "example": "[int.] Say good-bye to your friends.",
         "exampleZh": "跟你的朋友們說再見。"
     },
     {
@@ -5876,7 +5876,7 @@ const externalVocabularyDB = [
         "uk": "/dʒɒb/",
         "zh": "n. 職業、工作、零工、任務；v. 刺、捅、買賣股票、欺騙",
         "unit": 1,
-        "example": "[v.] He found a new job last week.",
+        "example": "[n.] He found a new job last week.",
         "exampleZh": "他上週找到了一份新工作。"
     },
     {
@@ -5886,7 +5886,7 @@ const externalVocabularyDB = [
         "uk": "/dʒɔɪn/",
         "zh": "v. 參加、加入、連接、結合；n. 連接處、接合點",
         "unit": 1,
-        "example": "[n.] How do these two pieces join?",
+        "example": "[v.] How do these two pieces join?",
         "exampleZh": "這兩個部分如何連接？"
     },
     {
@@ -6226,7 +6226,7 @@ const externalVocabularyDB = [
         "uk": "/left/",
         "zh": "adj. 左邊的、左側的、剩餘的；adv. 向左、在左邊；n. 左邊、左側；v. 離開（leave的過去式與過去分詞）",
         "unit": 1,
-        "example": "[adj.] Turn left at the next street.",
+        "example": "[adv.] Turn left at the next street.",
         "exampleZh": "在下一條街向左轉。"
     },
     {
@@ -6966,7 +6966,7 @@ const externalVocabularyDB = [
         "uk": "/nəʊ/",
         "zh": "adv. 不、毫不；adj. 沒有的、絕不；int. 不；n. 拒絕、不准",
         "unit": 1,
-        "example": "[adv.] I have no money left.",
+        "example": "[adj.] I have no money left.",
         "exampleZh": "我沒有錢了。"
     },
     {
@@ -7176,7 +7176,7 @@ const externalVocabularyDB = [
         "uk": "/wʌns/",
         "zh": "adv. 一次、曾經、一回、一度；conj. 一.....就、一旦；n. 一次",
         "unit": 1,
-        "example": "[conj.] I see my uncle once a week.",
+        "example": "[adv.] I see my uncle once a week.",
         "exampleZh": "我每週見我叔叔一次。"
     },
     {
@@ -7236,7 +7236,7 @@ const externalVocabularyDB = [
         "uk": "/ˌaʊtˈsaɪd/",
         "zh": "adv./prep. 在外面、在……外面；adj. 外面的、外部的；n. 外側、外表",
         "unit": 1,
-        "example": "[adv.] It is very cold outside today.",
+        "example": "[adj.] It is very cold outside today.",
         "exampleZh": "今天外面非常冷。"
     },
     {
@@ -7926,7 +7926,7 @@ const externalVocabularyDB = [
         "uk": "/raɪt/",
         "zh": "adj. 正確的、對的、右邊的、適當的；adv. 正好、直接地、向右；n. 權利、右邊、正當",
         "unit": 1,
-        "example": "[adj.] Turn right at the next red light.",
+        "example": "[adv.] Turn right at the next red light.",
         "exampleZh": "在下個紅綠燈向右轉。"
     },
     {
@@ -8216,7 +8216,7 @@ const externalVocabularyDB = [
         "uk": "/siːt/",
         "zh": "n. 座位、座部、基座、席位；vt. 就座、使坐下、使就座、容納",
         "unit": 1,
-        "example": "[n.] Please take a seat in this room.",
+        "example": "[vt.] Please take a seat in this room.",
         "exampleZh": "請在這個房間就座。"
     },
     {
@@ -8856,7 +8856,7 @@ const externalVocabularyDB = [
         "uk": "/spɔːt/",
         "zh": "n. 體育運動、運動會、野外運動、成就感；v. 穿戴、展示、嬉戲、玩耍；adj. 運動的",
         "unit": 1,
-        "example": "[n.] Tennis is a very fun field sport.",
+        "example": "[adj.] Tennis is a very fun field sport.",
         "exampleZh": "網球是一項非常有趣的球場運動。"
     },
     {
@@ -9226,7 +9226,7 @@ const externalVocabularyDB = [
         "uk": "/ðeə(r)/",
         "zh": "adv. 那裡、在那裡、在那邊、在那點上；int. 你瞧；n. 那個地方",
         "unit": 1,
-        "example": "[n.] Put your bag over there on the chair.",
+        "example": "[adv.] Put your bag over there on the chair.",
         "exampleZh": "把你的袋子放在那邊的椅子上。"
     },
     {
@@ -9336,7 +9336,7 @@ const externalVocabularyDB = [
         "uk": "/taɪ/",
         "zh": "v. 繫、紮、捆、打結；n. 領帶、領結、紐帶、平手",
         "unit": 1,
-        "example": "[v.] He wore a blue tie to the party.",
+        "example": "[n.] He wore a blue tie to the party.",
         "exampleZh": "他打了一條藍色領帶去參加派對。"
     },
     {
@@ -9496,7 +9496,7 @@ const externalVocabularyDB = [
         "uk": "/trɪp/",
         "zh": "n. 旅行、旅遊、出門、出行；v. 絆、絆倒、腳步輕快地走、觸動",
         "unit": 1,
-        "example": "[v.] We had a nice trip last week.",
+        "example": "[n.] We had a nice trip last week.",
         "exampleZh": "我們上週有一趟美好的旅行。"
     },
     {
@@ -10276,7 +10276,7 @@ const externalVocabularyDB = [
         "uk": "/əˈsliːp/",
         "zh": "adj. 睡著的、麻木的、發麻的、不專心的；adv. 處於睡眠狀態地、進入睡眠狀態地",
         "unit": 2,
-        "example": "[adv.] He had fallen asleep on the sofa.",
+        "example": "[adj.] He had fallen asleep on the sofa.",
         "exampleZh": "他已經在沙發上睡著了。"
     },
     {
@@ -11456,7 +11456,7 @@ const externalVocabularyDB = [
         "uk": "/wɒtˈevə(r)/",
         "zh": "det. 任何……的事物、無論什麼；adj. 無論怎麼的；pron. 任何事物、究竟是什麼、無所謂、什麼都可以；adv. 任何、絲毫、不管怎樣；conj. 不管什麼、無論什麼、任何…...的事物、凡是…...的東西；int. 隨便你怎麼說",
         "unit": 2,
-        "example": "[conj.] You can eat whatever you want tonight.",
+        "example": "[pron.] You can eat whatever you want tonight.",
         "exampleZh": "你今晚想吃什麼都可以吃。"
     },
     {
@@ -12646,7 +12646,7 @@ const externalVocabularyDB = [
         "uk": "/ˈbækwəd/",
         "zh": "adj. 向後的、朝後的、倒退的、落後的；adv. 向後、朝後、反向地；n. 後面（或過去）的部分",
         "unit": 2,
-        "example": "[n.] Take two steps backward from the door.",
+        "example": "[adv.] Take two steps backward from the door.",
         "exampleZh": "從門口向後退兩步。"
     },
     {
@@ -12976,7 +12976,7 @@ const externalVocabularyDB = [
         "uk": "/ədˈvɑːns/",
         "zh": "v. 前進、向前移動、發展、進步；n. 進步、前進、進展、改善；adj. 預先的、事先的、先行的、先遣的",
         "unit": 2,
-        "example": "[v.] Science made great advance in recent years.",
+        "example": "[n.] Science made great advance in recent years.",
         "exampleZh": "科學在近年來取得了巨大的進展。"
     },
     {
@@ -14326,7 +14326,7 @@ const externalVocabularyDB = [
         "uk": "/ˈkɒnflɪkt/",
         "zh": "n. 爭執、爭論、分歧、戰鬥；v. 衝突、牴觸",
         "unit": 2,
-        "example": "[n.] They try to avoid conflict at school.",
+        "example": "[v.] They try to avoid conflict at school.",
         "exampleZh": "他們在學校儘量避免衝突。"
     },
     {
@@ -14566,7 +14566,7 @@ const externalVocabularyDB = [
         "uk": "/krɒp/",
         "zh": "n. 莊稼、收成、產量、一批；v. 剪短、剪裁、啃吃、種植",
         "unit": 2,
-        "example": "[n.] We grow a good rice crop here.",
+        "example": "[v.] We grow a good rice crop here.",
         "exampleZh": "我們在這裡種植優質的稻米作物。"
     },
     {
@@ -15606,7 +15606,7 @@ const externalVocabularyDB = [
         "uk": "/fɪlm/",
         "zh": "n. 電影、影片、電影藝術、電影業；vt. 拍攝、錄製、拍攝電影、被覆蓋上一薄層東西",
         "unit": 2,
-        "example": "[vt.] We saw a funny film last night.",
+        "example": "[n.] We saw a funny film last night.",
         "exampleZh": "我們昨晚看了一部有趣的電影。"
     },
     {
@@ -15716,7 +15716,7 @@ const externalVocabularyDB = [
         "uk": "/flʌd/",
         "zh": "v. 淹沒、氾濫、大量湧來、大量湧去；n. 洪水、水災、大批、大量",
         "unit": 2,
-        "example": "[n.] Heavy rain caused a big river flood.",
+        "example": "[v.] Heavy rain caused a big river flood.",
         "exampleZh": "大雨導致河水嚴重氾濫成災。"
     },
     {
@@ -16046,7 +16046,7 @@ const externalVocabularyDB = [
         "uk": "/ɡɒlf/",
         "zh": "n. 高爾夫球運動；v. 打高爾夫球",
         "unit": 2,
-        "example": "[n.] My father loves to play golf.",
+        "example": "[v.] My father loves to play golf.",
         "exampleZh": "我父親很喜歡打高爾夫球。"
     },
     {
@@ -16406,7 +16406,7 @@ const externalVocabularyDB = [
         "uk": "/hʌnt/",
         "zh": "v. 打獵、獵取、搜尋、追蹤；n. 搜尋、尋找、打獵、狩獵",
         "unit": 2,
-        "example": "[v.] Lions hunt for food in the grass.",
+        "example": "[n.] Lions hunt for food in the grass.",
         "exampleZh": "獅子在草叢中尋找獵物。"
     },
     {
@@ -16936,7 +16936,7 @@ const externalVocabularyDB = [
         "uk": "/ˈlaɪtnɪŋ/",
         "zh": "n. 閃電、意外的幸運；adj. 閃電般的、很快的；v. 閃電",
         "unit": 2,
-        "example": "[adj.] Another flash of lightning lit up the cave.",
+        "example": "[n.] Another flash of lightning lit up the cave.",
         "exampleZh": "又一道閃電照亮了那個洞穴。"
     },
     {
@@ -16946,7 +16946,7 @@ const externalVocabularyDB = [
         "uk": "/ˈlɪmɪt/",
         "zh": "n. 限度、限制、極限、限量；vt. 限制、限定、制約、減少",
         "unit": 2,
-        "example": "[n.] The road has a 30 mph speed limit.",
+        "example": "[vt.] The road has a 30 mph speed limit.",
         "exampleZh": "這條公路限定時速30英里。"
     },
     {
@@ -18286,7 +18286,7 @@ const externalVocabularyDB = [
         "uk": "/ˈpleʒə(r)/",
         "zh": "n. 愉快、快樂、滿足、欣慰；adj. 遊樂的、非公務的；v. 從……中獲得樂趣、高興",
         "unit": 2,
-        "example": "[n.] It is a great pleasure to meet you.",
+        "example": "[v.] It is a great pleasure to meet you.",
         "exampleZh": "非常高興能見到你。"
     },
     {
@@ -19076,7 +19076,7 @@ const externalVocabularyDB = [
         "uk": "/ˈsɑːmp(ə)l/",
         "zh": "n. 樣本、樣品、試用產品、試樣；vt. 品嚐、嘗試、體驗、對……作抽樣調查；adj. 樣品的、例項的",
         "unit": 2,
-        "example": "[n.] Can I taste this free sample?",
+        "example": "[vt.] Can I taste this free sample?",
         "exampleZh": "我可以品嚐這個免費試吃品嗎？"
     },
     {
@@ -19606,7 +19606,7 @@ const externalVocabularyDB = [
         "uk": "/spred/",
         "zh": "vt. 展開、開啟、張開、伸開；n. 擴散、蔓延、範圍、幅度；adj. 伸展的",
         "unit": 2,
-        "example": "[n.] The bird spread its wings.",
+        "example": "[vt.] The bird spread its wings.",
         "exampleZh": "鳥展開翅膀。"
     },
     {
@@ -21166,7 +21166,7 @@ const externalVocabularyDB = [
         "uk": "/səˈræmɪk/",
         "zh": "n. 陶瓷製品、陶瓷器、製陶藝術；adj. 陶器的、製陶藝術的、陶瓷的",
         "unit": 3,
-        "example": "[n.] I studied ceramic engineering at school.",
+        "example": "[adj.] I studied ceramic engineering at school.",
         "exampleZh": "我在學校攻讀陶瓷工程學。"
     },
     {
@@ -21856,7 +21856,7 @@ const externalVocabularyDB = [
         "uk": "/ˈmaɪti/",
         "zh": "adj. 強大的、強有力的、巨大的、用力的；adv. 很、非常、十分",
         "unit": 3,
-        "example": "[adj.] It's something you'll be mighty proud of.",
+        "example": "[adv.] It's something you'll be mighty proud of.",
         "exampleZh": "這是個你會非常驕傲的事。"
     },
     {
@@ -22906,7 +22906,7 @@ const externalVocabularyDB = [
         "uk": "/ˈdefn/",
         "zh": "vi. 變聾、喪失聽覺；vt. 使聾、震聾、淹沒、蓋過",
         "unit": 3,
-        "example": "[vt.] Did he deafen you?",
+        "example": "[vi.] Did he deafen you?",
         "exampleZh": "他讓你變聾了嗎？"
     },
     {
@@ -23026,7 +23026,7 @@ const externalVocabularyDB = [
         "uk": "/ɪmˈplɔɪ/",
         "zh": "vt. 雇用、使用、僱用、利用；n. 受僱",
         "unit": 3,
-        "example": "[n.] How many people does the company employ?",
+        "example": "[vt.] How many people does the company employ?",
         "exampleZh": "這個公司僱用了多少人？"
     },
     {
@@ -25316,7 +25316,7 @@ const externalVocabularyDB = [
         "uk": "/tʃuː/",
         "zh": "vt. 咀嚼、嚼碎、不停地嚼、咬；n. 咀嚼、口香糖、供嚼用的菸草、咀嚼物",
         "unit": 3,
-        "example": "[vt.] I do not chew gum in public.",
+        "example": "[n.] I do not chew gum in public.",
         "exampleZh": "我不在公共場合嚼口香糖。"
     },
     {
@@ -25616,7 +25616,7 @@ const externalVocabularyDB = [
         "uk": "/kənˈsɜːn/",
         "zh": "n. 擔心、憂慮、使人擔憂的事物、關心；vt. 有關、關於、涉及、影響",
         "unit": 3,
-        "example": "[n.] The group has expressed concern about reports of political violence in Africa.",
+        "example": "[vt.] The group has expressed concern about reports of political violence in Africa.",
         "exampleZh": "該集團已對有關非洲政治暴力的報道表示擔憂。"
     },
     {
@@ -25856,7 +25856,7 @@ const externalVocabularyDB = [
         "uk": "/ˈkʌrənt/",
         "zh": "adj. 現行的、當前的、通用的；n. 電流、水流、氣流、思潮",
         "unit": 3,
-        "example": "[adj.] A powerful electric current is passed through a piece of graphite.",
+        "example": "[n.] A powerful electric current is passed through a piece of graphite.",
         "exampleZh": "一股強大的電流被傳導經過一塊石墨。"
     },
     {
@@ -26126,7 +26126,7 @@ const externalVocabularyDB = [
         "uk": "/ˈdɪskaʊnt/",
         "zh": "n. 減價、折扣、貼現率；adj. 打折的、減價出售的；vt. 打折、減價、不重視、忽視",
         "unit": 3,
-        "example": "[n.] Do you give any discount?",
+        "example": "[vt.] Do you give any discount?",
         "exampleZh": "你們打折嗎？"
     },
     {
@@ -26896,7 +26896,7 @@ const externalVocabularyDB = [
         "uk": "/friːz/",
         "zh": "v. 結冰、凍住、冷藏、冷凍；n. 凍結、停止、冰凍期、霜凍",
         "unit": 3,
-        "example": "[n.] C, water freezes.",
+        "example": "[v.] C, water freezes.",
         "exampleZh": "如果溫度降到攝氏零度以下，水就會結冰。"
     },
     {
@@ -27296,7 +27296,7 @@ const externalVocabularyDB = [
         "uk": "/hætʃ/",
         "zh": "vt. 孵化、孵出、密謀、策劃；n. 艙口、兩室之間的小視窗、艙門、開口",
         "unit": 3,
-        "example": "[n.] The eggs quickly hatch into larvae.",
+        "example": "[vt.] The eggs quickly hatch into larvae.",
         "exampleZh": "這些卵很快孵化成幼蟲。"
     },
     {
@@ -28126,7 +28126,7 @@ const externalVocabularyDB = [
         "uk": "/ˈlɪnɪn/",
         "zh": "n. 亞麻布製品、亞麻布、家庭日用織品、內衣褲；adj. 亞麻的、亞麻布制的",
         "unit": 3,
-        "example": "[n.] This material is linen.",
+        "example": "[adj.] This material is linen.",
         "exampleZh": "這塊材料是亞麻的。"
     },
     {
@@ -28866,7 +28866,7 @@ const externalVocabularyDB = [
         "uk": "/ˈnəʊb(ə)l/",
         "zh": "adj. 崇高的、高尚的、宏偉的、卓越的；n. 貴族",
         "unit": 3,
-        "example": "[adj.] She is of noble blood.",
+        "example": "[n.] She is of noble blood.",
         "exampleZh": "她有貴族血統。"
     },
     {
@@ -29926,7 +29926,7 @@ const externalVocabularyDB = [
         "uk": "/rɪˈzɜːv/",
         "zh": "vt. 預訂、保留、儲備；n. 儲備物、自然保護區",
         "unit": 3,
-        "example": "[n.] The Persian Gulf has 65 percent of the world's oil reserves.",
+        "example": "[vt.] The Persian Gulf has 65 percent of the world's oil reserves.",
         "exampleZh": "波斯灣擁有全世界石油儲備的65%。"
     },
     {
@@ -30466,7 +30466,7 @@ const externalVocabularyDB = [
         "uk": "/skeɪt/",
         "zh": "n. 溜冰鞋、滑冰鞋、四輪溜冰鞋、旱冰鞋；vi. 滑冰、溜冰、在滑板上滑行、溜出",
         "unit": 4,
-        "example": "[n.] We never learned to ice skate or ski.",
+        "example": "[vi.] We never learned to ice skate or ski.",
         "exampleZh": "我們從沒學過溜冰或滑雪。"
     },
     {
@@ -30896,7 +30896,7 @@ const externalVocabularyDB = [
         "uk": "/ˈstrʌktʃə(r)/",
         "zh": "n. 結構、構造、結構體、大型建築物；vt. 組織、計劃、安排",
         "unit": 4,
-        "example": "[n.] Your essay needs (a) structure.",
+        "example": "[vt.] Your essay needs (a) structure.",
         "exampleZh": "你這篇文章組織不好。"
     },
     {
@@ -31016,7 +31016,7 @@ const externalVocabularyDB = [
         "uk": "/ˈsɜːveɪ/",
         "zh": "n. 調查報告、民意調查、民意測驗、考察；vt. 調查、做民意測驗、做民意調查、審視",
         "unit": 4,
-        "example": "[n.] This very thorough survey goes back to 1784.",
+        "example": "[vt.] This very thorough survey goes back to 1784.",
         "exampleZh": "這項非常徹底的調查可追溯到1784年。"
     },
     {
@@ -31026,7 +31026,7 @@ const externalVocabularyDB = [
         "uk": "/səˈvaɪv(ə)l/",
         "zh": "n. 倖存、殘存、繼續生存、存活；adj. 倖存的、賴以生存的、救生用的",
         "unit": 4,
-        "example": "[n.] It was a matter of simple survival.",
+        "example": "[adj.] It was a matter of simple survival.",
         "exampleZh": "這完全是能不能生存的問題。"
     },
     {
@@ -31366,7 +31366,7 @@ const externalVocabularyDB = [
         "uk": "/ˈtʊərɪst/",
         "zh": "n. 觀光者、旅行者、觀光客；adj. 旅遊者的、遊客的；v. 旅行；adv. 坐旅遊車廂、坐經濟艙",
         "unit": 4,
-        "example": "[n.] A passing tourist snapped the incident.",
+        "example": "[adj.] A passing tourist snapped the incident.",
         "exampleZh": "一個過路的遊客把這件事拍了下來。"
     },
     {
@@ -31586,7 +31586,7 @@ const externalVocabularyDB = [
         "uk": "/twɪn/",
         "zh": "n. 孿生兒、雙胞胎之一、孿生兒之一、兩個極相似的事物之一；adj. 雙胞胎的、孿生的、成對的、成雙的；v. 使結成姐妹城市、使結成友好城市、使（兩人或兩事物）緊密結合、使相連",
         "unit": 4,
-        "example": "[n.] I can't tell one twin from the other.",
+        "example": "[adj.] I can't tell one twin from the other.",
         "exampleZh": "我分不出雙胞胎中誰是誰。"
     },
     {
@@ -35276,7 +35276,7 @@ const externalVocabularyDB = [
         "uk": "/ˌəʊvəˈlʊk/",
         "zh": "vt. 忽略、忽視、俯瞰、眺望；n. 眺望處",
         "unit": 4,
-        "example": "[n.] Houses which overlook the lake cost more.",
+        "example": "[vt.] Houses which overlook the lake cost more.",
         "exampleZh": "俯瞰湖泊的房子要價高些。"
     },
     {
@@ -35796,7 +35796,7 @@ const externalVocabularyDB = [
         "uk": "/kənˈsɜːnɪŋ/",
         "zh": "prep. 關於、涉及；adj. 讓人不安的、令人擔憂的；v. 有關、關於、影響、使擔心",
         "unit": 4,
-        "example": "[prep.] He asked several questions concerning the future of the company.",
+        "example": "[v.] He asked several questions concerning the future of the company.",
         "exampleZh": "他問了幾個有關公司前途的問題。"
     },
     {
@@ -36046,7 +36046,7 @@ const externalVocabularyDB = [
         "uk": "/ˈæmətə(r)/",
         "zh": "n. 業餘愛好者、生手、外行；adj. 業餘的、非專業的、業餘愛好的、不熟練的",
         "unit": 4,
-        "example": "[n.] She was a keen amateur photographer.",
+        "example": "[adj.] She was a keen amateur photographer.",
         "exampleZh": "她是一個痴迷的業餘攝影師。"
     },
     {
@@ -37986,7 +37986,7 @@ const externalVocabularyDB = [
         "uk": "/dɪsˈɡaɪz/",
         "zh": "vt. 假扮、偽裝、掩飾、隱瞞；n. 偽裝物、偽裝",
         "unit": 4,
-        "example": "[n.] The extremists entered the building disguised as medical workers.",
+        "example": "[vt.] The extremists entered the building disguised as medical workers.",
         "exampleZh": "極端分子們假扮成醫務人員，進入了大樓。"
     },
     {
@@ -38206,7 +38206,7 @@ const externalVocabularyDB = [
         "uk": "/ɪˈlæstɪk/",
         "zh": "adj. 有彈性的、靈活的；n. 鬆緊帶、橡皮筋",
         "unit": 4,
-        "example": "[adj.] Make a mask with long ears and attach a piece of elastic to go around the back of the head.",
+        "example": "[n.] Make a mask with long ears and attach a piece of elastic to go around the back of the head.",
         "exampleZh": "做一個帶長耳朵的面具，安上一條鬆緊帶繞過後腦。"
     },
     {
@@ -39556,7 +39556,7 @@ const externalVocabularyDB = [
         "uk": "/ˈɪnsɪdənt/",
         "zh": "n. 事件、事變、事故、衝突；adj. 由……產生的、附屬的、入射的",
         "unit": 4,
-        "example": "[adj.] That incident sparked it off.",
+        "example": "[n.] That incident sparked it off.",
         "exampleZh": "那一事件引發了它。"
     },
     {
@@ -40526,7 +40526,7 @@ const externalVocabularyDB = [
         "uk": "/ˈnɒns(ə)ns/",
         "zh": "n. 胡說、胡鬧、荒謬的想法、愚蠢的行為；adj. 無意義的、荒謬的；int. 胡說、廢話",
         "unit": 5,
-        "example": "[n.] 'Nonsense!' he said hotly.",
+        "example": "[int.] 'Nonsense!' he said hotly.",
         "exampleZh": "“廢話！”他怒氣衝衝地說。"
     },
     {
@@ -41396,7 +41396,7 @@ const externalVocabularyDB = [
         "uk": "/ˈreb(ə)l; rɪˈbel/",
         "zh": "n. 反抗者、造反者、反抗權威者、叛逆者；vi. 反叛、造反、違抗；adj. 造反的、反抗的",
         "unit": 5,
-        "example": "[n.] Amrita becomes a bold, daring rebel.",
+        "example": "[vi.] Amrita becomes a bold, daring rebel.",
         "exampleZh": "阿莫瑞塔成了一位英勇無畏的反叛者。"
     },
     {
@@ -41906,7 +41906,7 @@ const externalVocabularyDB = [
         "uk": "/ˈsætəlaɪt/",
         "zh": "n. 衛星、人造衛星、衛星國、附屬國；adj. 衛星傳送的、使用衛星技術的",
         "unit": 5,
-        "example": "[adj.] They have four satellite channels.",
+        "example": "[n.] They have four satellite channels.",
         "exampleZh": "他們有4個衛星頻道。"
     },
     {
@@ -42436,7 +42436,7 @@ const externalVocabularyDB = [
         "uk": "/sweɪ/",
         "zh": "v. 搖擺、搖晃、擺動、影響；n. 統治、勢力、支配、控制",
         "unit": 5,
-        "example": "[n.] The people swayed back and forth with arms linked.",
+        "example": "[v.] The people swayed back and forth with arms linked.",
         "exampleZh": "人們手拉手前後搖擺著。"
     },
     {
@@ -42826,7 +42826,7 @@ const externalVocabularyDB = [
         "uk": "/ˌvɒlənˈtɪə(r)/",
         "zh": "n. 志願者、義務工作者、自告奮勇者、主動做某事的人；v. 自願做、義務做、無償做、志願服役；adj. 志願（者）的",
         "unit": 5,
-        "example": "[n.] Volunteer work gives her life (a sense of) purpose.",
+        "example": "[adj.] Volunteer work gives her life (a sense of) purpose.",
         "exampleZh": "做志願工作使她的生活有了意義。"
     },
     {
@@ -43106,7 +43106,7 @@ const externalVocabularyDB = [
         "uk": "/kəmˈpæʃənət/",
         "zh": "adj. 有同情心的、慈悲的、憐憫的；v. 同情、憐憫",
         "unit": 5,
-        "example": "[adj.] She has a wise, compassionate face.",
+        "example": "[v.] She has a wise, compassionate face.",
         "exampleZh": "她有一張智慧和同情的臉。"
     },
     {
@@ -43576,7 +43576,7 @@ const externalVocabularyDB = [
         "uk": "/ˈnɑːsti/",
         "zh": "adj. 齷齪的、卑鄙的、難處理的、惡毒的；n. 令人不快的人、危害別人的人、恐怖錄影",
         "unit": 5,
-        "example": "[n.] That was a nasty little trick.",
+        "example": "[adj.] That was a nasty little trick.",
         "exampleZh": "這是個可惡的小騙局。"
     },
     {
@@ -45326,7 +45326,7 @@ const externalVocabularyDB = [
         "uk": "/ˈbɒdɪli/",
         "zh": "adj. 人體的、身體的、軀體的、物質的；adv. 整個身體地、全身地、整個地、完全地",
         "unit": 5,
-        "example": "[adj.] He lifted her bodily into the air.",
+        "example": "[adv.] He lifted her bodily into the air.",
         "exampleZh": "他把她整個人舉到空中。"
     },
     {
@@ -45416,7 +45416,7 @@ const externalVocabularyDB = [
         "uk": "/ˈnəʊweə(r)/",
         "zh": "adv. 任何地方都不、無處、哪裡都不、不可能看見（或找到）的；n. 不存在的地方、荒蕪的地區；adj. 無望成功的、不知名的",
         "unit": 5,
-        "example": "[n.] Nowhere is language a more serious issue than in Hawaii.",
+        "example": "[adv.] Nowhere is language a more serious issue than in Hawaii.",
         "exampleZh": "語言在任何地方都不像在夏威夷那樣是個嚴重的問題。"
     },
     {
@@ -46296,7 +46296,7 @@ const externalVocabularyDB = [
         "uk": "/ˈbʊzəm/",
         "zh": "n. 胸、乳房、襟、胸懷；adj. 親密的、知心的；v. 懷抱、把……藏在心中",
         "unit": 5,
-        "example": "[n.] They were bosom buddies.",
+        "example": "[adj.] They were bosom buddies.",
         "exampleZh": "他們曾是知心的夥伴。"
     },
     {
@@ -46696,7 +46696,7 @@ const externalVocabularyDB = [
         "uk": "/ˈkɔːʃ(ə)n/",
         "zh": "n. 小心、謹慎、提醒、告誡；vt. 警告、提醒",
         "unit": 5,
-        "example": "[vt.] Caution! This truck is reversing.",
+        "example": "[n.] Caution! This truck is reversing.",
         "exampleZh": "小心！卡車在倒車。"
     },
     {
@@ -46856,7 +46856,7 @@ const externalVocabularyDB = [
         "uk": "/ˈtʃætə(r)/",
         "zh": "vi. 嘮叨、喋喋不休、唧唧叫、吱吱叫；n. 閒聊、閒扯、吱吱聲、唧唧聲",
         "unit": 5,
-        "example": "[vi.] The guests engaged in superficial chatter.",
+        "example": "[n.] The guests engaged in superficial chatter.",
         "exampleZh": "客人閒聊起來。"
     },
     {
@@ -47176,7 +47176,7 @@ const externalVocabularyDB = [
         "uk": "/ˈkɒmənpleɪs/",
         "zh": "adj. 平凡的、不足為奇的、平庸的；n. 老生常談、司空見慣的事、常見的東西、陳詞濫調",
         "unit": 5,
-        "example": "[adj.] Simpson's much vaunted discoveries are in fact commonplace in modern sociology.",
+        "example": "[n.] Simpson's much vaunted discoveries are in fact commonplace in modern sociology.",
         "exampleZh": "辛普森的那些被過分稱讚的發現在現代社會學中實際上是老生常談。"
     },
     {
@@ -47296,7 +47296,7 @@ const externalVocabularyDB = [
         "uk": "/kənˈdʌkt/",
         "zh": "vt. 實施、進行、指揮、帶領；n. 行為、舉止、經營方式、管理方法",
         "unit": 5,
-        "example": "[vt.] He was ejected for unsporting conduct.",
+        "example": "[n.] He was ejected for unsporting conduct.",
         "exampleZh": "他因為不符合運動員道德的行為被驅逐。"
     },
     {
@@ -47946,7 +47946,7 @@ const externalVocabularyDB = [
         "uk": "/dwɔːf/",
         "zh": "n. 矮小的動(植)物、小矮人、侏儒、矮子；vt. 使顯得矮小、使相形見絀；adj. 矮小的、矮種的",
         "unit": 5,
-        "example": "[vt.] His figure is dwarfed by the huge red McDonald's sign.",
+        "example": "[adj.] His figure is dwarfed by the huge red McDonald's sign.",
         "exampleZh": "他的個子被巨大的紅色麥當勞招牌襯得格外矮小。"
     },
     {
@@ -48066,7 +48066,7 @@ const externalVocabularyDB = [
         "uk": "/ˈeθɪk/",
         "zh": "n. 倫理標準、行為準則、道德規範、信仰；adj. 道德規範（有關）的、倫理（有關）的",
         "unit": 5,
-        "example": "[n.] Out of Puritanism came the intense work ethic.",
+        "example": "[adj.] Out of Puritanism came the intense work ethic.",
         "exampleZh": "從清教徒主義思想中衍生出的極強職業倫理。"
     },
     {
@@ -48196,7 +48196,7 @@ const externalVocabularyDB = [
         "uk": "/ˈfærənhaɪt/",
         "zh": "n. 華氏溫標、法倫海特；adj. 華氏的、華氏溫度計的",
         "unit": 5,
-        "example": "[n.] The thermometer read 105 degrees Fahrenheit.",
+        "example": "[adj.] The thermometer read 105 degrees Fahrenheit.",
         "exampleZh": "溫度計顯示為華氏105度。"
     },
     {
@@ -49006,7 +49006,7 @@ const externalVocabularyDB = [
         "uk": "/ˌhəʊməˈsekʃuəl; ˌhɒməˈsekʃuəl/",
         "zh": "n. 同性戀者；adj. 同性戀的、同性性慾的",
         "unit": 5,
-        "example": "[n.] It doesn't matter whether people are heterosexual or homosexual.",
+        "example": "[adj.] It doesn't matter whether people are heterosexual or homosexual.",
         "exampleZh": "一個人是異性戀還是同性戀無關緊要。"
     },
     {
@@ -50066,7 +50066,7 @@ const externalVocabularyDB = [
         "uk": "/ˈmʌmb(ə)l/",
         "zh": "v. 咕噥、喃喃自語、含糊地說；n. 咕噥聲",
         "unit": 6,
-        "example": "[n.] He could hear the low mumble of Navarro's voice.",
+        "example": "[v.] He could hear the low mumble of Navarro's voice.",
         "exampleZh": "他能聽到納瓦羅的低聲咕噥。"
     },
     {
@@ -50496,7 +50496,7 @@ const externalVocabularyDB = [
         "uk": "/ˌəʊvəˈwɜːk/",
         "zh": "vt. 工作過度、過度勞累、對……使用過度；n. 過勞、勞累過度、過量工作、過於繁重的工作",
         "unit": 6,
-        "example": "[vt.] His illness was brought on by money worries and overwork.",
+        "example": "[n.] His illness was brought on by money worries and overwork.",
         "exampleZh": "他的病是因操心錢和勞累過度而造成的。"
     },
     {
@@ -50976,7 +50976,7 @@ const externalVocabularyDB = [
         "uk": "/pəˈtenʃ(ə)l/",
         "zh": "adj. 潛在的、可能的；n. 潛力、潛能、可能性、電勢",
         "unit": 6,
-        "example": "[adj.] The boy has great potential.",
+        "example": "[n.] The boy has great potential.",
         "exampleZh": "這個男孩有很大的潛力。"
     },
     {
@@ -52426,7 +52426,7 @@ const externalVocabularyDB = [
         "uk": "/stɔːl/",
         "zh": "n. 貨攤、販賣處、諮詢臺、牲畜棚；v. 熄火、拋錨、故意拖延、拖住",
         "unit": 6,
-        "example": "[n.] The engine stalled.",
+        "example": "[v.] The engine stalled.",
         "exampleZh": "發動機突然熄火了。"
     },
     {
@@ -52456,7 +52456,7 @@ const externalVocabularyDB = [
         "uk": "/stəˈtɪstɪk/",
         "zh": "n. 統計量、統計數值、統計數字、統計資料；adj. 統計的、統計學的",
         "unit": 6,
-        "example": "[n.] Recent crime statistics show a significant decrease across the nation.",
+        "example": "[adj.] Recent crime statistics show a significant decrease across the nation.",
         "exampleZh": "最近的犯罪統計數據顯示全國範圍內有顯著下降。"
     },
     {
@@ -56656,7 +56656,7 @@ const externalVocabularyDB = [
         "uk": "/fret/",
         "zh": "vt. 使苦惱、使煩躁、煩惱、發愁；n. 品、霧、海霧、煩躁",
         "unit": 6,
-        "example": "[n.] If it's out of your control, why fret about it?",
+        "example": "[vt.] If it's out of your control, why fret about it?",
         "exampleZh": "如果這是你無法控制的，為什麼要為此煩惱呢？"
     },
     {
@@ -56966,7 +56966,7 @@ const externalVocabularyDB = [
         "uk": "/əbˈskjʊə(r)/",
         "zh": "adj. 難以說清楚的、模糊的、鮮為人知的、默默無聞的；vt. 遮掩、遮蔽、使費解；n. 某種模糊的或不清楚的東西",
         "unit": 6,
-        "example": "[n.] I found her lecture very obscure.",
+        "example": "[vt.] I found her lecture very obscure.",
         "exampleZh": "我覺得她的講座非常費解。"
     },
     {
@@ -57736,7 +57736,7 @@ const externalVocabularyDB = [
         "uk": "/rɪˈɡɑːdləs/",
         "zh": "adv. 不顧、不加理會、不管怎樣、無論如何；adj. 不管的、不注意的",
         "unit": 6,
-        "example": "[adv.] It takes in anybody regardless of religion, colour, or creed.",
+        "example": "[adj.] It takes in anybody regardless of religion, colour, or creed.",
         "exampleZh": "這個組織接納任何人，不管其宗教、膚色或信仰。"
     },
     {
@@ -60016,7 +60016,7 @@ const externalVocabularyDB = [
         "uk": "/ˈemɪɡrənt/",
         "zh": "n. 移民、移出者、移居外國的人；adj. 移民的、移居的",
         "unit": 7,
-        "example": "[n.] He is a British emigrant to Australia.",
+        "example": "[adj.] He is a British emigrant to Australia.",
         "exampleZh": "他是個移居澳大利亞的英國人。"
     },
     {
@@ -61706,7 +61706,7 @@ const externalVocabularyDB = [
         "uk": "/ˈnætʃ(ə)rəlɪst/",
         "zh": "n. 博物學家、博物學者、自然主義者、動物標本剝製者；adj. 自然主義的、自然的、博物學的、與博物學相關的",
         "unit": 7,
-        "example": "[n.] He was a printer by trade and naturalist by avocation.",
+        "example": "[adj.] He was a printer by trade and naturalist by avocation.",
         "exampleZh": "他在印刷廠工作，同時是個博物學愛好者。"
     },
     {
@@ -63936,7 +63936,7 @@ const externalVocabularyDB = [
         "uk": "/ˈtæktɪk/",
         "zh": "n. 戰術、策略、手法、兵法；adj. 按順序的、依次排列的",
         "unit": 7,
-        "example": "[adj.] One tactic involves where to display the goods.",
+        "example": "[n.] One tactic involves where to display the goods.",
         "exampleZh": "其中一個策略涉及到在哪裡展示商品。"
     },
     {
@@ -64266,7 +64266,7 @@ const externalVocabularyDB = [
         "uk": "/ˈtrɒpɪk/",
         "zh": "n. 回歸線、熱帶地區；adj. 熱帶的",
         "unit": 7,
-        "example": "[n.] We must protect tropic forests.",
+        "example": "[adj.] We must protect tropic forests.",
         "exampleZh": "我們必須保護熱帶雨林。"
     },
     {
@@ -64276,7 +64276,7 @@ const externalVocabularyDB = [
         "uk": "/ˈtruːənt/",
         "zh": "n. 曠課者、逃學者、逃避責任者；adj. 曠課的、逃學的、懶惰的、閒散的；v. 曠課、逃學、偷懶、逃避責任",
         "unit": 7,
-        "example": "[n.] She was getting into trouble over playing truant from school.",
+        "example": "[v.] She was getting into trouble over playing truant from school.",
         "exampleZh": "她由於逃學而遇到了麻煩。"
     },
     {
@@ -64496,7 +64496,7 @@ const externalVocabularyDB = [
         "uk": "/vəˈnɪlə/",
         "zh": "n. 香草精、香子蘭精、香草冰淇淋、香草冰淇淋色；adj. 香草味的、無特色的、普通的",
         "unit": 7,
-        "example": "[adj.] I added a dollop of vanilla ice cream to the pie.",
+        "example": "[n.] I added a dollop of vanilla ice cream to the pie.",
         "exampleZh": "我在餡餅中加了一塊香草冰淇淋。"
     },
     {
@@ -65176,7 +65176,7 @@ const externalVocabularyDB = [
         "uk": "/bɪˈɡɪnɪŋ/",
         "zh": "n. 開始、起初、開端、序曲；adj. 初級的、基本的；v. 開始、著手",
         "unit": 7,
-        "example": "[adj.] The snow was beginning to melt.",
+        "example": "[n.] The snow was beginning to melt.",
         "exampleZh": "積雪開始融化了。"
     },
     {
@@ -65556,7 +65556,7 @@ const externalVocabularyDB = [
         "uk": "/ˈbɒrəʊd/",
         "zh": "adj. 借來的、抄襲的、借入的、借用的；vt. 借用、借入、borrow的過去式和過去分詞：借、採用；n. borrowedtime：本應結束卻仍在延續的時間、苟延殘喘的時光",
         "unit": 7,
-        "example": "[vt.] He returned the book he had borrowed from the public library.",
+        "example": "[adj.] He returned the book he had borrowed from the public library.",
         "exampleZh": "他歸還了從公共圖書館借來的那本書。"
     },
     {
@@ -65576,7 +65576,7 @@ const externalVocabularyDB = [
         "uk": "/dɪsəˈpɪəd/",
         "zh": "adj. 消失的、消失了的；vi. 消失、不見、失蹤、丟失；n. 被秘密逮捕（或處決）的人",
         "unit": 7,
-        "example": "[n.] The sun quickly disappeared behind the thick dark clouds.",
+        "example": "[vi.] The sun quickly disappeared behind the thick dark clouds.",
         "exampleZh": "太陽迅速消失在濃厚的烏雲後方。"
     },
     {

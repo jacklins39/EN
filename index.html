@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261116V3';
+        const APP_BUILD_VERSION = '20261116V4';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -3619,9 +3619,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261116V3</span>
+                        <span id="app-version-display">版本 20261116V4</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261116V3</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261116V4</p>
                 </div>
             </div>
         </div>
@@ -4299,12 +4299,13 @@
                 if (items.length > 0) {
                     // 智慧例句語境標記 (僅標記 matchedExample 供展開面板與懸浮窗顯示，絕不篡改資料庫原本的主詞性優先順序！)
                     let hasExampleMatch = false;
+                    let exactMatch = null;
                     if (normExPos) {
                         const posMatchesItem = (itPos, targetPos) => {
                             const subList = String(itPos || '').split('/').map(s => s.trim());
                             return subList.includes(targetPos);
                         };
-                        const exactMatch = items.find(it => posMatchesItem(it.pos, normExPos)) ||
+                        exactMatch = items.find(it => posMatchesItem(it.pos, normExPos)) ||
                             (normExPos === 'v.' ? items.find(it => posMatchesItem(it.pos, 'vt.') || posMatchesItem(it.pos, 'vi.')) : null) ||
                             ((normExPos === 'vt.' || normExPos === 'vi.') ? items.find(it => posMatchesItem(it.pos, 'v.')) : null);
                         if (exactMatch) {
@@ -4312,19 +4313,22 @@
                             exactMatch.matchedExample = true;
                         }
                     }
-                    if (!hasExampleMatch && exampleZh) {
+                    if (exampleZh) {
                         const cleanExZh = exampleZh.replace(/[^\u4e00-\u9fa5a-zA-Z0-9]/g, '');
                         items.forEach(it => {
-                            const cleanText = it.text.replace(/[\(（][^）\)]*[\)）]/g, '');
-                            const rawTerms = cleanText.split(/[,，、/；;\s]+/).map(t => t.trim()).filter(Boolean);
-                            let score = 0;
-                            for (const rawTerm of rawTerms) {
-                                // 僅比對 >= 2 字之完整詞條，禁止單字元 (如「生」誤中「生下」) 或亂去「的」字造成次要詞性誤判
-                                if (rawTerm.length >= 2 && cleanExZh.includes(rawTerm)) {
-                                    score += rawTerm.length * 3 + 2;
+                            if (typeof scoreTermsInPosText === 'function') {
+                                it.matchScore = scoreTermsInPosText(it.text, exampleZh).maxScore;
+                            } else {
+                                const cleanText = it.text.replace(/[\(（][^）\)]*[\)）]/g, '');
+                                const rawTerms = cleanText.split(/[,，、/；;\s]+/).map(t => t.trim()).filter(Boolean);
+                                let score = 0;
+                                for (const rawTerm of rawTerms) {
+                                    if (rawTerm.length >= 2 && cleanExZh.includes(rawTerm)) {
+                                        score += rawTerm.length * 3 + 2;
+                                    }
                                 }
+                                it.matchScore = score;
                             }
-                            it.matchScore = score;
                         });
 
                         let maxScore = 0;
@@ -4336,7 +4340,12 @@
                             }
                         });
 
-                        if (bestItem && maxScore >= 6) {
+                        // 若原本標籤 exactMatch 完全沒命中例句中文 (<60)，而另一詞性高度吻合例句中文 (>=75)，自動修正錯位標籤
+                        if (exactMatch && bestItem && bestItem !== exactMatch && (exactMatch.matchScore || 0) < 60 && maxScore >= 75) {
+                            exactMatch.matchedExample = false;
+                            bestItem.matchedExample = true;
+                            hasExampleMatch = true;
+                        } else if (!hasExampleMatch && bestItem && maxScore >= 6) {
                             hasExampleMatch = true;
                             bestItem.matchedExample = true;
                         }
@@ -4370,16 +4379,18 @@
 
         function getWordExamplePos(w, parsedOpt = null) {
             if (!w) return '';
+            const parsed = parsedOpt || splitPosAndZh(w.zh, w.pos, w.exampleZh, w.example, w.en, w.examplePos);
+            if (parsed && parsed.items && parsed.items.length > 0) {
+                const matched = parsed.items.find(it => it.matchedExample && it.pos);
+                if (matched) return normalizePosToken(matched.pos);
+            }
             if (w.examplePos) return normalizePosToken(w.examplePos);
             if (typeof w.example === 'string') {
                 const m = w.example.match(EXAMPLE_POS_PREFIX_RE);
                 if (m) return normalizePosToken(m[1]);
             }
-            const parsed = parsedOpt || splitPosAndZh(w.zh, w.pos, w.exampleZh, w.example, w.en, w.examplePos);
-            if (parsed && parsed.items && parsed.items.length > 0) {
-                const matched = parsed.items.find(it => it.matchedExample && it.pos);
-                if (matched) return normalizePosToken(matched.pos);
-                if (parsed.items[0].pos) return normalizePosToken(parsed.items[0].pos);
+            if (parsed && parsed.items && parsed.items.length > 0 && parsed.items[0].pos) {
+                return normalizePosToken(parsed.items[0].pos);
             }
             return normalizePosToken(w.pos || (parsed && parsed.pos) || '');
         }
@@ -16795,7 +16806,7 @@ function cleanupMasteredMistakes() {
             const objPron = new Set(['me', 'you', 'him', 'her', 'it', 'us', 'them', 'whom']);
             const allPersonalPron = new Set(['i', 'you', 'he', 'she', 'it', 'we', 'they', 'me', 'him', 'us', 'them', 'myself', 'yourself', 'himself', 'herself', 'itself', 'ourselves', 'themselves', 'someone', 'anyone', 'everyone', 'nobody', 'somebody', 'anybody', 'everybody', 'something', 'anything', 'everything', 'nothing', 'who', 'whom', 'mine', 'yours', 'hers', 'ours', 'theirs']);
             const possDets = new Set(['my', 'your', 'our', 'their', 'its', 'whose']);
-            const beLinking = new Set(['am', 'is', 'are', 'was', 'were', 'be', 'been', 'being', 'feel', 'feels', 'felt', 'look', 'looks', 'looked', 'seem', 'seems', 'seemed', 'become', 'becomes', 'became', 'get', 'gets', 'got', 'sound', 'sounds', 'stay', 'stays', 'keep', 'keeps']);
+            const beLinking = new Set(['am', 'is', 'are', 'was', 'were', 'be', 'been', 'being', "i'm", "you're", "he's", "she's", "it's", "we're", "they're", "that's", "there's", "what's", "who's", "isn't", "aren't", "wasn't", "weren't", 'feel', 'feels', 'felt', 'look', 'looks', 'looked', 'seem', 'seems', 'seemed', 'become', 'becomes', 'became', 'get', 'gets', 'got', 'sound', 'sounds', 'stay', 'stays', 'keep', 'keeps']);
             const preps = new Set(['in', 'on', 'at', 'of', 'for', 'with', 'about', 'into', 'through', 'before', 'after', 'above', 'below', 'from', 'up', 'down', 'out', 'off', 'over', 'under', 'by', 'without', 'along', 'across', 'behind', 'around', 'near', 'among', 'towards', 'toward', 'upon', 'beside', 'despite', 'except', 'inside', 'outside', 'past', 'since', 'until', 'as', 'like', 'than', 'between', 'against', 'during', 'within', 'beyond']);
             const pureConjs = new Set(['and', 'or', 'but', 'nor', 'yet', 'because', 'although', 'though', 'unless', 'while', 'whereas', 'whether', 'if']);
             const commonAdverbs = new Set(['just', 'now', 'here', 'there', 'today', 'yesterday', 'tomorrow', 'again', 'too', 'also', 'very', 'so', 'only', 'even', 'still', 'already', 'always', 'never', 'often', 'sometimes', 'usually', 'seldom', 'ever', 'soon', 'early', 'late', 'fast', 'hard', 'well', 'much', 'more', 'most', 'quite', 'rather', 'almost', 'nearly', 'enough', 'together', 'alone', 'away', 'back', 'ago', 'ahead', 'abroad', 'home']);
@@ -16913,9 +16924,20 @@ function cleanupMasteredMistakes() {
                 }
             }
 
-            // 疑問句倒裝結構 Is it OK ... / Was it fair ...
+            // 助動詞疑問倒裝句型 (如 What does this new word mean? / How much does this big bag weigh?)
+            if (idx >= 2 && tok === cleanBase && tokens.slice(0, idx - 1).some(t => pureModals.has(t.clean)) && (currHasPunct || !next1 || preps.has(next1) || dets.has(next1) || objPron.has(next1) || commonAdverbs.has(next1))) {
+                add('MAIN_V', 6.5);
+                add('N', -3.0);
+                add('ADV', -3.0);
+            }
+
+            // 疑問句倒裝結構 Is it OK ... / Was it fair ... / Is this story true or false?
             if (beLinking.has(prev2) && prev1 === 'it' && !prevHasPunct) {
                 add('PURE_ADJ', 5.5);
+            }
+            if (idx >= 3 && (prev1 === 'or' || prev1 === 'and') && tokens.slice(0, idx - 1).some(t => beLinking.has(t.clean)) && isNextClauseBoundary) {
+                add('PURE_ADJ', 5.8);
+                add('ADV', -2.5);
             }
 
             // 後面接限定詞/受格代名詞作為直接受詞，前無限定詞或介系詞 -> 主動動詞 (如 The officer saw the car / kids found a puppy)
@@ -17014,16 +17036,16 @@ function cleanupMasteredMistakes() {
                         } else if (core.length === 3 && (cleanExZh.includes(core[0] + core[2]) || cleanExZh.includes(core[1] + core[2]))) {
                             score = 86;
                         }
-                    } else if (core.length >= 3 && /^(?:使|令|讓|感到|覺得|保持|變得|成為)/.test(core)) {
+                    } else if (core.length >= 3 && /^(?:使|令|讓|感到|覺得|保持|變得|成為|加以|進行|予以)/.test(core)) {
                         // Level 1C：去除使動/感受前綴後 >= 2 字完全匹配
-                        const stem = core.replace(/^(?:使|令|讓|感到|覺得|保持|變得|成為)/, '');
+                        const stem = core.replace(/^(?:使|令|讓|感到|覺得|保持|變得|成為|加以|進行|予以)/, '');
                         if (stem.length >= 2 && cleanExZh.includes(stem)) {
                             score = 88 + stem.length * 10;
                         }
-                    } else if (core.length >= 3 && /(?:出|開|下|上|起|來|去|於|之)$/.test(core)) {
+                    } else if (core.length >= 3 && /(?:出|開|下|上|起|來|去|於|之|是|著|了|過|到|成|為|好|完|住|走|掉|進|回)$/.test(core)) {
                         const stem2 = core.slice(0, -1);
                         if (stem2.length >= 2 && cleanExZh.includes(stem2)) {
-                            score = 85;
+                            score = 88 + stem2.length * 5;
                         }
                     } else if (core.length === 1 && /[\u4e00-\u9fa5]/.test(core)) {
                         // Level 1E：字典中獨立列出之單字元釋義（如「能」、「你」、「這」、「是」、「走」）直接命中例句
@@ -17121,15 +17143,15 @@ function cleanupMasteredMistakes() {
             if (!w || !w.zh) return '';
             sanitizeWord(w);
             const { contextPos, contextEn, contextZh } = extractTooltipContext(el, w);
-            // 僅將確定之目標詞性 contextPos 傳入 splitPosAndZh；非目標詞改由下方「句法＋中文語意聯合評分」鎖定，避免純文字比對誤判詞性
-            const parsed = splitPosAndZh(w.zh, w.pos, '', contextEn, w.en, contextPos);
+            const parsed = splitPosAndZh(w.zh, w.pos, contextZh, contextEn, w.en, contextPos);
             const items = (parsed && parsed.items && parsed.items.length > 0) ? parsed.items : [{ pos: '', text: w.zh, matchedExample: false }];
 
             let hasLockedPos = Boolean(parsed && parsed.hasExampleMatch);
 
-            if (!hasLockedPos && items.length > 1 && (contextEn || contextZh)) {
+            if (items.length > 1 && (contextEn || contextZh)) {
                 const posList = items.map(it => it.pos || '');
                 const gramScores = getGrammarPosScores(surfaceWord, w.en, posList, contextEn);
+                const maxTermAcrossAll = items.reduce((m, it) => Math.max(m, scoreTermsInPosText(it.text, contextZh).maxScore), 0);
 
                 let bestItem = items[0];
                 let bestTotal = -Infinity;
@@ -17144,7 +17166,10 @@ function cleanupMasteredMistakes() {
                     else if (termMax >= 60) zhBonus = 3.5;
                     else if (termMax >= 50) zhBonus = 1.2;
 
-                    const total = gScore + zhBonus;
+                    // 若原本標籤 matchedExample 有基本中文吻合或全無強中文命中，給予先驗加成；若完全沒中中文且別項強命中則不盲從舊標籤
+                    const priorBonus = (it.matchedExample && (termMax >= 60 || maxTermAcrossAll < 75)) ? 3.0 : 0;
+
+                    const total = gScore + zhBonus + priorBonus;
                     if (total > bestTotal) {
                         bestTotal = total;
                         bestItem = it;
@@ -17152,7 +17177,7 @@ function cleanupMasteredMistakes() {
                 });
 
                 if (bestItem) {
-                    bestItem.matchedExample = true;
+                    items.forEach(it => { it.matchedExample = (it === bestItem); });
                     hasLockedPos = true;
                 }
             }

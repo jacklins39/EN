@@ -1216,7 +1216,7 @@ const toeicWordsDB = [
         "uk": "/ˈædvəkeɪt/",
         "zh": "vt. 擁護、提倡；n. 擁護者、提倡者、辯護律師、謀利益者",
         "unit": 11,
-        "example": "[n.] The health organization strongly advocates eating a balanced diet and exercising regularly.",
+        "example": "[vt.] The health organization strongly advocates eating a balanced diet and exercising regularly.",
         "exampleZh": "該衛生組織極力提倡均衡飲食並進行規律運動。"
     },
     {
@@ -1746,7 +1746,7 @@ const toeicWordsDB = [
         "uk": "/ˈæmətə(r)/",
         "zh": "n. 業餘愛好者、生手、外行；adj. 業餘的、非專業的、業餘愛好的、不熟練的",
         "unit": 11,
-        "example": "[n.] She was a keen amateur photographer.",
+        "example": "[adj.] She was a keen amateur photographer.",
         "exampleZh": "她是一個痴迷的業餘攝影師。"
     },
     {
@@ -2706,7 +2706,7 @@ const toeicWordsDB = [
         "uk": "/ˈɔːdətri/",
         "zh": "adj. 耳朵的、聽覺的、聽力的；n. 聽眾、禮堂",
         "unit": 11,
-        "example": "[n.] The interactive auditory games are interspersed with real world history.",
+        "example": "[adj.] The interactive auditory games are interspersed with real world history.",
         "exampleZh": "互動式聽覺遊戲穿插著真實的世界歷史。"
     },
     {
@@ -2926,7 +2926,7 @@ const toeicWordsDB = [
         "uk": "/ˈbækʌp/",
         "zh": "n. 備用、備用物、支援、增援；adj. 備用的、候補的、替代的、支援性的；v. 備份",
         "unit": 11,
-        "example": "[n.] You should make a copy of the disk as a backup.",
+        "example": "[v.] You should make a copy of the disk as a backup.",
         "exampleZh": "你應該將磁碟複製一個備份。"
     },
     {
@@ -3636,7 +3636,7 @@ const toeicWordsDB = [
         "uk": "/bɪˈkʌmɪŋ/",
         "zh": "adj. 合適的、適宜的、好看的、相配的；n. 形成、發生、生成變化；v. 開始變得、成為、成長為、適合",
         "unit": 11,
-        "example": "[adj.] The heat was becoming unbearable.",
+        "example": "[v.] The heat was becoming unbearable.",
         "exampleZh": "炎熱開始變得難以忍受。"
     },
     {
@@ -3706,7 +3706,7 @@ const toeicWordsDB = [
         "uk": "/bɪˈɡɪnɪŋ/",
         "zh": "n. 開始、起初、開端、序曲；adj. 初級的、基本的；v. 開始、著手",
         "unit": 11,
-        "example": "[adj.] The snow was beginning to melt.",
+        "example": "[n.] The snow was beginning to melt.",
         "exampleZh": "積雪開始融化了。"
     },
     {
@@ -4196,7 +4196,7 @@ const toeicWordsDB = [
         "uk": "/ˈbaɪndɪŋ/",
         "zh": "n. 裝訂、封皮、封面、鑲邊；v. 捆綁、聯合在一起、約束、迫使",
         "unit": 11,
-        "example": "[n.] They are regarded as seriously binding.",
+        "example": "[v.] They are regarded as seriously binding.",
         "exampleZh": "它們被認為具有嚴格約束力。"
     },
     {
@@ -4366,7 +4366,7 @@ const toeicWordsDB = [
         "uk": "/blaɪnd/",
         "zh": "adj. 盲的、失明的、未察覺的、視而不見的；vt. 使失明、使變瞎、使眼花、使目眩；n. 窗簾、捲簾、埋伏處、伏擊處；adv. 看不清地、失去理智地、盲目地、無準備地",
         "unit": 11,
-        "example": "[adv.] Doctors think he will go blind.",
+        "example": "[vt.] Doctors think he will go blind.",
         "exampleZh": "醫生認為他會失明。"
     },
     {
@@ -5966,7 +5966,7 @@ const toeicWordsDB = [
         "uk": "/ˈkɔːʃ(ə)n/",
         "zh": "n. 小心、謹慎、提醒、告誡；vt. 警告、提醒",
         "unit": 11,
-        "example": "[vt.] Caution! This truck is reversing.",
+        "example": "[n.] Caution! This truck is reversing.",
         "exampleZh": "小心！卡車在倒車。"
     },
     {
@@ -7156,7 +7156,7 @@ const toeicWordsDB = [
         "uk": "/kənˈsɜːnɪŋ/",
         "zh": "prep. 關於、涉及；adj. 讓人不安的、令人擔憂的；v. 有關、關於、影響、使擔心",
         "unit": 11,
-        "example": "[prep.] He asked several questions concerning the future of the company.",
+        "example": "[v.] He asked several questions concerning the future of the company.",
         "exampleZh": "他問了幾個有關公司前途的問題。"
     },
     {
@@ -7216,7 +7216,7 @@ const toeicWordsDB = [
         "uk": "/kənˈdʌkt/",
         "zh": "vt. 實施、進行、指揮、帶領；n. 行為、舉止、經營方式、管理方法",
         "unit": 11,
-        "example": "[vt.] He was ejected for unsporting conduct.",
+        "example": "[n.] He was ejected for unsporting conduct.",
         "exampleZh": "他因為不符合運動員道德的行為被驅逐。"
     },
     {
@@ -9716,7 +9716,7 @@ const toeicWordsDB = [
         "uk": "/ˈdɪskaʊnt/",
         "zh": "n. 減價、折扣、貼現率；adj. 打折的、減價出售的；vt. 打折、減價、不重視、忽視",
         "unit": 11,
-        "example": "[n.] Do you give any discount?",
+        "example": "[vt.] Do you give any discount?",
         "exampleZh": "你們打折嗎？"
     },
     {
@@ -10136,7 +10136,7 @@ const toeicWordsDB = [
         "uk": "/ˌdaʊnˈtaʊn/",
         "zh": "adj. 市中心的、商業區的；adv. 向（在）市中心、向（在）城鎮商業中心區；n. 城鎮的中心區、商業區、鬧市區",
         "unit": 12,
-        "example": "[adv.] Parking can be tricky downtown.",
+        "example": "[adj.] Parking can be tricky downtown.",
         "exampleZh": "在市中心停車會很難。"
     },
     {
@@ -10866,7 +10866,7 @@ const toeicWordsDB = [
         "uk": "/ɪmˈplɔɪ/",
         "zh": "vt. 雇用、使用、僱用、利用；n. 受僱",
         "unit": 12,
-        "example": "[n.] How many people does the company employ?",
+        "example": "[vt.] How many people does the company employ?",
         "exampleZh": "這個公司僱用了多少人？"
     },
     {
@@ -11506,7 +11506,7 @@ const toeicWordsDB = [
         "uk": "/ˈeθɪk/",
         "zh": "n. 倫理標準、行為準則、道德規範、信仰；adj. 道德規範（有關）的、倫理（有關）的",
         "unit": 12,
-        "example": "[n.] Out of Puritanism came the intense work ethic.",
+        "example": "[adj.] Out of Puritanism came the intense work ethic.",
         "exampleZh": "從清教徒主義思想中衍生出的極強職業倫理。"
     },
     {
@@ -12636,7 +12636,7 @@ const toeicWordsDB = [
         "uk": "/fɪə(r)/",
         "zh": "v. 害怕、畏懼、擔心、憂慮；n. 恐懼、擔心、可能性、敬畏",
         "unit": 12,
-        "example": "[v.] Fear clutched at her heart.",
+        "example": "[n.] Fear clutched at her heart.",
         "exampleZh": "恐懼抓住了她的心。"
     },
     {
@@ -13226,7 +13226,7 @@ const toeicWordsDB = [
         "uk": "/ˈfɔːməʊst/",
         "zh": "adj. 最前的、最先的、最重要的；adv. 首先、第一、最基礎地、最重要地",
         "unit": 12,
-        "example": "[adj.] It is first and foremost a trade agreement.",
+        "example": "[adv.] It is first and foremost a trade agreement.",
         "exampleZh": "它首先是一項貿易協定。"
     },
     {
@@ -14186,7 +14186,7 @@ const toeicWordsDB = [
         "uk": "/ˈɡrædʒuət; ˈɡrædʒuˌeɪt/",
         "zh": "n. 大學畢業生、學士學位獲得者、畢業生；vi. 獲得學位、大學畢業、畢業、授予（某人）學位；adj. 研究生的",
         "unit": 12,
-        "example": "[n.] Our marketing firm is actively recruiting recent college graduates for entry-level positions.",
+        "example": "[vi.] Our marketing firm is actively recruiting recent college graduates for entry-level positions.",
         "exampleZh": "我們的行銷公司正積極招募剛畢業的大學生擔任初階職位。"
     },
     {
@@ -14386,7 +14386,7 @@ const toeicWordsDB = [
         "uk": "/ɡrəʊθ/",
         "zh": "n. 成長、發育、增大、生長；adj. 發展的、增長的",
         "unit": 12,
-        "example": "[n.] Economic growth has slowed a little.",
+        "example": "[adj.] Economic growth has slowed a little.",
         "exampleZh": "經濟增長稍有減緩。"
     },
     {
@@ -16246,7 +16246,7 @@ const toeicWordsDB = [
         "uk": "/ˈɪnsɪdənt/",
         "zh": "n. 事件、事變、事故、衝突；adj. 由……產生的、附屬的、入射的",
         "unit": 12,
-        "example": "[adj.] That incident sparked it off.",
+        "example": "[n.] That incident sparked it off.",
         "exampleZh": "那一事件引發了它。"
     },
     {
@@ -17926,7 +17926,7 @@ const toeicWordsDB = [
         "uk": "/dʒɔɪn/",
         "zh": "v. 參加、加入、連接、結合；n. 連接處、接合點",
         "unit": 12,
-        "example": "[n.] How do these two pieces join?",
+        "example": "[v.] How do these two pieces join?",
         "exampleZh": "這兩個部分如何連接？"
     },
     {
@@ -18766,7 +18766,7 @@ const toeicWordsDB = [
         "uk": "/liːst/",
         "zh": "adj. 最少的、最微不足道的；adv. 最低程度地、最少、至少；n. 最不重要的事物、最微小的事物；pron. 最少量、起碼",
         "unit": 12,
-        "example": "[adj.] It'll cost at least 500 dollars.",
+        "example": "[adv.] It'll cost at least 500 dollars.",
         "exampleZh": "至少要花費500美元。"
     },
     {
@@ -18986,7 +18986,7 @@ const toeicWordsDB = [
         "uk": "/ˈlɪmɪt/",
         "zh": "n. 限度、限制、極限、限量；vt. 限制、限定、制約、減少",
         "unit": 12,
-        "example": "[n.] The road has a 30 mph speed limit.",
+        "example": "[vt.] The road has a 30 mph speed limit.",
         "exampleZh": "這條公路限定時速30英里。"
     },
     {
@@ -19536,7 +19536,7 @@ const toeicWordsDB = [
         "uk": "/miːn/",
         "zh": "vt. 意思是、意味著、打算；adj. 吝嗇的、小氣的、刻薄的；n. 平均數、中庸",
         "unit": 12,
-        "example": "[n.] What does this sentence mean?",
+        "example": "[vt.] What does this sentence mean?",
         "exampleZh": "這句話是什麼意思呢？"
     },
     {
@@ -21306,7 +21306,7 @@ const toeicWordsDB = [
         "uk": "/ˌəʊvəˈlʊk/",
         "zh": "vt. 忽略、忽視、俯瞰、眺望；n. 眺望處",
         "unit": 13,
-        "example": "[n.] Houses which overlook the lake cost more.",
+        "example": "[vt.] Houses which overlook the lake cost more.",
         "exampleZh": "俯瞰湖泊的房子要價高些。"
     },
     {
@@ -21796,7 +21796,7 @@ const toeicWordsDB = [
         "uk": "/ˌpɪəriˈɒdɪk(ə)l/",
         "zh": "n. 期刊；adj. 週期的、定期的、間發性的、定期出版的",
         "unit": 13,
-        "example": "[n.] She made periodical visits to her dentist.",
+        "example": "[adj.] She made periodical visits to her dentist.",
         "exampleZh": "她定期去看牙醫。"
     },
     {
@@ -22116,7 +22116,7 @@ const toeicWordsDB = [
         "uk": "/ˈpleʒə(r)/",
         "zh": "n. 愉快、快樂、滿足、欣慰；adj. 遊樂的、非公務的；v. 從……中獲得樂趣、高興",
         "unit": 13,
-        "example": "[n.] He agreed with obvious pleasure.",
+        "example": "[v.] He agreed with obvious pleasure.",
         "exampleZh": "他同意了，顯然很高興。"
     },
     {
@@ -22376,7 +22376,7 @@ const toeicWordsDB = [
         "uk": "/pəˈtenʃ(ə)l/",
         "zh": "adj. 潛在的、可能的；n. 潛力、潛能、可能性、電勢",
         "unit": 13,
-        "example": "[adj.] The boy has great potential.",
+        "example": "[n.] The boy has great potential.",
         "exampleZh": "這個男孩有很大的潛力。"
     },
     {
@@ -23886,7 +23886,7 @@ const toeicWordsDB = [
         "uk": "/ˈreb(ə)l; rɪˈbel/",
         "zh": "n. 反抗者、造反者、反抗權威者、叛逆者；vi. 反叛、造反、違抗；adj. 造反的、反抗的",
         "unit": 13,
-        "example": "[n.] Amrita becomes a bold, daring rebel.",
+        "example": "[vi.] Amrita becomes a bold, daring rebel.",
         "exampleZh": "阿莫瑞塔成了一位英勇無畏的反叛者。"
     },
     {
@@ -24886,7 +24886,7 @@ const toeicWordsDB = [
         "uk": "/rɪˈzɜːv/",
         "zh": "vt. 預訂、保留、儲備；n. 儲備物、自然保護區",
         "unit": 13,
-        "example": "[n.] The Persian Gulf has 65 percent of the world's oil reserves.",
+        "example": "[vt.] The Persian Gulf has 65 percent of the world's oil reserves.",
         "exampleZh": "波斯灣擁有全世界石油儲備的65%。"
     },
     {
@@ -26006,7 +26006,7 @@ const toeicWordsDB = [
         "uk": "/ʃeə(r)/",
         "zh": "vt. 分享、共享、合用、分配；n. 股份、股票、部分所有權、責任",
         "unit": 13,
-        "example": "[vt.] Share prices moved ahead today.",
+        "example": "[n.] Share prices moved ahead today.",
         "exampleZh": "今天的股票價格上升了。"
     },
     {
@@ -26586,7 +26586,7 @@ const toeicWordsDB = [
         "uk": "/spiːd/",
         "zh": "n. 速度、快、迅速、排擋；vi. 快速移動、快速運送、超速駕駛、加速",
         "unit": 13,
-        "example": "[n.] The car was gathering speed.",
+        "example": "[vi.] The car was gathering speed.",
         "exampleZh": "汽車逐漸加速。"
     },
     {
@@ -26656,7 +26656,7 @@ const toeicWordsDB = [
         "uk": "/spred/",
         "zh": "vt. 展開、開啟、張開、伸開；n. 擴散、蔓延、範圍、幅度；adj. 伸展的",
         "unit": 13,
-        "example": "[n.] The bird spread its wings.",
+        "example": "[vt.] The bird spread its wings.",
         "exampleZh": "鳥展開翅膀。"
     },
     {
@@ -27116,7 +27116,7 @@ const toeicWordsDB = [
         "uk": "/ˈstrʌktʃə(r)/",
         "zh": "n. 結構、構造、結構體、大型建築物；vt. 組織、計劃、安排",
         "unit": 13,
-        "example": "[n.] Your essay needs (a) structure.",
+        "example": "[vt.] Your essay needs (a) structure.",
         "exampleZh": "你這篇文章組織不好。"
     },
     {
@@ -27576,7 +27576,7 @@ const toeicWordsDB = [
         "uk": "/ˈsɜːveɪ/",
         "zh": "n. 調查報告、民意調查、民意測驗、考察；vt. 調查、做民意測驗、做民意調查、審視",
         "unit": 13,
-        "example": "[n.] This very thorough survey goes back to 1784.",
+        "example": "[vt.] This very thorough survey goes back to 1784.",
         "exampleZh": "這項非常徹底的調查可追溯到1784年。"
     },
     {
@@ -27756,7 +27756,7 @@ const toeicWordsDB = [
         "uk": "/ˈtæktɪk/",
         "zh": "n. 戰術、策略、手法、兵法；adj. 按順序的、依次排列的",
         "unit": 13,
-        "example": "[adj.] One tactic involves where to display the goods.",
+        "example": "[n.] One tactic involves where to display the goods.",
         "exampleZh": "其中一個策略涉及到在哪裡展示商品。"
     },
     {
@@ -28236,7 +28236,7 @@ const toeicWordsDB = [
         "uk": "/taɪ/",
         "zh": "v. 繫、紮、捆、打結；n. 領帶、領結、紐帶、平手",
         "unit": 13,
-        "example": "[v.] He wore a blue tie to the party.",
+        "example": "[n.] He wore a blue tie to the party.",
         "exampleZh": "他打了一條藍色領帶去參加派對。"
     },
     {
@@ -28346,7 +28346,7 @@ const toeicWordsDB = [
         "uk": "/tʊə(r)/",
         "zh": "n. 旅行、旅遊、遊覽、參觀；vt. 旅遊、觀光、參觀、進行巡迴演出",
         "unit": 13,
-        "example": "[n.] The band will be going on tour.",
+        "example": "[vt.] The band will be going on tour.",
         "exampleZh": "這個樂隊將要進行巡迴演出。"
     },
     {
@@ -29716,7 +29716,7 @@ const toeicWordsDB = [
         "uk": "/ˌvɒlənˈtɪə(r)/",
         "zh": "n. 志願者、義務工作者、自告奮勇者、主動做某事的人；v. 自願做、義務做、無償做、志願服役；adj. 志願（者）的",
         "unit": 13,
-        "example": "[n.] Volunteer work gives her life (a sense of) purpose.",
+        "example": "[adj.] Volunteer work gives her life (a sense of) purpose.",
         "exampleZh": "做志願工作使她的生活有了意義。"
     },
     {

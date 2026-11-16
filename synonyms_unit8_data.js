@@ -1216,7 +1216,7 @@ const synUnit8WordsDB = [
     "kk": "[ˋɔrɡənaɪzd]",
     "zh": "adj. 有組織的，系統的；參加工會的；有條理的，有安排的；（人）有條理的，高效的；v. 組織，籌備；安排，處理；規劃，管理（organize 的過去式和過去分詞）",
     "unit": 7,
-    "example": "[adj.] The conference was very well organized.",
+    "example": "[v.] The conference was very well organized.",
     "exampleZh": "這次會議組織得很好。"
   },
   {
@@ -1576,7 +1576,7 @@ const synUnit8WordsDB = [
     "kk": "[ˋkɑŋɡrɪɡeɪt]",
     "zh": "v. 集合，聚集；adj. 集合在一起的",
     "unit": 7,
-    "example": "[adj.] Young people often congregate in the main square in the evenings.",
+    "example": "[v.] Young people often congregate in the main square in the evenings.",
     "exampleZh": "年輕人傍晚時經常聚集在大廣場上。"
   },
   {
@@ -2926,7 +2926,7 @@ const synUnit8WordsDB = [
     "kk": "[͵plenɪpəˋtenʃəri; ͵plenɪpəˋtenʃieri]",
     "zh": "adj. <正式>有全權的，全權代表的；n. <正式>全權代表，全權大使",
     "unit": 7,
-    "example": "[adj.] An ambassador extraordinary and plenipotentiary shall be the head of an embassy.",
+    "example": "[n.] An ambassador extraordinary and plenipotentiary shall be the head of an embassy.",
     "exampleZh": "特命全權大使為大使館的館長。"
   },
   {
@@ -3718,7 +3718,7 @@ const synUnit8WordsDB = [
     "kk": "[rɪˋsivɪŋ]",
     "zh": "v. 收到、接到、接待（receive之現在分詞）；n. 接收、接待",
     "unit": 7,
-    "example": "[n.] Upon receiving your official confirmation, our warehouse team will ship the order immediately.",
+    "example": "[v.] Upon receiving your official confirmation, our warehouse team will ship the order immediately.",
     "exampleZh": "在收到您的正式確認函後，我們的倉儲團隊將立即發貨出貨。"
   },
   {
@@ -4159,7 +4159,7 @@ const synUnit8WordsDB = [
     "kk": "[ˋɑnər]",
     "zh": "n. 尊敬；榮幸；高尚品德，氣節；榮譽；獎勵，榮譽稱號；大學榮譽學位課程；優異成績；法官大人，（美國）市長閣下；<舊>貞操；最大點數的牌；v. 尊敬；表彰；信守，執行（承諾）；兌現（支票）；【名】 （Honour）（英）昂納（人名）",
     "unit": 8,
-    "example": "[n.] I have every intention of honouring our contract.",
+    "example": "[v.] I have every intention of honouring our contract.",
     "exampleZh": "我完全願意執行我們的合約。"
   },
   {
@@ -5464,7 +5464,7 @@ const synUnit8WordsDB = [
     "kk": "[mjul]",
     "zh": "v. （尤指嬰兒）低聲哭泣，嗚咽，啜泣；（貓、鳥等）喵喵叫，咪咪叫；n. 嗚咽聲，低泣聲",
     "unit": 8,
-    "example": "[n.] Nah, can ' t be. shiki ' s legs tremble. straining his ears, he hears the mewl of a distant cat.",
+    "example": "[v.] Nah, can ' t be. shiki ' s legs tremble. straining his ears, he hears the mewl of a distant cat.",
     "exampleZh": "不是，不可能的。 志貴的腿在發抖。 伸長了耳朵，他聽見了遙遠的貓的啜泣聲。"
   },
   {
@@ -6211,7 +6211,7 @@ const synUnit8WordsDB = [
     "kk": "[səbˋsaɪdɪŋ]",
     "zh": "n. 下沉、沉降；v. 下沉、下陷；減弱、平息、回落；沉澱（subside 的現在分詞）",
     "unit": 8,
-    "example": "[n.] Does that mean the whole house is subsiding?",
+    "example": "[v.] Does that mean the whole house is subsiding?",
     "exampleZh": "那意味著整棟房子正在下陷嗎？"
   },
   {
@@ -6463,7 +6463,7 @@ const synUnit8WordsDB = [
     "kk": "['ɑrkaivd]",
     "zh": "v. 把……存檔，把……歸檔（archive 的過去式和過去分詞）；adj. 存檔的，已歸檔的",
     "unit": 8,
-    "example": "[v.] Every change is documented and archived.",
+    "example": "[adj.] Every change is documented and archived.",
     "exampleZh": "每項修改都會記錄並存檔。"
   },
   {
@@ -6760,7 +6760,7 @@ const synUnit8WordsDB = [
     "kk": "[ˋkwɪvərɪŋ]",
     "zh": "v. 顫抖（quiver 的現在分詞）；adj. 顫抖的，發抖的；n. 顫抖，顫動",
     "unit": 8,
-    "example": "[v.] Cooper arrived, quivering with rage.",
+    "example": "[adj.] Cooper arrived, quivering with rage.",
     "exampleZh": "庫珀到了，氣得渾身發抖。"
   },
   {
@@ -6832,7 +6832,7 @@ const synUnit8WordsDB = [
     "kk": "[ˋskræbl]",
     "zh": "v. （忙亂地）扒尋，摸索；（為了找到或抓牢）抓，摸；（動物）用爪子亂抓，掙扎；快爬，攀爬；在……上亂扒；亂塗，潦草書寫；努力，盡力，苦求；n. 抓，扒；摸索；努力，盡力；掙扎；爭奪；塗鴉，亂畫；（Scrabble）（商標）拼字遊戲",
     "unit": 8,
-    "example": "[v.] The one-way interaction between TV and the couch potato is far different than an absorbing Scrabble play-off with a friend on a mobile phone.",
+    "example": "[n.] The one-way interaction between TV and the couch potato is far different than an absorbing Scrabble play-off with a friend on a mobile phone.",
     "exampleZh": "電視與電視迷之間的單向互動，和在手機上跟朋友玩的那場引人入勝的拼字遊戲對決截然不同。"
   },
   {
@@ -6922,7 +6922,7 @@ const synUnit8WordsDB = [
     "kk": "[ˋɡroʊɪŋ]",
     "zh": "adj. 增長的，增加的；v. 長大，成長；成活，生長；栽種，種植（grow 的現在分詞形式）",
     "unit": 8,
-    "example": "[adj.] We stop growing at maturity.",
+    "example": "[v.] We stop growing at maturity.",
     "exampleZh": "我們在成熟後就停止成長了。"
   },
   {
@@ -7273,7 +7273,7 @@ const synUnit8WordsDB = [
     "kk": "[prɪˋsɪpɪteɪt]",
     "zh": "v. <正式>使……突然降臨，加速（壞事的發生）；使突然陷入（某種狀態）（precipitate sb./sth. into）；（使）沉澱，（使）澱析；<正式>使急落直下，使陡然下落；降水（如雨、雪、冰雹）；adj. <正式>魯莽的，倉促的（=precipitous）；（事件，情況）突如其來的，突然的；猛地落下的；n. 沉澱物，析出物",
     "unit": 8,
-    "example": "[v.] I don't think we should make precipitate decisions.",
+    "example": "[adj.] I don't think we should make precipitate decisions.",
     "exampleZh": "我認為我們不應該做出倉促的決定。"
   },
   {
@@ -7336,7 +7336,7 @@ const synUnit8WordsDB = [
     "kk": "[ɪnˋvælɪd; ˋɪnvəlɪd]",
     "zh": "adj. （法律上）無效的，作廢的；（論據、理由等）站不住腳的，錯誤的；（計算機）不能識別的；殘疾的；n.  病弱者，傷殘者；vt. 使（因傷或病）退役；使傷殘，使病弱",
     "unit": 8,
-    "example": "[n.] The trial was stopped and the results declared invalid.",
+    "example": "[adj.] The trial was stopped and the results declared invalid.",
     "exampleZh": "審判被終止了，其結果被宣佈無效。"
   },
   {
@@ -8713,7 +8713,7 @@ const synUnit8WordsDB = [
     "kk": "[dɪˋtrækt]",
     "zh": "vi. 減損，降低，使遜色（常與 from 連用）；貶低；vt. 轉移，使分心（罕用，現代英語通常用 distract）",
     "unit": 8,
-    "example": "[vi.] There is a view that using celebrities can detract people from the problems at hand.",
+    "example": "[vt.] There is a view that using celebrities can detract people from the problems at hand.",
     "exampleZh": "有觀點認為，利用名人可以轉移人們對當前問題的注意力。"
   },
   {
@@ -8731,7 +8731,7 @@ const synUnit8WordsDB = [
     "kk": "[plʌmp]",
     "zh": "adj. 胖乎乎的，豐滿的；圓鼓鼓的，又大又圓的；v. 使更軟，使更圓（plump up）；（隨意地）放置；（隨意地）坐下，躺下；專意於，特意選定（plump for）；重重（或不拘禮節）地放下，丟下；adv. 突然地，重重地；直接地；n. <古>突然前衝，重重墜落；一群；【名】 （Plump）（美、英）普倫普（人名）",
     "unit": 8,
-    "example": "[n.] He pushed a plump little hand toward me.",
+    "example": "[adj.] He pushed a plump little hand toward me.",
     "exampleZh": "他向我伸出一隻胖乎乎的小手。"
   },
   {
@@ -8911,7 +8911,7 @@ const synUnit8WordsDB = [
     "kk": "[ˋslækən]",
     "zh": "vi. 鬆勁，懈怠；變緩慢，減弱，減輕；（繩、抓握等）變鬆，變鬆弛；vt. 使緩慢；使減弱；使鬆弛",
     "unit": 8,
-    "example": "[vt.] Inflationary pressures continued to slacken last month.",
+    "example": "[vi.] Inflationary pressures continued to slacken last month.",
     "exampleZh": "通貨膨脹的壓力上個月持續減輕。"
   },
   {

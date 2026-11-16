@@ -694,7 +694,7 @@ const examplesUnit9WordsDB = [
     "kk": "[ˋkɔstɪŋ]",
     "zh": "v. cost 的現在分詞：價錢為……；（使）花許多錢；（使）喪失，損失；（使）付出努力；（使）做不愉快的事；估算（費用）；n. 成本會計，成本計算，成本核算；費用估算（常用複數 costings）；（Costing）（美）科斯廷格（人名）",
     "unit": 8,
-    "example": "[n.] You'd better do some costings.",
+    "example": "[v.] You'd better do some costings.",
     "exampleZh": "你最好作一些成本估算。"
   },
   {
@@ -1190,7 +1190,7 @@ const examplesUnit9WordsDB = [
     "kk": "",
     "zh": "v. personify 的過去式和過去分詞：體現，表現，是…的化身；（常作被動）把…擬人化，將…人格化；adj. （後置於名詞）…的化身，體現…的",
     "unit": 8,
-    "example": "[v.] He is kindness personified.",
+    "example": "[adj.] He is kindness personified.",
     "exampleZh": "他是仁慈的化身。"
   },
   {
@@ -1700,7 +1700,7 @@ const examplesUnit9WordsDB = [
     "kk": "[fɪfθ]",
     "zh": "adj. 第五的；五分之一的；n. 第五；五分之一；（某月的）五日；the Fifth<美>《美國憲法第五修正案》（常用於 take/plead the Fifth）；num. 第五",
     "unit": 8,
-    "example": "[adj.] The meeting is on April fifth.",
+    "example": "[n.] The meeting is on April fifth.",
     "exampleZh": "會議日期是四月五日。"
   },
   {
@@ -1927,7 +1927,7 @@ const examplesUnit9WordsDB = [
     "kk": "[sʌdz]",
     "zh": "n. （常用複數）肥皂水；泡沫；<非正式>啤酒（尤指起泡的啤酒）；vt. 用肥皂水洗；vi. 形成泡沫，起泡沫",
     "unit": 8,
-    "example": "[vi.] He had soap suds in his ears.",
+    "example": "[n.] He had soap suds in his ears.",
     "exampleZh": "他兩隻耳朵裡都沾了肥皂泡沫。"
   },
   {
@@ -2750,7 +2750,7 @@ const examplesUnit9WordsDB = [
     "kk": "[ˋfɑsəlaɪz]",
     "zh": "vt. 使成化石；使陳腐，使僵化；vi. 變成化石；變陳腐，變得過時或固定不變；蒐集（或發掘）化石標本",
     "unit": 8,
-    "example": "[vi.] Needs change while policies fossilize.",
+    "example": "[vt.] Needs change while policies fossilize.",
     "exampleZh": "政策僵化，需求就產生變化。"
   },
   {
@@ -2787,7 +2787,7 @@ const examplesUnit9WordsDB = [
     "kk": "[ˋɡreɪəm]",
     "zh": "n. 全麥麵粉；（Graham）（英、美）格雷厄姆（人名）；adj. 全麥的",
     "unit": 8,
-    "example": "[n.] This delicious cheesecake is made with a sweet graham cracker crust.",
+    "example": "[adj.] This delicious cheesecake is made with a sweet graham cracker crust.",
     "exampleZh": "這款美味的乳酪蛋糕是用香甜的全麥餅乾底製成的。"
   },
   {
@@ -3336,7 +3336,7 @@ const examplesUnit9WordsDB = [
     "kk": "[daɪˋlutɪd]",
     "zh": "adj. 稀釋的，沖淡的；削弱的，無力的；（金融）攤薄的，稀釋後的；v. dilute 的過去分詞，表示被稀釋，變稀；使減低（效果），削弱",
     "unit": 9,
-    "example": "[adj.] The liquid is then diluted.",
+    "example": "[v.] The liquid is then diluted.",
     "exampleZh": "然後液體就變稀了。"
   },
   {
@@ -3995,7 +3995,7 @@ const examplesUnit9WordsDB = [
     "kk": "[zæp]",
     "zh": "v. 迅速清除、消滅、痛擊；發送電擊；n. 活力、打擊",
     "unit": 9,
-    "example": "[n.] The new email security filter automatically zaps malicious spam messages before they reach your inbox.",
+    "example": "[v.] The new email security filter automatically zaps malicious spam messages before they reach your inbox.",
     "exampleZh": "新型電子郵件安全過濾器會在惡意垃圾信件進入收件匣前自動將其迅速清除。"
   },
   {
@@ -4695,7 +4695,7 @@ const examplesUnit9WordsDB = [
     "kk": "[ˋrʌptʃər]",
     "zh": "v. （體內組織等的）斷裂，撕裂；（使容器、管道等）斷裂，爆裂；斷絕（關係）（rupture 的過去式及過去分詞）；adj. 破裂的，斷裂的，爆裂的（尤指因內部壓力而突然破裂）",
     "unit": 9,
-    "example": "[v.] A pipe ruptured, leaking water all over the house.",
+    "example": "[adj.] A pipe ruptured, leaking water all over the house.",
     "exampleZh": "一根水管破裂，漏了滿屋子的水。"
   },
   {
@@ -5721,7 +5721,7 @@ const examplesUnit9WordsDB = [
     "kk": "[taɪ]",
     "zh": "n. （Thai）泰國人；泰語；adj. （Thai）泰國的；泰國人的；泰語的",
     "unit": 9,
-    "example": "[n.] Thai food is hot and spicy.",
+    "example": "[adj.] Thai food is hot and spicy.",
     "exampleZh": "泰國食品很辛辣。"
   },
   {
@@ -6621,7 +6621,7 @@ const examplesUnit9WordsDB = [
     "kk": "[səbˋdud]",
     "zh": "v. 制服，使屈服；抑制，剋制，減輕（subdue 的過去式及過去分詞）；adj. （人）悶悶不樂的，沉默寡言的；（光線或色彩）柔和的，暗淡的；（聲音）壓低的，輕柔的；（商業活動等）冷清的，低迷的；（反應、方式等）剋制的，低調的",
     "unit": 9,
-    "example": "[v.] He seemed a bit subdued to me.",
+    "example": "[adj.] He seemed a bit subdued to me.",
     "exampleZh": "我覺得他當時有點悶悶不樂。"
   },
   {
@@ -7485,7 +7485,7 @@ const examplesUnit9WordsDB = [
     "kk": "[ˋfrilæns]",
     "zh": "adj. 特約的，自由職業（者）的；adv. 以自由職業者身份；n. 自由職業者；<史>中世紀的僱傭兵；v. 做特約工作，從事自由職業",
     "unit": 9,
-    "example": "[adv.] I work freelance from home.",
+    "example": "[adj.] I work freelance from home.",
     "exampleZh": "我是在家中工作的自由職業者。"
   },
   {
@@ -7494,7 +7494,7 @@ const examplesUnit9WordsDB = [
     "kk": "",
     "zh": "v. notify 的過去式和過去分詞；通知，告知；adj. 被通知的；已獲告知的（常作定語）",
     "unit": 9,
-    "example": "[adj.] You will be notified by letter.",
+    "example": "[v.] You will be notified by letter.",
     "exampleZh": "將用信函通知你。"
   },
   {

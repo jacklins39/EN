@@ -406,7 +406,7 @@ const jhWordsDB = [
         "uk": "/ɔːl/",
         "zh": "det. 全部、每一個、極度、儘量；adj. 全部的、每一個的、任何的、儘可能多的；adv. 完全地、各方、各選手、非常；pron. 所有、全部、唯一；n. 全部、所有",
         "unit": 17,
-        "example": "[det.] All the students are in the classroom.",
+        "example": "[pron.] All the students are in the classroom.",
         "exampleZh": "所有的學生都在教室裡。"
     },
     {
@@ -836,7 +836,7 @@ const jhWordsDB = [
         "uk": "/əˈsliːp/",
         "zh": "adj. 睡著的、麻木的、發麻的、不專心的；adv. 處於睡眠狀態地、進入睡眠狀態地",
         "unit": 17,
-        "example": "[adv.] He had fallen asleep on the sofa.",
+        "example": "[adj.] He had fallen asleep on the sofa.",
         "exampleZh": "他已經在沙發上睡著了。"
     },
     {
@@ -1396,7 +1396,7 @@ const jhWordsDB = [
         "uk": "/bɪˈɡɪnɪŋ/",
         "zh": "n. 開始、起初、開端、序曲；adj. 初級的、基本的；v. 開始、著手",
         "unit": 17,
-        "example": "[adj.] The snow was beginning to melt.",
+        "example": "[n.] The snow was beginning to melt.",
         "exampleZh": "積雪開始融化了。"
     },
     {
@@ -2476,7 +2476,7 @@ const jhWordsDB = [
         "uk": "/keə(r)/",
         "zh": "n. 照料、護理、小心；v. 關心、照顧、照料、在意",
         "unit": 17,
-        "example": "[n.] Parents take good care of their children.",
+        "example": "[v.] Parents take good care of their children.",
         "exampleZh": "父母好好照顧他們的孩子。"
     },
     {
@@ -3476,7 +3476,7 @@ const jhWordsDB = [
         "uk": "/ˈkɒnflɪkt/",
         "zh": "n. 爭執、爭論、分歧、戰鬥；v. 衝突、牴觸",
         "unit": 17,
-        "example": "[n.] They try to avoid conflict at school.",
+        "example": "[v.] They try to avoid conflict at school.",
         "exampleZh": "他們在學校儘量避免衝突。"
     },
     {
@@ -5846,7 +5846,7 @@ const jhWordsDB = [
         "uk": "/fɔːls/",
         "zh": "adj. 假的、錯誤的、不真實的、偽造的；adv. 欺詐地",
         "unit": 17,
-        "example": "[adv.] Is this story true or false?",
+        "example": "[adj.] Is this story true or false?",
         "exampleZh": "這個故事是真的還是假的？"
     },
     {
@@ -6156,7 +6156,7 @@ const jhWordsDB = [
         "uk": "/fɪlm/",
         "zh": "n. 電影、影片、電影藝術、電影業；vt. 拍攝、錄製、拍攝電影、被覆蓋上一薄層東西",
         "unit": 17,
-        "example": "[vt.] We saw a funny film last night.",
+        "example": "[n.] We saw a funny film last night.",
         "exampleZh": "我們昨晚看了一部有趣的電影。"
     },
     {
@@ -6236,7 +6236,7 @@ const jhWordsDB = [
         "uk": "/fɜːst/",
         "zh": "det. 第一位的、最先的、首（次）的、緊接著來到的；adj. 第一的；adv. 首先、第一、最初、起初；pron. 第一次；n. 第一個人、前所未有的事情、最低檔、最高成績",
         "unit": 17,
-        "example": "[det.] He was the first boy in line.",
+        "example": "[adj.] He was the first boy in line.",
         "exampleZh": "他是隊伍中的第一個人。"
     },
     {
@@ -6336,7 +6336,7 @@ const jhWordsDB = [
         "uk": "/flʌd/",
         "zh": "v. 淹沒、氾濫、大量湧來、大量湧去；n. 洪水、水災、大批、大量",
         "unit": 17,
-        "example": "[n.] Heavy rain caused a big river flood.",
+        "example": "[v.] Heavy rain caused a big river flood.",
         "exampleZh": "大雨導致河水嚴重氾濫成災。"
     },
     {
@@ -6786,7 +6786,7 @@ const jhWordsDB = [
         "uk": "/fʊl/",
         "zh": "adj. 滿的、充滿的、飽的、完整的；adv. 完全地、充分地",
         "unit": 17,
-        "example": "[adv.] She's always full of energy.",
+        "example": "[adj.] She's always full of energy.",
         "exampleZh": "她總是充滿活力。"
     },
     {
@@ -7166,7 +7166,7 @@ const jhWordsDB = [
         "uk": "/ɡɒlf/",
         "zh": "n. 高爾夫球運動；v. 打高爾夫球",
         "unit": 17,
-        "example": "[n.] My father loves to play golf.",
+        "example": "[v.] My father loves to play golf.",
         "exampleZh": "我父親很喜歡打高爾夫球。"
     },
     {
@@ -7186,7 +7186,7 @@ const jhWordsDB = [
         "uk": "/ˈɡʊdnəs/",
         "zh": "n. 善良、美德、營養、精華；int. 天哪、啊呀",
         "unit": 17,
-        "example": "[n.] Goodness, I wonder if he knows.",
+        "example": "[int.] Goodness, I wonder if he knows.",
         "exampleZh": "天哪，我不清楚他知不知道。"
     },
     {
@@ -8246,7 +8246,7 @@ const jhWordsDB = [
         "uk": "/hʌnt/",
         "zh": "v. 打獵、獵取、搜尋、追蹤；n. 搜尋、尋找、打獵、狩獵",
         "unit": 17,
-        "example": "[v.] Lions hunt for food in the grass.",
+        "example": "[n.] Lions hunt for food in the grass.",
         "exampleZh": "獅子在草叢中尋找獵物。"
     },
     {
@@ -8806,7 +8806,7 @@ const jhWordsDB = [
         "uk": "/dʒɒb/",
         "zh": "n. 職業、工作、零工、任務；v. 刺、捅、買賣股票、欺騙",
         "unit": 17,
-        "example": "[v.] He found a new job last week.",
+        "example": "[n.] He found a new job last week.",
         "exampleZh": "他上週找到了一份新工作。"
     },
     {
@@ -8826,7 +8826,7 @@ const jhWordsDB = [
         "uk": "/dʒɔɪn/",
         "zh": "v. 參加、加入、連接、結合；n. 連接處、接合點",
         "unit": 17,
-        "example": "[n.] How do these two pieces join?",
+        "example": "[v.] How do these two pieces join?",
         "exampleZh": "這兩個部分如何連接？"
     },
     {
@@ -9356,7 +9356,7 @@ const jhWordsDB = [
         "uk": "/liːst/",
         "zh": "adj. 最少的、最微不足道的；adv. 最低程度地、最少、至少；n. 最不重要的事物、最微小的事物；pron. 最少量、起碼",
         "unit": 17,
-        "example": "[n.] We need at least two more hours.",
+        "example": "[adv.] We need at least two more hours.",
         "exampleZh": "我們至少還需要兩個小時。"
     },
     {
@@ -9376,7 +9376,7 @@ const jhWordsDB = [
         "uk": "/left/",
         "zh": "adj. 左邊的、左側的、剩餘的；adv. 向左、在左邊；n. 左邊、左側；v. 離開（leave的過去式與過去分詞）",
         "unit": 17,
-        "example": "[adj.] Turn left at the next street.",
+        "example": "[adv.] Turn left at the next street.",
         "exampleZh": "在下一條街向左轉。"
     },
     {
@@ -9556,7 +9556,7 @@ const jhWordsDB = [
         "uk": "/ˈlaɪtnɪŋ/",
         "zh": "n. 閃電、意外的幸運；adj. 閃電般的、很快的；v. 閃電",
         "unit": 17,
-        "example": "[n.] Driving today demands lightning reflexes.",
+        "example": "[adj.] Driving today demands lightning reflexes.",
         "exampleZh": "如今駕車需要飛快的反應。"
     },
     {
@@ -9596,7 +9596,7 @@ const jhWordsDB = [
         "uk": "/ˈlɪmɪt/",
         "zh": "n. 限度、限制、極限、限量；vt. 限制、限定、制約、減少",
         "unit": 17,
-        "example": "[n.] The road has a 30 mph speed limit.",
+        "example": "[vt.] The road has a 30 mph speed limit.",
         "exampleZh": "這條公路限定時速30英里。"
     },
     {
@@ -10066,7 +10066,7 @@ const jhWordsDB = [
         "uk": "/mɑːtʃ/",
         "zh": "v. 齊步走、行軍、快步走、強迫（某人）一起走；n. 三月、示威遊行、行進、行軍",
         "unit": 18,
-        "example": "[v.] School begins in early March here.",
+        "example": "[n.] School begins in early March here.",
         "exampleZh": "這裡的學校在三月初開學。"
     },
     {
@@ -10256,7 +10256,7 @@ const jhWordsDB = [
         "uk": "/miːn/",
         "zh": "vt. 意思是、意味著、打算；adj. 吝嗇的、小氣的、刻薄的；n. 平均數、中庸",
         "unit": 18,
-        "example": "[n.] What does this new word mean?",
+        "example": "[vt.] What does this new word mean?",
         "exampleZh": "這個新單字是什麼意思？"
     },
     {
@@ -11216,7 +11216,7 @@ const jhWordsDB = [
         "uk": "/nəʊ/",
         "zh": "adv. 不、毫不；adj. 沒有的、絕不；int. 不；n. 拒絕、不准",
         "unit": 18,
-        "example": "[adv.] I have no money left.",
+        "example": "[adj.] I have no money left.",
         "exampleZh": "我沒有錢了。"
     },
     {
@@ -11586,7 +11586,7 @@ const jhWordsDB = [
         "uk": "/wʌns/",
         "zh": "adv. 一次、曾經、一回、一度；conj. 一.....就、一旦；n. 一次",
         "unit": 18,
-        "example": "[conj.] I see my uncle once a week.",
+        "example": "[adv.] I see my uncle once a week.",
         "exampleZh": "我每週見我叔叔一次。"
     },
     {
@@ -11736,7 +11736,7 @@ const jhWordsDB = [
         "uk": "/ˌaʊtˈsaɪd/",
         "zh": "adv./prep. 在外面、在……外面；adj. 外面的、外部的；n. 外側、外表",
         "unit": 18,
-        "example": "[adv.] It is very cold outside today.",
+        "example": "[adj.] It is very cold outside today.",
         "exampleZh": "今天外面非常冷。"
     },
     {
@@ -13586,7 +13586,7 @@ const jhWordsDB = [
         "uk": "/ˈriːəli/",
         "zh": "adv. 真正地、確實、事實上、確實的；int. 真的、真是的！、是啊！",
         "unit": 18,
-        "example": "[adv.] I really love this sweet cake.",
+        "example": "[int.] I really love this sweet cake.",
         "exampleZh": "我真的很喜歡這個甜蛋糕。"
     },
     {
@@ -13956,7 +13956,7 @@ const jhWordsDB = [
         "uk": "/raɪt/",
         "zh": "adj. 正確的、對的、右邊的、適當的；adv. 正好、直接地、向右；n. 權利、右邊、正當",
         "unit": 18,
-        "example": "[adj.] Turn right at the next red light.",
+        "example": "[adv.] Turn right at the next red light.",
         "exampleZh": "在下個紅綠燈向右轉。"
     },
     {
@@ -14296,7 +14296,7 @@ const jhWordsDB = [
         "uk": "/seɪm/",
         "zh": "adj. 相同的、同一的、一模一樣的、沒有變化的；pron. 同樣的、同樣的人、同樣的事物、相同；adv. 同樣",
         "unit": 18,
-        "example": "[adj.] Mario said the very same thing.",
+        "example": "[pron.] Mario said the very same thing.",
         "exampleZh": "馬裡奧也說過同樣的話。"
     },
     {
@@ -14306,7 +14306,7 @@ const jhWordsDB = [
         "uk": "/ˈsɑːmp(ə)l/",
         "zh": "n. 樣本、樣品、試用產品、試樣；vt. 品嚐、嘗試、體驗、對……作抽樣調查；adj. 樣品的、例項的",
         "unit": 18,
-        "example": "[n.] Can I taste this free sample?",
+        "example": "[vt.] Can I taste this free sample?",
         "exampleZh": "我可以品嚐這個免費試吃品嗎？"
     },
     {
@@ -14526,7 +14526,7 @@ const jhWordsDB = [
         "uk": "/siːt/",
         "zh": "n. 座位、座部、基座、席位；vt. 就座、使坐下、使就座、容納",
         "unit": 18,
-        "example": "[n.] Please take a seat in this room.",
+        "example": "[vt.] Please take a seat in this room.",
         "exampleZh": "請在這個房間就座。"
     },
     {
@@ -14856,7 +14856,7 @@ const jhWordsDB = [
         "uk": "/ʃeə(r)/",
         "zh": "vt. 分享、共享、合用、分配；n. 股份、股票、部分所有權、責任",
         "unit": 18,
-        "example": "[vt.] Share prices moved ahead today.",
+        "example": "[n.] Share prices moved ahead today.",
         "exampleZh": "今天的股票價格上升了。"
     },
     {
@@ -16026,7 +16026,7 @@ const jhWordsDB = [
         "uk": "/spɔːt/",
         "zh": "n. 體育運動、運動會、野外運動、成就感；v. 穿戴、展示、嬉戲、玩耍；adj. 運動的",
         "unit": 18,
-        "example": "[n.] Tennis is a very fun field sport.",
+        "example": "[adj.] Tennis is a very fun field sport.",
         "exampleZh": "網球是一項非常有趣的球場運動。"
     },
     {
@@ -16476,7 +16476,7 @@ const jhWordsDB = [
         "uk": "/sʌtʃ/",
         "zh": "det. 這樣的、如此的、這等的、如此；pron. 這種人、這類的、那樣的情況、那件事；adv. 如此、這麼、如此程度",
         "unit": 18,
-        "example": "[det.] I have never seen such a big dog.",
+        "example": "[adv.] I have never seen such a big dog.",
         "exampleZh": "我從沒見過這麼大的狗。"
     },
     {
@@ -17166,7 +17166,7 @@ const jhWordsDB = [
         "uk": "/ðeə(r)/",
         "zh": "adv. 那裡、在那裡、在那邊、在那點上；int. 你瞧；n. 那個地方",
         "unit": 18,
-        "example": "[n.] Put your bag over there on the chair.",
+        "example": "[adv.] Put your bag over there on the chair.",
         "exampleZh": "把你的袋子放在那邊的椅子上。"
     },
     {
@@ -17386,7 +17386,7 @@ const jhWordsDB = [
         "uk": "/ˈθʌndə(r)/",
         "zh": "n. 雷、雷聲、雷鳴般的響聲、轟隆聲；vi. 打雷、發出雷鳴般的響聲、轟隆地響、轟隆隆地快速移動",
         "unit": 18,
-        "example": "[vi.] We heard loud thunder last night.",
+        "example": "[n.] We heard loud thunder last night.",
         "exampleZh": "我們昨晚聽到了巨大的雷聲。"
     },
     {
@@ -17426,7 +17426,7 @@ const jhWordsDB = [
         "uk": "/taɪ/",
         "zh": "v. 繫、紮、捆、打結；n. 領帶、領結、紐帶、平手",
         "unit": 18,
-        "example": "[v.] He wore a blue tie to the party.",
+        "example": "[n.] He wore a blue tie to the party.",
         "exampleZh": "他打了一條藍色領帶去參加派對。"
     },
     {
@@ -17466,7 +17466,7 @@ const jhWordsDB = [
         "uk": "/ˈtaɪni/",
         "zh": "adj. 微小的、極小的；n. 幼童",
         "unit": 18,
-        "example": "[n.] An ant is a tiny little animal.",
+        "example": "[adj.] An ant is a tiny little animal.",
         "exampleZh": "螞蟻是一種微小的小動物。"
     },
     {
@@ -17906,7 +17906,7 @@ const jhWordsDB = [
         "uk": "/trɪp/",
         "zh": "n. 旅行、旅遊、出門、出行；v. 絆、絆倒、腳步輕快地走、觸動",
         "unit": 18,
-        "example": "[v.] We had a nice trip last week.",
+        "example": "[n.] We had a nice trip last week.",
         "exampleZh": "我們上週有一趟美好的旅行。"
     },
     {

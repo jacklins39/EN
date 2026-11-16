@@ -358,7 +358,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8140,
     "en": "bureaucrats",
-    "kk": "",
+    "kk": "[ˋbjʊrə͵kræts]",
     "zh": "n. 官僚",
     "unit": 8,
     "example": "[n.] The bureaucrats dallied too long.",
@@ -367,7 +367,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8141,
     "en": "dallied",
-    "kk": "",
+    "kk": "[ˋdælid]",
     "zh": "v. 磨蹭；調戲，輕率對待；閒混（dally 的過去式和過去分詞）",
     "unit": 8,
     "example": "[v.] The bureaucrats dallied too long.",
@@ -430,7 +430,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8148,
     "en": "misbehaves",
-    "kk": "",
+    "kk": "[͵mɪsbəˋhevz]",
     "zh": "v. 行為不端、調皮胡鬧（misbehave 之第三人稱單數）",
     "unit": 8,
     "example": "[v.] Whenever the teacher leaves the classroom, the energetic puppy misbehaves and chews on shoes.",
@@ -457,7 +457,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8151,
     "en": "derided",
-    "kk": "",
+    "kk": "[dɪˋraɪdɪd]",
     "zh": "vt. 嘲笑，譏諷（deride 的過去式和過去分詞形式）；adj. 被嘲笑的，受譏諷的（deride 的過去分詞用作形容詞）",
     "unit": 8,
     "example": "[vt.] Critics derided the move as too little, too late.",
@@ -484,7 +484,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8154,
     "en": "toggled",
-    "kk": "",
+    "kk": "[ˋtɑɡəld]",
     "zh": "v. （toggle 的過去式和過去分詞）在兩種狀態、選項或功能之間來回切換；為衣物、包袋等配備棒形紐扣；用繩針拴牢",
     "unit": 8,
     "example": "[v.] He toggled between the two windows.",
@@ -583,7 +583,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8165,
     "en": "grodin",
-    "kk": "",
+    "kk": "[ˋɡrodɪn]",
     "zh": "n. 查爾斯·格羅丁（Charles Grodin）：美國演員、編劇、電視主持人，以其在喜劇電影中的表現而聞名，如《心狼》（The Heartbreak Kid）和《貝多芬》（Beethoven）等。",
     "unit": 8,
     "example": "[n.] Grodin is a fine comic actor.",
@@ -637,7 +637,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8171,
     "en": "emilie",
-    "kk": "",
+    "kk": "[ˋɛməli]",
     "zh": "n. 埃米莉（女子名，見於英語、法語、德語、捷克語等語言）",
     "unit": 8,
     "example": "[n.] Aunt Emilie darned old socks.",
@@ -664,7 +664,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8174,
     "en": "cantered",
-    "kk": "",
+    "kk": "[ˋkæntɚd]",
     "zh": "v. canter 的過去式和過去分詞：（馬）以介於快步與疾馳之間的速度慢跑；（人）騎馬以該速度慢跑；使（馬）以該速度慢跑。",
     "unit": 8,
     "example": "[v.] We cantered along the beach.",
@@ -745,7 +745,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8183,
     "en": "chugged",
-    "kk": "",
+    "kk": "[tʃʌɡd]",
     "zh": "vi. 發出突突聲（或軋軋聲）緩慢前進（chug 的過去式和過去分詞）；vt. （非正式，美式英語）一口氣喝完，一飲而盡（chug 的過去式和過去分詞）",
     "unit": 8,
     "example": "[vi.] The boat chugged slowly along.",
@@ -880,7 +880,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8198,
     "en": "munched",
-    "kk": "",
+    "kk": "[mʌntʃt]",
     "zh": "v. munched 是 munch 的過去式和過去分詞：大聲地、用力地咀嚼食物。",
     "unit": 8,
     "example": "[v.] Luke munched the chicken sandwiches.",
@@ -952,7 +952,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8206,
     "en": "cutters",
-    "kk": "",
+    "kk": "[ˋkʌtɚz]",
     "zh": "n. 刀具，切割工具；切割者，剪削者；（航海）巡邏快艇，緝私艇；（菸草分級用語）中部葉；（礦業）傾斜節理（均為 cutter 的複數）",
     "unit": 8,
     "example": "[n.] The hand tool additions encompass everything from tubing cutters to nut drivers.",
@@ -988,7 +988,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8210,
     "en": "denotes",
-    "kk": "",
+    "kk": "[dɪˋnots]",
     "zh": "v. 標誌，預示；表示，意指（denote 的第三人稱單數）",
     "unit": 8,
     "example": "[v.] The red triangle denotes danger.",
@@ -1070,7 +1070,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8219,
     "en": "picketed",
-    "kk": "",
+    "kk": "[ˋpɪkətɪd]",
     "zh": "v. 設立糾察線，舉行抗議：在某地設立糾察線，通常是為了抗議某種政策、行為或要求改善工作條件等。",
     "unit": 8,
     "example": "[v.] Striking workers picketed the factory.",
@@ -1124,7 +1124,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8225,
     "en": "rafters",
-    "kk": "",
+    "kk": "[ˋræftɚz]",
     "zh": "n. （rafter 的複數）椽，椽子；乘筏者，漂流者",
     "unit": 8,
     "example": "[n.] The wooden rafters caught fire.",
@@ -1169,7 +1169,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8230,
     "en": "uncared",
-    "kk": "",
+    "kk": "[͵ʌnˋkɛrd]",
     "zh": "adj. 被忽略的",
     "unit": 8,
     "example": "[adj.] The garden looked uncared for.",
@@ -1178,7 +1178,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8231,
     "en": "befriended",
-    "kk": "",
+    "kk": "[bɪˋfrɛndɪd]",
     "zh": "v. befriend 的過去式和過去分詞：與……交朋友，友好對待。",
     "unit": 8,
     "example": "[v.] An older girl befriended me.",
@@ -1187,7 +1187,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8232,
     "en": "personified",
-    "kk": "",
+    "kk": "[pɚˋsɑnə͵faɪd]",
     "zh": "v. personify 的過去式和過去分詞：體現，表現，是…的化身；（常作被動）把…擬人化，將…人格化；adj. （後置於名詞）…的化身，體現…的",
     "unit": 8,
     "example": "[adj.] He is kindness personified.",
@@ -1308,7 +1308,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8245,
     "en": "aconcagua",
-    "kk": "",
+    "kk": "[͵ɑkənˋkɑɡwə]",
     "zh": "n. 阿空加瓜山（又譯阿空加瓜峰），位於阿根廷西部安第斯山脈，是南美洲及西半球的最高峰",
     "unit": 8,
     "example": "[n.] How high is Mount Aconcagua?",
@@ -1416,7 +1416,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8257,
     "en": "checkmated",
-    "kk": "",
+    "kk": "[ˋtʃɛk͵metɪd]",
     "zh": "v. 被將死，被制勝：在國際象棋中，指國王被對方棋子威脅到無法逃脫的境地，導致遊戲結束。",
     "unit": 8,
     "example": "[v.] His king had been checkmated.",
@@ -1425,7 +1425,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8258,
     "en": "metres",
-    "kk": "",
+    "kk": "[ˋmitɚz]",
     "zh": "n. metre 的複數（英國英語拼寫，美式拼寫為 meters）：米（長度單位）；格律，韻律（詩歌中按音節輕重、長短等形成的節奏安排）",
     "unit": 8,
     "example": "[n.] I sprinted the last few metres.",
@@ -1434,7 +1434,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8259,
     "en": "mewed",
-    "kk": "",
+    "kk": "[mjud]",
     "zh": "v. （貓）發出叫聲：指貓發出的柔和、抱怨或懇求的聲音。",
     "unit": 8,
     "example": "[v.] From somewhere, the kitten mewed.",
@@ -1497,7 +1497,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8266,
     "en": "steepened",
-    "kk": "",
+    "kk": "[ˋstipənd]",
     "zh": "v. steepen 的過去式和過去分詞：（斜坡、道路、角度等）變陡，變得更陡峭；使（某物）變陡峭，增大其坡度或傾斜度；（比喻，常指經濟衰退、下跌趨勢等）加劇，加深",
     "unit": 8,
     "example": "[v.] The rocket steepened its ascent.",
@@ -1506,7 +1506,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8267,
     "en": "snitched",
-    "kk": "",
+    "kk": "[snɪtʃt]",
     "zh": "v. 告密，告發：向有關當局透露他人的秘密或違法行為。",
     "unit": 8,
     "example": "[v.] Johnnie snitched on me to his mom.",
@@ -1587,7 +1587,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8276,
     "en": "seethed",
-    "kk": "",
+    "kk": "[siðd]",
     "zh": "v. seethe 的過去式和過去分詞；（液體、海洋等）沸騰，翻滾；（人）極度憤怒，怒火中燒，生悶氣（常與 with anger/rage/indignation 連用）；<喻>充滿、湧動著大量的人或活動，顯得嘈雜、躁動",
     "unit": 8,
     "example": "[v.] She seethed silently in the corner.",
@@ -1616,7 +1616,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8279,
     "en": "squeaked",
-    "kk": "",
+    "kk": "[skwikt]",
     "zh": "v. （squeak 的過去式和過去分詞）發出短而尖的聲音，如吱吱叫、嘎吱響；尖聲說，尖叫道；<非正式>（squeak by/through/into/out 等）勉強通過，險勝，僥倖進入",
     "unit": 8,
     "example": "[v.] The door squeaked open.",
@@ -1625,7 +1625,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8280,
     "en": "sputters",
-    "kk": "",
+    "kk": "[ˋspʌtɚz]",
     "zh": "v. （引擎、火焰、熱油等）發出短促斷續的噼啪聲或噗噗聲；噴濺，噴出（液體、氣體或細小顆粒等）；結結巴巴地說，急促含糊地說；〔引申〕（經濟、活動等）進展緩慢、時斷時續；n. 短促斷續的噼啪聲、噗噗聲等聲響；急促含糊的話語；（運轉、播放等出現的）短暫停頓、卡頓",
     "unit": 8,
     "example": "[v.] The controversy over the Martian meteorite still sputters nowadays.",
@@ -1634,7 +1634,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8281,
     "en": "maximo",
-    "kk": "",
+    "kk": "[ˋmæksɪ͵mo]",
     "zh": "n. （Maximo）人名；（意）馬克西莫",
     "unit": 8,
     "example": "[n.] Maximo put on a pair of glasses.",
@@ -1724,7 +1724,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8291,
     "en": "scuttled",
-    "kk": "",
+    "kk": "[ˋskʌtəld]",
     "zh": "vt. （故意）破壞（計劃、提議）；使（船）沉沒（scuttle 的過去式和過去分詞）；vi. 碎步疾跑（scuttle 的過去式和過去分詞）",
     "unit": 8,
     "example": "[vi.] He held his breath as a rat scuttled past.",
@@ -1751,7 +1751,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8294,
     "en": "gurgled",
-    "kk": "",
+    "kk": "[ˋɡɝɡəld]",
     "zh": "v. 作汩汩聲；（嬰兒）發咯咯聲（gurgle 的過去式和過去分詞）",
     "unit": 8,
     "example": "[v.] The baby gurgled innocently on the bed.",
@@ -1760,7 +1760,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8295,
     "en": "burbled",
-    "kk": "",
+    "kk": "[ˋbɝbəld]",
     "zh": "v. 作泡沫聲；發出咯咯聲：指液體流動時發出的泡沫聲或人發出的類似聲音。",
     "unit": 8,
     "example": "[v.] The river gurgled and burbled.",
@@ -1933,7 +1933,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8314,
     "en": "snogging",
-    "kk": "",
+    "kk": "[ˋsnɑɡɪŋ]",
     "zh": "v. 親吻；愛撫（snog 的現在分詞）；n. 親吻；愛撫",
     "unit": 8,
     "example": "[v.] They were snogging on the sofa.",
@@ -1951,7 +1951,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8316,
     "en": "yowling",
-    "kk": "",
+    "kk": "[ˋjaʊ͵lɪŋ]",
     "zh": "v. yowl 的現在分詞，指（尤指貓）發出長而響亮的哀叫聲或哀嚎，也可指人大聲抱怨或哀號；n. （不可數）長而響亮的哀嚎聲、哀叫聲，尤指貓等動物發出，也指人的哀號聲",
     "unit": 8,
     "example": "[n.] I couldn't stand that yowling.",
@@ -1969,7 +1969,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8318,
     "en": "thumped",
-    "kk": "",
+    "kk": "[θʌmpt]",
     "zh": "v. （thump 的過去式和過去分詞）重擊，猛擊，捶打：用力（尤指用拳頭）擊打或撞擊某人或某物；（心臟）怦怦跳：因害怕或激動而強烈快速地跳動；發出沉重的悶響，或使某物砰地撞到或落在某處。",
     "unit": 8,
     "example": "[v.] He thumped the table angrily.",
@@ -1987,7 +1987,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8320,
     "en": "swished",
-    "kk": "",
+    "kk": "[swɪʃt]",
     "zh": "v. （swish 的過去式和過去分詞）（使）快速移動、揮動或甩動，發出嗖嗖聲",
     "unit": 8,
     "example": "[v.] The pony swished its tail.",
@@ -2023,7 +2023,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8324,
     "en": "recoiled",
-    "kk": "",
+    "kk": "[riˋkɔɪld]",
     "zh": "v. 退縮，躲開，突然後退（recoil 的過去式和過去分詞）；回避，拒不接受；（槍炮等）反衝，後坐；（彈性物體等）回彈，跳回",
     "unit": 8,
     "example": "[v.] She recoiled from his touch.",
@@ -2086,7 +2086,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8331,
     "en": "veered",
-    "kk": "",
+    "kk": "[vɪrd]",
     "zh": "v. （veer 的過去式和過去分詞）突然改變方向或位置，轉向；引申指突然改變立場、態度或情緒，或在不同狀態間劇烈變化；（風）指風向按順時針方向改變；（航海）鬆開或放出纜繩、錨鏈等",
     "unit": 8,
     "example": "[v.] The wind veered to the west.",
@@ -2095,7 +2095,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8332,
     "en": "toddling",
-    "kk": "",
+    "kk": "[ˋtɑdlɪŋ]",
     "zh": "v. （小孩學步時）蹣跚行走，蹣跚學步；<非正式>溜達，悠閒走動（toddle 的現在分詞）",
     "unit": 8,
     "example": "[v.] She fell while toddling around.",
@@ -2149,7 +2149,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8338,
     "en": "splintered",
-    "kk": "",
+    "kk": "[ˋsplɪntɚd]",
     "zh": "adj. 破碎的，裂成碎片的；（比喻）分裂的，四分五裂的，碎片化的；v. splinter 的過去式和過去分詞：（使）破碎，（使）裂成碎片；分裂出去，脫離（常與 off 連用）",
     "unit": 8,
     "example": "[v.] The impact splintered the wood.",
@@ -2158,7 +2158,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8339,
     "en": "eluded",
-    "kk": "",
+    "kk": "[ɪˋludɪd]",
     "zh": "vt. （巧妙地）逃開，躲避；使無法得到；使不記得，使不理解，難住（elude 的過去式和過去分詞）",
     "unit": 8,
     "example": "[vt.] The appropriate word eluded him.",
@@ -2194,7 +2194,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8343,
     "en": "nikolai",
-    "kk": "",
+    "kk": "[ˋnɪko͵laɪ]",
     "zh": "n. 尼古拉",
     "unit": 8,
     "example": "[n.] Nikolai Demidenko gave an exciting yet poetic performance.",
@@ -2212,7 +2212,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8345,
     "en": "gushed",
-    "kk": "",
+    "kk": "[ɡʌʃt]",
     "zh": "v. gush 的過去式和過去分詞；湧出，噴出：液體、氣體等迅速大量地流出或噴出；（感情、言辭等）迸發，流露；誇張地稱讚，滔滔不絕地說。",
     "unit": 8,
     "example": "[v.] 'You are clever,' she gushed.",
@@ -2230,7 +2230,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8347,
     "en": "steve",
-    "kk": "",
+    "kk": "[stiv]",
     "zh": "n. 史蒂夫（男子名，常為 Stephen 或 Steven 的暱稱）",
     "unit": 8,
     "example": "[n.] It was nice to see Steve again.",
@@ -2340,7 +2340,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8359,
     "en": "richard",
-    "kk": "",
+    "kk": "[ˋrɪtʃɚd]",
     "zh": "n. 理查德（男子名，亦譯“理查”）；Richard Roe 指法律訴訟中身份不明的一方當事人，譯作“某乙”",
     "unit": 8,
     "example": "[n.] Richard was coming up the pathway.",
@@ -2421,7 +2421,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8368,
     "en": "reasserted",
-    "kk": "",
+    "kk": "[͵riəˋsɝtəd]",
     "zh": "v. 重新斷言，再次聲明：再次強調或肯定某事。",
     "unit": 8,
     "example": "[v.] He restated his willingness to negotiate with the opposition, and reasserted his paternal concern for the people.",
@@ -2439,7 +2439,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8370,
     "en": "moralizing",
-    "kk": "",
+    "kk": "[ˋmɔrə͵laɪzɪŋ]",
     "zh": "v. 進行道德說教，訓誡；從道德角度解釋……；提高……的品德，改造（moralize 的現在分詞）；n. 說教，道德說教",
     "unit": 8,
     "example": "[n.] We have tried to avoid any moralizing.",
@@ -2502,7 +2502,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8377,
     "en": "foliot",
-    "kk": "",
+    "kk": "[ˋfoliət]",
     "zh": "n. （Foliot）人名；（英）福利奧特；（法）福利奧",
     "unit": 8,
     "example": "[n.] So they proceeded to invent the verge-and-foliot escapement.",
@@ -2684,7 +2684,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8397,
     "en": "clattered",
-    "kk": "",
+    "kk": "[ˋklætɚd]",
     "zh": "v. clatter 的過去式和過去分詞：（物體相互碰撞時）發出響亮、嘈雜的撞擊聲；（人或車輛等）哐當（或噔噔）地移動；使（某物）哐當作響",
     "unit": 8,
     "example": "[v.] Her cup clattered in the saucer.",
@@ -2720,7 +2720,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8401,
     "en": "chromosomes",
-    "kk": "",
+    "kk": "[ˋkromə͵zomz]",
     "zh": "n. （生物學、遺傳學）染色體（chromosome 的複數形式）",
     "unit": 8,
     "example": "[n.] Each cell of our bodies contains 46 chromosomes.",
@@ -2738,7 +2738,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8403,
     "en": "bowlful",
-    "kk": "",
+    "kk": "[ˋbolfəl]",
     "zh": "n. 一滿碗（的量）",
     "unit": 8,
     "example": "[n.] He ate a large bowlful of cereal.",
@@ -2802,7 +2802,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8410,
     "en": "adjourned",
-    "kk": "",
+    "kk": "[əˋdʒɝnd]",
     "zh": "v. adjourn 的過去式和過去分詞：休會，休庭；延期，押後；移到，轉到（另一地點）",
     "unit": 8,
     "example": "[v.] The court adjourned for lunch.",
@@ -2856,7 +2856,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8416,
     "en": "briefings",
-    "kk": "",
+    "kk": "[ˋbrifɪŋz]",
     "zh": "n. 簡報會、情況說明會；簡報資料（briefing 之複數）",
     "unit": 8,
     "example": "[n.] The project manager conducted regular morning briefings to keep the entire engineering team aligned.",
@@ -2874,7 +2874,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8418,
     "en": "protesters",
-    "kk": "",
+    "kk": "[ˋpro͵tɛstɚz]",
     "zh": "n. protester 的複數形式：抗議者，示威者；反對者，異議者",
     "unit": 8,
     "example": "[n.] Anti-war protesters disrupted the debate.",
@@ -2937,7 +2937,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8425,
     "en": "coms",
-    "kk": "",
+    "kk": "[kɑmz]",
     "zh": "n. 網路公司、網際網路企業（常用於 dot-coms）",
     "unit": 8,
     "example": "[n.] During the late 1990s boom, dozens of innovative dot-coms were founded each month.",
@@ -2955,7 +2955,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8427,
     "en": "yanked",
-    "kk": "",
+    "kk": "[jæŋkt]",
     "zh": "v. 猛拉，猛拽（yank 的過去式和過去分詞）：用力快速地拉或拽。",
     "unit": 8,
     "example": "[v.] Frantically paddling to the surface, he yanked at the surfboard, attached to his ankle by a leash, climbed on, and pointed it toward shore.",
@@ -3054,7 +3054,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8438,
     "en": "overbooked",
-    "kk": "",
+    "kk": "[ˋovɚ͵bʊkt]",
     "zh": "adj. 超額預訂的，預訂數超過實際席位或房間數的（如航班、酒店等）；v. 超額訂出，預訂過多（overbook 的過去式和過去分詞）",
     "unit": 8,
     "example": "[adj.] The flight was heavily overbooked.",
@@ -3108,7 +3108,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8444,
     "en": "burbles",
-    "kk": "",
+    "kk": "[ˋbɝbəlz]",
     "zh": "v. 發出咕嚕聲：指液體流動時發出的泡泡聲或類似聲音。",
     "unit": 9,
     "example": "[v.] He burbles on about freedom.",
@@ -3162,7 +3162,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8450,
     "en": "eulogized",
-    "kk": "",
+    "kk": "[ˋjulə͵dʒaɪzd]",
     "zh": "v. 頌揚，稱讚；在葬禮上致悼詞讚頌（eulogize 的過去式和過去分詞）",
     "unit": 9,
     "example": "[v.] He was eulogized as a hero.",
@@ -3234,7 +3234,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8458,
     "en": "spruced",
-    "kk": "",
+    "kk": "[sprust]",
     "zh": "v. （使）打扮整齊（spruce 的過去式和過去分詞）",
     "unit": 9,
     "example": "[v.] She spruced up for the interview.",
@@ -3270,7 +3270,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8462,
     "en": "nabatean",
-    "kk": "",
+    "kk": "[͵næbəˋtiən]",
     "zh": "n. 納巴泰人；納巴泰語；adj. （與）納巴泰人（有關）的",
     "unit": 9,
     "example": "[adj.] Rome annexed the Nabatean kingdom in AD 106.",
@@ -3315,7 +3315,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8467,
     "en": "reflexes",
-    "kk": "",
+    "kk": "[ˋriflɛksəz]",
     "zh": "n. （生理）反射，反射動作，反射作用（reflex 的複數形式，包括條件反射等）；（體育、駕駛等）反應，迅速反應能力，反應速度（如守門員的撲救反應）",
     "unit": 9,
     "example": "[n.] The doctor tested her reflexes.",
@@ -3360,7 +3360,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8472,
     "en": "dabbles",
-    "kk": "",
+    "kk": "[ˋdæbəlz]",
     "zh": "v. 涉獵，嘗試：在某個領域或活動中進行非專業、非深入的嘗試。",
     "unit": 9,
     "example": "[v.] He dabbles in local politics.",
@@ -3531,7 +3531,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8491,
     "en": "dinged",
-    "kk": "",
+    "kk": "[dɪŋd]",
     "zh": "v. ding 的過去式和過去分詞：（非正式）碰傷，撞凹，使（物體表面）留下凹痕；引申義（非正式）使受損，使受罰，批評（常用於 get dinged）；擬聲義（鈴、鍾等）發出叮噹聲；使（鈴、鍾等）發出叮噹聲",
     "unit": 9,
     "example": "[v.] I dinged my passenger door.",
@@ -3567,7 +3567,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8495,
     "en": "judi",
-    "kk": "",
+    "kk": "[ˋdʒudi]",
     "zh": "n. 朱迪（人名）",
     "unit": 9,
     "example": "[n.] Judi Dench, who plays costume designer Lily, appears clad in black and smoking a cigarette.",
@@ -3684,7 +3684,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8508,
     "en": "nowitzki",
-    "kk": "",
+    "kk": "[nəˋvɪtski]",
     "zh": "n. 諾維茨基（姓氏）",
     "unit": 9,
     "example": "[n.] Nowitzki fouled Mitchell early in the third quarter.",
@@ -3911,7 +3911,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8533,
     "en": "acreages",
-    "kk": "",
+    "kk": "[ˋekɚɪdʒɪz]",
     "zh": "n. 土地面積，英畝數：用英畝表示的土地面積。",
     "unit": 9,
     "example": "[n.] He was able to bring large sterile acreages back to fertility.",
@@ -3947,7 +3947,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8537,
     "en": "pirouetted",
-    "kk": "",
+    "kk": "[͵pɪruˋɛd]",
     "zh": "vi. （芭蕾舞）用腳尖旋轉（pirouette 的過去式和過去分詞）",
     "unit": 9,
     "example": "[vi.] She pirouetted across the stage.",
@@ -4230,7 +4230,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8568,
     "en": "pts",
-    "kk": "",
+    "kk": "[pɔɪnts]",
     "zh": "abbr. points 的縮寫：分數，得分；patients 的縮寫：患者，病人；parts 的縮寫：零件，部件；PTS 的縮寫：警校（police training school）",
     "unit": 9,
     "example": "[abbr.] The winner scored 10 pts.",
@@ -4266,7 +4266,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8572,
     "en": "meyers",
-    "kk": "",
+    "kk": "[ˋmaɪɚz]",
     "zh": "n. 邁耶斯（人名）",
     "unit": 9,
     "example": "[n.] Meyers is a diligent and prolific worker.",
@@ -4314,7 +4314,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8577,
     "en": "decibels",
-    "kk": "",
+    "kk": "[ˋdɛsəbəlz]",
     "zh": "n. 分貝（decibel 的複數；計量聲音強度，也用於電子、通信等領域表示功率、電壓等相對量的單位）",
     "unit": 9,
     "example": "[n.] Continuous exposure to sound above 80 decibels could be harmful.",
@@ -4359,7 +4359,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8582,
     "en": "josie",
-    "kk": "",
+    "kk": "[ˋdʒozi]",
     "zh": "n. 喬西（女子名，Josephine 之簡稱）",
     "unit": 9,
     "example": "[n.] Her family's unwavering love and encouragement have always been deeply precious to Josie.",
@@ -4404,7 +4404,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8587,
     "en": "exudes",
-    "kk": "",
+    "kk": "[ɪɡˋzudz]",
     "zh": "v. （exude 的第三人稱單數）滲出，分泌，散發出；洋溢，充分顯露",
     "unit": 9,
     "example": "[v.] The amorphophallus titanum was known as a corpse flower because it exudes a smell of rotting flesh.",
@@ -4431,7 +4431,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8590,
     "en": "jerrold",
-    "kk": "",
+    "kk": "[ˋdʒɛrəld]",
     "zh": "n. 傑羅爾德（男子名）",
     "unit": 9,
     "example": "[n.] Jerrold laughed again, a solid, fruity laugh.",
@@ -4503,7 +4503,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8598,
     "en": "coffers",
-    "kk": "",
+    "kk": "[ˋkɑfɚz]",
     "zh": "n. （政府、機構等的）資金，財源，金庫；保險箱，保險櫃（coffer 的複數）；（建築）花格鑲板（屋頂或天花板上的凹陷，coffer 的複數）；v. 用花格鑲板裝飾（coffer 的第三人稱單數）；把……放進保險箱，珍藏起來（coffer 的第三人稱單數）",
     "unit": 9,
     "example": "[n.] If you believe, as many do, that wealth inequality is inherently bad, then these taxes improve society while also swelling government coffers.",
@@ -4881,7 +4881,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8640,
     "en": "carolyne",
-    "kk": "",
+    "kk": "[ˋkɛrəlɪn]",
     "zh": "n. 卡洛琳（人名）",
     "unit": 9,
     "example": "[n.] Carolyne is a fashion designer.",
@@ -4917,7 +4917,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8644,
     "en": "jen",
-    "kk": "",
+    "kk": "[dʒɛn]",
     "zh": "n. 珍（女子名）",
     "unit": 9,
     "example": "[n.] We're losing a first-rate editor in Jen.",
@@ -4980,7 +4980,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8651,
     "en": "intertwined",
-    "kk": "",
+    "kk": "[ɪntɚˋtwaɪnd]",
     "zh": "adj. 纏繞的；錯綜複雜的，交織的；v. 使纏結，纏繞，使交織（intertwine 的過去式和過去分詞）",
     "unit": 9,
     "example": "[adj.] Her fate intertwined with his.",
@@ -5025,7 +5025,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8656,
     "en": "siphoned",
-    "kk": "",
+    "kk": "[ˋsaɪfənd]",
     "zh": "v. siphon 的過去式和過去分詞；用虹吸管抽吸（液體），通過彎曲的管子利用重力或大氣壓力將液體從一個容器移到另一個容器；抽走、挪用（資金或資源等），常與 off、from 連用",
     "unit": 9,
     "example": "[v.] The waste liquid needs to be siphoned off.",
@@ -5088,7 +5088,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8663,
     "en": "alcazar",
-    "kk": "",
+    "kk": "[ˋɑlkə͵zɑr]",
     "zh": "n. 城堡；n. （Alcazar）人名；（法）阿爾卡扎",
     "unit": 9,
     "example": "[n.] Home is your alcazar and safe harbor.",
@@ -5124,7 +5124,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8667,
     "en": "exulted",
-    "kk": "",
+    "kk": "[ɪɡˋzʌltɪd]",
     "zh": "v. exult 的過去式和過去分詞；歡欣鼓舞，狂喜：因成功、勝利或極度的喜悅而感到非常高興。",
     "unit": 9,
     "example": "[v.] I exulted and wept for joy.",
@@ -5142,7 +5142,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8669,
     "en": "confided",
-    "kk": "",
+    "kk": "[kənˋfaɪdəd]",
     "zh": "v. （confide 的過去式和過去分詞形式）吐露，傾訴（秘密、心事等）；〈舊〉把……託付給（某人），委託",
     "unit": 9,
     "example": "[v.] Sara confided to her journal.",
@@ -5214,7 +5214,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8677,
     "en": "rotterdam",
-    "kk": "",
+    "kk": "[ˋrɑtɚ͵dæm]",
     "zh": "n. 鹿特丹港市（荷蘭西南部港市）",
     "unit": 9,
     "example": "[n.] Rotterdam is a major port.",
@@ -5421,7 +5421,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8700,
     "en": "reeked",
-    "kk": "",
+    "kk": "[rikt]",
     "zh": "v. reek 的過去式和過去分詞，常與 of 連用：散發出濃烈難聞的氣味，發臭；引申表示明顯帶有或透出（虛偽等令人不快的事物）",
     "unit": 9,
     "example": "[v.] His breath reeked of tobacco.",
@@ -5448,7 +5448,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8703,
     "en": "dani",
-    "kk": "",
+    "kk": "[ˋdɑni]",
     "zh": "n. （Dani）達尼人（居住在西伊利安省中高原地區的新幾內亞人）",
     "unit": 9,
     "example": "[n.] The valley is inhabited by the Dani tribe.",
@@ -5457,7 +5457,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8704,
     "en": "ratcheted",
-    "kk": "",
+    "kk": "[ˋrætʃətɪd]",
     "zh": "v. 逐步升高或降低：通過一系列的小步驟逐漸改變某物的水平或位置。",
     "unit": 9,
     "example": "[v.] The rod bent double, the reel shrieked and ratcheted.",
@@ -5466,7 +5466,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8705,
     "en": "engulfed",
-    "kk": "",
+    "kk": "[ɪnˋɡʌlft]",
     "zh": "v. 1. 吞沒，淹沒：指湧入、覆蓋或包圍某物，使其消失或被毀；2. 使陷入，使全神貫注：指完全佔據某人的注意力、感情或時間。",
     "unit": 9,
     "example": "[v.] The vehicle was engulfed in flames.",
@@ -5547,7 +5547,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8714,
     "en": "protons",
-    "kk": "",
+    "kk": "[ˋpro͵tɑnz]",
     "zh": "n. （物）質子，氫核（proton 的複數）",
     "unit": 9,
     "example": "[n.] Each atomic cluster is made up of neutrons and protons.",
@@ -5574,7 +5574,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8717,
     "en": "biofuels",
-    "kk": "",
+    "kk": "[ˋbaɪo͵fjuəlz]",
     "zh": "n. biofuel 的複數形式：指由植物等生物質製成的液體、氣體或固體燃料（即生物燃料、生質燃料、生質能源）",
     "unit": 9,
     "example": "[n.] Biofuels can be mixed with conventional fuels.",
@@ -5835,7 +5835,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8746,
     "en": "conspiring",
-    "kk": "",
+    "kk": "[kənˋspaɪrɪŋ]",
     "zh": "v. 密謀，共謀；協同，共同作用（conspire 的現在分詞）",
     "unit": 9,
     "example": "[v.] There are four parties conspiring to keep you connected: the tech, your boss, your friends and you.",
@@ -5880,7 +5880,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8751,
     "en": "allegations",
-    "kk": "",
+    "kk": "[͵æləˋɡeʃənz]",
     "zh": "n. 指控，指責：對某人或某事的未經證實的指控或指責。",
     "unit": 9,
     "example": "[n.] The allegations were totally unfounded.",
@@ -5916,7 +5916,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8755,
     "en": "headhunted",
-    "kk": "",
+    "kk": "[ˋhɛd͵hʌntəd]",
     "zh": "v. 被挖角：指某人因其專業技能或經驗而被其他公司或組織主動邀請加入。",
     "unit": 9,
     "example": "[v.] I was headhunted by a marketing agency.",
@@ -5943,7 +5943,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8758,
     "en": "florence",
-    "kk": "",
+    "kk": "[ˋflɔrəns]",
     "zh": "n. 佛羅倫薩（意大利都市名）；弗洛倫斯（女子名）",
     "unit": 9,
     "example": "[n.] We celebrated our 25th wedding anniversary in Florence.",
@@ -5952,7 +5952,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8759,
     "en": "sts",
-    "kk": "",
+    "kk": "[strits]",
     "zh": "abbr. 艦對岸（ship to shore）；特殊處理鋼（Special Treatment Steel）",
     "unit": 9,
     "example": "[abbr.] The appliance acts as an STS for an SP.",
@@ -5961,7 +5961,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8760,
     "en": "lin",
-    "kk": "",
+    "kk": "[lɪn]",
     "zh": "n. 林（華人常見姓氏）",
     "unit": 9,
     "example": "[n.] Mr. Lin has served as the dedicated principal of our local high school for over a decade.",
@@ -6060,7 +6060,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8771,
     "en": "promulgated",
-    "kk": "",
+    "kk": "[ˋprɑməl͵ɡetəd]",
     "zh": "v. 頒佈，公佈，發佈；宣傳，傳播，散佈（promulgate 的過去式和過去分詞；正式用語，頒佈對象常為法律、法令、規章、標準等，宣傳對象可為思想、觀點等）；adj. 已公佈的，已頒佈的（promulgate 的過去分詞用作形容詞）",
     "unit": 9,
     "example": "[v.] A new constitution was promulgated last month.",
@@ -6159,7 +6159,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8782,
     "en": "comports",
-    "kk": "",
+    "kk": "[kəmˋpɔrts]",
     "zh": "v. （正式）1. 舉止，表現：指以某種方式行動或表現（comport oneself）；2. 一致，符合：表示與另一事物相符或相稱（comport with）。本詞形為 comport 的第三人稱單數現在時。",
     "unit": 9,
     "example": "[v.] He comports himself with dignity.",
@@ -6240,7 +6240,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8791,
     "en": "intermingles",
-    "kk": "",
+    "kk": "[͵ɪntɚˋmɪŋɡəlz]",
     "zh": "v. （intermingle 的第三人稱單數形式）混合，交融：使不同的事物相互混合或交融在一起。",
     "unit": 9,
     "example": "[v.] The book intermingles fact and fiction.",
@@ -6258,7 +6258,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8793,
     "en": "rodolphe",
-    "kk": "",
+    "kk": "[roˋdɔlf]",
     "zh": "n. （Rodolphe）人名；（法、德）魯道夫",
     "unit": 9,
     "example": "[n.] Its founder Rodolphe Julian was a canny businessman.",
@@ -6267,7 +6267,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8794,
     "en": "julian",
-    "kk": "",
+    "kk": "[ˋdʒuliən]",
     "zh": "n. 朱利安（男子名，也用作姓氏）；尤利安（羅馬皇帝，史稱“背教者”）；adj. 凱撒的；儒略曆的（Julian calendar）；儒略日的（Julian day）",
     "unit": 9,
     "example": "[n.] Julian has been thinking up new ways of raising money.",
@@ -6285,7 +6285,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8796,
     "en": "kara",
-    "kk": "",
+    "kk": "[ˋkɛrə]",
     "zh": "n. 卡拉（女子名，或指北冰洋之喀拉海）",
     "unit": 9,
     "example": "[n.] Kara volunteered at the local animal shelter every Saturday morning to walk the rescue dogs.",
@@ -6312,7 +6312,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8799,
     "en": "extolled",
-    "kk": "",
+    "kk": "[ɪkˋstold]",
     "zh": "vt. 頌揚，稱讚（extol 的過去式和過去分詞）",
     "unit": 9,
     "example": "[vt.] She was extolled as a genius.",
@@ -6366,7 +6366,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8805,
     "en": "drinkers",
-    "kk": "",
+    "kk": "[ˋdrɪŋkɚz]",
     "zh": "n. 飲酒者，喝酒的人：喜歡喝酒或經常喝酒的人。",
     "unit": 9,
     "example": "[n.] She pushed her way through a herd of lunchtime drinkers.",
@@ -6411,7 +6411,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8810,
     "en": "hurtled",
-    "kk": "",
+    "kk": "[ˋhɝtəld]",
     "zh": "v. hurtle 的過去式和過去分詞：多作不及物動詞，意為猛衝，猛撞，以極快的速度移動；作及物動詞時，意為猛擲，使猛衝。",
     "unit": 9,
     "example": "[v.] A lizard about the size of a small crocodile hurtled out of the undergrowth and raced up a nearby baobab tree.",
@@ -6564,7 +6564,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8827,
     "en": "forfeitures",
-    "kk": "",
+    "kk": "[ˋfɔrfətʃɚz]",
     "zh": "n. 沒收物、罰款、權利之喪失（forfeiture 之複數）",
     "unit": 9,
     "example": "[n.] The contract clearly states that breaches of confidentiality will result in heavy financial forfeitures.",
@@ -6591,7 +6591,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8830,
     "en": "arrogated",
-    "kk": "",
+    "kk": "[ˋæro͵ɡetɪd]",
     "zh": "v. （正式）霸佔，擅自佔有：未經他人同意而擅自佔有或控制他人的權利、特權、責任、財產等（arrogate 的過去式和過去分詞）。",
     "unit": 9,
     "example": "[v.] He arrogated the privilege to himself alone.",
@@ -6672,7 +6672,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8839,
     "en": "signposted",
-    "kk": "",
+    "kk": "[ˋsaɪn͵postɪd]",
     "zh": "adj. 設有路標的、標示清晰的；v. 設置路標（signpost 之過去式與過去分詞）",
     "unit": 9,
     "example": "[adj.] The national park hiking trail was clearly signposted, making it impossible for visitors to get lost.",
@@ -6690,7 +6690,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8841,
     "en": "bookmarking",
-    "kk": "",
+    "kk": "[ˋbʊkmɑrkɪŋ]",
     "zh": "n. 書籤；網址收藏",
     "unit": 9,
     "example": "[n.] This site is definitely worth bookmarking.",
@@ -6861,7 +6861,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8860,
     "en": "resounded",
-    "kk": "",
+    "kk": "[rɪˋsaʊndɪd]",
     "zh": "v. 1. 迴響，發出回聲：指聲音在空間中傳播併產生回聲。；2. 鳴響，發出響聲：指聲音響亮、清晰地傳播。",
     "unit": 9,
     "example": "[v.] The people all over the country resounded his lofty moral character.",
@@ -7005,7 +7005,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8876,
     "en": "paramedics",
-    "kk": "",
+    "kk": "[͵pɛrəˋmɛdɪks]",
     "zh": "n. 護理人員，輔助醫務人員（paramedic 的複數）",
     "unit": 9,
     "example": "[n.] Paramedics rushed a beachgoer to the hospital with a two-foot-long nurse shark clinging to her arm after efforts to disengage it failed.",
@@ -7140,7 +7140,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8891,
     "en": "backtracked",
-    "kk": "",
+    "kk": "[ˋbæk͵trækt]",
     "zh": "v. 回溯，返回：沿原路返回或重新考慮以前的決定。",
     "unit": 9,
     "example": "[v.] The committee backtracked by scrapping the controversial bonus system.",
@@ -7149,7 +7149,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8892,
     "en": "sami",
-    "kk": "",
+    "kk": "[ˋsæmi]",
     "zh": "n. 薩米人（通常寫作 Sami；居住在挪威、瑞典、芬蘭北部及俄羅斯科拉半島的土著民族成員；the Sami 可指整個民族，也拼作 Saami，舊稱 Lapp）；薩米語（薩米人使用的烏拉爾語系語言/方言群，也拼作 Saami）；薩米（人名，通常寫作 Sami；美、巴、印）；adj. 薩米人的；薩米語的（與薩米人或薩米語有關，通常寫作 Sami，一般作定語）",
     "unit": 9,
     "example": "[n.] The Sami have strong views on environmental matters.",
@@ -7167,7 +7167,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8894,
     "en": "jabbed",
-    "kk": "",
+    "kk": "[dʒæbd]",
     "zh": "v. jab 的過去式和過去分詞：猛刺，猛戳，捅（用尖銳物快速、突然地刺或戳）；（拳擊中）猛擊（用拳頭快速、突然地擊打對手）。",
     "unit": 9,
     "example": "[v.] She jabbed him with her elbow.",
@@ -7212,7 +7212,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8899,
     "en": "salespeople",
-    "kk": "",
+    "kk": "[ˋselz͵pipəl]",
     "zh": "n. salesperson 的複數：推銷員，售貨員，店員",
     "unit": 9,
     "example": "[n.] He had a staff of six salespeople working for him.",
@@ -7248,7 +7248,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8903,
     "en": "patronizes",
-    "kk": "",
+    "kk": "[ˋpetrə͵naɪzəz]",
     "zh": "v. 1. 以高人一等的態度對待，居高臨下：對某人以一種高人一等的態度，使對方感到不舒服。；2. 光顧，惠顧：經常去某個商店或餐館消費。",
     "unit": 9,
     "example": "[v.] She patronizes many contemporary British artists.",
@@ -7383,7 +7383,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8918,
     "en": "moulds",
-    "kk": "",
+    "kk": "[moldz]",
     "zh": "n. 模具，模子（mould 的複數）；黴菌（mould 的複數）；v. （mould 的第三人稱單數）用模子製作，塑造；影響，塑造（性格、思想等）；貼合，與…輪廓吻合（常與 to 連用）",
     "unit": 9,
     "example": "[n.] He makes plastic reusable moulds.",
@@ -7491,7 +7491,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8930,
     "en": "notified",
-    "kk": "",
+    "kk": "[ˋnotə͵faɪd]",
     "zh": "v. notify 的過去式和過去分詞；通知，告知；adj. 被通知的；已獲告知的（常作定語）",
     "unit": 9,
     "example": "[v.] You will be notified by letter.",
@@ -7572,7 +7572,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8939,
     "en": "joan",
-    "kk": "",
+    "kk": "[dʒon]",
     "zh": "n. 瓊（女子名）",
     "unit": 9,
     "example": "[n.] Joan still mourns her father.",
@@ -7590,7 +7590,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8941,
     "en": "orbison",
-    "kk": "",
+    "kk": "[ˋɔr͵bɪsən]",
     "zh": "n. 奧比森",
     "unit": 9,
     "example": "[n.] The song is a tribute to Roy Orbison.",
@@ -7734,7 +7734,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8957,
     "en": "shinbashira",
-    "kk": "",
+    "kk": "[ˋʃɪnbɑʃɪrə]",
     "zh": "n. 中心支柱（佛塔等建築的中間的柱子）",
     "unit": 9,
     "example": "[n.] And what is the role of the shinbashira, the central pillar?",
@@ -7806,7 +7806,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8965,
     "en": "rodrigo",
-    "kk": "",
+    "kk": "[rəˋdriɡo]",
     "zh": "n. 《羅德里戈》（亨德爾的三幕歌劇，HWV 5）",
     "unit": 9,
     "example": "[n.] As for Rodrigo Lira, well, I already explained what had become of him.",
@@ -7851,7 +7851,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8970,
     "en": "lamy",
-    "kk": "",
+    "kk": "[ˋlemi]",
     "zh": "n. 亦譯“拉米”；（品牌）凌美（德國書寫工具品牌，常寫作 LAMY）",
     "unit": 9,
     "example": "[n.] This train will terminate at Lamy.",
@@ -7914,7 +7914,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8977,
     "en": "faute",
-    "kk": "",
+    "kk": "[fot]",
     "zh": "n. 錯誤，過失：法語詞彙，指犯錯或失誤。",
     "unit": 9,
     "example": "[n.] We were obliged, faute de mieux, to drink the local beverage.",
@@ -7950,7 +7950,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8981,
     "en": "cheetahs",
-    "kk": "",
+    "kk": "[ˋtʃitəz]",
     "zh": "n. 獵豹，印度豹（cheetah 的複數形式）",
     "unit": 9,
     "example": "[n.] Cheetahs breed very poorly in captivity.",
@@ -8004,7 +8004,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8987,
     "en": "precincts",
-    "kk": "",
+    "kk": "[ˋpri͵sɪŋkts]",
     "zh": "n. 周圍地區；（房屋等場所的）界內範圍或內部；<美>選區、行政分區、警察轄區",
     "unit": 9,
     "example": "[n.] Within those precincts, within that enclosure, there's a large, open courtyard.",
@@ -8114,7 +8114,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 8999,
     "en": "mayhew",
-    "kk": "",
+    "kk": "[ˋmehju]",
     "zh": "n. （Mayhew）人名；（英）梅休",
     "unit": 9,
     "example": "[n.] Mayhew is a man of rock-solid integrity.",
@@ -8150,7 +8150,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 9003,
     "en": "knowsley",
-    "kk": "",
+    "kk": "[ˋnozli]",
     "zh": "n. 諾斯利",
     "unit": 9,
     "example": "[n.] Knowsley Metropolitan Borough supplied all its school returns.",
@@ -8197,7 +8197,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 9008,
     "en": "espressos",
-    "kk": "",
+    "kk": "[͵ɛsˋprɛsoz]",
     "zh": "n. （蒸汽加壓煮出的）濃咖啡（espresso 的名詞複數）",
     "unit": 9,
     "example": "[n.] You want to outlaw double espressos.",
@@ -8206,7 +8206,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 9009,
     "en": "environmentalists",
-    "kk": "",
+    "kk": "[ɛnˋvaɪrən͵mɛntəlɪsts]",
     "zh": "n. 環保人士，環保主義者（environmentalist 的複數形式）",
     "unit": 9,
     "example": "[n.] That ruling comes as a blow to environmentalists.",
@@ -8242,7 +8242,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 9013,
     "en": "extorted",
-    "kk": "",
+    "kk": "[ɪkˋstɔrtɪd]",
     "zh": "v. （extort 的過去式和過去分詞）勒索，敲詐：以威脅、恐嚇等不正當手段從他人處強取（錢財等）；引申指使（某人）不得不產生或作出（讚歎、招供、承諾等）。",
     "unit": 9,
     "example": "[v.] The gang extorted money from over 30 local businesses.",
@@ -8399,7 +8399,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 9030,
     "en": "firefighters",
-    "kk": "",
+    "kk": "[ˋfaɪɚ͵faɪtɚz]",
     "zh": "n. 消防員，消防隊員（firefighter 的複數）",
     "unit": 9,
     "example": "[n.] Firefighters led the survivors to safety.",
@@ -8464,7 +8464,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 9037,
     "en": "miscreants",
-    "kk": "",
+    "kk": "[ˋmɪskriənts]",
     "zh": "n. 惡棍，歹徒：行為不端、品行惡劣的人。",
     "unit": 9,
     "example": "[n.] Local people demanded that the police apprehend the miscreants.",
@@ -8500,7 +8500,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 9041,
     "en": "dante",
-    "kk": "",
+    "kk": "[ˋdɑnte]",
     "zh": "n. （Dante）但丁（意大利詩人，《神曲》作者）；（Dante）<美，意，匈>丹特（人名）；（Dante）但丁（《鬼泣》系列遊戲主角）",
     "unit": 9,
     "example": "[n.] Dante clearly condemns illicit love.",
@@ -8527,7 +8527,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 9044,
     "en": "scotched",
-    "kk": "",
+    "kk": "[skɑtʃt]",
     "zh": "v. 切斷，阻止，粉碎（計劃、謠言等）：使無法實現或繼續。",
     "unit": 9,
     "example": "[v.] Plans for a merger have been scotched.",
@@ -8583,7 +8583,7 @@ const examplesUnit9WordsDB = [
   {
     "id": 9050,
     "en": "pietro",
-    "kk": "",
+    "kk": "[piˋɛtro]",
     "zh": "n. （Pietro）人名；（法、葡）彼得羅",
     "unit": 9,
     "example": "[n.] One is a landscape painted by the Italian artist Pietro Bellotti dating to 1665.",

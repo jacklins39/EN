@@ -259,7 +259,7 @@ const synUnit8WordsDB = [
   {
     "id": 7029,
     "en": "unexacting",
-    "kk": "",
+    "kk": "[͵ʌnɪɡˋzæktɪŋ]",
     "zh": "adj. 不苛求的，寬容的：對別人或事物要求不嚴格的，容易滿足的。",
     "unit": 7,
     "example": "[adj.] He tried to learn how to use the word unexacting correctly.",
@@ -268,7 +268,7 @@ const synUnit8WordsDB = [
   {
     "id": 7030,
     "en": "unchallenging",
-    "kk": "",
+    "kk": "[͵ʌnˋtʃæləndʒɪŋ]",
     "zh": "adj. 沒有挑戰性的",
     "unit": 7,
     "example": "[adj.] Most fared poorly in school not because they lacked ability but because they found school unchallenging and consequently lost interest.",
@@ -1303,7 +1303,7 @@ const synUnit8WordsDB = [
   {
     "id": 7145,
     "en": "frontwards",
-    "kk": "",
+    "kk": "[ˋfrʌntwɚdz]",
     "zh": "adv. 向前地",
     "unit": 7,
     "example": "[adv.] He tried to learn how to use the word frontwards correctly.",
@@ -2122,7 +2122,7 @@ const synUnit8WordsDB = [
   {
     "id": 7236,
     "en": "abettance",
-    "kk": "",
+    "kk": "[əˋbɛtəns]",
     "zh": "n. 教唆，唆使：指引導、協助或支持他人進行犯罪行為。",
     "unit": 7,
     "example": "[n.] He tried to learn how to use the word abettance correctly.",
@@ -2149,7 +2149,7 @@ const synUnit8WordsDB = [
   {
     "id": 7239,
     "en": "ravenousness",
-    "kk": "",
+    "kk": "[ˋrævənəsnəs]",
     "zh": "n. 極其飢餓，如飢似渴",
     "unit": 7,
     "example": "[n.] He tried to learn how to use the word ravenousness correctly.",
@@ -2302,7 +2302,7 @@ const synUnit8WordsDB = [
   {
     "id": 7256,
     "en": "braaivleis",
-    "kk": "",
+    "kk": "[ˋbraɪfles]",
     "zh": "n. 烤肉野餐會",
     "unit": 7,
     "example": "[n.] He tried to learn how to use the word braaivleis correctly.",
@@ -2311,7 +2311,7 @@ const synUnit8WordsDB = [
   {
     "id": 7257,
     "en": "hangi",
-    "kk": "",
+    "kk": "[ˋhɑŋi]",
     "zh": "n. （新西蘭毛利文化）毛利傳統地灶及烹飪法，通稱“杭吉”，亦譯“石頭火鍋”：在地面挖坑放置燒熱石頭，包裹食物後覆土蒸熟；用這種地灶烹製的食物或毛利傳統宴席。",
     "unit": 7,
     "example": "[n.] He tried to learn how to use the word hangi correctly.",
@@ -2347,7 +2347,7 @@ const synUnit8WordsDB = [
   {
     "id": 7261,
     "en": "heftiness",
-    "kk": "",
+    "kk": "[ˋhɛftinəs]",
     "zh": "n.龐大；沉重",
     "unit": 7,
     "example": "[n.] He tried to learn how to use the word heftiness correctly.",
@@ -2356,7 +2356,7 @@ const synUnit8WordsDB = [
   {
     "id": 7262,
     "en": "burliness",
-    "kk": "",
+    "kk": "[ˋbɝlinəs]",
     "zh": "n. 結實；強壯",
     "unit": 7,
     "example": "[n.] He tried to learn how to use the word burliness correctly.",
@@ -2374,7 +2374,7 @@ const synUnit8WordsDB = [
   {
     "id": 7264,
     "en": "mandibles",
-    "kk": "",
+    "kk": "[ˋmændəbəlz]",
     "zh": "n. （人或動物的）下頜骨，下顎骨；（鳥的）上喙或下喙；（昆蟲等節肢動物的）顎（mandible 的複數）",
     "unit": 7,
     "example": "[n.] At least they didn't give me a butterfly's proboscis, or crab mandibles.",
@@ -2617,7 +2617,7 @@ const synUnit8WordsDB = [
   {
     "id": 7291,
     "en": "tamed",
-    "kk": "",
+    "kk": "[temd]",
     "zh": "v. 馴化，馴服；制服，控制，使緩和；開墾，開闢（tame 的過去式和過去分詞）；adj. 被馴化的；馴服的",
     "unit": 7,
     "example": "[v.] Scientists used to believe that people tamed cats to catch mice and protect the grain.",
@@ -3544,7 +3544,7 @@ const synUnit8WordsDB = [
   {
     "id": 7394,
     "en": "dispiritedness",
-    "kk": "",
+    "kk": "[dɪˋspɪrətɪdnəs]",
     "zh": "n.沮喪，心灰意冷",
     "unit": 7,
     "example": "[n.] He tried to learn how to use the word dispiritedness correctly.",
@@ -3769,7 +3769,7 @@ const synUnit8WordsDB = [
   {
     "id": 7419,
     "en": "conversancy",
-    "kk": "",
+    "kk": "[kənˋvɝsənsi]",
     "zh": "n. 精通；熟練；親近",
     "unit": 7,
     "example": "[n.] He tried to learn how to use the word conversancy correctly.",
@@ -4120,7 +4120,7 @@ const synUnit8WordsDB = [
   {
     "id": 7458,
     "en": "nictitate",
-    "kk": "",
+    "kk": "[ˋnɪktə͵tet]",
     "zh": "vi. 眨眼睛",
     "unit": 8,
     "example": "[vi.] He tried to learn how to use the word nictitate correctly.",
@@ -4255,7 +4255,7 @@ const synUnit8WordsDB = [
   {
     "id": 7473,
     "en": "classing",
-    "kk": "",
+    "kk": "[ˋklæsɪŋ]",
     "zh": "n. 分級；v. 把……分類（class 的 ing 形式）",
     "unit": 8,
     "example": "[n.] There are three base implementations provided for sub-classing.",
@@ -4444,7 +4444,7 @@ const synUnit8WordsDB = [
   {
     "id": 7494,
     "en": "censurer",
-    "kk": "",
+    "kk": "[ˋsɛnʃərɚ]",
     "zh": "n. 指責別人的人（censure 的變體）；譴責別人的人（censure 的變體）",
     "unit": 8,
     "example": "[n.] He tried to learn how to use the word censurer correctly.",
@@ -4777,7 +4777,7 @@ const synUnit8WordsDB = [
   {
     "id": 7531,
     "en": "blameworthiness",
-    "kk": "",
+    "kk": "[ˋblem͵wɝðinɪs]",
     "zh": "n. 可責備性；應受責備性",
     "unit": 8,
     "example": "[n.] The foundation of bearing joint and several liability by possible tortfeasors is no longer joint-negligence but the blameworthiness of subjective danger.",
@@ -4795,7 +4795,7 @@ const synUnit8WordsDB = [
   {
     "id": 7533,
     "en": "wrongfulness",
-    "kk": "",
+    "kk": "[ˋrɔŋfəlnəs]",
     "zh": "n. 不法性",
     "unit": 8,
     "example": "[n.] The function of debate in the field of substantive wrongfulness is providing the base of explaining justification of action that keeps with constitutive elements of crime.",
@@ -4948,7 +4948,7 @@ const synUnit8WordsDB = [
   {
     "id": 7550,
     "en": "flechette",
-    "kk": "",
+    "kk": "[fleˋʃɛt]",
     "zh": "n. 鏢彈；[軍] 箭彈",
     "unit": 8,
     "example": "[n.] He tried to learn how to use the word flechette correctly.",
@@ -5632,7 +5632,7 @@ const synUnit8WordsDB = [
   {
     "id": 7626,
     "en": "unwedded",
-    "kk": "",
+    "kk": "[ʌnˋwɛdɪd]",
     "zh": "adj. 未婚的，未結婚的：尚未結婚或沒有結婚的。",
     "unit": 8,
     "example": "[adj.] He tried to learn how to use the word unwedded correctly.",
@@ -5641,7 +5641,7 @@ const synUnit8WordsDB = [
   {
     "id": 7627,
     "en": "husbandless",
-    "kk": "",
+    "kk": "[ˋhʌzbəndləs]",
     "zh": "n. 無丈夫的（husband 的變體）",
     "unit": 8,
     "example": "[n.] He tried to learn how to use the word husbandless correctly.",
@@ -6037,7 +6037,7 @@ const synUnit8WordsDB = [
   {
     "id": 7671,
     "en": "counterstatement",
-    "kk": "",
+    "kk": "[ˋkaʊntɚ͵stetmənt]",
     "zh": "n. 抗辯書；反駁聲明",
     "unit": 8,
     "example": "[n.] He tried to learn how to use the word counterstatement correctly.",
@@ -6163,7 +6163,7 @@ const synUnit8WordsDB = [
   {
     "id": 7685,
     "en": "wholeheartedness",
-    "kk": "",
+    "kk": "[ˋhol͵hɑrtɪdnəs]",
     "zh": "n. 全神貫注；全心全意",
     "unit": 8,
     "example": "[n.] On one way of developing the integrated-self view of integrity, wholeheartedness is equated with integrity.",
@@ -6451,7 +6451,7 @@ const synUnit8WordsDB = [
   {
     "id": 7717,
     "en": "chronicled",
-    "kk": "",
+    "kk": "[ˋkrɑnɪkəld]",
     "zh": "vt. 把……載入編年史，按事件發生順序記載（chronicle 的過去式和過去分詞）",
     "unit": 8,
     "example": "[vt.] When a graphic element was changed by law or decree it was chronicled in this document.",
@@ -6865,7 +6865,7 @@ const synUnit8WordsDB = [
   {
     "id": 7763,
     "en": "hugeness",
-    "kk": "",
+    "kk": "[ˋhjudʒnəs]",
     "zh": "n. 巨大；龐大；廣大",
     "unit": 8,
     "example": "[n.] This scheme decomposes the difficulty of CORBA criterion hugeness and complexity.",
@@ -6883,7 +6883,7 @@ const synUnit8WordsDB = [
   {
     "id": 7765,
     "en": "enormousness",
-    "kk": "",
+    "kk": "[ɪˋnɔrməsnəs]",
     "zh": "n. 龐大，巨大",
     "unit": 8,
     "example": "[n.] He tried to learn how to use the word enormousness correctly.",
@@ -7009,7 +7009,7 @@ const synUnit8WordsDB = [
   {
     "id": 7779,
     "en": "titbits",
-    "kk": "",
+    "kk": "[ˋtɪt͵bɪts]",
     "zh": "n. 花絮",
     "unit": 8,
     "example": "[n.] She had saved a few titbits for her cat.",
@@ -7036,7 +7036,7 @@ const synUnit8WordsDB = [
   {
     "id": 7782,
     "en": "waterbody",
-    "kk": "",
+    "kk": "[ˋwɔtɚ͵bɑdi]",
     "zh": "n. 水體",
     "unit": 8,
     "example": "[n.] The change of ammonia nitrogen concn . in the waterbody had no significant difference from that of the control group.",
@@ -7315,7 +7315,7 @@ const synUnit8WordsDB = [
   {
     "id": 7813,
     "en": "discussable",
-    "kk": "",
+    "kk": "[dɪˋskʌsəbəl]",
     "zh": "adj. 可討論的",
     "unit": 8,
     "example": "[adj.] He tried to learn how to use the word discussable correctly.",
@@ -7414,7 +7414,7 @@ const synUnit8WordsDB = [
   {
     "id": 7824,
     "en": "unexcitable",
-    "kk": "",
+    "kk": "[͵ʌnɪkˋsaɪtəbəl]",
     "zh": "adj. 不易激動的",
     "unit": 8,
     "example": "[adj.] The football match is the longest and most unexcitable of matches.",
@@ -7603,7 +7603,7 @@ const synUnit8WordsDB = [
   {
     "id": 7845,
     "en": "recommencement",
-    "kk": "",
+    "kk": "[͵rikəˋmɛnsmənt]",
     "zh": "n. 重新開始，重頭再來",
     "unit": 8,
     "example": "[n.] Any intentions of return should be sent at least 14 days prior to recommencement.",
@@ -7855,7 +7855,7 @@ const synUnit8WordsDB = [
   {
     "id": 7873,
     "en": "unexplainable",
-    "kk": "",
+    "kk": "[͵ʌnɪksˋplenəbəl]",
     "zh": "adj. 費解的；無法說明的",
     "unit": 8,
     "example": "[adj.] Life is unexplainable. So, don't try to explain it. Just live it.",
@@ -8017,7 +8017,7 @@ const synUnit8WordsDB = [
   {
     "id": 7891,
     "en": "vaporescent",
-    "kk": "",
+    "kk": "[͵væpəˋrɛsənt]",
     "zh": "adj. 汽化（或蒸發）過程的",
     "unit": 8,
     "example": "[adj.] He tried to learn how to use the word vaporescent correctly.",
@@ -8998,7 +8998,7 @@ const synUnit8WordsDB = [
   {
     "id": 8000,
     "en": "unattractiveness",
-    "kk": "",
+    "kk": "[͵ʌnəˋtræktɪvnəs]",
     "zh": "n.無趣，缺乏吸引力",
     "unit": 8,
     "example": "[n.] The strawberry is red, has a liking for the unusual unattractiveness.",
@@ -9268,7 +9268,7 @@ const synUnit8WordsDB = [
   {
     "id": 8030,
     "en": "unimaginativeness",
-    "kk": "",
+    "kk": "[͵ʌnɪˋmædʒənətɪvnəs]",
     "zh": "n. 缺乏想象力，無創意：指一個人或事物缺乏創造力、想象力或新穎性。",
     "unit": 8,
     "example": "[n.] He tried to learn how to use the word unimaginativeness correctly.",
@@ -9331,7 +9331,7 @@ const synUnit8WordsDB = [
   {
     "id": 8037,
     "en": "blurriness",
-    "kk": "",
+    "kk": "[ˋblɝinəs]",
     "zh": "n. 模糊，模糊不清，模糊強度",
     "unit": 8,
     "example": "[n.] It is a good idea to blur the environment map to simulate the blurriness of a reflection.",
@@ -9439,7 +9439,7 @@ const synUnit8WordsDB = [
   {
     "id": 8049,
     "en": "deconsecration",
-    "kk": "",
+    "kk": "[͵di͵kɑnsəˋkreʃən]",
     "zh": "n. （宗教建築物的）還俗",
     "unit": 8,
     "example": "[n.] He tried to learn how to use the word deconsecration correctly.",
@@ -9592,7 +9592,7 @@ const synUnit8WordsDB = [
   {
     "id": 8066,
     "en": "ornateness",
-    "kk": "",
+    "kk": "[ɔrˋnetnəs]",
     "zh": "n. 華麗",
     "unit": 8,
     "example": "[n.] I love luxury. And luxury lies not in richness and ornateness but in the absence of vulgarity.",
@@ -9601,7 +9601,7 @@ const synUnit8WordsDB = [
   {
     "id": 8067,
     "en": "fanciness",
-    "kk": "",
+    "kk": "[ˋfænsinəs]",
     "zh": "n. 花俏；空想",
     "unit": 8,
     "example": "[n.] Snails with the shells that you put on the table, fanciness.",

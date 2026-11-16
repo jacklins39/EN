@@ -192,6 +192,11 @@ def clean_mnemonic_text(text: str) -> str:
         ("扩充", "擴充"),
         ("同义", "同義"),
         ("音标", "音標"),
+        ("聯想畫面", "聯想畫面"),
+        ("聯想畫麵", "聯想畫面"),
+        ("畫麵", "畫面"),
+        ("中枢", "中樞"),
+        ("与", "與"),
         ("画面", "畫面"),
         ("计划", "計畫"),
         ("体形", "體形"),
@@ -325,7 +330,7 @@ def audit_mnemonic(word: str, text: str) -> dict[str, Any]:
     if len(s.strip()) < MIN_MNEMONIC_LENGTH:
         return {"score": 0, "format": "invalid", "issues": ["too_short"]}
 
-    if re.search(r"聯型畫面|聯行畫面|联|画面|谐音|联想|扩充|同义|音标|记忆|发音|构造", s):
+    if re.search(r"聯型畫面|聯行畫面|聯想畫麵|畫麵|中枢|与|联|画面|谐音|联想|扩充|同义|音标|记忆|发音|构造", s):
         issues.append("format_typo")
         score -= 20
 

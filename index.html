@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261116V10';
+        const APP_BUILD_VERSION = '20261117V1';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -3622,9 +3622,9 @@
                 <div class="mt-8 pt-5 border-t border-slate-100 flex flex-col items-center justify-center text-center select-none">
                     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100/90 text-slate-500 text-xs font-mono font-medium">
                         <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-                        <span id="app-version-display">版本 20261116V10</span>
+                        <span id="app-version-display">版本 20261117V1</span>
                     </div>
-                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261116V10</p>
+                    <p id="app-build-display" class="text-[11px] text-slate-400 mt-1.5 font-mono">Build 20261117V1</p>
                 </div>
             </div>
         </div>
@@ -5626,6 +5626,83 @@ function cleanupMasteredMistakes() {
                 .replace(/`/g, '')
                 .replace(/\n{3,}/g, '\n\n')
                 .trim();
+        }
+
+        // 記憶技巧專屬安全 HTML 渲染器（相容「雙軌結構化 Markdown 記憶筆記」與「精簡 3 行格式」）
+        function formatMnemonicHtml(rawText) {
+            const raw = String(rawText || '').replace(/\r\n/g, '\n').trim();
+            if (!raw) return '';
+
+            const formatInline = (escaped) => {
+                return escaped
+                    .replace(/\*\*([^*]+?)\*\*/g, '<strong class="font-bold text-amber-950 bg-amber-100/75 px-1 rounded">$1</strong>')
+                    .replace(/`([^`]+)`/g, '<code class="px-1 py-0.5 rounded bg-slate-100 text-slate-800 font-mono text-xs">$1</code>')
+                    .replace(/(^|[\s（(「『【\[，,。：:])\*([^*\n<>]+?)\*(?=$|[\s）)」』】\]，,。：:；;！？!])/g, '$1<em class="italic font-serif text-slate-700">$2</em>');
+            };
+
+            const isStructured = /^[\t ]*#{2,4}[\t ]+/m.test(raw) || /^[\t ]*[\*\-][\t ]+/m.test(raw);
+            if (!isStructured) {
+                const blocks = raw.split(/\n{2,}/).map(b => b.trim()).filter(Boolean);
+                return blocks.map(block => {
+                    const safe = esc(block).replace(/\n/g, '<br>');
+                    const styled = safe.replace(
+                        /^((?:幽默諧音法|字根幽默拆解法|字根拆解法|拼字聯想法|幽默拆解法|發音聯想|構造聯想|記憶畫面)[：:])/,
+                        '<span class="font-bold text-amber-900">$1</span>'
+                    );
+                    return `<p class="leading-relaxed text-gray-800">${styled}</p>`;
+                }).join('');
+            }
+
+            const lines = raw.split('\n');
+            const out = [];
+            let sectionOpened = false;
+            const closeSection = () => {
+                if (sectionOpened) {
+                    out.push('</div>');
+                    sectionOpened = false;
+                }
+            };
+
+            for (let i = 0; i < lines.length; i++) {
+                const line = lines[i];
+                const trimmed = line.trim();
+                if (!trimmed) continue;
+
+                // 略過外層卡片已有標題的重複 ### 記憶技巧
+                if (/^#{1,3}\s*(?:\*\*)?\s*記憶技巧\s*(?:\*\*)?$/.test(trimmed)) continue;
+
+                // 小節標題 (#### 1. ... / #### 2. ... / ### ...)
+                const hMatch = trimmed.match(/^#{2,4}\s+(.+)$/);
+                if (hMatch) {
+                    closeSection();
+                    const isSec2 = /^2[\.、]/.test(hMatch[1].trim());
+                    const badgeCls = isSec2
+                        ? 'bg-emerald-50 text-emerald-900 border-emerald-200/80'
+                        : 'bg-amber-50/95 text-amber-950 border-amber-200/80';
+                    const icon = isSec2 ? '🌱' : '🎯';
+                    out.push(`<div class="rounded-xl border ${isSec2 ? 'border-emerald-200/70 bg-emerald-50/20' : 'border-amber-200/70 bg-amber-50/20'} p-2.5 space-y-1.5">`);
+                    out.push(`<div class="font-bold text-[13.5px] sm:text-[13px] ${badgeCls} border rounded-lg px-2.5 py-1 flex items-center gap-1.5"><span>${icon}</span><span>${formatInline(esc(hMatch[1].trim()))}</span></div>`);
+                    sectionOpened = true;
+                    continue;
+                }
+
+                // 條列與巢狀子畫面 / 脈絡
+                const bulletMatch = line.match(/^([\t ]*)[\*\-][\t ]+(.+)$/);
+                if (bulletMatch) {
+                    const indent = bulletMatch[1].replace(/\t/g, '  ').length;
+                    const contentHtml = formatInline(esc(bulletMatch[2].trim()));
+                    if (indent >= 2) {
+                        out.push(`<div class="ml-4 pl-2.5 border-l-2 border-amber-300/75 text-[13.5px] sm:text-[13px] text-slate-700 leading-relaxed">${contentHtml}</div>`);
+                    } else {
+                        out.push(`<div class="flex items-start gap-1.5 text-[14px] sm:text-[13.5px] text-gray-800 leading-relaxed"><span class="text-amber-500 font-bold shrink-0 mt-0.5">•</span><div class="flex-1 min-w-0">${contentHtml}</div></div>`);
+                    }
+                    continue;
+                }
+
+                out.push(`<p class="text-[14px] sm:text-[13.5px] text-gray-800 leading-relaxed">${formatInline(esc(trimmed))}</p>`);
+            }
+            closeSection();
+            return out.join('');
         }
 
         function syncNotesFromUserProgress() {
@@ -13536,7 +13613,7 @@ function cleanupMasteredMistakes() {
                     const mnemonicText = typeof getWordMnemonicText === 'function' ? getWordMnemonicText(w) : getWordNote(w);
                     const hasContent = Boolean(mnemonicText);
                     const displayContent = hasContent
-                        ? esc(mnemonicText)
+                        ? (typeof formatMnemonicHtml === 'function' ? formatMnemonicHtml(mnemonicText) : esc(mnemonicText))
                         : (!isShardLoaded ? '正在載入記憶技巧...' : '此單字尚未收錄記憶技巧。');
                     const textToneClass = hasContent ? 'text-gray-800' : 'text-slate-400 italic';
                     return `
@@ -13548,7 +13625,7 @@ function cleanupMasteredMistakes() {
                                 </div>
                             </div>
                             <div id="detail-word-note-view-wrap">
-                                <div id="detail-word-note-display" class="w-full text-[15px] sm:text-sm bg-white/95 ${textToneClass} rounded-xl px-3.5 py-2.5 border border-amber-200/80 leading-relaxed whitespace-pre-wrap break-words select-text">${displayContent}</div>
+                                <div id="detail-word-note-display" class="w-full text-[15px] sm:text-sm bg-white/95 ${textToneClass} rounded-xl px-3.5 py-2.5 border border-amber-200/80 space-y-2.5 leading-relaxed break-words select-text">${displayContent}</div>
                             </div>
                         </div>
                     `;
@@ -13590,7 +13667,7 @@ function cleanupMasteredMistakes() {
                     if (!el) return;
                     const loadedText = typeof getWordMnemonicText === 'function' ? getWordMnemonicText(w) : getWordNote(w);
                     if (loadedText) {
-                        el.textContent = loadedText;
+                        el.innerHTML = typeof formatMnemonicHtml === 'function' ? formatMnemonicHtml(loadedText) : esc(loadedText);
                         el.classList.remove('text-slate-400', 'italic');
                         el.classList.add('text-gray-800');
                     } else {

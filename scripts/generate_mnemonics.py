@@ -71,6 +71,7 @@ DEFAULT_THINKING_LEVEL = "low"
 DEFAULT_TEMPERATURE = 0.8
 DEFAULT_BATCH_SIZE = 6
 MAX_MNEMONIC_LENGTH = 800
+MAX_DUAL_MNEMONIC_LENGTH = 1500
 MIN_MNEMONIC_LENGTH = 35
 
 SYSTEM_INSTRUCTION = """你是一位深受台灣學生喜愛的英文諧音鬼才老師，擅長把英文單字變成「看一次就笑出來、一秒秒記字義」的超精簡 3 行幽默記憶卡！
@@ -170,6 +171,44 @@ def clean_mnemonic_text(text: str) -> str:
     if not isinstance(text, str):
         return ""
     s = text.replace("\r\n", "\n").replace("\r", "\n")
+
+    is_dual = bool(
+        re.search(r"^[\t ]*#{2,4}[\t ]*1[\.、]", s, flags=re.M)
+        and re.search(r"^[\t ]*#{2,4}[\t ]*2[\.、]", s, flags=re.M)
+    )
+    if is_dual:
+        for wrong, right in (
+            ("聯型畫面", "聯想畫面"),
+            ("聯行畫面", "聯想畫面"),
+            ("聯想画面", "聯想畫面"),
+            ("联型畫面", "聯想畫面"),
+            ("联想画面", "聯想畫面"),
+            ("记忆画面", "記憶畫面"),
+            ("发音联想", "發音聯想"),
+            ("构造联想", "構造聯想"),
+            ("聯想畫麵", "聯想畫面"),
+            ("畫麵", "畫面"),
+            ("中枢", "中樞"),
+            ("与", "與"),
+            ("联想", "聯想"),
+            ("谐音", "諧音"),
+            ("扩充", "擴充"),
+            ("同义", "同義"),
+            ("音标", "音標"),
+            ("画面", "畫面"),
+            ("计划", "計畫"),
+            ("体形", "體形"),
+            ("记忆", "記憶"),
+            ("拆解逻辑", "拆解邏輯"),
+            ("记忆脉络", "記憶脈絡"),
+            ("情境联想画面", "情境聯想畫面"),
+        ):
+            s = s.replace(wrong, right)
+        s = re.sub(r"\n{3,}", "\n\n", s).strip()
+        if len(s) > MAX_DUAL_MNEMONIC_LENGTH:
+            s = s[:MAX_DUAL_MNEMONIC_LENGTH].rstrip()
+        return s
+
     s = re.sub(r"(\*\*\*|___)(.*?)\1", r"\2", s)
     s = re.sub(r"(\*\*|__)(.*?)\1", r"\2", s)
     s = re.sub(r"`([^`]+)`", r"\1", s)
@@ -321,7 +360,7 @@ def _scene_connects_hook(hook_text: str, scene: str) -> bool:
     return has_cjk or has_root
 
 
-def audit_mnemonic(word: str, text: str) -> dict[str, Any]:
+def audit_mnemonic(word: str, text: str, allowed_zh: str = "") -> dict[str, Any]:
     """Return programmatic quality score (0..100), format type, and issue codes for one mnemonic."""
     issues: list[str] = []
     score = 100
@@ -334,9 +373,73 @@ def audit_mnemonic(word: str, text: str) -> dict[str, Any]:
         issues.append("format_typo")
         score -= 20
 
-    if _VULGAR_OR_UNLUCKY_RE.search(s):
-        issues.append("vulgar_or_unlucky")
-        score -= 40
+    vulg_hits = _VULGAR_OR_UNLUCKY_RE.findall(s)
+    if vulg_hits:
+        allowed_set = set(allowed_zh or "")
+        if allowed_set & {"死", "亡", "殺"}:
+            allowed_set |= {"死", "亡", "殺"}
+        real_hits = [h for h in vulg_hits if not (len(h) == 1 and h in allowed_set and h not in "妓娼婊")]
+        if real_hits:
+            issues.append("vulgar_or_unlucky")
+            score -= 40
+
+    is_dual = bool(
+        re.search(r"^[\t ]*#{2,4}[\t ]*1[\.、]", s, flags=re.M)
+        and re.search(r"^[\t ]*#{2,4}[\t ]*2[\.、]", s, flags=re.M)
+    )
+    if is_dual:
+        sec2_m = re.search(r"^[\t ]*#{2,4}[\t ]*2[\.、]", s, flags=re.M)
+        sec1_text = s[: sec2_m.start()] if sec2_m else s
+        sec2_text = s[sec2_m.start() :] if sec2_m else ""
+        if "趣味諧音" not in sec1_text or "情境聯想畫面" not in sec1_text:
+            issues.append("missing_dual_sec1_fields")
+            score -= 25
+        if "記憶脈絡" not in sec2_text or not re.search(r"(?:拆解邏輯|語意核心|記憶錨點)", sec2_text):
+            issues.append("missing_dual_sec2_fields")
+            score -= 25
+        hook_m = re.search(r"趣味諧音[：:]\s*([^\n]+)", sec1_text)
+        scene_m = re.search(r"情境聯想畫面[：:]\s*([\s\S]+)$", sec1_text)
+        hook_line = hook_m.group(1) if hook_m else ""
+        sec1_scenes = scene_m.group(1) if scene_m else ""
+        if hook_line and sec1_scenes:
+            hook_quotes = re.findall(r"「([^」]{2,20})」", hook_line)
+            if hook_quotes:
+                for q in hook_quotes:
+                    if re.search(r"[a-zA-Z]", q):
+                        issues.append("non_cjk_in_hook")
+                        score -= 35
+                        break
+                    if not _scene_connects_hook(f"「{q}」", sec1_scenes):
+                        issues.append("scene1_disconnected")
+                        score -= 35
+                        break
+                    if len(q) >= 2 and q in sec2_text:
+                        issues.append("phonetic_leak_in_sec2")
+                        score -= 25
+                        break
+                if len(hook_quotes) == 1 and "畫面 2" in sec1_scenes:
+                    issues.append("duplicate_scene_hook")
+                    score -= 20
+            elif not _scene_connects_hook(hook_line, sec1_scenes):
+                issues.append("scene1_disconnected")
+                score -= 35
+        if re.search(r"[（(](?:音節|音)[）)]", s):
+            issues.append("placeholder_leak")
+            score -= 20
+        if len(s.strip()) < 80:
+            issues.append("too_short_dual")
+            score -= 30
+        if _has_fake_person_trope(hook_line, s):
+            issues.append("name_person_trope")
+            score -= 40
+        # Check for unbalanced bold markers per line or stray HTML
+        if any(ln.count("**") % 2 != 0 for ln in s.splitlines()):
+            issues.append("unbalanced_markdown")
+            score -= 15
+        if sec1_text.count("「") != sec1_text.count("」") or s.count("（") != s.count("）") or s.count("(") != s.count(")"):
+            issues.append("unbalanced_brackets")
+            score -= 15
+        return {"score": max(0, score), "format": "dual_track", "issues": issues}
 
     is_compact = bool(
         re.match(r"^(?:幽默諧音法|字根幽默拆解法|字根拆解法|拼字聯想法|幽默拆解法)[：:]", s)
@@ -1141,20 +1244,30 @@ def fix_all_shards_format(mnemonics_dir: Path = MNEMONICS_DIR) -> dict[str, int]
 def audit_all_shards(
     mnemonics_dir: Path = MNEMONICS_DIR,
     max_score: int = 79,
+    catalog: dict[str, dict[str, Any]] | None = None,
 ) -> dict[str, Any]:
     """Audit all loaded shard entries and return issue summary + weak/legacy keys."""
     shard_map = load_all_shards(mnemonics_dir)
+    if catalog is None:
+        try:
+            catalog = load_vocab_metadata(BASE_DIR)
+        except Exception:
+            catalog = {}
     issue_counts: dict[str, int] = {}
     weak: list[tuple[int, str, list[str]]] = []
     legacy_keys: list[str] = []
     total = 0
+    dual_count = 0
     compact_count = 0
     score_ge80 = 0
     for shard_entries in shard_map.values():
         for key, val in shard_entries.items():
             total += 1
-            rep = audit_mnemonic(key, val)
-            if rep.get("format") == "compact":
+            rep = audit_mnemonic(key, val, allowed_zh=(catalog.get(key, {}).get("zh") or ""))
+            fmt = rep.get("format")
+            if fmt == "dual_track":
+                dual_count += 1
+            elif fmt == "compact":
                 compact_count += 1
             else:
                 legacy_keys.append(key)
@@ -1168,6 +1281,7 @@ def audit_all_shards(
     legacy_keys.sort()
     return {
         "total": total,
+        "dual_count": dual_count,
         "compact_count": compact_count,
         "legacy_count": len(legacy_keys),
         "score_ge80": score_ge80,
@@ -1340,8 +1454,8 @@ def main(argv: list[str] | None = None) -> int:
     if args.audit:
         rep = audit_all_shards(MNEMONICS_DIR, max_score=args.max_score)
         print(
-            f"[audit] total={rep['total']} | compact_3line={rep['compact_count']} | legacy_6part={rep['legacy_count']} | "
-            f"score>=80: {rep['score_ge80']} | weak (score<={args.max_score}): {rep['weak_count']}"
+            f"[audit] total={rep['total']} | dual_track={rep['dual_count']} | compact_3line={rep['compact_count']} | "
+            f"legacy_6part={rep['legacy_count']} | score>=80: {rep['score_ge80']} | weak (score<={args.max_score}): {rep['weak_count']}"
         )
         print(f"  issues: {rep['issue_counts']}")
         print("  worst samples:")

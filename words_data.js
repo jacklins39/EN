@@ -10314,10 +10314,10 @@ const externalVocabularyDB = [
         "en": "bony",
         "kk": "[ˋboni]",
         "uk": "/ˈbəʊni/",
-        "zh": "adj. 瘦骨嶙峋的、多刺的、骨製的",
+        "zh": "adj. 瘦削的、多骨的、瘦骨嶙峋的、骨質的、似骨的",
         "unit": 2,
         "example": "[adj.] The old man has very bony hands.",
-        "exampleZh": "那位老人有一雙骨瘦如柴的手。"
+        "exampleZh": "那位老人有一雙瘦削多骨的手。"
     },
     {
         "id": 1033,

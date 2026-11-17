@@ -24,6 +24,9 @@ import urllib.request
 from pathlib import Path
 from typing import Any
 
+if os.name == "nt":
+    import msvcrt
+
 import opencc
 from nltk.corpus import wordnet as wn
 
@@ -43,7 +46,7 @@ import kk_hook_helper as kh
 DEFAULT_OLLAMA_URL = os.environ.get("OLLAMA_HOST", "http://127.0.0.1:11434").rstrip("/")
 DEFAULT_LOCAL_MODEL = "qwen3:8b"
 
-S2TW = opencc.OpenCC("s2t")
+S2TW = opencc.OpenCC("s2tw")
 
 # True historical/etymological ground-truth anchors for classic non-obvious English words
 CURATED_ETYMOLOGY: dict[str, str] = {
@@ -79,11 +82,11 @@ DUAL_SYSTEM_PROMPT = """你是一位台灣極受歡迎、治學嚴謹又幽默�
 
 【鐵律】
 1. 絕對使用台灣繁體中文，嚴禁用簡體字（不可寫 画面/记忆/联想/谐音/拆解逻辑/脉络/与/这）。
-2. 「趣味諧音」必須全是繁體中文（嚴禁夾雜英文或 -us 這類音標字母），貼緊 KK 音標，且每組諧音僅寫一幕對應畫面（1 組諧音只寫「畫面 1」，2 組不同諧音才寫「畫面 1」與「畫面 2」）。
-3. 禁止說教水詞（「在課堂上老師講到…」「代表他很努力…」）與占位符標籤（「（音節）」「（幫忙）」）。
-4. 情境聯想必須忠實表達【中文釋義】，絕不可把諧音字誤用為詞義（例如不可把 *abettance*「坦絲」寫成「坦白」而非「教唆」）；且 `#### 2.` 中**嚴禁再提到 `#### 1.` 的中文諧音**！
-5. **嚴禁捏造詞源**：若沒有把握該字的真實古語／拉丁／希臘源流（或未在提示中提供），一律改用 `* 記憶錨點：` 寫真實詞族（如 *cut → cutter → cutters*）、拼字特徵或高頻片語，絕不瞎編假古英語字根或「某字母長得像某物」、「某尾音代表形狀」。
-6. 禁止血腥、粗俗字眼（如 死/殺/屍/屁/屎/鬼）及「名叫XX的人」假人名套路；保留 `#### 1.`、`#### 2.`、`**粗體**` 與 `*` / `  *` 條列縮排，絕不輸出 `### 記憶技巧`。
+2. 「趣味諧音」必須**全部使用純繁體中文字**，嚴禁夾雜任何英文字母 A–Z（例：*able* 不可寫「A 伯」，只能寫「欸伯」）；每組諧音只寫一幕畫面（1 組只寫畫面 1；2 組不同諧音才寫畫面 1 與畫面 2）。
+3. 禁止說教水詞、堆疊逐字括號翻譯（不可寫「額（我）爸（爸）扶（扶著）」或「腦內自動浮現／課堂上老師講到」），也不可輸出「（音節）」「（幫忙）」等標籤。
+4. 情境聯想必須忠實表達【中文釋義】，絕不可把諧音字誤用為詞義；且 `#### 2.` 中**嚴禁再提到 `#### 1.` 的中文諧音**！
+5. **嚴禁捏造詞源或亂引古語**：對於介系詞、連接詞、日常短字或提示中未提供明確詞源時，**絕不可自創「來自拉丁語 *xxx*」「源自古英語 *xxx*」「某詞的變體」**！找不到 100% 確定的字根拆解就直接改寫 `* 記憶錨點：`（高頻片語搭配、空間/反義對比 *above ↔ below*、或真實英語原型關係）。
+6. 禁止血腥、粗俗字眼及「名叫XX的人」假人名套路；保留 `#### 1.`、`#### 2.`、`**粗體**` 與 `*` / `  *` 條列縮排，絕不輸出 `### 記憶技巧`。
 
 【範例一（有真實字源／拆解的單字）】
 #### 1. 諧音聯想法（適合快速圖像掛鉤）
@@ -122,7 +125,9 @@ def _extract_existing_hints(existing_text: str) -> dict[str, str]:
         return hints
     m_hk = re.search(r"幽默諧音法[：:]\s*「([^」]+)」", existing_text)
     if m_hk:
-        hints["existing_hook"] = m_hk.group(1).strip()
+        hk = m_hk.group(1).strip()
+        if not re.search(r"[A-Za-z]", hk):
+            hints["existing_hook"] = hk
     m_rt = re.search(r"字根幽默拆解法[：:]\s*([^\n]+)", existing_text)
     if m_rt:
         hints["existing_roots"] = m_rt.group(1).strip()
@@ -272,6 +277,67 @@ def verify_ollama_ready(base_url: str, model: str) -> None:
         raise RuntimeError(f"Ollama 尚未下載模型 '{model}'（目前已安裝：{installed}）")
 
 
+def _acquire_single_instance_lock() -> Any:
+    """Prevent concurrent background/scheduled runs from racing on shards."""
+    lock_dir = BASE_DIR / "tmp"
+    lock_dir.mkdir(parents=True, exist_ok=True)
+    lock_path = lock_dir / "compile_dual.lock"
+    fh = lock_path.open("a+", encoding="utf-8")
+    if os.name == "nt":
+        try:
+            fh.seek(0)
+            msvcrt.locking(fh.fileno(), msvcrt.LK_NBLCK, 1)
+        except OSError:
+            fh.close()
+            return None
+    fh.seek(0)
+    fh.truncate()
+    fh.write(str(os.getpid()))
+    fh.flush()
+    return fh
+
+
+def _load_failed_words() -> set[str]:
+    fail_log_path = BASE_DIR / "tmp" / "local_compile_failures.jsonl"
+    if not fail_log_path.is_file():
+        return set()
+    bad: set[str] = set()
+    for line in fail_log_path.read_text(encoding="utf-8", errors="replace").splitlines():
+        try:
+            obj = json.loads(line)
+            if obj.get("word"):
+                bad.add(str(obj["word"]).strip().lower())
+        except Exception:
+            pass
+    return bad
+
+
+def _collect_pending(
+    targets: list[dict[str, Any]],
+    shards: dict[str, dict[str, str]],
+    *,
+    resume: bool,
+    skip_failed: bool = False,
+) -> tuple[list[dict[str, Any]], int]:
+    todo: list[dict[str, Any]] = []
+    skipped = 0
+    failed_set = _load_failed_words() if skip_failed else set()
+    for item in targets:
+        key = item["key"]
+        if key in failed_set:
+            skipped += 1
+            continue
+        sh = gm.shard_for_word(key)
+        cur = shards.get(sh, {}).get(key, "")
+        if resume and cur and "#### 1." in cur and "#### 2." in cur:
+            rep = gm.audit_mnemonic(key, cur, allowed_zh=item.get("zh") or "")
+            if rep.get("format") == "dual_track" and rep.get("score") == 100:
+                skipped += 1
+                continue
+        todo.append(item)
+    return todo, skipped
+
+
 def compile_entries(
     targets: list[dict[str, Any]],
     *,
@@ -282,20 +348,10 @@ def compile_entries(
     save_every: int,
     temperature: float,
     timeout: float,
+    skip_failed: bool = False,
 ) -> dict[str, Any]:
     shards = gm.load_all_shards(gm.MNEMONICS_DIR)
-    todo: list[dict[str, Any]] = []
-    skipped = 0
-    for item in targets:
-        key = item["key"]
-        sh = gm.shard_for_word(key)
-        cur = shards.get(sh, {}).get(key, "")
-        if resume and cur:
-            rep = gm.audit_mnemonic(key, cur, allowed_zh=item.get("zh") or "")
-            if rep.get("format") == "dual_track" and rep.get("score") == 100:
-                skipped += 1
-                continue
-        todo.append(item)
+    todo, skipped = _collect_pending(targets, shards, resume=resume, skip_failed=skip_failed)
 
     print(
         f"[plan] model={model} | targets={len(targets)} | already_dual_track={skipped} | todo={len(todo)} | dry_run={dry_run}"
@@ -339,11 +395,29 @@ def compile_entries(
 
             cand = _normalize_dual_output(raw)
             rep = gm.audit_mnemonic(key, cand, allowed_zh=meta.get("zh") or "")
+            has_ungrounded_etym = (
+                len(key) <= 6
+                and key not in CURATED_ETYMOLOGY
+                and not _extract_existing_hints(cur).get("existing_roots")
+                and bool(re.search(r"(?:來自|源自)(?:拉丁|古英語|古諾斯|古法|希臘)語", cand))
+            )
+            if has_ungrounded_etym:
+                rep["issues"].append("ungrounded_dead_language_etymology")
+                rep["score"] = min(rep["score"], 70)
             if rep.get("format") == "dual_track" and rep.get("score") == 100 and not rep.get("issues"):
                 accepted_text = cand
                 break
             last_issues = list(rep.get("issues") or [f"format={rep.get('format')},score={rep.get('score')}"])
-            retry_note = f"上一次輸出未通過檢查：{last_issues}。請確保使用純繁體中文、保留 #### 1. 與 #### 2.、趣味諧音字元有出現於畫面 1/2 中，並避免粗俗與簡體字。"
+            extra_fix = ""
+            if "non_cjk_in_hook" in last_issues:
+                extra_fix = " 注意：「趣味諧音」不可包含任何英文字母 A-Z（例如不可寫「A 伯」），必須全部是純繁體中文！"
+            elif "phonetic_leak_in_sec2" in last_issues:
+                extra_fix = " 注意：#### 2. 裡不可再次出現 #### 1. 的中文諧音詞！"
+            elif "placeholder_leak" in last_issues:
+                extra_fix = " 注意：不可寫「腦內自動浮現」「腦海浮現」「（音節）」等套語！"
+            elif "ungrounded_dead_language_etymology" in last_issues:
+                extra_fix = " 注意：請勿在 #### 2. 編造「來自拉丁語／古英語／古法語」，直接改寫高頻片語搭配、反義詞對比或現代構詞關係即可！"
+            retry_note = f"上一次輸出未通過檢查：{last_issues}。{extra_fix}請確保使用純繁體中文、保留 #### 1. 與 #### 2.、諧音字元真實出現於畫面 1/2 中。"
 
         dt = time.monotonic() - t0
         times.append(dt)
@@ -389,12 +463,13 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--limit", type=int, default=0, help="Only process N entries")
     parser.add_argument("--no-resume", action="store_true", help="Recompile even if already dual_track score=100")
     parser.add_argument("--dry-run", action="store_true", help="Print outputs without writing shards")
+    parser.add_argument("--check-pending", action="store_true", help="Report pending count without running Ollama")
+    parser.add_argument("--skip-failed", action="store_true", help="Skip words previously logged in tmp/local_compile_failures.jsonl")
     parser.add_argument("--save-every", type=int, default=1, help="Flush dirty shards every N successes (default: 1)")
     parser.add_argument("--temperature", type=float, default=0.45, help="Ollama temperature (default: 0.45)")
-    parser.add_argument("--timeout", type=float, default=90.0, help="Per-word request timeout seconds")
+    parser.add_argument("--timeout", type=float, default=120.0, help="Per-word request timeout seconds")
     args = parser.parse_args(argv)
 
-    verify_ollama_ready(args.url, args.model)
     catalog = gm.load_vocab_metadata(BASE_DIR)
 
     if args.words:
@@ -415,18 +490,40 @@ def main(argv: list[str] | None = None) -> int:
     if args.limit > 0:
         targets = targets[: args.limit]
 
-    res = compile_entries(
-        targets,
-        model=args.model,
-        base_url=args.url,
-        resume=not args.no_resume,
-        dry_run=args.dry_run,
-        save_every=max(1, args.save_every),
-        temperature=args.temperature,
-        timeout=args.timeout,
-    )
-    print(f"[done] ok={res['ok']} failed={len(res['failed'])} skipped={res['skipped']}")
-    return 0 if not res["failed"] else 1
+    if args.check_pending:
+        shards = gm.load_all_shards(gm.MNEMONICS_DIR)
+        todo, skipped = _collect_pending(targets, shards, resume=not args.no_resume, skip_failed=args.skip_failed)
+        print(f"PENDING={len(todo)} DONE={skipped} TOTAL={len(targets)}")
+        return 0
+
+    lock_fh = None
+    if not args.dry_run:
+        lock_fh = _acquire_single_instance_lock()
+        if lock_fh is None:
+            print("[skip] another compile_local_mnemonics instance is already running.")
+            return 0
+
+    try:
+        verify_ollama_ready(args.url, args.model)
+        res = compile_entries(
+            targets,
+            model=args.model,
+            base_url=args.url,
+            resume=not args.no_resume,
+            dry_run=args.dry_run,
+            save_every=max(1, args.save_every),
+            temperature=args.temperature,
+            timeout=args.timeout,
+            skip_failed=args.skip_failed,
+        )
+        print(f"[done] ok={res['ok']} failed={len(res['failed'])} skipped={res['skipped']}")
+        return 0 if not res["failed"] else 1
+    finally:
+        if lock_fh is not None:
+            try:
+                lock_fh.close()
+            except Exception:
+                pass
 
 
 if __name__ == "__main__":

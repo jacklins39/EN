@@ -423,7 +423,7 @@ def audit_mnemonic(word: str, text: str, allowed_zh: str = "") -> dict[str, Any]
             elif not _scene_connects_hook(hook_line, sec1_scenes):
                 issues.append("scene1_disconnected")
                 score -= 35
-        if re.search(r"[（(](?:音節|音)[）)]", s):
+        if re.search(r"[（(](?:音節|音)[）)]", s) or re.search(r"(?:腦內自動浮現|腦海浮現|聯想到「|順著「[^」]+」的諧音)", s):
             issues.append("placeholder_leak")
             score -= 20
         if len(s.strip()) < 80:

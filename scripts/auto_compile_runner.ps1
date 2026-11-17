@@ -94,7 +94,7 @@ try {
     Write-AutoLog "Launching compile_local_mnemonics.py --all --save-every 5 (SkipFailed=$SkipFailed)"
     $runArgs = @($CompilerScript, "--all", "--save-every", "5")
     if ($SkipFailed) { $runArgs += "--skip-failed" }
-    & $PyExe @runArgs *>> $AutoLog
+    & $PyExe @runArgs 2>&1 | ForEach-Object { $_ | Out-File -FilePath $AutoLog -Append -Encoding utf8 }
     $exitCode = $LASTEXITCODE
     Write-AutoLog "Compiler exited with code=$exitCode"
 

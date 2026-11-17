@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261117V1';
+        const APP_BUILD_VERSION = '20261117V2';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -2767,12 +2767,12 @@
                     <div class="bg-gradient-to-br from-purple-50/90 to-purple-50/30 border border-purple-100/80 hover:border-purple-200 rounded-2xl p-3.5 sm:p-4 text-center hover:shadow-xs transition-all flex flex-col justify-between">
                         <div class="text-[11px] sm:text-xs font-bold text-purple-700 mb-1">累計穩固單字</div>
                         <div id="analysis-stat-level3" class="text-2xl sm:text-3xl font-black text-purple-600 tracking-tight whitespace-nowrap">0</div>
-                        <div id="analysis-stat-level3-sub" class="text-[10px] sm:text-[11px] text-slate-500 mt-1 whitespace-nowrap font-medium">LV3 穩固掌握</div>
+                        <div id="analysis-stat-level3-sub" class="text-[10px] sm:text-[11px] text-slate-500 mt-1 whitespace-nowrap font-medium">LV3+ 以上 · 佔已學 0%</div>
                     </div>
                     <div class="bg-gradient-to-br from-emerald-50/90 to-emerald-50/30 border border-emerald-100/80 hover:border-emerald-200 rounded-2xl p-3.5 sm:p-4 text-center hover:shadow-xs transition-all flex flex-col justify-between">
                         <div class="text-[11px] sm:text-xs font-bold text-emerald-700 mb-1">累計熟練單字</div>
                         <div id="analysis-stat-mastered" class="text-2xl sm:text-3xl font-black text-emerald-600 tracking-tight whitespace-nowrap">0</div>
-                        <div id="analysis-stat-mastered-sub" class="text-[10px] sm:text-[11px] text-slate-500 mt-1 whitespace-nowrap font-medium">LV5 熟練掌握</div>
+                        <div id="analysis-stat-mastered-sub" class="text-[10px] sm:text-[11px] text-slate-500 mt-1 whitespace-nowrap font-medium">LV5 熟練 · 佔已學 0%</div>
                     </div>
                     <div class="col-span-2 sm:col-span-1 bg-gradient-to-br from-amber-50/90 to-amber-50/30 border border-amber-100/80 hover:border-amber-200 rounded-2xl p-3.5 sm:p-4 text-center hover:shadow-xs transition-all flex flex-col justify-between">
                         <div class="text-[11px] sm:text-xs font-bold text-amber-700 mb-1">日均消化量</div>
@@ -14585,13 +14585,13 @@ function cleanupMasteredMistakes() {
             if (elLevel3) elLevel3.innerText = `${totalLevel3} 字`;
             if (elLevel3Sub) {
                 const pct = totalCumulative > 0 ? Math.round((totalLevel3 / totalCumulative) * 100) : 0;
-                elLevel3Sub.innerText = `LV3 穩固期 · ${pct}%`;
+                elLevel3Sub.innerText = `LV3+ 以上 · 佔已學 ${pct}%`;
             }
 
             if (elMastered) elMastered.innerText = `${totalMastered} 字`;
             if (elMasteredSub) {
                 const pct = totalCumulative > 0 ? Math.round((totalMastered / totalCumulative) * 100) : 0;
-                elMasteredSub.innerText = `LV5 熟練掌握 · ${pct}%`;
+                elMasteredSub.innerText = `LV5 熟練 · 佔已學 ${pct}%`;
             }
 
             if (elAvg) elAvg.innerText = `${avgDaily} 字`;
@@ -14654,7 +14654,7 @@ function cleanupMasteredMistakes() {
                         },
                         {
                             type: 'line',
-                            label: isGlobal ? '全庫累計穩固 (LV3 掌握)' : '累計穩固掌握 (LV3 掌握)',
+                            label: isGlobal ? '全庫累計穩固 (LV3+ 以上)' : '累計穩固掌握 (LV3+ 以上)',
                             data: viewLevel3,
                             hidden: getChartSeriesHidden('level3'),
                             borderColor: '#A855F7',

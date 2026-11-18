@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261118V1';
+        const APP_BUILD_VERSION = '20261118V2';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -2875,15 +2875,15 @@
         <div id="view-study" class="w-full hidden">
             <!-- 進度與控制列 (防跑格、防折行架構) -->
             <div class="w-full mb-3.5 sm:mb-4 select-none">
-                <div class="flex items-center justify-between gap-2 mb-1.5">
+                <div class="flex flex-wrap items-center justify-between gap-x-2 gap-y-1.5 mb-1.5">
                     <!-- 左側資訊：進度數字 + 連勝徽章 (並排顯示，不折行) -->
                     <div class="flex items-center gap-1.5 min-w-0">
                         <span class="text-xs font-bold text-slate-800 font-mono shrink-0" id="session-progress-text">進度: 0/10</span>
                         <span id="session-combo-badge" class="hidden inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] sm:text-[11px] font-bold bg-gradient-to-r from-rose-500 via-orange-500 to-amber-500 text-white shadow-2xs whitespace-nowrap shrink-0">🔥 連對 2</span>
                     </div>
 
-                    <!-- 右側控制按鈕：強制 shrink-0 與 whitespace-nowrap，絕不被壓縮折行 -->
-                    <div class="flex items-center gap-1.5 shrink-0 whitespace-nowrap">
+                    <!-- 右側控制按鈕：支援極窄手機自動換行防裁切 -->
+                    <div class="flex items-center gap-1.5 shrink-0 whitespace-nowrap ml-auto">
                         <div id="study-loop-wrap" class="hidden flex items-center gap-1 bg-slate-100 hover:bg-slate-200/80 px-2 py-1 rounded-xl whitespace-nowrap shrink-0 transition-colors" title="切換輪播次數或無限循環">
                             <span class="text-xs text-slate-500 font-medium select-none">🔁</span>
                             <select id="study-auto-loops" aria-label="輪播次數" class="text-xs text-[#0071E3] font-bold bg-transparent outline-none cursor-pointer">
@@ -3045,6 +3045,13 @@
                         </div> <!-- close lg:grid -->
                     </div>
                 </div>
+            </div>
+
+            <!-- 手機版/平板專屬輪播觸控列 (< 1024px 輪播模式顯示，解決手機無法按暫停/上下首) -->
+            <div id="mobile-autoplay-controls" class="hidden lg:hidden w-full grid grid-cols-3 gap-2 mb-3 select-none">
+                <button type="button" onclick="handleQueueNav(-1)" class="py-2.5 px-2 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200/80 dark:border-slate-700 active:scale-95 text-xs font-semibold text-slate-700 dark:text-slate-300 transition-all cursor-pointer">⏮ 上一個</button>
+                <button type="button" id="btn-mobile-queue-pause" onclick="toggleAutoFlashcardPause()" class="py-2.5 px-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 active:scale-95 text-xs font-bold text-white shadow-xs transition-all cursor-pointer">⏸ 暫停</button>
+                <button type="button" onclick="handleQueueNav(1)" class="py-2.5 px-2 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200/80 dark:border-slate-700 active:scale-95 text-xs font-semibold text-slate-700 dark:text-slate-300 transition-all cursor-pointer">⏭ 下一個</button>
             </div>
 
             <!-- 輪播/溫習單字鏈走馬燈佇列 (Queue Strip) -->
@@ -4683,11 +4690,32 @@
         let autoFlashcardCurrentLoop = 1;
         let autoFlashcardBaseWords = [];
 
+        function syncAutoPauseButtonsUI(paused) {
+            const btn = document.getElementById('btn-queue-pause');
+            const mBtn = document.getElementById('btn-mobile-queue-pause');
+            const cls = paused
+                ? 'rounded-xl bg-blue-600 hover:bg-blue-500 text-xs font-bold text-white shadow-xs transition-all cursor-pointer active:scale-95'
+                : 'rounded-xl bg-emerald-600 hover:bg-emerald-500 text-xs font-bold text-white shadow-xs transition-all cursor-pointer active:scale-95';
+            if (btn) {
+                btn.innerText = paused ? '▶ 繼續 (Space)' : '⏸ 暫停 (Space)';
+                btn.className = 'px-4 py-1.5 ' + cls;
+            }
+            if (mBtn) {
+                mBtn.innerText = paused ? '▶ 繼續' : '⏸ 暫停';
+                mBtn.className = 'py-2.5 px-2 ' + cls;
+            }
+        }
+
         function updateAutoLoopStatusUI() {
             const loopWrap = document.getElementById('study-loop-wrap');
             if (loopWrap) {
                 if (isAutoFlashcardMode) loopWrap.classList.remove('hidden');
                 else loopWrap.classList.add('hidden');
+            }
+            const mobileControls = document.getElementById('mobile-autoplay-controls');
+            if (mobileControls) {
+                if (isAutoFlashcardMode) mobileControls.classList.remove('hidden');
+                else mobileControls.classList.add('hidden');
             }
             if (!isAutoFlashcardMode) return;
             const queueTypeEl = document.getElementById('session-queue-type');
@@ -4735,11 +4763,7 @@
             const norm = formatAutoPlayLoopsStr(globalAutoPlayLoops);
             autoFlashcardMaxLoops = parseInt(norm, 10) || 0;
             isAutoFlashcardPaused = false;
-            const pauseBtn = document.getElementById('btn-queue-pause');
-            if (pauseBtn) {
-                pauseBtn.innerText = '⏸ 暫停 (Space)';
-                pauseBtn.className = 'px-4 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-xs font-bold text-white shadow-xs transition-all cursor-pointer active:scale-95';
-            }
+            syncAutoPauseButtonsUI(false);
             const studyLoopsEl = document.getElementById('study-auto-loops');
             if (studyLoopsEl) studyLoopsEl.value = norm;
         }
@@ -7903,15 +7927,11 @@ function cleanupMasteredMistakes() {
         }
 
         function toggleAutoFlashcardPause() {
-            const btn = document.getElementById('btn-queue-pause');
             const statusEl = document.getElementById('queue-status-text');
             if (isAutoFlashcardPaused) {
                 // 恢復播放
                 isAutoFlashcardPaused = false;
-                if (btn) {
-                    btn.innerText = '⏸ 暫停 (Space)';
-                    btn.className = 'px-4 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-xs font-bold text-white shadow-xs transition-all cursor-pointer active:scale-95';
-                }
+                syncAutoPauseButtonsUI(false);
                 updateAutoLoopStatusUI();
                 nextCard();
             } else {
@@ -7919,10 +7939,7 @@ function cleanupMasteredMistakes() {
                 isAutoFlashcardPaused = true;
                 if (autoFlashcardTimerId) clearTimeout(autoFlashcardTimerId);
                 if (autoNextTimerId) clearTimeout(autoNextTimerId);
-                if (btn) {
-                    btn.innerText = '▶ 繼續 (Space)';
-                    btn.className = 'px-4 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-xs font-bold text-white shadow-xs transition-all cursor-pointer active:scale-95';
-                }
+                syncAutoPauseButtonsUI(true);
                 if (statusEl) statusEl.innerText = '已暫停輪播 · 待命';
             }
         }
@@ -19208,6 +19225,8 @@ function cleanupMasteredMistakes() {
             isAutoPlaying: false,
             autoPlayInterval: 4000,
             autoPlayTimer: null,
+            autoPlayLoops: '1',
+            autoPlayCurrentLoop: 1,
             // 拼寫提示
             fillHintCount: 1,
             fillFeedback: null
@@ -19357,6 +19376,8 @@ function cleanupMasteredMistakes() {
             listeningSandboxState.fillHintCount = 1;
             listeningSandboxState.fillFeedback = null;
             listeningSandboxState.isAutoPlaying = false;
+            listeningSandboxState.autoPlayLoops = formatAutoPlayLoopsStr(globalAutoPlayLoops);
+            listeningSandboxState.autoPlayCurrentLoop = 1;
             clearSandboxQuestionCache();
 
             // 預設篩選：若有劃線與內建則選 all；若只有其中一種則自動匹配
@@ -19457,6 +19478,15 @@ function cleanupMasteredMistakes() {
             if (listeningSandboxState.mode !== 'card') {
                 setListeningSandboxMode('card');
             }
+            if (listeningSandboxState.isCompleted) {
+                listeningSandboxState.isCompleted = false;
+                listeningSandboxState.currentIndex = 0;
+                listeningSandboxState.isFlipped = false;
+                listeningSandboxState.autoPlayCurrentLoop = 1;
+                renderListeningSandboxModal();
+            } else if (!listeningSandboxState.autoPlayCurrentLoop) {
+                listeningSandboxState.autoPlayCurrentLoop = 1;
+            }
             listeningSandboxState.isAutoPlaying = true;
             renderListeningSandboxToolbar();
             runListeningSandboxAutoPlayStep();
@@ -19479,6 +19509,35 @@ function cleanupMasteredMistakes() {
             }
         }
 
+        function changeListeningSandboxLoops(val) {
+            const norm = formatAutoPlayLoopsStr(val);
+            listeningSandboxState.autoPlayLoops = norm;
+            setAutoPlayLoops(norm);
+            renderListeningSandboxToolbar();
+        }
+
+        function advanceOrLoopListeningSandbox() {
+            if (listeningSandboxState.currentIndex < listeningSandboxState.words.length - 1) {
+                nextListeningSandboxCard();
+                runListeningSandboxAutoPlayStep();
+                return;
+            }
+            const maxLoops = parseInt(formatAutoPlayLoopsStr(listeningSandboxState.autoPlayLoops), 10) || 0;
+            if (listeningSandboxState.words.length > 0 && (maxLoops === 0 || listeningSandboxState.autoPlayCurrentLoop < maxLoops)) {
+                listeningSandboxState.autoPlayCurrentLoop++;
+                listeningSandboxState.currentIndex = 0;
+                listeningSandboxState.isFlipped = false;
+                clearSandboxQuestionCache();
+                renderListeningSandboxModal();
+                runListeningSandboxAutoPlayStep();
+                return;
+            }
+            stopListeningSandboxAutoPlay();
+            listeningSandboxState.autoPlayCurrentLoop = 1;
+            listeningSandboxState.isCompleted = true;
+            renderListeningSandboxModal();
+        }
+
         function runListeningSandboxAutoPlayStep() {
             if (!listeningSandboxState.isAutoPlaying || !listeningSandboxState.isOpen) return;
             const cur = listeningSandboxState.words[listeningSandboxState.currentIndex];
@@ -19497,28 +19556,14 @@ function cleanupMasteredMistakes() {
                     // 背面：等待並前進
                     listeningSandboxState.autoPlayTimer = setTimeout(() => {
                         if (!listeningSandboxState.isAutoPlaying) return;
-                        if (listeningSandboxState.currentIndex < listeningSandboxState.words.length - 1) {
-                            nextListeningSandboxCard();
-                            runListeningSandboxAutoPlayStep();
-                        } else {
-                            stopListeningSandboxAutoPlay();
-                            listeningSandboxState.isCompleted = true;
-                            renderListeningSandboxModal();
-                        }
+                        advanceOrLoopListeningSandbox();
                     }, halfTime);
                 }, halfTime);
             } else {
                 // 已在背面：等待切下一張
                 listeningSandboxState.autoPlayTimer = setTimeout(() => {
                     if (!listeningSandboxState.isAutoPlaying) return;
-                    if (listeningSandboxState.currentIndex < listeningSandboxState.words.length - 1) {
-                        nextListeningSandboxCard();
-                        runListeningSandboxAutoPlayStep();
-                    } else {
-                        stopListeningSandboxAutoPlay();
-                        listeningSandboxState.isCompleted = true;
-                        renderListeningSandboxModal();
-                    }
+                    advanceOrLoopListeningSandbox();
                 }, halfTime);
             }
         }
@@ -19532,6 +19577,12 @@ function cleanupMasteredMistakes() {
             if (mode === 'card') {
                 const isPlaying = listeningSandboxState.isAutoPlaying;
                 const spd = listeningSandboxState.autoPlayInterval || 4000;
+                const loopsStr = formatAutoPlayLoopsStr(listeningSandboxState.autoPlayLoops);
+                const maxLoops = parseInt(loopsStr, 10) || 0;
+                const curLoop = listeningSandboxState.autoPlayCurrentLoop || 1;
+                const roundTag = (isPlaying && (maxLoops === 0 || maxLoops > 1))
+                    ? `<span class="text-[10px] font-mono font-bold text-purple-600 bg-purple-50 px-1.5 py-0.5 rounded">${maxLoops === 0 ? `第${curLoop}輪 ♾️` : `${curLoop}/${maxLoops}輪`}</span>`
+                    : '';
                 tb.innerHTML = `
                     <div class="flex items-center gap-1.5 flex-wrap">
                         <button onclick="toggleListeningSandboxAutoPlay()" class="px-2.5 py-1 rounded-lg text-xs font-bold transition flex items-center gap-1 shadow-2xs cursor-pointer ${isPlaying ? 'bg-amber-500 hover:bg-amber-600 text-white' : 'bg-purple-600 hover:bg-purple-700 text-white'}">
@@ -19543,6 +19594,14 @@ function cleanupMasteredMistakes() {
                             <option value="4000" ${spd === 4000 ? 'selected' : ''}>⏱️ 4.0秒</option>
                             <option value="6000" ${spd === 6000 ? 'selected' : ''}>🐢 6.0秒</option>
                         </select>
+                        <select onchange="changeListeningSandboxLoops(this.value)" aria-label="沙盒輪播次數" class="text-[11px] font-medium bg-white border border-gray-200 rounded-lg px-1.5 py-1 text-slate-700 outline-none cursor-pointer">
+                            <option value="1" ${loopsStr === '1' ? 'selected' : ''}>🔁 1 次</option>
+                            <option value="2" ${loopsStr === '2' ? 'selected' : ''}>🔁 2 次</option>
+                            <option value="3" ${loopsStr === '3' ? 'selected' : ''}>🔁 3 次</option>
+                            <option value="5" ${loopsStr === '5' ? 'selected' : ''}>🔁 5 次</option>
+                            <option value="0" ${loopsStr === '0' ? 'selected' : ''}>♾️ 一直播</option>
+                        </select>
+                        ${roundTag}
                     </div>
                     <div class="flex items-center gap-2">
                         <span class="text-[10px] text-slate-400 font-medium hidden sm:inline">🛡️ 零進度負擔</span>

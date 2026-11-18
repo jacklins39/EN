@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261117V3';
+        const APP_BUILD_VERSION = '20261118V1';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -2884,6 +2884,16 @@
 
                     <!-- 右側控制按鈕：強制 shrink-0 與 whitespace-nowrap，絕不被壓縮折行 -->
                     <div class="flex items-center gap-1.5 shrink-0 whitespace-nowrap">
+                        <div id="study-loop-wrap" class="hidden flex items-center gap-1 bg-slate-100 hover:bg-slate-200/80 px-2 py-1 rounded-xl whitespace-nowrap shrink-0 transition-colors" title="切換輪播次數或無限循環">
+                            <span class="text-xs text-slate-500 font-medium select-none">🔁</span>
+                            <select id="study-auto-loops" aria-label="輪播次數" class="text-xs text-[#0071E3] font-bold bg-transparent outline-none cursor-pointer">
+                                <option value="1">1 次</option>
+                                <option value="2">2 次</option>
+                                <option value="3">3 次</option>
+                                <option value="5">5 次</option>
+                                <option value="0">♾️ 一直播</option>
+                            </select>
+                        </div>
                         <div class="flex items-center gap-1 bg-slate-100 hover:bg-slate-200/80 px-2 py-1 rounded-xl whitespace-nowrap shrink-0 transition-colors">
                             <span class="text-xs text-slate-500 font-medium select-none">⚡</span>
                             <select id="study-speech-rate" aria-label="發音速度" class="text-xs text-[#0071E3] font-bold bg-transparent outline-none cursor-pointer">
@@ -4663,6 +4673,82 @@
         let isAutoFlashcardMode = false;
         let autoFlashcardTimerId = null;
         let autoFlashcardSpeed = 3500;
+        const VALID_AUTO_PLAY_LOOPS = ['1', '2', '3', '5', '0'];
+        function formatAutoPlayLoopsStr(val) {
+            const s = String(val ?? '1').trim();
+            return VALID_AUTO_PLAY_LOOPS.includes(s) ? s : '1';
+        }
+        let globalAutoPlayLoops = formatAutoPlayLoopsStr(localStorage.getItem('auto_flashcard_loops'));
+        let autoFlashcardMaxLoops = parseInt(globalAutoPlayLoops, 10) || 0;
+        let autoFlashcardCurrentLoop = 1;
+        let autoFlashcardBaseWords = [];
+
+        function updateAutoLoopStatusUI() {
+            const loopWrap = document.getElementById('study-loop-wrap');
+            if (loopWrap) {
+                if (isAutoFlashcardMode) loopWrap.classList.remove('hidden');
+                else loopWrap.classList.add('hidden');
+            }
+            if (!isAutoFlashcardMode) return;
+            const queueTypeEl = document.getElementById('session-queue-type');
+            if (queueTypeEl) {
+                if (autoFlashcardMaxLoops === 0) {
+                    queueTypeEl.innerText = `${sessionTitle} · ♾️ 第 ${autoFlashcardCurrentLoop} 輪 (一直播)`;
+                } else if (autoFlashcardMaxLoops > 1) {
+                    queueTypeEl.innerText = `${sessionTitle} · 第 ${autoFlashcardCurrentLoop} / ${autoFlashcardMaxLoops} 輪`;
+                } else {
+                    queueTypeEl.innerText = sessionTitle;
+                }
+            }
+            const statusEl = document.getElementById('queue-status-text');
+            if (statusEl) {
+                if (typeof isAutoFlashcardPaused !== 'undefined' && isAutoFlashcardPaused) {
+                    statusEl.innerText = '已暫停輪播 · 待命';
+                } else if (autoFlashcardMaxLoops === 0) {
+                    statusEl.innerText = `第 ${autoFlashcardCurrentLoop} 輪 · ♾️ 一直循環`;
+                } else if (autoFlashcardMaxLoops > 1) {
+                    statusEl.innerText = `第 ${autoFlashcardCurrentLoop} / ${autoFlashcardMaxLoops} 輪 · 連續播放`;
+                } else {
+                    statusEl.innerText = '自動輪播中 · 連續播放';
+                }
+            }
+        }
+
+        function setAutoPlayLoops(val) {
+            const norm = formatAutoPlayLoopsStr(val);
+            globalAutoPlayLoops = norm;
+            autoFlashcardMaxLoops = parseInt(norm, 10) || 0;
+            localStorage.setItem('auto_flashcard_loops', norm);
+            ['study-auto-loops', 'auto-play-loops'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) {
+                    el.value = norm;
+                    if (el.selectedIndex === -1) el.value = '1';
+                }
+            });
+            updateAutoLoopStatusUI();
+        }
+
+        function resetAutoFlashcardLoopState(words) {
+            autoFlashcardBaseWords = Array.isArray(words) ? [...words] : [];
+            autoFlashcardCurrentLoop = 1;
+            const norm = formatAutoPlayLoopsStr(globalAutoPlayLoops);
+            autoFlashcardMaxLoops = parseInt(norm, 10) || 0;
+            isAutoFlashcardPaused = false;
+            const pauseBtn = document.getElementById('btn-queue-pause');
+            if (pauseBtn) {
+                pauseBtn.innerText = '⏸ 暫停 (Space)';
+                pauseBtn.className = 'px-4 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-xs font-bold text-white shadow-xs transition-all cursor-pointer active:scale-95';
+            }
+            const studyLoopsEl = document.getElementById('study-auto-loops');
+            if (studyLoopsEl) studyLoopsEl.value = norm;
+        }
+
+        const studyAutoLoopsInitEl = document.getElementById('study-auto-loops');
+        if (studyAutoLoopsInitEl) {
+            studyAutoLoopsInitEl.value = globalAutoPlayLoops;
+            studyAutoLoopsInitEl.addEventListener('change', (e) => setAutoPlayLoops(e.target.value));
+        }
         
         let previewReviewWords = [];
         let previewNewWords = [];
@@ -6356,12 +6442,14 @@ function cleanupMasteredMistakes() {
             isMistakeMode = false;
             isManualCardMode = false;
             autoFlashcardSpeed = 4000;
+            resetAutoFlashcardLoopState(words);
             sessionQueue = [...words];
             mistakeQueue = [];
             totalCardsInSession = sessionQueue.length;
             cardsCompleted = 0;
             resetSessionStats(sessionQueue);
             sessionTitle = title;
+            updateAutoLoopStatusUI();
             switchTab('view-study', document.getElementById('tab-btn-dashboard'));
             nextCard();
         }
@@ -6457,22 +6545,29 @@ function cleanupMasteredMistakes() {
                     <span class="text-blue-500 shrink-0">💡</span>
                     <span class="leading-relaxed">點單字看「三態與例句」詳解卡；點右側 ☆/⭐ 可切換標記；點 🔊 直接發音。</span>
                 </div>
-                <div class="grid grid-cols-2 sm:flex items-center gap-1.5 sm:gap-2 mb-2.5 bg-[#F5F5F7] p-2 rounded-2xl border border-gray-200/60 shrink-0">
-                    <select id="auto-play-speed" aria-label="自動播放速度" class="col-span-1 text-xs sm:text-sm font-medium border border-gray-200/80 rounded-xl px-2.5 py-2 bg-white text-gray-700 outline-none focus:ring-2 focus:ring-[#0071E3]/30 focus:border-[#0071E3] w-full sm:flex-1 min-w-0 cursor-pointer">
+                <div class="grid grid-cols-2 sm:grid-cols-12 items-center gap-1.5 sm:gap-2 mb-2.5 bg-[#F5F5F7] p-2 rounded-2xl border border-gray-200/60 shrink-0">
+                    <select id="auto-play-speed" aria-label="自動播放速度" class="col-span-2 sm:col-span-5 text-xs sm:text-sm font-medium border border-gray-200/80 rounded-xl px-2.5 py-2 bg-white text-gray-700 outline-none focus:ring-2 focus:ring-[#0071E3]/30 focus:border-[#0071E3] w-full min-w-0 cursor-pointer">
                         <option value="2000">⏱️ 間隔 2.0秒 (極快)</option>
                         <option value="3500">⏱️ 間隔 3.5秒 (快)</option>
                         <option value="5000" selected>⏱️ 間隔 5.0秒 (適中)</option>
                         <option value="7000">⏱️ 間隔 7.0秒 (慢)</option>
                         <option value="10000">⏱️ 間隔 10秒 (極慢)</option>
                     </select>
-                    <select id="auto-speech-rate" aria-label="語速" class="col-span-1 text-xs sm:text-sm font-medium border border-gray-200/80 rounded-xl px-2.5 py-2 bg-white text-gray-700 outline-none focus:ring-2 focus:ring-[#0071E3]/30 focus:border-[#0071E3] w-full sm:w-[132px] shrink-0 cursor-pointer">
+                    <select id="auto-speech-rate" aria-label="語速" class="col-span-1 sm:col-span-3 text-xs sm:text-sm font-medium border border-gray-200/80 rounded-xl px-2.5 py-2 bg-white text-gray-700 outline-none focus:ring-2 focus:ring-[#0071E3]/30 focus:border-[#0071E3] w-full min-w-0 cursor-pointer">
                         <option value="0.75">🗣️ 語速 0.75x</option>
                         <option value="0.85">🗣️ 語速 0.85x</option>
                         <option value="1.0" selected>🗣️ 語速 1.0x</option>
                         <option value="1.25">🗣️ 語速 1.25x</option>
                         <option value="1.5">🗣️ 語速 1.5x</option>
                     </select>
-                    <button id="btn-auto-play" class="col-span-2 w-full sm:w-auto bg-[#0071E3] text-white px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold hover:bg-[#0077ED] active:scale-95 shadow-xs transition-all shrink-0 whitespace-nowrap flex items-center justify-center gap-1 cursor-pointer">
+                    <select id="auto-play-loops" aria-label="輪播次數" class="col-span-1 sm:col-span-4 text-xs sm:text-sm font-medium border border-gray-200/80 rounded-xl px-2.5 py-2 bg-white text-gray-700 outline-none focus:ring-2 focus:ring-[#0071E3]/30 focus:border-[#0071E3] w-full min-w-0 cursor-pointer">
+                        <option value="1">🔁 輪播 1 次</option>
+                        <option value="2">🔁 輪播 2 次</option>
+                        <option value="3">🔁 輪播 3 次</option>
+                        <option value="5">🔁 輪播 5 次</option>
+                        <option value="0">♾️ 一直循環</option>
+                    </select>
+                    <button id="btn-auto-play" class="col-span-2 sm:col-span-12 w-full bg-[#0071E3] text-white px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold hover:bg-[#0077ED] active:scale-95 shadow-xs transition-all shrink-0 whitespace-nowrap flex items-center justify-center gap-1 cursor-pointer">
                         <span>▶</span><span>自動輪播發音</span>
                     </button>
                 </div>
@@ -6500,6 +6595,12 @@ function cleanupMasteredMistakes() {
                 if (autoRateSelect.selectedIndex === -1) autoRateSelect.value = '1.0';
                 autoRateSelect.addEventListener('change', (e) => setSpeechRate(e.target.value));
             }
+            const autoLoopsSelect = document.getElementById('auto-play-loops');
+            if (autoLoopsSelect) {
+                autoLoopsSelect.value = formatAutoPlayLoopsStr(globalAutoPlayLoops);
+                if (autoLoopsSelect.selectedIndex === -1) autoLoopsSelect.value = '1';
+                autoLoopsSelect.addEventListener('change', (e) => setAutoPlayLoops(e.target.value));
+            }
             
             const btnStartAction = document.getElementById('btn-preview-start-action');
             if (btnStartAction && onStartCallback) {
@@ -6524,17 +6625,20 @@ function cleanupMasteredMistakes() {
                     isManualCardMode = false;
                     autoFlashcardSpeed = parseInt(speedSelect.value);
                     if (autoRateSelect) setSpeechRate(autoRateSelect.value);
+                    if (autoLoopsSelect) setAutoPlayLoops(autoLoopsSelect.value);
                     sessionQueue = [...words];
                     // 進入自動輪播前在該單元打散
                     for (let i = sessionQueue.length - 1; i > 0; i--) {
                         const j = Math.floor(Math.random() * (i + 1));
                         [sessionQueue[i], sessionQueue[j]] = [sessionQueue[j], sessionQueue[i]];
                     }
+                    resetAutoFlashcardLoopState(sessionQueue);
                     mistakeQueue = [];
                     totalCardsInSession = sessionQueue.length;
                     cardsCompleted = 0;
                     resetSessionStats(sessionQueue);
                     sessionTitle = title + " (自動輪播)";
+                    updateAutoLoopStatusUI();
                     
                     switchTab('view-study', document.getElementById('tab-btn-dashboard'));
                     nextCard();
@@ -6608,6 +6712,8 @@ function cleanupMasteredMistakes() {
                 isAutoFlashcardMode = false;
                 if (autoFlashcardTimerId) clearTimeout(autoFlashcardTimerId);
             }
+            isAutoFlashcardPaused = false;
+            updateAutoLoopStatusUI();
             stopAllAudio();
             currentWord = null;
             sessionQueue = [];
@@ -7316,11 +7422,32 @@ function cleanupMasteredMistakes() {
             if (sessionQueue.length > 0) {
                 currentWord = sessionQueue.shift();
                 document.getElementById('session-queue-type').innerText = sessionTitle;
+                updateAutoLoopStatusUI();
             } else if (mistakeQueue.length > 0) {
                 isMistakeMode = true;
                 currentWord = mistakeQueue.shift();
                 totalCardsInSession = cardsCompleted + mistakeQueue.length + 1;
                 document.getElementById('session-queue-type').innerText = "當次錯題強制複習";
+                updateAutoLoopStatusUI();
+            } else if (isAutoFlashcardMode && autoFlashcardBaseWords.length > 0 && (autoFlashcardMaxLoops === 0 || autoFlashcardCurrentLoop < autoFlashcardMaxLoops)) {
+                autoFlashcardCurrentLoop++;
+                const nextRound = [...autoFlashcardBaseWords];
+                for (let i = nextRound.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [nextRound[i], nextRound[j]] = [nextRound[j], nextRound[i]];
+                }
+                sessionQueue = nextRound;
+                learnedSessionQueue = [];
+                totalCardsInSession = sessionQueue.length;
+                cardsCompleted = 0;
+                currentWord = sessionQueue.shift();
+                updateAutoLoopStatusUI();
+                if (typeof showQuickToast === 'function') {
+                    const loopHint = autoFlashcardMaxLoops === 0
+                        ? `🔁 第 ${autoFlashcardCurrentLoop} 輪開始（無限循環）`
+                        : `🔁 第 ${autoFlashcardCurrentLoop} / ${autoFlashcardMaxLoops} 輪開始`;
+                    showQuickToast(loopHint);
+                }
             } else {
                 finishSession();
                 return;
@@ -7765,7 +7892,7 @@ function cleanupMasteredMistakes() {
             unlockMobileAudio();
             if (direction === 1) {
                 // 下一個
-                if (sessionQueue.length > 0) nextCard();
+                if (sessionQueue.length > 0 || (isAutoFlashcardMode && autoFlashcardBaseWords.length > 0 && (autoFlashcardMaxLoops === 0 || autoFlashcardCurrentLoop < autoFlashcardMaxLoops))) nextCard();
             } else if (direction === -1) {
                 // 上一個 (回退到已學列車的最後一個)
                 if (learnedSessionQueue.length > 0) {
@@ -7785,7 +7912,7 @@ function cleanupMasteredMistakes() {
                     btn.innerText = '⏸ 暫停 (Space)';
                     btn.className = 'px-4 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-xs font-bold text-white shadow-xs transition-all cursor-pointer active:scale-95';
                 }
-                if (statusEl) statusEl.innerText = '自動輪播中 · 連續播放';
+                updateAutoLoopStatusUI();
                 nextCard();
             } else {
                 // 暫停
@@ -8542,7 +8669,7 @@ function cleanupMasteredMistakes() {
             requestAnimationFrame(step);
         }
 
-        function renderCompletedSessionUI(wasAutoPlay) {
+        function renderCompletedSessionUI(wasAutoPlay, completedLoops = 1) {
             const rankBadge = document.getElementById('completed-rank-badge');
             const heroIcon = document.getElementById('completed-hero-icon');
             const titleEl = document.getElementById('completed-title');
@@ -8567,18 +8694,21 @@ function cleanupMasteredMistakes() {
 
             if (isAutoOrEmpty) {
                 const wordsCount = sessionStats.initialWords.length || totalCardsInSession || 0;
+                const loops = Math.max(1, Number(completedLoops) || 1);
                 if (rankBadge) {
                     rankBadge.className = 'inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-blue-50 text-[#0071E3] border border-blue-200/80 mb-3 shadow-2xs';
-                    rankBadge.innerText = '🎧 語音跟讀 · 輪播完畢';
+                    rankBadge.innerText = loops > 1 ? `🎧 語音跟讀 · 完整輪播 ${loops} 輪` : '🎧 語音跟讀 · 輪播完畢';
                 }
                 if (heroIcon) {
                     heroIcon.className = 'trophy-hero-anim w-20 h-20 bg-gradient-to-br from-[#0071E3] to-indigo-600 text-white rounded-3xl flex items-center justify-center mx-auto mb-3.5 shadow-lg shadow-blue-500/20 border-2 border-white';
                     heroIcon.innerHTML = '<span class="text-4xl">🎧</span>';
                 }
                 if (titleEl) titleEl.innerText = '輪播溫習完成！';
-                if (subtitleEl) subtitleEl.innerText = `已完整聆聽 ${wordsCount} 個單字與真人例句發音，點擊下方列表可隨時抽查。`;
+                if (subtitleEl) subtitleEl.innerText = loops > 1
+                    ? `已完成 ${loops} 輪、共 ${wordsCount} 個單字與真人例句發音，點擊下方列表可隨時抽查。`
+                    : `已完整聆聽 ${wordsCount} 個單字與真人例句發音，點擊下方列表可隨時抽查。`;
                 animateCountUp(elWords, wordsCount, ' 字');
-                if (elWordsSub) elWordsSub.innerText = '本輪播總字數';
+                if (elWordsSub) elWordsSub.innerText = loops > 1 ? `每輪字數（共 ${loops} 輪）` : '本輪播總字數';
                 animateCountUp(elAcc, 100, '%');
                 if (elAccSub) elAccSub.innerText = '完整聆聽率';
                 if (elStreak) elStreak.innerText = '🔊 100%';
@@ -8691,7 +8821,10 @@ function cleanupMasteredMistakes() {
 
         function finishSession() {
             const wasAutoPlay = isAutoFlashcardMode;
+            const completedLoops = wasAutoPlay ? autoFlashcardCurrentLoop : 1;
             isAutoFlashcardMode = false;
+            isAutoFlashcardPaused = false;
+            updateAutoLoopStatusUI();
             if (autoFlashcardTimerId) clearTimeout(autoFlashcardTimerId);
             stopAllAudio();
             if (sessionTitle === "一般課程" && dailyPlans[currentUnit]) {
@@ -8703,7 +8836,7 @@ function cleanupMasteredMistakes() {
             currentWord = null;
             sessionQueue = [];
             mistakeQueue = [];
-            renderCompletedSessionUI(wasAutoPlay);
+            renderCompletedSessionUI(wasAutoPlay, completedLoops);
             hideAllViews();
             viewCompleted.classList.remove('hidden');
             if (typeof scrollToStudyTop === 'function') scrollToStudyTop();

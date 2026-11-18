@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261118V2';
+        const APP_BUILD_VERSION = '20261118V3';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -3035,7 +3035,7 @@
                             <div class="text-[10px] text-slate-400 mb-0.5 font-semibold tracking-wider uppercase">Example 例句 <span class="text-slate-400/80 normal-case ml-1 font-normal">(點單字可查字典)</span></div>
                             <p class="text-slate-800 font-medium mb-0.5 pr-6 text-[14px] sm:text-[15px] leading-relaxed" id="card-example"></p>
                             <div class="mt-1 pt-1 border-t border-dashed border-slate-200">
-                                <p class="text-slate-500 text-[12.5px] sm:text-[13px] font-medium leading-relaxed" id="card-example-zh"></p>
+                                <p class="text-slate-500 text-[12.5px] sm:text-[13px] font-medium leading-relaxed cursor-pointer hover:text-[#0071E3] transition-colors" id="card-example-zh" title="點擊單獨朗讀例句中文譯文"></p>
                             </div>
                             <div id="card-user-note-box" onclick="event.stopPropagation(); if (currentWord && currentWord.en) showWordDetailModal(currentWord.en);" class="hidden mt-2 pt-1.5 border-t border-amber-200/70 dark:border-amber-700/40 text-xs text-amber-800 dark:text-amber-300 flex items-start gap-1.5 cursor-pointer hover:opacity-85 transition-opacity" title="點擊查看詳解與記憶技巧">
                                 <span class="shrink-0 font-bold">💡 記憶技巧：</span>
@@ -3587,6 +3587,22 @@
                         </div>
                         <label class="relative inline-flex items-center cursor-pointer">
                             <input type="checkbox" id="setting-speak-zh" class="sr-only peer" checked>
+                            <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#0071E3]"></div>
+                        </label>
+                    </div>
+
+                    <div class="w-full flex items-center justify-between p-4 bg-white border-0 border-gray-200 rounded-2xl hover:bg-[#F5F5F7] transition-colors mb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="p-2 bg-cyan-50 text-cyan-600 rounded-xl font-bold text-sm flex items-center justify-center w-9 h-9">
+                                譯
+                            </div>
+                            <div class="text-left">
+                                <h3 class="font-semibold text-[#1D1D1F]">朗讀例句中文譯文</h3>
+                                <p class="text-xs text-[#86868B]">播完英文例句後，自動接續念出該句中文翻譯</p>
+                            </div>
+                        </div>
+                        <label class="relative inline-flex items-center cursor-pointer">
+                            <input type="checkbox" id="setting-speak-example-zh" class="sr-only peer" checked>
                             <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#0071E3]"></div>
                         </label>
                     </div>
@@ -6816,8 +6832,14 @@ function cleanupMasteredMistakes() {
 
         let currentSpellLettersController = null;
         let isSpeechEvalActive = false;
+        window._audioPlaybackGen = window._audioPlaybackGen || 0;
+
+        function isSpeakExampleZhEnabled() {
+            return localStorage.getItem('speak_example_zh_enabled') !== 'false';
+        }
 
         function stopAllAudio() {
+            window._audioPlaybackGen = (window._audioPlaybackGen || 0) + 1;
             clearAudioCallbacks();
             if (currentSpellLettersController) {
                 try { currentSpellLettersController.cancel(); } catch(e) {}
@@ -6945,14 +6967,30 @@ function cleanupMasteredMistakes() {
             }
         }
 
+        function speakExampleZh(exampleZhText, onEndedCallback) {
+            if (isSpeechEvalActive) {
+                if (typeof onEndedCallback === 'function') onEndedCallback();
+                return;
+            }
+            const cleanExZh = cleanText(exampleZhText || '').replace(/\s+/g, ' ').trim().slice(0, 180);
+            if (!cleanExZh) {
+                if (typeof onEndedCallback === 'function') onEndedCallback();
+                return;
+            }
+            unlockMobileAudio();
+            speakChineseViaSynthesis(cleanExZh, onEndedCallback);
+        }
+
         function speakChineseViaSynthesis(cleanZh, onEndedCallback) {
             if (!('speechSynthesis' in window) || !cleanZh) {
                 if (typeof onEndedCallback === 'function') onEndedCallback();
                 return;
             }
+            const myToken = window._audioPlaybackGen || 0;
             try {
                 clearAudioCallbacks();
                 const runSpeak = () => {
+                    if (myToken !== (window._audioPlaybackGen || 0)) return;
                     try {
                         const utterance = new SpeechSynthesisUtterance(cleanZh);
                         utterance.lang = 'zh-TW';
@@ -6970,16 +7008,18 @@ function cleanupMasteredMistakes() {
                                 clearTimeout(audioFallbackTimerId);
                                 audioFallbackTimerId = null;
                             }
+                            if (myToken !== (window._audioPlaybackGen || 0)) return;
                             if (typeof onEndedCallback === 'function') onEndedCallback();
                         };
                         utterance.onend = done;
                         utterance.onerror = done;
-                        audioFallbackTimerId = setTimeout(done, 5000);
+                        const safeMs = Math.max(6000, Math.min(18000, cleanZh.length * 420 + 1800));
+                        audioFallbackTimerId = setTimeout(done, safeMs);
 
                         window._activeSpeechUtterance = utterance;
                         window.speechSynthesis.speak(utterance);
                     } catch(e) {
-                        if (typeof onEndedCallback === 'function') onEndedCallback();
+                        if (myToken === (window._audioPlaybackGen || 0) && typeof onEndedCallback === 'function') onEndedCallback();
                     }
                 };
 
@@ -6991,7 +7031,7 @@ function cleanupMasteredMistakes() {
                 }
             } catch(err) {
                 console.warn('speakChineseViaSynthesis error:', err);
-                if (typeof onEndedCallback === 'function') onEndedCallback();
+                if (myToken === (window._audioPlaybackGen || 0) && typeof onEndedCallback === 'function') onEndedCallback();
             }
         }
 
@@ -7138,19 +7178,34 @@ function cleanupMasteredMistakes() {
                 return;
             }
             const targetWord = currentWord;
+            const playbackToken = window._audioPlaybackGen || 0;
             const isSpeakZh = localStorage.getItem('speak_zh_enabled') !== 'false'; // 預設開啟
             const isSpellLetters = localStorage.getItem('spell_letters_enabled') === 'true'; // 逐字母拼讀開關
             const prefAccent = (typeof getPreferredVoiceAccent === 'function') ? getPreferredVoiceAccent() : 'both';
 
+            // 例句中文譯文朗讀步驟 (若設定開啟，於英文例句結束後接續念出中文翻譯)
+            const playExampleZhStep = () => {
+                if (playbackToken !== (window._audioPlaybackGen || 0) || !currentWord || currentWord.id !== targetWord.id) return;
+                if (isSpeakExampleZhEnabled() && targetWord.exampleZh && targetWord.exampleZh.trim()) {
+                    backsideAudioTimerId = setTimeout(() => {
+                        if (playbackToken !== (window._audioPlaybackGen || 0) || !currentWord || currentWord.id !== targetWord.id) return;
+                        speakExampleZh(targetWord.exampleZh, () => {
+                            if (playbackToken !== (window._audioPlaybackGen || 0)) return;
+                            if (typeof onEndedCallback === 'function') onEndedCallback();
+                        });
+                    }, 250);
+                } else {
+                    if (typeof onEndedCallback === 'function') onEndedCallback();
+                }
+            };
+
             // 例句朗讀步驟
             const playExampleStep = () => {
-                if (!currentWord || currentWord.id !== targetWord.id) return;
+                if (playbackToken !== (window._audioPlaybackGen || 0) || !currentWord || currentWord.id !== targetWord.id) return;
                 if (targetWord.example) {
                     backsideAudioTimerId = setTimeout(() => {
-                        if (!currentWord || currentWord.id !== targetWord.id) return;
-                        playAudio(targetWord.example, () => {
-                            if (typeof onEndedCallback === 'function') onEndedCallback();
-                        }, targetWord.id);
+                        if (playbackToken !== (window._audioPlaybackGen || 0) || !currentWord || currentWord.id !== targetWord.id) return;
+                        playAudio(targetWord.example, playExampleZhStep, targetWord.id);
                     }, 350);
                 } else {
                     if (typeof onEndedCallback === 'function') onEndedCallback();
@@ -10575,15 +10630,47 @@ function cleanupMasteredMistakes() {
             };
         }
 
-        // 專屬例句音訊播放器 (100% 直連 Edge-TTS Jenny 真人例句音檔，徹底免疫引號轉義問題)
-        function playWordExampleAudio(wordId, sentenceText) {
+        // 專屬例句音訊播放器 (100% 直連 Edge-TTS Jenny 真人例句音檔，可依設定接續朗讀例句中文譯文)
+        function playWordExampleAudio(wordId, sentenceText, exampleZh = '') {
             unlockMobileAudio();
+            stopAllAudio();
+            const playbackToken = window._audioPlaybackGen || 0;
             const id = Number(wordId);
+            const resolvedExZh = (exampleZh && String(exampleZh).trim())
+                ? String(exampleZh).trim()
+                : (currentWord && Number(currentWord.id) === id && currentWord.exampleZh ? String(currentWord.exampleZh).trim() : '');
+
+            const onEnglishExampleEnded = () => {
+                if (playbackToken !== (window._audioPlaybackGen || 0)) return;
+                if (isSpeakExampleZhEnabled() && resolvedExZh) {
+                    backsideAudioTimerId = setTimeout(() => {
+                        if (playbackToken !== (window._audioPlaybackGen || 0)) return;
+                        speakExampleZh(resolvedExZh);
+                    }, 250);
+                }
+            };
+
             if (id && typeof window.EXAMPLES_AUDIO_MANIFEST !== 'undefined' && window.EXAMPLES_AUDIO_MANIFEST.has(id)) {
-                try {
-                    wordAudioPlayer.pause();
-                    wordAudioPlayer.currentTime = 0;
-                } catch(e) {}
+                clearAudioCallbacks();
+                let called = false;
+                const done = () => {
+                    if (called) return;
+                    called = true;
+                    clearAudioCallbacks();
+                    onEnglishExampleEnded();
+                };
+                const onError = (e) => {
+                    if (called) return;
+                    if (wordAudioPlayer && wordAudioPlayer.error && wordAudioPlayer.error.code === 20) return;
+                    called = true;
+                    clearAudioCallbacks();
+                    if (playbackToken !== (window._audioPlaybackGen || 0)) return;
+                    if (sentenceText) speakViaSynthesisOrTTS(sentenceText, onEnglishExampleEnded);
+                };
+                currentAudioDoneHandler = done;
+                wordAudioPlayer.addEventListener('ended', done, { once: true });
+                wordAudioPlayer.addEventListener('error', onError, { once: true });
+                audioFallbackTimerId = setTimeout(done, 12000);
                 wordAudioPlayer.src = `audio/examples/${id}.mp3?v=${APP_BUILD_VERSION}`;
                 wordAudioPlayer.playbackRate = globalSpeechRate;
                 const p = wordAudioPlayer.play();
@@ -10591,13 +10678,13 @@ function cleanupMasteredMistakes() {
                     p.catch(e => {
                         if (e && (e.name === 'AbortError' || e.code === 20)) return;
                         console.warn("Example audio play error, fallback to TTS:", e);
-                        if (sentenceText) speakViaSynthesisOrTTS(sentenceText);
+                        onError(e);
                     });
                 }
                 return;
             }
             if (sentenceText) {
-                playAudio(sentenceText, null, id);
+                playAudio(sentenceText, onEnglishExampleEnded, id);
             }
         }
 
@@ -10772,7 +10859,7 @@ function cleanupMasteredMistakes() {
                 const btn = e.currentTarget;
                 btn.classList.add('text-[#0071E3]', 'scale-110');
                 setTimeout(() => btn.classList.remove('text-[#0071E3]', 'scale-110'), 400);
-                playWordExampleAudio(currentWord.id, currentWord.example);
+                playWordExampleAudio(currentWord.id, currentWord.example, currentWord.exampleZh);
             }
         });
 
@@ -10981,8 +11068,19 @@ function cleanupMasteredMistakes() {
                 if (isSpeechEvalActive) resetSpeechEvalUI();
                 unlockMobileAudio();
                 if (currentWord && currentWord.example) {
-                    playWordExampleAudio(currentWord.id, currentWord.example);
+                    playWordExampleAudio(currentWord.id, currentWord.example, currentWord.exampleZh);
                 }
+            }
+        });
+
+        // 點擊例句中文譯文單獨朗讀該句中文
+        document.getElementById('card-example-zh')?.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (isSpeechEvalActive) resetSpeechEvalUI();
+            unlockMobileAudio();
+            if (currentWord && currentWord.exampleZh) {
+                stopAllAudio();
+                speakExampleZh(currentWord.exampleZh);
             }
         });
 
@@ -11041,6 +11139,15 @@ function cleanupMasteredMistakes() {
             settingSpeakZhEl.checked = savedSpeakZh !== 'false';
             settingSpeakZhEl.addEventListener('change', (e) => {
                 localStorage.setItem('speak_zh_enabled', e.target.checked ? 'true' : 'false');
+            });
+        }
+
+        // 設定：朗讀例句中文譯文開關
+        const settingSpeakExampleZhEl = document.getElementById('setting-speak-example-zh');
+        if (settingSpeakExampleZhEl) {
+            settingSpeakExampleZhEl.checked = isSpeakExampleZhEnabled();
+            settingSpeakExampleZhEl.addEventListener('change', (e) => {
+                localStorage.setItem('speak_example_zh_enabled', e.target.checked ? 'true' : 'false');
             });
         }
 
@@ -13804,7 +13911,7 @@ function cleanupMasteredMistakes() {
             document.getElementById('btn-detail-example-audio')?.addEventListener('click', (e) => {
                 e.preventDefault();
                 e.stopPropagation();
-                playWordExampleAudio(w.id, w.example);
+                playWordExampleAudio(w.id, w.example, w.exampleZh);
             });
 
             // 按需載入對應字母的記憶技巧分片，並在載入完成後更新唯讀全覽卡片

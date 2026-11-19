@@ -3949,6 +3949,7 @@ const UK_PHONETICS_MANIFEST = {
   "hardware": "/ˈhɑːdweə(r)/",
   "hardworking": "/ˈhɑːˌdwɜːkɪŋ/",
   "hardy": "/ˈhɑːdi/",
+  "hare": "/heə(r)/",
   "harm": "/hɑːm/",
   "harmful": "/ˈhɑːmf(ə)l/",
   "harmless": "/ˈhɑːmləs/",

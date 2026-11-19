@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261119V5';
+        const APP_BUILD_VERSION = '20261119V6';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -6847,6 +6847,33 @@ function cleanupMasteredMistakes() {
         try { wordAudioPlayer.playsInline = true; } catch(e) {}
         try { wordAudioPlayer.referrerPolicy = 'no-referrer'; } catch(e) {}
 
+        // 音檔分家雙棲 CDN 路由：線上自動指向 3 個專屬靜態倉庫，本機/測試維持讀取本地相對路徑
+        const AUDIO_CDN_BUCKETS = {
+            words: 'https://jacklins39.github.io/EN-audio-words/',
+            examples: 'https://jacklins39.github.io/EN-audio-examples/',
+            zh: 'https://jacklins39.github.io/EN-audio-zh/',
+        };
+
+        function resolveAudioUrl(relPath) {
+            const p = String(relPath || '').replace(/^\/+/, '');
+            if (!p || /^https?:\/\//i.test(p) || p.startsWith('data:') || p.startsWith('blob:')) {
+                return p;
+            }
+            const host = (typeof window !== 'undefined' && window.location && window.location.hostname) || '';
+            const proto = (typeof window !== 'undefined' && window.location && window.location.protocol) || '';
+            const forceRemote = !!(typeof window !== 'undefined' && window.__FORCE_AUDIO_CDN__);
+            const useLocal = !forceRemote && (
+                !host || host === '127.0.0.1' || host === 'localhost' || proto === 'file:' ||
+                (window.location.search && window.location.search.includes('localAudio=1'))
+            );
+            if (useLocal) return p;
+
+            if (p.startsWith('audio/words/')) return AUDIO_CDN_BUCKETS.words + p;
+            if (p.startsWith('audio/examples/')) return AUDIO_CDN_BUCKETS.examples + p;
+            if (p.startsWith('audio/')) return AUDIO_CDN_BUCKETS.zh + p;
+            return p;
+        }
+
         // ==========================================
         // 手機端 (iOS Safari / Android) 音訊自動解鎖
         // ==========================================
@@ -7122,7 +7149,7 @@ function cleanupMasteredMistakes() {
                         wordAudioPlayer.currentTime = 0;
                     } catch(e) {}
 
-                    wordAudioPlayer.src = `audio/zh/${target.id}.mp3?v=${APP_BUILD_VERSION}`;
+                    wordAudioPlayer.src = resolveAudioUrl(`audio/zh/${target.id}.mp3?v=${APP_BUILD_VERSION}`);
                     wordAudioPlayer.playbackRate = 1.0;
                     attachCallback(wordAudioPlayer);
                     const playPromise = wordAudioPlayer.play();
@@ -10821,7 +10848,7 @@ function cleanupMasteredMistakes() {
                 if (hasLocal) {
                     const matchedKey = manifest.has(cleanSafe) ? cleanSafe : cleanLower;
                     const subDir = isUk ? 'uk' : 'us';
-                    wordAudioPlayer.src = `audio/words/${subDir}/${encodeURIComponent(matchedKey)}.mp3?v=${APP_BUILD_VERSION}`;
+                    wordAudioPlayer.src = resolveAudioUrl(`audio/words/${subDir}/${encodeURIComponent(matchedKey)}.mp3?v=${APP_BUILD_VERSION}`);
                     wordAudioPlayer.playbackRate = globalSpeechRate;
                     attachCallback(wordAudioPlayer, playOnlineStream);
                     const p = wordAudioPlayer.play();
@@ -10979,7 +11006,7 @@ function cleanupMasteredMistakes() {
                 wordAudioPlayer.addEventListener('ended', done, { once: true });
                 wordAudioPlayer.addEventListener('error', onError, { once: true });
                 audioFallbackTimerId = setTimeout(done, getScaledAudioFallbackMs(12000));
-                wordAudioPlayer.src = `audio/examples/${id}.mp3?v=${APP_BUILD_VERSION}`;
+                wordAudioPlayer.src = resolveAudioUrl(`audio/examples/${id}.mp3?v=${APP_BUILD_VERSION}`);
                 wordAudioPlayer.playbackRate = globalSpeechRate;
                 const p = wordAudioPlayer.play();
                 if (p && typeof p.catch === 'function') {
@@ -11049,7 +11076,7 @@ function cleanupMasteredMistakes() {
                 // 0. 優先比對：常用搭配詞與精選片語 (Collocations & Phrases)
                 if (typeof window.COLLOCATIONS_AUDIO_MANIFEST !== 'undefined' && window.COLLOCATIONS_AUDIO_MANIFEST.has(cleanLower)) {
                     const colPath = window.COLLOCATIONS_AUDIO_MANIFEST.get(cleanLower);
-                    wordAudioPlayer.src = colPath;
+                    wordAudioPlayer.src = resolveAudioUrl(colPath);
                     wordAudioPlayer.playbackRate = globalSpeechRate;
                     attachCallback(wordAudioPlayer, () => playOnlineAudioStream(clean, onEndedCallback));
                     const p = wordAudioPlayer.play();
@@ -11085,7 +11112,7 @@ function cleanupMasteredMistakes() {
                 }
 
                 if (exampleId && typeof window.EXAMPLES_AUDIO_MANIFEST !== 'undefined' && window.EXAMPLES_AUDIO_MANIFEST.has(Number(exampleId))) {
-                    wordAudioPlayer.src = `audio/examples/${exampleId}.mp3?v=${APP_BUILD_VERSION}`;
+                    wordAudioPlayer.src = resolveAudioUrl(`audio/examples/${exampleId}.mp3?v=${APP_BUILD_VERSION}`);
                     wordAudioPlayer.playbackRate = globalSpeechRate;
                     attachCallback(wordAudioPlayer, () => speakViaSynthesisOrTTS(clean, onEndedCallback));
                     const p = wordAudioPlayer.play();
@@ -17280,7 +17307,7 @@ function cleanupMasteredMistakes() {
                 const targetBase = article.audio.split('?')[0];
                 const curSrc = (listeningAudioPlayer.src || '').split('?')[0];
                 if (!curSrc.endsWith(targetBase)) {
-                    listeningAudioPlayer.src = article.audio + (article.audio.includes('?') ? '&' : '?') + 'v=' + APP_BUILD_VERSION;
+                    listeningAudioPlayer.src = resolveAudioUrl(article.audio + (article.audio.includes('?') ? '&' : '?') + 'v=' + APP_BUILD_VERSION);
                 }
                 listeningAudioPlayer.playbackRate = parseFloat(document.getElementById('listening-speed').value || '1');
             }
@@ -18929,7 +18956,7 @@ function cleanupMasteredMistakes() {
 
             const targetAudio = currentSelectedListeningArticle.audio;
             // 帶版本號防止瀏覽器快取舊音檔或 Range 錯亂
-            const targetAudioUrl = targetAudio + (targetAudio.includes('?') ? '&' : '?') + 'v=' + APP_BUILD_VERSION;
+            const targetAudioUrl = resolveAudioUrl(targetAudio + (targetAudio.includes('?') ? '&' : '?') + 'v=' + APP_BUILD_VERSION);
             const startTime = (listeningSentences[index] && typeof listeningSentences[index].start === 'number') 
                 ? listeningSentences[index].start 
                 : 0;

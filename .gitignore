@@ -37,3 +37,6 @@ tmp/
 .env
 .env.local
 .env.*.local
+
+# 音檔已分家至 EN-audio-words / EN-audio-examples / EN-audio-zh CDN (由 NTFS Junction 接回本機開發用)
+audio/

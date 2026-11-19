@@ -305,8 +305,8 @@ _FAKE_PERSON_EXPLICIT_RE = re.compile(
     r"|(?:特務|發明家|魔法師|探險家|科學家|考古學家|偵探|騎士|大師|專家|將軍|國王)「[\u4e00-\u9fff]{2,5}」"
 )
 _VULGAR_OR_UNLUCKY_RE = re.compile(
-    r"[死殺亡屍棺墳冥咒瘟屁屎尿蠢賤妓娼婊鬼]"
-    r"|他媽|媽的|靠北|靠杯|白癡|白痴|智障|低能|王八|暴斃|暴卒|血腥|慘劇|地獄|閻羅"
+    r"[死殺亡屍棺墳咒瘟屁屎尿蠢賤妓娼婊鬼]|冥(?!想)"
+    r"|他媽|媽的|靠北|靠杯|白癡|白痴|智障|低能(?!見)|王八|暴斃|暴卒|血腥|慘劇|地獄|閻羅"
 )
 _ROLE_CANDIDATE_RE = re.compile(
     r"(?:特務|發明家|魔法師|探險家|科學家|考古學家|偵探|騎士|大師|專家|將軍|國王)([\u4e00-\u9fff]{2,5})"
@@ -375,10 +375,15 @@ def audit_mnemonic(word: str, text: str, allowed_zh: str = "") -> dict[str, Any]
 
     vulg_hits = _VULGAR_OR_UNLUCKY_RE.findall(s)
     if vulg_hits:
-        allowed_set = set(allowed_zh or "")
+        raw_allowed = allowed_zh or ""
+        allowed_set = set(raw_allowed)
         if allowed_set & {"死", "亡", "殺"}:
             allowed_set |= {"死", "亡", "殺"}
-        real_hits = [h for h in vulg_hits if not (len(h) == 1 and h in allowed_set and h not in "妓娼婊")]
+        real_hits = [
+            h for h in vulg_hits
+            if h in ("妓", "娼", "婊")
+            or not ((len(h) == 1 and h in allowed_set) or (len(h) >= 2 and h in raw_allowed))
+        ]
         if real_hits:
             issues.append("vulgar_or_unlucky")
             score -= 40
@@ -413,7 +418,7 @@ def audit_mnemonic(word: str, text: str, allowed_zh: str = "") -> dict[str, Any]
                         issues.append("scene1_disconnected")
                         score -= 35
                         break
-                    if len(q) >= 2 and q in sec2_text:
+                    if len(q) >= 2 and q in sec2_text and q not in (allowed_zh or ""):
                         issues.append("phonetic_leak_in_sec2")
                         score -= 25
                         break

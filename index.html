@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261119V2';
+        const APP_BUILD_VERSION = '20261119V3';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -10592,12 +10592,16 @@ function cleanupMasteredMistakes() {
         }
 
         // 單字插圖動態渲染與燈箱 (SDXL-Turbo 256x256 WebP，手機端卡背微型徽章防爆版)
+        function normalizeWordImageKey(word) {
+            return String(word || '').trim().toLowerCase().replace(/[\s\-_]+/g, '_').replace(/[^a-z0-9_]/g, '');
+        }
+
         function updateCardImage(wordObj) {
             const wrap = document.getElementById('card-image-thumb-wrap');
             const thumb = document.getElementById('card-image-thumb');
             if (!wrap || !thumb) return;
             const w = wordObj || currentWord || {};
-            const clean = (w.en || '').trim().toLowerCase().replace(/[\s\-_]+/g, '_').replace(/[^a-z0-9_]/g, '');
+            const clean = normalizeWordImageKey(w.en);
             const manifest = window.WORD_IMAGES_MANIFEST;
             if (clean && manifest && manifest.has(clean)) {
                 const v = encodeURIComponent(typeof APP_BUILD_VERSION !== 'undefined' ? APP_BUILD_VERSION : '1');
@@ -10612,7 +10616,8 @@ function cleanupMasteredMistakes() {
 
         function openWordImageLightbox(word) {
             if (!word) return;
-            const clean = String(word).trim().toLowerCase().replace(/[\s\-_]+/g, '_').replace(/[^a-z0-9_]/g, '');
+            const clean = normalizeWordImageKey(word);
+            const rawLower = String(word).trim().toLowerCase();
             const modal = document.getElementById('word-image-lightbox-modal');
             const img = document.getElementById('word-lightbox-img');
             const title = document.getElementById('word-lightbox-title');
@@ -10623,10 +10628,10 @@ function cleanupMasteredMistakes() {
             if (title) title.innerText = word;
             if (zhEl) {
                 let zhText = '';
-                if (typeof currentWord !== 'undefined' && currentWord && currentWord.en && currentWord.en.toLowerCase() === clean) {
+                if (typeof currentWord !== 'undefined' && currentWord && currentWord.en && (currentWord.en.trim().toLowerCase() === rawLower || normalizeWordImageKey(currentWord.en) === clean)) {
                     zhText = currentWord.zh || '';
                 } else if (typeof vocabularyDB !== 'undefined') {
-                    const found = vocabularyDB.find(w => w && w.en && w.en.toLowerCase() === clean);
+                    const found = vocabularyDB.find(w => w && w.en && (w.en.trim().toLowerCase() === rawLower || normalizeWordImageKey(w.en) === clean));
                     if (found) zhText = found.zh || '';
                 }
                 zhEl.innerText = zhText ? cleanText(zhText) : '';
@@ -14167,11 +14172,12 @@ function cleanupMasteredMistakes() {
                 </div>
 
                 ${(() => {
-                    const clean = (w.en || '').trim().toLowerCase().replace(/[\s\-_]+/g, '_').replace(/[^a-z0-9_]/g, '');
+                    const clean = normalizeWordImageKey(w.en);
                     if (window.WORD_IMAGES_MANIFEST && window.WORD_IMAGES_MANIFEST.has(clean)) {
                         const v = encodeURIComponent(typeof APP_BUILD_VERSION !== 'undefined' ? APP_BUILD_VERSION : '1');
+                        const safeArg = esc(w.en).replace(/'/g, '&#39;');
                         return `
-                            <div class="flex items-center justify-center p-3 rounded-2xl bg-gradient-to-b from-slate-50 to-white dark:from-slate-800/60 dark:to-slate-900/40 border border-slate-200/80 dark:border-slate-700/60 shadow-2xs cursor-pointer group" onclick="openWordImageLightbox('${esc(w.en)}')">
+                            <div class="flex items-center justify-center p-3 rounded-2xl bg-gradient-to-b from-slate-50 to-white dark:from-slate-800/60 dark:to-slate-900/40 border border-slate-200/80 dark:border-slate-700/60 shadow-2xs cursor-pointer group" onclick="openWordImageLightbox('${safeArg}')">
                                 <img src="images/words/${clean}.webp?v=${v}" alt="${esc(w.en)}" class="w-32 h-32 sm:w-40 sm:h-40 object-contain rounded-xl drop-shadow-md group-hover:scale-105 transition-transform" loading="lazy" />
                             </div>
                         `;

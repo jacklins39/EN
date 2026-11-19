@@ -60,6 +60,10 @@ CURATED_ETYMOLOGY: dict[str, str] = {
     "trivial": "真實詞源：tri-（三）+ via（路，如三叉路口），古羅馬人常在三條路交會處閒聊日常瑣事，演變為「瑣碎的、微不足道的」。",
     "candidate": "真實詞源：來自拉丁語 candidatus（穿著「純白長袍」的人，字根 cand- 白／發光），古羅馬參選人穿白袍以示清白廉潔。",
     "panic": "真實詞源：來自希臘神話牧羊神 Pan（潘神），傳說他躲在樹林裡突然大喊，常驚嚇旅人引發集體恐慌。",
+    "edible": "真實構詞與詞源：字根 ed-（吃，與 eat 同源，源自印歐語詞根 *ed-「吃」）+ -ible（能……的，形容詞字尾），字面即「能吃的、可食用的」。常見搭配如 edible food（可食用的食物）。",
+    "tart": "真實構詞與詞源：名詞「水果餡餅、蛋塔（tart）」源自古法語 tarte（扁平烤餅，如台灣常見的蛋塔、蘋果塔）；形容詞「酸的、尖酸的」與 tartly / tartness 同詞族，本義為口感清爽微酸，引申為說話「尖酸刻薄（a tart remark）」。僅寫甜點與酸味／語氣，嚴禁提及其他任何低俗或職業詞義！",
+    "damnedest": "真實構詞與詞源：由口語強調詞 damned 加上最高級字尾 -est 構成（對照 best, greatest），現代日常英文中專指慣用語 do/try one's damnedest（竭盡所能、全力以赴）與 the damnedest thing（極不尋常、最奇妙的事）。嚴禁寫出「死、地獄、詛咒」等任何字眼，請用「極致、全力以赴、奇妙」來解釋！",
+    "bravo": "真實構詞與詞源：源自義大利語讚美詞 bravo（優秀的、幹得好！，與英文 brave「勇敢的」同源）。在音樂會、歌劇院或表演結束後，觀眾大喊 Bravo! 就是對演出者熱情喝采「太棒了！」。嚴禁提及殺手或暴力字眼！",
 }
 
 DUAL_SYSTEM_PROMPT = """你是一位台灣極受歡迎、治學嚴謹又幽默的資深英文老師，擅長同時用「圖像諧音」與「真實字源詞族」教學生一次記牢單字、不搞混發音。
@@ -169,8 +173,23 @@ def _build_word_prompt(meta: dict[str, Any], existing_text: str) -> str:
     hints = _extract_existing_hints(existing_text)
     wn_def, wn_rel = _extract_wordnet_hints(en)
     etym_note = CURATED_ETYMOLOGY.get(key, "")
+    if wn_def and re.search(
+        r"\b(?:murderer|kills for hire|sexual intercourse|eternal punishment|through hell|death or the dead)\b",
+        wn_def,
+        re.I,
+    ):
+        wn_def = ""
+        wn_rel = []
+    if etym_note:
+        wn_rel = []
+    if key in {"tart", "bravo", "damnedest"}:
+        syn = []
+        ant = []
 
-    kk_hook = hints.get("existing_hook") or kh.kk_to_natural_hook(en, kk)
+    raw_existing_hook = hints.get("existing_hook")
+    if key == "mrs" and raw_existing_hook == "密斯":
+        raw_existing_hook = ""
+    kk_hook = raw_existing_hook or kh.kk_to_natural_hook(en, kk)
 
     lines = [
         f"單字：{en}",
@@ -178,6 +197,8 @@ def _build_word_prompt(meta: dict[str, Any], existing_text: str) -> str:
         f"英式 UK 音標：{uk or '(無)'}",
         f"中文釋義：{zh}",
     ]
+    if key in {"valley", "condemn", "ghastly", "damnedest", "dante", "tart", "bravo"}:
+        lines.append("清新安全提醒：請用正向、陽光的日常情境記憶，嚴禁提及「死、亡、殺、鬼、地獄、妓、恐怖片」等不吉詞彙！")
     if wn_def:
         lines.append(f"英文核心釋義參考：{wn_def}")
     if wn_rel:
@@ -189,7 +210,8 @@ def _build_word_prompt(meta: dict[str, Any], existing_text: str) -> str:
     elif hints.get("existing_roots"):
         lines.append(f"現有字根參考：{hints['existing_roots']}（請確認是否為真實英語構詞後精煉展開，若屬牽強附會或無法確認源流，請改用記憶錨點）")
     else:
-        lines.append("構詞提示：若無十足把握的真實英語詞源或透明字根，#### 2. 請直接改用「* 記憶錨點：」說明詞族關係、重要片語或拼字規律，嚴禁臆測古語字根。")
+        short_rule = "短字或專有名詞絕對禁止出現「來自／源自拉丁語、古英語、古法語、希臘語、古諾斯語」等字眼！" if len(key) <= 6 else ""
+        lines.append(f"構詞提示：若無十足把握的真實英語詞源或透明字根，#### 2. 請直接改用「* 記憶錨點：」說明詞族關係、重要片語或拼字規律，嚴禁臆測古語字根。{short_rule}")
     if syn:
         lines.append(f"同義詞：{', '.join(str(x) for x in syn[:4])}")
     if ant:
@@ -416,7 +438,11 @@ def compile_entries(
             elif "placeholder_leak" in last_issues:
                 extra_fix = " 注意：不可寫「腦內自動浮現」「腦海浮現」「（音節）」等套語！"
             elif "ungrounded_dead_language_etymology" in last_issues:
-                extra_fix = " 注意：請勿在 #### 2. 編造「來自拉丁語／古英語／古法語」，直接改寫高頻片語搭配、反義詞對比或現代構詞關係即可！"
+                extra_fix = " 注意：請勿在 #### 2. 編造或提及「來自拉丁語／古英語／古法語／希臘語」，直接改寫高頻片語搭配、反義詞對比或現代構詞關係即可！"
+            elif "vulgar_or_unlucky" in last_issues:
+                extra_fix = " 注意：嚴禁出現死、亡、殺、鬼、屍、屁、屎、蠢、智障、血腥、地獄等不雅或不吉利詞彙，改寫為完全清新卡通的生活情境！"
+            elif "duplicate_scene_hook" in last_issues or "unbalanced_markdown" in last_issues:
+                extra_fix = " 注意：僅 1 組諧音時只寫「畫面 1」，不要寫「畫面 2」；並確認每一行 **粗體** 星號成對！"
             retry_note = f"上一次輸出未通過檢查：{last_issues}。{extra_fix}請確保使用純繁體中文、保留 #### 1. 與 #### 2.、諧音字元真實出現於畫面 1/2 中。"
 
         dt = time.monotonic() - t0

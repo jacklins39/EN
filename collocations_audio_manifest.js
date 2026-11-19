@@ -103,5 +103,21 @@ window.COLLOCATIONS_AUDIO_MANIFEST = new Map(Object.entries({
   "born and raised": "audio/collocations/born_and_raised.mp3",
   "a born leader": "audio/collocations/a_born_leader.mp3",
   "born with...": "audio/collocations/born_with.mp3",
-  "be born in / on": "audio/collocations/be_born_in.mp3"
+  "be born in / on": "audio/collocations/be_born_in.mp3",
+  "catch one's eye": "audio/collocations/catch_ones_eye.mp3"
+}));
+window.GRAMMAR_AUDIO_MANIFEST = new Map(Object.entries({
+  "is it for here or to go? — to go, please.": "audio/examples/grammar/g_ed87410984.mp3",
+  "here is a ten dollar bill. keep the change.": "audio/examples/grammar/g_48b8999b7d.mp3",
+  "do not be afraid of failure... keep exploring your interests, stay curious, and eventually, you will find your unique path.": "audio/examples/grammar/g_96ad892795.mp3",
+  "our collaboration with influencers has significantly boosted brand awareness among younger consumers.": "audio/examples/grammar/g_3e79e89986.mp3",
+  "moving forward, let us examine the regional performance breakdown in greater detail.": "audio/examples/grammar/g_18abe38037.mp3",
+  "we have achieved every milestone ahead of the projected timeline.": "audio/examples/grammar/g_a1e1066515.mp3",
+  "our primary focus shifts to finalizing the manual and delivering the key project deliverables.": "audio/examples/grammar/g_5f35aa3e3b.mp3",
+  "please sign up... so we can order enough food.": "audio/examples/grammar/g_2fcef4f723.mp3",
+  "do not be afraid of failure.": "audio/examples/grammar/g_1a7693f8e2.mp3",
+  "flight 842 is now ready for boarding at gate 15.": "audio/examples/grammar/g_c34c326853.mp3",
+  "try to avoid looking at electronic screens.": "audio/examples/grammar/g_c7eaa84f31.mp3",
+  "robust recovery, driven by strong consumer spending.": "audio/examples/grammar/g_017228b847.mp3",
+  "central banks may adjust interest rates.": "audio/examples/grammar/g_c795f41cb3.mp3"
 }));

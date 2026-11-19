@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261119V6';
+        const APP_BUILD_VERSION = '20261119V7';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -92,6 +92,7 @@
                 'words_audio_manifest.js',
                 'examples_audio_manifest.js',
                 'zh_audio_manifest.js',
+                'example_zh_audio_manifest.js',
                 'images_manifest.js',
                 'collocations_audio_manifest.js',
                 'syn_ant_data.js',
@@ -7189,7 +7190,7 @@ function cleanupMasteredMistakes() {
             }
         }
 
-        function speakExampleZh(exampleZhText, onEndedCallback, expectedToken = null) {
+        function speakExampleZh(exampleZhText, onEndedCallback, expectedToken = null, wordId = null) {
             if (isSpeechEvalActive) {
                 if (typeof onEndedCallback === 'function') onEndedCallback();
                 return;
@@ -7208,6 +7209,60 @@ function cleanupMasteredMistakes() {
                 return;
             }
             unlockMobileAudio();
+
+            // 1. 優先直連 Edge-TTS 台灣真人神經聲線 MP3 (zh-TW-HsiaoChenNeural -> audio/example_zh/{canonId}.mp3)
+            const rawId = Number(
+                wordId ||
+                (typeof currentWord !== 'undefined' && currentWord && currentWord.id && cleanText(currentWord.exampleZh || '') === cleanText(exampleZhText || '') ? currentWord.id : 0)
+            );
+            let canonExZhId = 0;
+            if (rawId) {
+                if (typeof window.EXAMPLE_ZH_AUDIO_ALIAS !== 'undefined' && window.EXAMPLE_ZH_AUDIO_ALIAS.has(rawId)) {
+                    canonExZhId = window.EXAMPLE_ZH_AUDIO_ALIAS.get(rawId);
+                } else if (typeof window.EXAMPLE_ZH_AUDIO_MANIFEST !== 'undefined' && window.EXAMPLE_ZH_AUDIO_MANIFEST.has(rawId)) {
+                    canonExZhId = rawId;
+                }
+            }
+
+            if (canonExZhId) {
+                clearAudioCallbacks();
+                let called = false;
+                const done = () => {
+                    if (called) return;
+                    called = true;
+                    clearAudioCallbacks();
+                    if (myToken !== (window._audioPlaybackGen || 0)) return;
+                    if (typeof onEndedCallback === 'function') onEndedCallback();
+                };
+                const onError = (e) => {
+                    if (called) return;
+                    if (wordAudioPlayer && wordAudioPlayer.error && wordAudioPlayer.error.code === 20) return;
+                    called = true;
+                    clearAudioCallbacks();
+                    if (myToken !== (window._audioPlaybackGen || 0)) return;
+                    playOnlineChineseStream(cleanExZh, onEndedCallback, myToken);
+                };
+                try {
+                    wordAudioPlayer.pause();
+                    wordAudioPlayer.currentTime = 0;
+                } catch(e) {}
+                currentAudioDoneHandler = done;
+                currentAudioErrorHandler = onError;
+                wordAudioPlayer.addEventListener('ended', done, { once: true });
+                wordAudioPlayer.addEventListener('error', onError, { once: true });
+                audioFallbackTimerId = setTimeout(done, getScaledAudioFallbackMs(Math.max(7000, cleanExZh.length * 360 + 2500)));
+                wordAudioPlayer.src = resolveAudioUrl(`audio/example_zh/${canonExZhId}.mp3?v=${APP_BUILD_VERSION}`);
+                wordAudioPlayer.playbackRate = globalSpeechRate;
+                const playPromise = wordAudioPlayer.play();
+                if (playPromise !== undefined) {
+                    playPromise.catch((err) => {
+                        if (err && (err.name === 'AbortError' || err.code === 20)) return;
+                        console.warn('Local exampleZh audio error, fallback to stream:', err);
+                        onError(err);
+                    });
+                }
+                return;
+            }
 
             const isMobile = isMobileDevice();
             const bestVoice = getBestChineseVoice();
@@ -7280,7 +7335,7 @@ function cleanupMasteredMistakes() {
             }
         }
 
-        // 逐字母拼讀核心函數 (首選 Google TTS 完整流暢整段 MP3 串流，備援 Web Speech API)
+        // 逐字母拼讀核心函數 (100% 使用 Edge-TTS 真人字母 MP3 無縫拼接，Web Audio API 為主、HTML5 Audio 依序播放為輔)
         function playSpellLetters(word, onEndedCallback, fromBackside = false) {
             if (isSpeechEvalActive) {
                 if (typeof onEndedCallback === 'function') onEndedCallback();
@@ -7295,21 +7350,30 @@ function cleanupMasteredMistakes() {
             const myToken = window._audioPlaybackGen || 0;
 
             const raw = String(word).trim();
-            // 拆分單字/片語，將英文字母轉為大寫並用空格分隔（片語或連字號以逗號隔開），讓 TTS 進入自然流暢的逐字母拼讀模式
             const parts = raw.split(/[\s\-]+/);
-            const formattedWords = parts.map(part => {
-                const letters = part.replace(/[^a-zA-Z]/g, '').toUpperCase().split('').join(', ');
-                return letters;
-            }).filter(Boolean);
+            const wordLetterGroups = parts.map(part =>
+                part.replace(/[^a-zA-Z]/g, '').toLowerCase().split('')
+            ).filter(arr => arr.length > 0);
 
-            if (formattedWords.length === 0) {
+            if (wordLetterGroups.length === 0) {
                 if (typeof onEndedCallback === 'function') onEndedCallback();
                 return;
             }
 
-            const spelledText = formattedWords.join(' ,,, ');
+            // 建立完整發音序列：每個字母對應 { ch }，單字之間插入 { gapMs }
+            const sequence = [];
+            wordLetterGroups.forEach((letters, gIdx) => {
+                if (gIdx > 0) sequence.push({ gapMs: 180 });
+                letters.forEach((ch, lIdx) => {
+                    if (lIdx > 0) sequence.push({ gapMs: 45 });
+                    sequence.push({ ch });
+                });
+            });
+            const spelledText = wordLetterGroups.map(arr => arr.map(c => c.toUpperCase()).join(', ')).join(' ,,, ');
 
             let isCancelled = false;
+            let activeSourceNode = null;
+            let fallbackSeqTimer = null;
 
             const spellBtn = document.getElementById('btn-card-voice-spell');
             if (spellBtn) {
@@ -7317,6 +7381,14 @@ function cleanupMasteredMistakes() {
             }
 
             const cleanup = () => {
+                if (fallbackSeqTimer) {
+                    clearTimeout(fallbackSeqTimer);
+                    fallbackSeqTimer = null;
+                }
+                if (activeSourceNode) {
+                    try { activeSourceNode.onended = null; activeSourceNode.stop(); } catch(e) {}
+                    activeSourceNode = null;
+                }
                 if (spellBtn) {
                     spellBtn.className = 'w-20 h-7 rounded-full text-xs font-normal flex items-center justify-center cursor-pointer transition-colors shadow-2xs border bg-slate-50 text-slate-600 border-slate-200/90 hover:bg-slate-100/80';
                 }
@@ -7336,7 +7408,6 @@ function cleanupMasteredMistakes() {
                 }
             };
 
-            // 備援方案：瀏覽器原生語音合成 (Web Speech API)，離線或無網路時 100% 正常播放
             const fallbackSpeechSynthesis = () => {
                 if (isCancelled || myToken !== (window._audioPlaybackGen || 0)) return;
                 if (!('speechSynthesis' in window)) {
@@ -7349,82 +7420,160 @@ function cleanupMasteredMistakes() {
                         const utter = new SpeechSynthesisUtterance(spelledText);
                         utter.lang = 'en-US';
                         utter.rate = 0.9;
-                        utter.onend = () => {
-                            window._activeSpeechUtterance = null;
-                            finish();
-                        };
-                        utter.onerror = () => {
-                            window._activeSpeechUtterance = null;
-                            finish();
-                        };
+                        const v = getBestNeuralVoice();
+                        if (v) utter.voice = v;
+                        utter.onend = () => { window._activeSpeechUtterance = null; finish(); };
+                        utter.onerror = () => { window._activeSpeechUtterance = null; finish(); };
                         window._activeSpeechUtterance = utter;
                         window.speechSynthesis.speak(utter);
-                    } catch(e) {
-                        finish();
-                    }
+                    } catch(e) { finish(); }
                 };
                 try {
                     if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
                         window.speechSynthesis.cancel();
                         setTimeout(runUtter, 60);
-                    } else {
-                        runUtter();
-                    }
-                } catch(e) {
-                    finish();
-                }
+                    } else { runUtter(); }
+                } catch(e) { finish(); }
             };
 
-            // 首選：Google TTS 完整流暢整段 MP3（以單一音訊流播放，節奏自然、零切換延遲）
-            const ttsUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=en&client=tw-ob&q=${encodeURIComponent(spelledText)}`;
+            // 次要真人備援：直接使用 wordAudioPlayer 依序播放 audio/letters/{ch}.mp3 (適用 file:// 等無 fetch 環境)
+            const playLettersViaSequentialHtmlAudio = () => {
+                if (isCancelled || myToken !== (window._audioPlaybackGen || 0)) return;
+                let idx = 0;
+                const step = () => {
+                    if (isCancelled || myToken !== (window._audioPlaybackGen || 0)) return;
+                    if (idx >= sequence.length) {
+                        finish();
+                        return;
+                    }
+                    const item = sequence[idx++];
+                    if (item.gapMs) {
+                        fallbackSeqTimer = setTimeout(step, item.gapMs);
+                        return;
+                    }
+                    const letterUrl = resolveAudioUrl(`audio/letters/${item.ch}.mp3?v=${APP_BUILD_VERSION}`);
+                    try {
+                        wordAudioPlayer.pause();
+                        wordAudioPlayer.currentTime = 0;
+                    } catch(e) {}
+                    clearAudioCallbacks();
+                    let called = false;
+                    const next = () => {
+                        if (called || isCancelled) return;
+                        called = true;
+                        clearAudioCallbacks();
+                        step();
+                    };
+                    const err = () => {
+                        if (called || isCancelled) return;
+                        if (wordAudioPlayer.error && wordAudioPlayer.error.code === 20) return;
+                        called = true;
+                        clearAudioCallbacks();
+                        fallbackSpeechSynthesis();
+                    };
+                    currentAudioDoneHandler = next;
+                    currentAudioErrorHandler = err;
+                    wordAudioPlayer.addEventListener('ended', next, { once: true });
+                    wordAudioPlayer.addEventListener('error', err, { once: true });
+                    audioFallbackTimerId = setTimeout(next, 2500);
+                    wordAudioPlayer.src = letterUrl;
+                    wordAudioPlayer.playbackRate = Math.max(0.85, globalSpeechRate);
+                    const p = wordAudioPlayer.play();
+                    if (p && typeof p.catch === 'function') {
+                        p.catch(e => {
+                            if (e && (e.name === 'AbortError' || e.code === 20)) return;
+                            if (!isCancelled) fallbackSpeechSynthesis();
+                        });
+                    }
+                };
+                step();
+            };
+
+            // 首選真人方案：Web Audio API 平行預載 + 靜音修剪 + 無縫拼接為單一真人字母串流
+            const AudioCtx = window.AudioContext || window.webkitAudioContext;
+            if (!AudioCtx || (window.location && window.location.protocol === 'file:')) {
+                playLettersViaSequentialHtmlAudio();
+                return;
+            }
 
             try {
-                wordAudioPlayer.pause();
-                wordAudioPlayer.currentTime = 0;
-            } catch(e) {}
+                if (!window._spellLettersAudioCtx) {
+                    window._spellLettersAudioCtx = (typeof audioCtx !== 'undefined' && audioCtx) ? audioCtx : new AudioCtx();
+                }
+                const ctx = window._spellLettersAudioCtx;
+                if (ctx.state === 'suspended') {
+                    ctx.resume().catch(() => {});
+                }
+                if (!window._letterAudioBufferCache) {
+                    window._letterAudioBufferCache = new Map();
+                }
+                const cache = window._letterAudioBufferCache;
+                const uniqueLetters = Array.from(new Set(wordLetterGroups.flat()));
 
-            const attachCallback = (audioEl) => {
-                clearAudioCallbacks();
-                let called = false;
-                const next = () => {
-                    if (called || isCancelled) return;
-                    called = true;
-                    clearAudioCallbacks();
-                    finish();
-                };
-                const onError = () => {
-                    if (called || isCancelled) return;
-                    if (audioEl && audioEl.error && audioEl.error.code === 20) return;
-                    called = true;
-                    clearAudioCallbacks();
-                    fallbackSpeechSynthesis();
-                };
-                currentAudioDoneHandler = next;
-                currentAudioErrorHandler = onError;
-                audioEl.addEventListener('ended', next, { once: true });
-                audioEl.addEventListener('error', onError, { once: true });
-                // 字母拼讀超時防呆保護
-                const safeTimeout = Math.max(5000, spelledText.length * 800);
-                audioFallbackTimerId = setTimeout(() => {
-                    if (called || isCancelled) return;
-                    called = true;
-                    clearAudioCallbacks();
-                    fallbackSpeechSynthesis();
-                }, safeTimeout);
-            };
+                Promise.all(uniqueLetters.map(async (ch) => {
+                    if (cache.has(ch)) return;
+                    const url = resolveAudioUrl(`audio/letters/${ch}.mp3?v=${APP_BUILD_VERSION}`);
+                    const resp = await fetch(url);
+                    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+                    const arrBuf = await resp.arrayBuffer();
+                    const decoded = await ctx.decodeAudioData(arrBuf);
+                    cache.set(ch, decoded);
+                })).then(() => {
+                    if (isCancelled || myToken !== (window._audioPlaybackGen || 0)) return;
+                    const sampleRate = ctx.sampleRate;
+                    const trimBufferRange = (buf) => {
+                        const data = buf.getChannelData(0);
+                        let start = 0;
+                        let end = data.length - 1;
+                        const thresh = 0.008;
+                        while (start < data.length && Math.abs(data[start]) < thresh) start++;
+                        while (end > start && Math.abs(data[end]) < thresh) end--;
+                        start = Math.max(0, start - Math.floor(sampleRate * 0.015));
+                        end = Math.min(data.length, end + Math.floor(sampleRate * 0.025));
+                        return { data, start, len: Math.max(1, end - start) };
+                    };
 
-            wordAudioPlayer.src = ttsUrl;
-            wordAudioPlayer.playbackRate = 1.0;
-            attachCallback(wordAudioPlayer);
+                    const chunks = [];
+                    let totalSamples = 0;
+                    for (const item of sequence) {
+                        if (item.gapMs) {
+                            const gLen = Math.floor(sampleRate * (item.gapMs / 1000));
+                            chunks.push({ gap: gLen });
+                            totalSamples += gLen;
+                        } else {
+                            const buf = cache.get(item.ch);
+                            const trimmed = trimBufferRange(buf);
+                            chunks.push(trimmed);
+                            totalSamples += trimmed.len;
+                        }
+                    }
 
-            const p = wordAudioPlayer.play();
-            if (p !== undefined) {
-                p.catch(err => {
-                    if (err && (err.name === 'AbortError' || err.code === 20)) return;
-                    if (!isCancelled) {
-                        fallbackSpeechSynthesis();
+                    const merged = ctx.createBuffer(1, Math.max(1, totalSamples), sampleRate);
+                    const out = merged.getChannelData(0);
+                    let offset = 0;
+                    for (const c of chunks) {
+                        if (c.gap) {
+                            offset += c.gap;
+                        } else {
+                            out.set(c.data.subarray(c.start, c.start + c.len), offset);
+                            offset += c.len;
+                        }
+                    }
+
+                    const src = ctx.createBufferSource();
+                    src.buffer = merged;
+                    src.playbackRate.value = Math.max(0.85, globalSpeechRate || 1.0);
+                    src.connect(ctx.destination);
+                    activeSourceNode = src;
+                    src.onended = () => finish();
+                    src.start(0);
+                }).catch(() => {
+                    if (!isCancelled && myToken === (window._audioPlaybackGen || 0)) {
+                        playLettersViaSequentialHtmlAudio();
                     }
                 });
+            } catch(e) {
+                playLettersViaSequentialHtmlAudio();
             }
         }
 
@@ -7453,7 +7602,7 @@ function cleanupMasteredMistakes() {
                         speakExampleZh(targetWord.exampleZh, () => {
                             if (playbackToken !== (window._audioPlaybackGen || 0)) return;
                             if (typeof onEndedCallback === 'function') onEndedCallback();
-                        }, playbackToken);
+                        }, playbackToken, targetWord.id);
                     }, 250);
                 } else {
                     if (typeof onEndedCallback === 'function') onEndedCallback();
@@ -8065,7 +8214,7 @@ function cleanupMasteredMistakes() {
                     collocListEl.innerHTML = collocations.slice(0, 4).map(c => {
                         const phrase = typeof c === 'string' ? c : (c.phrase || c.en || '');
                         const zh = typeof c === 'string' ? '' : (c.zh || '');
-                        return `<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-700/80 text-slate-800 dark:text-slate-100 hover:bg-amber-100/70 dark:hover:bg-amber-900/40 border border-slate-200/60 dark:border-slate-600 transition-colors cursor-pointer" onclick="event.stopPropagation(); playAudio('${phrase}');" title="點擊發音">
+                        return `<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-700/80 text-slate-800 dark:text-slate-100 hover:bg-amber-100/70 dark:hover:bg-amber-900/40 border border-slate-200/60 dark:border-slate-600 transition-colors cursor-pointer" data-col="${esc(phrase)}" onclick="event.stopPropagation(); playAudio(this.getAttribute('data-col'));" title="點擊發音">
                             <span class="font-bold text-amber-700 dark:text-amber-300">${phrase}</span>
                             ${zh ? `<span class="text-[11px] text-slate-500 dark:text-slate-400">(${zh})</span>` : ''}
                         </span>`;
@@ -10734,13 +10883,16 @@ function cleanupMasteredMistakes() {
             }
             try {
                 unlockMobileAudio();
-                const clean = cleanText(word).trim();
+                let clean = cleanText(word).trim();
+                clean = clean.replace(/\s*\(單複同形\)/g, '').trim();
+                if (clean.toLowerCase() === 'read [rɛd]') clean = 'red';
                 if (!clean) {
                     if (typeof onEndedCallback === 'function') onEndedCallback();
                     return;
                 }
-                const cleanLower = clean.toLowerCase();
-                const cleanSafe = cleanLower.replace(/[/\\:*?"<>|\s]+/g, '_').replace(/_+/g, '_').replace(/^_|_$/g, '');
+                const cleanLower = clean.toLowerCase().replace(/[’‘]/g, "'");
+                const cleanSafeRaw = cleanLower.replace(/[/\\:*?"<>|\s]+/g, '_').replace(/_+/g, '_').replace(/^_|_$/g, '');
+                const cleanSafe = /^(con|prn|aux|nul|com[1-9]|lpt[1-9])$/i.test(cleanSafeRaw) ? (cleanSafeRaw + '_') : cleanSafeRaw;
                 const targetAccent = (accent === 'uk' || accent === 'us' || accent === 'both') ? accent : getPreferredVoiceAccent();
                 const accentToken = window._audioPlaybackGen || 0;
 
@@ -10819,21 +10971,20 @@ function cleanupMasteredMistakes() {
                     };
 
                     if (isUk) {
-                        // 檢查瀏覽器是否支援高品質英國男聲
-                        let hasUkMaleVoice = false;
+                        // 檢查瀏覽器是否支援線上高音質英國神經人聲 (Natural / Online / Neural)，否則優先使用有道真人英音 (type=1)
+                        let hasUkNeuralVoice = false;
                         try {
                             const voices = window.speechSynthesis ? window.speechSynthesis.getVoices() || [] : [];
-                            hasUkMaleVoice = voices.some(v => {
+                            hasUkNeuralVoice = voices.some(v => {
                                 const l = v.lang.replace('_', '-').toLowerCase();
-                                return l.startsWith('en-gb') && /ryan|george|oliver|thomas|male|guy/i.test(v.name);
+                                return l.startsWith('en-gb') && /(?:natural|online|neural)/i.test(v.name) && /ryan|george|oliver|thomas|male|guy/i.test(v.name);
                             });
                         } catch(e) {}
 
-                        if (hasUkMaleVoice) {
+                        if (hasUkNeuralVoice) {
                             speakWordViaSynthesis(clean, 'uk', onEndedCallback);
                             return;
                         }
-                        // 若無英國男聲，走有道真人英音 (type=1)，確保永不失聲
                         fallbackToYoudaoOrSynthesis();
                         return;
                     }
@@ -10843,10 +10994,18 @@ function cleanupMasteredMistakes() {
 
                 // 1. 優先檢查本地離線真人 MP3 檔案庫 (audio/words/us/ 或 audio/words/uk/)
                 const manifest = isUk ? window.WORDS_AUDIO_MANIFEST_UK : window.WORDS_AUDIO_MANIFEST_US;
-                const hasLocal = manifest && (manifest.has(cleanSafe) || manifest.has(cleanLower));
+                const cleanNoDot = cleanLower.replace(/\.+$/, '');
+                const cleanNoDotRaw = cleanNoDot.replace(/[/\\:*?"<>|\s]+/g, '_').replace(/_+/g, '_').replace(/^_|_$/g, '');
+                const cleanNoDotSafe = /^(con|prn|aux|nul|com[1-9]|lpt[1-9])$/i.test(cleanNoDotRaw) ? (cleanNoDotRaw + '_') : cleanNoDotRaw;
+                const matchedKey = manifest
+                    ? (manifest.has(cleanSafe) ? cleanSafe
+                        : (manifest.has(cleanSafeRaw) ? cleanSafeRaw
+                            : (manifest.has(cleanLower) ? cleanLower
+                                : (manifest.has(cleanNoDotSafe) ? cleanNoDotSafe
+                                    : (manifest.has(cleanNoDot) ? cleanNoDot : null)))))
+                    : null;
 
-                if (hasLocal) {
-                    const matchedKey = manifest.has(cleanSafe) ? cleanSafe : cleanLower;
+                if (matchedKey) {
                     const subDir = isUk ? 'uk' : 'us';
                     wordAudioPlayer.src = resolveAudioUrl(`audio/words/${subDir}/${encodeURIComponent(matchedKey)}.mp3?v=${APP_BUILD_VERSION}`);
                     wordAudioPlayer.playbackRate = globalSpeechRate;
@@ -10859,6 +11018,16 @@ function cleanupMasteredMistakes() {
                             playOnlineStream();
                         });
                     }
+                    return;
+                }
+
+                // 1B. 形容詞 "more X" / "most X" 串接兩段真人單字 MP3 播放，確保比較級/最高級也是 100% 真人音訊
+                const compMatch = cleanLower.match(/^(more|most)\s+([a-z0-9\-']+)$/);
+                if (compMatch && manifest && manifest.has(compMatch[1]) && manifest.has(compMatch[2])) {
+                    playWordAccent(compMatch[1], targetAccent, () => {
+                        if (accentToken !== (window._audioPlaybackGen || 0)) return;
+                        playWordAccent(compMatch[2], targetAccent, onEndedCallback);
+                    });
                     return;
                 }
 
@@ -10977,7 +11146,7 @@ function cleanupMasteredMistakes() {
                 if (isSpeakExampleZhEnabled() && resolvedExZh) {
                     backsideAudioTimerId = setTimeout(() => {
                         if (playbackToken !== (window._audioPlaybackGen || 0)) return;
-                        speakExampleZh(resolvedExZh, finishExampleReplay, playbackToken);
+                        speakExampleZh(resolvedExZh, finishExampleReplay, playbackToken, id);
                     }, 250);
                 } else {
                     finishExampleReplay();
@@ -11073,9 +11242,10 @@ function cleanupMasteredMistakes() {
                     }
                 };
 
-                // 0. 優先比對：常用搭配詞與精選片語 (Collocations & Phrases)
-                if (typeof window.COLLOCATIONS_AUDIO_MANIFEST !== 'undefined' && window.COLLOCATIONS_AUDIO_MANIFEST.has(cleanLower)) {
-                    const colPath = window.COLLOCATIONS_AUDIO_MANIFEST.get(cleanLower);
+                // 0. 優先比對：常用搭配詞、文法例句與精選片語 (Collocations, Grammar & Phrases)
+                const cleanLowerNorm = cleanLower.replace(/[’‘]/g, "'");
+                if (typeof window.COLLOCATIONS_AUDIO_MANIFEST !== 'undefined' && (window.COLLOCATIONS_AUDIO_MANIFEST.has(cleanLowerNorm) || window.COLLOCATIONS_AUDIO_MANIFEST.has(cleanLower))) {
+                    const colPath = window.COLLOCATIONS_AUDIO_MANIFEST.get(cleanLowerNorm) || window.COLLOCATIONS_AUDIO_MANIFEST.get(cleanLower);
                     wordAudioPlayer.src = resolveAudioUrl(colPath);
                     wordAudioPlayer.playbackRate = globalSpeechRate;
                     attachCallback(wordAudioPlayer, () => playOnlineAudioStream(clean, onEndedCallback));
@@ -11088,6 +11258,24 @@ function cleanupMasteredMistakes() {
                         });
                     }
                     return;
+                }
+                if (typeof window.GRAMMAR_AUDIO_MANIFEST !== 'undefined') {
+                    const gramPath = window.GRAMMAR_AUDIO_MANIFEST.get(cleanLowerNorm)
+                        || window.GRAMMAR_AUDIO_MANIFEST.get(cleanLowerNorm.replace(/[.!?]+$/, ''));
+                    if (gramPath) {
+                        wordAudioPlayer.src = resolveAudioUrl(gramPath + (gramPath.includes('?') ? '&' : '?') + 'v=' + APP_BUILD_VERSION);
+                        wordAudioPlayer.playbackRate = globalSpeechRate;
+                        attachCallback(wordAudioPlayer, () => speakViaSynthesisOrTTS(clean, onEndedCallback));
+                        const p = wordAudioPlayer.play();
+                        if (p && typeof p.catch === 'function') {
+                            p.catch(e => {
+                                if (e && (e.name === 'AbortError' || e.code === 20)) return;
+                                console.warn("Grammar audio error, trying TTS:", e);
+                                speakViaSynthesisOrTTS(clean, onEndedCallback);
+                            });
+                        }
+                        return;
+                    }
                 }
 
                 // 1. 若為例句 (必須為多詞句子或明確傳入例句ID，無空格之獨立單字絕對不走例句判斷)
@@ -11124,10 +11312,17 @@ function cleanupMasteredMistakes() {
                         });
                     }
                     return;
-                } else if (!isWordCall && clean.includes(' ')) {
-                    // 若為例句且本地尚未快取音檔，直接以瀏覽器原生神經聲線朗讀，零等待零延遲
-                    speakViaSynthesisOrTTS(clean, onEndedCallback);
-                    return;
+                } else {
+                    // 若為片語型單字 / 比較級 (more/most X) 且存在於單字真人音檔庫，優先走真人 MP3 發音
+                    const wordSafeRaw = cleanLowerNorm.replace(/[/\\:*?"<>|\s]+/g, '_').replace(/_+/g, '_').replace(/^_|_$/g, '');
+                    const wordSafeKey = /^(con|prn|aux|nul|com[1-9]|lpt[1-9])$/i.test(wordSafeRaw) ? (wordSafeRaw + '_') : wordSafeRaw;
+                    const inWordsManifest = (window.WORDS_AUDIO_MANIFEST_US && (window.WORDS_AUDIO_MANIFEST_US.has(wordSafeKey) || window.WORDS_AUDIO_MANIFEST_US.has(wordSafeRaw)))
+                        || (window.WORDS_AUDIO_MANIFEST_UK && (window.WORDS_AUDIO_MANIFEST_UK.has(wordSafeKey) || window.WORDS_AUDIO_MANIFEST_UK.has(wordSafeRaw)))
+                        || /^(more|most)\s+[a-z0-9\-']+$/i.test(cleanLowerNorm);
+                    if (!inWordsManifest && !isWordCall && clean.includes(' ')) {
+                        speakViaSynthesisOrTTS(clean, onEndedCallback);
+                        return;
+                    }
                 }
 
                 // 2. 單字發音：全面使用真實母語人聲 (美音女聲 / 英音男聲，依偏好口音設定播放)
@@ -11445,7 +11640,7 @@ function cleanupMasteredMistakes() {
                 stopAllAudio();
                 const token = window._audioPlaybackGen || 0;
                 const wid = currentWord.id;
-                speakExampleZh(currentWord.exampleZh, () => scheduleAutoFlashcardAdvanceIfActive(wid, token), token);
+                speakExampleZh(currentWord.exampleZh, () => scheduleAutoFlashcardAdvanceIfActive(wid, token), token, currentWord.id);
             }
         });
 
@@ -19298,9 +19493,17 @@ function cleanupMasteredMistakes() {
                 grammarClipTimerId = null;
             }
             const firstPart = plainEn.split(' / ')[0].replace(/^[^a-zA-Z]+/, '').trim();
-            if (currentSelectedListeningArticle && currentSelectedListeningArticle.audio && Array.isArray(listeningSentences) && listeningSentences.length > 0 && firstPart.length >= 8) {
-                const probe = firstPart.slice(0, Math.min(28, firstPart.length)).toLowerCase();
-                const matchedIdx = listeningSentences.findIndex(s => (s.en || '').toLowerCase().includes(probe));
+            const firstPartLower = firstPart.toLowerCase().replace(/[’‘]/g, "'");
+            if (typeof window.GRAMMAR_AUDIO_MANIFEST !== 'undefined' && (window.GRAMMAR_AUDIO_MANIFEST.has(firstPartLower) || window.GRAMMAR_AUDIO_MANIFEST.has(firstPartLower.replace(/[.!?]+$/, '')))) {
+                playAudio(firstPart);
+                return;
+            }
+            if (currentSelectedListeningArticle && currentSelectedListeningArticle.audio && Array.isArray(listeningSentences) && listeningSentences.length > 0 && firstPart.length >= 2) {
+                const probe = firstPartLower.slice(0, Math.min(28, firstPartLower.length));
+                let matchedIdx = listeningSentences.findIndex(s => (s.en || '').toLowerCase().replace(/[’‘]/g, "'").trim() === firstPartLower);
+                if (matchedIdx === -1 && firstPart.length >= 8) {
+                    matchedIdx = listeningSentences.findIndex(s => (s.en || '').toLowerCase().replace(/[’‘]/g, "'").includes(probe));
+                }
                 if (matchedIdx !== -1) {
                     const sObj = listeningSentences[matchedIdx];
                     const sStart = typeof sObj.start === 'number' ? sObj.start : 0;
@@ -20326,10 +20529,10 @@ function cleanupMasteredMistakes() {
                                         ${cur.uk ? `<span class="text-[11px] font-mono text-slate-400 bg-slate-50 px-1.5 py-0.5 rounded">UK ${esc(cur.uk)}</span>` : ''}
                                     </div>
                                     <div class="flex items-center gap-2 mt-3" onclick="event.stopPropagation()">
-                                        <button onclick="playAudio('${safeEn}')" class="px-2.5 py-1 rounded-lg text-xs font-medium text-purple-700 bg-purple-50 hover:bg-purple-100 border border-purple-200 transition flex items-center gap-1 cursor-pointer">
+                                        <button onclick="playWordAccent('${safeEn}', 'us')" class="px-2.5 py-1 rounded-lg text-xs font-medium text-purple-700 bg-purple-50 hover:bg-purple-100 border border-purple-200 transition flex items-center gap-1 cursor-pointer">
                                             <span>🇺🇸 美音</span>
                                         </button>
-                                        <button onclick="playUKAudio('${safeEn}')" class="px-2.5 py-1 rounded-lg text-xs font-medium text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-200 transition flex items-center gap-1 cursor-pointer">
+                                        <button onclick="playWordAccent('${safeEn}', 'uk')" class="px-2.5 py-1 rounded-lg text-xs font-medium text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-200 transition flex items-center gap-1 cursor-pointer">
                                             <span>🇬🇧 英音</span>
                                         </button>
                                     </div>
@@ -20369,7 +20572,7 @@ function cleanupMasteredMistakes() {
                                                 ${cur.speakerTag ? `<span class="text-purple-700 dark:text-purple-300 bg-purple-50 dark:bg-purple-950/60 px-1.5 py-0.5 rounded border border-purple-200/60 dark:border-purple-500/40 font-normal text-[10px]">${esc(cur.speakerTag)}</span>` : ''}
                                             </span>
                                             ${cur.contextSentence ? `
-                                            <button onclick="event.stopPropagation(); playAudio('${safeContext}')" class="text-purple-600 dark:text-purple-300 hover:text-purple-800 dark:hover:text-white p-0.5 rounded transition cursor-pointer" title="朗讀原句">
+                                            <button onclick="event.stopPropagation(); playGrammarExampleAudio('${safeContext}')" class="text-purple-600 dark:text-purple-300 hover:text-purple-800 dark:hover:text-white p-0.5 rounded transition cursor-pointer" title="朗讀原句">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
                                             </button>
                                             ` : ''}

@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261119V1';
+        const APP_BUILD_VERSION = '20261119V2';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -92,6 +92,7 @@
                 'words_audio_manifest.js',
                 'examples_audio_manifest.js',
                 'zh_audio_manifest.js',
+                'images_manifest.js',
                 'collocations_audio_manifest.js',
                 'syn_ant_data.js',
                 'synonyms_unit8_data.js',
@@ -3021,7 +3022,10 @@
                             </button>
                         </div>
                         <div class="flex flex-col items-center justify-center mb-1 sm:mb-1.5 max-w-full px-1">
-                            <div class="flex items-center justify-center gap-1.5 flex-wrap">
+                            <div class="flex items-center justify-center gap-2 flex-wrap">
+                                <div id="card-image-thumb-wrap" class="hidden shrink-0 cursor-pointer" onclick="event.stopPropagation(); openWordImageLightbox(currentWord ? currentWord.en : '');" title="點擊放大插圖">
+                                    <img id="card-image-thumb" src="" alt="插圖" class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl object-contain bg-white dark:bg-slate-800 border border-slate-200/90 dark:border-slate-700 shadow-2xs hover:scale-105 active:scale-95 transition-transform" />
+                                </div>
                                 <span id="card-pos-badge" class="hidden"></span>
                                 <div class="cursor-pointer text-center text-slate-800 font-bold text-base sm:text-lg leading-snug flex items-center gap-1.5 flex-wrap justify-center" id="card-translation" title="點擊朗讀中文釋義">n. 蘋果</div>
                                 <button id="btn-speak-zh" class="p-0.5 text-slate-400 hover:text-[#0071E3] hover:bg-blue-50 rounded-full transition-colors cursor-pointer shrink-0" title="朗讀中文釋義" aria-label="朗讀中文釋義">
@@ -3767,6 +3771,23 @@
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
                 </button>
                 <div id="dict-content" class="mt-1 min-h-0 flex-1 flex flex-col justify-start overflow-hidden"></div>
+            </div>
+        </div>
+
+        <!-- 單字插圖放大燈箱 Lightbox Modal -->
+        <div id="word-image-lightbox-modal" class="fixed inset-0 bg-black/75 z-[85] hidden flex items-center justify-center p-4 backdrop-blur-xs select-none" onclick="closeWordImageLightbox()">
+            <div class="relative bg-white dark:bg-slate-900 rounded-3xl p-5 max-w-xs w-full shadow-2xl border border-slate-200 dark:border-slate-800 flex flex-col items-center gap-3 animate-scale-up" onclick="event.stopPropagation()">
+                <button type="button" onclick="closeWordImageLightbox()" class="absolute top-3.5 right-3.5 text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 rounded-full p-1.5 transition-colors cursor-pointer" title="關閉">
+                    <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                </button>
+                <div class="w-56 h-56 flex items-center justify-center bg-slate-50 dark:bg-slate-800/60 rounded-2xl p-2.5 border border-slate-100 dark:border-slate-800">
+                    <img id="word-lightbox-img" src="" alt="插圖" class="w-full h-full object-contain rounded-xl drop-shadow-md" />
+                </div>
+                <div class="text-center">
+                    <h3 id="word-lightbox-title" class="text-xl font-extrabold text-slate-900 dark:text-white capitalize"></h3>
+                    <p id="word-lightbox-zh" class="text-sm font-semibold text-slate-600 dark:text-slate-300 mt-0.5"></p>
+                </div>
+                <button type="button" onclick="closeWordImageLightbox()" class="w-full py-2 bg-blue-50 dark:bg-blue-900/40 text-[#0071E3] dark:text-blue-400 font-bold text-xs rounded-xl hover:bg-blue-100 transition-colors cursor-pointer">關閉預覽</button>
             </div>
         </div>
 
@@ -7857,6 +7878,7 @@ function cleanupMasteredMistakes() {
             }
 
             updateCardPhonetics(currentWord);
+            updateCardImage(currentWord);
             updateStudyCardMarkBtn(currentWord);
 
             applyFront();
@@ -10567,6 +10589,54 @@ function cleanupMasteredMistakes() {
             if (rowBack) rowBack.style.display = (kk || uk) ? 'flex' : 'none';
 
             updatePhoneticHighlight(null);
+        }
+
+        // 單字插圖動態渲染與燈箱 (SDXL-Turbo 256x256 WebP，手機端卡背微型徽章防爆版)
+        function updateCardImage(wordObj) {
+            const wrap = document.getElementById('card-image-thumb-wrap');
+            const thumb = document.getElementById('card-image-thumb');
+            if (!wrap || !thumb) return;
+            const w = wordObj || currentWord || {};
+            const clean = (w.en || '').trim().toLowerCase().replace(/[\s\-_]+/g, '_').replace(/[^a-z0-9_]/g, '');
+            const manifest = window.WORD_IMAGES_MANIFEST;
+            if (clean && manifest && manifest.has(clean)) {
+                const v = encodeURIComponent(typeof APP_BUILD_VERSION !== 'undefined' ? APP_BUILD_VERSION : '1');
+                thumb.src = `images/words/${clean}.webp?v=${v}`;
+                thumb.alt = w.en;
+                wrap.classList.remove('hidden');
+            } else {
+                wrap.classList.add('hidden');
+                thumb.src = '';
+            }
+        }
+
+        function openWordImageLightbox(word) {
+            if (!word) return;
+            const clean = String(word).trim().toLowerCase().replace(/[\s\-_]+/g, '_').replace(/[^a-z0-9_]/g, '');
+            const modal = document.getElementById('word-image-lightbox-modal');
+            const img = document.getElementById('word-lightbox-img');
+            const title = document.getElementById('word-lightbox-title');
+            const zhEl = document.getElementById('word-lightbox-zh');
+            if (!modal || !img) return;
+            const v = encodeURIComponent(typeof APP_BUILD_VERSION !== 'undefined' ? APP_BUILD_VERSION : '1');
+            img.src = `images/words/${clean}.webp?v=${v}`;
+            if (title) title.innerText = word;
+            if (zhEl) {
+                let zhText = '';
+                if (typeof currentWord !== 'undefined' && currentWord && currentWord.en && currentWord.en.toLowerCase() === clean) {
+                    zhText = currentWord.zh || '';
+                } else if (typeof vocabularyDB !== 'undefined') {
+                    const found = vocabularyDB.find(w => w && w.en && w.en.toLowerCase() === clean);
+                    if (found) zhText = found.zh || '';
+                }
+                zhEl.innerText = zhText ? cleanText(zhText) : '';
+            }
+            modal.classList.remove('hidden');
+        }
+
+        function closeWordImageLightbox() {
+            const modal = document.getElementById('word-image-lightbox-modal');
+            if (modal) modal.classList.add('hidden');
         }
 
         // 音標播放高亮連動 (播放美音高亮美式音標，播放英音高亮英式音標)
@@ -14095,6 +14165,19 @@ function cleanupMasteredMistakes() {
                         </div>
                     </div>
                 </div>
+
+                ${(() => {
+                    const clean = (w.en || '').trim().toLowerCase().replace(/[\s\-_]+/g, '_').replace(/[^a-z0-9_]/g, '');
+                    if (window.WORD_IMAGES_MANIFEST && window.WORD_IMAGES_MANIFEST.has(clean)) {
+                        const v = encodeURIComponent(typeof APP_BUILD_VERSION !== 'undefined' ? APP_BUILD_VERSION : '1');
+                        return `
+                            <div class="flex items-center justify-center p-3 rounded-2xl bg-gradient-to-b from-slate-50 to-white dark:from-slate-800/60 dark:to-slate-900/40 border border-slate-200/80 dark:border-slate-700/60 shadow-2xs cursor-pointer group" onclick="openWordImageLightbox('${esc(w.en)}')">
+                                <img src="images/words/${clean}.webp?v=${v}" alt="${esc(w.en)}" class="w-32 h-32 sm:w-40 sm:h-40 object-contain rounded-xl drop-shadow-md group-hover:scale-105 transition-transform" loading="lazy" />
+                            </div>
+                        `;
+                    }
+                    return '';
+                })()}
 
                 <!-- 釋義清單 (細體、優雅結構化字典排版) -->
                 <div class="bg-slate-50/80 px-3.5 py-2.5 rounded-2xl border border-slate-200/60 space-y-1.5">

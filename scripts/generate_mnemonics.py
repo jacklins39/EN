@@ -620,7 +620,22 @@ def write_shard(shard: str, data: dict[str, str], mnemonics_dir: Path = MNEMONIC
     )
     tmp_path = path.with_suffix(".js.tmp")
     tmp_path.write_text(content, encoding="utf-8")
-    tmp_path.replace(path)
+    for attempt in range(10):
+        try:
+            tmp_path.replace(path)
+            break
+        except PermissionError:
+            time.sleep(0.08 * (attempt + 1))
+    else:
+        try:
+            tmp_path.replace(path)
+        except PermissionError:
+            import shutil
+            shutil.copyfile(tmp_path, path)
+            try:
+                tmp_path.unlink(missing_ok=True)
+            except Exception:
+                pass
     return path
 
 

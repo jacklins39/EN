@@ -38,6 +38,17 @@ CONCRETE_KEYWORDS = {
     "house", "home", "school", "hospital", "store", "shop", "park", "bridge", "road", "street"
 }
 
+def get_local_model_path(repo_id: str) -> str:
+    """Resolve local snapshot directory in F:\\hf_models if exists."""
+    hf_home = Path(os.environ.get("HF_HOME", r"F:\hf_models"))
+    hub_dir = hf_home / "hub" / f"models--{repo_id.replace('/', '--')}"
+    snap_dir = hub_dir / "snapshots"
+    if snap_dir.exists():
+        snaps = [p for p in snap_dir.iterdir() if p.is_dir()]
+        if snaps:
+            return str(snaps[0])
+    return repo_id
+
 def clean_word_key(word: str) -> str:
     """Normalize word to safe lowercase filename token."""
     w = word.strip().lower()
@@ -136,6 +147,7 @@ def build_prompt(word: str, style: str = "sticker") -> str:
 
 def main():
     parser = argparse.ArgumentParser(description="Local Word Image Generator")
+    parser.add_argument("--file", type=str, default="", help="JSON file containing list of target words")
     parser.add_argument("--dry-run", action="store_true", help="Inspect candidates without generating")
     parser.add_argument("--concrete-only", action="store_true", help="Only process concrete everyday nouns")
     parser.add_argument("--words", type=str, default="", help="Comma-separated word list (e.g. cat,dog,apple)")
@@ -157,7 +169,14 @@ def main():
 
     # Determine target words
     targets = []
-    if args.words:
+    if args.file and os.path.exists(args.file):
+        with open(args.file, "r", encoding="utf-8") as f:
+            file_data = json.load(f)
+            for w in file_data:
+                clean = clean_word_key(w)
+                if clean:
+                    targets.append(clean)
+    elif args.words:
         for w in args.words.split(","):
             clean = clean_word_key(w)
             if clean:
@@ -212,11 +231,13 @@ def main():
 
     if args.model == "sdxl-turbo":
         from diffusers import AutoPipelineForText2Image
+        local_path = get_local_model_path("stabilityai/sdxl-turbo")
+        print(f"[Pipeline] Loading from local path: {local_path}", flush=True)
         pipe = AutoPipelineForText2Image.from_pretrained(
-            "stabilityai/sdxl-turbo",
+            local_path,
             torch_dtype=torch.float16,
             variant="fp16",
-            cache_dir=hf_home,
+            local_files_only=True,
         )
         pipe.to("cuda")
         # Optimization for tight 8GB VRAM
@@ -226,16 +247,17 @@ def main():
     else:
         from diffusers import StableDiffusionXLPipeline, UNet2DConditionModel, EulerDiscreteScheduler
         from huggingface_hub import hf_hub_download
-        base_id = "stabilityai/stable-diffusion-xl-base-1.0"
+        base_path = get_local_model_path("stabilityai/stable-diffusion-xl-base-1.0")
         repo_id = "ByteDance/SDXL-Lightning"
         ckpt = "sdxl_lightning_4step_lora.safetensors"
+        print(f"[Pipeline] Loading base from local path: {base_path}", flush=True)
         pipe = StableDiffusionXLPipeline.from_pretrained(
-            base_id,
+            base_path,
             torch_dtype=torch.float16,
             variant="fp16",
-            cache_dir=hf_home
+            local_files_only=True,
         )
-        pipe.load_lora_weights(repo_id, weight_name=ckpt, cache_dir=hf_home)
+        pipe.load_lora_weights(repo_id, weight_name=ckpt, cache_dir=hf_home, local_files_only=True)
         pipe.fuse_lora()
         pipe.scheduler = EulerDiscreteScheduler.from_config(pipe.scheduler.config, timestep_spacing="trailing")
         pipe.to("cuda")
@@ -267,9 +289,13 @@ def main():
             img_256 = raw_img.resize((256, 256), Image.Resampling.LANCZOS)
             img_256.save(out_file, "WEBP", quality=85, method=6)
         except Exception as e:
-            print(f"[FAIL] Error generating '{clean}': {e}")
+            print(f"[FAIL] Error generating '{clean}': {e}", flush=True)
 
-    print("[Complete] Finished generating images.")
+        if idx % 25 == 0:
+            update_manifest()
+            print(f"[Progress] {idx}/{len(pending)} completed ({idx*100//len(pending)}%).", flush=True)
+
+    print("[Complete] Finished generating images.", flush=True)
     update_manifest()
 
 if __name__ == "__main__":

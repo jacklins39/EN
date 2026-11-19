@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261118V5';
+        const APP_BUILD_VERSION = '20261119V1';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -6952,22 +6952,112 @@ function cleanupMasteredMistakes() {
             return voices.find(v => v.lang && v.lang.toLowerCase().startsWith('zh')) || null;
         }
 
-        function speakChinese(text, onEndedCallback, wordObj = null) {
+        function isMobileDevice() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
+                   (navigator.maxTouchPoints > 1 && window.innerWidth < 1024);
+        }
+
+        // ==========================================
+        // 線上繁體中文音訊串流播放器 (Google zh-TW MP3 串流)
+        // 核心解法：手機端 (iOS Safari / Android) 由於系統安全性策略，
+        // 在輪播鏈或計時器中會將非同步的 Web Speech API 視為無使用者手勢而強制靜音；
+        // 透過 HTML5 Audio 串流接續播放，可 100% 繞過 iOS/Android 語音合成限制，保證手機在外面穩定出聲！
+        // ==========================================
+        function playOnlineChineseStream(cleanZh, onEndedCallback, expectedToken = null) {
             if (isSpeechEvalActive) {
                 if (typeof onEndedCallback === 'function') onEndedCallback();
                 return;
             }
+            const myToken = (expectedToken !== null) ? expectedToken : (window._audioPlaybackGen || 0);
+            const text = String(cleanZh || '')
+                .replace(/[\(（][^）\)]*[\)）]/g, '')
+                .replace(/\s+/g, ' ')
+                .trim()
+                .slice(0, 180);
+
+            if (!text) {
+                if (typeof onEndedCallback === 'function') onEndedCallback();
+                return;
+            }
+            if (myToken !== (window._audioPlaybackGen || 0)) return;
+
+            clearAudioCallbacks();
+
+            const attachCallback = (audioEl, fallbackFn) => {
+                let called = false;
+                const done = () => {
+                    if (called) return;
+                    called = true;
+                    clearAudioCallbacks();
+                    if (myToken !== (window._audioPlaybackGen || 0)) return;
+                    if (typeof onEndedCallback === 'function') onEndedCallback();
+                };
+                const onError = (e) => {
+                    if (called) return;
+                    if (audioEl && audioEl.error && audioEl.error.code === 20) return;
+                    called = true;
+                    clearAudioCallbacks();
+                    if (myToken !== (window._audioPlaybackGen || 0)) return;
+                    if (typeof fallbackFn === 'function') {
+                        fallbackFn();
+                    } else if (typeof onEndedCallback === 'function') {
+                        onEndedCallback();
+                    }
+                };
+                currentAudioDoneHandler = done;
+                currentAudioErrorHandler = onError;
+                audioEl.addEventListener('ended', done, { once: true });
+                audioEl.addEventListener('error', onError, { once: true });
+                audioFallbackTimerId = setTimeout(onError, getScaledAudioFallbackMs(Math.max(5000, text.length * 350 + 2000)));
+            };
+
+            try {
+                wordAudioPlayer.pause();
+                wordAudioPlayer.currentTime = 0;
+            } catch(e) {}
+
+            const encoded = encodeURIComponent(text);
+            const streamUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=zh-TW&client=tw-ob&q=${encoded}`;
+
+            wordAudioPlayer.src = streamUrl;
+            wordAudioPlayer.playbackRate = globalSpeechRate;
+
+            attachCallback(wordAudioPlayer, () => {
+                if (myToken !== (window._audioPlaybackGen || 0)) return;
+                speakChineseViaSynthesis(text, onEndedCallback);
+            });
+
+            const p = wordAudioPlayer.play();
+            if (p && typeof p.catch === 'function') {
+                p.catch(err => {
+                    if (err && (err.name === 'AbortError' || err.code === 20)) return;
+                    console.warn("Online Chinese stream error, trying synthesis:", err);
+                    if (myToken !== (window._audioPlaybackGen || 0)) return;
+                    speakChineseViaSynthesis(text, onEndedCallback);
+                });
+            }
+        }
+
+        function speakChinese(text, onEndedCallback, wordObj = null, expectedToken = null) {
+            if (isSpeechEvalActive) {
+                if (typeof onEndedCallback === 'function') onEndedCallback();
+                return;
+            }
+            const myToken = (expectedToken !== null) ? expectedToken : (window._audioPlaybackGen || 0);
+            if (myToken !== (window._audioPlaybackGen || 0)) return;
+
             if (!text && !wordObj) {
                 if (typeof onEndedCallback === 'function') onEndedCallback();
                 return;
             }
+            let cleanZh = '';
             try {
                 unlockMobileAudio();
                 const target = wordObj || currentWord;
 
                 // 清洗括號註解、殘留詞性與標點符號，使中文發音清晰自然
                 let rawText = text || (target ? target.zh : '');
-                let cleanZh = rawText
+                cleanZh = rawText
                     .replace(/[\(（][^）\)]*[\)）]/g, '')
                     .replace(/^[a-zA-Z\.\s\/]+/, '')
                     .replace(/[a-zA-Z]+\./g, '')
@@ -6996,7 +7086,7 @@ function cleanupMasteredMistakes() {
                             if (audioEl && audioEl.error && audioEl.error.code === 20) return;
                             called = true;
                             clearAudioCallbacks();
-                            speakChineseViaSynthesis(cleanZh, onEndedCallback);
+                            playOnlineChineseStream(cleanZh, onEndedCallback, myToken);
                         };
                         currentAudioDoneHandler = done;
                         currentAudioErrorHandler = onError;
@@ -7018,8 +7108,8 @@ function cleanupMasteredMistakes() {
                     if (playPromise !== undefined) {
                         playPromise.catch((err) => {
                             if (err && (err.name === 'AbortError' || err.code === 20)) return;
-                            console.warn("Local zh audio play error, fallback to Web Speech API:", err);
-                            speakChineseViaSynthesis(cleanZh, onEndedCallback);
+                            console.warn("Local zh audio play error, fallback to stream:", err);
+                            playOnlineChineseStream(cleanZh, onEndedCallback, myToken);
                         });
                     }
                     return;
@@ -7030,26 +7120,62 @@ function cleanupMasteredMistakes() {
                     return;
                 }
 
-                // 2. 備援：若該單字尚未在真人清單中，以 Web Speech API 朗讀
-                speakChineseViaSynthesis(cleanZh, onEndedCallback);
+                // 2. 手機端 (iOS/Android) 或缺乏高音質桌面神經聲線時，優先使用 HTML5 Audio 線上繁中串流，保證手機出聲！
+                const isMobile = isMobileDevice();
+                const bestVoice = getBestChineseVoice();
+                const hasDesktopNeuralVoice = !isMobile && bestVoice && (
+                    bestVoice.name.includes('Natural') || bestVoice.name.includes('Online') || bestVoice.name.includes('Neural') || bestVoice.name.includes('曉臻') || bestVoice.name.includes('HsiaoChen')
+                );
+
+                if (isMobile || !hasDesktopNeuralVoice) {
+                    playOnlineChineseStream(cleanZh, onEndedCallback, myToken);
+                } else {
+                    speakChineseViaSynthesis(cleanZh, () => {
+                        if (myToken !== (window._audioPlaybackGen || 0)) return;
+                        if (typeof onEndedCallback === 'function') onEndedCallback();
+                    });
+                }
             } catch(e) {
                 console.warn('speakChinese error:', e);
-                speakChineseViaSynthesis(text, onEndedCallback);
+                playOnlineChineseStream(cleanZh || text, onEndedCallback, myToken);
             }
         }
 
-        function speakExampleZh(exampleZhText, onEndedCallback) {
+        function speakExampleZh(exampleZhText, onEndedCallback, expectedToken = null) {
             if (isSpeechEvalActive) {
                 if (typeof onEndedCallback === 'function') onEndedCallback();
                 return;
             }
-            const cleanExZh = cleanText(exampleZhText || '').replace(/\s+/g, ' ').trim().slice(0, 180);
+            const myToken = (expectedToken !== null) ? expectedToken : (window._audioPlaybackGen || 0);
+            if (myToken !== (window._audioPlaybackGen || 0)) return;
+
+            const cleanExZh = cleanText(exampleZhText || '')
+                .replace(/[\(（][^）\)]*[\)）]/g, '')
+                .replace(/\s+/g, ' ')
+                .trim()
+                .slice(0, 180);
+
             if (!cleanExZh) {
                 if (typeof onEndedCallback === 'function') onEndedCallback();
                 return;
             }
             unlockMobileAudio();
-            speakChineseViaSynthesis(cleanExZh, onEndedCallback);
+
+            const isMobile = isMobileDevice();
+            const bestVoice = getBestChineseVoice();
+            const hasDesktopNeuralVoice = !isMobile && bestVoice && (
+                bestVoice.name.includes('Natural') || bestVoice.name.includes('Online') || bestVoice.name.includes('Neural') || bestVoice.name.includes('曉臻') || bestVoice.name.includes('HsiaoChen')
+            );
+
+            // 手機端 (iOS/Android) 100% 採用 HTML5 Audio 線上繁中串流，保證在鎖屏、外部網路與輪播鏈中持續出聲
+            if (isMobile || !hasDesktopNeuralVoice) {
+                playOnlineChineseStream(cleanExZh, onEndedCallback, myToken);
+            } else {
+                speakChineseViaSynthesis(cleanExZh, () => {
+                    if (myToken !== (window._audioPlaybackGen || 0)) return;
+                    if (typeof onEndedCallback === 'function') onEndedCallback();
+                });
+            }
         }
 
         function speakChineseViaSynthesis(cleanZh, onEndedCallback) {
@@ -7279,7 +7405,7 @@ function cleanupMasteredMistakes() {
                         speakExampleZh(targetWord.exampleZh, () => {
                             if (playbackToken !== (window._audioPlaybackGen || 0)) return;
                             if (typeof onEndedCallback === 'function') onEndedCallback();
-                        });
+                        }, playbackToken);
                     }, 250);
                 } else {
                     if (typeof onEndedCallback === 'function') onEndedCallback();
@@ -7299,14 +7425,14 @@ function cleanupMasteredMistakes() {
                 }
             };
 
-            // 中文朗讀步驟 (100% 播放真人 Edge-TTS MP3，保證主動出聲)
+            // 中文朗讀步驟 (優先使用本機 MP3 或線上 Google 繁中串流，保證手機在外面穩定出聲)
             const playChineseStep = () => {
                 if (playbackToken !== (window._audioPlaybackGen || 0) || !currentWord || currentWord.id !== targetWord.id) return;
                 if (isSpeakZh && targetWord.zh) {
                     const conciseZh = getConciseZh(targetWord.zh, targetWord.pos, targetWord.exampleZh, targetWord.example, targetWord.en);
                     backsideAudioTimerId = setTimeout(() => {
                         if (playbackToken !== (window._audioPlaybackGen || 0) || !currentWord || currentWord.id !== targetWord.id) return;
-                        speakChinese(conciseZh, playExampleStep, targetWord);
+                        speakChinese(conciseZh, playExampleStep, targetWord, playbackToken);
                     }, 250);
                 } else {
                     playExampleStep();
@@ -10749,7 +10875,7 @@ function cleanupMasteredMistakes() {
                 if (isSpeakExampleZhEnabled() && resolvedExZh) {
                     backsideAudioTimerId = setTimeout(() => {
                         if (playbackToken !== (window._audioPlaybackGen || 0)) return;
-                        speakExampleZh(resolvedExZh, finishExampleReplay);
+                        speakExampleZh(resolvedExZh, finishExampleReplay, playbackToken);
                     }, 250);
                 } else {
                     finishExampleReplay();
@@ -11217,7 +11343,7 @@ function cleanupMasteredMistakes() {
                 stopAllAudio();
                 const token = window._audioPlaybackGen || 0;
                 const wid = currentWord.id;
-                speakExampleZh(currentWord.exampleZh, () => scheduleAutoFlashcardAdvanceIfActive(wid, token));
+                speakExampleZh(currentWord.exampleZh, () => scheduleAutoFlashcardAdvanceIfActive(wid, token), token);
             }
         });
 

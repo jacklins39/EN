@@ -55,19 +55,25 @@ FUNCTION_POS_ONLY_RE = re.compile(
 )
 VISUAL_POS_RE = re.compile(r"\b(?:n|v|vt|vi|adj)\.", re.I)
 FORBIDDEN_SCENE_RE = re.compile(
-    r"\b(?:text|word|words|letter|letters|alphabet|caption|subtitle|label|watermark|signature|logo|blood|gore|corpse|dead body)\b",
+    r"\b(?:text|word|words|letter|letters|alphabet|caption|subtitle|label|watermark|signature|logo|background|backdrop|blood|gore|corpse|dead body)\b",
     re.I,
 )
+NON_VISUAL_STOPWORDS = frozenset({
+    "act", "age", "aim", "air", "bit", "case", "day", "end", "era", "eve", "fact", "fee",
+    "form", "fun", "hour", "idea", "item", "kind", "law", "life", "lot", "mind", "minute",
+    "month", "name", "news", "part", "plan", "rule", "second", "side", "sort", "step",
+    "task", "term", "thing", "time", "type", "unit", "view", "way", "week", "work", "year",
+})
 
-BATCH_SYSTEM_PROMPT = """You are an art director designing clean single-subject sticker illustrations for an English vocabulary flashcard app.
+BATCH_SYSTEM_PROMPT = """You are a strict art director designing crisp single-subject sticker illustrations for an English vocabulary flashcard app.
 
-Given a JSON list of English words with their Traditional Chinese meanings, judge whether each word can be depicted IMMEDIATELY and UNAMBIGUOUSLY by one concrete visual illustration (objects, animals, foods, nature, places, buildings, professions, tangible actions like running/cooking/sleeping, or clear visual adjectives like frozen/crowded/broken).
+Given a JSON list of English words with their Traditional Chinese meanings, accept ("visual": true) ONLY words whose primary visual concept is IMMEDIATELY recognizable from ONE standalone drawing WITHOUT guessing.
 
-Rules:
-1. Mark "visual": false for abstract concepts, months, pronouns, grammatical terms, vague corporate jargon, emotions without clear physical props, or generic meta-words (e.g., ability, april, cause, system, policy, issue, aspect, degree).
-2. Mark "visual": true ONLY if a learner sees the drawing and immediately thinks of that exact concept.
-3. For every "visual": true item, write a crisp ASCII-only "scene" (5 to 16 English words) describing ONE centered visual subject with clear shape and action/prop matching the Chinese meaning (especially for polysemous words like "bank", "bat", "spring", "match").
-4. NEVER include words like "text", "letters", "words", "sign reading...", "label", "watermark", or "background" in "scene". Describe concrete visual elements only (e.g. "a smiling baker holding a warm loaf of bread", "an orange basketball bouncing midair", "a yellow school bus parked cleanly").
+Strict Rejection Rules ("visual": false):
+1. REJECT abstract concepts, time units, months, numbers, pronouns, grammatical words, generic meta-nouns, or intangible states (e.g. ability, april, age, air, cause, day, end, fact, fee, fun, idea, way, time, system, policy, issue, aspect, degree).
+2. REJECT indirect metaphors/substitutions: Do NOT draw a sunny sky to represent "day" or "air", do NOT draw a line to represent "end", and do NOT draw generic smiling kids to represent "fun" or "joy". Only accept concrete objects, animals, foods, plants, weather phenomena, buildings/places, clear professions, sports, body parts, or unmistakable physical actions (e.g. "run", "swim", "cook", "cry", "sleep", "kick", "climb").
+3. For every accepted word ("visual": true), write an ASCII-only "scene" (5 to 16 English words) depicting ONE centered subject/action matching the Chinese meaning (especially for polysemous words like "bank", "bat", "spring", "match").
+4. NEVER include "text", "letters", "words", "sign reading", "label", "watermark", "background", or "backdrop" inside "scene". Describe the subject/props only (e.g. "a smiling baker holding a warm loaf of bread", "an orange basketball bouncing midair", "a yellow school bus parked cleanly").
 5. Output ONLY valid JSON:
 {"items": [{"word": "...", "visual": true/false, "category": "object|animal|food|place|person|nature|action|adj|abstract", "scene": "..."}]}"""
 
@@ -102,7 +108,7 @@ def build_candidate_pool(max_candidates: int = 3500) -> list[dict[str, Any]]:
         if not en or not zh:
             continue
         clean = gwi.clean_word_key(en)
-        if not clean or clean in existing or clean in seen_clean_keys:
+        if not clean or clean in existing or clean in seen_clean_keys or clean in NON_VISUAL_STOPWORDS:
             continue
         # Allow single words or simple 2-word compounds (e.g. ice cream, t-shirt), skip slashes/dots/abbreviations
         if "/" in en or "." in en or "'" in en or len(en) < 2 or len(en) > 18:

@@ -10,7 +10,7 @@ const listeningArticlesDB = [
       {
         "en": "Hello! I would like to order a cheeseburger and a large fries.",
         "zh": "你好！我想點一個起司漢堡和大份薯條。",
-        "start": 0.00,
+        "start": 0.0,
         "end": 5.09
       },
       {
@@ -22,7 +22,7 @@ const listeningArticlesDB = [
       {
         "en": "That will be all.",
         "zh": "這樣就可以了。",
-        "start": 8.50,
+        "start": 8.5,
         "end": 10.42
       },
       {
@@ -58,7 +58,7 @@ const listeningArticlesDB = [
       {
         "en": "Thank you very much! Have a nice day.",
         "zh": "非常感謝！祝你有美好的一天。",
-        "start": 25.30,
+        "start": 25.3,
         "end": 29.28
       }
     ],
@@ -6746,7 +6746,7 @@ const listeningArticlesDB = [
         "avatar": "👩",
         "en": "Good morning, Lily! Time to wake up and brush your teeth.",
         "zh": "早安莉莉！該起床刷牙囉。",
-        "start": 0.00,
+        "start": 0.0,
         "end": 4.94
       },
       {
@@ -6767,7 +6767,7 @@ const listeningArticlesDB = [
         "en": "It is right next to the sink. Don't forget to wash your face too.",
         "zh": "就在洗手台旁邊。別忘了也要洗臉喔。",
         "start": 10.94,
-        "end": 16.20
+        "end": 16.2
       },
       {
         "speaker": "Lily",
@@ -6914,7 +6914,7 @@ const listeningArticlesDB = [
         "avatar": "👩",
         "en": "Lily, look at the floor! Your teddy bear and toy blocks are everywhere.",
         "zh": "莉莉，看地板！妳的小熊玩偶和積木散落得到處都是。",
-        "start": 0.00,
+        "start": 0.0,
         "end": 5.76
       },
       {
@@ -6925,7 +6925,7 @@ const listeningArticlesDB = [
         "en": "Oops, sorry Mommy! Can you help me put them into the toy box?",
         "zh": "哎呀，對不起媽咪！妳可以幫我把它們放進玩具箱嗎？",
         "start": 6.19,
-        "end": 12.00
+        "end": 12.0
       },
       {
         "speaker": "Mom",
@@ -7082,7 +7082,7 @@ const listeningArticlesDB = [
         "avatar": "👨",
         "en": "Hey Lily, look outside! The sun is shining and the breeze is so nice.",
         "zh": "嘿莉莉，看窗外！陽光明媚，微風吹起來好舒服。",
-        "start": 0.00,
+        "start": 0.0,
         "end": 5.74
       },
       {
@@ -7241,6 +7241,194 @@ const listeningArticlesDB = [
       {
         "en": "pilot",
         "zh": "n. 飛行員、舵手"
+      }
+    ]
+  },
+  {
+    "id": "2026_kids_fairytale_01",
+    "month": "兒童專區",
+    "category": "kids",
+    "title": "兒童童話 (1): 森林裡的魔法許願樹 (The Magic Wishing Tree in the Woods)",
+    "level": "Pre-A1",
+    "isDialogue": true,
+    "text": "Hello, Grandpa Owl! Why is that giant oak tree glowing gold tonight? Haha, good evening, little Milo! That is the magic wishing tree of the forest. Wow, it is full of yellow lanterns! Look at the shiny acorn on the branch! A kind squirrel hid sweet honey cookies inside that golden acorn for sleepy friends. Oh, yummy! Can I share one cookie with the shy white rabbit over there? Of course! When you share kindness, the forest stars always shine even brighter! Look! A little green frog and a sleepy hedgehog are hopping here too! Let's have a cozy moonlight picnic under the glowing oak tree together. A sweet honey cookie for everyone! Cheers under the silver moon! Goodnight, little bear! A warm heart makes every starry night feel like a happy dream.",
+    "sentences": [
+      {
+        "speaker": "Milo",
+        "role": "A",
+        "roleDesc": "小熊 Milo (Ana)",
+        "avatar": "🐻",
+        "en": "Hello, Grandpa Owl! Why is that giant oak tree glowing gold tonight?",
+        "zh": "你好，貓頭鷹爺爺！為什麼那棵大橡樹今晚在發金光呢？",
+        "start": 0.0,
+        "end": 6.94
+      },
+      {
+        "speaker": "Owl",
+        "role": "B",
+        "roleDesc": "貓頭鷹爺爺 (Guy)",
+        "avatar": "🦉",
+        "en": "Haha, good evening, little Milo! That is the magic wishing tree of the forest.",
+        "zh": "呵呵，晚安，小熊米洛！那是森林裡的魔法許願樹喔。",
+        "start": 7.29,
+        "end": 13.69
+      },
+      {
+        "speaker": "Milo",
+        "role": "A",
+        "roleDesc": "小熊 Milo (Ana)",
+        "avatar": "🐻",
+        "en": "Wow, it is full of yellow lanterns! Look at the shiny acorn on the branch!",
+        "zh": "哇，樹上掛滿了黃色小燈籠！你看樹枝上那顆閃亮的橡實！",
+        "start": 14.04,
+        "end": 21.36
+      },
+      {
+        "speaker": "Owl",
+        "role": "B",
+        "roleDesc": "貓頭鷹爺爺 (Guy)",
+        "avatar": "🦉",
+        "en": "A kind squirrel hid sweet honey cookies inside that golden acorn for sleepy friends.",
+        "zh": "一隻善良的小松鼠把甜甜的蜂蜜餅乾藏進那顆金色橡實裡，要送給愛睏的朋友們。",
+        "start": 21.71,
+        "end": 27.31
+      },
+      {
+        "speaker": "Milo",
+        "role": "A",
+        "roleDesc": "小熊 Milo (Ana)",
+        "avatar": "🐻",
+        "en": "Oh, yummy! Can I share one cookie with the shy white rabbit over there?",
+        "zh": "喔，好香喔！我可以分一塊餅乾給那邊害羞的小白兔嗎？",
+        "start": 27.66,
+        "end": 34.16
+      },
+      {
+        "speaker": "Owl",
+        "role": "B",
+        "roleDesc": "貓頭鷹爺爺 (Guy)",
+        "avatar": "🦉",
+        "en": "Of course! When you share kindness, the forest stars always shine even brighter!",
+        "zh": "當然可以！當你願意分享善意時，森林裡的星星總是會閃耀得更亮喔！",
+        "start": 34.51,
+        "end": 40.87
+      },
+      {
+        "speaker": "Milo",
+        "role": "A",
+        "roleDesc": "小熊 Milo (Ana)",
+        "avatar": "🐻",
+        "en": "Look! A little green frog and a sleepy hedgehog are hopping here too!",
+        "zh": "你看！一隻綠色小青蛙和一隻愛睏的小刺蝟也一跳一跳走過來了！",
+        "start": 41.22,
+        "end": 47.82
+      },
+      {
+        "speaker": "Owl",
+        "role": "B",
+        "roleDesc": "貓頭鷹爺爺 (Guy)",
+        "avatar": "🦉",
+        "en": "Let's have a cozy moonlight picnic under the glowing oak tree together.",
+        "zh": "讓我們一起在這棵發光的橡樹下，舉辦一場溫暖的月光野餐吧。",
+        "start": 48.17,
+        "end": 52.78
+      },
+      {
+        "speaker": "Milo",
+        "role": "A",
+        "roleDesc": "小熊 Milo (Ana)",
+        "avatar": "🐻",
+        "en": "A sweet honey cookie for everyone! Cheers under the silver moon!",
+        "zh": "每個人都有一塊甜甜的蜂蜜餅乾喔！在銀色月亮下乾杯！",
+        "start": 53.13,
+        "end": 59.39
+      },
+      {
+        "speaker": "Owl",
+        "role": "B",
+        "roleDesc": "貓頭鷹爺爺 (Guy)",
+        "avatar": "🦉",
+        "en": "Goodnight, little bear! A warm heart makes every starry night feel like a happy dream.",
+        "zh": "晚安，小熊！一顆溫暖的心會讓每個星空夜晚都像一場幸福的美夢。",
+        "start": 59.74,
+        "end": 66.22
+      }
+    ],
+    "grammar": [
+      {
+        "tag": "描述場景與充滿",
+        "title": "充滿了……：be full of + 名詞",
+        "pattern": "主詞 (S) + is/are + full of + 名詞",
+        "explanation": "用來生動描述一個空間或物品裡「裝滿了、掛滿了」滿滿的東西，童話故事描寫魔法景象時超常用！",
+        "keyPoint": "full of 後面可接複數名詞 (yellow lanterns)，也可接不可數名詞 (magic)。",
+        "example": "It is <span class='font-bold text-[#0071E3] underline decoration-[#0071E3]/60 decoration-2 underline-offset-4'>full of yellow lanterns</span>!",
+        "exampleZh": "樹上掛滿了黃色小燈籠！"
+      },
+      {
+        "tag": "邀請一起活動",
+        "title": "大家一起來……：Let's + 原形動詞 (V)",
+        "pattern": "Let's + 原形動詞 (have / play / share)...",
+        "explanation": "Let's (= Let us) 是邀請朋友與家人「一起做某件事」最快樂親切的開頭句型！",
+        "keyPoint": "英語說「舉辦野餐」習慣用 have a picnic，不說 play a picnic 喔！",
+        "example": "<span class='font-bold text-[#0071E3] underline decoration-[#0071E3]/60 decoration-2 underline-offset-4'>Let's have a cozy moonlight picnic</span> under the glowing oak tree together.",
+        "exampleZh": "讓我們一起在這棵發光的橡樹下，舉辦一場溫暖的月光野餐吧。"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "1. What is glowing gold in the forest?",
+        "options": [
+          "A. A giant oak tree",
+          "B. A blue river",
+          "C. A little rock",
+          "D. A tall bridge"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "2. Who hid the sweet honey cookies inside the golden acorn?",
+        "options": [
+          "A. A white rabbit",
+          "B. A kind squirrel",
+          "C. A green frog",
+          "D. A sleepy hedgehog"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "3. What do Milo and his forest friends do under the oak tree?",
+        "options": [
+          "A. They fly a colorful kite",
+          "B. They ride bicycles",
+          "C. They have a cozy moonlight picnic",
+          "D. They brush their teeth"
+        ],
+        "ans": 2
+      }
+    ],
+    "voice": "en-US-AnaNeural & en-US-GuyNeural",
+    "voiceLabel": "雙角色童話 (小熊 Milo & 貓頭鷹爺爺)",
+    "audio": "audio/listening/2026_kids_fairytale_01.mp3",
+    "vocabulary": [
+      {
+        "en": "lantern",
+        "zh": "n. 燈籠、提燈"
+      },
+      {
+        "en": "acorn",
+        "zh": "n. 橡實、橡樹果"
+      },
+      {
+        "en": "squirrel",
+        "zh": "n. 松鼠"
+      },
+      {
+        "en": "hedgehog",
+        "zh": "n. 刺蝟"
+      },
+      {
+        "en": "picnic",
+        "zh": "n. 野餐、郊遊"
       }
     ]
   }

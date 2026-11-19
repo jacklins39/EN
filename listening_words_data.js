@@ -122,5 +122,25 @@ const listeningWordsDB = [
         "unit": 19,
         "example": "[n.] The little girl hugs her favorite teddy bear to fall asleep.",
         "exampleZh": "小女孩抱著她最喜歡的泰迪熊入睡。"
+    },
+    {
+        "en": "acorn",
+        "kk": "[ˋekɔrn]",
+        "uk": "/ˈeɪkɔːn/",
+        "zh": "n. 橡實、橡樹果",
+        "unit": 19,
+        "example": "[n.] The little brown squirrel carried a shiny acorn up the oak tree.",
+        "exampleZh": "那隻棕色的小松鼠抱著一顆閃亮的橡實爬上橡樹。",
+        "id": 32038
+    },
+    {
+        "en": "hedgehog",
+        "kk": "[ˋhɛdʒ͵hɑɡ]",
+        "uk": "/ˈhedʒhɒɡ/",
+        "zh": "n. 刺蝟",
+        "unit": 19,
+        "example": "[n.] A sleepy hedgehog curled up under the warm leaves at night.",
+        "exampleZh": "一隻愛睏的小刺蝟夜晚在溫暖的樹葉下捲成一團睡覺。",
+        "id": 32039
     }
 ];

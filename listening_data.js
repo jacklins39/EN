@@ -7248,7 +7248,7 @@ const listeningArticlesDB = [
     "id": "2026_kids_fairytale_01",
     "month": "兒童專區",
     "category": "kids",
-    "title": "兒童童話 (1): 森林裡的魔法許願樹 (The Magic Wishing Tree in the Woods)",
+    "title": "兒童童話 (1): 小熊米洛與橡實燈籠樹 (Milo and the Acorn Lantern Tree)",
     "level": "Pre-A1",
     "isDialogue": true,
     "text": "Hello, Grandpa Owl! Why is that giant oak tree glowing gold tonight? Haha, good evening, little Milo! That is the magic wishing tree of the forest. Wow, it is full of yellow lanterns! Look at the shiny acorn on the branch! A kind squirrel hid sweet honey cookies inside that golden acorn for sleepy friends. Oh, yummy! Can I share one cookie with the shy white rabbit over there? Of course! When you share kindness, the forest stars always shine even brighter! Look! A little green frog and a sleepy hedgehog are hopping here too! Let's have a cozy moonlight picnic under the glowing oak tree together. A sweet honey cookie for everyone! Cheers under the silver moon! Goodnight, little bear! A warm heart makes every starry night feel like a happy dream.",
@@ -7429,6 +7429,194 @@ const listeningArticlesDB = [
       {
         "en": "picnic",
         "zh": "n. 野餐、郊遊"
+      }
+    ]
+  },
+  {
+    "id": "2026_kids_fairytale_02",
+    "month": "兒童專區",
+    "category": "kids",
+    "title": "兒童童話 (2): 獅子與小老鼠 (Aesop's Fable: The Lion and the Mouse)",
+    "level": "Pre-A1",
+    "isDialogue": true,
+    "text": "Roar! Who woke me up from my afternoon nap? A tiny gray mouse! Oh, please let me go, King Lion! I was running home in a hurry. Hmm, why should a strong lion spare such a tiny little mouse? If you are kind today, I promise I will help you too someday! Haha, you are so funny! Okay, run along now, little friend. Help! Help! A hunter's strong net caught my big paws! I cannot move! Hold on, King Lion! I heard your loud roar and came right away. I can chew through the thick rope with my sharp little teeth. Snap, snap! I am free! Thank you, tiny mouse. Even little friends can be great helpers! You are very welcome, my friend! Kindness always comes back to you.",
+    "sentences": [
+      {
+        "speaker": "Lion",
+        "role": "B",
+        "roleDesc": "大獅子 (Guy)",
+        "avatar": "🦁",
+        "en": "Roar! Who woke me up from my afternoon nap? A tiny gray mouse!",
+        "zh": "吼！是誰把我從午睡中吵醒了？原來是一隻小小灰灰的老鼠！",
+        "start": 0.0,
+        "end": 7.03
+      },
+      {
+        "speaker": "Mouse",
+        "role": "A",
+        "roleDesc": "小老鼠 (Ana)",
+        "avatar": "🐭",
+        "en": "Oh, please let me go, King Lion! I was running home in a hurry.",
+        "zh": "喔，獅子王請放過我吧！我只是趕著跑回家而已。",
+        "start": 7.38,
+        "end": 13.69
+      },
+      {
+        "speaker": "Lion",
+        "role": "B",
+        "roleDesc": "大獅子 (Guy)",
+        "avatar": "🦁",
+        "en": "Hmm, why should a strong lion spare such a tiny little mouse?",
+        "zh": "嗯，強壯的獅子為什麼要放過像你這麼渺小的小老鼠呢？",
+        "start": 14.04,
+        "end": 18.56
+      },
+      {
+        "speaker": "Mouse",
+        "role": "A",
+        "roleDesc": "小老鼠 (Ana)",
+        "avatar": "🐭",
+        "en": "If you are kind today, I promise I will help you too someday!",
+        "zh": "如果你今天對我善良仁慈，我保證有一天我也能幫上你的忙喔！",
+        "start": 18.91,
+        "end": 23.83
+      },
+      {
+        "speaker": "Lion",
+        "role": "B",
+        "roleDesc": "大獅子 (Guy)",
+        "avatar": "🦁",
+        "en": "Haha, you are so funny! Okay, run along now, little friend.",
+        "zh": "哈哈，你真逗趣！好吧，快跑走吧，小傢伙。",
+        "start": 24.18,
+        "end": 30.13
+      },
+      {
+        "speaker": "Lion",
+        "role": "B",
+        "roleDesc": "大獅子 (Guy)",
+        "avatar": "🦁",
+        "en": "Help! Help! A hunter's strong net caught my big paws! I cannot move!",
+        "zh": "救命啊！救命！獵人的堅固大網抓住了我的大腳掌！我動彈不得了！",
+        "start": 30.48,
+        "end": 38.97
+      },
+      {
+        "speaker": "Mouse",
+        "role": "A",
+        "roleDesc": "小老鼠 (Ana)",
+        "avatar": "🐭",
+        "en": "Hold on, King Lion! I heard your loud roar and came right away.",
+        "zh": "撐住，獅子王！我一聽到你響亮的吼聲就立刻趕過來了。",
+        "start": 39.32,
+        "end": 45.59
+      },
+      {
+        "speaker": "Mouse",
+        "role": "A",
+        "roleDesc": "小老鼠 (Ana)",
+        "avatar": "🐭",
+        "en": "I can chew through the thick rope with my sharp little teeth. Snap, snap!",
+        "zh": "我可以用我尖尖的小牙齒咬斷這條粗繩子。喀嚓、喀嚓！",
+        "start": 45.94,
+        "end": 52.37
+      },
+      {
+        "speaker": "Lion",
+        "role": "B",
+        "roleDesc": "大獅子 (Guy)",
+        "avatar": "🦁",
+        "en": "I am free! Thank you, tiny mouse. Even little friends can be great helpers!",
+        "zh": "我自由了！謝謝你，小老鼠。原來再小的朋友也能成為最棒的大幫手！",
+        "start": 52.72,
+        "end": 60.54
+      },
+      {
+        "speaker": "Mouse",
+        "role": "A",
+        "roleDesc": "小老鼠 (Ana)",
+        "avatar": "🐭",
+        "en": "You are very welcome, my friend! Kindness always comes back to you.",
+        "zh": "完全不客氣，我的朋友！善良的心意總是會回到自己身邊喔。",
+        "start": 60.89,
+        "end": 67.35
+      }
+    ],
+    "grammar": [
+      {
+        "tag": "未來保證與條件句",
+        "title": "如果你……，我就會……：If + 現在式, S + will + 原形動詞",
+        "pattern": "If + S1 + 現在簡單式, S2 + will + 原形動詞 (V)",
+        "explanation": "在伊索寓言和小對話裡用來表達「只要現在這麼做，將來就會有好結果」，注意 If 子句必須用現在式代替未來喔！",
+        "keyPoint": "例如：If you are kind today, I will help you someday! (絕不寫 If you will be kind)",
+        "example": "<span class='font-bold text-[#0071E3] underline decoration-[#0071E3]/60 decoration-2 underline-offset-4'>If you are kind today, I promise I will help you</span> too someday!",
+        "exampleZh": "如果你今天對我善良仁慈，我保證有一天我也能幫上你的忙喔！"
+      },
+      {
+        "tag": "工具介系詞",
+        "title": "用某個工具做某事：with + 工具/身體部位",
+        "pattern": "動作 + with + my / a + 名詞 (teeth / hands / pen)",
+        "explanation": "兒童英文最核心的「使用工具」寫法！表示動作是靠著什麼東西來完成的。",
+        "keyPoint": "複數「牙齒」是不規則變化：單數 tooth → 複數 teeth。",
+        "example": "I can chew through the thick rope <span class='font-bold text-[#0071E3] underline decoration-[#0071E3]/60 decoration-2 underline-offset-4'>with my sharp little teeth</span>.",
+        "exampleZh": "我可以用我尖尖的小牙齒咬斷這條粗繩子。"
+      }
+    ],
+    "quiz": [
+      {
+        "q": "1. What was the lion doing before the tiny mouse woke him up?",
+        "options": [
+          "A. Taking an afternoon nap",
+          "B. Flying a kite",
+          "C. Eating honey cookies",
+          "D. Swimming in a river"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "2. How did the hunter catch King Lion?",
+        "options": [
+          "A. With a wooden cage",
+          "B. With a strong net",
+          "C. With a deep hole",
+          "D. With a big basket"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "3. What lesson does this Aesop's fable teach us?",
+        "options": [
+          "A. Big animals never need help",
+          "B. Never sleep in the afternoon",
+          "C. Even little friends can be great helpers",
+          "D. Mice are faster than lions"
+        ],
+        "ans": 2
+      }
+    ],
+    "voice": "en-US-AnaNeural & en-US-GuyNeural",
+    "voiceLabel": "雙角色伊索寓言 (小老鼠 Mouse & 大獅子 Lion)",
+    "audio": "audio/listening/2026_kids_fairytale_02.mp3",
+    "vocabulary": [
+      {
+        "en": "lion",
+        "zh": "n. 獅子"
+      },
+      {
+        "en": "mouse",
+        "zh": "n. 老鼠、滑鼠"
+      },
+      {
+        "en": "net",
+        "zh": "n. 網、漁網、獵網"
+      },
+      {
+        "en": "rope",
+        "zh": "n. 繩索、粗繩"
+      },
+      {
+        "en": "promise",
+        "zh": "v./n. 承諾、答應、諾言"
       }
     ]
   }

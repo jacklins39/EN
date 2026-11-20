@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261120V4';
+        const APP_BUILD_VERSION = '20261120V5';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -6909,7 +6909,23 @@ function cleanupMasteredMistakes() {
         dummyUnlockAudio.preload = 'auto';
         try { dummyUnlockAudio.playsInline = true; } catch(e) {}
 
+        function resumeWebAudioContexts() {
+            try {
+                if (typeof audioCtx !== 'undefined' && audioCtx && audioCtx.state !== 'running') {
+                    const r1 = audioCtx.resume();
+                    if (r1 && typeof r1.catch === 'function') r1.catch(() => {});
+                }
+                if (window._spellLettersAudioCtx && window._spellLettersAudioCtx !== audioCtx && window._spellLettersAudioCtx.state !== 'running') {
+                    const r2 = window._spellLettersAudioCtx.resume();
+                    if (r2 && typeof r2.catch === 'function') r2.catch(() => {});
+                }
+            } catch(e) {}
+        }
+
         function unlockMobileAudio() {
+            // 每次使用者觸控皆確保被 iOS 中斷/暫停的 AudioContext 重新喚醒
+            resumeWebAudioContexts();
+
             if (isMobileAudioUnlocked) return;
             isMobileAudioUnlocked = true;
 
@@ -6926,14 +6942,7 @@ function cleanupMasteredMistakes() {
                 }
             } catch(e) {}
 
-            // 2. 解鎖 AudioContext (音效引擎)
-            try {
-                if (typeof audioCtx !== 'undefined' && audioCtx && audioCtx.state === 'suspended') {
-                    audioCtx.resume();
-                }
-            } catch(e) {}
-
-            // 3. 解鎖 Web SpeechSynthesis (iOS Safari 必須在手勢內預熱)
+            // 2. 解鎖 Web SpeechSynthesis (iOS Safari 必須在手勢內預熱)
             try {
                 if ('speechSynthesis' in window) {
                     const u = new SpeechSynthesisUtterance('');
@@ -7444,7 +7453,34 @@ function cleanupMasteredMistakes() {
             }
         }
 
-        // 逐字母拼讀核心函數 (100% 使用 Edge-TTS 真人字母 MP3 無縫拼接，Web Audio API 為主、HTML5 Audio 依序播放為輔)
+        function encodeMonoWavBlob(float32Samples, sampleRate) {
+            const len = float32Samples ? float32Samples.length : 0;
+            const buffer = new ArrayBuffer(44 + len * 2);
+            const view = new DataView(buffer);
+            const writeStr = (offset, str) => {
+                for (let i = 0; i < str.length; i++) view.setUint8(offset + i, str.charCodeAt(i));
+            };
+            writeStr(0, 'RIFF');
+            view.setUint32(4, 36 + len * 2, true);
+            writeStr(8, 'WAVE');
+            writeStr(12, 'fmt ');
+            view.setUint32(16, 16, true);
+            view.setUint16(20, 1, true);
+            view.setUint16(22, 1, true);
+            view.setUint32(24, sampleRate, true);
+            view.setUint32(28, sampleRate * 2, true);
+            view.setUint16(32, 2, true);
+            view.setUint16(34, 16, true);
+            writeStr(36, 'data');
+            view.setUint32(40, len * 2, true);
+            for (let i = 0; i < len; i++) {
+                const s = Math.max(-1, Math.min(1, float32Samples[i]));
+                view.setInt16(44 + i * 2, s < 0 ? s * 0x8000 : s * 0x7FFF, true);
+            }
+            return new Blob([buffer], { type: 'audio/wav' });
+        }
+
+        // 逐字母拼讀核心函數 (100% 使用 Edge-TTS 真人字母 MP3 無縫拼接，Web Audio API 為主、WAV/HTML5 Audio 依序播放為輔，徹底防護 iOS AudioContext 鎖死)
         function playSpellLetters(word, onEndedCallback, fromBackside = false) {
             if (isSpeechEvalActive) {
                 if (typeof onEndedCallback === 'function') onEndedCallback();
@@ -7479,10 +7515,17 @@ function cleanupMasteredMistakes() {
                 });
             });
             const spelledText = wordLetterGroups.map(arr => arr.map(c => c.toUpperCase()).join(', ')).join(' ,,, ');
+            const totalLettersCount = wordLetterGroups.reduce((acc, arr) => acc + arr.length, 0);
+            const effectiveRate = Math.max(0.85, globalSpeechRate || 1.0);
 
             let isCancelled = false;
+            let isDone = false;
             let activeSourceNode = null;
             let fallbackSeqTimer = null;
+            let progressCheckTimer = null;
+            let masterGuardTimer = null;
+            let fetchAbortCtrl = null;
+            let activeWavUrl = null;
 
             const spellBtn = document.getElementById('btn-card-voice-spell');
             if (spellBtn) {
@@ -7490,41 +7533,83 @@ function cleanupMasteredMistakes() {
             }
 
             const cleanup = () => {
+                if (masterGuardTimer) {
+                    clearTimeout(masterGuardTimer);
+                    masterGuardTimer = null;
+                }
                 if (fallbackSeqTimer) {
                     clearTimeout(fallbackSeqTimer);
                     fallbackSeqTimer = null;
+                }
+                if (progressCheckTimer) {
+                    clearTimeout(progressCheckTimer);
+                    progressCheckTimer = null;
+                }
+                if (fetchAbortCtrl) {
+                    try { fetchAbortCtrl.abort(); } catch(e) {}
+                    fetchAbortCtrl = null;
                 }
                 if (activeSourceNode) {
                     try { activeSourceNode.onended = null; activeSourceNode.stop(); } catch(e) {}
                     activeSourceNode = null;
                 }
+                if (activeWavUrl) {
+                    try { URL.revokeObjectURL(activeWavUrl); } catch(e) {}
+                    activeWavUrl = null;
+                }
                 if (spellBtn) {
                     spellBtn.className = 'w-20 h-7 rounded-full text-xs font-normal flex items-center justify-center cursor-pointer transition-colors shadow-2xs border bg-slate-50 text-slate-600 border-slate-200/90 hover:bg-slate-100/80';
                 }
-                currentSpellLettersController = null;
+                if (currentSpellLettersController && currentSpellLettersController._token === myToken) {
+                    currentSpellLettersController = null;
+                }
             };
 
             const finish = () => {
-                if (isCancelled || myToken !== (window._audioPlaybackGen || 0)) return;
+                if (isDone) return;
+                isDone = true;
+                const stale = isCancelled || myToken !== (window._audioPlaybackGen || 0);
                 cleanup();
+                if (stale) return;
                 if (typeof onEndedCallback === 'function') onEndedCallback();
             };
 
             currentSpellLettersController = {
+                _token: myToken,
                 cancel: () => {
                     isCancelled = true;
+                    isDone = true;
                     cleanup();
                 }
             };
 
+            // 全域保險絲：無論網路掛起、iOS 音訊中斷或 speechSynthesis 無回應，絕不鎖死輪播鏈
+            const masterMaxMs = Math.max(5500, Math.round((totalLettersCount * 750 + 3000) / Math.max(0.5, effectiveRate)));
+            masterGuardTimer = setTimeout(() => {
+                if (!isDone) {
+                    console.warn('playSpellLetters watchdog triggered for:', word);
+                    finish();
+                }
+            }, masterMaxMs);
+
             const fallbackSpeechSynthesis = () => {
-                if (isCancelled || myToken !== (window._audioPlaybackGen || 0)) return;
+                if (isDone || isCancelled || myToken !== (window._audioPlaybackGen || 0)) {
+                    cleanup();
+                    return;
+                }
                 if (!('speechSynthesis' in window)) {
                     finish();
                     return;
                 }
+                const synthTimeoutMs = Math.max(2500, Math.min(8500, totalLettersCount * 550 + 1500));
+                if (fallbackSeqTimer) clearTimeout(fallbackSeqTimer);
+                fallbackSeqTimer = setTimeout(finish, synthTimeoutMs);
+
                 const runUtter = () => {
-                    if (isCancelled || myToken !== (window._audioPlaybackGen || 0)) return;
+                    if (isDone || isCancelled || myToken !== (window._audioPlaybackGen || 0)) {
+                        cleanup();
+                        return;
+                    }
                     try {
                         const utter = new SpeechSynthesisUtterance(spelledText);
                         utter.lang = 'en-US';
@@ -7545,12 +7630,19 @@ function cleanupMasteredMistakes() {
                 } catch(e) { finish(); }
             };
 
-            // 次要真人備援：直接使用 wordAudioPlayer 依序播放 audio/letters/{ch}.mp3 (適用 file:// 等無 fetch 環境)
+            // 次要真人備援：直接使用 wordAudioPlayer 依序播放 audio/letters/{ch}.mp3 (適用 iOS/AudioContext 凍結與無 Web Audio 環境)
             const playLettersViaSequentialHtmlAudio = () => {
-                if (isCancelled || myToken !== (window._audioPlaybackGen || 0)) return;
+                if (isDone || isCancelled || myToken !== (window._audioPlaybackGen || 0)) {
+                    cleanup();
+                    return;
+                }
                 let idx = 0;
+                let consecutivePlayErrors = 0;
                 const step = () => {
-                    if (isCancelled || myToken !== (window._audioPlaybackGen || 0)) return;
+                    if (isDone || isCancelled || myToken !== (window._audioPlaybackGen || 0)) {
+                        cleanup();
+                        return;
+                    }
                     if (idx >= sequence.length) {
                         finish();
                         return;
@@ -7568,17 +7660,26 @@ function cleanupMasteredMistakes() {
                     clearAudioCallbacks();
                     let called = false;
                     const next = () => {
-                        if (called || isCancelled) return;
+                        if (called || isDone || isCancelled) return;
                         called = true;
                         clearAudioCallbacks();
                         step();
                     };
-                    const err = () => {
-                        if (called || isCancelled) return;
+                    const err = (e) => {
+                        if (called || isDone || isCancelled) return;
                         if (wordAudioPlayer.error && wordAudioPlayer.error.code === 20) return;
                         called = true;
                         clearAudioCallbacks();
-                        fallbackSpeechSynthesis();
+                        consecutivePlayErrors++;
+                        if (e && e.name === 'NotAllowedError') {
+                            finish();
+                            return;
+                        }
+                        if (consecutivePlayErrors >= 2) {
+                            fallbackSpeechSynthesis();
+                        } else {
+                            step();
+                        }
                     };
                     currentAudioDoneHandler = next;
                     currentAudioErrorHandler = err;
@@ -7586,19 +7687,73 @@ function cleanupMasteredMistakes() {
                     wordAudioPlayer.addEventListener('error', err, { once: true });
                     audioFallbackTimerId = setTimeout(next, 2500);
                     wordAudioPlayer.src = letterUrl;
-                    wordAudioPlayer.playbackRate = Math.max(0.85, globalSpeechRate);
+                    wordAudioPlayer.playbackRate = effectiveRate;
                     const p = wordAudioPlayer.play();
                     if (p && typeof p.catch === 'function') {
                         p.catch(e => {
                             if (e && (e.name === 'AbortError' || e.code === 20)) return;
-                            if (!isCancelled) fallbackSpeechSynthesis();
+                            err(e);
                         });
                     }
                 };
                 step();
             };
 
-            // 首選真人方案：Web Audio API 平行預載 + 靜音修剪 + 無縫拼接為單一真人字母串流
+            const playMergedViaWavHtmlAudio = (samples, sampleRate, expectedMs) => {
+                if (isDone || isCancelled || myToken !== (window._audioPlaybackGen || 0)) {
+                    cleanup();
+                    return;
+                }
+                try {
+                    const wavBlob = encodeMonoWavBlob(samples, sampleRate);
+                    activeWavUrl = URL.createObjectURL(wavBlob);
+                    try {
+                        wordAudioPlayer.pause();
+                        wordAudioPlayer.currentTime = 0;
+                    } catch(e) {}
+                    clearAudioCallbacks();
+                    let called = false;
+                    const doneWav = () => {
+                        if (called || isDone || isCancelled) return;
+                        called = true;
+                        clearAudioCallbacks();
+                        finish();
+                    };
+                    const errWav = (e) => {
+                        if (called || isDone || isCancelled) return;
+                        if (wordAudioPlayer.error && wordAudioPlayer.error.code === 20) return;
+                        called = true;
+                        clearAudioCallbacks();
+                        if (activeWavUrl) {
+                            try { URL.revokeObjectURL(activeWavUrl); } catch(err) {}
+                            activeWavUrl = null;
+                        }
+                        if (e && e.name === 'NotAllowedError') {
+                            finish();
+                            return;
+                        }
+                        playLettersViaSequentialHtmlAudio();
+                    };
+                    currentAudioDoneHandler = doneWav;
+                    currentAudioErrorHandler = errWav;
+                    wordAudioPlayer.addEventListener('ended', doneWav, { once: true });
+                    wordAudioPlayer.addEventListener('error', errWav, { once: true });
+                    audioFallbackTimerId = setTimeout(doneWav, expectedMs + 1500);
+                    wordAudioPlayer.src = activeWavUrl;
+                    wordAudioPlayer.playbackRate = effectiveRate;
+                    const p = wordAudioPlayer.play();
+                    if (p && typeof p.catch === 'function') {
+                        p.catch(e => {
+                            if (e && (e.name === 'AbortError' || e.code === 20)) return;
+                            errWav(e);
+                        });
+                    }
+                } catch(e) {
+                    playLettersViaSequentialHtmlAudio();
+                }
+            };
+
+            // 首選真人方案：Web Audio API 平行預載 + 靜音修剪 + 無縫拼接；若 iOS AudioContext 處於 suspended/interrupted，自動切換為同源已解鎖 wordAudioPlayer 播無縫 WAV / 序列 MP3
             const AudioCtx = window.AudioContext || window.webkitAudioContext;
             if (!AudioCtx || (window.location && window.location.protocol === 'file:')) {
                 playLettersViaSequentialHtmlAudio();
@@ -7610,25 +7765,44 @@ function cleanupMasteredMistakes() {
                     window._spellLettersAudioCtx = (typeof audioCtx !== 'undefined' && audioCtx) ? audioCtx : new AudioCtx();
                 }
                 const ctx = window._spellLettersAudioCtx;
-                if (ctx.state === 'suspended') {
-                    ctx.resume().catch(() => {});
+                const ensureCtxRunning = async () => {
+                    if (ctx.state === 'running') return true;
+                    try {
+                        await Promise.race([
+                            ctx.resume(),
+                            new Promise(resolve => setTimeout(resolve, 180))
+                        ]);
+                    } catch(e) {}
+                    return ctx.state === 'running';
+                };
+                if (ctx.state !== 'running') {
+                    try {
+                        const rp = ctx.resume();
+                        if (rp && typeof rp.catch === 'function') rp.catch(() => {});
+                    } catch(e) {}
                 }
                 if (!window._letterAudioBufferCache) {
                     window._letterAudioBufferCache = new Map();
                 }
                 const cache = window._letterAudioBufferCache;
                 const uniqueLetters = Array.from(new Set(wordLetterGroups.flat()));
+                fetchAbortCtrl = (typeof AbortController !== 'undefined') ? new AbortController() : null;
+                const fetchTimeoutId = fetchAbortCtrl ? setTimeout(() => { try { fetchAbortCtrl.abort(); } catch(e) {} }, 4000) : null;
 
                 Promise.all(uniqueLetters.map(async (ch) => {
                     if (cache.has(ch)) return;
                     const url = resolveAudioUrl(`audio/letters/${ch}.mp3?v=${APP_BUILD_VERSION}`);
-                    const resp = await fetch(url);
+                    const resp = await fetch(url, fetchAbortCtrl ? { signal: fetchAbortCtrl.signal } : undefined);
                     if (!resp.ok) throw new Error('HTTP ' + resp.status);
                     const arrBuf = await resp.arrayBuffer();
                     const decoded = await ctx.decodeAudioData(arrBuf);
                     cache.set(ch, decoded);
-                })).then(() => {
-                    if (isCancelled || myToken !== (window._audioPlaybackGen || 0)) return;
+                })).then(async () => {
+                    if (fetchTimeoutId) clearTimeout(fetchTimeoutId);
+                    if (isDone || isCancelled || myToken !== (window._audioPlaybackGen || 0)) {
+                        cleanup();
+                        return;
+                    }
                     const sampleRate = ctx.sampleRate;
                     const trimBufferRange = (buf) => {
                         const data = buf.getChannelData(0);
@@ -7669,16 +7843,47 @@ function cleanupMasteredMistakes() {
                         }
                     }
 
+                    const expectedMs = Math.max(350, Math.ceil((merged.duration / effectiveRate) * 1000));
+                    const isRunning = await ensureCtxRunning();
+                    if (isDone || isCancelled || myToken !== (window._audioPlaybackGen || 0)) {
+                        cleanup();
+                        return;
+                    }
+
+                    // iOS 背景 / HTML5 搶佔導致 AudioContext 停在 suspended / interrupted 時，改由已解鎖的主播放器播無縫 WAV
+                    if (!isRunning) {
+                        playMergedViaWavHtmlAudio(out, sampleRate, expectedMs);
+                        return;
+                    }
+
                     const src = ctx.createBufferSource();
                     src.buffer = merged;
-                    src.playbackRate.value = Math.max(0.85, globalSpeechRate || 1.0);
+                    src.playbackRate.value = effectiveRate;
                     src.connect(ctx.destination);
                     activeSourceNode = src;
+                    const startCtxTime = ctx.currentTime;
                     src.onended = () => finish();
+                    fallbackSeqTimer = setTimeout(() => finish(), expectedMs + 900);
+                    // 若開始播放後 250ms 發現 Web Audio 時鐘仍未推進，立即改走 wordAudioPlayer 播無縫 WAV
+                    progressCheckTimer = setTimeout(() => {
+                        if (isDone || isCancelled || myToken !== (window._audioPlaybackGen || 0)) return;
+                        if (ctx.state !== 'running' || (ctx.currentTime - startCtxTime) < 0.02) {
+                            try { src.onended = null; src.stop(); } catch(e) {}
+                            if (activeSourceNode === src) activeSourceNode = null;
+                            if (fallbackSeqTimer) {
+                                clearTimeout(fallbackSeqTimer);
+                                fallbackSeqTimer = null;
+                            }
+                            playMergedViaWavHtmlAudio(out, sampleRate, expectedMs);
+                        }
+                    }, 250);
                     src.start(0);
                 }).catch(() => {
-                    if (!isCancelled && myToken === (window._audioPlaybackGen || 0)) {
+                    if (fetchTimeoutId) clearTimeout(fetchTimeoutId);
+                    if (!isDone && !isCancelled && myToken === (window._audioPlaybackGen || 0)) {
                         playLettersViaSequentialHtmlAudio();
+                    } else {
+                        cleanup();
                     }
                 });
             } catch(e) {
@@ -9697,7 +9902,10 @@ function cleanupMasteredMistakes() {
                     });
                     const p = wordAudioPlayer.play();
                     if (p && typeof p.then === 'function') {
-                        p.catch(() => speakViaSynthesisOrTTS(clean, onEndedCallback));
+                        p.catch((err) => {
+                            if (err && (err.name === 'AbortError' || err.code === 20)) return;
+                            speakViaSynthesisOrTTS(clean, onEndedCallback);
+                        });
                     }
                 } catch(e) {
                     speakViaSynthesisOrTTS(clean, onEndedCallback);
@@ -9713,6 +9921,7 @@ function cleanupMasteredMistakes() {
                 const p = wordAudioPlayer.play();
                 if (p && typeof p.then === 'function') {
                     p.catch((err) => {
+                        if (err && (err.name === 'AbortError' || err.code === 20)) return;
                         console.warn("Youdao audio error, trying Google TTS:", err);
                         fallbackToGoogleTTS();
                     });

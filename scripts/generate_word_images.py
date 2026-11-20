@@ -149,6 +149,20 @@ def is_compiler_lock_active() -> bool:
 def build_prompt(word: str, style: str = "sticker", scene: str = "") -> str:
     """Construct prompt optimized for educational vocabulary illustrations."""
     subject = scene.strip() if scene and scene.strip() else f"a {word.replace('_', ' ').strip()}"
+    if style == "clay":
+        softened = re.sub(r"\b(?:jagged|scary|grim|creepy|fierce|dark black|monstrous|terrifying)\b", "friendly", subject, flags=re.I)
+        softened = re.sub(r"\bdemon\b", "cute cartoon imp", softened, flags=re.I)
+        return (
+            f"adorable minimal soft pastel 3d clay toy illustration of {softened}, smooth rounded chunky shapes, "
+            f"cheerful charming design, soft studio lighting, single centered subject isolated on pure solid white background, no text"
+        )
+    if style == "cute":
+        softened = re.sub(r"\b(?:jagged|scary|grim|creepy|fierce|dark black)\b", "gentle", subject, flags=re.I)
+        return (
+            f"cute kawaii chibi sticker of {softened}, rounded plump cozy proportions, "
+            f"soft warm-brown outlines, soft pastel colors, charming Japanese picture book art, "
+            f"single centered subject on plain pure white background, no text"
+        )
     if style == "sticker":
         return (
             f"A high quality vector sticker icon of {subject}, centered, smooth clean outlines, "
@@ -205,7 +219,8 @@ def main():
     parser.add_argument("--limit", type=int, default=0, help="Max images to generate (0 = all)")
     parser.add_argument("--model", type=str, default="sdxl-turbo", choices=["sdxl-turbo", "sdxl-lightning"])
     parser.add_argument("--steps", type=int, default=1, help="Inference steps (1 for turbo, 4 for lightning)")
-    parser.add_argument("--style", type=str, default="sticker", choices=["sticker", "icon", "realistic"])
+    parser.add_argument("--style", type=str, default="sticker", choices=["sticker", "cute", "clay", "icon", "realistic"])
+    parser.add_argument("--out-dir", type=str, default="", help="Optional override output directory (skips updating root manifest when custom)")
     parser.add_argument("--size", type=int, default=256, help="Output WebP square dimension (e.g. 256 or 192)")
     parser.add_argument("--quality", type=int, default=85, help="WebP quality (1-100, default 85)")
     parser.add_argument("--save-every", type=int, default=25, help="Manifest flush interval")
@@ -218,7 +233,9 @@ def main():
         update_manifest()
         return
 
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    out_dir = Path(args.out_dir) if args.out_dir else OUTPUT_DIR
+    custom_out = bool(args.out_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
     all_nouns = extract_nouns_from_db()
 
     # Determine target words & optional custom scenes
@@ -272,7 +289,7 @@ def main():
         if clean in seen_targets:
             continue
         seen_targets.add(clean)
-        out_file = OUTPUT_DIR / f"{clean}.webp"
+        out_file = out_dir / f"{clean}.webp"
         if args.overwrite or not out_file.exists():
             pending.append(clean)
 
@@ -327,11 +344,16 @@ def main():
             variant="fp16",
             local_files_only=True,
         )
-        pipe.to("cuda")
-        # Optimization for tight 8GB VRAM
-        pipe.enable_attention_slicing()
+        pipe.unet.to("cuda")
+        pipe.vae.to("cuda")
+        # Keep text encoders on CPU so UNet + fp32 VAE decode stay inside 8GB VRAM without PCIe swapping (~4x faster)
+        pipe.text_encoder.to("cpu")
+        pipe.text_encoder_2.to("cpu")
+        torch.cuda.empty_cache()
+        pipe.set_progress_bar_config(disable=True)
         guidance_scale = 0.0
         steps = args.steps if args.steps else 1
+        use_cpu_clip = True
     else:
         from diffusers import StableDiffusionXLPipeline, EulerDiscreteScheduler
         base_path = get_local_model_path("stabilityai/stable-diffusion-xl-base-1.0")
@@ -352,39 +374,57 @@ def main():
         pipe.enable_attention_slicing()
         guidance_scale = 0.0
         steps = 4
+        use_cpu_clip = False
 
     print(f"[Pipeline] Loaded successfully. Starting generation of {len(pending)} images...")
-    neg_prompt = "text, letters, words, watermark, signature, blurry, deformed, distorted, low quality, photorealistic messy background"
+    if args.style == "cute":
+        neg_prompt = "harsh black ink outlines, gritty, dark scary, photorealistic, sharp jagged, text, letters, words, watermark, signature, blurry, deformed, messy background"
+    else:
+        neg_prompt = "text, letters, words, watermark, signature, blurry, deformed, distorted, low quality, photorealistic messy background"
 
     for idx, clean in enumerate(pending, 1):
         prompt = build_prompt(clean, args.style, scene=prompt_map.get(clean, ""))
-        out_file = OUTPUT_DIR / f"{clean}.webp"
+        out_file = out_dir / f"{clean}.webp"
         print(f"[{idx}/{len(pending)}] Generating '{clean}'...", flush=True)
 
         try:
             seed = 42 + (zlib.crc32(clean.encode("utf-8")) % 100000)
             generator = torch.Generator("cuda").manual_seed(seed)
-            result = pipe(
-                prompt=prompt,
-                negative_prompt=neg_prompt,
-                num_inference_steps=steps,
-                guidance_scale=guidance_scale,
-                width=512,
-                height=512,
-                generator=generator
-            )
+            with torch.inference_mode():
+                if use_cpu_clip:
+                    pe, _, ppe, _ = pipe.encode_prompt(prompt, device="cpu")
+                    result = pipe(
+                        prompt_embeds=pe.to("cuda"),
+                        pooled_prompt_embeds=ppe.to("cuda"),
+                        num_inference_steps=steps,
+                        guidance_scale=guidance_scale,
+                        width=512,
+                        height=512,
+                        generator=generator
+                    )
+                else:
+                    result = pipe(
+                        prompt=prompt,
+                        negative_prompt=neg_prompt,
+                        num_inference_steps=steps,
+                        guidance_scale=guidance_scale,
+                        width=512,
+                        height=512,
+                        generator=generator
+                    )
             raw_img = result.images[0]
             img_out = raw_img.resize((args.size, args.size), Image.Resampling.LANCZOS)
             img_out.save(out_file, "WEBP", quality=args.quality, method=6)
         except Exception as e:
             print(f"[FAIL] Error generating '{clean}': {e}", flush=True)
 
-        if args.save_every > 0 and idx % args.save_every == 0:
+        if not custom_out and args.save_every > 0 and idx % args.save_every == 0:
             update_manifest()
             print(f"[Progress] {idx}/{len(pending)} completed ({idx*100//len(pending)}%).", flush=True)
 
     print("[Complete] Finished generating images.", flush=True)
-    update_manifest()
+    if not custom_out:
+        update_manifest()
 
 if __name__ == "__main__":
     main()

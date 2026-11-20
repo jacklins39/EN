@@ -232,7 +232,11 @@ def _load_existing_reviews() -> dict[str, dict[str, Any]]:
     return reviewed
 
 
-def _flush_approved_prompts(reviewed: dict[str, dict[str, Any]], ordered_words: list[str]) -> int:
+def _flush_approved_prompts(
+    reviewed: dict[str, dict[str, Any]],
+    ordered_words: list[str],
+    out_file: Path = PROMPTS_OUT_FILE,
+) -> int:
     approved: list[dict[str, Any]] = []
     for w in ordered_words:
         rec = reviewed.get(w)
@@ -249,18 +253,19 @@ def _flush_approved_prompts(reviewed: dict[str, dict[str, Any]], ordered_words: 
                 "scene": clean_scene,
             }
         )
-    PROMPTS_OUT_FILE.parent.mkdir(parents=True, exist_ok=True)
-    tmp_p = PROMPTS_OUT_FILE.with_suffix(".json.tmp")
+    out_file.parent.mkdir(parents=True, exist_ok=True)
+    tmp_p = out_file.with_suffix(".json.tmp")
     tmp_p.write_text(json.dumps(approved, ensure_ascii=False, indent=2), encoding="utf-8")
-    tmp_p.replace(PROMPTS_OUT_FILE)
+    tmp_p.replace(out_file)
     return len(approved)
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Prepare batch-2 visual prompts via local Ollama")
+    parser = argparse.ArgumentParser(description="Prepare visual prompts via local Ollama")
     parser.add_argument("--export-only", action="store_true", help="CPU-only: export prioritized candidate pool without calling Ollama")
     parser.add_argument("--max-candidates", type=int, default=3500, help="Candidate pool cap (0 = all)")
     parser.add_argument("--target-count", type=int, default=1000, help="Stop once N approved visual prompts are collected (0 = review full pool)")
+    parser.add_argument("--prompts-out", type=Path, default=PROMPTS_OUT_FILE, help="Output JSON path for approved prompts")
     parser.add_argument("--batch-size", type=int, default=10, help="Words per Ollama request")
     parser.add_argument("--model", type=str, default=DEFAULT_MODEL)
     parser.add_argument("--ollama-url", type=str, default=DEFAULT_OLLAMA_URL)
@@ -268,6 +273,7 @@ def main() -> int:
     parser.add_argument("--wait-lock", action="store_true", help="Poll and wait until compile_dual.lock is released")
     parser.add_argument("--force", action="store_true", help="Ignore compile_dual.lock check")
     args = parser.parse_args()
+    out_file = Path(args.prompts_out)
 
     TMP_DIR.mkdir(parents=True, exist_ok=True)
     pool = build_candidate_pool(max_candidates=args.max_candidates)
@@ -300,11 +306,11 @@ def main() -> int:
     ordered_words = [x["word"] for x in pool]
     meta_by_word = {x["word"]: x for x in pool}
     todo = [x for x in pool if x["word"] not in reviewed]
-    approved_count = _flush_approved_prompts(reviewed, ordered_words)
+    approved_count = _flush_approved_prompts(reviewed, ordered_words, out_file)
     print(f"[Plan] model={args.model} | pool={len(pool)} | already_reviewed={len(reviewed)} | approved={approved_count} | todo={len(todo)}")
 
     if args.target_count > 0 and approved_count >= args.target_count:
-        print(f"[Done] Already reached target-count={args.target_count} ({approved_count} approved -> {PROMPTS_OUT_FILE}).")
+        print(f"[Done] Already reached target-count={args.target_count} ({approved_count} approved -> {out_file}).")
         return 0
 
     with REVIEW_JSONL.open("a", encoding="utf-8") as log_fh:
@@ -354,14 +360,14 @@ def main() -> int:
                     batch_ok += 1
 
             log_fh.flush()
-            approved_count = _flush_approved_prompts(reviewed, ordered_words)
+            approved_count = _flush_approved_prompts(reviewed, ordered_words, out_file)
             dt = time.time() - t0
             print(
                 f"[Batch {start + len(batch)}/{len(todo)}] +{batch_ok}/{len(batch)} visual "
                 f"({dt:.1f}s) | total_approved={approved_count}"
             )
             if args.target_count > 0 and approved_count >= args.target_count:
-                print(f"[Complete] Reached target_count={args.target_count} -> {PROMPTS_OUT_FILE}")
+                print(f"[Complete] Reached target_count={args.target_count} -> {out_file}")
                 break
 
     return 0

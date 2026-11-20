@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261120V2';
+        const APP_BUILD_VERSION = '20261120V3';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -632,6 +632,23 @@
             -webkit-user-select: text;
             user-select: text;
         }
+        /* 聽力句卡中文翻譯真人朗讀高亮 */
+        .sentence-card.sentence-active .zh-text.listen-zh-speaking,
+        .listen-zh-speaking {
+            color: #0071E3 !important;
+            filter: blur(0px) !important;
+            opacity: 1 !important;
+        }
+        .listen-zh-speaking button {
+            color: #0071E3 !important;
+            background-color: rgba(0, 113, 227, 0.12) !important;
+        }
+        html.dark .sentence-card .zh-text.listen-zh-speaking,
+        html.dark .sentence-card.sentence-active .zh-text.listen-zh-speaking,
+        html.dark #listening-grammar-container .grammar-zh-row.listen-zh-speaking,
+        html.dark .listen-zh-speaking {
+            color: #60A5FA !important;
+        }
     
         @keyframes whackShake {
             0%, 100% { transform: translateX(0); }
@@ -920,12 +937,18 @@
         html.dark #listening-card-snippet {
             color: #94A3B8 !important;
         }
-        /* 盲聽按鈕、字幕模式選單與沙盒計數徽章 */
+        /* 盲聽按鈕、雙語輪播按鈕、字幕模式選單與沙盒計數徽章 */
         html.dark #btn-toggle-blind-mode,
+        html.dark #btn-toggle-bilingual-mode:not(.bilingual-active),
         html.dark #trans-mode-select {
             background-color: #172235 !important;
             border-color: rgba(255, 255, 255, 0.12) !important;
             color: #F8FAFC !important;
+        }
+        html.dark #btn-toggle-bilingual-mode.bilingual-active {
+            background-color: #0071E3 !important;
+            border-color: transparent !important;
+            color: #FFFFFF !important;
         }
         html.dark #sandbox-badge-count {
             background-color: rgba(168, 85, 247, 0.25) !important;
@@ -3360,6 +3383,9 @@
                                     </button>
                                     <button id="btn-toggle-blind-mode" class="text-xs px-2.5 py-1 rounded-lg border border-gray-200 bg-[#F5F5F7] text-gray-700 hover:bg-gray-200 font-medium transition-all flex items-center gap-1 cursor-pointer" title="開啟盲聽磨耳朵模式（毛玻璃遮罩，強迫聽覺解碼）">
                                         <span>🙈</span> <span id="blind-mode-text">盲聽: 關</span>
+                                    </button>
+                                    <button id="btn-toggle-bilingual-mode" class="text-xs px-2.5 py-1 rounded-lg border border-gray-200 bg-[#F5F5F7] text-gray-700 hover:bg-gray-200 font-medium transition-all flex items-center gap-1 cursor-pointer" title="開啟英→中雙語自動輪播（每句英文播完自動真人唸出中文翻譯）">
+                                        <span>💬</span> <span id="bilingual-mode-text">雙語: 關</span>
                                     </button>
                                     <select id="trans-mode-select" aria-label="翻譯顯示模式" class="text-xs bg-[#F5F5F7] rounded-lg px-2 py-1 outline-none text-[#0071E3] font-medium cursor-pointer border border-gray-200 shadow-2xs">
                                         <option value="en-zh">中英對照</option>
@@ -6950,10 +6976,15 @@ function cleanupMasteredMistakes() {
             }, pauseAfterExample);
         }
 
+        function clearListeningZhHighlight() {
+            document.querySelectorAll('.listen-zh-speaking').forEach(el => el.classList.remove('listen-zh-speaking'));
+        }
+
         function stopAllAudio(preserveGen = false) {
             if (!preserveGen) {
                 window._audioPlaybackGen = (window._audioPlaybackGen || 0) + 1;
             }
+            clearListeningZhHighlight();
             clearAudioCallbacks();
             if (currentSpellLettersController) {
                 try { currentSpellLettersController.cancel(); } catch(e) {}
@@ -7279,6 +7310,84 @@ function cleanupMasteredMistakes() {
                     if (typeof onEndedCallback === 'function') onEndedCallback();
                 });
             }
+        }
+
+        function normalizeListeningZhKey(zhText) {
+            return String(zhText || '').replace(/\s+/g, ' ').trim();
+        }
+
+        function getListeningZhAudioPath(zhText) {
+            const key = normalizeListeningZhKey(zhText);
+            if (!key || typeof window.LISTENING_ZH_AUDIO_MANIFEST === 'undefined') return '';
+            return window.LISTENING_ZH_AUDIO_MANIFEST.get(key) || '';
+        }
+
+        function speakListeningZh(zhText, onEndedCallback, highlightEl = null) {
+            if (isSpeechEvalActive) {
+                if (typeof onEndedCallback === 'function') onEndedCallback();
+                return;
+            }
+            const key = normalizeListeningZhKey(zhText);
+            if (!key) {
+                if (typeof onEndedCallback === 'function') onEndedCallback();
+                return;
+            }
+            unlockMobileAudio();
+            stopAllAudio();
+            const myToken = window._audioPlaybackGen || 0;
+            if (highlightEl) highlightEl.classList.add('listen-zh-speaking');
+
+            const finish = () => {
+                clearListeningZhHighlight();
+                if (myToken !== (window._audioPlaybackGen || 0)) return;
+                if (typeof onEndedCallback === 'function') onEndedCallback();
+            };
+
+            const relPath = getListeningZhAudioPath(key);
+            if (relPath) {
+                clearAudioCallbacks();
+                let called = false;
+                const done = () => {
+                    if (called) return;
+                    called = true;
+                    clearAudioCallbacks();
+                    finish();
+                };
+                const onError = () => {
+                    if (called) return;
+                    if (wordAudioPlayer && wordAudioPlayer.error && wordAudioPlayer.error.code === 20) return;
+                    called = true;
+                    clearAudioCallbacks();
+                    if (myToken !== (window._audioPlaybackGen || 0)) {
+                        clearListeningZhHighlight();
+                        return;
+                    }
+                    playOnlineChineseStream(key, finish, myToken);
+                };
+                try {
+                    wordAudioPlayer.pause();
+                    wordAudioPlayer.currentTime = 0;
+                } catch(e) {}
+                currentAudioDoneHandler = done;
+                currentAudioErrorHandler = onError;
+                wordAudioPlayer.addEventListener('ended', done, { once: true });
+                wordAudioPlayer.addEventListener('error', onError, { once: true });
+                const rate = (typeof globalSpeechRate === 'number' && globalSpeechRate > 0) ? globalSpeechRate : 1.0;
+                audioFallbackTimerId = setTimeout(done, getScaledAudioFallbackMs(Math.max(8500, key.length * 420 + 3000)));
+                wordAudioPlayer.src = resolveAudioUrl(`${relPath}?v=${APP_BUILD_VERSION}`);
+                wordAudioPlayer.playbackRate = rate;
+                const playPromise = wordAudioPlayer.play();
+                if (playPromise !== undefined) {
+                    playPromise.catch((err) => {
+                        if (err && (err.name === 'AbortError' || err.code === 20)) return;
+                        console.warn('Local listening zh audio error, fallback to stream:', err);
+                        onError();
+                    });
+                }
+                return;
+            }
+
+            playOnlineChineseStream(key, finish, myToken);
         }
 
         function speakChineseViaSynthesis(cleanZh, onEndedCallback) {
@@ -17664,7 +17773,10 @@ function cleanupMasteredMistakes() {
                                 </span>
                             </div>
                             ${contentEnHtml}
-                            <div id="listen-zh-${i}" class="text-xs md:text-sm text-[#86868B] mt-1.5 font-medium zh-text transition-colors">${esc(sObj.zh || '')}</div>
+                            <div id="listen-zh-${i}" class="text-xs md:text-sm text-[#86868B] mt-1.5 font-medium zh-text transition-colors flex items-start gap-1.5">
+                                ${sObj.zh && sObj.zh.trim() ? `<button type="button" onclick="event.stopPropagation(); playListeningSentenceZh(${i})" class="shrink-0 mt-0.5 text-slate-400 hover:text-[#0071E3] hover:bg-blue-50 dark:hover:bg-slate-700 p-1 rounded-full transition-colors cursor-pointer active:scale-95" title="朗讀本句中文翻譯" aria-label="朗讀本句中文翻譯"><svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg></button>` : ''}
+                                <span class="flex-1 leading-relaxed">${esc(sObj.zh || '')}</span>
+                            </div>
                         </div>
                         <button class="text-gray-300 hover:text-[#0071E3] p-1.5 rounded-full hover:bg-blue-50 shrink-0 transition" title="從此句開始播放">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" /></svg>
@@ -17722,6 +17834,72 @@ function cleanupMasteredMistakes() {
             });
         }
         updateBlindModeUI();
+
+        // ==========================================
+        // 聽力專區：英→中雙語逐句輪播 + 單句中譯真人點擊朗讀
+        // ==========================================
+        let listeningBilingualMode = localStorage.getItem('listening_bilingual_mode') === 'true';
+        let listeningBilingualStage = false;
+        let listeningBilingualGen = 0;
+
+        function cancelListeningBilingualPending() {
+            listeningBilingualGen++;
+            listeningBilingualStage = false;
+        }
+
+        function updateBilingualModeUI() {
+            const btn = document.getElementById('btn-toggle-bilingual-mode');
+            const txt = document.getElementById('bilingual-mode-text');
+            if (listeningBilingualMode) {
+                if (btn) {
+                    btn.classList.add('bg-[#0071E3]', 'text-white', 'border-transparent', 'bilingual-active');
+                    btn.classList.remove('bg-[#F5F5F7]', 'text-gray-700', 'border-gray-200');
+                }
+                if (txt) txt.innerText = '雙語: 開';
+            } else {
+                if (btn) {
+                    btn.classList.remove('bg-[#0071E3]', 'text-white', 'border-transparent', 'bilingual-active');
+                    btn.classList.add('bg-[#F5F5F7]', 'text-gray-700', 'border-gray-200');
+                }
+                if (txt) txt.innerText = '雙語: 關';
+            }
+        }
+
+        const btnBilingualMode = document.getElementById('btn-toggle-bilingual-mode');
+        if (btnBilingualMode) {
+            btnBilingualMode.addEventListener('click', (e) => {
+                e.stopPropagation();
+                listeningBilingualMode = !listeningBilingualMode;
+                localStorage.setItem('listening_bilingual_mode', listeningBilingualMode);
+                if (!listeningBilingualMode) {
+                    const wasBilingualPaused = listeningBilingualStage;
+                    cancelListeningBilingualPending();
+                    stopAllAudio();
+                    if (wasBilingualPaused && isListeningPlaying && listeningAudioPlayer.paused) {
+                        listeningAudioPlayer.play().catch(() => {});
+                    }
+                }
+                updateBilingualModeUI();
+            });
+        }
+        updateBilingualModeUI();
+
+        function playListeningSentenceZh(index) {
+            const sObj = (Array.isArray(listeningSentences) && listeningSentences[index]) ? listeningSentences[index] : null;
+            if (!sObj || !sObj.zh || !String(sObj.zh).trim()) return;
+            cancelListeningBilingualPending();
+            if (grammarClipTimerId) {
+                clearTimeout(grammarClipTimerId);
+                grammarClipTimerId = null;
+            }
+            if (!listeningAudioPlayer.paused) {
+                listeningAudioPlayer.pause();
+            }
+            isListeningPlaying = false;
+            updateListeningPlayBtn();
+            const zhEl = document.getElementById(`listen-zh-${index}`);
+            speakListeningZh(sObj.zh, null, zhEl);
+        }
 
         // ==========================================
         // 懸浮翻譯卡 (Tooltip) 語境詞性鎖定與保守精準釋義框選 (做法 3)
@@ -19011,9 +19189,62 @@ function cleanupMasteredMistakes() {
             }
         }
 
+        function triggerBilingualAfterSentence(completedIdx, mode, nextIdx = -1) {
+            if (listeningBilingualStage) return;
+            const sObj = (Array.isArray(listeningSentences) && listeningSentences[completedIdx]) ? listeningSentences[completedIdx] : null;
+            const zhText = (sObj && sObj.zh) ? String(sObj.zh).trim() : '';
+            if (!zhText) {
+                if (mode === 'repeat-sentence') {
+                    const sStart = (sObj && typeof sObj.start === 'number') ? sObj.start : 0;
+                    listeningAudioPlayer.currentTime = Math.max(0, sStart);
+                    clearWordHighlight();
+                } else if (mode === 'next' && nextIdx >= 0 && nextIdx < listeningSentences.length) {
+                    currentListeningIndex = nextIdx;
+                    highlightListeningSentence(nextIdx);
+                } else if (mode === 'loop-all') {
+                    playListeningFrom(0);
+                } else {
+                    isListeningPlaying = false;
+                    updateListeningPlayBtn();
+                    highlightListeningSentence(-1);
+                    currentListeningIndex = 0;
+                    currentHighlightedIndex = -1;
+                }
+                return;
+            }
+
+            listeningBilingualStage = true;
+            const gen = ++listeningBilingualGen;
+            stopWordTrackingLoop();
+            listeningAudioPlayer.pause();
+            isListeningPlaying = true;
+            updateListeningPlayBtn();
+            highlightListeningSentence(completedIdx);
+            const zhEl = document.getElementById(`listen-zh-${completedIdx}`);
+
+            speakListeningZh(zhText, () => {
+                if (gen !== listeningBilingualGen || !listeningBilingualStage) return;
+                listeningBilingualStage = false;
+                if (mode === 'repeat-sentence') {
+                    playListeningFrom(completedIdx);
+                } else if (mode === 'next' && nextIdx >= 0 && nextIdx < listeningSentences.length) {
+                    playListeningFrom(nextIdx);
+                } else if (mode === 'loop-all') {
+                    playListeningFrom(0);
+                } else {
+                    isListeningPlaying = false;
+                    updateListeningPlayBtn();
+                    highlightListeningSentence(-1);
+                    currentListeningIndex = 0;
+                    currentHighlightedIndex = -1;
+                }
+            }, zhEl);
+        }
+
         // 統一高頻（60fps）精準音訊與文字滾動同步引擎
         function syncListeningPlayback() {
             if (!listeningSentences || listeningSentences.length === 0) return;
+            if (listeningAudioPlayer.seeking || listeningBilingualStage) return;
             const t = listeningAudioPlayer.currentTime;
             
             // 1. 單句循環模式：播到句尾時精確循環回開頭
@@ -19022,6 +19253,10 @@ function cleanupMasteredMistakes() {
                 const sStart = typeof s.start === 'number' ? s.start : 0;
                 const sEnd = typeof s.end === 'number' ? s.end : 999999;
                 if (t >= (sEnd - 0.08)) {
+                    if (listeningBilingualMode && s.zh && String(s.zh).trim()) {
+                        triggerBilingualAfterSentence(currentListeningIndex, 'repeat-sentence');
+                        return;
+                    }
                     listeningAudioPlayer.currentTime = Math.max(0, sStart);
                     clearWordHighlight();
                     return;
@@ -19042,6 +19277,18 @@ function cleanupMasteredMistakes() {
             }
 
             if (foundIdx !== -1 && foundIdx !== currentHighlightedIndex) {
+                if (
+                    listeningBilingualMode &&
+                    listeningLoopMode !== 'sentence' &&
+                    currentHighlightedIndex >= 0 &&
+                    foundIdx > currentHighlightedIndex &&
+                    listeningSentences[currentHighlightedIndex] &&
+                    listeningSentences[currentHighlightedIndex].zh &&
+                    String(listeningSentences[currentHighlightedIndex].zh).trim()
+                ) {
+                    triggerBilingualAfterSentence(currentHighlightedIndex, 'next', foundIdx);
+                    return;
+                }
                 currentListeningIndex = foundIdx;
                 highlightListeningSentence(foundIdx);
             }
@@ -19077,6 +19324,11 @@ function cleanupMasteredMistakes() {
 
         listeningAudioPlayer.addEventListener('ended', () => {
             stopWordTrackingLoop();
+            if (listeningBilingualMode && currentHighlightedIndex >= 0 && listeningSentences[currentHighlightedIndex] && listeningSentences[currentHighlightedIndex].zh && String(listeningSentences[currentHighlightedIndex].zh).trim()) {
+                const mode = listeningLoopMode === 'all' ? 'loop-all' : (listeningLoopMode === 'sentence' ? 'repeat-sentence' : 'finish');
+                triggerBilingualAfterSentence(currentHighlightedIndex, mode);
+                return;
+            }
             if (listeningLoopMode === 'all') {
                 playListeningFrom(0);
             } else if (listeningLoopMode === 'sentence') {
@@ -19092,7 +19344,7 @@ function cleanupMasteredMistakes() {
 
         listeningAudioPlayer.addEventListener('pause', () => {
             stopWordTrackingLoop();
-            if (!listeningAudioPlayer.seeking) {
+            if (!listeningAudioPlayer.seeking && !listeningBilingualStage) {
                 isListeningPlaying = false;
                 updateListeningPlayBtn();
             }
@@ -19145,6 +19397,8 @@ function cleanupMasteredMistakes() {
                 return;
             }
 
+            cancelListeningBilingualPending();
+            stopAllAudio();
             unlockMobileAudio();
             currentListeningIndex = index;
             highlightListeningSentence(index);
@@ -19200,6 +19454,8 @@ function cleanupMasteredMistakes() {
         }
 
         function stopListening() {
+            cancelListeningBilingualPending();
+            stopAllAudio();
             stopWordTrackingLoop();
             isListeningPlaying = false;
             listeningAudioPlayer.pause();
@@ -19228,10 +19484,14 @@ function cleanupMasteredMistakes() {
 
         document.getElementById('btn-play-pause-listening').addEventListener('click', () => {
             if (isListeningPlaying) {
+                cancelListeningBilingualPending();
+                stopAllAudio();
                 listeningAudioPlayer.pause();
                 isListeningPlaying = false;
                 updateListeningPlayBtn();
             } else {
+                cancelListeningBilingualPending();
+                stopAllAudio();
                 if (listeningAudioPlayer.paused && listeningAudioPlayer.currentTime > 0 && !listeningAudioPlayer.ended) {
                     listeningAudioPlayer.playbackRate = parseFloat(document.getElementById('listening-speed').value || '1');
                     listeningAudioPlayer.play().then(() => {
@@ -19526,6 +19786,25 @@ function cleanupMasteredMistakes() {
             playAudio(firstPart || plainEn);
         }
 
+        function playGrammarExampleZhAudio(btnOrText) {
+            const zhText = (typeof btnOrText === 'string')
+                ? btnOrText
+                : (btnOrText && btnOrText.getAttribute ? btnOrText.getAttribute('data-zh') : '');
+            if (!zhText || !zhText.trim()) return;
+            cancelListeningBilingualPending();
+            if (grammarClipTimerId) {
+                clearTimeout(grammarClipTimerId);
+                grammarClipTimerId = null;
+            }
+            if (!listeningAudioPlayer.paused) {
+                listeningAudioPlayer.pause();
+            }
+            isListeningPlaying = false;
+            updateListeningPlayBtn();
+            const parentRow = (btnOrText && btnOrText.closest) ? btnOrText.closest('.grammar-zh-row') : null;
+            speakListeningZh(zhText, null, parentRow);
+        }
+
         // 生成動態名師文法解說 (包含語法分類標籤、句型公式、結構拆解、考點提示與中英雙語可發音例句)
         function generateListeningGrammar(text) {
             const grammarContainer = document.getElementById('listening-grammar-container');
@@ -19579,7 +19858,13 @@ function cleanupMasteredMistakes() {
                        </div>`
                     : '';
                 const exampleZhHtml = item.exampleZh
-                    ? `<div class="text-xs sm:text-[13px] text-slate-500 mt-1.5 pt-1.5 border-t border-slate-200/70 font-medium">${esc(item.exampleZh)}</div>`
+                    ? `<div class="grammar-zh-row flex items-start justify-between gap-2 text-xs sm:text-[13px] text-slate-500 mt-1.5 pt-1.5 border-t border-slate-200/70 font-medium">
+                           <span class="flex-1 leading-relaxed">${esc(item.exampleZh)}</span>
+                           <button type="button" data-zh="${esc(item.exampleZh)}" onclick="playGrammarExampleZhAudio(this)" class="shrink-0 inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-700 bg-emerald-50 hover:bg-emerald-100/80 border border-emerald-200/70 dark:bg-emerald-900/40 dark:text-emerald-300 dark:border-emerald-700/60 dark:hover:bg-emerald-800/50 px-2 py-0.5 rounded-full transition cursor-pointer active:scale-95" title="朗讀此中文翻譯">
+                               <span>🔊</span>
+                               <span>聽中譯</span>
+                           </button>
+                       </div>`
                     : '';
 
                 html += `

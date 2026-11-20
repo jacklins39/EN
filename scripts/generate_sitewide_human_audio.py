@@ -192,6 +192,9 @@ def rebuild_manifests(data: dict) -> dict[str, int]:
         if dest.exists() and dest.stat().st_size > 256:
             col_entries[item["key"]] = item["relPath"]
 
+    m_lzh = re.search(r"window\.LISTENING_ZH_AUDIO_MANIFEST\s*=\s*new Map\(Object\.entries\((\{[\s\S]*?\})\)\);", col_raw)
+    lzh_entries = json.loads(m_lzh.group(1)) if m_lzh else {}
+
     gram_entries = {}
     for item in data.get("grammar", []):
         dest = EXAMPLES_REPO / "audio" / "examples" / "grammar" / item["filename"]
@@ -205,6 +208,10 @@ def rebuild_manifests(data: dict) -> dict[str, int]:
         f.write("window.GRAMMAR_AUDIO_MANIFEST = new Map(Object.entries(")
         f.write(json.dumps(gram_entries, ensure_ascii=False, indent=2))
         f.write("));\n")
+        if lzh_entries:
+            f.write("window.LISTENING_ZH_AUDIO_MANIFEST = new Map(Object.entries(")
+            f.write(json.dumps(lzh_entries, ensure_ascii=False, indent=2))
+            f.write("));\n")
 
     # 3. example_zh_audio_manifest.js
     ez_dir = ZH_REPO / "audio" / "example_zh"

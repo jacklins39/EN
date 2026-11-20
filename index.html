@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261120V6';
+        const APP_BUILD_VERSION = '20261120V7';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -401,6 +401,21 @@
             align-items: stretch !important;
             overflow: hidden !important;
             padding: 0.75rem 0.85rem !important;
+        }
+        #card-image-thumb-btn {
+            background: #ffffff;
+            border: 1px solid rgba(226, 232, 240, 0.9);
+            box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+        }
+        html.dark #card-image-thumb-btn {
+            background: rgba(255, 255, 255, 0.96);
+            border-color: rgba(255, 255, 255, 0.22);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.08);
+        }
+        html.theme-paper #card-image-thumb-btn {
+            background: #ffffff;
+            border-color: rgba(214, 206, 190, 0.85);
+            box-shadow: 0 4px 14px rgba(60, 50, 40, 0.08);
         }
 
         .btn-action { transition: all 0.2s; }
@@ -3047,9 +3062,6 @@
                         </div>
                         <div class="flex flex-col items-center justify-center mb-1 sm:mb-1.5 max-w-full px-1">
                             <div class="flex items-center justify-center gap-2 flex-wrap">
-                                <div id="card-image-thumb-wrap" class="hidden shrink-0 cursor-pointer" onclick="event.stopPropagation(); openWordImageLightbox(currentWord ? currentWord.en : '');" title="點擊放大插圖">
-                                    <img id="card-image-thumb" src="" alt="插圖" class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl object-contain bg-white dark:bg-slate-800 border border-slate-200/90 dark:border-slate-700 shadow-2xs hover:scale-105 active:scale-95 transition-transform" />
-                                </div>
                                 <span id="card-pos-badge" class="hidden"></span>
                                 <div class="cursor-pointer text-center text-slate-800 font-bold text-base sm:text-lg leading-snug flex items-center gap-1.5 flex-wrap justify-center" id="card-translation" title="點擊朗讀中文釋義">n. 蘋果</div>
                                 <button id="btn-speak-zh" class="p-0.5 text-slate-400 hover:text-[#0071E3] hover:bg-blue-50 rounded-full transition-colors cursor-pointer shrink-0" title="朗讀中文釋義" aria-label="朗讀中文釋義">
@@ -3078,21 +3090,30 @@
                                 </div>
                             </div>
 
-                            <!-- 情境例句區塊 (手機 Tab 2 / 電腦右欄) -->
-                            <div id="example-container" class="bg-slate-50/90 rounded-xl p-2.5 sm:p-3 w-full text-left relative border border-slate-200/75 mt-1 sm:mt-1.5 hidden transition-all duration-300 hover:shadow-xs hover:bg-white">
-                            <button id="btn-example-audio" class="absolute top-1.5 right-1.5 p-1.5 text-slate-400 hover:text-[#0071E3] rounded-full hover:bg-blue-50 transition-colors z-20 cursor-pointer" title="朗讀例句">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
-                            </button>
-                            <div class="text-[10px] text-slate-400 mb-0.5 font-semibold tracking-wider uppercase">Example 例句 <span class="text-slate-400/80 normal-case ml-1 font-normal">(點單字可查字典)</span></div>
-                            <p class="text-slate-800 font-medium mb-0.5 pr-6 text-[14px] sm:text-[15px] leading-relaxed" id="card-example"></p>
-                            <div class="mt-1 pt-1 border-t border-dashed border-slate-200">
-                                <p class="text-slate-500 text-[12.5px] sm:text-[13px] font-medium leading-relaxed cursor-pointer hover:text-[#0071E3] transition-colors" id="card-example-zh" title="點擊單獨朗讀例句中文譯文"></p>
+                            <!-- 情境例句與黏土插圖區塊 (手機垂直堆疊 / 電腦雙欄右欄) -->
+                            <div id="card-panel-example" class="w-full flex flex-col items-center gap-2 sm:gap-2.5">
+                                <div id="example-container" class="bg-slate-50/90 rounded-xl p-2.5 sm:p-3 w-full text-left relative border border-slate-200/75 mt-1 sm:mt-1.5 hidden transition-all duration-300 hover:shadow-xs hover:bg-white">
+                                    <button id="btn-example-audio" class="absolute top-1.5 right-1.5 p-1.5 text-slate-400 hover:text-[#0071E3] rounded-full hover:bg-blue-50 transition-colors z-20 cursor-pointer" title="朗讀例句">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
+                                    </button>
+                                    <div class="text-[10px] text-slate-400 mb-0.5 font-semibold tracking-wider uppercase">Example 例句 <span class="text-slate-400/80 normal-case ml-1 font-normal">(點單字可查字典)</span></div>
+                                    <p class="text-slate-800 font-medium mb-0.5 pr-6 text-[14px] sm:text-[15px] leading-relaxed" id="card-example"></p>
+                                    <div class="mt-1 pt-1 border-t border-dashed border-slate-200">
+                                        <p class="text-slate-500 text-[12.5px] sm:text-[13px] font-medium leading-relaxed cursor-pointer hover:text-[#0071E3] transition-colors" id="card-example-zh" title="點擊單獨朗讀例句中文譯文"></p>
+                                    </div>
+                                    <div id="card-user-note-box" onclick="event.stopPropagation(); if (currentWord && currentWord.en) showWordDetailModal(currentWord.en);" class="hidden mt-2 pt-1.5 border-t border-amber-200/70 dark:border-amber-700/40 text-xs text-amber-800 dark:text-amber-300 flex items-start gap-1.5 cursor-pointer hover:opacity-85 transition-opacity" title="點擊查看詳解與記憶技巧">
+                                        <span class="shrink-0 font-bold">💡 記憶技巧：</span>
+                                        <span id="card-user-note-text" class="whitespace-pre-wrap break-words font-medium"></span>
+                                    </div>
+                                </div>
+                                <!-- 情境具象黏土插圖 (方案 A：例句下方置中獨立視覺區) -->
+                                <div id="card-image-thumb-wrap" class="hidden w-full flex justify-center pt-0.5 select-none">
+                                    <button type="button" id="card-image-thumb-btn" onclick="event.stopPropagation(); openWordImageLightbox(currentWord ? currentWord.en : '');" class="group relative inline-flex items-center justify-center p-1.5 rounded-2xl hover:scale-[1.03] active:scale-95 transition-all cursor-pointer" title="點擊放大插圖">
+                                        <img id="card-image-thumb" src="" alt="插圖" class="w-[108px] h-[108px] sm:w-[116px] sm:h-[116px] rounded-xl object-contain" />
+                                        <span class="absolute bottom-1 right-1 text-[10px] leading-none px-1 py-0.5 rounded-md bg-slate-900/55 text-white/90 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">🔍</span>
+                                    </button>
+                                </div>
                             </div>
-                            <div id="card-user-note-box" onclick="event.stopPropagation(); if (currentWord && currentWord.en) showWordDetailModal(currentWord.en);" class="hidden mt-2 pt-1.5 border-t border-amber-200/70 dark:border-amber-700/40 text-xs text-amber-800 dark:text-amber-300 flex items-start gap-1.5 cursor-pointer hover:opacity-85 transition-opacity" title="點擊查看詳解與記憶技巧">
-                                <span class="shrink-0 font-bold">💡 記憶技巧：</span>
-                                <span id="card-user-note-text" class="whitespace-pre-wrap break-words font-medium"></span>
-                            </div>
-                        </div>
                         </div> <!-- close lg:grid -->
                     </div>
                 </div>
@@ -11099,13 +11120,16 @@ function cleanupMasteredMistakes() {
             const manifest = window.WORD_IMAGES_MANIFEST;
             if (clean && manifest && manifest.has(clean)) {
                 const v = encodeURIComponent(typeof APP_BUILD_VERSION !== 'undefined' ? APP_BUILD_VERSION : '1');
+                thumb.onload = () => { if (typeof scheduleSyncFlashcardHeight === 'function') scheduleSyncFlashcardHeight(); };
                 thumb.src = `images/words/${clean}.webp?v=${v}`;
                 thumb.alt = w.en;
                 wrap.classList.remove('hidden');
             } else {
+                thumb.onload = null;
                 wrap.classList.add('hidden');
                 thumb.src = '';
             }
+            if (typeof scheduleSyncFlashcardHeight === 'function') scheduleSyncFlashcardHeight();
         }
 
         function openWordImageLightbox(word) {

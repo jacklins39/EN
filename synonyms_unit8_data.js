@@ -712,8 +712,8 @@ const synUnit8WordsDB = [
     "kk": "[ˋbeɡərli]",
     "zh": "adj. 赤貧的；像乞丐的",
     "unit": 7,
-    "example": "[adj.] What will the euro beggarly for customers?",
-    "exampleZh": "歐元對消費者意味著什麼？"
+    "example": "[adj.] He lived on a beggarly income.",
+    "exampleZh": "他靠著微薄的收入維生。"
   },
   {
     "id": 7080,
@@ -767,7 +767,7 @@ const synUnit8WordsDB = [
     "zh": "adj. 不快樂的",
     "unit": 7,
     "example": "[adj.] I hate to see you unhappy.",
-    "exampleZh": "醫生證明他精神失常。"
+    "exampleZh": "我不願見你不高興。"
   },
   {
     "id": 7086,
@@ -2701,8 +2701,8 @@ const synUnit8WordsDB = [
     "kk": "[ˋenərveɪt]",
     "zh": "vt. 使衰弱，使失去活力（多用於正式或書面語）；adj. 衰弱的，無力的（多用於書面語）",
     "unit": 7,
-    "example": "[vt.] To SAP the strength or energy of; enervate.",
-    "exampleZh": "使衰弱削弱…的力量或精力；使衰弱收藏。"
+    "example": "[vt.] The intense heat seemed to enervate the runners.",
+    "exampleZh": "酷熱的天氣似乎使跑者們精疲力竭。"
   },
   {
     "id": 7301,
@@ -3116,7 +3116,7 @@ const synUnit8WordsDB = [
     "zh": "n. 呼氣，呼出（將空氣從肺部排出的動作）；呼出的氣，一口氣（常指一次呼出的空氣）；（正式或科技用語）散發物，蒸汽，噴氣；（舊義）蒸發",
     "unit": 7,
     "example": "[n.] Utter the word \"calm\" in your mind with every exhalation.",
-    "exampleZh": "在你的內心浮想「平靜」這個詞。"
+    "exampleZh": "每次呼氣時，在心中默唸「平靜」這個詞。"
   },
   {
     "id": 7347,
@@ -4060,8 +4060,8 @@ const synUnit8WordsDB = [
     "kk": "[nɪb]",
     "zh": "n. 鋼筆尖，筆尖（亦指鵝管筆的尖端）；（鳥的）嘴，喙；（計算機）半字節；vt. （罕用）給（筆等）裝尖頭；把…削尖",
     "unit": 8,
-    "example": "[n.] When you created the NIB file, you also created the controller class for each view.",
-    "exampleZh": "在您創建 NIB 文件之後，您還需要為每個視圖創建控制器類。"
+    "example": "[n.] Be careful not to bend the gold nib of the fountain pen.",
+    "exampleZh": "小心不要把鋼筆的金筆尖弄彎了。"
   },
   {
     "id": 7452,
@@ -5411,7 +5411,7 @@ const synUnit8WordsDB = [
     "zh": "v. （使）合併，（使）混合，融合；（紙牌遊戲）攤出（計分牌），宣告（牌組）得分；n. 結合，融合，混合；（紙牌遊戲）攤出並計分的組合牌",
     "unit": 8,
     "example": "[v.] The key is to meld the old with the new.",
-    "exampleZh": "關鍵是要講舊的和新的數據融合在一起。"
+    "exampleZh": "關鍵是要將舊的與新的融合在一起。"
   },
   {
     "id": 7602,
@@ -5545,7 +5545,7 @@ const synUnit8WordsDB = [
     "kk": "[hiv]",
     "zh": "v. 用力舉起，使勁拖；（用力）扔，拋；起伏；發出（嘆息）；噁心，嘔吐；人頭攢動，擠滿（人）；用繩將（船）拉動（或往高處拖動）；n. （用力）舉，拉；（用力）扔；（劇烈的）起伏；（地質）平錯，隆起",
     "unit": 8,
-    "example": "[n.] The greasy food made her stomach heave.",
+    "example": "[v.] The greasy food made her stomach heave.",
     "exampleZh": "油膩膩的食物讓她胃裡噁心。"
   },
   {
@@ -5851,8 +5851,8 @@ const synUnit8WordsDB = [
     "kk": "[pæˋstil]",
     "zh": "n. 錠劑，含片，糖錠；薰香錠，香錠；粉筆；粉筆畫（等於 pastil）",
     "unit": 8,
-    "example": "[n.] A small, circular medicinal lozenge; a pastille.",
-    "exampleZh": "片劑，錠劑圓型的小藥錠，錠劑。"
+    "example": "[n.] She took a throat pastille to soothe her cough.",
+    "exampleZh": "她含了一顆潤喉錠來舒緩咳嗽。"
   },
   {
     "id": 7651,
@@ -8218,8 +8218,8 @@ const synUnit8WordsDB = [
     "kk": "[ˋfraɪəbl]",
     "zh": "adj. 易碎的，脆弱的；（土壤）疏鬆的，鬆散易碎的",
     "unit": 8,
-    "example": "[adj.] You friable shore with trails of debris.",
-    "exampleZh": "易脆的岸散殘跡。"
+    "example": "[adj.] The friable rock crumbled easily in his hand.",
+    "exampleZh": "這塊易碎的岩石在他手中輕易碎裂了。"
   },
   {
     "id": 7914,
@@ -9001,8 +9001,8 @@ const synUnit8WordsDB = [
     "kk": "[͵ʌnəˋtræktɪvnəs]",
     "zh": "n.無趣，缺乏吸引力",
     "unit": 8,
-    "example": "[n.] The strawberry is red, has a liking for the unusual unattractiveness.",
-    "exampleZh": "草莓是紅色的，看上去非常的漂亮。"
+    "example": "[n.] Nobody commented on the room's unattractiveness.",
+    "exampleZh": "沒有人評論這個房間有多難看。"
   },
   {
     "id": 8001,
@@ -9757,7 +9757,7 @@ const synUnit8WordsDB = [
     "kk": "[dɪsˋkɝɪdʒɪŋ]",
     "zh": "adj. 使人沮喪的，令人氣餒的；v. discourage 的現在分詞或動名詞：使氣餒，使沮喪，使失去勇氣；勸阻，阻止",
     "unit": 8,
-    "example": "[adj.] Her criticisms had the effect of discouraging him completely.",
+    "example": "[v.] Her criticisms had the effect of discouraging him completely.",
     "exampleZh": "她的批評使他完全喪失了信心。"
   },
   {

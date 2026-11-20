@@ -35,9 +35,9 @@ const examplesUnit9WordsDB = [
     "id": 8104,
     "en": "humoured",
     "kk": "[ˋhjumər]",
-    "zh": "n. 幽默，幽默感；感覺，心情；體液；<舊> 古怪念頭，想入非非；v. 遷就，迎合",
+    "zh": "adj. 有某種心境的、脾氣……的（常用於複合詞如 good-humoured）；v. 遷就，迎合（humour 的過去式及過去分詞）",
     "unit": 8,
-    "example": "[n.] It was a good-humoured conference.",
+    "example": "[adj.] It was a good-humoured conference.",
     "exampleZh": "會議的氣氛很愉快。"
   },
   {
@@ -692,9 +692,9 @@ const examplesUnit9WordsDB = [
     "id": 8177,
     "en": "costings",
     "kk": "[ˋkɔstɪŋ]",
-    "zh": "v. cost 的現在分詞：價錢為……；（使）花許多錢；（使）喪失，損失；（使）付出努力；（使）做不愉快的事；估算（費用）；n. 成本會計，成本計算，成本核算；費用估算（常用複數 costings）；（Costing）（美）科斯廷格（人名）",
+    "zh": "n. 成本會計，成本計算，成本核算；費用估算（常用複數 costings）；（Costing）（美）科斯廷格（人名）",
     "unit": 8,
-    "example": "[v.] You'd better do some costings.",
+    "example": "[n.] You'd better do some costings.",
     "exampleZh": "你最好作一些成本估算。"
   },
   {
@@ -1363,7 +1363,7 @@ const examplesUnit9WordsDB = [
     "id": 8251,
     "en": "whoever",
     "kk": "[huˋevər]",
-    "zh": "pron. 無論誰；任何人；n. 《愛誰誰》（電影名）",
+    "zh": "pron. 無論誰；任何人",
     "unit": 8,
     "example": "[pron.] Whoever thought up that joke?",
     "exampleZh": "究竟是誰想出那個笑話的？"
@@ -1501,7 +1501,7 @@ const examplesUnit9WordsDB = [
     "zh": "v. steepen 的過去式和過去分詞：（斜坡、道路、角度等）變陡，變得更陡峭；使（某物）變陡峭，增大其坡度或傾斜度；（比喻，常指經濟衰退、下跌趨勢等）加劇，加深",
     "unit": 8,
     "example": "[v.] The rocket steepened its ascent.",
-    "exampleZh": "火箭飛速升空。"
+    "exampleZh": "火箭爬升的仰角變得更陡峭。"
   },
   {
     "id": 8267,
@@ -3651,7 +3651,7 @@ const examplesUnit9WordsDB = [
     "kk": "[ˋsɪɡnɪfaɪd]",
     "zh": "v. signify 的過去式和過去分詞：意味著，象徵；〈正式〉表達，顯示（感情、意願等）；（不及物，常用於否定或疑問）有意義，重要。；n. （語言學/符號學）所指，被指，即語言符號所表達的概念或意義內容，與 signifier（能指）相對。",
     "unit": 9,
-    "example": "[n.] His presence no longer signified.",
+    "example": "[v.] His presence no longer signified.",
     "exampleZh": "他在不在場已不重要。"
   },
   {
@@ -8219,7 +8219,7 @@ const examplesUnit9WordsDB = [
     "zh": "n. 氮；氮氣",
     "unit": 9,
     "example": "[n.] The faeces contain nitrogen which fertilizes the soil.",
-    "exampleZh": "排洩物含有肥沃土壤的氮。"
+    "exampleZh": "排洩物含有能使土壤肥沃的氮。"
   },
   {
     "id": 9011,

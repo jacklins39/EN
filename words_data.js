@@ -3504,7 +3504,7 @@ const externalVocabularyDB = [
         "en": "butterfly",
         "kk": "[ˋbʌtɚf͵laɪ]",
         "uk": "/ˈbʌtəflaɪ/",
-        "zh": "n. 蝴蝶、見異思遷的人、輕浮易變的人、蝶泳；v. 切成蝴蝶展翅狀、使成蝶形；adj. 蝴蝶狀",
+        "zh": "n. 蝴蝶、蝶泳、輕浮易變的人；v. 切成蝴蝶展翅狀、使成蝶形；adj. 蝴蝶狀",
         "unit": 1,
         "example": "[n.] A pretty butterfly is on the flower.",
         "exampleZh": "一隻美麗的蝴蝶停在花朵上。"
@@ -6954,7 +6954,7 @@ const externalVocabularyDB = [
         "en": "ninety",
         "kk": "[ˋnaɪnti]",
         "uk": "/ˈnaɪnti/",
-        "zh": "num. 九十；adj. 九十的、九十歲的；n. 九十、複數nineties：九十幾、thenineties：（二十世紀）九十年代",
+        "zh": "num. 九十；adj. 九十的、九十歲的；n. 九十、複數 nineteen-nineties / nineties：九十幾、the nineties：（二十世紀）九十年代",
         "unit": 1,
         "example": "[num.] Her weight was under ninety pounds.",
         "exampleZh": "她的體重不到九十磅。"
@@ -8574,7 +8574,7 @@ const externalVocabularyDB = [
         "en": "sixty",
         "kk": "[ˋsɪksti]",
         "uk": "/ˈsɪksti/",
-        "zh": "num. 六十、六十個、六十歲；n. 六十幾、六十多歲、thesixties指二十世紀六十年代；adj. 六十",
+        "zh": "num. 六十、六十個、六十歲；n. 六十幾、六十多歲、the sixties 指二十世紀六十年代；adj. 六十",
         "unit": 1,
         "example": "[num.] A minute has sixty seconds.",
         "exampleZh": "一分鐘有六十秒。"
@@ -9527,7 +9527,7 @@ const externalVocabularyDB = [
         "zh": "n. T恤、短袖汗衫",
         "unit": 1,
         "example": "[n.] She wore an olive-green T-shirt.",
-        "exampleZh": "她穿著一件橄欖綠的T卹。"
+        "exampleZh": "她穿著一件橄欖綠的T恤。"
     },
     {
         "id": 954,
@@ -15154,10 +15154,10 @@ const externalVocabularyDB = [
         "en": "dryer",
         "kk": "[ˋdraɪɚ]",
         "uk": "/ˈdraɪə(r)/",
-        "zh": "n. 烘衣機、烘乾機、乾燥劑、催幹劑",
+        "zh": "n. 烘衣機、烘乾機、吹風機、乾燥劑、催乾劑",
         "unit": 2,
         "example": "[n.] Do you have a hair dryer?",
-        "exampleZh": "請把洗好的衣服放進烘衣機裡烘乾。"
+        "exampleZh": "你有吹風機嗎？"
     },
     {
         "id": 1517,
@@ -19006,7 +19006,7 @@ const externalVocabularyDB = [
         "uk": "/rəʊl/",
         "zh": "v. 翻滾、滾動、翻身、翻轉；n. 卷、卷軸、卷狀食品、贅肉",
         "unit": 2,
-        "example": "[v.] Comedy is the new rock and roll.",
+        "example": "[n.] Comedy is the new rock and roll.",
         "exampleZh": "說笑表演風頭直追搖滾樂。"
     },
     {
@@ -20586,7 +20586,7 @@ const externalVocabularyDB = [
         "uk": "/ʌmˈbrelə/",
         "zh": "n. 雨傘、傘、陽傘、綜合體；adj. 包括許多小團體的、總稱的、總括的",
         "unit": 3,
-        "example": "[adj.] Her umbrella blew inside out.",
+        "example": "[n.] Her umbrella blew inside out.",
         "exampleZh": "她的傘被吹得往外翻了。"
     },
     {
@@ -25656,8 +25656,8 @@ const externalVocabularyDB = [
         "uk": "/kəʊn/",
         "zh": "n. 圓錐體、圓錐形、圓錐形物、錐形路標；v. 用錐形交通路標分隔（或標明）道路、使成錐形",
         "unit": 3,
-        "example": "[n.] TYP single cylinder hydraulic cone crusher wins two proprietary technologies.",
-        "exampleZh": "TYP 單缸液壓圓錐破碎機獲得兩項專利技術。"
+        "example": "[n.] The worker placed an orange traffic cone on the road.",
+        "exampleZh": "工人在路上放了一個橘色交通錐。"
     },
     {
         "id": 2567,
@@ -27947,7 +27947,7 @@ const externalVocabularyDB = [
         "zh": "n. 網眼織物、蕾絲、鞋帶、繫帶；vt. 用繫帶束緊、用鞋帶系、把（少量酒、藥品或毒藥等烈性物質）摻入、使編織（或交織、纏繞）在一起",
         "unit": 3,
         "example": "[vt.] He laced his shoes.",
-        "exampleZh": "然後他繫好鞋帶回家去。"
+        "exampleZh": "他繫好了鞋帶。"
     },
     {
         "id": 2796,
@@ -28256,8 +28256,8 @@ const externalVocabularyDB = [
         "uk": "/ˈmæɡnət/",
         "zh": "n. 磁鐵、磁石、磁體、有吸引力的人",
         "unit": 3,
-        "example": "[n.] I do clinical at a magnet hospital.",
-        "exampleZh": "我在磁力醫院做臨床工作。"
+        "example": "[n.] The strong magnet easily picked up the metal nails.",
+        "exampleZh": "這塊強效磁鐵輕鬆吸起了金屬釘子。"
     },
     {
         "id": 2827,
@@ -28824,10 +28824,10 @@ const externalVocabularyDB = [
         "en": "neighborhood",
         "kk": "[ˋnebɚ͵hʊd]",
         "uk": "/ˈneɪbəhʊd/",
-        "zh": "n. 近鄰、街區、社群、附近",
+        "zh": "n. 社區、街區、鄰近地區",
         "unit": 3,
         "example": "[n.] Our neighborhood is so dirty.",
-        "exampleZh": "我們的社群太髒了。"
+        "exampleZh": "我們的社區太髒了。"
     },
     {
         "id": 2884,
@@ -30346,7 +30346,7 @@ const externalVocabularyDB = [
         "uk": "/ˈʃædəʊ/",
         "zh": "n. 陰影、影子、暗處、陰影處；vt. 被……陰影籠罩、投陰影於、暗地跟蹤、跟隨……實地學習；adj. 影子內閣的",
         "unit": 4,
-        "example": "[adj.] A shadow fell across her face.",
+        "example": "[n.] A shadow fell across her face.",
         "exampleZh": "一片陰影掠過她的臉龐。"
     },
     {
@@ -37096,8 +37096,8 @@ const externalVocabularyDB = [
         "uk": "",
         "zh": "n. 光碟",
         "unit": 4,
-        "example": "[n.] The compact disk player which carries a digital input.",
-        "exampleZh": "該光碟播放器，帶有數字輸入。"
+        "example": "[n.] She inserted the compact disk into the player.",
+        "exampleZh": "她把光碟放進播放器裡。"
     },
     {
         "id": 3711,
@@ -47327,7 +47327,7 @@ const externalVocabularyDB = [
         "zh": "vt. 保存、保護、節省；n. 果醬、蜜餞",
         "unit": 5,
         "example": "[vt.] People should insulate their homes to conserve energy.",
-        "exampleZh": "人們應該使住房隔冷以儲存能量。"
+        "exampleZh": "人們應該為房屋做好隔熱保溫，以節約能源。"
     },
     {
         "id": 4734,
@@ -52436,8 +52436,8 @@ const externalVocabularyDB = [
         "uk": "/ˈstænzə/",
         "zh": "n. 詩的一節、詩節",
         "unit": 6,
-        "example": "[n.] There is no channel stanza.",
-        "exampleZh": "其中沒有通道對應的節。"
+        "example": "[n.] Please read the first stanza of the poem aloud.",
+        "exampleZh": "請大聲朗讀這首詩的第一節。"
     },
     {
         "id": 5245,
@@ -53826,8 +53826,8 @@ const externalVocabularyDB = [
         "uk": "/zuːm/",
         "zh": "vi. 快速移動、迅速前往、陡升；n. 變焦攝影、疾馳的聲音、變焦鏡頭、進行變焦攝影；int. 用於表示突然的快速移動嗖、嗖地、霍地",
         "unit": 6,
-        "example": "[n.] The camera zoomed in.",
-        "exampleZh": "攝影機將演員的臉拉近了。"
+        "example": "[v.] The camera zoomed in.",
+        "exampleZh": "攝影機鏡頭拉近了。"
     },
     {
         "id": 5384,
@@ -55696,8 +55696,8 @@ const externalVocabularyDB = [
         "uk": "/əˈbriːvieɪt/",
         "zh": "vt. 縮寫、縮短、使簡短；vi. 使用縮寫詞",
         "unit": 6,
-        "example": "[vt.] N You can even abbreviate and put Y or n.",
-        "exampleZh": "甚至可以縮寫y或。"
+        "example": "[vt.] You can abbreviate \"yes\" as Y and \"no\" as N.",
+        "exampleZh": "你可以把 yes 縮寫為 Y，no 縮寫為 N。"
     },
     {
         "id": 5571,
@@ -58377,7 +58377,7 @@ const externalVocabularyDB = [
         "zh": "n. 飲料",
         "unit": 6,
         "example": "[n.] We were obliged, faute de mieux, to drink the local beverage.",
-        "exampleZh": "因為沒有更好的飲料，我們只好將就著喝當地的。"
+        "exampleZh": "因為沒有更好的選擇，我們只好將就著喝當地的飲料。"
     },
     {
         "id": 5839,
@@ -59607,7 +59607,7 @@ const externalVocabularyDB = [
         "zh": "n. 獨裁者、專橫的人",
         "unit": 6,
         "example": "[n.] You may see that you have been your own personal dictator!",
-        "exampleZh": "你可以看到你成為了自己的指導！"
+        "exampleZh": "你可能會發現，自己其實是自己的獨裁者！"
     },
     {
         "id": 5962,
@@ -60547,7 +60547,7 @@ const externalVocabularyDB = [
         "zh": "vi. 閃光、閃亮、閃閃發光；n. 閃光、閃耀、光澤",
         "unit": 7,
         "example": "[vi.] Why does my hair glisten a shiny silver?",
-        "exampleZh": "為什麼我滿頭銀髮？"
+        "exampleZh": "為什麼我的頭髮會閃耀著亮麗的銀光？"
     },
     {
         "id": 6056,
@@ -64446,8 +64446,8 @@ const externalVocabularyDB = [
         "uk": "/juːˈtens(ə)l/",
         "zh": "n. 器皿、用具、器具",
         "unit": 7,
-        "example": "[n.] Objective To discuss the limitation of ultrasonic detection on prevenception utensil.",
-        "exampleZh": "目的探討超聲在宮內節育器觀察上的侷限性。"
+        "example": "[n.] Every kitchen utensil was neatly arranged on the shelf.",
+        "exampleZh": "每件廚房用具都整齊地擺放在架子上。"
     },
     {
         "id": 6446,

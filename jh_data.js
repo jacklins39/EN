@@ -2234,7 +2234,7 @@ const jhWordsDB = [
         "en": "butterfly",
         "kk": "[ˋbʌtɚf͵laɪ]",
         "uk": "/ˈbʌtəflaɪ/",
-        "zh": "n. 蝴蝶、見異思遷的人、輕浮易變的人、蝶泳；v. 切成蝴蝶展翅狀、使成蝶形；adj. 蝴蝶狀",
+        "zh": "n. 蝴蝶、蝶泳、輕浮易變的人；v. 切成蝴蝶展翅狀、使成蝶形；adj. 蝴蝶狀",
         "unit": 17,
         "example": "[n.] A pretty butterfly is on the flower.",
         "exampleZh": "一隻美麗的蝴蝶停在花朵上。"
@@ -4984,10 +4984,10 @@ const jhWordsDB = [
         "en": "dryer",
         "kk": "[ˋdraɪɚ]",
         "uk": "/ˈdraɪə(r)/",
-        "zh": "n. 烘衣機、烘乾機、乾燥劑、催幹劑",
+        "zh": "n. 烘衣機、烘乾機、吹風機、乾燥劑、催乾劑",
         "unit": 17,
         "example": "[n.] Do you have a hair dryer?",
-        "exampleZh": "你有n. 烘乾機嗎？"
+        "exampleZh": "你有吹風機嗎？"
     },
     {
         "id": 30500,
@@ -11204,7 +11204,7 @@ const jhWordsDB = [
         "en": "ninety",
         "kk": "[ˋnaɪnti]",
         "uk": "/ˈnaɪnti/",
-        "zh": "num. 九十；adj. 九十的、九十歲的；n. 九十、複數nineties：九十幾、thenineties：（二十世紀）九十年代",
+        "zh": "num. 九十；adj. 九十的、九十歲的；n. 九十、複數 nineteen-nineties / nineties：九十幾、the nineties：（二十世紀）九十年代",
         "unit": 18,
         "example": "[num.] Her weight was under ninety pounds.",
         "exampleZh": "她的體重不到九十磅。"
@@ -13736,7 +13736,7 @@ const jhWordsDB = [
         "uk": "/ˈrelətɪv/",
         "zh": "n. 親戚、親屬、同類事物、親緣動物；adj. 相比較而言的、比較的、相對的、相關聯的",
         "unit": 18,
-        "example": "[adj.] My relative came to visit us.",
+        "example": "[n.] My relative came to visit us.",
         "exampleZh": "我的親戚來拜訪我們了。"
     },
     {
@@ -14046,7 +14046,7 @@ const jhWordsDB = [
         "uk": "/rəʊl/",
         "zh": "v. 翻滾、滾動、翻身、翻轉；n. 卷、卷軸、卷狀食品、贅肉",
         "unit": 18,
-        "example": "[v.] Comedy is the new rock and roll.",
+        "example": "[n.] Comedy is the new rock and roll.",
         "exampleZh": "說笑表演風頭直追搖滾樂。"
     },
     {
@@ -15344,7 +15344,7 @@ const jhWordsDB = [
         "en": "sixty",
         "kk": "[ˋsɪksti]",
         "uk": "/ˈsɪksti/",
-        "zh": "num. 六十、六十個、六十歲；n. 六十幾、六十多歲、thesixties指二十世紀六十年代；adj. 六十",
+        "zh": "num. 六十、六十個、六十歲；n. 六十幾、六十多歲、the sixties 指二十世紀六十年代；adj. 六十",
         "unit": 18,
         "example": "[num.] A minute has sixty seconds.",
         "exampleZh": "一分鐘有六十秒。"
@@ -17997,7 +17997,7 @@ const jhWordsDB = [
         "zh": "n. T恤、短袖汗衫",
         "unit": 18,
         "example": "[n.] She wore an olive-green T-shirt.",
-        "exampleZh": "她穿著一件橄欖綠的T卹。"
+        "exampleZh": "她穿著一件橄欖綠的T恤。"
     },
     {
         "id": 31803,
@@ -18136,7 +18136,7 @@ const jhWordsDB = [
         "uk": "/ʌmˈbrelə/",
         "zh": "n. 雨傘、傘、陽傘、綜合體；adj. 包括許多小團體的、總稱的、總括的",
         "unit": 18,
-        "example": "[adj.] Her umbrella blew inside out.",
+        "example": "[n.] Her umbrella blew inside out.",
         "exampleZh": "她的傘被吹得往外翻了。"
     },
     {

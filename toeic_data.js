@@ -3576,7 +3576,7 @@ const toeicWordsDB = [
         "uk": "/ˈbiːt(ə)n/",
         "zh": "v. 打敗；adj. 挨打的、被打敗的、筋疲力盡的、被毆打的",
         "unit": 11,
-        "example": "[adj.] The attacker was beaten off.",
+        "example": "[v.] The attacker was beaten off.",
         "exampleZh": "進攻者被擊退了。"
     },
     {
@@ -4067,7 +4067,7 @@ const toeicWordsDB = [
         "zh": "n. 飲料",
         "unit": 11,
         "example": "[n.] We were obliged, faute de mieux, to drink the local beverage.",
-        "exampleZh": "因為沒有更好的飲料，我們只好將就著喝當地的。"
+        "exampleZh": "因為沒有更好的選擇，我們只好將就著喝當地的飲料。"
     },
     {
         "id": 20408,
@@ -5016,8 +5016,8 @@ const toeicWordsDB = [
         "uk": "/ˈbreɪkaʊt/",
         "zh": "n. 包圍突破、越獄、脫逃、突圍；adj. 突然走紅的、一炮而紅的",
         "unit": 11,
-        "example": "[adj.] Example 4: Creating a breakout subgroup.",
-        "exampleZh": "例4：建立斷接子組。"
+        "example": "[adj.] The team moved into a breakout room for discussion.",
+        "exampleZh": "團隊移步至分組討論室進行討論。"
     },
     {
         "id": 20503,
@@ -7357,7 +7357,7 @@ const toeicWordsDB = [
         "zh": "vt. 保存、保護、節省；n. 果醬、蜜餞",
         "unit": 11,
         "example": "[vt.] People should insulate their homes to conserve energy.",
-        "exampleZh": "人們應該使住房隔冷以儲存能量。"
+        "exampleZh": "人們應該為房屋做好隔熱保溫，以節約能源。"
     },
     {
         "id": 20737,
@@ -18097,7 +18097,7 @@ const toeicWordsDB = [
         "zh": "n. 開球、開始、啟動、開場",
         "unit": 12,
         "example": "[n.] Do you have any idea what time is kickoff?",
-        "exampleZh": "你有開始嗎？"
+        "exampleZh": "你知道什麼時候開始嗎？"
     },
     {
         "id": 21811,
@@ -22867,7 +22867,7 @@ const toeicWordsDB = [
         "zh": "vt. 使私有(民營)化、使私營化",
         "unit": 13,
         "example": "[vt.] Cut taxes and spending, privatize, and deregulate.",
-        "exampleZh": "縮減稅收和消費，私有化，接觸管制。"
+        "exampleZh": "縮減稅收和消費，私有化，解除管制。"
     },
     {
         "id": 22288,
@@ -24284,9 +24284,9 @@ const toeicWordsDB = [
         "en": "registering",
         "kk": "[ˋrɛdʒɪstɚɪŋ]",
         "uk": "",
-        "zh": "adj. 登記的、註冊的、套版、配準的；v. 登記、註冊、記錄、顯示",
+        "zh": "v. 登記、註冊、記錄、顯示（register 的現在分詞與動名詞）；adj. 登記的、註冊的、套版、配準的",
         "unit": 13,
-        "example": "[adj.] Students are required to take placement tests before registering.",
+        "example": "[v.] Students are required to take placement tests before registering.",
         "exampleZh": "學生在註冊前必須先參加摸底考試。"
     },
     {
@@ -25647,7 +25647,7 @@ const toeicWordsDB = [
         "zh": "adv. 無縫地、天衣無縫地",
         "unit": 13,
         "example": "[adv.] It's a class move, allowing new and old to blend seamlessly.",
-        "exampleZh": "這是一次班級活動，讓新老同學親密無間地融合在一起。"
+        "exampleZh": "這是很高明的做法，讓新舊元素天衣無縫地融合在一起。"
     },
     {
         "id": 22566,
@@ -25784,7 +25784,7 @@ const toeicWordsDB = [
         "en": "self-employed",
         "kk": "[sɛlf ɛmˋplɔɪd]",
         "uk": "/ˌself ɪmˈplɔɪd/",
-        "zh": "adj. 自由業的、自僱的、個體經營的、自由職業的；n. theself-employed：個體經營者、自僱者",
+        "zh": "adj. 自由業的、自僱的、個體經營的、自由職業的；n. the self-employed：個體經營者、自僱者",
         "unit": 13,
         "example": "[n.] We want more support for the self-employed.",
         "exampleZh": "我們需要更多給個體經營者的支援。"
@@ -26577,7 +26577,7 @@ const toeicWordsDB = [
         "zh": "n. 言論、演講、演說、發言",
         "unit": 13,
         "example": "[n.] He muffed his opening speech.",
-        "exampleZh": "他的開場白被壓低了。"
+        "exampleZh": "他把開場演說搞砸了。"
     },
     {
         "id": 22659,
@@ -29827,7 +29827,7 @@ const toeicWordsDB = [
         "zh": "n. 壁紙、桌布、牆紙、螢幕背景；vt. 給房間、牆壁貼桌布、貼桌布",
         "unit": 13,
         "example": "[n.] Wallpaper is sold in rolls.",
-        "exampleZh": "桌布論卷銷售。"
+        "exampleZh": "壁紙按捲銷售。"
     },
     {
         "id": 22984,
@@ -30346,8 +30346,8 @@ const toeicWordsDB = [
         "uk": "/zuːm/",
         "zh": "vi. 快速移動、迅速前往、陡升；n. 變焦攝影、疾馳的聲音、變焦鏡頭、進行變焦攝影；int. 用於表示突然的快速移動嗖、嗖地、霍地",
         "unit": 14,
-        "example": "[n.] The camera zoomed in.",
-        "exampleZh": "攝影機將演員的臉拉近了。"
+        "example": "[v.] The camera zoomed in.",
+        "exampleZh": "攝影機鏡頭拉近了。"
     },
     {
         "id": 23036,
@@ -30366,8 +30366,8 @@ const toeicWordsDB = [
         "uk": "",
         "zh": "v. 縮小、縮小顯示、拉遠鏡頭",
         "unit": 14,
-        "example": "[v.] Just zoom-out turn on the visibility of all layers and enjoy!",
-        "exampleZh": "只要縮小畫面，開啟所有圖層的可視狀態，然後好好欣賞吧！"
+        "example": "[v.] Just zoom out, turn on the visibility of all layers, and enjoy!",
+        "exampleZh": "只要拉遠畫面，開啟所有圖層的可見狀態，然後好好欣賞吧！"
     },
     {
         "id": 23038,

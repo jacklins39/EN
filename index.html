@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261121V5';
+        const APP_BUILD_VERSION = '20261121V6';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -3814,7 +3814,7 @@
         </div>
 
         <div id="dict-modal" class="fixed inset-0 bg-gray-900/60 z-50 hidden flex items-center justify-center p-3 sm:p-4 backdrop-blur-md">
-            <div class="bg-white dark:bg-[#121927] rounded-3xl shadow-2xl p-5 sm:p-6 max-w-md sm:max-w-lg w-full relative dict-modal-anim max-h-[88vh] flex flex-col border border-gray-100 dark:border-white/12 text-left">
+            <div class="bg-white dark:bg-[#121927] rounded-3xl shadow-2xl p-5 sm:p-6 max-w-md sm:max-w-xl w-full relative dict-modal-anim max-h-[88vh] flex flex-col border border-gray-100 dark:border-white/12 text-left">
                 <button id="btn-close-dict" class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 hover:bg-gray-200/70 bg-gray-100 dark:bg-slate-800 dark:text-slate-400 dark:hover:text-white rounded-full p-1.5 transition-colors z-10 cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
                 </button>
@@ -6688,29 +6688,29 @@ function cleanupMasteredMistakes() {
                     <span class="text-blue-500 shrink-0">💡</span>
                     <span class="leading-relaxed">點單字看「三態與例句」詳解卡；點右側 ☆/⭐ 可切換標記；點 🔊 直接發音。</span>
                 </div>
-                <div class="grid grid-cols-2 sm:grid-cols-12 items-center gap-1.5 sm:gap-2 mb-2.5 bg-[#F5F5F7] p-2 rounded-2xl border border-gray-200/60 shrink-0">
-                    <select id="auto-play-speed" aria-label="自動播放速度" class="col-span-2 sm:col-span-5 text-xs sm:text-sm font-medium border border-gray-200/80 rounded-xl px-2.5 py-2 bg-white text-gray-700 outline-none focus:ring-2 focus:ring-[#0071E3]/30 focus:border-[#0071E3] w-full min-w-0 cursor-pointer">
+                <div class="grid grid-cols-2 sm:grid-cols-[minmax(0,1.42fr)_minmax(0,1.05fr)_minmax(0,1fr)] items-center gap-1.5 sm:gap-2 mb-2.5 bg-[#F5F5F7] p-2 rounded-2xl border border-gray-200/60 shrink-0">
+                    <select id="auto-play-speed" aria-label="自動播放速度" class="col-span-2 sm:col-span-1 text-xs sm:text-[13px] font-medium border border-gray-200/80 rounded-xl pl-1.5 pr-0.5 sm:pl-2.5 sm:pr-1 py-2 bg-white text-gray-700 outline-none focus:ring-2 focus:ring-[#0071E3]/30 focus:border-[#0071E3] w-full min-w-0 cursor-pointer">
                         <option value="2000">⏱️ 間隔 2.0秒 (極快)</option>
                         <option value="3500">⏱️ 間隔 3.5秒 (快)</option>
                         <option value="5000" selected>⏱️ 間隔 5.0秒 (適中)</option>
                         <option value="7000">⏱️ 間隔 7.0秒 (慢)</option>
                         <option value="10000">⏱️ 間隔 10秒 (極慢)</option>
                     </select>
-                    <select id="auto-speech-rate" aria-label="語速" class="col-span-1 sm:col-span-3 text-xs sm:text-sm font-medium border border-gray-200/80 rounded-xl px-2.5 py-2 bg-white text-gray-700 outline-none focus:ring-2 focus:ring-[#0071E3]/30 focus:border-[#0071E3] w-full min-w-0 cursor-pointer">
+                    <select id="auto-speech-rate" aria-label="語速" class="col-span-1 text-xs sm:text-[13px] font-medium border border-gray-200/80 rounded-xl pl-1.5 pr-0.5 sm:pl-2.5 sm:pr-1 py-2 bg-white text-gray-700 outline-none focus:ring-2 focus:ring-[#0071E3]/30 focus:border-[#0071E3] w-full min-w-0 cursor-pointer">
                         <option value="0.75">🗣️ 語速 0.75x</option>
                         <option value="0.85">🗣️ 語速 0.85x</option>
                         <option value="1.0" selected>🗣️ 語速 1.0x</option>
                         <option value="1.25">🗣️ 語速 1.25x</option>
                         <option value="1.5">🗣️ 語速 1.5x</option>
                     </select>
-                    <select id="auto-play-loops" aria-label="輪播次數" class="col-span-1 sm:col-span-4 text-xs sm:text-sm font-medium border border-gray-200/80 rounded-xl px-2.5 py-2 bg-white text-gray-700 outline-none focus:ring-2 focus:ring-[#0071E3]/30 focus:border-[#0071E3] w-full min-w-0 cursor-pointer">
+                    <select id="auto-play-loops" aria-label="輪播次數" class="col-span-1 text-xs sm:text-[13px] font-medium border border-gray-200/80 rounded-xl pl-1.5 pr-0.5 sm:pl-2.5 sm:pr-1 py-2 bg-white text-gray-700 outline-none focus:ring-2 focus:ring-[#0071E3]/30 focus:border-[#0071E3] w-full min-w-0 cursor-pointer">
                         <option value="1">🔁 輪播 1 次</option>
                         <option value="2">🔁 輪播 2 次</option>
                         <option value="3">🔁 輪播 3 次</option>
                         <option value="5">🔁 輪播 5 次</option>
                         <option value="0">♾️ 一直循環</option>
                     </select>
-                    <button id="btn-auto-play" class="col-span-2 sm:col-span-12 w-full bg-[#0071E3] text-white px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold hover:bg-[#0077ED] active:scale-95 shadow-xs transition-all shrink-0 whitespace-nowrap flex items-center justify-center gap-1 cursor-pointer">
+                    <button id="btn-auto-play" class="col-span-2 sm:col-span-3 w-full bg-[#0071E3] text-white px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold hover:bg-[#0077ED] active:scale-95 shadow-xs transition-all shrink-0 whitespace-nowrap flex items-center justify-center gap-1 cursor-pointer">
                         <span>▶</span><span>自動輪播發音</span>
                     </button>
                 </div>

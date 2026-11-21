@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261121V6';
+        const APP_BUILD_VERSION = '20261121V7';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -2918,13 +2918,17 @@
                 
                 <div id="weak-list-header" class="hidden">
                     <p class="text-[#86868B] text-xs mb-3">🔴 錯 3 次以上　🟠 錯 2 次　🟡 錯 1 次　(點擊預覽/發音)</p>
-                    <button id="btn-weak-practice" class="w-full bg-red-50 hover:bg-[#FF3B30] bg-opacity-10 text-[#FF3B30] font-medium py-2 rounded-2xl shadow-sm border-0 border-red-100 mb-4 transition-colors">加強練習錯題</button>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2 mb-4">
+                        <button id="btn-weak-practice" type="button" class="w-full sm:flex-1 bg-red-50 hover:bg-red-100 text-[#FF3B30] font-medium py-2 px-3 rounded-2xl shadow-sm border border-red-100 transition-colors cursor-pointer whitespace-nowrap text-sm sm:text-base">加強練習錯題</button>
+                        <button id="btn-weak-autoplay" type="button" class="w-full sm:w-auto sm:shrink-0 bg-blue-50 hover:bg-blue-100 text-[#0071E3] font-semibold py-2 px-4 rounded-2xl shadow-sm border border-blue-100 transition-colors cursor-pointer whitespace-nowrap text-sm sm:text-base" title="將目前弱點單字以自動翻卡發音連續輪播">🎧 輪播發音</button>
+                    </div>
                 </div>
                 <div id="marked-list-header" class="hidden">
                     <p class="text-[#86868B] text-xs mb-3">點單字右邊的 ⭐ 可單筆取消標記，或點右側按鈕一次全部取消，點單字看詳解</p>
-                    <div class="flex items-center gap-2 mb-4">
-                        <button id="btn-marked-practice" class="flex-1 bg-amber-50 hover:bg-amber-100 text-amber-600 font-medium py-2 px-4 rounded-2xl shadow-sm border-0 transition-colors cursor-pointer">練習標記單字</button>
-                        <button id="btn-marked-clear-all" type="button" class="shrink-0 bg-gray-100 hover:bg-red-50 dark:bg-slate-800 dark:hover:bg-rose-950/60 text-gray-600 hover:text-[#FF3B30] dark:text-slate-300 dark:hover:text-rose-400 font-medium py-2 px-3.5 rounded-2xl shadow-sm border-0 text-sm transition-colors cursor-pointer whitespace-nowrap" title="一次取消全部標記單字">🗑️ 全部取消</button>
+                    <div class="grid grid-cols-2 sm:flex sm:items-center gap-2 mb-4">
+                        <button id="btn-marked-practice" type="button" class="col-span-2 sm:flex-1 bg-amber-50 hover:bg-amber-100 text-amber-600 font-medium py-2 px-3.5 rounded-2xl shadow-sm border border-amber-100 transition-colors cursor-pointer whitespace-nowrap text-sm sm:text-base">練習標記單字</button>
+                        <button id="btn-marked-autoplay" type="button" class="col-span-1 sm:shrink-0 bg-blue-50 hover:bg-blue-100 text-[#0071E3] font-semibold py-2 px-3 sm:px-4 rounded-2xl shadow-sm border border-blue-100 transition-colors cursor-pointer whitespace-nowrap text-xs sm:text-base" title="將目前標記單字以自動翻卡發音連續輪播">🎧 輪播發音</button>
+                        <button id="btn-marked-clear-all" type="button" class="col-span-1 sm:shrink-0 bg-gray-100 hover:bg-red-50 dark:bg-slate-800 dark:hover:bg-rose-950/60 text-gray-600 hover:text-[#FF3B30] dark:text-slate-300 dark:hover:text-rose-400 font-medium py-2 px-3 sm:px-3.5 rounded-2xl shadow-sm border-0 text-xs sm:text-sm transition-colors cursor-pointer whitespace-nowrap" title="一次取消全部標記單字">🗑️ 全部取消</button>
                     </div>
                 </div>
                 <div id="weak-list" class="max-h-[28rem] overflow-y-auto pr-1 custom-scrollbar space-y-1"></div>
@@ -2946,7 +2950,17 @@
                     </div>
 
                     <!-- 右側控制按鈕：支援極窄手機自動換行防裁切 -->
-                    <div class="flex items-center gap-1.5 shrink-0 whitespace-nowrap ml-auto">
+                    <div class="flex flex-wrap items-center justify-end gap-1.5 shrink-0 whitespace-nowrap ml-auto">
+                        <div id="study-speed-wrap" class="hidden flex items-center gap-1 bg-slate-100 hover:bg-slate-200/80 px-2 py-1 rounded-xl whitespace-nowrap shrink-0 transition-colors" title="調整自動翻卡與換字間隔時間">
+                            <span class="text-xs text-slate-500 font-medium select-none">⏱️</span>
+                            <select id="study-auto-speed" aria-label="輪播間隔" class="text-xs text-[#0071E3] font-bold bg-transparent outline-none cursor-pointer">
+                                <option value="2000">2.0秒</option>
+                                <option value="3500">3.5秒</option>
+                                <option value="5000">5.0秒</option>
+                                <option value="7000">7.0秒</option>
+                                <option value="10000">10秒</option>
+                            </select>
+                        </div>
                         <div id="study-loop-wrap" class="hidden flex items-center gap-1 bg-slate-100 hover:bg-slate-200/80 px-2 py-1 rounded-xl whitespace-nowrap shrink-0 transition-colors" title="切換輪播次數或無限循環">
                             <span class="text-xs text-slate-500 font-medium select-none">🔁</span>
                             <select id="study-auto-loops" aria-label="輪播次數" class="text-xs text-[#0071E3] font-bold bg-transparent outline-none cursor-pointer">
@@ -4807,7 +4821,14 @@
         
         let isAutoFlashcardMode = false;
         let autoFlashcardTimerId = null;
-        let autoFlashcardSpeed = 3500;
+        let sessionReturnView = 'view-dashboard';
+        const VALID_AUTO_PLAY_SPEEDS = ['2000', '3500', '5000', '7000', '10000'];
+        function formatAutoPlaySpeedStr(val) {
+            const s = String(val ?? '5000').trim();
+            return VALID_AUTO_PLAY_SPEEDS.includes(s) ? s : '5000';
+        }
+        let globalAutoPlaySpeed = formatAutoPlaySpeedStr(localStorage.getItem('auto_flashcard_speed'));
+        let autoFlashcardSpeed = parseInt(globalAutoPlaySpeed, 10) || 5000;
         const VALID_AUTO_PLAY_LOOPS = ['1', '2', '3', '5', '0'];
         function formatAutoPlayLoopsStr(val) {
             const s = String(val ?? '1').trim();
@@ -4834,7 +4855,26 @@
             }
         }
 
+        function setAutoPlaySpeed(val) {
+            const norm = formatAutoPlaySpeedStr(val);
+            globalAutoPlaySpeed = norm;
+            autoFlashcardSpeed = parseInt(norm, 10) || 5000;
+            localStorage.setItem('auto_flashcard_speed', norm);
+            ['study-auto-speed', 'auto-play-speed'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) {
+                    el.value = norm;
+                    if (el.selectedIndex === -1) el.value = '5000';
+                }
+            });
+        }
+
         function updateAutoLoopStatusUI() {
+            const speedWrap = document.getElementById('study-speed-wrap');
+            if (speedWrap) {
+                if (isAutoFlashcardMode) speedWrap.classList.remove('hidden');
+                else speedWrap.classList.add('hidden');
+            }
             const loopWrap = document.getElementById('study-loop-wrap');
             if (loopWrap) {
                 if (isAutoFlashcardMode) loopWrap.classList.remove('hidden');
@@ -4894,6 +4934,12 @@
             syncAutoPauseButtonsUI(false);
             const studyLoopsEl = document.getElementById('study-auto-loops');
             if (studyLoopsEl) studyLoopsEl.value = norm;
+        }
+
+        const studyAutoSpeedInitEl = document.getElementById('study-auto-speed');
+        if (studyAutoSpeedInitEl) {
+            studyAutoSpeedInitEl.value = globalAutoPlaySpeed;
+            studyAutoSpeedInitEl.addEventListener('change', (e) => setAutoPlaySpeed(e.target.value));
         }
 
         const studyAutoLoopsInitEl = document.getElementById('study-auto-loops');
@@ -6576,15 +6622,19 @@ function cleanupMasteredMistakes() {
             }
         }
 
-        function startAutoFlashcardSession(words, title = "自動輪播") {
+        function startAutoFlashcardSession(words, title = "自動輪播", returnView = 'view-dashboard') {
             if (!words || words.length === 0) {
                 alert('沒有可輪播的單字！');
                 return;
             }
+            unlockMobileAudio();
             isAutoFlashcardMode = true;
             isMistakeMode = false;
             isManualCardMode = false;
-            autoFlashcardSpeed = 4000;
+            sessionReturnView = returnView || 'view-dashboard';
+            autoFlashcardSpeed = parseInt(globalAutoPlaySpeed, 10) || 5000;
+            const studySpeedEl = document.getElementById('study-auto-speed');
+            if (studySpeedEl) studySpeedEl.value = globalAutoPlaySpeed;
             resetAutoFlashcardLoopState(words);
             sessionQueue = [...words];
             mistakeQueue = [];
@@ -6595,6 +6645,19 @@ function cleanupMasteredMistakes() {
             updateAutoLoopStatusUI();
             switchTab('view-study', document.getElementById('tab-btn-dashboard'));
             nextCard();
+        }
+
+        function launchAutoplayList(words, title = "自動輪播", returnView = 'view-dashboard') {
+            if (!words || words.length === 0) {
+                showQuickToast('目前沒有可輪播的單字！');
+                return;
+            }
+            const q = [...words];
+            for (let i = q.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [q[i], q[j]] = [q[j], q[i]];
+            }
+            startAutoFlashcardSession(q, title, returnView);
         }
 
         function startRapidQuiz(count = 10) {
@@ -6622,6 +6685,7 @@ function cleanupMasteredMistakes() {
             isMistakeMode = false;
             isAutoFlashcardMode = false;
             isManualCardMode = false;
+            sessionReturnView = 'view-dashboard';
             
             switchTab('view-study', document.getElementById('tab-btn-dashboard'));
             nextCard();
@@ -6729,8 +6793,10 @@ function cleanupMasteredMistakes() {
 
             const btnPlay = document.getElementById('btn-auto-play');
             const speedSelect = document.getElementById('auto-play-speed');
-            if (speedSelect && (speedSelect.selectedIndex === -1 || !speedSelect.value)) {
-                speedSelect.value = '5000';
+            if (speedSelect) {
+                speedSelect.value = globalAutoPlaySpeed;
+                if (speedSelect.selectedIndex === -1 || !speedSelect.value) speedSelect.value = '5000';
+                speedSelect.addEventListener('change', (e) => setAutoPlaySpeed(e.target.value));
             }
             const autoRateSelect = document.getElementById('auto-speech-rate');
             if (autoRateSelect) {
@@ -6763,28 +6829,10 @@ function cleanupMasteredMistakes() {
                     document.getElementById('dict-modal').classList.add('hidden');
                     
                     // 設定參數進入「自動翻卡模式」
-                    isAutoFlashcardMode = true;
-                    isMistakeMode = false;
-                    isManualCardMode = false;
-                    autoFlashcardSpeed = parseInt(speedSelect.value);
+                    if (speedSelect) setAutoPlaySpeed(speedSelect.value);
                     if (autoRateSelect) setSpeechRate(autoRateSelect.value);
                     if (autoLoopsSelect) setAutoPlayLoops(autoLoopsSelect.value);
-                    sessionQueue = [...words];
-                    // 進入自動輪播前在該單元打散
-                    for (let i = sessionQueue.length - 1; i > 0; i--) {
-                        const j = Math.floor(Math.random() * (i + 1));
-                        [sessionQueue[i], sessionQueue[j]] = [sessionQueue[j], sessionQueue[i]];
-                    }
-                    resetAutoFlashcardLoopState(sessionQueue);
-                    mistakeQueue = [];
-                    totalCardsInSession = sessionQueue.length;
-                    cardsCompleted = 0;
-                    resetSessionStats(sessionQueue);
-                    sessionTitle = title + " (自動輪播)";
-                    updateAutoLoopStatusUI();
-                    
-                    switchTab('view-study', document.getElementById('tab-btn-dashboard'));
-                    nextCard();
+                    launchAutoplayList(words, title + " (自動輪播)", 'view-dashboard');
                 });
             }
             
@@ -6819,6 +6867,7 @@ function cleanupMasteredMistakes() {
 
         document.getElementById('btn-start-session').addEventListener('click', () => {
             unlockMobileAudio();
+            sessionReturnView = 'view-dashboard';
             sessionTitle = "一般課程";
             sessionQueue = []; mistakeQueue = [];
 
@@ -6861,8 +6910,15 @@ function cleanupMasteredMistakes() {
             currentWord = null;
             sessionQueue = [];
             mistakeQueue = [];
-            switchTab('view-dashboard', document.getElementById('tab-btn-dashboard'));
-            updateDashboard();
+            const targetView = sessionReturnView === 'view-weak' ? 'view-weak' : 'view-dashboard';
+            sessionReturnView = 'view-dashboard';
+            if (targetView === 'view-weak') {
+                switchTab('view-weak', document.getElementById('tab-btn-weak'));
+                renderDictView();
+            } else {
+                switchTab('view-dashboard', document.getElementById('tab-btn-dashboard'));
+                updateDashboard();
+            }
         }
 
         document.getElementById('btn-quit-session')?.addEventListener('click', quitSession);
@@ -16380,18 +16436,39 @@ function cleanupMasteredMistakes() {
             syncAllMarkButtonsForId(id, on);
             showQuickToast(on ? '⭐ 已標記' : '已取消標記');
         }
+        function getDictSearchQuery() {
+            return (document.getElementById('dict-search')?.value || '').trim().toLowerCase();
+        }
+        function getFilteredWeakList() {
+            const q = getDictSearchQuery();
+            const list = getWeakList();
+            return q ? list.filter(item => dictSearchMatch(item.w, q)) : list;
+        }
+        function getFilteredMarkedWords() {
+            const q = getDictSearchQuery();
+            const list = getMarkedWords();
+            return q ? list.filter(w => dictSearchMatch(w, q)) : list;
+        }
+        function syncActionBtnState(btn, enabled, label) {
+            if (!btn) return;
+            if (typeof label === 'string') btn.innerText = label;
+            btn.disabled = !enabled;
+            btn.classList.toggle('opacity-50', !enabled);
+        }
         function updateMarkedPracticeBtn() {
             const btn = document.getElementById('btn-marked-practice');
+            const autoplayBtn = document.getElementById('btn-marked-autoplay');
             const clearBtn = document.getElementById('btn-marked-clear-all');
-            const n = getMarkedWords().length;
-            if (btn) {
-                btn.innerText = n ? `⭐ 練習標記單字 (${n} 字)` : '還沒有標記單字';
-                btn.disabled = !n;
-                btn.classList.toggle('opacity-50', !n);
-            }
+            const totalMarked = getMarkedWords().length;
+            const visibleCount = getFilteredMarkedWords().length;
+            const practiceLabel = visibleCount
+                ? `⭐ 練習標記單字 (${visibleCount} 字)`
+                : (totalMarked ? '找不到符合的標記單字' : '還沒有標記單字');
+            syncActionBtnState(btn, visibleCount > 0, practiceLabel);
+            syncActionBtnState(autoplayBtn, visibleCount > 0, visibleCount ? `🎧 輪播發音 (${visibleCount} 字)` : '🎧 輪播發音');
             if (clearBtn) {
-                clearBtn.disabled = !n;
-                clearBtn.classList.toggle('hidden', !n);
+                clearBtn.disabled = !totalMarked;
+                clearBtn.classList.toggle('hidden', !totalMarked);
             }
         }
         function clearAllMarkedWords() {
@@ -16472,19 +16549,11 @@ function cleanupMasteredMistakes() {
             let html = '';
             
             if (currentDictMode === 'weak') {
-                let weakList = getWeakList();
-                if (searchInput) {
-                    weakList = weakList.filter(item => 
-                        item.w.en.toLowerCase().includes(searchInput) || 
-                        (item.w.zh && item.w.zh.includes(searchInput)) || 
-                        (item.w.kk && item.w.kk.toLowerCase().includes(searchInput)) || ((item.w.uk || (window.UK_PHONETICS_MANIFEST && window.UK_PHONETICS_MANIFEST[item.w.en.toLowerCase()])) && (item.w.uk || window.UK_PHONETICS_MANIFEST[item.w.en.toLowerCase()]).toLowerCase().includes(searchInput))
-                    );
-                }
-                
+                const weakList = getFilteredWeakList();
                 const practice = document.getElementById('btn-weak-practice');
-                practice.innerText = weakList.length ? `🎯 立即練習弱點單字 (${weakList.length} 字)` : '目前沒有弱點單字';
-                practice.disabled = !weakList.length;
-                practice.classList.toggle('opacity-50', !weakList.length);
+                const weakAutoBtn = document.getElementById('btn-weak-autoplay');
+                syncActionBtnState(practice, weakList.length > 0, weakList.length ? `🎯 立即練習弱點單字 (${weakList.length} 字)` : '目前沒有弱點單字');
+                syncActionBtnState(weakAutoBtn, weakList.length > 0, weakList.length ? `🎧 輪播發音 (${weakList.length} 字)` : '🎧 輪播發音');
                 
                 html = weakList.length ? weakList.map(({ w, c }) => `
                     <div class="weak-row flex items-center justify-between py-3 px-3 border-b border-gray-100 last:border-0 hover:bg-[#F5F5F7] rounded-2xl cursor-pointer transition-colors" data-id="${esc(String(w.id))}" data-word="${esc(w.en)}">
@@ -16502,8 +16571,7 @@ function cleanupMasteredMistakes() {
                     </div>`).join('')
                     : '<p class="text-[#86868B] text-sm text-center py-8">目前沒有符合條件的弱點單字 🎉</p>';
             } else if (currentDictMode === 'marked') {
-                let markedList = getMarkedWords();
-                if (searchInput) markedList = markedList.filter(w => dictSearchMatch(w, searchInput));
+                const markedList = getFilteredMarkedWords();
                 updateMarkedPracticeBtn();
                 html = markedList.length ? markedList.map(w => `
                     <div class="weak-row flex items-center justify-between py-3 px-3 border-b border-gray-100 last:border-0 hover:bg-[#F5F5F7] rounded-2xl cursor-pointer transition-colors" data-id="${esc(String(w.id))}" data-word="${esc(w.en)}">
@@ -16637,7 +16705,7 @@ function cleanupMasteredMistakes() {
             }, { once: true });
             document.getElementById('btn-weak-one').addEventListener('click', () => {
                 document.getElementById('dict-modal').classList.add('hidden');
-                startWeakPractice([w]);
+                startWeakPractice([w], WEAK_TITLE, 'view-weak');
             });
             document.getElementById('btn-weak-clear').addEventListener('click', () => {
                 if (!confirm(`確定移除「${w.en}」的錯誤紀錄？`)) return;
@@ -16658,7 +16726,7 @@ function cleanupMasteredMistakes() {
             });
         }
 
-        function startWeakPractice(words, title = WEAK_TITLE) {
+        function startWeakPractice(words, title = WEAK_TITLE, returnView = 'view-dashboard') {
             if (!words.length) return;
             const q = [...words];
             for (let i = q.length - 1; i > 0; i--) {
@@ -16668,13 +16736,23 @@ function cleanupMasteredMistakes() {
             sessionTitle = title;
             sessionQueue = q; mistakeQueue = [];
             isMistakeMode = false; isAutoFlashcardMode = false; isManualCardMode = false;
+            sessionReturnView = returnView || 'view-dashboard';
             totalCardsInSession = q.length; cardsCompleted = 0; resetSessionStats(q);
             switchTab('view-study', document.getElementById('tab-btn-dashboard'));
             nextCard();
         }
 
 
-        document.getElementById('btn-weak-practice').addEventListener('click', () => startWeakPractice(getWeakList().map(x => x.w)));
+        document.getElementById('btn-weak-practice').addEventListener('click', () => {
+            const words = getFilteredWeakList().map(x => x.w);
+            if (!words.length) return;
+            unlockMobileAudio();
+            startWeakPractice(words, WEAK_TITLE, 'view-weak');
+        });
+        document.getElementById('btn-weak-autoplay')?.addEventListener('click', () => {
+            const words = getFilteredWeakList().map(x => x.w);
+            launchAutoplayList(words, '🔴 弱點單字輪播', 'view-weak');
+        });
         document.getElementById('weak-list').addEventListener('click', (e) => {
             if (e.target.closest('.mark-star-btn')) return;
             const row = e.target.closest('.weak-row');
@@ -16862,11 +16940,7 @@ function cleanupMasteredMistakes() {
                 alert('今日尚無單字可輪播！');
                 return;
             }
-            for (let i = words.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [words[i], words[j]] = [words[j], words[i]];
-            }
-            startAutoFlashcardSession(words, '今日單字輪播');
+            launchAutoplayList(words, '今日單字輪播', 'view-dashboard');
         });
 
         // 隨機 10 題卡片：點擊直接開始測驗
@@ -16902,6 +16976,7 @@ function cleanupMasteredMistakes() {
                 isMistakeMode = false;
                 isAutoFlashcardMode = false;
                 isManualCardMode = false;
+                sessionReturnView = 'view-dashboard';
                 switchTab('view-study', document.getElementById('tab-btn-dashboard'));
                 nextCard();
             }, '🚀 開始隨機快測');
@@ -19817,10 +19892,14 @@ function cleanupMasteredMistakes() {
             renderDictView();
         });
         document.getElementById('btn-marked-practice').addEventListener('click', () => {
-            const words = getMarkedWords();
+            const words = getFilteredMarkedWords();
             if (!words.length) return;
             unlockMobileAudio();
-            startWeakPractice(words, '⭐ 標記單字練習');
+            startWeakPractice(words, '⭐ 標記單字練習', 'view-weak');
+        });
+        document.getElementById('btn-marked-autoplay')?.addEventListener('click', () => {
+            const words = getFilteredMarkedWords();
+            launchAutoplayList(words, '⭐ 標記單字輪播', 'view-weak');
         });
         document.getElementById('btn-marked-clear-all')?.addEventListener('click', () => {
             clearAllMarkedWords();

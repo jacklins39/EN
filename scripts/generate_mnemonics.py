@@ -703,7 +703,29 @@ CRITICAL_QUALITY_ISSUES = frozenset({
     "bloated_sections",
     "missing_bridge",
     "vulgar_or_unlucky",
+    "missing_dual_sec1_fields",
+    "missing_dual_sec2_fields",
+    "non_cjk_in_hook",
+    "too_short_dual",
+    "phonetic_leak_in_sec2",
 })
+
+
+def _normalize_optional_s2tw(text: str) -> str:
+    """Best-effort Simplified->Traditional Taiwan conversion when opencc is installed."""
+    try:
+        import opencc  # type: ignore
+
+        s = opencc.OpenCC("s2tw").convert(text)
+        for tai_old, tai_new in (
+            ("臺灣", "台灣"), ("臺語", "台語"), ("臺北", "台北"), ("臺中", "台中"), ("臺南", "台南"), ("臺東", "台東"),
+            ("窗臺", "窗台"), ("舞臺", "舞台"), ("櫃臺", "櫃台"), ("平臺", "平台"), ("電臺", "電台"), ("講臺", "講台"),
+            ("陽臺", "陽台"), ("月臺", "月台"), ("天臺", "天台"), ("後臺", "後台"), ("前臺", "前台"), ("吧臺", "吧台"),
+        ):
+            s = s.replace(tai_old, tai_new)
+        return s
+    except Exception:
+        return text
 
 
 def _validate_mnemonic_entry(
@@ -712,20 +734,21 @@ def _validate_mnemonic_entry(
     *,
     strict_quality: bool = True,
     verbose: bool = True,
+    allowed_zh: str = "",
 ) -> tuple[str, str | None, str | None]:
-    """Normalize and validate one entry against compact 3-line quality rules.
+    """Normalize and validate one entry against compact or dual_track quality rules.
 
     Returns (normalized_key, cleaned_mnemonic_or_None, reject_reason_or_None).
     """
     key = normalize_word_key(raw_word or "")
-    cleaned = clean_mnemonic_text(raw_mnemonic or "")
+    cleaned = clean_mnemonic_text(_normalize_optional_s2tw(raw_mnemonic or ""))
     if not key:
         return "", None, "empty_key"
     if len(cleaned) < MIN_MNEMONIC_LENGTH:
         return key, None, f"too_short({len(cleaned)})"
     if strict_quality:
-        rep = audit_mnemonic(key, cleaned)
-        if rep["format"] != "compact" or rep["score"] < 80 or CRITICAL_QUALITY_ISSUES.intersection(rep["issues"]):
+        rep = audit_mnemonic(key, cleaned, allowed_zh=allowed_zh)
+        if rep["format"] not in ("compact", "dual_track") or rep["score"] < 80 or CRITICAL_QUALITY_ISSUES.intersection(rep["issues"]):
             reason = f"fmt={rep['format']}, score={rep['score']}, issues={rep['issues']}"
             if verbose:
                 print(f"[quality-reject] {key} ({reason})", file=sys.stderr, flush=True)
@@ -1337,17 +1360,21 @@ def apply_mnemonics_json(
     else:
         raise ValueError("JSON root must be an object map, {items: [...]}, or list")
 
+    catalog = load_vocab_metadata(BASE_DIR)
     shard_map = load_all_shards(mnemonics_dir)
     dirty_shards: set[str] = set()
     applied: list[str] = []
     rejected: list[tuple[str, str]] = []
 
     for raw_word, raw_mnemonic in pairs:
+        k_norm = normalize_word_key(raw_word or "")
+        allowed_zh = str(catalog.get(k_norm, {}).get("zh") or "")
         key, cleaned, reason = _validate_mnemonic_entry(
             raw_word,
             raw_mnemonic,
             strict_quality=strict_quality,
             verbose=verbose,
+            allowed_zh=allowed_zh,
         )
         if not key or not cleaned:
             rejected.append((raw_word, reason or "invalid"))

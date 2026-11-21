@@ -11,6 +11,7 @@ import re
 import json
 import zlib
 import argparse
+import unicodedata
 from pathlib import Path
 
 if os.name == "nt":
@@ -54,9 +55,10 @@ def get_local_model_path(repo_id: str) -> str:
     return repo_id
 
 def clean_word_key(word: str) -> str:
-    """Normalize word to safe lowercase filename token."""
-    w = word.strip().lower()
-    w = re.sub(r'[\s\-_]+', '_', w)
+    """Normalize word (including NFKD accent stripping like café -> cafe) to safe lowercase filename token."""
+    raw = unicodedata.normalize("NFKD", str(word or "").strip().lower())
+    ascii_folded = "".join(ch for ch in raw if not unicodedata.combining(ch))
+    w = re.sub(r'[\s\-_]+', '_', ascii_folded)
     w = re.sub(r'[^a-z0-9_]', '', w)
     return w
 

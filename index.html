@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261121V7';
+        const APP_BUILD_VERSION = '20261122V1';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -348,16 +348,18 @@
             z-index: 2;
         }
 
-        /* 聽力劃線單字翻牌沙盒專用 3D 翻轉卡片 (獨立隔離) */
+        /* 聽力劃線單字翻牌沙盒專用 3D 翻轉卡片 (獨立隔離 · Grid 自適應防文字截斷) */
         .sandbox-card {
             perspective: 1000px;
             width: 100%;
-            height: 290px;
+            height: auto;
         }
         .sandbox-card-inner {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
             position: relative;
             width: 100%;
-            height: 100%;
+            min-height: 270px;
             text-align: center;
             transition: transform 0.5s cubic-bezier(0.4, 0.2, 0.2, 1);
             transform-style: preserve-3d;
@@ -366,8 +368,10 @@
             transform: rotateY(180deg);
         }
         .sandbox-card-front, .sandbox-card-back {
-            position: absolute;
+            grid-area: 1 / 1;
+            position: relative;
             width: 100%;
+            min-height: 270px;
             height: 100%;
             backface-visibility: hidden;
             -webkit-backface-visibility: hidden;
@@ -375,11 +379,20 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            padding: 1.25rem;
+            padding: 1rem;
             background: white;
             border: 1px solid rgba(226, 232, 240, 0.9);
             box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.06);
             box-sizing: border-box;
+        }
+        @media (min-width: 640px) {
+            .sandbox-card-inner,
+            .sandbox-card-front, .sandbox-card-back {
+                min-height: 290px;
+            }
+            .sandbox-card-front, .sandbox-card-back {
+                padding: 1.25rem;
+            }
         }
         .sandbox-card-back {
             transform: rotateY(180deg);
@@ -2572,6 +2585,34 @@
                 padding-left: 2px !important;
                 padding-right: 2px !important;
             }
+
+            /* 8. 聽力短文單字沙盒：手機版防溢出與防兩行擠壓 */
+            #listening-sandbox-modal [id^="sandbox-scope-btn-"] {
+                font-size: 12px !important;
+                padding: 5px 4px !important;
+                white-space: nowrap !important;
+            }
+            #listening-sandbox-modal [id^="sandbox-mode-btn-"] {
+                font-size: 11px !important;
+                padding: 6px 2px !important;
+                white-space: nowrap !important;
+                line-height: 1.25 !important;
+            }
+            #listening-sandbox-modal #sandbox-status-toolbar .sandbox-ctrl-select {
+                font-size: 12.5px !important;
+                padding: 4px 4px 4px 6px !important;
+            }
+            #listening-sandbox-modal #sandbox-bottom-controls button {
+                font-size: 12.5px !important;
+                padding-top: 8px !important;
+                padding-bottom: 8px !important;
+                white-space: nowrap !important;
+            }
+        }
+        @media (max-width: 365px) {
+            #listening-sandbox-modal [id^="sandbox-mode-btn-"] .sandbox-mode-emoji {
+                display: none !important;
+            }
         }
     </style>
 </head>
@@ -3881,22 +3922,22 @@
 
         <!-- 聽力單篇短文劃線單字翻牌沙盒 (完全隔離 · 零進度負擔 · 4種練習+自動翻牌) -->
         <div id="listening-sandbox-modal" class="fixed inset-0 bg-gray-900/60 z-[75] hidden flex items-center justify-center p-2.5 sm:p-4 backdrop-blur-md">
-            <div class="bg-white rounded-3xl shadow-2xl p-4 sm:p-5 max-w-md w-full relative dict-modal-anim flex flex-col border border-gray-100 max-h-[96vh] overflow-hidden">
+            <div class="bg-white rounded-3xl shadow-2xl p-3 sm:p-5 max-w-md sm:max-w-lg w-full relative dict-modal-anim flex flex-col border border-gray-100 max-h-[96vh] overflow-hidden">
                 <!-- 頂部資訊列與關閉按鈕 -->
-                <div class="flex items-center justify-between pb-2.5 border-b border-gray-100 shrink-0">
-                    <div class="flex items-center gap-2 min-w-0">
+                <div class="flex items-center justify-between gap-2 pb-2.5 border-b border-gray-100 shrink-0">
+                    <div class="flex items-center gap-2 min-w-0 flex-1">
                         <span class="w-8 h-8 rounded-xl bg-purple-50 text-purple-700 border border-purple-200/70 inline-flex items-center justify-center text-sm shrink-0 shadow-2xs">🃏</span>
-                        <div class="min-w-0">
+                        <div class="min-w-0 flex-1">
                             <div class="flex items-center gap-1.5 flex-wrap">
-                                <span class="font-bold text-slate-900 text-sm">聽力短文單字沙盒</span>
-                                <span id="sandbox-source-badge" class="text-[10px] font-semibold px-2 py-0.5 rounded-md bg-purple-50 text-purple-700 border border-purple-200 font-mono">全部詞彙</span>
+                                <span class="font-bold text-slate-900 text-sm whitespace-nowrap">聽力短文單字沙盒</span>
+                                <span id="sandbox-source-badge" class="text-[10px] font-semibold px-2 py-0.5 rounded-md bg-purple-50 text-purple-700 border border-purple-200 font-mono whitespace-nowrap shrink-0">全部詞彙</span>
                             </div>
-                            <p class="text-[10px] text-slate-400 truncate max-w-[210px] mt-0.5" id="sandbox-article-title">短文名稱</p>
+                            <p class="text-[10px] text-slate-400 truncate mt-0.5" id="sandbox-article-title">短文名稱</p>
                         </div>
                     </div>
-                    <div class="flex items-center gap-2 shrink-0">
-                        <span id="sandbox-counter-badge" class="text-xs font-mono font-bold text-purple-700 bg-purple-50 border border-purple-200/80 px-2 py-0.5 rounded-full">1 / 5</span>
-                        <button onclick="closeListeningSandboxModal()" class="text-gray-400 hover:text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-full p-1.5 transition-colors cursor-pointer" title="關閉沙盒">
+                    <div class="flex items-center gap-1.5 sm:gap-2 shrink-0">
+                        <span id="sandbox-counter-badge" class="text-xs font-mono font-bold text-purple-700 bg-purple-50 border border-purple-200/80 px-2 py-0.5 rounded-full whitespace-nowrap">1 / 5</span>
+                        <button onclick="closeListeningSandboxModal()" class="text-gray-400 hover:text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-full p-1.5 transition-colors cursor-pointer shrink-0" title="關閉沙盒">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
                         </button>
                     </div>
@@ -3904,18 +3945,18 @@
 
                 <!-- 1. 詞彙範圍切換 (全部 | 劃線單字 | 文章內建) -->
                 <div class="flex items-center gap-1 p-1 bg-slate-100 rounded-xl my-2 text-xs font-semibold shrink-0">
-                    <button id="sandbox-scope-btn-all" onclick="setListeningSandboxScope('all')" class="flex-1 py-1 rounded-lg transition-all text-center font-bold text-purple-800 bg-white shadow-2xs">🌟 全部 (0)</button>
-                    <button id="sandbox-scope-btn-annotated" onclick="setListeningSandboxScope('annotated')" class="flex-1 py-1 rounded-lg transition-all text-center font-medium text-slate-600 hover:text-purple-700">📌 劃線 (0)</button>
-                    <button id="sandbox-scope-btn-core" onclick="setListeningSandboxScope('core')" class="flex-1 py-1 rounded-lg transition-all text-center font-medium text-slate-600 hover:text-purple-700">📖 內建 (0)</button>
+                    <button id="sandbox-scope-btn-all" onclick="setListeningSandboxScope('all')" class="flex-1 py-1 rounded-lg transition-all text-center font-bold text-purple-800 bg-white shadow-2xs whitespace-nowrap">🌟 全部 (0)</button>
+                    <button id="sandbox-scope-btn-annotated" onclick="setListeningSandboxScope('annotated')" class="flex-1 py-1 rounded-lg transition-all text-center font-medium text-slate-600 hover:text-purple-700 whitespace-nowrap">📌 劃線 (0)</button>
+                    <button id="sandbox-scope-btn-core" onclick="setListeningSandboxScope('core')" class="flex-1 py-1 rounded-lg transition-all text-center font-medium text-slate-600 hover:text-purple-700 whitespace-nowrap">📖 內建 (0)</button>
                 </div>
 
                 <!-- 2. 練習模式切換器 (🃏 翻牌 | 🔤 英選中 | 📝 中選英 | 🎧 聽力 | ✍️ 拼寫) -->
                 <div class="grid grid-cols-5 gap-1 bg-purple-50/70 border border-purple-200/60 p-1 rounded-xl mb-2 text-xs font-bold text-center shrink-0">
-                    <button id="sandbox-mode-btn-card" onclick="setListeningSandboxMode('card')" class="py-1 rounded-lg transition-all bg-purple-600 text-white shadow-2xs">🃏 翻牌</button>
-                    <button id="sandbox-mode-btn-en2zh" onclick="setListeningSandboxMode('en2zh')" class="py-1 rounded-lg transition-all text-purple-900 hover:bg-purple-100">🔤 英選中</button>
-                    <button id="sandbox-mode-btn-zh2en" onclick="setListeningSandboxMode('zh2en')" class="py-1 rounded-lg transition-all text-purple-900 hover:bg-purple-100">📝 中選英</button>
-                    <button id="sandbox-mode-btn-listen" onclick="setListeningSandboxMode('listen')" class="py-1 rounded-lg transition-all text-purple-900 hover:bg-purple-100">🎧 聽力</button>
-                    <button id="sandbox-mode-btn-fill" onclick="setListeningSandboxMode('fill')" class="py-1 rounded-lg transition-all text-purple-900 hover:bg-purple-100">✍️ 拼寫</button>
+                    <button id="sandbox-mode-btn-card" onclick="setListeningSandboxMode('card')" class="py-1 rounded-lg transition-all bg-purple-600 text-white shadow-2xs whitespace-nowrap overflow-hidden"><span class="sandbox-mode-emoji">🃏 </span>翻牌</button>
+                    <button id="sandbox-mode-btn-en2zh" onclick="setListeningSandboxMode('en2zh')" class="py-1 rounded-lg transition-all text-purple-900 hover:bg-purple-100 whitespace-nowrap overflow-hidden"><span class="sandbox-mode-emoji">🔤 </span>英選中</button>
+                    <button id="sandbox-mode-btn-zh2en" onclick="setListeningSandboxMode('zh2en')" class="py-1 rounded-lg transition-all text-purple-900 hover:bg-purple-100 whitespace-nowrap overflow-hidden"><span class="sandbox-mode-emoji">📝 </span>中選英</button>
+                    <button id="sandbox-mode-btn-listen" onclick="setListeningSandboxMode('listen')" class="py-1 rounded-lg transition-all text-purple-900 hover:bg-purple-100 whitespace-nowrap overflow-hidden"><span class="sandbox-mode-emoji">🎧 </span>聽力</button>
+                    <button id="sandbox-mode-btn-fill" onclick="setListeningSandboxMode('fill')" class="py-1 rounded-lg transition-all text-purple-900 hover:bg-purple-100 whitespace-nowrap overflow-hidden"><span class="sandbox-mode-emoji">✍️ </span>拼寫</button>
                 </div>
 
                 <!-- 輕量進度條 -->
@@ -3924,24 +3965,24 @@
                 </div>
 
                 <!-- 操作狀態列 (翻牌模式：自動翻牌/速度/洗牌；測驗模式：得分/提示/洗牌) -->
-                <div id="sandbox-status-toolbar" class="flex items-center justify-between gap-1.5 bg-slate-50 border border-slate-200/60 px-2.5 py-1.5 rounded-xl mb-2 shrink-0 text-xs">
+                <div id="sandbox-status-toolbar" class="flex flex-wrap items-center justify-between gap-1.5 bg-slate-50 border border-slate-200/60 px-2 sm:px-2.5 py-1.5 rounded-xl mb-2 shrink-0 text-xs">
                     <!-- 動態渲染控制列內容 -->
                 </div>
 
                 <!-- 主內容舞台容器 (卡片翻牌 / 測驗題目選項 / 拼寫框 / 結算畫面) -->
-                <div id="sandbox-card-container" class="w-full flex-1 overflow-y-auto min-h-[300px] flex flex-col justify-center">
+                <div id="sandbox-card-container" class="w-full flex-1 overflow-y-auto overflow-x-hidden min-h-[240px] sm:min-h-[300px] flex flex-col">
                     <!-- 動態注入內容 -->
                 </div>
 
                 <!-- 底部導航與控制列 -->
-                <div id="sandbox-bottom-controls" class="flex items-center justify-between gap-2.5 pt-3 border-t border-gray-100 dark:border-white/10 mt-2 shrink-0">
-                    <button id="btn-sandbox-prev" onclick="prevListeningSandboxCard()" class="px-4 py-2.5 rounded-xl text-xs font-bold text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-[#1E293B] hover:bg-slate-200 dark:hover:bg-[#2C3B52] border border-slate-200 dark:border-white/12 transition disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer flex items-center gap-1.5 shadow-2xs">
+                <div id="sandbox-bottom-controls" class="flex items-center justify-between gap-1.5 sm:gap-2.5 pt-2.5 sm:pt-3 border-t border-gray-100 dark:border-white/10 mt-2 shrink-0">
+                    <button id="btn-sandbox-prev" onclick="prevListeningSandboxCard()" class="px-2.5 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs font-bold text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-[#1E293B] hover:bg-slate-200 dark:hover:bg-[#2C3B52] border border-slate-200 dark:border-white/12 transition disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer flex items-center gap-1 sm:gap-1.5 shadow-2xs shrink-0 whitespace-nowrap">
                         <span>◀</span> <span>上一題</span>
                     </button>
-                    <button id="btn-sandbox-flip" onclick="toggleListeningSandboxFlip()" class="flex-1 py-2.5 rounded-xl text-xs font-bold text-purple-700 dark:text-white bg-purple-50 dark:bg-[#8936FF] hover:bg-purple-100 dark:hover:bg-[#9B51FF] border border-purple-200 dark:border-transparent transition cursor-pointer flex items-center justify-center gap-1.5 shadow-sm">
+                    <button id="btn-sandbox-flip" onclick="toggleListeningSandboxFlip()" class="flex-1 min-w-0 px-2 py-2 sm:py-2.5 rounded-xl text-xs font-bold text-purple-700 dark:text-white bg-purple-50 dark:bg-[#8936FF] hover:bg-purple-100 dark:hover:bg-[#9B51FF] border border-purple-200 dark:border-transparent transition cursor-pointer flex items-center justify-center gap-1 sm:gap-1.5 shadow-sm whitespace-nowrap">
                         <span>🔄</span> <span id="sandbox-flip-btn-text">翻轉卡片</span>
                     </button>
-                    <button id="btn-sandbox-next" onclick="nextListeningSandboxCard()" class="px-4 py-2.5 rounded-xl text-xs font-bold text-white bg-purple-600 hover:bg-purple-700 dark:bg-[#8936FF] dark:hover:bg-[#9B51FF] transition cursor-pointer flex items-center gap-1.5 shadow-sm">
+                    <button id="btn-sandbox-next" onclick="nextListeningSandboxCard()" class="px-2.5 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs font-bold text-white bg-purple-600 hover:bg-purple-700 dark:bg-[#8936FF] dark:hover:bg-[#9B51FF] transition cursor-pointer flex items-center gap-1 sm:gap-1.5 shadow-sm shrink-0 whitespace-nowrap">
                         <span id="sandbox-next-btn-text">下一題</span> <span>▶</span>
                     </button>
                 </div>
@@ -20869,17 +20910,17 @@ function cleanupMasteredMistakes() {
                     ? `<span class="text-[10px] font-mono font-bold text-purple-600 bg-purple-50 px-1.5 py-0.5 rounded">${maxLoops === 0 ? `第${curLoop}輪 ♾️` : `${curLoop}/${maxLoops}輪`}</span>`
                     : '';
                 tb.innerHTML = `
-                    <div class="flex items-center gap-1.5 flex-wrap">
-                        <button onclick="toggleListeningSandboxAutoPlay()" class="px-2.5 py-1 rounded-lg text-xs font-bold transition flex items-center gap-1 shadow-2xs cursor-pointer ${isPlaying ? 'bg-amber-500 hover:bg-amber-600 text-white' : 'bg-purple-600 hover:bg-purple-700 text-white'}">
+                    <div class="flex items-center gap-1.5 flex-wrap min-w-0">
+                        <button onclick="toggleListeningSandboxAutoPlay()" class="shrink-0 whitespace-nowrap px-2.5 py-1 rounded-lg text-xs font-bold transition flex items-center gap-1 shadow-2xs cursor-pointer ${isPlaying ? 'bg-amber-500 hover:bg-amber-600 text-white' : 'bg-purple-600 hover:bg-purple-700 text-white'}">
                             <span>${isPlaying ? '⏸' : '▶'}</span>
                             <span>${isPlaying ? '暫停播放' : '自動翻牌'}</span>
                         </button>
-                        <select onchange="changeListeningSandboxSpeed(this.value)" class="text-[11px] font-medium bg-white border border-gray-200 rounded-lg px-1.5 py-1 text-slate-700 outline-none cursor-pointer">
+                        <select onchange="changeListeningSandboxSpeed(this.value)" class="sandbox-ctrl-select text-[11px] font-medium bg-white border border-gray-200 rounded-lg pl-1.5 pr-1 py-1 text-slate-700 outline-none cursor-pointer shrink-0">
                             <option value="2500" ${spd === 2500 ? 'selected' : ''}>⚡ 2.5秒</option>
                             <option value="4000" ${spd === 4000 ? 'selected' : ''}>⏱️ 4.0秒</option>
                             <option value="6000" ${spd === 6000 ? 'selected' : ''}>🐢 6.0秒</option>
                         </select>
-                        <select onchange="changeListeningSandboxLoops(this.value)" aria-label="沙盒輪播次數" class="text-[11px] font-medium bg-white border border-gray-200 rounded-lg px-1.5 py-1 text-slate-700 outline-none cursor-pointer">
+                        <select onchange="changeListeningSandboxLoops(this.value)" aria-label="沙盒輪播次數" class="sandbox-ctrl-select text-[11px] font-medium bg-white border border-gray-200 rounded-lg pl-1.5 pr-1 py-1 text-slate-700 outline-none cursor-pointer shrink-0">
                             <option value="1" ${loopsStr === '1' ? 'selected' : ''}>🔁 1 次</option>
                             <option value="2" ${loopsStr === '2' ? 'selected' : ''}>🔁 2 次</option>
                             <option value="3" ${loopsStr === '3' ? 'selected' : ''}>🔁 3 次</option>
@@ -20888,25 +20929,25 @@ function cleanupMasteredMistakes() {
                         </select>
                         ${roundTag}
                     </div>
-                    <div class="flex items-center gap-2">
-                        <span class="text-[10px] text-slate-400 font-medium hidden sm:inline">🛡️ 零進度負擔</span>
-                        <button onclick="shuffleListeningSandboxCards()" class="text-xs text-purple-600 hover:text-purple-800 font-semibold px-1.5 py-0.5 rounded cursor-pointer" title="打亂卡片順序">🔀 洗牌</button>
+                    <div class="flex items-center gap-1.5 sm:gap-2 shrink-0 ml-auto">
+                        <span class="text-[10px] text-slate-400 font-medium hidden sm:inline whitespace-nowrap">🛡️ 零進度負擔</span>
+                        <button onclick="shuffleListeningSandboxCards()" class="shrink-0 whitespace-nowrap text-xs text-purple-600 hover:text-purple-800 font-semibold px-2 py-1 rounded-lg hover:bg-purple-50 cursor-pointer" title="打亂卡片順序">🔀 洗牌</button>
                     </div>
                 `;
             } else {
                 const total = listeningSandboxState.words.length;
                 const score = listeningSandboxState.score;
                 tb.innerHTML = `
-                    <div class="flex items-center gap-2">
-                        <span class="text-xs font-bold text-slate-700 flex items-center gap-1">
+                    <div class="flex items-center gap-2 min-w-0">
+                        <span class="text-xs font-bold text-slate-700 flex items-center gap-1 whitespace-nowrap">
                             <span>🎯 當前得分：</span>
                             <span class="text-purple-700 font-mono font-extrabold text-sm">${score}</span>
                             <span class="text-slate-400 font-normal">/ ${total}</span>
                         </span>
                     </div>
-                    <div class="flex items-center gap-2">
-                        <span class="text-[10px] text-slate-400 font-medium hidden sm:inline">🛡️ 獨立沙盒</span>
-                        <button onclick="shuffleListeningSandboxCards()" class="text-xs text-purple-600 hover:text-purple-800 font-semibold px-1.5 py-0.5 rounded cursor-pointer" title="重新打亂順序">🔀 洗牌</button>
+                    <div class="flex items-center gap-1.5 sm:gap-2 shrink-0 ml-auto">
+                        <span class="text-[10px] text-slate-400 font-medium hidden sm:inline whitespace-nowrap">🛡️ 獨立沙盒</span>
+                        <button onclick="shuffleListeningSandboxCards()" class="shrink-0 whitespace-nowrap text-xs text-purple-600 hover:text-purple-800 font-semibold px-2 py-1 rounded-lg hover:bg-purple-50 cursor-pointer" title="重新打亂順序">🔀 洗牌</button>
                     </div>
                 `;
             }
@@ -20984,20 +21025,20 @@ function cleanupMasteredMistakes() {
             if (btnScopeAll) {
                 btnScopeAll.innerText = `🌟 全部 (${countAll})`;
                 btnScopeAll.className = state.scope === 'all'
-                    ? 'flex-1 py-1 rounded-lg transition-all text-center font-bold text-purple-900 bg-white shadow-2xs'
-                    : 'flex-1 py-1 rounded-lg transition-all text-center font-medium text-slate-600 hover:text-purple-700';
+                    ? 'flex-1 py-1 rounded-lg transition-all text-center font-bold text-purple-900 bg-white shadow-2xs whitespace-nowrap'
+                    : 'flex-1 py-1 rounded-lg transition-all text-center font-medium text-slate-600 hover:text-purple-700 whitespace-nowrap';
             }
             if (btnScopeAnn) {
                 btnScopeAnn.innerText = `📌 劃線 (${countAnn})`;
                 btnScopeAnn.className = state.scope === 'annotated'
-                    ? 'flex-1 py-1 rounded-lg transition-all text-center font-bold text-purple-900 bg-white shadow-2xs'
-                    : 'flex-1 py-1 rounded-lg transition-all text-center font-medium text-slate-600 hover:text-purple-700';
+                    ? 'flex-1 py-1 rounded-lg transition-all text-center font-bold text-purple-900 bg-white shadow-2xs whitespace-nowrap'
+                    : 'flex-1 py-1 rounded-lg transition-all text-center font-medium text-slate-600 hover:text-purple-700 whitespace-nowrap';
             }
             if (btnScopeCore) {
                 btnScopeCore.innerText = `📖 內建 (${countCore})`;
                 btnScopeCore.className = state.scope === 'core'
-                    ? 'flex-1 py-1 rounded-lg transition-all text-center font-bold text-purple-900 bg-white shadow-2xs'
-                    : 'flex-1 py-1 rounded-lg transition-all text-center font-medium text-slate-600 hover:text-purple-700';
+                    ? 'flex-1 py-1 rounded-lg transition-all text-center font-bold text-purple-900 bg-white shadow-2xs whitespace-nowrap'
+                    : 'flex-1 py-1 rounded-lg transition-all text-center font-medium text-slate-600 hover:text-purple-700 whitespace-nowrap';
             }
 
             if (badgeEl) {
@@ -21011,9 +21052,9 @@ function cleanupMasteredMistakes() {
                 const b = document.getElementById(`sandbox-mode-btn-${m}`);
                 if (b) {
                     if (state.mode === m) {
-                        b.className = 'py-1 rounded-lg transition-all bg-purple-600 text-white shadow-2xs font-bold';
+                        b.className = 'py-1 rounded-lg transition-all bg-purple-600 text-white shadow-2xs font-bold whitespace-nowrap overflow-hidden';
                     } else {
-                        b.className = 'py-1 rounded-lg transition-all text-purple-900 hover:bg-purple-100 font-semibold';
+                        b.className = 'py-1 rounded-lg transition-all text-purple-900 hover:bg-purple-100 font-semibold whitespace-nowrap overflow-hidden';
                     }
                 }
             });
@@ -21099,36 +21140,37 @@ function cleanupMasteredMistakes() {
                 }
 
                 container.innerHTML = `
+                    <div class="my-auto w-full py-0.5">
                     <div class="sandbox-card ${state.isFlipped ? 'flipped' : ''}" onclick="toggleListeningSandboxFlip()">
                         <div class="sandbox-card-inner">
                             <!-- 正面 -->
                             <div class="sandbox-card-front select-none">
                                 <div class="flex items-center justify-between w-full shrink-0">
-                                    <div class="flex items-center gap-1.5">
-                                        <span class="text-[10px] font-bold px-2 py-0.5 rounded-full ${cur.isAnnotated ? 'bg-emerald-100 text-emerald-800' : 'bg-purple-100 text-purple-800'}">
+                                    <div class="flex items-center gap-1.5 flex-wrap">
+                                        <span class="text-[10px] font-bold px-2 py-0.5 rounded-full ${cur.isAnnotated ? 'bg-emerald-100 text-emerald-800' : 'bg-purple-100 text-purple-800'} whitespace-nowrap">
                                             ${cur.isAnnotated ? '📌 劃線生詞' : '📖 內建核心'}
                                         </span>
                                         ${cur.pos ? `<span class="text-[10px] font-mono text-purple-700 bg-purple-50 px-1.5 py-0.5 rounded border border-purple-200/50">${esc(cur.pos)}</span>` : ''}
                                     </div>
-                                    <button onclick="event.stopPropagation(); playAudio('${safeEn}')" class="text-purple-600 hover:text-purple-800 p-1.5 rounded-full hover:bg-purple-100/60 transition cursor-pointer" title="朗讀發音">
+                                    <button onclick="event.stopPropagation(); playAudio('${safeEn}')" class="text-purple-600 hover:text-purple-800 p-1.5 rounded-full hover:bg-purple-100/60 transition cursor-pointer shrink-0" title="朗讀發音">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
                                     </button>
                                 </div>
 
-                                <div class="flex-1 flex flex-col items-center justify-center my-3 text-center">
-                                    <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight mb-1">
+                                <div class="flex-1 flex flex-col items-center justify-center my-2.5 text-center w-full min-w-0">
+                                    <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight mb-1 break-words max-w-full">
                                         ${esc(cur.en)}
                                     </h3>
                                     ${renderSyllablesBadgeHtml(cur.en, cur.kk, 'sm')}
-                                    <div class="flex items-center gap-2 mt-1">
+                                    <div class="flex items-center justify-center gap-2 mt-1 flex-wrap">
                                         ${cur.kk ? `<span class="text-xs font-mono text-slate-500 bg-slate-100 px-2 py-0.5 rounded">${esc(cur.kk)}</span>` : ''}
                                         ${cur.uk ? `<span class="text-[11px] font-mono text-slate-400 bg-slate-50 px-1.5 py-0.5 rounded">UK ${esc(cur.uk)}</span>` : ''}
                                     </div>
                                     <div class="flex items-center gap-2 mt-3" onclick="event.stopPropagation()">
-                                        <button onclick="playWordAccent('${safeEn}', 'us')" class="px-2.5 py-1 rounded-lg text-xs font-medium text-purple-700 bg-purple-50 hover:bg-purple-100 border border-purple-200 transition flex items-center gap-1 cursor-pointer">
+                                        <button onclick="playWordAccent('${safeEn}', 'us')" class="px-2.5 py-1 rounded-lg text-xs font-medium text-purple-700 bg-purple-50 hover:bg-purple-100 border border-purple-200 transition flex items-center gap-1 cursor-pointer whitespace-nowrap">
                                             <span>🇺🇸 美音</span>
                                         </button>
-                                        <button onclick="playWordAccent('${safeEn}', 'uk')" class="px-2.5 py-1 rounded-lg text-xs font-medium text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-200 transition flex items-center gap-1 cursor-pointer">
+                                        <button onclick="playWordAccent('${safeEn}', 'uk')" class="px-2.5 py-1 rounded-lg text-xs font-medium text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-200 transition flex items-center gap-1 cursor-pointer whitespace-nowrap">
                                             <span>🇬🇧 英音</span>
                                         </button>
                                     </div>
@@ -21141,50 +21183,51 @@ function cleanupMasteredMistakes() {
 
                             <!-- 背面 -->
                             <div class="sandbox-card-back select-none text-left">
-                                <div class="flex items-center justify-between w-full shrink-0">
-                                    <div class="flex items-center gap-2 flex-wrap">
-                                        <span class="text-base font-extrabold text-slate-900 dark:text-white tracking-wide">${esc(cur.en)}</span>
+                                <div class="flex items-center justify-between gap-2 w-full shrink-0">
+                                    <div class="flex items-center gap-1.5 sm:gap-2 flex-wrap min-w-0">
+                                        <span class="text-base font-extrabold text-slate-900 dark:text-white tracking-wide break-words">${esc(cur.en)}</span>
                                         ${renderSyllablesBadgeHtml(cur.en, cur.kk, 'xs')}
-                                        ${cur.pos ? `<span class="text-[11px] font-mono font-bold text-purple-700 dark:text-purple-300 bg-purple-50 dark:bg-purple-950/60 px-2 py-0.5 rounded-md border border-purple-200/70 dark:border-purple-500/40">${esc(cur.pos)}</span>` : ''}
+                                        ${cur.pos ? `<span class="text-[11px] font-mono font-bold text-purple-700 dark:text-purple-300 bg-purple-50 dark:bg-purple-950/60 px-2 py-0.5 rounded-md border border-purple-200/70 dark:border-purple-500/40 shrink-0">${esc(cur.pos)}</span>` : ''}
                                     </div>
-                                    <button onclick="event.stopPropagation(); playAudio('${safeEn}')" class="text-purple-600 dark:text-purple-300 hover:text-purple-800 dark:hover:text-white p-1 rounded-full hover:bg-purple-100 dark:hover:bg-purple-900/40 transition cursor-pointer" title="發音">
+                                    <button onclick="event.stopPropagation(); playAudio('${safeEn}')" class="text-purple-600 dark:text-purple-300 hover:text-purple-800 dark:hover:text-white p-1 rounded-full hover:bg-purple-100 dark:hover:bg-purple-900/40 transition cursor-pointer shrink-0" title="發音">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
                                     </button>
                                 </div>
 
-                                <div class="flex-1 my-2 flex flex-col justify-center gap-2.5 overflow-hidden">
-                                    <div class="bg-gradient-to-r from-purple-50/90 to-indigo-50/80 dark:from-purple-950/50 dark:to-indigo-950/40 border border-purple-200 dark:border-purple-500/50 rounded-xl p-3 shrink-0 shadow-xs">
+                                <div class="flex-1 my-2 flex flex-col justify-center gap-2 min-w-0">
+                                    <div class="bg-gradient-to-r from-purple-50/90 to-indigo-50/80 dark:from-purple-950/50 dark:to-indigo-950/40 border border-purple-200 dark:border-purple-500/50 rounded-xl p-2.5 sm:p-3 shrink-0 shadow-xs">
                                         <div class="text-[11px] font-bold text-purple-800 dark:text-[#E9D5FF] tracking-wider uppercase mb-1 flex items-center gap-1.5">
                                             <span class="inline-block w-1.5 h-1.5 rounded-full bg-purple-600 dark:bg-purple-400"></span>
                                             <span>中文簡明釋義</span>
                                         </div>
-                                        <div class="text-base sm:text-lg font-extrabold text-slate-900 dark:text-white tracking-wide leading-snug">${esc(cur.zh)}</div>
+                                        <div class="text-base sm:text-lg font-extrabold text-slate-900 dark:text-white tracking-wide leading-snug break-words">${esc(cur.zh)}</div>
                                     </div>
 
-                                    <div class="bg-slate-50 dark:bg-[#0F172A]/85 border border-slate-200/80 dark:border-white/12 rounded-xl p-3 flex-1 min-h-0 flex flex-col justify-center shadow-xs">
-                                        <div class="flex items-center justify-between mb-1">
-                                            <span class="text-[11px] font-bold text-slate-700 dark:text-slate-300 flex items-center gap-1.5">
-                                                <span>🎙️ 短文情境原句</span>
+                                    <div class="bg-slate-50 dark:bg-[#0F172A]/85 border border-slate-200/80 dark:border-white/12 rounded-xl p-2.5 sm:p-3 flex flex-col justify-center shadow-xs min-w-0">
+                                        <div class="flex items-start justify-between gap-1.5 mb-1">
+                                            <span class="text-[11px] font-bold text-slate-700 dark:text-slate-300 flex items-center gap-1.5 flex-wrap min-w-0">
+                                                <span class="whitespace-nowrap">🎙️ 短文情境原句</span>
                                                 ${cur.speakerTag ? `<span class="text-purple-700 dark:text-purple-300 bg-purple-50 dark:bg-purple-950/60 px-1.5 py-0.5 rounded border border-purple-200/60 dark:border-purple-500/40 font-normal text-[10px]">${esc(cur.speakerTag)}</span>` : ''}
                                             </span>
                                             ${cur.contextSentence ? `
-                                            <button onclick="event.stopPropagation(); playGrammarExampleAudio('${safeContext}')" class="text-purple-600 dark:text-purple-300 hover:text-purple-800 dark:hover:text-white p-0.5 rounded transition cursor-pointer" title="朗讀原句">
+                                            <button onclick="event.stopPropagation(); playGrammarExampleAudio('${safeContext}')" class="text-purple-600 dark:text-purple-300 hover:text-purple-800 dark:hover:text-white p-0.5 rounded transition cursor-pointer shrink-0" title="朗讀原句">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
                                             </button>
                                             ` : ''}
                                         </div>
-                                        <p class="text-xs sm:text-sm text-slate-900 dark:text-[#F8FAFC] font-semibold leading-relaxed font-sans">
+                                        <p class="text-xs sm:text-sm text-slate-900 dark:text-[#F8FAFC] font-semibold leading-relaxed font-sans break-words">
                                             ${cur.contextSentence ? esc(cur.contextSentence) : `<span class="text-slate-400 dark:text-slate-500 italic">${esc(cur.rawZh || '無情境例句')}</span>`}
                                         </p>
-                                        ${cur.contextZh ? `<p class="text-xs text-slate-600 dark:text-[#CBD5E1] mt-1.5 pt-1.5 border-t border-slate-200 dark:border-white/10 leading-normal">${esc(cur.contextZh)}</p>` : ''}
+                                        ${cur.contextZh ? `<p class="text-xs text-slate-600 dark:text-[#CBD5E1] mt-1.5 pt-1.5 border-t border-slate-200 dark:border-white/10 leading-normal break-words">${esc(cur.contextZh)}</p>` : ''}
                                     </div>
                                 </div>
 
-                                <div class="text-[11px] text-slate-500 dark:text-slate-400 font-medium text-center w-full shrink-0">
+                                <div class="text-[11px] text-slate-500 dark:text-slate-400 font-medium text-center w-full shrink-0 pt-0.5">
                                     👆 點擊卡片翻回正面
                                 </div>
                             </div>
                         </div>
+                    </div>
                     </div>
                 `;
             } else if (state.mode === 'en2zh' || state.mode === 'zh2en' || state.mode === 'listen') {
@@ -21357,7 +21400,7 @@ function cleanupMasteredMistakes() {
                 optionsHtml += '</div>';
 
                 container.innerHTML = `
-                    <div class="flex flex-col justify-center h-full">
+                    <div class="my-auto w-full py-0.5 flex flex-col">
                         ${questionCardHtml}
                         ${optionsHtml}
                     </div>
@@ -21381,7 +21424,7 @@ function cleanupMasteredMistakes() {
                 }
 
                 container.innerHTML = `
-                    <div class="flex flex-col justify-center h-full">
+                    <div class="my-auto w-full py-0.5 flex flex-col">
                         <div class="bg-gradient-to-b from-amber-50/70 to-white border border-amber-100 rounded-2xl p-4 text-center shrink-0 mb-3 shadow-2xs">
                             <div class="flex items-center justify-between mb-1">
                                 <span class="text-[10px] font-bold px-2 py-0.5 rounded-full ${cur.isAnnotated ? 'bg-emerald-100 text-emerald-800' : 'bg-purple-100 text-purple-800'}">
@@ -21391,18 +21434,18 @@ function cleanupMasteredMistakes() {
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
                                 </button>
                             </div>
-                            <h3 class="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug">${esc(cur.zh)}</h3>
-                            <div class="text-sm font-mono tracking-widest text-amber-900 font-bold mt-2 bg-amber-50/80 py-1.5 px-3 rounded-xl border border-amber-200/50 inline-block">
+                            <h3 class="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight leading-snug break-words">${esc(cur.zh)}</h3>
+                            <div class="text-sm font-mono tracking-widest text-amber-900 font-bold mt-2 bg-amber-50/80 py-1.5 px-3 rounded-xl border border-amber-200/50 inline-block max-w-full break-all">
                                 ${esc(maskedDisplay.trim())}
                             </div>
                         </div>
 
                         <div class="space-y-2">
-                            <div class="flex items-center gap-2">
+                            <div class="flex items-center gap-2 min-w-0">
                                 <input id="sandbox-fill-input" type="text" placeholder="輸入單字英文拼寫..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
                                     onkeydown="if(event.key==='Enter') submitListeningSandboxFill('${safeEn}')"
-                                    class="flex-1 bg-white border border-slate-200 rounded-xl px-3.5 py-2.5 text-sm font-semibold text-slate-900 focus:outline-none focus:ring-2 focus:ring-amber-500/40 focus:border-amber-500 transition shadow-2xs" />
-                                <button onclick="submitListeningSandboxFill('${safeEn}')" class="px-4 py-2.5 rounded-xl text-xs font-bold text-white bg-amber-600 hover:bg-amber-700 active:scale-95 transition shadow-xs cursor-pointer">
+                                    class="flex-1 min-w-0 w-full bg-white border border-slate-200 rounded-xl px-3.5 py-2.5 text-sm font-semibold text-slate-900 focus:outline-none focus:ring-2 focus:ring-amber-500/40 focus:border-amber-500 transition shadow-2xs" />
+                                <button onclick="submitListeningSandboxFill('${safeEn}')" class="shrink-0 whitespace-nowrap px-4 py-2.5 rounded-xl text-xs font-bold text-white bg-amber-600 hover:bg-amber-700 active:scale-95 transition shadow-xs cursor-pointer">
                                     送出
                                 </button>
                             </div>

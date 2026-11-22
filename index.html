@@ -10,7 +10,7 @@
     <title>Spaced Repetition Vocab App (Cloud Version)</title>
     <script>
         // 自動版本校驗與強制防快取載入
-        const APP_BUILD_VERSION = '20261122V1';
+        const APP_BUILD_VERSION = '20261122V2';
         const savedBuild = localStorage.getItem('app_build_version');
         if (savedBuild !== APP_BUILD_VERSION) {
             localStorage.setItem('app_build_version', APP_BUILD_VERSION);
@@ -4868,6 +4868,13 @@
             const s = String(val ?? '5000').trim();
             return VALID_AUTO_PLAY_SPEEDS.includes(s) ? s : '5000';
         }
+        function getAutoplaySplitPause(speedMs) {
+            const ms = Math.max(2000, Number(speedMs) || 5000);
+            return {
+                frontWait: Math.max(1000, Math.round(ms * 0.40)),
+                backWait: Math.max(1200, Math.round(ms * 0.60)),
+            };
+        }
         let globalAutoPlaySpeed = formatAutoPlaySpeedStr(localStorage.getItem('auto_flashcard_speed'));
         let autoFlashcardSpeed = parseInt(globalAutoPlaySpeed, 10) || 5000;
         const VALID_AUTO_PLAY_LOOPS = ['1', '2', '3', '5', '0'];
@@ -7080,7 +7087,7 @@ function cleanupMasteredMistakes() {
             if (expectedToken !== (window._audioPlaybackGen || 0)) return;
             const detailModal = document.getElementById('word-detail-modal');
             if (detailModal && !detailModal.classList.contains('hidden')) return;
-            const pauseAfterExample = Math.max(900, (Number(autoFlashcardSpeed) || 4000) * 0.25);
+            const { backWait: pauseAfterExample } = getAutoplaySplitPause(autoFlashcardSpeed);
             if (autoFlashcardTimerId) {
                 clearTimeout(autoFlashcardTimerId);
                 autoFlashcardTimerId = null;
@@ -8507,9 +8514,8 @@ function cleanupMasteredMistakes() {
             scrollToStudyTop();
             
             if (isAutoFlashcardMode) {
-                // 自動翻卡模式：第 1 面讀單字 -> 緩衝 -> 翻面 -> 第 2 面再讀單字 -> 讀例句 -> 緩衝 -> 跳下一張
-                const pauseAfterWord = Math.max(600, autoFlashcardSpeed * 0.15);
-                const pauseAfterExample = Math.max(900, autoFlashcardSpeed * 0.25);
+                // 自動翻卡模式：第 1 面讀單字 -> 思考停留 -> 翻面 -> 第 2 面讀單字/釋義/例句 -> 溫習停留 -> 跳下一張
+                const { frontWait: pauseAfterWord, backWait: pauseAfterExample } = getAutoplaySplitPause(autoFlashcardSpeed);
                 const autoCardId = currentWord.id;
                 const autoGen = window._audioPlaybackGen || 0;
 
@@ -15071,10 +15077,10 @@ function cleanupMasteredMistakes() {
             modal.classList.add('hidden');
             stopAllAudio();
 
-            // 若原本是在自動輪播模式下點開單字，關閉後給予充裕反應時間（1.5 秒）再接續跳下一張
+            // 若原本是在自動輪播模式下點開單字，關閉後給予充裕反應時間（至少 1.5 秒）再接續跳下一張
             if (isAutoFlashcardMode && wasAutoFlashcardPausedByModal) {
                 wasAutoFlashcardPausedByModal = false;
-                const pauseAfterExample = Math.max(1500, autoFlashcardSpeed * 0.25);
+                const pauseAfterExample = Math.max(1500, getAutoplaySplitPause(autoFlashcardSpeed).backWait);
                 autoFlashcardTimerId = setTimeout(() => {
                     if (!isAutoFlashcardMode) return;
                     cardsCompleted++;
@@ -15108,7 +15114,7 @@ function cleanupMasteredMistakes() {
             const isDictOpen = dictModal && !dictModal.classList.contains('hidden');
             if (!isDictOpen && isAutoFlashcardMode && wasAutoFlashcardPausedByModal) {
                 wasAutoFlashcardPausedByModal = false;
-                const pauseAfterExample = Math.max(1500, autoFlashcardSpeed * 0.25);
+                const pauseAfterExample = Math.max(1500, getAutoplaySplitPause(autoFlashcardSpeed).backWait);
                 autoFlashcardTimerId = setTimeout(() => {
                     if (!isAutoFlashcardMode) return;
                     cardsCompleted++;
@@ -20529,6 +20535,11 @@ function cleanupMasteredMistakes() {
         // ========================================================
         // 聽力單篇短文單字沙盒 (零進度負擔 · 4種練習+自動翻牌+劃線與內建整合 · 題型順序鎖定與高質感反饋)
         // ========================================================
+        const VALID_SANDBOX_PLAY_SPEEDS = ['3000', '4500', '6000', '8000', '10000'];
+        function formatSandboxAutoPlaySpeedMs(val) {
+            const n = parseInt(val, 10);
+            return VALID_SANDBOX_PLAY_SPEEDS.includes(String(n)) ? n : 6000;
+        }
         let listeningSandboxState = {
             isOpen: false,
             articleTitle: '',
@@ -20549,8 +20560,9 @@ function cleanupMasteredMistakes() {
             quizNextTimer: null,
             // 自動翻牌播放控制
             isAutoPlaying: false,
-            autoPlayInterval: 4000,
+            autoPlayInterval: formatSandboxAutoPlaySpeedMs(localStorage.getItem('sandbox_autoplay_interval')),
             autoPlayTimer: null,
+            autoPlayGen: 0,
             autoPlayLoops: '1',
             autoPlayCurrentLoop: 1,
             // 拼寫提示
@@ -20801,6 +20813,7 @@ function cleanupMasteredMistakes() {
         }
 
         function startListeningSandboxAutoPlay() {
+            unlockMobileAudio();
             if (listeningSandboxState.mode !== 'card') {
                 setListeningSandboxMode('card');
             }
@@ -20814,24 +20827,31 @@ function cleanupMasteredMistakes() {
                 listeningSandboxState.autoPlayCurrentLoop = 1;
             }
             listeningSandboxState.isAutoPlaying = true;
+            listeningSandboxState.autoPlayGen = (listeningSandboxState.autoPlayGen || 0) + 1;
             renderListeningSandboxToolbar();
             runListeningSandboxAutoPlayStep();
         }
 
         function stopListeningSandboxAutoPlay() {
             listeningSandboxState.isAutoPlaying = false;
+            listeningSandboxState.autoPlayGen = (listeningSandboxState.autoPlayGen || 0) + 1;
             if (listeningSandboxState.autoPlayTimer) {
                 clearTimeout(listeningSandboxState.autoPlayTimer);
                 listeningSandboxState.autoPlayTimer = null;
             }
+            if (typeof stopAllAudio === 'function') stopAllAudio();
             renderListeningSandboxToolbar();
         }
 
         function changeListeningSandboxSpeed(val) {
-            listeningSandboxState.autoPlayInterval = parseInt(val, 10) || 4000;
+            const ms = formatSandboxAutoPlaySpeedMs(val);
+            listeningSandboxState.autoPlayInterval = ms;
+            localStorage.setItem('sandbox_autoplay_interval', String(ms));
             if (listeningSandboxState.isAutoPlaying) {
                 stopListeningSandboxAutoPlay();
                 startListeningSandboxAutoPlay();
+            } else {
+                renderListeningSandboxToolbar();
             }
         }
 
@@ -20844,7 +20864,7 @@ function cleanupMasteredMistakes() {
 
         function advanceOrLoopListeningSandbox() {
             if (listeningSandboxState.currentIndex < listeningSandboxState.words.length - 1) {
-                nextListeningSandboxCard();
+                nextListeningSandboxCard(true);
                 runListeningSandboxAutoPlayStep();
                 return;
             }
@@ -20869,28 +20889,39 @@ function cleanupMasteredMistakes() {
             const cur = listeningSandboxState.words[listeningSandboxState.currentIndex];
             if (!cur) return;
 
-            const interval = listeningSandboxState.autoPlayInterval || 4000;
-            const halfTime = Math.max(1400, Math.round(interval / 2));
+            const myGen = listeningSandboxState.autoPlayGen || 0;
+            const interval = formatSandboxAutoPlaySpeedMs(listeningSandboxState.autoPlayInterval);
+            const { frontWait, backWait } = getAutoplaySplitPause(interval);
+            const stillValid = () =>
+                listeningSandboxState.isAutoPlaying &&
+                listeningSandboxState.isOpen &&
+                myGen === (listeningSandboxState.autoPlayGen || 0);
 
             if (!listeningSandboxState.isFlipped) {
-                // 正面：發音單字
-                playAudio(cur.en);
-                listeningSandboxState.autoPlayTimer = setTimeout(() => {
-                    if (!listeningSandboxState.isAutoPlaying) return;
-                    toggleListeningSandboxFlip();
-
-                    // 背面：等待並前進
+                // 正面：等待發音結束再倒數正面思考時間，翻面後再念一次並停留背面閱讀時間
+                playAudio(cur.en, () => {
+                    if (!stillValid()) return;
                     listeningSandboxState.autoPlayTimer = setTimeout(() => {
-                        if (!listeningSandboxState.isAutoPlaying) return;
-                        advanceOrLoopListeningSandbox();
-                    }, halfTime);
-                }, halfTime);
+                        if (!stillValid()) return;
+                        toggleListeningSandboxFlip();
+                        playAudio(cur.en, () => {
+                            if (!stillValid()) return;
+                            listeningSandboxState.autoPlayTimer = setTimeout(() => {
+                                if (!stillValid()) return;
+                                advanceOrLoopListeningSandbox();
+                            }, backWait);
+                        });
+                    }, frontWait);
+                });
             } else {
-                // 已在背面：等待切下一張
-                listeningSandboxState.autoPlayTimer = setTimeout(() => {
-                    if (!listeningSandboxState.isAutoPlaying) return;
-                    advanceOrLoopListeningSandbox();
-                }, halfTime);
+                // 已在背面：播完發音再從容倒數換下一張
+                playAudio(cur.en, () => {
+                    if (!stillValid()) return;
+                    listeningSandboxState.autoPlayTimer = setTimeout(() => {
+                        if (!stillValid()) return;
+                        advanceOrLoopListeningSandbox();
+                    }, backWait);
+                });
             }
         }
 
@@ -20902,7 +20933,7 @@ function cleanupMasteredMistakes() {
             const mode = listeningSandboxState.mode;
             if (mode === 'card') {
                 const isPlaying = listeningSandboxState.isAutoPlaying;
-                const spd = listeningSandboxState.autoPlayInterval || 4000;
+                const spd = formatSandboxAutoPlaySpeedMs(listeningSandboxState.autoPlayInterval);
                 const loopsStr = formatAutoPlayLoopsStr(listeningSandboxState.autoPlayLoops);
                 const maxLoops = parseInt(loopsStr, 10) || 0;
                 const curLoop = listeningSandboxState.autoPlayCurrentLoop || 1;
@@ -20915,10 +20946,12 @@ function cleanupMasteredMistakes() {
                             <span>${isPlaying ? '⏸' : '▶'}</span>
                             <span>${isPlaying ? '暫停播放' : '自動翻牌'}</span>
                         </button>
-                        <select onchange="changeListeningSandboxSpeed(this.value)" class="sandbox-ctrl-select text-[11px] font-medium bg-white border border-gray-200 rounded-lg pl-1.5 pr-1 py-1 text-slate-700 outline-none cursor-pointer shrink-0">
-                            <option value="2500" ${spd === 2500 ? 'selected' : ''}>⚡ 2.5秒</option>
-                            <option value="4000" ${spd === 4000 ? 'selected' : ''}>⏱️ 4.0秒</option>
-                            <option value="6000" ${spd === 6000 ? 'selected' : ''}>🐢 6.0秒</option>
+                        <select onchange="changeListeningSandboxSpeed(this.value)" aria-label="沙盒輪播間隔" class="sandbox-ctrl-select text-[11px] font-medium bg-white border border-gray-200 rounded-lg pl-1.5 pr-1 py-1 text-slate-700 outline-none cursor-pointer shrink-0">
+                            <option value="3000" ${spd === 3000 ? 'selected' : ''}>⚡ 3.0秒</option>
+                            <option value="4500" ${spd === 4500 ? 'selected' : ''}>🏃 4.5秒</option>
+                            <option value="6000" ${spd === 6000 ? 'selected' : ''}>⏱️ 6.0秒</option>
+                            <option value="8000" ${spd === 8000 ? 'selected' : ''}>🐢 8.0秒</option>
+                            <option value="10000" ${spd === 10000 ? 'selected' : ''}>🧘 10秒</option>
                         </select>
                         <select onchange="changeListeningSandboxLoops(this.value)" aria-label="沙盒輪播次數" class="sandbox-ctrl-select text-[11px] font-medium bg-white border border-gray-200 rounded-lg pl-1.5 pr-1 py-1 text-slate-700 outline-none cursor-pointer shrink-0">
                             <option value="1" ${loopsStr === '1' ? 'selected' : ''}>🔁 1 次</option>
@@ -21482,8 +21515,15 @@ function cleanupMasteredMistakes() {
         }
 
         // 下一題
-        function nextListeningSandboxCard() {
+        function nextListeningSandboxCard(fromAutoPlay = false) {
             clearSandboxQuestionCache();
+            if (!fromAutoPlay && listeningSandboxState.isAutoPlaying) {
+                listeningSandboxState.autoPlayGen = (listeningSandboxState.autoPlayGen || 0) + 1;
+                if (listeningSandboxState.autoPlayTimer) {
+                    clearTimeout(listeningSandboxState.autoPlayTimer);
+                    listeningSandboxState.autoPlayTimer = null;
+                }
+            }
             if (listeningSandboxState.currentIndex < listeningSandboxState.words.length - 1) {
                 listeningSandboxState.currentIndex++;
                 listeningSandboxState.isFlipped = false;
@@ -21491,7 +21531,9 @@ function cleanupMasteredMistakes() {
                 listeningSandboxState.fillFeedback = null;
                 renderListeningSandboxModal();
 
-                if (listeningSandboxState.mode === 'listen' && !listeningSandboxState.isAutoPlaying) {
+                if (!fromAutoPlay && listeningSandboxState.isAutoPlaying) {
+                    runListeningSandboxAutoPlayStep();
+                } else if (listeningSandboxState.mode === 'listen' && !listeningSandboxState.isAutoPlaying) {
                     const cur = listeningSandboxState.words[listeningSandboxState.currentIndex];
                     if (cur) setTimeout(() => playAudio(cur.en), 200);
                 }
@@ -21538,7 +21580,7 @@ function cleanupMasteredMistakes() {
             // 重新渲染以原地呈現高質感綠/紅回饋與中英對照
             renderListeningSandboxModal();
 
-            // 1.4 秒後自動切換至下一題
+            // 1.8 秒後自動切換至下一題 (保留從容檢視正解/釋義時間)
             if (listeningSandboxState.quizNextTimer) {
                 clearTimeout(listeningSandboxState.quizNextTimer);
             }
@@ -21546,7 +21588,7 @@ function cleanupMasteredMistakes() {
                 if (listeningSandboxState.isOpen && listeningSandboxState.isAnswered && !listeningSandboxState.isCompleted) {
                     nextListeningSandboxCard();
                 }
-            }, 1400);
+            }, 1800);
         }
 
         // 提交拼寫答案
